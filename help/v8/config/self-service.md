@@ -7,10 +7,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 1eab5e9c54f2653b4b8ca9a7c2c4b06231980ed5
+source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 77%
+source-wordcount: '358'
+ht-degree: 60%
 
 ---
 
@@ -28,28 +28,29 @@ Sie können auch die Systemsteuerung der Kampagne verwenden, um Ihre Instanzeins
 
 ## Zugriff auf das Control Panel
 
-Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/discover-control-panel/accessing-control-panel.html), um weitere Informationen zu erhalten.
+Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html), um weitere Informationen zu erhalten.
 
 ## Control Panel – häufig gestellte Fragen
 
-[Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/faq.html), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ## SFTP-Verwaltung
 
-Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Sie können ihre Speicherkapazitäten überwachen sowie IP-Adressen auf der Zulassungsliste und öffentliche SSH-Schlüssel verwalten. [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/sftp-management/about-sftp-management.html), um weitere Informationen zu erhalten.
+Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Sie können ihre Speicherkapazitäten überwachen sowie IP-Adressen auf der Zulassungsliste und öffentliche SSH-Schlüssel verwalten. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=de#sftp-management), um weitere Informationen zu erhalten.
 
 ## Sub-Domains und Zertifikate
 
 Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Mehr dazu:
-* [Sub-Domain-Branding](https://docs.adobe.com/content/help/de-DE/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
-* [Einrichten einer neuen Sub-Domain](https://docs.adobe.com/content/help/de-DE/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [Überwachen von SSL-Zertifikaten](https://docs.adobe.com/content/help/de-DE/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html)
+* [Sub-Domain-Branding](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
+* [Einrichten einer neuen Sub-Domain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
+* [Überwachen von SSL-Zertifikaten](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
 
 ## Instanzeneinstellungen
 
 Erfahren Sie, wie Sie die Einstellungen für Kampagnen-Instanzen in der Systemsteuerung verwalten.
-* [IP auf der Zulassungsliste](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/ip-whitelisting-instance-access.html)
-* [URL-Genehmigungen](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/url-permissions.html)
-* [Details der Instanz](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/instance-details.html)
+* [IP auf der Zulassungsliste](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+* [URL-Genehmigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+* [Details der Instanz](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
+* [GPG-Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
 
 :arrow_upper_right: Entdecken Sie alle Funktionen der Systemsteuerung in [dieser Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
