@@ -4,7 +4,7 @@ product: campaign
 title: Formulare zur Kampagne
 description: Erfahren Sie, wie Sie Eingabefelder anpassen
 translation-type: tm+mt
-source-git-commit: b4d5ed24bcca46591543b835b2fec1c18b26fc74
+source-git-commit: 8e90eb762a6e08077270d4f5852bfc37ac783122
 workflow-type: tm+mt
 source-wordcount: '2579'
 ht-degree: 3%
@@ -290,9 +290,7 @@ Die Auswahl der Zielgruppe ist über das Bearbeitungsfeld verfügbar. Die Eingab
 
 Eine Dropdown-Liste wird verwendet, um ein Element der Zielgruppe aus der Liste der bereits erstellten Datensätze auszuwählen.
 
-Mit dem Symbol **[!UICONTROL Link]** ändern (folder) wird ein Auswahlformular mit der Liste der Zielelemente und einer Filterzone gestartet:
-
-![](assets/do-not-localize/form_exemple10.png)
+Mit dem Symbol **[!UICONTROL Link]** ändern (Ordnersymbol) wird ein Auswahlformular mit der Liste der Zielelemente und einer Filterzone gestartet.
 
 Das Symbol **[!UICONTROL Link bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig auf den Schlüssel des zielgerichteten Schemas abgezogen. Mit dem Attribut **form** können Sie den Namen des Bearbeitungsformulars erzwingen (z.B. &quot;cus:Firma2&quot;).
 
@@ -433,8 +431,6 @@ Diese Listen werden für XML-zugeordnete Sammlungselemente oder für Links mit n
 
 Dieses Steuerelement zeigt eine Liste mit editierbaren Spalten und einer Symbolleiste mit den Schaltflächen &quot;Hinzufügen&quot; und &quot;Löschen&quot; an.
 
-![](assets/do-not-localize/form_exemple13.png)
-
 ```
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
@@ -452,8 +448,6 @@ Die Spalten werden im untergeordneten **`<input>`**-Tag der Liste deklariert. Sp
 
 Die Symbolleistenschaltflächen können horizontal ausgerichtet werden:
 
-![](assets/do-not-localize/form_exemple14.png)
-
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
@@ -466,8 +460,6 @@ Das Attribut **toolbarCaption** erzwingt die horizontale Ausrichtung der Symboll
 ### Zoomen in einer Liste {#zoom-in-a-list} aktivieren
 
 Das Einfügen und Bearbeiten der Daten in einer Liste kann in einem separaten Bearbeitungsformular eingegeben werden.
-
-![](assets/do-not-localize/form_exemple15.png)
 
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
@@ -640,8 +632,6 @@ Um eine Assistenzkraft hinzuzufügen, verwenden Sie die folgende Struktur:
   ...
 </form>
 ```
-
-![](assets/do-not-localize/form_exemple19.png)
 
 Durch das Vorhandensein des Attributs **type=&quot;wizard&quot;** im Element `<form>` können Sie den Assistentenmodus beim Aufbau des Formulars definieren. Die Seiten werden aus `<container>`-Elementen abgeschlossen, die dem `<form>`-Element untergeordnet sind. Das `<container>`-Element einer Seite wird mit den Titelattributen für den Titel und desc gefüllt, um die Beschreibung unter dem Seitentitel anzuzeigen. Die Schaltflächen **[!UICONTROL Previous]** und **[!UICONTROL Next]** werden automatisch hinzugefügt, um das Durchsuchen zwischen Seiten zu ermöglichen.
 
