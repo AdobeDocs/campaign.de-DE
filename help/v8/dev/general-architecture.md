@@ -5,9 +5,9 @@ title: Allgemeine Architektur
 description: Kampagne v8
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 translation-type: tm+mt
-source-git-commit: 1bdc1f03a824f8867ae6066196e8e3984fa73af7
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1162'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ Dieser Prozess unterhält Statistiken über die Anzahl der Verbindungen, die Nac
 
 ## Database Containers {#db-containers}
 
-Die Adobe Campaign Cloud-Datenbank basiert auf Snowflake, das die Funktionsdaten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versand, Aufträge und Protokolle, Trackinglogs usw.) enthält. und die Arbeitsdaten (Einkäufe, Interessenten) für die Projektmappe und alle Adobe Campaign-Komponenten kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
+Die Adobe Campaign Cloud-Datenbank basiert auf [!DNL Snowflake], die die Funktionsdaten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versand, Aufträge und Protokolle, Trackinglogs usw.) enthält. und die Arbeitsdaten (Einkäufe, Interessenten) für die Projektmappe und alle Adobe Campaign-Komponenten kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
 
 Kunden können Adobe Campaign mithilfe des vordefinierten Datendiagramms und der vordefinierten Schema bereitstellen und auch erweitern. Alle Daten im Datenverkehr werden von Adobe Campaign über SQL-Aufrufe aufgerufen. Adobe Campaign bietet außerdem eine vollständige Ergänzung der Tools für das Extrahieren von Transformationen und Laden (ETL), um Daten in das und aus dem System zu importieren und zu exportieren.
 
