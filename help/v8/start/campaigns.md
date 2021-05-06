@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 translation-type: tm+mt
-source-git-commit: d7d026422d43e8baef43b114936366071f7086e5
+source-git-commit: 29c13e6c1b08a5b0f6ba8bb433f7165e3e452942
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 13%
+source-wordcount: '747'
+ht-degree: 12%
 
 ---
 
@@ -45,7 +45,7 @@ Bevor Sie mit der Implementierung von Marketing-Kampagnen beginnen, müssen Sie 
 
 Mit Adobe Campaign können Sie alle Marketing-Kampagnen aus einem einheitlichen Kontrollzentrum erstellen, konfigurieren, ausführen und analysieren.
 
-:arrow_upper_right: Erfahren Sie, wie Sie auf Marketing-Kampagnen zugreifen und diese implementieren können.[](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
+:arrow_upper_right: Erfahren Sie, wie Sie auf Marketing-Kampagnen zugreifen und diese implementieren können in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
 
 
 ## Wichtige Schritte zum Beginn
@@ -56,50 +56,33 @@ Die wichtigsten Schritte zur Erstellung einer Kanal-übergreifenden Marketing-Ka
 
    Definieren Sie Hierarchie und Zeitplan, stellen Sie Budget ein, fügen Sie Ressourcen hinzu, wählen Sie Operatoren aus.
 
-   :arrow_upper_right: Erfahren Sie, wie Sie einen Marketingplan erstellen und Kampagnen auf [dieser Seite konfigurieren](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)
+   :arrow_upper_right: Informationen zum Erstellen eines Marketingplans und Konfigurieren von Kampagnen in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)
 
    Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Haupteinstellungen und -funktionen gespeichert werden. Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen können, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
 
-   :arrow_upper_right: Erfahren Sie, wie Sie mit Kampagnenvorlagen auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns) arbeiten.
+   :arrow_upper_right: Informationen zum Arbeiten mit Kampagnenvorlagen finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
 
-   :arrow_upper_right: Entdecken Sie wiederkehrende Kampagnen und konfigurieren Sie sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
+   :arrow_upper_right: Entdecken Sie wiederkehrende Kampagnen und konfigurieren Sie sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
 
 1. **Audiencen definieren**
 
    Sie können die Audience in einem Workflow erstellen oder eine bestehende Gruppe auswählen, z. B. eine Empfänger-Liste, Abonnenten eines Newsletters, Empfänger eines vorherigen Versands oder eine beliebige Filterbedingung.
 
-   :arrow_upper_right: Erfahren Sie, wie Sie die Audience Ihrer Nachrichten auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns) definieren.
+   :arrow_upper_right: Informationen zum Definieren der Audience Ihrer Nachrichten in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)
 
 1. **Sendungen erstellen**
 
    Wählen Sie Kanal aus, definieren Sie den Nachrichteninhalt und Beginn-Versand.
 
-   :arrow_upper_right: Erfahren Sie, wie Sie Versand für Marketing-Kampagnen in [dieser  erstellen und Beginn darauf verwenden](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
+   :arrow_upper_right: Informationen zum Erstellen und Beginn von Versänden für Marketing-Kampagnen in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
 
    Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Webseite, Diagramm usw.
 
-   :arrow_upper_right: Weitere Informationen zu verknüpften Dokumenten finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)
+   :arrow_upper_right: Weitere Informationen zu verknüpften Dokumenten finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)
 
 1. **Einrichten des Genehmigungsprozesses**
 
    Mit Adobe Campaign können Sie gemeinsame Genehmigungsprozesse für die Hauptphasen der Marketing-Kampagne einrichten. Für jede Kampagne können Sie die Zielgruppe, den Inhalt und die Kosten des Versands genehmigen. Die für die Genehmigung zuständigen Adobe Campaign-Betreiber können per E-Mail benachrichtigt werden und die Genehmigung von der Konsole oder über eine Webverbindung annehmen oder ablehnen.
 
-   :arrow_upper_right: Erfahren Sie, wie Sie Genehmigungen in [dieser Seite einrichten und verwalten](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
+   :arrow_upper_right: Informationen zum Einrichten und Verwalten von Genehmigungen finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
 
-
-1. Meldungen überwachen: Versand steuern und ausführen. Mehr dazu.
-
-1. Planen von Kampagnen und der damit verbundenen Kosten. Mehr dazu.
-
-## Genehmigungen und Validierung
-
-
-## Dienste und Abonnements
-
-Erstellen von Diensten und Verwalten von Abonnements/Abmeldungen
-
-## Reporting
-
-Kampagnenberichte
-
-:bulb:
