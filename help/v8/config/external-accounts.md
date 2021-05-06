@@ -7,10 +7,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
+source-git-commit: fa46fc3218d3bdc90c27d1abc9e944d73c7b91bc
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 15%
+source-wordcount: '134'
+ht-degree: 18%
 
 ---
 
@@ -25,26 +25,3 @@ Externe Konten werden von technischen Prozessen, wie technischen Workflows oder 
 Ein bestimmtes Externe Konto verwaltet die Verbindung zwischen der lokalen Kampagne und der Cloud-Datenbank ([!DNL Snowflake]).
 
 :language_ballon: Als Benutzer mit verwaltetem Cloud Services wird [!DNL Snowflake]-Externe Konto nach Adobe für Ihre Instanz konfiguriert.
-
-Sie können auf dieses Externe Konto zugreifen, um die Einstellungen zu überprüfen und Replizierungs-Workflows auszuführen. Gehen Sie dazu wie folgt vor:
-
-1. Klicken Sie in Kampagne **[!UICONTROL Explorer]** auf **[!UICONTROL Administration > Platform > Externen Kontos]**.
-
-1. Wählen Sie das Externe Konto **[!UICONTROL Vollständige FDA]**.
-
-![](assets/snowflake-ext-account.png)
-
-Globale Einstellungen werden auf der Registerkarte **[!UICONTROL Allgemein]** angezeigt.
-
-Verwenden Sie die Registerkarte **[!UICONTROL Parameter]** und dann die Schaltfläche **[!UICONTROL Funktionen bereitstellen]**, um Funktionen zu erstellen.
-
-![](assets/snowflake-parameters.png)
-
-**hinzufügen PARAMETER DESC HIER**
-
-Verwenden Sie die Registerkarte **[!UICONTROL Vollständige FDA]**, um die Ausführung des Replikationsarbeitsablaufs zu erzwingen.
-
-![](assets/snowflake-full-fda.png)
-
-**hinzufügen DETAILS HIER**
-
