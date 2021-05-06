@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 translation-type: tm+mt
-source-git-commit: ca8d75825bcf73226f381b59825ee14afb1c1e15
+source-git-commit: fc258cac85f1f96b6d03d69eff4e7ac70ba4247d
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '272'
 ht-degree: 2%
 
 ---
@@ -32,6 +32,6 @@ In diesem Abschnitt werden die Schlüsselpunkte für die Zuordnung vorhandener T
 
 >[!CAUTION]
 >
->Die Anpassung des Adobe Campaigns ist nur für erfahrene Benutzer vorgesehen. Es erfordert fortgeschrittene Kenntnisse der Prinzipien der Bildschirm- und Schema-Design.
+>Die Anpassung des Adobe Campaigns ist nur für erfahrene Benutzer vorgesehen. Es erfordert Expertise im Input Form und Schema Design.
 
 Hier sehen Sie, was gültig/nicht gültig ist: https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html?lang=en#configuring-campaign-classic
