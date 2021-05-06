@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
 translation-type: tm+mt
-source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
+source-git-commit: a67c83eb531c795d621fdf36696ae4bde2151dba
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '545'
 ht-degree: 3%
 
 ---
@@ -44,9 +44,13 @@ Die Tabellen werden von der Kampagnen-Datenbank in die Cloud-Datenbank replizier
 
 Replikationsrichtlinien basieren auf der Größe der Tabelle. Einige Tabellen werden repliziert. Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen erhalten, wenn andere ersetzt werden.
 
-**SOLLTEN WIR ALLE TABELLEN LISTE NEHMEN?**
-
-ZUR PRÜFUNG
+| Namespace | Tabelle | Workflow-Replikation | Echtzeit-Replikation |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------- |
+| XTK | xtk:enum<br>xtk:enumValue<br>xtk:enumAlias<br>xtk:folder<br>xtk:formRendering<br>xtk:operator<br>xtk:group<br>xtk:report<br>Cube:olap be<br>xtk:olapDimension<br>xtk:olapMeasure<br>xtk:dictionaryString<br> | Ja (inkrementell) | Ja |
+| XTK | xtk:opsecurity<br>xtk:rights<br>xtk:operatorGroup<br>xtk:reportHistory<br>xtk:reportRights | Ja (vollständig) | Ja |
+| NMS | nms:budget<br>nms:Programm<br>nms:operation<br>nms:plan<br>nms:typologyRule<br>nms:typology<br>nms:extAccount<br>nms:deliveryMapping<br>nms:Versand (unmittelbare Replikation)<br>nms:nms Mitglied<br>nms:webApp<br>nms:trackingUrl (unmittelbare Replizierung)<br>nms:service<br>nms:offerEnv<br>nms:offerCategory<br>nms:offerSpace<br>nms:Angebot<br>nms:offerView<br>nms:Empfänger (inkrementell?)<br>nms:<br>groups:<br>dlvExclusionnms:stock | Ja (inkrementell) | Ja |
+| NMS | nms:country<br>nms:localOrgUnit<br>nms:state<br>nms:suppressionAddress<br>nms:suppressionDomain<br>nms:Kategorie<br>nms:trackingUrlInfo<br>nms:webTrackingLog<br>nms:mobileApp a8/>nms:budgetCategory<br>nms:costType<br>nms:costCenter<br>nms:costStructure<br>nms:stockLine<br>nms:costLine<br>nms:costLine<br> | Ja (vollständig) | Ja |
+| NMS | nms:address<br>nms:userAgent<br>nms:userAgentReject<br>nms:userAgentStats<br>nms:wideLogMsg<br>nms:wideLog<br>nms:trackingLog<br>nms:deliveryLogStats<br>nms ms:appSubscription<br>nms:proposition<br>nms:rcpGrpRel<br>nms:wideLogRcp<br>nms:excludeLogRcp<br>nms:trackingLogRcp<br>nms:proposition Rcp<br>nms:localValidationRcp<br>nms:Besucher<br>nms:wideLogVisitor<br>nms:trackingLogVisitor<br>nms:propositionVisitor<br>nms:webApp LogRcp<br>nms:appSubscriptionRcp<br>nms:wideLogAppSubRcp<br>nms:excludeLogAppSubRcp<br>nms:trackingLogAppSubRcp<br>nms ms:eventHisto<br>nms:wideLogEventHisto<br>nms:trackingLogEventHisto<br>nms:Abonnement<br>nms:subHisto<br>nms:trackingStats (nur Snowflake-Nutzung)<br>nms:tmpBroadcast (nur Snowflake verwenden)<br>nms:tmpBroadcastExclusion (nur Snowflake verwenden)<br>nms:tmpBroadcastPaper (nur Snowflake verwenden) | Nein | Nein |
 
 **Verwandte Themen**
 
