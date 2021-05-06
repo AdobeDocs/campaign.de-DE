@@ -4,9 +4,9 @@ product: campaign
 title: Schemas zur Kampagne erweitern
 description: Erfahren Sie, wie Sie die Schemas der Kampagne erweitern
 translation-type: tm+mt
-source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
+source-git-commit: 8e90eb762a6e08077270d4f5852bfc37ac783122
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '250'
 ht-degree: 1%
 
 ---
@@ -45,20 +45,26 @@ Gehen Sie wie folgt vor, um ein Schema zu verlängern:
 
    ![](assets/extend-schema-edit.png)
 
-   Im unten stehenden Beispiel fügen wir das Attribut Jahr der Mitgliedschaft hinzu, legen eine Längenbegrenzung für den Nachnamen fest (dieser Grenzwert überschreibt den Standardwert) und entfernen das Geburtsdatum aus dem integrierten Schema.
+   Im unten stehenden Beispiel fügen wir das Attribut MitgliedschaftJahr hinzu, legen eine Längenbegrenzung für den Nachnamen fest (dieser Grenzwert überschreibt den Standardwert) und entfernen das Geburtsdatum aus dem integrierten Schema.
+
+   ![](assets/extend-schema-sample.png)
 
    ```
    <srcSchema created="YY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
            img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YY-MM-DD"
            mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">
-   <element desc="Recipient table" img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
-           name="recipient">
-   <attribute name="Membership Year" label="memberYear" type="long"/>
+    <element desc="Recipient table" img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
+          name="recipient">
+   <attribute label="Member since" name="MembershipYear" type="long"/>
    <attribute length="50" name="lastName"/>
    <attribute _operation="delete" name="birthDate"/>
    </element>
-   </srcSchema> 
+   </srcSchema>
    ```
+1. Trennen Sie die Verbindung zur Kampagne und stellen Sie die Verbindung wieder her, um die Aktualisierung der Schema-Struktur auf der Registerkarte **[!UICONTROL Struktur]** zu überprüfen.
+
+   ![](assets/extend-schema-structure.png)
 
 1. Aktualisieren Sie die Datenbankstruktur, um Ihre Änderungen anzuwenden. [Mehr dazu](update-database-structure.md)
+
 1. Nachdem die Änderungen in der Datenbank implementiert wurden, können Sie das Eingabedateiformular des Empfängers anpassen, um die Änderungen sichtbar zu machen. [Mehr dazu](forms.md)
