@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 translation-type: tm+mt
-source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
+source-git-commit: 29c13e6c1b08a5b0f6ba8bb433f7165e3e452942
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 51%
 
 ---
@@ -45,7 +45,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign Classic? Dann lesen Sie im Folg
 
 1. Kann ich die Ausführung von Workflows überwachen?
 
-   :arrow_upper_right: Verstehen Sie, wie Sie die Ausführung des Arbeitsablaufs für Kampagnen [in Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html) überwachen.
+   :arrow_upper_right: Verstehen Sie, wie Sie die Ausführung des Arbeitsablaufs für Kampagnen unter [in der Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html) überwachen.
 
 1. Mit welchen Systemen und Komponenten ist Kampagne v8 kompatibel?
 
@@ -53,7 +53,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign Classic? Dann lesen Sie im Folg
 
 1. Wo sind die Versionshinweise zur Kampagne v8?
 
-   :bulb: Sie können auf die neuesten Versionshinweise zur Kampagne [auf dieser Seite ](release-notes.md) zugreifen.
+   :bulb: Die Versionshinweise zur neuesten Kampagne finden Sie hier.
 
 1. Wie funktioniert das Verfahren der Domain-Konfiguration?
 
