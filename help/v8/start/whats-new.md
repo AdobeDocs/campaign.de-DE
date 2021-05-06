@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 translation-type: tm+mt
-source-git-commit: 9dcde5cff8b3bdbf240b01967cb27f9de8178f98
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Neue Funktionen in Adobe Campaign v8 {#ac-gs-what-is-new}
 
-Adobe Campaign v8 bietet bedeutende Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Lieferbarkeit und Überwachung. Durch die Nutzung von Snowflake, einer Cloud-Datenbanktechnologie, verbessert Adobe Campaign seine Größe und Geschwindigkeit erheblich, da es eine größere Anzahl von Kundendaten verwalten kann und außerdem wesentlich höhere Versand- und Transaktionsraten pro Stunde erzielt.
+Adobe Campaign v8 bietet bedeutende Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Lieferbarkeit und Überwachung. Durch die Nutzung von [!DNL Snowflake], einer Cloud-Datenbanktechnologie, verbessert Adobe Campaign seine Skalierbarkeit und Geschwindigkeit erheblich, da es in der Lage ist, eine größere Anzahl von Profilen zu verwalten sowie deutlich höhere Versand- und Transaktionsraten pro Stunde zu erzielen.
 
 Die wichtigsten Funktionen von Creative Designer ermöglichen Folgendes:
 
@@ -40,7 +40,7 @@ Und wir vereinfachen Data Management gleichzeitig
 
 Kampagne v8 vereinfacht das Data Management: kein Index, keine Datenbankwartung. Bei Kampagne v8 ist in der Cloud-Datenbank kein Index erforderlich. Sie müssen nur Tabellen erstellen, die Daten kopieren und Beginn erstellen.
 
-Snowflake (auch als Cloud-Datenbank) bringt Ihnen Geschwindigkeit und Ausdauer: keine Überlastung der Systemspitzen der Aktivität.
+[!DNL Snowflake] ist die Kampagne Cloud-Datenbank und bringt Ihnen Geschwindigkeit und Ausdauer: keine Überlastung der Systemspitzen der Aktivität.
 
 Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung, um das Leistungsniveau zu gewährleisten.
 
