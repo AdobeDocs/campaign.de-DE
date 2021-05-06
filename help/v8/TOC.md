@@ -7,9 +7,9 @@ breadcrumb-title: Kampagne v8
 title: Dokumente der Kampagne v8
 hide: true
 translation-type: tm+mt
-source-git-commit: 1bdc1f03a824f8867ae6066196e8e3984fa73af7
+source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '164'
 ht-degree: 46%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 46%
    + [Profile und Zielgruppen](start/audiences.md)
    + [Datenimport](start/import.md)
    + [Kampagnen erstellen](start/campaigns.md)
+   + [Abonnements verwalten](start/subscriptions.md)
    + [Nachrichten senden](start/create-message.md)
    + [Verfolgen und überwachen](start/tracking.md)
    + [Metriken und Berichte](start/reporting.md)
@@ -80,6 +81,7 @@ ht-degree: 46%
       + [Formulare](dev/forms.md)
    + APIs {#api}
       + [Erste Schritte](dev/api.md)
+      + [Neue APIs](dev/new-apis.md)
       + [APIs der Kampagne v8](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)
 
 
