@@ -4,22 +4,95 @@ product: campaign
 title: Arbeiten mit Kampagne-Schemas
 description: Erste Schritte mit Schemas
 translation-type: tm+mt
-source-git-commit: 779542ab70f0bf3812358884c698203bab98d1ce
+source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 9%
+source-wordcount: '1250'
+ht-degree: 7%
 
 ---
 
 # Arbeiten mit Schemas{#gs-ac-schemas}
 
+Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Es folgt einer für Adobe Campaign spezifischen Grammatik, die als **Schema** bezeichnet wird.
+
+Ein Schema ist ein mit einer Datenbanktabelle verknüpftes XML-Dokument. Er definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle:
+
+* Der Name der Tabelle
+* Felder
+* Links zu anderen Tabellen
+
+Außerdem wird die XML-Struktur zum Speichern von Daten beschrieben:
+
+* Elemente und Attribute
+* Hierarchie der Elemente
+* Element- und Attributtypen
+* Standardwerte
+* Beschriftungen, Beschreibungen und andere Eigenschaften.
+
+Mit Schemas können Sie eine Entität in der Datenbank definieren. Es gibt ein Schema für jede Entität.
+
 Adobe Campaign verwendet Data Schemas für:
 
-* Definieren der Verknüpfung zwischen den Datenobjekten in der Anwendung mit den zugrunde liegenden Datenbanktabellen
+* Definieren Sie, wie Datenobjekte innerhalb der Anwendung mit zugrunde liegenden Datenbanktabellen verknüpft werden.
 * Definieren von Beziehungen zwischen den unterschiedlichen Datenobjekten in der Campaign-Anwendung
 * Definieren und Beschreiben der einzelnen Felder eines jeden Objekts
 
 Ein besseres Verständnis der integrierten Kampagnen und ihrer Interaktion finden Sie in [diesem Abschnitt](datamodel.md).
+
+>[!CAUTION]
+>
+>Einige integrierte Kampagne-Schema verfügen über ein verknüpftes Schema in der Cloud-Datenbank. Diese Schema werden durch den Namensraum **Xxl** identifiziert und dürfen nicht geändert werden.
+
+## Syntax der Schema {#syntax-of-schemas}
+
+Das Stammelement des Schemas ist **`<srcschema>`**. Es enthält die Unterelemente **`<element>`** und **`<attribute>`**.
+
+Das erste **`<element>`**-Unterelement fällt mit dem Stammelement der Entität zusammen.
+
+```
+<srcSchema name="recipient" namespace="cus">
+  <element name="recipient">  
+    <attribute name="lastName"/>
+    <attribute name="email"/>
+    <element name="location">
+      <attribute name="city"/>
+   </element>
+  </element>
+</srcSchema>
+```
+
+>[!NOTE]
+>
+>Das Stammelement der Entität hat denselben Namen wie das Schema.
+
+![](assets/schema_and_entity.png)
+
+Die Tags **`<element>`** definieren die Namen von Entitätselementen. **`<attribute>`** -Tags des Schemas definieren die Namen der Attribute in den  **`<element>`** Tags, mit denen sie verknüpft wurden.
+
+## Identifizierung eines Schemas {#identification-of-a-schema}
+
+Ein Schema wird anhand seines Namens und seines Namensraums identifiziert.
+
+Mit einem Namensraum können Sie eine Reihe von Schemas nach Interessensgebieten gruppieren. Beispielsweise wird der Namensraum **cus** für die kundenspezifische Konfiguration (**Customers**) verwendet.
+
+>[!CAUTION]
+>
+>Standardmäßig muss der Name des Namensraums knapp sein und darf nur autorisierte Zeichen gemäß den XML-Benennungsregeln enthalten.
+>
+>Bezeichner dürfen nicht mit numerischen Zeichen beginnen.
+
+## Reservierte Namensraum
+
+Bestimmte Namensraum sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind. Der folgende Namensraum **darf bei keiner Groß-/Kleinschreibung zur Identifizierung eines neuen Schemas verwendet werden:**
+
+* **xxl**: für Cloud-Datenbank-Schema reserviert,
+* **xtk**: reserviert für Plattformsystemdaten,
+* **nl**: ausschließlich der Verwendung des Antrags insgesamt vorbehalten,
+* **nms**: für Versand reserviert (Empfänger, Versand, Verfolgung usw.)
+* **ncm**: Content-Management vorbehalten,
+* **temp**: für temporäre Schemas reserviert.
+
+Der Identifizierungsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namensraums und des durch einen Doppelpunkt getrennten Namens erstellt wird. Beispiel: **nms:Empfänger**.
 
 ## Kampagne-Schema {#create-or-extend-schemas} erstellen oder erweitern
 
@@ -32,6 +105,7 @@ Um einen völlig neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht vorha
 :bulb: Weitere Informationen finden Sie unter [Neues Schema erstellen](create-schema.md).
 
 ![](assets/schemaextension_1.png)
+
 
 Nachdem Sie ein Schema für die Verwendung erstellt oder erweitert haben, sollten Sie dessen XML-Inhaltselemente in der Reihenfolge definieren, in der sie unten aufgeführt sind.
 
