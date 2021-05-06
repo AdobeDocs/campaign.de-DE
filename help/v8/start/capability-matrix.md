@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 translation-type: tm+mt
-source-git-commit: 04859274593f507a0b07f46cf6a65434b6a4bc60
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '549'
 ht-degree: 3%
 
 ---
@@ -33,9 +33,9 @@ Beachten Sie als Campaign Classic, dass die meisten Campaign Classic v7-Funktion
 
 ## Produktkonfigurationsänderungen
 
-### Kampagne und Snowflake {#ac-gs-snowflake}
+### Kampagne und [!DNL Snowflake] {#ac-gs-snowflake}
 
-Die Cloud-Datenspeicherung wird in Snowflake ausgeführt: Ein neues Externe Konto stellt die Verbindung zur Cloud-Datenbank sicher. [Weitere Informationen](#ac-gs-snowflake).
+Die Cloud-Datenspeicherung wird in [!DNL Snowflake] ausgeführt: Ein neues Externe Konto stellt die Verbindung zur Cloud-Datenbank sicher. [Weitere Informationen](#ac-gs-snowflake).
 
 Dies ist ein grundlegender Wandel in der Softwarearchitektur. Daten sind jetzt remote: Die Kampagne führt die gesamten Daten, einschließlich Profilen, zusammen. Der Kampagne-Prozess wird jetzt von Ende zu Ende skaliert, vom Targeting zur Ausführung des Versands: Die Datenerfassung, Segmentierung, Targeting, Abfragen und die Ausführung des Versands werden jetzt in wenigen Minuten ausgeführt.
 
@@ -45,7 +45,7 @@ Ein neues integriertes **Externe Konto** ist der vollständigen FDA gewidmet. Di
 
 Für alle integrierten Schemas/Tabellen, die in die Cloud-Datenbank verschoben oder repliziert werden müssen, ist unter Namensraum **xxl** eine integrierte Schema-Erweiterung verfügbar. Was die Schema-Erweiterung angeht, wird der neue XXL-Namensraum für jede neue OOTB-Konfiguration wie JavaScript, JSSP usw. verwendet.
 
-Diese Erweiterungen enthalten alle erforderlichen Änderungen, um integrierte Schema von der lokalen Kampagne in die Snowflake Cloud-Datenbank zu verschieben und ihre Struktur entsprechend anzupassen: neue UUID, aktualisierte Links usw.
+Diese Erweiterungen enthalten alle erforderlichen Änderungen, um integrierte Schema von der lokalen Kampagne in die Cloud-Datenbank zu verschieben und ihre Struktur entsprechend anzupassen: neue UUID, aktualisierte Links usw.[!DNL Snowflake]
 
 >[!CAUTION]
 >
