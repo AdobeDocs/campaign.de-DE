@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
 translation-type: tm+mt
-source-git-commit: 9efd6442336a62e627b0da4e17fa742f59f715f9
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 2%
+source-wordcount: '332'
+ht-degree: 3%
 
 ---
 
@@ -28,8 +28,7 @@ Diese Workflows führen Datenbankwartungsoperationen durch, nutzen die Verfolgun
 Zusätzlich zu diesen Technischen Workflows setzt Kampagne v8 bei der Verwaltung der [Datenreplikation](#data-replication) auf bestimmte Technischen Workflows.
 
 * **[!UICONTROL Replizieren]**
-von Referenztabellen Dieser Arbeitsablauf führt die automatische Replikation von Referenztabellen durch, die in der lokalen Kampagne (Postgres) und in der Cloud-Datenbank (Snowflake) vorhanden sein müssen. Die Ausführung ist für jede Stunde und jeden Tag geplant. if 
-**lastModifiedField** existiert, die Replikation erfolgt inkrementell, andernfalls wird die gesamte Tabelle repliziert. Die Reihenfolge der Tabellen im folgenden Array ist die Reihenfolge, in der der Replikationsarbeitsablauf verwendet wird.
+von Referenztabellen Dieser Arbeitsablauf führt die automatische Replikation von Referenztabellen durch, die in der lokalen Kampagne (Postgres) und in der Cloud-Datenbank ([!DNL Snowflake]) vorhanden sein müssen. Die Ausführung ist für jede Stunde und jeden Tag geplant. Wenn das Feld **lastModified** vorhanden ist, erfolgt die Replikation inkrementell, ansonsten wird die gesamte Tabelle repliziert. Die Reihenfolge der Tabellen im folgenden Array ist die Reihenfolge, in der der Replikationsarbeitsablauf verwendet wird.
 * **[!UICONTROL Staging-]**
 Daten replizierenDieser Arbeitsablauf repliziert Staging-Daten für einmalige Aufrufe. Die Ausführung ist für jede Stunde und jeden Tag geplant.
 * **[!UICONTROL FFDA sofort freigeben]**\
@@ -41,7 +40,7 @@ Diese Technischen Workflows sind im Knoten **[!UICONTROL Administration > Produk
 
 ## Datenreplikation{#data-replication}
 
-Die Tabellen werden von der Kampagnen-Datenbank in die Snowflake Cloud-Datenbank repliziert, indem die oben beschriebenen Workflows dediziert werden.
+Die Tabellen werden von der Kampagnen-Datenbank in die Cloud-Datenbank repliziert, indem die oben beschriebenen Workflows dediziert werden.[!DNL Snowflake]
 
 Replikationsrichtlinien basieren auf der Größe der Tabelle. Einige Tabellen werden repliziert. Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen erhalten, wenn andere ersetzt werden.
 
