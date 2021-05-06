@@ -4,82 +4,61 @@ product: campaign
 title: Schemas zur Kampagne erweitern
 description: Erfahren Sie, wie Sie die Schemas der Kampagne erweitern
 translation-type: tm+mt
-source-git-commit: 779542ab70f0bf3812358884c698203bab98d1ce
+source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 6%
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
 # Erweitern eines Schemas{#extend-schemas}
 
-In diesem Artikel wird beschrieben, wie Sie Erweiterungsschema konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
+Als technischer Anwender können Sie das Datenmodell der Kampagne an die Anforderungen Ihrer Implementierung anpassen: Elemente zu einem vorhandenen Schema hinzufügen, ein Element in einem Schema ändern oder Elemente löschen.
+
+Die wichtigsten Schritte zum Anpassen des Datenmodells der Kampagne sind:
+
+1. Erweiterungsschema erstellen
+1. Kampagne aktualisieren
+1. Anpassen des Eingabefelds
+
+>[!CAUTION]
+>Integriertes Schema darf nicht direkt geändert werden. Wenn Sie ein integriertes Schema anpassen müssen, müssen Sie es erweitern.
 
 :bulb: Ein besseres Verständnis der integrierten Kampagnen und ihrer Interaktion finden Sie auf [dieser Seite](datamodel.md).
 
-Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Es folgt einer für Adobe Campaign spezifischen Grammatik, die als **Schema** bezeichnet wird.
+Gehen Sie wie folgt vor, um ein Schema zu verlängern:
 
-Ein Schema ist ein mit einer Datenbanktabelle verknüpftes XML-Dokument. Er definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle:
+1. Navigieren Sie im Explorer zum Ordner **[!UICONTROL Administration > Configuration > Data Schemas]**.
+1. Klicken Sie auf die Schaltfläche **Neu** und wählen Sie **[!UICONTROL Erweitern Sie die Daten in einer Tabelle mit einem Erweiterungsschema]**.
 
-* Der Name der Tabelle
-* Felder
-* Links zu anderen Tabellen
+   ![](assets/extend-schema-option.png)
 
-Außerdem wird die XML-Struktur zum Speichern von Daten beschrieben:
+1. Identifizieren Sie das integrierte Schema, das erweitert werden soll, und wählen Sie es aus.
 
-* Elemente und Attribute
-* Hierarchie der Elemente
-* Element- und Attributtypen
-* Standardwerte
-* Beschriftungen, Beschreibungen und andere Eigenschaften.
+   ![](assets/extend-schema-select.png)
 
-Mit Schemas können Sie eine Entität in der Datenbank definieren. Es gibt ein Schema für jede Entität.
+   Benennen Sie das Erweiterungsschema standardmäßig genauso wie das integrierte Schema und verwenden Sie einen benutzerdefinierten Namensraum.
 
-## Syntax der Schema {#syntax-of-schemas}
+   ![](assets/extend-schema-validate.png)
 
-Das Stammelement des Schemas ist **`<srcschema>`**. Es enthält die Unterelemente **`<element>`** und **`<attribute>`**.
+1. Fügen Sie im Schema-Editor die benötigten Elemente über das Kontextmenü hinzu und speichern Sie sie.
 
-Das erste **`<element>`**-Unterelement fällt mit dem Stammelement der Entität zusammen.
+   ![](assets/extend-schema-edit.png)
 
-```
-<srcSchema name="recipient" namespace="cus">
-  <element name="recipient">  
-    <attribute name="lastName"/>
-    <attribute name="email"/>
-    <element name="location">
-      <attribute name="city"/>
+   Im unten stehenden Beispiel fügen wir das Attribut Jahr der Mitgliedschaft hinzu, legen eine Längenbegrenzung für den Nachnamen fest (dieser Grenzwert überschreibt den Standardwert) und entfernen das Geburtsdatum aus dem integrierten Schema.
+
+   ```
+   <srcSchema created="YY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
+           img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YY-MM-DD"
+           mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">
+   <element desc="Recipient table" img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
+           name="recipient">
+   <attribute name="Membership Year" label="memberYear" type="long"/>
+   <attribute length="50" name="lastName"/>
+   <attribute _operation="delete" name="birthDate"/>
    </element>
-  </element>
-</srcSchema>
-```
+   </srcSchema> 
+   ```
 
->[!NOTE]
->
->Das Stammelement der Entität hat denselben Namen wie das Schema.
-
-![](assets/schema_and_entity.png)
-
-Die Tags **`<element>`** definieren die Namen von Entitätselementen. **`<attribute>`** -Tags des Schemas definieren die Namen der Attribute in den  **`<element>`** Tags, mit denen sie verknüpft wurden.
-
-## Identifizierung eines Schemas {#identification-of-a-schema}
-
-Ein Schema wird anhand seines Namens und seines Namensraums identifiziert.
-
-Mit einem Namensraum können Sie eine Reihe von Schemas nach Interessensgebieten gruppieren. Beispielsweise wird der Namensraum **cus** für die kundenspezifische Konfiguration (**Customers**) verwendet.
-
->[!CAUTION]
->
->Standardmäßig muss der Name des Namensraums knapp sein und darf nur autorisierte Zeichen gemäß den XML-Benennungsregeln enthalten.
->
->Bezeichner dürfen nicht mit numerischen Zeichen beginnen.
-
-Bestimmte Namensräume sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb des Adobe Campaign-Antrags erforderlich sind:
-
-* **xxl**: zu Cloud-Datenbank-Schemas,
-* **xtk**: Plattformsystemdaten,
-* **nl**: über die Verwendung des Antrags insgesamt,
-* **nms**: Versand (Empfänger, Versand, Verfolgung usw.),
-* **ncm**: Content-Management,
-* **temp**: für vorübergehende Schemas reserviert.
-
-Der Identifizierungsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namensraums und des durch einen Doppelpunkt getrennten Namens erstellt wird. Beispiel: **nms:Empfänger**.
+1. Aktualisieren Sie die Datenbankstruktur, um Ihre Änderungen anzuwenden. [Mehr dazu](update-database-structure.md)
+1. Nachdem die Änderungen in der Datenbank implementiert wurden, können Sie das Eingabedateiformular des Empfängers anpassen, um die Änderungen sichtbar zu machen. [Mehr dazu](forms.md)
