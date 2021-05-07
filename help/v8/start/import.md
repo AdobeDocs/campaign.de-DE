@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 0995e3595d2e5f38bade4f71fccc7938d7d1284b
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 12%
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 # Daten in Kampagne {#ootb-profiles} importieren
 
-Mit Kampagne können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können eine Datei laden, mehrere Kontaktaktualisierungen planen und automatisieren, Daten im Web erfassen oder Profile direkt in die Empfänger-Tabelle eingeben.
+Mit Kampagne können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können eine Datei laden, mehrere Kontaktaktualisierungen planen und automatisieren, Daten im Web erfassen oder Profil-Informationen direkt in die Empfänger-Tabelle eingeben.
 
 :blub: Erste Schritte mit [Audiencen](audiences.md)
 :blub: Verstehen Sie die Kampagne [datamodel](../dev/datamodel.md)
