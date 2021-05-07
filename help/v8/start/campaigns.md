@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: b39cac492f4605b7d1d7aeb75f6af26a20bf43e6
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '746'
 ht-degree: 12%
 
 ---
@@ -35,7 +35,7 @@ Bevor Sie mit der Implementierung von Marketing-Kampagnen beginnen, müssen Sie 
 
 * **Plan**: der Marketingplan kann mehrere Programm enthalten. Es ist an einen Kalenderzeitraum gebunden, verfügt über zugewiesene Haushaltsmittel und kann auch mit Dokumenten und Zielen verknüpft werden.
 
-* **Arbeitsablauf** der Kampagne: ein Arbeitsablauf für Kampagnen enthält Aktivitäten zum Aufbau der Kampagne-Logik. Mit Kampagnen-Workflows können Sie Audiencen definieren und Versand für alle verfügbaren Kanal erstellen.
+* **Arbeitsablauf** der Kampagne: ein Arbeitsablauf für Kampagnen enthält Aktivitäten zum Aufbau der Kampagne-Logik. Verwenden Sie Kampagnen-Workflows, um Audiencen zu definieren und Versand für alle verfügbaren Kanal zu erstellen.
 
 * **Wiederkehrende Kampagnen**: wiederkehrende Kampagnen werden aus einer bestimmten Vorlage erstellt, die die auszuführende Workflow-Vorlage und den Ausführungsplan definiert.
 
