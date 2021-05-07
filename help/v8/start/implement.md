@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 9b6190f48373b772a72d6c1ef1b7510ec41112be
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1159'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ In diesem Abschnitt erfahren Sie, wie Sie das Adobe Campaign an die Anforderunge
 
 ## Vor Beginn
 
-Dieser Abschnitt enthält Informationen für Entwickler, die spezifisch für ihre Implementierung verantwortlich sind und sich vor dem Starten mit Datenschutz und Sicherheit befassen müssen.
+Dieser Abschnitt enthält wichtige Informationen zum Datenschutz und zur Sicherheit, die vor der eigentlichen Implementierung überprüft und berücksichtigt werden müssen.
 
 ### Datenschutz
 
@@ -62,7 +62,7 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie:
 
 1. Profile importieren und Audiencen erstellen
 
-   Mit Kampagne können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können eine Datei laden, mehrere Kontaktaktualisierungen planen und automatisieren, Daten im Web erfassen oder Profile direkt in die Empfänger-Tabelle eingeben.
+   Mit Kampagne können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können eine Datei laden, mehrere Kontaktaktualisierungen planen und automatisieren, Daten im Web erfassen oder Profil-Informationen direkt in die Empfänger-Tabelle eingeben.
 
    :bulb: [Erfahren Sie, wie Sie Profil](import.md) importieren.
 
@@ -88,7 +88,7 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie:
 
 1. Machen Sie sich mit dem integrierten Datenmodell der Kampagne vertraut
 
-   Adobe Campaign enthält ein vordefiniertes Datenmodell. Um Ihre Umgebung zu implementieren und anzupassen, müssen Sie mit den integrierten Tabellen des Adobe Campaign-Datenmodells und deren Interaktion vertraut sein.
+   Adobe Campaign enthält ein vordefiniertes Datenmodell. Um Ihre Umgebung zu implementieren und anzupassen, müssen Sie mit den integrierten Tabellen des Adobe Campaign-Datenmodells und deren Beziehung zueinander vertraut sein.
 
    :bulb: [Erfahren Sie mehr über die Kampagne datamodel](../dev/datamodel.md).
 
