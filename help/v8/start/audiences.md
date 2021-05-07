@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 81a6d365554d87b020d47be6fd6a896f8ad33d57
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 41%
+source-wordcount: '705'
+ht-degree: 38%
 
 ---
 
@@ -64,7 +64,7 @@ Targeting kann über eine Kombination von Abfragen in einer grafischen Abfolge i
 
 Gemäß Ihrem Vertrag erhalten alle Ihre Campaign-Instanzen eine bestimmte Anzahl aktiver Profile, die zu Abrechnungszwecken gezählt werden. Informationen zur Anzahl der gekauften aktiven Profile finden Sie in Ihrem aktuellen Vertrag.
 
-&quot;Profil&quot; einen Datensatz mit Informationen (z. B.: einen Datensatz in der Tabelle [Empfänger](../dev/datamodel.md) oder eine externe Tabelle, die eine Cookie-ID, Kunden-ID, Mobilkennung oder andere für einen bestimmten Kanal relevante Informationen enthält), der einen Endkunden, Potenzieller Kunde oder Interessenten darstellt. Profile gelten als aktiv, wenn sie in den letzten 12 Monaten über einen beliebigen Kanal angesprochen wurden oder über einen beliebigen Kanal mit ihnen kommuniziert wurde.
+&quot;Profil&quot; einen Datensatz mit Informationen (z. B.: einen Datensatz in der Tabelle [Empfänger](../dev/datamodel.md) oder eine externe Tabelle, die eine Cookie-ID, Kunden-ID, Mobilkennung oder andere für einen bestimmten Kanal relevante Informationen enthält), der einen Endkunden, Potenzieller Kunde oder Interessenten darstellt. Profil gelten als aktiv, wenn sie in den letzten 12 Monaten über einen Kanal anvisiert oder mitgeteilt wurden.
 
 Sie können die Anzahl der aktiven Profil, die auf Ihren Instanzen verwendet werden, direkt über die Systemsteuerung der Kampagne überwachen.
 
