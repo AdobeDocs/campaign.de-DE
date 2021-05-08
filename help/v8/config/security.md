@@ -4,10 +4,10 @@ product: Adobe Campaign
 title: Best Practices für die Sicherheit von Kampagnen
 description: Erste Schritte mit Best Practices zur Kampagne
 translation-type: tm+mt
-source-git-commit: d758b6ffaee5fdab3f600f58be5a81694162d269
+source-git-commit: 5592dd4e79391d953a4bc54cdd47475417e07b56
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 34%
+source-wordcount: '515'
+ht-degree: 31%
 
 ---
 
@@ -40,9 +40,9 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 
 ## Dateneinschränkung
 
-Sie müssen sicherstellen, dass keine authentifizierten Benutzer mit unzureichender Berechtigung auf die verschlüsselten Passwörter zugreifen können. Dazu gibt es zwei Möglichkeiten: den Zugriff auf Kennwortfelder oder die gesamte Entität einschränken (Erstellen >= 8770 erforderlich).
+Sie müssen sicherstellen, dass keine authentifizierten Benutzer mit unzureichender Berechtigung auf die verschlüsselten Passwörter zugreifen können. Dazu gibt es zwei Möglichkeiten: den Zugriff auf Kennwortfelder oder auf die gesamte Entität einschränken.
 
-Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. Weiterführende Informationen finden Sie auf [dieser Seite](../dev/restrict-pi-view.md).
+Mit dieser Einschränkung können Sie Kennwortfelder entfernen, das Externe Konto ist jedoch für alle Benutzer über die Benutzeroberfläche zugänglich. Weiterführende Informationen finden Sie auf [dieser Seite](../dev/restrict-pi-view.md).
 
 1. Gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL Konfigurieren]** > **[!UICONTROL Datenschemata]**.
 
@@ -115,10 +115,10 @@ Zugriffsverwaltung ist ein wichtiger Teil der Sicherheitshärtung. Im Folgenden 
 
 Beachten Sie bei der Entwicklung in Adobe Campaign (Workflows, Javascript, JSSP usw.) immer folgende Richtlinien:
 
-* Skripterstellung: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Konkatenation, und vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen auf die Zulassungsliste setzen.
+* **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Konkatenation, und vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen auf die Zulassungsliste setzen.
 
-* Sichern Sie das Datenmodell: Verwenden Sie Spezifische Berechtigungen, um Operatoraktionen zu begrenzen, Systemkomponenten hinzuzufügen (sysFilter).
+* **Sichern Sie das Datenmodell**: Verwenden Sie Spezifische Berechtigungen, um Operatoraktionen zu begrenzen, Systemkomponenten hinzuzufügen (sysFilter).
 
-* hinzufügen captchas in Webanwendungen: fügen Sie captchas in Ihren öffentlichen Landingpages und Abonnement-Seiten hinzu.
+* **hinzufügen captchas in Webanwendungen**: fügen Sie captchas in Ihren öffentlichen Landingpages und Abonnement-Seiten hinzu.
 
 :arrow_upper_right: Weitere Informationen finden Sie in der [Adobe Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)
