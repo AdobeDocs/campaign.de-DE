@@ -4,9 +4,9 @@ product: Adobe Campaign
 title: Best Practices für Datenmodelle
 description: Bewährte Verfahren zur Kampagne von Datenmodellerweiterungen
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 8da6928096feec988d6495fdb617dda7d7cac6ff
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2668'
 ht-degree: 36%
 
 ---
@@ -17,7 +17,7 @@ In diesem Dokument werden die wichtigsten Empfehlungen beim Entwerfen Ihres Adob
 
 Das Adobe Campaign-System ist sehr flexibel und kann über die ursprüngliche Implementierung hinaus erweitert werden. Obwohl die Möglichkeiten unbegrenzt sind, ist es wichtig, die richtigen Entscheidungen zu treffen und eine solide Grundlage zu schaffen, um mit der Entwicklung Ihres Datenmodells zu beginnen.
 
-Für ein besseres Verständnis der in der Kampagne integrierten Tabellen und ihrer Interaktion lesen Sie [diesen Abschnitt](datamodel.md) .
+Für ein besseres Verständnis der in der Kampagne integrierten Tabellen und ihrer Beziehung zueinander finden Sie in [diesem Abschnitt](datamodel.md) .
 
 :bulb: Lesen Sie [diesen Abschnitt](schemas.md), um mit Kampagne-Schemas zu beginnen.
 
@@ -59,7 +59,7 @@ Wenn ein Attribut nicht in eine dieser Kategorien fällt, benötigen Sie es wahr
 Um eine gute Architektur und Systemleistung sicherzustellen, befolgen Sie die folgenden Best Practices, wenn Sie Daten in Adobe Campaign einrichten.
 
 * Eine große Tabelle sollte meist numerische Felder enthalten und Links zu Referenztabellen enthalten (bei der Liste von Werten).
-* Mit dem Attribut **expr** können Sie ein Schema-Attribut als berechnetes Feld und nicht als physikalischen Tabellensatzwert definieren. Dadurch können Informationen in einem anderen Format (z. B. Alter und Geburtsdatum) aufgerufen werden, ohne dass beide Werte gespeichert werden müssen. Dies ist eine gute Möglichkeit, Felder nicht zu duplizieren. Die Tabelle &quot;Empfänger&quot;verwendet beispielsweise einen Ausdruck für die Domäne, der bereits im E-Mail-Feld vorhanden ist.
+* Mit dem Attribut **expr** können Sie ein Schema-Attribut als berechnetes Feld und nicht als physikalischen Tabellensatzwert definieren. Dadurch kann der Zugriff auf die Informationen in einem anderen Format (z. B. Alter und Geburtsdatum) ermöglicht werden, ohne dass beide Werte gespeichert werden müssen. Dies ist eine gute Möglichkeit, Felder nicht zu duplizieren. Die Tabelle &quot;Empfänger&quot;verwendet beispielsweise einen Ausdruck für die Domäne, der bereits im E-Mail-Feld vorhanden ist.
 * Wenn die Berechnung des Ausdrucks jedoch komplex ist, wird die Verwendung des Attributs **expr** nicht empfohlen, da die Berechnung der Pausierung Auswirkungen auf die Leistung Ihrer Abfragen haben kann.
 * Der Typ **XML** ist eine gute Möglichkeit, zu viele Felder zu vermeiden. Es nimmt aber auch Speicherplatz auf der Festplatte auf, da es eine CLOB-Spalte in der Datenbank verwendet. Es kann auch zu komplexen SQL-Abfragen führen und die Leistung beeinträchtigen.
 * Die Länge eines Felds **string** sollte immer mit der Spalte definiert werden. Standardmäßig ist das Adobe Campaign maximal 255 Zeichen lang. Es wird jedoch empfohlen, das Feld kürzer zu halten, wenn Sie bereits wissen, dass die Feldlänge kürzer ist.
@@ -67,9 +67,8 @@ Um eine gute Architektur und Systemleistung sicherzustellen, befolgen Sie die fo
 
 ### Auswahl der Felder {#choice-of-fields}
 
-Ein Feld muss in einer Tabelle gespeichert werden, wenn es einen Targeting- oder Personalisierungszweck hat. Mit anderen Worten, wenn ein Feld nicht zum Senden einer personalisierten E-Mail verwendet wird oder als Kriterium in einer Abfrage verwendet wird, nimmt es Speicherplatz auf der Festplatte in Anspruch, ist jedoch nutzlos.
+Ein Feld muss in einer Tabelle gespeichert werden, wenn es einen Targeting- oder Personalisierungszweck hat. Mit anderen Worten, wenn ein Feld nicht zum Senden einer personalisierten E-Mail oder als Kriterium in einer Abfrage verwendet wird, nimmt es unnötigerweise Speicherplatz in Anspruch.
 
-Bei Hybrid- und lokalen Instanzen deckt die FDA (Federated Data Access, eine optionale Funktion, die den Zugriff auf externe Daten ermöglicht) die Notwendigkeit ab, während einer Kampagne ein Feld &quot;on-the-fly&quot;hinzuzufügen. Sie müssen nicht alles importieren, wenn Sie FDA haben. Weitere Informationen finden Sie unter [Federated Data Access](../connect/fda.md).
 
 ### Wahl der Schlüssel {#choice-of-keys}
 
@@ -97,7 +96,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 | Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Dieser Wert kann manuell aktualisiert werden, üblicherweise mit einem generierten Namen.</li><li>Dieser Bezeichner behält seinen Wert bei, wenn er in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und sollte nicht leer sein.</li></ul> | <ul><li>Benennen Sie den von Adobe Campaign generierten Datensatznamen um, wenn das Objekt von einer Umgebung in eine andere bereitgestellt werden soll.</li><li>Wenn ein Objekt beispielsweise über ein Namensraum-Attribut verfügt (*Schema*), wird dieser allgemeine Namensraum für alle erstellten benutzerdefinierten Objekte genutzt. Einige reservierte Namensraum sollten nicht verwendet werden: *nms*, *xtk*.</li><li>Wenn ein Objekt keinen Namensraum hat (*workflow* oder *Versand*), wird dieser Namensraum-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen &quot; &quot;, Doppelpunkt &quot;:&quot; oder Bindestrich &quot;-&quot;. Alle diese Zeichen würden durch einen Unterstrich (_) ersetzt werden. Beispielsweise würden &quot;abc-def&quot; und &quot;abc:def&quot; als &quot;abc_def&quot; gespeichert werden und sich gegenseitig überschreiben.</li></ul> |
 | Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
-Der primäre Adobe Campaign ist eine automatisch generierte UUID für alle integrierten Tabellen und kann für benutzerdefinierte Tabellen identisch sein.
+Adobe Campaign-Primärschlüssel ist eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden.
 
 Auch wenn die Anzahl der IDs unbegrenzt ist, sollten Sie sich um die Größe Ihrer Datenbank kümmern, um eine optimale Leistung sicherzustellen. Um Probleme zu vermeiden, müssen Sie die Einstellungen für die Bereinigung der Instanz anpassen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#data-retention).
 
@@ -123,7 +122,7 @@ Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur 
 
 ### Relationen {#links}
 
-Achten Sie auf die &quot;eigene&quot; Integrität auf großen Tischen. Das Löschen von Datensätzen mit einer breiten Tabelle in &quot;eigener&quot;Integrität kann die Instanz stoppen. Die Tabelle ist gesperrt und die Löschungen werden einzeln vorgenommen. Daher ist es am besten, &quot;neutrale&quot; Integrität auf untergeordneten Tabellen mit großen Mengen zu verwenden.
+Achten Sie auf die &quot;eigene&quot; Integrität auf großen Tischen. Durch das Löschen von Datensätzen, die über große Tabellen mit &quot;eigener&quot;Integrität verfügen, kann die Instanz möglicherweise beendet werden. Die Tabelle ist gesperrt und die Löschungen werden einzeln vorgenommen. Daher ist es am besten, &quot;neutrale&quot; Integrität auf untergeordneten Tabellen mit großen Mengen zu verwenden.
 
 Das Deklarieren eines Links als externer Verbindungspunkt ist nicht gut für die Leistung. Der Null-ID-Datensatz emuliert die externe Verbindungsfunktion. Es ist nicht erforderlich, externe Verbindungen zu deklarieren, wenn der Link die Autouuid verwendet.
 
