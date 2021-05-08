@@ -7,9 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: e068642c1bc5bf5f0329fc09f7ca6ddbd1683d6a
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1546'
 ht-degree: 73%
 
 ---
@@ -20,10 +20,10 @@ Transaktionsnachricht (Message Center) ist ein Campaign-Modul, das die Nachricht
 
 :language_ballon: Als Managed Cloud Services-Benutzer wenden Sie sich an die [Adobe](../start/support.md#support), um Kampagne Transactional Messaging in Ihrer Umgebung zu installieren und zu konfigurieren.
 
-Transaktionsnachrichten dienen dazu,
+Transaktionsnachrichten dienen zum Senden:
 
 * Benachrichtigungen, z. B. Bestellbestätigungen oder Zurücksetzungen von Passwörtern
-* eine individuelle Echtzeit-Antwort auf eine Kundenaktion senden
+* eine individuelle Echtzeit-Antwort auf eine Kundenaktion
 * keine Werbeinhalte
 
 :bulb: Die Einstellungen für Transaktionsnachrichten sind in [diesem Abschnitt](../config/transactional-msg-settings.md) beschrieben.
@@ -116,7 +116,7 @@ Mit einer Seed-Adresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen
 
    ![](assets/messagecenter_create_seed_4.png)
 
-1. Fügen Sie Testdaten ein. Weitere Informationen finden Sie in [diesem Abschnitt](#personalization-data).
+1. Fügen Sie Testdaten ein. Siehe [diesen Abschnitt](#personalization-data).
 
    ![](assets/messagecenter_create_custo_3.png)
 
