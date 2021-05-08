@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: ddf60fb823cb0df99bdf3bc99f17d7a1abe6a33b
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '562'
 ht-degree: 11%
 
 ---
@@ -25,13 +25,13 @@ Erfahren Sie, wie Sie **Ihre Kampagne anpassen**
 
 ## Neue Datenfelder und Schemas erstellen
 
-Adobe Campaign verwendet Data Schemas für:
+Adobe Campaign nutzt Data Schemas, um:
 
 * Definieren der Bindung von Datenobjekten innerhalb der Anwendung an zugrunde liegende Datenbanktabellen
 * Definieren von Verknüpfungen zwischen den verschiedenen Datenobjekten in der Kampagne
 * Definieren und Beschreiben der einzelnen Felder in den einzelnen Objekten
 
-Sie können ein Feld zu einer vorhandenen Tabelle hinzufügen, z. B. der Empfänger-Tabelle (nms:Empfänger), müssen Sie dieses Schema erweitern.
+Um beispielsweise ein Feld zu einer vorhandenen Tabelle hinzuzufügen, z. B. der Tabelle &quot;Empfänger&quot;(nms:Empfänger), müssen Sie dieses Schema erweitern.
 
 Es stehen zwei Tabellenerweiterungsmodi zur Verfügung:
 
@@ -44,7 +44,7 @@ Es stehen zwei Tabellenerweiterungsmodi zur Verfügung:
    :bulb: Erfahren Sie, wie Sie ein vorhandenes Schema in [diesem Abschnitt](../dev/extend-schema.md) erweitern.
 
 
-Sie können neue Tabellen in der Kampagnen-Datenbank erstellen und das integrierte Datenmodell erweitern.
+Sie können auch neue Tabellen in der Kampagnen-Datenbank erstellen und das integrierte Datenmodell erweitern.
 
 Um einen völlig neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht standardmäßig vorhanden ist (z. B. eine Vertragstabelle), können Sie direkt ein benutzerdefiniertes Schema erstellen. Weitere Informationen hierzu finden Sie in [diesem Beispiel](../dev/create-schema.md#example--creating-a-contract-table).
 
@@ -57,7 +57,7 @@ Um einen völlig neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht stand
 
 ## Ändern der Eingabefelder
 
-Formulare für die Eingabe von Kampagnen können an Ihre Implementierung angepasst werden. Sie können Felder hinzufügen oder entfernen, indem Sie den XML-Inhalt ändern.
+Formulare für die Eingabe von Kampagnen können an Ihre Implementierung angepasst werden. Sie können Formularfelder hinzufügen oder entfernen, indem Sie den XML-Inhalt ändern.
 
 :bulb: Erfahren Sie, wie Sie ein vorhandenes Eingabedatum ändern oder ein neues Formular in [diesem Abschnitt](../dev/forms.md) erstellen.
 
