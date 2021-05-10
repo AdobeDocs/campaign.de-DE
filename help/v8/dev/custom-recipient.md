@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 84ee7eb2bf2e15d30c81f32f6b25c9801b3b12b1
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '253'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Adobe Campaign verfügt über einen integrierten Profil-Tisch: **nmsRecipient**. Diese Tabelle enthält eine Reihe vordefinierter Felder und Tabellen, die leicht erweitert werden können. Weitere Informationen zu dieser Tabelle finden Sie auf [dieser Seite](datamodel.md#ootb-profiles).
 
-Integrierte Tabellenerweiterungen bieten eine gute Flexibilität, aber es ist nicht möglich, nicht verwendete Angebote oder Links zu entfernen. Daher kann die Verwendung einer benutzerdefinierten Empfänger-Tabelle sinnvoll sein, wenn sich Ihr Datenmodell deutlich von der in der Kampagne integrierten Empfänger-Tabellenstruktur unterscheidet oder wenn Sie eine große Anzahl von Profilen haben.  Diese Methode erfordert jedoch bei ihrer Implementierung bestimmte Vorsichtsmaßnahmen.
+Integrierte Tabellenerweiterungen bieten Flexibilität, jedoch können nicht verwendete Angebote oder Links nicht entfernt werden. Daher kann die Verwendung einer benutzerdefinierten Empfänger-Tabelle sinnvoll sein, wenn sich Ihr Datenmodell deutlich von der in der Kampagne integrierten Empfänger-Tabellenstruktur unterscheidet oder wenn Sie eine große Anzahl von Profilen haben.  Diese Methode erfordert jedoch bei ihrer Implementierung bestimmte Vorsichtsmaßnahmen.
 
 Mit dieser Funktion kann Adobe Campaign Daten aus einer externen Datenbank verarbeiten: Diese Daten werden als eine Reihe von Profilen für Versand verwendet. Die Implementierung dieses Prozesses beinhaltet Einschränkungen wie:
 
