@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 2ea953145b645d376d5ea88b89350b45f024ea7d
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 2%
@@ -63,7 +63,7 @@ An die als Prüfer festgelegten Adobe Campaign-Operatoren werden Benachrichtigun
 
 ## Warnungen senden
 
-Als Operator für Kampagne können Sie Warnungen erhalten, wenn ein Fehler auftritt.
+Als Bediener der Kampagne können Sie Warnungen erhalten, wenn ein Fehler auftritt.
 
 Sie können einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen und wiederkehrende Meldungen an die Aufsichtsbehörden senden können.
 
