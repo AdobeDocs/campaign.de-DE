@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
+source-git-commit: 3783cb5ed3085b988f573fbf15858377b2bb2e05
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 15%
@@ -21,6 +21,36 @@ Kampagne wird mit dem Modul **Interaktion** geliefert, mit dem Sie während eine
 Sie können einen Angebotskatalog erstellen, der mit Ihren ausgehenden Kanälen (E-Mail, Direktnachricht, SMS) kommuniziert, um das beste Angebot auszuwählen, das Sie in einem bestimmten Kontext an einen Ansprechpartner senden können. Die beste Angebot-Auswahl für einen Empfänger basiert auf **Eignungsregeln**. Die Auswahl eines Angebots aus einem Satz relevanter Angebot wird anhand von Prioritätsregeln festgelegt. Angebot-Unterbreitungsregeln berücksichtigen den Verlauf des Kontakts und helfen zu vermeiden, dass sie das gleiche Angebot mehrere Male erhalten.
 
 Neben der Verwaltung des Angebotskatalogs bietet Interaction die Möglichkeit, Eignungsregeln und ihnen zugeordnete Anwendungsthemen zu definieren. Der Inhalt der Angebote kann je nach Kanal mithilfe der verschiedenen Darstellungen personalisiert werden. Das Simulationsmodul erlaubt es Ihnen zudem, vor Unterbreitung eines Angebots seine voraussichtliche Wirkung einzuschätzen.
+
+## Erste Schritte mit Angeboten
+
+Die wichtigsten Schritte zum Beginn sind unten aufgeführt.
+
+### Plattform konfigurieren
+
+Bevor Sie beginnen, sollten Sie als Kampagne **Administrator** sicherstellen, dass Sie die folgenden Aufgaben in den Design-Umgebung ausgeführt haben:
+
+1. Erstellen Sie Profil für Benutzer. [Weitere Informationen](interaction-operators.md).
+1. (Optional) Erstellen Sie für jede Zielgruppendimension eine Angebot-Umgebung. [Mehr dazu](interaction-env.md)
+1. Erstellen Sie Typologieregeln für jede Umgebung. [Weitere Informationen](interaction-offer.md#offer-presentation).
+1. Erstellen Sie Platzierungen für jede Umgebung und konfigurieren Sie Renderfunktionen. [mehr dazu](interaction-offer-spaces.md).
+Wenn eine Platzierung in einem Einzelmodus-Kanal als identifiziert definiert wurde, müssen ihre erweiterten Parameter angegeben werden.
+
+### Angebotskatalog {#managing-the-offer-catalog-} erstellen und veröffentlichen
+
+Als **Angebot-Manager** müssen Sie die folgenden Aufgaben ausführen:
+
+1. Erstellen Sie Angebot-Kategorien in Design-Umgebung. [Weitere Informationen](interaction-offer-catalog.md#creating-offer-categories).
+1. Erstellen Sie Angebote in Design-Umgebung. [Weitere Informationen](interaction-offer.md).
+1. Genehmigen und veröffentlichen Sie Angebote an einem oder mehreren Stellen, um sie auf Live-Umgebung für den Versand-Manager verfügbar zu machen. [Weitere Informationen](interaction-offer.md#approve-offers).
+
+### Nutzen Sie den Angebotskatalog {#using-the-offer-catalog-}
+
+Als **Versand-Manager** müssen Sie die folgenden Aufgaben ausführen:
+
+1. Kampagne erstellen.
+1. Verweisen Sie auf ein Angebot in der Kampagne oder im Versand. [Weitere Informationen](interaction-send-offers.md).
+
 
 ## Konzepte und Terminologie
 
@@ -57,33 +87,4 @@ Es gibt zwei Arten von Umgebung:
 * Die **Vorschau** des Angebots zeigt das Angebot so an, wie es in seinem Ordner angezeigt wird. Sie können über das Fenster &quot;Angebot-Einstellungen&quot;oder das Profil &quot;Kontakt&quot;darauf zugreifen.
 * **Vordefinierte** Filterregeln können Angebot-Parameter (z. B. einen Angebot-Code) berücksichtigen. Sie können nach dem Erstellen von Angeboten wiederverwendet werden.
 * Eine **Angebotsdarstellung** ist eine vom Kanal zum Anzeigen des Angebots verwendete Information. Angebotsdarstellung kann aus der Renderfunktion des Bereichs erstellt werden, auf dem das Angebot dargestellt oder direkt in die Schnittstelle eingegeben wird (z. B. im HTML-Block). Ein Angebot kann durch Leerzeichen dargestellt werden.
-
-## Erste Schritte mit Angeboten
-
-Die wichtigsten Schritte zum Beginn sind unten aufgeführt.
-
-### Plattform konfigurieren
-
-Bevor Sie beginnen, sollten Sie als Kampagne **Administrator** sicherstellen, dass Sie die folgenden Aufgaben in den Design-Umgebung ausgeführt haben:
-
-1. Erstellen Sie Profil für Benutzer. [Weitere Informationen](interaction-operators.md).
-1. (Optional) Erstellen Sie für jede Zielgruppendimension eine Angebot-Umgebung. [Mehr dazu](interaction-env.md)
-1. Erstellen Sie Typologieregeln für jede Umgebung. [Weitere Informationen](interaction-offer.md#offer-presentation).
-1. Erstellen Sie Platzierungen für jede Umgebung und konfigurieren Sie Renderfunktionen. [mehr dazu](interaction-offer-spaces.md).
-Wenn eine Platzierung in einem Einzelmodus-Kanal als identifiziert definiert wurde, müssen ihre erweiterten Parameter angegeben werden.
-
-### Angebotskatalog {#managing-the-offer-catalog-} erstellen und veröffentlichen
-
-Als **Angebot-Manager** müssen Sie die folgenden Aufgaben ausführen:
-
-1. Erstellen Sie Angebot-Kategorien in Design-Umgebung. [Weitere Informationen](interaction-offer-catalog.md#creating-offer-categories).
-1. Erstellen Sie Angebote in Design-Umgebung. [Weitere Informationen](interaction-offer.md).
-1. Genehmigen und veröffentlichen Sie Angebote an einem oder mehreren Stellen, um sie auf Live-Umgebung für den Versand-Manager verfügbar zu machen. [Weitere Informationen](interaction-offer.md#approve-offers).
-
-### Nutzen Sie den Angebotskatalog {#using-the-offer-catalog-}
-
-Als **Versand-Manager** müssen Sie die folgenden Aufgaben ausführen:
-
-1. Kampagne erstellen.
-1. Verweisen Sie auf ein Angebot in der Kampagne oder im Versand. [Weitere Informationen](interaction-send-offers.md).
 
