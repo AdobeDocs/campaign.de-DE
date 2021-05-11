@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 translation-type: tm+mt
-source-git-commit: 985cc0d9698e3046fccfe85fbce1c1a88d6d2f19
+source-git-commit: 9bc94c213d65b828444888f553722e42fc029165
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '707'
 ht-degree: 38%
 
 ---
@@ -30,7 +30,7 @@ In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) di
 
 :arrow_forward: [Verstehen Sie, was ein Profil im Video ist](https://video.tv.adobe.com/v/35611?quality=12)
 
-:arrow_upper_right: Erfahren Sie, wie Sie Profil in [diesem Handbuch](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html) verwalten.
+:arrow_upper_right: Erfahren Sie, wie Sie Profil in [diesem Handbuch](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html/?target=_blank) verwalten.
 
 ## Datenschutz und Einverständniserklärung
 
