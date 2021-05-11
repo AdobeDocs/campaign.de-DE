@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+source-git-commit: fcc0165aeba4347a53d33bed95aa7fbb5fa27005
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 24%
@@ -58,7 +58,7 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    **Hinweis** : Das XML-Format ist auf eingehende Interaktionen beschränkt, die temporär nicht verfügbar sind. [Mehr dazu](../start/capability-matrix.md#gs-unavailable-features)
 
-   ![](assets/offer_spacecreate_006.png)_
+   ![](assets/offer_space_create_006.png)_
 
 1. Gehen Sie in den **[!UICONTROL HTML-Rendering]**-Tab und kreuzen Sie die Option **[!UICONTROL HTML-Rendering-Funktion überschreiben]** an.
 1. Geben Sie nun Ihre Rendering-Funktion ein.
