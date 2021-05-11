@@ -7,9 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 113f4b3e91c40438c4809bdb97976b58935a2f18
+source-git-commit: 4bc62dcf806abd71e8230ce209d9151a4188b62e
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '412'
 ht-degree: 40%
 
 ---
@@ -26,7 +26,7 @@ Zwei Operatortypen können die Interaktion mit Kampagnen verwenden: **Angebot-Ma
 
 1. Erstellen Sie den neuen Benutzer.
 
-Die Schritte zum Erstellen eines Operators in der Kampagne sind in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   :arrow_upper_right: Die Schritte zum Erstellen eines Operators in der Kampagne sind in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Angebotsverantwortliche Benutzer]** aus.
 
@@ -49,7 +49,8 @@ Beachten Sie, dass bei Angeboten, die in einem Workflow verwendet werden, der Op
 ## Erstellen Sie einen Versand-Manager-Operator {#delivery-manager}
 
 1. Erstellen Sie den neuen Benutzer.
-Die Schritte zum Erstellen eines Operators in der Kampagne sind in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+
+   :arrow_upper_right: Die Schritte zum Erstellen eines Operators in der Kampagne sind in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
 
