@@ -7,10 +7,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 29%
+source-wordcount: '651'
+ht-degree: 24%
 
 ---
 
@@ -19,8 +19,6 @@ ht-degree: 29%
 Der Inhalt des Angebotskatalogs wird in Platzierungen konfiguriert. Standardmäßig kann der Inhalt die folgenden Felder umfassen: **[!UICONTROL Titel]**, **[!UICONTROL Ziel-URL]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und **[!UICONTROL Textinhalt]**. Die Feldsequenz wird in der Platzierung konfiguriert.
 
 Als **technischer Administrator** können Sie Platzierungen in der Design-Umgebung erstellen. Sie müssen Zugriff auf den Unterordner &quot;Platzierung&quot;haben. Nach der Erstellung werden diese Platzierungen während der Genehmigung des Angebots automatisch in die Live-Umgebung dupliziert.
-
-In den erweiterten Parametern können Sie Identifikationsschlüssel für Kontakte definieren. Diese können aus mehreren Elementen (z. B. Name und E-Mail-Adresse) zusammengesetzt sein. Die Vorgehensweise wird im Abschnitt [Angebote für identifizierte Kontakte](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) erläutert.
 
 Das HTML-Rendering wird über eine Renderfunktion erstellt. Die Reihenfolge der in der Renderfunktion definierten Felder muss mit der im Inhalt konfigurierten Sequenz identisch sein.
 
@@ -66,8 +64,6 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 1. Geben Sie nun Ihre Rendering-Funktion ein.
 
    ![](assets/offer_space_create_007.png)
-
-Bei Bedarf können Sie HTML- und Textwiedergabefunktionen überladen. [Weitere Informationen](../../interaction/using/about-inbound-channels.md).
 
 ## Status von Angebotsvorschlägen {#offer-proposition-statuses}
 
@@ -161,5 +157,5 @@ Wenn ein Empfänger für keine Angebote zugelassen ist, wird dies in der Vorscha
 ![](assets/offer_space_overview_001.png)
 
 <!--
-The preview can ignore contexts when they are restricted to a space. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to [Extension example](../../interaction/using/extension-example.md)).
+The preview can ignore contexts when they are restricted to a space. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to Extension example.
 -->
