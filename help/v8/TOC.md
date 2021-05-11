@@ -8,9 +8,9 @@ breadcrumb-title: Kampagne v8
 title: Dokumente der Kampagne v8
 hide: true
 translation-type: tm+mt
-source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
+source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 43%
 
 ---
@@ -49,6 +49,7 @@ ht-degree: 43%
    + [E-Mails](send/email.md)
    + [SMS](send/sms.md)
    + [Push-Benachrichtigungen ](send/push.md)
+   + [LINE-Messaging](send/line.md)
    + [Briefpost](send/direct-mail.md)
    + [Transaktionsnachrichten ](send/transactional.md)
    + hinzufügen Angebot{#interaction}
