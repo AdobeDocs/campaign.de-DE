@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 15%
@@ -68,7 +68,7 @@ Bevor Sie beginnen, sollten Sie als Kampagne **Administrator** sicherstellen, da
 
 1. Erstellen Sie Profil für Benutzer. [Weitere Informationen](interaction-operators.md).
 1. (Optional) Erstellen Sie für jede Zielgruppendimension eine Angebot-Umgebung. [Mehr dazu](interaction-env.md)
-1. Erstellen Sie Typologieregeln für jede Umgebung. [Weitere Informationen](interaction-offers.md#offer-presentation).
+1. Erstellen Sie Typologieregeln für jede Umgebung. [Weitere Informationen](interaction-offer.md#offer-presentation).
 1. Erstellen Sie Platzierungen für jede Umgebung und konfigurieren Sie Renderfunktionen. [mehr dazu](interaction-offer-spaces.md).
 Wenn eine Platzierung in einem Einzelmodus-Kanal als identifiziert definiert wurde, müssen ihre erweiterten Parameter angegeben werden.
 
