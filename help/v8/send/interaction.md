@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 15%
@@ -68,22 +68,22 @@ Bevor Sie beginnen, sollten Sie als Kampagne **Administrator** sicherstellen, da
 
 1. Erstellen Sie Profil für Benutzer. [Weitere Informationen](interaction-operators.md).
 1. (Optional) Erstellen Sie für jede Zielgruppendimension eine Angebot-Umgebung. [Mehr dazu](interaction-env.md)
-1. Erstellen Sie Typologieregeln für jede Umgebung. [Weitere Informationen](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule).
-1. Erstellen Sie Platzierungen für jede Umgebung und konfigurieren Sie Renderfunktionen. [mehr dazu](../../interaction/using/creating-offer-spaces.md).
+1. Erstellen Sie Typologieregeln für jede Umgebung. [Weitere Informationen](interaction-offers.md#offer-presentation).
+1. Erstellen Sie Platzierungen für jede Umgebung und konfigurieren Sie Renderfunktionen. [mehr dazu](interaction-offer-spaces.md).
 Wenn eine Platzierung in einem Einzelmodus-Kanal als identifiziert definiert wurde, müssen ihre erweiterten Parameter angegeben werden.
 
 ### Angebotskatalog {#managing-the-offer-catalog-} erstellen und veröffentlichen
 
 Als **Angebot-Manager** müssen Sie die folgenden Aufgaben ausführen:
 
-1. Erstellen Sie Angebot-Kategorien in Design-Umgebung. [Weitere Informationen](../../interaction/using/creating-offer-categories.md).
-1. Erstellen Sie Angebote in Design-Umgebung. [Weitere Informationen](../../interaction/using/creating-an-offer.md).
-1. Genehmigen und veröffentlichen Sie Angebote an einem oder mehreren Stellen, um sie auf Live-Umgebung für den Versand-Manager verfügbar zu machen. [Weitere Informationen](../../interaction/using/approving-and-activating-an-offer.md).
+1. Erstellen Sie Angebot-Kategorien in Design-Umgebung. [Weitere Informationen](interaction-offer-catalog.md#creating-offer-categories).
+1. Erstellen Sie Angebote in Design-Umgebung. [Weitere Informationen](interaction-offer.md).
+1. Genehmigen und veröffentlichen Sie Angebote an einem oder mehreren Stellen, um sie auf Live-Umgebung für den Versand-Manager verfügbar zu machen. [Weitere Informationen](interaction-offer.md#approve-offers).
 
 ### Nutzen Sie den Angebotskatalog {#using-the-offer-catalog-}
 
 Als **Versand-Manager** müssen Sie die folgenden Aufgaben ausführen:
 
 1. Kampagne erstellen.
-1. Verweisen Sie auf ein Angebot in der Kampagne oder im Versand. [Weitere Informationen](../../interaction/using/about-outbound-channels.md).
+1. Verweisen Sie auf ein Angebot in der Kampagne oder im Versand. [Weitere Informationen](interaction-send-offers.md).
 
