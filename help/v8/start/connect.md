@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 1ac6b58e1d5731d4df4d6d7c6a9b25f0f41ff563
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 14%
+source-wordcount: '694'
+ht-degree: 13%
 
 ---
 
@@ -19,9 +19,11 @@ ht-degree: 14%
 
 Kampagne Client Console ist ein Rich-Client, mit dem Sie eine Verbindung zu den Anwendungsservern Ihrer Kampagne herstellen können.
 
->[!CAUTION]
->
->Bevor Sie beginnen, müssen Sie die Kampagne [Kompatibilitätsmatrix](compatibility-matrix.md) überprüfen, um Ihre Kampagnen-Server-URL und Ihre Benutzeranmeldeinformationen abzurufen.
+Bevor Sie beginnen, müssen Sie:
+
+* Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der Kompatibilitätsmatrix [a1/>](compatibility-matrix.md)
+* Abrufen der Kampagne-Server-URL
+* Benutzeranmeldeinformationen abrufen
 
 ## Herunterladen und Installieren der Client-Konsole
 
@@ -93,7 +95,6 @@ Adobe Campaign ermöglicht es, die den unterschiedlichen Benutzern zugeteilten R
 Weitere Informationen zu Benutzern und zum Definieren ihrer Berechtigungen finden Sie in [diesem Abschnitt](permissions.md).
 
 Als Administrator für Kampagnen sind Sie dafür verantwortlich, die Operatoren zu erstellen und ihre Anmeldeinformationen für die Benutzer freizugeben.
-
 
 ## Mit dem Adobe ID verbinden{#connect-ims}
 
