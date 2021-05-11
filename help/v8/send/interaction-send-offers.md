@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+source-git-commit: fcc0165aeba4347a53d33bed95aa7fbb5fa27005
 workflow-type: tm+mt
 source-wordcount: '1357'
 ht-degree: 73%
@@ -184,7 +184,7 @@ Nach der Konfiguration der Aktivität **Abfrage**:
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Weitere Informationen](inserting-an-offer-proposition-into-a-delivery).
+1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Weitere Informationen](#inserting-an-offer-proposition-into-a-delivery).
 
 ### Angebote pro Segment {#offers-by-cell}
 
