@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 60%
@@ -188,9 +188,9 @@ Sie können das Angebot jetzt genehmigen und aktivieren, um es in der Umgebung *
 
 :arrow_upper_right: Weitere Informationen finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
 
-## Angebotsdarstellung verwalten
+## Angebotsdarstellung verwalten{#offer-presentation}
 
-Mit Kampagne können Sie den Fluss der Angebotsvorschlag mithilfe von Unterbreitungsregeln steuern. Diese Regeln, die sich speziell auf die Interaktion mit der Kampagne beziehen, sind Typologieregeln. Sie ermöglichen es Ihnen, Angebot auszuschließen, die auf dem Verlauf der bereits an einen Empfänger gerichteten Vorschläge basieren. Sie werden in der Umgebung referenziert.
+Mit Kampagne können Sie den Fluss der Angebotsvorschlag mithilfe von Unterbreitungsregeln steuern. Diese Regeln, die für die Interaktion mit der Kampagne spezifisch sind, sind **Typologieregeln**. Sie ermöglichen es Ihnen, Angebot auszuschließen, die auf dem Verlauf der bereits an einen Empfänger gerichteten Vorschläge basieren. Sie werden in der Umgebung referenziert.
 
 :arrow_upper_right: Weitere Informationen finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
 
