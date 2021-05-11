@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 43914bcbe3cf0ddb323d99a9df16189a1f687317
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,8 @@ CubesAnalysieren und Messen von Daten, Berechnen von Statistiken, Vereinfachen u
 
 Je nach Komplexität der Abfragen, Berechnungen und Volumina können die in diesen Berichten analysierten Daten über eine Abfrage erfasst und in einer Liste (im Folgenden &quot;Arbeitsablauf vom Typ &quot;Data Management&quot;) oder in einer Cube (unter Verwendung von Marketing Analytics) voraggregiert werden. Es wird in Form einer Pivot-Tabelle oder einer Liste angezeigt.
 
+
 :arrow_upper_right: Weitere Informationen zu den Funktionen für Berichte finden Sie in diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reporting-in-adobe-campaign/about-adobe-campaign-reporting-tools.html).[
 
-## Zu prüfende Schlüsselmetriken
+Beachten Sie, dass Kampagne v8-Berichte optimiert sind und Angebot bessere Skalierungsfunktionen bietet als Campaign Classic v7. Bestehende Einschränkungen bei Cuben gelten nicht.
 
