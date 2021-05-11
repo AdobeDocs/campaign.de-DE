@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,12 @@ Die wichtigsten Funktionen von Creative Designer ermöglichen Folgendes:
 
 * **Verbindungen zum Adobe Experience Platform**. Adobe Campaign v8 unterstützt Datenschnittstellen mit Adobe Experience Platform/RT-CDP, Unified Customer Profil und native Integration mit Journey Orchestration. Diese Investitionen werden das Kundenerlebnis optimieren und neue Anwendungsfälle wie die Möglichkeit freisetzen, individuelle Echtzeit-Journey zu Kampagnen hinzuzufügen.
 
-* **Verwaltete Cloud Services**. Adobe Campaign v8 ist als erstklassige verwaltete Cloud Services verfügbar und bietet proaktive Aufsicht, zeitnahe Warnhinweise und Service-Governance. Der Wert für den Marketingexperten ist eine flexiblere und skalierbare Cross-Kanal-Kampagnenverwaltung.
+* **Verwaltete Cloud Services**. Adobe Campaign v8 ist nur als erstklassige verwaltete Cloud Services verfügbar, die eine proaktive Aufsicht, rechtzeitige Warnhinweise und Service-Governance bieten. **** Der Wert für den Marketingexperten ist eine flexiblere und skalierbare Cross-Kanal-Kampagnenverwaltung.
+
+>[!CAUTION]
+>
+>Derzeit ist Kampagne v8 nur als verwalteter Cloud Service verfügbar. Sie können die Kampagne v8 nicht in einer lokalen oder hybriden Bereitstellung implementieren. Die Migration von einer Campaign Classic v7-Umgebung ist noch nicht verfügbar.
+
 
 ## Skala
 
