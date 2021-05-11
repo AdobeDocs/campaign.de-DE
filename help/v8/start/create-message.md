@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 translation-type: tm+mt
-source-git-commit: 221adcce8951a3884b83d5e5e2de1a73fbe96050
+source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 22%
+source-wordcount: '686'
+ht-degree: 23%
 
 ---
 
@@ -32,7 +32,8 @@ Adobe Campaign v8 enthält die folgenden Versand-Kanal:
 * **Mobile Kanal**: Mit Versänden auf mobilen Kanälen können Sie personalisierte SMS an die Bevölkerung der Zielgruppe senden.  Weiterführende Informationen finden Sie auf [dieser Seite](../send/sms.md)
 
 * **Mobile Application Kanal**: Mit mobilen App-Versänden können Sie Benachrichtigungen an iOS- und Android-Systeme senden.  Weiterführende Informationen finden Sie auf [dieser Seite](../send/push.md)
-* **LINE-Kanal**: Mit LINE-Versänden können Sie Nachrichten über LINE senden, eine Instant Messaging-Anwendung, die auf allen Smartphones verfügbar ist. Weiterführende Informationen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html)
+
+* **LINE-Kanal**: Mit LINE-Versänden können Sie Nachrichten über LINE senden, eine Instant Messaging-Anwendung, die auf allen Smartphones verfügbar ist. Weiterführende Informationen finden Sie auf [dieser Seite](../send/line.md)
 
 ## Wählen Sie, wie Ihre Nachrichten gesendet werden sollen
 
