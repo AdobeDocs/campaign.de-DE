@@ -7,10 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 51efce79e4195c9d53db167be80c7adcda811e21
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '653'
 ht-degree: 3%
 
 ---
@@ -23,15 +22,15 @@ Kampagne wird als einzelne Instanzen bereitgestellt, wobei jede Instanz eine vol
 
 Für Kampagne Cloud Service stehen drei Typen von Umgebung zur Verfügung:
 
-* Umgebung der Produktion: die Anwendungen für die Geschäftspraktiker.
+* **Umgebung** der Produktion: die Anwendungen für die Geschäftspraktiker.
 
-* Umgebung der Stufe: für verschiedene Leistungs- und Qualitätstests verwendet werden, bevor Änderungen an der Umgebung an die Produktion gesendet werden.
+* **Umgebung** der Stufe: für verschiedene Leistungs- und Qualitätstests verwendet werden, bevor Änderungen an der Umgebung an die Produktion gesendet werden.
 
-* Umgebung der Entwicklung: ermöglicht Entwicklern die Implementierung von Kampagne unter denselben Laufzeitbedingungen wie die Umgebung für die Phase und Produktion.
+* **Umgebung**: ermöglicht Entwicklern die Implementierung von Kampagne unter denselben Laufzeitbedingungen wie die Umgebung für die Phase und Produktion.
 
 Sie können Pakete von einer Umgebung in eine andere exportieren und importieren.
 
-:arrow_upper_right: Weitere Informationen zu Paketen finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=en#about-data-packages)
+:arrow_upper_right: Weitere Informationen zu Paketen finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
 
 ## Mid-Sourcing-Bereitstellung{#mid-sourcing-deployment}
 
