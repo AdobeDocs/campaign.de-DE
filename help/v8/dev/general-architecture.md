@@ -4,10 +4,9 @@ product: Adobe Campaign
 title: Allgemeine Architektur
 description: Kampagne v8
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 51efce79e4195c9d53db167be80c7adcda811e21
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -123,3 +122,10 @@ Die Adobe Campaign Cloud-Datenbank basiert auf [!DNL Snowflake], die die Funktio
 Kunden können Adobe Campaign mithilfe des vordefinierten Datendiagramms und der vordefinierten Schema bereitstellen und auch erweitern. Alle Daten im Datenverkehr werden von Adobe Campaign über SQL-Aufrufe aufgerufen. Adobe Campaign bietet außerdem eine vollständige Ergänzung der Tools für das Extrahieren von Transformationen und Laden (ETL), um Daten in das und aus dem System zu importieren und zu exportieren.
 
 ![](assets/data-flow-diagram.png)
+
+
+>[!CAUTION]
+>
+>Mit **Kampagne Managed Cloud Services** wurden Ihre Umgebung und Ihre Erstkonfiguration gemäß den Bedingungen Ihrer Lizenzvereinbarung durch die Adobe festgelegt. Es ist nicht zulässig, installierte integrierte Pakete, integrierte Schema oder Berichte zu ändern.
+>
+>Wenn Sie ein Kampagne-Add-on oder eine spezielle Funktion verwenden müssen, die nicht für Sie bereitgestellt wurde, müssen Sie sich an den **Adobe-Kundendienst** wenden.
