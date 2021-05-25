@@ -1,13 +1,12 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Platzierungen zur Interaktion mit Kampagnen
+title: Platzierungen von Kampagnen-Interaction-Angeboten
 description: Erfahren Sie, wie Sie Platzierungen erstellen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: fcc0165aeba4347a53d33bed95aa7fbb5fa27005
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 24%
@@ -16,11 +15,11 @@ ht-degree: 24%
 
 # Angebotsplatzierungen{#creating-offer-spaces}
 
-Der Inhalt des Angebotskatalogs wird in Platzierungen konfiguriert. Standardmäßig kann der Inhalt die folgenden Felder umfassen: **[!UICONTROL Titel]**, **[!UICONTROL Ziel-URL]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und **[!UICONTROL Textinhalt]**. Die Feldsequenz wird in der Platzierung konfiguriert.
+Der Inhalt des Angebotskatalogs wird in den Platzierungen konfiguriert. Standardmäßig kann der Inhalt die folgenden Felder enthalten: **[!UICONTROL Titel]**, **[!UICONTROL Ziel-URL]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und **[!UICONTROL Textinhalt]**. Die Feldsequenz wird in der Platzierung konfiguriert.
 
-Als **technischer Administrator** können Sie Platzierungen in der Design-Umgebung erstellen. Sie müssen Zugriff auf den Unterordner &quot;Platzierung&quot;haben. Nach der Erstellung werden diese Platzierungen während der Genehmigung des Angebots automatisch in die Live-Umgebung dupliziert.
+Als technischer Administrator **a1/> können Sie in der Design-Umgebung Angebotsplatzierungen erstellen.** Sie benötigen Zugriff auf den Unterordner der Platzierung. Nach der Erstellung werden diese Platzierungen bei der Angebotsvalidierung automatisch in die Live-Umgebung dupliziert.
 
-Das HTML-Rendering wird über eine Renderfunktion erstellt. Die Reihenfolge der in der Renderfunktion definierten Felder muss mit der im Inhalt konfigurierten Sequenz identisch sein.
+Das HTML-Rendering wird über eine Rendering-Funktion erstellt. Die Reihenfolge der in der Rendering-Funktion definierten Felder muss mit der im Inhalt konfigurierten Sequenz übereinstimmen.
 
 ![](assets/offer_space_create_009.png)
 
@@ -34,7 +33,7 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    ![](assets/offer_space_create_002.png)
 
-1. Aktivieren Sie die Option **[!UICONTROL Einheitlichen Modus]** aktivieren
+1. Aktivieren Sie die Option **[!UICONTROL Einzelmodus aktivieren]** .
 
 1. Klicken Sie dann im Bereich **[!UICONTROL Felder des Angebotsinhalts]** auf **[!UICONTROL Hinzufügen]**.
 
@@ -44,19 +43,19 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    ![](assets/offer_space_create_004.png)
 
-1. Aktivieren Sie die Option **[!UICONTROL Erforderlich]**, um jedes Feld als Pflichtfeld festzulegen.
+1. Aktivieren Sie die Option **[!UICONTROL Erforderlich]** , um jedes Feld als Pflichtfeld festzulegen.
 
    >[!NOTE]
    >
-   >Diese Option wird auf der Vorschau verwendet und macht Platzierungen ungültig, wenn ein Pflichtfeld im Angebot fehlt. Wenn ein Angebot jedoch bereits auf einer Platzierung lebt, werden diese Kriterien nicht berücksichtigt.
+   >Diese Option wird in der Vorschau verwendet und macht die Platzierungen bei der Veröffentlichung ungültig, wenn eines der Pflichtfelder im Angebot fehlt. Wenn ein Angebot jedoch bereits auf einer Platzierung live ist, werden diese Kriterien nicht berücksichtigt.
 
    ![](assets/offer_space_create_005.png)
 
 1. Klicken Sie auf **[!UICONTROL Funktionen bearbeiten...]**, um eine Rendering-Funktion zu erstellen.
 
-   Diese Funktionen werden zum Generieren von Angebotsdarstellungen auf einer Platzierung verwendet. Es gibt mehrere mögliche Formate: HTML oder Text.
+   Diese Funktionen dienen der Erzeugung von Angebotsdarstellungen an einer Platzierung. Es gibt mehrere mögliche Formate: HTML oder Text.
 
-   **Hinweis** : Das XML-Format ist auf eingehende Interaktionen beschränkt, die temporär nicht verfügbar sind. [Mehr dazu](../start/capability-matrix.md#gs-unavailable-features)
+   **Hinweis**  - Das XML-Format ist auf eingehende Interaktionen beschränkt, die temporär nicht verfügbar sind. [Mehr dazu](../start/capability-matrix.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
@@ -67,15 +66,15 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
 ## Status von Angebotsvorschlägen {#offer-proposition-statuses}
 
-Der Status des Angebotsvorschlags hängt von den Interaktionen mit der Zielgruppe ab. Das Kampagne Interaction-Modul verfügt über eine Reihe von Werten, die während des gesamten Lebenszyklus auf den Angebotsvorschlag angewendet werden können. Sie müssen die Plattform so konfigurieren, dass sich der Status ändert, wenn der Angebotsvorschlag erstellt und akzeptiert wird.
+Der Vorschlagsstatus variiert je nach Interaktion mit der Zielpopulation. Das Campaign Interaction-Modul enthält eine Reihe von Werten, die auf den Angebotsvorschlag über seinen gesamten Lebenszyklus hinweg angewendet werden können. Sie müssen die Plattform so konfigurieren, dass sich der Status bei der Erstellung und Annahme des Angebotsvorschlags ändert.
 
 >[!NOTE]
 >
->Statusupdate ist ein asynchroner Prozess. Er wird vom Tracking-Workflow ausgeführt, der jede Stunde ausgelöst wird.
+>Die Statusaktualisierung ist ein asynchroner Prozess. Er wird vom Tracking-Workflow ausgeführt, der stündlich ausgelöst wird.
 
-### Liste des Angebot-Status {#status-list}
+### Liste der Angebotsstatus {#status-list}
 
-Verfügbare Angebot-Status sind:
+Verfügbare Angebotsstatus sind:
 
 * **[!UICONTROL Akzeptiert]**
 * **[!UICONTROL Geplant]**
@@ -84,28 +83,28 @@ Verfügbare Angebot-Status sind:
 * **[!UICONTROL Unterbreitet]**
 * **[!UICONTROL Zurückgewiesen]**
 
-Diese Werte werden nicht standardmäßig angewendet: müssen konfiguriert werden.
+Diese Werte werden nicht standardmäßig angewendet: müssen sie konfiguriert werden.
 
 >[!NOTE]
 >
 >Der Status eines Angebotsvorschlags wird automatisch in &quot;Unterbreitet&quot; geändert, wenn das Angebot mit einem Versand verknüpft ist, dessen Status &quot;Gesendet&quot; lautet.
 
-### Status des Angebots bei Erstellung des Vorschlags {#configuring-the-status-when-the-proposition-is-created}
+### Angebotsstatus bei Erstellung des Vorschlags {#configuring-the-status-when-the-proposition-is-created}
 
 Wenn ein Angebotsvorschlag **created** ist, wird sein Status aktualisiert.
 
-Konfigurieren Sie in der Umgebung **[!UICONTROL Design]** für jede Platzierung den Status, der angewendet werden soll, wenn ein Vorschlag erstellt wird, abhängig von den Informationen, die Sie in den Angebot-Berichten anzeigen möchten.
+Konfigurieren Sie in der Umgebung **[!UICONTROL Design]** für jede Platzierung den Status, der beim Erstellen eines Vorschlags angewendet werden soll, je nach den Informationen, die Sie in den Angebotsberichten anzeigen möchten.
 
 Gehen Sie dazu wie folgt vor:
 
 1. Gehen Sie in den **[!UICONTROL Speicherung]**-Tab der zu konfigurierenden Platzierung.
-1. Wählen Sie den Status aus, der beim Erstellen auf den Vorschlag angewendet werden soll.
+1. Wählen Sie den Status aus, der bei der Erstellung des Vorschlags angewendet werden soll.
 
    ![](assets/offer_update_status_001.png)
 
-### Status des Angebots, wenn das Angebot angenommen wird {#configuring-the-status-when-the-proposition-is-accepted}
+### Angebotsstatus bei Annahme des Vorschlags {#configuring-the-status-when-the-proposition-is-accepted}
 
-Sobald ein Angebotsvorschlag **accept** akzeptiert wurde, verwenden Sie einen der Standardwerte, um den neuen Status des Vorschlags zu konfigurieren. Das Update wird angewendet, wenn ein Empfänger auf einen Link im Angebot klickt.
+Sobald ein Angebotsvorschlag **akzeptiert** wurde, konfigurieren Sie den neuen Vorschlagsstatus mit einem der standardmäßig bereitgestellten Werte. Die Aktualisierung wird durchgeführt, wenn ein Empfänger auf einen Link im Angebot klickt.
 
 Gehen Sie dazu wie folgt vor:
 
@@ -140,7 +139,7 @@ As soon as a visitor clicks the offer, and therefore the URL, the **[!UICONTROL 
 **Outbound interaction**
 -->
 
-Sie können den Status **[!UICONTROL Interessiert]** automatisch auf einen Angebotsvorschlag anwenden, wenn der Versand einen Link enthält. Fügen Sie dem Link einfach den Wert **_urlType=&quot;11&quot;** hinzu:
+Sie können den Status **[!UICONTROL Interessant]** automatisch auf einen Angebotsvorschlag anwenden, wenn der Versand einen Link enthält. Fügen Sie einfach den Wert **_urlType=&quot;11&quot;** zum Link hinzu:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
@@ -148,11 +147,11 @@ Sie können den Status **[!UICONTROL Interessiert]** automatisch auf einen Angeb
 
 ## Vorschau der Angebote in der Platzierung {#offer-preview-per-space}
 
-Auf der Registerkarte **[!UICONTROL Vorschau]** können Sie die Angebot, für die der Empfänger berechtigt ist, nach einer bestimmten Methode Ansicht werden. Im folgenden Beispiel kann der Empfänger drei Angebot-Vorschläge per Post erhalten.
+Im Tab **[!UICONTROL Vorschau]** können Sie die Angebote anzeigen, für die der Empfänger nach einer bestimmten Methode infrage kommt. Im folgenden Beispiel kommt der Empfänger für drei Angebote per Post infrage.
 
 ![](assets/offer_space_overview_002.png)
 
-Wenn ein Empfänger für keine Angebote zugelassen ist, wird dies in der Vorschau angezeigt.
+Wenn ein Empfänger für keine Angebote qualifiziert ist, wird dies in der Vorschau angezeigt.
 
 ![](assets/offer_space_overview_001.png)
 
