@@ -1,52 +1,52 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Arbeiten mit Kampagne und Adobe Analytics
-description: Erfahren Sie, wie Sie mit Kampagne und Adobe Analytics arbeiten können
+title: Campaign und Adobe Analytics verwenden
+description: Erfahren Sie, wie Sie mit Campaign und Adobe Analytics arbeiten.
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 556cd7727c7c2bf0158d59d71ae0131b4c1013ee
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 22%
+source-wordcount: '368'
+ht-degree: 19%
 
 ---
 
-# Arbeiten mit Kampagne und Adobe Analytics
+# Campaign und Adobe Analytics verwenden
 
-## Experience Cloud Triggers
 
-Sie können Experience Cloud-Trigger verwenden, um Daten mithilfe der Pipeline zwischen Adobe Campaign und Adobe Analytics zu verbinden. Die Pipeline ruft Benutzeraktionen oder Trigger von Ihrer Website ab. Ein Beispiel für einen Auslöser ist ein Warenkorbabbruch. Trigger werden in Adobe Campaign verarbeitet, um in nahezu Echtzeit E-Mails zu senden.
+## Adobe Analytics Connector
 
-:language_ballon: Als Benutzer mit Managed Cloud Services [wenden Sie sich an die Adobe](../start/support.md#support), um Experience Cloud-Trigger mit Kampagne zu implementieren.
+Sie können Adobe Analytics Connectors zur Integration von Campaign und Analytics konfigurieren.
 
-## Der Data Connector von Adobe Analytics
+Mit Adobe Analytics Connector können Adobe Campaign und Adobe Analytics über das Add-on **Web Analytics Connectors** interagieren. Diese Integration teilt Daten aus Analytics in Campaign als Segmente im Zusammenhang mit dem Benutzerverhalten nach einer E-Mail. Umgekehrt werden Indikatoren und Attribute von E-Mail-Kampagnen gesendet, die von Adobe Campaign an Adobe Analytics - Data Connector bereitgestellt werden.
 
-SO AKTUALISIEREN SIE DIE NEUE INTEGRATION
-
-Sie können auch Adobe Analytics Data Connectors konfigurieren, um Kampagne und Analytics zu integrieren.
-
-Data Connector (früher Adobe Genesis genannt) ermöglicht es Adobe Campaign und Adobe Analytics, über das **Webanalyseschnittstellen**-Paket zu interagieren. Diese Integration verwendet Daten aus Analytics für die Kampagne als Segmente im Zusammenhang mit dem Benutzerverhalten nach einer E-Mail. Umgekehrt sendet es Indikatoren und Attribute von E-Mail-Kampagnen, die von Adobe Campaign an Adobe Analytics - Data Connector gesendet werden.
-
-Dank dieser Integrationen kann Adobe Campaign Daten zum Verhalten von Besuchern für eine oder mehrere Sites nach einer Marketing-Kampagne wiederherstellen und (nach der Analyse) Remarketing-Kampagnen mit der Ansicht ausführen, diese in Käufer umzuwandeln. Umgekehrt ermöglichen die Webanalysetools Adobe Campaign, Indikatoren und Kampagnen-Attribute an ihre Plattformen weiterzuleiten.
+Mit Adobe Analytics Connector kann Adobe Campaign die Internetzielgruppe (Web Analytics) messen. Dank dieser Integrationen kann Adobe Campaign Daten zum Besucherverhalten für eine oder mehrere Sites im Anschluss an eine Marketingkampagne abrufen und (nach der Analyse) Remarketing-Kampagnen durchführen, um sie in Käufer zu konvertieren. Umgekehrt ermöglichen die Webanalysetools es Adobe Campaign, Indikatoren und Kampagnenattribute an ihre Plattformen weiterzuleiten.
 
 Der Aktionsradius der verschiedenen Tools gestaltet sich wie folgt:
 
-* Adobe Analytics:
+* **Adobe Analytics**
 
    * markiert die mit Adobe Campaign ausgeführten E-Mail-Kampagnen
-   * speichert das Verhalten der Empfänger auf der Site, die sie nach dem Klicken auf die Kampagnen-E-Mail durchsucht haben, in Segmentform. Segmente beziehen sich auf verlassene Produkte (angezeigt, aber nicht zum Einkaufswagen hinzugefügt oder gekauft), Käufe oder Warenkorbabbrüche.
+   * speichert das Empfängerverhalten in Form von Segmenten auf der Site, die nach dem Kampagnen-E-Mail-Klick durchsucht wurde. Segmente beziehen sich auf verlassene Produkte (angezeigt, aber nicht zum Warenkorb hinzugefügt oder gekauft), Käufe oder Warenkorbabbrüche.
 
-* Adobe Campaign:
+* **Adobe Campaign**
 
    * sendet die Indikatoren und Attribute der Kampagne an den Connector, welcher sie an das Web-Analytics-Tool übermittelt
    * ruft Segmente ab und analysiert sie
    * löst eine Remarketing-Kampagne aus
 
-SIEHE https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-data-connector.html?lang=en#technical-workflows-of-web-analytics-processes
+Weitere Informationen zu Adobe Campaign und Adobe Analytics finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-data-connector.html) .
 
-:language_ballon: Als Benutzer von Managed Cloud Services [wenden Sie sich an die Adobe](../start/support.md#support), um Adobe Analytics Data Connector mit der Kampagne zu integrieren.
+:Sprache_Ballon:  Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](../start/campaign-faq.md#support), um Adobe Analytics Data Connector in Campaign zu integrieren.
 
+
+## Experience Cloud Triggers
+
+Sie können Experience Cloud-Trigger verwenden, um mithilfe der Pipeline Daten zwischen Adobe Campaign und Adobe Analytics zu verbinden. Die Pipeline ruft die Aktionen oder Trigger des Benutzers von Ihrer Website ab. Ein Beispiel für einen Auslöser ist ein Warenkorbabbruch. Trigger werden in Adobe Campaign verarbeitet, um in nahezu Echtzeit E-Mails zu senden.
+
+Weitere Informationen zu Adobe Campaign- und Experience Cloud-Triggern finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en).
+
+:Sprache_Ballon:  Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](../start/campaign-faq.md#support), um Experience Cloud-Trigger in Campaign zu implementieren.
