@@ -1,30 +1,29 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Kampagne Interaction Angebotskatalog
+title: Kampagnen-Interaction-Angebotskatalog
 description: Erfahren Sie, wie Sie einen Angebotskatalog erstellen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: fcc0165aeba4347a53d33bed95aa7fbb5fa27005
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1360'
 ht-degree: 73%
 
 ---
 
 # Angebot senden
 
-Damit ein Angebot von der Angebot-Engine ausgewählt werden kann, muss es genehmigt und in einer **Live**-Umgebung verfügbar sein. [Mehr dazu](interaction-offer.md#approve-offers)
+Damit ein Angebot vom Angebotsmodul ausgewählt werden kann, wurde es validiert und in einer **Live**-Umgebung verfügbar. [Mehr dazu](interaction-offer.md#approve-offers)
 
-Die Präsentation von Angeboten über einen ausgehenden Kommunikations-Kanal erfolgt per Direktversand, E-Mail oder mobile Versand. Sie können auch den einheitlichen Modus mit Transaktionsnachrichten (Message Center) verwenden.
+Die Angebotsunterbreitung über einen ausgehenden Kommunikationskanal erfolgt per Briefpost, E-Mail oder Mobile-Versand. Sie können auch den Einzelmodus mit Transaktionsnachrichten (Message Center) verwenden.
 
-## Angebot in einen Versand {#offer-into-a-delivery} einfügen
+## Einfügen eines Angebots in einen Versand {#offer-into-a-delivery}
 
-Gehen Sie wie folgt vor, um Angebotsvorschlag in einen Versand einzufügen:
+Gehen Sie wie folgt vor, um Angebotsvorschläge in einen Versand einzufügen:
 
-1. Klicken Sie im Fenster &quot;Versand&quot;auf das Symbol **Angebot**.
+1. Klicken Sie im Versandfenster auf das Symbol **Angebote**.
 
    ![](assets/offer_delivery_001.png)
 
@@ -46,20 +45,20 @@ Gehen Sie wie folgt vor, um Angebotsvorschlag in einen Versand einzufügen:
 
    ![](assets/offer_delivery_006.png)
 
-1. Wählen Sie bei Bedarf die Option **[!UICONTROL Keine Anzeige, wenn keine Angebot ausgewählt sind.]** [Weitere Informationen](#parameters-for-calling-offer-engine).
+1. Wählen Sie bei Bedarf die Option **[!UICONTROL Keine Anzeige, wenn keine Angebote ausgewählt sind]** aus. [Weitere Informationen](#parameters-for-calling-offer-engine).
 
    ![](assets/offer_delivery_007.png)
 
-1. Fügen Sie die Eigenschaften mithilfe der Zusammenführungsfelder in den Versand-Inhalt ein. Die Anzahl der verfügbaren Vorschläge hängt von der Konfiguration des Motoraufrufs und deren Reihenfolge von der Priorität der Angebot ab.
+1. Fügen Sie die Eigenschaften mithilfe der Zusammenführungsfelder in den Versandinhalt ein. Die Anzahl der verfügbaren Vorschläge hängt von der Konfiguration des Angebotsmodulaufrufs ab und ihre Reihenfolge hängt von der Priorität der Angebote ab.
 
    ![](assets/offer_delivery_008.png)
 
-1. Beenden Sie den Inhalt, testen Sie ihn und senden Sie ihn an Ihren Versand.
+1. Schließen Sie den Inhalt ab, testen Sie Ihren Versand und senden Sie ihn.
 
    ![](assets/offer_delivery_010.png)
 
 
-### Parameter der Angebot-Engine {#parameters-for-calling-offer-engine}
+### Parameter des Angebotsmoduls {#parameters-for-calling-offer-engine}
 
 * **[!UICONTROL Platzierung]**: Zur Aktivierung des Angebotsmoduls ist die Angabe einer Platzierung aus der Angebotsumgebung zwingend erforderlich.
 * **[!UICONTROL Kategorie]**: spezifischer Ordner, indem die Angebote gespeichert werden. Wenn keine Kategorie angegeben wird, berücksichtigt das Angebotsmodul alle in der Umgebung enthaltenen Angebote, es sei denn, die Auswahl wird durch ein Thema eingegrenzt.
@@ -68,9 +67,9 @@ Gehen Sie wie folgt vor, um Angebotsvorschlag in einen Versand einzufügen:
 * **[!UICONTROL Nicht infrage kommende Empfänger ausschließen]**: Diese Option erlaubt es, Empfänger, für die nicht ausreichend Angebote infrage kommen, vom Versand auszuschließen. Wenn Sie diese Option nicht ankreuzen, erhält ein Empfänger den Versand, auch wenn für ihn nicht die gewünschte Anzahl an Angeboten ausgewählt werden konnte. Seine Nachricht enthält somit weniger oder gar keine Angebote.
 * **[!UICONTROL Leere Darstellung anzeigen, wenn kein Angebot ausgewählt wurde]**: Mithilfe dieser Option wählen Sie den Umgang mit Nachrichten aus, für die ein einzufügender Vorschlag nicht (mehr) existiert. Wenn Sie die Option ankreuzen, erscheint in der Nachricht nichts, was sich auf den fehlenden Vorschlag bezieht, und der Versand wird wie üblich verarbeitet. Im anderen Fall wird die gesamte Nachricht vom Versand ausgeschlossen und die entsprechenden Empfänger erhalten keine Nachricht.
 
-## Angebote in Workflows senden
+## Angebote in Workflows versenden
 
-Mit verschiedenen Workflow-Aktivitäten können Sie definieren, wie Angebot dargestellt werden:
+Verschiedene Workflow-Aktivitäten ermöglichen es Ihnen, die Darstellung von Angeboten zu definieren:
 
 * Anreicherung
 * Angebotsmodul
@@ -78,9 +77,9 @@ Mit verschiedenen Workflow-Aktivitäten können Sie definieren, wie Angebot darg
 
 ### Anreicherung {#enrichment}
 
-Mit der Aktivität **Anreicherung** können Sie Angebot oder Links zu Angeboten für Versand-Empfänger hinzufügen.
+Die Aktivität **Anreicherung** ermöglicht das Hinzufügen von Angeboten oder Links zu Angeboten für Versandempfänger.
 
-:arrow_upper_right: Weitere Informationen zur Aktivität der Anreicherung finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
+:arrow_upper_right: Weiterführende Informationen zur Anreicherungsaktivität finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
 
 Sie können beispielsweise aus einer Abfrage stammende Empfängerdaten vor Durchführung eines Versands anreichern.
 
@@ -91,11 +90,11 @@ Zwei Methoden ermöglichen in diesem Fall die Auswahl der Angebotsvorschläge:
 * Konfiguration eines Angebots oder einer Abfrage des Angebotsmoduls;
 * Referenzierung einer Relation zu einem Angebot.
 
-#### Geben Sie ein Angebot oder einen Aufruf an die Angebot-Engine {#specifying-an-offer-or-a-call-to-the-offer-engine} an
+#### Geben Sie ein Angebot oder einen Aufruf an das Angebotsmodul an {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Nach der Konfiguration der Aktivität **Abfrage**:
+Nach der Konfiguration Ihrer **Abfrage** -Aktivität:
 
-1. hinzufügen und öffnen Sie eine **Anreicherung**-Aktivität.
+1. Fügen Sie die Aktivität **Anreicherung** hinzu und öffnen Sie sie.
 1. Wählen Sie **[!UICONTROL Daten hinzufügen]** im Tab **[!UICONTROL Anreicherung]**.
 1. Wählen Sie **[!UICONTROL Angebotsvorschlag]** als hinzuzufügenden Datentyp aus.
 
@@ -118,9 +117,9 @@ Nach der Konfiguration der Aktivität **Abfrage**:
    >
    >Die Anzahl an für die Vorschau verfügbaren Vorschlägen hängt von der Konfiguration der Anreicherung und nicht von im Versand konfigurierten Parametern ab.
 
-#### Verweis auf einen Link zu einem Angebot {#referencing-a-link-to-an-offer}
+#### Link zu einem Angebot {#referencing-a-link-to-an-offer} referenzieren
 
-Sie können auch auf einen Link zu einem Angebot in einer **Anreicherung**-Aktivität verweisen.
+Sie können auch auf einen Link zu einem Angebot in einer Aktivität vom Typ **Anreicherung** verweisen.
 
 Gehen Sie dazu wie folgt vor:
 
@@ -140,9 +139,9 @@ Gehen Sie dazu wie folgt vor:
    >
    >Die Anzahl an für die Vorschau verfügbaren Vorschlägen hängt von den im Versand konfigurierten Parametern ab.
 
-#### Angebot-Rangfolge und Gewichtungen {#storing-offer-rankings-and-weights} speichern
+#### Rangansicht und Gewichtung von Angeboten speichern {#storing-offer-rankings-and-weights}
 
-Wenn zur Bereitstellung von Angeboten eine **Anreicherung**-Aktivität verwendet wird, werden deren Rangfolge und ihre Gewichtungen standardmäßig nicht in der Propositionstabelle gespeichert.
+Standardmäßig werden Rang und Gewichtung bei Verwendung der Aktivität **Anreicherung** nicht in der Vorschlagstabelle gespeichert.
 
 >[!NOTE]
 >
@@ -167,13 +166,13 @@ Der Versand speichert nun automatisch Rang und Gewichtung der Angebote. Die Info
 
 Auch die Aktivität **[!UICONTROL Angebotsmodul]** ermöglicht die Konfiguration einer einem Versand vorangestellten Modulabfrage.
 
-:arrow_upper_right: Weitere Informationen zur Aktivität **Angebot-Engine** finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
+:arrow_upper_right: Weitere Informationen zur Aktivität **Angebotsmodul** finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html) .
 
-Diese Aktivität funktioniert nach demselben Prinzip wie die **Anreicherung**-Aktivität mit einem Motoraufruf, indem die Eingangspopulationsdaten mit einem von der Engine berechneten Angebot vor einem Versand angereichert werden.
+Diese Aktivität basiert auf demselben Prinzip wie die Aktivität **Anreicherung** mit einem Engine-Aufruf, indem die eingehenden Populationsdaten mit einem vom Angebotsmodul berechneten Angebot vor einem Versand angereichert werden.
 
 ![](assets/int_offerengine_activity2.png)
 
-Nach der Konfiguration der Aktivität **Abfrage**:
+Nach der Konfiguration Ihrer **Abfrage** -Aktivität:
 
 1. Platzieren Sie im Anschluss an die Abfrage ein **[!UICONTROL Angebotsmodul]** und öffnen Sie es zur weiteren Bearbeitung.
 1. Konfigurieren Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die den Parametern entsprechenden Angebote.
@@ -190,7 +189,7 @@ Nach der Konfiguration der Aktivität **Abfrage**:
 
 Mithilfe der Aktivität **[!UICONTROL Angebote pro Segment]** lässt sich die eingehende Population (die beispielsweise aus einer Abfrage hervorgeht) in mehrere Zielgruppen aufspalten, um so je Segment spezifische Angebote zu unterbreiten.
 
-:arrow_upper_right: Weitere Informationen zur Aktivität **Angebot nach Zelle** finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
+:arrow_upper_right: Weitere Informationen zur Aktivität **Angebot nach Zelle** finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html) .
 
 Gehen Sie dazu wie folgt vor:
 
