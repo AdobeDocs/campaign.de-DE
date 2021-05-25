@@ -1,22 +1,25 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Campaign Control Panel
-description: Kampagne-Systemsteuerung
+description: Campaign Control Panel
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+hidefromtoc: true
+hide: true
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 60%
+source-wordcount: '361'
+ht-degree: 59%
 
 ---
 
-# Kampagne-Systemsteuerung
+# Campaign Control Panel
 
-Mit der Systemsteuerung von Kampagne können Sie die Effizienz Ihrer Arbeit als Produktadministrator von Adobe Campaign steigern, indem Sie die Einstellungen verwalten und Nutzungen für jede Ihrer Instanzen verfolgen können. Dank der intuitiven Benutzeroberfläche kann die Nutzung wichtiger Ressourcen überwacht und administrative Aufgaben einfach durchgeführt werden. So können beispielsweise IP-Adressen auf die Zulassungsliste gesetzt, der Speicher von SFTP-Servern überwacht und die Schlüssel verwaltet werden.
+NOCH NICHT VERFÜGBAR
+
+Mit dem Campaign Control Panel können Sie als Produktadministrator von Adobe Campaign die Effizienz Ihrer Arbeit steigern, indem Sie Einstellungen verwalten und die Nutzung für jede Ihrer Instanzen verfolgen können. Dank der intuitiven Benutzeroberfläche können die Nutzung wichtiger Ressourcen überwacht und administrative Aufgaben einfach durchgeführt werden. So können beispielsweise IP-Adressen auf die Zulassungsliste gesetzt, der Speicher von SFTP-Servern überwacht und die Schlüssel verwaltet werden.
 
 Wichtigste Vorteile:
 
@@ -24,7 +27,7 @@ Wichtigste Vorteile:
 * Konfigurieren Sie zu unterschiedlichen Zeiten die Einstellungen entsprechend Ihren Unternehmensanforderungen.
 * Erhöhen Sie die Sicherheit, indem Sie die Zugriffseinstellungen nach Bedarf steuern.
 
-Sie können auch die Systemsteuerung der Kampagne verwenden, um Ihre Instanzeinstellungen zu konfigurieren, wie z. B. IP-Listen zulassen, URL-Berechtigungen und Abrufen von Informationen zu Ihrer Instanz.
+Sie können das Campaign Control Panel auch verwenden, um Ihre Instanzeinstellungen wie IP-Zulassungsauflistung, URL-Berechtigungen und Abrufen von Informationen zu Ihrer Instanz zu konfigurieren.
 
 ## Zugriff auf das Control Panel
 
@@ -47,10 +50,10 @@ Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Mehr dazu:
 
 ## Instanzeneinstellungen
 
-Erfahren Sie, wie Sie die Einstellungen für Kampagnen-Instanzen in der Systemsteuerung verwalten.
+Erfahren Sie, wie Sie Ihre Campaign-Instanzeneinstellungen im Control Panel verwalten.
 * [IP auf der Zulassungsliste](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 * [URL-Genehmigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
 * [Details der Instanz](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [GPG-Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
 
-:arrow_upper_right: Entdecken Sie alle Funktionen der Systemsteuerung in [dieser Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
+:arrow_upper_right: Entdecken Sie alle Control Panel-Funktionen in [dieser Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
