@@ -1,93 +1,88 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Funktionsmatrix von Campaign Classic v7 - Kampagne v8
-description: Unterschiede zwischen Campaign Classic v7 und Kampagne v8 verstehen
+title: Funktionsmatrix von Campaign Classic v7 - Campaign v8
+description: Unterschiede zwischen Campaign Classic v7 und Campaign v8
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-translation-type: tm+mt
-source-git-commit: e1308398e5a33f2ad9659ad632aeb05af9916e69
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '572'
 ht-degree: 4%
 
 ---
 
-# Campaign Classic v7 - Kampagne v8-Funktionen{#gs-matrix}
+# [!DNL Campaign Classic] v7 -  [!DNL Campaign] v8-Funktionen{#gs-matrix}
 
-
-Als bestehender Campaign Classic v7-Nutzer sollten Sie keine größeren Störungen in der Interaktion mit Adobe Campaign erwarten. Die meisten Änderungen in v8 sind nicht sichtbar, mit Ausnahme kleiner Änderungen, die in der Benutzeroberfläche und in den Konfigurationsschritten sichtbar sind.
+Als bestehender [!DNL Campaign Classic] v7-Benutzer sollten Sie keine großen Störungen in der Art und Weise erwarten, wie Sie normalerweise mit [!DNL Adobe Campaign] interagieren. Die meisten Änderungen in v8 sind nicht sichtbar, mit Ausnahme kleiner Änderungen, die in der Benutzeroberfläche und in den Konfigurationsschritten sichtbar sind.
 
 Wichtige Änderungen:
 
-* Segmente bis zu 200-mal schneller erstellen
+* Segmente bis zu 200 x schneller erstellen
+* Geschwindigkeit der Auslieferung erhöhen
+* Echtzeitberichterstellung mit Cubes
 
-* Erhöhen Sie die Geschwindigkeit des Versands
+Beachten Sie als Benutzer von [!DNL Campaign Classic], dass die meisten [!DNL Campaign Classic] v7-Funktionen mit [!DNL Campaign] v8 verfügbar sind, mit Ausnahme eines kleinen Satzes, der in [diesem Abschnitt](#gs-removed) aufgelistet ist. Andere werden in zukünftigen Versionen verfügbar sein. [Weitere Informationen finden Sie in diesem Abschnitt](#gs-unavailable-features)
 
-* Echtzeit-Berichte
+:bulb: Weitere Informationen zur Architektur von [!DNL Campaign] v8 finden Sie auf [dieser Seite](../dev/architecture.md).
 
-Beachten Sie als Campaign Classic, dass die meisten Campaign Classic v7-Funktionen mit Kampagne v8 verfügbar sind, mit Ausnahme eines kleinen Satzes, der in [diesem Abschnitt](#gs-removed) aufgeführt ist. Andere werden in zukünftigen Versionen erscheinen. [Mehr dazu](#gs-unavailable-features)
+## Änderungen der Produktkonfiguration
 
+### [!DNL Campaign] und [!DNL Snowflake] {#ac-gs-snowflake}
 
-## Produktkonfigurationsänderungen
+[!DNL Adobe Campaign] v8 funktioniert mit zwei Datenbanken: eine lokale Datenbank für die Echtzeit-Messaging- und Einzelabfragen der Benutzeroberfläche und das Schreiben über APIs sowie eine Cloud-Datenbank für die Kampagnenausführung, Batch-Abfragen und Workflow-Ausführung.
 
-### Kampagne und [!DNL Snowflake] {#ac-gs-snowflake}
+Dies ist ein grundlegender Wandel in der Softwarearchitektur. Daten sind jetzt remote und Campaign führt die gesamten Daten, einschließlich Profile, zusammen. [!DNL Campaign] -Prozesse werden jetzt von der Zielgruppenbestimmung zur Nachrichtenausführung skaliert: Datenerfassung, Segmentierung, Targeting, Abfragen, Sendungen werden jetzt in der Regel in Minuten ausgeführt. Diese neue Version löst die gesamte Herausforderung der Skalierung, während gleichzeitig das gleiche Maß an Flexibilität und Erweiterbarkeit beibehalten wird. Die Anzahl der Profile ist fast unbegrenzt und die Datenaufbewahrung kann erweitert werden.
 
-Die Cloud-Datenspeicherung wird in [!DNL Snowflake] ausgeführt: Ein neues Externe Konto stellt die Verbindung zur Cloud-Datenbank sicher. [Weitere Informationen](#ac-gs-snowflake).
+Cloud-Speicher wird in **[!DNL Snowflake]** ausgeführt: Ein neues integriertes **externes Konto** stellt die Verbindung mit der Cloud-Datenbank sicher. Sie wird von Adobe konfiguriert und darf nicht geändert werden. [Weitere Informationen](../config/external-accounts.md).
 
-Dies ist ein grundlegender Wandel in der Softwarearchitektur. Daten sind jetzt remote und die Kampagne führt die gesamten Daten, einschließlich Profilen, zusammen. Kampagne-Prozesse skalieren jetzt von Targeting bis zur Ausführung von Meldungen: Datenerfassung, Segmentierung, Targeting, Abfragen und Versand werden jetzt in der Regel in Minuten ausgeführt.
-
-Diese neue Version löst die ganze Herausforderung der Skalierung und bewahrt dabei den gleichen Grad an Flexibilität und Erweiterbarkeit. Die Anzahl der Profil ist nahezu unbegrenzt, und die Datenspeicherung kann verlängert werden.
-
-Ein neues integriertes **Externe Konto** ist der vollständigen FDA gewidmet. Dies ist der Kern der Cloud-Datenbankverbindung. Wir empfehlen, so zu gehen, wie es ist.
-
-Für alle integrierten Schemas/Tabellen, die in der Cloud-Datenbank verschoben oder repliziert werden müssen, ist eine integrierte Schema-Erweiterung unter dem Namensraum **xxl** verfügbar.
-
-Diese Erweiterungen enthalten alle erforderlichen Änderungen, um integrierte Schema aus der lokalen Kampagne in die Cloud-Datenbank zu verschieben und ihre Struktur entsprechend anzupassen: neue UUID, aktualisierte Links usw.[!DNL Snowflake]
+Jedes integrierte Schema/jede integrierte Tabelle, das/die in der Cloud-Datenbank verschoben oder repliziert werden muss, enthält eine integrierte Schemaerweiterung unter dem Namespace **xxl**. Diese Erweiterungen enthalten alle erforderlichen Änderungen, um die integrierten Schemata aus der lokalen Datenbank [!DNL Campaign] in die Cloud-Datenbank zu verschieben und ihre Struktur entsprechend anzupassen: neue UUID, aktualisierte Links usw.[!DNL Snowflake]
 
 >[!CAUTION]
 >
-> Kundendaten werden nicht in der lokalen Kampagne gespeichert. Daher müssen benutzerdefinierte Tabellen in der Cloud-Datenbank erstellt werden.
+> Kundendaten werden nicht in der lokalen [!DNL Campaign]-Datenbank gespeichert. Daher muss jede benutzerdefinierte Tabelle in der Cloud-Datenbank erstellt werden.
 
+
+Es stehen spezifische APIs zur Verwaltung von Daten zwischen der lokalen und der Cloud-Datenbank zur Verfügung. Erfahren Sie, wie diese neuen APIs funktionieren und wie Sie sie auf [dieser Seite](../dev/new-apis.md) verwenden.
 
 ### Datenreplikation
 
-Ein spezieller Arbeitsablauf für technische Arbeitsabläufe behandelt die Replikation von Tabellen, die auf beiden Seiten vorhanden sein müssen (Kampagne der lokalen Datenbank und Cloud-Datenbank). Dieser Workflow wird stündlich ausgelöst und basiert auf einer neuen integrierten JavaScript-Bibliothek.
+Ein spezifischer technischer Workflow verarbeitet die Replikation von Tabellen, die auf beiden Seiten vorhanden sein müssen (lokale Campaign-Datenbank und Cloud-Datenbank). Dieser Workflow wird stündlich ausgelöst und stützt sich auf eine neue integrierte JavaScript-Bibliothek.
 
 >[!NOTE]
 >
 > Es wurden mehrere Replikationsrichtlinien erstellt, die auf der Größe der Tabelle (XS, XL usw.) basieren.
-> Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen aufweisen, andere werden eine vollständige Aktualisierung durchlaufen.
+> Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen aufweisen, andere müssen vollständig aktualisiert werden.
 
 
 [Weitere Informationen zur Datenreplikation](../config/replication.md)
 
 ### ID-Management
 
-Kampagne v8-Objekte verwenden jetzt eine **Universally Unique ID (UUID)**, die die Identifizierung von Daten durch unbegrenzte eindeutige Werte ermöglicht.
+Campaign v8-Objekte verwenden jetzt eine **Universally Unique ID (UUID)**, die die Identifizierung von Daten durch unbegrenzte eindeutige Werte ermöglicht
 
-Bitte beachten Sie, dass diese ID zeichenfolgenbasiert und nicht sequenziell ist.
+Beachten Sie, dass diese ID zeichenfolgenbasiert und nicht sequenziell ist.
 
 ### Vereinfachte Wartung
 
-Kampagne-Benutzer müssen keine Datenbankexperten sein: Es besteht kein Bedarf mehr an komplexen Datenbankwartungsvorgängen oder komplexer Tabellenindizierung.
+Campaign-Benutzer müssen keine Datenbankexperten sein: Es ist nicht mehr erforderlich, komplexe Datenbankwartungsvorgänge oder komplexe Tabellenindizierungen durchzuführen.
 
 ## Temporäre nicht verfügbare Funktionen{#gs-unavailable-features}
 
-Bitte beachten Sie, dass in dieser ersten Version noch einige Funktionen nicht verfügbar sind, z.B.:
+Beachten Sie, dass einige Funktionen in dieser ersten Version noch nicht verfügbar sind, z. B.:
 
 * Verwaltung von Marketing-Ressourcen
 * Dezentrales Marketing
-* Inbound Angebot Management (Interaktionsmodul)
+* Eingehendes Angebotsmanagement (Interaction-Modul)
 * Kampagnenoptimierung (Campaign Optimization)
 * Reaktionsverwaltung
-* Hybrid-/lokale Bereitstellungsmodelle
+* Hybride/On-Premise-Bereitstellungsmodelle
 
 ## Entfernte Funktionen{#gs-removed}
 
-Um mit dem neuen Architektur- und Bereitstellungsmodell der Kampagne v8 in Einklang zu stehen, sind einige historische Campaign Classic v7-Funktionen in Kampagne v8 nicht mehr verfügbar.
+In Übereinstimmung mit der neuen Architektur und dem neuen Bereitstellungsmodell von Campaign v8 sind einige Funktionen des historischen Campaign Classic v7 nicht mehr in Campaign v8 verfügbar.
 
 * Coupons
 * Webtracking
