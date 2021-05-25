@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Erste Schritte mit Marketing-Kampagnen
 description: Erste Schritte mit Marketing-Kampagnen
@@ -7,82 +7,81 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-translation-type: tm+mt
-source-git-commit: b39cac492f4605b7d1d7aeb75f6af26a20bf43e6
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 12%
+source-wordcount: '754'
+ht-degree: 11%
 
 ---
 
 # Erste Schritte mit Marketing-Kampagnen{#gs-ac-campaigns}
 
-Adobe Campaign Angebots bietet eine Reihe von Lösungen, mit deren Hilfe Sie Kampagnen für alle Ihre Online- und Offline-Kanal personalisieren und bereitstellen können. Sie können Marketing-Kampagnen erstellen, konfigurieren, ausführen und analysieren. Alle Marketing-Kampagnen können von einem einheitlichen Kontrollzentrum verwaltet werden. Hier erfahren Sie, wie Sie Marketing-Kampagnen durchsuchen und erstellen.
+Adobe Campaign bietet eine Reihe von Lösungen, mit denen Sie Kampagnen personalisieren und über alle Ihre Online- und Offline-Kanäle hinweg bereitstellen können. Sie können Marketingkampagnen erstellen, konfigurieren, ausführen und analysieren. Alle Marketing-Kampagnen können von einem einheitlichen Kontrollzentrum aus verwaltet werden. In diesem Abschnitt erfahren Sie, wie Sie Marketing-Kampagnen durchsuchen und erstellen.
 
 Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Import oder Extraktion von Dateien) sowie Ressourcen (Marketing-Dokumente, Versandentwürfe). Sie werden in Marketing-Kampagnen verwendet. Kampagnen sind Teil eines Programms und Programme Teil eines Kampagnenplans.
 
 ## Kanalübergreifende Orchestrierung einer Kampagne
 
-Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen entwerfen und orchestrieren: E-Mail, Direktnachricht, SMS, Push-Benachrichtigung. Eine einzige Oberfläche bietet Ihnen alle erforderlichen Funktionen, um alle Ihre Kampagnen und Mitteilungen zu planen, zu orchestrieren, zu konfigurieren, zu personalisieren, zu automatisieren, auszuführen und zu messen.
+Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen entwerfen und organisieren: E-Mail, Briefpost, SMS, Push-Benachrichtigung. Über eine einzige Oberfläche erhalten Sie alle Funktionen, die zum Planen, Orchestrieren, Konfigurieren, Personalisieren, Automatisieren, Ausführen und Messen all Ihrer Kampagnen und Kommunikationen erforderlich sind.
 
 ### Grundbegriffe
 
-Bevor Sie mit der Implementierung von Marketing-Kampagnen beginnen, müssen Sie mit den folgenden Begriffen vertraut sein:
+Bevor Sie mit der Implementierung von Marketing-Kampagnen beginnen, sollten Sie sich mit folgenden Konzepten vertraut machen:
 
-* **Marketing-Kampagne**: Eine Kampagne zentralisiert alle Elemente im Zusammenhang mit einer Marketing-Kampagne: Versand, Targeting-Regeln, Kosten, Exportdateien, zugehörige Dokumente usw. Jede Kampagne ist an ein Programm angehängt.
+* **Marketing-Kampagne**: eine Kampagne, die alle Elemente einer Marketingkampagne zusammenfasst: Sendungen, Targeting-Regeln, Kosten, Exportdateien, zugehörige Dokumente usw. Jede Kampagne ist an ein Programm angehängt.
 
-* **Programm**: Mit einem Programm können Sie Marketingaktionen für einen Kalenderzeitraum definieren: Start, Arbeitsfläche, Loyalität usw. Jedes Programm enthält Kampagnen, die mit einem Kalender verknüpft sind und eine allgemeine Ansicht bieten.
+* **Programm**: Ein Programm ermöglicht die Definition von Marketing-Aktionen für einen Kalenderzeitraum: Launch, Kundenwerbung, Treueprogramm usw. Jedes Programm enthält Kampagnen, die mit einem Kalender verknüpft sind, der eine Gesamtübersicht bietet.
 
-* **Plan**: der Marketingplan kann mehrere Programm enthalten. Es ist an einen Kalenderzeitraum gebunden, verfügt über zugewiesene Haushaltsmittel und kann auch mit Dokumenten und Zielen verknüpft werden.
+* **Plan**: der Marketingplan kann mehrere Programme enthalten. Er ist mit einem Kalenderzeitraum verknüpft, verfügt über ein zugewiesenes Budget und kann auch mit Dokumenten und Zielen verknüpft werden.
 
-* **Arbeitsablauf** der Kampagne: ein Arbeitsablauf für Kampagnen enthält Aktivitäten zum Aufbau der Kampagne-Logik. Verwenden Sie Kampagnen-Workflows, um Audiencen zu definieren und Versand für alle verfügbaren Kanal zu erstellen.
+* **Kampagnen-Workflow**: Ein Kampagnen-Workflow enthält Aktivitäten zum Erstellen der Kampagnenlogik. Verwenden Sie Kampagnen-Workflows, um Zielgruppen zu definieren und Sendungen für alle verfügbaren Kanäle zu erstellen.
 
-* **Wiederkehrende Kampagnen**: wiederkehrende Kampagnen werden aus einer bestimmten Vorlage erstellt, die die auszuführende Workflow-Vorlage und den Ausführungsplan definiert.
+* **Wiederkehrende Kampagnen**: Wiederkehrende Kampagnen werden basierend auf einer spezifischen Vorlage erstellt, die die auszuführende Workflow-Vorlage und den Ausführungsplan definiert.
 
-* **Regelmäßige Kampagnen**: eine periodische Kampagne ist eine Kampagne, die automatisch gemäß dem Ausführungsplan ihrer Vorlage erstellt wird.
+* **Regelmäßige Kampagnen**: Eine periodische Kampagne ist eine Kampagne, die automatisch entsprechend der Ausführungsplanung ihrer Vorlage erstellt wird.
 
-## Arbeitsbereich Marketing-Kampagne
+## Arbeitsbereich für Marketing-Kampagnen
 
-Mit Adobe Campaign können Sie alle Marketing-Kampagnen aus einem einheitlichen Kontrollzentrum erstellen, konfigurieren, ausführen und analysieren.
+Mit Adobe Campaign können Sie alle Marketing-Kampagnen in einem einheitlichen Kontrollzentrum erstellen, konfigurieren, ausführen und analysieren.
 
-:arrow_upper_right: Erfahren Sie, wie Sie auf Marketing-Kampagnen zugreifen und diese implementieren können in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
+:arrow_upper_right: Erfahren Sie, wie Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns) auf Marketing-Kampagnen zugreifen und diese implementieren können.
 
 
-## Wichtige Schritte zum Beginn
+## Die wichtigsten Schritte zum Starten
 
-Die wichtigsten Schritte zur Erstellung einer Kanal-übergreifenden Marketing-Kampagne sind:
+Die wichtigsten Schritte zum Erstellen einer kanalübergreifenden Marketing-Kampagne sind:
 
-1. **Planen und Entwerfen von Marketing-Programmen und -Kampagnen**
+1. **Planung und Konzeption von Marketing-Programmen und -Kampagnen**
 
-   Definieren Sie Hierarchie und Zeitplan, stellen Sie Budget ein, fügen Sie Ressourcen hinzu, wählen Sie Operatoren aus.
+   Definieren Sie Hierarchie und Zeitplan, legen Sie Budget fest, fügen Sie Ressourcen hinzu, wählen Sie Operatoren aus.
 
-   :arrow_upper_right: Informationen zum Erstellen eines Marketingplans und Konfigurieren von Kampagnen in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)
+   :arrow_upper_right: Erfahren Sie, wie Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy) einen Marketingplan erstellen und Kampagnen konfigurieren.
 
-   Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Haupteinstellungen und -funktionen gespeichert werden. Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen können, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
+   Alle Marketing-Kampagnen basieren auf einer Vorlage, die die wichtigsten Einstellungen und Funktionen speichert. Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen können, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
 
-   :arrow_upper_right: Informationen zum Arbeiten mit Kampagnenvorlagen finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
+   :arrow_upper_right: Informationen zum Arbeiten mit Kampagnenvorlagen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns) .
 
-   :arrow_upper_right: Entdecken Sie wiederkehrende Kampagnen und konfigurieren Sie sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
+   :arrow_upper_right: Entdecken Sie wiederkehrende Kampagnen und konfigurieren Sie sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
 
-1. **Audiencen definieren**
+1. **Zielgruppen definieren**
 
-   Sie können die Audience in einem Workflow erstellen oder eine bestehende Gruppe auswählen, z. B. eine Empfänger-Liste, Abonnenten eines Newsletters, Empfänger eines vorherigen Versands oder eine beliebige Filterbedingung.
+   Sie können die Audience in einem Workflow erstellen oder eine bestehende Gruppe auswählen, z. B. eine Empfängerliste, Abonnenten eines Newsletters, Empfänger eines früheren Versands oder eine beliebige Filterbedingung.
 
-   :arrow_upper_right: Informationen zum Definieren der Audience Ihrer Nachrichten in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)
+   :arrow_upper_right: Erfahren Sie, wie Sie die Audience Ihrer Nachrichten in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns) definieren.
 
 1. **Sendungen erstellen**
 
-   Wählen Sie Kanal aus, definieren Sie den Nachrichteninhalt und Beginn-Versand.
+   Wählen Sie Kanäle aus, definieren Sie den Nachrichteninhalt und starten Sie Sendungen.
 
-   :arrow_upper_right: Informationen zum Erstellen und Beginn von Versänden für Marketing-Kampagnen in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
+   :arrow_upper_right: Erfahren Sie, wie Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries) Marketingkampagnenbereitstellungen erstellen und starten.
 
    Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Webseite, Diagramm usw.
 
-   :arrow_upper_right: Weitere Informationen zu verknüpften Dokumenten finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)
+   :arrow_upper_right: Weitere Informationen zu zugehörigen Dokumenten finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents) .
 
-1. **Einrichten des Genehmigungsprozesses**
+1. **Validierungsprozess einrichten**
 
-   Mit Adobe Campaign können Sie gemeinsame Genehmigungsprozesse für die Hauptphasen der Marketing-Kampagne einrichten. Für jede Kampagne können Sie die Zielgruppe, den Inhalt und die Kosten des Versands genehmigen. Die für die Genehmigung zuständigen Adobe Campaign-Betreiber können per E-Mail benachrichtigt werden und die Genehmigung von der Konsole oder über eine Webverbindung annehmen oder ablehnen.
+   Mit Adobe Campaign können Sie kollaborative Validierungsprozesse für die wichtigsten Etappen der Marketingkampagne einrichten. Sie können für jede Kampagne Zielgruppe, Inhalt und Kosten des Versands validieren. Die für die Validierung zuständigen Adobe Campaign-Benutzer können per E-Mail benachrichtigt werden und die Validierung über die Konsole oder eine Webverbindung akzeptieren oder ablehnen.
 
-   :arrow_upper_right: Informationen zum Einrichten und Verwalten von Genehmigungen finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
+   :arrow_upper_right: Informationen zum Einrichten und Verwalten von Genehmigungen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns) .
 
