@@ -1,72 +1,71 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Neues Schema in Kampagne erstellen
-description: Erfahren Sie, wie Sie ein neues Schema in der Kampagne erstellen
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+title: Neues Schema in Campaign erstellen
+description: Erfahren Sie, wie Sie in Campaign ein neues Schema erstellen
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
 
-# Neues Schema{#create-new-schema} erstellen
+# Neues Schema erstellen{#create-new-schema}
 
-Um die Schema zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie auf den Knoten **[!UICONTROL Administration > Configuration > Data Schemas]** der Adobe Campaign-Client-Konsole.
+Um die Schemata zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie auf den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** der Adobe Campaign-Clientkonsole.
 
 >[!NOTE]
 >
->Integrierte Schema können nur von einem Administrator Ihrer Adobe Campaign Classic-Konsole gelöscht werden.
+>Integrierte Datenschemata können nur von einem Administrator Ihrer Adobe Campaign Classic-Konsole gelöscht werden.
 
 ![](assets/schema_navtree.png)
 
-Auf der Registerkarte **[!UICONTROL Bearbeiten]** wird der XML-Inhalt eines Schemas angezeigt:
+Der Tab **[!UICONTROL Bearbeiten]** zeigt den XML-Inhalt eines Schemas an:
 
 ![](assets/schema_edition.png)
 
 >[!NOTE]
 >
->Mit dem Bearbeitungssteuerelement &quot;Name&quot;können Sie den Schema-Schlüssel aus Name und Namensraum eingeben. Die Attribute &quot;name&quot;und &quot;Namensraum&quot;des Stammelements des Schemas werden automatisch im XML-Bearbeitungsbereich des Schemas aktualisiert.
+>Im Eingabefeld &quot;Name&quot; können Sie den Schemaschlüssel eingeben, der aus Name und Namespace besteht. Die Attribute &quot;name&quot;und &quot;namespace&quot;des Stammelements des Schemas werden automatisch im XML-Bearbeitungsbereich des Schemas aktualisiert. Beachten Sie, dass einige Namespaces nur intern sind. [Weitere Informationen](schemas.md#reserved-namespaces).
 
-Die Registerkarte **[!UICONTROL Vorschau]** generiert automatisch das erweiterte Schema:
+Der Tab **[!UICONTROL Vorschau]** generiert automatisch das erweiterte Schema:
 
 ![](assets/schema_edition2.png)
 
 >[!NOTE]
 >
->Beim Speichern des Quelldokuments wird die Generierung des erweiterten Schemas automatisch gestartet.
+>Beim Speichern des Quellschemas wird die Generierung des erweiterten Schemas automatisch gestartet.
 
-Wenn Sie die vollständige Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte **[!UICONTROL Vorschau]** verwenden. Wenn das Schema erweitert wurde, können Sie dann alle Erweiterungen visualisieren. Als Ergänzung zeigt die Registerkarte **[!UICONTROL Dokumentation]** alle Schema-Attribute und -Elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Beschriftung, Beschreibung) an. Die Registerkarte **[!UICONTROL Dokumentation]** gilt nur für generierte Schema.
+Wenn Sie die vollständige Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte **[!UICONTROL Vorschau]** verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visualisieren. Als Ergänzung werden im Tab **[!UICONTROL Dokumentation]** alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Titel, Beschreibung) angezeigt. Die Registerkarte **[!UICONTROL Dokumentation]** gilt nur für erstellte Schemata.
 
-## Verwendungsfall: eine Vertragstabelle {#example--creating-a-contract-table} erstellen
+## Anwendungsfall: Erstellen einer Vertragstabelle {#example--creating-a-contract-table}
 
-Im folgenden Beispiel erstellen Sie eine neue Tabelle für **verträge** in der Datenbank. In dieser Tabelle können Sie für jeden Vertrag Vor- und Nachnamen sowie E-Mail-Adressen von Inhabern und Mitinhabern speichern.
+Im folgenden Beispiel erstellen Sie eine neue Tabelle für **Contracts** in der Datenbank. In dieser Tabelle können Sie für jeden Vertrag Vor- und Nachnamen sowie E-Mail-Adressen von Inhabern und Mitinhabern speichern.
 
-Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktualisieren, um die entsprechende Tabelle zu erstellen. Die einzelnen Schritte sind unten aufgeführt.
+Erstellen Sie dazu das Schema der Tabelle und aktualisieren Sie die Datenbankstruktur, um die entsprechende Tabelle zu erstellen. Die detaillierten Schritte sind unten aufgeführt.
 
-1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Configuration > Data Schemas]** der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL New]**.
-1. Wählen Sie die Option **[!UICONTROL Neue Tabelle in der Datenvorlage]** erstellen und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** des Adobe Campaign-Baums und klicken Sie auf **[!UICONTROL Neu]**.
+1. Wählen Sie die Option **[!UICONTROL Neue Tabelle in der Datenvorlage erstellen]** und klicken Sie auf **[!UICONTROL Weiter]** .
 
    ![](assets/create_new_schema.png)
 
-1. Geben Sie einen Tabellennamen und einen Namensraum an.
+1. Geben Sie einen Namen für die Tabelle und einen Namespace an.
 
    ![](assets/create_new_param.png)
 
    >[!NOTE]
    >
-   >Standardmäßig werden von Benutzern erstellte Schema im Namensraum &quot;cus&quot;gespeichert. Weitere Informationen hierzu finden Sie unter [Identifizierung eines Schemas](extend-schema.md#identification-of-a-schema).
+   >Standardmäßig werden von Benutzern erstellte Schemata im Namespace &quot;cus&quot;gespeichert. Weitere Informationen hierzu finden Sie unter [Identifizierung eines Schemas](extend-schema.md#identification-of-a-schema).
 
-1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den dedizierten Assistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Einfügen]** und wählen Sie den hinzuzufügenden Einstellungstyp.
+1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den dedizierten Assistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Einfügen]** und wählen Sie den hinzuzufügenden Einstellungstyp aus.
 
    ![](assets/create_new_content.png)
 
-1. Legen Sie die Einstellungen für die Vertragstabelle fest:
+1. Definieren Sie die Einstellungen für die Vertragstabelle:
 
    ```
-   <srcSchema created="AA-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
-           label="Contracts" labelSingular="Contract" lastModified="AA-MM-DD HH:MM:SS.TZ"
+   <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
+           label="Contracts" labelSingular="Contract" lastModified="YYYY-MM-DD HH:MM:SS.TZ"
            mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
       <element dataSource="nms:extAccount:ffda" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
            label="Contracts" labelSingular="Contract" name="Contracts">
@@ -82,10 +81,10 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
    </srcSchema>
    ```
 
-   hinzufügen die Art der vertraglichen Auflistung.
+   Fügen Sie den Typ der Auflistung des Vertrags hinzu.
 
    ```
-   <srcSchema created="AA-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png" label="Contracts" labelSingular="Contract" lastModified="AA-MM-DD HH:MM:SS.TZ"mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
+   <srcSchema created="AA-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png" label="Contracts" labelSingular="Contract" AA-MM-DD HH:MM:SS.TZ"mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
       <enumeration basetype="byte" name="typeContract">
          <value label="Home" name="home" value="0"/>
          <value label="Car" name="car" value="1"/>
@@ -106,7 +105,7 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
    </srcSchema>
    ```
 
-1. Speichern Sie das Schema und klicken Sie auf die Registerkarte **[!UICONTROL Struktur]**, um die Struktur zu erstellen:
+1. Speichern Sie das Schema und klicken Sie auf die Registerkarte **[!UICONTROL Struktur]** , um die Struktur zu generieren:
 
    ![](assets/configuration_structure.png)
 
