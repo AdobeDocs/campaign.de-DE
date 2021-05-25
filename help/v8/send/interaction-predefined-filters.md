@@ -1,13 +1,12 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Angebot für Kampagne-Interaktion - Vordefinierte Filter
+title: Vordefinierte Filter für Campaign Interaction-Angebote
 description: Erfahren Sie, wie Sie vordefinierte Filter erstellen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 43%
@@ -16,11 +15,11 @@ ht-degree: 43%
 
 # Vordefinierte Filter erstellen{#creating-predefined-filters}
 
-Erstellen Sie Vordefinierte Filter, um Eignungsregeln für die Population der Zielgruppe zu definieren, die während der Erstellung von Angeboten leicht wiederverwendet werden können. Sie sind für jede Umgebung spezifisch und berücksichtigen die Angebot-Parameter.
+Erstellen Sie vordefinierte Filter, um Eignungsregeln für die Zielpopulation zu definieren, die bei der Angebotserstellung einfach wiederverwendet werden können. Sie sind für jede Umgebung spezifisch und berücksichtigen die Angebotsparameter.
 
-Um einen vordefinierten Filter zu erstellen, wenden Sie den folgenden Vorgang an:
+Gehen Sie wie folgt vor, um einen vordefinierten Filter zu erstellen:
 
-1. Navigieren Sie zum Ordner **[!UICONTROL Administration]** und wählen Sie **[!UICONTROL Vordefinierte Angebot-Filter]**.
+1. Navigieren Sie zum Ordner **[!UICONTROL Administration]** und wählen Sie **[!UICONTROL Vordefinierte Angebotsfilter]** aus.
 
    ![](assets/offer_filter_create_005.png)
 
