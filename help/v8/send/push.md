@@ -1,54 +1,58 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Push-Benachrichtigung mit Adobe Campaign senden
-description: Erste Schritte mit der Push-Benachrichtigung in der Kampagne
+description: Erste Schritte mit Push-Benachrichtigungen in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 21%
+source-wordcount: '295'
+ht-degree: 20%
 
 ---
 
 # Push-Benachrichtigungen erstellen und senden
 
-Mit Versänden für mobile Apps können Sie Benachrichtigungen an iOS- und Android-Systeme senden.
+Mit Mobile-App-Sendungen können Sie Benachrichtigungen an iOS- und Android-Systeme senden.
 
 Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folgende Schritte befolgen:
 
-1. Kampagne-Umgebung konfigurieren
-1. Erstellen Sie einen Informationsdienst vom Typ &quot;Mobilanwendung&quot;für Ihre Mobilanwendung.
+1. Campaign-Umgebung konfigurieren
+1. Erstellen Sie einen Informationsdienst vom Typ Mobile App für Ihre Mobile App.
 1. Fügen Sie diesem Dienst die iOS- und Android-Versionen der App hinzu.
 1. Erstellen Sie je einen Versand für iOS und Android.
 
-:arrow_upper_right: Erfahren Sie mehr über die ersten Schritte mit der mobilen App in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=de)
+:arrow_upper_right: Erfahren Sie mehr über die ersten Schritte mit der mobilen App in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=de)
 
-## In Adobe SDK integrieren
+## Integrieren mit Adobe SDK
 
 ### Integrieren des Campaign SDK
 
-Kampagne SDK erleichtert die Integration Ihrer mobilen Anwendung in die Adobe Campaign-Plattform.
+Campaign SDK ermöglicht die Integration Ihrer Mobile App in die Adobe Campaign-Plattform.
 
-:arrow_upper_right: Erfahren Sie, wie Sie Kampagne SDK in Ihre App integrieren können, in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en#loading-campaign-sdk)
+:arrow_upper_right: Informationen zur Integration des Campaign SDK in Ihre App finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en#loading-campaign-sdk) .
 
-### Kampagne Extension in Launch konfigurieren
+### Konfigurieren der Campaign-Erweiterung in Launch
 
-Sie können das Adobe Experience Platform Launch SDK mit Kampagne integrieren, indem Sie Campaign Classic Extension nutzen.
+Sie können das Adobe Experience Platform Launch-SDK mit Campaign integrieren, indem Sie die Campaign Classic-Erweiterung nutzen.
 
-:arrow_upper_right: Weitere Informationen finden Sie unter [Adobe Mobile SDK-Dokumentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic)
+:arrow_upper_right: Weitere Informationen finden Sie in der [Adobe Mobile SDK-Dokumentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic)
 
-## App-Einstellungen in Kampagne konfigurieren
+## App-Einstellungen in Campaign konfigurieren
 
-Sie müssen die Einstellungen für iOS- und Android-Apps in Adobe Campaign definieren.
+Sie müssen Ihre iOS- und Android-App-Einstellungen in Adobe Campaign definieren.
 
-:arrow_upper_right: Die Konfigurationsanweisungen für iOS sind in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages)
+:arrow_upper_right: Die Konfigurationsrichtlinien für iOS finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages) .
 
-:arrow_upper_right: Die Konfigurationsrichtlinien für Android finden Sie in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages)
+:arrow_upper_right: Die Konfigurationsrichtlinien für Android finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages) .
 
 ## Erste Push-Benachrichtigung erstellen
 
-:arrow_upper_right: Erfahren Sie, wie Sie Ihre ersten Push-Benachrichtigungen in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios) erstellen
+:arrow_upper_right: Erfahren Sie, wie Sie Ihre ersten Push-Benachrichtigungen in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios) erstellen.
+
+
+>[!CAUTION]
+>
+>Mit Campaign v8 ist die mobile Registrierung jetzt **asynchron**. [Weitere Informationen](../dev/staging.md).
