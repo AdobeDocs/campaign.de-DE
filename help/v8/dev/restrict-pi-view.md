@@ -1,27 +1,26 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: PI-Ansicht einschränken
-description: Hier erfahren Sie, wie Sie die PI-Ansicht einschränken.
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+title: PI-Ansicht beschränken
+description: Erfahren Sie, wie Sie die PI-Ansicht einschränken
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
-# PI-Ansicht{#restricting-pii-view} einschränken
+# Einschränken der PI-Ansicht{#restricting-pii-view}
 
 ## Übersicht {#overview}
 
-Wenn Sie möchten, dass Marketing-Benutzer auf Datendatensätze zugreifen können, aber nicht möchten, dass sie persönliche Informationen (PI) zum Empfänger anzeigen, z. B. Vorname, Nachname oder E-Mail-Adresse, wenden Sie die folgenden Richtlinien an, um den Datenschutz zu schützen und zu verhindern, dass Daten von regulären Betreibern der Kampagne missbraucht werden.
+Wenn Sie möchten, dass Marketing-Benutzer auf Datendatensätze zugreifen können, aber keine personenbezogenen Daten (PIs) des Empfängers anzeigen können, wie z. B. Vorname, Nachname oder E-Mail-Adresse, wenden Sie die unten stehenden Richtlinien an, um den Datenschutz zu schützen und zu verhindern, dass Daten von regulären Kampagnenbetreibern missbraucht werden.
 
-## Implementierung{#implementation}
+## Umsetzung {#implementation}
 
-Zu den Schemas wurde ein spezifisches Attribut hinzugefügt, das auf beliebige Elemente oder Attribute angewendet werden kann. Es ergänzt das vorhandene Attribut **[!UICONTROL visibleIf]** . Dieses Attribut ist: **[!UICONTROL accessibleIf]** . Wenn ein XTK-Ausdruck im Zusammenhang mit dem aktuellen Benutzerkontext enthalten ist, kann er z. B. **[!UICONTROL HasNamedRight]** oder **[!UICONTROL $(login)]** verwenden.
+Den Schemas wurde ein spezifisches Attribut hinzugefügt, das auf beliebige Elemente oder Attribute angewendet werden kann. Es ergänzt das vorhandene Attribut **[!UICONTROL visibleIf]** . Dieses Attribut lautet: **[!UICONTROL accessibleIf]** . Wenn Sie einen XTK-Ausdruck enthalten, der sich auf den aktuellen Benutzerkontext bezieht, kann er z. B. **[!UICONTROL HasNamedRight]** oder **[!UICONTROL $(login)]** nutzen.
 
-Nachfolgend finden Sie ein Beispiel für eine Empfänger Schema Extension, die diese Nutzung zeigt:
+Nachfolgend finden Sie ein Beispiel für eine Empfängerschema-Erweiterung, die diese Verwendung zeigt:
 
 ```
 <srcSchema desc="Recipient table (profiles" entitySchema="xtk:srcSchema" extendedSchema="xxl:nmsRecipientXl"
@@ -38,25 +37,25 @@ Nachfolgend finden Sie ein Beispiel für eine Empfänger Schema Extension, die d
 
 Die Haupteigenschaften sind:
 
-* **[!UICONTROL visibleIf]** : Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schema-Ansicht, Spaltenauswahl oder einem Ausdruck-Builder aufgerufen werden können. Dadurch werden jedoch keine Daten ausgeblendet, wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
-* **[!UICONTROL accessibleIf]** : Blendet die Daten (durch leere Werte ersetzen) aus der resultierenden Abfrage aus. Wenn visibleIf leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL visibleIf]** : blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem Ausdruckseditor aufgerufen werden können. Dabei werden jedoch keine Daten ausgeblendet, wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
+* **[!UICONTROL accessibleIf]** : blendet die Daten aus der resultierenden Abfrage aus (durch leere Werte ersetzen). Wenn visibleIf leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]** .
 
-Die Verwendung dieses Attributs in der Kampagne hat folgende Folgen:
+Die Verwendung dieses Attributs in Campaign hat folgende Konsequenzen:
 
-* Daten werden nicht mit Generische Abfragetool in der Konsole angezeigt.
-* Die Daten sind in Übersichtsregeln und in der Liste der Aufzeichnung (Konsole) nicht sichtbar.
-* Daten werden in detaillierter Ansicht schreibgeschützt.
-* Daten können nur innerhalb von Filtern verwendet werden (d. h. bei Verwendung einiger Dichotomie-Strategien können Sie trotzdem Werte erraten).
-* Jeder Ausdruck, der mit einem eingeschränkten Feld erstellt wurde, wird eingeschränkt auf: lower(@email) wird so barrierefrei wie @email.
-* In einem Arbeitsablauf können Sie die eingeschränkte Spalte als zusätzliche Spalte der Transition der Zielgruppe hinzufügen, sie steht aber Adobe Campaign-Benutzern weiterhin nicht zur Verfügung.
-* Beim Speichern der Zielgruppe in einer Liste sind die Eigenschaften der gespeicherten Felder identisch mit der Datenquelle.
+* Daten werden nicht mit dem generischen Abfrageeditor in der Konsole angezeigt.
+* In Übersichts- und Datensatzlisten (Konsole) sind keine Daten sichtbar.
+* Daten werden in der Detailansicht schreibgeschützt.
+* Daten können nur innerhalb von Filtern verwendet werden (d. h. bei Verwendung einiger Dichotomie-Strategien können Sie dennoch Werte erraten).
+* Jeder Ausdruck, der mithilfe eines eingeschränkten Felds erstellt wurde, ist auf Folgendes beschränkt: lower(@email) wird so barrierefrei wie @email.
+* In einem Workflow können Sie die eingeschränkte Spalte zur Zielpopulation als zusätzliche Spalte der Transition hinzufügen, sie steht aber für Adobe Campaign-Benutzer weiterhin nicht zur Verfügung.
+* Beim Speichern der Zielpopulation in einer Gruppe (Liste) entsprechen die Eigenschaften der gespeicherten Felder den Datenquellen.
 * Daten sind für JS-Code standardmäßig nicht verfügbar.
 
-## Empfehlungen {#recommendations}
+## Empfehlungen       {#recommendations}
 
-In jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL broadLog]** und **[!UICONTROL foreLog]** kopiert: Daher müssen diese Felder auch geschützt werden.
+In jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL broadLog]** und **[!UICONTROL forecastLog]** kopiert: Daher müssen auch diese Felder geschützt werden.
 
-Nachfolgend finden Sie ein Beispiel für die Protokolltabellenerweiterung, um Folgendes zu implementieren:
+Nachfolgend finden Sie ein Beispiel für die Log-Tabellen-Erweiterung, um dies zu implementieren:
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" extendedSchema="nms:broadLogRcp" img="nms:broadLog.png"
@@ -87,4 +86,4 @@ Nachfolgend finden Sie ein Beispiel für die Protokolltabellenerweiterung, um Fo
 
 >[!CAUTION]
 >
->Diese Einschränkung gilt nur für nicht technische Benutzer und isoliert keine Daten: ein technischer Benutzer mit entsprechenden Berechtigungen Daten abrufen kann.
+>Diese Einschränkung gilt nur für nicht technische Benutzer und isoliert keine Daten: Ein technischer Benutzer mit entsprechenden Berechtigungen kann Daten abrufen.
