@@ -1,100 +1,97 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 audience: end-user
 user-guide-title: Campaign v8
-description: Dokumentation zu Kampagne v8
-breadcrumb-title: Kampagne v8
-title: Dokumente der Kampagne v8
+description: Dokumentation zu Campaign v8
+breadcrumb-title: Campaign v8
+title: Dokumente für Campaign v8
 hide: true
-translation-type: tm+mt
-source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
+source-git-commit: 6e098ffa538c4348889a35eb454da747c80d6262
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 43%
+source-wordcount: '193'
+ht-degree: 40%
 
 ---
 
 
 # Dokumentation zu Adobe Campaign v8 {#campaign-v8}
 
-+ [Produktdokumentation](campaign-home.md)
++ [Dokumentation zu Campaign v8](campaign-home.md)
 + Neue Funktionen {#start}
    + [Wichtigste Funktionen](start/whats-new.md)
    + [Versionshinweise](start/release-notes.md)
+   + [Bekannte Einschränkungen](start/known-limitations.md)
    + [Classic v7 bis v8](start/capability-matrix.md)
 + Starten {#start}
    + [Erste Schritte](start/get-started.md)
    + [Profile und Zielgruppen](start/audiences.md)
    + [Datenimport](start/import.md)
-   + [Kampagnen erstellen](start/campaigns.md)
+   + [Erstellen von Kampagnen](start/campaigns.md)
    + [Nachrichten senden](start/create-message.md)
    + [Abonnements verwalten](start/subscriptions.md)
-   + [Verfolgen und überwachen](start/tracking.md)
+   + [Tracken und überwachen](start/tracking.md)
    + [Metriken und Berichte](start/reporting.md)
    + [Häufig gestellte Fragen](start/campaign-faq.md)
 + {#implement} implementieren
    + [Umsetzung](start/implement.md)
    + [Instanz anpassen](dev/customize.md)
    + [Sicherheitsrichtlinien](config/security.md)
-   + [Entwerfen von Web-Apps und Formularen](dev/webapps.md)
-   + [Best Practices für Datamodel](dev/datamodel-best-practices.md)
+   + [Webanwendungen und Formulare erstellen](dev/webapps.md)
+   + [Best Practices für Datenmodelle](dev/datamodel-best-practices.md)
 + {#deploy} bereitstellen
    + [Kompatibilitätsmatrix](start/compatibility-matrix.md)
    + [Verbindung zu Campaign herstellen](start/connect.md)
    + [Berechtigungen](start/permissions.md)
    + [Control Panel](config/self-service.md)
-   + [Hilfe und Support](start/support.md)
 + Senden {#send}
    + [E-Mails](send/email.md)
    + [SMS](send/sms.md)
    + [Push-Benachrichtigungen ](send/push.md)
    + [LINE-Messaging](send/line.md)
    + [Briefpost](send/direct-mail.md)
-   + [Transaktionsnachrichten ](send/transactional.md)
-   + hinzufügen Angebot{#interaction}
-      + [Erste Schritte mit Interaktion](send/interaction.md)
-      + Einstellungen{#interaction} definieren
+   + [Transaktionsnachrichten](send/transactional.md)
+   + Angebote hinzufügen{#interaction}
+      + [Erste Schritte mit Interaktionen](send/interaction.md)
+      + Einstellungen definieren{#interaction}
          + [Benutzer erstellen](send/interaction-operators.md)
-         + [Umgebung erstellen](send/interaction-env.md)
+         + [Erstellen von Umgebungen](send/interaction-env.md)
          + [Vordefinierte Filter erstellen](send/interaction-predefined-filters.md)
          + [Platzierungen erstellen](send/interaction-offer-spaces.md)
-      + [Erstellen eines Angebotskatalogs](send/interaction-offer-catalog.md)
+      + [Angebotskatalog erstellen](send/interaction-offer-catalog.md)
       + [Angebot erstellen](send/interaction-offer.md)
       + [Angebot senden](send/interaction-send-offers.md)
-      + [Anwendungsbeispiele](send/interaction-use-cases.md)
+      + [Anwendungsfälle](send/interaction-use-cases.md)
 + Konfigurieren {#config}
-   + [Automatisierung](config/workflows.md)
+   + [Mit Workflows automatisieren](config/workflows.md)
    + [Daten verwalten](config/replication.md)
    + [E-Mail-Einstellungen](config/email-settings.md)
    + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
    + [Externe Konten](config/external-accounts.md)
 + Verbinden {#connect}
-   + [Verbindungen zu anderen Lösungen herstellen](connect/integration.md)
-   + [Kampagne + Analytics](connect/ac-aa.md)
+   + [Verbindung mit anderen Lösungen](connect/integration.md)
+   + [Campaign + Analytics](connect/ac-aa.md)
    + [Kampagne + Experience Manager](connect/ac-aem.md)
-   + [Kampagne + Zielgruppe](connect/ac-at.md)
+   + [Kampagne + Ziel](connect/ac-at.md)
    + [Kampagne + RTCDP](connect/ac-rtcdp.md)
-   + [Kampagne + Twitter](connect/ac-tw.md)
+   + [Campaign + Twitter](connect/ac-tw.md)
    + [Kampagne + externe Datenbank](connect/fda.md)
-   + [Kampagne + Ihr CRM](connect/crm.md)
+   + [Campaign und Ihr CRM](connect/crm.md)
 + Entwicklerressourcen {#architecture}
    + [Globale Prinzipien](dev/general-architecture.md)
    + [Architektur](dev/architecture.md)
-   + [Datamodel](dev/datamodel.md)
+   + [Datenmodell](dev/datamodel.md)
    + Schemas und Formulare {#shemas-forms}
-      + [Arbeiten mit Schemas](dev/schemas.md)
-      + [Schemas erstellen](dev/create-schema.md)
-      + [Schemas erweitern](dev/extend-schema.md)
+      + [Arbeiten mit Schemata](dev/schemas.md)
+      + [Erstellen von Schemata](dev/create-schema.md)
+      + [Schemata erweitern](dev/extend-schema.md)
       + [Schemastruktur](dev/schema-structure.md)
       + [Datenbank-Mapping](dev/database-mapping.md)
-      + [PI-Ansicht einschränken](dev/restrict-pi-view.md)
+      + [PI-Ansicht beschränken](dev/restrict-pi-view.md)
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Datenbank aktualisieren](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
    + APIs {#api}
       + [Erste Schritte](dev/api.md)
       + [Neue APIs](dev/new-apis.md)
-      + [APIs der Kampagne v8](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)
-
-
+      + [API-Staging-Mechanismus](dev/staging.md)
