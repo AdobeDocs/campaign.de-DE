@@ -1,19 +1,18 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Datenbankstruktur aktualisieren
 description: Datenbankstruktur aktualisieren
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
 
 ---
 
-# Datenbankstruktur aktualisieren{#updating-the-database-structure}
+# Datenbankstruktur{#updating-the-database-structure} aktualisieren
 
-Um die vorgenommenen Änderungen auf die Schema anzuwenden, starten Sie den Datenbankaktualisierungsassistenten. Auf diese Assistenzkraft kann über **[!UICONTROL Tools > Erweitert > Datenbankstruktur aktualisieren]** zugegriffen werden. Es prüft, ob die physische Struktur der Datenbank mit der logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungsskripte aus.
+Um die Änderungen an den Schemas anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistenten können Sie über **[!UICONTROL Tools > Erweitert > Datenbankstruktur aktualisieren]** zugreifen. Er prüft, ob die physische Struktur der Datenbank mit der logischen Beschreibung übereinstimmt, und führt die SQL-Update-Skripte aus.
 
 ![](assets/schema_update.png)
 
@@ -21,7 +20,7 @@ Die Module in der Datenbank werden automatisch ausgefüllt und aktiviert.
 
 ![](assets/schema_update_select2.png)
 
-Führen Sie die Schritte aus und führen Sie die Ansicht des SQL-Datenbankupdates durch:
+Führen Sie die Schritte aus und zeigen Sie das SQL-Skript zur Datenbankaktualisierung an:
 
 ![](assets/schema_update2.png)
 
