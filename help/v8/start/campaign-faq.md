@@ -1,62 +1,90 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Häufig gestellte Fragen zur Kampagne v8
-description: Häufige Fragen und Antworten zur Discover-Kampagne
+title: Häufig gestellte Fragen zu Campaign v8
+description: Häufige Fragen und Antworten zu Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-translation-type: tm+mt
-source-git-commit: f413844de6b71b6a7d5b681af9ceb47a1f5ecaae
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 45%
+source-wordcount: '652'
+ht-degree: 44%
 
 ---
 
 # Häufig gestellte Fragen{#faq}
 
-Benötigen Sie Hilfe bei der Arbeit mit der Kampagne? Lesen Sie die 10 wichtigsten Fragen unten und weitere häufig gestellte Fragen auf dieser Seite.
+Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Fragen/Antworten unten.
 
-1. Wie kann ich Campaign auf die neuste Version aktualisieren?
+1. **Wie kann ich Campaign auf die neuste Version aktualisieren?**
 
-   Adobe Campaign wird regelmäßig aktualisiert. Kleinere Versionen werden jedes Jahr mit neuen Funktionen, Verbesserungen und Fehlerbehebungen veröffentlicht. Darüber hinaus veröffentlichen wir regelmäßig Builds nur mit kumulativen Fehlerbehebungen.
+   Adobe Campaign wird regelmäßig aktualisiert. Jährlich werden kleinere Versionen mit neuen Funktionen, Verbesserungen und Fehlerbehebungen veröffentlicht. Darüber hinaus veröffentlichen wir regelmäßig Builds nur mit kumulativen Fehlerbehebungen.
 
    Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihre Produkterfahrung zu verbessern. Deshalb erachten wir es für wichtig, dass Sie die aktuelle Version von Adobe Campaign verwenden.
 
-   Wenden Sie sich an das Kundenservice-Team der Adobe, um Ihre Umgebung zu aktualisieren.
+   :Sprache_Ballon: Als Benutzer von Managed Cloud Services wird Ihre Instanz mit jeder neuen Version von Adobe aktualisiert.
 
-1. Wie kann ich eine Verbindung zu Kampagne v8 herstellen?
+1. **Wie kann ich eine Verbindung zu Campaign v8 herstellen?**
+
+   Sie müssen die Campaign Client Console herunterladen und installieren, um eine Verbindung zu Adobe Campaign herzustellen.
 
    :bulb: [Klicken Sie hier, um mehr zu erfahren](connect.md).
 
-1. Wie verbessern Sie die E-Mail-Zustellbarkeit?
+1. **Kann Campaign v8 in einer On-Premise- oder Hybridumgebung installiert werden?**
 
-   :arrow_upper_right: Lesen Sie dieses Handbuch, um die Best Practices für die Bereitstellung [zu erfahren.](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de)
+   Zurzeit ist Campaign v8 nur in verwalteten Cloud Services verfügbar, die vollständig von Adobe gehostet werden.
 
-   :arrow_upper_right: Erfahren Sie, wie Sie die Lieferbarkeit in Kampagne [in diesem Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html) implementieren.
+1. **Wie kann ich die Zustellbarkeit von E-Mails verbessern?**
 
-1. Wie weiß ich, dass mein Versand fehlerfrei durchgeführt wird?
+   Die Zustellbarkeit von E-Mails, eine wichtige Komponente für den Erfolg des Marketingprogramms jedes Absenders, ist durch ständig wechselnde Kriterien und Regeln gekennzeichnet. Die effektive Navigation in dieser digitalen Welt erfordert eine regelmäßige Abstimmung Ihrer E-Mail-Strategie unter Berücksichtigung der wichtigsten Zustellbarkeitstrends, um Ihre Zielgruppen optimal zu erreichen.
+
+   :arrow_upper_right: In diesem Handbuch erfahren Sie mehr zu [Best Practices für die Bereitstellung](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
+
+   :arrow_upper_right: In diesem Handbuch](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html) erfahren Sie, wie Sie die Zustellbarkeit in Campaign [implementieren.
+
+1. **Wie weiß ich, dass mein Versand fehlerfrei durchgeführt wird?**
 
    Adobe Campaign ist mit einer Reihe von Dashboards und Tools zur Überwachung des E-Mail-Versands ausgestattet.
 
-   [Lesen Sie die Dokumentation zu Campaign Classic v7, um zu ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html) erfahren, wie Sie sicherstellen können, dass Ihre Nachrichten gesendet werden, und überwachen Sie die Ausführung und die Aktion, wenn ein Fehler auftritt.
+   [Lesen Sie die Dokumentation zu Campaign Classic v7 , um zu ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html) erfahren, wie Sie sicherstellen können, dass Ihre Nachrichten gesendet werden, die Ausführung überwachen und Maßnahmen ergreifen können, wenn ein Fehler auftritt.
 
-1. Kann ich die Ausführung von Workflows überwachen?
+1. **Kann ich die Ausführung von Workflows überwachen?**
 
-   :arrow_upper_right: Verstehen Sie, wie Sie die Ausführung des Arbeitsablaufs für Kampagnen unter [in der Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html) überwachen.
+   :arrow_upper_right: Erfahren Sie, wie Sie die Ausführung von Campaign-Workflows überwachen [in der Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html).
 
-1. Mit welchen Systemen und Komponenten ist Kampagne v8 kompatibel?
+1. **Mit welchen Systemen und Komponenten ist Campaign v8 kompatibel?**
 
    Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign ](compatibility-matrix.md).
 
-1. Wo sind die Versionshinweise zur Kampagne v8?
-
-   :bulb: Die Versionshinweise zur neuesten Kampagne finden Sie hier.
-
-1. Wie funktioniert das Verfahren der Domain-Konfiguration?
+1. **Wie funktioniert das Verfahren der Domain-Delegation?**
 
    Sie können Ihre Domain in Subdomains unterteilen, um Ihre Marken oder unterschiedlichen Textsorten (Transaktionsnachrichten, Marketing-Informationen usw.) voreinander zu trennen.
 
-   :arrow_upper_right: Richten Sie die Domänenübertragung über die Systemsteuerung der Kampagne ein. [Mehr dazu hier](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html).
+   :Sprache_Ballon: Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](../start/campaign-faq.md#support), um Ihre Subdomains an Adobe zu delegieren.
+
+1. **Kann ich als Campaign Classic v7-Benutzer zu Campaign v8 migrieren?**
+
+   Derzeit ist Campaign v8 nur für neue Implementierungen verfügbar.
+
+1. **Wie kann ich Campaign herunterladen?**
+
+   Sie können das Installationsprogramm und die Clientkonsole vom Adobe Download Center abrufen.
+
+   [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html), um auf die Softwareverteilung von Experience Cloud zuzugreifen.
+
+   Weitere Informationen zum Verteilungszentrum [finden Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+
+1. **Kann ich mich mit Campaign-Experten in Verbindung setzen?**
+
+   Beitritt zur Campaign-Community: Fragen Sie nach Antworten in bestehenden Fragen oder fragen Sie die Experten. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/?profile.language=en)
+
+
+1. **Wie kann ich ein Problem protokollieren?**
+
+   Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten. Sie können in der Adobe Admin Console mit dem Adobe-Support chatten, um Ihre Probleme zu lösen.
+
+   Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, müssen Sie sich mit [Adobe Admin Console](https://adminConsole.adobe.com/overview) verbinden.
+
+   Dieses System erfordert für jeden Benutzer individuelle Konten mit den richtigen Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht mit Ihrer Adobe ID anmelden können, fordern Sie über Experience League Zugriff an. Das Team der Kundenunterstützung wird den Zugriff so schnell wie möglich einrichten. [Mehr dazu](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
