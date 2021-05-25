@@ -1,48 +1,47 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Arbeiten mit Kampagne und Twitter
-description: Erfahren Sie, wie Sie mit Kampagne und Twitter arbeiten können
+title: Campaign und Twitter verwenden
+description: Erfahren Sie, wie Sie mit Campaign und Twitter arbeiten.
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 hidefromtoc: true
 hide: true
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 17%
 
 ---
 
-# Arbeiten mit Kampagne und Twitter
+# Campaign und Twitter verwenden
 
 **NOCH NICHT VERFÜGBAR**
 
-Verwenden Sie die Option **Social Networks (Social Marketing)** verwalten, um über Twitter mit Kunden und Potenzieller Kunden zu interagieren.
+Verwenden Sie die Option **Social Marketing (Social Marketing)**, um über Twitter mit Kunden und potenziellen Kunden zu interagieren.
 
-* Nachrichten senden - Verwenden Sie Adobe Campaign Social Marketing, um Nachrichten auf Twitter zu senden. Mit Adobe Campaign können Sie Nachrichten direkt an Ihr twitter-Konto senden. Sie können auch Direktnachrichten an alle Ihre Follower senden.
+* Nachrichten senden - Verwenden Sie Adobe Campaign Social Marketing , um Nachrichten auf Twitter zu senden. Mit Adobe Campaign können Sie Nachrichten direkt an Ihr twitter-Konto posten. Sie können auch Direktnachrichten an alle Ihre Follower senden.
 
-* Neue Kontakte sammeln - Adobe Campaign Social Marketing macht es auch einfach, neue Kontakte über Facebook zu erwerben: Kontaktieren Sie die Benutzer und fragen Sie sie, ob sie ihre Profil-Informationen teilen möchten. Wenn sie zustimmen, stellt Adobe Campaign die Daten automatisch wieder her, sodass Sie zielgerichtete Kampagnen durchführen und nach Möglichkeit kanalübergreifende Strategien implementieren können.
+* Neue Kontakte sammeln - Adobe Campaign Social Marketing erleichtert auch den Erwerb neuer Kontakte über Facebook: Kontaktieren Sie Benutzer und fragen Sie sie, ob sie ihre Profilinformationen teilen möchten. Wenn sie zustimmen, stellt Adobe Campaign die Daten automatisch wieder her, sodass Sie zielgerichtete Kampagnen durchführen und nach Möglichkeit kanalübergreifende Strategien implementieren können.
 
 ## Konfigurationsschritte
 
-Informationen abrufen von:
+Informationen erhalten Sie von:
 
 https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-social-media/configuration/configuring-publishing-on-twitter.html?lang=en#integrating-with-social-media
 
 
 ## Auf Twitter veröffentlichen
 
-Informationen abrufen von:
+Informationen erhalten Sie von:
 
 https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-social-media/publishing-on-facebook-twitter/publishing-on-twitter.html?lang=en#integrating-with-social-media
 
 
 ## Tracking
 
-Informationen abrufen von:
+Informationen erhalten Sie von:
 
 https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-social-media/annexes/tracking.html?lang=en#integrating-with-social-media
