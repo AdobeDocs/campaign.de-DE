@@ -1,36 +1,35 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Interaktionsoperatoren für Kampagnen
-description: Erstellen von Angebot-Management-Operatoren
+title: Campaign Interaction-Benutzer
+description: Erstellen von Angebotsmanagement-Operatoren
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 4bc62dcf806abd71e8230ce209d9151a4188b62e
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '414'
 ht-degree: 40%
 
 ---
 
 
-# Operatoren-Profil {#operator-profiles}
+# Benutzerprofile {#operator-profiles}
 
-Zwei Operatortypen können die Interaktion mit Kampagnen verwenden: **Angebot-Manager** und **Versand-Manager**. Jeder von ihnen hat spezifische Berechtigungen und Einschränkungen. Weitere Informationen zu Operatoren und Berechtigungen für Kampagnen finden Sie auf [dieser Seite](../start/permissions.md).
+Zwei Operatortypen können Campaign Interaction verwenden: **Angebotsverantwortliche Benutzer** und **Versand-Manager**. Jeder von ihnen verfügt über spezifische Berechtigungen und Einschränkungen. Weitere Informationen zu Campaign-Benutzern und -Berechtigungen finden Sie auf [dieser Seite](../start/permissions.md).
 
-* Der **[!UICONTROL Angebot-Manager]** erstellt und verwaltet Angebot.
-* Der **[!UICONTROL Versand-Manager]** genehmigt und verwendet Angebot
+* Der **[!UICONTROL Angebotsverantwortliche]** erstellt und verwaltet Angebote.
+* Der **[!UICONTROL Versandverantwortliche]** genehmigt und verwendet Angebote.
 
-## Erstellen Sie einen Angebot-Manager-Operator{#offer-manager}
+## Erstellen eines Angebotsverantwortlichen{#offer-manager}
 
 1. Erstellen Sie den neuen Benutzer.
 
-   :arrow_upper_right: Die Schritte zum Erstellen eines Operators in der Kampagne sind in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   :arrow_upper_right: Die Schritte zum Erstellen eines Benutzers in Campaign werden im [Campaign Classic v7-Handbuch](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html) beschrieben.
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Angebotsverantwortliche Benutzer]** aus.
 
-Die dem Angebot-Manager zugewiesenen Rechte ermöglichen es ihnen, folgende Aufgaben durchzuführen:
+Die dem Angebotsverantwortlichen zugewiesenen Berechtigungen ermöglichen ihm die Durchführung folgender Aufgaben:
 
 * Änderung von **[!UICONTROL Design-Umgebungen]**;
 * Ansicht von **[!UICONTROL Live-Umgebungen]**;
@@ -40,21 +39,21 @@ Die dem Angebot-Manager zugewiesenen Rechte ermöglichen es ihnen, folgende Aufg
 * Konfiguration von Angebotseignungen;
 * Validierung von Angeboten.
 
-Beachten Sie, dass bei Angeboten, die in einem Workflow verwendet werden, der Operator der Operatorgruppe **[!UICONTROL Administrator]** oder **[!UICONTROL Angebot-Manager]** hinzugefügt werden muss, um den Workflow auszuführen.
+Beachten Sie, dass bei der Verwendung von Angeboten in einem Workflow der Operator **[!UICONTROL Administrator]** oder **[!UICONTROL Angebotsverantwortliche]** hinzugefügt werden muss, um den Workflow auszuführen.
 
 >[!NOTE]
 >
->Ein **Angebot-Manager** kann ein Angebot nur genehmigen, wenn kein Überprüfer angegeben ist oder wenn er in der Vorlage des Angebots, auf der das Angebot basiert, als Prüfer deklariert wurde.
+>Ein **Angebotsverantwortlicher** kann ein Angebot nur genehmigen, wenn kein Validierer angegeben wurde oder wenn er in der Angebotsvorlage, auf der das Angebot basiert, als Validierer deklariert wurde.
 
-## Erstellen Sie einen Versand-Manager-Operator {#delivery-manager}
+## Versand-Manager-Benutzer {#delivery-manager} erstellen
 
 1. Erstellen Sie den neuen Benutzer.
 
-   :arrow_upper_right: Die Schritte zum Erstellen eines Operators in der Kampagne sind in der [Campaign Classic-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   :arrow_upper_right: Die Schritte zum Erstellen eines Benutzers in Campaign werden im [Campaign Classic v7-Handbuch](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html) beschrieben.
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
 
-Die dem Versand-Manager zugewiesenen Rechte sind/ermöglichen es ihm, folgende Aufgaben durchzuführen:
+Die dem Versandverantwortlichen zugewiesenen Berechtigungen ermöglichen es ihm, die folgenden Aufgaben auszuführen:
 
 * Ansicht der **[!UICONTROL Design-Umgebungen]**;
 * Anzeige und Änderung von Angebotskategorien;
@@ -62,16 +61,16 @@ Die dem Versand-Manager zugewiesenen Rechte sind/ermöglichen es ihm, folgende A
 
    >[!NOTE]
    >
-   >Ein **Versand-Manager** kann ein Angebot nur genehmigen, wenn er während der Konfiguration des Angebots als Überprüfer deklariert wurde.
+   >Ein **Versandverantwortlicher** kann ein Angebot nur genehmigen, wenn er während der Angebotskonfiguration als Validierer deklariert wurde.
 
-## Berechtigungsmatrix pro Interaktionsoperator {#recap-of-rights-according-to-operator}
+## Berechtigungsmatrix pro Interaction-Operator {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Angebot-Manager (Design env)</strong><br /> </td> 
-   <td> <strong>Angebot-Manager (Live-Version)</strong><br /> </td> 
+   <td> <strong>Angebotsverantwortlicher (Design-Umgebung)</strong><br /> </td> 
+   <td> <strong>Angebotsverantwortlicher (Live-Umgebung)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Knoten im Navigationsbaum</strong><br /> </td> 
@@ -130,8 +129,8 @@ Die dem Versand-Manager zugewiesenen Rechte sind/ermöglichen es ihm, folgende A
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Versand-Manager (Design env.)</strong><br /> </td> 
-   <td> <strong>Versand-Manager (Live-Version)</strong><br /> </td> 
+   <td> <strong>Versand-Manager (Design-Umgebung)</strong><br /> </td> 
+   <td> <strong>Versandverantwortlicher (Live-Umgebung)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Knoten im Navigationsbaum</strong><br /> </td> 
