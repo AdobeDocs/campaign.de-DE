@@ -1,20 +1,19 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Interaktionsoperatoren für Kampagnen
-description: Erstellen von Angebot-Management-Operatoren
+title: Campaign Interaction-Benutzer
+description: Erstellen von Angebotsmanagement-Operatoren
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 37%
 
 ---
 
-# Live- und Design-Umgebung{#live-design-environments}
+# Live- und Design-Umgebungen{#live-design-environments}
 
 Interaction arbeitet mit zwei Angebotsumgebungstypen:
 
@@ -25,30 +24,30 @@ Interaction arbeitet mit zwei Angebotsumgebungstypen:
 
 Jeder **[!UICONTROL Design-Umgebung]** entspricht eine **[!UICONTROL Live-Umgebung]**. Nach Erstellung eines Angebots unterlaufen sein Inhalt und die konfigurierten Eignungsregeln einen Validierungszyklus, nach dessen erfolgreichem Abschluss das Angebot automatisch für die **[!UICONTROL Live-Umgebung]** freigegeben wird. Nun kann es in Sendungen verwendet werden.
 
-Standardmäßig ist eine **[!UICONTROL Design]**-Umgebung und eine **[!UICONTROL Live]**-Umgebung mit ihr verknüpft. Beide Umgebung sind für die Zielgruppe der [integrierten Empfänger-Tabelle](../dev/datamodel.md#ootb-profiles) vorkonfiguriert.
+Standardmäßig ist Campaign mit einer **[!UICONTROL Design]**-Umgebung und einer **[!UICONTROL Live]**-Umgebung ausgestattet, die damit verknüpft ist. Beide Umgebungen sind so vorkonfiguriert, dass sie auf die [integrierte Empfängertabelle](../dev/datamodel.md#ootb-profiles) abzielen.
 
 >[!NOTE]
 >
->Zur Zielgruppe der Empfänger-Tabelle müssen Sie den Zielgruppen-Mapping-Assistenten verwenden, um die Umgebung zu erstellen. [Weitere Informationen](#creating-an-offer-environment).
+>Um die Empfängertabelle auszuwählen, müssen Sie den Assistenten zur Zielgruppenzuordnung verwenden, um die Umgebungen zu erstellen. [Weitere Informationen](#creating-an-offer-environment).
 
 ![](assets/offer_environments_overview_002.png)
 
-Versand-Manager können nur die **[!UICONTROL Live]**-Umgebung Ansicht und Angebot nutzen, um sie bereitzustellen. Angebot-Manager können die Umgebung **[!UICONTROL Design]** und die Ansicht der Umgebung **[!UICONTROL Live]** verwenden. [Weitere Informationen](interaction-operators.md).
+Versandverantwortliche können nur die Umgebung **[!UICONTROL Live]** anzeigen und Angebote nutzen, um sie bereitzustellen. Angebotsverantwortliche Benutzer können die Umgebung **[!UICONTROL Design]** anzeigen und die Umgebung **[!UICONTROL Live]** anzeigen. [Weitere Informationen](interaction-operators.md).
 
-## Erstellen einer Angebot-Umgebung {#creating-an-offer-environment}
+## Erstellen einer Angebotsumgebung {#creating-an-offer-environment}
 
-Die Kampagne verfügt standardmäßig über eine integrierte Umgebung zur Zielgruppe der Empfänger-Tabelle (identifizierte Angebot). Gehen Sie wie folgt vor, um eine andere Tabelle Zielgruppe:
+Campaign verfügt standardmäßig über eine integrierte Umgebung, in der die Empfängertabelle (identifizierte Angebote) ausgewählt werden kann. Gehen Sie wie folgt vor, um eine andere Tabelle auszuwählen:
 
-1. Gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Versand-Zuordnungen]**, klicken Sie mit der rechten Maustaste auf die gewünschte Versand-Zuordnung und wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Ändern Sie die Optionen der Zielgruppendimension]**.
+1. Navigieren Sie zu **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Zielgruppen-Mappings]**, klicken Sie mit der rechten Maustaste auf das gewünschte Zielgruppen-Mapping und wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Ändern Sie die Optionen der Zielgruppendimension]** aus.
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Klicken Sie auf **[!UICONTROL Weiter]**, wählen Sie die Option **[!UICONTROL Datenspeicherung für Vorschläge erstellen]** und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Klicken Sie auf **[!UICONTROL Weiter]**, wählen Sie die Option **[!UICONTROL Speicherschema für Vorschläge erstellen]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
    ![](assets/offer_env_anonymous_002.png)
 
    >[!NOTE]
    >
-   >Wenn die Option bereits aktiviert ist, deaktivieren Sie sie und überprüfen Sie sie erneut.
+   >Wenn die Option bereits aktiviert ist, deaktivieren Sie sie und aktivieren Sie sie erneut.
 
-1. Adobe Campaign erstellt zwei Umgebung - **[!UICONTROL Design]** und **[!UICONTROL Live]** - mit Targeting-Informationen aus dem zuvor aktivierten Zielgruppen-Mapping. Die Umgebung ist mit den Targeting-Informationen vorkonfiguriert.
+1. Adobe Campaign erstellt zwei Umgebungen - **[!UICONTROL Design]** und **[!UICONTROL Live]** - mit Targeting-Informationen aus dem zuvor aktivierten Zielgruppen-Mapping. Die Umgebung ist mit den Targeting-Informationen vorkonfiguriert.
