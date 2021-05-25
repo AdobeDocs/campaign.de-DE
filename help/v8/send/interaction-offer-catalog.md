@@ -1,36 +1,35 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Kampagne Interaction Angebotskatalog
+title: Kampagnen-Interaction-Angebotskatalog
 description: Erfahren Sie, wie Sie einen Angebotskatalog erstellen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: 58f294b3d17de5eca64c82fdf7720b2734320bad
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 30%
+source-wordcount: '412'
+ht-degree: 13%
 
 ---
 
-# Erstellen eines Angebotskatalogs
+# Angebotskatalog erstellen
 
-Als **Angebot-Manager** sind Sie für das Erstellen des Angebotskatalogs verantwortlich.
+Als **Angebotsverantwortlicher** sind Sie für die Erstellung des Angebotskatalogs verantwortlich.
 
-Ein Angebotskatalog ist mit einer einzigen bereits vorhandenen Umgebung verknüpft. Angebot in diesem Katalog können nur mit den in derselben Umgebung angegebenen Leerzeichen verknüpft werden.
+Ein Angebotskatalog ist mit einer bereits existierenden Umgebung verknüpft. Angebote in diesem Katalog können nur mit den in derselben Umgebung angegebenen Platzierungen verknüpft werden.
 
-Bevor Sie Ihre Angebote erstellen, müssen Sie zunächst eine [Umgebung](interaction-env.md) angeben, die alle Merkmale (Berechtigung, Einschränkungen der Zielgruppe, Unterbreitungsregeln) eines Satzes von Angeboten enthält, die nach Kategorien sortiert sind, sowie die Liste ihrer Leerzeichen.
+Vor der Erstellung Ihrer Angebote müssen Sie zunächst eine [Umgebung](interaction-env.md) angeben, die alle Merkmale (Eignung, Einschränkungen der Zielgruppe, Unterbreitungsregeln) eines Angebotssatzes enthält, der in Kategorien unterteilt ist, sowie die Liste ihrer Platzierungen.
 
 ## Angebotskategorien erstellen{#creating-offer-categories}
 
-Angebote sind in Kategorien/Unter-Kategorien unterteilt. Kategorien werden in der Umgebung **[!UICONTROL Design]** erstellt und automatisch in der Umgebung **[!UICONTROL Live]** bereitgestellt (d. h. bereitgestellt), wenn die darin enthaltenen Angebot genehmigt wurden. Die **[!UICONTROL Design]**-Umgebung enthält eine standardmäßige Kategorie zum Empfangen aller Angebot. Unter-Kategorien können erstellt werden, um den Katalog-Angeboten eine Hierarchie hinzuzufügen.
+Das Angebot ist in Kategorien/Unterkategorien unterteilt. Kategorien werden in der Umgebung **[!UICONTROL Design]** erstellt und automatisch in der Umgebung **[!UICONTROL Live]** bereitgestellt (d. h. zur Verfügung gestellt), wenn die darin enthaltenen Angebote validiert werden. Die Umgebung **[!UICONTROL Design]** enthält eine Standardkategorie für den Empfang aller Angebote. Unterkategorien können erstellt werden, um den Katalogangeboten eine Hierarchie hinzuzufügen.
 
-Für jede Kategorie können Sie **die Berechtigungsdaten** definieren. Dies ist der Zeitraum, in dem die in der Kategorie enthaltenen Angebot ihrer Zielgruppe präsentiert werden können. Sie können auch die Gewichtung einer Kategorie anpassen, um der Präsentation des Angebots Priorität einzuräumen.
+Für jede Kategorie können Sie **Eignungsdaten** definieren. Dies ist der Zeitraum, in dem die in der Kategorie enthaltenen Angebote ihrer Zielgruppe unterbreitet werden können. Sie können auch die Gewichtung einer Kategorie anpassen, um der Angebotsunterbreitung Priorität einzuräumen.
 
 Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
-1. Browser zum Ordner **[!UICONTROL Angebotskatalog]**.
+1. Browser zum Ordner **[!UICONTROL Angebotskatalog]** .
 
    ![](assets/offer_cat_create_001.png)
 
@@ -52,32 +51,22 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
       ![](assets/offer_cat_create_004.png)
 
-   * im Feld **[!UICONTROL Themen]** Schlüsselwörter anzugeben, die eine spätere Auswahl der in der Kategorie enthaltenen Angebote erleichtern.
+   * **[!UICONTROL Bearbeiten Sie]** die Abfrage, um Filter auf die Angebotszielgruppe anzuwenden.
 
-      ![](assets/offer_cat_create_005.png)
+   * Eine Zusammenfassung der Eignungsregeln. Klicken Sie auf den Link **[!UICONTROL Planung und Eignungsregeln des Angebots]**, um sie anzuzeigen.
 
-      >[!NOTE]
-      >
-      >Bei Abfrage des Angebotsmoduls werden nur die Angebote ausgegeben, deren Themen oder Kategorien mit den in der Abfrage angegebenen Parametern übereinstimmen.
+## Fallback-Kategorie hinzufügen
 
-   * im Feld **[!UICONTROL Angebotsgewichtung]** können Sie die Gewichtung von einer Kategorie zugehörigen Angeboten für einen von Ihnen festgelegten Zeitraum erhöhen.
+Um sicherzustellen, dass alle Empfänger einen Angebotsvorschlag erhalten, können in den Empfehlungen systematisch eine oder mehrere Angebotskategorien hinzugefügt werden.
 
-      ![](assets/offer_cat_create_006.png)
+Diese Fallback-Angebote müssen eine niedrige Gewichtung (aber nicht null) aufweisen, sodass sie nur berücksichtigt werden, wenn keine Angebote mit höherer Gewichtung infrage kommen.
 
-Über den Link **[!UICONTROL Planung und Eignungsregeln des Angebots]** im Dashboard der in der Kategorie enthaltenen Angebote können Sie auf die Details der Eignungskonfiguration zugreifen.
+Darüber hinaus darf auf diese Angebote keine Unterbreitungsregel angewendet werden, um sicherzustellen, dass sie immer in die Empfehlungen aufgenommen werden. Wenn also während eines Vorschlags kein Angebot mit höherer Gewichtung verfügbar ist, erhält der Empfänger mindestens ein Angebot aus dieser Kategorie.
 
-## hinzufügen einer Fallback-Kategorie
-
-Um sicherzustellen, dass alle Empfänger einen Angebotsvorschlag erhalten, können Sie eine oder mehrere Angebot-Kategorien in die Empfehlungen einfügen.
-
-Diese Ausweich-Angebot müssen eine niedrige Gewichtung (aber nicht null) aufweisen, sodass sie nur berücksichtigt werden, wenn keine Angebot mit höherer Gewichtung förderfähig sind.
-
-Darüber hinaus darf es keine Unterbreitungsregel für diese Angebote geben, um sicherzustellen, dass sie immer in die Empfehlungen aufgenommen werden. Das bedeutet, dass der Empfänger während eines Vorschlags, wenn kein Angebot mit höherer Gewichtung verfügbar ist, mindestens ein Angebot von dieser Kategorie erhält.
-
-Gehen Sie wie folgt vor, um eine Ausweich-Kategorie in die Empfehlungen aufzunehmen:
+Gehen Sie wie folgt vor, um eine Fallback-Kategorie in die Empfehlungen aufzunehmen:
 
 1. Navigieren Sie zu Ihrem Angebotskatalog.
-1. Klicken Sie auf die Registerkarte **[!UICONTROL Berechtigung]** und wählen Sie **[!UICONTROL Diese Kategorie immer in die Option recommendations]** einschließen.
+1. Klicken Sie auf den Tab **[!UICONTROL Eignung]** und wählen Sie die Option **[!UICONTROL Diese Kategorie immer in die Recommendations]**-Option einschließen.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
    ![](assets/offer_cat_default_001.png)
