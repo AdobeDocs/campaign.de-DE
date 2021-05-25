@@ -1,55 +1,54 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: Erste Schritte mit Kampagne v8
+title: Erste Schritte mit Campaign v8
 description: Entdecken Sie wichtige Funktionen, die Benutzeroberfläche und globale Richtlinien
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-translation-type: tm+mt
-source-git-commit: cebe3fedb97a5570aa404bf97709e6b26bf90d7c
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 40%
+source-wordcount: '898'
+ht-degree: 38%
 
 ---
 
 # Erste Schritte mit Adobe Campaign{#gs-ac-v8}
 
-Adobe Campaign bietet eine Plattform für das Entwerfen von Kundenerlebnissen über Kanal hinweg und eine Umgebung für visuelle Kampagne-Orchestrierung, Interaktionsmanagement in Echtzeit und die Ausführung über Kanal hinweg.
+Adobe Campaign bietet eine Plattform für die Konzeption kanalübergreifender Kundenerlebnisse und eine Umgebung für die visuelle Kampagnenorchestrierung, Interaktionsverwaltung in Echtzeit und die kanalübergreifende Ausführung.
 
-Kampagne verwenden, um:
+Verwenden Sie Campaign für:
 
-* Personalisierung und Interaktion durch eine einzige, zugängliche Ansicht des Kunden fördern
-* Integrieren von E-Mail-, Mobil-, Online- und Offline-Kanälen in die Journey
-* Automatisieren des Versands aussagekräftiger und zeitnaher Nachrichten und Angebot
+* **** Personalisierung und Interaktion durch eine einzige zugängliche Ansicht des Kunden fördern
+* **** Integrieren von E-Mail-, Mobile-, Online- und Offline-Kanälen in die Journey
+* **** Automatisieren der Bereitstellung aussagekräftiger und zeitnaher Nachrichten und Angebote
 
 ![](assets/ac-capabilities.png)
 
 ## Integriertes Kundenprofil {#integrated-customer-profile}
 
-Profil werden in einer leistungsstarken Cloud-Datenbank zentralisiert. Die Akquise von Profilen und die Datenbankerstellung können auf verschiedenste Weisen erfolgen: Online-Akquise über Web-Formulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie Marketingverlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PII-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
+Profile werden in einer leistungsstarken Cloud-Datenbank zentralisiert. Die Akquise von Profilen und die Datenbankerstellung können auf verschiedenste Weisen erfolgen: Online-Akquise über Web-Formulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie Marketingverlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PII-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
 
 In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen übermittelt werden (E-Mails, SMS etc.). Dank der in der Datenbank gespeicherten Empfängerdaten können Sie das Ziel filtern, das eine bestimmte Sendung erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzufügen. In der Datenbank sind weitere Profiltypen vorhanden. Sie sind für andere Verwendungszwecke gedacht. Beispielsweise dienen Testprofile zum Testen von Sendungen, bevor sie tatsächlich an das endgültige Ziel übermittelt werden.
 
-:bulb: Die Grundlagen der Profil-Verwaltung werden in [diesem Abschnitt](audiences.md) erläutert.
+:bulb: Die Grundlagen der Profilverwaltung werden in [diesem Abschnitt](audiences.md) erläutert.
 
-:bulb: In [diesem Abschnitt ](import.md) erfahren Sie, wie Sie Profil zur Kampagne hinzufügen.
+:bulb: In [diesem Abschnitt](import.md) erfahren Sie, wie Sie in Campaign Profile hinzufügen.
 
 ## Zielgruppensegmentierung {#targeted-segmentation}
 
 Adobe Campaign enthält leistungsstarke Analyse- und Zielgruppenbestimmungsfunktionen, die es Ihnen ermöglichen, sehr spezifische, dem Kundenprofil entsprechende Angebote zu erstellen. Dank der deskriptiven Analysefunktionen können Sie Informationen vor und nach Ihren Marketing-Kampagnen detailliert betrachten. Außerdem ermöglichen Filter und ein benutzerfreundliches Abfragetool, registrierte Kontakte mithilfe unzähliger Kriterien zu kategorisieren und extrem genaue Zielgruppen zu definieren.
 
-Die erweiterte Data Management-Funktionalität erweitert die Datenverarbeitungsfunktionen. Es vereinfacht und optimiert den Targeting-Prozess durch die Einbeziehung von Daten, die nicht im Datamart modelliert wurden.
+Die erweiterte Data-Management-Funktion erweitert die Datenverarbeitungsfunktionen. Sie vereinfacht und optimiert den Targeting-Prozess, indem nicht modellierte Daten in den Datamart aufgenommen werden.
 
-:bulb: Weitere Informationen zu Segmentierung, Erstellung und Personalisierung von Audiencen finden Sie in [diesem Abschnitt](audiences.md).
+:bulb: Weitere Informationen zur Segmentierung, zur Erstellung und Personalisierung von Zielgruppen finden Sie in [diesem Abschnitt](audiences.md).
 
 ## Kanalübergreifende Orchestrierung einer Kampagne {#cross-channel-campaign-orchestration}
 
-Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen entwerfen und orchestrieren: E-Mail, Direktnachricht, SMS, Push-Benachrichtigung. Eine einzige Oberfläche bietet Ihnen alle erforderlichen Funktionen, um alle Ihre Kampagnen und Mitteilungen zu planen, zu orchestrieren, zu konfigurieren, zu personalisieren, zu automatisieren, auszuführen und zu messen.
+Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen entwerfen und organisieren: E-Mail, Briefpost, SMS, Push-Benachrichtigung. Über eine einzige Oberfläche erhalten Sie alle Funktionen, die zum Planen, Orchestrieren, Konfigurieren, Personalisieren, Automatisieren, Ausführen und Messen all Ihrer Kampagnen und Kommunikationen erforderlich sind.
 
-:bulb: Hier erfahren Sie, wie Sie eine Kampagne entwerfen, planen und ausführen.[](campaigns.md)
+:bulb: In [diesem Abschnitt](campaigns.md) erfahren Sie, wie Sie eine Kampagne entwerfen, planen und ausführen.
 
 ## Workflows
 
@@ -66,31 +65,56 @@ Workflows können in unterschiedlichsten Kontexten zum Einsatz kommen:
 
 :bulb: Erfahren Sie, wie Sie Workflows in [diesem Abschnitt](../config/workflows.md) entwerfen und ausführen.
 
-## Berichte und Analyse {#analysis-and-reporting}
+## Berichterstellung und Analyse {#analysis-and-reporting}
 
-Mit Adobe Campaign können Sie das Verhalten Ihrer Kunden überwachen und interpretieren, indem Sie ihre Daten und Profil schrittweise bereichern. Mit den Tools für Berichte und Analyse können Sie jede neue Kampagne nutzen, Ihre Marketinginitiativen besser Zielgruppe und ihre Wirkung und Rentabilität optimieren.
+Mit Adobe Campaign können Sie das Verhalten Ihrer Kunden überwachen und interpretieren, indem Sie deren Daten und Profile schrittweise anreichern. Mit den Berichts- und Analysewerkzeugen können Sie aus jeder neuen Kampagne Kapital schlagen, Ihre Marketinginitiativen besser ansprechen und deren Wirkung und ROI optimieren.
 
-:bulb:  Weitere Informationen zu Berichts- und Verfolgungsfunktionen finden Sie in [diesem Abschnitt](reporting.md).
+:bulb: Weitere Informationen zu Berichts- und Tracking-Funktionen finden Sie in [diesem Abschnitt](reporting.md).
 
 ## Integration mit Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
-Sie können die Versand-Funktionen und die Funktionen der erweiterten Kampagnenverwaltung von Adobe Campaign mit einer Reihe von Lösungen kombinieren, mit denen Sie Ihre Benutzererfahrung personalisieren können: Trigger von Adobe Experience Manager, Adobe Analytics, Adobe Target oder Adobe Experience Cloud.
+Sie können die Versandfunktionen und erweiterten Kampagnenverwaltungsfunktionen von Adobe Campaign mit einer Reihe von Lösungen kombinieren, die Ihnen helfen, das Benutzererlebnis zu personalisieren: z. B. Adobe Experience Manager, Adobe Analytics, Adobe Target oder Adobe Experience Cloud-Trigger.
 
-:bulb: Erfahren Sie, wie Sie in [dieser Abschnitt](../connect/integration.md) Adobe-Services und -Lösungen integrieren können.
+:bulb: Erfahren Sie, wie Sie in [diesen Abschnitt](../connect/integration.md) mit Adobe-Diensten und -Lösungen integrieren können.
 
-## Weitere Informationen zu Kampagnen-Funktionen {#core-capabilities-and-add-ons}
+## Weitere Informationen zu Campaign-Funktionen {#core-capabilities-and-add-ons}
 
-Adobe Campaign Angebot eine Reihe von Funktionen, die Sie bei der Implementierung und Optimierung der Marketingfunktionen für Konversationen unterstützen, je nach Ihren Bedürfnissen und Ihrer Architektur. Einige davon sind Kernfunktionen und andere hängen von der Installation eines Pakets auf Ihrer Konfiguration ab. Eine ausführliche Produktbeschreibung finden Sie hier: [Adobe Campaign v8 Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+Adobe Campaign bietet eine Reihe von Funktionen, mit denen Sie die kommunikativen Marketing-Funktionen je nach Ihren Anforderungen und Ihrer Architektur implementieren und optimieren können. Einige davon sind Kernfunktionen und andere hängen von der Installation eines Pakets von Ihrer Konfiguration ab. Eine ausführliche Produktbeschreibung finden Sie hier: [Adobe Campaign v8 Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).
 
-:bulb: Sie kennen sich bereits mit Campaign Classic aus? Lernen Sie die wichtigsten Unterschiede zwischen Campaign Classic und Kampagne v8 in [dieser Seite](capability-matrix.md) kennen.
+:bulb: Bereits mit Campaign Classic vertraut? Lernen Sie die wichtigsten Unterschiede zwischen Campaign Classic und Campaign v8 in [dieser Seite](capability-matrix.md) kennen.
 
 ## Arbeitsbereich und Anpassung
 
-Der Arbeitsbereich für Kampagnen ist über die Client-Konsole verfügbar.
+Der Campaign-Arbeitsbereich ist über [Client Console](../dev/general-architecture.md) verfügbar.
 
-:bulb:  Erfahren Sie, wie Sie den Arbeitsbereich &quot;Kampagne&quot;in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html) verwenden.
+:bulb: [Erfahren Sie mehr über die Campaign Client Console](../start/connect.md).
 
-:bulb:  Informationen zum Anpassen von Listen in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html)
+Der Campaign-Arbeitsbereich kann Ihren Bedürfnissen entsprechend angepasst werden.
+
+:arrow_upper_right:  Erfahren Sie, wie Sie Campaign Workspace in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html) verwenden.
+
+:arrow_upper_right:  Erfahren Sie, wie Sie Listen in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html) anpassen können.
 
 Sie können auch über das Internet auf einige Funktionen zugreifen.
+
+:bulb: [Erfahren Sie mehr über Campaign Web Access](../start/connect.md#web-access).
+
+
+## Sprachen
+
+Die Benutzeroberfläche von Campaign v8 ist in den folgenden Sprachen verfügbar:
+
+* Englisch (UK)
+* Englisch (US)
+* Französisch
+* Deutsch
+* Japanisch
+
+Die Sprache wird während des Installationsprozesses ausgewählt.
+
+>[!CAUTION]
+>
+>Die Sprache kann nach der Instanzerstellung nicht mehr geändert werden.
+
+Von der Sprache betroffene Daten und Uhrzeitformate. Weitere Informationen hierzu finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#date-and-time).
 
