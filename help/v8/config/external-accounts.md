@@ -6,7 +6,7 @@ description: Externe Kampagnenkonten
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 25%
@@ -42,7 +42,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
    Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Dienst verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
-   :[!DNL :arrow_upper_right:]: Weitere Informationen zu eingehenden E-Mails finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html) .
+   [!DNL :arrow_upper_right:] Weitere Informationen zu eingehenden E-Mails finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)
 
 * **Routing**
 
