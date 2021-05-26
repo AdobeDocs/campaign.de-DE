@@ -7,7 +7,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 0dae3431ac1ddc840244d7df4929b0c949f8011f
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 31%
@@ -44,7 +44,7 @@ Um Campaign mit Profildaten zu füllen, können Sie:
 
 Adobe Campaign ist ein leistungsstarkes Tool zur Erfassung und Verarbeitung großer Datenmengen, einschließlich personenbezogener Daten und sensibler Daten. Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vertraulicher Daten, erfassen. Es ist daher unerlässlich, dass Sie das Einverständnis Ihrer Empfänger erhalten und überwachen.
 
-:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie Datenschutz und Einverständniserklärung in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html) verwalten.
+:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie Datenschutz und Einverständniserklärung in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html) verwalten.
 
 ## Listen erstellen
 
