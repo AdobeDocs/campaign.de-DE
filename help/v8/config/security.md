@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Best Practices für die Sicherheit von Campaign
 description: Erste Schritte mit Best Practices für die Sicherheit von Campaign
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '509'
 ht-degree: 31%
 
 ---
@@ -25,7 +25,7 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 * Stellen Sie sicher, dass der Zugriff auf verschlüsselte Passwörter beschränkt ist
 * Schützen Sie Seiten, die möglicherweise personenbezogene Daten enthalten (z. B. Mirrorseiten, Webanwendungen usw.).
 
-:Sprache_Ballon: Als Benutzer von Managed Cloud Services arbeitet Adobe mit Ihnen zusammen, um diese Konfigurationen in Ihre Umgebung zu implementieren.
+[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services arbeitet Adobe mit Ihnen zusammen, um diese Konfigurationen in Ihre Umgebung zu implementieren.
 
 ## Personalisierung            
 
