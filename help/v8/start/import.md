@@ -7,7 +7,7 @@ feature: Profile
 role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 11%
@@ -29,11 +29,11 @@ Profilimporte werden in dedizierten Vorlagen konfiguriert, die über Workflows �
 
 Weitere Informationen finden Sie in der Campaign Classic v7-Dokumentation:
 
-:[!DNL :arrow_upper_right:]: [Erste Schritte mit Importen und Exporten](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html)
+[!DNL :arrow_upper_right:] [Erste Schritte mit Importen und Exporten](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html)
 
-:[!DNL :arrow_upper_right:]: [Best Practices beim Import und Export](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html)
+[!DNL :arrow_upper_right:] [Best Practices beim Import und Export](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html)
 
-:[!DNL :arrow_upper_right:]: [Konfigurieren und Ausführen eines Imports](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html)
+[!DNL :arrow_upper_right:] [Konfigurieren und Ausführen eines Imports](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html)
 
 ## Einzelimport ausführen
 
@@ -41,7 +41,7 @@ Erstellen Sie einen generischen Datenimportauftrag und führen Sie ihn aus, um K
 
 ![](assets/new-import.png)
 
-:[!DNL :arrow_upper_right:]: Erfahren Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html) , wie Sie Einzelimport-Aufträge ausführen, um Ihre Datenbank zu versorgen.
+[!DNL :arrow_upper_right:] Erfahren Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html), wie Sie Einzelimport-Aufträge ausführen können, um Ihre Datenbank zu versorgen.
 
 ## Erfassen von Profilen über Web-Apps
 
@@ -49,7 +49,7 @@ Verwenden Sie Campaign, um Webformulare zu erstellen und Profilinformationen ein
 
 ![](assets/web-form-page.png)
 
-:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie Webformulare in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html) erstellen.
+[!DNL :arrow_upper_right:] Erfahren Sie, wie Sie Webformulare in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html) erstellen.
 
 **Verwandte Themen**
 
