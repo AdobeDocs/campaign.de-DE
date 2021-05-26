@@ -7,7 +7,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 12%
@@ -55,33 +55,33 @@ Die wichtigsten Schritte zum Erstellen einer kanalübergreifenden Marketing-Kamp
 
    Definieren Sie Hierarchie und Zeitplan, legen Sie Budget fest, fügen Sie Ressourcen hinzu, wählen Sie Operatoren aus.
 
-   :[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy) einen Marketingplan erstellen und Kampagnen konfigurieren.
+   [!DNL :arrow_upper_right:] Erfahren Sie, wie Sie einen Marketingplan erstellen und Kampagnen konfigurieren, in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)
 
    Alle Marketing-Kampagnen basieren auf einer Vorlage, die die wichtigsten Einstellungen und Funktionen speichert. Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen können, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
 
-   :[!DNL :arrow_upper_right:]: Informationen zum Arbeiten mit Kampagnenvorlagen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] Erfahren Sie in der Dokumentation zu  [Campaign Classic v7, wie Sie mit Kampagnenvorlagen arbeiten.](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
 
-   :[!DNL :arrow_upper_right:]: Entdecken Sie wiederkehrende Kampagnen und konfigurieren Sie sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
+   [!DNL :arrow_upper_right:] Erfahren Sie mehr über wiederkehrende Kampagnen und deren Konfiguration in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
 
 1. **Zielgruppen definieren**
 
    Sie können die Audience in einem Workflow erstellen oder eine bestehende Gruppe auswählen, z. B. eine Empfängerliste, Abonnenten eines Newsletters, Empfänger eines früheren Versands oder eine beliebige Filterbedingung.
 
-   :[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie die Audience Ihrer Nachrichten in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns) definieren.
+   [!DNL :arrow_upper_right:] Erfahren Sie, wie Sie die Audience Ihrer Nachrichten in der Dokumentation zu  [Campaign Classic v7 definieren.](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)
 
 1. **Sendungen erstellen**
 
    Wählen Sie Kanäle aus, definieren Sie den Nachrichteninhalt und starten Sie Sendungen.
 
-   :[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries) Marketingkampagnenbereitstellungen erstellen und starten.
+   [!DNL :arrow_upper_right:] Erfahren Sie, wie Sie Marketingkampagnen-Sendungen erstellen und starten, in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
 
    Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Webseite, Diagramm usw.
 
-   :[!DNL :arrow_upper_right:]: Weitere Informationen zu zugehörigen Dokumenten finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents) .
+   [!DNL :arrow_upper_right:] Weitere Informationen zu verknüpften Dokumenten finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)
 
 1. **Validierungsprozess einrichten**
 
    Mit Adobe Campaign können Sie kollaborative Validierungsprozesse für die wichtigsten Etappen der Marketingkampagne einrichten. Sie können für jede Kampagne Zielgruppe, Inhalt und Kosten des Versands validieren. Die für die Validierung zuständigen Adobe Campaign-Benutzer können per E-Mail benachrichtigt werden und die Validierung über die Konsole oder eine Webverbindung akzeptieren oder ablehnen.
 
-   :[!DNL :arrow_upper_right:]: Informationen zum Einrichten und Verwalten von Genehmigungen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns) .
+   [!DNL :arrow_upper_right:] Informationen zum Einrichten und Verwalten von Genehmigungen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
 
