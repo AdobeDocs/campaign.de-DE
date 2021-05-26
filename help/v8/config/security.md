@@ -3,7 +3,7 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Best Practices für die Sicherheit von Campaign
 description: Erste Schritte mit Best Practices für die Sicherheit von Campaign
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 31%
@@ -108,7 +108,7 @@ Zugriffsverwaltung ist ein wichtiger Teil der Sicherheitshärtung. Im Folgenden 
 * Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
 * Vermeiden Sie möglichst die Vergabe der Administrator-Funktion, und achten Sie darauf, dass sich nicht zu viele Benutzer in der Administrator-Gruppe befinden.
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator)
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Adobe Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator)
 
 ## Kodierungsrichtlinien
 
@@ -120,4 +120,4 @@ Beachten Sie bei der Entwicklung in Adobe Campaign (Workflows, JavaScript, JSSP 
 
 * **Hinzufügen von Captchas in Webanwendungen**: Fügen Sie Captchas auf Ihren öffentlichen Landingpages und Anmeldeseiten hinzu.
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Adobe Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)
