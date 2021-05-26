@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Campaign-Schemata erweitern
 description: Erfahren Sie, wie Sie Campaign-Schemata erweitern
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '258'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Die wichtigsten Schritte zur Anpassung des Campaign-Datenmodells sind:
 >[!CAUTION]
 >Das integrierte Schema darf nicht direkt geändert werden. Wenn Sie ein integriertes Schema anpassen müssen, müssen Sie es erweitern.
 
-:bulb: Ein besseres Verständnis der in Campaign integrierten Tabellen und ihrer Interaktion finden Sie auf [dieser Seite](datamodel.md).
+[!DNL :bulb:] Informationen zu den integrierten Tabellen in Campaign und deren Interaktion finden Sie auf  [dieser Seite](datamodel.md).
 
 Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
