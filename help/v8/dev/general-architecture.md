@@ -4,9 +4,9 @@ product: Adobe Campaign
 title: Allgemeine Architektur
 description: Allgemeine Architektur von Campaign v8
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,15 @@ Der Zugriff auf die Anwendung erfolgt auf unterschiedliche Weise: Rich-Client-, 
 
 * **Client Console**: Die Hauptbenutzeroberfläche des Programms ist ein natives Programm (unter Windows), das mit dem Adobe Campaign-Anwendungsserver mit Standardinternetprotokollen (SOAP, HTTP usw.) kommuniziert. Die Adobe Campaign Client Console bietet eine hervorragende Benutzerfreundlichkeit für die Produktivität, verwendet sehr wenig Bandbreite (durch Verwendung eines lokalen Caches) und ist für eine einfache Implementierung ausgelegt. Diese Konsole kann über einen Internetbrowser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezifische Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic generiert.
 
-   :bulb: [Erfahren Sie mehr über die Campaign Client Console](../start/connect.md).
+   [!DNL :bulb:] [Erfahren Sie mehr über die Campaign Client Console](../start/connect.md).
 
 * **Webzugriff**: auf Teile der Anwendung kann über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche zugegriffen werden, einschließlich Berichterstellungsmodul, Versandvalidierungsphasen, Instanzüberwachung usw.
 
-   :bulb: [Erfahren Sie mehr über Campaign Web Access](../start/connect.md).
+   [!DNL :bulb:] [Erfahren Sie mehr über den Campaign-Webzugriff](../start/connect.md).
 
 * **Campaign-APIs**: In bestimmten Fällen kann das System mithilfe der Web-Services-APIs, die über das SOAP-Protokoll verfügbar gemacht werden, aus einer externen Anwendung aufgerufen werden.
 
-   :bulb: [Erfahren Sie mehr über Campaign-APIs](../dev/api.md).
+   [!DNL :bulb:] [Erfahren Sie mehr über Campaign-APIs](../dev/api.md).
 
 ## Entwicklungsumgebung {#dev-env}
 
