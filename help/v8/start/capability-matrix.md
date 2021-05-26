@@ -7,9 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 93004d69f33fce39f8f2abb18eec2562177a7adf
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '623'
 ht-degree: 4%
 
 ---
@@ -69,9 +69,9 @@ Beachten Sie, dass diese ID zeichenfolgenbasiert und nicht sequenziell ist.
 
 Campaign-Benutzer müssen keine Datenbankexperten sein: Es ist nicht mehr erforderlich, komplexe Datenbankwartungsvorgänge oder komplexe Tabellenindizierungen durchzuführen.
 
-## Temporäre nicht verfügbare Funktionen{#gs-unavailable-features}
+## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
-Beachten Sie, dass einige Funktionen in dieser ersten Version noch nicht verfügbar sind, z. B.:
+Beachten Sie, dass einige Funktionen in dieser ersten Version nicht verfügbar sind, z. B.:
 
 * Verwaltung von Marketing-Ressourcen
 * Dezentrales Marketing
@@ -79,6 +79,14 @@ Beachten Sie, dass einige Funktionen in dieser ersten Version noch nicht verfüg
 * Kampagnenoptimierung (Campaign Optimization)
 * Reaktionsverwaltung
 * Hybride/On-Premise-Bereitstellungsmodelle
+
+>[!CAUTION]
+>
+>Derzeit ist Campaign v8 **nur** als verwalteter Cloud Service verfügbar und kann nicht in On-Premise- oder Hybridumgebungen bereitgestellt werden.
+>
+>Die Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht verfügbar.
+>
+>Wenden Sie sich an Ihr Account-Team, wenn Sie sich bezüglich Ihres Bereitstellungsmodells nicht sicher sind oder Fragen haben.
 
 ## Entfernte Funktionen{#gs-removed}
 
