@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Best Practices für Datenmodelle
 description: Best Practices für die Erweiterung von Campaign-Datenmodellen
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2686'
 ht-degree: 35%
 
 ---
@@ -18,9 +18,9 @@ Das Adobe Campaign-System ist sehr flexibel und kann über die ursprüngliche Im
 
 Ein besseres Verständnis der nativen Campaign-Tabellen und ihrer Beziehung untereinander finden Sie in [diesem Abschnitt](datamodel.md) .
 
-:bulb: Lesen Sie [diesen Abschnitt](schemas.md) , um mit Campaign-Schemata zu beginnen.
+[!DNL :bulb:] Lesen Sie  [diesen ](schemas.md) Abschnitt, um mit Campaign-Schemata zu beginnen.
 
-:bulb: Erfahren Sie, wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank in [dieser Seite](extend-schema.md) zu erweitern.
+[!DNL :bulb:] Erfahren Sie auf  [dieser Seite](extend-schema.md), wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
 
 ## Architektur von Datenmodellen {#data-model-architecture}
 
