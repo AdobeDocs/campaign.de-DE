@@ -6,10 +6,10 @@ description: E-Mail-Kanal-Einstellungen für Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 47%
+source-wordcount: '235'
+ht-degree: 48%
 
 ---
 
@@ -32,7 +32,7 @@ Bitte beachten Sie Folgendes:
 
 * Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
 
-:Sprache_Ballon: Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](../start/campaign-faq.md#support), um E-Mail-BCC in Campaign zu aktivieren. Die von Ihnen ausgewählte BCC-E-Mail-Adresse muss dem Adobe-Team zur Verfügung gestellt werden, das sie für Sie konfigurieren wird.
+[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um E-Mail-BCC in Campaign zu aktivieren. Die von Ihnen ausgewählte BCC-E-Mail-Adresse muss dem Adobe-Team zur Verfügung gestellt werden, das sie für Sie konfigurieren wird.
 
 Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die Option **E-Mail-BCC** aktiviert ist.
 
