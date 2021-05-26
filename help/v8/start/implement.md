@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 0dae3431ac1ddc840244d7df4929b0c949f8011f
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 4%
@@ -37,11 +37,11 @@ Dieser Abschnitt enthält wichtige Informationen zum Datenschutz und zur Sicherh
 
 Adobe Campaign verfügt über Prozesse und Einstellungen, mit denen Sie Campaign unter Einhaltung der geltenden Datenschutzgesetze und der Voreinstellungen Ihres Empfängers verwenden können. Sie können Folgendes verwalten:
 
-* **Datenerfassung**: Mit Adobe Campaign können Sie Daten, einschließlich persönlicher und sensibler Daten, erfassen. Daher ist es wichtig, dass Sie die Zustimmung Ihrer Empfänger erhalten und verwalten. Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition)
+* **Datenerfassung**: Mit Adobe Campaign können Sie Daten, einschließlich persönlicher und sensibler Daten, erfassen. Daher ist es wichtig, dass Sie die Zustimmung Ihrer Empfänger erhalten und verwalten. Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition)
 
-* **Benutzerzustimmung und Datenspeicherung**: Erfahren Sie, wie Sie die Benutzerzustimmung einholen, Anmeldemechanismen für die Anmeldung mit zweifacher Bestätigung einrichten, Opt-out erleichtern und die Datenbeibehaltung in der Datenschutzdokumentation von  [Campaign Classic konfigurieren.](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent)
+* **Benutzerzustimmung und Datenspeicherung**: Erfahren Sie, wie Sie die Benutzerzustimmung einholen, Anmeldemechanismen für die Anmeldung mit zweifacher Bestätigung einrichten, Opt-out erleichtern und die Datenbeibehaltung in der Datenschutzdokumentation von  [Campaign Classic konfigurieren.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent)
 
-* **Datenschutzbestimmungen**: Weitere Informationen zur Datenschutz-Grundverordnung (DSGVO) der Europäischen Union, zum California Consumer Privacy Act (CCPA) und anderen internationalen Datenschutzanforderungen sowie dazu, wie sich diese Vorschriften auf Ihr Unternehmen und Adobe Campaign auswirken, finden Sie in der  [Campaign Classic-](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html) Dokumentation.
+* **Datenschutzbestimmungen**: Weitere Informationen zur Datenschutz-Grundverordnung (DSGVO) der Europäischen Union, zum California Consumer Privacy Act (CCPA) und anderen internationalen Datenschutzanforderungen sowie dazu, wie sich diese Vorschriften auf Ihr Unternehmen und Adobe Campaign auswirken, finden Sie in der  [Campaign Classic-](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html) Dokumentation.
 
 ### Sicherheit
 
