@@ -7,9 +7,9 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '772'
 ht-degree: 12%
 
 ---
@@ -104,13 +104,13 @@ Campaign-Benutzer können über Adobe Identity Management System (IMS) über ihr
 * Strengere Richtlinien zur Kennwortverwaltung.
 * Verwendung von Konten des Typs Federated ID (externer Identity Provider).
 
-:Sprache_Ballon: Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](campaign-faq.md#support), um die Adobe IMS in Campaign zu implementieren.
+[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](campaign-faq.md#support) Adobe, um Adobe IMS mit Campaign zu implementieren.
 
 ## Verbindung zu Campaign mit Ihrer LDAP-Anmeldung herstellen
 
 Adobe Campaign kann so konfiguriert werden, dass der Benutzer über seine LDAP-Authentifizierung auf die Plattform zugreift.
 
-:Sprache_Ballon: Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](campaign-faq.md#support), um die LDAP-Integration mit Campaign zu konfigurieren.
+[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](campaign-faq.md#support) Adobe, um die LDAP-Integration mit Campaign zu konfigurieren.
 
 
 ## Webzugriff{#web-access}
