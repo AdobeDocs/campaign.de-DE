@@ -6,10 +6,10 @@ description: Anwendungsfälle für Interaktionen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 4%
+source-wordcount: '64'
+ht-degree: 10%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 4%
 
 Nutzen Sie die Interaktionsfunktionen von Campaign durch diese schrittweisen Anwendungsfälle, die in der Dokumentation zu Campaign Classic v7 verfügbar sind.
 
-:arrow_upper_right: [Erstellen und Anwenden einer Unterbreitungsregel](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html)
+:[!DNL :arrow_upper_right:]: [Erstellen und Anwenden einer Unterbreitungsregel](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html)
 
-:arrow_upper_right: [E-Mail-Angebotsversand senden](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
+:[!DNL :arrow_upper_right:]: [E-Mail-Angebotsversand senden](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
 
-:arrow_upper_right: [Durchführen einer Angebotssimulation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
+:[!DNL :arrow_upper_right:]: [Angebote simulieren](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
