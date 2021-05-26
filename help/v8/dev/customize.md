@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 11%
@@ -49,9 +49,9 @@ Um einen völlig neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht nativ
 
 **Verwandte Themen**
 
-:[!DNL :arrow_upper_right:]: Beispiel für die Schemabearbeitung in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic)
+[!DNL :arrow_upper_right:] Beispiel für die Schemabearbeitung in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic)
 
-:[!DNL :arrow_upper_right:]: Anwendungsbeispiel: ein Feld mit einer vorhandenen Referenztabelle in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link) verknüpfen
+[!DNL :arrow_upper_right:] Anwendungsbeispiel: ein Feld mit einer vorhandenen Referenztabelle in der  [Campaign Classic v7-Dokumentation verknüpfen](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link)
 
 
 ## Ändern der Eingabeformulare
@@ -66,7 +66,7 @@ In der Benutzeroberfläche von Adobe Campaign werden zahlreiche Webanwendungen b
 
 Die nativen Webanwendungen sind im Knoten Administration > Konfiguration > Webanwendungen gespeichert.
 
-:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie eine Übersichtsseite in Campaign in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application) erstellen.
+[!DNL :arrow_upper_right:] Erfahren Sie, wie Sie in der Dokumentation zu  [Campaign Classic v7 eine Übersichtsseite in Campaign erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application)
 
 
 ## Listen anpassen und Filter erstellen {#gs-lists-and-filters}
@@ -75,16 +75,16 @@ Die nativen Webanwendungen sind im Knoten Administration > Konfiguration > Weban
 
 Campaign-Listen enthalten vordefinierte Filter, die die Navigation und die Datenvisualisierung erleichtern.
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen zu Filteroptionen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering) .
+[!DNL :arrow_upper_right:] Weitere Informationen zu Filteroptionen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering)
 
 
 ### Zugriff auf Daten aus dem Explorer
 
 Wenn Sie in der Adobe Campaign Explorer-Struktur navigieren, werden die in der Datenbank enthaltenen Daten in Listen angezeigt. Sie können diese Listen filtern, Suchvorgänge durchführen und Informationen hinzufügen sowie Daten filtern und sortieren.
 
-:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie Listen konfigurieren und eine Listenkonfiguration in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started) speichern.
+[!DNL :arrow_upper_right:] Erfahren Sie, wie Sie Listen konfigurieren und eine Listenkonfiguration in der  [Campaign Classic v7-Dokumentation speichern.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started)
 
 
 Sie können Filter auf diese Listen anwenden, um nur die vom Benutzer benötigten Daten anzuzeigen. Anschließend können die gefilterten Daten bearbeitet werden. Mit der Filterkonfiguration können Sie Daten aus einer Liste dynamisch auswählen. Wenn die Daten geändert werden, werden die gefilterten Daten aktualisiert.
 
-:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie Daten in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters) filtern.
+[!DNL :arrow_upper_right:] Erfahren Sie, wie Sie Daten in der Dokumentation zu  [Campaign Classic v7 filtern.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters)
