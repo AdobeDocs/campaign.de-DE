@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 4%
@@ -53,7 +53,7 @@ Erfahren Sie mehr über Sicherheitsrichtlinien und -prinzipien mit Adobe Campaig
 
 Sie können Benutzer manuell zu Campaign hinzufügen und sie Gruppen zuordnen, die an Ihrer Rollenhierarchie ausgerichtet sind. Benutzer können sich dann anmelden und auf die für sie geeigneten Daten und Berechtigungen zugreifen.
 
-:[!DNL :arrow_upper_right:]: In [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started) erfahren Sie, wie Sie Benutzer zu Adobe Campaign hinzufügen.
+[!DNL :arrow_upper_right:] In  [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started) erfahren Sie, wie Sie Benutzer zu Adobe Campaign hinzufügen.
 
 ### Installieren der Campaign Client Console
 
