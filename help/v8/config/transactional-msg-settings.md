@@ -6,9 +6,9 @@ description: Einstellungen für Transaktionsnachrichten in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '331'
 ht-degree: 7%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 7%
 
 :Sprache_Ballon: Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
-:bulb: Die Funktionen für Transaktionsnachrichten werden in [diesem Abschnitt](../send/transactional.md) beschrieben.
+[!DNL :bulb:] Die Funktionen für Transaktionsnachrichten werden in  [diesem Abschnitt](../send/transactional.md) beschrieben.
 
-:bulb: Verstehen Sie die Architektur von Transaktionsnachrichten in [dieser Seite](../dev/architecture.md).
+[!DNL :bulb:] Die Architektur von Transaktionsnachrichten wird auf  [dieser Seite](../dev/architecture.md) beschrieben.
 
 ## Berechtigungen definieren
 
@@ -29,13 +29,13 @@ Um neue Benutzer für in der Adobe Cloud gehostete Message-Center-Ausführungsin
 
 Alle Schemaerweiterungen, die für die von **Message Center technischen Workflows** verwendeten Schemas in Kontroll- oder Ausführungsinstanzen vorgenommen werden, müssen in den anderen vom Adobe Campaign-Transaktionsnachrichtenmodul verwendeten Instanzen dupliziert werden.
 
-:arrow_upper_right: Weitere Informationen zu technischen Workflows für Message Center finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows) .
+:[!DNL :arrow_upper_right:]: Weitere Informationen zu technischen Workflows für Message Center finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows) .
 
 ## Transaktions-Push-Benachrichtigungen senden
 
 In Kombination mit dem Mobile-App-Kanal-Modul ermöglichen Transaktionsnachrichten die Übertragung von Transaktionsnachrichten über Benachrichtigungen auf Mobilgeräte.
 
-:arrow_upper_right: Der Mobile-App-Kanal wird in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages) beschrieben.
+:[!DNL :arrow_upper_right:]: Der Mobile-App-Kanal wird in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages) beschrieben.
 
 Um Transaktions-Push-Benachrichtigungen zu senden, müssen Sie die folgenden Konfigurationen durchführen:
 
