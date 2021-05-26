@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 0dae3431ac1ddc840244d7df4929b0c949f8011f
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 4%
@@ -79,17 +79,17 @@ Bevor Sie Nachrichten senden und Marketingkampagnen erstellen, müssen Sie Folge
 
    Kampagnen, Sendungen, Aufträge oder Workflows basieren alle auf einer Vorlage, die wichtige Einstellungen und Funktionen speichert. Für jede Komponente, für die keine spezifische Konfiguration definiert wurde, wird eine integrierte Vorlage bereitgestellt. Sie müssen Vorlagen konfigurieren und an Ihre Anforderungen anpassen und sie Endbenutzern zur Verfügung stellen.
 
-   :[!DNL :arrow_upper_right:]: [Weitere Informationen zu E-Mail-Vorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+   [!DNL :arrow_upper_right:] [Weitere Informationen zu E-Mail-Vorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
 
-   :[!DNL :arrow_upper_right:]: Auf dieser Seite ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns) erfahren Sie, wie Sie mit Kampagnenvorlagen arbeiten.[
+   [!DNL :arrow_upper_right:] Auf  [dieser Seite erfahren Sie, wie Sie mit Kampagnenvorlagen arbeiten.](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
 
-   :[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie eine Workflow-Vorlage in [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates) konfigurieren.
+   [!DNL :arrow_upper_right:] Auf  [dieser Seite erfahren Sie, wie Sie eine Workflow-Vorlage konfigurieren.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)
 
 1. Typologieregeln konfigurieren
 
    Nutzen Sie die Typologieregeln von Campaign, um den Versand zu filtern, zu kontrollieren und zu überwachen. Beispielsweise steuern Ermüdungsregeln die Häufigkeit und Menge der Nachrichten, um eine Überforderung von Empfängern zu vermeiden. Nach der Implementierung werden die Typologieregeln in Sendungen referenziert.
 
-   :[!DNL :arrow_upper_right:]: [Erfahren Sie mehr über Typologien und Ermüdungsverwaltung](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] [Erfahren Sie mehr über Typologien und Ermüdungsverwaltung](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)
 
 1. Eingehendes Datenmodell von Campaign
 
