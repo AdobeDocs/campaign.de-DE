@@ -6,7 +6,7 @@ description: Erste Schritte mit E-Mails in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 3%
@@ -17,13 +17,13 @@ ht-degree: 3%
 
 Mit E-Mail-Sendungen können Sie personalisierte E-Mails an die Zielpopulation senden.
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html).
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html).
 
 ## Erstellen des ersten E-Mail-Versands
 
 Erstellen Sie personalisierte und kontextrelevante E-Mails, die dem Rest des Kundenerlebnisses entsprechen.
 
-:[!DNL :arrow_upper_right:]: [Erfahren Sie, wie Sie einen E-Mail-Versand erstellen, in der Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case--creating-an-email-delivery.html)
+[!DNL :arrow_upper_right:] [Informationen zum Erstellen eines E-Mail-Versands finden Sie in der Dokumentation zu Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case--creating-an-email-delivery.html)
 
 Sie können direkt in Campaign erstellen oder Ihre Audience sowie Ihren E-Mail-Inhalt importieren. Verwenden Sie die folgenden Links, um zu erfahren, wie:
 
@@ -43,7 +43,7 @@ Sie können direkt in Campaign erstellen oder Ihre Audience sowie Ihren E-Mail-I
 
 Campaign bietet mehrere Möglichkeiten, E-Mails zu testen und zu validieren, bevor sie an Ihre Zielgruppen gesendet werden.
 
-:[!DNL :arrow_upper_right:]: [Best Practices anwenden, die in der Campaign Classic v7-Dokumentation aufgeführt sind](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html)
+[!DNL :arrow_upper_right:] [Best Practices anwenden, die in der Campaign Classic v7-Dokumentation aufgeführt sind](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html)
 
 Sie haben folgende Möglichkeiten:
 
@@ -53,11 +53,11 @@ Sie haben folgende Möglichkeiten:
 * Kontrollgruppen verwenden
 * Prüfen des E-Mail-Renderings
 
-:[!DNL :arrow_upper_right:]: [Weitere Informationen finden Sie in der Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+[!DNL :arrow_upper_right:] [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
 
 ## E-Mails überwachen
 
 Überprüfen Sie nach dem Versand den Status Ihres Versands im Versand-Dashboard und greifen Sie auf Versandlogs und Berichte zu, um zu überprüfen, ob die Nachrichten korrekt gesendet wurden.
 
-:[!DNL :arrow_upper_right:]: [Weitere Informationen finden Sie in der Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)
+[!DNL :arrow_upper_right:] [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)
 
