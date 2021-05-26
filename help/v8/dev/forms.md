@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Kampagneneingabeformulare
 description: Erfahren Sie, wie Sie Eingabeformulare anpassen
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2577'
 ht-degree: 3%
 
 ---
@@ -85,7 +85,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 Standardmäßig wird jedes Feld in einer einzigen Zeile angezeigt und nimmt je nach Datentyp den gesamten verfügbaren Platz ein.
 
-:arrow_upper_right: Alle Formularattribute sind in der [Campaign Classic v7-Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html) aufgeführt.
+:[!DNL :arrow_upper_right:]: Alle Formularattribute sind in der [Campaign Classic v7-Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html) aufgeführt.
 
 ## Layout {#formatting}
 
