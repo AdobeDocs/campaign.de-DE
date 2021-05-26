@@ -7,10 +7,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 556cd7727c7c2bf0158d59d71ae0131b4c1013ee
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 19%
+source-wordcount: '364'
+ht-degree: 20%
 
 ---
 
@@ -40,7 +40,7 @@ Der Aktionsradius der verschiedenen Tools gestaltet sich wie folgt:
 
 Weitere Informationen zu Adobe Campaign und Adobe Analytics finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-data-connector.html) .
 
-:Sprache_Ballon:  Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](../start/campaign-faq.md#support), um Adobe Analytics Data Connector in Campaign zu integrieren.
+[!DNL :speech_balloon:]  Wenden Sie sich als Managed Cloud Services-Benutzer  [an ](../start/campaign-faq.md#support) Adobe, um den Adobe Analytics Data Connector in Campaign zu integrieren.
 
 
 ## Experience Cloud Triggers
@@ -49,4 +49,4 @@ Sie können Experience Cloud-Trigger verwenden, um mithilfe der Pipeline Daten z
 
 Weitere Informationen zu Adobe Campaign- und Experience Cloud-Triggern finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en).
 
-:Sprache_Ballon:  Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](../start/campaign-faq.md#support), um Experience Cloud-Trigger in Campaign zu implementieren.
+[!DNL :speech_balloon:]  Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um Experience Cloud-Trigger in Campaign zu implementieren.
