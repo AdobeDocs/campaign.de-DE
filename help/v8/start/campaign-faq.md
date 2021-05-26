@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 45%
@@ -40,9 +40,9 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Die Zustellbarkeit von E-Mails, eine wichtige Komponente für den Erfolg des Marketingprogramms jedes Absenders, ist durch ständig wechselnde Kriterien und Regeln gekennzeichnet. Die effektive Navigation in dieser digitalen Welt erfordert eine regelmäßige Abstimmung Ihrer E-Mail-Strategie unter Berücksichtigung der wichtigsten Zustellbarkeitstrends, um Ihre Zielgruppen optimal zu erreichen.
 
-   :[!DNL :arrow_upper_right:]: In diesem Handbuch erfahren Sie mehr zu [Best Practices für die Bereitstellung](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
+   [!DNL :arrow_upper_right:] In diesem Handbuch erfahren Sie  [Best Practices zur Bereitstellung](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
-   :[!DNL :arrow_upper_right:]: In diesem Handbuch ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html) erfahren Sie, wie Sie die Zustellbarkeit in Campaign [implementieren.
+   [!DNL :arrow_upper_right:] In diesem Handbuch erfahren Sie, wie Sie die Zustellbarkeit  [in Campaign implementieren.](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html)
 
 1. **Wie weiß ich, dass mein Versand fehlerfrei durchgeführt wird?**
 
@@ -52,7 +52,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
 1. **Kann ich die Ausführung von Workflows überwachen?**
 
-   :[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie die Ausführung von Campaign-Workflows überwachen [in der Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html).
+   [!DNL :arrow_upper_right:] Informationen zur Überwachung der Ausführung von Campaign-Workflows finden Sie  [in der Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html).
 
 1. **Mit welchen Systemen und Komponenten ist Campaign v8 kompatibel?**
 
