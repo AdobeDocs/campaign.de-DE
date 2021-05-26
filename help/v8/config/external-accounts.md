@@ -6,7 +6,7 @@ description: Externe Kampagnenkonten
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 25%
@@ -146,7 +146,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
 Mit diesen externen Konten können Daten mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** in Adobe Campaign importiert oder exportiert werden.
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen zur Dateiübertragung in Workflows finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html)
+[!DNL :arrow_upper_right:] Weitere Informationen zur Dateiübertragung in Workflows finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html)
 
 * **FTP und SFTP**
 
