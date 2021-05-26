@@ -7,7 +7,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 85e439e9500d74206d557acbe3c3a472baa70441
+source-git-commit: 345d324363782df6f7753d5099c4382628f5a048
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 31%
@@ -37,7 +37,7 @@ Um Campaign mit Profildaten zu füllen, können Sie:
 ![](assets/create-profile.png)
 
 
-[!DNL :arrow_upper_right:]] Erfahren Sie, wie Sie Profile in der  [Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html) zu Adobe Campaign Classic v7 verwalten.
+[!DNL :arrow_upper_right:] Informationen zum Verwalten von Profilen finden Sie in der  [Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html) zu Adobe Campaign Classic v7.
 
 
 ## Datenschutz und Einverständniserklärung
