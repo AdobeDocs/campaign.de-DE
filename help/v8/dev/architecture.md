@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 0dae3431ac1ddc840244d7df4929b0c949f8011f
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 3%
@@ -82,4 +82,4 @@ Nachdem die Ausführungsinstanz das sessionToken als Antwort auf den obigen Aufr
 * Mehrere Ausführungsinstanzen
 In einer Ausführungsarchitektur mit mehreren Zellen, bei der mehrere Ausführungsinstanzen hinter einem Lastenausgleich stehen, durchläuft die von der externen Anwendung aufgerufene Anmeldemethode den Lastenausgleich: Aus diesem Grund kann keine Token-basierte Authentifizierung verwendet werden. Eine Benutzer-/Kennwortbasierte Authentifizierung ist erforderlich.
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen zu Transaktionsnachrichten-Ereignissen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel) .
+:[!DNL :arrow_upper_right:]: Weitere Informationen zu Transaktionsnachrichten-Ereignissen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel) .
