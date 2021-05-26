@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Campaign-Datenbank-Mapping
 description: Campaign-Datenbank-Mapping
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ Für Verknüpfungsrelationen mit Federated Database Access:
 * ![](assets/do-not-localize/join_fda_11.png) : Kardinalität 1-1
 * ![](assets/do-not-localize/join_fda_1m.png) : Kardinalität 1-N
 
-:bulb: Weitere Informationen zu FDA-Tabellen finden Sie unter [Federated Data Access](../connect/fda.md).
+[!DNL :bulb:] Weitere Informationen zu FDA-Tabellen finden Sie unter  [Federated Data Access](../connect/fda.md).
 
 Eine Relation muss im Schema deklariert werden, das den Fremdschlüssel der über das Hauptelement verknüpften Tabelle enthält:
 
@@ -388,7 +388,7 @@ Link zu einem Ordner ( Schema &quot;xtk:folder&quot;):
 
 Der Standardwert gibt die Kennung der ersten zulässigen Parametertyp-Datei zurück, die in der Funktion &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;eingegeben wurde.
 
-### Beispiel 5 {#example-5}
+### Beispiel 4 {#example-5}
 
 In diesem Beispiel möchten wir einen Schlüssel für einen Link (&quot;company&quot; zum Schema &quot;cus:company&quot;) mit dem Attribut **xlink** und einem Feld der Tabelle (&quot;email&quot;) erstellen:
 
