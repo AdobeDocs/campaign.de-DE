@@ -7,10 +7,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: c659c31c15916077e71c63f3b3f4ca135d4d7f7d
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 29%
+source-wordcount: '746'
+ht-degree: 31%
 
 ---
 
@@ -37,34 +37,34 @@ Um Campaign mit Profildaten zu füllen, können Sie:
 ![](assets/create-profile.png)
 
 
-[!DNL :arrow_upper_right:] Informationen zum Verwalten von Profilen finden Sie in der  [Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html) zu Adobe Campaign Classic v7.
+[!DNL :[!DNL :arrow_upper_right:]:] Erfahren Sie, wie Sie Profile in der [Adobe Campaign Classic v7-Dokumentation verwalten](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html).
 
 
 ## Datenschutz und Einverständniserklärung
 
 Adobe Campaign ist ein leistungsstarkes Tool zur Erfassung und Verarbeitung großer Datenmengen, einschließlich personenbezogener Daten und sensibler Daten. Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vertraulicher Daten, erfassen. Es ist daher unerlässlich, dass Sie das Einverständnis Ihrer Empfänger erhalten und überwachen.
 
-:arrow_upper_right: Erfahren Sie, wie Sie Datenschutz und Einverständniserklärung in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html) verwalten.
+:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie Datenschutz und Einverständniserklärung in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html) verwalten.
 
 ## Listen erstellen
 
 Eine Liste ist eine statische Gruppe von Profilen, die als Zielgruppe für Sendungen verwendet oder durch Importe sowie Workflows aktualisiert werden kann. So kann beispielsweise eine mithilfe einer Abfrage aus der Datenbank gefilterte Population in einer Liste gespeichert werden.
 
-:arrow_upper_right: Erfahren Sie, wie Sie Listen in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/creating-and-managing-lists.html) erstellen und verwalten.
+:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie Listen in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/creating-and-managing-lists.html) erstellen und verwalten.
 
 ## Datenbank abfragen
 
 Verwenden Sie die Aktivität **Abfrage** in einem Workflow, um Ihre Datenbank abzufragen, Daten zu segmentieren und komplexe Zielgruppen zu erstellen.
 
-:arrow_upper_right: Weitere Informationen zu Campaign-Abfragen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/targeting-data.html).
+:[!DNL :arrow_upper_right:]: Weitere Informationen zu Campaign-Abfragen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/targeting-data.html).
 
-:arrow_upper_right: Alle Targeting-Aktivitäten sind in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html) aufgeführt.
+:[!DNL :arrow_upper_right:]: Alle Targeting-Aktivitäten werden in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html) aufgeführt.
 
 ## Erstellen einer Audience in einem Workflow
 
 Die Zielgruppenbestimmung kann über eine Kombination von Abfragen in einer grafischen Abfolge in einem Workflow erfolgen. Sie können Zielgruppen erstellen, die entsprechend Ihren Anforderungen angesprochen werden. Um den Workflow-Editor anzuzeigen, klicken Sie auf den Tab **[!UICONTROL Zielbestimmungen und Workflows]** im Kampagnen-Dashboard.
 
-:arrow_upper_right: Erfahren Sie in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow) , wie Sie eine Audience in einem Kampagnen-Workflow erstellen.
+:[!DNL :arrow_upper_right:]: Informationen zum Erstellen einer Zielgruppe in einem Kampagnen-Workflow finden Sie in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow) .
 
 
 ## Aktive Profile{#active-profiles}
@@ -76,13 +76,13 @@ Gemäß Ihrem Vertrag erhalten alle Ihre Campaign-Instanzen eine bestimmte Anzah
 <!--
 You can monitor the number of active profiles used on your instances directly from Campaign Control Panel. 
 
-:arrow_upper_right: For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+:[!DNL :arrow_upper_right:]: For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 -->
 
 **Verwandte Themen**
 
-:arrow_upper_right: [Erstellen und Ausführen eines kampagnenspezifischen Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html)
+:[!DNL :arrow_upper_right:]: [Erstellen und Ausführen eines kampagnenspezifischen Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html)
 
-:arrow_upper_right: [Erfahren Sie, wie Sie die Zielgruppe einer Kampagne auswählen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html)
+:[!DNL :arrow_upper_right:]: [Erfahren Sie, wie Sie die Zielgruppe einer Kampagne auswählen](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html)
 
-:arrow_upper_right: [Erste Schritte mit Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html)
+:[!DNL :arrow_upper_right:]: [Erste Schritte mit Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html)
