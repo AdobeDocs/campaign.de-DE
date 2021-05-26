@@ -7,10 +7,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: c659c31c15916077e71c63f3b3f4ca135d4d7f7d
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 19%
+source-wordcount: '625'
+ht-degree: 21%
 
 ---
 
@@ -41,14 +41,14 @@ Adobe Campaign v8 enthält die folgenden Versandkanäle:
 Nachdem Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, können Sie auswählen, wie Sie sie senden möchten. Campaign bietet eine Reihe von Funktionen für:
 
 * Nachrichten manuell an die Hauptzielgruppe senden
-:arrow_upper_right: [Erfahren Sie, wie Sie Nachrichten senden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
+:[!DNL :arrow_upper_right:]: [Erfahren Sie, wie Sie Nachrichten senden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
 * Nachrichten senden, die mit einer [Marketing-Kampagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html) verknüpft sind
-:arrow_upper_right: [Erfahren Sie, wie Sie Nachrichten im Kontext einer Kampagne senden](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html).
+:[!DNL :arrow_upper_right:]: [Erfahren Sie, wie Sie Nachrichten im Kontext einer Kampagne senden](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html).
 * Nachrichten über einen [Workflow](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html) senden
-:arrow_upper_right: [Erfahren Sie, wie Sie E-Mail-Sendungen automatisieren](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html)
-* [Trigger-](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html) Meldungen aus einem Ereignis :arrow_upper_right:  [Anwendungsfall: Erfahren Sie, wie Sie eine Transaktions-E-Mail mit einem Anhang senden.](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html)
+:[!DNL :arrow_upper_right:]: [Erfahren Sie, wie Sie E-Mail-Sendungen automatisieren](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html)
+* [Trigger-](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html) Nachrichten aus einem Ereignis:[!DNL :arrow_upper_right:]:  [Anwendungsfall: Erfahren Sie, wie Sie eine Transaktions-E-Mail mit einem Anhang senden.](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html)
 * Versandplanung
-:arrow_upper_right: [Anwendungsfall: Erfahren Sie, wie Sie Geburtstags-E-Mails planen und senden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?)
+:[!DNL :arrow_upper_right:]: [Anwendungsfall: Erfahren Sie, wie Sie Geburtstags-E-Mails planen und senden](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?)
 
 
 ## Personalisierung hinzufügen
@@ -58,33 +58,33 @@ Die von Adobe Campaign bereitgestellten Nachrichten können auf unterschiedliche
 Sie haben folgende Möglichkeiten:
 
 * Dynamische Personalisierungsfelder einfügen.
-:arrow_upper_right: Erfahren Sie, wie Sie Personalisierungsfelder in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html) verwenden.
+:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie Personalisierungsfelder in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html) verwenden.
 * Vordefinierte Personalisierungsbausteine einfügen.
-:arrow_upper_right: Erfahren Sie, was ein Gestaltungsbaustein ist und wie er in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html) verwendet wird.
+:[!DNL :arrow_upper_right:]: Erfahren Sie, was ein Gestaltungsbaustein ist und wie er in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html) verwendet wird.
 * Bedingte Inhalte erstellen.
-:arrow_upper_right: Erfahren Sie, wie Sie bedingte Inhalte in die [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html) einfügen.
+:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie bedingte Inhalte in die [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html) einfügen.
 
 ## Transaktionsnachrichten senden
 
 Transaktionsnachrichten (Message Center) sind das Campaign-Modul zur Verwaltung von Trigger-Nachrichten.
 
-:bulb: Weitere Informationen zur Funktion für Transaktionsnachrichten finden Sie in [diesem Abschnitt](../dev/architecture.md#transac-msg-archi)
+[!DNL :bulb:] Weitere Informationen zur Funktion von Transaktionsnachrichten finden Sie in  [diesem Abschnitt](../dev/architecture.md#transac-msg-archi)
 
-:bulb: Die Schritte zum Konfigurieren und Senden von Transaktionsnachrichten werden auf [dieser Seite](../send/transactional.md) beschrieben.
+[!DNL :bulb:] Die Schritte zum Konfigurieren und Senden von Transaktionsnachrichten werden auf  [dieser Seite beschrieben.](../send/transactional.md)
 
-:arrow_upper_right: Entdecken Sie diese Funktion in einem durchgängigen Anwendungsbeispiel in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=en#transactional-messaging)
+:[!DNL :arrow_upper_right:]: Entdecken Sie diese Funktion in einem durchgängigen Anwendungsbeispiel in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=en#transactional-messaging)
 
 ## Versand- und Trackinglogs
 
 Die Überwachung Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen. Sie können den Versand nach einem Versand überwachen und wissen, wie fehlgeschlagene Sendungen und Quarantänen verwaltet werden.
 
-:arrow_upper_right: [Informationen zum Überwachen Ihrer Sendungen finden Sie in diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=en#sending-messages)
+:[!DNL :arrow_upper_right:]: [Informationen zum Überwachen Ihrer Sendungen finden Sie in diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=en#sending-messages)
 
 
 **Verwandte Themen**
 
-:arrow_upper_right:  [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html)
+:[!DNL :arrow_upper_right:]:  [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html)
 
-:arrow_upper_right:  [Testen und Senden einer E-Mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
+:[!DNL :arrow_upper_right:]:  [Testen und Senden einer E-Mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
 
-:arrow_upper_right:  [Testsendungen senden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+:[!DNL :arrow_upper_right:]:  [Führen Sie einen Testversand durch](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
