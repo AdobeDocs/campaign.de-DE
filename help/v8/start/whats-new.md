@@ -7,9 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: a48e69a3f34c48ed4828bf29b8a02a3dc07bfa7e
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '453'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Adobe Campaign v8 bietet wichtige Verbesserungen in den Bereichen Infrastruktur,
 
 Die wichtigsten Funktionen von Creative Designer ermöglichen Folgendes:
 
-* **Geschwindigkeit und Skalierung**. Adobe Campaign v8 nutzt den Cloud Database Manager, was zu Abfragen mit bis zu 200-facher Leistung, einer Multipetabyte-Skalierung, einer erhöhten Anzahl von Nachrichten pro Stunde mit bis zu 20 MB/h oder 1,5 MB/h für Transaktionsnachrichten führt, und verwaltet bis zu 200 M aktive Profile mit der Möglichkeit, 1B zu erreichen.
+* **Geschwindigkeit und Skalierung**. Adobe Campaign v8 nutzt den Cloud Database Manager, was zu Abfragen mit bis zu 200-facher Leistung, einer Multipetabyte-Skalierung, einer erhöhten Anzahl von Nachrichten pro Stunde mit bis zu 20 MB/h oder 1 MB/h für Transaktionsnachrichten führt, und verwaltet bis zu 200 Millionen aktive Profile mit der Möglichkeit, 1B zu erreichen.
 
 * **Verbindungen zur Adobe Experience Platform**. Adobe Campaign v8 unterstützt Data Connectors mit Adobe Experience Platform/RT-CDP, Unified Customer Profile und die native Integration mit Journey Orchestration. Durch diese Investitionen wird das Kundenerlebnis in der Adobe Campaign optimiert und neue Anwendungsfälle freigesetzt, wie z. B. die Möglichkeit, Kampagnen individuelle Echtzeit-Journey hinzuzufügen.
 
@@ -31,6 +31,8 @@ Die wichtigsten Funktionen von Creative Designer ermöglichen Folgendes:
 >Derzeit ist Campaign v8 **nur** als verwalteter Cloud Service verfügbar und kann nicht in On-Premise- oder Hybridumgebungen bereitgestellt werden.
 >
 >Die Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht verfügbar.
+>
+>Wenden Sie sich an Ihr Account-Team, wenn Sie sich bezüglich Ihres Bereitstellungsmodells nicht sicher sind oder Fragen haben.
 
 
 ## Skala
