@@ -7,9 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: c659c31c15916077e71c63f3b3f4ca135d4d7f7d
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Drei in Campaign Cloud Service verfügbare Umgebungstypen:
 
 Sie können Packages von einer Umgebung in eine andere exportieren und importieren.
 
-:arrow_upper_right: Weitere Informationen zu Paketen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html) .
+:[!DNL :arrow_upper_right:]: Weitere Informationen zu Paketen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html) .
 
 ## Mid-Sourcing-Bereitstellung{#mid-sourcing-deployment}
 
@@ -51,7 +51,7 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt nach folgend
 
 Transaktionsnachrichten (Message Center) sind das Campaign-Modul zur Verwaltung von Trigger-Nachrichten.
 
-:bulb: In [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Transaktionsnachrichten senden.
+[!DNL :bulb:] In  [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Transaktionsnachrichten senden.
 
 Als Reaktion auf eine Aktion eines Kunden auf einer Website wird ein Ereignis an Campaign über eine REST-API gesendet. Die Nachrichtenvorlage wird mit den Informationen oder Daten gefüllt, die über den API-Aufruf bereitgestellt werden, und eine Transaktionsnachricht wird in Echtzeit an den Kunden gesendet. Diese Nachrichten können einzeln oder stapelweise per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
@@ -59,7 +59,7 @@ In dieser spezifischen Architektur wird die Ausführungszelle von der Kontrollin
 
 * Die **Kontrollinstanz** (oder Marketinginstanz) wird von Marketing-Experten und IT-Teams zum Erstellen, Konfigurieren und Veröffentlichen von Nachrichtenvorlagen verwendet. Diese Instanz zentralisiert außerdem die Ereignisüberwachung und den Verlauf.
 
-   :bulb: In [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Nachrichtenvorlagen erstellen und veröffentlichen.
+   [!DNL :bulb:] In  [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Nachrichtenvorlagen erstellen und veröffentlichen.
 
 * Die **Ausführungsinstanz** ruft eingehende Ereignisse (z. B. Passwortzurücksetzung oder Bestellungen von einer Website) ab und sendet personalisierte Nachrichten. Es kann mehr als eine Ausführungsinstanz geben, um Nachrichten über den Lastenausgleich zu verarbeiten und die Anzahl der Ereignisse zu skalieren, die für eine maximale Verfügbarkeit ausgeführt werden sollen.
 
@@ -69,7 +69,7 @@ In dieser spezifischen Architektur wird die Ausführungszelle von der Kontrollin
 
 ![](assets/messagecenter_diagram.png)
 
-:arrow_upper_right: Die Message Center-Architektur wird in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging) beschrieben.
+:[!DNL :arrow_upper_right:]: Die Message Center-Architektur wird in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging) beschrieben.
 
 ### Authentifizierung
 
@@ -82,4 +82,4 @@ Nachdem die Ausführungsinstanz das sessionToken als Antwort auf den obigen Aufr
 * Mehrere Ausführungsinstanzen
 In einer Ausführungsarchitektur mit mehreren Zellen, bei der mehrere Ausführungsinstanzen hinter einem Lastenausgleich stehen, durchläuft die von der externen Anwendung aufgerufene Anmeldemethode den Lastenausgleich: Aus diesem Grund kann keine Token-basierte Authentifizierung verwendet werden. Eine Benutzer-/Kennwortbasierte Authentifizierung ist erforderlich.
 
-:arrow_upper_right: Weitere Informationen zu Transaktionsnachrichten-Ereignissen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel) .
+:[!DNL :arrow_upper_right:]: Weitere Informationen zu Transaktionsnachrichten-Ereignissen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel) .
