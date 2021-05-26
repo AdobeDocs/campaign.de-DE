@@ -6,7 +6,7 @@ description: Einstellungen für Transaktionsnachrichten in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 7%
@@ -29,13 +29,13 @@ Um neue Benutzer für in der Adobe Cloud gehostete Message-Center-Ausführungsin
 
 Alle Schemaerweiterungen, die für die von **Message Center technischen Workflows** verwendeten Schemas in Kontroll- oder Ausführungsinstanzen vorgenommen werden, müssen in den anderen vom Adobe Campaign-Transaktionsnachrichtenmodul verwendeten Instanzen dupliziert werden.
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen zu technischen Workflows für Message Center finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows) .
+[!DNL :arrow_upper_right:] Weitere Informationen zu technischen Workflows für Message Center finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows)
 
 ## Transaktions-Push-Benachrichtigungen senden
 
 In Kombination mit dem Mobile-App-Kanal-Modul ermöglichen Transaktionsnachrichten die Übertragung von Transaktionsnachrichten über Benachrichtigungen auf Mobilgeräte.
 
-:[!DNL :arrow_upper_right:]: Der Mobile-App-Kanal wird in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages) beschrieben.
+[!DNL :arrow_upper_right:] Der Mobile-App-Kanal wird im  [Campaign Classic v7-Handbuch](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages) beschrieben.
 
 Um Transaktions-Push-Benachrichtigungen zu senden, müssen Sie die folgenden Konfigurationen durchführen:
 
