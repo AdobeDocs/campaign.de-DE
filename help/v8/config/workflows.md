@@ -7,9 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 3fd91879485a33961769c684acba8ca3c48bbbed
+source-git-commit: 8ede6bc1bc08a27e74dde6a427561c33f154a883
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1187'
 ht-degree: 13%
 
 ---
@@ -59,12 +59,9 @@ Erstellen Sie einen wiederkehrenden Workflow und erstellen Sie bei jeder Workflo
 
 Verwenden Sie Transaktionsnachrichten in Campaign, um Nachrichten zu automatisieren, die von Ereignissen erzeugt werden, die von Informationssystemen ausgelöst werden. Bei diesen Transaktionsnachrichten kann es sich beispielsweise um Rechnungsstellung, Bestellbestätigung, Versandbestätigung, Kennwortänderung, Benachrichtigung über die Nichtverfügbarkeit des Produkts, Kontoauszug oder die Erstellung eines Website-Kontos handeln. Diese Nachrichten können einzeln oder im Batch-Modus per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zu Funktionen für Transaktionsnachrichten finden Sie in der  [Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html?lang=en#transactional-messaging) zu Campaign Classic v7.
-
+[!DNL :bulb:] Weitere Informationen zu den Funktionen von Transaktionsnachrichten finden Sie in  [diesem Abschnitt](../send/transactional.md).
 
 Verbinden Sie Adobe Campaign und Adobe Analytics, um Benutzeraktionen abzurufen und nahezu in Echtzeit personalisierte Nachrichten zu senden.
-
-[!DNL :arrow_upper_right:] Informationen zur Integration von Campaign mit Analytics-Triggern finden Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en#integrating-with-adobe-experience-cloud).
 
 [!DNL :bulb:] In  [diesem Abschnitt erfahren Sie, wie Sie Campaign mit anderen Lösungen integrieren.](../start/connect.md)
 
