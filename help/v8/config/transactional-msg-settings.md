@@ -6,16 +6,16 @@ description: Einstellungen für Transaktionsnachrichten in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '329'
 ht-degree: 7%
 
 ---
 
 # Einstellungen für Transaktionsnachrichten
 
-:Sprache_Ballon: Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
+[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
 [!DNL :bulb:] Die Funktionen für Transaktionsnachrichten werden in  [diesem Abschnitt](../send/transactional.md) beschrieben.
 
