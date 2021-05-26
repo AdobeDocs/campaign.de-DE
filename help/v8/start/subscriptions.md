@@ -6,7 +6,7 @@ description: Hier erfahren Sie, wie Sie Abonnements und Abmeldungen in Campaign 
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 Verwenden Sie Adobe Campaign, um Informationsdienste wie Newsletter zu erstellen und zu überwachen und die An- und Abmeldungen dieser Dienste zu verwalten. Mehrere Dienste können parallel definiert werden, z. B.: spezialisierte Newsletter für bestimmte Produktkategorien, Themen oder Bereiche einer Website, Abonnements für verschiedene Arten von Warnhinweisen und Echtzeit-Benachrichtigungen. Weiterführende Informationen finden Sie im Abschnitt Abonnements verwalten.
 
-:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie einen Informationsdienst erstellen, Newsletter senden und Opt-in- und Opt-out-Verfahren in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html) verwalten.
+[!DNL :arrow_upper_right:] Erfahren Sie, wie Sie einen Informationsdienst erstellen, Newsletter senden und Opt-in- und Opt-out-Verfahren in der Dokumentation zu  [Campaign Classic v7 verwalten.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html)
 
 Folgende Optionen stehen zur Anmeldung (Opt-in) für ein Profil für einen Dienst zur Verfügung:
 
@@ -57,7 +57,7 @@ Folgende Optionen stehen zur Abmeldung (Opt-out) eines Profils von einem Dienst 
 * Legen Sie eine maximale Dauer für den Informationsdienst fest: -Empfänger werden automatisch abgemeldet, wenn die Gültigkeitsdauer abgelaufen ist. Dieser Zeitraum wird im Tab Bearbeiten der Diensteigenschaften angegeben. Sie wird in Tagen ausgedrückt.
 * Einrichten eines Abmelde-Workflows für eine Population
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=en#unsubscribing-a-recipient-from-a-service)
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=en#unsubscribing-a-recipient-from-a-service)
 
 
 >[!CAUTION]
@@ -66,4 +66,4 @@ Folgende Optionen stehen zur Abmeldung (Opt-out) eines Profils von einem Dienst 
 
 Sie können Ihren Versandempfängern auch ermöglichen, Nachrichten an einen Freund weiterzuleiten. Fügen Sie dazu die entsprechenden Links in Ihren Versand ein. Anschließend können Sie diesen Freigabeprozess sowie die Anzahl der Besuche auf den betroffenen Seiten verfolgen.
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen zu dieser Funktion finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend).
+[!DNL :arrow_upper_right:] Weitere Informationen zu dieser Funktion finden Sie in der  [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend).
