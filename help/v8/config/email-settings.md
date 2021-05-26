@@ -6,10 +6,10 @@ description: E-Mail-Kanal-Einstellungen für Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 3fd91879485a33961769c684acba8ca3c48bbbed
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 48%
+source-wordcount: '278'
+ht-degree: 40%
 
 ---
 
@@ -41,6 +41,15 @@ Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in 
 
 **Verwandte** Themen in der Campaign Classic v7-Dokumentation:
 
-* [Verwenden von E-Mail-Versandvorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
-* [E-Mail-Parameter kennenlernen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html)
-* [Ursachen für das Fehlschlagen von Sendungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html)
+
+[!DNL :arrow_upper_right:] [Mirrorseite erzeugen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#generating-mirror-page)
+
+[!DNL :arrow_upper_right:] [E-Mail-Format auswählen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats)
+
+[!DNL :arrow_upper_right:] [Zeichenkodierung auswählen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#character-encoding)
+
+[!DNL :arrow_upper_right:] [Bounce-E-Mail-Adresse festlegen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails)
+
+[!DNL :arrow_upper_right:] [Verwenden von E-Mail-Versandvorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+
+[!DNL :arrow_upper_right:] [Ursachen für das Fehlschlagen von Sendungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html)
