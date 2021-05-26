@@ -6,7 +6,7 @@ description: Erstellen von Angebotsmanagement-Operatoren
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 40%
@@ -25,7 +25,7 @@ Zwei Operatortypen können Campaign Interaction verwenden: **Angebotsverantwortl
 
 1. Erstellen Sie den neuen Benutzer.
 
-   :[!DNL :arrow_upper_right:]: Die Schritte zum Erstellen eines Operators in Campaign werden in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html) beschrieben.
+   [!DNL :arrow_upper_right:] Die Schritte zum Erstellen eines Benutzers in Campaign werden im  [Campaign Classic v7-Handbuch beschrieben.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Angebotsverantwortliche Benutzer]** aus.
 
@@ -49,7 +49,7 @@ Beachten Sie, dass bei der Verwendung von Angeboten in einem Workflow der Operat
 
 1. Erstellen Sie den neuen Benutzer.
 
-   :[!DNL :arrow_upper_right:]: Die Schritte zum Erstellen eines Operators in Campaign werden in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html) beschrieben.
+   [!DNL :arrow_upper_right:] Die Schritte zum Erstellen eines Benutzers in Campaign werden im  [Campaign Classic v7-Handbuch beschrieben.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
 
