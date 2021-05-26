@@ -7,9 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '382'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ Adobe Campaign verfügt über eine Reihe integrierter technischer Workflows. Tec
 
 Diese Workflows führen Wartungsarbeiten an der Datenbank durch, nutzen die Tracking-Informationen in den Versandlogs, erstellen wiederkehrende Kampagnen und vieles mehr.
 
-:arrow_upper_right: Die vollständige Liste der technischen Workflows finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=de) .
+:[!DNL :arrow_upper_right:]: Die vollständige Liste der technischen Workflows finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=de) .
 
 
 Zusätzlich zu diesen technischen Workflows setzt Campaign v8 bei der Verwaltung von [Datenreplikation](#data-replication) auf spezifische technische Workflows.
@@ -69,6 +69,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Verwandte Themen**
 
-:arrow_upper_right: In der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows) erfahren Sie, wie Sie mit Workflows beginnen.
+:[!DNL :arrow_upper_right:]: In der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows) erfahren Sie, wie Sie mit Workflows beginnen.
 
-:bulb: Auf Datenaufbewahrungszeiträume in [diesem Abschnitt](../dev/datamodel-best-practices.md#data-retention) zugreifen
+[!DNL :bulb:] Auf Datenaufbewahrungszeiträume in  [diesem Abschnitt zugreifen](../dev/datamodel-best-practices.md#data-retention)
