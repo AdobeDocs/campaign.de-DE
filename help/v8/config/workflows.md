@@ -7,9 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 15b11b144d0086adf8aade0e2a3c9b388d6163dd
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1212'
 ht-degree: 13%
 
 ---
@@ -50,21 +50,21 @@ Weitere Informationen zu Workflows finden Sie in diesen Abschnitten:
 
 Erstellen Sie einen wiederkehrenden Workflow und erstellen Sie bei jeder Workflow-Ausführung eine neue Versandinstanz. Wenn Ihr Workflow beispielsweise einmal pro Woche ausgeführt werden soll, ergibt das 52 Sendungen pro Jahr. Dies bedeutet auch, dass die Protokolle durch jede Versandinstanz getrennt werden.
 
-:arrow_upper_right: Erfahren Sie, wie Sie eine wiederkehrende Kampagne in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns) erstellen.
+:[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie eine wiederkehrende Kampagne in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns) erstellen.
 
 
 ## Trigger-Ereignisse nutzen
 
 Verwenden Sie Transaktionsnachrichten in Campaign, um Nachrichten zu automatisieren, die von Ereignissen erzeugt werden, die von Informationssystemen ausgelöst werden. Bei diesen Transaktionsnachrichten kann es sich beispielsweise um Rechnungsstellung, Bestellbestätigung, Versandbestätigung, Kennwortänderung, Benachrichtigung über die Nichtverfügbarkeit des Produkts, Kontoauszug oder die Erstellung eines Website-Kontos handeln. Diese Nachrichten können einzeln oder im Batch-Modus per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
-:arrow_upper_right: Weitere Informationen zu Funktionen für Transaktionsnachrichten finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html?lang=en#transactional-messaging).
+:[!DNL :arrow_upper_right:]: Weitere Informationen zu Funktionen für Transaktionsnachrichten finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html?lang=en#transactional-messaging).
 
 
 Verbinden Sie Adobe Campaign und Adobe Analytics, um Benutzeraktionen abzurufen und nahezu in Echtzeit personalisierte Nachrichten zu senden.
 
-:arrow_upper_right: Informationen zur Integration von Campaign mit Analytics-Triggern finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en#integrating-with-adobe-experience-cloud).
+:[!DNL :arrow_upper_right:]: Informationen zur Integration von Campaign mit Analytics-Triggern finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en#integrating-with-adobe-experience-cloud).
 
-:bulb: In [diesem Abschnitt](../start/connect.md) erfahren Sie, wie Sie Campaign mit anderen Lösungen integrieren.
+[!DNL :bulb:] In  [diesem Abschnitt erfahren Sie, wie Sie Campaign mit anderen Lösungen integrieren.](../start/connect.md)
 
 
 ## Anwendungsfälle von Ende bis Ende von Workflows{#end-to-end-uc}
