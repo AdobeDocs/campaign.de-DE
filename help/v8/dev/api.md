@@ -7,9 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '327'
 ht-degree: 2%
 
 ---
@@ -50,13 +50,13 @@ Um APIs verwenden und mit [!DNL Adobe Campaign] interagieren zu können, müssen
 
 Bei der Cloud-Datenbank [!DNL Campaign] werden gebündelte Einzelaufrufe aufgrund der Leistung (Latenz und gleichzeitige Nutzung) nicht empfohlen. Batch-Vorgänge werden immer bevorzugt. Um eine optimale Leistung der APIs zu gewährleisten, verarbeitet Campaign API-Aufrufe weiterhin auf lokaler Datenbankebene.
 
-:bulb: [API-Staging-Mechanismus wird auf dieser Seite](staging.md) beschrieben.
+[!DNL :bulb:] [Der API-Staging-Mechanismus wird auf dieser Seite beschrieben.](staging.md)
 
 ## Neue APIs
 
 Für die Verwaltung der Datensynchronisation zwischen der lokalen Datenbank [!DNL Campaign] und der Cloud-Datenbank stehen neue APIs zur Verfügung. Außerdem wurde ein neuer Mechanismus zur Verarbeitung von API-Aufrufen auf lokaler Datenbankebene eingeführt, um Latenzzeiten zu vermeiden und die Gesamtleistung zu erhöhen
 
-:bulb: [Neue APIs werden auf dieser Seite](new-apis.md) beschrieben.
+[!DNL :bulb:] [Neue APIs werden auf dieser Seite beschrieben.](new-apis.md)
 
 **Verwandte Themen**
 
