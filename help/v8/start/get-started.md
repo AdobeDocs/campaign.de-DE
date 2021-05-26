@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 39%
@@ -91,9 +91,9 @@ Der Campaign-Arbeitsbereich ist über [Client Console](../dev/general-architectu
 
 Der Campaign-Arbeitsbereich kann Ihren Bedürfnissen entsprechend angepasst werden.
 
-:[!DNL :arrow_upper_right:]:  Erfahren Sie, wie Sie Campaign Workspace in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html) verwenden.
+[!DNL :arrow_upper_right:]  Erfahren Sie, wie Sie Campaign Workspace in der Dokumentation zu  [Campaign Classic v7 verwenden.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html)
 
-:[!DNL :arrow_upper_right:]:  Erfahren Sie, wie Sie Listen in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html) anpassen können.
+[!DNL :arrow_upper_right:]  Erfahren Sie, wie Sie Listen in der Dokumentation zu  [Campaign Classic v7 anpassen können.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html)
 
 Sie können auch über das Internet auf einige Funktionen zugreifen.
 
