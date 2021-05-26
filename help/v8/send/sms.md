@@ -6,10 +6,10 @@ description: Erste Schritte mit SMS in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 21%
+source-wordcount: '313'
+ht-degree: 22%
 
 ---
 
@@ -41,4 +41,4 @@ Allgemeine Informationen zum Erstellen eines Versands finden Sie in der [Campaig
 > 
 >Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](push.md).
 
-:arrow_upper_right: Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-channel.html)
+:[!DNL :arrow_upper_right:]: Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-channel.html)
