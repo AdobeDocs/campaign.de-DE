@@ -6,7 +6,7 @@ description: Erfahren Sie, wie Sie ein Angebot erstellen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 60%
@@ -183,13 +183,13 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 Sie können das Angebot nun genehmigen und aktivieren, um es in der Umgebung **Live** verfügbar zu machen.
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen hierzu finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
+[!DNL :arrow_upper_right:] Weitere Informationen hierzu finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
 
 ## Angebotsdarstellung verwalten{#offer-presentation}
 
 Campaign ermöglicht die Steuerung der Angebotsvorschlagsströme mithilfe von Unterbreitungsregeln. Diese Regeln gelten speziell für Campaign Interaction und sind **Typologieregeln**. Sie ermöglichen den Ausschluss von Angeboten, die auf dem Verlauf der einem Empfänger bereits unterbreiteten Vorschläge basieren. Sie werden in der Umgebung referenziert.
 
-:[!DNL :arrow_upper_right:]: Weitere Informationen hierzu finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
+[!DNL :arrow_upper_right:] Weitere Informationen hierzu finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
 
 ## Angebotssimulation
 
@@ -197,4 +197,4 @@ Mithilfe von Simulationen können Sie die Verteilung der Angebote einer Kategori
 
 Bei der Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die zuvor für Angebote und deren Unterbreitungsregeln galten. Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
 
-:[!DNL :arrow_upper_right:]: Weiterführende Informationen zur Angebotssimulation finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.htm) .
+[!DNL :arrow_upper_right:] Weiterführende Informationen zur Angebotssimulation finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.htm)
