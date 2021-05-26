@@ -7,9 +7,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -57,5 +57,5 @@ Sie können Campaign mit einer Reihe leistungsstarker Adobe-Lösungen integriere
 
 Sie können auch mithilfe von Journey AI eine prädiktive Sendezeitoptimierung und eine prädiktive Interaktionsbewertung konfigurieren und Öffnungsraten, Klicks und Umsätze steigern.
 
-:bulb: [Weitere Informationen zu Campaign-Integrationen](../connect/integration.md)
+[!DNL :bulb:] [Weitere Informationen zu Campaign-Integrationen](../connect/integration.md)
 
