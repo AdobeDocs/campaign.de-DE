@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 11%
@@ -36,7 +36,7 @@ Es stehen zwei Tabellenerweiterungsmodi zur Verfügung:
 
 * Über die Benutzeroberfläche mithilfe des Assistenten **Neues Feld**
 
-   :[!DNL :arrow_upper_right:]: Erfahren Sie, wie Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic) schnell ein neues Feld in Campaign hinzufügen können.
+   [!DNL :arrow_upper_right:] Erfahren Sie, wie Sie in der Dokumentation zu  [Campaign Classic v7 schnell ein neues Feld hinzufügen können.](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic)
 
 * Programmatische Erweiterung des Schemas
 
