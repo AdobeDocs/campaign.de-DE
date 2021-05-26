@@ -7,7 +7,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Adobe Campaign verfügt über eine Reihe integrierter technischer Workflows. Tec
 
 Diese Workflows führen Wartungsarbeiten an der Datenbank durch, nutzen die Tracking-Informationen in den Versandlogs, erstellen wiederkehrende Kampagnen und vieles mehr.
 
-:[!DNL :arrow_upper_right:]: Die vollständige Liste der technischen Workflows finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=de) .
+[!DNL :arrow_upper_right:] Die vollständige Liste der technischen Workflows finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=de)
 
 
 Zusätzlich zu diesen technischen Workflows setzt Campaign v8 bei der Verwaltung von [Datenreplikation](#data-replication) auf spezifische technische Workflows.
@@ -69,6 +69,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Verwandte Themen**
 
-:[!DNL :arrow_upper_right:]: In der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows) erfahren Sie, wie Sie mit Workflows beginnen.
+[!DNL :arrow_upper_right:] Informationen zu den ersten Schritten mit Workflows in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows)
 
 [!DNL :bulb:] Auf Datenaufbewahrungszeiträume in  [diesem Abschnitt zugreifen](../dev/datamodel-best-practices.md#data-retention)
