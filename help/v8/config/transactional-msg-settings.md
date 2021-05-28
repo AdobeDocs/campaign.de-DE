@@ -9,7 +9,7 @@ level: Beginner
 source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 7%
+ht-degree: 87%
 
 ---
 
@@ -17,42 +17,42 @@ ht-degree: 7%
 
 [!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
-[!DNL :bulb:] Die Funktionen für Transaktionsnachrichten werden in  [diesem Abschnitt](../send/transactional.md) beschrieben.
+[!DNL :bulb:] In [diesem Abschnitt](../send/transactional.md) sind die Funktionen für Transaktionsnachrichten beschrieben.
 
-[!DNL :bulb:] Die Architektur von Transaktionsnachrichten wird auf  [dieser Seite](../dev/architecture.md) beschrieben.
+[!DNL :bulb:][ Diese Seite](../dev/architecture.md) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
 
 ## Berechtigungen definieren
 
-Um neue Benutzer für in der Adobe Cloud gehostete Message-Center-Ausführungsinstanzen zu erstellen, müssen Sie sich an die Adobe-Kundenunterstützung wenden. Message Center-Benutzer sind bestimmte Benutzer, die spezielle Berechtigungen für den Zugriff auf die Ordner &quot;Echtzeit-Ereignisse&quot;(nmsRtEvent) benötigen.
+Um neue Benutzer für in Adobe Cloud gehostete Message Center-Ausführungsinstanzen zu erstellen, kontaktieren Sie die Adobe-Kundenunterstützung. Message Center-Benutzer benötigen für den Zugriff auf die Ordner &quot;Echtzeit-Ereignisse&quot; (nmsRtEvent) spezifische Berechtigungen.
 
 ## Schemaerweiterungen
 
-Alle Schemaerweiterungen, die für die von **Message Center technischen Workflows** verwendeten Schemas in Kontroll- oder Ausführungsinstanzen vorgenommen werden, müssen in den anderen vom Adobe Campaign-Transaktionsnachrichtenmodul verwendeten Instanzen dupliziert werden.
+Alle Erweiterungen von Schemas, die von **technischen Workflows des Message Center-Moduls** in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zu technischen Workflows für Message Center finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows)
+[!DNL :arrow_upper_right:] Weitere Informationen zu technischen Workflows für Message Center finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=de#control-instance-workflows)
 
-## Transaktions-Push-Benachrichtigungen senden
+## Push-Benachrichtigungen zu Transaktionen versenden
 
-In Kombination mit dem Mobile-App-Kanal-Modul ermöglichen Transaktionsnachrichten die Übertragung von Transaktionsnachrichten über Benachrichtigungen auf Mobilgeräte.
+In Kombination mit dem Mobile-App-Kanal-Modul können Sie über Benachrichtigungen Transaktionsnachrichten an Mobilgeräte senden.
 
-[!DNL :arrow_upper_right:] Der Mobile-App-Kanal wird im  [Campaign Classic v7-Handbuch](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages) beschrieben.
+[!DNL :arrow_upper_right:] Der Mobile-App-Kanal wird im  [Campaign Classic v7-Handbuch](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=de#sending-messages) beschrieben.
 
-Um Transaktions-Push-Benachrichtigungen zu senden, müssen Sie die folgenden Konfigurationen durchführen:
+Um Push-Benachrichtigungen zu Transaktionen zu senden, müssen Sie die folgenden Konfigurationen vornehmen:
 
 1. Installieren Sie das Package **Mobile App Channel** in den Kontroll- und Ausführungsinstanzen.
 
    >[!CAUTION]
    >
-   >Prüfen Sie Ihren Lizenzvertrag, bevor Sie ein neues natives Campaign-Package installieren.
+   >Überprüfen Sie Ihre Lizenzvereinbarung, bevor Sie ein neues, in Campaign integriertes Package installieren.
 
-1. Replizieren Sie den Dienst **Mobile App** und die zugehörigen Mobile Apps auf den Ausführungsinstanzen.
+1. Replizieren Sie den Service **Mobile App** und die zugehörigen Mobile Apps in den Ausführungsinstanzen.
 
-Damit Campaign Transaktions-Push-Benachrichtigungen senden kann, muss das Ereignis die folgenden Elemente enthalten:
+Damit Campaign Push-Benachrichtigungen zu Transaktionen senden kann, muss das Ereignis die folgenden Elemente enthalten:
 
-* Die Mobilgeräte-ID: **registrationId** für Android und **deviceToken** für iOS. Diese ID stellt die &quot;Adresse&quot;dar, an die die Benachrichtigung gesendet wird.
-* Die Verknüpfung zur Mobile App oder zum Integrationsschlüssel (**uuid**), mit der Sie anwendungsspezifische Verbindungsinformationen abrufen können.
-* Der Kanal, an den die Benachrichtigung gesendet wird (**wishedChannel**): 41 für iOS und 42 für Android.
-* Andere Daten, die für die Personalisierung verwendet werden sollen.
+* Die Kennung des Mobilgeräts: **registrationId** für Android und **deviceToken** für iOS. Diese Kennung steht für die &quot;Adresse&quot;, an die die Benachrichtigung gesendet wird.
+* Den Link zu der Mobile App oder dem Integrationsschlüssel (**uuid**), der den Abruf der App-spezifischen Verbindungsinformationen erlaubt.
+* Den Kanal, über den die Benachrichtigung gesendet wird (**wishedChannel**): 41 für iOS und 42 für Android.
+* Andere Daten, die für die Personalisierung genutzt werden sollen.
 
 Beispiel der Verarbeitung eines diese Informationen enthaltenden Ereignisses:
 
