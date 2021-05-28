@@ -1,26 +1,26 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Kampagneneingabeformulare
-description: Erfahren Sie, wie Sie Eingabeformulare anpassen
+title: Formulare in Campaign
+description: Erfahren Sie, wie Sie Formulare anpassen
 source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '2577'
-ht-degree: 3%
+ht-degree: 99%
 
 ---
 
-# Erste Schritte mit Eingabeformularen{#gs-ac-forms}
+# Erste Schritte mit Formularen{#gs-ac-forms}
 
-Wenn Sie ein Schema erstellen oder erweitern, müssen Sie die zugehörigen Eingabeformulare erstellen oder ändern, damit diese Änderungen für Endbenutzer sichtbar sind.
+Wenn Sie ein Schema erstellen oder erweitern, müssen Sie die zugehörigen Formulare für die Eingabe erstellen oder ändern, um diese Änderungen für die Endbenutzer sichtbar zu machen.
 
-Mit einem Formular können Sie eine mit einem Datenschema verknüpfte Instanz in der Adobe Campaign-Clientkonsole bearbeiten. Das Formular wird anhand seines Namens und Namespace identifiziert.
+Mit einem Formular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten. Das Formular wird anhand seines Namens und seines Namespace identifiziert.
 
-Der Identifikationsschlüssel eines Formulars ist eine Zeichenfolge, die aus dem Namespace und dem Namen besteht, getrennt durch einen Doppelpunkt, z. B.: &quot;cus:contact&quot;.
+Der Identifikationsschlüssel eines Formulars ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. &quot;cus:contact&quot;).
 
-## Bearbeiten von Eingabeformularen
+## Formulare bearbeiten
 
-Erstellen und konfigurieren Sie Eingabeformulare aus dem Ordner **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Eingabeformulare]** der Clientkonsole:
+Erstellen und konfigurieren Sie Formulare im Ordner **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Formulare]** der Client-Konsole:
 
 ![](assets/form_arbo.png)
 
@@ -28,15 +28,15 @@ Der XML-Code des Formulars wird im Editor erfasst:
 
 ![](assets/form_edit.png)
 
-Die Vorschau erzeugt eine Anzeige des Formulars:
+Die Vorschau generiert eine Anzeige des Formulars:
 
 ![](assets/form_preview.png)
 
 ## Formularstruktur
 
-Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas **xtk:form** einhält.
+Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas anwendet: **xtk:form**.
 
-Das XML-Dokument des Formulars muss das Stammelement `<form>` mit den Attributen **name** und **namespace** enthalten, um den Formularnamen und den Namespace auszufüllen.
+Das XML-Dokument eines Formulars muss das `<form>`-Stammelement mit den Attributen **name** und **namespace** zur Befüllung des Formularnamens und des Namespace enthalten.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -44,7 +44,7 @@ Das XML-Dokument des Formulars muss das Stammelement `<form>` mit den Attributen
 </form>
 ```
 
-Standardmäßig ist ein Formular mit dem Datenschema mit demselben Namen und Namespace verknüpft. Um ein Formular mit einem anderen Namen zu verknüpfen, setzen Sie das Attribut **entity-schema** des Elements `<form>` auf den Namen des Schemaschlüssels. Um die Struktur eines Formulars zu veranschaulichen, beschreiben wir eine Schnittstelle anhand des Beispielschemas &quot;cus:recipient&quot;:
+Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namespace aufweist. Um ein Formular mit einem anderen Namen zu verknüpfen, setzen Sie das Attribut **entity-schema** des Elements `<form>` auf den Namen des Schemaschlüssels. Um die Struktur eines Formulars zu veranschaulichen, beschreiben wir eine Schnittstelle mit dem Beispielschema &quot;cus:recipient&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -62,7 +62,7 @@ Standardmäßig ist ein Formular mit dem Datenschema mit demselben Namen und Nam
 </srcSchema>
 ```
 
-Das auf dem Beispielschema basierende Formular:
+Das Formular basiert auf dem Beispielschema:
 
 ![](assets/do-not-localize/form_exemple1.png)
 
@@ -74,24 +74,24 @@ Das auf dem Beispielschema basierende Formular:
 </form>
 ```
 
-Die Beschreibung der Steuerelemente zum Bearbeiten beginnt beim Wurzelelement `<form>` . Ein Eingabefeld wird in einem **`<input>`**-Element mit seinem **xpath**-Attribut notiert, welches den Pfad des Felds in seinem Schema enthält.
+Die Beschreibung der Eingabefelder beginnt mit dem `<form>`-Stammelement. Ein Eingabefeld wird in einem **`<input>`**-Element mit seinem **xpath**-Attribut notiert, welches den Pfad des Felds in seinem Schema enthält.
 
 Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet den im Schema angegebenen Titel.
 
 >[!NOTE]
 >
->Sie können die im Datenschema definierte Bezeichnung überschreiben, indem Sie das Attribut **label** zum Element `<input>` hinzufügen:\
+>Sie können das in seinem Datenschema definierte Label überschreiben, indem Sie das Attribut **label** zum Element `<input>` hinzufügen:\
 >`<input label="E-mail address" xpath="@name" />`
 
-Standardmäßig wird jedes Feld in einer einzigen Zeile angezeigt und nimmt je nach Datentyp den gesamten verfügbaren Platz ein.
+Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
 
-[!DNL :arrow_upper_right:] Alle Formularattribute sind in der  [Campaign Classic v7-Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html) aufgeführt.
+[!DNL :arrow_upper_right:] Alle Formularattribute sind in der  [Campaign Classic v7-Dokumentation](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/control-Button.html) aufgeführt.
 
-## Layout {#formatting}
+## Formatierung {#formatting}
 
-Das Layout der Steuerelemente ähnelt dem Layout, das in HTML-Tabellen verwendet wird, mit der Möglichkeit, ein Steuerelement in mehrere Spalten zu unterteilen, Elemente zu überschneiden oder die Verwendung des verfügbaren Bereichs anzugeben. Beachten Sie jedoch, dass Sie durch die Formatierung den Bereich nur in Proportionen aufteilen können. Sie können keine festen Dimensionen für ein Objekt angeben.
+Das Layout der Eingabefelder ähnelt dem in HTML-Tabellen verwendeten Layout, mit der Möglichkeit, ein Eingabefeld in mehrere Spalten zu unterteilen, Elemente zu verschachteln oder die Belegung des verfügbaren Platzes festzulegen. Beachten Sie jedoch, dass Sie bei der Formatierung den Bereich nur nach Proportionen aufteilen können. Sie können keine festen Abmessungen für ein Objekt angeben.
 
-So zeigen Sie die Steuerelemente des obigen Beispiels in zwei Spalten an:
+So zeigen Sie die Eingabefelder des obigen Beispiels in zwei Spalten an:
 
 ![](assets/do-not-localize/form_exemple2.png)
 
@@ -105,9 +105,9 @@ So zeigen Sie die Steuerelemente des obigen Beispiels in zwei Spalten an:
 </form>
 ```
 
-Mit dem Element **`<container>`** mit dem Attribut **colcount** können Sie die Anzeige von untergeordneten Steuerelementen auf zwei Spalten erzwingen.
+Mithilfe des Elements **`<container>`** mit dem Attribut **colcount** können Sie die Anzeige von untergeordneten Eingabefeldern auf zwei Spalten erzwingen.
 
-Das Attribut **colspan** eines Steuerelements erweitert die Steuerung um die Anzahl der in seinem Wert eingegebenen Spalten:
+Das Attribut **colspan** eines Eingabefelds erweitert das Eingabefeld um die Anzahl der Spalten, die in seinem Wert eingegeben wurden:
 
 ![](assets/do-not-localize/form_exemple3.png)
 
@@ -121,7 +121,7 @@ Das Attribut **colspan** eines Steuerelements erweitert die Steuerung um die Anz
 </form> 
 ```
 
-Durch Füllen des Attributs **type=&quot;frame&quot;** fügt der Container einen Rahmen um die untergeordneten Steuerelemente mit der Beschriftung hinzu, die im Attribut **label** enthalten ist:
+Durch das Ausfüllen des Attributs **type=&quot;frame&quot;** fügt der Container einen Rahmen um die untergeordneten Eingabefelder mit der im Attribut **label** enthaltenen Beschriftung hinzu:
 
 ![](assets/do-not-localize/form_exemple4.png)
 
@@ -135,7 +135,7 @@ Durch Füllen des Attributs **type=&quot;frame&quot;** fügt der Container einen
 </form>
 ```
 
-Ein **`<static>`** -Element kann zum Formatieren des Formulars verwendet werden:
+Ein **`<static>`**-Element kann zum Formatieren des Formulars verwendet werden:
 
 ![](assets/do-not-localize/form_exemple5.png)
 
@@ -149,15 +149,15 @@ Ein **`<static>`** -Element kann zum Formatieren des Formulars verwendet werden:
 </form>
 ```
 
-Mit dem Tag **`<static>`** mit dem Typ **separator** können Sie eine Trennleiste mit einer Bezeichnung hinzufügen, die im Attribut **label** enthalten ist.
+Mithilfe des **`<static>`**-Tags mit dem Typ **separator** können Sie eine Trennleiste mit einer Beschriftung hinzufügen, die im Attribut **label** enthalten ist.
 
-Mithilfe des Tags `<static>` wurde ein Hilfetext mit dem Hilfetyp hinzugefügt. Der Inhalt des Textes wird im Attribut **label** eingegeben.
+Mithilfe des `<static>`-Tags vom Typ &quot;Hilfe&quot; wurde ein Hilfetext hinzugefügt. Der Inhalt des Textes wird im Attribut **label** eingegeben.
 
-## Verwenden von Containern {#containers}
+## Container verwenden {#containers}
 
-Verwenden Sie **container**, um eine Gruppe von Steuerelementen zu gruppieren. Sie werden durch das Element **`<container>`** repräsentiert. Sie wurden oben verwendet, um Steuerelemente über mehrere Spalten zu formatieren.
+Verwenden Sie **Container**, um einen Satz von Eingabefeldern zu gruppieren. Sie werden durch das Element **`<container>`** dargestellt. Sie wurden oben verwendet, um Eingabefelder über mehrere Spalten zu formatieren.
 
-Mit dem Attribut **xpath** auf einem `<container>` können Sie die Referenzierung von untergeordneten Steuerelementen vereinfachen. Die Referenzierung von Steuerelementen ist dann relativ zum übergeordneten Element `<container>` .
+Mit dem **xpath**-Attribut auf einem `<container>` können Sie den Verweis auf untergeordnete Eingabefelder vereinfachen. Die Referenzierung der Eingabefelder erfolgt dann relativ zum übergeordneten `<container>`.
 
 Beispiel eines Containers ohne &quot;xpath&quot;:
 
@@ -168,7 +168,7 @@ Beispiel eines Containers ohne &quot;xpath&quot;:
 </container>
 ```
 
-Beispiel mit dem Zusatz &quot;xpath&quot;zum Element &quot;location&quot;:
+Beispiel mit dem Zusatz &quot;xpath&quot; zum Element &quot;location&quot;:
 
 ```
 <container colcount="2" xpath="location">
@@ -177,11 +177,11 @@ Beispiel mit dem Zusatz &quot;xpath&quot;zum Element &quot;location&quot;:
 </container>
 ```
 
-Container werden verwendet, um komplexe Steuerelemente mithilfe eines Satzes von Feldern zu erstellen, die in Seiten formatiert sind.
+Container werden verwendet, um komplexe Eingabefelder mithilfe eines Satzes von Feldern zu konstruieren, die in Seiten formatiert sind.
 
-### Hinzufügen von Registerkarten (Notebook) {#tab-container}
+### Tabs hinzufügen (Notebook) {#tab-container}
 
-Verwenden Sie einen **Notebook**-Container, um Daten in Seiten zu formatieren, auf die über Registerkarten zugegriffen werden kann.
+Verwenden Sie den Container **Notebook**, um Daten auf Seiten zu formatieren, auf die über Registerkarten zugegriffen werden kann.
 
 ![](assets/do-not-localize/form_exemple6.png)
 
@@ -198,15 +198,15 @@ Verwenden Sie einen **Notebook**-Container, um Daten in Seiten zu formatieren, a
 </container>
 ```
 
-Der Hauptcontainer wird durch das Attribut **type=&quot;notebook&quot;** definiert. Registerkarten werden in den untergeordneten Containern deklariert und die Beschriftung der Registerkarten wird aus dem Attribut **label** gefüllt.
+Der Haupt-Container wird durch das Attribut **type=&quot;Notebook&quot;** definiert. Registerkarten werden in den untergeordneten Containern deklariert und die Beschriftung der Registerkarten wird aus dem Attribut **label** gefüllt.
 
-Fügen Sie das Attribut **style=&quot;down&quot;** hinzu, um die vertikale Positionierung von Registerkartenbeschriftungen unter dem Steuerelement zu erzwingen. Dieses Attribut ist optional. Der Standardwert ist **&quot;up&quot;**.
+Fügen Sie das Attribut **style=&quot;down&quot;** hinzu, um die vertikale Ausrichtung der Registerkartenbeschriftungen unter dem Eingabefeld zu erzwingen. Dieses Attribut ist optional. Der Standardwert ist **&quot;up&quot;**.
 
 ![](assets/do-not-localize/form_exemple7.png)
 
 `<container style="down" type="notebook">  ... </container>`
 
-### Symbole hinzufügen (iconbox) {#icon-list}
+### Symbole (iconbox) hinzufügen {#icon-list}
 
 Verwenden Sie diesen Container, um eine vertikale Symbolleiste anzuzeigen, mit der Sie die anzuzeigenden Seiten auswählen können.
 
@@ -225,17 +225,17 @@ Verwenden Sie diesen Container, um eine vertikale Symbolleiste anzuzeigen, mit d
 </container>
 ```
 
-Der Hauptcontainer wird durch das Attribut **type=&quot;iconbox&quot;** definiert. Die mit den Symbolen verknüpften Seiten werden in den untergeordneten Containern deklariert. Die Beschriftung der Symbole wird aus dem Attribut **label** übernommen.
+Der Haupt-Container wird durch das Attribut **type=&quot;iconbox&quot;** definiert. Die mit den Symbolen verknüpften Seiten werden in den untergeordneten Containern deklariert. Die Beschriftung der Symbole wird aus dem Attribut **label** gefüllt.
 
-Das Symbol einer Seite wird aus dem Attribut `img="<image>"` gefüllt, wobei `<image>` der Name des Bildes ist, das dem Schlüssel des Namens und Namespace entspricht (z. B. &quot;xtk:properties.png&quot;).
+Das Seitensymbol wird aus dem Attribut `img="<image>"` gefüllt, wobei `<image>` der Bildname ist, der dem zugehörigen Bildschlüssel entspricht, der aus dem Namespace und dem Namen besteht (z. B. &quot;xtk:properties.png&quot;).
 
 Die Bilder sind im Knoten **[!UICONTROL Administration > Konfiguration > Bilder]** verfügbar.
 
-### Ausblenden von Containern (visibleGroup) {#visibility-container}
+### Container ausblenden (visibleGroup) {#visibility-container}
 
-Sie können eine Gruppe von Steuerelementen über eine dynamische Bedingung ausblenden.
+Sie können einen Satz von Eingabefeldern über eine dynamische Bedingung ausblenden.
 
-Dieses Beispiel zeigt die Sichtbarkeit der Steuerelemente für den Wert des Felds &quot;Geschlecht&quot;:
+Dieses Beispiel veranschaulicht die Sichtbarkeit von Eingabefeldern für den Wert des Feldes &quot;Geschlecht&quot;:
 
 ```
 <container type="visibleGroup" visibleIf="@gender=1">
@@ -246,17 +246,17 @@ Dieses Beispiel zeigt die Sichtbarkeit der Steuerelemente für den Wert des Feld
 </container>
 ```
 
-Ein Sichtbarkeits-Container wird durch das Attribut **type=&quot;visibleGroup&quot;** definiert. Das Attribut **visibleIf** enthält die Sichtbarkeitsbedingung.
+Ein Container für die Sichtbarkeit wird durch das Attribut **type=&quot;visibleGroup&quot;** definiert. Das Attribut **visibleIf** enthält die Sichtbarkeitsbedingung.
 
-Beispiele für Bedingungssyntax:
+Beispiele für die Bedingungssyntax:
 
-* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: testet Gleichheit bei Zeichenfolgendaten. Der Vergleichswert muss in Anführungszeichen gesetzt werden.
-* **visibleIf=&quot;@gender >= 1 und @gender != 2&quot;**: -Bedingung für einen numerischen Wert.
-* **visibleIf=&quot;@boolean1=true oder @boolean2=false&quot;**: auf boolesche Felder testen.
+* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: prüft Gleichheit bei Daten vom Typ Zeichenfolge. Der Vergleichswert muss in Anführungszeichen gesetzt werden.
+* **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;**: Bedingung für einen numerischen Wert.
+* **visibleIf=&quot;@boolean1=true oder @boolean2=false&quot;**: Testen von booleschen Feldern.
 
 ### Bedingte Anzeige (enabledGroup) {#enabling-container}
 
-Mit diesem Container können Sie einen Datensatz aus einer dynamischen Bedingung aktivieren oder deaktivieren. Das Deaktivieren eines Steuerelements verhindert dessen Bearbeitung. Das folgende Beispiel zeigt die Aktivierung von Steuerelementen aus dem Wert des Felds &quot;Geschlecht&quot;:
+Mit diesem Container können Sie einen Datensatz aus einer dynamischen Bedingung aktivieren oder deaktivieren. Durch Deaktivieren eines Eingabefeldes wird dessen Bearbeitung verhindert. Das folgende Beispiel veranschaulicht die Aktivierung von Eingabefeldern über den Wert des Feldes &quot;Geschlecht&quot;:
 
 ```
 <container type="enabledGroup" enabledIf="@gender=1">
@@ -267,17 +267,17 @@ Mit diesem Container können Sie einen Datensatz aus einer dynamischen Bedingung
 </container>
 ```
 
-Ein aktivierender Container wird durch das Attribut **type=&quot;enabledGroup&quot;** definiert. Das Attribut **enabledIf** enthält die Aktivierungsbedingung.
+Ein aktivierender Container wird durch das Attribut **type=&quot;enabledGroup&quot;** definiert. Das Attribut **enabledIf** enthält die Bedingung für die Aktivierung.
 
 ## Link bearbeiten {#editing-a-link}
 
-Beachten Sie, dass eine Relation im Datenschema wie folgt deklariert wird:
+Eine Inhaltsrelation wird auf folgende Weise im Datenschema deklariert:
 
 ```
 <element label="Company" name="company" target="cus:company" type="link"/>
 ```
 
-Das Eingabefeld des Links im Formular sieht wie folgt aus:
+Die Bearbeitungssteuerung der Relation in ihrem Formular sieht folgendermaßen aus:
 
 ![](assets/do-not-localize/form_exemple9.png)
 
@@ -285,15 +285,15 @@ Das Eingabefeld des Links im Formular sieht wie folgt aus:
 <input xpath="company"/>
 ```
 
-Auf die Zielauswahl kann über das Bearbeitungsfeld zugegriffen werden. Die Eingabe wird durch type-ahead unterstützt, sodass ein Zielelement aus den ersten eingegebenen Zeichen leicht zu finden ist. Die Suche basiert dann auf der **Compute string**, die im Zielschema definiert ist. Wenn das Schema nach der Validierung im Steuerelement nicht vorhanden ist, wird eine Bestätigungsmeldung zur spontanen Zielerstellung angezeigt. Durch die Bestätigung wird ein neuer Datensatz in der Zieltabelle erstellt und mit dem Link verknüpft.
+Die Auswahl des Ziels ist über das Bearbeitungsfeld verfügbar. Die Eingabe wird durch &quot;type-ahead&quot; unterstützt, sodass ein Zielelement schon mit den ersten eingegebenen Zeichen leicht gefunden werden kann. Die Suche basiert dann auf dem **Compute string**, der im Zielschema definiert ist. Wenn das Schema nach der Validierung im Eingabefeld nicht vorhanden ist, wird eine Bestätigungsmeldung der Zielerstellung im laufenden Betrieb angezeigt. Die Bestätigung erstellt einen neuen Eintrag in der Zieltabelle und verknüpft ihn mit der Relation.
 
-Über eine Dropdown-Liste wird ein Zielelement aus der Liste der bereits erstellten Datensätze ausgewählt.
+Eine Dropdown-Liste wird verwendet, um ein Zielelement aus der Liste der bereits erstellten Einträge auszuwählen.
 
-Über das Symbol **[!UICONTROL Link]** ändern (Ordner) wird ein Auswahlformular mit der Liste der Zielelemente und einem Filterbereich gestartet.
+Mit dem Symbol **[!UICONTROL Relation ändern]** (Ordner) wird ein Auswahlformular mit der Liste der Zielelemente und einem Filterbereich gestartet.
 
-Mit dem Symbol **[!UICONTROL Link bearbeiten]** (Lupe) wird das Bearbeitungsformular des verknüpften Elements gestartet. Das verwendete Formular wird standardmäßig auf den Schlüssel des Zielschemas abgezogen. Mit dem Attribut **form** können Sie den Namen des Bearbeitungsformulars erzwingen (z. B. &quot;cus:company2&quot;).
+Das Symbol **[!UICONTROL Relation bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig vom Schlüssel des Zielschemas abgeleitet. Mit dem Attribut **form** können Sie den Namen des Bearbeitungsformulars erzwingen (z. B. &quot;cus:company2&quot;).
 
-Sie können die Auswahl der Zielelemente einschränken, indem Sie das Element **`<sysfilter>`** aus der Link-Definition im Formular hinzufügen:
+Es besteht außerdem die Möglichkeit, die Auswahl von Zielelementen durch Hinzufügen des Elements **`<sysfilter>`** aus der Definition der Relation in das Formular einzuschränken:
 
 ```
 <input xpath="company">
@@ -303,7 +303,7 @@ Sie können die Auswahl der Zielelemente einschränken, indem Sie das Element **
 </input>
 ```
 
-Sie können die Liste auch mit dem Element **`<orderby>`** sortieren:
+Mit dem Element **`<orderby>`** können Sie die Liste auch sortieren:
 
 ```
 <input xpath="company">
@@ -313,25 +313,25 @@ Sie können die Liste auch mit dem Element **`<orderby>`** sortieren:
 </input>
 ```
 
-## Kontrolleigenschaften {#control-properties}
+## Eingabefeld-Eigenschaften {#control-properties}
 
-* **noAutoComplete**: deaktiviert type-ahead (mit dem Wert &quot;true&quot;)
-* **createMode**: erstellt den Link direkt, falls er nicht vorhanden ist. Mögliche Werte:
+* **noAutoComplete**: Deaktiviert &quot;type-ahead&quot; (mit dem Wert &quot;true&quot;)
+* **createMode**: erstellt die Relation im laufenden Betrieb, wenn sie noch nicht vorhanden ist. Mögliche Werte:
 
-   * **none**: Deaktiviert die Erstellung. Wenn der Link nicht vorhanden ist, wird eine Fehlermeldung angezeigt
-   * **inline**: erstellt die Verknüpfung mit dem Inhalt im Bearbeitungsfeld
-   * **Edition**: zeigt das Bearbeitungsformular auf dem Link an. Wenn das Formular validiert wird, werden die Daten gespeichert (Standardmodus)
+   * **none**: Deaktiviert die Erstellung. Wenn die Relation nicht vorhanden ist, wird eine Fehlermeldung angezeigt.
+   * **inline**: Erstellt die Relation mit dem Inhalt im Bearbeitungsfeld.
+   * **edition**: Zeigt das Bearbeitungsformular für die Relation an. Beim Validieren des Formulars werden die Daten gespeichert (Standardmodus).
 
-* **noZoom**: kein Bearbeitungsformular für den Link (mit dem Wert &quot;true&quot;)
-* **form**: überschreibt das Bearbeitungsformular des betroffenen Elements
+* **noZoom**: Kein Bearbeitungsformular für die Relation (mit dem Wert &quot;true&quot;)
+* **form**: Überschreibt das Bearbeitungsformular des Zielelements
 
-## Liste von Links hinzufügen (ungebunden) {#list-of-links}
+## Relationsliste hinzufügen (unbound) {#list-of-links}
 
-Eine im Datenschema als Kollektionselement eingegebene Relation (unbound=&quot;true&quot;) muss eine Liste durchlaufen, um alle damit verbundenen Elemente anzuzeigen.
+Eine Relation, die im Datenschema als Sammlungselement (unbound=&quot;true&quot;) eingetragen ist, muss eine Liste durchlaufen, um alle mit ihr verbundenen Elemente anzuzeigen.
 
-Das Prinzip besteht darin, die Liste der verknüpften Elemente mit optimiertem Laden der Daten anzuzeigen (Herunterladen per Datenstapel, Ausführung der Liste nur, wenn sie sichtbar ist).
+Das Prinzip besteht darin, die Liste der verknüpften Elemente mit optimierter Datenladung anzuzeigen (Daten per Batch herunterladen, Ausführung der Liste nur, wenn sie sichtbar ist).
 
-Beispiel eines Kollektionslinks in einem Schema:
+Beispiel einer Sammlungsrelation in einem Schema:
 
 ```
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
@@ -348,19 +348,19 @@ Die Liste in ihrem Formular:
 </input>
 ```
 
-Listensteuerung wird durch das Attribut **type=&quot;linklist&quot;** definiert. Der Listenpfad muss auf den Kollektions-Link verweisen.
+Die Steuerung der Liste wird durch das Attribut **type=&quot;linklist&quot;** definiert. Der Pfad der Liste muss auf die Sammlungsrelation verweisen.
 
-Die Spalten werden über die Elemente **`<input>`** der Liste deklariert. Das Attribut **xpath** bezieht sich auf den Pfad des Felds im Zielschema.
+Die Spalten werden über die **`<input>`**-Elemente der Liste definiert. Das Attribut **xpath** bezieht sich auf den Pfad des Feldes im Zielschema.
 
-Eine Symbolleiste mit einem Titel (definiert über den Link im Schema) wird automatisch über der Liste platziert.
+Eine Symbolleiste mit einer Beschriftung (definiert bei der Relation im Schema) wird automatisch über der Liste platziert.
 
 Die Liste kann über die Schaltfläche **[!UICONTROL Filter]** gefiltert und so konfiguriert werden, dass die Spalten hinzugefügt und sortiert werden.
 
-Mit den Schaltflächen **[!UICONTROL Hinzufügen]** und **[!UICONTROL Löschen]** können Sie Kollektionselemente zum Link hinzufügen und löschen. Durch Hinzufügen eines Elements wird standardmäßig das Bearbeitungsformular des Zielschemas gestartet.
+Mit den Schaltflächen **[!UICONTROL Hinzufügen]** und **[!UICONTROL Löschen]** können Sie Sammlungselemente zur Relation hinzufügen und löschen. Beim Hinzufügen eines Elements wird standardmäßig das Bearbeitungsformular des Zielschemas gestartet.
 
-Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im Tag **`<input>`** der Liste ausgefüllt ist: Dadurch können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
+Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** am **`<input>`**-Tag der Liste ausgefüllt ist: Dadurch können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
 
-Filter und Sortierung können angewendet werden, wenn die Liste geladen wird:
+Filtern und Sortieren können beim Laden der Liste angewendet werden:
 
 ```
  <input xpath="rcpEvent" type="linklist">
@@ -375,11 +375,11 @@ Filter und Sortierung können angewendet werden, wenn die Liste geladen wird:
 </input>
 ```
 
-## Beziehungstabelle {#relationship-table} definieren
+## Definieren einer Beziehungstabelle {#relationship-table}
 
-Mit einer Beziehungstabelle können Sie zwei Tabellen mit Kardinalität N und N verknüpfen. Die Beziehungstabelle enthält nur die Links zu den beiden Tabellen.
+Mit einer Beziehungstabelle können Sie zwei Tabellen mit N-N-Kardinalität verknüpfen. Die Beziehungstabelle enthält nur die Verknüpfungen zu den beiden Tabellen.
 
-Wenn Sie ein Element zur Liste hinzufügen, sollten Sie daher eine Liste aus einem der beiden Links in der Beziehungstabelle ausfüllen können.
+Das Hinzufügen eines Elements zur Liste sollte es Ihnen also ermöglichen, eine Liste aus einer der beiden Verknüpfungen in der Beziehungstabelle zu vervollständigen.
 
 Beispiel einer Beziehungstabelle in einem Schema:
 
@@ -390,7 +390,7 @@ Beispiel einer Beziehungstabelle in einem Schema:
 </srcSchema>
 ```
 
-Für unser Beispiel beginnen wir mit dem Formular des Schemas &quot;cus:recipient&quot;. In der Liste müssen die Zuordnungen mit Abonnements für Dienste angezeigt werden. Sie müssen die Möglichkeit haben, durch Auswahl eines vorhandenen Dienstes ein Abonnement hinzuzufügen.
+Für unser Beispiel beginnen wir mit dem Formular des Schemas &quot;cus:recipient&quot;. Die Liste muss die Verbindungen mit Abonnements von Services anzeigen und Sie müssen das Hinzufügen eines Abonnements durch Auswahl eines vorhandenen Services ermöglichen.
 
 ![](assets/do-not-localize/form_exemple12.png)
 
@@ -401,30 +401,30 @@ Für unser Beispiel beginnen wir mit dem Formular des Schemas &quot;cus:recipien
 </input>
 ```
 
-Mit dem Attribut **xpathChoiceTarget** können Sie ein Auswahlformular aus dem eingegebenen Link starten. Durch die Erstellung des Datensatzes der Beziehungstabelle wird der Link zum aktuellen Empfänger und zum ausgewählten Dienst automatisch aktualisiert.
+Mit dem Attribut **xpathChoiceTarget** können Sie ein Auswahlformular aus der eingegebenen Relation starten. Durch Erstellen des Eintrags in der Beziehungstabelle wird die Relation zum aktuellen Empfänger und zum ausgewählten Service automatisch aktualisiert.
 
 >[!NOTE]
 >
->Mit dem Attribut **xpathEditTarget** können Sie die Bearbeitung der ausgewählten Zeile für den eingegebenen Link erzwingen.
+>Mit dem Attribut **xpathEditTarget** können Sie die Bearbeitung der ausgewählten Zeile für die eingegebene Relation erzwingen.
 
-### Listeneigenschaften {#list-properties}
+### Eigenschaften der Liste {#list-properties}
 
-* **noToolbar**: blendet die Symbolleiste aus (mit dem Wert &quot;true&quot;)
-* **toolbarCaption**: überschreibt die Symbolleistenbeschriftung
-* **toolbarAlign**: ändert die vertikale oder horizontale Geometrie der Symbolleiste (mögliche Werte: &quot;vertical&quot;|&quot;horizontal&quot;)
-* **img**: zeigt das mit der Liste verknüpfte Bild an
-* **form**: überschreibt das Bearbeitungsformular des betroffenen Elements
-* **Zoom**: fügt die  **** Zoomschaltfläche hinzu, um das Targeting-Element zu bearbeiten
-* **xpathEditTarget**: Sets zur Bearbeitung des eingegebenen Links
-* **xpathChoiceTarget**: Startet außerdem das Auswahlformular für den eingegebenen Link.
+* **noToolbar**: Blendet die Symbolleiste aus (mit dem Wert &quot;true&quot;)
+* **toolbarCaption**: Überschreibt die Symbolleistenbeschriftung
+* **toolbarAlign**: Ändert die vertikale oder horizontale Geometrie der Symbolleiste (mögliche Werte: &quot;vertical&quot;|&quot;horizontal&quot;)
+* **img**: Zeigt das Bild an, das der Liste zugeordnet ist
+* **form**: Überschreibt das Bearbeitungsformular des Zielelements
+* **zoom**: Fügt die Schaltfläche **[!UICONTROL Zoom]** hinzu, um das Zielelement zu bearbeiten
+* **xpathEditTarget**: Legt die Bearbeitung für die eingegebene Relation fest
+* **xpathChoiceTarget**: Startet beim Hinzufügen das Auswahlformular für die eingegebene Relation
 
-## Hinzufügen von Steuerelementen der Speicherliste {#memory-list-controls}
+## Eingabefeld mit Liste von gespeicherten Elementen hinzufügen {#memory-list-controls}
 
-Mit Speicherlisten können Sie die Kollektionselemente mithilfe des Vorausladens von Listendaten bearbeiten. Diese Liste kann nicht gefiltert oder konfiguriert werden.
+Mithilfe von Listen von gespeicherten Elementen können Sie die Sammlungselemente bearbeiten, indem Sie Listen-Daten vorausfüllen. Diese Liste kann nicht gefiltert oder konfiguriert werden.
 
-Diese Listen werden für XML-zugeordnete Sammlungselemente oder für Links mit geringem Volumen verwendet.
+Diese Listen werden für XML-zugeordnete Sammlungselemente oder für Relationen mit niedrigem Volumen verwendet.
 
-## Spaltenliste {#column-list} hinzufügen
+## Liste mit Spalten hinzufügen {#column-list}
 
 Dieses Steuerelement zeigt eine Liste mit editierbaren Spalten und einer Symbolleiste mit den Schaltflächen &quot;Hinzufügen&quot; und &quot;Löschen&quot; an.
 
@@ -437,11 +437,11 @@ Dieses Steuerelement zeigt eine Liste mit editierbaren Spalten und einer Symboll
 
 Das Steuerelement Liste muss vom Attribut **type=&quot;list&quot;** begleitet werden, der Listenpfad muss auf das Kollektionselement verweisen.
 
-Die Spalten werden in den untergeordneten **`<input>`** -Tags der Liste deklariert. Spaltenbezeichnung und -größe können mit den Attributen **label** und **colSize** erzwungen werden.
+Die Spalten werden als untergeordnete **`<input>`**-Tags der Liste definiert. Spaltenbeschriftung und -größe können mit den Attributen **label** und **colSize** erzwungen werden.
 
 >[!NOTE]
 >
->Pfeile der Sortierreihenfolge werden automatisch hinzugefügt, wenn das Attribut **ordered=&quot;true&quot;** zum Kollektionselement im Datenschema hinzugefügt wird.
+>Pfeile nach Sortierreihenfolge werden automatisch hinzugefügt, wenn dem Sammlungselement im Datenschema das Attribut **ordered=&quot;true&quot;** hinzugefügt wird.
 
 Die Schaltflächen der Symbolleiste können horizontal ausgerichtet werden:
 
@@ -452,11 +452,11 @@ Die Schaltflächen der Symbolleiste können horizontal ausgerichtet werden:
 </input>
 ```
 
-Das Attribut **toolbarCaption** erzwingt die horizontale Ausrichtung der Symbolleiste und gibt den Titel über der Liste ein.
+Das Attribut **toolbarCaption** sorgt für die horizontale Ausrichtung der Symbolleiste und die Anzeige des Titels über der Liste.
 
-### Zoom in Liste aktivieren {#zoom-in-a-list}
+### Zoom in einer Liste aktivieren {#zoom-in-a-list}
 
-Das Einfügen und Bearbeiten der Daten in eine Liste kann in einem separaten Bearbeitungsformular eingegeben werden.
+Das Einfügen und Bearbeiten der Daten in einer Liste kann in einem separaten Bearbeitungsformular eingegeben werden.
 
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
@@ -470,26 +470,26 @@ Das Einfügen und Bearbeiten der Daten in eine Liste kann in einem separaten Bea
 </input>
 ```
 
-Das Bearbeitungsformular wird aus dem Element `<form>` unter Listendefinition ausgefüllt. Die Struktur entspricht der eines Formulars. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im Tag **`<input>`** der Liste ausgefüllt ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
+Das Bearbeitungsformular wird aus dem Element `<form>` unter &quot;Listendefinition&quot; heraus ausgefüllt. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im **`<input>`**-Tag der Liste ausgefüllt ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
 
 >[!NOTE]
 >
->Durch Hinzufügen des Attributs **zoomOnAdd=&quot;true&quot;** wird das Bearbeitungsformular beim Einfügen eines Listenelements abgerufen.
+>Durch Hinzufügen des Attributs **zoomOnAdd=&quot;true&quot;** wird das Bearbeitungsformular aufgerufen, wenn ein Listenelement eingefügt wird.
 
-### Listeneigenschaften {#list-properties-1}
+### Eigenschaften der Liste {#list-properties-1}
 
-* **noToolbar**: blendet die Symbolleiste aus (mit dem Wert &quot;true&quot;)
-* **toolbarCaption**: überschreibt die Symbolleistenbeschriftung
-* **toolbarAlign**: ändert die Positionierung der Symbolleiste (mögliche Werte: &quot;vertical&quot;|&quot;horizontal&quot;)
-* **img**: zeigt das mit der Liste verknüpfte Bild an
-* **form**: überschreibt das Bearbeitungsformular des betroffenen Elements
-* **Zoom**: fügt die  **** Zoomschaltfläche hinzu, um das Targeting-Element zu bearbeiten
-* **zoomOnAdd**: startet das Bearbeitungsformular auf dem Zusatz
-* **xpathChoiceTarget**: Startet außerdem das Auswahlformular für den eingegebenen Link.
+* **noToolbar**: Blendet die Symbolleiste aus (mit dem Wert &quot;true&quot;)
+* **toolbarCaption**: Überschreibt die Symbolleistenbeschriftung
+* **toolbarAlign**: Ändert die Ausrichtung der Symbolleiste (mögliche Werte: &quot;vertical&quot;|&quot;horizontal&quot;)
+* **img**: Zeigt das Bild an, das der Liste zugeordnet ist
+* **form**: Überschreibt das Bearbeitungsformular des Zielelements
+* **zoom**: Fügt die Schaltfläche **[!UICONTROL Zoom]** hinzu, um das Zielelement zu bearbeiten
+* **zoomOnAdd**: Startet das Bearbeitungsformular beim Hinzufügen
+* **xpathChoiceTarget**: Startet beim Hinzufügen das Auswahlformular für die eingegebene Relation
 
-## Nicht bearbeitbare Felder {#non-editable-fields} hinzufügen
+## Nicht bearbeitbare Felder hinzufügen {#non-editable-fields}
 
-Um ein Feld anzuzeigen und zu verhindern, dass es bearbeitet wird, verwenden Sie das Tag **`<value>`** oder ergänzen Sie das Attribut **readOnly=&quot;true&quot;** im Tag **`<input>`** .
+Um ein Feld anzuzeigen und zu verhindern, dass es bearbeitet wird, verwenden Sie das **`<value>`**-Tag oder füllen Sie das Attribut **readOnly=&quot;true&quot;** im **`<input>`**-Tag aus.
 
 Beispiel für das Feld &quot;Geschlecht&quot;:
 
@@ -500,9 +500,9 @@ Beispiel für das Feld &quot;Geschlecht&quot;:
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## Radiobutton {#radio-button} hinzufügen
+## Optionsfeld hinzufügen {#radio-button}
 
-Ein Optionsfeld ermöglicht die Auswahl aus verschiedenen Optionen. Die Tags **`<input>`** werden verwendet, um die möglichen Optionen aufzulisten, und das Attribut **checkValue** gibt den Wert an, der mit der Auswahl verknüpft ist.
+Mit einem Optionsfeld können Sie aus verschiedenen Optionen wählen. Die **`<input>`**-Tags werden verwendet, um die möglichen Optionen aufzulisten, und das Attribut **checkedValue** gibt den Wert an, der mit der Auswahl verbunden ist.
 
 Beispiel für das Feld &quot;Geschlecht&quot;:
 
@@ -514,9 +514,9 @@ Beispiel für das Feld &quot;Geschlecht&quot;:
 
 ![](assets/do-not-localize/form_exemple17.png)
 
-## Kontrollkästchen hinzufügen {#checkbox}
+## Checkbox hinzufügen {#checkbox}
 
-Ein Kontrollkästchen spiegelt einen booleschen Status wider (ausgewählt oder nicht). Standardmäßig wird dieses Steuerelement von den Feldern &quot;Boolesch&quot;(true/false) verwendet. Mit dieser Schaltfläche kann eine Variable verknüpft werden, die den Standardwert 0 oder 1 hat. Dieser Wert kann über die Attribute **checkValue** überschrieben werden.
+Eine Checkbox gibt den booleschen Status an (ausgewählt oder nicht). Standardmäßig wird dieses Eingabefeld von &quot;booleschen&quot; (wahr/falsch) Feldern verwendet. Eine Variable, die den Standardwert 0 oder 1 hat, kann mit dieser Schaltfläche verknüpft werden. Dieser Wert kann über das Attribut **checkValue** überladen werden.
 
 ```
 <input xpath="@boolean1"/>
@@ -525,11 +525,11 @@ Ein Kontrollkästchen spiegelt einen booleschen Status wider (ausgewählt oder n
 
 ![](assets/do-not-localize/form_exemple20.png)
 
-## Navigationshierarchie bearbeiten {#navigation-hierarchy-edit}
+## Navigationsbaum bearbeiten {#navigation-hierarchy-edit}
 
-Dieses Steuerelement erstellt einen Baum auf einem Satz von Feldern, die bearbeitet werden sollen.
+Dieses Eingabefeld erstellt einen Baum für einen Satz zu bearbeitender Felder.
 
-Die zu bearbeitenden Steuerelemente werden in einem **`<container>`** gruppiert, der unter dem **`<input>`**-Tag des Baumstruktursteuerelements eingegeben wird:
+Die zu bearbeitenden Eingabefelder sind in einem **`<container>`** gruppiert, das unter dem **`<input>`**-Tag des Baum-Steuerelements eingegeben wird:
 
 ```
 <input nolabel="true" type="treeEdit">
@@ -546,9 +546,9 @@ Die zu bearbeitenden Steuerelemente werden in einem **`<container>`** gruppiert,
 
 ![](assets/do-not-localize/form_exemple18.png)
 
-## Ausdrucksfeld {#expression-field} hinzufügen
+## Ausdrucksfeld hinzufügen {#expression-field}
 
-Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck. Das Tag **`<input>`** wird mit dem Attribut **xpath** verwendet, um den Pfad des zu aktualisierenden Felds und das Attribut **expr** mit dem Aktualisierungsausdruck anzugeben.
+Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck aus. Das **`<input>`**-Tag wird mit dem Attribut **xpath** verwendet, um den Pfad des zu aktualisierenden Felds und ein Attribut **expr** mit dem Ausdruck zur Aktualisierung einzugeben.
 
 ```
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
@@ -558,18 +558,18 @@ Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck. Das Tag **
 
 ## Kontext von Formularen {#context-of-forms}
 
-Die Ausführung eines Formulars initialisiert ein XML-Dokument, das die Daten der bearbeiteten Entität enthält. Dieses Dokument stellt den Kontext des Formulars dar und kann als Arbeitsbereich verwendet werden.
+Die Ausführung eines Formulars initialisiert ein XML-Dokument, das die Daten der Entität enthält, die bearbeitet wird. Dieses Dokument stellt den Kontext des Formulars dar und kann als Arbeitsbereich verwendet werden.
 
-### Kontext {#updating-the-context} aktualisieren
+### Kontext aktualisieren {#updating-the-context}
 
-Um den Kontext des Formulars zu ändern, verwenden Sie das Tag `<set expr="<value>" xpath="<field>"/>` , wobei `<field>` das Zielfeld und `<value>` der Aktualisierungsausdruck oder -wert ist.
+Um den Kontext des Formulars zu ändern, verwenden Sie das `<set expr="<value>" xpath="<field>"/>`-Tag, wobei `<field>` das Zielfeld und `<value>` der Ausdruck oder Wert für die Aktualisierung ist.
 
-Beispiele für die Verwendung des Tags `<set>`:
+Beispiele für die Verwendung des `<set>`-Tags:
 
-* **`<set expr="'Test'" xpath="/tmp/@test" />`**: Positioniert den Wert &quot;Test&quot;am temporären Speicherort /tmp/@test1
-* **`<set expr="'Test'" xpath="@lastName" />`**: aktualisiert die Entität im Attribut &quot;lastName&quot;mit dem Wert &quot;Test&quot;.
-* **`<set expr="true" xpath="@boolean1" />`**: setzt den Wert des Felds &quot;boolean1&quot;auf &quot;true&quot;
-* **`<set expr="@lastName" xpath="/tmp/@test" />`**: aktualisiert den Inhalt des Attributs &quot;lastName&quot;
+* **`<set expr="'Test'" xpath="/tmp/@test" />`**: Positioniert den Wert &quot;Test&quot; am temporären Ort /tmp/@test1
+* **`<set expr="'Test'" xpath="@lastName" />`**: Aktualisiert die Entität des Attributs &quot;lastName&quot; mit dem Wert &quot;Test&quot;
+* **`<set expr="true" xpath="@boolean1" />`**: Setzt den Wert des Felds &quot;boolean1&quot; auf &quot;true&quot;
+* **`<set expr="@lastName" xpath="/tmp/@test" />`**: Aktualisiert mit dem Inhalt des Attributs &quot;lastName&quot;
 
 Der Kontext des Formulars kann beim Initialisieren und Schließen des Formulars über die Tags **`<enter>`** und **`<leave>`** aktualisiert werden.
 
@@ -587,13 +587,13 @@ Der Kontext des Formulars kann beim Initialisieren und Schließen des Formulars 
 
 >[!NOTE]
 >
->Die `<enter>` und `<leave>`   -Tags können auf den `<container>` -Seiten (&quot;Notebook&quot;- und &quot;Iconbox&quot;-Typen) verwendet werden.
+>Die Tags `<enter>` und `<leave>` können auf den `<container>`-Seiten (vom Typ &quot;notebook&quot; und &quot;iconbox&quot;) verwendet werden.
 
-### Ausdruckssprache {#expression-language-}
+### Sprache von Ausdrücken {#expression-language-}
 
 In der Formulardefinition kann eine Makrosprache verwendet werden, um bedingte Tests durchzuführen.
 
-Das Tag **`<if expr="<expression>" />`** führt die unter dem Tag angegebenen Anweisungen aus, wenn der Ausdruck überprüft wird:
+Das **`<if expr="<expression>" />`**-Tag führt die unter dem Tag angegebenen Anweisungen aus, wenn der Ausdruck überprüft wird:
 
 ```
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
@@ -601,7 +601,7 @@ Das Tag **`<if expr="<expression>" />`** führt die unter dem Tag angegebenen An
 </if>
 ```
 
-Das Tag **`<check expr="<condition>" />`** in Kombination mit dem Tag **`<error>`** verhindert die Validierung des Formulars und zeigt eine Fehlermeldung an, wenn die Bedingung nicht erfüllt ist:
+Das **`<check expr="<condition>" />`**-Tag in Kombination mit dem **`<error>`**-Tag verhindert die Validierung des Formulars und zeigt eine Fehlermeldung an, wenn die Bedingung nicht erfüllt ist:
 
 ```
 <leave>
@@ -611,11 +611,11 @@ Das Tag **`<check expr="<condition>" />`** in Kombination mit dem Tag **`<error>
 </leave>
 ```
 
-## Assistent (Assistent) {#wizards}
+## Assistent  {#wizards}
 
-Ein Assistent führt Sie durch eine Reihe von Schritten zur Dateneingabe in Form von Seiten. Die eingegebenen Daten werden bei der Validierung des Formulars gespeichert.
+Ein Assistent führt Sie in Form von Seiten durch eine Reihe von Schritten zur Dateneingabe. Die eingegebenen Daten werden bei der Validierung des Formulars gespeichert.
 
-Um einen Assistenten hinzuzufügen, verwenden Sie die folgende Struktur:
+Um einen Assistenten hinzuzufügen, verwenden Sie den folgenden Strukturtyp:
 
 ```
 <form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
@@ -630,15 +630,15 @@ Um einen Assistenten hinzuzufügen, verwenden Sie die folgende Struktur:
 </form>
 ```
 
-Durch das Vorhandensein des Attributs **type=&quot;wizard&quot;** im Element `<form>` können Sie den Assistentenmodus beim Aufbau des Formulars definieren. Die Seiten werden aus `<container>` -Elementen ergänzt, die untergeordnete Elemente des Elements `<form>` sind. Das Element `<container>` einer Seite wird mit den Titelattributen für den Titel und desc gefüllt, um die Beschreibung unter dem Seitentitel anzuzeigen. Die Schaltflächen **[!UICONTROL Zurück]** und **[!UICONTROL Weiter]** werden automatisch hinzugefügt, um das Durchsuchen zwischen Seiten zu ermöglichen.
+Durch das Vorhandensein des Attributs **type=&quot;wizard&quot;** im Element `<form>` können Sie den Assistentenmodus beim Aufbau des Formulars definieren. Die Seiten werden aus `<container>`-Elementen ausgefüllt, die dem Element `<form>` untergeordnet sind. Das `<container>`-Element einer Seite wird mit den Titelattributen für den Titel und &quot;desc&quot; gefüllt, um die Beschreibung unter dem Seitentitel anzuzeigen. Die Schaltflächen **[!UICONTROL Zurück]** und **[!UICONTROL Weiter]** werden automatisch hinzugefügt, um das Blättern zwischen Seiten zu ermöglichen.
 
-Die Schaltfläche **[!UICONTROL Beenden]** speichert die eingegebenen Daten und schließt das Formular.
+Mit der Schaltfläche **[!UICONTROL Beenden]** speichern Sie die eingegebenen Daten und schließen das Formular.
 
 ### SOAP-Methoden {#soap-methods}
 
-Die Ausführung der SOAP-Methode kann von einem ausgefüllten **`<leave>`**-Tag am Ende einer Seite aus gestartet werden.
+Die Ausführung der SOAP-Methode kann von einem ausgefüllten **`<leave>`**-Tag am Ende einer Seite gestartet werden.
 
-Das Tag **`<soapcall>`** enthält den Aufruf für die Methode mit den folgenden Eingabeparametern:
+Das **`<soapcall>`**-Tag enthält den Aufruf der Methode mit den folgenden Eingabeparametern:
 
 ```
 <soapCall name="<name>" service="<schema>">
@@ -647,20 +647,20 @@ Das Tag **`<soapcall>`** enthält den Aufruf für die Methode mit den folgenden 
 </soapCall>
 ```
 
-Der Name des Dienstes und sein Implementierungsschema werden über die Attribute **name** und **service** des Tags **`<soapcall>`** eingegeben.
+Der Name des Service und sein Implementierungsschema werden über die Attribute **name** und **service** des **`<soapcall>`**-Tags eingegeben.
 
-Die Eingabeparameter werden in den **`<param>`** -Elementen unter dem Tag **`<soapcall>`** beschrieben.
+Die Eingabeparameter werden in den **`<param>`**-Elementen unter dem **`<soapcall>`**-Tag beschrieben.
 
 Der Parametertyp muss über das Attribut **type** angegeben werden. Folgende Typen sind möglich:
 
-* **string**: Zeichenzeichenfolge
+* **string**: Zeichenfolge
 * **boolean**: Boolesch
 * **byte**: 8-Bit-Ganzzahl
 * **short**: 16-Bit-Ganzzahl
 * **long**: 32-Bit-Ganzzahl
 * **short**: 16-Bit-Ganzzahl
 * **double**: Gleitkommazahl mit doppelter Genauigkeit
-* **DOMElement**: Knoten element-type
+* **DOMElement**: Knoten vom Typ Element
 
 Das Attribut **exprIn** enthält den Speicherort der Daten, die als Parameter übergeben werden sollen.
 
