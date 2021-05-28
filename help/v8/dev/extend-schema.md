@@ -6,45 +6,45 @@ description: Erfahren Sie, wie Sie Campaign-Schemata erweitern
 source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
 source-wordcount: '258'
-ht-degree: 2%
+ht-degree: 97%
 
 ---
 
-# Erweitern eines Schemas{#extend-schemas}
+# Schema erweitern{#extend-schemas}
 
-Als technischer Benutzer können Sie das Datenmodell von Campaign an die Bedürfnisse Ihrer Implementierung anpassen: Elemente zu einem vorhandenen Schema hinzufügen, ein Element in einem Schema ändern oder Elemente löschen.
+Als technischer Anwender können Sie das Campaign-Datenmodell an die Anforderungen Ihrer Implementierung anpassen: So können Sie Elemente zu einem vorhandenen Schema hinzufügen, ein Element in einem Schema ändern oder Elemente löschen.
 
-Die wichtigsten Schritte zur Anpassung des Campaign-Datenmodells sind:
+Die wichtigsten Schritte zum Anpassen des Campaign-Datenmodells sind:
 
-1. Erstellen eines Erweiterungsschemas
+1. Erweiterungsschema erstellen
 1. Campaign-Datenbank aktualisieren
-1. Anpassen des Eingabeformulars
+1. Formular aktualisieren
 
 >[!CAUTION]
->Das integrierte Schema darf nicht direkt geändert werden. Wenn Sie ein integriertes Schema anpassen müssen, müssen Sie es erweitern.
+>Das integrierte Schema darf nicht direkt geändert werden. Wenn Sie ein integriertes Schema anpassen möchten, müssen Sie es erweitern.
 
-[!DNL :bulb:] Informationen zu den integrierten Tabellen in Campaign und deren Interaktion finden Sie auf  [dieser Seite](datamodel.md).
+[!DNL :bulb:] Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie auf [dieser Seite](datamodel.md).
 
 Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
-1. Navigieren Sie im Explorer zum Ordner **[!UICONTROL Administration > Konfiguration > Datenschemata]** .
-1. Klicken Sie auf die Schaltfläche **Neu** und wählen Sie **[!UICONTROL Erweitern Sie die Daten in einer Tabelle mit einem Erweiterungsschema]** aus.
+1. Navigieren Sie im Explorer zum Ordner **[!UICONTROL Administration > Konfiguration > Datenschemata]**.
+1. Klicken Sie auf die Schaltfläche **Neu** und wählen Sie **[!UICONTROL Daten in einer Tabelle mit einem Erweiterungsschema erweitern]**.
 
    ![](assets/extend-schema-option.png)
 
-1. Identifizieren Sie das zu erweiternde integrierte Schema und wählen Sie es aus.
+1. Identifizieren Sie das integrierte Schema, um es zu erweitern und auszuwählen.
 
    ![](assets/extend-schema-select.png)
 
-   Benennen Sie das Erweiterungsschema standardmäßig mit dem integrierten Schema und verwenden Sie einen benutzerdefinierten Namespace.  Beachten Sie, dass einige Namespaces nur intern sind. [Weitere Informationen](schemas.md#reserved-namespaces).
+   Benennen Sie das Erweiterungsschema standardmäßig genauso wie das integrierte Schema und verwenden Sie einen benutzerdefinierten Namespace.  Beachten Sie, dass einige Namespaces nur intern sind. [Weitere Informationen](schemas.md#reserved-namespaces).
 
    ![](assets/extend-schema-validate.png)
 
-1. Fügen Sie im Schemaeditor mithilfe des Kontextmenüs die benötigten Elemente hinzu und speichern Sie sie.
+1. Fügen Sie im Schema-Editor über das Kontextmenü die benötigten Elemente hinzu und speichern Sie.
 
    ![](assets/extend-schema-edit.png)
 
-   Im folgenden Beispiel fügen wir das Attribut MembershipYear hinzu, legen eine Längenbegrenzung für den Nachnamen fest (diese Grenze überschreibt die standardmäßige) und entfernen das Geburtsdatum aus dem integrierten Schema.
+   Im untenstehenden Beispiel fügen wir das Attribut &quot;MembershipYear&quot; hinzu, legen eine Längenbegrenzung für den Nachnamen fest (dieser Grenzwert überschreibt den Standardwert) und entfernen das Geburtsdatum aus dem integrierten Schema.
 
    ![](assets/extend-schema-sample.png)
 
@@ -60,10 +60,10 @@ Gehen Sie wie folgt vor, um ein Schema zu erweitern:
    </srcSchema>
    ```
 
-1. Trennen Sie die Verbindung zu Campaign und stellen Sie die Verbindung wieder her, um die Aktualisierung der Schemastruktur im Tab **[!UICONTROL Struktur]** zu überprüfen.
+1. Trennen Sie die Verbindung zu Campaign und stellen Sie sie wieder her, um die Aktualisierung der Schemastruktur auf der Registerkarte **[!UICONTROL Struktur]** zu überprüfen.
 
    ![](assets/extend-schema-structure.png)
 
 1. Aktualisieren Sie die Datenbankstruktur, um Ihre Änderungen anzuwenden. [Mehr dazu](update-database-structure.md)
 
-1. Sobald die Änderungen in der Datenbank implementiert wurden, können Sie das Formular für die Empfängereingabe anpassen, um Ihre Änderungen sichtbar zu machen. [Mehr dazu](forms.md)
+1. Nachdem die Änderungen in der Datenbank implementiert wurden, können Sie das Empfängerformular anpassen, um die Änderungen sichtbar zu machen. [Mehr dazu](forms.md)
