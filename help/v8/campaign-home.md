@@ -1,13 +1,13 @@
 ---
 keywords: Campaign Standard;Startseite;beliebte Themen
 solution: Campaign v8
-description: Campaign v8-Hilfecenter
+description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: 30b363ca9905c71f24a9b3db2404a301a5965eac
 workflow-type: tm+mt
 source-wordcount: '85'
-ht-degree: 27%
+ht-degree: 83%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 27%
 
 * **[Was ist [!DNL Adobe Campaign]](start/get-started.md)**  - Wichtige Funktionen und Anwendungsfälle
 
-* **[Neue Funktionen in v8](start/whats-new.md)**  - Discover Campaign v8-Funktionen
+* **[Neue Funktionen in v8](start/whats-new.md)** – Entdecken Sie die Möglichkeiten von Campaign v8
 
-* **[Implementierungsrichtlinien](start/implement.md)**   - Erfahren Sie, wie Sie mit der Implementierung beginnen
+* **[Implementierungsrichtlinien](start/implement.md)** – Hier erfahren Sie, wie Sie Ihre Implementierung beginnen.
 
-* **[Von v7 zu v8](start/capability-matrix.md)**  - Übergang von Campaign Classic v7 zu v8? Wichtige Unterschiede
+* **[Von v7 zu v8](start/capability-matrix.md)** – Planen Sie den Wechsel von Campaign Classic v7 zu v8? Die wichtigsten Unterschiede
 
 ## Erste Schritte
 
@@ -52,7 +52,7 @@ ht-degree: 27%
       <img alt="E-Mail" src="start/assets/do-not-localize/email-design.jpeg" />
     </a>
     <div>
-    <a href="start/create-message.md">Erstellen einer E-Mail</a>
+    <a href="start/create-message.md">E-Mail erstellen</a>
     </div>
     <br>
   </td>
@@ -63,6 +63,6 @@ ht-degree: 27%
 
 * [Bekannte Probleme und Einschränkungen](start/known-limitations.md)
 * [Architektur](dev/architecture.md)
-* [Messung und Verfolgung](start/reporting.md)
-* [Verbindung mit anderen Lösungen](connect/integration.md)
+* [Messen und verfolgen](start/reporting.md)
+* [Verbindungen zu anderen Lösungen herstellen](connect/integration.md)
 * [Häufig gestellte Fragen zu Campaign v8](start/campaign-faq.md)
