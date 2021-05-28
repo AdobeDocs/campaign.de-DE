@@ -7,10 +7,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: eaad05675d2f875af2db5f71781afdad3a9ff004
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 80%
+source-wordcount: '342'
+ht-degree: 78%
 
 ---
 
@@ -29,13 +29,10 @@ Modernisieren Sie Ihre Implementierung und nutzen Sie alle Adobe Experience Clou
 Campaign v8 kann eine Verbindung herstellen mit:
 
 * [Adobe Journey Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=de)
-
 * [Real-Time CDP](../connect/ac-rtcdp.md)
-
-* [Adobe Analytics Data Connector](../connect/ac-aa.md)
-
+* [Adobe Analytics](../connect/ac-aa.md)
 * [Adobe Experience Manager](../connect/ac-aem.md)
-
+* [Adobe Experience Cloud Trigger](../connect/ac-triggers.md)
 * [Adobe Target](../connect/ac-at.md)
 
 Sie können Ihre **Audiences** und **Assets** über Experience Cloud-Lösungen hinweg auch mit Funktionen zum Freigeben von Assets und Audiences kombinieren.
