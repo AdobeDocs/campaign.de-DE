@@ -1,8 +1,8 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Erste Schritte mit Campaign-Berichten
-description: Erste Schritte mit den Berichterstellungsfunktionen von Campaign
+title: Erste Schritte mit Campaign-Reporting
+description: Erste Schritte mit den Reporting-Funktionen von Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
@@ -10,7 +10,7 @@ exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d25755
 source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 0%
+ht-degree: 70%
 
 ---
 
@@ -18,24 +18,24 @@ ht-degree: 0%
 
 ## Erste Schritte mit Reporting{#gs-ac-reports}
 
-Adobe Campaign bietet eine Reihe von Reporting-Tools:
+Adobe Campaign bietet verschiedene Reporting-Tools:
 
-* **Integrierte**
-BerichteAdobe Campaign bietet eine Reihe von Berichten über Sendungen, Kampagnen, Plattformaktivitäten, optionale Funktionen usw. Diese Berichte stehen in den verschiedenen Funktionen zur Verfügung, auf die sie sich beziehen. Sie können an Ihre spezifischen Bedürfnisse angepasst werden.
+* **Native Berichte**
+Adobe Campaign bietet eine Berichtserie über Sendungen, Kampagnen, Plattform-Aktivitäten, optionale Funktionalitäten und mehr. Diese Berichte sind jeweils über die Funktionalitäten verfügbar, auf die sie sich beziehen. Sie können Ihren Bedürfnissen entsprechend angepasst werden.
 
-* **Deskriptive**
-DatenanalyseAdobe Campaign bietet ein visuelles Tool zur Erstellung von Statistiken über die Daten in der Datenbank. Sie können Berichte mit deskriptiven Analysen mit einem dedizierten Assistenten erstellen und Inhalt und Layout Ihren Bedürfnissen entsprechend anpassen.
+* **Deskriptive Datenanalyse:**
+Adobe Campaign bietet ein visuelles Tool zur Erstellung von Statistiken zu den in der Datenbank gespeicherten Daten. Diese ermöglichen die Erstellung deskriptiver Analysen anhand eines speziellen Assistenten, deren Inhalt und Layout Sie nach Bedarf anpassen können.
 
-* **Personalisierte**
-BerichteMit Adobe Campaign können Sie Berichte zu den Daten in der Datenbank erstellen. Nach ihrer Erstellung werden sie in den entsprechenden Kontexten zugänglich gemacht.
+* **Benutzerdefinierte Berichte**
+Berichte über die in Ihrer Datenbank enthaltenen Daten. Nach ihrer Erstellung sind die Berichte in den entsprechenden Kontexten abrufbar.
 
-* ****
-CubesAnalysieren und messen Sie Daten, berechnen Sie Statistiken, vereinfachen und optimieren Sie die Berichterstellung und -berechnung mit Cubes.  Sie können die Kapazitäten zur Datenbankerforschung und -analyse erweitern und gleichzeitig die Konfiguration von Berichten und Tabellen für Endbenutzer vereinfachen: Sie müssen lediglich einen existierenden (vollständig konfigurierten) Cube auswählen, wenn Sie einen Bericht oder eine Tabelle erstellen, um Berechnungen, Messungen und Statistiken zu verarbeiten.
+* **Cubes**
+Mit Cubes können Sie Daten analysieren und messen, Statistiken erheben und das Reporting einschließlich der darin durchgeführten Berechnungen optimieren.  Cubes ermöglichen es, die Kapazitäten zur Datenexploration und -analyse optimal zu nutzen. Gleichzeitig wird die Konfiguration der Berichte und Tabellen für den Endbenutzer vereinfacht: Es muss nur ein existierender, vollständig konfigurierter Cube bei der Bericht- oder Tabellenerstellung ausgewählt werden, um dessen Berechnungen, Kennzahlen und Statistiken zu übernehmen.
 
 Je nach Komplexität der Abfragen, Berechnungen und Volumina können die in diesen Berichten analysierten Daten über eine Abfrage gesammelt und in einer Liste (Workflow vom Typ Data Management) oder in einem Cube (unter Verwendung von Marketing Analytics) voraggregiert werden. Sie wird in Form einer Pivot-Tabelle oder einer Gruppenliste angezeigt.
 
 
-[!DNL :arrow_upper_right:] Weiterführende Informationen zu Berichtsfunktionen  [finden Sie in diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reporting-in-adobe-campaign/about-adobe-campaign-reporting-tools.html).
+[!DNL :arrow_upper_right:] Weiterführende Informationen zu Berichtsfunktionen  [finden Sie in diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reporting-in-adobe-campaign/about-adobe-campaign-reporting-tools.html?lang=de#reporting).
 
 Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen bieten als Campaign Classic v7. Die bestehenden Einschränkungen für Cubes gelten nicht.
 
