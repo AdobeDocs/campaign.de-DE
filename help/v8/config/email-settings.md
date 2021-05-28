@@ -1,19 +1,19 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: E-Mail-Kanal-Einstellungen für Campaign
-description: E-Mail-Kanal-Einstellungen für Campaign
+title: Einstellungen für den E-Mail-Kanal in Campaign
+description: Einstellungen für den E-Mail-Kanal in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: 3fd91879485a33961769c684acba8ca3c48bbbed
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 40%
+ht-degree: 63%
 
 ---
 
-# E-Mail-Kanal-Einstellungen für Campaign
+# Einstellungen für den E-Mail-Kanal in Campaign
 
 ## E-Mail-BCC
 
@@ -32,7 +32,7 @@ Bitte beachten Sie Folgendes:
 
 * Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
 
-[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um E-Mail-BCC in Campaign zu aktivieren. Die von Ihnen ausgewählte BCC-E-Mail-Adresse muss dem Adobe-Team zur Verfügung gestellt werden, das sie für Sie konfigurieren wird.
+[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um E-Mail-BCC in Campaign zu aktivieren. Die gewünschte BCC-E-Mail-Adresse muss dem Adobe-Team, das die Adresse für Sie konfigurieren wird, mitgeteilt werden.
 
 Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die Option **E-Mail-BCC** aktiviert ist.
 
@@ -50,6 +50,6 @@ Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in 
 
 [!DNL :arrow_upper_right:] [Bounce-E-Mail-Adresse festlegen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails)
 
-[!DNL :arrow_upper_right:] [Verwenden von E-Mail-Versandvorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+[!DNL :arrow_upper_right:] [Verwenden von E-Mail-Versandvorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de)
 
 [!DNL :arrow_upper_right:] [Ursachen für das Fehlschlagen von Sendungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html)
