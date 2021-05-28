@@ -1,27 +1,27 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Verwenden von Campaign und externen Datenbanken (FDA)
-description: Erfahren Sie, wie Sie mit Campaign und externen Datenbanken arbeiten.
+title: Arbeiten mit Campaign und externen Datenbanken (FDA)
+description: Erfahren Sie, wie Sie mit Campaign und externen Datenbanken arbeiten
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: 6f50be1e5c03937544e81582c2989b4345bb335d
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 55%
+ht-degree: 59%
 
 ---
 
 # Federated Data Access (FDA){#gs-fda}
 
-Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer oder mehreren **externen Datenbanken** zu verbinden und darin gespeicherte Informationen zu verarbeiten, ohne die Daten Ihrer Campaign Cloud-Datenbank zu beeinträchtigen. Sie können dann auf externe Daten zugreifen, ohne die Struktur der Adobe Campaign-Daten zu ändern.
+Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer oder mehreren **externen Datenbanken** zu verbinden und darin gespeicherte Informationen zu verarbeiten, ohne die Daten in Ihrer Campaign Cloud-Datenbank zu beeinflussen. Sie können dann auf externe Daten zugreifen, ohne die Struktur der Adobe Campaign-Daten zu verändern.
 
 >[!NOTE]
 >
 >Kompatible Datenbanken für FDA sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
 
-Mit der FDA-Option von Campaign können Sie Ihr Datenmodell in einer Datenbank von Drittanbietern erweitern. Sie erkennt automatisch die Struktur der ausgewählten Tabellen und verwendet Daten aus den SQL-Quellen.
+Mit der Campaign FDA-Option können Sie Ihr Datenmodell in einer Drittanbieterdatenbank erweitern. Sie erkennt automatisch die Struktur der ausgewählten Tabellen und verwendet Daten aus den SQL-Quellen.
 
 Spezifische **Berechtigungen** sind für [!DNL Adobe Campaign] und für die externe Datenbank erforderlich, um miteinander zu interagieren. Weiterführende Informationen finden Sie in diesem [Abschnitt](#fda-permissions).
 
