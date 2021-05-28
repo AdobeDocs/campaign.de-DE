@@ -6,13 +6,13 @@ description: Datenbankstruktur aktualisieren
 source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Datenbankstruktur{#updating-the-database-structure} aktualisieren
+# Datenbankstruktur aktualisieren{#updating-the-database-structure}
 
-Um die Änderungen an den Schemas anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistenten können Sie über **[!UICONTROL Tools > Erweitert > Datenbankstruktur aktualisieren]** zugreifen. Er prüft, ob die physische Struktur der Datenbank mit der logischen Beschreibung übereinstimmt, und führt die SQL-Update-Skripte aus.
+Um die an den Schemata vorgenommenen Änderungen anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistenten kann über **[!UICONTROL Tools > Erweitert > Datenbank aktualisieren]** zugegriffen werden. Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Scripts aus.
 
 ![](assets/schema_update.png)
 
@@ -20,14 +20,14 @@ Die Module in der Datenbank werden automatisch ausgefüllt und aktiviert.
 
 ![](assets/schema_update_select2.png)
 
-Führen Sie die Schritte aus und zeigen Sie das SQL-Skript zur Datenbankaktualisierung an:
+Führen Sie die Schritte aus und sehen Sie sich das SQL-Script für Datenbank-Update an:
 
 ![](assets/schema_update2.png)
 
 >[!NOTE]
 >
->Dies befindet sich in einem Bearbeitungsfeld und kann geändert werden, um SQL-Code zu löschen oder hinzuzufügen.
+>Es befindet sich in einem Bearbeitungsfeld und kann geändert werden, indem SQL-Code gelöscht oder hinzugefügt wird.
 
-Starten Sie anschließend die Datenbankaktualisierung:
+Starten Sie anschließend das Datenbank-Update:
 
 ![](assets/schema_update3.png)
