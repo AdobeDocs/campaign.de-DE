@@ -1,8 +1,8 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Erste Schritte mit der Automatisierung von Kampagnen
-description: Erste Schritte mit der Automatisierung von Kampagnen
+title: Erste Schritte bei der Campaign-Automatisierung
+description: Erste Schritte bei der Campaign-Automatisierung
 feature: Übersicht
 role: Data Engineer
 level: Beginner
@@ -10,7 +10,7 @@ exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: 8ede6bc1bc08a27e74dde6a427561c33f154a883
 workflow-type: tm+mt
 source-wordcount: '1187'
-ht-degree: 13%
+ht-degree: 39%
 
 ---
 
@@ -24,44 +24,44 @@ Sie können Folgendes einrichten:
 * Wiederkehrende Kampagnen
 * End-to-End-Validierungszyklus
 * Warnhinweise
-* Automatischer Berichtsversand
-* Ausgelöste Ereignisse
+* Automatisches Senden von Berichten
+* Erzeugte Ereignisse
 
-## Workflows erstellen und verwenden{#gs-ac-wf}
+## Entwerfen und Verwenden von Workflows{#gs-ac-wf}
 
-Verwenden Sie Adobe Campaign-Workflows, um die Geschwindigkeit und den Umfang Ihrer Marketingkampagnen zu steigern, von der Erstellung von Segmenten über die Vorbereitung von Nachrichten bis hin zum Versand.
+Verwenden Sie Adobe Campaign-Workflows, um jeden Aspekt Ihrer Marketing-Kampagnen zu beschleunigen und zu skalieren – von der Erstellung von Segmenten über die Vorbereitung von Nachrichten bis hin zum Versand.
 
 Erfahren Sie, wie Sie Workflows in diesen[End-to-End-Anwendungsfällen](#end-to-end-uc) erstellen.
 
 Weitere Informationen zur Benutzeroberfläche und Ausführung von Workflows finden Sie in der Campaign Classic v7-Dokumentation:
 
-[!DNL :arrow_upper_right:]  [Erste Schritte mit Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows)
+[!DNL :arrow_upper_right:]  [Erste Schritte mit Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=de#automating-with-workflows)
 * Workflow-Aktivitäten:
-   * [Zielgruppenbestimmungsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html): Abfrage, Leseliste, Anreicherung, Vereinigung und mehr
-   * [Steuerungsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html): Planung, Verzweigung, Warnhinweis, externes Signal und mehr
-   * [Aktionsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html): Kanalübergreifender Versand, JavaScript-Code, CRM-Aktivitäten, Aggregat-Update und mehr
-   * [Ereignisaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html): Dateiübertragung, Web-Download und mehr
-      [!DNL :arrow_upper_right:]  [Erstellen einer Zielgruppe in einem Marketingkampagnen-Workflow](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow)
+   * [Targeting-Aktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=de): Abfrage, Lesen von Listen, Anreicherung, Vereinigung und mehr
+   * [Aktivitäten zur Flusssteuerung](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html?lang=de): Planung, Verzweigung, Warnhinweis, externes Signal und mehr
+   * [Aktionsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=de): Kanalübergreifende Sendungen, JavaScript-Code, CRM-Aktivitäten, Aggregat aktualisieren und mehr
+   * [Ereignisaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html): Dateiübertragung, HTTP-Übertragung und mehr
+      [!DNL :arrow_upper_right:]  [Erstellen einer Audience im Workflow einer Marketing-Kampagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=de#building-the-main-target-in-a-workflow)
 
-      [!DNL :arrow_upper_right:]  [Best Practices bei Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html)
-      [!DNL :arrow_upper_right:] [Integrierte technische Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html)
-      [!DNL :arrow_upper_right:] [Ausführung von Workflows überwachen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html)
+      [!DNL :arrow_upper_right:]  [Best Practices bei Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html?lang=de)
+      [!DNL :arrow_upper_right:] [Integrierte technische Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=de)
+      [!DNL :arrow_upper_right:] [Überwachen der Ausführung von Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html?lang=de)
 
 
 ## Einrichten wiederkehrender Kampagnen
 
-Erstellen Sie einen wiederkehrenden Workflow und erstellen Sie bei jeder Workflow-Ausführung eine neue Versandinstanz. Wenn Ihr Workflow beispielsweise einmal pro Woche ausgeführt werden soll, ergibt das 52 Sendungen pro Jahr. Dies bedeutet auch, dass die Protokolle durch jede Versandinstanz getrennt werden.
+Erstellen Sie einen wiederkehrenden Workflow und erstellen Sie bei jeder Workflow-Ausführung eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, führt dies nach einem Jahr zu 52 Sendungen. Das bedeutet auch, dass die Protokolle für jede Versandinstanz getrennt erstellt werden.
 
-[!DNL :arrow_upper_right:] Erfahren Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns), wie Sie eine wiederkehrende Kampagne erstellen.
+[!DNL :arrow_upper_right:] Erfahren Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=de#recurring-and-periodic-campaigns), wie Sie eine wiederkehrende Kampagne erstellen.
 
 
-## Trigger-Ereignisse nutzen
+## Erzeugte Ereignisse nutzen
 
-Verwenden Sie Transaktionsnachrichten in Campaign, um Nachrichten zu automatisieren, die von Ereignissen erzeugt werden, die von Informationssystemen ausgelöst werden. Bei diesen Transaktionsnachrichten kann es sich beispielsweise um Rechnungsstellung, Bestellbestätigung, Versandbestätigung, Kennwortänderung, Benachrichtigung über die Nichtverfügbarkeit des Produkts, Kontoauszug oder die Erstellung eines Website-Kontos handeln. Diese Nachrichten können einzeln oder im Batch-Modus per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
+Verwenden Sie Transaktionsnachrichten in Campaign, um Nachrichten zu automatisieren, die von durch Informationssysteme ausgelösten Ereignissen generiert werden. Diese Transaktionsnachrichten können z. B. Rechnungen, Auftragsbestätigungen, Versandbestätigungen, Passwortänderungen, Benachrichtigungen über die Nichtverfügbarkeit von Produkten, Kontoauszüge oder die Erstellung von Website-Konten sein. Diese Nachrichten können einzeln oder im Batch-Modus per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
 [!DNL :bulb:] Weitere Informationen zu den Funktionen von Transaktionsnachrichten finden Sie in  [diesem Abschnitt](../send/transactional.md).
 
-Verbinden Sie Adobe Campaign und Adobe Analytics, um Benutzeraktionen abzurufen und nahezu in Echtzeit personalisierte Nachrichten zu senden.
+Verbinden Sie Adobe Campaign und Adobe Analytics, um Benutzeraktionen abzurufen und nahezu in Echtzeit personalisierte Nachrichten zu versenden.
 
 [!DNL :bulb:] In  [diesem Abschnitt erfahren Sie, wie Sie Campaign mit anderen Lösungen integrieren.](../start/connect.md)
 
@@ -99,7 +99,7 @@ In diesem Abschnitt finden Sie verschiedene Anwendungsfälle, die Funktionen von
    Erfahren Sie, wie Sie die Erstellung und Bereitstellung eines Inhaltsbausteins mit dem Campaign Content Management-Add-on automatisieren.
 
 
-### Monitoring              {#monitoring}
+### Monitoring  {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
