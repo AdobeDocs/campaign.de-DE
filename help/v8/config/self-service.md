@@ -11,7 +11,7 @@ hide: true
 source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 60%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 60%
 
 NOCH NICHT VERFÜGBAR
 
-Mit dem Campaign Control Panel können Sie als Produktadministrator von Adobe Campaign die Effizienz Ihrer Arbeit steigern, indem Sie Einstellungen verwalten und die Nutzung für jede Ihrer Instanzen verfolgen können. Dank der intuitiven Benutzeroberfläche können die Nutzung wichtiger Ressourcen überwacht und administrative Aufgaben einfach durchgeführt werden. So können beispielsweise IP-Adressen auf die Zulassungsliste gesetzt, der Speicher von SFTP-Servern überwacht und die Schlüssel verwaltet werden.
+Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign effizienteres Arbeiten. Sie können damit die Einstellungen aller Instanzen verwalten und deren Nutzung erfassen. Dank der intuitiven Benutzeroberfläche können die Nutzung wichtiger Ressourcen überwacht und administrative Aufgaben einfach durchgeführt werden. So können beispielsweise IP-Adressen auf die Zulassungsliste gesetzt, der Speicher von SFTP-Servern überwacht und die Schlüssel verwaltet werden.
 
 Wichtigste Vorteile:
 
@@ -27,15 +27,15 @@ Wichtigste Vorteile:
 * Konfigurieren Sie zu unterschiedlichen Zeiten die Einstellungen entsprechend Ihren Unternehmensanforderungen.
 * Erhöhen Sie die Sicherheit, indem Sie die Zugriffseinstellungen nach Bedarf steuern.
 
-Sie können das Campaign Control Panel auch verwenden, um Ihre Instanzeinstellungen wie IP-Zulassungsauflistung, URL-Berechtigungen und Abrufen von Informationen zu Ihrer Instanz zu konfigurieren.
+Sie können das Campaign Control Panel auch zum Konfigurieren Ihrer Instanzeinstellungen (z. B. IP-Zulassungsliste und URL-Berechtigungen) oder Abrufen von Informationen über Ihre Instanz nutzen.
 
 ## Zugriff auf das Control Panel
 
-Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html), um weitere Informationen zu erhalten.
+Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=de), um weitere Informationen zu erhalten.
 
 ## Control Panel – häufig gestellte Fragen
 
-[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ## SFTP-Verwaltung
 
@@ -44,16 +44,16 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 ## Sub-Domains und Zertifikate
 
 Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Mehr dazu:
-* [Sub-Domain-Branding](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
-* [Einrichten einer neuen Sub-Domain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [Überwachen von SSL-Zertifikaten](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
+* [Sub-Domain-Branding](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=de)
+* [Einrichten einer neuen Sub-Domain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de)
+* [Überwachen von SSL-Zertifikaten](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=de)
 
 ## Instanzeneinstellungen
 
-Erfahren Sie, wie Sie Ihre Campaign-Instanzeneinstellungen im Control Panel verwalten.
-* [IP auf der Zulassungsliste](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
-* [URL-Genehmigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
-* [Details der Instanz](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
-* [GPG-Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
+Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign-Instanzen im Control Panel verwalten.
+* [IP auf der Zulassungsliste](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de)
+* [URL-Genehmigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
+* [Details der Instanz](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de)
+* [GPG-Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de)
 
 [!DNL :arrow_upper_right:] Alle Control Panel-Funktionen finden Sie in  [dieser Dokumentation .](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
