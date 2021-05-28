@@ -10,7 +10,7 @@ exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '631'
-ht-degree: 3%
+ht-degree: 83%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 ## Umgebungen
 
-Campaign wird als einzelne Instanzen bereitgestellt, wobei jede Instanz eine vollständige Campaign-Umgebung darstellt.
+Campaign wird in Form einzelner Instanzen bereitgestellt, wobei jede Instanz eine komplette Campaign-Umgebung darstellt.
 
-Drei in Campaign Cloud Service verfügbare Umgebungstypen:
+Mit Campaign Cloud Service stehen drei Umgebungstypen zur Verfügung:
 
 * **Produktionsumgebung**: hostet die Anwendungen für Geschäftsleute.
 
@@ -32,36 +32,36 @@ Sie können Packages von einer Umgebung in eine andere exportieren und importier
 
 [!DNL :arrow_upper_right:] Weitere Informationen zu Paketen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
 
-## Mid-Sourcing-Bereitstellung{#mid-sourcing-deployment}
+## Mid-Sourcing-Implementierung{#mid-sourcing-deployment}
 
-Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt nach folgendem Schema:
+Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem folgenden Schema:
 
 ![](assets/architecture.png)
 
 * Die Ausführungs- und Bounce-Management-Module sind in der Instanz deaktiviert.
 
-* Die Anwendung ist so konfiguriert, dass sie eine Nachrichtenausführung auf einem Remote-Server mit &quot;Mid-Sourcing&quot;-Zugriff durchführt, der mithilfe von SOAP-Aufrufen (über HTTP oder HTTPS) gesteuert wird.
+* Das Programm ist so konfiguriert, dass Nachrichten auf einem entfernten &quot;Mid-Sourced&quot;-Server ausgeführt werden, der über SOAP-Aufrufe (über HTTP oder HTTPS) gesteuert wird.
 
 >[!NOTE]
 >
-> Campaign v8 basiert auf einer Hybridarchitektur. Beachten Sie bei der Umstellung von Campaign Classic v7, dass alle Sendungen über den Mid-Sourcing-Server durchgeführt werden.
-> Infolgedessen ist das interne Routing in Campaign v8 **nicht möglich** und das externe Konto wurde entsprechend deaktiviert.
+> Campaign v8 basiert auf einer Hybridarchitektur. Wenn Sie von Campaign Classic v7 wechseln, beachten Sie, dass alle Sendungen den Mid-Sourcing-Server durchlaufen.
+> Infolgedessen ist internes Routing in Campaign v8 **nicht möglich** und das externe Konto wurde entsprechend deaktiviert.
 
 ## Message Center-Architektur{#transac-msg-archi}
 
-Transaktionsnachrichten (Message Center) sind das Campaign-Modul zur Verwaltung von Trigger-Nachrichten.
+Transaktionsnachricht (Message Center) ist das Campaign-Modul, das zum Verwalten von Trigger-Nachrichten entwickelt wurde.
 
-[!DNL :bulb:] In  [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Transaktionsnachrichten senden.
+[!DNL :bulb:] In [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Transaktionsnachrichten senden können.
 
-Als Reaktion auf eine Aktion eines Kunden auf einer Website wird ein Ereignis an Campaign über eine REST-API gesendet. Die Nachrichtenvorlage wird mit den Informationen oder Daten gefüllt, die über den API-Aufruf bereitgestellt werden, und eine Transaktionsnachricht wird in Echtzeit an den Kunden gesendet. Diese Nachrichten können einzeln oder stapelweise per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
+Als Reaktion auf eine Kundenaktion auf einer Website wird ein Ereignis über eine REST-API gesendet. Die Nachrichtenvorlage wird mit den Informationen oder Daten gefüllt, die über den API-Aufruf bereitgestellt werden, und eine Transaktionsnachricht wird in Echtzeit an den Kunden gesendet. Diese Nachrichten können einzeln oder in Batches per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
-In dieser spezifischen Architektur wird die Ausführungszelle von der Kontrollinstanz getrennt, um eine hohe Verfügbarkeit und Lastmanagement sicherzustellen.
+In der hier angewendeten Architektur sind Ausführungszelle und Kontrollinstanz voneinander getrennt, was höhere Verfügbarkeit und besseres Last-Management gewährleistet.
 
-* Die **Kontrollinstanz** (oder Marketinginstanz) wird von Marketing-Experten und IT-Teams zum Erstellen, Konfigurieren und Veröffentlichen von Nachrichtenvorlagen verwendet. Diese Instanz zentralisiert außerdem die Ereignisüberwachung und den Verlauf.
+* Die **Kontrollinstanz** (oder die Marketing-Instanz) wird von Marketing-Experten und IT-Teams zum Erstellen, Konfigurieren und Veröffentlichen von Nachrichtenvorlagen verwendet. Diese Instanz zentralisiert auch die Überwachung und den Verlauf von Ereignissen.
 
    [!DNL :bulb:] In  [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Nachrichtenvorlagen erstellen und veröffentlichen.
 
-* Die **Ausführungsinstanz** ruft eingehende Ereignisse (z. B. Passwortzurücksetzung oder Bestellungen von einer Website) ab und sendet personalisierte Nachrichten. Es kann mehr als eine Ausführungsinstanz geben, um Nachrichten über den Lastenausgleich zu verarbeiten und die Anzahl der Ereignisse zu skalieren, die für eine maximale Verfügbarkeit ausgeführt werden sollen.
+* Die **Ausführungsinstanz** ruft eingehende Ereignisse (z. B. Passwortrücksetzung oder Bestellungen von einer Website) ab und versendet personalisierte Nachrichten. Es kann mehr als eine Ausführungsinstanz geben, um Nachrichten über den Load-Balancer zu verarbeiten und die Anzahl der zu verarbeitenden Ereignisse zwecks maximaler Verfügbarkeit zu skalieren.
 
 >[!CAUTION]
 >
@@ -69,17 +69,17 @@ In dieser spezifischen Architektur wird die Ausführungszelle von der Kontrollin
 
 ![](assets/messagecenter_diagram.png)
 
-[!DNL :arrow_upper_right:] Die Message-Center-Architektur wird in der Dokumentation zu  [Campaign Classic v7 beschrieben.](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
+[!DNL :arrow_upper_right:] Die Message-Center-Architektur wird in der Dokumentation zu  [Campaign Classic v7 beschrieben.](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=de#transactional-messaging)
 
 ### Authentifizierung
 
-Um diese Funktionen zu nutzen, melden sich Adobe Campaign-Benutzer bei der Kontrollinstanz an, um Transaktionsnachrichten-Vorlagen zu erstellen, die Nachrichtenvorschau mithilfe einer Testliste zu generieren, Berichte anzuzeigen und Ausführungsinstanzen zu überwachen.
+Um diese Funktionen zu nutzen, können Benutzer von Adobe Campaign in der Kontrollinstanz Vorlagen für Transaktionsnachrichten erstellen, eine Nachrichtenvorschau mithilfe einer Testadresse erzeugen, Berichte anzeigen und Ausführungsinstanzen überwachen.
 
-* Single Execution instance
-Bei der Interaktion mit einer von der Adobe gehosteten Ausführungsinstanz kann ein externes System zunächst ein Sitzungstoken abrufen (das standardmäßig nach 24 Stunden abläuft), indem ein API-Aufruf an die Methode zur Sitzungsanmeldung unter Verwendung einer angegebenen Kontoanmeldung und eines Kennworts gesendet wird.
-Nachdem die Ausführungsinstanz das sessionToken als Antwort auf den obigen Aufruf bereitgestellt hat, kann die externe Anwendung SOAP-API-Aufrufe (rtEvents oder batchEvents) zum Senden von Nachrichten durchführen, ohne dass in jedem SOAP-Aufruf das Konto-Login und das Kennwort eingeschlossen werden müssen.
+* Einzelne Ausführungsinstanz
+Bei der Interaktion mit einer gehosteten Message Center-Ausführungsinstanz kann ein externes System zunächst ein Sitzungs-Token abrufen (das standardmäßig nach 24 Stunden abläuft), indem ein API-Aufruf an die Sitzungs-Anmeldemethode unter Verwendung eines bereitgestellten Kontoanmeldenamens und eines Passworts erfolgt.
+Dann kann die externe Anwendung mit dem von der Ausführungsinstanz als Antwort auf den obigen Aufruf bereitgestellten Sitzungs-Token SOAP-API-Aufrufe (rtEvents oder batchEvents) ausführen, um Nachrichten zu senden, ohne dass in jedem SOAP-Aufruf der Kontoanmeldename und das Passwort enthalten sein müssen.
 
 * Mehrere Ausführungsinstanzen
-In einer Ausführungsarchitektur mit mehreren Zellen, bei der mehrere Ausführungsinstanzen hinter einem Lastenausgleich stehen, durchläuft die von der externen Anwendung aufgerufene Anmeldemethode den Lastenausgleich: Aus diesem Grund kann keine Token-basierte Authentifizierung verwendet werden. Eine Benutzer-/Kennwortbasierte Authentifizierung ist erforderlich.
+In einer mehrzelligen Ausführungsarchitektur mit mehreren Ausführungsinstanzen hinter einem Load-Balancer durchläuft die vom externen Programm aufgerufene Anmeldemethode den Load-Balancer: Aus diesem Grund kann keine Token-basierte Authentifizierung verwendet werden. Eine Benutzer-/Passwortbasierte Authentifizierung ist erforderlich.
 
 [!DNL :arrow_upper_right:] Weitere Informationen zu Transaktionsnachrichten-Ereignissen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
