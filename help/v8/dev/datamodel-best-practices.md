@@ -3,10 +3,10 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Best Practices für Datenmodelle
 description: Best Practices für die Erweiterung von Campaign-Datenmodellen
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 94%
+source-wordcount: '2686'
+ht-degree: 93%
 
 ---
 
@@ -71,7 +71,7 @@ Felder müssen in einer Tabelle gespeichert werden, wenn sie Zielgruppenbestimmu
 
 ### Auswahl von Schlüsseln {#choice-of-keys}
 
-Zusätzlich zu dem in den meisten Tabellen standardmäßig definierten **autouid** sollten Sie ggf. einige logische oder geschäftliche Schlüssel (Kontonummer, Kundennummer usw.) hinzufügen. Diese können später für Importe, Abstimmungen oder Daten-Packages verwendet werden. Weitere Informationen hierzu finden Sie unter [Kennungen](#identifiers).
+Zusätzlich zu den standardmäßig in den meisten Tabellen definierten **autouid** und **autopk** sollten Sie erwägen, einige logische oder geschäftliche Schlüssel hinzuzufügen (Kontonummer, Kundennummer usw.). Diese können später für Importe, Abstimmungen oder Daten-Packages verwendet werden. Weitere Informationen hierzu finden Sie unter [Kennungen](#identifiers).
 
 Effiziente Schlüssel sind unverzichtbar für hohe Leistung. Mit Snowflake können Sie numerische oder zeichenfolgenbasierte Datentypen als Schlüssel für Tabellen einfügen.
 
@@ -110,7 +110,7 @@ Dieser benutzerdefinierte Schlüssel ist der eigentliche Hauptschlüssel des Dat
 
 Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur Verfügung:
 * Kombination aus einem automatisch erstellten Schlüssel (ID) und einem internen Schlüssel (benutzerdefiniert). Diese Option ist interessant, wenn Ihr Systemschlüssel ein zusammengesetzter Schlüssel oder keine Ganzzahl ist. Mit Snowflake bieten Ganzzahlen oder string-basierte Schlüssel höhere Leistungen in großen Tabellen und in Verbindung mit anderen Tabellen.
-* Verwendung des Primärschlüssels als Primärschlüssel des externen Systems. Diese Lösung wird in der Regel bevorzugt, da sie das Importieren und Exportieren von Daten durch einen einheitlichen Schlüssel zwischen verschiedenen Systemen vereinfacht. Autouuid sollte deaktiviert werden, wenn der Schlüssel &quot;id&quot; heißt und mit externen Werten ausgefüllt wird (also nicht automatisch erstellt werden soll).
+* Verwendung des Primärschlüssels als Primärschlüssel des externen Systems. Diese Lösung wird in der Regel bevorzugt, da sie das Importieren und Exportieren von Daten durch einen einheitlichen Schlüssel zwischen verschiedenen Systemen vereinfacht. **Autouuid sollte deaktiviert werden, wenn der Schlüssel &quot;id&quot; heißt und mit externen Werten ausgefüllt wird (also nicht automatisch erstellt werden soll).**
 
 >[!CAUTION]
 >
@@ -123,7 +123,7 @@ Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur 
 
 Achten Sie bei großen Tabellen auf die &quot;eigene&quot; Integrität. Durch das Löschen von Datensätzen, die über große Tabellen mit &quot;eigener&quot; Integrität verfügen, kann die Instanz möglicherweise angehalten werden. Die Tabelle wird gesperrt; die Löschungen werden einzeln vorgenommen. Daher ist es am besten, bei untergeordneten Tabellen mit großen Volumen &quot;neutrale&quot; Integrität anzuwenden.
 
-Das Deklarieren einer Relation als externer Join ist nicht gut für die Leistung. Der Null-ID-Datensatz emuliert die externe Join-Funktion. Es müssen keine externen Joins deklariert werden, wenn die Relation die Autouuid verwendet.
+Das Deklarieren einer Relation als externer Join ist nicht gut für die Leistung. Der Null-ID-Datensatz emuliert die externe Join-Funktion. Es ist nicht erforderlich, externe Joins zu deklarieren, wenn der Link die **autouid** verwendet.
 
 Obwohl es möglich ist, eine beliebige Tabelle in einem Workflow einzubinden, empfiehlt Adobe, allgemeine Relationen zwischen Ressourcen direkt in der Definition der Datenstruktur festzulegen.
 
