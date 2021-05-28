@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Campaign v8
-title: Dokumente für Campaign v8
+title: Dokumente zu Campaign v8
 hide: true
 source-git-commit: 6e098ffa538c4348889a35eb454da747c80d6262
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 40%
+ht-degree: 86%
 
 ---
 
@@ -22,24 +22,24 @@ ht-degree: 40%
    + [Wichtigste Funktionen](start/whats-new.md)
    + [Versionshinweise](start/release-notes.md)
    + [Bekannte Einschränkungen](start/known-limitations.md)
-   + [Classic v7 bis v8](start/capability-matrix.md)
+   + [Wechsel von Classic v7 zu v8](start/capability-matrix.md)
 + Starten {#start}
    + [Erste Schritte](start/get-started.md)
-   + [Profile und Zielgruppen](start/audiences.md)
+   + [Profile und Audiences](start/audiences.md)
    + [Datenimport](start/import.md)
-   + [Erstellen von Kampagnen](start/campaigns.md)
+   + [Kampagnen erstellen](start/campaigns.md)
    + [Nachrichten senden](start/create-message.md)
    + [Abonnements verwalten](start/subscriptions.md)
-   + [Tracken und überwachen](start/tracking.md)
+   + [Verfolgen und überwachen](start/tracking.md)
    + [Metriken und Berichte](start/reporting.md)
    + [Häufig gestellte Fragen](start/campaign-faq.md)
-+ {#implement} implementieren
++ Implementieren {#implement}
    + [Umsetzung](start/implement.md)
    + [Instanz anpassen](dev/customize.md)
    + [Sicherheitsrichtlinien](config/security.md)
-   + [Webanwendungen und Formulare erstellen](dev/webapps.md)
+   + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
    + [Best Practices für Datenmodelle](dev/datamodel-best-practices.md)
-+ {#deploy} bereitstellen
++ Freigeben {#deploy}
    + [Kompatibilitätsmatrix](start/compatibility-matrix.md)
    + [Verbindung zu Campaign herstellen](start/connect.md)
    + [Berechtigungen](start/permissions.md)
@@ -69,26 +69,26 @@ ht-degree: 40%
    + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
    + [Externe Konten](config/external-accounts.md)
 + Verbinden {#connect}
-   + [Verbindung mit anderen Lösungen](connect/integration.md)
+   + [Verbindungen zu anderen Lösungen herstellen](connect/integration.md)
    + [Campaign + Analytics](connect/ac-aa.md)
-   + [Kampagne + Experience Manager](connect/ac-aem.md)
-   + [Kampagne + Ziel](connect/ac-at.md)
-   + [Kampagne + RTCDP](connect/ac-rtcdp.md)
+   + [Campaign + Experience Manager](connect/ac-aem.md)
+   + [Campaign + Target](connect/ac-at.md)
+   + [Campaign + Real-Time CDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
-   + [Kampagne + externe Datenbank](connect/fda.md)
-   + [Campaign und Ihr CRM](connect/crm.md)
-+ Entwicklerressourcen {#architecture}
-   + [Globale Prinzipien](dev/general-architecture.md)
+   + [Campaign + externe Datenbank](connect/fda.md)
+   + [Campaign + Ihr CRM-System](connect/crm.md)
++ Ressourcen für Entwickler{#architecture}
+   + [Allgemeine Prinzipien](dev/general-architecture.md)
    + [Architektur](dev/architecture.md)
    + [Datenmodell](dev/datamodel.md)
-   + Schemas und Formulare {#shemas-forms}
-      + [Arbeiten mit Schemata](dev/schemas.md)
-      + [Erstellen von Schemata](dev/create-schema.md)
+   + Schemata und Formulare {#shemas-forms}
+      + [Mit Schemata arbeiten](dev/schemas.md)
+      + [Schemata erstellen](dev/create-schema.md)
       + [Schemata erweitern](dev/extend-schema.md)
       + [Schemastruktur](dev/schema-structure.md)
       + [Datenbank-Mapping](dev/database-mapping.md)
-      + [PI-Ansicht beschränken](dev/restrict-pi-view.md)
-      + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
+      + [Anzeige von personenbezogenen Daten einschränken](dev/restrict-pi-view.md)
+      + [Benutzerdefinierte Empfängertabelle verwenden](dev/custom-recipient.md)
       + [Datenbank aktualisieren](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
    + APIs {#api}
