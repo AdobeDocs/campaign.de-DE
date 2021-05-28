@@ -10,21 +10,21 @@ exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 2%
+ht-degree: 32%
 
 ---
 
 # Erste Schritte mit [!DNL Campaign] APIs{#gs-ac-api}
 
-[!DNL Adobe Campaign] enthält eine Reihe von JavaScript-Funktionen, die Sie verwenden können:
+[!DNL Adobe Campaign]In stehen Ihnen eine Reihe von JavaScript-Funktionen zur Verfügung, die Sie wie folgt verwenden können:
 
 * in Skripten - in [!DNL Adobe Campaign]-Workflows
-* über APIs - von externen Systemen
+* Über APIs für externe Systeme
 
-Sie können JavaScript-APIs verwenden, um in die Campaign-Cloud-Datenbank zu schreiben oder aus der Datenbank zu lesen:
+Sie können JavaScript-APIs verwenden, um in der Cloud-Datenbank von Campaign Schreibvorgänge auszuführen oder aus ihr Daten abzufragen:
 
-* Geschäftsspezifische APIs, mit denen Sie auf jedes Objekt reagieren können: Sendungen, Workflows, Abonnements usw. Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html).
-* Generische Daten greifen auf APIs zum Abfragen der Datenmodelldaten zu. Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html).
+* Business-orientierte APIs, mit denen Sie auf diese einzelnen Objekte, also Versand, Workflows, Abonnements usw., Aktionen ausführen können. Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=de#configuring-campaign-classic).
+* APIs zum allgemeinen Datenzugriff, mittels derer Datenmodell-Daten abgefragt werden können. Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=de).
 
 Campaign v8 kann mit zwei Datenbanken verwendet werden: eine lokale Datenbank für die Echtzeit-Messaging- und Einzelabfragen der Benutzeroberfläche und das Schreiben über APIs sowie eine Cloud-Datenbank für die Kampagnenausführung, Berichterstellung, Datenerfassung, Batch-Abfragen und Workflow-Ausführung.
 
@@ -44,7 +44,7 @@ Bevor Sie [!DNL Adobe Campaign]-APIs verwenden, müssen Sie sich mit den folgend
 Um APIs verwenden und mit [!DNL Adobe Campaign] interagieren zu können, müssen Sie auch mit Ihrem Datenmodell vertraut sein.
 
 >[!NOTE]
->Sie können eine vollständige Beschreibung Ihres Datenmodells generieren. Weiterführende Informationen finden Sie auf [dieser Seite](datamodel.md).
+>Sie können eine vollständige Beschreibung Ihres Datenmodells erstellen. Weiterführende Informationen finden Sie auf [dieser Seite](datamodel.md).
 
 ## [!DNL Campaign] API-Staging-Mechanismus
 
