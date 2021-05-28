@@ -1,18 +1,18 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Struktur des Kampagnenschemas
-description: Struktur des Kampagnenschemas
+title: Schemastruktur von Campaign
+description: Schemastruktur von Campaign
 source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
 source-wordcount: '1403'
-ht-degree: 12%
+ht-degree: 99%
 
 ---
 
 # Schemastruktur{#schema-structure}
 
-Die grundlegende Struktur von `<srcschema>` lautet wie folgt:
+Die Grundstruktur eines `<srcschema>` sieht wie folgt aus:
 
 ```
 <srcSchema>
@@ -52,7 +52,7 @@ Die grundlegende Struktur von `<srcschema>` lautet wie folgt:
 </srcSchema>
 ```
 
-Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den Attributen **name** und **namespace** zur Angabe des Schemanamens und des Namensraums enthalten.
+Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den Attributen **name** und **namespace** zur Angabe des Schemanamens und des Namespace enthalten.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -60,7 +60,7 @@ Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den At
 </srcSchema>
 ```
 
-Verwenden Sie den folgenden XML-Inhalt, um die Struktur eines Datenschemas zu veranschaulichen:
+Verwenden wir den folgenden XML-Inhalt, um die Struktur eines Schemas zu illustrieren:
 
 ```
 <recipient email="John.doe@aol.com" created="AAAA/DD/MM" gender="1"> 
@@ -68,7 +68,7 @@ Verwenden Sie den folgenden XML-Inhalt, um die Struktur eines Datenschemas zu ve
 </recipient>
 ```
 
-Mit dem entsprechenden Datenschema:
+Mit dem zugehörigen Datenschema:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -106,46 +106,46 @@ In unserem Beispielschema sind dies:
 </element>
 ```
 
-Die folgenden Regeln müssen eingehalten werden:
+Folgende Regeln müssen eingehalten werden:
 
-* Jede **`<element>`** und **`<attribute>`** müssen anhand des Namens über das Attribut **name** identifiziert werden.
+* Jedes **`<element>`** und **`<attribute>`** müssen mit dem Namen über das Attribut **name** identifiziert werden.
 
    >[!CAUTION]
    >
-   >Der Name des Elements sollte kurz sein, vorzugsweise in englischer Sprache, und nur autorisierte Zeichen gemäß XML-Benennungsregeln enthalten.
+   >Der Name des Elements sollte kurz sein, vorzugsweise in Englisch, und nur gemäß den XML-Benennungsregeln zulässige Zeichen enthalten.
 
-* Nur **`<element>`** -Elemente können **`<attribute>`** -Elemente und **`<element>`** -Elemente in der XML-Struktur enthalten.
-* Ein **`<attribute>`** -Element muss einen eindeutigen Namen innerhalb eines **`<element>`** haben.
+* In der XML-Struktur dürfen nur **`<element>`**-Elemente **`<attribute>`**-Elemente und **`<element>`**-Elemente enthalten.
+* Ein **`<attribute>`**-Element muss einen eindeutigen Namen innerhalb eines **`<element>`** haben.
 * Die Verwendung von **`<elements>`** in mehrzeiligen Datenzeichenfolgen wird empfohlen.
 
 ## Datentypen {#data-types}
 
 Der Datentyp wird über das Attribut **type** in den Elementen **`<attribute>`** und **`<element>`** eingegeben.
 
-Eine detaillierte Liste finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
+Eine detaillierte Liste finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic).
 
-Wenn dieses Attribut nicht ausgefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Ist dies der Fall, wird es nur verwendet, um die Elemente hierarchisch zu strukturieren (**`<location>`** -Element in unserem Beispiel).
+Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Wenn es gefüllt ist, wird es nur zur hierarchischen Strukturierung der Elemente verwendet (Element **`<location>`** in unserem Beispiel).
 
 Die folgenden Datentypen werden in Schemata unterstützt:
 
-* **string**: Zeichenfolge. Beispiele: Vorname, Stadt usw.
+* **string**: Zeichenfolge. Beispiele: ein Vorname, eine Stadt usw.
 
-   Die Größe kann über das Attribut **length** angegeben werden (optional, Standardwert &quot;255&quot;).
+   Die Größe kann über das Attribut **length** (optional, Standardwert &quot;255&quot;) angegeben werden.
 
-* **boolean**: Boolesches Feld. Beispiel möglicher Werte: true/false, 0/1, ja/nein usw.
-* **byte**,  **short**,  **long**: Ganzzahlen (1 Byte, 2 Byte, 4 Byte). Beispiele: Alter, Kontonummer, Anzahl Punkte usw.
-* **double**: Gleitkommazahl mit doppelter Genauigkeit. Beispiele: Preis, Preis usw.
-* **date**,  **datetime**: Datum und Datum + Uhrzeit. Beispiele: Geburtsdatum, Kaufdatum usw.
+* **boolean**: Boolesches Feld. Beispiel für mögliche Werte: true/false, 0/1, yes/no usw.
+* **byte**, **short**, **long**: ganze Zahlen (1 Byte, 2 Byte, 4 Byte). Beispiele: Alter, Kontonummer, Anzahl der Punkte usw.
+* **double**: Gleitkommazahl doppelter Genauigkeit. Beispiele: Preis, Quote usw.
+* **date**, **datetime**: Datum und Datum + Uhrzeit. Beispiele: Geburtsdatum, Kaufdatum usw.
 * **datetimenotz**: Datum + Uhrzeit ohne Zeitzonendaten.
-* **timespan**: Dauern. Beispiel: Prioritätsstufe.
-* **Memo**: Lange Textfelder (mehrere Zeilen). Beispiele: eine Beschreibung, einen Kommentar usw.
-* **uuid**: Felder &quot;uniqueidentifier&quot;
+* **timespan**: Dauer. Beispiel: Betriebszugehörigkeit.
+* **memo**: Langtextfelder (mehrere Zeilen). Beispiele: eine Beschreibung, ein Kommentar usw.
+* **uuid**: eindeutig identifizierende Felder
 
    >[!NOTE]
    >
-   >Um das Feld **uuid** zu enthalten, muss die Funktion &quot;newuid()&quot; hinzugefügt und mit dem Standardwert ausgefüllt werden.
+   >Um ein **uuid**-Feld zu enthalten, muss die Funktion &quot;newuid()&quot;hinzugefügt und mit ihrem Standardwert gefüllt werden.
 
-Im Folgenden finden Sie unser Beispielschema mit den eingegebenen Typen:
+Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -162,15 +162,15 @@ Im Folgenden finden Sie unser Beispielschema mit den eingegebenen Typen:
 
 ## Eigenschaften {#properties}
 
-Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mit verschiedenen Eigenschaften angereichert werden. Sie können einen Titel eingeben, um das aktuelle Element zu beschreiben.
+Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mit verschiedenen Eigenschaften angereichert werden. Sie können ein Label ausfüllen, um das aktuelle Element zu beschreiben.
 
-### Beschriftungen und Beschreibungen {#labels-and-descriptions}
+### Labels und Beschreibungen {#labels-and-descriptions}
 
 * Mit der Eigenschaft **label** können Sie eine kurze Beschreibung eingeben.
 
    >[!NOTE]
    >
-   >Die Bezeichnung ist mit der aktuellen Sprache der Instanz verknüpft.
+   >Das Label ist mit der aktuellen Sprache der Instanz verknüpft.
 
    **Beispiel**:
 
@@ -178,13 +178,13 @@ Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mi
    <attribute name="email" type="string" length="80" label="Email"/>
    ```
 
-   Der Titel wird im Eingabeformular der Adobe Campaign-Clientkonsole angezeigt:
+   Das Label wird vom Formular der Adobe Campaign-Client-Konsole aus angezeigt:
 
    ![](assets/schema_label.png)
 
 * Mit der Eigenschaft **desc** können Sie eine lange Beschreibung eingeben.
 
-   Die Beschreibung wird im Formular in der Statusleiste des Hauptfensters der Adobe Campaign-Clientkonsole angezeigt.
+   Die Beschreibung ist vom Formular aus in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole zu finden.
 
    >[!NOTE]
    >
@@ -200,24 +200,24 @@ Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mi
 
 Mit der Eigenschaft **default** können Sie einen Ausdruck definieren, der bei der Inhaltserstellung einen Standardwert zurückgibt.
 
-Der Wert muss ein Ausdruck sein, der mit der XPath-Sprache konform ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#reference-with-xpath).
+Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#reference-with-xpath).
 
 **Beispiel**:
 
 * Aktuelles Datum: **default=&quot;GetDate()&quot;**
 * Zähler: **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
 
-   In diesem Beispiel wird der Standardwert mithilfe der Verkettung einer Zeichenfolge erstellt und die Funktion **CounterValue** mit einem freien Zählernamen aufgerufen. Die zurückgegebene Zahl wird bei jeder Einfügung um 1 inkrementiert.
+   In diesem Beispiel wird der Standardwert mithilfe der Verkettung einer Zeichenfolge und des Aufrufs der Funktion **CounterValue** mit einem freien Zählernamen erstellt. Die zurückgegebene Zahl wird bei jedem Einfügen um 1 erhöht.
 
    >[!NOTE]
    >
-   >In der Adobe Campaign-Clientkonsole wird der Knoten **[!UICONTROL Administration>Zähler]** zum Verwalten von Zählern verwendet.
+   >In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Zähler]** verwendet, um Zähler zu verwalten.
 
-Um einen Standardwert mit einem Feld zu verknüpfen, können Sie den`<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die Variable `<default>  or  <sqldefault>   field.  </sqldefault> </default>` verwenden.
 
-`<default>` : ermöglicht es Ihnen, das Feld beim Erstellen von Entitäten mit einem Standardwert vorab auszufüllen. Der Wert ist kein SQL-Standardwert.
+`<default>` : ermöglicht es Ihnen, das Feld beim Erstellen von Entitäten mit einem Standardwert vorauszufüllen. Der Wert wird kein SQL-Standardwert sein.
 
-`<sqldefault>` : ermöglicht Ihnen, beim Erstellen eines Felds einen Mehrwert zu erzielen. Dieser Wert wird als SQL-Ergebnis angezeigt. Während einer Schemaaktualisierung wirkt sich dieser Wert nur auf die neuen Datensätze aus.
+`<sqldefault>` : ermöglicht es Ihnen, beim Erstellen eines Felds einen zusätzlichen Wert zu erhalten. Dieser Wert wird als SQL-Ergebnis angezeigt. Während einer Aktualisierung des Schemas wirkt sich dieser Wert nur auf die neuen Einträge aus.
 
 ### Auflistungen {#enumerations}
 
@@ -229,25 +229,25 @@ Mit der Eigenschaft **userEnum** können Sie eine freie Auflistung definieren, u
 
 Der Name der Auflistung kann frei gewählt und für andere Felder freigegeben werden.
 
-Diese Werte werden in einer Dropdown-Liste des Formulars angezeigt:
+Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 
 ![](assets/schema_user_enum.png)
 
 >[!NOTE]
 >
->In der Adobe Campaign-Clientkonsole wird der Knoten **[!UICONTROL Administration > Auflistungen]** zum Verwalten von Auflistungen verwendet.
+>In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Auflistungen]** zum Verwalten von Auflistungen verwendet.
 
-#### Enumeration festlegen {#set-enumeration}
+#### Auflistung festlegen {#set-enumeration}
 
 Mit der Eigenschaft **enum** können Sie eine feste Auflistung definieren, die verwendet wird, wenn die Liste der möglichen Werte im Voraus bekannt ist.
 
-Das Attribut **enum** bezieht sich auf die Definition einer Auflistungsklasse, die im Schema außerhalb des Hauptelements notiert ist.
+Das Attribut **enum** bezieht sich auf die Definition einer Auflistungsklasse, die im Schema außerhalb des Hauptelements gefüllt wird.
 
-Auflistungen ermöglichen es dem Benutzer, einen Wert aus einer Dropdown-Liste auszuwählen, anstatt den Wert in ein reguläres Eingabefeld einzugeben:
+Auflistungen ermöglichen es dem Benutzer, einen Wert aus einer Dropdown-Liste auszuwählen, anstatt ihn in ein reguläres Eingabefeld einzugeben:
 
 ![](assets/schema_enum.png)
 
-Beispiel einer Auflistungsdeklaration im Datenschema:
+Beispiel für eine Deklaration einer Auflistung im Datenschema:
 
 ```
 <enumeration name="gender" basetype="byte" default="0">    
@@ -257,27 +257,27 @@ Beispiel einer Auflistungsdeklaration im Datenschema:
 </enumeration>
 ```
 
-Über das Element **`<enumeration>`** wird eine Auflistung außerhalb des Hauptelements deklariert.
+Eine Auflistung wird über das Element **`<enumeration>`** außerhalb des Hauptelements deklariert.
 
-Die Auflistungseigenschaften lauten wie folgt:
+Die Eigenschaften der Auflistung lauten wie folgt:
 
-* **baseType**: Datentyp, der den Werten zugeordnet ist,
+* **baseType**: Datentyp, der mit den Werten verknüpft ist,
 * **label**: Beschreibung der Auflistung,
 * **name**: Name der Auflistung,
-* **Standard**: Standardwert der Auflistung.
+* **default**: Standardwert der Auflistung.
 
-Die Auflistungswerte werden im Element **`<value>`** mit den folgenden Attributen deklariert:
+Die Werte für die Auflistung werden im Element **`<value>`** mit den folgenden Attributen deklariert:
 
 * **name**: Name des intern gespeicherten Werts,
-* **label**: in der grafischen Benutzeroberfläche angezeigt.
+* **label**: über die grafische Oberfläche angezeigtes Label.
 
-#### dbenum enumeration {#dbenum-enumeration}
+#### dbenum-Auflistung {#dbenum-enumeration}
 
-* Mit der Eigenschaft **dbenum** können Sie eine Auflistung definieren, deren Eigenschaften denen der Eigenschaft **enum** ähneln.
+* Mit der Eigenschaft **dbenum** können Sie eine Auflistung definieren, deren Eigenschaften denen der Eigenschaft **enum** ähnlich sind.
 
    Das Attribut **name** speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
 
-   Die Werte werden über den Knoten **[!UICONTROL Administration>Auflistungen]** definiert.
+   Die Werte werden über den Knoten **[!UICONTROL Administration > Auflistungen]** definiert.
 
    Diese Auflistung dient beispielsweise zur Angabe der Art von Kampagnen.
 
@@ -285,7 +285,7 @@ Die Auflistungswerte werden im Element **`<value>`** mit den folgenden Attribute
 
 ### Beispiel {#example}
 
-Beispiel des um diese Eigenschaften ergänzten Schemas:
+Beispiel des um diese Eigenschaften ergänzten Schemata:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -310,9 +310,9 @@ Beispiel des um diese Eigenschaften ergänzten Schemas:
 
 Eine Kollektion ist eine Liste von Elementen mit gleichem Namen und auf gleicher Hierarchieebene.
 
-Mit dem Attribut **unbound** mit dem Wert &quot;true&quot;können Sie ein Kollektionselement ausfüllen.
+Mithilfe des Attributs **unbound** mit dem Wert &quot;true&quot; können Sie ein Kollektionselement füllen.
 
-**Beispiel**: Definition des  **`<group>`** Kollektionselements im Schema.
+**Beispiel**: Definition des Kollektionselements **`<group>`** im Schema.
 
 ```
 <element name="group" unbound="true" label="List of groups">
@@ -337,47 +337,47 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 
 **Beispiel**:
 
-* **@email**: wählt die E-Mail aus,
-* **location/@city**: markiert das Attribut &quot;city&quot;unter dem  **`<location>`** Element
-* **../@email**: wählt die E-Mail-Adresse aus dem übergeordneten Element des aktuellen Elements aus
-* **Gruppe`[1]/@label`**: markiert das Attribut &quot;label&quot;, das dem ersten  **`<group>`** Kollektionselement untergeordnet ist
-* **Gruppe`[@label='test1']`**: markiert das Attribut &quot;label&quot;, das dem  **`<group>`** Element untergeordnet ist und den Wert &quot;test1&quot;enthält
+* **@email**: wählt die E-Mail-Adresse aus,
+* **location/@city**: wählt das Attribut &quot;city&quot; unter dem Element **`<location>`** aus,
+* **../@email**: wählt die E-Mail-Adresse aus dem übergeordneten Element des aktuellen Elements aus,
+* **group`[1]/@label`**: wählt das Attribut &quot;label&quot; aus, das dem ersten **`<group>`**- Kollektionselement untergeordnet ist,
+* **group`[@label='test1']`**: wählt das Attribut &quot;label&quot; aus, das dem Element **`<group>`** untergeordnet ist und den Wert &quot;test1&quot; enthält.
 
 >[!NOTE]
 >
->Eine zusätzliche Einschränkung wird hinzugefügt, wenn der Pfad ein Unterelement passiert. In diesem Fall muss der folgende Ausdruck in Klammern gesetzt werden:
+>Eine zusätzliche Einschränkung wird hinzugefügt, wenn der Pfad ein Unterelement kreuzt. In diesem Fall muss der folgende Ausdruck zwischen Klammern stehen:
 >
->* **location/@** city ist ungültig; verwenden  **`[location/@city]`**
->* **`[@email]`** und  **@** emailare-Entsprechung
+>* **location/@city** ist nicht gültig; verwenden Sie **`[location/@city]`**
+>* **`[@email]`** und **@email** entsprechen einander
 
 >
 
 
 
-Es ist auch möglich, komplexe Ausdrücke zu definieren, z. B. die folgenden arithmetischen Vorgänge:
+Es ist auch möglich, komplexe Ausdrücke wie die folgenden arithmetischen Operationen zu definieren:
 
-* **@gender+1**: fügt dem Inhalt des  **** genderattribute 1 hinzu,
-* **@email + &#39;(&#39;+@created+&#39;)&#39;**: erstellt einen String, indem der Wert der E-Mail-Adresse, die zum Erstellungsdatum hinzugefügt wurde, zwischen Klammern steht (setzen Sie die Konstante für den String-Typ in Anführungszeichen).
+* **@gender+1**: fügt 1 zum Inhalt des Attributs **gender** hinzu,
+* **@email + &#39;(&#39;+@created+&#39;)&#39;**: erstellt eine Zeichenfolge unter Verwendung des Werts der E-Mail-Adresse, zu der das Erstellungsdatum zwischen Klammern hinzugefügt wird (für den Typ &quot;string&quot; muss die Konstante in Anführungszeichen gesetzt werden).
 
-Den Ausdrücken wurden Funktionen auf hoher Ebene hinzugefügt, um das Potenzial dieser Sprache zu erweitern.
+Die Ausdrücke wurden um Funktionen auf hoher Ebene erweitert, um das Potenzial dieser Sprache zu erweitern.
 
-Sie können über einen beliebigen Ausdruckseditor in der Adobe Campaign-Clientkonsole auf die Liste der verfügbaren Funktionen zugreifen:
+In der Adobe Campaign-Client-Konsole können Sie über einen beliebigen Ausdruckseditor auf die Liste der verfügbaren Funktionen zugreifen:
 
 ![](assets/schema_function.png)
 
 **Beispiel**:
 
-* **GetDate()**: gibt das aktuelle Datum aus
-* **Year(@created)**: gibt das Jahr des Datums zurück, das im Attribut &quot;created&quot;enthalten ist.
+* **GetDate()**: gibt das aktuelle Datum zurück,
+* **Year(@created)**: gibt das Jahr des Datums zurück, das im Attribut &quot;created&quot; enthalten ist,
 * **GetEmailDomain(@email)**: gibt die Domain der E-Mail-Adresse zurück.
 
-## Erstellen einer Zeichenfolge über die Compute String {#building-a-string-via-the-compute-string}
+## Erstellen einer Zeichenfolge über den Compute string {#building-a-string-via-the-compute-string}
 
-Ein **Compute string** ist ein XPath-Ausdruck, der verwendet wird, um eine Zeichenfolge zu erstellen, die einen Datensatz in einer mit dem Schema verknüpften Tabelle darstellt. **Compute** String wird hauptsächlich in der grafischen Oberfläche verwendet, um den Titel eines ausgewählten Datensatzes anzuzeigen.
+Ein **Compute string** ist ein XPath-Ausdruck, mit dem eine Zeichenfolge erstellt wird, die einen Eintrag in einer mit dem Schema verknüpften Tabelle darstellt. **Compute string** wird hauptsächlich in der grafischen Oberfläche verwendet, um die Beschriftung eines ausgewählten Eintrags anzuzeigen.
 
-Der **Compute string** wird über das Element **`<compute-string>`** unter dem Hauptelement des Datenschemas definiert. Ein **expr** -Attribut enthält einen XPath-Ausdruck zur Berechnung der Anzeige.
+Der **Compute string** wird über das Element **`<compute-string>`** unter dem Hauptelement des Datenschemas definiert. Ein **expr**-Attribut enthält einen XPath-Ausdruck zur Berechnung der Anzeige.
 
-**Beispiel**: Compute string of the recipient table.
+**Beispiel**: Compute string der Empfänger-Tabelle.
 
 ```
 <srcSchema name="recipient" namespace="nms">  
@@ -392,4 +392,4 @@ Ergebnis der berechneten Zeichenfolge für einen Empfänger: **Doe John (john.do
 
 >[!NOTE]
 >
->Wenn das Schema keine Compute string enthält, wird standardmäßig eine Compute string -Zeichenfolge mit den Werten des Primärschlüssels des Schemas gefüllt.
+>Wenn das Schema keinen Compute string enthält, wird standardmäßig ein Compute string mit den Werten des Primärschlüssels des Schemas gefüllt.
