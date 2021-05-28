@@ -10,40 +10,40 @@ exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 11%
+ht-degree: 59%
 
 ---
 
-# Importieren von Daten in Campaign {#ootb-profiles}
+# Daten in Campaign importieren {#ootb-profiles}
 
-Campaign unterstützt Sie beim Hinzufügen von Kontakten zur Cloud-Datenbank. Sie können eine Datei laden, mehrere Kontaktaktualisierungen planen und automatisieren, Daten im Web erfassen oder Profilinformationen direkt in die Empfängertabelle eingeben.
+Mit Campaign können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können eine Datei laden, mehrere Kontaktaktualisierungen planen und automatisieren, Daten im Internet sammeln oder Profilinformationen direkt in die Empfängertabelle eingeben.
 
 [!DNL :bulb:] Erste Schritte mit  [](audiences.md)
 [!DNL :bulb:] ZielgruppenErläuterung des Campaign- [Datenmodells](../dev/datamodel.md)
 
 ## Profile in einen Workflow importieren
 
-Profilimporte werden in dedizierten Vorlagen konfiguriert, die über Workflows über die Aktivität **Import** ausgeführt werden. Sie können automatisch anhand eines Zeitplans wiederholt werden, um beispielsweise den Datenaustausch zwischen verschiedenen Informationssystemen zu automatisieren. Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/import-export-workflows.html).
+Profilimporte werden in speziellen Vorlagen konfiguriert, die durch Workflows über die Aktivität **Importieren** ausgeführt werden. Sie können automatisch anhand eines Zeitplans wiederholt werden, um beispielsweise den Datenaustausch zwischen verschiedenen Informationssystemen zu automatisieren. Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/import-export-workflows.html?lang=de).
 
 ![](assets/import-wf.png)
 
 Weitere Informationen finden Sie in der Campaign Classic v7-Dokumentation:
 
-[!DNL :arrow_upper_right:] [Erste Schritte mit Importen und Exporten](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html)
+[!DNL :arrow_upper_right:] [Erste Schritte mit Importen und Exporten](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html?lang=de#getting-started)
 
-[!DNL :arrow_upper_right:] [Best Practices beim Import und Export](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html)
+[!DNL :arrow_upper_right:] [Best Practices beim Import und Export](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html?lang=de#getting-started)
 
-[!DNL :arrow_upper_right:] [Konfigurieren und Ausführen eines Imports](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html)
+[!DNL :arrow_upper_right:] [Konfigurieren und Ausführen eines Imports](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=de#getting-started)
 
-## Einzelimport ausführen
+## Einheitlichen Importe ausführen
 
-Erstellen Sie einen generischen Datenimportauftrag und führen Sie ihn aus, um Kontakte in die Cloud-Datenbank zu laden.
+Erstellen Sie einen generischen Datenimportauftrag zum Laden von Kontakten in die Cloud-Datenbank und führen Sie ihn aus.
 
 ![](assets/new-import.png)
 
-[!DNL :arrow_upper_right:] Erfahren Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html), wie Sie Einzelimport-Aufträge ausführen können, um Ihre Datenbank zu versorgen.
+[!DNL :arrow_upper_right:] Erfahren Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de#getting-started), wie Sie Einzelimport-Aufträge ausführen können, um Ihre Datenbank zu versorgen.
 
-## Erfassen von Profilen über Web-Apps
+## Erfassen von Profilen über Web-Anwendungen
 
 Verwenden Sie Campaign, um Webformulare zu erstellen und Profilinformationen einfach und effizient zu erfassen und zu verwalten. Sie können diese Formulare auf Ihrer Website freigeben, sodass Ihre Kontakte ihre Informationen einfach bereitstellen können. Ihre Informationen werden an Campaign gesendet, um ein Profil zu erstellen oder dessen Daten zu aktualisieren, sofern diese bereits in der Datenbank vorhanden sind.
 
@@ -53,6 +53,6 @@ Verwenden Sie Campaign, um Webformulare zu erstellen und Profilinformationen ein
 
 **Verwandte Themen**
 
-* [Erstellen von Zielgruppen](audiences.md)
-* [Profile deduplizieren](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html)
-* [Profildaten anreichern](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/enriching-data.html)
+* [Audiences erstellen](audiences.md)
+* [Profile deduplizieren](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=de#automating-with-workflows)
+* [Profildaten anreichern](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/enriching-data.html?lang=de#automating-with-workflows)
