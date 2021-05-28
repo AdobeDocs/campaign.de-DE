@@ -2,124 +2,124 @@
 solution: Campaign v8
 product: Adobe Campaign
 title: Allgemeine Architektur
-description: Allgemeine Architektur von Campaign v8
+description: Campaign v8 – allgemeine Architektur
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 0%
+ht-degree: 77%
 
 ---
 
 # Allgemeine Architektur{#general-architecture}
 
-Die typische Adobe Campaign-Lösungsimplementierung besteht aus den folgenden Komponenten:
+Die typische Implementierung einer Adobe Campaign-Lösung setzt sich aus folgenden Komponenten zusammen:
 
 * **Personalisierte Client-Umgebung**
 
-   Intuitive grafische Benutzeroberfläche, über die Benutzer Marketingangebote kommunizieren und verfolgen, Kampagnen erstellen, alle Marketing-Aktivitäten, Programme und Pläne - einschließlich E-Mails, Workflows und Landingpages - überprüfen und verwalten, Kundenprofile erstellen und verwalten sowie Zielgruppen erstellen können.
+   Eine intuitive grafische Benutzeroberfläche, über die neben der Kommunikation zu und dem Tracking von Marketing-Angeboten die Erstellung von Kampagnen möglich ist, sämtliche Marketing-Aktivitäten, -Programme und Pläne (einschließlich E-Mails, Workflows und Landingpages) geprüft und verwaltet werden können und zudem die Erstellung und Verwaltung von Kundenprofilen und Audiences durchgeführt werden kann.
 
 * **Entwicklungsumgebung**
 
-   Serverseitige Software, die die Marketingkampagnen über ausgewählte Kommunikationskanäle ausführt, einschließlich E-Mails, SMS, Push-Benachrichtigungen, Briefpost, Web oder Social, basierend auf den in der Benutzeroberfläche definierten Regeln und Workflows.
+   Eine Server-seitige Software, die Marketing-Kampagnen über benutzerseitig ausgewählte Kommunikationskanäle ausführt, die von E-Mail, SMS und Push-Benachrichtigungen über Briefpost bis zu Web- und Social-Media-Kanälen reichen. In der Benutzeroberfläche werden dabei zugehörige Regeln und Workflows festgelegt.
 
 * **Datenbank-Container**
 
-   Basierend auf der relationalen Datenbanktechnologie speichert die Adobe Campaign Cloud-Datenbank alle Kundeninformationen, Kampagnenkomponenten, Angebote und Workflows sowie Kampagnenergebnisse in Container der Kundendatenbank.
+   Basierend auf relationaler Datenbanktechnologie speichert die Adobe Campaign Cloud-Datenbank alle Kundeninformationen, Kampagnen, Angebote und Workflows sowie die Kampagne in Containern der Kundendatenbank.
 
 ## Personalisierte Client-Umgebung {#client-env}
 
-Der Zugriff auf die Anwendung erfolgt auf unterschiedliche Weise: Rich-Client-, Thin-Client- oder API-Integration.
+Der Zugriff auf das Programm erfolgt auf unterschiedliche Weise: Richclient-, Thinclient- oder API-Integration.
 
-* **Client Console**: Die Hauptbenutzeroberfläche des Programms ist ein natives Programm (unter Windows), das mit dem Adobe Campaign-Anwendungsserver mit Standardinternetprotokollen (SOAP, HTTP usw.) kommuniziert. Die Adobe Campaign Client Console bietet eine hervorragende Benutzerfreundlichkeit für die Produktivität, verwendet sehr wenig Bandbreite (durch Verwendung eines lokalen Caches) und ist für eine einfache Implementierung ausgelegt. Diese Konsole kann über einen Internetbrowser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezifische Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic generiert.
+* **Client Console**: Die Hauptbenutzeroberfläche des Programms ist ein natives Programm (unter Windows), das mit dem Adobe Campaign-Anwendungsserver mit Standardinternetprotokollen (SOAP, HTTP usw.) kommuniziert. Die Adobe Campaign-Client-Konsole bietet hohe Benutzerfreundlichkeit für hohe Produktivität, verbraucht sehr wenig Bandbreite (durch die Verwendung eines lokalen Cache) und wurde für eine einfache Implementierung entwickelt. Diese Konsole kann über einen Internetbrowser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezifische Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic generiert.
 
-   [!DNL :bulb:] [Erfahren Sie mehr über die Campaign Client Console](../start/connect.md).
+   [!DNL :bulb:] [Erfahren Sie mehr über die Campaign-Client-Konsole](../start/connect.md).
 
 * **Webzugriff**: auf Teile der Anwendung kann über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche zugegriffen werden, einschließlich Berichterstellungsmodul, Versandvalidierungsphasen, Instanzüberwachung usw.
 
-   [!DNL :bulb:] [Erfahren Sie mehr über den Campaign-Webzugriff](../start/connect.md).
+   [!DNL :bulb:] [Erfahren Sie mehr über den Web-basierten Zugriff auf Campaign](../start/connect.md).
 
-* **Campaign-APIs**: In bestimmten Fällen kann das System mithilfe der Web-Services-APIs, die über das SOAP-Protokoll verfügbar gemacht werden, aus einer externen Anwendung aufgerufen werden.
+* **Campaign-APIs**: In bestimmten Fällen kann das System über die via SOAP-Protokoll bereitgestellten Web-Services-API von einem externen Programm aus aufgerufen werden.
 
    [!DNL :bulb:] [Erfahren Sie mehr über Campaign-APIs](../dev/api.md).
 
 ## Entwicklungsumgebung {#dev-env}
 
-Adobe Campaign ist eine Plattform mit verschiedenen Anwendungen, um eine offene und skalierbare Architektur zu erstellen. Die Adobe Campaign-Plattform ist auf einer flexiblen Anwendungsebene konzipiert und lässt sich einfach an Ihre geschäftlichen Anforderungen anpassen. Die verteilte Architektur stellt eine lineare Skalierbarkeit der Systeme sicher, die von Tausenden von Nachrichten auf Millionen von Nachrichten skaliert wird.
+Adobe Campaign ist eine Plattform mit verschiedenen Anwendungen, um eine offene und skalierbare Architektur zu erstellen. Die Adobe Campaign-Plattform basiert auf einer flexiblen Anwendungsebene, wodurch sie sich mühelos an verschiedenste Geschäftsanforderungen anpassen lässt. Dank der verteilten Architektur ist das System linear von mehreren Tausend auf mehrere Millionen Nachrichten skalierbar.
 
-Einige Campaign-Module funktionieren kontinuierlich, während andere gelegentlich gestartet werden, um administrative Aufgaben auszuführen (z. B. zur Konfiguration der Datenbankverbindung) oder um eine wiederkehrende Aufgabe auszuführen (z. B. Konsolidierung von Tracking-Informationen).
+Einige Campaign-Module werden durchgängig ausgeführt, andere wiederum werden nur für bestimmte Aufgaben etwa administrativer Art (z. B. zum Konfigurieren der Datenbankverbindung) oder zur Ausführung wiederkehrender Operationen wie der Konsolidierung von Tracking-Informationen gestartet.
 
 Es gibt drei Typen von Adobe Campaign-Modulen:
 
-* **Module mit mehreren Instanzen**: für alle Instanzen wird ein einzelner Prozess ausgeführt. Dies gilt für die folgenden Module: Web, syslogd, trackinglogd und watchdog.
+* **Module mit mehreren Instanzen**: für alle Instanzen wird ein einzelner Prozess ausgeführt. Dies gilt für die folgenden Module: web, syslogd, trackinglogd und watchdog.
 * **Mono-Instanzmodule**: Pro Instanz wird ein Prozess ausgeführt. Dies gilt für die folgenden Module: mta, wfserver, inMail, sms und stat.
 * **Dienstprogrammmodule**: Hierbei handelt es sich um Module, die gelegentlich ausgeführt werden, um gelegentliche oder wiederkehrende Vorgänge durchzuführen (Bereinigung, Konfiguration, Herunterladen von Trackinglogs usw.).
 
-Die wichtigsten Prozesse sind:
+Dies sind die wichtigsten Prozesse:
 
-**Anwendungsserver**  (nlserver web)
+**Anwendungs-Server** (nlserver web)
 
-Dadurch wird die gesamte Bandbreite der Adobe Campaign-Funktionen über Web-Services-APIs (SOAP/HTTP + XML) verfügbar. Darüber hinaus kann es dynamisch die Webseiten generieren, die für den HTML-basierten Zugriff verwendet werden (Berichte, Webformulare usw.). Dazu umfasst dieser Prozess einen Apache Tomcat JSP-Server. Dies ist der Prozess, mit dem die Konsole eine Verbindung herstellt.
+Dadurch wird die gesamte Bandbreite der Adobe Campaign-Funktionen über Web-Services-APIs (SOAP/HTTP + XML) verfügbar. Darüber hinaus kann er dynamisch die Web-Seiten generieren, die für den HTML-basierten Zugriff verwendet werden (Berichte, Web-Formulare usw.). Um dies zu ermöglichen, umfasst der Prozess einen Apache Tomcat JSP-Server. Dies ist der Prozess, an den die Konsole angebunden ist.
 
-**Workflow-Engine**  (nlserver wfserver)
+**Workflow-Engine** (nlserver wfserver)
 
-Er führt die in der Anwendung definierten Workflow-Prozesse aus.
+Diese führt die im Programm definierten Workflow-Prozesse aus.
 
-Außerdem werden regelmäßig ausgeführte technische Workflows verarbeitet, darunter:
+Außerdem verarbeitet sie zeitweise ausgeführte technische Workflows, darunter:
 
-* **Tracking**: Wiederherstellen und Konsolidieren von Trackinglogs. Dadurch können Sie die Protokolle vom Weiterleitungsserver abrufen und die vom Berichtsmodul verwendeten Aggregat-Indikatoren erstellen.
-* **Bereinigung**: Bereinigung der Datenbank. Wird verwendet, um alte Datensätze zu löschen und zu vermeiden, dass die Datenbank exponentiell wächst.
+* **Tracking**: Wiederherstellen und Konsolidieren von Trackinglogs. Dadurch können Protokolle vom Weiterleitungs-Server abgerufen und die vom Reporting-Modul verwendeten aggregierten Indikatoren erstellt werden.
+* **Bereinigung**: Bereinigung der Datenbank. Dabei wird die Datenbank von alten Datensätzen bereinigt, um zu vermeiden, dass sie übermäßig wächst.
 * **Rechnungsstellung**: Automatisches Senden eines Aktivitätsberichts für die Plattform (Datenbankgröße, Anzahl der Marketing-Aktionen usw.).
 
-**Versandserver**  (nlserver mta)
+**Versand-Server** (nlserver mta)
 
-Adobe Campaign verfügt über native E-Mail-Broadcast-Funktionen. Dieser Prozess fungiert als SMTP-Mail Transfer Agent (MTA). Es führt eine &quot;Eins-zu-Eins&quot;-Personalisierung von Nachrichten durch und verarbeitet deren physischen Versand. Sie wird mit Bereitstellungsaufträgen ausgeführt und verarbeitet automatische Neuversuche. Wenn die Verfolgung aktiviert ist, ersetzt sie außerdem automatisch die URLs, sodass sie auf den Weiterleitungsserver verweisen.
+Adobe Campaign umfasst eine native Funktion zum Senden von E-Mails. Dieser Prozess fungiert als SMTP Mail Transfer Agent (MTA). Er personalisiert Nachrichten individuell für den jeweiligen Empfänger und verarbeitet deren physischen Versand. Sie wird mit Bereitstellungsaufträgen ausgeführt und verarbeitet automatische Neuversuche. Ist zusätzlich noch Tracking aktiviert, werden die URLs automatisch ersetzt, sodass sie auf den Weiterleitungs-Server verweisen.
 
-Dieser Prozess kann die Anpassung und den automatischen Versand von SMS, Fax und Briefpost an einen Drittanbieter-Router durchführen.
+Über diesen Prozess ist die Anpassung sowie der automatische Versand an einen Dritt-Router für SMS, Fax und Briefpost möglich.
 
-**Weiterleitungsserver**  (nlserver webmdl)
+**Weiterleitungs-Server** (nlserver webmdl)
 
-Bei E-Mails verarbeitet Adobe Campaign automatisch das Öffnungs- und Klick-Tracking (das Transaktions-Tracking auf Website-Ebene ist eine weitere Möglichkeit). Zu diesem Zweck werden die in die E-Mail-Nachrichten integrierten URLs umgeschrieben, um auf dieses Modul zu verweisen, das die Übergabe des Internetbenutzers registriert, bevor er sie an die gewünschte URL weiterleitet.
+Bei E-Mails übernimmt Adobe Campaign automatisch das Öffnungs- und Klick-Tracking (wobei das Tracking von Transaktionen auf Website-Ebene ebenfalls möglich ist). Hierfür werden die in den E-Mail-Nachrichten enthaltenen URLs so umgeschrieben, dass sie auf dieses Modul verweisen. Dieses wiederum registriert Internet-Benutzer, während diese an die Ziel-URL weitergeleitet werden.
 
-Um eine optimale Verfügbarkeit zu gewährleisten, ist dieser Prozess vollständig unabhängig von der Datenbank: die anderen Serverprozesse kommunizieren nur mit SOAP-Aufrufen (HTTP, HTTP(S) und XML) mit ihr. Technisch gesehen ist diese Funktion in einem Erweiterungsmodul eines HTTP-Servers (ISAPI-Erweiterung in IIS, DSO-Apache-Modul usw.) implementiert. und ist nur unter Windows verfügbar.
+Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht ist diese Funktion in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert und nur unter Windows verfügbar.
 
-Weitere technische Prozesse sind ebenfalls verfügbar:
+Daneben sind auch noch weitere technische Prozesse verfügbar:
 
-**Bounce Messages verwalten**  (nlserver inMail)
+**Handhabung von Bounce-E-Mails** (nlserver inMail)
 
-Auf diese Weise können Sie E-Mails aus Postfächern automatisch abrufen, die für den Empfang von nicht zugestellten Nachrichten konfiguriert sind, die im Falle eines fehlgeschlagenen Versands zurückgegeben werden. Diese Nachrichten werden dann regelbasiert verarbeitet, um die Gründe für die Nichtbereitstellung zu ermitteln (unbekannter Empfänger, Überschreitung der Quote usw.). und um den Versandstatus in der Datenbank zu aktualisieren.
+Dieser Prozess ermöglicht den automatischen Abruf von E-Mails aus Postfächern, die für den Empfang von Nachrichten konfiguriert sind, die bei fehlgeschlagenem Versand als unzustellbar zurückgesendet werden. Diese Nachrichten werden dann regelbasiert verarbeitet, um die Gründe für die Unzustellbarkeit (z. B. Empfänger unbekannt, Nachrichtenkontingente ausgeschöpft) zu ermitteln und den Versandstatus in der Datenbank zu aktualisieren.
 
-Alle diese Vorgänge sind vollständig automatisch und vorkonfiguriert.
+Alle diese Operationen laufen vollkommen automatisch und sind vorkonfiguriert.
 
-**SMS-Versandstatus**  (nlserver sms)
+**Status des SMS-Versands** (nlserver sms)
 
-Dieser Prozess fragt den SMS-Router ab, um den Fortschrittsstatus zu erfassen und die Datenbank zu aktualisieren.
+Dieser Prozess fragt beim SMS-Router den Status des Versandfortschritts ab und aktualisiert diesen in der Datenbank.
 
-**Schreiben von Protokollmeldungen**  (nlserver syslogd)
+**Schreiben von Log-Nachrichten** (nlserver-syslogd)
 
-Dieser technische Prozess erfasst Protokollmeldungen und von anderen Prozessen erzeugte Traces und schreibt sie auf die Festplatte. Dadurch werden bei Problemen umfangreiche Informationen zur Diagnose bereitgestellt.
+Dieser technische Prozess erfasst von anderen Prozessen generierte Log-Nachrichten und -Traces und speichert sie auf der Festplatte. Dadurch stehen im Falle von Problemen umfangreiche Informationen zur Diagnose zur Verfügung.
 
-**Schreiben von Trackinglogs**  (nlserver trackinglogd)
+**Schreiben von Trackinglogs** (nlserver trackinglogd)
 
-Dieser Prozess speichert die Trackinglogs, die durch den Weiterleitungsprozess generiert wurden.
+Dieser Prozess speichert die Trackinglogs, die durch vom Weiterleitungsprozess generiert werden.
 
-**Schreiben eingehender Ereignisse**  (nlserver interaction)
+**Schreiben eingehender Ereignisse** (nlserver interactiond)
 
-Dieser Prozess stellt sicher, dass eingehende Ereignisse im Rahmen von Interaction auf der Festplatte aufgezeichnet werden.
+Dieser Vorgang gewährleistet die Aufzeichnung von im Rahmen der Interaktion eingehenden Ereignisse auf der Festplatte
 
-**Überwachungsmodule**  (nlserver watchdog)
+**Überwachungsmodule** (nlserver watchdog)
 
-Dieser technische Prozess dient als primärer Prozess, der die anderen hervorbringt. Außerdem werden sie überwacht und bei Vorfällen automatisch neu gestartet, sodass die maximale Systembetriebsdauer beibehalten wird.
+Hierbei handelt es sich um einen technischen Primärprozess, der zur Erzeugung der anderen Prozesse dient. Zugleich überwacht er diese aber auch startet sie beim Auftreten von Vorfällen automatisch neu, sodass maximale Systemverfügbarkeit gewährleistet bleibt.
 
-**Statistikserver**  (nlserver stat)
+**Statistik-Server** (nlserver stat)
 
-Dieser Prozess enthält Statistiken über die Anzahl der Verbindungen, die gesendeten Nachrichten für jeden E-Mail-Server, an den Nachrichten gesendet werden, sowie deren Einschränkungen (die höchste Anzahl gleichzeitiger Verbindungen, Nachrichten pro Stunde/ und Verbindung). Außerdem können Sie mehrere Instanzen oder Computer verbinden, wenn sie dieselben öffentlichen IP-Adressen verwenden.
+Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einzelnen Mailserver gesendeten Nachrichten und zu deren Einschränkungen (z. B. Maximalzahl gleichzeitiger Verbindungen, Nachrichten pro Stunde und/oder Verbindung usw.). Ebenfalls lassen sich über diesen Prozess Instanzen oder Computer zusammenführen, sofern diese dieselben öffentlichen IP-Adressen verwenden.
 
-## Datenbankcontainer {#db-containers}
+## Datenbank-Container {#db-containers}
 
-Die Adobe Campaign Cloud-Datenbank basiert auf [!DNL Snowflake], die die funktionalen Daten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versandaufträge und Protokolle, Trackinglogs usw.) enthält. und die Arbeitsdaten (Käufe, Leads) für die Lösung sowie alle Adobe Campaign-Komponenten kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
+Die Cloud-Datenbank von Adobe Campaign nutzt [!DNL Snowflake], wo die funktionellen Daten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versand, Aufträge und Protokolle, Trackinglogs usw.) und die Arbeitsdaten (Bestellungen, Interessenten) für die Lösung abgelegt sind. Alle Komponenten von Adobe Campaign kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
 
-Kunden können Adobe Campaign mithilfe der vordefinierten Datenbank und Schemata bereitstellen. Bei Bedarf kann diese vordefinierte Umgebung erweitert werden. Auf alle Daten im Datamart kann Adobe Campaign über SQL-Aufrufe zugreifen. Adobe Campaign bietet außerdem ein vollständiges Komplement der Tools zum Extract Transform and Load (ETL), mit denen Daten in das und aus dem System importiert und exportiert werden können.
+Kunden können Adobe Campaign mithilfe der vordefinierten Datenbank und Schemata bereitstellen. Bei Bedarf kann diese vordefinierte Umgebung erweitert werden. Der Zugriff auf alle Daten im Datamart durch Adobe Campaign erfolgt über SQL-Aufrufe. Adobe Campaign bietet außerdem eine vollständige Ergänzung der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels derer Daten in das und aus dem System importiert und exportiert werden können.
 
 ![](assets/data-flow-diagram.png)
 
