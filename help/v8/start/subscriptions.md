@@ -1,23 +1,23 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Verwalten von Anmeldungen und Abmeldungen in Campaign
-description: Hier erfahren Sie, wie Sie Abonnements und Abmeldungen in Campaign v8 verwalten.
+title: Verwaltung von Abonnements und Abmeldungen in Campaign
+description: Erfahren Sie, wie Sie Abonnements und Abmeldungen in Campaign v8 verwalten
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 8%
+ht-degree: 37%
 
 ---
 
-# Anmeldungen und Abmeldungen verwalten{#optin-optout}
+# Verwaltung von Abonnements und Abmeldungen{#optin-optout}
 
-Verwenden Sie Adobe Campaign, um Informationsdienste wie Newsletter zu erstellen und zu überwachen und die An- und Abmeldungen dieser Dienste zu verwalten. Mehrere Dienste können parallel definiert werden, z. B.: spezialisierte Newsletter für bestimmte Produktkategorien, Themen oder Bereiche einer Website, Abonnements für verschiedene Arten von Warnhinweisen und Echtzeit-Benachrichtigungen. Weiterführende Informationen finden Sie im Abschnitt Abonnements verwalten.
+Mit Adobe Campaign können Sie Informations-Services wie Newsletter erstellen und überwachen und die Abonnements/Abmeldungen für diese verwalten. Dabei können mehrere Services parallel definiert werden, z. B. spezialisierte Newsletter für bestimmte Kategorien, Themen oder Bereiche einer Website, Abonnements zu verschiedenen Arten von Warnmeldungen und Echtzeitbenachrichtigungen. Weiterführende Informationen finden Sie im Abschnitt &quot;Abonnements verwalten&quot;.
 
-[!DNL :arrow_upper_right:] Erfahren Sie, wie Sie einen Informationsdienst erstellen, Newsletter senden und Opt-in- und Opt-out-Verfahren in der Dokumentation zu  [Campaign Classic v7 verwalten.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html)
+[!DNL :arrow_upper_right:] Erfahren Sie, wie Sie einen Informationsdienst erstellen, Newsletter senden und Opt-in- und Opt-out-Verfahren in der Dokumentation zu  [Campaign Classic v7 verwalten.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=de#sending-messages)
 
 Folgende Optionen stehen zur Anmeldung (Opt-in) für ein Profil für einen Dienst zur Verfügung:
 
@@ -62,8 +62,8 @@ Folgende Optionen stehen zur Abmeldung (Opt-out) eines Profils von einem Dienst 
 
 >[!CAUTION]
 >
->Anmeldungen und Abmeldungen sind **asynchrone** Prozesse. Opt-in- und Opt-out-Anfragen werden stündlich verarbeitet. [Mehr dazu](../dev/new-apis.md#sub-apis)
+>Abonnement und Abmeldungen sind **asynchrone** Prozesse. Opt-in und Opt-out-Anfragen werden stündlich verarbeitet. [Mehr dazu](../dev/new-apis.md#sub-apis)
 
-Sie können Ihren Versandempfängern auch ermöglichen, Nachrichten an einen Freund weiterzuleiten. Fügen Sie dazu die entsprechenden Links in Ihren Versand ein. Anschließend können Sie diesen Freigabeprozess sowie die Anzahl der Besuche auf den betroffenen Seiten verfolgen.
+Sie können es Ihren Versandempfängern auch ermöglichen, Nachrichten an Freunde weiterzuleiten. Fügen Sie dazu die entsprechenden Links in Ihren Versand ein. Sie können diesen Freigabeprozess sowie die Anzahl der Besuche auf den betroffenen Seiten tracken.
 
 [!DNL :arrow_upper_right:] Weitere Informationen zu dieser Funktion finden Sie in der  [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend).
