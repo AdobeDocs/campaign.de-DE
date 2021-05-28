@@ -1,35 +1,35 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Best Practices für die Sicherheit von Campaign
-description: Erste Schritte mit Best Practices für die Sicherheit von Campaign
+title: Best Practices für die Campaign-Sicherheit
+description: Erste Schritte mit Best Practices für die Campaign-Sicherheit
 source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 31%
+ht-degree: 93%
 
 ---
 
-# Best Practices für die Sicherheit von Campaign {#ac-security}
+# Best Practices für die Campaign-Sicherheit {#ac-security}
 
-Bei der Adobe nehmen wir die Sicherheit Ihres digitalen Erlebnisses sehr ernst. Sicherheitspraktiken sind tief in unsere internen Softwareentwicklungs- und Betriebsprozesse und -werkzeuge eingebunden und werden von unseren funktionsübergreifenden Teams streng befolgt, um Vorfälle auf angemessene Weise zu verhindern, zu erkennen und darauf zu reagieren.
+Bei Adobe hat die Sicherheit Ihres digitalen Erlebnisses höchste Priorität. Sicherheitsmaßnahmen sind tief in unsere internen Prozesse und Tools rund um die Entwicklung und den Betrieb von Software implementiert und werden von unseren Teams über alle Funktionsbereiche hinweg strikt befolgt, um Sicherheitsvorfällen vorzubeugen bzw. diese schnellstmöglich zu erkennen und zu beheben.
 
-Darüber hinaus hilft uns unsere Zusammenarbeit mit Partnern, führenden Forschern, Sicherheitsforschungsinstitutionen und anderen Branchenverbänden dabei, über die neuesten Bedrohungen und Schwachstellen auf dem Laufenden zu bleiben und regelmäßig erweiterte Sicherheitstechniken in unsere Produkte und Dienstleistungen zu integrieren.
+Darüber hinaus arbeiten wir mit unseren Partnern sowie mit führenden Sicherheitsanalysten, Sicherheitsforschungseinrichtungen und anderen Branchenverbänden zusammen und gewährleisten so, mit den neuesten Bedrohungen und Schwachstellen Schritt halten zu können und regelmäßig fortschrittliche Sicherheitsverfahren in unsere Angebote und Services zu integrieren.
 
 ## Datenschutz
 
-Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale Bestandteile der Optimierung der Sicherheit. Im Folgenden finden Sie einige Best Practices bezüglich des Datenschutzes:
+Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale Bestandteile der Optimierung der Sicherheit. Im Folgenden finden Sie einige Best Practices zum Datenschutz:
 
-* Protect Ihrer personenbezogenen Kundendaten (PIs) mithilfe von HTTPS anstelle von HTTP
-* Verwenden Sie [PI-Anzeigebeschränkung](../dev/restrict-pi-view.md), um den Datenschutz zu schützen und zu verhindern, dass Daten missbraucht werden
-* Stellen Sie sicher, dass der Zugriff auf verschlüsselte Passwörter beschränkt ist
-* Schützen Sie Seiten, die möglicherweise personenbezogene Daten enthalten (z. B. Mirrorseiten, Webanwendungen usw.).
+* Schützen Sie die personenbezogenen Daten Ihrer Kunden, indem Sie HTTPS anstelle von HTTP verwenden.
+* Verwenden Sie die [Anzeigeneinschränkung für personenbezogene Daten](../dev/restrict-pi-view.md), um die Daten zu schützen und ihrem Missbrauch vorzubeugen.
+* Stellen Sie sicher, dass der Zugriff auf verschlüsselte Passwörter beschränkt ist.
+* Schützen Sie Seiten, die möglicherweise personenbezogene Daten enthalten (z. B. Mirror-Seiten, Web-Anwendungen usw.).
 
 [!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services arbeitet Adobe mit Ihnen zusammen, um diese Konfigurationen in Ihre Umgebung zu implementieren.
 
-## Personalisierung            
+## Personalisierung
 
-Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, dass im Hostname-Teil der URL keine Personalisierung vorhanden ist. So lassen sich potenzielle Sicherheitslücken verhindern. Die folgenden Beispiele sollten niemals in allen URL-Attributen &lt;`a href="">` oder `<img src="">` verwendet werden:
+Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, dass im Hostname-Teil der URL keine Personalisierung vorhanden ist. So lassen sich mögliche Sicherheitslücken verhindern. Folgende Beispiele sollten niemals in den URL-Attributen `a href="">` oder `<img src="">` verwendet werden:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -39,9 +39,9 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 
 ## Dateneinschränkung
 
-Sie müssen sicherstellen, dass keine authentifizierten Benutzer mit unzureichender Berechtigung auf die verschlüsselten Passwörter zugreifen können. Dazu gibt es zwei Möglichkeiten: den Zugriff auf Kennwortfelder oder auf die gesamte Entität beschränken.
+Sie müssen sicherstellen, dass keine authentifizierten Benutzer mit unzureichender Berechtigung auf die verschlüsselten Passwörter zugreifen können. Dazu können Sie den Zugriff entweder auf Passwortfelder oder auf die gesamte Entität einschränken.
 
-Mit dieser Einschränkung können Sie Passwortfelder entfernen, aber das externe Konto bleibt für alle Benutzer über die Benutzeroberfläche zugänglich. Weiterführende Informationen finden Sie auf [dieser Seite](../dev/restrict-pi-view.md).
+Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. Weiterführende Informationen finden Sie auf [dieser Seite](../dev/restrict-pi-view.md).
 
 1. Gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL Konfigurieren]** > **[!UICONTROL Datenschemata]**.
 
@@ -49,9 +49,9 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, aber das externe
 
 1. Wählen Sie **[!UICONTROL Externes Konto]** aus (extAccount).
 
-1. Im letzten Bildschirm können Sie Ihr neues srcSchema bearbeiten, um den Zugriff auf alle Kennwortfelder zu beschränken:
+1. Bearbeiten Sie im letzten Fenster Ihr neues srcSchema, um den Zugriff auf alle Passwortfelder einzuschränken:
 
-   Sie können das Hauptelement (`<element name="extAccount" ... >`) wie folgt ersetzen:
+   Das Hauptelement (`<element name="extAccount" ... >`) können Sie ersetzen durch:
 
    ```
    <element name="extAccount">
@@ -72,7 +72,7 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, aber das externe
    </element>
    ```
 
-   So kann Ihr erweitertes srcSchema wie folgt aussehen:
+   Ihr erweitertes srcSchema sieht dann folgendermaßen aus:
 
    ```
    <...>
@@ -97,27 +97,27 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, aber das externe
 
    >[!NOTE]
    >
-   >Sie können `$(loginId) = 0 or $(login) = 'admin'` durch `hasNamedRight('admin')` ersetzen, damit alle Benutzer mit Administratorrechten diese Kennwörter sehen können.
+   >Sie können `$(loginId) = 0 or $(login) = 'admin'` durch `hasNamedRight('admin')` ersetzen, damit diese Passwörter für alle Benutzer mit Administratorberechtigung einsehbar sind.
 
 
-## Zugriffsverwaltung
+## Zugriffsverwaltung 
 
-Zugriffsverwaltung ist ein wichtiger Teil der Sicherheitshärtung. Im Folgenden finden Sie einige der wichtigsten Best Practices:
+Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheitsmanagements. Im Folgenden finden Sie die wichtigsten Best Practices:
 
 * Erstellen Sie eine ausreichende Anzahl von Sicherheitsgruppen.
 * Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
-* Vermeiden Sie möglichst die Vergabe der Administrator-Funktion, und achten Sie darauf, dass sich nicht zu viele Benutzer in der Administrator-Gruppe befinden.
+* Vermeiden Sie möglichst die Vergabe der Administrator-Funktion und achten Sie darauf, dass sich nicht zu viele Benutzer in der Administrator-Gruppe befinden.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Adobe Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator)
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Adobe Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=de#webapp-operator)
 
-## Kodierungsrichtlinien
+## Leitlinien zur Codierung
 
-Beachten Sie bei der Entwicklung in Adobe Campaign (Workflows, JavaScript, JSSP usw.) immer die folgenden Richtlinien:
+Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) sollten Sie sich grundsätzlich an diesen Leitlinien orientieren:
 
 * **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Konkatenation, und vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen auf die Zulassungsliste setzen.
 
-* **Sichern Sie das Datenmodell**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen zu begrenzen, und fügen Sie Systemfilter hinzu (sysFilter).
+* **Schutz des Datenmodells**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken, und fügen Sie Systemfilter hinzu (sysFilter).
 
-* **Hinzufügen von Captchas in Webanwendungen**: Fügen Sie Captchas auf Ihren öffentlichen Landingpages und Anmeldeseiten hinzu.
+* **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Adobe Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Adobe Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic)
