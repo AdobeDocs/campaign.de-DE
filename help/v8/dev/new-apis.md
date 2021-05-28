@@ -1,15 +1,15 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Neue Campaign v8-APIs
-description: Neue Campaign v8-APIs
+title: Neue APIs in Campaign v8
+description: Neue APIs in Campaign v8
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: d872702fe8933a1ef200b690f21efcbd8e5ab3bc
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
