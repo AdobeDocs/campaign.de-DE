@@ -10,7 +10,7 @@ exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 8%
+ht-degree: 80%
 
 ---
 
@@ -18,19 +18,19 @@ ht-degree: 8%
 
 Sie können Ihre Campaign-Instanz mit Adobe Experience Cloud-Lösungen verbinden, um Funktionen zu kombinieren.
 
-Adobe Campaign verfügt über mehrere Connectoren, mit denen Sie mit externen Anwendungen kommunizieren, eine Verbindung zu Datenbank-Engines herstellen, Daten freigeben und synchronisieren können.
+Adobe Campaign verfügt über mehrere Connectoren, über die Sie mit externen Programmen kommunizieren, eine Verbindung zu Datenbank-Engines herstellen sowie Daten freigeben und synchronisieren können.
 
-## Nutzen Sie Adobe-Lösungen {#gs-ac-integration}
+## Adobe-Lösungen nutzen {#gs-ac-integration}
 
 Modernisieren Sie Ihre Implementierung und nutzen Sie alle Adobe Experience Cloud-Funktionen.
 
-[!DNL :speech_balloon:] Als Managed Cloud Services-Benutzer  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um Campaign mit Adobe Experience Cloud-Diensten und -Lösungen zu verbinden. Sie müssen den Adobe Identity Management Service (IMS) implementieren. [Mehr dazu](../start/connect.md#connect-ims)
+[!DNL :speech_balloon:] Als Managed Cloud Services-Benutzer  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um Campaign mit Adobe Experience Cloud-Diensten und -Lösungen zu verbinden. Sie müssen Adobe Identity Management Service (IMS) implementieren. [Mehr dazu](../start/connect.md#connect-ims)
 
-Campaign v8 kann eine Verbindung mit:
+Campaign v8 kann eine Verbindung herstellen mit:
 
-* [Journey Orchestration der Adobe](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=en)
+* [Adobe Journey Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=de)
 
-* [Echtzeit-Kundendatenplattform](../connect/ac-rtcdp.md)
+* [Real-Time CDP](../connect/ac-rtcdp.md)
 
 * [Adobe Analytics Data Connector](../connect/ac-aa.md)
 
@@ -38,26 +38,26 @@ Campaign v8 kann eine Verbindung mit:
 
 * [Adobe Target](../connect/ac-at.md)
 
-Sie können Ihre **Zielgruppen** und **Assets** auch über Experience Cloud-Lösungen mit Funktionen zur Asset-Freigabe und Zielgruppenfreigabe kombinieren.
+Sie können Ihre **Audiences** und **Assets** über Experience Cloud-Lösungen hinweg auch mit Funktionen zum Freigeben von Assets und Audiences kombinieren.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zur  **Zielgruppenfreigabe** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)
+[!DNL :arrow_upper_right:] Weitere Informationen zur  **Zielgruppenfreigabe** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud)
 
-[!DNL :arrow_upper_right:] Weitere Informationen zur  **Asset-** Freigabe zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)
+[!DNL :arrow_upper_right:] Weitere Informationen zur  **Asset-** Freigabe zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud)
 
 ## CRM-Connectoren{#gs-crm-connectors}
 
-Sie können Ihre Adobe Campaign-Plattform mit Ihren **CRM-Drittanbietersystemen** verbinden und Daten synchronisieren: Kontakte, Konten, Käufe usw.
+Sie können Ihre Adobe Campaign-Plattform mit Ihren **CRM-Systemen von Drittanbietern** verbinden und Daten synchronisieren: Kontakte, Konten, Käufe usw.
 
-Aktivieren Sie Ihre CRM-Daten für die kanalübergreifende Kommunikation: Hier erfahren Sie, wie Sie Kontakte aus Ihrem CRM-System an Adobe Campaign weiterleiten und Kampagnendaten aus Adobe Campaign an Ihr CRM-System weitergeben.
-CRM-Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adobe Campaign bietet einen speziellen Assistenten zur Erfassung und Auswahl aus den im CRM-System verfügbaren Tabellen. Dies garantiert eine bidirektionale Synchronisation, um sicherzustellen, dass die Daten in allen Systemen jederzeit auf dem neuesten Stand sind.
+Aktivieren Sie Ihre CRM-Daten für kanalübergreifende Kommunikation: Erfahren Sie, wie Sie Kontakte von Ihrem CRM-System an Adobe Campaign weitergeben und wiederum Kampagnendaten von Adobe Campaign mit Ihrem CRM-System teilen können.
+CRM-Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adobe Campaign bietet einen dedizierten Assistenten zur Erfassung und Auswahl aus den im CRM verfügbaren Tabellen. Damit ist eine bidirektionale Synchronisation gewährleistet, die sicherstellt, dass die Daten in den Systemen jederzeit aktuell sind.
 
 [!DNL :bulb:] Informationen zur Integration von Campaign mit Microsoft Dynamics 365 und Salesforce.com finden Sie auf  [dieser Seite .](crm.md)
 
 ## Federated Data Access (FDA){#gs-fda}
 
-Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer oder mehreren **externen Datenbanken** zu verbinden und darin gespeicherte Informationen zu verarbeiten, ohne die Daten Ihrer Campaign Cloud-Datenbank zu beeinträchtigen.
+Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer oder mehreren **externen Datenbanken** zu verbinden und darin gespeicherte Informationen zu verarbeiten, ohne die Daten in Ihrer Campaign Cloud-Datenbank zu beeinflussen.
 
-[!DNL :bulb:][ Weiterführende Informationen finden Sie auf dieser Seite](fda.md)
+[!DNL :bulb:] Weiterführende Informationen finden Sie auf [dieser Seite](fda.md)
 
 
 <!-- 
