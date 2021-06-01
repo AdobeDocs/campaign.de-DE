@@ -1,12 +1,11 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Mit Campaign und dem CRM-System arbeiten
 description: 'Erfahren Sie, wie Sie mit Campaign und Ihrem CRM-System arbeiten können '
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 87%
