@@ -1,15 +1,14 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Campaign-API-Staging-Mechanismus
 description: Campaign-API-Staging-Mechanismus
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -74,4 +73,4 @@ Gehen Sie wie folgt vor, um den Campaign-Staging-Mechanismus für eine bestimmte
 
    ![](assets/staging-mechanism.png)
 
-1. Aktualisieren Sie die Datenbankstruktur. Die Staging-Tabelle wird in der lokalen Campaign-Datenbank erstellt.
+1. Datenbankstruktur aktualisieren. Die Staging-Tabelle wird in der lokalen Campaign-Datenbank erstellt.
