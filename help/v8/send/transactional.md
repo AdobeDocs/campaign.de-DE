@@ -1,12 +1,11 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Transaktionsnachrichten in Campaign
 description: Erste Schritte mit Transaktionsnachrichten
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 94%
