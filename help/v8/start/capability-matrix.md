@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 54%
+source-wordcount: '800'
+ht-degree: 42%
 
 ---
 
@@ -62,7 +62,12 @@ Ein spezieller technischer Workflow behandelt die Replikation von Tabellen, die 
 
 Campaign v8-Objekte verwenden jetzt eine **Universally Unique ID (UUID)**, die die Identifizierung von Daten durch unbegrenzte eindeutige Werte ermöglicht..
 
-Beachten Sie, dass diese ID zeichenfolgenbasiert und nicht sequenziell ist.
+Beachten Sie, dass diese ID zeichenfolgenbasiert und nicht sequenziell ist. Der Primärschlüssel ist kein numerischer Wert in Campaign v8. Sie müssen die Attribute **autouid** und **autopk** in Ihren Schemata verwenden.
+
+In Campaign Classic v7 und früheren Versionen wird die Einheitlichkeit eines Schlüssels innerhalb eines Schemas (d. h. einer Tabelle) auf der Ebene der Datenbank-Engine gehandhabt. Im Allgemeinen enthalten klassische Datenbank-Engines wie PostgreSQL, Oracle oder SQL Server einen nativen Mechanismus, um zu verhindern, dass duplizierte Zeilen basierend auf einer Spalte oder einem Satz von Spalten über Primärschlüssel und/oder eindeutige Indizes eingefügt werden. Duplizierte IDs sind in diesen Versionen nicht vorhanden, wenn der richtige Index und die Primärschlüssel auf Datenbankebene festgelegt sind.
+
+Adobe campaign v8 wird mit Snowflake als Hauptdatenbank geliefert. Da dadurch der Umfang der Abfragen drastisch erhöht wird, bietet die verteilte Architektur der Snowflake-Datenbank keine solchen Mechanismen, um die Einzigkeit eines Schlüssels innerhalb einer Tabelle zu verwalten und zu erzwingen. Daher verhindert nichts die Erfassung duplizierter Schlüssel in einer Tabelle mit Adobe Campaign v8. Endbenutzer sind nun dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen. [Weitere Informationen](../dev/keys.md).
+
 
 ### Vereinfachte Wartung
 
