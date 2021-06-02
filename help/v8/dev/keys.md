@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Schlüsselverwaltung in Campaign '
 description: Erste Schritte mit der Schlüsselverwaltung
-source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
+source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '689'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ In Campaign v8 ist der Primärschlüssel eine Universally Unique IDentifier (UUI
 
 Adobe campaign v8 wird mit Snowflake als Hauptdatenbank geliefert. Die verteilte Architektur der Snowflake-Datenbank bietet keine Mechanismen zur Verwaltung der Einheitlichkeit eines Schlüssels in einer Tabelle: Endbenutzer sind dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen.
 
-Die Vermeidung von Duplikaten bei Schlüsseln, insbesondere bei Primärschlüsseln, ist zur Wahrung der relationalen Datenbankkonsistenz erforderlich. Duplizierte Primärschlüssel führen zu Problemen mit Workflow-Aktivitäten für die Datenverwaltung wie Abfrage, Abstimmung, Aktualisierung und mehr.
+Die Vermeidung von Duplikaten bei Schlüsseln, insbesondere bei Primärschlüsseln, ist zur Wahrung der relationalen Datenbankkonsistenz erforderlich. Duplikate bei Primärschlüsseln führen zu Problemen mit Workflow-Aktivitäten für die Datenverwaltung wie **Abfrage**, **Abstimmung**, **Daten-Update** und mehr.
 
-Adobe Campaign bietet leistungsstarke Data-Management-Tools zur Abstimmung der Daten, zum Einfügen oder Aktualisieren von Daten je nach Präsenz in der Datenbank (Abstimmung) und zum Entfernen von Duplikaten vor der Aufnahme von Daten (Deduplizierung). Als Best Practice empfiehlt Adobe die Übernahme einer [Detect](#detect-duplicates)- und [Correct](#correct-duplicates)-Strategie im Rahmen Ihres gesamten Data-Management-Prozesses, falls duplizierte Schlüssel in die Datenbank geladen wurden.
+Adobe Campaign bietet leistungsstarke Tools zur Datenverwaltung, mit denen die Daten abgestimmt werden können. Stellen Sie sicher, dass Sie Daten je nach ihrer Präsenz in der Datenbank einfügen oder aktualisieren (**Abstimmung**), und entfernen Sie Duplikate, bevor Sie Daten erfassen (**Deduplizierung**). Als Best Practice empfiehlt Adobe die Übernahme einer [Detect](#detect-duplicates)- und [Correct](#correct-duplicates)-Strategie im Rahmen Ihres gesamten Data-Management-Prozesses, falls duplizierte Schlüssel in die Datenbank geladen wurden.
 
 ## Duplikate erkennen{#detect-duplicates}
 
@@ -81,4 +81,4 @@ and urecipientid = 'c04d93f2-6012-4668-b523-88db1262cd46';
 
 ![](assets/sql-data-management.png)
 
-Sobald die ausgewählte Zeile mit einer neuen UUID aktualisiert wurde, können Sie die aktualisierte Zeile in der Benutzeroberfläche überprüfen und feststellen, dass die UUID erwartungsgemäß aktualisiert wurde. Sie können Duplikate auch in der Datenbank erkennen, indem Sie den Workflow &quot;Duplikate erkennen&quot; [ausführen, wie hier](#detect-duplicates) beschrieben.
+Sobald die ausgewählte Zeile mit einer neuen UUID aktualisiert wurde, können Sie die aktualisierte Zeile in der Benutzeroberfläche überprüfen und feststellen, dass die UUID erwartungsgemäß aktualisiert wurde. Sie können Duplikate auch in der Datenbank erkennen, indem Sie den Workflow **Duplikate erkennen** [ausführen, wie hier](#detect-duplicates) beschrieben.
