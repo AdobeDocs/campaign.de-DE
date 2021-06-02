@@ -2,10 +2,10 @@
 product: Adobe Campaign
 title: Mit Campaign-Schemata arbeiten
 description: Erste Schritte mit Schemata
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 92%
+source-wordcount: '1254'
+ht-degree: 90%
 
 ---
 
@@ -135,7 +135,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 ## Schlüssel {#keys}
 
-Jede Tabelle muss mindestens einen Schlüssel umfassen. Dessen Erstellung erfolgt häufig automatisch im Hauptelement des Schemas. Hierzu muss das Attribut **@autouuid=true** auf &quot;true&quot; gesetzt sein.
+Jede Tabelle muss über mindestens einen Schlüssel verfügen. Oft wird sie im Hauptelement des Schemas automatisch mithilfe der Attribute **@autouid** und **autopk** erstellt, die auf **true** gesetzt sind.
 
 Der Primärschlüssel kann auch mit dem Attribut **internal** definiert werden.
 
