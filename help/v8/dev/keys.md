@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Schlüsselverwaltung in Campaign '
 description: Erste Schritte mit der Schlüsselverwaltung
-source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
+source-git-commit: 9a1c44f74f6558f0397617353f3e78186fb15717
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '656'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Adobe campaign v8 wird mit Snowflake als Hauptdatenbank geliefert. Die verteilte
 
 Die Vermeidung von Duplikaten bei Schlüsseln, insbesondere bei Primärschlüsseln, ist zur Wahrung der relationalen Datenbankkonsistenz erforderlich. Duplikate bei Primärschlüsseln führen zu Problemen mit Workflow-Aktivitäten für die Datenverwaltung wie **Abfrage**, **Abstimmung**, **Daten-Update** und mehr.
 
-Adobe Campaign bietet leistungsstarke Tools zur Datenverwaltung, mit denen die Daten abgestimmt werden können. Stellen Sie sicher, dass Sie Daten je nach ihrer Präsenz in der Datenbank einfügen oder aktualisieren (**Abstimmung**), und entfernen Sie Duplikate, bevor Sie Daten erfassen (**Deduplizierung**). Als Best Practice empfiehlt Adobe die Übernahme einer [Detect](#detect-duplicates)- und [Correct](#correct-duplicates)-Strategie im Rahmen Ihres gesamten Data-Management-Prozesses, falls duplizierte Schlüssel in die Datenbank geladen wurden.
+Als Best Practice empfiehlt Adobe die Übernahme einer [Detect](#detect-duplicates)- und [Correct](#correct-duplicates)-Strategie im Rahmen Ihres gesamten Data-Management-Prozesses, falls duplizierte Schlüssel in die Datenbank geladen wurden.
 
 ## Duplikate erkennen{#detect-duplicates}
 
