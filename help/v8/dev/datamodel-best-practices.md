@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Best Practices für Datenmodelle
 description: Best Practices für die Erweiterung von Campaign-Datenmodellen
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 93%
@@ -66,7 +66,6 @@ Um eine gute Architektur und Systemleistung sicherzustellen, befolgen Sie die fo
 ### Auswahl von Feldern {#choice-of-fields}
 
 Felder müssen in einer Tabelle gespeichert werden, wenn sie Zielgruppenbestimmungs- oder Personalisierungszwecken dienen. Anders ausgedrückt: Wird ein Feld nicht zum Senden einer personalisierten E-Mail oder als Kriterium in einer Abfrage verwendet, nimmt es unnötigerweise Speicherplatz in Anspruch.
-
 
 ### Auswahl von Schlüsseln {#choice-of-keys}
 
