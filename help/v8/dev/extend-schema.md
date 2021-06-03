@@ -2,10 +2,10 @@
 product: Adobe Campaign
 title: Campaign-Schemata erweitern
 description: Erfahren Sie, wie Sie Campaign-Schemata erweitern
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 97%
+source-wordcount: '269'
+ht-degree: 81%
 
 ---
 
@@ -22,7 +22,7 @@ Die wichtigsten Schritte zum Anpassen des Campaign-Datenmodells sind:
 >[!CAUTION]
 >Das integrierte Schema darf nicht direkt geändert werden. Wenn Sie ein integriertes Schema anpassen möchten, müssen Sie es erweitern.
 
-[!DNL :bulb:] Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie auf [dieser Seite](datamodel.md).
+[!DNL :bulb:] Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie auf [dieser Seite](datamodel.md). Siehe auch Empfehlungen beim Erstellen eines neuen Schemas in [dieser Seite](create-schema.md).
 
 Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
    ![](assets/extend-schema-edit.png)
 
-   Im untenstehenden Beispiel fügen wir das Attribut &quot;MembershipYear&quot; hinzu, legen eine Längenbegrenzung für den Nachnamen fest (dieser Grenzwert überschreibt den Standardwert) und entfernen das Geburtsdatum aus dem integrierten Schema.
+   Im folgenden Beispiel fügen wir das Attribut **MembershipYear** hinzu, legen eine Längenbegrenzung für den Nachnamen fest (diese Begrenzung überschreibt die standardmäßige) und entfernen das Geburtsdatum aus dem integrierten Schema.
 
    ![](assets/extend-schema-sample.png)
 
