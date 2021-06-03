@@ -5,10 +5,10 @@ description: Erste Schritte mit Transaktionsnachrichten
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
+source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -36,7 +36,7 @@ Transaktionsnachrichten dienen zum Senden von:
 
 Jedes Ereignis kann eine personalisierte Nachricht auslösen. Dazu müssen Sie für jeden Ereignistyp eine passende Nachrichtenvorlage erstellen. Vorlagen enthalten die notwendigen Informationen zur Personalisierung der Transaktionsnachricht. Sie können Vorlagen auch verwenden, um die Vorschau der Nachricht zu testen und einen Testversand an Testadressen zu senden, bevor Sie an die endgültige Zielgruppe versenden.
 
-## Vorlage erstellen
+### Vorlage erstellen
 
 Gehen Sie wie folgt vor, um eine Nachrichtenvorlage zu erstellen:
 
@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um eine Nachrichtenvorlage zu erstellen:
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Ereignistypen, die von Adobe Campaign verarbeitet werden sollen, müssen von Adobe in der Kontrollinstanz erstellt werden.
+   Ereignistypen, die von Adobe Campaign verarbeitet werden sollen, müssen in der Kontrollinstanz durch Adobe erstellt werden.
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ Gehen Sie wie folgt vor, um eine Nachrichtenvorlage zu erstellen:
 
 1. Geben Sie die Art sowie eine Beschreibung der Vorlage an und klicken Sie auf **[!UICONTROL Fortfahren]**, um den Nachrichteninhalt zu erstellen. Siehe [Nachrichteninhalt erstellen](#create-message-content).
 
-## Inhalt erstellen{#create-message-content}
+### Inhalt erstellen{#create-message-content}
 
 Die Definition des Inhalts der Transaktionsnachricht entspricht der für alle Sendungen in Adobe Campaign. So können Sie z. B. für einen E-Mail-Versand Inhalte im HTML- oder Textformat erstellen, Anhänge hinzufügen oder das Versandobjekt personalisieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../start/create-message.md).
 
@@ -92,7 +92,7 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
    ![](assets/messagecenter_create_custo_2.png)
 
-## Testadressen hinzufügen{#add-seeds}
+### Testadressen hinzufügen{#add-seeds}
 
 Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen Testversand senden und die Personalisierung der Nachricht testen, bevor Sie die Nachricht senden. Testadressen sind mit dem Versand verknüpft und können nicht für andere Versände verwendet werden.
 
@@ -118,7 +118,7 @@ Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen 
 
 Sobald die Adressen erstellt wurden, können Sie eine Vorschau der Nachricht und ihrer Personalisierung erzeugen.
 
-## Personalisierungsdaten hinzufügen{#personalization-data}
+### Personalisierungsdaten hinzufügen{#personalization-data}
 
 Sie können Daten in der Nachrichtenvorlage hinzufügen, um die Personalisierung der Transaktionsnachricht zu testen. Auf diese Weise können Sie eine Vorschau erstellen oder einen Testversand senden. Wenn Sie das Modul **Zustellbarkeit** installieren, können Sie mit diesen Daten ein Rendering der Nachrichten für verschiedene Desktop-, Web- oder Mobile-Clients anzeigen.
 
@@ -133,7 +133,7 @@ Mit diesen Informationen können Sie Nachrichteninhalte mithilfe von Personalisi
 
    ![](assets/messagecenter_create_custo_3.png)
 
-## Transaktionsnachricht in der Vorschau prüfen{#transactional-message-preview}
+### Vorschau der Transaktionsnachricht{#transactional-message-preview}
 
 Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalts können Sie eine Vorschau Ihrer Nachricht erzeugen und ihre Personalisierung überprüfen:
 
@@ -145,7 +145,7 @@ Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalt
 
    ![](assets/messagecenter_create_seed_7.png)
 
-## Testversand durchführen
+### Testversand durchführen
 
 Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versand einen Testversand durchzuführen.
 
