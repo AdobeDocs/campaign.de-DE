@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Campaign-Schemata erweitern
 description: Erfahren Sie, wie Sie Campaign-Schemata erweitern
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 81%
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
    ![](assets/extend-schema-select.png)
 
-   Benennen Sie das Erweiterungsschema standardmäßig genauso wie das integrierte Schema und verwenden Sie einen benutzerdefinierten Namespace.  Beachten Sie, dass einige Namespaces nur intern sind. [Weitere Informationen](schemas.md#reserved-namespaces).
+   Benennen Sie das Erweiterungsschema standardmäßig genauso wie das integrierte Schema und verwenden Sie einen benutzerdefinierten Namespace.  Beachten Sie, dass einige Namespaces nur intern sind. [Mehr dazu](schemas.md#reserved-namespaces)
 
    ![](assets/extend-schema-validate.png)
 
