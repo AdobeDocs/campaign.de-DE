@@ -6,7 +6,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 7bb480eb69aa92e8876acaf2322e532dbb2f1f96
+source-git-commit: a7309c9ec735f958f038c6ea4e702c99c726f8bd
 workflow-type: tm+mt
 source-wordcount: '1299'
 ht-degree: 32%
@@ -135,10 +135,13 @@ Weitere Informationen hierzu finden Sie auf der Seite [Produktprofile für Adobe
 
 1. Ordnen Sie im Fenster **[!UICONTROL Analytics-Integration konfigurieren]** Ihr externes Konto Ihrer zuvor erstellten Report Suite zu, indem Sie die folgenden Informationen bereitstellen:
 
+   ![](assets/analytics_connector_0.png)
+
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**
    * **[!UICONTROL Analytics-Unternehmen]**
    * **[!UICONTROL Report Suite]**
+
 
 1. Ordnen Sie in der Kategorie **[!UICONTROL eVars]** die beiden **[!UICONTROL Konversionsvariablen]** zu, die in [!DNL Adobe Analytics] konfiguriert sind.
 
