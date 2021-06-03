@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie einen Angebotskatalog erstellen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 74%
@@ -40,11 +40,11 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in einen Versand einzufügen:
 
    ![](assets/offer_delivery_005.png)
 
-1. Wählen Sie bei Bedarf die Option **[!UICONTROL Nicht infrage kommende Empfänger ausschließen]** aus. [Weitere Informationen](#parameters-for-calling-offer-engine).
+1. Wählen Sie bei Bedarf die Option **[!UICONTROL Nicht infrage kommende Empfänger ausschließen]** aus. [Mehr dazu](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_006.png)
 
-1. Wählen Sie bei Bedarf die Option **[!UICONTROL Keine Anzeige, wenn keine Angebote ausgewählt sind]** aus. [Weitere Informationen](#parameters-for-calling-offer-engine).
+1. Wählen Sie bei Bedarf die Option **[!UICONTROL Keine Anzeige, wenn keine Angebote ausgewählt sind]** aus. [Mehr dazu](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_007.png)
 
@@ -110,7 +110,7 @@ Nach der Konfiguration Ihrer **Abfrage** -Aktivität:
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Weitere Informationen](#offer-into-a-delivery).
+1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Mehr dazu](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -132,7 +132,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Weitere Informationen](#offer-into-a-delivery).
+1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Mehr dazu](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -148,7 +148,7 @@ Standardmäßig werden Rang und Gewichtung bei Verwendung der Aktivität **Anrei
 
 Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten:
 
-1. Erstellen Sie eine Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die nach einer Abfrage und vor einer Versandaktivität platziert wird. [Weitere Informationen](#specifying-an-offer-or-a-call-to-the-offer-engine).
+1. Erstellen Sie eine Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die nach einer Abfrage und vor einer Versandaktivität platziert wird. [Mehr dazu](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. Klicken Sie im Anreicherung-Tab der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -182,7 +182,7 @@ Nach der Konfiguration Ihrer **Abfrage** -Aktivität:
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Weitere Informationen](#inserting-an-offer-proposition-into-a-delivery).
+1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Mehr dazu](#inserting-an-offer-proposition-into-a-delivery)
 
 ### Angebote pro Segment {#offers-by-cell}
 
