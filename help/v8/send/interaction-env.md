@@ -5,7 +5,7 @@ description: Erstellen von Angebotsmanagement-Operatoren
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 37%
@@ -31,7 +31,7 @@ Standardmäßig ist Campaign mit einer **[!UICONTROL Design]**-Umgebung und eine
 
 ![](assets/offer_environments_overview_002.png)
 
-Versandverantwortliche können nur die Umgebung **[!UICONTROL Live]** anzeigen und Angebote nutzen, um sie bereitzustellen. Angebotsverantwortliche Benutzer können die Umgebung **[!UICONTROL Design]** anzeigen und die Umgebung **[!UICONTROL Live]** anzeigen. [Weitere Informationen](interaction-operators.md).
+Versandverantwortliche können nur die Umgebung **[!UICONTROL Live]** anzeigen und Angebote nutzen, um sie bereitzustellen. Angebotsverantwortliche Benutzer können die Umgebung **[!UICONTROL Design]** anzeigen und die Umgebung **[!UICONTROL Live]** anzeigen. [Mehr dazu](interaction-operators.md)
 
 ## Erstellen einer Angebotsumgebung {#creating-an-offer-environment}
 
