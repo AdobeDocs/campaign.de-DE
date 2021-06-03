@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie ein Angebot erstellen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 60%
@@ -50,7 +50,7 @@ Klicken Sie dazu auf den Link **[!UICONTROL Abfrage bearbeiten]** und wählen Si
 
 ![](assets/offer_eligibility_create_003.png)
 
-Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der Liste der Benutzerfilter auswählen. [Weitere Informationen](interaction-predefined-filters.md).
+Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der Liste der Benutzerfilter auswählen. [Mehr dazu](interaction-predefined-filters.md)
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -64,7 +64,7 @@ Ein Angebot kann für Kontakte im Alter von 18 bis 25 Jahren eine Gewichtung A a
 
 >[!NOTE]
 >
->Die zugewiesene Gewichtung kann vorübergehend entsprechend den Parametern der Kategorie geändert werden, zu der das Angebot gehört. [Weitere Informationen](interaction-offer-catalog.md#creating-offer-categories).
+>Die zugewiesene Gewichtung kann vorübergehend entsprechend den Parametern der Kategorie geändert werden, zu der das Angebot gehört. [Mehr dazu](interaction-offer-catalog.md#creating-offer-categories)
 
 Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
@@ -140,7 +140,7 @@ Verwenden Sie den Tab **[!UICONTROL Inhalt]** , um den Angebotsinhalt zu definie
 
    ![](assets/offer_content_create_002.png)
 
-   Durch Klick auf den Link **[!UICONTROL Inhaltsdefinition]** können Sie prüfen, welche Felder in der Platzierungskonfiguration als Pflichtfelder definiert wurden. [Weitere Informationen](interaction-offer-spaces.md).
+   Durch Klick auf den Link **[!UICONTROL Inhaltsdefinition]** können Sie prüfen, welche Felder in der Platzierungskonfiguration als Pflichtfelder definiert wurden. [Mehr dazu](interaction-offer-spaces.md)
 
    ![](assets/offer_content_create_003.png)
 
