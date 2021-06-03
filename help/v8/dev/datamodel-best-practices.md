@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: Best Practices für Datenmodelle
 description: Best Practices für die Erweiterung von Campaign-Datenmodellen
-source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2688'
 ht-degree: 93%
 
 ---
@@ -93,7 +93,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 | Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Ändern Sie den von Adobe Campaign erstellten Namen, wenn Sie das Objekt von einer Umgebung aus in einer anderen bereitstellen möchten.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Einige reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk* usw.  Beachten Sie, dass einige Namespaces nur intern sind. [Weitere Informationen](schemas.md#reserved-namespaces).</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen &quot; &quot;, Doppelpunkt &quot;:&quot; oder Bindestrich &quot;-&quot;. Alle diese Zeichen würden durch einen Unterstrich (_) ersetzt werden. Beispielsweise würden &quot;abc-def&quot; und &quot;abc:def&quot; als &quot;abc_def&quot; gespeichert werden und sich gegenseitig überschreiben.</li></ul> |
 | Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
-Der Adobe Campaign-Primärschlüssel ist eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden.
+Der Adobe Campaign-Primärschlüssel ist eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden. [Mehr dazu](keys.md)
 
 Zwar ist die Anzahl der IDs unbegrenzt, doch sollten Sie auf die Größe Ihrer Datenbank achten, um optimale Leistung sicherzustellen. Um Probleme zu vermeiden, sollten Sie die Einstellungen für die Bereinigung von Instanzen anpassen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#data-retention).
 
