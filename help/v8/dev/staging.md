@@ -5,7 +5,7 @@ description: Campaign-API-Staging-Mechanismus
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 4%
@@ -20,7 +20,7 @@ Die Staging-Funktion von Kampagnen ist in einigen integrierten Schemata standard
 
 * Die Datenschemastruktur wird in die lokale Staging-Tabelle dupliziert.
 * Neue APIs für die Datenerfassung werden direkt in die lokale Staging-Tabelle übertragen. [Mehr dazu](new-apis.md)
-* Ein geplanter Workflow wird stündlich Trigger und die Daten werden wieder in die Cloud-Datenbank synchronisiert. [Weitere Informationen](../config/replication.md).
+* Ein geplanter Workflow wird stündlich Trigger und die Daten werden wieder in die Cloud-Datenbank synchronisiert. [Mehr dazu](../config/replication.md)
 
 Einige integrierte Schemata werden standardmäßig als &quot;Staging&quot;festgelegt, z. B. nmsSubscriptionRcp, nmsAppSubscriptionRcp, nmsRecipient.
 
