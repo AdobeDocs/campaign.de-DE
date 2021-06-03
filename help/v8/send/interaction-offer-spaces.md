@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Platzierungen erstellen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '656'
 ht-degree: 24%
 
 ---
@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    Diese Funktionen dienen der Erzeugung von Angebotsdarstellungen an einer Platzierung. Es gibt mehrere mögliche Formate: HTML oder Text.
 
-   **Hinweis**  - Das XML-Format ist auf eingehende Interaktionen beschränkt, die temporär nicht verfügbar sind. [Mehr dazu](../start/capability-matrix.md#gs-unavailable-features)
+   **Hinweis**  - Das XML-Format ist auf eingehende Interaktionen beschränkt, die in dieser Produktversion nicht verfügbar sind. [Mehr dazu](../start/capability-matrix.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
