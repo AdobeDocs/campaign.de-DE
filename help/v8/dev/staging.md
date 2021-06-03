@@ -5,21 +5,21 @@ description: Campaign-API-Staging-Mechanismus
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '312'
 ht-degree: 4%
 
 ---
 
 # Campaign-API-Staging-Mechanismus
 
-In der Campaign Cloud-Datenbank werden gebündelte Einzelaufrufe aufgrund der Leistung (Latenz und gleichzeitige Nutzung) nicht empfohlen. Batch-Vorgänge werden immer bevorzugt. Um eine optimale Leistung der APIs zu gewährleisten, verarbeitet Campaign API-Aufrufe weiterhin auf lokaler Datenbankebene.
+In der Campaign Cloud-Datenbank wird die Weitergabe von Einzelaufrufen hinsichtlich der Leistung (Latenz und gleichzeitige Nutzung) nicht empfohlen. Der Stapelvorgang wird immer bevorzugt. Um die Leistung zu verbessern, werden Aufnahme-APIs an die lokale Datenbank weitergeleitet.
 
-Der Campaign-Staging-Mechanismus ist für integrierte und benutzerdefinierte Tabellen verfügbar und bringt die folgenden Vorteile mit sich:
+Die Staging-Funktion von Kampagnen ist in einigen integrierten Schemata standardmäßig aktiviert. Wir können sie auch für jedes benutzerdefinierte Schema aktivieren. Staging-Mechanismus in Kürze:
 
-* Die Datenschemastruktur wird in der lokalen Staging-Tabelle repliziert
-* Neue APIs zur Aufnahme fließen direkt in die Staging-Tabelle. [Mehr dazu](new-apis.md)
+* Die Datenschemastruktur wird in die lokale Staging-Tabelle dupliziert.
+* Neue APIs für die Datenerfassung werden direkt in die lokale Staging-Tabelle übertragen. [Mehr dazu](new-apis.md)
 * Ein geplanter Workflow wird stündlich Trigger und die Daten werden wieder in die Cloud-Datenbank synchronisiert. [Weitere Informationen](../config/replication.md).
 
 Einige integrierte Schemata werden standardmäßig als &quot;Staging&quot;festgelegt, z. B. nmsSubscriptionRcp, nmsAppSubscriptionRcp, nmsRecipient.
@@ -28,7 +28,13 @@ Campaign Classic v7-APIs sind weiterhin verfügbar, können aber von diesem neue
 
 >[!CAUTION]
 >
->Mit diesem neuen Mechanismus ist die Datensynchronisation für Abonnements, Abmeldungen oder mobile Registrierungen jetzt **asynchron**.
+>* Mit diesem neuen Mechanismus ist die Datensynchronisation für die Abmeldung von Kanälen, Abonnements, Abmeldungen oder mobile Registrierung jetzt **asynchron**.
+   >
+   >
+* Das Staging gilt nur für Schemas, die in der Cloud-Datenbank gespeichert sind. Aktivieren Sie keine Staging-Umgebung für replizierte Schemas. Aktivieren Sie keine Staging-Umgebung für lokale Schemas. Aktivieren Sie die Staging-Umgebung nicht für ein gestaffeltes Schema
+
+>
+
 
 
 ## Implementierungsschritte{#implement-staging}
