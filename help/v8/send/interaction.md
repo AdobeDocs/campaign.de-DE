@@ -5,10 +5,10 @@ description: Erste Schritte mit dem Angebotsmanagement
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 15%
+ht-degree: 13%
 
 ---
 
@@ -28,19 +28,19 @@ Die wichtigsten Schritte zum Starten sind unten aufgeführt.
 
 Stellen Sie vor dem Start als Campaign **Administrator** sicher, dass Sie die folgenden Aufgaben in Design-Umgebungen ausgeführt haben:
 
-1. Erstellen Sie Benutzerprofile. [Weitere Informationen](interaction-operators.md).
+1. Erstellen Sie Benutzerprofile. [Mehr dazu](interaction-operators.md)
 1. (optional) Erstellen Sie für jede Zielgruppendimension eine Angebotsumgebung. [Mehr dazu](interaction-env.md)
-1. Erstellen Sie Typologieregeln für jede Umgebung. [Weitere Informationen](interaction-offer.md#offer-presentation).
-1. Erstellen Sie für jede Umgebung Angebotsplatzierungen und konfigurieren Sie Rendering-Funktionen. [mehr dazu](interaction-offer-spaces.md).
-Wenn eine Platzierung in einem Einzelmodus-Kanal als identifiziert definiert wurde, müssen ihre erweiterten Parameter angegeben werden.
+1. Erstellen Sie Typologieregeln für jede Umgebung. [Mehr dazu](interaction-offer.md#offer-presentation)
+1. Erstellen Sie für jede Umgebung Angebotsplatzierungen und konfigurieren Sie Rendering-Funktionen. [Erfahren Sie ](interaction-offer-spaces.md)
+mehr: Wenn die Platzierung im Identifizierungsmodus von einem einheitlichen Kanal definiert wird, müssen Sie die erweiterten Parameter für diese Platzierung angeben.
 
 ### Erstellen und publizieren Sie den Angebotskatalog {#managing-the-offer-catalog-}
 
 Als **Angebotsverantwortlicher** müssen Sie die folgenden Aufgaben ausführen:
 
-1. Erstellen Sie Angebotskategorien in Design-Umgebungen. [Weitere Informationen](interaction-offer-catalog.md#creating-offer-categories).
-1. Erstellen Sie Angebote in Design-Umgebungen. [Weitere Informationen](interaction-offer.md).
-1. Validieren und veröffentlichen Sie Angebote auf einem oder mehreren Platzierungen, um sie in Live-Umgebungen für den Versandverantwortlichen verfügbar zu machen. [Weitere Informationen](interaction-offer.md#approve-offers).
+1. Erstellen Sie Angebotskategorien in Design-Umgebungen. [Mehr dazu](interaction-offer-catalog.md#creating-offer-categories)
+1. Erstellen Sie Angebote in Design-Umgebungen. [Mehr dazu](interaction-offer.md)
+1. Validieren und veröffentlichen Sie Angebote auf einem oder mehreren Platzierungen, um sie in Live-Umgebungen für den Versandverantwortlichen verfügbar zu machen. [Mehr dazu](interaction-offer.md#approve-offers)
 
 ### Nutzen Sie den Angebotskatalog {#using-the-offer-catalog-}
 
