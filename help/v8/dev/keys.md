@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Schlüsselverwaltung in Campaign '
 description: Erste Schritte mit der Schlüsselverwaltung
-source-git-commit: 9a1c44f74f6558f0397617353f3e78186fb15717
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '676'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,10 @@ Als Best Practice empfiehlt Adobe die Übernahme einer [Detect](#detect-duplicat
 ## Duplikate erkennen{#detect-duplicates}
 
 Campaign verfügt über eine neue Schutzfunktion, mit der während der Versandvorbereitung automatisch duplizierte UUIDs aus einer Audience entfernt werden. Dieser neue Mechanismus verhindert, dass bei der Versandvorbereitung Fehler auftreten.
+
+>[!CAUTION]
+>
+>Duplizierte Schlüssel sind nicht auf UUIDs beschränkt. Dies kann mit IDs geschehen, einschließlich benutzerdefinierter Schlüssel, die in benutzerdefinierten Tabellen erstellt wurden.
 
 Als Endbenutzer können Sie diese Informationen in den Versandlogs überprüfen: Manche Empfänger können wegen eines duplizierten Schlüssels aus der Hauptzielgruppe ausgeschlossen werden. In diesem Fall wird die folgende Warnung angezeigt: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
