@@ -5,10 +5,10 @@ description: Erste Schritte mit Transaktionsnachrichten
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
+source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 94%
+source-wordcount: '1540'
+ht-degree: 92%
 
 ---
 
@@ -217,10 +217,10 @@ Sobald eine Nachrichtenvorlage in den Ausführungsinstanzen veröffentlicht wurd
 
 * Zudem können Sie keine Transaktionsnachrichten-Vorlagen löschen, die den Status **[!UICONTROL Veröffentlicht]** aufweisen. In diesem Fall müssen Sie die Veröffentlichung der Vorlage zuerst aufheben.
 
-Gehen Sie wie folgt vor, um die Veröffentlichung einer Transaktionsnachrichtenvorlage aufzuheben.
+Gehen Sie wie folgt vor, um die Veröffentlichung einer Transaktionsnachrichten-Vorlage aufzuheben.
 
-1. Gehen Sie in der Kontrollinstanz im Navigationsbaum zum Ordner **[!UICONTROL Message Center > Transaktionsnachrichtenvorlagen]**.
-1. Wählen Sie die Vorlage aus, deren Veröffentlichung Sie aufheben möchten.
+1. Navigieren Sie in der Kontrollinstanz zum Ordner **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]** .
+1. Wählen Sie die Vorlage aus, deren Veröffentlichung rückgängig gemacht werden soll.
 1. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**.
 1. Klicken Sie auf **[!UICONTROL Starten]**.
 
