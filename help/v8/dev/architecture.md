@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
+source-git-commit: e6086620909277eaaf5966335df9b71c6830e726
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 74%
+source-wordcount: '608'
+ht-degree: 76%
 
 ---
 
@@ -67,8 +67,6 @@ In der hier angewendeten Architektur sind Ausführungszelle und Kontrollinstanz 
 >Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
 
 ![](assets/messagecenter_diagram.png)
-
-[!DNL :arrow_upper_right:] Die Message-Center-Architektur wird in der Dokumentation zu  [Campaign Classic v7 beschrieben.](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture.html)
 
 ### Authentifizierung
 
