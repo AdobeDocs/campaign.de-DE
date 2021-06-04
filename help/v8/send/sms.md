@@ -5,9 +5,9 @@ description: Erste Schritte mit dem SMS-Versand in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
+source-git-commit: 04f9d80e26fab372a1819590f8e79298c7a69ab5
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '590'
 ht-degree: 41%
 
 ---
@@ -30,7 +30,7 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 
 * Eine Versandvorlage, die auf das externe Konto Bezug nimmt.
 
-!DNL :arrow_upper_right:] Erfahren Sie, wie Sie einen SMS-Kanal in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=de#sending-messages) konfigurieren.
+[!DNL :arrow_upper_right:]  Informationen zum Konfigurieren eines SMS-Kanals finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=de#sending-messages)
 
 Achten Sie vor dem Versand von SMS-Nachrichten auf Folgendes:
 
