@@ -6,7 +6,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: a7309c9ec735f958f038c6ea4e702c99c726f8bd
+source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
 workflow-type: tm+mt
 source-wordcount: '1299'
 ht-degree: 32%
@@ -135,8 +135,6 @@ Weitere Informationen hierzu finden Sie auf der Seite [Produktprofile für Adobe
 
 1. Ordnen Sie im Fenster **[!UICONTROL Analytics-Integration konfigurieren]** Ihr externes Konto Ihrer zuvor erstellten Report Suite zu, indem Sie die folgenden Informationen bereitstellen:
 
-   ![](assets/analytics_connector_0.png)
-
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**
    * **[!UICONTROL Analytics-Unternehmen]**
@@ -160,6 +158,8 @@ Weitere Informationen hierzu finden Sie auf der Seite [Produktprofile für Adobe
    ![](assets/analytics_connnector_12.png)
 
 1. Bei Bedarf können Sie auf der Registerkarte **[!UICONTROL Segmente aktualisieren]** Segmente hinzufügen oder entfernen.
+
+   ![](assets/analytics_connnector_12a.png)
 
 1. Klicken Sie in Ihrem **[!UICONTROL externen Konto]** auf **[!UICONTROL Formel anreichern...]** Link zur Änderung der URL-Berechnungsformel, um die Integrationsinformationen für das Web-Analytics-Tool (Kampagnen-IDs) und die Domänen der Sites anzugeben, deren Aktivität verfolgt werden muss.
 
