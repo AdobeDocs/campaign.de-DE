@@ -5,7 +5,7 @@ description: Erste Schritte mit dem SMS-Versand in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 04f9d80e26fab372a1819590f8e79298c7a69ab5
+source-git-commit: 35814053bff993d0b130bf598c8601c3f5adc407
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 41%
@@ -51,9 +51,9 @@ Außerdem sollten Sie mit dem Protokoll und den Einstellungen für SMS vertraut 
 
    ![](assets/sms-template-list.png)
 
-   [!DNL :arrow_upper_right:] Erfahren Sie in der Dokumentation zu  [Campaign Classic v7 , wie Sie ein externes SMPP-Konto erstellen.](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#creating-an-smpp-external-account)
+   [!DNL :arrow_upper_right:] Erfahren Sie in der Dokumentation zu  [Campaign Classic v7 , wie Sie ein externes SMPP-Konto erstellen.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#creating-an-smpp-external-account)
 
-   [!DNL :arrow_upper_right:] Erfahren Sie in der Dokumentation zu  [Campaign Classic v7 , wie Sie eine Versandvorlage erstellen, die auf Mobiltelefone bereitgestellt werden soll.](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#changing-the-delivery-template)
+   [!DNL :arrow_upper_right:] Erfahren Sie in der Dokumentation zu  [Campaign Classic v7 , wie Sie eine Versandvorlage erstellen, die auf Mobiltelefone bereitgestellt werden soll.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#changing-the-delivery-template)
 
 1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein.
 
@@ -69,11 +69,11 @@ Die wichtigsten Schritte zum Erstellen und Entwerfen einer SMS werden in der Dok
 
 * SMS erstellen
 
-   [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie einen SMS-Versand erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=de#sending-messages)
+   [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie einen SMS-Versand erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#sending-messages)
 
 * SMS-Inhalt gestalten
 
-   [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie den SMS-Inhalt definieren](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=de#defining-the-sms-content)
+   [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie den SMS-Inhalt definieren](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#defining-the-sms-content)
 
 * E-Mail-Audience auswählen
 
@@ -100,7 +100,7 @@ Die wichtigsten Schritte zum Senden und Überwachen einer SMS werden im Campaign
 
 * SMS-Sendungen ausführen, überwachen und verfolgen
 
-   [!DNL :arrow_upper_right:] [Erfahren Sie mehr über die Tools zum Senden, Überwachen und Verfolgen von SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html?lang=de#sending-messages)
+   [!DNL :arrow_upper_right:] [Erfahren Sie mehr über die Tools zum Senden, Überwachen und Verfolgen von SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html?lang=en#sending-messages)
 * Fehlerbehebung bei SMS-Sendungen
 
-   [!DNL :arrow_upper_right:] [Informationen zur SMS-Fehlerbehebung](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html?lang=de#sending-messages)
+   [!DNL :arrow_upper_right:] [Informationen zur SMS-Fehlerbehebung](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html?lang=en#sending-messages)
