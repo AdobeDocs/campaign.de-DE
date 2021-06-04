@@ -6,7 +6,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 032bee3b58948b558efe50796efa789a046ff5e4
+source-git-commit: efb236fe47653ddd45f8a5a08e0595b9f6287b7d
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 85%
@@ -70,11 +70,15 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    Sie können die Audience in einem Workflow erstellen oder eine bestehende Gruppe auswählen, z. B. eine Empfänger-Liste, Abonnenten eines Newsletters, Empfänger eines vorherigen Versands oder eine beliebige Filterbedingung.
 
+   ![](assets/campaign-wf.png)
+
    [!DNL :arrow_upper_right:] Erfahren Sie, wie Sie die Audience Ihrer Nachrichten in der Dokumentation zu  [Campaign Classic v7 definieren.](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=de#orchestrating-campaigns)
 
 1. **Sendungen erstellen**
 
    Wählen Sie einen oder mehrere Kanäle aus, definieren Sie den Nachrichteninhalt und starten Sie Sendungen.
+
+   ![](assets/campaign-dashboard.png)
 
    [!DNL :arrow_upper_right:] Erfahren Sie, wie Sie Marketingkampagnen-Sendungen erstellen und starten, in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=de#creating-deliveries)
 
