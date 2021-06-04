@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 03cc90222cc8f64e820856382a00c92bf3f92c41
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 78%
+source-wordcount: '358'
+ht-degree: 74%
 
 ---
 
@@ -27,8 +27,12 @@ Modernisieren Sie Ihre Implementierung und nutzen Sie alle Adobe Experience Clou
 
 Campaign v8 kann eine Verbindung herstellen mit:
 
-* [Adobe Journey Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=de)
-* [Real-Time CDP](../connect/ac-rtcdp.md)
+
+* [Echtzeit-Kundendatenplattform von Adobe Experience Cloud](../connect/ac-rtcdp.md)
+* [Adobe Journey Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=de).
+
+   Siehe das End-to-End-Anwendungsbeispiel [hier](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html).
+
 * [Adobe Analytics](../connect/ac-aa.md)
 * [Adobe Experience Manager](../connect/ac-aem.md)
 * [Adobe Experience Cloud Trigger](../connect/ac-triggers.md)
