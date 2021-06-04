@@ -6,10 +6,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 03585f0c1514a80b0b0cba5a2d05fa3f44398405
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 80%
+source-wordcount: '819'
+ht-degree: 77%
 
 ---
 
@@ -117,6 +117,16 @@ Adobe Campaign kann so konfiguriert werden, dass der Anwender über seine LDAP-A
 Bestimmte Teile der Anwendung können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden: Kampagnen-Dashboard, Cube-Reporting, Instanzüberwachung und mehr.
 
 [!DNL :arrow_upper_right:] Weitere Informationen zum Webzugriff finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)
+
+Der Webzugriff bietet eine Schnittstelle, die der Konsole ähnlich ist, jedoch eingeschränkte Funktionen aufweist.
+
+Beispielsweise wird für einen bestimmten Benutzer eine Kampagne mit den folgenden Optionen in der Konsole angezeigt:
+
+![](assets/campaign-from-console.png)
+
+Beim Webzugriff ermöglichen die Optionen vor allem die Anzeige von:
+
+![](assets/campaign-from-web.png)
 
 Der Webzugriff wird auch für den Validierungsprozess verwendet: Benutzer können auf die E-Mail mit der Validierungsanfrage klicken und über ihren Webbrowser eine Verbindung zu Campaign herstellen, um Versandinhalte oder -budgets zu validieren oder abzulehnen.
 
