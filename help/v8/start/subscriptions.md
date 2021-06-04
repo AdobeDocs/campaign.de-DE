@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Abonnements und Abmeldungen in Campaign v8 ve
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: f69d318b4ea767c44f8c19bf0cf45fb1b7001b11
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 37%
@@ -21,6 +21,8 @@ Mit Adobe Campaign können Sie Informations-Services wie Newsletter erstellen un
 Folgende Optionen stehen zur Anmeldung (Opt-in) für ein Profil für einen Dienst zur Verfügung:
 
 * Fügen Sie den Dienst manuell zum Empfängerprofil hinzu: Klicken Sie dazu im Tab **[!UICONTROL Abonnements]** ihres Profils auf **[!UICONTROL Hinzufügen]** und wählen Sie den entsprechenden Informationsdienst aus.
+
+   ![](assets/subscribe-to-a-service.png)
 
    [!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab)
 
