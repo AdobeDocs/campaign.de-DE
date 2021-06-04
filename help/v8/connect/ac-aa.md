@@ -6,9 +6,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
+source-git-commit: 6a22bdd563bb0be26df12ce8d2b6da266d16f2e3
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1298'
 ht-degree: 32%
 
 ---
@@ -157,9 +157,9 @@ Weitere Informationen hierzu finden Sie auf der Seite [Produktprofile für Adobe
 
    ![](assets/analytics_connnector_12.png)
 
-1. Bei Bedarf können Sie auf der Registerkarte **[!UICONTROL Segmente aktualisieren]** Segmente hinzufügen oder entfernen.
-
-   ![](assets/analytics_connnector_12a.png)
+   >[!NOTE]
+   >
+   > Segmente können in dieser Version von Campaign v8 nicht hinzugefügt oder entfernt werden.
 
 1. Klicken Sie in Ihrem **[!UICONTROL externen Konto]** auf **[!UICONTROL Formel anreichern...]** Link zur Änderung der URL-Berechnungsformel, um die Integrationsinformationen für das Web-Analytics-Tool (Kampagnen-IDs) und die Domänen der Sites anzugeben, deren Aktivität verfolgt werden muss.
 
