@@ -5,10 +5,10 @@ description: Erste Schritte mit Push-Benachrichtigungen in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c6f1cfdec3d05a81f8885cc73b370723024f858f
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 72%
+source-wordcount: '649'
+ht-degree: 53%
 
 ---
 
@@ -49,9 +49,78 @@ Sie müssen die Einstellungen Ihrer iOS- bzw. Android-basierten Mobile Apps in A
 
 ## Erste Push-Benachrichtigung erstellen
 
-[!DNL :arrow_upper_right:] Erfahren Sie, wie Sie Ihre ersten Push-Benachrichtigungen in der Dokumentation von  [Campaign Classic v7 erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=de#sending-notifications-on-ios)
+In diesem Abschnitt werden die Elemente beschrieben, die für die Bereitstellung von iOS- und Android-Benachrichtigungen spezifisch sind.
 
+[!DNL :arrow_upper_right:] Alle Schritte zum Erstellen von Push-Benachrichtigungen werden in der Dokumentation zu  [Campaign Classic v7 beschrieben.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=de#sending-notifications-on-ios)
 
 >[!CAUTION]
 >
 >Mit Campaign v8 ist die mobile Registrierung jetzt **asynchron**. [Mehr dazu](../dev/staging.md)
+
+Um einen neuen Versand zu erstellen, gehen Sie zum Tab **[!UICONTROL Kampagnen]**, klicken Sie auf **[!UICONTROL Sendungen]** und dann auf die Schaltfläche **[!UICONTROL Erstellen]** oberhalb der Liste der vorhandenen Sendungen.
+
+![](assets/delivery_step_1.png)
+
+### Versand von Benachrichtigungen auf iOS-Geräte {#sending-notifications-on-ios}
+
+1. Wählen Sie die Versandvorlage **[!UICONTROL iOS]** und klicken Sie auf **[!UICONTROL Weiter]**.
+
+   ![](assets/push-template-ios.png)
+
+1. Klicken Sie zur Bestimmung der Zielgruppe der Benachrichtigung auf den Link **[!UICONTROL An]** und anschließend auf **[!UICONTROL Hinzufügen]**.
+
+   ![](assets/push-ios-select-target.png)
+
+1. Wählen Sie **[!UICONTROL Abonnenten einer iOS-Mobile-App (iPhone, iPad)]**, wählen Sie den für Ihre Mobile App relevanten Dienst und dann die iOS-Version der App aus.
+
+   ![](assets/push-ios-subscribers.png)
+
+1. Wählen Sie den Benachrichtigungstyp aus: **[!UICONTROL Alert]**, **[!UICONTROL Badge]**, **[!UICONTROL Warnhinweis und Badge]** oder **[!UICONTROL Stiller Push]**.
+
+   ![](assets/push-ios-alert.png)
+
+1. Geben Sie im Feld **[!UICONTROL Titel]** den Titel ein, der in der Benachrichtigung angezeigt werden soll.
+
+1. Geben Sie die **[!UICONTROL Message]** und den **[!UICONTROL Badge]** entsprechend dem ausgewählten Benachrichtigungstyp ein.
+
+1. Mit der **[!UICONTROL Aktionsschaltfläche]** können Sie einen Titel für die Aktionsschaltfläche definieren, die in den Warnhinweis-Benachrichtigungen erscheint (**action_loc_key** -Feld der Payload).
+
+1. Wählen Sie im Feld **[!UICONTROL Ton abspielen]** die Melodie aus, die bei Erhalt einer Nachricht abgespielt werden soll.
+
+1. Geben Sie im Feld **[!UICONTROL Anwendungsvariablen]** den Wert jeder Variablen ein. Sie können beispielsweise einen bestimmten Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
+
+1. Klicken Sie nach Angabe aller erforderlichen Benachrichtigungsparameter auf den **[!UICONTROL Vorschau]**-Tab, um das Rendering der Benachrichtigung zu prüfen.
+
+   ![](assets/push-ios-preview.png)
+
+### Versand von Benachrichtigungen auf Android-Geräte {#sending-notifications-on-android}
+
+1. Wählen Sie die Versandvorlage **[!UICONTROL Android-Versand (android)]** aus.
+
+   ![](assets/push-template-android.png)
+
+1. Klicken Sie zur Bestimmung der Zielgruppe der Benachrichtigung auf den Link **[!UICONTROL An]** und anschließend auf **[!UICONTROL Hinzufügen]**.
+
+   ![](assets/nmac_delivery_android_2.png)
+
+1. Wählen Sie **[!UICONTROL Abonnenten einer Android-Mobile-App]**, dann den Ihrer Mobile App entsprechenden Dienst (hier Neotrips) und schließlich die Android-Version der App.
+
+   ![](assets/push-android-select-target.png)
+
+1. Erfassen Sie den Inhalt der Benachrichtigung.
+
+   ![](assets/push-android-content.png)
+
+1. Klicken Sie auf das Symbol **[!UICONTROL Emoticon einfügen]**, um Ihrer Push-Benachrichtigung Emoticons hinzuzufügen.
+
+1. Geben Sie im Feld **[!UICONTROL Anwendungsvariablen]** den Wert jeder Variablen ein. Sie können beispielsweise einen bestimmten Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
+
+1. Klicken Sie nach Angabe aller erforderlichen Benachrichtigungsparameter auf den **[!UICONTROL Vorschau]**-Tab, um das Rendering der Benachrichtigung zu prüfen.
+
+   ![](assets/push-android-preview.png)
+
+## Testen, Senden und Überwachen von Push-Benachrichtigungen
+
+Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Versand durchgeführt.
+
+Nach dem Nachrichtenversand können Sie Ihre Sendungen beobachten und verfolgen.
