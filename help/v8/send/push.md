@@ -5,7 +5,7 @@ description: Erste Schritte mit Push-Benachrichtigungen in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: c6f1cfdec3d05a81f8885cc73b370723024f858f
+source-git-commit: b0fcdefb638a2424e9464cf520724cc492fabc55
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 53%
@@ -97,19 +97,19 @@ Um einen neuen Versand zu erstellen, gehen Sie zum Tab **[!UICONTROL Kampagnen]*
 
 1. Wählen Sie die Versandvorlage **[!UICONTROL Android-Versand (android)]** aus.
 
-   ![](assets/push-template-android.png)
+   <!--![](assets/push-template-android.png)-->
 
 1. Klicken Sie zur Bestimmung der Zielgruppe der Benachrichtigung auf den Link **[!UICONTROL An]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/nmac_delivery_android_2.png)
+   <!--![](assets/nmac_delivery_android_2.png)-->
 
 1. Wählen Sie **[!UICONTROL Abonnenten einer Android-Mobile-App]**, dann den Ihrer Mobile App entsprechenden Dienst (hier Neotrips) und schließlich die Android-Version der App.
 
-   ![](assets/push-android-select-target.png)
+   <!--![](assets/push-android-select-target.png)-->
 
 1. Erfassen Sie den Inhalt der Benachrichtigung.
 
-   ![](assets/push-android-content.png)
+   <!--![](assets/push-android-content.png)-->
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Emoticon einfügen]**, um Ihrer Push-Benachrichtigung Emoticons hinzuzufügen.
 
@@ -117,7 +117,7 @@ Um einen neuen Versand zu erstellen, gehen Sie zum Tab **[!UICONTROL Kampagnen]*
 
 1. Klicken Sie nach Angabe aller erforderlichen Benachrichtigungsparameter auf den **[!UICONTROL Vorschau]**-Tab, um das Rendering der Benachrichtigung zu prüfen.
 
-   ![](assets/push-android-preview.png)
+   <!--![](assets/push-android-preview.png)-->
 
 ## Testen, Senden und Überwachen von Push-Benachrichtigungen
 
