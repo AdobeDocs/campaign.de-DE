@@ -5,10 +5,10 @@ description: Erste Schritte mit Push-Benachrichtigungen in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: b0fcdefb638a2424e9464cf520724cc492fabc55
+source-git-commit: 09979331284757527fc9a24479a53d2d488f4649
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 53%
+source-wordcount: '836'
+ht-degree: 43%
 
 ---
 
@@ -51,7 +51,7 @@ Sie müssen die Einstellungen Ihrer iOS- bzw. Android-basierten Mobile Apps in A
 
 In diesem Abschnitt werden die Elemente beschrieben, die für die Bereitstellung von iOS- und Android-Benachrichtigungen spezifisch sind.
 
-[!DNL :arrow_upper_right:] Alle Schritte zum Erstellen von Push-Benachrichtigungen werden in der Dokumentation zu  [Campaign Classic v7 beschrieben.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=de#sending-notifications-on-ios)
+[!DNL :arrow_upper_right:] Alle Schritte zum Erstellen von Push-Benachrichtigungen werden in der Dokumentation zu  [Campaign Classic v7 beschrieben.](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en)
 
 >[!CAUTION]
 >
@@ -61,7 +61,9 @@ Um einen neuen Versand zu erstellen, gehen Sie zum Tab **[!UICONTROL Kampagnen]*
 
 ![](assets/delivery_step_1.png)
 
-### Versand von Benachrichtigungen auf iOS-Geräte {#sending-notifications-on-ios}
+[!DNL :arrow_upper_right:] Allgemeine Informationen zur Erstellung eines Versands finden Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=de#sending-messages).
+
+### Benachrichtigungen unter iOS senden {#send-notifications-on-ios}
 
 1. Wählen Sie die Versandvorlage **[!UICONTROL iOS]** und klicken Sie auf **[!UICONTROL Weiter]**.
 
@@ -83,33 +85,37 @@ Um einen neuen Versand zu erstellen, gehen Sie zum Tab **[!UICONTROL Kampagnen]*
 
 1. Geben Sie die **[!UICONTROL Message]** und den **[!UICONTROL Badge]** entsprechend dem ausgewählten Benachrichtigungstyp ein.
 
-1. Mit der **[!UICONTROL Aktionsschaltfläche]** können Sie einen Titel für die Aktionsschaltfläche definieren, die in den Warnhinweis-Benachrichtigungen erscheint (**action_loc_key** -Feld der Payload).
+1. Sie können auch die folgenden Elemente definieren:
 
-1. Wählen Sie im Feld **[!UICONTROL Ton abspielen]** die Melodie aus, die bei Erhalt einer Nachricht abgespielt werden soll.
+   * Mit der **[!UICONTROL Aktionsschaltfläche]** können Sie einen Titel für die Aktionsschaltfläche definieren, die in den Warnhinweis-Benachrichtigungen erscheint (**action_loc_key** -Feld der Payload).
 
-1. Geben Sie im Feld **[!UICONTROL Anwendungsvariablen]** den Wert jeder Variablen ein. Sie können beispielsweise einen bestimmten Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
+   * Wählen Sie im Feld **[!UICONTROL Ton abspielen]** die Melodie aus, die bei Erhalt einer Nachricht abgespielt werden soll.
+
+   * Geben Sie im Feld **[!UICONTROL Anwendungsvariablen]** den Wert jeder Variablen ein. Sie können beispielsweise einen bestimmten Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
 
 1. Klicken Sie nach Angabe aller erforderlichen Benachrichtigungsparameter auf den **[!UICONTROL Vorschau]**-Tab, um das Rendering der Benachrichtigung zu prüfen.
 
    ![](assets/push-ios-preview.png)
 
-### Versand von Benachrichtigungen auf Android-Geräte {#sending-notifications-on-android}
+[!DNL :arrow_upper_right:] Alle detaillierten Schritte zum Erstellen und Senden von Push-Benachrichtigungen unter iOS finden Sie in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=de#sending-notifications-on-ios)
+
+### Benachrichtigungen unter Android senden {#send-notifications-on-android}
 
 1. Wählen Sie die Versandvorlage **[!UICONTROL Android-Versand (android)]** aus.
 
-   <!--![](assets/push-template-android.png)-->
+   ![](assets/push-template-android.png)
 
 1. Klicken Sie zur Bestimmung der Zielgruppe der Benachrichtigung auf den Link **[!UICONTROL An]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
-   <!--![](assets/nmac_delivery_android_2.png)-->
+   ![](assets/push-android-select-target.png)
 
 1. Wählen Sie **[!UICONTROL Abonnenten einer Android-Mobile-App]**, dann den Ihrer Mobile App entsprechenden Dienst (hier Neotrips) und schließlich die Android-Version der App.
 
-   <!--![](assets/push-android-select-target.png)-->
+   ![](assets/push-ios-subscribers.png)
 
 1. Erfassen Sie den Inhalt der Benachrichtigung.
 
-   <!--![](assets/push-android-content.png)-->
+   ![](assets/push-android-content.png)
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Emoticon einfügen]**, um Ihrer Push-Benachrichtigung Emoticons hinzuzufügen.
 
@@ -119,8 +125,22 @@ Um einen neuen Versand zu erstellen, gehen Sie zum Tab **[!UICONTROL Kampagnen]*
 
    <!--![](assets/push-android-preview.png)-->
 
+[!DNL :arrow_upper_right:] Alle detaillierten Schritte zum Erstellen und Senden von Push-Benachrichtigungen unter Android finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-android)
+
 ## Testen, Senden und Überwachen von Push-Benachrichtigungen
 
-Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Versand durchgeführt.
+Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Versand durchgeführt. Weitere Informationen finden Sie in der Campaign Classic v7-Dokumentation:
 
-Nach dem Nachrichtenversand können Sie Ihre Sendungen beobachten und verfolgen.
+* Versand validieren und Testsendungen durchführen
+   [!DNL :arrow_upper_right:] [Wichtige Schritte zur Validierung eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de)
+
+* Versand bestätigen und versenden
+   [!DNL :arrow_upper_right:] [Wichtige Schritte zum Versand](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
+
+Nach dem Nachrichtenversand können Sie Ihre Sendungen beobachten und verfolgen. Weitere Informationen finden Sie in der Campaign Classic v7-Dokumentation:
+
+* Quarantäne für Push-Benachrichtigungen
+   [!DNL :arrow_upper_right:] [Weitere Informationen zu Quarantänen für Push-Benachrichtigungen](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
+
+* Fehlerbehebung
+   [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie Ihre Push-Benachrichtigungen beheben können.](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)
