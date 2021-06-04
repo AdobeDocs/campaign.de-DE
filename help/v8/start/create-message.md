@@ -6,7 +6,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
+source-git-commit: 9ecd0af7a6e8e173a89106c84a78de8b2311fef7
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 67%
@@ -40,14 +40,26 @@ Adobe Campaign v8 enthält die folgenden Versandkanäle:
 Sobald Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, können Sie wählen, wie Sie sie versenden möchten. Campaign bietet eine Reihe von Funktionen, um:
 
 * Nachrichten manuell an die Hauptzielgruppe senden
+
+   ![](assets/send-email.png)
+
    [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie Nachrichten senden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=de#sending-messages)
 * Nachrichten senden, die mit einer [Marketing-Kampagne](campaigns.md) verknüpft sind
+
+   ![](assets/deliveries-in-a-campaign.png)
+
    [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie im Rahmen einer Kampagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=de) Nachrichten senden.
 * Nachrichten über einen [Workflow](../config/workflows.md) senden
+
+   ![](assets/send-in-a-wf.png)
+
    [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie E-Mail-Sendungen automatisieren können.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=de)
 * [Trigger-](../send/transactional.md) Nachrichten aus einem Ereignis
    [!DNL :arrow_upper_right:] [Anwendungsfall: Erfahren Sie, wie Sie eine Transaktions-E-Mail mit einem Anhang senden.](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=de)
 * Versandplanung
+
+   ![](assets/schedule-send.png)
+
    [!DNL :arrow_upper_right:] [Anwendungsfall: Erfahren Sie, wie Sie eine Geburtstags-E-Mail planen und senden.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=de)
 
 
