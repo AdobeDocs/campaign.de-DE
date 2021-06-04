@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 62%
+ht-degree: 53%
 
 ---
 
@@ -44,7 +44,7 @@ Campaign v8 bietet umfassende Skalierung für jeden Schritt des Prozesses, von d
 
 ## Vereinfachung und Leistungssteigerung
 
-Campaign v8 bietet das Konzept des **Full Federated Data Access** (FDA, Voll verbundener Datenzugriff): Alle Daten befinden sich nun dezentral in der Cloud-Datenbank.
+Campaign v8 bietet das Konzept **Vollständiger Federated Data Access** (FFDA): Alle Daten befinden sich jetzt an Remote-Standorten in der Cloud-Datenbank.
 
 Mit dieser neuen Architektur vereinfacht Campaign v8 die Datenverwaltung: In der Cloud-Datenbank ist kein Index erforderlich. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen.
 
@@ -54,7 +54,7 @@ Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung, um das Leistun
 
 ## Integriertes Ökosystem
 
-Sie können Campaign mit einer Reihe von leistungsstarken Adobe-Lösungen integrieren, wie z. B. Adobe Analytics, Workfront, Journey Orchestration, Real-Time CDP und mehr.
+Sie können Campaign mit einer Reihe leistungsstarker Adobe-Lösungen integrieren, z. B.: Adobe Analytics, Adobe Journey Orchestration, Echtzeit-Kundendatenplattform und mehr.
 
 Mit Journey-KI können Sie auch eine prädiktive Sendezeitoptimierung und ein prädiktives Interaktivitäts-Scoring konfigurieren und Öffnungsraten, Klicks und Umsätze steigern.
 
