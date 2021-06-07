@@ -6,9 +6,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
+source-git-commit: 46f013dc18e504d490084a6d911b4772ce0fac2e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '369'
 ht-degree: 26%
 
 ---
@@ -54,7 +54,7 @@ Mit Cubes können Sie Daten analysieren und messen, Statistiken erheben und das 
 
    Je nach Komplexität der Abfragen, Berechnungen und Volumina können die in diesen Berichten analysierten Daten über eine Abfrage gesammelt und in einer Liste (Workflow vom Typ Data Management) oder in einem Cube (unter Verwendung von Marketing Analytics) voraggregiert werden. Sie wird in Form einer Pivot-Tabelle oder einer Gruppenliste angezeigt.
 
-   [!DNL :arrow_upper_right:] Erfahren Sie in der Dokumentation zu  [Campaign Classic v7 , wie Sie Cubes erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html)
+   [!DNL :arrow_upper_right:] Erfahren Sie, wie Sie Cubes in der Dokumentation zu  [Campaign Classic v7 erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html)
 
 
 Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen bieten als Campaign Classic v7. Die bestehenden Einschränkungen für Cubes gelten nicht.
