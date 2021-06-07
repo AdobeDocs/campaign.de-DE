@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 42%
+source-wordcount: '829'
+ht-degree: 41%
 
 ---
 
@@ -71,6 +71,10 @@ Adobe campaign v8 wird mit Snowflake als Hauptdatenbank geliefert. Da dadurch de
 ### Vereinfachte Wartung
 
 Campaign-Benutzer müssen keine Datenbankexperten sein: Es besteht kein Bedarf mehr an komplexen Datenbankwartungsvorgängen oder komplexer Tabellenindizierung.
+
+## Reporting
+
+Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen bieten als Campaign Classic v7. Die bestehenden Einschränkungen für Cubes gelten nicht.
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
