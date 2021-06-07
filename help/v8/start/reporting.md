@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: 46f013dc18e504d490084a6d911b4772ce0fac2e
+source-git-commit: 983b3cfc2f1569cd071848805e6b6b3411b4d6c6
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 26%
+ht-degree: 14%
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 * **Cubes**
 
    
-Mit Cubes können Sie Daten analysieren und messen, Statistiken erheben und das Reporting einschließlich der darin durchgeführten Berechnungen optimieren.  Cubes ermöglichen es, die Kapazitäten zur Datenexploration und -analyse optimal zu nutzen. Gleichzeitig wird die Konfiguration der Berichte und Tabellen für den Endbenutzer vereinfacht: Es muss nur ein existierender, vollständig konfigurierter Cube bei der Bericht- oder Tabellenerstellung ausgewählt werden, um dessen Berechnungen, Kennzahlen und Statistiken zu übernehmen.
+Mit Cubes können Sie Daten analysieren und messen, Statistiken erheben und das Reporting einschließlich der darin durchgeführten Berechnungen optimieren.  Sie können die Kapazitäten zur Datenexploration und -analyse erweitern und Endbenutzern die Konfiguration von Berichten und Tabellen erleichtern. Sie müssen lediglich einen existierenden (vollständig konfigurierten) Cube auswählen, wenn Sie einen Bericht oder eine Tabelle erstellen, um Berechnungen, Messungen und Statistiken zu verarbeiten.
 
    ![](assets/create-a-report.png)
 
