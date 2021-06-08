@@ -5,10 +5,10 @@ description: Erste Schritte mit Push-Benachrichtigungen in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 09979331284757527fc9a24479a53d2d488f4649
+source-git-commit: f75b2ddc073d05548740cb3e9371063cf0d83ca5
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -51,7 +51,7 @@ Sie müssen die Einstellungen Ihrer iOS- bzw. Android-basierten Mobile Apps in A
 
 In diesem Abschnitt werden die Elemente beschrieben, die für die Bereitstellung von iOS- und Android-Benachrichtigungen spezifisch sind.
 
-[!DNL :arrow_upper_right:] Alle Schritte zum Erstellen von Push-Benachrichtigungen werden in der Dokumentation zu  [Campaign Classic v7 beschrieben.](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en)
+[!DNL :arrow_upper_right:] Alle Schritte zum Erstellen von Push-Benachrichtigungen werden in der Dokumentation zu  [Campaign Classic v7 beschrieben.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=de)
 
 >[!CAUTION]
 >
@@ -125,7 +125,7 @@ Um einen neuen Versand zu erstellen, gehen Sie zum Tab **[!UICONTROL Kampagnen]*
 
    <!--![](assets/push-android-preview.png)-->
 
-[!DNL :arrow_upper_right:] Alle detaillierten Schritte zum Erstellen und Senden von Push-Benachrichtigungen unter Android finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-android)
+[!DNL :arrow_upper_right:] Alle detaillierten Schritte zum Erstellen und Senden von Push-Benachrichtigungen unter Android finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-android)
 
 ## Testen, Senden und Überwachen von Push-Benachrichtigungen
 
@@ -135,12 +135,12 @@ Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Ve
    [!DNL :arrow_upper_right:] [Wichtige Schritte zur Validierung eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de)
 
 * Versand bestätigen und versenden
-   [!DNL :arrow_upper_right:] [Wichtige Schritte zum Versand](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
+   [!DNL :arrow_upper_right:] [Wichtige Schritte zum Versand](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
 
 Nach dem Nachrichtenversand können Sie Ihre Sendungen beobachten und verfolgen. Weitere Informationen finden Sie in der Campaign Classic v7-Dokumentation:
 
 * Quarantäne für Push-Benachrichtigungen
-   [!DNL :arrow_upper_right:] [Weitere Informationen zu Quarantänen für Push-Benachrichtigungen](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
+   [!DNL :arrow_upper_right:] [Weitere Informationen zu Quarantänen für Push-Benachrichtigungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
 
 * Fehlerbehebung
-   [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie Ihre Push-Benachrichtigungen beheben können.](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)
+   [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie Ihre Push-Benachrichtigungen beheben können.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)
