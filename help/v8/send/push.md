@@ -5,9 +5,9 @@ description: Erste Schritte mit Push-Benachrichtigungen in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 42a83fefb9c4ae3cea906c5dce8ecf725909b4eb
+source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '835'
 ht-degree: 43%
 
 ---
@@ -33,7 +33,7 @@ Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folg
 
 Kompatible SDK-Versionen sind in der [Campaign-Kompatibilitätsmatrix](../start/compatibility-matrix.md#MobileSDK) aufgeführt.
 
-[!DNL :arrow_upper_right:] Informationen zur Integration des Campaign SDK in Ihre App finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=de#loading-campaign-sdk)
+[!DNL :arrow_upper_right:] In  [diesem Abschnitt erfahren Sie, wie Sie Campaign Android- und iOS-SDKs in Ihre App integrieren.](../config/push-config.md)
 
 ### Campaign-Erweiterung in Launch konfigurieren
 
