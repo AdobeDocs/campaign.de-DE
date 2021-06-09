@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
+source-git-commit: f1a854c6aa91755add4dfe422879ffd12e8d297b
 workflow-type: tm+mt
 source-wordcount: '1285'
 ht-degree: 43%
@@ -19,7 +19,7 @@ ht-degree: 43%
 
 Verwenden Sie Campaign SDKs für iOS und Android, um die Integration Ihrer Mobile App in die Adobe Campaign-Plattform zu erleichtern.
 
-Unterstützte Versionen von Android und iOS sowie mit Campaign SDKs kompatible Versionen für Campaign v8 sind in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#MobileSDK) aufgeführt.
+Unterstützte Versionen von Android und iOS sowie mit Campaign SDKs kompatible Versionen für Campaign v8 sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md#MobileSDK) aufgeführt.
 
 >[!NOTE]
 >
@@ -422,6 +422,7 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 >
 > Eine ähnliche Verwaltung ist erforderlich, wenn der Benutzer die Option `click_action` innerhalb der Targeting-Aktivität verwendet.
 
+
 1. **Tracking für Datennachrichten empfangen**
 
    Bei Datennachrichten wird das Tracking auf der Aufrufebene `onMessageReceived` empfangen. Die Funktion &#39;notifyReceive&#39; muss aufgerufen werden.
@@ -552,8 +553,6 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
        }
    }
    ```
-
-
 
 
 ## iOS-SDK integrieren
