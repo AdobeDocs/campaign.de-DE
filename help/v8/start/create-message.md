@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 9ecd0af7a6e8e173a89106c84a78de8b2311fef7
+source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 67%
+source-wordcount: '600'
+ht-degree: 64%
 
 ---
 
@@ -55,7 +55,7 @@ Sobald Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, kön
 
    [!DNL :arrow_upper_right:] [Erfahren Sie, wie Sie E-Mail-Sendungen automatisieren können.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=de)
 * [Trigger-](../send/transactional.md) Nachrichten aus einem Ereignis
-   [!DNL :arrow_upper_right:] [Anwendungsfall: Erfahren Sie, wie Sie eine Transaktions-E-Mail mit einem Anhang senden.](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=de)
+   [!DNL :arrow_upper_right:] [Anwendungsfall: Erfahren Sie, wie Sie eine Transaktions-E-Mail mit einem Anhang senden.](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
 * Versandplanung
 
    ![](assets/schedule-send.png)
@@ -84,7 +84,7 @@ Transaktionsnachricht (Message Center) ist das Campaign-Modul, das zum Verwalten
 
 [!DNL :bulb:] Die Schritte zum Konfigurieren und Senden von Transaktionsnachrichten werden auf  [dieser Seite beschrieben.](../send/transactional.md)
 
-[!DNL :arrow_upper_right:] Entdecken Sie diese Funktion in einem durchgängigen Anwendungsbeispiel in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=de#transactional-messaging)
+[!DNL :arrow_upper_right:] Entdecken Sie diese Funktion in einem durchgängigen Anwendungsbeispiel in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
 
 ## Versand- und Trackinglogs
 
