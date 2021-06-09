@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie ein Angebot erstellen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '953'
 ht-degree: 60%
 
 ---
@@ -196,4 +196,4 @@ Mithilfe von Simulationen können Sie die Verteilung der Angebote einer Kategori
 
 Bei der Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die zuvor für Angebote und deren Unterbreitungsregeln galten. Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
 
-[!DNL :arrow_upper_right:] Weiterführende Informationen zur Angebotssimulation finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.htm)
+[!DNL :arrow_upper_right:] Weiterführende Informationen zur Angebotssimulation finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
