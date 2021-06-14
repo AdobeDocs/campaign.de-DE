@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
+source-git-commit: 35fcedd8e4d44bb6c5a97b2a48ff55aa2632947d
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 45%
+source-wordcount: '1286'
+ht-degree: 43%
 
 ---
 
@@ -644,56 +644,15 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
    * **ErrorReason** liefert zusätzliche Informationen zu den aufgetretenen Fehlern. Weiterführende Informationen zu möglichen Fehlern und deren Beschreibung finden Sie in der folgenden Tabelle.
 
+   | Status | Beschreibung  | ErrorReason |
+   | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+   | ACCRegisterDeviceStatusSuccess | Registrierung erfolgreich | LEER |
+   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Der Hostname des ACC-Marketingservers ist leer oder nicht definiert. | LEER |
+   | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | Der Integrationsschlüssel ist leer oder nicht definiert. | LEER |
+   | ACCRegisterDeviceStatusFailureConnectionIssue | Verbindungsproblem mit ACC | Weitere Informationen (in der Sprache des Betriebssystems) |
+   | ACCRegisterDeviceStatusFailureUnknownUUID | Die bereitgestellte UUID (Integrationsschlüssel) ist unbekannt. | LEER |
+   | ACCRegisterDeviceStatusFailureUnexpectedError | Unerwarteter Fehler an ACC-Server zurückgegeben. | Die an ACC zurückgegebene Fehlermeldung. |
 
-      | Status | Beschreibung  | ErrorReason |
-      | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
-      | ACCRegisterDeviceStatusSuccess | Registrierung erfolgreich | LEER |
-      | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Der Hostname des ACC-Marketingservers ist leer oder nicht definiert. | LEER |
-      | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | Der Integrationsschlüssel ist leer oder nicht definiert. | LEER |
-      | ACCRegisterDeviceStatusFailureConnectionIssue | Verbindungsproblem mit ACC | Weitere Informationen (in der Sprache des Betriebssystems) |
-      | ACCRegisterDeviceStatusFailureUnknownUUID | Die bereitgestellte UUID (Integrationsschlüssel) ist unbekannt. | LEER |
-      | ACCRegisterDeviceStatusFailureUnexpectedError | Unerwarteter Fehler an ACC-Server zurückgegeben. | Die an ACC zurückgegebene Fehlermeldung. |
-   <table> 
-    <thead>
-    <tr>
-    <th> Status<br /> </th>
-    <th> Beschreibung<br /> </th>
-    <th> ErrorReason<br /> </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td> ACCRegisterDeviceStatusSuccess <br /> </td>
-    <td> Registrierung erfolgreich<br /> </td>
-    <td> LEER<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
-    <td> Der Hostname des ACC-Marketingservers ist leer oder nicht definiert.<br /> </td>
-    <td> LEER<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureIntegrationKeyEmpty <br /> </td>
-    <td> Der Integrationsschlüssel ist leer oder nicht definiert.<br /> </td>
-    <td> LEER<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureConnectionIssue<br /> </td>
-    <td> Verbindungsproblem mit ACC<br /> </td>
-    <td> Weitere Informationen (in der Sprache des Betriebssystems)<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureUnknownUUID<br /> </td>
-    <td> Die bereitgestellte UUID (Integrationsschlüssel) ist unbekannt.<br /> </td>
-    <td> LEER<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureUnexpectedError<br /> </td>
-    <td> Unerwarteter Fehler an ACC-Server zurückgegeben.<br /> </td>
-    <td> Die an ACC zurückgegebene Fehlermeldung.<br /> </td>
-    </tr>
-    </tbody>
-    </table>
 
    Die Definition des **Neolane_SDKDelegate**-Protokolls und der **registerDeviceStatus**-Delegation ist wie folgt:
 
@@ -830,6 +789,7 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
       }
       @end
       ```
+
 
 
 ## Variablen {#variables}
