@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 170a80942aff9951859646942657938e206959fe
+source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 43%
+source-wordcount: '1348'
+ht-degree: 45%
 
 ---
 
@@ -419,9 +419,9 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
    }
    ```
 
->[!NOTE]
->
-> Eine ähnliche Verwaltung ist erforderlich, wenn der Benutzer die Option `click_action` innerhalb der Targeting-Aktivität verwendet.
+   >[!NOTE]
+   >
+   > Eine ähnliche Verwaltung ist erforderlich, wenn der Benutzer die Option `click_action` innerhalb der Targeting-Aktivität verwendet.
 
 
 1. **Tracking für Datennachrichten empfangen**
@@ -644,6 +644,15 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
    * **ErrorReason** liefert zusätzliche Informationen zu den aufgetretenen Fehlern. Weiterführende Informationen zu möglichen Fehlern und deren Beschreibung finden Sie in der folgenden Tabelle.
 
+
+      | Status | Beschreibung  | ErrorReason |
+      | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+      | ACCRegisterDeviceStatusSuccess | Registrierung erfolgreich | LEER |
+      | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Der Hostname des ACC-Marketingservers ist leer oder nicht definiert. | LEER |
+      | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | Der Integrationsschlüssel ist leer oder nicht definiert. | LEER |
+      | ACCRegisterDeviceStatusFailureConnectionIssue | Verbindungsproblem mit ACC | Weitere Informationen (in der Sprache des Betriebssystems) |
+      | ACCRegisterDeviceStatusFailureUnknownUUID | Die bereitgestellte UUID (Integrationsschlüssel) ist unbekannt. | LEER |
+      | ACCRegisterDeviceStatusFailureUnexpectedError | Unerwarteter Fehler an ACC-Server zurückgegeben. | Die an ACC zurückgegebene Fehlermeldung. |
    <table> 
     <thead>
     <tr>
