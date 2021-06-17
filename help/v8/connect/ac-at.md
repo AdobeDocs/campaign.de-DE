@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,22 +17,22 @@ ht-degree: 89%
 
 Verbinden Sie Campaign und Target, um ein Angebot aus Adobe Target in einen Adobe Campaign-E-Mail-Versand aufzunehmen.
 
-Diese Integration hilft Ihnen bei der Implementierung von Anwendungsfällen wie folgt: Wenn ein Empfänger eine über Adobe Campaign gesendete E-Mail öffnet, ermöglicht es Ihnen ein Aufruf an Adobe Target, eine dynamische Version des Inhalts anzuzeigen. Diese dynamische Version wird anhand von bei der E-Mail-Erstellung definierten Regeln berechnet.
+Diese Integration hilft Ihnen wie folgt beim Implementieren von Anwendungsfällen: Wenn ein Empfänger eine per Adobe Campaign gesendete E-Mail öffnet, können Sie mit einem Aufruf an Adobe Target eine dynamische Inhaltsversion anzeigen. Diese dynamische Version wird anhand von bei der E-Mail-Erstellung definierten Regeln berechnet.
 
 >[!NOTE]
 >Im Rahmen der Integration werden nur statische Bilder unterstützt. Die anderen Inhaltstypen können nicht personalisiert werden.
 
-[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um Experience Cloud-Trigger in Campaign zu implementieren.
+[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Experience Cloud Triggers mit Campaign zu implementieren.
 
 Mit Adobe Target können folgende Datentypen zum Einsatz kommen:
 
 * Daten aus der Adobe Campaign-Datenbank
-* Segmente, die mit der Besucher-ID in Adobe Target verknüpft sind, nur dann, wenn die verwendeten Daten keinen rechtlichen Beschränkungen unterliegen
-* Daten aus Adobe Target (user agent, IP address, Daten bezüglich der Geolokalisierung).
+* Mit der Besucher-ID in Adobe Target gruppierte Segmente, wenn die verwendeten Daten keinen rechtlichen Beschränkungen unterliegen
+* Daten aus Adobe Target (Benutzeragent, IP-Adresse, Daten bezüglich der Geolokalisierung).
 
 ## Einfügen eines dynamischen Inhalts
 
-Im folgenden Beispiel erfahren Sie, wie Sie **ein dynamisches Angebot** aus Adobe Target in eine Adobe Campaign-E-Mail integrieren.
+Im folgenden Beispiel erfahren Sie, wie Sie **ein dynamisches Angebot** aus Adobe Target in eine Adobe Campaign-E-Mail integrieren können.
 
 Wir möchten eine Nachricht erstellen, die ein Bild enthält, das sich je nach Land des Empfängers dynamisch ändert. Die Daten werden bei jeder mbox-Abfrage gesendet und sind abhängig von der IP-Adresse des Besuchers.
 
@@ -99,19 +99,19 @@ In unserem Fall benötigen wir zwei Umleitungsangebote. Das dritte (das Standard
 
 ### Audiences erstellen {#audiences-target}
 
-Erstellen Sie in Adobe Target die zwei Audiences, in die die Besucher Ihres Angebots unterteilt werden und denen die unterschiedlichen Inhalte präsentiert werden. Fügen Sie für jede Zielgruppe eine Regel hinzu, um festzulegen, wer das Angebot sehen kann.
+Erstellen Sie in Adobe Target die zwei Audiences, in die die Besucher Ihres Angebots unterteilt werden und denen die unterschiedlichen Inhalte präsentiert werden. Fügen Sie für jede Audience eine Regel hinzu, um festzulegen, wer das Angebot sehen kann.
 
-1. Um in Target eine neue Zielgruppe zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Audiences]** auf **[!UICONTROL Zielgruppe erstellen]**.
+1. Um in Target eine neue Audience zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Zielgruppen]** auf **[!UICONTROL Zielgruppe erstellen]**.
 
    ![](assets/audiences_1.png)
 
-1. Fügen Sie Ihrer Zielgruppe einen Namen hinzu.
+1. Fügen Sie Ihrer Audience einen Namen hinzu.
 
    ![](assets/audiences_2.png)
 
 1. Klicken Sie auf **[!UICONTROL Add a rule (Regel hinzufügen)]** und wählen Sie eine Kategorie aus. Die Regel benutzt spezifische Kriterien für die Besucher. Sie können die Regeln verfeinern, indem Sie Bedingungen hinzufügen oder neue Regeln in anderen Kategorien erstellen.
 
-1. Führen Sie dieselben Schritte für die anderen Zielgruppen durch.
+1. Führen Sie dieselben Schritte für die anderen Audiences durch.
 
 ### Experience Targeting-Aktivität erstellen {#creating-targeting-activity}
 
@@ -119,21 +119,21 @@ Wir müssen in Adobe Target eine Experience Targeting-Aktivität erstellen, die 
 
 Zuerst müssen Sie die Audience definieren:
 
-1. Um eine Erlebnis-Targeting-Aktivität zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Aktivitäten]** auf **[!UICONTROL Aktivität erstellen]** und dann auf **[!UICONTROL Erlebnis-Targeting]**.
+1. Um eine Experience Targeting-Aktivität zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Aktivitäten]** auf **[!UICONTROL Aktivität erstellen]** und dann auf **[!UICONTROL Experience Targeting]**.
 
    ![](assets/target_10.png)
 
 1. Wählen Sie **[!UICONTROL Formular]** als **[!UICONTROL Experience Composer]**.
 
-1. Wählen Sie eine Zielgruppe aus, indem Sie auf die Schaltfläche **[!UICONTROL Audience ändern]** klicken.
+1. Wählen Sie eine Audience aus, indem Sie auf die Schaltfläche **[!UICONTROL Zielgruppe ändern]** klicken.
 
    ![](assets/target_10_2.png)
 
-1. Wählen Sie die Zielgruppe aus, die in den vorherigen Schritten erstellt wurde.
+1. Wählen Sie die Audience aus, die in den vorherigen Schritten erstellt wurde.
 
    ![](assets/target_10_3.png)
 
-1. Erstellen Sie ein weiteres Erlebnis durch Anklicken von **[!UICONTROL Erlebnis-Targeting hinzufügen]**.
+1. Erstellen Sie ein weiteres Erlebnis durch Klicken auf **[!UICONTROL Experience Targeting hinzufügen]**.
 
 Fügen Sie dann für jede Audience Inhalt hinzu:
 
