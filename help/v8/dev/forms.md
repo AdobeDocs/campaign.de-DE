@@ -3,9 +3,9 @@ product: Adobe Campaign
 title: Formulare in Campaign
 description: Erfahren Sie, wie Sie Formulare anpassen
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2577'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
 
-[!DNL :arrow_upper_right:] Alle Formularattribute sind in der  [Campaign Classic v7-Dokumentation](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/control-Button.html) aufgeführt.
+[!DNL :arrow_upper_right:] In der [Dokumentation zu Campaign Classic v7](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/control-Button.html) sind alle Formularattribute aufgeführt.
 
 ## Formatierung {#formatting}
 
@@ -152,7 +152,7 @@ Mithilfe des **`<static>`**-Tags mit dem Typ **separator** können Sie eine Tren
 
 Mithilfe des `<static>`-Tags vom Typ &quot;Hilfe&quot; wurde ein Hilfetext hinzugefügt. Der Inhalt des Textes wird im Attribut **label** eingegeben.
 
-## Container verwenden {#containers}
+## Verwenden von Containern {#containers}
 
 Verwenden Sie **Container**, um einen Satz von Eingabefeldern zu gruppieren. Sie werden durch das Element **`<container>`** dargestellt. Sie wurden oben verwendet, um Eingabefelder über mehrere Spalten zu formatieren.
 
@@ -513,7 +513,7 @@ Beispiel für das Feld &quot;Geschlecht&quot;:
 
 ![](assets/do-not-localize/form_exemple17.png)
 
-## Checkbox hinzufügen {#checkbox}
+## Hinzufügen einer Checkbox {#checkbox}
 
 Eine Checkbox gibt den booleschen Status an (ausgewählt oder nicht). Standardmäßig wird dieses Eingabefeld von &quot;booleschen&quot; (wahr/falsch) Feldern verwendet. Eine Variable, die den Standardwert 0 oder 1 hat, kann mit dieser Schaltfläche verknüpft werden. Dieser Wert kann über das Attribut **checkValue** überladen werden.
 
