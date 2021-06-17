@@ -3,9 +3,9 @@ product: Adobe Campaign
 title: Schemastruktur von Campaign
 description: Schemastruktur von Campaign
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1403'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ Folgende Regeln müssen eingehalten werden:
 
 Der Datentyp wird über das Attribut **type** in den Elementen **`<attribute>`** und **`<element>`** eingegeben.
 
-Eine detaillierte Liste finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic).
+In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic) finden Sie eine detaillierte Liste.
 
 Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Wenn es gefüllt ist, wird es nur zur hierarchischen Strukturierung der Elemente verwendet (Element **`<location>`** in unserem Beispiel).
 
@@ -284,7 +284,7 @@ Die Werte für die Auflistung werden im Element **`<value>`** mit den folgenden 
 
 ### Beispiel {#example}
 
-Beispiel des um diese Eigenschaften ergänzten Schemata:
+Beispiel des um diese Eigenschaften ergänzten Schemas:
 
 ```
 <srcSchema name="recipient" namespace="cus">
