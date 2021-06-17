@@ -8,7 +8,7 @@ level: Beginner
 source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 Transaktionsnachricht (Message Center) ist ein Campaign-Modul, das die Nachrichtenauslösung handhabt. Diese Nachrichten werden durch Ereignisse erzeugt, die von Informationssystemen ausgelöst werden. Hierzu zählen u. a.: Rechnungen, Bestellbestätigungen, Lieferbestätigungen, Passwortänderungen, Benachrichtigungen über die Nicht-Verfügbarkeit eines Produkts, Kontostandsinformationen oder die Erstellung eines Website-Kontos.
 
-[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
+[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
 Transaktionsnachrichten dienen zum Senden von:
 
@@ -77,7 +77,7 @@ Integrieren Sie nach der Erstellung des Inhalts die Ereignisinformationen in den
 
 ![](assets/messagecenter_create_content.png)
 
-* Alle Personalisierungsfelder stammen aus den Nutzdaten.
+* Alle Personalisierungsfelder stammen aus der Payload.
 * Es ist möglich, in einer Transaktionsnachricht auf einen oder mehrere Gestaltungsbausteine zu verweisen. Der Bausteininhalt wird während der Veröffentlichung in der Ausführungsinstanz zum Versandinhalt hinzugefügt.
 
 Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteninhalt einzufügen:
@@ -96,11 +96,11 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
 Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen Testversand senden und die Personalisierung der Nachricht testen, bevor Sie die Nachricht senden. Testadressen sind mit dem Versand verknüpft und können nicht für andere Versände verwendet werden.
 
-1. Klicken Sie in der Transaktionsnachrichtenvorlage auf den Tab **[!UICONTROL Testadressen]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]** .
+1. Klicken Sie in der Transaktionsnachrichten-Vorlage auf die Registerkarte **[!UICONTROL Testadressen]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
    ![](assets/messagecenter_create_seed_1.png)
 
-1. Benennen Sie sie später zur einfachen Auswahl und geben Sie dann die Testadresse ein (E-Mail oder Mobiltelefon je nach Kommunikationskanal).
+1. Weisen Sie eine Bezeichnung zur einfachen späteren Auswahl zu und geben Sie dann die Testadresse ein (E-Mail oder Mobiltelefon je nach Kommunikationskanal).
 
 1. Geben Sie eine externe Kennung an. Dieses optionale Feld dient dazu, einen allen Anwendungen Ihrer Webseite gemeinsamen, benutzerdefinierten Schlüssel zu vergeben (eindeutige Kennung, Name + E-Mail etc.), um Ihre Profile zu identifizieren. Wenn dieses Feld auch in der Adobe Campaign-Datenbank vorhanden ist, haben Sie die Möglichkeit, Ereignisse mit Profilen der Datenbank abzustimmen.
 
@@ -137,7 +137,7 @@ Mit diesen Informationen können Sie Nachrichteninhalte mithilfe von Personalisi
 
 Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalts können Sie eine Vorschau Ihrer Nachricht erzeugen und ihre Personalisierung überprüfen:
 
-1. Klicken Sie in der Nachrichtenvorlage auf den Tab **[!UICONTROL Vorschau]** und wählen Sie dann **[!UICONTROL Eine Testadresse]** in der Dropdown-Liste aus.
+1. Klicken Sie in der Nachrichtenvorlage auf die Registerkarte **[!UICONTROL Vorschau]** und wählen Sie dann in der Dropdown-Liste eine **[!UICONTROL Testadresse]** aus.
 
    ![](assets/messagecenter_preview_1.png)
 
@@ -145,13 +145,13 @@ Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalt
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### Testversand durchführen
+### Durchführen eines Testversands
 
 Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versand einen Testversand durchzuführen.
 
 Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei jedem Versand.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zu Testsendungen finden Sie in der Dokumentation zu  [Campaign Classic v7 .]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html))
+[!DNL :arrow_upper_right:] Weitere Informationen zu Testsendungen finden Sie in der [Dokumentation zu Campaign Classic v7]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)).
 
 Um jedoch einen Testversand einer Transaktionsnachricht zu senden, müssen Sie die folgenden Vorgänge ausführen:
 
@@ -219,7 +219,7 @@ Sobald eine Nachrichtenvorlage in den Ausführungsinstanzen veröffentlicht wurd
 
 Gehen Sie wie folgt vor, um die Veröffentlichung einer Transaktionsnachrichten-Vorlage aufzuheben.
 
-1. Navigieren Sie in der Kontrollinstanz zum Ordner **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]** .
+1. Gehen Sie in der Kontrollinstanz im Navigationsbaum zum Ordner **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]**.
 1. Wählen Sie die Vorlage aus, deren Veröffentlichung rückgängig gemacht werden soll.
 1. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**.
 1. Klicken Sie auf **[!UICONTROL Starten]**.
