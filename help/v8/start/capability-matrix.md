@@ -9,42 +9,42 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b
 source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
-# [!DNL Campaign Classic] v7 -  [!DNL Campaign] v8-Funktionen{#gs-matrix}
+# [!DNL Campaign Classic] v7- und [!DNL Campaign] v8-Funktionen{#gs-matrix}
 
-Als bestehender [!DNL Campaign Classic] v7-Benutzer sollten Sie keine großen Störungen in der Art und Weise erwarten, wie Sie normalerweise mit [!DNL Adobe Campaign] interagieren. Die meisten Änderungen in v8 sind nicht sichtbar, mit Ausnahme kleiner Änderungen, die in der Benutzeroberfläche und in den Konfigurationsschritten erkennbar sind.
+[!DNL Campaign Classic]Als bestehender v7-Benutzer sollten Sie bei der Interaktion mit [!DNL Adobe Campaign] keine größeren Änderungen feststellen. Die meisten Änderungen in v8 sind nicht sichtbar, mit Ausnahme kleiner Änderungen, die in der Benutzeroberfläche und in den Konfigurationsschritten erkennbar sind.
 
 Wichtige Änderungen:
 
 * Segmente können bis zu 200-mal schneller erstellt werden
 * Erhöhte Versandgeschwindigkeit
-* Echtzeit-Berichte mit Cubes
+* Echtzeit-Berichte  mit Cubes
 
-Beachten Sie als Benutzer von [!DNL Campaign Classic], dass die meisten [!DNL Campaign Classic] v7-Funktionen mit [!DNL Campaign] v8 verfügbar sind, mit Ausnahme eines kleinen Satzes, der in [diesem Abschnitt](#gs-removed) aufgelistet ist. Weitere Änderungen werden in zukünftigen Versionen erscheinen. [Weitere Informationen finden Sie in diesem Abschnitt](#gs-unavailable-features)
+Als [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die in [diesem Abschnitt](#gs-removed) aufgeführt sind. Weitere Änderungen werden in zukünftigen Versionen enthalten sein. [Weitere Informationen finden Sie in diesem Abschnitt](#gs-unavailable-features)
 
-[!DNL :bulb:] Weitere Informationen zur Architektur von  [!DNL Campaign] v8 finden Sie auf  [dieser Seite](../dev/architecture.md).
+[!DNL :bulb:] Weitere Informationen zur Architektur von [!DNL Campaign] v8 finden Sie auf [dieser Seite](../dev/architecture.md).
 
 ## Änderungen bei der Produktkonfiguration
 
 ### [!DNL Campaign] und [!DNL Snowflake] {#ac-gs-snowflake}
 
-[!DNL Adobe Campaign] v8 funktioniert mit zwei Datenbanken: eine lokale Datenbank für die Echtzeit-Messaging- und Einzelabfragen der Benutzeroberfläche und das Schreiben über APIs sowie eine Cloud-Datenbank für die Kampagnenausführung, Batch-Abfragen und Workflow-Ausführung.
+[!DNL Adobe Campaign] v8 kann mit zwei Datenbanken verwendet werden: einer lokalen Datenbank für Echtzeit-Messaging und Einzelabfragen und das Schreiben über APIs sowie einer Cloud-Datenbank für Kampagnenausführung, Batch-Abfragen und Workflow-Ausführung.
 
-Dies ist eine grundlegende Änderung der Software-Architektur. Die Daten sind jetzt remote und Campaign führt die gesamten Daten, einschließlich Profilen, zusammen. [!DNL Campaign] -Prozesse werden jetzt von der Zielgruppenbestimmung zur Nachrichtenausführung skaliert: Datenerfassung, Segmentierung, Targeting, Abfragen, Sendungen werden jetzt in der Regel in Minuten ausgeführt. Diese neue Version löst die ganze Herausforderung der Skalierung und bewahrt dabei den gleichen Grad an Flexibilität und Erweiterbarkeit. Die Anzahl der Profile ist nahezu unbegrenzt, und die Datenspeicherung kann verlängert werden.
+Dies ist eine grundlegende Änderung der Software-Architektur. Die Daten sind jetzt remote und Campaign führt die gesamten Daten, einschließlich Profilen, zusammen. Die [!DNL Campaign]-Prozesse skalieren jetzt durchgängig, vom Targeting bis zur Ausführung der Nachricht: Datenaufnahme, Segmentierung, Zielgruppenbestimmung, Abfragen und Sendungen laufen jetzt typischerweise in Minuten ab. Diese neue Version löst die ganze Herausforderung der Skalierung und bewahrt dabei den gleichen Grad an Flexibilität und Erweiterbarkeit. Die Anzahl der Profile ist nahezu unbegrenzt, und die Datenspeicherung kann verlängert werden.
 
-Cloud-Speicher wird in **[!DNL Snowflake]** ausgeführt: Ein neues integriertes **externes Konto** stellt die Verbindung mit der Cloud-Datenbank sicher. Sie wird von Adobe konfiguriert und darf nicht geändert werden. [Mehr dazu](../config/external-accounts.md)
+Die Cloud-Datenspeicherung wird in **[!DNL Snowflake]** ausgeführt: Ein neues vorkonfiguriertes **externes Konto** stellt die Verbindung zur Cloud-Datenbank sicher. Das Konto wird von Adobe eingerichtet und darf nicht geändert werden. [Weitere Informationen](../config/external-accounts.md)
 
-Jedes integrierte Schema (oder Tabelle), das in die Cloud-Datenbank verschoben oder repliziert werden muss, verfügt unter dem **xxl**-Namespace über eine integrierte Schemaerweiterung. Diese Erweiterungen enthalten alle erforderlichen Änderungen, um die integrierten Schemata aus der lokalen Datenbank [!DNL Campaign] in die Cloud-Datenbank zu verschieben und ihre Struktur entsprechend anzupassen: neue UUID, aktualisierte Links usw.[!DNL Snowflake]
+Jedes integrierte Schema (bzw. Tabelle), das in die Cloud-Datenbank verschoben oder repliziert werden muss, verfügt unter dem **xxl**-Namespace über eine integrierte Schemaerweiterung. Diese Erweiterungen enthalten alle Änderungen, die erforderlich sind, um eingebaute Schemata von der lokalen [!DNL Campaign]-Datenbank in die [!DNL Snowflake]-Cloud-Datenbank zu verschieben und ihre Struktur entsprechend anzupassen: neue UUID, aktualisierte Links usw.
 
 >[!CAUTION]
 >
 > Kundendaten werden nicht in der lokalen [!DNL Campaign]-Datenbank gespeichert. Daher müssen benutzerdefinierte Tabellen in der Cloud-Datenbank erstellt werden.
 
 
-Es stehen spezifische APIs zur Verwaltung von Daten zwischen der lokalen und der Cloud-Datenbank zur Verfügung. Erfahren Sie, wie diese neuen APIs funktionieren und wie Sie sie auf [dieser Seite](../dev/new-apis.md) verwenden.
+Für die Verwaltung von Daten zwischen der lokalen und der Cloud-Datenbank stehen spezifische APIs zur Verfügung. Erfahren Sie auf [dieser Seite](../dev/new-apis.md), wie diese neuen APIs funktionieren und wie Sie sie verwenden können.
 
 ### Datenreplikation
 
@@ -62,11 +62,11 @@ Ein spezieller technischer Workflow behandelt die Replikation von Tabellen, die 
 
 Campaign v8-Objekte verwenden jetzt eine **Universally Unique ID (UUID)**, die die Identifizierung von Daten durch unbegrenzte eindeutige Werte ermöglicht..
 
-Beachten Sie, dass diese ID zeichenfolgenbasiert und nicht sequenziell ist. Der Primärschlüssel ist kein numerischer Wert in Campaign v8. Sie müssen die Attribute **autouid** und **autopk** in Ihren Schemata verwenden.
+Beachten Sie, dass diese Kennung zeichenfolgenbasiert und nicht sequenziell ist. In Campaign v8 ist der Primärschlüssel kein numerischer Wert. In Ihren Schemata müssen Sie die Attribute **autouid** und **autopk** verwenden.
 
-In Campaign Classic v7 und früheren Versionen wird die Einheitlichkeit eines Schlüssels innerhalb eines Schemas (d. h. einer Tabelle) auf der Ebene der Datenbank-Engine gehandhabt. Im Allgemeinen enthalten klassische Datenbank-Engines wie PostgreSQL, Oracle oder SQL Server einen nativen Mechanismus, um zu verhindern, dass duplizierte Zeilen basierend auf einer Spalte oder einem Satz von Spalten über Primärschlüssel und/oder eindeutige Indizes eingefügt werden. Duplizierte IDs sind in diesen Versionen nicht vorhanden, wenn der richtige Index und die Primärschlüssel auf Datenbankebene festgelegt sind.
+In Campaign Classic v7 und früheren Versionen wird die Eindeutigkeit eines Schlüssels innerhalb eines Schemas (d. h. einer Tabelle) auf der Ebene der Datenbank-Engine gewährleistet. Im Allgemeinen verfügen klassische Datenbank-Engines wie PostgreSQL, Oracle oder SQL Server über einen nativen Mechanismus, der verhindert, dass duplizierte Zeilen basierend auf einer Spalte oder einem Satz von Spalten über Primärschlüssel und/oder eindeutige Indizes eingefügt werden. Wenn der richtige Index und die richtigen Primärschlüssel auf Datenbankebene festgelegt wurden, sind duplizierte Kennungen bei diesen Versionen nicht möglich.
 
-Adobe campaign v8 wird mit Snowflake als Hauptdatenbank geliefert. Da dadurch der Umfang der Abfragen drastisch erhöht wird, bietet die verteilte Architektur der Snowflake-Datenbank keine solchen Mechanismen, um die Einzigkeit eines Schlüssels innerhalb einer Tabelle zu verwalten und zu erzwingen. Daher verhindert nichts die Erfassung duplizierter Schlüssel in einer Tabelle mit Adobe Campaign v8. Endbenutzer sind nun dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen. [Mehr dazu](../dev/keys.md)
+Adobe Campaign v8 wird mit Snowflake als Hauptdatenbank bereitgestellt. Um eine deutlich erhöhte Anzahl der Abfragen zu vermeiden, bietet die verteilte Architektur der Snowflake-Datenbank keine solchen Mechanismen zur Verwaltung und Durchsetzung eindeutiger Schlüssel innerhalb einer Tabelle. Dementsprechend wird bei Adobe Campaign v8 die Aufnahme duplizierter Schlüssel in einer Tabelle nicht verhindert. Endbenutzer sind nun selbst dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen. [Weitere Informationen](../dev/keys.md)
 
 ### Vereinfachte Wartung
 
@@ -74,11 +74,11 @@ Campaign-Benutzer müssen keine Datenbankexperten sein: Es besteht kein Bedarf m
 
 ## Reporting
 
-Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen bieten als Campaign Classic v7. Die bestehenden Einschränkungen für Cubes gelten nicht.
+Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen als Campaign Classic v7 bieten. Die bestehenden Einschränkungen gelten nicht für Cubes.
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
-Beachten Sie, dass einige Funktionen in dieser ersten Version nicht verfügbar sind, z. B.:
+Bitte beachten Sie, dass in dieser ersten Version einige Funktionen noch nicht verfügbar sind, z. B.:
 
 * Verwaltung von Marketing-Ressourcen
 * Dezentrales Marketing
@@ -91,9 +91,9 @@ Beachten Sie, dass einige Funktionen in dieser ersten Version nicht verfügbar s
 
 >[!CAUTION]
 >
->Derzeit ist Campaign v8 **nur** als verwalteter Cloud Service verfügbar und kann nicht in On-Premise- oder Hybridumgebungen bereitgestellt werden.
+>Derzeit ist Campaign v8 **nur** als Managed Cloud Service verfügbar und kann nicht in On-Premise- oder Hybridumgebungen bereitgestellt werden.
 >
->Die Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht verfügbar.
+>Die Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht möglich.
 >
 >Wenden Sie sich an Ihr Account-Team, wenn Sie sich bezüglich Ihres Bereitstellungsmodells nicht sicher sind oder Fragen haben.
 
