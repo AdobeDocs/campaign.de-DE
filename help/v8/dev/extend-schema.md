@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Campaign-Schemata erweitern
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
    ![](assets/extend-schema-select.png)
 
-   Benennen Sie das Erweiterungsschema standardmäßig genauso wie das integrierte Schema und verwenden Sie einen benutzerdefinierten Namespace.  Beachten Sie, dass einige Namespaces nur intern sind. [Mehr dazu](schemas.md#reserved-namespaces)
+   Benennen Sie das Erweiterungsschema standardmäßig genauso wie das integrierte Schema und verwenden Sie einen benutzerdefinierten Namespace.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces)
 
    ![](assets/extend-schema-validate.png)
 
@@ -63,6 +63,6 @@ Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
    ![](assets/extend-schema-structure.png)
 
-1. Aktualisieren Sie die Datenbankstruktur, um Ihre Änderungen anzuwenden. [Mehr dazu](update-database-structure.md)
+1. Aktualisieren Sie die Datenbankstruktur, um Ihre Änderungen anzuwenden. [Weitere Informationen](update-database-structure.md)
 
-1. Nachdem die Änderungen in der Datenbank implementiert wurden, können Sie das Empfängerformular anpassen, um die Änderungen sichtbar zu machen. [Mehr dazu](forms.md)
+1. Nachdem die Änderungen in der Datenbank implementiert wurden, können Sie das Empfängerformular anpassen, um die Änderungen sichtbar zu machen. [Weitere Informationen](forms.md)
