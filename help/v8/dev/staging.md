@@ -8,7 +8,7 @@ level: Beginner
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 4%
+ht-degree: 58%
 
 ---
 
@@ -19,12 +19,12 @@ In der Campaign Cloud-Datenbank wird die Weitergabe von Einzelaufrufen hinsichtl
 Die Staging-Funktion von Kampagnen ist in einigen integrierten Schemata standardmäßig aktiviert. Wir können sie auch für jedes benutzerdefinierte Schema aktivieren. Staging-Mechanismus in Kürze:
 
 * Die Datenschemastruktur wird in die lokale Staging-Tabelle dupliziert.
-* Neue APIs für die Datenerfassung werden direkt in die lokale Staging-Tabelle übertragen. [Mehr dazu](new-apis.md)
-* Ein geplanter Workflow wird stündlich Trigger und die Daten werden wieder in die Cloud-Datenbank synchronisiert. [Mehr dazu](../config/replication.md)
+* Neue APIs für die Datenerfassung werden direkt in die lokale Staging-Tabelle übertragen. [Weitere Informationen](new-apis.md)
+* Ein geplanter Workflow wird stündlich ausgeführt und die Daten werden zurück in die Cloud-Datenbank synchronisiert. [Weitere Informationen](../config/replication.md)
 
-Einige integrierte Schemata werden standardmäßig als &quot;Staging&quot;festgelegt, z. B. nmsSubscriptionRcp, nmsAppSubscriptionRcp, nmsRecipient.
+Einige integrierte Schemata werden standardmäßig beim Staging verwendet, etwa nmsSubscriptionRcp, nmsAppSubscriptionRcp und nmsRecipient.
 
-Campaign Classic v7-APIs sind weiterhin verfügbar, können aber von diesem neuen Staging-Mechanismus nicht profitieren: API-Aufrufe werden direkt an die Cloud-Datenbank gesendet. Adobe empfiehlt, so weit wie möglich einen neuen Staging-Mechanismus zu verwenden, um den Gesamtdruck und die Latenz in der Campaign Cloud-Datenbank zu reduzieren.
+Campaign Classic v7-APIs sind weiterhin verfügbar, profitieren jedoch nicht von dem neuen Staging-Mechanismus: API-Aufrufe fließen direkt in die Cloud-Datenbank. Adobe empfiehlt, wann immer möglich den neuen Staging-Mechanismus zu verwenden, um die Gesamtauslastung und die Latenz der Campaign Cloud-Datenbank zu reduzieren.
 
 >[!CAUTION]
 >
@@ -41,7 +41,7 @@ Campaign Classic v7-APIs sind weiterhin verfügbar, können aber von diesem neue
 
 Gehen Sie wie folgt vor, um den Campaign-Staging-Mechanismus für eine bestimmte Tabelle zu implementieren:
 
-1. Erstellen Sie ein benutzerdefiniertes Beispielschema in der Campaign Cloud-Datenbank. In diesem Schritt ist kein Staging aktiviert.
+1. Erstellen Sie ein benutzerdefiniertes Beispielschema in der Campaign Cloud-Datenbank. Bei diesem Schritt ist kein Staging aktiviert.
 
    ```
    <srcSchema _cs="Sample Table (dem)" created="YYYY-DD-MM"
@@ -56,9 +56,9 @@ Gehen Sie wie folgt vor, um den Campaign-Staging-Mechanismus für eine bestimmte
    </srcSchema>
    ```
 
-   [!DNL :bulb:] Weitere Informationen zur Erstellung benutzerdefinierter Schemas finden Sie auf  [dieser Seite](create-schema.md).
+   [!DNL :bulb:] Weitere Informationen zur Erstellung benutzerdefinierter Schemata finden Sie auf [dieser Seite](create-schema.md).
 
-1. Speichern und aktualisieren Sie die Datenbankstruktur.  [Mehr dazu](update-database-structure.md)
+1. Speichern und aktualisieren Sie die Datenbankstruktur. [Weitere Informationen](update-database-structure.md)
 
 1. Aktivieren Sie den Staging-Mechanismus in der Schemadefinition, indem Sie den Parameter **autoStg=&quot;true&quot;** hinzufügen.
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um den Campaign-Staging-Mechanismus für eine bestimmte
    </srcSchema>
    ```
 
-1. Speichern Sie die Änderung. Es ist ein neues Staging-Schema verfügbar, bei dem es sich um eine lokale Kopie des ursprünglichen Schemas handelt.
+1. Speichern Sie die Änderung. Ein neues Staging-Schema ist nun verfügbar, bei dem es sich um eine lokale Kopie des ursprünglichen Schemas handelt.
 
    ![](assets/staging-mechanism.png)
 
