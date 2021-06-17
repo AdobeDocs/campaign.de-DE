@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie in Campaign ein neues Schema erstellen
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -25,7 +25,7 @@ Auf der Registerkarte **[!UICONTROL Bearbeiten]** wird der XML-Inhalt eines Sche
 
 >[!NOTE]
 >
->Mit dem Bearbeitungssteuerelement &quot;Name&quot; können Sie den Schemaschlüssel, bestehend aus Name und Namespace, eingeben. Die Attribute &quot;Name&quot; und &quot;Namespace&quot; des Stammelements des Schemas werden automatisch im XML-Bearbeitungsbereich des Schemas aktualisiert. Beachten Sie, dass einige Namespaces nur intern sind. [Mehr dazu](schemas.md#reserved-namespaces)
+>Mit dem Bearbeitungssteuerelement &quot;Name&quot; können Sie den Schemaschlüssel, bestehend aus Name und Namespace, eingeben. Die Attribute &quot;Name&quot; und &quot;Namespace&quot; des Stammelements des Schemas werden automatisch im XML-Bearbeitungsbereich des Schemas aktualisiert. Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces)
 
 Die Registerkarte **[!UICONTROL Vorschau]** generiert automatisch das erweiterte Schema:
 
