@@ -8,7 +8,7 @@ title: Dokumente zu Campaign v8
 source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 81%
+ht-degree: 98%
 
 ---
 
@@ -25,21 +25,21 @@ ht-degree: 81%
    + [Erste Schritte](start/get-started.md)
    + [Profile und Audiences](start/audiences.md)
    + [Datenimport](start/import.md)
-   + [Kampagnen erstellen](start/campaigns.md)
-   + [Nachrichten senden](start/create-message.md)
-   + [Abonnements verwalten](start/subscriptions.md)
-   + [Verfolgen und überwachen](start/tracking.md)
+   + [Erstellen von Kampagnen](start/campaigns.md)
+   + [Senden von Nachrichten](start/create-message.md)
+   + [Verwalten von Abonnements](start/subscriptions.md)
+   + [Verfolgen und Überwachen](start/tracking.md)
    + [Metriken und Berichte](start/reporting.md)
    + [Häufig gestellte Fragen](start/campaign-faq.md)
 + Implementieren {#implement}
-   + [Umsetzung](start/implement.md)
-   + [Instanz anpassen](dev/customize.md)
+   + [Implementierungsschritte](start/implement.md)
+   + [Anpassen der Instanz](dev/customize.md)
    + [Sicherheitsrichtlinien](config/security.md)
    + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
    + [Best Practices für Datenmodelle](dev/datamodel-best-practices.md)
 + Freigeben {#deploy}
    + [Kompatibilitätsmatrix](start/compatibility-matrix.md)
-   + [Verbindung zu Campaign herstellen](start/connect.md)
+   + [Herstellen einer Verbindung zu Campaign](start/connect.md)
    + [Berechtigungen](start/permissions.md)
    + [Control Panel](config/self-service.md)
 + Senden {#send}
@@ -49,48 +49,48 @@ ht-degree: 81%
    + [LINE-Messaging](send/line.md)
    + [Briefpost](send/direct-mail.md)
    + [Transaktionsnachrichten](send/transactional.md)
-   + Angebote hinzufügen{#interaction}
-      + [Erste Schritte mit Interaktionen](send/interaction.md)
-      + Einstellungen definieren{#interaction}
-         + [Benutzer erstellen](send/interaction-operators.md)
+   + Hinzufügen von Angeboten {#interaction}
+      + [Erste Schritte mit Interaction](send/interaction.md)
+      + Definieren von Einstellungen {#interaction}
+         + [Erstellen von Benutzern](send/interaction-operators.md)
          + [Erstellen von Umgebungen](send/interaction-env.md)
-         + [Vordefinierte Filter erstellen](send/interaction-predefined-filters.md)
-         + [Platzierungen erstellen](send/interaction-offer-spaces.md)
-      + [Angebotskatalog erstellen](send/interaction-offer-catalog.md)
-      + [Angebot erstellen](send/interaction-offer.md)
-      + [Angebot senden](send/interaction-send-offers.md)
+         + [Erstellen vordefinierter Filter](send/interaction-predefined-filters.md)
+         + [Erstellen von Platzierungen](send/interaction-offer-spaces.md)
+      + [Erstellen eines Angebotskatalogs](send/interaction-offer-catalog.md)
+      + [Erstellen eines Angebots](send/interaction-offer.md)
+      + [Senden eines Angebots](send/interaction-send-offers.md)
       + [Anwendungsfälle](send/interaction-use-cases.md)
 + Konfigurieren {#config}
-   + [Mit Workflows automatisieren](config/workflows.md)
-   + [Daten verwalten](config/replication.md)
+   + [Automatisieren mit Workflows](config/workflows.md)
+   + [Verwalten von Daten](config/replication.md)
    + [E-Mail-Einstellungen](config/email-settings.md)
    + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
    + [Einstellungen für mobile Apps](config/push-config.md)
    + [Externe Konten](config/external-accounts.md)
 + Verbinden {#connect}
-   + [Verbindungen zu anderen Lösungen herstellen](connect/integration.md)
+   + [Herstellen von Verbindungen zu anderen Lösungen](connect/integration.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
-   + [Campaign + Experience Cloud-Trigger](connect/ac-triggers.md)
+   + [Campaign + Experience Cloud Triggers](connect/ac-triggers.md)
    + [Campaign + Real-Time CDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Campaign + externe Datenbank](connect/fda.md)
    + [Campaign + Ihr CRM-System](connect/crm.md)
-+ Ressourcen für Entwickler{#architecture}
++ Ressourcen für Entwickler {#architecture}
    + [Allgemeine Prinzipien](dev/general-architecture.md)
    + [Architektur](dev/architecture.md)
    + [Datenmodell](dev/datamodel.md)
    + Schemata und Formulare {#shemas-forms}
-      + [Mit Schemata arbeiten](dev/schemas.md)
-      + [Schlüsselmanagement und Einheitlichkeit](dev/keys.md)
-      + [Schemata erstellen](dev/create-schema.md)
-      + [Schemata erweitern](dev/extend-schema.md)
+      + [Arbeiten mit Schemata](dev/schemas.md)
+      + [Schlüsselverwaltung und Eindeutigkeit](dev/keys.md)
+      + [Erstellen von Schemata](dev/create-schema.md)
+      + [Erweitern von Schemata](dev/extend-schema.md)
       + [Schemastruktur](dev/schema-structure.md)
       + [Datenbank-Mapping](dev/database-mapping.md)
-      + [Anzeige von personenbezogenen Daten einschränken](dev/restrict-pi-view.md)
-      + [Benutzerdefinierte Empfängertabelle verwenden](dev/custom-recipient.md)
-      + [Datenbank aktualisieren](dev/update-database-structure.md)
+      + [Einschränken der Anzeige von personenbezogenen Daten](dev/restrict-pi-view.md)
+      + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
+      + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
    + APIs {#api}
       + [Erste Schritte](dev/api.md)
