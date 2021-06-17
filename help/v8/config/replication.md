@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign verfügt über eine Reihe integrierter technischer Workflows. Tec
 
 Solche Workflows führen Operationen zur Datenbankwartung aus, nutzen die Tracking-Informationen in den Versand-Logs, erstellen wiederkehrende Kampagnen und mehr.
 
-[!DNL :arrow_upper_right:] Die vollständige Liste der technischen Workflows finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=de)
+[!DNL :arrow_upper_right:] Eine vollständige Liste der technischen Workflows finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=de).
 
 
 Zusätzlich zu diesen technischen Workflows setzt Campaign v8 bei der Verwaltung von [Datenreplikation](#data-replication) auf bestimmte technische Workflows.
@@ -37,19 +37,19 @@ Dieser Workflow repliziert die XS-Daten für ein bestimmtes externes Konto.
 
 Diese technischen Workflows sind im Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows > Vollständige FFDA-Replikation]** von Campaign Explorer verfügbar. **Sie dürfen nicht geändert werden.**
 
-Bei Bedarf können Sie die Datensynchronisation manuell starten. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität **Planung** und wählen Sie **Aufgabe(n) jetzt ausführen**.
+Bei Bedarf können Sie die Datensynchronisation manuell starten. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität **Planung** und wählen Sie **Aufgabe(n) jetzt bearbeiten**.
 
 ## Datenreplikation{#data-replication}
 
-Einige integrierte Tabellen werden von der lokalen Campaign-Datenbank über die oben beschriebenen Workflows in die Cloud-Datenbank [!DNL Snowflake] repliziert.
+Einige integrierte Tabellen werden mithilfe der oben beschriebenen dedizierten Workflows von der Campaign-Datenbank in die [!DNL Snowflake]-Cloud-Datenbank repliziert.
 
 Replikationsrichtlinien richten sich nach der Größe der Tabellen. Einige Tabellen werden in Echtzeit repliziert, andere werden hingegen stündlich repliziert. Einige Tabellen erhalten inkrementelle Aktualisierungen, während andere ersetzt werden.
 
-Zusätzlich zum integrierten technischen Workflow **Replizieren Sie Referenztabellen** können Sie die Datenreplikation in Ihren Workflows erzwingen.
+Zusätzlich zum integrierten technischen Workflow **Referenztabellen replizieren** können Sie die Datenreplikation in Ihren Workflows erzwingen.
 
 Sie haben folgende Möglichkeiten:
 
-* Fügen Sie eine bestimmte **JavaScript-Code** -Aktivität mit dem folgenden Code hinzu:
+* Fügen Sie eine bestimmte Aktivität des Typs **JavaScript-Code** mit dem folgenden Code hinzu:
 
 ```
 nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
@@ -58,7 +58,7 @@ nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
 ![](assets/jscode.png)
 
 
-* Fügen Sie eine bestimmte **nlmodule** -Aktivität mit dem folgenden Befehl hinzu:
+* Fügen Sie eine bestimmte **nlmodule**-Aktivität mit dem folgenden Befehl hinzu:
 
 ```
 nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
@@ -68,6 +68,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Verwandte Themen**
 
-[!DNL :arrow_upper_right:] Informationen zu den ersten Schritten mit Workflows in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=de#automating-with-workflows)
+[!DNL :arrow_upper_right:] Lernen Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=de#automating-with-workflows) die ersten Schritte mit Workflows kennen.
 
-[!DNL :bulb:] Auf Datenaufbewahrungszeiträume in  [diesem Abschnitt zugreifen](../dev/datamodel-best-practices.md#data-retention)
+[!DNL :bulb:] Erfahren Sie in [diesem Abschnitt](../dev/datamodel-best-practices.md#data-retention) mehr über Datenaufbewahrungsfristen.
