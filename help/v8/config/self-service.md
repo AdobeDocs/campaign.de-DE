@@ -8,9 +8,9 @@ level: Beginner
 hidefromtoc: true
 hide: true
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,4 +55,4 @@ Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign-Instanzen im Control Pane
 * [Details der Instanz](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de)
 * [GPG-Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de)
 
-[!DNL :arrow_upper_right:] Alle Control Panel-Funktionen finden Sie in  [dieser Dokumentation .](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
+[!DNL :arrow_upper_right:] Lernen Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) alle Control Panel-Funktionen kennen.
