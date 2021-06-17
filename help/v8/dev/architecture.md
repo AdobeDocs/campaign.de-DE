@@ -9,7 +9,7 @@ exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 76%
+ht-degree: 90%
 
 ---
 
@@ -21,15 +21,15 @@ Campaign wird in Form einzelner Instanzen bereitgestellt, wobei jede Instanz ein
 
 Mit Campaign Cloud Service stehen drei Umgebungstypen zur Verfügung:
 
-* **Produktionsumgebung**: hostet die Anwendungen für Geschäftsleute.
+* **Produktionsumgebung:** hostet die Programme für die Geschäftspraktiker.
 
-* **Staging-Umgebung**: wird für verschiedene Leistungs- und Qualitätstests verwendet, bevor Änderungen an der Anwendung in die Produktionsumgebung übertragen werden.
+* **Staging-Umgebung:** wird für verschiedene Leistungs- und Qualitätstests verwendet, bevor Änderungen am Programm in die Produktionsumgebung übertragen werden.
 
-* **Entwicklungsumgebung**: ermöglicht es Entwicklern, Campaign unter denselben Laufzeitbedingungen wie die Staging- und Produktionsumgebungen zu implementieren.
+* **Entwicklungsumgebung:** ermöglicht Entwicklern die Implementierung von Campaign unter denselben Laufzeitbedingungen wie bei der Staging- oder Produktionsumgebung.
 
 Sie können Packages von einer Umgebung in eine andere exportieren und importieren.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zu Paketen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
+[!DNL :arrow_upper_right:] Weitere Informationen über Packages in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=de)
 
 ## Mid-Sourcing-Implementierung{#mid-sourcing-deployment}
 
@@ -58,7 +58,7 @@ In der hier angewendeten Architektur sind Ausführungszelle und Kontrollinstanz 
 
 * Die **Kontrollinstanz** (oder die Marketing-Instanz) wird von Marketing-Experten und IT-Teams zum Erstellen, Konfigurieren und Veröffentlichen von Nachrichtenvorlagen verwendet. Diese Instanz zentralisiert auch die Überwachung und den Verlauf von Ereignissen.
 
-   [!DNL :bulb:] In  [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Nachrichtenvorlagen erstellen und veröffentlichen.
+   [!DNL :bulb:] Erfahren Sie in [diesem Abschnitt](../send/transactional.md), wie Sie Nachrichtenvorlagen erstellen und veröffentlichen.
 
 * Die **Ausführungsinstanz** ruft eingehende Ereignisse (z. B. Passwortrücksetzung oder Bestellungen von einer Website) ab und versendet personalisierte Nachrichten. Es kann mehr als eine Ausführungsinstanz geben, um Nachrichten über den Load-Balancer zu verarbeiten und die Anzahl der zu verarbeitenden Ereignisse zwecks maximaler Verfügbarkeit zu skalieren.
 
@@ -79,4 +79,4 @@ Dann kann die externe Anwendung mit dem von der Ausführungsinstanz als Antwort 
 * Mehrere Ausführungsinstanzen
 In einer mehrzelligen Ausführungsarchitektur mit mehreren Ausführungsinstanzen hinter einem Load-Balancer durchläuft die vom externen Programm aufgerufene Anmeldemethode den Load-Balancer: Aus diesem Grund kann keine Token-basierte Authentifizierung verwendet werden. Eine Benutzer-/Passwortbasierte Authentifizierung ist erforderlich.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zu Transaktionsnachrichten-Ereignissen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)
+[!DNL :arrow_upper_right:] Weitere Informationen über Transaktionsnachrichten-Ereignisse in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)
