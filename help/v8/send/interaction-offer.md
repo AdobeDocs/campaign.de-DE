@@ -1,6 +1,6 @@
 ---
 product: Adobe Campaign
-title: Kampagneninteraktionsangebot
+title: Campaign Interaction-Angebot
 description: Erfahren Sie, wie Sie ein Angebot erstellen
 feature: Übersicht
 role: Data Engineer
@@ -8,15 +8,15 @@ level: Beginner
 source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
 source-wordcount: '953'
-ht-degree: 60%
+ht-degree: 98%
 
 ---
 
-# Angebot erstellen
+# Erstellen eines Angebots
 
-Gehen Sie wie folgt vor, um ein Angebot zu erstellen:
+Um ein Angebot zu erstellen, gehen Sie wie folgt vor:
 
-1. Gehen Sie zum Tab **[!UICONTROL Kampagnen]** und klicken Sie auf den Link **[!UICONTROL Angebote]** .
+1. Klicken Sie auf der Registerkarte **[!UICONTROL Kampagnen]** auf den Link **[!UICONTROL Angebote]**.
 
 1. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus.
 
@@ -30,31 +30,31 @@ Gehen Sie wie folgt vor, um ein Angebot zu erstellen:
 
 Sie können jetzt die Registerkarte **[!UICONTROL Eignung]** verwenden, um Folgendes zu definieren:
 
-* Die Eignungsdauer des Angebots. [Mehr dazu](#eligibility-period)
-* Filter für die Ziel-Population des Angebots. [Mehr dazu](#filters-on-the-target)
-* Die Angebotsgewichtung. [Mehr dazu](#offer-weight)
+* Gültigkeitsdauer des Angebots [Weitere Informationen](#eligibility-period)
+* Filter für die Ziel-Population des Angebots [Weitere Informationen](#filters-on-the-target)
+* Angebotsgewichtung [Weitere Informationen](#offer-weight)
 
 ### Eignungszeitraum des Angebots{#eligibility-period}
 
-Definieren Sie im Tab **[!UICONTROL Eignung]** des Angebots die Eignungsdauer des Angebots. Verwenden Sie die Dropdownlisten, um ein Start- und ein Enddatum im Kalender auszuwählen.
+Definieren Sie auf der Registerkarte **[!UICONTROL Eignung]** des Angebots die Gültigkeitsdauer des Angebots. Wählen Sie mithilfe der Dropdown-Listen im Kalender ein Start- und ein Enddatum aus.
 
 ![](assets/offer_eligibility_create_002.png)
 
-Außerhalb dieses Zeitraums wird das Angebot nicht ausgewählt. Wenn Sie auch die Eignungstermine für die Angebotskategorie konfiguriert haben, gilt der restriktivste Zeitraum.
+Außerhalb dieses Zeitraums wird das Angebot nicht ausgewählt. Falls Sie auch für die Angebotskategorie einen Eignungszeitraum definiert haben, gilt der restriktivste Zeitraum.
 
-### Filter zur Zielgruppe {#filters-on-the-target} hinzufügen
+### Hinzufügen von Zielgruppenfiltern {#filters-on-the-target}
 
-Wenden Sie im Tab **[!UICONTROL Eignung]** des Angebots Filter auf die Angebotszielgruppe an.
+Wenden Sie auf der Registerkarte **[!UICONTROL Eignung]** des Angebots Filter auf die Angebotszielgruppe an.
 
-Klicken Sie dazu auf den Link **[!UICONTROL Abfrage bearbeiten]** und wählen Sie den anzuwendenden Filter aus.
+Klicken Sie hierzu auf den Link **[!UICONTROL Abfrage bearbeiten]** und definieren Sie den anzuwendenden Filter.
 
 ![](assets/offer_eligibility_create_003.png)
 
-Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der Liste der Benutzerfilter auswählen. [Mehr dazu](interaction-predefined-filters.md)
+Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der Liste der Benutzerfilter auswählen. [Weitere Informationen](interaction-predefined-filters.md)
 
 ![](assets/offer_eligibility_create_004.png)
 
-### Angebotsgewichtung festlegen {#offer-weight}
+### Festlegen der Angebotsgewichtung {#offer-weight}
 
 Um dem Angebotsmodul die Möglichkeit zu geben, zwischen verschiedenen für eine Person geeigneten Angeboten zu wählen, ist es empfehlenswert, jedem Angebot eine Gewichtung zuzuweisen. Sie können darüber hinaus Filter auf die Zielgruppe anwenden oder die Platzierung, auf die sich das Gewicht beziehen soll, einschränken. Ein Angebot mit einer höheren Gewichtung wird demzufolge einem Angebot mit niedriger Gewichtung vorgezogen.
 
@@ -64,15 +64,15 @@ Ein Angebot kann für Kontakte im Alter von 18 bis 25 Jahren eine Gewichtung A a
 
 >[!NOTE]
 >
->Die zugewiesene Gewichtung kann vorübergehend entsprechend den Parametern der Kategorie geändert werden, zu der das Angebot gehört. [Mehr dazu](interaction-offer-catalog.md#creating-offer-categories)
+>Die zugewiesene Gewichtung kann vorübergehend entsprechend den Parametern der Kategorie geändert werden, zu der das Angebot gehört. [Weitere Informationen](interaction-offer-catalog.md#creating-offer-categories)
 
 Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
-1. Klicken Sie im Tab **[!UICONTROL Eignung]** des Angebots auf **[!UICONTROL Hinzufügen]**.
+1. Klicken Sie auf der Registerkarte **[!UICONTROL Eignung]** des Angebots auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/offer_weight_create_001.png)
 
-1. Ändern Sie den Titel und weisen Sie eine Gewichtung zu. Der Standardwert ist 1.
+1. Ändern Sie die Bezeichnung und weisen Sie eine Gewichtung zu. Der Standardwert ist 1.
 
    ![](assets/offer_weight_create_006.png)
 
@@ -108,16 +108,16 @@ Klicken Sie hierfür auf den Link **[!UICONTROL Planung und Eignungsregeln des A
 
 ![](assets/offer_eligibility_create_005.png)
 
-## Angebotsinhalt {#creating-the-offer-content} erstellen
+## Erstellen von Angebotsinhalten {#creating-the-offer-content}
 
-Verwenden Sie den Tab **[!UICONTROL Inhalt]** , um den Angebotsinhalt zu definieren.
+Definieren Sie auf der Registerkarte **[!UICONTROL Inhalt]** den Angebotsinhalt.
 
 ![](assets/offer_content_create_001.png)
 
-1. Definieren Sie die verschiedenen Parameter des Angebotsinhalts.
+1. Legen Sie die verschiedenen Parameter für den Angebotsinhalt fest:
 
-   * **[!UICONTROL Titel]**: Geben Sie den Titel an, der bei Unterbreitung des Angebots angezeigt werden soll. (Hinweis: Es handelt sich hierbei nicht um den Titel, der im Tab **[!UICONTROL Allgemein]** vergeben wurde.)
-   * **[!UICONTROL Ziel-URL]** : die URL Ihres Angebots angeben. Sie muss mit &quot;http://&quot;oder &quot;https://&quot;beginnen.
+   * **[!UICONTROL Titel]**: Geben Sie den Titel an, der bei Unterbreitung des Angebots angezeigt werden soll. (Hinweis: Es handelt sich hierbei nicht um den Titel, der auf der Registerkarte **[!UICONTROL Allgemein]** vergeben wurde.)
+   * **[!UICONTROL Ziel-URL]**: Geben Sie die URL Ihres Angebots an. Sie muss zwingend mit &quot;http://&quot; oder &quot;https://&quot; beginnen.
    * **[!UICONTROL Bild-URL]**: Geben Sie die URL oder einen Zugangspfad für das Bild Ihres Angebots an.
    * **[!UICONTROL HTML-Inhalt]**/**[!UICONTROL Textinhalt]**: Geben Sie den Body Ihres Angebots in den Tab Ihrer Wahl ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise erzeugt ein `<table>`-Element auf der HTML-Seite Folgendes:
 
@@ -136,23 +136,23 @@ Verwenden Sie den Tab **[!UICONTROL Inhalt]** , um den Angebotsinhalt zu definie
       </div>
    ```
 
-   Erfahren Sie, wie Sie die Annahme-URL in [diesem Abschnitt](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) definieren.
+   Erfahren Sie in [diesem Abschnitt](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted), wie Sie die Annahme-URL definieren.
 
    ![](assets/offer_content_create_002.png)
 
-   Durch Klick auf den Link **[!UICONTROL Inhaltsdefinition]** können Sie prüfen, welche Felder in der Platzierungskonfiguration als Pflichtfelder definiert wurden. [Mehr dazu](interaction-offer-spaces.md)
+   Durch Klick auf den Link **[!UICONTROL Inhaltsdefinition]** können Sie prüfen, welche Felder in der Platzierungskonfiguration als Pflichtfelder definiert wurden. [Weitere Informationen](interaction-offer-spaces.md)
 
    ![](assets/offer_content_create_003.png)
 
    In unserem Beispiel muss das Angebot mindestens einen Titel, ein Bild, einen HTML-Inhalt und eine Ziel-URL aufweisen.
 
-## Angebotsvorschau {#previewing-the-offer}
+## Erstellen einer Vorschau des Angebots {#previewing-the-offer}
 
-Sobald der Angebotsinhalt konfiguriert wurde, können Sie das Angebot so anzeigen, wie es für den Empfänger erscheinen wird.
+Sobald der Angebotsinhalt konfiguriert ist, können Sie das Angebot so anzeigen, wie es für den Empfänger erscheinen wird.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**.
 
    ![](assets/offer_preview_create_001.png)
 
@@ -178,22 +178,22 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 -->
 
-## Angebot genehmigen und aktivieren{#approve-offers}
+## Genehmigen und Aktivieren eines Angebots {#approve-offers}
 
-Sie können das Angebot nun genehmigen und aktivieren, um es in der Umgebung **Live** verfügbar zu machen.
+Nun können Sie das Angebot genehmigen und aktivieren, um es in der **Live**-Umgebung bereitzustellen.
 
-[!DNL :arrow_upper_right:] Weitere Informationen hierzu finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=de#approving-offer-content)
 
-## Angebotsunterbreitung verwalten{#offer-presentation}
+## Verwalten der Angebotsunterbreitung {#offer-presentation}
 
-Campaign ermöglicht die Steuerung der Angebotsvorschlagsströme mithilfe von Unterbreitungsregeln. Diese Regeln gelten speziell für Campaign Interaction und sind **Typologieregeln**. Sie ermöglichen den Ausschluss von Angeboten, die auf dem Verlauf der einem Empfänger bereits unterbreiteten Vorschläge basieren. Sie werden in der Umgebung referenziert.
+Campaign ermöglicht die Steuerung des Flusses der Angebotsvorschläge anhand von Unterbreitungsregeln. Diese Regeln, die speziell für Campaign Interaction gelten, heißen **Typologieregeln**. Sie ermöglichen den Ausschluss von Angeboten, die auf dem Verlauf der einem bestimmten Empfänger zuvor unterbreiteten Vorschläge basieren. Diese werden in der Umgebung referenziert.
 
-[!DNL :arrow_upper_right:] Weitere Informationen hierzu finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=de#managing-offers)
 
 ## Angebotssimulation
 
 Mithilfe von Simulationen können Sie die Verteilung der Angebote einer Kategorie oder einer Umgebung evaluieren, bevor Sie den Vorschlag den Empfängern unterbreiten.
 
-Bei der Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die zuvor für Angebote und deren Unterbreitungsregeln galten. Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
+Bei der Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die bisher für Angebote und deren Unterbreitungsregeln galten. Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
 
-[!DNL :arrow_upper_right:] Weiterführende Informationen zur Angebotssimulation finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
+[!DNL :arrow_upper_right:] Weitere Informationen zur Angebotssimulation finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en).
