@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
-title: Anzeige von personenbezogenen Daten einschränken
+title: Einschränken der Anzeige von personenbezogenen Daten
 description: Erfahren Sie, wie Sie die Anzeige von personenbezogenen Daten einschränken
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '395'
 ht-degree: 100%
 
 ---
 
-# Anzeige von personenbezogenen Daten einschränken{#restricting-pii-view}
+# Einschränken der Anzeige von personenbezogenen Daten {#restricting-pii-view}
 
 ## Übersicht {#overview}
 
@@ -50,7 +50,7 @@ Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 * Beim Speichern der Zielpopulation in einer Gruppe (Liste) sind die Eigenschaften der gespeicherten Felder identisch mit der Datenquelle.
 * Die Daten sind standardmäßig nicht für JS-Code verfügbar.
 
-## Recommendations {#recommendations}
+## Empfehlungen {#recommendations}
 
 Bei jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL broadLog]** und **[!UICONTROL forecastLog]** kopiert. Daher müssen diese Felder auch geschützt werden.
 
