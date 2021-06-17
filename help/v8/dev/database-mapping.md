@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Mapping der Campaign-Datenbank
 description: Mapping der Campaign-Datenbank
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1463'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Das SQL-Mapping dieses Beispielschemas ergibt das folgende XML-Dokument:
 </schema>
 ```
 
-## Beschreibung  {#description}
+## Beschreibung {#description}
 
 Das Stammelement des Schemas lautet nicht mehr **`<srcschema>`**, sondern **`<schema>`**.
 
