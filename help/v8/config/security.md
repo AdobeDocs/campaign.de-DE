@@ -3,9 +3,9 @@ product: Adobe Campaign
 title: Best Practices für die Campaign-Sicherheit
 description: Erste Schritte mit Best Practices für die Campaign-Sicherheit
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 * Stellen Sie sicher, dass der Zugriff auf verschlüsselte Passwörter beschränkt ist.
 * Schützen Sie Seiten, die möglicherweise personenbezogene Daten enthalten (z. B. Mirror-Seiten, Web-Anwendungen usw.).
 
-[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services arbeitet Adobe mit Ihnen zusammen, um diese Konfigurationen in Ihre Umgebung zu implementieren.
+[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender unterstützt Sie Adobe dabei, diese Konfigurationen in Ihrer Umgebung zu implementieren.
 
 ## Personalisierung
 
-Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, dass im Hostname-Teil der URL keine Personalisierung vorhanden ist. So lassen sich mögliche Sicherheitslücken verhindern. Folgende Beispiele sollten niemals in den URL-Attributen `a href="">` oder `<img src="">` verwendet werden:
+Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, dass im Hostname-Teil der URL keine Personalisierung vorhanden ist. So lassen sich mögliche Sicherheitslücken verhindern. Folgende Beispiele sollten niemals in den URL-Attributen &lt;`a href="">` oder `<img src="">` verwendet werden:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -101,13 +101,13 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Kont
 
 ## Zugriffsverwaltung 
 
-Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheitsmanagements. Im Folgenden finden Sie die wichtigsten Best Practices:
+Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements. Im Folgenden finden Sie die wichtigsten Best Practices:
 
 * Erstellen Sie eine ausreichende Anzahl von Sicherheitsgruppen.
 * Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
 * Vermeiden Sie möglichst die Vergabe der Administrator-Funktion und achten Sie darauf, dass sich nicht zu viele Benutzer in der Administrator-Gruppe befinden.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Adobe Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=de#webapp-operator)
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=de#webapp-operator).
 
 ## Leitlinien zur Codierung
 
@@ -119,4 +119,4 @@ Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) so
 
 * **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Adobe Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic)
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic).
