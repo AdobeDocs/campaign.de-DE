@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschrei
 
 * **Protokolltabelle**: In diesen Tabellen werden alle Protokolle gespeichert, die mit der Ausführung der Kampagnen verbunden sind.
 
-   Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle Versandlogs (NmsBroadLogRcp) enthält die Versandlogs aller Empfänger.
-Die Haupttabelle Trackinglogs (NmsTrackingLogRcp) speichert die Trackinglogs für alle Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
+   Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle mit Versand-Logs (NmsBroadLogRcp) enthält die Versand-Logs für alle Empfänger.
+Die Haupt-Trackinglog-Tabelle (NmsTrackingLogRcp) speichert die Trackinglogs für alle Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
 Versand-Logs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben und änderbar ist. Daher wird dringend empfohlen, die Logs regelmäßig zu exportieren.
 
-* **Technische Tabellen**: Erfassen Sie technische Daten, die für den Anwendungsprozess verwendet werden, einschließlich Operatoren und Benutzerrechte (xtkGroup), Ordner (XtkFolder).
+* **Technische Tabellen**: Enthalten technische Daten für Programmprozesse, einschließlich Benutzer- und Anwenderberechtigungen (NmsGroup) und Ordnern (XtkFolder).
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Es ist möglich, die Empfängertabelle zu erweitern. Die Anzahl der Empfänger o
 
 [!DNL :bulb:] Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie in [diesem Abschnitt](extend-schema.md).
 
-[!DNL :arrow_upper_right:] Beispiele für integrierte Erweiterungen von Empfängertabellen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table)
+[!DNL :arrow_upper_right:] Beispiele für integrierte Empfängertabellen-Erweiterungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table).
 
 Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre geschäftlichen oder funktionalen Anforderungen zugeschnitten ist. Diese Methode weist Einschränkungen auf und wird in [diesem Abschnitt](custom-recipient.md) beschrieben.
 
@@ -73,5 +73,5 @@ Beachten Sie für ein genaueres Verständnis der Tabellenverwaltung in Campaign 
 
 **Verwandte Themen**
 
-[!DNL :bulb:] Informationen zum Importieren von Profilen finden Sie in  [diesem ](../start/import.md)
-[!DNL :bulb:] AbschnittWeitere Informationen zu Campaign-Zielgruppen finden Sie in  [diesem Abschnitt](../start/audiences.md)
+[!DNL :bulb:]: Erfahren Sie in [diesem Abschnitt](../start/import.md), wie Sie Profile importieren.
+[!DNL :bulb:]Weitere Informationen zu Campaign-Audiences finden Sie in [diesem Abschnitt](../start/audiences.md).
