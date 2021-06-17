@@ -6,19 +6,19 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '109'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
-# Vordefinierte Filter erstellen{#creating-predefined-filters}
+# Erstellen vordefinierter Filter {#creating-predefined-filters}
 
-Erstellen Sie vordefinierte Filter, um Eignungsregeln für die Zielpopulation zu definieren, die bei der Angebotserstellung einfach wiederverwendet werden können. Sie sind für jede Umgebung spezifisch und berücksichtigen die Angebotsparameter.
+Erstellen Sie vordefinierte Filter, um Eignungsregeln für die Zielpopulation zu definieren, die bei der Angebotserstellung einfach wiederverwendet werden können. Vordefinierte Filter sind für jede Umgebung spezifisch und berücksichtigen die Angebotsparameter.
 
-Gehen Sie wie folgt vor, um einen vordefinierten Filter zu erstellen:
+Gehen Sie wie folgt vor, um einen Filter zu erstellen:
 
-1. Navigieren Sie zum Ordner **[!UICONTROL Administration]** und wählen Sie **[!UICONTROL Vordefinierte Angebotsfilter]** aus.
+1. Markieren Sie im Ordner **[!UICONTROL Administration]** der jeweiligen Umgebung den Knoten **[!UICONTROL Vordefinierte Angebotsfilter]**.
 
    ![](assets/offer_filter_create_005.png)
 
@@ -38,7 +38,7 @@ Gehen Sie wie folgt vor, um einen vordefinierten Filter zu erstellen:
 
    ![](assets/offer_filter_create_004.png)
 
-1. Durch Klick auf den **[!UICONTROL Vorschau]**-Tab können Sie das Ergebnis des Filters prüfen.
+1. Durch Klick auf die Registerkarte **[!UICONTROL Vorschau]** können Sie das Ergebnis des Filters prüfen.
 
    ![](assets/offer_filter_create_006.png)
 
