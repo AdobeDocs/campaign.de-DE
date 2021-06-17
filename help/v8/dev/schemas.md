@@ -3,13 +3,13 @@ product: Adobe Campaign
 title: Mit Campaign-Schemata arbeiten
 description: Erste Schritte mit Schemata
 source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1254'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Mit Schemata arbeiten {#gs-ac-schemas}
+# Arbeiten mit Schemata {#gs-ac-schemas}
 
 Die physische und logische Struktur der im Programm übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens **Schema**.
 
@@ -79,17 +79,17 @@ Mit einem Namespace können Sie eine Reihe von Schemas nach Interessensgebieten 
 >
 >Kennungen dürfen nicht mit numerischen Zeichen beginnen.
 
-## Reservierte Namespaces {#reserved-namespaces}
+## Reservierte Namespaces  {#reserved-namespaces}
 
 Bestimmte Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb von Adobe Campaign erforderlich sind. Der folgende Namespace **darf keinesfalls** zur Identifizierung eines neuen Schemas verwendet werden, unabhängig von der Kombination von Groß-/Kleinbuchstaben:
 
-* **xxl**: für Cloud-Datenbankschemata reserviert
-* **xtk**: reserviert für Plattformsystemdaten
-* **nl**: der allgemeinen Verwendung des Antrags vorbehalten sind
-* **nms**: Sendungen vorbehalten (Empfänger, Versand, Tracking etc.)
-* **ncm**: Content Management vorbehalten
+* **xxl**: für Cloud-Datenbank-Schemata reserviert
+* **xtk**: für Systemdaten der Plattform reserviert
+* **nl**: für allgemeine Operationen des Programms reserviert
+* **nms**: für Sendungen reserviert (Empfänger, Versand, Tracking usw.)
+* **ncm**: für das Content-Management reserviert
 * **temp**: für temporäre Schemata reserviert
-* **crm**: für CRM-Connectoren-Integration reserviert
+* **crm**: für CRM-Connector-Integration reserviert
 
 Der Identifizierungsschlüssel eines Stylesheets ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt (z. B. **nms:recipient**).
 
@@ -101,7 +101,7 @@ Um einem der Standard-Datenschemata in Campaign ein Feld oder ein anderes Schema
 
 Um einen völlig neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht vorhanden ist (z. B. eine Tabelle zu Verträgen), können Sie direkt ein benutzerdefiniertes Schema erstellen.
 
-[!DNL :bulb:] Weiterführende Informationen hierzu finden Sie unter [Neues Schema erstellen](create-schema.md).
+[!DNL :bulb:] Weiterführende Informationen hierzu finden Sie unter [Erstellen eines neuen Schemas](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -135,7 +135,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 ## Schlüssel {#keys}
 
-Jede Tabelle muss über mindestens einen Schlüssel verfügen. Oft wird sie im Hauptelement des Schemas automatisch mithilfe der Attribute **@autouid** und **autopk** erstellt, die auf **true** gesetzt sind.
+Jede Tabelle muss über mindestens einen Schlüssel verfügen. Dessen Erstellung erfolgt häufig automatisch im Hauptelement des Schemas. Hierzu müssen die Attribute **@autouuid** und **autopk** auf **true** gesetzt sein.
 
 Der Primärschlüssel kann auch mit dem Attribut **internal** definiert werden.
 
@@ -161,11 +161,11 @@ Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt best
 
 ![](assets/schemaextension_2.png)
 
-Die vollständige Liste der Attribute finden Sie im Abschnitt `<attribute>` Element in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=de#content-model). Im Folgenden finden Sie einige der gebräuchlichsten Attribute: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
+Eine vollständige Liste der Attribute finden Sie im Abschnitt `<attribute>`-Element in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=de#content-model). Im Folgenden finden Sie einige der gebräuchlichsten Attribute: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-[!DNL :arrow_upper_right:] Weiterführende Informationen zu den einzelnen Attributen finden Sie in der Attributbeschreibung in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic).
+[!DNL :arrow_upper_right:] Weitere Informationen zu den einzelnen Attributen finden Sie in der entsprechenden Erläuterung der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic).
 
-### Beispiele      {#examples}
+### Beispiele {#examples}
 
 Beispiel für die Definition eines Standardwerts:
 
