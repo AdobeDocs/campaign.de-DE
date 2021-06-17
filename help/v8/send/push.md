@@ -8,7 +8,7 @@ level: Beginner
 source-git-commit: aa3f2f17981ad10221771b3a22c76f7a445b94c9
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 43%
+ht-degree: 56%
 
 ---
 
@@ -23,7 +23,7 @@ Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folg
 1. Fügen Sie diesem Dienst die iOS- und Android-Versionen der App hinzu.
 1. Erstellen Sie je einen Versand für iOS und Android.
 
-[!DNL :arrow_upper_right:] Informationen zu den ersten Schritten mit der mobilen App finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=de)
+[!DNL :arrow_upper_right:] Weitere Informationen zu den ersten Schritten mit Mobile Apps finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=de).
 
 ## Mit Adobe SDK integrieren
 
@@ -42,17 +42,17 @@ Kompatible SDK-Versionen sind in der [Campaign-Kompatibilitätsmatrix](../start/
 
 Die Integration des Adobe Experience Platform Launch SDK mit Campaign erfolgt über die Campaign Classic-Erweiterung.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zum Mobile SDK für  [Adobe.](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic)
+[!DNL :arrow_upper_right:] Weitere Informationen hierzu finden Sie in der [Dokumentation zum Adobe Mobile SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic).
 
 ## Mobile-App-Einstellungen in Campaign konfigurieren
 
 Sie müssen die Einstellungen Ihrer iOS- bzw. Android-basierten Mobile Apps in Adobe Campaign definieren.
 
-[!DNL :arrow_upper_right:] Die Konfigurationsrichtlinien für iOS werden in der Dokumentation zu  [Campaign Classic v7 beschrieben.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de#sending-messages)
+[!DNL :arrow_upper_right:] Nähere Informationen zur Konfiguration für iOS finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de#sending-messages).
 
-[!DNL :arrow_upper_right:] Die Konfigurationsrichtlinien für Android werden in der Dokumentation zu  [Campaign Classic v7 beschrieben.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de#sending-messages)
+[!DNL :arrow_upper_right:] Nähere Informationen zur Konfiguration für Android finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de#sending-messages).
 
-## Erste Push-Benachrichtigung erstellen
+## Erstellen der ersten Push-Benachrichtigung
 
 In diesem Abschnitt werden die Elemente beschrieben, die für die Bereitstellung von iOS- und Android-Benachrichtigungen spezifisch sind.
 
@@ -60,13 +60,13 @@ In diesem Abschnitt werden die Elemente beschrieben, die für die Bereitstellung
 
 >[!CAUTION]
 >
->Mit Campaign v8 ist die mobile Registrierung jetzt **asynchron**. [Mehr dazu](../dev/staging.md)
+>Mit Campaign v8 ist die mobile Registrierung jetzt **asynchron**. [Weitere Informationen](../dev/staging.md)
 
-Um einen neuen Versand zu erstellen, gehen Sie zum Tab **[!UICONTROL Kampagnen]**, klicken Sie auf **[!UICONTROL Sendungen]** und dann auf die Schaltfläche **[!UICONTROL Erstellen]** oberhalb der Liste der vorhandenen Sendungen.
+Um einen neuen Versand zu erstellen, gehen Sie zur Registerkarte **[!UICONTROL Kampagnen]**, klicken Sie auf **[!UICONTROL Sendungen]** und anschließend auf die Schaltfläche **[!UICONTROL Erstellen]** oberhalb der Liste der vorhandenen Sendungen.
 
 ![](assets/delivery_step_1.png)
 
-[!DNL :arrow_upper_right:] Allgemeine Informationen zur Erstellung eines Versands finden Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=de#sending-messages).
+[!DNL :arrow_upper_right:] Allgemeine Informationen zum Erstellen eines Versands finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=de#sending-messages).
 
 ### Benachrichtigungen unter iOS senden {#send-notifications-on-ios}
 
@@ -134,15 +134,15 @@ Um einen neuen Versand zu erstellen, gehen Sie zum Tab **[!UICONTROL Kampagnen]*
 
 ## Testen, Senden und Überwachen von Push-Benachrichtigungen
 
-Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Versand durchgeführt. Weitere Informationen finden Sie in der Campaign Classic v7-Dokumentation:
+Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Versand durchgeführt. Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7:
 
-* Versand validieren und Testsendungen durchführen
+* Validieren eines Versands und Durchführen von Testsendungen
    [!DNL :arrow_upper_right:] [Wichtige Schritte zur Validierung eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de)
 
 * Versand bestätigen und versenden
    [!DNL :arrow_upper_right:] [Wichtige Schritte zum Versand](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
 
-Nach dem Nachrichtenversand können Sie Ihre Sendungen beobachten und verfolgen. Weitere Informationen finden Sie in der Campaign Classic v7-Dokumentation:
+Nach dem Nachrichtenversand können Sie Ihre Sendungen beobachten und verfolgen. Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7:
 
 * Quarantäne für Push-Benachrichtigungen
    [!DNL :arrow_upper_right:] [Weitere Informationen zu Quarantänen für Push-Benachrichtigungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
