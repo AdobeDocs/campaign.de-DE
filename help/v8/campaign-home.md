@@ -6,7 +6,7 @@ exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74
 source-git-commit: 58632224858391f673dfdc87b49417d65b2f9b09
 workflow-type: tm+mt
 source-wordcount: '93'
-ht-degree: 76%
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 76%
 
 ## Neue Funktionen
 
-* **[Was ist [!DNL Adobe Campaign]](start/get-started.md)**  - Wichtige Funktionen und Anwendungsfälle
+* **[ [!DNL Adobe Campaign]](start/get-started.md)** – Wichtige Funktionen und Anwendungsfälle
 
 * **[Neue Funktionen in v8](start/whats-new.md)** – Entdecken Sie die Möglichkeiten von Campaign v8
 
@@ -33,7 +33,7 @@ ht-degree: 76%
       <img alt="Verbinden" src="start/assets/do-not-localize/login.jpeg"/>
     </a>
     <div>
-    <a href="start/connect.md">Verbindung zu Campaign herstellen</a>
+    <a href="start/connect.md">Herstellen einer Verbindung zu Campaign</a>
     </div>
     <br>
   </td>
@@ -62,7 +62,7 @@ ht-degree: 76%
 
 * [Bekannte Einschränkungen](start/known-limitations.md)
 * [Architektur](dev/architecture.md)
-* [Messen und verfolgen](start/reporting.md)
-* [Verbindungen zu anderen Lösungen herstellen](connect/integration.md)
+* [Messen und Verfolgen](start/reporting.md)
+* [Herstellen von Verbindungen zu anderen Lösungen](connect/integration.md)
 * [Häufig gestellte Fragen zu Campaign v8](start/campaign-faq.md)
 * [Adobe Campaign v8 - Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
