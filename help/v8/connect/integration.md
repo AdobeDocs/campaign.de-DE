@@ -1,6 +1,6 @@
 ---
 product: Adobe Campaign
-title: Campaign mit Ihren Lösungen verbinden
+title: 'Verbinden von Campaign mit Ihren Lösungen '
 description: Erfahren Sie, wie Sie Campaign mit Ihren Lösungen verbinden.
 feature: Übersicht
 role: Data Engineer
@@ -9,11 +9,11 @@ exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 71%
+ht-degree: 94%
 
 ---
 
-# Verbinden von Campaign mit Ihren Lösungen{#gs-ac-connectors}
+# Verbinden von Campaign mit Ihren Lösungen {#gs-ac-connectors}
 
 Sie können Ihre Campaign-Instanz mit Adobe Experience Cloud-Lösungen verbinden, um Funktionen zu kombinieren.
 
@@ -23,7 +23,7 @@ Adobe Campaign verfügt über mehrere Connectoren, über die Sie mit externen Pr
 
 Modernisieren Sie Ihre Implementierung und nutzen Sie alle Adobe Experience Cloud-Funktionen.
 
-[!DNL :speech_balloon:] Als Managed Cloud Services-Benutzer  [kontaktieren Sie ](../start/campaign-faq.md#support) Adobe, um Campaign mit Adobe Experience Cloud-Diensten und -Lösungen zu verbinden. Sie müssen Adobe Identity Management Service (IMS) implementieren. [Mehr dazu](../start/connect.md#connect-ims)
+[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), wenn Sie Campaign mit Adobe Experience Cloud-Services und -Lösungen verbinden möchten. Sie müssen Adobe Identity Management Service (IMS) implementieren. [Weitere Informationen](../start/connect.md#connect-ims)
 
 Campaign v8 kann eine Verbindung herstellen mit:
 
@@ -31,18 +31,18 @@ Campaign v8 kann eine Verbindung herstellen mit:
 * [Echtzeit-Kundendatenplattform von Adobe Experience Cloud](../connect/ac-rtcdp.md)
 * [Adobe Journey Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=de).
 
-   Siehe das End-to-End-Anwendungsbeispiel [hier](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html).
+   Siehe das End-to-End-Anwendungsbeispiel [hier](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=de).
 
 * [Adobe Analytics](../connect/ac-aa.md)
 * [Adobe Experience Manager](../connect/ac-aem.md)
-* [Adobe Experience Cloud Trigger](../connect/ac-triggers.md)
+* [Adobe Experience Cloud Triggers](../connect/ac-triggers.md)
 * [Adobe Target](../connect/ac-at.md)
 
 Sie können Ihre **Audiences** und **Assets** über Experience Cloud-Lösungen hinweg auch mit Funktionen zum Freigeben von Assets und Audiences kombinieren.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zur  **Zielgruppenfreigabe** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud)
+[!DNL :arrow_upper_right:] Weitere Informationen zur **gemeinsamen Nutzung von Audiences** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
 
-[!DNL :arrow_upper_right:] Weitere Informationen zur  **Asset-** Freigabe zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud)
+[!DNL :arrow_upper_right:] Weitere Informationen zur **gemeinsamen Nutzung von Assets** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
 
 ## CRM-Connectoren{#gs-crm-connectors}
 
@@ -51,7 +51,7 @@ Sie können Ihre Adobe Campaign-Plattform mit Ihren **CRM-Systemen von Drittanbi
 Aktivieren Sie Ihre CRM-Daten für kanalübergreifende Kommunikation: Erfahren Sie, wie Sie Kontakte von Ihrem CRM-System an Adobe Campaign weitergeben und wiederum Kampagnendaten von Adobe Campaign mit Ihrem CRM-System teilen können.
 CRM-Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adobe Campaign bietet einen dedizierten Assistenten zur Erfassung und Auswahl aus den im CRM verfügbaren Tabellen. Damit ist eine bidirektionale Synchronisation gewährleistet, die sicherstellt, dass die Daten in den Systemen jederzeit aktuell sind.
 
-[!DNL :bulb:] Informationen zur Integration von Campaign mit Microsoft Dynamics 365 und Salesforce.com finden Sie auf  [dieser Seite .](crm.md)
+[!DNL :bulb:] Erfahren Sie auf [dieser Seite](crm.md), wie Sie Campaign mit Microsoft Dynamics 365 und Salesforce.com integrieren.
 
 ## Federated Data Access (FDA){#gs-fda}
 
