@@ -9,7 +9,7 @@ exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6e
 source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 68%
+ht-degree: 92%
 
 ---
 
@@ -65,13 +65,13 @@ Die folgenden Browser sind mit Campaign für Web-Zugriff kompatibel.
 
 ## So überprüfen Sie Ihre Campaign-Version und erstellen
 
-Verwenden Sie das Menü **Hilfe > Versionsinformationen..** , um Ihre Version zu überprüfen.
+Verwenden Sie das Menü **Hilfe > Über...**, um Ihre Version zu überprüfen.
 
 ![](assets/ac-version.png)
 
-Sie greifen auf die folgenden Informationen zu:
+Sie erhalten folgende Informationen:
 
-* Die **version**-Nummer Ihrer Client-Konsole und des Anwendungsservers. Im obigen Beispiel ist die Version 8.1.5 sowohl für die Client-Konsole als auch für den Anwendungsserver.
-* Die SHA-Nummer zwischen Klammern.
-* Link zur Kontaktaufnahme mit der Kundenunterstützung von Adobe.
-* Links zu Datenschutzrichtlinien für Adoben, Nutzungsbedingungen und Cookie-Richtlinien.
+* **Versionsnummer** der Client-Konsole und des Anwendungs-Servers. Im obigen Beispiel wird Version 8.1.5 der Client-Konsole und des Anwendungs-Servers verwendet.
+* Die SHA-Nummer zwischen Klammern
+* Link zur Adobe-Kundenunterstützung
+* Links zur Adobe-Datenschutzrichtlinie sowie zu Nutzungsbedingungen und Bestimmungen zu Cookies.
