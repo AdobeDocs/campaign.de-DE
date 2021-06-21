@@ -9,7 +9,7 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
 source-wordcount: '819'
-ht-degree: 77%
+ht-degree: 95%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 77%
 
 Die Client-Konsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können.
 
-Bevor Sie beginnen, müssen Sie:
+Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
-* Überprüfen Sie die Kompatibilität Ihrer Systeme und Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](compatibility-matrix.md) .
-* Campaign-Server-URL abrufen
-* Benutzeranmeldeinformationen abrufen
+* Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](compatibility-matrix.md)
+* Ermitteln Sie Ihre Campaign-Server-URL
+* Ermitteln Sie Ihre Anwender-Anmeldedaten
 
 ## Client-Konsole herunterladen und installieren
 
@@ -103,20 +103,20 @@ Campaign-Anwender können über Adobe Identity Management System (IMS) mit ihrer
 * Stärkere Sicherheitsrichtlinien für die Passwortverwaltung;
 * Verwendung von Konten des Typs Federated ID (externer Identity Provider).
 
-[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](campaign-faq.md#support) Adobe, um Adobe IMS mit Campaign zu implementieren.
+[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](campaign-faq.md#support), um Adobe IMS mit Campaign zu implementieren.
 
 ## Verbindung mit Campaign über Ihre LDAP-Anmeldung herstellen
 
 Adobe Campaign kann so konfiguriert werden, dass der Anwender über seine LDAP-Authentifizierung auf die Plattform zugreift.
 
-[!DNL :speech_balloon:] Als Benutzer von Managed Cloud Services  [kontaktieren Sie ](campaign-faq.md#support) Adobe, um die LDAP-Integration mit Campaign zu konfigurieren.
+[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](campaign-faq.md#support), um die LDAP-Integration mit Campaign zu konfigurieren.
 
 
 ## Web-Zugriff{#web-access}
 
-Bestimmte Teile der Anwendung können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden: Kampagnen-Dashboard, Cube-Reporting, Instanzüberwachung und mehr.
+Einige Bereiche des Programms können über einen einfachen Webbrowser mittels HTML-Benutzeroberfläche aufgerufen werden, darunter Kampagnen-Dashboard, Cube-Reporting und Instanz-Monitoring.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zum Webzugriff finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)
+[!DNL :arrow_upper_right:] Weitere Informationen zum Web-Zugriff finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de#console-and-web-access).
 
 Der Webzugriff bietet eine Schnittstelle, die der Konsole ähnlich ist, jedoch eingeschränkte Funktionen aufweist.
 
@@ -128,6 +128,6 @@ Beim Webzugriff ermöglichen die Optionen vor allem die Anzeige von:
 
 ![](assets/campaign-from-web.png)
 
-Der Webzugriff wird auch für den Validierungsprozess verwendet: Benutzer können auf die E-Mail mit der Validierungsanfrage klicken und über ihren Webbrowser eine Verbindung zu Campaign herstellen, um Versandinhalte oder -budgets zu validieren oder abzulehnen.
+Der Web-Zugriff wird auch für den Validierungsprozess verwendet: Benutzer können auf die E-Mail mit der Validierungsanfrage klicken und über ihren Webbrowser eine Verbindung zu Campaign herstellen, um Versandinhalte oder -budgets zu validieren oder abzulehnen.
 
-[!DNL :arrow_upper_right:] Informationen zum Einrichten und Verwalten von Genehmigungen finden Sie in der Dokumentation zu  [Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=de#orchestrating-campaigns)
+[!DNL :arrow_upper_right:] In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=de#orchestrating-campaigns) erfahren Sie, wie Sie Validierungen einrichten und verwalten können.
