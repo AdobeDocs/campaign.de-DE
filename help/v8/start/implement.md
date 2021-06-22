@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
-source-wordcount: '1193'
-ht-degree: 100%
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+workflow-type: tm+mt
+source-wordcount: '1214'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Campaign verfügt über Prozesse und Einstellungen, die es Ihnen ermöglic
 
 * **Benutzereinwilligung und Datenspeicherung**: Erfahren Sie in der [Dokumentation zum Datenschutz in Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent), wie Sie das Einverständnis der Benutzer einholen, Double-Opt-in-Mechanismen für Abonnements einrichten, das Opt-out erleichtern und die Datenspeicherung konfigurieren.
 
-* **Datenschutzbestimmungen**: In der [Dokumentation zum Datenschutz in Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de) finden Sie Informationen über die Datenschutz-Grundverordnung (DSGVO) der Europäischen Union, den California Consumer Privacy Act (CCPA) und andere internationale Datenschutzanforderungen und wie sich diese Vorschriften auf Ihre Organisation und Adobe Campaign auswirken.
+* **Datenschutzbestimmungen**: Weitere Informationen zur Datenschutz-Grundverordnung (DSGVO) der Europäischen Union, zum California Consumer Privacy Act (CCPA) und anderen internationalen Datenschutzanforderungen sowie dazu, wie sich diese Vorschriften auf Ihr Unternehmen und Adobe Campaign auswirken, finden Sie in der  [Dokumentation zum Datenschutz in Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target=&quot;_blank&quot;}.
 
 ### Sicherheit
 
@@ -52,7 +52,7 @@ Informationen zu Sicherheitsrichtlinien und -prinzipien für Adobe Campaign find
 
 Sie können Benutzer manuell zu Campaign hinzufügen und sie mit Gruppen verknüpfen, die an Ihrer Rollenhierarchie ausgerichtet sind. Die Benutzer können sich dann anmelden und auf die für sie passenden Daten und Berechtigungen zugreifen.
 
-[!DNL :arrow_upper_right:][ In diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=de#getting-started) erfahren Sie, wie Sie Benutzer zu Adobe Campaign hinzufügen.
+[!DNL :arrow_upper_right:] In  [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=de#getting-started){target=&quot;_blank&quot;} erfahren Sie, wie Sie Benutzer zu Adobe Campaign hinzufügen.
 
 ### Campaign-Client-Konsole installieren
 
@@ -78,17 +78,17 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folg
 
    Kampagnen, Sendungen, Aufträge oder Workflows basieren auf einer Vorlage, in der wichtige Einstellungen und Funktionen gespeichert sind. Für jede Komponente, für die keine spezifische Konfiguration definiert wurde, wird eine integrierte Vorlage bereitgestellt. Sie müssen die Vorlagen konfigurieren, an Ihre Anforderungen anpassen und für Endbenutzer verfügbar machen.
 
-   [!DNL :arrow_upper_right:] [Weitere Informationen zu E-Mail-Vorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de)
+   [!DNL :arrow_upper_right:] [Weitere Informationen zu E-Mail-Vorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] Erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=de#orchestrating-campaigns), wie Sie mit Kampagnenvorlagen arbeiten
+   [!DNL :arrow_upper_right:] Erfahren Sie, wie Sie mit Kampagnenvorlagen in der  [Campaign Classic v7-Dokumentation arbeiten](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=de#orchestrating-campaigns){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] Erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=de#workflow-templates), wie Sie eine Workflow-Vorlage konfigurieren
+   [!DNL :arrow_upper_right:] Erfahren Sie, wie Sie eine Workflow-Vorlage in der Dokumentation zu  [Campaign Classic v7 konfigurieren](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=de#workflow-templates){target=&quot;_blank&quot;}
 
 1. Typologieregeln konfigurieren
 
    Nutzen Sie die Campaign-Typologieregeln zum Filtern, Steuern und Überwachen der Sendungen. Zum Beispiel steuern Ermüdungsregeln die Häufigkeit und Menge der Nachrichten, um eine Übersättigung der Empfänger zu vermeiden. Einmal implementiert, werden Typologieregeln in den Sendungen referenziert.
 
-   [!DNL :arrow_upper_right:] [Erfahren Sie mehr über Typologien und Ermüdungs-Management](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=de#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] Weitere Informationen zu Typologien und zur Ermüdungsverwaltung finden Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=de#orchestrating-campaigns){target=&quot;_blank&quot;}
 
 1. Einführung in das integrierte Datenmodell in Campaign
 
