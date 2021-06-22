@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 86%
+source-wordcount: '900'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Campaign bietet eine Plattform für die Konzeption kanalübergreifender Ku
 Mit Campaign können Sie:
 
 * **Personalisierung und Interaktion mit der Hilfe einer umfassenden, zentralen Sicht auf den Kunden fördern**
-* **E-Mail-, Mobil-, Online- und Offline-Kanälen in die Customer Journey integrieren**
+* **E-Mail-, Mobile-, Online- und Offline-Kanäle in die Customer Journey integrieren**
 * **Zielführende, zeitlich optimal abgestimmte Nachrichten und Angebote automatisch versenden**
 
 ![](assets/ac-capabilities.png)
@@ -33,7 +33,7 @@ In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen übermit
 
 [!DNL :bulb:] Die Grundlagen zur Verwaltung von Profilen werden in [diesem Abschnitt](audiences.md) erläutert.
 
-[!DNL :bulb:] In  [diesem Abschnitt](import.md) erfahren Sie, wie Sie Campaign Profile hinzufügen.
+[!DNL :bulb:] Näheres dazu, wie Sie in Campaign Profile hinzufügen, finden Sie in [diesem Abschnitt ](import.md).
 
 ## Zielgruppensegmentierung {#targeted-segmentation}
 
@@ -68,7 +68,7 @@ Workflows können in unterschiedlichsten Kontexten zum Einsatz kommen:
 
 Adobe Campaign ermöglicht es Ihnen, das Verhalten Ihrer Kunden zu verfolgen und besser zu verstehen, indem Sie Daten und Profile kontinuierlich anreichern. Dank der Reporting- und Analyse-Tools trägt jede neue Kampagne zur Optimierung Ihrer Datenbestände bei. Marketing-Maßnahmen können besser auf die jeweiligen Zielgruppen abgestimmt werden und Wirksamkeit sowie ROI werden gesteigert.
 
-[!DNL :bulb:] Weitere Informationen zu Berichts- und Tracking-Funktionen finden Sie in  [diesem Abschnitt](reporting.md).
+[!DNL :bulb:] Weitere Informationen zu den Reporting- und Tracking-Funktionen finden Sie in [diesem Abschnitt](reporting.md).
 
 ## Integration mit Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
@@ -84,7 +84,7 @@ Adobe Campaign bietet verschiedenste Funktionen, die eine Ihren Bedürfnissen un
 
 ## Arbeitsbereich und Anpassung
 
-Der Campaign-Arbeitsbereich ist über [Client Console](../dev/general-architecture.md) verfügbar.
+Der Campaign-Arbeitsbereich ist über die [Client-Konsole](../dev/general-architecture.md) aufrufbar.
 
 ![](assets/home-page.png)
 
@@ -92,9 +92,9 @@ Der Campaign-Arbeitsbereich ist über [Client Console](../dev/general-architectu
 
 Der Campaign-Arbeitsbereich kann Ihren Bedürfnissen entsprechend angepasst werden.
 
-[!DNL :arrow_upper_right:]  Erfahren Sie, wie Sie Campaign Workspace in der Dokumentation zu  [Campaign Classic v7 verwenden.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de)
+[!DNL :arrow_upper_right:]  Erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de), wie Sie den Campaign-Arbeitsbereich verwenden.{target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:]  Erfahren Sie, wie Sie Listen in der Dokumentation zu  [Campaign Classic v7 anpassen können.](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=de#getting-started)
+[!DNL :arrow_upper_right:]  Erfahren Sie, wie Sie Listen in der  [Campaign Classic v7-Dokumentation anpassen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=de#getting-started){target=&quot;_blank&quot;}
 
 Auf einige der Funktionen können Sie zudem über einen Webbrowser zugreifen.
 
@@ -117,10 +117,10 @@ Die Sprache wird während des Installationsprozesses ausgewählt.
 >
 >Die Sprache kann nach der Instanzerstellung nicht mehr geändert werden.
 
-Von der Sprache betroffene Daten und Uhrzeitformate. Weitere Informationen hierzu finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#date-and-time).
+Von der Sprachauswahl betroffene Datums- und Uhrzeitformate. Weitere Informationen hierzu finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de#date-and-time){target=&quot;_blank&quot;}.
 
 **Siehe auch**
 
 * [Kompatibilitätsmatrix von Campaign v8](compatibility-matrix.md)
-* [Verbindung zu Campaign herstellen](connect.md)
+* [Herstellen einer Verbindung zu Campaign](connect.md)
 * [Häufig gestellte Fragen](campaign-faq.md)
