@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1291'
 ht-degree: 42%
 
 ---
@@ -645,7 +645,7 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
    * **ErrorReason** liefert zusätzliche Informationen zu den aufgetretenen Fehlern. Weiterführende Informationen zu möglichen Fehlern und deren Beschreibung finden Sie in der folgenden Tabelle.
 
-   | Status | Beschreibung  | ErrorReason |
+   | Status | Beschreibung | ErrorReason |
    | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
    | ACCRegisterDeviceStatusSuccess | Registrierung erfolgreich | LEER |
    | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Der Hostname des ACC-Marketingservers ist leer oder nicht definiert. | LEER |
@@ -797,7 +797,7 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
 Mit den Variablen können Sie das Verhalten von Mobile Apps nach Erhalt einer Benachrichtigung definieren. Diese Variablen müssen im Mobile-App-Code und in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der  **Campaign Classic v7-** Dokumentation zur mobilen App:  [Konfigurationsschritte für ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html) iOS [und Konfigurationsschritte für Android](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de).
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der  **Campaign Classic v7-** Dokumentation zur mobilen App:  [Konfigurationsschritte für iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} und  [Konfigurationsschritte für Android](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de){target=&quot;_blank&quot;}.
 
 Nachstehend finden Sie ein Beispiel für einen Code, mit dem eine Mobile App hinzugefügte Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
 
