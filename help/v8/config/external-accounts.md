@@ -5,10 +5,10 @@ description: Externe Konten in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: ff2c49a2b4f22cde7ebb798d9f565e133c0268fc
-workflow-type: ht
-source-wordcount: '1124'
-ht-degree: 100%
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
    Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
-   [!DNL :arrow_upper_right:] Weitere Informationen zu eingehenden E-Mails finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html?lang=de)
+   [!DNL :arrow_upper_right:] Weitere Informationen zu eingehenden E-Mails finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html?lang=de){target=&quot;_blank&quot;}
 
 * **Routing**
 
@@ -120,7 +120,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
    * **[!UICONTROL Schlüsselkennung]**
 
-   * **[!UICONTROL Client-Kennung]**: Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
+   * **[!UICONTROL Client-ID]**: Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
 
    * **[!UICONTROL CRM-Version]**: CRM-Version – **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
 
@@ -145,7 +145,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
 Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** zum Importieren oder Exportieren von Daten in Adobe Campaign verwendet werden.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zur Dateiübertragung in Workflows finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html?lang=de)
+[!DNL :arrow_upper_right:] Weitere Informationen zur Dateiübertragung in Workflows finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html?lang=de){target=&quot;_blank&quot;}
 
 * **FTP und SFTP**
 
