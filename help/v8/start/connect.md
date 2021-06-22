@@ -6,9 +6,9 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '823'
 ht-degree: 95%
 
 ---
@@ -116,7 +116,7 @@ Adobe Campaign kann so konfiguriert werden, dass der Anwender über seine LDAP-A
 
 Einige Bereiche des Programms können über einen einfachen Webbrowser mittels HTML-Benutzeroberfläche aufgerufen werden, darunter Kampagnen-Dashboard, Cube-Reporting und Instanz-Monitoring.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zum Web-Zugriff finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de#console-and-web-access).
+[!DNL :arrow_upper_right:] Weitere Informationen zum Web-Zugriff finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de#console-and-web-access).{target=&quot;_blank&quot;}
 
 Der Webzugriff bietet eine Schnittstelle, die der Konsole ähnlich ist, jedoch eingeschränkte Funktionen aufweist.
 
@@ -130,4 +130,4 @@ Beim Webzugriff ermöglichen die Optionen vor allem die Anzeige von:
 
 Der Web-Zugriff wird auch für den Validierungsprozess verwendet: Benutzer können auf die E-Mail mit der Validierungsanfrage klicken und über ihren Webbrowser eine Verbindung zu Campaign herstellen, um Versandinhalte oder -budgets zu validieren oder abzulehnen.
 
-[!DNL :arrow_upper_right:] In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=de#orchestrating-campaigns) erfahren Sie, wie Sie Validierungen einrichten und verwalten können.
+[!DNL :arrow_upper_right:] In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=de#orchestrating-campaigns) erfahren Sie, wie Sie Validierungen einrichten und verwalten können.{target=&quot;_blank&quot;}
