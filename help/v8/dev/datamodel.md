@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
-source-wordcount: '648'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschrei
 Die Haupt-Trackinglog-Tabelle (NmsTrackingLogRcp) speichert die Trackinglogs für alle Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
 Versand-Logs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben und änderbar ist. Daher wird dringend empfohlen, die Logs regelmäßig zu exportieren.
 
-* **Technische Tabellen**: Enthalten technische Daten für Programmprozesse, einschließlich Benutzer- und Anwenderberechtigungen (NmsGroup) und Ordnern (XtkFolder).
+* **Technische Tabellen**: Enthalten technische Daten für Programmprozesse, einschließlich Benutzer- und Anwenderberechtigungen (xtkGroup) und Ordnern (XtkFolder).
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Sie können die standardmäßige Empfängertabelle mit den vordefinierten Felder
 
 [!DNL :bulb:] Lernen Sie in [diesem Abschnitt](datamodel-best-practices.md) Best Practices zum Arbeiten mit dem Campaign-Datenmodell kennen.
 
-## Integrierte Profiltabelle {#ootb-profiles}
+## Native Profiltabelle {#ootb-profiles}
 
 Die integrierte Empfängertabelle (nmsrecipient) in Adobe Campaign bietet einen guten Ausgangspunkt zum Erstellen Ihres Datenmodells. Sie verfügt über eine Reihe vordefinierter Felder und Tabellenrelationen, die leicht erweitert werden können. Dies ist besonders dann nützlich, wenn Sie vor allem auf Empfänger abzielen, da sie für ein einfaches Empfänger-orientiertes Datenmodell geeignet ist.
 
