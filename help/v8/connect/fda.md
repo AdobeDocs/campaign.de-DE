@@ -7,8 +7,8 @@ role: Data Engineer
 level: Beginner
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -105,7 +105,7 @@ Für [!DNL Snowflake] unterstützt der Connector die folgenden Optionen:
 | UseCachedResult | Sitzungsparameter USE_CACHED_RESULTS. Standardmäßig ist TRUE festgelegt. Diese Option kann verwendet werden, um zwischengespeicherte Ergebnisse von Snowflake zu deaktivieren. <br>Weiterführende Informationen dazu finden Sie auf [dieser Seite](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 
 
-## Erstellen des Datenschemas {#create-data-schema}
+## Datenschema erstellen{#create-data-schema}
 
 Gehen Sie wie folgt vor, um das Schema der externen Datenbank in Adobe Campaign zu erstellen:
 
@@ -155,7 +155,7 @@ Gehen Sie dazu wie folgt vor:
    Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Erstellung des Versand-Mappings zu beginnen: Alle verknüpften Tabellen werden automatisch auf der Basis der ausgewählten Parameter erstellt.
 
 
-## Berechtigungen {#fda-permissions}
+## Berechtigungen{#fda-permissions}
 
 Spezifische **Berechtigungen** sind für [!DNL Adobe Campaign] und für die externe Datenbank erforderlich, damit diese miteinander interagieren.
 
