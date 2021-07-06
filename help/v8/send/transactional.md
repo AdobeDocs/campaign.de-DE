@@ -7,8 +7,8 @@ role: Data Engineer
 level: Beginner
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um eine Nachrichtenvorlage zu erstellen:
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Ereignistypen, die von Adobe Campaign verarbeitet werden sollen, müssen in der Kontrollinstanz durch Adobe erstellt werden.
+   Ereignistypen, die von Adobe Campaign verarbeitet werden sollen, müssen von Adobe in der Kontrollinstanz erstellt werden.
 
    >[!NOTE]
    >
@@ -133,7 +133,7 @@ Mit diesen Informationen können Sie Nachrichteninhalte mithilfe von Personalisi
 
    ![](assets/messagecenter_create_custo_3.png)
 
-### Vorschau der Transaktionsnachricht{#transactional-message-preview}
+### Vorschau für Transaktionsnachricht anzeigen{#transactional-message-preview}
 
 Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalts können Sie eine Vorschau Ihrer Nachricht erzeugen und ihre Personalisierung überprüfen:
 
