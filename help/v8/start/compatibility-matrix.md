@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für den
 
 ### Client-Konsole{#ClientConsoleoperatingsystems}
 
-:Warnung: Für die Verwendung der Campaign-Client-Konsole sind die folgenden Betriebssysteme und Browser erforderlich.
+:warning: Für die Verwendung der Campaign-Client-Konsole sind die folgenden Betriebssysteme und Browser erforderlich.
 
 **Betriebssysteme**
 
@@ -53,7 +53,7 @@ In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für den
 ### Mobile SDK{#MobileSDK}
 
 * **Android** 7.x, 8.x, 9.0 mit Campaign Android SDK Build 1.1.1.
-* **Apple iOS** 9 - 14 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen.
+* **Apple iOS** 9–14 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen.
 
 ### Unterstützte Browser {#Browsers}
 
@@ -63,7 +63,7 @@ Die folgenden Browser sind mit Campaign für Web-Zugriff kompatibel.
 
 * **Internet Explorer 11**
 
-## So überprüfen Sie Ihre Campaign-Version und erstellen
+## So überprüfen Sie Ihre Campaign-Version  und den Build
 
 Verwenden Sie das Menü **Hilfe > Über...**, um Ihre Version zu überprüfen.
 
