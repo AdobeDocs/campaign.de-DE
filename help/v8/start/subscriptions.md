@@ -7,8 +7,8 @@ role: Data Engineer
 level: Beginner
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 85%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Folgende Optionen stehen zum Anmelden (Opt-in) eines Profils für einen Service 
 
    ![](assets/subscribe-confirm.png)
 
-   [!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;}.
 
 
 * Empfänger im Zuge eines Imports für einen Service anmelden. Geben Sie im letzten Schritt des Import-Assistenten den gewünschten Service an.
@@ -45,11 +45,11 @@ Folgende Optionen stehen zum Anmelden (Opt-in) eines Profils für einen Service 
 
    ![](assets/opt-in-webapp.png)
 
-   Campaign verfügt über ein Standard-Webformular zur Verwaltung der Anmeldung. Sie können sie personalisieren und die Profildaten zuordnen.
+   Campaign verfügt über ein standardmäßiges Web-Formular zur Opt-in-Verwaltung. Sie können es personalisieren und die Profildaten zuordnen.
 
    ![](assets/web-app.png)
 
-   [!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=de#create-a-subscription--form-with-double-opt-in){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=de#create-a-subscription--form-with-double-opt-in){target=&quot;_blank&quot;}.
 
 
 * Empfänger unter Verwendung eines Zielgruppen-Workflows mit der Aktivität **[!UICONTROL Anmeldedienst]** anmelden.
@@ -71,7 +71,7 @@ Folgende Optionen stehen zum Abmelden (Opt-out) eines Profils von einem Service 
 * Bestimmen Sie eine maximale Dauer für den Informations-Service: Bei Ablauf der Dauer werden Empfänger automatisch abgemeldet. Dieser Zeitraum wird auf der Registerkarte &quot;Bearbeiten&quot; der Service-Eigenschaften angegeben. Sie wird in Tagen definiert.
 * Einrichten eines Abmelde-Workflows für eine Population.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der  [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=de#unsubscribing-a-recipient-from-a-service){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=de#unsubscribing-a-recipient-from-a-service){target=&quot;_blank&quot;}.
 
 
 >[!CAUTION]
@@ -80,4 +80,4 @@ Folgende Optionen stehen zum Abmelden (Opt-out) eines Profils von einem Service 
 
 Sie können es Ihren Versandempfängern auch ermöglichen, Nachrichten an Freunde weiterzuleiten. Fügen Sie dazu die entsprechenden Links in Ihren Versand ein. Sie können diesen Freigabeprozess sowie die Anzahl der Besuche auf den betroffenen Seiten tracken.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zu dieser Funktion finden Sie in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=de#viral-marketing--forward-to-a-friend){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] Weitere Informationen zu dieser Funktion finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=de#viral-marketing--forward-to-a-friend){target=&quot;_blank&quot;}.
