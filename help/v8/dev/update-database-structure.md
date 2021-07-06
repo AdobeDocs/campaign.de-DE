@@ -3,9 +3,9 @@ product: Adobe Campaign
 title: Datenbankstruktur aktualisieren
 description: Datenbankstruktur aktualisieren
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
-source-wordcount: '97'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
