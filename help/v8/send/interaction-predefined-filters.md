@@ -6,13 +6,13 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
-source-wordcount: '109'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Erstellen vordefinierter Filter {#creating-predefined-filters}
+# Vordefinierte Filter erstellen{#creating-predefined-filters}
 
 Erstellen Sie vordefinierte Filter, um Eignungsregeln für die Zielpopulation zu definieren, die bei der Angebotserstellung einfach wiederverwendet werden können. Vordefinierte Filter sind für jede Umgebung spezifisch und berücksichtigen die Angebotsparameter.
 
