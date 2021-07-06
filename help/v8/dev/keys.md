@@ -4,8 +4,8 @@ title: 'Schlüsselverwaltung in Campaign '
 description: Erste Schritte mit der Schlüsselverwaltung
 source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +19,13 @@ Die Vermeidung von Duplikaten bei Schlüsseln, insbesondere bei Primärschlüsse
 
 Als Best Practice empfiehlt Adobe die Anwendung einer [Detect](#detect-duplicates)-and-[Correct](#correct-duplicates)-Strategie im Rahmen des gesamten Daten-Management-Prozesses, falls duplizierte Schlüssel in die Datenbank geladen wurden.
 
-## Erkennen von Duplikaten {#detect-duplicates}
+## Erkennen von Duplikaten{#detect-duplicates}
 
 Campaign verfügt über eine neue Schutzfunktion, die während der Sendungsvorbereitung automatisch duplizierte UUIDs aus einer Audience entfernt. Dieser neue Mechanismus verhindert, dass beim Vorbereiten von Sendungen Fehler auftreten.
 
 >[!CAUTION]
 >
->Duplizierte Schlüssel sind nicht auf UUIDs beschränkt. Dies kann mit IDs geschehen, einschließlich benutzerdefinierter Schlüssel, die in benutzerdefinierten Tabellen erstellt wurden.
+>Duplizierte Schlüssel sind nicht auf UUIDs beschränkt. Duplikate können bei IDs auftreten, einschließlich benutzerdefinierter Schlüssel, die in benutzerdefinierten Tabellen erstellt werden.
 
 Als Endbenutzer können Sie diese Informationen in den Versand-Logs überprüfen. Manche Empfänger können wegen eines duplizierten Schlüssels aus der Hauptzielgruppe ausgeschlossen werden. In diesem Fall wird folgender Warnhinweis angezeigt: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
@@ -53,7 +53,7 @@ Sie können dann einen Workflow erstellen, um die Schlüsselduplikate zu identif
 Nun können Sie direkt aus der Liste auf die duplizierten Empfänger zugreifen. Selbst wenn die Transition nur eine der duplizierten Zeilen enthält, werden alle Duplikate in der Liste protokolliert.
 
 
-## Korrigieren von Duplikaten {#correct-duplicates}
+## Korrigieren von Duplikaten{#correct-duplicates}
 
 Dasmit Duplikate korrigiert werden können, müssen die Campaign-Daten aktualisiert werden. Der Aktionstyp ist eng an die Art der Duplikate und die Implementierung gebunden. Wir können mit mehreren Fällen konfrontiert sein, die jeweils unterschiedliche Korrekturstrategien erfordern (Entfernen, Fusionieren oder Aktualisieren).
 
@@ -71,7 +71,7 @@ Diesmal scheinen verschiedene Profile zu existieren und Sie möchten beide in de
 
 Je nach Problembehebungsstrategie können Sie die Liste jederzeit aus einem anderen Workflow abfragen und dann die Aktualisierung entsprechend Ihren Anforderungen durchführen. Für weitere Informationen wenden Sie sich an Adobe.
 
-### Beispiel für eine Deduplizierung {#deduplicate-sample}
+### Beispiel für eine Deduplizierung{#deduplicate-sample}
 
 Im Fall von duplizierten Empfängern können Sie beide Datensätze in der Campaign-Datenbank behalten. Sie müssen dann einen der Datensätze mit einer neuen UUID aktualisieren.
 
