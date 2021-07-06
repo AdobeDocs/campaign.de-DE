@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,19 +39,19 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Die Zustellbarkeit von E-Mails, ein wichtiger Faktor für den Erfolg jedes Marketing-Programms, unterliegt ständig wechselnden Kriterien und Regeln. Die effektive Navigation in dieser digitalen Welt erfordert eine regelmäßige Abstimmung Ihrer E-Mail-Strategie unter Berücksichtigung der wichtigsten Trends mit Blick auf die Zustellbarkeit, um Ihre Audiences optimal zu erreichen.
 
-   [!DNL :arrow_upper_right:] In diesem Handbuch erfahren Sie  [Best Practices für die Bereitstellung](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] Lesen Sie dieses Handbuch, um mehr über [Best Practices für den Versand](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de){target=&quot;_blank&quot;} zu erfahren.
 
-   [!DNL :arrow_upper_right:] Informationen zur Implementierung der Zustellbarkeit in Campaign finden Sie  [in diesem Handbuch](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] Wie Sie eine hohe Zustellbarkeit in Campaign gewährleisten, erfahren Sie [in diesem Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de){target=&quot;_blank&quot;}.
 
 1. **Wie weiß ich, dass mein Versand fehlerfrei durchgeführt wird?**
 
    Adobe Campaign ist mit einer Reihe von Dashboards und Tools zur Überwachung des E-Mail-Versands ausgestattet.
 
-   [Lesen Sie die Dokumentation zu Campaign Classic v7 , um zu erfahren](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=de), wie Sie sicherstellen können, dass Ihre Nachrichten gesendet werden, die Ausführung überwachen und eine Aktion auslösen können, wenn ein Fehler auftritt.
+   [Lesen Sie die Dokumentation zu Campaign Classic v7, um zu erfahren](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=de){target=&quot;_blank&quot;}, wie Sie dafür sorgen, dass Ihre Nachrichten gesendet werden, und wie Sie die Ausführung überwachen sowie Fehler beheben können.
 
 1. **Kann ich die Ausführung von Workflows überwachen?**
 
-   [!DNL :arrow_upper_right:] Informationen zur Überwachung der Ausführung von Campaign-Workflows  [in der Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=de){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] Wie Sie die Ausführung von Campaign-Workflows überwachen können, erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=de){target=&quot;_blank&quot;}.
 
 1. **Mit welchen Systemen und Komponenten ist Campaign v8 kompatibel?**
 
@@ -71,9 +71,9 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download Center abrufen.
 
-   [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;}, um auf die Softwareverteilung des Experience Cloud zuzugreifen.
+   [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;}, um auf die Software-Verteilung von Experience Cloud zuzugreifen.
 
-   Weitere Informationen zum Verteilungszentrum [finden Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target=&quot;_blank&quot;}.
+   Weitere Informationen zum Verteilungs-Center finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target=&quot;_blank&quot;}.
 
 1. **Kann ich mich mit Campaign-Experten in Verbindung setzen?**
 
@@ -84,6 +84,6 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten. Sie können in der Adobe Admin Console mit dem Adobe-Support chatten, um Ihre Probleme zu lösen.
 
-   Um ein Problem zu protokollieren oder eine Chat-Sitzung in diesem neuen System zu starten, verbinden Sie sich mit [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;}.
+   Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;} her.
 
    Das System erfordert für jeden Benutzer ein individuelles Konto mit den entsprechenden Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht mit Ihrer Adobe ID anmelden können, fordern Sie über Experience League Zugriff an. Das Team der Kundenunterstützung wird den Zugriff so schnell wie möglich einrichten. [Weitere Informationen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
