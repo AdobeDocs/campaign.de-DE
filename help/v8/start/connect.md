@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -118,13 +118,13 @@ Einige Bereiche des Programms können über einen einfachen Webbrowser mittels H
 
 [!DNL :arrow_upper_right:] Weitere Informationen zum Web-Zugriff finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de#console-and-web-access).{target=&quot;_blank&quot;}
 
-Der Webzugriff bietet eine Schnittstelle, die der Konsole ähnlich ist, jedoch eingeschränkte Funktionen aufweist.
+Der Web-Zugriff bietet eine der Client-Konsole ähnliche Bedieneroberfläche mit eingeschränkten Funktionalitäten.
 
-Beispielsweise wird für einen bestimmten Benutzer eine Kampagne mit den folgenden Optionen in der Konsole angezeigt:
+So wird z. B. für einen Benutzer eine Kampagne in der Client-Konsole mit folgenden Optionen angezeigt:
 
 ![](assets/campaign-from-console.png)
 
-Beim Webzugriff ermöglichen die Optionen vor allem die Anzeige von:
+Beim Web-Zugriff ermöglichen die Optionen vor allem die Anzeige von:
 
 ![](assets/campaign-from-web.png)
 
