@@ -7,8 +7,8 @@ role: Data Engineer
 level: Beginner
 source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -107,7 +107,7 @@ Sie haben folgende Möglichkeiten:
 
 ## E-Mails überwachen
 
-Überprüfen Sie nach dem Versand den Status Ihres Versands im Versand-Dashboard und greifen Sie auf Versandlogs und Berichte zu, um zu überprüfen, ob die Nachrichten korrekt gesendet wurden.
+Nach dem Versand können Sie im Versand-Dashboard den Versandstatus überprüfen und auf Versandprotokolle und Berichte zugreifen, die bestätigen, dass die Nachrichten korrekt versendet wurden.
 
 [!DNL :arrow_upper_right:] [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de).
 
