@@ -7,12 +7,12 @@ role: Data Engineer
 level: Beginner
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Erstellen von Angebotsplatzierungen {#creating-offer-spaces}
+# Platzierungen erstellen{#creating-offer-spaces}
 
 Der Content des Angebotskatalogs wird in Platzierungen konfiguriert. Standardmäßig kann der Content **[!UICONTROL die folgenden Felder enthalten: Titel]**, **[!UICONTROL Ziel-URL]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und **[!UICONTROL Textinhalt]**. Die Feldsequenz wird in der Angebotsplatzierung konfiguriert.
 
@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    Diese Funktionen dienen der Erzeugung von Angebotsdarstellungen auf einer Platzierung. Dabei sind folgende Formate möglich: HTML oder Text.
 
-   **Hinweis**  - Das XML-Format ist auf eingehende Interaktionen beschränkt, die in dieser Produktversion nicht verfügbar sind. [Weitere Informationen](../start/capability-matrix.md#gs-unavailable-features)
+   **Hinweis** – Das XML-Format ist auf eingehende Interaktionen beschränkt, die in dieser Produktversion nicht verfügbar sind. [Weitere Informationen](../start/capability-matrix.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
