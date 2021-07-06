@@ -1,7 +1,7 @@
 ---
 product: Adobe Campaign
-title: Integrieren von Campaign SDKs in Ihre App
-description: Erfahren Sie, wie Sie Campaign Android- und iOS-SDKs in Ihre App integrieren.
+title: Campaign SDKs mit Ihrer Mobile App integrieren
+description: Erfahren Sie, wie Sie Campaign Android- und iOS-SDKs mit Ihrer Mobile App integrieren.
 version: v8
 feature: Push-Benachrichtigung
 role: Developer
@@ -10,23 +10,23 @@ hide: true
 hidefromtoc: true
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '1291'
-ht-degree: 42%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Integrieren von Campaign SDKs in Ihre App {#integrate-campaign-sdk}
+# Campaign SDKs mit Ihrer Mobile App integrieren {#integrate-campaign-sdk}
 
-Verwenden Sie Campaign SDKs für iOS und Android, um die Integration Ihrer Mobile App in die Adobe Campaign-Plattform zu erleichtern.
+Verwenden Sie Campaign SDKs für iOS und Android, um Ihre Mobile App in die Adobe Campaign-Plattform integrieren zu können.
 
-Unterstützte Versionen von Android und iOS sowie mit Campaign SDKs kompatible Versionen für Campaign v8 sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md#MobileSDK) aufgeführt.
+Unterstützte Versionen von Android und iOS sowie mit Campaign SDKs kompatible Versionen für Campaign v8 werden in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md#MobileSDK) aufgeführt.
 
 >[!NOTE]
 >
->Als Campaign-Administrator können Sie Campaign-SDKs von [Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) herunterladen. Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Als Campaign-Administrator können Sie Campaign SDKs über die [Software-Verteilung von Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) herunterladen. Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
-## Integrationseinstellungen deklarieren {#declaring-integration-settings}
+## Integrationsparameter deklarieren {#declaring-integration-settings}
 
 Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folgende Informationen vom funktionalen Administrator:
 
@@ -34,7 +34,7 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
 
    >[!NOTE]
    >
-   >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#creating-ios-app).
+   >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de#creating-ios-app).
 
 * **Tracking-URL**: entspricht der Adresse des Adobe-Campaign-Trackingservers.
 * **Marketing-URL**: zur Abfrage der Abonnements.
@@ -58,9 +58,9 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
 
 ## Android SDK integrieren
 
-Android SDK ist eine JAR-Bibliothek, die in JAVA geschrieben wurde. Dadurch können Android-Entwickler in Adobe Campaign integrieren: registrieren Sie ein neues Gerät, verknüpfen Sie das Gerät mit einem Benutzer, verfolgen Sie das Verhalten und vieles mehr.
+Das Android SDK ist eine in Java geschriebene JAR-Bibliothek. Damit können Android-Entwickler eine Integration mit Adobe Campaign vornehmen: ein neues Gerät registrieren, das Gerät mit einem Benutzer verknüpfen, Verhalten verfolgen und vieles mehr.
 
-In diesem Abschnitt erfahren Sie, wie Sie das Android-SDK in einer Android-Anwendung verwenden, die [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/) implementiert.
+In diesem Abschnitt erfahren Sie, wie Sie das Android-SDK in einer Android-Anwendung verwenden, indem Sie [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/) implementieren.
 
 >[!CAUTION]
 >
@@ -68,15 +68,15 @@ In diesem Abschnitt erfahren Sie, wie Sie das Android-SDK in einer Android-Anwen
 
 ### FCM konfigurieren
 
-Um die Push-Benachrichtigung unter Android zu verwenden, müssen Sie über ein FCM-Konto verfügen, Ihre Android-Anwendung so konfigurieren, dass sie Ihre Benachrichtigung erhält und Ihre Anwendung mit dem FCM-Konto verknüpft. Weitere Informationen finden Sie in der [Google-Dokumentation](https://firebase.google.com/docs/cloud-messaging/).
+Um die Push-Benachrichtigung unter Android zu verwenden, müssen Sie über ein FCM-Konto verfügen, Ihre Android-Anwendung so konfigurieren, dass sie Ihre Benachrichtigung erhält, und Ihre Anwendung mit dem FCM-Konto verknüpfen. Weitere Informationen finden Sie in der [Google-Dokumentation](https://firebase.google.com/docs/cloud-messaging/).
 
-Informationen zum Hinzufügen von Firebase zu Ihrem Android-Projekt finden Sie in der [Google-Dokumentation](https://firebase.google.com/docs/android/setup) .
+Informationen zum Hinzufügen von Firebase zu Ihrem Android-Projekt finden Sie in der [Google-Dokumentation](https://firebase.google.com/docs/android/setup).
 
-Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Dokumentation](https://firebase.google.com/docs/android/setup).
+Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/android/setup), wie Sie FCM in Ihrer Anwendung implementieren.
 
 >[!NOTE]
 >
-> * Vergessen Sie nicht, die Datei &quot;google-services.json&quot;herunterzuladen und in Ihr Projekt einzufügen.
+> * Vergessen Sie nicht, die Datei &quot;google-services.json&quot; herunterzuladen und in Ihr Projekt einzufügen.
    >
    > 
 * Der `apiKey` muss mit dem `projectKey` übereinstimmen, der in der mit dieser Android-Anwendung verknüpften Adobe Campaign Mobile App festgelegt ist.
@@ -84,9 +84,9 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
 ### Android SDK konfigurieren
 
-1. **Initialisieren des SDK**
+1. **SDK initialisieren**
 
-   Bevor Sie das Android-SDK verwenden, müssen Sie es initialisieren. Die SDK-Initialisierung kann in der Funktion `onCreate` einer Aktivität durchgeführt werden.
+   Bevor Sie das Android SDK verwenden, müssen Sie es initialisieren. Die SDK-Initialisierung kann in der `onCreate`-Funktion einer Aktivität vorgenommen werden.
 
    ```sql
    /** Called when the activity is first created. */
@@ -105,16 +105,16 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
    }
    ```
 
-   Der `IntegrationKey` muss mit dem in der mit dieser Android-App verknüpften Adobe Campaign Mobile App festgelegten Integrationsschlüssel übereinstimmen.
+   Der `IntegrationKey` muss mit dem in der Adobe Campaign Mobile App festgelegten &quot;IntegrationKey&quot; übereinstimmen, die mit dieser Android-App verknüpft ist.
 
-1. **Registrieren des Mobilgeräts auf dem Adobe Campaign-Server**
+1. **Mobilgerät im Adobe Campaign-Server registrieren**
 
    Die Registrierungsfunktion ermöglicht
 
    * das Senden der Benachrichtigungskennung oder Push-ID (deviceToken bei iOS und registrationID bei Android) an Adobe Campaign.
    * die Abfrage des Abstimmschlüssels oder userKey (z. B. E-Mail-Adresse oder Kundennummer).
 
-   Sie müssen Ihr Gerät bei Adobe Campaign registrieren, bei der App-Initialisierung oder bei Benutzeraktionen. Dies lässt sich einfach mit der `registerDevice`-Methode durchführen.
+   Sie müssen Ihr Gerät bei Adobe Campaign registrieren, entweder bei der App-Initialisierung oder einer Benutzeraktion. Dies lässt sich ganz einfach mit der `registerDevice`-Methode erreichen.
 
    ```sql
    public void onClick(View v)
@@ -184,9 +184,9 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
    }
    ```
 
-1. **Benachrichtigen Sie Campaign, wenn sich das Mobilgeräte-Token des Benutzers ändert**
+1. **Campaign benachrichtigen, wenn sich das Mobilgerät-Token des Benutzers ändert**
 
-   Wir empfehlen Ihnen, die Funktion `registerDevice` beim Aufrufen der Funktion `onTokenRefresh` zu verwenden, um Adobe Campaign über die Änderung des Mobilgeräte-Tokens des Benutzers zu informieren.
+   Wir empfehlen Ihnen, beim Aufrufen der Funktion `onTokenRefresh` die `registerDevice`-Funktion zu verwenden, um Adobe Campaign über die Änderung des Mobilgerät-Tokens des Benutzers zu informieren.
 
    Beispiel:
 
@@ -225,7 +225,7 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
 1. **Firebase Messaging Service konfigurieren**
 
-   Erweitern Sie den `FirebaseMessagingService` im Callback `onMessageReceived` , um Nachrichten zu erhalten. Es wird empfohlen, die Funktion `notifyReceive` aufzurufen, wenn der Callback `onMessageReceived` aufgerufen wird, um die Verfolgung des Benachrichtigungs-Empfangs auf dem Mobilgerät zu ermöglichen. In Adobe Campaign heißt dies **print** Benachrichtigung: Diese Funktion sollte kurz vor der Anforderung aufgerufen werden, dass das Betriebssystem die Benachrichtigung anzeigt.
+   Erweitern Sie den `FirebaseMessagingService` im Callback `onMessageReceived`, um Nachrichten zu erhalten. Es wird empfohlen, beim Aufrufen des Callback `onMessageReceived` die Funktion `notifyReceive` aufzurufen, um auf dem Mobilgerät eine Verfolgung des Benachrichtigungsempfangs zu ermöglichen. In Adobe Campaign heißt dies **print**-Benachrichtigung: Diese Funktion sollte kurz vor der Anforderung aufgerufen werden, dass das Betriebssystem die Benachrichtigung anzeigen soll.
 
    YourApplicationMessagingService.java
 
@@ -329,7 +329,7 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
 1. **Öffnungen von Datennachrichten verfolgen**
 
-   Bei Datennachrichten können Sie mithilfe der Funktion `notifyOpening` verfolgen, wann ein Benutzer zum Öffnen auf eine Benachrichtigung klickt. Die Benachrichtigungsaktivität wird erstellt, wenn der Benutzer auf die Benachrichtigung klickt (die beim Funktionsaufruf `onMessageReceived`erstellt wurde)
+   Bei Datennachrichten können Sie mithilfe der Funktion `notifyOpening` verfolgen, wann ein Benutzer zum Öffnen auf eine Benachrichtigung klickt. Die Benachrichtigungsaktivität wird erstellt, sobald der Benutzer auf die Benachrichtigung klickt (die beim Funktionsaufruf `onMessageReceived` erstellt wurde).
 
    ```sql
    public class NotificationActivity extends Activity {
@@ -362,9 +362,9 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
    }
    ```
 
-1. **Verfolgen von Öffnungen und Klicks auf Benachrichtigungsinhalte**
+1. **Öffnungen und Klicks auf Benachrichtigungsinhalte verfolgen**
 
-   Bei Benachrichtigungsinhalten muss das Öffnungs-/Klick-Tracking mit der Funktion `notifyOpening` innerhalb der App-Startaktivität erfolgen, wie unten dargestellt:
+   Bei Benachrichtigungsinhalten muss das Öffnungs-/Klicktracking wie unten dargestellt mit der Funktion `notifyOpening` innerhalb der Startaktivität der Anwendung vorgenommen werden:
 
    ```sql
    /** Called when the activity is first created. */
@@ -422,12 +422,12 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
    >[!NOTE]
    >
-   > Eine ähnliche Verwaltung ist erforderlich, wenn der Benutzer die Option `click_action` innerhalb der Targeting-Aktivität verwendet.
+   > Eine ähnliche Verwaltung ist erforderlich, wenn der Benutzer die Option `click_action` innerhalb der Zielaktivität verwendet.
 
 
 1. **Tracking für Datennachrichten empfangen**
 
-   Bei Datennachrichten wird das Tracking auf der Aufrufebene `onMessageReceived` empfangen. Die Funktion &#39;notifyReceive&#39; muss aufgerufen werden.
+   Bei Datennachrichten wird das Tracking auf der Aufrufebene `onMessageReceived` empfangen. Die Funktion &quot;notifyReceive&quot; muss aufgerufen werden.
 
    YourApplicationMessagingService.java
 
@@ -495,12 +495,12 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
 1. **Tracking für Benachrichtigungsinhalte empfangen**
 
-   Für Benachrichtigungen muss der Tracking-Empfang auf zwei Ebenen konfiguriert werden:
+   Bei Benachrichtigungsinhalten muss der Tracking-Empfang auf zwei Ebenen konfiguriert werden:
 
-   * `onMessageReceived` (Anwendung nicht im Hintergrund): Die Implementierung wurde im vorherigen Abschnitt durchgeführt.
-   * `onCreate` der Startaktivität (oder der Zielaktivität, wenn die  `click_action`Funktion verwendet wird) (Anwendung nicht im Hintergrund).
+   * `onMessageReceived` (Anwendung nicht im Hintergrund): Die Implementierung wurde im vorherigen Abschnitt
+   * `onCreate` der Startaktivität vorgenommen (oder der Zielaktivität, wenn die `click_action`-Funktion zum Einsatz kommt) (Anwendung nicht im Hintergrund).
 
-   Dies muss zum selben Zeitpunkt wie das Öffnungs-/Klick-Tracking erfolgen.
+   Dies muss zur selben Zeit wie das Öffnungs-/Klicktracking erfolgen.
 
    ```sql
    /** Called when the activity is first created. */
@@ -557,9 +557,9 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
    ```
 
 
-## iOS-SDK integrieren
+## iOS SDK integrieren
 
-1. **Registrieren des Mobilgeräts auf dem Adobe Campaign-Server**
+1. **Mobilgerät im Adobe Campaign-Server registrieren**
 
    Die Registrierungsfunktion ermöglicht
 
@@ -578,7 +578,7 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
 1. **Tracking-Funktion aktivieren**
 
-   Mithilfe der Trackingfunktion lässt sich die Aktivierung der Benachrichtigungen (Öffnungen) verfolgen.
+   Mithilfe der Tracking-Funktion lässt sich die Aktivierung der Benachrichtigungen (Öffnungen) verfolgen.
 
    ```sql
    (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)launchOptions
@@ -633,7 +633,7 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
 1. **Registrierungsstatus konfigurieren**
 
-   Mit dem Delegationsprotokoll können Sie das Ergebnis des Aufrufs **registerDevice** abrufen und feststellen, ob bei der Registrierung ein Fehler aufgetreten ist.
+   Mit dem Delegationsprotokoll können Sie das Ergebnis des Aufrufs **registerDevice** abrufen und ermitteln, ob bei der Registrierung ein Fehler aufgetreten ist.
 
    Der **registerDeviceStatus**-Prototyp ist:
 
@@ -648,7 +648,7 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
    | Status | Beschreibung | ErrorReason |
    | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
    | ACCRegisterDeviceStatusSuccess | Registrierung erfolgreich | LEER |
-   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Der Hostname des ACC-Marketingservers ist leer oder nicht definiert. | LEER |
+   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | Der Hostname des ACC-Marketing-Servers ist leer oder nicht definiert. | LEER |
    | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | Der Integrationsschlüssel ist leer oder nicht definiert. | LEER |
    | ACCRegisterDeviceStatusFailureConnectionIssue | Verbindungsproblem mit ACC | Weitere Informationen (in der Sprache des Betriebssystems) |
    | ACCRegisterDeviceStatusFailureUnknownUUID | Die bereitgestellte UUID (Integrationsschlüssel) ist unbekannt. | LEER |
@@ -795,11 +795,11 @@ Erfahren Sie, wie Sie FCM in Ihrer Anwendung implementieren, in der [Google-Doku
 
 ## Variablen {#variables}
 
-Mit den Variablen können Sie das Verhalten von Mobile Apps nach Erhalt einer Benachrichtigung definieren. Diese Variablen müssen im Mobile-App-Code und in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden.
+Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Mobile-App-Code und in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der  **Campaign Classic v7-** Dokumentation zur mobilen App:  [Konfigurationsschritte für iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} und  [Konfigurationsschritte für Android](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de){target=&quot;_blank&quot;}.
+[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der **Dokumentation zu Campaign Classic v7** zur Mobile App: [Konfigurationsschritte für iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} und [Konfigurationsschritte für Android](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de){target=&quot;_blank&quot;}.
 
-Nachstehend finden Sie ein Beispiel für einen Code, mit dem eine Mobile App hinzugefügte Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
+Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
 
 * **Für Android**:
 
