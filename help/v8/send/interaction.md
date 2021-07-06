@@ -7,8 +7,8 @@ role: Data Engineer
 level: Beginner
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,10 +31,10 @@ Stellen Sie vor dem Start als Campaign-**Administrator** sicher, dass Sie die fo
 1. Erstellen Sie Benutzerprofile. [Weitere Informationen](interaction-operators.md)
 1. (optional) Erstellen Sie für jede Zielgruppendimension eine Angebotsumgebung. [Weitere Informationen](interaction-env.md)
 1. Erstellen Sie Typologieregeln für jede Umgebung. [Weitere Informationen](interaction-offer.md#offer-presentation)
-1. Erstellen Sie Angebotsplatzierungen für jede Umgebung und konfigurieren Sie die Rendering-Funktionen. [Erfahren Sie ](interaction-offer-spaces.md)
-mehr: Wenn die Platzierung im Identifizierungsmodus von einem einheitlichen Kanal definiert wird, müssen Sie die erweiterten Parameter für diese Platzierung angeben.
+1. Erstellen Sie Angebotsplatzierungen für jede Umgebung und konfigurieren Sie die Rendering-Funktionen. [Mehr dazu](interaction-offer-spaces.md)
+Wenn eine Platzierung in einem Einzelmodus-Kanal als identifiziert definiert wurde, müssen ihre erweiterten Parameter angegeben werden.
 
-### Erstellen und veröffentlichen Sie den Angebotskatalog {#managing-the-offer-catalog-}
+### Erstellen und Veröffentlichen des Angebotskatalogs {#managing-the-offer-catalog-}
 
 Als **Angebotsverantwortlicher** müssen Sie die folgenden Aufgaben ausführen:
 
