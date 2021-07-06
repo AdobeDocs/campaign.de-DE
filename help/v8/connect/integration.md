@@ -1,6 +1,6 @@
 ---
 product: Adobe Campaign
-title: 'Verbinden von Campaign mit Ihren Lösungen '
+title: Verbinden von Campaign mit Ihren Lösungen
 description: Erfahren Sie, wie Sie Campaign mit Ihren Lösungen verbinden.
 feature: Übersicht
 role: Data Engineer
@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,10 +28,10 @@ Modernisieren Sie Ihre Implementierung und nutzen Sie alle Adobe Experience Clou
 Campaign v8 kann eine Verbindung herstellen mit:
 
 
-* [Echtzeit-Kundendatenplattform von Adobe Experience Cloud](../connect/ac-rtcdp.md)
+* [Real-Time CDP von Adobe Experience Cloud](../connect/ac-rtcdp.md)
 * [Adobe Journey Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=de).
 
-   Siehe das End-to-End-Anwendungsbeispiel [hier](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=de).
+   Siehe das Anwendungsbeispiel [hier](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=de).
 
 * [Adobe Analytics](../connect/ac-aa.md)
 * [Adobe Experience Manager](../connect/ac-aem.md)
