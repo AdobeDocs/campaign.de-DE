@@ -4,18 +4,18 @@ title: Neues Schema in Campaign erstellen
 description: Erfahren Sie, wie Sie in Campaign ein neues Schema erstellen
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Erstellen eines neuen Schemas{#create-new-schema}
 
-Um Schemata zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie in der Client-Konsole von Adobe Campaign auf den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemas]**.
+Um Schemata zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie in der Client-Konsole von Adobe Campaign auf den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]**.
 
 >[!NOTE]
 >
->Integrierte Datenschemata können nur von einem Administrator Ihrer Adobe Campaign-Konsole gelöscht werden.
+>Native Schemata können nur von einem Administrator Ihrer Adobe Campaign-Konsole gelöscht werden.
 
 ![](assets/schema_navtree.png)
 
