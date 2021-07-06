@@ -3,13 +3,13 @@ product: Adobe Campaign
 title: Mit Campaign-Schemata arbeiten
 description: Erste Schritte mit Schemata
 source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
-workflow-type: ht
-source-wordcount: '1254'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Arbeiten mit Schemata {#gs-ac-schemas}
+# Arbeiten mit Schemata{#gs-ac-schemas}
 
 Die physische und logische Struktur der im Programm übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens **Schema**.
 
@@ -79,7 +79,7 @@ Mit einem Namespace können Sie eine Reihe von Schemas nach Interessensgebieten 
 >
 >Kennungen dürfen nicht mit numerischen Zeichen beginnen.
 
-## Reservierte Namespaces  {#reserved-namespaces}
+## Reservierte Namespaces {#reserved-namespaces}
 
 Bestimmte Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb von Adobe Campaign erforderlich sind. Der folgende Namespace **darf keinesfalls** zur Identifizierung eines neuen Schemas verwendet werden, unabhängig von der Kombination von Groß-/Kleinbuchstaben:
 
@@ -95,7 +95,7 @@ Der Identifizierungsschlüssel eines Stylesheets ist eine Zeichenfolge, die den 
 
 ## Campaign-Schemata erstellen und erweitern {#create-or-extend-schemas}
 
-Um einem der Standard-Datenschemata in Campaign ein Feld oder ein anderes Schema hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern.
+Um einem der Standard-Datenschemata in Campaign ein Feld oder ein anderes Element hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern.
 
 [!DNL :bulb:] Weiterführende Informationen hierzu finden Sie unter [Schema erweitern](extend-schema.md).
 
