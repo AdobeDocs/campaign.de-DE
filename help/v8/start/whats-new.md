@@ -1,21 +1,21 @@
 ---
 product: Adobe Campaign
 title: Neue Funktionen in Campaign v8
-description: Wichtige Funktionen in Campaign v8
+description: Wichtige Funktionen in Campaign v8 kennenlernen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Neue Funktionen in Adobe Campaign v8 {#ac-gs-what-is-new}
+# Neue Funktionen in Adobe Campaign v8  {#ac-gs-what-is-new}
 
-Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Zustellbarkeit und Überwachung. Durch die Nutzung von [[!DNL Snowflake]](https://www.snowflake.com/), einer Cloud-Datenbanktechnologie, verbessert Adobe Campaign seine Skalierbarkeit und Geschwindigkeit drastisch. So kann eine größere Anzahl von Kundenprofilen verwaltet werden und es werden deutlich höhere Versandraten und mehr Transaktionen pro Stunde erreicht.
+Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Zustellbarkeit und Monitoring. Durch die Nutzung von [[!DNL Snowflake]](https://www.snowflake.com/), einer Cloud-Datenbanktechnologie, verbessert Adobe Campaign seine Skalierbarkeit und Geschwindigkeit drastisch. So kann eine größere Anzahl von Kundenprofilen verwaltet werden und es werden deutlich höhere Versandraten und mehr Transaktionen pro Stunde erreicht.
 
 Die wichtigsten Funktionen von Creative Designer ermöglichen Folgendes:
 
@@ -45,7 +45,7 @@ Campaign v8 bietet eine End-to-End-Skalierung bei jedem Schritt des Prozesses, v
 
 ## Vereinfachung und Leistungssteigerung
 
-Campaign v8 bietet das Konzept **Vollständiger Federated Data Access** (FFDA): Alle Daten befinden sich jetzt an Remote-Standorten in der Cloud-Datenbank.
+Campaign v8 bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun remote in der Cloud-Datenbank.
 
 Mit dieser neuen Architektur vereinfacht Campaign v8 die Datenverwaltung: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen.
 
@@ -55,7 +55,7 @@ Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung, um das Leistun
 
 ## Integriertes Ökosystem
 
-Sie können Campaign mit einer Reihe leistungsstarker Adobe-Lösungen integrieren, z. B.: Adobe Analytics, Adobe Journey Orchestration, Echtzeit-Kundendatenplattform und mehr.
+Sie können Campaign mit einer Reihe von leistungsstarken Adobe-Lösungen integrieren, wie z. B. Adobe Analytics, Adobe Journey Orchestration, Real-Time CDP und mehr.
 
 Mit Journey-KI können Sie auch eine prädiktive Sendezeitoptimierung und ein prädiktives Interaktivitäts-Scoring konfigurieren und Öffnungsraten, Klicks und Umsätze steigern.
 
