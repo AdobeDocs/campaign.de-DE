@@ -7,30 +7,30 @@ role: Data Engineer
 level: Beginner
 source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Neue Campaign-APIs{#gs-new-api}
 
-Campaign v8 verfügt über zwei neue APIs zum Verwalten von Daten zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank. Voraussetzungen für ihre Verwendung sind die Aktivierung des Staging-Mechanismus im Schema. [Mehr dazu](staging.md)
+Campaign v8 beinhaltet zwei neue APIs zum Verwalten von Daten zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank. Voraussetzungen für ihre Verwendung ist die Aktivierung des Staging-Mechanismus im Schema. [Weitere Informationen](staging.md)
 
 * Aufnahme-API: **xtk.session.ingest**
 
-   Diese API ist nur für die Dateneingabe vorgesehen. [Mehr dazu](#data-insert-api)
+   Diese API ist nur für die Dateneinfügung geeignet. [Weitere Informationen](#data-insert-api)
 
-* Data Update/Delete API: **xtk.session.ingestExt**
+* Datenaktualisierungs-/Löschungs-API: **xtk.session.ingestExt**
 
-   Mit dieser API können Daten aktualisiert oder gelöscht werden. [Mehr dazu](#data-update-api)
+   Mit dieser API können Daten aktualisiert oder gelöscht werden. [Weitere Informationen](#data-update-api)
 
-Ein spezieller integrierter Workflow synchronisiert die Daten in der Cloud-Datenbank.
+Ein dedizierter integrierter Workflow synchronisiert die Daten in der Cloud-Datenbank.
 
-## Daten einfügen{#data-insert-api}
+## Einfügen von Daten {#data-insert-api}
 
-Die API **xtk.session.ingest** ist nur für die Dateneingabe vorgesehen. Keine Aktualisierung/Löschung.
+Die API **xtk.session.ingest** ist nur für die Dateneinfügung vorgesehen. Keine Aktualisierung/Löschung.
 
-### Ohne Abstimmung einfügen
+### Einfügen ohne Abstimmung
 
 **In einem Workflow**
 
@@ -46,12 +46,12 @@ strUuid = xtk.session.Ingest(xmlStagingSampleTable);
 logInfo(strUuid);
 ```
 
-Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß gefüttert.
+Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befüllt.
 
-**Aus einem SOAP-Aufruf**
+**Von einem SOAP-Aufruf**
 
-1. Abrufen des Authentifizierungstokens.
-1. Trigger der API. Die Payload lautet:
+1. Fordern Sie den Authentifizierungs-Token an.
+1. Lösen Sie die API aus. Die Payload ist:
 
    ```
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
@@ -83,7 +83,7 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß gefüt
    </SOAP-ENV:Envelope>
    ```
 
-Daher wird die Staging-Tabelle erwartungsgemäß gefüttert.
+Als Ergebnis wird die Staging-Tabelle erwartungsgemäß befüllt.
 
 ![](assets/no-reconciliation.png)
 
@@ -103,15 +103,15 @@ strUuid = xtk.session.Ingest(xmlStagingSampleTable);
 logInfo(strUuid);
 ```
 
-Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß gefüttert.
+Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befüllt.
 
 ![](assets/with-reconciliation.png)
 
 
-**Aus einem SOAP-Aufruf**
+**Von einem SOAP-Aufruf**
 
-1. Abrufen des Authentifizierungstokens.
-1. Trigger der API. Die Payload lautet:
+1. Fordern Sie den Authentifizierungs-Token an.
+1. Lösen Sie die API aus. Die Payload ist:
 
    ```
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
@@ -143,11 +143,11 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß gefüt
    </SOAP-ENV:Envelope>
    ```
 
-Daher wird die Staging-Tabelle erwartungsgemäß gefüttert.
+Als Ergebnis wird die Staging-Tabelle erwartungsgemäß befüllt.
 
-## Daten aktualisieren oder löschen{#data-update-api}
+## Aktualisieren oder Löschen von Daten {#data-update-api}
 
-Die **xtk.session.IngestExt**-API wird für die Aktualisierung/Löschung von Daten optimiert. Verwenden Sie **xtk.session.ingest** nur zum Einfügen. &quot;Einfügen&quot;funktioniert unabhängig davon, ob der Datensatz-Schlüssel nicht in der Staging-Tabelle enthalten ist.
+Die API **xtk.session.IngestExt** wurde für die Aktualisierung/Löschung von Daten optimiert. Zum Einfügen verwenden Sie **xtk.session.ingest**. Das Einfügen funktioniert auch dann, wenn der Datensatz-Schlüssel nicht in der Staging-Tabelle enthalten ist.
 
 ### Einfügen/Aktualisieren
 
@@ -164,15 +164,15 @@ var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
 xtk.session.IngestExt(xmlStagingRecipient);
 ```
 
-Sobald der Workflow ausgeführt wird, wird die Staging-Tabelle erwartungsgemäß aktualisiert.
+Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß aktualisiert.
 
 ![](assets/updated-data.png)
 
-**Aus einem SOAP-Aufruf**
+**Von einem SOAP-Aufruf**
 
 
-1. Abrufen des Authentifizierungstokens.
-1. Trigger der API. Die Payload lautet:
+1. Fordern Sie den Authentifizierungs-Token an.
+1. Lösen Sie die API aus. Die Payload ist:
 
    ```
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
@@ -202,13 +202,13 @@ Sobald der Workflow ausgeführt wird, wird die Staging-Tabelle erwartungsgemäß
    </SOAP-ENV:Envelope>
    ```
 
-Daher wird die Staging-Tabelle erwartungsgemäß aktualisiert.
+Als Ergebnis wird die Staging-Tabelle erwartungsgemäß aktualisiert.
 
 ## Abonnementverwaltung {#sub-apis}
 
 Die Abonnementverwaltung in Campaign wird auf [dieser Seite](../start/subscriptions.md) beschrieben.
 
-Die Eingabe von An- und Abmeldedaten beruht auf dem [Staging-Mechanismus](staging.md) in der lokalen Campaign-Datenbank. Abonnenteninformationen werden temporär in Staging-Tabellen in der lokalen Datenbank gespeichert. Der Synchronisations-Workflow sendet diese Daten aus der lokalen Datenbank an die Cloud-Datenbank. Daher sind die An- und Abmeldevorgänge **asynchron**. Opt-in- und Opt-out-Anfragen werden stündlich über einen bestimmten technischen Workflow verarbeitet. [Mehr dazu](../config/replication.md#tech-wf)
+Die Eingabe von An- und Abmeldedaten beruht auf dem [Staging-Mechanismus](staging.md) in der lokalen Campaign-Datenbank. Abonnenteninformationen werden temporär in Staging-Tabellen in der lokalen Datenbank gespeichert. Der Synchronisations-Workflow sendet diese Daten aus der lokalen Datenbank an die Cloud-Datenbank. Aus diesem Grund sind die An- und Abmeldevorgänge **asynchron**. Opt-in- und Opt-out-Anfragen werden stündlich über einen bestimmten technischen Workflow verarbeitet. [Weitere Informationen](../config/replication.md#tech-wf)
 
 
 **Verwandte Themen**
