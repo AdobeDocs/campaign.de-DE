@@ -8,8 +8,8 @@ level: Beginner
 hidefromtoc: true
 source-git-commit: cf00895f988514fc029d0060d7404bdef0c8b30e
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,6 +26,6 @@ Für Adobe Campaign v8 bestehen die folgenden Einschränkungen:
 * Einige nicht verfügbare oder entfernte Funktionen sind weiterhin in der Benutzeroberfläche sichtbar.
 * Die Mechanismen für die Anmeldung (Opt-in) und Abmeldung (Opt-out) sowie die Mobile-Registrierung sind asynchrone Prozesse. Anfragen werden stündlich über einen speziellen technischen Workflow verarbeitet. [Weitere Informationen](../config/replication.md#tech-wf)
 * Duplikate müssen von Endbenutzern manuell korrigiert werden. [Weitere Informationen](../dev/keys.md)
-* Adobe Campaign v8 unterstützt keinen erweiterten Durchsatz in API- und Webanwendungen. Wenden Sie sich bei besonderen Bedürfnissen an die Adobe, um Beratung zu erhalten.
+* Adobe Campaign v8 bietet keine Unterstützung für erweiterten Durchsatz in API- und Web-Anwendungen. Wenden Sie sich bei besonderen Anforderungen an Adobe, um Beratung zu erhalten.
 
 
