@@ -9,8 +9,8 @@ hidefromtoc: true
 hide: true
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,8 +44,8 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 
 Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Mehr dazu:
 * [Sub-Domain-Branding](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=de){target=&quot;_blank&quot;}
-* [Einrichten einer neuen Subdomain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de){target=&quot;_blank&quot;}
-* [Überwachen von SSL-Zertifikaten](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=de){target=&quot;_blank&quot;}
+* [Neue Subdomain einrichten](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de){target=&quot;_blank&quot;}
+* [SSL-Zertifikate überwachen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=de){target=&quot;_blank&quot;}
 
 ## Instanzeneinstellungen
 
@@ -55,4 +55,4 @@ Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign-Instanzen im Control Pane
 * [Details der Instanz](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de){target=&quot;_blank&quot;}
 * [GPG-Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] Entdecken Sie alle Funktionen des Control Panels in  [dieser Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] Lernen Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target=&quot;_blank&quot;} alle Control Panel-Funktionen kennen.
