@@ -3,9 +3,9 @@ product: Adobe Campaign
 title: Formulare in Campaign
 description: Erfahren Sie, wie Sie Formulare anpassen
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
-source-wordcount: '2577'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -205,7 +205,7 @@ Fügen Sie das Attribut **style=&quot;down&quot;** hinzu, um die vertikale Ausri
 
 `<container style="down" type="notebook">  ... </container>`
 
-### Symbole (iconbox) hinzufügen {#icon-list}
+### Symbole (iconbox) hinzufügen  {#icon-list}
 
 Verwenden Sie diesen Container, um eine vertikale Symbolleiste anzuzeigen, mit der Sie die anzuzeigenden Seiten auswählen können.
 
@@ -547,7 +547,7 @@ Die zu bearbeitenden Eingabefelder sind in einem **`<container>`** gruppiert, da
 
 ## Ausdrucksfeld hinzufügen {#expression-field}
 
-Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck aus. Das **`<input>`**-Tag wird mit dem Attribut **xpath** verwendet, um den Pfad des zu aktualisierenden Felds und ein Attribut **expr** mit dem Ausdruck zur Aktualisierung einzugeben.
+Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck aus. Das **`<input>`**-Tag wird mit dem Attribut **xpath** verwendet, um den Pfad des zu aktualisierenden Felds und das Attribut **expr**, das den Aktualisierungsausdruck enthält, einzugeben.
 
 ```
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
