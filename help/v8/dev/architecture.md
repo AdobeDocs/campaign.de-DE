@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
 title: Erste Schritte mit der Campaign-Architektur
-description: Grundlagen zu Umgebungen und Bereitstellung
+description: Grundlagen zu Umgebungen und zur Bereitstellung
 feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Sie können Packages von einer Umgebung in eine andere exportieren und importier
 
 [!DNL :arrow_upper_right:] Weitere Informationen über Packages in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=de)
 
-## Mid-Sourcing-Implementierung{#mid-sourcing-deployment}
+## Mid-Sourcing-Freigabe{#mid-sourcing-deployment}
 
 Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem folgenden Schema:
 
@@ -48,7 +48,7 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem 
 
 ## Message Center-Architektur{#transac-msg-archi}
 
-Transaktionsnachricht (Message Center) ist das Campaign-Modul, das zum Verwalten von Trigger-Nachrichten entwickelt wurde.
+Das Campaign-Modul &quot;Transaktionsnachricht (Message Center)&quot; wurde zum Verwalten von Trigger-Nachrichten entwickelt.
 
 [!DNL :bulb:] In [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Transaktionsnachrichten senden können.
 
@@ -72,11 +72,11 @@ In der hier angewendeten Architektur sind Ausführungszelle und Kontrollinstanz 
 
 Um diese Funktionen zu nutzen, können Benutzer von Adobe Campaign in der Kontrollinstanz Vorlagen für Transaktionsnachrichten erstellen, eine Nachrichtenvorschau mithilfe einer Testadresse erzeugen, Berichte anzeigen und Ausführungsinstanzen überwachen.
 
-* Einzelausführungsinstanz
-Bei der Interaktion mit einer von der Adobe gehosteten Ausführungsinstanz kann ein externes System zunächst ein Sitzungstoken abrufen (das standardmäßig nach 24 Stunden abläuft), indem ein API-Aufruf an die Methode zur Sitzungsanmeldung unter Verwendung einer angegebenen Kontoanmeldung und eines Kennworts gesendet wird.
+* Einzelne Ausführungsinstanz
+Bei der Interaktion mit einer gehosteten Message Center-Ausführungsinstanz kann ein externes System zunächst ein Sitzungs-Token abrufen (das standardmäßig nach 24 Stunden abläuft), indem ein API-Aufruf an die Sitzungs-Anmeldemethode unter Verwendung eines bereitgestellten Kontoanmeldenamens und eines Passworts erfolgt.
 Dann kann die externe Anwendung mit dem von der Ausführungsinstanz als Antwort auf den obigen Aufruf bereitgestellten Sitzungs-Token SOAP-API-Aufrufe (rtEvents oder batchEvents) ausführen, um Nachrichten zu senden, ohne dass in jedem SOAP-Aufruf der Kontoanmeldename und das Passwort enthalten sein müssen.
 
 * Mehrere Ausführungsinstanzen
 In einer mehrzelligen Ausführungsarchitektur mit mehreren Ausführungsinstanzen hinter einem Load-Balancer durchläuft die vom externen Programm aufgerufene Anmeldemethode den Load-Balancer: Aus diesem Grund kann keine Token-basierte Authentifizierung verwendet werden. Eine Benutzer-/Passwortbasierte Authentifizierung ist erforderlich.
 
-[!DNL :arrow_upper_right:] Weitere Informationen über Transaktionsnachrichten-Ereignisse in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)
+[!DNL :arrow_upper_right:] Weitere Informationen über Transaktionsnachrichten-Ereignisse in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=de#about-transactional-messaging-datamodel)
