@@ -4,8 +4,8 @@ title: Best Practices für Datenmodelle
 description: Best Practices für die Erweiterung von Campaign-Datenmodellen
 source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '2688'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -112,7 +112,7 @@ Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur 
 
 >[!CAUTION]
 >
->Eine Autouuid sollten nicht als Referenz in Workflows verwendet werden.
+>Eine Autouuid sollte nicht als Referenz in Workflows verwendet werden.
 
 
 ## Relationen und Kardinalität {#links-and-cardinality}
