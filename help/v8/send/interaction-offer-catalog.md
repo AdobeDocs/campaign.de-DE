@@ -6,9 +6,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: ht
-source-wordcount: '412'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Ein Angebotskatalog ist einer bereits existierenden Umgebung zugeordnet. Angebot
 
 Vor der Angebotserstellung ist die übergeordnete [Umgebung](interaction-env.md) zu konfigurieren. In der Umgebung werden die für alle enthaltenen, nach Kategorie geordneten Angebote identischen Merkmale (Eignung, Zielgruppe, Unterbreitungsregeln) bestimmt. Sie enthält außerdem die Liste der Platzierungen.
 
-## Erstellen von Angebotskategorien {#creating-offer-categories}
+## Angebotskategorien erstellen{#creating-offer-categories}
 
 Das Angebot ist in Kategorien/Unterkategorien unterteilt. Kategorien werden in der **[!UICONTROL Design]**-Umgebung erstellt und automatisch in der **[!UICONTROL Live]**-Umgebung bereitgestellt, sobald die darin enthaltenen Angebote validiert wurden. Die **[!UICONTROL Design]**-Umgebung enthält eine Standardkategorie für den Empfang aller Angebote. Unterkategorien können erstellt werden, um den Katalogangeboten eine Hierarchie hinzuzufügen.
 
