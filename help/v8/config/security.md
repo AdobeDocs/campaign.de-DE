@@ -2,10 +2,10 @@
 product: Adobe Campaign
 title: Best Practices für die Campaign-Sicherheit
 description: Erste Schritte mit Best Practices für die Campaign-Sicherheit
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '513'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 * Stellen Sie sicher, dass der Zugriff auf verschlüsselte Passwörter beschränkt ist.
 * Schützen Sie Seiten, die möglicherweise personenbezogene Daten enthalten (z. B. Mirror-Seiten, Web-Anwendungen usw.).
 
-[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender unterstützt Sie Adobe dabei, diese Konfigurationen in Ihrer Umgebung zu implementieren.
+?? Als Managed Cloud Services-Anwender unterstützt Sie Adobe dabei, diese Konfigurationen in Ihrer Umgebung zu implementieren.
 
 ## Personalisierung
 
@@ -107,7 +107,7 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements
 * Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
 * Vermeiden Sie möglichst die Vergabe der Administrator-Funktion und achten Sie darauf, dass sich nicht zu viele Benutzer in der Administrator-Gruppe befinden.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=de#webapp-operator){target=&quot;_blank&quot;}
+↗️ Weitere Informationen finden Sie in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=de#webapp-operator){target=&quot;_blank&quot;}
 
 ## Leitlinien zur Codierung
 
@@ -119,4 +119,4 @@ Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) so
 
 * **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der Dokumentation zu  [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target=&quot;_blank&quot;}
+↗️ Weitere Informationen finden Sie in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target=&quot;_blank&quot;}
