@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1045'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Diese Integration hilft Ihnen wie folgt beim Implementieren von Anwendungsfälle
 >[!NOTE]
 >Im Rahmen der Integration werden nur statische Bilder unterstützt. Die anderen Inhaltstypen können nicht personalisiert werden.
 
-[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Experience Cloud Triggers mit Campaign zu implementieren.
+💬 Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Experience Cloud Triggers mit Campaign zu implementieren.
 
 Mit Adobe Target können folgende Datentypen zum Einsatz kommen:
 
