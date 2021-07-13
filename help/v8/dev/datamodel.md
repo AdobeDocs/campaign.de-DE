@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '648'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschrei
 
 * **Empfängertabelle**: Das Datenmodell basiert auf einer Haupttabelle, die standardmäßig die Empfängertabelle (nmsRecipient) ist. Diese Tabelle ermöglicht eine Speicherung aller Marketing-Profile.
 
-   [!DNL :bulb:] Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](#ootb-profiles).
+   ?? Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](#ootb-profiles).
 
 * **Versandtabelle**: Das Datenmodell enthält auch einen Teil, der dem Speichern aller Marketing-Aktivitäten dient. Normalerweise handelt es sich dabei um die Versandtabelle (NmsDelivery). Jeder Datensatz in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Er enthält alle erforderlichen Parameter zum Ausführen von Sendungen wie Zielgruppe, Inhalt usw.
 
@@ -44,7 +44,7 @@ Sie können die standardmäßige Empfängertabelle mit den vordefinierten Felder
 * [Erweitern einer vorhandenen Tabelle](extend-schema.md) mit neuen Feldern. Sie können der Empfängertabelle beispielsweise ein neues Feld &quot;Treue&quot; hinzufügen.
 * [Erstellen einer neuen Tabelle](create-schema.md), z. B. einer Tabelle &quot;Einkauf&quot;, in der alle von den einzelnen Profilen der Datenbank getätigten Käufe aufgelistet sind, und Verknüpfen mit der Empfängertabelle.
 
-[!DNL :bulb:] Lernen Sie in [diesem Abschnitt](datamodel-best-practices.md) Best Practices zum Arbeiten mit dem Campaign-Datenmodell kennen.
+?? Lernen Sie in [diesem Abschnitt](datamodel-best-practices.md) Best Practices zum Arbeiten mit dem Campaign-Datenmodell kennen.
 
 ## Native Profiltabelle {#ootb-profiles}
 
@@ -59,9 +59,9 @@ Die Verwendung der standardmäßigen Empfängertabelle bietet folgende Vorteile:
 
 Es ist möglich, die Empfängertabelle zu erweitern. Die Anzahl der Empfänger oder Relationen in der Tabelle lässt sich aber nicht verringern.
 
-[!DNL :bulb:] Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie in [diesem Abschnitt](extend-schema.md).
+?? Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie in [diesem Abschnitt](extend-schema.md).
 
-[!DNL :arrow_upper_right:] Beispiele für integrierte Empfängertabellen-Erweiterungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table).
+↗️ Entdecken Sie Beispiele integrierter Empfängertabellenerweiterungen in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table)
 
 Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre geschäftlichen oder funktionalen Anforderungen zugeschnitten ist. Diese Methode weist Einschränkungen auf und wird in [diesem Abschnitt](custom-recipient.md) beschrieben.
 
@@ -69,9 +69,9 @@ Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre gesch
 
 Beachten Sie für ein genaueres Verständnis der Tabellenverwaltung in Campaign v8, dass Tabellen zwischen Campaign und der zugehörigen Snowflake-Cloud-Datenbank repliziert werden.
 
-[!DNL :bulb:] Weitere Informationen zu Replikationsstrategien und -verfahren finden Sie in [diesem Abschnitt](../config/replication.md).
+?? Weitere Informationen zu Replikationsstrategien und -verfahren finden Sie in [diesem Abschnitt](../config/replication.md).
 
-**Verwandte Themen**
+**Verwandte Themen** 
 
-[!DNL :bulb:]: Erfahren Sie in [diesem Abschnitt](../start/import.md), wie Sie Profile importieren.
-[!DNL :bulb:]Weitere Informationen zu Campaign-Audiences finden Sie in [diesem Abschnitt](../start/audiences.md).
+?? Informationen zum Importieren von Profilen finden Sie in [diesem Abschnitt](../start/import.md)
+?? Weitere Informationen zu Campaign-Zielgruppen finden Sie in [diesem Abschnitt](../start/audiences.md) .
