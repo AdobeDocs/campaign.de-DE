@@ -7,10 +7,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: true
 hide: true
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 97%
 
 ---
 
@@ -55,4 +55,4 @@ Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign-Instanzen im Control Pane
 * [Details der Instanz](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de){target=&quot;_blank&quot;}
 * [GPG-Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] Lernen Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target=&quot;_blank&quot;} alle Control Panel-Funktionen kennen.
+↗️ Entdecken Sie alle Control Panel-Funktionen in [dieser Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target=&quot;_blank&quot;}
