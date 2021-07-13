@@ -2,10 +2,10 @@
 product: Adobe Campaign
 title: Formulare in Campaign
 description: Erfahren Sie, wie Sie Formulare anpassen
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2577'
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
 
-[!DNL :arrow_upper_right:] In der [Dokumentation zu Campaign Classic v7](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/control-Button.html) sind alle Formularattribute aufgeführt.
+↗️ In der [Dokumentation zu Campaign Classic v7](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/control-Button.html) sind alle Formularattribute aufgeführt.
 
 ## Formatierung {#formatting}
 
