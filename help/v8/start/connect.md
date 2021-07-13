@@ -6,10 +6,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 13f3122a830c723fa940290689c8e3a1baa0443a
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 87%
+source-wordcount: '709'
+ht-degree: 85%
 
 ---
 
@@ -99,11 +99,9 @@ Weitere Informationen zur Adobe IMS finden Sie auf [dieser Seite](https://helpx.
 
 ## Web-Zugriff{#web-access}
 
-Einige Bereiche des Programms können über einen einfachen Webbrowser mittels HTML-Benutzeroberfläche aufgerufen werden, darunter Kampagnen-Dashboard, Cube-Reporting und Instanz-Monitoring.
+Bestimmte Teile der Anwendung können über einen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden: Reporting, Versandvalidierung, Instanzüberwachung und mehr.
 
-↗️ Weitere Informationen zum Webzugriff finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de#console-and-web-access){target=&quot;_blank&quot;}
-
-Der Web-Zugriff bietet eine der Client-Konsole ähnliche Bedieneroberfläche mit eingeschränkten Funktionalitäten.
+Der Webzugriff bietet eine der Clientkonsole ähnliche Bedieneroberfläche mit eingeschränkten Funktionalitäten.
 
 So wird z. B. für einen Benutzer eine Kampagne in der Client-Konsole mit folgenden Optionen angezeigt:
 
@@ -115,4 +113,4 @@ Beim Web-Zugriff ermöglichen die Optionen vor allem die Anzeige von:
 
 Der Web-Zugriff wird auch für den Validierungsprozess verwendet: Benutzer können auf die E-Mail mit der Validierungsanfrage klicken und über ihren Webbrowser eine Verbindung zu Campaign herstellen, um Versandinhalte oder -budgets zu validieren oder abzulehnen.
 
-↗️ Informationen zum Einrichten und Verwalten von Genehmigungen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=de#orchestrating-campaigns){target=&quot;_blank&quot;}
+Um über das Web auf Ihre Campaign-Instanz zuzugreifen, lautet die URL:  `https://<your adobe campaign server>:<port number>/view/home`.
