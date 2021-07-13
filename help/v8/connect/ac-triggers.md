@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '113'
+ht-degree: 100%
 
 ---
 
@@ -19,4 +19,4 @@ Sie können Experience Cloud Triggers verwenden, um Daten mithilfe der Pipeline 
 
 Weitere Informationen zu Adobe Campaign und Experience Cloud Triggers finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=de).
 
-[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Experience Cloud Triggers mit Campaign zu implementieren.
+💬  Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Experience Cloud Triggers mit Campaign zu implementieren.
