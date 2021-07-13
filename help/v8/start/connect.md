@@ -6,9 +6,9 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 13f3122a830c723fa940290689c8e3a1baa0443a
+source-git-commit: 136209f05cf302a1e73a2aa18c051260edeb0762
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '713'
 ht-degree: 85%
 
 ---
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
 1. Bestätigen Sie die Aktion mit der Schaltfläche **[!UICONTROL OK]**.
 
-1. Sie können sich dann bei Campaign anmelden.
+1. Sie können sich dann mit [Ihrer Adobe ID](#connect-ims) bei Campaign anmelden.
 
    ![](assets/adobeID.png)
 
