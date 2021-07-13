@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '658'
+ht-degree: 94%
 
 ---
 
@@ -23,13 +23,13 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihr Produkterlebnis zu verbessern. Deshalb erachten wir es für wichtig, dass Sie die aktuelle Version von Adobe Campaign verwenden.
 
-   [!DNL :speech_balloon:] Als Managed Cloud Services-Anwender wird Ihre Instanz mit jeder neuen Version von Adobe aktualisiert.
+   ?? Als Managed Cloud Services-Anwender wird Ihre Instanz mit jeder neuen Version von Adobe aktualisiert.
 
 1. **Wie kann ich eine Verbindung zu Campaign v8 herstellen?**
 
    Sie müssen die Campaign-Client-Konsole herunterladen und installieren, um eine Verbindung zu Adobe Campaign herzustellen.
 
-   [!DNL :bulb:] [Hier erfahren Sie mehr darüber](connect.md).
+   ?? [Hier erfahren Sie mehr darüber](connect.md).
 
 1. **Kann Campaign v8 in einer On-Premise- oder Hybridumgebung installiert werden?**
 
@@ -39,9 +39,9 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Die Zustellbarkeit von E-Mails, ein wichtiger Faktor für den Erfolg jedes Marketing-Programms, unterliegt ständig wechselnden Kriterien und Regeln. Die effektive Navigation in dieser digitalen Welt erfordert eine regelmäßige Abstimmung Ihrer E-Mail-Strategie unter Berücksichtigung der wichtigsten Trends mit Blick auf die Zustellbarkeit, um Ihre Audiences optimal zu erreichen.
 
-   [!DNL :arrow_upper_right:] Lesen Sie dieses Handbuch, um mehr über [Best Practices für den Versand](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de){target=&quot;_blank&quot;} zu erfahren.
+   ↗️ Informationen zu [Best Practices für die Bereitstellung](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de){target=&quot;_blank&quot;} finden Sie in diesem Handbuch
 
-   [!DNL :arrow_upper_right:] Wie Sie eine hohe Zustellbarkeit in Campaign gewährleisten, erfahren Sie [in diesem Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de){target=&quot;_blank&quot;}.
+   ↗️ Informationen zur Implementierung der Zustellbarkeit in Campaign [in diesem Handbuch](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de){target=&quot;_blank&quot;}
 
 1. **Wie weiß ich, dass mein Versand fehlerfrei durchgeführt wird?**
 
@@ -51,7 +51,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
 1. **Kann ich die Ausführung von Workflows überwachen?**
 
-   [!DNL :arrow_upper_right:] Wie Sie die Ausführung von Campaign-Workflows überwachen können, erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=de){target=&quot;_blank&quot;}.
+   ↗️ Informationen zur Überwachung der Ausführung von Campaign-Workflows [in der Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=de){target=&quot;_blank&quot;}
 
 1. **Mit welchen Systemen und Komponenten ist Campaign v8 kompatibel?**
 
@@ -61,7 +61,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Sie können Ihre Domain in Subdomains unterteilen, um Ihre Marken oder unterschiedlichen Textsorten (Transaktionsnachrichten, Marketing-Informationen usw.) voreinander zu trennen.
 
-   [!DNL :speech_balloon:] Als Managed Cloud Services-Anwender [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Ihre Subdomains an Adobe zu übertragen.
+   ?? Als Managed Cloud Services-Anwender [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Ihre Subdomains an Adobe zu übertragen.
 
 1. **Kann ich als Campaign Classic v7-Anwender zu Campaign v8 migrieren?**
 
