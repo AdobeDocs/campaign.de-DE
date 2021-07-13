@@ -5,10 +5,10 @@ description: Einstellungen für den E-Mail-Kanal in Campaign
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '290'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ Bitte beachten Sie Folgendes:
 
 * Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
 
-[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um E-Mail-BCC in Campaign zu aktivieren. Die gewünschte BCC-E-Mail-Adresse muss dem Adobe-Team, das die Adresse für Sie konfigurieren wird, mitgeteilt werden.
+?? Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](../start/campaign-faq.md#support), um E-Mail-BCC in Campaign zu aktivieren. Die gewünschte BCC-E-Mail-Adresse muss dem Adobe-Team, das die Adresse für Sie konfigurieren wird, mitgeteilt werden.
 
 Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die Option **E-Mail-BCC** aktiviert ist.
 
@@ -41,14 +41,14 @@ Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in 
 **Verwandte Themen** in der Dokumentation zu Campaign Classic v7:
 
 
-[!DNL :arrow_upper_right:] [Erzeugen der Mirror-Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#generating-mirror-page){target=&quot;_blank&quot;}
+↗️ [Mirrorseite](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#generating-mirror-page){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [E-Mail-Format auswählen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#selecting-message-formats){target=&quot;_blank&quot;}
+↗️ [E-Mail-Format auswählen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#selecting-message-formats){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Zeichenkodierung auswählen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#character-encoding){target=&quot;_blank&quot;}
+↗️ [Zeichenkodierung auswählen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#character-encoding){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Bounce-E-Mail-Adresse festlegen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#managing-bounce-emails){target=&quot;_blank&quot;}
+↗️ [Bounce-E-Mail-Adresse festlegen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#managing-bounce-emails){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [E-Mail-Versandvorlagen verwenden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target=&quot;_blank&quot;}
+↗️ [E-Mail-Versandvorlagen verwenden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=de){target=&quot;_blank&quot;}
+↗️ [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=de){target=&quot;_blank&quot;}
