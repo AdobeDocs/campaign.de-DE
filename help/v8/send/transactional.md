@@ -5,10 +5,10 @@ description: Erste Schritte mit Transaktionsnachrichten
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1550'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Transaktionsnachricht (Message Center) ist ein Campaign-Modul, das die Nachrichtenauslösung handhabt. Diese Nachrichten werden durch Ereignisse erzeugt, die von Informationssystemen ausgelöst werden. Hierzu zählen u. a.: Rechnungen, Bestellbestätigungen, Lieferbestätigungen, Passwortänderungen, Benachrichtigungen über die Nicht-Verfügbarkeit eines Produkts, Kontostandsinformationen oder die Erstellung eines Website-Kontos.
 
-[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
+?? Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
 Transaktionsnachrichten dienen zum Senden von:
 
@@ -24,9 +24,9 @@ Transaktionsnachrichten dienen zum Senden von:
 * einer individuellen Echtzeit-Antwort auf eine Kundenaktion
 * Inhalten, die keine Werbung sind
 
-[!DNL :bulb:] Die Einstellungen für Transaktionsnachrichten sind in [diesem Abschnitt](../config/transactional-msg-settings.md) beschrieben.
+?? Die Einstellungen für Transaktionsnachrichten sind in [diesem Abschnitt](../config/transactional-msg-settings.md) beschrieben.
 
-[!DNL :bulb:][ Diese Seite](../dev/architecture.md) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
+[?? Diese Seite](../dev/architecture.md) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
 
 >[!CAUTION]
 >
@@ -151,7 +151,7 @@ Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versa
 
 Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei jedem Versand.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zu Testsendungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de).{target=&quot;_blank&quot;}
+↗️ Weitere Informationen zu Testsendungen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}
 
 Um jedoch einen Testversand einer Transaktionsnachricht zu senden, müssen Sie die folgenden Vorgänge ausführen:
 
