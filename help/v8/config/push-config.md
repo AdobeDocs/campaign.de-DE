@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1291'
+ht-degree: 100%
 
 ---
 
@@ -797,7 +797,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
 Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Mobile-App-Code und in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden.
 
-[!DNL :arrow_upper_right:] Weitere Informationen finden Sie in der **Dokumentation zu Campaign Classic v7** zur Mobile App: [Konfigurationsschritte für iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} und [Konfigurationsschritte für Android](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de){target=&quot;_blank&quot;}.
+↗️ Weitere Informationen finden Sie in der **Dokumentation zu Campaign Classic v7** zur Mobile App: [Konfigurationsschritte für iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} und [Konfigurationsschritte für Android](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de){target=&quot;_blank&quot;}.
 
 Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
 
