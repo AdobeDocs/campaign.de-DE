@@ -5,10 +5,10 @@ description: Erste Schritte mit Web-Anwendungen und Web-Formularen
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '187'
+ht-degree: 86%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe Campaign verfügt über ein grafisches Modul zur Definition und Veröffentlichung von **Web-Formularen**. Damit können Sie Seiten erstellen, die Eingabe- und Auswahlfelder sowie Daten aus der Datenbank enthalten. Daraus lassen sich wiederum Web-Seiten zusammenstellen und veröffentlichen, in denen Benutzer Informationen anzeigen oder eingeben können.
 
-[!DNL :arrow_upper_right:] In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de#designing-content) erfahren Sie, wie Sie Web-Formulare erstellen und veröffentlichen.
+↗️ Erfahren Sie, wie Sie Webformulare in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de#designing-content) erstellen und veröffentlichen.
 
 ![](assets/sample.png)
 
@@ -24,4 +24,4 @@ Adobe Campaign ermöglicht es Ihnen, mit Daten aus der Datenbank dynamische und 
 
 Sie können Seiten erstellen (z. B. ein Bearbeitungsformular in einem Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. beinhalten). Mit dieser Funktion können Sie Webseiten entwerfen und posten, auf denen Benutzer Daten suchen oder eingeben können.
 
-[!DNL :arrow_upper_right:] In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=de#designing-content) erfahren Sie, wie Sie Web-Anwendungen erstellen und veröffentlichen.
+↗️ Informationen zum Erstellen und Veröffentlichen von Webanwendungen in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=de#designing-content)
