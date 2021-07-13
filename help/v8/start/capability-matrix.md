@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '873'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Wichtige Änderungen:
 
 Als [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die in [diesem Abschnitt](#gs-removed) aufgeführt sind. Weitere Änderungen werden in zukünftigen Versionen enthalten sein. [Weitere Informationen finden Sie in diesem Abschnitt](#gs-unavailable-features)
 
-[!DNL :bulb:] Weitere Informationen zur Architektur von [!DNL Campaign] v8 finden Sie auf [dieser Seite](../dev/architecture.md).
+?? Weitere Informationen zur Architektur von [!DNL Campaign] v8 finden Sie auf [dieser Seite](../dev/architecture.md).
 
 ## Änderungen bei der Produktkonfiguration
 
@@ -72,6 +72,12 @@ Adobe Campaign v8 wird mit Snowflake als Hauptdatenbank bereitgestellt. Um eine 
 
 Campaign-Benutzer müssen keine Datenbankexperten sein: Es besteht kein Bedarf mehr an komplexen Datenbankwartungsvorgängen oder komplexer Tabellenindizierung.
 
+## Verbindung zu Campaign
+
+Campaign-Benutzer stellen über ihre Adobe ID eine Verbindung her. Dieselbe Adobe ID wird verwendet, um alle Ihre Adobe-Pläne und -Produkte mit einem einzigen Konto zu verknüpfen.
+
+?? Erfahren Sie, wie Sie eine Verbindung zu [!DNL Campaign] in [dieser Seite](connect.md) herstellen.
+
 ## Reporting
 
 Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen als Campaign Classic v7 bieten. Die bestehenden Einschränkungen gelten nicht für Cubes.
@@ -106,4 +112,5 @@ Zur Anpassung an die neue Architektur und das Implementierungsmodell von Campaig
 * Umfragen
 * Social Marketing
 * ACS Connector (Prime-Angebote)
-
+* Integration mit LDAP
+* Anmeldung für Benutzer/Kennwort
