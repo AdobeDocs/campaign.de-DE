@@ -5,10 +5,10 @@ description: Campaign-API-Staging-Mechanismus
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '312'
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Gehen Sie wie folgt vor, um den Campaign-Staging-Mechanismus für eine bestimmte
    </srcSchema>
    ```
 
-   [!DNL :bulb:] Weitere Informationen zur Erstellung benutzerdefinierter Schemata finden Sie auf [dieser Seite](create-schema.md).
+   💡 Weitere Informationen zur Erstellung benutzerdefinierter Schemata finden Sie auf [dieser Seite](create-schema.md).
 
 1. Speichern und aktualisieren Sie die Datenbankstruktur. [Weitere Informationen](update-database-structure.md)
 
