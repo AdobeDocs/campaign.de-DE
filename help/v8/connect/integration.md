@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '350'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe Campaign verfügt über mehrere Connectoren, über die Sie mit externen Pr
 
 Modernisieren Sie Ihre Implementierung und nutzen Sie alle Adobe Experience Cloud-Funktionen.
 
-[!DNL :speech_balloon:] Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), wenn Sie Campaign mit Adobe Experience Cloud-Services und -Lösungen verbinden möchten. Sie müssen Adobe Identity Management Service (IMS) implementieren. [Weitere Informationen](../start/connect.md#connect-ims)
+?? Als Benutzer von Managed Cloud Services kontaktieren Sie [Adobe](../start/campaign-faq.md#support), um Campaign mit Adobe Experience Cloud-Diensten und -Lösungen zu verbinden.
 
 Campaign v8 kann eine Verbindung herstellen mit:
 
@@ -40,9 +40,9 @@ Campaign v8 kann eine Verbindung herstellen mit:
 
 Sie können Ihre **Audiences** und **Assets** über Experience Cloud-Lösungen hinweg auch mit Funktionen zum Freigeben von Assets und Audiences kombinieren.
 
-[!DNL :arrow_upper_right:] Weitere Informationen zur **gemeinsamen Nutzung von Audiences** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
+↗️ Weitere Informationen zu **Zielgruppenfreigabe** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud)
 
-[!DNL :arrow_upper_right:] Weitere Informationen zur **gemeinsamen Nutzung von Assets** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
+↗️ Weitere Informationen zu **Asset-Freigabe** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud) .
 
 ## CRM-Connectoren{#gs-crm-connectors}
 
@@ -51,13 +51,13 @@ Sie können Ihre Adobe Campaign-Plattform mit Ihren **CRM-Systemen von Drittanbi
 Aktivieren Sie Ihre CRM-Daten für kanalübergreifende Kommunikation: Erfahren Sie, wie Sie Kontakte von Ihrem CRM-System an Adobe Campaign weitergeben und wiederum Kampagnendaten von Adobe Campaign mit Ihrem CRM-System teilen können.
 CRM-Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adobe Campaign bietet einen dedizierten Assistenten zur Erfassung und Auswahl aus den im CRM verfügbaren Tabellen. Damit ist eine bidirektionale Synchronisation gewährleistet, die sicherstellt, dass die Daten in den Systemen jederzeit aktuell sind.
 
-[!DNL :bulb:] Erfahren Sie auf [dieser Seite](crm.md), wie Sie Campaign mit Microsoft Dynamics 365 und Salesforce.com integrieren.
+?? Informationen zur Integration von Campaign mit Microsoft Dynamics 365 und Salesforce.com finden Sie auf [dieser Seite](crm.md)
 
 ## Federated Data Access (FDA){#gs-fda}
 
 Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer oder mehreren **externen Datenbanken** zu verbinden und darin gespeicherte Informationen zu verarbeiten, ohne die Daten in Ihrer Campaign Cloud-Datenbank zu beeinflussen.
 
-[!DNL :bulb:] Weiterführende Informationen finden Sie auf [dieser Seite](fda.md)
+?? Weiterführende Informationen finden Sie auf [dieser Seite](fda.md)
 
 
 <!-- 
@@ -69,4 +69,4 @@ Use the **Managing social networks (Social Marketing)** option to interact with 
 
 * Collect new contacts - Adobe Campaign Social Marketing also makes it easy to acquire new contacts via Facebook: contact users and ask them if they want to share their profile information. If they accept, Adobe Campaign automatically recovers the data, which enables you to carry out targeting campaigns and, when possible, to implement cross-channel strategies.
 
-[!DNL :bulb:] Learn how to set up and use Campaign Social Marketing in [this section](../connect/ac-tw.md) -->
+💡 Learn how to set up and use Campaign Social Marketing in [this section](../connect/ac-tw.md) -->
