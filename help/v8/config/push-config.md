@@ -77,9 +77,8 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 >[!NOTE]
 >
 > * Vergessen Sie nicht, die Datei &quot;google-services.json&quot; herunterzuladen und in Ihr Projekt einzufügen.
-   >
-   > 
-* Der `apiKey` muss mit dem `projectKey` übereinstimmen, der in der mit dieser Android-Anwendung verknüpften Adobe Campaign Mobile App festgelegt ist.
+>
+> * Der `apiKey` muss mit dem `projectKey` übereinstimmen, der in der mit dieser Android-Anwendung verknüpften Adobe Campaign Mobile App festgelegt ist.
 
 
 ### Android SDK konfigurieren
