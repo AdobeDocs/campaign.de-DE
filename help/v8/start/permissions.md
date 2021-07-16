@@ -6,9 +6,9 @@ description: Erfahren Sie, wie Sie Berechtigungen für Campaign v8 erteilen
 feature: Audiences
 role: Data Engineer
 level: Beginner
-source-git-commit: a57855556751e85e7a1f7751a103ca157f434a8a
+source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '391'
 ht-degree: 75%
 
 ---
@@ -37,7 +37,7 @@ Jeder Benutzer muss mit einer Zone verknüpft sein, um sich bei einer Instanz an
 
 Benutzer werden über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft, auf die über den Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** zugegriffen werden kann.
 
-?? Als Benutzer von Managed Cloud Services legt Adobe die Sicherheitszonen für Sie fest. Weitere Informationen finden Sie unter [Adobe kontaktieren](support.md#support).
+?? Als Benutzer von Managed Cloud Services legt Adobe die Sicherheitszonen für Sie fest. Weitere Informationen finden Sie unter [Adobe kontaktieren](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 **Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7**
 
