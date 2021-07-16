@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 94%
+source-wordcount: '663'
+ht-degree: 92%
 
 ---
 
@@ -61,7 +61,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Sie können Ihre Domain in Subdomains unterteilen, um Ihre Marken oder unterschiedlichen Textsorten (Transaktionsnachrichten, Marketing-Informationen usw.) voreinander zu trennen.
 
-   ?? Als Managed Cloud Services-Anwender [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Ihre Subdomains an Adobe zu übertragen.
+   ?? Als Managed Cloud Services-Anwender kontaktieren Sie Adobe, um Ihre Subdomains an Adobe zu übertragen.
 
 1. **Kann ich als Campaign Classic v7-Anwender zu Campaign v8 migrieren?**
 
@@ -71,7 +71,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download Center abrufen.
 
-   [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;}, um auf die Software-Verteilung von Experience Cloud zuzugreifen.
+   Greifen Sie als Administrator auf die Adobe [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) {target=&quot;_blank&quot;} zu, um Adobe Campaign herunterzuladen.
 
    Weitere Informationen zum Verteilungs-Center finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target=&quot;_blank&quot;}.
 
