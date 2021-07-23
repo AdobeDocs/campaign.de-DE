@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -57,13 +57,13 @@ Verwenden Sie die Aktivität **Abfrage** in einem Workflow, um Datenbankabfragen
 
 ↗️ Weitere Informationen zu Campaign-Abfragen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/targeting-data.html?lang=de#automating-with-workflows){target=&quot;_blank&quot;}.
 
-↗️ Alle Targeting-Aktivitäten sind in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=de){target=&quot;_blank&quot;} aufgeführt.
+↗️ Alle Zielgruppenbestimmungsaktivitäten werden in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=de){target=&quot;_blank&quot;} aufgeführt.
 
 ## Eine Audience in einem Workflow erstellen
 
 Zielgruppenbestimmung kann über eine Kombination von Abfragen in einer grafischen Abfolge in einem Workflow erstellt werden. Sie können Audiences erstellen und deren Targeting entsprechend Ihren Anforderungen anpassen. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
 
-↗️ Informationen zum Erstellen einer Zielgruppe in einem Kampagnen-Workflow in der [Adobe Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=de#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}.
+↗️ Weitere Informationen zur Erstellung einer Audience in einem Kampagnen-Workflow erhalten Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=de#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}.
 
 
 ## Aktive Profile{#active-profiles}
@@ -78,7 +78,7 @@ You can monitor the number of active profiles used on your instances directly fr
 ↗️ For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 -->
 
-**Verwandte Themen**  in der Dokumentation zu Campaign Classic v7:
+**Verwandte Themen**   in der Dokumentation zu Campaign Classic v7:
 
 ↗️ [Kampagnenspezifische Workflows entwerfen und ausführen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=de#automating-with-workflows){target=&quot;_blank&quot;}
 
