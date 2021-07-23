@@ -6,9 +6,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1351'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Verschiedene Workflow-Aktivitäten ermöglichen es Ihnen, die Unterbreitung von 
 
 Die Aktivität **Anreicherung** ermöglicht das Hinzufügen von Angeboten oder Links zu Angeboten für Versandempfänger.
 
-↗️ Weitere Informationen zur Aktivität &quot;Anreicherung&quot; finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html?lang=de)
+↗️ Weitere Informationen zur Aktivität &quot;Anreicherung&quot; finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html?lang=de).
 
 Sie können beispielsweise aus einer Abfrage stammende Empfängerdaten vor Durchführung eines Versands anreichern.
 
@@ -165,7 +165,7 @@ Der Versand speichert nun automatisch Rang und Gewichtung der Angebote. Die Info
 
 Auch die Aktivität **[!UICONTROL Angebotsmodul]** ermöglicht die Konfiguration einer einem Versand vorangestellten Modulabfrage.
 
-↗️ Weitere Informationen zur Aktivität **Angebotsmodul** finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html?lang=de) .
+↗️ Weitere Informationen zum **Angebotsmodul** finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html?lang=de).
 
 Das Prinzip dieser Aktivität entspricht dem der **Anreicherung**. Auch hier werden die Daten der Eingangspopulation mit einem vom Modul berechneten Angebot angereichert, bevor die eigentliche Versandaktivität startet.
 
@@ -188,7 +188,7 @@ Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritt
 
 Mithilfe der Aktivität **[!UICONTROL Angebote pro Segment]** lässt sich die eingehende Population (die beispielsweise aus einer Abfrage hervorgeht) in mehrere Zielgruppen aufspalten, um so je Segment spezifische Angebote zu unterbreiten.
 
-↗️ Weiterführende Informationen zur Aktivität **Angebot nach Zelle** finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html?lang=de) .
+↗️ Weitere Informationen zur Aktivität **Angebot pro Segment** finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html?lang=de).
 
 Gehen Sie dazu wie folgt vor:
 
