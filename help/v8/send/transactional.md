@@ -6,9 +6,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1550'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Transaktionsnachrichten dienen zum Senden von:
 
 ?? Die Einstellungen für Transaktionsnachrichten sind in [diesem Abschnitt](../config/transactional-msg-settings.md) beschrieben.
 
-[?? Diese Seite](../dev/architecture.md) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
+?? [Diese Seite](../dev/architecture.md) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
 
 >[!CAUTION]
 >
@@ -151,7 +151,7 @@ Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versa
 
 Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei jedem Versand.
 
-↗️ Weitere Informationen zu Testsendungen finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}
+↗️ Weitere Informationen zu Testsendungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}.
 
 Um jedoch einen Testversand einer Transaktionsnachricht zu senden, müssen Sie die folgenden Vorgänge ausführen:
 
