@@ -4,7 +4,7 @@ title: Allgemeine Architektur
 description: Erfahren Sie mehr über die Architektur und Komponenten von Campaign.
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1217'
 ht-degree: 100%
 
@@ -32,15 +32,15 @@ Der Zugriff auf das Programm erfolgt auf unterschiedliche Weise: Richclient-, Th
 
 * **Client-Konsole**: Die zentrale Benutzeroberfläche des Programms ist ein natives Programm (Windows), das ausschließlich über Standard-Internet-Protokolle (z. B. SOAP oder HTTP) mit dem Adobe Campaign-Anwendungs-Server kommuniziert. Die Adobe Campaign-Client-Konsole bietet hohe Benutzerfreundlichkeit für hohe Produktivität, verbraucht sehr wenig Bandbreite (durch die Verwendung eines lokalen Cache) und wurde für eine einfache Implementierung entwickelt. Diese Konsole kann über einen Internet-Browser implementiert werden, kann automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.
 
-   💡 [Erfahren Sie mehr über die Campaign-Client-Konsole](../start/connect.md).
+   ?? [Erfahren Sie mehr über die Campaign-Client-Konsole](../start/connect.md).
 
 * **Web-Zugriff**: Einige Bereiche des Programms können über einen einfachen Webbrowser mittels HTML-Benutzeroberfläche aufgerufen werden, darunter etwa das Reporting-Modul, die einzelnen Phasen der Versandvalidierung oder auch das Instanz-Monitoring.
 
-   💡 [Erfahren Sie mehr über den Web-basierten Zugriff auf Campaign](../start/connect.md).
+   ?? [Erfahren Sie mehr über den Web-basierten Zugriff auf Campaign](../start/connect.md).
 
 * **Campaign-APIs**: In bestimmten Fällen kann das System über die via SOAP-Protokoll bereitgestellten Web Services-APIs von einem externen Programm aus aufgerufen werden.
 
-   💡 [Erfahren Sie mehr über Campaign-APIs](../dev/api.md).
+   ?? [Erfahren Sie mehr über Campaign-APIs](../dev/api.md).
 
 ## Entwicklungsumgebung {#dev-env}
 
