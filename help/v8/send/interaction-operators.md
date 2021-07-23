@@ -6,9 +6,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '408'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Zwei Typen von Benutzern können Campaign Interaction verwenden: **Angebotsveran
 
 1. Erstellen Sie den neuen Benutzer.
 
-   ↗️ Schritte zum Erstellen eines Benutzers in Campaign finden Sie im [Campaign Classic v7-Handbuch](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=de)
+   ↗️ Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=de) beschrieben.
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Angebotsverantwortliche Benutzer]** aus.
 
@@ -48,7 +48,7 @@ Beachten Sie, dass, wenn Angebote im Workflow verwendet werden, der Benutzer der
 
 1. Erstellen Sie den neuen Benutzer.
 
-   ↗️ Schritte zum Erstellen eines Benutzers in Campaign finden Sie im [Campaign Classic v7-Handbuch](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   ↗️ Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=de) beschrieben.
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
 
