@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Mit Campaign-Schemata arbeiten
 description: Erste Schritte mit Schemata
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1254'
 ht-degree: 100%
 
@@ -97,11 +97,11 @@ Der Identifizierungsschlüssel eines Stylesheets ist eine Zeichenfolge, die den 
 
 Um einem der Standard-Datenschemata in Campaign ein Feld oder ein anderes Element hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern.
 
-💡 Weiterführende Informationen hierzu finden Sie unter [Schema erweitern](extend-schema.md).
+?? Weiterführende Informationen hierzu finden Sie unter [Schema erweitern](extend-schema.md).
 
 Um einen völlig neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht vorhanden ist (z. B. eine Tabelle zu Verträgen), können Sie direkt ein benutzerdefiniertes Schema erstellen.
 
-💡 Weiterführende Informationen hierzu finden Sie unter [Erstellen eines neuen Schemas](create-schema.md).
+?? Weiterführende Informationen hierzu finden Sie unter [Erstellen eines neuen Schemas](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -153,7 +153,7 @@ In diesem Beispiel erstellen wir nicht anhand des Attributs **@autouuid** einen 
 >
 >Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselfolge (@pkSequence) beibehalten.
 
-💡 Weiterführende Informationen zu Schlüsseln finden Sie in [diesem Abschnitt](database-mapping.md#management-of-keys).
+?? Weiterführende Informationen zu Schlüsseln finden Sie in [diesem Abschnitt](database-mapping.md#management-of-keys).
 
 ## Attribute (Felder) {#attributes--fields-}
 
