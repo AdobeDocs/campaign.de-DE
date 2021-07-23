@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 44ddce019de74be96a955eefbc940e41e060a6d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
 * Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](compatibility-matrix.md)
 * Ermitteln Sie Ihre Campaign-Server-URL
-* Erstellen Sie Adobe ID oder rufen Sie Ihre Benutzeranmeldeinformationen von Ihrem Unternehmen ab.
+* Erstellen Sie Ihre Adobe ID oder rufen Sie Ihre Benutzeranmeldeinformationen von Ihrem Unternehmen ab
 
 ## Client-Konsole herunterladen und installieren
 
@@ -51,7 +51,7 @@ Nachdem die Client-Konsole neu installiert wurde, führen Sie die folgenden Schr
 
    Sie können beispielsweise eine URL vom Typ [`https://<machine>.<domain>.com`](https://myserver.adobe.com) eingeben.
 
-1. Aktivieren Sie die Option **[!UICONTROL Verbindung mit einer Adobe ID]**.
+1. Aktivieren Sie die Option **[!UICONTROL Anmeldung mit einer Adobe ID]**.
 
 1. Klicken Sie auf **[!UICONTROL OK]**, um Ihre Einstellungen zu speichern.
 
@@ -93,15 +93,15 @@ Als Campaign-Administrator sind Sie dafür verantwortlich, die Benutzer zu erste
 
 ## Verbindung mit Campaign über Ihre Adobe ID herstellen{#connect-ims}
 
-Campaign-Benutzer stellen über Adobe Identity Management System (IMS) über ihre Adobe ID eine Verbindung zur Adobe Campaign-Konsole her. Sie können für alle Adobe-Lösungen dieselbe ID verwenden. Die Verbindung wird bei Verwendung von Adobe Campaign mit anderen Lösungen gespeichert.
+Campaign-Anwender stellen über das Adobe Identity Management System (IMS) mit ihrer Adobe ID eine Verbindung zur Adobe Campaign-Konsole her. Sie können für alle Adobe-Lösungen dieselbe ID verwenden. Die Verbindung wird bei Verwendung von Adobe Campaign mit anderen Lösungen gespeichert.
 
-Weitere Informationen zur Adobe IMS finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
+Weitere Informationen zu Adobe IMS finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
 
 ## Web-Zugriff{#web-access}
 
-Bestimmte Teile der Anwendung können über einen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden: Reporting, Versandvalidierung, Instanzüberwachung und mehr.
+Einige Bereiche des Programms können über einen Webbrowser mittels HTML-Benutzeroberfläche aufgerufen werden: darunter etwas das Reporting, die Versandvalidierung oder auch das Instanz-Monitoring.
 
-Der Webzugriff bietet eine der Clientkonsole ähnliche Bedieneroberfläche mit eingeschränkten Funktionalitäten.
+Der Web-Zugriff bietet eine der Client-Konsole ähnliche Bedieneroberfläche mit eingeschränkten Funktionalitäten.
 
 So wird z. B. für einen Benutzer eine Kampagne in der Client-Konsole mit folgenden Optionen angezeigt:
 
@@ -113,4 +113,4 @@ Beim Web-Zugriff ermöglichen die Optionen vor allem die Anzeige von:
 
 Der Web-Zugriff wird auch für den Validierungsprozess verwendet: Benutzer können auf die E-Mail mit der Validierungsanfrage klicken und über ihren Webbrowser eine Verbindung zu Campaign herstellen, um Versandinhalte oder -budgets zu validieren oder abzulehnen.
 
-Um über das Web auf Ihre Campaign-Instanz zuzugreifen, lautet die URL:  `https://<your adobe campaign server>:<port number>/view/home`.
+Um über das Web auf Ihre Campaign-Instanz zuzugreifen, lautet die URL: `https://<your adobe campaign server>:<port number>/view/home`.
