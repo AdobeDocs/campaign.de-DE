@@ -6,7 +6,7 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
 ht-degree: 100%
 
@@ -29,8 +29,10 @@ Campaign Classic v7-APIs sind weiterhin verfügbar, profitieren jedoch nicht von
 >[!CAUTION]
 >
 >* Mit diesem neuen Mechanismus ist die Datensynchronisation für Kanal-Opt-out, Abonnements, Abmeldungen oder mobile Registrierungen jetzt **asynchron**.
->
->* Staging gilt nur für Schemata, die in der Cloud-Datenbank gespeichert sind. Aktivieren Sie kein Staging für replizierte Schemata. Aktivieren Sie kein Staging für lokale Schemata. Aktivieren Sie kein Staging für ein bereitgestelltes Schema.
+   >
+   >
+* Staging gilt nur für Schemata, die in der Cloud-Datenbank gespeichert sind. Aktivieren Sie kein Staging für replizierte Schemata. Aktivieren Sie kein Staging für lokale Schemata. Aktivieren Sie kein Staging für ein bereitgestelltes Schema.
+
 >
 
 
@@ -54,7 +56,7 @@ Gehen Sie wie folgt vor, um den Campaign-Staging-Mechanismus für eine bestimmte
    </srcSchema>
    ```
 
-   💡 Weitere Informationen zur Erstellung benutzerdefinierter Schemata finden Sie auf [dieser Seite](create-schema.md).
+   ?? Weitere Informationen zur Erstellung benutzerdefinierter Schemata finden Sie auf [dieser Seite](create-schema.md).
 
 1. Speichern und aktualisieren Sie die Datenbankstruktur. [Weitere Informationen](update-database-structure.md)
 
