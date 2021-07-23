@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '377'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
    ![](assets/built-in-reports.png)
 
-   ↗️ In Campaign integrierte Berichte werden in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html?lang=de){target=&quot;_blank&quot;}
+   ↗️ Die nativen Berichte von Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html?lang=de){target=&quot;_blank&quot;} aufgeführt.
 
 * **Deskriptive Datenanalyse**
 
@@ -37,13 +37,13 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
    ![](assets/desc-analysis-report.png)
 
-   ↗️ Berichte zur deskriptiven Analyse in Campaign finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target=&quot;_blank&quot;}
+   ↗️ Die Berichte zur deskriptiven Analyse von Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target=&quot;_blank&quot;} angezeigt.
 
 * **Personalisierte Berichte**
 
    Verwenden Sie Adobe Campaign, um Berichte zu den Daten in der Datenbank zu erstellen. Sobald diese erstellt wurden, machen Sie sie in den entsprechenden Kontexten zugänglich.
 
-   ↗️ Schritte zum Erstellen eines Berichts finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=de){target=&quot;_blank&quot;}. Die Erstellung personalisierter Berichte ist erfahrenen Benutzern vorbehalten.
+   ↗️ Die Schritte zum Erstellen eines Berichts werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=de){target=&quot;_blank&quot;} beschrieben. Die Erstellung personalisierter Berichte ist erfahrenen Benutzern vorbehalten.
 
 * **Cubes**
 
@@ -54,7 +54,7 @@ Mit Cubes können Sie Daten analysieren und messen, Statistiken erheben und das 
 
    Je nach Komplexität der Abfragen und Berechnungen sowie der bewegten Datenmenge werden die in den Berichten zu analysierenden Daten über eine Abfrage gesammelt und in einer Liste (Workflow vom Typ &quot;Daten-Management&quot;) oder einem Cube (unter Verwendung der Option &quot;Marketing Analytics&quot;) voraggregiert. Sie werden in Form einer Pivot-Tabelle oder einer Liste mit Gruppierung angezeigt.
 
-   ↗️ Informationen zum Erstellen von Cubes in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html?lang=de){target=&quot;_blank&quot;}
+   ↗️ Wie Sie Cubes erstellen, erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html?lang=de){target=&quot;_blank&quot;}.
 
 
 Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen als Campaign Classic v7 bieten. Die bestehenden Einschränkungen gelten nicht für Cubes.
