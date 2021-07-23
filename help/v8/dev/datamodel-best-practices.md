@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Best Practices für Datenmodelle
 description: Best Practices für die Erweiterung von Campaign-Datenmodellen
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2688'
 ht-degree: 100%
 
@@ -17,9 +17,9 @@ Das Adobe Campaign-System ist äußerst flexibel und kann über die ursprünglic
 
 Genauere Informationen zu den in Campaign integrierten Tabellen und ihrer Beziehung zueinander finden Sie in [diesem Abschnitt](datamodel.md).
 
-💡 Lesen Sie [diesen Abschnitt](schemas.md), um mit Campaign-Schemata zu beginnen.
+?? Lesen Sie [diesen Abschnitt](schemas.md), um mit Campaign-Schemata zu beginnen.
 
-💡 Erfahren Sie auf [dieser Seite](extend-schema.md), wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
+?? Erfahren Sie auf [dieser Seite](extend-schema.md), wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
 
 ## Architektur von Datenmodellen {#data-model-architecture}
 
@@ -175,7 +175,7 @@ Es gibt verschiedene Lösungen, um den Bedarf an Datensätzen in Adobe Campaign 
 
 Sie können in einem Schema das Attribut &quot;deleteStatus&quot; deklarieren. Effizienter ist es, den Datensatz als gelöscht zu markieren und das Löschen in die Bereinigungsaufgabe zu verschieben.
 
-💬 Wenden Sie sich als Managed Cloud Services-Anwender an die Berater oder technischen Administratoren von Adobe, um mehr über Datenspeicherung zu erfahren oder wenn Sie eine Datenspeicherung für benutzerdefinierte Tabellen aktivieren müssen.
+?? Wenden Sie sich als Managed Cloud Services-Anwender an die Berater oder technischen Administratoren von Adobe, um mehr über Datenspeicherung zu erfahren oder wenn Sie eine Datenspeicherung für benutzerdefinierte Tabellen aktivieren müssen.
 
 ## Leistung {#performance}
 
