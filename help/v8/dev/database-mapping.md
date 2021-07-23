@@ -3,7 +3,7 @@ product: Adobe Campaign
 title: Mapping der Campaign-Datenbank
 description: Mapping der Campaign-Datenbank
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1463'
 ht-degree: 100%
 
@@ -256,7 +256,7 @@ Für Join-Beziehungen mit Federated Database Access:
 * ![](assets/do-not-localize/join_fda_11.png): 1-1-Kardinalität
 * ![](assets/do-not-localize/join_fda_1m.png): 1-N-Kardinalität
 
-💡 Weitere Informationen zu FDA-Tabellen finden Sie unter [Federated Data Access](../connect/fda.md).
+?? Weitere Informationen zu FDA-Tabellen finden Sie unter [Federated Data Access](../connect/fda.md).
 
 In dem Schema, das den Fremdschlüssel der Tabelle enthält, muss über das Hauptelement eine Relation angegeben werden:
 
