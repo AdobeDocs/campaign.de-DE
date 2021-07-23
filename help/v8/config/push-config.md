@@ -9,7 +9,7 @@ level: Experienced
 hide: true
 hidefromtoc: true
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1291'
 ht-degree: 100%
 
@@ -77,8 +77,9 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 >[!NOTE]
 >
 > * Vergessen Sie nicht, die Datei &quot;google-services.json&quot; herunterzuladen und in Ihr Projekt einzufügen.
->
-> * Der `apiKey` muss mit dem `projectKey` übereinstimmen, der in der mit dieser Android-Anwendung verknüpften Adobe Campaign Mobile App festgelegt ist.
+   >
+   > 
+* Der `apiKey` muss mit dem `projectKey` übereinstimmen, der in der mit dieser Android-Anwendung verknüpften Adobe Campaign Mobile App festgelegt ist.
 
 
 ### Android SDK konfigurieren
