@@ -7,7 +7,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '455'
 ht-degree: 100%
 
@@ -59,5 +59,5 @@ Sie können Campaign mit einer Reihe von leistungsstarken Adobe-Lösungen integr
 
 Mit Journey-KI können Sie auch eine prädiktive Sendezeitoptimierung und ein prädiktives Interaktivitäts-Scoring konfigurieren und Öffnungsraten, Klicks und Umsätze steigern.
 
-💡 [Weitere Informationen zu Integrationen mit Campaign](../connect/integration.md)
+?? [Weitere Informationen zu Integrationen mit Campaign](../connect/integration.md)
 
