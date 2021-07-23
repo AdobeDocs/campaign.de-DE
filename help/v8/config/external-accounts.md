@@ -6,9 +6,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1116'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
    Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
-   ↗️ Weitere Informationen zu eingehenden E-Mails finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html?lang=de){target=&quot;_blank&quot;}
+   ↗️ Weitere Informationen zu eingehenden E-Mails finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html?lang=de){target=&quot;_blank&quot;}.
 
 * **Routing**
 
@@ -65,13 +65,13 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
    Externe Datenbanken, die mit Adobe Campaign v8 kompatibel sind, sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
 
-   ?? Weitere Informationen zur Option Federated Data Access (FDA) finden Sie in [diesem Abschnitt](../connect/fda.md).
+   ?? Weitere Informationen zur Option &quot;Federated Data Access (FDA)&quot; finden Sie in [diesem Abschnitt](../connect/fda.md).
 
 ## Externe Konten zur Integration von Adobe-Lösungen
 
 * **Adobe Experience Cloud**
 
-   Das externe Konto **[!UICONTROL Adobe Experience Cloud]** wird verwendet, um Adobe IMS zu implementieren, um mithilfe einer Adobe ID eine Verbindung zur Adobe Campaign-Konsole herzustellen.
+   Das externe **[!UICONTROL Adobe Experience Cloud]**-Konto wird verwendet, um Adobe IMS zu implementieren und mithilfe einer Adobe ID eine Verbindung zur Adobe Campaign-Konsole herzustellen.
 
    ?? Weitere Informationen zu Adobe Identity Management Service (IMS) finden Sie in [diesem Abschnitt](../start/connect.md#connect-ims).
 
@@ -88,7 +88,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
    ?? Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aem.md).
 
-   ?? Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Adobe Experience Manager mit Campaign zu integrieren.
+   ?? Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Adobe Experience Manager mit Adobe Campaign zu integrieren.
 
 
 ## Externe CRM-Connector-Konten
@@ -143,7 +143,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
 Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** zum Importieren oder Exportieren von Daten in Adobe Campaign verwendet werden.
 
-↗️ Weitere Informationen zur Dateiübertragung in Workflows finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html?lang=de){target=&quot;_blank&quot;}
+↗️ Weitere Informationen zur Dateiübertragung in Workflows finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html?lang=de){target=&quot;_blank&quot;}.
 
 * **FTP und SFTP**
 
