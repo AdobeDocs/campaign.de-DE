@@ -6,9 +6,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ Unterstützte CRM-Systeme und Versionen werden in der [Kompatibilitätsmatrix](.
 
 ## Implementierungsschritte {#crm-implementation-steps}
 
-↗️ schrittweise Anleitung zum Verbinden von Campaign und Microsoft Dynamics in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=de#microsoft-dynamics-implementation-steps)
+↗️ In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=de#microsoft-dynamics-implementation-steps) erfahren Sie Schritt für Schritt, wie Sie Campaign und Microsoft Dynamics verbinden.
 
-↗️ schrittweise Anleitung zum Verbinden von Campaign und Salesforce in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=de#getting-started)
+↗️ In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=de#getting-started) erfahren Sie Schritt für Schritt, wie Sie Campaign und Salesforce verbinden.
 
 
 Die Datensynchronisation zwischen Adobe Campaign und dem CRM-System erfolgt über die spezifische Workflow-Aktivität. Erstellen Sie eigene Workflows, um die Synchronisierung zwischen Campaign und Ihrem CRM-System zu automatisieren. Sie können einen Workflow erstellen, der die Kontakte über Microsoft Dynamics importiert, sie mit den vorhandenen Adobe Campaign-Daten synchronisiert, doppelte Kontakte löscht und dann die Adobe Campaign-Datenbank aktualisiert.
