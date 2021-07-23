@@ -6,9 +6,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: bfd2df90e5e6bee89bdfc7c5da82c755ac5726df
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '927'
 ht-degree: 94%
 
 ---
@@ -21,7 +21,7 @@ Wichtige Änderungen:
 
 * Segmente können bis zu 200-mal schneller erstellt werden
 * Erhöhte Versandgeschwindigkeit
-* Echtzeit-Berichte   mit Cubes
+* Echtzeit-Berichte    mit Cubes
 
 Als [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die in [diesem Abschnitt](#gs-removed) aufgeführt sind. Weitere Änderungen werden in zukünftigen Versionen enthalten sein. [Weitere Informationen finden Sie in diesem Abschnitt](#gs-unavailable-features)
 
@@ -76,11 +76,19 @@ Campaign-Benutzer müssen keine Datenbankexperten sein: Es besteht kein Bedarf m
 
 Campaign-Benutzer stellen über ihre Adobe ID eine Verbindung her. Dieselbe Adobe ID wird verwendet, um alle Ihre Adobe-Pläne und -Produkte mit einem einzigen Konto zu verknüpfen.
 
-?? Erfahren Sie, wie Sie eine Verbindung zu [!DNL Campaign] in [dieser Seite](connect.md) herstellen.
+?? Auf [dieser Seite](connect.md) erfahren Sie, wie Sie eine Verbindung zu [!DNL Campaign] herstellen können.
 
 ## Reporting
 
 Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen als Campaign Classic v7 bieten. Die bestehenden Einschränkungen gelten nicht für Cubes.
+
+## Workflow {#workflow}
+
+Campaign v8 bietet eine zusätzliche Workflow-Aktivität zur Zielgruppenbestimmung: **[!UICONTROL Ändern Sie die Datenquelle]**.
+
+Die Aktivität **[!UICONTROL Datenquelle ändern]** ermöglicht es Ihnen, die Datenquelle eines Workflows zu ändern **[!UICONTROL Arbeitstabelle]**, um Daten aus verschiedenen Datenquellen wie FDA, FFDA und der lokalen Datenbank zu verwalten.
+
+?? Weitere Informationen zur Aktivität **[!UICONTROL Ändern der Datenquelle]** in [dieser Seite](../config/workflows.md#change-data-source-activity).
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
@@ -113,4 +121,4 @@ Zur Anpassung an die neue Architektur und das Implementierungsmodell von Campaig
 * Social Marketing
 * ACS Connector (Prime-Angebote)
 * Integration mit LDAP
-* Anmeldung für Benutzer/Kennwort
+* Anmelden mit Benutzer/Kennwort
