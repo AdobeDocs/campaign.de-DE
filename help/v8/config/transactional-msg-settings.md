@@ -6,9 +6,9 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 
 ?? In [diesem Abschnitt](../send/transactional.md) sind die Funktionen für Transaktionsnachrichten beschrieben.
 
-[?? Diese Seite](../dev/architecture.md) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
+?? [Diese Seite](../dev/architecture.md) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
 
 ## Berechtigungen definieren
 
@@ -28,7 +28,7 @@ Um neue Benutzer für in Adobe Cloud gehostete Message Center-Ausführungsinstan
 
 Alle Erweiterungen von Schemas, die von **technischen Workflows des Message Center-Moduls** in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
 
-↗️ Weitere Informationen zu technischen Workflows für Message Center finden Sie in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html?lang=de#technical-workflows) .
+↗️ In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html?lang=de#technical-workflows) erfahren Sie mehr über die technischen Workflows von Message Center.
 
 ## Push-Benachrichtigungen zu Transaktionen versenden
 
