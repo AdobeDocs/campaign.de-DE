@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '900'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen übermit
 
 ?? Die Grundlagen zur Verwaltung von Profilen werden in [diesem Abschnitt](audiences.md) erläutert.
 
-?? In [diesem Abschnitt](import.md) erfahren Sie, wie Sie in Campaign Profile hinzufügen.
+?? Näheres dazu, wie Sie in Campaign Profile hinzufügen, finden Sie in [diesem Abschnitt ](import.md).
 
 ## Zielgruppensegmentierung {#targeted-segmentation}
 
@@ -92,9 +92,9 @@ Der Campaign-Arbeitsbereich ist über die [Client-Konsole](../dev/general-archit
 
 Der Campaign-Arbeitsbereich kann Ihren Bedürfnissen entsprechend angepasst werden.
 
-↗️ Informationen zur Verwendung von Campaign Workspace in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de){target=&quot;_blank&quot;}
+↗️ Informationen zum Verwenden des Campaign-Arbeitsbereichs finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de){target=&quot;_blank&quot;}.
 
-↗️ Informationen zum Anpassen von Listen in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=de#getting-started){target=&quot;_blank&quot;}
+↗️ Wie Sie Listen anpassen können, erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=de#getting-started){target=&quot;_blank&quot;}.
 
 Auf einige der Funktionen können Sie zudem über einen Webbrowser zugreifen.
 
