@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Es ist möglich, die Empfängertabelle zu erweitern. Die Anzahl der Empfänger o
 
 ?? Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie in [diesem Abschnitt](extend-schema.md).
 
-↗️ Entdecken Sie Beispiele integrierter Empfängertabellenerweiterungen in der [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table)
+↗️ Beispiele für integrierte Empfängertabellen-Erweiterungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table).
 
 Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre geschäftlichen oder funktionalen Anforderungen zugeschnitten ist. Diese Methode weist Einschränkungen auf und wird in [diesem Abschnitt](custom-recipient.md) beschrieben.
 
@@ -73,5 +73,5 @@ Beachten Sie für ein genaueres Verständnis der Tabellenverwaltung in Campaign 
 
 **Verwandte Themen** 
 
-?? Informationen zum Importieren von Profilen finden Sie in [diesem Abschnitt](../start/import.md)
-?? Weitere Informationen zu Campaign-Zielgruppen finden Sie in [diesem Abschnitt](../start/audiences.md) .
+?? Erfahren Sie in [diesem Abschnitt](../start/import.md), wie Sie Profile importieren.
+?? Weitere Informationen zu Campaign-Audiences finden Sie in [diesem Abschnitt](../start/audiences.md).
