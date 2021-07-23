@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '163'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Sie können Assets auch direkt aus Ihrer Adobe Experience Manager Asset-Biblioth
 
 Dies bedeutet, dass Sie sowohl die Funktionen zur Inhaltsbearbeitung von Adobe Experience Manager als auch die Versandfunktionen von Adobe Campaign optimal nutzen können.
 
-↗️ [Weitere Informationen finden Sie in diesem Dokument](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=de#aem-and-adobe-campaign-integration-workflow)
+↗️ [Weiterführende Informationen finden Sie in diesem Dokument](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=de#aem-and-adobe-campaign-integration-workflow).
 
-↗️ [Entdecken Sie diese Integration in diesem End-to-End-Beispiel](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html?lang=de#integrating-with-adobe-experience-cloud)
+↗️ [ Erfahren Sie mehr über diese Integration in diesem vollständigen Muster](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html?lang=de#integrating-with-adobe-experience-cloud).
 
 ?? Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Adobe Experience Manager mit Campaign zu integrieren.
 
