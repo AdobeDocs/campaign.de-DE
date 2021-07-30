@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: bfd2df90e5e6bee89bdfc7c5da82c755ac5726df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Wichtige Änderungen:
 
 * Segmente können bis zu 200-mal schneller erstellt werden
 * Erhöhte Versandgeschwindigkeit
-* Echtzeit-Berichte    mit Cubes
+* Echtzeit-Berichte     mit Cubes
 
 Als [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die in [diesem Abschnitt](#gs-removed) aufgeführt sind. Weitere Änderungen werden in zukünftigen Versionen enthalten sein. [Weitere Informationen finden Sie in diesem Abschnitt](#gs-unavailable-features)
 
@@ -84,11 +84,11 @@ Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierung
 
 ## Workflow {#workflow}
 
-Campaign v8 bietet eine zusätzliche Workflow-Aktivität zur Zielgruppenbestimmung: **[!UICONTROL Ändern Sie die Datenquelle]**.
+Campaign v8 bietet eine zusätzliche Workflow-Aktivität für die Zielgruppenbestimmung: **[!UICONTROL Datenquelle ändern]**.
 
-Die Aktivität **[!UICONTROL Datenquelle ändern]** ermöglicht es Ihnen, die Datenquelle eines Workflows zu ändern **[!UICONTROL Arbeitstabelle]**, um Daten aus verschiedenen Datenquellen wie FDA, FFDA und der lokalen Datenbank zu verwalten.
+Die Aktivität **[!UICONTROL Datenquelle ändern]** ermöglicht es Ihnen, die Datenquelle des Workflows **[!UICONTROL Arbeitstabelle]** zu ändern, um Daten aus verschiedenen Datenquellen wie FDA, FFDA und lokalen Datenbanken zu verwalten.
 
-?? Weitere Informationen zur Aktivität **[!UICONTROL Ändern der Datenquelle]** in [dieser Seite](../config/workflows.md#change-data-source-activity).
+?? Weitere Informationen zur Aktivität **[!UICONTROL Datenquelle ändern]** finden Sie auf [dieser Seite](../config/workflows.md#change-data-source-activity).
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
