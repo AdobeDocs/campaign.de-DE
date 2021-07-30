@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: cc8707c7765a47fc00d46283eb6588e63a98499d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1590'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -46,49 +46,49 @@ Weitere Informationen zur Benutzeroberfläche und Ausführung von Workflows find
 
 ## Workflow-Aktivitäten {#wf-activities}
 
-↗️ Erfahren Sie mehr über die verfügbaren Workflow-Aktivitäten [Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-activities.html){target=&quot;_blank&quot;}
+↗️ Erfahren Sie mehr über die verfügbaren Workflow-Aktivitäten in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-activities.html?lang=de){target=&quot;_blank&quot;}.
 
-Workflow-Aktivitäten werden nach Kategorie gruppiert. Die vier Aktivitätskategorien sind verfügbar:
+Workflow-Aktivitäten sind in Kategorien gruppiert. Diese vier Aktivitätskategorien sind verfügbar:
 
-* [Zielgruppenbestimmungsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html){target=&quot;_blank&quot;}: Abfrage, Liste lesen, Anreicherung, Vereinigung und mehr
+* [Zielgruppenbestimmungsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=de){target=&quot;_blank&quot;}: Abfrage, Liste lesen, Anreicherung, Vereinigung und mehr
 * [Steuerungsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html?lang=de){target=&quot;_blank&quot;}: Planung, Verzweigung, Warnhinweis, externes Signal und mehr
 * [Aktionsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=de){target=&quot;_blank&quot;}: Kanalübergreifende Sendungen, JavaScript-Code, CRM-Aktivitäten, Aggregat-Update und mehr
-* [Ereignisaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;}: Dateiübertragung, HTTP-Übertragung und mehr
+* [Ereignisaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=de){target=&quot;_blank&quot;}: Dateiübertragung, HTTP-Übertragung und mehr
 
 
-### Datenquellenaktivität ändern {#change-data-source-activity}
+### Aktivität „Datenquelle ändern“ {#change-data-source-activity}
 
-Die Aktivität **[!UICONTROL Datenquelle ändern]** ermöglicht es Ihnen, die Datenquelle eines Workflows zu ändern **[!UICONTROL Arbeitstabelle]**. Dies bietet mehr Flexibilität bei der Verwaltung von Daten über verschiedene Datenquellen wie FDA, FFDA und lokale Datenbanken hinweg.
+Die Aktivität **[!UICONTROL Datenquelle ändern]** ermöglicht es Ihnen, die Datenquelle des Workflows **[!UICONTROL Arbeitstabelle]** zu ändern. Dies bietet mehr Flexibilität bei der Verwaltung von Daten in verschiedenen Datenquellen wie FDA, FFDA und lokalen Datenbanken.
 
-Die **[!UICONTROL Arbeitstabelle]** ermöglicht es dem Adobe Campaign-Workflow, Daten zu verarbeiten und Daten für die Workflow-Aktivitäten freizugeben.
-Standardmäßig wird die **[!UICONTROL Arbeitstabelle]** in derselben Datenbank erstellt wie die Quelle der Daten, die wir abfragen.
+Die **[!UICONTROL Arbeitstabelle]** ermöglicht es dem Adobe Campaign-Workflow, Daten zu verarbeiten und für die Workflow-Aktivitäten freizugeben.
+Standardmäßig wird die **[!UICONTROL Arbeitstabelle]** in derselben Datenbank erstellt wie die Quelle der Daten, die abgefragt werden.
 
 Wenn Sie beispielsweise die Tabelle **[!UICONTROL Profile]** in der Cloud-Datenbank abfragen, erstellen Sie eine **[!UICONTROL Arbeitstabelle]** in derselben Cloud-Datenbank.
 Um dies zu ändern, können Sie die Aktivität **[!UICONTROL Datenquelle ändern]** hinzufügen, um eine andere Datenquelle für Ihre **[!UICONTROL Arbeitstabelle]** auszuwählen.
 
-Beachten Sie, dass bei Verwendung der Aktivität **[!UICONTROL Datenquelle ändern]** Sie zur Cloud-Datenbank zurückkehren müssen, um die Ausführung des Workflows fortzusetzen.
+Beachten Sie, dass Sie bei Verwendung der Aktivität **[!UICONTROL Datenquelle ändern]** zur Cloud-Datenbank zurückkehren müssen, um die Ausführung des Workflows fortzusetzen.
 
-So verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]** :
+So verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**:
 
-1. Erstellen eines Workflows.
+1. Erstellen Sie einen Workflow.
 
-1. Abfragen Sie Ihre Zielgruppenempfänger mit einer **[!UICONTROL Abfrage]** -Aktivität.
+1. Fragen Sie Ihre ausgewählten Empfänger mit einer **[!UICONTROL Abfrage]**-Aktivität ab.
 
-   Weitere Informationen zur Aktivität **[!UICONTROL Abfrage]** finden Sie auf der Seite [Abfrage](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html#creating-a-query) in der Campaign Classic V7-Dokumentation.
+   Weitere Informationen zur Aktivität **[!UICONTROL Abfrage]** finden Sie auf der Seite [Abfrage](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=de#creating-a-query) in der Dokumentation zu Campaign Classic V7.
 
-1. Fügen Sie im Tab **[!UICONTROL Targeting]** die Aktivität **[!UICONTROL Datenquelle ändern]** hinzu und doppelklicken Sie darauf, um **[!UICONTROL Standarddatenquelle]** auszuwählen.
+1. Fügen Sie im Tab **[!UICONTROL Targeting]** die Aktivität **[!UICONTROL Datenquelle ändern]** hinzu und doppelklicken Sie darauf, um die Option **[!UICONTROL Standardmäßige Datenquelle]** auszuwählen.
 
    Die Arbeitstabelle, die das Ergebnis Ihrer Abfrage enthält, wird dann in die standardmäßige PostgreSQL-Datenbank verschoben.
 
-1. Ziehen Sie aus dem Tab **[!UICONTROL Aktionen]** die Aktivität **[!UICONTROL JavaScript-Code]** in den Arbeitsbereich, um einzelne Vorgänge auf die Arbeitstabelle anzuwenden.
+1. Ziehen Sie aus der Registerkarte **[!UICONTROL Aktionen]** die Aktivität **[!UICONTROL JavaScript-Code]** per Drag-and-drop, um einzelne Vorgänge auf die Arbeitstabelle anzuwenden.
 
-   Weitere Informationen zur Aktivität **[!UICONTROL JavaScript-Code]** finden Sie auf der Seite [JavaScript-Code und Erweiterter JavaScript-Code](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/sql-code-and-javascript-code.html#javascript-code) in der Campaign Classic V7-Dokumentation.
+   Weitere Informationen zur Aktivität **[!UICONTROL JavaScript-Code]** finden Sie auf der Seite [JavaScript-Code und erweiterter JavaScript-Code](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/sql-code-and-javascript-code.html?lang=de#javascript-code) in der Dokumentation zu Campaign Classic V7.
 
-1. Fügen Sie eine weitere **[!UICONTROL Aktivität vom Typ Datenquelle]** hinzu, um zur Cloud-Datenbank zurückzukehren.
+1. Fügen Sie eine weitere Aktivität vom Typ **[!UICONTROL Datenquelle ändern]** hinzu, um zur Cloud-Datenbank zurückzukehren.
 
    Doppelklicken Sie auf Ihre Aktivität und wählen Sie **[!UICONTROL Aktives externes FDA-Konto]** und dann das entsprechende externe Konto aus.
 
-1. Jetzt können Sie Ihren Workflow starten.
+1. Sie können den Workflow jetzt starten.
 
 ## Einrichten wiederkehrender Kampagnen
 
