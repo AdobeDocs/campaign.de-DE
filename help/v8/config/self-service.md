@@ -5,9 +5,9 @@ description: Erste Schritte mit dem Campaign Control Panel
 feature: Übersicht
 role: Data Engineer
 level: Beginner
-source-git-commit: d61888a4536d6f37f5956c8fd5404bdcd893ae6c
+source-git-commit: 8415bfce30948104840a92d1be0d72e07c8e29ee
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '337'
 ht-degree: 91%
 
 ---
@@ -24,7 +24,7 @@ Wichtigste Vorteile:
 
 Sie können das Campaign Control Panel auch zum Konfigurieren Ihrer Instanzeinstellungen (z. B. IP-Zulassungsliste und URL-Berechtigungen) oder Abrufen von Informationen über Ihre Instanz nutzen.
 
-↗️ Weitere Informationen finden Sie in der [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=de){target=&quot;_blank&quot;}.
+↗️ Weitere Informationen finden Sie in der [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
 > Die folgenden Funktionen werden in Campaign v8 noch nicht unterstützt:
