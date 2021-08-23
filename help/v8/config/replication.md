@@ -6,10 +6,10 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '386'
-ht-degree: 100%
+source-git-commit: 6334178f6e5d0ad0a33975838be6cf663862d892
+workflow-type: tm+mt
+source-wordcount: '412'
+ht-degree: 93%
 
 ---
 
@@ -43,6 +43,13 @@ Bei Bedarf können Sie die Datensynchronisation manuell starten. Klicken Sie daz
 
 Einige integrierte Tabellen werden mithilfe der oben beschriebenen dedizierten Workflows von der Campaign-Datenbank in die [!DNL Snowflake]-Cloud-Datenbank repliziert.
 
+Erfahren Sie, welche Datenbanken Adobe Campaign v8 verwendet, warum Daten repliziert werden, welche Daten repliziert werden und wie der Replikationsprozess funktioniert.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
+
+
+### Datenreplikationsrichtlinien
+
 Replikationsrichtlinien richten sich nach der Größe der Tabellen. Einige Tabellen werden in Echtzeit repliziert, andere werden hingegen stündlich repliziert. Einige Tabellen erhalten inkrementelle Aktualisierungen, während andere ersetzt werden.
 
 Zusätzlich zum integrierten technischen Workflow **Referenztabellen replizieren** können Sie die Datenreplikation in Ihren Workflows erzwingen.
@@ -65,6 +72,8 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 ```
 
 ![](assets/nlmodule.png)
+
+
 
 **Verwandte Themen**
 
