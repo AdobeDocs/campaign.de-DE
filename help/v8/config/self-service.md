@@ -2,13 +2,13 @@
 product: Adobe Campaign
 title: Campaign Control Panel
 description: Erste Schritte mit dem Campaign Control Panel
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
 source-git-commit: f35122d5e5f5812d9a3fda9b21f2f7fd88aaaa0f
-workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 83%
+workflow-type: ht
+source-wordcount: '344'
+ht-degree: 100%
 
 ---
 
@@ -35,14 +35,13 @@ Sie können das Campaign Control Panel auch zum Konfigurieren Ihrer Instanzeinst
 >
 
 
-
 ## Zugriff auf das Control Panel
 
 Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=de){target=&quot;_blank&quot;}, um weitere Informationen zu erhalten.
 
 ## Control Panel – häufig gestellte Fragen
 
-[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de?lang=en#control-panel){target=&quot;_blank&quot;}, um auf die häufig gestellten Fragen zum Campaign Control Panel zuzugreifen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de?lang=de#control-panel), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ## SFTP-Verwaltung
 
