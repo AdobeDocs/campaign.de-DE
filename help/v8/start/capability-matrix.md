@@ -2,14 +2,14 @@
 product: Adobe Campaign
 title: Funktionsmatrix Campaign Classic v7/Campaign v8
 description: Unterschiede zwischen Campaign Classic v7 und Campaign v8 verstehen
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: d61888a4536d6f37f5956c8fd5404bdcd893ae6c
-workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '920'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Wichtige Änderungen:
 
 * Segmente können bis zu 200-mal schneller erstellt werden
 * Erhöhte Versandgeschwindigkeit
-* Echtzeit-Berichte     mit Cubes
+* Echtzeit-Berichte      mit Cubes
 
 Als [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die in [diesem Abschnitt](#gs-removed) aufgeführt sind. Weitere Änderungen werden in zukünftigen Versionen enthalten sein. [Weitere Informationen finden Sie in diesem Abschnitt](#gs-unavailable-features)
 
@@ -43,7 +43,6 @@ Jedes integrierte Schema (bzw. Tabelle), das in die Cloud-Datenbank verschoben o
 >
 > Kundendaten werden nicht in der lokalen [!DNL Campaign]-Datenbank gespeichert. Daher müssen benutzerdefinierte Tabellen in der Cloud-Datenbank erstellt werden.
 
-
 Für die Verwaltung von Daten zwischen der lokalen und der Cloud-Datenbank stehen spezifische APIs zur Verfügung. Erfahren Sie auf [dieser Seite](../dev/new-apis.md), wie diese neuen APIs funktionieren und wie Sie sie verwenden können.
 
 ### Datenreplikation
@@ -54,7 +53,6 @@ Ein spezieller technischer Workflow behandelt die Replikation von Tabellen, die 
 >
 > Es wurden mehrere Replikationsrichtlinien erstellt, die auf der Größe der Tabelle basieren (XS, XL usw.).
 > Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen aufweisen, andere werden eine vollständige Aktualisierung durchlaufen.
-
 
 [Weitere Informationen zur Datenreplikation](../config/replication.md)
 
@@ -80,7 +78,7 @@ Campaign-Benutzer stellen über ihre Adobe ID eine Verbindung her. Dieselbe Adob
 
 ## Reporting
 
-Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen als Campaign Classic v7 bieten. Für Cubes gelten keine Einschränkungen.
+Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen als Campaign Classic v7 bieten. Für Cubes bestehende Beschränkungen gelten nicht.
 
 ## Workflow {#workflow}
 
