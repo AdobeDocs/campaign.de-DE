@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Erste Schritte mit Campaign-Reporting
 description: Erste Schritte mit den Reporting-Funktionen von Campaign
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '377'
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '376'
 ht-degree: 100%
 
 ---

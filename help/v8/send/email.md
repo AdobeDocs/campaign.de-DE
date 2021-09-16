@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: E-Mails mit Adobe Campaign senden
 description: Erste Schritte mit E-Mails in Campaign
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '618'
+exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '617'
 ht-degree: 100%
 
 ---
@@ -104,11 +104,10 @@ Sie haben folgende Möglichkeiten:
 * Kontrollgruppen verwenden
 * E-Mail-Rendering prüfen
 
-↗️ [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de).
+↗️ [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html).
 
 ## E-Mails überwachen
 
 Nach dem Versand können Sie im Versand-Dashboard den Versandstatus überprüfen und auf Versandprotokolle und Berichte zugreifen, die bestätigen, dass die Nachrichten korrekt versendet wurden.
 
 ↗️ [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de).
-

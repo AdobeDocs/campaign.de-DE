@@ -1,9 +1,9 @@
 ---
-product: Adobe Campaign
 title: Neues Schema in Campaign erstellen
 description: Erfahren Sie, wie Sie in Campaign ein neues Schema erstellen
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
-workflow-type: ht
+exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
 
@@ -111,4 +111,3 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
    ![](assets/configuration_structure.png)
 
 1. Aktualisieren Sie die Datenbankstruktur, um die Tabelle zu erstellen, mit der das Schema verknüpft werden soll. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](update-database-structure.md).
-

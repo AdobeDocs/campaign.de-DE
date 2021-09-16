@@ -1,14 +1,14 @@
 ---
-product: Adobe Campaign
 title: Vordefinierte Filter für Campaign Interaction-Angebote
 description: Erfahren Sie, wie Sie vordefinierte Filter erstellen
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 092262c7-768c-4e86-9b2b-c52516f6a030
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '108'
+ht-degree: 100%
 
 ---
 
@@ -41,4 +41,3 @@ Gehen Sie wie folgt vor, um einen Filter zu erstellen:
 1. Durch Klick auf die Registerkarte **[!UICONTROL Vorschau]** können Sie das Ergebnis des Filters prüfen.
 
    ![](assets/offer_filter_create_006.png)
-

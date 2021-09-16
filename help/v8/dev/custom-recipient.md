@@ -1,15 +1,14 @@
 ---
-product: Adobe Campaign
 title: Ändern der standardmäßigen Empfängertabelle
 description: Erfahren Sie, wie Sie mit einer benutzerdefinierten Empfängertabelle arbeiten.
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '252'
+ht-degree: 100%
 
 ---
 

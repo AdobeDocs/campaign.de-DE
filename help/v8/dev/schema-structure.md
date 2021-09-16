@@ -1,11 +1,11 @@
 ---
-product: Adobe Campaign
 title: Schemastruktur von Campaign
 description: Schemastruktur von Campaign
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1403'
+ht-degree: 100%
 
 ---
 
@@ -350,7 +350,6 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 >* **`[@email]`** und **@email** entsprechen einander
 
 >
-
 
 
 Es ist auch möglich, komplexe Ausdrücke wie die folgenden arithmetischen Operationen zu definieren:

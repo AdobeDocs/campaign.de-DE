@@ -1,9 +1,9 @@
 ---
-product: Adobe Campaign
 title: Mit Campaign-Schemata arbeiten
 description: Erste Schritte mit Schemata
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
+exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
 source-wordcount: '1254'
 ht-degree: 100%
 
@@ -250,4 +250,3 @@ Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](update-dat
 >[!NOTE]
 >
 >Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur die Schemata neu erstellen. Wählen Sie dazu die zu aktualisierenden Schemata aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen...]**.
-

@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: Erste Schritte mit Campaign-APIs
 description: Erste Schritte mit Campaign-APIs
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '331'
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '330'
 ht-degree: 100%
 
 ---
@@ -30,7 +29,6 @@ Campaign v8 kann mit zwei Datenbanken verwendet werden: einer lokalen Datenbank 
 >[!CAUTION]
 >
 >[!DNL Adobe Campaign] v8 enthält eine Begrenzung des Durchsatzes (TPS) auf API-Ebene. Das Aufheben dieser Begrenzung führt zu einem standardmäßigen HTTP-Fehler (429). Als Benutzer von Managed Cloud Services können Sie sich an Adobe wenden, um die Begrenzung für jede API anzupassen.
-
 
 ## Voraussetzungen
 

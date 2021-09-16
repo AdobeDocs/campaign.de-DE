@@ -1,12 +1,12 @@
 ---
-product: Adobe Campaign
 title: Campaign Control Panel
 description: Erste Schritte mit dem Campaign Control Panel
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: f35122d5e5f5812d9a3fda9b21f2f7fd88aaaa0f
-workflow-type: ht
+exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
 
@@ -27,11 +27,11 @@ Sie können das Campaign Control Panel auch zum Konfigurieren Ihrer Instanzeinst
 ↗️ Weitere Informationen finden Sie in der [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
->
 > Die folgenden Funktionen werden in Campaign v8 noch nicht unterstützt:
 >
 >* Subdomain-Verwaltung
 >* Zertifikatverwaltung
+
 >
 
 
@@ -54,4 +54,3 @@ Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign-Instanzen im Control Pane
 * [URL-Genehmigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de){target=&quot;_blank&quot;}
 * [Details der Instanz](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de){target=&quot;_blank&quot;}
 * [GPG-Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de){target=&quot;_blank&quot;}
-

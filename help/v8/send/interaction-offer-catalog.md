@@ -1,14 +1,14 @@
 ---
-product: Adobe Campaign
 title: Campaign Interaction-Angebotskatalog
 description: Erfahren Sie, wie Sie einen Angebotskatalog erstellen
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '411'
+ht-degree: 100%
 
 ---
 
@@ -69,4 +69,3 @@ Gehen Sie wie folgt vor, um eine Ersatzkategorie in die Empfehlungen aufzunehmen
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
    ![](assets/offer_cat_default_001.png)
-

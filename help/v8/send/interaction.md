@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Campaign Interaction-Angebotsverwaltung
 description: Erste Schritte mit der Angebotsverwaltung
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
-workflow-type: ht
-source-wordcount: '1226'
+exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '1225'
 ht-degree: 100%
 
 ---
@@ -85,4 +85,3 @@ Hier bestehen zwei Arten von Einschränkungen:
 * Die **Vorschau** des Angebots zeigt das Angebot so an, wie es im Ordner dargestellt wird. Der Zugriff ist über das Fenster mit den Angebotseinstellungen oder das Kontaktprofil möglich.
 * **Vordefinierte Filter** sind Filterregeln, die Angebotsparameter (z. B. einen Angebots-Code) berücksichtigen können. Sie können nach der Erstellung von Angeboten wiederverwendet werden.
 * Eine **Angebotsdarstellung** ist eine Information, die vom Kanal zur Anzeige des Angebots verwendet wird. Die Angebotsdarstellung kann ausgehend von der Rendering-Funktion der Platzierung erstellt werden, auf der das Angebot dargestellt wird, oder direkt in die Benutzeroberfläche eingegeben werden (z. B. im HTML-Block). Ein Angebot kann durch eine Platzierung dargestellt werden.
-

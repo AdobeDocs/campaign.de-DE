@@ -1,11 +1,11 @@
 ---
-product: Adobe Campaign
 title: Einschränken der Anzeige von personenbezogenen Daten
 description: Erfahren Sie, wie Sie die Anzeige von personenbezogenen Daten einschränken
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 100%
 
 ---
 

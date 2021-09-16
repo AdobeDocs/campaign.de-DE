@@ -1,17 +1,16 @@
 ---
-product: Adobe Campaign
 title: Externe Konten in Campaign
 description: Externe Konten in Campaign
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '1116'
+exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '1115'
 ht-degree: 100%
 
 ---
-
 
 # Externe Konten konfigurieren
 
@@ -173,4 +172,3 @@ Geben Sie dazu in diesem externen Konto die Adresse und die Zugangsdaten für di
    * **[!UICONTROL Verschlüsselung]**: Art der Verschlüsselung, **[!UICONTROL Keine]** oder **[!UICONTROL SSL]**.
 
    * **[!UICONTROL Zugriffsschlüssel]**: Erfahren Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal), wie Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden.
-
