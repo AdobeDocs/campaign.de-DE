@@ -8,9 +8,9 @@ level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
 source-git-commit: 5b81c8e9e391ea1a9ad1825e5102b66c7926c204
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '756'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
@@ -24,37 +24,37 @@ _7. September 2021_
 
 **Verbesserungen bei der Sicherheit**
 
-* Fehlerkorrektur - Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Directory Traversal-Angriffen zu verbessern. (NEO-28547)
+* Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Directory Traversal-Angriffen zu verbessern. (NEO-28547)
 
 **Verbesserungen**
 
-* Nach seinem Ende wurde Flash aus allen damit verbundenen Campaign-Funktionen und -Komponenten entfernt und durch HTML5 ersetzt. Der Diagrammtyp **Grafik** wurde entfernt. (NEO-30330) [mehr dazu](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html)
-* Bei der Installation der Clientkonsole unter Windows überprüft das Installationsprogramm jetzt, ob ein übergeordneter Registrierungsknoten vorhanden ist, und erstellt einen, wenn er fehlt. Dadurch werden potenzielle Probleme beim Starten der Konsole verhindert. (NEO-34854)
-* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu verhindern, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt kodiert.
+* Nach seinem End-of-Life wurde Flash aus allen damit verbundenen Campaign-Funktionen und -Komponenten entfernt und durch HTML5 ersetzt. Der Grafiktyp **Tacho** wurde entfernt. (NEO-30330) [Mehr dazu](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=de)
+* Bei der Installation der Client-Konsole unter Windows überprüft das Installationsprogramm jetzt, ob ein übergeordneter Registrierungsknoten vorhanden ist, und erstellt einen, wenn er fehlt. Dadurch werden potenzielle Probleme beim Starten der Konsole verhindert. (NEO-34854)
+* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu verhindern, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
 
 **Sonstige Änderungen**
 
-* Zuvor veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Bereitstellungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
-* Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Skript aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
-* Es wurde ein Schutzmechanismus hinzugefügt, mit dem nur der technische Workflow [Rechnungsstellung](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html#billing-report) auf der Marketing-Instanz ausgeführt werden kann -
-* Die Identifizierung der Datenquelle wurde in den Daten- und Schema-Tabs des Fensters **Population anzeigen** der Workflow-Transitionen verbessert.
-* Fehlende Datenbankindizes wurden den folgenden Schemas hinzugefügt, um Probleme bei der Datenbankaktualisierung zu vermeiden: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
+* Veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Implementierungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=de#configure-acc-for-microsoft)
+* Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Script aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
+* Es wurde ein Schutzmechanismus hinzugefügt, mit dem der [technische Workflow &quot;Fakturierung&quot;](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=de#billing-report) nur auf der Marketing-Instanz ausgeführt werden kann.
+* In den Daten- und Schema-Registerkarten des Fensters **Population ansehen** der Workflow-Transitionen wurde die Identifizierung der Datenquelle verbessert.
+* Fehlende Datenbankindizes wurden den folgenden Schemas hinzugefügt, um Probleme bei der Datenbankaktualisierung zu vermeiden: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl.
 
 **Korrekturen**
 
-* Fehlerkorrektur - Der Bericht **Klicks** funktioniert jetzt, wenn Angebote mit dem Versand verknüpft sind. (NEO-26295)
-* Fehlerkorrektur - Bei der Aktivität **Unter-Workflow** tritt jetzt kein Fehler mehr auf, wenn bei ihrer Ausführung keine Ausgabetabelle generiert wurde. (NEO-36242)
-* Verschiedene Probleme beim Exportieren des Berichts **Deskriptive Analyse** in PDF wurden behoben. (NEO-25847)
-* Fehlerkorrektur - Sendungen können jetzt problemlos durchgeführt werden, wenn ein externer E-Mail-Versand verwendet wird. (NEO-37435)
-* Fehlerkorrektur - bei der Verbindung mit Microsoft CRM über die Web-API tritt kein Fehler mehr auf. Die Fehlermeldung wurde entfernt, da die Funktionen nicht betroffen waren.
-* Fehlerkorrektur - Es wurde ein Problem mit der Trackinglog-Deduplizierung behoben, das auftrat, wenn der Mid-Server als Relais zwischen Tracking- und Marketing-Servern festgelegt wurde. (NEO-36285)
-* Korrektur einer Regression, die dazu führte, dass Vault nicht als spezifischer Code-Store verwendet werden konnte.
-* Fehlerkorrektur - Variablen können jetzt in einer Workflow-Aktivität vom Typ **Anreicherung** verwendet werden, wenn die eingehende Transition aus einer FDA-Datenquelle stammt.
-* Es wurde ein Problem mit FFDA behoben, das die ordnungsgemäße Replikation von Benutzergruppen und Rechten verhinderte.
-* Fehlerkorrektur - jetzt wird kein falscher Abmelde-Link mehr über den Versand gesendet.
-* Fehlerkorrektur - Die Replikationsverwaltung wirkt sich jetzt nicht mehr auf die Dauer des Postupgrades aus.
-* Fehlerkorrektur - **Klickposition** wird jetzt angezeigt.
-* Fehlerkorrektur - URLs in E-Mail-Nachrichten werden jetzt nicht mehr beschädigt.
+* Fehlerkorrektur – Der Bericht **Klickposition** funktioniert jetzt, wenn Angebote mit dem Versand verknüpft sind. (NEO-26295)
+* Fehlerkorrektur – Bei der Aktivität **Unter-Workflow** tritt jetzt kein Fehler mehr auf, wenn bei ihrer Ausführung keine Ausgabetabelle erzeugt wird. (NEO-36242)
+* Fehlerkorrektur – Das Exportieren des Berichts **Deskriptive Analyse** im PDF-Format funktioniert jetzt problemlos. (NEO-25847)
+* Fehlerkorrektur – Sendungen können jetzt problemlos über einen externen E-Mail-Versand durchgeführt werden. (NEO-37435)
+* Fehlerkorrektur – Bei der Verbindung mit dem Microsoft CRM über die Web-API tritt kein Fehler mehr auf. Die Fehlermeldung wurde entfernt, da die Funktionen nicht betroffen waren.
+* Fehlerkorrektur – Die Trackinglog-Deduplizierung funktioniert jetzt problemlos, wenn der Mid-Server als Relais zwischen Tracking- und Marketing-Servern festgelegt wird. (NEO-36285)
+* Fehlerkorrektur – Eine Regression führt jetzt nicht mehr dazu, dass Vault nicht als spezifischer Code-Store verwendet werden kann.
+* Fehlerkorrektur – In der Workflow-Aktivität **Anreicherung** können jetzt Variablen verwendet werden, wenn die eingehende Transition aus einer FDA-Datenquelle stammt.
+* Fehlerkorrektur – Die ordnungsgemäße Replikation von Benutzergruppen und Berechtigungen wird nicht mehr durch ein Problem mit FFDA verhindert.
+* Fehlerkorrektur – Jetzt wird kein falscher Abmelde-Link mehr über den Versand gesendet.
+* Fehlerkorrektur – Die Replikationsverwaltung wirkt sich jetzt nicht mehr auf die Dauer des Postupgrades aus.
+* Fehlerkorrektur – Die **Klickposition** wird jetzt angezeigt.
+* Fehlerkorrektur – URLs in E-Mail-Nachrichten werden jetzt fehlerfrei angezeigt.
 
 ## Version 8.1.14 {#release-8-1-14}
 
