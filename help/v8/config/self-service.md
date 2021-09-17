@@ -27,11 +27,11 @@ Sie können das Campaign Control Panel auch zum Konfigurieren Ihrer Instanzeinst
 ↗️ Weitere Informationen finden Sie in der [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
+>
 > Die folgenden Funktionen werden in Campaign v8 noch nicht unterstützt:
 >
 >* Subdomain-Verwaltung
 >* Zertifikatverwaltung
-
 >
 
 
