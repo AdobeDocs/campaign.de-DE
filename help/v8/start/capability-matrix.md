@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 873e7df79d60e5c897d09312939bbb1d91f194b2
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 100%
+source-wordcount: '940'
+ht-degree: 93%
 
 ---
 
@@ -89,7 +89,7 @@ Die Aktivität **[!UICONTROL Datenquelle ändern]** ermöglicht es Ihnen, die Da
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
-Bitte beachten Sie, dass in dieser ersten Version einige Funktionen noch nicht verfügbar sind, z. B.:
+Beachten Sie, dass in dieser Version von Campaign einige Funktionen nicht verfügbar sind, z. B.:
 
 * Verwaltung von Marketing-Ressourcen
 * Dezentrales Marketing
@@ -97,6 +97,7 @@ Bitte beachten Sie, dass in dieser ersten Version einige Funktionen noch nicht v
 * Kampagnenoptimierung (Campaign Optimization)
 * Reaktionsverwaltung
 * Hybrid-/On-Premise-Implementierungsmodelle
+* Twitter-Kanal
 
 >[!CAUTION]
 >
@@ -106,14 +107,18 @@ Bitte beachten Sie, dass in dieser ersten Version einige Funktionen noch nicht v
 >
 >Wenden Sie sich an Ihr Account-Team, wenn Sie sich bezüglich Ihres Bereitstellungsmodells nicht sicher sind oder Fragen haben.
 
-## Entfernte Funktionen{#gs-removed}
+## Nicht unterstützte Funktionen{#gs-removed}
 
-Zur Anpassung an die neue Architektur und das Implementierungsmodell von Campaign v8 sind einige frühere Funktionen von Campaign Classic v7 in Campaign v8 nicht mehr verfügbar.
+Zur Anpassung an die neue Architektur und das neue Bereitstellungsmodell von Campaign v8 werden einige Funktionen von Campaign Classic v7 nicht mehr von Campaign v8 unterstützt, z. B.:
 
 * Coupons
 * Webtracking
 * Umfragen
-* Social Marketing
+* Social Marketing mit Facebook
 * ACS Connector (Prime-Angebote)
 * Integration mit LDAP
 * Anmelden mit Benutzer/Kennwort
+
+>[!NOTE]
+>
+>Einige nicht verfügbare oder nicht unterstützte Funktionen können weiterhin in der Benutzeroberfläche angezeigt werden.
