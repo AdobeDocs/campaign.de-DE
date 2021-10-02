@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: bda1fc37181396d295ee23a7161053d839d9cfc7
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 83%
 
 ---
 
@@ -41,7 +41,7 @@ Beachten Sie, dass, wenn Angebote im Workflow verwendet werden, der Benutzer der
 
 >[!NOTE]
 >
->Ein **Angebotsverantwortlicher** kann ein Angebot nur dann validieren, wenn kein Validierer angegeben wurde oder wenn er in der Angebotsvorlage, auf der das Angebot basiert, als Validierer deklariert wurde.
+>**Die Validierung eines Angebots** durch Offer Manager erfolgt nur, wenn kein validierungsverantwortlicher Benutzer angegeben oder in der Angebotsvorlage als validierungsverantwortlicher Benutzer angegeben wurde.
 
 ## Erstellen eines versandverantwortlichen Benutzers {#delivery-manager}
 
@@ -51,15 +51,15 @@ Beachten Sie, dass, wenn Angebote im Workflow verwendet werden, der Benutzer der
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
 
-Die dem Versandverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgende Tätigkeiten:
+Die den Versand-Managern zugewiesenen Berechtigungen ermöglichen es ihnen, die folgenden Aufgaben auszuführen:
 
 * Ansicht der **[!UICONTROL Design-Umgebungen]**;
 * Anzeige und Änderung von Angebotskategorien;
-* Validierung von Angeboten, wenn er als Validierer bezeichnet wurde.
+* Validieren Sie Angebote, wenn sie von ihnen validiert werden.
 
    >[!NOTE]
    >
-   >Der **Versandverantwortliche** kann nur Angebote validieren, für die er bei deren Konfiguration als Validierer deklariert wurde.
+   >**Versandverantwortliche** können ein Angebot nur validieren, wenn sie in der Angebotskonfiguration als validierungsverantwortlich gekennzeichnet wurden.
 
 ## Berechtigungsmatrix jedes Interaction-Benutzers {#recap-of-rights-according-to-operator}
 
