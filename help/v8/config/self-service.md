@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
 ht-degree: 100%
 
@@ -27,11 +27,11 @@ Sie können das Campaign Control Panel auch zum Konfigurieren Ihrer Instanzeinst
 ↗️ Weitere Informationen finden Sie in der [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target=&quot;_blank&quot;}.
 
 >[!CAUTION]
->
 > Die folgenden Funktionen werden in Campaign v8 noch nicht unterstützt:
 >
 >* Subdomain-Verwaltung
 >* Zertifikatverwaltung
+
 >
 
 
