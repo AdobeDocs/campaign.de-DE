@@ -3,7 +3,7 @@ title: Schemastruktur von Campaign
 description: Schemastruktur von Campaign
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
 source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1403'
 ht-degree: 100%
 
@@ -348,6 +348,7 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 >
 >* **location/@city** ist nicht gültig; verwenden Sie **`[location/@city]`**
 >* **`[@email]`** und **@email** entsprechen einander
+
 >
 
 
