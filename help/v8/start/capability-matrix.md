@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: 8668970b0270b990232b78d527d0713efd9d1a4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '940'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Wichtige Änderungen:
 
 * Segmente können bis zu 200-mal schneller erstellt werden
 * Erhöhte Versandgeschwindigkeit
-* Echtzeit-Berichte      mit Cubes
+* Echtzeit-Berichte       mit Cubes
 
 Als [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die in [diesem Abschnitt](#gs-removed) aufgeführt sind. Weitere Änderungen werden in zukünftigen Versionen enthalten sein. [Weitere Informationen finden Sie in diesem Abschnitt](#gs-unavailable-features)
 
@@ -89,7 +89,7 @@ Die Aktivität **[!UICONTROL Datenquelle ändern]** ermöglicht es Ihnen, die Da
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
-Beachten Sie, dass in dieser Version von Campaign einige Funktionen nicht verfügbar sind, z. B.:
+Bitte beachten Sie, dass in dieser Version von Campaign einige Funktionen nicht verfügbar sind, z. B.:
 
 * Verwaltung von Marketing-Ressourcen
 * Dezentrales Marketing
@@ -110,16 +110,16 @@ Beachten Sie, dass in dieser Version von Campaign einige Funktionen nicht verfü
 
 ## Nicht unterstützte Funktionen{#gs-removed}
 
-Zur Anpassung an die neue Architektur und das neue Bereitstellungsmodell von Campaign v8 werden einige Funktionen von Campaign Classic v7 nicht mehr von Campaign v8 unterstützt, z. B.:
+Zur Anpassung an die neue Architektur und das Implementierungsmodell von Campaign v8 werden einige frühere Funktionen von Campaign Classic v7 in Campaign v8 nicht mehr unterstützt, wie z. B.:
 
 * Coupons
 * Webtracking
 * Umfragen
-* Social Marketing mit Facebook
-* ACS Connector (Prime-Angebote)
+* Social Marketing  mit Facebook
+* ACS-Connector (Prime-Angebote)
 * Integration mit LDAP
 * Anmelden mit Benutzer/Kennwort
 
 >[!NOTE]
 >
->Einige nicht verfügbare oder nicht unterstützte Funktionen können weiterhin in der Benutzeroberfläche angezeigt werden.
+>Einige nicht verfügbare oder nicht unterstützte Funktionen sind weiterhin in der Benutzeroberfläche sichtbar.
