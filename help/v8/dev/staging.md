@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
 source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '311'
 ht-degree: 100%
 
@@ -31,6 +31,7 @@ Campaign Classic v7-APIs sind weiterhin verfügbar, profitieren jedoch nicht von
 >* Mit diesem neuen Mechanismus ist die Datensynchronisation für Kanal-Opt-out, Abonnements, Abmeldungen oder mobile Registrierungen jetzt **asynchron**.
 >
 >* Staging gilt nur für Schemata, die in der Cloud-Datenbank gespeichert sind. Aktivieren Sie kein Staging für replizierte Schemata. Aktivieren Sie kein Staging für lokale Schemata. Aktivieren Sie kein Staging für ein bereitgestelltes Schema.
+
 >
 
 
