@@ -4,9 +4,8 @@ description: Erste Schritte mit den Reporting-Funktionen von Campaign
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: 95ed0369-7215-496b-8e11-fe264c436488
-source-git-commit: af17ab77c2c9839a7b84cb79c7c400c83a873521
-workflow-type: ht
+source-git-commit: 76269d65246010af60fda84b388a7c74269e236f
+workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%
 
@@ -26,7 +25,7 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
    ![](assets/built-in-reports.png)
 
-   ↗️ Die nativen Berichte von Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html?lang=de){target=&quot;_blank&quot;} aufgeführt.
+   ![](../assets/do-not-localize/book.png) Die nativen Berichte von Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html?lang=de){target=&quot;_blank&quot;} aufgeführt.
 
 * **Deskriptive Datenanalyse**
 
@@ -36,13 +35,13 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
    ![](assets/desc-analysis-report.png)
 
-   ↗️ Die Berichte zur deskriptiven Analyse von Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target=&quot;_blank&quot;} angezeigt.
+   ![](../assets/do-not-localize/book.png) Die Berichte zur deskriptiven Analyse von Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target=&quot;_blank&quot;} angezeigt.
 
 * **Personalisierte Berichte**
 
    Verwenden Sie Adobe Campaign, um Berichte zu den Daten in der Datenbank zu erstellen. Sobald diese erstellt wurden, machen Sie sie in den entsprechenden Kontexten zugänglich.
 
-   ↗️ Die Schritte zum Erstellen eines Berichts werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=de){target=&quot;_blank&quot;} beschrieben. Die Erstellung personalisierter Berichte ist erfahrenen Benutzern vorbehalten.
+   ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Berichts werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=de){target=&quot;_blank&quot;} beschrieben. Die Erstellung personalisierter Berichte ist erfahrenen Benutzern vorbehalten.
 
 * **Cubes**
 
@@ -53,7 +52,7 @@ Mit Cubes können Sie Daten analysieren und messen, Statistiken erheben und das 
 
    Je nach Komplexität der Abfragen und Berechnungen sowie der bewegten Datenmenge werden die in den Berichten zu analysierenden Daten über eine Abfrage gesammelt und in einer Liste (Workflow vom Typ &quot;Daten-Management&quot;) oder einem Cube (unter Verwendung der Option &quot;Marketing Analytics&quot;) voraggregiert. Sie werden in Form einer Pivot-Tabelle oder einer Liste mit Gruppierung angezeigt.
 
-   ↗️ Wie Sie Cubes erstellen, erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html?lang=de){target=&quot;_blank&quot;}.
+   ![](../assets/do-not-localize/book.png) Wie Sie Cubes erstellen, erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html?lang=de){target=&quot;_blank&quot;}.
 
 
 Beachten Sie, dass Adobe Campaign-Berichte optimiert sind und bessere Skalierungsfunktionen als Campaign Classic v7 bieten. Die bestehenden Einschränkungen gelten nicht für Cubes.
