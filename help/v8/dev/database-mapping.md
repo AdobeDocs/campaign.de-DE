@@ -2,8 +2,8 @@
 title: Mapping der Campaign-Datenbank
 description: Mapping der Campaign-Datenbank
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 100%
 
@@ -256,7 +256,7 @@ Für Join-Beziehungen mit Federated Database Access:
 * ![](assets/do-not-localize/join_fda_11.png): 1-1-Kardinalität
 * ![](assets/do-not-localize/join_fda_1m.png): 1-N-Kardinalität
 
-?? Weitere Informationen zu FDA-Tabellen finden Sie unter [Federated Data Access](../connect/fda.md).
+![](../assets/do-not-localize/glass.png) Weitere Informationen zu FDA-Tabellen finden Sie unter [Federated Data Access](../connect/fda.md).
 
 In dem Schema, das den Fremdschlüssel der Tabelle enthält, muss über das Hauptelement eine Relation angegeben werden:
 

@@ -5,8 +5,8 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 100%
 
@@ -39,9 +39,9 @@ Campaign v8 kann eine Verbindung herstellen mit:
 
 Sie können Ihre **Audiences** und **Assets** über Experience Cloud-Lösungen hinweg auch mit Funktionen zum Freigeben von Assets und Audiences kombinieren.
 
-↗️ Weitere Informationen zur **gemeinsamen Nutzung von Audiences** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
+![](../assets/do-not-localize/book.png) Weitere Informationen zur **gemeinsamen Nutzung von Audiences** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
 
-↗️ Weitere Informationen zur **gemeinsamen Nutzung von Assets** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
+![](../assets/do-not-localize/book.png) Weitere Informationen zur **gemeinsamen Nutzung von Assets** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
 
 ## CRM-Connectoren{#gs-crm-connectors}
 
@@ -50,13 +50,13 @@ Sie können Ihre Adobe Campaign-Plattform mit Ihren **CRM-Systemen von Drittanbi
 Aktivieren Sie Ihre CRM-Daten für kanalübergreifende Kommunikation: Erfahren Sie, wie Sie Kontakte von Ihrem CRM-System an Adobe Campaign weitergeben und wiederum Kampagnendaten von Adobe Campaign mit Ihrem CRM-System teilen können.
 CRM-Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adobe Campaign bietet einen dedizierten Assistenten zur Erfassung und Auswahl aus den im CRM verfügbaren Tabellen. Damit ist eine bidirektionale Synchronisation gewährleistet, die sicherstellt, dass die Daten in den Systemen jederzeit aktuell sind.
 
-?? Erfahren Sie auf [dieser Seite](crm.md), wie Sie Campaign mit Microsoft Dynamics 365 und Salesforce.com integrieren.
+![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](crm.md), wie Sie Campaign mit Microsoft Dynamics 365 und Salesforce.com integrieren.
 
 ## Federated Data Access (FDA){#gs-fda}
 
 Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer oder mehreren **externen Datenbanken** zu verbinden und darin gespeicherte Informationen zu verarbeiten, ohne die Daten in Ihrer Campaign Cloud-Datenbank zu beeinflussen.
 
-?? Weiterführende Informationen finden Sie auf [dieser Seite](fda.md).
+![](../assets/do-not-localize/glass.png) Weiterführende Informationen finden Sie auf [dieser Seite](fda.md)
 
 
 <!-- 
@@ -68,4 +68,4 @@ Use the **Managing social networks (Social Marketing)** option to interact with 
 
 * Collect new contacts - Adobe Campaign Social Marketing also makes it easy to acquire new contacts via Facebook: contact users and ask them if they want to share their profile information. If they accept, Adobe Campaign automatically recovers the data, which enables you to carry out targeting campaigns and, when possible, to implement cross-channel strategies.
 
-💡 Learn how to set up and use Campaign Social Marketing in [this section](../connect/ac-tw.md) -->
+![](../assets/do-not-localize/glass.png) Learn how to set up and use Campaign Social Marketing in [this section](../connect/ac-tw.md) -->

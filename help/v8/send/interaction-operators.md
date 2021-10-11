@@ -4,11 +4,10 @@ description: Erstellen von Angebotsverwaltungs-Benutzern
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: bda1fc37181396d295ee23a7161053d839d9cfc7
+source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 83%
+source-wordcount: '383'
+ht-degree: 74%
 
 ---
 
@@ -21,9 +20,9 @@ Zwei Typen von Benutzern können Campaign Interaction verwenden: **Angebotsveran
 
 ## Erstellen eines angebotsverantwortlichen Benutzers{#offer-manager}
 
-1. Erstellen Sie den neuen Benutzer.
+1. Erstellen eines Benutzers.
 
-   ↗️ Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=de) beschrieben.
+   ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=de) beschrieben.
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Angebotsverantwortliche Benutzer]** aus.
 
@@ -37,7 +36,7 @@ Die dem Angebotsverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgen
 * Konfiguration von Angebotseignungen;
 * Validierung von Angeboten.
 
-Beachten Sie, dass, wenn Angebote im Workflow verwendet werden, der Benutzer der Benutzergruppe **[!UICONTROL Administrator]** oder **[!UICONTROL Angebotsverantwortliche Benutzer]** angehören muss, um den Workflow auszuführen.
+Wenn Angebote in einem Workflow verwendet werden, muss der Benutzer der Benutzergruppe **[!UICONTROL Administrator]** oder **[!UICONTROL Angebotsverantwortliche]** hinzugefügt werden, um den Workflow auszuführen.
 
 >[!NOTE]
 >
@@ -45,9 +44,9 @@ Beachten Sie, dass, wenn Angebote im Workflow verwendet werden, der Benutzer der
 
 ## Erstellen eines versandverantwortlichen Benutzers {#delivery-manager}
 
-1. Erstellen Sie den neuen Benutzer.
+1. Erstellen eines Benutzers.
 
-   ↗️ Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html) beschrieben.
+   ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html) beschrieben.
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
 
