@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
-source-wordcount: '274'
-ht-degree: 100%
+source-git-commit: 83874f4d124d7892f99e973684b1e8ee571f31e0
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 78%
 
 ---
 
@@ -20,9 +20,7 @@ Wenn bestimmte Versionen dieser Drittanbietersysteme und -Tools das Ende des Leb
 
 ## Client-Konsole{#ClientConsoleoperatingsystems}
 
->[!CAUTION]
->
-> Für die Verwendung der Campaign-Client-Konsole sind die folgenden Betriebssysteme und Browser erforderlich.
+Für die Verwendung der Campaign-Client-Konsole sind die folgenden Betriebssysteme und Browser erforderlich. [Weitere Informationen](connect.md).
 
 ### Betriebssysteme
 
@@ -33,12 +31,20 @@ Wenn bestimmte Versionen dieser Drittanbietersysteme und -Tools das Ende des Leb
 
 **Microsoft Internet Explorer** 11
 
+>[!NOTE]
+>
+>Adobe Campaign Server und Client Console müssen dieselbe Version aufweisen. [Erfahren Sie, wie Sie Ihre Version](#version) überprüfen.
+
 ## CRM-Connectoren{#CRMconnectors}
+
+Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relationship Management). [Weitere Informationen](../connect/crm.md).
 
 * **Salesforce** Connector-API, Version 49
 * **Microsoft Dynamic**-Connector, Web API: Dynamics 365 On-Premise und Online
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
+
+Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Access (FDA)-Modul kompatibel: [Weitere Informationen](../connect/fda.md).
 
 * **Amazon Redshift**
 * **[!DNL Google Big Query]**
@@ -47,18 +53,20 @@ Wenn bestimmte Versionen dieser Drittanbietersysteme und -Tools das Ende des Leb
 
 ## Mobile SDK{#MobileSDK}
 
+Sie können Campaign verwenden, um [Push-Benachrichtigungen](../send/push.md) unter den unten aufgeführten Betriebssystemen mithilfe des zugehörigen Mobile SDK zu senden.
+
 * **Android** 7.x, 8.x, 9.0 mit Campaign Android SDK Build 1.1.1.
 * **Apple iOS** 9–14 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen.
 
 ## Web-Zugriff
 
-Die folgenden Browser sind mit Campaign für Web-Zugriff kompatibel.
+Die folgenden Browser sind mit Campaign für [Web Access](connect.md#web-access) kompatibel.
 
 * **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** (neueste Versionen)
 
 * **Internet Explorer 11**
 
-## So überprüfen Sie Ihre Campaign-Version   und den Build
+## So überprüfen Sie Ihre Campaign-Version   und den Build{#version}
 
 Öffnen Sie das Menü **Hilfe > Über...**, um Ihre Version zu überprüfen.
 
