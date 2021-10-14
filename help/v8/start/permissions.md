@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: c3ed24e16d5a8bc67b8a8c959bbf485ea0fd919c
-workflow-type: ht
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -36,12 +36,12 @@ Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz an
 
 Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft, auf die über den Knoten **[!UICONTROL Administration > Zugriffe > Operatoren]** zugegriffen werden kann.
 
-?? Wenn Sie Kunde von Managed Cloud Services sind, legt Adobe die Sicherheitszonen für Sie fest. Weitere Informationen finden Sie unter [Adobe kontaktieren](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services legt Adobe die Sicherheitszonen für Sie fest. Weitere Informationen finden Sie unter [Adobe kontaktieren](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}.
 
 **Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7**
 
 * [Native spezifische Berechtigungen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-named-rights.html?lang=de){target=&quot;_blank&quot;}
 
-* [Native Operatorgruppen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=de#default-groups){target=&quot;_blank&quot;}
+* [Native Operatorgruppen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=en#default-groups){target=&quot;_blank&quot;}
 
 * [Schritte zum Einrichten von Berechtigungen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=de#getting-started){target=&quot;_blank&quot;}

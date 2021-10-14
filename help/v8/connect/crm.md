@@ -4,7 +4,8 @@ description: Erfahren Sie, wie Sie mit Campaign und Ihrem CRM-System arbeiten k�
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
@@ -25,7 +26,7 @@ Diese Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adob
 
 Unterstützte CRM-Systeme und Versionen werden in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) von Campaign erläutert.
 
-?? Die CRM-Connectoren funktionieren ausschließlich unter Verwendung einer sicheren URL (https).
+![](../assets/do-not-localize/speech.png)  Die CRM-Connectoren funktionieren ausschließlich unter Verwendung einer sicheren URL (https).
 
 ## Implementierungsschritte {#crm-implementation-steps}
 

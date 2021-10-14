@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
@@ -22,7 +22,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihr Produkterlebnis zu verbessern. Deshalb erachten wir es für wichtig, dass Sie die aktuelle Version von Adobe Campaign verwenden.
 
-   ?? Als Managed Cloud Services-Anwender wird Ihre Instanz mit jeder neuen Version von Adobe aktualisiert.
+   ![](../assets/do-not-localize/speech.png)  Als Managed Cloud Services-Anwender wird Ihre Instanz mit jeder neuen Version von Adobe aktualisiert.
 
 1. **Wie kann ich eine Verbindung zu Campaign v8 herstellen?**
 
@@ -60,7 +60,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Sie können Ihre Domain in Subdomains unterteilen, um Ihre Marken oder unterschiedlichen Textsorten (Transaktionsnachrichten, Marketing-Informationen usw.) voreinander zu trennen.
 
-   ?? Als Managed Cloud Services-Anwender kontaktieren Sie Adobe, um Ihre Subdomains an Adobe zu übertragen.
+   ![](../assets/do-not-localize/speech.png)  Als Managed Cloud Services-Anwender kontaktieren Sie Adobe, um Ihre Subdomains an Adobe zu übertragen.
 
 1. **Kann ich als Campaign Classic v7-Anwender zu Campaign v8 migrieren?**
 
