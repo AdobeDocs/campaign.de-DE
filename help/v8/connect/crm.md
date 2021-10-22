@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Diese Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adob
 
 Unterstützte CRM-Systeme und Versionen werden in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) von Campaign erläutert.
 
-![](../assets/do-not-localize/speech.png)  Die CRM-Connectoren funktionieren ausschließlich unter Verwendung einer sicheren URL (https).
+![](../assets/do-not-localize/speech.png)  Die CRM-Connectoren funktionieren ausschließlich mit einer sicheren URL (https).
 
 ## Implementierungsschritte {#crm-implementation-steps}
 
