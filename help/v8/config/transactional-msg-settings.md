@@ -6,15 +6,15 @@ role: Data Engineer
 level: Beginner
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Einstellungen für Transaktionsnachrichten
 
-![](../assets/do-not-localize/speech.png)  Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
+![](../assets/do-not-localize/speech.png) Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
 ![](../assets/do-not-localize/glass.png) In [diesem Abschnitt](../send/transactional.md) sind die Funktionen für Transaktionsnachrichten beschrieben.
 
@@ -42,7 +42,7 @@ Um Push-Benachrichtigungen zu Transaktionen zu senden, müssen Sie die folgenden
 
    >[!CAUTION]
    >
-   >Prüfen Sie Ihren Lizenzvertrag, bevor Sie ein neues natives Campaign-Package installieren.
+   >Prüfen Sie Ihre Lizenzvereinbarung, bevor Sie ein neues integriertes Campaign-Paket installieren.
 
 1. Replizieren Sie den Service **Mobile App** und die zugehörigen Mobile Apps in den Ausführungsinstanzen.
 
