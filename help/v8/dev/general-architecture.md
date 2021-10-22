@@ -3,9 +3,9 @@ title: Allgemeine Architektur
 description: Erfahren Sie mehr über die Architektur und Komponenten von Campaign.
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1217'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -124,6 +124,6 @@ Kunden können Adobe Campaign mithilfe der vordefinierten Datenbank und Schemata
 
 >[!CAUTION]
 >
->Mit **Campaign Managed Cloud Services** wurden Ihre Umgebung und die Erstkonfiguration gemäß Ihren Lizenzbestimmungen von Adobe festgelegt. Sie dürfen keine installierten integrierten Packages, integrierten Schemata oder Berichte ändern.
+>Mit **Campaign Managed Cloud Services** wurden Ihre Umgebung und die anfängliche Konfiguration von Adobe gemäß den Bedingungen Ihrer Lizenzvereinbarung festgelegt. Sie dürfen keine installierten integrierten Packages, integrierten Schemata oder Berichte ändern.
 >
 >Wenn Sie ein Campaign-Add-on oder eine spezifische Funktion verwenden müssen, das/die Ihnen nicht zur Verfügung gestellt wurde, wenden Sie sich an die **Adobe-Kundenunterstützung**.
