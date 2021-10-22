@@ -3,7 +3,7 @@ title: Best Practices für die Campaign-Sicherheit
 description: Erste Schritte mit Best Practices für die Campaign-Sicherheit
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '513'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 * Stellen Sie sicher, dass der Zugriff auf verschlüsselte Passwörter beschränkt ist.
 * Schützen Sie Seiten, die möglicherweise personenbezogene Daten enthalten (z. B. Mirror-Seiten, Web-Anwendungen usw.).
 
-![](../assets/do-not-localize/speech.png)  Als Managed Cloud Services-Anwender unterstützt Sie Adobe dabei, diese Konfigurationen in Ihrer Umgebung zu implementieren.
+![](../assets/do-not-localize/speech.png)  Adobe unterstützt Sie als Benutzer von Managed Cloud Services bei der Implementierung dieser Konfigurationen in Ihrer Umgebung.
 
 ## Personalisierung
 
