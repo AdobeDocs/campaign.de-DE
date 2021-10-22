@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1549'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Transaktionsnachricht (Message Center) ist ein Campaign-Modul, das die Nachrichtenauslösung handhabt. Diese Nachrichten werden durch Ereignisse erzeugt, die von Informationssystemen ausgelöst werden. Hierzu zählen u. a.: Rechnungen, Bestellbestätigungen, Lieferbestätigungen, Passwortänderungen, Benachrichtigungen über die Nicht-Verfügbarkeit eines Produkts, Kontostandsinformationen oder die Erstellung eines Website-Kontos.
 
-![](../assets/do-not-localize/speech.png)  Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
+![](../assets/do-not-localize/speech.png) Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
 Transaktionsnachrichten dienen zum Senden von:
 
@@ -151,7 +151,7 @@ Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versa
 
 Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei jedem Versand.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zu Testsendungen finden Sie in der Dokumentation zu  [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Erfahren Sie mehr über den Testversand in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}
 
 Um jedoch einen Testversand einer Transaktionsnachricht zu senden, müssen Sie die folgenden Vorgänge ausführen:
 
