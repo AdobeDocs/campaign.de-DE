@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1213'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ In diesem Abschnitt erfahren Sie, wie Sie Adobe Campaign an die Anforderungen Ih
 
 >[!CAUTION]
 >
->Mit **Campaign Managed Cloud Services** wurden Ihre Umgebung und die Erstkonfiguration gemäß Ihren Lizenzbestimmungen von Adobe festgelegt. Sie dürfen keine installierten integrierten Packages, integrierten Schemata oder Berichte ändern.
+>Mit **Campaign Managed Cloud Services** wurden Ihre Umgebung und Ihre Anfangskonfiguration von Adobe gemäß den Bedingungen Ihrer Lizenzvereinbarung festgelegt. Sie dürfen keine installierten integrierten Packages, integrierten Schemata oder Berichte ändern.
 >
 >Wenn Sie ein Campaign-Add-on oder eine spezifische Funktion verwenden müssen, das/die Ihnen nicht zur Verfügung gestellt wurde, wenden Sie sich an die **Adobe-Kundenunterstützung**.
 
@@ -49,7 +49,7 @@ Informationen zu Sicherheitsrichtlinien und -prinzipien für Adobe Campaign find
 
 ### Benutzer hinzufügen und Berechtigungen erteilen
 
-Sie können Benutzer manuell zu Campaign hinzufügen und Gruppen zuordnen, die an Ihrer Rollenhierarchie ausgerichtet sind. Die Benutzer können sich dann anmelden und auf die für sie passenden Daten und Berechtigungen zugreifen.
+Sie können Benutzer entsprechend Ihrer Rollenhierarchie manuell zu Campaign hinzufügen und sie Gruppen zuordnen. Die Benutzer können sich dann anmelden und auf die für sie geeigneten Daten und Berechtigungen zugreifen.
 
 ![](../assets/do-not-localize/book.png) Wie Sie Benutzer zu Adobe Campaign hinzufügen, erfahren Sie [in diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=de#getting-started){target=&quot;_blank&quot;}.
 
@@ -69,7 +69,7 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folg
 
    ![](../assets/do-not-localize/glass.png) [Erfahren Sie, wie Sie Profile importieren](import.md).
 
-   Zielgruppen werden in Listen gruppiert und können mithilfe von Workflows erstellt werden. Sie können dann in kanalübergreifenden Sendungen gezielt angesprochen werden.
+   Audiences werden in Listen gruppiert und können über Workflows erstellt werden. Sie können dann in kanalübergreifenden Sendungen gezielt angesprochen werden.
 
    ![](../assets/do-not-localize/glass.png) [Erfahren Sie, wie Sie Audiences definieren](audiences.md).
 
