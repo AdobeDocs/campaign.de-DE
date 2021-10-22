@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '85'
 ht-degree: 100%
 
@@ -19,4 +19,4 @@ LINE ist ein Programm für kostenloses Instant Messaging, Sprach- und Videoanruf
 
 ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=de).{target=&quot;_blank&quot;}.
 
-![](../assets/do-not-localize/book.png) Informationen zum Erstellen und Senden Ihres ersten LINE-Versands finden Sie in der Dokumentation zu Campaign Classic v7 unter [End-to-End-Beispiel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=de#example--create-and-send-a-personalized-line-message).
+![](../assets/do-not-localize/book.png) Nutzen Sie dieses [End-to-End-Beispiel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=de#example--create-and-send-a-personalized-line-message) in der Dokumentation zu Campaign Classic v7, um Ihren ersten LINE-Versand zu erstellen und zu versenden.
