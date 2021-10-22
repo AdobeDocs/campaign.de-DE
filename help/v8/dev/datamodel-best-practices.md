@@ -3,7 +3,7 @@ title: Best Practices für Datenmodelle
 description: Best Practices für die Erweiterung von Campaign-Datenmodellen
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2688'
 ht-degree: 100%
 
@@ -175,7 +175,7 @@ Es gibt verschiedene Lösungen, um den Bedarf an Datensätzen in Adobe Campaign 
 
 Sie können in einem Schema das Attribut &quot;deleteStatus&quot; deklarieren. Effizienter ist es, den Datensatz als gelöscht zu markieren und das Löschen in die Bereinigungsaufgabe zu verschieben.
 
-![](../assets/do-not-localize/speech.png)  Wenden Sie sich als Managed Cloud Services-Anwender an die Berater oder technischen Administratoren von Adobe, um mehr über Datenspeicherung zu erfahren oder wenn Sie eine Datenspeicherung für benutzerdefinierte Tabellen aktivieren müssen.
+![](../assets/do-not-localize/speech.png)  Wenden Sie sich als Benutzer von Managed Cloud Services an die Berater oder technischen Administratoren von Adobe, um mehr über die Datenspeicherung zu erfahren oder wenn Sie eine Datenspeicherung für benutzerdefinierte Tabellen aktivieren müssen.
 
 ## Leistung {#performance}
 
