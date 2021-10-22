@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '547'
 ht-degree: 100%
 
@@ -34,10 +34,10 @@ Folgende Optionen stehen zum Anmelden (Opt-in) eines Profils für einen Service 
 
    ![](assets/subscribe-confirm.png)
 
-   ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;}.
+   ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=de#deliveries-tab){target=&quot;_blank&quot;}.
 
 
-* Empfänger im Zuge eines Imports für einen Service anmelden. Geben Sie im letzten Schritt des Import-Assistenten den gewünschten Service an.
+* Importieren Sie Empfänger und lassen Sie sie automatisch einen Informations-Service abonnieren. Wählen Sie dazu im letzten Schritt des Importassistenten den betreffenden Service aus.
 
    ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=de#step-5—additional-step-when-importing-recipients){target=&quot;_blank&quot;}.
 
@@ -52,7 +52,7 @@ Folgende Optionen stehen zum Anmelden (Opt-in) eines Profils für einen Service 
    ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=de#create-a-subscription--form-with-double-opt-in){target=&quot;_blank&quot;}.
 
 
-* Empfänger unter Verwendung eines Zielgruppen-Workflows mit der Aktivität **[!UICONTROL Anmeldedienst]** anmelden.
+* Erstellen Sie einen Zielgruppen-Workflows und nutzen Sie die Aktivität **[!UICONTROL Anmeldedienst]**.
 
    ![](assets/wf-subscription.png)
 
