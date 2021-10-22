@@ -1,34 +1,34 @@
 ---
-title: Filtern von Kampagnenschemata
+title: Filtern von Campaign-Schemata
 description: Erfahren Sie, wie Sie Campaign-Schemata filtern
 source-git-commit: e0faeda87d5b84309524a72d9f021c381ac4619e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Filterschemata{#filter-schemas}
+# Filtern von Schemata{#filter-schemas}
 
 ## Systemfilter {#system-filters}
 
-Sie können den Schemazugriff nach bestimmten Benutzern filtern, abhängig von deren Berechtigungen. Mit Systemfiltern können Sie die Lese- und Schreibberechtigungen von Entitäten verwalten, die in Schemas beschrieben sind, und dabei die Parameter **readAccess** und **writeAccess** verwenden.
+Sie können den Schema-Zugriff abhängig von Berechtigungen nach bestimmten Benutzern filtern. Mit Systemfiltern können Sie die Lese- und Schreibberechtigungen von Entitäten verwalten, die in Schemas beschrieben sind. Dabei verwenden Sie die Parameter **readAccess** und **writeAccess**.
 
 >[!NOTE]
 >
->Diese Einschränkung gilt nur für nicht technische Benutzer: Ein technischer Benutzer mit entsprechenden Berechtigungen oder mithilfe eines Workflows kann Daten abrufen und aktualisieren.
+>Diese Einschränkung gilt nur für nicht-technische Benutzer: Ein technischer Benutzer mit entsprechenden Berechtigungen oder unter Verwendung eines Workflows kann die Daten abrufen und aktualisieren.
 
 * **readAccess**: bietet schreibgeschützten Zugriff auf Schemadaten.
 
-   **Warnung**  - Alle verknüpften Tabellen müssen mit derselben Einschränkung versehen werden. Diese Konfiguration kann sich auf die Leistung auswirken.
+   **Warnung**  - Alle verknüpften Tabellen müssen mit derselben Einschränkung versehen werden. Diese Konfiguration kann die Leistung beeinträchtigen.
 
 * **writeAccess**: bietet Schreibzugriff auf Schemadaten.
 
-Diese Filter werden auf der Hauptseite **element** der Schemas eingegeben und können, wie in den folgenden Beispielen gezeigt, gebildet werden, um den Zugriff zu beschränken.
+Diese Filter werden auf der **Hauptelementebene** der Schemata eingegeben und können, wie in den folgenden Beispielen gezeigt, zur Einschränkung des Zugriffs gebildet werden.
 
-* SCHREIBberechtigungen beschränken
+* SCHREIB-Berechtigungen beschränken
 
-   Hier wird der Filter verwendet, um WRITE-Berechtigungen für das Schema für Benutzer ohne ADMINISTRATION zu verweigern. Dies bedeutet, dass nur Administratoren Schreibberechtigungen für Entitäten haben, die von diesem Schema beschrieben werden.
+   Hier wird der Filter verwendet, um Betreibern ohne ADMINISTRATOR-Berechtigung die SCHREIB-Berechtigung für das Schema zu verweigern. Das bedeutet, dass nur Administratoren Schreibrechte für Entitäten haben, die durch dieses Schema beschrieben werden.
 
    ```
    <sysFilter name="writeAccess">      
@@ -36,9 +36,9 @@ Diese Filter werden auf der Hauptseite **element** der Schemas eingegeben und k�
    </sysFilter>
    ```
 
-* READ- und WRITE-Berechtigungen beschränken:
+* Schränken Sie die LESE- und SCHREIB-Berechtigungen ein:
 
-   Hier wird der Filter verwendet, um die LESE- und WRITE-Berechtigungen für das Schema für alle Operatoren zu deaktivieren. Nur das Konto **internal**, dargestellt durch den Ausdruck &quot;$(loginId)!= 0&quot;, hat diese Berechtigungen.
+   Hier wird der Filter verwendet, um sowohl LESE- als auch SCHREIB-Berechtigungen für das Schema für alle Operatoren zu verbieten. Nur das **interne** Konto, dargestellt durch den Ausdruck &quot;$(loginId)!=0&quot;, hat diese Berechtigungen.
 
    ```
    <sysFilter name="readAccess"> 
@@ -50,15 +50,15 @@ Diese Filter werden auf der Hauptseite **element** der Schemas eingegeben und k�
    </sysFilter>
    ```
 
-   Mögliche **expr** Attributwerte, die zur Definition der Bedingung verwendet werden, sind TRUE oder FALSE.
+   Mögliche **expr**-Attributwerte, die zur Definition der Bedingung verwendet werden, sind TRUE oder FALSE.
 
 >[!NOTE]
 >
 >Wenn kein Filter angegeben ist, verfügen alle Benutzer über Lese- und Schreibberechtigungen für das Schema.
 
-## Integrierte Schemata in Protect
+## Integrierte Schemata schützen
 
-Standardmäßig sind integrierte Schemata nur mit WRITE-Berechtigungen für Benutzer mit ADMINISTRATION-Rechten zugänglich:
+Standardmäßig sind integrierte Schemata nur mit SCHREIB-Berechtigungen für Benutzer mit ADMINISTRATOR-Rechten zugänglich:
 
 * ncm:publishing
 * nl:monitoring
@@ -93,14 +93,14 @@ Standardmäßig sind integrierte Schemata nur mit WRITE-Berechtigungen für Benu
 
 >[!CAUTION]
 >
->Lese- und WRITE-Berechtigungen für das Schema **xtk:sessionInfo** sind nur für das interne Konto einer Adobe Campaign-Instanz zugänglich.
+>LESE- und SCHREIB-Berechtigungen für das Schema **xtk:sessionInfo** sind nur über das interne Konto einer Adobe Campaign-Instanz zugänglich.
 
-## Systemfilter integrierter Schemata ändern
+## Systemfilter der integrierten Schemata ändern
 
-Integrierte Schemata sind geschützt, um Kompatibilitätsprobleme mit älteren Versionen zu vermeiden. Adobe empfiehlt, die Standardschemaparameter nicht zu ändern, um eine optimale Sicherheit zu gewährleisten.
+Integrierte Schemata sind geschützt, um Kompatibilitätsprobleme mit älteren Versionen zu vermeiden. Adobe empfiehlt Ihnen, die Standard-Schemaparameter nicht zu ändern, um optimale Sicherheit zu gewährleisten.
 
-In bestimmten Kontexten müssen Sie jedoch möglicherweise die Systemfilter der integrierten Schemas ändern. Gehen Sie dazu wie folgt vor:
+In bestimmten Kontexten kann es jedoch erforderlich sein, die Systemfilter der integrierten Schemata zu ändern. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie eine Erweiterung für das integrierte Schema oder öffnen Sie eine vorhandene Erweiterung.
-1. Fügen Sie ein untergeordnetes Element **`<sysfilter name="<filter name>" _operation="delete"/>`** im Hauptelement hinzu, um den Filter im integrierten Schema unter demselben zu ignorieren.
+1. Fügen Sie ein untergeordnetes Element **`<sysfilter name="<filter name>" _operation="delete"/>`** im Hauptelement hinzu, um den Filter unter demselben Element im integrierten Schema zu ignorieren.
 1. Sie können einen neuen Filter hinzufügen, wie im Abschnitt [Systemfilter](#system-filters) beschrieben.
