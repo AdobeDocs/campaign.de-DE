@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '940'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Campaign-Benutzer müssen keine Datenbankexperten sein: Es besteht kein Bedarf m
 
 Campaign-Benutzer stellen über ihre Adobe ID eine Verbindung her. Dieselbe Adobe ID wird verwendet, um alle Ihre Adobe-Pläne und -Produkte mit einem einzigen Konto zu verknüpfen.
 
-![](../assets/do-not-localize/glass.png) Auf  [!DNL Campaign] dieser  [Seite](connect.md) erfahren Sie, wie Sie eine Verbindung mit herstellen.
+![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](connect.md), wie Sie eine Verbindung zu [!DNL Campaign] herstellen können. 
 
 ## Reporting
 
@@ -85,7 +85,7 @@ Campaign v8 bietet eine zusätzliche Workflow-Aktivität für die Zielgruppenbes
 
 Die Aktivität **[!UICONTROL Datenquelle ändern]** ermöglicht es Ihnen, die Datenquelle des Workflows **[!UICONTROL Arbeitstabelle]** zu ändern, um Daten aus verschiedenen Datenquellen wie FDA, FFDA und lokalen Datenbanken zu verwalten.
 
-![](../assets/do-not-localize/glass.png) Weitere Informationen zur Aktivität  **[!UICONTROL Datenquellen]** ändern finden Sie auf  [dieser Seite](../config/workflows.md#change-data-source-activity).
+![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](../config/workflows.md#change-data-source-activity) mehr über die Aktivität **[!UICONTROL Datenquelle ändern]**.
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
