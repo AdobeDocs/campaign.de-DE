@@ -4,10 +4,11 @@ description: Erstellen von Angebotsverwaltungs-Benutzern
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
-workflow-type: tm+mt
+exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
+source-git-commit: 94fc2739c538f3aa8b11e0ea69d08f1bfffb5d32
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +21,7 @@ Zwei Typen von Benutzern können Campaign Interaction verwenden: **Angebotsveran
 
 ## Erstellen eines angebotsverantwortlichen Benutzers{#offer-manager}
 
-1. Erstellen eines Benutzers.
+1. Erstellen Sie einen Benutzer.
 
    ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=de) beschrieben.
 
@@ -36,38 +37,38 @@ Die dem Angebotsverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgen
 * Konfiguration von Angebotseignungen;
 * Validierung von Angeboten.
 
-Wenn Angebote in einem Workflow verwendet werden, muss der Benutzer der Benutzergruppe **[!UICONTROL Administrator]** oder **[!UICONTROL Angebotsverantwortliche]** hinzugefügt werden, um den Workflow auszuführen.
+Wenn Angebote in einem Workflow verwendet werden, muss der Benutzer der Benutzergruppe **[!UICONTROL Administrator]** oder **[!UICONTROL Angebotsverantwortliche Benutzer]** hinzugefügt werden, um den Workflow auszuführen.
 
 >[!NOTE]
 >
->**Die Validierung eines Angebots** durch Offer Manager erfolgt nur, wenn kein validierungsverantwortlicher Benutzer angegeben oder in der Angebotsvorlage als validierungsverantwortlicher Benutzer angegeben wurde.
+>**Angebotsverantwortliche Benutzer** können ein Angebot nur genehmigen, wenn kein Prüfer angegeben ist oder wenn sie in der Angebotsvorlage als Prüfer deklariert wurden.
 
 ## Erstellen eines versandverantwortlichen Benutzers {#delivery-manager}
 
-1. Erstellen eines Benutzers.
+1. Erstellen Sie einen Benutzer.
 
-   ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html) beschrieben.
+   ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=de) beschrieben.
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
 
-Die den Versand-Managern zugewiesenen Berechtigungen ermöglichen es ihnen, die folgenden Aufgaben auszuführen:
+Versandverantwortliche Benutzer können mit den ihnen zugewiesenen Rechten die folgenden Aufgaben ausführen:
 
 * Ansicht der **[!UICONTROL Design-Umgebungen]**;
 * Anzeige und Änderung von Angebotskategorien;
-* Validieren Sie Angebote, wenn sie von ihnen validiert werden.
+* Angebote genehmigen, wenn sie ihre Prüfer sind.
 
    >[!NOTE]
    >
-   >**Versandverantwortliche** können ein Angebot nur validieren, wenn sie in der Angebotskonfiguration als validierungsverantwortlich gekennzeichnet wurden.
+   >**Versandverantwortliche Benutzer** können ein Angebot nur genehmigen, wenn sie in der Angebotskonfiguration als Prüfer angegeben wurden.
 
-## Berechtigungsmatrix jedes Interaction-Benutzers {#recap-of-rights-according-to-operator}
+## Erlaubnismatrix pro Interaktionsbenutzer {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Angebotsverantwortlicher (Design-Umgebung)</strong><br /> </td> 
-   <td> <strong>Angebotsverantwortlicher (Live-Umgebung)</strong><br /> </td> 
+   <td> <strong>Angebotsverantwortlicher Benutzer (Design-Umgebung)</strong><br /> </td> 
+   <td> <strong>Angebotsverantwortlicher Benutzer (Live-Umgebung)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Knoten im Navigationsbaum</strong><br /> </td> 
