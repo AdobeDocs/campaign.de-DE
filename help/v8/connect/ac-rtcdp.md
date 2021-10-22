@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: d1e09eae-339e-4d14-9071-097dfcc635aa
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '129'
 ht-degree: 100%
 
@@ -20,4 +20,4 @@ Mit **Adobe Experience Platform** können Sie Daten zwischen Campaign und Adobe 
 
 ![](../assets/do-not-localize/book.png) Informationen zur Implementierung und Verwendung von RTCDP mit Campaign finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=de#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/speech.png)  Als Nutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um RTCDP und Campaign zu verbinden.
+![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um RTCDP und Campaign zu verbinden.
