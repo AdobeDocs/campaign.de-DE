@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 0061c536ff309d86061548b98d2c6e1124e01a0e
+source-git-commit: 4ce21dda9516a881cce39c94454d5ac7b43142a9
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 50%
+source-wordcount: '1581'
+ht-degree: 51%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 50%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Campaign v8-Version** aufgelistet.
 
-## Version 8.2.1 {#release-8-2-1}
+## Version 8.2.8 {#release-8-2-8}
 
 _28. Oktober 2021_
 
@@ -68,7 +68,6 @@ _28. Oktober 2021_
 **Verbesserungen**
 
 * Der Snowflake-Connector wurde hinsichtlich der Leistung verbessert.
-* In der Server-Konfigurationsdatei (serverConf.xml) können Sie jetzt pro Schema eine Wartezeit zwischen Aktualisierungen und Commit-Replikationen festlegen.
 * Zu Überwachungs- und Testzwecken werden die Prüfprotokolle der **[!UICONTROL Replizieren von Staging-Daten]** Der Workflow enthält jetzt die Anzahl der Datensätze, die an die FFDA-Datenbank (Full Federated Data Access) gesendet wurden.
 * Die SQL-Code-Aktivität ermöglicht jetzt die Auswahl der Datenbank, in der das SQL-Skript gespeichert wird: die Standarddatenquelle oder ein ausgewähltes aktives externes FDA-Konto.
 * Eine Reihe vordefinierter Lagerhäuser ist jetzt verfügbar und kann verwendet werden, um verschiedene Abfragen parallel auszuführen, wie Segmentierung, ETL oder Spitzen. [mehr dazu](../config/workflows.md)
