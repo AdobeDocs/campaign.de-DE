@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: ht
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ Die nativen Web-Anwendungen sind im Knoten &quot;Administration&quot; > &quot;Ko
 
 ### Daten aus Dashboards abrufen
 
-Die in Campaign verfügbaren Listen beinhalten vordefinierter Filter, um die Navigation und Datenvisualisierung zu erleichtern.
+Campaign-Listen enthalten vordefinierte Filter, die die Navigation und die Datenvisualisierung erleichtern.
 
 ![](../assets/do-not-localize/book.png) Weitere Informationen zu Filteroptionen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=de#about-filtering).
 

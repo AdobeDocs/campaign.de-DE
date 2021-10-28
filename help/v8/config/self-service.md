@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: ht
-source-wordcount: '344'
-ht-degree: 100%
+source-git-commit: 50e138853b047c27b106401f007043a0fcb45f07
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 90%
 
 ---
 
@@ -26,26 +26,30 @@ Sie können das Campaign Control Panel auch zum Konfigurieren Ihrer Instanzeinst
 
 ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target=&quot;_blank&quot;}.
 
->[!CAUTION]
-> Die folgenden Funktionen werden in Campaign v8 noch nicht unterstützt:
->
->* Subdomain-Verwaltung
->* Zertifikatverwaltung
-
->
-
-
 ## Zugriff auf das Control Panel
 
 Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=de){target=&quot;_blank&quot;}, um weitere Informationen zu erhalten.
 
 ## Control Panel – häufig gestellte Fragen
 
-[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de?lang=de#control-panel), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=en#control-panel), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ## SFTP-Verwaltung
 
 Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Sie können ihre Speicherkapazitäten überwachen sowie IP-Adressen auf der Zulassungsliste und öffentliche SSH-Schlüssel verwalten. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=de#sftp-management){target=&quot;_blank&quot;}, um weitere Informationen zu erhalten.
+
+## Sub-Domains und Zertifikate
+
+Erfahren Sie, wie Sie Ihre Subdomains und deren Zertifikate überwachen.
+
+* [Überwachen Ihrer Subdomains](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target=&quot;_blank&quot;}
+* [Einrichten einer neuen Subdomain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html){target=&quot;_blank&quot;}
+* [Überwachen der SSL-Zertifikate Ihrer Subdomains](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=de){target=&quot;_blank&quot;}
+
+## Monitoring der Leistung
+
+Das Control Panel bietet verschiedene Funktionen, mit denen Sie Ihre Instanzen überwachen und eine optimale Leistung sicherstellen können. [Hier klicken](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de){target=&quot;_blank&quot;}
+
 
 ## Instanzeneinstellungen
 
