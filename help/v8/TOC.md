@@ -7,7 +7,7 @@ title: Dokumente zu Campaign v8
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -60,10 +60,10 @@ ht-degree: 86%
       + [Erstellen eines Angebotskatalogs](send/interaction-offer-catalog.md)
       + [Erstellen eines Angebots](send/interaction-offer.md)
       + [Senden eines Angebots (ausgehend)](send/interaction-send-offers.md)
-      + Angebote unterbreiten (Inbound){#inbound}
+      + Unterbreiten eines Angebots (eingehend){#inbound}
          + [Kontext](send/interaction-present-offers.md)
-         + [Angebote auf einer Webseite aufrufen](send/interaction-integration.md)
-         + [Anonyme Interaktionen verwalten](send/anonymous-interactions.md)
+         + [Aufrufen eines Angebots auf einer Webseite](send/interaction-integration.md)
+         + [Verwalten anonymer Interaktionen](send/anonymous-interactions.md)
       + [Berichte und Verlauf](send/interaction-tracking.md)
       + [Anwendungsfälle](send/interaction-use-cases.md)
 + Konfigurieren {#config}

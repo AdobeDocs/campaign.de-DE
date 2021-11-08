@@ -9,7 +9,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396
 source-git-commit: 4ce21dda9516a881cce39c94454d5ac7b43142a9
 workflow-type: tm+mt
 source-wordcount: '1581'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ _28. Oktober 2021_
 <tbody>
 <tr>
 <td>
-<p>Die Interaktionsverwaltung in Echtzeit ist jetzt für eingehende Kanäle verfügbar. Verwenden Sie das Modul Eingehende Interaktionen in Campaign , um Ihren Kunden das beste Angebot zu unterbreiten, wenn sie Ihre Website besuchen oder sich an Ihr Callcenter wenden. Diese Funktion ist im Lieferumfang von Campaign v8 enthalten und erfordert eine spezifische Konfiguration für Ihre Instanz. Wenden Sie sich an Ihren Kundenbetreuer, um Zugriff auf das Modul "Eingehende Interaktionen"zu erhalten.</p>
-<p>Weitere Informationen finden Sie im <a href="../send/interaction-architecture.md">entsprechenden Handbuch</a>.</p>
+<p>Die Interaktionsverwaltung in Echtzeit ist jetzt für eingehende Kanäle verfügbar. Verwenden Sie das Modul "Inbound Interaction" in Campaign, um Ihren Kunden das beste Angebot zu unterbreiten, wenn sie Ihre Website besuchen oder sich an Ihr Callcenter wenden. Diese Funktion ist im Lieferumfang von Campaign v8 enthalten und erfordert eine spezifische Konfiguration für Ihre Instanz. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um Zugriff auf das Modul "Inbound Interaction" zu erhalten.</p>
+<p>Weitere Informationen finden Sie in der <a href="../send/interaction-architecture.md">entsprechenden Dokumentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -40,13 +40,13 @@ _28. Oktober 2021_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Kampagnenoptimierung (Campaign Optimization)</strong><br /> </th> 
+<th> <strong>Kampagnenoptimierung</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Das Modul Kampagnenoptimierung ist jetzt verfügbar. Mit diesem Modul können Sie den Versand von Nachrichten steuern, filtern und überwachen. Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.</p>
-<p>Weitere Informationen finden Sie im entsprechenden Abschnitt <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html">Dokumentation zu Campaign Classic v7</a>.</p>
+<td> <p>Das Modul "Kampagnenoptimierung" ist jetzt verfügbar. Mit diesem Modul können Sie den Versand von Nachrichten steuern, filtern und überwachen. Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.</p>
+<p>Weitere Informationen dazu finden Sie in der entsprechenden <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=de">Dokumentation zu Campaign Classic v7</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -54,53 +54,53 @@ _28. Oktober 2021_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Unizitätsdienst</strong><br /> </th> 
+<th> <strong>Unicity Service</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Unicity Service ist eine neue Cloud Database Manager -Komponente. Dies hilft Benutzern, die Integrität eindeutiger Schlüsseleinschränkungen in Cloud-Datenbanktabellen zu wahren und zu überwachen. Auf diese Weise können Sie das Risiko des Einfügens doppelter Schlüssel reduzieren.
-<p>Da in der Cloud-Datenbank keine Einschränkungen hinsichtlich der Einheitlichkeit erzwungen werden, führt Unicity Service auf Anwendungsebene Folgendes ein: <b>eine Reihe neuer Limits</b> das Risiko von Duplikaten bei der Datenverwaltung mit Adobe Campaign zu verringern.</p> 
-<p>Unicity Service startet einen neuen integrierten Workflow namens <b>ffdaUnicity</b> zur Überwachung von Unitätsbeschränkungen und zur Warnung bei der Erkennung von Duplikaten.</p></td> </tr> 
+<td> <p>Unicity Service ist eine neue Komponente von Cloud Database Manager. Sie hilft Benutzern, die Integrität von Einschränkungen eindeutiger Schlüssel in Cloud-Datenbanktabellen zu wahren und zu überwachen. Dies hilft Ihnen zu verhindern, dass doppelte Schlüssel eingefügt werden.
+<p>Da in der Cloud-Datenbank keine Einschränkungen hinsichtlich der Einheitlichkeit erzwungen werden, führt Unicity Service auf Anwendungsebene Folgendes ein: <b>eine Reihe neuer Limits</b>, um das Risiko von Duplikaten bei der Datenverwaltung mit Adobe Campaign zu verringern.</p> 
+<p>Unicity Service startet einen neuen integrierten Workflow namens <b>ffdaUnicity</b>, durch den die Einheitlichkeitsbeschränkungen überwacht werden und ein Warnhinweis ausgegeben wird, wenn Duplikate erkannt werden.</p></td> </tr> 
 </tbody> 
 </table>
 
 **Verbesserungen**
 
 * Der Snowflake-Connector wurde hinsichtlich der Leistung verbessert.
-* Zu Überwachungs- und Testzwecken werden die Prüfprotokolle der **[!UICONTROL Replizieren von Staging-Daten]** Der Workflow enthält jetzt die Anzahl der Datensätze, die an die FFDA-Datenbank (Full Federated Data Access) gesendet wurden.
+* Zu Überwachungs- und Testzwecken enthalten die Prüfprotokolle des Workflows **[!UICONTROL Replizieren von Staging-Daten]** jetzt die Anzahl der Datensätze, die an die FFDA-Datenbank (Full Federated Data Access) gesendet wurden.
 * Die SQL-Code-Aktivität ermöglicht jetzt die Auswahl der Datenbank, in der das SQL-Skript gespeichert wird: die Standarddatenquelle oder ein ausgewähltes aktives externes FDA-Konto.
-* Eine Reihe vordefinierter Lagerhäuser ist jetzt verfügbar und kann verwendet werden, um verschiedene Abfragen parallel auszuführen, wie Segmentierung, ETL oder Spitzen. [mehr dazu](../config/workflows.md)
+* Eine Reihe vordefinierter Warehouses ist jetzt verfügbar und kann verwendet werden, um verschiedene Abfragen parallel auszuführen, wie Segmentierung, ETL oder Spitzen. [mehr dazu](../config/workflows.md)
 
 **Sonstige Änderungen**
 
-* Die **[!UICONTROL Verschlüsselte Kennung]** wurde dem Besucherschema hinzugefügt (`nms:visitor`). Dieses Feld wird berechnet und ist für Webanwendungen vorgesehen.
-* Es wurde ein Problem behoben, das dazu führte, dass die Versandanalyse fehlschlug, wenn einige IP-Affinitäten in einigen Mid-Sourcing-Containern vorhanden waren, aber nicht in allen. Jetzt werden alle IP-Affinitäten in der Datenbank gespeichert, sodass jeder Container auf die Präferenzen zugreifen kann, die in allen anderen Containern vorhanden sind. (NEO-37564)
+* Das Feld **[!UICONTROL Verschlüsselte Kennung]** wurde zum Besucherschema hinzugefügt (`nms:visitor`). Dieses Feld wird berechnet und ist für Web-Programme vorgesehen.
+* Es wurde ein Problem behoben, das dazu führte, dass die Versandanalyse fehlschlug, wenn einige IP-Affinitäten in einigen Mid-Sourcing-Containern vorhanden waren, aber nicht in allen. Jetzt werden alle IP-Affinitäten in der Datenbank gespeichert, sodass jeder Container auf die Affinitäten zugreifen kann, die in allen anderen Containern vorhanden sind. (NEO-37564)
 * Sie können jetzt ein Paket mit mehreren Schemas und Navigationsbaum-Knoten importieren.
 
 **Patches**
 
-* Nachdem ein Benutzer in einem Datenschema die `<autoStg>` -Attribut aus einem Tabellendefinitionselement oder ändert dessen Wert in `true` nach `false`, wurde die zugehörige Staging-Tabelle nicht gelöscht. Dieses Problem wurde behoben.
-* Fehlerkorrektur - Beim Erstellen von Datensätzen mit einem dedizierten Formular tritt jetzt kein Fehler mehr auf, da die ID mit einer FFDA-Datenquelle verwaltet wird.
-* Fehlerkorrektur - Angebote können jetzt in einen Versand eingefügt werden, wenn sie von einer Anreicherungsaktivität in einem Workflow verwaltet werden.
-* Fehlerkorrektur - Der Import von Packages wird jetzt nicht mehr verlangsamt.
-* Fehlerkorrektur - E-Mail-Sendungen mit Testadressen können jetzt durchgeführt werden.
-* Fehlerkorrektur - Vorschläge können jetzt in der Vorschlagstabelle gespeichert werden.
+* Nachdem ein Benutzer in einem Datenschema das `<autoStg>`-Attribut aus einem Tabellendefinitionselement entfernt hatte oder dessen Wert von `true` in `false` geändert wurde, wurde die zugehörige Staging-Tabelle nicht gelöscht. Dieses Problem wurde behoben.
+* Es wurde ein Problem behoben, das bei der Erstellung von Datensätzen mit einem speziellen Formular aufgrund der ID-Verwaltung mit einer FFDA-Datenquelle einen Fehler verursachte.
+* Es wurde ein Problem behoben, das das Einfügen von Angeboten in einen Versand verhindern konnte, wenn die Angebote durch eine Anreicherungsaktivität in einem Workflow verwaltet wurden.
+* Es wurde ein Problem behoben, das den Import von Packages verlangsamen konnte.
+* Es wurde ein Problem behoben, das verhindern konnte, dass E-Mail-Sendungen an Testadressen durchgeführt wurden.
+* Es wurde ein Problem behoben, das verhindern konnte, dass Vorschläge in der Tabelle mit den Angebotsvorschlägen gespeichert wurden.
 * Es wurde ein Fehler behoben, der dazu führte, dass Probleme mit Netzwerküberschreitungen fälschlicherweise als Skriptunterbrechungsprobleme anstatt als Netzwerkfehler protokolliert wurden. Dieses Problem trat bei HTTP-Anfragen auf, die in JavaScript-Aktivitäten enthalten waren.
-* Fehlerkorrektur - Angebote können jetzt in der Live-Angebotsumgebung auf Snowflake repliziert werden.
-* Es wurde ein Problem behoben, bei dem das Attribut &quot;autoStg&quot;für nicht erweiterte integrierte Schemas ignoriert wurde.
-* Fehlerkorrektur - Benutzer können jetzt die **[!UICONTROL Land/Region]** bei der Vorschau eines Profils.
+* Es wurde ein Problem behoben, durch das Angebote nicht in die Live-Angebotsumgebung auf Snowflake repliziert werden konnten.
+* Es wurde ein Problem behoben, durch das das Attribut &quot;autoStg&quot; für nicht erweiterte integrierte Schemas ignoriert wurde.
+* Es wurde ein Problem behoben, das verhinderte, dass Benutzer bei der Vorschau eines Profils den Link **[!UICONTROL Land/Region]** auswählen konnten.
 * Es wurde ein Fehler behoben, der dazu führte, dass die Datumsauswahl in benutzerdefinierten Berichten zu einem Skriptfehler führte. (NEO-36345)
-* Fehlerkorrektur - Das System stürzt jetzt nicht mehr ab, wenn Konfigurationsdateien nicht mehr neu generiert werden.
-* Fehlerkorrektur - Die Marketing- und Kontrollinstanzen können jetzt erfolgreich aktualisiert werden.
-* Fehlerkorrektur - Jetzt stürzt der Abrechnungs-Workflow auf Marketinginstanzen nicht mehr ab.
-* Fehlerkorrektur - In nativen FFDA-Snowflake-Tabellen werden jetzt keine Duplikate mehr erzeugt. (NEO-38583)
-* Fehlerkorrektur - temporäre Workflow-Schemata gehen jetzt nicht mehr verloren, wenn zwei Deduplizierungsaktivitäten nacheinander bearbeitet werden. (NEO-34063)
-* Es wurde ein Problem behoben, bei dem beim Ausführen der Amazon Redshift HoursDiff- und MinutesDiff-Funktionen beim Versuch, die Zeitkomponente zu extrahieren, falsche Ergebnisse ausgegeben wurden.(NEO-31673)
-* Fehlerkorrektur - Benutzer können sich jetzt wegen eines Proxy-Konfigurationsproblems bei der Konsole anmelden. (NEO-38388)
-* Korrektur eines Regressionsproblems, das die **Ordner bereinigen** -Funktion ordnungsgemäß funktioniert. (NEO-37459)
-* Fehlerkorrektur - Jetzt ist es möglich, Mobile-Sendungen, die mit einem Workflow verbunden sind, in der Vorschau anzuzeigen.
-* Fehlerkorrektur - jetzt kann die **Liste lesen** Workflow-Aktivität nicht mehr funktionierte, wenn die Liste in der Datenbank mit einer negativen ID identifiziert wurde. (NEO-39607)
+* Es wurde ein Problem behoben, das zum Absturz des Systems führte, wenn die Konfiguration im Falle von fehlerhaften Konfigurationsdateien neu generiert wurde.
+* Es wurde ein Problem behoben, das verhinderte, dass die Marketing- und Kontrollinstanzen erfolgreich aktualisiert werden konnten.
+* Es wurde ein Problem behoben, das zum Absturz des Abrechnungs-Workflows bei Marketing-Instanzen führen konnte.
+* Es wurde ein Problem behoben, das zu doppelten Schlüsseln in nativen FFDA-Snowflake-Tabellen führen konnte. (NEO-38583)
+* Es wurde ein Problem behoben, das dazu führen konnte, dass temporäre Workflow-Schemata verloren gingen, wenn zwei Deduplizierungsaktivitäten nacheinander bearbeitet wurden. (NEO-34063)
+* Es wurde ein Problem behoben, durch das beim Ausführen der HoursDiff- und MinutesDiff-Funktionen von Amazon Redshift beim Versuch, die Zeitkomponente zu extrahieren, falsche Ergebnisse ausgegeben wurden.(NEO-31673)
+* Es wurde ein Problem behoben, das dazu führen konnte, dass sich Benutzer aufgrund eines Proxy-Konfigurationsproblems nicht an der Konsole anmelden konnten. (NEO-38388)
+* Es wurde ein Regressionsproblem behoben, das dazu führte, dass die Funktion **Ordner bereinigen** nicht ordnungsgemäß funktionierte. (NEO-37459)
+* Es wurde ein Problem behoben, das dazu führen konnte, dass die Vorschau von Mobile-Sendungen, die mit einem Workflow verbunden waren, nicht angezeigt wurde.
+* Es wurde ein Problem behoben, das dazu führen konnte, dass die Workflow-Aktivität **Liste lesen** nicht funktionierte, wenn die Liste in der Datenbank mit einer negativen ID identifiziert wurde. (NEO-39607)
 
 ## Version 8.1.20 {#release-8-1-20}
 
