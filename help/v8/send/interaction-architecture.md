@@ -1,48 +1,48 @@
 ---
-title: Architektur von Campaign Interaction
-description: Architektur der Campaign-Interaktion
+title: Verstehen der Architektur von Campaign Interaction
+description: Grundlegendes zur Architektur von Campaign Interaction
 feature: Overview
 role: Data Engineer
 level: Beginner
 source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1328'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
-# Campaign-Interaktionsumgebungen und -architektur
+# Umgebungen und Architektur von Campaign Interaction
 
 ## Umgebungen {#environments}
 
 Für jede im Zusammenhang mit der Angebotsverwaltung verwendete Zieldimension existiert ein Umgebungspaar:
 
-* A **Design** Umgebung, in der der Angebotsverantwortliche Angebote erstellt und kategorisiert, sie bearbeitet und den Validierungsprozess startet, damit sie verwendet werden können. Die Regeln für jede Kategorie, die Platzierungen, in denen Angebote unterbreitet werden können, und die vordefinierten Filter, mit denen die Eignung eines Angebots bestimmt wird, werden ebenfalls in dieser Umgebung definiert.
+* Eine **Design**-Umgebung, in der der Angebotsverantwortliche sich darum kümmert, Angebote zu erstellen, zu ändern und zu kategorisieren sowie ihren Validierungsprozess auszulösen, damit sie zum Einsatz kommen können. In jeder Umgebung werden die für eine Kategorie geltenden Regeln, die Platzierungen, in denen die Angebote unterbreitet werden können, und die für die Eignungsprüfung zu verwendenden Filter definiert.
 
-   Kategorien können automatisch durch die Validierung oder manuell in der Live-Umgebung veröffentlicht werden.
+   Kategorien können auch manuell in der Online-Umgebung veröffentlicht werden.
 
-   Die Vorgehensweise zur Angebotsvalidierung wird im Detail beschrieben. [in diesem Abschnitt](interaction-offer.md#approve-offers).
+   Der Prozess zur Genehmigung von Angeboten wird [in diesem Abschnitt](interaction-offer.md#approve-offers) beschrieben.
 
-* A **live** Umgebung, in der die genehmigten Angebote aus der Design-Umgebung sowie die verschiedenen in der Design-Umgebung konfigurierten Platzierungen, Filter, Kategorien und Regeln zu finden sind. Bei einem Aufruf des Angebotsmoduls verwendet das Angebotsmodul stets Angebote aus der Live-Umgebung.
+* Eine **Live**-Umgebung, in der die in der Design-Umgebung genehmigten Angebote sowie die verschiedenen Platzierungen, Filter, Kategorien und Regeln zur Verfügung stehen. Bei einer Abfrage des Angebotsmoduls greift dieses ausschließlich auf die Angebote der Live-Umgebung zu.
 
-Ein Angebot wird nur für die bei der Validierung ausgewählten Platzierungen freigegeben. Dies bedeutet, dass ein Angebot u. U. live sein, aber trotzdem nicht in einer Platzierung verwendet werden kann, selbst wenn diese ebenfalls live ist.
+Ein Angebot wird nur für die bei der Genehmigung ausgewählten Platzierungen freigegeben. Dies bedeutet, dass ein Angebot u. U. live sein kann, aber trotzdem nicht in einer Platzierung verwendet werden kann, selbst wenn diese ebenfalls live ist.
 
 ## Eingehende und ausgehende Interaktionen {#interaction-types}
 
 Das Adobe Campaign Interaction-Modul bietet zwei Arten von Interaktionen:
 
-* **Inbound** Interaktionen, initiiert durch einen Kontakt. [Weitere Informationen](interaction-present-offers.md)
-* **ausgehende** Interaktionen, die von einem Campaign Delivery Manager initiiert werden. [Weitere Informationen](interaction-send-offers.md)
+* **eingehende** Interaktionen, initiiert durch einen Kontakt. [Weitere Informationen](interaction-present-offers.md)
+* **ausgehende** Interaktionen, die von einem versandverantwortlichen Benutzer für die Kampagne initiiert werden. [Weitere Informationen](interaction-send-offers.md)
 
-Diese beiden Arten von Interaktionen können entweder in **Einzelmodus** (Angebot wird für einen einzelnen Kontakt berechnet) oder in **Batch-Modus** (Angebot wird für eine Gruppe von Kontakten berechnet). Im Allgemeinen werden eingehende Interaktionen im Einzelmodus durchgeführt und ausgehende Interaktionen im Batch-Modus. Es kann jedoch bestimmte Ausnahmen geben für [Transaktionsnachrichten](transactional.md) , wobei die ausgehende Interaktion beispielsweise im Einzelmodus erfolgt.
+Beide Interaktionstypen können entweder im **Einzelmodus** (das Angebot wird für einen einzelnen Kontakt berechnet) oder im **Batch-Modus** (das Angebot wird für mehrere Kontakte gleichzeitig berechnet) verarbeitet werden. In der Regel werden eingehende Interaktionen im Einzelmodus und ausgehende Interaktionen im Batch-Modus verarbeitet. Ausnahmen von dieser Regel bilden z. B. [Transaktionsnachrichten](transactional.md), bei denen die ausgehende Interaktion im Einzelmodus geschieht.
 
-Sobald ein Angebot unterbreitet werden kann oder muss (je nach Konfiguration), spielt das Angebotsmodul die Vermittlerrolle: berechnet automatisch das bestmögliche Angebot für einen Kontakt aus den verfügbaren Angeboten, indem die über den Kontakt empfangenen Daten und die verschiedenen Regeln kombiniert werden, die wie in der Anwendung angegeben angewendet werden können.
+Wenn ein Angebot unterbreitet werden kann oder soll (je nach Konfiguration), spielt das Angebotsmodul eine zentrale Rolle: Es ermittelt automatisch aus einer Reihe von möglichen Angeboten das für den Kontakt am besten geeignete Angebot, indem es die für ihn vorliegenden Daten und die in der Anwendung definierten Regeln kombiniert und abgleicht.
 
 ![](assets/architecture_interaction2.png)
 
 ## Verteilte Architektur
 
-Um die Skalierbarkeit zu unterstützen und rund um die Uhr Service für den eingehenden Kanal zu bieten, muss die **Interaction** -Modul wird in einer verteilten Architektur implementiert. Diese Art von Architektur wird bereits mit [Message Center](../dev/architecture.md#transac-msg-archi) und besteht aus mehreren Instanzen:
+Um die Skalierbarkeit zu unterstützen und rund um die Uhr Service für den eingehenden Kanal zu bieten, wird das **Interaction**-Modul in einer verteilten Architektur implementiert. Diese Art von Architektur wird bereits mit [Message Center](../dev/architecture.md#transac-msg-archi) verwendet und besteht aus mehreren Instanzen:
 
 * einer oder mehrerer Kontrollinstanzen für den ausgehenden Kanal, welche die Marketing-Datenbank und die Design-Umgebung beherbergen;
 * einer oder mehrerer Ausführungsinstanzen für den eingehenden Kanal.
@@ -53,7 +53,7 @@ Kontrollinstanzen sind dem eingehenden Kanal vorbehalten und enthalten die Onlin
 
 ### Synchronisation {#synchronization}
 
-Die Synchronisation von Vorschlägen erfolgt in Packages. In den Ausführungsinstanzen werden alle Katalogobjekte durch Voranstellung des Namens des externen Kontos gekennzeichnet. Dies ermöglicht die Unterstützung mehrerer Kontrollinstanzen (z. B. Design- und Live-Instanzen) auf derselben Ausführungsinstanz.
+Die Synchronisation von Vorschlägen erfolgt über Packages. In den Ausführungsinstanzen werden alle Katalogobjekte durch Voranstellung des Namens des externen Kontos gekennzeichnet. Dies ermöglicht die Unterstützung mehrerer Kontrollinstanzen (z. B. Entwicklungs- und Produktionsinstanz ) auf derselben Ausführungsinstanz.
 
 >[!CAUTION]
 >
@@ -77,19 +77,19 @@ Beachten Sie die folgenden Synchronisierungsmechanismen:
 
 ### Package-Konfiguration {#packages-configuration}
 
-Eventuelle Schemaerweiterungen in direktem Zusammenhang mit **Interaction** (beispielsweise Angebots-, Vorschlags- oder Empfängerschema) sind auf die Ausführungsinstanzen freizugeben.
+Eventuelle Schemaerweiterungen in direktem Zusammenhang mit **Interaktion** (beispielsweise Angebots-, Vorschlags- oder Empfängerschema) sind auf die Ausführungsinstanzen freizugeben.
 
-Die **Interaction** installiert wird auf allen Instanzen (Kontrolle und Ausführung). Zwei weitere Packages sind verfügbar: ein Paket für die Kontrollinstanzen und das andere für jede Ausführungsinstanz.
+Das Package **Interaktion** wird auf allen Instanzen installiert (Kontrolle und Ausführung). Zwei weitere Packages sind verfügbar: ein Package für die Kontrollinstanzen und das andere für jede Ausführungsinstanz.
 
 >[!NOTE]
 >
->Wenn Sie das Paket installieren, wird die **long** Typfelder der **nms:proposition** -Tabelle, z. B. die Vorschlagskennung, werden **int64** Typfelder. Dieser Datentyp wird im Abschnitt [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=en#mapping-the-types-of-adobe-campaign-dbms-data){target=&quot;_blank&quot;}.
+>Wenn Sie das Package installieren, werden die Felder vom Typ **long** der Tabelle **nms:proposition**, z. B. die Vorschlagskennung, zu Feldern vom Typ **int64**. Dieser Datentyp wird in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=de#mapping-the-types-of-adobe-campaign-dbms-data){target=&quot;_blank&quot;} behandelt.
 
-Die Aufbewahrungsdauer der Daten wird für jede Instanz konfiguriert (über die Variable **[!UICONTROL Datenbereinigung]** im Softwareverteilungs-Assistenten). Bei Ausführungsinstanzen muss dieser Zeitraum der historischen Tiefe entsprechen, die für die Berechnung von Typologieregeln (beweglicher Zeitraum) und Eignungsregeln erforderlich ist.
+Die Aufbewahrungsdauer der Daten wird für jede Instanz konfiguriert (über die Variable **[!UICONTROL Datenbereinigung]** im Implementierungs-Assistenten). Bei Ausführungsinstanzen muss dieser Zeitraum der historischen Tiefe entsprechen, die für die Berechnung von Typologieregeln (beweglicher Zeitraum) und Eignungsregeln erforderlich ist.
 
-Bei den Kontrollinstanzen müssen Sie darüber hinaus:
+Bei den Kontrollinstanzen:
 
-1. Pro Ausführungsinstanz ein externes Konto erstellen:
+1. Erstellen Sie pro Ausführungsinstanz ein externes Konto:
 
    ![](assets/interaction_powerbooster1.png)
 
@@ -142,7 +142,7 @@ Die folgende Option steht für Ausführungsinstanzen zur Verfügung:
 
 ### Package-Installation {#packages-installation}
 
-Wenn Ihre Instanz zuvor nicht über die **Interaction** -Paket enthalten, ist keine Migration erforderlich. Standardmäßig beträgt die Vorschlagstabelle 64 Bit, nachdem die Pakete installiert wurden.
+Wenn Ihre Instanz zuvor nicht über das **Interaction**-Package verfügt hat, ist keine Migration erforderlich. Standardmäßig liegt die Vorschlagstabelle nach der Installation der Pakete in 64 Bit vor.
 
 >[!CAUTION]
 >
@@ -176,7 +176,7 @@ CREATE INDEX nmspropositionrcp_recipientidid ON NmsPropositionRcp (irecipientid)
 ALTER TABLE nmspropositionrcp_tmp RENAME TO nmspropositionrcp;
 ```
 
-**Alter Table**
+**Alternativtabelle**
 
 ```
 ALTER TABLE nmspropositionrcp
