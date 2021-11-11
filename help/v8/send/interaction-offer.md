@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
 source-git-commit: 87c3f19cec5a756983def344620a1964b95a20d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Klicken Sie hierzu auf den Link **[!UICONTROL Abfrage bearbeiten]** und definier
 
 ![](assets/offer_eligibility_create_003.png)
 
-Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese aus der Liste der Benutzerfilter auswählen. [Weitere Informationen](interaction-predefined-filters.md)
+Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der Liste der benutzerdefinierten Filter auswählen. [Weitere Informationen](interaction-predefined-filters.md)
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -98,7 +98,7 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
    >[!NOTE]
    >
-   >Wenn eine Zielgruppe für mehrere Gewichtungen für ein ausgewähltes Angebot geeignet ist, behält die Engine die beste (höchste) Gewichtung bei. Bei Abfrage des Angebotsmoduls wird ein Angebot maximal einmal pro Kontakt ausgewählt.
+   >Wenn ein bestimmtes Angebot mit verschiedenen Gewichtungen für einen Kontakt infrage kommt, wählt das Angebotsmodul die höchste Gewichtung aus. Das Angebotsmodul schlägt pro Abfrage einem Kontakt jedes Angebot maximal einmal vor.
 
 ### Übersicht der für ein Angebot konfigurierten Eignungsregeln {#a-summary-of-offer-eligibility-rules}
 
@@ -192,7 +192,7 @@ Campaign ermöglicht die Steuerung des Flusses der Angebotsvorschläge anhand vo
 
 ## Angebotssimulation
 
-Mithilfe von **Simulationen** können Sie die Verteilung der Angebote einer Kategorie oder einer Umgebung evaluieren, bevor Sie den Vorschlag den Empfängern unterbreiten.
+Mithilfe des Moduls **Simulation** können Sie die Verteilung der Angebote einer Kategorie oder einer Umgebung evaluieren, bevor Sie den Vorschlag den Empfängern unterbreiten.
 
 Bei der Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die bisher für Angebote und deren Unterbreitungsregeln galten. Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
 
