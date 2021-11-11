@@ -1,25 +1,25 @@
 ---
-title: Echtzeitverlauf und Berichte zu Interaktionen
+title: Echtzeitverlauf und -berichte zu Interaktionen
 description: Erfahren Sie, wie Sie mit Campaign Interaction Ihre Angebote verfolgen und messen können.
 feature: Overview
 role: Data Engineer
 level: Beginner
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '143'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# Echtzeitverlauf und Berichte zu Interaktionen
+# Echtzeitverlauf und -berichte zu Interaktionen
 
 >[!NOTE]
 >
->Diese Funktionen sind nur online und nur für die **Versandverantwortliche Benutzer**.
+>Diese Funktionen sind nur online und nur für die **versandverantwortlichen Benutzer** sichtbar.
 
 ## Angebotsvorschlagsverlauf{#offer-proposition-history}
 
-Nach Unterbreitung von Angeboten haben Sie die Möglichkeit, Verlauf und Ergebnisse zu verfolgen.
+Nach der Unterbreitung von Angeboten haben Sie die Möglichkeit, den Verlauf der Unterbreitung einzusehen.
 
 * Ausgehend vom Angebot: Klicken Sie im Tab **[!UICONTROL Bearbeiten]** des Angebots auf **[!UICONTROL Vorschläge]**.
 
@@ -35,7 +35,7 @@ Nach Unterbreitung von Angeboten haben Sie die Möglichkeit, Verlauf und Ergebni
 
 ## Angebotsanalyse-Bericht{#offer-analysis-report}
 
-Der **[!UICONTROL Angebotsanalyse]**-Bericht bietet eine Zusammenfassung der akzeptierten und abgelehnten Vorschläge.
+Der Bericht **[!UICONTROL Angebotsanalyse]** bietet eine Zusammenfassung der akzeptierten und abgelehnten Vorschläge.
 
 Die Statistiken gliedern sich nach drei Merkmalen:
 
