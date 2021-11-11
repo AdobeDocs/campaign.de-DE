@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Angebote unterbreiten (eingehende Interaktion)
-description: Erfahren Sie, wie Sie das beste Angebot mithilfe des Campaign Interaction-Moduls unterbreiten.
+title: Unterbreiten eines Angebots (eingehende Interaktion)
+description: Hier erfahren Sie, wie Sie das beste Angebot mithilfe des Campaign Interaction-Moduls unterbreiten.
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1478'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
-# Hinzufügen eines Angebots auf einer Webseite{#add-an-offer-in-web}
+# Hinzufügen eines Angebots auf einer Web-Seite{#add-an-offer-in-web}
 
-Um das Angebotsmodul auf einer Webseite aufzurufen, fügen Sie einen JavaScript-Aufruf direkt in die Seite ein. Dieser Aufruf gibt den Angebotsinhalt in einem Zielelement zurück.
+Um das Angebotsmodul auf einer Web-Seite aufzurufen, fügen Sie einen JavaScript-Aufruf direkt in die Seite ein. Dieser Aufruf gibt den Angebotsinhalt in einem Zielelement zurück.
 
 Die URL des Aufruf-Scripts stellt sich wie folgt dar:
 
@@ -27,7 +27,7 @@ Unten stehend werden verschiedene Integrationsmöglichkeiten mit JavaScript beis
 
 ## Option 1: HTML-Modus {#html-mode}
 
-### Anonyme Angebote unterbreiten {#presenting-an-anonymous-offer}
+### Angebote für einen anonymen Kontakt {#presenting-an-anonymous-offer}
 
 **Schritt 1: Angebotsmodul vorbereiten**
 
@@ -37,7 +37,7 @@ Unten stehend werden verschiedene Integrationsmöglichkeiten mit JavaScript beis
 
 **Schritt 2: Inhalt der HTML-Seite aktualisieren**
 
-Die HTML-Seite muss ein Element mit dem Attribut @id mit dem internen Namen der erstellten Platzierung (&quot;i_internal name space&quot;) enthalten. Das Angebot wird durch Interaction in dieses Element eingefügt.
+Die HTML-Seite muss ein Element mit einem &quot;@id&quot;-Attribut mit dem Wert des internen Namens der erstellten Platzierung enthalten (&quot;i_internal name space&quot;). Das Angebot wird von Interaction in dieses Element eingefügt.
 
 Im vorliegenden Beispiel nimmt das Attribut @id den Wert &quot;i_SPC12&quot; an, wobei &quot;SPC12&quot; der interne Name der zuvor erstellten Platzierung ist:
 
@@ -55,13 +55,13 @@ Im vorliegenden Beispiel stellt sich die URL des Script-Aufrufs wie folgt dar (&
 >
 >Das `<script>`-Element darf nicht in sich geschlossen sein.
 
-Dieser statische Aufruf generiert automatisch einen dynamischen Aufruf, der alle vom Angebotsmodul benötigten Parameter enthält.
+Dieser statische Aufruf erzeugt automatisch einen dynamischen Aufruf, der alle vom Angebotsmodul benötigten Parameter enthält.
 
-Auf diese Weise können Sie mehrere Platzierungen auf derselben Seite verwenden, die durch einen einzelnen Aufruf des Angebotsmoduls verwaltet werden.
+Dies ermöglicht es, verschiedene Platzierungen innerhalb einer Seite mit einer einzigen Abfrage des Angebotsmoduls abzudecken.
 
 **Schritt 3: Ergebnisse auf der HTML-Seite anzeigen**
 
-Der Inhalt der Angebotsdarstellung wird vom Angebotsmodul an die HTML-Seite zurückgegeben:
+Der Inhalt der Angebotsdarstellung wird durch das Angebotsmodul an die HTML-Seite zurückgegeben:
 
 ```
 <div id="banner_header">
@@ -85,11 +85,11 @@ Der Inhalt der Angebotsdarstellung wird vom Angebotsmodul an die HTML-Seite zur�
 </div>
 ```
 
-### Angebote für identifizierte Kontakte {#presenting-an-identified-offer}
+### Angebot für einen identifizierten Kontakt {#presenting-an-identified-offer}
 
-Um einem identifizierten Kontakt ein Angebot zu unterbreiten, ähnelt der Prozess dem detaillierten [in diesem Abschnitt](#presenting-an-anonymous-offer).
+Um einem identifizierten Kontakt ein Angebot zu unterbreiten, läuft der Prozess ähnlich ab, wie [in diesem Abschnitt](#presenting-an-anonymous-offer) beschrieben.
 
-Fügen Sie im Inhalt der Webseite das folgende Script hinzu, das den Kontakt beim Aufruf des Angebotsmoduls identifiziert:
+Im Inhalt der Web-Seite müssen Sie das folgende Skript hinzufügen, das während des Aufrufs an das Modul den Kontakt identifiziert:
 
 ```
 <script type="text/javascript">
@@ -103,9 +103,9 @@ Fügen Sie im Inhalt der Webseite das folgende Script hinzu, das den Kontakt bei
 
    Im vorliegenden Beispiel handelt es sich um einen zusammengesetzten Identifikationsschlüssel, da er sowohl auf die E-Mail-Adresse als auch auf den Namen des Kontakts Bezug nimmt.
 
-1. Bei der Anzeige der Webseite ermöglicht die Auswertung des Scripts die Weitergabe der Empfänger-ID an das Angebotsmodul. Wenn die ID zusammengesetzt ist, werden die Schlüssel in derselben Reihenfolge angezeigt wie in den erweiterten Einstellungen und durch eine |.
+1. Wenn die Web-Seite aufgerufen wird, ermöglicht es die Auswertung des Skripts, die ID des Kontakts an das Angebotsmodul zu übergeben. Bei einer zusammengesetzten ID werden die Schlüssel in der gleichen Reihenfolge angezeigt wie in den erweiterten Parametern und durch | getrennt.
 
-   Im folgenden Beispiel hat sich der Kontakt bei der Website angemeldet und wurde durch seine E-Mail-Adresse und seinen Namen bei der Abfrage des Angebotsmoduls erkannt.
+   In folgendem Beispiel-Code hat sich der Kontakt auf der Web-Seite angemeldet. Er wurde bei der Abfrage des Angebotsmoduls mithilfe seiner E-Mail-Adresse und seines Familiennamens identifiziert:
 
    ```
    <script type="text/javascript">
@@ -113,7 +113,7 @@ Fügen Sie im Inhalt der Webseite das folgende Script hinzu, das den Kontakt bei
    </script>
    ```
 
-### HTML-Rendering-Funktion verwenden {#using-an-html-rendering-function}
+### Verwenden der HTML-Rendering-Funktion {#using-an-html-rendering-function}
 
 Die Verwendung einer HTML-Rendering-Funktion bietet den Vorteil, das die HTML-Darstellung des Angebots automatisch erzeugt wird.
 
@@ -127,11 +127,11 @@ Die Verwendung einer HTML-Rendering-Funktion bietet den Vorteil, das die HTML-Da
 
 ## Option 2: XML-Modus {#xml-mode}
 
-### Angebote unterbreiten {#presenting-an-offer}
+### Unterbreiten eines Angebots {#presenting-an-offer}
 
-Kampagne **Interaction** -Modul können Sie einen XML-Knoten an die HTML-Seite zurückgeben, die das Angebotsmodul aufruft. Dieser XML-Knoten kann von Funktionen verarbeitet werden, die auf Kundenseite entwickelt werden.
+Mit dem Campaign **Interaction**-Modul können Sie einen XML-Knoten an die HTML-Seite zurückgeben, die das Angebotsmodul aufruft. Dieser XML-Knoten kann von Funktionen verarbeitet werden, die auf Kundenseite entwickelt werden.
 
-Der Aufruf des Angebotsmoduls sieht wie folgt aus:
+Die Angebotsmodul-Abfrage stellt sich wie folgt dar:
 
 ```
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
@@ -160,15 +160,15 @@ Der zurückgegebene XML-Knoten stellt sich wie folgt dar:
 </propositions>
 ```
 
-Im folgenden Anwendungsbeispiel werden die Konfigurationen beschrieben, die in Adobe Campaign durchgeführt werden sollen, um den XML-Modus zu aktivieren. Anschließend wird das Ergebnis des Modulaufrufs auf der HTML-Seite angezeigt.
+Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden Konfigurationen zur Aktivierung des XML-Modus und zeigt das Ergebnis der Angebotsmodul-Abfrage in der HTML-Seite.
 
-1. **Umgebung und Platzierung erstellen**
+1. **Erstellen einer Umgebung und einer Platzierung**
 
-   Weiterführende Informationen zur Erstellung einer Umgebung finden Sie im Abschnitt [diese Seite](interaction-env.md).
+   Weiterführende Informationen zur Erstellung einer Umgebung finden Sie auf [dieser Seite](interaction-env.md).
 
-   Die Erstellung einer Platzierung wird im Abschnitt [diese Seite](interaction-offer-spaces.md).
+   Die Erstellung von Platzierungen wird auf [dieser Seite](interaction-offer-spaces.md) genauer erläutert.
 
-1. **Erweitern des Angebotsschemas, um neue Felder hinzuzufügen**
+1. **Erweitern des Angebotsschemas zur Hinzufügung neuer Felder**
 
    Das Schema definiert die Felder Titel 2 und Preis.
 
@@ -201,11 +201,11 @@ Im folgenden Anwendungsbeispiel werden die Konfigurationen beschrieben, die in A
    >
    >Jedes Element muss zweimal definiert werden. CDATA-Elemente (&quot;_jst&quot;) können Personalisierungsfelder enthalten.
    >
-   >Nach der Schemaerweiterung ist eine Aktualisierung der Datenbankstruktur erforderlich!
+   >Vergessen Sie nicht, die Datenbankstruktur zu aktualisieren.
 
-   Sie können das Angebotsschema erweitern, um neue Felder sowohl im Batch- als auch im Einzelmodus sowie in jedem beliebigen Format (Text, HTML und XML) hinzuzufügen.
+   Sie können das Angebotsschema erweitern, um neue Felder sowohl im Batch- als auch im Einzelmodus in jedem beliebigen Format (Text, HTML oder XML) hinzuzufügen.
 
-1. **Erweiterung der Angebotsformel, um neue Felder zu bearbeiten und ein vorhandenes Feld zu ändern**
+1. **Erweitern des Angebotsformulars zur Hinzufügung neuer Felder und Änderung eines existierenden Felds**
 
    Öffnen Sie das Formular **Angebot (nms)**.
 
@@ -248,21 +248,21 @@ Im folgenden Anwendungsbeispiel werden die Konfigurationen beschrieben, die in A
 
    Die Felder **[!UICONTROL Titel 2]** und **[!UICONTROL Preis]** wurden eingefügt und das Feld **[!UICONTROL Ziel-URL]** wird nicht mehr angezeigt.
 
-1. **Angebot erstellen**
+1. **Erstellen eines Angebots**
 
-   Die Erstellung von Angeboten wird im Abschnitt [diese Seite](interaction-offer.md).
+   Weiterführende Informationen zum Erstellen von Angeboten finden Sie auf [dieser Seite](interaction-offer.md).
 
    Im vorliegenden Anwendungsbeispiel wird das Angebot wie folgt konfiguriert:
 
    ![](assets/interaction_xmlmode_offer.png)
 
-1. **Angebot validieren**
+1. **Genehmigen des Angebots**
 
    Validieren Sie das Angebot oder lassen Sie es validieren und aktivieren Sie es in der zuvor erstellten Platzierung, um es in der entsprechenden Live-Umgebung verfügbar zu machen.
 
 1. **Abfrage des Angebotsmoduls und Ergebnis in der HTML-Seite**
 
-   Der Aufruf des Angebotsmoduls auf der HTML-Seite sieht wie folgt aus:
+   Die Abfrage des Angebotsmoduls in der HTML-Seite stellt sich wie folgt dar:
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
@@ -272,7 +272,7 @@ Im folgenden Anwendungsbeispiel werden die Konfigurationen beschrieben, die in A
 
    Der Parameter &quot;**cb**&quot; nimmt als Wert den Namen der Funktion an, die den vom Angebotsmodul zurückgegebenen XML-Knoten auswerten soll. Im vorliegenden Beispiel öffnet die aufgerufene Funktion ein Modalfenster (alert()-Funktion).
 
-   Der vom Angebotsmodul zurückgegebene XML-Knoten sieht wie folgt aus:
+   Der vom Angebotsmodul zurückgegebene XML-Knoten stellt sich wie folgt dar:
 
    ```
    <propositions>
@@ -290,7 +290,7 @@ Im folgenden Anwendungsbeispiel werden die Konfigurationen beschrieben, die in A
    </propositions>
    ```
 
-### Rendering-Funktion verwenden {#using-a-rendering-function-}
+### Verwendung einer Rendering-Funktion {#using-a-rendering-function-}
 
 Es ist möglich, eine Angebotsunterbreitung mithilfe einer XML-Rendering-Funktion zu erstellen. Diese Funktion ändert den XML-Knoten, der beim Aufruf des Angebotsmoduls an die HTML-Seite zurückgegeben wird.
 
@@ -309,7 +309,7 @@ Es ist möglich, eine Angebotsunterbreitung mithilfe einer XML-Rendering-Funktio
 
 ![](assets/interaction_xmlmode_001.png)
 
-## SOAP-Integration einrichten
+## Einrichten einer SOAP-Integration
 
 Die für die Angebotsverwaltung verfügbaren SOAP-Webservices unterscheiden sich von den in Adobe Campaign gewöhnlich verwendeten. Sie sind über die im vorangehenden Kapitel beschriebene Interaction-URL zugänglich und ermöglichen es, ein Angebot für einen spezifischen Kontakt vorzuschlagen oder zu aktualisieren.
 
