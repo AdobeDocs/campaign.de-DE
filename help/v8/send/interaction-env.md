@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
 source-git-commit: a02d47f172a2c3021a30834adaeb5170a9801b5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '434'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Im Falle eines Mappings mit der **[!UICONTROL Besuchertabelle]** ist das Feld **
 
 Diese Option ermöglicht die Aktivierung von für anonyme Interaktionen reservierten Funktionen, beispielsweise in Bezug auf die Konfiguration der Umgebungsplatzierungen. Dies ermöglicht es, Optionen zu konfigurieren, die den Wechsel von &quot;identifizierten&quot; zu &quot;anonymen&quot; Umgebungen erlauben.
 
-Sie können beispielsweise eine Platzierung der Empfängerumgebung (identifizierter Kontakt) mit einer Platzierung verknüpfen, die einer Besucherumgebung entspricht (nicht identifizierter Kontakt). Auf diese Weise werden dem Kontakt verschiedene Angebote unterbreitet, je nachdem, ob er identifiziert wurde oder nicht. Weitere Informationen hierzu finden Sie unter [Angebotsplatzierungen](interaction-offer-spaces.md).
+Sie können beispielsweise eine Platzierung der Empfängerumgebung (identifizierter Kontakt) mit einer Platzierung verknüpfen, die einer Besucherumgebung (nicht identifizierter Kontakt) entspricht. Auf diese Weise werden dem Kontakt verschiedene Angebote unterbreitet, je nachdem, ob er identifiziert wurde oder nicht. Weitere Informationen hierzu finden Sie unter [Angebotsplatzierungen](interaction-offer-spaces.md).
 
 ![](assets/offer_env_anonymous_003.png)
 
