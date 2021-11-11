@@ -6,15 +6,15 @@ role: Data Engineer
 level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
 source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1675'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
-# Echtzeit-Interaktionen verwalten
+# Verwalten von Echtzeit-Interaktionen
 
-Campaign enthält eine **Interaction** -Modul, mit dem Sie während einer Interaktion mit einem bestimmten Kontakt (einem Kunden oder einer Zielgruppe) in Echtzeit reagieren können, indem Sie ihm ein oder mehrere angepasste Angebote unterbreiten. Dies können beispielsweise einfache Kommunikationsnachrichten, Sonderangebote für ein oder mehrere Produkte oder Services sein.
+Campaign verfügt über ein Modul **Interaction**, mit dem Sie in Echtzeit auf Interaktionen mit einem bestimmten Kontakt (einem Kunden oder einer Zielgruppe) reagieren können, indem Sie ihm ein oder mehrere angepasste Angebote unterbreiten. Dies können beispielsweise einfache Kommunikationsnachrichten, Sonderangebote für ein oder mehrere Produkte oder Services sein.
 
 Sie können einen Angebotskatalog erstellen, der mit Ihren ausgehenden Kanälen (E-Mail, Briefpost, SMS) verbunden ist, um das beste Angebot auszuwählen, das einem Kontakt in einem bestimmten Kontext gesendet werden soll. Die Auswahl des besten Angebots für einen Empfänger basiert auf **Eignungsregeln**. Die Auswahl eines Angebots aus einem Paket relevanter Angebote wird mithilfe von Prioritätsregeln bestimmt. Die Regeln zur Angebotsunterbreitung berücksichtigen den Verlauf des Kontakts und helfen zu vermeiden, dass der Kontakt nicht mehrmals dasselbe Angebot erhält.
 
@@ -22,7 +22,7 @@ Neben der Verwaltung des Angebotskatalogs bietet Interaction die Möglichkeit, E
 
 ![](assets/interaction-cycle.png)
 
-Zuerst erfolgt ein Kontakt zwischen einem Kunden und einem Unternehmen über einen Kommunikationskanal: Dabei kann es sich um eine Website (ausgehende Interaktion), eine E-Mail, SMS, eine Push-Benachrichtigung (eingehende Interaktionen) handeln. [Weitere Informationen](#interaction-types)
+Zuerst erfolgt ein Kontakt zwischen einem Kunden und einem Unternehmen über einen Kommunikationskanal. Dabei kann es sich um eine Website (ausgehende Interaktion) oder eine E-Mail, SMS, Push-Benachrichtigung (eingehende Interaktionen) handeln. [Weitere Informationen](#interaction-types)
 
 Dieser Kontakt führt zu einem Aufruf des Angebotsmoduls. (1)
 
@@ -30,7 +30,7 @@ Wenn das Angebotsmodul aufgerufen wird, werden je nach der Anzahl der auf den Vo
 
 Anschließend werden die Eignungsregeln angewendet: Die besten Angebote werden anhand der Eignungsregeln, des Start- und Enddatums der Angebote, der Profildaten und des Echtzeit-Verhaltens des Kunden ausgewählt. (3)
 
-Der Verlauf der Profilvorschläge wird nach der Auswahl aktualisiert, um doppelte Angebote zu vermeiden. (4)
+Der Verlauf der Profilvorschläge wird nach der Auswahl aktualisiert, um die Anzeige doppelter Angebote zu vermeiden. (4)
 
 Schließlich wird das beste Angebot für die Zielgruppe vorgeschlagen. (5)
 
@@ -54,11 +54,11 @@ Wenn eine Platzierung in einem Einzelmodus-Kanal als identifiziert definiert wur
 
 1. Konfigurieren Sie das Angebotsmodul für eingehende Interaktionen, um ein oder mehrere Angebote zu unterbreiten und zu aktualisieren.
 
-   Die verschiedenen Integrationsmodi werden im Abschnitt [diesem Abschnitt](interaction-present-offers.md).
+   Die verschiedenen Integrationsmodi werden in [diesem Abschnitt](interaction-present-offers.md) behandelt.
 
    >[!NOTE]
    >
-   >Bei Erstellung einer Platzierung für den Web-Kanal (eingehend) ist auch die Seite zu konfigurieren, auf der das Angebot angezeigt werden soll.
+   >Bei Erstellung einer Platzierung für den (eingehenden) Web-Kanal muss auch die Seite konfiguriert werden, auf der das Angebot angezeigt werden soll.
 
 ### Erstellen und Veröffentlichen des Angebotskatalogs {#managing-the-offer-catalog-}
 
@@ -85,7 +85,7 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
    * **Angebote - Design**: Umgebung, in der Angebote erstellt sowie Typologieregeln definiert werden, die darüber entscheiden, ob ein bestimmtes Angebot einer Zielperson unterbreitet wird oder nicht. Des Weiteren werden hier sowohl die Tabelle der in der Angebotszielgruppe enthaltenen Individuen als auch die Tabelle, in der die Angebotsvorschläge gespeichert werden, angegeben. Der Knoten **[!UICONTROL Angebote - Design]** enthält in Unterverzeichnissen diverse Umgebungen, vordefinierte Filter und Angebotskataloge. Jedes **[!UICONTROL Angebote - Design]**-Ereignis entspricht einer aus ihr erzeugten **[!UICONTROL Live-Umgebung]******.
    * **Live-Umgebung**: Aus einem **[!UICONTROL Angebote - Design]**-Ereignis entstandene schreibgeschützte Umgebung, welche die Angebote enthält, deren Inhalt und Eignung in **[!UICONTROL Angebote - Design]** erstellt und validiert wurden. Die Angebote können an dieser Stelle nicht mehr geändert werden und sind dazu bestimmt, beispielsweise auf einer Webseite oder in einem Versand unterbreitet zu werden.
 
-* **Platzierung**: Ordner, der den Speicherort definiert, an dem das Angebot verfügbar gemacht wird. Wenn Sie ein Leerzeichen definieren, können Sie den verwendeten Kanal angeben und angeben, ob er im Einzelmodus verwendet werden kann (standardmäßig: Erstellen Sie den Inhalt des Angebots mithilfe von Rendering-Funktionen und geben Sie das Angebot der präsentierten Angebote an. Ein Leerzeichen ist eine Schnittstelle zwischen dem Kanal und dem Angebotsmodul.
+* **Platzierung**: Ordner, in dem bestimmt wird, wo ein Angebot integriert werden werden soll. Über die Platzierung wird insbesondere der zu verwendende Kanal festgelegt, aber auch die Möglichkeit, ob der Einzelmodus genutzt werden kann (standardmäßig kommt nur der Batch-Modus zum Einsatz). Des Weiteren können hier mithilfe von Darstellungsfunktionen Angebotsinhalte erstellt und Angebotsthemen definiert werden. Eine Platzierung bildet somit die Schnittstelle zwischen dem Angebotsmodul und den diversen Kanälen.
 
    >[!CAUTION]
    >
@@ -120,7 +120,7 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
       >
       >Nicht identifizierbare anonyme Kontakte werden der Zielgruppendimension der Besucher zugeordnet.
 
-* **Ausgehende Interaktion**: Abfrage des Angebotsmoduls über eine Kontaktliste (zum Versand von E-Mails, Briefpost usw.). Auf jeden Kontakt werden die gleichen Regeln und Prozesse angewendet. Dieser Interaktionstyp wird im Allgemeinen im Batch-Modus verarbeitet.
+* Eine **ausgehende Interaktion** ruft das Angebotsmodul von einer Kontaktliste aus auf (für den Versand von E-Mails, Direkt-Mail usw.). Auf jeden Kontakt werden die gleichen Regeln und Prozesse angewendet. Dieser Interaktionstyp wird im Allgemeinen im Batch-Modus verarbeitet.
 * **Eingehende Interaktion**: Abfrage des Angebotsmoduls aufgrund einer von einem Kontakt ausgehenden Aktion auf einem Kanal (Webseitenbesuch, Anruf im Callcenter). Dieser Interaktionstyp wird in der Regel im Einzelmodus verarbeitet.
 * **Batch-Modus**: Im Batch-Modus wird das beste Angebot für eine Gruppe von Kontakten ausgewählt. Eignungs- und Prioritätsregeln werden auf alle Kontakte der Gruppe angewendet. Dieser Modus kommt in der Regel bei ausgehenden Interaktionen zum Einsatz.
 * **Einzelmodus**: Pro Vorgang wird ein einzelner Kontakt verarbeitet. Dieser Modus kommt in der Regel bei eingehenden Interaktionen oder bei Transaktionsnachrichten zum Einsatz.
@@ -137,6 +137,6 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
 * **Angebotsvorschlag**: Aktion, die darin besteht, einem Empfänger ein oder mehrere Angebote auf einer gegebenen Platzierung zu unterbreiten (beispielsweise auf einem Webseiten-Banner oder in einer E-Mail bzw. SMS). Das Ergebnis der Aktion wird in der Tabelle der Angebotsvorschläge gespeichert. Die Speicherung der Vorschläge selbst ist optional.
 * **Simulation**: Modul, das es ermöglicht, die Angebotsunterbreitung vor der tatsächlichen Unterbreitung bei Zielpersonen zu evaluieren.
 * **Vorschau**: Anzeige der Darstellung des Angebots in seiner Platzierung. Die Vorschau kann aus dem Konfigurationsfenster des Angebots oder dem Kontaktprofil heraus aufgerufen werden.
-* **vordefinierte Filter**: vordefinierte Filterregeln können Angebotsparameter (z. B. einen Angebotscode) berücksichtigen. Sie können nach der Erstellung von Angeboten wiederverwendet werden.
+* **Vordefinierte Filter**: Vordefinierte Filterregeln können Angebotsparameter (z. B. den Angebots-Code) berücksichtigen. Sie können nach der Erstellung von Angeboten wiederverwendet werden.
 * **Darstellung eines Angebots**: Informationen, die vom jeweiligen Kanal abgerufen werden, um das Angebot anzuzeigen. Die Darstellung kann mithilfe der Rendering-Funktion einer Platzierung konstruiert oder direkt in der Schnittstelle (z. B. im HTML-Block) erfasst werden. Ein Angebot kann je nach Platzierung unterschiedliche Darstellungen aufweisen.
 * **Platzierungswechsel**: Option in einer identifizierten Platzierung, die den Wechsel zu einer anonymen Platzierung auslöst, wenn ein Kontakt weder ex- noch implizit identifiziert werden konnte.
