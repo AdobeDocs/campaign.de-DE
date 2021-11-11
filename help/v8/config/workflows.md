@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: d21dc1adc46121e5c015deed7ddb84ec6a4ec76f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1735'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Workflow-Aktivitäten sind in Kategorien gruppiert. Diese vier Aktivitätskatego
 * [Zielgruppenbestimmungsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html?lang=de){target=&quot;_blank&quot;}: Abfrage, Liste lesen, Anreicherung, Vereinigung und mehr
 * [Steuerungsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/about-flow-control-activities.html?lang=de){target=&quot;_blank&quot;}: Planung, Verzweigung, Warnhinweis, externes Signal und mehr
 * [Aktionsaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=de){target=&quot;_blank&quot;}: Kanalübergreifende Sendungen, JavaScript-Code, CRM-Aktivitäten, Aggregat-Update und mehr
-* [Ereignisaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html){target=&quot;_blank&quot;}: Dateiübertragung, HTTP-Übertragung und mehr
+* [Ereignisaktivitäten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/about-action-activities.html?lang=de){target=&quot;_blank&quot;}: Dateiübertragung, HTTP-Übertragung und mehr
 
 
 ### Aktivität „Datenquelle ändern“ {#change-data-source-activity}
@@ -89,27 +89,27 @@ So verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**:
 
 1. Sie können den Workflow jetzt starten.
 
-## Verwalten von virtuellen Lagern {#warehouse}
+## Verwalten von virtuellen Warehouses {#warehouse}
 
-Nach der Erstellung Ihres Workflows können Sie mit der **[!UICONTROL Eigenschaften]** für weitere Konfigurationen.
+Nach der Erstellung Ihres Workflows haben Sie mit der Schaltfläche **[!UICONTROL Eigenschaften]** Zugriff auf weitere Konfigurationen.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen **Workflow-Eigenschaften** in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=en){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Erfahren Sie mehr über **Eigenschaften von Workflows** in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=de){target=&quot;_blank&quot;}
 
-Aus dem **[!UICONTROL Ausführung]** Registerkarte Ihres Workflows **[!UICONTROL Eigenschaften]** können Sie Ihren Workflow mit verschiedenen Lagern verknüpfen und Ihr Arbeitsablaufmanagement optimieren. Weitere Informationen finden Sie unter **Lagerwesen**, siehe [Dokumentation zu Snowflaken](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
+Auf der Registerkarte **[!UICONTROL Ausführung]** in den **[!UICONTROL Eigenschaften]** Ihres Workflows können Sie Ihren Workflow mit verschiedenen Warehouses verknüpfen und die Verwaltung Ihres Arbeitsaufkommens optimieren. Lesen Sie für weiterführende Informationen über **Warehouses** die [Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
 
 ![](assets/warehouse.png)
 
-Je nach Zweck Ihres Workflows können Sie aus den folgenden drei Lagern wählen: **[!UICONTROL Warehouse]** Dropdown-Liste:
+Je nach Zweck Ihres Workflows können Sie in der Dropdown-Liste **[!UICONTROL Warehouse]** zwischen den folgenden drei Warehouses wählen:
 
-* **[!UICONTROL Standard]** / **[!UICONTROL Kampagne]**: wird bei der Erstellung eines neuen Workflows standardmäßig eingestellt.
+* **[!UICONTROL Standard]**/**[!UICONTROL Kampagne]**: wird bei der Erstellung eines neuen Workflows standardmäßig eingestellt.
 
 * **[!UICONTROL Import/Export]**: sollte mit Import- oder Export-Workflows festgelegt werden, um die Leistung Ihrer Aktivitäten zu optimieren.
 
-* **[!UICONTROL Kampagnenstärke]**: sollte mit Kampagnen- oder Versand-Workflows eingestellt werden, um die Verarbeitungszeit für Sendungen zu optimieren.
+* **[!UICONTROL Kampagnen-Burst]**: sollte mit Kampagnen- oder Versand-Workflows eingestellt werden, um die Verarbeitungszeit für Sendungen zu optimieren.
 
 >[!NOTE]
 >
->Die **[!UICONTROL System]** Warehouse wird nur für integrierte Workflows festgelegt.
+>Das **[!UICONTROL System]**-Warehouse wird nur für integrierte Workflows festgelegt.
 
 ## Einrichten wiederkehrender Kampagnen
 
