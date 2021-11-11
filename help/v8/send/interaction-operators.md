@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
 source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Die dem Angebotsverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgen
 
 * Änderung von **[!UICONTROL Design-Umgebungen]**;
 * Ansicht von **[!UICONTROL Live-Umgebungen]**;
-* Konfigurieren Sie Verwaltungsfunktionen (vordefinierte Leerzeichen und Filter).
+* Konfiguration von administrativen Funktionen (vordefinierte Platzierungen und Filter);
 * Erstellung und Änderung von Angebotskategorien;
 * Erstellung und Änderung von Angeboten;
 * Konfiguration von Angebotseignungen;
@@ -47,7 +47,7 @@ Wenn Angebote in einem Workflow verwendet werden, muss der Benutzer der Benutzer
 
 1. Erstellen Sie einen Benutzer.
 
-   ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html) beschrieben.
+   ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=de) beschrieben.
 
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
 
@@ -59,7 +59,7 @@ Versandverantwortliche Benutzer können mit den ihnen zugewiesenen Rechten die f
 
    >[!NOTE]
    >
-   >**Versandverantwortliche Benutzer** kann ein Angebot nur validieren, wenn es in der Angebotskonfiguration als validierungsverantwortlich erklärt wurde.
+   >**Versandverantwortliche Benutzer** können ein Angebot nur genehmigen, wenn sie in der Angebotskonfiguration als Prüfer angegeben wurden.
 
 ## Erlaubnismatrix pro Interaktionsbenutzer {#recap-of-rights-according-to-operator}
 
