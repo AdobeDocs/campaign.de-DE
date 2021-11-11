@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: true
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
 source-git-commit: e41816003958c3373e92d5ea82240fd7ceda5857
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -27,4 +27,4 @@ Für Adobe Campaign v8 bestehen die folgenden Einschränkungen:
 * Die Mechanismen für die Anmeldung (Opt-in) und Abmeldung (Opt-out) sowie die Mobile-Registrierung sind asynchrone Prozesse. Anfragen werden stündlich über einen speziellen technischen Workflow verarbeitet. [Weitere Informationen](../config/replication.md#tech-wf)
 * Duplikate müssen von Endbenutzern manuell korrigiert werden. [Weitere Informationen](../dev/keys.md)
 * Adobe Campaign v8 bietet keine Unterstützung für erweiterten Durchsatz in API- und Web-Anwendungen. Wenden Sie sich bei besonderen Anforderungen an Adobe, um Beratung zu erhalten.
-* Das Optimierungsmodul von Adobe Campaign Campaign berücksichtigt geplante Sendungen nicht in Drucktypologieregeln. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=en#setting-the-period).
+* Das Optimierungsmodul von Adobe Campaign berücksichtigt keine geplanten Sendungen in Drucktypologieregeln. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=de#setting-the-period).
