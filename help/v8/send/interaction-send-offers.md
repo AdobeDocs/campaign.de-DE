@@ -6,15 +6,15 @@ role: Data Engineer
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
 source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1350'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # Senden eines Angebots
 
-Damit ein Angebot vom Angebotsmodul ausgewählt werden kann, wurde es validiert und ist in einer **Live** Umgebung. [Weitere Informationen](interaction-offer.md#approve-offers)
+Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor genehmigt und für eine **Live**-Umgebung freigegeben worden sein. [Weitere Informationen](interaction-offer.md#approve-offers)
 
 Die Angebotsunterbreitung über einen ausgehenden Kommunikationskanal erfolgt per Briefpost, E-Mail oder Mobile-Versand. Außerdem können Sie auch den Einzelmodus mit Transaktionsnachrichten (Message Center) verwenden.
 
@@ -59,8 +59,8 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in einen Versand einzufügen:
 
 ### Parameter des Angebotsmoduls {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Leerzeichen]** : Platzierung der Angebotsumgebung, die zur Aktivierung des Angebotsmoduls ausgewählt werden muss.
-* **[!UICONTROL Kategorie]** : spezifischer Ordner, in dem Angebote sortiert werden. Wenn keine Kategorie angegeben wird, werden alle in der Umgebung enthaltenen Angebote vom Angebotsmodul berücksichtigt, es sei denn, ein Design wurde ausgewählt.
+* **[!UICONTROL Platzierung]**: Zur Aktivierung des Angebotsmoduls ist die Angabe einer Platzierung aus der Angebotsumgebung zwingend erforderlich.
+* **[!UICONTROL Kategorie]**: spezifischer Ordner, in dem die Angebote gespeichert werden. Wenn keine Kategorie angegeben wird, berücksichtigt das Angebotsmodul alle in der Umgebung enthaltenen Angebote, es sei denn, die Auswahl wird durch ein Thema eingegrenzt.
 * **[!UICONTROL Themen]**: zuvor auf Kategorieebene definierte Schlüsselwörter, die wie ein Filter agieren. Die zu unterbreitenden Angebote werden den Themen entsprechend aus einer Gruppe von Kategorien ausgewählt.
 * **[!UICONTROL Vorschlagsanzahl]**: Anzahl von Angeboten, die in den Nachrichten-Textkörper eingeschlossen werden können. Auch wenn sie nicht in die Nachricht eingeschlossen werden, werden die Angebote erzeugt aber nicht unterbreitet.
 * **[!UICONTROL Nicht infrage kommende Empfänger ausschließen]**: Diese Option erlaubt es, Empfänger, für die nicht ausreichend Angebote infrage kommen, vom Versand auszuschließen. Wenn Sie diese Option nicht aktivieren, erhält ein Empfänger den Versand, auch wenn für ihn nicht die gewünschte Anzahl an Angeboten ausgewählt werden konnte. Seine Nachricht enthält somit weniger oder gar keine Angebote.
@@ -86,10 +86,10 @@ Sie können beispielsweise aus einer Abfrage stammende Empfängerdaten vor Durch
 
 Zwei Methoden ermöglichen in diesem Fall die Auswahl der Angebotsvorschläge:
 
-* Angabe eines Angebots oder eines Angebotsmodul-Aufrufs.
-* Referenzierung einer Relation zu einem Angebot.
+* Konfiguration eines Angebots oder einer Abfrage des Angebotsmoduls.
+* Referenzierung einer Verknüpfung mit einem Angebot.
 
-#### Angebot oder Angebotsmodul-Abfrage angeben {#specifying-an-offer-or-a-call-to-the-offer-engine}
+#### Konfigurieren eines Angebots oder einer Angebotsmodul-Abfrage {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
 Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritte aus:
 
@@ -102,11 +102,11 @@ Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritt
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
 1. Konfigurieren Sie die Angebotsauswahl. Zwei Optionen stehen zur Auswahl:
 
-   * **[!UICONTROL Suche nach dem besten Angebot einer Kategorie]** : Kreuzen Sie diese Option an und geben Sie die Anfrageparameter des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Angebotsmodul berechnet automatisch die Angebote, die entsprechend diesen Parametern hinzugefügt werden sollen. Es wird empfohlen, entweder **[!UICONTROL Kategorie]** oder **[!UICONTROL Design]** nicht beides gleichzeitig.
+   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Wenn Sie diese Option aktivieren, berechnet das Angebotsmodul automatisch das oder die einzufügenden Angebote, die den angegebenen Parametern (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote) entsprechen. Es wird empfohlen, nur eines der Felder **[!UICONTROL Kategorie]** oder **[!UICONTROL Thema]** auszufüllen, nicht beide.
 
       ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL Ein vordefiniertes Angebot]** : Kreuzen Sie diese Option an und geben Sie eine Platzierung, ein spezifisches Angebot und ein Kontaktdatum an, um das Angebot, das Sie hinzufügen möchten, direkt zu konfigurieren, ohne das Angebotsmodul aufzurufen.
+   * **[!UICONTROL Vordefiniertes Angebot]**: Beim Aktivieren dieser Option können Sie ohne Abfrage des Angebotsmoduls direkt das einzufügende Angebot konfigurieren (Platzierung, Kontaktdatum).
 
       ![](assets/int_enrichment_offer4.png)
 
@@ -148,7 +148,7 @@ Standardmäßig werden Erscheinungsrang und Gewichtung bei Verwendung der Aktivi
 
 Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten:
 
-1. Erstellen Sie einen Aufruf an die Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die im Anschluss an eine Abfrage und vor einer Versandaktivität platziert wird. [Weitere Informationen](#specifying-an-offer-or-a-call-to-the-offer-engine)
+1. Erstellen Sie eine Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die nach einer Abfrage und vor einer Versandaktivität platziert wird. [Weitere Informationen](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. Klicken Sie auf der Registerkarte &quot;Anreicherung&quot; der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -163,7 +163,7 @@ Der Versand speichert nun automatisch Rang und Gewichtung der Angebote. Die Info
 
 ### Angebotsmodul {#offer-engine}
 
-Die **[!UICONTROL Angebotsmodul]** -Aktivität können Sie auch vor dem Versand einen Aufruf des Angebotsmoduls festlegen.
+Auch die Aktivität **[!UICONTROL Angebotsmodul]** ermöglicht die Konfiguration einer einem Versand vorangestellten Modulabfrage.
 
 ![](../assets/do-not-localize/book.png) Weitere Informationen zum **Angebotsmodul** finden Sie in der [Dokumentation zu Campaign Classic v7.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html?lang=de)
 
@@ -173,8 +173,8 @@ Das Prinzip dieser Aktivität entspricht dem der **Anreicherung**. Auch hier wer
 
 Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritte aus:
 
-1. Platzieren Sie im Anschluss an die Abfrage ein **[!UICONTROL Angebotsmodul]** und öffnen Sie es zur weiteren Bearbeitung.
-1. Füllen Sie die verschiedenen verfügbaren Felder aus, um die Parameter des Angebotsmoduls anzugeben (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Angebotsmodul berechnet automatisch die Angebote, die entsprechend diesen Parametern hinzugefügt werden sollen.
+1. Fügen Sie eine **[!UICONTROL Angebotsmodul]**-Aktivität hinzu und öffnen Sie sie.
+1. Konfigurieren Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die den Parametern entsprechenden hinzuzufügenden Angebote.
 
    >[!CAUTION]
    >
