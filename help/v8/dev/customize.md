@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '545'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,9 +69,9 @@ Die nativen Web-Anwendungen sind im Knoten &quot;Administration&quot; > &quot;Ko
 
 ## Listen anpassen und Filter erstellen {#gs-lists-and-filters}
 
-### Daten aus Dashboards abrufen
+### Zugriff auf Daten aus Dashboards
 
-Campaign-Listen enthalten vordefinierte Filter, die die Navigation und die Datenvisualisierung erleichtern.
+Die in Campaign verfügbaren Listen beinhalten vordefinierte Filter, um die Navigation und Datenvisualisierung zu erleichtern.
 
 ![](../assets/do-not-localize/book.png) Weitere Informationen zu Filteroptionen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=de#about-filtering).
 
