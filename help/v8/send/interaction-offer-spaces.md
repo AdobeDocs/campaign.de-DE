@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ Gehen Sie dazu wie folgt vor:
 
 **Eingehende Interaktionen**
 
-Die **[!UICONTROL Speicherung]** -Tab ermöglicht die Definition von Status für **vorschlagen** und **akzeptiert** nur Angebotsvorschläge. Für eingehende Interaktionen sollte der Status von Angebotsvorschlägen direkt in der URL für den Aufruf des Angebotsmoduls angegeben werden, anstatt über die Schnittstelle. Auf diese Weise können Sie festlegen, welcher Status in anderen Fällen angewendet werden soll, z. B. wenn ein Angebotsvorschlag abgelehnt wird.
+Über die Registerkarte **[!UICONTROL Speicherung]** können Sie nur die Status für **unterbreitete** und **akzeptierte** Angebotsvorschläge definieren. Für eingehende Interaktionen sollte der Status von Angebotsvorschlägen nicht über die Schnittstelle, sondern direkt in der URL definiert werden, über die das Angebotsmodul aufgerufen wird. Auf diese Weise können Sie festlegen, welche Status in anderen Szenarien angewendet werden (z. B. wenn ein Angebotsvorschlag abgelehnt wird).
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
@@ -154,6 +154,6 @@ Sollte kein Angebot für einen Empfänger infrage kommen, ist dies in der Vorsch
 ![](assets/offer_space_overview_001.png)
 
 
-Die Vorschau kann Kontexte ignorieren, wenn sie auf einen Bereich beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema erweitert wurde, um Felder hinzuzufügen, auf die in einer Platzierung mit einem eingehenden Kanal verwiesen wird.
+Die Vorschau berücksichtigt Kontexte möglicherweise nicht, wenn sie auf eine Platzierung beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema erweitert wurde, um Felder hinzuzufügen, auf die eine einen eingehenden Kanal verwendende Platzierung Bezug nimmt. 
 
-![](../assets/do-not-localize/book.png)  Weitere Informationen hierzu finden Sie in diesem Beispiel unter [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target=&quot;_blank&quot;}.
