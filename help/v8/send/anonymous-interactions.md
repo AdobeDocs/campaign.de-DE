@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Angebote für anonyme Profile unterbreiten (eingehende Interaktion)
-description: Erfahren Sie, wie Sie anonymen Profilen Angebote unterbreiten.
+title: Unterbreiten von Angeboten für anonyme Profile (eingehende Interaktion)
+description: Hier erfahren Sie, wie Sie anonymen Profilen Angebote unterbreiten
 source-git-commit: c19336c84114a0c81563c4d5ae760330d3b284cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 68%
 
 ## Umgebung für anonyme Interaktionen {#environment-for-anonymous-interactions}
 
-Standardmäßig wird Campaign **Interaction** Das -Modul verfügt über eine vorkonfigurierte Umgebung, um die integrierte Empfängertabelle (identifizierte Angebote) auszuwählen. Wenn Sie beispielsweise eine andere Tabelle, eine Besuchertabelle für anonyme Angebote oder eine benutzerdefinierte Empfängertabelle als Ziel auswählen möchten, müssen Sie den Assistenten für das Zielgruppen-Mapping verwenden, um die Umgebung zu erstellen. [Weitere Informationen zu Umgebungen](interaction-env.md).
+Das Campaign **Interaction**-Modul verfügt standardmäßig über eine integrierte Umgebung, in der die Empfängertabelle (identifizierte Angebote) ausgewählt werden kann. Wenn Sie beispielsweise eine andere Tabelle, eine Besuchertabelle für anonyme Angebote oder eine benutzerdefinierte Empfängertabelle als Ziel auswählen möchten, müssen Sie den Assistenten für das Zielgruppen-Mapping verwenden, um die Umgebung zu erstellen. [Weitere Informationen zu Umgebungen](interaction-env.md).
 
 Bei der Erstellung einer anonymen Umgebung mithilfe des Assistenten ist im Tab **[!UICONTROL Allgemein]** das Feld **[!UICONTROL Für anonyme eingehende Interaktionen reservierte Umgebung]** bereits angekreuzt.
 
@@ -29,13 +29,13 @@ Auch das Feld **[!UICONTROL Besucherordner]** enthält bereits den Ordner **[!UI
 
 ## Angebotskataloge für anonyme Interaktionen {#offer-catalog-for-anonymous-interactions}
 
-Wie bei ausgehenden spielt der Angebotskatalog auch bei eingehenden Interaktionen eine zentrale Rolle. Er enthält alle nach Kategorien geordneten Angebote.
+Genau wie die ausgehenden Interaktionen werden die eingehenden Interaktionen in einem Angebotskatalog organisiert, der aus Kategorien und Angeboten besteht.
 
-Um Kategorien und Bereiche zu erstellen, gehen Sie genauso vor wie bei identifizierten Besuchern. Siehe [Angebotskategorie erstellen](interaction-offer-catalog.md#creating-offer-categories) und [Angebotsumgebungen](interaction-env.md#creating-an-offer-environment)).
+Die Erstellung von Kategorien und Platzierungen folgt dem gleichen Muster wie bei identifizierten Kontakten. Siehe [Angebotskategorie erstellen](interaction-offer-catalog.md#creating-offer-categories) und [Angebotsumgebung erstellen](interaction-env.md#creating-an-offer-environment)).
 
 ## Anonyme Besucher {#anonymous-visitors}
 
-Anonyme Besucher können beim Webseitenaufruf einem Identifizierungsversuch durch Cookies unterzogen werden. Diese s. g. implizite Erkennung beruht auf dem Navigationsverlauf des Besuchers.
+Anonyme Besucher können einem Cookie-Identifizierungsprozess unterzogen werden, wenn sie eine Verbindung herstellen. Diese implizite Erkennung basiert auf dem Navigationsverlauf des Besuchers.
 
 In diesem Schritt werden die von den Cookies abgerufenen Daten mit denen in Ihrer Datenbank verglichen. In einigen Fällen werden Besucher erkannt (sie werden dann implizit identifiziert), in anderen Fällen werden sie nicht erkannt (und bleiben daher anonym).
 
