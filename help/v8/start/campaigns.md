@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '745'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -81,9 +81,9 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    ![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=de#creating-deliveries) erfahren Sie, wie Sie Sendungen für Marketing-Kampagnen erstellen und starten.{target=&quot;_blank&quot;}
 
-   Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Web-Seite, Diagramm usw.
+   Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Website, Diagramm usw.
 
-   ![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=de#adding-documents) erfahren Sie mehr über zugeordnete Dokumente.{target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Weitere Informationen zu zugehörigen Dokumenten finden Sie unter [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=de#adding-documents){target=&quot;_blank&quot;}
 
 1. **Einrichten des Validierungsprozesses**
 

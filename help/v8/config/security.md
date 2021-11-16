@@ -3,7 +3,7 @@ title: Best Practices für die Campaign-Sicherheit
 description: Erste Schritte mit Best Practices für die Campaign-Sicherheit
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 100%
 

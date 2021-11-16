@@ -3,7 +3,7 @@ product: campaign
 title: Unterbreiten eines Angebots (eingehende Interaktion)
 description: Hier erfahren Sie, wie Sie das beste Angebot mithilfe des Campaign Interaction-Moduls unterbreiten.
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1478'
 ht-degree: 100%
 

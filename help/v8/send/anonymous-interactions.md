@@ -3,7 +3,7 @@ product: campaign
 title: Unterbreiten von Angeboten für anonyme Profile (eingehende Interaktion)
 description: Hier erfahren Sie, wie Sie anonymen Profilen Angebote unterbreiten
 source-git-commit: c19336c84114a0c81563c4d5ae760330d3b284cb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
 
