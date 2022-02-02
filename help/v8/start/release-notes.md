@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: acb3b60c8b390bf91acdfd568a57899594659c7e
+source-git-commit: 89d3ffc7928e1416744f3c54a306b3d39008f2af
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +23,11 @@ _2. Februar 2021_
 
 **Patches**
 
-* Fehlerkorrektur - Die Versandvorbereitung schlägt jetzt nicht mehr fehl, wenn die in der Typologieregel definierte maximale Nachrichtenanzahl erreicht ist. (NEO-40062)
-* Fehlerkorrektur - Bei der Konfiguration des Adobe Analytics-Connectors tritt jetzt kein Fehler mehr auf, wenn die E-Mail-Adresse ein &quot;s&quot;-Zeichen enthält. (NEO-39082)
-* Fehlerkorrektur - Die deliveryMapping -Tabelle verliert jetzt keine Daten mehr aus einem benutzerdefinierten Versand-Mapping. (NEO-40133)
+* Fehlerkorrektur - Die Versandvorbereitung schlägt jetzt nicht mehr fehl, wenn die in der Typologieregel definierte maximale Nachrichtenanzahl erreicht ist.
+* Fehlerkorrektur - Bei der Konfiguration des Adobe Analytics-Connectors tritt jetzt kein Fehler mehr auf, wenn die E-Mail-Adresse ein &quot;s&quot;-Zeichen enthält.
+* Fehlerkorrektur - Die deliveryMapping -Tabelle verliert jetzt nicht mehr Daten aus einem benutzerdefinierten Versand-Mapping.
 * Fehlerkorrektur - Empfänger erhalten jetzt nicht mehr dieselbe Nachricht für denselben Versand, wenn die E-Mail-Adresse ein einzelnes Anführungszeichen (&#39;) enthält. Dieses Zeichen ist jetzt mit Escapezeichen versehen. (NEO-41198)
-* Fehlerkorrektur - Es wurde ein ID-Generierungsproblem beim Senden von Testsendungen mit Saatgut oder Ersatzadressen behoben. (NEO-42670)
+* Fehlerkorrektur - Es wurde ein ID-Generierungsproblem beim Senden von Testsendungen mit Saatgut oder Ersatzadressen behoben. (NEO-42637)
 * Fehlerkorrektur - Testsendungen können jetzt mit der Adressersetzung durchgeführt werden. (NEO-40417)
 * Fehlerkorrektur - Jetzt kann das LINE-Package installiert werden. (NEO-42503)
 
