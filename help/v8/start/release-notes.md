@@ -9,7 +9,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396
 source-git-commit: b7db9597aa6b4ca4fb2e1e13f8b7b718f4840031
 workflow-type: tm+mt
 source-wordcount: '1721'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ _2. Februar 2022_
 
 **Patches**
 
-* Fehlerkorrektur - Die Versandvorbereitung schlägt jetzt nicht mehr fehl, wenn die in der Typologieregel definierte maximale Nachrichtenanzahl erreicht ist.
-* Fehlerkorrektur - Bei der Konfiguration des Adobe Analytics-Connectors tritt jetzt kein Fehler mehr auf, wenn die E-Mail-Adresse ein &quot;s&quot;-Zeichen enthält.
-* Fehlerkorrektur - Die deliveryMapping -Tabelle verliert jetzt nicht mehr Daten aus einem benutzerdefinierten Versand-Mapping.
-* Fehlerkorrektur - Empfänger erhalten jetzt nicht mehr dieselbe Nachricht für denselben Versand, wenn die E-Mail-Adresse ein einzelnes Anführungszeichen (&#39;) enthält. Dieses Zeichen ist jetzt mit Escapezeichen versehen. (NEO-41198)
-* Fehlerkorrektur - Es wurde ein ID-Generierungsproblem beim Senden von Testsendungen mit Saatgut oder Ersatzadressen behoben. (NEO-42637)
-* Fehlerkorrektur - Testsendungen können jetzt mit der Adressersetzung durchgeführt werden. (NEO-40417)
-* Fehlerkorrektur - Jetzt kann das LINE-Package installiert werden. (NEO-42503)
+* Fehlerkorrektur – Die Versandvorbereitung schlägt jetzt nicht mehr fehl, wenn die in der Typologieregel definierte maximale Nachrichtenanzahl erreicht ist.
+* Fehlerkorrektur – Bei der Konfiguration des Adobe Analytics-Connectors tritt jetzt kein Fehler mehr auf, wenn die E-Mail-Adresse das Zeichen &quot;s&quot; enthält.
+* Fehlerkorrektur – Die deliveryMapping-Tabelle verliert jetzt nicht mehr Daten aus einem benutzerdefinierten Versand-Mapping.
+* Fehlerkorrektur – Empfänger erhalten jetzt nicht mehr dieselbe Nachricht für denselben Versand mehrmals, wenn die E-Mail-Adresse ein einzelnes Anführungszeichen (&#39;) enthält. Dieses Zeichen ist jetzt mit Escape-Zeichen versehen. (NEO-41198)
+* Fehlerkorrektur – Es wurde ein ID-Generierungsproblem beim Senden von Testsendungen mit Seed- oder Substitutionsadressen behoben. (NEO-42637)
+* Fehlerkorrektur – Testsendungen können jetzt mit der Methode der Adressersetzung durchgeführt werden. (NEO-40417)
+* Fehlerkorrektur – Das LINE-Package kann jetzt installiert werden. (NEO-42503)
 
 ## Version 8.2.8 {#release-8-2-8}
 
