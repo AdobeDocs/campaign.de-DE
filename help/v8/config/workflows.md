@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: d21dc1adc46121e5c015deed7ddb84ec6a4ec76f
+source-git-commit: 8417b1b4b7370e2a2eed76e9f1ac395eccf0ac66
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -217,7 +217,7 @@ Wenn Ihr Versandinhalt in einer auf einem Remote-Server gespeicherten HTML-Datei
 
    Erfahren Sie, wie Sie Abfragen zu Versandinformationen definieren, um das Verhalten des Profils abzurufen.
 
-* [Berechnen von Aggregaten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/performing-aggregate-computing.html?lang=de){target=&quot;_blank&quot;}
+* [Aggregate berechnen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/performing-aggregate-computing.html?lang=de){target=&quot;_blank&quot;}
 
    Erfahren Sie, wie Sie die Anzahl der in London lebenden Profile nach Geschlecht zählen.
 
