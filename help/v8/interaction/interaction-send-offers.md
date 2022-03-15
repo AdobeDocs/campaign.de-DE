@@ -138,8 +138,7 @@ Gehen Sie dazu wie folgt vor:
    >
    >Die Anzahl an für die Vorschau verfügbaren Vorschlägen hängt von den im Versand konfigurierten Parametern ab.
 
-#### Speichern von Ranking und Gewichtung von Angeboten
- {#storing-offer-rankings-and-weights}
+#### Speichern von Ranking und Gewichtung von Angeboten {#storing-offer-rankings-and-weights}
 
 Standardmäßig werden Ranking und Gewichtung bei Verwendung der Aktivität **Anreicherung** nicht in der Vorschlagstabelle gespeichert.
 
