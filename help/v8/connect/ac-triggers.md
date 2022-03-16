@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: a2ab85c3-ef5f-49fd-a6c4-2fd397c8d21b
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: 49941b3499a9e360366af902ff504af2fd92ce39
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -16,6 +16,6 @@ ht-degree: 100%
 
 Sie können Experience Cloud Triggers verwenden, um Daten mithilfe der Pipeline zwischen Adobe Campaign und Adobe Analytics zu verbinden. Die Pipeline ruft Aktionen oder Trigger der Anwender von Ihrer Website ab. Ein Beispiel für einen Auslöser ist ein Warenkorbabbruch. Trigger werden in Adobe Campaign verarbeitet, um in nahezu Echtzeit E-Mails zu senden.
 
-Weitere Informationen zu Adobe Campaign und Experience Cloud Triggers finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=de).
+Weitere Informationen zu Adobe Campaign und Experience Cloud Trigger finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html){target=&quot;_blank&quot;}.
 
 ![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Experience Cloud Triggers mit Campaign zu implementieren.
