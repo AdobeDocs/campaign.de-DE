@@ -51,7 +51,7 @@ Mit den Tracking-Funktionen von Campaign können Sie Links in E-Mails einfügen,
 
 **Trackinglogs**
 
-Der technische **Tracking**-Workflow verfolgt die Tracking-Daten, sobald der Versand ausgeführt und das Tracking aktiviert wurde. Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands.
+Der technische **Tracking**-Workflow ruft die Tracking-Daten ab, sobald der Versand ausgeführt und das Tracking aktiviert wurde. Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands.
 
 [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/accessing-the-tracking-logs.html?lang=de#sending-messages){target=&quot;_blank&quot;}
 

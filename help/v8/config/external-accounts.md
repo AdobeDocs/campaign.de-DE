@@ -128,8 +128,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
    Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
-   * **[!UICONTROL Konto]**
-: Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
+   * **[!UICONTROL Konto]**: Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
 
    * **[!UICONTROL Passwort]**: Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt.
 

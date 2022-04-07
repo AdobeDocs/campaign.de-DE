@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
+source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 100%
+source-wordcount: '853'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Mit Campaign haben Sie folgende Möglichkeiten:
 
 ## Integriertes Kundenprofil {#integrated-customer-profile}
 
-Profile werden in einer funktionsstarken Cloud-Datenbank zentralisiert. Die Akquise von Profilen und die Datenbankerstellung können auf verschiedenste Weisen erfolgen: Online-Akquise über Web-Formulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie Marketing-Verlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PII-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
+Profile werden in einer funktionsstarken Cloud-Datenbank zentralisiert. Es gibt viele Möglichkeiten, Profile zu gewinnen und diese Datenbank zu erstellen: Online-Erfassung über Webformulare, manuelles oder automatisches Importieren von Textdateien, Replikation mit Unternehmensdatenbanken oder anderen Informationssystemen. Mit Adobe Campaign können Sie Marketing-Verlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PII-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
 
 In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen übermittelt werden (E-Mails, SMS usw.). Dank der in der Datenbank gespeicherten Empfängerdaten können Sie die Zielgruppe filtern, die eine bestimmte Sendung erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzufügen. In der Datenbank sind weitere Profiltypen vorhanden. Sie sind für andere Verwendungszwecke gedacht. Beispielsweise dienen Testprofile zum Testen von Sendungen, bevor sie tatsächlich an das endgültige Ziel übermittelt werden.
 
@@ -67,6 +67,11 @@ Workflows können in unterschiedlichsten Kontexten zum Einsatz kommen:
 
 Adobe Campaign ermöglicht es Ihnen, das Verhalten Ihrer Kunden zu verfolgen und besser zu verstehen, indem Sie Daten und Profile kontinuierlich anreichern. Dank der Reporting- und Analyse-Tools trägt jede neue Kampagne zur Optimierung Ihrer Datenbestände bei. Marketing-Maßnahmen können besser auf die jeweiligen Zielgruppen abgestimmt werden und Wirksamkeit sowie ROI werden gesteigert.
 
+Adobe Campaign bietet nicht nur leistungsstarke native Reporting-Vorlagen, sondern ermöglicht auch die Erstellung benutzerdefinierter Berichte auf Versand-, Kampagnen-, Benutzer- oder Segmentebene. Führen Sie eine deskriptive Analyse durch, fassen Sie den ROI zusammen oder exportieren Sie Daten in Adobe Analytics und andere Lösungen, um eine weitere Datenvisualisierung und -analyse zu ermöglichen.
+
+Die Berichterstellungsfunktion für Kampagnen erleichtert die Erstellung dynamischer Berichte. Sie können per Drag &amp; Drop Variablen verwenden, um Berichte anzupassen und den Erfolg Ihrer Kampagnen zu analysieren. Je nach der Komplexität Ihrer Abfragen und Berechnungen können Sie die Daten in einer Listenansicht zusammenfassen oder in einem Format darstellen, das die Erstellung von Marketinganalyseberichten vereinfacht.
+
+
 ![](../assets/do-not-localize/glass.png) Weitere Informationen zu den Reporting- und Tracking-Funktionen finden Sie in [diesem Abschnitt](reporting.md).
 
 ## Integration mit Adobe Experience Cloud {#adobe-experience-cloud-integrations}
@@ -81,45 +86,9 @@ Adobe Campaign bietet verschiedenste Funktionen, die eine Ihren Bedürfnissen un
 
 ![](../assets/do-not-localize/glass.png) Sie sind bereits vertraut mit Campaign Classic? Eine Erläuterung der wichtigsten Unterschiede zwischen Campaign Classic und Campaign v8 finden Sie auf [dieser Seite](capability-matrix.md).
 
-## Arbeitsbereich und Anpassung
-
-Der Campaign-Arbeitsbereich ist über die [Client-Konsole](../dev/general-architecture.md) aufrufbar.
-
-![](assets/home-page.png)
-
-![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über die Campaign-Client-Konsole](../start/connect.md).
-
-Der Campaign-Arbeitsbereich kann Ihren Bedürfnissen entsprechend angepasst werden.
-
-![](../assets/do-not-localize/book.png)  Erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de), wie Sie den Campaign-Arbeitsbereich verwenden.{target=&quot;_blank&quot;}
-
-![](../assets/do-not-localize/book.png)  Wie Sie Listen anpassen können, erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=de#getting-started){target=&quot;_blank&quot;}.
-
-Auf einige der Funktionen können Sie zudem über einen Webbrowser zugreifen.
-
-![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über den Web-basierten Zugriff auf Campaign](../start/connect.md#web-access).
-
-
-## Sprachen
-
-Die Benutzeroberfläche von Campaign v8 ist in den folgenden Sprachen verfügbar:
-
-* Englisch (UK)
-* Englisch (US)
-* Französisch
-* Deutsch
-* Japanisch
-
-Die Sprache wird während des Installationsprozesses ausgewählt.
-
->[!CAUTION]
->
->Die Sprache kann nach der Instanzerstellung nicht mehr geändert werden.
-
-Von der Sprachauswahl betroffene Datums- und Uhrzeitformate. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=de#date-and-time){target=&quot;_blank&quot;}.
-
 **Siehe auch**
 
+* [Campaign-Arbeitsbereich](campaign-ui.md)
 * [Kompatibilitätsmatrix für Campaign v8](compatibility-matrix.md)
 * [Herstellen einer Verbindung zu Campaign](connect.md)
 * [Häufig gestellte Fragen](campaign-faq.md)

@@ -5,7 +5,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 100%
@@ -22,7 +22,7 @@ Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 * Ermitteln Sie Ihre Campaign-Server-URL
 * Erstellen Sie Ihre Adobe ID oder rufen Sie Ihre Benutzeranmeldeinformationen von Ihrem Unternehmen ab
 
-## Client-Konsole herunterladen und installieren
+## Client-Konsole herunterladen und installieren{#download-ac-console}
 
 Wenn Sie Campaign zum ersten Mal verwenden oder auf eine neuere Version aktualisieren möchten, müssen Sie die Client-Konsole herunterladen und installieren.
 
@@ -36,7 +36,7 @@ Dazu sind zwei Optionen verfügbar:
 >
 >Adobe empfiehlt, die Option **[!UICONTROL Diese Frage nicht mehr stellen]** deaktiviert zu lassen, um sicherzustellen, dass alle Anwender benachrichtigt werden, wenn eine neue Version der Konsole verfügbar ist.  Wenn diese Option aktiviert ist, wird der Anwender nicht über neue verfügbare Versionen informiert.
 
-## Verbindung erstellen
+## Verbindung erstellen{#create-your-connection}
 
 Nachdem die Client-Konsole neu installiert wurde, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungs-Server herzustellen:
 
@@ -60,7 +60,7 @@ Sie können so viele Verbindungen wie erforderlich hinzufügen, um z. B. Verbind
 >
 >Die Schaltfläche **[!UICONTROL Hinzufügen]** erlaubt die Erstellung von **[!UICONTROL Ordnern]**, in die Sie Ihre verschiedenen Verbindungen per Drag-and-Drop verschieben können.
 
-## Bei Adobe Campaign anmelden
+## Bei Adobe Campaign anmelden {#logon-to-ac}
 
 Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
    ![](assets/adobeID.png)
 
-## Benutzern Zugriff gewähren
+## Benutzern Zugriff gewähren{#grant-access}
 
 Adobe Campaign ermöglicht es, die den unterschiedlichen Benutzern zugeteilten Rechte zu bestimmen und zu verwalten. Es handelt es sich um Berechtigungen und Beschränkungen folgender Aktivitäten:
 

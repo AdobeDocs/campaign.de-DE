@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 94fc2739c538f3aa8b11e0ea69d08f1bfffb5d32
+source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 100%
+source-wordcount: '1920'
+ht-degree: 99%
 
 ---
 
@@ -140,7 +140,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/wf_new_mapping_define_join.png)
 
-1. Geben Sie die Parameter für die Speicherung der Informationen an, einschließlich des Suffix der Erweiterungsschemata, damit diese leicht identifiziert werden können.
+1. Geben Sie die Parameter für die Datenspeicherung an, einschließlich des Suffixes der Erweiterungsschemas, damit sie leicht identifiziert werden können.
 
    ![](assets/wf_new_mapping_define_names.png)
 

@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Campaign v8
 title: Dokumente zu Campaign v8
-source-git-commit: a6182d37e6b839c8b67c25364b4c35aa7fdde7dc
+source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 98%
+source-wordcount: '307'
+ht-degree: 81%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 98%
    + [Wechsel von Classic v7 zu v8](start/capability-matrix.md)
 + Starten {#start}
    + [Erste Schritte](start/get-started.md)
-   + [Profile und Audiences](start/audiences.md)
+   + [Komponenten und Prozesse](start/ac-components.md)
+   + Campaign-Benutzeroberfläche {#ac-ui}
+      + [Benutzeroberfläche von Discover Campaign](start/campaign-ui.md)
+      + [Benutzeroberfläche von Campaign anpassen](start/customize-ui.md)
+   + [Arbeiten mit Zielgruppen](start/audiences.md)
    + [Datenimport](start/import.md)
    + [Erstellen von Kampagnen](start/campaigns.md)
    + [Senden von Nachrichten](start/create-message.md)
@@ -41,7 +45,20 @@ ht-degree: 98%
    + [Herstellen einer Verbindung zu Campaign](start/connect.md)
    + [Berechtigungen](start/permissions.md)
    + [Control Panel](config/self-service.md)
-+ Senden {#send}
++ Profile und Audiences {#profiles-and-audiences}
+   + [Erste Schritte](audiences/gs-audiences.md)
+   + [Profile aufrufen](audiences/view-profiles.md)
+   + Hinzufügen von Profilen {#add-profiles}
+      + [Manuelles Erstellen von Profilen](audiences/create-profiles.md)
+      + [Profile aus einer Datei importieren](audiences/import-profiles.md)
+      + [Arbeiten mit externen Profilen](audiences/external-profiles.md)
+      + [Erfassen von Profildaten in Webformularen](audiences/collect-profiles.md)
+   + Audiences erstellen {#create-audiences}
+      + [Kontaktliste erstellen](audiences/create-audiences.md)
+      + [Filter erstellen und verwalten](audiences/create-filters.md)
+   + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
+   + [Best Practices](audiences/audiences-best-practices.md)
++ Senden von Nachrichten {#send}
    + [E-Mails](send/email.md)
    + [SMS](send/sms.md)
    + [Push-Benachrichtigungen ](send/push.md)
@@ -49,6 +66,9 @@ ht-degree: 98%
    + [Briefpost](send/direct-mail.md)
    + [Soziales Marketing](send/twitter.md)
    + [Transaktionsnachrichten](send/transactional.md)
+   + Fehler, Bounces und Quarantänen{#failures}
+      + [Quarantänen](send/quarantines.md)
+      + [Versandfehler](send/delivery-failures.md)
 + Echtzeit-Interaktion{#interaction}
    + [Erste Schritte mit Echtzeit-Interaktionen](interaction/interaction.md)
    + [Umgebungen und Architektur](interaction/interaction-architecture.md)
@@ -104,3 +124,4 @@ ht-degree: 98%
       + [Erste Schritte](dev/api.md)
       + [Neue APIs](dev/new-apis.md)
       + [API-Staging-Mechanismus](dev/staging.md)
++ [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)

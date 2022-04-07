@@ -5,16 +5,18 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: def9714448ef5fdde39cee070088615e8f50e522
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 100%
+source-wordcount: '568'
+ht-degree: 85%
 
 ---
 
 # Neue Funktionen in Adobe Campaign v8  {#ac-gs-what-is-new}
 
 Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Zustellbarkeit und Monitoring. Durch die Nutzung von [[!DNL Snowflake]](https://www.snowflake.com/), einer Cloud-Datenbanktechnologie, verbessert Adobe Campaign seine Skalierbarkeit und Geschwindigkeit drastisch. So kann eine größere Anzahl von Kundenprofilen verwaltet werden und es werden deutlich höhere Versandraten und mehr Transaktionen pro Stunde erreicht.
+
+## Wichtigste Funktionen{#key-capabilities}
 
 Die wichtigsten Funktionen von Creative Designer ermöglichen Folgendes:
 
@@ -34,7 +36,7 @@ Die wichtigsten Funktionen von Creative Designer ermöglichen Folgendes:
 
 ![](assets/home-page.png)
 
-## Skalierung
+## Skalierung{#scale}
 
 Campaign v8 bietet eine End-to-End-Skalierung bei jedem Schritt des Prozesses, von der Zielgruppenbestimmung bis zum abschließenden Reporting:
 
@@ -42,7 +44,23 @@ Campaign v8 bietet eine End-to-End-Skalierung bei jedem Schritt des Prozesses, v
 * Skalieren Sie die Leistung von Abfragen für Segmentierung und Zielgruppenbestimmung, aber auch für Datenaufnahme und -abgabe
 * Skalieren der Sendungsvorbereitung (von Stunden auf Minuten)
 
-## Vereinfachung und Leistungssteigerung
+## Self-Service-Admin-Benutzeroberfläche{#self-service-admin}
+
+Als Produkt-Administrator können Sie die Einstellungen jeder Ihrer Campaign v8-Instanzen mit **Campaign Control Panel**.
+
+Über eine intuitive Benutzeroberfläche können Administratoren die Nutzung wichtiger Assets überwachen, erweiterte Aufgaben wie die Zulassungsauflistung von IP-Adressen, die Überwachung des SFTP-Speichers, die Schlüsselverwaltung und mehr durchführen. Diese Self-Service-Oberfläche bietet Ihnen mehr Flexibilität und hilft Ihnen bei Folgendem:
+
+* Nehmen Sie rasch selbst Änderungen an den Einstellungen vor, ohne sich an die Adobe Support zu wenden.
+* Konfigurieren Sie zu unterschiedlichen Zeiten die Einstellungen entsprechend Ihren Unternehmensanforderungen
+* Erhöhen Sie die Sicherheit, indem Sie die Zugriffseinstellungen nach Bedarf steuern
+
+![](assets/subdomain1.png)
+
+![](../assets/do-not-localize/glass.png) [Weitere Informationen zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target=&quot;_blank&quot;}
+
+
+
+## Vereinfachung und Leistungssteigerung{#simplification-and-perf-increase}
 
 Campaign v8 bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun remote in der Cloud-Datenbank.
 

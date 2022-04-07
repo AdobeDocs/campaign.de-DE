@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Campaign-Umgebung mit Twitter integriere
 feature: Overview
 role: Data Engineer
 level: Beginner
-hidefromtoc: true
 hide: true
+hidefromtoc: true
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 137dba3461a82621af7d2e5f54442bf87422ad47
+source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 29%
@@ -83,7 +83,9 @@ Um Einstellungen zu erfassen, müssen Sie sowohl auf Ihre Adobe Campaign-Konsole
 
    >[!CAUTION]
    >
-   >Die **[!UICONTROL Interner Name]** des Dienstes muss mit dem exakten Namen Ihres Twitter-Kontos übereinstimmen. Um Ihre Einstellungen zu überprüfen, können Sie:
+   >Die **[!UICONTROL Interner Name]** des Dienstes muss mit dem exakten Namen Ihres Twitter-Kontos übereinstimmen.
+
+   Um Ihre Einstellungen zu überprüfen, können Sie:
 
    * Wählen Sie die Schaltfläche **[!UICONTROL Speichern]** aus.
    * Wählen Sie in der Übersicht über Dienste die **Twitter** -Dienst, den Sie gerade erstellt haben.
