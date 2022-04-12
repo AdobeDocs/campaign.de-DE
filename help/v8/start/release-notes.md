@@ -33,7 +33,7 @@ _2. Februar 2022_
 
 ## Version 8.2.8 {#release-8-2-8}
 
-_28. Oktober 2021_
+_Donnerstag, 28. Oktober 2021_
 
 <table>
 <thead>
@@ -143,7 +143,7 @@ _28. Oktober 2021_
 
 ## Version 8.1.20 {#release-8-1-20}
 
-_7. September 2021_
+_Dienstag, 7. September 2021_
 
 **Verbesserungen bei der Sicherheit**
 
@@ -181,7 +181,7 @@ _7. September 2021_
 
 ## Version 8.1.14 {#release-8-1-14}
 
-_23. Juli 2021_
+_Freitag, 23. Juli 2021_
 
 **Neue Funktionen**
 

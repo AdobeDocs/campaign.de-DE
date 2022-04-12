@@ -6,7 +6,7 @@ exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74
 source-git-commit: 21726c8bd0c17c88c83897b98947f56b20152979
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 80%
 
 * **[Von v7 zu v8](start/capability-matrix.md)** – Planen Sie den Wechsel von Campaign Classic v7 zu v8? Die wichtigsten Unterschiede
 
-* **[Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target=&quot;_blank&quot;}** - Führen Sie mit dem Campaign Control Panel eigenständig wichtige Administratoraufgaben aus.
+* **[Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target=&quot;_blank&quot;}**: Führen Sie mit dem Campaign Control Panel eigenständig wichtige Administratoraufgaben aus
 
-* **[Versionshinweise](start/release-notes.md)** - Entdecken Sie die neuesten Funktionen und Verbesserungen.
+* **[Versionshinweise](start/release-notes.md)**: Lernen Sie die neuesten Funktionen und Verbesserungen kennen
 
 
 ## Erste Schritte

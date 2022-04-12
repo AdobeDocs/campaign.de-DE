@@ -7,7 +7,7 @@ title: Dokumente zu Campaign v8
 source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 81%
    + [Erste Schritte](start/get-started.md)
    + [Komponenten und Prozesse](start/ac-components.md)
    + Campaign-Benutzeroberfläche {#ac-ui}
-      + [Benutzeroberfläche von Discover Campaign](start/campaign-ui.md)
-      + [Benutzeroberfläche von Campaign anpassen](start/customize-ui.md)
-   + [Arbeiten mit Zielgruppen](start/audiences.md)
+      + [Erkunden der Benutzeroberfläche von Campaign](start/campaign-ui.md)
+      + [Anpassen der Benutzeroberfläche von Campaign](start/customize-ui.md)
+   + [Verwenden von Audiences](start/audiences.md)
    + [Datenimport](start/import.md)
    + [Erstellen von Kampagnen](start/campaigns.md)
    + [Senden von Nachrichten](start/create-message.md)
@@ -47,16 +47,16 @@ ht-degree: 81%
    + [Control Panel](config/self-service.md)
 + Profile und Audiences {#profiles-and-audiences}
    + [Erste Schritte](audiences/gs-audiences.md)
-   + [Profile aufrufen](audiences/view-profiles.md)
+   + [Zugriff auf Profile](audiences/view-profiles.md)
    + Hinzufügen von Profilen {#add-profiles}
       + [Manuelles Erstellen von Profilen](audiences/create-profiles.md)
-      + [Profile aus einer Datei importieren](audiences/import-profiles.md)
+      + [Importieren von Profilen aus einer Datei](audiences/import-profiles.md)
       + [Arbeiten mit externen Profilen](audiences/external-profiles.md)
-      + [Erfassen von Profildaten in Webformularen](audiences/collect-profiles.md)
-   + Audiences erstellen {#create-audiences}
-      + [Kontaktliste erstellen](audiences/create-audiences.md)
-      + [Filter erstellen und verwalten](audiences/create-filters.md)
-   + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
+      + [Erfassen von Profildaten in Web-Formularen](audiences/collect-profiles.md)
+   + Erstellen von Audiences {#create-audiences}
+      + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
+      + [Erstellen und Verwalten von Filtern](audiences/create-filters.md)
+   + [Verwalten von Ordner und Ansichten](audiences/folders-and-views.md)
    + [Best Practices](audiences/audiences-best-practices.md)
 + Senden von Nachrichten {#send}
    + [E-Mails](send/email.md)
@@ -64,9 +64,9 @@ ht-degree: 81%
    + [Push-Benachrichtigungen ](send/push.md)
    + [LINE-Messaging](send/line.md)
    + [Briefpost](send/direct-mail.md)
-   + [Soziales Marketing](send/twitter.md)
+   + [Social-Media-Marketing](send/twitter.md)
    + [Transaktionsnachrichten](send/transactional.md)
-   + Fehler, Bounces und Quarantänen{#failures}
+   + Fehlschläge, Bounces und Quarantänen{#failures}
       + [Quarantänen](send/quarantines.md)
       + [Versandfehler](send/delivery-failures.md)
 + Echtzeit-Interaktion{#interaction}
@@ -80,7 +80,7 @@ ht-degree: 81%
       + [Erstellen von Platzierungen](interaction/interaction-offer-spaces.md)
    + [Erstellen eines Angebotskatalogs](interaction/interaction-offer-catalog.md)
    + [Erstellen eines Angebots](interaction/interaction-offer.md)
-   + [Senden eines Angebots (ausgehend)](interaction/interaction-send-offers.md)
+   + [Senden eines Angebots  (ausgehend)](interaction/interaction-send-offers.md)
    + Unterbreiten eines Angebots (eingehend){#inbound}
       + [Kontext](interaction/interaction-present-offers.md)
       + [Aufrufen eines Angebots auf einer Webseite](interaction/interaction-integration.md)

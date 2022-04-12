@@ -8,7 +8,7 @@ exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: def9714448ef5fdde39cee070088615e8f50e522
 workflow-type: tm+mt
 source-wordcount: '568'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -46,13 +46,13 @@ Campaign v8 bietet eine End-to-End-Skalierung bei jedem Schritt des Prozesses, v
 
 ## Self-Service-Admin-Benutzeroberfläche{#self-service-admin}
 
-Als Produkt-Administrator können Sie die Einstellungen jeder Ihrer Campaign v8-Instanzen mit **Campaign Control Panel**.
+Als Produkt-Administrator können Sie mithilfe des **Campaign Control Panels** die Einstellungen jeder Ihrer Campaign v8-Instanzen verwalten und ihre Nutzung nachverfolgen.
 
-Über eine intuitive Benutzeroberfläche können Administratoren die Nutzung wichtiger Assets überwachen, erweiterte Aufgaben wie die Zulassungsauflistung von IP-Adressen, die Überwachung des SFTP-Speichers, die Schlüsselverwaltung und mehr durchführen. Diese Self-Service-Oberfläche bietet Ihnen mehr Flexibilität und hilft Ihnen bei Folgendem:
+Über eine intuitive Benutzeroberfläche können Administratoren die Nutzung wichtiger Assets überwachen, erweiterte Aufgaben wie die Zulassungsauflistung von IP-Adressen, die Überwachung der SFTP-Datenspeicherung, die Schlüsselverwaltung und mehr durchführen. Diese Self-Service-Benutzeroberfläche bietet Ihnen mehr Flexibilität und hilft Ihnen bei Folgendem:
 
-* Nehmen Sie rasch selbst Änderungen an den Einstellungen vor, ohne sich an die Adobe Support zu wenden.
-* Konfigurieren Sie zu unterschiedlichen Zeiten die Einstellungen entsprechend Ihren Unternehmensanforderungen
-* Erhöhen Sie die Sicherheit, indem Sie die Zugriffseinstellungen nach Bedarf steuern
+* Schnelles Ändern von Einstellungen, ohne sich an die Adobe-Kundenunterstützung wenden zu müssen
+* Konfigurieren von Einstellungen entsprechend Ihren Unternehmensanforderungen zu unterschiedlichen Zeiten
+* Erhöhen der Sicherheit, indem die Zugriffseinstellungen nach Bedarf gesteuert werden
 
 ![](assets/subdomain1.png)
 
