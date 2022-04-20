@@ -29,7 +29,7 @@ In diesem Video erfahren Sie mehr über die Verwaltung von Listen in Adobe Campa
 >[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
-## Kontaktliste erstellen {#create-a-list-of-contacts}
+## Erstellen einer Liste von Kontakten {#create-a-list-of-contacts}
 
 Gehen Sie wie folgt vor, um eine Kontaktliste zu erstellen:
 

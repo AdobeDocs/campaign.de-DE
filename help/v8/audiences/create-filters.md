@@ -12,7 +12,7 @@ ht-degree: 32%
 
 ---
 
-# Filter erstellen und verwalten{#create-filters}
+# Erstellen und Verwalten von Filtern{#create-filters}
 
 Beim Filtern von Daten wird ein kleinerer Teil Ihres Datensatzes ausgewählt, nur die Datensätze, die bestimmten Kriterien entsprechen, und diese Untergruppe für bestimmte Aktionen (Aktualisierungen, Erstellung von Zielgruppen) oder Analysen verwendet.
 

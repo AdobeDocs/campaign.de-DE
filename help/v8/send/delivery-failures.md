@@ -197,7 +197,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Unbestimmt </td> 
    <td> Unbestimmt </td> 
    <td> 0 </td> 
-   <td> Die Adresse ist qualifiziert, da der Fehler noch nicht inkrementiert wurde. Dieser Fehlertyp tritt auf, wenn der Server eine bis dahin unbekannte Fehlermeldung sendet: Hierbei kann es sich um einen einmaligen Fehler handeln. Sollte er sich jedoch wiederholen, wird der Fehlerzähler erhöht, was die zuständigen technischen Mitarbeiter auf das Problem aufmerksam macht. Er kann dann die Nachrichtenanalyse durchführen und diesen Fehler über die <span class="uicontrol">Administration</span> / <span class="uicontrol">Kampagnenverwaltung</span> / <span class="uicontrol">Verwaltung von Fehlern</span> Knoten in der Baumstruktur.<br /> </td> 
+   <td> Die Adresse ist qualifiziert, da der Fehler noch nicht inkrementiert wurde. Dieser Fehlertyp tritt auf, wenn der Server eine bis dahin unbekannte Fehlermeldung sendet: Hierbei kann es sich um einen einmaligen Fehler handeln. Sollte er sich jedoch wiederholen, wird der Fehlerzähler erhöht, was die zuständigen technischen Mitarbeiter auf das Problem aufmerksam macht. Er kann dann die Nachrichtenanalyse durchführen und diesen Fehler über die <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Verwaltung von Fehlern</span> Knoten in der Baumstruktur.<br /> </td> 
   </tr> 
   <tr> 
    <td> Kommt nicht für die Angebote infrage </td> 

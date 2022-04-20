@@ -5,7 +5,7 @@ exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
 source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 In Campaign v8 ist der Primärschlüssel eine Universally Unique IDentifier (UUID) – eine Zeichenfolge. Um diese UUID zu erstellen, muss das Hauptelement des Schemas die Attribute **autouid** und **autopk** enthalten, die auf **true** gesetzt sind.
 
-Adobe Campaign v8 enthält Snowflake als Hauptdatenbank. Die verteilte Architektur der Snowflake-Datenbank bietet keine Mechanismen zur Gewährleistung der Eindeutigkeit eines Schlüssels in einer Tabelle. Die Endbenutzer sind dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen.
+Adobe Campaign v8 wird mit Snowflake als Hauptdatenbank bereitgestellt. Die verteilte Architektur der Snowflake-Datenbank bietet keine Mechanismen zur Gewährleistung der Eindeutigkeit eines Schlüssels in einer Tabelle. Die Endbenutzer sind dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen.
 
 Die Vermeidung von Duplikaten bei Schlüsseln, insbesondere bei Primärschlüsseln, ist zur Wahrung der relationalen Datenbankkonsistenz unverzichtbar. Duplikate bei Primärschlüsseln führen zu Problemen mit Workflow-Aktivitäten für die Datenverwaltung, wie **Abfrage**, **Abstimmung**, **Daten-Update** und anderen.
 

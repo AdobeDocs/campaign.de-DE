@@ -8,11 +8,11 @@ exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
 source-git-commit: 9c5c5e825294bd39742ecbd07b98a90b4555c138
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
-# Profile aus einer Datei importieren{#create-profiles}
+# Importieren von Profilen aus einer Datei{#create-profiles}
 
 Um Ihre Campaign-Datenbank zu füllen, können Sie [Profile manuell hinzufügen](create-profiles.md) oder importieren Sie Profile wie unten beschrieben. Sie können auch importierte Dateien verwenden, um Kontaktdaten zu aktualisieren.
 

@@ -64,7 +64,7 @@ Bei jedem Versand können Sie auch die **[!UICONTROL Versandzusammenfassung]** B
 
 ### Nicht zustellbare und Bounce-Adressen{#non-deliverable-bounces}
 
-So zeigen Sie die Liste der in Quarantäne befindlichen Adressen an **für die gesamte Plattform**, können Campaign-Administratoren zu  **[!UICONTROL Administration > Campaign Management > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]**. In diesem Abschnitt werden unter Quarantäne gestellte Elemente für **email**, **SMS** und **Push-Benachrichtigung** Kanäle.
+So zeigen Sie die Liste der in Quarantäne befindlichen Adressen an **für die gesamte Plattform**, können Campaign-Administratoren zu  **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]**. In diesem Abschnitt werden unter Quarantäne gestellte Elemente für **email**, **SMS** und **Push-Benachrichtigung** Kanäle.
 
 ![](assets/tech-quarantine.png)
 
