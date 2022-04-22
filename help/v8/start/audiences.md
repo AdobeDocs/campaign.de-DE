@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Zielgruppen in Campaign
-description: Verwenden von Zielgruppen in Campaign
+title: Arbeiten mit Audiences in Campaign
+description: Arbeiten mit Audiences in Campaign
 feature: Audiences
 role: Data Engineer
 level: Beginner
@@ -8,29 +8,29 @@ exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: b5fb8825734bce2ec62485208b468757b461005f
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Verwenden von Zielgruppen in Campaign{#gs-ac-audiences}
+# Arbeiten mit Audiences in Campaign{#gs-ac-audiences}
 
 Profile sind in der Campaign-Datenbank gespeicherte Kontakte.
 
 In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) die **Empfänger**. Mit den in der Datenbank gespeicherten Empfängerdaten können Sie die Zielgruppe filtern, die einen bestimmten Versand erhalten soll, und Personalisierungsdaten in den Versandinhalt einfügen. In der Datenbank gibt es noch andere Arten von Profilen. Sie sind für unterschiedliche Zwecke gedacht. So werden beispielsweise Testprofile erstellt, um Ihre Sendungen zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
 
-Erfahren Sie, wie Sie Profile und Audiences importieren, aktualisieren und verwalten. [in diesem Abschnitt](../audiences/gs-audiences.md).
+[In diesem Abschnitt](../audiences/gs-audiences.md) erfahren Sie, wie Sie Profile und Audiences importieren, aktualisieren und verwalten.
 
 ## Erstellen von Listen{#create-lists}
 
-Eine Liste ist ein statischer Kontaktsatz, der in Versandaktionen verwendet oder bei einem Import oder einer anderen Workflow-Aktion aktualisiert werden kann. Beispielsweise kann eine mithilfe einer Abfrage aus der Datenbank extrahierte Population als Liste gespeichert werden.
+Eine Liste ist ein statischer Satz von Kontakten, die in Versandaktionen als Zielkontakte dienen oder beim Importieren bzw. bei einer Workflow-Ausführung aktualisiert werden können. So kann beispielsweise eine Population, die über eine Abfrage aus der Datenbank extrahiert wurde, als Liste gespeichert werden.
 
-![](../assets/do-not-localize/glass.png) Erfahren Sie, wie Sie Listen erstellen und verwalten in [diese Seite](../audiences/create-audiences.md).
+![](../assets/do-not-localize/glass.png) Näheres dazu, wie Sie Listen erstellen und verwalten, finden Sie auf [dieser Seite](../audiences/create-audiences.md).
 
-## Datenbank filtern{#filter-the-database}
+## Filtern der Datenbank{#filter-the-database}
 
-Filterkonfiguration ermöglicht die Auswahl von Daten aus einer Liste **[!UICONTROL dynamisch]**: bei Änderung der Daten werden die gefilterten Daten aktualisiert. Sie können eigene Filter erstellen oder die integrierten Filter verwenden, um eine Zielgruppe zu definieren.
+Die Filterkonfiguration ermöglicht die **[!UICONTROL dynamische]** Auswahl von Daten aus einer Liste. Bei Änderung der Daten werden die gefilterten Daten aktualisiert. Sie können eigene Filter erstellen oder die integrierten Filter verwenden, um eine Audience zu definieren.
 
-![](../assets/do-not-localize/glass.png) Erfahren Sie, wie Sie Filter in erstellen und verwalten [diese Seite](../audiences/create-filters.md).
+![](../assets/do-not-localize/glass.png) Weitere Informationen dazu, wie Sie Filter erstellen und verwalten, finden Sie auf [dieser Seite](../audiences/create-filters.md).
 
 ## Eine Audience in einem Workflow erstellen
 
@@ -41,7 +41,7 @@ Zielgruppenbestimmung kann über eine Kombination von Abfragen in einer grafisch
 
 ## Aktive Profile{#active-profiles}
 
-Gemäß Ihrem Vertrag wird jeder Ihrer Campaign-Instanzen eine bestimmte Anzahl aktiver Profile bereitgestellt, die zu Abrechnungszwecken gezählt werden. Informationen zur Anzahl der gekauften aktiven Profile finden Sie in Ihrem aktuellen Vertrag.
+Gemäß Ihrem Vertrag erhalten alle Ihre Campaign-Instanzen eine bestimmte Anzahl aktiver Profile, die zu Abrechnungszwecken gezählt werden. Informationen zur Anzahl der gekauften aktiven Profile finden Sie in Ihrem aktuellen Vertrag.
 
 **Profil** bezeichnet einen Datensatz, der einen Endkunden, einen Interessenten oder Lead repräsentiert. Bei diesen Daten kann es sich etwa um einen Datensatz in der [Empfängertabelle](../dev/datamodel.md) oder einer externen Tabelle handeln, die die Kennung eines Cookies, eines Kunden oder eines Mobile-Kanals oder andere für einen bestimmten Kanal relevante Informationen enthält. Profile gelten als aktiv, wenn sie in den letzten 12 Monaten über einen beliebigen Kanal angesprochen wurden oder über einen beliebigen Kanal mit ihnen kommuniziert wurde.
 

@@ -1,6 +1,6 @@
 ---
-title: Kampagnenprozesse und -komponenten
-description: Kampagnenprozesse und -komponenten
+title: Prozesse und Komponenten in Campaign
+description: Prozesse und Komponenten in Campaign
 feature: Overview
 role: Data Engineer
 level: Beginner
@@ -8,72 +8,72 @@ exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
 source-git-commit: b54a39ee6d106d68446878815c068571e310aaa3
 workflow-type: tm+mt
 source-wordcount: '709'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Kampagnenprozesse und -komponenten {#components-and-processes}
+# Prozesse und Komponenten in Campaign {#components-and-processes}
 
-Adobe Campaign ist eine kanalübergreifende Marketinglösung, die E-Mail-, Mobile-, Social- und Offline-Kampagnen automatisiert. Adobe Campaign bietet eine zentrale Stelle für den Zugriff auf Ihre Kundendaten und -profile. Verwenden Sie Adobe Campaign, um konsistente Erlebnisse für Ihre Kunden zu orchestrieren, Ihr Marketing kanalübergreifend zu entwerfen, auszuführen und zu personalisieren und gleichzeitig die Kundenerlebnisse auf allen Geräten und Touchpoints zu verbessern. Mit Adobe Campaign können Sie mehrere Datenquellen verwalten, Zielgruppensegmente definieren und mehrstufige, kanalübergreifende Kampagnen über eine Drag &amp; Drop-Benutzeroberfläche für visuelle Workflows planen und ausführen.
+Adobe Campaign ist eine Cross-Channel-Marketing-Lösung, die E-Mail-, Mobile-, Social Media- und Offline-Kampagnen automatisiert. Adobe Campaign bietet eine zentrale Stelle für den Zugriff auf Ihre Kundendaten und -profile. Verwenden Sie Adobe Campaign, um konsistente Erlebnisse für Ihre Kunden zu orchestrieren, Ihre Marketing-Maßnahmen kanalübergreifend zu entwickeln, auszuführen und zu personalisieren und gleichzeitig die Kundenerlebnisse auf allen Geräten und an jedem Touchpoint zu verbessern. Mit Adobe Campaign können Sie mehrere Datenquellen verwalten, Zielgruppensegmente definieren und mehrstufige Cross-Channel-Kampagnen über eine visuelle Workflow-Benutzeroberfläche per Drag-and-drop planen und ausführen.
 
-Erfahren Sie mehr über die wichtigsten Funktionen von Campaign in [diese Seite](../start/get-started.md).
+Weitere Informationen zu Campaign finden Sie auf [dieser Seite](../start/get-started.md).
 
-## Kampagnenkomponenten {#ac-components}
+## Komponenten von Campaign {#ac-components}
 
-Die Adobe Campaign-Komponenten und die globale Architektur werden nachfolgend beschrieben.
+Nachfolgend werden die Adobe Campaign-Komponenten und die globale Architektur beschrieben.
 
 ![](assets/ac-components.png)
 
-### Präsentationsschicht{#presentation-layer}
+### Präsentationsebene{#presentation-layer}
 
 Sie können über einen Rich-Client, einen Thin-Client oder eine API-Integration auf Adobe Campaign zugreifen.
 
 * Rich-Client
 
-   Der Campaign Rich-Client ist eine native Anwendung, die über Standard-Internetprotokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungsserver kommuniziert.
+   Der Campaign Rich-Client ist eine native Anwendung, die über Standard-Internetprotokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert.
 
-   Die Campaign Client-Konsole zentralisiert alle Funktionen und Einstellungen und erfordert minimale Bandbreite, da sie auf einen lokalen Cache angewiesen ist. Die Campaign Client Console wurde für eine einfache Bereitstellung konzipiert und kann über einen Internetbrowser bereitgestellt werden. Sie wird automatisch aktualisiert und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic generiert.
+   In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert minimale Bandbreite, da sie auf einem lokalen Cache beruht. Diese Konsole, die im Hinblick auf eine einfache Implementierung entwickelt wurde, kann über einen Internet-Browser implementiert werden, kann automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.
 
    ![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über die Campaign-Client-Konsole](../start/connect.md).
 
-* Thin Client
+* Thin-Client
 
-   Mit den Adobe Campaign-Webzugriffsfunktionen können Sie über eine HTML-Benutzeroberfläche mit einem Webbrowser auf eine Untergruppe von Campaign-Funktionen zugreifen. Verwenden Sie diese Webschnittstelle, um auf Berichte zuzugreifen, Nachrichten zu steuern und zu validieren, auf Monitoring-Dashboards zuzugreifen und vieles mehr.
+   Mit den Web-basierten Adobe Campaign-Zugriffsfunktionen können Sie über eine HTML-Benutzeroberfläche mit einem Webbrowser auf eine Untergruppe von Campaign-Funktionen zugreifen. Verwenden Sie diese Web-Benutzeroberfläche, um auf Berichte zuzugreifen, Nachrichten zu steuern und zu validieren, auf Monitoring-Dashboards zuzugreifen und vieles mehr.
 
    ![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über den Web-basierten Zugriff auf Campaign](../start/connect.md).
 
 * Externe Anwendungen mit APIs
 
-   In bestimmten Fällen kann das System mithilfe der Web-Services-APIs, die über das SOAP-Protokoll verfügbar gemacht werden, aus externen Anwendungen aufgerufen werden.
+   In bestimmten Fällen kann das System über die via SOAP-Protokoll bereitgestellten Web Services-APIs von einem externen Programm aus aufgerufen werden.
 
    ![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über Campaign-APIs](../dev/api.md).
 
-### Persistenzschicht{#persistance-layer}
+### Persistenzebene{#persistance-layer}
 
-Campaign-Datenbanken werden als Persistenzschichten verwendet und enthalten fast alle von Adobe Campaign verwalteten Informationen und Daten. Dazu gehören: Funktionsdaten wie Profile, Abonnements, Inhalte; technische Daten wie Versandaufträge und -logs, Trackinglogs; und Arbeitsdaten (Einkäufe, Leads).
+Campaign-Datenbanken werden als Persistenzebenen verwendet und enthalten fast alle von Adobe Campaign verwalteten Informationen und Daten. Dazu gehören: Funktionsdaten wie Profile, Abonnements, Inhalte, technische Daten wie Versandvorgänge und -Logs, Trackinglogs; und Arbeitsdaten (Bestellungen, Leads).
 
 Die Zuverlässigkeit der Datenbank ist von größter Bedeutung, da die meisten Adobe Campaign-Komponenten Zugriff auf die Datenbank benötigen, damit sie ihre Aufgaben ausführen können (mit Ausnahme des Umleitungsmoduls).
 
-### Logische Anwendungsschicht{#logical-app-layer}
+### Logische Anwendungsebene{#logical-app-layer}
 
-Die logische Anwendungsebene von Campaign kann einfach konfiguriert werden, um komplexen geschäftlichen Anforderungen gerecht zu werden. Sie können Campaign als eine Plattform mit verschiedenen Anwendungen verwenden, die zu einer offenen und skalierbaren Architektur kombiniert werden. Jede Campaign-Instanz ist eine Sammlung von Prozessen in der Anwendungsschicht, von denen einige freigegeben und einige dediziert sind.
+Die logische Anwendungsebene von Campaign kann einfach konfiguriert werden, um komplexen geschäftlichen Anforderungen gerecht zu werden. Sie können Campaign als zentrale Plattform mit verschiedenen Anwendungen verwenden, die zu einer offenen und skalierbaren Architektur kombiniert werden. Jede Campaign-Instanz ist eine Sammlung von Prozessen in der Anwendungsebene, von denen einige freigegeben und einige dediziert sind.
 
 ## Campaign Managed Services{#ac-managed-services}
 
-Adobe Campaign v8 wird as a Managed Service bereitgestellt: Alle Komponenten von Adobe Campaign, einschließlich der Benutzeroberfläche, der Ausführungsverwaltungsmaschine und der Campaign-Datenbanken, werden vollständig von der Adobe gehostet, einschließlich E-Mail-Ausführung, Mirrorseiten, Tracking-Server und extern orientierten Webkomponenten wie Abmelde-Seite/Präferenzcenter und Landingpages.
+Adobe Campaign v8 wird als Managed Service bereitgestellt: Alle Komponenten von Adobe Campaign, einschließlich der Benutzeroberfläche, der Ausführungsverwaltungs-Engine und der Campaign-Datenbanken, werden vollständig von Adobe gehostet, einschließlich E-Mail-Ausführung, Mirror-Seiten, Tracking-Server und nach außen gerichtete Web-Komponenten wie die Abmelde-Seite bzw. das Präferenzcenter und Landingpages.
 
-## Kampagnenprozesse
+## Prozesse in Campaign
 
-Der Campaign-Webserver steuert den Zugriff auf Campaign-Webprozesse. JavaScript ist die serverseitige Sprache, die für zentrale Produktfunktionen und die Anpassung verwendet wird. Tomcat ist die Backend-Engine und im Rahmen des Webprozesses in das Campaign-Produkt eingebettet. JavaScript wird beispielsweise auf JSP- oder JSSP-Seiten zum Rendern dynamischer Inhalte verwendet.
+Der Campaign-Webserver steuert den Zugriff auf Campaign-Web-Prozesse. JavaScript ist die Server-seitige Sprache, die für zentrale Produktfunktionen und die Anpassung verwendet wird. Tomcat ist die Back-End-Engine und im Rahmen des Web-Prozesses in das Campaign-Produkt eingebettet. JavaScript wird beispielsweise auf JSP- oder JSSP-Seiten zum Rendern dynamischer Inhalte verwendet.
 
 ![](assets/ac-processes.png)
 
-Die Campaign Client-Konsole stellt eine Verbindung zum Webserver her, indem sie SOAP XML über HTTP verwendet. Der Webserver stellt die Sicherheitsschicht bereit, übergibt die Anforderungen mithilfe von JavaScript an die Anwendungsschicht und die internen Prozesse von Campaign greifen mithilfe von SQL auf die Datenbank zu.
+Die Campaign Client-Konsole stellt eine Verbindung zum Webserver her, indem sie SOAP XML über HTTP verwendet. Der Webserver stellt die Sicherheitsebene bereit, übergibt die Anfragen mithilfe von JavaScript an die Anwendungsebene und die internen Prozesse von Campaign greifen mithilfe von SQL auf die Datenbank zu.
 
-Die allgemeine Kommunikation zwischen Campaign-Prozessen wird im folgenden eigenständigen Bereitstellungsdiagramm beschrieben: alle Campaign-Komponenten auf demselben Computer installiert sind.
+Die allgemeine Kommunikation zwischen Campaign-Prozessen wird im folgenden Diagramm einer Standalone-Implementierung beschrieben: Alle Campaign-Komponenten sind auf demselben Computer installiert.
 
 ![](assets/ac-standalone.png)
 
-Der Benutzer stellt mithilfe von HTTP eine Verbindung zum Campaign-Anwendungsserver her. Alle Daten und Informationen werden in der Campaign-Datenbank verwaltet. Wenn ein Campaign-Entwickler Konfigurationsänderungen durchführt, werden diese in der Datenbank erfasst. Wenn ein Marketing-Experte eine neue Kampagne erstellt, werden alle mit dieser neuen Kampagne verbundenen Informationen und Daten ebenfalls in der Datenbank verwaltet. Wenn ein Marketing-Experte eine Kampagne ausführt, werden E-Mail-Sendungen an Profile vom Campaign-Server über den SMTP-Server gesendet. Da Profile mit E-Mail-Sendungen wie dem Öffnen der E-Mail interagieren, werden Tracking-Daten an den Tracking-Server zurückgesendet.
+Der Benutzer stellt mithilfe von HTTP eine Verbindung zum Campaign-Anwendungs-Server her. Alle Daten und Informationen werden in der Campaign-Datenbank verwaltet. Wenn ein Campaign-Entwickler Änderungen an der Konfiguration durchführt, werden diese in der Datenbank erfasst. Wenn ein Marketer eine neue Kampagne erstellt, werden alle mit dieser neuen Kampagne verbundenen Informationen und Daten ebenfalls in der Datenbank verwaltet. Wenn ein Marketer eine Kampagne ausführt, werden vom Campaign-Server über den SMTP-Server E-Mail-Sendungen an Profile durchgeführt. Wenn Profile mit E-Mail-Sendungen interagieren, wie etwa beim Öffnen einer E-Mail, werden Tracking-Daten an den Tracking-Server zurückgesendet.
 
-![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über Campaign-Prozesse](../dev/general-architecture.md#dev-env).
+![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über die Prozesse in Campaign](../dev/general-architecture.md#dev-env).

@@ -56,7 +56,7 @@ ht-degree: 96%
    + Erstellen von Audiences {#create-audiences}
       + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
       + [Erstellen und Verwalten von Filtern](audiences/create-filters.md)
-   + [Verwalten von Ordner und Ansichten](audiences/folders-and-views.md)
+   + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
    + [Best Practices](audiences/audiences-best-practices.md)
 + Senden von Nachrichten {#send}
    + [E-Mails](send/email.md)

@@ -1,5 +1,5 @@
 ---
-title: Filter in Adobe Campaign erstellen
+title: Erstellen von Filtern in Adobe Campaign
 description: Erfahren Sie, wie Sie Ihre Daten filtern und Filter in Campaign speichern können.
 feature: Audiences, Profiles
 role: Data Engineer
@@ -8,19 +8,19 @@ exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 source-git-commit: 9c5c5e825294bd39742ecbd07b98a90b4555c138
 workflow-type: tm+mt
 source-wordcount: '1768'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
 # Erstellen und Verwalten von Filtern{#create-filters}
 
-Beim Filtern von Daten wird ein kleinerer Teil Ihres Datensatzes ausgewählt, nur die Datensätze, die bestimmten Kriterien entsprechen, und diese Untergruppe für bestimmte Aktionen (Aktualisierungen, Erstellung von Zielgruppen) oder Analysen verwendet.
+Beim Filtern von Daten wird ein kleinerer Teil Ihrer Datenmenge ausgewählt, nämlich nur die Einträge, die bestimmten Kriterien entsprechen. Diese Untergruppe wird für bestimmte Aktionen (Aktualisierungen, Erstellung von Audiences) oder Analysen verwendet.
 
-Beim Durchsuchen von Campaign über **[!UICONTROL Explorer]**, werden die Daten in Listen angezeigt. Sie können vorhandene integrierte Filter verwenden, um auf eine bestimmte Untergruppe dieser Daten zuzugreifen: Adressen in Quarantäne, Empfänger ohne Targeting, eine bestimmte Altersgruppe oder das Erstellungsdatum.
+Beim Durchsuchen von Campaign über den **[!UICONTROL Explorer]** werden die Daten in Listen angezeigt. Sie können vorhandene integrierte Filter verwenden, um auf eine bestimmte Untergruppe dieser Daten zuzugreifen: Beispielsweise Adressen in Quarantäne, nicht kontaktierte Empfänger, eine bestimmte Altersgruppe oder das Erstellungsdatum.
 
 Sie können auch eigene Filter erstellen, diese zur späteren Verwendung speichern oder für andere Campaign-Benutzer freigeben.
 
-Filterkonfiguration ermöglicht die Auswahl von Daten aus einer Liste **[!UICONTROL dynamisch]**: bei Änderung der Daten werden die gefilterten Daten aktualisiert.
+Die Filterkonfiguration ermöglicht die **[!UICONTROL dynamische]** Auswahl von Daten aus einer Liste. Bei Änderung der Daten werden die gefilterten Daten aktualisiert.
 
 >[!NOTE]
 >
@@ -30,17 +30,17 @@ Die folgenden Filtertypen sind in Adobe Campaign verfügbar:
 
 ## Vordefinierte Filter{#predefined-filters}
 
-Vordefinierte Filter sind über die **Filter** oberhalb jeder Liste.
+Vordefinierte Filter sind über den Button **Filter** oberhalb jeder Liste verfügbar.
 
 Für die Profile sind beispielsweise die folgenden integrierten Filter verfügbar:
 
 ![](assets/built-in-filters.png)
 
-Sie können auf die Filterdetails im **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]** -Knoten des Explorers.
+Sie können im Knoten **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]** des Explorers auf die Filterdetails zugreifen.
 
 >[!NOTE]
 >
->Für alle anderen Datenlisten werden vordefinierte Filter im  **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** Knoten.
+>Für alle anderen Datenlisten werden vordefinierte Filter im Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** gespeichert.
 
 Wählen Sie einen Filter aus, um dessen Definition anzuzeigen.
 
@@ -161,16 +161,16 @@ Integrierte vordefinierte Filter sind:
 
 ### Standardfilter{#default-filters}
 
-In den Feldern oberhalb jeder Liste können Sie die **vordefinierter Standardfilter** für diese Liste. Für die Empfängerliste können Sie standardmäßig den Namen und die E-Mail-Adresse filtern.
+In den Feldern oberhalb jeder Liste können Sie den **vordefinierten Standardfilter** für diese Liste verwenden. Für die Empfängerliste können Sie standardmäßig nach dem Namen und der E-Mail-Adresse filtern.
 
 ![](assets/filter-recipient-name.png)
 
 
 >[!NOTE]
 >
->Die **%** ersetzt alle Zeichenfolgen. Geben Sie beispielsweise `%@gmail.com` im Feld E-Mail , um alle Profile mit einer Gmail-Adresse anzuzeigen. Eingabe `%@L` im Feld Nachname , um alle Profile mit L im Nachnamen anzuzeigen.
+>Das Zeichen **%** ersetzt alle Zeichenfolgen. Geben Sie beispielsweise `%@gmail.com` im E-Mail-Feld ein, um alle Profile mit einer Gmail-Adresse anzuzeigen. Geben Sie `%@L` im Nachnamenfeld ein, um alle Profile mit &quot;L&quot; im Nachnamen anzuzeigen.
 
-Um den Standardfilter für eine Empfängerliste zu ändern, navigieren Sie zum **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]** Knoten.
+Um den Standardfilter für eine Empfängerliste zu ändern, gehen Sie zum Knoten **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]**.
 
 Standardfilter für andere Datentypen werden im Verzeichnisknoten **[!UICONTROL Administration > Konfigurationen > Vordefinierte Filter]** konfiguriert.
 
@@ -183,21 +183,21 @@ Gehen Sie wie folgt vor:
 
 1. Deaktivieren Sie diese Option für den aktuellen vordefinierten Filter.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um den Filter anzuwenden.
-1. Navigieren Sie zum Ordner Empfänger und klicken Sie auf die Schaltfläche **[!UICONTROL Filter entfernen]** rechts neben dem aktuellen Filter: Der neue Standardfilter ist verfügbar.
+1. Gehen Sie zum Ordner &quot;Empfänger&quot; und klicken Sie auf den Button **[!UICONTROL Diesen Filter entfernen]** rechts neben dem aktuellen Filter: Der neue Standardfilter ist verfügbar.
    ![](assets/updated-default-filter.png)
 
 
 ## Schnellfilter{#quick-filters}
 
-Verwendung und Kombination **Schnellfilter** , um Filter für bestimmte Felder zu definieren.
+Verwenden und kombinieren Sie **Schnellfilter**, um Filter für bestimmte Felder zu definieren.
 
-Nach dem Hinzufügen werden über der Datenliste ein nach dem anderen Schnellfilterfeld angezeigt. Sie können unabhängig voneinander gelöscht werden.
+Nach dem Hinzufügen werden die Schnellfilterfelder nacheinander über der Datenliste angezeigt. Sie können unabhängig voneinander gelöscht werden.
 
-Schnellfilter sind für jeden Benutzer spezifisch und werden jedes Mal neu initialisiert, wenn der Benutzer den Cache seiner Clientkonsole löscht.
+Schnellfilter sind für jeden Benutzer spezifisch und werden bei jeder Cache-Leerung der Client-Konsole erneut initialisiert.
 
-Wenn Sie einen Filter wiederverwenden müssen, erstellen Sie eine **erweiterter Filter** und speichern Sie es. [Weitere Informationen](#advanced-filters).
+Wenn Sie einen Filter wiederverwenden müssen, erstellen Sie einen **erweiterten Filter** und speichern Sie ihn. [Weitere Informationen](#advanced-filters).
 
-So erstellen Sie eine **Schnellfilter** führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um einen **Schnellfilter** zu erstellen:
 
 1. Klicken Sie mit der rechten Maustaste auf das Feld, nach dem Sie die Daten filtern möchten, und wählen Sie die Option **[!UICONTROL Nach diesem Feld filtern]** aus.
 
@@ -208,19 +208,19 @@ So erstellen Sie eine **Schnellfilter** führen Sie die folgenden Schritte aus:
    ![](assets/quick-filter-above-list.png)
 
 1. Wählen Sie die Filteroptionen aus.
-1. Entfernen Sie bei Bedarf das graue Symbol rechts neben einem Filter.
-1. Sie können Filter kombinieren, um den Filter zu verfeinern.
+1. Verwenden Sie bei Bedarf das graue Symbol rechts neben einem Filter, um ihn zu entfernen.
+1. Sie können Filter kombinieren, um Ihre Suche weiter einzuengen.
 
    ![](assets/add-filter-above-the-list.png)
 
 
-Wenn Sie ein Feld filtern müssen, das nicht im Formular verfügbar ist, dann in den Spalten und nach dieser Spalte filtern. Gehen Sie dazu wie folgt vor,
+Wenn Sie nach einem Feld filtern müssen, das im Formular nicht vorhanden ist, fügen Sie es in die Spalten ein und filtern Sie nach dieser Spalte. Gehen Sie dazu wie folgt vor,
 
-1. Klicken Sie auf **[!UICONTROL Liste konfigurieren]** Symbol.
+1. Klicken Sie auf das Symbol **[!UICONTROL Liste konfigurieren]**.
 
    ![](assets/configure-list.png)
 
-1. Wählen Sie die anzuzeigende Spalte aus, z. B. das Alter der Empfänger, und klicken Sie auf **Ok**.
+1. Wählen Sie die anzuzeigende Spalte aus, z. B. das Alter der Empfänger, und klicken Sie auf **Ok**.
 
    ![](assets/add-age-column.png)
 
@@ -234,19 +234,19 @@ Wenn Sie ein Feld filtern müssen, das nicht im Formular verfügbar ist, dann in
 
 ## Erweiterte Filter{#advanced-filters}
 
-Kombinieren komplexer Kriterien in **Erweiterte Filter**. Verwenden Sie diese Filter, um eine komplexe Abfrage oder eine Kombination von Abfragen Ihrer Daten zu erstellen. Diese Filter können gespeichert und für andere Campaign-Benutzer freigegeben werden.
+Kombinieren Sie in **Erweiterte Filter** komplexe Kriterien. Verwenden Sie diese Filter, um eine komplexe Abfrage oder eine Kombination von Abfragen Ihrer Daten zu erstellen. Diese Filter können gespeichert und für andere Campaign-Benutzer freigegeben werden.
 
-### Erweiterte Filter erstellen{#create-adv-filters}
+### Erstellen eines erweiterten Filters{#create-adv-filters}
 
-So erstellen Sie eine **erweiterter Filter**, klicken Sie auf die **[!UICONTROL Filter]** Schaltfläche und wählen Sie **[!UICONTROL Erweiterte Filter...]**.
+Um einen **erweiterten Filter** zu erstellen, klicken Sie auf den Button **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Erweiterte Filter...]** aus.
 
 ![](assets/adv-filter.png)
 
-Sie können auch mit der rechten Maustaste auf die Datenliste klicken und **[!UICONTROL Erweiterte Filter...]**.
+Alternativ können Sie mit der rechten Maustaste in die Liste der zu filternden Daten klicken und **[!UICONTROL Erweiterte Filter...]** auswählen.
 
-Filterbedingungen definieren. Im folgenden Beispiel filtern Sie nach Empfängern, deren Kundennummer nicht mit NL beginnt und die in Paris oder Los Angeles leben.
+Definieren Sie die Filterbedingungen. Im folgenden Beispiel filtern Sie nach Empfängern, deren Kundennummer nicht mit NL beginnt und die in Paris oder Los Angeles leben.
 
-1. Klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]** des **[!UICONTROL Ausdruck]** Spalte.
+1. Klicken Sie auf das Symbol **[!UICONTROL Ausdruck bearbeiten]** der Spalte **[!UICONTROL Ausdruck]**.
 
    ![](assets/edit-exp.png)
 
@@ -263,22 +263,22 @@ Filterbedingungen definieren. Im folgenden Beispiel filtern Sie nach Empfängern
    >
    >Mithilfe der Pfeile in der Symbolleiste können Sie die Ausdrücke hierarchisch gliedern oder die Reihenfolge der Ausdrücke der Abfrage ändern.
 
-1. Es stehen drei Operatoren zur Kombination von Ausdrücken zur Verfügung:  **und**, **Oder**, **Außer**. Klicken Sie auf den Pfeil, um zu **Oder**.
+1. Es stehen drei Operatoren zur Kombination von Ausdrücken zur Verfügung: **Und**, **Oder**, **Außer**. Klicken Sie auf den Pfeil, um zu **Oder** zu wechseln.
 
    ![](assets/select-or-operator.png)
 
-1. Klicken **[!UICONTROL Ok]** , um den Filter zu erstellen und ihn auf die aktuelle Liste anzuwenden.
+1. Klicken Sie auf **[!UICONTROL OK]**, um den Filter zu erstellen und ihn auf die aktuelle Liste anzuwenden.
 
 Der angewendete Filter wird oberhalb der Liste angezeigt.
 
 ![](assets/adv-filter-link.png)
 
-Um diesen Filter zu bearbeiten oder zu ändern, klicken Sie auf den Link mit der Beschreibung in Blau oberhalb der Liste.
+Um diesen Filter zu bearbeiten oder zu ändern, klicken Sie oberhalb der Liste auf den Link mit der Beschreibung in Blau.
 
 
-### Erweiterte Filter speichern{#save-adv-filters}
+### Speichern eines erweiterten Filters{#save-adv-filters}
 
-Erweiterte Filter können als  [vordefinierter Filter](#predefined-filters), damit Sie sie wiederverwenden und für andere Campaign-Benutzer freigeben können.
+Erweiterte Filter können als [vordefinierter Filter](#predefined-filters) gespeichert werden, sodass Sie sie wiederverwenden und für andere Campaign-Benutzer freigeben können.
 
 Gehen Sie wie folgt vor, um einen erweiterten Filter zu speichern:
 
@@ -291,7 +291,7 @@ Gehen Sie wie folgt vor, um einen erweiterten Filter zu speichern:
 
    ![](assets/application-filter-save.png)
 
-Der Filter wird zum [vordefinierte Filter](#predefined-filters). Sie kann von diesem Knoten aus aktualisiert werden.
+Der Filter wird zu den [vordefinierten Filtern](#predefined-filters) hinzugefügt. Er kann von diesem Knoten aus aktualisiert werden.
 
 ![](assets/added-to-predefined-filters.png)
 
@@ -307,48 +307,48 @@ Dieser Filter ist auch in den vordefinierten Filtern der Empfängerliste verfüg
 
 
 
-### Verwenden Sie einen Filter, um ein Segment zu definieren {#filter-as-segment}
+### Verwenden eines Filters, um ein Segment zu definieren {#filter-as-segment}
 
-Sie können Filter verwenden und kombinieren, um ein Zielgruppensegment zu erstellen.
+Sie können Filter verwenden und kombinieren, um ein Segment der Zielpopulation zu erstellen.
 
-Nach dem Speichern sind erweiterte Filter verfügbar, wenn Sie die Zielpopulation einer Nachricht im **[!UICONTROL Benutzerfilter]** Abschnitt.
+Nach dem Speichern sind erweiterte Filter verfügbar, wenn Sie die Zielpopulation einer Nachricht im Abschnitt **[!UICONTROL Benutzerfilter]** auswählen.
 
 ![](assets/adv-filter-target-type.png)
 
 
 >[!NOTE]
 >
->Verwenden Sie die **[!UICONTROL Empfänger aus diesem Segment ausschließen]** , um nur Kontakte auszuwählen, die nicht den Filterkriterien entsprechen.
+>Verwenden Sie die Option **[!UICONTROL Empfänger von diesem Segment ausschließen]**, um nur Kontakte auszuwählen, die nicht den Filterkriterien entsprechen.
 
 
 ### Verwenden von Funktionen zum Erstellen erweiterter Filter{#use-functions-adv-filters}
 
-Verwenden Sie Funktionen zur Definition des Inhalts des Filters, um erweiterte Filterfunktionen durchzuführen. Der erweiterte Filter-Editor nutzt alle Funktionen des Campaign-Abfrageeditors.
+Verwenden Sie Funktionen zur Definition des Inhalts des Filters, um erweiterte Filterfunktionen auszuführen. Der Editor für erweiterte Filter nutzt alle Funktionen des Campaign-Abfragetools.
 
-Erfahren Sie, wie Sie in der Dokumentation zu Adobe Campaign Classic v7 erweiterte Abfragen erstellen. Beispiel:
+In der Dokumentation zu Adobe Campaign Classic v7 erfahren Sie, wie Sie erweiterte Abfragen erstellen können. Beispiel:
 
-* Erfahren Sie, wie Sie in einfache Empfängerattribute auswählen können. [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=en#example--targeting-on-simple-recipient-attributes){target=&quot;_blank&quot;}.
-* Informationen zum Filtern von Empfängern, die in den letzten sieben Tagen nicht kontaktiert wurden, finden Sie unter [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/querying-using-many-to-many-relationship.html?lang=de){target=&quot;_blank&quot;}.
-* Informationen dazu, wie Sie die Benutzerliste abrufen können, finden Sie unter [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/creating-a-filter.html){target=&quot;_blank&quot;}.
-* Erfahren Sie, wie Sie eine Geburtstags-E-Mail-Zielgruppe erstellen in  [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=en#identifying-recipients-whose-birthday-it-is){target=&quot;_blank&quot;}.
+* In der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=de#example--targeting-on-simple-recipient-attributes) erfahren Sie, wie Sie Ihre Auswahl anhand einfacher Empfängerattribute treffen können{target=&quot;_blank&quot;}.
+* In der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/querying-using-many-to-many-relationship.html?lang=de) erfahren Sie, wie Sie nach Empfängern filtern, die in den letzten 7 Tagen nicht kontaktiert wurden{target=&quot;_blank&quot;}.
+* In der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/creating-a-filter.html?lang=de) erfahren Sie, wie die Liste der Benutzer nach aktiven Konten gefiltert werden kann{target=&quot;_blank&quot;}.
+* In der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html??lang=de#identifying-recipients-whose-birthday-it-is) erfahren Sie, wie Sie eine Audience für eine Geburtstags-E-Mail erstellen können{target=&quot;_blank&quot;}.
 
 
 ### Erweiterte Parameter für vordefinierte Filter {#param-for-data-filters}
 
-Erweiterte Parameter sind für vordefinierte Filter verfügbar. Um darauf zuzugreifen, navigieren Sie zum **[!UICONTROL Parameter]** im Filter.
+Für vordefinierte Filter sind erweiterte Parameter verfügbar. Um darauf zuzugreifen, gehen Sie zur Registerkarte **[!UICONTROL Parameter]** des Filters.
 
-* Um den Filter standardmäßig für alle Listen anzuzeigen, die auf diesem Dokumenttyp basieren, wählen Sie die **[!UICONTROL Standardfilter für den zugehörigen Dokumenttyp]** -Option.
+* Um den Filter standardmäßig für alle Listen anzuzeigen, die auf diesem Dokumenttyp basieren, wählen Sie die Option **[!UICONTROL Standardfilter für diesen Dokumenttyp]** aus.
 
-   Beispiel: die **[!UICONTROL Nach Name oder Login]** Filter wird auf Operatoren angewendet Diese Option ist ausgewählt, sodass der Filter immer auf allen Benutzerlisten angezeigt wird.
+   Beispielsweise wird der Filter **[!UICONTROL Nach Name oder Login]** auf Benutzer angewendet. Die Option &quot;Standardfilter für diesen Dokumenttyp&quot; ist angekreuzt, der Filter wird daher systematisch für alle Benutzerlisten vorgeschlagen.
 
-* Um einen Filter für alle Campaign-Benutzer verfügbar zu machen, wählen Sie die  **[!UICONTROL Mit anderen Benutzern geteilter Filter]** -Option.
+* Um einen Filter für alle Campaign-Benutzer verfügbar zu machen, wählen Sie die  Option **[!UICONTROL Mit anderen Benutzern geteilter Filter]** aus.
 
-* Um ein Formular zur Auswahl der Filterkriterien zu definieren, wählen Sie die  **[!UICONTROL Eingabeformular für Parameter verwenden]** -Option. Dieses Formular muss im XML-Format im **[!UICONTROL Formular]** Registerkarte. Beispielsweise der integrierte vordefinierte Filter **[!UICONTROL Empfänger, die geöffnet haben]** zeigt ein Filterfeld an, in dem Sie den Versand auswählen können, für den der Filter gilt.
+* Um ein Formular zur Auswahl der Filterkriterien zu definieren, wählen Sie die Option **[!UICONTROL Nutzung eines Formulars zur Parametereingabe]** aus. Dieses Formular muss in der Registerkarte **[!UICONTROL Formular]** im XML-Format eingegeben werden. Zum Beispiel zeigt der integrierte vordefinierte Filter **[!UICONTROL Empfänger, die geöffnet haben]**, der in der Empfängerliste verfügbar ist, ein Filterfeld an, mit dem Sie den Versand auswählen können, für den der Filter gilt.
 
 ![](assets/predefined-filters-parameters.png)
 
 
-* Die **[!UICONTROL Erweiterte Parameter]** -Link können Sie zusätzliche Einstellungen definieren.
+* Über den Link **[!UICONTROL Erweiterte Parameter]** können Sie zusätzliche Einstellungen definieren.
 
-   * Sie können eine SQL-Tabelle mit dem Filter verknüpfen, um ihn für alle Editoren freizugeben, die die Tabelle gemeinsam nutzen.
-   * Um zu verhindern, dass Benutzer den Filter überschreiben, wählen Sie die **[!UICONTROL Den Filter nicht einschränken]** -Option. Diese Option ist beispielsweise für die Filter &quot;Versandempfänger&quot; und &quot;Zu einem Ordner gehörende Empfänger von Sendungen&quot; aktiv, die im Versand-Assistenten verfügbar sind. Diese Filter können nicht überschrieben werden.
+   * Sie können eine SQL-Tabelle mit dem Filter verknüpfen, um ihn für alle Bearbeiter freizugeben, die die Tabelle gemeinsam nutzen.
+   * Um zu verhindern, dass Benutzer den Filter überschreiben, wählen Sie die Option **[!UICONTROL Filter nicht weiter einschränken]** aus. Diese Option ist beispielsweise für die Filter &quot;Versandempfänger&quot; und &quot;Empfänger von Sendungen eines bestimmten Ordners&quot; aktiv, die im Versand-Assistenten verfügbar sind. Diese Filter können nicht überschrieben werden.

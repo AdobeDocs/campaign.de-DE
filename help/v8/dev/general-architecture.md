@@ -5,7 +5,7 @@ exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: 9f375f8349140885cd4b6bcc206669a264cdbc9d
 workflow-type: tm+mt
 source-wordcount: '1066'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Die typische Implementierung einer Adobe Campaign-Lösung setzt sich aus folgend
 
 * **Datenbank-Container**
 
-   Basierend auf relativer Datenbanktechnologie speichert die Adobe Campaign Cloud-Datenbank alle Informationen, Kampagnenkomponenten, Angebote, Workflows und Kampagnenergebnisse in Datenbankbehältern.
+   Basierend auf der Technologie relationaler Datenbanken speichert die Adobe Campaign Cloud-Datenbank alle Informationen, Kampagnenkomponenten, Angebote und Workflows sowie die Ergebnisse von Kampagnen in Containern der Datenbank.
 
 ## Personalisierte Client-Umgebung {#client-env}
 
 Der Zugriff auf die Anwendung erfolgt auf unterschiedliche Weise: Rich-Client-, Thin-Client- oder API-Integration.
 
-![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über die Präsentationsschicht von Campaign](../start/ac-components.md).
+![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über die Präsentationsebene von Campaign](../start/ac-components.md).
 
 ## Entwicklungsumgebung {#dev-env}
 
@@ -55,9 +55,9 @@ Diese führt die im Programm definierten Workflow-Prozesse aus.
 
 Außerdem verarbeitet sie zeitweise ausgeführte technische Workflows, darunter:
 
-* **Tracking**: Ruft Trackinglogs ab und konsolidiert sie, sodass Sie die Protokolle vom Weiterleitungsserver abrufen und die vom Berichtsmodul verwendeten Aggregat-Indikatoren erstellen können.
-* **Bereinigung**: Bereinigt die Datenbank, löscht alte Datensätze und verhindert, dass die Datenbank exponentiell wächst.
-* **Rechnungsstellung**: Sendet einen Aktivitätsbericht für die Plattform (Größe der Datenbank, Anzahl der Marketing-Aktionen usw.).
+* **Tracking**: Stellt Trackinglogs wieder her und konsolidiert sie, sodass Sie die Protokolle vom Weiterleitungs-Server abrufen und die vom Berichtsmodul verwendeten aggregierten Indikatoren erstellen können.
+* **Bereinigung**: Bereinigt die Datenbank, löscht alte Einträge und verhindert, dass die Datenbank exponentiell wächst.
+* **Abrechnung**: Sendet einen Aktivitätsbericht für die Plattform (Größe der Datenbank, Anzahl der Marketing-Aktionen usw.).
 
 **Versand-Server** (nlserver mta)
 
@@ -69,7 +69,7 @@ Adobe Campaign umfasst eine native Funktion zum Senden von E-Mails. Dieser Proze
 
 Bei E-Mails übernimmt Adobe Campaign automatisch das Öffnungs- und Klick-Tracking (wobei das Tracking von Transaktionen auf Website-Ebene ebenfalls möglich ist). Hierfür werden die in den E-Mail-Nachrichten enthaltenen URLs so umgeschrieben, dass sie auf dieses Modul verweisen. Dieses wiederum registriert Internet-Benutzer, während diese an die Ziel-URL weitergeleitet werden.
 
-Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Technisch gesehen ist diese Funktion in einem Erweiterungsmodul eines HTTP-Servers (ISAPI-Erweiterung in IIS, DSO-Apache-Modul usw.) implementiert. und nur unter Windows verfügbar.
+Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht sind diese Funktionen in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert. und nur unter Windows verfügbar.
 
 Daneben sind auch noch weitere technische Prozesse verfügbar:
 
@@ -107,7 +107,7 @@ Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einze
 
 Die Cloud-Datenbank von Adobe Campaign nutzt [!DNL Snowflake], wo die funktionellen Daten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versand, Aufträge und Protokolle, Trackinglogs usw.) und die Arbeitsdaten (Bestellungen, Interessenten) für die Lösung abgelegt sind. Alle Komponenten von Adobe Campaign kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
 
-Sie können Adobe Campaign mithilfe der vordefinierten Datenbank und Schemata bereitstellen. Bei Bedarf kann diese vordefinierte Umgebung erweitert werden. Der Zugriff auf alle Daten im Datamart durch Adobe Campaign erfolgt über SQL-Aufrufe. Adobe Campaign bietet außerdem eine vollständige Ergänzung der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels derer Daten in das und aus dem System importiert und exportiert werden können.
+Kunden können Adobe Campaign mithilfe der vordefinierten Datenbank und vordefinierten Schemas bereitstellen. Bei Bedarf kann diese vordefinierte Umgebung erweitert werden. Der Zugriff auf alle Daten im Datamart durch Adobe Campaign erfolgt über SQL-Aufrufe. Adobe Campaign bietet außerdem eine vollständige Ergänzung der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels derer Daten in das und aus dem System importiert und exportiert werden können.
 
 ![](assets/data-flow-diagram.png)
 

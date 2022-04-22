@@ -8,7 +8,7 @@ exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
 source-wordcount: '1733'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -183,9 +183,9 @@ Wenn Ihr Versandinhalt in einer auf einem Remote-Server gespeicherten HTML-Datei
 
 * [Koordinieren von Datenaktualisierungen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/coordinating-data-updates.html?lang=de){target=&quot;_blank&quot;}
 
-   Erfahren Sie, wie Sie überprüfen können, ob der Aktualisierungsprozess beendet wurde, bevor Sie einen weiteren Aktualisierungsvorgang ausführen. Dazu richten wir eine Instanzvariable ein und lassen den Workflow testen, ob die Instanz ausgeführt wird, um zu entscheiden, ob die Ausführung des Workflows fortgesetzt und die Aktualisierung durchgeführt werden soll.
+   Erfahren Sie, wie Sie überprüfen können, ob der Aktualisierungsprozess beendet wurde, bevor Sie einen weiteren Aktualisierungsvorgang ausführen. Zu diesem Zweck richten wir eine Instanzvariable ein und lassen den Workflow testen, ob die Instanz ausgeführt wird, um dann zu entscheiden, ob die Ausführung des Workflows fortgesetzt und die Aktualisierung durchgeführt werden soll.
 
-* [Zusammenfassungsliste erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/creating-a-summary-list.html?lang=de){target=&quot;_blank&quot;}
+* [Erstellen einer Zusammenfassungsliste](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/creating-a-summary-list.html?lang=de){target=&quot;_blank&quot;}
 
    Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie nach dem Erfassen von Dateien und mehreren Anreicherungen eine zusammenfassende Liste erstellen können. Das Beispiel basiert auf einer Liste von Kontakten, die in einem Geschäft Einkäufe getätigt haben.
 
@@ -217,7 +217,7 @@ Wenn Ihr Versandinhalt in einer auf einem Remote-Server gespeicherten HTML-Datei
 
    Erfahren Sie, wie Sie Abfragen zu Versandinformationen definieren, um das Verhalten des Profils abzurufen.
 
-* [Aggregate berechnen](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/performing-aggregate-computing.html?lang=de){target=&quot;_blank&quot;}
+* [Berechnen von Aggregaten](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/performing-aggregate-computing.html?lang=de){target=&quot;_blank&quot;}
 
    Erfahren Sie, wie Sie die Anzahl der in London lebenden Profile nach Geschlecht zählen.
 

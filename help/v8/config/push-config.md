@@ -9,7 +9,7 @@ exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 8417b1b4b7370e2a2eed76e9f1ac395eccf0ac66
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
 
 ## Android SDK integrieren
 
-Das Android SDK ist eine in Java geschriebene JAR-Bibliothek. Dadurch können Android-Entwickler in Adobe Campaign integrieren: registrieren Sie ein neues Gerät, verknüpfen Sie das Gerät mit einem Benutzer, verfolgen Sie das Verhalten und vieles mehr.
+Das Android SDK ist eine in Java geschriebene JAR-Bibliothek. Damit können Android-Entwickler eine Integration mit Adobe Campaign vornehmen: ein neues Gerät registrieren, das Gerät mit einem Benutzer verknüpfen, Verhalten verfolgen und vieles mehr.
 
 In diesem Abschnitt erfahren Sie, wie Sie das Android-SDK in einer Android-Anwendung verwenden, indem Sie [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/) implementieren.
 
@@ -794,7 +794,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
 Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Mobile-App-Code und in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der **Dokumentation zu Campaign Classic v7** zur Mobile App: [Konfigurationsschritte für iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;} und [Konfigurationsschritte für Android](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der **Dokumentation zu Campaign Classic v7** zur Mobile App: [Konfigurationsschritte für iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de){target=&quot;_blank&quot;} und [Konfigurationsschritte für Android](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de){target=&quot;_blank&quot;}.
 
 Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
 

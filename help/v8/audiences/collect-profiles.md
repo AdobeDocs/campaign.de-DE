@@ -1,6 +1,6 @@
 ---
-title: Erfassen und Aktualisieren von Profilen mit Webformularen
-description: Erfahren Sie, wie Sie Profile mit Webformularen erfassen und aktualisieren können.
+title: Erfassen und Aktualisieren von Profilen mit Web-Formularen
+description: Erfahren Sie, wie Sie Profile mit Web-Formularen erfassen und aktualisieren können.
 feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
@@ -10,13 +10,13 @@ exl-id: a228c0dc-80f5-4c51-b73b-ced0aa27a65a
 source-git-commit: c316da3c431e42860c46b5a23c73a7c129abf3ac
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
-# Erfassen und Aktualisieren von Profilen mit Webformularen
+# Erfassen und Aktualisieren von Profilen mit Web-Formularen
 
-Verwenden Sie Campaign, um Webformulare zu erstellen und Profildaten einfach und effizient zu erfassen und zu verwalten. Sie können diese Formulare auf Ihrer Website freigeben, sodass Ihre Kontakte ihre Informationen einfach bereitstellen können. Daten werden an Campaign gesendet, um deren Profil zu erstellen oder zu aktualisieren.
+Verwenden Sie Campaign, um Web-Formulare zu erstellen und Profilinformationen einfach und effizient zu erfassen und zu verwalten. Sie können diese Formulare auf Ihrer Website freigeben, sodass Ihre Kontakte ihre Informationen einfach bereitstellen können. Die Daten werden an Campaign gesendet, um deren Profil zu erstellen oder zu aktualisieren.
 
 ![](assets/web-form-page.png)
 

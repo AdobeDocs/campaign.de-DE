@@ -8,52 +8,52 @@ exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: c316da3c431e42860c46b5a23c73a7c129abf3ac
 workflow-type: tm+mt
 source-wordcount: '3166'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Ursachen für das Fehlschlagen von Sendungen{#delivery-failures}
 
-Absprünge sind das Ergebnis eines Versandversuchs und -fehlers, bei dem der ISP Fehlermeldungen zurückgibt. Die Bounce-Verarbeitung ist ein wichtiger Bestandteil der Listenhygiene. Nachdem eine E-Mail mehrmals hintereinander abgeschnitten wurde, markiert dieser Prozess sie zur Unterdrückung. Dadurch wird verhindert, dass Systeme weiterhin ungültige E-Mail-Adressen senden. Absprünge sind eines der wichtigsten Datenteile, mit denen ISPs die IP-Reputation bestimmen. Es ist wichtig, diese Metrik im Auge zu behalten. Die häufigste Methode zur Messung des Versands von Marketing-Nachrichten ist wahrscheinlich &quot;Zugestellt&quot;oder &quot;Bounce&quot;: Je höher der bereitgestellte Prozentsatz ist, desto besser.
+Bounces sind das Ergebnis eines Versandversuchs und -fehlers, bei dem der ISP Fehlermeldungen zurückgibt. Die Bounce-Verarbeitung ist ein wichtiger Bestandteil der Listenhygiene. Nach mehrmaligen Bounces einer E-Mail wird sie von diesem Prozess markiert und unterdrückt. Dadurch wird verhindert, dass Systeme weiterhin E-Mails mit ungültigen E-Mail-Adressen versenden. Bounces sind eines der wichtigsten Kriterien, mit denen ISPs die IP-Reputation bestimmen. Es ist wichtig, diese Metrik im Auge zu behalten. Die häufigste Methode zur Messung des Versands von Marketing-Nachrichten ist wahrscheinlich der Vergleich von „Zugestellt“ mit „Bounce“. Je höher der Prozentsatz der zugestellten Mails ist, desto besser.
 
-Wenn eine Nachricht nicht an ein Profil gesendet werden kann, sendet der Remote-Server automatisch eine Fehlermeldung an Adobe Campaign. Dieser Fehler wird qualifiziert, um festzustellen, ob E-Mail-Adresse, Telefonnummer oder Gerät unter Quarantäne gestellt werden soll. Siehe [Bounce-Message-Verwaltung](#bounce-mail-qualification).
+Wenn eine Nachricht nicht an ein Profil gesendet werden kann, sendet der Remote-Server automatisch eine Fehlermeldung an Adobe Campaign. Dieser Fehler wird qualifiziert, um festzustellen, ob die E-Mail-Adresse, die Telefonnummer oder das Gerät unter Quarantäne gestellt werden soll. Siehe [Bounce-Message-Verwaltung](#bounce-mail-qualification).
 
-Nach dem Versand einer Nachricht können Sie den Versandstatus für jedes Profil sowie den damit verbundenen Fehlertyp und die Ursache in den Versandlogs einsehen.
+Nach dem Versand einer Nachricht können Sie den Versandstatus für jedes Profil sowie den damit verbundenen Fehlertyp und die Ursache in den Versand-Logs einsehen.
 
 Wenn eine E-Mail-Adresse unter Quarantäne gestellt wird oder sich ein Profil auf der Blockierungsliste befindet, wird der Empfänger bei der Versandvorbereitung ausgeschlossen. Ausgeschlossene Nachrichten werden im Versand-Dashboard aufgeführt.
 
 ## Warum ist der Nachrichtenversand fehlgeschlagen? {#delivery-failure-reasons}
 
-Wenn eine Nachricht fehlschlägt, gibt es zwei Typen von Fehlern. Jeder Fehlertyp bestimmt, ob eine Adresse an [Quarantänen](quarantines.md#quarantine-reason) oder nicht.
+Es gibt zwei Typen von fehlgeschlagenen Sendungen. Jeder Fehlertyp bestimmt, ob eine Adresse in [Quarantäne](quarantines.md#quarantine-reason) gestellt wird oder nicht.
 
 
 * **Hardbounces**
-Hardbounces sind dauerhafte Fehler, die erzeugt werden, wenn ein ISP feststellt, dass ein Mailversuch an eine Abonnentenadresse nicht zugestellt werden kann. Innerhalb von Adobe Campaign werden Hardbounces, die als nicht zustellbar kategorisiert sind, zur Quarantäne hinzugefügt, was bedeutet, dass sie nicht erneut versucht werden. Es gibt Fälle, in denen ein Hardbounce ignoriert wird, wenn die Ursache des Fehlers unbekannt ist.
+Hardbounces sind dauerhafte Fehler, die erzeugt werden, wenn ein ISP feststellt, dass eine E-Mail nicht an eine Abonnentenadresse zugestellt werden kann. Innerhalb von Adobe Campaign werden Hardbounces, die als nicht zustellbar kategorisiert sind, zur Quarantäne hinzugefügt, was bedeutet, dass kein erneuter Versandversuch stattfindet. In manchen Fällen wird ein Hardbounce ignoriert, wenn die Ursache des Fehlers unbekannt ist.
 
-   Im Folgenden finden Sie einige gängige Beispiele für Hardbounces: Adresse ist nicht vorhanden, Konto deaktiviert, schlechte Syntax, ungültige Domain
+   Im Folgenden finden Sie einige gängige Beispiele für Hardbounces: Adresse existiert nicht, Konto deaktiviert, fehlerhafte Syntax, ungültige Domain
 
 
 * **Softbounces**
-Softbounces sind temporäre Fehler, die von ISPs bei Problemen beim Versand von E-Mails erzeugt werden. Bei Softbounces werden mehrere Zustellversuche unternommen (abhängig von den benutzerdefinierten oder vordefinierten Versandeinstellungen), um einen erfolgreichen Versand durchzuführen. Adressen, die kontinuierlich als Softbounce fungieren, werden erst dann unter Quarantäne gestellt, wenn eine maximale Anzahl weiterer Versuche versucht wurde (was wiederum je nach Einstellungen variiert).
+Softbounces sind temporäre Fehler, die von ISPs bei Versandproblemen von E-Mails erzeugt werden. Bei Softbounces werden mehrfache erneute Zustellversuche unternommen (abhängig von den benutzerdefinierten oder vorkonfigurierten Versandeinstellungen), um einen erfolgreichen Versand durchzuführen. Adressen, die kontinuierlich einen Softbounce verursachen, werden erst dann unter Quarantäne gestellt, wenn eine maximale Anzahl erneuter Zustellungen versucht wurde (was wiederum je nach Einstellungen variiert).
 
-   Einige häufige Ursachen für Softbounces sind: Postfach voll, E-Mail-Server herunterladen, Probleme mit der Absender-Reputation
+   Einige häufige Ursachen für Softbounces sind: Postfach voll, empfangender E-Mail-Server heruntergefahren, Probleme mit der Versender-Reputation.
 
 
-Die  **Ignoriert** Der Fehlertyp ist als vorübergehend bekannt, z. B. &quot;Out of office&quot; oder ein technischer Fehler, z. B. wenn der Absendertyp &quot;Postmaster&quot; ist.
+**Ignoriert**: Vorübergehender Fehler, beispielsweise &quot;Out of office&quot; oder technischer Fehler bei Absendern vom Typ &quot;Postmaster&quot;.
 
 
 
 ### Qualifizierung von Bounce-Mails {#bounce-mail-qualification}
 
-Die von Campaign zur Qualifizierung von fehlgeschlagenen Sendungen verwendeten Regeln werden im Abschnitt **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** Knoten. Sie ist nicht vollständig und wird regelmäßig von Adobe Campaign aktualisiert und kann auch vom Benutzer verwaltet werden.
+Die von Campaign zur Qualifizierung von fehlgeschlagenen Sendungen verwendeten Regeln werden im Knoten **[!UICONTROL Administration > Campaign Management > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** aufgelistet. Sie ist nicht vollständig und wird regelmäßig von Adobe Campaign aktualisiert und kann auch vom Benutzer verwaltet werden.
 
 ![](assets/delivery-log-qualification.png)
 
-Die Bounce-Qualifikationen in der **[!UICONTROL Versandlogqualifizierung]** -Tabelle wird nicht verwendet für **synchron** Fehlermeldungen zu fehlgeschlagenen Sendungen. Der Impuls bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
+Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht für Fehlernachrichten bei **synchronen** Sendungen verwendet. Momentum bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
 
-**Asynchron** Bounces werden vom inMail-Prozess durch das **[!UICONTROL Eingehende E-Mail]** Regeln.
+**Asynchrone** Bounces werden vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert.
 
-Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Nachricht wird im **[!UICONTROL Erster Text]** Spalte **[!UICONTROL Prüfung]** Registerkarte.
+Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Nachricht wird in der Spalte **[!UICONTROL Erster Text]** der Registerkarte **[!UICONTROL Audit]** angezeigt.
 
 ![](assets/delivery-log-first-txt.png)
 
@@ -67,9 +67,9 @@ Dadurch können alle Fehlschläge desselben Typs zusammengefasst werden und mehr
 
 Folgende Qualifikationsstatus von Bounce Messages treten auf:
 
-* **[!UICONTROL Zu qualifizieren]** : die Bounce Message konnte nicht qualifiziert werden. Die Qualifikation muss dem Zustellbarkeitsteam zugewiesen werden, um eine effiziente Zustellbarkeit der Plattform zu gewährleisten. Solange sie nicht qualifiziert ist, wird die Bounce Message nicht zur Anreicherung der Liste der E-Mail-Verwaltungsregeln verwendet.
+* **[!UICONTROL Zu qualifizieren]**: die Bounce Message konnte nicht qualifiziert werden. Die Qualifizierung muss dem Zustellbarkeits-Team zugewiesen werden, um eine effiziente Zustellbarkeit der Plattform zu gewährleisten. Nicht qualifizierte Bounce Messages werden nicht zur Anreicherung der Liste mit E-Mail-Regeln herangezogen.
 * **[!UICONTROL Beibehalten]**: Die Bounce Message wurde qualifiziert und wird vom Workflow **Zustellbarkeit** verwendet, um mit den existierenden E-Mail-Regeln verglichen zu werden und eventuell die Liste zu ergänzen.
-* **[!UICONTROL Ignorieren]** : Die Bounce Message wird ignoriert, was bedeutet, dass die Adresse des Empfängers nie unter Quarantäne gestellt wird. Sie wird vom Workflow **Zustellbarkeit** nicht verwendet und auch nicht an Client-Instanzen gesendet.
+* **[!UICONTROL Ignorieren]**: Die Bounce Message wird ignoriert, was bedeutet, dass diese Bounce Message nie dazu führt, dass die Adresse des Empfängers unter Quarantäne gestellt wird. Sie wird vom Workflow **Zustellbarkeit** nicht verwendet und auch nicht an Client-Instanzen gesendet.
 
 ![](assets/delivery-log-status.png)
 
@@ -79,27 +79,27 @@ Folgende Qualifikationsstatus von Bounce Messages treten auf:
 >Bei Ausfall eines ISP werden über Campaign gesendete E-Mails fälschlicherweise als Bounces gekennzeichnet. Um dies zu korrigieren, müssen Sie die Bounce-Qualifizierung aktualisieren.
 
 
-## Wiederholungsverwaltung {#retries}
+## Verwaltung von erneuten Zustellversuchen {#retries}
 
-Wenn der Nachrichtenversand aufgrund eines temporären Fehlers fehlschlägt (**Soft** oder **Ignoriert**), versucht CAmpaign erneut zu senden. Diese Neuversuche können bis zum Ende der Versandlaufzeit durchgeführt werden. Die Anzahl und Häufigkeit der Neuversuche werden von Momentum basierend auf Typ und Schweregrad der Bounce-Antworten, die vom ISP der Nachricht zurückgegeben werden, eingerichtet.
+Wenn der Nachrichtenversand aufgrund eines temporären Fehlers fehlschlägt (**Soft** oder **Ignoriert**), versucht Campaign eine erneute Zustellung. Diese weiteren Zustellversuche können bis zum Ende der Versandlaufzeit durchgeführt werden. Die Anzahl und Häufigkeit der weiteren Zustellversuche werden von Momentum basierend auf Typ und Schweregrad der Bounce-Antworten, die vom ISP der Nachricht zurückgegeben werden, festgelegt.
 
-Die Standardkonfiguration definiert fünf Neuversuche in Intervallen von einer Stunde, gefolgt von einem Wiederholungsversuch pro Tag für vier Tage. Die Anzahl weiterer Versuche kann global oder für jeden Versand oder jede Versandvorlage geändert werden. Wenn Sie die Versandlaufzeit und weitere Zustellversuche anpassen müssen, wenden Sie sich an den Support von Adobe.
+Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde konfiguriert, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Zustellversuche kann global oder für jeden Versand oder jede Versandvorlage geändert werden. Wenn Sie die Versandlaufzeit und weitere Zustellversuche anpassen müssen, wenden Sie sich an den Support von Adobe.
 
-## Synchrone und asynchrone Fehler     {#synchronous-and-asynchronous-errors}
+## Synchrone und asynchrone Fehler {#synchronous-and-asynchronous-errors}
 
-Ein Nachrichtenversand kann sofort fehlschlagen. In diesem Fall werden wir dies als synchroner Fehler qualifizieren. Wenn der Nachrichtenversand nach dem Versand fehlschlägt oder zu einem späteren Zeitpunkt fehlschlägt, ist der Fehler asynchron.
+Ein Nachrichtenversand kann sofort fehlschlagen. In diesem Fall wird dies als synchroner Fehler qualifiziert. Wenn der Nachrichtenversand zu einem späteren Zeitpunkt fehlschlägt, ist der Fehler asynchron.
 
 Diese Fehlertypen werden wie folgt verwaltet:
 
-* **Synchrone Fehler**: Wenn der vom Adobe Campaign-Versandserver angesprochene Remote-Server sofort eine Fehlermeldung zurückgibt, darf der Versand nicht an den Server des Profils gesendet werden. Adobe Campaign qualifiziert jeden Fehler, um festzustellen, ob die betroffenen E-Mail-Adressen unter Quarantäne gestellt werden sollen. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
+* **Synchroner Fehler**: Der vom Adobe Campaign-Versand-Server angesprochene Remote-Server gibt sofort eine Fehlermeldung zurück. Die Nachricht kann nicht an den Server des Profils gesendet werden. Adobe Campaign qualifiziert jeden Fehler, um festzustellen, ob die betroffenen E-Mail-Adressen unter Quarantäne gestellt werden sollten. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
 
-* **Asynchroner Fehler**: eine Bounce Message oder ein SR wird später vom Empfangs-Server erneut gesendet. Dieser Fehler wird mit einer mit dem Fehler verknüpften Bezeichnung qualifiziert. Asynchrone Fehler können bis zu eine Woche nach einem Versand auftreten.
+* **Asynchroner Fehler**: Eine Bounce Message oder ein Statusbericht (SR) wird vom empfangenden Server verzögert zurückgesendet. Dieser Fehler wird mit einer mit dem Fehler verbundenen Bezeichnung qualifiziert. Asynchrone Fehler können bis zu eine Woche nach einem Versand auftreten.
 
    >[!NOTE]
    >
-   >Als Managed Services-Benutzer erfolgt die Konfiguration des Bounce-Postfachs durch Adobe.
+   >Für Managed Services-Benutzer erfolgt die Konfiguration des Bounce-Postfachs durch Adobe.
 
-   Die Feedback-Schleife funktioniert wie Bounce-E-Mails: Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen an diesen Benutzer blockiert werden. Die Adressen dieser Benutzer befinden sich auf der Blockierungsliste, auch wenn sie nicht auf den Abmelde-Link geklickt haben. Adressen befinden sich in der Blockierungsliste der Quarantänetabelle (**NmsAddress**) und nicht der Empfängertabelle (**NmsRecipient**). Erfahren Sie mehr über den Feedback Loop-Mechanismus in [Handbuch mit Best Practices für die Zustellbarkeit von Adoben](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops).
+   Die Feedback-Schleife funktioniert wie Bounce-E-Mails: Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen an diesen Benutzer blockiert werden. Die Adressen dieser Benutzer befinden sich dann auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen befinden sich in der Blockierungsliste der Quarantänetabelle (**NmsAddress**) und nicht der Empfängertabelle (**NmsRecipient**). Im [Handbuch von Adobe mit Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops) erfahren Sie mehr über den Mechanismus der Feedback-Schleife.
 
 
 
@@ -185,7 +185,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Postfach voll </td> 
    <td> Soft </td> 
    <td> 5 </td> 
-   <td> Das Postfach des Benutzers ist voll und kann keine Nachrichten mehr aufnehmen. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Datensatz in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> Dieser Fehlertyp wird von einem Bereinigungsprozess verwaltet. Die Adresse erhält nach 30 Tagen wieder einen gültigen Status.<br /> Warnung: Damit die Adresse automatisch aus der Quarantäne genommen werden kann, muss der technische Workflow Datenbankbereinigung gestartet sein.<br /> </td> 
+   <td> Das Postfach des Benutzers ist voll und kann keine Nachrichten mehr aufnehmen. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Datensatz in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> Dieser Fehlertyp wird von einem Bereinigungsprozess verwaltet. Die Adresse erhält nach 30 Tagen wieder einen gültigen Status.<br />Warnung: Damit die Adresse automatisch aus der Quarantäne genommen werden kann, muss der technische Workflow für die Datenbankbereinigung gestartet sein.<br /> </td> 
   </tr> 
   <tr> 
    <td> Nicht angemeldet </td> 
@@ -197,7 +197,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Unbestimmt </td> 
    <td> Unbestimmt </td> 
    <td> 0 </td> 
-   <td> Die Adresse ist qualifiziert, da der Fehler noch nicht inkrementiert wurde. Dieser Fehlertyp tritt auf, wenn der Server eine bis dahin unbekannte Fehlermeldung sendet: Hierbei kann es sich um einen einmaligen Fehler handeln. Sollte er sich jedoch wiederholen, wird der Fehlerzähler erhöht, was die zuständigen technischen Mitarbeiter auf das Problem aufmerksam macht. Er kann dann die Nachrichtenanalyse durchführen und diesen Fehler über die <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Verwaltung von Fehlern</span> Knoten in der Baumstruktur.<br /> </td> 
+   <td> Die Adresse wird noch qualifiziert, da der Fehler noch nicht inkrementiert wurde. Dieser Fehlertyp tritt auf, wenn der Server eine bis dahin unbekannte Fehlermeldung sendet: Hierbei kann es sich um einen einmaligen Fehler handeln. Sollte er sich jedoch wiederholen, wird der Fehlerzähler erhöht, was die zuständigen technischen Mitarbeiter auf das Problem aufmerksam macht. Sie können dann über den Knoten <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Unzustellbarkeitsverwaltung</span> in der Baumstruktur eine Nachrichtenanalyse durchführen und diesen Fehler qualifizieren.<br /> </td> 
   </tr> 
   <tr> 
    <td> Kommt nicht für die Angebote infrage </td> 
@@ -339,7 +339,7 @@ Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
 
 **Für Android V1**
 
-Für jede Benachrichtigung erhält Adobe Campaign die synchronen Fehler direkt vom FCM-Server. Adobe Campaign verarbeitet sie sofort und erzeugt Hard- oder Softbounces entsprechend der Schwere des Fehlers. Es können weitere Zustellversuche unternommen werden:
+Für jede Benachrichtigung erhält Adobe Campaign die synchronen Fehler direkt vom FCM-Server. Adobe Campaign verarbeitet diese unmittelbar und erstellt Hard- und Softbounces entsprechend des Schweregrads des Fehlers. Es können weitere Zustellversuche unternommen werden:
 
 * Nutzdatenlänge überschritten, Verbindungsproblem, Problem mit Dienstverfügbarkeit: Neuversuch wird unternommen, Softbounce, Grund für den Fehler ist **[!UICONTROL Abgelehnt]**.
 * Gerätequote überschritten: kein Neuversuch, Softbounce, Grund für Fehler ist **[!UICONTROL Abgelehnt]**.
@@ -572,7 +572,7 @@ Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für 
 
 **Für Standard-Connectoren**
 
-Die Besonderheiten des SMS-Kanals sind unten aufgeführt.
+Die Besonderheiten für den SMS-Kanal sind unten aufgeführt.
 
 >[!NOTE]
 >
@@ -646,20 +646,20 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Alle Fehlernachrichten beginnen mit **SR**, sodass SMS-Fehlercodes von E-Mail-Fehlercodes unterschieden werden können.
-* Der zweite Teil (**Generisch** in diesem Beispiel) bezieht sich die Fehlermeldung auf den Namen der SMSC-Implementierung, wie in der Variablen **[!UICONTROL Name der SMSC-Implementierung]** Feld des externen SMS-Kontos.
+* Der zweite Teil der Fehlernachricht (in diesem Beispiel **Allgemein**) bezieht sich auf den Namen der SMSC-Implementierung entsprechend der Definition im Feld **[!UICONTROL Name der SMSC-Implementierung]** des externen SMS-Kontos.
 
    Da derselbe Fehlercode bei jedem Provider eine andere Bedeutung haben kann, sehen Sie in diesem Feld, welcher Provider den Fehlercode erstellt hat. Den Fehler können Sie dann in der entsprechenden Dokumentation des Providers einsehen.
 
 * Der dritte Teil der Fehlernachricht (in diesem Beispiel **DELIVRD**) entspricht dem Statuscode, der von der Empfangsbestätigung unter Verwendung des – im externen SMS-Konto definierten – regulären Ausdruck zur Statusextraktion abgerufen wurde.
 
-   Dieser Regex wird im **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos.
+   Dieser reguläre Ausdruck ist im Tab **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos spezifiziert.
 Standardmäßig erfolgt die Regex-Extraktion des **stat:**-Felds entsprechend der Definition im Bereich **Appendix B** der **SMPP 3.4-Spezifikation**.
 
 * Der vierte Teil der Fehlernachricht (in diesem Beispiel **000**) entspricht dem Fehlercode, der von der Empfangsbestätigung unter Verwendung des im externen SMS-Konto definierten regulären Ausdrucks zur Fehlercode-Extraktion extrahiert wurde.
 
-   Dieser Regex wird im **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos.
+   Dieser reguläre Ausdruck ist im Tab **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos spezifiziert.
 
-   Standardmäßig erfolgt die Regex-Extraktion des **err:**-Felds entsprechend der Definition im Bereich **Appendix B** der **SMPP 3.4-Spezifikation**.
+   Standardmäßig erfolgt die Regex-Extraktion des **err:**-Felds entsprechend der Definition im Bereich **Anhang B** der **SMPP 3.4-Spezifikation**.
 
 * Alles, was hinter dem senkrechten Strich (|) steht, wird nur in der Spalte **[!UICONTROL Erster Text]** der Tabelle **[!UICONTROL Versandlogqualifizierung]** dargestellt. Nach der Bereinigung der Nachricht wird dieser Inhalt durch **#MESSAGE#** ersetzt. Dadurch wird vermieden, dass für ähnliche Fehler mehrere Einträge vorgenommen werden. Das Verfahren ist dasselbe wie für E-Mails.
 

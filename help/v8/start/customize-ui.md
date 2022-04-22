@@ -1,5 +1,5 @@
 ---
-title: Campaign-Benutzeroberfläche anpassen
+title: Anpassen der Campaign-Benutzeroberfläche
 description: Erfahren Sie, wie Sie die Benutzeroberfläche von Campaign anpassen
 feature: Overview
 role: Data Engineer
@@ -8,36 +8,36 @@ exl-id: a11d3895-00f1-43d0-b0f7-330fce9fd56b
 source-git-commit: b54a39ee6d106d68446878815c068571e310aaa3
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
-# Campaign-Benutzeroberfläche anpassen{#customize-ac-ui}
+# Anpassen der Campaign-Benutzeroberfläche{#customize-ac-ui}
 
-## Listen anpassen{#customize-lists}
+## Anpassen von Listen{#customize-lists}
 
-Erfahren Sie, wie Sie Spalten hinzufügen, Datensätze zählen, Ihre Listen konfigurieren und Ihre Listeneinstellungen in freigeben. [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en){target=&quot;_blank&quot;}.
+In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=de) erfahren Sie, wie Sie Spalten hinzufügen, Einträge zählen, Listen konfigurieren und Listeneinstellungen freigeben{target=&quot;_blank&quot;}.
 
-Erfahren Sie, wie Sie Filter in erstellen [diese Seite](../audiences/create-filters.md).
+Auf [dieser Seite](../audiences/create-filters.md) erfahren Sie, wie Sie Filter erstellen.
 
-## Anpassen des Campaign Explorer{#customize-explorer}
+## Anpassen von Campaign Explorer{#customize-explorer}
 
-Sie können Ordner zum Campaign Explorer hinzufügen, Ansichten erstellen und Berechtigungen zuweisen.
+Sie können Ordner zu Campaign Explorer hinzufügen, Ansichten erstellen und Berechtigungen zuweisen.
 
-Erfahren Sie, wie Sie Ordner und Ansichten in verwalten [diese Seite](../audiences/folders-and-views.md)
+Auf [dieser Seite](../audiences/folders-and-views.md) erfahren Sie, wie Sie Ordner und Ansichten verwalten.
 
 
-## Auflistungen anpassen{#customize-enumerations}
+## Anpassen von Auflistungen{#customize-enumerations}
 
-Sie können Werte aus Dropdown-Listen in der Benutzeroberfläche von Campaign auswählen. Die in diesen Listen verfügbaren Werte werden in Auflistungen verwaltet.
+In der Benutzeroberfläche von Campaign können Sie Werte aus Dropdown-Listen auswählen. Die in diesen Listen verfügbaren Werte werden in Auflistungen verwaltet.
 
-Auflistungen werden von Ihrem Campaign-Administrator über das **[!UICONTROL Administration > Plattform > Auflistungen]** Ordner des Campaign Explorers.
+Auflistungen werden von Ihrem Campaign-Administrator über den Campaign Explorer-Ordner **[!UICONTROL Administration > Plattform > Auflistungen]** verwaltet.
 
-Für jede Auflistung werden die Werte in einer Dropdown-Liste angezeigt, aus der der Benutzer den Wert auswählen kann.
+Für jede Auflistung werden die Werte in einer Dropdown-Liste angezeigt, aus der der Benutzer einen Wert auswählen kann.
 
-Für **Öffnen** Auflistungen, kann der Benutzer auch die ersten Zeichen in den Wert eingeben und mögliche Werte werden angezeigt.
+Für Auflistungen des Typs **Offen** kann der Benutzer auch die ersten Zeichen des Werts eingeben und mögliche Werte werden angezeigt.
 
-Erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und diese konfigurieren können in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}.
+In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de) erfahren Sie, wie Sie auf Ihre Aufzählungen zugreifen und sie konfigurieren können{target=&quot;_blank&quot;}.
 
 
 ## Standardeinheiten {#default-units}

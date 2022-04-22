@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Campaign-Interaktionsumgebungen
+title: Arbeiten mit Campaign Interaction-Umgebungen
 description: Erfahren Sie, wie Sie Umgebungen für Campaign Interaction erstellen.
 feature: Overview
 role: Data Engineer
@@ -8,7 +8,7 @@ exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
 source-git-commit: 8a43f0fad9f84849745f3a0d426329efbf228105
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

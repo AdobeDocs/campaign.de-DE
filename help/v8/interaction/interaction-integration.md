@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Hinzufügen eines Angebots auf einer Web-Seite
-description: Erfahren Sie, wie Sie ein Angebot auf einer Webseite hinzufügen
+description: Erfahren Sie, wie Sie ein Angebot auf einer Web-Seite hinzufügen.
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
 source-git-commit: 213a10fea36b3b08c1dd8525084d212e191b2fc7
 workflow-type: tm+mt
 source-wordcount: '1479'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
