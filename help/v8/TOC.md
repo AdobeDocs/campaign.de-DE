@@ -66,7 +66,7 @@ ht-degree: 96%
    + [Briefpost](send/direct-mail.md)
    + [Social-Media-Marketing](send/twitter.md)
    + [Transaktionsnachrichten](send/transactional.md)
-   + Fehlschläge, Bounces und Quarantänen{#failures}
+   + Fehler, Bounces und Quarantänen{#failures}
       + [Quarantänen](send/quarantines.md)
       + [Versandfehler](send/delivery-failures.md)
 + Echtzeit-Interaktion{#interaction}
