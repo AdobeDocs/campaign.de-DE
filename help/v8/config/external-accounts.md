@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: 9457652f62810eb401c4010acd9b5da42d88d796
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 100%
+source-wordcount: '1176'
+ht-degree: 81%
 
 ---
 
@@ -25,10 +25,8 @@ Sie können über Adobe Campaign **[!UICONTROL Explorer]** auf externe Konten zu
 
 >[!CAUTION]
 >
->Ein bestimmtes externes **[!UICONTROL FFDA]**-Konto verwaltet die Verbindung zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank ([!DNL Snowflake]).
->
->Als Anwender von Managed Cloud Services wird dieses externe Konto für Ihre Instanz durch Adobe konfiguriert. Es darf nicht geändert werden.
-
+>Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), einer bestimmten **[!UICONTROL Vollständige FDA]** (ffda) externes Konto verwaltet die Verbindung zwischen der lokalen Datenbank von Campaign und der Cloud-Datenbank ([!DNL Snowflake]).
+></br>Als Anwender von Managed Cloud Services wird dieses externe Konto für Ihre Instanz durch Adobe konfiguriert. Es darf nicht geändert werden.
 
 ## Campaign-spezifische externe Konten
 
@@ -36,25 +34,84 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
 ![](../assets/do-not-localize/speech.png)  Adobe konfiguriert für Sie als Benutzer von Managed Cloud Services alle Campaign-spezifischen externen Konten.
 
-* **Bounce Messages (POP3)**
+### Bounce Messages {#bounce-mails-external-account}
 
-   Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
+>[!NOTE]
+>
+>Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3-Funktionen ist ab Campaign v8.3 verfügbar. Informationen zu Ihrer Version finden Sie unter [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-   ![](../assets/do-not-localize/book.png) Weitere Informationen zu eingehenden E-Mails finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html?lang=de){target=&quot;_blank&quot;}
+Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
-* **Routing**
+![](../assets/do-not-localize/book.png) Weitere Informationen zu eingehenden E-Mails finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html?lang=de){target=&quot;_blank&quot;}
 
-   Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campaign verfügbaren Kanal abhängig von den installierten Packages konfigurieren.
+![](assets/bounce_external_1.png)
 
-   >[!CAUTION]
-   >
-   >Das externe Konto **[!UICONTROL Internes E-Mail-Routing]** (defaultEmailBulk) darf in Adobe Campaign v8 **nicht** aktiviert sein.
+Um das externe Konto für **[!UICONTROL Bounce-Messages (defaultPopAccount)]** zu konfigurieren, benötigen Sie folgende Informationen:
 
-* **Ausführungsinstanz konfigurieren**
+* **[!UICONTROL Server]**
 
-   Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der Kontrollinstanz verknüpft und miteinander verbunden. Transaktionsnachrichten-Vorlagen werden in der Ausführungsinstanz bereitgestellt.
+   URL des POP3-Servers
 
-   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Message Center-Architektur finden Sie auf [dieser Seite](../dev/architecture.md#transac-msg-archi).
+* **[!UICONTROL Port]**
+
+   Nummer des POP3-Verbindungsports. Standardmäßig ist dies der Port 110.
+
+* **[!UICONTROL Konto]**
+
+   Name des Benutzers.
+
+* **[!UICONTROL Passwort]**
+
+   Passwort des Benutzerkontos.
+
+* **[!UICONTROL Verschlüsselung]**
+
+   Typ der gewählten Verschlüsselung: **[!UICONTROL Standardmäßig]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** oder **[!UICONTROL POP3S]**.
+Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
+
+* **[!UICONTROL Funktion]**
+
+   Eingehende E-Mail- oder SOAP-Router
+
+![](assets/bounce_external_2.png)
+
+>[!IMPORTANT]
+>
+>Bevor Sie Ihr externes POP3-Konto mit Microsoft OAuth 2.0 konfigurieren, müssen Sie Ihre Anwendung zunächst im Azure-Portal registrieren. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](https://docs.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app).
+
+Um ein externes POP3-Programm mit Microsoft OAuth 2.0 zu konfigurieren, überprüfen Sie die **[!UICONTROL Microsoft OAuth 2.0]** und füllen Sie die folgenden Felder aus:
+
+* **[!UICONTROL Azure-Mandant]**
+
+   Eine Azure ID (oder Verzeichnis-(Mandanten-)ID) finden Sie im **Grundlagen** Dropdown-Liste der Anwendungsübersicht im Azure-Portal.
+
+* **[!UICONTROL Azure Client ID]**
+
+   Client-ID (oder Anwendungs-ID (Client)) finden Sie im **Grundlagen** Dropdown-Liste der Anwendungsübersicht im Azure-Portal.
+
+* **[!UICONTROL Azure Client-Geheimnis]**:
+
+   Die Client-Geheimkennung finden Sie im Abschnitt **Kundengeheimnisse** aus der **Zertifikate &amp; Geheimnisse** Menü Ihrer Anwendung im Azure-Portal.
+
+* **[!UICONTROL Azure-Umleitungs-URL]**:
+
+   Die Umleitungs-URL finden Sie im Abschnitt **Authentifizierung** Menü Ihrer Anwendung im Azure-Portal. Sie sollte mit der folgenden Syntax enden `nl/jsp/oauth.jsp`, z. B. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+
+Nachdem Sie Ihre unterschiedlichen Anmeldedaten eingegeben haben, können Sie auf **[!UICONTROL Verbindung einrichten]** , um die Konfiguration Ihres externen Kontos abzuschließen.
+
+### Routing {#routing}
+
+Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campaign verfügbaren Kanal abhängig von den installierten Packages konfigurieren.
+
+>[!CAUTION]
+>
+>Das externe Konto **[!UICONTROL Internes E-Mail-Routing]** (defaultEmailBulk) darf in Adobe Campaign v8 **nicht** aktiviert sein.
+
+### Ausführungsinstanz {#execution-instance}
+
+Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der Kontrollinstanz verknüpft und miteinander verbunden. Transaktionsnachrichten-Vorlagen werden in der Ausführungsinstanz bereitgestellt.
+
+![](../assets/do-not-localize/glass.png) Weitere Informationen zur Message Center-Architektur finden Sie auf [dieser Seite](../architecture/architecture.md#transac-msg-archi).
 
 ## Zugriff auf externe Systemkonten
 
@@ -96,47 +153,13 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
    Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import und Export von Microsoft Dynamics-Daten in Adobe Campaign.
 
-   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Integration von Adobe Campaign mit Microsoft Dynamics CRM finden Sie auf [dieser Seite](../connect/crm.md).
-
-   Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Passwort]** müssen Sie die folgenden Details angeben:
-
-   * **[!UICONTROL Konto]**: Konto, mit dem die Anmeldung bei Microsoft CRM erfolgt
-
-   * **[!UICONTROL Server]**: URL Ihres Microsoft CRM-Servers
-
-   * **[!UICONTROL Client-ID]**: Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
-
-   * **[!UICONTROL CRM-Version]**: CRM-Version – **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
-   Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Zertifikat]** müssen Sie die folgenden Details angeben:
-
-   * **[!UICONTROL Server]**: URL Ihres Microsoft CRM-Servers
-
-   * **[!UICONTROL Privater Schlüssel (Base64-kodiert)]**: Privater Schlüssel mit Base64-Kodierung
-
-   * **[!UICONTROL Benutzerdefinierte Schlüsselkennung]**
-
-   * **[!UICONTROL Schlüsselkennung]**
-
-   * **[!UICONTROL Client-ID]**: Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
-
-   * **[!UICONTROL CRM-Version]**: CRM-Version – **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
-
+   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Integration von Adobe Campaign mit Microsoft Dynamics CRM finden Sie auf [dieser Seite](../connect/ac-ms-dyn.md).
 
 * **Salesforce.com**
 
    Das externe **[!UICONTROL Salesforce CRM]**-Konto ermöglicht den Import und Export von Salesforce-Daten in Adobe Campaign.
 
-   Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
-
-   * **[!UICONTROL Konto]**: Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
-
-   * **[!UICONTROL Passwort]**: Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt.
-
-   * **[!UICONTROL Client-Kennung]**: Erfahren Sie auf [dieser Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1), wie Sie Ihre Client-Kennung finden.
-
-   * **[!UICONTROL Security-Token]**: Erfahren Sie auf [dieser Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1), wie Sie Ihr Security-Token finden.
-
-   * **[!UICONTROL API-Version]**: Wählen Sie die Version der API aus. Für dieses externe Konto müssen Sie Salesforce CRM mit dem Konfigurationsassistenten konfigurieren.
+   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur CRM-Integration von Adobe Campaign mit Salesforce.com finden Sie in [diese Seite](../connect/ac-sfdc.md).
 
 ## Übertragen von Daten mit externen Konten
 

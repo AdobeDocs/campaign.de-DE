@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
+source-git-commit: 355b9219ffd9d481d15d2d0982d49923842cc27b
 workflow-type: tm+mt
-source-wordcount: '1920'
-ht-degree: 100%
+source-wordcount: '1772'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,11 @@ Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer o
 
 >[!NOTE]
 >
->Kompatible Datenbanken für FDA sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
+>* Kompatible Datenbanken für FDA sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
+>
+>* Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), ist ein spezielles externes Konto verfügbar, über das die Kommunikation zwischen der lokalen Campaign-Datenbank und der Snowflake-Cloud-Datenbank verwaltet werden kann. Dieses externe Konto wird von der Adobe aus für Sie eingerichtet und darf nicht geändert werden.
+>
+
 
 Mit der Campaign FDA-Option können Sie Ihr Datenmodell in einer Drittanbieterdatenbank erweitern. Sie erkennt automatisch die Struktur der ausgewählten Tabellen und verwendet Daten aus den SQL-Quellen.
 
@@ -56,7 +60,12 @@ Gehen Sie wie folgt vor, um den Zugriff auf eine externe Datenbank mit FDA einzu
 1. Als Adobe Managed Services-Anwender können Sie sich an Adobe wenden, um die Treiber auf Ihrer Campaign-Instanz zu installieren.
 1. Nach der Treiberinstallation richten Sie das externe Konto ein, das Ihrer Datenbank auf dem Adobe Campaign-Server entspricht, und testen Sie das externe Konto. [Weitere Informationen](#fda-external-account)
 1. Erstellen Sie das Schema der externen Datenbank in Adobe Campaign. Auf diese Weise können Sie die Datenstruktur der externen Datenbank identifizieren. [Weitere Informationen](#create-data-schema)
-1. Erstellen Sie bei Bedarf ein neues Zielgruppen-Mapping aus dem zuvor erstellten Schema. Dies ist dann erforderlich, wenn die Empfänger Ihrer Sendungen aus der externen Datenbank stammen. Für diese Implementierung bestehen Einschränkungen bei der Nachrichtenpersonalisierung. [Weitere Informationen](#define-data-mapping)
+
+<!--
+1. If needed, create a new target mapping from the previously created schema. This is required if the recipients of your deliveries come from the external database. This implementation comes with limitations related to message personalization. [Learn more](#define-data-mapping)
+-->
+
+Beachten Sie, dass mit Campaign [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md)können Sie kein Zielgruppen-Mapping aus einem Schema erstellen, das in einer externen Datenbank gespeichert ist, auf die FDA Zugriff hat. Empfänger Ihrer Sendungen können daher nicht aus der externen Datenbank stammen.
 
 ## Externes Konto für eine externe Datenbank {#fda-external-account}
 
@@ -121,39 +130,40 @@ Gehen Sie wie folgt vor, um das Schema der externen Datenbank in Adobe Campaign 
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Erstellung zu bestätigen.
 
-## Definieren des Zielgruppen-Mappings {#define-data-mapping}
+<!-- 
+## Define the target mapping{#define-data-mapping}
 
-Sie können ein Mapping zu den Daten in einer externen Tabelle definieren.
+You can define a mapping on the data in an external table.
 
-Dazu müssen Sie nach der Erstellung des Schemas der externen Tabelle ein neues Versand-Mapping erstellen, wobei die Daten in dieser Tabelle als Versandzielgruppe verwendet werden.
+To do this, once the schema of the external table has been created, you need to create a new delivery mapping to use the data in this table as a delivery target.
 
-Gehen Sie dazu wie folgt vor:
+To do this, follow these steps:
 
-1. Navigieren Sie im Adobe Campaign-Explorer zu **[!UICONTROL Administration]** `>` **[!UICONTROL Kampagnenverwaltung]** `>` **[!UICONTROL Zielgruppen-Mappings]** .
+1. Browse to **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** from Adobe Campaign explorer.
 
-1. Erstellen Sie ein neues Zielgruppen-Mapping und wählen Sie das soeben erstellte Schema als Zielgruppendimension aus.
+1. Create a new target mapping and select the schema you just created as the targeting dimension.
 
    ![](assets/new-target-mapping.png)
 
 
-1. Geben Sie die Felder an, in denen die Versandinformationen gespeichert sind (Nachname, Vorname, E-Mail-Adresse, Adresse etc.).
+1. Indicate the fields where the delivery information is stored (last name, first name, email, address, etc.).
 
    ![](assets/wf_new_mapping_define_join.png)
 
-1. Geben Sie die Parameter für die Speicherung der Informationen an, einschließlich des Suffix der Erweiterungsschemata, damit diese leicht identifiziert werden können.
+1. Specify the parameters for information storage, including the suffix of the extension schemas for them to be easily identifiable.
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   Wählen Sie aus, ob Ausschlüsse (**excludelog**) mit Nachrichten (**broadlog**) oder in einer separaten Tabelle gespeichert werden sollen.
+   You can choose whether to store exclusions (**excludelog**), with messages (**broadlog**) or in a separate table.
 
-   Sie können für dieses Versand-Mapping (**trackinglog**) auch auswählen, ob Tracking verwaltet werden soll.
+   You can also choose whether to manage tracking for this delivery mapping (**trackinglog**).
 
-1. Wählen Sie dann die zu berücksichtigenden Erweiterungen. Der Erweiterungstyp hängt von den Parametern und Optionen Ihrer Plattform ab (bitte überprüfen Sie Ihren Lizenzvertrag).
+1. Then select the extensions to be taken into account. The extension type depends on your platform's parameters and options (view your license contract).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Erstellung des Versand-Mappings zu beginnen: Alle verknüpften Tabellen werden automatisch auf der Basis der ausgewählten Parameter erstellt.
-
+   Click the **[!UICONTROL Save]** button to launch delivery mapping creation: all linked tables are created automatically based on the selected parameters.
+-->
 
 ## Berechtigungen{#fda-permissions}
 

@@ -3,7 +3,7 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 21726c8bd0c17c88c83897b98947f56b20152979
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
@@ -66,7 +66,7 @@ ht-degree: 100%
 ## Mehr Ressourcen
 
 * [Bekannte Einschränkungen](start/known-limitations.md)
-* [Architektur](dev/architecture.md)
+* [Architektur](architecture/architecture.md)
 * [Messen und Verfolgen](start/reporting.md)
 * [Herstellen von Verbindungen zu anderen Lösungen](connect/integration.md)
 * [Häufig gestellte Fragen zu Campaign v8](start/campaign-faq.md)

@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Campaign v8
 title: Dokumente zu Campaign v8
-source-git-commit: 79a9d60175b06a11cf27b44275a8ba3fe11e4d3e
+source-git-commit: d7e0635c6fccd70ed012a5b8148258383a1f6766
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 96%
+source-wordcount: '352'
+ht-degree: 91%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 96%
       + [Erkunden der Benutzeroberfläche von Campaign](start/campaign-ui.md)
       + [Anpassen der Benutzeroberfläche von Campaign](start/customize-ui.md)
    + [Verwenden von Audiences](start/audiences.md)
+   + [Verwalten von Datenschutzanfragen](start/privacy.md)
    + [Datenimport](start/import.md)
    + [Erstellen von Kampagnen](start/campaigns.md)
    + [Senden von Nachrichten](start/create-message.md)
@@ -34,6 +35,18 @@ ht-degree: 96%
    + [Verfolgen und Überwachen](start/tracking.md)
    + [Metriken und Berichte](start/reporting.md)
    + [Häufig gestellte Fragen](start/campaign-faq.md)
++ Architektur {#architecture}
+   + [Allgemeine Prinzipien](architecture/general-architecture.md)
+   + [Architektur](architecture/architecture.md)
+   + FDA-Snowflake-Implementierung {#fda}
+      + [Was ist FDA-Snowflake?](architecture/fda-deployment.md)
+   + Enterprise (FFDA)-Bereitstellung {#ffda}
+      + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
+      + Eigenschaften {#ffda-characteristics}
+         + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
+         + [Neue APIs](architecture/new-apis.md)
+         + [API-Staging-Mechanismus](architecture/staging.md)
+         + [Replikationsmechanismus](architecture/replication.md)
 + Implementieren {#implement}
    + [Implementierungsschritte](start/implement.md)
    + [Anpassen der Instanz](dev/customize.md)
@@ -59,7 +72,9 @@ ht-degree: 96%
    + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
    + [Best Practices](audiences/audiences-best-practices.md)
 + Senden von Nachrichten {#send}
-   + [E-Mails](send/email.md)
+   + E-Mails {#emails}
+      + [E-Mails entwerfen und senden](send/email.md)
+      + [Mit Enhanced MTA senden](send/enhanced-mta.md)
    + [SMS](send/sms.md)
    + [Push-Benachrichtigungen ](send/push.md)
    + [LINE-Messaging](send/line.md)
@@ -89,7 +104,6 @@ ht-degree: 96%
    + [Anwendungsfälle](interaction/interaction-use-cases.md)
 + Konfigurieren {#config}
    + [Automatisieren mit Workflows](config/workflows.md)
-   + [Verwalten von Daten](config/replication.md)
    + [E-Mail-Einstellungen](config/email-settings.md)
    + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
    + [Campaign SDKs mit Ihrer Mobile App integrieren](config/push-config.md)
@@ -108,13 +122,10 @@ ht-degree: 96%
       + [Campaign und SFDC verwenden](connect/ac-sfdc.md)
       + [Campaign und Microsoft Dynamics verwenden](connect/ac-ms-dyn.md)
       + [Daten synchronisieren](connect/crm-data-sync.md)
-+ Ressourcen für Entwickler {#architecture}
-   + [Allgemeine Prinzipien](dev/general-architecture.md)
-   + [Architektur](dev/architecture.md)
-   + [Datenmodell](dev/datamodel.md)
++ Ressourcen für Entwickler {#developer}
+   + [Campaign-Datenmodell](dev/datamodel.md)
    + Schemata und Formulare {#shemas-forms}
       + [Arbeiten mit Schemata](dev/schemas.md)
-      + [Schlüsselverwaltung und Eindeutigkeit](dev/keys.md)
       + [Erstellen von Schemata](dev/create-schema.md)
       + [Erweitern von Schemata](dev/extend-schema.md)
       + [Filtern von Schemata](dev/filter-schema.md)
@@ -124,8 +135,6 @@ ht-degree: 96%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + APIs {#api}
-      + [Erste Schritte](dev/api.md)
-      + [Neue APIs](dev/new-apis.md)
-      + [API-Staging-Mechanismus](dev/staging.md)
+   + [Campaign-APIs](dev/api.md)
 + [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
+

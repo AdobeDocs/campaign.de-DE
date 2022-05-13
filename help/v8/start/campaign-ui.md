@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: b54a39ee6d106d68446878815c068571e310aaa3
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Zugriff auf die Campaign-Benutzeroberfläche
 
-Der Campaign-Arbeitsbereich ist über die [Client-Konsole](../dev/general-architecture.md) aufrufbar.
+Der Campaign-Arbeitsbereich ist über die [Client-Konsole](../architecture/general-architecture.md) aufrufbar.
 
 Weitere Informationen dazu, wie Sie die Campaign Client-Konsole installieren und konfigurieren können, finden Sie in [diesem Abschnitt](../start/connect.md).
 

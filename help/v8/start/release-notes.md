@@ -6,16 +6,108 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
+source-git-commit: d3137e75bfc4986e1d6badf32f21fda4c4353c8b
 workflow-type: tm+mt
-source-wordcount: '1721'
-ht-degree: 100%
+source-wordcount: '2247'
+ht-degree: 81%
 
 ---
 
 # Aktuelle Version{#latest-release}
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Campaign v8-Version** aufgelistet.
+
+## Version 8.3.7 {#release-8-3-7}
+
+_16. Mai 2022_
+
+**Neue Funktionen**
+
+<table>
+<thead>
+<tr>
+<th><strong>Reaktionsverwaltung</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Mit Campaign Response Management können Sie den Erfolg und ROI Ihrer Marketing-Kampagnen oder Angebotsvorschläge über alle Kanäle hinweg messen: E-Mail, Mobile, Briefpost usw.</p>
+<p>Weitere Informationen finden Sie in der <a href="../start/campaigns.md#response-manager-add-on">entsprechenden Dokumentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Distributed Marketing</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Campaign Dezentrales Marketing ermöglicht die Implementierung kollaborativer Kampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und Lokalstellen (Verkaufsstellen, regionale Agenturen usw.). Über einen freigegebenen Arbeitsbereich (Kampagnenkits) können Sie Kampagnenvorlagen erstellen und diese Ihren Lokalstellen vorschlagen.</p>
+<p>Weitere Informationen finden Sie in der <a href="../start/campaigns.md#distributed-marketing-add-on">entsprechenden Dokumentation</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Zeitkritische Benachrichtigungen</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Mit iOS 15 hat Apple eine Vorstellung von sensiblen Benachrichtigungen hinzugefügt, die dem App-Entwickler die Möglichkeit gibt, den Fokusmodus zu umgehen, wenn eine Benachrichtigung als vertraulich betrachtet wird und dann in Echtzeit an den Benutzer gesendet werden muss.</p>
+<p>Weitere Informationen finden Sie in der <a href="../send/push.md#send-notifications-on-ios">entsprechenden Dokumentation</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Core Privacy Service-Integration</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Campaign v8 ist jetzt mit Adobe Privacy Core Service integriert. Die vom Privacy Core Service an alle Experience Cloud-Lösungen übertragenen Datenschutzanfragen werden von Campaign mithilfe eines speziellen Workflows automatisch verarbeitet.</p>
+<p>Weitere Informationen finden Sie in der <a href="privacy.md">entsprechenden Dokumentation</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Aktualisierungen zur Kompatibilität**
+
+* Das Campaign v8 SDK unterstützt jetzt Android 12 und iOS 15 für Push-Benachrichtigungen.
+* Campaign v8 ist jetzt mit Windows 11 kompatibel.
+
+Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](capability-matrix.md).
+
+**Verbesserungen**
+
+* Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3 wird jetzt in Campaign unterstützt. [Mehr dazu](../config/external-accounts.md#bounce-mails-external-account)
+* Es wurden kritische Fehlerbehebungen bei der Web-API des Microsoft Dynamics-Connectors vorgenommen.
+* Die neue spezifische Berechtigung Benutzer- und Gruppenschema-Schreiben (operatorWrite) wurde hinzugefügt, damit Benutzer Operatoren- (xtk:operator) und Operatorgruppen-Schemas (xtk:group) einfügen, aktualisieren und löschen können.
+* Sie können jetzt die Funktion E-Mail-BCC (Blindkopie aus Kohlenstoffkopie) aktivieren, um von Campaign gesendete E-Mails auf Versandebene über die entsprechende Option in den Versandeigenschaften zu speichern. [Mehr dazu](../config/email-settings.md#email-bcc)
+* Um eine bessere Leistung sicherzustellen, ist jetzt im externen Routing-Konto standardmäßig die neue Option &quot;Aufspaltung&quot;aktiviert. Mit dieser Option können Nachrichten automatisch auf Ihre Mid-Sourcing-Instanzen aufgeteilt werden, um schneller an die Empfänger gesendet zu werden. LINK
+* Für LINE-Sendungen bei Mid-Sourcing-Setups können jetzt mehrere aktive Konten desselben Typs auf einer Mid-Instanz vorhanden sein.
+* Die Anzahl der Standardverbindungen für den Webprozess wurde von 50 auf 150 erhöht.
+* Campaign verfügt über eine Reihe neuer Schutzmechanismen, um das Einfügen duplizierter Snowflake in die Datenbankdatenbank zu verhindern. [Mehr dazu](../architecture/keys.md)
+
+**Patches**
+
+* Fehlerkorrektur - Bei der Verwendung von Saatgut und Kontrollgruppen im selben wiederkehrenden Versand tritt jetzt kein Fehler mehr auf. (NEO-41197)
+* Fehlerkorrektur - Der E-Mail-Versand wird jetzt nicht mehr für alle Empfänger blockiert, die demselben deliveryPart während des Versandvorgangs (bis zu 256) angehören, wenn Gestaltungsbausteine eines der folgenden Zeichen enthalten: `' & < > "`. Diese Zeichen werden jetzt in Gestaltungsbausteinen unterstützt (Beispiel: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
+* Fehlerkorrektur - Der Tracking-Workflow schlägt jetzt nicht mehr fehl, wenn ein benutzerdefiniertes Schema als Zielgruppen-Mapping verwendet wird. Beim Generieren des broadLog-Schemas über den Zielgruppen-Mapping-Assistenten stellen wir nun sicher, dass der Typ des Fremdlinks zu einem benutzerdefinierten Zielgruppenschema korrekt ist. (NEO-43506)
+* Fehlerkorrektur - Die FFDA-Bereitstellungs-Workflows schlagen jetzt in anderen Sprachen als Englisch fehl. (NEO-44561)
 
 ## Version 8.2.10 {#release-8-2-10}
 
@@ -76,7 +168,9 @@ _Donnerstag, 28. Oktober 2021_
 <tr> 
 <td> <p>Unicity Service ist eine neue Komponente von Cloud Database Manager. Sie hilft Benutzern, die Integrität von Einschränkungen eindeutiger Schlüssel in Cloud-Datenbanktabellen zu wahren und zu überwachen. Dies hilft Ihnen zu verhindern, dass doppelte Schlüssel eingefügt werden.
 <p>Da in der Cloud-Datenbank keine Einschränkungen hinsichtlich der Einheitlichkeit erzwungen werden, führt Unicity Service auf Anwendungsebene Folgendes ein: <b>eine Reihe neuer Limits</b>, um das Risiko von Duplikaten bei der Datenverwaltung mit Adobe Campaign zu verringern.</p> 
-<p>Unicity Service startet einen neuen integrierten Workflow namens <b>ffdaUnicity</b>, durch den die Einheitlichkeitsbeschränkungen überwacht werden und ein Warnhinweis ausgegeben wird, wenn Duplikate erkannt werden.</p></td> </tr> 
+<p>Unicity Service startet einen neuen integrierten Workflow namens <b>ffdaUnicity</b>, durch den die Einheitlichkeitsbeschränkungen überwacht werden und ein Warnhinweis ausgegeben wird, wenn Duplikate erkannt werden.</p>
+<p>Weitere Informationen finden Sie im <a href="../architecture/keys.md">entsprechenden Handbuch</a>.</p>
+</td> </tr> 
 </tbody> 
 </table>
 

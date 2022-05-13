@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: true
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: e41816003958c3373e92d5ea82240fd7ceda5857
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 100%
+source-wordcount: '228'
+ht-degree: 72%
 
 ---
 
@@ -21,10 +21,10 @@ Für Adobe Campaign v8 bestehen die folgenden Einschränkungen:
 
 * Adobe Campaign v8 ist nicht für On-Premise-/Hybridbereitstellungen verfügbar, sondern ausschließlich als Adobe Managed Cloud Service.
 * Bestehende Kunden können nicht von einer bestehenden Adobe Campaign-Umgebung auf Adobe Campaign v8 migrieren.
-* Keine bidirektionale Datenreplikation: Die Replikation erfolgt nur über die lokale Campaign-Datenbank in die Cloud-Datenbank.
+* Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), wird keine bidirektionale Datenreplikation bereitgestellt: Die Replikation erfolgt nur über die lokale Campaign-Datenbank in die Cloud-Datenbank
 * Die [in diesem Abschnitt](capability-matrix.md#gs-unavailable-features) aufgelisteten Funktionen sind im aktuellen Build von Campaign v8 nicht verfügbar.
 * Einige nicht verfügbare oder entfernte Funktionen sind weiterhin in der Benutzeroberfläche sichtbar.
-* Die Mechanismen für die Anmeldung (Opt-in) und Abmeldung (Opt-out) sowie die Mobile-Registrierung sind asynchrone Prozesse. Anfragen werden stündlich über einen speziellen technischen Workflow verarbeitet. [Weitere Informationen](../config/replication.md#tech-wf)
-* Duplikate müssen von Endbenutzern manuell korrigiert werden. [Weitere Informationen](../dev/keys.md)
+* Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), Abmelde- (Opt-in-) und Abmeldemechanismen (Opt-out) sowie die Mobile-Registrierung sind asynchrone Prozesse. Anfragen werden stündlich über einen speziellen technischen Workflow verarbeitet. [Weitere Informationen](../architecture/replication.md#tech-wf)
+* Duplikate müssen von Endbenutzern manuell korrigiert werden. [Weitere Informationen](../architecture/keys.md)
 * Adobe Campaign v8 bietet keine Unterstützung für erweiterten Durchsatz in API- und Web-Anwendungen. Wenden Sie sich bei besonderen Anforderungen an Adobe, um Beratung zu erhalten.
-* Das Optimierungsmodul von Adobe Campaign berücksichtigt keine geplanten Sendungen in Drucktypologieregeln. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=de#setting-the-period).
+* Das Adobe Campaign Campaign Optimization-Modul berücksichtigt geplante Sendungen nicht in Drucktypologieregeln. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=de#setting-the-period).

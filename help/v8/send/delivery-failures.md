@@ -5,16 +5,18 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: c316da3c431e42860c46b5a23c73a7c129abf3ac
+source-git-commit: 1ff06c69a4118afa228522d580dd5caa36a69275
 workflow-type: tm+mt
-source-wordcount: '3166'
-ht-degree: 100%
+source-wordcount: '2899'
+ht-degree: 89%
 
 ---
 
-# Ursachen für das Fehlschlagen von Sendungen{#delivery-failures}
+# Ursachen für das Fehlschlagen von Sendungen {#delivery-failures}
 
-Bounces sind das Ergebnis eines Versandversuchs und -fehlers, bei dem der ISP Fehlermeldungen zurückgibt. Die Bounce-Verarbeitung ist ein wichtiger Bestandteil der Listenhygiene. Nach mehrmaligen Bounces einer E-Mail wird sie von diesem Prozess markiert und unterdrückt. Dadurch wird verhindert, dass Systeme weiterhin E-Mails mit ungültigen E-Mail-Adressen versenden. Bounces sind eines der wichtigsten Kriterien, mit denen ISPs die IP-Reputation bestimmen. Es ist wichtig, diese Metrik im Auge zu behalten. Die häufigste Methode zur Messung des Versands von Marketing-Nachrichten ist wahrscheinlich der Vergleich von „Zugestellt“ mit „Bounce“. Je höher der Prozentsatz der zugestellten Mails ist, desto besser.
+Bounces sind das Ergebnis eines Versandversuchs und -fehlers, bei dem der ISP Fehlermeldungen zurückgibt. Die Bounce-Verarbeitung ist ein wichtiger Bestandteil der Listenhygiene. Nach mehrmaligen Bounces einer E-Mail wird sie von diesem Prozess markiert und unterdrückt.
+
+Dadurch wird verhindert, dass Systeme weiterhin E-Mails mit ungültigen E-Mail-Adressen versenden. Bounces sind eines der wichtigsten Kriterien, mit denen ISPs die IP-Reputation bestimmen. Es ist wichtig, diese Metrik im Auge zu behalten. Die häufigste Methode zur Messung des Versands von Marketing-Nachrichten ist wahrscheinlich der Vergleich von „Zugestellt“ mit „Bounce“. Je höher der Prozentsatz der zugestellten Mails ist, desto besser.
 
 Wenn eine Nachricht nicht an ein Profil gesendet werden kann, sendet der Remote-Server automatisch eine Fehlermeldung an Adobe Campaign. Dieser Fehler wird qualifiziert, um festzustellen, ob die E-Mail-Adresse, die Telefonnummer oder das Gerät unter Quarantäne gestellt werden soll. Siehe [Bounce-Message-Verwaltung](#bounce-mail-qualification).
 
@@ -24,66 +26,21 @@ Wenn eine E-Mail-Adresse unter Quarantäne gestellt wird oder sich ein Profil au
 
 ## Warum ist der Nachrichtenversand fehlgeschlagen? {#delivery-failure-reasons}
 
-Es gibt zwei Typen von fehlgeschlagenen Sendungen. Jeder Fehlertyp bestimmt, ob eine Adresse in [Quarantäne](quarantines.md#quarantine-reason) gestellt wird oder nicht.
-
+Es gibt zwei Typen von fehlgeschlagenen Sendungen. Jeder Fehlertyp eines Versands bestimmt, ob eine Adresse an [Quarantäne](quarantines.md#quarantine-reason) oder nicht.
 
 * **Hardbounces**
-Hardbounces sind dauerhafte Fehler, die erzeugt werden, wenn ein ISP feststellt, dass eine E-Mail nicht an eine Abonnentenadresse zugestellt werden kann. Innerhalb von Adobe Campaign werden Hardbounces, die als nicht zustellbar kategorisiert sind, zur Quarantäne hinzugefügt, was bedeutet, dass kein erneuter Versandversuch stattfindet. In manchen Fällen wird ein Hardbounce ignoriert, wenn die Ursache des Fehlers unbekannt ist.
+Hardbounces sind dauerhafte Fehler, die erzeugt werden, wenn ein ISP feststellt, dass eine E-Mail nicht an eine Abonnentenadresse zugestellt werden kann. Innerhalb von Adobe Campaign werden Hardbounces, die als nicht zustellbar kategorisiert sind, der Quarantäneliste hinzugefügt, was bedeutet, dass sie nicht erneut versucht werden. In manchen Fällen wird ein Hardbounce ignoriert, wenn die Ursache des Fehlers unbekannt ist.
 
    Im Folgenden finden Sie einige gängige Beispiele für Hardbounces: Adresse existiert nicht, Konto deaktiviert, fehlerhafte Syntax, ungültige Domain
 
-
 * **Softbounces**
-Softbounces sind temporäre Fehler, die von ISPs bei Versandproblemen von E-Mails erzeugt werden. Bei Softbounces werden mehrfache erneute Zustellversuche unternommen (abhängig von den benutzerdefinierten oder vorkonfigurierten Versandeinstellungen), um einen erfolgreichen Versand durchzuführen. Adressen, die kontinuierlich einen Softbounce verursachen, werden erst dann unter Quarantäne gestellt, wenn eine maximale Anzahl erneuter Zustellungen versucht wurde (was wiederum je nach Einstellungen variiert).
+Softbounces sind temporäre Fehler, die von ISPs bei Versandproblemen von E-Mails erzeugt werden. Softbounces [Wiederholen](#retries) mehrere Male (mit Abweichungen je nach Verwendung benutzerdefinierter oder vordefinierter Versandeinstellungen), um einen erfolgreichen Versand durchzuführen. Adressen, die kontinuierlich einen Softbounce verursachen, werden erst dann unter Quarantäne gestellt, wenn eine maximale Anzahl erneuter Zustellungen versucht wurde (was wiederum je nach Einstellungen variiert).
 
    Einige häufige Ursachen für Softbounces sind: Postfach voll, empfangender E-Mail-Server heruntergefahren, Probleme mit der Versender-Reputation.
 
-
 **Ignoriert**: Vorübergehender Fehler, beispielsweise &quot;Out of office&quot; oder technischer Fehler bei Absendern vom Typ &quot;Postmaster&quot;.
 
-
-
-### Qualifizierung von Bounce-Mails {#bounce-mail-qualification}
-
-Die von Campaign zur Qualifizierung von fehlgeschlagenen Sendungen verwendeten Regeln werden im Knoten **[!UICONTROL Administration > Campaign Management > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** aufgelistet. Sie ist nicht vollständig und wird regelmäßig von Adobe Campaign aktualisiert und kann auch vom Benutzer verwaltet werden.
-
-![](assets/delivery-log-qualification.png)
-
-Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht für Fehlernachrichten bei **synchronen** Sendungen verwendet. Momentum bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
-
-**Asynchrone** Bounces werden vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert.
-
-Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Nachricht wird in der Spalte **[!UICONTROL Erster Text]** der Registerkarte **[!UICONTROL Audit]** angezeigt.
-
-![](assets/delivery-log-first-txt.png)
-
-Adobe Campaign filtert diese Nachricht, um den variablen Inhalt (wie IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) zu löschen, und zeigt das gefilterte Ergebnis in der Spalte **[!UICONTROL Text]** an. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
-
-Dadurch können alle Fehlschläge desselben Typs zusammengefasst werden und mehrfache Einträge für ähnliche Fehler in die Versandlogqualifizierungs-Tabelle werden vermieden.
-
->[!NOTE]
->
->Im Feld **[!UICONTROL Trefferanzahl]** wird die Anzahl der Vorkommnisse der Nachricht in der Liste angezeigt. Die maximale Anzahl ist 100 000. Sie können das Feld bearbeiten, wenn Sie es beispielsweise zurücksetzen möchten.
-
-Folgende Qualifikationsstatus von Bounce Messages treten auf:
-
-* **[!UICONTROL Zu qualifizieren]**: die Bounce Message konnte nicht qualifiziert werden. Die Qualifizierung muss dem Zustellbarkeits-Team zugewiesen werden, um eine effiziente Zustellbarkeit der Plattform zu gewährleisten. Nicht qualifizierte Bounce Messages werden nicht zur Anreicherung der Liste mit E-Mail-Regeln herangezogen.
-* **[!UICONTROL Beibehalten]**: Die Bounce Message wurde qualifiziert und wird vom Workflow **Zustellbarkeit** verwendet, um mit den existierenden E-Mail-Regeln verglichen zu werden und eventuell die Liste zu ergänzen.
-* **[!UICONTROL Ignorieren]**: Die Bounce Message wird ignoriert, was bedeutet, dass diese Bounce Message nie dazu führt, dass die Adresse des Empfängers unter Quarantäne gestellt wird. Sie wird vom Workflow **Zustellbarkeit** nicht verwendet und auch nicht an Client-Instanzen gesendet.
-
-![](assets/delivery-log-status.png)
-
-
->[!NOTE]
->
->Bei Ausfall eines ISP werden über Campaign gesendete E-Mails fälschlicherweise als Bounces gekennzeichnet. Um dies zu korrigieren, müssen Sie die Bounce-Qualifizierung aktualisieren.
-
-
-## Verwaltung von erneuten Zustellversuchen {#retries}
-
-Wenn der Nachrichtenversand aufgrund eines temporären Fehlers fehlschlägt (**Soft** oder **Ignoriert**), versucht Campaign eine erneute Zustellung. Diese weiteren Zustellversuche können bis zum Ende der Versandlaufzeit durchgeführt werden. Die Anzahl und Häufigkeit der weiteren Zustellversuche werden von Momentum basierend auf Typ und Schweregrad der Bounce-Antworten, die vom ISP der Nachricht zurückgegeben werden, festgelegt.
-
-Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde konfiguriert, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Zustellversuche kann global oder für jeden Versand oder jede Versandvorlage geändert werden. Wenn Sie die Versandlaufzeit und weitere Zustellversuche anpassen müssen, wenden Sie sich an den Support von Adobe.
+Die Feedback-Schleife funktioniert wie Bounce-E-Mails: Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen an diesen Benutzer blockiert werden. Die Adressen dieser Benutzer werden auf die Blockierungsliste gesetzt, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen werden der hinzugefügt (**NmsAddress**) Quarantänetabelle und nicht die Tabelle (**NmsRecipient**) Empfängertabelle mit der **[!UICONTROL Auf die Blockierungsliste gesetzt]** Status. Erfahren Sie mehr über den Feedback Loop-Mechanismus in [Handbuch mit Best Practices für die Zustellbarkeit von Adoben](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops).
 
 ## Synchrone und asynchrone Fehler {#synchronous-and-asynchronous-errors}
 
@@ -91,17 +48,58 @@ Ein Nachrichtenversand kann sofort fehlschlagen. In diesem Fall wird dies als sy
 
 Diese Fehlertypen werden wie folgt verwaltet:
 
-* **Synchroner Fehler**: Der vom Adobe Campaign-Versand-Server angesprochene Remote-Server gibt sofort eine Fehlermeldung zurück. Die Nachricht kann nicht an den Server des Profils gesendet werden. Adobe Campaign qualifiziert jeden Fehler, um festzustellen, ob die betroffenen E-Mail-Adressen unter Quarantäne gestellt werden sollten. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
+* **Synchrone Fehler**: Der vom Adobe Campaign-Versandserver angesprochene Remote-Server gibt sofort eine Fehlermeldung zurück. Der Versand darf nicht an den Server des Profils gesendet werden. Der Enhanced MTA bestimmt den Bounce-Typ und qualifiziert den Fehler und sendet diese Informationen an Campaign zurück, um zu bestimmen, ob die betroffenen E-Mail-Adressen unter Quarantäne gestellt werden sollen. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
 
 * **Asynchroner Fehler**: Eine Bounce Message oder ein Statusbericht (SR) wird vom empfangenden Server verzögert zurückgesendet. Dieser Fehler wird mit einer mit dem Fehler verbundenen Bezeichnung qualifiziert. Asynchrone Fehler können bis zu eine Woche nach einem Versand auftreten.
 
-   >[!NOTE]
-   >
-   >Für Managed Services-Benutzer erfolgt die Konfiguration des Bounce-Postfachs durch Adobe.
+>[!NOTE]
+>
+>Für Managed Services-Benutzer erfolgt die Konfiguration des Bounce-Postfachs durch Adobe.
 
-   Die Feedback-Schleife funktioniert wie Bounce-E-Mails: Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen an diesen Benutzer blockiert werden. Die Adressen dieser Benutzer befinden sich dann auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen befinden sich in der Blockierungsliste der Quarantänetabelle (**NmsAddress**) und nicht der Empfängertabelle (**NmsRecipient**). Im [Handbuch von Adobe mit Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops) erfahren Sie mehr über den Mechanismus der Feedback-Schleife.
+## Qualifizierung von Bounce-Mails {#bounce-mail-qualification}
+
+<!--NO LONGER WITH MOMENTUM - Rules used by Campaign to qualify delivery failures are listed in the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** node. It is non-exhaustive, and is regularly updated by Adobe Campaign and can also be managed by the user.
+
+![](assets/delivery-log-qualification.png)-->
+
+Die Art und Weise, wie die Bounce-Message-Qualifizierung in Adobe Campaign verarbeitet wird, hängt vom Fehlertyp ab:
+
+* **Synchrone Fehler**: Der Enhanced MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück. Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht für Fehlernachrichten bei **synchronen** Sendungen verwendet.
+
+* **Asynchrone Fehler**: Regeln, mit denen Campaign asynchrone Versandfehler qualifiziert, werden im Abschnitt **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** Knoten. Asynchrone Bounces werden vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weitere Informationen hierzu finden Sie unter [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}.
+
+<!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
+
+![](assets/delivery-log-first-txt.png)
+
+Adobe Campaign filters this message to delete the variable content (such as IDs, dates, email addresses, phone numbers, etc.) and displays the filtered result in the **[!UICONTROL Text]** column. The variables are replaced with **`#xxx#`**, except addresses that are replaced with **`*`**.
+
+This process allows to bring together all failures of the same type and avoid multiple entries for similar errors in the Delivery log qualification table.
+  
+>[!NOTE]
+>
+>The **[!UICONTROL Number of occurrences]** field displays the number of occurrences of the message in the list. It is limited to 100 000 occurrences. You can edit the field, if you want, for example, to reset it.
+
+Bounce mails can have the following qualification status:
+
+* **[!UICONTROL To qualify]** : the bounce mail could not be qualified. Qualification must be assigned to the Deliverability team to guarantee efficient platform deliverability. As long as it is not qualified, the bounce mail is not used to enrich the list of email management rules.
+* **[!UICONTROL Keep]** : the bounce mail was qualified and will be used by the **Refresh for deliverability** workflow to be compared to existing email management rules and enrich the list.
+* **[!UICONTROL Ignore]** : the bounce mail is ignored, meaning that this bounce will never cause the recipient's address to be quarantined. It will not be used by the **Refresh for deliverability** workflow and it will not be sent to client instances.
+
+![](assets/delivery-log-status.png)
+
+>[!NOTE]
+>
+>In case of an outage of an ISP, emails sent through Campaign will be wrongly marked as bounces. To correct this, you need to update bounce qualification.-->
 
 
+## Verwaltung von erneuten Zustellversuchen {#retries}
+
+Wenn der Nachrichtenversand aufgrund eines temporären Fehlers fehlschlägt (**Soft** oder **Ignoriert**), versucht Campaign erneut zu senden. Diese weiteren Zustellversuche können bis zum Ende der Versandlaufzeit durchgeführt werden.
+
+Die Anzahl und Häufigkeit der Neuversuche werden vom erweiterten MTA eingerichtet, basierend auf Typ und Schweregrad der Bounce-Antworten, die vom ISP der Nachricht zurückgegeben werden.
+
+<!--NO LONGER WITH MOMENTUM - The default configuration defines five retries at one-hour intervals, followed by one retry per day for four days. The number of retries can be changed globally or for each delivery or delivery template. If you need to adapt delivery duration and retries, contact Adobe Support.-->
 
 ## E-Mail-Fehlertypen {#email-error-types}
 

@@ -5,18 +5,18 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: ec044d6176b4d00302d7a7e24520b97669bede49
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 100%
+source-wordcount: '1898'
+ht-degree: 91%
 
 ---
 
 # Erste Schritte mit Transaktionsnachrichten{#send-transactional-messages}
 
-Transaktionsnachricht (Message Center) ist ein Campaign-Modul, das die Nachrichtenauslösung handhabt. Diese Nachrichten werden durch Ereignisse erzeugt, die von Informationssystemen ausgelöst werden. Hierzu zählen u. a.: Rechnungen, Bestellbestätigungen, Lieferbestätigungen, Passwortänderungen, Benachrichtigungen über die Nicht-Verfügbarkeit eines Produkts, Kontostandsinformationen oder die Erstellung eines Website-Kontos.
+Transaktionsnachrichten (Message Center) sind ein Campaign-Modul zur Verwaltung von Trigger-Nachrichten. Diese Benachrichtigungen werden von Ereignissen generiert, die von Informationssystemen ausgelöst werden. Sie können: Rechnung, Bestellbestätigung, Lieferbestätigung, Passwortänderung, Benachrichtigung über die Nichtverfügbarkeit des Produkts, Kontoauszug, Erstellung des Website-Kontos usw.
 
-![](../assets/do-not-localize/speech.png) Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
+![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services [Adobe kontaktieren](../start/campaign-faq.md#support){target=&quot;_blank&quot;} zur Installation und Konfiguration von Campaign-Transaktionsnachrichten in Ihrer Umgebung.
 
 Transaktionsnachrichten dienen zum Senden von:
 
@@ -26,13 +26,58 @@ Transaktionsnachrichten dienen zum Senden von:
 
 ![](../assets/do-not-localize/glass.png) Die Einstellungen für Transaktionsnachrichten sind in [diesem Abschnitt](../config/transactional-msg-settings.md) beschrieben.
 
-![](../assets/do-not-localize/glass.png)[ Diese Seite](../dev/architecture.md) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
+![](../assets/do-not-localize/glass.png) Grundlegendes zur Transaktionsnachrichten-Architektur in [diese Seite](../architecture/architecture.md).
 
->[!CAUTION]
+## Funktionsweise von Transaktionsnachrichten {#transactional-messaging-operating-principle}
+
+Das Transaktionsnachrichtenmodul von Adobe Campaign ist in ein Informationssystem integriert, das Ereignisse zurückgibt, die in personalisierte Transaktionsnachrichten umgewandelt werden. Diese Nachrichten können einzeln oder in Batches per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
+
+Angenommen, Sie sind eine Firma mit einer Website, auf der Ihre Kunden Produkte kaufen können.
+
+Mit Adobe Campaign können Sie eine Benachrichtigungs-E-Mail an Kunden senden, die ihrem Warenkorb Produkte hinzugefügt haben. Wenn ein Kunde Ihre Website verlässt, ohne seine Einkäufe zu tätigen (externes Ereignis, das ein Campaign-Ereignis auslöst), wird automatisch eine Warenkorbabbruchs-E-Mail an ihn gesendet (Versand einer Transaktionsnachricht).
+
+Die wichtigsten Schritte für die Umsetzung sind im Folgenden beschrieben:
+
+1. [Erstellen Sie einen Ereignistyp](#create-event-types).
+1. [Erstellen und konzipieren Sie die Nachrichtenvorlage](#create-message-template). Bei diesem Schritt müssen Sie ein Ereignis mit Ihrer Nachricht verknüpfen.
+1. [Testen Sie die Nachricht](#test-message-template).
+1. [Veröffentlichen Sie die Nachrichtenvorlage](#publish-message-template).
+
+Wenn nach der Erstellung und Publikation der Transaktionsnachrichtenvorlage ein entsprechendes Ereignis ausgelöst wird, werden die relevanten Daten über PushEvent und PushEvents an Campaign gesendet [SOAP-Methoden](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=de){target=&quot;_blank&quot;} und der Versand an die Zielempfänger erfolgt.
+
+## Ereignistypen erstellen {#create-event-types}
+
+Um sicherzustellen, dass die einzelnen Ereignisse in eine personalisierte Nachricht umgewandelt werden können, müssen Sie zunächst **Ereignistypen** erstellen.
+
+Wählen Sie dazu beim [Erstellen einer Nachrichtenvorlage](#create-message-template) den für die zu versendende Nachricht passenden Ereignistyp aus.
+
+>[!IMPORTANT]
 >
->Für Transaktionsnachrichten ist eine spezifische Lizenz erforderlich. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Um in Nachrichtenvorlagen Ereignistypen verwenden zu können, müssen Sie diese zunächst erstellen.
 
-## Transaktionsnachrichtenvorlagen definieren
+Gehen Sie wie folgt vor, um Ereignistypen für die Verarbeitung in Adobe Campaign zu erstellen:
+
+1. Melden Sie sich bei der **Kontrollinstanz** an.
+
+1. Rufen Sie im Navigationsbaum den Ordner **[!UICONTROL Administration > Plattform > Auflistungen]** auf.
+
+1. Wählen Sie **[!UICONTROL Ereignistyp]** aus der Liste aus.
+
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um einen Auflistungswert zu erstellen. Hierbei kann es sich um eine Bestellbestätigung, eine Passwortänderung, eine Änderung des Bestellversands usw. handeln.
+
+   <!--![](assets/messagecenter_eventtype_enum_001.png)-->
+
+   >[!IMPORTANT]
+   >
+   >Jeder Ereignistyp muss mit einem Wert in der Auflistung **[!UICONTROL Ereignistyp]** übereinstimmen.
+
+1. Melden Sie sich nach der Erstellung der Auflistungswerte von Ihrer Instanz ab und wieder an, damit die Änderungen berücksichtigt werden.
+
+>[!NOTE]
+>
+>Weitere Informationen zu Auflistung finden Sie in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de){target=&quot;_blank&quot;}.
+
+## Transaktionsnachrichtenvorlage definieren {#create-message-template}
 
 Jedes Ereignis kann eine personalisierte Nachricht auslösen. Dazu müssen Sie für jeden Ereignistyp eine passende Nachrichtenvorlage erstellen. Vorlagen enthalten die notwendigen Informationen zur Personalisierung der Transaktionsnachricht. Sie können Vorlagen auch verwenden, um die Vorschau der Nachricht zu testen und einen Testversand an Testadressen zu senden, bevor Sie an die endgültige Zielgruppe versenden.
 
@@ -54,9 +99,9 @@ Gehen Sie wie folgt vor, um eine Nachrichtenvorlage zu erstellen:
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Ereignistypen, die von Adobe Campaign verarbeitet werden sollen, müssen von Adobe in der Kontrollinstanz erstellt werden.
+   Ereignistypen, die zur Verarbeitung durch Adobe Campaign bestimmt sind, müssen zuvor erstellt werden.
 
-   >[!NOTE]
+   >[!CAUTION]
    >
    >Ein Ereignistyp sollte nie mit mehr als einer Vorlage verknüpft werden.
 
@@ -91,6 +136,8 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 1. Ergänzen Sie das Feld unter Einhaltung folgender Syntax: .**Elementname**.@**Attributname**. Beispiel:
 
    ![](assets/messagecenter_create_custo_2.png)
+
+## Transaktionsnachrichtenvorlage testen {#test-message-template}
 
 ### Testadressen hinzufügen{#add-seeds}
 
@@ -174,7 +221,7 @@ Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage einge
 
 ![](assets/messagecenter_send_proof_003.png)
 
-### Vorlage veröffentlichen
+## Vorlage veröffentlichen {#publish-message-template}
 
 Wenn die auf der Kontrollinstanz erstellte Nachrichtenvorlage vollständig ist, können Sie sie veröffentlichen. Dieser Vorgang wird auch auf allen Ausführungsinstanzen veröffentlicht.
 
@@ -206,8 +253,7 @@ Sobald eine Vorlage veröffentlicht wurde und das entsprechende Ereignis ausgel�
 >
 >Wenn Sie jedoch einen nicht leeren Wert hinzufügen, wird das entsprechende Feld wie gewohnt nach der nächsten Veröffentlichung aktualisiert.
 
-
-### Veröffentlichung einer Vorlage rückgängig machen
+## Veröffentlichung einer Vorlage rückgängig machen
 
 Sobald eine Nachrichtenvorlage in den Ausführungsinstanzen veröffentlicht wurde, kann ihre Veröffentlichung aufgehoben werden.
 

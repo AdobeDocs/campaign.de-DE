@@ -2,10 +2,10 @@
 title: Mapping der Campaign-Datenbank
 description: Mapping der Campaign-Datenbank
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 100%
+source-wordcount: '1485'
+ht-degree: 97%
 
 ---
 
@@ -196,9 +196,9 @@ Für Schlüssel gelten folgende Regeln:
    </schema>
    ```
 
-### Primärschlüssel – Kennung
+### Primärschlüssel – Kennung{#primary-key}
 
-Adobe Campaign-Tabellen verwenden als Primärschlüssel eine **Universally Unique ID (UUID)**, die automatisch von der Datenbank-Engine generiert wird. Der Schlüsselwert ist in der gesamten Datenbank eindeutig. Der Inhalt des Schlüssels wird beim Einfügen des Datensatzes automatisch generiert.
+Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), ist der Primärschlüssel der Adobe Campaign-Tabellen eine **Universally Unique ID (UUID)** automatisch von der Datenbank-Engine generiert. Der Schlüsselwert ist in der gesamten Datenbank eindeutig. Der Inhalt des Schlüssels wird beim Einfügen des Datensatzes automatisch generiert.
 
 **Beispiel**
 
@@ -353,6 +353,8 @@ Ein Umkehrlink zur Tabelle &quot;cus:recipient&quot; wurde mit folgenden Paramet
 * **target**: Schlüssel des verknüpften Schemas (Schema &quot;cus:recipient&quot;)
 * **unbound**: Relation wird als Kollektionselement für eine 1-N-Kardinalität deklariert (standardmäßig)
 * **integrity**: Standardwert ist &quot;define&quot; (kann mit dem Attribut &quot;revIntegrity&quot; in der Definition der Relation im Quellschema erzwungen werden)
+
+Beachten Sie Folgendes: `autouuid="true"`-Parameter wird im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) nur.
 
 ### Beispiel 2 {#example-2}
 

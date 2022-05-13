@@ -2,10 +2,10 @@
 title: Mit Campaign-Schemata arbeiten
 description: Erste Schritte mit Schemata
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 355b9219ffd9d481d15d2d0982d49923842cc27b
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 100%
+source-wordcount: '1273'
+ht-degree: 94%
 
 ---
 
@@ -133,9 +133,43 @@ type="string" enum="exTransactionTypeEnum"/>
 >
 >Sie können auch benutzerseitig verwaltete Auflistungen verwenden (in der Regel unter **[!UICONTROL Administration]** > **[!UICONTROL Platform]**), um die Werte für ein bestimmtes Feld anzugeben. Dabei handelt es sich um globale Auflistungen. Sie sind besser geeignet, wenn Ihre Auflistung außerhalb des von Ihnen eingesetzten Schemas verwendet werden kann.
 
+<!--
+## Index {#index} 
+
+In the context of a [FDA Snowflake deployment](../architecture/fda-deployment.md), you need to declare indexes. Indexes are the first elements declared in the main element of the schema. 
+
+They can be unique or not, and reference one or more fields.
+
+Examples:
+
+```
+<dbindex name="email" unique="true">
+  <keyfield xpath="@email"/>
+</dbindex>
+```
+
+```
+<dbindex name="lastNameAndZip">
+  <keyfield xpath="@lastName"/>
+  <keyfield xpath="location/@zipCode"/>
+</dbindex>
+```
+
+The **xpath** attribute points to the field in your schema that you wish to index.
+
+>[!IMPORTANT]
+>
+>It is important to remember that the SQL query read performance gains provided by indexes also come with a performance hit on writing records. The indexes should therefore be used with precaution.
+
+For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-fields) section.
+
+-->
+
 ## Schlüssel {#keys}
 
-Jede Tabelle muss über mindestens einen Schlüssel verfügen. Dessen Erstellung erfolgt häufig automatisch im Hauptelement des Schemas. Hierzu müssen die Attribute **@autouuid** und **autopk** auf **true** gesetzt sein.
+Jede Tabelle muss über mindestens einen Schlüssel verfügen. Oft wird sie im Hauptelement des Schemas mithilfe der Variablen **autopk** -Attribut auf **true**.
+
+Darüber hinaus wird im Rahmen eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), verwenden Sie die **@autouuid** und legen Sie **true**.
 
 Der Primärschlüssel kann auch mit dem Attribut **internal** definiert werden.
 
@@ -147,7 +181,7 @@ Beispiel:
 </key>
 ```
 
-In diesem Beispiel erstellen wir nicht anhand des Attributs **@autouuid** einen standardmäßigen Primärschlüssel namens &quot;id&quot;, sondern einen eigenen Primärschlüssel mit dem Namen &quot;householdId&quot;.
+In diesem Beispiel wird die **@autopk** oder **@autouuid** -Attribut einen standardmäßigen Primärschlüssel mit dem Namen &quot;id&quot;erstellen, geben wir unseren eigenen Primärschlüssel &quot;budgetId&quot;an.
 
 >[!CAUTION]
 >

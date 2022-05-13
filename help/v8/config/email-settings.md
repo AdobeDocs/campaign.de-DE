@@ -5,41 +5,67 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: 9457652f62810eb401c4010acd9b5da42d88d796
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 100%
+source-wordcount: '485'
+ht-degree: 48%
 
 ---
 
 # Einstellungen für den E-Mail-Kanal in Campaign
 
-## E-Mail-BCC
+## E-Mail-BCC {#email-bcc}
+
+>[!NOTE]
+>
+>Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Prüfung Ihrer Version finden Sie unter [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 Sie können Adobe Campaign so konfigurieren, dass von den von der Plattform gesendeten E-Mails eine Kopie beibehalten wird.
 
->[!NOTE]
->Die Funktion &quot;E-Mail-BCC&quot; ist optional. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+Adobe Campaign selbst ermöglicht keine Verwaltung von archivierten Dateien. Sie können die gewünschten Nachrichten an eine dedizierte BCC-E-Mail-Adresse (Blind Carbon Copy) senden, von der aus sie mithilfe eines externen Systems verarbeitet und archiviert werden können. Die .eml-Dateien, die den gesendeten E-Mails entsprechen, können dann auf einen Remote-Server wie einen SMTP-E-Mail-Server übertragen werden.
 
-Adobe Campaign selbst ermöglicht keine Verwaltung von archivierten Dateien. Sie können aber die gewünschten Nachrichten an eine bestimmte Adresse senden, wo sie mithilfe eines externen Systems verarbeitet und archiviert werden.
+>[!CAUTION]
+>
+>Aus Datenschutzgründen müssen BCC-E-Mails von einem Archivierungssystem bearbeitet werden, in dem personenbezogene Daten (PII, Personally Identifiable Information) sicher aufbewahrt werden.
 
-Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Remote-Server, z. B. einen SMTP-E-Mail-Server, übertragen. Das Archivierungsziel ist eine BCC-E-Mail-Adresse (für die Versand-Empfänger unsichtbar), die Sie angeben müssen.
+Das Archivierungsziel ist die von Ihnen ausgewählte BCC-E-Mail-Adresse, die für die Versandempfänger unsichtbar bleibt.
 
-Bitte beachten Sie Folgendes:
+![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services [Adobe kontaktieren](../start/campaign-faq.md#support){target=&quot;_blank&quot;}, um die für die Archivierung zu verwendende BCC-E-Mail-Adresse mitzuteilen.
 
-* Sie können nur **eine** BCC-E-Mail-Adresse verwenden.
+Nachdem die BCC-E-Mail-Adresse definiert wurde, müssen Sie die entsprechende Option auf Versandebene aktivieren.
 
-* Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
-
-![](../assets/do-not-localize/speech.png) Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um E-Mail-BCC in Campaign zu aktivieren. Die gewünschte BCC-E-Mail-Adresse muss dem Adobe-Team, das die Adresse für Sie konfigurieren wird, mitgeteilt werden.
-
-Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die Option **E-Mail-BCC** aktiviert ist.
-
-![](assets/email-bcc.png)
+>[!CAUTION]
+>
+>Bei der Erstellung eines neuen Versands oder einer neuen Versandvorlage **[!UICONTROL E-Mail-BCC]** ist standardmäßig nicht aktiviert. Sie müssen sie manuell in der E-Mail-Versand- oder Versandvorlage aktivieren.
 
 
-**Verwandte Themen** in der Dokumentation zu Campaign Classic v7:
+Gehen Sie dazu wie folgt vor:
 
+1. Navigieren Sie zu **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** oder **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Versandvorlagen]**.
+1. Wählen Sie den gewünschten Versand aus oder duplizieren Sie die Standardvorlage **[!UICONTROL E-Mail-Versand]**, und wählen Sie dann die duplizierte Vorlage aus.
+1. Wählen Sie die **[!UICONTROL Eigenschaften]**-Schaltfläche aus.
+1. Gehen Sie in den **[!UICONTROL Versand]**-Tab.
+1. Aktivieren Sie die Option **[!UICONTROL E-Mail-BCC.]**
+
+   ![](assets/email-bcc.png)
+
+1. Auswählen **[!UICONTROL Ok]**.
+
+Eine Kopie aller gesendeten Nachrichten für jeden auf dieser Vorlage basierenden Versand wird an die konfigurierte E-Mail-BCC-Adresse gesendet.
+
+Beachten Sie die folgenden Besonderheiten und Empfehlungen:
+
+* Sie können nur eine einzige BCC-E-Mail-Adresse verwenden.
+
+* Stellen Sie sicher, dass die BCC-Adresse über genügend Aufnahmekapazität verfügt, um alle gesendeten E-Mails zu archivieren.
+
+* E-Mail-BCC <!--with Enhanced MTA--> sendet an die BCC-E-Mail-Adresse, bevor die Nachrichten an die Empfänger gesendet werden. Dies kann dazu führen, dass BCC-Nachrichten gesendet werden, auch wenn die ursprünglichen Sendungen möglicherweise nicht durchgeführt wurden. Weitere Informationen zu Bounces finden Sie unter [Fehlgeschlagene Sendungen](../send/delivery-failures.md).
+
+* Wenn die an eine BCC-Adresse gesendeten E-Mails geöffnet und angeklickt werden, wird dies in der Versandanalyse in **[!UICONTROL Gesamtöffnungen]** und **[!UICONTROL Klicks]** berücksichtigt, was zu falschen Berechnungen führen könnte.
+
+<!--Only successfully sent emails are taken in account, bounces are not.-->
+
+**Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7**
 
 * [Mirror-Seite erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#generating-mirror-page){target=&quot;_blank&quot;}
 

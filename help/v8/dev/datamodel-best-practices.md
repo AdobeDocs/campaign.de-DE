@@ -2,10 +2,10 @@
 title: Best Practices für Datenmodelle
 description: Best Practices für die Erweiterung von Campaign-Datenmodellen
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '2688'
-ht-degree: 100%
+source-wordcount: '2722'
+ht-degree: 97%
 
 ---
 
@@ -73,13 +73,9 @@ Zusätzlich zu dem in den meisten Tabellen standardmäßig definierten Schlüsse
 
 Effiziente Schlüssel sind unverzichtbar für hohe Leistung. Mit Snowflake können Sie numerische oder zeichenfolgenbasierte Datentypen als Schlüssel für Tabellen einfügen.
 
-<!-- ### Dedicated tablespaces {#dedicated-tablespaces}
-
-The tablespace attribute in the schema allows you to specify a dedicated tablespace for a table.
-
-The installation wizard allows you to store objects by type (data, temporary).
-
-Dedicated tablespaces are better for partitioning, security rules, and allow fluid and flexible administration, better optimization, and performance. -->
+>[!NOTE]
+>
+>Die **autouuid** -Attribut gilt nur für [Enterprise (FFDA)-Bereitstellungen](../architecture/enterprise-deployment.md).
 
 ## Kennungen {#identifiers}
 
@@ -93,7 +89,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 | Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Ändern Sie den von Adobe Campaign erstellten Namen, wenn Sie das Objekt von einer Umgebung aus in einer anderen bereitstellen möchten.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Bestimmte reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk* usw.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces).</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen &quot; &quot;, Doppelpunkt &quot;:&quot; oder Bindestrich &quot;-&quot;. Alle diese Zeichen würden durch einen Unterstrich (_) ersetzt werden. Beispielsweise würden &quot;abc-def&quot; und &quot;abc:def&quot; als &quot;abc_def&quot; gespeichert werden und sich gegenseitig überschreiben.</li></ul> |
 | Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
-Der Adobe Campaign-Primärschlüssel ist eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden. [Weitere Informationen](keys.md)
+Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), ist der Primärschlüssel von Adobe Campaign eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden. [Weitere Informationen](../architecture/keys.md)
 
 Zwar ist die Anzahl der IDs unbegrenzt, doch sollten Sie auf die Größe Ihrer Datenbank achten, um optimale Leistung sicherzustellen. Um Probleme zu vermeiden, sollten Sie die Einstellungen für die Bereinigung von Instanzen anpassen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#data-retention).
 
@@ -112,7 +108,9 @@ Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur 
 
 >[!CAUTION]
 >
->Eine Autouuid sollte nicht als Referenz in Workflows verwendet werden.
+>* Eine Autouuid sollte nicht als Referenz in Workflows verwendet werden.
+> * Die **autouuid** -Attribut gilt nur für [Enterprise (FFDA)-Bereitstellungen](../architecture/enterprise-deployment.md).
+>
 
 
 ## Relationen und Kardinalität {#links-and-cardinality}
@@ -121,7 +119,7 @@ Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur 
 
 Achten Sie bei großen Tabellen auf die &quot;eigene&quot; Integrität. Durch das Löschen von Datensätzen, die über große Tabellen mit &quot;eigener&quot; Integrität verfügen, kann die Instanz möglicherweise angehalten werden. Die Tabelle wird gesperrt; die Löschungen werden einzeln vorgenommen. Daher ist es am besten, bei untergeordneten Tabellen mit großen Volumen &quot;neutrale&quot; Integrität anzuwenden.
 
-Das Deklarieren einer Relation als externer Join ist nicht gut für die Leistung. Der Null-ID-Datensatz emuliert die externe Join-Funktion. Es müssen keine externen Joins deklariert werden, wenn die Relation die **autouuid** verwendet.
+Das Deklarieren einer Relation als externer Join ist nicht gut für die Leistung. Der Null-ID-Datensatz emuliert die externe Join-Funktion. Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md)ist es nicht erforderlich, externe Joins zu deklarieren, wenn der Link die **autouuid**.
 
 Obwohl es möglich ist, eine beliebige Tabelle in einem Workflow einzubinden, empfiehlt Adobe, allgemeine Relationen zwischen Ressourcen direkt in der Definition der Datenstruktur festzulegen.
 

@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: dafdf471fcaf2b6c6e3e8d5028cd65e35e7df3eb
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Wenn ein Angebot unterbreitet werden kann oder soll (je nach Konfiguration), spi
 
 ## Verteilte Architektur
 
-Um die Skalierbarkeit zu unterstützen und rund um die Uhr Service für den eingehenden Kanal zu bieten, wird das **Interaction**-Modul in einer verteilten Architektur implementiert. Diese Art von Architektur wird bereits mit [Message Center](../dev/architecture.md#transac-msg-archi) verwendet und besteht aus mehreren Instanzen:
+Um die Skalierbarkeit zu unterstützen und rund um die Uhr Service für den eingehenden Kanal zu bieten, wird das **Interaction**-Modul in einer verteilten Architektur implementiert. Diese Art von Architektur wird bereits mit [Message Center](../architecture/architecture.md#transac-msg-archi) verwendet und besteht aus mehreren Instanzen:
 
 * einer oder mehrerer Kontrollinstanzen für den ausgehenden Kanal, welche die Marketing-Datenbank und die Design-Umgebung beherbergen;
 * einer oder mehrerer Ausführungsinstanzen für den eingehenden Kanal.
