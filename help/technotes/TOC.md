@@ -4,7 +4,7 @@ user-guide-title: Kampagnen-Technotes
 type: Event
 description: Kampagnen-Technotes
 breadcrumb-title: Technotes für Campaign
-title: Campaign Technotes
+title: Kampagnen-Technotes
 source-git-commit: 11906c5be9ed483be4ce259899fe23207da6d38a
 workflow-type: tm+mt
 source-wordcount: '31'

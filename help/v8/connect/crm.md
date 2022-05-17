@@ -8,7 +8,7 @@ exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
 source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -20,16 +20,16 @@ Diese Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adob
 
 Die wichtigsten Vorteile sind:
 
-* Konsistentes Messaging zwischen Vertrieb und Marketing: Durch die Integration von Adobe Campaign in Ihr CRM erhalten beide Systeme Zugriff auf Kundeneinblicke und E-Mail-Marketingverlauf, sodass alle Nachrichten für den Kunden dasselbe konsistente Messaging nutzen können.
+* Konsistentes Messaging zwischen Vertrieb und Marketing: Die Integration von Adobe Campaign mit Ihrem CRM ermöglicht beiden Systemen den Zugriff auf Kundeninformationen und E-Mail-Marketing-Verläufe, sodass alle Nachrichten an den Kunden das gleiche konsistente Messaging aufweisen.
 
-* Ganzheitliche Ansicht aller Interessenten- und Kundendaten: Durch die Integration von Adobe Campaign in Ihr CRM-System ist es möglich, den E-Mail-Marketing-Verlauf für jeden Kontakt innerhalb des CRM-Systems freizugeben und darauf zuzugreifen.
+* Ganzheitliche Sicht auf alle Daten von Interessenten und Kunden: Durch die Integration von Adobe Campaign mit Ihrem CRM ist es möglich, im CRM-System den E-Mail-Marketing-Verlauf für jeden Kontakt freizugeben und darauf zuzugreifen.
 
-* Aktivieren Sie Ihre CRM-Daten auf allen Kanälen: Mit Kontaktdaten, die mit Adobe Campaign synchronisiert werden, können Nachrichten über jeden Online- oder Offline-Kanal mit Campaign gesendet werden, einschließlich Mobile Push, In-App, E-Mail oder Briefpost.
+* Aktivieren Ihrer CRM-Daten auf jedem Kanal: Mit Kontaktdaten, die mit Adobe Campaign synchronisiert sind, können Sie unter Verwendung von Campaign über jeden Online- oder Offline-Kanal Nachrichten senden, inklusive Mobile Push, In-App, E-Mail oder Briefpost.
 
 
 >[!NOTE]
 >
->Diese Funktion ist in Adobe Campaign über das Package **CRM Connectoren** verfügbar.
+>Diese Funktion ist in Adobe Campaign über das Package **CRM-Connectoren** verfügbar.
 
 ## Kompatible Systeme {#compatible-crm-systems-and-limitations}
 
@@ -39,9 +39,9 @@ Unterstützte CRM-Systeme und Versionen werden in der [Kompatibilitätsmatrix](.
 
 ## Implementierungsschritte {#crm-implementation-steps}
 
-Schrittweise Anleitung zum Verbinden von Campaign und Microsoft Dynamics in [diese Seite](ac-ms-dyn.md).
+Eine schrittweise Anleitung zum Verbinden von Campaign und Microsoft Dynamics finden Sie auf [dieser Seite](ac-ms-dyn.md).
 
-Schrittweise Anleitung zur Verbindung von Campaign und Salesforce.com finden Sie unter [diese Seite](ac-sfdc.md).
+Eine schrittweise Anleitung zum Verbinden von Campaign und Salesforce.com finden Sie auf [dieser Seite](ac-sfdc.md).
 
 Die Datensynchronisation zwischen Adobe Campaign und dem CRM-System erfolgt über die spezifische Workflow-Aktivität. Erstellen Sie eigene Workflows, um die Synchronisierung zwischen Campaign und Ihrem CRM-System zu automatisieren. Sie können einen Workflow erstellen, der die Kontakte über Microsoft Dynamics importiert, sie mit den vorhandenen Adobe Campaign-Daten synchronisiert, doppelte Kontakte löscht und dann die Adobe Campaign-Datenbank aktualisiert.
 

@@ -1,8 +1,9 @@
 ---
 keywords: Campaign Standard;Startseite;beliebte Themen
-description: Campaign technotes
+description: Technotes für Campaign
 title: Technische Artikel zu Adobe Campaign
-source-git-commit: 11906c5be9ed483be4ce259899fe23207da6d38a
+exl-id: ae1ef010-24d5-4be4-a30c-899e2b0040a4
+source-git-commit: e55a60ae1628e534e32e86d347457b6c208db75b
 workflow-type: tm+mt
 source-wordcount: '27'
 ht-degree: 51%

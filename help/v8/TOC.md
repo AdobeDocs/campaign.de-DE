@@ -7,7 +7,7 @@ title: Dokumente zu Campaign v8
 source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 96%
       + [Erstellen von Platzierungen](interaction/interaction-offer-spaces.md)
    + [Erstellen eines Angebotskatalogs](interaction/interaction-offer-catalog.md)
    + [Erstellen eines Angebots](interaction/interaction-offer.md)
-   + [Senden eines Angebots  (ausgehend)](interaction/interaction-send-offers.md)
+   + [Senden eines Angebots   (ausgehend)](interaction/interaction-send-offers.md)
    + Unterbreiten eines Angebots (eingehend){#inbound}
       + [Kontext](interaction/interaction-present-offers.md)
       + [Aufrufen eines Angebots auf einer Webseite](interaction/interaction-integration.md)
@@ -103,10 +103,10 @@ ht-degree: 96%
    + [Campaign + Real-Time CDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Campaign + externe Datenbank](connect/fda.md)
-   + Campaign + Ihr CRM-System {#ac-crm}
+   + Campaign + Ihr CRM-System  {#ac-crm}
       + [Erste Schritte mit CRM-Connectoren](connect/crm.md)
-      + [Campaign und SFDC verwenden](connect/ac-sfdc.md)
-      + [Campaign und Microsoft Dynamics verwenden](connect/ac-ms-dyn.md)
+      + [Arbeiten mit Campaign und SFDC](connect/ac-sfdc.md)
+      + [Arbeiten mit Campaign und Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [Daten synchronisieren](connect/crm-data-sync.md)
 + Ressourcen für Entwickler {#architecture}
    + [Allgemeine Prinzipien](dev/general-architecture.md)
