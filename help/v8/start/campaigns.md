@@ -5,7 +5,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: fc0be5fe82ba11e54851a8f612ece0b310447cdd
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 80%
@@ -102,7 +102,7 @@ Adobe Campaign bietet eine **Distributed Marketing** Add-on zur Implementierung 
 
 [](../assets/do-not-localize/book.png) Erfahren Sie, wie Sie die Funktionen für dezentrales Marketing von Campaign konfigurieren und verwenden [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html){target=&quot;_blank&quot;}
 
-## Distributed Marketing-Add-on{#response-manager-add-on}
+## Add-on &quot;Reaktionsverwaltung&quot;{#response-manager-add-on}
 
 Adobe Campaign bietet eine **Reaktionsverwaltung** -Add-on, mit dem Sie den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen über Kommunikationskanäle hinweg messen können: E-Mail, Mobile, Briefpost usw.
 
