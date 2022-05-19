@@ -4,7 +4,8 @@ description: Erfahren Sie mehr über den Umfang und die Besonderheiten des E-Mai
 feature: Email
 role: Data Engineer
 level: Beginner
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
+source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 68%
@@ -112,4 +113,3 @@ Die nachstehende Tabelle zeigt, wie die Status der KPIs und Versandlogs bei jede
 | Softbounces werden vom erweiterten MTA zurückgemeldet. | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Vom Dienstleister berücksichtigt |
 | Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend erhöht | Gesendet |
 | Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, schlagen fehl | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Fehlgeschlagen |
-
