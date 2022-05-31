@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 100%
+source-wordcount: '594'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Ein E-Mail-Versand richtet personalisierte E-Mails an eine zuvor bestimmte Zielpopulation.
 
-![](../assets/do-not-localize/book.png)Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html?lang=de).
+![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html?lang=de){target=&quot;_blank&quot;}.
 
 ## Den ersten E-Mail-Versand erstellen
 
@@ -78,22 +78,22 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 Weitere Informationen finden Sie in den folgenden Abschnitten der Dokumentation zu Campaign Classic v7:
 
 * Erstellen einer E-Mail in Campaign
-   ![](../assets/do-not-localize/book.png) [Weitere Informationen zum Erstellen von E-Mails](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=de)
+   ![](../assets/do-not-localize/book.png) [Weitere Informationen zum Erstellen von E-Mails](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=de){target=&quot;_blank&quot;}
 * Importieren von E-Mail-Inhalten
-   ![](../assets/do-not-localize/book.png) [Anwendungsfall: Erstellen eines Workflows zum Laden des Versandinhalts](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html?lang=de)
+   ![](../assets/do-not-localize/book.png) [Anwendungsfall: Erstellen eines Workflows zum Laden des Versandinhalts](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html?lang=de){target=&quot;_blank&quot;}
 * Erstellen und Verwenden von E-Mail-Vorlagen
-   ![](../assets/do-not-localize/book.png) [Weitere Informationen zu E-Mail-Vorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de)
+   ![](../assets/do-not-localize/book.png) [Weitere Informationen zu E-Mail-Vorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target=&quot;_blank&quot;}
 * Auswählen der Audience für Ihre E-Mail
-   ![](../assets/do-not-localize/book.png) [Weitere Informationen zur Definition der Zielpopulation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=de)
+   ![](../assets/do-not-localize/book.png) [Weitere Informationen zur Definition der Zielpopulation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=de){target=&quot;_blank&quot;}
 * Validieren eines Versands und Durchführen von Testsendungen
-   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zur Validierung eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de)
-* [Testadressen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=de) hinzufügen
+   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zur Validierung eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}
+* Hinzufügen [Testadressen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=de){target=&quot;_blank&quot;}
 
 ## Testen und Validieren von E-Mails
 
 Campaign bietet mehrere Möglichkeiten, E-Mails zu testen und zu validieren, bevor Sie sie an Ihre Audiences senden.
 
-[ ![](../assets/do-not-localize/book.png)Wenden Sie die in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html?lang=de) aufgeführten Best Practices an.
+![](../assets/do-not-localize/book.png) [Wenden Sie die in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html?lang=de) aufgeführten Best Practices an.{target=&quot;_blank&quot;}
 
 Sie haben folgende Möglichkeiten:
 
@@ -103,10 +103,4 @@ Sie haben folgende Möglichkeiten:
 * Kontrollgruppen verwenden
 * E-Mail-Rendering prüfen
 
-![](../assets/do-not-localize/book.png) [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html).
-
-## E-Mails überwachen
-
-Nach dem Versand können Sie im Versand-Dashboard den Versandstatus überprüfen und auf Versandprotokolle und Berichte zugreifen, die bestätigen, dass die Nachrichten korrekt versendet wurden.
-
-![](../assets/do-not-localize/book.png) [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de).
+![](../assets/do-not-localize/book.png)[ Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}.
