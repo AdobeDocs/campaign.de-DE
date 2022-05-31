@@ -8,7 +8,7 @@ exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ Adobe Campaign verfügt über Prozesse und Einstellungen, die es Ihnen ermöglic
 
 * **Datenakquise**: Mit Adobe Campaign können Sie Daten, einschließlich persönlicher und vertraulicher Daten, erfassen. Es ist daher unerlässlich, dass Sie das Einverständnis Ihrer Empfänger erhalten und managen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#data-acquisition){target=&quot;_blank&quot;}
 
-* **Benutzerzustimmung und Datenaufbewahrung**: Erfahren Sie, wie Sie die Zustimmung des Benutzers erhalten, Anmeldemechanismen für die Anmeldung mit zweifacher Bestätigung einrichten, Opt-out erleichtern und die Datenaufbewahrung in [Dokumentation zum Datenschutz in Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent){target=&quot;_blank&quot;}
+* **Benutzereinverständnis und Datenspeicherung**: Erfahren Sie in der [Dokumentation zum Datenschutz in Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent){target=&quot;_blank&quot;}, wie Sie das Einverständnis der Benutzer einholen, Double-Opt-in-Mechanismen für Abonnements einrichten, das Opt-out erleichtern und die Datenspeicherung konfigurieren.
 
-* **Vorschriften zur Privatsphäre und zum Datenschutz**: verweisen auf [diesem Abschnitt](privacy.md) Informationen zu Datenschutzanforderungen und wie sich diese Vorschriften auf Ihr Unternehmen und Adobe Campaign auswirken.
+* **Datenschutzbestimmungen**: In [diesem Abschnitt](privacy.md) finden Sie Informationen über Datenschutzanforderungen und darüber, wie sich diese Bestimmungen auf Ihre Organisation und Adobe Campaign auswirken.
 
 ### Sicherheit
 

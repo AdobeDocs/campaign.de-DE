@@ -8,21 +8,21 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 0c01b0a597e54ae93dd581ccba6f19b2ff13f956
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # [!DNL Campaign Classic] v7- und [!DNL Campaign] v8-Funktionen{#gs-matrix}
 
-Frühere [!DNL Campaign Classic] Benutzer von v7 sollten keine großen Störungen in der Art und Weise erwarten, mit der Sie normalerweise interagieren [!DNL Adobe Campaign]. Die meisten Änderungen in v8 sind nicht sichtbar, mit Ausnahme kleiner Änderungen, die in der Benutzeroberfläche und in den Konfigurationsschritten erkennbar sind.
+Als früherer [!DNL Campaign Classic] v7-Benutzer sollten Sie bei der Interaktion mit [!DNL Adobe Campaign] keine größeren Änderungen feststellen. Die meisten Änderungen in v8 sind nicht sichtbar, mit Ausnahme kleiner Änderungen, die in der Benutzeroberfläche und in den Konfigurationsschritten erkennbar sind.
 
-Adobe Campaign v8 ist als **Verwalteter Cloud Service**. Das neue Angebot kombiniert erstklassige Dienstleistungen mit proaktiver Aufsicht und rechtzeitiger Warnmeldung und konzentriert sich auf drei Bereiche:
+Adobe Campaign v8 ist als **verwalteter Cloud-Service** verfügbar. Das neue Angebot kombiniert erstklassige Dienstleistungen mit proaktiver Aufsicht und rechtzeitigen Warnmeldungen und konzentriert sich auf drei Bereiche:
 
-* **Cloud-Agilität** - Automatisierung nach Adobe mit optimierten, standardisierten Cloud-Bereitstellungen für eine vorhersehbarere Leistung, größere Agilität und verbesserte Self-Service-Produktivität.
-* **Service-Erlebnis** — proaktive Verfügbarkeit, Kapazität und Leistungsüberwachung und Reaktion, um Unterbrechungen zu verhindern, Störungen schneller zu beheben und den Service regelmäßig auf kontinuierliche Verbesserung zu überprüfen.
-* **Expertenwissen zu Deep Campaign** - hochaffiner Service von erfahrenen Customer Engineering-Teams, um funktionale, technische oder Zustellbarkeitserfordernisse zu erfüllen, das Bereitstellungsrisiko zu reduzieren und das Änderungsmanagement zu verbessern.
+* **Cloud-Agilität** – Automatisierung durch Adobe mit optimierten, standardisierten Cloud-Implementierungen für eine prognostizierbarere Leistung, größere Agilität und verbesserte Self-Service-Produktivität.
+* **Service-Erlebnis** – proaktive Verfügbarkeit, Kapazität und Leistungsüberwachung und -reaktion, um Unterbrechungen zu verhindern, Störungen schneller zu beheben und den Service regelmäßig zu überprüfen, und so kontinuierliche Verbesserungen zu gewährleisten.
+* **Profundes Expertenwissen zu Campaign** – hochaffiner Service von erfahrenen Customer-Engineering-Teams, um funktionale, technische oder Zustellbarkeitserfordernisse zu erfüllen, das Implementierungsrisiko zu reduzieren und das Änderungsmanagement zu verbessern.
 
-Frühere [!DNL Campaign Classic] -Benutzer, beachten Sie, dass die meisten [!DNL Campaign Classic] v7-Funktionen sind verfügbar mit [!DNL Campaign] v8, mit Ausnahme eines kleinen Satzes, aufgeführt in [diesem Abschnitt](#gs-removed). Weitere Änderungen werden in zukünftigen Versionen enthalten sein. [Weitere Informationen finden Sie in diesem Abschnitt](#gs-unavailable-features)
+Als früherer [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die in [diesem Abschnitt](#gs-removed) aufgeführt sind. Weitere Änderungen werden in zukünftigen Versionen enthalten sein. [Weitere Informationen finden Sie in diesem Abschnitt](#gs-unavailable-features)
 
 >[!NOTE]
 >
@@ -33,20 +33,20 @@ Frühere [!DNL Campaign Classic] -Benutzer, beachten Sie, dass die meisten [!DNL
 
 ## [!DNL Campaign] und [!DNL Snowflake] {#ac-gs-snowflake}
 
-Campaign v8 funktioniert mit [!DNL Snowflake]. Es stehen zwei Bereitstellungsmodelle zur Verfügung.
+Campaign v8 arbeitet mit [!DNL Snowflake] zusammen. Es stehen zwei Implementierungsmodelle zur Verfügung.
 
 ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Architektur von [!DNL Campaign] v8 finden Sie auf [dieser Seite](../architecture/architecture.md).
 
 
 ## Verwenden Sie Ihre Adobe ID, um eine Verbindung mit Campaign herzustellen.{#adobe-id}
 
-Campaign-Benutzer stellen über ihre Adobe ID eine Verbindung her. Dieselbe Adobe ID wird verwendet, um alle Ihre Adoben und Produkte, die mit einem Konto verknüpft sind, für alle Adobe Experience Cloud-Lösungen zu speichern.
+Campaign-Benutzer stellen über ihre Adobe ID eine Verbindung her. Dieselbe Adobe ID wird verwendet, um alle Ihre Adobe-Pläne und -Produkte für alle Adobe Experience Cloud-Lösungen mit einem einzigen Konto zu verknüpfen.
 
 ![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](connect.md), wie Sie eine Verbindung zu [!DNL Campaign] herstellen können. 
 
-## Daten mit Cubes analysieren{#adobe-reporting}
+## Analysieren von Daten mit Cubes{#adobe-reporting}
 
-Verwenden Sie das Modul Marketing Analytics, um Daten zu analysieren und zu messen, Statistiken zu berechnen, die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Erstellen Sie außerdem Berichte und erstellen Sie Zielgruppen: Nach der Identifizierung werden sie in Listen gespeichert, die in Adobe Campaign verwendet werden können (Targeting, Segmentierung usw.).
+Verwenden Sie das Modul &quot;Marketing Analytics&quot;, um Daten zu analysieren und zu messen, Statistiken zu berechnen und die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Erstellen Sie außerdem Berichte und Zielgruppen: Nach der Identifizierung werden sie in Listen gespeichert, die in Adobe Campaign verwendet werden können (für Targeting, Segmentierung usw.).
 
 Adobe Campaign-Cube-Berichte sind optimiert und bieten bessere Skalierungsfunktionen als Campaign Classic v7. Frühere Einschränkungen für Cubes gelten nicht für Campaign v8.
 
@@ -71,7 +71,7 @@ Bitte beachten Sie, dass in dieser Version von Campaign einige Funktionen nicht 
 >
 >* Die Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht möglich.
 >
->* Wenden Sie sich an Ihren Adobe-Kundenbetreuer, wenn Sie sich bezüglich Ihres Bereitstellungsmodells nicht sicher sind oder Fragen haben.
+>* Wenden Sie sich an Ihren Adobe-Kundenberater, wenn Sie sich bezüglich Ihres Implementierungsmodells nicht sicher sind oder Fragen haben.
 
 
 ## Nicht unterstützte Funktionen{#gs-removed}

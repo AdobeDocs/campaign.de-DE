@@ -7,7 +7,7 @@ title: Dokumente zu Campaign v8
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 92%
    + [Architektur](architecture/architecture.md)
    + FDA-Snowflake-Implementierung {#fda}
       + [Was ist FDA-Snowflake?](architecture/fda-deployment.md)
-   + Enterprise (FFDA)-Bereitstellung {#ffda}
+   + FFDA-Implementierung in Unternehmen {#ffda}
       + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
-      + Eigenschaften {#ffda-characteristics}
+      + Merkmale {#ffda-characteristics}
          + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
          + [Neue APIs](architecture/new-apis.md)
          + [API-Staging-Mechanismus](architecture/staging.md)
@@ -95,7 +95,7 @@ ht-degree: 92%
       + [Erstellen von Platzierungen](interaction/interaction-offer-spaces.md)
    + [Erstellen eines Angebotskatalogs](interaction/interaction-offer-catalog.md)
    + [Erstellen eines Angebots](interaction/interaction-offer.md)
-   + [Senden eines Angebots   (ausgehend)](interaction/interaction-send-offers.md)
+   + [Senden eines Angebots    (ausgehend)](interaction/interaction-send-offers.md)
    + Unterbreiten eines Angebots (eingehend){#inbound}
       + [Kontext](interaction/interaction-present-offers.md)
       + [Aufrufen eines Angebots auf einer Webseite](interaction/interaction-integration.md)
@@ -117,7 +117,7 @@ ht-degree: 92%
    + [Campaign + Real-Time CDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Campaign + externe Datenbank](connect/fda.md)
-   + Campaign + Ihr CRM-System  {#ac-crm}
+   + Campaign + Ihr CRM-System   {#ac-crm}
       + [Erste Schritte mit CRM-Connectoren](connect/crm.md)
       + [Arbeiten mit Campaign und SFDC](connect/ac-sfdc.md)
       + [Arbeiten mit Campaign und Microsoft Dynamics](connect/ac-ms-dyn.md)

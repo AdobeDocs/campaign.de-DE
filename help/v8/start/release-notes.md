@@ -9,7 +9,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
 source-wordcount: '2168'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ _18. Mai 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Mit iOS 15 hat Apple eine Vorstellung von sensiblen Benachrichtigungen hinzugefügt, die dem App-Entwickler die Möglichkeit gibt, den Fokusmodus zu umgehen, wenn eine Benachrichtigung als vertraulich betrachtet wird und dann in Echtzeit an den Benutzer gesendet werden muss.</p>
+<td> <p>Mit iOS 15 fügte Apple den Begriff der sensiblen Benachrichtigung hinzu, der dem App-Entwickler die Möglichkeit gibt, den Fokusmodus zu umgehen, wenn eine Benachrichtigung als sensibel eingestuft wird und den Benutzer in Echtzeit erreichen muss.</p>
 <p>Weitere Informationen finden Sie in der <a href="../send/push.md#send-notifications-on-ios">entsprechenden Dokumentation</a>.</p>
 </td> 
 </tr> 
@@ -42,12 +42,12 @@ _18. Mai 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Core Privacy Service-Integration</strong><br /> </th> 
+<th> <strong>Integration des Core Privacy Service</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Campaign v8 ist jetzt mit Adobe Privacy Core Service integriert. Die vom Privacy Core Service an alle Experience Cloud-Lösungen übertragenen Datenschutzanfragen werden von Campaign mithilfe eines speziellen Workflows automatisch verarbeitet.</p>
+<td> <p>Campaign v8 ist jetzt mit dem Adobe Privacy Core Service integriert. Die von Privacy Core Service an alle Experience Cloud-Lösungen übertragenen Datenschutzanfragen werden von Campaign mithilfe eines speziellen Workflows automatisch verarbeitet.</p>
 <p>Weitere Informationen finden Sie in der <a href="privacy.md">entsprechenden Dokumentation</a>.</p>
 </td> 
 </tr> 
@@ -64,7 +64,7 @@ _18. Mai 2022_
 <tbody>
 <tr>
 <td>
-<p>Mit Campaign Response Management können Sie den Erfolg und ROI Ihrer Marketing-Kampagnen oder Angebotsvorschläge über alle Kanäle hinweg messen: E-Mail, Mobile, Briefpost usw.</p>
+<p>Mit Campaign Response Management können Sie den Erfolg und den ROI Ihrer Marketing-Kampagnen oder Angebotsvorschläge über alle Kanäle hinweg messen: E-Mail, Mobile, Briefpost usw.</p>
 <p>Weitere Informationen finden Sie in der <a href="../start/campaigns.md#response-manager-add-on">entsprechenden Dokumentation</a>.</p>
 </td>
 </tr>
@@ -79,7 +79,7 @@ _18. Mai 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Campaign Dezentrales Marketing ermöglicht die Implementierung kollaborativer Kampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und Lokalstellen (Verkaufsstellen, regionale Agenturen usw.). Über einen freigegebenen Arbeitsbereich (Kampagnenkits) können Sie Kampagnenvorlagen erstellen und diese Ihren Lokalstellen vorschlagen.</p>
+<td> <p>Das verteilte Marketing in Campaign ermöglicht die Implementierung kollaborativer Kampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Stellen (Verkaufsstellen, regionale Agenturen usw.). Über einen freigegebenen Arbeitsbereich (Kampagnenkits) können Sie Kampagnenvorlagen erstellen und diese Ihren lokalen Entitäten vorschlagen.</p>
 <p>Weitere Informationen finden Sie in der <a href="../start/campaigns.md#distributed-marketing-add-on">entsprechenden Dokumentation</a>.</p>
 </td> 
 </tr> 
@@ -88,7 +88,7 @@ _18. Mai 2022_
 
 **Aktualisierungen zur Kompatibilität**
 
-* Das Campaign v8 SDK unterstützt jetzt Android 12 und iOS 15 für Push-Benachrichtigungen.
+* Das Campaign v8-SDK unterstützt jetzt Android 12 und iOS 15 für Push-Benachrichtigungen.
 * Campaign v8 ist jetzt mit Windows 11 kompatibel.
 
 Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](compatibility-matrix.md).
@@ -97,20 +97,20 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 
 * Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3 wird jetzt in Campaign unterstützt. [Mehr dazu](../config/external-accounts.md#bounce-mails-external-account)
 * Es wurden kritische Fehlerbehebungen bei der Web-API des Microsoft Dynamics-Connectors vorgenommen.
-* Die neue spezifische Berechtigung Benutzer- und Gruppenschema-Schreiben (operatorWrite) wurde hinzugefügt, damit Benutzer Operatoren- (xtk:operator) und Operatorgruppen-Schemas (xtk:group) einfügen, aktualisieren und löschen können.
+* Das neue Schreibrecht für Benutzer- und Gruppenschemas (operatorWrite) wurde hinzugefügt, um Benutzern das Einfügen, Aktualisieren und Löschen von Benutzer- (xtk:operator) und Benutzergruppen- (xtk:group)-Schemas zu ermöglichen.
 
 <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
 <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
-* Mehrere aktive LINE-Konten können jetzt für eine Mid-Sourcing-Anwendung konfiguriert werden.
+* Mehrere aktive LINE-Konten können jetzt auf einer einzigen Mid-Sourcing-Lösung konfiguriert werden.
 * Die Anzahl der Standardverbindungen für den Webprozess wurde von 50 auf 150 erhöht.
-* Campaign verfügt über eine Reihe neuer Schutzmechanismen, um das Einfügen duplizierter Snowflake in die Datenbankdatenbank zu verhindern. [Mehr dazu](../architecture/keys.md)
+* Campaign verfügt über eine Reihe neuer Schutzmechanismen, um das Einfügen duplizierter Schlüssel in eine Snowflake-Datenbank zu verhindern. [Mehr dazu](../architecture/keys.md)
 
 **Patches**
 
-* Fehlerkorrektur - Bei der Verwendung von Saatgut und Kontrollgruppen im selben wiederkehrenden Versand tritt jetzt kein Fehler mehr auf. (NEO-41197)
-* Fehlerkorrektur - Der E-Mail-Versand wird jetzt nicht mehr für alle Empfänger blockiert, die demselben deliveryPart während des Versandvorgangs (bis zu 256) angehören, wenn Gestaltungsbausteine eines der folgenden Zeichen enthalten: `' & < > "`. Diese Zeichen werden jetzt in Gestaltungsbausteinen unterstützt (Beispiel: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
-* Fehlerkorrektur - Der Tracking-Workflow schlägt jetzt nicht mehr fehl, wenn ein benutzerdefiniertes Schema als Zielgruppen-Mapping verwendet wird. Beim Generieren des broadLog-Schemas über den Zielgruppen-Mapping-Assistenten stellen wir nun sicher, dass der Typ des Fremdlinks zu einem benutzerdefinierten Zielgruppenschema korrekt ist. (NEO-43506)
-* Fehlerkorrektur - Die FFDA-Bereitstellungs-Workflows schlagen jetzt in anderen Sprachen als Englisch fehl. (NEO-44561)
+* Fehlerkorrektur: Bei der Verwendung von Testadressen und Kontrollgruppen im selben wiederkehrenden Versand tritt jetzt kein Fehler mehr auf. (NEO-41197)
+* Fehlerkorrektur: Bei FFDA wird der E-Mail-Versand für alle Empfänger, die zum selben deliveryPart gehören, während des Sendevorgangs (bis zu 256) nicht mehr blockiert, wenn Personalisierungsblöcke eines der folgenden Zeichen enthalten: `' & < > "`. Diese Zeichen werden jetzt in Personalisierungsblöcken unterstützt (Beispiel: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
+* Fehlerkorrektur: Jetzt schlägt der Tracking-Workflow bei der Verwendung eines benutzerdefinierten Schemas als Zielgruppen-Mapping nicht mehr fehl. Beim Generieren des broadLog-Schemas über den Zielgruppen-Mapping-Assistenten stellen wir nun sicher, dass der Typ des Fremdlinks zu einem benutzerdefinierten Zielgruppenschema korrekt ist. (NEO-43506)
+* Fehlerkorrektur: Die FFDA-Implementierungs-Workflows schlagen jetzt in anderen Sprachen als Englisch nicht mehr fehl. (NEO-44561)
 
 ## Version 8.2.10 {#release-8-2-10}
 
