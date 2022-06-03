@@ -6,15 +6,15 @@ role: Data Engineer
 level: Beginner
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '436'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Neue Campaign-APIs{#gs-new-api}
 
-Im Kontext eines [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md)enthält Campaign v8 zwei neue APIs zum Verwalten von Daten zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank. Voraussetzungen für ihre Verwendung ist die Aktivierung des Staging-Mechanismus im Schema. [Weitere Informationen](staging.md)
+Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) verfügt Campaign v8 über zwei neue APIs zum Verwalten von Daten zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank. Voraussetzungen für ihre Verwendung ist die Aktivierung des Staging-Mechanismus im Schema. [Weitere Informationen](staging.md)
 
 * Aufnahme-API: **xtk.session.ingest**
 
