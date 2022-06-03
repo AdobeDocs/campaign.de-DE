@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '606'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,21 +18,21 @@ ht-degree: 81%
 
 Campaign wird in Form einzelner Instanzen bereitgestellt, wobei jede Instanz eine komplette Campaign-Umgebung darstellt.
 
-Zwei in Campaign Cloud Service verfügbare Umgebungstypen:
+Mit Campaign Cloud Service stehen zwei Umgebungstypen zur Verfügung:
 
-* **Produktionsumgebung:** hostet die Programme für die Geschäftspraktiker.
+* **Produktionsumgebung**: hostet die Programme für die diversen Fachleute.
 
-* **Nicht-Produktionsumgebung**: wird für verschiedene Leistungs- und Qualitätstests verwendet, bevor Änderungen an der Anwendung in die Produktionsumgebung übertragen werden.
+* **Staging-Umgebung**: wird für verschiedene Leistungs- und Qualitätstests verwendet, bevor Änderungen am Programm in die Produktionsumgebung übertragen werden.
 
 Sie können Packages von einer Umgebung in eine andere exportieren und importieren.
 
 ![](../assets/do-not-localize/book.png) Weitere Informationen über Packages in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=de)
 
-## Bereitstellungsmodell{#ac-deployment}
+## Implementierungsmodell{#ac-deployment}
 
-In [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md), [!DNL Adobe Campaign] v8 funktioniert mit zwei Datenbanken: lokale [!DNL Campaign] Datenbank für die Echtzeit-Messaging- und Einzelabfragen der Benutzeroberfläche sowie Schreiben über APIs und eine Cloud [!DNL Snowflake] Datenbank für Kampagnenausführung, Batch-Abfragen und Workflow-Ausführung.
+In seiner [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) kann [!DNL Adobe Campaign] v8 mit zwei Datenbanken verwendet werden: einer lokalen [!DNL Campaign]-Datenbank für Echtzeit-Messaging und Einzelabfragen und das Schreiben über APIs sowie einer Cloud-[!DNL Snowflake]-Datenbank für die Kampagnenausführung, für Batch-Abfragen und die Workflow-Ausführung.
 
-Campaign v8 Enterprise bringt das Konzept von **Vollständiger Federated Data Access** (FFDA): Alle Daten befinden sich jetzt an Remote-Standorten in der Cloud-Datenbank. Mit dieser neuen Architektur vereinfacht die Bereitstellung von Campaign v8 Enterprise (FFDA) die Datenverwaltung: In der Cloud-Datenbank ist kein Index erforderlich. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung, um das Leistungsniveau zu gewährleisten.
+Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit dieser neuen Architektur vereinfacht die Campaign v8 Enterprise (FFDA)-Implementierung die Datenverwaltung: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung, um das Leistungsniveau zu gewährleisten.
 
 
 
