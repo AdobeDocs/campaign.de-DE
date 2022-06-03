@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1772'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer o
 >
 >* Kompatible Datenbanken für FDA sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
 >
->* Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), ist ein spezielles externes Konto verfügbar, über das die Kommunikation zwischen der lokalen Campaign-Datenbank und der Snowflake-Cloud-Datenbank verwaltet werden kann. Dieses externe Konto wird von der Adobe aus für Sie eingerichtet und darf nicht geändert werden.
+>* Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) ist ein spezielles externes Konto verfügbar, über das die Kommunikation zwischen der lokalen Campaign-Datenbank und der Snowflake-Cloud-Datenbank verwaltet werden kann. Dieses externe Konto wird von Adobe für Sie eingerichtet und darf nicht geändert werden.
 >
 
 
@@ -65,7 +65,7 @@ Gehen Sie wie folgt vor, um den Zugriff auf eine externe Datenbank mit FDA einzu
 1. If needed, create a new target mapping from the previously created schema. This is required if the recipients of your deliveries come from the external database. This implementation comes with limitations related to message personalization. [Learn more](#define-data-mapping)
 -->
 
-Beachten Sie, dass mit Campaign [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md)können Sie kein Zielgruppen-Mapping aus einem Schema erstellen, das in einer externen Datenbank gespeichert ist, auf die FDA Zugriff hat. Empfänger Ihrer Sendungen können daher nicht aus der externen Datenbank stammen.
+Beachten Sie, dass Sie mit einer Campaign [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) kein Zielgruppen-Mapping aus einem Schema erstellen können, das in einer externen Datenbank gespeichert wird, auf die per FDA zugegriffen wird. Empfänger Ihrer Sendungen können daher nicht aus der externen Datenbank stammen.
 
 ## Externes Konto für eine externe Datenbank {#fda-external-account}
 
