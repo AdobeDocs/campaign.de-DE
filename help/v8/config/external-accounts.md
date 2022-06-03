@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1176'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können über Adobe Campaign **[!UICONTROL Explorer]** auf externe Konten zu
 
 >[!CAUTION]
 >
->Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), einer bestimmten **[!UICONTROL Vollständige FDA]** (ffda) externes Konto verwaltet die Verbindung zwischen der lokalen Datenbank von Campaign und der Cloud-Datenbank ([!DNL Snowflake]).
+>Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) verwaltet ein spezielles externes **[!UICONTROL Full FDA]**-Konto (ffda) die Verbindung zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank ([!DNL Snowflake]).
 ></br>Als Anwender von Managed Cloud Services wird dieses externe Konto für Ihre Instanz durch Adobe konfiguriert. Es darf nicht geändert werden.
 
 ## Campaign-spezifische externe Konten
@@ -38,7 +38,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
 >[!NOTE]
 >
->The Microsoft Exchange Online OAuth 2.0 authentication for POP3 capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3-Funktionen ist ab Campaign v8.3 verfügbar. Informationen zu Ihrer Version finden Sie in [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 
 Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
@@ -79,25 +79,25 @@ Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für d
 >
 >Bevor Sie Ihr externes POP3-Konto mit Microsoft OAuth 2.0 konfigurieren, müssen Sie Ihre Anwendung zunächst im Azure-Portal registrieren. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](https://docs.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app).
 
-Um ein externes POP3-Programm mit Microsoft OAuth 2.0 zu konfigurieren, überprüfen Sie die **[!UICONTROL Microsoft OAuth 2.0]** und füllen Sie die folgenden Felder aus:
+Um ein externes POP3-Programm mit Microsoft OAuth 2.0 zu konfigurieren, markieren Sie die Option **[!UICONTROL Microsoft OAuth 2.0]** und füllen Sie die folgenden Felder aus:
 
 * **[!UICONTROL Azure-Mandant]**
 
-   Azure ID (or Directory (tenant) ID) can be found in the **Essentials** drop-down of your application overview in the Azure portal.
+   Eine Azure ID (oder Verzeichnis-ID bzw. Mandanten-ID) finden Sie in der Dropdown-Liste **Grundlagen** der Anwendungsübersicht im Azure-Portal.
 
-* **[!UICONTROL Azure Client ID]**
+* **[!UICONTROL Azure-Client-ID]**
 
-   Client ID (or Application (client) ID) can be found in the **Essentials** drop-down of your application overview in the Azure portal.
+   Client-ID (oder Anwendungs (Client)-ID) finden Sie in der Dropdown-Liste **Grundlagen** der Anwendungsübersicht im Azure-Portal.
 
-* **[!UICONTROL Azure Client-Geheimnis]**:
+* **[!UICONTROL Azure-Client-Geheimnis]**:
 
-   Die Client-Geheimkennung finden Sie im Abschnitt **Kundengeheimnisse** aus der **Zertifikate &amp; Geheimnisse** Menü Ihrer Anwendung im Azure-Portal.
+   Die Client-Geheimnis-ID finden Sie in der Spalte **Client-Geheimnisse** im Menü **Zertifikate und Geheimnisse** Ihrer Anwendung im Azure-Portal.
 
-* **[!UICONTROL Azure Redirect URL]**:
+* **[!UICONTROL Azure-Umleitungs-URL]**:
 
-   Die Umleitungs-URL finden Sie im Abschnitt **Authentifizierung** Menü Ihrer Anwendung im Azure-Portal. Sie sollte mit der folgenden Syntax enden `nl/jsp/oauth.jsp`, z. B. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+   Die Umleitungs-URL finden Sie im Menü **Authentifizierung** Ihrer Anwendung im Azure-Portal. Sie sollte mit der folgenden Syntax enden: `nl/jsp/oauth.jsp`, z. B. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
-After entering your different credentials, you can click **[!UICONTROL Setup the connection]** to finish your external account configuration.
+Nachdem Sie Ihre unterschiedlichen Anmeldedaten eingegeben haben, können Sie auf **[!UICONTROL Verbindung einrichten]** klicken, um die Konfiguration Ihres externen Kontos abzuschließen.
 
 ### Routing {#routing}
 
@@ -147,7 +147,7 @@ Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der 
    ![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Adobe Experience Manager mit Adobe Campaign zu integrieren.
 
 
-## CRM Connector External accounts
+## Externe CRM-Connector-Konten
 
 * **Microsoft Dynamics CRM**
 
@@ -159,7 +159,7 @@ Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der 
 
    Das externe **[!UICONTROL Salesforce CRM]**-Konto ermöglicht den Import und Export von Salesforce-Daten in Adobe Campaign.
 
-   ![](../assets/do-not-localize/glass.png) Learn more about Adobe Campaign - Salesforce.com CRM integration in [this page](../connect/ac-sfdc.md).
+   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Integration von Adobe Campaign mit dem CRM Salesforce.com finden Sie auf [dieser Seite](../connect/ac-sfdc.md).
 
 ## Übertragen von Daten mit externen Konten
 
