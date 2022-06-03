@@ -3,9 +3,9 @@ title: Mit Campaign-Schemata arbeiten
 description: Erste Schritte mit Schemata
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1273'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -167,9 +167,9 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 ## Schlüssel {#keys}
 
-Jede Tabelle muss über mindestens einen Schlüssel verfügen. Oft wird sie im Hauptelement des Schemas mithilfe der Variablen **autopk** -Attribut auf **true**.
+Jede Tabelle muss über mindestens einen Schlüssel verfügen. Dessen Erstellung erfolgt häufig automatisch im Hauptelement des Schemas. Hierzu muss das Attribut **autopk** auf **true** gesetzt sein.
 
-Darüber hinaus wird im Rahmen eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), verwenden Sie die **@autouuid** und legen Sie **true**.
+Verwenden Sie im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md)außerdem die **@autouuid** und setzen Sie sie auf **true**.
 
 Der Primärschlüssel kann auch mit dem Attribut **internal** definiert werden.
 
@@ -181,7 +181,7 @@ Beispiel:
 </key>
 ```
 
-In diesem Beispiel wird die **@autopk** oder **@autouuid** -Attribut einen standardmäßigen Primärschlüssel mit dem Namen &quot;id&quot;erstellen, geben wir unseren eigenen Primärschlüssel &quot;budgetId&quot;an.
+In diesem Beispiel erstellen wir nicht anhand der Attribute **@autopk** oder **@autouuid** einen standardmäßigen Primärschlüssel namens &quot;id&quot;, sondern einen eigenen Primärschlüssel mit dem Namen &quot;householdId&quot;.
 
 >[!CAUTION]
 >
