@@ -6,15 +6,15 @@ role: Data Engineer
 level: Beginner
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Campaign-API-Staging-Mechanismus
 
-Im Kontext eines [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md)nicht empfohlen wird, Einzelaufrufe in Bezug auf Leistungen (Latenz und gleichzeitige Nutzung) freizugeben. Batch-Vorgänge sind daher vorzuziehen. Um die Leistung zu verbessern, werden Aufnahme-APIs an die lokale Datenbank weitergeleitet.
+Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) ist es im Hinblick auf die Leistung (Latenz und Gleichzeitigkeit) nicht empfehlenswert, einzelne Abfragen zu starten. Batch-Vorgänge sind daher vorzuziehen. Um die Leistung zu verbessern, werden Aufnahme-APIs an die lokale Datenbank weitergeleitet.
 
 Die Staging-Funktion von Campaign ist in einigen nativen Schemata standardmäßig aktiviert. Sie kann auch für jedes benutzerdefinierte Schema aktiviert werden. Staging-Verfahren in Kürze:
 
