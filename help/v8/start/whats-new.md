@@ -64,7 +64,7 @@ Die wichtigsten Funktionen ermöglichen Folgendes:
 
 * **Geschwindigkeit und Skalierung**. Adobe Campaign kann jetzt Cloud-Skalierungstechnologien nutzen, um Größe und Geschwindigkeit der Datenbank drastisch zu verbessern.
 
-   [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun in der Cloud-Datenbank. Mit diesem neuen Angebot vereinfacht Campaign v8 das Daten-Management: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. [!DNL Snowflake] ist die Campaign Cloud-Datenbank und bringt Ihnen Geschwindigkeit und Ausdauer: Somit vermeiden Sie Überlastung durch Systemaktivitätsspitzen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung, um das Leistungsniveau zu gewährleisten.
+   [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit diesem neuen Angebot vereinfacht Campaign v8 das Daten-Management: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. [!DNL Snowflake] ist die Campaign Cloud-Datenbank und bringt Ihnen Geschwindigkeit und Ausdauer: Somit vermeiden Sie Überlastung durch Systemaktivitätsspitzen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung, um das Leistungsniveau zu gewährleisten.
 
    ![](../assets/do-not-localize/glass.png) [Weitere Informationen zur Implementierung von Enterprise (FFDA)](../architecture/enterprise-deployment.md)
 

@@ -3,7 +3,7 @@ title: Neues Schema in Campaign erstellen
 description: Erfahren Sie, wie Sie in Campaign ein neues Schema erstellen
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
 

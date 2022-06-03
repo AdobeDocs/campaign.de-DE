@@ -3,7 +3,7 @@ title: Formulare in Campaign
 description: Erfahren Sie, wie Sie Formulare anpassen
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2574'
 ht-degree: 100%
 

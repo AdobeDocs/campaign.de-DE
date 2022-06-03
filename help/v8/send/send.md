@@ -8,7 +8,7 @@ exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 57%
+ht-degree: 78%
 
 ---
 
@@ -39,44 +39,44 @@ Nach dem Versand können Sie im Versand-Dashboard den Versandstatus überprüfen
 
 Der Campaign v8 Mail Transfer Agent (MTA) bietet eine erstklassige Versandinfrastruktur, die eine optimale Zustellbarkeit, Reputation, Durchsatz, Berichterstellung, Bounce-Handhabung, IP-Ramp-up und Verwaltung von Verbindungseinstellungen ermöglicht.
 
-Sie ist für alle Campaign v8-Kunden verfügbar und garantiert Skalierbarkeit, einen hohen Versanddurchsatz und ermöglicht den schnelleren Versand von E-Mails. Erreicht wird dies durch neue adaptive Versandtechniken, die die Einstellungen für den E-Mail-Versand in Echtzeit auf der Grundlage von Rückmeldungen von ISPs (Internetanbietern) ändern.
+Sie ist für alle Campaign v8-Kunden verfügbar und garantiert Skalierbarkeit, einen hohen Versanddurchsatz und ermöglicht den schnelleren Versand von E-Mails. Erreicht wird dies durch neue adaptive Versandtechniken, die die Einstellungen für den E-Mail-Versand in Echtzeit auf der Grundlage von Rückmeldungen von ISPs (Internetanbietern) anpassen.
 
 ### Vorteile
 
-Adobe Campaign verwendet einen Mail Transfer Agent (MTA), der den kommerziellen E-Mail-MTA von SparkPost mit dem Namen ausführt. **Momentum**.
+Adobe Campaign verwendet einen Mail Transfer Agent (MTA), der den kommerziellen E-Mail-MTA von SparkPost namens **Momentum** ausführt. 
 
-Momentum steht für eine innovative, hochleistungsfähige MTA-Technologie, die eine intelligentere Behandlung von Bounce-E-Mails und eine automatische Zustellbarkeitsoptimierung beinhaltet, die den Absendern hilft, optimale Zustellraten im Posteingang zu erreichen und zu erhalten.
+Momentum steht für eine innovative, hochleistungsfähige MTA-Technologie, die eine intelligentere Handhabung von Bounce-E-Mails und eine automatische Zustellbarkeitsoptimierung beinhaltet, die den Absendern hilft, optimale Zustellraten im Posteingang zu erreichen und beizubehalten.
 
-* Der MTA ermöglicht einen massiven Anstieg der Gesamtdurchsatzgeschwindigkeit und eine deutliche Verringerung der Softbounces.
-* Es verwendet die neueste MTA-Technologie, um Ihnen die optimale Durchsatzgeschwindigkeit für Ihren E-Mail-Versand zu bieten.
+* Der MTA ermöglicht eine massive Steigerung der Gesamtdurchsatzgeschwindigkeit und eine deutliche Verringerung der Softbounces.
+* Er nutzt die neueste MTA-Technologie, um Ihnen optimale Durchsatzgeschwindigkeiten für Ihren E-Mail-Versand zu bieten.
 * Durch die sofortige und automatische Anpassung an die Rückmeldungen, die er erhält, sorgt er außerdem für einen genaueren und intelligenteren E-Mail-Versand mit Versanddaten in Echtzeit.
 
 ### Bounce-Qualifizierung
 
-Für **synchron** Fehlermeldungen bei fehlgeschlagenen Sendungen, bestimmt der MTA den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
+Bei Fehlermeldungen zu **synchronen** Versandfehlern bestimmt der MTA den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
 
 Der MTA qualifiziert den SMTP-Bounce und sendet diese Qualifizierung zurück an Campaign in Form eines Bouncecodes, der in Campaign einem Bounce-Grund und einer Bounce-Qualifikation zugeordnet ist.
 
 >[!NOTE]
 >
->Aktuell **asynchron** Bounces werden vom inMail-Prozess durch das **[!UICONTROL Eingehende E-Mail]** Regeln. Weitere Informationen hierzu finden Sie unter [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
+>Aktuell **asynchron** Bounces werden vom inMail-Prozess durch das **[!UICONTROL Eingehende E-Mail]** Regeln. Mehr dazu finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=de#bounce-mail-qualification){target=&quot;_blank&quot;}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
 
-Erfahren Sie mehr über fehlgeschlagene Sendungen in [diesem Abschnitt](delivery-failures.md).
+In [diesem Abschnitt](delivery-failures.md) erfahren Sie mehr über fehlgeschlagene Sendungen.
 
 
 ### Spezifische MX-Regeln
 
-MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen einem Sender- und einem Empfangs-Server.
+MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen einem Sende- und einem Empfangs-Server.
 
 Der MTA hat seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domains stammt, von denen Sie E-Mails senden, angepasst werden.
 
 ### DKIM-Signierung
 
-Domain Keys Identified Mail (DKIM) ist eine Authentifizierungsmethode, mit der gefälschte Absenderadressen (häufig als &quot;Spoofing&quot;bezeichnet) erkannt werden.
+Domain Keys Identified Mail (DKIM) ist eine Authentifizierungsmethode, mit der gefälschte Absenderadressen (häufig als &quot;Spoofing&quot; bezeichnet) erkannt werden.
 
-In Adobe Campaign wird die DKIM-E-Mail-Authentifizierungssignatur vom MTA ausgeführt.
+In Adobe Campaign wird die DKIM-E-Mail-Authentifizierungssignatur vom MTA durchgeführt.
 
-Erfahren Sie mehr über DKIM im [Best Practices für die Zustellbarkeit von Adoben](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication){target=&quot;_blank&quot;}.
+Im [Handbuch von Adobe zu Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication){target=&quot;_blank&quot;} erfahren Sie mehr über DKIM.
 
 ## E-Mail-Feedback-Service {#email-feedback-service}
 
@@ -90,7 +90,7 @@ Wenn die Nachricht tatsächlich den Zielgruppenprofilen zugestellt wird und dies
 
 Wenn Hardbounces vom MTA zurückgemeldet werden, ändert sich ihr Log-Status von **[!UICONTROL Vom Dienstleister berücksichtigt]** in **[!UICONTROL Fehlgeschlagen]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Wenn Softbounces vom MTA zurückgemeldet werden, bleibt ihr Log-Status unverändert (**[!UICONTROL Vom Dienstleister berücksichtigt]**): Nur der [Fehlergrund](delivery-failures.md#delivery-failure-reasons) wird aktualisiert<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Der **[!UICONTROL Erfolgsprozentsatz]** bleibt unverändert. Soft-Bounce-Nachrichten werden dann im gesamten Versand wiederholt. [Gültigkeitszeitraum](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}:
+Wenn Softbounces vom MTA zurückgemeldet werden, bleibt ihr Log-Status unverändert (**[!UICONTROL Vom Dienstleister berücksichtigt]**): Nur der [Fehlergrund](delivery-failures.md#delivery-failure-reasons) wird aktualisiert<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Der **[!UICONTROL Erfolgsprozentsatz]** bleibt unverändert. Nachrichten, bei denen ein Softbounce aufgetreten ist, erhalten dann während des [Gültigkeitszeitraums](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;} des Versands einen erneuten Zustellversuch:
 
 * Wenn ein erneuter Versuch vor Ende der Gültigkeitszeitraums erfolgreich ist, ändert sich der Nachrichtenstatus in **[!UICONTROL Gesendet]** und der **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend erhöht.
 

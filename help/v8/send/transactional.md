@@ -8,15 +8,15 @@ exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 21d4f7a4b02104572dbd3a5469dc479b5b0ba8de
 workflow-type: tm+mt
 source-wordcount: '1596'
-ht-degree: 80%
+ht-degree: 99%
 
 ---
 
 # Erste Schritte mit Transaktionsnachrichten{#send-transactional-messages}
 
-Transaktionsnachrichten (Message Center) sind ein Campaign-Modul zur Verwaltung von Trigger-Nachrichten. Diese Benachrichtigungen werden von Ereignissen generiert, die von Informationssystemen ausgelöst werden. Sie können: Rechnung, Bestellbestätigung, Lieferbestätigung, Passwortänderung, Benachrichtigung über die Nichtverfügbarkeit des Produkts, Kontoauszug, Erstellung des Website-Kontos usw.
+Das Campaign-Modul &quot;Transaktionsnachricht (Message Center)&quot; wurde zum Verwalten von Trigger-Nachrichten entwickelt. Diese Benachrichtigungen werden von Ereignissen generiert, die von Informationssystemen ausgelöst werden und können sein: Rechnung, Auftragsbestätigung, Versandbestätigung, Passwortänderung, Benachrichtigung über die Nichtverfügbarkeit von Produkten, Kontoauszug, Einrichtung eines Website-Kontos usw.
 
-![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services [Adobe kontaktieren](../start/campaign-faq.md#support){target=&quot;_blank&quot;} zur Konfiguration von Campaign-Transaktionsnachrichten in Ihrer Umgebung.
+![](../assets/do-not-localize/speech.png) Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support){target=&quot;_blank&quot;}, um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu konfigurieren.
 
 Transaktionsnachrichten dienen zum Senden von:
 
@@ -26,7 +26,7 @@ Transaktionsnachrichten dienen zum Senden von:
 
 ![](../assets/do-not-localize/glass.png) Die Einstellungen für Transaktionsnachrichten sind in [diesem Abschnitt](../config/transactional-msg-settings.md) beschrieben.
 
-![](../assets/do-not-localize/glass.png) Grundlegendes zur Transaktionsnachrichten-Architektur in [diese Seite](../architecture/architecture.md#transac-msg-archi).
+![](../assets/do-not-localize/glass.png) [Diese Seite](../architecture/architecture.md#transac-msg-archi) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
 
 ## Funktionsweise von Transaktionsnachrichten {#transactional-messaging-operating-principle}
 
@@ -36,14 +36,14 @@ Angenommen, Sie sind eine Firma mit einer Website, auf der Ihre Kunden Produkte 
 
 Mit Adobe Campaign können Sie eine Benachrichtigungs-E-Mail an Kunden senden, die ihrem Warenkorb Produkte hinzugefügt haben. Wenn ein Kunde Ihre Website verlässt, ohne seine Einkäufe zu tätigen (externes Ereignis, das ein Campaign-Ereignis auslöst), wird automatisch eine Warenkorbabbruchs-E-Mail an ihn gesendet (Versand einer Transaktionsnachricht).
 
-Die wichtigsten Schritte für die Umsetzung sind im Folgenden beschrieben:
+Die wichtigsten Schritte für die Einrichtung sind nachfolgend beschrieben:
 
 1. [Erstellen Sie einen Ereignistyp](#create-event-types).
 1. [Erstellen und konzipieren Sie die Nachrichtenvorlage](#create-message-template). Bei diesem Schritt müssen Sie ein Ereignis mit Ihrer Nachricht verknüpfen.
 1. [Testen Sie die Nachricht](#test-message-template).
 1. [Veröffentlichen Sie die Nachrichtenvorlage](#publish-message-template).
 
-Wenn nach der Erstellung und Publikation der Transaktionsnachrichtenvorlage ein entsprechendes Ereignis ausgelöst wird, werden die relevanten Daten über PushEvent und PushEvents an Campaign gesendet [SOAP-Methoden](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=de){target=&quot;_blank&quot;} und der Versand an die Zielempfänger erfolgt.
+Wenn nach der Erstellung und Veröffentlichung der Transaktionsnachrichtenvorlage ein entsprechendes Ereignis ausgelöst wird, werden die relevanten Daten über die [SOAP-Methoden](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=de){target=&quot;_blank&quot;} PushEvent und PushEvents an Campaign gesendet. Danach erfolgt der Versand an die ausgewählte Zielgruppe.
 
 ## Ereignistypen erstellen {#create-event-types}
 
@@ -73,9 +73,9 @@ Gehen Sie wie folgt vor, um Ereignistypen für die Verarbeitung in Adobe Campaig
 
 >[!NOTE]
 >
->Weitere Informationen zu Auflistung finden Sie in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de){target=&quot;_blank&quot;}.
+>Weitere Informationen zu Auflistungswerten finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de){target=&quot;_blank&quot;}.
 
-## Transaktionsnachrichtenvorlage definieren {#create-message-template}
+## Definieren einer Transaktionsnachrichtenvorlage {#create-message-template}
 
 Jedes Ereignis kann eine personalisierte Nachricht auslösen. Dazu müssen Sie für jeden Ereignistyp eine passende Nachrichtenvorlage erstellen. Vorlagen enthalten die notwendigen Informationen zur Personalisierung der Transaktionsnachricht. Sie können Vorlagen auch verwenden, um die Vorschau der Nachricht zu testen und einen Testversand an Testadressen zu senden, bevor Sie an die endgültige Zielgruppe versenden.
 
@@ -133,7 +133,7 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
    ![](assets/messagecenter_create_custo_2.png)
 
-## Transaktionsnachrichtenvorlage testen {#test-message-template}
+## Testen der Transaktionsnachrichtenvorlage {#test-message-template}
 
 ### Testadressen hinzufügen{#add-seeds}
 
@@ -224,7 +224,7 @@ Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage einge
 
 ## Vorlage veröffentlichen {#publish-message-template}
 
-Beim Erstellen der Nachrichtenvorlage<!-- on the control instance--> abgeschlossen ist, können Sie sie veröffentlichen. Dadurch können Sie Nachrichten senden, die mit Echtzeit- und Batch-Ereignissen verknüpft sind.
+Wenn die erstellte Nachrichtenvorlage<!-- on the control instance--> vollständig ist, können Sie sie veröffentlichen, wodurch Sie Nachrichten versenden können, die mit Echtzeit- und Batch-Ereignissen verknüpft sind.
 
 <!--This process will also publish it on all execution instances.
 
@@ -234,19 +234,19 @@ Publication lets you automatically create two message templates on the execution
 
 >[!CAUTION]
 >
->Wenn Sie an einer Vorlage Änderungen vornehmen, stellen Sie sicher, dass Sie sie erneut veröffentlichen, damit diese Änderungen während des Versands der Transaktionsnachricht wirksam werden.
+>Wenn Sie an einer Vorlage Änderungen vornehmen, müssen Sie sie erneut veröffentlichen, damit diese Änderungen während des Versands der Transaktionsnachricht wirksam werden.
 
-1. Navigieren Sie zu **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]** Ordner des Baums.
+1. Gehen Sie im Navigationsbaum zum Ordner **[!UICONTROL Message Center > Transaktionsnachrichtenvorlagen]**.
 1. Wählen Sie die Vorlage aus, die Sie veröffentlichen möchten<!--on your execution instances-->.
 1. Klicken Sie auf **[!UICONTROL Veröffentlichen]**.
 
    ![](assets/messagecenter_publish_template.png)
 
-Nach Abschluss der Veröffentlichung werden beide Nachrichtenvorlagen, die auf Batch- und Echtzeit-Ereignisse angewendet werden, in der **[!UICONTROL Administration > Betreibung > Message Center Ausführung > Standard > Transaktionsnachrichten-Vorlagen]** Ordner.
+Nach Abschluss der Veröffentlichung werden die beiden Nachrichtenvorlagen, die auf die Echtzeit- und Batch-Ereignisse angewendet werden, im Ordner **[!UICONTROL Administration > Produktion > Message Center-Ausführung > Standard > Transaktionsnachrichten-Vorlagen]** erstellt.
 
 ![](assets/messagecenter_deployed_model.png)
 
-Sobald eine Vorlage veröffentlicht wurde, wird Adobe Campaign, wenn das entsprechende Ereignis ausgelöst wird<!--execution instance--> erhält das Ereignis, verknüpft es mit der Transaktionsvorlage und sendet die entsprechende Transaktionsnachricht an jeden Empfänger.
+Sobald eine Vorlage veröffentlicht wurde und das entsprechende Ereignis ausgelöst wird, erhält Adobe Campaign<!--execution instance--> das Ereignis, verknüpft es mit der Transaktionsvorlage und sendet die entsprechende Transaktionsnachricht an jeden Empfänger.
 
 <!--
 >[!NOTE]
@@ -256,9 +256,9 @@ Sobald eine Vorlage veröffentlicht wurde, wird Adobe Campaign, wenn das entspre
 >However, if you add a non-empty value, the corresponding field will be updated as usual after the next publication.
 -->
 
-## Veröffentlichung einer Vorlage rückgängig machen
+## Veröffentlichung einer Vorlage aufheben
 
-Sobald eine Nachrichtenvorlage veröffentlicht wurde <!--on the execution instances-->, kann die Veröffentlichung rückgängig gemacht werden.
+Sobald eine Nachrichtenvorlage <!--on the execution instances--> veröffentlicht wurde, kann die Veröffentlichung aufgehoben werden.
 
 * Eine veröffentlichte Vorlage kann weiterhin aufgerufen werden, wenn das entsprechende Ereignis ausgelöst wird. Wenn Sie eine Nachrichtenvorlage nicht mehr verwenden, wird deshalb empfohlen, deren Veröffentlichung aufzuheben. Damit wird verhindert, dass versehentlich unerwünschte Transaktionsnachrichten gesendet werden.
 
@@ -268,7 +268,7 @@ Sobald eine Nachrichtenvorlage veröffentlicht wurde <!--on the execution instan
 
 Gehen Sie wie folgt vor, um die Veröffentlichung einer Transaktionsnachrichten-Vorlage aufzuheben.
 
-1. Navigieren Sie zum **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]** Ordner.
+1. Navigieren Sie zum Ordner **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]**.
 1. Wählen Sie die Vorlage aus, deren Veröffentlichung rückgängig gemacht werden soll.
 1. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**.
 1. Klicken Sie auf **[!UICONTROL Starten]**.
@@ -281,8 +281,8 @@ Nach Abschluss der Aufhebung der Veröffentlichung:
 
 * Beide Nachrichtenvorlagen (auf Batch- und Echtzeit-Ereignisse angewendet) werden gelöscht<!-- from each execution instance-->.
 
-   Sie werden im Ordner **[!UICONTROL Administration > Betreibung > Message Center > Standard > Transaktionsnachrichten-Vorlagen]** nicht mehr angezeigt.
+   Sie werden im Ordner **[!UICONTROL Administration > Produktion > Message Center > Standard > Transaktionsnachrichten-Vorlagen]** nicht mehr angezeigt.
 
-* Sobald die Veröffentlichung einer Vorlage rückgängig gemacht wurde, können Sie sie löschen<!-- from the control instance-->.
+* Nachdem die Veröffentlichung einer Vorlage aufgehoben wurde, können Sie sie löschen<!-- from the control instance-->.
 
    Wählen Sie dazu die gewünschte Vorlage aus der Liste aus und klicken Sie oben rechts im Bildschirm auf die Schaltfläche **[!UICONTROL Löschen]**.
