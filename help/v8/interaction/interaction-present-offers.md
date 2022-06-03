@@ -4,7 +4,7 @@ title: Unterbreiten eines Angebots (eingehende Interaktion)
 description: Hier erfahren Sie, wie Sie das beste Angebot mithilfe des Campaign Interaction-Moduls unterbreiten.
 exl-id: d0137fa7-3d04-4205-b49c-46973e45a5b8
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
