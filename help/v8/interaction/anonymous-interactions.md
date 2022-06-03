@@ -4,7 +4,7 @@ title: Unterbreiten von Angeboten für anonyme Profile (eingehende Interaktion)
 description: Hier erfahren Sie, wie Sie anonymen Profilen Angebote unterbreiten
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
 ht-degree: 100%
 
