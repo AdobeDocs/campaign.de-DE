@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '655'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre gesch
 
 ## Campaign-Tabellen und Cloud-Datenbank
 
-Für ein besseres Verständnis der Tabellenverwaltung in Campaign v8 beachten Sie Folgendes: [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), werden Tabellen zwischen Campaign und der zugehörigen Snowflake Cloud-Datenbank repliziert.
+Zum besseren Verständnis der Tabellenverwaltung in Campaign v8 ist zu beachten, dass im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) die Tabellen zwischen Campaign und der Snowflake Cloud-Datenbank repliziert werden.
 
 ![](../assets/do-not-localize/glass.png) Weitere Informationen zu Replikationsstrategien und -verfahren finden Sie in [diesem Abschnitt](../architecture/replication.md).
 
