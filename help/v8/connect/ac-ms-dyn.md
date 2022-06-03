@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Um die Anwendungs-(Client-) ID abzurufen, müssen Sie eine Anwendung in Azure Ac
 
 Nach dem Speichern weist Microsoft Azure Directory Ihrer Anwendung eine eindeutige **Anwendungs-(Client-)-ID** zu. Sie benötigen diese ID später bei der Konfiguration von Dynamics 365 in Adobe Campaign.
 
-Weitere Informationen finden Sie unter [Dokumentation zu Microsoft Dynamics 365](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory){target=&quot;_blank&quot;}.
+Weitere Informationen finden Sie in der [Dokumentation zu Microsoft Dynamics 365](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory){target=&quot;_blank&quot;}.
 
 ### Generieren der Microsoft Dynamics-Zertifikatschlüsselkennung und Schlüssel-ID {#config-certificate-key-id}
 
@@ -127,7 +127,7 @@ Der Anwendungsbenutzer ist derjenige Benutzer, den die oben registrierte Anwendu
 **Schritt 3**: Anwendungsbenutzer in Dynamics CRM erstellen
 
 1. Navigieren Sie von [Microsoft Azure](https://portal.azure.com) zu **Einstellungen > Sicherheit > Benutzer**.
-1. Klicken Sie auf die Dropdown-Liste und wählen Sie **Anwendungsbenutzer** und klicken Sie auf **Neu**.
+1. Klicken Sie auf die Dropdown-Liste, wählen Sie dann **Anwender** und klicken Sie auf **Neu**.
 1. Verwenden Sie denselben Benutzernamen wie für den Benutzer, der oben in Active Directory erstellt wurde.
 1. Weisen Sie die **Anwendungs-ID** für [die zuvor erstellte Anwendung zu](#get-client-id-microsoft).
 1. Klicken Sie auf **Rollen verwalten** und wählen Sie den Benutzer die Rolle **Systemadministrator** für aus.
