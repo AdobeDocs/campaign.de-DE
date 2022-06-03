@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '419'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 ## Technische Workflows{#tech-wf}
 
-Im Kontext eines [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md)bietet Adobe Campaign eine Reihe integrierter technischer Workflows. Technische Workflows führen Prozesse oder Aufträge aus und werden auf dem Server regelmäßig geplant.
+Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) bietet Adobe Campaign eine Reihe integrierter technischer Workflows. Technische Workflows führen Prozesse oder Aufträge aus und werden auf dem Server regelmäßig geplant.
 
 Solche Workflows führen Operationen zur Datenbankwartung aus, nutzen die Tracking-Informationen in den Versand-Logs, erstellen wiederkehrende Kampagnen und mehr.
 
@@ -33,7 +33,7 @@ Dieser Workflow repliziert Staging-Daten für einheitliche Aufrufe. Er ist so ge
 * **[!UICONTROL FFDA-Daten sofort replizieren]**
 Dieser Workflow repliziert die XS-Daten für ein bestimmtes externes Konto.
 
-Diese technischen Workflows sind im Abschnitt **[!UICONTROL Administration > Betreibung > Technische Workflows > Vollständige FFDA-Replikation]** Knoten des Campaign-Explorers. **Sie dürfen nicht geändert werden.**
+Diese technischen Workflows sind im Knoten **[!UICONTROL Administration > Produktion > Technische Workflows > Vollständige FFDA-Replikation]** von Campaign Explorer verfügbar. **Sie dürfen nicht geändert werden.**
 
 Bei Bedarf können Sie die Datensynchronisation manuell starten. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität **Planung** und wählen Sie **Aufgabe(n) jetzt bearbeiten**.
 
