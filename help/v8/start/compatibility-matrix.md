@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Ac
 
 Sie können Campaign verwenden, um unter den unten aufgeführten Betriebssystemen mithilfe des zugehörigen Mobile SDK [Push-Benachrichtigungen](../send/push.md) zu senden.
 
-* **Android** 12 (ab Campaign v8.3), 9.0, 8.x, 7.x, mit Campaign Android SDK Build 1.1.1.
+* **Android** 12 (ab Campaign v8.3), 9.0, 8.x, 7.x, mit Campaign Android-SDK Build 1.1.1.
 * **Apple iOS** 9–15 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen. iOS 15 wird ab Campaign v8 unterstützt.
 
 ## Web-Zugriff
@@ -68,7 +68,7 @@ Die folgenden Browser sind mit Campaign für den [Web-Zugriff](connect.md#web-ac
 
 * **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** (neueste Versionen)
 
-## So überprüfen Sie Ihre Campaign-Version   und den Build{#version}
+## So überprüfen Sie Ihre Campaign-Version    und den Build{#version}
 
 Öffnen Sie das Menü **Hilfe > Über...**, um Ihre Version zu überprüfen.
 
