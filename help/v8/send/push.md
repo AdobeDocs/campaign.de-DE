@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ In diesem Abschnitt werden die Elemente beschrieben, die für den Versand von iO
 
 >[!CAUTION]
 >
->Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), ist die mobile Registrierung jetzt **asynchron**. [Weitere Informationen](../architecture/staging.md)
+>Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) ist die Mobile-Registrierung jetzt **asynchron**. [Weitere Informationen](../architecture/staging.md)
 
 Um einen neuen Versand zu erstellen, gehen Sie zur Registerkarte **[!UICONTROL Kampagnen]**, klicken Sie auf **[!UICONTROL Sendungen]** und anschließend auf die Schaltfläche **[!UICONTROL Erstellen]** oberhalb der Liste der vorhandenen Sendungen.
 
@@ -68,7 +68,7 @@ Um einen neuen Versand zu erstellen, gehen Sie zur Registerkarte **[!UICONTROL K
 
 >[!NOTE]
 >
->Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Prüfung Ihrer Version finden Sie unter [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie in [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 
 1. Wählen Sie die Versandvorlage **[!UICONTROL iOS-Versand]**.
 
@@ -82,7 +82,7 @@ Um einen neuen Versand zu erstellen, gehen Sie zur Registerkarte **[!UICONTROL K
 
    ![](assets/push_ios_3.png)
 
-1. Wählen Sie Ihre **[!UICONTROL Benachrichtigungstyp]** between **[!UICONTROL Allgemeine Benachrichtigung (Warnung, Ton, Badge)]** oder **[!UICONTROL Stille Benachrichtigung]**.
+1. Wählen Sie Ihre **[!UICONTROL Art der Benachrichtigung]** aus **[!UICONTROL Allgemeine Benachrichtigung (Warnung, Ton, Badge)]** oder **[!UICONTROL Stille Benachrichtigung]**.
 
    ![](assets/push_ios_4.png)
 
@@ -90,63 +90,63 @@ Um einen neuen Versand zu erstellen, gehen Sie zur Registerkarte **[!UICONTROL K
    >
    >Im Modus **Silent Push** kann eine &quot;stille&quot; Benachrichtigung an eine Mobile App gesendet werden. Dem Benutzer wird das Eintreffen der Benachrichtigung nicht mitgeteilt. Sie wird direkt an die Mobile App übertragen.
 
-1. Im **[!UICONTROL Titel]** Geben Sie den Titel ein, der in der Benachrichtigungszentrale zur Verfügung stehenden Benachrichtigungsliste angezeigt werden soll.
+1. Geben Sie in das Feld **[!UICONTROL Titel]** die Bezeichnung ein, die in der Liste der im Benachrichtigungscenter verfügbaren Benachrichtigungen erscheinen soll.
 
-   In diesem Feld können Sie den Wert der Variablen **title** Parameter der iOS-Benachrichtigungs-Payload.
+   In diesem Feld können Sie den Wert des Parameters **title** der iOS-Benachrichtigungs-Payload definieren.
 
-1. Sie können eine **[!UICONTROL Untertitel]**, Wert der **subtitle** Parameter der iOS-Benachrichtigungs-Payload.
+1. Sie können einen **[!UICONTROL Untertitel]** hinzufügen, den Wert des Parameters **subtitle** der iOS-Benachrichtigungs-Payload.
 
-1. Geben Sie den Inhalt der Nachricht im **[!UICONTROL Nachrichteninhalt]** im Assistenten.
+1. Geben Sie den Inhalt der Nachricht im Abschnitt **[!UICONTROL Nachrichteninhalt]** des Assistenten ein.
 
-1. Aus dem **[!UICONTROL Ton und Abzeichen]** können Sie die folgenden Optionen bearbeiten:
+1. In der Registerkarte **[!UICONTROL Ton und Badge]** können Sie die folgenden Optionen bearbeiten:
 
-   * **[!UICONTROL Badge bereinigen]**: Aktivieren Sie diese Optionen, um den Badge-Wert zu aktualisieren.
+   * **[!UICONTROL Badge entfernen]**: Aktivieren Sie diese Optionen, um den Badge-Wert zu aktualisieren.
 
    * **[!UICONTROL Wert]**: Legen Sie eine Zahl fest, mit der die Anzahl der neuen ungelesenen Informationen direkt auf dem Anwendungssymbol angezeigt wird.
 
-   * **[!UICONTROL Kritischer Warnmodus]**: Aktivieren Sie diese Option, um Ihrer Benachrichtigung Ton hinzuzufügen, selbst wenn das Handy des Benutzers im Fokusmodus eingestellt ist oder wenn der iPhone stummgeschaltet ist.
+   * **[!UICONTROL Kritischer Alarmmodus]**: Aktivieren Sie diese Option, um Ihrer Benachrichtigung einen Ton hinzuzufügen, selbst wenn das Handy des Benutzers im Fokusmodus eingestellt ist oder wenn das iPhone stummgeschaltet ist.
 
    * **[!UICONTROL Name]**: Wählen Sie den Ton aus, der beim Erhalt der Benachrichtigung vom Mobilgerät abgespielt werden soll.
 
-   * **[!UICONTROL Lautstärke]**: Lautstärke Ihres Tons von 0 bis 100.
+   * **[!UICONTROL Lautstärke]**: Lautstärke Ihres Tons auf einer Skala von 0 bis 100.
 
       >[!NOTE]
       > 
-      >Töne müssen in die App integriert und zum Zeitpunkt der Erstellung des entsprechenden Dienstes konfiguriert werden.
+      >Töne müssen in die App integriert und zum Zeitpunkt der Erstellung des entsprechenden Service konfiguriert werden.
       >
       >Konfigurationsrichtlinien für iOS finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de).
    ![](assets/push_ios_5.png)
 
-1. Aus dem **[!UICONTROL Anwendungsvariablen]** Registerkarte, **[!UICONTROL Anwendungsvariablen]** automatisch hinzugefügt werden. Damit können Sie beispielsweise das Benachrichtigungsverhalten definieren. So können Sie einen speziellen Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
+1. Ihre **[!UICONTROL Anwendungsvariablen]** werden automatisch von der Registerkarte **[!UICONTROL Anwendungsvariablen]** hinzugefügt. Damit können Sie beispielsweise das Benachrichtigungsverhalten definieren. So können Sie einen speziellen Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
 
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de).
 
-1. Aus dem **[!UICONTROL Erweitert]** können Sie die folgenden allgemeinen Optionen bearbeiten:
+1. Auf der Registerkarte **[!UICONTROL Erweitert]** können Sie die folgenden allgemeinen Optionen bearbeiten:
 
    * **[!UICONTROL Veränderlicher Inhalt]**: Aktivieren Sie diese Option, damit die Mobile App Medieninhalte herunterladen kann.
 
-   * **[!UICONTROL Thread-id]**: Kennung, die verwendet wird, um verknüpfte Benachrichtigungen zu gruppieren.
+   * **[!UICONTROL Thread-ID]**: Kennung, die verwendet wird, um verknüpfte Benachrichtigungen zu gruppieren.
 
-   * **[!UICONTROL Kategorie]**: Name Ihrer Kategorie-ID, der Aktionsschaltflächen anzeigt. Mit diesen Benachrichtigungen können Benutzer rascher unterschiedliche Aufgaben ausführen, ohne die Anwendung öffnen oder darin navigieren zu müssen.
+   * **[!UICONTROL Kategorie]**: Name Ihrer Kategorie-ID, über die Aktionsschaltflächen angezeigt werden. Mit diesen Benachrichtigungen können Benutzer rascher unterschiedliche Aufgaben ausführen, ohne die Anwendung öffnen oder darin navigieren zu müssen.
 
    ![](assets/push_ios_6.png)
 
-1. Für zeitabhängige Benachrichtigungen können Sie die folgenden Optionen festlegen:
+1. Für zeitabhängige Benachrichtigungen können Sie die folgenden Optionen spezifizieren:
 
-   * **[!UICONTROL Target-Inhalts-ID]**: Kennung, die angibt, welches Anwendungsfenster beim Öffnen der Benachrichtigung vorgezogen werden soll.
+   * **[!UICONTROL ID des Zielinhalts]**: Kennung, die angibt, welches Anwendungsfenster beim Öffnen der Benachrichtigung in den Vordergrund gebracht werden soll.
 
    * **[!UICONTROL Startbild]**: Name der anzuzeigenden Startbilddatei. Wenn der Benutzer Ihre Anwendung starten möchte, wird das ausgewählte Bild anstelle des Startbildschirms Ihrer Anwendung angezeigt.
 
    * **[!UICONTROL Unterbrechungsgrad]**:
 
-      * **[!UICONTROL Aktiv]**: Standardmäßig zeigt das System die Benachrichtigung sofort an, beleuchtet den Bildschirm und kann einen Ton abspielen. Benachrichtigungen durchbrechen den Fokusmodus nicht.
+      * **[!UICONTROL Aktiv]**: Ist dies als Standardeinstellung festgelegt, wird die Benachrichtigung sofort angezeigt, der Bildschirm wird beleuchtet und eventuell wird ein Ton abgespielt. Benachrichtigungen umgehen nicht den Fokusmodus.
 
-      * **[!UICONTROL Passiv]**: Das System fügt die Benachrichtigung zur Benachrichtigungsliste hinzu, ohne den Bildschirm zu beleuchten oder einen Ton abzuspielen. Benachrichtigungen durchbrechen den Fokusmodus nicht.
+      * **[!UICONTROL Passiv]**: Die Benachrichtigung wird zur Benachrichtigungsliste hinzugefügt, ohne dass der Bildschirm beleuchtet oder ein Ton abgespielt wird. Benachrichtigungen umgehen nicht den Fokusmodus.
 
-      * **[!UICONTROL Zeitlich sensibel]** Das System zeigt die Benachrichtigung sofort an, beleuchtet den Bildschirm, kann einen Ton abspielen und den Fokusmodus durchbrechen. Für diese Stufe ist keine spezielle Berechtigung von Apple erforderlich.
+      * **[!UICONTROL Zeitabhängig]**: Die Benachrichtigung wird sofort angezeigt, der Bildschirm wird beleuchtet, eventuell wird ein Ton abgespielt und der Fokusmodus kann umgangen werden. Für diese Stufe ist keine spezielle Berechtigung von Apple erforderlich.
 
-      * **[!UICONTROL Kritisch]** Das System zeigt die Benachrichtigung sofort an, beleuchtet den Bildschirm und umgeht den Stummschaltungs- oder Fokusmodus. Beachten Sie, dass für diese Ebene eine spezielle Berechtigung von Apple erforderlich ist.
-   * **[!UICONTROL Relevanzwert]**: einen Relevanzwert von 0 bis 100 festlegen. Das System verwendet dies, um die Benachrichtigungen in der Benachrichtigungszusammenfassung zu sortieren.
+      * **[!UICONTROL Kritisch]**: Die Benachrichtigung wird sofort angezeigt, der Bildschirm wird beleuchtet und der Stummschaltungs- oder Fokusmodus wird umgangen. Beachten Sie, dass für diese Ebene eine spezielle Berechtigung von Apple erforderlich ist.
+   * **[!UICONTROL Relevanzwert]**: Legen Sie einen Relevanzwert auf der Skala von 0 bis 100 fest. Das System verwendet diesen Wert, um die Benachrichtigungen in der Benachrichtigungszusammenfassung zu sortieren.
 
    ![](assets/push_ios_7.png)
 
