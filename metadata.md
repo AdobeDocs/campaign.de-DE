@@ -10,8 +10,8 @@ git-repo: https://github.com/AdobeDocs/campaign.de-DE
 index: true
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
