@@ -5,9 +5,9 @@ description: Dokumentation zu Campaign v8
 breadcrumb-title: Campaign v8
 title: Dokumente zu Campaign v8
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '351'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -73,8 +73,8 @@ ht-degree: 97%
    + [Best Practices](audiences/audiences-best-practices.md)
 + Senden von Nachrichten {#send}
    + E-Mails {#emails}
-      + [E-Mails erstellen und validieren](send/email.md)
-      + [E-Mails senden und überwachen](send/send.md)
+      + [Entwerfen und Validieren von E-Mails](send/email.md)
+      + [Versenden und Überwachen von E-Mails](send/send.md)
    + [SMS](send/sms.md)
    + [Push-Benachrichtigungen ](send/push.md)
    + [LINE-Messaging](send/line.md)
