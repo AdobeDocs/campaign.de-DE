@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '594'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Weitere Informationen finden Sie in den folgenden Abschnitten der Dokumentation 
    ![](../assets/do-not-localize/book.png) [Weitere Informationen zur Definition der Zielpopulation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=de){target=&quot;_blank&quot;}
 * Validieren eines Versands und Durchführen von Testsendungen
    ![](../assets/do-not-localize/book.png) [Wichtige Schritte zur Validierung eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}
-* Hinzufügen [Testadressen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=de){target=&quot;_blank&quot;}
+* Hinzufügen von [Testadressen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=de){target=&quot;_blank&quot;}
 
 ## Testen und Validieren von E-Mails
 
@@ -103,4 +103,4 @@ Sie haben folgende Möglichkeiten:
 * Kontrollgruppen verwenden
 * E-Mail-Rendering prüfen
 
-![](../assets/do-not-localize/book.png)[ Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png)[ Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}.
