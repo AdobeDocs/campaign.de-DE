@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3061'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Ein Nachrichtenversand kann sofort fehlschlagen. In diesem Fall wird dies als sy
 
 Diese Fehlertypen werden wie folgt verwaltet:
 
-* **Synchroner Fehler**: Der vom Adobe Campaign-Versand-Server angesprochene Remote-Server gibt sofort eine Fehlermeldung zurück. Die Nachricht kann nicht an den Server des Profils gesendet werden. Der Mail Transfer Agent (MTA) bestimmt den Bounce-Typ und qualifiziert den Fehler. Diese Informationen werden dann an Campaign zurückgesendet, um zu bestimmen, ob die betroffenen E-Mail-Adressen unter Quarantäne gestellt werden sollen. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
+* **Synchroner Fehler**: Der vom Adobe Campaign-Versand-Server angesprochene Remote-Server gibt sofort eine Fehlermeldung zurück. Die Nachricht kann nicht an den Server des Profils gesendet werden. Der Mail Transfer Agent (MTA) bestimmt den Bounce-Typ und qualifiziert den Fehler, bevor er diese Informationen an Campaign zurücksendet, um zu ermitteln, ob die betroffenen E-Mail-Adressen unter Quarantäne gestellt werden sollen. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
 
 * **Asynchroner Fehler**: Eine Bounce Message oder ein Statusbericht (SR) wird vom empfangenden Server verzögert zurückgesendet. Dieser Fehler wird mit einer mit dem Fehler verbundenen Bezeichnung qualifiziert. Asynchrone Fehler können bis zu eine Woche nach einem Versand auftreten.
 
@@ -97,7 +97,7 @@ Bounce mails can have the following qualification status:
 
 Wenn der Nachrichtenversand aufgrund eines temporären Fehlers fehlschlägt (**Soft** oder **Ignoriert**), versucht Campaign eine erneute Zustellung. Diese weiteren Zustellversuche können bis zum Ende der Versandlaufzeit durchgeführt werden.
 
-Weitere Versuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
+Weitere Zustellversuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den MTA bestimmt, basierend auf Typ und Schweregrad der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
 >[!NOTE]
 >
@@ -105,11 +105,11 @@ Weitere Versuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werde
 
 ## Gültigkeitszeitraum
 
-Die Gültigkeitszeiteinstellung in Ihren Campaign-Sendungen ist auf **3,5 Tage oder weniger**. Wenn Sie für einen Versand einen Wert von mehr als 3,5 Tagen in Campaign definieren, wird dieser nicht berücksichtigt.
+Die Einstellung des Gültigkeitszeitraums in Ihren Campaign-Sendungen ist auf **3,5 Tage oder weniger** begrenzt. Wenn Sie für Ihren Versand in Campaign einen Wert von mehr als 3,5 Tagen definieren, wird dieser nicht berücksichtigt.
 
-Wenn der Gültigkeitszeitraum in Campaign beispielsweise auf den Standardwert von 5 Tagen eingestellt ist, werden Softbounce-Nachrichten in die Warteschlange für Wiederholungsversuche des MTA aufgenommen und nur bis zu 3,5 Tage ab dem Zeitpunkt, an dem die Nachricht den MTA erreicht hat, erneut versucht. In diesem Fall wird der in Campaign eingestellte Wert nicht verwendet.
+Wenn der Gültigkeitszeitraum in Campaign beispielsweise auf den Standardwert von 5 Tagen eingestellt ist, werden Softbounce-Nachrichten in die Warteschlange für Wiederholungsversuche des MTA aufgenommen. Wiederholungsversuche werden dann nur bis zu 3,5 Tage ab dem Zeitpunkt, an dem die Nachricht beim MTA empfangen wurde, durchgeführt. In diesem Fall wird der in Campaign eingestellte Wert nicht verwendet.
 
-Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht gesendet werden konnte, wird sie mit einem Timeout beendet; ihr Status wird von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** geändert (in den Versandlogs).
+Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht gesendet werden konnte, wird sie mit einem Timeout beendet, und ihr Status ändert sich von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** (in den Versandlogs).
 
 Weitere Informationen zum Gültigkeitszeitraum finden Sie im Abschnitt [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target=&quot;_blank&quot;}.
 
