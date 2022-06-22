@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 2705e9b23f9f8a61f799381434f7e94a226de1b9
+source-git-commit: 1b88ca57858efbfec6467452677620d59e9c9e32
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '437'
 ht-degree: 3%
 
 ---
@@ -57,11 +57,11 @@ Referenz: NEO-45549
 
 
 
-## Die Aktivität &quot;Laden (Datei)&quot;ist aufgrund eines umgekehrten Schrägstrichs fehlgeschlagen. {#issue-2}
+## Die Aktivität &quot;Datenquelle ändern&quot;ist aufgrund eines umgekehrten Schrägstrichs fehlgeschlagen. {#issue-2}
 
 ### Beschreibung{#issue-2-desc}
 
-Beim Einfügen von Daten in die Snowflake Cloud-Datenbank mit einer Campaign-Ladeaktivität schlägt der Vorgang fehl, wenn in der Quelldatei ein umgekehrter Schrägstrich vorhanden ist. Die Zeichenfolge wird nicht maskiert und die Daten werden auf dem Snowflake nicht korrekt verarbeitet.
+Beim Einfügen von Daten in eine Snowflake Cloud-Datenbank mit einer Campaign-Komponente **Abfrage** und **Datenquelle ändern** -Aktivität, schlägt der Prozess fehl, wenn in den Daten ein umgekehrter Schrägstrich vorhanden ist. Die Quellzeichenfolge wird nicht maskiert und die Daten werden auf dem Snowflake nicht korrekt verarbeitet.
 
 Dieses Problem tritt nur auf, wenn sich das umgekehrte Schrägstrich-Zeichen am Ende der Zeichenfolge befindet, z. B.: `Barker\`.
 
@@ -69,8 +69,9 @@ Dieses Problem tritt nur auf, wenn sich das umgekehrte Schrägstrich-Zeichen am 
 ### Reproduktionsschritte{#issue-2-repro}
 
 1. Stellen Sie eine Verbindung zur Client-Konsole her und erstellen Sie einen Workflow.
-1. Hinzufügen einer **Laden (Datei)** und konfigurieren Sie sie.
-1. Wählen Sie eine lokale Datei mit den oben beschriebenen Eigenschaften aus.
+1. Hinzufügen einer **Abfrage** und konfigurieren Sie sie.
+1. Wählen Sie Daten mit den oben beschriebenen Eigenschaften aus.
+1. Hinzufügen einer **Datenquelle ändern** und konfigurieren Sie sie, um die Snowflake-Cloud-Datenbank auszuwählen.
 1. Führen Sie den Workflow aus und überprüfen Sie die Workflow-Protokolle, um den Fehler anzuzeigen.
 
 
