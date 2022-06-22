@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 1b88ca57858efbfec6467452677620d59e9c9e32
+source-git-commit: fe425f9309af31a13b52695b103d530a6b89e3b1
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '433'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Auf dieser Seite werden bekannte Probleme aufgelistet, die in der Variablen **ne
 >
 >Adobe veröffentlicht diese Liste bekannter Probleme nach eigenem Ermessen. Er basiert auf der Anzahl der Kundenberichte, der Schwere und der Verfügbarkeit der Problemumgehung. Wenn ein Problem, auf das Sie stoßen, nicht aufgelistet ist, entspricht es möglicherweise nicht den Kriterien für die Veröffentlichung auf dieser Seite.
 
-## Problem mit der Datenquelle-Aktivität ändern {#issue-1}
+## Problem mit der Datenquelle-Aktivität ändern 1 {#issue-1}
 
 ### Beschreibung{#issue-1-desc}
 
@@ -57,7 +57,7 @@ Referenz: NEO-45549
 
 
 
-## Die Aktivität &quot;Datenquelle ändern&quot;ist aufgrund eines umgekehrten Schrägstrichs fehlgeschlagen. {#issue-2}
+## Problem mit der Datenquelle-Aktivität ändern 2 {#issue-2}
 
 ### Beschreibung{#issue-2-desc}
 
