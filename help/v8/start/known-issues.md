@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0d1d20f9692ffa7b7ea7a8fb1161ebd19f533bab
+source-git-commit: 2c9455a09d6b557d525b1af5da9374a1d59201d7
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 3%
+source-wordcount: '368'
+ht-degree: 4%
 
 ---
 
@@ -22,21 +22,22 @@ Auf dieser Seite werden bekannte Probleme aufgelistet, die in der Variablen **ne
 >
 >Adobe veröffentlicht diese Liste bekannter Probleme nach eigenem Ermessen. Er basiert auf der Anzahl der Kundenberichte, der Schwere und der Verfügbarkeit der Problemumgehung. Wenn ein Problem, auf das Sie stoßen, nicht aufgelistet ist, entspricht es möglicherweise nicht den Kriterien für die Veröffentlichung auf dieser Seite.
 
-## Problem mit der Datenquelle-Aktivität ändern 1 {#issue-1}
+<!--
+## Change Data Source activity issue #1 {#issue-1}
 
-### Beschreibung{#issue-1-desc}
+### Description{#issue-1-desc}
 
-Die **Datenquelle ändern** -Aktivität schlägt beim Übertragen von Daten aus der lokalen Campaign-Datenbank in die Snowflake-Cloud-Datenbank fehl. Beim Wechsel der Richtung kann die Aktivität Probleme verursachen.
+The **Change Data Source** activity is failing when transfering data from Campaign local database to Snowflake cloud database. When switching directions, the activity can generate issues.
 
-### Reproduktionsschritte{#issue-1-repro}
+### Reproduction steps{#issue-1-repro}
 
-1. Stellen Sie eine Verbindung zur Client-Konsole her und erstellen Sie einen Workflow.
-1. Hinzufügen einer **Abfrage** und eine **Datenquelle ändern** Aktivität.
-1. Definieren Sie eine Abfrage im **email**, was eine Zeichenfolge ist.
-1. Führen Sie den Workflow aus und klicken Sie mit der rechten Maustaste auf die Transition, um die Population anzuzeigen: die E-Mail-Datensätze werden ersetzt durch `****`.
-1. Überprüfen Sie die Workflow-Protokolle: die **Datenquelle ändern** -Aktivität interpretiert diese Datensätze als numerische Werte.
+1. Connect to the client console and create a workflow.
+1. Add a **Query** activity and a **Change Data Source** activity.
+1. Define a query on the **email**, which is a string.
+1. Run the workflow and right-click the transition to view the population: the email records are displayed replaced by `****`.
+1. Check the workflow logs: the **Change Data Source** activity interprets these records as numeric values.
 
-### Fehlernachricht{#issue-1-error}
+### Error message{#issue-1-error}
 
 ```sql
 04/13/2022 10:00:18 AM              Executing change data source 'Ok' (step 'Change Data Source')
@@ -47,23 +48,23 @@ Die **Datenquelle ändern** -Aktivität schlägt beim Übertragen von Daten aus 
 04/13/2022 10:00:26 AM              D_OPTIONALLY_ENCLOSED_BY = 'NONE') ON_ERROR = ABORT_STATEMENT PURGE = TRUE' could not be executed.
 ```
 
-### Problemumgehung{#issue-1-workaround}
+### Workaround{#issue-1-workaround}
 
-Damit die Daten von der Snowflake Cloud-Datenbank in die Campaign-Datenbank und zurück in Snowflake übertragen werden, müssen Sie zwei verschiedene **Datenquelle ändern** Aktivitäten.
+To have the data transfered from Snowflake cloud database to Campaign local database and back to Snowflake, you must use two different **Change Data Source** activities.
 
-### Interner Verweis{#issue-1-ref}
+### Internal reference{#issue-1-ref}
 
-Referenz: NEO-45549
+Reference: NEO-45549 
+-->
 
 
-
-## Problem mit der Datenquelle-Aktivität ändern 2 {#issue-2}
+## Problem mit der Datenquelle-Aktivität ändern {#issue-2}
 
 ### Beschreibung{#issue-2-desc}
 
 Beim Einfügen von Daten in eine Snowflake Cloud-Datenbank mit einer Campaign-Komponente **Abfrage** und **Datenquelle ändern** -Aktivität, schlägt der Prozess fehl, wenn in den Daten ein umgekehrter Schrägstrich vorhanden ist. Die Quellzeichenfolge wird nicht maskiert und die Daten werden auf dem Snowflake nicht korrekt verarbeitet.
 
-Dieses Problem tritt nur auf, wenn sich das umgekehrte Schrägstrich-Zeichen am Ende der Zeichenfolge befindet, z. B.: `Barker\`.
+Dieses Problem tritt nur auf, wenn sich der umgekehrte Schrägstrich am Ende der Zeichenfolge befindet, z. B.: `Barker\`.
 
 
 ### Reproduktionsschritte{#issue-2-repro}
@@ -85,7 +86,11 @@ Error:
 
 ### Problemumgehung{#issue-2-workaround}
 
-Exportieren Sie als Problemumgehung die Dateien mit doppelten Anführungszeichen um die problematischen Werte (wie `Barker\`) und die Option Dateiformat einschließen `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
+Problemumgehung besteht darin, Daten auszuschließen, die umgekehrte Schrägstriche am Ende der Zeichenfolge enthalten, oder sie aus der Quelldatei zu entfernen.
+
+<!--
+As a workaround, export the files with double quotes around the problematic values (like `Barker\`) and include a file format option `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
+-->
 
 ### Interner Verweis{#issue-2-ref}
 
@@ -113,7 +118,13 @@ Der Prozess endet nie.
 
 ### Problemumgehung{#issue-3-workaround}
 
-Sie sollten eine ältere Clientkonsole verwenden, um die Datei auf den Server hochladen zu können.
+Die Lösung besteht darin, eine ältere Clientkonsole zu verwenden. Anschließend können Sie die Datei auf den Server hochladen.
+
+Als Administrator können Sie die Campaign v8.3.1-Clientkonsole in [Adobe Distribution Service](https://experience.adobe.com/downloads).
+
+Erfahren Sie, wie Sie auf den Adobe Distribution Service zugreifen können. [auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de)
+
+Erfahren Sie, wie Sie Ihre Clientkonsole aktualisieren [auf dieser Seite](connect.md)
 
 ### Interner Verweis{#issue-3-ref}
 
