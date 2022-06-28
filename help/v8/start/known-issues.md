@@ -7,20 +7,20 @@ level: Beginner
 hide: true
 hidefromtoc: true
 source-git-commit: c803c13c6d433d2c6730f32f43209c8effab1fde
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '401'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Bekannte Probleme{#known-issues}
 
-Auf dieser Seite werden bekannte Probleme aufgelistet, die in der Variablen **neueste Version von Campaign v8**. Darüber hinaus werden Einschränkungen von Campaign v8 aufgelistet [auf dieser Seite](known-limitations.md).
+Auf dieser Seite werden bekannte Probleme aufgelistet, die in der **neuesten Version von Campaign v8** festgestellt wurden. Zusätzlich werden [auf dieser Seite](known-limitations.md) Einschränkungen von Campaign v8 aufgeführt.
 
 
 >[!NOTE]
 >
->Adobe veröffentlicht diese Liste bekannter Probleme nach eigenem Ermessen. Er basiert auf der Anzahl der Kundenberichte, der Schwere und der Verfügbarkeit der Problemumgehung. Wenn ein Problem, auf das Sie stoßen, nicht aufgelistet ist, entspricht es möglicherweise nicht den Kriterien für die Veröffentlichung auf dieser Seite.
+>Adobe veröffentlicht diese Liste bekannter Probleme nach eigenem Ermessen. Sie basiert auf der Anzahl der Kundenberichte, dem Schweregrad und der Verfügbarkeit einer Problemumgehung. Wenn ein Problem, auf das Sie stoßen, nicht aufgelistet ist, entspricht es möglicherweise nicht den Kriterien für die Veröffentlichung auf dieser Seite.
 
 <!--
 ## Change Data Source activity issue #1 {#issue-1}
@@ -58,11 +58,11 @@ Reference: NEO-45549
 -->
 
 
-## Problem mit der Datenquelle-Aktivität ändern {#issue-2}
+## Problem mit der Aktivität &quot;Datenquelle ändern&quot; {#issue-2}
 
 ### Beschreibung{#issue-2-desc}
 
-Beim Einfügen von Daten in eine Snowflake Cloud-Datenbank mit einer Campaign-Komponente **Abfrage** und **Datenquelle ändern** -Aktivität, schlägt der Prozess fehl, wenn in den Daten ein umgekehrter Schrägstrich vorhanden ist. Die Quellzeichenfolge wird nicht maskiert und die Daten werden auf dem Snowflake nicht korrekt verarbeitet.
+Beim Einfügen von Daten in eine Snowflake Cloud-Datenbank mit einer Campaign-**Abfrage** und der Aktivität **Datenquelle ändern** schlägt der Prozess fehl, wenn in den Daten ein umgekehrter Schrägstrich vorhanden ist. Die Quellzeichenfolge wird nicht mit Escape-Zeichen versehen, wodurch die Daten auf Snowflake nicht korrekt verarbeitet werden.
 
 Dieses Problem tritt nur auf, wenn sich der umgekehrte Schrägstrich am Ende der Zeichenfolge befindet, z. B.: `Barker\`.
 
@@ -70,10 +70,10 @@ Dieses Problem tritt nur auf, wenn sich der umgekehrte Schrägstrich am Ende der
 ### Reproduktionsschritte{#issue-2-repro}
 
 1. Stellen Sie eine Verbindung zur Client-Konsole her und erstellen Sie einen Workflow.
-1. Hinzufügen einer **Abfrage** und konfigurieren Sie sie.
+1. Fügen Sie eine **Abfrage**-Aktivität hinzu und konfigurieren Sie sie.
 1. Wählen Sie Daten mit den oben beschriebenen Eigenschaften aus.
-1. Hinzufügen einer **Datenquelle ändern** und konfigurieren Sie sie, um die Snowflake-Cloud-Datenbank auszuwählen.
-1. Führen Sie den Workflow aus und überprüfen Sie die Workflow-Protokolle, um den Fehler anzuzeigen.
+1. Fügen Sie die Aktivität **Datenquelle ändern** hinzu und konfigurieren Sie sie so, dass die Snowflake Cloud-Datenbank ausgewählt ist.
+1. Führen Sie den Workflow aus und sehen Sie sich die Workflow-Protokolle an, um den Fehler zu finden.
 
 
 ### Fehlernachricht{#issue-2-error}
@@ -86,7 +86,7 @@ Error:
 
 ### Problemumgehung{#issue-2-workaround}
 
-Problemumgehung besteht darin, Daten auszuschließen, die umgekehrte Schrägstriche am Ende der Zeichenfolge enthalten, oder sie aus der Quelldatei zu entfernen.
+Die Problemumgehung besteht darin, Daten auszuschließen, die umgekehrte Schrägstriche am Ende der Zeichenfolge enthalten, oder sie aus der Quelldatei zu entfernen.
 
 <!--
 As a workaround, export the files with double quotes around the problematic values (like `Barker\`) and include a file format option `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
@@ -97,19 +97,19 @@ As a workaround, export the files with double quotes around the problematic valu
 Referenz: NEO-45549
 
 
-## Die Aktivität Laden (Datei) konnte die Datei nicht auf den Server hochladen {#issue-3}
+## Eine Datei konnte nicht mit der Aktivität &quot;Laden (Datei)&quot; auf den Server hochgeladen werden {#issue-3}
 
 ### Beschreibung{#issue-3-desc}
 
-Beim Hochladen einer Datei auf den Campaign-Server mit einer **Laden (Datei)** -Aktivität, endet der Prozess bei 100 %, endet jedoch nie.
+Beim Hochladen einer Datei auf den Campaign-Server mit der Aktivität **Laden (Datei)** hört der Vorgang bei 100 % auf, endet jedoch nie.
 
 ### Reproduktionsschritte{#issue-3-repro}
 
 1. Stellen Sie eine Verbindung zur Client-Konsole her und erstellen Sie einen Workflow.
-1. Hinzufügen einer **Laden (Datei)** und konfigurieren Sie sie.
-1. Wählen Sie die **Auf Server hochladen** -Option.
+1. Fügen Sie die Aktivität **Laden (Datei)** hinzu und konfigurieren Sie sie.
+1. Wählen Sie die Option **Auf Server hochladen**.
 1. Wählen Sie die Datei auf Ihrem lokalen Computer aus.
-1. Klicken **Hochladen**
+1. Klicken Sie auf **Hochladen**.
 
 
 ### Fehlernachricht{#issue-3-error}
@@ -118,13 +118,13 @@ Der Prozess endet nie.
 
 ### Problemumgehung{#issue-3-workaround}
 
-Die Lösung besteht darin, eine ältere Clientkonsole zu verwenden. Anschließend können Sie die Datei auf den Server hochladen.
+Die Lösung besteht darin, eine ältere Client-Konsole zu verwenden. Damit können Sie die Datei auf den Server hochladen.
 
-Als Campaign-Administrator können Sie die Campaign v8.3.1-Clientkonsole in [Softwareverteilung von Adoben](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target=&quot;_blank&quot;}.
+Als Campaign-Administrator können Sie die Client-Konsole für Campaign v8.3.1 in der [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target=&quot;_blank&quot;} herunterladen.
 
-Erfahren Sie, wie Sie auf Adobe Software Distribution zugreifen können. [auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target=&quot;_blank&quot;}.
+Auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target=&quot;_blank&quot;} erfahren Sie, wie Sie auf die Adobe-Software-Verteilung zugreifen können.
 
-Erfahren Sie, wie Sie Ihre Clientkonsole aktualisieren [auf dieser Seite](connect.md)
+Auf [dieser Seite](connect.md) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
 ### Interner Verweis{#issue-3-ref}
 
