@@ -1,14 +1,14 @@
 ---
 title: Vordefinierte Filter für Campaign Interaction-Angebote
 description: Erfahren Sie, wie Sie vordefinierte Filter erstellen
-feature: Overview
+feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: 092262c7-768c-4e86-9b2b-c52516f6a030
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
