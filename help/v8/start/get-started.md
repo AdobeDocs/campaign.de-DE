@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
-source-wordcount: '853'
+source-git-commit: 63e109f31706880a1723dfd0c611835842e39083
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -84,7 +84,7 @@ Sie können die Funktionen für Versand und erweiterte Kampagnenverwaltung von A
 
 Adobe Campaign bietet verschiedenste Funktionen, die eine Ihren Bedürfnissen und Ihrer Architektur entsprechende Implementierung und Optimierung von dialogorientiertem Marketing ermöglichen. Einige davon sind Kernfunktionen, andere wiederum erfordern die Installation eines Package in Ihrer Konfiguration. Eine ausführliche Produktbeschreibung finden Sie hier: [Produktbeschreibung zu Adobe Campaign v8](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
 
-![](../assets/do-not-localize/glass.png) Sie sind bereits vertraut mit Campaign Classic? Eine Erläuterung der wichtigsten Unterschiede zwischen Campaign Classic und Campaign v8 finden Sie auf [dieser Seite](capability-matrix.md).
+![](../assets/do-not-localize/glass.png) Sie sind bereits vertraut mit Campaign Classic? Eine Erläuterung der wichtigsten Unterschiede zwischen Campaign Classic und Campaign v8 finden Sie auf [dieser Seite](v7-to-v8.html).
 
 **Siehe auch**
 
