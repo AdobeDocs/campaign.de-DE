@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
-workflow-type: ht
-source-wordcount: '3061'
-ht-degree: 100%
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
+workflow-type: tm+mt
+source-wordcount: '3060'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ Diese Fehlertypen werden wie folgt verwaltet:
 
 ![](assets/delivery-log-qualification.png)-->
 
-Die Art und Weise, wie die Bounce-Message-Qualifizierung in Adobe Campaign verarbeitet wird, hängt derzeit vom Fehlertyp ab:
+Wie die Bounce-Message-Qualifizierung in Adobe Campaign gehandhabt wird, hängt vom Fehlertyp ab:
 
 * **Synchrone Fehler**: Der MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück. Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht für Fehlernachrichten bei **synchronen** Sendungen verwendet.
 

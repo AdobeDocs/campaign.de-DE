@@ -1,20 +1,20 @@
 ---
-title: Neue APIs in Campaign v8
-description: Neue APIs in Campaign v8
+title: FFDA-Bereitstellungs-APIs
+description: FFDA-spezifische APIs
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 91%
 
 ---
 
-# Neue Campaign-APIs{#gs-new-api}
+# Spezifische FFDA-Kampagnen-APIs{#gs-new-api}
 
-Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) verfügt Campaign v8 über zwei neue APIs zum Verwalten von Daten zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank. Voraussetzungen für ihre Verwendung ist die Aktivierung des Staging-Mechanismus im Schema. [Weitere Informationen](staging.md)
+Im Kontext eines [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md)enthält Campaign v8 zwei spezifische APIs zum Verwalten von Daten zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank. Voraussetzungen für ihre Verwendung ist die Aktivierung des Staging-Mechanismus im Schema. [Weitere Informationen](staging.md)
 
 * Aufnahme-API: **xtk.session.ingest**
 
@@ -30,7 +30,7 @@ Ein dedizierter integrierter Workflow synchronisiert die Daten in der Cloud-Date
 
 Die API **xtk.session.ingest** ist nur für die Dateneinfügung vorgesehen. Keine Aktualisierung/Löschung.
 
-### Einfügen ohne Abstimmung
+### Einfügen ohne Abstimmung{#insert-no-reconciliation}
 
 **In einem Workflow**
 
@@ -170,7 +170,6 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß aktual
 
 **Von einem SOAP-Aufruf**
 
-
 1. Fordern Sie den Authentifizierungs-Token an.
 1. Lösen Sie die API aus. Die Payload ist:
 
@@ -213,4 +212,4 @@ Die Eingabe von An- und Abmeldedaten beruht auf dem [Staging-Mechanismus](stagin
 
 **Verwandte Themen**
 
-* [Campaign Classic v7 JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de)
+* [Campaign Classic v7 JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target=&quot;_blank&quot;}
