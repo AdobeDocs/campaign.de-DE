@@ -3,9 +3,9 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 63e109f31706880a1723dfd0c611835842e39083
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: 40f13fd93ff620a743fd8c826b0b914a9e89ee7a
+workflow-type: tm+mt
+source-wordcount: '129'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 * **[Implementierungsrichtlinien](start/implement.md)** – Hier erfahren Sie, wie Sie Ihre Implementierung beginnen.
 
-* **[Von v7 zu v8](start/v7-to-v8.html)** – Planen Sie den Wechsel von Campaign Classic v7 zu v8? Die wichtigsten Unterschiede
+* **[Von v7 zu v8](start/v7-to-v8.md)** – Planen Sie den Wechsel von Campaign Classic v7 zu v8? Die wichtigsten Unterschiede
 
 * **[Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target=&quot;_blank&quot;}**: Führen Sie mit dem Campaign Control Panel eigenständig wichtige Administratoraufgaben aus
 
