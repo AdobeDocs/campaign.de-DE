@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 39edd6c60c220118f34cd476b887194e1e7763e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,8 +43,8 @@ Für die Nutzung der Campaign-Client-Konsole sind die folgenden Betriebssysteme 
 
 Die folgenden CRM-Systeme (Customer Relationship Management) sind mit Adobe Campaign kompatibel. [Weitere Informationen](../connect/crm.md).
 
-* **Salesforce** Connector-API, Version 49
-* **Microsoft Dynamics** Connector, Web-API: On-Premise- und Online-Dynamics 365
+* **Salesforce**-Connector-API, Version 49
+* **Microsoft Dynamic**-Connector, Web API: Dynamics 365 On-Premise und Online
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
