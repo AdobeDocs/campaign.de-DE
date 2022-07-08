@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 110cf2ff705ecbc0b3a1690e9dfc2791f5744b97
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '698'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -28,19 +28,19 @@ Sie können Packages von einer Umgebung in eine andere exportieren und importier
 
 ![](../assets/do-not-localize/book.png) Weitere Informationen über Packages in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=de){target=&quot;_blank&quot;}
 
-## Bereitstellungsmodelle{#ac-deployment}
+## Implementierungsmodelle{#ac-deployment}
 
 Es stehen zwei Implementierungsmodelle zur Verfügung:
 
-* **Kampagnen-FDA [!DNL Snowflake] Implementierung**
+* **Campaign FDA [!DNL Snowflake]-Implementierung**
 
-   In [[!DNL Snowflake] FDA-Bereitstellung](fda-deployment.md), [!DNL Adobe Campaign] v8 ist mit [!DNL Snowflake] für den Datenzugriff über die Federated Data Access-Funktion: Sie können auf externe Daten und Informationen zugreifen und diese verarbeiten, die in Ihrer [!DNL Snowflake] -Datenbank ohne Änderung der Datenstruktur in Adobe Campaign. PostgreSQL ist die primäre Datenbank und Snowflake ist die sekundäre Datenbank. Sie können Ihr Datenmodell erweitern und Ihre Daten in Snowflake speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und hervorragende Leistung erzielen.
+   In seiner [[!DNL Snowflake]  FDA-Implementierung](fda-deployment.md) ist [!DNL Adobe Campaign] v8 zwecks Datenzugriff über die Federated Data Access-Funktion mit [!DNL Snowflake] verbunden: Sie können auf externe Daten und Informationen, die in Ihrer [!DNL Snowflake]-Datenbank gespeichert sind, zugreifen und diese verarbeiten, ohne die Datenstruktur in Adobe Campaign ändern zu müssen. PostgreSQL ist die primäre Datenbank und Snowflake ist die sekundäre Datenbank. Sie können Ihr Datenmodell erweitern und Ihre Daten in Snowflake speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und hervorragende Leistung erzielen.
 
-* **Bereitstellung von Campaign Enterprise (FFDA)**
+* **Implementierung von Campaign Enterprise (FFDA)**
 
-   Im Kontext eines [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md), [!DNL Adobe Campaign] v8 funktioniert mit zwei Datenbanken: lokale [!DNL Campaign] Datenbank für die Echtzeit-Messaging- und Einzelabfragen der Benutzeroberfläche sowie Schreiben über APIs und eine Cloud [!DNL Snowflake] Datenbank für Kampagnenausführung, Batch-Abfragen und Workflow-Ausführung.
+   Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) kann [!DNL Adobe Campaign] v8 mit zwei Datenbanken verwendet werden: einer lokalen [!DNL Campaign]-Datenbank für Echtzeit-Messaging und Einzelabfragen über die Benutzeroberfläche und das Schreiben über APIs sowie einer Cloud-[!DNL Snowflake]-Datenbank für die Kampagnenausführung, für Batch-Abfragen und für die Workflow-Ausführung.
 
-   Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit dieser neuen Architektur vereinfacht die Campaign v8 Enterprise (FFDA)-Implementierung die Datenverwaltung: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung, um das Leistungsniveau zu gewährleisten.
+   Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit dieser neuen Architektur vereinfacht die Campaign v8 Enterprise (FFDA)-Implementierung die Datenverwaltung: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
 
 
 ## Message Center-Architektur{#transac-msg-archi}
