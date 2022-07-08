@@ -5,9 +5,9 @@ description: Dokumentation zu Campaign v8
 breadcrumb-title: Campaign v8
 title: Dokumente zu Campaign v8
 source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '352'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 + Neue Funktionen {#new}
    + [Wichtigste Funktionen](start/whats-new.md)
    + [Versionshinweise](start/release-notes.md)
-   + [Schutzschilde](start/ac-guardrails.md)
+   + [Schutzmechanismen](start/ac-guardrails.md)
    + [Bekannte Probleme](start/known-issues.md)
    + [Wechsel von Classic v7 zu v8](start/v7-to-v8.md)
 + Starten {#start}
