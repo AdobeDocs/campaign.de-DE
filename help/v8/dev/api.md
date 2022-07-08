@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
 source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Sie können JavaScript-APIs verwenden, um in der Cloud-Datenbank von Campaign Sc
 * Geschäftsspezifische APIs, mit denen Sie auf jedes Objekt reagieren können: Sendungen, Workflows, Abonnements usw. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=de#configuring-campaign-classic){target=&quot;_blank&quot;}.
 * Generische Datenzugriffs-APIs zur Abfrage von Datenmodelldaten. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=de){target=&quot;_blank&quot;}.
 
-Beachten Sie Folgendes: [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), Campaign verwendet zwei Datenbanken: eine lokale Datenbank für die Echtzeit-Messaging- und Einzelabfragen der Benutzeroberfläche und das Schreiben über APIs sowie eine Cloud-Datenbank für die Kampagnenausführung, Berichterstellung, Datenerfassung, Batch-Abfragen und Workflow-Ausführung.
+Beachten Sie, dass Campaign in seiner [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) mit zwei Datenbanken verwendet werden kann: einer lokalen Datenbank für Echtzeit-Messaging und Einzelabfragen über die Benutzeroberfläche und das Schreiben über APIs sowie einer Cloud-Datenbank für die Kampagnenausführung, für das Reporting, für die Datenaufnahme, für Batch-Abfragen und für die Workflow-Ausführung.
 
 >[!CAUTION]
 >
