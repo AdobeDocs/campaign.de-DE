@@ -5,10 +5,10 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 100%
+source-wordcount: '589'
+ht-degree: 94%
 
 ---
 
@@ -75,12 +75,12 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
    Wenn der Inhalt fertig ist, klicken Sie auf **Speichern**: Er wird nun in Ihrer Versandliste auf der Registerkarte **[!UICONTROL Kampagnen > Sendungen]** angezeigt. Ihr erster E-Mail-Versand ist fertig. Definieren Sie nun die Audience, validieren Sie den Versand und führen Sie ihn aus.
 
 
-Weitere Informationen finden Sie in den folgenden Abschnitten der Dokumentation zu Campaign Classic v7:
+Hier erfahren Sie, wie Sie E-Mail-Inhalte importieren. [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
+
+Weitere Informationen finden Sie in den folgenden Abschnitten von **Dokumentation zu Campaign Classic v7**:
 
 * Erstellen einer E-Mail in Campaign
    ![](../assets/do-not-localize/book.png) [Weitere Informationen zum Erstellen von E-Mails](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=de){target=&quot;_blank&quot;}
-* Importieren von E-Mail-Inhalten
-   ![](../assets/do-not-localize/book.png) [Anwendungsfall: Erstellen eines Workflows zum Laden des Versandinhalts](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html?lang=de){target=&quot;_blank&quot;}
 * Erstellen und Verwenden von E-Mail-Vorlagen
    ![](../assets/do-not-localize/book.png) [Weitere Informationen zu E-Mail-Vorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target=&quot;_blank&quot;}
 * Auswählen der Audience für Ihre E-Mail

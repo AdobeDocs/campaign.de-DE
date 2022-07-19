@@ -5,10 +5,10 @@ feature: Workflows
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) b
 
 Solche Workflows führen Operationen zur Datenbankwartung aus, nutzen die Tracking-Informationen in den Versand-Logs, erstellen wiederkehrende Kampagnen und mehr.
 
-![](../assets/do-not-localize/book.png) Eine vollständige Liste der technischen Workflows finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html?lang=de).{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/glass.png) Die vollständige Liste der technischen Workflows finden Sie im Abschnitt [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html).
 
 Zusätzlich zu diesen technischen Workflows setzt Campaign v8 bei der Verwaltung von [Datenreplikation](#data-replication) auf bestimmte technische Workflows.
 
@@ -74,6 +74,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Verwandte Themen**
 
-![](../assets/do-not-localize/book.png) Mehr zu den ersten Schritten mit Workflows erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=de#automating-with-workflows){target=&quot;_blank&quot;}
+* [Erfahren Sie mehr über die ersten Schritte mit Workflows.](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
 
-![](../assets/do-not-localize/glass.png) Informationen zu Fristen für die Datenbeibehaltung finden Sie [diesem Abschnitt](../dev/datamodel-best-practices.md#data-retention)
+* [Datenaufbewahrungszeiträume](../dev/datamodel-best-practices.md#data-retention)

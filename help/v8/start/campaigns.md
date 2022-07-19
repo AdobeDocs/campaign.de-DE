@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: fc0be5fe82ba11e54851a8f612ece0b310447cdd
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 100%
+source-wordcount: '844'
+ht-degree: 80%
 
 ---
 
@@ -46,8 +46,7 @@ Adobe Campaign ermöglicht die Erstellung, Konfiguration, Ausführung und Analys
 
 ![](assets/calendar.png)
 
-![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=de#orchestrating-campaigns) erfahren Sie, wie Sie auf Marketing-Kampagnen zugreifen und diese implementieren können.{target=&quot;_blank&quot;}
-
+![](../assets/do-not-localize/book.png) Erfahren Sie, wie Sie in auf Marketing-Kampagnen zugreifen und diese implementieren können. [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html).
 
 ## Wichtige Schritte zum Beginn{#gs-ac-start}
 
@@ -57,13 +56,13 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    Definieren Sie Hierarchie und Zeitplan, stellen Sie Budget ein, fügen Sie Ressourcen hinzu, wählen Sie Benutzer aus.
 
-   ![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=de#creating-plan-and-program-hierarchy) erfahren Sie, wie Sie einen Marketing-Plan erstellen und Kampagnen konfigurieren.{target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Erfahren Sie, wie Sie einen Marketingplan erstellen und Kampagnen konfigurieren in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html).
 
    Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Haupteinstellungen und -funktionen gespeichert sind. Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen können, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
 
-   ![](../assets/do-not-localize/book.png) Wie Sie mit Kampagnenvorlagen arbeiten, erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=de#orchestrating-campaigns){target=&quot;_blank&quot;}.
+   Erfahren Sie, wie Sie mit Kampagnenvorlagen in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html).
 
-   ![](../assets/do-not-localize/book.png) Weitere Informationen zu wiederkehrenden Kampagnen und zu ihrer Konfiguration finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=de#recurring-and-periodic-campaigns){target=&quot;_blank&quot;}.
+   Entdecken Sie wiederkehrende Kampagnen und konfigurieren Sie sie in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html).
 
 1. **Audiences definieren**
 
@@ -71,7 +70,7 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    ![](assets/campaign-wf.png)
 
-   ![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=de#orchestrating-campaigns) erfahren Sie, wie Sie die Audience für Ihre Nachrichten definieren.{target=&quot;_blank&quot;}
+   Erfahren Sie, wie Sie die Audience Ihrer Nachrichten in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html).
 
 1. **Sendungen erstellen**
 
@@ -79,17 +78,17 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    ![](assets/campaign-dashboard.png)
 
-   ![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=de#creating-deliveries) erfahren Sie, wie Sie Sendungen für Marketing-Kampagnen erstellen und starten.{target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) Erfahren Sie, wie Sie Sendungen von Marketing-Kampagnen erstellen und starten in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html).
 
    Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Website, Diagramm usw.
 
-   ![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=de#adding-documents){target=&quot;_blank&quot;} erfahren Sie mehr über zugeordnete Dokumente.
+   ![](../assets/do-not-localize/book.png) Weitere Informationen zu zugehörigen Dokumenten finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html).
 
 1. **Einrichten des Validierungsprozesses**
 
    Adobe Campaign ermöglicht den Einsatz von partizipativen Validierungsprozessen für die wichtigsten Etappen einer Marketing-Kampagne. Für jede Kampagne können Sie die Versandzielgruppe, den Inhalt und die Kosten validieren. Die für die Validierung zuständigen Adobe Campaign-Benutzer können per E-Mail benachrichtigt werden und eine Validierung über die Konsole oder eine Internet-Verbindung annehmen oder ablehnen.
 
-   ![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=de#orchestrating-campaigns) erfahren Sie, wie Sie Validierungen einrichten und verwalten können.{target=&quot;_blank&quot;}
+   Erfahren Sie, wie Sie Genehmigungen einrichten und verwalten in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=en#campaign-orchestration).
 
 
 ## Add-on für dezentrales Marketing{#distributed-marketing-add-on}
@@ -100,7 +99,7 @@ Adobe Campaign bietet ein **dezentrales Marketing**-Add-on zur Implementierung v
 >
 >Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie in [diesem Abschnitt](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 
-[](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html?lang=de){target=&quot;_blank&quot;} erfahren Sie, wie Sie die Funktionen für dezentrales Marketing von Campaign konfigurieren und verwenden.
+Erfahren Sie, wie Sie die Funktionen für dezentrales Marketing von Campaign konfigurieren und verwenden [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html)
 
 ## Add-on &quot;Reaktionsverwaltung&quot;{#response-manager-add-on}
 

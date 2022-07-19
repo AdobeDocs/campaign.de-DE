@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 100%
+source-wordcount: '493'
+ht-degree: 91%
 
 ---
 
@@ -36,7 +36,7 @@ Die Filterkonfiguration ermöglicht die **[!UICONTROL dynamische]** Auswahl von 
 
 Zielgruppenbestimmung kann über eine Kombination von Abfragen in einer grafischen Abfolge in einem Workflow erstellt werden. Sie können Audiences erstellen und deren Targeting entsprechend Ihren Anforderungen anpassen. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zur Erstellung einer Audience in einem Kampagnen-Workflow erhalten Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=de#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}.
+Erfahren Sie, wie Sie in einem Kampagnen-Workflow eine Zielgruppe erstellen können in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
 
 
 ## Aktive Profile{#active-profiles}
@@ -57,10 +57,10 @@ Adobe Campaign ist ein leistungsstarkes Tool zur Erfassung und Verarbeitung von 
 
 ![](../assets/do-not-localize/book.png) Wie Sie Datenschutz und Einverständnis gewährleisten, erfahren Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target=&quot;_blank&quot;}.
 
-**Verwandte Themen** in der Dokumentation zu Campaign Classic v7:
+**Verwandte Themen** 
 
-* [Entwurf und Ausführung eines kampagnenspezifischen Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=de#automating-with-workflows){target=&quot;_blank&quot;}
+* [Kampagnenspezifische Workflows entwerfen und ausführen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html)
 
-* [Informationen zur Auswahl der Audience für eine Kampagne](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=de){target=&quot;_blank&quot;}
+* [Audience einer Kampagne auswählen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
 
-* [Erste Schritte mit Workflows](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=de){target=&quot;_blank&quot;}
+* [Erste Schritte mit Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)

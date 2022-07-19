@@ -5,10 +5,10 @@ feature: Application Settings
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
-workflow-type: ht
-source-wordcount: '1176'
-ht-degree: 100%
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
+workflow-type: tm+mt
+source-wordcount: '1180'
+ht-degree: 90%
 
 ---
 
@@ -42,7 +42,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
 Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zu eingehenden E-Mails finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html?lang=de){target=&quot;_blank&quot;}
+Weitere Informationen zu eingehenden E-Mails finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html)
 
 ![](assets/bounce_external_1.png)
 
@@ -165,7 +165,7 @@ Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der 
 
 Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** zum Importieren oder Exportieren von Daten in Adobe Campaign verwendet werden.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zur Dateiübertragung in Workflows finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html?lang=de){target=&quot;_blank&quot;}
+Weitere Informationen zur Dateiübertragung in Workflows finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html)
 
 * **FTP und SFTP**
 
@@ -178,13 +178,13 @@ Geben Sie dazu in diesem externen Konto die Adresse und die Zugangsdaten für di
 
    * **[!UICONTROL AWS-S3-Konto-Server]**: URL Ihres Servers, wie folgt ausgefüllt:   ```<S3bucket name>.s3.amazonaws.com/<s3object path>```
 
-   * **[!UICONTROL Kennung des AWS-Zugriffsschlüssels]**: Erfahren Sie, wie Sie Ihre Kennung des AWS-Zugriffsschlüssels in der [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) finden.
+   * **[!UICONTROL AWS-Zugriffsschlüssel-ID]**: Erfahren Sie, wie Sie Ihre AWS-Zugriffsschlüssel-ID in [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}.
 
-   * **[!UICONTROL Geheimer AWS-Zugriffsschlüssel]**: Erfahren Sie in der [Amazon-Dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/), wie Sie Ihren geheimen Zugriffsschlüssel für AWS finden.
+   * **[!UICONTROL Geheimer Zugriffsschlüssel für AWS]**: Erfahren Sie, wie Sie Ihren geheimen Zugriffsschlüssel für AWS in finden [Amazon-Dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target=&quot;_blank&quot;}.
 
-   * **[!UICONTROL AWS-Region]**: Weitere Informationen zu AWS-Regionen finden Sie in der [Amazon-Dokumentation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+   * **[!UICONTROL AWS-Region]**: Weitere Informationen zu AWS-Regionen in [Amazon-Dokumentation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target=&quot;_blank&quot;}.
 
-   * Die Checkbox **[!UICONTROL Server-seitige Verschlüsselung verwenden]** ermöglicht es Ihnen, Ihre Datei in S3 im verschlüsselten Modus zu speichern. Erfahren Sie in der [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys), wie Sie die Kennung des Zugriffsschlüssels und den geheimen Zugriffsschlüssel finden.
+   * Die Checkbox **[!UICONTROL Server-seitige Verschlüsselung verwenden]** ermöglicht es Ihnen, Ihre Datei in S3 im verschlüsselten Modus zu speichern. Erfahren Sie, wie Sie die Zugriffsschlüssel-ID und den geheimen Zugriffsschlüssel in [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}.
 
 * **Azur Blob-Speicherung**
 
@@ -194,4 +194,4 @@ Geben Sie dazu in diesem externen Konto die Adresse und die Zugangsdaten für di
 
    * **[!UICONTROL Verschlüsselung]**: Art der Verschlüsselung, **[!UICONTROL Keine]** oder **[!UICONTROL SSL]**.
 
-   * **[!UICONTROL Zugriffsschlüssel]**: Erfahren Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal), wie Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden.
+   * **[!UICONTROL Zugriffsschlüssel]**: Erfahren Sie, wie Sie Ihre **[!UICONTROL Zugriffsschlüssel]** in [Microsoft-Dokumentation](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target=&quot;_blank&quot;}.

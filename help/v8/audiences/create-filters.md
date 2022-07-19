@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 100%
+source-wordcount: '1739'
+ht-degree: 94%
 
 ---
 
@@ -325,12 +325,12 @@ Nach dem Speichern sind erweiterte Filter verfügbar, wenn Sie die Zielpopulatio
 
 Verwenden Sie Funktionen zur Definition des Inhalts des Filters, um erweiterte Filterfunktionen auszuführen. Der Editor für erweiterte Filter nutzt alle Funktionen des Campaign-Abfragetools.
 
-In der Dokumentation zu Adobe Campaign Classic v7 erfahren Sie, wie Sie erweiterte Abfragen erstellen können. Beispiel:
+In diesen Beispielen erfahren Sie, wie Sie erweiterte Abfragen erstellen:
 
-* In der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=de#example--targeting-on-simple-recipient-attributes) erfahren Sie, wie Sie Ihre Auswahl anhand einfacher Empfängerattribute treffen können{target=&quot;_blank&quot;}.
-* In der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/querying-using-many-to-many-relationship.html?lang=de) erfahren Sie, wie Sie nach Empfängern filtern, die in den letzten 7 Tagen nicht kontaktiert wurden{target=&quot;_blank&quot;}.
-* In der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/creating-a-filter.html?lang=de) erfahren Sie, wie die Liste der Benutzer nach aktiven Konten gefiltert werden kann{target=&quot;_blank&quot;}.
-* In der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html??lang=de#identifying-recipients-whose-birthday-it-is) erfahren Sie, wie Sie eine Audience für eine Geburtstags-E-Mail erstellen können{target=&quot;_blank&quot;}.
+* Erfahren Sie, wie Sie in einfache Empfängerattribute auswählen können. [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
+* Informationen zum Filtern von Empfängern, die in den letzten sieben Tagen nicht kontaktiert wurden, finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html).
+* Informationen dazu, wie Sie die Benutzerliste abrufen können, finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html).
+* Erfahren Sie, wie Sie eine Geburtstags-E-Mail-Zielgruppe erstellen in  [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html).
 
 
 ### Erweiterte Parameter für vordefinierte Filter {#param-for-data-filters}

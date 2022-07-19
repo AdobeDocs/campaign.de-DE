@@ -5,36 +5,36 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
+source-git-commit: 41a213eea434b3fc6ee8b3ea3c29d4364f9c9761
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 100%
+source-wordcount: '1118'
+ht-degree: 75%
 
 ---
 
 # Verwalten von Datenschutzanfragen in Campaign {#privacy}
 
-<!--Adobe Campaign is a powerful tool for collecting and processing large volume of data, including personal information and sensitive data. It is therefore essential that you receive and monitor consent from your recipients.-->
+Je nach Art Ihres Unternehmens und den Rechtsordnungen, unter denen es tätig ist, können Ihre Datenoperationen rechtlichen Datenschutzbestimmungen unterliegen. Diese Vorschriften verleihen Ihren Kunden häufig das Recht, den Zugriff auf die von ihnen erfassten Daten anzufordern und die Löschung dieser gespeicherten Daten anzufordern. Diese Kundenanfragen für ihre personenbezogenen Daten werden in der gesamten Dokumentation als &quot;Datenschutzanfragen&quot;bezeichnet.
+
+Adobe bietet Datenverantwortlichen Tools zum Erstellen und Verarbeiten von Datenschutzanfragen für in Campaign gespeicherte Daten. Als Datenverantwortlicher sind Sie außerdem verpflichtet, die Identität der betroffenen Person zu überprüfen, die die Anfrage stellt, und sicherzustellen, dass die dem Anfragenden übermittelten Daten zur betroffenen Person gehören. Weitere Informationen zu personenbezogenen Daten und zu den verschiedenen Entitäten, die Daten verwalten, finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#personal-data){target=&quot;_blank&quot;}.
+
+
+Um Datenschutzanfragen in Campaign zu verwalten, müssen Sie zunächst [Namespace definieren](#namespaces). Anschließend können Sie Datenschutzanfragen erstellen und verwalten. Verwenden Sie zum Ausführen von Datenschutzanfragen den **Adobe Privacy Service** Integration. Datenschutzanfragen, die vom Privacy Service an alle Adobe Experience Cloud-Lösungen gesendet werden, werden von Campaign über einen speziellen Workflow automatisch verarbeitet. [Weitere Informationen](#create-privacy-request)
+
+![](../assets/do-not-localize/speech.png) In der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=de#right-access-forgotten){target=&quot;_blank&quot;} erfahren Sie mehr über das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** (Löschanfrage).
+
 
 >[!NOTE]
 >
 >Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie in [diesem Abschnitt](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 
-Um Sie bei der Einhaltung der Datenschutzverordnungen zu unterstützen, ermöglicht Ihnen Adobe Campaign die Durchführung von Zugriffs- und Löschanfragen.
-
-Um diese Anfragen auszuführen, müssen Sie die Integration des **Privacy Core Service** verwenden. Die von Privacy Core Service an alle Experience Cloud-Lösungen übertragenen Datenschutzanfragen werden von Campaign mithilfe eines speziellen Workflows automatisch verarbeitet. [Weitere Informationen](#create-privacy-request)
-
-Adobe bietet Datenverantwortlichen Tools zum Erstellen und Verarbeiten von Datenschutzanfragen für in Campaign gespeicherte Daten. Als Datenverantwortlicher sind Sie außerdem verpflichtet, die Identität der betroffenen Person zu überprüfen, die die Anfrage stellt, und sicherzustellen, dass die dem Anfragenden übermittelten Daten zur betroffenen Person gehören. Weitere Informationen zu personenbezogenen Daten und zu den verschiedenen Entitäten, die Daten verwalten, finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#personal-data){target=&quot;_blank&quot;}.
-
-![](../assets/do-not-localize/speech.png) In der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=de#right-access-forgotten){target=&quot;_blank&quot;} erfahren Sie mehr über das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** (Löschanfrage).
-
 ## Definieren eines Namespace {#namespaces}
 
-Bevor Sie eine Datenschutzanfrage erstellen, müssen Sie den zu verwendenden **Namespace festlegen**. Der Namespace ist der Schlüssel, anhand dessen die Identität der betroffenen Person in der Adobe Campaign-Datenbank identifiziert wird.
+Bevor Sie eine Datenschutzanfrage erstellen, müssen Sie **Namespace definieren** verwendet werden. Der Namespace ist der Schlüssel, mit dem die betroffene Person in der Datenbank identifiziert wird.
 
 >[!NOTE]
 >
->Weitere Informationen zu Identity-Namespaces finden Sie in der [Dokumentation zu Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=de){target=&quot;_blank&quot;}.
+>Weitere Informationen zu Identitäts-Namespaces finden Sie in [Adobe Experience Platform-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=de){target=&quot;_blank&quot;}.
 
 Derzeit unterstützt Adobe Campaign nicht den Import von Namespaces aus dem Identity-Namespace-Service von Experience Platform. Nachdem Sie im Identity-Namespace-Service einen Namespace erstellt haben, müssen Sie daher den entsprechenden Namespace in der Adobe Campaign-Benutzeroberfläche manuell erstellen. Gehen Sie dazu wie folgt vor:
 
@@ -48,7 +48,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Erstellen Sie einen Namespace im [Identity-Namespace-Service](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target=&quot;_blank&quot;}.
 
-1. Bei der [Auflistung der für Ihre Organisation verfügbaren Identity-Namespaces](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target=&quot;_blank&quot;} erhalten Sie u. a. die folgenden Namespace-Details:
+1. Wann [Auflisten der Identitäts-Namespaces](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target=&quot;_blank&quot;} für Ihr Unternehmen verfügbar ist, erhalten Sie die folgenden Namespace-Details, z. B.:
 
    ```
    {
@@ -65,7 +65,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
    }
    ```
 
-1. Gehen Sie in Adobe Campaign zu **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]** und klicken sie auf **[!UICONTROL Neu]**.
+1. Navigieren Sie in Adobe Campaign zu **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Namespaces]** und wählen Sie **[!UICONTROL Neu]**.
 
    ![](assets/privacy-namespaces-new.png)
 
@@ -73,9 +73,9 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Füllen Sie die neuen Namespace-Details entsprechend dem Namespace aus, den Sie im Identity-Namespace-Service erstellt haben:
 
-   * Die **[!UICONTROL AEC-Namespace-ID]** muss mit dem Attribut &quot;id&quot; übereinstimmen.
-   * Der **[!UICONTROL Interne Name]** muss mit dem Attribut &quot;code&quot; übereinstimmen.
-   * Der **[!UICONTROL Abstimmschlüssel]** muss mit dem Attribut „idType“ übereinstimmen.
+   * die **[!UICONTROL AEC-Namespace-ID]** muss mit dem Attribut &quot;id&quot;übereinstimmen
+   * die **[!UICONTROL Interner Name]** muss mit dem Attribut &quot;code&quot;übereinstimmen
+   * Der **[!UICONTROL Abstimmschlüssel]** muss mit dem Attribut „idType“ übereinstimmen
 
    ![](assets/privacy-namespaces-details.png)
 
@@ -85,7 +85,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
    >[!NOTE]
    >
-   >    Wenn Sie mehrere Zielgruppen-Mappings verwenden möchten, müssen Sie pro Zielgruppen-Mapping einen Namespace erstellen.
+   >Wenn Sie mehrere Zielgruppen-Mappings verwenden müssen, erstellen Sie pro Zielgruppen-Mapping einen Namespace.
 
 1. Speichern Sie Ihre Änderungen.
 
@@ -93,15 +93,11 @@ Jetzt können Sie Datenschutzanfragen basierend auf Ihrem neuen Namespace erstel
 
 ## Erstellen einer Datenschutzanfrage {#create-privacy-request}
 
-Durch die Integration von **Privacy Core Service** können Sie Datenschutzanfragen in einer Umgebung mit mehreren Lösungen über nur einen einzigen JSON-API-Aufruf automatisieren. Adobe Campaign verarbeitet die von Privacy Core Service über einen speziellen Workflow übertragenen Anfragen automatisch.
-
->[!CAUTION]
->
->Damit die Datenschutzanfragen verarbeitet werden können, müssen Sie auf Ihrer Adobe Campaign-Instanz einen Namespace erstellen, der dem Namespace entspricht, den Sie im Identity-Namespace-Service von Experience Platform erstellt haben.
+Durch die Integration von **[!DNL Adobe Experience Platform Privacy Service]** können Sie Datenschutzanfragen in einer Umgebung mit mehreren Lösungen über nur einen einzigen JSON-API-Aufruf automatisieren. Adobe Campaign verarbeitet die von Privacy Service über einen speziellen Workflow übertragenen Anfragen automatisch.
 
 Weitere Informationen zum Erstellen von Datenschutzanfragen mittels Privacy Core Service finden Sie in der Dokumentation zu [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de){target=&quot;_blank&quot;}.
 
-Jeder Privacy Core Service-Vorgang wird in mehrere Datenschutzanfragen in Adobe Campaign aufgeteilt, je nachdem, wie viele Namespaces verwendet werden, wobei eine Anfrage einem Namespace entspricht.
+Jeder **[!DNL Privacy Service]**  Der Auftrag wird in mehrere Datenschutzanfragen in Adobe Campaign aufgeteilt, je nachdem, wie viele Namespaces verwendet werden, wobei eine Anfrage einem Namespace entspricht.
 
 Außerdem kann ein Vorgang in mehreren Instanzen ausgeführt werden. Daher werden für einen Vorgang mehrere Dateien erstellt. Wenn sich eine Anfrage beispielsweise auf zwei Namespaces bezieht und drei Instanzen betrifft, werden insgesamt sechs Dateien gesendet. Eine Datei pro Namespace und Instanz.
 
@@ -121,7 +117,7 @@ Der Dateiname setzt sich folgendermaßen zusammen: `<InstanceName>-<NamespaceId>
 
 Bei der Durchführung einer Lösch- oder Zugriffsanfrage durchsucht Adobe Campaign alle Daten der betroffenen Person auf der Basis des **[!UICONTROL Abstimmwerts]**. Gesucht wird in allen Tabellen, in denen eine Relation mit der Tabelle des Empfängers besteht (vom Typ &quot;own&quot;).
 
-Dies sind die Tabellen, die bei der Durchführung von Datenschutzanfragen standardmäßig berücksichtigt werden:
+Die folgenden integrierten Tabellen werden bei der Durchführung von Datenschutzanfragen berücksichtigt:
 
 * Empfänger (recipient)
 * Versandlog eines Empfängers (broadLogRcp)
@@ -145,7 +141,7 @@ Wenn Sie benutzerdefinierte Tabellen erstellt haben, für die eine Relation zur 
 
 ### Status von Datenschutzanfragen {#privacy-request-statuses}
 
-Hier finden Sie die verschiedenen Status für Datenschutzanfragen in Adobe Campaign:
+Unten finden Sie die verschiedenen Status von Datenschutzanfragen in Adobe Campaign und deren Interpretation:
 
 * **[!UICONTROL Neu]** / **[!UICONTROL Erneuter Versuch steht aus]**: Durchführung läuft, der Workflow hat die Anfrage noch nicht verarbeitet.
 * **[!UICONTROL Verarbeitungsvorgang läuft]** / **[!UICONTROL Erneuter Versuch läuft]**: Der Workflow verarbeitet gerade die Anfrage.

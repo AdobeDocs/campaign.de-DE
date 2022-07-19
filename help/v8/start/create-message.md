@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
-workflow-type: ht
-source-wordcount: '643'
-ht-degree: 100%
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 92%
 
 ---
 
@@ -48,13 +48,13 @@ Sobald Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, kön
 
    ![](assets/deliveries-in-a-campaign.png)
 
-   ![](../assets/do-not-localize/book.png) Informationen zum Senden von Nachrichten im Kontext einer Kampagne finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=de){target=&quot;_blank&quot;}.
+   Erfahren Sie, wie Sie im Kontext einer Kampagne Nachrichten senden können in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html)
 
 * Senden von Nachrichten über einen [Workflow](../config/workflows.md)
 
    ![](assets/send-in-a-wf.png)
 
-   ![](../assets/do-not-localize/book.png) Informationen zum Automatisieren von E-Mail-Sendungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=de){target=&quot;_blank&quot;}.
+   ![](../assets/do-not-localize/glass.png) Erfahren Sie, wie Sie E-Mail-Sendungen automatisieren können in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery.html)
 
 * [Auslösen von Nachrichten durch ein Ereignis](../send/transactional.md)
    ![](../assets/do-not-localize/book.png) [Anwendungsfall: Erfahren Sie, wie Sie eine Transaktions-E-Mail mit einem Anhang senden.](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=de){target=&quot;_blank&quot;}
@@ -63,7 +63,7 @@ Sobald Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, kön
 
    ![](assets/schedule-send.png)
 
-   ![](../assets/do-not-localize/book.png) [Anwendungsfall: Erfahren Sie, wie Sie eine Geburtstags-E-Mail planen und senden.](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=de){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/glass.png) [Anwendungsfall: Erfahren Sie, wie Sie eine Geburtstags-E-Mail planen und senden.](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html)
 
 
 ## Personalisierung hinzuzufügen{#personalization}
@@ -100,6 +100,6 @@ Die Überwachung Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, u
 
 * [Best Practices für den Versand](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=de){target=&quot;_blank&quot;}
 
-* [Testen und Senden einer E-Mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=de#sending-messages){target=&quot;_blank&quot;}
+* [Testen und Senden einer E-Mail](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
 
 * [Durchführen von Testsendungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}

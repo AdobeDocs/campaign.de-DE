@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
-workflow-type: ht
-source-wordcount: '257'
-ht-degree: 100%
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 97%
 
 ---
 
@@ -28,4 +28,4 @@ Schutzmechanismen und Einschränkungen betreffen Funktionen, Architekturen oder 
 * Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) sind Mechanismen zur Anmeldung (Opt-in-) und zur Abmeldung (Opt-out) sowie die Mobile-Registrierung asynchrone Prozesse. Anfragen werden stündlich über einen speziellen technischen Workflow verarbeitet. [Weitere Informationen](../architecture/replication.md#tech-wf)
 * Duplikate müssen von Endbenutzern manuell korrigiert werden. [Weitere Informationen](../architecture/keys.md)
 * Adobe Campaign v8 unterstützt keinen erweiterten Durchsatz in API- und Web-Anwendungen. Wenden Sie sich bei besonderen Anforderungen an Adobe, um Beratung zu erhalten.
-* Das Optimierungsmodul von Adobe Campaign berücksichtigt keine geplanten Sendungen in Drucktypologieregeln. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=de#setting-the-period){target=&quot;_blank&quot;}
+* Das Optimierungsmodul von Adobe Campaign berücksichtigt keine geplanten Sendungen in Drucktypologieregeln. Weiterführende Informationen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html).
