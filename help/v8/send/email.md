@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '589'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -75,9 +75,9 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
    Wenn der Inhalt fertig ist, klicken Sie auf **Speichern**: Er wird nun in Ihrer Versandliste auf der Registerkarte **[!UICONTROL Kampagnen > Sendungen]** angezeigt. Ihr erster E-Mail-Versand ist fertig. Definieren Sie nun die Audience, validieren Sie den Versand und führen Sie ihn aus.
 
 
-Hier erfahren Sie, wie Sie E-Mail-Inhalte importieren. [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
+In diesem [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de) erfahren Sie, wie Sie E-Mail-Inhalte importieren können.
 
-Weitere Informationen finden Sie in den folgenden Abschnitten von **Dokumentation zu Campaign Classic v7**:
+Weitere Informationen finden Sie in diesen Abschnitten der **Dokumentation zu Campaign Classic v7**:
 
 * Erstellen einer E-Mail in Campaign
    ![](../assets/do-not-localize/book.png) [Weitere Informationen zum Erstellen von E-Mails](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=de){target=&quot;_blank&quot;}
@@ -103,4 +103,4 @@ Sie haben folgende Möglichkeiten:
 * Kontrollgruppen verwenden
 * E-Mail-Rendering prüfen
 
-![](../assets/do-not-localize/book.png)[ Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png)[ Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}.
