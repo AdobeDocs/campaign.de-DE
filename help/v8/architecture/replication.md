@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) b
 
 Solche Workflows führen Operationen zur Datenbankwartung aus, nutzen die Tracking-Informationen in den Versand-Logs, erstellen wiederkehrende Kampagnen und mehr.
 
-![](../assets/do-not-localize/glass.png) Die vollständige Liste der technischen Workflows finden Sie im Abschnitt [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html).
+![](../assets/do-not-localize/glass.png) Die vollständige Liste der technischen Workflows ist auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de) aufgeführt.
 
 Zusätzlich zu diesen technischen Workflows setzt Campaign v8 bei der Verwaltung von [Datenreplikation](#data-replication) auf bestimmte technische Workflows.
 
@@ -74,6 +74,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **Verwandte Themen**
 
-* [Erfahren Sie mehr über die ersten Schritte mit Workflows.](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
+* [Erfahren Sie mehr über die ersten Schritte mit Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
 
-* [Datenaufbewahrungszeiträume](../dev/datamodel-best-practices.md#data-retention)
+* [Datenspeicherungszeiträume](../dev/datamodel-best-practices.md#data-retention)
