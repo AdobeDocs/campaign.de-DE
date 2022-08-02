@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
 source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ Im folgenden Beispiel wird eine Liste aller Empfänger zwischen 25 und 40 erstel
 
    ![](assets/targeting-wf-age-filter.png)
 
-   Erfahren Sie, wie Sie in einem Workflow eine Abfrage erstellen [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
+   In [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de) erfahren Sie, wie Sie eine Abfrage in einem Workflow erstellen.
 
 1. Geben Sie dieser Abfrage einen Titel und speichern Sie die Änderungen.
 1. Fügen Sie die Aktivität **[!UICONTROL Listen-Update]** hinzu und bearbeiten Sie sie.
@@ -124,7 +124,7 @@ Im folgenden Beispiel wird eine Liste aller Empfänger zwischen 25 und 40 erstel
 
    ![](assets/access-new-list.png)
 
-   Sie können diesen Workflow wiederkehrend machen, indem Sie ihm eine Planung hinzufügen. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html).
+   Sie können diesen Workflow wiederkehrend machen, indem Sie ihm eine Planung hinzufügen. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de).
 
 ## Entfernen eines Profils aus einer Liste {#remove-a-profile-from-a-list}
 
