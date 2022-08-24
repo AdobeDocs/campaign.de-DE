@@ -4,8 +4,8 @@ title: Datenschutzbestimmungs-Workflows
 description: Erfahren Sie mehr über die Workflows für Datenschutzbestimmungen.
 feature: Workflows, Privacy
 source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '107'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
