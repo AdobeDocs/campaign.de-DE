@@ -1,12 +1,13 @@
 ---
 product: campaign
-title: Druckregeln konfigurieren
+title: Konfigurieren der Druckregeln
 description: Erfahren Sie, wie Sie Druckregeln konfigurieren
 feature: Fatigue Management, Typology Rules
-source-git-commit: 86c37772eca9e3fffbeaa0e1d4d7de5590d8d277
-workflow-type: tm+mt
-source-wordcount: '3177'
-ht-degree: 94%
+exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +20,7 @@ Mithilfe der Werbedruckverwaltung stellen Sie sicher, dass Sie die Population de
 Die Kampagnen werden entsprechend der festgelegten Schwellen und des jeweiligen Gewichts jeder Nachricht ausgewählt.
 
 * Eine Schwelle ist die maximale Anzahl an Sendungen, die in einem bestimmten Zeitraum für einen bestimmten Empfänger nicht überschritten werden darf. Sie kann konstant oder variabel sein. Sie wird über die Parameter der Typologieregel festgelegt oder berechnet. [Weitere Informationen](#maximum-number-of-messages).
-* Die Versandgewichtung ermöglicht die Identifizierung der Sendungen, die im Kontext der Druckverwaltung prioritär sind. Die Nachrichten mit der höchsten Gewichtung haben Priorität. [Weitere Informationen](#message-weight).
+* Die Versandgewichtung ermöglicht es Ihnen, im Rahmen der Druckverwaltung diejenigen Sendungen festzulegen, die vorrangig durchgeführt werden sollen. Die Nachrichten mit der höchsten Gewichtung haben Vorrang. [Weitere Informationen](#message-weight).
 
 Die Schlichtung besteht darin, sicherzustellen, dass geplante Kampagnen mit einer höheren Gewichtung als laufende Kampagnen kein übermäßiges Werben eines Profils auslösen: Ist dies der Fall, wird das Profil von der Versandaktion ausgeschlossen.
 
@@ -32,13 +33,13 @@ Die Schlichtungsregel zur Bestimmung der geeigneten Nachrichten wird in der Anal
 
 Im gegensätzlichen Fall erscheint in den Logs der Hinweis **[!UICONTROL Ausgeschlossen nach Schlichtung]**. [Weitere Informationen](#exclusion-after-arbitration).
 
-## Erstellen Sie eine Druckregel {#create-a-pressure-rule}
+## Erstellen einer Druckregel {#create-a-pressure-rule}
 
 Um eine Schlichtung zwischen Adobe-Campaign-Kampagnen einzurichten, müssen zunächst Kampagnentypologien erstellt und die damit verbundenen Typologieregeln definiert werden.****
 
 Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfigurieren, durchlaufen Sie folgende Etappen:
 
-1. Wählen Sie in der Liste der Kampagnentypologieregeln die **[!UICONTROL Neu]** oberhalb der Liste.
+1. Klicken Sie in der Liste der Kampagnentypologieregeln auf das Symbol **[!UICONTROL Neu]** oberhalb der Liste.
 
    ![](assets/campaign_opt_create_a_rule_01.png)
 
@@ -47,7 +48,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
    ![](assets/campaign_opt_create_a_rule_02.png)
 
 1. Sie können die Ausführungsreihenfolge nach Bedarf ändern. Wenn mehrere Typologieregeln in Form eines Sets von **[!UICONTROL Typologien]** angewendet werden, werden die Regeln mit der niedrigeren Reihenfolge zuerst angewendet. [Weitere Informationen](apply-rules.md#execution-order).
-1. Definieren Sie im Bereich **[!UICONTROL Berechnungsparameter]** eine Frequenz, wenn Sie die Zielgruppenbestimmung über die nächste tägliche Neuschlichtung hinaus speichern möchten. [Weitere Informationen](apply-rules.md#adjust-calculation-frequency).
+1. Definieren Sie im Bereich **[!UICONTROL Berechnungsparameter]** eine Häufigkeit, wenn Sie die Zielgruppenbestimmung über die nächste tägliche Ausführung hinaus speichern möchten. [Weitere Informationen](apply-rules.md#adjust-calculation-frequency).
 1. Gehen Sie in den Tab **[!UICONTROL Druck]** und wählen Sie den Zeitraum im Kalender aus, während dessen die Regel angewandt werden soll.
 
    ![](assets/campaign_opt_create_a_rule_03.png)
@@ -56,7 +57,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
    >[!NOTE]
    >
-   >Geplante Sendungen werden nicht berücksichtigt.
+   >Terminierte Sendungen werden nicht berücksichtigt.
 
 1. Geben Sie den Berechnungsmodus der maximalen Nachrichtenanzahl an.
 
@@ -84,7 +85,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
       Im folgenden Beispiel werden nur die im Ordner **NewContacts** gespeicherten Empfänger berücksichtigt und nur Sendungen, die mit **Newsletter** beginnen, sind betroffen.
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. Im Tab **[!UICONTROL Typologien]** können die Kampagnentypologien eingesehen werden, die diese Typologieregel anwenden. Zudem kann die Regel an dieser Stelle einer oder mehreren existierenden Typologien zugeordnet werden. [Weitere Informationen](campaign-typologies.md#apply-typologies).
+1. In der Registerkarte **[!UICONTROL Typologien]** können die Kampagnentypologien eingesehen werden, die diese Typologieregel anwenden. Zudem kann die Regel an dieser Stelle mit einer oder mehreren existierenden Typologien verknüpft werden. [Weitere Informationen](campaign-typologies.md#apply-typologies).
 
 ## Definieren von Schwellenwerten und Gewichtungen {#define-thresholds-and-weights}
 
@@ -106,9 +107,9 @@ Beispiel: Die zulässige Anzahl von Nachrichten kann entsprechend dem Segment in
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Um die Schwelle zu bestimmen, können Sie eine Dimension verwenden, die mit der Zielgruppendimension verknüpft ist: Um beispielsweise Nachrichten einzuschließen, die an die in der Besuchertabelle gespeicherten Empfängerprofile gesendet werden (weitere Informationen zur Besuchertabelle finden Sie in diesem Abschnitt) (Umfragen/using/use-case—creating-a-refera-friend-form.md) oder um zu verhindern, dass mehr als eine Nachricht pro Woche an denselben Haushalt gesendet wird (was sich auf mehrere E-Mail-Adressen beziehen kann), die in einer mit der Empfängerdimension verknüpften Dimension identifiziert wurden.
+Um den Schwellenwert zu definieren, können Sie eine mit der Zielgruppendimension verknüpfte Dimension verwenden. So können beispielsweise Nachrichten an Empfängerprofile berücksichtigt werden, die in der Besuchertabelle gespeichert sind. Ein weiteres Beispiel ist die Begrenzung auf eine Nachricht pro Woche für einen Haushalt, der u. U. mehrere E-Mail-Adressen besitzt. Dieser wird über eine mit der Empfängerdimension verknüpfte Dimension identifiziert. (Weitere Informationen zur Besuchertabelle finden Sie in (diesem Abschnitt)(surveys/using/use-case--creating-a-refer-a-friend-form.md)).
 
-Wählen Sie hierfür die Option **[!UICONTROL Nachrichten einer verknüpften Dimension zählen]**.
+Wählen Sie hierfür die Option **[!UICONTROL Nachrichten einer verknüpften Dimension zählen]**. Wählen Sie danach den Besucher oder die Kontakttabelle aus.
 
 ### Nachrichtengewichtung {#message-weight}
 
@@ -144,9 +145,9 @@ Eine Druckregel zum Beispiel, die eine Schwelle von 2 Nachrichten pro Woche und 
 
 >[!CAUTION]
 >
->Bei der Berechnung der Schwelle werden nur bereits versandte Sendungen berücksichtigt.
+>Bei der Berechnung des Schwellenwerts werden nur bereits durchgeführte Sendungen berücksichtigt.
 
-Um die berücksichtigten Sendungen auf einen Zeitraum von zwei Wochen zu beschränken, geben Sie **15 T** im **[!UICONTROL Betroffener Zeitraum]** -Feld: Sendungen, die bis zu zwei Wochen vor dem Datum des Versands, auf den die Regel angewendet wird, durchgeführt werden, werden bei der Berechnung berücksichtigt
+Um die berücksichtigten Sendungen auf einen Zeitraum von 2 Wochen zu beschränken, geben Sie **15d** in das Feld **[!UICONTROL Betroffener Zeitraum]** ein. Dadurch werden Sendungen, die bis zu 15 Tage vor dem Datum des Versands gesendet wurden, auf den die Regel angewendet wird, bei der Berechnung berücksichtigt.
 
 Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
 
@@ -314,7 +315,7 @@ Konfigurieren Sie zuerst die Druckregel.
 
    Diese Option überschreibt den im Feld **[!UICONTROL Frequenz]** definierten Wert und wendet die Regel während der Personalisierung automatisch an. [Weitere Informationen](apply-rules.md#adjust-calculation-frequency).
 
-1. Wählen Sie im Tab **[!UICONTROL Druck]** die Option **[!UICONTROL 7T]** als **[!UICONTROL Betroffener Zeitraum]** und **[!UICONTROL Nach Kalendertag]** als **[!UICONTROL Gruppierungstyp]** aus.
+1. Wählen Sie in der Registerkarte **[!UICONTROL Druck]** die Option **[!UICONTROL 7d]** als **[!UICONTROL Betroffener Zeitraum]** und **[!UICONTROL Nach Kalendertag]** als **[!UICONTROL Gruppierungstyp]** aus.
 1. Verknüpfen Sie diese Regel im Tab **[!UICONTROL Typologien]** mit einer Kampagnen-Typologie.
 1. Speichern Sie Ihre Änderungen.
 
