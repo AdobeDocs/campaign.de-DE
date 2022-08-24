@@ -3,10 +3,11 @@ product: campaign
 title: Workflow für einen kanalübergreifenden Versand
 description: Weitere Informationen zu Workflows für einen kanalübergreifenden Versand.
 feature: Workflows, Channels Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 90%
+exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -34,7 +35,7 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
 Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung der Empfänger.
 
-1. Kampagne erstellen. Weitere Informationen hierzu finden Sie im Abschnitt  .
+1. Kampagne erstellen. Weitere Informationen hierzu finden Sie hier:
 1. Fügen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](query.md).
 1. Definieren Sie die Empfänger, die Ihre Sendungen erhalten sollen. Wählen Sie beispielsweise Gold-Mitglieder als Zieldimension aus.
 1. Fügen Sie Filterbedingungen zu Ihrer Abfrage hinzu. Wählen Sie in diesem Beispiel Empfänger, die eine E-Mail-Adresse und eine Mobiltelefonnummer haben.
@@ -50,7 +51,7 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
    ![](assets/wkf_cross-channel_1.png)
 
-   Weiterführende Informationen zur Integration von Angeboten in den Nachrichten-Textkörper finden Sie im Abschnitt .
+   Weiterführende Informationen zum Einfügen eines Angebots in den Nachrichtentext finden Sie hier:
 
 1. Speichern Sie Ihre Änderungen.
 1. Klicken Sie mit der rechten Maustaste auf die Aktivität **[!UICONTROL E-Mail-Versand]**, um sie zu öffnen.
@@ -108,10 +109,10 @@ Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie 
    * Fügen Sie die Aktivität **[!UICONTROL Mobiltelefon-Versand]** hinzu, um eine SMS an die zweite Teilmenge zu senden.
    * Fügen Sie die Aktivität **[!UICONTROL Listen-Update]** hinzu, um die entsprechenden Empfänger zur Datenbank hinzuzufügen.
 
-1. Doppelklicken Sie auf die Versandaktivitäten in Ihrem Workflow, um sie zu bearbeiten. Weiterführende Informationen zur Erstellung von E-Mails und SMS finden Sie im Abschnitt .
+1. Doppelklicken Sie auf die Versandaktivitäten in Ihrem Workflow, um sie zu bearbeiten. Weiterführende Informationen zur Erstellung von E-Mails und SMS finden Sie hier:
 1. Doppelklicken Sie auf die Aktivität **[!UICONTROL Listen-Update]** und wählen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** aus.
 
-   Sie können die resultierenden Empfänger dann aus Adobe Campaign in die Adobe Experience Cloud exportieren. Beispielsweise können Sie die Zielgruppe in Adobe Target verwenden, indem Sie ein ** hinzufügen.
+   Sie können die resultierenden Empfänger dann aus Adobe Campaign exportieren und in Adobe Experience Cloud importieren. Beispielsweise können Sie die Audience in Adobe Target verwenden, indem Sie ein ** hinzufügen.
 
 1. Verwenden Sie die Schaltfläche **Starten** in der Symbolleiste, um den Workflow auszuführen.
 
