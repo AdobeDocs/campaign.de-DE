@@ -4,9 +4,9 @@ title: Angebote pro Segment
 description: Angebote pro Segment
 feature: Workflows, Targeting Activity, Interaction
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 91%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 Mithilfe der Aktivität **[!UICONTROL Angebote pro Segment]** lässt sich die eingehende Population (die beispielsweise aus einer Abfrage hervorgeht) in mehrere Zielgruppen aufspalten, um so je Segment spezifische Angebote zu unterbreiten.
 
-Diese Aktivität kann nur mit **Interaction**. Weiterführende Informationen dazu finden Sie in diesem .
+Um diese Aktivität verwenden zu können, benötigen Sie das Modul **Interaktion**. Weiterführende Informationen finden Sie hier:
 
 Gehen Sie dazu wie folgt vor:
 
