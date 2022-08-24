@@ -3,14 +3,14 @@ audience: user
 user-guide-title: Handbuch zur Kampagnenautomatisierung
 user-guide-description: Handbuch zur Kampagnenautomatisierung
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 86%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 
-# Kampagnenautomatisierungshandbücher {#automation}
+# Handbücher zur Kampagnenautomatisierung {#automation}
 
 + [Handbuch zur Kampagnenautomatisierung](home.md)
 + Mit Workflows automatisieren {#workflows}
@@ -22,26 +22,26 @@ ht-degree: 86%
          + [Technische Workflows](workflow/technical-workflows.md)
       + [Erstellen eines Workflows](workflow/build-a-workflow.md)
       + [Best Practices](workflow/workflow-best-practices.md)
-      + [Workflow-Daten verwenden](workflow/use-workflow-data.md)
+      + [Verwenden von Workflow-Daten](workflow/use-workflow-data.md)
    + Workflow ausführen {#executing-a-workflow}
       + [Workflow starten](workflow/start-a-workflow.md)
       + [Lebenszyklus eines Workflows](workflow/workflow-life-cycle.md)
-      + [Einrichten von Genehmigungen](workflow/define-approvals.md)
+      + [Einrichten von Validierungen](workflow/define-approvals.md)
    + Überwachen von Workflows {#monitoring-workflows}
       + [Überwachen der Workflow-Ausführung](workflow/monitor-workflow-execution.md)
       + [Überwachen technischer Workflows](workflow/monitor-technical-workflows.md)
       + [Workflow-Heatmap](workflow/heatmap.md)
    + Workflow-Aktivitäten {#wf-activities}
       + [Erste Schritte mit Aktivitäten](workflow/activities.md)
-      + Zielgruppenbestimmungsaktivitäten {#targeting-activities}
-         + [Liste der Zielgruppenbestimmungsaktivitäten](workflow/targeting-activities.md)
+      + Zielgruppenaktivitäten {#targeting-activities}
+         + [Liste der Zielgruppenaktivitäten](workflow/targeting-activities.md)
          + [Segmente](workflow/cells.md)
-         + [Datenquelle ändern](workflow/change-data-source.md)
-         + [Dimensionsänderung](workflow/change-dimension.md)
+         + [Ändern der Datenquelle](workflow/change-data-source.md)
+         + [Ändern der Dimension](workflow/change-dimension.md)
          + [CRM-Connector](workflow/crm-connector.md)
          + [Deduplizierung](workflow/deduplication.md)
          + [Versandentwurf](workflow/delivery-outline.md)
-         + [Schema-Bearbeitung](workflow/edit-schema.md)
+         + [Bearbeiten von Schemas](workflow/edit-schema.md)
          + [Anreicherung](workflow/enrichment.md)
          + [Ausschluss](workflow/exclusion.md)
          + [Inkrementelle Abfrage](workflow/incremental-query.md)
@@ -52,17 +52,17 @@ ht-degree: 86%
          + [Abfrage](workflow/query.md)
          + [Liste lesen](workflow/read-list.md)
          + [Aufspaltung](workflow/split.md)
-         + [Anmeldedienste](workflow/subscription-services.md)
+         + [Abonnements](workflow/subscription-services.md)
          + [Vereinigung](workflow/union.md)
          + [Daten-Update](workflow/update-data.md)
-      + Steuerungsaktivitäten {#flow-control-activities}
-         + [Liste der Steuerungsaktivitäten](workflow/flow-control-activities.md)
-         + [Warnung](workflow/alert.md)
+      + Fluss-Steuerungsaktivitäten {#flow-control-activities}
+         + [Liste der Fluss-Steuerungsaktivitäten](workflow/flow-control-activities.md)
+         + [Warnhinweis](workflow/alert.md)
          + [Und-Verknüpfung](workflow/and-join.md)
          + [Validierung](workflow/approval.md)
          + [Externes Signal](workflow/external-signal.md)
          + [Verzweigung](workflow/fork.md)
-         + [Sprung (Start und Ziel)](workflow/jump--start-point-and-end-point-.md)
+         + [Sprung (Start und Ende)](workflow/jump--start-point-and-end-point-.md)
          + [Start und Ende](workflow/start-and-end.md)
          + [Planung](workflow/scheduler.md)
          + [Unter-Workflow](workflow/sub-workflow.md)
@@ -74,7 +74,7 @@ ht-degree: 86%
          + [Content-Management](workflow/content-management.md)
          + [Versand (fortlaufend)](workflow/continuous-delivery.md)
          + [Kanalübergreifender Versand](workflow/cross-channel-deliveries.md)
-         + [Extraktion (Datei)](workflow/extraction--file-.md)
+         + [Datenextraktion (Datei)](workflow/extraction--file-.md)
          + [Laden (Datei)](workflow/data-loading--file-.md)
          + [Laden (DBMS)](workflow/data-loading--rdbms-.md)
          + [Versand](workflow/delivery.md)
@@ -151,7 +151,7 @@ ht-degree: 86%
    + [Filterregeln](campaign-opt/filtering-rules.md)
    + [Regeln anwenden](campaign-opt/apply-rules.md)
    + [Kampagnensimulation](campaign-opt/campaign-simulations.md)
-+ Distributed Marketing (Add-on) {#distributed-marketing}
++ Verteiltes Marketing (Add-on) {#distributed-marketing}
    + [Über dezentrales Marketing](distributed-marketing/about-distributed-marketing.md)
    + [Lokale Kampagnen erstellen](distributed-marketing/creating-a-local-campaign.md)
    + [Partizipative Kampagnen erstellen](distributed-marketing/creating-a-collaborative-campaign.md)
