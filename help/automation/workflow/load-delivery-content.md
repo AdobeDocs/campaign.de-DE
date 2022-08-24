@@ -3,10 +3,11 @@ product: campaign
 title: Laden des Versandinhalts
 description: Laden des Versandinhalts
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 97%
+exl-id: 08febcbc-1703-4d36-89e1-32c903618084
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -53,4 +54,4 @@ Gehen Sie dazu wie folgt vor:
 
 >[!NOTE]
 >
->Best Practices und Fehlerbehebung bei der Verwendung von SFTP-Servern werden im Detail beschrieben.
+>Best Practices und Fehlerbehebungen bei der Verwendung von SFTP-Servern finden Sie hier:
