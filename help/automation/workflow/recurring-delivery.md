@@ -4,9 +4,9 @@ title: Wiederkehrender Versand
 description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Versand".
 feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ Gehen Sie dazu wie folgt vor:
 
 1. Konfigurieren Sie die Versandvorlage.
 
-Der Konfigurationsprozess für diese Aktivität ähnelt dem der Erstellung einer Versandvorlage in Bezug auf die verfügbaren Optionen. Weitere Informationen hierzu finden Sie in diesem .
+Die im Konfigurationsprozess dieser Aktivität zur Verfügung stehenden Optionen entsprechen denen einer Versandvorlage. Weiterführende Informationen finden Sie hier.
 
-Ein Anwendungsbeispiel für diese Aktivität ist in diesem [Abschnitt](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow) enthalten.
+Ein Anwendungsbeispiel für diese Aktivität finden Sie in diesem [Abschnitt](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Einrichten eines wiederkehrenden Versands
 
