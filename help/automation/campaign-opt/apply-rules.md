@@ -3,10 +3,11 @@ product: campaign
 title: Anwenden von Typologieregeln
 description: Hier erfahren Sie, wie Sie Typologieregeln anwenden
 feature: Typology Rules
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 99%
+exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -142,4 +143,4 @@ Im Tab **[!UICONTROL Dezentrales Marketing]** erfolgt das erneute Mapping der Ty
 >[!NOTE]
 >
 >Im Zusammenhang mit den Typologien und Typologieregeln wird der Tab **[!UICONTROL Dezentrales Marketing]** angeboten, sofern Ihre Lizenz die Option Distributed Marketing beinhaltet. Überprüfen Sie Ihren Lizenzvertrag.\
->Weiterführende Informationen zu dezentralem Marketing finden Sie im Abschnitt [diesem Abschnitt](../distributed-marketing/about-distributed-marketing.md).
+>Weitere Informationen zum verteilten Marketing finden Sie in [diesem Abschnitt](../distributed-marketing/about-distributed-marketing.md).
