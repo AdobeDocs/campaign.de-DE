@@ -4,9 +4,9 @@ title: Content Management
 description: Content Management
 feature: Workflows, Data Management
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
    ![](assets/content_mgmt_edit.png)
 
-   Weitere Informationen zur Konfiguration und Verwendung des Content Managements in Adobe Campaign finden Sie in diesem .
+   Weiterführende Informationen zur Konfiguration und Verwendung des Content-Managements in Adobe Campaign finden Sie hier:
 
 1. **Content**
 
@@ -100,4 +100,4 @@ Kennung des zu verwendenden Inhalts, wenn die Option **[!UICONTROL Wird durch di
 
 ## Beispiele    {#examples}
 
-Beispiele finden Sie in diesem .
+Beispiele werden hier bereitgestellt:
