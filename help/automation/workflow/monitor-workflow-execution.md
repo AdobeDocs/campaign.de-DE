@@ -3,10 +3,11 @@ product: campaign
 title: Überwachen der Workflow-Ausführung
 description: Überwachen der Workflow-Ausführung
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '2027'
-ht-degree: 94%
+exl-id: bc13d706-7888-42eb-9116-5538e68cd515
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -18,9 +19,9 @@ Dieser Abschnitt enthält Informationen zur Überwachung der Ausführung Ihrer W
 
 Ein Anwendungsbeispiel zum Erstellen eines Workflows, mit dem Sie den Status einer Reihe von Workflows überwachen können, die „ausgesetzt“, „angehalten“ oder „Mit Fehlern“ sind, finden Sie zudem in [diesem Abschnitt](workflow-supervision.md#supervising-workflows).
 
-Darüber hinaus können Administratoren der Instanz das **Audit-Protokoll** verwenden, um Aktivitäten und letzte Änderungen an Workflows und somit den Zustand Ihrer Workflows zu überprüfen. Weitere Informationen hierzu finden Sie im Abschnitt  .
+Darüber hinaus können Administratoren der Instanz das **Audit-Protokoll** verwenden, um Aktivitäten und letzte Änderungen an Workflows und somit den Zustand Ihrer Workflows zu überprüfen. Weitere Informationen hierzu finden Sie hier:
 
-Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse finden Sie in .
+Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden hier vorgestellt.
 
 ## Fortschritt anzeigen {#displaying-progress}
 
@@ -54,7 +55,7 @@ Das Protokoll enthält den Verlauf der Workflow-Ausführung. Es speichert die vo
 
    ![](assets/new-workflow-display-tasks-activity.png)
 
-   Die **[!UICONTROL Details...]** -Schaltfläche können Sie alle zusätzlichen Informationen zur Ausführung einer Aktivität anzeigen. Beispielsweise können Sie den validierenden Benutzer und gegebenenfalls den Kommentar einsehen, den er bei der Validierung eingegeben hat.
+   Durch Klicken auf die Schaltfläche **[!UICONTROL Details...]** können Sie zusätzliche Informationen bezüglich der Aktivitätsausführung einsehen. Beispielsweise erscheinen hier die validierende Person und gegebenenfalls der Kommentar, den diese eingegeben hat.
 
 >[!NOTE]
 >
@@ -138,7 +139,7 @@ In diesem Fall wird die fehlerhafte Aufgabe abgebrochen. Dieser Modus ist insbes
 >
 >Es besteht die Möglichkeit, diese Vorgehensweise innerhalb eines Workflows nur für bestimmte Aktivitäten zu konfigurieren. Gehen Sie hierzu in die Eigenschaften der entsprechenden Aktivität und wählen Sie im **[!UICONTROL Erweitert]**-Tab den gewünschten Umgang mit Fehlern aus.
 
-Weiterführende Informationen zur Fehlerbehebung bei der Ausführung von Workflows finden Sie im Abschnitt .
+Weiterführende Informationen zur Fehlerbehebung bei der Ausführung von Workflows finden Sie hier.
 
 ## Fehler verarbeiten {#processing-errors}
 
@@ -229,13 +230,13 @@ Im Abschnitt [Datenaktualisierungen koordinieren](coordinate-data-updates.md) wi
 
 ## Wartung der Datenbank {#database-maintenance}
 
-Workflows verwenden zahlreiche Arbeitstabellen, die Speicherplatz belegen und die gesamte Plattform verlangsamen, wenn sie nicht gewartet werden. Weiterführende Informationen zur Datenbankwartung finden Sie in diesem .
+In Workflows werden zahlreiche Arbeitstabellen verwendet, die Speicherplatz benötigen und mit der Zeit die gesamte Plattform verlangsamen, wenn sie nicht gewartet werden. Weiterführende Informationen zur Datenbankwartung finden Sie hier.
 
 Der Workflow **Datenbankbereinigung**, auf den Sie über den Knoten **Administration > Produktion > Technische Workflows** zugreifen können, ermöglicht das Löschen veralteter Daten, um das exponentielle Anwachsen der Datenbank zu verhindern. Der Workflow wird automatisch ohne das Eingreifen des Benutzers ausgelöst. Siehe  .
 
-Sie können auch spezifische technische Workflows erstellen, um unnötige Daten zu bereinigen, die Speicherplatz belegen. Siehe und dies [Abschnitt](#purging-the-logs).
+Sie können auch spezifische technische Workflows erstellen, um unnötige Daten zu entfernen, die Speicherplatz belegen. Näheres dazu finden Sie in diesem [Abschnitt](#purging-the-logs).
 
-## Ausgesetzte Workflows handhaben {#handling-of-paused-workflows}
+## Handhaben von ausgesetzten Workflows {#handling-of-paused-workflows}
 
 Die Arbeitstabellen ausgesetzter Workflows werden standardmäßig nie bereinigt. Ab Build 8880 werden Workflows, die zu lange in einem ausgesetzten Zustand angehalten werden, automatisch gestoppt und deren Arbeitstabellen bereinigt. Dieses Verhalten wird wie folgt ausgelöst:
 
@@ -266,7 +267,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie mit der rechten Maustaste auf den Ordner, in dem Sie die Ansicht hinzufügen möchten.
 1. Wählen Sie unter **[!UICONTROL Ordner hinzufügen]** / **[!UICONTROL Administration]** die Ansicht aus, die Sie hinzufügen möchten.
-1. Nachdem der Ordner zum Baum hinzugefügt wurde, stellen Sie sicher, dass Sie ihn als Ansicht konfigurieren, damit alle Workflows unabhängig vom Ursprungsordner angezeigt werden. Weiterführende Informationen zur Konfiguration von Ansichten finden Sie im Abschnitt .
+1. Nachdem der Ordner zur Baumstruktur hinzugefügt wurde, konfigurieren Sie ihn als Ansicht, damit alle Workflows unabhängig vom Ursprungsordner angezeigt werden. Weitere Informationen zum Konfigurieren von Ansichten finden Sie hier.
 
 Zusätzlich zu diesen Ansichten können Sie Filterordner einrichten, mit denen Sie die Liste der Workflows nach ihrem Ausführungsstatus filtern können. Gehen Sie dazu wie folgt vor:
 
