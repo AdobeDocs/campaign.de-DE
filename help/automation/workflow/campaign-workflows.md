@@ -3,13 +3,13 @@ product: campaign
 title: Art der Workflows
 description: Entdecken Sie verschiedene Arten von Workflows in Campaign
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 81%
+exl-id: f511332c-1fcc-444f-851b-e8b470b719b4
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
-
 
 # Kampagnen-Workflows {#campaign-workflows}
 
@@ -25,4 +25,4 @@ Alle Kampagnen-Workflows werden zentral im Knoten **[!UICONTROL Administration >
 
 ![](assets/campaigns_wf.png)
 
-Kampagnen-Workflows und Implementierungsbeispiele werden im Abschnitt [diesem Abschnitt](../campaigns/marketing-campaign-target.md).
+Ausführliche Informationen zu Campaign-Workflows und Implementierungsbeispiele finden Sie in [diesem Abschnitt](../campaigns/marketing-campaign-target.md).
