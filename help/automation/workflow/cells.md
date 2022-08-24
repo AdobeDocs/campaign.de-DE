@@ -4,27 +4,27 @@ title: Segmente
 description: Segmente
 feature: Workflows, Targeting Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 2%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 # Segmente{#cells}
 
-Die **[!UICONTROL Zellen]** -Aktivität bietet eine Ansicht der verschiedenen Teilmengen als Datenspalten. Es erleichtert die Manipulation von Teilmengen und dient auch der Nutzung von Personalisierungsfunktionen.
+Die Aktivität **[!UICONTROL Segmente]** bietet eine Ansicht der verschiedenen Teilmengen in Form von Datenspalten. Dies erleichtert die Bearbeitung von Teilmengen und ermöglicht die Nutzung von Personalisierungsfunktionen.
 
 ![](assets/wf_split_cells.png)
 
-Diese Aktivität kann so konfiguriert werden, dass sie bestimmte Parameter entsprechend den Benutzeranforderungen eingibt. Die Details der Teilmengen werden standardmäßig in einem dedizierten Fenster über die **[!UICONTROL Zellen]** und **[!UICONTROL Erweitert]** Registerkarten.
+Diese Aktivität kann so konfiguriert werden, dass bestimmte Parameter entsprechend den Benutzeranforderungen eingegeben werden. Standardmäßig werden die Details der einzelnen Teilmengen in einem eigenen Fenster über die Registerkarten **[!UICONTROL Segmente]** und **[!UICONTROL Erweitert]** angezeigt.
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Im folgenden Beispiel wurde das Formular geändert: a **[!UICONTROL Daten]** wurde hinzugefügt, um die Zuordnung eines Angebots und einer Prioritätsstufe für jede Teilmenge zu ermöglichen.
+Im folgenden Beispiel wurde das Eingabeformular geändert: Es wurde die Registerkarte **[!UICONTROL Daten]** hinzugefügt, um für jede Teilmenge die Zuordnung eines Angebots und einer Prioritätsstufe zu ermöglichen.
 
 ![](assets/cells-activity-sample.png)
 
-Für diese Konfiguration wurden die folgenden Informationen zum Workflow-Formular im **[!UICONTROL Administration > Konfigurationen > Formulare]** Knoten des Adobe Campaign-Explorer:
+Für diese Konfiguration wurden im Knoten **[!UICONTROL Administration > Konfigurationen > Eingabeformulare]** des Explorers von Adobe Campaign die folgenden Informationen zum Workflow-Formular hinzugefügt:
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -49,4 +49,4 @@ Für diese Konfiguration wurden die folgenden Informationen zum Workflow-Formula
                 </container>
 ```
 
-Die Personalisierung von Formularen sollte erfahrenen Benutzern vorbehalten bleiben. Weitere Informationen hierzu finden Sie in diesem .
+Die Personalisierung von Eingabeformularen sollte erfahrenen Personen vorbehalten bleiben. Weiterführende Informationen hierzu finden Sie hier:
