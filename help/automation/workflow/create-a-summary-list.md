@@ -3,10 +3,11 @@ product: campaign
 title: Erstellen einer zusammenfassenden Liste
 description: Erstellen einer zusammenfassenden Liste
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 98%
+exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -56,9 +57,9 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
    Die Aktivität **Laden (Datei)** lädt die gesammelten Daten in die Arbeitstabelle des Workflows.
 
-   Weiterführende Informationen zu dieser Aktivität finden Sie im Abschnitt  .
+   Weiterführende Informationen zu dieser Aktivität finden Sie hier:
 
-1. Konfigurieren Sie die **Datei-Wächter** Aktivität zum Erfassen von Text (&#42;.txt) Geben Sie Dateien aus dem ausgewählten Verzeichnis ein.
+1. Konfigurieren Sie die Aktivität **Datei-Wächter** so, dass Textdateien (&#42;.txt) aus dem ausgewählten Verzeichnis gesammelt werden.
 
    ![](assets/uc2_enrich_collecteur.png)
 
