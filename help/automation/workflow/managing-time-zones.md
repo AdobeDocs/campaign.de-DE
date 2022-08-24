@@ -3,10 +3,11 @@ product: campaign
 title: Verwalten von Zeitzonen
 description: Verwalten von Zeitzonen
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 96%
+exl-id: 04b7638d-55dd-4317-b605-5d618ef014ba
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 96%
 
 Adobe Campaign ist in der Lage, verschiedene Zeitzonen innerhalb einer Instanz zu verwalten. Die verwendeten Zeitzonen werden bei der Instanzerstellung konfiguriert.
 
-Weitere Informationen zur Konfiguration von Zeitzonen in Adobe Campaign finden Sie im Abschnitt .
+Weiterführende Informationen zur Zeitzonenkonfiguration in Adobe Campaign finden Sie hier:
 
 In einem Workflow besteht nicht nur die Möglichkeit, die Ausführung einzelner Aktivitäten zu terminieren, sondern auch dem ganzen Workflow oder einzelnen Aktivitäten eine Zeitzone zuzuordnen. Dies kann insbesondere beim Dateiimport oder im Zuge der Versandauslösung von Nutzen sein.
 
