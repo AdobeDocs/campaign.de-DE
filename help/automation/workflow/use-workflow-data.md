@@ -1,23 +1,24 @@
 ---
-title: Workflow-Daten verwenden
+title: Verwenden von Workflow-Daten
 description: Erfahren Sie, wie Sie die Workflow-Daten verwenden.
 feature: Workflows, Data Management
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 75%
+exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
-# Workflow-Daten verwenden{#how-to-use-workflow-data}
+# Verwenden von Workflow-Daten{#how-to-use-workflow-data}
 
-Sie können Workflow-Aktivitäten verwenden, um mehrere Aufgaben auszuführen. Im Folgenden finden Sie Beispiele zur Aktualisierung der Datenbank durch die Erstellung von Listen, die Verwaltung von Abonnements, den Versand von Nachrichten über einen Workflow oder die Anreicherung von Sendungen und Zielgruppen.
+Sie können Workflow-Aktivitäten zur Durchführung unterschiedlicher Aufgaben verwenden. Im Folgenden finden Sie Beispiele zur Aktualisierung der Datenbank durch die Erstellung von Listen, die Verwaltung von Abonnements, den Versand von Nachrichten über einen Workflow oder die Anreicherung von Sendungen und ihren Audiences.
 
-Eine Reihe von Workflow-Anwendungsfällen finden Sie unter [diesem Abschnitt](workflow-use-cases.md).
+Mehrere Anwendungsfälle für Workflows finden Sie in [diesem Abschnitt](workflow-use-cases.md).
 
 ## Lebenszyklus der Arbeitsdaten {#data-life-cycle}
 
-### Workflow-temporäre Arbeitstabelle {#work-table}
+### Temporäre Arbeitstabelle für Workflows {#work-table}
 
 In einem Workflow werden die von einer Aktivität zur anderen übertragenen Daten in temporären Arbeitstabellen gespeichert.
 
@@ -29,11 +30,11 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
 * **[!UICONTROL Zielgruppe anzeigen…]**
 
-   In diesem Menü werden die verfügbaren Daten zur Zielpopulation angezeigt.
+   In diesem Menü werden die verfügbaren Daten der Zielpopulation angezeigt.
 
    ![](assets/wf-right-click-display.png)
 
-   Sie können auf die Struktur der Arbeitstabelle im **[!UICONTROL Schema]** Registerkarte.
+   Sie können auf die Struktur der Arbeitstabelle in der Registerkarte **[!UICONTROL Schema]** zugreifen.
 
    ![](assets/wf-right-click-schema.png)
 
@@ -45,16 +46,16 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
    Mehr dazu finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target=&quot;_blank&quot;}.
 
-Die Zielgruppendaten werden im Verlauf der Workflow-Ausführung nach und nach bereinigt. Nur die letzte Arbeitstabelle bleibt zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Kreuzen Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** an.
+Die Zielgruppendaten werden im Verlauf der Workflow-Ausführung bereinigt. Nur die letzte Arbeitstabelle bleibt zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Kreuzen Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** an.
 
 ![](assets/wf-purge-data-option.png)
 
 >[!CAUTION]
 >
->Diese Option muss **never** in einem **production** Arbeitsablauf. Diese Option wird zur Analyse der Ergebnisse verwendet und ist nur für Testzwecke konzipiert und darf daher nur in Entwicklungs- oder Staging-Umgebungen verwendet werden.
+>Diese Option darf **nie** in einem **Produktions**-Workflow aktiviert werden. Diese Option wird zur Analyse der Ergebnisse verwendet und ist nur für Testzwecke konzipiert. Sie darf daher nur in Entwicklungs- oder Staging-Umgebungen verwendet werden.
 
 
-### Zieldaten nutzen {#target-data}
+### Verwenden der Zieldaten {#target-data}
 
 Die in der temporären Arbeitstabelle des Workflows gespeicherten Daten stehen für Personalisierungsaufgaben zur Verfügung. Daten können in Personalisierungsfeldern verwendet werden.
 
@@ -64,9 +65,9 @@ Auf diese Weise können Sie beispielsweise Daten verwenden, die über eine Liste
 %= targetData.FIELD %
 ```
 
-Personalisierungsinformationen vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) stehen nur in Zielgruppen-Workflows zur Verfügung. Dies bedeutet, dass die Versandzielgruppe im Workflow zu bestimmen und in der in den Versand eingehenden Transition zu übermitteln ist.
+Personalisierungselemente vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) stehen in Zielgruppen-Workflows nicht zur Verfügung. Dies bedeutet, dass die Versandzielgruppe im Workflow bestimmt und in der eingehenden  Transition des Versands spezifiziert werden muss.
 
-Im folgenden Beispiel wird eine Liste mit Kundeninformationen gesammelt, die in einer personalisierten E-Mail verwendet werden können. Gehen Sie wie folgt vor:
+Im folgenden Beispiel sollen Kundeninformationen in einer Liste gesammelt und dann in einer personalisierten E-Mail verwendet werden. Gehen Sie wie folgt vor:
 
 1. Erstellen Sie einen Workflow, um die Informationen zu sammeln, sie mit der Datenbank abzustimmen und den Versand zu starten.
 
@@ -84,11 +85,11 @@ Im folgenden Beispiel wird eine Liste mit Kundeninformationen gesammelt, die in 
    [...]
    ```
 
-   Um die Datei zu laden, konfigurieren Sie die **[!UICONTROL Laden (Datei)]** Aktivität wie folgt:
+   Um die Datei zu laden, konfigurieren Sie die Aktivität **[!UICONTROL Laden (Datei)]** wie folgt:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Konfigurieren Sie die **[!UICONTROL Anreicherung]** -Aktivität verwenden, um die erfassten Daten mit denen der Adobe Campaign-Datenbank abzustimmen. Hier dient die Kundennummer als Abstimmschlüssel:
+1. Konfigurieren Sie nun eine Aktivität vom Typ **[!UICONTROL Anreicherung]**, um die geladenen Daten mit denen, die sich schon in der Adobe Campaign-Datenbank befinden, abzustimmen. Hier dient die Kundennummer als Abstimmschlüssel:
 
    ![](assets/wf-targetdata-sample-3.png)
 
@@ -117,9 +118,9 @@ Im folgenden Beispiel wird eine Liste mit Kundeninformationen gesammelt, die in 
 
 ## Aktualisieren der Datenbank {#update-the-database}
 
-Alle in Workflows erhobenen Daten können zur Aktualisierung der Datenbank oder in Sendungen verwendet werden, um beispielsweise die Möglichkeiten der Inhaltspersonalisierung zu ergänzen (Einfügung der Anzahl von Versicherungspolicen, des durchschnittlichen Warenkorbs im vergangenen Jahr etc.) oder die Zielgruppenbestimmung zu verfeinern (eine Nachricht an die Mitversicherten adressieren, die 1.000 besten Kunden ansprechen etc.). Diese Daten können auch exportiert oder in einer Liste archiviert werden.
+Alle in Workflows erfassten Daten können zur Aktualisierung der Datenbank oder in Sendungen verwendet werden, um beispielsweise die Möglichkeiten der Inhaltspersonalisierung zu ergänzen (Einfügung der Anzahl von Versicherungspolicen, des durchschnittlichen Warenkorbs im vergangenen Jahr etc.) oder die Zielgruppenbestimmung zu verfeinern (eine Nachricht an die Mitversicherten adressieren, die 1.000 besten Kunden ansprechen etc.). Diese Daten können auch exportiert oder in einer Liste archiviert werden.
 
-### Listen aktualisieren  {#list-updates}
+### Aktualisieren von Listen  {#list-updates}
 
 Zur Aktualisierung der Adobe-Campaign-Datenbank und von Listen stehen zwei dedizierte Aktivitäten zur Verfügung:
 
@@ -137,7 +138,4 @@ Zur Aktualisierung der Adobe-Campaign-Datenbank und von Listen stehen zwei dediz
 
 ### Verwalten von Abonnements {#subscription-management}
 
-Die An- und Abmeldung von Empfängern für einen Informationsdienst im Rahmen eines Workflows wird im Abschnitt [An-/Abmeldedienst](subscription-services.md) beschrieben.
-
-
-
+Die An- und Abmeldung von Empfängern für einen Informationsdienst im Rahmen eines Workflows wird im Abschnitt [Abonnements](subscription-services.md) beschrieben.
