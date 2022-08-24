@@ -3,10 +3,11 @@ product: campaign
 title: Campaign Workflow-Heatmap
 description: Überwachen Sie Ihre Workflows mit Workflow-Heatmap.
 feature: Workflows, Heatmap
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 97%
+exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 97%
 
 Campaign Workflow-Heatmap besteht aus einer farbcodierten grafischen Darstellung aller derzeit ausgeführten Workflows. Sie steht nur **Campaign-Administratoren** zur Verfügung.
 
-Hier finden Sie weitere Möglichkeiten zur Überwachung von Campaign-Prozessen in .
+Entdecken Sie hier weitere Möglichkeiten, Campaign-Prozesse zu überwachen.
 
 ## Erste Schritte mit der Workflow-Heatmap {#about-the-workflow-heatmap}
 
@@ -74,7 +75,7 @@ Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgend
 
 1. Sie können auch nach dem **[!UICONTROL Workflow-Typ]** filtern:
 
-   * **[!UICONTROL Technisch]** : Nur [integrierte technische Workflows](technical-workflows.md) und [Data-Management-Workflows](targeting-workflows.md#data-management) angezeigt werden.
+   * **[!UICONTROL Technisch]**: Es werden nur [integrierte technische Workflows](technical-workflows.md) und [Daten-Management-Workflows](targeting-workflows.md#data-management) angezeigt.
    * **[!UICONTROL Marketing]**: Es werden nur Workflows angezeigt, die mit einer Marketing-Kampagne verknüpft sind, die als [Kampagnen-Workflows](campaign-workflows.md) bezeichnet werden.
 
 1. Um einen bestimmten Workflow nach Namen zu suchen, können Sie auch das Feld **[!UICONTROL Namensfilter für Workflows]** verwenden.
