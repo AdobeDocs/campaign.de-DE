@@ -1,25 +1,26 @@
 ---
 product: campaign
-title: Assets, Dokumente und Versandentwürfe von Marketing-Kampagnen
+title: Assets, Dokumente und Versandentwürfe für Marketing-Kampagnen
 description: Weitere Informationen zu Dokumenten und Versandentwürfen für Marketing-Kampagnen
 feature: Campaigns
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 69%
+exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 # Verwalten von Assets und Dokumenten {#manage-assets-documents}
 
-Sie können einer Kampagne verschiedene Dokumente zuordnen: Berichte, Fotos, Webseiten, Diagramme usw. Diese Dokumente können in jedem beliebigen Format vorliegen.
+Sie können mit einer Kampagne verschiedene Dokumente verbinden: Berichte, Fotos, Web-Seiten, Diagramme usw. Diese Dokumente können ein beliebiges Format haben.
 
 In einer Kampagne können Sie auch auf andere Elemente verweisen, wie z. B. Werbegutscheine oder Sonderangebote in Bezug auf eine bestimmte Marke oder ein bestimmtes Geschäft usw. Wenn diese Elemente in einem Entwurf enthalten sind, können sie einem Briefpost-Versand zugeordnet werden. [Weitere Informationen](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 
 >[!CAUTION]
 >
->Diese Funktion wurde für kleine Assets und Dokumente entwickelt.
+>Diese Funktion ist für kleine Assets und Dokumente vorgesehen.
 
 <!--
 >[!NOTE]
@@ -29,9 +30,9 @@ In einer Kampagne können Sie auch auf andere Elemente verweisen, wie z. B. Wer
 
 ## Dokumente hinzufügen {#add-documents}
 
-Dokumente können einer Kampagne (kontextrelevante Dokumente) oder einem Programm (allgemeine Dokumente) zugeordnet werden.
+Dokumente können auf Kampagnenebene (kontextbezogene Dokumente) oder Programmebene (allgemeine Dokumente) zugeordnet werden.
 
-Bei Kampagnen wird die Variable **[!UICONTROL Dokumente]** enthält:
+Für eine Kampagne enthält die Registerkarte **[!UICONTROL Dokumente]**:
 
 * die Liste aller für den Inhalt notwendigen Dokumente (Vorlagen, Bilder usw.), die von berechtigten Adobe-Campaign-Benutzern lokal heruntergeladen werden können;
 * Informationen für den Router enthaltende Dokumente, wenn vorhanden.
@@ -40,11 +41,11 @@ Die Dokumente werden über den Tab **[!UICONTROL Bearbeiten > Dokumente]** einem
 
 ![](assets/op_add_document.png)
 
-Sie können einer Kampagne auch über den entsprechenden Link im Dashboard ein Dokument hinzufügen.
+Es besteht darüber hinaus die Möglichkeit, Dokumente über den entsprechenden Link im Dashboard zu einer Kampagne hinzuzufügen.
 
 ![](assets/add_a_document_in_op.png)
 
-Klicken Sie auf **[!UICONTROL Detail..]** -Symbol, um den Inhalt einer Datei anzuzeigen und Informationen hinzuzufügen:
+Klicken Sie auf das Symbol **[!UICONTROL Detail...]**, um den Inhalt einer Datei anzusehen und ergänzende Informationen hinzuzufügen.
 
 ![](assets/add_document_details.png)
 
@@ -54,28 +55,28 @@ Im Abschnitt **[!UICONTROL Dokument(e)]** des Kampagnen-Dashboards werden alle d
 
 Über die Links können die Dokumente geöffnet und bearbeitet werden.
 
-## Versandentwürfe verwenden {#delivery-outlines}
+## Verwenden von Versandentwürfen {#delivery-outlines}
 
-Ein Versandentwurf ist strukturiert aus Elementen (Dokumenten, Geschäften, Gutscheinen usw.) der vom Unternehmen für eine bestimmte Kampagne erstellt wurde. Sie wird im Zusammenhang mit Briefpost-Sendungen verwendet.
+Ein Versandentwurf besteht aus einem strukturierten Satz von Elementen (Dokumente, Geschäfte, Werbegutscheine usw.), der vom Unternehmen für eine bestimmte Kampagne erstellt wurde. Er wird im Zusammenhang mit Briefpost-Sendungen verwendet.
 
-Diese Elemente sind in Versandentwürfen gruppiert und jedem Versandentwurf wird ein Versand zugeordnet. Auf diesen Versand wird in der an den **Dienstleister** gesendeten Extraktionsdatei verwiesen, um an den Versand angehängt zu werden. Sie können beispielsweise einen Versandentwurf erstellen, der sich auf eine Einheit und die verwendeten Marketingbroschüren bezieht.
+Diese Elemente sind in Versandentwürfen gruppiert und jeder Versandentwurf ist mit einem Versand verbunden. Auf diesen Versand wird in der an den **Dienstleister** gesendeten Extraktionsdatei verwiesen, damit diese Elemente an den Versand angehängt werden. Sie können beispielsweise einen Versandentwurf erstellen, der sich auf eine Unternehmenseinheit und die von ihr verwendeten Marketing-Prospekte bezieht.
 
-Versandentwürfe ermöglichen es, für eine Kampagne externe Elemente zu strukturieren, die dem Versand nach bestimmten Kriterien zugeordnet werden: verwandte Einheit, erteiltes Werbeangebot, Einladung zu einer lokalen Veranstaltung usw.
+Versandentwürfe ermöglichen es, für eine Kampagne externe Elemente zu strukturieren und nach bestimmten Kriterien zu einem Versand hinzuzufügen: entsprechende Filiale, Sonderangebot, Einladung zu einem lokalen Event usw.
 
 >[!CAUTION]
 >
 >Versandentwürfe sind auf Briefpost-Kampagnen beschränkt.
 
-### Versandentwurf erstellen {#create-an-outline}
+### Erstellen eines Versandentwurfs {#create-an-outline}
 
-Um einen Versandentwurf zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Versandentwürfe]** Unterregisterkarte im **[!UICONTROL Bearbeiten > Dokumente]** der betreffenden Kampagne.
+Um einen Versandentwurf zu erstellen, klicken Sie auf die Unterregisterkarte **[!UICONTROL Versandentwürfe]** auf der Registerkarte **[!UICONTROL Bearbeiten > Dokumente]** der betreffenden Kampagne.
 
 ![](assets/add-a-delivery-outline.png)
 
 
 >[!NOTE]
 >
->Wenn dieser Tab nicht angezeigt wird, ist diese Funktion für diese Kampagne nicht verfügbar oder der Briefpost-Versand ist in Ihrer Instanz nicht aktiviert. Siehe Abschnitt [Kampagnenvorlagenkonfiguration](marketing-campaign-templates.md#campaign-templates) oder Ihrem Lizenzvertrag.
+>Wenn diese Registerkarte nicht angezeigt wird, ist diese Funktion für diese Kampagne nicht verfügbar oder der Briefpost-Versand ist in Ihrer Instanz nicht aktiviert. Weitere Informationen finden Sie im Abschnitt [Kampagnenvorlagenkonfiguration](marketing-campaign-templates.md#campaign-templates) oder in Ihrem Lizenzvertrag.
 
 Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wird ein Navigationsbaum für die Kampagne erstellt:
 
@@ -84,7 +85,7 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 
 ![](assets/del-outline-add-new-item.png)
 
-Ein Entwurf kann Elemente, Personalisierungsfelder und Angebote enthalten:
+Ein Versandentwurf kann Artikel, Personalisierungsfelder und Angebote enthalten:
 
 * Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
 * Personalisierungsfelder ermöglichen die Erstellung von mit Sendungen (und nicht Empfängern) verbundenen Personalisierungselementen. So können Werte erstellt werden, die in Sendungen mit einer spezifischen Zielgruppe verwendet werden (z. B. Willkommensangebot, prozentuale Ermäßigung). Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren...]** in den jeweiligen Entwurf importiert.
