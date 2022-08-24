@@ -4,9 +4,9 @@ title: SQL Data Management
 description: Erfahren Sie mehr über die Workflow-Aktivität "SQL-Daten-Management".
 feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
    ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
 
 * Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein.
-* Der Benutzer, der den Workflow ausführt, muss über ** verfügen.
+* Die Person, die den Workflow ausführt, muss über ** verfügen.
 
 ## SQL-Daten-Management-Aktivität konfigurieren {#configuring-the-sql-data-management-activity}
 
