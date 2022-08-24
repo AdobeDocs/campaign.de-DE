@@ -4,9 +4,9 @@ title: Dateiübertragung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Dateiübertragung".
 feature: Workflows, Data Management
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Bei Verwendung einer S3-, Azure Blob Storage- oder SFTP-Verbindung ist es außer
 
 >[!NOTE]
 >
->Best Practices und Fehlerbehebung bei der Verwendung von SFTP-Servern werden im Detail beschrieben.
+>Best Practices und Fehlerbehebungen bei der Verwendung von SFTP-Servern finden Sie hier:
 
 ## Eigenschaften {#properties}
 
