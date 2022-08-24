@@ -1,16 +1,17 @@
 ---
 product: campaign
-title: Aggregat berechnen
+title: Durchführen der Aggregat-Berechnung
 description: Erfahren Sie, wie Sie Aggregate in Abfragen berechnen
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 97%
+exl-id: 00e564b5-3c8e-45d4-b240-c872a8b8ccb6
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
-# Aggregat berechnen {#performing-aggregate-computing}
+# Durchführen der Aggregat-Berechnung {#performing-aggregate-computing}
 
 In diesem Beispiel wird die Anzahl der Empfänger gesucht, die in Berlin wohnen, geordnet nach Geschlecht.
 
