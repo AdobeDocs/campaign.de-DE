@@ -4,8 +4,8 @@ title: Abfrage mit einer Viele-zu-viele-Beziehung
 description: Erfahren Sie, wie Sie mit einer Viele-zu-viele-Beziehung Abfragen durchführen können
 feature: Query Editor
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '469'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
