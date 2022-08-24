@@ -3,18 +3,19 @@ product: campaign
 title: Kohärenzregeln
 description: Kohärenzregeln
 feature: Typology Rules
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 96%
+exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 # Kohärenzregeln{#consistency-rules}
 
-Adobe Campaign ermöglicht die Sicherstellung der Kohärenz Ihrer Marketingkommunikation mithilfe einer Reihe von in den Kampagnentypologien enthaltenen Regeln. Diese dienen dazu, die an die Empfänger übermittelten Sendungen in Bezug auf ihr Volumen, ihre Art, ihre Relevanz etc. zu kontrollieren.
+Adobe Campaign ermöglicht die Sicherstellung der Kohärenz Ihrer Marketing-Kommunikation mithilfe einer Reihe von in den Kampagnentypologien enthaltenen Regeln. Diese dienen dazu, die an die Empfänger übermittelten Sendungen in Bezug auf Volumen, Art, Relevanz etc. zu kontrollieren.
 
-Mithilfe von **Kapazitätsregeln** kann etwa verhindert werden, dass die Plattform, die den Versand verarbeitet, überlastet wird. Zum Beispiel dürfen Sonderangebote mit einem Download-Link nicht an eine zu große Population gesendet werden, um den Server nicht zu überladen; eine Telefonkampagne darf die Verarbeitungskapazität der Telefonzentrale nicht überschreiten usw.
+Mithilfe von **Kapazitätsregeln** kann etwa verhindert werden, dass die Plattform, die den Versand verarbeitet, überlastet wird. Zum Beispiel dürfen Sonderangebote mit einem Download-Link nicht an eine zu große Population gesendet werden, um den Server nicht zu überlasten, eine Telefonkampagne darf die Verarbeitungskapazität der Telefonzentrale nicht überschreiten usw.
 
 ## Kontrollieren der Kapazität {#control-capacity}
 
@@ -50,7 +51,7 @@ Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
 ## Festlegen der maximalen Auslastung {#define-the-maximum-load}
 
-Um die maximale Auslastung zu definieren, müssen Sie Verfügbarkeitszeilen festlegen. Dazu stehen zwei Optionen zur Verfügung: können Sie manuell [eine oder mehrere Verfügbarkeitszeilen erstellen](#add-availability-lines-one-by-one) oder Verfügbarkeitsbereiche erstellen. Die Häufigkeit dieser Zeiträume kann automatisiert werden. [Weitere Informationen](#add-a-set-of-availability-lines).
+Um die maximale Auslastung zu definieren, müssen Sie Verfügbarkeitszeilen festlegen. Dazu stehen zwei Optionen zur Verfügung: Sie können manuell [eine oder mehrere Verfügbarkeitszeilen erstellen](#add-availability-lines-one-by-one) oder ganze Verfügbarkeitsbereiche erstellen. Die Häufigkeit dieser Zeiträume kann automatisiert werden. [Weitere Informationen](#add-a-set-of-availability-lines).
 
 ### Verfügbarkeitszeilen einzeln hinzufügen {#add-availability-lines-one-by-one}
 
