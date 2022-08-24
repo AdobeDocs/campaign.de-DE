@@ -4,9 +4,9 @@ title: Anmeldedienste
 description: Erfahren Sie mehr über die Workflow-Aktivität "Anmeldedienste".
 feature: Workflows, Targeting Activity, Subscription Services Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Die Konfiguration der Aktivität besteht in der Angabe eines Titels, die Auswahl
 1. Kreuzen Sie je nach Bedarf **[!UICONTROL Anmeldung]** oder **[!UICONTROL Abmeldung]** an.
 1. Aktivieren Sie die Option **[!UICONTROL Benachrichtigung versenden]**, um den Empfänger von seiner An- oder Abmeldung in Kenntnis zu setzen.
 
-   Der Inhalt dieser Nachricht wird in einer Versandvorlage für den Informationsdienst angegeben. Weitere Informationen hierzu finden Sie in diesem .
+   Der Inhalt dieser Nachricht wird in der Versandvorlage des entsprechenden Informations-Services definiert. Weiterführende Informationen hierzu finden Sie hier:
 
 ## Anwendungsbeispiel: Empfänger einer Liste für einen Newsletter anmelden {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
