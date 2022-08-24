@@ -4,9 +4,9 @@ title: Aufspaltung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Aufspaltung".
 feature: Workflows, Targeting Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 92%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 
 Da die Aktivität die eingehenden Populationen nicht vereinigt, wird im Fall von mehreren eingehenden Transitionen empfohlen, eine **[!UICONTROL Vereinigung]** vorzuschalten, um eine korrekte Ergebnisfindung zu gewährleisten.
 
-Ein Beispiel der verwendeten Aufspaltungsaktivität finden Sie unter [diesem Abschnitt](targeting-workflows.md#create-subsets-using-the-split-activity).
+Weiterführende Informationen zur Aufspaltungsaktivität finden Sie in [diesem Abschnitt](targeting-workflows.md#create-subsets-using-the-split-activity).
 
 Ein Beispiel für die Verwendung der Aufspaltungs-Aktivität zur Segmentierung der Zielgruppe in unterschiedliche Populationen mithilfe von Filterbedingungen finden Sie in [diesem Abschnitt](cross-channel-delivery-workflow.md).
 
@@ -61,7 +61,7 @@ Gehen Sie wie folgt vor:
 
    Falls angegeben, wird der Segment-Code aller Teilmengen automatisch in einer Zusatzspalte gespeichert. Auf diese Spalte kann im Rahmen eines Versands über die Personalisierungsfelder zugegriffen werden.
 
-## Anzahl an Datensätzen in Teilmengen begrenzen {#limit-the-number-of-subset-records}
+## Begrenzen der Anzahl an Datensätzen in Teilmengen {#limit-the-number-of-subset-records}
 
 Es besteht die Möglichkeit, die Anzahl an Datensätzen in Teilmengen zu begrenzen, wenn Sie nicht alle potentiellen Empfänger ansprechen wollen.
 
@@ -92,12 +92,12 @@ Es besteht die Möglichkeit, die Anzahl an Datensätzen in Teilmengen zu begrenz
    * **[!UICONTROL Größe (in % von der Teilmenge)]**: Begrenzt die Datensätze auf einen prozentualen Anteil in Bezug auf die Teilmenge (und nicht auf die Eingangspopulation).
    * **[!UICONTROL Maximale Größe]**: Begrenzt die Datensätze auf eine anzugebende Anzahl.
    * **[!UICONTROL Durch Datengruppierung]**: Begrenzt die Datensätze auf die Profile der Eingangspopulation, die in einem anzugebenden Feld einen bestimmten Wert aufweisen. [Weitere Informationen](#limit-the-number-of-subset-records-by-data-grouping).
-   * **[!UICONTROL Durch Datengruppierung (in %)]**: Begrenzt die Datensätze auf die Profile der Eingangspopulation, die in einem anzugebenden Feld einen bestimmten Wert aufweisen, durch einen Prozentsatz. [Weitere Informationen](#limit-the-number-of-subset-records-by-data-grouping).
-   * **[!UICONTROL Durch Datenverteilung]**: Begrenzt die Datensätze, wenn die Gruppierungsfelder zu viele Werte aufweisen oder wenn Sie die Werte nicht bei jeder Aufspaltung neu erfassen möchten (erfordert das Modul **[!UICONTROL Dezentrales Marketing]**). [Weitere Informationen](#limit-the-number-of-subset-records-per-data-distribution).
+   * **[!UICONTROL Durch Datengruppierung (in %)]**: Damit können Sie die Anzahl der Datensätze in Abhängigkeit von den Werten in einem bestimmten Feld der eigehenden Population durch einen Prozentsatz begrenzen. [Weitere Informationen](#limit-the-number-of-subset-records-by-data-grouping).
+   * **[!UICONTROL Durch Datenverteilung]**: Begrenzt die Datensätze, wenn die Gruppierungsfelder zu viele Werte aufweisen oder wenn Sie die Werte nicht bei jeder Aufspaltung neu eingeben möchten (erfordert das Modul **[!UICONTROL Dezentrales Marketing]**). [Weitere Informationen](#limit-the-number-of-subset-records-per-data-distribution).
 
 1. Klicken Sie auf **[!UICONTROL Beenden]**, um die Begrenzungskriterien zu bestätigen. Die Konfiguration wird im zentralen Bereich des Editors zusammenfassend angezeigt.
 
-## Anzahl an Datensätzen in Teilmengen durch Datengruppierung begrenzen {#limit-the-number-of-subset-records-by-data-grouping}
+## Begrenzen der Anzahl an Datensätzen in Teilmengen durch Datengruppierung {#limit-the-number-of-subset-records-by-data-grouping}
 
 Die Anzahl an Datensätzen kann mithilfe einer Datengruppierung begrenzt werden. Dies kann entweder über einen prozentualen Anteil oder eine feste Größe geschehen.
 
@@ -117,17 +117,17 @@ Wenn Sie beispielsweise das Feld **[!UICONTROL Sprache]** als Gruppierungsfeld a
 
 1. Klicken Sie auf **[!UICONTROL Beenden]**, um die Begrenzungen zu bestätigen und zur Konfiguration der Aufspaltungsaktivität zurückzukehren.
 
-## Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen {#limit-the-number-of-subset-records-per-data-distribution}
+## Begrenzen der Anzahl an Datensätzen in Teilmengen durch Datenverteilung {#limit-the-number-of-subset-records-per-data-distribution}
 
-Wenn Ihre Gruppierungsfelder zu viele Werte enthalten oder Sie vermeiden möchten, dass Werte für jede neue Aufspaltungsaktivität zurückgesetzt werden, können Sie mit Adobe Campaign eine Beschränkung für die Datenverteilung erstellen. Bei Auswahl [Datenbegrenzungswerte](#create-subsets) ), wählen Sie die **[!UICONTROL Durch Datenverteilung]** und wählen Sie eine Vorlage aus dem Dropdown-Menü aus. Die Erstellung einer Datenverteilungsvorlage wird nachfolgend erläutert.
+Wenn Ihre Gruppierungsfelder zu viele Werte enthalten oder Sie vermeiden möchten, dass Werte für jede neue Aufspaltungsaktivität zurückgesetzt werden, können Sie mit Adobe Campaign eine Beschränkung für die Datenverteilung erstellen. Bei der Auswahl von [Datenbegrenzungswerten](#create-subsets) (Abschnitt) wählen Sie die Option **[!UICONTROL Durch Datenverteilung]** und anschließend eine Vorlage aus dem Dropdown-Menü aus. Die Erstellung einer Datenverteilungsvorlage wird nachfolgend erläutert.
 
-Ein Beispiel für die **[!UICONTROL Lokale Validierung]** Aktivität mit einer Verteilungsvorlage, siehe [diese Seite](local-approval-activity.md).
+Ein Beispiel für die Aktivität **[!UICONTROL Lokale Validierung]** mit einer Verteilungsvorlage finden Sie auf [dieser Seite](local-approval-activity.md).
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
 >[!CAUTION]
 >
->Diese Funktion ist nur mit der Funktion [Distributed Marketing-Add-on](../distributed-marketing/about-distributed-marketing.md). Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Diese Funktion ist nur mit dem Add-on [Verteiltes Marketing](../distributed-marketing/about-distributed-marketing.md) verfügbar. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe einer Gruppierungswertliste. Gehen Sie wie folgt vor, um eine entsprechende Vorlage zu erstellen:
 
@@ -146,11 +146,11 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
    * **[!UICONTROL Verteilungsfeld]**: Wählen Sie ausgehend von der Zielgruppendimension ein Feld aus. Wenn Sie beispielsweise das Feld **[!UICONTROL E-Mail-Domain]** auswählen, werden die Empfänger nach ihren Domains verteilt.
    * **[!UICONTROL Verteilungstyp]**: Wählen Sie hier aus, ob der Begrenzungswert im Tab **[!UICONTROL Verteilung]** als **[!UICONTROL Feste Größe]** oder als **[!UICONTROL Größe in Prozent]** ausgedrückt werden soll.
    * ** .
-   * **[!UICONTROL Validierungsspeicherung]**: Wenn Sie eine [Lokale Validierung](local-approval.md) Aktivität in Ihrem Zielgruppen-Workflow das Schema, in dem die Validierungsergebnisse gespeichert werden. Sie müssen ein Speicherschema pro Zielgruppenbestimmungsschema angeben. Wenn Sie das Zielgruppenbestimmungsschema für **[!UICONTROL Empfänger]** verwenden, geben Sie das standardmäßige Speicherschema **[!UICONTROL Lokale Validierung der Empfänger]** ein.
+   * **[!UICONTROL Validierungsspeicherung]**: Wenn Sie die Aktivität [Lokale Validierung](local-approval.md) in Ihrem Zielgruppen-Workflow verwenden, geben Sie das Schema ein, in dem die Validierungsergebnisse gespeichert werden. Sie müssen ein Speicherschema pro Zielgruppenbestimmungsschema angeben. Wenn Sie das Zielgruppenbestimmungsschema für **[!UICONTROL Empfänger]** verwenden, geben Sie das standardmäßige Speicherschema **[!UICONTROL Lokale Validierung der Empfänger]** ein.
 
       Bei einer einfachen Begrenzung durch Datenverteilung ohne lokale Validierung, ist im Feld **[!UICONTROL Validierungsspeicherung]** keine Angabe erforderlich.
 
-1. Wenn Sie eine [Lokale Validierung](local-approval.md) Aktivität, geben Sie die **[!UICONTROL Erweiterte Einstellungen]** für die Verteilungsvorlage:
+1. Wenn Sie die Aktivität [Lokale Validierung](local-approval.md) verwenden, geben Sie die **[!UICONTROL Erweiterten Einstellungen]** für die Verteilungsvorlage ein:
 
    ![](assets/local_validation_data_distribution_3.png)
 
@@ -184,13 +184,13 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
       Diese Spalte wird durch das Feld **[!UICONTROL Verteilungstyp]** im **[!UICONTROL Allgemein]**-Tab bestimmt.
 
    * **[!UICONTROL Titel]**: Vergeben Sie für jeden Verteilungswert einen Titel.
-   * **[!UICONTROL Gruppe oder Benutzer]**: wenn Sie eine[Lokale Validierung](local-approval.md) -Aktivität den für jeden Verteilungswert zugewiesenen Benutzer oder die Benutzergruppe auswählen.
+   * **[!UICONTROL Gruppe oder Benutzer]**: Wenn Sie eine [Lokale Validierung](local-approval.md) verwenden, wählen Sie den/die Benutzende(n) oder die Benutzergruppe aus, die jedem Verteilungswert zugeordnet sind.
 
-      Bei einer einfachen Begrenzung durch Datenverteilung ohne lokale Validierung ist ein Zuweisung in der Spalte **[!UICONTROL Benutzer oder Benutzergruppe]** nicht erforderlich.
+      Bei einer einfachen Begrenzung durch Datenverteilung ohne lokale Validierung ist in der Spalte **[!UICONTROL Benutzer oder Benutzergruppe]** keine Eingabe erforderlich.
 
       >[!CAUTION]
       >
-      >Vergewissern Sie sich, dass den Benutzern die entsprechenden Berechtigungen zugewiesen wurden.
+      >Stellen Sie sicher, dass die Benutzenden über die nötigen Berechtigungen verfügen.
 
 ## Filterparameter {#filtering-parameters}
 
