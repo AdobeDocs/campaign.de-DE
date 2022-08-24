@@ -4,9 +4,9 @@ title: Laden (SOAP)
 description: Laden (SOAP)
 feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor:
 
    Durch Klick auf **[!UICONTROL Beispiel erneut analysieren]**, können Sie das Beispiel aktualisieren.
 
-   Sie können das Format der Spaltendaten auch über ** personalisieren.
+   Sie können auch das Format der Spaltendaten über die Schaltfläche ** personalisieren.
 
 1. Als Kennung kann die Zeilennummer verwendet werden und/oder Sie können angeben, dass der SOAP-Aufruf mehrere Elemente zurückgibt.
 1. Geben Sie die erforderlichen Scripts in den entsprechenden Tabs ein:
