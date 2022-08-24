@@ -4,9 +4,9 @@ title: Daten-Update
 description: Erfahren Sie mehr über die Workflow-Aktivität "Daten-Update".
 feature: Workflows, Targeting Activity, Data Management
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Die Aktualisierung mit Fusion von Kollektionen ermöglicht die Aktualisierung vo
 
 1. Geben Sie die in den Hauptdatensatz zu verschiebenden Kollektionen und die zu aktualisierenden Felder an.
 
-   Geben Sie die Regeln an, die für diese gelten, sobald ein oder mehrere sekundäre Datensätze identifiziert wurden. Dazu können Sie den Ausdruckseditor verwenden. Weitere Informationen hierzu finden Sie in diesem . Sie müssen beispielsweise angeben, dass aus allen verschiedenen Datensätzen der zuletzt aktualisierte Wert beibehalten werden soll.
+   Definieren Sie die Regeln, die hierfür gelten sollen, sobald ein oder mehrere sekundäre Datensätze identifiziert wurden. Hierzu können Sie den Ausdruckseditor verwenden. Weiterführende Informationen dazu finden Sie hier:. Sie können beispielsweise angeben, dass bei Werten aus verschiedenen möglichen Datensätzen jeweils der zuletzt aktualisierte Wert beibehalten werden soll.
 
    Geben Sie die Bedingungen zur Berücksichtigung der Regel an.
 
