@@ -3,10 +3,11 @@ product: campaign
 title: Erstellen eines Workflows
 description: Erfahren Sie, wie Sie einen Workflow erstellen
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 83%
+exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -14,17 +15,17 @@ ht-degree: 83%
 
 ## Erstellen eines neuen Workflows {#create-a-new-workflow}
 
-Der Workflow-Erstellungsfluss hängt vom Typ der Workflows ab. Sie haben folgende Möglichkeiten:
+Der Ablauf der Workflow-Erstellung hängt von der Art des Workflows ab. Sie haben folgende Möglichkeiten:
 
-* Erstellen [Zielgruppen-Workflows](#targeting-workflows) von **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Aufträge]** > **[!UICONTROL Zielgruppen-Workflows]** -Knoten des Explorers oder über die **[!UICONTROL Profile und Zielgruppen]** -Tab der Startseite über die **[!UICONTROL Zielgruppen-Workflows]** Unterregisterkarte.
+* Erstellen Sie [Zielgruppen-Workflows](#targeting-workflows) über den Knoten **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Zielgruppen-Workflows]** des Explorers oder über die Registerkarte **[!UICONTROL Profile und Zielgruppen]** der Startseite und die Unterregisterkarte **[!UICONTROL Zielgruppen-Workflows]**.
 
    ![](assets/create-targeting-wf.png)
 
-* Erstellen [Kampagnen-Workflows](#campaign-workflows) von **[!UICONTROL Zielbestimmungen und Workflows]** Tab einer Kampagne
+* Erstellen von [Kampagnen-Workflows](#campaign-workflows) über die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** einer Kampagne
 
-* Erstellen [Technische Workflows](#technical-workflows) von **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]** -Knoten des Explorers. Es empfiehlt sich, einen bestimmten Workflow-Ordner zu erstellen, um Ihre technischen Workflows zu speichern.
+* Erstellen Sie [Technische Workflows](#technical-workflows) über den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]** des Explorers. Es empfiehlt sich, einen speziellen Workflow-Ordner zu erstellen, um Ihre technischen Workflows zu speichern.
 
-Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Workflow-Liste, um einen neuen Workflow zu erstellen.
+Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Workflow-Liste.
 
 ![](assets/create_a_wf_icon.png)
 
@@ -38,9 +39,9 @@ In diesem Schritt werden die Aktivitäten im Diagramm positioniert, konfiguriert
 
 >[!NOTE]
 >
->Wird die Palette nicht angezeigt, klicken Sie in der Workflow-Symbolleiste auf die erste Schaltfläche, um sie anzuzeigen.
+>Sollte die Palette nicht angezeigt werden, können Sie sie durch Klick auf die erste Schaltfläche in der Workflow-Symbolleiste einblenden.
 
-Die Aktivitäten sind in den verschiedenen Tabs der Palette nach Kategorie geordnet. Die verfügbaren Tabs und Aktivitäten sind je nach Workflow-Typ unterschiedlich (technischer, Zielgruppen- oder Kampagnen-Workflow).
+Auf den einzelnen Registerkarten der Palette werden die Aktivitäten nach Kategorie geordnet angezeigt. Die verfügbaren Tabs und Aktivitäten sind je nach Workflow-Typ unterschiedlich (technischer, Zielgruppen- oder Kampagnen-Workflow).
 
 * Der erste Tab enthält Zielgruppen- und Datenmanipulationsaktivitäten. Diese Aktivitäten werden unter [Zielgruppenbestimmungsaktivitäten](targeting-activities.md) beschrieben.
 * Der zweite Tab enthält die Planungsaktivitäten, die in erster Linie der Koordination der anderen Aktivitäten dienen. Diese Aktivitäten werden unter [Steuerungsaktivitäten](flow-control-activities.md) beschrieben.
@@ -83,8 +84,8 @@ Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Element
 
    Die Symbole zur Anzeige des Fortschritts und der Protokolle werden in den folgenden Abschnitten beschrieben:
 
-   * [Fortschritt anzeigen](monitor-workflow-execution.md#displaying-progress)
-   * [Protokoll anzeigen](monitor-workflow-execution.md#displaying-logs)
+   * [Anzeigen des Fortschritts](monitor-workflow-execution.md#displaying-progress)
+   * [Anzeigen der Protokolle](monitor-workflow-execution.md#displaying-logs)
 
 * **Objektausrichtung**
 
@@ -110,7 +111,7 @@ Um die Aktivitäten besser zu verstehen und die Lesbarkeit des Workflows zu verb
 
 ![](assets/example1-comment.png)
 
-Diese Kommentare werden automatisch angezeigt, wenn Benutzer einen Bildlauf über die Aktivität durchführen.
+Diese Kommentare werden automatisch angezeigt, wenn Benutzer über die Aktivität scrollen.
 
 ![](assets/example2-comment.png)
 
@@ -121,9 +122,9 @@ Eine Workflow-Vorlage besteht aus einer Reihe von konfigurierten Eigenschaften u
 
 Die Konfiguration neuer Workflow-Vorlagen kann ausgehend von existierenden Vorlagen geschehen oder aber durch die Umwandlung eines existierenden Workflows in eine Vorlage.
 
-Workflow-Vorlagen werden im **[!UICONTROL Ressourcen > Vorlagen > Workflow-Vorlagen]** -Knoten des Explorers.
+Workflow-Vorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Workflow-Vorlagen]** des Explorers gespeichert.
 
-Neben den gängigen Workflow-Parametern können Sie in den Workflow-Eigenschaften der Vorlage auch den Ausführungsordner der auf Basis der Vorlage erstellten Workflows definieren.
+Neben den gängigen Workflow-Parametern können Sie in den Eigenschaften der Vorlage auch die Ausführungsdatei der auf Basis der Vorlage erstellten Workflows definieren.
 
 ![](assets/wf-template-properties.png)
 
@@ -157,7 +158,7 @@ Sie können jedoch eine Ansicht erstellen, die alle Workflows in Ihrer Instanz a
 Der neue Ordner **Workflows** wird erstellt.
 
 1. Klicken Sie mit der rechten Maustaste und wählen Sie **Eigenschaften** aus.
-1. Im **Einschränkung** Registerkarte, aktivieren Sie die **Dieser Ordner ist eine Ansicht** und klicken Sie auf **Speichern**.
+1. Aktivieren Sie auf der Registerkarte **Einschränkung** die Option **Dieser Ordner ist eine Ansicht** und klicken Sie auf **Speichern**.
 
    ![](assets/folder-is-a-view.png)
 
