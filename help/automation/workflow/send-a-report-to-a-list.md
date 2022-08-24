@@ -4,9 +4,9 @@ title: Senden eines Berichts an eine Liste
 description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine Liste senden.
 feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -30,15 +30,15 @@ Wechseln Sie zum Tab **[!UICONTROL Profile und Zielgruppen]**, klicken Sie auf d
 
 ![](assets/use_case_report_1.png)
 
-Weiterführende Informationen zur Erstellung von Listen finden Sie in diesem Abschnitt .
+Weiterführende Informationen zum Erstellen von Listen finden Sie hier:
 
 ## 2. Schritt: Erstellung der Versandvorlage {#step-2--creating-the-delivery-template}
 
-1. Gehen Sie im Adobe-Campaign-Explorer in den Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** und duplizieren Sie die Vorlage **[!UICONTROL E-Mail-Versand]**.
+1. Gehen Sie im Adobe Campaign-Explorer zum Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** und duplizieren Sie die vordefinierte Vorlage **[!UICONTROL E-Mail-Versand]**.
 
    ![](assets/use_case_report_2.png)
 
-   Weiterführende Informationen zur Erstellung von Versandvorlagen finden Sie in diesem Abschnitt .
+   Weiterführende Informationen zur Erstellung von Versandvorlagen finden Sie hier:
 
 1. Konfigurieren Sie die Vorlage, indem Sie Titel, Zielgruppe (d. h. die zuvor erstellte Empfängerliste), Betreff und Inhalt angeben.
 
@@ -46,7 +46,7 @@ Weiterführende Informationen zur Erstellung von Listen finden Sie in diesem Abs
 
 1. Bei jeder Ausführung des Workflows wird der Bericht zu **[!UICONTROL Trackingindikatoren]** aktualisiert (siehe [3. Schritt: Erstellung des Workflows](#step-3--creating-the-workflow)). Um die neueste Version des Berichts in den Versand einzubeziehen, müssen Sie einen **[!UICONTROL berechneten Anhang]** hinzufügen:
 
-   Weiterführende Informationen zur Erstellung eines berechneten Anhangs finden Sie in diesem .
+   Weiterführende Informationen zur Erstellung eines berechneten Anhangs finden Sie hier:
 
    * Klicken Sie auf den Link **[!UICONTROL Anhänge]**, dann auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Option **[!UICONTROL Berechneter Anhang...]** aus.
 
