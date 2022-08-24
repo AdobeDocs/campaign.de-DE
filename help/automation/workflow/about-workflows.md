@@ -3,10 +3,11 @@ product: campaign
 title: Über Workflows
 description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und Audiences, senden Sie Nachrichten und vieles mehr.
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 90%
+exl-id: 297aa4e3-b672-46b5-9016-5accee8568b8
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -24,17 +25,17 @@ In Adobe Campaign kommen Workflows in unterschiedlichsten Kontexten und zu versc
 
 Beispielhaft seien folgende Vorgänge genannt:
 
-* Design-Zielgruppen-Workflows. [Weitere Informationen](#targeting-workflows)
-* Kanalübergreifende Kampagnen koordinieren. [Weitere Informationen](#campaign-workflows)
-* Führen Sie technische Prozesse wie Bereinigung, Datenerfassung, Berechnungen und mehr durch. [Weitere Informationen](#technical-workflows)
+* Entwerfen von Zielgruppen-Workflows. [Weitere Informationen](#targeting-workflows)
+* Orchestrieren von kanalübergreifenden Kampagnen. [Weitere Informationen](#campaign-workflows)
+* Durchführen technischer Prozesse wie Bereinigung, Datenerfassung und Berechnungen. [Weitere Informationen](#technical-workflows)
 
-Ein Workflow ist eine Prozessdefinition: das Workflow-Diagramm, das eine Darstellung dessen darstellt, was passieren soll. Ein Workflow ist auch eine Instanz dieses Prozesses: eine Workflow-Instanz, die angibt, was tatsächlich passiert.
+In einem Workflow wird der Ablauf eines Prozesses definiert, der in einem Workflow-Diagramm dargestellt wird. Ein Workflow ist auch eine Instanz dieses Prozesses, da in der Workflow-Instanz der tatsächliche Verlauf darstellt wird.
 
-Die Workflow-Vorlage beschreibt die verschiedenen zu erfüllenden Aufgaben und ihre Abfolge. Aufgabenvorlagen werden als Aktivitäten bezeichnet und durch Symbole repräsentiert. Sie sind durch Transitionen miteinander verbunden.
+Die Workflow-Vorlage beschreibt die verschiedenen auszuführenden Aufgaben und ihre Abfolge. Aufgabenvorlagen werden als Aktivitäten bezeichnet und durch Symbole dargestellt. Sie sind durch Transitionen miteinander verbunden.
 
 ![](assets/example1.png)
 
-## Wichtigste Grundsätze
+## Grundsätze
 
 Jeder Workflow besteht aus:
 
