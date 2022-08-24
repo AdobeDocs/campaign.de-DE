@@ -4,8 +4,8 @@ description: Hier erfahren Sie, wie Sie in einem Workflow Audiences erstellen.
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '2366'
 ht-degree: 100%
 
 ---
@@ -88,11 +88,11 @@ Kreuzen Sie den gewünschten Formeltyp an, beispielsweise Aggregat.
 
 ![](assets/query_add_aggregate.png)
 
-Über die Option **[!UICONTROL Unterelement hinzufügen]** können die berechneten Daten in die Kollektion eingefügt werden. Sie können also aus der Kollektion stammende Zusatzdaten auswählen oder aus den Kollektionselementen Aggregate berechnen.
+Über die Option **[!UICONTROL Unterelement hinzufügen]** können die berechneten Daten in die Sammlung eingefügt werden. Sie können also aus der Sammlung stammende Zusatzdaten auswählen oder aus den Sammlungselementen Aggregate berechnen.
 
-Die Unterelemente erscheinen als Unterordner der Kollektion, der sie angehören.
+Die Unterelemente erscheinen als Unterordner der Sammlung, der sie angehören.
 
-Kollektionen werden im gleichnamigen Untertab angezeigt. Durch Klick auf die Schaltfläche **[!UICONTROL Details...]** ... können Sie die abgerufenen Elemente filtern. Wählen Sie im Filterassistenten anhand der Dropdown-Liste zunächst die gesammelten Daten aus und geben Sie dann die auf die Kollektion anzuwendenden Filterbedingungen an.****
+**[!UICONTROL Sammlungen]** werden im gleichnamigen Untertab angezeigt. Durch Klick auf die Schaltfläche **[!UICONTROL Details...]** können Sie die abgerufenen Elemente filtern. Wählen Sie im Filterassistenten anhand der Dropdown-Liste zunächst die gesammelten Daten aus und geben Sie dann die auf die Sammlung anzuwendenden Filterbedingungen an.
 
 ### Einschränken einer Zielgruppe mithilfe zusätzlicher Daten {#refine-the-target-using-additional-data}
 

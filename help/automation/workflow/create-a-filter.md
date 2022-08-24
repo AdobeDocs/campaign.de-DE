@@ -4,8 +4,8 @@ title: Erstellen von Filtern
 description: Erfahren Sie, wie Sie bei Abfragen einen Filter erstellen können
 feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '226'
 ht-degree: 100%
 
 ---

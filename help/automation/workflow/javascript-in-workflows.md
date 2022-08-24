@@ -5,8 +5,8 @@ description: Diese Beispiele zeigen, wie Sie JavaScript-Code in einem Workflow v
 feature: Workflows
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1763'
 ht-degree: 100%
 
 ---
@@ -175,7 +175,7 @@ Sie können die folgenden Vorgänge verwenden:
 
 | Vorgang | Ergebnis |
 | --- | --- |
-| `select` | Null oder mehr Elemente werden als Kollektion zurückgegeben. |
+| `select` | Null oder mehr Elemente werden als Sammlung zurückgegeben. |
 | `getIfExists` | Ein Element wird zurückgegeben. Wenn kein Übereinstimmungselement vorhanden ist, wird ein leeres Element zurückgegeben. |
 | `get` | Ein Element wird zurückgegeben. Wenn kein Übereinstimmungselement vorhanden ist, wird ein Fehler zurückgegeben. |
 | `count` | Die Anzahl der übereinstimmenden Datensätze wird in Form eines Elements mit einem `count`-Attribut zurückgegeben. |
@@ -258,7 +258,7 @@ Führen Sie folgende Schritte aus:
 
 #### Ergebnisse eines `select`-Vorgangs
 
-Alle Übereinstimmungen werden als Kollektion zurückgegeben:
+Alle Übereinstimmungen werden als Sammlung zurückgegeben:
 
 ```xml
 <recipient-collection>
@@ -274,7 +274,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängerkollektion zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de) über die `logInfo`-Funktion.
+Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängersammlung zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de) über die `logInfo`-Funktion.
 
 #### Ergebnisse eines `getIfExists`-Vorgangs
 
@@ -562,7 +562,7 @@ Sie können Datensätze einfügen, aktualisieren und löschen. Sie können die `
 * Der `delete`-Vorgang
 
 >[!IMPORTANT]
-> Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target=&quot;_blank&quot;}.
+> Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
 
 #### Beispiel 1: Datensatz einfügen oder aktualisieren
 
@@ -612,11 +612,11 @@ In diesem Video wird ein Beispiel für die Verwendung einer nicht statischen API
 
 ### API-Dokumentation
 
-* [Beispiele für SOAP-Aufrufe](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de)
+* [Beispiele für SOAP-Aufrufe](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
 * Methoden:
-   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de)
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=de)
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=de)
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=de)
+   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)
+   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
+   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
+   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)
    * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=de)
-* [logInfo-Funktion](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de)
+* [logInfo-Funktion](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)

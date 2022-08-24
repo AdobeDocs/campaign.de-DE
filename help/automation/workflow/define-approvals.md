@@ -5,8 +5,8 @@ description: Validierungen ermöglichen Benutzern, in Bezug auf einen Workflow E
 feature: Approvals
 exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '868'
 ht-degree: 100%
 
 ---

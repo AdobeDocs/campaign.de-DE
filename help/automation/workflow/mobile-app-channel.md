@@ -4,8 +4,8 @@ title: Mobile-App-Kanal (Mobile App Channel)
 description: Mobile-App-Kanal (Mobile App Channel)
 feature: Workflows
 source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '63'
 ht-degree: 100%
 
 ---

@@ -5,8 +5,8 @@ description: Erfahren Sie, wie Sie die lokale Validierungsaktivität verwenden
 feature: Workflows
 exl-id: 31089026-3fc0-4491-8b70-0fb7fd1e3ac0
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1428'
 ht-degree: 100%
 
 ---

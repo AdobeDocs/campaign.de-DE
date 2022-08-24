@@ -5,8 +5,8 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Anreicherung".
 feature: Workflows, Enrichment Activity
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '823'
 ht-degree: 100%
 
 ---

@@ -4,8 +4,8 @@ title: Anreicherung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Anreicherung".
 feature: Workflows, Enrichment Activity, Targeting Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1421'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Die Option **[!UICONTROL Relation]** ermöglicht die Erstellung eines Joins mit 
 
 Vier Relationstypen stehen zur Auswahl:
 
-* **[!UICONTROL Kollektion definieren]**: erstellt eine 1:n-Relation zwischen zwei Tabellen.
+* **[!UICONTROL Sammlung definieren]**: erstellt eine 1:n-Relation zwischen zwei Tabellen.
 * **[!UICONTROL Relation definieren, Ziel muss zwingend existieren]**: erstellt eine 1:1-Relation zwischen zwei Tabellen. Die Join-Bedingung darf nur durch einen einzigen Datensatz der Zieltabelle definiert sein.
 * **[!UICONTROL Relation definieren, Ziel muss nicht zwingend existieren]**: erstellt eine 0:1-Relation zwischen zwei Tabellen. Die Join-Bedingung darf nur durch null oder einen einzigen Datensatz der Zieltabelle definiert sein.
 

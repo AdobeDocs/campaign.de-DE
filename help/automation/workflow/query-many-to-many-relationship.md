@@ -4,8 +4,8 @@ title: Abfrage mit einer Viele-zu-viele-Beziehung
 description: Erfahren Sie, wie Sie mit einer Viele-zu-viele-Beziehung Abfragen durchführen können
 feature: Query Editor
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '469'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 In diesem Beispiel werden die Empfänger gesucht, die innerhalb der letzten sieben Tage nicht kontaktiert wurden.
 
-Außerdem wird die Konfiguration eines von einem Kollektionselement (orangefarbener Knoten) ausgehenden Filters gezeigt. Auf Kollektionselemente kann im Fenster **[!UICONTROL Feldauswahl]** zugegriffen werden.
+Außerdem wird die Konfiguration eines von einem Sammlungselement (orangefarbener Knoten) ausgehenden Filters gezeigt. Auf Sammlungselemente kann im Fenster **[!UICONTROL Feldauswahl]** zugegriffen werden.
 
 * Welche Tabelle soll ausgewählt werden?
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor:
 1. Wählen Sie dann im **[!UICONTROL Datenfilter]**-Fenster die Option **[!UICONTROL Filterbedingungen]**.
 1. Anschließend wird im Fenster **[!UICONTROL Zielelement]** in zwei Schritten die gesuchte Filterbedingung erstellt. Es handelt sich bei dem auszuwählenden Kollektionselement um eine n:n-Relation.
 
-   * Wählen Sie also im **[!UICONTROL Ausdruck]**-Feld das durch einen orangefarbenen Knoten symbolisierte Kollektionselement **[!UICONTROL Versandlogs der Empfänger (broadLog)]**.
+   * Wählen Sie also im **[!UICONTROL Ausdruck]**-Feld das durch einen orangefarbenen Knoten symbolisierte Sammlungselement **[!UICONTROL Versandlogs der Empfänger (broadLog)]**.
 
       ![](assets/query_editor_nveau_67.png)
 

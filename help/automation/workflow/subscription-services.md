@@ -4,8 +4,8 @@ title: Anmeldedienste
 description: Erfahren Sie mehr über die Workflow-Aktivität "Anmeldedienste".
 feature: Workflows, Targeting Activity, Subscription Services Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '426'
 ht-degree: 100%
 
 ---

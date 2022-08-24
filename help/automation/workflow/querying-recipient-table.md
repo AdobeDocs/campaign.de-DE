@@ -4,8 +4,8 @@ title: Abfrage der Empfängertabelle
 description: Erfahren Sie, wie Sie die Empfängertabelle abfragen
 feature: Query Editor
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '452'
 ht-degree: 100%
 
 ---

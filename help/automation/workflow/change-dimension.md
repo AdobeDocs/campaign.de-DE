@@ -4,8 +4,8 @@ title: Dimensionsänderung in einem Workflow
 description: Erfahren Sie, wie Sie die Aktivität der Dimensionsänderung verwenden
 feature: Workflows, Targeting Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '402'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen
 
    ![](assets/s_user_change_dimension_limit.png)
 
-   Wenn Sie nur einen Datensatz beibehalten wollen, erscheint im Arbeitsschema eine Kollektion, welche alle Datensätze, die nicht im Endergebnis enthalten sind, enthält. Anhand dieser Kollektion können Sie, wie bei anderen Kollektionen auch, Aggregate berechnen oder Informationen abrufen.
+   Wenn Sie nur einen Datensatz beibehalten wollen, erscheint im Arbeitsschema eine Sammlung, welche alle Datensätze, die nicht im Endergebnis enthalten sind, enthält. Anhand dieser Sammlung können Sie, wie bei anderen Sammlungen auch, Aggregate berechnen oder Informationen abrufen.
 
    Wenn Sie beispielsweise von der Dimension **[!UICONTROL Kunden]** zur Dimension **[!UICONTROL Empfänger]** wechseln, können Sie die Kunden eines bestimmten Geschäfts unter Angabe der getätigten Käufe abrufen.
 

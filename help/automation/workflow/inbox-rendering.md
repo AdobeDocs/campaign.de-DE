@@ -4,8 +4,8 @@ title: Technischer Workflow für Inbox Rendering
 description: In diesem Abschnitt wird der technische Workflow beschrieben, der mit dem Inbox Rendering-Package installiert wird.
 feature: Workflows, Inbox Rendering
 source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '72'
 ht-degree: 100%
 
 ---

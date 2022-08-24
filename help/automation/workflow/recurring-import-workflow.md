@@ -5,8 +5,8 @@ description: Erfahren Sie, wie Sie eine Workflow-Vorlage für wiederkehrende Imp
 feature: Workflows, Data Management
 exl-id: 13f0091b-b62c-47df-9658-6631ba1cf03a
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1136'
 ht-degree: 100%
 
 ---

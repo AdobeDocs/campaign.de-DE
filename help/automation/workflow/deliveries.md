@@ -4,8 +4,8 @@ title: Sendungen
 description: Erfahren Sie mehr über die standardmäßigen Workflows für Sendungen.
 feature: Workflows
 source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '322'
 ht-degree: 100%
 
 ---

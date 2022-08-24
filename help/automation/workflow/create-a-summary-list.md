@@ -5,8 +5,8 @@ description: Erstellen einer zusammenfassenden Liste
 feature: Workflows, Data Management
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1055'
 ht-degree: 100%
 
 ---
@@ -85,7 +85,7 @@ Ziehen Sie die Anreicherung in das Diagramm und konfigurieren Sie sie wie folgt:
 
    ![](assets/uc2_enrich_enrich2.png)
 
-1. Aktivieren Sie die Option **[!UICONTROL Kollektion definieren]**.
+1. Aktivieren Sie die Option **[!UICONTROL Sammlung definieren]**.
 1. Wählen Sie das Schema &quot;Geschäfte&quot; als Zielschema aus.
 
    ![](assets/uc2_enrich_enrich3.png)

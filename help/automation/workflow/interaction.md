@@ -4,8 +4,8 @@ title: Interaction
 description: Interaction
 feature: Workflows, Interaction
 source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '164'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Die folgenden Workflows werden standardmäßig mit dem **Angebotsmodul (Interaction)** installiert.
 
-Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten: 
+Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
 !
 

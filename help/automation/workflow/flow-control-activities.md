@@ -4,8 +4,8 @@ title: Fluss-Steuerungsaktivitäten in Workflows
 description: Liste der Fluss-Steuerungsaktivitäten
 feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '174'
 ht-degree: 100%
 
 ---
