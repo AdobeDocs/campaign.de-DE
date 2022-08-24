@@ -1,16 +1,17 @@
 ---
 product: campaign
-title: Erste Schritte mit Kampagnensimulation
+title: Erste Schritte mit Kampagnensimulationen
 description: Erfahren Sie, wie Sie Kampagnensimulationen konfigurieren
 feature: Campaigns
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 92%
+exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
-# Campaign-Simulationen{#campaign-simulations}
+# Kampagnensimulationen{#campaign-simulations}
 
 Campaign Optimization ermöglicht es, die Effizienz eines Kampagnenplans mithilfe von Simulationen zu testen. Sie haben so die Möglichkeit, den potenziellen Erfolg einer Kampagne im Detail einzuschätzen, beispielsweise die zu erwartenden Einnahmen, die Zielgruppengröße nach Anwendung der entsprechenden Typologieregeln etc.
 
@@ -21,11 +22,11 @@ Mithilfe der Simulation können die voraussichtlichen Auswirkungen von Sendungen
 ### Vorsicht
 
 
-In vorbereiteten Sendungen **Test** haben keine Auswirkungen auf einander, z. B. bei der Beurteilung einer Kampagne im dezentralen Marketing oder solange die Sendungen nicht im Planungskalender geplant sind.
+Sendungen, die im Modus **Test** vorbereitet wurden, beeinflussen sich gegenseitig nicht, z. B. bei der Auswertung einer Kampagne im verteilten Marketing oder solange die Sendungen nicht im vorläufigen Kalender eingeplant sind.
 
-Dies bedeutet, dass die Druck- und Kapazitätsregeln nur auf Sendungen in **[!UICONTROL Zielgruppenschätzung und Nachrichtenpersonalisierung]** -Modus. Sendungen in **[!UICONTROL Schätzung und Genehmigung der vorläufigen Zielvorgabe]** und in **[!UICONTROL Zielgruppenevaluierung]** nicht berücksichtigt.
+Das bedeutet, dass die Druck- und Kapazitätsregeln nur auf Sendungen im Modus **[!UICONTROL Zielgruppenschätzung und Nachrichtenpersonalisierung]** angewendet werden. Sendungen im Modus **[!UICONTROL Schätzung und Validierung der geplanten Zielgruppe]** und im Modus **[!UICONTROL Zielgruppenevaluierung]** werden nicht berücksichtigt.
 
-Der Versandmodus wird in den Eigenschaften des jeweiligen Versands im Tab **[!UICONTROL Typologie]** ausgewählt.
+Der Versandmodus wird in den Eigenschaften des jeweiligen Versands in der Registerkarte **[!UICONTROL Typologie]** ausgewählt.
 
 ![](assets/simu_campaign_select_delivery_mode.png)
 
@@ -124,7 +125,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 1. Der Untertab **[!UICONTROL Warnungen]** fasst alle bei der Simulation erzeugten Warnnachrichten zusammen. Diese können den Benutzer bei Überschreitung der Kapazität benachrichtigen (wenn beispielsweise die Zielgruppe mehr Empfänger enthält, als die festgelegte Kapazität zulässt).
 1. Im Untertab **[!UICONTROL Ausschlussanalyse]** kann eine Tabelle zur übersichtlichen Darstellung der Ergebnisse erstellt werden. Der Benutzer gibt die jeweiligen Variablen für die Abszissen- und Ordinatenachsen an.
 
-   Ein Beispiel für die Erstellung einer Analysetabelle finden Sie im Abschnitt [diesem Abschnitt](#explore-results).
+   Ein Beispiel für die Erstellung einer Analysetabelle finden Sie am Ende [dieses Abschnitts](#explore-results).
 
 ### Anzeigen von Ergebnissen {#view-results}
 
@@ -136,7 +137,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
 #### Analysieren von Ergebnissen {#explore-results}
 
-Der Untertab **[!UICONTROL Ausschlussanalyse]** ermöglicht die Analyse der aus der Simulation resultierenden Daten.
+Die Unter-Registerkarte **[!UICONTROL Ausschlussanalyse]** ermöglicht die Analyse der aus der Simulation resultierenden Daten.
 
 <!--
 Descriptive analysis is detailed in [this section](../../reporting/using/about-adobe-campaign-reporting-tools.md).
@@ -191,7 +192,7 @@ Es besteht jedoch die Möglichkeit, sie mithilfe von Berichten zu vergleichen: A
 
 ### Berichtsachsen {#reporting-axes}
 
-Auf dem Tab **[!UICONTROL Berechnungen]** können Sie Berichtsachsen bezüglich der Zielgruppe definieren. Diese Achsen werden während der [Ergebnisanalyse](#explore-results).
+Auf der Registerkarte **[!UICONTROL Berechnungen]** können Sie Berichtsachsen bezüglich der Zielgruppe definieren. Diese Achsen werden während der [Ergebnisanalyse](#explore-results) verwendet.
 
 >[!NOTE]
 >
