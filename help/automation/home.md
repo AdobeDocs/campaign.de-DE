@@ -1,25 +1,28 @@
 ---
-keywords: Kampagnenautomatisierung;Startseite;beliebte Themen
+keywords: Campaign-Automatisierung;Startseite;beliebte Themen
 product: campaign
 title: Startseite zur Automatisierung von Adobe Campaign
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 39%
+feature: Overview
+description: Überblick
+exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 # Adobe Campaign-Automatisierung {#automation-home}
 
-Die Kommunikation mit Ihren Kunden über mehrere Marketing-Kanäle kann für Sie oder gegen Sie funktionieren. Wenn die verschiedenen Kanäle nicht zusammenarbeiten, gibt es nur Lärm und Verwirrung. Wenn sie synchronisiert werden, verbinden sie sich, um Ihren Kunden ein leistungsfähiges und komplementäres Erlebnis mit Ihrer Marke zu bieten.
+Die Kommunikation mit Ihren Kundinnen und Kunden auf mehreren Marketing-Kanälen kann zu Ihrem Vorteil, aber auch zu Ihrem Nachteil sein. Wenn die verschiedenen Kanäle nicht aufeinander abgestimmt sind, entstehen Chaos und verwirrendes Durcheinander. Sind sie aber synchronisiert, schaffen sie gemeinsam eine optimale Customer Experience und ein positives Erlebnis mit Ihrer Marke.
 
-Adobe Campaign erleichtert Ihnen die Synchronisation Ihrer Kanäle mithilfe einer zentralen, benutzerfreundlichen Benutzeroberfläche für die Kampagnenorchestrierung. Auf diese Weise können Ihre Online-Kanäle – wie E-Mail, Internet, Mobile und Social Media – optimal auf Ihre Offline-Kanäle abgestimmt werden, einschließlich Briefpost, Callcenter, Ladengeschäft usw. Adobe Campaign ermöglicht es Ihnen, Ihren Kunden ein konsistentes und kontextbezogenes Erlebnis in digitalen und traditionellen Kanälen bereitzustellen. Kurz gesagt: Adobe Campaign erleichtert die Bereitstellung von Inhalten auf allen Pfaden, die Ihre Kunden verwenden können - auf jedem Kanal.
+Adobe Campaign erleichtert Ihnen die Synchronisation Ihrer Kanäle mithilfe einer zentralen, benutzerfreundlichen Benutzeroberfläche für die Kampagnenorchestrierung. Auf diese Weise können Ihre Online-Kanäle – wie E-Mail, Internet, Mobile und Social Media – optimal auf Ihre Offline-Kanäle abgestimmt werden, einschließlich Briefpost, Callcenter, Ladengeschäft usw. Adobe Campaign ermöglicht es Ihnen, Ihren Kunden ein konsistentes und kontextbezogenes Erlebnis in digitalen und traditionellen Kanälen bereitzustellen. Kurz gesagt: Adobe Campaign vereinfacht die Bereitstellung von Inhalten auf allen beliebigen Kanälen, für die sich Ihre Kundinnen und Kunden entscheiden könnten.
 
 
-Besuchen Sie die nachstehenden Handbücher und erfahren Sie, wie Sie Automatisierung mit Adobe Campaign erstellen.
+In den nachstehenden Handbüchern erfahren Sie, wie Sie die Verwendung von Adobe Campaign automatisieren.
 
 >[!NOTE]
->Einige Bildschirme unterscheiden sich möglicherweise von Ihrer Umgebung.
+>Einige Abbildungen unterscheiden sich möglicherweise von Ihrer Umgebung.
 
 
 <table>
@@ -52,11 +55,11 @@ Besuchen Sie die nachstehenden Handbücher und erfahren Sie, wie Sie Automatisie
     </div>
     <br>
     <div>
-    <a href="campaigns/marketing-campaign-create.md">Erste Kampagne erstellen</a>
+    <a href="campaigns/marketing-campaign-create.md">Erstellen Ihrer ersten Kampagne</a>
     </div>
     <br>
     <div>
-    <a href="campaigns/marketing-campaign-deliveries.md">Nachrichten in einer Kampagne senden</a>
+    <a href="campaigns/marketing-campaign-deliveries.md">Senden von Nachrichten in einer Kampagne</a>
     </div>
     <br>
   </td>
@@ -76,4 +79,3 @@ Besuchen Sie die nachstehenden Handbücher und erfahren Sie, wie Sie Automatisie
   </td>
 </tr>
 </table>
-
