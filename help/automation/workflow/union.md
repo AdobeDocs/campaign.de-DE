@@ -4,21 +4,21 @@ title: Vereinigung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Vereinigung".
 feature: Workflows, Targeting Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 75%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 # Vereinigung{#union}
 
-A **[!UICONTROL Vereinigung]** gruppiert das Ergebnis mehrerer eingehender Aktivitäten in einer Zielgruppe. Die Zielgruppe wird mit allen erhaltenen Ergebnissen erstellt: alle früheren Aktivitäten müssen daher beendet sein, damit die Vereinigung ausgeführt werden kann.
+Über eine **[!UICONTROL Vereinigung]** lassen sich die Ergebnisse mehrerer eingehender Aktivitäten in einer einzigen Zielgruppe zusammenfassen. Die Zielgruppe wird aus allen eingehenden Ergebnissen erstellt, was bedeutet, dass alle vorgeschalteten Aktivitäten beendet sein müssen, bevor die Vereinigung ausgeführt werden kann.
 
 ![](assets/s_user_segmentation_union.png)
 
 >[!NOTE]
 >
->Weitere Informationen zur Konfiguration und Verwendung des **[!UICONTROL Vereinigung]** Aktivität, siehe [diese Seite](targeting-workflows.md#combining-several-targets--union-).
+>Weitere Informationen zum Konfigurieren und Verwenden der Aktivität **[!UICONTROL Vereinigung]** finden Sie auf [dieser Seite](targeting-workflows.md#combining-several-targets--union-).
 
 ## Anwendungsbeispiel für eine Vereinigung {#union-example}
 
@@ -28,11 +28,11 @@ Im folgenden Beispiel sollen die Ergebnisse zweier Abfragen zusammengefasst werd
 1. Benennen Sie die Aktivität.
 1. Wählen Sie als Abstimmoption **[!UICONTROL Nur die Schlüssel]**, da im vorliegenden Beispiel die aus den Abfragen stammenden Populationen homogen sind.
 1. Falls Sie in den Abfragen Zusatzdaten verwenden, können Sie sich dafür entscheiden, nur gemeinsame Daten beizubehalten.
-1. Wenn Sie die Größe der endgültigen Population begrenzen möchten, überprüfen Sie die **[!UICONTROL Größe der generierten Population begrenzen]** -Option.
+1. Wenn Sie die Größe der endgültigen Population begrenzen möchten, aktivieren Sie die Option **[!UICONTROL Größe der erzeugten Population begrenzen]**.
 
-   Geben Sie in diesem Fall die Anzahl an beizubehaltenden Empfängern und die vorrangig zu berücksichtigende Abfrage an.
+   Geben Sie in diesem Fall die maximale Anzahl an Empfängern und die Abfrage an, deren Population Vorrang hat.
 
-1. Genehmigen Sie die **[!UICONTROL Vereinigung]** -Aktivität und konfigurieren Sie dann die [Listen-Update](list-update.md) Aktivität.
+1. Bestätigen Sie die Aktivität **[!UICONTROL Vereinigung]** und konfigurieren Sie dann die Aktivität [Listen-Update](list-update.md).
 1. Starten Sie dann den Workflow. Die Anzahl an in der Ergebnismenge enthaltenen Kontakten wird angezeigt und die in der Update-Aktivität angegebene Liste wird erstellt oder aktualisiert. Letztere enthält nun alle Empfänger aus den beiden Abfragen bzw. die im vorangehenden Schritt definierte Anzahl.
 
    ![](assets/union_example.png)
