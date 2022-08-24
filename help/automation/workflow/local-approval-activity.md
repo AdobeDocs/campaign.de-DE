@@ -3,10 +3,11 @@ product: campaign
 title: Verwenden der lokalen Validierungsaktivität
 description: Erfahren Sie, wie Sie die lokale Validierungsaktivität verwenden
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 98%
+exl-id: 31089026-3fc0-4491-8b70-0fb7fd1e3ac0
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +41,7 @@ Der lokale Validierungsprozess gliedert sich in folgende Schritte:
 
 1. Einige Tage später sendet die zweite **[!UICONTROL Lokale Validierung]** allen lokalen Verantwortlichen eine E-Mail-Benachrichtigung, die sie über die Empfängerreaktionen (Klicks, Öffnungen usw.) informiert.
 
-## Schritt 1: Datenverteilungsvorlage erstellen {#step-1--creating-the-data-distribution-template-}
+## 1. Schritt: Erstellen der Datenverteilungsvorlage {#step-1--creating-the-data-distribution-template-}
 
 Eine Verteilungsvorlage ermöglicht die Begrenzung der aus der Zielgruppenbestimmung resultierenden Population mithilfe einer Datengruppierung. Jedem Gruppierungswert kann dann ein lokaler Verantwortlicher zugewiesen werden. Im vorliegenden Beispiel wird die **[!UICONTROL E-Mail-Domain]** als Gruppierungswert verwendet und jedem lokalen Verantwortlichen eine Domain zugewiesen.
 
@@ -78,7 +79,7 @@ Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unt
       >
       >Stellen Sie sicher, dass die Benutzer über die nötigen Berechtigungen verfügen.
 
-## Schritt 2: Zielgruppen-Workflow erstellen {#step-2--creating-the-targeting-workflow}
+## 2. Schritt: Erstellen des Zielgruppen-Workflows {#step-2--creating-the-targeting-workflow}
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
@@ -141,7 +142,7 @@ Folgende Angaben sind erforderlich:
 1. Im Bereich **[!UICONTROL Validierungsverwaltung]**: Wählen Sie die Versandvorlage aus und geben Sie den Betreff für die Benachrichtigungs-E-Mail an. Im vorliegenden Beispiel wurde die Standardvorlage beibehalten, d. h. **[!UICONTROL Benachrichtigung bezüglich der Zielgruppenvalidierung]**.
 1. Definieren Sie außerdem den **[!UICONTROL Validierungstyp]**. Im vorliegenden Beispiel wurde die Standardoption beibehalten, d. h. die Validierung muss spätestens 3 Tage nach dem Unterbreitungsdatum erfolgen, andernfalls werden die nicht validierten Empfänger beim Versand nicht berücksichtigt.
 
-Eine Benachrichtigungs-E-Mail wird von der **[!UICONTROL Lokale Validierung]** -Aktivität für lokale Supervisoren.
+Durch die Aktivität **[!UICONTROL Lokale Validierung]** wird eine Benachrichtigungs-E-Mail an lokale Supervisoren und Supervisorinnen gesendet.
 
 ### Warten {#wait}
 
