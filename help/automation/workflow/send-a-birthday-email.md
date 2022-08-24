@@ -3,10 +3,11 @@ product: campaign
 title: Senden einer Geburtstags-E-Mail
 description: Erfahren Sie, wie Sie mit einem Workflow eine Geburtstags-E-Mail senden
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 95%
+exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -20,11 +21,11 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
 In diesem täglich ausgeführten Workflow werden alle Empfänger ausgewählt, deren Geburtstag dem aktuellen Datum entspricht.
 
-Erstellen Sie dazu eine Kampagne und fügen Sie eine [Kampagnen-Workflow](campaign-workflows.md).
+Erstellen Sie dazu eine Kampagne und fügen Sie einen [Kampagnen-Workflow](campaign-workflows.md) hinzu.
 
-Gehen Sie dann wie folgt vor:
+Führen Sie dann die folgenden Schritte aus.
 
-## Identifizieren von Empfängern, die Geburtstag haben {#identifying-recipients-whose-birthday-it-is}
+## Identifizieren Sie die Empfänger, die Geburtstag haben {#identifying-recipients-whose-birthday-it-is}
 
 Konfigurieren Sie zunächst die **[!UICONTROL Planung]** für eine tägliche Ausführung des Workflows. Identifizieren Sie dann alle Empfänger, deren Geburtstag dem aktuellen Datum entspricht.
 
@@ -82,7 +83,7 @@ Gehen Sie hierzu wie folgt vor:
 
 Schließen Sie nun am Ergebnis der **[!UICONTROL Abfrage]**-Aktivität einen **[!UICONTROL E-Mail-Versand]** an, damit alle in Ihrer Liste enthaltenen Empfänger eine E-Mail zum Geburtstag erhalten.
 
-## Empfänger einschließen, die am 29. Februar Geburtstag haben (optional) {#including-recipients-born-on-february-29th--optional-}
+## Schließen Sie die Empfänger ein, die am 29. Februar Geburtstag haben (optional) {#including-recipients-born-on-february-29th--optional-}
 
 Wenn Sie alle Abonnenten einschließen möchten, die am 29. Februar Geburtstag haben, sehen Sie in diesem Anwendungsbeispiel, wie Sie den Versand einer wiederkehrenden Geburtstags-E-Mail an eine Liste von Empfängern planen können – unabhängig davon ob es sich um ein Schaltjahr handelt oder nicht.
 
@@ -98,7 +99,7 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
 Sollte es sich bei dem laufenden Jahr **nicht um ein Schaltjahr handeln**, müssen bei der Workflow-Ausführung am 1. März auch die Empfänger ausgewählt und zu der Empfängerliste hinzugefügt werden, deren Geburtstag am 29. Februar ist. In allen anderen Fällen ist keinerlei zusätzliche Maßnahme notwendig.
 
-### Schritt 1: Empfänger auswählen {#step-1--selecting-the-recipients}
+### 1. Schritt: Wählen Sie die Empfänger aus {#step-1--selecting-the-recipients}
 
 Konfigurieren Sie zunächst die **[!UICONTROL Planung]** für eine tägliche Ausführung des Workflows. Identifizieren Sie dann alle Empfänger, deren Geburtstag dem aktuellen Datum entspricht.
 
@@ -182,7 +183,7 @@ Kombinieren Sie die Ergebnisse mithilfe einer **[!UICONTROL Vereinigung]**.
 
 Schließen Sie nun an beide Zweige der **[!UICONTROL Test]**-Aktivität einen **[!UICONTROL E-Mail-Versand]** an, damit alle in Ihrer Liste enthaltenen Empfänger eine E-Mail zum Geburtstag erhalten – selbst diejenigen, die am 29. Februar Geburtstag haben, und das auch, wenn gerade kein Schaltjahr vorliegt.
 
-## Wiederkehrenden Versand erstellen {#creating-a-recurring-delivery-in-a-targeting-workflow}
+## Erstellen Sie einen wiederkehrenden Versand {#creating-a-recurring-delivery-in-a-targeting-workflow}
 
 Fügen Sie für die gewünschte Geburtstags-E-Mail-Vorlage einen **wiederkehrenden Versand** hinzu.
 
@@ -190,6 +191,6 @@ Fügen Sie für die gewünschte Geburtstags-E-Mail-Vorlage einen **wiederkehrend
 >
 >Damit die Workflows ausgeführt werden, müssen die mit dem Campaign-Package verbundenen technischen Workflows gestartet werden. Mehr Informationen finden Sie im Abschnitt [Liste der technischen Workflows](technical-workflows.md).
 >
->Wenn die Validierungsschritte für die Kampagne aktiviert sind, werden die Sendungen erst ausgeführt, nachdem diese Schritte bestätigt wurden. Weiterführende Informationen hierzu finden Sie im Abschnitt .
+>Wenn die Validierungsschritte für die Kampagne aktiviert sind, werden die Sendungen erst ausgeführt, nachdem diese Schritte bestätigt wurden. Weiterführende Informationen hierzu finden Sie in diesem Abschnitt.
 
 ![](assets/birthday-workflow_usecase_1.png)
