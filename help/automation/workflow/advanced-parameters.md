@@ -3,10 +3,11 @@ product: campaign
 title: Erweiterte Parameter
 description: Erweiterte Parameter
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 98%
+exl-id: aafd977e-c8af-426b-904c-8388c9d8e595
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -46,9 +47,9 @@ In der Regel werden diese Optionen im Diagramm durch Rechtsklick auf die Aktivit
 
 ## Affinität {#affinity}
 
-Es besteht die Möglichkeit, die Ausführung eines Workflows oder einer Workflow-Aktivität an eine bestimmte Engine zu binden. Hierzu müssen eine oder mehrere Affinitäten auf Workflow- oder Aktivitätsniveau definiert werden.
+Es besteht die Möglichkeit, die Ausführung eines Workflows oder einer Workflow-Aktivität auf einem bestimmten Rechner zu erzwingen. Hierzu müssen eine oder mehrere Tendenzwerte auf Workflow- oder Aktivitätsniveau definiert werden.
 
-Die Konfiguration von Workflows mit hoher Verfügbarkeit wird in diesem Abschnitt beschrieben.
+Die Konfiguration von Workflows mit hoher Verfügbarkeit wird hier erläutert.
 
 
 ## Max. Ausführungsdauer {#max--execution-period}
