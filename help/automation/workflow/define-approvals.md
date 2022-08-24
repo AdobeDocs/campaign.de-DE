@@ -3,10 +3,11 @@ product: campaign
 title: Definieren von Validierungen
 description: Validierungen ermöglichen Benutzern, in Bezug auf einen Workflow Entscheidungen zu treffen oder seine Ausführung zu bestätigen.
 feature: Approvals
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 98%
+exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +27,7 @@ In Kampagnen ist der Validierungsablauf für alle Aktivitäten identisch.
 
 ![](assets/validation-1-in-op.png)
 
-Beispiele für Validierungen finden Sie in .
+Beispiele für Validierungen finden Sie hier:
 
 Zur Validierung können Benutzer entweder den Webzugriff mithilfe des in der Benachrichtigung enthaltenen Links nutzen oder aber die Clientkonsole.
 
@@ -36,9 +37,9 @@ Zur Validierung können Benutzer entweder den Webzugriff mithilfe des in der Ben
 
 ## Validierungen per E-Mail {#sending-emails}
 
-Benutzer werden durch den Versand einer E-Mail-Benachrichtigung zur Validierung der ihnen zugewiesenen Vorgänge aufgefordert. Die E-Mail enthält einen Link, der den Webzugriff auf die Plattform ermöglicht. Die E-Mail-Adresse des Benutzers muss in seinem Profil gespeichert werden. Bei fehlender Adresse hat der Benutzer trotz allem die Möglichkeit, direkt über die Clientkonsole zu antworten.
+Benutzer werden durch den Versand einer E-Mail-Benachrichtigung zur Validierung der ihnen zugewiesenen Vorgänge aufgefordert. Die E-Mail enthält einen Link, der den Webzugriff auf die Plattform ermöglicht. Die E-Mail-Adresse des Benutzers muss in seinem Profil gespeichert sein. Bei fehlender Adresse hat der Benutzer trotz allem die Möglichkeit, direkt über die Client-Konsole zu antworten.
 
-Die Benutzerverwaltung wird in diesem Abschnitt beschrieben.
+Die Benutzerverwaltung wird hier beschrieben:
 
 E-Mail-Benachrichtigen werden über eine fortlaufende Versandaktion gesteuert. Die Standardvorlage heißt **[!UICONTROL notifyAssignee]** und ist im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** zugänglich. Es wird empfohlen, die Vorlage nicht zu ändern, sondern sie zu duplizieren und für jede Aktivität eine gesonderte Benachrichtigungsvorlage zu erstellen.
 
