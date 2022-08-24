@@ -4,8 +4,8 @@ title: HTTP-Übertragung
 description: Erfahren Sie mehr über die Workflow-Aktivität "HTTP-Übertragung".
 feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '446'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
