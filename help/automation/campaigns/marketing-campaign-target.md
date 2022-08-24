@@ -3,10 +3,11 @@ product: campaign
 title: Ziel-Audience der Marketing-Kampagne
 description: Erfahren Sie, wie Sie die Audience Ihrer Marketing-Kampagnen definieren.
 feature: Campaigns, Audiences
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '1561'
-ht-degree: 71%
+exl-id: 70a63632-f66d-40f2-806d-bde89303936a
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -14,8 +15,8 @@ ht-degree: 71%
 
 In einer Marketing-Kampagne können Sie für jeden Versand Folgendes definieren:
 
-* Die Zielgruppe. Sie können Nachrichten an eine [Empfängerliste](#send-to-a-group) oder erstellen Sie eine [Zielgruppe in einem Workflow](#build-the-main-target-in-a-workflow)
-* Eine Kontrollgruppe. Sie können [Kontrollgruppe hinzufügen](#add-a-control-group) zur Überwachung des Empfängerverhaltens nach dem Nachrichtenversand
+* Die Zielgruppe. Sie können Nachrichten an eine [Empfängerliste](#send-to-a-group) senden oder eine [Zielgruppe in einem Workflow](#build-the-main-target-in-a-workflow) erstellen.
+* Eine Kontrollgruppe. Sie können eine [Kontrollgruppe hinzufügen](#add-a-control-group), um das Empfängerverhalten nach dem Nachrichtenversand zu überwachen.
 <!--
 * Seed addresses - Learn more in [this section](../../delivery/using/about-seed-addresses.md).-->
 
@@ -29,23 +30,23 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und diese Liste als Zielgruppe eines Versands zu verwenden. Gehen Sie dazu wie folgt vor:
 
-1. Bearbeiten Sie den Versand und klicken Sie auf die Schaltfläche **[!UICONTROL nach]** -Link, um die Zielpopulation zu ändern.
-1. Markieren Sie im Tab **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL Von der Datenbank ausgehend bestimmt]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um Empfänger auszuwählen.
+1. Bearbeiten Sie hierzu den betreffenden Versand und klicken Sie auf den Link **[!UICONTROL An]**, um die Zielpopulation zu ändern.
+1. Markieren Sie im Tab **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL Über die Datenbank definiert]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um Empfänger auszuwählen.
 
    ![](assets/select-main-target.png)
 
-1. Auswählen **[!UICONTROL Empfängerliste]**.
+1. Wählen Sie **[!UICONTROL Empfängerliste]**.
 
    ![](assets/target-a-list.png)
 
 
-1. Klicken **[!UICONTROL Nächste]** , um die Liste auszuwählen.
+1. Klicken Sie auf **[!UICONTROL Weiter]**, um die Liste auszuwählen.
 
    ![](assets/select-the-list.png)
 
-   Sie können die Zielgruppe verfeinern, indem Sie neue Filterkriterien hinzufügen.
+   Sie können die Zielgruppe einschränken, indem Sie neue Filterkriterien hinzufügen.
 
-1. Klicken **[!UICONTROL Beenden]** Nachdem alle Kriterien definiert wurden, speichern Sie die Hauptzielgruppe.
+1. Klicken Sie auf **[!UICONTROL Beenden]**, wenn alle Kriterien definiert sind, und speichern Sie die Hauptzielgruppe.
 
 ## Erstellen der Audience in einem Campaign-Workflow {#build-the-main-target-in-a-workflow}
 
@@ -57,11 +58,11 @@ Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow defin
 
 ### Erstellen eines Workflows {#create-a-targeting-workflow}
 
-Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterkriterien erfolgen, die in einem Workflow grafisch verdeutlicht wird. So ist es möglich, je nach Bedarf Gruppen oder Untergruppen zu erstellen und als Zielpopulation zu verwenden. Klicken Sie zum Öffnen des Workflow-Editors auf den Tab **[!UICONTROL Zielbestimmungen und Workflows]** der entsprechenden Kampagne.
+Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterkriterien erfolgen, die in einem Workflow grafisch verdeutlicht wird. So ist es möglich, je nach Bedarf Gruppen oder Untergruppen zu erstellen und als Zielpopulation zu verwenden. Klicken Sie zum Öffnen des Workflow-Editors im Kampagnen-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]**.
 
 ![](assets/targeting-and-wf-tab.png)
 
-Die Zielpopulation wird über eine oder mehrere in einem Workflow platzierte Abfragen aus der Adobe-Campaign-Datenbank extrahiert. Erfahren Sie, wie Sie eine Abfrage erstellen in [diesem Abschnitt](../workflow/query.md).
+Die Zielpopulation wird über eine oder mehrere in einem Workflow platzierte Abfragen aus der Adobe Campaign-Datenbank extrahiert. Informationen zum Erstellen einer Abfrage finden Sie in [diesem Abschnitt](../workflow/query.md).
 
 Sie können Abfragen starten und die resultierenden Populationen über Aktivitäten wie Vereinigung, Schnittmenge, Aufspaltung, Ausschluss weiter einschränken oder vergrößern.
 
@@ -73,7 +74,7 @@ Verbinden Sie die zur Zielgruppenerstellung notwendigen Zielbestimmungs- und Ste
 
 >[!NOTE]
 >
->Beispiele und Verfahren zum Definieren von Abfragen finden Sie unter [diesem Abschnitt](../workflow/query.md).
+>Beispiele und Anleitungen zum Definieren von Abfragen finden Sie in [diesem Abschnitt](../workflow/query.md).
 
 Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, die Aktivitäten repräsentieren. Der erste Tab enthält Aktivitäten zur Zielgruppenbestimmung, der zweite Aktivitäten zur Steuerung. Letztere werden gelegentlich zur Koordinierung der Zielgruppenbestimmungs-Aktivitäten verwendet.
 
@@ -83,7 +84,7 @@ Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, 
 
 >[!NOTE]
 >
->Die zum Erstellen des Diagramms verfügbaren Aktivitäten sowie alle Anzeige- und Layoutfunktionen werden im Abschnitt [diesem Abschnitt](../workflow/about-workflows.md).
+>Die für die Erstellung des Diagramms verfügbaren Aktivitäten sowie alle Anzeige- und Layout-Funktionen werden in [diesem Abschnitt](../workflow/about-workflows.md) ausführlich beschrieben.
 
 Es besteht die Möglichkeit, mehrere Zielgruppen-Workflows für eine einzelne Kampagne zu erstellen. Gehen Sie wie folgt vor, um einen Workflow hinzuzufügen:
 
@@ -112,7 +113,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
       Die Anfrage wird vom Server erfasst, was sich im Ausführungsstatus widerspiegelt: **[!UICONTROL Schnellstmöglicher Start]**.
 
-   * Sie können den Zielgruppen-Workflow über das entsprechende Symbolleistensymbol neu starten. Dieser Befehl kann nützlich sein, wenn die **[!UICONTROL Starten]** -Symbol nicht verfügbar ist, z. B. wenn der Workflow zur Zielgruppenbestimmung angehalten wird. Klicken Sie in diesem Fall auf die **[!UICONTROL Neu starten]** -Symbol, um den Neustart vorherzusehen. Der Server berücksichtigt die Anfrage, da ihr Status Folgendes anzeigt: **[!UICONTROL Neu angefordert]**.
+   * Sie können den Zielgruppen-Workflow über das entsprechende Symbol der Menüleiste neu starten. Dieser Befehl kann besonders dann nützlich sein, wenn das Symbol **[!UICONTROL Starten]** nicht verfügbar ist, beispielsweise wenn der Workflow gerade angehalten wird. Klicken Sie in diesem Fall auf das Symbol **[!UICONTROL Neu starten]**, um den Neustart vorzuziehen. Diese Anfrage wird daraufhin vom Server erfasst, wie am Ausführungsstatus zu erkennen ist: **[!UICONTROL Soll neu gestartet werden]**.
 
 * Anhalten oder aussetzen
 
@@ -175,7 +176,7 @@ Die Kontrollgruppe kann aus der Hauptzielgruppe extrahiert werden und/oder aus e
 Sie können eine Kontrollgruppe auf Kampagnenebene erstellen: In letzterem Fall wird die erstellte Kontrollgruppe für alle Sendungen der betreffenden Kampagne angewandt.
 
 1. Bearbeiten Sie die betreffende Kampagne; klicken Sie dazu auf den Tab **[!UICONTROL Bearbeiten]**.
-1. Klicken **[!UICONTROL Erweiterte Kampagnenparameter...]**.
+1. Klicken Sie auf **[!UICONTROL Erweiterte Kampagnenparameter...]**.
 
    ![](assets/enable-control-group.png)
 
@@ -184,7 +185,7 @@ Sie können eine Kontrollgruppe auf Kampagnenebene erstellen: In letzterem Fall 
 
    ![](assets/edit-control-group.png)
 
-Das vollständige Verfahren wird im Abschnitt [diesem Abschnitt](#extract-the-control-group-from-the-main-target). Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](#add-a-population).
+Das vollständige Verfahren wird in [diesem Abschnitt](#extract-the-control-group-from-the-main-target) beschrieben. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](#add-a-population).
 
 ### Aktivieren der Kontrollgruppe für einen Versand {#activate-the-control-group-for-a-delivery}
 
@@ -196,14 +197,14 @@ Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt stand
 >
 >Wenn Sie eine Kontrollgruppe für eine Kampagne bestimmt haben und eine andere für einen Versand dieser Kampagne konfigurieren, so wird nur die für den Versand bestimmte Kontrollgruppe angewandt.
 
-1. Bearbeiten Sie den betreffenden Versand und klicken Sie auf die Schaltfläche **[!UICONTROL nach]** Link.
+1. Bearbeiten Sie den betreffenden Versand und klicken Sie auf den Link **[!UICONTROL An]**.
 1. Klicken Sie auf den Tab **[!UICONTROL Kontrollgruppe]** und wählen Sie dann **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
 
    ![](assets/enable-control-group-for-a-delivery.png)
 
 1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren..
 
-Das vollständige Verfahren wird im Abschnitt [diesem Abschnitt](#extract-the-control-group-from-the-main-target).
+Das vollständige Verfahren wird in [diesem Abschnitt](#extract-the-control-group-from-the-main-target) beschrieben.
 
 ### Verwenden einer neuen Population als Kontrollgruppe {#add-a-population}
 
@@ -219,20 +220,20 @@ Diese Population kann aus einer Empfängerliste stammen oder über eine spezifis
 
 ### Extrahieren der Kontrollgruppe aus der Hauptzielgruppe {#extract-the-control-group-from-the-main-target}
 
-Sie können auch Empfänger aus der Hauptzielgruppe des Versands extrahieren. In diesem Fall werden die Empfänger aus der Zielgruppe der von dieser Konfiguration betroffenen Versandaktionen übernommen. Diese Extraktion kann zufällig oder durch Sortieren der Empfänger erfolgen.
+Sie können auch Empfangende aus der Hauptzielgruppe des Versands extrahieren. In diesem Fall werden die Empfangenden aus der Zielgruppe der von dieser Konfiguration betroffenen Versandaktionen übernommen. Diese Extraktion kann zufällig oder durch Sortieren der Empfangenden erfolgen.
 
 ![](assets/extract-control-group-from-target.png)
 
 Um eine Kontrollgruppe zu extrahieren, aktivieren Sie diese auf Kampagnen- oder Versandniveau und wählen Sie eine der folgenden Optionen: **[!UICONTROL Zufallsauswahl aktivieren]** oder **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten]**.
 
-* Verwenden Sie die **[!UICONTROL Zufallsauswahl aktivieren]** Option, um eine Zufallsauswahl auf die Empfänger in der Hauptpopulation anzuwenden. Wenn Sie dann den Schwellenwert auf 100 setzen, besteht die Kontrollgruppe aus 100 zufällig aus der Zielpopulation ausgewählten Empfängern. Die zufällige Auswahl hängt von der Datenbank-Engine ab.
-* Verwenden Sie die **[!UICONTROL Nur die ersten Datensätze nach der Sortierung beibehalten]** -Option, um eine Begrenzung basierend auf einer oder mehreren Sortierreihenfolgen zu definieren. Wenn Sie die **[!UICONTROL Alter]** als Sortierungskriterium und definieren Sie dann 100 als Schwellenwert. Die Kontrollgruppe setzt sich aus den 100 jüngsten Empfängern zusammen. Es könnte beispielsweise interessant sein, eine Kontrollgruppe zu definieren, die Empfänger enthält, die nur wenige Käufe tätigen, oder Empfänger, die häufig Käufe tätigen, und ihr Verhalten mit dem der kontaktierten Empfänger zu vergleichen.
+* Verwenden Sie die Option **[!UICONTROL Zufallsauswahl aktivieren]**, um eine Zufallsauswahl auf die Empfangenden in der Hauptpopulation anzuwenden. Wenn Sie dann den Schwellenwert auf 100 setzen, besteht die Kontrollgruppe aus 100 zufällig aus der Zielpopulation ausgewählten Empfangenden. Die Auswahl der Stichprobe hängt von der Datenbank-Engine ab.
+* Verwenden Sie die Option **[!UICONTROL Nur die ersten Datensätze nach dem Sortieren beibehalten]**, um eine Einschränkung auf der Grundlage einer oder mehrerer Sortierreihenfolgen zu definieren. Wenn Sie das Feld **[!UICONTROL Alter]** als Sortierkriterium wählen und dann 100 als Schwellenwert definieren, setzt sich die Kontrollgruppe aus den 100 jüngsten Empfangenden zusammen. Es könnte zum Beispiel interessant sein, eine Kontrollgruppe zu definieren, die nur Empfangende umfasst, die wenige bzw. häufige Käufe tätigen, und ihr Verhalten mit dem der kontaktierten Empfangenden zu vergleichen.
 
 Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge festzulegen und die Empfängerbegrenzung zu bestimmen.
 
 ![](assets/limit-control-group.png)
 
-Diese Konfiguration entspricht einer **[!UICONTROL Aufspaltung]** -Aktivität in Teilmengen unterteilen. Die Kontrollgruppe ist eine dieser Teilmengen.
+Diese Konfiguration entspricht der Aktivität **[!UICONTROL Aufspaltung]** im Workflow, mit der Sie die Zielgruppe in Teilmengen aufteilen können. Die Kontrollgruppe ist eine dieser Teilmengen.
 
 
 #### Anleitungsvideo {#create-email-video}
