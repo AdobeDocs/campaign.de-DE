@@ -3,10 +3,11 @@ product: campaign
 title: Erstellen einer lokalen Kampagne
 description: Erstellen einer lokalen Kampagne
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 94%
+exl-id: b46530b5-cb81-40d7-b596-c7685359782a
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +41,7 @@ Benennen Sie die Kampagnenvorlage und erfassen Sie die verfügbaren Felder.
 
 ![](assets/mkg_dist_local_op_creation1.png)
 
-Klicken Sie im Kampagnenfenster auf die Schaltfläche **[!UICONTROL Bearbeiten]** und klicken Sie auf die **[!UICONTROL Erweiterte Kampagnenparameter...]** Link.
+Klicken Sie im Kampagnenfenster auf die Registerkarte **[!UICONTROL Bearbeiten]** und dann auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**.
 
 ![](assets/mkt_distr_4.png)
 
@@ -64,11 +65,11 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
    ![](assets/mkt_distr_8.png)
 
-   Das angebotene Formular wird in einer Webanwendung definiert, die in einer Dropdown-Liste aus dem **[!UICONTROL Webschnittstelle]** im Feld der Vorlage **[!UICONTROL Erweiterte Kampagnenparameter...]** Link. Siehe [Lokale Kampagne erstellen (Standardformular)](examples.md#creating-a-local-campaign--by-form-).
+   Das angebotene Formular wird in einer Web-Anwendung definiert, die in der Vorlage unter dem Link **[!UICONTROL Erweiterte Kampagnenparameter...]** in der Dropdown-Liste des Felds **[!UICONTROL Web-Schnittstelle]** ausgewählt werden muss. Siehe [Lokale Kampagne erstellen (Standardformular)](examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
-   >Die in diesem Beispiel verwendete Webanwendung ist ein Beispiel. Sie müssen eine bestimmte Web-App erstellen, um ein Formular verwenden zu können. Siehe .
+   >Bei der hier verwendeten Web-Anwendung handelt es sich nur um ein Beispiel. Um ein Formular verwenden zu können, muss vorab eine spezifische Web-Anwendung erstellt werden. Siehe hier.
 
    ![](assets/mkt_distr_7.png)
 
@@ -123,11 +124,11 @@ Wenn Sie das Hochladen von Dokumenten nicht zulassen möchten, geben Sie im Feld
 
 ### Workflow {#workflow}
 
-Im **[!UICONTROL Zielbestimmungen und Workflows]** erstellen Sie den Kampagnen-Workflow, der die **[!UICONTROL Standardwerte]** im **[!UICONTROL Erweiterte Kampagnenparameter...]** und erstellt die Sendungen.
+Erstellen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** den Kampagnen-Workflow, der die Sendungen erstellt und dabei die **[!UICONTROL Standardwerte]** verwendet, die unter **[!UICONTROL Erweiterte Kampagnenparameter...]** angegeben sind.
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
-Doppelklicken Sie auf die Aktivität **[!UICONTROL Abfrage]**, um diese entsprechend der festgelegten **[!UICONTROL Standardwerte]** zu konfigurieren.
+Doppelklicken Sie auf die Aktivität **[!UICONTROL Abfrage]**, um diese entsprechend den festgelegten **[!UICONTROL Standardwerten]** zu konfigurieren.
 
 ![](assets/mkt_dist_local_campaign_localize_query.png)
 
@@ -155,7 +156,7 @@ Speichern Sie Ihre Kampagnenvorlage. Sie steht Ihnen nun in der Ansicht **[!UICO
 
 >[!NOTE]
 >
->Kampagnenvorlagen und ihre allgemeine Konfiguration werden im Abschnitt  beschrieben.
+>Kampagnenvorlagen und ihre allgemeine Konfiguration werden hier beschrieben:
 
 ## Kampagnenkit erstellen {#creating-the-campaign-package}
 
@@ -238,7 +239,7 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Webanwendungen werden im Abschnitt beschrieben.
+   >Web-Anwendungen werden hier beschrieben:
 
 1. Geben Sie auf der ersten Seite Informationen wie Bestelltitel und Kommentar ein und klicken Sie auf **[!UICONTROL Weiter]**.
 
