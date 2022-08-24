@@ -3,10 +3,11 @@ product: campaign
 title: Beispiele für verteiltes Marketing
 description: Beispiele für verteiltes Marketing
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 95%
+exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +25,7 @@ Der Web-Schnittstellentyp **Formular** beinhaltet die Nutzung einer **Web-Anwend
 >
 >Die in diesem Beispiel verwendete Web-Anwendung ist nicht standardmäßig in Adobe Campaign vorhanden. Um in einer Kampagne ein Formular benutzen zu können, muss vorab die entsprechende Web-Anwendung erstellt werden.
 
-Klicken Sie bei der Erstellung der Kampagnenvorlage auf die Schaltfläche **[!UICONTROL Zoom]** innerhalb des **[!UICONTROL Webschnittstelle]** der **[!UICONTROL Erweiterte Kampagnenparameter...]** -Link, um auf Details der Webanwendung zuzugreifen.
+Klicken Sie beim Erstellen der Kampagnenvorlage auf das Symbol **[!UICONTROL Zoom]** in der Option **[!UICONTROL Web-Schnittstelle]** des Links **[!UICONTROL Erweiterte Kampagnenparameter...]**, um auf Details der Web-Anwendung zuzugreifen.
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -200,7 +201,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 **Zentralstellenseitig**
 
 1. Erstellen Sie die partizipative Kampagne.
-1. Konfigurieren Sie die **[!UICONTROL Erweiterte Kampagnenparameter...]** wie bei einer lokalen Kampagne.
+1. Konfigurieren Sie die **[!UICONTROL Erweiterten Kampagnenparameter...]** so, wie Sie es für eine lokale Kampagne tun würden.
 1. Konfigurieren Sie den Kampagnen- sowie den Versand-Workflow wie für eine lokale Kampagne.
 1. Aktualisieren Sie das Webformular.
 1. Erstellen und veröffentlichen Sie das Kampagnenkit.
@@ -229,7 +230,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
-1. In der Kampagne **[!UICONTROL Bearbeiten]** klicken Sie auf die **[!UICONTROL Erweiterte Kampagnenparameter...]** -Link, um ihn als lokale Kampagne zu konfigurieren. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](#creating-a-local-campaign--by-form-).
+1. Klicken Sie auf der Registerkarte **[!UICONTROL Bearbeiten]** der Kampagne auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**, um die Kampagne wie eine lokale Kampagne zu konfigurieren. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](#creating-a-local-campaign--by-form-).
 
    ![](assets/mkg_dist_use_case_form_2.png)
 
