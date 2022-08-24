@@ -1,12 +1,13 @@
 ---
 product: campaign
-title: Filterregeln konfigurieren
+title: Konfigurieren von Filterregeln
 description: Erfahren Sie, wie Sie Filterregeln konfigurieren
 feature: Typology Rules
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 95%
+exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -54,7 +55,7 @@ In diesem Fall wird die Regel nur auf die Sendungen angewandt, die den Kriterien
 
 >[!NOTE]
 >
->Typologien und Filterregeln können in einem Workflow im **[!UICONTROL Versandentwurf]** Aktivität. [Weitere Informationen](../workflow/delivery-outline.md).
+>Typologien und Filterregeln können in einem Workflow über die Aktivität **[!UICONTROL Versandentwurf]** verwendet werden. [Weitere Informationen](../workflow/delivery-outline.md).
 
 ## Erstellen und Verwenden einer Filtertypologie {#create-and-use-a-filtering-typology}
 
