@@ -3,10 +3,11 @@ product: campaign
 title: Überwachen von Marketing-Kampagnen
 description: Überwachen von Marketing-Kampagnen
 feature: Campaigns, Monitoring
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 39%
+exl-id: 13a7432e-6216-4a5c-84fc-bc374b5af5ee
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -14,23 +15,23 @@ ht-degree: 39%
 
 ## Verfolgen einer Kampagne {#tracking-a-campaign}
 
-Für jede Kampagne muss die Variable **[!UICONTROL Tracking]** -Tab können Sie alle Aufträge und deren Status anzeigen.
+Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Vorgänge und deren Status an.
 
-Auf folgende Informationen kann über diesen Untertab zugegriffen werden:
+Über diese Unterregisterkarte kann auf folgende Informationen zugegriffen werden:
 
-* Die **[!UICONTROL Prüfung]** Unter-Tab zeigt das Aktivitätenprotokoll an. Er enthält die für die Kampagne ausgeführten Aufträge: Workflow-Erstellung oder -Start, Validierung, Extraktion, Lagerverwaltung usw.
+* Die Unterregisterkarte **[!UICONTROL Audit]** zeigt das Aktivitätenprotokoll an. Es enthält die für die Kampagne ausgeführten Vorgänge: Erstellung oder Start eines Workflows, Validierung, Extraktion, Lagerverwaltung usw.
 
    ![](assets/campaign-audit-tab.png)
 
-* Die **[!UICONTROL Sendungen]** Der Untertab enthält alle Sendungen der Kampagne. Sie können in dieser Ansicht bearbeitet werden. Wählen Sie dazu den Versand aus und klicken Sie auf die Schaltfläche **[!UICONTROL Detail]** Symbol.
+* Die Unterregisterkarte **[!UICONTROL Sendungen]** enthält alle Sendungen der Kampagne. Sie können in dieser Ansicht bearbeitet werden. Wählen Sie dazu einen Versand aus und klicken Sie auf das Symbol **[!UICONTROL Details]**.
 
    ![](assets/campaign-delivery-tab.png)
 
-* Die **[!UICONTROL Genehmigungen]** Unter-Tab enthält den gesamten Validierungsprozess für die Kampagne. Sie können Details und Kommentare überprüfen
+* Die Unterregisterkarte **[!UICONTROL Validierungen]** enthält den gesamten Validierungsprozess für die Kampagne. Sie können Details und Kommentare überprüfen.
 
-* Die zur Generierung der Nachrichten an Dienstleister erstellten Workflows werden im Untertab **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** aufgelistet. Klicken Sie auf das Symbol **[!UICONTROL Details]**, um den ausgewählten Workflow anzuzeigen.
+* Die Workflows, die zur Generierung der Nachrichten an Dienstleister erstellt werden, werden in der Unterregisterkarte **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** aufgelistet. Klicken Sie auf das Symbol **[!UICONTROL Details]**, um den ausgewählten Workflow anzuzeigen.
 
-## Verfolgen von Sendungen {#delivery-tracking}
+## Tracken von Sendungen {#delivery-tracking}
 
 Eine Liste der Sendungen ist über die gleichnamige Schaltfläche in der Kampagnen-Rubrik verfügbar.****
 
@@ -46,8 +47,8 @@ Um den Status eines Versands zu überprüfen, öffnen Sie diesen. Im Dashboard u
 >Information concerning delivery details is available in [this section](../../delivery/using/about-message-tracking.md) section.
 -->
 
-## Ausführung verfolgen {#execution-tracking}
+## Verfolgen der Ausführung {#execution-tracking}
 
-Sie können den Status der Sendungen überprüfen, indem Sie auf die Schaltfläche **[!UICONTROL Sendungen]**, auf die über die Adobe Campaign-Startseite zugegriffen werden kann.
+Sie können den Status der Sendungen einsehen, indem Sie auf der Startseite von Adobe Campaign auf **[!UICONTROL Sendungen]** klicken.
 
-Details zu den in einer Kampagne ausgeführten Prozessen werden im Abschnitt **[!UICONTROL Bearbeiten > Audit]** der Kampagne. Sie können die Liste der Sendungen in der Kampagne anzeigen. [Weitere Informationen](#tracking-a-campaign).
+Details über die in einer Kampagne ausgeführten Prozesse werden in der Registerkarte **[!UICONTROL Bearbeiten > Audit]** der Kampagne erfasst. Sie können die Liste der Sendungen in der Kampagne anzeigen. [Weitere Informationen](#tracking-a-campaign).
