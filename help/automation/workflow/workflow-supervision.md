@@ -4,9 +4,9 @@ title: Monitoring-Workflow
 description: Erfahren Sie, wie Sie Campaign-Workflows überwachen.
 feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -173,4 +173,4 @@ Nach Erstellung und Validierung der Versandvorlage ist die **Versandaktivität**
    delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
    ```
 
-Nach dem Start des Monitoring-Workflows wird eine Zusammenfassung an die Empfänger gesendet.
+Nach dem Start sendet dieser Überwachungs-Workflow eine Zusammenfassung an die Empfangenden.
