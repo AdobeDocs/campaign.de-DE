@@ -3,10 +3,11 @@ product: campaign
 title: Best Practices bei Workflows
 description: Machen Sie sich mit Best Practices bei Campaign-Workflows vertraut.
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 79%
+exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -60,7 +61,7 @@ Bestimmen Sie zu Beginn der Workflow-Erstellung Workflow-Supervisoren. Diese wer
 
 Die Workflow-Heatmap ermöglicht den Administratoren der Adobe Campaign-Plattform, die Auslastung der Instanz zu überwachen und Workflows entsprechend zu planen. Weitere Informationen dazu finden Sie unter [Workflow-Monitoring](heatmap.md).
 
-## Activities {#using-activities}
+## Aktivitäten {#using-activities}
 
 >[!CAUTION]
 >
@@ -103,41 +104,41 @@ Während Workflows in einem Archivordner auf Entwicklungs- oder Testplattformen 
 
 ### Logs {#logs}
 
-Die JavaScript-Methode **[!UICONTROL logInfo()]** ist eine Lösung zum Debugging eines Workflows. Sie muss jedoch sorgfältig verwendet werden, insbesondere für häufig ausgeführte Aktivitäten: Sie kann die Protokolle überlasten und die Größe der Protokolltabelle erheblich erhöhen.
+Die JavaScript-Methode **[!UICONTROL logInfo()]** ist eine Lösung zum Debuggen eines Workflows. Sie muss jedoch mit Bedacht verwendet werden, insbesondere für häufig ausgeführte Aktivitäten, denn sie kann die Protokolle überlasten und die Größe der Protokolltabelle erheblich erhöhen.
 
-### Zwischenergebnisse beibehalten
+### Beibehaltung der Zwischenpopulationen
 
-Die **Zwischen zwei Ausführungen die ermittelte Population festhalten** speichert temporäre Tabellen zwischen zwei Ausführungen eines Workflows.
+Die Option **Zwischen zwei Ausführungen die ermittelte Population festhalten** speichert temporäre Tabellen zwischen zwei Ausführungen eines Workflows.
 
-Sie ist in den Workflow-Eigenschaften verfügbar. **[!UICONTROL Allgemein]** und kann für Entwicklungs- und Testzwecke verwendet werden, um Daten zu überwachen und Ergebnisse zu überprüfen. Sie können diese Option in Entwicklungsumgebungen verwenden, sie jedoch nie in Produktionsumgebungen verwenden. Die Beibehaltung temporärer Tabellen könnte dazu führen, dass die Größe der Datenbank erheblich zunimmt und schließlich die Größenbeschränkung erreicht wird. Außerdem wird das Backup verlangsamt.
+Diese Option ist auf der Registerkarte **[!UICONTROL Allgemein]** der Workflow-Eigenschaften verfügbar und kann für Entwicklungs- und Testzwecke verwendet werden, um Daten zu überwachen und Ergebnisse zu überprüfen. Sie können diese Option in Entwicklungsumgebungen verwenden, sollten sie aber nie in Produktionsumgebungen verwenden. Die Beibehaltung temporärer Tabellen könnte dazu führen, dass die Größe der Datenbank erheblich zunimmt und letztendlich die Größenbeschränkung erreicht wird. Außerdem wird dadurch das Backup verlangsamt.
 
 Nur die Arbeitstabellen der letzten Ausführung des Workflows werden aufbewahrt. Arbeitstabellen früherer Ausführungen werden durch den täglich durchgeführten **[!UICONTROL Bereinigungs]**-Workflow bereinigt.
 
 >[!CAUTION]
 >
->Diese Option muss **never** in einem **production** Arbeitsablauf. Diese Option wird zur Analyse der Ergebnisse verwendet und ist nur für Testzwecke konzipiert und darf daher nur in Entwicklungs- oder Staging-Umgebungen verwendet werden.
+>Diese Option darf **nie** in einem **Produktions**-Workflow aktiviert werden. Diese Option wird zur Analyse der Ergebnisse verwendet und ist nur für Testzwecke konzipiert. Sie darf daher nur in Entwicklungs- oder Staging-Umgebungen verwendet werden.
 
 
-### SQL-Abfragen protokollieren
+### Protokollieren von SQL-Abfragen
 
-Die **SQL-Abfragen im Protokoll speichern** ist im **[!UICONTROL Ausführung]** Registerkarte der Workflow-Eigenschaften. Diese Option protokolliert alle SQL-Abfragen aus den verschiedenen Aktivitäten und bietet eine Möglichkeit zu sehen, was von der Plattform tatsächlich ausgeführt wird. Diese Option sollte jedoch nur verwendet werden **vorübergehend** während der Entwicklung **nicht in der Produktion aktiviert**.
+Die Option **SQL-Abfragen im Protokoll speichern** ist auf der Registerkarte **[!UICONTROL Ausführung]** der Workflow-Eigenschaften verfügbar. Diese Option protokolliert alle SQL-Abfragen aus den verschiedenen Aktivitäten und zeigt an, was von der Plattform tatsächlich ausgeführt wird. Diese Option sollte jedoch nur **vorübergehend** während der Entwicklung verwendet und **nicht in der Produktion aktiviert werden**.
 
-Es empfiehlt sich, die Protokolle zu bereinigen, wenn sie nicht mehr benötigt werden. Workflow-Verläufe werden nicht automatisch bereinigt, alle Nachrichten werden standardmäßig beibehalten. Gehen Sie zur Bereinigung zu **[!UICONTROL Datei > Aktionen]** oder klicken Sie in der Symbolleiste oberhalb der Workflow-Liste auf die Schaltfläche „Aktionen“. Wählen Sie die Option „Verlauf bereinigen“ aus.
+Es empfiehlt sich, die Protokolle zu entfernen, wenn sie nicht mehr benötigt werden. Workflow-Verläufe werden nicht automatisch bereinigt, alle Nachrichten werden standardmäßig beibehalten. Gehen Sie zur Bereinigung zu **[!UICONTROL Datei > Aktionen]** oder klicken Sie in der Symbolleiste oberhalb der Workflow-Liste auf die Schaltfläche „Aktionen“. Wählen Sie die Option „Verlauf bereinigen“ aus.
 Informationen zum Bereinigen der Logs finden Sie in dieser [Dokumentation](start-a-workflow.md).
 
 ### Workflow-Planung {#workflow-planning}
 
-Zusätzliche Best Practices sollten bei der Planung der Ausführung von Workflows angewendet werden, um Probleme zu vermeiden:
+Die folgenden Best Practices sollten zusätzlich bei der Planung der Ausführung von Workflows angewendet werden, um Probleme zu vermeiden:
 
-* Behalten Sie eine stabile Aktivitätsstufe am Tag bei und vermeiden Sie Spitzen, um zu verhindern, dass die Instanz überlastet wird. Verteilen Sie dazu die Startzeiten des Workflows gleichmäßig über den Tag.
+* Achten Sie auf ein über den Tag verteiltes stabiles Aktivitätsniveau und vermeiden Sie Spitzen, um zu verhindern, dass die Instanz überlastet wird. Verteilen Sie dazu die Startzeiten des Workflows gleichmäßig über den Tag.
 * Planen Sie das Laden der Daten für die Nacht, um Ressourcenkonflikte zu reduzieren.
 * Lange Workflows können sich auf die Server- und Datenbankressourcen auswirken. Teilen Sie die längsten Workflows auf, um die Bearbeitungszeit zu verkürzen.
 * Um die Gesamtlaufzeit zu verkürzen, ersetzen Sie zeitaufwändige Aktivitäten durch einfachere und schnellere Aktivitäten.
-* Vermeiden Sie die gleichzeitige Ausführung von mehr als 20 Workflows. Wenn zu viele Workflows gleichzeitig ausgeführt werden, kann Ihre Plattform überlastet sein und instabil werden.
+* Vermeiden Sie die gleichzeitige Ausführung von mehr als 20 Workflows. Wenn zu viele Workflows gleichzeitig ausgeführt werden, kann Ihre Plattform durch Überlastung instabil werden.
 
 ### Workflow-Ausführung {#workflow-execution}
 
-Verbessern Sie die Stabilität Ihrer Instanz, indem Sie die folgenden Best Practices implementieren:
+Verbessern Sie die Stabilität Ihrer Instanz, indem Sie die folgenden Best Practices beachten:
 
 * **Es wird empfohlen, Workflows nicht öfter als alle 15 Minuten auszuführen**, da die Gesamtleistung des Systems beeinträchtigt werden kann und Blockierungen in der Datenbank entstehen können.
 
@@ -157,6 +158,6 @@ Verbessern Sie die Stabilität Ihrer Instanz, indem Sie die folgenden Best Pract
 
 ### In der Engine ausführen {#execute-in-the-engine-option}
 
-Vermeiden Sie in einer Produktionsumgebung die Ausführung von Workflows in der Engine. Wenn die **[!UICONTROL In der Engine ausführen]** ist in der **[!UICONTROL Workflow-Eigenschaften]**, wird der Workflow prioritär und alle anderen Workflows werden von der Workflow-Engine angehalten, bis diese beendet ist.
+Vermeiden Sie in einer Produktionsumgebung die Ausführung von Workflows in der Engine. Wenn die Option **[!UICONTROL In der Engine ausführen]** in den **[!UICONTROL Workflow-Eigenschaften]** aktiviert ist, hat dieser Workflow Priorität und alle anderen Workflows werden von der Workflow-Engine angehalten, bis dieser beendet ist.
 
 ![](assets/wf-execute-in-engine.png)
