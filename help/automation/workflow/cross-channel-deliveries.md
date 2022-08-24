@@ -4,25 +4,25 @@ title: Kanalübergreifender Versand
 description: Weitere Informationen zu kanalübergreifenden Sendungen.
 feature: Workflows, Channels Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 62%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 # Kanalübergreifender Versand{#cross-channel-deliveries}
 
-Auf kanalübergreifende Sendungen kann auf der Registerkarte **[!UICONTROL Sendungen]** von Kampagnen-Workflows zugegriffen werden.[](campaign-workflows.md)
+Auf kanalübergreifende Sendungen kann über die Registerkarte **[!UICONTROL Sendungen]** von [Kampagnen-Workflow](campaign-workflows.md)-Aktivitäten zugegriffen werden.
 
 Wählen Sie die Vorlage aus, auf der der Versand basieren soll, und definieren Sie ihre Inhalte.
 
 Die Zielgruppe des Versands kann mithilfe der verschiedenen dedizierten Zielgruppenbestimmungs-Aktivitäten vorab im Workflow definiert werden.
 
-Im folgenden Beispiel erfahren Sie, wie Sie einen Workflow erstellen, um eine E-Mail oder eine SMS an Abonnenten einer Push-Benachrichtigung und eine Push-Benachrichtigung eine Woche später zu senden. Gehen Sie dazu wie folgt vor:
+Im folgenden Beispiel erfahren Sie, wie Sie einen Workflow erstellen, um eine E-Mail oder eine SMS für Abonnentinnen und Abonnenten von Push-Benachrichtigungen zu senden und eine Woche später eine weitere Push-Benachrichtigung folgen zu lassen. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie eine Kampagne.
-1. Im **[!UICONTROL Zielbestimmungen und Workflows]** im Tab Ihrer Kampagne eine **[!UICONTROL Abfrage]** Aktivität.
-1. Konfigurieren Sie Ihre Abfrage: Wählen Sie als Zieldimension die Empfänger aus, die Push-Benachrichtigungen abonniert haben.
+1. Fügen Sie Ihrer Kampagne auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** eine **[!UICONTROL Abfrage]**-Aktivität hinzu.
+1. Konfigurieren Sie Ihre Abfrage, indem Sie die Personen, die Push-Benachrichtigungen abonniert haben, als Zieldimension auswählen.
 
    >[!NOTE]
    >
@@ -37,17 +37,17 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen Workflow erstellen, um eine E-
 1. Fügen Sie Ihrem Workflow eine **[!UICONTROL Aufspaltung]** hinzu, um Empfänger in Besitzer einer Mobiltelefonnummer und in Besitzer einer E-Mail-Adresse zu unterteilen.
 1. Wählen Sie im Tab **[!UICONTROL Versand]** für jeden Zieldatensatz einen Versand.
 
-   Erstellen Sie Ihren Versand auf die gleiche Weise wie mit einem klassischen Versand-Assistenten, indem Sie in Ihrem Workflow auf die Versandaktivität doppelklicken. Weitere Informationen hierzu finden Sie in diesem .
+   Erstellen Sie Ihren Versand wie mit dem klassischen Versand-Assistenten, indem Sie die Versandaktivität in Ihrem Workflow durch einen Doppelklick auswählen. Weiterführende Informationen dazu finden Sie hier.
 
    ![](assets/cross_channel_delivery_3.png)
 
 1. Fügen Sie eine **[!UICONTROL Warten]**-Aktivität hinzu und konfigurieren Sie sie, damit die Empfänger nicht zu viele Sendungen gleichzeitig erhalten.
 1. Fügen Sie eine **[!UICONTROL Aufspaltung]** hinzu, um Abonnenten in Anwender von iOS- und Android-Apps zu unterteilen.
 
-   Wählen Sie für jedes Betriebssystem einen Dienst aus. Weiterführende Informationen zur Erstellung von Diensten finden Sie in diesem .
+   Wählen Sie für jedes Betriebssystem einen Service aus. Weiterführende Informationen zur Service-Erstellung finden Sie hier.
 
    ![](assets/cross_channel_delivery_4.png)
 
-1. Wählen Sie für jedes Betriebssystem einen Versand über eine mobile App aus und konfigurieren Sie ihn.
+1. Wählen Sie für jedes Betriebssystem einen Mobile-App-Versand aus und konfigurieren Sie ihn.
 
    ![](assets/cross_channel_delivery_5.png)
