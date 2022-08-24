@@ -1,17 +1,18 @@
 ---
-title: Zielgruppen-Workflows erstellen
-description: Erfahren Sie, wie Sie in einem Workflow Zielgruppen erstellen
+title: Erstellen eines Zielgruppen-Workflows
+description: Hier erfahren Sie, wie Sie in einem Workflow Audiences erstellen.
 feature: Query Editor, Data Management
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '2366'
-ht-degree: 94%
+exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
-# Erstellen eines Zielgruppenbestimmungs-Workflows{#target-data}
+# Erstellen eines Zielgruppen-Workflows{#target-data}
 
-Mit Workflows können Sie die Datenbank abfragen und Ihre Daten segmentieren. Das Campaign-Workflow-Modul ist ein leistungsstarkes Tool, um Datenverwaltungsaktivitäten durchzuführen, Daten zu extrahieren, anzureichern und umzuwandeln, Zielgruppen zu verwalten und Populationen zu verfeinern.
+Workflows können für die Abfrage einer Datenbank und die Segmentierung von Daten verwendet werden. Das Workflow-Modul von Campaign ist ein leistungsstarkes Tool, um Daten-Management-Aktivitäten durchzuführen, Daten zu extrahieren, anzureichern und umzuwandeln, Audiences zu verwalten und Populationen zu verfeinern.
 
 Zielgruppen-Workflows erlauben die Bestimmung von einer oder mehreren Versandzielgruppen. Dies geschieht mithilfe von Abfragen, Vereinigungen oder Ausschlüssen nach bestimmten Kriterien. Das Ergebnis der Zielgruppenbestimmung kann dann beispielsweise in eine Liste übertragen werden, um diese als Grundlage für Versandaktionen zu verwenden.
 
@@ -53,7 +54,7 @@ Bei Auswahl der Empfänger (**recipent**) im Feld Zielgruppendimension stehen fo
 
 ![](assets/query-filter-dimensions.png)
 
-Während für **Besucher** enthält die Liste die folgenden Filterdimensionen:
+Für **Besuchende** dagegen enthält die Liste die folgenden Filterdimensionen:
 
 ![](assets/query-filter-dimension-2.png)
 
@@ -61,11 +62,11 @@ Während für **Besucher** enthält die Liste die folgenden Filterdimensionen:
 
 ### Arbeiten mit zusätzlichen Daten {#select-data}
 
-Mit einer **[!UICONTROL Abfrageaktivität]** können Sie grundlegende Daten zum Aufbau der Zielpopulation auswählen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](query.md#create-a-query).
+Mit einer **[!UICONTROL Abfrageaktivität]** können Sie allgemeine Daten zum Aufbau der Zielpopulation auswählen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](query.md#create-a-query).
 
 Sie können auch mithilfe der folgenden Aktivitäten Daten aus der Datenbank abfragen und weiter filtern: [Inkrementelle Abfrage ](incremental-query.md), [Liste lesen](read-list.md).
 
-Es ist möglich, zusätzliche Daten zu sammeln, die während des gesamten Lebenszyklus des Workflows weitergeleitet und verarbeitet werden. Weitere Informationen hierzu finden Sie unter [Daten hinzufügen](query.md#add-data) und [Zusätzliche Daten bearbeiten](#edit-additional-data).
+Es ist möglich, zusätzliche Daten zu sammeln, die während des gesamten Lebenszyklus des Workflows weitergeleitet und verarbeitet werden. Weitere Informationen hierzu finden Sie unter [Hinzufügen von Daten](query.md#add-data) und [Bearbeiten von zusätzlichen Daten](#edit-additional-data).
 
 ### Bearbeiten zusätzlicher Daten {#edit-additional-data}
 
@@ -79,7 +80,7 @@ Um den zuvor definierten Ausgabespalten Daten hinzuzufügen, müssen Sie diese a
 
 ![](assets/query_add_an_output_column.png)
 
-Klicken Sie auf **Erweiterte Auswahl** Schaltfläche.
+Klicken Sie auf die Schaltfläche **Erweiterte Auswahl**.
 
 ![](assets/query_add_an_output_column_formula.png)
 
@@ -93,7 +94,7 @@ Die Unterelemente erscheinen als Unterordner der Kollektion, der sie angehören.
 
 Kollektionen werden im gleichnamigen Untertab angezeigt. Durch Klick auf die Schaltfläche **[!UICONTROL Details...]** ... können Sie die abgerufenen Elemente filtern. Wählen Sie im Filterassistenten anhand der Dropdown-Liste zunächst die gesammelten Daten aus und geben Sie dann die auf die Kollektion anzuwendenden Filterbedingungen an.****
 
-### Zielgruppe mithilfe zusätzlicher Daten einschränken {#refine-the-target-using-additional-data}
+### Einschränken einer Zielgruppe mithilfe zusätzlicher Daten {#refine-the-target-using-additional-data}
 
 Die abgerufenen Zusatzdaten können zur weiteren Einschränkung der Daten aus der Datenbank herangezogen werden. Klicken Sie dazu auf den Link **[!UICONTROL Zielgruppe mithilfe zusätzlicher Daten einschränken...]**: Damit können Sie dank der zusätzlichen Daten genauer filtern.
 
@@ -101,13 +102,13 @@ Die abgerufenen Zusatzdaten können zur weiteren Einschränkung der Daten aus de
 
 ### Vereinheitlichen von Daten {#homogenize-data}
 
-In den Aktivitäten vom Typ **[!UICONTROL Vereinigung]** und **[!UICONTROL Schnittmenge]** haben Sie die Möglichkeit, nur die gemeinsamen Zusatzdaten beizubehalten, um eine homogene Datenbasis zu erhalten. In diesem Fall enthält die resultierende temporäre Arbeitstabelle der entsprechenden Aktivität nur die Zusatzdaten, die in allen eingehenden Mengen enthalten sind.
+Mit den Aktivitäten vom Typ **[!UICONTROL Vereinigung]** und **[!UICONTROL Schnittmenge]** haben Sie die Möglichkeit, nur gemeinsame Zusatzdaten auszuwählen, um eine konsistente Datenbasis zu erhalten. In diesem Fall enthält die resultierende temporäre Arbeitstabelle dieser Aktivität nur die Zusatzdaten, die in allen eingehenden Teilmengen vorkommen.
 
 ![](assets/use-common-add-data-only.png)
 
-### Mit zusätzlichen Daten abstimmen {#reconciliation-with-additional-data}
+### Abstimmen mit zusätzlichen Daten {#reconciliation-with-additional-data}
 
-In den Aktivitäten **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** etc. besteht die Möglichkeit, die zur Abstimmung zu verwendenden Spalten aus den Zusatzdaten auszuwählen. Konfigurieren Sie hierzu die Abstimmung über eine Auswahl an Spalten und geben Sie die Hauptmenge an. Wählen Sie dann im unteren Fensterbereich wie dargestellt die entsprechenden Spalten aus:
+Bei der Datenabstimmung (der Aktivitäten **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** etc.) können Sie die zur Abstimmung zu verwendenden Spalten aus den zusätzlichen Spalten auswählen. Konfigurieren Sie hierzu eine Abstimmung einer Auswahl an Spalten und geben Sie die Hauptmenge an. Wählen Sie dann im unteren Fensterbereich wie dargestellt die entsprechenden Spalten aus:
 
 ![](assets/select-column-and-join.png)
 
@@ -168,7 +169,7 @@ Zur Abstimmung der Daten stehen folgende Optionen zur Verfügung:
 
 ![](assets/traitements.png)
 
-Über die Schnittmenge lassen sich nur die Datensätze abrufen, die in allen eingehenden Transitionen enthalten sind. Diese Aktivität muss wie die Vereinigungsaktivität konfiguriert werden.
+Über die Schnittmenge lassen sich nur die Zeilen abrufen, die alle Populationen der eingehenden Transitionen gemeinsam haben. Diese Aktivität muss wie die Vereinigungsaktivität konfiguriert werden.
 
 Es ist außerdem möglich, nur eine Auswahl an Spalten oder nur die Spalten, die in allen eingehenden Populationen enthalten sind, abzurufen.
 
@@ -180,7 +181,7 @@ Die Schnittmengenaktivität wird im Abschnitt [Schnittmenge](intersection.md) de
 
 Bei Bedarf können die eingehenden Tabellen angepasst werden. Dies ist beispielsweise erforderlich, wenn eine Population einer anderen Dimension ausgeschlossen werden soll. In diesem Fall muss sie in die Dimension der Hauptmenge überführt werden. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie die Bedingungen des Dimensionswechsels an.
 
-Die Abstimmung der Daten kann über die Kennungen, eine Achsenänderung oder einen Join erfolgen.
+Die Abstimmung der Daten kann über eine Kennung, eine Achsenänderung oder einen Join erfolgen.
 
 ![](assets/exclusion-add-rule.png)
 
@@ -238,7 +239,7 @@ Es besteht jedoch die Möglichkeit, alle Teilmengen in einer ausgehenden Transit
 
 ![](assets/wf_split_single_output.png)
 
-Dies ist beispielsweise dann interessant, wenn Sie eine einzige Versandaktivität anschließen, den Inhalt aber je nach Segment-Code der Teilmenge personalisieren möchten.
+Dies ist beispielsweise dann interessant, wenn Sie eine einzige Versandaktivität anschließen, den Inhalt aber je nach Segment-Code der Empfänger-Teilmenge personalisieren möchten.
 
 
 Teilmengen können auch mithilfe der Aktivität **[!UICONTROL Segmente]** erstellt werden. Weitere Informationen hierzu finden Sie im Abschnitt [Segmente](cells.md).
@@ -281,9 +282,9 @@ Hierfür bietet Adobe Campaign:
 
 ### Anreichern und Ändern von Daten {#enrich-and-modify-data}
 
-Ergänzend zur Zielgruppendimension ermöglicht es die Filterdimension, die Art der abgerufenen Daten zu präzisieren. Weitere Informationen finden Sie in [diesem Abschnitt](targeting-workflows.md#targeting-and-filtering-dimensions).
+Ergänzend zur Zielgruppendimension ermöglicht die Filterdimension, die Art der abgerufenen Daten zu präzisieren. Weitere Informationen finden Sie in [diesem Abschnitt](targeting-workflows.md#targeting-and-filtering-dimensions).
 
-Identifizierte und abgerufene Daten können angereichert, zusammengefasst und bearbeitet werden, um die Zielgruppenerstellung zu optimieren. Dies geschieht zusätzlich zu den Datenbearbeitungstätigkeiten, die im Abschnitt [diesem Abschnitt](#segmen-data)verwenden Sie Folgendes:
+Identifizierte und abgerufene Daten können angereichert, zusammengefasst und bearbeitet werden, um die Zielgruppenerstellung zu optimieren. Verwenden Sie dazu zusätzlich zu den in [diesem Abschnitt](#segmen-data) beschriebenen Datenmanipulationsaktivitäten die folgenden:
 
 * Mit der Aktivität **[!UICONTROL Anreicherung]** können Sie vorübergehend Spalten zu einem Schema sowie Informationen zu bestimmten Elementen hinzufügen. Weitere Informationen hierzu finden Sie im Abschnitt [Anreicherung](enrichment.md) des Aktivitäten-Repositorys.
 * Mit der Aktivität **[!UICONTROL Schema-Bearbeitung]** können Sie die Struktur eines Schemas ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Schema-Bearbeitung](edit-schema.md) des Aktivitäten-Repositorys.
