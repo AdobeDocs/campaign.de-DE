@@ -1,22 +1,22 @@
 ---
 product: campaign
 title: Dimensionsänderung in einem Workflow
-description: Erfahren Sie, wie Sie die Aktivität Dimensionsänderung verwenden
+description: Erfahren Sie, wie Sie die Aktivität der Dimensionsänderung verwenden
 feature: Workflows, Targeting Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 75%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
-# Dimensionsänderung{#change-dimension}
+# Ändern der Dimension{#change-dimension}
 
-Verwenden Sie die **[!UICONTROL Dimensionsänderung]** Aktivität , um die Zielgruppendimension beim Erstellen einer Audience zu ändern. Diese Aktivität verschiebt die Achse je nach Datenvorlage und Eingabedimension. Sie wechseln beispielsweise von der Dimension &quot;Verträge&quot;zur Dimension &quot;Kunden&quot;.
+Verwenden Sie die Aktivität **[!UICONTROL Dimensionsänderung]**, um die Zielgruppendimension beim Erstellen einer Audience zu ändern. Diese Aktivität verschiebt die Achse je nach Datenvorlage und der eingegebenen Dimension. Sie wechseln beispielsweise von der Dimension &quot;Verträge&quot; zur Dimension &quot;Kunden&quot;.
 
-Sie können diese Aktivität auch verwenden, um die zusätzlichen Spalten der neuen Zielgruppe zu definieren und Kriterien zur Datendeduplizierung zu definieren.
+Sie können diese Aktivität auch verwenden, um die zusätzlichen Spalten der neuen Zielgruppe und Kriterien zur Datendeduplizierung zu definieren.
 
-So konfigurieren Sie die **[!UICONTROL Dimensionsänderung]** -Aktivität verwenden, gehen Sie wie folgt vor:
+Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen Sie die folgenden Schritte aus:
 
 1. Wählen Sie im Feld **[!UICONTROL Dimensionsänderung]** die neue Zielgruppendimension aus.
 
@@ -48,7 +48,7 @@ So konfigurieren Sie die **[!UICONTROL Dimensionsänderung]** -Aktivität verwen
 
       >[!NOTE]
       >
-      >Informationen zur Erstellung und Verwaltung von Zusatzspalten finden Sie unter [Daten hinzufügen](query.md#add-data).
+      >Weitere Informationen zur Erstellung und Verwendung von Zusatzspalten finden Sie unter [Daten hinzufügen](query.md#add-data).
 
    * Wählen Sie die ursprüngliche Zielgruppendimension aus (vor der Dimensionsänderung), markieren Sie die **[!UICONTROL Kundennummer]** und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]****[!UICONTROL .]**
 
