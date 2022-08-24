@@ -3,10 +3,11 @@ product: campaign
 title: Erstellen einer partizipativen Kampagne
 description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen
 feature: Distributed Marketing
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 93%
+exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -28,11 +29,11 @@ Die Basiskonfiguration einer partizipativen Kampagne gleicht der der Vorlage ein
 
 ### Partizipative Kampagne (Formular) {#by-form}
 
-Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Formular) (opCollaborativeByForm)]** aus und klicken Sie auf , um die Kampagne zu erstellen.
+Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Formular) (opCollaborativeByForm)]** aus, um diese Kampagne zu erstellen.
 
 ![](assets/mkg_dist_mutual_op_form2.png)
 
-Im **[!UICONTROL Bearbeiten]** klicken Sie auf die **[!UICONTROL Erweiterte Kampagnenparameter...]** Link zum Zugriff auf **Distributed Marketing** Registerkarte.
+Klicken Sie auf der Registerkarte **[!UICONTROL Bearbeiten]** auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**, um die Registerkarte **Verteiltes Marketing** aufzurufen.
 
 Wählen Sie den Web-Schnittstellentyp **Standardformular** aus. Dieser Schnittstellentyp ermöglicht die Erstellung von Personalisierungsfeldern, die von den Lokalstellen bei der Kampagnenbestellung genutzt werden können. Siehe [Lokale Kampagne erstellen (Standardformular)](examples.md#creating-a-local-campaign--by-form-).
 
@@ -79,7 +80,7 @@ Der Kampagnenworkflow muss die Aktivität **Lokale Validierung** beinhalten. Die
 * **[!UICONTROL Verteilungskontext]**: Explizit;
 * **[!UICONTROL Datenverteilung]**: Lokalstellen-Datenverteilung.
 
-**Lokalstellen-Verteilung** Datenverteilung vom Typ muss erstellt werden. Die Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl ausgehend von einer Liste von Gruppierungswerten. In **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]**, klicken Sie auf die **[!UICONTROL Neu]** Symbol zum Erstellen eines neuen **[!UICONTROL Datenverteilung]**. Weitere Informationen zur Datenverteilung finden Sie unter
+Erstellen Sie eine Datenverteilung vom Typ **Lokalstellen-Datenverteilung**. Mit der Datenverteilungsvorlage können Sie die Anzahl der Datensätze aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie unter **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**, um eine neue **[!UICONTROL Datenverteilung]** zu erstellen. Für weitere Informationen zur Datenverteilung
 
 ![](assets/mkg_dist_data_distribution.png)
 
