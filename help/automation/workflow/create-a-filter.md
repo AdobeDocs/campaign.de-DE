@@ -4,8 +4,8 @@ title: Erstellen von Filtern
 description: Erfahren Sie, wie Sie bei Abfragen einen Filter erstellen können
 feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '226'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 100%
 
 
 
-Filter werden in Adobe Campaign auf die gleiche Weise erstellt wie Abfragen.
+Filter werden in Adobe Campaign über Filterbedingungen definiert, die ähnlich wie Abfragen erstellt werden.
 
 >[!NOTE]
 >
->Näheres zu Filtern und deren Erstellung wird im Kapitel  erläutert.
+>Näheres zu Filtern und deren Erstellung erfahren Sie hier:
 
 Der Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** enthält alle in Listen und Übersichten verwendeten Filter.
 
