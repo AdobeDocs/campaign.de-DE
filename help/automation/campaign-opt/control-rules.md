@@ -1,12 +1,13 @@
 ---
 product: campaign
-title: Kontrollregeln konfigurieren
+title: Konfigurieren von Kontrollregeln
 description: Erfahren Sie, wie Sie Kontrollregeln konfigurieren
 feature: Typology Rules
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 96%
+exl-id: 79e442ea-f856-41bf-b065-25cb2ad2c65b
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +26,7 @@ Mehrere standardmäßige Regeln führen grundlegende Kontrollen durch. Es handel
 * **[!UICONTROL Prüfung der Schub-Planung]** (E-Mail): prüft im Falle von Schub-Sendungen, ob der letzte geplante Schub vor dem Ablaufdatum des Versands liegt.
 * **[!UICONTROL Validierung des Abmelde-Links]** (E-Mail): prüft, ob in jedem Inhalt (HTML und Text) mindestens eine URL vom Typ &quot;Opt-out&quot; enthalten ist.
 
-## Kontrollregel erstellen {#create-a-control-rule}
+## Erstellen einer Kontrollregel {#create-a-control-rule}
 
 Sie können entsprechend Ihren Bedürfnissen neue Kontrollregeln hinzufügen. Erstellen Sie hierfür eine Typologieregel vom Typ **[!UICONTROL Kontrolle]** und geben Sie die SQL-Kontrollformel im Tab **[!UICONTROL Code]** ein.
 
