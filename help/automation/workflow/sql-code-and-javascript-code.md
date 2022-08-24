@@ -4,8 +4,8 @@ title: SQL-Code und JavaScript-Code
 description: Erfahren Sie mehr über die Workflow-Aktivitäten für SQL- und JavaScript-Codes.
 feature: Workflows
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '297'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
