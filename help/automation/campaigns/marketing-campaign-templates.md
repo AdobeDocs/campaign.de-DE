@@ -3,10 +3,11 @@ product: campaign
 title: Marketing-Kampagnenvorlagen
 description: Marketing-Kampagnenvorlagen
 feature: Campaigns, Templates
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
-workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 49%
+exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
+source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 49%
 
 Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Hauptmerkmale und -funktionen gespeichert sind. Campaign verfügt über eine integrierte Vorlage zum Erstellen von Kampagnen. Für diese Vorlage sind alle Funktionen aktiviert: Dokumente, Testadressen, Validierungen, Versandentwürfe usw.
 
-Die verfügbaren Funktionen hängen von Ihren Berechtigungen, Add-ons und der Konfiguration Ihrer Adobe Campaign-Plattform ab.
+Welche Funktionen verfügbar sind, hängt von Ihren Berechtigungen, Add-ons und der Konfiguration Ihrer Adobe Campaign-Plattform ab.
 
 
 >[!NOTE]
@@ -27,39 +28,39 @@ Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen 
 
 Gehen Sie wie folgt vor, um eine Kampagnenvorlage zu erstellen:
 
-1. Kampagne öffnen **Explorer** und navigieren Sie zu **Ressourcen > Vorlagen > Kampagnenvorlagen**.
-1. Klicken **Neu** in der Symbolleiste oberhalb der Vorlagenliste.
+1. Öffnen Sie den **Explorer** von Campaign und gehen Sie zu **Ressourcen > Vorlagen > Kampagnenvorlagen**.
+1. Klicken Sie in der Symbolleiste oberhalb der Vorlagenliste auf **Neu**.
 
 ![](assets/campaign-template-node.png)
 
-Sie können auch **Duplikat** die integrierte Vorlage zur Wiederverwendung und Anpassung ihrer Konfiguration. Klicken Sie dazu mit der rechten Maustaste auf die Vorlage und wählen Sie **Duplizieren**.
+Sie können die integrierte Vorlage auch **duplizieren**, um ihre Konfiguration wiederzuverwenden und anzupassen. Klicken Sie dazu mit der rechten Maustaste auf die Vorlage und wählen Sie **Duplizieren**.
 
 1. Geben Sie den Titel der neuen Kampagnenvorlage ein.
 1. Klicken Sie auf **Speichern** und öffnen Sie die Vorlage erneut.
-1. Im **Bearbeiten** definieren Sie die Vorlageneigenschaften.
-1. Auswählen **Erweiterte Kampagnenparameter...** -Link, um Ihrer Kampagnenvorlage einen Workflow hinzuzufügen.
+1. Definieren Sie auf der Registerkarte **Bearbeiten** die Eigenschaften der Vorlage.
+1. Wählen Sie den Link **Erweiterte Kampagnenparameter...**, um einen Workflow zu Ihrer Kampagnenvorlage hinzuzufügen.
 
    ![](assets/campaign-template-parameters.png)
 
-1. Ändern Sie die **Zielbestimmungen und Workflows** Wert zu **Ja**. und bestätigen Sie. Erfahren Sie, wie Sie Funktionen hinzufügen in [diesem Abschnitt](#typology-of-enabled-modules).
-1. Die **Zielbestimmungen und Workflows** der Vorlage hinzugefügt. Klicken **Workflow hinzufügen...**, geben Sie einen **Titel** und klicken Sie auf **Ok**.
+1. Ändern Sie den Wert für **Zielgruppenbestimmungen und Workflows** auf **Ja** und bestätigen Sie diesen. Wie Sie Funktionen hinzufügen können, erfahren Sie in [diesem Abschnitt](#typology-of-enabled-modules).
+1. Die Registerkarte **Zielgruppenbestimmungen und Workflows** wird zur Vorlage hinzugefügt. Klicken Sie auf **Workflow hinzufügen...**, geben Sie einen **Titel** ein und klicken Sie auf **OK**.
 1. Erstellen Sie Ihren Workflow entsprechend Ihren Anforderungen.
 
    ![](assets/campaign-template-create-wf.png)
 
 1. Wählen Sie **Speichern** aus. Ihre Vorlage kann jetzt zur Erstellung einer neuen Kampagne verwendet werden.
 
-Die unterschiedlichen Tabs und Unter-Tabs der Kampagnenvorlage ermöglichen den Zugriff auf die Einstellungen. Sie werden im Abschnitt [Allgemeine Konfiguration](#general-configuration) beschrieben.
+Die unterschiedlichen Registerkarten und Unterregisterkarten der Kampagnenvorlage ermöglichen den Zugriff auf die Einstellungen. Sie werden im Abschnitt [Allgemeine Konfiguration](#general-configuration) beschrieben.
 
 ## Auswählen von Modulen {#select-modules}
 
-Die **[!UICONTROL Erweiterte Kampagnenparameter...]** -Link ermöglicht die Aktivierung und Deaktivierung von Aufträgen für die auf dieser Vorlage basierenden Kampagnen. Wählen Sie die Funktionen aus, die Sie in den über diese Vorlage erstellten Kampagnen aktivieren möchten.
+Über den Link **[!UICONTROL Erweiterte Kampagnenparameter...]** können Sie Vorgänge für die auf dieser Vorlage basierenden Kampagnen aktivieren und deaktivieren. Wählen Sie die Funktionen aus, die Sie in den über diese Vorlage erstellten Kampagnen aktivieren möchten.
 
 ![](assets/campaign-template-select-modules.png)
 
-Wenn eine Funktion nicht ausgewählt ist, die das Verfahren betreffenden Elemente (Menüs, Symbole, Optionen, Registerkarten, Unterregisterkarten usw.) nicht in der Vorlagenoberfläche oder in auf dieser Vorlage basierenden Kampagnen angezeigt werden. Die Tabs links neben den Kampagnendetails und die verfügbaren Tabs entsprechen den in der Vorlage ausgewählten Funktionen. Beispiel: die **Ausgaben und Ziele** nicht aktiviert ist, wird die entsprechende **[!UICONTROL Budget]** nicht in auf dieser Vorlage basierenden Kampagnen angezeigt werden.
+Wenn eine Funktion nicht ausgewählt ist, werden die den Prozess betreffenden Elemente (Menüs, Symbole, Optionen, Registerkarten, Unterregisterkarten usw.) nicht in der Benutzeroberfläche der Vorlage oder in den auf dieser Vorlage basierenden Kampagnen angezeigt. Die Registerkarten auf der linken Seite der Kampagnendetails und die verfügbaren Registerkarten entsprechen den in der Vorlage ausgewählten Funktionen. Wenn zum Beispiel die Funktion **Ausgaben und Ziele** nicht aktiviert ist, wird die entsprechende Registerkarte **[!UICONTROL Budget]** in Kampagnen, die auf dieser Vorlage basieren, nicht angezeigt.
 
-Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenstern hinzugefügt: Wenn eine Funktionalität aktiviert ist, besteht über einen Link im Dashboard direkter Zugriff auf diese.
+Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenstern hinzugefügt: Wenn eine Funktionalität aktiviert ist, können Sie über einen Link im Dashboard direkt darauf zugreifen.
 
 ### Konfigurationsbeispiele
 
@@ -71,19 +72,19 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 
    ![](assets/campaign-template-dashboard-sample-1.png)
 
-   Beachten Sie Folgendes: **[!UICONTROL Zielbestimmungen und Workflows]** fehlt.
+   Beachten Sie, dass die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** fehlt.
 
-   Folgende Funktionen sind verfügbar:
+   Folgende Funktionen stehen zur Verfügung:
 
    ![](assets/campaign-template-edit-sample-1.png)
 
-   Beachten Sie Folgendes: **[!UICONTROL Budget]** fehlt.
+   Beachten Sie, dass die Registerkarte **[!UICONTROL Budget]** fehlt.
 
    Die erweiterten Einstellungen der Kampagne spiegeln diese Konfiguration ebenfalls wider.
 
    ![](assets/campaign-template-parameters-sample-1.png)
 
-   Beachten Sie Folgendes: **[!UICONTROL Genehmigungen]** nicht verfügbar ist.
+   Beachten Sie, dass die Registerkarte **[!UICONTROL Genehmigungen]** nicht verfügbar ist.
 
 * Mit dieser Konfiguration:
    ![](assets/campaign-template-dashboard-sample-2.png)
@@ -92,19 +93,19 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 
    ![](assets/campaign-template-select-functionalities-2.png)
 
-   Beachten Sie Folgendes: **[!UICONTROL Zielbestimmungen und Workflows]** -Tab verfügbar, aber die **Dokument hinzufügen** -Link fehlt.
+   Beachten Sie, dass die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** verfügbar ist, aber der Link **Dokument hinzufügen** fehlt.
 
-   Folgende Funktionen sind verfügbar:
+   Folgende Funktionen stehen zur Verfügung:
 
    ![](assets/campaign-template-edit-sample-2.png)
 
-   Beachten Sie Folgendes: **[!UICONTROL Budget]** verfügbar ist.
+   Beachten Sie, dass die Registerkarte **[!UICONTROL Budget]** verfügbar ist.
 
    Die erweiterten Einstellungen der Kampagne spiegeln diese Konfiguration ebenfalls wider.
 
    ![](assets/campaign-template-parameters-sample-2.png)
 
-   Beachten Sie Folgendes: **[!UICONTROL Genehmigungen]** -Tab verfügbar, aber die **[!UICONTROL Kontrollpopulation]** und **[!UICONTROL Testadressen]** Registerkarten sind nicht aktiviert.
+   Beachten Sie, dass die Registerkarte **[!UICONTROL Genehmigungen]** verfügbar ist, aber die Registerkarten **[!UICONTROL Kontrollpopulation]** und **[!UICONTROL Testadressen]** nicht aktiviert sind.
 
 
 ## Typologie von Modulen {#typology-of-enabled-modules}
@@ -124,7 +125,7 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 
 * **Dokumente**
 
-   Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zum **[!UICONTROL Bearbeiten]** der Vorlage und der auf dieser Vorlage basierenden Kampagnen. Anhänge können aus der Vorlage oder einzeln für jede Kampagne hinzugefügt werden. Weitere Informationen zu Dokumenten finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#manage-associated-documents).
+   Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zur Registerkarte **[!UICONTROL Bearbeiten]** der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Anhänge können für jede Kampagne in der Vorlage oder einzeln hinzugefügt werden. Weitere Informationen zu Dokumenten finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#manage-associated-documents).
 
    ![](assets/template-activate-3.png)
 
@@ -140,15 +141,15 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 
    ![](assets/template-activate-5.png)
 
-   Wenn dieses Modul aktiviert ist, wird ein **[!UICONTROL Aufträge]** den erweiterten Parametern der Kampagne hinzugefügt werden, um die Ausführungsreihenfolge des Prozesses zu definieren.
+   Wenn dieses Modul aktiviert ist, wird die Registerkarte **[!UICONTROL Vorgänge]** zu den erweiterten Einstellungen der Kampagne hinzugefügt, um die Reihenfolge der Prozessausführung zu definieren.
 
 * **Validierungen**
 
-   Wenn Sie die **[!UICONTROL Genehmigungen]** können Sie die zu validierenden Prozesse und die für die Validierungen verantwortlichen Benutzer auswählen. Weitere Informationen zu Validierungen finden Sie in [diesem Abschnitt](marketing-campaign-approval.md#select-reviewers).
+   Wenn Sie die **[!UICONTROL Validierungen]** aktivieren, können Sie die zu genehmigenden Prozesse und die für die Genehmigungen zuständigen Personen auswählen. Weitere Informationen zu Validierungen finden Sie in [diesem Abschnitt](marketing-campaign-approval.md#select-reviewers).
 
    ![](assets/template-activate-6.png)
 
-   Sie können festlegen, ob die Prozessvalidierung über die **[!UICONTROL Genehmigungen]** im Abschnitt mit den erweiterten Einstellungen der Vorlagen.
+   Sie können wählen, ob Sie die Prozessvalidierung über die Registerkarte **[!UICONTROL Genehmigungen]** im Abschnitt mit den erweiterten Einstellungen der Vorlagen aktivieren möchten oder nicht.
 
 * **Ausgaben und Budget**
 
@@ -163,19 +164,19 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 
 Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen notwendig:
 
-* Geben Sie die **label** der Vorlage: Der Titel ist obligatorisch und die Standardbeschriftung für alle auf dieser Vorlage basierenden Kampagnen.
-* **Kampagnenart**: Die in der Dropdown-Liste angebotenen Werte entsprechen den in der Auflistung **[!UICONTROL natureOp]** gespeicherten Werten.
+* Geben Sie den **Titel** der Vorlage ein: Der Titel ist obligatorisch und wird als Standardbtitel für alle auf dieser Vorlage basierenden Kampagnen verwendet.
+* **Kampagnenart**: Die in der Dropdown-Liste angebotenen Werte entsprechen den in der Aufzählung **[!UICONTROL natureOp]** gespeicherten Werten.
    <!--
   >[!NOTE]
   >
   >For more information on enumerations, refer to the [Getting Started](../../platform/using/managing-enumerations.md) section.-->
 
-* Wählen Sie den **Kampagnentyp**: einmalig, wiederkehrend oder periodisch. Standardmäßig gelten Kampagnenvorlagen für einmalige Kampagnen. Wiederkehrende und periodische Kampagnen werden in [diesem Abschnitt](recurring-periodic-campaigns.md) beschrieben.
+* Wählen Sie den **Kampagnentyp**: einmalig, wiederkehrend oder periodisch. Standardmäßig sind in Kampagnenvorlagen einmalige Kampagnen festgelegt. Wiederkehrende und periodische Kampagnen werden in [diesem Abschnitt](recurring-periodic-campaigns.md) beschrieben.
 * Dauer der Kampagne an: Gemeint ist der Zeitraum, über den sich die Kampagne erstrecken wird. Bei Erstellung einer auf einer Vorlage basierenden Kampagne werden Beginn und Ende somit automatisch ausgefüllt.
 
    Handelt es sich um eine wiederkehrende Kampagne, müssen Beginn und Ende direkt in der Vorlage angegeben werden.
 
-* Geben Sie die **verwandtes Programm** der Vorlage: Kampagnen, die auf dieser Vorlage basieren, sind mit dem ausgewählten Programm verknüpft.
+* Geben Sie das mit der Vorlage **verknüpfte Programm** an: Kampagnen, die auf dieser Vorlage basieren, sind mit dem ausgewählten Programm verknüpft.
 
 <!--
 ## Track campaign execution{#campaign-reverse-scheduling}
