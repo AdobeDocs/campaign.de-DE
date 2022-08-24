@@ -4,8 +4,8 @@ title: Ausschluss
 description: Erfahren Sie mehr über die Workflow-Aktivität "Ausschluss".
 feature: Workflows, Targeting Activity
 source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
-workflow-type: tm+mt
-source-wordcount: '357'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
