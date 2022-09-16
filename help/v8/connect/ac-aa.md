@@ -189,7 +189,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
 ## Technische Workflows der Web-Analyse-Prozesse {#technical-workflows-of-web-analytics-processes}
 
-Der Datenaustausch zwischen Adobe Campaign und Adobe Analytics wird durch einen technischen Workflow gesteuert, der eine Hintergrundaufgabe ausführt.
+Der Datenaustausch zwischen Adobe Campaign und Adobe Analytics wird durch einen im Hintergrund ablaufenden technischen Workflow gesteuert.
 
 Dieser Workflow ist im Campaign Explorer-Navigationsbaum im Ordner **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]** > **[!UICONTROL Web-Analytics-Prozess]** verfügbar.
 
