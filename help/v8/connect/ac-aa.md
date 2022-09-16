@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 100%
 
@@ -189,7 +189,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
 ## Technische Workflows der Web-Analyse-Prozesse {#technical-workflows-of-web-analytics-processes}
 
-Der Datenaustausch zwischen Adobe Campaign und Adobe Analytics wird durch vier im Hintergrund ablaufende technische Workflows gesteuert.
+Der Datenaustausch zwischen Adobe Campaign und Adobe Analytics wird durch einen technischen Workflow gesteuert, der eine Hintergrundaufgabe ausführt.
 
 Dieser Workflow ist im Campaign Explorer-Navigationsbaum im Ordner **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]** > **[!UICONTROL Web-Analytics-Prozess]** verfügbar.
 
