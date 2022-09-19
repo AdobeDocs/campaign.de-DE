@@ -1,54 +1,54 @@
 ---
 title: Arbeiten mit Zielgruppen-Mappings
-description: Erfahren Sie, wie Sie Zielgruppen-Mappings verwenden und erstellen
+description: Erfahren Sie, wie Sie Zielgruppen-Mappings erstellen und verwenden.
 feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 source-git-commit: a41bebfeb352b2f81f81b46c39b5f9b64431455b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '351'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
 # Arbeiten mit Zielgruppen-Mappings{#gs-target-mappings}
 
-Standardmäßig werden die Versandvorlagen als Zielgruppe ausgewählt **[!UICONTROL Empfänger]**. Ihr Zielgruppen-Mapping verwendet daher die Felder der **nms:recipient** Tabelle.
+Standardmäßig sind in Versandvorlagen die **[!UICONTROL Empfänger]** ausgewählt. Ihr Zielgruppen-Mapping verwendet daher die Felder der **nms:recipient**-Tabelle.
 
-Sie können für Ihre Sendungen andere Zielgruppen-Mappings verwenden oder ein neues Zielgruppen-Mapping erstellen.
+Sie können für Ihre Sendungen aber auch andere Zielgruppen-Mappings verwenden oder ein neues Zielgruppen-Mapping erstellen.
 
 ## Integrierte Zielgruppen-Mappings {#ootb-mappings}
 
-Adobe Campaign enthält die folgenden integrierten Zielgruppen-Mappings:
+Adobe Campaign verfügt über die folgenden integrierten Zielgruppen-Mappings:
 
-| Name | Verwendung bis | Schema |
+| Name | Verwendung Verwendungszweck | Schema |
 |---|---|---|
-| Bereich Empfänger | Versand an Empfänger (integrierte Empfängertabelle) | nms:recipient |
-| Besucher | Versand an Besucher, deren Profile z. B. über Verweise (Viral Marketing) erfasst wurden. | mns:visitor |
+| Empfänger | Versand an Empfänger (integrierte Empfängertabelle) | nms:recipient |
+| Besucher | Versand an Besucher, deren Profile beispielsweise über Empfehlungen (Viral Marketing) erfasst wurden. | mns:visitor |
 | Abonnements  | Versand richtet sich an Abonnenten eines Informationsdienstes wie z. B. einen Newsletter | nms:subscription |
 | Besucher-Abonnements | Versand richtet sich an Besucher, die einen Informationsdienst beziehen | nms:visitorSub |
 | Benutzer | Versand richtet sich an Adobe-Campaign-Benutzer | nms:operator |
 | Externe Datei | Versand basiert auf einer Datei, die alle notwendigen Informationen enthält | Ohne Schema oder Zielgruppe |
 
-## Zielgruppen-Mapping erstellen {#new-mapping}
+## Erstellen eines Zielgruppen-Mappings {#new-mapping}
 
-Sie können auch ein Zielgruppen-Mapping erstellen. Möglicherweise müssen Sie ein benutzerdefiniertes Zielgruppen-Mapping hinzufügen, z. B. wenn:
+Sie können auch selbst ein Zielgruppen-Mapping erstellen. Sie benötigen beispielsweise ein benutzerdefiniertes Zielgruppen-Mapping, wenn:
 
-* Sie verwenden eine benutzerdefinierte Empfängertabelle,
-* Sie können eine Filterdimension konfigurieren, die sich von der integrierten Zielgruppendimension auf dem Zielgruppen-Mapping-Bildschirm unterscheidet.
+* eine benutzerdefinierte Empfängertabelle verwendet wird,
+* eine Filterdimension konfiguriert wird, die sich von der integrierten Zielgruppendimension auf dem Zielgruppen-Mapping-Bildschirm unterscheidet.
 
-Weitere Informationen zu benutzerdefinierten Empfängertabellen finden Sie unter [diese Seite](../dev/custom-recipient.md).
+Weitere Informationen über benutzerdefinierte Empfängertabellen finden sich auf [dieser Seite](../dev/custom-recipient.md).
 
-Der Assistent zur Erstellung von Zielgruppen-Mappings von Adobe Campaign unterstützt Sie beim Erstellen aller Schemas, die zur Verwendung Ihres benutzerdefinierten Zielgruppen-Mappings erforderlich sind.
+Der Adobe Campaign-Assistent zur Erstellung von Zielgruppen-Mappings hilft Ihnen bei der Erstellung aller Schemata, die zur Verwendung Ihres benutzerdefinierten Zielgruppen-Mappings erforderlich sind.
 
-1. Navigieren Sie im Adobe Campaign-Explorer zu **[!UICONTROL Administration]** `>` **[!UICONTROL Kampagnenverwaltung]** `>` **[!UICONTROL Zielgruppen-Mappings]** .
+1. Navigieren Sie im Adobe Campaign-Explorer zu **[!UICONTROL Administration]** `>` **[!UICONTROL Kampagnenverwaltung]** `>` **[!UICONTROL Zielgruppen-Mappings]**.
 
-1. Erstellen Sie ein neues Zielgruppen-Mapping und wählen Sie Ihr benutzerdefiniertes Schema als Zielgruppendimension aus.
+1. Erstellen Sie ein neues Zielgruppen-Mapping und wählen Sie Ihr benutzerdefiniertes Schema als Zielgruppenedimension aus.
 
    ![](assets/new-target-mapping.png)
 
 
-1. Geben Sie die Felder an, in denen die Profilinformationen gespeichert werden: Nachname, Vorname, E-Mail, Adresse usw.
+1. Geben Sie die Felder an, in denen die Profilinformationen gespeichert sind: Nachname, Vorname, E-Mail, Adresse etc.
 
    ![](assets/wf_new_mapping_define_join.png)
 
@@ -60,9 +60,9 @@ Der Assistent zur Erstellung von Zielgruppen-Mappings von Adobe Campaign unterst
 
    Sie können für dieses Versand-Mapping (**trackinglog**) auch auswählen, ob Tracking verwaltet werden soll.
 
-1. Wählen Sie dann die zu berücksichtigenden Erweiterungen aus. Der Erweiterungstyp hängt von Ihren Campaign-Einstellungen und Add-ons ab.
+1. Wählen Sie dann die entsprechenden Erweiterungen aus. Der Erweiterungstyp hängt von Ihren Campaign-Einstellungen und Add-ons ab.
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Erstellung des Versand-Mappings zu beginnen: Alle verknüpften Tabellen werden automatisch auf der Basis der ausgewählten Parameter erstellt.
+   Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um mit der Erstellung des Versand-Mappings zu beginnen: Alle verknüpften Tabellen werden automatisch auf der Basis der ausgewählten Parameter erstellt.
 
