@@ -3,7 +3,7 @@ title: Formulare in Campaign
 description: Erfahren Sie, wie Sie Formulare anpassen
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2576'
 ht-degree: 100%
 
@@ -434,7 +434,7 @@ Dieses Steuerelement zeigt eine Liste mit editierbaren Spalten und einer Symboll
 </input>
 ```
 
-Das Steuerelement Liste muss vom Attribut **type=&quot;list&quot;** begleitet werden, der Listenpfad muss auf das Kollektionselement verweisen.
+Das Steuerelement Liste muss vom Attribut **type=&quot;list&quot;** begleitet werden, der Listenpfad muss auf das Sammlungselement verweisen.
 
 Die Spalten werden als untergeordnete **`<input>`**-Tags der Liste definiert. Spaltenbeschriftung und -größe können mit den Attributen **label** und **colSize** erzwungen werden.
 

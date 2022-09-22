@@ -6,7 +6,7 @@ description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
 title: Technotes zu Campaign
 source-git-commit: 6dceac03868db1aa43f02f4807569d9c16801ec7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '31'
 ht-degree: 100%
 

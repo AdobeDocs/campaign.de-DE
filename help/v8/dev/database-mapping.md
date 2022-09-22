@@ -351,7 +351,7 @@ Ein Umkehrlink zur Tabelle &quot;cus:recipient&quot; wurde mit folgenden Paramet
 * **name**: wird automatisch vom Namen des Quellschemas abgeleitet (kann mit dem Attribut &quot;revLink&quot; in der Definition der Relation im Quellschema erzwungen werden)
 * **revLink**: Name des Umkehr-Links
 * **target**: Schlüssel des verknüpften Schemas (Schema &quot;cus:recipient&quot;)
-* **unbound**: Relation wird als Kollektionselement für eine 1-N-Kardinalität deklariert (standardmäßig)
+* **unbound**: Relation wird als Sammlungselement für eine 1-N-Kardinalität deklariert (standardmäßig)
 * **integrity**: Standardwert ist &quot;define&quot; (kann mit dem Attribut &quot;revIntegrity&quot; in der Definition der Relation im Quellschema erzwungen werden)
 
 Beachten Sie, dass der Parameter `autouuid="true"` nur im Zusammenhang mit einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) gilt.
