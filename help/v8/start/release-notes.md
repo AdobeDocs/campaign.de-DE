@@ -6,7 +6,7 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 5a516e278fc48f3a78292be6a1edd8d9c3d6bd5d
+source-git-commit: d0cabf4d5b8d177f1ff0a1be6163e9abe65c57d6
 workflow-type: tm+mt
 source-wordcount: '2768'
 ht-degree: 80%
@@ -35,7 +35,7 @@ _30. September 2022_
 <ul><li>Verwenden Sie den Adobe Campaign Managed Cloud Sources-Connector, um Experience Platform-Segmente zur Aktivierung an Adobe Campaign zu senden.</li>
 <li>Verwenden Sie den Adobe Campaign Managed Cloud Destination Connector, um Versand- und Trackinglogs von Adobe Campaign an Adobe Experience Platform zu senden.</li>
 </ul>
-<p>Weitere Informationen finden Sie in der <a href="privacy.md">entsprechenden Dokumentation</a>.</p>
+<p>Weitere Informationen finden Sie in der <a href="../connect/ac-aep.md">entsprechenden Dokumentation</a>.</p>
 </td> 
 </tr> 
 </tbody> 
