@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d0cabf4d5b8d177f1ff0a1be6163e9abe65c57d6
+source-git-commit: c1a5dd3fcad5d377acb2f9df3a090897ed3b533e
 workflow-type: tm+mt
-source-wordcount: '2768'
+source-wordcount: '2764'
 ht-degree: 80%
 
 ---
@@ -65,9 +65,9 @@ _30. September 2022_
 
 **Verbesserungen**
 
-* Nach dem Ende der Nutzungsdauer von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine in der Konsole jetzt **Microsoft Edge Chrome**. Zusätzlich wird die Installation von **Microsoft Edge WebView 2** -Laufzeitumgebung ist jetzt für jede Client-Konsoleninstallation erforderlich. Mehr dazu
+* Nach dem Ende der Nutzungsdauer von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine in der Konsole jetzt **Microsoft Edge Chrome**. Zusätzlich wird die Installation von **Microsoft Edge WebView 2** -Laufzeitumgebung ist jetzt für jede Client-Konsoleninstallation erforderlich.
 * Verbesserte Workflow-Ausführung mit hoher Workflow-Verfügbarkeit, sodass Sie gleichzeitige Workflows über verschiedene Container hinweg ausführen können, um den Verlust des Workflow-Dienstes zu verhindern und damit verbundene Ausführungsfehler zu vermeiden. **Hinweis**: Diese neue Funktion wurde unter Eingeschränkte Verfügbarkeit nur für eine Reihe von Kunden veröffentlicht.
-* Datenschutzanfragen werden jetzt im Batch-Modus für einen bestimmten Datenschutz-Namespace ausgeführt. Durch diese Verbesserung wird die Ausführungszeit für DSGVO-/Datenschutz-Löschanfragen verkürzt. Mehr dazu
+* Datenschutzanfragen werden jetzt im Batch-Modus für einen bestimmten Datenschutz-Namespace ausgeführt. Durch diese Verbesserung wird die Ausführungszeit für DSGVO-/Datenschutz-Löschanfragen verkürzt.
 
 **Aktualisierungen zur Kompatibilität**
 
