@@ -2,10 +2,10 @@
 title: Neue Funktionen in Campaign v8
 description: Wichtige Funktionen in Campaign v8 kennenlernen
 feature: Overview
-role: Data Engineer
-level: Beginner
+role: Admin, Developer, User
+level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 100%

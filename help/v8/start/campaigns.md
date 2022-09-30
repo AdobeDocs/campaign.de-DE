@@ -1,18 +1,18 @@
 ---
-title: Erste Schritte mit Marketing-Kampagnen
-description: Erste Schritte mit Marketing-Kampagnen
+title: Erste Schritte mit Kampagnen
+description: Erste Schritte mit Kampagnen
 feature: Audiences
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 100%
+source-wordcount: '841'
+ht-degree: 98%
 
 ---
 
-# Erste Schritte mit Marketing-Kampagnen{#gs-ac-campaigns}
+# Erste Schritte mit Kampagnen{#gs-ac-campaigns}
 
 Adobe Campaign umfasst mehrere Lösungen, mit denen Sie Kampagnen personalisieren und auf allen Online- und Offline-Kanälen versenden können. Sie können Marketing-Kampagnen erstellen, konfigurieren, ausführen und analysieren. Alle Marketing-Kampagnen können von einem einheitlichen Kontrollzentrum aus verwaltet werden. In diesem Abschnitt erfahren Sie, wie Sie Marketing-Kampagnen durchsuchen und erstellen können.
 

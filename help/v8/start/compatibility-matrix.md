@@ -2,12 +2,12 @@
 title: Kompatibilitätsmatrix für Campaign v8
 description: Erfahren Sie, welche Systeme und Versionen mit Campaign v8 kompatibel sind
 feature: Overview
-role: Data Engineer
-level: Beginner
+role: Admin
+level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 93d990509af2f7c917775217e95ba40dd407d0c1
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ Für die Nutzung der Campaign-Client-Konsole sind die folgenden Betriebssysteme 
 ### Betriebssysteme
 
 * **Microsoft Windows Server** 2019, 2016, 2012
-* **Microsoft Windows** 11 (ab Campaign v8.3), 10, 8,
+* **Microsoft Windows** 11 (ab Campaign v8.3), 10, 8
 
 >[!NOTE]
 >
@@ -37,7 +37,26 @@ Für die Nutzung der Campaign-Client-Konsole sind die folgenden Betriebssysteme 
 
 ### Browser
 
-**Microsoft Internet Explorer** 11
+**Microsoft Edge**
+
+### Microsoft WebView2 Runtime
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge WebView2 Runtime
+</p>
+</td>
+<td>
+<p>Neueste Version</p>
+</td>
+<td>
+<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_de">Von der Microsoft Developer-Website herunterladen</a></p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## CRM-Connectoren{#CRMconnectors}
 
@@ -60,7 +79,7 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Ac
 Sie können Campaign verwenden, um unter den unten aufgeführten Betriebssystemen mithilfe des zugehörigen Mobile SDK [Push-Benachrichtigungen](../send/push.md) zu senden.
 
 * **Android** 12 (ab Campaign v8.3), 9.0, 8.x, 7.x, mit Campaign Android-SDK Build 1.1.1.
-* **Apple iOS** 9–15 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen. iOS 15 wird ab Campaign v8.3 unterstützt.
+* **Apple iOS** 9–16 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen. iOS 16 wird ab Campaign v8.3 unterstützt.
 
 ## Web-Zugriff
 

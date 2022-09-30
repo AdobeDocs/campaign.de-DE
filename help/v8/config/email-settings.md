@@ -2,10 +2,10 @@
 title: Einstellungen für den E-Mail-Kanal in Campaign
 description: Einstellungen für den E-Mail-Kanal in Campaign
 feature: Email
-role: Data Engineer
-level: Beginner
+role: User
+level: Intermediate, Experienced
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 100%

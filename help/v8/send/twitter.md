@@ -1,15 +1,13 @@
 ---
 title: Posten von Nachrichten auf Twitter mit Adobe Campaign
-description: Erfahren Sie, wie Sie mit dem Social-Media-Marketing-Modul von Adobe Campaign Nachrichten auf Twitter posten und Kontaktdaten erfassen können.
-role: Data Engineer
-level: Beginner
-hide: true
-hidefromtoc: true
+description: Erfahren Sie, wie Sie mit dem Adobe Campaign Social Marketing-Modul Nachrichten in Twitter posten und Direktnachrichten an Ihre Follower senden können.
+role: User
+level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 99%
+source-wordcount: '906'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +18,8 @@ Adobe Campaign enthält das Modul **Social-Media-Marketing**, mit dem Sie über 
 
 Nach der Konfiguration der Integration haben Sie folgende Möglichkeiten:
 
-* Nachrichten auf Twitter senden: Mit Adobe Campaign können Sie Nachrichten direkt in Ihrem Twitter-Konto posten. Sie können auch Direktnachrichten an all Ihre Follower senden.
+* Nachrichten auf Twitter senden: Mit Adobe Campaign können Sie Ihren Followern Direktnachrichten senden.
+* Post-Tweets: Verwenden Sie Adobe Campaign , um Tweets in Ihrem Twitter-Konto zu posten.
 * Neue Kontakte erfassen: Adobe Campaign erfasst automatisch die Profildaten, sodass Sie zielgerichtete Kampagnen durchführen und nach Möglichkeit Cross-Channel-Strategien implementieren können. Diese Aktion erfordert die Zustimmung des Benutzers.
 
 Die Konfigurationsschritte zur Integration Ihres Twitter-Kontos mit Adobe Campaign werden auf [dieser Seite](../connect/ac-tw.md) beschrieben.
@@ -33,9 +32,13 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem Twitter-Konto zu posten:
 
    Erstellen Sie einen neuen Versand anhand der Versandvorlage **[!UICONTROL Tweet (Twitter)]**.
 
+   ![](assets/tw-new-delivery.png)
+
 1. Auswählen der Hauptzielgruppe      
 
    Wählen Sie die Konten aus, an die Sie Tweets senden möchten.
+
+   ![](assets/tw-define-target.png)
 
    1. Wählen Sie den Link **[!UICONTROL An]** aus.
    1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
@@ -46,7 +49,7 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem Twitter-Konto zu posten:
 
    Über den Tab **[!UICONTROL Testversand-Zielgruppe]** können Sie das Twitter-Konto festlegen, das Sie vor dem endgültigen Versand für Testsendungen verwenden möchten.
 
-   Wie im Abschnitt [Konfigurationsschritte](../connect/ac-tw.md#tw-test-account) detailliert beschrieben, müssen Sie ein privates Twitter-Konto speziell für Testsendungen erstellen.
+   Wie im Abschnitt [Konfigurationsschritte](../connect/ac-tw.md#tw-test-account), müssen Sie ein Twitter-Testkonto erstellen, das für den Testversand vorgesehen ist.
 
    >[!NOTE]
    >
@@ -55,6 +58,8 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem Twitter-Konto zu posten:
 1. Definieren des Inhalts Ihres Tweets
 
    Geben Sie den Inhalt Ihres Tweets auf der Registerkarte **[!UICONTROL Inhalt]** ein.
+
+   ![](assets/tw-delivery-content.png)
 
    >[!CAUTION]
    >
@@ -68,18 +73,15 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem Twitter-Konto zu posten:
 
    Durchsuchen Sie die Registerkarte **[!UICONTROL Vorschau]**, um das Rendering Ihres Tweets zu überprüfen.
 
+   ![](assets/tw-delivery-preview.png)
+
    1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
    1. Klicken Sie auf das Dropdown-Menü **[!UICONTROL Personalisierung testen]** und wählen Sie **[!UICONTROL Dienst]** aus.
    1. Wählen Sie im Feld **[!UICONTROL Ordner]** den Dienstordner aus, der Ihr Twitter-Konto enthält.
-   1. Wählen Sie das Twitter-Konto aus, mit dem Sie die Vorschau testen möchten.
 
 1. Durchführen eines Testversands
 
    Bevor Sie Ihren Tweet posten, überprüfen Sie ihn anhand eines Testversands. Sie erhalten dann ein exaktes Rendering des veröffentlichten Tweets auf einer privaten Twitter-Testseite.
-
-   Die Erstellung einer privaten Twitter-Testseite wird in [diesem Abschnitt](../connect/ac-tw.md#tw-test-account) beschrieben.
-
-   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zum Validieren eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}
 
 1. Posten der Nachricht
 
@@ -87,7 +89,6 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem Twitter-Konto zu posten:
    1. Wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]** aus und klicken Sie auf die Schaltfläche **[!UICONTROL Analysieren]**.
    1. Überprüfen Sie nach Abschluss der Analyse das Ergebnis.
    1. Klicken Sie auf **[!UICONTROL Absendung bestätigen]** und dann auf **[!UICONTROL Ja]**.
-
 
 ## Senden von Direktnachrichten an Follower {#direct-tw-messages}
 
@@ -99,40 +100,46 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
 1. Wählen Sie die Hauptzielgruppe aus.
 
-1. Klicken Sie auf den Link **[!UICONTROL An]** und anschließend auf den Button **[!UICONTROL Hinzufügen]**.
+   ![](assets/tw-dm-define-target.png)
 
-1. Wählen Sie einen Zielgruppenbestimmungs-Typ aus.
+   1. Klicken Sie auf den Link **[!UICONTROL An]** und anschließend auf den Button **[!UICONTROL Hinzufügen]**.
 
-   * Wählen Sie **[!UICONTROL Twitter-Abonnenten]** aus, um eine Direktnachricht an alle Ihre Follower zu senden.
+   1. Wählen Sie einen Targeting-Typ aus
 
-   * Wählen Sie **[!UICONTROL Filterbedingungen]** aus, um eine Abfrage zu definieren und deren Ergebnis anzuzeigen. Diese Option ist dieselbe wie bei E-Mail-Sendungen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/creating-queries/defining-filter-conditions.html?lang=de){target=&quot;_blank&quot;}.
+      * Wählen Sie **[!UICONTROL Twitter-Abonnenten]** aus, um eine Direktnachricht an alle Ihre Follower zu senden.
 
-1. Über die Registerkarte **[!UICONTROL Testversand-Zielgruppe]** können Sie den Follower auswählen, der den Testversand Ihrer Direktnachricht erhalten soll.
+      * Wählen Sie **[!UICONTROL Filterbedingungen]** aus, um eine Abfrage zu definieren und deren Ergebnis anzuzeigen. Erfahren Sie, wie Sie einen Filter erstellen in [diesem Abschnitt](../audiences/create-filters.md#advanced-filters).
+
+1. Wählen Sie die Testversand-Zielgruppe aus der **[!UICONTROL Testversand-Zielgruppe]** tab: dieses Konto erhält den Testversand Ihrer Direktnachricht.
+
+   Wie im Abschnitt [Konfigurationsschritte](../connect/ac-tw.md#tw-test-account), müssen Sie ein Twitter-Testkonto erstellen, das für den Testversand vorgesehen ist.
+
 
    >[!NOTE]
    >
-   >Wenn Sie alle Ihre Testsendungen für Direktnachrichten an denselben Twitter-Follower senden möchten, können Sie die Testversand-Zielgruppe in der Versandvorlage für **[!UICONTROL Twittern (Direct Message)]** speichern, die über den Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** aufgerufen wird.
+   >Wenn Sie alle Ihre Testsendungen für Direktnachrichten an dasselbe Twitter-Konto senden möchten, können Sie die Testversand-Zielgruppe im **[!UICONTROL Tweet (Direktnachricht)]** Versandvorlage, auf die über **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** Knoten.
 
 1. Geben Sie in der Registerkarte **[!UICONTROL Inhalt]** den Inhalt der Nachricht ein.
 
-   Personalisierungsfelder können auf dieselbe Weise wie für E-Mail-Sendungen verwendet werden, um beispielsweise den Namen des Followers im Nachrichtentext hinzuzufügen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/about-personalization.html?lang=de){target=&quot;_blank&quot;}.
+   ![](assets/tw-dm-content.png)
+
+   Personalisierungsfelder können auf dieselbe Weise wie für E-Mail-Sendungen verwendet werden, um beispielsweise den Namen des Followers im Nachrichtentext hinzuzufügen. Weiterführende Informationen finden Sie in [diesem Abschnitt](../start/create-message.md#personalization).
 
 1. Sehen Sie sich Ihre Nachricht in der Vorschau an.
 
    Durchsuchen Sie die Registerkarte **[!UICONTROL Vorschau]**, um das Rendering Ihres Tweets zu überprüfen.
 
-   1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
-   1. Klicken Sie auf das Dropdown-Menü **[!UICONTROL Personalisierung testen]** und wählen Sie **[!UICONTROL Dienst]** aus.
-   1. Wählen Sie im Feld **[!UICONTROL Ordner]** den Dienstordner aus, der Ihr Twitter-Konto enthält.
-   1. Wählen Sie das Twitter-Konto aus, mit dem Sie die Vorschau testen möchten.
+   ![](assets/tw-dm-preview.png)
+
+   1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**.
+   1. Klicken Sie auf **[!UICONTROL Personalisierung testen]** Dropdown-Menü und **[!UICONTROL Besuchermitgliedschaft]**.
+   1. Wählen Sie ein Twitter-Konto aus, mit dem Sie die Vorschau testen möchten.
 
 1. Führen Sie einen Testversand durch.
 
    Validieren Sie Ihre Nachricht vor dem Versand durch einen Testversand an ein Testkonto. Sie erhalten dann ein exaktes Rendering der Nachricht in einem privaten Twitter-Konto und können Inhalt und Personalisierung überprüfen.
 
-   Die Erstellung einer privaten Twitter-Testseite wird in [diesem Abschnitt](../connect/ac-tw.md#tw-test-account) beschrieben.
-
-   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zum Validieren eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zum Validieren eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}
 
 1. Senden Sie die Direktnachricht.
 

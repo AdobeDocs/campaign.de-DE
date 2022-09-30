@@ -2,14 +2,14 @@
 title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Overview
-role: Data Engineer
-level: Beginner
+role: Admin, Developer, User
+level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 100%
+source-wordcount: '2768'
+ht-degree: 80%
 
 ---
 
@@ -17,12 +17,87 @@ ht-degree: 100%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Campaign v8-Version** aufgelistet.
 
+## Version 8.4.0 {#release-8-4-0}
+
+_28. September 2022_
+
+**Neue Funktionen**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Integration von Adobe Campaign mit Adobe Experience Platform</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td><p>Neue Ziel- und Quell-Connectoren sind jetzt verfügbar, um eine nahtlose Integration zwischen Adobe Campaign und Adobe Experience Platform zu ermöglichen:</p>
+<ul><li>Verwenden Sie den Adobe Campaign Managed Cloud Sources-Connector, um Experience Platform-Segmente zur Aktivierung an Adobe Campaign zu senden.</li>
+<li>Verwenden Sie den Adobe Campaign Managed Cloud Destination Connector, um Versand- und Trackinglogs von Adobe Campaign an Adobe Experience Platform zu senden.</li>
+</ul>
+<p>Weitere Informationen finden Sie in der <a href="privacy.md">entsprechenden Dokumentation</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Twitter-Kanalverfügbarkeit</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Die <a href="../send/twitter.md">Twitter Social-Kanal</a> ist jetzt mit Campaign v8 verfügbar. Sie haben folgende Möglichkeiten:</p>
+<ul> 
+<li><p>Nachrichten auf Twitter senden: Mit Adobe Campaign können Sie Nachrichten direkt in Ihrem Twitter-Konto posten. Sie können auch Direktnachrichten an all Ihre Follower senden.
+</p></li>
+<li><p>Neue Kontakte sammeln: Adobe Campaign kann die Profildaten automatisch abrufen, sodass Sie Targeting-Kampagnen durchführen und kanalübergreifende Strategien implementieren können.
+</p></li>
+</ul>
+<p>Erfahren Sie, wie Sie Campaign und Twitter im <a href="../connect/ac-tw.md">Detaillierte Dokumentation</a>.</p>
+<p>Erfahren Sie, wie Sie mit Campaign Tweets posten und Direktnachrichten senden können in <a href="../connect/ac-tw.md">diese Seite</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Verbesserungen**
+
+* Nach dem Ende der Nutzungsdauer von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine in der Konsole jetzt **Microsoft Edge Chrome**. Zusätzlich wird die Installation von **Microsoft Edge WebView 2** -Laufzeitumgebung ist jetzt für jede Client-Konsoleninstallation erforderlich. Mehr dazu
+* Verbesserte Workflow-Ausführung mit hoher Workflow-Verfügbarkeit, sodass Sie gleichzeitige Workflows über verschiedene Container hinweg ausführen können, um den Verlust des Workflow-Dienstes zu verhindern und damit verbundene Ausführungsfehler zu vermeiden. **Hinweis**: Diese neue Funktion wurde unter Eingeschränkte Verfügbarkeit nur für eine Reihe von Kunden veröffentlicht.
+* Datenschutzanfragen werden jetzt im Batch-Modus für einen bestimmten Datenschutz-Namespace ausgeführt. Durch diese Verbesserung wird die Ausführungszeit für DSGVO-/Datenschutz-Löschanfragen verkürzt. Mehr dazu
+
+**Aktualisierungen zur Kompatibilität**
+
+* Das Campaign v8-SDK unterstützt jetzt iOS 16 für Push-Benachrichtigungen.
+
+Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](compatibility-matrix.md).
+
+**Patches**
+
+* Fehlerkorrektur - Die Statusaktualisierungen des Versandlogs auf der MID-Instanz werden jetzt nicht mehr beeinträchtigt, wenn die Option FeatureFlag_GZIP_Compression aktiviert ist. (NEO-49183)
+* Fehlerkorrektur - Sendungen bleiben jetzt nicht mehr im **Ausstehend** Status, auch wenn das Kontaktdatum erreicht wurde. (NEO-48079)
+* Fehlerkorrektur - In Workflows werden Dateien jetzt auf dem Server aktualisiert, wenn die **Laden (Datei)** Aktivität. Der Prozess wurde zu 100 % gestoppt, endete aber nie. (NEO-47269)
+* Es wurde ein Problem beim Postupgrade in japanischen Umgebungen behoben. (NEO-46640)
+* Fehlerkorrektur - jetzt tritt kein Fehler mehr auf, wenn ein Versand während des MTA-Prozesses eine bestimmte Größe erreicht. (NEO-46097)
+* Fehlerkorrektur - Trackinglogs können jetzt Daten im Zusammenhang mit dem Browser des Empfängers zurückgeben. (NEO-46612)
+* Fehlerkorrektur - Personalisierungsprobleme treten jetzt nicht mehr auf, wenn SMS-Nachrichten im externen Versandmodus gesendet werden. (NEO-46415)
+* Fehlerkorrektur - In Trackinglogs werden jetzt keine Duplikate mehr erzeugt. (NEO-46409)
+* Fehlerkorrektur - Die **[!UICONTROL Replizieren von Staging-Daten]** Der technische Workflow (ffdaReplicateStagingData) kann selbst dann angehalten werden, wenn bei der Ausführung ein Fehler aufgetreten ist. (NEO-46280)
+* Fehlerkorrektur - jetzt tritt kein Fehler mehr auf, wenn ein Versand während des MTA-Prozesses eine bestimmte Größe erreicht. (NEO-46097)
+* Um eine Langsamkeit beim Testversand an Testadressen zu verhindern, werden alle aufeinander folgenden Replikationen von Testmitgliedern nun in eine Replikationsanforderung gruppiert. (NEO-44844)
+* Fehlerkorrektur - Jetzt wird kein Fehler mehr angezeigt, wenn versucht wird, einen Versand in einem archivierten Message Center-Ereignis in der Vorschau anzuzeigen. (NEO-43620)
+* Fehlerkorrektur - Beim Einfügen von Daten in eine Snowflake Cloud-Datenbank mit einer Campaign tritt jetzt kein Fehler mehr auf **Abfrage** und eine **Datenquelle ändern** Aktivität: Der Prozess schlug fehl, wenn in den Daten ein umgekehrter Schrägstrich vorhanden ist. Die Quellzeichenfolge wurde nicht maskiert und die Daten wurden auf dem Snowflake nicht korrekt verarbeitet. (NEO-45549)
+* Es wurde ein Problem bei der Verwendung der **Abfrage** Aktivität und Filterung einer Tabelle. Wenn ein Spaltenname das Wort &quot;Aktualisieren&quot;enthielt, trat ein Kompilierungsfehler mit einer ungültigen Kennung und der folgenden Meldung auf: &quot;Anzahl der Zeilen aktualisiert&quot;. (NEO-46485)
+
+
 ## Version 8.3.8 {#release-8-3-8}
 
 _18. Mai 2022_
 
 **Neue Funktionen**
-
 
 <table> 
 <thead>
@@ -53,7 +128,6 @@ _18. Mai 2022_
 </tr> 
 </tbody> 
 </table>
-
 
 <table>
 <thead>
@@ -177,29 +251,6 @@ _Donnerstag, 28. Oktober 2021_
 </tbody> 
 </table>
 
-<!--
-<table> 
-<thead>
-<tr> 
-<th> <strong>Twitter channel availability</strong><br /> </th> 
-</tr> 
-</thead> 
-<tbody> 
-<tr> 
-<td> <p>The <a href="../send/twitter.md">Twitter social channel</a> is now available with Campaign v8. You can:</p>
-<ul> 
-<li><p>Send messages on Twitter: Adobe Campaign lets you post messages directly to your twitter account. You can also send direct messages to all your followers.
-</p></li>
-<li><p>Collect new contacts: Adobe Campaign can automatically recovers the profile data, which enables you to carry out targeting campaigns and implement cross-channel strategies.
-</p></li>
-</ul>
-<p>Learn how to connect Campaign and Twitter in the <a href="../connect/ac-tw.md">detailed documentation</a>.</p>
-<p>Learn how to post tweets and send direct messages with Campaign in <a href="../connect/ac-tw.md">this page</a>.</p>
-</td> 
-</tr> 
-</tbody> 
-</table>
--->
 
 **Verbesserungen**
 
