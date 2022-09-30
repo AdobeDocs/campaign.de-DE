@@ -5,7 +5,7 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 0fd798fd21d781f7c0bf75ecb1838f891350bff6
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
@@ -79,7 +79,7 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Ac
 Sie können Campaign verwenden, um unter den unten aufgeführten Betriebssystemen mithilfe des zugehörigen Mobile SDK [Push-Benachrichtigungen](../send/push.md) zu senden.
 
 * **Android** 12 (ab Campaign v8.3), 9.0, 8.x, 7.x, mit Campaign Android-SDK Build 1.1.1.
-* **Apple iOS** 9–16 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen. iOS 16 wird ab Campaign v8.3 unterstützt.
+* **Apple iOS** 9–16 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen. iOS 16 wird ab Campaign v8.4 unterstützt.
 
 ## Web-Zugriff
 
