@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c1a5dd3fcad5d377acb2f9df3a090897ed3b533e
+source-git-commit: dfe675ca0f15050a9159172be3d8d8de7e8bf848
 workflow-type: tm+mt
-source-wordcount: '2764'
-ht-degree: 80%
+source-wordcount: '2843'
+ht-degree: 78%
 
 ---
 
@@ -62,6 +62,18 @@ _30. September 2022_
 </tr> 
 </tbody> 
 </table>
+
+**Sicherheitsverbesserung**
+
+Um die Sicherheit zu optimieren, wurden Sicherheits-Token aus von Campaign generierten URLs entfernt:
+
+* Diese Änderung gilt nur für GET-URLs. Andere Typen, einschließlich POST-URLs, sind nicht betroffen.
+* Wenn Sie benutzerdefinierten Code verwenden, werden keine Sicherheits-Token mehr aus dem GET URL-Sicherheits-Token-Parameter abgerufen. Sie müssen ein neues Sicherheits-Token mit dem folgenden JSSP-Code generieren:
+
+   ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
+
+   Sie können auch die Anmelde-API verwenden, um Sicherheitstoken abzurufen.
+* Die Verwaltung von Sitzungstoken hat sich nicht geändert.
 
 **Verbesserungen**
 
