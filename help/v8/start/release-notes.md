@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: dfe675ca0f15050a9159172be3d8d8de7e8bf848
+source-git-commit: c9a4110b8ea2d7ad3571da6f7e506c639dfaaf50
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2845'
 ht-degree: 78%
 
 ---
@@ -32,8 +32,8 @@ _30. September 2022_
 <tbody> 
 <tr> 
 <td><p>Neue Ziel- und Quell-Connectoren sind jetzt verfügbar, um eine nahtlose Integration zwischen Adobe Campaign und Adobe Experience Platform zu ermöglichen:</p>
-<ul><li>Verwenden Sie den Adobe Campaign Managed Cloud Sources-Connector, um Experience Platform-Segmente zur Aktivierung an Adobe Campaign zu senden.</li>
-<li>Verwenden Sie den Adobe Campaign Managed Cloud Destination Connector, um Versand- und Trackinglogs von Adobe Campaign an Adobe Experience Platform zu senden.</li>
+<ul><li>Verwenden Sie den Adobe Campaign Managed Cloud Services-Ziel-Connector, um Experience Platform-Segmente zur Aktivierung an Adobe Campaign zu senden.</li>
+<li>Verwenden Sie den Quell-Connector Adobe Campaign Managed Cloud Service , um Adobe Campaign-Versand- und -Trackinglogs an Adobe Experience Platform zu senden.</li>
 </ul>
 <p>Weitere Informationen finden Sie in der <a href="../connect/ac-aep.md">entsprechenden Dokumentation</a>.</p>
 </td> 
