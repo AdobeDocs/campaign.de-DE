@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Campaign und Adobe Experience Platform ar
 feature: Platform Integration
 role: Data Engineer
 level: Beginner
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 27705fc85794611d1207fe7f3eac3010601b0dc5
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Die Ziel- und Quell-Connectoren für Adobe Campaign Managed Cloud Service ermöglichen eine nahtlose Integration zwischen Adobe Campaign und Adobe Experience Platform:
 
-* Verwendung **Adobe Campaign Managed Cloud Sources-Connector** zum Senden von Experience Platform-Segmenten zur Aktivierung an Adobe Campaign,
+* Verwendung **Adobe Campaign Managed Cloud Services** Zielverbindung zum Senden von Experience Platform-Segmenten zur Aktivierung an Adobe Campaign;
 
    ![](assets/aep-destination.png)
 
-* Verwendung **Adobe Campaign Managed Cloud Destination Connector** , um Versand- und Trackinglogs von Adobe Campaign an Adobe Experience Platform zu senden.
+* Verwendung **Adobe Campaign Managed Cloud Services** Quellverbindung zum Senden von Adobe Campaign-Versand- und Trackinglogs an Adobe Experience Platform.
 
    ![](assets/aep-logs.png)
 
