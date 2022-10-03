@@ -7,38 +7,39 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 96e9f5fe5f07ea0c476395d33efa4d6bcf10cf60
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 77%
 
 ---
 
 # Bekannte Probleme{#known-issues}
 
-Auf dieser Seite werden bekannte Probleme aufgelistet, die in der **neuesten Version von Campaign v8** festgestellt wurden. Zusätzlich werden [auf dieser Seite](ac-guardrails.md) Einschränkungen von Campaign v8 aufgeführt.
+Auf dieser Seite werden bekannte Probleme aufgelistet, die in der Variablen **Aktuelle Campaign v8-Versionen**. Zusätzlich werden [auf dieser Seite](ac-guardrails.md) Einschränkungen von Campaign v8 aufgeführt.
 
 
 >[!NOTE]
 >
 >Adobe veröffentlicht diese Liste bekannter Probleme nach eigenem Ermessen. Sie basiert auf der Anzahl der Kundenberichte, dem Schweregrad und der Verfügbarkeit einer Problemumgehung. Wenn ein Problem, auf das Sie stoßen, nicht aufgelistet ist, entspricht es möglicherweise nicht den Kriterien für die Veröffentlichung auf dieser Seite.
 
-<!--
-## Change Data Source activity issue #1 {#issue-1}
+## Campaign v8.3.8{#8.3-issues}
 
-### Description{#issue-1-desc}
+### Problem mit der Datenquelle-Aktivität ändern 1 {#issue-1}
 
-The **Change Data Source** activity is failing when transfering data from Campaign local database to Snowflake cloud database. When switching directions, the activity can generate issues.
+#### Beschreibung{#issue-1-desc}
 
-### Reproduction steps{#issue-1-repro}
+Die **Datenquelle ändern** -Aktivität schlägt beim Übertragen von Daten aus der lokalen Campaign-Datenbank in die Snowflake-Cloud-Datenbank fehl. Beim Wechsel der Richtung kann die Aktivität Probleme verursachen.
 
-1. Connect to the client console and create a workflow.
-1. Add a **Query** activity and a **Change Data Source** activity.
-1. Define a query on the **email**, which is a string.
-1. Run the workflow and right-click the transition to view the population: the email records are displayed replaced by `****`.
-1. Check the workflow logs: the **Change Data Source** activity interprets these records as numeric values.
+#### Reproduktionsschritte{#issue-1-repro}
 
-### Error message{#issue-1-error}
+1. Stellen Sie eine Verbindung zur Client-Konsole her und erstellen Sie einen Workflow.
+1. Hinzufügen einer **Abfrage** und eine **Datenquelle ändern** Aktivität.
+1. Definieren Sie eine Abfrage im **email**, was eine Zeichenfolge ist.
+1. Führen Sie den Workflow aus und klicken Sie mit der rechten Maustaste auf die Transition, um die Population anzuzeigen: die E-Mail-Datensätze werden ersetzt durch `****`.
+1. Überprüfen Sie die Workflow-Protokolle: die **Datenquelle ändern** -Aktivität interpretiert diese Datensätze als numerische Werte.
+
+#### Fehlernachricht{#issue-1-error}
 
 ```sql
 04/13/2022 10:00:18 AM              Executing change data source 'Ok' (step 'Change Data Source')
@@ -49,35 +50,35 @@ The **Change Data Source** activity is failing when transfering data from Campai
 04/13/2022 10:00:26 AM              D_OPTIONALLY_ENCLOSED_BY = 'NONE') ON_ERROR = ABORT_STATEMENT PURGE = TRUE' could not be executed.
 ```
 
-### Workaround{#issue-1-workaround}
+#### Problemumgehung{#issue-1-workaround}
 
-To have the data transfered from Snowflake cloud database to Campaign local database and back to Snowflake, you must use two different **Change Data Source** activities.
+Damit die Daten von der Snowflake Cloud-Datenbank in die Campaign-Datenbank und zurück in Snowflake übertragen werden, müssen Sie zwei verschiedene **Datenquelle ändern** Aktivitäten.
 
-### Internal reference{#issue-1-ref}
+#### Interner Verweis{#issue-1-ref}
 
-Reference: NEO-45549 
-
-
-
-## Change Data Source activity issue {#issue-2}
-
-### Description{#issue-2-desc}
-
-When injecting data into Snowflake cloud database with a Campaign **Query** and a **Change Data Source** activity, the process fails when a backslash character is present in the data. The source string is not escaped, and data is not processed correctly on Snowflake.
-
-This issue only happens if the backslash character is at the end of string, for example: `Barker\`.
+Referenz: NEO-45549
 
 
-### Reproduction steps{#issue-2-repro}
 
-1. Connect to the client console and create a workflow.
-1. Add a **Query** activity and configure it.
-1. Select data with the characteristics described above.
-1. Add a **Change Data Source** activity and configure it to select Snowflake cloud database.
-1. Run the workflow and check the workflow logs to see the error.
+### Problem mit der Aktivität &quot;Datenquelle ändern&quot; {#issue-2}
+
+#### Beschreibung{#issue-2-desc}
+
+Beim Einfügen von Daten in eine Snowflake Cloud-Datenbank mit einer Campaign-**Abfrage** und der Aktivität **Datenquelle ändern** schlägt der Prozess fehl, wenn in den Daten ein umgekehrter Schrägstrich vorhanden ist. Die Quellzeichenfolge wird nicht mit Escape-Zeichen versehen, wodurch die Daten auf Snowflake nicht korrekt verarbeitet werden.
+
+Dieses Problem tritt nur auf, wenn sich der umgekehrte Schrägstrich am Ende der Zeichenfolge befindet, z. B.: `Barker\`.
 
 
-### Error message{#issue-2-error}
+#### Reproduktionsschritte{#issue-2-repro}
+
+1. Stellen Sie eine Verbindung zur Client-Konsole her und erstellen Sie einen Workflow.
+1. Fügen Sie eine **Abfrage**-Aktivität hinzu und konfigurieren Sie sie.
+1. Wählen Sie Daten mit den oben beschriebenen Eigenschaften aus.
+1. Fügen Sie die Aktivität **Datenquelle ändern** hinzu und konfigurieren Sie sie so, dass die Snowflake Cloud-Datenbank ausgewählt ist.
+1. Führen Sie den Workflow aus und sehen Sie sich die Workflow-Protokolle an, um den Fehler zu finden.
+
+
+#### Fehlernachricht{#issue-2-error}
 
 ```sql
 Error:
@@ -85,46 +86,45 @@ Error:
 04/21/2022 4:01:58 PM    ODB-240000 ODBC error: String '100110668547' is too long and would be truncated   File 'wkf1656797_21_1_3057430574#458516uploadPart0.chunk.gz', line 1, character 0   Row 90058, column "WKF1656797_21_1"["SCARRIER_ROUTE":13]   If you would like to continue
 ```
 
-### Workaround{#issue-2-workaround}
+#### Problemumgehung{#issue-2-workaround}
 
-Workaround is to exclude data containing backslash character at the end of string, or remove it from the source file.
-
-
-### Internal reference{#issue-2-ref}
-
-Reference: NEO-45549
+Die Problemumgehung besteht darin, Daten auszuschließen, die umgekehrte Schrägstriche am Ende der Zeichenfolge enthalten, oder sie aus der Quelldatei zu entfernen.
 
 
-## Data loading (file) activity failed to Upload file on server {#issue-3}
+#### Interner Verweis{#issue-2-ref}
 
-### Description{#issue-3-desc}
-
-When uploading a file on Campaign server with a **Data loading (file)** activity, the process stops at 100% but never ends.
-
-### Reproduction steps{#issue-3-repro}
-
-1. Connect to the client console and create a workflow.
-1. Add a **Data loading (file)** activity and configure it.
-1. Select the **Upload on server** option.
-1. Select the file on your local machine,
-1. Click **Upload**
+Referenz: NEO-45549
 
 
-### Error message{#issue-3-error}
+### Eine Datei konnte nicht mit der Aktivität &quot;Laden (Datei)&quot; auf den Server hochgeladen werden {#issue-3}
 
-The process never ends.
+#### Beschreibung{#issue-3-desc}
 
-### Workaround{#issue-3-workaround}
+Beim Hochladen einer Datei auf den Campaign-Server mit der Aktivität **Laden (Datei)** hört der Vorgang bei 100 % auf, endet jedoch nie.
 
-The workaround is to use an older client console. You will then be able to upload the file on the server.
+#### Reproduktionsschritte{#issue-3-repro}
 
-As a Campaign administrator, you can download Campaign v8.3.1 client console in [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=4){target="_blank"}.
+1. Stellen Sie eine Verbindung zur Client-Konsole her und erstellen Sie einen Workflow.
+1. Fügen Sie die Aktivität **Laden (Datei)** hinzu und konfigurieren Sie sie.
+1. Wählen Sie die Option **Auf Server hochladen**.
+1. Wählen Sie die Datei auf Ihrem lokalen Computer aus.
+1. Klicken Sie auf **Hochladen**.
 
-Learn how to access Adobe Software Distribution [in this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html){target="_blank"}.
 
-Learn how to upgrade your client console [in this page](connect.md)
+#### Fehlernachricht{#issue-3-error}
 
-### Internal reference{#issue-3-ref}
+Der Prozess endet nie.
 
-Reference: NEO-47269
--->
+#### Problemumgehung{#issue-3-workaround}
+
+Die Lösung besteht darin, eine ältere Client-Konsole zu verwenden. Damit können Sie die Datei auf den Server hochladen.
+
+Als Campaign-Administrator können Sie die Client-Konsole für Campaign v8.3.1 in der [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target=&quot;_blank&quot;} herunterladen.
+
+Auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target=&quot;_blank&quot;} erfahren Sie, wie Sie auf die Adobe-Software-Verteilung zugreifen können.
+
+Auf [dieser Seite](connect.md) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+
+#### Interner Verweis{#issue-3-ref}
+
+Referenz: NEO-47269
