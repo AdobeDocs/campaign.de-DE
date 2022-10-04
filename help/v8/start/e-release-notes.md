@@ -6,22 +6,22 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: acb3223a9a70179ea1cb3a126ef17cf5e234b4ba
+source-git-commit: e873e945f7101c5c54b4b18a128951e08d329b87
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '475'
 ht-degree: 5%
 
 ---
 
 # Vorzeitige Versionshinweise {#e-new-release}
 
-Auf dieser Seite werden Verbesserungen und Fehlerbehebungen beschrieben, die in der nächsten Campaign v8-Version enthalten sind.
+Auf dieser Seite werden Verbesserungen und Fehlerbehebungen beschrieben, die in der nächsten Campaign v8-Version enthalten sind. Dieser Inhalt kann bis zum Veröffentlichungsdatum ohne vorherige Ankündigung geändert werden. Die offiziellen Versionshinweise finden Sie in diesem [page](../start/release-notes.md).
+
+## Version 8.3.9 {#release-8-3-9}
 
 >[!CAUTION]
 >
-> Dieser Inhalt kann bis zum Veröffentlichungsdatum ohne vorherige Ankündigung geändert werden. Die offiziellen Versionshinweise finden Sie in diesem [page](../start/release-notes.md).
-
-## Version 8.3.9 {#release-8-3-9}
+> Die Aktualisierung der Client Console ist obligatorisch. Informationen zum Aktualisieren der Client-Konsole finden Sie in diesem [page](../start/connect.md#download-ac-console).
 
 _7. Oktober 2022_
 
