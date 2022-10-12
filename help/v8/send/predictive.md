@@ -5,39 +5,39 @@ feature: Send Time Optimization
 role: User
 level: Beginner
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # Sendezeitoptimierung und prädiktive Interaktionsbewertung{#optimize-message-delivery}
 
-Dank KI und maschinellem Lernen können die Sende-Time Optimization und Predictive Engagement Scoring von Adobe Campaign Öffnungsraten, optimale Sendezeiten und wahrscheinliche Abwanderungszahlen basierend auf historischen Interaktionsmetriken analysieren und vorhersagen.
+Mit der auf KI und maschinellem Lernen basierenden Sendezeitoptimierung und der prädiktiven Interaktionsbewertung von Adobe Campaign können Öffnungsraten, optimale Sendezeiten und wahrscheinliche Abwanderung auf der Grundlage historischer Interaktionsmetriken analysiert und vorhergesagt werden.
 
-Adobe Campaign bietet zwei neue Modelle für maschinelles Lernen: [Prädiktive Sendezeitoptimierung](#predictive-send) und [Prädiktive Interaktionsbewertung](#predictive-scoring). Bei diesen beiden Modellen handelt es sich um Modelle für maschinelles Lernen, die speziell für die Entwicklung und Bereitstellung besserer Journey für Kunden entwickelt wurden.
+Adobe Campaign bietet zwei neue Modelle für maschinelles Lernen: [Prädiktive Sendezeitoptimierung](#predictive-send) und [Prädiktive Interaktionsbewertung](#predictive-scoring). Bei diesen beiden Modellen handelt es sich um Modelle für maschinelles Lernen, die speziell für die Erstellung und Bereitstellung besserer Customer Journeys entwickelt wurden.
 
 >[!CAUTION]
 >
->Diese Funktion ist nicht im Produkt vorkonfiguriert. Sie ist nur für Adobe Campaign Managed Cloud Services-Kunden verfügbar, die Adobe Campaign Classic v7 oder Adobe Campaign v8 ausführen.
+>Diese Funktionen sind nicht im Produkt vorkonfiguriert. Sie sind nur für Kundinnen und Kunden von Adobe Campaign Managed Cloud Services verfügbar, die Adobe Campaign Classic v7 oder Adobe Campaign v8 verwenden.
 >
->Die Implementierung erfordert die Einbindung von Adobe Consulting. Weitere Informationen erhalten Sie von Ihrem Kundenbetreuer für Adobe.
+>Die Implementierung erfordert die Einbindung von Adobe Consulting. Weitere Informationen erhalten Sie vom Adobe-Support.
 
 
 ## Prädiktive Sendezeitoptimierung{#predictive-send}
 
-Die prädiktive Sendezeitoptimierung sagt für jedes Empfängerprofil voraus, welches die beste Sendezeit für E-Mail-Öffnungen oder Klicks und für Push-Nachrichten-Öffnungen ist. Für jedes Empfängerprofil geben die Bewertungen an, was die beste Sendezeit für jeden Wochentag ist und welcher Wochentag beim Senden die besten Ergebnisse liefert.
+Die prädiktive Sendezeitoptimierung prognostiziert für jedes Empfängerprofil den besten Sendezeitpunkt für E-Mail-Öffnungen oder -Klicks und für Push-Nachrichten-Öffnungen. Für jedes Empfängerprofil kann anhand von Werten festgestellt werden, was die beste Sendezeit für jeden Wochentag ist und welcher Wochentag beim Senden die besten Ergebnisse liefert.
 
-Im prädiktiven Sendezeitoptimierungsmodell gibt es zwei Untermodelle:
+Innerhalb des prädiktiven Sendezeit-Optimierungsmodells gibt es zwei Untermodelle:
 
 * Die prädiktive Sendezeit für Öffnungen ist die beste Zeit, zu der eine Kommunikation an den Kunden gesendet werden muss, um Öffnungen zu maximieren.
 
 * Die prädiktive Sendezeit für Klicks ist die beste Zeit, zu der eine Kommunikation an den Kunden gesendet werden muss, um Klicks zu maximieren.
 
 
-**Modelleingabe**: Versandlogs, Trackinglogs und Profilattribute (Nicht-PII)
+**Modelleingabe**: Versandlogs, Trackinglogs und Profilattribute (keine personenbezogenen Daten)
 
-**Modellausgabe**: Optimale Sendezeit für eine Nachricht (für Öffnungen und Klicks)
+**Modellausgabe**: Bester Zeitpunkt für den Versand einer Nachricht (für Öffnungen und Klicks)
 
 Ausgabedetails:
 
@@ -62,12 +62,12 @@ Die prädiktive Sendezeitoptimierung wird auf Profilebene gespeichert:
 
 >[!NOTE]
 >
->Das Modell benötigt mindestens einen Monat an Daten, um signifikante Ergebnisse zu erzielen. Diese Prognosefunktionen gelten nur für E-Mail- und Push-Kanäle.
+>Das Modell benötigt mindestens einen Monat lang Daten, um signifikante Ergebnisse zu erzielen. Diese prädiktiven Funktionen sind nur für E-Mail- und Push-Kanäle verfügbar.
 
 
-## Prädiktive Interaktionsbewertung {#predictive-scoring}
+## Bewertung prädiktiver Interaktionen {#predictive-scoring}
 
-Die prädiktive Interaktionsbewertung sagt die Wahrscheinlichkeit voraus, mit der ein Empfänger mit einer Nachricht interagiert, sowie die Wahrscheinlichkeit, dass er sich innerhalb der nächsten sieben Tage nach dem nächsten E-Mail-Versand abmeldet. Die Wahrscheinlichkeiten werden je nach vorhergesagter Interaktion mit Ihrem Inhalt weiter in Behälter unterteilt: hoch, mittel oder niedrig. Diese Modelle bieten außerdem den Perzentil-Rang des Abmelderisikos, damit die Kunden erkennen können, wo der Rang eines bestimmten Kunden im Vergleich zu anderen liegt.
+Die Bewertung prädiktiver Interaktionen sagt die Wahrscheinlichkeit voraus, mit der Empfangende mit einer Nachricht interagieren, sowie die Wahrscheinlichkeit, mit der sie sich innerhalb der nächsten sieben Tage nach dem nächsten E-Mail-Versand abmelden. Die Wahrscheinlichkeiten werden je nach vorhergesagter Interaktion mit Ihrem Inhalt in verschiedene Kategorien eingeteilt: hoch, mittel oder niedrig. Diese Modelle liefern auch den prozentualen Rang des Abmelderisikos für die Kundinnen und Kunden, um zu verdeutlichen, wo der Rang einer/eines bestimmten Kundin/Kunden im Vergleich zu anderen liegt.
 
 Mit der prädiktiven Interaktionsbewertung können Sie Folgendes:
 
