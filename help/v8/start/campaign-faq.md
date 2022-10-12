@@ -6,7 +6,7 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 100%
 
@@ -70,7 +70,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download Center abrufen.
 
-   Greifen Sie als Administrator auf die Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) {target=&quot;_blank&quot;} zu, um Adobe Campaign herunterzuladen.
+   Greifen Sie als Administrator auf die Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target=&quot;_blank&quot;} zu, um Adobe Campaign herunterzuladen.
 
    Weitere Informationen zum Verteilungs-Center finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target=&quot;_blank&quot;}.
 

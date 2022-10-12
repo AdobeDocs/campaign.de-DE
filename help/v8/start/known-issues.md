@@ -10,13 +10,13 @@ exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
 source-git-commit: b9dd9e76be14067740426b6cddfa2c5fcddf3158
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Bekannte Probleme{#known-issues}
 
-Auf dieser Seite werden bekannte Probleme aufgelistet, die in der Variablen **Aktuelle Campaign v8-Versionen**. Zusätzlich werden [auf dieser Seite](ac-guardrails.md) Einschränkungen von Campaign v8 aufgeführt.
+Diese Seite listet bekannte Probleme auf, die in den **letzten Campaign v8-Versionen** festgestellt wurden. Zusätzlich werden [auf dieser Seite](ac-guardrails.md) Einschränkungen von Campaign v8 aufgeführt.
 
 
 >[!NOTE]

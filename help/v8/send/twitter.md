@@ -5,7 +5,7 @@ role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 9f74e3bbff5bcbebf4f5a0ecf4ed7e458b9e38ed
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem Twitter-Konto zu posten:
 
    ![](assets/tw-delivery-preview.png)
 
-   1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
+   1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**.
    1. Klicken Sie auf das Dropdown-Menü **[!UICONTROL Personalisierung testen]** und wählen Sie **[!UICONTROL Dienst]** aus.
    1. Wählen Sie im Feld **[!UICONTROL Ordner]** den Dienstordner aus, der Ihr Twitter-Konto enthält.
 

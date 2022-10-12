@@ -9,7 +9,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 6986f4eb017602632d11ce6e9ca9e156d94380ff
 workflow-type: tm+mt
 source-wordcount: '3381'
-ht-degree: 66%
+ht-degree: 88%
 
 ---
 
@@ -44,20 +44,20 @@ _30. September 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Twitter-Kanalverfügbarkeit</strong><br /> </th> 
+<th> <strong>Verfügbarkeit des Twitter-Kanals</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Die <a href="../send/twitter.md">Twitter Social-Kanal</a> ist jetzt mit Campaign v8 verfügbar. Sie haben folgende Möglichkeiten:</p>
+<td> <p>Der <a href="../send/twitter.md">Twitter-Kanal</a> ist jetzt in Campaign v8 verfügbar. Sie haben folgende Möglichkeiten:</p>
 <ul> 
 <li><p>Nachrichten auf Twitter senden: Mit Adobe Campaign können Sie Nachrichten direkt in Ihrem Twitter-Konto posten. Sie können auch Direktnachrichten an all Ihre Follower senden.
 </p></li>
-<li><p>Neue Kontakte sammeln: Adobe Campaign kann die Profildaten automatisch abrufen, sodass Sie Targeting-Kampagnen durchführen und kanalübergreifende Strategien implementieren können.
+<li><p>Neue Kontakte erfassen: Adobe Campaign kann automatisch Profildaten erfassen, sodass Sie Zielgruppen-Kampagnen durchführen und Cross-Channel-Strategien umsetzen können.
 </p></li>
 </ul>
-<p>Erfahren Sie, wie Sie Campaign und Twitter im <a href="../connect/ac-tw.md">Detaillierte Dokumentation</a>.</p>
-<p>Erfahren Sie, wie Sie mit Campaign Tweets posten und Direktnachrichten senden können in <a href="../connect/ac-tw.md">diese Seite</a>.</p>
+<p>In der <a href="../connect/ac-tw.md">entsprechenden Dokumentation</a> erfahren Sie, wie Sie Campaign und Twitter miteinander verbinden.</p>
+<p>Auf <a href="../connect/ac-tw.md">dieser Seite</a> erfahren Sie, wie Sie mit Campaign Tweets posten und Direktnachrichten versenden können.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -65,20 +65,20 @@ _30. September 2022_
 
 **Sicherheitsverbesserung**
 
-Um die Sicherheit zu optimieren, wurden Sicherheits-Token aus von Campaign generierten URLs entfernt:
+Um die Sicherheit zu optimieren, wurden Sicherheits-Token aus den von Campaign generierten URLs entfernt:
 
-* Diese Änderung gilt nur für GET-URLs. Andere Typen, einschließlich POST-URLs, sind nicht betroffen.
-* Wenn Sie benutzerdefinierten Code verwenden, werden keine Sicherheits-Token mehr aus dem GET URL-Sicherheits-Token-Parameter abgerufen. Sie müssen ein neues Sicherheits-Token mit dem folgenden JSSP-Code generieren:
+* Diese Änderung gilt nur für GET-URLs. Andere Typen, einschließlich POST-URLs, sind davon nicht betroffen.
+* Wenn Sie benutzerdefinierten Code verwenden, werden keine Sicherheits-Token mehr aus dem GET-URL-Sicherheits-Token-Parameter abgerufen. Sie müssen ein neues Sicherheits-Token mit folgendem JSSP-Code generieren:
 
    ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
 
-   Sie können auch die Anmelde-API verwenden, um Sicherheitstoken abzurufen.
-* Die Verwaltung von Sitzungstoken hat sich nicht geändert.
+   Sie können auch die Anmelde-API verwenden, um Sicherheits-Token abzurufen.
+* Bei der Verwaltung von Sitzungs-Tokens gibt es keine Änderungen.
 
 **Verbesserungen**
 
-* Nach dem Ende der Nutzungsdauer von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine in der Konsole jetzt **Microsoft Edge Chrome**. Zusätzlich wird die Installation von **Microsoft Edge WebView 2** -Laufzeitumgebung ist jetzt für jede Client-Konsoleninstallation erforderlich.
-* Verbesserte Workflow-Ausführung mit hoher Workflow-Verfügbarkeit, sodass Sie gleichzeitige Workflows über verschiedene Container hinweg ausführen können, um den Verlust des Workflow-Dienstes zu verhindern und damit verbundene Ausführungsfehler zu vermeiden. **Hinweis**: Diese neue Funktion wurde unter Eingeschränkte Verfügbarkeit nur für eine Reihe von Kunden veröffentlicht.
+* Nach dem Auslaufen von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine in der Konsole nun **Microsoft Edge Chromium**. Außerdem ist die Installation der **Microsoft Edge WebView 2**-Laufzeitumgebung jetzt für jede Client-Konsolen-Installation erforderlich.
+* Die Ausführung des Workflows wurde durch Workflow-Hochverfügbarkeit verbessert, sodass Sie Workflows gleichzeitig in verschiedenen Containern ausführen können, um den Verlust des Workflow-Service zu verhindern und damit verbundene Ausführungsfehler zu vermeiden. **Hinweis**: Diese neue Funktion steht nur einer begrenzten Anzahl von Kunden zur Verfügung.
 * Datenschutzanfragen werden jetzt im Batch-Modus für einen bestimmten Datenschutz-Namespace ausgeführt. Durch diese Verbesserung wird die Ausführungszeit für DSGVO-/Datenschutz-Löschanfragen verkürzt.
 
 **Aktualisierungen zur Kompatibilität**
@@ -89,19 +89,19 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 
 **Patches**
 
-* Fehlerkorrektur - Die Statusaktualisierungen des Versandlogs auf der MID-Instanz werden jetzt nicht mehr beeinträchtigt, wenn die Option FeatureFlag_GZIP_Compression aktiviert ist. (NEO-49183)
-* Fehlerkorrektur - Sendungen bleiben jetzt nicht mehr im **Ausstehend** Status, auch wenn das Kontaktdatum erreicht wurde. (NEO-48079)
-* Fehlerkorrektur - In Workflows werden Dateien jetzt auf dem Server aktualisiert, wenn die **Laden (Datei)** Aktivität. Der Prozess wurde zu 100 % gestoppt, endete aber nie. (NEO-47269)
-* Es wurde ein Problem beim Postupgrade in japanischen Umgebungen behoben. (NEO-46640)
-* Fehlerkorrektur - jetzt tritt kein Fehler mehr auf, wenn ein Versand während des MTA-Prozesses eine bestimmte Größe erreicht. (NEO-46097)
-* Fehlerkorrektur - Trackinglogs können jetzt Daten im Zusammenhang mit dem Browser des Empfängers zurückgeben. (NEO-46612)
-* Fehlerkorrektur - Personalisierungsprobleme treten jetzt nicht mehr auf, wenn SMS-Nachrichten im externen Versandmodus gesendet werden. (NEO-46415)
-* Fehlerkorrektur - In Trackinglogs werden jetzt keine Duplikate mehr erzeugt. (NEO-46409)
-* Fehlerkorrektur - Die **[!UICONTROL Replizieren von Staging-Daten]** Der technische Workflow (ffdaReplicateStagingData) kann selbst dann angehalten werden, wenn bei der Ausführung ein Fehler aufgetreten ist. (NEO-46280)
-* Um eine Langsamkeit beim Testversand an Testadressen zu verhindern, werden alle aufeinander folgenden Replikationen von Testmitgliedern nun in eine Replikationsanforderung gruppiert. (NEO-44844)
-* Fehlerkorrektur - Jetzt wird kein Fehler mehr angezeigt, wenn versucht wird, einen Versand in einem archivierten Message Center-Ereignis in der Vorschau anzuzeigen. (NEO-43620)
-* Fehlerkorrektur - Beim Einfügen von Daten in eine Snowflake Cloud-Datenbank mit einer Campaign tritt jetzt kein Fehler mehr auf **Abfrage** und eine **Datenquelle ändern** Aktivität: Der Prozess schlug fehl, wenn in den Daten ein umgekehrter Schrägstrich vorhanden ist. Die Quellzeichenfolge wurde nicht maskiert und die Daten wurden auf dem Snowflake nicht korrekt verarbeitet. (NEO-45549)
-* Es wurde ein Problem bei der Verwendung der **Abfrage** Aktivität und Filterung einer Tabelle. Wenn ein Spaltenname das Wort &quot;Aktualisieren&quot;enthielt, trat ein Kompilierungsfehler mit einer ungültigen Kennung und der folgenden Meldung auf: &quot;Anzahl der Zeilen aktualisiert&quot;. (NEO-46485)
+* Es wurde ein Problem behoben, das sich auf die Statusaktualisierungen des Versandlogs auf der MID-Instanz auswirkte, wenn die Option &quot;FeatureFlag_GZIP_Compression&quot; aktiviert war. (NEO-49183)
+* Es wurde ein Problem behoben, das dazu führen konnte, dass Sendungen im Status **Ausstehend** blieben, auch wenn das Kontaktdatum erreicht war. (NEO-48079)
+* Es wurde ein Problem in Workflows behoben, das dazu führen konnte, dass Dateien auf dem Server nicht aktualisiert wurden, wenn die Aktivität **Laden (Datei)** verwendet wurde. Der Prozess wurde bei 100 % angehalten, aber nie beendet. (NEO-47269)
+* Es wurde ein Problem während des Postupgrades in japanischen Umgebungen behoben. (NEO-46640)
+* Es wurde ein Problem behoben, das auftreten konnte, wenn ein Versand während des MTA-Prozesses eine bestimmte Größe erreichte. (NEO-46097)
+* Es wurde ein Problem behoben, das verhinderte, dass Trackinglogs Daten über den Browser des Empfängers zurückgaben. (NEO-46612)
+* Es wurde ein Problem behoben, das zu Personalisierungsproblemen beim Versand von SMS-Nachrichten über einen externen Versandmodus führte. (NEO-46415)
+* Es wurde ein Problem behoben, das zu Duplikaten in Trackinglogs führen konnte. (NEO-46409)
+* Es wurde ein Problem behoben, das verhinderte, dass der technische Workflow **[!UICONTROL Staging-Daten replizieren]** (ffdaReplicateStagingData) gestoppt wurde, selbst wenn während seiner Ausführung ein Fehler auftrat. (NEO-46280)
+* Um einen zu langsamen Testversand an Testadressen zu verhindern, werden nun alle aufeinanderfolgenden Replikationen von Testempfängern und -empfängerinnen zu einer einzigen Replikationsanfrage zusammengefasst. (NEO-44844)
+* Es wurde ein Problem behoben, bei dem ein Fehler angezeigt wurde, wenn die Vorschau eines Versands in einem archivierten Ereignis des Message Centers aufgerufen wurde. (NEO-43620)
+* Es wurde ein Problem behoben, das bei der Eingabe von Daten in die Snowflake-Cloud-Datenbank mithilfe der Campaign-Aktivität **Abfrage** und **Datenquelle ändern** auftrat: Der Prozess schlug fehl, wenn ein umgekehrter Schrägstrich in den Daten vorhanden war. Die Quellzeichenfolge wurde nicht escaped, wodurch die Daten von Snowflake nicht korrekt verarbeitet wurden. (NEO-45549)
+* Es wurde ein Problem bei der Verwendung der **Abfrage**-Aktivität und der Filterung einer Tabelle behoben. Wenn ein Spaltenname das Wort &quot;Update&quot; enthielt, kam es zu einem Kompilierungsfehler mit einer ungültigen Kennung und folgender Meldung: &quot;Anzahl der Zeilen aktualisiert&quot;. (NEO-46485)
 * Die **Datenbankbereinigung** Der technische Workflow verarbeitet jetzt auch benutzerdefinierte Staging-Schemata. (NEO-48974)
 * Fehlerkorrektur - Die Versandanalyse wird jetzt beim Ausschließen auf die Blockierungsliste gesetzt Empfänger bei der Zielgruppenbestimmung für große Mengen von Empfängern nicht mehr verlangsamt. (NEO-48019)
 * Verbesserte Stabilität bei der Verarbeitung ungültiger XML-Zeichenfolgen während SOAP-Aufrufen. (NEO-48027)
@@ -120,25 +120,25 @@ _7. Oktober 2022_
 
 **Verbesserungen**
 
-* Fehlerkorrektur - Die Statusaktualisierungen des Versandlogs auf der MID-Instanz werden jetzt nicht mehr beeinträchtigt, wenn die Option FeatureFlag_GZIP_Compression aktiviert ist. (NEO-49183)
+* Es wurde ein Problem behoben, das sich auf die Statusaktualisierungen des Versandlogs auf der MID-Instanz auswirkte, wenn die Option &quot;FeatureFlag_GZIP_Compression&quot; aktiviert war. (NEO-49183)
 * Die **Datenbankbereinigung** Der technische Workflow verarbeitet jetzt auch benutzerdefinierte Staging-Schemata. (NEO-48974)
 * Fehlerkorrektur - Sendungen bleiben jetzt nicht mehr im **Ausstehend** Status, auch wenn das Kontaktdatum erreicht wurde. (NEO-48079, NEO-48251)
 * Verbesserte Stabilität bei der Verarbeitung ungültiger XML-Zeichenfolgen während SOAP-Aufrufen. (NEO-48027)
 * Fehlerkorrektur - Die Versandanalyse wird jetzt beim Ausschließen auf die Blockierungsliste gesetzt Empfänger bei der Zielgruppenbestimmung für große Mengen von Empfängern nicht mehr verlangsamt. (NEO-48019)
 * Um eine Langsamkeit beim Testversand an Testadressen zu vermeiden, werden alle aufeinander folgenden Replikationen von Testmitgliedern nun in einer Replikationsanforderung gruppiert. (NEO-44844)
-* Fehlerkorrektur - Personalisierungsprobleme treten jetzt nicht mehr auf, wenn SMS-Nachrichten im externen Versandmodus gesendet werden. (NEO-46415)
-* Fehlerkorrektur - Jetzt wird kein Fehler mehr angezeigt, wenn versucht wird, einen Versand in einem archivierten Message Center-Ereignis in der Vorschau anzuzeigen. (NEO-43620)
-* Fehlerkorrektur - In Workflows werden Dateien jetzt auf dem Server aktualisiert, wenn die **Laden (Datei)** Aktivität. Der Prozess wurde zu 100 % gestoppt, endete aber nie. (NEO-47269)
+* Es wurde ein Problem behoben, das zu Personalisierungsproblemen beim Versand von SMS-Nachrichten über einen externen Versandmodus führte. (NEO-46415)
+* Es wurde ein Problem behoben, bei dem ein Fehler angezeigt wurde, wenn die Vorschau eines Versands in einem archivierten Ereignis des Message Centers aufgerufen wurde. (NEO-43620)
+* Es wurde ein Problem in Workflows behoben, das dazu führen konnte, dass Dateien auf dem Server nicht aktualisiert wurden, wenn die Aktivität **Laden (Datei)** verwendet wurde. Der Prozess wurde bei 100 % angehalten, aber nie beendet. (NEO-47269)
 * Fehlerkorrektur - jetzt werden keine unnötigen Versandteile mehr erstellt, wenn der Versand Kalender- und Aufspaltungsmodi verwendet. (NEO-48634)
 * Es wurde ein Leistungsproblem bei der Verwendung kalendartiger Schübe behoben. (NEO-48451)
 * Fehlerkorrektur - Im Bildschirm der Versandliste wird jetzt nach der Erstellung eines neuen Zielgruppen-Mappings für ein benutzerdefiniertes Schema keine Fehlermeldung mehr angezeigt. (NEO-49237)
 * Fehlerkorrektur - jetzt tritt kein Fehler mehr auf, wenn ein Versand während des MTA-Prozesses eine bestimmte Größe erreicht. (NEO-46097)
-* Fehlerkorrektur - Trackinglogs können jetzt Daten im Zusammenhang mit dem Browser des Empfängers zurückgeben. (NEO-46612)
+* Es wurde ein Problem behoben, das verhinderte, dass Trackinglogs Daten über den Browser des Empfängers zurückgaben. (NEO-46612)
 * Es wurde ein Problem beim Postupgrade in japanischen Umgebungen behoben. (NEO-46640)
-* Es wurde ein Problem bei der Verwendung der **Abfrage** Aktivität und Filterung einer Tabelle. Wenn ein Spaltenname das Wort &quot;Aktualisieren&quot;enthielt, trat ein Kompilierungsfehler mit einer ungültigen Kennung und der folgenden Meldung auf: &quot;Anzahl der Zeilen aktualisiert&quot;. (NEO-46485)
-* Fehlerkorrektur - Die **[!UICONTROL Replizieren von Staging-Daten]** Der technische Workflow (ffdaReplicateStagingData) kann selbst dann angehalten werden, wenn bei der Ausführung ein Fehler aufgetreten ist. (NEO-46280)
+* Es wurde ein Problem bei der Verwendung der **Abfrage**-Aktivität und der Filterung einer Tabelle behoben. Wenn ein Spaltenname das Wort &quot;Aktualisieren&quot;enthielt, trat ein Kompilierungsfehler mit einer ungültigen Kennung und der folgenden Meldung auf: &quot;Anzahl der Zeilen aktualisiert&quot;. (NEO-46485)
+* Es wurde ein Problem behoben, das verhinderte, dass der technische Workflow **[!UICONTROL Staging-Daten replizieren]** (ffdaReplicateStagingData) gestoppt wurde, selbst wenn während seiner Ausführung ein Fehler auftrat. (NEO-46280)
 * Fehlerkorrektur - Jetzt gehen keine Daten mehr verloren, wenn der Staging-Workflow fehlerhaft ist und die Aufbewahrungsfrist vollständig abgelaufen ist. (NEO-48975)
-* Fehlerkorrektur - Beim Einfügen von Daten in eine Snowflake Cloud-Datenbank mit einer Campaign tritt jetzt kein Fehler mehr auf **Abfrage** und eine **Datenquelle ändern** Aktivität: Der Prozess schlug fehl, wenn in den Daten ein umgekehrter Schrägstrich vorhanden ist. Die Quellzeichenfolge wurde nicht maskiert und die Daten wurden auf dem Snowflake nicht korrekt verarbeitet. (NEO-45549)
+* Es wurde ein Problem behoben, das bei der Eingabe von Daten in die Snowflake-Cloud-Datenbank mithilfe der Campaign-Aktivität **Abfrage** und **Datenquelle ändern** auftrat: Der Prozess schlug fehl, wenn ein umgekehrter Schrägstrich in den Daten vorhanden war. Die Quellzeichenfolge wurde nicht escaped, wodurch die Daten von Snowflake nicht korrekt verarbeitet wurden. (NEO-45549)
 
 ## Version 8.3.8 {#release-8-3-8}
 

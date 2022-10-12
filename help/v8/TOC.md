@@ -7,7 +7,7 @@ title: Dokumente zu Campaign v8
 source-git-commit: e7772364ab46673695f498911e2246056a04790e
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 98%
    + [Briefpost](send/direct-mail.md)
    + [Twitter](send/twitter.md)
    + [Transaktionsnachrichten](send/transactional.md)
-   + [Versandzeitpunkt optimieren](send/predictive.md)
+   + [Optimieren des Sendezeitpunkts](send/predictive.md)
    + Fehler, Bounces und Quarantänen{#failures}
       + [Quarantänen](send/quarantines.md)
       + [Versandfehler](send/delivery-failures.md)
@@ -114,7 +114,7 @@ ht-degree: 98%
    + [Externe Konten](config/external-accounts.md)
 + Verbinden {#connect}
    + [Herstellen von Verbindungen zu anderen Lösungen](connect/integration.md)
-   + [Campaign + Adobe Experience Platform](connect/ac-aep.md)
+   + [Campaign und Adobe Experience Platform](connect/ac-aep.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
