@@ -1,13 +1,13 @@
 ---
 title: Posten von Nachrichten auf Twitter mit Adobe Campaign
-description: Erfahren Sie, wie Sie mit dem Adobe Campaign Social Marketing-Modul Nachrichten in Twitter posten und Direktnachrichten an Ihre Follower senden können.
+description: Erfahren Sie, wie Sie mit dem Social-Media-Marketing-Modul von Adobe Campaign Nachrichten auf Twitter posten und Direktnachrichten an Ihre Follower senden können.
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 9f74e3bbff5bcbebf4f5a0ecf4ed7e458b9e38ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '889'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Adobe Campaign enthält das Modul **Social-Media-Marketing**, mit dem Sie über 
 
 Nach der Konfiguration der Integration haben Sie folgende Möglichkeiten:
 
-* Direktnachrichten an Ihre Follower senden
+* Senden von Direktnachrichten an Ihre Follower
 * Posten von Tweets in Ihrem Twitter-Konto
-* Erfassen Sie neue Kontakte, indem Sie die Profildaten abrufen. So können Sie Zielgruppenbestimmungskampagnen durchführen und nach Möglichkeit kanalübergreifende Strategien implementieren. Diese Aktion erfordert die Zustimmung des Benutzers.
+* Sammeln Sie neue Kontakte, indem Sie die Profildaten abrufen, um auf der Basis dieser Daten Zielgruppen-Kampagnen durchzuführen und Cross-Channel-Strategien anzuwenden. Diese Aktion erfordert die Zustimmung des Benutzers.
 
 Die Konfigurationsschritte zur Integration Ihres Twitter-Kontos mit Adobe Campaign werden auf [dieser Seite](../connect/ac-tw.md) beschrieben.
 
@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem Twitter-Konto zu posten:
 
    Über den Tab **[!UICONTROL Testversand-Zielgruppe]** können Sie das Twitter-Konto festlegen, das Sie vor dem endgültigen Versand für Testsendungen verwenden möchten.
 
-   Wie im Abschnitt [Konfigurationsschritte](../connect/ac-tw.md#tw-test-account), müssen Sie ein Twitter-Testkonto erstellen, das für den Testversand vorgesehen ist.
+   Wie in den [Konfigurationsschritten](../connect/ac-tw.md#tw-test-account) beschrieben, müssen Sie ein privates Twitter-Test-Konto für den Testversand erstellen.
 
    >[!NOTE]
    >
@@ -104,20 +104,20 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
    1. Klicken Sie auf den Link **[!UICONTROL An]** und anschließend auf den Button **[!UICONTROL Hinzufügen]**.
 
-   1. Wählen Sie einen Targeting-Typ aus
+   1. Wählen Sie den Typ der Zielgruppenbestimmung
 
       * Wählen Sie **[!UICONTROL Twitter-Abonnenten]** aus, um eine Direktnachricht an alle Ihre Follower zu senden.
 
-      * Wählen Sie **[!UICONTROL Filterbedingungen]** aus, um eine Abfrage zu definieren und deren Ergebnis anzuzeigen. Erfahren Sie, wie Sie einen Filter erstellen in [diesem Abschnitt](../audiences/create-filters.md#advanced-filters).
+      * Wählen Sie **[!UICONTROL Filterbedingungen]** aus, um eine Abfrage zu definieren und deren Ergebnis anzuzeigen. Erfahren Sie in [diesem Abschnitt](../audiences/create-filters.md#advanced-filters), wie Sie einen Filter erstellen können.
 
-1. Wählen Sie die Testversand-Zielgruppe aus der **[!UICONTROL Testversand-Zielgruppe]** tab: dieses Konto erhält den Testversand Ihrer Direktnachricht.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Testversand-Zielgruppe]** die Zielgruppe für den Testversand aus: Dieses Konto wird den Testversand Ihrer Direktnachricht erhalten.
 
-   Wie im Abschnitt [Konfigurationsschritte](../connect/ac-tw.md#tw-test-account), müssen Sie ein Twitter-Testkonto erstellen, das für den Testversand vorgesehen ist.
+   Wie in den [Konfigurationsschritten](../connect/ac-tw.md#tw-test-account) beschrieben, müssen Sie ein privates Twitter-Test-Konto für den Testversand erstellen.
 
 
    >[!NOTE]
    >
-   >Wenn Sie alle Ihre Testsendungen für Direktnachrichten an dasselbe Twitter-Konto senden möchten, können Sie die Testversand-Zielgruppe im **[!UICONTROL Tweet (Direktnachricht)]** Versandvorlage, auf die über **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** Knoten.
+   >Wenn Sie alle Ihre Testsendungen für Direktnachrichten an dasselbe Twitter-Konto senden möchten, können Sie die Testversand-Zielgruppe in der Versandvorlage **[!UICONTROL Tweet (Direktnachricht)]** speichern, auf die Sie über den Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** zugreifen können.
 
 1. Geben Sie in der Registerkarte **[!UICONTROL Inhalt]** den Inhalt der Nachricht ein.
 
@@ -132,8 +132,8 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
    ![](assets/tw-dm-preview.png)
 
    1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**.
-   1. Klicken Sie auf **[!UICONTROL Personalisierung testen]** Dropdown-Menü und **[!UICONTROL Besuchermitgliedschaft]**.
-   1. Wählen Sie ein Twitter-Konto aus, mit dem Sie die Vorschau testen möchten.
+   1. Klicken Sie auf das Dropdown-Menü **[!UICONTROL Personalisierung testen]** und wählen Sie **[!UICONTROL Besucherabonnement]**.
+   1. Wählen Sie das Twitter-Konto aus, mit dem Sie die Vorschau testen möchten.
 
 1. Führen Sie einen Testversand durch.
 
@@ -150,7 +150,7 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
 >[!CAUTION]
 >
->Sie können pro Tag maximal 250 Direktnachrichten senden. Um eine Überschreitung dieses Grenzwerts zu vermeiden, können Sie in mehreren Schüben senden. Mehr dazu finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de?lang=de#sending-using-multiple-wave){target=&quot;_blank&quot;}.
+>Sie können pro Tag maximal 250 Direktnachrichten senden. Um eine Überschreitung dieses Grenzwerts zu vermeiden, können Sie in mehreren Schüben senden. Mehr dazu finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de?lang=de#sending-using-multiple-waves){target=&quot;_blank&quot;}.
 
 
 ## Zugriff auf Tracking-Daten {#tw-tracking}
