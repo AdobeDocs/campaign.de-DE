@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Modernisieren Sie Ihre Implementierung und nutzen Sie alle Adobe Experience Clou
 
 ![](../assets/do-not-localize/speech.png) Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), wenn Sie Campaign mit Adobe Experience Cloud-Services und -Lösungen verbinden möchten.
 
-Campaign v8 kann eine Verbindung herstellen mit:
+Campaign v8 kann verbunden werden mit:
 
 * [Adobe Experience Platform](../connect/ac-aep.md)
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=de).
