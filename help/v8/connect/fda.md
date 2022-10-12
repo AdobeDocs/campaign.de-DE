@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -16,21 +16,21 @@ ht-degree: 70%
 
 Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer oder mehreren **externen Datenbanken** zu verbinden und darin gespeicherte Informationen zu verarbeiten, ohne die Daten in Ihrer Campaign Cloud-Datenbank zu beeinflussen. Sie können dann auf externe Daten zugreifen, ohne die Struktur der Adobe Campaign-Daten zu verändern.
 
-![](../assets/do-not-localize/speech.png)   Als Benutzer von Managed Cloud Services [Adobe kontaktieren](../start/campaign-faq.md#support) , um Ihre externe(n) Datenbank(n) mit Campaign zu verbinden.
+![](../assets/do-not-localize/speech.png) Benutzende von Managed Cloud Services können [Adobe kontaktieren](../start/campaign-faq.md#support), um ihre externe(n) Datenbank(en) mit Campaign zu verbinden.
 
 
 >[!NOTE]
 >
->* Kompatible Datenbanken für Federated Data Access sind im Abschnitt [Kompatibilitätsmatrix](../start/compatibility-matrix.md).
+>* Kompatible Datenbanken für Federated Data Access sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
 >
->* Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) ist ein spezielles externes Konto verfügbar, über das die Kommunikation zwischen der lokalen Campaign-Datenbank und der Snowflake-Cloud-Datenbank verwaltet werden kann. Dieses externe Konto wird nach Adobe und **darf nicht** geändert werden.
+>* Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) ist ein spezielles externes Konto verfügbar, über das die Kommunikation zwischen der lokalen Campaign-Datenbank und der Snowflake-Cloud-Datenbank verwaltet werden kann. Dieses externe Konto wird von Adobe für Sie eingerichtet und **darf nicht** geändert werden.
 >
 
 
 
 ## Best Practices und Einschränkungen
 
-Die FDA-Option unterliegt den Einschränkungen des von Ihnen verwendeten Datenbanksystems von Drittanbietern.
+Die FDA-Option unterliegt den Einschränkungen des von Ihnen verwendeten Drittanbieter-Datenbanksystems.
 
 Beachten Sie außerdem die folgenden Einschränkungen und Best Practices:
 
@@ -41,7 +41,7 @@ Beachten Sie außerdem die folgenden Einschränkungen und Best Practices:
    * Exportieren Sie die Adobe Campaign-Datenbank in die externe Datenbank und führen Sie die Aktionen nur in der externen Datenbank aus. Importieren Sie danach die Ergebnisse wieder in Adobe Campaign.
 
    * Rufen Sie die Daten aus der externen Adobe Campaign-Datenbank ab und führen Sie die Aktionen lokal durch.
-   Wenn Sie Ihre Sendungen unter Verwendung von Daten aus der externen Datenbank personalisieren möchten, rufen Sie die entsprechenden Daten über einen Workflow ab und stellen Sie sie in einer temporären Tabelle bereit. Personalisieren Sie dann Ihren Versand mit den Daten aus der temporären Tabelle. Verarbeiten Sie dazu die Nachrichtenpersonalisierung in einem dedizierten Workflow mithilfe der **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** -Option, verfügbar im **[!UICONTROL Analyse]** in den Versandeigenschaften. Diese Option ermöglicht es, im Zuge der Versandanalyse automatisch einen Workflow zu erstellen und auszuführen, welcher alle auf eine Zielgruppe bezogenen Daten in einer temporären Tabelle speichert (insbesondere Daten aus verknüpften Tabellen einer externen Datenbank).
+   Wenn Sie Ihre Sendungen unter Verwendung von Daten der externen Datenbank personalisieren möchten, rufen Sie die entsprechenden Daten über einen Workflow ab und stellen Sie sie in einer temporären Tabelle bereit. Personalisieren Sie dann Ihren Versand mit den Daten aus der temporären Tabelle. Bereiten Sie die Personalisierung von Nachrichten in einem speziellen Workflow vor, indem Sie die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** verwenden, die auf der Registerkarte **[!UICONTROL Analyse]** der Versandeigenschaften verfügbar ist. Diese Option ermöglicht es, im Zuge der Versandanalyse automatisch einen Workflow zu erstellen und auszuführen, welcher alle auf eine Zielgruppe bezogenen Daten in einer temporären Tabelle speichert (insbesondere Daten aus verknüpften Tabellen einer externen Datenbank).
 
    >[!CAUTION]
    >
@@ -50,17 +50,17 @@ Beachten Sie außerdem die folgenden Einschränkungen und Best Practices:
 
 ## Verwenden von externen Daten in einem Workflow
 
-Campaign verfügt über mehrere Workflow-Aktivitäten, mit denen Sie mit Daten aus Ihrer externen Datenbank(n) interagieren können:
+Campaign verfügt über mehrere Workflow-Aktivitäten, die Sie für die Interaktion mit Daten in Ihrer/Ihren externen Datenbank(en) verwenden können:
 
-* **Nach externen Daten filtern** - Verwenden Sie die **[!UICONTROL Abfrage]** -Aktivität, um externe Daten hinzuzufügen und sie in den definierten Filterkonfigurationen zu verwenden.
+* **Filter für externe Daten** – Verwenden Sie die Aktivität **[!UICONTROL Abfrage]**, um externe Daten hinzuzufügen und sie in den definierten Filterkonfigurationen zu verwenden.
 
-* **Erstellen von Untergruppen** - Verwenden Sie die **[!UICONTROL Aufspaltung]** -Aktivität, um Untergruppen zu erstellen. Sie können externe Daten verwenden, um die zu verwendenden Filterkriterien zu definieren.
+* **Erstellen von Teilmengen** - Verwenden Sie die Aktivität **[!UICONTROL Aufspaltung]**, um Teilmengen zu erstellen. Sie können externe Daten verwenden, um die zu verwendenden Filterkriterien zu definieren.
 
-* **Externe Datenbank laden** - Verwenden Sie die externen Daten im **[!UICONTROL Laden (RDBMS)]** Aktivität.
+* **Externe Datenbank laden** – Verwenden Sie die externen Daten in der Aktivität **[!UICONTROL Laden (DBMS)]**.
 
-* **Informationen und Links hinzufügen** - Verwenden Sie die **[!UICONTROL Anreicherung]** -Aktivität, um der Arbeitstabelle des Workflows zusätzliche Daten und Links zu einer externen Tabelle hinzuzufügen. In diesem Kontext können Daten aus einer externen Datenbank verwendet werden.
+* **Informationen und Links hinzufügen** – Verwenden Sie die Aktivität **[!UICONTROL Anreicherung]**, um der Arbeitstabelle des Workflows zusätzliche Daten und einer externen Tabelle Links hinzuzufügen. In diesem Kontext können Daten aus einer externen Datenbank verwendet werden.
 
-Sie können für eine temporäre Nutzung auch direkt aus allen oben aufgeführten Workflow-Aktivitäten eine Verbindung zu einer externen Datenbank definieren. In diesem Fall befindet er sich in einer lokalen externen Datenbank, die nur innerhalb des aktuellen Workflows verwendet wird.
+Sie können aus allen oben aufgeführten Workflow-Aktivitäten auch direkt eine Verbindung zu einer externen Datenbank für eine temporäre Verwendung definieren. In diesem Fall handelt es sich um eine lokale externe Datenbank, die nur innerhalb des aktuellen Workflows verwendet werden kann.
 
 >[!CAUTION]
 >
