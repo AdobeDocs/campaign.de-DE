@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 1e84fdd61bb2591bf69f5efaf8f8fc01a0d3d93f
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 94%
+source-wordcount: '638'
+ht-degree: 87%
 
 ---
 
@@ -66,27 +66,28 @@ Campaign-Benutzende stellen über ihre Adobe ID eine Verbindung her. Dieselbe Ad
 
 Verwenden Sie das Modul &quot;Marketing Analytics&quot;, um Daten zu analysieren und zu messen, Statistiken zu berechnen und die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Erstellen Sie außerdem Berichte und Zielgruppen: Nach der Identifizierung werden sie in Listen gespeichert, die in Adobe Campaign verwendet werden können (für Targeting, Segmentierung usw.).
 
-Adobe Campaign-Cube-Berichte sind optimiert und bieten bessere Skalierungsfunktionen als Campaign Classic v7. Frühere Einschränkungen für Cubes gelten nicht für Campaign v8.
+Mit [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), sind Adobe Campaign-Cube-Berichte optimiert und bieten bessere Skalierungsfunktionen als Campaign Classic v7. In diesem spezifischen Bereitstellungsmodell gelten frühere Einschränkungen bei Cubes nicht für Campaign v8.
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
 Bitte beachten Sie, dass in dieser Version von Campaign einige Funktionen nicht verfügbar sind, z. B.:
 
 * Verwaltung von Marketing-Ressourcen
-* Hybrid-/On-Premise-Implementierungsmodelle
+* Coupons
+* Webtracking
+* Umfragen
 
 
 ## Nicht unterstützte Funktionen{#gs-removed}
 
-Zur Anpassung an die neue Architektur und das Implementierungsmodell von Campaign v8 werden einige frühere Funktionen von Campaign Classic v7 in Campaign v8 nicht mehr unterstützt, wie z. B.:
+Einige Funktionen des historischen Campaign Classic v7 werden in Campaign v8 nicht mehr unterstützt, z. B.:
 
-* Coupons
-* Webtracking
-* Umfragen
-* Social Marketing
+* Social Marketing    mit Facebook
 * ACS-Connector (Prime-Angebote)
 * Integration mit LDAP
 * Anmelden mit Benutzer/Kennwort
+* Hybrid-/On-Premise-Implementierungsmodelle
+
 
 >[!NOTE]
 >
