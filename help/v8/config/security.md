@@ -5,9 +5,9 @@ feature: Privacy, PI
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 864f2179384d3e3cfcf310fcd04fe02240bfbefa
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '674'
 ht-degree: 100%
 
 ---
@@ -28,6 +28,30 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 * Schützen Sie Seiten, die möglicherweise personenbezogene Daten enthalten (z. B. Mirror-Seiten, Web-Anwendungen usw.).
 
 ![](../assets/do-not-localize/speech.png)  Adobe unterstützt Sie als Benutzer von Managed Cloud Services bei der Implementierung dieser Konfigurationen in Ihrer Umgebung.
+
+
+## Zugriffsverwaltung 
+
+Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements. Im Folgenden finden Sie die wichtigsten Best Practices:
+
+* Erstellen Sie eine ausreichende Anzahl von Sicherheitsgruppen.
+* Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
+* Vermeiden Sie möglichst die Vergabe der Administrator-Funktion und achten Sie darauf, dass sich nicht zu viele Benutzer in der Administrator-Gruppe befinden.
+
+![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=de#webapp-operator){target=&quot;_blank&quot;}.
+
+## Leitlinien zur Codierung
+
+Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) sollten Sie sich grundsätzlich an diesen Leitlinien orientieren:
+
+* **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Konkatenation, und vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen auf die Zulassungsliste setzen.
+
+* **Schutz des Datenmodells**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken, und fügen Sie Systemfilter hinzu (sysFilter).
+
+* **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
+
+![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target=&quot;_blank&quot;}.
+
 
 ## Personalisierung
 
@@ -110,7 +134,7 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements
 * Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
 * Vermeiden Sie möglichst die Vergabe der Administrator-Funktion und achten Sie darauf, dass sich nicht zu viele Benutzer in der Administrator-Gruppe befinden.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=de#webapp-operator){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}.
 
 ## Leitlinien zur Codierung
 
@@ -122,4 +146,4 @@ Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) so
 
 * **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}.

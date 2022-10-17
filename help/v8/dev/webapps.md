@@ -5,18 +5,18 @@ feature: Web Apps
 role: User, Developer
 level: Beginner
 exl-id: a460c1b4-4266-46ff-8cca-748050afd579
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 64bdd8332d0cf76b3e15db58f8abf09fdf163bba
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 100%
+ht-degree: 68%
 
 ---
 
 # Erste Schritte mit Web-Anwendungen und Web-Formularen{#gs-ac-web}
 
-Adobe Campaign verfügt über ein grafisches Modul zur Definition und Veröffentlichung von **Web-Formularen**. Damit können Sie Seiten erstellen, die Eingabe- und Auswahlfelder sowie Daten aus der Datenbank enthalten. Daraus lassen sich wiederum Web-Seiten zusammenstellen und veröffentlichen, in denen Benutzer Informationen anzeigen oder eingeben können.
+Adobe Campaign integriert ein Grafikmodul zum Definieren und Veröffentlichen **Webformulare** , um Seiten mit Eingabe- und Auswahlfeldern zu erstellen, die Daten aus der Datenbank enthalten können. Auf diese Weise können Sie Webseiten entwerfen und posten, auf die Benutzer zugreifen können, um Informationen anzuzeigen oder einzugeben.
 
-![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de#designing-content) erfahren Sie, wie Sie Web-Formulare erstellen und veröffentlichen.{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Erfahren Sie, wie Sie Webformulare erstellen und veröffentlichen in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de#designing-content){target=&quot;_blank&quot;}
 
 ![](assets/sample.png)
 

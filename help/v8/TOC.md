@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
 title: Dokumente zu Campaign v8
-source-git-commit: e7772364ab46673695f498911e2246056a04790e
+source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 100%
+source-wordcount: '433'
+ht-degree: 89%
 
 ---
 
@@ -15,53 +15,45 @@ ht-degree: 100%
 # Dokumentation zu Adobe Campaign v8 {#campaign-v8}
 
 + [Dokumentation zu Campaign v8](campaign-home.md)
-+ Neue Funktionen {#new}
-   + [Wichtigste Funktionen](start/whats-new.md)
++ Versionen und aktuelle Updates {#releases}
    + [Vorzeitige Versionshinweise](start/e-release-notes.md)
    + [Versionshinweise](start/release-notes.md)
    + [Schutzmechanismen](start/ac-guardrails.md)
    + [Bekannte Probleme](start/known-issues.md)
-   + [Wechsel von Classic v7 zu v8](start/v7-to-v8.md)
-+ Starten {#start}
-   + [Erste Schritte](start/get-started.md)
+   + [Kompatibilitätsmatrix](start/compatibility-matrix.md)
++ Erste Schritte {#start}
+   + [Erste Schritte mit Adobe Campaign](start/get-started.md)
+   + [Wichtigste Funktionen](start/whats-new.md)
    + [Komponenten und Prozesse](start/ac-components.md)
+   + [Herstellen einer Verbindung zu Campaign](start/connect.md)
    + Campaign-Benutzeroberfläche {#ac-ui}
       + [Erkunden der Benutzeroberfläche von Campaign](start/campaign-ui.md)
       + [Anpassen der Benutzeroberfläche von Campaign](start/customize-ui.md)
-   + [Verwenden von Audiences](start/audiences.md)
-   + [Verwalten von Datenschutzanfragen](start/privacy.md)
-   + [Datenimport](start/import.md)
-   + [Erstellen von Kampagnen](start/campaigns.md)
-   + [Senden von Nachrichten](start/create-message.md)
-   + [Verwalten von Abonnements](start/subscriptions.md)
-   + [Verfolgen und Überwachen](start/tracking.md)
-   + [Metriken und Berichte](start/reporting.md)
+      + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
+   + [Von Classic v7 bis v8](start/v7-to-v8.md)
    + [Häufig gestellte Fragen](start/campaign-faq.md)
-+ Architektur {#architecture}
-   + [Allgemeine Prinzipien](architecture/general-architecture.md)
-   + [Architektur](architecture/architecture.md)
-   + FDA-Snowflake-Implementierung {#fda}
-      + [Was ist FDA-Snowflake?](architecture/fda-deployment.md)
-   + FFDA-Implementierung in Unternehmen {#ffda}
-      + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
-      + Merkmale {#ffda-characteristics}
-         + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
-         + [Neue APIs](architecture/new-apis.md)
-         + [API-Staging-Mechanismus](architecture/staging.md)
-         + [Replikationsmechanismus](architecture/replication.md)
-+ Implementieren {#implement}
-   + [Implementierungsschritte](start/implement.md)
-   + [Anpassen der Instanz](dev/customize.md)
-   + [Sicherheitsrichtlinien](config/security.md)
-   + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
-   + [Best Practices für Datenmodelle](dev/datamodel-best-practices.md)
-+ Freigeben {#deploy}
-   + [Kompatibilitätsmatrix](start/compatibility-matrix.md)
-   + [Herstellen einer Verbindung zu Campaign](start/connect.md)
-   + [Berechtigungen](start/permissions.md)
-   + [Control Panel](config/self-service.md)
-+ Profile und Audiences {#profiles-and-audiences}
-   + [Erste Schritte](audiences/gs-audiences.md)
++ Campaign Management {#campaigns}
+   + [Erste Schritte mit Kampagnen](start/campaigns.md)
+   + [Dokumentation zur Kampagnenverwaltung](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
+   + Senden von Nachrichten {#send}
+      + [Erste Schritte mit Nachrichten](start/create-message.md)
+      + E-Mails {#emails}
+         + [Entwerfen und Validieren von E-Mails](send/email.md)
+         + [Versenden und Überwachen von E-Mails](send/send.md)
+      + [SMS](send/sms.md)
+      + [Push-Benachrichtigungen ](send/push.md)
+      + [LINE-Messaging](send/line.md)
+      + [Briefpost](send/direct-mail.md)
+      + [Twitter](send/twitter.md)
+      + [Transaktionsnachrichten](send/transactional.md)
+      + Fehler, Bounces und Quarantänen{#failures}
+         + [Quarantänen](send/quarantines.md)
+         + [Versandfehler](send/delivery-failures.md)
+      + [Optimieren des Sendezeitpunkts](send/predictive.md)
+      + [Verwalten von Abonnements](start/subscriptions.md)
++ Profil- und Zielgruppen-Management {#audience}
+   + [Erste Schritte mit Profilen und Audiences](audiences/gs-audiences.md)
+   + [Verwenden von Audiences](start/audiences.md)
    + [Zugriff auf Profile](audiences/view-profiles.md)
    + Hinzufügen von Profilen {#add-profiles}
       + [Manuelles Erstellen von Profilen](audiences/create-profiles.md)
@@ -72,23 +64,14 @@ ht-degree: 100%
    + Erstellen von Audiences {#create-audiences}
       + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
       + [Erstellen und Verwalten von Filtern](audiences/create-filters.md)
-   + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
+   + [Zielgruppen mit Adobe-Lösungen teilen](start/shared-audiences.md)
    + [Best Practices](audiences/audiences-best-practices.md)
-+ Senden von Nachrichten {#send}
-   + E-Mails {#emails}
-      + [Entwerfen und Validieren von E-Mails](send/email.md)
-      + [Versenden und Überwachen von E-Mails](send/send.md)
-   + [SMS](send/sms.md)
-   + [Push-Benachrichtigungen ](send/push.md)
-   + [LINE-Messaging](send/line.md)
-   + [Briefpost](send/direct-mail.md)
-   + [Twitter](send/twitter.md)
-   + [Transaktionsnachrichten](send/transactional.md)
-   + [Optimieren des Sendezeitpunkts](send/predictive.md)
-   + Fehler, Bounces und Quarantänen{#failures}
-      + [Quarantänen](send/quarantines.md)
-      + [Versandfehler](send/delivery-failures.md)
-+ Echtzeit-Interaktion{#interaction}
++ Content Management {#content}
+   + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
++ Datenschutz und Sicherheitsmanagement {#privacy}
+   + [Verwalten von Datenschutzanfragen](start/privacy.md)
+   + [Sicherheitsrichtlinien](config/security.md)
++ Entscheidungsverwaltung {#offers}
    + [Erste Schritte mit Echtzeit-Interaktionen](interaction/interaction.md)
    + [Umgebungen und Architektur](interaction/interaction-architecture.md)
    + [Best Practices](interaction/interaction-best-practices.md)
@@ -106,15 +89,17 @@ ht-degree: 100%
       + [Verwalten anonymer Interaktionen](interaction/anonymous-interactions.md)
    + [Berichte und Verlauf](interaction/interaction-tracking.md)
    + [Anwendungsfälle](interaction/interaction-use-cases.md)
-+ Konfigurieren {#config}
-   + [Automatisieren mit Workflows](config/workflows.md)
-   + [E-Mail-Einstellungen](config/email-settings.md)
-   + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
-   + [Campaign SDKs mit Ihrer Mobile App integrieren](config/push-config.md)
-   + [Externe Konten](config/external-accounts.md)
-+ Verbinden {#connect}
-   + [Herstellen von Verbindungen zu anderen Lösungen](connect/integration.md)
-   + [Campaign und Adobe Experience Platform](connect/ac-aep.md)
++ Reporting und Analytics {#analytics}
+   + [Verfolgen und Überwachen](start/tracking.md)
+   + [Metriken und Berichte](start/reporting.md)
++ Daten-Management {#data}
+   + [Erste Schritte mit Workflows](config/workflows.md)
+   + [Datenimport](start/import.md)
+   + [Workflow-Dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
++ Integrationen {#connect}
+   + [Campaign mit anderen Lösungen verbinden](connect/integration.md)
+   + [Kampagne + Experience Platform](connect/ac-aep.md)
+   + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
@@ -126,6 +111,31 @@ ht-degree: 100%
       + [Arbeiten mit Campaign und SFDC](connect/ac-sfdc.md)
       + [Arbeiten mit Campaign und Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [Daten synchronisieren](connect/crm-data-sync.md)
++ Administration {#admin}
+   + [Berechtigungen](start/permissions.md)
+   + [Control Panel](config/self-service.md)
++ Architektur und Konfiguration {#config}
+   + Architektur {#architecture}
+      + [Allgemeine Prinzipien](architecture/general-architecture.md)
+      + [Architektur](architecture/architecture.md)
+      + FDA-Snowflake-Implementierung {#fda}
+         + [Was ist FDA-Snowflake?](architecture/fda-deployment.md)
+      + FFDA-Implementierung in Unternehmen {#ffda}
+         + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
+         + Merkmale {#ffda-characteristics}
+            + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
+            + [Neue APIs](architecture/new-apis.md)
+            + [API-Staging-Mechanismus](architecture/staging.md)
+            + [Replikationsmechanismus](architecture/replication.md)
+   + Implementierung {#implement}
+      + [Implementierungsschritte](start/implement.md)
+      + [Anpassen der Instanz](dev/customize.md)
+      + [Best Practices für Datenmodelle](dev/datamodel-best-practices.md)
+   + Konfiguration {#configuration}
+      + [E-Mail-Einstellungen](config/email-settings.md)
+      + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
+      + [Campaign SDKs mit Ihrer Mobile App integrieren](config/push-config.md)
+      + [Externe Konten](config/external-accounts.md)
 + Ressourcen für Entwickler {#developer}
    + [Campaign-Datenmodell](dev/datamodel.md)
    + Schemata und Formulare {#shemas-forms}

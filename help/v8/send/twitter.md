@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit dem Social-Media-Marketing-Modul von Adob
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 9f74e3bbff5bcbebf4f5a0ecf4ed7e458b9e38ed
+source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 100%
@@ -21,6 +21,7 @@ Nach der Konfiguration der Integration haben Sie folgende Möglichkeiten:
 * Senden von Direktnachrichten an Ihre Follower
 * Posten von Tweets in Ihrem Twitter-Konto
 * Sammeln Sie neue Kontakte, indem Sie die Profildaten abrufen, um auf der Basis dieser Daten Zielgruppen-Kampagnen durchzuführen und Cross-Channel-Strategien anzuwenden. Diese Aktion erfordert die Zustimmung des Benutzers.
+
 
 Die Konfigurationsschritte zur Integration Ihres Twitter-Kontos mit Adobe Campaign werden auf [dieser Seite](../connect/ac-tw.md) beschrieben.
 

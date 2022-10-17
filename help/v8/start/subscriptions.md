@@ -5,9 +5,9 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '484'
 ht-degree: 100%
 
 ---
@@ -78,6 +78,8 @@ Folgende Optionen stehen zum Abmelden (Opt-out) eines Profils von einem Service 
 >
 >Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) sind An- und Abmeldungen **asynchrone** Prozesse. Opt-in und Opt-out-Anfragen werden stündlich verarbeitet. [Weitere Informationen](../architecture/new-apis.md#sub-apis)
 
-Sie können es Ihren Versandempfängern auch ermöglichen, Nachrichten an Freunde weiterzuleiten. Fügen Sie dazu die entsprechenden Links in Ihren Versand ein. Sie können diesen Freigabeprozess sowie die Anzahl der Besuche auf den betroffenen Seiten tracken.
+<!--
+You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages. 
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zu dieser Funktion finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=de#viral-marketing--forward-to-a-friend){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend){target="_blank"}
+-->

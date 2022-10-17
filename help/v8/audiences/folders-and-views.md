@@ -5,7 +5,7 @@ feature: Audiences, Profiles, Application Settings
 role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Eine Ansicht ist ein spezieller Ordner, der keine Daten enthält, aber Daten anz
 
 Beachten Sie, dass Sie Ordnern Berechtigungen zuweisen können, um den Zugriff auf bestimmte Daten zu beschränken. [Weitere Informationen](#restrict-access-to-a-folder)
 
-## Best Practices beim Arbeiten mit Ordnern
+## Best Practices beim Arbeiten mit Ordnern{#best-practices-folders}
 
 * **Verwenden Sie integrierte Ordner**, um es allen am Projekt beteiligten Personen zu erleichtern, die Anwendung zu verwenden, zu warten und Fehler zu beheben. Sie sollten keine benutzerdefinierten Ordnerstrukturen für Empfänger, Listen, Sendungen usw. erstellen, sondern Standardordner wie etwa **Administration**, **Profile und Zielgruppen** und **Kampagnenverwaltung** verwenden.
 

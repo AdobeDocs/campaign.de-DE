@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '637'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,7 @@ Als früherer [!DNL Campaign Classic] v7-Benutzer sollten Sie bei der Interaktio
 
 Adobe Campaign v8 ist als **Managed Cloud Service** verfügbar.
 
-Adobe Campaign Managed Cloud Services bietet eine Managed Services-Plattform für die Konzeption kanalübergreifender Kundenerlebnisse, auf der über eine visuell gestützte Umgebung Kampagnen orchestriert, Interaktionen in Echtzeit verwaltet und Kampagnen kanalübergreifend ausgeführt werden können. Weitere Informationen zu Campaign Managed Cloud Services finden Sie auf der [Produktbeschreibungsseite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
+Adobe Campaign Managed Cloud Services bietet eine Managed Cloud Services-Plattform für die Erstellung kanalübergreifender Kundenerlebnisse und bietet eine Umgebung für die visuelle Kampagnenorchestrierung, Interaktionsverwaltung in Echtzeit und die kanalübergreifende Ausführung. Weitere Informationen zu Campaign Managed Cloud Services finden Sie auf der [Produktbeschreibungsseite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}.
 
 Das neue Angebot kombiniert erstklassige Dienstleistungen mit proaktiver Aufsicht und rechtzeitigen Warnmeldungen und konzentriert sich auf drei Bereiche:
 
