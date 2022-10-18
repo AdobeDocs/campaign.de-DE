@@ -16,7 +16,7 @@ ht-degree: 89%
 
 + [Dokumentation zu Campaign v8](campaign-home.md)
 + Versionen und aktuelle Updates {#releases}
-   + [Vorzeitige Versionshinweise](start/e-release-notes.md)
+   + [Frühzeitige Versionshinweise](start/e-release-notes.md)
    + [Versionshinweise](start/release-notes.md)
    + [Schutzmechanismen](start/ac-guardrails.md)
    + [Bekannte Probleme](start/known-issues.md)
