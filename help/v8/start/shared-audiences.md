@@ -1,26 +1,26 @@
 ---
-title: Audiences mit Adobe Experience Cloud-Lösungen freigeben
-description: Erfahren Sie, wie Sie Audiences mit Adobe Experience Cloud-Lösungen teilen können.
+title: Audiences für Adobe Experience Cloud-Lösungen freigeben
+description: Erfahren Sie, wie Sie Audiences für Adobe Experience Cloud-Lösungen freigeben können
 feature: Subscriptions
 role: User
 level: Beginner
 hide: true
 hidefromtoc: true
 source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Audiences mit Adobe Experience Cloud-Lösungen freigeben{#shared-audiences}
+# Audiences für Adobe Experience Cloud-Lösungen freigeben{#shared-audiences}
 
 
 Option 1: AEP-Quellen und -Ziele
 
 Option 2: Adobe Personen/AAM
 
-Sie können **Adobe Campaign** mit **People Core Service** oder Adobe Audience Manager. Anschließend können Sie:
+Sie können **Adobe Campaign** mit **People Core Service** oder Adobe Audience Manager integrieren. Anschließend können Sie:
 
 * Import von Audiences/Segmenten aus den verschiedenen Lösungen der Adobe Experience Cloud in Adobe Campaign. Der Import von Audiences erfolgt in Adobe Campaign in Listen.
 
@@ -39,6 +39,6 @@ Diese Integration unterstützt zwei Arten von Adobe Experience Cloud-Kennungen:
 
 Siehe:
 
-[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=en](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=en)
+[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=de](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=de)
 
-[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=en](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=en)
+[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=de](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=de)
