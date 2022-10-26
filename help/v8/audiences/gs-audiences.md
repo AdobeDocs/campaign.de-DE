@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
 source-git-commit: 7f9a95f3748b8322933137aa780897611de91678
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) di
 
 Um Profildaten zu Adobe Campaign hinzuzufügen, haben Sie folgende Möglichkeiten:
 
-* [Datendateien importieren](../start/import.md) aus einer externen Datenquelle, z. B. einem CRM-System oder einer reduzierten Datei
+* [Importieren von Datendateien](../start/import.md) aus einer externen Datenquelle, z. B. einem CRM-System oder einer flachen Datei
 * [Erstellen von Web-Formularen](../dev/webapps.md), damit Kunden selbst Informationen eingeben und ihr eigenes Profil erstellen können
 * [Zuordnen zu einer externen Datenbank](../connect/fda.md), in der Profile gespeichert werden
 * Manuelles Eingeben von Profilen über die Client-Konsole, wie unten beschrieben:
@@ -35,4 +35,4 @@ Um Profildaten zu Adobe Campaign hinzuzufügen, haben Sie folgende Möglichkeite
 
 <!--You can also select your message audience in an external file: recipients are stored not in the database, but in files. These are known as “external” deliveries. These contacts can be imported or not in Adobe Campaign. [Learn more](external-profiles.md).-->
 
-Nach dem Import können Sie Audiences erstellen, um Ihre Nachrichten zu versenden. Erfahren Sie, wie Sie Audiences erstellen. [in diesem Abschnitt](create-audiences.md).
+Nach dem Import können Sie Audiences erstellen, um Ihre Nachrichten zu versenden. [In diesem Abschnitt](create-audiences.md) erfahren Sie, wie Sie Audiences erstellen.
