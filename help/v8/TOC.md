@@ -7,7 +7,7 @@ title: Dokumente zu Campaign v8
 source-git-commit: f3090d1da1aaec1a50452bcfbf89e65e2669fc5c
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ ht-degree: 89%
       + [Erkunden der Benutzeroberfläche von Campaign](start/campaign-ui.md)
       + [Anpassen der Benutzeroberfläche von Campaign](start/customize-ui.md)
       + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
-   + [Von Classic v7 bis v8](start/v7-to-v8.md)
+   + [Wechsel von Classic v7 zu v8](start/v7-to-v8.md)
    + [Häufig gestellte Fragen](start/campaign-faq.md)
-+ Campaign Management {#campaigns}
++ Kampagnen-Management {#campaigns}
    + [Erste Schritte mit Kampagnen](start/campaigns.md)
-   + [Dokumentation zur Kampagnenverwaltung](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
+   + [Dokumentation zur Kampagnenorchestrierung](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
    + Senden von Nachrichten {#send}
       + [Erste Schritte mit Nachrichten](start/create-message.md)
       + E-Mails {#emails}
@@ -49,7 +49,7 @@ ht-degree: 89%
       + Fehler, Bounces und Quarantänen{#failures}
          + [Quarantänen](send/quarantines.md)
          + [Versandfehler](send/delivery-failures.md)
-      + [Optimieren des Sendezeitpunkts](send/predictive.md)
+      + [Optimieren der Versandzeit](send/predictive.md)
       + [Verwalten von Abonnements](start/subscriptions.md)
 + Profil- und Zielgruppen-Management {#audience}
    + [Erste Schritte mit Profilen und Audiences](audiences/gs-audiences.md)
@@ -64,14 +64,14 @@ ht-degree: 89%
    + Erstellen von Audiences {#create-audiences}
       + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
       + [Erstellen und Verwalten von Filtern](audiences/create-filters.md)
-   + [Zielgruppen mit Adobe-Lösungen teilen](start/shared-audiences.md)
+   + [Audiences mit Adobe-Lösungen freigeben](start/shared-audiences.md)
    + [Best Practices](audiences/audiences-best-practices.md)
-+ Content Management {#content}
++ Content-Management {#content}
    + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
-+ Datenschutz und Sicherheitsmanagement {#privacy}
++ Datenschutz- und Sicherheits-Management {#privacy}
    + [Verwalten von Datenschutzanfragen](start/privacy.md)
    + [Sicherheitsrichtlinien](config/security.md)
-+ Entscheidungsverwaltung {#offers}
++ Entscheidungs-Management {#offers}
    + [Erste Schritte mit Echtzeit-Interaktionen](interaction/interaction.md)
    + [Umgebungen und Architektur](interaction/interaction-architecture.md)
    + [Best Practices](interaction/interaction-best-practices.md)
@@ -89,7 +89,7 @@ ht-degree: 89%
       + [Verwalten anonymer Interaktionen](interaction/anonymous-interactions.md)
    + [Berichte und Verlauf](interaction/interaction-tracking.md)
    + [Anwendungsfälle](interaction/interaction-use-cases.md)
-+ Reporting und Analytics {#analytics}
++ Reporting und Analysen {#analytics}
    + [Verfolgen und Überwachen](start/tracking.md)
    + [Metriken und Berichte](start/reporting.md)
 + Daten-Management {#data}
@@ -98,7 +98,7 @@ ht-degree: 89%
    + [Workflow-Dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
 + Integrationen {#connect}
    + [Campaign mit anderen Lösungen verbinden](connect/integration.md)
-   + [Kampagne + Experience Platform](connect/ac-aep.md)
+   + [Campaign + Experience Platform](connect/ac-aep.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)

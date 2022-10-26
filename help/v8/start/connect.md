@@ -8,13 +8,13 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
 source-wordcount: '859'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Verbindung mit Adobe Campaign v8 herstellen{#gs-ac-connect}
 
-Die Client-Konsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können. Weitere Informationen zur Campaign Client Console [auf dieser Seite](ac-components.md#presentation-layer).
+Die Client-Konsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können. [Auf dieser Seite](ac-components.md#presentation-layer) erfahren Sie mehr über die Campaign-Client-Konsole.
 
 Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 

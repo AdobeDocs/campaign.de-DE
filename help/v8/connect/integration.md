@@ -8,7 +8,7 @@ exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 6605a24cea536dbef5b1a7e909ff4d76b3d6c222
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer o
 
 ## Arbeiten mit Social Media{#gs-social}
 
-Interagieren Sie mit Adobe Campaign über Twitter mit Kunden und Interessenten.
+Nutzen Sie Adobe Campaign, um über Twitter mit Kunden und Interessenten zu interagieren.
 
 Sie haben folgende Möglichkeiten:
 
@@ -64,6 +64,6 @@ Sie haben folgende Möglichkeiten:
 * Posten von Tweets in Ihrem Twitter-Konto
 * Neue Kontakte sammeln
 
-![](../assets/do-not-localize/glass.png) Erfahren Sie, wie Sie die Twitter-Integration einrichten und verwenden in [diese Seite](../connect/ac-tw.md).
+![](../assets/do-not-localize/glass.png) Auf [dieser Seite](../connect/ac-tw.md) erfahren Sie, wie Sie die Twitter-Integration einrichten und verwenden können.
 
-![](../assets/do-not-localize/glass.png) Erfahren Sie, wie Sie Twitter-Beiträge erstellen und Direktnachrichten an Ihre Follower senden können in [diese Seite](../send/twitter.md).
+![](../assets/do-not-localize/glass.png) Auf [dieser Seite](../send/twitter.md) erfahren Sie, wie Sie Twitter-Beiträge erstellen und Direktnachrichten an Ihre Follower senden können.
