@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: webUI Topic1
-description: webUI
+title: Web-Benutzeroberfläche – Thema 1
+description: Web-Benutzeroberfläche
 hide: true
 source-git-commit: 07010d0253637bce4df62f7bfa1fd37fb9fb8e7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '19'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# WebUI-Konzept 1 Thema 1 {#c1t1}
+# Web-Benutzeroberfläche – Konzept 1, Thema 1 {#c1t1}
 
 ## Über Thema 1
 
-Erfahren Sie mehr über Konzept 2 unter [diese Seite](../concept2/topic2.md).
-Weitere Informationen [here](../../automation/workflow/about-workflows.md)
+Erfahren Sie mehr über Konzept 2, Thema 2 auf [dieser Seite](../concept2/topic2.md).
+Informationen über das andere Thema finden Sie [hier](../../automation/workflow/about-workflows.md)
