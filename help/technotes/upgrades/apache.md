@@ -3,22 +3,22 @@ product: campaign
 title: Technote – Adobe Campaign – Apache-Sicherheits-Update
 description: Adobe Campaign – Sicherheits-Update der Apache-Version
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Adobe Campaign – Sicherheits-Update der Apache-Version {#apache-update}
 
 >[!CAUTION]
->Dieser Artikel gilt für: Campaign Classic v7: Managed Cloud Services-Kunden, Campaign v8-Kunden und Campaign Standard-Kunden.
+>Dieser Artikel gilt für Kunden von Campaign Classic v7 Managed Cloud Services, Campaign v8 und Campaign Standard.
 
 Adobe Campaign arbeitet mit Tools von Drittanbietern zusammen. Diese Kompatibilität wird regelmäßig aktualisiert, damit Sie nur unterstützte Versionen implementieren und von den neuesten Korrekturen und Verbesserungen profitieren können.
 
 Adobe Campaign nutzt Apache Tomcat, das über HTTP als Einstiegspunkt im Programm-Server fungiert und mit dem Apache-Webserver integriert ist. Die Apache Software Foundation hat Apache HTTP Server 2.4.53 veröffentlicht. Diese Version behebt Schwachstellen, die es einem Angreifer ermöglichen könnte, die Kontrolle über ein System zu übernehmen. Weitere Informationen finden Sie unter [Apache 2.4.53 – Ankündigung](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
 
-Das Adobe Campaign-Team wird bis zum **15. Juni 2022** ein Sicherheits-Upgrade der Apache-Version durchführen, um diese Apache-Sicherheitslücke zu schließen und Ihre Instanzumgebung sicherer zu machen. Dieses Upgrade gilt für alle Campaign Classic v7 Managed Cloud Services-Kunden, Campaign v8- und Campaign Standard-Kunden, die auf einer verwundbaren Version des Apache-HTTP-Servers ausgeführt werden. Falls Sie betroffen sind, hat sich Adobe bereits mit Ihnen in Verbindung gesetzt, um Sie über dieses Upgrade zu informieren.
+Das Adobe Campaign-Team wird bis zum **15. Juni 2022** ein Sicherheits-Upgrade der Apache-Version durchführen, um diese Apache-Sicherheitslücke zu schließen und Ihre Instanzumgebung sicherer zu machen. Dieses Upgrade gilt für alle Kunden von Campaign Classic v7 Managed Cloud Services, Campaign v8 und Campaign Standard, die mit einer anfälligen Version von Apache HTTP Server arbeiten. Falls Sie betroffen sind, hat sich Adobe bereits mit Ihnen in Verbindung gesetzt, um Sie über dieses Upgrade zu informieren.
 
 Dieses Upgrade wird voraussichtlich außerhalb Ihrer normalen Geschäftszeiten automatisch ausgeführt, damit Sie den Campaign-Service ohne Unterbrechung weiter verwenden können.
 
