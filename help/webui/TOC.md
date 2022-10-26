@@ -1,23 +1,23 @@
 ---
 audience: user
-user-guide-title: Handbuch zur Campaign-WebUI
-user-guide-description: Handbuch zur Campaign-WebUI
+user-guide-title: Handbuch zur Campaign-Web-Benutzeroberfläche
+user-guide-description: Handbuch zur Campaign-Web-Benutzeroberfläche
 hide: true
 source-git-commit: aa2e678e25a1fde922313bb4860d70a2d4c6aa6d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '18'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 
-# Campaign-WebUI-Handbücher {#webui}
+# Handbücher für die Campaign-Web-Benutzeroberfläche {#webui}
 
-+ [Handbuch zur Campaign-WebUI](home.md)
-+ Concept1 {#concept1}
++ [Handbuch zur Campaign-Web-Benutzeroberfläche](home.md)
++ Konzept 1 {#concept1}
    + [Thema 1](concept1/topic1.md)
    + [Thema 2](concept1/topic2.md)
-+ Concept2 {#concept2}
++ Konzept 2 {#concept2}
    + [Thema 1](concept2/topic1.md)
    + [Thema 2](concept2/topic2.md)
 
