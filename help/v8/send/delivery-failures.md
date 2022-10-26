@@ -6,9 +6,9 @@ role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3061'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Diese Fehlertypen werden wie folgt verwaltet:
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Services wird die Konfiguration des Bounce-Postfachs von Adobe vorgenommen.
+>Für Benutzende von Managed Cloud Services erfolgt die Konfiguration des Bounce-Postfachs durch Adobe.
 
 ## Qualifizierung von Bounce Messages {#bounce-mail-qualification}
 
