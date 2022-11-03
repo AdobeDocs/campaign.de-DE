@@ -5,7 +5,7 @@ feature: Overview
 role: User, Admin, Developer
 level: Beginner, Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 100%
@@ -125,7 +125,7 @@ Sie können viele verschiedene Bereiche und Funktionen in Campaign anpassen. Die
 
    Abgesehen von den integrierten Berichten können Sie in Adobe Campaign auch benutzerdefinierte Berichte entsprechend dem jeweiligen Kontext und Ihren Anforderungen erstellen. In diesem Dokument werden die Grundsätze der Nutzung und die Implementierungsmodi erläutert.
 
-   ![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](reporting.md) mehr über die Reporting-Funktionen in Campaign.
+   ![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](../reporting/gs-reporting.md) mehr über die Reporting-Funktionen in Campaign.
 
 
 ## Einrichten der Automatisierung in Campaign

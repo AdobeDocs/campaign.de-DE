@@ -1,0 +1,56 @@
+---
+title: Erste Schritte mit Adobe Campaign-Reporting-Tools
+description: Messen Sie den Erfolg Ihrer Kampagnen und analysieren Sie das Benutzerverhalten.
+feature: Reporting
+role: Data Engineer
+level: Beginner
+source-git-commit: d8dd91453c035703b4ffd5c8b9816f27392874d6
+workflow-type: tm+mt
+source-wordcount: '329'
+ht-degree: 77%
+
+---
+
+
+# Erste Schritte mit Reporting{#gs-ac-reports}
+
+Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufgelistet sind.
+
+
+* **Cubes**
+
+   Adobe Campaign verfügt über ein intuitives Tool zur Datenexploration, um dynamische Berichte zu erstellen.
+
+   Verwenden Sie Marketing-Analytics-Funktionen, um Daten zu analysieren und zu messen, Statistiken zu berechnen, die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Sie können Berichte erstellen, Zielgruppen-Populationen erstellen und in Listen speichern, die in Adobe Campaign für Targeting- oder Segmentierungsaufgaben verwendet werden können.
+
+   ![](assets/create-a-report.png)
+
+   Je nach Komplexität der Abfragen und Berechnungen sowie der bewegten Datenmenge werden die in den Berichten zu analysierenden Daten über eine Abfrage gesammelt und in einer Liste (Workflow vom Typ &quot;Daten-Management&quot;) oder einem Cube (unter Verwendung der Option &quot;Marketing Analytics&quot;) voraggregiert. Sie werden in Form einer Pivot-Tabelle oder einer Liste mit Gruppierung angezeigt.
+
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md).
+
+* **Native Berichte**
+
+   Adobe Campaign enthält Berichte zu Sendungen, Kampagnen, Plattformaktivitäten, optionalen Funktionen usw. Diese Berichte stehen über die verschiedenen Funktionen zur Verfügung, auf die sie sich beziehen. Sie können an Ihre individuellen Bedürfnisse angepasst werden.
+
+   Verwenden Sie die Registerkarte **Berichte**, um auf diese Berichte zuzugreifen.
+
+   ![](assets/built-in-reports.png)
+
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](built-in-reports.md).
+
+* **Deskriptive Datenanalyse**
+
+   Adobe Campaign bietet ein visuelles Tool zur Erstellung von Statistiken zu den Daten in der Datenbank. Diese ermöglichen die Erstellung deskriptiver Analysen anhand eines speziellen Assistenten, deren Inhalt und Layout Sie nach Bedarf anpassen können.
+
+   Verwenden Sie das Menü **[!UICONTROL Tools > Deskriptive Analyse...]**, um einen neuen Bericht zu erstellen.
+
+   ![](assets/desc-analysis-report.png)
+
+   ![](../assets/do-not-localize/book.png) Die Berichte zur deskriptiven Analyse von Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target=&quot;_blank&quot;} angezeigt.
+
+* **Benutzerdefinierte Berichte**
+
+   Verwenden Sie Adobe Campaign, um Berichte zu den Daten in der Datenbank zu erstellen. Sobald diese erstellt wurden, machen Sie sie in den entsprechenden Kontexten zugänglich.
+
+   ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Berichts werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=de){target=&quot;_blank&quot;} beschrieben. Die Erstellung personalisierter Berichte ist erfahrenen Benutzern vorbehalten.
