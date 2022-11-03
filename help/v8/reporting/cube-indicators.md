@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Cubes erstellen
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 25%
@@ -58,7 +58,7 @@ Gehen Sie wie folgt vor, um einen Cube zu erstellen:
 1. Wählen Sie die Arbeitstabelle aus. [Weitere Informationen](#select-the-work-table).
 1. Definieren von Dimensionen. [Weitere Informationen](#define-dimensions).
 1. Definieren von Kennzahlen. [Weitere Informationen](#build-indicators).
-1. Erstellen von Aggregaten (optional). [Weitere Informationen](cube-best-practices.md#calculate-and-use-aggregates).
+1. Erstellen von Aggregaten (optional). [Weitere Informationen](customize-cubes.md#calculate-and-use-aggregates).
 
 Im folgenden Beispiel erfahren Sie, wie Sie in einem Bericht schnell einen einfachen Cube erstellen, um seine Kennzahlen zu exportieren.
 
@@ -90,7 +90,7 @@ Gehen Sie wie folgt vor, um Dimensionen zu erstellen:
 
 1. In diesem Beispiel wählen wir den Empfänger aus **Alter**. Für dieses Feld können Sie eine Klassierung definieren, um Altersgruppen zu gruppieren und die Lesbarkeit der Informationen zu vereinfachen. Es wird empfohlen, die Klassierung zu verwenden, wenn die Wahrscheinlichkeit mehrerer separater Werte besteht.
 
-Kreuzen Sie hierzu die Option **[!UICONTROL Klassierung aktivieren]** an. [Weitere Informationen](cube-best-practices.md#data-binning).
+Kreuzen Sie hierzu die Option **[!UICONTROL Klassierung aktivieren]** an. [Weitere Informationen](customize-cubes.md#data-binning).
 
 1. Hinzufügen einer **Datum** Typdimension. In unserem Beispiel sollen die Erstellungsdaten der Empfängerprofile angezeigt werden. Klicken Sie hierzu auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL Erstellungsdatum]** in der Empfängertabelle aus.
 Sie können den Anzeigemodus für das Datum anpassen. Wählen Sie dazu die zu verwendende Hierarchie und die zu erzeugenden Ebenen aus:
@@ -109,7 +109,7 @@ Wählen Sie die Auflistung in der Dropdown-Liste aus.. Beachten Sie, dass diese 
 
 Nur die in der Auflistung vorhandenen Werte werden angezeigt. Alle anderen werden unter einem Titel zusammengefasst, den Sie im Feld **[!UICONTROL Titel der anderen Werte]** definieren können.
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](cube-best-practices.md#dynamically-manage-bins).
+Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](customize-cubes.md#dynamically-manage-bins).
 
 ### Erstellen von Indikatoren {#build-indicators}
 
@@ -124,7 +124,7 @@ Gehen Sie wie folgt vor, um Indikatoren zu erstellen:
 
    ![](assets/cube-new-measure.png)
 
-   Verwenden Sie die **[!UICONTROL Filtern Sie die Messdaten...]** -Link, um nur Frauen auszuwählen. [Weitere Informationen](cube-best-practices.md#define-measures).
+   Verwenden Sie die **[!UICONTROL Filtern Sie die Messdaten...]** -Link, um nur Frauen auszuwählen. [Weitere Informationen](customize-cubes.md#define-measures).
 
    ![](assets/cube-filter-measure-data.png)
 

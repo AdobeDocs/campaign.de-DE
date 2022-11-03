@@ -3,7 +3,7 @@ product: campaign
 title: Cubes zum Erstellen von Datenberichten verwenden
 description: Erfahren Sie, wie Sie Cubes zum Erstellen von Berichten verwenden
 feature: Reporting
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 69%
@@ -60,7 +60,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
    Diese Parameter hängen vom Datentyp der ausgewählten Dimension ab.
 
-   Beispielsweise können für Daten mehrere Ebenen verfügbar sein. Weitere Informationen hierzu finden Sie unter [Anzeigen von Kennzahlen](cube-best-practices.md#display-measures).
+   Beispielsweise können für Daten mehrere Ebenen verfügbar sein. Weitere Informationen hierzu finden Sie unter [Anzeigen von Kennzahlen](customize-cubes.md#display-measures).
 
    In diesem Fall sind die folgenden Optionen verfügbar:
 
@@ -102,7 +102,7 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
    ![](assets/cube-pivot-table-config.png)
 
-   Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. [Weitere Informationen](cube-best-practices.md#configure-the-display).
+   Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. [Weitere Informationen](customize-cubes.md#configure-the-display).
 
 1. Sie können neue Kennzahlen auf der Basis bestehender erstellen. Klicken Sie dazu auf **[!UICONTROL Kennzahl erstellen]** und konfigurieren Sie sie.
 
