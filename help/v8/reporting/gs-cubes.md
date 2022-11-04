@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Cubes erstellen
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: bd39a18178edec2730707f0323a19c9d1c80cd76
+source-git-commit: bead34ec59f6f3dca0fbec8460d58ec7da2ed76f
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 75%
+source-wordcount: '525'
+ht-degree: 77%
 
 ---
 
@@ -20,11 +20,6 @@ Verwenden Sie Marketing-Analytics-Funktionen, um Daten zu analysieren und zu mes
 Dies ermöglicht es, die Kapazitäten zur Datenexploration und -analyse optimal zu nutzen. Gleichzeitig wird die Konfiguration der Berichte und Tabellen für den Endbenutzer vereinfacht: Es muss nur ein existierender, vollständig konfigurierter Cube bei der Bericht- oder Tabellenerstellung ausgewählt werden, um dessen Berechnungen, Kennzahlen und Statistiken zu übernehmen.
 
 Cubes werden für die Generierung bestimmter integrierter Berichte verwendet, darunter [Versandberichte](delivery-reports.md) (Versand-Tracking, Klicks, Öffnungen usw.).
-
->[!CAUTION]
->
->In [[!DNL Snowflake] FDA-Bereitstellung (Standard)](../architecture/fda-deployment.md)können auf Cubes basierende Berichte nur für Datenvolumen unter 5 Millionen Zeilen verwendet werden.
-
 
 Nach ihrer Erstellung und Konfiguration werden die Cubes in den Abfrage-Aktivitäten der Berichte und Webanwendungen genutzt. Sie können außerdem in Pivot-Tabellen verwendet und verändert werden.
 
