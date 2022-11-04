@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 1e84fdd61bb2591bf69f5efaf8f8fc01a0d3d93f
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '643'
+ht-degree: 96%
 
 ---
 
@@ -66,7 +66,7 @@ Campaign-Benutzende stellen über ihre Adobe ID eine Verbindung her. Dieselbe Ad
 
 Verwenden Sie das Modul &quot;Marketing Analytics&quot;, um Daten zu analysieren und zu messen, Statistiken zu berechnen und die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Erstellen Sie außerdem Berichte und Zielgruppen: Nach der Identifizierung werden sie in Listen gespeichert, die in Adobe Campaign verwendet werden können (für Targeting, Segmentierung usw.).
 
-Die [Enterprise-Implementierung (FFDA)](../architecture/enterprise-deployment.md) bietet optimierte Adobe Campaign-Cube-Berichte und bessere Skalierungsfunktionen als Campaign Classic v7. In diesem spezifischen Implementierungsmodell gelten frühere Einschränkungen bei Cubes nicht für Campaign v8.
+Mit Adobe Campaign v8 werden Cube-Berichte optimiert und bieten bessere Skalierungsfunktionen als Campaign Classic v7. In diesem spezifischen Implementierungsmodell gelten frühere Einschränkungen bei Cubes nicht für Campaign v8. Weitere Informationen zu Cubes finden Sie unter [diesem Abschnitt](../../v8/reporting/gs-cubes.md).
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 

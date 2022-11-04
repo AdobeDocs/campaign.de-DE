@@ -3,9 +3,9 @@ product: campaign
 title: Abfrage
 description: Erfahren Sie mehr über die Workflow-Aktivität "Abfrage".
 feature: Workflows, Targeting Activity, Query Editor
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1628'
 ht-degree: 100%
 
 ---
@@ -176,12 +176,6 @@ Im folgenden Abschnitt finden Sie Best Practices zur Optimierung der in Adobe Ca
    Ein häufiger Fehler ist `iBlacklist='3'`, wobei `iBlacklist` ein numerisches Feld und `3` ein Textwert ist.
 
    Informieren Sie sich über den Ausführungsplan Ihrer Anfrage. Vermeiden Sie vollständige Tabellen-Scans, insbesondere bei Echtzeitabfragen oder Abfragen nahezu in Echtzeit, die jede Minute ausgeführt werden.
-
-   Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
-
-   !
-
-   ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=de)
 
 ### Funktionen {#functions}
 

@@ -3,16 +3,14 @@ product: campaign
 title: SQL Data Management
 description: Erfahren Sie mehr über die Workflow-Aktivität "SQL-Daten-Management".
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 100%
+source-wordcount: '393'
+ht-degree: 97%
 
 ---
 
 # SQL-Daten-Management{#sql-data-management}
-
-
 
 Die Aktivität **SQL-Daten-Management** ermöglicht Ihnen das Schreiben eigener SQL-Scripts zum Erstellen und Auffüllen von Arbeitstabellen.
 
@@ -20,16 +18,9 @@ Die Aktivität **SQL-Daten-Management** ermöglicht Ihnen das Schreiben eigener 
 
 Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben sein:
 
-* Die Aktivität ist nur für Remote-Datenquellen verfügbar. Das ** .
-
-   Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
-
-   !
-
-   ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
-
+* Die Aktivität ist nur für Remote-Datenquellen verfügbar.
 * Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein.
-* Die Person, die den Workflow ausführt, muss über ** verfügen.
+
 
 ## SQL-Daten-Management-Aktivität konfigurieren {#configuring-the-sql-data-management-activity}
 
