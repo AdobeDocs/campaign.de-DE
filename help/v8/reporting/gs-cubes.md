@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Cubes erstellen
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: cc7195e90c38489f8e3946d6abd190effd41941a
+source-git-commit: bd39a18178edec2730707f0323a19c9d1c80cd76
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 80%
+source-wordcount: '545'
+ht-degree: 75%
 
 ---
 
@@ -18,6 +18,13 @@ Adobe Campaign verfügt über ein intuitives Tool zur Datenexploration, um dynam
 Verwenden Sie Marketing-Analytics-Funktionen, um Daten zu analysieren und zu messen, Statistiken zu berechnen, die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Sie können Berichte erstellen, Zielgruppen-Populationen erstellen und in Listen speichern, die in Adobe Campaign für Targeting- oder Segmentierungsaufgaben verwendet werden können.
 
 Dies ermöglicht es, die Kapazitäten zur Datenexploration und -analyse optimal zu nutzen. Gleichzeitig wird die Konfiguration der Berichte und Tabellen für den Endbenutzer vereinfacht: Es muss nur ein existierender, vollständig konfigurierter Cube bei der Bericht- oder Tabellenerstellung ausgewählt werden, um dessen Berechnungen, Kennzahlen und Statistiken zu übernehmen.
+
+Cubes werden für die Generierung bestimmter integrierter Berichte verwendet, darunter [Versandberichte](delivery-reports.md) (Versand-Tracking, Klicks, Öffnungen usw.).
+
+>[!CAUTION]
+>
+>In [[!DNL Snowflake] FDA-Bereitstellung (Standard)](../architecture/fda-deployment.md)können auf Cubes basierende Berichte nur für Datenvolumen unter 5 Millionen Zeilen verwendet werden.
+
 
 Nach ihrer Erstellung und Konfiguration werden die Cubes in den Abfrage-Aktivitäten der Berichte und Webanwendungen genutzt. Sie können außerdem in Pivot-Tabellen verwendet und verändert werden.
 
