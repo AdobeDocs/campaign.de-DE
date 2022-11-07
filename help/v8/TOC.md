@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
 title: Dokumente zu Campaign v8
-source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
+source-git-commit: 43e515339a2483e82910603daf6009cad63eeeae
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 94%
+source-wordcount: '474'
+ht-degree: 93%
 
 ---
 
@@ -37,6 +37,7 @@ ht-degree: 94%
    + [Dokumentation zur Kampagnenorchestrierung](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
    + Senden von Nachrichten {#send}
       + [Erste Schritte mit Nachrichten](start/create-message.md)
+      + [Mit Versandvorlagen arbeiten](send/create-templates.md)
       + E-Mails {#emails}
          + [Entwerfen und Validieren von E-Mails](send/email.md)
          + [Versenden und Überwachen von E-Mails](send/send.md)

@@ -3,16 +3,15 @@ product: campaign
 title: Senden eines Berichts an eine Liste
 description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine Liste senden.
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: e211c0f01a4813ad29f47652fffac2b44bc0f867
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 100%
+source-wordcount: '728'
+ht-degree: 34%
 
 ---
 
-# Senden eines Berichts an eine Liste{#sending-a-report-to-a-list}
 
-
+# Senden eines Berichts an eine Liste{#send-a-report-to-a-list}
 
 Im folgenden Anwendungsbeispiel soll jeden Monat der Standardbericht zu den **[!UICONTROL Trackingindikatioren]** erzeugt und als PDF an eine Empfängerliste gesendet werden.
 
@@ -20,67 +19,72 @@ Im folgenden Anwendungsbeispiel soll jeden Monat der Standardbericht zu den **[!
 
 Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
-* Erstellen einer Liste von Empfängern, die den Versand erhalten werden (siehe [1. Schritt: Erstellung der Empfängerliste](#step-1--creating-the-recipient-list)).
-* Erstellung einer Versandvorlage, die bei jeder Workflow-Ausführung einen neuen Versand erzeugt (siehe [2. Schritt: Erstellung der Versandvorlage](#step-2--creating-the-delivery-template)).
-* Erstellung eines Workflows, der den Bericht im PDF-Format erzeugt und an die Empfängerliste sendet (siehe [3. Schritt: Erstellung des Workflows](#step-3--creating-the-workflow)).
+* Erstellen Sie eine Empfängerliste für diesen Bericht. [Weitere Informationen](#step-1--create-the-recipient-list).
+* Erstellen Sie eine Versandvorlage, die bei jeder Workflow-Ausführung einen neuen Versand erstellt. [Weitere Informationen](#step-2--create-the-delivery-template).
+* Erstellen Sie einen Workflow, der den Bericht im PDF-Format erzeugt und an die Empfängerliste sendet. [Weitere Informationen](#step-3--create-the-workflow).
 
-## 1. Schritt: Erstellung der Empfängerliste {#step-1--creating-the-recipient-list}
+## Schritt 1: Empfängerliste erstellen {#step-1--create-the-recipient-list}
 
-Wechseln Sie zum Tab **[!UICONTROL Profile und Zielgruppen]**, klicken Sie auf den Link **[!UICONTROL Listen]** und dann auf die Schaltfläche **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neue Liste]** aus und erstellen Sie eine neue Empfängerliste, an die der Bericht gesendet werden soll.
+Gehen Sie wie folgt vor, um eine Empfängerliste zu erstellen:
 
-![](assets/use_case_report_1.png)
+1. Navigieren Sie zum **[!UICONTROL Profile und Zielgruppen]** klicken Sie auf die **[!UICONTROL Listen]** Link.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
+1. Wählen Sie **[!UICONTROL Neue Liste]** aus und erstellen Sie eine neue Empfängerliste, an die der Bericht gesendet werden soll.
 
-Weiterführende Informationen zum Erstellen von Listen finden Sie hier:
+Weitere Informationen zum Erstellen von Listen finden Sie unter [diesem Abschnitt](../../v8/audiences/create-audiences.md).
 
-## 2. Schritt: Erstellung der Versandvorlage {#step-2--creating-the-delivery-template}
+## Schritt 2: Versandvorlage erstellen {#step-2--create-the-delivery-template}
 
-1. Gehen Sie im Adobe Campaign-Explorer zum Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** und duplizieren Sie die vordefinierte Vorlage **[!UICONTROL E-Mail-Versand]**.
+Gehen Sie wie folgt vor, um die Versandvorlage zu erstellen:
 
-   ![](assets/use_case_report_2.png)
+1. Navigieren Sie zum **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** Knoten des Adobe Campaign-Explorer erstellen und die **[!UICONTROL E-Mail-Versand]** integrierte Vorlage.
 
-   Weiterführende Informationen zur Erstellung von Versandvorlagen finden Sie hier:
+   Weiterführende Informationen zur Erstellung von Versandvorlagen finden Sie im Abschnitt [diesem Abschnitt](../../v8/send/create-templates.md).
 
-1. Konfigurieren Sie die Vorlage, indem Sie Titel, Zielgruppe (d. h. die zuvor erstellte Empfängerliste), Betreff und Inhalt angeben.
+1. Geben Sie die Vorlagenparameter ein: Titel, Zielgruppe (die Liste der zuvor erstellten Empfänger), Betreff und Inhalt.
 
-   ![](assets/use_case_report_3.png)
+   Bei jeder Ausführung des Workflows wird die **[!UICONTROL Trackingindikatoren]** Der Bericht wird wie unter [Schritt 3: Workflow erstellen](#step-3--creating-the-workflow)).
 
-1. Bei jeder Ausführung des Workflows wird der Bericht zu **[!UICONTROL Trackingindikatoren]** aktualisiert (siehe [3. Schritt: Erstellung des Workflows](#step-3--creating-the-workflow)). Um die neueste Version des Berichts in den Versand einzubeziehen, müssen Sie einen **[!UICONTROL berechneten Anhang]** hinzufügen:
+1. Um die neueste Version des Berichts in den Versand einzubeziehen, müssen Sie einen **[!UICONTROL berechneten Anhang]** hinzufügen:
 
-   Weiterführende Informationen zur Erstellung eines berechneten Anhangs finden Sie hier:
-
-   * Klicken Sie auf den Link **[!UICONTROL Anhänge]**, dann auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Option **[!UICONTROL Berechneter Anhang...]** aus.
+   * Klicken Sie auf **[!UICONTROL Anhänge]** und klicken Sie auf den Pfeil neben dem **[!UICONTROL Hinzufügen]** Schaltfläche. Auswählen **[!UICONTROL Berechneter Anhang...]**.
 
       ![](assets/use_case_report_4.png)
 
-   * Wählen Sie im Feld **[!UICONTROL Typ]** die Option **[!UICONTROL Dateiname wird bei der Absendung für jede Nachricht berechnet (kann vom Empfänger abhängen)]** aus.
+   * Im **[!UICONTROL Typ]** Dropdownliste die neueste Option auswählen: **[!UICONTROL Dateiname wird bei der Zustellung jeder Nachricht berechnet (kann dann vom Empfängerprofil abhängen)]**.
 
       ![](assets/use_case_report_5.png)
 
       Der im Feld **[!UICONTROL Titel]** angegebene Wert erscheint nicht im tatsächlichen Versand.
 
-   * Geben Sie im Eingabefeld den Pfad und den genauen Namen der Datei ein.
+   * Geben Sie in der Textzone den Pfad und den Namen der Datei ein.
 
       ![](assets/use_case_report_6.png)
 
       >[!CAUTION]
       >
-      >Die Datei muss sich auf dem Server befinden. Pfad und Name müssen mit den Werten übereinstimmen, die in der **[!UICONTROL JavaScript-Code]**-Aktivität des Workflows eingegeben wurden (siehe [3. Schritt: Erstellung des Workflows](#step-3--creating-the-workflow)).
+      >Pfad und Name müssen mit den im **[!UICONTROL JavaScript-Code]** Typaktivität des Workflows, wie hier beschrieben: [Schritt 3: Workflow erstellen](#step-3--creating-the-workflow).
 
-   * Gehen Sie in den **[!UICONTROL Erweitert]**-Tab und aktivieren Sie die Option **[!UICONTROL Script erstellen zur Berechnung des Dateinamens, der beim Empfänger angezeigt wird]**. Geben Sie im Eingabefeld den Namen für den Anhang im endgültigen Versand ein.
+   * Wählen Sie die **[!UICONTROL Erweitert]** Registerkarte und aktivieren **[!UICONTROL Script des Dateinamens, der in den gesendeten E-Mails angezeigt wird]**. Geben Sie in der Textzone den Namen des Anhangs im endgültigen Versand ein.
 
       ![](assets/use_case_report_6bis.png)
 
-## 3. Schritt: Erstellung des Workflows {#step-3--creating-the-workflow}
+## Schritt 3: Workflow erstellen {#step-3--creating-the-workflow}
 
-Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
-
-* **[!UICONTROL Planung]**, um die Workflow-Ausführung jeden Monat zu wiederholen,
-* **[!UICONTROL JavaScript-Code]**, um den Bericht im PDF-Format zu erzeugen,
-* **[!UICONTROL Versand]**, basierend auf der zuvor erstellten Vorlage.
+Erstellen Sie für diesen Anwendungsfall den folgenden Workflow.
 
 ![](assets/use_case_report_8.png)
 
-1. Gehen Sie in den Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** und erstellen Sie einen neuen Workflow.
+Es werden drei Aktivitäten verwendet:
+
+* A **[!UICONTROL Planung]** -Aktivität, die den Workflow einmal monatlich ausführt,
+* A **[!UICONTROL JavaScript-Code]** -Aktivität, die den Bericht im PDF-Format generiert,
+* A **[!UICONTROL Versand]** -Aktivität, die auf die zuvor erstellte Versandvorlage verweist.
+
+Gehen Sie wie folgt vor, um diesen Workflow zu erstellen:
+
+1. Navigieren Sie zum **[!UICONTROL Administration > Betreibung > Technische Workflows]** Knoten von Campaign verwenden und erstellen Sie einen neuen Ordner, in dem Sie Ihre Workflows speichern können.
+1. Erstellen Sie einen neuen Workflow.
 
    ![](assets/use_case_report_7.png)
 
@@ -96,9 +100,9 @@ Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
 
    Geben Sie folgenden Code ein:
 
-   ```
-   var reportName = "deliveryFeedback";
-   var path = "/tmp/deliveryFeedback.pdf";
+   ```sql
+   var reportName = "indicators";
+   var path = "/tmp/indicators.pdf";
    var exportFormat = "PDF";
    var reportURL = "<PUT THE URL OF THE REPORT HERE>";
    var _ctx = <ctx _context="global" _reportContext="deliveryFeedback" />
@@ -107,22 +111,26 @@ Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
    xtk.report.export(reportName, _ctx, exportFormat, path, isAdhoc);
    ```
 
-   Hierbei werden folgende Variablen verwendet:
+
+   mit den folgenden Variablen:
 
    * **var reportName**: der interne Name des Berichts in Anführungsstrichen. Im vorliegenden Beispiel lautet der interne Name des **Trackingindikatoren**-Berichts &quot;deliveryFeedback&quot;.
-   * **var path**: Speicherpfad der Datei (&quot;tmp/files/&quot;), Name des Anhangs (&quot;deliveryFeedback&quot;) und Dateiendung (&quot;.pdf&quot;). Im vorliegenden Beispiel ist der Name des Anhangs mit dem internen Namen des Berichts identisch. Die Werte müssen in Anführungszeichen gesetzt und durch das Zeichen &quot;+&quot; verbunden werden.
+   * **var path**: Geben Sie den Speicherpfad der Datei (&quot;tmp&quot;), den Namen, den Sie der Datei geben möchten (&quot;deliveryFeedback&quot;), und die Dateierweiterung (&quot;.pdf&quot;) ein. In diesem Fall haben wir den internen Namen als Dateinamen verwendet. Die Werte müssen zwischen doppelten Anführungszeichen und durch das Zeichen &quot;+&quot;getrennt sein.
 
       >[!CAUTION]
       >
-      >Die Datei muss auf dem Server gespeichert werden. Sie müssen für den berechneten Anhang denselben Pfad und denselben Namen wie auf dem Tab **[!UICONTROL Allgemein]** des Bearbeitungsfensters eingeben (siehe [2. Schritt: Erstellung der Versandvorlage](#step-2--creating-the-delivery-template)).
+      >Die Datei muss auf dem Server gespeichert werden. Sie müssen denselben Pfad und denselben Namen wie im **[!UICONTROL Allgemein]** Registerkarte des Bearbeitungsfensters für den berechneten Anhang, wie detailliert [here](#step-2--create-the-delivery-template)).
 
    * **var exportFormat**: Format des Anhangs (&quot;PDF&quot;).
    * **var _ctx** (Kontext): Im vorliegenden Beispiel wird der Bericht **[!UICONTROL Trackingindikatoren]** im allgemeinen Kontext verwendet.
 
-1. Fügen Sie abschließend einen **[!UICONTROL Versand]** an und wählen Sie folgende Optionen:
+1. Fertigstellen durch Hinzufügen einer **[!UICONTROL Versand]** -Aktivität mit den folgenden Optionen:
+
+   ![](assets/use_case_report_11.png)
 
    * Im Bereich **[!UICONTROL Versand]**: Aktivieren Sie die Option **[!UICONTROL Neu, basierend auf einer Vorlage erstellt]** und wählen Sie die zuvor erstellte Vorlage aus.
    * In den Bereichen **[!UICONTROL Empfänger]** und **[!UICONTROL Inhalt]**: Aktivieren Sie **[!UICONTROL Werden bzw. Wird im Versand angegeben]**.
-   * Im Bereich **[!UICONTROL Auszuführende Aktion]**: Aktivieren Sie **[!UICONTROL Vorbereiten und starten]**.
-   * Deaktivieren Sie die Optionen **[!UICONTROL Ausgehende Transition erzeugen]** und **[!UICONTROL Fehler verarbeiten]**.
-   ![](assets/use_case_report_11.png)
+   * **[!UICONTROL Auszuführende Aktion]**: select **[!UICONTROL Vorbereiten und Starten]**.
+   * Deaktivieren Sie die **[!UICONTROL Ausgehende Transition erzeugen]** und **[!UICONTROL Fehler verarbeiten]** Optionen.
+
+1. Speichern Sie Ihre Änderungen und starten Sie den Workflow. Die Nachricht wird jeden ersten Monat im Monat zusammen mit dem beigefügten Bericht an die Empfängerliste gesendet.
