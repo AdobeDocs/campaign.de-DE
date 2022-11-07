@@ -5,14 +5,14 @@ description: Erfahren Sie, wie Sie in Campaign Versandvorlagen erstellen und ver
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 822d1bee472330b6195ad9527a7e23e90c7650b4
+source-git-commit: 1c0015a02ff950d9bf9d33aacebf899db9e580fa
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 41%
+source-wordcount: '731'
+ht-degree: 42%
 
 ---
 
-# Mit Versandvorlagen arbeiten{#creating-a-delivery-template}
+# Mit Versandvorlagen arbeiten{#work-with-delivery-template}
 
 Verwenden Sie Versandvorlagen, um das kreative Erscheinungsbild zu standardisieren, damit Kampagnen schneller ausgeführt und gestartet werden können.
 
@@ -27,9 +27,12 @@ Eine Vorlage kann systematisch Folgendes enthalten:
 
 ![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#delivery-template-video).
 
+
+## Erstellen einer Vorlage{#create-a-delivery-template}
+
 Um eine Versandvorlage zu erstellen, können Sie eine integrierte Vorlage duplizieren, einen existierenden Versand in eine Vorlage konvertieren oder eine neue Versandvorlage erstellen.
 
-## Vorhandene Vorlage kopieren{#copy-an-existing-template}
+### Angebotsvorlagen duplizieren{#copy-an-existing-template}
 
 Campaign verfügt über eine Reihe integrierter Vorlagen für jeden Kanal: E-Mail, Push, SMS, Briefpost und mehr.
 
@@ -51,7 +54,7 @@ Die Vorlage wird der Liste der Versandvorlagen hinzugefügt. Sie können sie jet
 
 ![](assets/select-the-new-template.png)
 
-## Vorhandenen Versand in eine Vorlage konvertieren {#convert-an-existing-delivery}
+### Vorhandenen Versand in eine Vorlage konvertieren {#convert-an-existing-delivery}
 
 Ein Versand kann für neue wiederholte Versandaktionen in eine Vorlage umgewandelt werden.
 
@@ -67,7 +70,7 @@ Gehen Sie wie folgt vor, um einen Versand in eine Vorlage zu konvertieren:
 
    ![](assets/template-select-folders.png)
 
-## Neue Vorlage erstellen {#create-a-new-template}
+### Neue Vorlage erstellen {#create-a-new-template}
 
 >[!NOTE]
 >
@@ -87,7 +90,9 @@ Gehen Sie wie folgt vor, um eine neue Versandvorlage zu konfigurieren:
 1. Klicken Sie auf **Speicher**. Ihre Vorlage kann jetzt in einem Versand verwendet werden.
 
 
-## Erstellen eines Versands aus einer Vorlage{#create-a-delivery-from-a-template}
+## Vorlagen verwenden{#use-a-delivery-template}
+
+### Erstellen eines Versands aus einer Vorlage{#create-a-delivery-from-a-template}
 
 Um einen Versand auf Basis einer existierenden Vorlage zu erstellen, wählen Sie diese aus der Liste der Versandvorlagen aus.
 
