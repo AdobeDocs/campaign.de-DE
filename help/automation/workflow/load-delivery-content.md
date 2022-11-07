@@ -4,16 +4,14 @@ title: Laden des Versandinhalts
 description: Laden des Versandinhalts
 feature: Workflows
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 9dfb1acd97e529a8b60119154b3728c883dd9c97
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '332'
 ht-degree: 100%
 
 ---
 
 # Laden des Versandinhalts{#loading-delivery-content}
-
-
 
 Wenn Ihr Versandinhalt in einer auf einem Amazon-S3-, FTP- oder SFTP-Server gespeicherten HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe-Campaign-Sendungen laden.
 
@@ -52,6 +50,3 @@ Gehen Sie dazu wie folgt vor:
 
 1. Speichern Sie den Workflow und führen Sie ihn aus. Unter **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** wird ein neuer Versand mit dem geladenen Inhalt erstellt.
 
->[!NOTE]
->
->Best Practices und Fehlerbehebungen bei der Verwendung von SFTP-Servern finden Sie hier:
