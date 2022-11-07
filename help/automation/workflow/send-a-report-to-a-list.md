@@ -3,7 +3,7 @@ product: campaign
 title: Senden eines Berichts an eine Liste
 description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine Liste senden.
 feature: Workflows
-source-git-commit: e211c0f01a4813ad29f47652fffac2b44bc0f867
+source-git-commit: 4c3caa8e31c2076d32a03a8778a28edce50cde63
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 34%
@@ -67,7 +67,7 @@ Gehen Sie wie folgt vor, um die Versandvorlage zu erstellen:
 
    * Wählen Sie die **[!UICONTROL Erweitert]** Registerkarte und aktivieren **[!UICONTROL Script des Dateinamens, der in den gesendeten E-Mails angezeigt wird]**. Geben Sie in der Textzone den Namen des Anhangs im endgültigen Versand ein.
 
-      ![](assets/use_case_report_6bis.png)
+      ![](assets/use_case_report_6b.png)
 
 ## Schritt 3: Workflow erstellen {#step-3--creating-the-workflow}
 
