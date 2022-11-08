@@ -2,7 +2,7 @@
 audience: user
 user-guide-title: Handbuch zur Kampagnenautomatisierung
 user-guide-description: Handbuch zur Kampagnenautomatisierung
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 100%
@@ -145,10 +145,10 @@ ht-degree: 100%
    + [Dienstleister, Lager und Budgets](campaigns/providers--stocks-and-budgets.md)
 + Kampagnenoptimierung (Add-on){#campaign-optimization}
    + [Erste Schritte mit Kampagnentypologien](campaign-opt/campaign-typologies.md)
+   + [Filterregeln](campaign-opt/filtering-rules.md)
+   + [Kontrollregeln](campaign-opt/control-rules.md)
    + [Druckregeln](campaign-opt/pressure-rules.md)
    + [Kohärenzregeln](campaign-opt/consistency-rules.md)
-   + [Kontrollregeln](campaign-opt/control-rules.md)
-   + [Filterregeln](campaign-opt/filtering-rules.md)
    + [Regeln anwenden](campaign-opt/apply-rules.md)
    + [Kampagnensimulation](campaign-opt/campaign-simulations.md)
 + Verteiltes Marketing (Add-on) {#distributed-marketing}
