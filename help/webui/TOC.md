@@ -4,7 +4,7 @@ user-guide-title: Handbuch zur Campaign-Web-Benutzeroberfläche
 user-guide-description: Handbuch zur Campaign-Web-Benutzeroberfläche
 hide: true
 source-git-commit: aa2e678e25a1fde922313bb4860d70a2d4c6aa6d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '18'
 ht-degree: 100%
 

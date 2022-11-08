@@ -3,7 +3,7 @@ product: campaign
 title: Technote – Adobe Campaign – Apache-Sicherheits-Update
 description: Adobe Campaign – Sicherheits-Update der Apache-Version
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
 

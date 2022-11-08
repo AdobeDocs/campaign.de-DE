@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit Campaign und Journey Optimizer arbeiten k
 role: Admin, User
 level: Beginner, Intermediate
 source-git-commit: feba381b9874be3ebfbcf2a27ccd29a71385ed9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 100%
 
