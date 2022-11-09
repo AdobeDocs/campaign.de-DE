@@ -5,10 +5,10 @@ feature: Architecture, FFDA
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 51bba0a2b4be03577f508d352fc7c2b514ba28e5
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 100%
+source-wordcount: '1045'
+ht-degree: 98%
 
 ---
 
@@ -112,6 +112,16 @@ Beachten Sie, dass diese Kennung zeichenfolgenbasiert und nicht sequenziell ist.
 In Campaign Classic v7 und früheren Versionen wird die Eindeutigkeit eines Schlüssels innerhalb eines Schemas (d. h. einer Tabelle) auf der Ebene der Datenbank-Engine gewährleistet. Im Allgemeinen verfügen klassische Datenbank-Engines wie PostgreSQL, Oracle oder SQL Server über einen nativen Mechanismus, der verhindert, dass duplizierte Zeilen basierend auf einer Spalte oder einem Satz von Spalten über Primärschlüssel und/oder eindeutige Indizes eingefügt werden. Wenn der richtige Index und die richtigen Primärschlüssel auf Datenbankebene festgelegt wurden, sind duplizierte Kennungen bei diesen Versionen nicht möglich.
 
 Adobe Campaign v8 wird mit Snowflake als Hauptdatenbank bereitgestellt. Um eine deutlich erhöhte Anzahl der Abfragen zu vermeiden, bietet die verteilte Architektur der Snowflake-Datenbank keine solchen Mechanismen zur Verwaltung und Durchsetzung eindeutiger Schlüssel innerhalb einer Tabelle. Dementsprechend wird bei Adobe Campaign v8 die Aufnahme duplizierter Schlüssel in einer Tabelle nicht verhindert. Endbenutzer sind nun selbst dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen. [Weitere Informationen](keys.md)
+
+### Funktionsverfügbarkeit {#feature-availability}
+
+Einige Funktionen sind nicht im Kontext einer Enterprise (FFDA)-Bereitstellung von Campaign verfügbar, z. B.:
+
+* Verwaltung von Marketing-Ressourcen
+* Coupons
+* Webtracking
+* Umfragen
+
 
 **Verwandte Themen**
 

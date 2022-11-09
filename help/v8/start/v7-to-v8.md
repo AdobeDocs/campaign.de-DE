@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+source-git-commit: c267bf2db7dfd524bf2b56c9ae48b42da37c0376
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 96%
+source-wordcount: '648'
+ht-degree: 93%
 
 ---
 
@@ -70,13 +70,12 @@ Mit Adobe Campaign v8 werden Cube-Berichte optimiert und bieten bessere Skalieru
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
-Bitte beachten Sie, dass in dieser Version von Campaign einige Funktionen nicht verfügbar sind, z. B.:
+Beachten Sie, dass einige Funktionen im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) von Campaign, z. B.:
 
 * Verwaltung von Marketing-Ressourcen
 * Coupons
 * Webtracking
 * Umfragen
-
 
 ## Nicht unterstützte Funktionen{#gs-removed}
 
