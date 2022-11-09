@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Handbuch zur Kampagnenautomatisierung
 user-guide-description: Handbuch zur Kampagnenautomatisierung
-source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
+source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 100%
+source-wordcount: '447'
+ht-degree: 98%
 
 ---
 
@@ -151,8 +151,14 @@ ht-degree: 100%
    + [Kohärenzregeln](campaign-opt/consistency-rules.md)
    + [Regeln anwenden](campaign-opt/apply-rules.md)
    + [Kampagnensimulation](campaign-opt/campaign-simulations.md)
++ Verwaltung von Marketing-Ressourcen {#mrm}
+   + [Erste Schritte mit der Verwaltung von Marketing-Ressourcen (MRM)](mrm/about-marketing-resource-management.md)
+   + [Aufgaben erstellen und verwalten](mrm/creating-and-managing-tasks.md)
+   + [Kosten kontrollieren](mrm/controlling-costs.md)
+   + [Marketing-Ressourcen verwalten](mrm/managing-marketing-resources.md)
+   + [Diskussionsforen](mrm/discussion-forums.md)
 + Verteiltes Marketing (Add-on) {#distributed-marketing}
-   + [Über dezentrales Marketing](distributed-marketing/about-distributed-marketing.md)
+   + [Erste Schritte mit verteiltem Marketing](distributed-marketing/about-distributed-marketing.md)
    + [Lokale Kampagnen erstellen](distributed-marketing/creating-a-local-campaign.md)
    + [Partizipative Kampagnen erstellen](distributed-marketing/creating-a-collaborative-campaign.md)
    + [Kampagnenkit veröffentlichen](distributed-marketing/publishing-the-campaign-package.md)

@@ -4,7 +4,7 @@ title: Erste Schritte mit verteiltem Marketing
 description: Erste Schritte mit verteiltem Marketing
 feature: Distributed Marketing
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 100%
@@ -12,8 +12,6 @@ ht-degree: 100%
 ---
 
 # Erste Schritte mit dezentralem Marketing{#about-distributed-marketing}
-
-
 
 Die Option **Distributed Marketing** von Adobe Campaign ermöglicht es, partizipative Kampagnen zwischen Zentralstellen (z. B. dem Unternehmenssitz, der Marketing-Abteilung etc.) und Lokalstellen (z. B. Verkaufsstellen, regionalen Zweigstellen etc.) einzurichten. Die Zusammenarbeit basiert auf einem kollaborativen Arbeitsbereich, der **[!UICONTROL Kampagnenkit-Liste]**, an dem Kampagnenmodelle und -instanzen, die von Zentralstellen erstellt wurden, Lokalstellen zur Verfügung gestellt werden.
 

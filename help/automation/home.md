@@ -5,10 +5,10 @@ title: Startseite zur Automatisierung von Adobe Campaign
 feature: Overview
 description: Überblick
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 612b3a4287a5ab880b7fd251cc2727586977fbde
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 100%
+source-wordcount: '191'
+ht-degree: 97%
 
 ---
 
@@ -74,6 +74,11 @@ In den nachstehenden Handbüchern erfahren Sie, wie Sie die Verwendung von Adobe
     <br>
     <div>
     <a href="campaign-opt/campaign-typologies.md">Kampagnenoptimierung</a>
+    </div>
+    <br>
+    <br>
+    <div>
+    <a href="mrm/about-marketing-resource-management.md">Marketing Resource Management (MRM)</a>
     </div>
     <br>
   </td>
