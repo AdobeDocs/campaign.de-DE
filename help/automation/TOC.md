@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Handbuch zur Kampagnenautomatisierung
 user-guide-description: Handbuch zur Kampagnenautomatisierung
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -151,8 +151,8 @@ ht-degree: 98%
    + [Kohärenzregeln](campaign-opt/consistency-rules.md)
    + [Regeln anwenden](campaign-opt/apply-rules.md)
    + [Kampagnensimulation](campaign-opt/campaign-simulations.md)
-+ Verwaltung von Marketing-Ressourcen {#mrm}
-   + [Erste Schritte mit der Verwaltung von Marketing-Ressourcen (MRM)](mrm/about-marketing-resource-management.md)
++ Marketing Resource Management (Add-on){#mrm}
+   + [Erste Schritte mit der Verwaltung von Marketing-Ressourcen](mrm/about-marketing-resource-management.md)
    + [Aufgaben erstellen und verwalten](mrm/creating-and-managing-tasks.md)
    + [Kosten kontrollieren](mrm/controlling-costs.md)
    + [Marketing-Ressourcen verwalten](mrm/managing-marketing-resources.md)

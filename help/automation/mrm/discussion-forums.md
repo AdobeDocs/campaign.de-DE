@@ -2,105 +2,77 @@
 product: campaign
 title: Diskussionsforen
 description: Erfahren Sie, wie Sie Campaign-Diskussionsforen verwenden.
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+exl-id: c2336507-beea-4ddb-aa8c-1ec591eb5683
+source-git-commit: 72fc29c49fca5767133be4a9927b57b3cfb51a14
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 100%
+source-wordcount: '584'
+ht-degree: 32%
 
 ---
 
 # Diskussionsforen{#discussion-forums}
 
-Adobe-Campaign-Benutzer haben die Möglichkeit, über Diskussionsforen Informationen auszutauschen. Die folgenden Elemente bieten ihr eigenes Forum: Pläne, Programme, Kampagnen, Ressourcen, Simulationen und Lager. Jeder Benutzer verfügt zudem über ein persönliches Forum. Alle Diskussionen sind öffentlich, auch die der Benutzer-Foren.
+Adobe Campaign-Benutzer können Diskussionsforen verwenden, um Informationen auszutauschen. Die folgenden Elemente verfügen jeweils über ein eigenes Forum: Pläne, Programme, Kampagnen, Marketing-Ressourcen, Simulationen, Lager. Jeder Benutzer hat auch ein persönliches Forum. Alle Diskussionen sind öffentlich, auch in persönlichen Foren.
 
 Benutzer können Foren abonnieren, um per E-Mail über jede gepostete Nachricht informiert zu werden.
 
 ## Zugriff auf ein Forum {#accessing-a-forum}
 
-Um auf das Forum einer Kampagne, eines Benutzers usw. zuzugreifen, klicken Sie auf die Schaltfläche **[!UICONTROL Forum]** rechts oben im jeweiligen Dashboard. Nach dem Titel der Schaltfläche wird in Klammern die Gesamtzahl aller Nachrichten des Forums angegeben.
+Um auf ein Forum zuzugreifen, navigieren Sie zu einem Dashboard und klicken Sie auf die Schaltfläche **[!UICONTROL Forum]** links oben rechts.
 
-![](assets/mrm_forum_access_link.png)
+![](assets/mrm-forum-icon.png)
 
-## Forum verwenden {#using-a-forum}
+Nachrichten und ihre Antworten werden von neu nach alt angezeigt.
 
-Nachrichten und ihre Antworten werden chronologisch geordnet (von neu nach alt).
+Um einen neuen Thread zu starten, klicken Sie auf die Schaltfläche **[!UICONTROL Diskussion hinzufügen]** in der oberen rechten Ecke. Die **[!UICONTROL Diskussionsforum]** wird angezeigt (siehe unten).
 
-Um den Inhalt einer Nachricht anzuzeigen, klicken Sie auf ihren Titel.
+![](assets/mrm-forum-new-thread.png)
 
-![](assets/mrm_forum_expand_msg.png)
 
-**Neue Diskussionen beginnen**
+Geben Sie den gewünschten Text im Feld **[!UICONTROL Nachricht]** und gegebenenfalls einen Diskussionstitel im Feld **[!UICONTROL Thema]** ein.
 
-Um eine neue Diskussion zu beginnen, klicken Sie auf die Schaltfläche **[!UICONTROL Diskussion hinzufügen]** rechts oben. Daraufhin erscheint das Fenster **[!UICONTROL Diskussionsforum]** (siehe weiter unten).
+Benutzer, die bereits eine Nachricht in diesem Forum veröffentlicht haben, werden standardmäßig benachrichtigt. Sie können einen zusätzlichen Benutzer auswählen, der benachrichtigt werden soll. Um mehrere Benutzer zu benachrichtigen, wählen Sie eine Benutzergruppe aus.
 
-![](assets/mrm_forum_new_thread.png)
+Sie können der Nachricht mithilfe der  **[!UICONTROL Durchsuchen...]** Schaltfläche. Der Anhang wird auch in die Benachrichtigungs-E-Mail aufgenommen. Anhänge dürfen nur einzeln gesendet werden: Um mehrere Dateien zu senden, müssen Sie sie in einer ZIP-Datei komprimieren.
 
-**Nachrichten in einer existierenden Diskussion posten**
-
-Um eine Nachricht in einer existierenden Diskussion zu posten, öffnen Sie die Nachricht, auf die Sie antworten möchten, und klicken Sie auf den Link **[!UICONTROL Antworten]** links oberhalb der Nachricht. Das Fenster **[!UICONTROL Diskussionsforum]** erscheint (siehe unten).
-
-![](assets/mrm_forum_answer_msg.png)
-
-Wenn Sie auf eine Nachricht antworten, wird der Autor der Nachricht per E-Mail benachrichtigt.
-
-**Eine Nachricht schreiben**
-
-Gehen Sie ins Fenster **[!UICONTROL Diskussionsforum]**:
-
-1. Geben Sie den gewünschten Text im Feld **[!UICONTROL Nachricht]** und gegebenenfalls einen Diskussionstitel im Feld **[!UICONTROL Thema]** ein.
-
-   ![](assets/mrm_forum_edit_msg.png)
-
-1. Bei Bedarf:
-
-   * Wenn Sie möchten, dass eine nicht abonnierte Person an der Diskussion teilnimmt, nutzen Sie das Feld **[!UICONTROL Zu benachrichtigender Benutzer]**. Der eingetragene Benutzer erhält eine Benachrichtigungs-E-Mail speziell für diese Nachricht, er wird nicht automatisch zum Abonnent. Um mehrere Benutzer zu benachrichtigen, wählen Sie eine Benutzergruppe aus.
-   * Über das Feld **[!UICONTROL Durchsuchen]** können Sie der Nachricht ein Dokument anhängen. Das angehängte Dokument wird auch der Benachrichtigungs-E-Mail hinzugefügt. Jeder Nachricht kann nur eine Datei angehängt werden. Verwenden Sie eine komprimierte Datei, um mehrere Dokumente zu senden.
-
-1. Klicken Sie auf **[!UICONTROL Nachricht erstellen]**, um eine Nachricht im Forum zu posten.
-
->[!NOTE]
+>[!CAUTION]
 >
 >Wenn die Nachricht gepostet wurde, kann sie nicht mehr geändert oder gelöscht werden.
 
 ## Posts im persönlichen Benutzerforum eines Benutzers {#posting-to-the-personal-forum-of-an-operator}
 
-Sie haben die Möglichkeit, eine Nachricht im persönlichen Forum eines Benutzers zu posten, wenn sich diese zum Beispiel nicht auf eine bestimmte Kampagne bezieht, Sie jedoch den Diskussionsverlauf in Adobe Campaign verfolgen möchten. Die persönlichen Benutzerforen sind öffentlich, alle Benutzer können die darin enthaltenen Nachrichten lesen. Der jeweilige Benutzer wird per E-Mail über jede in seinem Forum gepostete Nachricht informiert.
+Sie können eine Nachricht im Forum eines Benutzers posten. Persönliche Foren sind öffentlich und alle Benutzer können Ihre Nachricht sehen. Der Benutzer erhält bei jedem Posten in seinem persönlichen Forum eine E-Mail-Benachrichtigung.
 
-Es gibt folgende Möglichkeiten, auf ein Benutzerforum zuzugreifen:
+Um auf das Benutzerforum zuzugreifen, haben Sie folgende Möglichkeiten:
 
-* Wählen Sie, wenn Sie über die entsprechenden Berechtigungen verfügen, im Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** das Dashboard des gewünschten Benutzers aus und klicken Sie auf die Schaltfläche **[!UICONTROL Forum]** oben rechts.
-* Wenn nicht, suchen Sie den Namen des Benutzers in Adobe Campaign (über eine von diesem Benutzer im Forum gepostete Nachricht, eine ihm zugewiesene Aufgabe) und klicken Sie darauf, um auf sein Dashboard zuzugreifen. Sie können Ihren Administrator auch bitten, eine Ansicht des Benutzerordners zu erstellen.
+* Navigieren Sie zum **[!UICONTROL Administration > Zugriffe > Benutzer]** Ordner des Campaign-Explorers, den Benutzer auswählen, um sein Dashboard zu öffnen, und auf die Schaltfläche **[!UICONTROL Forum]** links oben rechts.
+* Suchen Sie den Namen des Benutzers in der Benutzeroberfläche von Adobe Campaign (über eine von diesem Benutzer im Forum veröffentlichte Nachricht, der eine Aufgabe zugewiesen wird) und klicken Sie darauf, um auf das Benutzer-Dashboard zuzugreifen.
 
 ## Forum abonnieren {#subscribing-to-a-forum}
 
-Sie können ein Forum abonnieren, um den enthaltenen Diskussionen zu folgen und über jede im Forum gepostete Nachricht per E-Mail informiert zu werden. Die E-Mail enthält sowohl die Nachricht als auch mögliche Anhänge. Sie können direkt auf die Nachricht antworten, indem Sie in den E-Mail-Body klicken und sich anschließend über den Adobe-Campaign-Webzugriff anmelden. Wenn Sie ein Forum abonnieren, ist dies für alle Benutzer sichtbar.
+Wenn Sie ein Forum abonnieren, können Sie alle Diskussionen verfolgen. Nach der Anmeldung erhalten Sie bei jedem Versand einer Nachricht im Forum eine E-Mail-Benachrichtigung.
+
+Um eine Nachricht zu beantworten, klicken Sie in den E-Mail-Textkörper und melden Sie sich dann bei der Adobe Campaign-Web-Oberfläche an.
 
 * Um ein Forum zu abonnieren, klicken Sie auf die Schaltfläche **[!UICONTROL Forum abonnieren]** rechts oberhalb der Diskussionsliste.
-
-   ![](assets/mrm_forum_subscribe.png)
 
    Daraufhin erscheint ein blaues Band, in dem ihr Abonnement bestätigt wird.
 
 * Wenn Sie sich von einem Forum abmelden möchten, klicken Sie auf die Schaltfläche **[!UICONTROL Abmelden]** in dem blauen Band.
 
-   ![](assets/mrm_forum_unsubscribe.png)
-
 * In Ihrem persönlichen Dashboard werden die von Ihnen abonnierten Foren aufgelistet. Klicken Sie auf den Link **[!UICONTROL Forum-Abonnements]**, um die Liste anzuzeigen, und anschließend auf das Forum, auf das Sie zugreifen möchten.
 
-   ![](assets/platform_dashboard_operator_subscr_forums.png)
+   ![](assets/forum-subscribed.png)
 
-* Um die Abonnenten eines Forums anzuzeigen, klicken Sie auf **[!UICONTROL Abonnentenliste für dieses Forum]** oberhalb der Nachrichtenliste.
 
-   ![](assets/mrm_forum_subscribers.png)
+## Fehlerbehebung beim Benachrichtigungsversand {#checking-notification-delivery}
 
-## Versand einer Benachrichtigung überprüfen {#checking-notification-delivery}
-
-Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, empfehlen wir folgende Vorgehensweise:
+Wenn Benutzer, die ein Forum abonniert haben, keine Benachrichtigungen wie erwartet erhalten:
 
 * Stellen Sie sicher, dass die Benutzer eine E-Mail-Adresse in ihrem Profil angebeben haben.
-* Gehen Sie zum Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows > Kampagnenprozesse]** und stellen Sie sicher, dass der Workflow **[!UICONTROL Vorgänge in Diskussionsforen]** gestartet und nicht fehlgeschlagen ist.
-* Überprüfen Sie die Versandlogs, die wie folgt zugänglich sind:
+* Navigieren Sie zum **[!UICONTROL Administration > Betreibung > Technische Workflows > Kampagnenprozesse]** Ordner des Campaign-Explorers und überprüfen Sie die **[!UICONTROL Bearbeitungsvorgänge]** Der Workflow wird ohne Fehler gestartet.
+* Überprüfen Sie die Versandlogs:
 
-   * Gehen Sie von der Adobe-Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionforen]**.
-   * Gehen Sie im Explorer zum Knoten **[!UICONTROL Administration > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
+   * Navigieren Sie auf der Adobe Campaign-Startseite zu **[!UICONTROL Kampagnen > Navigation > Sendungen]**, und öffnen Sie dann die **[!UICONTROL Benachrichtigung zu Diskussionsforen]** -Versand.
+   * Navigieren Sie im Campaign-Explorer zu **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** Klicken Sie auf **[!UICONTROL Benachrichtigungen zu Diskussionsforen]**.
    Im Fenster **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]** befinden sich die Versandlogs im Tab **[!UICONTROL Bearbeiten > Versand]**. Überprüfen Sie ebenfalls die Tabs **[!UICONTROL Verfolgung > Protokoll]** und **[!UICONTROL Ausschlussgründe]**.
