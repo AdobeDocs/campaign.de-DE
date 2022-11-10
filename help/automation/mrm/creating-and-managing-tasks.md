@@ -2,10 +2,11 @@
 product: campaign
 title: Verwaltung von Aufgaben
 description: Verwaltung von Aufgaben
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
+source-git-commit: 399c81276d29622a2161c8c90395df1a38954763
 workflow-type: tm+mt
-source-wordcount: '3872'
-ht-degree: 99%
+source-wordcount: '3910'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +22,7 @@ Alle Aufgaben sind in einer Liste gruppiert, auf die über den Tab **Kampagnen**
 
 Sie können auch im Kalender des Programms, dem sie angehören, angezeigt werden.
 
-![](assets/d_ncs_user_tasks_in_planning.png)
+![](assets/campaign-calendar.png)
 
 ## Zugriff auf Aufgaben {#accessing-tasks}
 
@@ -29,113 +30,123 @@ Sie können auch im Kalender des Programms, dem sie angehören, angezeigt werden
 
 Eine Liste der Aufgaben kann über den Tab **[!UICONTROL Kampagnen]** angezeigt werden.
 
-![](assets/s_ncs_user_task_edit_view.png)
+![](assets/campaign-task-dashboard.png)
 
-Hier werden alle Aufgaben des aktuellen Benutzers aufgeführt.
+Sie können alle Aufgaben des aktuellen Benutzers anzeigen.
 
 Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschritt einer Aufgabe ](#progress-status-of-a-task).
 
 ### Aufgaben filtern {#filtering-tasks}
 
-Die Aufgabenübersicht zeigt automatisch **[!UICONTROL nur die Aufgaben des Benutzers]** an. Diese Liste kann mithilfe der Felder im oberen Abschnitt des Fensters weiter gefiltert werden.
-
-![](assets/s_ncs_user_task_filter_from_view.png)
+Wenn Sie diese Ansicht anzeigen, wird sie automatisch gefiltert, um nur die **aktuelle Operatoraufgaben**. Sie können die Aufgaben auch mithilfe der Felder im oberen Bereich des Fensters filtern.
 
 ### Aufgaben bearbeiten {#editing-tasks}
 
 Klicken Sie auf eine Aufgabe, um sie zu bearbeiten.
 
-![](assets/s_ncs_user_task_edit_from_view.png)
+![](assets/edit-a-task.png)
 
 ## Neue Aufgabe erstellen {#creating-a-new-task}
 
-Um eine Aufgabe zu erstellen, klicken Sie auf den Link **[!UICONTROL Aufgaben]** im Tab **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Erstellen]** aus.
+Gehen Sie wie folgt vor, um eine Aufgabe zu erstellen:
 
-![](assets/s_ncs_user_task_create_new.png)
+1. Navigieren Sie zum **[!UICONTROL Aufgaben]** im **[!UICONTROL Kampagnen]** Registerkarte und klicken Sie auf **[!UICONTROL Erstellen]**.
 
-Der Name der Aufgabe, die Kampagne, der sie zugeordnet ist, sowie ihr Start- und Enddatum müssen angeben werden.
+   ![](assets/create-a-task-from-dashboard.png)
 
-Klicken Sie anschließend auf **[!UICONTROL Speichern]**, um die Aufgabe zu erstellen.
+1. Geben Sie den Namen der Aufgabe ein und wählen Sie die Kampagne aus, mit der sie verknüpft ist.
+1. Legen Sie das Start- und Enddatum fest.
+1. Klicken Sie anschließend auf **[!UICONTROL Speichern]**, um die Aufgabe zu erstellen.
 
-![](assets/s_ncs_user_task_create_simple.png)
+   ![](assets/new-task-edit.png)
 
 Aufgaben können zudem über das Dashboard einer Kampagne erstellt werden: In diesem Fall werden sie automatisch der Kampagne zugeordnet, über die sie erstellt wurden.
 
-![](assets/s_ncs_user_task_create_new_from_op.png)
+![](assets/add-a-task-in-a-campaign.png)
 
-Nach der Erstellung wird die Aufgabe dem Kampagnenkalender und der Aufgabenliste hinzugefügt. Um sie zu bearbeiten, wählen Sie die Aufgabe im Kalender oder in der Aufgabenübersicht aus und klicken Sie auf den Link **[!UICONTROL Öffnen]**.
+Nachdem eine Aufgabe erstellt wurde, wird sie zum Kampagnenkalender, zum Kampagnen-Dashboard und zur Aufgabenliste hinzugefügt. Um eine Aufgabe zu bearbeiten, klicken Sie in der Aufgabenliste auf ihren Namen oder wählen Sie sie im Zeitplan- oder Kampagnen-Dashboard aus und klicken Sie auf **[!UICONTROL Öffnen]**.
 
-![](assets/s_ncs_user_task_edit_simple.png)
+Nach der Erstellung können Sie die Aufgabe konfigurieren, indem Sie Folgendes definieren:
 
-Geben Sie folgende Parameter an, um sie zu konfigurieren:
+* Manager und Teilnehmer. [Weitere Informationen](#manager-and-participants)
+* Der Erstellungsplan. [Weitere Informationen](#execution-schedule)
+* Mittelbindungen. [Weitere Informationen](#expenses-and-revenues)
 
-* Verantwortlicher und Teilnehmer: siehe [Verantwortlicher und Teilnehmer ](#manager-and-participants).
-* Erstellungsplan: Siehe [Ausführungsplan](#execution-schedule).
-* Mittelbindungen: Siehe [Ausgaben und Einnahmen](#expenses-and-revenues).
+Sie können auch [validierungsverantwortliche Benutzer](#reviewers) und [Referenzdokumente](#documents-referenced).
 
-Zudem ist es auch möglich, sie um Validierungsverantwortliche (siehe [Validierung](#reviewers)) und referenzierte Dokumente (siehe [Referenzierte Dokumente](#documents-referenced)) zu ergänzen.
-
-Der Lebenszyklus einer Aufgabe wird im Abschnitt [Lebenszyklus](#life-cycle) beschrieben.
+Der Lebenszyklus einer Aufgabe wird im Abschnitt [diesem Abschnitt](#life-cycle).
 
 ### Verantwortlicher und Teilnehmer {#manager-and-participants}
 
-Der für eine Aufgabe verantwortliche Benutzer ist als Einziger dazu berechtigt, die Aufgabe zu beenden.
+Die Aufgabe wird standardmäßig dem Benutzer zugewiesen, der sie erstellt hat. Dieser Benutzer wird benachrichtigt, wenn für diese Aufgabe eine Aktion erforderlich ist.
 
-Wenn ein Adobe-Campaign-Benutzer eine Aufgabe erstellt, wird ihm diese automatisch zugewiesen. Im Feld **[!UICONTROL Zugeordneter Benutzer]** kann jedoch auch ein anderer Verantwortlicher ausgewählt werden.
+Sie können einen anderen Operator aus dem **[!UICONTROL Zugeordnet zu]** Dropdown-Liste.
 
-![](assets/s_ncs_user_task_edit_simple_general_tab.png)
+![](assets/task-assigned-to.png)
 
 >[!NOTE]
 >
 >Die Benutzerverwaltung wird im Abschnitt [diesem Abschnitt](../../v8/start/permissions.md).
+>
+>Nur der für eine Aufgabe verantwortliche Benutzer darf diese schließen.
 
-Neben dem Verantwortlichen können auch andere an der Ausführung der Aufgabe beteiligte Benutzer angegeben werden. Diese können nur den ihnen zugewiesenen Teil der Aufgabe validieren; sie sind nicht dazu berechtigt, sie abzuschließen.
+Sie können mehr Benutzer angeben, die an der Ausführung der Aufgabe beteiligt sind. Diese Benutzer dürfen die Aufgabe nicht schließen: sie dürfen nur die ihnen zugewiesene Aufgabe validieren.
 
-Sie werden über das Symbol **[!UICONTROL Ressourcen]** in der Menüleiste der Aufgabe angegeben. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die jeweiligen Benutzer aus.
+Gehen Sie wie folgt vor, um Aufgabenoperatoren hinzuzufügen:
 
-![](assets/s_ncs_user_task_add_resources.png)
+1. Klicken Sie auf **[!UICONTROL Ressourcen]** in der Symbolleiste der Aufgabe.
 
-Klicken Sie auf **[!UICONTROL Ok]** und geben Sie die Auslastung an: Diese entspricht dem Arbeitsaufwand des jeweiligen Benutzers während der Aufgabenerfüllung. Die Angabe erfolgt in Prozent und hat lediglich informativen Charakter.
+   ![](assets/add-task-resources.png)
 
-Beispiel: Für eine Aufgabe wird eine Erfüllungsplanung von 10 Tagen festgelegt und einem Benutzer eine Auslastung von 50 % zugewiesen. Der Benutzer wird demnach für eine Dauer von 10 Tagen während der Hälfte seiner Arbeitszeit für die Aufgabenerfüllung eingesetzt.
+1. Klicken **[!UICONTROL Hinzufügen]** und wählen Sie die betroffenen Benutzer aus.
+1. Geben Sie die Nutzungsrate ein: Dies entspricht dem Arbeitsaufwand, der dem Benutzer für die Dauer der Aufgabenausführung zugewiesen wurde. Dieser Satz ist nur ein Hinweis und wird in Prozent ausgedrückt.
 
-Zudem ist es möglich, für jeden Benutzer einen geplanten sowie einen realisierten Arbeitsaufwand festzulegen. Diese Angaben dienen ebenfalls nur informativen Zwecken.
+   ![](assets/define-operator-task-workload.png)
 
-Sie können eine Erinnerung festlegen, die den an der Erfüllung der Aufgabe beteiligten Benutzern vor dem Enddatum der Aufgabe automatisch zugeschickt wird.
+   Beispiel: Für eine Aufgabe wird eine Erfüllungsplanung von 10 Tagen festgelegt und einem Benutzer eine Auslastung von 50 % zugewiesen. Der Benutzer wird demnach für eine Dauer von 10 Tagen während der Hälfte seiner Arbeitszeit für die Aufgabenerfüllung eingesetzt.
 
-Das Profil des zugeordneten Adobe-Campaign-Benutzers kann über das Symbol **[!UICONTROL Verknüpftes Element öffnen]** angesehen werden.
+   Zudem ist es möglich, für jeden Benutzer einen geplanten sowie einen realisierten Arbeitsaufwand festzulegen. Diese Angaben dienen ebenfalls nur informativen Zwecken.
 
-![](assets/s_ncs_user_task_edit_resource_profile.png)
+1. Sie können eine Erinnerung aus dem **[!UICONTROL Erinnerung hinzufügen...]** Link. Alle an der Aufgabe beteiligten Benutzer werden vor ihrem Enddatum per E-Mail benachrichtigt.
+
+   ![](assets/task-op-add-a-reminder.png)
+
+1. Sie können auch eine Benachrichtigung senden, bevor die Aufgabe gestartet wird. Um dies einzurichten, wählen Sie das Datum im **[!UICONTROL Erstbenachrichtigung]** -Feld.
+1. Wenn das Enddatum erreicht ist und die Aufgabe nicht geschlossen wird, kann eine Benachrichtigung an den Bevollmächtigten oder die Gruppe von Bevollmächtigten gesendet werden, die in der Variablen **[!UICONTROL Bevollmächtigter]** Dropdown-Liste.
+
 
 Über das Benutzer-Dashboard kann dessen Arbeitslast, d.h. seine anderen Aufgaben, eingesehen werden.
 
-![](assets/s_ncs_user_task_edit_resource_planning.png)
+![](assets/operator-dashboard.png)
 
-### Validierung {#reviewers}
+### Aufgabenvalidierung {#reviewers}
 
-Neben den Beteiligten können Benutzer festgelegt werden, die die Aufgabe validieren, nachdem ihre Bearbeitung durch den Verantwortlichen beendet wurde. Klicken Sie hierzu im Fenster der **[!UICONTROL Ressourcen]** in der Mitte links auf die Option **[!UICONTROL Aufgabenvalidierung aktivieren]**. Es können ein individueller Benutzer, eine Benutzergruppe oder eine Benutzerliste ausgewählt werden.
+Neben den Teilnehmern können Sie auch Benutzer definieren, die die Aufgabe nach Abschluss überprüfen.
 
-![](assets/s_ncs_user_task_edit_resource_validation.png)
+Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Aufgabenvalidierung aktivieren]** im unteren Bereich der **[!UICONTROL Ressourcen]** Fenster. Dabei kann es sich um einen einzelnen Benutzer, eine Benutzergruppe oder eine Benutzerliste handeln.
 
 Um eine Benutzerliste zu erstellen, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]** rechts von dem Feld, in dem der erste Validierungsverantwortliche angegeben wird. Fügen Sie nun so viele zusätzliche Benutzer wie nötig hinzu, wie im folgenden Beispiel:
 
-![](assets/s_ncs_user_task_edit_resource_operators.png)
+![](assets/enable-task-approval.png)
 
-Im unteren Teil dieses Fensters wird die Validierungsplanung festgelegt. Standardmäßig müssen die validierenden Benutzer die Aufgabe innerhalb von drei Tagen nach ihrem Unterbreitungsdatum validieren. Hierfür kann in der Validierungsplanung eine Erinnerung konfiguriert werden, die den betroffenen Benutzern automatisch vor dem Ablauf der Validierungsfrist zugeschickt wird.
+Im unteren Bereich des Konfigurationsfensters können Sie einen Validierungsplan für die Aufgabe definieren. Standardmäßig haben die Validierer drei Tage ab dem Sendedatum Zeit, um die Aufgabe zu genehmigen. Sie können auch eine Erinnerung hinzufügen, die den betroffenen Benutzern automatisch vor Ablauf der Validierungsfrist zugeschickt wird.
 
-![](assets/s_ncs_user_edit_op_valid_calendar.png)
-
-Der Aufgabenverantwortliche kann die Validierung selbst vornehmen und zwar auch, wenn andere Benutzer hierfür bestimmt wurden. Wenn kein Benutzer für die Validierung bestimmt wurde, werden die Benachrichtigungen an den Verantwortlichen der Aufgabe gesendet. Alle anderen Adobe-Campaign-Benutzer mit **[!UICONTROL Administrator]**-Berechtigungen können die Aufgabe ebenfalls validieren, erhalten jedoch keine Benachrichtigungen.
+Der Aufgabenverantwortliche kann die Validierung selbst vornehmen, selbst wenn andere Benutzer hierfür bereits zugewiesen wurden. Wenn kein validierungsverantwortlicher Benutzer definiert wurde, werden die Benachrichtigungen an den Aufgabenverantwortlichen gesendet. Alle anderen Adobe Campaign-Operatoren mit **[!UICONTROL Administrator]** -Berechtigungen können auch die Aufgabe validieren. Sie erhalten jedoch keine Benachrichtigungen.
 
 ### Referenzierte Dokumente {#documents-referenced}
 
-Sie können [Dokumente und Marketing-Ressourcen](managing-marketing-resources.md) einer Aufgabe. Öffnen Sie dazu die Aufgabe und klicken Sie in der Symbolleiste der Aufgabe auf das Symbol **[!UICONTROL Dokumente]**.
+Sie können [Dokumente und Marketing-Ressourcen](managing-marketing-resources.md) einer Aufgabe.
 
-Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie das Dokument aus, das Sie Ihrer Aufgabe hinzufügen möchten. Gehen Sie für die Marketing-Ressourcen genauso vor.
+Um dies durchzuführen:
 
-![](assets/s_ncs_user_task_edit_documents.png)
+1. Öffnen Sie die Aufgabe und klicken Sie auf die **[!UICONTROL Dokumente]** in der Symbolleiste der Aufgabe.
 
-Die referenzierten Dokumente erscheinen in den an die verschiedenen beteiligten Benutzer gesendeten Benachrichtigungen sowie im Dashboard der Aufgabe.
+   ![](assets/add-documents-to-a-task.png)
+
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie das Dokument aus, das Sie Ihrer Aufgabe hinzufügen möchten. Gehen Sie für die Marketing-Ressourcen genauso vor.
+
+
+Referenzierte Dokumente werden den Benachrichtigungen hinzugefügt, die an die an der Aufgabe beteiligten Benutzer gesendet werden. Sie werden auch zum Aufgaben-Dashboard hinzugefügt.
 
 ![](assets/s_ncs_user_task_notification_documents.png)
 
