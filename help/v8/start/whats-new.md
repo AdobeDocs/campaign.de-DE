@@ -51,7 +51,7 @@ Die wichtigsten Funktionen ermöglichen Folgendes:
 
 * **Verbindungen zu Adobe Experience Platform**. Adobe Campaign v8 unterstützt Data Connectors mit Real-Time CDP und Adobe Experience Platform, sodass Unternehmen das einheitliche Echtzeit-Kundenprofil nutzen können.
 
-   Darüber hinaus ist Adobe Campaign v8 nativ in die Echtzeit-Journey-Orchestration-Funktionen integriert, sodass Marketer dieselben Vorlagen und Versandfunktionen in Adobe Campaign wiederverwenden können, um mit Kunden in Echtzeit zu interagieren. Diese Investitionen werden das Kundenerlebnis mit Adobe Campaign optimieren und neue Anwendungsfälle erschließen, wie z. B. die Möglichkeit, individualisierte Customer Journeys in Echtzeit zu Kampagnen hinzuzufügen.
+   Darüber hinaus ist Adobe Campaign v8 nativ in die Journey Orchestration-Echtzeitfunktionen integriert, sodass Marketer dieselben Vorlagen und Versandfunktionen in Adobe Campaign wiederverwenden können, um mit Kunden in Echtzeit zu interagieren. Diese Investitionen werden das Kundenerlebnis mit Adobe Campaign optimieren und neue Anwendungsfälle erschließen, wie z. B. die Möglichkeit, individualisierte Customer Journeys in Echtzeit zu Kampagnen hinzuzufügen.
 
    Mit Journey-KI können Sie auch eine prädiktive Sendezeitoptimierung und ein prädiktives Interaktivitäts-Scoring konfigurieren und Öffnungsraten, Klicks und Umsätze steigern.
 

@@ -2,13 +2,13 @@
 title: Integrierte Versandberichte in Adobe Campaign
 description: Integrierte Versandberichte in Adobe Campaign
 feature: Reporting
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 85%
 
 ---
-
 
 # Versandberichte {#delivery-reports}
 
@@ -203,5 +203,3 @@ Sie haben die Möglichkeit, verschiedene Sendungen in zusammenfassenden Berichte
 Drücken Sie die Strg-Taste, um nicht direkt aufeinanderfolgende Sendungen zu markieren.
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Anzeigen von Unterebenen]** -Symbol, auf das Sie in der Symbolleiste zugreifen können. Sie werden dann in derselben Liste angezeigt.
-
-

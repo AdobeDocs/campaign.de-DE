@@ -7,7 +7,7 @@ title: Dokumente zu Campaign v8
 source-git-commit: 43e515339a2483e82910603daf6009cad63eeeae
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 93%
    + [Dokumentation zur Kampagnenorchestrierung](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
    + Senden von Nachrichten {#send}
       + [Erste Schritte mit Nachrichten](start/create-message.md)
-      + [Mit Versandvorlagen arbeiten](send/create-templates.md)
+      + [Arbeiten mit Versandvorlagen](send/create-templates.md)
       + E-Mails {#emails}
          + [Entwerfen und Validieren von E-Mails](send/email.md)
          + [Versenden und Überwachen von E-Mails](send/send.md)
@@ -94,16 +94,16 @@ ht-degree: 93%
    + [Verfolgen und Überwachen](start/tracking.md)
    + Arbeiten mit Berichten{#reports}
       + [Erste Schritte mit Berichten](reporting/gs-reporting.md)
-      + Cubes zu erstellen{#cubes}
+      + Erstellen von Cubes{#cubes}
          + [Erste Schritte mit Cubes](reporting/gs-cubes.md)
-         + [Cube erstellen](reporting/cube-indicators.md)
-         + [Cubes zum Erstellen von Berichten verwenden](reporting/cube-tables.md)
-         + [Cubes anpassen](reporting/customize-cubes.md)
-      + Native Berichte{#ac-reports}
-         + [Liste der nativen Berichte](reporting/built-in-reports.md)
+         + [Erstellen von Cubes](reporting/cube-indicators.md)
+         + [Erstellen von Berichten mit Cubes](reporting/cube-tables.md)
+         + [Anpassen von Cubes](reporting/customize-cubes.md)
+      + Integrierte Berichte{#ac-reports}
+         + [Liste integrierter Berichte](reporting/built-in-reports.md)
          + [Allgemeine Berichte](reporting/global-reports.md)
          + [Versandberichte](reporting/delivery-reports.md)
-         + [Integrierte Metrikberechnung](reporting/metrics-calculation.md)
+         + [Berechnung integrierter Metriken](reporting/metrics-calculation.md)
       + [Benutzerdefinierte Berichte](reporting/custom-reports.md)
 + Daten-Management {#data}
    + [Erste Schritte mit Workflows](config/workflows.md)

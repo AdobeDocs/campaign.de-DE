@@ -6,7 +6,8 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
+exl-id: c4d30771-db5e-40be-8af6-50f0fab9f9af
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
@@ -35,7 +36,7 @@ Diese Integration unterstützt zwei Arten von Adobe Experience Cloud-Kennungen:
    >
    > Eine Declared ID-Datenquelle kann jetzt auch mit der Integration des People Core Service verwendet werden.
    >
-   >Wenn Sie die People Core Service-Integration verwenden und die Audience Manager-Integration hinzufügen möchten, benötigen Sie die Hilfe eines Adobe Audience Manager-Beraters, um zu vermeiden, dass alle ID-Synchronisationen verloren gehen, die beim Wechsel zu dieser Declared ID-Datenquelle in einem Adobe Audience Manager-Kontext erfasst wurden.
+   >Wenn Sie die People Core Service-Integration verwenden und die Audience Manager-Integration hinzufügen möchten, benötigen Sie die Hilfe eines Beraters für Adobe Audience Manager, um zu vermeiden, dass alle ID-Synchronisationen verloren gehen, die beim Wechsel zu dieser Declared ID-Datenquelle in einem Adobe Audience Manager-Kontext erfasst wurden.
 
 Siehe:
 

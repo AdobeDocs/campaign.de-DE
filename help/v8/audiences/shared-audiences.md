@@ -9,7 +9,7 @@ hidefromtoc: true
 source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,14 @@ Sie können **Adobe Campaign** mit **People Core Service** oder Adobe Audience M
 
 Diese Integration unterstützt zwei Arten von Adobe Experience Cloud-Kennungen:
 
-* **Besucher-ID**: Diese Kennung ermöglicht die Abstimmung von Adobe Experience Cloud-Besuchern mit Adobe Campaign-Empfängern.
-* **Declared ID**: Diese Kennung synchronisiert alle Datentypen mit Elementen aus der Adobe Campaign-Datenbank. Es handelt sich um den vordefinierten Abstimmschlüssel in Adobe Campaign.
+* **Besucher-ID**: Diese Kennung ermöglicht die Abstimmung der Adobe Experience Cloud-Besuchenden mit den Adobe Campaign-Empfangenden.
+* **Declared ID**: Diese Kennung gleicht alle Arten von Daten mit Elementen aus der Adobe Campaign-Datenbank ab. Es handelt sich um den vordefinierten Abstimmschlüssel in Adobe Campaign.
 
    >[!NOTE]
    >
-   > Die deklarierte ID-Datenquelle kann auch mit der Integration von People Core Service verwendet werden.
+   > Eine Declared ID-Datenquelle kann auch mit der People Core Service-Integration verwendet werden.
    >
-   >Wenn Sie die People Core Service-Integration verwenden und die Audience Manager-Integration hinzufügen möchten, benötigen Sie die Hilfe eines Adobe Audience Manager-Beraters, um zu vermeiden, dass alle ID-Synchronisationen verloren gehen, die beim Wechsel zu dieser Declared ID-Datenquelle in einem Adobe Audience Manager-Kontext erfasst wurden.
+   >Wenn Sie die People Core Service-Integration verwenden und die Audience Manager-Integration hinzufügen möchten, benötigen Sie die Hilfe eines Beraters für Adobe Audience Manager, um zu vermeiden, dass alle ID-Synchronisationen verloren gehen, die beim Wechsel zu dieser Declared ID-Datenquelle in einem Adobe Audience Manager-Kontext erfasst wurden.
 
 Siehe:
 
