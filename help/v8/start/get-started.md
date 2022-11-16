@@ -1,14 +1,14 @@
 ---
 title: Erste Schritte mit Campaign v8
-description: Sind Sie neuer Benutzer von Campaign? Erste Schritte
+description: Sind Sie neuer Benutzer von Adobe Campaign? Hier finden Sie Dokumentationen dazu, wie Sie Ihre Software in Betrieb nehmen und wo Sie mit der Benutzeroberfläche beginnen können.
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
+source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 100%
+source-wordcount: '867'
+ht-degree: 97%
 
 ---
 

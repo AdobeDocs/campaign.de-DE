@@ -1,14 +1,14 @@
 ---
 title: Häufig gestellte Fragen zu Campaign v8
-description: Entdecken Sie häufige Fragen und Antworten zu Campaign
+description: Erhalten Sie Antworten auf häufig gestellte Fragen zu Adobe Campaign.
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 100%
+source-wordcount: '659'
+ht-degree: 91%
 
 ---
 
@@ -36,7 +36,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
 1. **Wie kann ich den E-Mail-Versand optimieren?**
 
-   Die Zustellbarkeit von E-Mails, ein wichtiger Faktor für den Erfolg jedes Marketing-Programms, unterliegt ständig wechselnden Kriterien und Regeln. Die effektive Navigation in dieser digitalen Welt erfordert eine regelmäßige Abstimmung Ihrer E-Mail-Strategie unter Berücksichtigung der wichtigsten Trends mit Blick auf die Zustellbarkeit, um Ihre Audiences optimal zu erreichen.
+   Die Zustellbarkeit von E-Mails, eine wichtige Komponente für den Erfolg des Marketingprogramms jedes Absenders, ist durch ständig wechselnde Kriterien und Regeln gekennzeichnet. Die effektive Navigation in dieser digitalen Welt erfordert eine regelmäßige Abstimmung Ihrer E-Mail-Strategie unter Berücksichtigung der wichtigsten Trends mit Blick auf die Zustellbarkeit, um Ihre Audiences optimal zu erreichen.
 
    ![](../assets/do-not-localize/book.png) Lesen Sie dieses Handbuch, um mehr über [Best Practices für den Versand](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de){target=&quot;_blank&quot;} zu erfahren.
 
@@ -85,4 +85,4 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;} her.
 
-   Das System erfordert für jeden Benutzer ein individuelles Konto mit den entsprechenden Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht mit Ihrer Adobe ID anmelden können, fordern Sie über Experience League Zugriff an. Das Team der Kundenunterstützung wird den Zugriff so schnell wie möglich einrichten. [Weitere Informationen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
+   Das System erfordert für jeden Benutzer ein individuelles Konto mit den entsprechenden Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht bei Ihrer Adobe ID anmelden können, fordern Sie über die Experience League Zugriff an. Das Kundenunterstützungsteam wird Sie so bald wie möglich einrichten. [Weitere Informationen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}

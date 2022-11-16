@@ -1,20 +1,20 @@
 ---
 title: Neue Funktionen in Campaign v8
-description: Wichtige Funktionen in Campaign v8 kennenlernen
+description: Entdecken Sie die wichtigsten Funktionen in Adobe Campaign v8, die neuen Funktionen und die neuesten Versionen.
 feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 0d9acc431efddc500701996996f846132eeafcdb
+source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 100%
+source-wordcount: '889'
+ht-degree: 93%
 
 ---
 
 # Neue Funktionen in Adobe Campaign v8  {#ac-gs-what-is-new}
 
-Adobe Campaign v8 wurde für Marketer entwickelt, die eine branchenführende Cloud-Lösung für das kanalübergreifende Kampagnen-Management für das gesamte Unternehmen benötigen. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Adobe Campaign v8 ist außerdem mit einem skalierbaren Echtzeit-Messaging-Server verbunden, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einer umfassenden Payload von jedem IT-System für Dinge wie Passwortrücksetzung, Bestellbestätigung, E-Quittung und vieles mehr zu senden.
+Adobe Campaign v8 wurde für Marketer entwickelt, die eine branchenführende Cloud-Lösung für das kanalübergreifende Kampagnen-Management für das gesamte Unternehmen benötigen. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Er ist außerdem mit einem skalierbaren Echtzeit-Messaging-Server verbunden, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einer allumfassenden Payload von jedem IT-System für Dinge wie Kennwortzurücksetzung, Bestellbestätigung, E-Receiver und vieles mehr zu senden.
 
 Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Zustellbarkeit und Monitoring.
 

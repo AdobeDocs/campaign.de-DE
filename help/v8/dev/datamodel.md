@@ -1,14 +1,14 @@
 ---
 title: Erste Schritte mit dem Campaign-Datenmodell
-description: Erste Schritte mit dem Campaign-Datenmodell
+description: Beginnen Sie mit dem Campaign-Datenmodell und nutzen Sie Daten aus Ihren Quellen, um Ihre Kommunikations- und Marketingergebnisse zu nutzen.
 feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 100%
+source-wordcount: '669'
+ht-degree: 91%
 
 ---
 
@@ -40,8 +40,8 @@ Wenn Sie mit Adobe Campaign beginnen, müssen Sie das Standarddatenmodell evalui
 
 Sie können die standardmäßige Empfängertabelle mit den vordefinierten Feldern verwenden, wie in [diesem Abschnitt](#ootb-profiles) beschrieben. Bei Bedarf können Sie sie mit zwei Verfahren erweitern:
 
-* [Erweitern einer vorhandenen Tabelle](extend-schema.md) mit neuen Feldern. Sie können der Empfängertabelle beispielsweise ein neues Feld &quot;Treue&quot; hinzufügen.
-* [Erstellen einer neuen Tabelle](create-schema.md), z. B. einer Tabelle &quot;Einkauf&quot;, in der alle von den einzelnen Profilen der Datenbank getätigten Käufe aufgelistet sind, und Verknüpfen mit der Empfängertabelle.
+* [Erweitern einer vorhandenen Tabelle](extend-schema.md) mit neuen Feldern. Beispielsweise können Sie der Empfängertabelle ein neues Feld &quot;Treueprogramm&quot;hinzufügen.
+* [Neue Tabelle erstellen](create-schema.md), beispielsweise eine &quot;Kauf&quot;-Tabelle, in der alle von jedem Profil der Datenbank getätigten Käufe aufgelistet und mit der Empfängertabelle verknüpft werden.
 
 ![](../assets/do-not-localize/glass.png) Lernen Sie in [diesem Abschnitt](datamodel-best-practices.md) Best Practices zum Arbeiten mit dem Campaign-Datenmodell kennen.
 
