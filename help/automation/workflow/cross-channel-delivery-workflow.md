@@ -5,9 +5,9 @@ description: Weitere Informationen zu Workflows für einen kanalübergreifenden 
 feature: Workflows, Channels Activity
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 5b4d569a6e96c93828f63fb8376eb81301829854
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '713'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
 ![](assets/wkf_cross-channel_7.png)
 
-## Schritt 1: Audience erstellen {#step-1--build-the-audience}
+## Schritt 1: Aufbauen einer Audience {#step-1--build-the-audience}
 
 Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung der Empfänger.
 
@@ -44,7 +44,7 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
 ## Schritt 2: Erstellen einer E-Mail mit einem Angebot {#step-2--create-an-email-including-an-offer}
 
-1. Erstellen Sie in Adobe Campaign einen E-Mail-Versand.
+1. Erstellen Sie einen E-Mail-Versand.
 1. Gestalten Sie die Nachricht und fügen Sie einen Link einschließlich eines Angebots in den Inhalt ein.
 
    ![](assets/wkf_cross-channel_1.png)
@@ -63,7 +63,7 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
    ![](assets/wkf_cross-channel_4.png)
 
-## Schritt 3: Segmentieren der resultierenden Zielgruppe {#step-3--segment-the-resulting-audience}
+## Schritt 3: Segmentieren der resultierenden Audience {#step-3--segment-the-resulting-audience}
 
 Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie die Zielgruppe mithilfe von Filterbedingungen in unterschiedliche Populationen unterteilen.
 
