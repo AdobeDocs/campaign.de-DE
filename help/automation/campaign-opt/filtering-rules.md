@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Filterregeln konfigurieren
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
 source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '551'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Sie können beispielsweise die Abonnenten Ihrer Newsletter filtern, um keine Nac
 
 Gehen Sie wie folgt vor:
 
-1. Navigieren Sie zum **[!UICONTROL Administration > Kampagnenverwaltung > Typologieverwaltung > Typologieregeln]** Ordner des Campaign-Exporteurs und klicken Sie auf die Schaltfläche **Neu** -Symbol, um eine Typologieregel zu erstellen.
-1. Erstellen Sie eine **[!UICONTROL Filter]** Typologieregel, die für alle Kanäle gilt.
+1. Navigieren Sie zum Ordner **[!UICONTROL Administration > Kampagnenverwaltung > Typologieverwaltung > Typologieregeln]** des Campaign-Explorers und klicken Sie auf das Symbol **Neu**, um eine Typologieregel zu erstellen.
+1. Erstellen Sie eine Typologieregel **[!UICONTROL Filterung]**, die für alle Kanäle gilt.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Aus dem **Filter** ändern Sie die standardmäßige Zielgruppendimension in **Abonnements** (**nms:subscription**).
+1. Ändern Sie auf der Registerkarte **Filter** die Standard-Zieldimension auf **Abonnements** (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -40,19 +40,19 @@ Gehen Sie wie folgt vor:
 
    ![](assets/campaign_opt_create_filter_03b.png)
 
-1. Aus dem **Typologien** diese Regel mit einer Kampagnentypologie verknüpfen und speichern.
+1. Verknüpfen Sie auf der Registerkarte **Typologien** diese Regel mit einer Kampagnentypologie und speichern Sie sie.
 
    ![](assets/campaign_opt_create_filter_04.png)
 
-Wenn diese Regel in einem Versand verwendet wird, werden minderjährige Abonnenten automatisch ausgeschlossen. Eine spezifische Meldung gibt an, wann die Regel angewendet wird:
+Wenn diese Regel in einem Versand verwendet wird, werden minderjährige Abonnenten automatisch ausgeschlossen. Eine spezifische Nachricht gibt an, wann die Regel angewendet wird:
 
 ![](assets/campaign_opt_create_filter_05.png)
 
 ## Erstellen von Bedingungen für eine Filterregel {#condition-a-filtering-rule}
 
-Die Anwendungskriterien einer Filterregel können dem Versand oder dem verknüpften Versandentwurf entsprechend eingeschränkt werden.
+Die Anwendungskriterien einer Filterregel können dem verknüpften Versand oder Versandentwurf entsprechend eingeschränkt werden.
 
-Gehen Sie dazu zum **[!UICONTROL Allgemein]** in der Typologieregel den anzuwendenden Einschränkungstyp auswählen und den Filter erstellen.
+Gehen Sie dazu auf die Registerkarte **[!UICONTROL Allgemein]** der Typologieregel, wählen Sie die Art der anzuwendenden Beschränkung und erstellen Sie den Filter.
 <!--
 ![](assets/campaign_opt_create_filter_06.png)
 -->
