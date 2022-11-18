@@ -6,26 +6,26 @@ feature: Workflows
 role: Data Engineer
 level: Beginner
 source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '112'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 # Aggregat-Update{#update-aggregate}
 
-Aggregate, definiert in [Cubes](../../v8/reporting/gs-cubes.md) zu Berichtszwecken mit einer bestimmten Aktivität aktualisiert werden. A **[!UICONTROL Workflow]** bei der Konfiguration des Aggregats verfügbar.
+Die in [Cubes](../../v8/reporting/gs-cubes.md) für Berichtszwecke definierten Aggregate können mit einer bestimmten Aktivität aktualisiert werden. Bei der Konfiguration des Aggregats ist ein **[!UICONTROL Workflow]** verfügbar.
 
 Erfahren Sie mehr über Cubes und Aggregate in [diesem Abschnitt](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates).
 
-Um ein Aggregat zu aktualisieren, bearbeiten Sie die **[!UICONTROL Aggregat-Update]** und wählen Sie den zu aktualisierenden Cube und Aggregat aus.
+Um ein Aggregat zu aktualisieren, bearbeiten Sie die Aktivität **[!UICONTROL Aggregat aktualisieren]** und wählen Sie den zu aktualisierenden Cube und das Aggregat aus.
 
-Sie können eine **Vollständige Aktualisierung** oder **Teilweise aktualisiert**.
+Sie können eine **vollständige Aktualisierung** oder eine **partielle Aktualisierung** durchführen.
 
 ![](assets/update-aggregate-details.png)
 
-Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung ausgeführt. Um eine teilweise Aktualisierung zu aktivieren, wählen Sie die Option aus und definieren Sie die Aktualisierungsbedingungen.
+Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung ausgeführt. Um eine partielle Aktualisierung zu aktivieren, wählen Sie die entsprechende Option aus und definieren Sie die Aktualisierungsbedingungen.
 
 ![](assets/update-aggregate-partial.png)
 
-Es empfiehlt sich, eine **[!UICONTROL Planung]** -Aktivität, um die Aktualisierungshäufigkeit der Berechnungen festzulegen.
+Es empfiehlt sich, eine **[!UICONTROL Planungsaktivität]** hinzuzufügen, um die Aktualisierungshäufigkeit der Berechnungen festzulegen.
