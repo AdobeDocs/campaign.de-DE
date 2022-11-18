@@ -5,15 +5,15 @@ description: Erfahren Sie, wie Sie Kampagnentypologien konfigurieren und impleme
 feature: Typology Rules
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '483'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit Kampagnentypologien{#about-campaign-typologies}
 
-**Campaign Optimization ist das Adobe Campaign-Modul, mit dem Sie die Durchführung von Sendungen steuern, filtern und überwachen können.** Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
+**Campaign Optimization** ist das Adobe Campaign-Modul, mit dem Sie die Durchführung von Sendungen steuern, filtern und überwachen können. Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
 
 ![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#typologies-video).
 
@@ -38,12 +38,12 @@ Für jede Typologie können Sie auf der Registerkarte **[!UICONTROL Regeln]** di
 Nach ihrer Erstellung werden die Regeln in **Kampagnentypologien** gruppiert, die in den Sendungen zur Anwendung kommen. [Weitere Informationen](#apply-typologies).
 
 
-Campaign verfügt über einen Standardsatz **Filter** und **Kontrolle** Regeln:
+Campaign verfügt über einen Satz von Standardregeln für **Filterung** und **Kontrolle**:
 
-* **Filter** -Regeln verwendet werden, um einen Teil der Zielgruppe anhand von Kriterien auszuschließen. [Weitere Informationen](filtering-rules.md).
-* **Kontrolle** -Regeln können Sie die Gültigkeit von Nachrichten vor dem Versand überprüfen. [Weitere Informationen](control-rules.md).
+* **Filterregeln** erlauben es, einen Teil der Zielgruppe anhand von Kriterien auszuschließen. [Weitere Informationen](filtering-rules.md).
+* **Kontrollregeln** erlauben es, die Gültigkeit von Nachrichten zu überprüfen, bevor sie gesendet werden. [Weitere Informationen](control-rules.md).
 
-Das Campaign Optimization-Add-on bietet zwei zusätzliche Typen von **Typologieregeln**:
+Das Add-on zur Kampagnenoptimierung bietet zwei zusätzliche Typen von **Typologieregeln**:
 
 * **Druckregeln** erlauben es, die Marketing-Müdigkeit zu kontrollieren. [Weitere Informationen](pressure-rules.md).
 * **Kapazitätsregeln** erlauben es, die Auslastung zu begrenzen, um optimale Verarbeitungsbedingungen zu gewährleisten. [Weitere Informationen](consistency-rules.md#controlling-capacity).
@@ -51,7 +51,7 @@ Das Campaign Optimization-Add-on bietet zwei zusätzliche Typen von **Typologier
 
 >[!NOTE]
 >
->Wenn Sie die **Interaction** -Modul zur Verwaltung von Angeboten verwenden, können Sie auch **Angebotsunterbreitung** Typologieregeln zur Steuerung des Angebotsvorschlags mithilfe von Unterbreitungsregeln. [Weitere Informationen](../../v8/interaction/interaction-offer.md#offer-presentation).
+>Wenn Sie das Modul **Interaktion** zur Verwaltung von Angeboten verwenden, können Sie auch Typologieregeln für die **Angebotsunterbreitung** erstellen, um den Fluss von Angebotsvorschlägen mithilfe von Unterbreitungsregeln zu kontrollieren. [Weitere Informationen](../../v8/interaction/interaction-offer.md#offer-presentation).
 
 
 ## Wichtige Schritte zum Erstellen und Verwenden von Typologien {#apply-typologies}
