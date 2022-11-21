@@ -3,7 +3,8 @@ product: campaign
 title: Über Zielgruppenbestimmungsaktivitäten
 description: Über Zielgruppenbestimmungsaktivitäten
 feature: Workflows, Audiences, Targeting Activity
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: e89c9f20-fc10-421f-9c14-2e33be562a8d
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 100%
@@ -34,4 +35,3 @@ Mit diesen Aktivitäten können Sie eine oder mehrere Zielgruppen erstellen, ind
 * **[Anmeldedienste](subscription-services.md)**: ermöglicht die Verwaltung von An- und Abmeldungen für einen Informationsdienst einer Zielgruppe.
 * **[Vereinigung](union.md)**: dient der Zusammenfassung der Ergebnisse mehrerer Aktivitäten in einer Zielgruppe.
 * **[Daten-Update](update-data.md)**: dient der Aktualisierung einer großen Datenmenge in der Datenbank.
-

@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Cubes zum Erstellen von Datenberichten verwenden
+title: Verwenden von Cubes zum Erstellen von Datenberichten
 description: Erfahren Sie, wie Sie Cubes zum Erstellen von Berichten verwenden
 feature: Reporting
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '977'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Verwenden von Cubes zur Datenanalyse{#use-cubes-to-create-reports}
 
-Mithilfe von Cubes können Sie Berichte erstellen sowie Daten aus der Datenbank identifizieren und auswählen. Sie haben folgende Möglichkeiten:
+Verwenden Sie Cubes, um Berichte zu erstellen und um Daten aus der Datenbank zu identifizieren und auszuwählen. Sie haben folgende Möglichkeiten:
 
 * Erstellung von Cube-basierten Berichten. [Weitere Informationen](#explore-the-data-in-a-report).
 * Sammeln Sie die Daten in der Datenbank und gruppieren Sie sie in Listen, um beispielsweise Zielgruppen und Sendungen zu identifizieren und zu erstellen. [Weitere Informationen](#build-a-target-population).
@@ -23,7 +23,7 @@ Mithilfe von Cubes können Sie Berichte erstellen sowie Daten aus der Datenbank 
 
 ### Schritt 1: Erstellen eines Cube-basierten Berichts {#step-1---create-a-report-based-on-a-cube}
 
-Einmal [Cube ist konfiguriert](cube-indicators.md)kann sie als Vorlage für die Erstellung eines neuen Berichts verwendet werden.
+Nachdem der [Cube konfiguriert ist](cube-indicators.md), kann er als Vorlage für die Erstellung eines neuen Berichts verwendet werden.
 
 Gehen Sie wie folgt vor, um einen auf einem vorhandenen Cube basierenden Bericht zu erstellen:
 
@@ -51,7 +51,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
 ![](assets/cube-switch.png)
 
-1. Wählen Sie die Dimensionen aus, die in den Zeilen und Spalten der Tabelle angezeigt werden sollen. Ziehen Sie dazu die verfügbaren Dimensionen per Drag-and-Drop in den Arbeitsbereich.
+1. Wählen Sie die Dimensionen aus, die in den Zeilen und Spalten der Tabelle angezeigt werden sollen. Verwenden Sie dazu Drag-and-Drop für die verfügbaren Dimensionen.
 1. Wählen Sie die der Tabelle hinzuzufügende Dimension aus den verfügbaren Dimensionen aus:
    ![](assets/cube-select-dimension.png)
 
@@ -83,7 +83,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
 ### Schritt 3: Konfiguration der anzuzeigenden Kennzahlen {#step-3---configure-the-measures-to-display}
 
-Nachdem die Zeilen und Spalten definiert wurden, wählen Sie aus, welche Messungen angezeigt werden sollen. Standardmäßig wird nur eine Kennzahl angezeigt.
+Nachdem die Zeilen und Spalten definiert wurden, wählen Sie aus, welche Kennzahlen angezeigt werden sollen. Standardmäßig wird nur eine Kennzahl angezeigt.
 
 Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
@@ -91,11 +91,11 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
    ![](assets/cube-measure-button.png)
 
-1. Die **[!UICONTROL Kennzahl verwenden]** wählen Sie eine der vorhandenen Maßnahmen aus.
+1. Wählen Sie mit der Schaltfläche **[!UICONTROL Kennzahl verwenden]** eine der vorhandenen Kennzahlen aus.
 
    ![](assets/cube-add-measure.png)
 
-   Wählen Sie die anzuzeigenden Informationen und die Formatierungsoptionen aus. Die Liste der Optionen hängt vom Kennzahlentyp ab.
+   Wählen Sie die anzuzeigenden Informationen und die Formatierungsoptionen aus. Die Liste der Optionen hängt vom Typ der Kennzahl ab.
 
    ![](assets/cube-measure-options.png)
 
@@ -105,7 +105,7 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
    Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. [Weitere Informationen](customize-cubes.md#configure-the-display).
 
-1. Sie können neue Kennzahlen auf der Basis bestehender erstellen. Klicken Sie dazu auf **[!UICONTROL Kennzahl erstellen]** und konfigurieren Sie sie.
+1. Sie können neue Kennzahlen auf Basis bestehender erstellen. Klicken Sie dazu auf **[!UICONTROL Kennzahl erstellen]** und konfigurieren Sie diese.
 
    ![](assets/cube-create-new-measure.png)
 
@@ -119,11 +119,11 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
    * Abweichung: ermöglicht die Berechnung der Abweichungen der Werte einer Ebene.
    * Abweichung vom Durchschnitt: ermöglicht die Berechnung der Abweichungen in jeder Gruppe von entsprechenden Zellen in Bezug auf den Wertedurschnitt. Sie können zum Beispiel die jeweilige Einkaufsmenge der existierenden Segmente vergleichen.
 
-   Nach der Erstellung wird die Maßnahme dem Bericht hinzugefügt.
+   Sobald die Kennzahl erstellt ist, wird sie dem Bericht hinzugefügt.
 
    ![](assets/cube-display-new-measure.png)
 
-   Nachdem Sie eine Kennzahl erstellt haben, können Sie sie bearbeiten und ihre Konfiguration ändern. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Maßnahmen]** und navigieren Sie zum Tab der zu bearbeitenden Kennzahl.
+   Sobald Sie eine Kennzahl erstellt haben, können Sie sie bearbeiten und ihre Konfiguration ändern. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Kennzahlen]** und navigieren Sie zur Registerkarte der zu bearbeitenden Kennzahl.
 
    Klicken Sie anschließend auf die Schaltfläche **[!UICONTROL Dynamische Kennzahl bearbeiten]**, um auf die Einstellungen zuzugreifen.
 
@@ -143,7 +143,7 @@ Gehen Sie wie folgt vor, um eine Population in einer Liste zu gruppieren:
 
    ![](assets/cube-show-cart.png)
 
-1. Verwenden Sie die **[!UICONTROL Export]** -Schaltfläche, um die Artikel im Warenkorb in einer Liste zu gruppieren.
+1. Verwenden Sie die Schaltfläche **[!UICONTROL Exportieren]**, um die Artikel im Warenkorb in einer Liste zu gruppieren.
 
    Geben Sie den Namen der Liste an und wählen Sie den gewünschten Exporttyp aus.
 
@@ -157,15 +157,15 @@ Gehen Sie wie folgt vor, um eine Population in einer Liste zu gruppieren:
 
    Sie können den Inhalt des Warenkorbs beibehalten oder löschen.
 
-   Die neue Liste ist über die **[!UICONTROL Profile und Zielgruppen]** Registerkarte.
+   Die neue Liste ist über die Registerkarte **[!UICONTROL Profile und Ziele]** verfügbar.
 
    ![](assets/cube-list-available.png)
 
 ## Einfügen von Pivot-Tabellen in Berichte {#insert-a-pivot-table-into-a-report}
 
-Gehen Sie wie folgt vor, um eine Tabelle zu erstellen und die Daten in einem Cube zu untersuchen:
+Um eine Tabelle zu erstellen und die Daten in einem Cube zu erkunden, gehen Sie wie folgt vor:
 
-1. Erstellen Sie einen neuen Bericht mit einer Seite und fügen Sie eine Pivot-Tabelle ein.
+1. Erstellen Sie einen neuen Bericht mit einer einzigen Seite und fügen Sie eine Pivot-Tabelle ein.
 
    ![](assets/cube-insert-in-report.png)
 
@@ -173,4 +173,4 @@ Gehen Sie wie folgt vor, um eine Tabelle zu erstellen und die Daten in einem Cub
 
    ![](assets/cube-selected-in-report.png)
 
-   Auf diese Weise können Sie den anzuzeigenden Bericht erstellen. Weitere Informationen hierzu finden Sie unter [2. Schritt - Zeilen und Spalten auswählen](#step-2---select-lines-and-columns).
+   Auf diese Weise können Sie den anzuzeigenden Bericht erstellen. Weitere Informationen finden Sie unter [Schritt 2: Auswahl der Zeilen und Spalten](#step-2---select-lines-and-columns).

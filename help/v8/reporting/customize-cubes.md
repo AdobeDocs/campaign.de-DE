@@ -9,15 +9,15 @@ exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1504'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Anpassen von Cubes{#cube-custom}
 
-## Daten klassieren {#data-binning}
+## Klassieren von Daten {#data-binning}
 
-Nutzen Sie die Klassierung, um die Anzeige der Daten zu vereinfachen, indem Sie die Werte nach Kriterien gruppieren. Je nach den verfügbaren Informationen können Sie Altersgruppen definieren, E-Mail-Domains gruppieren, auf eine Werteauflistung beschränken, die Daten explizit auf die Anzeige und Gruppierung aller anderen Daten in einer dedizierten Zeile oder Spalte beschränken usw.
+Nutzen Sie die Datenklassierung, um die Anzeige der Daten zu vereinfachen, indem Sie Werte nach Kriterien gruppieren. Je nach den verfügbaren Informationen können Sie Altersgruppen definieren, E-Mail-Domains gruppieren, auf aufgelistete Werte beschränken, die anzuzeigenden Daten explizit einschränken und alle anderen Daten in einer eigenen Zeile oder Spalte zusammenfassen usw.
 
 Insgesamt sind drei Klassierungstypen möglich:
 
@@ -51,7 +51,7 @@ Sie können eine SQL-Maske nutzen, um mehrere Werte nach einem Filter zu gruppie
 
 <!--In the example below, all email domains that start with **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.), or with **ymail** (ymail.com, ymail.eu, etc.) will be grouped under the label **YAHOO!**, as well as addresses with the **rocketmail.com** domain.-->
 
-### Klassen dynamisch verwalten {#dynamically-manage-bins}
+### Dynamisches Verwalten der Klassen {#dynamically-manage-bins}
 
 Die Werte können über Auflistungen dynamisch verwaltet werden. So werden nur die in der Auflistung enthaltenen Werte angezeigt. Bei Änderung der Auflistungswerte wird der Cube-Inhalt automatisch angepasst.
 
@@ -78,13 +78,13 @@ Es besteht auch die Möglichkeit, die Klassen automatisch zu erzeugen. Klicken S
 
 Sie können
 
-* **[!UICONTROL die am häufigsten vertretenen Werte abrufen:]**
+* **[!UICONTROL Auffinden der am häufigsten verwendeten Werte]**
 
-   Wenn Sie vier Klassen generieren, werden die am häufigsten verwendeten Werte angezeigt, während die anderen gezählt und in der Kategorie &quot;Sonstige&quot;gruppiert werden.
+   Wenn Sie vier Klassen erstellen, werden die vier am häufigsten verwendeten Klassen angezeigt, während die anderen gezählt und in der Kategorie „Sonstige“ zusammengefasst werden.
 
-* **[!UICONTROL Klassen in Form von Bereichen erzeugen:]**
+* **[!UICONTROL Erzeugen von Klassen in Form von Slots]**
 
-   Für dasselbe Beispiel erstellt Adobe Campaign automatisch vier Wertebereiche gleicher Größe, um die Werte in der Datenbank anzuzeigen.
+   Für das gleiche Beispiel erstellt Adobe Campaign automatisch vier Slots von gleicher Größe, um die Werte in der Datenbank anzuzeigen.
 
 In diesem Fall wird der im Faktenschema gewählte Filter ignoriert.
 
@@ -160,13 +160,13 @@ Gehen Sie wie folgt vor, um eine neue Kennzahl zu definieren:
 
 1. Geben Sie den Titel der Kennzahl an und fügen Sie eine Beschreibung hinzu. Klicken Sie dann auf **[!UICONTROL Beenden]**, um die Erstellung abzuschließen.
 
-## Kennzahlen anpassen {#display-measures}
+## Anpassen von Kennzahlen {#display-measures}
 
 Die Anzeige der Kennzahlen in der Tabelle kann nach Bedarf konfiguriert werden. Folgende Parameter sind verfügbar:
 
 * Anzeigereihenfolge der Kennzahlen. [Weitere Informationen](#display-sequence)
-* Informationen, die im Bericht angezeigt/ausgeblendet werden sollen. [Weitere Informationen](#configuring-the-display)
-* die anzuzeigenden Kennzahlen: Prozentsatz, Gesamtbetrag, Anzahl der Dezimalstellen etc. [Weitere Informationen](#changing-the-type-of-measure-displayed)
+* Die Informationen, die im Bericht angezeigt/ausgeblendet werden sollen. [Weitere Informationen](#configuring-the-display)
+* Die anzuzeigenden Kennzahlen: Prozentsatz, Gesamtbetrag, Anzahl der Dezimalstellen etc. [Weitere Informationen](#changing-the-type-of-measure-displayed)
 
 ### Anzeigereihenfolge {#display-sequence}
 

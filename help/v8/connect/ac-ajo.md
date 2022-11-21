@@ -3,7 +3,8 @@ title: Arbeiten mit Adobe Campaign und Adobe Journey Optimizer
 description: Erfahren Sie, wie Sie mit Campaign und Journey Optimizer arbeiten können
 role: Admin, User
 level: Beginner, Intermediate
-source-git-commit: feba381b9874be3ebfbcf2a27ccd29a71385ed9d
+exl-id: 52d8e2a5-9fdf-498a-bdbd-13a9935a94d6
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 100%
@@ -24,4 +25,3 @@ Die wichtigsten Schritte sind die Erstellung einer Transaktionsnachrichtenvorlag
 
 
 ![](../assets/do-not-localize/book.png) [Weitere Informationen finden Sie in der Dokumentation zu Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target=&quot;_blank&quot;}.
-

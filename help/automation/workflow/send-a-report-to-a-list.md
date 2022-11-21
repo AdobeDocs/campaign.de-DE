@@ -3,13 +3,13 @@ product: campaign
 title: Senden eines Berichts an eine Liste
 description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine Liste senden.
 feature: Workflows
-source-git-commit: 4c3caa8e31c2076d32a03a8778a28edce50cde63
-workflow-type: ht
+exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 100%
 
 ---
-
 
 # Senden eines Berichts an eine Liste{#send-a-report-to-a-list}
 

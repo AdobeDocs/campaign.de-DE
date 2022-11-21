@@ -6,27 +6,27 @@ exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Integrierte Berichte in Adobe Campaign{#ootb-reports}
 
-Auf dieser Seite finden Sie eine Liste der in Adobe Campaign integrierten Berichte, ihren Inhalt und den Kontext dieser Berichte. Adobe Campaign bietet eine Reihe integrierter Berichte, auf die über die Clientkonsole oder einen Internetbrowser zugegriffen werden kann.
+Auf dieser Seite finden Sie eine Liste der in Adobe Campaign integrierten Berichte, ihren Inhalt und den Kontext dieser Berichte. Adobe Campaign bietet eine Reihe integrierter Berichte, auf die über die Client-Konsole oder einen Internet-Browser zugegriffen werden kann.
 
 Folgende Berichttypen stehen zur Verfügung:
 
-* Berichte zur gesamten Plattform. [Weitere Informationen](global-reports.md).
+* Berichte über die gesamte Plattform. [Weitere Informationen](global-reports.md).
 * Versandberichte. [Weitere Informationen](delivery-reports.md).
 
-Der Zugriff auf native Berichte erfolgt über die Kampagnen-Startseite, das dedizierte Berichte-Dashboard oder die Versandliste. Wie der Bericht in der Benutzeroberfläche angezeigt wird, hängt vom Kontext ab.
+Der Zugriff auf integrierte Berichte erfolgt über die Campaign-Startseite, das dedizierte Berichte-Dashboard oder die Versandliste. Wie der Bericht in der Benutzeroberfläche angezeigt wird, hängt vom Kontext ab.
 
-Auf der Startseite steht eine Liste wichtiger Berichte zur Verfügung, mit denen Sie schnell auf die Versanddaten zugreifen können. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Außerdem erfahren Sie, wie Sie Ihre eigenen Berichte zum Tab **[!UICONTROL Berichte]** hinzufügen.
+Auf der Startseite steht eine Liste wichtiger Berichte zur Verfügung, mit denen Sie schnell auf die Versanddaten zugreifen können. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Außerdem erfahren Sie, wie Sie Ihre eigenen Berichte zur Registerkarte **[!UICONTROL Berichte]** hinzufügen.
 
-Weiterführende Informationen zu diesen benutzerdefinierten Konfigurationen finden Sie in diesem Abschnitt [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
+Weiterführende Informationen zu diesen benutzerdefinierten Konfigurationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=de).
 
 
-## Zugriff auf native Berichte {#access-ootb-reports}
+## Zugriff auf integrierte Berichte {#access-ootb-reports}
 
 Zugriff auf native Campaign-Berichte:
 
@@ -55,7 +55,7 @@ Der Zugriff auf Berichte über Listen, Dienste, Angebote etc. erfolgt auf die gl
 
 ## Versandberichte {#reports-on-deliveries}
 
-Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
+Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
 Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschnitt](delivery-reports.md).
 
@@ -213,7 +213,7 @@ Berichte zu Kampagnen beziehen sich auf die Daten der Tabelle **nms:operation**.
 
 ## Dienstberichte {#reports-on-services}
 
-Berichte über Dienste beziehen sich auf die Daten der Tabelle **nms:service**.
+Berichte über Services beziehen sich auf die Daten der Tabelle **nms:service**.
 
 <table> 
  <tbody> 
@@ -246,7 +246,7 @@ Berichte über Dienste beziehen sich auf die Daten der Tabelle **nms:service**.
 
 ## Budgetberichte {#budget-reports}
 
-Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
+Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
 <table> 
  <tbody> 
@@ -333,7 +333,7 @@ Berichte über Simulationen beziehen sich auf die Daten der Tabelle **nms:simula
 
 ## Berichte über Web-Anwendungen {#reports-on-web-applications}
 
-Berichte über Webanwendungen beziehen sich auf die Daten der Tabelle **nms:WebApp**.
+Berichte über Web-Anwendungen beziehen sich auf die Daten der Tabelle **nms:WebApp**.
 
 <table> 
  <tbody> 

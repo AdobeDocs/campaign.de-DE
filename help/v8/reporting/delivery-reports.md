@@ -6,18 +6,18 @@ exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Versandberichte {#delivery-reports}
 
-Die Ausführung von Sendungen kann in verschiedenen Berichten verfolgt werden, auf die über die Versandübersicht zugegriffen werden kann.
+Sie können die Ausführung von Sendungen in verschiedenen Berichten verfolgen, auf die über die Versandübersicht zugegriffen werden kann.
 
 Gehen Sie wie folgt vor, um auf Berichte zuzugreifen:
 
-1. Navigieren Sie zum **[!UICONTROL Kampagnen]** und klicken Sie auf **[!UICONTROL Versand]** zur Anzeige der Versandliste.
-1. Klicken Sie auf den Namen des Versands, auf den Sie Zugriff haben möchten.
+1. Gehen Sie zur Registerkarte **[!UICONTROL Kampagnen]** und klicken Sie auf den Link **[!UICONTROL Versand]**, um die Liste der Sendungen anzuzeigen.
+1. Klicken Sie auf den Namen des Versands, auf den Sie zugreifen möchten.
 1. Klicken Sie im Tab **[!UICONTROL Zusammenfassung]** auf **[!UICONTROL Berichte]**, um die spezifischen Versandberichte aufzurufen.
 
    ![](assets/detailed-report-2.png)
@@ -26,7 +26,7 @@ Gehen Sie wie folgt vor, um auf Berichte zuzugreifen:
 
    * **[!UICONTROL Versanddurchsatz]**
    * **[!UICONTROL Teilen über soziale Netzwerke]**
-   * **[!UICONTROL Statistiken zu Teilungsaktivitäten]**
+   * **[!UICONTROL Statistiken zu Freigabeaktivitäten]**
    * **[!UICONTROL Klicks]**
    * **[!UICONTROL Tracking-Statistiken]**
    * **[!UICONTROL URLs und Clickstreams]**
@@ -34,9 +34,9 @@ Gehen Sie wie folgt vor, um auf Berichte zuzugreifen:
    * **[!UICONTROL Fehler und Bounces]**
    * **[!UICONTROL Nutzer-Aktivitäten]**
    * **[!UICONTROL Versandzusammenfassung]**
-   * **[!UICONTROL Abonnement-Verfolgung]**
+   * **[!UICONTROL Abonnement-Tracking]**
    * **[!UICONTROL Versandstatistiken]**
-   * **[!UICONTROL Öffnungsverteilung]**
+   * **[!UICONTROL Aufschlüsselung der Öffnungen]**
 
 ## Tracking-Indikatoren {#tracking-indicators}
 
@@ -62,7 +62,7 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 * **[!UICONTROL Unterschiedene Öffnungen für die erreichte Population]**: Schätzung der Anzahl der Zielgruppenempfänger, die eine Nachricht mindestens einmal geöffnet haben. Klicks auf getrackte URLs werden berücksichtigt, da E-Mails geöffnet werden müssen, damit auf einen Link geklickt werden kann.
 * **[!UICONTROL Summe der Öffnungen in Bezug auf die erreichte Population]**: Schätzung der Gesamt-Öffnungszahl durch Zielgruppenempfänger.
 * **[!UICONTROL Klicks auf den Abmelde-Link]**: Anzahl der Klicks auf den Abmelde-Link.
-* **[!UICONTROL Klicks auf den Mirrorseiten-Link]** : Anzahl der Klicks auf den Mirrorseite-Link. Um berücksichtigt zu werden, muss der Link im Versand-Assistenten als solcher definiert sein (getrackte URLs). <!--Refer to this [page](../../delivery/using/about-delivery-monitoring.md).-->
+* **[!UICONTROL Klicks auf den Mirrorseiten-Link]**: Anzahl der Klicks auf den Mirrorseiten-Link. Um berücksichtigt zu werden, muss der Link im Versandassistenten als solcher definiert worden sein (getrackte URLs). <!--Refer to this [page](../../delivery/using/about-delivery-monitoring.md).-->
 * **[!UICONTROL Schätzung der Weiterleitungen]**: Schätzung der Anzahl der E-Mails, die von Zielgruppenempfängern an andere Personen weitergeleitet wurden. Dieser Wert ist die Differenz aus den Unique Opens allgemein und den Unique Opens der Zielgruppenempfänger.
 
    >[!NOTE]
@@ -81,9 +81,9 @@ Die Tabelle zeigt - aufgeschlüsselt nach Domains - Sendungen, Öffnungen, Klick
 
 >[!NOTE]
 >
->Die in diesem Bericht angezeigten Domain-Namen werden in der Auflistung definiert, die auf Cube-Ebene verwendet wird. Um Standarddomänen zu ändern, hinzuzufügen oder zu entfernen, bearbeiten Sie die **[!UICONTROL Domänen]** Auflistungen und Änderung von Werten und Aliasen. Die **[!UICONTROL sonstige]** -Kategorie enthält Domänennamen, die keinem Wert der Auflistung angehören.
+>Die in diesem Bericht dargestellten Domain-Namen werden in der auf Cube-Niveau verwendeten Auflistung definiert. Um Standard-Domains zu ändern, hinzuzufügen oder zu entfernen, bearbeiten Sie die **[!UICONTROL Domains]**-Auflistung und passen Sie die Werte und Aliase an. Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die keinem Auflistungswert entsprechen.
 >
->In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de) erfahren Sie, wie Sie auf Ihre Aufzählungen zugreifen und sie konfigurieren können{target=&quot;_blank&quot;}.
+>In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de){target=&quot;_blank&quot;} erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und sie konfigurieren können.
 
 
 **[!UICONTROL 4. Erzeugte Clickstreams]**
@@ -190,7 +190,7 @@ Er gibt Aufschluss über Empfänger-Reaktionen. Sie können die Anzeige durch We
 Die Statistiken werden in Form einer Tabelle und eines Pareto-Diagramms dargestellt, welches die Dauer angibt, die der Versand benötigt hat, um seine höchste Effizienz zu erreichen. Folgende Indikatoren werden angezeigt:
 
 * **[!UICONTROL Öffnungen]**: Geschätzte Dauer, um einen bestimmten Anteil an Öffnungen in Bezug auf die Gesamtzahl der geöffneten Nachrichten zu erreichen. E-Mails im Textformat werden nicht berücksichtigt. [Weitere Informationen](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Klicks]**: Geschätzte Dauer, um einen bestimmten Anteil an Klicks in Bezug auf die Gesamtzahl der getrackten Klicks zu erreichen. Klicks auf Abmelde- und Mirrorseite-Links werden nicht berücksichtigt.
+* **[!UICONTROL Klicks]**: Geschätzte Dauer, um einen bestimmten Anteil an Klicks in Bezug auf die Gesamtzahl der aufgezeichneten Klicks zu erreichen. Klicks auf Abmelde- und Mirrorseite-Links werden nicht berücksichtigt.
 <!--
 * **[!UICONTROL Transactions]** : Time required to achieve a percentage of the total number of transactions following message reception. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -202,4 +202,4 @@ Sie haben die Möglichkeit, verschiedene Sendungen in zusammenfassenden Berichte
 
 Drücken Sie die Strg-Taste, um nicht direkt aufeinanderfolgende Sendungen zu markieren.
 
-Klicken Sie auf die Schaltfläche **[!UICONTROL Anzeigen von Unterebenen]** -Symbol, auf das Sie in der Symbolleiste zugreifen können. Sie werden dann in derselben Liste angezeigt.
+Um Sendungen auszuwählen, die in einem anderen Ordner gespeichert sind, klicken Sie auf das Symbol **[!UICONTROL Unterordner anzeigen]**, das in der Symbolleiste verfügbar ist. Sie werden dann in derselben Liste angezeigt.

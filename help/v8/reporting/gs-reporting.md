@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte mit Adobe Campaign-Reporting-Tools
-description: Messen Sie den Erfolg Ihrer Kampagnen und analysieren Sie das Benutzerverhalten.
+title: Erste Schritte mit Reporting-Tools in Adobe Campaign
+description: Messen Sie den Erfolg Ihrer Kampagnen und analysieren Sie das Benutzerverhalten
 feature: Reporting
 role: Data Engineer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
 * **Cubes**
 
-   Adobe Campaign verfügt über ein intuitives Tool zur Datenexploration, um dynamische Berichte zu erstellen.
+   Adobe Campaign verfügt über ein intuitives Tool zur Daten-Exploration, um dynamische Berichte zu erstellen.
 
-   Verwenden Sie Marketing-Analytics-Funktionen, um Daten zu analysieren und zu messen, Statistiken zu berechnen, die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Sie können Berichte erstellen, Zielgruppen-Populationen erstellen und in Listen speichern, die in Adobe Campaign für Targeting- oder Segmentierungsaufgaben verwendet werden können.
+   Verwenden Sie das Marketing-Analyse-Modul, um Daten zu analysieren und zu messen, Statistiken zu berechnen und die Berichterstellung und Berechnung zu vereinfachen und zu optimieren. Sie können Berichte erstellen, Zielgruppen-Populationen aufbauen und in Listen speichern, die in Adobe Campaign für Zielgruppenbestimmungs- oder Segmentierungsaufgaben verwendet werden können.
 
    ![](assets/create-a-report.png)
 
-   Je nach Komplexität der Abfragen und Berechnungen sowie der bewegten Datenmenge werden die in den Berichten zu analysierenden Daten über eine Abfrage gesammelt und in einer Liste (Workflow vom Typ &quot;Daten-Management&quot;) oder einem Cube (unter Verwendung der Option &quot;Marketing Analytics&quot;) voraggregiert. Sie werden in Form einer Pivot-Tabelle oder einer Liste mit Gruppierung angezeigt.
+   Je nach Komplexität der Abfragen und Berechnungen sowie der bewegten Datenmenge werden die in den Berichten zu analysierenden Daten über eine Abfrage gesammelt und in einer Liste (Workflow vom Typ „Daten-Management“) oder einem Cube (unter Verwendung der Option „Marketing-Analyse“) voraggregiert. Sie werden in Form einer Pivot-Tabelle oder einer Liste mit Gruppierung angezeigt.
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md).
 
