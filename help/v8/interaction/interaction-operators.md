@@ -5,51 +5,31 @@ feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 100%
+source-wordcount: '262'
+ht-degree: 84%
 
 ---
 
 # Benutzerprofile {#operator-profiles}
 
-Zwei Typen von Benutzern können Campaign Interaction verwenden: **Angebotsverantwortliche** und **Versandverantwortliche**. Jeder dieser Benutzertypen verfügt über spezifische Berechtigungen und Einschränkungen. Weitere Informationen zu Campaign-Benutzern und -Berechtigungen finden Sie auf [dieser Seite](../start/permissions.md).
+Zwei Typen von Benutzern können Campaign Interaction verwenden: **Angebotsverantwortliche** und **Versandverantwortliche**. Jeder dieser Benutzertypen verfügt über spezifische Berechtigungen und Einschränkungen. Weitere Informationen zu Campaign-Benutzern und -Berechtigungen finden Sie auf [dieser Seite](../start/gs-permissions.md).
 
 * **[!UICONTROL Angebotsverantwortlicher]**: erstellt und verwaltet Angebote
 * **[!UICONTROL Versandverantwortlicher]**: validiert und verwendet Angebote
 
 ## Erstellen eines angebotsverantwortlichen Benutzers{#offer-manager}
 
-1. Erstellen Sie einen Benutzer.
+1. Erstellen Sie einen Benutzer. [Weitere Informationen](../start/manage-permissions.md#add-users)
+1. Navigieren Sie zum **[!UICONTROL Gruppen und spezifische Berechtigungen]** Fenster, klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die **[!UICONTROL Angebotsverantwortlicher]** hinzugefügt.
 
-   ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html?lang=de) beschrieben.
-
-1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Angebotsverantwortliche Benutzer]** aus.
-
-Die dem Angebotsverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgende Tätigkeiten:
-
-* Änderung von **[!UICONTROL Design-Umgebungen]**;
-* Ansicht von **[!UICONTROL Live-Umgebungen]**;
-* Konfiguration von administrativen Funktionen (vordefinierte Platzierungen und Filter);
-* Erstellung und Änderung von Angebotskategorien;
-* Erstellung und Änderung von Angeboten;
-* Konfiguration von Angebotseignungen;
-* Validierung von Angeboten.
-
-Wenn Angebote in einem Workflow verwendet werden, muss der Benutzer der Benutzergruppe **[!UICONTROL Administrator]** oder **[!UICONTROL Angebotsverantwortliche Benutzer]** hinzugefügt werden, um den Workflow auszuführen.
-
->[!NOTE]
->
->**Angebotsverantwortliche Benutzer** können ein Angebot nur genehmigen, wenn kein Prüfer angegeben ist oder wenn sie in der Angebotsvorlage als Prüfer deklariert wurden.
+Die mit Angebotsmanagern verknüpften Berechtigungen werden beschrieben. [here](../start/manage-permissions.md#ootb-productprofiles)
 
 ## Erstellen eines versandverantwortlichen Benutzers {#delivery-manager}
 
-1. Erstellen Sie einen Benutzer.
-
-   ![](../assets/do-not-localize/book.png) Die Schritte zum Erstellen eines Benutzers in Campaign werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html) beschrieben.
-
-1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
+1. Erstellen Sie einen Benutzer. [Weitere Informationen](../start/manage-permissions.md#add-users)
+1. Navigieren Sie zum **[!UICONTROL Gruppen und spezifische Berechtigungen]** Registerkarte, klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die **[!UICONTROL Versandverantwortlicher]** hinzugefügt.
 
 Versandverantwortliche Benutzer können mit den ihnen zugewiesenen Rechten die folgenden Aufgaben ausführen:
 

@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Benutzeroberfläche von Campaign kennenlernen
 
-## Zugriff auf die Campaign-Benutzeroberfläche
+## Zugriff auf die Campaign-Benutzeroberfläche{#ui-access}
 
 Der Campaign-Arbeitsbereich ist über die [Client-Konsole](../architecture/general-architecture.md) aufrufbar.
 
@@ -24,7 +24,7 @@ Weitere Informationen dazu, wie Sie die Campaign Client-Konsole installieren und
 
 Sie können auch einen Webbrowser verwenden, um auf Campaign zuzugreifen. In diesem Zusammenhang ist nur ein Teil der Campaign-Funktionen verfügbar. [Weitere Informationen](#web-browser)
 
-## Durchsuchen der Benutzeroberfläche
+## Durchsuchen der Benutzeroberfläche{#ui-browse}
 
 Sobald Sie mit Campaign verbunden sind, gelangen Sie auf die Startseite. Durchsuchen Sie die Links, um auf Funktionen zuzugreifen. Die in der Benutzeroberfläche verfügbaren Funktionen hängen von Ihren Optionen und Berechtigungen ab.
 
@@ -79,7 +79,7 @@ Im oberen Bereich wird die Liste der Einträge des aktuellen Ordners angezeigt. 
 Im unteren Bereich werden die Details des ausgewählten Eintrags angezeigt.
 
 
-## Sprachen
+## Sprachen{#languages}
 
 Die Benutzeroberfläche von Campaign v8 ist in den folgenden Sprachen verfügbar:
 

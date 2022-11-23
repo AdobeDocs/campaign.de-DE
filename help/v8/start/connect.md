@@ -5,10 +5,10 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: f381a2ec91b7179a51d91f9b7414ea39db03cd71
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 97%
+source-wordcount: '841'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
 Ab der Build-Version 8.4 von Campaign Classic ist die Installation der Microsoft Edge Webview 2-Laufzeitumgebung für jede Konsolen-Installation erforderlich.
 
-WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign-Konsole aufgefordert, es von der [Microsoft Developer Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de) herunterzuladen. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
+WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign Console aufgefordert, es von herunterzuladen. [Microsoft Developer-Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target=&quot;_blank&quot;}. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
 ## Client-Konsole herunterladen und installieren{#download-ac-console}
 
@@ -35,7 +35,7 @@ Wenn Sie Campaign zum ersten Mal verwenden oder auf eine neuere Version aktualis
 
 Dazu sind zwei Optionen verfügbar:
 
-1. Stellen Sie als Campaign-Administrator eine Verbindung zur Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her und laden Sie das Installationsprogramm für die Client-Konsole herunter. Sie können die Konsole dann auf Ihrem lokalen Computer installieren.
+1. Campaign-Administratoren müssen eine Verbindung zu Adobe herstellen [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target=&quot;_blank&quot;} und laden Sie das Installationsprogramm für die Client-Konsole herunter. Sie können die Konsole dann auf Ihrem lokalen Computer installieren.
 
 1. Adobe kann die Konsole für Sie als Endanwender bereitstellen: Sobald die Konsole aktualisiert wird, werden Sie in einem Popup-Fenster aufgefordert, die neueste Version der Client-Konsole herunterzuladen.
 
@@ -89,23 +89,20 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 >
 >Bei den Build-Versionen 8.4 von Campaign Classic kann es vorkommen, dass die Adobe Campaign-Client-Konsole während der Proxy-Authentifizierung zweimal nach den Proxy-Anmeldeinformationen fragt. Dies liegt daran, dass Microsoft Edge WebView2 im Gegensatz zum Internet Explorer keine Proxy-Anmeldeinformationen im Cache/Kennwortspeicher speichert.
 
-## Benutzern Zugriff gewähren{#grant-access}
+## Gewähren von Zugriff für Benutzende{#grant-access}
 
-Adobe Campaign ermöglicht es, die den unterschiedlichen Benutzern zugeteilten Rechte zu bestimmen und zu verwalten. Es handelt es sich um Berechtigungen und Beschränkungen folgender Aktivitäten:
-
-* Zugriff auf bestimmte Funktionen (über spezifische Berechtigungen);
-* Zugriff auf bestimmte Elemente;
-* Erstellen, Ändern und/oder Löschen von Elementen (Versand, Kontakte, Kampagnen, Gruppen usw.).
-
-Weitere Informationen zu Anwendern und zum Definieren ihrer Berechtigungen finden Sie in [diesem Abschnitt](permissions.md).
+Mit Adobe Campaign können Sie die den verschiedenen Benutzern zugewiesenen Rechte definieren und verwalten.
 
 Als Campaign-Administrator sind Sie dafür verantwortlich, die Benutzer zu erstellen und Anmeldedaten der Anwender mit ihnen zu teilen.
+
+Weitere Informationen zu Anwendern und zum Definieren ihrer Berechtigungen finden Sie in [diesem Abschnitt](gs-permissions.md).
+
 
 ## Verbindung mit Campaign über Ihre Adobe ID herstellen{#connect-ims}
 
 Campaign-Anwender stellen über das Adobe Identity Management System (IMS) mit ihrer Adobe ID eine Verbindung zur Adobe Campaign-Konsole her. Sie können für alle Adobe-Lösungen dieselbe ID verwenden. Die Verbindung wird bei Verwendung von Adobe Campaign mit anderen Lösungen gespeichert.
 
-Weitere Informationen zu Adobe IMS finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
+Weitere Informationen zu Adobe IMS finden Sie unter [diese Seite](https://helpx.adobe.com/de/enterprise/using/identity.html){target=&quot;_blank&quot;}.
 
 ## Web-Zugriff{#web-access}
 

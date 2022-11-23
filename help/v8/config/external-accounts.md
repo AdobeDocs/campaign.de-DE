@@ -5,10 +5,10 @@ feature: Application Settings
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6dee08f0f8673e5264f3cb111fe14493980a62fc
 workflow-type: tm+mt
-source-wordcount: '1180'
-ht-degree: 100%
+source-wordcount: '1181'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,8 @@ Sie können über Adobe Campaign **[!UICONTROL Explorer]** auf externe Konten zu
 >[!CAUTION]
 >
 >Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) verwaltet ein spezielles externes **[!UICONTROL Full FDA]**-Konto (ffda) die Verbindung zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank ([!DNL Snowflake]).
-></br>Als Anwender von Managed Cloud Services wird dieses externe Konto für Ihre Instanz durch Adobe konfiguriert. Es darf nicht geändert werden.
+>
+>Als Managed Cloud Services-Benutzer werden externe Konten für Ihre Instanz durch Adobe konfiguriert und dürfen nicht geändert werden.
 
 ## Campaign-spezifische externe Konten
 
@@ -117,34 +118,37 @@ Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der 
 
 * **Externe Datenbank (FDA)**
 
-   Verwenden Sie das externe Konto vom Typ **Externe Datenbank**, um über FDA eine Verbindung zu einer externen Datenbank herzustellen.
+   Die **Externe Datenbank** Externes Konto vom Typ wird verwendet, um über Federated Data Access (FDA) eine Verbindung zu einer externen Datenbank herzustellen.
 
    Externe Datenbanken, die mit Adobe Campaign v8 kompatibel sind, sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
 
    ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Option Federated Data Access (FDA) finden Sie in [diesem Abschnitt](../connect/fda.md).
 
+* **Twitter**
+
+   Die **Twitter** Typ externes Konto wird verwendet, um Campaign mit Ihrem twitter-Konto zu verbinden und Nachrichten in Ihrem Namen zu posten.
+
+   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Twitter-Integration finden Sie in [diesem Abschnitt](../connect/ac-tw.md).
+
 ## Externe Konten zur Integration von Adobe-Lösungen
 
 * **Adobe Experience Cloud**
 
-   Das externe **[!UICONTROL Adobe Experience Cloud]**-Konto wird verwendet, um Adobe IMS zu implementieren und mithilfe einer Adobe ID eine Verbindung zur Adobe Campaign-Konsole herzustellen.
+   Die **[!UICONTROL Adobe Experience Cloud]** Das externe Konto wird verwendet, um Adobe Identity Management Service (IMS) für die Verbindung mit Adobe Campaign zu implementieren.
 
    ![](../assets/do-not-localize/glass.png) Weitere Informationen zu Adobe Identity Management Service (IMS) finden Sie in [diesem Abschnitt](../start/connect.md#connect-ims).
 
 * **Web Analytics**
 
-   Verwenden Sie das externe Konto **[!UICONTROL Web Analytics (Adobe Analytics)]**, um die Datenübertragung von Adobe Analytics zu Adobe Campaign zu konfigurieren.
+   Die **[!UICONTROL Web Analytics (Adobe Analytics)]** Das externe Konto wird verwendet, um die Datenübertragung von Adobe Analytics zu Adobe Campaign zu konfigurieren.
 
    ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aa.md).
 
-   ![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Adobe Analytics mit Campaign zu integrieren.
+* **Adobe Experience Manager**
 
-   * **Adobe Experience Manager**
    Mit dem externen Konto **[!UICONTROL AEM]** können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten.
 
    ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aem.md).
-
-   ![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Adobe Experience Manager mit Adobe Campaign zu integrieren.
 
 
 ## Externe CRM-Connector-Konten
