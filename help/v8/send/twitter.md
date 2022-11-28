@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem Twitter-Konto zu posten:
 
    ![](assets/tw-new-delivery.png)
 
-1. Auswählen der Hauptzielgruppe      
+1. Wählen Sie die Hauptzielgruppe aus.      
 
    Wählen Sie die Konten aus, an die Sie Tweets senden möchten.
 
@@ -80,7 +80,7 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem Twitter-Konto zu posten:
    1. Klicken Sie auf das Dropdown-Menü **[!UICONTROL Personalisierung testen]** und wählen Sie **[!UICONTROL Dienst]** aus.
    1. Wählen Sie im Feld **[!UICONTROL Ordner]** den Dienstordner aus, der Ihr Twitter-Konto enthält.
 
-1. Durchführen eines Testversands
+1. Führen Sie einen Testversand durch.
 
    Bevor Sie Ihren Tweet posten, überprüfen Sie ihn anhand eines Testversands. Sie erhalten dann ein exaktes Rendering des veröffentlichten Tweets auf einer privaten Twitter-Testseite.
 

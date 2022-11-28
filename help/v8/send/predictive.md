@@ -63,7 +63,7 @@ Die prädiktive Sendezeitoptimierung wird auf Profilebene gespeichert:
 
 >[!NOTE]
 >
->Das Modell benötigt mindestens einen Monat lang Daten, um signifikante Ergebnisse zu erzielen. Diese prädiktiven Funktionen sind nur für E-Mail- und Push-Kanäle verfügbar.
+>Das Modell benötigt mindestens einen Monat an Daten, um signifikante Ergebnisse zu erzielen. Diese prädiktiven Funktionen sind nur für E-Mail- und Push-Kanäle verfügbar.
 
 
 ## Bewertung prädiktiver Interaktionen {#predictive-scoring}

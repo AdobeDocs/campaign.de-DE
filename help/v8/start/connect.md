@@ -1,6 +1,6 @@
 ---
-title: Verbindung mit Campaign v8 herstellen
-description: Erfahren Sie, wie Sie eine Verbindung zu Adobe Campaign v8 herstellen und die Konsole auf Ihrem Computer installieren, um den Zugriff zu erleichtern.
+title: Herstellen einer Verbindung mit Campaign v8
+description: Erfahren Sie, wie Sie eine Verbindung mit Adobe Campaign v8 herstellen und die Konsole auf Ihrem Computer installieren, um den Zugriff zu erleichtern.
 feature: Client Console
 role: User
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: f381a2ec91b7179a51d91f9b7414ea39db03cd71
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 

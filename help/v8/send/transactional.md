@@ -193,7 +193,7 @@ Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalt
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### Durchführen eines Testversands
+### Führen Sie einen Testversand durch.
 
 Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versand einen Testversand durchzuführen.
 
