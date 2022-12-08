@@ -8,17 +8,17 @@ exl-id: 5bd8dbba-7a06-4737-bc5a-60354f91c709
 source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Ordnerberechtigungen verwalten{#manage-folder-permissions}
+# Verwalten von Ordnerberechtigungen{#manage-folder-permissions}
 
 ## Beschränken des Zugriffs auf einen Ordner{#restrict-access-to-a-folder}
 
 Verwenden Sie Berechtigungen für Ordner, um den Zugriff auf Campaign-Daten zu organisieren und zu steuern.
 
-Die Ordnerverwaltung wird im Abschnitt [diese Seite](../audiences/folders-and-views.md).
+Die Ordnerverwaltung wird auf [dieser Seite](../audiences/folders-and-views.md) beschrieben.
 
 Gehen Sie wie folgt vor, um Berechtigungen für einen bestimmten Campaign-Ordner zu bearbeiten:
 

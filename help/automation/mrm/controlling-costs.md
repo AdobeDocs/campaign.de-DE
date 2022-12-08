@@ -6,13 +6,13 @@ exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
 source-git-commit: e6b1790832be6331f4b27cc50b5d034ad738a822
 workflow-type: tm+mt
 source-wordcount: '2479'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Kosten kontrollieren{#controlling-costs}
 
-Mit Adobe Campaign können Sie geplante, eingesetzte und in Rechnung gestellte Marketingkosten kontrollieren und mithilfe des Marketing Resource Management-Moduls nach Kategorie aufschlüsseln.
+Adobe Campaign ermöglicht mit dem MRM-Modul die Kontrolle der geplanten, eingesetzten und berechneten Marketing-Kosten sowie ihre Aufschlüsselung nach Kategorien.
 
 Die für die unterschiedlichen Kampagnenvorgänge anfallenden Kosten werden einem zuvor festgesetzten Budget zugeteilt. Die Beträge können in verschiedene Kategorien verteilt werden, um eine bessere Lesbarkeit und detailliertere Berichte der Marketingkosten zu ermöglichen.
 
@@ -24,20 +24,20 @@ Zur Nutzung der Budget-Verwaltung mit MRM sind folgende Etappen umzusetzen:
 
 1. Definieren Sie das Budget. [Weitere Informationen](#creating-a-budget).
 
-1. Definieren Sie die Kostenberechnungsmethode: Kostenstrukturen werden für die Dienstleister bestimmt. [Weitere Informationen](../campaigns/providers--stocks-and-budgets.md).
+1. Definieren Sie die Kostenberechnungsmethode: Für die Dienstleister werden Kostenstrukturen definiert. [Weitere Informationen](../campaigns/providers--stocks-and-budgets.md).
 
-1. Definieren Sie die Kampagnenkosten (Sendungen/Aufgaben) : die durch Sendungen und Aufgaben anfallenden Kosten werden einzeln oder global für die Kampagnenvorlage angegeben. [Weitere Informationen](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
+1. Definieren Sie die Kosten der Kampagne (Sendungen/Aufgaben): Die durch Sendungen und Aufgaben anfallenden Kosten werden einzeln oder pauschal in der Kampagnenvorlage angegeben. [Weitere Informationen](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
 
-1. Konsolidieren: Je nach Fortschritt der Aufgaben, Sendungen und Kampagnen werden die Kosten berechnet und an das entsprechende Budget weitergeleitet. Wenn die Erstellung der Kampagne ausreichend fortgeschritten ist, kann der Erfüllungsstatus des Kampagnenbudgets in **[!UICONTROL Angegeben]** geändert werden. Die berechneten Kosten des Programms werden daraufhin automatisch mit den berechneten Kosten der Kampagnen konsolidiert. [Weitere Informationen](#cost-commitment--calculation-and-charging).
+1. Konsolidieren Sie: Gemäß dem Fortschrittsstatus der Aufgaben, Sendungen und Kampagnen werden die Kosten berechnet und das entsprechende Budget wird damit belastet. Wenn die Erstellung der Kampagne ausreichend fortgeschritten ist, kann der Erfüllungsstatus des Kampagnenbudgets in **[!UICONTROL Angegeben]** geändert werden. Die berechneten Kosten des Programms werden daraufhin automatisch mit den berechneten Kosten der Kampagnen konsolidiert. [Weitere Informationen](#cost-commitment--calculation-and-charging).
 
 ## Erstellen eines Budgets {#creating-a-budget}
 
 Gehen Sie wie folgt vor, um ein Budget zu erstellen:
 
-1. Navigieren Sie zum **[!UICONTROL Kampagnenverwaltung > Budgets]** Knoten des Campaign-Explorer.
+1. Navigieren Sie zum Knoten **[!UICONTROL Kampagnen-Management > Budgets]** des Campaign-Explorers.
 1. Klicken Sie auf das Symbol **[!UICONTROL Neu]**, benennen und speichern Sie das Budget.
-1. Geben Sie den Anfangsbetrag ein: den zugewiesenen Betrag im entsprechenden Feld angeben. Die anderen Beträge werden automatisch angegeben. [Weitere Informationen](#calculating-amounts).
-1. Definieren Sie den Gültigkeitszeitraum durch Eingabe des Start- und Enddatums. Diese Informationen sind nur als Hinweis zu verstehen.
+1. Anfangsbetrag eingeben: geben Sie im entsprechenden Feld den zugewiesenen Betrag an. Die anderen Beträge werden automatisch angegeben. [Weitere Informationen](#calculating-amounts).
+1. Definieren Sie den Gültigkeitszeitraum durch Eingabe des Start- und Enddatums. Diese Informationen sind lediglich als Hinweis zu verstehen.
 1. Erstellen Sie die Ausgabenkategorien, denen die für Kampagnen, Sendungen, Aufgaben usw. anfallenden Kosten in diesem Budget zugeordnet werden können. [Weitere Informationen](#expense-categories).
 
 ![](assets/s_ncs_user_budget_create_and_save.png)
@@ -141,7 +141,7 @@ Abhängig von diesen Kostenkategorien werden die entsprechenden Kostenstrukturen
 
 >[!NOTE]
 >
->Kostenstellen und -strukturen werden im Abschnitt [diese Seite](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
+>Die Kostenstellen und -strukturen werden auf [dieser Seite](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories) dargestellt.
 
 ## Entstehung, Berechnung und Anrechnung von Kosten {#cost-commitment--calculation-and-charging}
 
@@ -274,7 +274,7 @@ Beim Bearbeiten der berechneten Kosten können Sie die Kostenverteilung sowie St
 
 #### Schritt 5: Aufgaben erstellen {#step-5---creating-tasks}
 
-Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstrukturen waren [früher erstellt](#step-2---configuring-the-service-provider-and-defining-the-cost-structures).
+Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstrukturen [früher erstellt](#step-2---configuring-the-service-provider-and-defining-the-cost-structures) wurden.
 
 Klicken Sie dazu im Kampagnen-Dashboard auf die Schaltfläche **[!UICONTROL Aufgabe hinzufügen]**. Benennen Sie die Aufgabe und klicken Sie auf **[!UICONTROL Speichern]**.
 

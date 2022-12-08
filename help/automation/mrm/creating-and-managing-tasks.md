@@ -6,7 +6,7 @@ exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
 source-git-commit: 094743fef69e137f80b670f0bf31dce56c282c34
 workflow-type: tm+mt
 source-wordcount: '3910'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -32,13 +32,13 @@ Eine Liste der Aufgaben kann über den Tab **[!UICONTROL Kampagnen]** angezeigt 
 
 ![](assets/campaign-task-dashboard.png)
 
-Sie können alle Aufgaben des aktuellen Benutzers anzeigen.
+Hier werden alle Aufgaben des aktuellen Benutzers aufgeführt.
 
-Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschritt einer Aufgabe ](#progress-status-of-a-task).
+Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschrittsstatus einer Aufgabe ](#progress-status-of-a-task).
 
 ### Aufgaben filtern {#filtering-tasks}
 
-Wenn Sie diese Ansicht anzeigen, wird sie automatisch gefiltert, um nur die **aktuelle Operatoraufgaben**. Sie können die Aufgaben auch mithilfe der Felder im oberen Bereich des Fensters filtern.
+Wenn Sie diese Ansicht anzeigen, wird sie automatisch gefiltert, um nur die **aktuelle Benutzeraufgaben** anzuzeigen. Sie können die Aufgaben auch mithilfe der Felder im oberen Bereich des Fensters filtern.
 
 ### Aufgaben bearbeiten {#editing-tasks}
 
@@ -50,7 +50,7 @@ Klicken Sie auf eine Aufgabe, um sie zu bearbeiten.
 
 Gehen Sie wie folgt vor, um eine Aufgabe zu erstellen:
 
-1. Navigieren Sie zum **[!UICONTROL Aufgaben]** im **[!UICONTROL Kampagnen]** Registerkarte und klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Navigieren Sie zum Link **[!UICONTROL Aufgaben]** in der Registerkarte **[!UICONTROL Kampagnen]** und klicken Sie auf **[!UICONTROL Erstellen]**.
 
    ![](assets/create-a-task-from-dashboard.png)
 
@@ -68,37 +68,37 @@ Nachdem eine Aufgabe erstellt wurde, wird sie zum Kampagnenkalender, zum Kampagn
 
 Nach der Erstellung können Sie die Aufgabe konfigurieren, indem Sie Folgendes definieren:
 
-* Manager und Teilnehmer. [Weitere Informationen](#manager-and-participants)
-* Der Erstellungsplan. [Weitere Informationen](#execution-schedule)
+* Manager und Teilnehmende. [Weitere Informationen](#manager-and-participants)
+* Erstellungsplan. [Weitere Informationen](#execution-schedule)
 * Mittelbindungen. [Weitere Informationen](#expenses-and-revenues)
 
-Sie können auch [validierungsverantwortliche Benutzer](#reviewers) und [Referenzdokumente](#documents-referenced).
+Sie können auch [Validierungsverantwortliche](#reviewers) und [Referenzdokumente](#documents-referenced) hinzufügen.
 
-Der Lebenszyklus einer Aufgabe wird im Abschnitt [diesem Abschnitt](#life-cycle).
+Der Lebenszyklus einer Aufgabe wird in [diesem Abschnitt](#life-cycle) vorgestellt.
 
-### Verantwortlicher und Teilnehmer {#manager-and-participants}
+### Manager und Teilnehmende {#manager-and-participants}
 
 Die Aufgabe wird standardmäßig dem Benutzer zugewiesen, der sie erstellt hat. Dieser Benutzer wird benachrichtigt, wenn für diese Aufgabe eine Aktion erforderlich ist.
 
-Sie können einen anderen Operator aus dem **[!UICONTROL Zugeordnet zu]** Dropdown-Liste.
+Sie können einen anderen Benutzer aus der Dropdown-Liste **[!UICONTROL Zugewiesen an]** auswählen.
 
 ![](assets/task-assigned-to.png)
 
 >[!NOTE]
 >
->Die Benutzerverwaltung wird im Abschnitt [diesem Abschnitt](../../v8/start/gs-permissions.md).
+>Die Benutzerverwaltung wird in [diesem Abschnitt](../../v8/start/gs-permissions.md) beschrieben.
 >
->Nur der für eine Aufgabe verantwortliche Benutzer darf diese schließen.
+>Der für eine Aufgabe verantwortliche Benutzer ist als Einziger dazu berechtigt, die Aufgabe zu schließen.
 
-Sie können mehr Benutzer angeben, die an der Ausführung der Aufgabe beteiligt sind. Diese Benutzer dürfen die Aufgabe nicht schließen: sie dürfen nur die ihnen zugewiesene Aufgabe validieren.
+Sie können mehr Benutzer angeben, die an der Ausführung der Aufgabe beteiligt sind. Diese Benutzer dürfen die Aufgabe nicht schließen: sie dürfen nur die ihnen zugewiesene Aufgabe genehmigen.
 
-Gehen Sie wie folgt vor, um Aufgabenoperatoren hinzuzufügen:
+Gehen Sie wie folgt vor, um Aufgabenbenutzer hinzuzufügen:
 
-1. Klicken Sie auf **[!UICONTROL Ressourcen]** in der Symbolleiste der Aufgabe.
+1. Klicken Sie auf **[!UICONTROL Ressourcen]** in der Aufgabensymbolleiste.
 
    ![](assets/add-task-resources.png)
 
-1. Klicken **[!UICONTROL Hinzufügen]** und wählen Sie die betroffenen Benutzer aus.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die betroffenen Benutzer aus.
 1. Geben Sie die Nutzungsrate ein: Dies entspricht dem Arbeitsaufwand, der dem Benutzer für die Dauer der Aufgabenausführung zugewiesen wurde. Dieser Satz ist nur ein Hinweis und wird in Prozent ausgedrückt.
 
    ![](assets/define-operator-task-workload.png)
@@ -107,15 +107,15 @@ Gehen Sie wie folgt vor, um Aufgabenoperatoren hinzuzufügen:
 
    Zudem ist es möglich, für jeden Benutzer einen geplanten sowie einen realisierten Arbeitsaufwand festzulegen. Diese Angaben dienen ebenfalls nur informativen Zwecken.
 
-1. Sie können eine Erinnerung aus dem **[!UICONTROL Erinnerung hinzufügen...]** Link. Alle an der Aufgabe beteiligten Benutzer werden vor ihrem Enddatum per E-Mail benachrichtigt.
+1. Sie können eine Erinnerung über den Link **[!UICONTROL Erinnerung hinzufügen...]** konfigurieren. Vor dem Enddatum der Aufgabe wird eine E-Mail-Benachrichtigung an alle an der Aufgabe beteiligten Benutzer gesendet.
 
    ![](assets/task-op-add-a-reminder.png)
 
-1. Sie können auch eine Benachrichtigung senden, bevor die Aufgabe gestartet wird. Um dies einzurichten, wählen Sie das Datum im **[!UICONTROL Erstbenachrichtigung]** -Feld.
-1. Wenn das Enddatum erreicht ist und die Aufgabe nicht geschlossen wird, kann eine Benachrichtigung an den Bevollmächtigten oder die Gruppe von Bevollmächtigten gesendet werden, die in der Variablen **[!UICONTROL Bevollmächtigter]** Dropdown-Liste.
+1. Sie können auch eine Benachrichtigung senden, bevor die Aufgabe gestartet wird. Um dies einzurichten, wählen Sie das Datum im Feld **[!UICONTROL Erstbenachrichtigung]** aus.
+1. Wenn das Enddatum erreicht ist und die Aufgabe nicht geschlossen wird, kann eine Benachrichtigung an den Bevollmächtigten oder die Gruppe von Bevollmächtigten gesendet werden, die in der Dropdown-Liste **[!UICONTROL Zugewiesene Benutzer]** ausgewählt sind.
 
 
-Über das Benutzer-Dashboard kann dessen Arbeitslast, d.h. seine anderen Aufgaben, eingesehen werden.
+Über das Benutzer-Dashboard kann dessen Arbeitslast, d. h. seine anderen laufenden Aufgaben, eingesehen werden.
 
 ![](assets/operator-dashboard.png)
 
@@ -123,23 +123,23 @@ Gehen Sie wie folgt vor, um Aufgabenoperatoren hinzuzufügen:
 
 Neben den Teilnehmern können Sie auch Benutzer definieren, die die Aufgabe nach Abschluss überprüfen.
 
-Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Aufgabenvalidierung aktivieren]** im unteren Bereich der **[!UICONTROL Ressourcen]** Fenster. Dabei kann es sich um einen einzelnen Benutzer, eine Benutzergruppe oder eine Benutzerliste handeln.
+Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Aufgabenvalidierung aktivieren]** im unteren Bereich des Fensters **[!UICONTROL Ressourcen]**. Dabei kann es sich um einen einzelnen Benutzer, eine Benutzergruppe oder eine Benutzerliste handeln.
 
 Um eine Benutzerliste zu erstellen, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]** rechts von dem Feld, in dem der erste Validierungsverantwortliche angegeben wird. Fügen Sie nun so viele zusätzliche Benutzer wie nötig hinzu, wie im folgenden Beispiel:
 
 ![](assets/enable-task-approval.png)
 
-Im unteren Bereich des Konfigurationsfensters können Sie einen Validierungsplan für die Aufgabe definieren. Standardmäßig haben die Validierer drei Tage ab dem Sendedatum Zeit, um die Aufgabe zu genehmigen. Sie können auch eine Erinnerung hinzufügen, die den betroffenen Benutzern automatisch vor Ablauf der Validierungsfrist zugeschickt wird.
+Im unteren Bereich des Konfigurationsfensters können Sie einen Validierungsplan für die Aufgabe definieren. Standardmäßig haben Validierungsverantwortliche ab dem Unterbreitungsdatum drei Tage Zeit, um die Aufgabe zu genehmigen. Sie können auch eine Erinnerung hinzufügen, die den betroffenen Benutzern automatisch vor Ablauf der Validierungsfrist zugeschickt wird.
 
-Der Aufgabenverantwortliche kann die Validierung selbst vornehmen, selbst wenn andere Benutzer hierfür bereits zugewiesen wurden. Wenn kein validierungsverantwortlicher Benutzer definiert wurde, werden die Benachrichtigungen an den Aufgabenverantwortlichen gesendet. Alle anderen Adobe Campaign-Operatoren mit **[!UICONTROL Administrator]** -Berechtigungen können auch die Aufgabe validieren. Sie erhalten jedoch keine Benachrichtigungen.
+Der Aufgabenverantwortliche kann die Validierung selbst vornehmen, und zwar sogar dann, wenn andere Benutzer hierfür bestimmt wurden. Wenn kein Validierungsverantwortlicher bestimmt wurde, werden die Benachrichtigungen an den Verantwortlichen der Aufgabe gesendet. Alle anderen Adobe Campaign-Benutzer mit **[!UICONTROL Admin]**-Berechtigungen können die Aufgabe ebenfalls genehmigen. Sie erhalten jedoch keine Benachrichtigungen.
 
 ### Referenzierte Dokumente {#documents-referenced}
 
-Sie können [Dokumente und Marketing-Ressourcen](managing-marketing-resources.md) einer Aufgabe.
+Sie können einer Aufgabe [Dokumente und Marketing-Ressourcen](managing-marketing-resources.md) hinzufügen.
 
 Um dies durchzuführen:
 
-1. Öffnen Sie die Aufgabe und klicken Sie auf die **[!UICONTROL Dokumente]** in der Symbolleiste der Aufgabe.
+1. Öffnen Sie die Aufgabe und klicken Sie in der Aufgabensymbolleiste auf das Symbol **[!UICONTROL Dokumente]**.
 
    ![](assets/add-documents-to-a-task.png)
 
@@ -188,9 +188,9 @@ Standardmäßig entspricht das in den Aufgabendetails angezeigte Budget dem der 
 
 >[!NOTE]
 >
->Weitere Informationen zu Ausgaben und Budgets finden Sie unter [diesem Abschnitt](../campaigns/providers--stocks-and-budgets.md#cost-commitment--calculation-and-charging).
+>Weitere Informationen zu Ausgaben und Budgets finden Sie in [diesem Abschnitt](../campaigns/providers--stocks-and-budgets.md#cost-commitment--calculation-and-charging).
 
-Im gleichen Fenster besteht die Möglichkeit, zu erfüllende Zielvorgaben festzulegen. Die Vorgaben entsprechend den geplanten Einnahmen der Aufgabe.
+Im gleichen Fenster besteht die Möglichkeit, zu erfüllende Zielvorgaben festzulegen. Die Zielvorgaben werden in Form von prognostizierten Einnahmen für die Aufgabe ausgedrückt.
 
 ### Dienstleister {#service-providers}
 

@@ -8,7 +8,7 @@ exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 source-git-commit: 515520bb5b7131fc2ed2d1b2a843373f01af306a
 workflow-type: tm+mt
 source-wordcount: '703'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -107,4 +107,4 @@ Der folgende Ordner enthält beispielsweise nur Kontakte mit einer E-Mail-Adress
 
 ## Beschränken des Zugriffs auf einen Ordner{#restrict-access-to-a-folder}
 
-Verwenden Sie Berechtigungen für Ordner, um den Zugriff auf Campaign-Daten zu organisieren und zu steuern. Erfahren Sie mehr über die Berechtigungen für Ordner in [diesem Abschnitt](../start/folder-permissions.md).
+Verwenden Sie Berechtigungen für Ordner, um den Zugriff auf Campaign-Daten zu organisieren und zu steuern. Weiterführende Informationen zu Berechtigungen finden Sie in [diesem Abschnitt](../start/folder-permissions.md).

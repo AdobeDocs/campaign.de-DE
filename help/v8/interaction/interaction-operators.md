@@ -8,7 +8,7 @@ exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
 source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -22,14 +22,14 @@ Zwei Typen von Benutzern können Campaign Interaction verwenden: **Angebotsveran
 ## Erstellen eines angebotsverantwortlichen Benutzers{#offer-manager}
 
 1. Erstellen Sie einen Benutzer. [Weitere Informationen](../start/manage-permissions.md#add-users)
-1. Navigieren Sie zum **[!UICONTROL Gruppen und spezifische Berechtigungen]** Fenster, klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die **[!UICONTROL Angebotsverantwortlicher]** hinzugefügt.
+1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Angebotsverantwortliche Benutzer]** aus.
 
-Die mit Angebotsmanagern verknüpften Berechtigungen werden beschrieben. [here](../start/manage-permissions.md#ootb-productprofiles)
+Die mit Angebotsverantwortlichen verknüpften Berechtigungen werden [hier](../start/manage-permissions.md#ootb-productprofiles) beschrieben.
 
 ## Erstellen eines versandverantwortlichen Benutzers {#delivery-manager}
 
 1. Erstellen Sie einen Benutzer. [Weitere Informationen](../start/manage-permissions.md#add-users)
-1. Navigieren Sie zum **[!UICONTROL Gruppen und spezifische Berechtigungen]** Registerkarte, klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die **[!UICONTROL Versandverantwortlicher]** hinzugefügt.
+1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
 
 Versandverantwortliche Benutzer können mit den ihnen zugewiesenen Rechten die folgenden Aufgaben ausführen:
 

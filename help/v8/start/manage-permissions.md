@@ -8,7 +8,7 @@ exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
 workflow-type: tm+mt
 source-wordcount: '1756'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Als Produktadministrator können Sie Benutzer hinzufügen und Zugriff auf Campai
 
 Gehen Sie wie folgt vor, um einen Benutzer hinzuzufügen:
 
-1. Im [Admin Console](https://adminconsole.adobe.com/enterprise)Startseite von {target=&quot;_blank&quot;} auswählen **Benutzer hinzufügen**.
+1. Wählen Sie auf der Startseite der [Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;} die Option **Benutzer hinzufügen** aus.
 
    ![](assets/add-a-user.png)
 
@@ -29,82 +29,82 @@ Gehen Sie wie folgt vor, um einen Benutzer hinzuzufügen:
 
    ![](assets/add-a-product-profile.png)
 
-   Die in Campaign integrierten Produktprofile werden im Abschnitt [diesem Abschnitt](#ootb-productprofiles).
+   Die in Campaign integrierten Produktprofile werden in [diesem Abschnitt](#ootb-productprofiles) aufgelistet.
 
-   Erfahren Sie, wie Sie Benutzergruppen in erstellen [diesem Abschnitt](#user-groups)
+   Erfahren Sie in [diesem Abschnitt](#user-groups), wie Sie Benutzergruppen erstellen können
 
-1. Wählen Sie **Speichern** aus. Der Benutzer wird hinzugefügt und in der Liste &quot;Benutzer&quot;angezeigt. Wenn Sie Benutzern eine Administratorrolle oder ein Produktprofil zuweisen, erhalten diese eine E-Mail-Benachrichtigung. Benutzer müssen dem Link folgen, um ihr Profil auszufüllen.
+1. Klicken Sie auf **Speichern**. Der Benutzer wird hinzugefügt und in der Benutzerliste angezeigt. Wenn Sie Benutzenden eine Administratorrolle oder ein Produktprofil zuweisen, erhalten diese eine E-Mail-Benachrichtigung. Benutzende müssen dem Link folgen, um ihr Profil auszufüllen.
 
-Weitere Informationen zur Benutzererstellung finden Sie in der Admin Console unter [diese Seite](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target=&quot;_blank&quot;}.
+Weitere Informationen zur Benutzererstellung finden Sie in der Admin Console auf [diese Seite](https://helpx.adobe.com/de/enterprise/using/manage-users-individually.html){target=&quot;_blank&quot;}.
 
-Wenn neue Benutzer [bei Campaign anmelden](connect.md) mit ihrer Adobe ID werden sie der Liste der Campaign-Benutzer in der Clientkonsole hinzugefügt. Kampagnenoperatoren werden im **[!UICONTROL Administration > Zugriffe > Benutzer]** Ordner des Campaign-Explorers.
+Wenn sich neue Benutzende mit ihrer Adobe ID [bei Campaign anmelden](connect.md), werden sie der Liste der Campaign-Benutzenden in der Client-Konsole hinzugefügt. Campaign-Benutzende werden im Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Benutzer]** des Campaign-Explorers gespeichert.
 
-## Arbeiten mit Produktprofilen{#product-profiles}
+## Arbeiten mit externen Profilen{#product-profiles}
 
-Verwenden Sie Produktprofile, um Benutzer mit den im Produkt enthaltenen Funktionen zu berechtigen.
+Verwenden Sie Produktprofile, um Benutzer mit den Fähigkeiten auszustatten, die das Produkt beinhaltet.
 
-* Für jedes Produkt auf der Admin Console können Sie ein oder mehrere Produktprofile erstellen.
-* In jedem Produktprofil weisen Sie Benutzer und Benutzergruppen zu (in Ihrer Organisation).
-* Wenn sich ein Benutzer mit seinen im Produktprofil angegebenen Anmeldeinformationen anmeldet, erhält er Zugriff auf die Apps und Dienste des Produkts, auf dem das Produktprofil basiert.
+* Für jedes Produkt in der Admin Console können Sie ein oder mehrere Produktprofile erstellen.
+* In jedem Produktprofil weisen Sie Benutzende und Benutzergruppen (in Ihrer Organisation) zu.
+* Wenn sich ein Benutzer mit seinen im Produktprofil angegebenen Anmeldeinformationen anmeldet, erhält er Zugriff auf die Apps und Services des Produkts, auf dem das Produktprofil basiert.
 
-Diese Produktprofile stimmen mit den Benutzergruppen überein, die im **[!UICONTROL Administration > Zugriffe > Benutzergruppen]** Ordner des Campaign-Explorers.
+Diese Produktprofile stimmen mit den Benutzergruppen überein, die im Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Benutzergruppen]** des Campaign-Explorers gespeichert sind.
 
 In der Admin Console verwenden Produktprofile die folgende Syntax:
 
-campaign - `<your instance>` - Interner Name der Benutzergruppe
+Kampagne – `<your instance>` – interner Name der Benutzergruppe
 
-Beispiel: für die **Versandverantwortlicher** -Gruppe in der Testinstanz bezeichnet, lautet das Produktprofil in der Admin Console:
+Beispielsweise lautet für die Gruppe der **Versandverantwortlichen** in der Testinstanz das Produktprofil in der Admin Console:
 
-campaign - test - delivery
+Kampagne – Test – Versand
 
 Sie können Standardproduktprofile verwenden oder neue erstellen.
 
-### Produktprofil erstellen{#create-product-profile}
+### Erstellen eines Produktprofils{#create-product-profile}
 
-Um ein neues Produktprofil zur Adobe hinzuzufügen, müssen Sie es zunächst in der Campaign-Clientkonsole erstellen und dann der Admin Console hinzufügen.
+Um ein neues Produktprofil zu Adobe hinzuzufügen, müssen Sie es zunächst in der Client-Konsole von Campaign erstellen und dann der Admin Console hinzufügen.
 
-Gehen Sie wie folgt vor, um beispielsweise ein Produktprofil &quot;valiwers&quot;zu erstellen.
+Gehen Sie wie folgt vor, um beispielsweise ein Produktprofil „Validierungsverantwortliche“ zu erstellen.
 
-#### Benutzergruppe in Campaign erstellen{#create-op-group}
+#### Erstellen der Benutzergruppe in Campaign{#create-op-group}
 
-1. Verbindung zu Campaign herstellen, Explorer öffnen und navigieren Sie zu **[!UICONTROL Administration > Zugriffe > Benutzergruppen]**.
-1. Klicken **[!UICONTROL Neu]**und legen Sie den Namen der Benutzergruppe fest und legen Sie deren internen Namen fest (&#39;valiviewers&#39;).
+1. Stellen Sie eine Verbindung zu Campaign her, öffnen Sie den Explorer und navigieren Sie zu **[!UICONTROL Administration > Zugriffsverwaltung > Benutzergruppen]**.
+1. Klicken Sie auf **[!UICONTROL Neu]** und legen Sie den Namen der Benutzergruppe sowie deren internen Namen („Validierungsverantwortliche“) fest.
    ![](assets/new-op-group.png)
-1. Definieren Sie die zugehörigen Berechtigungen durch Auswahl von spezifischen Berechtigungen. Spezifische Berechtigungen werden im Abschnitt [diesem Abschnitt](#use-named-rights)
+1. Definieren Sie die zugehörigen Berechtigungen durch Auswahl von spezifischen Berechtigungen. Die spezifischen Berechtigungen werden in [diesem Abschnitt](#use-named-rights) beschrieben
 1. Speichern Sie die neue Benutzergruppe.
 
-#### Produktprofil in der Admin Console erstellen{#create-profile-in-admin-console}
+#### Erstellen des Produktprofils in der Admin Console{#create-profile-in-admin-console}
 
-1. Stellen Sie eine Verbindung zum [Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;}.
-1. Aus dem **Produkt und Dienstleistungen** auf der Startseite öffnen Sie das Campaign-Produkt.
-1. Klicken **Neues Profil** und geben Sie den Namen des zu erstellenden Produktprofils mit der exakt korrekten Syntax wie beschrieben ein. [here](#product-profiles). In unserem Beispiel geben wir Folgendes ein: campaign - `<your-instance-name>` - validierungsverantwortliche Benutzer
+1. Stellen Sie eine Verbindung zur [Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;} her.
+1. Öffnen Sie vom Abschnitt **Produkt und Dienstleistungen** auf der Startseite aus das Campaign-Produkt.
+1. Klicken Sie auf **Neues Profil** und geben Sie den Namen des zu erstellenden Produktprofils mit der exakt korrekten Syntax wie [hier](#product-profiles) beschrieben ein. In unserem Beispiel geben wir Folgendes ein: Kampagne – `<your-instance-name>` – Validierungsverantwortliche
 
    ![](assets/new-product-profile-ui.png)
 
 1. Speichern Sie Ihre Änderungen.
 
-Sie können jetzt Benutzer zu diesem neuen Produktprofil hinzufügen, wie hier beschrieben: [diesem Abschnitt](#add-users).
+Sie können jetzt Benutzende zu diesem neuen Produktprofil hinzufügen, wie in [diesem Abschnitt](#add-users) beschrieben.
 
-Es empfiehlt sich, Benutzergruppen Produktprofile zuzuweisen. Die Verwaltung von Berechtigungen durch Benutzer ist kein nachhaltiges Modell.
+Es empfiehlt sich, Benutzergruppen Produktprofile zuzuweisen. Die Verwaltung von Berechtigungen pro Benutzer ist kein nachhaltiges Modell.
 
 
 ### Standardproduktprofile und Benutzergruppen {#ootb-productprofiles}
 
-Adobe Campaign verfügt über integrierte Funktionen **Produktprofile** die definiert werden, wenn Adobe Ihre Umgebung aktiviert.
+Adobe Campaign verfügt über integrierte **Produktprofile** die definiert werden, wenn Adobe Ihre Umgebung aktiviert.
 
 ![](assets/ootb-product-profiles.png)
 
-Diese Produktprofile stimmen mit Campaign überein **Benutzergruppen**. Standardbenutzergruppen und ihre [spezifische Berechtigungen](#use-named-rights) sind unten aufgeführt:
+Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. Standardbenutzergruppen und ihre [spezifische Berechtigungen](#use-named-rights) werden im Folgenden aufgeführt:
 
-1. **[!UICONTROL Administrator]** (admin)
+1. **[!UICONTROL Administrator]** (Admin)
 
-   Die Benutzer in dieser Gruppe haben vollen Zugriff auf die Instanz. Administratoren sind Benutzer, die auf die meisten technischen Bereiche der Benutzeroberfläche zugreifen können.
+   Die Benutzenden in dieser Gruppe haben vollen Zugriff auf die Instanz. Admins sind Benutzer, die Zugriff auf die meisten technischen Elemente der Benutzeroberfläche haben.
 
    Die Gruppe beinhaltet die folgende spezifische Berechtigung:
 
    * **[!UICONTROL ADMINISTRATION]**: Berechtigt zum Ausführen, Erstellen, Bearbeiten und Löschen von Objekten wie Workflows, Sendungen, Skripten usw.
 
-1. **[!UICONTROL Versandverantwortliche Benutzer]** (delivery)
+1. **[!UICONTROL Versandverantwortliche Benutzer]** (Versand)
 
    Die Benutzer dieser Gruppe sind für die Versandverwaltung verantwortlich. Die Gruppe verleiht Zugriff auf die für die Erstellung und Vorbereitung von Sendungen notwendigen Hauptressourcen (Kampagnentypologien, Versandmappings, Standardvorlagen, Gestaltungsbausteine etc.).
 
@@ -113,7 +113,7 @@ Diese Produktprofile stimmen mit Campaign überein **Benutzergruppen**. Standard
    * **[!UICONTROL SENDUNGEN VORBEREITEN]**: Berechtigt zum Erstellen, Bearbeiten und Starten der Versandanalyse;
    * **[!UICONTROL SENDUNGEN STARTEN]**: Berechtigt zur Validierung von zuvor analysierten Sendungen.
 
-1. **[!UICONTROL Kampagnenverantwortliche Benutzer]** (Vorgang)
+1. **[!UICONTROL Kampagnenverantwortliche Benutzer]** (operation)
 
    Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten. Diese Berechtigung verleiht Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets etc.) im Rahmen von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
 
@@ -128,60 +128,60 @@ Diese Produktprofile stimmen mit Campaign überein **Benutzergruppen**. Standard
 
 1. **[!UICONTROL Autoren]** (content)
 
-   Benutzer dieser Gruppe können auf die Inhaltsordner im Kontext der **[!UICONTROL Content Management]** -Add-on. Diese Gruppe erteilt keine zusätzlichen Berechtigungen.
+   Benutzer dieser Gruppe können auf die Inhaltsordner im Kontext des Add-ons **[!UICONTROL Content-Management]** zugreifen. Diese Gruppe erteilt keine zusätzlichen Berechtigungen.
 
 1. **[!UICONTROL Berichtzugriff]** (Bericht)
 
-   Diese Gruppe sollte externen Benutzern vorbehalten bleiben, um auf die Versandberichte über eine [Webzugriff](../start/campaign-ui.md#web-browser).
+   Diese Gruppe ermöglicht es externen Benutzenden, über einen [Web-Zugriff](../start/campaign-ui.md#web-browser) Versandberichte einzusehen.
 
 1. **[!UICONTROL Workflow-Ausführung]** (Workflow)
 
-   Die Gruppe **[!UICONTROL Workflow-Ausführung]** dient der Ausführungs- und Validierungskontrolle von Zielgruppen-Workflows. Die Benutzer dieser Gruppe verfügen automatisch über die spezifische Berechtigung WORKFLOW. Diese ist neben den Datenzugriffsrechten Vorraussetzung für alle Workflow-bezogenen Aktionen. Die Gruppe **[!UICONTROL Workflow-Ausführung]** verfügt standardmäßig über Lesezugriff auf die Standard-Ordner der Zielgruppen-Workflows und der Workflow-Vorlagen. Die Benutzer dieser Gruppen haben des Weiteren Lese- und Schreibzugriff auf den Ordner der ausstehenden Validierungen.
+   Die Gruppe **[!UICONTROL Workflow-Ausführung]** dient der Ausführungs- und Validierungskontrolle von Zielgruppen-Workflows. Die Benutzer dieser Gruppe verfügen automatisch über die spezifische Berechtigung WORKFLOW. Diese ist neben den Datenzugriffsrechten Voraussetzung für alle Workflow-bezogenen Aktionen. Die Gruppe **[!UICONTROL Workflow-Ausführung]** verfügt standardmäßig über Lesezugriff auf die Standard-Ordner der Zielgruppen-Workflows und der Workflow-Vorlagen. Die Benutzer dieser Gruppe haben des Weiteren Lese- und Schreibzugriff auf den Ordner der ausstehenden Validierungen.
 
-1. **[!UICONTROL Workflow-Supervisoren]** (workflowSupervisor)
+1. **[!UICONTROL Workflow-Verwantwortliche]** (workflowSupervisor)
 
    Benutzer dieser Gruppe verwalten Workflow-Genehmigungen und erhalten im Falle von Warnungen bezüglich Kampagnen-Workflows eine E-Mail-Benachrichtigung.
 
 1. **Lokale/Zentrale Verwaltung** (zentral/lokal)
 
-   Benutzer dieser Gruppe können **[!UICONTROL Dezentrales Marketing]** -Add-on.
+   Benutzende dieser Gruppe können das Add-on **[!UICONTROL Verteiltes Marketing]** verwenden.
 
-1. **[!UICONTROL Angebotsverantwortliche Benutzer]** (Angebot)
+1. **[!UICONTROL Angebotsverantwortliche Benutzer]** (offer)
 
-   Die Benutzer dieser Gruppe können Angebote mithilfe des Interaction-Add-ons erstellen und verwalten. [Weitere Informationen](../interaction/interaction-operators.md).
+   Die Benutzer dieser Gruppe können Angebote mithilfe des Add-ons Interaktion erstellen und verwalten. [Weitere Informationen](../interaction/interaction-operators.md).
 
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
    * **[!UICONTROL EINFÜGEN VON ORDNERN]**: Berechtigt zum Einfügen von Ordnern in den Adobe Campaign-Navigationsbaum (erfordert Schreibzugriff für betroffene Zweige);
    * **[!UICONTROL BEARBEITUNG VON ORDNERN]**: Berechtigt zum Ändern von Ordnereigenschaften wie interner Name, Titel, verknüpftes Bild, Reihenfolge der Unterordner usw.
 
-   Angebotsverantwortliche Benutzer können folgende Aufgaben ausführen:
+   Angebotsverantwortliche Benutzer können mit den ihnen zugewiesenen Rechten die folgenden Aufgaben ausführen:
 
    * Änderung von **[!UICONTROL Design-Umgebungen]**;
    * Ansicht von **[!UICONTROL Live-Umgebungen]**;
    * Konfiguration von administrativen Funktionen (vordefinierte Platzierungen und Filter);
-   * Erstellen und aktualisieren Sie Kategorien.
+   * Kategorien erstellen und aktualisieren.
    * Erstellung und Änderung von Angeboten;
    * Konfiguration von Angebotseignungen;
    * Validierung von Angeboten.
 
    >[!NOTE]
    >
-   >**Angebotsverantwortliche Benutzer** kann ein Angebot nur validieren, wenn kein Validierer angegeben oder in der Angebotsvorlage als Validierer festgelegt wurde.
+   >**Angebotsverantwortliche Benutzer** können ein Angebot nur genehmigen, wenn kein Validierungsverantwortlicher angegeben ist oder wenn sie in der Angebotsvorlage als Validierungsverantwortliche deklariert wurden.
 
-   Berechtigungsmatrix des Angebotsmanagers pro Umgebung ist verfügbar in [diese Seite](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
+   Die Berechtigungsmatrix des angebotsverantwortlichen Benutzers ist verfügbar auf [dieser Seite](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
 
 ## Arbeiten mit Benutzergruppen{#user-groups}
 
-Sie können die Admin Console verwenden, um Benutzergruppen zu erstellen und ihnen Benutzer zuzuweisen.
+Sie können die Admin Console verwenden, um Benutzergruppen zu erstellen und ihnen Benutzende zuzuweisen.
 
-Eine Benutzergruppe ist eine Sammlung verschiedener Benutzer, denen ein freigegebener Berechtigungssatz erteilt werden muss. Erfahren Sie, wie Sie Benutzergruppen in erstellen [diesem Abschnitt](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target=&quot;_blank&quot;}.
+Eine Benutzergruppe ist eine Sammlung verschiedener Benutzender, denen ein gemeinsamer Berechtigungssatz erteilt werden muss. Erfahren Sie in [diesem Abschnitt](https://helpx.adobe.com/de/enterprise/using/user-groups.html){target=&quot;_blank&quot;}, wie Sie Benutzergruppen erstellen.
 
-Sie können Benutzergruppen Produktprofile zuweisen. Alle Benutzer in dieser Gruppe erhalten also dieselben Produktberechtigungen.
+Sie können Produktprofile an Benutzergruppen zuweisen. Alle Benutzenden in dieser Gruppe erhalten also denselben Satz von Produktberechtigungen.
 
 ## Spezifische Berechtigungen{#use-named-rights}
 
-Adobe Campaign verfügt über eine Reihe von spezifischen Berechtigungen, mit denen Sie die den Benutzern und Benutzergruppen zugewiesenen Berechtigungen definieren können. Diese Berechtigungen können über die **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** Ordner des Campaign-Explorers.
+Adobe Campaign verfügt über eine Reihe von spezifischen Berechtigungen, mit denen Sie die den Benutzenden und den Benutzergruppen zugewiesenen Berechtigungen definieren können. Diese Berechtigungen können über den Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** des Campaign-Explorers bearbeitet werden.
 
 Spezifische Berechtigungen gewähren Berechtigungen für:
 
@@ -193,7 +193,7 @@ Mitglieder von Operatorgruppen können Zugriffsrechte auf Ordner gewähren oder 
 
    Zum Beispiel kann es diese Auswirkungen haben: **Schreibzugriff** zum Erstellen neuer Entitäten (wie Sendungen, Profile usw.), **Lesezugriff** zum Verwenden von Entitäten, **Löschzugriff** zum Löschen von Entitäten.
 
-Standardspezifische Berechtigungen in Adobe Campaign sind:
+Standardmäßige spezifische Berechtigungen in Adobe Campaign sind:
 
 * **[!UICONTROL ADMINISTRATION]**: Benutzer mit **[!UICONTROL ADMINISTRATORRECHTEN]** haben vollen Zugriff auf die Instanz. Administratoren können Objekte wie Workflows, Sendungen, Skripte usw. ausführen, erstellen, bearbeiten und löschen.
 
@@ -229,16 +229,16 @@ Standardspezifische Berechtigungen in Adobe Campaign sind:
 
 * **[!UICONTROL SENDUNGEN STARTEN]**: Berechtigt zur Validierung von zuvor analysierten Sendungen. Nach der Versandanalyse wird der Versand bei verschiedenen Validierungsschritten angehalten und muss validiert werden, damit er wieder aufgenommen werden kann. Benutzer mit der Berechtigung **[!UICONTROL SENDUNGEN STARTEN]** können Sendungen validieren.
 
-* **[!UICONTROL SQL-DATENVERWALTUNGSAKTIVITÄT VERWENDEN]**: Berechtigung zum Schreiben eigener SQL-Skripte mithilfe der SQL Data Management-Aktivität zum Erstellen und Ausfüllen von Arbeitstabellen. [Weitere Informationen](../../automation/workflow/sql-data-management.md).
+* **[!UICONTROL SQL-DATEN-MANAGEMENT-AKTIVITÄT VERWENDEN]**: Berechtigt zum Schreiben Ihrer eigenen SQL-Scripts unter Verwendung der SQL-Daten-Management-Aktivität, um Arbeitstabellen zu erstellen und zu füllen. [Weitere Informationen](../../automation/workflow/sql-data-management.md).
 
-* **[!UICONTROL WORKFLOW]**: Diese spezifische Berechtigung gilt für Workflows: Damit können Sie Workflows erstellen, starten und stoppen. Leserechte für die Workflow-Datei sind erforderlich, damit die spezifische Berechtigung angewendet werden kann. Bei Zielgruppen-Workflows die Leseberechtigung auf der **[!UICONTROL Profile und Zielgruppen]** -Ordner erforderlich ist.
+* **[!UICONTROL WORKFLOW]**: Diese spezifische Berechtigung gilt für Workflows: Damit können Sie Workflows erstellen, starten und stoppen. Leserechte für die Workflow-Datei sind erforderlich, damit die spezifische Berechtigung angewendet werden kann. Bei Zielgruppen-Workflows ist die Leseberechtigung für den Ordner **[!UICONTROL Profile und Zielgruppen]** erforderlich.
 
 
 * **[!UICONTROL WEBAPP]**: Berechtigt zur Nutzung von Web-Anwendungen.
 
 >[!NOTE]
 >
->Diese Liste kann je nach den in Ihrer Umgebung installierten Add-ons unterschiedlich sein.
+>Diese Liste kann je nach den Add-ons, die in Ihrer Umgebung installiert sind, unterschiedlich aussehen.
 
 
 

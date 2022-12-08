@@ -8,7 +8,7 @@ exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 6dee08f0f8673e5264f3cb111fe14493980a62fc
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Sie können über Adobe Campaign **[!UICONTROL Explorer]** auf externe Konten zu
 >
 >Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) verwaltet ein spezielles externes **[!UICONTROL Full FDA]**-Konto (ffda) die Verbindung zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank ([!DNL Snowflake]).
 >
->Als Managed Cloud Services-Benutzer werden externe Konten für Ihre Instanz durch Adobe konfiguriert und dürfen nicht geändert werden.
+>Wenn Sie Managed Cloud Services-Benutzer sind, konfiguriert Adobe externe Konten für Ihre Instanz, die nicht geändert werden dürfen.
 
 ## Campaign-spezifische externe Konten
 
@@ -118,7 +118,7 @@ Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der 
 
 * **Externe Datenbank (FDA)**
 
-   Die **Externe Datenbank** Externes Konto vom Typ wird verwendet, um über Federated Data Access (FDA) eine Verbindung zu einer externen Datenbank herzustellen.
+   Ein externes Konto vom Typ **Externe Datenbank** wird verwendet, um über Federated Data Access (FDA) eine Verbindung mit einer externen Datenbank herzustellen.
 
    Externe Datenbanken, die mit Adobe Campaign v8 kompatibel sind, sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
 
@@ -126,7 +126,7 @@ Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der 
 
 * **Twitter**
 
-   Die **Twitter** Typ externes Konto wird verwendet, um Campaign mit Ihrem twitter-Konto zu verbinden und Nachrichten in Ihrem Namen zu posten.
+   Ein externes Konto vom Typ **Twitter** wird verwendet, um Campaign mit Ihrem Twitter-Konto zu verbinden und Nachrichten in Ihrem Namen zu posten.
 
    ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Twitter-Integration finden Sie in [diesem Abschnitt](../connect/ac-tw.md).
 
@@ -134,13 +134,13 @@ Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der 
 
 * **Adobe Experience Cloud**
 
-   Die **[!UICONTROL Adobe Experience Cloud]** Das externe Konto wird verwendet, um Adobe Identity Management Service (IMS) für die Verbindung mit Adobe Campaign zu implementieren.
+   Ein externes Konto vom Typ **[!UICONTROL Adobe Experience Cloud]** wird verwendet, um Adobe Identity Management Service (IMS) für die Verbindung mit Adobe Campaign zu implementieren.
 
    ![](../assets/do-not-localize/glass.png) Weitere Informationen zu Adobe Identity Management Service (IMS) finden Sie in [diesem Abschnitt](../start/connect.md#connect-ims).
 
 * **Web Analytics**
 
-   Die **[!UICONTROL Web Analytics (Adobe Analytics)]** Das externe Konto wird verwendet, um die Datenübertragung von Adobe Analytics zu Adobe Campaign zu konfigurieren.
+   Das externe Konto **[!UICONTROL Web Analytics (Adobe Analytics)]** wird verwendet, um die Datenübertragung von Adobe Analytics an Adobe Campaign zu konfigurieren.
 
    ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aa.md).
 

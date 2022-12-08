@@ -77,7 +77,7 @@ In den nachstehenden Handbüchern erfahren Sie, wie Sie die Verwendung von Adobe
     </div>
     <br>
     <div>
-    <a href="mrm/about-marketing-resource-management.md">Marketing-Ressourcen-Management (MRM)</a>
+    <a href="mrm/about-marketing-resource-management.md">Marketing Resource Management (MRM)</a>
     </div>
     <br>
   </td>
