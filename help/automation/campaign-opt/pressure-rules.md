@@ -4,10 +4,10 @@ title: Konfigurieren der Druckregeln
 description: Erfahren Sie, wie Sie Druckregeln konfigurieren
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6a1e2e0a872ce5886e7374d266c71975941e87b8
 workflow-type: tm+mt
-source-wordcount: '3177'
-ht-degree: 100%
+source-wordcount: '3164'
+ht-degree: 98%
 
 ---
 
@@ -107,7 +107,7 @@ Beispiel: Die zulässige Anzahl von Nachrichten kann entsprechend dem Segment in
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Um den Schwellenwert zu definieren, können Sie eine mit der Zielgruppendimension verknüpfte Dimension verwenden. So können beispielsweise Nachrichten an Empfängerprofile berücksichtigt werden, die in der Besuchertabelle gespeichert sind. Ein weiteres Beispiel ist die Begrenzung auf eine Nachricht pro Woche für einen Haushalt, der u. U. mehrere E-Mail-Adressen besitzt. Dieser wird über eine mit der Empfängerdimension verknüpfte Dimension identifiziert. (Weitere Informationen zur Besuchertabelle finden Sie in (diesem Abschnitt)(surveys/using/use-case--creating-a-refer-a-friend-form.md)).
+Um die Schwelle zu bestimmen, können Sie eine Dimension verwenden, die mit der Zielgruppendimension verknüpft ist: Beispielsweise um Nachrichten einzubeziehen, die an die Empfängerprofile gesendet werden, die in der [Besuchertabelle](../../v8/audiences/target-mappings.md) oder um zu vermeiden, dass mehr als eine Nachricht pro Woche an denselben Haushalt (der sich auf mehrere E-Mail-Adressen beziehen kann) gesendet wird, der in einer Dimension identifiziert ist, die mit der der Empfänger verknüpft ist.
 
 Wählen Sie hierfür die Option **[!UICONTROL Nachrichten einer verknüpften Dimension zählen]**. Wählen Sie danach den Besucher oder die Kontakttabelle aus.
 
