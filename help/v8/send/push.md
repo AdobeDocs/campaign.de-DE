@@ -23,7 +23,7 @@ Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folg
 1. Fügen Sie diesem Dienst die iOS- und Android-Versionen der App hinzu.
 1. Erstellen Sie je einen Versand für iOS und Android.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zu den ersten Schritten mit Mobile Apps finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=de).{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Weitere Informationen zu den ersten Schritten mit Mobile Apps finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=de){target="_blank"}.
 
 ## Campaign SDK integrieren
 
@@ -46,9 +46,9 @@ You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveragi
 
 Sie müssen die Einstellungen Ihrer iOS- bzw. Android-basierten Mobile Apps in Adobe Campaign definieren.
 
-![](../assets/do-not-localize/book.png) Nähere Informationen zur Konfiguration für iOS finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de#sending-messages).{target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Nähere Informationen zur Konfiguration für iOS finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de#sending-messages){target="_blank"}.
 
-![](../assets/do-not-localize/book.png) Konfigurationsrichtlinien für Android finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de#sending-messages){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Konfigurationsrichtlinien für Android finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de#sending-messages){target="_blank"}.
 
 ## Erstellen der ersten Push-Benachrichtigung
 
@@ -62,7 +62,7 @@ Um einen neuen Versand zu erstellen, gehen Sie zur Registerkarte **[!UICONTROL K
 
 ![](assets/delivery_step_1.png)
 
-![](../assets/do-not-localize/book.png) Allgemeine Informationen zum Erstellen eines Versands finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=de#sending-messages){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) Allgemeine Informationen zum Erstellen eines Versands finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=de#sending-messages){target="_blank"}.
 
 ### Benachrichtigungen auf iOS-Geräte senden {#send-notifications-on-ios}
 
@@ -114,12 +114,13 @@ Um einen neuen Versand zu erstellen, gehen Sie zur Registerkarte **[!UICONTROL K
       > 
       >Töne müssen in die App integriert und zum Zeitpunkt der Erstellung des entsprechenden Service konfiguriert werden.
       >
-      >Konfigurationsrichtlinien für iOS finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de){target=&quot;_blank&quot;}.
+      >Konfigurationsrichtlinien für iOS finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de){target="_blank"}.
+
    ![](assets/push_ios_5.png)
 
 1. Ihre **[!UICONTROL Anwendungsvariablen]** werden automatisch von der Registerkarte **[!UICONTROL Anwendungsvariablen]** hinzugefügt. Damit können Sie beispielsweise das Benachrichtigungsverhalten definieren. So können Sie einen speziellen Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
 
-   Mehr dazu finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de){target=&quot;_blank&quot;}.
+   Mehr dazu finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de){target="_blank"}.
 
 1. Auf der Registerkarte **[!UICONTROL Erweitert]** können Sie die folgenden allgemeinen Optionen bearbeiten:
 
@@ -185,15 +186,15 @@ Um einen neuen Versand zu erstellen, gehen Sie zur Registerkarte **[!UICONTROL K
 Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Versand durchgeführt. Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7:
 
 * Validieren eines Versands und Durchführen von Testsendungen
-   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zur Validierung eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zur Validierung eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target="_blank"}
 
 * Versand bestätigen und versenden
-   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zum Durchführen eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zum Durchführen eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de){target="_blank"}
 
 Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7:
 
 * Quarantäne für Push-Benachrichtigungen
-   ![](../assets/do-not-localize/book.png) [Weitere Informationen zu Quarantänen für Push-Benachrichtigungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=de#push-notification-quarantines){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [Weitere Informationen zu Quarantänen für Push-Benachrichtigungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=de#push-notification-quarantines){target="_blank"}
 
 * Fehlerbehebung
-   ![](../assets/do-not-localize/book.png) [Erfahren Sie, wie Sie Probleme mit Ihren Push-Benachrichtigungen beheben können](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=de){target=&quot;_blank&quot;}.
+   ![](../assets/do-not-localize/book.png) [Erfahren Sie, wie Sie Probleme mit Ihren Push-Benachrichtigungen beheben können](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=de){target="_blank"}.
