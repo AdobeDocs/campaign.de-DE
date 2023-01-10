@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Campaign
-description: Kampagne
+description: Campaign
 feature: Workflows
 topic-tags: technical-workflows
 source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
@@ -12,7 +12,7 @@ ht-degree: 100%
 ---
 
 
-# Kampagne{#campaign}
+# Campaign{#campaign}
 
 
 

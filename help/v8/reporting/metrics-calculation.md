@@ -606,7 +606,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
    <td> count(Iif([url/@type]=4 oder [url/@type]=5, @id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Transaktionen<br /> </td> 
+   <td> Transactions<br /> </td> 
    <td> @transaction<br /> </td> 
    <td> Zählung aller @id mit URL-Typ "Transaktion".<br /> </td> 
    <td> count(Iif([url/@type]=5, @id, 0))<br /> </td> 
@@ -807,7 +807,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
  </thead> 
  <tbody> 
   <tr> 
-   <td> Transaktionen<br /> </td> 
+   <td> Transactions<br /> </td> 
    <td> @transactions<br /> </td> 
    <td> Summe aller @totalClicks, deren URL-Typ gleich "Transaktion" ist.<br /> </td> 
    <td> sum(Iif([url/@type] = 5, @totalClicks, 0))<br /> </td> 

@@ -20,6 +20,6 @@ Nutzen Sie die Interaktionsfunktionen von Campaign bei diesen Schritt-für-Schri
 
 ![](../assets/do-not-localize/book.png) [Versand eines E-Mail-Angebots](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=de){target=&quot;_blank&quot;}
 
-![](../assets/do-not-localize/book.png) [Unterbreitung eines Angebots an einen anonymen Besucher](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) [Unterbreitung eines Angebots an einen anonymen Besucher](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=de){target=&quot;_blank&quot;}
 
-![](../assets/do-not-localize/book.png) [Durchführung einer Angebotssimulation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) [Durchführung einer Angebotssimulation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=de){target=&quot;_blank&quot;}
