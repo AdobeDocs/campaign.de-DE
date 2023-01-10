@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
 source-git-commit: 3535e1e4fcd326412b6378253e5dde1249bce1f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '310'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 40%
 
 Die Campaign-Infrastruktur beruht auf Drittanbietersystemen, die regelmäßig mit den neuesten Versionen und Fehlerbehebungen aktualisiert werden müssen. Diese Aktualisierungen sind obligatorisch, um die Kontinuität des Service und den Schutz von Campaign-Umgebungen vor Sicherheitsgefahren zu gewährleisten. Außerdem ist ein Campaign-Upgrade erforderlich, um die Kompatibilität mit Systemänderungen von Drittanbietern sicherzustellen.
 
-Als **Managed Cloud Services-Kunde**, informiert Sie Adobe über diese Aktualisierungen, wenn sie benötigt werden. Ihre Umgebungen müssen entsprechend den Empfehlungen aktualisiert werden, um die Einhaltung der Vorschriften sicherzustellen.
+Als **Kunde von Managed Cloud Services** werden Sie von Adobe über diese Upgrades informiert, wenn diese benötigt werden. Ihre Umgebungen müssen entsprechend den Empfehlungen aktualisiert werden, um Konformität zu gewährleisten.
 
-Aus Sicherheitsgründen muss die Adobe [Installieren des aktuellen Campaign-Builds](#ac-upgrade), und aktualisieren Sie anschließend Ihre [Betriebssystem](#os-upgrade) und/oder Ihre [Relation Database Management System (RDBMS)](#pg-upgrade).
+Aus Sicherheitsgründen muss Adobe [den neuesten Campaign-Build installieren](#ac-upgrade) und anschließend Ihr [Betriebssystem](#os-upgrade) und/oder Ihr [Relation Database Management System (RDBMS)](#pg-upgrade) aktualisieren.
 
 >[!NOTE]
 >
@@ -28,28 +28,28 @@ Aus Sicherheitsgründen muss die Adobe [Installieren des aktuellen Campaign-Buil
 
 **Sind Sie betroffen?**
 
-Wenn Sie von der [Betriebssystemaktualisierung](#os-upgrade) und/oder [Datenbanksystemaktualisierung](#pg-upgrade) Im Folgenden wird beschrieben, wie Adobe Ihre Campaign-Umgebungen auf [die neueste Version 8.4.3](../../v8/start/release-notes.md), die mit diesen Systemen kompatibel ist.
+Wenn Sie vom [Betriebssystem-Upgrade](#os-upgrade) und/oder vom [Datenbanksystem-Upgrade](#pg-upgrade) – wie im Folgenden genauer beschrieben – betroffen sind, muss Adobe Ihre Campaign-Umgebungen auf [die neueste Version 8.4.3](../../v8/start/release-notes.md) aktualisieren, die mit diesen Systemen kompatibel ist.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
-Als Managed Cloud Services-Kunde kontaktiert Adobe Sie und aktualisiert Ihre Campaign-Version.
+Als Kunde von Managed Cloud Services wird Adobe Sie kontaktieren und Ihre Campaign-Version aktualisieren.
 
 ## Betriebssystem-Upgrade {#os-upgrade}
 
 **Sind Sie betroffen?**
 
-Wenn Sie Campaign auf einem Debian-Betriebssystem ausführen, muss Adobe Ihre Campaign-Infrastruktur auf **Debian 11**. Bitte beachten, dass die Sicherheitsunterstützung für Debian 9 nur bis zum 30. Juni 2023 verfügbar sein wird.
+Wenn Sie Campaign auf einem Debian-Betriebssystem ausführen, muss Adobe Ihre Campaign-Infrastruktur auf **Debian 11** aktualisieren, damit Sie von den neuesten Debian-Sicherheitsaktualisierungen profitieren können. Bitte beachten, dass die Sicherheitsunterstützung für Debian 9 nur bis zum 30. Juni 2023 verfügbar sein wird.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
-Als Managed Cloud Services-Kunde kontaktiert Adobe Sie und aktualisiert Ihre Umgebung.
+Als Kunde von Managed Cloud Services wird Adobe Sie kontaktieren und Ihre Umgebung aktualisieren.
 
 ## Upgrade des Datenbanksystems {#pg-upgrade}
 
 **Sind Sie betroffen?**
 
-Wenn Ihr Campaign-Datenbanksystem PostgreSQL ist, muss Adobe ein Upgrade auf **PostgreSQL 14**. Bitte beachten, dass für PostgreSQL 11 am 9. November 2023 das Ende der Lebensdauer und damit der Unterstützung erreicht sein wird.
+Wenn Ihr Campaign-Datenbanksystem PostgreSQL ist, muss Adobe ein Upgrade auf **PostgreSQL 14** vornehmen, damit Sie von den neuesten PostgreSQL-Innovationen und -Sicherheitsaktualisierungen profitieren können. Bitte beachten, dass für PostgreSQL 11 am 9. November 2023 das Ende der Lebensdauer und damit der Unterstützung erreicht sein wird.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
-* Als Managed Cloud Services-Kunde kontaktiert Adobe Sie und aktualisiert Ihr Datenbanksystem von PostgreSQL 11 auf PostgreSQL 14.
+* Als Kunde von Managed Cloud Services wird Adobe Sie kontaktieren und Ihr Datenbanksystem von PostgreSQL 11 auf PostgreSQL 14 aktualisieren.
