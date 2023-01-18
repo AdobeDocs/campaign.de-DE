@@ -7,8 +7,8 @@ level: Beginner
 exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 100%
+source-wordcount: '270'
+ht-degree: 94%
 
 ---
 
@@ -38,4 +38,4 @@ Allgemeine Importe werden über das Menü **[!UICONTROL Profile und Zielgruppen 
 
 ![](assets/new-import-job.png)
 
-Die Schritte zur Durchführung eines allgemeinen Imports werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de#getting-started){target=&quot;_blank&quot;} detailliert beschrieben.
+Die Schritte zum Ausführen eines allgemeinen Imports werden im Abschnitt [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de#getting-started){target="_blank"}.

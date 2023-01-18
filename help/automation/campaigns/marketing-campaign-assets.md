@@ -30,7 +30,7 @@ In einer Kampagne können Sie auch auf andere Elemente verweisen, wie z. B. Wer
 
 ## Dokumente hinzufügen {#add-documents}
 
-Dokumente können auf Kampagnenebene (kontextbezogene Dokumente) oder Programmebene (allgemeine Dokumente) zugeordnet werden.
+Dokumente können auf Kampagnenebene (kontextuelle Dokumente) oder Programmebene (allgemeine Dokumente) zugeordnet werden.
 
 Für eine Kampagne enthält die Registerkarte **[!UICONTROL Dokumente]**:
 

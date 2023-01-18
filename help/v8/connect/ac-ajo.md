@@ -6,8 +6,8 @@ level: Beginner, Intermediate
 exl-id: 52d8e2a5-9fdf-498a-bdbd-13a9935a94d6
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 100%
+source-wordcount: '111'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ Die wichtigsten Schritte sind die Erstellung einer Transaktionsnachrichtenvorlag
 ![](assets/ajo-integration.png)
 
 
-![](../assets/do-not-localize/book.png) [Erfahren Sie mehr über diese Integration in diesem End-to-End-Beispiel](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) [Entdecken Sie diese Integration in diesem durchgehenden Beispiel](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.
 
 
-![](../assets/do-not-localize/book.png) [Weitere Informationen finden Sie in der Dokumentation zu Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target=&quot;_blank&quot;}.
+![](../assets/do-not-localize/book.png) [Weitere Informationen finden Sie in der Dokumentation zu Journey Optimizer .](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.

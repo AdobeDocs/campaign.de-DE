@@ -6,8 +6,8 @@ feature: Workflows, Data Management, Federated Data Access
 exl-id: ddafca28-1db4-42f2-9bfb-73da1240235c
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 100%
+source-wordcount: '104'
+ht-degree: 80%
 
 ---
 
@@ -22,4 +22,4 @@ Verschiedene Workflow-Aktivitäten bieten die Option, Daten aus einer externen D
 * Anreicherung
 * Laden von Daten.
 
-Die Verwendung der FDA-Option hängt von Ihrer Adobe Campaign-Lizenz ab. Die Konfiguration dieser Option sowie die Best Practices und Einschränkungen im Zusammenhang mit ihrer Verwendung werden [in diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de){target=&quot;_blank&quot;} im Detail beschrieben.
+Die Verwendung der FDA-Option hängt von Ihrer Adobe Campaign-Lizenz ab. Die Konfiguration dieser Option sowie die Best Practices und Einschränkungen im Zusammenhang mit ihrer Verwendung werden im Detail beschrieben [in diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de){target="_blank"}.

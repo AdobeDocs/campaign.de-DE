@@ -7,8 +7,8 @@ level: Beginner, Intermediate, Experienced
 exl-id: a11d3895-00f1-43d0-b0f7-330fce9fd56b
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 100%
+source-wordcount: '221'
+ht-degree: 85%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Anpassen von Listen{#customize-lists}
 
-In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=de) erfahren Sie, wie Sie Spalten hinzufügen, Einträge zählen, Listen konfigurieren und Listeneinstellungen freigeben{target=&quot;_blank&quot;}.
+Erfahren Sie, wie Sie Spalten hinzufügen, Datensätze zählen, Ihre Listen konfigurieren und Ihre Listeneinstellungen in freigeben. [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=de){target="_blank"}.
 
 Auf [dieser Seite](../audiences/create-filters.md) erfahren Sie, wie Sie Filter erstellen.
 
@@ -37,7 +37,7 @@ Für jede Auflistung werden die Werte in einer Dropdown-Liste angezeigt, aus der
 
 Für Auflistungen des Typs **Offen** kann der Benutzer auch die ersten Zeichen des Werts eingeben und mögliche Werte werden angezeigt.
 
-In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de) erfahren Sie, wie Sie auf Ihre Aufzählungen zugreifen und sie konfigurieren können{target=&quot;_blank&quot;}.
+Erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und diese konfigurieren können in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de){target="_blank"}.
 
 
 ## Standardeinheiten {#default-units}

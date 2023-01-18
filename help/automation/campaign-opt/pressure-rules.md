@@ -7,7 +7,7 @@ exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 source-git-commit: 6a1e2e0a872ce5886e7374d266c71975941e87b8
 workflow-type: tm+mt
 source-wordcount: '3164'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Beispiel: Die zulässige Anzahl von Nachrichten kann entsprechend dem Segment in
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Um die Schwelle zu bestimmen, können Sie eine Dimension verwenden, die mit der Zielgruppendimension verknüpft ist: Beispielsweise um Nachrichten einzubeziehen, die an die Empfängerprofile gesendet werden, die in der [Besuchertabelle](../../v8/audiences/target-mappings.md) oder um zu vermeiden, dass mehr als eine Nachricht pro Woche an denselben Haushalt (der sich auf mehrere E-Mail-Adressen beziehen kann) gesendet wird, der in einer Dimension identifiziert ist, die mit der der Empfänger verknüpft ist.
+Für die Definition des Schwellenwerts können Sie eine in Zusammenhang mit der Zielgruppendimension stehende Dimension verwenden. So können beispielsweise auch die Nachrichten eingeschlossen werden, die an Empfängerprofile gesendet werden, die in der [Besuchertabelle](../../v8/audiences/target-mappings.md) gespeichert sind. Ein weiteres Beispiel ist die Begrenzung auf eine wöchentliche Nachricht für einen Haushalt mit u. U. mehreren E-Mail-Adressen. Dieser wird über eine mit der Empfängerdimension verknüpfte Dimension identifiziert.
 
 Wählen Sie hierfür die Option **[!UICONTROL Nachrichten einer verknüpften Dimension zählen]**. Wählen Sie danach den Besucher oder die Kontakttabelle aus.
 

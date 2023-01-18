@@ -7,8 +7,8 @@ level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 100%
+source-wordcount: '887'
+ht-degree: 99%
 
 ---
 
@@ -26,11 +26,11 @@ Die wichtigsten Funktionen ermöglichen Folgendes:
 
 * **Zentrale Workflow-Verwaltung**. Verbessern Sie die Geschwindigkeit und den Umfang aller Aspekte Ihrer Marketing-Kampagnen, von der Erstellung von Segmenten und der Vorbereitung von Nachrichten bis hin zum Versand.
 
-   Adobe Campaign erleichtert Ihnen die Synchronisation Ihrer Kanäle mithilfe einer zentralen, benutzerfreundlichen Benutzeroberfläche für die Kampagnenorchestrierung. Auf diese Weise können Ihre Online-Kanäle – wie E-Mail, Internet, Mobile und Social Media – optimal auf Ihre Offline-Kanäle abgestimmt werden, einschließlich Briefpost, Callcenter, Ladengeschäft usw. Adobe Campaign ermöglicht es Ihnen, Ihren Kunden ein konsistentes und kontextbezogenes Erlebnis in digitalen und traditionellen Kanälen bereitzustellen. Adobe Campaign vereinfacht die Bereitstellung von Inhalten für alle Pfade, für die sich Ihre Kunden entscheiden können – auf jedem beliebigen Kanal.
+   Adobe Campaign erleichtert Ihnen die Synchronisation Ihrer Kanäle mithilfe einer zentralen, benutzerfreundlichen Benutzeroberfläche für die Kampagnenorchestrierung. Auf diese Weise können Ihre Online-Kanäle – wie E-Mail, Internet, Mobile und Social Media – optimal auf Ihre Offline-Kanäle abgestimmt werden, einschließlich Briefpost, Callcenter, Ladengeschäft usw. Adobe Campaign ermöglicht es Ihnen, Ihren Kunden ein konsistentes und kontextuelles Erlebnis in digitalen und traditionellen Kanälen bereitzustellen. Adobe Campaign vereinfacht die Bereitstellung von Inhalten für alle Pfade, für die sich Ihre Kunden entscheiden können – auf jedem beliebigen Kanal.
 
    ![](../assets/do-not-localize/glass.png) [Weitere Informationen zu Workflows in Campaign](../config/workflows.md)
 
-* **Personalisiertes E-Mail-Marketing**. Erstellen Sie personalisierte und kontextrelevante E-Mails, die mit dem übrigen Kundenerlebnis konsistent sind.
+* **Personalisiertes E-Mail-Marketing**. Erstellen Sie personalisierte und kontextuelle E-Mails, die mit dem übrigen Kundenerlebnis konsistent sind.
 
    Mit Adobe Campaign können Sie E-Mails besser, personalisierter und profitabler gestalten. E-Mails können einfach erstellt und versendet werden. Campaign v8 bietet Ihnen die Flexibilität, jede zu versendende Nachricht zu entwerfen, zu personalisieren, zu testen, zu verfeinern und zu verbessern.
 
@@ -90,6 +90,6 @@ Als Produkt-Administrator können Sie mithilfe des **Campaign Control Panels** d
 
 ![](assets/subdomain1.png)
 
-![](../assets/do-not-localize/glass.png) [Weitere Informationen zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/glass.png) [Weitere Informationen zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
 
 

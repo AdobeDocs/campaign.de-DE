@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1398'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,7 @@ Um die Anwendungs-(Client-) ID abzurufen, müssen Sie eine Anwendung in Azure Ac
 
 Nach dem Speichern weist Microsoft Azure Directory Ihrer Anwendung eine eindeutige **Anwendungs-(Client-)-ID** zu. Sie benötigen diese ID später bei der Konfiguration von Dynamics 365 in Adobe Campaign.
 
-Weitere Informationen finden Sie in der [Dokumentation zu Microsoft Dynamics 365](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory){target=&quot;_blank&quot;}.
+Weitere Informationen finden Sie in der [Dokumentation zu Microsoft Dynamics 365](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory){target="_blank"}.
 
 ### Generieren der Microsoft Dynamics-Zertifikatschlüsselkennung und Schlüssel-ID {#config-certificate-key-id}
 

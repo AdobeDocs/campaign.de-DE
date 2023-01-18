@@ -34,7 +34,7 @@ ht-degree: 100%
    + [Häufig gestellte Fragen](start/campaign-faq.md)
 + Kampagnen-Management {#campaigns}
    + [Erste Schritte mit Kampagnen](start/campaigns.md)
-   + [Kampagnenverwaltung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
+   + [Kampagnenorchestrierung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
    + Senden von Nachrichten {#send}
       + [Erste Schritte mit Nachrichten](start/create-message.md)
       + [Arbeiten mit Versandvorlagen](send/create-templates.md)

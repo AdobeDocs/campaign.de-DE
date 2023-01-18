@@ -6,8 +6,8 @@ level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 100%
+source-wordcount: '1131'
+ht-degree: 97%
 
 ---
 
@@ -32,9 +32,9 @@ Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren Twitter-Konten verö
 
 ## Twitter-Entwicklerkonto {#dev-account}
 
-Um mit dieser Integration zu beginnen, müssen Sie sich in einem [Twitter-Entwicklerkonto](https://developer.twitter.com){target=&quot;_blank&quot;} anmelden.
+Um mit dieser Integration zu beginnen, müssen Sie sich für eine [Twitter-Entwicklerkonto](https://developer.twitter.com){target="_blank"}.
 
-Campaign verwendet die Twitter-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. [Auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated){target=&quot;_blank&quot;} erfahren Sie mehr über den erweiterten Zugriff auf Twitter.
+Campaign verwendet die Twitter-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. Erfahren Sie mehr über den erweiterten Zugriff auf Twitter [auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
 
 ## Erstellen einer Anwendung auf Twitter {#create-an-app-on-twitter}
 
@@ -111,7 +111,7 @@ Sie werden standardmäßig angehalten: Sie müssen sie manuell starten, wenn Sie
 
 Der technische Workflow **[!UICONTROL Synchronisation von Twitter-Konten]** synchronisiert Twitter-Konten in Adobe Campaign. Durch diesen Workflow wird die Liste der Twitter-Follower abgerufen, sodass Sie ihnen Direktnachrichten senden können. [Weitere Informationen](../send/twitter.md#direct-tw-messages)
 
-Standardmäßig wird dieser Workflow jeden Donnerstag um 7.30 Uhr ausgelöst. Sie können die Option **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]** verwenden, um den Workflow bei der Implementierung dieser Integration jederzeit zu starten.  Sie können auch die Planung bearbeiten, um die Häufigkeit der Auslösung des Workflows zu ändern. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html?lang=de){target=&quot;_blank&quot;}.
+Standardmäßig wird dieser Workflow jeden Donnerstag um 7.30 Uhr ausgelöst. Sie können die Option **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]** verwenden, um den Workflow bei der Implementierung dieser Integration jederzeit zu starten.  Sie können auch die Planung bearbeiten, um die Häufigkeit der Auslösung des Workflows zu ändern. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html?lang=de){target="_blank"}.
 
 >[!CAUTION]
 >
