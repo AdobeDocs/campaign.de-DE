@@ -4,10 +4,10 @@ title: Laden (Datei)
 description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 feature: Workflows, Data Management Activity
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 100%
+source-wordcount: '1138'
+ht-degree: 98%
 
 ---
 
@@ -32,8 +32,6 @@ Im oberen Bereich des Fensters zur Konfiguration dieser Aktivität wird das Date
 Sie können eine Vorab-Bearbeitung definieren, die beim Dateiimport ausgeführt werden soll, z. B. um die Datei nicht auf dem Server entpacken zu müssen (und damit Platz für die entpackte Datei zu sparen), sondern um das Entpacken in die Dateiverarbeitung aufzunehmen. Wählen Sie die Option **[!UICONTROL Vorab-Bearbeitung der Datei vorsehen]** aus und danach Sie dieser drei Optionen: **[!UICONTROL Keine]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
-
-Weiterführende Informationen hierzu finden Sie in diesem Abschnitt:  .
 
 ## Datei formatieren {#defining-the-file-format}
 
@@ -111,7 +109,7 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
    * Die erste Spalte enthält einen dem Ereignis entsprechenden Code: Kauf (Transaktionsbetrag kleiner oder größer als 3000 Euro), Kein Kauf oder Rückgabe eines oder mehrerer Artikel.
    * Die anderen Spalten enthalten jeweils die Vornamen, Nachnamen und E-Mail-Adressen der Kunden sowie die Kundennummern.
 
-   Die Formatierung der zu ladenden Daten erfolgt auf die gleiche Weise wie bei einem Datenimport in Adobe Campaign. Weiterführende Informationen finden Sie hier.
+   Die Formatkonfiguration der zu ladenden Datei entspricht der Definition während eines Datenimports in Adobe Campaign.
 
 1. Positionieren Sie im Anschluss eine Aufspaltungsaktivität und geben Sie je nach Wert in der **Ereignis**-Spalte die zu erstellenden Teilmengen an.
 
