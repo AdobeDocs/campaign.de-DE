@@ -3,9 +3,9 @@ product: campaign
 title: Sendung an Mid-Sourcing-Server
 description: Erfahren Sie mehr über die Workflows "Sendung an Mid-Sourcing-Server".
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '95'
 ht-degree: 100%
 
 ---
@@ -13,9 +13,7 @@ ht-degree: 100%
 
 # Weiterleitung an Mid-Sourcing{#transfer-to-mid-sourcing}
 
-
-
-Die folgenden Workflows werden standardmäßig mit dem Modul **Sendung an Mid-Sourcing-Server** installiert. Weiterführende Informationen zu diesem Modul finden Sie hier:
+Die folgenden Workflows werden standardmäßig mit dem Modul **Sendung an Mid-Sourcing-Server** installiert.
 
 <table> 
  <tbody> 
