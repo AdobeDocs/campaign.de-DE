@@ -4,20 +4,16 @@ title: Versandentwurf
 description: Erfahren Sie mehr über die Workflow-Aktivität "Versandentwurf".
 feature: Workflows, Targeting Activity
 exl-id: 3c06b329-b2d8-4ac8-ab9b-3ab3e525d109
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '249'
 ht-degree: 100%
 
 ---
 
 # Versandentwurf{#delivery-outline}
 
-
-
 Die Aktivität **Versandentwurf** ermöglicht die Verwendung von Entwürfen in Kampagnen-Workflows. Der Versandentwurf ist zuvor in der Kampagne zu konfigurieren.
-
-Weiterführende Informationen zu Versandentwürfen in Adobe Campaign finden Sie hier:
 
 Wählen Sie zur Konfiguration der Aktivität den gewünschten Versandentwurf aus und geben Sie das geplante Kontaktdatum an. Es besteht die Möglichkeit, Filterregeln zu definieren, indem Sie Typologien und Typologieregeln hinzufügen.
 
@@ -31,9 +27,6 @@ Die in Kampagnen-Workflows zur Verfügung stehende Aktivität **Versandentwurf**
 
 1. Platzieren Sie hierfür im Workflow die Versandentwurfsaktivität vor einer Versandaktivität.
 1. Geben Sie in der Versandentwurfsaktivität den gewünschten Entwurf an.
-
-   Weiterführende Informationen zum Definieren von Versandentwürfen erhalten Sie hier:
-
 1. Füllen Sie die verfügbaren Felder Ihrem Versand entsprechend aus.
 1. Sie haben zwei Möglichkeiten:
 
