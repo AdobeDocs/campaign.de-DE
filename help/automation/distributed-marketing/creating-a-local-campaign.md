@@ -4,10 +4,10 @@ title: Erstellen einer lokalen Kampagne
 description: Erstellen einer lokalen Kampagne
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 7e5ffbec959785971280c394c416cebe83590897
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 100%
+source-wordcount: '1686'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
    >[!NOTE]
    >
-   >Bei der hier verwendeten Web-Anwendung handelt es sich nur um ein Beispiel. Um ein Formular verwenden zu können, muss vorab eine spezifische Web-Anwendung erstellt werden. Siehe hier.
+   >Die in diesem Beispiel verwendete Webanwendung ist ein Beispiel. Sie müssen eine bestimmte Web-App erstellen, um ein Formular verwenden zu können.
 
    ![](assets/mkt_distr_7.png)
 
@@ -156,7 +156,7 @@ Speichern Sie Ihre Kampagnenvorlage. Sie steht Ihnen nun in der Ansicht **[!UICO
 
 >[!NOTE]
 >
->Kampagnenvorlagen und ihre allgemeine Konfiguration werden hier beschrieben:
+>Kampagnenvorlagen und ihre allgemeine Konfiguration werden im Abschnitt [diese Seite](../campaigns/marketing-campaign-templates.md).
 
 ## Kampagnenkit erstellen {#creating-the-campaign-package}
 
@@ -236,10 +236,6 @@ Gehen Sie wie folgt vor:
 1. Klicken Sie auf den Link **[!UICONTROL Kampagne bestellen]** in der Benachrichtigungs-E-Mail oder klicken Sie auf die entsprechende Schaltfläche in Ihrer Adobe-Campaign-Konsole.
 
    Geben Sie Ihre Kennung und Ihr Passwort ein, um die Bestellung vorzunehmen. Sie werden zu der Webanwendung weitergeleitet, die das von der Zentralstelle konfigurierte Formular enthält.
-
-   >[!NOTE]
-   >
-   >Web-Anwendungen werden hier beschrieben:
 
 1. Geben Sie auf der ersten Seite Informationen wie Bestelltitel und Kommentar ein und klicken Sie auf **[!UICONTROL Weiter]**.
 
