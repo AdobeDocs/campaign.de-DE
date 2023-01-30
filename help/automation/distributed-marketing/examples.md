@@ -4,9 +4,9 @@ title: Beispiele für verteiltes Marketing
 description: Beispiele für verteiltes Marketing
 feature: Distributed Marketing
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1362'
 ht-degree: 100%
 
 ---
@@ -14,14 +14,11 @@ ht-degree: 100%
 # Beispiele für verteiltes Marketing{#distributed-marketing-samples}
 
 
-
 ## Erstellen einer lokalen Kampagne (Formular) {#creating-a-local-campaign--by-form-}
 
 Der Web-Schnittstellentyp **Formular** beinhaltet die Nutzung einer **Web-Anwendung**. Diese kann entsprechend ihrer Konfiguration unterschiedliche definierte personalisierte Elemente enthalten. Beispielsweise besteht die Möglichkeit, Links zur Evaluierung von Zielgruppe, Budget und Inhalt über dedizierte APIs zur Verfügung zu stellen.
 
 >[!NOTE]
->
->Die APIs werden in einem eigenen Dokument beschrieben.  .
 >
 >Die in diesem Beispiel verwendete Web-Anwendung ist nicht standardmäßig in Adobe Campaign vorhanden. Um in einer Kampagne ein Formular benutzen zu können, muss vorab die entsprechende Web-Anwendung erstellt werden.
 
