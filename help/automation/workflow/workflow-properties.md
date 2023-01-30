@@ -4,9 +4,9 @@ title: Workflow-Eigenschaften
 description: Erfahren Sie mehr über die Campaign-Workflow-Eigenschaften.
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '613'
 ht-degree: 100%
 
 ---
@@ -38,8 +38,6 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 * **[!UICONTROL Standard-Affinität]**
 
    Verwenden Sie dieses Feld, wenn Ihre Installation mehrere Workflow-Server aufweist, um festzulegen, auf welchem Server der Workflow laufen soll. Sollte der in diesem Feld angegebene Wert auf keinem Server existieren, bleibt der Workflow im Stand-by.
-
-   Siehe hier:
 
 * **[!UICONTROL Verlaufsumfang (Tage)]**
 
