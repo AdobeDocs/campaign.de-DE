@@ -3,10 +3,10 @@ product: campaign
 title: Web Analytics
 description: Erfahren Sie mehr über das Web Analytics-Package.
 feature: Workflows, Analytics Integration
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 100%
+source-wordcount: '172'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 
 
-Die folgenden Workflows werden standardmäßig mit dem Modul **Web-Analytics-Connectoren** installiert. Weiterführende Informationen zu diesem Modul finden Sie hier:
+Die folgenden Workflows werden mit dem **Web Analytics-Connectoren** -Modul standardmäßig.
 
 <table> 
  <tbody> 
