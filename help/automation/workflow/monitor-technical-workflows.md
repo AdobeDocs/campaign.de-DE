@@ -4,20 +4,16 @@ title: Überwachen technischer Workflows
 description: Überwachen technischer Workflows
 feature: Workflows
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 100%
+source-wordcount: '497'
+ht-degree: 95%
 
 ---
 
 # Überwachen technischer Workflows {#monitoring-technical-workflows}
 
-
-
 Technische Workflows müssen überwacht werden und bei einer Störung müssen Maßnahmen ergriffen werden.
-
-Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden hier vorgestellt.
 
 ## Instanz-Monitoring-Dashboard {#instance-monitoring-dashboard}
 
@@ -41,8 +37,7 @@ In diesem [Abschnitt](technical-workflows.md) erfahren Sie, was jeder technische
 
 **[!UICONTROL Datenbankbereinigungs-Workflow (‘cleanup’)]**:
 
-1. Überprüfen Sie, ob die ** ..
-1. Vergewissern Sie sich anhand des Protokolls, dass die verstrichene Zeit langfristig relativ konstant bleibt und andere Workflows nicht beeinträchtigt.
+Überprüfen Sie im Protokoll, ob die verstrichene Zeit im Laufe der Zeit relativ konstant ist und andere Workflows nicht stört.
 
 **[!UICONTROL Tracking-Workflow (‘tracking’)]**:
 
