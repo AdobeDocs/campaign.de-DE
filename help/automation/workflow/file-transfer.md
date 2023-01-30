@@ -4,23 +4,17 @@ title: Dateiübertragung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Dateiübertragung".
 feature: Workflows, Data Management
 exl-id: 794de398-f35d-4c2b-af29-d6fd38eb9394
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '639'
 ht-degree: 100%
 
 ---
 
 # Dateiübertragung{#file-transfer}
 
-
-
 Mit der Aktivität **Dateiübertragung** können Sie Dateien senden und empfangen, das Vorhandensein von Dateien prüfen oder Dateien auf einem Server auflisten. Hierfür können die Protokolle Azure Blob Storage, Amazon Simple Storage Service (S3), FTP oder SFTP verwendet werden.
 Bei Verwendung einer S3-, Azure Blob Storage- oder SFTP-Verbindung ist es außerdem möglich, Segmentdaten über die Echtzeit-Kundendatenplattform von Adobe in Adobe Campaign zu importieren. Weitere Informationen hierzu finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de).
-
->[!NOTE]
->
->Best Practices und Fehlerbehebungen bei der Verwendung von SFTP-Servern finden Sie hier:
 
 ## Eigenschaften {#properties}
 
