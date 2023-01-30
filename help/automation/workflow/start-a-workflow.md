@@ -4,10 +4,10 @@ title: Starten eines Workflows
 description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Symbolleiste sowie das Kontextmenü für Workflow-Aktionen kennen
 feature: Workflows
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 100%
+source-wordcount: '811'
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ Die im Menü **[!UICONTROL Aktionen]** und im Kontextmenü verfügbaren Befehle 
 
 ## Aktionen-Symbolleiste {#actions-toolbar}
 
-Die Schaltflächen der Symbolleiste werden hier beschrieben. Die Schaltfläche **[!UICONTROL Aktionen]** bietet Zugriff auf zusätzliche Ausführungsoptionen für die Bearbeitung ausgewählter Workflows. Sie können auch das Menü **[!UICONTROL Datei > Aktionen]** verwenden oder mit der rechten Maustaste auf einen Workflow klicken und dann **[!UICONTROL Aktionen]** auswählen.
+Die **[!UICONTROL Aktionen]** -Schaltfläche in der Symbolleiste bietet Zugriff auf zusätzliche Ausführungsoptionen in ausgewählten Workflows. Sie können auch das Menü **[!UICONTROL Datei > Aktionen]** verwenden oder mit der rechten Maustaste auf einen Workflow klicken und dann **[!UICONTROL Aktionen]** auswählen.
 
 ![](assets/purge_historique.png)
 
@@ -53,8 +53,6 @@ Die Schaltflächen der Symbolleiste werden hier beschrieben. Die Schaltfläche *
 
    Dieser Befehl hält einen Workflow zunächst an und startet ihn dann erneut.In den meisten Fällen ermöglicht diese Vorgehensweise einen schnelleren Neustart als die separate Verwendung der Anhalten- und Starten-Schaltflächen. Dies ist insbesondere dann nützlich, wenn das Anhalten eines Workflows geraume Zeit in Anspruch nimmt, da der Befehl &quot;Starten&quot; erst wieder verfügbar ist, wenn der Workflow tatsächlich angehalten wurde.
 
-   Die ** .
-
 * **[!UICONTROL Verlaufsbereinigung]**
 
    Mit dieser Aktion können Sie den Workflow-Verlauf bereinigen. Weitere Informationen finden Sie unter [Verläufe bereinigen](monitor-workflow-execution.md#purging-the-logs).
@@ -78,8 +76,6 @@ Die Schaltflächen der Symbolleiste werden hier beschrieben. Die Schaltfläche *
 * **[!UICONTROL Als Vorlage speichern]**
 
    Dieser Befehl erstellt eine neue, auf dem markierten Workflow basierende Workflow-Vorlage. Geben Sie im Feld **[!UICONTROL Ordner]** den gewünschten Speicherordner an.
-
-   Die ** .
 
 ## Kontextmenü {#right-click-menu}
 
@@ -109,4 +105,3 @@ Im Kontextmenü stehen folgende Optionen zur Verfügung:
 >
 >Es ist möglich, mehrere Aktivitäten zu markieren, um einen der genannten Befehle auf sie anzuwenden.
 
-Das Kontextmenü wird hier ebenfalls näher erläutert.
