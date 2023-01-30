@@ -4,10 +4,10 @@ title: Kanalübergreifender Versand
 description: Weitere Informationen zu kanalübergreifenden Sendungen.
 feature: Workflows, Channels Activity
 exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 100%
+source-wordcount: '258'
+ht-degree: 96%
 
 ---
 
@@ -38,14 +38,14 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen Workflow erstellen, um eine E-
 1. Fügen Sie Ihrem Workflow eine **[!UICONTROL Aufspaltung]** hinzu, um Empfänger in Besitzer einer Mobiltelefonnummer und in Besitzer einer E-Mail-Adresse zu unterteilen.
 1. Wählen Sie im Tab **[!UICONTROL Versand]** für jeden Zieldatensatz einen Versand.
 
-   Erstellen Sie Ihren Versand wie mit dem klassischen Versand-Assistenten, indem Sie die Versandaktivität in Ihrem Workflow durch einen Doppelklick auswählen. Weiterführende Informationen dazu finden Sie hier.
+   Erstellen Sie Ihren Versand auf dieselbe Weise wie mit dem klassischen Versand-Assistenten, indem Sie die Versandaktivität in Ihrem Workflow durch einen Doppelklick auswählen.
 
    ![](assets/cross_channel_delivery_3.png)
 
 1. Fügen Sie eine **[!UICONTROL Warten]**-Aktivität hinzu und konfigurieren Sie sie, damit die Empfänger nicht zu viele Sendungen gleichzeitig erhalten.
 1. Fügen Sie eine **[!UICONTROL Aufspaltung]** hinzu, um Abonnenten in Anwender von iOS- und Android-Apps zu unterteilen.
 
-   Wählen Sie für jedes Betriebssystem einen Service aus. Weiterführende Informationen zur Service-Erstellung finden Sie hier.
+   Wählen Sie für jedes Betriebssystem einen Dienst aus.
 
    ![](assets/cross_channel_delivery_4.png)
 
