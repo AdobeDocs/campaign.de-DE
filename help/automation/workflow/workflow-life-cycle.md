@@ -4,9 +4,9 @@ title: Lebenszyklus eines Workflows
 description: Erfahren Sie mehr über den Lebenszyklus eines Workflows
 feature: Workflows
 exl-id: 4356b90c-9d7c-49ef-88cd-716b2ccdb7f0
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,5 @@ Dies bedeutet, dass die ersten beiden Aktivitäten erfolgreich ausgeführt wurde
 Oberhalb der Transition des **Versands** wird **574 - OK** angezeigt. Daran ist erkennbar, dass bei der Versandvorbereitung 574 Empfänger ausgewählt wurden und dass der Vorgang korrekt abgelaufen ist. Diese Art an Informationen wird von Aktivitäten berechnet, die Daten manipulieren, und im Verlauf der Workflow-Ausführung auf den Transitionen angezeigt.
 
 Der Workflow wartet also auf die Entscheidung eines Benutzers, der der Gruppe angehört, welche in der **Validierung**-Aktivität ausgewählt wurde. Gruppenmitglieder, deren E-Mail-Adresse oder Mobiltelefonnummer in ihrem Profil gespeichert sind, werden über die entsprechenden Kanäle benachrichtigt.
-
-Die Benutzerverwaltung wird hier beschrieben:
 
 Weitere Informationen zur Überwachung Ihrer Workflows finden Sie in [diesem Abschnitt](monitor-workflow-execution.md).
