@@ -4,22 +4,16 @@ title: Erstellen von Filtern
 description: Erfahren Sie, wie Sie bei Abfragen einen Filter erstellen können
 feature: Query Editor, Workflows
 exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '219'
 ht-degree: 100%
 
 ---
 
 # Erstellen von Filtern {#creating-a-filter}
 
-
-
 Filter werden in Adobe Campaign über Filterbedingungen definiert, die ähnlich wie Abfragen erstellt werden.
-
->[!NOTE]
->
->Näheres zu Filtern und deren Erstellung erfahren Sie hier:
 
 Der Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** enthält alle in Listen und Übersichten verwendeten Filter.
 
