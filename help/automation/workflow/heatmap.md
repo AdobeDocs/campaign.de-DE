@@ -4,20 +4,16 @@ title: Campaign Workflow-Heatmap
 description: Überwachen Sie Ihre Workflows mit Workflow-Heatmap.
 feature: Workflows, Heatmap
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1145'
 ht-degree: 100%
 
 ---
 
 # Workflow-Heatmap {#workflow-heatmap}
 
-
-
 Campaign Workflow-Heatmap besteht aus einer farbcodierten grafischen Darstellung aller derzeit ausgeführten Workflows. Sie steht nur **Campaign-Administratoren** zur Verfügung.
-
-Entdecken Sie hier weitere Möglichkeiten, Campaign-Prozesse zu überwachen.
 
 ## Erste Schritte mit der Workflow-Heatmap {#about-the-workflow-heatmap}
 
@@ -53,8 +49,7 @@ Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgend
    Standardmäßig zeigt die Seite die Workflow-Aktivität des aktuellen Tages an. Sie können dies ändern und einen beliebigen Tag in der Vergangenheit auswählen.
 
    >[!NOTE]
-   >
-   >Nur die Workflows, die nicht durch das ** gelöscht wurden.\
+   > 
    >Standardmäßig ist die Zeitzone der Workflow-Heatmap für den aktuellen Administratorbenutzer definiert. Sie können sie beispielsweise ändern, wenn Sie sich nicht in derselben Region wie die Marketing-Benutzer befinden, mit denen Sie arbeiten.
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Filter]**.
