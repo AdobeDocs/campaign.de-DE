@@ -4,16 +4,14 @@ title: Content Management
 description: Content Management
 feature: Workflows, Data Management
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '441'
 ht-degree: 100%
 
 ---
 
 # Content Management{#content-management}
-
-
 
 Mithilfe der Aktivität **Content Management** lassen sich Inhalte erstellen und bearbeiten sowie Inhaltsdateien erzeugen. Die Inhalte können dann im Ramen einer Versandaktivität genutzt werden.
 
@@ -28,8 +26,6 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 * **Auszuführende Aktion**: Der Inhalt kann gespeichert oder erzeugt werden.
 
    ![](assets/content_mgmt_edit.png)
-
-   Weiterführende Informationen zur Konfiguration und Verwendung des Content-Managements in Adobe Campaign finden Sie hier:
 
 1. **Content**
 
@@ -98,7 +94,3 @@ Kennung des zu verwendenden Inhalts, wenn die Option **[!UICONTROL Wird durch di
 * filename
 
    Vollständiger Name der erzeugten Datei, wenn die Aktion **[!UICONTROL Erzeugen]** ausgewählt wurde.
-
-## Beispiele    {#examples}
-
-Beispiele werden hier bereitgestellt:
