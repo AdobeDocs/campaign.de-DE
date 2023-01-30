@@ -3,9 +3,9 @@ product: campaign
 title: Sendungen
 description: Erfahren Sie mehr über die standardmäßigen Workflows für Sendungen.
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '316'
 ht-degree: 100%
 
 ---
@@ -47,7 +47,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Datenbankbereinigung</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>Bereinigt obsolete Daten gemäß der Konfiguration im Softwareverteilungs-Assistenten. Berechnet diverse Statistiken und Vorgänge. Wird standardmäßig täglich um 4 Uhr gestartet.</p> <p>Weiterführende Informationen finden Sie hier:</p> </td> 
+   <td> <p>Bereinigt obsolete Daten gemäß der Konfiguration im Softwareverteilungs-Assistenten. Berechnet diverse Statistiken und Vorgänge. Wird standardmäßig täglich um 4 Uhr gestartet.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Bereinigung ausgesetzter Workflows</span> <br /> </td> 
