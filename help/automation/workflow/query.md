@@ -4,10 +4,10 @@ title: Abfrage
 description: Erfahren Sie mehr über die Workflow-Aktivität "Abfrage".
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 98%
 
 ---
 
@@ -42,15 +42,13 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
 1. Definieren Sie mithilfe des Assistenten die Filterkriterien zur Auswahl der gewünschten Population. Je nach Zielgruppentyp können die angezeigten Felder unterschiedlich sein. Im **[!UICONTROL Vorschau]**-Tab können Sie prüfen, ob die angegebenen Kriterien das gewünschte Ergebnis liefern.
 
-   Weiterführende Informationen zur Erstellung und Verwendung von Filtern und zu Abfragen finden Sie hier:
-
    ![](assets/query-sample.png)
 
 1. Fügen Sie gegebenenfalls manuell Filterkriterien hinzu, wenn Sie im ersten Schritt **[!UICONTROL Filterbedingungen]** gewählt haben, oder verwenden Sie die Option **[!UICONTROL Filter]** > **[!UICONTROL Erweiterte Filter...]**.
 
    Es besteht darüber hinaus die Möglichkeit, die gefilterten Daten zu gruppieren. Dies ist jedoch nur möglich, wenn die Filterdimension nicht mit der Zielgruppendimension identisch ist. Weiterführende Informationen finden Sie in diesem [Abschnitt](query-grouping-management.md).
 
-   Sie können auch weitere Kriterien hinzufügen, indem Sie den Expression Builder verwenden und ihn mit den logischen Optionen AND, OR und EXCEPT kombinieren. Sie können dann eine Vorschau anzeigen.
+   Sie können auch weitere Kriterien hinzufügen, indem Sie den Ausdruckseditor verwenden und ihn mit den logischen Optionen UND, ODER und AUSSER kombinieren.
 
    Speichern Sie Ihren Filter, um ihn später erneut verwenden zu können.
 
@@ -182,8 +180,6 @@ Im folgenden Abschnitt finden Sie Best Practices zur Optimierung der in Adobe Ca
 
 * Vorsicht vor Funktionen wie `Lower(...)`. Wenn die Funktion „Lower“ verwendet wird, wird der Index nicht verwendet.
 * Überprüfen Sie Abfragen mit der Anweisung „Like“ oder den Anweisungen „Upper“ und „Lower“ sorgfältig. Wenden Sie „Upper“ auf die Benutzereingabe an, nicht auf das Datenbankfeld.
-
-   Weitere Informationen zu Funktionen finden Sie hier:
 
 ### Filterdimensionen {#filtering-dimensions}
 
