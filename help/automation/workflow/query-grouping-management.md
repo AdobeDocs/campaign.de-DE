@@ -4,9 +4,9 @@ title: Abfrage mit Gruppierungsverwaltung
 description: Erfahren Sie, wie Sie Abfragen mit Hilfe der Gruppierungsverwaltung durchführen können
 feature: Query Editor
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '299'
 ht-degree: 100%
 
 ---
@@ -36,8 +36,6 @@ Gehen Sie wie folgt vor:
    ![](assets/query_editor_02.png)
 
 1. Wählen Sie im Fenster **[!UICONTROL Zu extrahierende Daten]** das Feld **[!UICONTROL E-Mail-Domain]** aus und konfigurieren Sie eine Zählung des Felds **[!UICONTROL Primärschlüssel]**.****
-
-   Weiterführende Informationen zur Anzahl von Primärschlüsseln finden Sie hier:
 
 1. Kreuzen Sie die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** an.
 
