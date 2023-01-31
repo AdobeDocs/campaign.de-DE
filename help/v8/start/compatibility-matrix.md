@@ -5,10 +5,10 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 00d95425ca9438cd03b27bbec171aa7c57d25d6f
+source-git-commit: 90dde8bb3bde4893971a2f364aa636ade6fff10f
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 93%
+source-wordcount: '367'
+ht-degree: 89%
 
 ---
 
@@ -37,9 +37,9 @@ Für die Nutzung der Campaign-Client-Konsole sind die folgenden Betriebssysteme 
 
 ### Webbrowser{#web-browsers}
 
-* Microsoft Edge
+* **Microsoft Edge**
 
-* Microsoft Edge WebView2-Laufzeit, aktuelle Version. Herunterladen von [Microsoft-Entwicklersite](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}.
+* **Microsoft Edge WebView2**, der neuesten Version. Herunterladen von [Microsoft-Entwicklersite](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}.
 
 ## CRM-Connectoren{#CRMconnectors}
 
@@ -61,8 +61,8 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Ac
 
 Sie können Campaign verwenden, um unter den unten aufgeführten Betriebssystemen mithilfe des zugehörigen Mobile SDK [Push-Benachrichtigungen](../send/push.md) zu senden.
 
-* **Android** 12 (ab Campaign v8.3), 9.0, 8.x, 7.x, mit Campaign Android-SDK Build 1.1.1.
-* **Apple iOS** 9–16 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen. iOS 16 wird ab Campaign v8.4 unterstützt.
+* **Android** 12, 9.0, 8.x, 7.x, mit Campaign Android SDK Build 1.1.1.
+* **Apple iOS** 9–16 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen. Apple iOS 16 wird ab Campaign v8.4 unterstützt.
 
 
 ## Web-Zugriff{#web-access}
