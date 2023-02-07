@@ -5,7 +5,7 @@ title: Startseite zur Automatisierung von Adobe Campaign
 feature: Overview
 description: Überblick
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: d6ea8bef9c62d4afbc919110775ee99052eeed7a
+source-git-commit: d8a009b1d6ea4f6921cef203d61c78032951f3ee
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%
@@ -22,13 +22,13 @@ Adobe Campaign erleichtert Ihnen die Synchronisation Ihrer Kanäle mithilfe eine
 In den nachstehenden Handbüchern erfahren Sie, wie Sie die Verwendung von Adobe Campaign automatisieren.
 
 >[!NOTE]
+>
 >Einige Abbildungen unterscheiden sich möglicherweise von Ihrer Umgebung.
 
-
 <table>
-<tr>
+<tr style="border: 0;">
   <td valign="top">
-    <div>
+    <div><img src="assets/do-not-localize/workflow.jpeg">
     <b>Workflows</b>
     </div>
     <br>
@@ -46,7 +46,7 @@ In den nachstehenden Handbüchern erfahren Sie, wie Sie die Verwendung von Adobe
     <br>
   </td>
   <td valign="top">
-    <div>
+    <div><img src="assets/do-not-localize/campaign.jpeg">
     <b>Automatisierung von Kampagnen</b>
     </div>
     <br>
@@ -64,7 +64,7 @@ In den nachstehenden Handbüchern erfahren Sie, wie Sie die Verwendung von Adobe
     <br>
   </td>
   <td valign="top">
-    <div>
+    <div><img src="assets/do-not-localize/add-on.jpeg">
     <b>Add-ons</b>
     </div>
     <br>
