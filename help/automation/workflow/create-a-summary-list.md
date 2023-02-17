@@ -5,9 +5,9 @@ description: Erstellen einer zusammenfassenden Liste
 feature: Workflows, Data Management
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
    Der **Datei-Wächter** sammelt Dateien und sendet sie auf den Adobe-Campaign-Server.
 
-   Die Aktivität **Laden (Datei)** lädt die gesammelten Daten in die Arbeitstabelle des Workflows. Weitere Informationen zu dieser Aktivität finden Sie unter [diese Seite](data-loading--file-.md).
+   Die Aktivität **Laden (Datei)** lädt die gesammelten Daten in die Arbeitstabelle des Workflows. Weiterführende Informationen zu dieser Aktivität finden Sie auf [dieser Seite](data-loading--file-.md).
 
 1. Konfigurieren Sie die Aktivität **Datei-Wächter** so, dass Textdateien (&#42;.txt) aus dem ausgewählten Verzeichnis gesammelt werden.
 
