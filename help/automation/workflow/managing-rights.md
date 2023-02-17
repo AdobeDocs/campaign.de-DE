@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Workflow-Berechtigungen verwalten.
 feature: Workflows
 exl-id: 3cb8aeec-e758-4b71-adef-67942cf9ded7
 source-git-commit: bff7d1d51b9847c515670e5594eed513fefbe816
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Benutzer, die mit Workflows arbeiten, müssen Zugriff haben auf die Ordner und U
 
 Des Weiteren müssen Sie über die spezifischen Berechtigungen verfügen, die den von den Workflows ausgeführten Aktionen entsprechen (Import von Empfängern, Zugriff auf Dateien, Fusion, Ausführung von SQL-Scripts etc.).
 
-Weiterführende Informationen zur Verwaltung von Benutzern und Berechtigungen finden Sie im Abschnitt [diesem Abschnitt](../../v8/start/gs-permissions.md).
+Die Verwaltung der Benutzenden sowie ihrer Berechtigungen wird in [diesem Abschnitt](../../v8/start/gs-permissions.md) erläutert.
 
 ## Benutzergruppen {#operator-groups-wf}
 
