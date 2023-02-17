@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Abfrage".
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1605'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
    Es besteht darüber hinaus die Möglichkeit, die gefilterten Daten zu gruppieren. Dies ist jedoch nur möglich, wenn die Filterdimension nicht mit der Zielgruppendimension identisch ist. Weiterführende Informationen finden Sie in diesem [Abschnitt](query-grouping-management.md).
 
-   Sie können auch weitere Kriterien hinzufügen, indem Sie den Ausdruckseditor verwenden und ihn mit den logischen Optionen UND, ODER und AUSSER kombinieren.
+   Sie können auch weitere Kriterien hinzufügen, indem Sie den Expression Builder verwenden und ihn mit den logischen Optionen AND, OR und EXCEPT kombinieren.
 
    Speichern Sie Ihren Filter, um ihn später erneut verwenden zu können.
 
