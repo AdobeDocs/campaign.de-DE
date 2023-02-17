@@ -5,9 +5,9 @@ description: Validierungen ermöglichen Benutzern, in Bezug auf einen Workflow E
 feature: Approvals
 exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Zur Validierung können Benutzer entweder den Webzugriff mithilfe des in der Ben
 
 ## Validierungen per E-Mail {#sending-emails}
 
-Es ist möglich, eine Validierungsnachricht mit einem Link zu einer Webseite zu erhalten, über die eine Antwort möglich ist. Damit der Benutzer eine Validierungs-E-Mail erhält, muss die E-Mail-Adresse des Benutzers angegeben sein. Ist dies nicht der Fall, muss der Benutzer die Konsole verwenden, um zu antworten.
+Benutzende werden durch den Versand einer E-Mail-Benachrichtigung zur Validierung der ihnen zugewiesenen Vorgänge aufgefordert. Die E-Mail enthält einen Link, der den Web-Zugriff auf die Plattform ermöglicht. Die E-Mail-Adresse der Benutzerin bzw. des Benutzers muss im Profil gespeichert sein. Bei fehlender Adresse hat die Benutzerin oder der Benutzer trotz allem die Möglichkeit, direkt über die Client-Konsole zu antworten.
 
 E-Mail-Benachrichtigen werden über eine fortlaufende Versandaktion gesteuert. Die Standardvorlage heißt **[!UICONTROL notifyAssignee]** und ist im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** zugänglich. Es wird empfohlen, die Vorlage nicht zu ändern, sondern sie zu duplizieren und für jede Aktivität eine gesonderte Benachrichtigungsvorlage zu erstellen.
 
