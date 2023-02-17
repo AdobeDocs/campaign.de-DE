@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1283'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -794,7 +794,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
 Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Mobile-App-Code und in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie unter **Dokumentation zu Campaign Classic v7** in der mobilen App: [Konfigurationsschritte für iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de){target="_blank"} and [Configuration steps for Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de){target="_blank"}.
+![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der **Dokumentation zu Campaign Classic v7** in der App: [Konfigurationsschritte für iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de){target="_blank"} and [Configuration steps for Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de){target="_blank"}.
 
 Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
 
