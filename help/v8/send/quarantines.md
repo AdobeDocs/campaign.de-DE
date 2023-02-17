@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: b783b1444457b3204fea35b613582642499acf65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1235'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -112,16 +112,16 @@ Bei Bedarf können Sie eine Adresse auch manuell aus der Quarantäneliste entfer
 
    ![](assets/tech-quarantine-status.png)
 
-Möglicherweise müssen Sie Massenaktualisierungen in der Quarantäneliste durchführen, z. B. im Falle eines ISP-Ausfalls, bei dem E-Mails fälschlicherweise als Bounces gekennzeichnet werden, da sie ihrem Empfänger nicht erfolgreich zugestellt werden können.
+Möglicherweise müssen Massenaktualisierungen in der Quarantäneliste durchgeführt werden, z. B. im Falle eines ISP-Ausfalls, bei dem E-Mails fälschlicherweise als Bounces gekennzeichnet werden, da sie der Empfangsadresse nicht erfolgreich zugestellt werden können.
 
-Erstellen Sie dazu einen Workflow und fügen Sie Ihrer Quarantänetabelle eine Abfrage hinzu, um alle betroffenen Empfänger herauszufiltern, sodass sie aus der Quarantäneliste entfernt und in künftige Campaign-E-Mail-Sendungen aufgenommen werden können.
+Dazu muss ein Workflow erstellt und der Quarantänetabelle eine Abfrage hinzugefügt werden, um alle betroffenen Empfängerinnen und Empfänger herauszufiltern, sodass sie aus der Quarantäneliste entfernt und in künftige Campaign-E-Mail-Sendungen aufgenommen werden können.
 
-Nachfolgend finden Sie die empfohlenen Richtlinien für diese Abfrage:
+Nachfolgend befinden sich die empfohlenen Richtlinien für diese Abfrage:
 
-* **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
+* **Fehlertext (Quarantänetext)** enthält &quot;Momen_Code10_InvalidRecipient&quot;
 * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
-* **Status aktualisieren (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
-* **Status aktualisieren (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
+* **Aktualisierungsstatus (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
+* **Aktualisierungsstatus (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
 
-Wenn Sie über die Liste der betroffenen Empfänger verfügen, fügen Sie eine **[!UICONTROL Daten aktualisieren]** -Aktivität verwenden, um ihren Status auf **[!UICONTROL Gültig]** sodass sie von der Quarantäneliste entfernt werden **[!UICONTROL Datenbankbereinigung]** -Arbeitsablauf. Sie können sie auch einfach aus der Quarantänetabelle löschen.
+Sobald die Liste der betroffenen Empfängerinnen und Empfänger vorliegt, muss die Aktivität **[!UICONTROL Daten-Update]** hinzugefügt werden, um ihren Status auf **[!UICONTROL Gültig]** zu setzen, damit sie durch den **[!UICONTROL Datenbankbereinigungs]**-Workflow aus der Quarantäneliste entfernt werden. Sie können sie auch einfach aus der Quarantänetabelle löschen.
 
