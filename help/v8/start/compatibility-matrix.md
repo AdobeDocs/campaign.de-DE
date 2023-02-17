@@ -1,14 +1,14 @@
 ---
 title: Kompatibilitätsmatrix für Campaign v8
-description: Entdecken Sie Systeme und Versionen, die mit Campaign v8 kompatibel sind.
+description: Erfahren Sie, welche Systeme und Versionen mit Campaign v8 kompatibel sind
 feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 90dde8bb3bde4893971a2f364aa636ade6fff10f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Für die Nutzung der Campaign-Client-Konsole sind die folgenden Betriebssysteme 
 
 * **Microsoft Edge**
 
-* **Microsoft Edge WebView2**, der neuesten Version. Herunterladen von [Microsoft-Entwicklersite](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}.
+* **Microsoft Edge WebView2**, neueste Version. Sie kann von der [Microsoft Developer-Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"} heruntergeladen werden.
 
 ## CRM-Connectoren{#CRMconnectors}
 
