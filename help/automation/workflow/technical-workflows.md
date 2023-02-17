@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die technischen Workflows, die mit Campaign
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1659'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ In diesem [Abschnitt](monitor-technical-workflows.md) erfahren Sie, wie Sie tech
 | **Erfassen von Daten für den HeatMap-Service** (collectDataHeatMapService) | Standardmäßig installiert | Dieser Workflow ruft die für den HeatMap-Service erforderlichen Daten ab. |
 | **Erfassen von Datenschutzanfragen** (collectPrivacyRequests) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten abgerufen und auf dem Bildschirm zur Datenschutzanfrage für den Download bereitgestellt. |
 | **Kostenberechnung** (budgetMgt) | Standardmäßig installiert | Dieser Workflow berechnet Ausgaben- und Kostenposten für Budgets, Pläne, Programme, Kampagnen, Sendungen und Aufgaben. |
-| **Datenbankbereinigung** (cleanup) | Standardmäßig installiert | Bereinigt obsolete Daten gemäß der Konfiguration im Softwareverteilungs-Assistenten. Berechnet diverse Statistiken und Vorgänge. Wird standardmäßig täglich um 4 Uhr gestartet. |
+| **Datenbankbereinigung** (cleanup) | Standardmäßig installiert | Dieser Workflow ist der Datenbankwartungs-Workflow. Er bereinigt obsolete Daten gemäß der Konfiguration im Software-Verteilungs-Assistenten und berechnet diverse Statistiken und Vorgänge. Er wird standardmäßig täglich um 4 Uhr gestartet. |
 | **Löschen von gesperrten LINE-Benutzern** (deleteBlockedLineUsersV2) | LINE-Kanal | Dieser Workflow stellt sicher, dass die Daten der LINE V2-Benutzer gelöscht werden, nachdem sie das offizielle LINE-Konto 180 Tage lang gesperrt haben. |
 | **Löschen von Datenschutzanfragedaten** (deletePrivacyRequestsData) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten gelöscht. |
 | **Versand-Indikatoren** (deliveryIndicators) | Mid-Sourcing-Plattform | Dieser Workflow aktualisiert Tracking-Indikatoren eines Versands. Er wird standardmäßig stündlich ausgelöst. |
