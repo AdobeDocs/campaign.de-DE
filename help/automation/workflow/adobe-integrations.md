@@ -4,16 +4,16 @@ title: Integrationen mit Workflows von Adobe Experience Cloud-Lösungen
 description: Erfahren Sie mehr über die Integrationen mit Workflows von Adobe Experience Cloud-Lösungen.
 topic-tags: technical-workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '109'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
 # Integrationen mit Adobe Experience Cloud-Lösungen{#integrations-with-adobe-experience-cloud-solutions}
 
-Die folgenden Workflows werden mit dem **Integration in Adobe Experience Cloud** -Modul standardmäßig. Weitere Informationen zu diesem Modul finden Sie unter [diese Seite](../../v8/connect/integration.md).
+Die folgenden Workflows werden mit dem Modul **Integration mit Adobe Experience Cloud** standardmäßig installiert. Weiterführende Informationen zu diesem Modul finden Sie auf [dieser Seite](../../v8/connect/integration.md).
 
 <table> 
  <tbody> 
