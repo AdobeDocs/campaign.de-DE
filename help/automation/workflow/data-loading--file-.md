@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 feature: Workflows, Data Management Activity
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
    * Die erste Spalte enthält einen dem Ereignis entsprechenden Code: Kauf (Transaktionsbetrag kleiner oder größer als 3000 Euro), Kein Kauf oder Rückgabe eines oder mehrerer Artikel.
    * Die anderen Spalten enthalten jeweils die Vornamen, Nachnamen und E-Mail-Adressen der Kunden sowie die Kundennummern.
 
-   Die Formatkonfiguration der zu ladenden Datei entspricht der Definition während eines Datenimports in Adobe Campaign.
+   Die Format-Konfiguration der zu ladenden Datei geschieht auf die gleiche Weise wie bei einem Datenimport in Adobe Campaign.
 
 1. Positionieren Sie im Anschluss eine Aufspaltungsaktivität und geben Sie je nach Wert in der **Ereignis**-Spalte die zu erstellenden Teilmengen an.
 
