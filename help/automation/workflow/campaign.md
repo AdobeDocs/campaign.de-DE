@@ -5,16 +5,16 @@ description: Campaign
 feature: Workflows
 topic-tags: technical-workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '155'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # Campaign{#campaign}
 
-Die folgenden Workflows werden mit dem **Kampagne** -Modul standardmäßig.
+Die folgenden Workflows werden standardmäßig mit dem Modul **Kampagne** installiert.
 
 >[!CAUTION]
 >
