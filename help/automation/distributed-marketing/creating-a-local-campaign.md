@@ -5,9 +5,9 @@ description: Erstellen einer lokalen Kampagne
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: 7e5ffbec959785971280c394c416cebe83590897
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1686'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
    >[!NOTE]
    >
-   >Die in diesem Beispiel verwendete Webanwendung ist ein Beispiel. Sie müssen eine bestimmte Web-App erstellen, um ein Formular verwenden zu können.
+   >Bei der hier verwendeten Webanwendung handelt es sich nur um ein Beispiel. Um ein Formular verwenden zu können, muss vorab eine spezifische Webanwendung erstellt werden.
 
    ![](assets/mkt_distr_7.png)
 
@@ -156,7 +156,7 @@ Speichern Sie Ihre Kampagnenvorlage. Sie steht Ihnen nun in der Ansicht **[!UICO
 
 >[!NOTE]
 >
->Kampagnenvorlagen und ihre allgemeine Konfiguration werden im Abschnitt [diese Seite](../campaigns/marketing-campaign-templates.md).
+>Kampagnenvorlagen und ihre allgemeine Konfiguration werden auf [dieser Seite](../campaigns/marketing-campaign-templates.md) beschrieben.
 
 ## Kampagnenkit erstellen {#creating-the-campaign-package}
 
