@@ -4,16 +4,16 @@ title: LINE-Kanal
 description: LINE-Kanal
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
 # LINE-Kanal{#line-channel}
 
-Die folgenden Workflows werden mit dem **LINE-Kanal** -Modul standardmäßig. Weitere Informationen zu diesem Modul finden Sie unter [diese Seite](../../v8/send/line.md).
+Die folgenden Workflows werden standardmäßig mit dem Modul **LINE-Kanal** installiert. Weiterführende Informationen zu diesem Modul finden Sie auf [dieser Seite](../../v8/send/line.md).
 
 <table> 
  <tbody> 
