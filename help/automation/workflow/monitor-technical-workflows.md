@@ -5,9 +5,9 @@ description: Überwachen technischer Workflows
 feature: Workflows
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ In diesem [Abschnitt](technical-workflows.md) erfahren Sie, was jeder technische
 
 **[!UICONTROL Datenbankbereinigungs-Workflow (‘cleanup’)]**:
 
-Überprüfen Sie im Protokoll, ob die verstrichene Zeit im Laufe der Zeit relativ konstant ist und andere Workflows nicht stört.
+Vergewissern Sie sich im Protokoll, dass die verstrichene Zeit auch langfristig ungefähr konstant bleibt und andere Workflows nicht stört.
 
 **[!UICONTROL Tracking-Workflow (‘tracking’)]**:
 
