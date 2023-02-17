@@ -5,9 +5,9 @@ description: Weitere Informationen zu Workflows für einen kanalübergreifenden 
 feature: Workflows, Channels Activity
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
    ![](assets/wkf_cross-channel_1.png)
 
-   Weiterführende Informationen zur Integration von Angeboten in den Nachrichten-Textkörper finden Sie im Abschnitt [diese Seite](../../v8/send/email.md).
+   Weiterführende Informationen zum Einfügen eines Angebots in den Nachrichtentext befinden sich auf [dieser Seite](../../v8/send/email.md).
 
 1. Speichern Sie Ihre Änderungen.
 1. Klicken Sie mit der rechten Maustaste auf die Aktivität **[!UICONTROL E-Mail-Versand]**, um sie zu öffnen.
@@ -107,7 +107,7 @@ Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie 
    * Fügen Sie die Aktivität **[!UICONTROL Mobiltelefon-Versand]** hinzu, um eine SMS an die zweite Teilmenge zu senden.
    * Fügen Sie die Aktivität **[!UICONTROL Listen-Update]** hinzu, um die entsprechenden Empfänger zur Datenbank hinzuzufügen.
 
-1. Doppelklicken Sie auf die Versandaktivitäten in Ihrem Workflow, um sie zu bearbeiten.
+1. Durch Doppelklicken auf die Versandaktivitäten im Workflow lassen sich diese bearbeiten.
 1. Doppelklicken Sie auf die Aktivität **[!UICONTROL Listen-Update]** und wählen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** aus.
 1. Verwenden Sie die Schaltfläche **Starten** in der Symbolleiste, um den Workflow auszuführen.
 
