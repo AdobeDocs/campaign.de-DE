@@ -5,9 +5,9 @@ description: Weitere Informationen zu kanalübergreifenden Sendungen.
 feature: Workflows, Channels Activity
 exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen Workflow erstellen, um eine E-
 1. Fügen Sie Ihrem Workflow eine **[!UICONTROL Aufspaltung]** hinzu, um Empfänger in Besitzer einer Mobiltelefonnummer und in Besitzer einer E-Mail-Adresse zu unterteilen.
 1. Wählen Sie im Tab **[!UICONTROL Versand]** für jeden Zieldatensatz einen Versand.
 
-   Erstellen Sie Ihren Versand auf dieselbe Weise wie mit dem klassischen Versand-Assistenten, indem Sie die Versandaktivität in Ihrem Workflow durch einen Doppelklick auswählen.
+   Erstellen Sie Ihren Versand auf dieselbe Weise wie mit dem klassischen Versand-Assistenten, indem Sie die Versandaktivität in Ihrem Workflow per Doppelklick auswählen.
 
    ![](assets/cross_channel_delivery_3.png)
 
