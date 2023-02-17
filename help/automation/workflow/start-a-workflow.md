@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Sy
 feature: Workflows
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Die im Menü **[!UICONTROL Aktionen]** und im Kontextmenü verfügbaren Befehle 
 
 ## Aktionen-Symbolleiste {#actions-toolbar}
 
-Die **[!UICONTROL Aktionen]** -Schaltfläche in der Symbolleiste bietet Zugriff auf zusätzliche Ausführungsoptionen in ausgewählten Workflows. Sie können auch das Menü **[!UICONTROL Datei > Aktionen]** verwenden oder mit der rechten Maustaste auf einen Workflow klicken und dann **[!UICONTROL Aktionen]** auswählen.
+Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff auf zusätzliche Ausführungsoptionen in ausgewählten Workflows. Sie können auch das Menü **[!UICONTROL Datei > Aktionen]** verwenden oder mit der rechten Maustaste auf einen Workflow klicken und dann **[!UICONTROL Aktionen]** auswählen.
 
 ![](assets/purge_historique.png)
 
