@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie E-Mails mit benutzerdefinierten Datumsfeldern
 feature: Workflows
 exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '631'
 ht-degree: 100%
 
