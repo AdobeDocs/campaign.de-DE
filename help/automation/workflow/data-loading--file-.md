@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 feature: Workflows, Data Management Activity
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 100%
 

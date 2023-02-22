@@ -131,4 +131,4 @@ Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/w
 
 Verwenden Sie die Selbstbedienungsoberfläche des Audit-Protokolls, um die in Ihrer Instanz vorgenommenen Änderungen zu überwachen. Das Audit-Protokoll erfasst in Echtzeit eine umfassende Liste von Aktionen und Ereignissen, die in Ihrer Adobe Campaign-Instanz auftreten. Sie können auf einen Datenverlauf zugreifen, um zum Beispiel folgende Fragen zu beantworten: Was ist mit Ihren Workflows geschehen und wer hat sie zuletzt aktualisiert? Was haben Ihre Anwender in der Instanz getan?
 
- Weitere Informationen zum Audit-Protokoll finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=de#accessing-audit-trail).{target="_blank"}
+Weitere Informationen zum Audit-Protokoll finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=de#accessing-audit-trail){target="_blank"}
