@@ -6,16 +6,33 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: e7f4982a9b13fe5413b6cce0a1cc58e2b3a6afa4
+source-git-commit: 55711ea42b9cc0be70e875e1544780b6983af98b
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 91%
 
 ---
 
 # Aktuelle Version{#latest-release}
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Campaign v8-Version** aufgelistet.
+
+## Version 8.4.4 {#release-8-4-4}
+
+>[!CAUTION]
+>
+> Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../start/connect.md#download-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+
+_8. März 2023_
+
+**Sicherheitsverbesserung**
+
+* Um die Sicherheit zu verbessern, wurde Tomcat von Version 8.5.81 auf Version 8.5.85 aktualisiert. (NEO-50530)
+
+**Patches**
+
+* Es wurde ein Problem behoben, das das Scrollen im **Bearbeiten** Registerkarte des Digital Content Editors (DCE). (NEO-54474)
+* Fehlerkorrektur - Es wurde ein Problem bei der Replikation behoben, das zu einem Webserver-Absturz führen konnte. (NEO-53670)
 
 ## Version 8.4.3 {#release-8-4-3}
 
