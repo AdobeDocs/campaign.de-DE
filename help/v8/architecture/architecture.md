@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 618e45b6948070c6b791d2bcefa8296b297bf25e
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '1025'
+ht-degree: 69%
 
 ---
 
@@ -42,6 +42,48 @@ Es stehen zwei Implementierungsmodelle zur Verfügung:
 
    Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit dieser neuen Architektur vereinfacht die Campaign v8 Enterprise (FFDA)-Implementierung die Datenverwaltung: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
 
+## Aufspaltung der Versandausführung {#split}
+
+>[!AVAILABILITY]
+>
+>Diese Funktion ist nur für Kunden mit mehreren MID-Instanzkonfigurationen verfügbar.
+
+Je nach Campaign v8-Package verfügen Sie über eine bestimmte Anzahl von Mid-Sourcing-Instanzen, die für die Durchführung von Sendungen zuständig sind.
+
+Standardmäßig verwenden die externen Konten für alle Kanäle eine **[!UICONTROL Alternative]** Routing-Modus, d. h., dass jeweils ein Versand von jeder Mid-Instanz einzeln abwechselnd gesendet wird.
+
+Um eine schnellere und skalierbarere Leistung zu gewährleisten, können Sie zulassen, dass Sendungen automatisch über Mid-Sourcing-Instanzen verteilt werden, damit sie schneller an die Empfänger gesendet werden. Dieser Vorgang ist transparent, wenn der Versand von der Marketinginstanz aus ausgeführt wird: Nachdem der Versand durchgeführt wurde, werden alle Logs zusammengeführt, bevor sie an die Marketing-Instanz in einem einzigen Versandobjekt zurückgesendet werden.
+
+Dazu benötigen Sie zusätzliche externe Konten mit dem **[!UICONTROL Aufspaltung]** Der Routing-Modus wird bei der Bereitstellung für jeden Kanal erstellt:
+
+* Aufspaltung Versand - E-Mail (splitDeliveryEmail)
+* Aufspaltung Versand - SMS (splitDeliverySMS)
+* Aufspaltung Versand - iOS (splitDeliveryIOS)
+* Aufspaltung - Android (splitDeliveryAndroid)
+
+![](assets/splitted-delivery.png)
+
+>[!IMPORTANT]
+>
+>Der Aufspaltungs-Routing-Modus ist standardmäßig für das Konto &quot;Aufspaltung - E-Mail&quot;aktiviert. Wenden Sie sich bei allen anderen Kanälen an die Kundenunterstützung, damit die Option aktiviert wird.
+>
+>Standardmäßig beträgt der Schwellenwert für die Schwelle zur Aufteilung eines Versands auf mehrere Mid 100.000. Sie können diesen Wert in der Option &quot;NmsDelivery_MultiMidSplitThreshold&quot;im **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Optionen]** Menü.
+
+Um externe Konten als Standardkonto für den Versand aufzuteilen, müssen Sie den Routing-Provider in Ihren Versandvorlagen ändern. Gehen Sie dazu wie folgt vor:
+
+1. Navigieren Sie zum **[!UICONTROL Ressourcen]** / **[!UICONTROL Vorlagen]** / **[!UICONTROL Versandvorlagen]** und öffnen Sie die gewünschte Versandvorlage. In diesem Beispiel möchten wir die E-Mail-Versandvorlage bearbeiten.
+
+   ![](assets/split-default-list.png)
+
+1. Klicken Sie auf **[!UICONTROL Eigenschaften]** und ändern Sie den Routing-Provider in das entsprechende externe Split-Versand-Konto.
+
+   ![](assets/split-default-delivery.png)
+
+1. Speichern Sie Ihre Änderungen. Alle mit der Vorlage gesendeten Sendungen verwenden jetzt standardmäßig den Aufspaltungs-Routing-Modus.
+
+<!--In addition, you can select split external accounts as the default routing provider for all future delivery templates. To do this, change the value of the **[!UICONTROL xtkoption NmsBroadcast_DefaultProvider]** option to the name of the split account.
+
+![](assets/split-default-options.png) -->
 
 ## Message Center-Architektur{#transac-msg-archi}
 
