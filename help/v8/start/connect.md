@@ -5,16 +5,16 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
+source-git-commit: 445e62c290466003886f2dc49386d0c1edb80eeb
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 71%
+source-wordcount: '921'
+ht-degree: 55%
 
 ---
 
 # Verbindung mit Adobe Campaign v8 herstellen{#gs-ac-connect}
 
-Sie müssen die Campaign Client Console installieren, um eine Verbindung zu Ihren Campaign-Anwendungsservern herzustellen.
+Um mit Campaign arbeiten zu können, müssen Sie die Client-Konsole installieren und konfigurieren.
 
 Die Client Console ist eine native Anwendung, die über standardmäßige Internetprotokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungsserver kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert minimale Bandbreite, da sie auf einem lokalen Cache beruht. Diese Konsole, die im Hinblick auf eine einfache Implementierung entwickelt wurde, kann über einen Internet-Browser implementiert werden, kann automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.
 
@@ -22,7 +22,7 @@ Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
 * Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](compatibility-matrix.md)
 * Ermitteln Sie Ihre Campaign-Server-URL
-* Erstellen Sie Ihre Adobe ID oder rufen Sie Ihre Benutzeranmeldeinformationen von Ihrem Unternehmen ab
+* Erstellen Sie Ihre Adobe ID oder rufen Sie Ihre Benutzeranmeldeinformationen von Ihrem Unternehmen ab.
 * Installieren Sie die Microsoft Edge Webview2-Laufzeitumgebung auf Ihrem System. [Weitere Informationen](#webview)
 
 ## Installieren der Client-Konsole{#download-ac-console}
@@ -31,7 +31,7 @@ Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
 Ab der Build-Version von Campaign Classic 8.4 ist die Installation der Microsoft Edge Webview 2-Laufzeit für jede Client Console-Installation erforderlich.
 
-WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign Console aufgefordert, es von herunterzuladen. [Microsoft Developer-Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
+WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign Client Console aufgefordert, es von herunterzuladen. [Microsoft Developer-Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
 ### Herunterladen der Konsole{#install-ac-console}
 
@@ -49,11 +49,9 @@ Beachten Sie, dass Sie die Sprache der Client Console nach der Installation nich
 
 ## Verbindung erstellen{#create-your-connection}
 
-Nachdem die Client-Konsole neu installiert wurde, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungs-Server herzustellen:
+Nachdem die Client Console installiert wurde, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungsserver herzustellen:
 
-1. Starten Sie die Konsole über das Windows-**[!UICONTROL Start]**-Menü in der **Adobe Campaign**-Programmgruppe.
-
-1. Klicken Sie in der oberen rechten Ecke der Felder mit den Anmeldedaten auf den Link, um das Fenster für die Verbindungskonfiguration aufzurufen.
+1. Starten Sie die Konsole und durchsuchen Sie den Link in der rechten Ecke, um auf den Bildschirm zur Verbindungskonfiguration zuzugreifen.
 
 1. Klicken Sie auf **[!UICONTROL Hinzufügen > Verbindung]** und geben Sie die Bezeichnung und URL des Adobe Campaign-Anwendungs-Servers ein.
 
@@ -77,9 +75,7 @@ Campaign-Anwender stellen über das Adobe Identity Management System (IMS) mit i
 
 Gehen Sie wie folgt vor, um sich bei einer Instanz anzumelden:
 
-1. Starten Sie die Konsole über das Windows-**[!UICONTROL Start]**-Menü in der **Adobe Campaign**-Programmgruppe.
-
-1. Klicken Sie in der oberen rechten Ecke der Felder mit den Anmeldedaten auf den Link, um das Fenster für die Verbindungskonfiguration aufzurufen.
+1. Starten Sie die Konsole und durchsuchen Sie den Link in der rechten Ecke, um auf den Bildschirm zur Verbindungskonfiguration zuzugreifen.
 
    ![](assets/connectToCampaign.png)
 
@@ -87,13 +83,13 @@ Gehen Sie wie folgt vor, um sich bei einer Instanz anzumelden:
 
 1. Bestätigen Sie die Aktion mit der Schaltfläche **[!UICONTROL OK]**.
 
-1. Sie können sich dann mit [Ihrer Adobe ID](#connect-ims) bei Campaign anmelden.
+Sie können sich dann mit [Ihrer Adobe ID](#connect-ims) bei Campaign anmelden.
 
-   ![](assets/adobeID.png)
+![](assets/adobeID.png)
 
 >[!NOTE]
 >
->Bei den Build-Versionen 8.4 von Campaign Classic kann es vorkommen, dass die Adobe Campaign-Client-Konsole während der Proxy-Authentifizierung zweimal nach den Proxy-Anmeldeinformationen fragt. Dies liegt daran, dass Microsoft Edge WebView2 im Gegensatz zum Internet Explorer keine Proxy-Anmeldeinformationen im Cache/Kennwortspeicher speichert.
+>Da Microsoft Edge Webview2 keine Proxy-Anmeldeinformationen speichert, kann die Konsole Sie bitten, sich bei Ihrer ersten Verbindung zweimal zu authentifizieren.
 
 ## Aktualisieren der Client-Konsole{#upgrade-ac-console}
 
@@ -103,7 +99,7 @@ Als Benutzer von Managed Cloud Services stellt Adobe die Client Console für Sie
 
 >[!CAUTION]
 >
->Adobe empfiehlt, die Option **[!UICONTROL Diese Frage nicht mehr stellen]** deaktiviert zu lassen, um sicherzustellen, dass alle Anwender benachrichtigt werden, wenn eine neue Version der Konsole verfügbar ist. Wenn diese Option aktiviert ist, wird der Anwender nicht über neue verfügbare Versionen informiert.
+>Adobe empfiehlt, die Option zu verlassen **[!UICONTROL Diese Frage stellen Sie nicht mehr]** nicht ausgewählt ist, um sicherzustellen, dass Sie benachrichtigt werden, wenn eine neue Version der Konsole verfügbar ist. Wenn diese Option aktiviert ist, wird der Benutzer nicht darüber informiert, dass ein Konsolenupgrade erforderlich ist.
 
 
 ## Gewähren von Zugriff für Benutzende{#grant-access}
