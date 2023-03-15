@@ -5,43 +5,47 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: f381a2ec91b7179a51d91f9b7414ea39db03cd71
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 97%
+source-wordcount: '972'
+ht-degree: 71%
 
 ---
 
 # Verbindung mit Adobe Campaign v8 herstellen{#gs-ac-connect}
 
-Die Client-Konsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können. [Auf dieser Seite](ac-components.md#presentation-layer) erfahren Sie mehr über die Campaign-Client-Konsole.
+Sie müssen die Campaign Client Console installieren, um eine Verbindung zu Ihren Campaign-Anwendungsservern herzustellen.
+
+Die Client Console ist eine native Anwendung, die über standardmäßige Internetprotokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungsserver kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert minimale Bandbreite, da sie auf einem lokalen Cache beruht. Diese Konsole, die im Hinblick auf eine einfache Implementierung entwickelt wurde, kann über einen Internet-Browser implementiert werden, kann automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.
 
 Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
 * Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](compatibility-matrix.md)
 * Ermitteln Sie Ihre Campaign-Server-URL
 * Erstellen Sie Ihre Adobe ID oder rufen Sie Ihre Benutzeranmeldeinformationen von Ihrem Unternehmen ab
-* Installieren Sie die Microsoft Edge Webview2-Laufzeitumgebung auf Ihrem System (ab Campaign Classic 8.4). [Weitere Informationen](#webview)
+* Installieren Sie die Microsoft Edge Webview2-Laufzeitumgebung auf Ihrem System. [Weitere Informationen](#webview)
 
-## Installation der Microsoft Edge Webview2-Laufzeitumgebung {#webview}
+## Installieren der Client-Konsole{#download-ac-console}
 
-Ab der Build-Version 8.4 von Campaign Classic ist die Installation der Microsoft Edge Webview 2-Laufzeitumgebung für jede Konsolen-Installation erforderlich.
+###  der Microsoft Edge Webview2-Laufzeitumgebung {#webview}
+
+Ab der Build-Version von Campaign Classic 8.4 ist die Installation der Microsoft Edge Webview 2-Laufzeit für jede Client Console-Installation erforderlich.
 
 WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign Console aufgefordert, es von herunterzuladen. [Microsoft Developer-Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
-## Client-Konsole herunterladen und installieren{#download-ac-console}
+### Herunterladen der Konsole{#install-ac-console}
 
-Wenn Sie Campaign zum ersten Mal verwenden oder auf eine neuere Version aktualisieren möchten, müssen Sie die Client-Konsole herunterladen und installieren.
+Wenn Sie Campaign zum ersten Mal verwenden, müssen Sie die Clientkonsole herunterladen und installieren.
 
-Dazu sind zwei Optionen verfügbar:
+Es stehen zwei Optionen zum Herunterladen der Client-Konsole zur Verfügung:
 
-1. Stellen Sie als Campaign-Administrator eine Verbindung zur Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her und laden Sie das Installationsprogramm für die Client-Konsole herunter. {target="_blank"} Sie können die Konsole dann auf Ihrem lokalen Computer installieren.
+1. Campaign-Administratoren müssen eine Verbindung zu Adobe herstellen [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"}.
 
-1. Adobe kann die Konsole für Sie als Endanwender bereitstellen: Sobald die Konsole aktualisiert wird, werden Sie in einem Popup-Fenster aufgefordert, die neueste Version der Client-Konsole herunterzuladen.
+1. Als Endbenutzer stellt Ihr Campaign-Administrator die Client Console für Sie bereit und stellt sie über eine dedizierte URL zur Verfügung.
 
->[!CAUTION]
->
->Adobe empfiehlt, die Option **[!UICONTROL Diese Frage nicht mehr stellen]** deaktiviert zu lassen, um sicherzustellen, dass alle Anwender benachrichtigt werden, wenn eine neue Version der Konsole verfügbar ist.  Wenn diese Option aktiviert ist, wird der Anwender nicht über neue verfügbare Versionen informiert.
+Nachdem das Installationsprogramm von Client Console heruntergeladen wurde, installieren Sie es auf Ihrem lokalen Computer.
+
+Beachten Sie, dass Sie die Sprache der Client Console nach der Installation nicht mehr ändern können.
 
 ## Verbindung erstellen{#create-your-connection}
 
@@ -69,7 +73,9 @@ Sie können so viele Verbindungen wie erforderlich hinzufügen, um z. B. Verbind
 
 ## Bei Adobe Campaign anmelden {#logon-to-ac}
 
-Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
+Campaign-Anwender stellen über das Adobe Identity Management System (IMS) mit ihrer Adobe ID eine Verbindung zur Adobe Campaign-Konsole her. Sie können für alle Adobe-Lösungen dieselbe ID verwenden. Die Verbindung wird bei Verwendung von Adobe Campaign mit anderen Lösungen gespeichert. Weitere Informationen zu Adobe IMS finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+
+Gehen Sie wie folgt vor, um sich bei einer Instanz anzumelden:
 
 1. Starten Sie die Konsole über das Windows-**[!UICONTROL Start]**-Menü in der **Adobe Campaign**-Programmgruppe.
 
@@ -89,6 +95,17 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 >
 >Bei den Build-Versionen 8.4 von Campaign Classic kann es vorkommen, dass die Adobe Campaign-Client-Konsole während der Proxy-Authentifizierung zweimal nach den Proxy-Anmeldeinformationen fragt. Dies liegt daran, dass Microsoft Edge WebView2 im Gegensatz zum Internet Explorer keine Proxy-Anmeldeinformationen im Cache/Kennwortspeicher speichert.
 
+## Aktualisieren der Client-Konsole{#upgrade-ac-console}
+
+Wenn Ihr System auf eine neuere Version aktualisiert wird, müssen Sie Ihre Client Console auf dieselbe Version aktualisieren. Dies ist eine Best Practice, und für einige Versionen ist dieses Upgrade obligatorisch. In diesem Fall wird dies im [Versionshinweise](release-notes.md).
+
+Als Benutzer von Managed Cloud Services stellt Adobe die Client Console für Sie bereit. Wenn Sie eine Verbindung zu Ihrer aktualisierten Umgebung herstellen, werden Sie aufgefordert, die neueste Version der Client Console in einem Popup-Fenster herunterzuladen. Sie müssen dieses Upgrade akzeptieren und die Client Console nach Bedarf aktualisieren.
+
+>[!CAUTION]
+>
+>Adobe empfiehlt, die Option **[!UICONTROL Diese Frage nicht mehr stellen]** deaktiviert zu lassen, um sicherzustellen, dass alle Anwender benachrichtigt werden, wenn eine neue Version der Konsole verfügbar ist. Wenn diese Option aktiviert ist, wird der Anwender nicht über neue verfügbare Versionen informiert.
+
+
 ## Gewähren von Zugriff für Benutzende{#grant-access}
 
 Mit Adobe Campaign können Sie die den verschiedenen Benutzenden zugewiesenen Rechte definieren und verwalten.
@@ -97,12 +114,6 @@ Als Campaign-Administrator sind Sie dafür verantwortlich, die Benutzenden zu er
 
 Weitere Informationen zu Anwendern und zum Definieren ihrer Berechtigungen finden Sie in [diesem Abschnitt](gs-permissions.md).
 
-
-## Herstellen einer Verbindung mit Campaign über Ihre Adobe ID{#connect-ims}
-
-Campaign-Anwender stellen über das Adobe Identity Management System (IMS) mit ihrer Adobe ID eine Verbindung zur Adobe Campaign-Konsole her. Sie können für alle Adobe-Lösungen dieselbe ID verwenden. Die Verbindung wird bei Verwendung von Adobe Campaign mit anderen Lösungen gespeichert.
-
-Weitere Informationen zu Adobe IMS finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
 
 ## Web-Zugriff{#web-access}
 

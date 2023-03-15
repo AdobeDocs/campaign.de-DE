@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 55711ea42b9cc0be70e875e1544780b6983af98b
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 91%
+source-wordcount: '524'
+ht-degree: 88%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 91%
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Campaign v8-Version** aufgelistet.
 
 ## Version 8.4.4 {#release-8-4-4}
-
->[!CAUTION]
->
-> Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../start/connect.md#download-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
 _8. März 2023_
 
@@ -34,11 +30,14 @@ _8. März 2023_
 * Es wurde ein Problem behoben, das das Scrollen im **Bearbeiten** Registerkarte des Digital Content Editors (DCE). (NEO-54474)
 * Fehlerkorrektur - Es wurde ein Problem bei der Replikation behoben, das zu einem Webserver-Absturz führen konnte. (NEO-53670)
 
-## Version 8.4.3 {#release-8-4-3}
 
 >[!CAUTION]
 >
-> Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../start/connect.md#download-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+> Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../start/connect.md#upgrade-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+
+
+## Version 8.4.3 {#release-8-4-3}
+
 
 _27. Januar 2023_
 
@@ -67,3 +66,6 @@ _27. Januar 2023_
 * Fehlerkorrektur: Die Verwaltung von Tracking-URLs wurde in Workflows mit mehreren Sendungen verbessert, um die Leistung zu verbessern. (NEO-50894) <!--OKKKK-->
 * Fehlerkorrektur: Es wurde ein Problem behoben, das zum Scheitern der Replikation von Schemata führen konnte, die Xtkfolder verwenden. (NEO-46787) <!--OKKKK-->
 * Fehlerkorrektur: Es wurde ein Problem behoben, dass dazu führen konnte, dass die benutzerdefinierte Spalte &quot;lastModified&quot; in der NmsSubscription-Tabelle gelöscht wurde. (NEO-48402)
+
+
+**Für diese Version ist ein Upgrade der Client Console erforderlich** - Informationen zum Aktualisieren der Client Console finden Sie in diesem [page](../start/connect.md#upgrade-ac-console).
