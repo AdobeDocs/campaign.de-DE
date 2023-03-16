@@ -8,8 +8,8 @@ hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,12 +23,12 @@ _8. März 2023_
 
 **Sicherheitsverbesserung**
 
-* Um die Sicherheit zu verbessern, wurde Tomcat von Version 8.5.81 auf Version 8.5.85 aktualisiert. (NEO-50530)
+* Um die Sicherheit zu verbessern, wurde Tomcat von Version 8.5.81 auf 8.5.85 aktualisiert. (NEO-50530)
 
 **Patches**
 
-* Es wurde ein Problem behoben, das das Scrollen im **Bearbeiten** Registerkarte des Digital Content Editors (DCE). (NEO-54474)
-* Fehlerkorrektur - Es wurde ein Problem bei der Replikation behoben, das zu einem Webserver-Absturz führen konnte. (NEO-53670)
+* Das Scrollen in der Registerkarte **Bearbeiten** des Digital Content Editor (DCE) ist jetzt problemlos möglich. (NEO-54474)
+* Bei der Replikation stürzt der Webserver jetzt nicht mehr ab. (NEO-53670)
 
 
 >[!CAUTION]
