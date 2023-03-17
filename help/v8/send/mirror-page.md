@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie einen Link zur Mirrorseite erstellen
 feature: Email
 role: User
 level: Beginner
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 2c35b169725b5300940260124a4b559eb44ffe43
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,16 @@ Während die meisten E-Mail-Clients Bilder ohne Probleme rendern, können einige
 
 Die von Adobe Campaign generierte Mirrorseite enthält alle Personalisierungsdaten.
 
+![](assets/mirror-page-link.png)
+
+
 ## Link zur Mirrorseite hinzufügen{#link-to-mirror-page}
 
 Es empfiehlt sich, einen Link zur Mirrorseite einzufügen. Dieser Link kann beispielsweise &quot;Diese E-Mail in Ihrem Browser anzeigen&quot;lauten und befindet sich oft in der Kopf- oder Fußzeile einer E-Mail.
 
 In Adobe Campaign können Sie einen Link zur Mirrorseite in den E-Mail-Inhalt einfügen, indem Sie die dedizierte **Gestaltungsbaustein**. Standardmäßig wird die Mirrorseite nur erzeugt, wenn der Link in den Nachrichteninhalt eingefügt wurde.
+
+Die integrierten **Link zur Mirrorseite** Gestaltungsbaustein Hiermit wird der folgende Code in den E-Mail-Inhalt eingefügt: `<%@ include view='MirrorPage' %>`.
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
 
