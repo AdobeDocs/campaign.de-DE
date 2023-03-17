@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Link zur Mirrorseite hinzufügen und verw
 feature: Email
 role: User
 level: Beginner
-source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
+source-git-commit: 9ebcfee199a2ba355b7b504c7f24732d30542a36
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,14 @@ Die von Adobe Campaign generierte Mirrorseite enthält alle Personalisierungsdat
 
 ![](assets/mirror-page-link.png)
 
-
 ## Link zur Mirrorseite hinzufügen{#link-to-mirror-page}
 
 Es empfiehlt sich, einen Link zur Mirrorseite einzufügen. Dieser Link kann beispielsweise &quot;Diese E-Mail in Ihrem Browser anzeigen&quot;oder &quot;Diese online lesen&quot;lauten. Sie befindet sich häufig in der Kopf- oder Fußzeile der E-Mail.
 
 In Adobe Campaign können Sie einen Link zur Mirrorseite in den E-Mail-Inhalt einfügen, indem Sie die dedizierte **Gestaltungsbaustein**. Die integrierten **Link zur Mirrorseite** Gestaltungsbaustein Hiermit wird der folgende Code in den E-Mail-Inhalt eingefügt: `<%@ include view='MirrorPage' %>`.
+
+![](assets/mirror-page-insert.png)
+
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
 
@@ -47,5 +49,19 @@ Zusätzlich zum Standardmodus sind die folgenden Optionen verfügbar:
 
 * **[!UICONTROL Mirrorseitenerstellung erzwingen]**: Verwenden Sie diesen Modus, um die Mirrorseite zu erstellen, selbst wenn im Versand kein Link zur Mirrorseite eingefügt wurde.
 * **[!UICONTROL Mirrorseite nicht generieren]**: Verwenden Sie diesen Modus, um die Erstellung einer Mirrorseite zu vermeiden, selbst wenn der Link im Versand vorhanden ist.
-* **[!UICONTROL Erzeugt eine Mirrorseite, auf die nur die Nachrichtenkennung zugreifen kann]**: Verwenden Sie diese Option, um den Zugriff auf den Inhalt der Mirrorseite mit Personalisierungsdaten im Versandlog-Fenster zu ermöglichen. So greifen Sie auf diese Mirrorseite zu: Öffnen Sie nach dem Versand den Versand und navigieren Sie zu seiner **[!UICONTROL Versand]** Registerkarte. Wählen Sie einen Empfänger aus und klicken Sie auf die Schaltfläche **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** Link. Die Mirrorseite wird in einer neuen Registerkarte angezeigt.
+* **[!UICONTROL Erzeugt eine Mirrorseite, auf die nur die Nachrichtenkennung zugreifen kann]**: Wenn der Mirrorseiten-Link im E-Mail-Inhalt nicht vorhanden ist, verwenden Sie diese Option, um den Zugriff auf den Inhalt der Mirrorseite im Versandlog-Fenster zu ermöglichen (siehe unten).
+
+## Mirrorseite eines Empfängers überprüfen{#mirror-page-access}
+
+Sie können den Inhalt der Mirrorseite für einen bestimmten Empfänger eines Versands mit Personalisierungsdaten aufrufen.
+
+So greifen Sie auf diese Mirrorseite zu:
+
+1. Öffnen Sie nach dem Versand den Versand und navigieren Sie zum Versand. **[!UICONTROL Versand]** Registerkarte.
+
+1. Wählen Sie einen Empfänger aus und klicken Sie auf die Schaltfläche **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** Link.
+
+   ![](assets/mirror-page-display.png)
+
+   Die Mirrorseite wird in einem eigenen Bildschirm mit Personalisierungsdaten für den ausgewählten Empfänger angezeigt.
 
