@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
 title: Dokumente zu Campaign v8
-source-git-commit: 366cf800a81ea9ab10fe5e3063f44e5214bda927
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 100%
+source-wordcount: '496'
+ht-degree: 98%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 100%
       + [Arbeiten mit Versandvorlagen](send/create-templates.md)
       + E-Mails {#emails}
          + [Entwerfen und Validieren von E-Mails](send/email.md)
+         + [Link zur Mirrorseite](send/mirror-page.md)
          + [Versenden und Überwachen von E-Mails](send/send.md)
       + [SMS](send/sms.md)
       + [Push-Benachrichtigungen ](send/push.md)
