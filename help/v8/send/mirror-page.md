@@ -1,17 +1,19 @@
 ---
 title: Link zur Mirrorseite hinzufügen
-description: Erfahren Sie, wie Sie einen Link zur Mirrorseite erstellen
+description: Erfahren Sie, wie Sie den Link zur Mirrorseite hinzufügen und verwalten
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 2c35b169725b5300940260124a4b559eb44ffe43
+source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
 
-# Über die E-Mail-Mirrorseite{#mirror-page}
+# Link zur Mirrorseite{#mirror-page}
+
+## Über die Mirrorseite{#about-mirror-page}
 
 Die Mirrorseite ist eine Online-Version Ihrer E-Mail.
 
@@ -24,11 +26,9 @@ Die von Adobe Campaign generierte Mirrorseite enthält alle Personalisierungsdat
 
 ## Link zur Mirrorseite hinzufügen{#link-to-mirror-page}
 
-Es empfiehlt sich, einen Link zur Mirrorseite einzufügen. Dieser Link kann beispielsweise &quot;Diese E-Mail in Ihrem Browser anzeigen&quot;lauten und befindet sich oft in der Kopf- oder Fußzeile einer E-Mail.
+Es empfiehlt sich, einen Link zur Mirrorseite einzufügen. Dieser Link kann beispielsweise &quot;Diese E-Mail in Ihrem Browser anzeigen&quot;oder &quot;Diese online lesen&quot;lauten. Sie befindet sich häufig in der Kopf- oder Fußzeile der E-Mail.
 
-In Adobe Campaign können Sie einen Link zur Mirrorseite in den E-Mail-Inhalt einfügen, indem Sie die dedizierte **Gestaltungsbaustein**. Standardmäßig wird die Mirrorseite nur erzeugt, wenn der Link in den Nachrichteninhalt eingefügt wurde.
-
-Die integrierten **Link zur Mirrorseite** Gestaltungsbaustein Hiermit wird der folgende Code in den E-Mail-Inhalt eingefügt: `<%@ include view='MirrorPage' %>`.
+In Adobe Campaign können Sie einen Link zur Mirrorseite in den E-Mail-Inhalt einfügen, indem Sie die dedizierte **Gestaltungsbaustein**. Die integrierten **Link zur Mirrorseite** Gestaltungsbaustein Hiermit wird der folgende Code in den E-Mail-Inhalt eingefügt: `<%@ include view='MirrorPage' %>`.
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
 

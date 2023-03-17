@@ -5,14 +5,14 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
+source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 98%
+source-wordcount: '1249'
+ht-degree: 90%
 
 ---
 
-# Push-Benachrichtigungen erstellen und versenden
+# Push-Benachrichtigungen erstellen und versenden{#push-notifications-create}
 
 Sie können mittels Mobile-App-Versand Benachrichtigungen an iOS- und Android-Systeme senden.
 
@@ -25,24 +25,17 @@ Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folg
 
 ![](../assets/do-not-localize/book.png) Weitere Informationen zu den ersten Schritten mit Mobile Apps finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=de).{target="_blank"}
 
-## Campaign SDK integrieren
+## SDK integrieren {#push-sdk}
 
-Über das Campaign SDK wird die Integration Ihrer Mobile App in die Adobe Campaign-Plattform umgesetzt.
+Sie können das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer .](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-Kompatible SDK-Versionen sind in der [Campaign-Kompatibilitätsmatrix](../start/compatibility-matrix.md#MobileSDK) aufgeführt.
+[In diesem Video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=de) erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK konfigurieren und installieren{target="_blank"}.
 
-![](../assets/do-not-localize/glass.png) Informationen zur Integration von Campaign Android- und iOS-SDKs in Ihre Mobile App finden Sie [in diesem Abschnitt](../config/push-config.md).
+Sie können auch das Campaign SDK integrieren, um die Integration Ihrer Mobile App in die Adobe Campaign-Plattform zu erleichtern. Kompatible SDK-Versionen sind in der [Campaign-Kompatibilitätsmatrix](../start/compatibility-matrix.md#MobileSDK) aufgeführt.
 
-<!--
-### Configure Campaign Extension in Launch
+Erfahren Sie, wie Sie Campaign Android- und iOS-SDKs in Ihre App integrieren können. [diese Seite](../config/push-config.md)
 
-You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveraging Campaign Classic extension.
-
-![](../assets/do-not-localize/book.png) Learn more in [Adobe Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target="_blank"}
-
--->
-
-## Mobile-App-Einstellungen in Campaign konfigurieren
+## Mobile-App-Einstellungen in Campaign konfigurieren{#push-config}
 
 Sie müssen die Einstellungen Ihrer iOS- bzw. Android-basierten Mobile Apps in Adobe Campaign definieren.
 
@@ -50,7 +43,7 @@ Sie müssen die Einstellungen Ihrer iOS- bzw. Android-basierten Mobile Apps in A
 
 ![](../assets/do-not-localize/book.png) Nähere Informationen zur Konfiguration für Android finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de#sending-messages).{target="_blank"}
 
-## Erstellen der ersten Push-Benachrichtigung
+## Erstellen der ersten Push-Benachrichtigung{#push-create}
 
 In diesem Abschnitt werden die Elemente beschrieben, die für den Versand von iOS- und Android-Benachrichtigungen erforderlich sind.
 
