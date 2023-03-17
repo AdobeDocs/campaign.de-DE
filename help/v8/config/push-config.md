@@ -6,23 +6,25 @@ feature: Push
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 4a017eabf1330b04939aa4bd0602c371a0ee3208
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Campaign SDKs mit Ihrer Mobile App integrieren {#integrate-campaign-sdk}
 
-Verwenden Sie Campaign SDKs für iOS und Android, um Ihre Mobile App in die Adobe Campaign-Plattform integrieren zu können.
+Sie können Campaign SDKs für iOS und Android verwenden, um die Integration Ihrer Mobile App in die Adobe Campaign-Plattform zu erleichtern.
 
 Unterstützte Versionen von Android und iOS sowie mit Campaign SDKs kompatible Versionen für Campaign v8 werden in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md#MobileSDK) aufgeführt.
 
+Als Campaign-Administrator können Sie Campaign SDKs über die [Software-Verteilung von Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) herunterladen. Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
+
 >[!NOTE]
 >
->Als Campaign-Administrator können Sie Campaign SDKs über die [Software-Verteilung von Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) herunterladen. Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
-
+>Sie können das Adobe Experience Platform Mobile SDK auch verwenden, indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren. [Weitere Informationen finden Sie in der Entwicklerdokumentation .](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 ## Integrationsparameter deklarieren {#declaring-integration-settings}
 
@@ -651,7 +653,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
    | ACCRegisterDeviceStatusFailureUnknownUUID | Die bereitgestellte UUID (Integrationsschlüssel) ist unbekannt. | LEER |
    | ACCRegisterDeviceStatusFailureUnexpectedError | Unerwarteter Fehler an ACC-Server zurückgegeben. | Die an ACC zurückgegebene Fehlermeldung. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
    Die Definition des **Neolane_SDKDelegate**-Protokolls und der **registerDeviceStatus**-Delegation ist wie folgt:
 
