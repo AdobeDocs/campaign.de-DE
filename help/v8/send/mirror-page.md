@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie den Link zur Mirrorseite hinzufügen und verw
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 903224da4ab15bf4221d8769bfb19933f4cbf2b0
+source-git-commit: 124d46f1a4bec1bfd5c07210c931d7fa37db08a7
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Während die meisten E-Mail-Clients Bilder ohne Probleme rendern, können einige
 
 Die von Adobe Campaign generierte Mirrorseite enthält alle Personalisierungsdaten.
 
-![Spiegellink-Probe](assets/mirror-page-link.png){width="300" align="center"}
+![Spiegellink-Probe](assets/mirror-page-link.png){width="500" align="center"}
 
 ## Link zur Mirrorseite hinzufügen{#link-to-mirror-page}
 
