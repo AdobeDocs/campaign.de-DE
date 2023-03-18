@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie den Link zur Mirrorseite hinzufügen und verw
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 124d46f1a4bec1bfd5c07210c931d7fa37db08a7
+source-git-commit: e2aaf80a5a0d74161152fabe8ea157d31923ee19
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Während die meisten E-Mail-Clients Bilder ohne Probleme rendern, können einige
 
 Die von Adobe Campaign generierte Mirrorseite enthält alle Personalisierungsdaten.
 
-![Spiegellink-Probe](assets/mirror-page-link.png){width="500" align="center"}
+![Spiegellink-Probe](assets/mirror-page-link.png){width="500" align="left"}
 
 ## Link zur Mirrorseite hinzufügen{#link-to-mirror-page}
 
@@ -29,7 +29,7 @@ Es empfiehlt sich, einen Link zur Mirrorseite einzufügen. Dieser Link kann beis
 
 In Adobe Campaign können Sie einen Link zur Mirrorseite in den E-Mail-Inhalt einfügen, indem Sie die dedizierte **Gestaltungsbaustein**. Die integrierten **Link zur Mirrorseite** Gestaltungsbaustein Hiermit wird der folgende Code in den E-Mail-Inhalt eingefügt: `<%@ include view='MirrorPage' %>`.
 
-![](assets/mirror-page-insert.png)
+![](assets/mirror-page-insert.png){width="500" align="left"}
 
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
@@ -43,7 +43,7 @@ Sie können den Erstellungsmodus der E-Mail-Mirrorseite steuern. Optionen sind i
 1. Navigieren Sie zum **[!UICONTROL Gültigkeit]** in den E-Mail-Eigenschaften.
 1. Im **Verwaltung der Mirrorseite** Abschnitt, überprüfen Sie die **[!UICONTROL Modus]** Dropdown-Liste.
 
-![](assets/mirror-page-generation.png)
+![](assets/mirror-page-generation.png){width="500" align="left"}
 
 Zusätzlich zum Standardmodus sind die folgenden Optionen verfügbar:
 
@@ -61,7 +61,7 @@ So greifen Sie auf diese Mirrorseite zu:
 
 1. Wählen Sie einen Empfänger aus und klicken Sie auf die Schaltfläche **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** Link.
 
-   ![](assets/mirror-page-display.png)
+   ![](assets/mirror-page-display.png){width="500" align="left"}
 
    Die Mirrorseite wird in einem eigenen Bildschirm mit Personalisierungsdaten für den ausgewählten Empfänger angezeigt.
 
