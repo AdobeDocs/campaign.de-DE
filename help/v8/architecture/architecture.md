@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 618e45b6948070c6b791d2bcefa8296b297bf25e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -46,40 +46,40 @@ Es stehen zwei Implementierungsmodelle zur Verfügung:
 
 >[!AVAILABILITY]
 >
->Diese Funktion ist nur für Kunden mit mehreren MID-Instanzkonfigurationen verfügbar.
+>Diese Funktion ist nur für Kundinnen und Kunden mit mehreren MID-Instanzkonfigurationen verfügbar.
 
-Je nach Campaign v8-Package verfügen Sie über eine bestimmte Anzahl von Mid-Sourcing-Instanzen, die für die Durchführung von Sendungen zuständig sind.
+Abhängig vom Campaign v8-Package verfügen Sie über eine bestimmte Anzahl von Mid-Sourcing-Instanzen, welche für die Durchführung von Sendungen zuständig sind.
 
-Standardmäßig verwenden die externen Konten für alle Kanäle eine **[!UICONTROL Alternative]** Routing-Modus, d. h., dass jeweils ein Versand von jeder Mid-Instanz einzeln abwechselnd gesendet wird.
+Standardmäßig verwenden die externen Konten für alle Kanäle einen **[!UICONTROL alternierenden]** Routing-Modus, d. h., ein Versand wird jeweils abwechselnd von jeder Mid-Instanz gesendet.
 
-Um eine schnellere und skalierbarere Leistung zu gewährleisten, können Sie zulassen, dass Sendungen automatisch über Mid-Sourcing-Instanzen verteilt werden, damit sie schneller an die Empfänger gesendet werden. Dieser Vorgang ist transparent, wenn der Versand von der Marketinginstanz aus ausgeführt wird: Nachdem der Versand durchgeführt wurde, werden alle Logs zusammengeführt, bevor sie an die Marketing-Instanz in einem einzigen Versandobjekt zurückgesendet werden.
+Um höhere Leistungen sowohl in Bezug auf die Geschwindigkeit als auch auf die Skalierbarkeit zu gewährleisten, können Sie die automatische Aufteilung von Sendungen auf Ihre Mid-Sourcing-Instanzen zulassen, damit diese schneller an die Empfängerinnen und Empfänger gesendet werden. Dieser Vorgang ist transparent, wenn der Versand von der Marketing-Instanz aus ausgeführt wird: Nachdem der Versand durchgeführt wurde, werden alle Logs zusammengeführt, bevor sie an die Marketing-Instanz in einem einzigen Versandobjekt zurückgesendet werden.
 
-Dazu benötigen Sie zusätzliche externe Konten mit dem **[!UICONTROL Aufspaltung]** Der Routing-Modus wird bei der Bereitstellung für jeden Kanal erstellt:
+Dazu werden zusätzliche externe Konten mit dem **[!UICONTROL Aufspaltungs]**-Routing-Modus bei der Bereitstellung für jeden Kanal erstellt:
 
-* Aufspaltung Versand - E-Mail (splitDeliveryEmail)
-* Aufspaltung Versand - SMS (splitDeliverySMS)
-* Aufspaltung Versand - iOS (splitDeliveryIOS)
-* Aufspaltung - Android (splitDeliveryAndroid)
+* Aufspaltung Versand – E-Mail (splitDeliveryEmail)
+* Aufspaltung Versand – SMS (splitDeliverySMS)
+* Aufspaltung Versand – iOS (splitDeliveryIOS)
+* Aufspaltung Versand – Android (splitDeliveryAndroid)
 
 ![](assets/splitted-delivery.png)
 
 >[!IMPORTANT]
 >
->Der Aufspaltungs-Routing-Modus ist standardmäßig für das Konto &quot;Aufspaltung - E-Mail&quot;aktiviert. Wenden Sie sich bei allen anderen Kanälen an die Kundenunterstützung, damit die Option aktiviert wird.
+>Der Aufspaltungs-Routing-Modus ist standardmäßig für das Konto „Aufspaltung Versand – E-Mail“ aktiviert. Für alle anderen Kanäle und externen Konten wenden Sie sich bitte an die Kundenunterstützung, um die Option aktivieren zu lassen.
 >
->Standardmäßig beträgt der Schwellenwert für die Schwelle zur Aufteilung eines Versands auf mehrere Mid 100.000. Sie können diesen Wert in der Option &quot;NmsDelivery_MultiMidSplitThreshold&quot;im **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Optionen]** Menü.
+>Standardmäßig beträgt der Schwellenwert für die Aufteilung eines Versands auf mehrere Mids 100.000. Sie können diesen Wert in der Option „NmsDelivery_MultiMidSplitThreshold“ im Menü **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Optionen]** ändern.
 
-Um externe Konten als Standardkonto für den Versand aufzuteilen, müssen Sie den Routing-Provider in Ihren Versandvorlagen ändern. Gehen Sie dazu wie folgt vor:
+Um aufgespaltete externe Konten als Standardkonto für den Versand von Sendungen festzulegen, müssen Sie den Routing-Provider in Ihren Versandvorlagen ändern. Gehen Sie dazu wie folgt vor:
 
-1. Navigieren Sie zum **[!UICONTROL Ressourcen]** / **[!UICONTROL Vorlagen]** / **[!UICONTROL Versandvorlagen]** und öffnen Sie die gewünschte Versandvorlage. In diesem Beispiel möchten wir die E-Mail-Versandvorlage bearbeiten.
+1. Navigieren Sie zum Ordner **[!UICONTROL Ressourcen]** / **[!UICONTROL Vorlagen]** / **[!UICONTROL Versandvorlagen]** und öffnen Sie die gewünschte Versandvorlage. In diesem Beispiel möchten wir die E-Mail-Versandvorlage bearbeiten.
 
    ![](assets/split-default-list.png)
 
-1. Klicken Sie auf **[!UICONTROL Eigenschaften]** und ändern Sie den Routing-Provider in das entsprechende externe Split-Versand-Konto.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]** und ändern Sie den Routing-Provider auf das entsprechende externe Aufspaltungs-Versand-Konto.
 
    ![](assets/split-default-delivery.png)
 
-1. Speichern Sie Ihre Änderungen. Alle mit der Vorlage gesendeten Sendungen verwenden jetzt standardmäßig den Aufspaltungs-Routing-Modus.
+1. Speichern Sie Ihre Änderungen. Alle mit der Vorlage verschickten Sendungen verwenden nun standardmäßig den Aufspaltungs-Routing-Modus.
 
 <!--In addition, you can select split external accounts as the default routing provider for all future delivery templates. To do this, change the value of the **[!UICONTROL xtkoption NmsBroadcast_DefaultProvider]** option to the name of the split account.
 
