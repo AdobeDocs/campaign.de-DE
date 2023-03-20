@@ -1,17 +1,17 @@
 ---
-title: Personalisieren von Inhalten
+title: Erste Schritte mit der Personalisierung
 description: Erfahren Sie, wie Sie den Nachrichteninhalt personalisieren.
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 4885f15c71d2be27dc32a239fb22abc3a96503c7
+source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '478'
 ht-degree: 59%
 
 ---
 
-# Personalisieren von Inhalten {#personalize-content}
+# Erste Schritte mit der Personalisierung {#personalize-content}
 
 Um jede Marketing-Kampagne optimal zu nutzen, bietet Ihnen Adobe Campaign eine Möglichkeit, benutzerdefinierte Inhalte bereitzustellen, die Kunden auf ihrer Ebene ansprechen. Basierend auf den Profildaten, Personalisierungsfunktionen zum Erstellen eines benutzerdefinierten Erlebnisses für verschiedene Gruppen und Einzelpersonen: Sie können Ihre Nachrichten an jeden einzelnen Empfänger anpassen, indem Sie die vorhandenen Daten und Informationen nutzen. Es kann sein Vorname, Interessen, wo sie leben, was sie kauften und vieles mehr.
 
