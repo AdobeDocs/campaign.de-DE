@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: bd109f9d320b3009ab0d9414291d397b331373de
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 96%
+source-wordcount: '589'
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,6 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
 1. **Personalisieren Ihrer Nachricht**
 
-
    * Hinzufügen der Vor- und Nachnamen der Empfänger
 
       Um den Vor- und Nachnamen der Zielgruppenprofile in den Nachrichteninhalt einzufügen, platzieren Sie den Cursor an der gewünschten Stelle, klicken Sie auf das letzte Symbol in der Symbolleiste, klicken Sie dann auf **[!UICONTROL Einfügen]** und wählen Sie **[!UICONTROL Grußformeln]** aus.
@@ -58,6 +57,8 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
       Navigieren Sie zur Registerkarte &quot;Vorschau&quot;, um die Personalisierung durch die Auswahl eines Empfängers zu überprüfen.
 
       ![](assets/perso-check.png)
+
+      Weitere Informationen zu Personalisierungsoptionen finden Sie unter [diesem Abschnitt](personalize.md).
 
    * Einfügen eines getrackten Links
 

@@ -4,10 +4,10 @@ title: Anwenden von Typologieregeln
 description: Hier erfahren Sie, wie Sie Typologieregeln anwenden
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 100%
+source-wordcount: '1020'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Um die von Ihnen erstellten Typologieregeln anzuwenden, müssen Sie sie mit eine
 
 1. Erstellen Sie eine Kampagnentypologie.
 
-   Die Typologien befinden sich im Verzeichnisknoten **[!UICONTROL Administration > Kampagnenverwaltung > Typologieverwaltung]** > **[!UICONTROL Typologien]**.
+   Auf Typologien kann über die **[!UICONTROL Administration > Campaign Management > Typologieverwaltung]** > **[!UICONTROL Typologien]** Ordner des Campaign-Explorers.
 
 1. Klicken Sie im Tab **[!UICONTROL Regeln]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Regeln aus, die im Rahmen dieser Typologie angewendet werden sollen.
 

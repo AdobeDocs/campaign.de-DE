@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Link zur Mirrorseite hinzufügen und verw
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 2a2887fcd476566d2105edd9824feba4c1caca8a
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ In Adobe Campaign können Sie einen Link zur Mirrorseite in den E-Mail-Inhalt ei
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-<!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
+Weitere Informationen zum Einfügen von benutzerdefinierten Inhaltsbausteinen finden Sie unter [Gestaltungsbausteine](personalization-blocks.md).
 
 ## Mirrorseitenerstellung{#mirror-page-generation}
 

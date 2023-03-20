@@ -4,10 +4,10 @@ title: Anreichern von Daten
 description: Erfahren Sie mehr über die Workflow-Aktivität "Anreicherung".
 feature: Workflows, Enrichment Activity
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 100%
+source-wordcount: '820'
+ht-degree: 82%
 
 ---
 
@@ -42,17 +42,17 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 Die Workflow-Erstellung gliedert sich in folgende Schritte:
 
 1. Platzierung von zwei **[!UICONTROL Abfragen]** und einer **[!UICONTROL Schnittmenge]** zum Abruf aller neuen Abonnenten, die am letzten Wettbewerb teilgenommen haben.
-1. Im Anschluss daran folgt eine **[!UICONTROL Anreicherung]**, die es ermöglicht, die Daten aus der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** zu verwenden. Das für die Personalisierung benötigte Feld **[!UICONTROL Score]** wird daher zur Workflow-Arbeitstabelle hinzugefügt.
-1. Mithilfe der **[!UICONTROL Aufspaltung]** werden nun je nach erreichtem Score Teilmengen erstellt.
-1. An jede Teilmenge wird ein **[!UICONTROL Versand]** angeschlossen.
+1. Die **[!UICONTROL Anreicherung]** -Aktivität verwendet, um Daten hinzuzufügen, die in der **[!UICONTROL Wettbewerbsergebnisse]** Tabelle. Die **[!UICONTROL Ergebnis]** -Feld, in dem die Personalisierung des Versands ausgeführt wird, wird der Arbeitstabelle des Workflows hinzugefügt.
+1. Die **[!UICONTROL Aufspaltung]** -Aktivität verwendet, um Empfänger-Teilmengen basierend auf Bewertungen zu erstellen.
+1. Für jede Teilmenge wird ein **[!UICONTROL Versand]** -Aktivität hinzugefügt.
 
 ## 1. Schritt: Zielgruppenbestimmung {#step-1--targeting}
 
-In der ersten Abfrage werden die Kontakte abgerufen, die innerhalb der letzten sechs Monate in die Datenbank aufgenommen wurden.
+Die erste Abfrage dient der Bestimmung der Zielgruppe, die in den letzten sechs Monaten der Datenbank hinzugefügt wurde.
 
 ![](assets/uc1_enrich_4.png)
 
-In der zweiten Abfrage werden die Kontakte abgerufen, die am letzten Wettbewerb teilgenommen haben.
+Die zweite Abfrage dient der Bestimmung der Zielgruppe, die am letzten Wettbewerb teilgenommen hat.
 
 ![](assets/uc1_enrich_5.png)
 
@@ -60,7 +60,7 @@ Die **[!UICONTROL Schnittmenge]** ermittelt dann die Population, die beiden Bedi
 
 ## 2. Schritt: Anreicherung {#step-2--enrichment}
 
-Im vorliegenden Beispiel sollen die Sendungen basierend auf dem in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** enthaltenen Feld **[!UICONTROL Score]** personalisiert werden. Diese Tabelle weist eine 1:n-Relation mit der Empfängertabelle auf. Die **[!UICONTROL Anreicherungsaktivität]** ermöglicht es, Daten aus einer mit der Filterdimension in Relation stehenden Tabelle zur Arbeitstabelle des Workflows hinzuzufügen.
+In diesem Beispiel erfahren Sie, wie Sie Sendungen entsprechend der Variablen **[!UICONTROL Ergebnis]** im Feld **[!UICONTROL Wettbewerbsergebnisse]** Tabelle. Diese Tabelle weist eine 1:n-Relation zur Empfängertabelle auf. Die **[!UICONTROL Anreicherung]** -Aktivität verwendet, um Daten aus einer mit der Filterdimension verknüpften Tabelle zur Arbeitstabelle des Workflows hinzuzufügen.
 
 1. Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]** im Bearbeitungsbildschirm der Anreicherung und aktivieren Sie die Option **[!UICONTROL Daten in Relation mit der Filterdimension]**. Klicken Sie dann auf **[!UICONTROL Weiter]**.
 

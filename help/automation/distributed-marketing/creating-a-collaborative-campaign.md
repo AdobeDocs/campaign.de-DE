@@ -4,10 +4,10 @@ title: Erstellen einer partizipativen Kampagne
 description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen
 feature: Distributed Marketing
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Partizipative Kampagnen werden von der Zentralstelle auf Basis der Kampagnenvorl
 
 ## Erstellen einer partizipativen Kampagne {#creating-a-collaborative-campaign}
 
-Partizipative Kampagnen beruhen jeweils auf einer Referenzkampagne, die von der Zentralstelle zu erstellen ist. Dies geschieht ausgehend vom Knoten **[!UICONTROL Kampagnenverwaltung > Kampagnen]** durch Klick auf das **[!UICONTROL Neu]**-Symbol.
+Um eine partizipative Kampagne zu konfigurieren, klicken Sie auf die Schaltfläche **[!UICONTROL Kampagnenverwaltung > Kampagnen]** Ordner, dann **[!UICONTROL Neu]** Symbol.
 
 >[!NOTE]
 >

@@ -4,10 +4,10 @@ title: Erste Schritte mit Kampagnensimulationen
 description: Erfahren Sie, wie Sie Kampagnensimulationen konfigurieren
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 100%
+source-wordcount: '1341'
+ht-degree: 98%
 
 ---
 
@@ -197,7 +197,7 @@ Auf der Registerkarte **[!UICONTROL Berechnungen]** können Sie Berichtsachsen b
 >[!NOTE]
 >
 >Es ist empfehlenswert, die Berichtsachsen in einer Simulationsvorlage zu bestimmen und nicht in jeder einzelnen Simulation.\
->Die Simulationsvorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Simulationsvorlagen]** des Adobe-Campaign-Navigationsbaums gespeichert.
+>Simulationsvorlagen werden im **[!UICONTROL Ressourcen > Vorlagen > Simulationsvorlagen]** Ordner des Campaign-Explorers.
 
 **Beispiel:**
 

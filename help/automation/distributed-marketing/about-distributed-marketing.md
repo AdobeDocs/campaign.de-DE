@@ -4,10 +4,10 @@ title: Erste Schritte mit verteiltem Marketing
 description: Erste Schritte mit verteiltem Marketing
 feature: Distributed Marketing
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '1180'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -103,7 +103,7 @@ Lokale Benutzer müssen der Benutzergruppe **[!UICONTROL Lokale Verwaltung]** zu
 
 ### Organisationseinheiten {#organizational-entities}
 
-Um eine Organisationseinheit zu erstellen, klicken Sie auf den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Organisationseinheiten]** und auf das Symbol **[!UICONTROL Neu]** oberhalb der Liste der Einheiten.
+Um eine Organisationseinheit zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Administration > Zugriffe > Organisationseinheiten]** und klicken Sie auf **[!UICONTROL Neu]** oberhalb der Liste der Entitäten.
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 

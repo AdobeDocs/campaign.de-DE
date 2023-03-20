@@ -3,10 +3,10 @@ title: Verwenden von Workflow-Daten
 description: Erfahren Sie, wie Sie die Workflow-Daten verwenden.
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ Die Zielgruppendaten werden im Verlauf der Workflow-Ausführung bereinigt. Nur d
 
 ### Verwenden der Zieldaten {#target-data}
 
-Die in der temporären Arbeitstabelle des Workflows gespeicherten Daten stehen für Personalisierungsaufgaben zur Verfügung. Daten können in Personalisierungsfeldern verwendet werden.
+Die in der temporären Arbeitstabelle des Workflows gespeicherten Daten stehen für Personalisierungsaufgaben zur Verfügung. Daten können in der [Personalisierungsfelder](../../v8/send/personalization-fields.md).
 
 Auf diese Weise können Sie beispielsweise Daten verwenden, die über eine Liste in einem Versand erfasst wurden. Verwenden Sie dazu die folgende Syntax:
 

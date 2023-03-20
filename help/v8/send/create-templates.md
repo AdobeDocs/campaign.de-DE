@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 98%
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 98%
 
 Verwenden Sie Versandvorlagen, um das kreative Erscheinungsbild zu standardisieren und so Kampagnen schneller ausführen und starten zu können.
 
-Eine Vorlage kann systematisch Folgendes enthalten:
+Eine Vorlage kann Folgendes enthalten:
 
 * Typologien
 * Absender- und Antwortadressen
-* Grundlegende Gestaltungsbausteine
+* Allgemein [Gestaltungsbausteine](../send/personalization-blocks.md)
 * Links zu [Mirrorseiten](../send/mirror-page.md) und Abmelde-Links
 * Inhalt, Firmenlogo oder Signatur
 * Andere Versandeigenschaften, z. B. die Gültigkeit der Ressource, die Parameter für erneute Versuche oder die Quarantäneeinstellungen.

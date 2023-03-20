@@ -4,10 +4,10 @@ title: Beispiele für verteiltes Marketing
 description: Beispiele für verteiltes Marketing
 feature: Distributed Marketing
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 100%
+source-wordcount: '1368'
+ht-degree: 96%
 
 ---
 
@@ -115,7 +115,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 #### Erstellen einer Datenverteilungs-Aktivität {#creating-a-data-distribution-activity}
 
-1. Um eine partizipative Kampagne mit Zielgruppenvalidierung zu implementieren, muss zunächst eine **[!UICONTROL Datenverteilung]** erstellt werden. Klicken Sie im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**.
+1. Zur Einrichtung einer partizipativen Kampagne (Zielgruppenvalidierung) müssen Sie zunächst eine **[!UICONTROL Datenverteilung]**. Klicken Sie auf **[!UICONTROL Neu]** im **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** Ordner des Campaign-Explorers.
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
@@ -139,7 +139,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 #### Erstellen einer partizipativen Kampagne {#creating-a-collaborative-campaign}
 
-1. Erstellen Sie vom Knoten **[!UICONTROL Kampagnenverwaltung > Kampagnen]** aus eine neue Referenzkampagne unter Verwendung der Vorlage **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidierung)]**.
+1. Aus dem **[!UICONTROL Kampagnenverwaltung > Kampagne]** Ordner des Campaign-Explorer erstellen Sie eine neue **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidierung)]**.
 1. Erstellen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** einen Workflow für die Kampagne. Dieser muss eine Aktivität vom Typ **Aufspaltung** enthalten, deren **[!UICONTROL Begrenzung der Anzahl von Datensätzen]** durch die **[!UICONTROL Datenverteilung]** festgelegt wird.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
