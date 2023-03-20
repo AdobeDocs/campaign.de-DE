@@ -1,18 +1,18 @@
 ---
-title: Gestaltungsbausteine
+title: Verwenden von Gestaltungsbausteinen
 description: Erfahren Sie, wie Sie in Ihrem Nachrichteninhalt integrierte Gestaltungsbausteine verwenden
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 45%
+source-wordcount: '638'
+ht-degree: 44%
 
 ---
 
 
-# Gestaltungsbausteine {#personalization-blocks}
+# Verwenden von Gestaltungsbausteinen{#personalization-blocks}
 
 Gestaltungsbausteine sind dynamische Inhalte, die ein bestimmtes Rendering enthalten, das Sie in Ihre Sendungen einfügen können. Sie ermöglichen beispielsweise das Einfügen eines Logos, einer bestimmten Anrede oder auch eines Links zur Mirror-Seite.
 

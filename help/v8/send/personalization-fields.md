@@ -1,18 +1,18 @@
 ---
-title: Personalisierungsfelder
+title: Hinzufügen von Personalisierungsfeldern,
 description: Erfahren Sie, wie Sie Personalisierungsdaten in Ihren Nachrichteninhalt einfügen
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 42%
 
 ---
 
 
-# Personalisierungsfelder {#personalization-fields}
+# Hinzufügen von Personalisierungsfeldern,{#personalization-fields}
 
 Verwenden Sie Personalisierungsfelder, um personalisierte Inhalte auf Basis der von Ihnen für jeden Empfänger festgelegten Regeln einzeln bereitzustellen.
 
