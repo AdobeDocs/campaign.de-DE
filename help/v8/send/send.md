@@ -5,26 +5,19 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 95%
+source-wordcount: '832'
+ht-degree: 97%
 
 ---
 
 
 # Senden und Überwachen Ihrer E-Mails
 
-Stellen Sie sicher, dass Sie nach der Konfiguration des Versands die Versandanalyse ausgeführt haben, bevor Sie den Versand durchführen.
-
-![](../assets/do-not-localize/book.png) [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#confirming-delivery){target="_blank"}
+Stellen Sie sicher, dass Sie nach der Konfiguration des Versands die Versandanalyse ausgeführt haben, bevor Sie den Versand durchführen. [Weitere Informationen](delivery-analysis.md)
 
 Bestätigen Sie anschließend den Versand, um den Versand der Nachrichten zu starten.
-
-Außerdem haben Sie folgende Möglichkeiten:
-
-* den Versand zu einem späteren Zeitpunkt planen, indem Sie [die Option Versand verschieben](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#scheduling-the-delivery-sending){target="_blank"},
-* in mehrere Batches mit [mehrere Schübe](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#sending-using-multiple-waves){target="_blank"}.
 
 Sie können die Ausführung des Versands über die Registerkarte **Versand** verfolgen, die über die Details dieses Versands oder über die Versandliste zugänglich ist.
 
@@ -59,7 +52,7 @@ Der MTA qualifiziert den SMTP-Bounce und sendet diese Qualifizierung zurück an 
 
 >[!NOTE]
 >
->Derzeit werden **asynchrone** Bounces durch den inMail-Prozess über die Regeln für **[!UICONTROL eingehende E-Mails]** qualifiziert. Mehr dazu finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=de#bounce-mail-qualification){target="_blank"}. <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
+>Derzeit werden **asynchrone** Bounces durch den inMail-Prozess über die Regeln für **[!UICONTROL eingehende E-Mails]** qualifiziert.
 
 In [diesem Abschnitt](delivery-failures.md) erfahren Sie mehr über fehlgeschlagene Sendungen.
 
