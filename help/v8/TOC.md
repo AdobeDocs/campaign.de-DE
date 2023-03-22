@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
 title: Dokumente zu Campaign v8
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 23f30dee861250532490da8598e6e0e18f72c1b0
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '521'
 ht-degree: 96%
 
 ---
@@ -56,15 +56,15 @@ ht-degree: 96%
          + [Versandfehler](send/delivery-failures.md)
       + [Optimieren der Versandzeit](send/predictive.md)
       + [Verwalten von Abonnements](start/subscriptions.md)
-   + Personalisieren von Inhalten {#personalize}
-      + [Erste Schritte mit der Personalisierung](send/personalize.md)
-      + [Personalisierungsdaten](send/personalization-data.md)
-      + [Hinzufügen von Personalisierungsfeldern,](send/personalization-fields.md)
-      + [Verwenden von Gestaltungsbausteinen](send/personalization-blocks.md)
-      + [Bedingungen erstellen](send/conditions.md)
-   + Versand validieren {#validate}
-      + [Vorschau und Testsendungen](send/preview-and-proof.md)
-      + [Versandanalyse](send/delivery-analysis.md)
+      + Personalisieren von Inhalten {#personalize}
+         + [Erste Schritte mit der Personalisierung](send/personalize.md)
+         + [Personalisierungsdaten](send/personalization-data.md)
+         + [Hinzufügen von Personalisierungsfeldern,](send/personalization-fields.md)
+         + [Verwenden von Gestaltungsbausteinen](send/personalization-blocks.md)
+         + [Bedingungen erstellen](send/conditions.md)
+      + Versand validieren {#validate}
+         + [Vorschau und E-Mail-Testsendungen](send/preview-and-proof.md)
+         + [Versandanalyse](send/delivery-analysis.md)
 + Profil- und Zielgruppen-Management {#audience}
    + [Erste Schritte mit Profilen und Audiences](audiences/gs-audiences.md)
    + [Verwenden von Audiences](start/audiences.md)
