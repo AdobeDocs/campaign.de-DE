@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Intermediate, Experienced
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 95%
+source-wordcount: '430'
+ht-degree: 93%
 
 ---
 
@@ -66,7 +66,16 @@ Beachten Sie die folgenden Besonderheiten und Empfehlungen:
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->
 
-**Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7**
+**Weitere Informationen**
+
+In diesen Abschnitten:
+
+* [Verwenden von E-Mail-Versandvorlagen](../send/create-templates.md)
+
+* [Ursachen für das Fehlschlagen von Sendungen](../send/delivery-failures.md)
+
+
+Und in der Campaign Classic v7-Dokumentation:
 
 * [Auswählen des E-Mail-Formats](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#selecting-message-formats){target="_blank"}
 
@@ -74,6 +83,3 @@ Beachten Sie die folgenden Besonderheiten und Empfehlungen:
 
 * [Festlegen der Bounce-E-Mail-Adresse](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html?lang=de#managing-bounce-emails){target="_blank"}
 
-* [Verwenden von E-Mail-Versandvorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target="_blank"}
-
-* [Ursachen für das Fehlschlagen von Sendungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=de){target="_blank"}

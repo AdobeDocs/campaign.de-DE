@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Campaign-Umgebung mit Twitter integriere
 role: User, Admin
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1121'
 ht-degree: 97%
 
 ---
@@ -111,7 +111,7 @@ Sie werden standardmäßig angehalten: Sie müssen sie manuell starten, wenn Sie
 
 Der technische Workflow **[!UICONTROL Synchronisation von Twitter-Konten]** synchronisiert Twitter-Konten in Adobe Campaign. Durch diesen Workflow wird die Liste der Twitter-Follower abgerufen, sodass Sie ihnen Direktnachrichten senden können. [Weitere Informationen](../send/twitter.md#direct-tw-messages)
 
-Standardmäßig wird dieser Workflow jeden Donnerstag um 7.30 Uhr ausgelöst. Sie können die Option **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]** verwenden, um den Workflow bei der Implementierung dieser Integration jederzeit zu starten.  Sie können auch die Planung bearbeiten, um die Häufigkeit der Auslösung des Workflows zu ändern. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html?lang=de){target="_blank"}.
+Standardmäßig wird dieser Workflow jeden Donnerstag um 7.30 Uhr ausgelöst. Sie können die Option **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]** verwenden, um den Workflow bei der Implementierung dieser Integration jederzeit zu starten.  Sie können auch die Planung bearbeiten, um die Häufigkeit der Auslösung des Workflows zu ändern. Weitere Informationen finden Sie auf [dieser Seite](../../automation/workflow/scheduler.md).
 
 >[!CAUTION]
 >

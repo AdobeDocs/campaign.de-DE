@@ -5,18 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 92%
+source-wordcount: '479'
+ht-degree: 89%
 
 ---
 
 # E-Mails entwerfen und senden
 
-Ein E-Mail-Versand richtet personalisierte E-Mails an eine zuvor bestimmte Zielpopulation.
-
-![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html?lang=de){target="_blank"}
+Ein E-Mail-Versand richtet personalisierte E-Mails an eine zuvor bestimmte Zielpopulation. [Weitere Informationen](../send/send.md).
 
 ## Den ersten E-Mail-Versand erstellen
 
@@ -78,17 +76,13 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
 In diesem [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de) erfahren Sie, wie Sie E-Mail-Inhalte importieren können.
 
-Weitere Informationen finden Sie in diesen Abschnitten der **Dokumentation zu Campaign Classic v7**:
+Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* Erstellen einer E-Mail in Campaign
-   ![](../assets/do-not-localize/book.png) [Weitere Informationen zum Erstellen von E-Mails](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=de){target="_blank"}
-* Erstellen und Verwenden von E-Mail-Vorlagen
-   ![](../assets/do-not-localize/book.png) [Weitere Informationen zu E-Mail-Vorlagen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target="_blank"}
-* Auswählen der Audience für Ihre E-Mail
-   ![](../assets/do-not-localize/book.png) [Weitere Informationen zur Definition der Zielpopulation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=de){target="_blank"}
-* Validieren eines Versands und Durchführen von Testsendungen
-   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zur Validierung eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target="_blank"}
-* Hinzufügen von [Testadressen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=de){target="_blank"}
+* [Erstellen einer E-Mail in Campaign
+](../send/email.md)
+* [Erstellen und Verwenden von E-Mail-Vorlagen](../send/create-templates.md)
+* [Auswählen der Audience für Ihre E-Mail](../audiences/gs-audiences.md)
+* [Validieren eines Versands und Durchführen von Testsendungen](../send/preview-and-proof.md)
 
 ## Testen und Validieren von E-Mails
 
@@ -99,6 +93,5 @@ Sie haben folgende Möglichkeiten:
 * Versand-Analyse-Protokolle überprüfen
 * Durchführen eines Testversands
 * Testadressen hinzufügen
-* Kontrollgruppen verwenden
 
-![](../assets/do-not-localize/book.png) [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target="_blank"}
+[Mehr dazu](../send/delivery-analysis.md)
