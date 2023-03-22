@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihren Versand vorbereiten und überprüfen
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 8f04981e38da79e69afc890311c559f9ffa136f4
+source-git-commit: 51b333492ad50849751208c7549dc00f66140b82
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 53%
@@ -47,11 +47,11 @@ Gehen Sie zur Vorbereitung des Versands wie folgt vor:
    >
    >Beim Ausführen friert die Analyse den Versand (oder Testversand) ein. Auf jede Änderung am Versand (oder Testversand) muss eine weitere Analyse folgen, bevor sie anwendbar wird.
 
-Nach Abschluss der Analyse wird im oberen Bereich des Fensters angezeigt, ob die Sendungsvorbereitung abgeschlossen wurde oder ob Fehler aufgetreten sind. Alle Validierungsschritte, Warnungen und Fehler werden aufgelistet. Farbige Symbole zeigen den Nachrichtentyp an:
+   Nach Abschluss der Analyse wird im oberen Bereich des Fensters angezeigt, ob die Sendungsvorbereitung abgeschlossen wurde oder ob Fehler aufgetreten sind. Alle Validierungsschritte, Warnungen und Fehler werden aufgelistet. Farbige Symbole zeigen den Nachrichtentyp an:
 
-* Ein blaues Symbol steht für eine informative Nachricht.
-* Ein gelbes Symbol weist auf einen nicht kritischen Verarbeitungsfehler hin.
-* Ein rotes Symbol weist auf einen kritischen Fehler hin, der den Versand verhindert.
+   * Ein blaues Symbol steht für eine informative Nachricht.
+   * Ein gelbes Symbol weist auf einen nicht kritischen Verarbeitungsfehler hin.
+   * Ein rotes Symbol weist auf einen kritischen Fehler hin, der den Versand verhindert.
 
    ![](assets/delivery-analysis-results.png){width="800" align="left"}
 
