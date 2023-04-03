@@ -6,16 +6,33 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
+source-git-commit: 44743e585119e8cd81a8fcc9b4d667c25c0d438e
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 100%
+source-wordcount: '680'
+ht-degree: 79%
 
 ---
 
 # Aktuelle Version{#latest-release}
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Campaign v8-Version** aufgelistet.
+
+## Version 8.4.5 {#release-8-4-5}
+
+_3. April 2023_
+
+**Patches**
+
+* Fehlerkorrektur - Jetzt tritt kein Fehler mehr bei der Einschränkung doppelter Schlüssel auf, wenn mehrere Genehmigungs-Workflows denselben Zeitplan aufweisen. (NEO-48968)
+* Fehlerkorrektur - Es wurde ein Regressionsfehler behoben, der durch NEO-54474 (8.4.4) eingeführt wurde und dazu führte, dass das Stilattribut des Body-Tags beim Hochladen eines Bildes im Digital Content Editor (DCE) geändert wurde. (NEO-57697)
+* Fehlerkorrektur - Beim Export von Daten mithilfe eines CRM-Connectors tritt jetzt kein Fehler mehr auf, wenn in der temporären Tabelle ein Primärschlüssel definiert ist, der als long anstelle von uuid angegeben ist. (NEO-54153)
+* Fehlerkorrektur - Es wurde ein Regressionsproblem behoben, das in 8.4.1 eingeführt wurde und zu Fehlern beim Package-Export, FDA über HTTP und Reporting führen konnte. (NEO-57731)
+* Fehlerkorrektur - Es wurde ein Regressionsfehler in Version 8.3.8 behoben, der dazu führte, dass der Versandstatus für Sendungen mit negativen IDs korrekt aktualisiert wurde. (NEO-54675)
+* Fehlerkorrektur - Beim Importieren von Daten mit dem Big Query-Connector treten jetzt keine booleschen Felder mehr auf. (NEO-49181)
+
+>[!CAUTION]
+>
+> Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../start/connect.md#upgrade-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
 ## Version 8.4.4 {#release-8-4-4}
 
