@@ -5,9 +5,9 @@ description: Dienstleister, Lager und Budgets
 feature: Budget Management, Campaigns
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1904'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ In Adobe Campaign haben Sie die Möglichkeit, Dienstleister zu bestimmen, die an
 
 Jeder Dienstleister wird in einer Datei gespeichert, die seine Kontaktdaten, Dienstleistungsvorlagen und verbundene Vorgänge enthält.
 
-Dienstleister werden im Abschnitt **[!UICONTROL Administration > Kampagnenverwaltung]** Ordner des Campaign-Explorers.
+Dienstleister werden im Ordner **[!UICONTROL Administration > Kampagnen-Management]** des Campaign-Explorers konfiguriert.
 
 Diverse, in Sendungen zu realisierende Vorgänge werden von Dienstleistern ausgeführt, insbesondere solche, die Briefpost und mobile Kanäle betreffen. Diese Dienstleister kommen beispielsweise in Druckvorgängen oder bei der Zustellung von Nachrichten zum Einsatz. Diese Vorgänge erfordern dienstleisterspezifische Einstellungen und verursachen Kosten. Die Konfiguration von Dienstleistern erfolgt in vier Schritten:
 
@@ -129,9 +129,9 @@ Sie haben zudem die Möglichkeit, die Kosten für eine bestimmte Nachrichtenanza
 
 * Im Abschnitt **[!UICONTROL Benachrichtigungs-E-Mail]** können Sie die Vorlage für die Benachrichtigung von Dienstanbietern nach dem Versand von Dateien angeben. Wählen Sie die Vorlage, mit der die Benachrichtigung erstellt werden soll, und die Gruppe der Empfänger.
 
-   Standardmäßig werden Versandvorlagen für Benachrichtigungen im **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** -Ordner, auf den über die allgemeine Ansicht zugegriffen werden kann.
+   Die Versandvorlagen für Benachrichtigungen werden standardmäßig im Ordner **[!UICONTROL Administration > Kampagnen-Management > Vorlagen technischer Sendungen]** gespeichert, auf den über die allgemeine Ansicht zugegriffen werden kann.
 
-* Im Abschnitt **[!UICONTROL Anschlussvorgang]** wird der nach der Versandvalidierung zu startende Workflow ausgewählt. Wenn eine Workflow-Vorlage angegeben wird, wird nach beendeter Validierung automatisch eine Workflow-Instanz erstellt und gestartet. Dieser Workflow kann beispielsweise die Extraktionsdatei zur Verarbeitung an einen externen Dienstleister senden.
+* Im Abschnitt **[!UICONTROL Anschlussvorgang]** können Sie den Workflow auswählen, der nach der Genehmigung des Versands gestartet werden soll. Wenn eine Workflow-Vorlage angegeben wird, wird nach beendeter Validierung automatisch eine Workflow-Instanz erstellt und gestartet. Dieser Workflow kann beispielsweise die Extraktionsdatei zur Verarbeitung an einen externen Dienstleister senden.
 
 ### Zuordnen von Services zu Kampagnen {#associate-a-service-with-a-campaign}
 
