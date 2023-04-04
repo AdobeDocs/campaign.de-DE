@@ -5,9 +5,9 @@ description: Beispiele für verteiltes Marketing
 feature: Distributed Marketing
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1368'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 #### Erstellen einer Datenverteilungs-Aktivität {#creating-a-data-distribution-activity}
 
-1. Zur Einrichtung einer partizipativen Kampagne (Zielgruppenvalidierung) müssen Sie zunächst eine **[!UICONTROL Datenverteilung]**. Klicken Sie auf **[!UICONTROL Neu]** im **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** Ordner des Campaign-Explorers.
+1. Zur Einrichtung einer partizipativen Kampagne (mit Zielgruppenvalidierung) müssen Sie zunächst eine **[!UICONTROL Datenverteilungs-Aktivität]** erstellen. Klicken Sie dafür im Ordner **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** des Campaign-Explorers auf das Symbol **[!UICONTROL Neu]**.
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
@@ -139,7 +139,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 #### Erstellen einer partizipativen Kampagne {#creating-a-collaborative-campaign}
 
-1. Aus dem **[!UICONTROL Kampagnenverwaltung > Kampagne]** Ordner des Campaign-Explorer erstellen Sie eine neue **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidierung)]**.
+1. Erstellen Sie vom Ordner **[!UICONTROL Kampagnenverwaltung > Kampagnen]** des Campaign-Explorers aus eine neue **[!UICONTROL partizipative Kampagne (mit Zielgruppenvalidierung)]**.
 1. Erstellen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** einen Workflow für die Kampagne. Dieser muss eine Aktivität vom Typ **Aufspaltung** enthalten, deren **[!UICONTROL Begrenzung der Anzahl von Datensätzen]** durch die **[!UICONTROL Datenverteilung]** festgelegt wird.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
