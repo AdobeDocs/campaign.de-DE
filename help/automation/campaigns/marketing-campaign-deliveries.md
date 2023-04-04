@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '755'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Die Validierung des Versands ist auf Administratoren sowie auf Benutzende oder B
 
 ![](assets/select-delivery-reviewers.png)
 
-Sie können jedoch auch zulassen, dass der/die Kampagnenverantwortliche den Versand bestätigt, selbst wenn in den Versand- oder Kampagneneigenschaften spezifische Validierungsverantwortliche definiert wurden. Erstellen Sie dazu als Administrator die Option **NmsCampaign_Activate_OwnerConfirmation** und legen Sie sie auf **1** fest. Die Verwaltung der Optionen erfolgt über die **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** Ordner des Campaign-Explorers.
+Sie können jedoch auch zulassen, dass der/die Kampagnenverantwortliche den Versand bestätigt, selbst wenn in den Versand- oder Kampagneneigenschaften spezifische Validierungsverantwortliche definiert wurden. Erstellen Sie dazu als Administrator die Option **NmsCampaign_Activate_OwnerConfirmation** und legen Sie sie auf **1** fest. Die Verwaltung der Optionen erfolgt über den Ordner **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** im Campaign-Explorer.
 
 
 ### Starten eines Briefpostversands {#start-an-offline-delivery}
