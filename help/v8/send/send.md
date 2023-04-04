@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Der MTA qualifiziert den SMTP-Bounce und sendet diese Qualifizierung zurück an 
 
 >[!NOTE]
 >
->Derzeit werden **asynchrone** Bounces durch den inMail-Prozess über die Regeln für **[!UICONTROL eingehende E-Mails]** qualifiziert.
+>Derzeit werden **asynchrone** Bounces durch den inMail-Prozess über die Regeln für **[!UICONTROL eingehende E-Mails]** als solche qualifiziert.
 
 In [diesem Abschnitt](delivery-failures.md) erfahren Sie mehr über fehlgeschlagene Sendungen.
 
@@ -69,7 +69,7 @@ Domain Keys Identified Mail (DKIM) ist eine Authentifizierungsmethode, mit der g
 
 In Adobe Campaign wird die DKIM-E-Mail-Authentifizierungssignatur vom MTA durchgeführt.
 
-Erfahren Sie mehr über DKIM im [Best Practices für die Zustellbarkeit von Adoben](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication){target="_blank"}.
+Im [Handbuch von Adobe zu Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication){target="_blank"} erfahren Sie mehr über DKIM.
 
 ## E-Mail-Feedback-Service {#email-feedback-service}
 
@@ -83,7 +83,7 @@ Wenn die Nachricht den Zielgruppenprofilen zugestellt wird und diese Information
 
 Wenn Hardbounces vom MTA zurückgemeldet werden, ändert sich ihr Log-Status von **[!UICONTROL Vom Dienstleister berücksichtigt]** in **[!UICONTROL Fehlgeschlagen]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-Wenn Softbounces vom MTA zurückgemeldet werden, bleibt ihr Log-Status unverändert (**[!UICONTROL Vom Dienstleister berücksichtigt]**). Nur die [Fehlerursache](delivery-failures.md#delivery-failure-reasons) wird aktualisiert<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Der **[!UICONTROL Erfolgsprozentsatz]** bleibt unverändert. Soft-Bounce-Nachrichten werden dann im gesamten Versand wiederholt. [Gültigkeitszeitraum](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"}:
+Wenn Softbounces vom MTA zurückgemeldet werden, bleibt ihr Log-Status unverändert (**[!UICONTROL Vom Dienstleister berücksichtigt]**). Nur die [Fehlerursache](delivery-failures.md#delivery-failure-reasons) wird aktualisiert<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Der **[!UICONTROL Erfolgsprozentsatz]** bleibt unverändert. Nachrichten, bei denen ein Softbounce aufgetreten ist, erhalten dann während des [Gültigkeitszeitraums](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"} des Versands einen erneuten Zustellversuch:
 
 * Wenn ein erneuter Versuch vor Ende der Gültigkeitszeitraums erfolgreich ist, ändert sich der Nachrichtenstatus in **[!UICONTROL Gesendet]** und der **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend erhöht.
 
