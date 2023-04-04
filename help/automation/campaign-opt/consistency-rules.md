@@ -5,9 +5,9 @@ description: Kohärenzregeln
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '790'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Im folgenden Beispiel wird eine Typologieregel für eine telefonische Treuekampa
 
 Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
-1. Unter dem **[!UICONTROL Administration > Kampagnenverwaltung > Typologieverwaltung > Typologieregeln]** Ordner, klicken Sie auf **[!UICONTROL Neu]**.
+1. Klicken Sie im Ordner **[!UICONTROL Administration > Kampagnen-Verwaltung > Typologieverwaltung > Typologieregeln]** auf **[!UICONTROL Neu]**.
 1. Wählen Sie eine Regel vom Typ **[!UICONTROL Kapazität]** aus.
 
    ![](assets/campaign_opt_create_capacity_01.png)
