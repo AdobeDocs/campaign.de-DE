@@ -5,9 +5,9 @@ description: Hier erfahren Sie, wie Sie Typologieregeln anwenden
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
 source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1015'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie eine Kampagnentypologie.
 
-   Auf Typologien kann über die **[!UICONTROL Administration > Campaign Management > Typologieverwaltung]** > **[!UICONTROL Typologien]** Ordner des Campaign-Explorers.
+   Die Typologien befinden sich im Ordner **[!UICONTROL Administration > Kampagnen-Management > Typologieverwaltung]** > **[!UICONTROL Typologien]** des Campaign-Explorers.
 
 1. Klicken Sie im Tab **[!UICONTROL Regeln]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Regeln aus, die im Rahmen dieser Typologie angewendet werden sollen.
 
@@ -29,7 +29,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Speichern Sie die Typologie, um sie der Liste der bereits vorhandenen Typologien hinzuzufügen.
 1. Öffnen Sie den Versand, auf den Sie die Regeln anwenden möchten.
-1. Navigieren Sie zu den Versandeigenschaften und öffnen Sie die **[!UICONTROL Typologie]** Registerkarte.
+1. Navigieren Sie zu den Versandeigenschaften und öffnen Sie die Registerkarte **[!UICONTROL Typologie]**.
 1. Wählen Sie die Typologie in der Dropdown-Liste aus.
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
@@ -56,9 +56,9 @@ Bestimmen Sie nun im Abfrage-Editor die Filterbedingungen. Im unten stehenden Be
 
 ## Anpassen der Berechnungsfrequenz {#adjust-calculation-frequency}
 
-Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Workflow neu ausgeführt. Bereits berechnete Werte, die sich nicht täglich verändern, können jedoch beibehalten werden, um die Datenbank nicht zu überlasten.
+Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Workflow neu ausgeführt. Die Werte können jedoch über diesen Zeitraum hinaus gespeichert werden.
 
-Einige Berechnungen verwenden Werte, die sich nicht täglich ändern. Es wäre daher nicht relevant, die Daten täglich neu zu berechnen und die Datenbank umsonst zu überlasten. Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit Tendenzwerten und Kaufinformationen von Kunden anreichert, müssen die auf diesen Werten basierenden Daten nicht täglich neu berechnet werden.
+Einige Berechnungen verwenden nämlich Werte, die sich nicht täglich ändern. Es wäre daher überflüssig, die Daten täglich neu zu berechnen und die Datenbank unnötig zu überlasten. Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit der Tendenzauswertung und Kaufinformationen der Kundschaft anreichert, müssen die auf diesen Werten basierenden Daten nicht täglich neu berechnet werden.
 
 Geben Sie hierzu im Feld **[!UICONTROL Frequenz]** des Tabs **[!UICONTROL Allgemein]** an, wie lange die Berechnungen höchstens beibehalten werden sollen. Der Standardwert **0s** veranlasst, dass die Berechnungen bis zur nächsten Ausführung der täglichen Neuschlichtung gültig bleiben.
 
@@ -93,11 +93,11 @@ Im Standard-Ausführungsmodus werden die Regeln in der folgenden Reihenfolge aus
 
 Im Tab **[!UICONTROL Allgemein]** haben Sie die Möglichkeit im Feld **[!UICONTROL Anwendungsreihenfolge]** die Abfolge der Regeln zu bestimmen. Dies ist insbesondere interessant, wenn in der gleichen Verarbeitungsphase der Nachrichten mehrere Regeln zur Anwendung kommen.
 
-Beispielsweise wird eine Druckregel mit einer Ausführungsreihenfolge von 20 vor einer Druckregel mit einer Ausführungsreihenfolge von 30 ausgeführt.
+Beispielsweise wird eine Druckregel mit einer Anwendungsreihenfolge von 20 vor einer Druckregel mit einem Wert von 30 ausgeführt.
 
 ### Kontrollregeln {#control-rules}
 
-Für **[!UICONTROL Kontrolle]** Regeln festlegen, können Sie festlegen, zu welchem Zeitpunkt des Versand-Lebenszyklus die Regel angewendet wird: vor oder nach der Zielgruppenbestimmung, zu Beginn der Personalisierung, am Ende der Analyse. Wählen Sie in der Dropdown-Liste der **[!UICONTROL Phase]** im Feld **[!UICONTROL Allgemein]** der Typologieregel.
+Für **[!UICONTROL Kontrollregeln]** können Sie festlegen, zu welchem Zeitpunkt des Versandslebenszyklus die Regel angewendet wird: vor oder nach der Zielgruppenbestimmung, zu Beginn der Personalisierung, am Ende der Analyse. Wählen Sie den gewünschten Wert in der Dropdown-Liste des Felds **[!UICONTROL Phase]** auf der Registerkarte **[!UICONTROL Allgemein]** der Typologieregel aus.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
