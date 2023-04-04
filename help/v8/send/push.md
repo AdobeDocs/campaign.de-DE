@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1249'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folg
 
 ## SDK integrieren {#push-sdk}
 
-Sie können das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer .](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+Sie können das Adobe Experience Platform Mobile SDK auch verwenden, indem Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Adobe Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 [In diesem Video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=de) erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK konfigurieren und installieren{target="_blank"}.
 
-Sie können auch das Campaign SDK integrieren, um die Integration Ihrer Mobile App in die Adobe Campaign-Plattform zu erleichtern. Kompatible SDK-Versionen sind in der [Campaign-Kompatibilitätsmatrix](../start/compatibility-matrix.md#MobileSDK) aufgeführt.
+Sie können auch das Campaign SDK integrieren, um die Integration Ihrer App in die Adobe Campaign-Plattform zu erleichtern. Kompatible SDK-Versionen sind in der [Campaign-Kompatibilitätsmatrix](../start/compatibility-matrix.md#MobileSDK) aufgeführt.
 
-Erfahren Sie, wie Sie Campaign Android- und iOS-SDKs in Ihre App integrieren können. [diese Seite](../config/push-config.md)
+Informationen zur Integration von Campaign Android- und iOS-SDKs in Ihre App finden Sie [auf dieser Seite](../config/push-config.md).
 
 ## Mobile-App-Einstellungen in Campaign konfigurieren{#push-config}
 
@@ -181,7 +181,7 @@ Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Ve
    ![](../assets/do-not-localize/book.png) [Wichtige Schritte zur Validierung eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de){target="_blank"}
 
 * Versand bestätigen und versenden
-   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zum Versand](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de){target="_blank"}
+   ![](../assets/do-not-localize/book.png) [Wichtige Schritte zum Durchführen eines Versands](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de){target="_blank"}
 
 Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7:
 
@@ -190,4 +190,4 @@ Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen
    ![](../assets/do-not-localize/book.png) [Weitere Informationen zu Quarantänen für Push-Benachrichtigungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=de#push-notification-quarantines){target="_blank"}
 
 * Fehlerbehebung
-   ![](../assets/do-not-localize/book.png) [Erfahren Sie, wie Sie Ihre Push-Benachrichtigungen beheben können.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=de){target="_blank"}
+   ![](../assets/do-not-localize/book.png) [So beheben Sie Probleme mit Ihren Push-Benachrichtigungen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=de){target="_blank"}
