@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie die Audience Ihrer Marketing-Kampagnen defini
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1562'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -242,4 +242,4 @@ In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Camp
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.
