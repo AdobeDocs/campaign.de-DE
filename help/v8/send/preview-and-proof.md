@@ -5,7 +5,7 @@ feature: Personalization
 role: User
 level: Beginner
 source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Bevor Sie Testsendungen durchführen, sollten Sie den Nachrichteninhalt im Vorsc
 Gehen Sie wie folgt vor, um eine Vorschau des Nachrichteninhalts anzuzeigen:
 
 1. Navigieren Sie zur Registerkarte **Vorschau** des Versands.
-1. Klicken Sie auf **[!UICONTROL Personalisierung testen]**, um ein Profil zum Ausfüllen der Personalisierungsdaten auszuwählen. Sie können eine bestimmte Empfängerin bzw. einen Empfänger in der Datenbank oder eine Testadresse auswählen oder ein Profil aus der Zielpopulation auswählen, sofern diese bereits definiert worden ist. Sie können den Inhalt auch ohne Personalisierung überprüfen.
+1. Klicken Sie auf **[!UICONTROL Personalisierung testen]**, um ein Profil zum Ausfüllen der Personalisierungsdaten auszuwählen. Sie können eine bestimmte Empfängerin bzw. einen Empfänger in der Datenbank oder eine Testadresse auswählen oder ein Profil aus der Zielgruppe auswählen, sofern diese bereits definiert worden ist. Sie können den Inhalt auch ohne Personalisierung überprüfen.
 
    ![](assets/test-personalization.png)
 
@@ -47,7 +47,7 @@ Die Testversand-Zielgruppe kann in der Versandvorlage oder versandspezifisch def
 Der Typ der Testversand-Zielgruppe wird aus der Dropdown-Liste **[!UICONTROL Zielgruppenbestimmungsmodus]** ausgewählt.
 
 * Verwenden Sie die Option **[!UICONTROL Bestimmung einer speziellen Testversand-Zielgruppe]**, um die Empfängerinnen und Empfänger in der Datenbank als die Testversand-Zielgruppe auszuwählen.
-* Verwenden Sie die Option **[!UICONTROL Adressersetzung]** zur Eingabe der E-Mail-Adressen und zur Validierung des Inhalts mithilfe der Empfängerzieldaten. Die Ersatzadressen können manuell eingegeben oder aus der Dropdown-Liste ausgewählt werden. Die zugehörige Auflistung ist die Ersatzadresse (rcpAddress).
+* Verwenden Sie die Option **[!UICONTROL Adressersetzung]** zur Eingabe der E-Mail-Adressen und zur Validierung des Inhalts mithilfe der Zielgruppen-Empfängerdaten. Die Ersatzadressen können manuell eingegeben oder aus der Dropdown-Liste ausgewählt werden. Die zugehörige Auflistung ist die Ersatzadresse (rcpAddress).
 Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie können jedoch eine bestimmte Empfängerin oder einen bestimmten Empfänger aus der Hauptzielgruppe über das **[!UICONTROL Detail]**-Symbol auswählen.
 
    ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
@@ -65,7 +65,7 @@ Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie k�
 
    Weitere Informationen über Testadressen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=de){target="_blank"}.
 
-* Verwenden Sie die Option **[!UICONTROL Spezifische Ziel- und Testadressen]** zur Kombination von Testadressen und spezifischen E-Mail-Adressen. Die entsprechenden Konfigurationen werden dann in zwei separaten Unterregisterkarten definiert.
+* Verwenden Sie die Option **[!UICONTROL Spezifische Zielgruppen und Testadressen]** zur Kombination von Testadressen und spezifischen E-Mail-Adressen. Die entsprechenden Konfigurationen werden dann in zwei separaten Unterregisterkarten definiert.
 
 ### Durchführen eines Testversands{#proofs-send}
 

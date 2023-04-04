@@ -5,7 +5,7 @@ feature: Personalization
 role: User
 level: Beginner
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um einen von einem Feldwert abhängigen bedingten Inhal
 
    ![Bedingung in einer E-Mail](assets/condition-in-email.png)
 
-1. Klicken Sie nun auf die Registerkarte **[!UICONTROL Vorschau]**, um den der Empfängerin bzw. dem Empfänger entsprechend personalisierten Nachrichteninhalt anzusehen. Wählen Sie eine Empfängerin oder einen Empfänger aus, für die bzw. den die Bedingung zutrifft, um den Inhalt zu überprüfen. Wählen Sie dann eine andere Empfängerin oder einen anderen Empfänger aus, für die bzw. den sie nicht zutrifft, und überprüfen Sie erneut.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**, um den Nachrichten inhalt entsprechend dem Versandempfänger oder der dem Versandempfängerin anzuzeigen. Wählen Sie eine Empfängerin oder einen Empfänger aus, für die bzw. den die Bedingung zutrifft, um den Inhalt zu überprüfen. Wählen Sie dann eine andere Empfängerin oder einen anderen Empfänger aus, für die bzw. den sie nicht zutrifft, und überprüfen Sie erneut.
 
 Sie können weitere Bedingungen hinzufügen und Inhalte in Abhängigkeit von einem oder mehreren Feldwerten konfigurieren. Dies ist mit den Optionen **[!UICONTROL Bedingter Inhalt > Sonst]** und **[!UICONTROL Bedingter Inhalt > Sonst wenn]** möglich. Die Vorgehensweise ist die gleiche wie beim **Wenn**-Ausdruck.
 
@@ -54,7 +54,7 @@ Sie können weitere Bedingungen hinzufügen und Inhalte in Abhängigkeit von ein
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen. Inhalte werden in der bevorzugten Sprache der Empfängerin bzw. des Empfängers angezeigt.
 
-1. Erstellen Sie eine E-Mail und wählen Sie eine Zielpopulation aus. In diesem Beispiel basiert die Bedingung für die Darstellung einer bestimmten Version auf dem Wert **Sprache** des Empfängerprofils. Diese Werte sind auf **EN**, **FR**, **ES** festgelegt.
+1. Erstellen Sie eine E-Mail und wählen Sie eine Zielgruppe aus. In diesem Beispiel basiert die Bedingung für die Darstellung einer bestimmten Version auf dem Wert **Sprache** des Empfängerprofils. Diese Werte sind auf **EN**, **FR**, **ES** festgelegt.
 1. Klicken Sie im HTML-Inhalt der E-Mail auf den Tab **[!UICONTROL Quelle]** und fügen Sie folgenden Code ein:
 
    ```

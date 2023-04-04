@@ -8,7 +8,7 @@ exl-id: a11d3895-00f1-43d0-b0f7-330fce9fd56b
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 85%
+ht-degree: 90%
 
 ---
 
@@ -37,7 +37,7 @@ Für jede Auflistung werden die Werte in einer Dropdown-Liste angezeigt, aus der
 
 Für Auflistungen des Typs **Offen** kann der Benutzer auch die ersten Zeichen des Werts eingeben und mögliche Werte werden angezeigt.
 
-Erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und diese konfigurieren können in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de){target="_blank"}.
+In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de){target="_blank"} erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und sie konfigurieren können.
 
 
 ## Standardeinheiten {#default-units}

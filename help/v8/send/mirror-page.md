@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Die Mirrorseite ist eine Online-Version Ihrer E-Mail.
 
-Während die meisten E-Mail-Clients Bilder ohne Probleme rendern, können einige Vorgaben aus Sicherheitsgründen verhindern, dass Bilder angezeigt werden. Benutzerinnen und Benutzer können die Mirrorseite einer E-Mail aufrufen, beispielsweise wenn bei der Anzeige in ihrem Posteingang Rendering-Probleme auftreten oder Bilder beschädigt sind. Es wird auch empfohlen, aus Gründen der Barrierefreiheit oder um zum Teilen in sozialen Netzwerken zu ermutigen, eine Online-Version bereitzustellen.
+Während die meisten E-Mail-Clients Bilder ohne Probleme rendern, können einige Voreinstellungen aus Sicherheitsgründen verhindern, dass Bilder angezeigt werden. Benutzerinnen und Benutzer können die Mirrorseite einer E-Mail aufrufen, beispielsweise wenn bei der Anzeige in ihrem Posteingang Rendering-Probleme auftreten oder Bilder beschädigt sind. Es wird auch empfohlen, aus Gründen der Barrierefreiheit oder um zum Teilen in sozialen Netzwerken zu ermutigen, eine Online-Version bereitzustellen.
 
 Die von Adobe Campaign generierte Mirrorseite enthält alle Personalisierungsdaten.
 

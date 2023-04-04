@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Anreicherung".
 feature: Workflows, Enrichment Activity
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
 
@@ -42,9 +42,9 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 Die Workflow-Erstellung gliedert sich in folgende Schritte:
 
 1. Platzierung von zwei **[!UICONTROL Abfragen]** und einer **[!UICONTROL Schnittmenge]** zum Abruf aller neuen Abonnenten, die am letzten Wettbewerb teilgenommen haben.
-1. Die Aktivität **[!UICONTROL Anreicherung]** wird verwendet, um Daten hinzuzufügen, die in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** gespeichert sind. Das Feld **[!UICONTROL Score]**, in dem die Personalisierung der Sendung ausgeführt wird, wird der Arbeitstabelle des Workflows hinzugefügt.
+1. Die Aktivität **[!UICONTROL Anreicherung]** wird verwendet, um Daten hinzuzufügen, die in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** gespeichert sind. Das Feld **[!UICONTROL Score]**, in dem die Personalisierung des Versands ausgeführt wird, wird der Arbeitstabelle des Workflows hinzugefügt.
 1. Mithilfe der Aktivität des Typs **[!UICONTROL Aufspaltung]** werden je nach erreichtem Score Empfänger-Teilmengen erstellt.
-1. Jeder Teilmenge wird eine Aktivität **[!UICONTROL Sendung]** hinzugefügt.
+1. Jeder Teilmenge wird eine Aktivität **[!UICONTROL Versand]** hinzugefügt.
 
 ## 1. Schritt: Zielgruppenbestimmung {#step-1--targeting}
 

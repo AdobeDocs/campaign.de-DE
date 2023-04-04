@@ -1,11 +1,11 @@
 ---
-title: Quellen von Personalisierungdaten
+title: Quellen von Personalisierungsdaten
 description: Erfahren Sie, welche Quellen für die Personalisierung verwendet werden können
 feature: Personalization
 role: User
 level: Beginner
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Um die Datei auszuwählen, die als Datenquelle verwendet werden soll, klicken Si
 
 Personalisierungsdaten können über [Federated Data Access](../connect/fda.md) aus einer externen Tabelle extrahiert werden.  Wenn Sie Ihre Sendungen mithilfe von Daten aus der externen Datenbank personalisieren möchten, sammeln Sie die Daten zur Verwendung in einem Workflow, um sie in einer temporären Tabelle zur Verfügung zu stellen.
 
-Fügen Sie dazu eine **Abfrage**-Aktivität im Zielgruppen-Workflow hinzu und verwenden Sie den Link **Daten hinzufügen...**, um die externe Datenbank auszuwählen. Der detaillierte Prozess ist in [diesem Abschnitt](../../automation/workflow/query.md#adding-data) verfügbar.
+Fügen Sie dazu eine **Abfrage**-Aktivität im Zielgruppenbestimmungs-Workflow hinzu und verwenden Sie den Link **Daten hinzufügen...**, um die externe Datenbank auszuwählen. Der detaillierte Prozess ist in [diesem Abschnitt](../../automation/workflow/query.md#adding-data) verfügbar.
 
 Verwenden Sie dann die Daten aus der temporären Tabelle, um Ihren Versand zu personalisieren. Wenn die Abfrageaktivität konfiguriert ist, greifen Sie über den Eintrag **Erweiterung des Zieldatensatzes** in den Personalisierungsoptionen auf die externen Daten zu.
 

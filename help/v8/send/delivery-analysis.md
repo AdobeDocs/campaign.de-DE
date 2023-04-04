@@ -5,7 +5,7 @@ feature: Personalization
 role: User
 level: Beginner
 source-git-commit: 51b333492ad50849751208c7549dc00f66140b82
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Versandanalyse {#analyze-delivery}
 
-Die Analyse ist der Versandvorbereitungsschritt. Sie kann gestartet werden, sobald Ihre Ziel-Audience definiert wurde und der Nachrichteninhalt bereit ist und getestet wurde. Bei der Versandanalyse wird die Zielpopulation berechnet und der Versandinhalt vorbereitet. Sobald sie abgeschlossen ist, ist der Versand startbereit.
+Die Analyse ist der Versandvorbereitungsschritt. Sie kann gestartet werden, sobald Ihre Zielgruppe definiert wurde und der Nachrichteninhalt bereit ist und getestet wurde. Bei der Versandanalyse wird die Zielgruppe berechnet und der Versandinhalt vorbereitet. Sobald sie abgeschlossen ist, ist der Versand startbereit.
 
 ## Starten der Analyse {#start-the-analysis}
 
@@ -59,9 +59,9 @@ Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die
 
    >[!NOTE]
    >
-   >Klicken Sie auf den Link **[!UICONTROL Hauptzielgruppe des Versands ändern]**, wenn die Anzahl der zu sendenden Nachrichten nicht Ihren Erwartungen entspricht. Mit dieser Option können Sie die Definition der Zielpopulation ändern und die Analyse neu starten.
+   >Klicken Sie auf den Link **[!UICONTROL Hauptzielgruppe des Versands ändern]**, wenn die Anzahl der zu sendenden Nachrichten nicht Ihren Erwartungen entspricht. Mit dieser Option können Sie die Definition der Zielgruppe ändern und die Analyse neu starten.
 
-1. Nachdem Sie das Ergebnis der Analyse geprüft haben, klicken Sie auf **[!UICONTROL Absendung bestätigen]**, um die Nachricht an die Hauptzielgruppe zu senden.
+1. Nachdem Sie das Ergebnis der Analyse geprüft haben, klicken Sie auf **[!UICONTROL Versand bestätigen]**, um die Nachricht an die Hauptzielgruppe zu senden.
 
 
 ## Analyseeinstellungen {#analysis-settings}
