@@ -5,9 +5,9 @@ role: User, Admin
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1121'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +32,9 @@ Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren Twitter-Konten verö
 
 ## Twitter-Entwicklerkonto {#dev-account}
 
-Um mit dieser Integration zu beginnen, müssen Sie sich für eine [Twitter-Entwicklerkonto](https://developer.twitter.com){target="_blank"}.
+Um mit dieser Integration zu beginnen, müssen Sie sich für ein [Twitter-Entwicklerkonto](https://developer.twitter.com) anmelden{target="_blank"}.
 
-Campaign verwendet die Twitter-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. Erfahren Sie mehr über den erweiterten Zugriff auf Twitter [auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
+Campaign verwendet die Twitter-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. [Auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated) erfahren Sie mehr über den erweiterten Zugriff auf Twitter{target="_blank"}.
 
 ## Erstellen einer Anwendung auf Twitter {#create-an-app-on-twitter}
 
