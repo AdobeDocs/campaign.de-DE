@@ -6,9 +6,9 @@ role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 source-git-commit: cfe559b83a7db36ab8d9223d04d348f3afd74730
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '613'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -132,7 +132,7 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements
 * Erstellen Sie eine ausreichende Anzahl von Sicherheitsgruppen.
 * Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
 
-Weitere Informationen zu Berechtigungen finden Sie unter [in diesem Abschnitt](../start/gs-permissions.md).
+Weiterführende Informationen zu Berechtigungen finden Sie in [diesem Abschnitt](../start/gs-permissions.md).
 
 ## Leitlinien zur Codierung
 
