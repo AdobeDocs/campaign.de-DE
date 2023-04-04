@@ -1,26 +1,26 @@
 ---
 title: Erste Schritte mit der Personalisierung
-description: Erfahren Sie, wie Sie den Nachrichteninhalt personalisieren.
+description: Erfahren Sie, wie Sie Nachrichteninhalte personalisieren können
 feature: Personalization
 role: User
 level: Beginner
 source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit der Personalisierung {#personalize-content}
 
-Um jede Marketing-Kampagne optimal zu nutzen, bietet Ihnen Adobe Campaign eine Möglichkeit, benutzerdefinierte Inhalte bereitzustellen, die Kunden auf ihrer Ebene ansprechen. Basierend auf den Profildaten, Personalisierungsfunktionen zum Erstellen eines benutzerdefinierten Erlebnisses für verschiedene Gruppen und Einzelpersonen: Sie können Ihre Nachrichten an jeden einzelnen Empfänger anpassen, indem Sie die vorhandenen Daten und Informationen nutzen. Es kann sein Vorname, Interessen, wo sie leben, was sie kauften und vieles mehr.
+Um jede Marketing-Kampagne optimal zu nutzen, bietet Ihnen Adobe Campaign eine Möglichkeit, benutzerdefinierte Inhalte bereitzustellen, die Kundinnen und Kunden auf ihrer Ebene ansprechen. Basierend auf den Profildaten sind Personalisierungsfunktionen zum Erstellen eines benutzerdefinierten Erlebnisses für verschiedene Gruppen und Einzelpersonen verfügbar: Sie können Ihre Nachrichten an jede Empfängerin und jeden Empfänger einzeln anpassen, indem Sie die vorhandenen Daten und Informationen nutzen. Dies können Vornamen, Interessen, Wohnorte, bisherige Käufe und vieles mehr sein.
 
-Adobe Campaign vereinfacht die Personalisierung: Sie können verschiedene Arten von Inhalten anzeigen, die für jeden Empfänger mit einem einzigen [E-Mail-Vorlage](create-templates.md). Schließen Sie in Ihren Transaktionsnachrichten, wie z. B. E-Mails zur Kaufbestätigung oder zum stehen gelassenen Warenkorb, Produktlistungsinformationen für jede Person in einer E-Mail-Vorlage ein.
+Adobe Campaign vereinfacht die Personalisierung: Sie können mit einer einzigen [E-Mail-Vorlage](create-templates.md) verschiedene Arten von Inhalten anzeigen, die für jede Empfängerin und jeden Empfänger angepasst werden. Nehmen Sie in Ihre Transaktionsnachrichten, wie z. B. E-Mails zur Kaufbestätigung oder zum Warenkorbabbruch, Produktlisteninformationen für jede Person in eine E-Mail-Vorlage auf.
 
 
 ## Personalisierungsstrategien {#personalization-strategy}
 
-Verwenden Sie Campaign, um dynamische Inhalte zu erstellen und personalisierte Nachrichten zu versenden. Personalisierungsfunktionen können kombiniert werden, um Ihre Nachrichten zu verbessern und ein benutzerdefiniertes Benutzererlebnis zu schaffen.
+Verwenden Sie Campaign, um dynamische Inhalte zu erstellen und personalisierte Nachrichten zu versenden. Personalisierungsfunktionen können kombiniert werden, um Ihre Nachrichten zu verbessern und ein individuelles Benutzererlebnis zu schaffen.
 
 Sie können den Nachrichteninhalt wie folgt personalisieren:
 
@@ -34,9 +34,9 @@ Sie können den Nachrichteninhalt wie folgt personalisieren:
 
    Campaign verfügt über eine Reihe von Gestaltungsbausteinen, die ein bestimmtes Rendering ermöglichen, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußbotschaft oder einen Link zur Mirror-Seite der Nachricht hinzufügen. Inhaltsbausteine sind über einen eigenen Eintrag im Personalisierungseditor verfügbar. [Weitere Informationen](personalization-blocks.md).
 
-* Erstellen **Bedingter Inhalt**
+* Erstellen **bedingter Inhalte**
 
-   Konfigurieren Sie bedingte Inhalte, um beispielsweise eine dynamische Personalisierung basierend auf dem Empfängerprofil hinzuzufügen. Textblöcke und/oder Bilder werden eingefügt, wenn eine bestimmte Bedingung wahr ist. [Weitere Informationen](conditions.md).
+   Konfigurieren Sie bedingte Inhalte, um beispielsweise eine dynamische Personalisierung basierend auf dem Empfängerprofil hinzuzufügen. Textblöcke und/oder Bilder werden eingefügt, wenn eine bestimmte Bedingung erfüllt ist. [Weitere Informationen](conditions.md).
 
 <!--* Add **personalized offers**
     
@@ -44,9 +44,9 @@ Sie können den Nachrichteninhalt wie folgt personalisieren:
 -->
 
 
-## Limits und Empfehlungen{#perso-guardrails}
+## Schutzmechanismen und Empfehlungen{#perso-guardrails}
 
-### Personalisierungszeitlimit{#perso-timeout}
+### Personalisierungs-Timeout{#perso-timeout}
 
 Um die Versandsicherheit zu erhöhen, können Sie für die Personalisierungsphase einen Timeout-Zeitraum festlegen.
 
