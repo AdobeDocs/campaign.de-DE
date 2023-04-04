@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz an
 
 Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft, auf die über den Knoten **[!UICONTROL Administration > Zugriffe > Operatoren]** zugegriffen werden kann.
 
-![](../assets/do-not-localize/speech.png) Adobe legt für Sie als Benutzer von Managed Cloud Services die Sicherheitszonen fest. Weitere Informationen: [Adobe kontaktieren](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+![](../assets/do-not-localize/speech.png) Adobe legt für Sie als Benutzer von Managed Cloud Services die Sicherheitszonen fest. Nehmen Sie für weitere Information [Kontakt mit Adobe auf](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 **Weitere Informationen**
 
