@@ -1,20 +1,20 @@
 ---
-title: Hinzufügen von Personalisierungsfeldern,
+title: Hinzufügen von Personalisierungsfeldern
 description: Erfahren Sie, wie Sie Personalisierungsdaten in Ihren Nachrichteninhalt einfügen
 feature: Personalization
 role: User
 level: Beginner
 source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '334'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
 
-# Hinzufügen von Personalisierungsfeldern,{#personalization-fields}
+# Hinzufügen von Personalisierungsfeldern{#personalization-fields}
 
-Verwenden Sie Personalisierungsfelder, um personalisierte Inhalte auf Basis der von Ihnen für jeden Empfänger festgelegten Regeln einzeln bereitzustellen.
+Verwenden Sie Personalisierungsfelder, um personalisierte Inhalte auf Basis der von Ihnen für eine Empfängerin oder einen Empfänger festgelegten Regeln einzeln bereitzustellen.
 
 Ein Personalisierungsfeld ist eine Referenz für einzelne Datenfelder, die bei der Personalisierung eines Versands für einen bestimmten Empfänger verwendet wird. Der tatsächliche Datenwert wird während der Versandanalyse eingefügt.
 
@@ -22,9 +22,9 @@ Ein Personalisierungsfeld ist eine Referenz für einzelne Datenfelder, die bei d
 
 ## Syntax
 
-Ein Personalisierungs-Tag verwendet immer die folgende Syntax: `<%=table.field%>`.
+Ein Personalisierungs-Tag hat immer die folgende Syntax: `<%=table.field%>`.
 
-Um beispielsweise den in der Empfängertabelle gespeicherten Empfängernamen einzufügen, verwendet das Personalisierungsfeld die `<%= recipient.lastName %>` Syntax.
+Um beispielsweise den in der Empfängertabelle gespeicherten Empfängernamen einzufügen, verwendet das Personalisierungsfeld die Syntax `<%= recipient.lastName %>`.
 
 >[!CAUTION]
 >
@@ -32,24 +32,24 @@ Um beispielsweise den in der Empfängertabelle gespeicherten Empfängernamen ein
 
 ## Personalisierungsfeld einfügen {#insert-a-personalization-field}
 
-Um Personalisierungsfelder einzufügen, klicken Sie auf das Dropdown-Symbol, auf das Sie von einem beliebigen Header-, Betreff- oder Nachrichtentext aus zugreifen können.
+Klicken Sie zum Einfügen von Personalisierungsfeldern auf das Symbol der Dropdown-Liste, das für jedes Kopfzeilen-, Betreff- und Nachrichtentextfeld zur Verfügung steht.
 
-![Personalisierungsfeld einfügen](assets/perso-field-insert.png)
+![Einfügen eines Personalisierungsfelds](assets/perso-field-insert.png)
 
-Die Personalisierungsfelder werden eingefügt und können von Adobe Campaign interpretiert werden: bei der Nachrichtenvorbereitung werden die Felder durch den Wert für einen bestimmten Empfänger ersetzt.
+Die Personalisierungsfelder werden eingefügt und können von Adobe Campaign interpretiert werden: Bei der Nachrichtenvorbereitung werden die Felder durch den Wert für eine bestimmte Empfängerin bzw. einen bestimmten Empfänger ersetzt.
 
 ![Personalisierungsfelder in einer E-Mail](assets/perso-fields-in-msg.png)
 
-Dieser Austausch kann dann im **[!UICONTROL Vorschau]** Registerkarte.
+Diese Ersetzung kann dann auf der Registerkarte **[!UICONTROL Vorschau]** getestet werden.
 
 <!--Learn more about message preview in [this page]().-->
 
-## Anwendungsfall: E-Mail-Betreff personalisieren {#personalization-fields-uc}
+## Anwendungsfall: Personalisieren des E-Mail-Betreffs {#personalization-fields-uc}
 
-Im folgenden Anwendungsbeispiel erfahren Sie, wie Sie einen E-Mail-Betreff und -Hauptteil mit Empfängerdaten personalisieren:
+Im folgenden Anwendungsbeispiel erfahren Sie, wie Sie den Betreff und Text einer E-Mail mit Empfängerdaten personalisieren:
 
-1. Erstellen Sie einen neuen Versand oder öffnen Sie einen bestehenden E-Mail-Versand.
-1. Navigieren Sie zum **[!UICONTROL Betreff]** -Link, um den Betreff der Nachricht zu bearbeiten.
+1. Erstellen Sie einen neuen Versand oder öffnen Sie einen vorhandenen E-Mail-Versand.
+1. Navigieren Sie zum Link **[!UICONTROL Betreff]**, um den Betreff der Nachricht zu bearbeiten.
 1. Geben Sie z. B. den Text &quot;**Sonderangebot für**&quot; ein. Nutzen Sie nun die Schaltfläche der Personalisierungsfelder und wählen Sie aus der Dropdown-Liste **[!UICONTROL Empfänger > Vorname]** aus.
 1. Wiederholen Sie den Vorgang, um den Nachnamen der Empfänger einzufügen. Vergessen Sie die Leerzeichen zwischen den Personalisierungsfeldern nicht.
 1. Wählen Sie zur Bestätigung **[!UICONTROL OK]** aus.
