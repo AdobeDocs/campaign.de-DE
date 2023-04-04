@@ -5,9 +5,9 @@ description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
 title: Dokumente zu Campaign v8
 source-git-commit: 464898df7a362c137d20ebaf2b96bfef71131ae6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 96%
       + [Arbeiten mit Versandvorlagen](send/create-templates.md)
       + E-Mails {#emails}
          + [Entwerfen und Validieren von E-Mails](send/email.md)
-         + [Link zur Mirrorseite](send/mirror-page.md)
+         + [Verlinken auf die Mirrorseite](send/mirror-page.md)
          + [Versenden und Überwachen von E-Mails](send/send.md)
       + [SMS](send/sms.md)
       + [Push-Benachrichtigungen ](send/push.md)
@@ -61,8 +61,8 @@ ht-degree: 96%
          + [Personalisierungsdaten](send/personalization-data.md)
          + [Hinzufügen von Personalisierungsfeldern,](send/personalization-fields.md)
          + [Verwenden von Gestaltungsbausteinen](send/personalization-blocks.md)
-         + [Bedingungen erstellen](send/conditions.md)
-      + Versand validieren {#validate}
+         + [Erstellen von Bedingungen](send/conditions.md)
+      + Validieren des Versands {#validate}
          + [Vorschau und Testsendungen](send/preview-and-proof.md)
          + [Versandanalyse](send/delivery-analysis.md)
 + Profil- und Zielgruppen-Management {#audience}
