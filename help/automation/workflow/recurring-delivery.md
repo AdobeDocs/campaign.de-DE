@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Ve
 feature: Workflows
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
 source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -53,4 +53,4 @@ In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.
