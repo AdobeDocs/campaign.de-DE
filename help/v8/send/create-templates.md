@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Eine Vorlage kann Folgendes enthalten:
 
 * Typologien
 * Absender- und Antwortadressen
-* Allgemein [Gestaltungsbausteine](../send/personalization-blocks.md)
+* Grundlegende [Gestaltungsbausteine](../send/personalization-blocks.md)
 * Links zu [Mirrorseiten](../send/mirror-page.md) und Abmelde-Links
 * Inhalt, Firmenlogo oder Signatur
 * Andere Versandeigenschaften, z. B. die Gültigkeit der Ressource, die Parameter für erneute Versuche oder die Quarantäneeinstellungen.
@@ -142,4 +142,4 @@ In diesem Video wird erläutert, wie man eine Ad-hoc-E-Mail-Versandvorlage berei
 
 >[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.
