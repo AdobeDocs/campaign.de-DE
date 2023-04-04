@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '866'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Campaign enthält leistungsstarke Analyse- und Zielgruppenbestimmungsfunkt
 
 Fortschrittliche Funktionen für das Daten-Management erweitern die Datenverarbeitungskapazitäten. Sie vereinfachen und optimieren den Zielgruppenbestimmungsprozess, indem sie nicht modellierte Daten in den Datamart einschließen.
 
-![](../assets/do-not-localize/glass.png) Weitere Informationen zur Segmentierung und Erstellung von Zielgruppen finden Sie unter [diesem Abschnitt](audiences.md).
+![](../assets/do-not-localize/glass.png) Weitere Informationen zur Segmentierung und Erstellung von Audiences finden Sie in [diesem Abschnitt](audiences.md).
 
 ## Kanalübergreifende Orchestrierung einer Kampagne {#cross-channel-campaign-orchestration}
 
