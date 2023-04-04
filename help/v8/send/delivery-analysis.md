@@ -5,28 +5,28 @@ feature: Personalization
 role: User
 level: Beginner
 source-git-commit: 51b333492ad50849751208c7549dc00f66140b82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 # Versandanalyse {#analyze-delivery}
 
-Die Analyse ist der Schritt zur Versandvorbereitung. Er kann gestartet werden, sobald Ihre Zielgruppe definiert und der Nachrichteninhalt bereit und getestet wurde. Bei der Versandanalyse wird die Zielpopulation berechnet und der Versandinhalt vorbereitet. Sobald sie abgeschlossen ist, ist der Versand startbereit.
+Die Analyse ist der Versandvorbereitungsschritt. Sie kann gestartet werden, sobald Ihre Ziel-Audience definiert wurde und der Nachrichteninhalt bereit ist und getestet wurde. Bei der Versandanalyse wird die Zielpopulation berechnet und der Versandinhalt vorbereitet. Sobald sie abgeschlossen ist, ist der Versand startbereit.
 
-## Analyse starten {#start-the-analysis}
+## Starten der Analyse {#start-the-analysis}
 
-Gehen Sie zur Vorbereitung des Versands wie folgt vor:
+Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die Zielgruppe definiert worden sind, und gehen Sie wie folgt vor:
 
-1. Klicken Sie im Versandfenster auf die Schaltfläche **[!UICONTROL Senden]** Schaltfläche.
-1. Auswählen **[!UICONTROL Sendungen schnellstmöglich abschicken]** um die Zielgruppenberechnung und Inhaltsvorbereitung für einen sofortigen Versand durchzuführen. Sie können den Versand auch auf einen späteren Zeitpunkt verschieben oder eine Schätzung der Population abrufen, ohne den Inhalt vorzubereiten.
+1. Klicken Sie im Versandfenster auf die Schaltfläche **[!UICONTROL Senden]**.
+1. Wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]** aus, um die Audience-Berechnung und Inhaltsvorbereitung für einen sofortigen Versand durchzuführen. Sie können den Versand auch auf einen späteren Zeitpunkt verschieben oder eine Schätzung der Population abrufen, ohne den Inhalt vorzubereiten.
 
    ![](assets/delivery-analysis-start.png)
 
 1. Klicken Sie auf **[!UICONTROL Analysieren]**, um die Analyse manuell zu starten. Die Fortschrittsleiste zeigt den Fortschritt der Analyse an.
 
-   Bei der Versandanalyse werden Regeln zur Überprüfung festgelegt. Diese Regeln werden in einer **Typologie**, die in der **[!UICONTROL Typologie]** in den Versandeigenschaften. Weitere Informationen zu Typologien finden Sie unter [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md).
+   Bei der Versandanalyse wird eine Reihe von Regeln zur Überprüfung angewendet. Diese Regeln werden in einer **Typologie** definiert, die auf der Registerkarte **[!UICONTROL Typologie]** in den Versandeigenschaften ausgewählt wird. Weitere Informationen zu Typologien finden Sie in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md).
 
    Standardmäßig umfasst die Analyse für E-Mails die folgenden Punkte:
 
@@ -39,7 +39,7 @@ Gehen Sie zur Vorbereitung des Versands wie folgt vor:
    * Prüfung der Schub-Planung.
 
 
-1. Sie können die Analyse jederzeit beenden, indem Sie auf die **[!UICONTROL Anhalten]** Schaltfläche.
+1. Es ist jederzeit möglich, die Analyse durch Klicken auf die Schaltfläche **[!UICONTROL Stoppen]** zu unterbrechen.
 
    In der Vorbereitungsphase werden keine Nachrichten gesendet. Sie können die Analyse daher ohne Risiko starten oder abbrechen.
 
@@ -50,8 +50,8 @@ Gehen Sie zur Vorbereitung des Versands wie folgt vor:
    Nach Abschluss der Analyse wird im oberen Bereich des Fensters angezeigt, ob die Sendungsvorbereitung abgeschlossen wurde oder ob Fehler aufgetreten sind. Alle Validierungsschritte, Warnungen und Fehler werden aufgelistet. Farbige Symbole zeigen den Nachrichtentyp an:
 
    * Ein blaues Symbol steht für eine informative Nachricht.
-   * Ein gelbes Symbol weist auf einen nicht kritischen Verarbeitungsfehler hin.
-   * Ein rotes Symbol weist auf einen kritischen Fehler hin, der den Versand verhindert.
+   * Ein gelbes Symbol steht für einen nicht kritischen Verarbeitungsfehler.
+   * Ein rotes Symbol steht für einen kritischen Fehler, der die Durchführung des Versands verhindert.
 
    ![](assets/delivery-analysis-results.png){width="800" align="left"}
 
@@ -59,14 +59,14 @@ Gehen Sie zur Vorbereitung des Versands wie folgt vor:
 
    >[!NOTE]
    >
-   >Klicken Sie auf **[!UICONTROL Hauptzielgruppe des Versands ändern]** verknüpfen, wenn die Anzahl der zu sendenden Nachrichten nicht Ihren Erwartungen entspricht. Mit dieser Option können Sie die Bestimmung der Zielpopulation ändern und die Analyse neu starten.
+   >Klicken Sie auf den Link **[!UICONTROL Hauptzielgruppe des Versands ändern]**, wenn die Anzahl der zu sendenden Nachrichten nicht Ihren Erwartungen entspricht. Mit dieser Option können Sie die Definition der Zielpopulation ändern und die Analyse neu starten.
 
-1. Nachdem Sie das Ergebnis der Analyse geprüft haben, klicken Sie auf **[!UICONTROL Versand bestätigen]** , um die Nachricht an die Hauptzielgruppe zu senden.
+1. Nachdem Sie das Ergebnis der Analyse geprüft haben, klicken Sie auf **[!UICONTROL Absendung bestätigen]**, um die Nachricht an die Hauptzielgruppe zu senden.
 
 
 ## Analyseeinstellungen {#analysis-settings}
 
-Navigieren Sie zum **[!UICONTROL Analyse]** in den Versandeigenschaften , um die Einstellungen für die Nachrichtenvorbereitung während der Analysephase zu definieren.
+Navigieren Sie zur Registerkarte **[!UICONTROL Analyse]** in den Versandeigenschaften, um die Einstellungen für die Nachrichtenvorbereitung während der Analysephase zu definieren.
 
 ![](assets/delivery-properties-analysis-tab.png){width="800" align="left"}
 
@@ -76,7 +76,7 @@ Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Validierungsmodus]**: In diesem Feld können Sie nach Abschluss der Analyse einen manuellen oder automatischen Versand definieren.
 
-   Wenn bei der Analyse Warnungen erzeugt werden (z. B. wenn im Betreff des Versands bestimmte Zeichen akzentuiert sind usw.), können Sie den Versand so konfigurieren, dass festgelegt wird, ob er weiterhin ausgeführt werden soll oder nicht. Standardmäßig müssen Benutzende den Nachrichtenversand am Ende der Analysephase bestätigen: Hierbei handelt es sich um eine **manuelle** Validierung.
+   Wenn bei der Analyse Warnungen erzeugt werden (z. B. wenn im Betreff des Versands bestimmte Zeichen mit einem Akzent versehen wurden usw.), können Sie den Versand so konfigurieren, dass festgelegt wird, ob er trotzdem ausgeführt werden soll oder nicht. Standardmäßig müssen Benutzende den Nachrichtenversand am Ende der Analysephase bestätigen: Hierbei handelt es sich um eine **manuelle** Validierung.
 
    In der Dropdown-Liste des entsprechenden Felds
 
@@ -87,7 +87,7 @@ Folgende Optionen stehen zur Verfügung:
    * **[!UICONTROL Automatisch]**: Die Nachrichten werden unabhängig vom Ergebnis der Analysephase automatisch abgeschickt.
 
 * **[!UICONTROL Vorgang in einem separaten Prozess starten]**: Mit dieser Option können Sie die Versandanalyse in einem separaten Prozess starten. Standardmäßig verwendet die Analysefunktion den Prozess des Adobe Campaign-Anwendungsservers (web nlserver). Durch Auswählen dieser Option stellen Sie sicher, dass die Analyse auch im Falle eines Anwendungsserver-Problems vollständig durchgeführt wird.
-* **[!UICONTROL Zielbestimmungs- und Personalisierungsabfragen im Protokoll speichern]** - schreibt in der Analysephase die SQL-Abfrage-Logs in das Versandprotokoll.
-* **[!UICONTROL Ignorieren von Personalisierungsskripten beim Senden]** : Mit dieser Option können Sie die Interpretation von JavaScript-Direktiven umgehen, die im HTML-Inhalt gefunden werden. Sie werden wie im bereitgestellten Inhalt angezeigt. Diese Richtlinien werden mit der `<%=` -Tag.
+* **[!UICONTROL Zielbestimmungs- und Personalisierungsabfragen im Protokoll speichern]**: Schreibt in der Analysephase die SQL-Abfrage-Logs in das Versandprotokoll.
+* **[!UICONTROL Personalisierungsscripts beim Versand ignorieren]**: Mit dieser Option werden im HTML-Inhalt enthaltene JavaScript-Anweisungen nicht interpretiert, sondern 1:1 in den gesendeten Inhalten abgebildet. Die Anweisungen beginnen mit dem Tag `<%=`.
 
 
