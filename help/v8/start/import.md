@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Erstellen Sie einen generischen Datenimportauftrag zum Laden von Kontakten in di
 
 ![](assets/new-import.png)
 
-![](../assets/do-not-localize/book.png) Erfahren Sie, wie Sie Einzelimport-Aufträge ausführen, um Ihre Datenbank in zu versorgen. [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de#getting-started){target="_blank"}.
+![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de) erfahren Sie, wie Sie einzelne Importvorgänge ausführen, um Ihre Datenbank zu befüllen{target="_blank"}.
 
 ## Erfassen von Profilen über Web-Anwendungen
 
