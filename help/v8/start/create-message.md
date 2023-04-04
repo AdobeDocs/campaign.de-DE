@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Mit Adobe Campaign können Sie Cross-Channel-Kampagnen wie E-Mails, SMS, Push-Be
 
 Zu den Kernfunktionen zählen Zielgruppenbestimmung, Definition und Personalisierung von Nachrichten, Ausführung der Kommunikation und die damit verbundenen operativen Berichte. Der wichtigste funktionale Zugangspunkt ist der Versandassistent. Dieser Zugriffspunkt führt zu mehreren Funktionen, die von Adobe Campaign abgedeckt werden.
 
-In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=de#sending-messages) lernen Sie die wichtigsten Schritte zur Erstellung eines Versands kennen.
+In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=de) lernen Sie die wichtigsten Schritte zur Erstellung eines Versands kennen.
 
 Adobe Campaign v8 enthält die folgenden Versandkanäle:
 
@@ -42,7 +42,7 @@ Sobald Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, kön
 
    ![](assets/send-email.png)
 
-   Erfahren Sie, wie Sie Nachrichten senden in [diesem Abschnitt](../send/send.md)
+   In [diesem Abschnitt](../send/send.md) erfahren Sie, wie Sie Nachrichten senden können
 
 * Senden von Nachrichten, die einer [Marketing-Kampagne](campaigns.md) zugeordnet sind
 
@@ -54,15 +54,15 @@ Sobald Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, kön
 
    ![](assets/send-in-a-wf.png)
 
-    Auf [dieser Seite](../../automation/workflow/delivery.md) erfahren Sie, wie Sie den E-Mail-Versand automatisieren können.
+    Auf [dieser Seite](../../automation/workflow/delivery.md) erfahren Sie, wie Sie einen E-Mail-Versand automatisieren können
 
-* [Auslösen von Nachrichten durch ein Ereignis](../send/transactional.md)
+* [Auslösen von Nachrichten](../send/transactional.md) durch ein Ereignis
 
-* Planen eines Nachrichtenversandes
+* Planen von Nachrichten
 
    ![](assets/schedule-send.png)
 
-[ Anwendungsfall: Erfahren Sie, wie Sie eine Geburtstags-E-Mail planen und senden.](../../automation/workflow/send-a-birthday-email.md)
+[Anwendungsfall: Erfahren Sie, wie Sie eine Geburtstags-E-Mail planen und senden.](../../automation/workflow/send-a-birthday-email.md)
 
 
 ## Hinzufügen von Personalisierung{#personalization}
