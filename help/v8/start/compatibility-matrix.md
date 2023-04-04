@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: b4593dd9fbb3e4742183719281ff0e5a78b9e6c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Ac
 
 ## Mobile SDK{#MobileSDK}
 
-Zu senden [Push-Benachrichtigungen](../send/push.md) Mit Campaign können Sie das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren. Sie können auch die unten aufgeführten Campaign SDKs verwenden:
+Zum Senden von [Push-Benachrichtigungen](../send/push.md) mit Campaign können Sie das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren. Sie können auch die unten aufgeführten Campaign SDKs verwenden:
 
 * **Android** 12, 9.0, 8.x, 7.x, mit Campaign Android SDK Build 1.1.1.
 * **Apple iOS** 9–16 mit Campaign iOS SDK Build 1.0.26, kompatibel mit 32- und 64-Bit-Versionen. Apple iOS 16 wird ab Campaign v8.4 unterstützt.
