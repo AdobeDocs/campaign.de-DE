@@ -6,15 +6,15 @@ role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '479'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# E-Mails entwerfen und senden
+# Entwerfen und Senden von E-Mails
 
-Ein E-Mail-Versand richtet personalisierte E-Mails an eine zuvor bestimmte Zielpopulation. [Weitere Informationen](../send/send.md).
+Durch einen E-Mail-Versand können Sie personalisierte E-Mails an eine Zielpopulation senden. [Weitere Informationen](../send/send.md).
 
 ## Den ersten E-Mail-Versand erstellen
 
@@ -56,7 +56,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
       ![](assets/perso-check.png)
 
-      Weitere Informationen zu Personalisierungsoptionen finden Sie unter [diesem Abschnitt](personalize.md).
+      Weiterführende Informationen zu Personalisierungsoptionen finden Sie in [diesem Abschnitt](personalize.md).
 
    * Einfügen eines getrackten Links
 
@@ -68,7 +68,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
    * Hinzufügen einer Mirror-Seite
 
-      Fügen Sie einen Link zum [Mirrorseite](../send/mirror-page.md) Ihrer Nachricht.
+      Um Empfangenden zu ermöglichen, Ihren Versandinhalt in einem Webbrowser zu sehen, können Sie einen Link zu einer [Mirror-Seite](../send/mirror-page.md) Ihrer Nachricht einfügen.
 
       Platzieren Sie den Cursor an der gewünschten Stelle, klicken Sie auf das letzte Symbol in der Symbolleiste, klicken Sie auf **[!UICONTROL Einfügen]** und wählen Sie **[!UICONTROL Mirrorseiten-Link]** aus.
    Wenn der Inhalt fertig ist, klicken Sie auf **Speichern**: Er wird nun in Ihrer Versandliste auf der Registerkarte **[!UICONTROL Kampagnen > Sendungen]** angezeigt. Ihr erster E-Mail-Versand ist fertig. Definieren Sie nun die Audience, validieren Sie den Versand und führen Sie ihn aus.
@@ -78,15 +78,14 @@ In diesem [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/auto
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* [Erstellen einer E-Mail in Campaign
-](../send/email.md)
+* [Erstellen einer E-Mail in Campaign](../send/email.md)
 * [Erstellen und Verwenden von E-Mail-Vorlagen](../send/create-templates.md)
 * [Auswählen der Audience für Ihre E-Mail](../audiences/gs-audiences.md)
 * [Validieren eines Versands und Durchführen von Testsendungen](../send/preview-and-proof.md)
 
 ## Testen und Validieren von E-Mails
 
-Campaign bietet mehrere Möglichkeiten, E-Mails zu testen und zu validieren, bevor Sie sie an Ihre Audiences senden. Erfahren Sie, wie Sie Ihren E-Mail-Inhalt in der Vorschau anzeigen und testen können. [diese Seite](../send/preview-and-proof.md).
+Campaign bietet mehrere Möglichkeiten, E-Mails zu testen und zu validieren, bevor Sie sie an Ihre Audiences senden. Auf [dieser Seite](../send/preview-and-proof.md) erfahren Sie, wie Sie Ihren E-Mail-Inhalt in der Vorschau anzeigen und testen können.
 
 Sie haben folgende Möglichkeiten:
 
@@ -94,4 +93,4 @@ Sie haben folgende Möglichkeiten:
 * Durchführen eines Testversands
 * Testadressen hinzufügen
 
-[Mehr dazu](../send/delivery-analysis.md)
+[Weitere Informationen](../send/delivery-analysis.md)
