@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Kampagnentypologien konfigurieren und impleme
 feature: Typology Rules
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '483'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Bei einer Typologie handelt es sich um eine Reihe von Überprüfungsregeln, die 
 
 Eine Kampagnentypologie kann mehrere Typologieregeln enthalten, ein Versand kann jedoch nur eine Typologie referenzieren.
 
-Integrierte Typologieregeln und Typologien sind im Abschnitt **[!UICONTROL Administration > Kampagnenverwaltung > Typologieverwaltung]** Ordner des Campaign-Explorers.
+Integrierte Typologieregeln und Typologien sind im Ordner **[!UICONTROL Administration > Kampagnenverwaltung > Typologieverwaltung]** des Campaign-Explorers verfügbar.
 
 Für jede Typologie können Sie auf der Registerkarte **[!UICONTROL Regeln]** die anzuwendenden Typologieregeln hinzufügen, löschen oder anzeigen.
 
