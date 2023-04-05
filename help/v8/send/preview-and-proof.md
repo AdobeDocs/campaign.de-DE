@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihren Versand vor dem Senden validieren
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: e0129524a051827a52de478c3fdc45b963d6c4bb
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Gehen Sie wie folgt vor, um eine Vorschau des Nachrichteninhalts anzuzeigen:
 
 ## Durchführen eines Testversands {#send-proofs}
 
-Mit Testsendungen können Sie den Abmelde-Link, die Mirrorseite und andere Links testen, die Nachricht validieren, die Anzeige von Bildern überprüfen, mögliche Fehler erkennen etc. Außerdem können Sie Ihr Design und die Darstellung auf verschiedenen Geräten testen.
+Bei E-Mail-Sendungen können Sie Testsendungen durchführen, um Ihren Nachrichteninhalt zu überprüfen. Mit Testsendungen können Sie den Abmelde-Link, die Mirrorseite und andere Links testen, die Nachricht validieren, die Anzeige von Bildern überprüfen, mögliche Fehler erkennen etc. Außerdem können Sie Ihr Design und die Darstellung auf verschiedenen Geräten testen.
 
 Ein Testversand dient der Validierung einer Nachricht, bevor sie an die Haupt-Audience gesendet wird. Die Empfängerinnen und Empfänger des Testversands sind für die Validierung der Nachricht verantwortlich: Rendering, Inhalt, Personalisierungseinstellungen, Konfiguration.
 
