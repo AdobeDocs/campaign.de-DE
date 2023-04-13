@@ -7,9 +7,9 @@ level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 44743e585119e8cd81a8fcc9b4d667c25c0d438e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ _3. April 2023_
 
 **Patches**
 
-* Fehlerkorrektur - Jetzt tritt kein Fehler mehr bei der Einschränkung doppelter Schlüssel auf, wenn mehrere Genehmigungs-Workflows denselben Zeitplan aufweisen. (NEO-48968)
-* Fehlerkorrektur - Es wurde ein Regressionsfehler behoben, der durch NEO-54474 (8.4.4) eingeführt wurde und dazu führte, dass das Stilattribut des Body-Tags beim Hochladen eines Bildes im Digital Content Editor (DCE) geändert wurde. (NEO-57697)
-* Fehlerkorrektur - Beim Export von Daten mithilfe eines CRM-Connectors tritt jetzt kein Fehler mehr auf, wenn in der temporären Tabelle ein Primärschlüssel definiert ist, der als long anstelle von uuid angegeben ist. (NEO-54153)
-* Fehlerkorrektur - Es wurde ein Regressionsproblem behoben, das in 8.4.1 eingeführt wurde und zu Fehlern beim Package-Export, FDA über HTTP und Reporting führen konnte. (NEO-57731)
-* Fehlerkorrektur - Es wurde ein Regressionsfehler in Version 8.3.8 behoben, der dazu führte, dass der Versandstatus für Sendungen mit negativen IDs korrekt aktualisiert wurde. (NEO-54675)
-* Fehlerkorrektur - Beim Importieren von Daten mit dem Big Query-Connector treten jetzt keine booleschen Felder mehr auf. (NEO-49181)
+* Fehlerkorrektur – Wenn mehrere Genehmigungs-Workflows auf denselben Zeitplan eingestellt sind, gibt es keine Einschränkung aufgrund von doppelten Schlüsseln mehr. (NEO-48968)
+* Fehlerkorrektur – Das Stilattribut des Body-Tags wird jetzt beim Hochladen eines Bildes im Digital Content Editor (DCE) nicht mehr geändert, nachdem der durch NEO-54474 (8.4.4) eingeführte Regressionsfehler behoben wurde. (NEO-57697)
+* Fehlerkorrektur – Beim Exportieren von Daten über einen CRM-Connector tritt jetzt kein Fehler mehr auf, wenn der Primärschlüssel der temporären Tabelle als „long“ anstelle von „uuid“ definiert ist. (NEO-54153)
+* Fehlerkorrektur – Es kommt jetzt nicht mehr zu Fehlern bei Paket-Export, FDA über HTTP und Reporting, nachdem der in 8.4.1 eingeführte Regressionsfehler behoben wurde. (NEO-57731)
+* Fehlerkorrektur – Der Versandstatus für Sendungen mit negativen IDs wird jetzt korrekt aktualisiert, nachdem der in Version 8.3.8 eingeführte Regressionsfehler behoben wurde. (NEO-54675)
+* Fehlerkorrektur – Beim Importieren von Daten mit dem Big Query Connector tritt jetzt kein Problem mehr mit booleschen Feldern auf (NEO-49181).
 
 >[!CAUTION]
 >
