@@ -5,9 +5,9 @@ feature: Personalization
 role: User
 level: Beginner
 source-git-commit: a6d2cb72968fe489a73f92f00f6a50be8ed3e997
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
