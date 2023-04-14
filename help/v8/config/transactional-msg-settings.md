@@ -5,20 +5,20 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '720'
+ht-degree: 74%
 
 ---
 
 # Einstellungen für Transaktionsnachrichten
 
-![](../assets/do-not-localize/speech.png) Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
+![](../assets/do-not-localize/speech.png) Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
 ![](../assets/do-not-localize/glass.png) In [diesem Abschnitt](../send/transactional.md) sind die Funktionen für Transaktionsnachrichten beschrieben.
 
-![](../assets/do-not-localize/glass.png)[ Diese Seite](../architecture/architecture.md) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
+![](../assets/do-not-localize/glass.png)[ Diese Seite](../architecture/architecture.md#transac-msg-archi) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
 
 ## Berechtigungen definieren
 
@@ -34,7 +34,7 @@ Alle Erweiterungen von Schemas, die von **technischen Workflows des Message Cent
 
 In Kombination mit dem Mobile-App-Kanal-Modul können Sie über Benachrichtigungen Transaktionsnachrichten an Mobilgeräte senden.
 
-![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=de#sending-messages) wird der Mobile-App-Kanal ausführlich beschrieben.
+![](../assets/do-not-localize/book.png) Der Mobile-App-Kanal wird im Abschnitt [diesem Abschnitt](../send/push.md).
 
 Um Push-Benachrichtigungen zu Transaktionen zu senden, müssen Sie die folgenden Konfigurationen vornehmen:
 
@@ -75,3 +75,49 @@ Beispiel der Verarbeitung eines diese Informationen enthaltenden Ereignisses:
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
+
+## Schwellenwerte überwachen {#monitor-thresholds}
+
+Sie können die Warnschwellen (orange) und die Warnschwellen (rot) der Indikatoren konfigurieren, die im **Dienstqualität** und **Verarbeitungszeit** Berichte.
+
+Gehen Sie dazu wie folgt vor:
+
+1. Öffnen Sie den Softwareverteilungs-Assistenten im **Ausführungsinstanz** und navigieren Sie zum **[!UICONTROL Message Center]** Seite.
+1. Verwenden Sie die Pfeile, um die Schwellenwerte zu ändern.
+
+
+## Ereignisse bereinigen {#purge-events}
+
+Sie können die Einstellungen des Softwareverteilungs-Assistenten anpassen, um zu konfigurieren, wie lange die Daten in der Datenbank gespeichert werden sollen.
+
+Die Bereinigung der Ereignisse wird automatisch von der **Datenbankbereinigung** technischer Arbeitsablauf. Dieser Workflow löscht die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in einer Kontrollinstanz archivierten Ereignisse.
+
+Verwenden Sie die Pfeile, um die Bereinigungsparameter für die **Veranstaltungen** (in einer Ausführungsinstanz) und **Ereignisse mit Verlauf** (in einer Kontrollinstanz).
+
+
+## Technische Workflows {#technical-workflows}
+
+Vor der Bereitstellung von Transaktionsnachrichten-Vorlagen müssen Sie sicherstellen, dass die technischen Workflows in Ihren Kontroll- und Ausführungsinstanzen gestartet wurden.
+
+Diese Workflows können Sie dann über den Ordner **Administration > Betreibung > Message Center** aufrufen.
+
+### Workflows der Kontrollinstanz {#control-instance-workflows}
+
+In der Kontrollinstanz müssen Sie für jeden **[!UICONTROL Message Center Ausführungsinstanz]** externes Konto. Klicken Sie auf die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]**, um den Workflow zu erstellen und zu starten.
+
+### Workflows der Ausführungsinstanz {#execution-instance-workflows}
+
+In der/den Ausführungsinstanz(en) müssen die folgenden technischen Workflows gestartet werden:
+
+* **[!UICONTROL Verarbeitung der Batch-Ereignisse]** (interner Name **[!UICONTROL batchEventsProcessing]**): teilt die Batch-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
+* **[!UICONTROL Verarbeitung der Echtzeit-Ereignisse]** (interner Name **[!UICONTROL rtEventsProcessing]**): teilt die Echtzeit-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
+* **[!UICONTROL Update des Ereignisstatus]** (interner Name **[!UICONTROL updateEventStatus]**): ordnet jedem Ereignis einen Status zu.
+
+   Mögliche Ereignisstatus sind:
+
+   * **[!UICONTROL Ausstehend]**: Das Ereignis befindet sich in der Warteschlange und wurde noch keiner Nachrichtenvorlage zugeteilt.
+   * **[!UICONTROL Versand ausstehend]**: Das Ereignis befindet sich in der Warteschlange, wurde einer Nachrichtenvorlage zugeordnet und wird vom Versand verarbeitet.
+   * **[!UICONTROL Gesendet]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass die Nachricht gesendet wurde.
+   * **[!UICONTROL Vom Versand ignoriert]**: Der Versand konnte nicht erfolgen, z. B. aufgrund einer Quarantäne (Status wird den Versandlogs entnommen).
+   * **[!UICONTROL Versandfehler]**: Der Versand ist fehlgeschlagen (Status wird den Versandlogs entnommen).
+   * **[!UICONTROL Ereignis wurde nicht berücksichtigt]**: Das Ereignis konnte keiner Vorlage zugeordnet werden. Das Ereignis wird nicht erneut verarbeitet.
