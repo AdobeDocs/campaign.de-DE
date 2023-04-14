@@ -4,13 +4,13 @@ description: Erfahren Sie, wie Sie Personalisierungsdaten in Ihren Nachrichtenin
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
+exl-id: 14a741dd-794e-4760-bfa3-bafbe993a3f7
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 100%
 
 ---
-
 
 # Hinzufügen von Personalisierungsfeldern{#personalization-fields}
 
@@ -65,4 +65,3 @@ Im folgenden Anwendungsbeispiel erfahren Sie, wie Sie den Betreff und Text einer
 Im folgenden Video erfahren Sie, wie Sie der Betreffzeile und dem Inhalt eines E-Mail-Versands ein Personalisierungsfeld hinzufügen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
-

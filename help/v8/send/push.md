@@ -5,10 +5,10 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 1bcb1b3d1e6062a8b5c0368725248edfc7e3d1b4
-workflow-type: ht
-source-wordcount: '1937'
-ht-degree: 100%
+source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
+workflow-type: tm+mt
+source-wordcount: '1860'
+ht-degree: 97%
 
 ---
 
@@ -24,11 +24,12 @@ Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folg
 
 ## SDK integrieren {#push-sdk}
 
-Sie können das Adobe Experience Platform Mobile SDK auch verwenden, indem Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Adobe Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+Um Push-Benachrichtigungen mit Adobe Campaign zu senden, müssen Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche des Adobe Experience Platform Mobile SDK konfigurieren.
 
-Sie können auch das Campaign SDK integrieren, um die Integration Ihrer App in die Adobe Campaign-Plattform zu erleichtern. Kompatible SDK-Versionen sind in der [Campaign-Kompatibilitätsmatrix](../start/compatibility-matrix.md#MobileSDK) aufgeführt.
+Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen.
 
-Informationen zur Integration von Campaign Android- und iOS-SDKs in Ihre App finden Sie [auf dieser Seite](../config/push-config.md).
+[Weitere Informationen finden Sie in der Adobe Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+
 
 ## Konfigurieren der Mobile-App-Einstellungen in Campaign{#push-config}
 
@@ -77,10 +78,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
    Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
-   Wenn Sie das Campaign SDK verwenden, können Sie auf [dieser Seite](../config/push-config.md) mehr darüber erfahren.
-
-
-   Wenn Sie das Adobe Experience Platform SDK (Datenerfassung) verwenden, erfahren Sie mehr darüber auf [dieser Seite](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys).{target="_blank"}
+   Weitere Informationen finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
@@ -117,11 +115,9 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 1. Geben Sie den Namen Ihrer App im Feld **[!UICONTROL Titel]** ein.
 1. Der Integrationsschlüssel ist für jede Anwendung spezifisch. Dadurch wird die Mobile App mit Adobe Campaign verknüpft.
 
-   Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist.
+   Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
-   Wenn Sie das Campaign SDK verwenden, erfahren Sie mehr darüber auf [dieser Seite](../config/push-config.md).
-
-   Wenn Sie das Adobe Experience Platform SDK (Datenerfassung) verwenden, können Sie mehr auf [dieser Seite](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys) erfahren.{target="_blank"}
+   Weitere Informationen finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
@@ -219,7 +215,6 @@ Gehen Sie wie folgt vor, um Benachrichtigungen auf iOS-Geräten zu senden:
       >[!NOTE]
       > 
       >Töne müssen in die App integriert und zum Zeitpunkt der Erstellung des entsprechenden Service konfiguriert werden.
-
    ![](assets/push_ios_5.png)
 
 1. Ihre **[!UICONTROL Anwendungsvariablen]** werden automatisch von der Registerkarte **[!UICONTROL Anwendungsvariablen]** hinzugefügt. Damit können Sie beispielsweise das Benachrichtigungsverhalten definieren. So können Sie einen speziellen Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.

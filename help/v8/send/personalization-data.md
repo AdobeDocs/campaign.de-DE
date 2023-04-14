@@ -4,13 +4,13 @@ description: Erfahren Sie, welche Quellen für die Personalisierung verwendet we
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+exl-id: 711256e2-ab77-404a-b052-6793a85da193
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 100%
 
 ---
-
 
 # Quellen von Personalisierungsdaten{#personalization-data}
 
@@ -71,7 +71,3 @@ Gehen Sie nach dem Abschluss der Analyse zu den Workflow-**[!UICONTROL Eigenscha
 Wenn ein Versand im Kontext eines Workflows erstellt wird, können Sie die Daten aus der temporären Workflow-Tabelle verwenden. Die in der temporären Arbeitstabelle des Workflows gespeicherten Daten stehen für Personalisierungsaufgaben zur Verfügung. Daten können in Personalisierungsfeldern verwendet werden.
 
 Diese Daten werden im Menü **[!UICONTROL Erweiterung des Zieldatensatzes]** gruppiert. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../automation/workflow/use-workflow-data.md#target-data).
-
-
-
-

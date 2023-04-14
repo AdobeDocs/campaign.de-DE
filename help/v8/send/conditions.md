@@ -4,13 +4,13 @@ description: Erstellen von bedingten Inhalten
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+exl-id: bcbf3101-d43c-4ed3-ab02-a9936ec55b71
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 100%
 
 ---
-
 
 # Bedingte Inhalte erstellen{#conditional-content}
 
@@ -87,4 +87,3 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
 Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)
-
