@@ -5,10 +5,10 @@ feature: Application Settings
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 6dee08f0f8673e5264f3cb111fe14493980a62fc
+source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 94%
+ht-degree: 84%
 
 ---
 
@@ -24,10 +24,12 @@ Sie können über Adobe Campaign **[!UICONTROL Explorer]** auf externe Konten zu
 
 
 >[!CAUTION]
+>* Wenn Sie Managed Cloud Services-Benutzer sind, konfiguriert Adobe externe Konten für Ihre Instanz, die nicht geändert werden dürfen.
+
 >
->Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) verwaltet ein spezielles externes **[!UICONTROL Full FDA]**-Konto (ffda) die Verbindung zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank ([!DNL Snowflake]).
+>* >Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) verwaltet ein spezielles externes **[!UICONTROL Full FDA]**-Konto (ffda) die Verbindung zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank ([!DNL Snowflake]).
 >
->Wenn Sie Managed Cloud Services-Benutzer sind, konfiguriert Adobe externe Konten für Ihre Instanz, die nicht geändert werden dürfen.
+
 
 ## Campaign-spezifische externe Konten
 
@@ -38,8 +40,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 ### Bounce Messages {#bounce-mails-external-account}
 
 >[!NOTE]
->
->Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3-Funktionen ist ab Campaign v8.3 verfügbar. Informationen zu Ihrer Version finden Sie in [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3-Funktionen ist ab Campaign v8.3 verfügbar. Informationen zu Ihrer Version finden Sie in [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 
 Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
@@ -77,8 +78,7 @@ Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für d
 ![](assets/bounce_external_2.png)
 
 >[!IMPORTANT]
->
->Bevor Sie Ihr externes POP3-Konto mit Microsoft OAuth 2.0 konfigurieren, müssen Sie Ihre Anwendung zunächst im Azure-Portal registrieren. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](https://docs.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app).
+Bevor Sie Ihr externes POP3-Konto mit Microsoft OAuth 2.0 konfigurieren, müssen Sie Ihre Anwendung zunächst im Azure-Portal registrieren. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](https://docs.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
 
 Um ein externes POP3-Programm mit Microsoft OAuth 2.0 zu konfigurieren, markieren Sie die Option **[!UICONTROL Microsoft OAuth 2.0]** und füllen Sie die folgenden Felder aus:
 
@@ -105,8 +105,7 @@ Nachdem Sie Ihre unterschiedlichen Anmeldedaten eingegeben haben, können Sie au
 Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campaign verfügbaren Kanal abhängig von den installierten Packages konfigurieren.
 
 >[!CAUTION]
->
->Das externe Konto **[!UICONTROL Internes E-Mail-Routing]** (defaultEmailBulk) darf in Adobe Campaign v8 **nicht** aktiviert sein.
+Das externe Konto **[!UICONTROL Internes E-Mail-Routing]** (defaultEmailBulk) darf in Adobe Campaign v8 **nicht** aktiviert sein.
 
 ### Ausführungsinstanz {#execution-instance}
 
@@ -116,60 +115,30 @@ Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der 
 
 ## Zugriff auf externe Systemkonten
 
-* **Externe Datenbank (FDA)**
-
-   Ein externes Konto vom Typ **Externe Datenbank** wird verwendet, um über Federated Data Access (FDA) eine Verbindung mit einer externen Datenbank herzustellen.
+* **Externe Datenbank (FDA)** - die **Externe Datenbank** Externes Konto vom Typ wird verwendet, um über Federated Data Access (FDA) eine Verbindung zu einer externen Datenbank herzustellen. Weitere Informationen zur Option Federated Data Access (FDA) finden Sie in [diesem Abschnitt](../connect/fda.md).
 
    Externe Datenbanken, die mit Adobe Campaign v8 kompatibel sind, sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
 
-   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Option Federated Data Access (FDA) finden Sie in [diesem Abschnitt](../connect/fda.md).
-
-* **Twitter**
-
-   Ein externes Konto vom Typ **Twitter** wird verwendet, um Campaign mit Ihrem Twitter-Konto zu verbinden und Nachrichten in Ihrem Namen zu posten.
-
-   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Twitter-Integration finden Sie in [diesem Abschnitt](../connect/ac-tw.md).
+* **Twitter** - die **Twitter** Typ externes Konto wird verwendet, um Campaign mit Ihrem twitter-Konto zu verbinden und Nachrichten in Ihrem Namen zu posten. Weitere Informationen zur Twitter-Integration finden Sie in [diesem Abschnitt](../connect/ac-tw.md).
 
 ## Externe Konten zur Integration von Adobe-Lösungen
 
-* **Adobe Experience Cloud**
+* **Adobe Experience Cloud** - Ein externes Konto vom Typ **[!UICONTROL Adobe Experience Cloud]** wird verwendet, um Adobe Identity Management Service (IMS) für die Verbindung mit Adobe Campaign zu implementieren. Weitere Informationen zu Adobe Identity Management Service (IMS) finden Sie in [diesem Abschnitt](../start/connect.md#connect-ims).
 
-   Ein externes Konto vom Typ **[!UICONTROL Adobe Experience Cloud]** wird verwendet, um Adobe Identity Management Service (IMS) für die Verbindung mit Adobe Campaign zu implementieren.
+* **Web Analytics** - die **[!UICONTROL Web Analytics (Adobe Analytics)]** Das externe Konto wird verwendet, um die Datenübertragung von Adobe Analytics zu Adobe Campaign zu konfigurieren. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aa.md).
 
-   ![](../assets/do-not-localize/glass.png) Weitere Informationen zu Adobe Identity Management Service (IMS) finden Sie in [diesem Abschnitt](../start/connect.md#connect-ims).
-
-* **Web Analytics**
-
-   Das externe Konto **[!UICONTROL Web Analytics (Adobe Analytics)]** wird verwendet, um die Datenübertragung von Adobe Analytics an Adobe Campaign zu konfigurieren.
-
-   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aa.md).
-
-* **Adobe Experience Manager**
-
-   Mit dem externen Konto **[!UICONTROL AEM]** können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten.
-
-   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aem.md).
+* **Adobe Experience Manager** - die **[!UICONTROL AEM]** Mit dem externen Konto können Sie den Inhalt Ihrer E-Mail-Sendungen sowie Ihrer Formulare direkt in Adobe Experience Manager verwalten. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aem.md).
 
 
 ## Externe CRM-Connector-Konten
 
-* **Microsoft Dynamics CRM**
+* **Microsoft Dynamics CRM** - die **[!UICONTROL Microsoft Dynamics CRM]** Mit einem externen Konto können Sie Microsoft Dynamics-Daten in Adobe Campaign importieren und exportieren. Weitere Informationen zur Integration von Adobe Campaign mit Microsoft Dynamics CRM finden Sie auf [dieser Seite](../connect/ac-ms-dyn.md).
 
-   Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import und Export von Microsoft Dynamics-Daten in Adobe Campaign.
-
-   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Integration von Adobe Campaign mit Microsoft Dynamics CRM finden Sie auf [dieser Seite](../connect/ac-ms-dyn.md).
-
-* **Salesforce.com**
-
-   Das externe **[!UICONTROL Salesforce CRM]**-Konto ermöglicht den Import und Export von Salesforce-Daten in Adobe Campaign.
-
-   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Integration von Adobe Campaign mit dem CRM Salesforce.com finden Sie auf [dieser Seite](../connect/ac-sfdc.md).
+* **Salesforce.com** - die **[!UICONTROL Salesforce CRM]** Mit einem externen Konto können Sie Salesforce-Daten in Adobe Campaign importieren und exportieren. Weitere Informationen zur Integration von Adobe Campaign mit dem CRM Salesforce.com finden Sie auf [dieser Seite](../connect/ac-sfdc.md).
 
 ## Übertragen von Daten mit externen Konten
 
-Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** zum Importieren oder Exportieren von Daten in Adobe Campaign verwendet werden.
-
-Weitere Informationen zur Dateiübertragung in Workflows finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de).
+Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** zum Importieren oder Exportieren von Daten in Adobe Campaign verwendet werden. Weitere Informationen zur Dateiübertragung in Workflows finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de).
 
 * **FTP und SFTP**
 

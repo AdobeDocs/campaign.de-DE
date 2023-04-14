@@ -5,20 +5,20 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 74%
+source-wordcount: '636'
+ht-degree: 65%
 
 ---
 
 # Einstellungen für Transaktionsnachrichten
 
+Transaktionsnachrichten (Message Center) sind ein Campaign-Modul zur Verwaltung von ausgelösten Nachrichten. Erfahren Sie mehr über Transaktionsnachrichten in [diesem Abschnitt](../send/transactional.md).
+
+[Diese Seite](../architecture/architecture.md#transac-msg-archi) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
+
 ![](../assets/do-not-localize/speech.png) Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
-
-![](../assets/do-not-localize/glass.png) In [diesem Abschnitt](../send/transactional.md) sind die Funktionen für Transaktionsnachrichten beschrieben.
-
-![](../assets/do-not-localize/glass.png)[ Diese Seite](../architecture/architecture.md#transac-msg-archi) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
 
 ## Berechtigungen definieren
 
@@ -26,15 +26,11 @@ Um neue Benutzer für in Adobe Cloud gehostete Message Center-Ausführungsinstan
 
 ## Schemaerweiterungen
 
-Alle Erweiterungen von Schemas, die von **technischen Workflows des Message Center-Moduls** in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
-
-![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html?lang=de#technical-workflows) erfahren Sie mehr über die technischen Workflows von Message Center.
+Alle Erweiterungen von Schemas, die von [technischen Workflows des Message Center-Moduls](#technical-workflows) in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
 
 ## Push-Benachrichtigungen zu Transaktionen versenden
 
-In Kombination mit dem Mobile-App-Kanal-Modul können Sie über Benachrichtigungen Transaktionsnachrichten an Mobilgeräte senden.
-
-![](../assets/do-not-localize/book.png) Der Mobile-App-Kanal wird im Abschnitt [diesem Abschnitt](../send/push.md).
+Bei Kombination mit [Mobile-App-Kanal-Modul](../send/push.md), ermöglicht es Ihnen Transaktionsnachrichten per Push über Benachrichtigungen auf Mobilgeräten zu versenden.
 
 Um Push-Benachrichtigungen zu Transaktionen zu senden, müssen Sie die folgenden Konfigurationen vornehmen:
 
@@ -46,14 +42,14 @@ Um Push-Benachrichtigungen zu Transaktionen zu senden, müssen Sie die folgenden
 
 1. Replizieren Sie den Service **Mobile App** und die zugehörigen Mobile Apps in den Ausführungsinstanzen.
 
-Damit Campaign Push-Benachrichtigungen zu Transaktionen senden kann, muss das Ereignis die folgenden Elemente enthalten:
+Darüber hinaus muss das Ereignis die folgenden Elemente enthalten:
 
-* Die Kennung des Mobilgeräts: **registrationId** für Android und **deviceToken** für iOS. Diese Kennung steht für die &quot;Adresse&quot;, an die die Benachrichtigung gesendet wird.
+* Die Mobilgeräte-ID: **registrationId** für Android und **deviceToken** für iOS. Diese ID stellt die &quot;Adresse&quot;dar, an die die Benachrichtigung gesendet wird.
 * Den Link zu der Mobile App oder dem Integrationsschlüssel (**uuid**), der den Abruf der App-spezifischen Verbindungsinformationen erlaubt.
 * Den Kanal, über den die Benachrichtigung gesendet wird (**wishedChannel**): 41 für iOS und 42 für Android.
-* Andere Daten, die für die Personalisierung genutzt werden sollen.
+* Alle anderen Personalisierungsdaten.
 
-Beispiel der Verarbeitung eines diese Informationen enthaltenden Ereignisses:
+Nachfolgend finden Sie ein Beispiel für eine Ereigniskonfiguration zum Senden von Transaktions-Push-Benachrichtigungen:
 
 ```
 <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -76,14 +72,7 @@ Beispiel der Verarbeitung eines diese Informationen enthaltenden Ereignisses:
 </SOAP-ENV:Envelope>
 ```
 
-## Schwellenwerte überwachen {#monitor-thresholds}
 
-Sie können die Warnschwellen (orange) und die Warnschwellen (rot) der Indikatoren konfigurieren, die im **Dienstqualität** und **Verarbeitungszeit** Berichte.
-
-Gehen Sie dazu wie folgt vor:
-
-1. Öffnen Sie den Softwareverteilungs-Assistenten im **Ausführungsinstanz** und navigieren Sie zum **[!UICONTROL Message Center]** Seite.
-1. Verwenden Sie die Pfeile, um die Schwellenwerte zu ändern.
 
 
 ## Ereignisse bereinigen {#purge-events}
