@@ -5,10 +5,10 @@ feature: Application Settings
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: a11d3895-00f1-43d0-b0f7-330fce9fd56b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 90%
+source-wordcount: '207'
+ht-degree: 86%
 
 ---
 
@@ -37,8 +37,7 @@ Für jede Auflistung werden die Werte in einer Dropdown-Liste angezeigt, aus der
 
 Für Auflistungen des Typs **Offen** kann der Benutzer auch die ersten Zeichen des Werts eingeben und mögliche Werte werden angezeigt.
 
-In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de){target="_blank"} erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und sie konfigurieren können.
-
+Weitere Informationen zu Auflistungen finden Sie unter [diese Seite](../../v8/config/ui-settings.md#enumerations).
 
 ## Standardeinheiten {#default-units}
 
