@@ -5,7 +5,7 @@ version: v8
 feature: Application Settings
 role: Admin, Developer
 level: Beginner, Intermediate, Experienced
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 0b4483e0f16f14582a1a4bc28b0e1ff719823ef3
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 29%
@@ -89,7 +89,7 @@ Sie können auch einen vorhandenen Auflistungswert in einen Alias konvertieren. 
    ![Neuen Alias erstellen](assets/define-new-alias.png)
 
 
->[!CAUTION]
+>[!NOTE]
 >
 >Sie können die Vorkommen eines Alias im **[!UICONTROL Treffer]** in der Spalte **[!UICONTROL Alias]** Unterregisterkarte. Er zeigt an, wie oft dieser Wert eingegeben wurde.  [Weitere Informationen](#calculate-entry-occurrences).
 
