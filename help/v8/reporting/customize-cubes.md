@@ -6,10 +6,10 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 100%
+source-wordcount: '1518'
+ht-degree: 99%
 
 ---
 
@@ -64,6 +64,8 @@ Gehen Sie wie folgt vor, um diesen Klassierungstyp zu erstellen:
 
    Bei Aktualisierung der Auflistungswerte werden die Klassen automatisch angepasst, ohne benutzerseitige Intervention.
 
+Weitere Informationen zu Auflistungen finden Sie unter [diese Seite](../../v8/config/ui-settings.md#enumerations).
+
 ### Erstellen von Wertebereichen {#create-value-ranges}
 
 Sie können die Werte nach benutzerdefinierten Intervallen gruppieren.
@@ -111,6 +113,8 @@ Dabei genügt es, die Auflistung abzuändern, um den entsprechenden Bericht zu a
 Die Auflistung **[!UICONTROL Domains (domains)]** wird zur Erzeugung der nativen Berichte verwendet, in denen die Domain-Liste angezeigt wird. Sie können diese Liste abändern, um den Inhalt der Berichte anzupassen.
 
 Sie können weitere, der Klassierung vorbehaltene Auflistungen erstellen und diese in anderen Cubes verwenden: Alle Alias-Werte werden in den im ersten Tab der Auflistung definierten Klassen gruppiert.
+
+Weitere Informationen zu Auflistungen finden Sie unter [diese Seite](../../v8/config/ui-settings.md#enumerations).
 
 ## Aggregate in Cubes {#calculate-and-use-aggregates}
 
