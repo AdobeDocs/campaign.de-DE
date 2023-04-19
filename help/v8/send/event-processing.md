@@ -4,13 +4,13 @@ description: Erfahren Sie, wie Transaktionsnachrichten in Campaign Ereignisse sa
 feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
+source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 44%
 
 ---
-
 
 # Ereignisverarbeitung {#event-processing}
 
@@ -102,6 +102,3 @@ Konfigurieren Sie hierzu einen Workflow, der alle Ereignisse mit **Versandfehler
 >[!CAUTION]
 >
 >Dieser Schritt kann nur mithilfe eines Workflows durchgeführt werden und sollte daher erfahrenen Benutzern vorbehalten bleiben. Wenden Sie sich für weitere Informationen hierzu an Ihren Adobe-Kundenbetreuer.
-
-
-
