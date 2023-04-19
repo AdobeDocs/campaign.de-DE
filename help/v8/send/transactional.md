@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 2a85ffc2fe3a839c14a5c844deaa7a09687743eb
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 96%
+source-wordcount: '1579'
+ht-degree: 94%
 
 ---
 
@@ -57,10 +57,8 @@ Wählen Sie dazu beim [Erstellen einer Nachrichtenvorlage](#create-message-templ
 
 Gehen Sie wie folgt vor, um Ereignistypen für die Verarbeitung in Adobe Campaign zu erstellen:
 
-1. Rufen Sie im Navigationsbaum den Ordner **[!UICONTROL Administration > Plattform > Auflistungen]** auf.
-
-1. Wählen Sie **[!UICONTROL Ereignistyp]** aus der Liste aus.
-
+1. Navigieren Sie zum **[!UICONTROL Administration > Plattform > Auflistungen]** Ordner des Campaign-Explorers.
+1. Wählen Sie die **[!UICONTROL Ereignistyp]** Auflistung aus der Liste.
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um einen Auflistungswert zu erstellen. Hierbei kann es sich um eine Bestellbestätigung, eine Passwortänderung, eine Änderung des Bestellversands usw. handeln.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
@@ -73,7 +71,8 @@ Gehen Sie wie folgt vor, um Ereignistypen für die Verarbeitung in Adobe Campaig
 
 >[!NOTE]
 >
->Weitere Informationen zu Auflistungswerten finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html?lang=de){target="_blank"}.
+>Weitere Informationen zu Auflistungen finden Sie unter [diese Seite](../../v8/config/ui-settings.md#enumerations).
+
 
 ## Definieren einer Transaktionsnachrichtenvorlage {#create-message-template}
 
