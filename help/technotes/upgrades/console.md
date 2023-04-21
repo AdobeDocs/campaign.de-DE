@@ -4,20 +4,16 @@ title: 32-Bit-Entfernung der Clientkonsole
 description: 32-Bit-Entfernung der Clientkonsole
 hide: true
 hidefromtoc: true
-source-git-commit: dcb12339d891c61f308cf7b7e518784f3ba1ff31
+source-git-commit: 52fd89d9b8b19e096173e1660982382215dad5dc
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
 
 # Ende der Unterstützung für 32-Bit-Betriebssysteme | Adobe Campaign v8 {#console-eol}
 
-<!--
-The 32-bit version of Campaign v8 Client Console will be deprecated in 8.5 release. Starting 8.6, the Client Console will only be available in 64-bits.
--->
-
-Ab Version 8.5 bietet Campaign v8 keine Unterstützung mehr für 32-Bit-Betriebssysteme, einschließlich Produkt- und Sicherheitsupdates. Adobe empfiehlt dringend, dass Sie Ihre Sicherheitsaktualisierungen auf dem neuesten Stand halten.
+Die 32-Bit-Version der Client Console wird in Version 8.5 nicht mehr unterstützt. Ab Version 8.6 bietet Campaign v8 keine Unterstützung mehr für 32-Bit-Betriebssysteme, einschließlich Produkt- und Sicherheitsupdates. Adobe empfiehlt dringend, dass Sie Ihre Sicherheitsaktualisierungen auf dem neuesten Stand halten.
 
 ## Ende der Unterstützung
 
