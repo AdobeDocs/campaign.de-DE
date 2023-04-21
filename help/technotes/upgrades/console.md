@@ -4,10 +4,10 @@ title: 32-Bit-Entfernung der Clientkonsole
 description: 32-Bit-Entfernung der Clientkonsole
 hide: true
 hidefromtoc: true
-source-git-commit: dd3490f43016cb7f6e0ccc5c171d78b8ee3ca234
+source-git-commit: 87e8ef65a2fea2f0d019babc69ed8a8a74017aa6
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -53,8 +53,8 @@ Stellen Sie sicher, dass Ihr Computerprozessor die Installation eines 64-Bit-Bet
 
 **WINDOWS 10 UND WINDOWS 8.1**
 
-1. Wählen Sie die Schaltfläche Start und dann **Einstellungen** > **System** > **Info**.
-1. Rechts unter **Gerätespezifikationen**, siehe **Systemtyp**.
+1. Klicken Sie auf **Starten** Schaltfläche und wählen Sie **Einstellungen** > **System** > **Info**.
+1. under **Gerätespezifikationen**, siehe **Systemtyp**.
 
 **WINDOWS 7**
 1. Wählen Sie die **Starten** Schaltfläche, Rechtsklick **Computer** und wählen Sie **Eigenschaften**.
