@@ -4,9 +4,9 @@ title: 32-Bit-Entfernung der Clientkonsole
 description: 32-Bit-Entfernung der Clientkonsole
 hide: true
 hidefromtoc: true
-source-git-commit: 52fd89d9b8b19e096173e1660982382215dad5dc
+source-git-commit: dd3490f43016cb7f6e0ccc5c171d78b8ee3ca234
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -39,13 +39,15 @@ Ja. Ab Version 8.6 ist die Client-Konsole von Campaign v8 nicht mehr in 32 Bit v
 
 +++ Welche Versionen von Campaign v8 unterstützen 32-Bit-Betriebssysteme nicht mehr?
 
-Ab Version 8.5 werden 32-Bit-Betriebssysteme in allen Campaign v8-Versionen nicht mehr unterstützt.
+Ab Version 8.6 werden 32-Bit-Betriebssysteme in allen Campaign v8-Versionen nicht mehr unterstützt.
 
 +++
 
 +++ Wie kann ich von Windows (32 Bit) auf Windows (64 Bit) aktualisieren?
 
 Stellen Sie sicher, dass Ihr Computerprozessor die Installation eines 64-Bit-Betriebssystems unterstützt. Für die Aktualisierung von der 32-Bit-Version auf die 64-Bit-Version von Windows müssen Sie Ihre Festplatte neu formatieren, die 64-Bit-Version von Windows installieren und dann alles, was Sie auf Ihrem Gerät hatten, neu installieren. Weitere Informationen finden Sie unter [32-Bit- und 64-Bit-Windows: Häufig gestellte Fragen](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+
++++
 
 +++ Wie kann ich überprüfen, ob ich auf einem 32-Bit- oder 64-Bit-Computer bin?
 
