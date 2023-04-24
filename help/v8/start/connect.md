@@ -5,10 +5,10 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 445e62c290466003886f2dc49386d0c1edb80eeb
+source-git-commit: 7f27dbdd0ff53cd7437f956ccfef3d792020893b
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -83,7 +83,7 @@ Um sich bei einer Instanz anzumelden, gehen Sie wie folgt vor:
 
 1. Bestätigen Sie die Aktion mit der Schaltfläche **[!UICONTROL OK]**.
 
-Sie können sich dann mit [Ihrer Adobe ID](#connect-ims) bei Campaign anmelden.
+Sie können sich dann mit Ihrer Adobe ID bei Campaign anmelden.
 
 ![](assets/adobeID.png)
 
