@@ -47,7 +47,7 @@ Der Zugriff auf diese Message Center-Berichte erfolgt über den Tab **[!UICONTRO
 
 ![](assets/mc-reports.png)
 
-### Message-Center-Ereignisverlauf {#history-events}
+### Message Center-Ereignisverlauf {#history-events}
 
 Die **[!UICONTROL Ereignisverlauf]** zeigt einen Überblick über die Message-Center-Modulaktivität an, d. h. die Anzahl der verarbeiteten Ereignisse und der zugestellten Ereignisse als Transaktionsnachrichten.
 

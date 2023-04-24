@@ -25,7 +25,7 @@ Die folgenden Workflows werden standardmäßig mit dem **Angebotsmodul (Interact
   <tr> 
    <td> <span class="uicontrol">Berechnung des full-Aggregats (cube propositionrcp)</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
-   <td> Dieser Workflow aktualisiert das <strong>full</strong>-Aggregat des <strong>Angebotsvorschlag</strong>-Cubes. Es wird standardmäßig täglich um 6 Uhr gestartet. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Versand, Marketingangebot und Datum.<br /> Der Cube <strong>Angebotsvorschlag</strong> wird dann zur Erstellung von angebotsbasierten Berichten verwendet.<br /> </td> 
+   <td> Dieser Workflow aktualisiert das <strong>full</strong>-Aggregat des <strong>Angebotsvorschlag</strong>-Cubes. Es wird standardmäßig täglich um 6 Uhr gestartet. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Versand, Marketing-Angebot und Datum.<br /> Der Cube <strong>Angebotsvorschlag</strong> wird dann zur Erstellung von angebotsbasierten Berichten verwendet.<br /> </td> 
   </tr> 
    <tr> 
    <td> <span class="uicontrol">Vollständige Message Center-Aggregatberechnung</span> <br /> </td> 

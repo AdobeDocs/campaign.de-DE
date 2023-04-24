@@ -1,5 +1,5 @@
 ---
-title: Link zur Mirrorseite hinzufügen
+title: Hinzufügen eines Links zur Mirrorseite
 description: Erfahren Sie, wie Sie den Link zur Mirrorseite hinzufügen und verwalten
 feature: Email
 role: User
@@ -24,7 +24,7 @@ Die von Adobe Campaign erzeugte Mirrorseite enthält alle Personalisierungsdaten
 
 ![Beispiel für einen Mirrorlink](assets/mirror-page-link.png){width="600" align="left"}
 
-## Link zur Mirrorseite hinzufügen{#link-to-mirror-page}
+## Hinzufügen eines Links zur Mirrorseite{#link-to-mirror-page}
 
 Es empfiehlt sich, einen Link zur Mirrorseite einzufügen. Dieser Link kann beispielsweise lauten: „Diese E-Mail in Ihrem Browser anzeigen“ oder „Online lesen“. Er befindet sich häufig in der Kopf- oder Fußzeile der E-Mail.
 
