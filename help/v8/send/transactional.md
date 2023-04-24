@@ -8,7 +8,7 @@ exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
 source-wordcount: '1579'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 
 Das Campaign-Modul &quot;Transaktionsnachricht (Message Center)&quot; wurde zum Verwalten von Trigger-Nachrichten entwickelt. Diese Benachrichtigungen werden von Ereignissen generiert, die von Informationssystemen ausgelöst werden und können sein: Rechnung, Auftragsbestätigung, Versandbestätigung, Passwortänderung, Benachrichtigung über die Nichtverfügbarkeit von Produkten, Kontoauszug, Einrichtung eines Website-Kontos usw.
 
-![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services [Adobe kontaktieren](../start/campaign-faq.md#support){target="_blank"} zum Konfigurieren von Campaign-Transaktionsnachrichten in Ihrer Umgebung.
+![](../assets/do-not-localize/speech.png) Wenn Sie Managed Cloud Services-Benutzer oder -Benutzerin sind, [kontaktieren Sie Adobe](../start/campaign-faq.md#support){target="_blank"}, um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu konfigurieren.
 
 Transaktionsnachrichten dienen zum Senden von:
 
@@ -43,7 +43,7 @@ Die wichtigsten Schritte für die Einrichtung sind nachfolgend beschrieben:
 1. [Testen Sie die Nachricht](#test-message-template).
 1. [Veröffentlichen Sie die Nachrichtenvorlage](#publish-message-template).
 
-Wenn nach der Erstellung und Publikation der Transaktionsnachrichtenvorlage ein entsprechendes Ereignis ausgelöst wird, werden die relevanten Daten über PushEvent und PushEvents an Campaign gesendet [SOAP-Methoden](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=de){target="_blank"}und der Versand an die Zielgruppenempfänger erfolgt.
+Wenn nach der Erstellung und Veröffentlichung der Transaktionsnachrichtenvorlage ein entsprechendes Ereignis ausgelöst wird, werden die relevanten Daten über die [SOAP-Methoden](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=de){target="_blank"} PushEvent und PushEvents an Campaign gesendet. Danach erfolgt der Versand an die ausgewählte Zielgruppe.
 
 ## Ereignistypen erstellen {#create-event-types}
 

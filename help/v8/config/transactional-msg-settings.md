@@ -8,17 +8,17 @@ exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Einstellungen für Transaktionsnachrichten
 
-Transaktionsnachrichten (Message Center) sind ein Campaign-Modul zur Verwaltung von ausgelösten Nachrichten. Erfahren Sie mehr über Transaktionsnachrichten in [diesem Abschnitt](../send/transactional.md).
+Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwalten von Trigger-Nachrichten entwickelt. Weitere Informationen zu Transaktionsnachrichten finden Sie in [diesem Abschnitt](../send/transactional.md).
 
 [Diese Seite](../architecture/architecture.md#transac-msg-archi) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
 
-![](../assets/do-not-localize/speech.png) Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
+![](../assets/do-not-localize/speech.png) Wenn Sie Managed Cloud Services-Benutzer oder -Benutzerin sind, können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
 ## Berechtigungen definieren
 
@@ -30,7 +30,7 @@ Alle Erweiterungen von Schemas, die von [technischen Workflows des Message Cente
 
 ## Push-Benachrichtigungen zu Transaktionen versenden
 
-Bei Kombination mit [Mobile-App-Kanal-Modul](../send/push.md), ermöglicht es Ihnen Transaktionsnachrichten per Push über Benachrichtigungen auf Mobilgeräten zu versenden.
+In Kombination mit dem [Mobile-App-Kanal-Modul](../send/push.md) können Sie Transaktionsnachrichten über Benachrichtigungen auf Mobilgeräten pushen.
 
 Um Push-Benachrichtigungen zu Transaktionen zu senden, müssen Sie die folgenden Konfigurationen vornehmen:
 
@@ -42,9 +42,9 @@ Um Push-Benachrichtigungen zu Transaktionen zu senden, müssen Sie die folgenden
 
 1. Replizieren Sie den Service **Mobile App** und die zugehörigen Mobile Apps in den Ausführungsinstanzen.
 
-Darüber hinaus muss das Ereignis die folgenden Elemente enthalten:
+Das Ereignis muss darüber hinaus folgende Elemente enthalten:
 
-* Die Mobilgeräte-ID: **registrationId** für Android und **deviceToken** für iOS. Diese ID stellt die &quot;Adresse&quot;dar, an die die Benachrichtigung gesendet wird.
+* Die Kennung des Mobilgeräts: **registrationId** für Android und **deviceToken** für iOS. Diese Kennung ist die „Adresse“, an die die Benachrichtigung gesendet wird.
 * Den Link zu der Mobile App oder dem Integrationsschlüssel (**uuid**), der den Abruf der App-spezifischen Verbindungsinformationen erlaubt.
 * Den Kanal, über den die Benachrichtigung gesendet wird (**wishedChannel**): 41 für iOS und 42 für Android.
 * Alle anderen Personalisierungsdaten.
@@ -77,22 +77,22 @@ Nachfolgend finden Sie ein Beispiel für eine Ereigniskonfiguration zum Senden v
 
 ## Ereignisse bereinigen {#purge-events}
 
-Sie können die Einstellungen des Softwareverteilungs-Assistenten anpassen, um zu konfigurieren, wie lange die Daten in der Datenbank gespeichert werden sollen.
+Sie können die Einstellungen des Implementierungsassistenten anpassen, um zu konfigurieren, wie lange die Daten in der Datenbank gespeichert werden.
 
-Die Bereinigung der Ereignisse wird automatisch von der **Datenbankbereinigung** technischer Arbeitsablauf. Dieser Workflow löscht die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in einer Kontrollinstanz archivierten Ereignisse.
+Die Ereignislöschung wird automatisch vom technischen Workflow **Datenbankbereinigung** durchgeführt. Dieser Workflow löscht die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in einer Kontrollinstanz archivierten Ereignisse.
 
-Verwenden Sie die Pfeile, um die Bereinigungsparameter für die **Veranstaltungen** (in einer Ausführungsinstanz) und **Ereignisse mit Verlauf** (in einer Kontrollinstanz).
+Verwenden Sie die Pfeile, um die Bereinigungsparameter für die **Ereignisse** (in einer Ausführungsinstanz) und **Archivierte Ereignisse** (in einer Kontrollinstanz) zu ändern.
 
 
 ## Technische Workflows {#technical-workflows}
 
-Vor der Bereitstellung von Transaktionsnachrichten-Vorlagen müssen Sie sicherstellen, dass die technischen Workflows in Ihren Kontroll- und Ausführungsinstanzen gestartet wurden.
+Sie müssen sicherstellen, dass die technischen Workflows für Ihre Kontroll- und Ausführungsinstanzen gestartet wurden, bevor Transaktionsnachrichtenvorlagen implementiert werden.
 
 Diese Workflows können Sie dann über den Ordner **Administration > Betreibung > Message Center** aufrufen.
 
 ### Workflows der Kontrollinstanz {#control-instance-workflows}
 
-In der Kontrollinstanz müssen Sie für jeden **[!UICONTROL Message Center Ausführungsinstanz]** externes Konto. Klicken Sie auf die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]**, um den Workflow zu erstellen und zu starten.
+In der Kontrollinstanz müssen Sie für jedes externe Konto der **[!UICONTROL Message-Center-Ausführungsinstanz]** einen Archivierungs-Workflow erstellen. Klicken Sie auf die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]**, um den Workflow zu erstellen und zu starten.
 
 ### Workflows der Ausführungsinstanz {#execution-instance-workflows}
 
@@ -109,4 +109,4 @@ In der/den Ausführungsinstanz(en) müssen die folgenden technischen Workflows g
    * **[!UICONTROL Gesendet]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass die Nachricht gesendet wurde.
    * **[!UICONTROL Vom Versand ignoriert]**: Der Versand konnte nicht erfolgen, z. B. aufgrund einer Quarantäne (Status wird den Versandlogs entnommen).
    * **[!UICONTROL Versandfehler]**: Der Versand ist fehlgeschlagen (Status wird den Versandlogs entnommen).
-   * **[!UICONTROL Ereignis wurde nicht berücksichtigt]**: Das Ereignis konnte keiner Vorlage zugeordnet werden. Das Ereignis wird nicht erneut verarbeitet.
+   * **[!UICONTROL Ereignis wurde nicht berücksichtigt]**: Das Ereignis konnte keiner Nachrichtenvorlage zugeordnet werden. Das Ereignis wird nicht erneut verarbeitet.

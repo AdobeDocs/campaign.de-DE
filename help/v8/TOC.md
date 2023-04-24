@@ -7,7 +7,7 @@ title: Dokumente zu Campaign v8
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -53,10 +53,10 @@ ht-degree: 94%
       + Transaktionsnachrichten {#real-time}
          + [Erste Schritte mit Transaktionsnachrichten](send/transactional.md)
          + [Erstellen und Veröffentlichen einer Vorlage](send/transactional-template.md)
-         + Ereignisverwaltung {#event}
+         + Ereignis-Management {#event}
          + [Erfassen und Verarbeiten von Ereignissen](send/event-processing.md)
-         + [Ereignisbeschreibung verstehen](send/event-description.md)
-         + [Nachrichten senden und überwachen](send/delivery-execution.md)
+         + [Funktionsweise der Ereignisbeschreibung](send/event-description.md)
+         + [Senden und Überwachen von Nachrichten](send/delivery-execution.md)
       + Fehler, Bounces und Quarantänen{#failures}
          + [Quarantänen](send/quarantines.md)
          + [Versandfehler](send/delivery-failures.md)

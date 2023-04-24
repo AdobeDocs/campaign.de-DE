@@ -1,5 +1,5 @@
 ---
-title: Ereignisbeschreibung verstehen
+title: Funktionsweise der Ereignisbeschreibung
 description: Erfahren Sie, wie Sie Transaktionsnachrichtenereignisse in Adobe Campaign Classic mithilfe von SOAP-Methoden verwalten
 feature: Transactional Messaging
 role: User
@@ -8,15 +8,15 @@ exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '754'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Ereignisbeschreibung verstehen {#about-event-desc}
+# Funktionsweise der Ereignisbeschreibung {#about-event-desc}
 
 ## Transaktionsnachrichten-Datenmodell {#about-mc-datamodel}
 
-Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwenden zwei zusätzliche separate Tabellen. Diese Tabellen **NmsRtEvent** und **NmsBatchEvent** enthalten dieselben Felder und ermöglichen Ihnen die Verwaltung von Echtzeit-Ereignissen einerseits und Batch-Ereignissen andererseits.
+Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwenden zwei zusätzliche, separate Tabellen. Diese Tabellen, **NmsRtEvent** und **NmsBatchEvent**, enthalten dieselben Felder, wobei die eine zur Verwaltung von Echtzeit-Ereignissen dient, die andere zur Verwaltung von Batch-Ereignissen.
 
 ## SOAP-Methoden {#soap-methods}
 

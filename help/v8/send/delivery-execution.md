@@ -1,5 +1,5 @@
 ---
-title: Transaktionsnachrichten senden und überwachen
+title: Senden und Überwachen von Transaktionsnachrichten
 description: Erfahren Sie, wie Sie Transaktionsnachrichten senden und überwachen
 feature: Transactional Messaging
 role: User
@@ -8,25 +8,25 @@ exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Transaktionsnachrichten senden und überwachen {#delivery-execution}
+# Senden und Überwachen von Transaktionsnachrichten {#delivery-execution}
 
 ## Senden von Nachrichten{#send-transactional-msg}
 
-Sobald die Anreicherung abgeschlossen und dem Ereignis eine Versandvorlage zugeordnet wurde, wird der Versand von der Ausführungsinstanz aus gestartet.
+Sobald die Anreicherung abgeschlossen ist und dem Ereignis eine Versandvorlage zugeordnet wurde, wird der Versand von der Ausführungsinstanz aus gestartet.
 
 >[!NOTE]
 >
->Die Transaktionsnachrichten werden priorisiert vor jedem anderen Versand.
+>Die Transaktionsnachrichten werden vor jedem anderen Versand priorisiert.
 
 Alle Sendungen werden im Ordner **[!UICONTROL Administration > Betreibung > Message Center > Standard > Sendungen]** gruppiert.
 
 Sie werden standardmäßig in Unterordner nach Versandmonat unterteilt. Dies kann in den Eigenschaften der Nachrichtenvorlage geändert werden.
 
-## Nachrichten überwachen {#monitor-transactional-msg}
+## Überwachen von Nachrichten {#monitor-transactional-msg}
 
 Zur Überwachung Ihrer Transaktionsnachrichten können Sie die [Versandlogs](send.md) einsehen.
 
@@ -47,28 +47,28 @@ Der Zugriff auf diese Message Center-Berichte erfolgt über den Tab **[!UICONTRO
 
 ![](assets/mc-reports.png)
 
-### Message Center-Ereignisverlauf {#history-events}
+### Message-Center-Ereignisverlauf {#history-events}
 
-Die **[!UICONTROL Ereignisverlauf]** zeigt einen Überblick über die Message-Center-Modulaktivität an, d. h. die Anzahl der verarbeiteten Ereignisse und der zugestellten Ereignisse als Transaktionsnachrichten.
+Der **[!UICONTROL Ereignisverlauf des Message Centers]** zeigt einen Überblick über die Aktivität des Message-Center-Moduls an, d. h. die Anzahl der als Transaktionsnachrichten verarbeiteten und zugestellten Ereignisse.
 
 Beim Öffnen des Berichts entsprechen die standardmäßig angezeigten Daten der Rate der erfolgreich gesendeten Transaktionsnachrichten. Sie können die unterschiedlichen Knoten aufklappen, um weitere Ebenen anzuzeigen. Fahren Sie mit dem Mauszeiger über eine Ebene, um sie hervorzuheben.
 
 Sie haben zudem die Möglichkeit, für jeden Zeitraum die Daten jedes Ereignisses zu visualisieren. Die Spalte **[!UICONTROL Ereignisse]** entspricht der Anzahl von der Kontrollinstanz empfangenen Ereignisse. In der Spalte **[!UICONTROL Gesendet]** werden die als Reaktion auf die Ereignisse gesendeten personalisierten Transaktionsnachrichten berechnet.
 
 
-### Message Center-Verarbeitungsdauer {#processing-time}
+### Message-Center-Verarbeitungsdauer {#processing-time}
 
-Die **[!UICONTROL Verarbeitungszeit]** zeigt die wichtigsten Indikatoren im Zusammenhang mit der Echtzeit-Warteschlange an. Auf diesen Bericht kann auch über die **[!UICONTROL Überwachung]** in der Kontrollinstanz.
+Die **[!UICONTROL Verarbeitungszeit des Message Centers]** zeigt die wichtigsten Indikatoren im Zusammenhang mit der Echtzeit-Warteschlange an. Auf diesen Bericht kann auch über die Registerkarte **[!UICONTROL Überwachung]** der Kontrollinstanz zugegriffen werden.
 
 ![](assets/mc-processing-time-report.png)
 
-Sie können globale Statistiken oder Statistiken anzeigen, die sich auf eine bestimmte Ausführungsinstanz beziehen. Sie können die Daten auch nach Kanal und einem bestimmten Zeitraum filtern.
+Sie können globale Statistiken oder Statistiken anzeigen, die sich auf eine bestimmte Ausführungsinstanz beziehen. Sie können die Daten auch nach Kanal und nach einem bestimmten Zeitraum filtern.
 
 Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indikatoren werden für den ausgewählten Zeitraum berechnet:
 
-* **[!UICONTROL Durchschnittliche Verweildauer in der Warteschlange (s)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Es wird nur die Verarbeitungsdauer berücksichtigt.
-* **[!UICONTROL Durchschnittliche Sendungsdauer (s)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Es wird nur die Dauer des Versands durch die MTAs berücksichtigt.
-* **[!UICONTROL Durchschnittliche Verarbeitungsdauer (s)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Die Berechnung berücksichtigt die Verarbeitungs- und MTA-Versanddauer.
+* **[!UICONTROL Durchschnittliche Verweildauer in der Warteschlange]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Es wird nur die Verarbeitungsdauer berücksichtigt.
+* **[!UICONTROL Durchschnittliche Sendungsdauer]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Es wird nur die Dauer des Versands durch die MTAs berücksichtigt.
+* **[!UICONTROL Durchschnittliche Verarbeitungsdauer]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Die Berechnung berücksichtigt die Verarbeitungs- und MTA-Versanddauer.
 * **[!UICONTROL Maximale Anzahl an Ereignissen in der Warteschlange]**: Maximale Anzahl der zum gleichen Zeitpunkt in der Message-Center-Warteschlange vorhandenen Ereignisse.
 * **[!UICONTROL Minimale Anzahl an Ereignissen in der Warteschlange]**: Minimale Anzahl der zum gleichen Zeitpunkt in der Message-Center-Warteschlange vorhandenen Ereignisse.
 * **[!UICONTROL Durchschnittliche Anzahl an Ereignissen in der Warteschlange]**: Durchschnittliche Anzahl der zum gleichen Zeitpunkt in der Message-Center-Warteschlange vorhandenen Ereignisse.
@@ -79,22 +79,22 @@ Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indika
 
 
 
-### Message Center-Dienstqualität {#service-level}
+### Message-Center-Dienstqualität {#service-level}
 
-Die **[!UICONTROL Dienstqualität]** zeigt die Versandstatistiken der Transaktionsnachrichten sowie die Verteilung der Fehler an. Sie können auf einen Fehlertyp klicken, um dessen Details anzuzeigen.
+Die **[!UICONTROL Dienstqualität des Message Centers]** zeigt die Versandstatistiken der Transaktionsnachrichten sowie die Fehleraufschlüsselung. Sie können auf einen Fehlertyp klicken, um dessen Details anzuzeigen.
 
-Auf diesen Bericht kann auch über die **[!UICONTROL Überwachung]** in der Kontrollinstanz.
+Auf diesen Bericht kann auch über die Registerkarte **[!UICONTROL Überwachung]** der Kontrollinstanz zugegriffen werden.
 
-Sie können globale Statistiken oder Statistiken anzeigen, die sich auf eine bestimmte Ausführungsinstanz beziehen. Sie können die Daten auch nach Kanal und einem bestimmten Zeitraum filtern.
+Sie können globale Statistiken oder Statistiken anzeigen, die sich auf eine bestimmte Ausführungsinstanz beziehen. Sie können die Daten auch nach Kanal und nach einem bestimmten Zeitraum filtern.
 
 Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indikatoren werden für den ausgewählten Zeitraum berechnet:
 
 * **[!UICONTROL Eingehend (Ereignis/Std.)]**: Durchschnittliche Anzahl der pro Stunde neu in die Message-Center-Warteschlange eingereihten Ereignisse.
 * **[!UICONTROL Eingehend (Ereignisanz.)]**: Anzahl der neuen Ereignisse in der Warteschlange.
 * **[!UICONTROL Ausgehend (Durchsatz/Std.)]**: Durschnittliche Anzahl der pro Stunde erfolgreich aus Message Center entlassenen Ereignisse (über einen Versand).
-* **[!UICONTROL Ausgehend (Nachrichtenanz.)]**: Anzahl der erfolgreich aus Message Center entlassenen Nachrichten (über einen Versand).
+* **[!UICONTROL Ausgehend (Nachrichtenanz.)]**: Anzahl der erfolgreich aus Message Center versandten Nachrichten (über einen Versand).
 * **[!UICONTROL Durchschnittliche Sendungsdauer (Sekunden)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Die Berechnung berücksichtigt die Verarbeitungs- und MTA-Versanddauer.
-* **[!UICONTROL Fehlerrate]**: Anzahl fehlerhafter Ereignisse im Vergleich zur Anzahl der Neuzugänge in der Message-Center-Warteschlange. Folgende Fehler werden berücksichtigt: Routing-Fehler, Ereignis ist abgelaufen (zu lange in der Warteschlange verbliebenes Ereignis), Versandfehler, Vom Versand ignoriert (Quarantäne etc.).
+* **[!UICONTROL Fehlerrate]**: Anzahl fehlerhafter Ereignisse im Vergleich zur Anzahl der Neuzugänge in der Message-Center-Warteschlange. Folgende Fehler werden berücksichtigt: Routing-Fehler, Ereignis ist abgelaufen (zu lange in der Warteschlange verbliebenes Ereignis), Versandfehler, vom Versand ignoriert (Quarantäne etc.).
 
 >[!NOTE]
 >
@@ -102,11 +102,11 @@ Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indika
 
 ### Schwellenwerte überwachen {#thresholds}
 
-Sie können die Schwellenwerte für Warnhinweise (orange) und Warnhinweise (rot) der Indikatoren konfigurieren, die in der Variablen **Dienstqualität** und **Verarbeitungszeit** Berichte.
+Sie können die Schwellenwerte für Warnung (orange) und Benachrichtigung (rot) der Indikatoren konfigurieren, die in den Berichten **Message Center Service-Level** und **Message-Center-Verarbeitungszeit** erscheinen.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Öffnen Sie den Softwareverteilungs-Assistenten im **Ausführungsinstanz** und navigieren Sie zum **[!UICONTROL Message Center]** Seite.
+1. Öffnen Sie den Implementierungsassistenten auf der **Ausführungsinstanz** und navigieren Sie zur Seite **[!UICONTROL Message Center]**.
 1. Verwenden Sie die Pfeile, um die Schwellenwerte zu ändern.
 
    ![](assets/mc-thresholds.png)

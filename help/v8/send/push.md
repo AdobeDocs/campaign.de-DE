@@ -8,7 +8,7 @@ exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
 workflow-type: tm+mt
 source-wordcount: '1860'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folg
 
 ## SDK integrieren {#push-sdk}
 
-Um Push-Benachrichtigungen mit Adobe Campaign zu senden, müssen Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche des Adobe Experience Platform Mobile SDK konfigurieren.
+Um Push-Benachrichtigungen mit Adobe Campaign zu senden, müssen Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ des Adobe Experience Platform Mobile SDK konfigurieren.
 
-Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen.
+Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen.
 
 [Weitere Informationen finden Sie in der Adobe Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
    Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
-   Weitere Informationen finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
@@ -117,7 +117,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 
    Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
-   Weitere Informationen finden Sie unter [Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]

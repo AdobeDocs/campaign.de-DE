@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Veröffentlichen Ihrer Vorlage für Transaktionsnachrichten
+title: Erstellen und Veröffentlichen einer Vorlagen für Transaktionsnachrichten
 description: Erfahren Sie, wie Sie eine Vorlage für Transaktionsnachrichten erstellen und veröffentlichen
 feature: Transactional Messaging
 role: User
@@ -8,11 +8,11 @@ exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
 source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Erstellen und Veröffentlichen Ihrer Vorlage für Transaktionsnachrichten{#template-transactional-messages}
+# Erstellen und Veröffentlichen einer Vorlagen für Transaktionsnachrichten{#template-transactional-messages}
 
 Jedes Ereignis kann eine personalisierte Nachricht auslösen. Dazu müssen Sie für jeden Ereignistyp eine passende Nachrichtenvorlage erstellen. Vorlagen enthalten die notwendigen Informationen zur Personalisierung der Transaktionsnachricht. Sie können Vorlagen auch verwenden, um die Vorschau der Nachricht zu testen und einen Testversand an Testadressen zu senden, bevor Sie an die endgültige Zielgruppe versenden.
 
