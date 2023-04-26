@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
+source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 100%
@@ -74,10 +74,9 @@ In diesem Arbeitsbereich können Sie auf die Explorer-Baumstruktur zugreifen, um
 
 Im linken Bereich wird die Campaign Explorer-Baumstruktur angezeigt. Dort können Sie basierend auf Ihren Berechtigungen alle Komponenten und Einstellungen Ihrer Instanz durchsuchen.
 
-Im oberen Bereich wird die Liste der Einträge des aktuellen Ordners angezeigt. Diese Listen können vollständig angepasst werden. [Weitere Informationen](customize-ui.md)
+Im oberen Bereich wird die Liste der Einträge des aktuellen Ordners angezeigt. Diese Listen können vollständig angepasst werden. [Weitere Informationen](../config/ui-settings.md)
 
 Im unteren Bereich werden die Details des ausgewählten Eintrags angezeigt.
-
 
 ## Sprachen{#languages}
 
@@ -96,7 +95,6 @@ Die Sprache wird während des Installationsprozesses ausgewählt.
 >Die Sprache kann nach der Instanzerstellung nicht mehr geändert werden.
 
 Die Sprachauswahl beeinflusst Datums- und Uhrzeitformate.
-
 
 Die Hauptunterschiede zwischen US-amerikanischem Englisch und britischem Englisch sind:
 
