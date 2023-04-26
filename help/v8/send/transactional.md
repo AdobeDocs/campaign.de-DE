@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1560'
 ht-degree: 98%
 
 ---
@@ -43,7 +43,7 @@ Die wichtigsten Schritte für die Einrichtung sind nachfolgend beschrieben:
 1. [Testen Sie die Nachricht](#test-message-template).
 1. [Veröffentlichen Sie die Nachrichtenvorlage](#publish-message-template).
 
-Wenn nach der Erstellung und Veröffentlichung der Transaktionsnachrichtenvorlage ein entsprechendes Ereignis ausgelöst wird, werden die relevanten Daten über die [SOAP-Methoden](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html?lang=de){target="_blank"} PushEvent und PushEvents an Campaign gesendet. Danach erfolgt der Versand an die ausgewählte Zielgruppe.
+Wenn nach der Erstellung und Veröffentlichung der Transaktionsnachrichtenvorlage ein entsprechendes Ereignis ausgelöst wird, werden die relevanten Daten über die [SOAP-Methoden](../send/event-description.md) PushEvent und PushEvents an Campaign gesendet. Danach erfolgt der Versand an die ausgewählte Zielgruppe.
 
 ## Ereignistypen erstellen {#create-event-types}
 
@@ -196,9 +196,7 @@ Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalt
 
 Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versand einen Testversand durchzuführen.
 
-Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei jedem Versand.
-
-![](../assets/do-not-localize/book.png) Weitere Informationen zu Testsendungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de#sending-a-proof).{target="_blank"}
+Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei jedem Versand. Weitere Informationen zu Testsendungen finden Sie in [diesem Abschnitt](../send/preview-and-proof.md).
 
 Um jedoch einen Testversand einer Transaktionsnachricht zu senden, müssen Sie die folgenden Vorgänge ausführen:
 

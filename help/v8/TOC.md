@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
 title: Dokumente zu Campaign v8
-source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
+source-git-commit: 58b2f850284b68c6d65773166b895f9520718385
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 98%
 
 ---
@@ -29,9 +29,7 @@ ht-degree: 98%
    + [Wichtigste Funktionen](start/whats-new.md)
    + [Komponenten und Prozesse](start/ac-components.md)
    + [Herstellen einer Verbindung zu Campaign](start/connect.md)
-   + Campaign-Benutzeroberfläche {#ac-ui}
-      + [Erkunden der Benutzeroberfläche von Campaign](start/campaign-ui.md)
-      + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
+   + [Campaign-Benutzeroberfläche](start/campaign-ui.md)
    + [Wechsel von Classic v7 zu v8](start/v7-to-v8.md)
    + [Häufig gestellte Fragen](start/campaign-faq.md)
 + Kampagnen-Management {#campaigns}
@@ -167,6 +165,7 @@ ht-degree: 98%
       + [Best Practices für Datenmodelle](dev/datamodel-best-practices.md)
    + Einstellungen und Konfiguration {#configuration}
       + [Einstellungen der Benutzeroberfläche](config/ui-settings.md)
+      + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
       + [E-Mail-Einstellungen](config/email-settings.md)
       + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
       + [Campaign SDKs mit Ihrer Mobile App integrieren - VERALTETE SEITE](config/push-config.md)

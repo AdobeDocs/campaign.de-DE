@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1138'
 ht-degree: 100%
 
 ---
@@ -136,7 +136,7 @@ Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versa
 
 Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei jedem Versand.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zu Testsendungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=de#sending-a-proof).{target="_blank"}
+Weitere Informationen zu Testsendungen finden Sie in [diesem Abschnitt](../send/preview-and-proof.md#proofs-send).
 
 Um jedoch einen Testversand einer Transaktionsnachricht zu senden, müssen Sie die folgenden Vorgänge ausführen:
 

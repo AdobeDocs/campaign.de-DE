@@ -4,44 +4,14 @@ description: Erfahren Sie, wie Sie Berechtigungen für Campaign v8 erteilen
 feature: Permissions
 role: User, Admin
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '17'
 ht-degree: 100%
 
 ---
 
 # Erste Schritte mit Berechtigungen
-
-In Adobe Campaign sind Anwender **Benutzer** und **Benutzergruppen** stehen für Benutzerrollen. 
-
-Ein Anwender ist ein Benutzer von Adobe Campaign, der die Berechtigung besitzt, sich anzumelden und Aktionen durchzuführen. Operatoren werden standardmäßig im Knoten **[!UICONTROL Administration > Zugriffe > Operatoren]** gespeichert.
-
-Adobe Campaign verfügt über native Operatorgruppen wie &quot;Kampagnenverantwortliche Benutzer&quot; oder &quot;Workflow-Supervisoren&quot;. Alle integrierten Gruppen sind in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=de#default-groups) aufgeführt.{target="_blank"}.
-
-Als Mitglied einer Operatorgruppe verfügt ein Benutzer über Rechte zur Durchführung von Vorgängen, sogenannte &quot;Spezifische Berechtigungen&quot;, und er hat Zugriff auf Daten, die in Ordnern in der **Explorer**-Ansicht enthalten sind. Ein Anwender kann Mitglied in mehreren Anwendegruppen sein: Rechte und Zugriffsberechtigungen sind additiv.
-
-Spezifische Berechtigungen gewähren Berechtigungen für:
-
-* Vorgänge ausführen
-Zum Beispiel ist die Schaltfläche **Analysieren** im Versand-Editor für Mitglieder der Gruppe **Versandoperatoren** aktiviert, die die spezifische Berechtigung **Versand vorbereiten** besitzen.
-
-* Zugriff auf Ordner
-Mitglieder von Operatorgruppen können Zugriffsrechte auf Ordner gewähren oder einschränken, indem sie die Sicherheitseinstellungen von Ordnern ändern. [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-folders.html?lang=de#permissions-on-a-folder){target="_blank"}. Zum Beispiel kann es diese Auswirkungen haben: **Schreibzugriff** zum Erstellen neuer Entitäten (wie Sendungen, Profile usw.), **Lesezugriff** zum Verwenden von Entitäten, **Löschzugriff** zum Löschen von Entitäten.
-
-## Sicherheitszonen
-
-Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anmelden zu können, und die IP des Operators muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Konfiguration der Sicherheitszone erfolgt in der Konfigurationsdatei des Adobe Campaign-Servers.
-
-Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft, auf die über den Knoten **[!UICONTROL Administration > Zugriffe > Operatoren]** zugegriffen werden kann.
-
-![](../assets/do-not-localize/speech.png) Adobe legt für Sie als Benutzer von Managed Cloud Services die Sicherheitszonen fest. Nehmen Sie für weitere Information [Kontakt mit Adobe auf](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
-
-**Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7**
-
-* [Native spezifische Berechtigungen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-named-rights.html?lang=de){target="_blank"}
-
-* [Native Operatorgruppen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=de#default-groups){target="_blank"}
-
-* [Schritte zum Einrichten von Berechtigungen](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=de#getting-started){target="_blank"}

@@ -8,9 +8,9 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1263'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
 
    >[!NOTE]
    >
-   >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de#creating-ios-app).
+   >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben.
 
 * **Tracking-URL**: entspricht der Adresse des Adobe-Campaign-Trackingservers.
 * **Marketing-URL**: zur Abfrage der Abonnements.
@@ -798,7 +798,6 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
 Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Mobile-App-Code und in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der **Dokumentation zu Campaign Classic v7** in der App: [Konfigurationsschritte für iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=de){target="_blank"} and [Configuration steps for Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=de){target="_blank"}.
 
 Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
 

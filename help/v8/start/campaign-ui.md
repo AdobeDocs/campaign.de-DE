@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 97%
 
 ---
 
@@ -72,11 +72,11 @@ Durchsuchen Sie den Campaign Explorer, um auf alle Funktionen und Einstellungen 
 
 In diesem Arbeitsbereich können Sie auf die Explorer-Baumstruktur zugreifen, um alle Funktionen und Optionen zu durchsuchen.
 
-Im linken Bereich wird die Campaign Explorer-Baumstruktur angezeigt. Dort können Sie basierend auf Ihren Berechtigungen alle Komponenten und Einstellungen Ihrer Instanz durchsuchen.
+* Im linken Bereich wird die Campaign Explorer-Baumstruktur angezeigt. Dort können Sie basierend auf Ihren Berechtigungen alle Komponenten und Einstellungen Ihrer Instanz durchsuchen. Sie können Ordner hinzufügen und anpassen, wie hier beschrieben: [diese Seite](../audiences/folders-and-views.md).
 
-Im oberen Bereich wird die Liste der Einträge des aktuellen Ordners angezeigt. Diese Listen können vollständig angepasst werden. [Weitere Informationen](../config/ui-settings.md)
+* Im oberen Bereich wird die Liste der Einträge des aktuellen Ordners angezeigt. Diese Listen können vollständig angepasst werden. [Weitere Informationen](../config/ui-settings.md)
 
-Im unteren Bereich werden die Details des ausgewählten Eintrags angezeigt.
+* Im unteren Bereich werden die Details des ausgewählten Eintrags angezeigt.
 
 ## Sprachen{#languages}
 
