@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 61222c2b05f1346bd2560ff17b225153edf9e91e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Für die Nutzung der Campaign-Client-Konsole sind die folgenden Betriebssysteme 
 
 >[!NOTE]
 >
->Beachten Sie, dass die 32-Bit-Version der Client Console in Version 8.5 nicht mehr unterstützt wird. Ab 8.6 ist die Client-Konsole nur noch in 64 Bit verfügbar. Weitere Informationen zum Upgrade Ihres Betriebssystems finden Sie in diesem [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html).
+>Bitte beachten Sie, dass die 32-Bit-Version der Client-Konsole in Version 8.5 nicht mehr unterstützt wird. Ab 8.6. ist die Client-Konsole nur noch in 64 Bit verfügbar. Weitere Informationen zum Upgrade Ihres Betriebssystems finden Sie in dieser [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=de).
 
 ### Betriebssysteme{#op-systems}
 
