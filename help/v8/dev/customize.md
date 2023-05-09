@@ -5,9 +5,9 @@ role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -52,25 +52,25 @@ Um einen komplett neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht stan
 
 Campaign-Eingabeformulare sind an Ihre Implementierung anpassbar. Sie können Formularfelder hinzufügen oder entfernen, indem Sie den XML-Inhalt ändern.
 
-Näheres dazu, wie Sie ein vorhandenes Eingabedatum ändern oder ein neues Formular erstellen, finden Sie in [diesem Abschnitt](../dev/forms.md).
+Näheres dazu, wie Sie ein vorhandenes Eingabeformular ändern oder ein neues Formular erstellen, finden Sie in [diesem Abschnitt](../dev/forms.md).
 
 ## Anpassen von Dashboards{#gs-custom-dashboards}
 
 In der Benutzeroberfläche von Adobe Campaign werden zahlreiche Web-Anwendungen bereitgestellt, die es Ihnen ermöglichen, auf Empfänger, Sendungen, Kampagnen, gespeicherte Assets usw. zuzugreifen, sie zu verwalten und mit ihnen zu interagieren. In der Benutzeroberfläche erscheinen sie in Form von Dashboards, die aus einer einzigen Seite bestehen.
 
-Die integrierten Webanwendungen werden im **Administration > Konfiguration > Webanwendungen** Ordner des Explorers.
+Die integrierten Web-Anwendungen werden im Ordner **Administration > Konfiguration > Web-Anwendungen** des Explorers gespeichert.
 
- Weitere Informationen, wie Sie eine Übersichtsseite in Campaign erstellen, finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=de#creating-a-single-page-web-application).{target="_blank"}
+Weitere Informationen, wie Sie eine Übersichtsseite in Campaign erstellen, finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=de#creating-a-single-page-web-application).{target="_blank"}
 
 
-## Listen anpassen und Filter erstellen {#gs-lists-and-filters}
+## Anpassen von Listen und Erstellen von Filtern {#gs-lists-and-filters}
 
 Die in Campaign verfügbaren Listen beinhalten vordefinierte Filter, um die Navigation und Datenvisualisierung zu erleichtern.
 
 Beim Navigieren in der Explorer-Struktur von Adobe Campaign werden die in der Datenbank enthaltenen Daten in Listen angezeigt. Sie können diese Listen filtern, Suchvorgänge durchführen und Informationen hinzufügen sowie Daten filtern und sortieren.
 
-Erfahren Sie, wie Sie Listen konfigurieren und eine Listenkonfiguration speichern in [diese Seite](../start/campaign-ui.md).
+Weitere Informationen, wie Sie Listen konfigurieren und Listenkonfigurationen speichern können, finden Sie auf [dieser Seite](../start/campaign-ui.md).
 
 Sie können Filter auf diese Listen anwenden, um nur die vom Operator benötigten Daten anzuzeigen. Dann können Aktionen für die gefilterten Daten ausgeführt werden. Mit der Filterkonfiguration können Sie Daten aus einer Liste dynamisch auswählen. Beim Ändern der Daten werden die gefilterten Daten aktualisiert.
 
-Weitere Informationen zu Filteroptionen finden Sie in [diese Seite](../audiences/create-filters.md).
+Weitere Informationen zu Filteroptionen finden Sie auf [dieser Seite](../audiences/create-filters.md).
