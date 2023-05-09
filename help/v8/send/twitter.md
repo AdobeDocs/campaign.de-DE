@@ -5,9 +5,9 @@ role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -138,7 +138,7 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
 1. Durchführen eines Testversands
 
-   Bevor Sie Ihre Nachricht senden, überprüfen Sie sie, indem Sie [Testversand an ein Testkonto durchführen](../send/preview-and-proof.md): Sie können dann ein genaues Rendering der Nachricht in einem privaten Twitter-Konto abrufen und Inhalt und Personalisierung überprüfen.
+   Validieren Sie Ihre Nachricht vor dem Versand durch einen [Testversand an ein Testkonto](../send/preview-and-proof.md). Sie erhalten dann ein exaktes Rendering der Nachricht in einem privaten Twitter-Konto und können Inhalt und Personalisierung überprüfen.
 
 1. Senden Sie die Direktnachricht.
 
@@ -149,7 +149,7 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
 >[!CAUTION]
 >
->Sie können pro Tag maximal 250 Direktnachrichten senden. Um eine Überschreitung dieses Grenzwerts zu vermeiden, können Sie in mehreren Schüben senden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en#sending-using-multiple-waves){target="_blank"}.
+>Sie können pro Tag maximal 250 Direktnachrichten senden. Um eine Überschreitung dieses Grenzwerts zu vermeiden, können Sie in mehreren Schüben senden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#sending-using-multiple-waves){target="_blank"}.
 
 
 ## Zugriff auf Tracking-Daten {#tw-tracking}
