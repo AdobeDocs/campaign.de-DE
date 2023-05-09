@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1518'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Gehen Sie wie folgt vor, um diesen Klassierungstyp zu erstellen:
 
    Bei Aktualisierung der Auflistungswerte werden die Klassen automatisch angepasst, ohne benutzerseitige Intervention.
 
-Weitere Informationen zu Auflistungen finden Sie unter [diese Seite](../../v8/config/ui-settings.md#enumerations).
+Weitere Informationen über Auflistungen finden Sie auf [dieser Seite](../../v8/config/ui-settings.md#enumerations).
 
 ### Erstellen von Wertebereichen {#create-value-ranges}
 
@@ -114,7 +114,7 @@ Die Auflistung **[!UICONTROL Domains (domains)]** wird zur Erzeugung der nativen
 
 Sie können weitere, der Klassierung vorbehaltene Auflistungen erstellen und diese in anderen Cubes verwenden: Alle Alias-Werte werden in den im ersten Tab der Auflistung definierten Klassen gruppiert.
 
-Weitere Informationen zu Auflistungen finden Sie unter [diese Seite](../../v8/config/ui-settings.md#enumerations).
+Weitere Informationen über Auflistungen finden Sie auf [dieser Seite](../../v8/config/ui-settings.md#enumerations).
 
 ## Aggregate in Cubes {#calculate-and-use-aggregates}
 
