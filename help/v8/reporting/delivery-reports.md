@@ -4,9 +4,9 @@ description: Integrierte Versandberichte in Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1161'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Die Tabelle zeigt - aufgeschlüsselt nach Domains - Sendungen, Öffnungen, Klick
 >
 >Die in diesem Bericht dargestellten Domain-Namen werden in der auf Cube-Niveau verwendeten Auflistung definiert. Um Standard-Domains zu ändern, hinzuzufügen oder zu entfernen, bearbeiten Sie die **[!UICONTROL Domains]**-Auflistung und passen Sie die Werte und Aliase an. Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die keinem Auflistungswert entsprechen.
 >
->Erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und diese konfigurieren können in [diese Seite](../config/ui-settings.md).
+>Auf [dieser Seite](../config/ui-settings.md) erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und sie konfigurieren können.
 
 
 **[!UICONTROL 4. Erzeugte Clickstreams]**
