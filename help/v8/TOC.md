@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
-source-git-commit: 67368286cb04d97cbf4564846eab91d64b8f90f1
-workflow-type: ht
-source-wordcount: '541'
-ht-degree: 100%
+source-git-commit: e3ea361cc486096fe6c19ac469e8a71b636371ac
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 99%
 
 ---
 
@@ -167,6 +167,7 @@ ht-degree: 100%
       + [Einstellungen der Benutzeroberfläche](config/ui-settings.md)
       + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
       + [E-Mail-Einstellungen](config/email-settings.md)
+      + [Push-Einstellungen](config/push-settings.md)
       + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
       + [Campaign SDKs mit Ihrer Mobile App integrieren - VERALTETE SEITE](config/push-config.md)
       + [Externe Konten](config/external-accounts.md)
