@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1263'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
 
    >[!NOTE]
    >
-   >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben.
+   >Dieser Integrationsschlüssel wird in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Informationen]** des Dienstes, der für die Mobile App zuständig ist, eingegeben.
 
 * **Tracking-URL**: entspricht der Adresse des Adobe-Campaign-Trackingservers.
 * **Marketing-URL**: zur Abfrage der Abonnements.
