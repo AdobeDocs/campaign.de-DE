@@ -8,7 +8,7 @@ exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
 source-wordcount: '1014'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -118,4 +118,4 @@ Dann kann die externe Anwendung mit dem von der Ausführungsinstanz als Antwort 
 * Mehrere Ausführungsinstanzen
 In einer mehrzelligen Ausführungsarchitektur mit mehreren Ausführungsinstanzen hinter einem Load-Balancer durchläuft die vom externen Programm aufgerufene Anmeldemethode den Load-Balancer: Aus diesem Grund kann keine Token-basierte Authentifizierung verwendet werden. Eine Benutzer-/Passwortbasierte Authentifizierung ist erforderlich.
 
-Erfahren Sie mehr über Transaktionsnachrichten-Ereignisse in [diese Seite](../send/event-processing.md).
+Erfahren Sie auf [dieser Seite](../send/event-processing.md) mehr über Ereignisse von Transaktionsnachrichten.
