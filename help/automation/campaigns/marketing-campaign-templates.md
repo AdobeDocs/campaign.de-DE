@@ -5,9 +5,9 @@ description: Marketing-Kampagnenvorlagen
 feature: Campaigns, Templates
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1018'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -167,7 +167,7 @@ Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen
 * Geben Sie den **Titel** der Vorlage ein: Der Titel ist obligatorisch und wird als Standardbtitel für alle auf dieser Vorlage basierenden Kampagnen verwendet.
 * **Kampagnenart**: Die in der Dropdown-Liste angebotenen Werte entsprechen den in der Aufzählung **[!UICONTROL natureOp]** gespeicherten Werten.
 
-Erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und diese konfigurieren können in [diese Seite](../../v8/config/ui-settings.md#enumerations).
+Auf [dieser Seite](../../v8/config/ui-settings.md#enumerations) erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und sie konfigurieren können.
 
 
 * Wählen Sie den **Kampagnentyp**: einmalig, wiederkehrend oder periodisch. Standardmäßig sind in Kampagnenvorlagen einmalige Kampagnen festgelegt. Wiederkehrende und periodische Kampagnen werden in [diesem Abschnitt](recurring-periodic-campaigns.md) beschrieben.
