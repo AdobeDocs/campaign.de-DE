@@ -5,10 +5,11 @@ version: v8
 feature: Application Settings
 role: Admin, Developer
 level: Beginner, Intermediate, Experienced
-source-git-commit: 5251885f0493eb41f93d07f0e22dcf77926e69dd
-workflow-type: tm+mt
+exl-id: fefb6d80-c3d1-448b-82ab-648da58a0ba4
+source-git-commit: 666dbdac8330cae17693142cf45cc3d3d2d187a9
+workflow-type: ht
 source-wordcount: '1945'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 38%
 
 ## Standardeinheiten {#default-units}
 
-In Adobe Campaign können Werte für Felder, die eine Dauer angeben (z. B. Gültigkeitsdauer der Ressourcen, Validierungszeitraum einer Aufgabe usw.), wie folgt ausgedrückt werden: **Einheiten**:
+In Adobe Campaign können Werte für Felder, die eine Dauer angeben (z. B. Gültigkeitsdauer der Ressourcen, Validierungs-Deadline einer Aufgabe usw.), in den folgenden **Einheiten** ausgedrückt werden:
 
 * **[!UICONTROL s]** für Sekunden
 * **[!UICONTROL min]** für Minuten
@@ -31,9 +32,9 @@ Auf [dieser Seite](../audiences/folders-and-views.md) erfahren Sie, wie Sie Ordn
 
 ## Verwalten und Anpassen von Listen{#customize-lists}
 
-In der Campaign-Clientkonsole werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Datensätze zählen, Ihre Einstellungen speichern und freigeben.
+In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Datensätze zählen und Ihre Einstellungen speichern und freigeben.
 
-Darüber hinaus können Sie Filter erstellen und speichern.  Weitere Informationen zu Filtern in [diese Seite](../audiences/create-filters.md).
+Darüber hinaus können Sie Filter erstellen und speichern.  Weitere Informationen über Filter finden Sie auf [dieser Seite](../audiences/create-filters.md).
 
 ### Anzahl der Datensätze {#number-of-records}
 
@@ -41,64 +42,64 @@ Standardmäßig lädt Adobe Campaign die 200 ersten Datensätze einer Liste in d
 
 Im rechten unteren Bereich der Listenanzeige zeigt ein **Zähler** die Anzahl an geladenen Datensätzen sowie die Gesamt-Datensatzanzahl an (unter Berücksichtigung aller angewendeten Filter):
 
-![Gesamtzahl der Datensätze in einer Liste anzeigen](assets/number-of-records.png)
+![Anzeigen der Gesamtzahl der Datensätze in einer Liste](assets/number-of-records.png)
 
-Wenn anstelle der Zahl auf der rechten Seite ein Fragezeichen angezeigt wird, z. B. `240/?`klicken Sie auf den Zähler, um die Berechnung zu starten.
+Wenn rechts anstelle der Gesamtzahl ein Fragezeichen angezeigt wird, wie etwa `240/?`, klicken Sie auf den Zähler, um die Berechnung zu starten.
 
-Um zusätzliche Datensätze zu laden und anzuzeigen, klicken Sie auf **[!UICONTROL Weiter laden]**. Standardmäßig werden 200 Datensätze geladen. Um die Standardanzahl der zu ladenden Datensätze zu ändern, verwenden Sie die **[!UICONTROL Liste konfigurieren]** rechts unten in der Liste. Im Listenkonfigurationsfenster können Sie dann durch Klicken auf **[!UICONTROL Erweiterte Parameter]** (unten links) die Anzahl der abzurufenden Zeilen ändern.
+Um zusätzliche Datensätze zu laden und anzuzeigen, klicken Sie auf **[!UICONTROL Weiter laden]**. Standardmäßig werden 200 Datensätze geladen. Um die standardmäßige Anzahl der Datensätze zu ändern, die geladen werden sollen, verwenden Sie das Symbol **[!UICONTROL Liste konfigurieren]** in der rechten unteren Ecke der Liste. Im Listenkonfigurationsfenster können Sie dann durch Klicken auf **[!UICONTROL Erweiterte Parameter]** (unten links) die Anzahl der abzurufenden Zeilen ändern.
 
-Klicken Sie zur Laden aller Datensätze mit der rechten Maustaste auf die Liste und wählen Sie **[!UICONTROL Alles laden]**.
+Klicken Sie zum Laden aller Datensätze mit der rechten Maustaste auf die Liste und wählen Sie **[!UICONTROL Alles laden]**.
 
 >[!CAUTION]
 >
 >Wenn eine Liste eine große Menge an Datensätzen enthält, kann das vollständige Laden einige Zeit in Anspruch nehmen.
 
-### Spalten hinzufügen und entfernen {#add-columns}
+### Hinzufügen und Entfernen von Spalten {#add-columns}
 
-Für jede Liste kann die integrierte Spaltenkonfiguration angepasst werden, um weitere Informationen anzuzeigen oder nicht verwendete Spalten auszublenden.
+Für jede Liste kann die native Spaltenkonfiguration angepasst werden, um weitere Informationen anzuzeigen oder nicht verwendete Spalten auszublenden.
 
-Wenn Daten in der Detailansicht eines Datensatzes sichtbar sind, klicken Sie mit der rechten Maustaste auf das Feld und wählen Sie **[!UICONTROL In Liste hinzufügen]**.
+Wenn Daten in der Detailansicht eines Datensatzes sichtbar sind, klicken Sie mit der rechten Maustaste auf das Feld und wählen Sie **[!UICONTROL Der Liste hinzufügen]** aus.
 
 ![Hinzufügen eines Felds in der Liste](assets/add-in-the-list.png)
 
 Die Spalte wird rechts von den bereits angezeigten Spalten hinzugefügt.
 
-![Feldspalte hinzufügen](assets/add-a-column.png)
+![Hinzufügen einer Feldspalte](assets/add-a-column.png)
 
 Sie können auch den Listenkonfigurationsbildschirm verwenden, um Spalten hinzuzufügen und zu entfernen:
 
-1. Klicken Sie in einer Datensatzliste auf **[!UICONTROL Liste konfigurieren]** rechts unten.
-1. Doppelklicken Sie auf die Felder, die im **[!UICONTROL Verfügbare Felder]** list: werden sie zum **[!UICONTROL Ausgabespalten]** Liste.
+1. Klicken Sie in einer Datensatzliste auf das Symbol **[!UICONTROL Liste konfigurieren]** unten rechts.
+1. Doppelklicken Sie auf die Felder, die der Liste **[!UICONTROL Verfügbare Felder]** hinzugefügt werden sollen, und sie werden zur Liste **[!UICONTROL Ausgabespalten]** hinzugefügt.
 
    ![Listenkonfigurationsbildschirm](assets/list-config-screen.png)
 
 
    >[!NOTE]
    >
-   >Erweiterte Felder werden standardmäßig nicht angezeigt. Um sie anzuzeigen, klicken Sie auf die **Erweiterte Felder anzeigen** rechts unten in der Liste der verfügbaren Felder.
+   >Erweiterte Felder werden standardmäßig nicht angezeigt. Um sie anzuzeigen, klicken Sie auf das Symbol **Erweiterte Felder anzeigen** unten rechts in der Liste der verfügbaren Felder.
    >
    >Die Art der Felder (SQL-Felder, verknüpfte Tabellen, berechnete Felder usw.) wird durch verschiedene Symbole verdeutlicht. Für das jeweils ausgewählte Feld wird unter der Liste der verfügbaren Felder die entsprechende Beschreibung angezeigt.
 
-1. Mit den Nach-oben-/Nach-unten-Pfeilen können Sie die **Anzeigereihenfolge**.
+1. Mit den Pfeilen nach oben/unten können Sie die **Anzeigereihenfolge** ändern.
 
 1. Wählen Sie **[!UICONTROL OK]** aus, um die Konfigurationen zu bestätigen und das Ergebnis anzuzeigen.
 
-Wenn Sie eine Spalte entfernen möchten, wählen Sie sie aus und klicken Sie auf die Schaltfläche **Papierkorb** Symbol.
+Wenn Sie eine Spalte entfernen möchten, wählen Sie sie aus und klicken Sie auf das **Papierkorb**-Symbol.
 
-Sie können die **[!UICONTROL Werteverteilung]** -Symbol, um die Werteverteilung für das ausgewählte Feld im aktuellen Ordner anzuzeigen.
+Sie können das Symbol **[!UICONTROL Werteverteilung]** verwenden, um die Aufteilung der Werte für das ausgewählte Feld im aktuellen Ordner anzeigen.
 
 ![](assets/value-distribution.png)
 
 
-### Neue Spalte erstellen {#create-a-new-column}
+### Erstellen einer neuen Spalte {#create-a-new-column}
 
 Sie können neue Spalten erstellen, um zusätzliche Felder in der Liste anzuzeigen.
 
 Gehen Sie wie folgt vor, um eine Spalte zu erstellen:
 
-1. Klicken Sie in einer Datensatzliste auf **[!UICONTROL Liste konfigurieren]** rechts unten.
-1. Klicken Sie auf **[!UICONTROL Hinzufügen]** , um ein neues Feld in der Liste anzuzeigen.
-1. Konfigurieren Sie das in der Spalte hinzuzufügende Feld.
+1. Klicken Sie in einer Datensatzliste auf das Symbol **[!UICONTROL Liste konfigurieren]** unten rechts.
+1. Klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]**, um ein neues Feld in der Liste anzuzeigen.
+1. Konfigurieren Sie Feld, das in der Spalte hinzugefügt werden soll.
 
 
 ### Anzeigen von Daten in Unterordnern {#display-sub-folders-records}
@@ -108,28 +109,28 @@ Bei Listen stehen zwei verschiedene Anzeigemodi zur Verfügung:
 * Alle im ausgewählten Ordner enthaltenen Datensätze (Standard)
 * Alle im ausgewählten Ordner und dessen Unterordnern enthaltenen Datensätze
 
-Um von einem Anzeigemodus zum anderen zu wechseln, klicken Sie auf **[!UICONTROL Anzeigen von Unterebenen]** in der Kampagnen-Symbolleiste.
+Um zwischen den beiden Anzeigemodi zu wechseln, klicken Sie in der Campaign-Symbolleiste auf **[!UICONTROL Unterordner anzeigen]**.
 
 ### Speichern einer Listenkonfiguration {#saving-a-list-configuration}
 
-Die Listenkonfigurationen werden für jeden Benutzer lokal definiert. Wenn der lokale Cache gelöscht wird, werden lokale Konfigurationen deaktiviert.
+Die Listenkonfigurationen werden für jede Benutzerin und jeden Benutzer lokal definiert. Wenn der lokale Cache gelöscht wird, werden lokale Konfigurationen deaktiviert.
 
-Standardmäßig gelten die Parameter für Einstellungen für alle Listen mit dem entsprechenden Ordnertyp. Wenn Sie die Anzeige der Empfängerliste in einem Ordner ändern, wird diese Konfiguration auf alle anderen Empfängerordner angewendet.
+Standardmäßig gelten die Einstellungsparameter für alle Listen mit dem entsprechenden Ordnertyp. Wenn Sie die Weise ändern, wie die Empfängerliste in einem Ordner angezeigt wird, wird diese Konfiguration auf alle anderen Empfängerordner angewendet.
 
 Sie können mehr als eine Konfiguration speichern, um sie auf verschiedene Ordner desselben Typs anzuwenden. Die Konfiguration wird mit den Eigenschaften des Ordners gespeichert, der die Daten enthält, und kann erneut angewendet werden.
 
-Gehen Sie wie folgt vor, um eine Listenkonfiguration zu speichern, damit sie wiederverwendet werden kann:
+Gehen Sie folgendermaßen vor, um eine Listenkonfiguration zu speichern, damit sie wiederverwendet werden kann:
 
 1. Klicken Sie im Explorer mit der rechten Maustaste auf den Ordner, der die angezeigten Daten enthält.
 1. Wählen Sie **[!UICONTROL Eigenschaften]** aus.
 1. Wählen Sie **[!UICONTROL Erweiterte Parameter]** aus und geben Sie im Feld **[!UICONTROL Konfiguration]** einen Namen ein.
 1. Wählen Sie **[!UICONTROL OK]** und danach **[!UICONTROL Speichern]** aus.
 
-Sie können diese Konfiguration dann auf jeden anderen Ordner desselben Typs anwenden. Weitere Informationen zu Ordnern in [diese Seite](../audiences/folders-and-views.md).
+Sie können diese Konfiguration dann auf jeden anderen Ordner desselben Typs anwenden. Weitere Informationen über Ordner finden Sie auf [dieser Seite](../audiences/folders-and-views.md).
 
 ### Exportieren einer Liste {#exporting-a-list}
 
-Zum Export von Listendaten steht Ihnen der Export-Assistent zur Verfügung. Markieren Sie die zu exportierenden Datensätze und klicken Sie mit der rechten Maustaste auf die Liste. Wählen Sie dann im Kontextmenü die Option **[!UICONTROL Exportieren...]**.
+Zum Exportieren von Listendaten steht Ihnen der Export-Assistent zur Verfügung. Markieren Sie die zu exportierenden Datensätze und klicken Sie mit der rechten Maustaste auf die Liste. Wählen Sie dann im Kontextmenü die Option **[!UICONTROL Exportieren…]**.
 
 <!--The use of the import and export functions is explained in [Generic imports and exports](../../platform/using/about-generic-imports-exports.md).-->
 
@@ -159,102 +160,102 @@ Sie können die Sortierung konfigurieren oder Sortierkriterien kombinieren. Gehe
 
 ## Arbeiten mit Auflistungen {#enumerations}
 
-Eine Auflistung (auch als &quot;Auflistungsliste&quot;bezeichnet) ist eine Liste von Werten, die vom System zum Ausfüllen von Feldern vorgeschlagen werden. Verwenden Sie Auflistungen, um die Werte dieser Felder zu standardisieren, die Dateneingabe zu unterstützen oder in Abfragen zu verwenden.
+Eine Auflistung (auch als „Einzelaufstellung“ bezeichnet) ist eine Liste von Werten, die vom System zum Ausfüllen von Feldern vorgeschlagen werden. Verwenden Sie Auflistungen, um die Werte dieser Felder zu standardisieren, die Dateneingabe zu unterstützen oder sie in Abfragen zu verwenden.
 
-Die Werteliste erscheint als Dropdown-Liste, aus der Sie den im Feld einzufügenden Wert auswählen können. Die Dropdown-Liste ermöglicht auch eine prädiktive Eingabe: Geben Sie die ersten Buchstaben ein, und der Antrag wird in den übrigen Buchstaben ausgefüllt.
+Die Werteliste erscheint als Dropdown-Liste, aus der Sie den im Feld einzufügenden Wert auswählen können. Die Dropdown-Liste ermöglicht auch eine prädiktive Eingabe: Beim Eingeben der ersten Buchstaben füllt die Anwendung den Rest aus.
 
 Die Bestimmung der Werte für Auflistungsfelder und ihre Verwaltung (Hinzufügen/Löschen eines Werts) erfolgen über den Verzeichnisknoten **[!UICONTROL Administration > Plattform > Auflistungen]**.
 
-![Auflistungen aufrufen](assets/enumerations-menu.png)
+![Zugreifen auf Auflistungen](assets/enumerations-menu.png)
 
 ### Auflistungstypen {#types-of-enum}
 
-Auflistungen werden im **[!UICONTROL Administration > Plattform > Auflistungen]** Ordner des Explorer.
+Auflistungen werden im Ordner **[!UICONTROL Administration > Plattform > Auflistungen]** des Explorers gespeichert.
 
-Sie können: Öffnen, System, Emoticon oder geschlossen.
+Sie können von einem der folgenden Typen sein: Offen, System, Emoticon oder Geschlossen.
 
-* Ein **Öffnen** -Auflistung ermöglicht es Benutzern, neue Werte direkt in die auf dieser Auflistung basierenden Felder einzufügen.
-* A **Geschlossen** -Auflistung verfügt über eine feste Liste von Werten, die nur über die **[!UICONTROL Administration > Plattform > Auflistungen]** Ordner des Explorer.
-* Ein **Emoticon** -Auflistung wird verwendet, um die Emoticon-Liste zu aktualisieren. Weitere Informationen
-* A **System** -Auflistung ist mit Systemfeldern verknüpft und enthält einen internen Namen.
+* Eine Auflistung des Typs **Offen** ermöglicht es Benutzerinnen und Benutzern, neue Werte direkt in die auf dieser Auflistung basierenden Felder einzufügen.
+* Ein Auflistung des Typs **Geschlossen** verfügt über eine feste Liste von Werten, die nur über den Ordner **[!UICONTROL Administration > Plattform > Auflistungen]** des Explorers geändert werden kann.
+* Eine Auflistung des Typs **Emoticon** wird verwendet, um die Emoticon-Liste zu aktualisieren. Weitere Informationen
+* Eine Auflistung des Typs **System** ist mit Systemfeldern verknüpft und enthält einen internen Namen.
 
-Für **Öffnen** und **Geschlossen** Auflistungen, spezifische Optionen sind verfügbar:
+Für Auflistungen des Typs **Offen** und **Geschlossen** sind spezifische Optionen verfügbar:
 
 * **Einfache Auflistung** ist der Standardtyp.
-* **Alias-Verwaltung** -Auflistung wird verwendet, um die in der Datenbank gespeicherten Auflistungswerte zu harmonisieren. [Weitere Informationen](#alias-cleansing)
-* **Reserviert für Klassierung** ist eine Option, mit der Sie Cube-Werte mit dieser Auflistung verknüpfen können. [Weitere Informationen](../reporting/gs-cubes.md)
+* **Alias-Verwaltung** für die Auflistung wird verwendet, um die in der Datenbank gespeicherten Auflistungswerte zu harmonisieren. [Weitere Informationen](#alias-cleansing)
+* **Reserviert für Klassierung** ist eine Option, durch die Sie Cube-Werte mit dieser Auflistung verknüpfen können. [Weitere Informationen](../reporting/gs-cubes.md)
 
 
-### Alias-Verwaltung {#alias-cleansing}
+### Alias-Bereinigung {#alias-cleansing}
 
-In den Auflistungsfeldern können Sie einen Wert auswählen oder einen benutzerdefinierten Wert eingeben, der in der Dropdown-Liste nicht verfügbar ist. Benutzerdefinierte Werte können zu den vorhandenen Auflistungswerten hinzugefügt werden, als neuer - in diesem Fall der **[!UICONTROL Öffnen]** muss ausgewählt sein. Diese benutzerdefinierten Werte können mithilfe von Alias-Cleansing-Funktionen bereinigt werden. Wenn beispielsweise ein Benutzer `Adob` anstelle von `Adobe`, kann der Alias-Bereinigungsprozess automatisch durch den richtigen Begriff ersetzen.
+In den Auflistungsfeldern können Sie einen Wert auswählen oder einen benutzerdefinierten Wert eingeben, der in der Dropdown-Liste nicht verfügbar ist. Benutzerdefinierte Werte können zu den vorhandenen Auflistungswerten als neue Werte hinzugefügt werden – in diesem Fall muss die Option **[!UICONTROL Offen]** ausgewählt sein. Diese benutzerdefinierten Werte können mithilfe der Funktionen der Alias-Verwaltung bereinigt werden. Wenn beispielsweise eine Benutzerin oder ein Benutzer `Adob` anstelle von `Adobe` eingibt, kann der Vorgang der Alias-Verwaltung dies automatisch durch den richtigen Begriff ersetzen.
 
 >[!CAUTION]
 >
->Die Bereinigung von Daten ist ein kritischer Prozess, der auf die Daten in der Datenbank einwirkt. Adobe Campaign aktualisiert Daten gebündelt, was zur Löschung von gewissen Werten führen kann. Dieser Vorgang ist daher erfahrenen Benutzern vorbehalten.
+>Die Datenbereinigung ist ein kritischer Prozess, der sich auf die Daten in der Datenbank auswirkt. Adobe Campaign aktualisiert Daten gebündelt, was zur Löschung von gewissen Werten führen kann. Dieser Vorgang ist daher erfahrenen Benutzerinnen und Benutzern vorbehalten.
 
-Aktivieren Sie die **[!UICONTROL Alias-Verwaltung]** Option zur Verwendung von Datenbereinigungsfunktionen für eine Auflistung. Wenn diese Option ausgewählt ist, wird die **[!UICONTROL Alias]** wird unten im Fenster angezeigt.
+Aktivieren Sie die Option **[!UICONTROL Alias-Verwaltung]**, um Datenbereinigungsfunktionen für eine Auflistung zu verwenden. Wenn diese Option ausgewählt ist, wird unten im Fenster die Registerkarte **[!UICONTROL Alias]** angezeigt.
 
-Wenn ein Benutzer einen Wert eingibt, der nicht in einer Alias-Bereinigungs-Auflistung vorhanden ist, wird er zum **Werte** Liste. Sie können [Alias aus diesen Werten erstellen](#convert-to-alias)oder [Erstellen neuer Alias von Grund auf](#create-alias).
+Wenn ein Wert eingegeben wird, der nicht in der Auflistung einer Alias-Verwaltung vorhanden ist, wird er zur **Werte**-Liste hinzugefügt. Sie können [Aliase aus diesen Werten erstellen](#convert-to-alias) oder [neue Aliase von Grund auf erstellen](#create-alias).
 
-#### Alias erstellen{#create-alias}
+#### Erstellen eines Alias{#create-alias}
 
 Gehen Sie wie folgt vor, um einen Alias zu erstellen:
 
-1. Klicken **[!UICONTROL Hinzufügen]** Schaltfläche des **[!UICONTROL Alias]** Registerkarte.
-1. Geben Sie den zu konvertierenden Alias an und wählen Sie in der Dropdown-Liste den anzuwendenden Wert aus.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Alias]** die Schaltfläche **[!UICONTROL Hinzufügen]**.
+1. Geben Sie den Alias an, der konvertiert werden soll, und wählen Sie in der Dropdown-Liste den anzuwendenden Wert aus.
 
-   ![Neuen Alias erstellen](assets/new-alias.png)
+   ![Erstellen eines neuen Alias](assets/new-alias.png)
 
-1. Klicken **[!UICONTROL Ok]** und bestätigen Sie.
+1. Klicken Sie auf **[!UICONTROL OK]** und bestätigen Sie.
 
-1. Speichern Sie Ihre Änderungen. Die Ersetzung von Werten erfolgt durch die **Alias-Verwaltung** -Workflow, der jede Nacht ausgeführt wird. Weitere Informationen finden Sie unter [Datenbereinigung durchführen](#running-data-cleansing).
+1. Speichern Sie Ihre Änderungen. Die Ersetzung von Werten erfolgt durch den Worklow der **Alias-Verwaltung**, der jede Nacht ausgeführt wird. Weitere Informationen finden Sie unter [Datenbereinigung durchführen](#running-data-cleansing).
 
-Bei allen auf dieser Auflistung basierenden Feldern, wenn ein Benutzer den Wert eingibt **Adobe** in einem Feld &quot;Firma&quot;(in der Adobe Campaign-Konsole in einem Webformular) wird es automatisch durch den Wert ersetzt **Adobe**.
+Wenn der Wert **Adob** in einem Unternehmensfeld (in der Adobe Campaign-Konsole, in einem Web-Formular) eingegeben wird, wird er in allen Feldern, die auf dieser Auflistung basieren, automatisch durch den Wert **Adobe** ersetzt.
 
-#### Falsche Werte in Alias konvertieren{#convert-to-alias}
+#### Konvertieren eines falschen Werts in einen Alias{#convert-to-alias}
 
 Sie können auch einen vorhandenen Auflistungswert in einen Alias konvertieren. Um dies durchzuführen:
 
-1. Klicken Sie in der Liste der Werte einer Auflistung mit der rechten Maustaste darauf und navigieren Sie zu **[!UICONTROL Aktionen... > Werte in Alias konvertieren..]**.
+1. Klicken Sie mit der rechten Maustaste in der Werteliste einer Auflistung und navigieren Sie zu **[!UICONTROL Aktionen… > Werte in Alias konvertieren…]**.
 
-   ![Wert in Alias konvertieren](assets/convert-into-aliases.png)
+   ![Konvertieren eines Wertes in einen Alias](assets/convert-into-aliases.png)
 
-1. Wählen Sie die Werte aus, die in Alias konvertiert werden sollen, und klicken Sie auf **[!UICONTROL Nächste]**.
+1. Wählen Sie die Werte aus, die in Aliasse konvertiert werden sollen, und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Klicken Sie auf **[!UICONTROL Starten]**, um die Konvertierung zu starten.
 
-   Nach Abschluss der Ausführung werden die Aliase der Liste im **Alias** Registerkarte. Sie können einen korrekten Wert verknüpfen, um falsche Einträge zu ersetzen. Um dies durchzuführen:
+   Nach Abschluss der Ausführung werden die Aliasse auf der Registerkarte **Alias** der Liste hinzugefügt. Sie können einen korrekten Wert verknüpfen, um falsche Einträge zu ersetzen. Um dies durchzuführen:
 
 1. Wählen Sie einen zu bereinigenden Wert aus.
-1. Klicken Sie auf **Detail..** Schaltfläche.
+1. Klicken Sie auf die Schaltfläche **Detail…**.
 1. Wählen Sie den neuen Wert in der Dropdown-Liste aus.
 
-   ![Neuen Alias erstellen](assets/define-new-alias.png)
+   ![Erstellen eines neuen Alias](assets/define-new-alias.png)
 
 
 >[!NOTE]
 >
->Sie können die Vorkommen eines Alias im **[!UICONTROL Treffer]** in der Spalte **[!UICONTROL Alias]** Unterregisterkarte. Er zeigt an, wie oft dieser Wert eingegeben wurde.  [Weitere Informationen](#calculate-entry-occurrences).
+>Sie können die Anzahl von Eingaben eines Alias in der **[!UICONTROL Treffer]**-Spalte auf der Unterregisterkarte **[!UICONTROL Alias]** nachverfolgen. Sie zeigt an, wie oft dieser Wert eingegeben wurde.  [Weitere Informationen](#calculate-entry-occurrences).
 
-#### Datenbereinigung durchführen {#running-data-cleansing}
+#### Durchführen einer Datenbereinigung {#running-data-cleansing}
 
-Die Datenbereinigung wird von der **[!UICONTROL Alias-Verwaltung]** technischer Arbeitsablauf. Er wird standardmäßig täglich ausgeführt.
+Die Datenbereinigung wird vom technischen Workflow der **[!UICONTROL Alias-Verwaltung]** durchgeführt. Er wird standardmäßig täglich ausgeführt.
 
-Die Bereinigung kann auch über die **[!UICONTROL Werte bereinigen...]** Link.
+Die Datenbereinigung kann über den Link **[!UICONTROL Werte bereinigen…]** ausgelöst werden.
 
 Der Link **[!UICONTROL Erweiterte Parameter...]** ermöglicht die Festlegung des Datums, ab dem die gesammelten Werte berücksichtigt werden.
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um die Datenbereinigung zu beginnen.
 
-##### Vorkommen überwachen {#calculate-entry-occurrences}
+##### Überwachen der Eingabeanzahl {#calculate-entry-occurrences}
 
-Mit dem Untertab **[!UICONTROL Alias]** einer Auflistung kann die Anzahl der Erscheinungen eines Alias unter allen eingegebenen Werten angezeigt werden. Es handelt sich bei dieser Information um eine Schätzung. Sie wird in der Spalte **[!UICONTROL Treffer]** angezeigt.
+Mit der Unterregisterkarte **[!UICONTROL Alias]** einer Auflistung kann die Anzahl der Erscheinungen eines Alias unter allen eingegebenen Werten angezeigt werden. Es handelt sich bei dieser Information um eine Schätzung. Sie wird in der Spalte **[!UICONTROL Treffer]** angezeigt.
 
 >[!CAUTION]
 >
 >Die Berechnung der Alias-Eingabeanzahl kann lange dauern.
 
-Sie können die Trefferberechnung manuell über die **[!UICONTROL Werte bereinigen...]** Link. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Erweiterte Parameter...]** und wählen Sie die gewünschten Optionen aus.
+Sie können die Trefferberechnung manuell über den Link **[!UICONTROL Werte bereinigen…]** ausführen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Erweiterte Parameter…]** und wählen Sie die gewünschten Optionen aus.
 
 * **[!UICONTROL Anzahl der Alias-Erscheinungen aktualisieren]**: Ermöglicht es, die bereits berechneten Treffer ab dem angegebenen Berücksichtigungsdatum zu aktualisieren.
 * **[!UICONTROL Anzahl der Alias-Erscheinungen von Beginn an neu berechnen]**: Ermöglicht die Durchführung der Berechnung auf der gesamten Adobe-Campaign-Plattform.
