@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 093204ca69cc0925bc1be5581e518995b50b3fc1
+source-git-commit: 3bef6d2544a86bf1d5efa4868b82ec59c7e36484
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1018'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Gehen Sie wie folgt vor, um Ihre App mit Adobe Experience Platform Mobile SDKs e
 1. Richten Sie eine [mobile Tag-Eigenschaft](#launch-property) in der Adobe Experience Platform-Datenerfassung.
 1. Abrufen des Adobe Experience Platform Mobile SDK im Detail [auf dieser Seite](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
 1. (optional) Aktivieren Sie die Protokollierung und Lebenszyklusmetriken wie beschrieben. [auf dieser Seite](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}.
-1. (optional) Hinzufügen [Adobe Experience Platform Assurance für Ihre App](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} , um Ihre Implementierung zu validieren.
+1. (optional) Hinzufügen [Adobe Experience Platform Assurance für Ihre App](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} to validate your implementation. Learn how to implement Adobe Experience Platform Assurance extension [in this page](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
 1. Folgen [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} , um die Einrichtung mit Adobe Experience Platform Mobile SDKs in Ihrer App zu erhalten.
 1. Installieren und Konfigurieren [Adobe Campaign-Erweiterung](#configure-extension) in Ihrer mobilen Eigenschaft.
 1. Konfigurieren Sie Ihre iOS- und Android-Mobile-Dienste in Adobe Campaign wie beschrieben. [auf dieser Seite](../send/push.md#push-config).
