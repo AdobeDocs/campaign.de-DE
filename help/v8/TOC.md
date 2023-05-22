@@ -5,9 +5,9 @@ title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
 source-git-commit: e3ea361cc486096fe6c19ac469e8a71b636371ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '543'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -150,9 +150,9 @@ ht-degree: 99%
    + Architektur {#architecture}
       + [Allgemeine Prinzipien](architecture/general-architecture.md)
       + [Architektur](architecture/architecture.md)
-      + FDA-Snowflake-Implementierung {#fda}
+      + FDA-Snowflake-Bereitstellung {#fda}
          + [Was ist FDA-Snowflake?](architecture/fda-deployment.md)
-      + FFDA-Implementierung in Unternehmen {#ffda}
+      + FFDA-Bereitstellung in Unternehmen {#ffda}
          + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
          + Merkmale {#ffda-characteristics}
             + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
