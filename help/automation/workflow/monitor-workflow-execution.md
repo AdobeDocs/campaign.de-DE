@@ -5,9 +5,9 @@ description: Überwachen der Workflow-Ausführung
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2014'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Dieser Abschnitt enthält Informationen zur Überwachung der Ausführung Ihrer W
 
 Ein Anwendungsbeispiel zum Erstellen eines Workflows, mit dem Sie den Status einer Reihe von Workflows überwachen können, die „ausgesetzt“, „angehalten“ oder „Mit Fehlern“ sind, finden Sie zudem in [diesem Abschnitt](workflow-supervision.md#supervising-workflows).
 
-Darüber hinaus können Administratoren der Instanz das **Audit-Protokoll** verwenden, um Aktivitäten und letzte Änderungen an Workflows und somit den Zustand Ihrer Workflows zu überprüfen. Weitere Informationen zum Audit-Protokoll finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html#accessing-audit-trail){target="_blank"}.
+Darüber hinaus können Administratoren der Instanz das **Audit-Protokoll** verwenden, um Aktivitäten und letzte Änderungen an Workflows und somit den Zustand Ihrer Workflows zu überprüfen. Weitere Informationen zum Audit-Protokoll finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=de#accessing-audit-trail){target="_blank"}.
 
 ## Fortschritt anzeigen {#displaying-progress}
 
