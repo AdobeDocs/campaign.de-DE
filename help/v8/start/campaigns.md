@@ -4,11 +4,11 @@ description: Erste Schritte mit Kampagnen
 feature: Audiences
 role: User
 level: Beginner
-exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: tm+mt
+exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
+source-git-commit: 2e597990aafb57631aa228464e4818782524e65e
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    Adobe Campaign ermöglicht den Einsatz von partizipativen Validierungsprozessen für die wichtigsten Etappen einer Marketing-Kampagne. Für jede Kampagne können Sie die Versandzielgruppe, den Inhalt und die Kosten validieren. Die für die Validierung zuständigen Adobe Campaign-Benutzer können per E-Mail benachrichtigt werden und eine Validierung über die Konsole oder eine Internet-Verbindung annehmen oder ablehnen.
 
-   Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#campaign-orchestration) erfahren Sie, wie Sie Validierungen einrichten und verwalten können.
+   Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=de#campaign-orchestration) erfahren Sie, wie Sie Validierungen einrichten und verwalten können.
 
 
 ## Add-on für dezentrales Marketing{#distributed-marketing-add-on}
@@ -109,5 +109,4 @@ Adobe Campaign bietet ein Add-on zur **Reaktionsverwaltung** (Response Manager),
 >
 >Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie in [diesem Abschnitt](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 
-[](../assets/do-not-localize/book.png) Erfahren Sie, wie Sie Campaign Response Manager konfigurieren und verwenden in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=de){target="_blank"}
-
+[](../assets/do-not-localize/book.png) Erfahren Sie mehr über die Konfiguration und Verwendung des Campaign Response Managers in der [Dokumentation zu Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=de){target="_blank"}
