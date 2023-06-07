@@ -3,16 +3,16 @@ title: Integrierte Berichte in Adobe Campaign
 description: Integrierte Berichte
 feature: Reporting
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Integrierte Berichte in Adobe Campaign{#ootb-reports}
 
-Auf dieser Seite finden Sie eine Liste der in Adobe Campaign integrierten Berichte, ihren Inhalt und den Kontext dieser Berichte. Adobe Campaign bietet eine Reihe integrierter Berichte, auf die über die Client-Konsole oder einen Internet-Browser zugegriffen werden kann.
+Auf dieser Seite finden Sie eine Liste der in Adobe Campaign integrierten Berichte, ihren Inhalt und den Kontext dieser Berichte. Adobe Campaign bietet eine Reihe integrierter Berichte, auf die über die Client-Konsole oder einen Internetbrowser zugegriffen werden kann.
 
 Folgende Berichttypen stehen zur Verfügung:
 
@@ -55,7 +55,7 @@ Der Zugriff auf Berichte über Listen, Dienste, Angebote etc. erfolgt auf die gl
 
 ## Versandberichte {#reports-on-deliveries}
 
-Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
+Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
 Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschnitt](delivery-reports.md).
 

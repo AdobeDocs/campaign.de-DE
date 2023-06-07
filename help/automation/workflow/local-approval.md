@@ -4,10 +4,10 @@ title: Lokale Validierung
 description: Lokale Validierung
 feature: Workflows
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 100%
+source-wordcount: '702'
+ht-degree: 93%
 
 ---
 
@@ -81,13 +81,13 @@ Folgende Angaben sind erforderlich:
 
 Dieses Beispiel zeigt, wie Sie einen Validierungsprozess für einen Workflow-Versand einrichten. Weitere Informationen zum Erstellen von Versand-Workflows finden Sie im Abschnitt [Beispiel: Versand-Workflow](delivery.md#example--delivery-workflow).
 
-Dem Benutzer bieten sich zwei verschiedene Möglichkeiten, um einen Versand zu validieren. Dies kann entweder per Webzugriff unter Verwendung des in der Benachrichtigung enthaltenen Links oder direkt in der Clientkonsole geschehen.
+Ein Benutzer kann einen Versand auf zwei Arten validieren: über die in der E-Mail-Nachricht verlinkte Webseite oder die Client-Konsole.
 
 * Validierung über Webzugriff
 
    Die an die zuvor gewählte Benutzergruppe gesandte Benachrichtigung ermöglicht die Validierung der Versandzielgruppe. Die Benachrichtigung enthält den in der Vorlage definierten Text, wobei der JavaScript-Ausdruck durch den berechneten Wert (hier &#39;574&#39;) ersetzt wird.
 
-   Klicken Sie zur Validierung auf den entsprechenden Link in der Benachrichtigung und verbinden Sie sich mit der Adobe-Campaign-Konsole.
+   Klicken Sie zur Validierung des Versands auf den entsprechenden Link und melden Sie sich bei der Adobe Campaign Client Console an.
 
    ![](assets/new-workflow-valid-webaccess.png)
 
@@ -95,7 +95,7 @@ Dem Benutzer bieten sich zwei verschiedene Möglichkeiten, um einen Versand zu v
 
    ![](assets/new-workflow-valid-webaccess-confirm.png)
 
-* Validierung in der Clientkonsole
+* Validierung über die Client-Konsole
 
    Im Navigationsbaum enthält der Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Ausstehende Validierungen]** die Liste der vom aktuellen Benutzer zu validierenden Aufgaben. Doppelklicken Sie auf die entsprechende Zeile, um die Validierung vorzunehmen.
 

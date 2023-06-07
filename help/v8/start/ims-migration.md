@@ -3,7 +3,7 @@ title: Migration technischer Benutzer zu einem technischen Konto in der Entwickl
 description: Migration technischer Benutzer zu einem technischen Konto in der Entwicklerkonsole
 hide: true
 hidefromtoc: true
-source-git-commit: 1f9efc0744792c1173e77965ff81eaee0ed2c618
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Sie können jetzt Ihr Campaign-Produktprofil zum Projekt hinzufügen, wie unten 
 1. Weisen Sie alle relevanten Produktprofile der API zu, z. B. &quot;messagecenter&quot;, und speichern Sie Ihre Änderungen.
 1. Navigieren Sie zum **Details zu Berechtigungen** und kopieren Sie die **Email für technische Konten** -Wert.
 
-### Schritt 4: Aktualisieren des technischen Benutzers in der Clientkonsole {#ims-migration-step-4}
+### Schritt 4: Aktualisieren des technischen Benutzers in der Client-Konsole {#ims-migration-step-4}
 
 Der letzte Schritt besteht darin, den technischen Operator in der Adobe Campaign Client Console zu aktualisieren.
 

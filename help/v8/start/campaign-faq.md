@@ -4,11 +4,11 @@ description: Erhalten Sie Antworten auf häufig gestellte Fragen zu Adobe Campai
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
-exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -68,7 +68,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
 1. **Wo kann ich Campaign herunterladen?**
 
-   Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download Center abrufen.
+   Sie können das Installationsprogramm und die Client Console vom Adobe Download Center abrufen.
 
    Als Admin-Benutzer können Sie auf die Adobe zugreifen [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) {target="_blank"} , um Adobe Campaign herunterzuladen.
 

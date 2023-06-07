@@ -5,10 +5,10 @@ feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+workflow-type: tm+mt
 source-wordcount: '1401'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -180,13 +180,13 @@ Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mi
    <attribute name="email" type="string" length="80" label="Email"/>
    ```
 
-   Das Label wird vom Formular der Adobe Campaign-Client-Konsole aus angezeigt:
+   Der Titel wird im Eingabeformular der Adobe Campaign Client Console angezeigt:
 
    ![](assets/schema_label.png)
 
 * Mit der Eigenschaft **desc** können Sie eine lange Beschreibung eingeben.
 
-   Die Beschreibung ist vom Formular aus in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole zu finden.
+   Die Beschreibung wird im Formular in der Statusleiste des Hauptfensters der Adobe Campaign Client Console angezeigt.
 
    >[!NOTE]
    >
@@ -213,7 +213,7 @@ Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weiterführen
 
    >[!NOTE]
    >
-   >In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Zähler]** verwendet, um Zähler zu verwalten.
+   >In der Adobe Campaign Client Console wird die **[!UICONTROL Administration > Zähler]** -Knoten wird zum Verwalten von Zählern verwendet.
 
 Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die Variable `<default>  or  <sqldefault>   field.  </sqldefault> </default>` verwenden.
 
@@ -237,7 +237,7 @@ Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 
 >[!NOTE]
 >
->In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Auflistungen]** zum Verwalten von Auflistungen verwendet.
+>In der Adobe Campaign Client Console wird die **[!UICONTROL Administration > Auflistungen]** -Knoten wird zur Verwaltung von Auflistungen verwendet.
 
 #### Auflistung festlegen {#set-enumeration}
 
@@ -361,7 +361,7 @@ Es ist auch möglich, komplexe Ausdrücke wie die folgenden arithmetischen Opera
 
 Die Ausdrücke wurden um Funktionen auf hoher Ebene erweitert, um das Potenzial dieser Sprache zu erweitern.
 
-In der Adobe Campaign-Client-Konsole können Sie über einen beliebigen Ausdruckseditor auf die Liste der verfügbaren Funktionen zugreifen:
+Sie können über einen beliebigen Ausdruckseditor in der Adobe Campaign Client Console auf die Liste der verfügbaren Funktionen zugreifen:
 
 ![](assets/schema_function.png)
 

@@ -4,11 +4,11 @@ description: Erfahren Sie, welche Systeme und Versionen mit Campaign v8 kompatib
 feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
-exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 61222c2b05f1346bd2560ff17b225153edf9e91e
-workflow-type: ht
+exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -76,7 +76,7 @@ Die folgenden Browser sind mit Campaign für den [Web-Zugriff](connect.md#web-ac
 
 Sie erhalten folgende Informationen:
 
-* **Versionsnummer** der Client-Konsole und des Anwendungs-Servers. Im obigen Beispiel wird Version 8.1.5 der Client-Konsole und des Anwendungs-Servers verwendet.
+* Die **version** Nummer der Clientkonsole und des Anwendungsservers. Im obigen Beispiel ist die Version 8.1.5 sowohl für die Client-Konsole als auch für den Anwendungsserver.
 * Die SHA-Nummer zwischen Klammern
 * Link zur Adobe-Kundenunterstützung
 * Links zur Adobe-Datenschutzrichtlinie sowie zu Nutzungsbedingungen und Bestimmungen zu Cookies.

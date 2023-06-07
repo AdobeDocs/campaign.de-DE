@@ -6,10 +6,10 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner, Intermediate, Experienced
 exl-id: fefb6d80-c3d1-448b-82ab-648da58a0ba4
-source-git-commit: 666dbdac8330cae17693142cf45cc3d3d2d187a9
-workflow-type: ht
-source-wordcount: '1945'
-ht-degree: 100%
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+workflow-type: tm+mt
+source-wordcount: '1946'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Auf [dieser Seite](../audiences/folders-and-views.md) erfahren Sie, wie Sie Ordn
 
 ## Verwalten und Anpassen von Listen{#customize-lists}
 
-In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Datensätze zählen und Ihre Einstellungen speichern und freigeben.
+In der Campaign Client Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Datensätze zählen und Ihre Einstellungen speichern und freigeben.
 
 Darüber hinaus können Sie Filter erstellen und speichern.  Weitere Informationen über Filter finden Sie auf [dieser Seite](../audiences/create-filters.md).
 
@@ -211,7 +211,7 @@ Gehen Sie wie folgt vor, um einen Alias zu erstellen:
 
 1. Speichern Sie Ihre Änderungen. Die Ersetzung von Werten erfolgt durch den Worklow der **Alias-Verwaltung**, der jede Nacht ausgeführt wird. Weitere Informationen finden Sie unter [Datenbereinigung durchführen](#running-data-cleansing).
 
-Wenn der Wert **Adob** in einem Unternehmensfeld (in der Adobe Campaign-Konsole, in einem Web-Formular) eingegeben wird, wird er in allen Feldern, die auf dieser Auflistung basieren, automatisch durch den Wert **Adobe** ersetzt.
+Bei allen auf dieser Auflistung basierenden Feldern, wenn ein Benutzer den Wert eingibt **Adobe** in einem Feld &quot;Firma&quot;(in der Adobe Campaign Client Console in einem Webformular) automatisch durch den Wert ersetzt **Adobe**.
 
 #### Konvertieren eines falschen Werts in einen Alias{#convert-to-alias}
 

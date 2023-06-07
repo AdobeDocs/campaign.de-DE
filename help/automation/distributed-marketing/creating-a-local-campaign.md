@@ -4,10 +4,10 @@ title: Erstellen einer lokalen Kampagne
 description: Erstellen einer lokalen Kampagne
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 7e5ffbec959785971280c394c416cebe83590897
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 96%
 
 ---
 
@@ -295,9 +295,9 @@ Wenn eine Lokalstelle eine Kampagne bestellt hat, werden die validierungsverantw
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Validierung über die Adobe Campaign-Konsole {#approving-via-the-adobe-campaign-console}
+#### Validierung über die Client-Konsole {#approving-via-the-adobe-campaign-console}
 
-Die Bestellungsvalidierung kann auch in die Konsole über die Übersicht der Kampagnenbestellungen erfolgen. Um eine Bestellung zu validieren, wählen Sie diese aus und klicken Sie auf die Schaltfläche **[!UICONTROL Anmeldung validieren]**.
+Die Bestellung kann auch über die Client-Konsole in der Übersicht der Kampagnenbestellungen validiert werden. Um eine Bestellung zu validieren, wählen Sie sie aus und klicken Sie auf **[!UICONTROL Bestellung validieren]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -321,7 +321,7 @@ Ein validierungsverantwortlicher Benutzer kann die Validierung eines Kampagnenki
 
 Wenn der validierungsverantwortliche Benutzer eine Bestellung ablehnt, werden die betroffenen Lokalstellen hiervon automatisch per E-Mail benachrichtigt. Die E-Mail enthält gegebenenfalls einen Kommentar des Validierers.
 
-Die Ablehnung wird in der Liste der Kampagnenkits oder der Kampagnenbestellungen angezeigt. Für Lokalstellen mit Zugriff auf die Adobe-Campaign-Konsole ist dies eine weitere Möglichkeit, über Ablehnungen informiert zu werden.
+Informationen werden auf der Kampagnenkit-Seite oder auf der Kampagnenbestellseite angezeigt. Wenn sie Zugriff auf die Adobe Campaign Client Console haben, werden die Lokalstellen über diese Ablehnung informiert.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

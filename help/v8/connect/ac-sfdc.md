@@ -5,10 +5,10 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate, Experienced
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: ht
-source-wordcount: '379'
-ht-degree: 100%
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 95%
 
 ---
 
@@ -46,7 +46,7 @@ Zunächst müssen Sie das externe Salesforce-Konto erstellen.
 
 >[!NOTE]
 >
->Zur Übernahme der Konfiguration müssen Sie sich von der Konsole ab- und wieder anmelden.
+>Um das Setup zu genehmigen, müssen Sie sich bei der Adobe Campaign Client Console abmelden und wieder anmelden.
 
 ## Auswahl der zu synchronisierenden Tabellen{#sfdc-create-tables}
 

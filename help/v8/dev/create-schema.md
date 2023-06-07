@@ -5,16 +5,16 @@ feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # Erstellen eines neuen Schemas{#create-new-schema}
 
-Um Schemata zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie in der Client-Konsole von Adobe Campaign auf den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]**.
+Um die Schemata zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie auf das **[!UICONTROL Administration > Konfiguration > Datenschemata]** -Knoten der Adobe Campaign Client Console.
 
 >[!NOTE]
 >

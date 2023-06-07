@@ -4,22 +4,20 @@ title: Veröffentlichen des Kampagnenkits
 description: Veröffentlichen des Kampagnenkits
 feature: Distributed Marketing
 exl-id: 2cd1981d-f192-41dc-b2f2-4fcd60493079
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 100%
+source-wordcount: '478'
+ht-degree: 80%
 
 ---
 
 # Veröffentlichen des Kampagnenkits{#publishing-the-campaign-package}
 
-
-
 Die Benutzer der Zentralstelle veröffentlichen in der **[!UICONTROL Kampagnenkit-Liste]** die Kits, die den Lokalstellen zur Verfügung gestellt werden sollen.
 
 Vor der Veröffentlichung in der Liste der Kampagnenkits müssen diese von der Zentralstelle validiert werden. Sie haben die Möglichkeit, hierzu einen einzelnen oder eine Gruppe von Validierern über den Link **[!UICONTROL Validierungsparameter...]** des Kampagnenkits festzulegen.
 
-## Validierenden Benutzer bestimmen {#assigning-a-reviewer}
+## Validierer zuweisen {#assigning-a-reviewer}
 
 Um den Validierer anzugeben, klicken Sie auf den Link **[!UICONTROL Validierungsparameter...]** des Kampagnenkits und wählen Sie den jeweiligen Benutzer in der Dropdown-Liste aus.
 
@@ -37,25 +35,25 @@ Der validierungsverantwortliche Benutzer erhält daraufhin eine Benachrichtigung
 >
 >Auf Organisationseinheitsebene können Sie auch validierende Benutzer angeben, um Bestellungen zu validieren. Weitere Informationen hierzu finden Sie unter [Organisationseinheiten](about-distributed-marketing.md#organizational-entities).
 
-## Weitere validierende Benutzer hinzufügen {#adding-other-reviewers}
+## Andere Validierungsverantwortliche hinzufügen {#adding-other-reviewers}
 
 Über den Link **[!UICONTROL Bearbeiten...]** im Tab **[!UICONTROL Validierungsparameter...]** des Kampagnenkits können weitere validierungsverantwortliche Benutzer hinzugefügt werden.
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
-## Validierungszeitraum {#approval-periods}
+## Genehmigungs-Timeline {#approval-periods}
 
 Wenn nicht anders angegeben, muss die Validierung innerhalb von drei Tagen ab dem Unterbreitungsdatum erfolgen.
 
 Im unteren Abschnitt des Bearbeitungsfensters der Validierer können Sie Erinnerungen konfigurieren, die bei einer ausstehenden Validierung eines Kits an die Validierungsverantwortlichen geschickt werden. Klicken Sie hierzu auf den Link **[!UICONTROL Erinnerung hinzufügen]** und anschließend auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
-Die Erinnerung kann zu einem gegebenen Datum und/oder **x** Tage vor der Validierungs-Deadline verschickt werden. Der Erinnerungstyp wird in der ersten Spalte der Tabelle ausgewählt. Im unten stehenden Beispiel erhalten die Validierungsverantwortlichen eine Erinnerungsnachricht einen Tag vor Ablauf der Validierungsfrist, also zwei Tage nach dem Unterbreitungsdatum, und eine zweite Erinnerung am 29.1.2014, also zwei Tage vor dem in der Spalte **[!UICONTROL Datum]** ausgewählten Datum.
+Erinnerungen können entweder an einem bestimmten Datum und/oder **x** Tage nach dem Übermittlungsdatum. Die Art der Erinnerung kann in der ersten Spalte der Erinnerungstabelle konfiguriert werden. Im folgenden Beispiel erhalten die validierungsverantwortlichen Benutzer am 11.01.2023 eine Erinnerungsnachricht (d. h. zwei Tage vor dem in der Variablen **[!UICONTROL Datum]** und eine zweite Erinnerung einen Tag vor Ablauf des Validierungszeitraums, d. h. zwei Tage nach dem Datum der Übermittlung zur Genehmigung.
 
 ![](assets/s_advuser_mkg_dist_reminder_planning.png)
 
 Wenn die Planung festgelegt und das Kit zur Validierung unterbreitet wurde, wird die Vorgangsplanung im Tab **[!UICONTROL Verfolgung]** angezeigt. Er gibt die auf der vorangehenden Konfiguration basierend berechnete Bearbeitungs-Deadline sowie die Daten der konfigurierten Erinnerungen an.
 
-## Validierung über die Adobe Campaign-Konsole {#approving-via-the-adobe-campaign-console}
+## Validierung über die Client-Konsole {#approving-via-the-adobe-campaign-console}
 
 Wenn kein Validierungsverantwortlicher bestimmt wurde oder keiner der benachrichtigten Benutzer das Kit validiert hat, kann die Validierung direkt über die Schaltfläche **[!UICONTROL Kampagnenkit validieren]** des **[!UICONTROL Dashboards]** des Kampagnenkits oder über die Übersicht der Kits erfolgen.
 

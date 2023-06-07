@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1845'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Um die Sicherheit zu optimieren, wurden Sicherheits-Token aus den von Campaign g
 
 **Verbesserungen**
 
-* Nach dem Auslaufen von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine in der Konsole nun **Microsoft Edge Chromium**. Außerdem ist die Installation der **Microsoft Edge WebView 2**-Laufzeitumgebung jetzt für jede Client-Konsolen-Installation erforderlich.
+* Nach dem Auslaufen von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine in der Konsole nun **Microsoft Edge Chromium**. Zusätzlich wird die Installation von **Microsoft Edge WebView 2** -Laufzeitumgebung ist jetzt für jede Client Console-Installation erforderlich.
 * Die Ausführung des Workflows wurde durch Workflow-Hochverfügbarkeit verbessert, sodass Sie Workflows gleichzeitig in verschiedenen Containern ausführen können, um den Verlust des Workflow-Service zu verhindern und damit verbundene Ausführungsfehler zu vermeiden. **Hinweis**: Diese neue Funktion steht nur einer begrenzten Anzahl von Kunden zur Verfügung.
 * Datenschutzanfragen werden jetzt im Batch-Modus für einen bestimmten Datenschutz-Namespace ausgeführt. Durch diese Verbesserung wird die Ausführungszeit für DSGVO-/Datenschutz-Löschanfragen verkürzt.
 
@@ -238,7 +238,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 * Fehlerkorrektur: Bei der Verwendung von Testadressen und Kontrollgruppen im selben wiederkehrenden Versand tritt jetzt kein Fehler mehr auf. (NEO-41197)
 * Fehlerkorrektur: Bei FFDA wird der E-Mail-Versand für alle Empfänger, die zum selben deliveryPart gehören, während des Sendevorgangs (bis zu 256) nicht mehr blockiert, wenn Personalisierungsblöcke eines der folgenden Zeichen enthalten: `' & < > "`. Diese Zeichen werden jetzt in Personalisierungsblöcken unterstützt (Beispiel: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
 * Fehlerkorrektur: Jetzt schlägt der Tracking-Workflow bei der Verwendung eines benutzerdefinierten Schemas als Zielgruppen-Mapping nicht mehr fehl. Beim Generieren des broadLog-Schemas über den Zielgruppen-Mapping-Assistenten stellen wir nun sicher, dass der Typ des Fremdlinks zu einem benutzerdefinierten Zielgruppenschema korrekt ist. (NEO-43506)
-* Fehlerkorrektur: Die FFDA-Implementierungs-Workflows schlagen jetzt in anderen Sprachen als Englisch nicht mehr fehl. (NEO-44561)
+* Fehlerkorrektur: Die FFDA-Bereitstellungs-Workflows schlagen jetzt in anderen Sprachen als Englisch nicht mehr fehl. (NEO-44561)
 
 ## Version 8.2.10 {#release-8-2-10}
 

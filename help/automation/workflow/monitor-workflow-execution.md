@@ -4,10 +4,10 @@ title: Überwachen der Workflow-Ausführung
 description: Überwachen der Workflow-Ausführung
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
-source-wordcount: '2014'
-ht-degree: 100%
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+workflow-type: tm+mt
+source-wordcount: '2015'
+ht-degree: 98%
 
 ---
 
@@ -121,7 +121,7 @@ Beispiel einer Benachrichtigung:
 
 ![](assets/wf-notification_error-msg.png)
 
-Über den enthaltenen Link wird der Benutzer direkt per Webzugriff auf die Adobe-Campaign-Konsole weitergeleitet. Nach Anmeldung kann er dann den fehlgeschlagenen Workflow bearbeiten.
+Über den Link können Sie im Webmodus auf die Adobe Campaign Client Console zugreifen und den Fehler-Workflow bearbeiten, sobald Sie sich angemeldet haben.
 
 ![](assets/wf-notification_error-console.png)
 
