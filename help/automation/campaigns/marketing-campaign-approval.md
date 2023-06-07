@@ -4,10 +4,10 @@ title: Einrichten und Verwalten des Genehmigungsprozesses
 description: Erfahren Sie, wie Sie Genehmigungen von Marketing-Kampagnen verwalten.
 feature: Approvals, Campaigns
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 382f0b1c4ee014f6ae5d62eaf93f5ae8c72c06b1
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 100%
+source-wordcount: '2443'
+ht-degree: 92%
 
 ---
 
@@ -89,7 +89,7 @@ Wenn eine Liste von Validierungsverantwortlichen definiert ist, ist ein Vorgang 
 
 ## Prüfen und Validieren von Sendungen {#review-and-approve-deliveries}
 
-Für jede Kampagne können Sie die Zielgruppe eines Versands, [die Inhalte des Versands](#approving-content) und seine Kosten validieren lassen. Die für die Validierung zuständigen Adobe Campaign-Benutzer können per E-Mail benachrichtigt werden und eine Validierung über die Konsole oder eine Web-Schnittstelle annehmen oder ablehnen. [Weitere Informationen](#approving-processes).
+Für jede Kampagne können Sie die Zielgruppe eines Versands, [die Inhalte des Versands](#approving-content) und seine Kosten validieren lassen. Adobe Campaign-Benutzer, die für die Validierung verantwortlich sind, können per E-Mail benachrichtigt werden und die Validierung über die Clientkonsole oder eine Webverbindung akzeptieren oder ablehnen. [Weitere Informationen](#approving-processes).
 
 Bei Briefpost-Versand können Adobe Campaign-Benutzer die Extraktionsdatei vor der Übermittlung an den Router einsehen. Bei Bedarf haben sie die Möglichkeit, das Format zu verändern und die Extraktion erneut zu starten. [Weitere Informationen](#approve-an-extraction-file).
 
@@ -101,7 +101,7 @@ Sobald diese Validierungsphasen beendet sind, kann der Versand gestartet werden.
 
 ### Schritte zur Validierung eines Versands {#approving-processes}
 
-Die Phasen, für die eine Validierung erforderlich ist, werden im Kampagnen-Dashboard (über die Konsole oder die Web-Schnittstelle) angezeigt. Sie werden auch in der Versandverfolgungstabelle und im Versand-Dashboard angezeigt.
+Die Phasen, für die eine Validierung erforderlich ist, werden im Dashboard der Kampagne angezeigt (über die Clientkonsole oder die Web-Oberfläche). Sie werden auch in der Versandverfolgungstabelle und im Versand-Dashboard angezeigt.
 
 ![](assets/delivery-approval-actions.png)
 
@@ -163,7 +163,7 @@ Es ist möglich, einen Validierungszyklus für Inhalte zu konfigurieren. Wählen
 
    * über die Benachrichtigungs-E-Mail: Die Benachrichtigungs-E-Mail enthält einen Link zu den bereits erfolgten Testsendungen und möglicherweise zu einer Darstellung der Nachricht für die verschiedenen Webmails, sofern das Add-on **Zustellbarkeit** für diese Instanz aktiviert ist.
 
-   * über die Konsole oder die Web-Schnittstelle, in der Versandverfolgung oder dem Kampagnen- oder Versand-Dashboard. Im Kampagnen-Dashboard kann die Liste der durchgeführten Testsendungen durch Öffnen des Links **[!UICONTROL Inbox Rendering...]** angezeigt werden. Klicken Sie auf das Symbol **[!UICONTROL Details]** rechts von der Liste, um ihren Inhalt anzuzeigen.
+   * über die Clientkonsole oder die Webschnittstelle, das Versand-Tracking, das Versand-Dashboard oder das Kampagnen-Dashboard. Im Kampagnen-Dashboard kann die Liste der durchgeführten Testsendungen durch Öffnen des Links **[!UICONTROL Inbox Rendering...]** angezeigt werden. Klicken Sie auf das Symbol **[!UICONTROL Details]** rechts von der Liste, um ihren Inhalt anzuzeigen.
 
 1. Der Kampagnenverantwortliche wird per E-Mail darüber benachrichtigt, ob der Inhalt validiert wurde oder nicht. Der Kampagnenverantwortliche kann zu jedem Zeitpunkt den Zyklus der Inhaltsvaldierung neu starten. Öffnen Sie hierzu den Link oberhalb der Zeile **[!UICONTROL Inhaltsstatus]** im Kampagnen-Dashboard (auf Ebene des Versands) und klicken Sie auf **[!UICONTROL Inhaltsvalidierung zurücksetzen, um sie erneut durchzuführen]**.
 
@@ -175,7 +175,7 @@ Diese Option ermöglicht die Bestimmung eines Verantwortlichen für die Inhaltsb
 
 1. Der Verantwortliche der Inhaltsbearbeitung erhält daraufhin eine E-Mail, die ihn über die Inhaltsfreigabe informiert.
 
-1. Er kann sich dann mit der Konsole verbinden, um den Versand zu öffnen und diesen mittels eines vereinfachten Assistenten zu bearbeiten, der die Änderung des Betreffs, der HTML- und Textinhalte sowie die Durchführung von Testsendungen ermöglicht.
+1. Sie können sich dann bei der Client Console anmelden, den Versand öffnen und ihn mithilfe eines vereinfachten Assistenten bearbeiten, um den Betreff, die HTML und den Textinhalt zu ändern und Testsendungen durchzuführen.
 
    >[!NOTE]
    >
@@ -185,7 +185,7 @@ Diese Option ermöglicht die Bestimmung eines Verantwortlichen für die Inhaltsb
 
    Hierfür gibt es folgende Möglichkeiten:
 
-   * den Link **[!UICONTROL Verfügbare Inhalte]** in der Adobe Campaign-Konsole.
+   * die **[!UICONTROL Verfügbare Inhalte]** in der Adobe Campaign Client-Konsole.
    * den Link in der Benachrichtigung.
 Der Benutzer kann der Validierung einen Kommentar hinzufügen, bevor er den Inhalt dem Kampagnenverantwortlichen unterbreitet.
 Über die Benachrichtigungs-E-Mail kann der Kampagnenverantwortliche den ihm unterbreiteten Inhalt akzeptieren oder ablehnen.
@@ -197,7 +197,7 @@ Diese Option ermöglicht die Bestimmung eines externen Inhaltsverantwortlichen, 
 1. Der externe Inhaltsverantwortliche wird per E-Mail benachrichtigt, sobald der Inhalt intern validiert wurde und die externe Validierung erfolgen muss.
 1. Die Benachrichtigungs-E-Mail enthält Links zu den Testsendungen, die der Überprüfung der Darstellung des Versandinhalts dienen, und eine Schaltfläche, über die der Versandinhalt validiert oder abgelehnt werden kann.
 
-Diese Links sind nur verfügbar, wenn eine oder mehrere Testsendungen durchgeführt wurden. Die Darstellung des Versandinhalts kann andernfalls nur über die Konsole oder die Webschnittstelle überprüft werden.
+Diese Links sind nur verfügbar, wenn eine oder mehrere Testsendungen durchgeführt wurden. Andernfalls ist das Versand-Rendering nur über die Client-Konsole oder die Web-Oberfläche verfügbar.
 
 ### Validieren einer Extraktionsdatei {#approve-an-extraction-file}
 
@@ -217,7 +217,7 @@ Vorgänge können im Kampagnen-Dashboard, in der Registerkarte zum Versand-Track
 
 ### Im Dashboard validieren {#approval-via-the-dashboard}
 
-Klicken Sie auf den entsprechenden Link im Kampagnen-Dashboard, um einen Vorgang über die Konsole oder die Web-Schnittstelle zu validieren.
+Um einen Auftrag über die Clientkonsole oder die Web-Oberfläche zu validieren, klicken Sie auf den entsprechenden Link im Kampagnen-Dashboard.
 
 Beispielsweise nach Ausführung der Versandanalyse:
 
@@ -305,7 +305,7 @@ Der Inhalt der E-Mail-Benachrichtigungen kann angepasst werden. Siehe [Inhalt de
 
 ### Aktivieren/Deaktivieren von Benachrichtigungen {#enabling-disabling-notification}
 
-Benachrichtigungs-E-Mails werden automatisch versendet, wenn die Validierung des entsprechenden Vorgangs in der Kampagnenvorlage, der Kampagne selbst oder dem betreffenden Versand aktiviert wurde. Die Benachrichtigungen können jedoch auch deaktiviert werden, um nur Validierungen über die Konsole zu erlauben.
+Standardmäßig werden Benachrichtigungen gesendet, wenn die Validierung des entsprechenden Vorgangs in der Kampagnenvorlage, der Kampagne oder dem Versand aktiviert ist. Benachrichtigungen können jedoch deaktiviert werden, um nur Validierungen von der Client-Konsole zu genehmigen.
 
 Öffnen Sie hierzu das Fenster der Validierungseinstellungen der Kampagne oder der betreffenden Kampagnenvorlage (Registerkarte **[!UICONTROL Bearbeiten > Eigenschaften]** > **[!UICONTROL Erweiterte Kampagnenparameter...]** > **[!UICONTROL Validierungen]**) und wählen Sie **[!UICONTROL Keine Benachrichtigungen senden]**.
 
