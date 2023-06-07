@@ -3,14 +3,14 @@ title: Migration technischer Benutzer zu einem technischen Konto in der Entwickl
 description: Migration technischer Benutzer zu einem technischen Konto in der Entwicklerkonsole
 hide: true
 hidefromtoc: true
-source-git-commit: 7b4942b5334826adf27c8a31dbdb9a5bfb5d50eb
+source-git-commit: 8842404511bd6166d920ebdeee942007b33a1bab
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
 
-# Migration technischer Benutzer zu einem technischen Konto in der Entwicklerkonsole {#migrate-tech-users-to-ims}
+# Migration der technischen Campaign-Benutzer zur Adobe Developer Console {#migrate-tech-users-to-ims}
 
 Ab Campaign v8.5 wird der Authentifizierungsprozess für Campaign v8 verbessert. Technische Benutzer müssen [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} , um eine Verbindung mit Campaign herzustellen. Ein technischer Benutzer ist ein Campaign-Benutzerprofil, das explizit für die API-Integration erstellt wurde. In diesem Artikel werden die Schritte beschrieben, die zum Migrieren eines technischen Benutzers zu einem technischen Konto in der Adobe Developer-Konsole erforderlich sind.
 
@@ -23,9 +23,9 @@ Erfahren Sie mehr über den neuen Serverauthentifizierungsprozess. [in der Dokum
 Diese Änderung gilt ab Campaign v8.5 und wird **mandatory** Starten von Campaign v8.6.
 
 
-## Bin ich betroffen?{#ims-imacts}
+## Sind Sie betroffen?{#ims-impacts}
 
-Wenn Sie Campaign-APIs verwenden, müssen Sie Ihren technischen Benutzer wie unten beschrieben zur Adobe Developer Console migrieren.
+Wenn Sie Campaign-APIs verwenden, müssen Sie Ihre technischen Benutzer wie unten beschrieben zur Adobe Developer Console migrieren.
 
 ## Wie migriert man?{#ims-migration-procedure}
 
@@ -33,7 +33,7 @@ Wenn Sie Campaign-APIs verwenden, müssen Sie Ihren technischen Benutzer wie unt
 
 Bevor Sie mit dem Migrationsprozess beginnen, müssen Sie sich an Ihren Adobe-Support-Mitarbeiter wenden, damit Adobe-Techniker Ihre bestehenden Benutzergruppen und spezifischen Berechtigungen in das Adobe Identity Management System (IMS) migrieren können.
 
-### Schritt 1: Erstellen eines Projekts in der Adobe Developer Console{#ims-migration-step-1}
+### Schritt 1: Erstellen/Aktualisieren Ihres Campaign-Projekts in der Adobe Developer Console{#ims-migration-step-1}
 
 Integrationen werden im Rahmen einer **Projekt** in der Adobe Developer-Konsole. Weitere Informationen zu Projekten in [Dokumentation zur Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
@@ -55,7 +55,7 @@ Wenn die API erfolgreich verbunden wurde, können Sie auf die neu generierten An
 Sie können jetzt Ihr Campaign-Produktprofil zum Projekt hinzufügen, wie unten beschrieben:
 
 1. Öffnen Sie die Adobe Campaign-API.
-1. Klicken Sie auf **Produktprofile bearbeiten** button
+1. Klicken Sie auf **Bearbeiten von Produktprofilen** button
 
    ![](assets/do-not-localize/ims-edit-api.png)
 
@@ -68,7 +68,7 @@ Der letzte Schritt besteht darin, den technischen Operator in der Adobe Campaign
 
 >[!CAUTION]
 >
->Nach der Aktualisierung des Authentifizierungstyps für den technischen Benutzer funktionieren alle API-Integrationen mit diesem technischen Benutzer nicht mehr.
+>Nach der Aktualisierung des Authentifizierungstyps für den technischen Benutzer funktionieren alle API-Integrationen mit diesem technischen Benutzer nicht mehr. Sie müssen [API-Integrationen aktualisieren](#ims-migration-step-6).
 
 Gehen Sie wie folgt vor, um den Authentifizierungsmodus des technischen Benutzers auf IMS zu aktualisieren:
 
@@ -89,7 +89,6 @@ Gehen Sie wie folgt vor, um den Authentifizierungsmodus des technischen Benutzer
    ```
 
 1. Speichern Sie Ihre Änderungen.
-
 
 Sie können den technischen Operator auch programmgesteuert mithilfe von SQL-Scripts oder Campaign-APIs aktualisieren. Mithilfe dieser Modi können Sie die Schritte automatisieren, die den Namen des Benutzers mit der E-Mail-Adresse und/oder dem Authentifizierungstyp des technischen Kontos aktualisieren.
 
@@ -148,8 +147,12 @@ Sie können den technischen Operator auch programmgesteuert mithilfe von SQL-Scr
 
 Um die Verbindung auszuprobieren, führen Sie die Schritte aus, die im Abschnitt [Handbuch zu den Anmeldedaten für Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#generate-access-tokens){target="_blank"} zum Generieren eines Zugriffstokens und Kopieren Sie den Beispielbefehl cURL .
 
-Weitere Informationen zu den Schritten der API-Integration finden Sie unter [Dokumentation zur Authentifizierung der Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
+### Schritt 6: Aktualisierung der API-Integrationen von Drittanbietern {#ims-migration-step-6}
+
+Sie müssen die API-Integrationen mit Ihren Drittanbietersystemen aktualisieren.
+
+Weitere Informationen zu den Schritten der API-Integration, einschließlich eines Beispielcodes für eine reibungslose Integration, finden Sie unter [Dokumentation zur Authentifizierung der Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 
 ### Beispiele für Soap-Aufrufe{#ims-migration-samples}
@@ -172,7 +175,7 @@ Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufru
            <urn:sessiontoken>SESSION_TOKEN</urn:sessiontoken>
            <urn:domEvent>
                <!--You may enter ANY elements at this point-->
-               <rtEvent type="melon" email="dchavan@adobe.com"/>
+               <rtEvent type="type" email="name@domain.com"/>
            </urn:domEvent>
        </urn:PushEvent>
    </soapenv:Body>
@@ -181,7 +184,7 @@ Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufru
 
 * Nach der Migration
 
-   ```
+   ```sql
    POST /nl/jsp/soaprouter.jsp HTTP/1.1
    Host: localhost:8080
    Content-Type: application/soap+xml;
@@ -196,7 +199,7 @@ Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufru
            <urn:sessiontoken></urn:sessiontoken>
            <urn:domEvent>
                <!--You may enter ANY elements at this point-->
-               <rtEvent type="melon" email="dchavan@adobe.com"/>
+               <rtEvent type="type" email="name@domain.com"/>
            </urn:domEvent>
        </urn:PushEvent>
    </soapenv:Body>
