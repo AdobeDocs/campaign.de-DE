@@ -5,9 +5,9 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '752'
 ht-degree: 100%
 
 ---
@@ -51,20 +51,20 @@ Der Typ der Testversand-Zielgruppe wird aus der Dropdown-Liste **[!UICONTROL Zie
 * Verwenden Sie die Option **[!UICONTROL Adressersetzung]** zur Eingabe der E-Mail-Adressen und zur Validierung des Inhalts mithilfe der Zielgruppen-Empfängerdaten. Die Ersatzadressen können manuell eingegeben oder aus der Dropdown-Liste ausgewählt werden. Die zugehörige Auflistung ist die Ersatzadresse (rcpAddress).
 Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie können jedoch eine bestimmte Empfängerin oder einen bestimmten Empfänger aus der Hauptzielgruppe über das **[!UICONTROL Detail]**-Symbol auswählen.
 
-   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
-   Wählen Sie die Option **[!UICONTROL Profil auswählen (muss Teil der Zielgruppe sein)]** und wählen Sie eine Empfängerin oder einen Empfänger aus.
+  Wählen Sie die Option **[!UICONTROL Profil auswählen (muss Teil der Zielgruppe sein)]** und wählen Sie eine Empfängerin oder einen Empfänger aus.
 
-   ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
 
 
 * Verwenden Sie die Option **[!UICONTROL Testadressen]** zur Verwendung von Testadressen als Testversand-Zielgruppe. Diese Adressen können aus einer Datei importiert oder manuell eingegeben werden.
 
-   >[!NOTE]
-   >
-   >Testadressen gehören nicht zur Standard-Empfängertabelle (nms:recipient), sondern werden in einer separaten Tabelle erstellt. Wenn Sie die Empfängertabelle um neue Daten erweitern, müssen Sie die Testadressen-Tabelle ebenfalls um die gleichen Daten erweitern.
+  >[!NOTE]
+  >
+  >Testadressen gehören nicht zur Standard-Empfängertabelle (nms:recipient), sondern werden in einer separaten Tabelle erstellt. Wenn Sie die Empfängertabelle um neue Daten erweitern, müssen Sie die Testadressen-Tabelle ebenfalls um die gleichen Daten erweitern.
 
-   Weitere Informationen über Testadressen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html?lang=de){target="_blank"}.
+  Weitere Informationen zu Testadressen finden Sie in [diesem Abschnitt](../audiences/test-profiles.md).
 
 * Verwenden Sie die Option **[!UICONTROL Spezifische Zielgruppen und Testadressen]** zur Kombination von Testadressen und spezifischen E-Mail-Adressen. Die entsprechenden Konfigurationen werden dann in zwei separaten Unterregisterkarten definiert.
 

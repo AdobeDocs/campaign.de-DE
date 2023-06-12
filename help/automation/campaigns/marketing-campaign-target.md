@@ -4,9 +4,9 @@ title: Ziel-Audience der Marketing-Kampagne
 description: Erfahren Sie, wie Sie die Audience Ihrer Marketing-Kampagnen definieren.
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: a2518ea0c0ab23f50b3132b750a14e98b4ffad7d
-workflow-type: ht
-source-wordcount: '1560'
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+workflow-type: tm+mt
+source-wordcount: '1567'
 ht-degree: 100%
 
 ---
@@ -17,8 +17,7 @@ In einer Marketing-Kampagne können Sie für jeden Versand Folgendes definieren:
 
 * Die Zielgruppe. Sie können Nachrichten an eine [Empfängerliste](#send-to-a-group) senden oder eine [Zielgruppe in einem Workflow](#build-the-main-target-in-a-workflow) erstellen.
 * Eine Kontrollgruppe. Sie können eine [Kontrollgruppe hinzufügen](#add-a-control-group), um das Empfängerverhalten nach dem Nachrichtenversand zu überwachen.
-<!--
-* Seed addresses - Learn more in [this section](../../delivery/using/about-seed-addresses.md).-->
+* Testadressen: Weitere Informationen finden Sie in [diesem Abschnitt](../../v8/audiences/test-profiles.md).-->
 
 Einige dieser Informationen werden von der [Kampagnenvorlage](marketing-campaign-templates.md#campaign-templates) übernommen.
 
@@ -109,9 +108,9 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
    * Bei Klick auf das Symbol **[!UICONTROL Starten]** werden alle Aktivitäten des Zielgruppen-Workflows aktiviert, die über keine eingehende Verbindung verfügen (außer Sprünge vom Typ &quot;Ziel&quot;).
 
-      ![](assets/start.png)
+     ![](assets/start.png)
 
-      Die Anfrage wird vom Server erfasst, was sich im Ausführungsstatus widerspiegelt: **[!UICONTROL Schnellstmöglicher Start]**.
+     Die Anfrage wird vom Server erfasst, was sich im Ausführungsstatus widerspiegelt: **[!UICONTROL Schnellstmöglicher Start]**.
 
    * Sie können den Zielgruppen-Workflow über das entsprechende Symbol der Menüleiste neu starten. Dieser Befehl kann besonders dann nützlich sein, wenn das Symbol **[!UICONTROL Starten]** nicht verfügbar ist, beispielsweise wenn der Workflow gerade angehalten wird. Klicken Sie in diesem Fall auf das Symbol **[!UICONTROL Neu starten]**, um den Neustart vorzuziehen. Diese Anfrage wird daraufhin vom Server erfasst, wie am Ausführungsstatus zu erkennen ist: **[!UICONTROL Soll neu gestartet werden]**.
 
@@ -119,51 +118,52 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
    * Über die Symbolleiste kann die Ausführung des Zielgruppen-Workflows angehalten oder ausgesetzt werden.
 
-      Bei Klick auf das Symbol **[!UICONTROL Aussetzen]** werden laufende Prozesse **[!UICONTROL nicht]** abgebrochen, es wird jedoch bis zur Wiederaufnahme keine andere Aktivität gestartet.
+     Bei Klick auf das Symbol **[!UICONTROL Aussetzen]** werden laufende Prozesse **[!UICONTROL nicht]** abgebrochen, es wird jedoch bis zur Wiederaufnahme keine andere Aktivität gestartet.
 
-      ![](assets/pause.png)
+     ![](assets/pause.png)
 
-      Die Anfrage wird vom Server erfasst und vom Ausführungsstatus angezeigt: **[!UICONTROL Soll ausgesetzt werden]**.
+     Die Anfrage wird vom Server erfasst und vom Ausführungsstatus angezeigt: **[!UICONTROL Soll ausgesetzt werden]**.
 
-      Ein Zielgruppen-Workflow kann auch automatisch ausgesetzt werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Machen Sie hierzu einen Rechtsklick auf die Aktivität, ab der der Workflow ausgesetzt werden soll, und klicken Sie auf **[!UICONTROL Aktivieren, aber nicht ausführen]**.
+     Ein Zielgruppen-Workflow kann auch automatisch ausgesetzt werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Machen Sie hierzu einen Rechtsklick auf die Aktivität, ab der der Workflow ausgesetzt werden soll, und klicken Sie auf **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
-      ![](assets/donotexecute.png)
+     ![](assets/donotexecute.png)
 
-      Die Konfiguration wird von einem spezifischen Symbol in der Grafik repräsentiert.
+     Die Konfiguration wird von einem spezifischen Symbol in der Grafik repräsentiert.
 
-      ![](assets/pause_activity.png)
+     ![](assets/pause_activity.png)
 
-      >[!NOTE]
-      >
-      >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielbestimmung als nützlich.
+     >[!NOTE]
+     >
+     >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielbestimmung als nützlich.
 
-      Klicken Sie auf **[!UICONTROL Starten]**, um die Ausführung wieder aufzunehmen.
+     Klicken Sie auf **[!UICONTROL Starten]**, um die Ausführung wieder aufzunehmen.
 
    * Klicken Sie auf das Symbol **[!UICONTROL Anhalten]**, um die Ausführung zu stoppen.
 
-      ![](assets/stop.png)
+     ![](assets/stop.png)
 
-      Die Anfrage wird vom Server erfasst und vom Ausführungsstatus angezeigt: **[!UICONTROL Wartet auf Stopp]**.
-   Ein Zielgruppen-Workflow kann auch automatisch angehalten werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Machen Sie hierzu einen Rechtsklick auf die Aktivität, ab der der Workflow angehalten werden soll, und klicken Sie auf **[!UICONTROL Nicht aktivieren]**.
+     Die Anfrage wird vom Server erfasst und vom Ausführungsstatus angezeigt: **[!UICONTROL Wartet auf Stopp]**.
 
-   ![](assets/donotactivate.png)
+  Ein Zielgruppen-Workflow kann auch automatisch angehalten werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Machen Sie hierzu einen Rechtsklick auf die Aktivität, ab der der Workflow angehalten werden soll, und klicken Sie auf **[!UICONTROL Nicht aktivieren]**.
 
-   Die Konfiguration wird von einem spezifischen Symbol in der Grafik repräsentiert.
+  ![](assets/donotactivate.png)
 
-   ![](assets/unactivation.png)
+  Die Konfiguration wird von einem spezifischen Symbol in der Grafik repräsentiert.
+
+  ![](assets/unactivation.png)
 
 
-   >[!NOTE]
-   >
-   >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielbestimmung als nützlich.
+  >[!NOTE]
+  >
+  >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielbestimmung als nützlich.
 
 * Unbedingter Stopp
 
-   Wählen Sie im Explorer **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Kampagnen-Workflows]** aus, um auf einen beliebigen Campaign-Workflow zuzugreifen und diesen zu steuern.
+  Wählen Sie im Explorer **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Kampagnen-Workflows]** aus, um auf einen beliebigen Campaign-Workflow zuzugreifen und diesen zu steuern.
 
-   Sie können Ihren Workflow stoppen, indem Sie das Symbol **[!UICONTROL Aktionen]** und danach **[!UICONTROL Unbedingter Stopp]** auswählen. Damit wird Ihr Kampagnen-Workflow sofort angehalten.
+  Sie können Ihren Workflow stoppen, indem Sie das Symbol **[!UICONTROL Aktionen]** und danach **[!UICONTROL Unbedingter Stopp]** auswählen. Damit wird Ihr Kampagnen-Workflow sofort angehalten.
 
-   ![](assets/stop_unconditional.png)
+  ![](assets/stop_unconditional.png)
 
 ## Hinzufügen einer Kontrollgruppe {#add-a-control-group}
 

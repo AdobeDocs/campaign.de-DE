@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
-source-git-commit: eadd204088bc9ca6cf526a2ef4af3e8a61e48a25
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '553'
 ht-degree: 98%
 
 ---
@@ -80,6 +80,7 @@ ht-degree: 98%
       + [Arbeiten mit externen Profilen](audiences/external-profiles.md)
       + [Erfassen von Profildaten in Web-Formularen](audiences/collect-profiles.md)
       + [Arbeiten mit Zielgruppen-Mappings](audiences/target-mappings.md)
+      + [Erstellen von Testprofilen](audiences/test-profiles.md)
    + Erstellen von Audiences {#create-audiences}
       + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
       + [Erstellen und Verwalten von Filtern](audiences/create-filters.md)
