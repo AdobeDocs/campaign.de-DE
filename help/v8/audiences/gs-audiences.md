@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Um Profildaten zu Adobe Campaign hinzuzufügen, haben Sie folgende Möglichkeite
 * [Importieren von Datendateien](../start/import.md) aus einer externen Datenquelle, z. B. einem CRM-System oder einer flachen Datei
 * [Erstellen von Web-Formularen](../dev/webapps.md), damit Kunden selbst Informationen eingeben und ihr eigenes Profil erstellen können
 * [Zuordnen zu einer externen Datenbank](../connect/fda.md), in der Profile gespeichert werden
-* Geben Sie Profile manuell in die Client-Konsole ein, wie unten dargestellt:
+* Manuelles Eingeben von Profilen über die Client-Konsole, wie unten beschrieben:
 
 ![](assets/create-profile.png)
 
