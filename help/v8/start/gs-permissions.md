@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '511'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ In Adobe Campaign sind Anwender **Benutzer** und **Benutzergruppen** stehen für
 
 ## Wichtige Schritte zum Gewähren von Berechtigungen{#key-steps-permissions}
 
-Als Produkt-Administrator können Sie den Benutzern Ihrer Organisation Berechtigungen erteilen. Berechtigungen werden über Adobe Admin Console und die Campaign Client Console gewährt. Benutzer melden sich mit ihrer Adobe ID bei Adobe Campaign an. Erfahren Sie auf [dieser Seite](connect.md), wie Sie eine Verbindung zu Adobe Campaign herstellen können.
+Als Produkt-Administrator können Sie den Benutzern Ihrer Organisation Berechtigungen erteilen. Berechtigungen werden über die Adobe Admin Console und die Client-Konsole in Campaign gewährt. Benutzer melden sich mit ihrer Adobe ID bei Adobe Campaign an. Erfahren Sie auf [dieser Seite](connect.md), wie Sie eine Verbindung zu Adobe Campaign herstellen können.
 
 Die wichtigsten Schritte sind:
 
-* **Schritt 1**: Definieren Sie Ihre Benutzergruppen und weisen Sie ihnen Berechtigungen in der Campaign Client Console zu. [Weitere Informationen](manage-permissions.md#create-product-profile).
+* **Schritt 1**: Definieren Sie Ihre Benutzergruppen und weisen Sie ihnen Berechtigungen in der Client-Konsole in Campaign zu. [Weitere Informationen](manage-permissions.md#create-product-profile).
 Beachten Sie, dass Sie zu Beginn auch integrierte Benutzergruppen verwenden können. Diese Standardgruppen und ihre Berechtigungen werden in [diesem Abschnitt](manage-permissions.md#ootb-productprofiles) aufgeführt.
 * **Schritt 2**: Erstellen Sie Produktprofile in der Admin Console, die mit diesen Gruppen übereinstimmen. [Weitere Informationen](manage-permissions.md#create-product-profile).
 Sie können zu Beginn integrierte Produktprofile verwenden. [Weitere Informationen](manage-permissions.md#ootb-productprofiles).
@@ -52,7 +52,7 @@ Erfahren Sie auf [dieser Seite](manage-permissions.md#add-users), wie Sie Benutz
 
 Produktprofile sind Gruppen von Produkten und Services, die Sie Benutzern zuweisen können. In Adobe Experience Cloud basieren die Berechtigungen auf dem Profil eines Produkts und nicht auf dem Benutzer. Sie können jedoch bestimmten Benutzern Administratorrechte delegieren.
 
-In der Admin Console wird jede Adobe Experience Cloud **Produktprofil** für Campaign mit einer **Benutzergruppe** in der Client-Konsole von Campaign.
+In der Admin Console wird jedes **Produktprofil** von Adobe Experience Cloud für Campaign mit einer **Benutzergruppe** in der Client-Konsole von Campaign verknüpft.
 
 Erfahren Sie auf [dieser Seite](manage-permissions.md#create-a-product-profile), wie Sie Produktprofile erstellen und zuweisen.
 
