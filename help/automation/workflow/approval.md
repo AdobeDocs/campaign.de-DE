@@ -5,9 +5,9 @@ description: Validierung
 feature: Workflows, Approvals
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Im Fall einer Mehrfach-Validierung wird für jede vorgenommene Validierung die e
 
 Diese Aktivität betrifft nicht den gesamten Workflow, andere Aufgaben können parallel ausgeführt werden.
 
-Ein Benutzer kann die diesem Benutzer zugewiesenen Aufgaben über die Client-Konsole genehmigen. Benutzer mit Administratorrechten können die Aufgaben, die einem Benutzer zugewiesen sind, anzeigen und löschen, aber nicht darauf antworten.
+Eine Benutzerin bzw. ein Benutzer kann die ihr bzw. ihm zugewiesenen Aufgaben über die Client-Konsole genehmigen. Benutzer bzw. Benutzerinnen mit Administratorrechten können die Aufgaben, die einem Benutzer bzw. einer Benutzerin zugewiesen sind, anzeigen und löschen, aber nicht darauf antworten.
 
 Änderungen in Bezug auf die Titel oder den Nachrichten-Textkörper der Aktivität haben keinen Einfluss auf laufende Aufgaben. Sollten jedoch die möglichen Antworten geändert werden, werden die neuen Optionen automatisch in den laufenden Aufgaben übernommen.
 
