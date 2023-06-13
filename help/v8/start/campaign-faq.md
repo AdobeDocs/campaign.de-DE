@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +38,9 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Die Zustellbarkeit von E-Mails, ein wichtiger Faktor für den Erfolg jedes Marketing-Programms, unterliegt ständig wechselnden Kriterien und Regeln. Eine effektive Navigation in dieser digitalen Welt erfordert eine regelmäßige Abstimmung Ihrer E-Mail-Strategie unter Berücksichtigung der wichtigsten Trends mit Blick auf die Zustellbarkeit, um Ihre Audiences optimal zu erreichen.
 
-   ![](../assets/do-not-localize/book.png) Lesen Sie dieses Handbuch, um [Best Practices für den Versand](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de) kennenzulernen{target="_blank"}
+   ![](../assets/do-not-localize/book.png) Lesen Sie dieses Handbuch, um [Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de) kennenzulernen{target="_blank"}
 
-   ![](../assets/do-not-localize/book.png) Erfahren Sie [in diesem Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de), wie Sie eine hohe Zustellbarkeit in Campaign gewährleisten.{target="_blank"}
+   ![](../assets/do-not-localize/book.png) Erfahren Sie [in diesem Handbuch](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de), wie Sie eine hohe Zustellbarkeit in Campaign gewährleisten.{target="_blank"}
 
 1. **Wie weiß ich, dass mein Versand fehlerfrei durchgeführt wird?**
 
@@ -68,9 +68,9 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
 1. **Wo kann ich Campaign herunterladen?**
 
-   Sie können das Installationsprogramm und die Client Console vom Adobe Download Center abrufen.
+   Sie können das Installationsprogramm und die Client-Konsole vom Adobe-Download-Center abrufen.
 
-   Als Admin-Benutzer können Sie auf die Adobe zugreifen [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) {target="_blank"} , um Adobe Campaign herunterzuladen.
+   Greifen Sie als Admin-Benutzerin bzw. -Benutzer auf die Adobe-[Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} zu, um Adobe Campaign herunterzuladen.
 
    Weitere Informationen zum Verteilungs-Center finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
 
