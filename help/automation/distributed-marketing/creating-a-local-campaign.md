@@ -5,9 +5,9 @@ description: Erstellen einer lokalen Kampagne
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -295,9 +295,9 @@ Wenn eine Lokalstelle eine Kampagne bestellt hat, werden die validierungsverantw
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Validierung über die Client-Konsole {#approving-via-the-adobe-campaign-console}
+#### Genehmigen über die Client-Konsole {#approving-via-the-adobe-campaign-console}
 
-Die Bestellung kann auch über die Client-Konsole in der Übersicht der Kampagnenbestellungen validiert werden. Um eine Bestellung zu validieren, wählen Sie sie aus und klicken Sie auf **[!UICONTROL Bestellung validieren]**.
+Die Bestellung kann auch über die Client-Konsole in der Übersicht der Kampagnenbestellungen genehmigt werden. Um einen Auftrag zu genehmigen, wählen Sie ihn aus und klicken auf **[!UICONTROL Bestellung genehmigen]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -321,7 +321,7 @@ Ein validierungsverantwortlicher Benutzer kann die Validierung eines Kampagnenki
 
 Wenn der validierungsverantwortliche Benutzer eine Bestellung ablehnt, werden die betroffenen Lokalstellen hiervon automatisch per E-Mail benachrichtigt. Die E-Mail enthält gegebenenfalls einen Kommentar des Validierers.
 
-Informationen werden auf der Kampagnenkit-Seite oder auf der Kampagnenbestellseite angezeigt. Wenn sie Zugriff auf die Adobe Campaign Client Console haben, werden die Lokalstellen über diese Ablehnung informiert.
+Informationen werden auf der Seite mit der Liste der Kampagnenkits oder auf der Kampagnenbestellseite angezeigt. Wenn sie Zugriff auf die Adobe Campaign-Client-Konsole haben, werden die Lokalstellen über diese Ablehnung informiert.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
