@@ -4,9 +4,9 @@ title: Marketing-Ressourcen verwalten
 description: Erfahren Sie, wie Sie Marketing-Ressourcen verwalten.
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1172'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -99,9 +99,9 @@ Um eine Ressource zu genehmigen, klicken Sie auf **[!UICONTROL Ressource validie
 
 ![](assets/mkt-resouce-approve.png)
 
-Berechtigte Benutzer können dann die Validierung akzeptieren oder ablehnen. Diese Aktion kann wie folgt durchgeführt werden: über die gesendete E-Mail-Nachricht (durch Klicken auf den Link in der Benachrichtigungs-E-Mail) oder über die Client-Konsole (durch Klicken auf die Schaltfläche **[!UICONTROL Genehmigen]** ).
+Autorisierte Benutzerinnen und Benutzer können dann die Validierung akzeptieren oder ablehnen. Diese Aktion kann über den Link in der E-Mail-Benachrichtigung oder über die Schaltfläche **[!UICONTROL Genehmigen]** in der Client-Konsole ausgeführt werden.
 
-Im Validierungsfenster kann ein Kommentar eingegeben werden.
+Im Genehmigungsfenster kann ein Kommentar eingegeben werden.
 
 ![](assets/mkt-resource-approval-confirmation.png)
 
