@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Einstellung der Client-Konsole für 32-Bit
-description: Einstellung der Client-Konsole für 32-Bit
+title: Abschaffung der Client-Konsole für 32-Bit
+description: Abschaffung der Client-Konsole für 32-Bit
 hide: true
 hidefromtoc: true
 exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
 ht-degree: 100%
 
