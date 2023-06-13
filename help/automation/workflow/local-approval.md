@@ -5,9 +5,9 @@ description: Lokale Validierung
 feature: Workflows
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '702'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -81,21 +81,21 @@ Folgende Angaben sind erforderlich:
 
 Dieses Beispiel zeigt, wie Sie einen Validierungsprozess für einen Workflow-Versand einrichten. Weitere Informationen zum Erstellen von Versand-Workflows finden Sie im Abschnitt [Beispiel: Versand-Workflow](delivery.md#example--delivery-workflow).
 
-Ein Benutzer kann einen Versand auf zwei Arten validieren: über die in der E-Mail-Nachricht verlinkte Webseite oder die Client-Konsole.
+Der Benutzerin bzw. dem Benutzer bieten sich zwei verschiedene Möglichkeiten, um einen Versand zu genehmigen: entweder über die in der E-Mail-Nachricht verlinkte Web-Seite oder über die Client-Konsole.
 
 * Validierung über Webzugriff
 
    Die an die zuvor gewählte Benutzergruppe gesandte Benachrichtigung ermöglicht die Validierung der Versandzielgruppe. Die Benachrichtigung enthält den in der Vorlage definierten Text, wobei der JavaScript-Ausdruck durch den berechneten Wert (hier &#39;574&#39;) ersetzt wird.
 
-   Klicken Sie zur Validierung des Versands auf den entsprechenden Link und melden Sie sich bei der Adobe Campaign Client Console an.
+   Um den Versand zu genehmigen, klicken Sie auf den entsprechenden Link und melden sich bei der Adobe Campaign-Client-Konsole an.
 
    ![](assets/new-workflow-valid-webaccess.png)
 
-   Kreuzen Sie die gewünschte Antwort an und klicken Sie auf **[!UICONTROL Unterbreiten]**.
+   Kreuzen Sie die gewünschte Antwort an und klicken Sie auf **[!UICONTROL Absenden]**.
 
    ![](assets/new-workflow-valid-webaccess-confirm.png)
 
-* Validierung über die Client-Konsole
+* Genehmigung über die Client-Konsole
 
    Im Navigationsbaum enthält der Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Ausstehende Validierungen]** die Liste der vom aktuellen Benutzer zu validierenden Aufgaben. Doppelklicken Sie auf die entsprechende Zeile, um die Validierung vorzunehmen.
 
