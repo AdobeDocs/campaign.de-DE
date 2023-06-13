@@ -5,9 +5,9 @@ role: User, Admin
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1122'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Um Ihre Campaign-Instanz mit Ihrem Twitter-Konto zu verknüpfen, erstellen Sie e
 >
 >Jeder **Twitter**-Service muss ebenfalls von Adobe auf Ihrer MID-Instanz erstellt werden. Wenden Sie sich an Ihren Adobe-Support, um Ihre Umgebung konfigurieren zu lassen.
 
-Um Einstellungen zu erfassen, müssen Sie sowohl auf Ihre Adobe Campaign Client Console als auch auf Ihre Twitter-App-Berechtigungen zugreifen.
+Um Einstellungen vorzunehmen, müssen Sie sowohl auf Ihre Adobe Campaign-Client-Konsole als auch auf die Berechtigungen Ihrer Twitter-App zugreifen.
 
 1. Gehen Sie in **Adobe Campaign** zur Registerkarte **[!UICONTROL Profile und Zielgruppen]** und klicken Sie auf den Link **[!UICONTROL Services und Abonnements]**.
 1. Erstellen Sie einen neuen Service.
@@ -94,7 +94,7 @@ Um Einstellungen zu erfassen, müssen Sie sowohl auf Ihre Adobe Campaign Client 
 
 1. Kopieren Sie in Ihrer Twitter-App den Inhalt der Felder **Zugriffs-Token** und **Zugriffs-Token-Geheimnis** und fügen Sie ihn in die Felder **[!UICONTROL Zugriffs-Token]** und **[!UICONTROL Zugriffs-Token-Geheimnis]** Ihres Campaign-**Twitter**-Services ein.
 
-1. Klicken Sie in der Campaign Client Console auf **[!UICONTROL Speichern]**. Sie haben jetzt den Schreibzugriff an Adobe Campaign delegiert.
+1. Klicken Sie in der Client-Konsole von Campaign auf **[!UICONTROL Speichern]**. Sie haben jetzt den Schreibzugriff an Adobe Campaign delegiert.
 
 Um Ihre Einstellungen zu überprüfen, gehen Sie folgendermaßen vor:
 
