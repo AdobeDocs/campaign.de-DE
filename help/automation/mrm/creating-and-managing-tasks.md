@@ -4,9 +4,9 @@ title: Verwaltung von Aufgaben
 description: Verwaltung von Aufgaben
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3913'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -468,11 +468,11 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 1. Wenn ein Beteiligter seinen Teil der Aufgabe abgeschlossen hat, kann er die Aufgabe auf zweierlei Weisen erfüllen:
 
    * über die Benachrichtigungs-E-Mail;
-   * über die Clientkonsole oder die Webschnittstelle im Aufgaben-Dashboard.
+   * im Dashboard der Aufgabe über die Client-Konsole oder die Web-Schnittstelle.
 
       ![](assets/s_ncs_user_task_start_rea.png)
 
-1. Nach jeder neuen Validierung wird der Fortschritt der Aufgabe automatisch aktualisiert.
+1. Jedes Mal, wenn eine Teilnehmerin bzw. ein Teilnehmer einen Vorgang genehmigt, wird der Fortschrittsstatus der Aufgabe aktualisiert.
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 
@@ -482,7 +482,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. Sobald der Verantwortliche für die Aufgabe entscheidet, dass sie abgeschlossen ist, kann er sie über den Link in der Benachrichtigungs-E-Mail schließen, die zum Zeitpunkt des Aufgabenstarts gesendet wurde, über die Client-Konsole oder über die Benutzeroberfläche.
+1. Wenn der Verantwortliche die Aufgabe als abgeschlossen erachtet, kann er sie entweder über die Benachrichtigungs-E-Mail, die er zu Beginn der Aufgabe erhalten hat, über die Client-Konsole oder über die Web-Schnittstelle schließen.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -492,7 +492,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
 1. Die Aufgabe erhält damit den Status **[!UICONTROL Zu validieren]** und der Validierer wird benachrichtigt.
 
-   Sie validieren die Aufgabe über die Benachrichtigungs-E-Mail, die Client-Konsole oder die Web-Oberfläche.
+   Sie genehmigen die Aufgabe über die Benachrichtigungs-E-Mail, die Client-Konsole oder die Web-Schnittstelle.
 
    Er kann das Kampagnen-Dashboard zur Validierung nutzen:
 
