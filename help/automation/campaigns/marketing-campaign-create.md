@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Marketing-Kampagnen erstellen und ausführen.
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1319'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ Wenn Sie eine Kampagne im Tab **[!UICONTROL Planung]** eines Programms erstellen
 
 ## Verwenden der Web-Schnittstelle {#use-the-web-interface-}
 
-Sie können über einen Internetbrowser auf die Bildschirme der Adobe Campaign Client Console zugreifen, um alle Kampagnen und Sendungen sowie Berichte und Informationen zu den Profilen in Ihrer Datenbank anzuzeigen. Dieser Zugriff ermöglicht keine Erstellung von Datensätzen. Abhängig von den Benutzerrechten können Sie die Daten in der Datenbank anzeigen und/oder bearbeiten. Beispielsweise können Sie Inhalte und Zielgruppen einer Kampagne validieren, einen Versand neu starten oder stoppen etc.
+Sie können über einen Internet-Browser auf die Bildschirme der Adobe Campaign-Client-Konsole zugreifen, um alle Kampagnen und Sendungen sowie Berichte und Informationen zu den Profilen in Ihrer Datenbank anzuzeigen. Dieser Zugriff ermöglicht keine Erstellung von Datensätzen. Abhängig von den Benutzerrechten können Sie die Daten in der Datenbank anzeigen und/oder bearbeiten. Sie können beispielsweise Kampagneninhalte und Zielgruppenbestimmungen genehmigen, einen Versand neu starten oder stoppen, usw.
 
 1. Melden Sie sich wie gewohnt über https://`<your instance>:<port>/view/home` an.
 1. Über die unterschiedlichen Rubriken besteht Zugriff auf Listen und weitere Navigationselemente.
