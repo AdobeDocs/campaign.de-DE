@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Campaign-Workflow-Eigenschaften.
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -76,6 +76,6 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
    ![](assets/wf-properties_select-supervisors.png)
 
-   Die **[!UICONTROL Benachrichtigung an einen Workflow-Verantwortlichen]** Die Standardvorlage enthält einen Link zum Zugriff auf die Adobe Campaign Client Console über das Web, damit der Empfänger nach der Anmeldung an dem Problem arbeiten kann.
+   Die Standardvorlage **[!UICONTROL Benachrichtigung an einen Workflow-Verantwortlichen]** enthält einen Link für den Zugriff auf die Adobe Campaign-Client-Konsole über das Web, damit die empfangende Person das Problem bearbeiten kann, sobald sie angemeldet ist.
 
    Sie haben die Möglichkeit, im Knoten **[!UICONTROL Administration > Kampagnen > Vorlagen technischer Sendungen]** eine eigene Vorlage zu erstellen.
