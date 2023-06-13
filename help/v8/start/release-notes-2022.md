@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1845'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Um die Sicherheit zu optimieren, wurden Sicherheits-Token aus den von Campaign g
 
 **Verbesserungen**
 
-* Nach dem Auslaufen von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine in der Konsole nun **Microsoft Edge Chromium**. Zusätzlich wird die Installation von **Microsoft Edge WebView 2** -Laufzeitumgebung ist jetzt für jede Client Console-Installation erforderlich.
+* Nach dem Auslaufen von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine in der Konsole nun **Microsoft Edge Chromium**. Außerdem ist die Installation der **Microsoft Edge WebView 2**-Laufzeitumgebung jetzt für jede Client-Konsolen-Installation erforderlich.
 * Die Ausführung des Workflows wurde durch Workflow-Hochverfügbarkeit verbessert, sodass Sie Workflows gleichzeitig in verschiedenen Containern ausführen können, um den Verlust des Workflow-Service zu verhindern und damit verbundene Ausführungsfehler zu vermeiden. **Hinweis**: Diese neue Funktion steht nur einer begrenzten Anzahl von Kunden zur Verfügung.
 * Datenschutzanfragen werden jetzt im Batch-Modus für einen bestimmten Datenschutz-Namespace ausgeführt. Durch diese Verbesserung wird die Ausführungszeit für DSGVO-/Datenschutz-Löschanfragen verkürzt.
 
