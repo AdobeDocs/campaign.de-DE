@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1739'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -193,7 +193,7 @@ Verwenden und kombinieren Sie **Schnellfilter**, um Filter für bestimmte Felder
 
 Nach dem Hinzufügen werden die Schnellfilterfelder nacheinander über der Datenliste angezeigt. Sie können unabhängig voneinander gelöscht werden.
 
-Schnellfilter sind für jeden Benutzer spezifisch und werden jedes Mal neu initialisiert, wenn der Benutzer den Cache seiner Client Console löscht.
+Schnellfilter sind für jeden Benutzer und jede Benutzerin spezifisch und werden bei jeder Cache-Leerung der Client-Konsole erneut initialisiert.
 
 Wenn Sie einen Filter wiederverwenden müssen, erstellen Sie einen **erweiterten Filter** und speichern Sie ihn. [Weitere Informationen](#advanced-filters).
 
