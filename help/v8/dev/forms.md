@@ -6,23 +6,23 @@ role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2574'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit Formularen{#gs-ac-forms}
 
-Wenn Sie ein Schema erstellen oder erweitern, müssen Sie die zugehörigen Formulare für die Eingabe erstellen oder ändern, um diese Änderungen für die Endbenutzer sichtbar zu machen.
+Wenn Sie ein Schema erstellen oder erweitern, müssen Sie die zugehörigen Eingabeformulare erstellen oder ändern, um diese Änderungen für die Endbenutzerinnen und -benutzer sichtbar zu machen.
 
-Mit einem Formular können Sie eine Instanz bearbeiten, die mit einem Datenschema in der Adobe Campaign Client Console verknüpft ist. Das Formular wird anhand seines Namens und seines Namespace identifiziert.
+Mit einem Eingabeformular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten. Das Formular wird anhand seines Namens und seines Namespace identifiziert.
 
 Der Identifikationsschlüssel eines Formulars ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. &quot;cus:contact&quot;).
 
 ## Formulare bearbeiten
 
-Erstellen und konfigurieren Sie Eingabeformulare aus dem **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Formulare]** Ordner der Client Console:
+Erstellen und konfigurieren Sie Eingabeformulare im Ordner **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Eingabeformulare]** der Client-Konsole:
 
 ![](assets/form_arbo.png)
 
@@ -87,7 +87,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
 
-![](../assets/do-not-localize/book.png) Alle Formularattribute werden in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=de){target="_blank"}.
+![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=de) sind alle Formularattribute aufgeführt.{target="_blank"}
 
 ## Formatierung {#formatting}
 
