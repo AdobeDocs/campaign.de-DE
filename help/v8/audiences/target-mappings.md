@@ -5,16 +5,18 @@ feature: Audiences, Profiles
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: db27abf860b0744a4120166c68e2cc2ae8a3d172
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 100%
+source-wordcount: '373'
+ht-degree: 89%
 
 ---
 
 # Arbeiten mit Zielgruppen-Mappings{#gs-target-mappings}
 
-Standardmäßig sind in Versandvorlagen die **[!UICONTROL Empfänger]** ausgewählt. Ihr Zielgruppen-Mapping verwendet daher die Felder der **nms:recipient**-Tabelle.
+Standardmäßig sind die Versandvorlagen E-Mail und SMS auf Zielgruppen ausgerichtet **[!UICONTROL Empfänger]**. Ihr Zielgruppen-Mapping verwendet daher die Felder der **nms:recipient** Tabelle.
+
+Für Push-Benachrichtigungen ist das standardmäßige Zielgruppen-Mapping **Abonnierte Anwendungen (nms:appSubscriptionRcp)**, der mit der Empfängertabelle verknüpft ist.
 
 Sie können für Ihre Sendungen aber auch andere Zielgruppen-Mappings verwenden oder ein neues Zielgruppen-Mapping erstellen.
 
