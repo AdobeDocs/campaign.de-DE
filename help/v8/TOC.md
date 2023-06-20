@@ -5,9 +5,9 @@ title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
 source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '553'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
    + [Bekannte Probleme](start/known-issues.md)
    + [Kompatibilitätsmatrix](start/compatibility-matrix.md)
    + Technotes{#technotes}
-      + [Migration des technischen Benutzers zur Developer Console](start/ims-migration.md)
+      + [Migration einer technischen Benutzerin bzw. eines technischen Benutzers zur Developer Console](start/ims-migration.md)
 + Erste Schritte {#new}
    + [Erste Schritte mit Adobe Campaign](start/get-started.md)
    + [Wichtigste Funktionen](start/whats-new.md)
