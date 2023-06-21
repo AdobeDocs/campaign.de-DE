@@ -5,10 +5,10 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: df08cdb90271f4d18fd37b8ae528ebd872d0ea63
 workflow-type: tm+mt
-source-wordcount: '2722'
-ht-degree: 100%
+source-wordcount: '2723'
+ht-degree: 99%
 
 ---
 
@@ -78,7 +78,7 @@ Effiziente Schlüssel sind unverzichtbar für hohe Leistung. Mit Snowflake könn
 
 >[!NOTE]
 >
->Das Attribut **autouuid** gilt nur für [Enterprise (FFDA)-Implementierungen](../architecture/enterprise-deployment.md).
+>Das Attribut **autouuid** gilt nur für [Enterprise (FFDA)-Bereitstellungen](../architecture/enterprise-deployment.md).
 
 ## Kennungen {#identifiers}
 
@@ -92,7 +92,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 | Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Ändern Sie den von Adobe Campaign erstellten Namen, wenn Sie das Objekt von einer Umgebung aus in einer anderen bereitstellen möchten.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Bestimmte reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk* usw.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces).</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen &quot; &quot;, Doppelpunkt &quot;:&quot; oder Bindestrich &quot;-&quot;. Alle diese Zeichen würden durch einen Unterstrich (_) ersetzt werden. Beispielsweise würden &quot;abc-def&quot; und &quot;abc:def&quot; als &quot;abc_def&quot; gespeichert werden und sich gegenseitig überschreiben.</li></ul> |
 | Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
-Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) ist der Primärschlüssel von Adobe Campaign eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden. [Weitere Informationen](../architecture/keys.md)
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist der Primärschlüssel von Adobe Campaign eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden. [Weitere Informationen](../architecture/keys.md)
 
 Zwar ist die Anzahl der IDs unbegrenzt, doch sollten Sie auf die Größe Ihrer Datenbank achten, um optimale Leistung sicherzustellen. Um Probleme zu vermeiden, sollten Sie die Einstellungen für die Bereinigung von Instanzen anpassen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#data-retention).
 
@@ -112,9 +112,8 @@ Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur 
 >[!CAUTION]
 >
 >* Eine Autouuid sollte nicht als Referenz in Workflows verwendet werden.
-> * Das Attribut **autouuid** gilt nur für [Enterprise (FFDA)-Implementierungen](../architecture/enterprise-deployment.md).
+> * Das Attribut **autouuid** gilt nur für [Enterprise (FFDA)-Bereitstellungen](../architecture/enterprise-deployment.md).
 >
-
 
 ## Relationen und Kardinalität {#links-and-cardinality}
 
@@ -122,7 +121,7 @@ Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur 
 
 Achten Sie bei großen Tabellen auf die &quot;eigene&quot; Integrität. Durch das Löschen von Datensätzen, die über große Tabellen mit &quot;eigener&quot; Integrität verfügen, kann die Instanz möglicherweise angehalten werden. Die Tabelle wird gesperrt; die Löschungen werden einzeln vorgenommen. Daher ist es am besten, bei untergeordneten Tabellen mit großen Volumen &quot;neutrale&quot; Integrität anzuwenden.
 
-Das Deklarieren einer Relation als externer Join ist nicht gut für die Leistung. Der Null-ID-Datensatz emuliert die externe Join-Funktion. Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) ist es nicht nötig, externe Joins zu deklarieren, wenn der Link die **autouuid** verwendet.
+Das Deklarieren einer Relation als externer Join ist nicht gut für die Leistung. Der Null-ID-Datensatz emuliert die externe Join-Funktion. Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist es nicht nötig, externe Joins zu deklarieren, wenn der Link die **autouuid** verwendet.
 
 Obwohl es möglich ist, eine beliebige Tabelle in einem Workflow einzubinden, empfiehlt Adobe, allgemeine Relationen zwischen Ressourcen direkt in der Definition der Datenstruktur festzulegen.
 
@@ -138,7 +137,7 @@ Standardmäßig erstellt Adobe Campaign eine Relation mit dem Primärschlüssel 
 
 Stellen Sie beim Entwerfen einer Relation sicher, dass der Zieldatensatz eindeutig ist, falls eine 1-1-Beziehung deklariert wurde. Andernfalls gibt der Join möglicherweise mehrere Datensätze zurück, wenn nur einer erwartet wird. Dies führt bei der Versandvorbereitung zu Fehlern, wenn &quot;die Abfrage mehr Zeilen zurückgibt als erwartet&quot;. Verwenden Sie als Namen für die Relation denselben Namen wie beim Zielschema.
 
-Definieren Sie eine Relation mit einer Kardinalität (1-N) im Schema auf der Seite (1). So sollte beispielsweise die Relation &quot;Empfänger (1) - (N) Transaktion&quot; im Transaktionsschema definiert werden.
+Definieren Sie eine Relation mit einer Kardinalität (1-N) im Schema auf der Seite (N). So sollte beispielsweise die Relation &quot;Empfänger (1) - (N) Transaktion&quot; im Transaktionsschema definiert werden.
 
 Beachten Sie, dass eine Umkehrkardinalität einer Relation standardmäßig (N) lautet. Sie können eine Relation (1-1) definieren, indem Sie das Attribut revCardinality=&#39;single&#39; zur Relationsdefinition hinzufügen.
 
