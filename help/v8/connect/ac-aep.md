@@ -5,10 +5,10 @@ feature: Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: ht
-source-wordcount: '220'
-ht-degree: 100%
+source-git-commit: f8c4e05ba2fc97d981fb31f9b11c5de1dcc1ff6e
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 58%
 
 ---
 
@@ -16,24 +16,14 @@ ht-degree: 100%
 
 Die Ziel- und Quell-Connectoren für Adobe Campaign Managed Cloud Service ermöglichen eine nahtlose Integration zwischen Adobe Campaign und Adobe Experience Platform.
 
-* Verwenden Sie die **Zielverbindung von Adobe Campaign Managed Cloud Services**, um Experience Platform-Segmente zur Aktivierung an Adobe Campaign zu senden.
+* Verwenden eines Adobe Campaign Managed Cloud Services **Zielverbindung** , um Experience Platform-Segmente zur Aktivierung an Adobe Campaign zu senden:
 
-   ![](assets/aep-destination.png)
+  Konfigurieren Sie dazu eine neue Adobe Campaign Managed Cloud Services **Zielverbindung** , um ein Segment/eine Zielgruppe zu aktivieren und diese Daten an Adobe Campaign zu senden. Geben Sie Details zu der zu verwendenden Campaign-Instanz an, wählen Sie Segmente aus, die für das Ziel aktiviert werden sollen, und konfigurieren Sie dann die Attribute, die Sie in Campaign exportieren möchten. [Erfahren Sie, wie Sie eine Zielverbindung für Adobe Campaign Managed Cloud Services erstellen](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en)
 
-* Verwenden Sie die Verbindung mit **Adobe Campaign Managed Cloud Services**, um die Versand- und Trackinglogs von Adobe Campaign an Adobe Experience Platform zu senden
+  ![](assets/aep-destination.png){width="800" align="center"}
 
-   ![](assets/aep-logs.png)
+* Verwenden eines Adobe Campaign Managed Cloud Services **Quellverbindung** , um Adobe Campaign-Versand- und -Trackinglogs an Adobe Experience Platform zu senden:
 
-Die Schritte zum Konfigurieren dieser Integration in Adobe Experience Platform lauten wie folgt:
+  Konfigurieren Sie dazu eine neue Adobe Campaign Managed Cloud Services **Quellverbindung** , um Kampagnenereignisse in die Adobe Experience Platform aufzunehmen. Geben Sie Details zur Campaign-Instanz und zu dem zu verwendenden Schema an, wählen Sie einen Datensatz aus, in den Daten aufgenommen werden sollen, und konfigurieren Sie die abzurufenden Felder. [Erfahren Sie, wie Sie eine Quellverbindung für Adobe Campaign Managed Cloud Services erstellen](https://www.adobe.com/go/sources-campaign-ui-en)
 
-1. Konfigurieren Sie eine neue Zielverbindung für Adobe Campaign Managed Cloud Services, um ein Segment/eine Audience zu aktivieren und diese Daten an Adobe Campaign zu senden.
-
-   Geben Sie Details zu der zu verwendenden Campaign-Instanz an, wählen Sie Segmente aus, die für das Ziel aktiviert werden sollen, und konfigurieren Sie dann die Attribute, die Sie in Campaign exportieren möchten.
-
-   [Erfahren Sie, wie Sie eine Zielverbindung für Adobe Campaign Managed Cloud Services erstellen](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en)
-
-1. Konfigurieren Sie eine neue Quellverbindung mit Adobe Campaign Managed Cloud Services, um Campaign-Ereignisse in Adobe Experience Platform aufzunehmen.
-
-   Geben Sie Details zur Campaign-Instanz und zu dem zu verwendenden Schema an, wählen Sie einen Datensatz aus, in den Daten aufgenommen werden sollen, und konfigurieren Sie die abzurufenden Felder.
-
-   [Erfahren Sie, wie Sie eine Quellverbindung für Adobe Campaign Managed Cloud Services erstellen](https://www.adobe.com/go/sources-campaign-ui-en)
+  ![](assets/aep-logs.png){width="800" align="center"}
