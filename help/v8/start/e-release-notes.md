@@ -7,10 +7,10 @@ level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '586'
+ht-degree: 22%
 
 ---
 
@@ -18,32 +18,55 @@ ht-degree: 100%
 
 Auf dieser Seite werden Verbesserungen und Fehlerbehebungen beschrieben, die in der nächsten Version von Campaign v8 enthalten sein werden. Dieser Inhalt kann ohne vorherige Ankündigung bis zum Veröffentlichungsdatum geändert werden. Die offiziellen Versionshinweise finden Sie auf dieser [Seite](../start/release-notes.md).
 
-## Version 8.3.9 {#release-8-3-9}
+## Version 8.5 {#release-8-5}
 
->[!CAUTION]
->
-> Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../start/connect.md#download-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+_30. Juni 2023_
 
-_7. Oktober 2022_
+**Neue Funktionen**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Verbesserter Push-Benachrichtigungsdienst</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td><p>Campaign 8.5 führt den neuesten Push-Benachrichtigungsdienst auf v8 ein, der auf einem robusten Framework basiert, das auf modernster Technologie basiert. Dieser Dienst wurde entwickelt, um neue Skalierbarkeitsstufen zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Maßstäbe und Zuverlässigkeit erwarten und Sie so in die Lage versetzen, mit Ihren Mobile-App-Anwendern wie nie zuvor in Kontakt zu treten und Verbindungen zu ihnen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Aktualisierungen zur Kompatibilität**
+
+* Die 32-Bit-Version der Client Console wird jetzt nicht mehr unterstützt. Ab 8.6. ist die Client-Konsole nur noch in 64 Bit verfügbar. Das Upgrade auf die 64-Bit-Version der Client Console ist nahtlos. Weitere Informationen zum Upgrade Ihres Betriebssystems finden Sie in dieser [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=de).
+* Jetzt können Sie Ihre Campaign v8-Instanz mit Ihrer externen Azure synapse-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet.
 
 **Verbesserungen**
 
-* Es wurde ein Problem behoben, das sich auf die Statusaktualisierungen des Versandlogs auf der MID-Instanz auswirkte, wenn die Option &quot;FeatureFlag_GZIP_Compression&quot; aktiviert war. (NEO-49183)
-* Der technische Workflow **Datenbankbereinigung** kann jetzt auch für benutzerdefinierte Staging-Schemata verwendet werden. (NEO-48974)
-* Fehlerkorrektur – Sendungen bleiben jetzt nicht mehr im Status **Ausstehend**, wenn das Kontaktdatum erreicht ist. (NEO-48079, NEO-48251)
-* Die Stabilität bei der Verarbeitung ungültiger XML-Zeichenfolgen während SOAP-Aufrufen wurde verbessert. (NEO-48027)
-* Fehlerkorrektur – Die Versandanalyse ist jetzt während des Ausschlusses von auf die Blockierungsliste gesetzten Empfängern nicht mehr verlangsamt, wenn die Zielgruppe aus einer großen Mengen von Empfängern besteht. (NEO-48019)
-* Um einen zu langsamen Testversand an Testadressen zu verhindern, werden nun alle aufeinanderfolgenden Replikationen von Testempfängern und -empfängerinnen zu einer einzigen Replikationsanfrage zusammengefasst. (NEO-44844)
-* Es wurde ein Problem behoben, das zu Personalisierungsproblemen beim Versand von SMS-Nachrichten über einen externen Versandmodus führte. (NEO-46415)
-* Es wurde ein Problem behoben, bei dem ein Fehler angezeigt wurde, wenn die Vorschau eines Versands in einem archivierten Ereignis des Message Centers aufgerufen wurde. (NEO-43620)
-* Es wurde ein Problem in Workflows behoben, das dazu führen konnte, dass Dateien auf dem Server nicht aktualisiert wurden, wenn die Aktivität **Laden (Datei)** verwendet wurde. Der Prozess wurde bei 100 % angehalten, aber nie beendet. (NEO-47269)
-* Fehlerkorrektur – Jetzt werden keine unnötigen Versandkontingente mehr erstellt, wenn für den Versand Kalender- und Aufspaltungsmodi verwendet werden. (NEO-48634)
-* Es wurde ein Leistungsproblem bei der Verwendung von auf Kalendern basierenden Schüben behoben. (NEO-48451)
-* Fehlerkorrektur – Im Bildschirm der Versandliste wird jetzt nach der Erstellung eines neuen Zielgruppen-Mappings für ein benutzerdefiniertes Schema keine Fehlermeldung mehr angezeigt. (NEO-49237)
-* Fehlerkorrektur – Jetzt tritt kein Problem mehr auf, wenn ein Versand während des MTA-Prozesses eine bestimmte Größe erreicht. (NEO-46097)
-* Es wurde ein Problem behoben, das verhinderte, dass Trackinglogs Daten über den Browser des Empfängers zurückgaben. (NEO-46612)
-* Fehlerkorrektur – Jetzt tritt kein Problem mehr während des Postupgrades in japanischen Umgebungen auf. (NEO-46640)
-* Fehlerkorrektur – Jetzt tritt kein Problem mehr bei der Verwendung der **Abfrage**-Aktivität und der Filterung einer Tabelle auf. Wenn ein Spaltenname das Wort &quot;Update&quot; enthielt, kam es zu einem Kompilierungsfehler mit einer ungültigen Kennung und folgender Meldung: &quot;Anzahl der Zeilen aktualisiert&quot;. (NEO-46485)
-* Es wurde ein Problem behoben, das verhinderte, dass der technische Workflow **[!UICONTROL Staging-Daten replizieren]** (ffdaReplicateStagingData) gestoppt wurde, selbst wenn während seiner Ausführung ein Fehler auftrat. (NEO-46280)
-* Fehlerkorrektur – Jetzt gehen keine Daten mehr verloren, wenn der Staging-Workflow fehlerhaft ist und die Aufbewahrungsfrist vollständig abgelaufen ist. (NEO-48975)
-* Es wurde ein Problem behoben, das bei der Eingabe von Daten in die Snowflake-Cloud-Datenbank mithilfe der Campaign-Aktivität **Abfrage** und **Datenquelle ändern** auftrat: Der Prozess schlug fehl, wenn ein umgekehrter Schrägstrich in den Daten vorhanden war. Die Quellzeichenfolge wurde nicht escaped, wodurch die Daten von Snowflake nicht korrekt verarbeitet wurden. (NEO-45549)
+* Der SMS-Durchsatz wurde durch die Implementierung einer Reihe von Optimierungen erheblich verbessert, was zu einer verbesserten Geschwindigkeit und Effizienz bei der SMS-Kommunikation führte.
+* Ab Campaign v8.5 wurde der Authentifizierungsprozess für Campaign v8 verbessert. Technische Benutzerinnen bzw. Benutzer müssen Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen.
+* Sie können jetzt Destination- und Source-Verbindungen nutzen, um Profilattribute wie Opt-out-Daten zwischen der Adobe Experience Platform- und der Campaign v8-Datenbank zu synchronisieren
+* Die Versandvorbereitung wurde optimiert.
+* Neben der vorhandenen Authentifizierungsmethode für Benutzer/Kennwort wurde für das externe SFTP-Konto eine neue schlüsselbasierte Authentifizierungsoption hinzugefügt. Benutzer können sich jetzt sicher mit einem privaten Schlüssel authentifizieren, was die Sicherheit verbessert und einen alternativen Authentifizierungsmechanismus für den SFTP-Zugriff bietet.
+
+**Verbesserungen bei der Sicherheit**
+
+* Sie können keine Benutzer mehr über die Client-Konsole erstellen. Jetzt müssen Sie die Admin Console verwenden. [Weitere Informationen](../start/gs-permissions.md).
+* Mehrere Drittanbieter-Tools wurden aktualisiert, um die Sicherheit zu optimieren.
+
+**Patches**
+
+* Fehlerkorrektur - Sonderzeichen im HTML-Inhalt eines Versands werden jetzt in mehreren Browsern korrekt kodiert. (NEO-60081)
+* Fehlerkorrektur - Berichte können jetzt in einer Campaign v8 Enterprise (FFDA)-Bereitstellung gespeichert werden. (NEO-56836)
+* Fehlerkorrektur - Beim Einfügen oder Aktualisieren von Daten in ein benutzerdefiniertes FFDA-Schema über die Workflow-Aktivität Daten-Update tritt jetzt kein Fehler mehr auf. (NEO-54708)
+* Fehlerkorrektur - Der Datenbankbereinigungs-Workflow kann jetzt Adressen aus der Tabelle nms:address in FFDA entfernen. (NEO-54460)
+* Fehlerkorrektur - Der Abrechnungs-Workflow funktioniert jetzt mit dem Fehler &quot;Kompilierungsspeicher ausgeschöpft&quot;. (NEO-51137)
+* Fehlerkorrektur - Die GPG-Entschlüsselung funktioniert jetzt in der Workflow-Aktivität Laden (Datei) ordnungsgemäß. (NEO-50257)
+* Fehlerkorrektur: Die Funktion `JSPContext.sqlExecWithOneParam` funktioniert jetzt. (NEO-50066)
+* Fehlerkorrektur - jetzt treten keine Versandfehler mehr auf, wenn nicht druckbare Zeichen in Personalisierungsfeldern verwendet werden. (NEO-48588)
+* Fehlerkorrektur - Beim Einfügen dynamischer Adobe Target-Bilder treten jetzt keine Versandfehler mehr auf. (NEO-62689)
+* Fehlerkorrektur - Browser können jetzt zusätzliche Leerzeichen hinzufügen, wenn bedingte Inhalte in einem Versand verwendet werden. (NEO-62132)
+* Fehlerkorrektur - jetzt wird kein Popup-Fenster mehr geöffnet, wenn auf ein Bild im E-Mail-Inhaltseditor geklickt wird. (NEO-60752)
+* Fehlerkorrektur - Jetzt tritt kein Fehler mehr auf und das Scrollen beim Bearbeiten des Inhalts eines Versands ist nicht mehr möglich. (NEO-61364)
