@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
-source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
-workflow-type: ht
-source-wordcount: '553'
-ht-degree: 100%
+source-git-commit: d941d9a364ffb2df77ba6726e655ca2916448f89
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,9 @@ ht-degree: 100%
          + [Verlinken auf die Mirrorseite](send/mirror-page.md)
          + [Versenden und Überwachen von E-Mails](send/send.md)
       + [SMS](send/sms.md)
-      + [Push-Benachrichtigungen ](send/push.md)
+      + Push-Benachrichtigungen {#push}
+         + [Erstellen und Versenden von Push-Benachrichtigungen](send/push.md)
+         + [Push-Benachrichtigungskanal konfigurieren](config/push-settings.md)
       + [LINE-Messaging](send/line.md)
       + [Briefpost](send/direct-mail.md)
       + [Twitter](send/twitter.md)
@@ -170,7 +172,6 @@ ht-degree: 100%
       + [Einstellungen der Benutzeroberfläche](config/ui-settings.md)
       + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
       + [E-Mail-Einstellungen](config/email-settings.md)
-      + [Push-Einstellungen](config/push-settings.md)
       + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
       + [Campaign SDKs mit Ihrer Mobile App integrieren - VERALTETE SEITE](config/push-config.md)
       + [Externe Konten](config/external-accounts.md)
