@@ -5,16 +5,16 @@ feature: FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: tm+mt
-source-wordcount: '609'
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+workflow-type: ht
+source-wordcount: '568'
 ht-degree: 100%
 
 ---
 
 # Schlüsselverwaltung und Eindeutigkeit {#key-management}
 
-Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) ist der Primärschlüssel ein Universally Unique IDentifier (UUID), d. h. eine Zeichenfolge. Um diese UUID zu erstellen, muss das Hauptelement des Schemas die Attribute **autouid** und **autopk** enthalten, die auf **true** gesetzt sind.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ist der Primärschlüssel ein Universally Unique IDentifier (UUID), d. h. eine Zeichenfolge. Um diese UUID zu erstellen, muss das Hauptelement des Schemas die Attribute **autouid** und **autopk** enthalten, die auf **true** gesetzt sind.
 
 Adobe Campaign v8 verwendet [!DNL Snowflake] als Hauptdatenbank. Die verteilte Architektur der [!DNL Snowflake]-Datenbank bietet keine Mechanismen zur Gewährleistung der Eindeutigkeit eines Schlüssels in einer Tabelle. Die Endbenutzer sind dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen.
 
@@ -71,22 +71,9 @@ Adobe Campaign entfernt während der Versandvorbereitung automatisch jede doppel
 
 ### Aktualisieren von Daten in einem Workflow {#duplicates-update-data}
 
-Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) können Sie keinen internen Schlüssel (UUID) als Feld auswählen, um Daten in einem Workflow zu aktualisieren.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) können Sie keinen internen Schlüssel (UUID) als Feld auswählen, um Daten in einem Workflow zu aktualisieren.
 
 ![](assets/update-data-no-internal-key.png)
-
-Wenn Sie einen expliziten Abstimmschlüssel verwenden, stellt die Aktivität **Daten-Update** auf der Grundlage dieses Schlüssels automatisch die Eindeutigkeit des Zielschemas sicher, indem die Aktivität:
-
-1. Eingehende Daten dedupliziert (in der Transition)
-1. Daten mit der Zieltabelle dedupliziert (Zusammenführen)
-
-
-![](assets/update-data-deduplicate.png)
-
->[!CAUTION]
->
->Diese Schutzmaßnahme ist nur mit der Option **[!UICONTROL Über Abstimmschlüssel]** verfügbar.
-
 
 ### Abfrage eines Schemas mit Duplikaten{#query-with-duplicates}
 
