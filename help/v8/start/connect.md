@@ -5,7 +5,7 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: ht
 source-wordcount: '921'
 ht-degree: 100%
@@ -100,6 +100,8 @@ Für Kundinnen und Kunden von Managed Cloud Services stellt Adobe die Client-Kon
 >[!CAUTION]
 >
 >Adobe empfiehlt, die Option **[!UICONTROL Diese Frage nicht mehr stellen]** deaktiviert zu lassen, um sicherzustellen, dass Sie benachrichtigt werden, wenn eine neue Version der Konsole verfügbar ist. Wenn diese Option aktiviert ist, werden Benutzende nicht darüber informiert, dass ein Konsolen-Upgrade erforderlich ist.
+>
+
 
 
 ## Gewähren von Zugriff für Benutzende{#grant-access}
