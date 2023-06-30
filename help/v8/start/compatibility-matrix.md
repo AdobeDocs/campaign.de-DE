@@ -5,10 +5,10 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
-source-wordcount: '385'
-ht-degree: 100%
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 96%
 
 ---
 
@@ -26,14 +26,14 @@ Wenn bestimmte Versionen dieser Drittanbietersysteme und -Tools das Ende des Leb
 
 Für die Nutzung der Campaign-Client-Konsole sind die folgenden Betriebssysteme und Browser erforderlich. [Weitere Informationen](connect.md).
 
->[!NOTE]
->
->Bitte beachten Sie, dass die 32-Bit-Version der Client-Konsole in Version 8.5 nicht mehr unterstützt wird. Ab 8.6. ist die Client-Konsole nur noch in 64 Bit verfügbar. Weitere Informationen zum Upgrade Ihres Betriebssystems finden Sie in dieser [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=de).
-
 ### Betriebssysteme{#op-systems}
 
 * **Microsoft Windows Server** 2019, 2016, 2012
 * **Microsoft Windows** 11, 10, 8
+
+>[!NOTE]
+>
+>Beachten Sie, dass die 32-Bit-Version der Client Console ab Version 8.5 nicht mehr unterstützt wird. Ab 8.6. ist die Client-Konsole nur noch in 64 Bit verfügbar. Weitere Informationen zum Upgrade Ihres Betriebssystems finden Sie in dieser [Technote](../../technotes/upgrades/console.md).
 
 ### Webbrowser{#web-browsers}
 
@@ -52,7 +52,8 @@ Die folgenden CRM-Systeme (Customer Relationship Management) sind mit Adobe Camp
 
 Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Access (FDA)-Modul kompatibel. [Weitere Informationen](../connect/fda.md).
 
-* **Amazon Redshift**
+* **[!DNL Amazon Redshift]**
+* **[!DNL Azure Synapse]**, ab Campaign v8.5
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**

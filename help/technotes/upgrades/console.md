@@ -2,29 +2,31 @@
 product: campaign
 title: Abschaffung der Client-Konsole für 32-Bit
 description: Abschaffung der Client-Konsole für 32-Bit
-hide: true
-hidefromtoc: true
 exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
-source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 92%
+source-wordcount: '344'
+ht-degree: 67%
 
 ---
 
-# Ende der Unterstützung für 32-Bit-Betriebssysteme | Adobe Campaign v8 {#console-eol}
+# Ende der Unterstützung für 32-Bit-Betriebssysteme {#console-eol}
 
-Die 32-Bit-Version der Client-Konsole wird in Version 8.5 nicht mehr unterstützt. Ab Version 8.6 bietet Campaign v8 keine Unterstützung mehr für 32-Bit-Betriebssysteme, einschließlich Produkt- und Sicherheits-Updates. Adobe empfiehlt dringend, dass Sie Ihre Sicherheits-Updates auf dem neuesten Stand halten.
+Die 32-Bit-Version der Client Console wird in Version 8.5 nicht mehr unterstützt. Eine neue 64-Bit-Version der Clientkonsole ist für eine nahtlose Aktualisierung verfügbar.
 
-## Ende der Unterstützung
+Ab Version 8.6 bietet Campaign v8 keine Unterstützung für 32-Bit-Betriebssysteme mehr, einschließlich Produkt- und Sicherheitsupdates. Adobe empfiehlt dringend, dass Sie Ihre Sicherheits-Updates auf dem neuesten Stand halten.
+
+Diese Änderung wirkt sich nur auf Sie aus, wenn Sie über die 32-Bit-Version von Windows 8 oder 10 verfügen.
+
+## Ende der Unterstützung{#eol}
 
 Das Ende der Unterstützung bedeutet, dass Adobe für alle Varianten eines Produkts oder Produktversionen (lokalisierte Versionen, kleinere Upgrades, Betriebssysteme, Haupt- und Nebenversionen sowie Connector-Produkte) keinen technischen Support mehr anbietet, einschließlich Produkt- und/oder Sicherheits-Updates.
 
-## Empfehlungen
+## Empfehlungen{#console-eol-recommendations}
 
-Um die neuesten Funktionen zu nutzen und die Sicherheit zu verbessern, empfiehlt Adobe, den Computer auf ein 64-Bit-Betriebssystem zu aktualisieren.
+Um die neuesten Funktionen und die verbesserte Sicherheit nutzen zu können, müssen Sie Ihren Computer auf ein 64-Bit-Betriebssystem aktualisieren.
 
-## Häufig gestellte Fragen
+## Häufig gestellte Fragen{#console-eol-faq}
 
 +++ Wie kann ich von Campaign v8 mit 32 Bit auf Campaign v8 mit 64 Bit aktualisieren?
 
@@ -52,21 +54,23 @@ Ab Version 8.6 werden 32-Bit-Betriebssysteme in allen Campaign v8-Versionen nich
 
 +++ Wie kann ich von Windows (32 Bit) auf Windows (64 Bit) aktualisieren?
 
-Stellen Sie sicher, dass der Prozessor Ihres Computers die Installation eines 64-Bit-Betriebssystems unterstützt. Für die Aktualisierung von der 32-Bit-Version auf die 64-Bit-Version von Windows müssen Sie Ihre Festplatte neu formatieren, die 64-Bit-Version von Windows installieren und dann alles, was Sie auf Ihrem Gerät hatten, neu installieren. Weitere Informationen finden Sie unter [32-Bit- und 64-Bit-Windows: Häufig gestellte Fragen](https://support.microsoft.com/de-de/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+Stellen Sie sicher, dass der Prozessor Ihres Computers die Installation eines 64-Bit-Betriebssystems unterstützt. Für die Aktualisierung von der 32-Bit-Version auf die 64-Bit-Version von Windows müssen Sie Ihre Festplatte neu formatieren, die 64-Bit-Version von Windows installieren und dann alles, was Sie auf Ihrem Gerät hatten, neu installieren. Weitere Informationen finden Sie unter [32-Bit- und 64-Bit-Windows: Häufig gestellte Fragen](https://support.microsoft.com/de-de/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
 
 +++
 
-+++ Wie kann ich überprüfen, ob ich einen 32-Bit- oder 64-Bit-Computer verwende?
+<!--
++++ How do I check if I am on a 32-bit computer or 64-bit?
 
-**WINDOWS 10 UND WINDOWS 8.1**
+**WINDOWS 10 AND WINDOWS 8.1**
 
-1. Klicken Sie auf die Schaltfläche **Start** und wählen Sie **Einstellungen** > **System** > **Info** aus.
-1. Prüfen Sie unter **Gerätespezifikationen** den **Systemtyp**.
+1. Click the **Start** button, then select **Settings** > **System** > **About**.
+1. Under **Device specifications**, see **System type**.
 
 **WINDOWS 7**
-1. Wählen Sie die Schaltfläche **Start** aus, klicken Sie mit der rechten Maustaste auf **Computer** und wählen Sie **Eigenschaften** aus.
-1. Prüfen Sie unter **System** den Systemtyp.
+1. Select the **Start** button, right-click **Computer** and select **Properties**.
+1. Under **System**, see the system type.
 
-Weitere Informationen finden Sie unter [32-Bit- und 64-Bit-Windows: Häufig gestellte Fragen](https://support.microsoft.com/de-de/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+For more information, see [32-bit and 64-bit Windows: Frequently asked questions](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
 
 +++
+-->

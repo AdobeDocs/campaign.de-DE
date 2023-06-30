@@ -5,10 +5,10 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+workflow-type: tm+mt
 source-wordcount: '511'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -35,9 +35,9 @@ Die wichtigsten Schritte sind:
 
 * **Schritt 1**: Definieren Sie Ihre Benutzergruppen und weisen Sie ihnen Berechtigungen in der Client-Konsole in Campaign zu. [Weitere Informationen](manage-permissions.md#create-product-profile).
 Beachten Sie, dass Sie zu Beginn auch integrierte Benutzergruppen verwenden können. Diese Standardgruppen und ihre Berechtigungen werden in [diesem Abschnitt](manage-permissions.md#ootb-productprofiles) aufgeführt.
-* **Schritt 2**: Erstellen Sie Produktprofile in der Admin Console, die mit diesen Gruppen übereinstimmen. [Weitere Informationen](manage-permissions.md#create-product-profile).
+* **Schritt 2**: Erstellen Sie Produktprofile in Adobe Admin Console, die mit diesen Gruppen übereinstimmen. [Weitere Informationen](manage-permissions.md#create-product-profile).
 Sie können zu Beginn integrierte Produktprofile verwenden. [Weitere Informationen](manage-permissions.md#ootb-productprofiles).
-* **Schritt 3**: Erstellen Sie Benutzer in der Admin Console und weisen Sie sie einem Produktprofil zu. [Weitere Informationen](manage-permissions.md#add-users).
+* **Schritt 3**: Erstellen Sie Benutzer in Adobe Admin Console und weisen Sie sie einem Produktprofil zu. [Weitere Informationen](manage-permissions.md#add-users).
 * **Schritt 4** (optional): Weisen Sie Berechtigungen für Ordner zu. [Weitere Informationen](manage-permissions.md#ootb-productprofiles).
 
 ## Über die Admin Console{#gs-admin-console}

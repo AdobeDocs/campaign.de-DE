@@ -5,7 +5,7 @@ feature: Federated Data Access
 role: Admin
 level: Beginner, Intermediate
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
@@ -23,9 +23,8 @@ Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer o
 >
 >* Kompatible Datenbanken für Federated Data Access sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
 >
->* Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) ist ein spezielles externes Konto verfügbar, über das die Kommunikation zwischen der lokalen Campaign-Datenbank und der Snowflake-Cloud-Datenbank verwaltet werden kann. Dieses externe Konto wird von Adobe für Sie eingerichtet und **darf nicht** geändert werden.
+>* Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist ein spezielles externes Konto verfügbar, über das die Kommunikation zwischen der lokalen Campaign-Datenbank und der Snowflake-Cloud-Datenbank verwaltet werden kann. Dieses externe Konto wird von Adobe für Sie eingerichtet und **darf nicht** geändert werden.
 >
-
 
 
 ## Best Practices und Einschränkungen
@@ -41,11 +40,12 @@ Beachten Sie außerdem die folgenden Einschränkungen und Best Practices:
    * Exportieren Sie die Adobe Campaign-Datenbank in die externe Datenbank und führen Sie die Aktionen nur in der externen Datenbank aus. Importieren Sie danach die Ergebnisse wieder in Adobe Campaign.
 
    * Rufen Sie die Daten aus der externen Adobe Campaign-Datenbank ab und führen Sie die Aktionen lokal durch.
-   Wenn Sie Ihre Sendungen mithilfe von Daten aus der externen Datenbank personalisieren möchten, sammeln Sie die Daten zur Verwendung in einem Workflow, um sie in einer temporären Tabelle zur Verfügung zu stellen. Verwenden Sie dann die Daten aus der temporären Tabelle, um Ihren Versand zu personalisieren. Bereiten Sie die Personalisierung von Nachrichten in einem speziellen Workflow vor, indem Sie die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** verwenden, die auf der Registerkarte **[!UICONTROL Analyse]** der Versandeigenschaften verfügbar ist. Diese Option ermöglicht es, im Zuge der Versandanalyse automatisch einen Workflow zu erstellen und auszuführen, welcher alle auf eine Zielgruppe bezogenen Daten in einer temporären Tabelle speichert (insbesondere Daten aus verknüpften Tabellen einer externen Datenbank).
 
-   >[!CAUTION]
-   >
-   >Diese Option verbessert die Leistung beim Ausführen des Personalisierungsschritts erheblich.
+  Wenn Sie Ihre Sendungen mithilfe von Daten aus der externen Datenbank personalisieren möchten, sammeln Sie die Daten zur Verwendung in einem Workflow, um sie in einer temporären Tabelle zur Verfügung zu stellen. Verwenden Sie dann die Daten aus der temporären Tabelle, um Ihren Versand zu personalisieren. Bereiten Sie die Personalisierung von Nachrichten in einem speziellen Workflow vor, indem Sie die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** verwenden, die auf der Registerkarte **[!UICONTROL Analyse]** der Versandeigenschaften verfügbar ist. Diese Option ermöglicht es, im Zuge der Versandanalyse automatisch einen Workflow zu erstellen und auszuführen, welcher alle auf eine Zielgruppe bezogenen Daten in einer temporären Tabelle speichert (insbesondere Daten aus verknüpften Tabellen einer externen Datenbank).
+
+  >[!CAUTION]
+  >
+  >Diese Option verbessert die Leistung beim Ausführen des Personalisierungsschritts erheblich.
 
 
 ## Verwenden von externen Daten in einem Workflow

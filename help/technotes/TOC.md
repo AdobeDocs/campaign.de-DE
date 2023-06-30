@@ -5,9 +5,9 @@ type: Event
 title: Technotes zu Adobe Campaign
 description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
-source-git-commit: 67368286cb04d97cbf4564846eab91d64b8f90f1
-workflow-type: ht
-source-wordcount: '35'
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+workflow-type: tm+mt
+source-wordcount: '41'
 ht-degree: 100%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 100%
 
 + [Technotes zu Campaign](technotes-home.md)
 + Aktualisierungen{#tn-new}
+   + [Migration einer technischen Benutzerin bzw. eines technischen Benutzers zur Developer Console](upgrades/ims-migration.md)
    + [Aktualisierung der Apache-Version](upgrades/apache.md)
    + [Internet-Browser](upgrades/browsers.md)
    + [System-Upgrades für 2023](upgrades/tech-stack-upgrade.md)
