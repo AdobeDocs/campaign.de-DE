@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: b333db04dd10cc28956959a446f6567e2a89b2d4
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 100%
+source-wordcount: '467'
+ht-degree: 96%
 
 ---
 
-# Verlinken auf die Mirrorseite{#mirror-page}
+# Verlinken auf die Mirrorseite {#mirror-page}
 
-## Über die Mirrorseite{#about-mirror-page}
+## Über die Mirrorseite {#about-mirror-page}
 
 Die Mirrorseite ist eine Online-Version Ihrer E-Mail.
 
@@ -24,7 +24,7 @@ Die von Adobe Campaign erzeugte Mirrorseite enthält alle Personalisierungsdaten
 
 ![Beispiel für einen Mirrorlink](assets/mirror-page-link.png){width="600" align="left"}
 
-## Hinzufügen eines Links zur Mirrorseite{#link-to-mirror-page}
+## Hinzufügen eines Links zur Mirrorseite {#link-to-mirror-page}
 
 Es empfiehlt sich, einen Link zur Mirrorseite einzufügen. Dieser Link kann beispielsweise lauten: „Diese E-Mail in Ihrem Browser anzeigen“ oder „Online lesen“. Er befindet sich häufig in der Kopf- oder Fußzeile der E-Mail.
 
@@ -35,7 +35,7 @@ In Adobe Campaign können Sie einen Link zur Mirrorseite in den E-Mail-Inhalt ei
 
 Weitere Informationen zum Einfügen von Gestaltungsbausteinen finden Sie unter [Gestaltungsbausteine](personalization-blocks.md).
 
-## Erzeugen der Mirrorseite{#mirror-page-generation}
+## Mirrorseitenerstellung verwalten {#mirror-page-generation}
 
 Standardmäßig wird die Mirrorseite von Adobe Campaign automatisch erzeugt, wenn der E-Mail-Inhalt nicht leer ist und einen Link zur Mirrorseite enthält (auch Mirrorlink genannt).
 
@@ -52,7 +52,7 @@ Zusätzlich zum Standardmodus stehen die folgenden Optionen zur Verfügung:
 * **[!UICONTROL Keine Mirrorseite erzeugen]**: Verwenden Sie diesen Modus, um das Erzeugen einer Mirrorseite zu vermeiden, selbst wenn der Link im Versand vorhanden ist.
 * **[!UICONTROL Von der Nachrichtenkennung aus zugängliche Mirrorseite erzeugen]**: Wenn der Mirrorseiten-Link im E-Mail-Inhalt nicht vorhanden ist, verwenden Sie diese Option, um den Zugriff auf den Inhalt der Mirrorseite im Versandprotokoll-Fenster zu ermöglichen (siehe unten).
 
-## Überprüfen der Mirrorseite für eine Empfängerin oder einen Empfänger{#mirror-page-access}
+## Überprüfen der Mirrorseite für eine Empfängerin oder einen Empfänger {#mirror-page-access}
 
 Sie können mit Personalisierungsdaten den Inhalt der Mirrorseite für eine bestimmte Empfängerin oder einen Empfänger eines Versands aufrufen.
 
