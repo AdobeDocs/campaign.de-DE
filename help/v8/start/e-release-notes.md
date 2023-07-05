@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 9736ebb3d2a60bfe23b135318b899acb657a580c
+source-git-commit: 958d2e8acdb9edee74f55bc3ea808f5072bf8f4d
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 22%
@@ -18,7 +18,7 @@ ht-degree: 22%
 
 Auf dieser Seite werden Verbesserungen und Fehlerbehebungen beschrieben, die in der nächsten Version von Campaign v8 enthalten sein werden. Dieser Inhalt kann ohne vorherige Ankündigung bis zum Veröffentlichungsdatum geändert werden. Die offiziellen Versionshinweise finden Sie auf dieser [Seite](../start/release-notes.md).
 
-## Version 8.5 {#release-8-5}
+## Version 8.5.1 {#release-8-5}
 
 _30. Juni 2023_
 
@@ -32,7 +32,7 @@ _30. Juni 2023_
 </thead> 
 <tbody> 
 <tr> 
-<td><p>Campaign 8.5 führt den neuesten Push-Benachrichtigungsdienst auf v8 ein, der auf einem robusten Framework basiert, das auf modernster Technologie basiert. Dieser Dienst wurde entwickelt, um neue Skalierbarkeitsstufen zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Maßstäbe und Zuverlässigkeit erwarten und Sie so in die Lage versetzen, mit Ihren Mobile-App-Anwendern wie nie zuvor in Kontakt zu treten und Verbindungen zu ihnen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).</p>
+<td><p>Campaign 8.5.1 führt den neuesten Push-Benachrichtigungsdienst auf v8 ein, der auf einem robusten Framework basiert, das auf modernster Technologie basiert. Dieser Dienst wurde entwickelt, um neue Skalierbarkeitsstufen zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Maßstäbe und Zuverlässigkeit erwarten und Sie so in die Lage versetzen, mit Ihren Mobile-App-Anwendern wie nie zuvor in Kontakt zu treten und Verbindungen zu ihnen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).</p>
 </td> 
 </tr> 
 </tbody> 
@@ -46,7 +46,7 @@ _30. Juni 2023_
 **Verbesserungen**
 
 * Der SMS-Durchsatz wurde durch die Implementierung einer Reihe von Optimierungen erheblich verbessert, was zu einer verbesserten Geschwindigkeit und Effizienz bei der SMS-Kommunikation führte.
-* Ab Campaign v8.5 wurde der Authentifizierungsprozess für Campaign v8 verbessert. Technische Benutzerinnen bzw. Benutzer müssen Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen.
+* Ab Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert. Technische Benutzerinnen bzw. Benutzer müssen Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen.
 * Sie können jetzt Destination- und Source-Verbindungen nutzen, um Profilattribute wie Opt-out-Daten zwischen der Adobe Experience Platform- und der Campaign v8-Datenbank zu synchronisieren
 * Die Versandvorbereitung wurde optimiert.
 * Neben der vorhandenen Authentifizierungsmethode für Benutzer/Kennwort wurde für das externe SFTP-Konto eine neue schlüsselbasierte Authentifizierungsoption hinzugefügt. Benutzer können sich jetzt sicher mit einem privaten Schlüssel authentifizieren, was die Sicherheit verbessert und einen alternativen Authentifizierungsmechanismus für den SFTP-Zugriff bietet.
