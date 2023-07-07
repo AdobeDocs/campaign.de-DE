@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -126,7 +126,7 @@ Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UIC
   >
   >Ab Version 8.5 können Sie sich jetzt bei der Konfiguration Ihres externen SFTP-Kontos sicher mit einem privaten Schlüssel authentifizieren. [Weitere Informationen zur Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=de)
 
-* **Amazon Simple Storage Service (S3)** - die **AWS S3** Connector kann zum Importieren oder Exportieren von Daten in Adobe Campaign mithilfe eines **[!UICONTROL Dateiübertragung]** Workflow-Aktivität. Zum Einrichten dieses neuen externen Kontos benötigen Sie die folgenden Informationen:
+* **Amazon Simple Storage Service (S3)** – Die **AWS S3**-Verbindung kann zum Importieren oder Exportieren von Daten in Adobe Campaign über die Workflow-Aktivität **[!UICONTROL Datei übertragen]** verwendet werden. Zum Einrichten dieses neuen externen Kontos benötigen Sie die folgenden Informationen:
 
    * **[!UICONTROL AWS-S3-Konto-Server]**: URL Ihres Servers, wie folgt ausgefüllt:   `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
