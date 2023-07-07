@@ -59,6 +59,7 @@ Wenn eine Platzierung in einem Einzelmodus-Kanal als identifiziert definiert wur
    >[!NOTE]
    >
    >Wenn eine Platzierung im eingehenden Web-Kanal erstellt wird, müssen Sie die Website so konfigurieren, dass dieses Angebot angezeigt wird.
+   >
 
 ### Erstellen und Veröffentlichen des Angebotskatalogs {#managing-the-offer-catalog-}
 
@@ -90,30 +91,30 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
    * den Angebotsinhalt mithilfe von Rendering-Funktionen erstellen
    * die zu unterbreitenden Angebote angeben
 
-   Die Platzierung bildet eine Schnittstelle zwischen Kanal und Angebotsmodul.
+  Die Platzierung bildet eine Schnittstelle zwischen Kanal und Angebotsmodul.
 
-   >[!CAUTION]
-   >
-   >Eine Platzierung ist kein Kommunikationskanal, sondern entspricht einer bestimmten Position im Kanal. Beispielsweise können auf einer Website angezeigte Angebote zwei Platzierungen auf derselben Seite belegen. In diesem Fall haben Sie zwei Platzierungen für denselben Kanal.
-   >
-   >Die Platzierungen werden zu Beginn eines Projekts festgelegt und können im späteren Verlauf nicht mehr geändert werden.
+  >[!CAUTION]
+  >
+  >Eine Platzierung ist kein Kommunikationskanal, sondern entspricht einer bestimmten Position im Kanal. Beispielsweise können auf einer Website angezeigte Angebote zwei Platzierungen auf derselben Seite belegen. In diesem Fall haben Sie zwei Platzierungen für denselben Kanal.
+  >
+  >Die Platzierungen werden zu Beginn eines Projekts festgelegt und können im späteren Verlauf nicht mehr geändert werden.
 
 * **Angebotskatalog**: Gesamtheit aller in Adobe Campaign erstellten Angebote, die bei Interaktionen unterbreitet werden können. Jeder Knoten der hierarchischen Katalogstruktur entspricht einer Angebotskategorie.
 * **Kategorie**: Mit einem Angebotskatalog einer Platzierung verknüpfter Ordner, der dazu dient, Angebote nach ihrer Art, ihrer Gültigkeit und ihren Anwendungsthemen zu organisieren. Eine Kategorie kann Unterkategorien enthalten, die alle auf Ebene der übergeordneten Kategorie definierten Eigenschaften übernehmen.
 * **Themen**: Auf Ebene der Kategorie festgelegte Stichwörter, die es ermöglichen, Angebote bei ihrer Unterbreitung über einen aus- oder eingehenden Kanal zu filtern. Die Angebotsauswahl kann auf eine oder mehrere Kategorien begrenzt werden.
 
-   >[!NOTE]
-   >
-   >Untergeordnete Kategorien übernehmen automatisch die Themen, die in der übergeordneten Kategorie definiert wurden.
+  >[!NOTE]
+  >
+  >Untergeordnete Kategorien übernehmen automatisch die Themen, die in der übergeordneten Kategorie definiert wurden.
 
 
 * **Eignungsregeln**: Einschränkungen, die sicherstellen sollen, dass ein Angebot bestmöglich dem Empfänger entspricht, dem es unterbreitet wird. Sie können auf eine Umgebung, eine Angebotskategorie oder ein Angebot angewendet werden und sich auf den Gültigkeitszeitraum, die Zielgruppe und die Gewichtung beziehen.
 
-   Auf Umgebungsniveau enthalten die Eignungsregeln die Unterbreitungsregeln, die auf Angebote und Personen, die angesprochen werden sollen.
+  Auf Umgebungsniveau enthalten die Eignungsregeln die Unterbreitungsregeln, die auf Angebote und Personen, die angesprochen werden sollen.
 
-   In den Kategorien ermöglichen Ihnen die Eignungsregeln, die Gültigkeit der Kategorie zeitlich zu begrenzen, Anwendungsthemen zu definieren und die Zielgruppe zu bestimmen. Sie können auch eine Multiplikatorgewichtung für einen bestimmten Zeitraum erhalten. Auf diese Weise können Sie die Regeln für Angebote in anderen Kategorien gemeinsam nutzen und so ihre Verwaltung vereinfachen.
+  In den Kategorien ermöglichen Ihnen die Eignungsregeln, die Gültigkeit der Kategorie zeitlich zu begrenzen, Anwendungsthemen zu definieren und die Zielgruppe zu bestimmen. Sie können auch eine Multiplikatorgewichtung für einen bestimmten Zeitraum erhalten. Auf diese Weise können Sie die Regeln für Angebote in anderen Kategorien gemeinsam nutzen und so ihre Verwaltung vereinfachen.
 
-   Auf Angebotsniveau lassen sich mithilfe der Eignungsregeln die Gültigkeit von Angeboten zeitlich begrenzen sowie Kriterien der Zielgruppenbestimmung definieren.
+  Auf Angebotsniveau lassen sich mithilfe der Eignungsregeln die Gültigkeit von Angeboten zeitlich begrenzen sowie Kriterien der Zielgruppenbestimmung definieren.
 
 * **Schlichtung**: Auswahl der Angebote, die in einer Umgebung angezeigt werden sollen (geeignete Angebote). Das Schlichtungsprinzip ordnet Angebote nach ihrer Priorität entsprechend den Kriterien, die in Kategorien, Angeboten und Kontextangeboten definiert wurden.
 * **Kontakt**: Person am Ursprung einer eingehenden Interaktion. Bei einer Abfrage des Angebotsmoduls wird der Kontakt einer Zielgruppendimension zugeordnet. Es werden zwei Kontakttypen unterschieden:
@@ -121,9 +122,9 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
    * **[!UICONTROL Identifizierter Kontakt]**: Kontakt, der sich explizit im Kanal identifiziert hat (z. B. durch Angabe einer Benutzerkennung und eines Kennworts). Bei ausgehenden Interaktionen sind alle Kontakte systematisch identifiziert.
    * **[!UICONTROL Anonymer Kontakt]**: Kontakt, der sich nicht explizit im Kanal identifiziert hat, der jedoch mithilfe eines Cookies implizit identifiziert werden kann. Diese Art von Kontakten tritt nur bei eingehenden Interaktionen auf.
 
-      >[!NOTE]
-      >
-      >Nicht identifizierbare anonyme Kontakte werden der Zielgruppendimension der Besucher zugeordnet.
+     >[!NOTE]
+     >
+     >Nicht identifizierbare anonyme Kontakte werden der Zielgruppendimension der Besucher zugeordnet.
 
 * Eine **ausgehende Interaktion** ruft das Angebotsmodul von einer Kontaktliste aus auf (für den Versand von E-Mails, Direkt-Mail usw.). Auf jeden Kontakt werden die gleichen Regeln und Prozesse angewendet. Dieser Interaktionstyp wird in der Regel im Batch-Modus verarbeitet.
 * **Eingehende Interaktionen**: Interaktion nach einem eingehenden Aufruf, der durch die Aktion eines Kontakts im Kanal generiert wurde. Dieser Interaktionstyp wird im Allgemeinen im Einzelmodus verarbeitet.

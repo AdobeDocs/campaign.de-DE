@@ -17,15 +17,15 @@ In diesem Beispiel wird die Anzahl der Empfänger gesucht, die in Berlin wohnen,
 
 * Welche Tabelle soll ausgewählt werden?
 
-   Die Empfängertabelle (**nms:recipient**)
+  Die Empfängertabelle (**nms:recipient**)
 
 * Welche Felder sollen in der Ausgabespalte ausgewählt werden?
 
-   Primärschlüssel (mit Zählung) und Geschlecht
+  Primärschlüssel (mit Zählung) und Geschlecht
 
 * Nach welchen Kriterien sind die Empfänger zu filtern?
 
-   Empfänger, die in Berlin wohnhaft sind
+  Empfänger, die in Berlin wohnhaft sind
 
 Gehen Sie wie folgt vor:
 

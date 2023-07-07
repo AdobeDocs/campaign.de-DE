@@ -37,9 +37,9 @@ Versandverantwortliche Benutzer können mit den ihnen zugewiesenen Rechten die f
 * Anzeige und Änderung von Angebotskategorien;
 * Angebote genehmigen, wenn sie ihre Prüfer sind.
 
-   >[!NOTE]
-   >
-   >**Versandverantwortliche Benutzer** können ein Angebot nur genehmigen, wenn sie in der Angebotskonfiguration als Prüfer angegeben wurden.
+  >[!NOTE]
+  >
+  >**Versandverantwortliche Benutzer** können ein Angebot nur genehmigen, wenn sie in der Angebotskonfiguration als Prüfer angegeben wurden.
 
 ## Erlaubnismatrix pro Interaktionsbenutzer {#recap-of-rights-according-to-operator}
 

@@ -82,15 +82,16 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
    * **[!UICONTROL Automatische Auswahl]**: wählt nach dem Zufallsprinzip unter den Dubletten den beizubehaltenden Datensatz aus.
    * **[!UICONTROL Gemäß einer Werteliste]**: ermöglicht die Bestimmung einer Reihenfolge nach Priorität von Werten für ein oder mehrere Felder. Wählen Sie zur Bestimmung dieser Werte ein Feld aus oder erstellen Sie einen Ausdruck, fügen Sie dann den oder die Werte der entsprechenden Tabelle hinzu. Verwenden Sie die Schaltfläche **[!UICONTROL Hinzufügen]** oberhalb der Werteliste, um ein neues Feld zu definieren.
 
-      ![](assets/s_user_segmentation_dedup_param5.png)
+     ![](assets/s_user_segmentation_dedup_param5.png)
 
    * **[!UICONTROL Wert nicht leer]**: hiermit lassen sich vornehmlich jene Datensätze beibehalten, für die der Wert des ausgewählten Ausdrucks nicht leer ist.
 
-      ![](assets/s_user_segmentation_dedup_param6.png)
+     ![](assets/s_user_segmentation_dedup_param6.png)
 
    * **[!UICONTROL Von einem Ausdruck ausgehend]**: Beibehalten werden die Datensätze, für die der ausgewählte Ausdruck den kleinsten oder größen Wert aufweist.
 
-      ![](assets/s_user_segmentation_dedup_param7.png)
+     ![](assets/s_user_segmentation_dedup_param7.png)
+
    >[!NOTE]
    >
    >Mit der Funktion **[!UICONTROL Zusammenführen]**, die über den Link **[!UICONTROL Erweiterte Parameter]** aufgerufen werden kann, können Sie einen Regelsatz konfigurieren, um ein Feld oder eine Gruppe von Feldern zu einem einzigen Ergebnisdatensatz zusammenzuführen. Weitere Informationen hierzu finden Sie unter [Zusammenführen von Feldern zu einem einzigen Datensatz](#merging-fields-into-single-record).

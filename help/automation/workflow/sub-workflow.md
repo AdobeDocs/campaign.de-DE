@@ -53,7 +53,7 @@ Nach der Ausführung befindet sich der Workflow, der als Unter-Workflow gestarte
 * Es kann kein Zwischenergebnis der Populationsgröße angezeigt werden.
 * Die Logs des Unter-Workflows werden im primären Workflow angezeigt.
 
-   ![](assets/subworkflow_logs.png)
+  ![](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >

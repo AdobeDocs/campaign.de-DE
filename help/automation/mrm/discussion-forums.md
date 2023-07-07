@@ -56,13 +56,13 @@ Um eine Nachricht zu beantworten, klicken Sie auf den E-Mail-Text und melden Sie
 
 * Um ein Forum zu abonnieren, klicken Sie auf die Schaltfläche **[!UICONTROL Forum abonnieren]** rechts oberhalb der Diskussionsliste.
 
-   Daraufhin erscheint ein blaues Band, in dem ihr Abonnement bestätigt wird.
+  Daraufhin erscheint ein blaues Band, in dem ihr Abonnement bestätigt wird.
 
 * Wenn Sie sich von einem Forum abmelden möchten, klicken Sie auf die Schaltfläche **[!UICONTROL Abmelden]** in dem blauen Band.
 
 * In Ihrem persönlichen Dashboard werden die von Ihnen abonnierten Foren aufgelistet. Klicken Sie auf den Link **[!UICONTROL Forum-Abonnements]**, um die Liste anzuzeigen, und anschließend auf das Forum, auf das Sie zugreifen möchten.
 
-   ![](assets/forum-subscribed.png)
+  ![](assets/forum-subscribed.png)
 
 
 ## Fehlerbehebung beim Benachrichtigungsversand {#checking-notification-delivery}
@@ -75,4 +75,5 @@ Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, 
 
    * Gehen Sie von der Adobe Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
    * Gehen Sie im Campaign-Explorer zu **[!UICONTROL Administration > Produktion > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
-   Im Fenster **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]** befinden sich die Versand-Logs auf der Registerkarte **[!UICONTROL Bearbeiten > Versand]**. Überprüfen Sie ebenfalls die Registerkarten **[!UICONTROL Tracking > Protokoll]** und **[!UICONTROL Ausschlussgründe]**.
+
+  Im Fenster **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]** befinden sich die Versand-Logs auf der Registerkarte **[!UICONTROL Bearbeiten > Versand]**. Überprüfen Sie ebenfalls die Registerkarten **[!UICONTROL Tracking > Protokoll]** und **[!UICONTROL Ausschlussgründe]**.

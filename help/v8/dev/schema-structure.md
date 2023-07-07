@@ -6,7 +6,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 100%
 
@@ -112,9 +112,9 @@ Folgende Regeln müssen eingehalten werden:
 
 * Jedes **`<element>`** und **`<attribute>`** müssen mit dem Namen über das Attribut **name** identifiziert werden.
 
-   >[!CAUTION]
-   >
-   >Der Name des Elements sollte kurz sein, vorzugsweise in Englisch, und nur gemäß den XML-Benennungsregeln zulässige Zeichen enthalten.
+  >[!CAUTION]
+  >
+  >Der Name des Elements sollte kurz sein, vorzugsweise in Englisch, und nur gemäß den XML-Benennungsregeln zulässige Zeichen enthalten.
 
 * In der XML-Struktur dürfen nur **`<element>`**-Elemente **`<attribute>`**-Elemente und **`<element>`**-Elemente enthalten.
 * Ein **`<attribute>`**-Element muss einen eindeutigen Namen innerhalb eines **`<element>`** haben.
@@ -132,7 +132,7 @@ Die folgenden Datentypen werden in Schemata unterstützt:
 
 * **string**: Zeichenfolge. Beispiele: ein Vorname, eine Stadt usw.
 
-   Die Größe kann über das Attribut **length** (optional, Standardwert &quot;255&quot;) angegeben werden.
+  Die Größe kann über das Attribut **length** (optional, Standardwert &quot;255&quot;) angegeben werden.
 
 * **boolean**: Boolesches Feld. Beispiel für mögliche Werte: true/false, 0/1, yes/no usw.
 * **byte**, **short**, **long**: ganze Zahlen (1 Byte, 2 Byte, 4 Byte). Beispiele: Alter, Kontonummer, Anzahl der Punkte usw.
@@ -143,9 +143,9 @@ Die folgenden Datentypen werden in Schemata unterstützt:
 * **memo**: Langtextfelder (mehrere Zeilen). Beispiele: eine Beschreibung, ein Kommentar usw.
 * **uuid**: eindeutig identifizierende Felder
 
-   >[!NOTE]
-   >
-   >Um ein **uuid**-Feld zu enthalten, muss die Funktion &quot;newuid()&quot;hinzugefügt und mit ihrem Standardwert gefüllt werden.
+  >[!NOTE]
+  >
+  >Um ein **uuid**-Feld zu enthalten, muss die Funktion &quot;newuid()&quot;hinzugefügt und mit ihrem Standardwert gefüllt werden.
 
 Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 
@@ -170,33 +170,33 @@ Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mi
 
 * Mit der Eigenschaft **label** können Sie eine kurze Beschreibung eingeben.
 
-   >[!NOTE]
-   >
-   >Das Label ist mit der aktuellen Sprache der Instanz verknüpft.
+  >[!NOTE]
+  >
+  >Das Label ist mit der aktuellen Sprache der Instanz verknüpft.
 
-   **Beispiel**:
+  **Beispiel**:
 
-   ```
-   <attribute name="email" type="string" length="80" label="Email"/>
-   ```
+  ```
+  <attribute name="email" type="string" length="80" label="Email"/>
+  ```
 
-   Das Label wird im Eingabeformular der Adobe Campaign-Client-Konsole angezeigt:
+  Das Label wird im Eingabeformular der Adobe Campaign-Client-Konsole angezeigt:
 
-   ![](assets/schema_label.png)
+  ![](assets/schema_label.png)
 
 * Mit der Eigenschaft **desc** können Sie eine lange Beschreibung eingeben.
 
-   Die Beschreibung ist im Eingabeformular in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole zu finden.
+  Die Beschreibung ist im Eingabeformular in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole zu finden.
 
-   >[!NOTE]
-   >
-   >Die Beschreibung ist mit der aktuellen Sprache der Instanz verknüpft.
+  >[!NOTE]
+  >
+  >Die Beschreibung ist mit der aktuellen Sprache der Instanz verknüpft.
 
-   **Beispiel**:
+  **Beispiel**:
 
-   ```
-   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
-   ```
+  ```
+  <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
+  ```
 
 ### Standardwerte {#default-values}
 
@@ -209,11 +209,11 @@ Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weiterführen
 * Aktuelles Datum: **default=&quot;GetDate()&quot;**
 * Zähler: **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
 
-   In diesem Beispiel wird der Standardwert mithilfe der Verkettung einer Zeichenfolge und des Aufrufs der Funktion **CounterValue** mit einem freien Zählernamen erstellt. Die zurückgegebene Zahl wird bei jedem Einfügen um 1 erhöht.
+  In diesem Beispiel wird der Standardwert mithilfe der Verkettung einer Zeichenfolge und des Aufrufs der Funktion **CounterValue** mit einem freien Zählernamen erstellt. Die zurückgegebene Zahl wird bei jedem Einfügen um 1 erhöht.
 
-   >[!NOTE]
-   >
-   >In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Zähler]** verwendet, um Zähler zu verwalten.
+  >[!NOTE]
+  >
+  >In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Zähler]** verwendet, um Zähler zu verwalten.
 
 Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die Variable `<default>  or  <sqldefault>   field.  </sqldefault> </default>` verwenden.
 
@@ -277,13 +277,13 @@ Die Werte für die Auflistung werden im Element **`<value>`** mit den folgenden 
 
 * Mit der Eigenschaft **dbenum** können Sie eine Auflistung definieren, deren Eigenschaften denen der Eigenschaft **enum** ähnlich sind.
 
-   Das Attribut **name** speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
+  Das Attribut **name** speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
 
-   Die Werte werden über den Knoten **[!UICONTROL Administration > Auflistungen]** definiert.
+  Die Werte werden über den Knoten **[!UICONTROL Administration > Auflistungen]** definiert.
 
-   Diese Auflistung dient beispielsweise zur Angabe der Art von Kampagnen.
+  Diese Auflistung dient beispielsweise zur Angabe der Art von Kampagnen.
 
-   ![](assets/schema_dbenum.png)
+  ![](assets/schema_dbenum.png)
 
 ### Beispiel {#example}
 
@@ -352,7 +352,6 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 >* **location/@city** ist nicht gültig; verwenden Sie **`[location/@city]`**
 >* **`[@email]`** und **@email** entsprechen einander
 >
-
 
 Es ist auch möglich, komplexe Ausdrücke wie die folgenden arithmetischen Operationen zu definieren:
 

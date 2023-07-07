@@ -75,7 +75,7 @@ Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indika
 
 >[!NOTE]
 >
->Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Software-Verteilungs-Assistenten von Adobe Campaign konfiguriert werden. Siehe [Überwachungsschwellen](#thresholds).
+>Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Bereitstellungassistenten von Adobe Campaign konfiguriert werden. Siehe [Überwachungsschwellen](#thresholds).
 
 
 
@@ -98,7 +98,7 @@ Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indika
 
 >[!NOTE]
 >
->Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Software-Verteilungs-Assistenten von Adobe Campaign konfiguriert werden. Siehe [Überwachungsschwellen](#thresholds).
+>Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Bereitstellungassistenten von Adobe Campaign konfiguriert werden. Siehe [Überwachungsschwellen](#thresholds).
 
 ### Schwellenwerte überwachen {#thresholds}
 
@@ -106,7 +106,7 @@ Sie können die Schwellenwerte für Warnung (orange) und Benachrichtigung (rot) 
 
 Gehen Sie dazu wie folgt vor:
 
-1. Öffnen Sie den Implementierungsassistenten auf der **Ausführungsinstanz** und navigieren Sie zur Seite **[!UICONTROL Message Center]**.
+1. Öffnen Sie den Bereitstellungsassistenten auf der **Ausführungsinstanz** und navigieren Sie zur Seite **[!UICONTROL Message Center]**.
 1. Verwenden Sie die Pfeile, um die Schwellenwerte zu ändern.
 
    ![](assets/mc-thresholds.png)

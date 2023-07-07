@@ -2,7 +2,7 @@
 title: Migration von technischen Benutzerinnen und Benutzern zur Adobe Developer Console
 description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benutzer zu einem technischen Konto in der Adobe Developer-Konsole migrieren.
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 100%
 

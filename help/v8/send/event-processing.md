@@ -60,11 +60,11 @@ Beim Routing-Schritt wird ein Ereignis mit der entsprechenden Nachrichtenvorlage
 
 * dem in den Eigenschaften des Ereignisses angegebenen Ereignistyp:
 
-   ![](assets/event-type-sample.png)
+  ![](assets/event-type-sample.png)
 
 * dem in den Eigenschaften der Nachrichtenvorlage angegebenen Ereignistyp:
 
-   ![](assets/event-type-select.png)
+  ![](assets/event-type-select.png)
 
 Standardmäßig erfolgt das Routing auf Basis folgender Informationen:
 
@@ -86,8 +86,7 @@ Mögliche Status sind:
 * **Versand ausstehend**
 Das Ereignis wurde verarbeitet und die Versandvorlage ist verknüpft. Die E-Mail ist versandbereit und der Standard-Versandprozess wird angewendet. Details können direkt im Versand eingesehen werden.
 * **Gesendet**, **Ignoriert** und **Versandfehler**
-Diese Versandstatus werden über 
-den Workflow **updateEventsStatus** abgerufen. Für weitere Informationen können Sie den entsprechenden Versand öffnen.
+Diese Versandstatus werden über den Workflow **updateEventsStatus** abgerufen. Für weitere Informationen können Sie den entsprechenden Versand öffnen.
 * **Ereignis wurde nicht berücksichtigt**
 Die Routing-Phase der Transaktionsnachricht ist fehlgeschlagen. Ein Beispiel hierfür wäre, dass Adobe Campaign die E-Mail, die als Vorlage für das Ereignis dient, nicht finden konnte.
 * **Ereignis ist abgelaufen**

@@ -24,30 +24,31 @@ Cubes ermöglichen Ihnen Folgendes:
 
 * Exportieren Sie Daten direkt in einen Bericht, der auf der Registerkarte **[!UICONTROL Berichte]** der Adobe Campaign-Plattform erstellt wurde.
 
-   Erstellen Sie hierzu einen neuen Bericht und wählen Sie den zu verwendenden Cube.
+  Erstellen Sie hierzu einen neuen Bericht und wählen Sie den zu verwendenden Cube.
 
-   ![](assets/create-new-cube.png)
+  ![](assets/create-new-cube.png)
 
-   Cubes sehen aus wie Vorlagen, auf deren Grundlage Berichte erstellt werden. Nachdem Sie eine Vorlage ausgewählt haben, klicken Sie auf **[!UICONTROL Erstellen]** um den neuen Bericht zu konfigurieren und anzuzeigen.
+  Cubes sehen aus wie Vorlagen, auf deren Grundlage Berichte erstellt werden. Nachdem Sie eine Vorlage ausgewählt haben, klicken Sie auf **[!UICONTROL Erstellen]** um den neuen Bericht zu konfigurieren und anzuzeigen.
 
-   Sie können die Kennzahlen anpassen, den Anzeigemodus ändern oder eine Tabelle konfigurieren und dann den Bericht über die zentrale Schaltfläche erzeugen.
+  Sie können die Kennzahlen anpassen, den Anzeigemodus ändern oder eine Tabelle konfigurieren und dann den Bericht über die zentrale Schaltfläche erzeugen.
 
-   ![](assets/display-cube-table.png)
+  ![](assets/display-cube-table.png)
 
 * Referenzieren Sie einen Cube in der **[!UICONTROL Abfrage]**-Box eines Berichts, um seine Indikatoren zu benutzen, wie unten gezeigt:
 
-   ![](assets/cube-report-query.png)
+  ![](assets/cube-report-query.png)
 
 * Fügen Sie eine auf einem Cube basierende Pivot-Tabelle in eine beliebige Seite eines Berichts ein. Referenzieren Sie dazu den Cube, damit er auf der Registerkarte **[!UICONTROL Daten]** der Pivot-Tabelle auf der entsprechenden Seite verwendet wird.
 
-   ![](assets/cube-in-a-report.png)
+  ![](assets/cube-in-a-report.png)
 
-   Weitere Informationen hierzu finden Sie unter [Erkunden der Daten in einem Bericht](cube-tables.md#explore-the-data-in-a-report).
+  Weitere Informationen hierzu finden Sie unter [Erkunden der Daten in einem Bericht](cube-tables.md#explore-the-data-in-a-report).
 
 
 >[!CAUTION]
 >
 >Zum Erstellen von Cubes sind Administratorberechtigungen erforderlich.
+>
 
 ## Aufbauen eines Cubes{#cube-create}
 

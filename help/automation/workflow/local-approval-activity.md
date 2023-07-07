@@ -75,9 +75,9 @@ Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unt
    * **[!UICONTROL Titel]**: Vergeben Sie für jede Domain einen Titel, der in den Validierungs- und Versandreaktionen-Benachrichtigungen angezeigt wird.
    * **[!UICONTROL Gruppe oder Benutzer]**: Geben Sie den Benutzer oder die Benutzergruppe an, dem die Domain zugewiesen wurde.
 
-      >[!CAUTION]
-      >
-      >Stellen Sie sicher, dass die Benutzer über die nötigen Berechtigungen verfügen.
+     >[!CAUTION]
+     >
+     >Stellen Sie sicher, dass die Benutzer über die nötigen Berechtigungen verfügen.
 
 ## 2. Schritt: Erstellen des Zielgruppen-Workflows {#step-2--creating-the-targeting-workflow}
 

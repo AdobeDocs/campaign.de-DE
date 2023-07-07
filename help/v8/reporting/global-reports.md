@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie auf globale Berichte zugreifen und diese verw
 feature: Reporting, Monitoring
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1893'
 ht-degree: 100%
 
@@ -51,6 +51,7 @@ Sie können die Anzeige durch Änderung des Parameters (z. B. 1 Stunde, 3 Stunde
 >Sie können die Anzahl der pro Stunde gesendeten Sendungen auch mithilfe des [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de) überwachen.
 >
 >Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel).
+>
 
 ## Nutzer-Aktivitäten {#user-activities}
 
@@ -94,11 +95,11 @@ Folgende Indikatoren werden angezeigt:
 * **[!UICONTROL Unerreichbar]**: Fehler in der Verteilungskette der Nachricht (Vorfall beim SMTP-Server, zeitweilig unerreichbare Domain usw.).
 * **[!UICONTROL Nicht angemeldet]**: Fehler, wenn das Mobiltelefon des Empfängers bei Versand der Nachricht ausgeschaltet war oder über keinen Netzempfang verfügte.
 
-   >[!NOTE]
-   >
-   >Dieser Indikator bezieht sich nur auf Sendungen auf [mobilen Kanälen](../send/send.md).
+  >[!NOTE]
+  >
+  >Dieser Indikator bezieht sich nur auf Sendungen auf [mobilen Kanälen](../send/send.md).
 
-   Jede Zeile der Datentabelle kann durch Anklicken des Symbols `[+]` ausgeklappt werden. Damit kann für jeden Fehlertyp die Verteilung der fehlerhaften Nachrichten nach Domain angezeigt werden.
+  Jede Zeile der Datentabelle kann durch Anklicken des Symbols `[+]` ausgeklappt werden. Damit kann für jeden Fehlertyp die Verteilung der fehlerhaften Nachrichten nach Domain angezeigt werden.
 
 **[!UICONTROL Verteilung der Fehler nach Domain]**
 
@@ -284,9 +285,9 @@ Folgende Indikatoren werden angezeigt:
 * **[!UICONTROL Hardbounces]**: Prozentualer Anteil der Hardbounces in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
 * **[!UICONTROL Softbounces]**: Prozentualer Anteil der Softbounces in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
 
-   >[!NOTE]
-   >
-   >Weiterführende Informationen zu Hard- und Softbounces finden Sie auf [dieser Seite](../send/quarantines.md).
+  >[!NOTE]
+  >
+  >Weiterführende Informationen zu Hard- und Softbounces finden Sie auf [dieser Seite](../send/quarantines.md).
 
 * **[!UICONTROL Öffnungen]**: Prozentualer Anteil der unterschiedlichen Zielgruppenempfänger, die mindestens einmal die betreffende Nachricht geöffnet haben, in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
 * **[!UICONTROL Klicks]**: Prozentualer Anteil der unterschiedlichen Zielgruppenempfänger, die mindestens einmal in eine Nachricht geklickt haben, in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.

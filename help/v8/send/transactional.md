@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1560'
 ht-degree: 100%
 
@@ -259,7 +259,7 @@ Sobald eine Nachrichtenvorlage <!--on the execution instances--> veröffentlicht
 
 * Eine veröffentlichte Vorlage kann weiterhin aufgerufen werden, wenn das entsprechende Ereignis ausgelöst wird. Wenn Sie eine Nachrichtenvorlage nicht mehr verwenden, wird deshalb empfohlen, deren Veröffentlichung aufzuheben. Damit wird verhindert, dass versehentlich unerwünschte Transaktionsnachrichten gesendet werden.
 
-   Gehen wir beispielsweise davon aus, dass Sie eine Nachrichtenvorlage veröffentlicht haben, die Sie nur für Weihnachtskampagnen verwenden. Sie können die Veröffentlichung der Vorlage nach der Weihnachtszeit aufheben und im nächsten Jahr erneut veröffentlichen.
+  Gehen wir beispielsweise davon aus, dass Sie eine Nachrichtenvorlage veröffentlicht haben, die Sie nur für Weihnachtskampagnen verwenden. Sie können die Veröffentlichung der Vorlage nach der Weihnachtszeit aufheben und im nächsten Jahr erneut veröffentlichen.
 
 * Zudem können Sie keine Transaktionsnachrichten-Vorlagen löschen, die den Status **[!UICONTROL Veröffentlicht]** aufweisen. In diesem Fall müssen Sie die Veröffentlichung der Vorlage zuerst aufheben.
 
@@ -278,8 +278,8 @@ Nach Abschluss der Aufhebung der Veröffentlichung:
 
 * Beide Nachrichtenvorlagen (auf Batch- und Echtzeit-Ereignisse angewendet) werden gelöscht<!-- from each execution instance-->.
 
-   Sie werden im Ordner **[!UICONTROL Administration > Produktion > Message Center > Standard > Transaktionsnachrichten-Vorlagen]** nicht mehr angezeigt.
+  Sie werden im Ordner **[!UICONTROL Administration > Produktion > Message Center > Standard > Transaktionsnachrichten-Vorlagen]** nicht mehr angezeigt.
 
 * Nachdem die Veröffentlichung einer Vorlage aufgehoben wurde, können Sie sie löschen<!-- from the control instance-->.
 
-   Wählen Sie dazu die gewünschte Vorlage aus der Liste aus und klicken Sie oben rechts im Bildschirm auf die Schaltfläche **[!UICONTROL Löschen]**.
+  Wählen Sie dazu die gewünschte Vorlage aus der Liste aus und klicken Sie oben rechts im Bildschirm auf die Schaltfläche **[!UICONTROL Löschen]**.

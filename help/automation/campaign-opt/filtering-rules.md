@@ -85,6 +85,7 @@ Im unteren Bereich des gleichen Tabs können Sie zudem einzelne Filterregeln hin
 >In diesem Auswahlfenster sind nur Filtertypologien und -regeln verfügbar.
 >
 >Diese Konfigurationen können in Versandvorlagen vorgenommen werden, um sie automatisch bei jedem mithilfe dieser Vorlagen erstellten Versand anzuwenden.
+>
 
 ## Standardmäßige Ausschlussregeln für Zustellbarkeit     {#default-deliverability-exclusion-rules}
 

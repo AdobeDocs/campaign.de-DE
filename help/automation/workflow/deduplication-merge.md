@@ -25,8 +25,8 @@ Die Aktivität **[!UICONTROL Deduplizierung]** wird zum Entfernen von Duplikat-Z
 | Datum der letzten Änderung | Vorname | Nachname | E-Mail | Mobiltelefon | Telefon |
 |-----|------------|-----------|-------|--------------|------|
 | 19.5.2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 22.7.2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 3.10.2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+| 22.7.2020 | Bobby | Tisner | bob@mycompany.com | | 777-777-7777 |
+| 3.10.2020 | Bob |  | bob@mycompany.com | | 888-888-8888 |
 
 Mit der Funktion **[!UICONTROL Zusammenführen]** der Deduplizierungsaktivität können Sie einen Regelsatz für das Deduplizieren konfigurieren, um eine Feldgruppe zu definieren, die zu einem einzigen Ergebnisdatensatz zusammengeführt werden soll. Bei einer Reihe von Duplikat-Datensätzen können Sie beispielsweise entscheiden, jeweils die älteste Telefonnummer oder den neuesten Namen beizubehalten.
 
@@ -93,8 +93,8 @@ Nach dem Konfigurieren dieser Regeln werden die folgenden Daten am Ende der Akti
 | Änderungsdatum | Vorname | Nachname | E-Mail | Mobiltelefon | Telefon |
 |-----|------------|-----------|-------|--------------|------|
 | 19.5.2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
-| 22.7.2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
-| 3.10.2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
+| 22.7.2020 | Bobby | Tisner | bob@mycompany.com | | 777-777-7777 |
+| 3.10.2020 | Bob |  | bob@mycompany.com | | 888-888-8888 |
 
 Das Ergebnis wird aus den drei Datensätzen gemäß den zuvor konfigurierten Regeln zusammengeführt. Nach dem Vergleich wird der Schluss gezogen, dass der aktuelle Name und das Mobiltelefon zusammen mit der ursprünglichen Telefonnummer verwendet werden.
 

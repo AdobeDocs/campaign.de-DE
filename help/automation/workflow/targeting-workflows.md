@@ -137,33 +137,33 @@ Zur Abstimmung der Daten stehen folgende Optionen zur Verfügung:
 
 * **[!UICONTROL Nur die Schlüssel]**
 
-   Diese Option kann bei homogenen Eingangspopulationen verwendet werden.
+  Diese Option kann bei homogenen Eingangspopulationen verwendet werden.
 
 * **[!UICONTROL Alle gemeinsamen Spalten]**
 
-   Diese Option ermöglicht die Abstimmung der Datensätze über alle den verschiedenen Zielpopulationen gemeinsamen Spalten.
+  Diese Option ermöglicht die Abstimmung der Datensätze über alle den verschiedenen Zielpopulationen gemeinsamen Spalten.
 
-   Spalten werden in Adobe Campaign anhand der Spaltentitel identifiziert. Dabei werden geringfügige Unterschiede akzeptiert. Der Spaltentitel &#39;Email&#39; wird als identisch mit dem Titel &#39;@email&#39; gewertet.
+  Spalten werden in Adobe Campaign anhand der Spaltentitel identifiziert. Dabei werden geringfügige Unterschiede akzeptiert. Der Spaltentitel &#39;Email&#39; wird als identisch mit dem Titel &#39;@email&#39; gewertet.
 
 * **[!UICONTROL Auswahl an Spalten]**
 
-   Diese Option ermöglicht die Auswahl der Spalten, die zur Abstimmung herangezogen werden sollen.
+  Diese Option ermöglicht die Auswahl der Spalten, die zur Abstimmung herangezogen werden sollen.
 
-   Wählen Sie zunächst die die Quelldaten enthaltende Hauptmenge aus und anschließend die Spalten, die den Join herstellen sollen.
+  Wählen Sie zunächst die die Quelldaten enthaltende Hauptmenge aus und anschließend die Spalten, die den Join herstellen sollen.
 
-   ![](assets/join-reconciliation-options.png)
+  ![](assets/join-reconciliation-options.png)
 
-   >[!CAUTION]
-   >
-   >Die Populationen werden im Rahmen der Abstimmung nicht auf Dubletten geprüft.
+  >[!CAUTION]
+  >
+  >Die Populationen werden im Rahmen der Abstimmung nicht auf Dubletten geprüft.
 
-   Sie können die Populationsgröße auf eine gewisse Anzahl an Datensätzen begrenzen. Kreuzen Sie hierfür die entsprechende Option an und geben Sie die Anzahl an beizubehaltenden Datensätzen an.
+  Sie können die Populationsgröße auf eine gewisse Anzahl an Datensätzen begrenzen. Kreuzen Sie hierfür die entsprechende Option an und geben Sie die Anzahl an beizubehaltenden Datensätzen an.
 
-   Geben Sie außerdem die Priorität der Eingangspopulationen an. Im unteren Bereich des Fensters werden die in die Vereinigungsaktivität eingehenden Transitionen aufgelistet. Die Reihenfolge kann mithilfe der blauen Pfeile rechts verändert werden.
+  Geben Sie außerdem die Priorität der Eingangspopulationen an. Im unteren Bereich des Fensters werden die in die Vereinigungsaktivität eingehenden Transitionen aufgelistet. Die Reihenfolge kann mithilfe der blauen Pfeile rechts verändert werden.
 
-   Die beibehaltenen Datensätze stammen zunächst aus der ersten eingehenden Transition und werden, falls die gewünschte Anzahl noch nicht erreicht ist, durch die Population der folgenden Transitionen ergänzt.
+  Die beibehaltenen Datensätze stammen zunächst aus der ersten eingehenden Transition und werden, falls die gewünschte Anzahl noch nicht erreicht ist, durch die Population der folgenden Transitionen ergänzt.
 
-   ![](assets/join_limit_nb_priority.png)
+  ![](assets/join_limit_nb_priority.png)
 
 ### Extrahieren gemeinsamer Daten (Schnittmenge) {#extract-joint-data--intersection-}
 
@@ -250,15 +250,15 @@ Nach Identifizierung und Aufbereitung der Daten können diese in folgenden Konte
 
 * Update der Datenbank im Anschluss an die verschiedenen Workflow-Aktivitäten.
 
-   Weitere Informationen hierzu finden Sie unter [Daten aktualisieren](update-data.md).
+  Weitere Informationen hierzu finden Sie unter [Daten aktualisieren](update-data.md).
 
 * Update von existierenden Listen.
 
-   Weitere Informationen hierzu finden Sie unter [Listen-Update](list-update.md).
+  Weitere Informationen hierzu finden Sie unter [Listen-Update](list-update.md).
 
 * Vorbereitung und/oder Start von Sendungen direkt im Workflow.
 
-   Weitere Informationen hierzu finden Sie unter [Versand](delivery.md), [Versand bearbeiten](delivery-control.md) und [Versand (fortlaufend)](continuous-delivery.md).
+  Weitere Informationen hierzu finden Sie unter [Versand](delivery.md), [Versand bearbeiten](delivery-control.md) und [Versand (fortlaufend)](continuous-delivery.md).
 
 ## Daten-Management {#data-management}
 

@@ -31,12 +31,12 @@ Es gibt zwei Typen von fehlgeschlagenen Sendungen. Jeder Fehlertyp bestimmt, ob 
 * **Hardbounces**
 Hardbounces sind dauerhafte Fehler, die erzeugt werden, wenn ein ISP feststellt, dass eine E-Mail nicht an eine Abonnentenadresse zugestellt werden kann. Innerhalb von Adobe Campaign werden Hardbounces, die als nicht zustellbar kategorisiert sind, zur Quarantäneliste hinzugefügt, was bedeutet, dass kein erneuter Zustellversuch stattfindet. In manchen Fällen wird ein Hardbounce ignoriert, wenn die Ursache des Fehlers unbekannt ist.
 
-   Im Folgenden finden Sie einige gängige Beispiele für Hardbounces: Adresse existiert nicht, Konto deaktiviert, fehlerhafte Syntax, ungültige Domain
+  Im Folgenden finden Sie einige gängige Beispiele für Hardbounces: Adresse existiert nicht, Konto deaktiviert, fehlerhafte Syntax, ungültige Domain
 
 * **Softbounces**
 Softbounces sind temporäre Fehler, die von ISPs bei Versandproblemen von E-Mails erzeugt werden. Bei Softbounces werden mehrfache [erneute Zustellversuche](#retries) unternommen (abhängig von den benutzerdefinierten oder vorkonfigurierten Versandeinstellungen), um einen erfolgreichen Versand durchzuführen. Adressen, die kontinuierlich einen Softbounce verursachen, werden erst dann unter Quarantäne gestellt, wenn eine maximale Anzahl erneuter Zustellungen versucht wurde (was wiederum je nach Einstellungen variiert).
 
-   Einige häufige Ursachen für Softbounces sind: Postfach voll, empfangender E-Mail-Server heruntergefahren, Probleme mit der Versender-Reputation.
+  Einige häufige Ursachen für Softbounces sind: Postfach voll, empfangender E-Mail-Server heruntergefahren, Probleme mit der Versender-Reputation.
 
 **Ignoriert**: Vorübergehender Fehler, beispielsweise &quot;Out of office&quot; oder technischer Fehler bei Absendern vom Typ &quot;Postmaster&quot;.
 
@@ -659,18 +659,18 @@ SR Generic DELIVRD 000|#MESSAGE#
 * Alle Fehlernachrichten beginnen mit **SR**, sodass SMS-Fehlercodes von E-Mail-Fehlercodes unterschieden werden können.
 * Der zweite Teil der Fehlernachricht (in diesem Beispiel **Allgemein**) bezieht sich auf den Namen der SMSC-Implementierung entsprechend der Definition im Feld **[!UICONTROL Name der SMSC-Implementierung]** des externen SMS-Kontos.
 
-   Da derselbe Fehlercode bei jedem Provider eine andere Bedeutung haben kann, sehen Sie in diesem Feld, welcher Provider den Fehlercode erstellt hat. Den Fehler können Sie dann in der entsprechenden Dokumentation des Providers einsehen.
+  Da derselbe Fehlercode bei jedem Provider eine andere Bedeutung haben kann, sehen Sie in diesem Feld, welcher Provider den Fehlercode erstellt hat. Den Fehler können Sie dann in der entsprechenden Dokumentation des Providers einsehen.
 
 * Der dritte Teil der Fehlernachricht (in diesem Beispiel **DELIVRD**) entspricht dem Statuscode, der von der Empfangsbestätigung unter Verwendung des – im externen SMS-Konto definierten – regulären Ausdruck zur Statusextraktion abgerufen wurde.
 
-   Dieser reguläre Ausdruck ist im Tab **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos spezifiziert.
+  Dieser reguläre Ausdruck ist im Tab **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos spezifiziert.
 Standardmäßig erfolgt die Regex-Extraktion des **stat:**-Felds entsprechend der Definition im Bereich **Appendix B** der **SMPP 3.4-Spezifikation**.
 
 * Der vierte Teil der Fehlernachricht (in diesem Beispiel **000**) entspricht dem Fehlercode, der von der Empfangsbestätigung unter Verwendung des im externen SMS-Konto definierten regulären Ausdrucks zur Fehlercode-Extraktion extrahiert wurde.
 
-   Dieser reguläre Ausdruck ist im Tab **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos spezifiziert.
+  Dieser reguläre Ausdruck ist im Tab **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos spezifiziert.
 
-   Standardmäßig erfolgt die Regex-Extraktion des **err:**-Felds entsprechend der Definition im Bereich **Anhang B** der **SMPP 3.4-Spezifikation**.
+  Standardmäßig erfolgt die Regex-Extraktion des **err:**-Felds entsprechend der Definition im Bereich **Anhang B** der **SMPP 3.4-Spezifikation**.
 
 * Alles, was hinter dem senkrechten Strich (|) steht, wird nur in der Spalte **[!UICONTROL Erster Text]** der Tabelle **[!UICONTROL Versandlogqualifizierung]** dargestellt. Nach der Bereinigung der Nachricht wird dieser Inhalt durch **#MESSAGE#** ersetzt. Dadurch wird vermieden, dass für ähnliche Fehler mehrere Einträge vorgenommen werden. Das Verfahren ist dasselbe wie für E-Mails.
 

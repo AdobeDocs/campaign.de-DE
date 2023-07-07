@@ -24,7 +24,7 @@ In einem Workflow-Diagramm sind Scripts allgegenwärtig:
 * Die &#39;Test&#39;-Aktivität evaluiert JavaScript-Ausdrücke, um die richtige Transition zu aktivieren.
 * Die meisten Textfelder sind JavaScript-Templates: Sie können zwischen &lt;%= und %> JavaScript-Ausdrücke enthalten. Darüber hinaus besteht Zugriff auf eine Dropdown-Liste, die die Erstellung der Ausdrücke erleichtert.
 
-   ![](assets/script-button.png)
+  ![](assets/script-button.png)
 
 ## Script-Objekte {#objects-exposed}
 

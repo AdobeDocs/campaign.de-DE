@@ -29,9 +29,9 @@ Nach der Speicherung wird der Versand zum Kampagnen-Dashboard hinzugefügt.
 
 * Über einen Kampagnen-Workflow auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** durch Hinzufügen des Versands.
 
-   ![](assets/campaign-wf-delivery.png)
+  ![](assets/campaign-wf-delivery.png)
 
-   Nach dem Start des Workflows wird der Versand zum Kampagnen-Dashboard hinzugefügt.
+  Nach dem Start des Workflows wird der Versand zum Kampagnen-Dashboard hinzugefügt.
 
 Informationen darüber, wie Sie die Versandvalidierung einrichten und ausführen, finden Sie [auf dieser Seite](marketing-campaign-approval.md).
 
@@ -94,21 +94,21 @@ Die Dateiextraktion startet zwei Prozesse: Budgetberechnung und Bestandsberechnu
 
 * Die Registerkarte **[!UICONTROL Budget]** ermöglicht die Budgetverwaltung der Kampagne. Die Summe der Kosteneinträge wird im Feld **[!UICONTROL Berechnete Kosten]** der Hauptregisterkarte der Kampagne und des Programms, zu dem sie gehört, angezeigt. Die Beträge werden auch im Kampagnenbudget angezeigt.
 
-   ![](assets/campaign-budget-tab.png)
+  ![](assets/campaign-budget-tab.png)
 
-   Die tatsächlichen Kosten werden am Ende entsprechend der vom Router kommunizierten Informationen berechnet: Nur die tatsächlich versendeten Briefe werden fakturiert.
+  Die tatsächlichen Kosten werden am Ende entsprechend der vom Router kommunizierten Informationen berechnet: Nur die tatsächlich versendeten Briefe werden fakturiert.
 
 * Die Lagerbestände werden im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Lager]** des Baums definiert.
 
-   ![](assets/campaign-stocks.png)
+  ![](assets/campaign-stocks.png)
 
-   Kostenstrukturen im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Dienstleister]**.
+  Kostenstrukturen im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Dienstleister]**.
 
-   ![](assets/campaign-service-providers.png)
+  ![](assets/campaign-service-providers.png)
 
-   Lagerpositionen können im Lager-Bereich angezeigt werden. Öffnen Sie eine Lagerposition, um den Anfangsbestand festzulegen. Der Bestand verringert sich mit jedem Versand. Sie haben die Möglichkeit, eine Alarmstufe und Benachrichtigungen zu konfigurieren.
+  Lagerpositionen können im Lager-Bereich angezeigt werden. Öffnen Sie eine Lagerposition, um den Anfangsbestand festzulegen. Der Bestand verringert sich mit jedem Versand. Sie haben die Möglichkeit, eine Alarmstufe und Benachrichtigungen zu konfigurieren.
 
 
-   >[!NOTE]
-   >
-   >Weitere Informationen über Budgets finden Sie [in diesem Abschnitt](providers--stocks-and-budgets.md).
+  >[!NOTE]
+  >
+  >Weitere Informationen über Budgets finden Sie [in diesem Abschnitt](providers--stocks-and-budgets.md).

@@ -45,6 +45,7 @@ Gehen Sie wie folgt vor, um ein Budget zu erstellen:
 >[!NOTE]
 >
 >Sie können ein übergeordnetes Budget auswählen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#linking-a-budget-to-another).
+>
 
 ### Beträge berechnen {#calculating-amounts}
 

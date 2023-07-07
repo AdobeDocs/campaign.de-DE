@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
@@ -61,11 +61,11 @@ In Adobe Campaign gibt es zwei Möglichkeiten, ein dynamisches Bild von Target i
 
 * Wenn Sie den Digital Content Editor verwenden, wählen Sie ein vorhandenes Bild und dann aus der Symbolleiste **[!UICONTROL Einfügen]** > **[!UICONTROL Dynamisches Bild von Adobe Target]**.
 
-   ![](assets/target_5.png)
+  ![](assets/target_5.png)
 
 * Wenn Sie den Standardeditor verwenden, platzieren Sie den Cursor an die Stelle, an der das Bild eingefügt werden soll, und wählen Sie aus dem Dropdown-Menü &quot;Personalisierung&quot; **[!UICONTROL Einfügen]** > **[!UICONTROL Dynamisches Bild von Adobe Target...]**.
 
-   ![](assets/target_12.png)
+  ![](assets/target_12.png)
 
 Anschließend können Sie die Bildparameter definieren:
 

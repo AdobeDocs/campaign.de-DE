@@ -25,17 +25,17 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
    * **[!UICONTROL Explizite URL]**: Die URL wird im entsprechenden Feld angegeben. Die URL kann Variablen enthalten.
 
-      ![](assets/download_web_edit.png)
+     ![](assets/download_web_edit.png)
 
    * Bei Verwendung eines **[!UICONTROL externen Kontos]** wird das Konto aus der Dropdown-Liste ausgewählt und die zu ladende Datei angegeben.
 
-      Externe Konten werden im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** des Navigationsbaums konfiguriert. In der Aktivität kann über das Symbol **[!UICONTROL Verknüpftes Element öffnen]** auf die Parameter zugegriffen werden.
+     Externe Konten werden im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** des Navigationsbaums konfiguriert. In der Aktivität kann über das Symbol **[!UICONTROL Verknüpftes Element öffnen]** auf die Parameter zugegriffen werden.
 
-      ![](assets/download_web_edit_external.png)
+     ![](assets/download_web_edit_external.png)
 
    * **[!UICONTROL Adobe-Campaign-Instanz]**: Die Übertragung erfolgt über eine Adobe-Campaign-Instanz.
 
-      ![](assets/download_web_edit_instance.png)
+     ![](assets/download_web_edit_instance.png)
 
 1. **Verlaufserstellung**
 

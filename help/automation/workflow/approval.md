@@ -5,7 +5,7 @@ description: Validierung
 feature: Workflows, Approvals
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 100%
 
@@ -25,15 +25,15 @@ Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung v
 
 * Zur Auswahl eines einzelnen Benutzers ist im Feld **[!UICONTROL Zuweisungstyp]** die Option **[!UICONTROL Benutzer]** zu wählen. Wählen Sie dann aus der Dropdown-Liste des Felds **[!UICONTROL Zuweisung]** den gewünschten Benutzer aus.
 
-   ![](assets/s_advuser_validation_box_assign.png)
+  ![](assets/s_advuser_validation_box_assign.png)
 
-   >[!CAUTION]
-   >
-   >Nur der ausgewählte Benutzer verfügt über die Berechtigung zur Validierung der Aufgabe.
+  >[!CAUTION]
+  >
+  >Nur der ausgewählte Benutzer verfügt über die Berechtigung zur Validierung der Aufgabe.
 
 * Es besteht die Möglichkeit, eine Abfrage zu erstellen, um die zur Validierung berechtigten Benutzer zu filtern. Wählen Sie hierzu im Feld **[!UICONTROL Zuweisungstyp]** die Option **[!UICONTROL Filter]** und klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter...]**, um die Filterkriterien zu definieren, wie in unten stehendem Beispiel dargestellt:
 
-   ![](assets/s_advuser_validation_box_filter.png)
+  ![](assets/s_advuser_validation_box_filter.png)
 
 Im Fall einer einfachen Validierung, wird die der Wahl des Benutzers entsprechende Transition aktiviert und die Aufgabe abgeschlossen. Andere Benutzer können nun die Aufgabe nicht mehr validieren.
 
@@ -69,8 +69,8 @@ Ein Validierungsbeispiel finden Sie im Abschnitt [Validierungen definieren](defi
 
 * **[!UICONTROL response]**
 
-   Kommentar zur Antwort
+  Kommentar zur Antwort
 
 * **[!UICONTROL responseOperator]**
 
-   Kennung des Benutzers, der die Validierung vorgenommen hat. Dieses Feld enthält einen numerischen Wert, ist aber vom Typ **[!UICONTROL String]**.
+  Kennung des Benutzers, der die Validierung vorgenommen hat. Dieses Feld enthält einen numerischen Wert, ist aber vom Typ **[!UICONTROL String]**.

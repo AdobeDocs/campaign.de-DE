@@ -19,11 +19,11 @@ Der Bildschirm der Workflow-Eigenschaften enthält einen **[!UICONTROL Erweitert
 
 * vereinfacht für die Aktivität **[!UICONTROL Start]** und **[!UICONTROL Ende]**;
 
-   ![](assets/wf-advanced-basic.png)
+  ![](assets/wf-advanced-basic.png)
 
 * detailliert für die **[!UICONTROL Abfrageaktivität]**.
 
-   ![](assets/wf-advanced-full.png)
+  ![](assets/wf-advanced-full.png)
 
 Im Folgenden werden die im **[!UICONTROL Erweitert]**-Tab jeweils auszufüllenden Felder beschrieben.
 

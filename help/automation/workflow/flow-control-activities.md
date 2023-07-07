@@ -27,4 +27,4 @@ Bei den folgenden Aktivitäten handelt es sich um Datenbankaktivitäten, d. h. s
 * **[Test](test.md)**: aktiviert eine Transition in Abhängigkeit vom Ergebnis eines Tests.
 * **[Zeitliche Beschränkung](time-constraint.md)**: setzt die Ausführung einer Aufgabe für eine bestimmte Dauer aus.
 * **[Warten](wait.md)**: aktiviert eine ausgehende Transition nach einer definierten Dauer.
-   <!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->
+  <!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->

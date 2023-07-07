@@ -1,30 +1,30 @@
 ---
-title: E-Mail-Parameter in Adobe Campaign
-description: Erfahren Sie mehr über die Optionen und Einstellungen, die für den E-Mail-Versand in Adobe Campaign spezifisch sind.
+title: Konfigurieren von E-Mail-Parametern in Adobe Campaign
+description: Erfahren Sie mehr zu den Optionen und Einstellungen, die spezifisch für den E-Mail-Versand in Adobe Campaign sind.
 feature: Email
 role: User
 level: Beginner, Intermediate, Experienced
 source-git-commit: 44f30f753e3ed75b7e56caf7bd8cdfa7cbee5c35
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # E-Mail-Parameter {#email-parameters}
 
-In diesem Abschnitt werden die Optionen und Parameter beschrieben, die in den Versandeigenschaften verfügbar sind, die für den E-Mail-Versand spezifisch sind.
+In diesem Abschnitt werden die in den Versandeigenschaften verfügbaren Optionen und Parameter beschrieben, die für den E-Mail-Versand spezifisch sind.
 
-## Email BCC verwenden {#email-bcc}
+## Verwenden von E-Mail BCC {#email-bcc}
 
 <!--
 >[!NOTE]
 >
 >This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
 
-Sie können Adobe Campaign so konfigurieren, dass von den von der Plattform gesendeten E-Mails eine Kopie beibehalten wird.
+Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird.
 
-Adobe Campaign selbst ermöglicht keine Verwaltung von archivierten Dateien. Sie können die Nachrichten Ihrer Wahl an eine dedizierte BCC-E-Mail-Adresse (Blind Carbon Copy) senden, von der aus sie mithilfe eines externen Systems verarbeitet und archiviert werden können. Die .eml-Dateien, die den gesendeten E-Mails entsprechen, können dann auf einen Remote-Server wie z. B. einen SMTP-E-Mail-Server übertragen werden.
+Adobe Campaign selbst ermöglicht keine Verwaltung von archivierten Dateien. Sie können aber die gewünschten Nachrichten an eine bestimmte BCC (Blind Carbon Copy)-E-Mail-Adresse senden, wo sie mithilfe eines externen Systems verarbeitet und archiviert werden. Die .eml-Dateien, die den gesendeten E-Mails entsprechen, können dann auf einen Remote-Server wie z. B. einen SMTP-E-Mail-Server übertragen werden.
 
 >[!CAUTION]
 >
@@ -66,7 +66,7 @@ Beachten Sie die folgenden Besonderheiten und Empfehlungen:
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->
 
-## Nachrichtenformate auswählen {#selecting-message-formats}
+## Auswählen von Nachrichtenformaten {#selecting-message-formats}
 
 Sie können das Format der zu versendenden E-Mails konfigurieren. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Eigenschaften]** und begeben Sie sich in den Tab .
 
@@ -84,7 +84,7 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
   >[!IMPORTANT]
   >
-  >Diese Option umfasst beide Versionen des Dokuments. Dadurch wird der Versanddurchsatz reduziert, da die Nachrichtengröße größer ist.
+  >Diese Option umfasst beide Versionen der Nachricht. Dadurch verringert sich der Versanddurchsatz, da die Nachricht größer ist.
 
 * **[!UICONTROL Alle Nachrichten im Textformat senden]**
 
@@ -95,7 +95,7 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 >
 >For more on defining the email content, see [this section]().-->
 
-## Zeichenkodierung festlegen {#character-encoding}
+## Festlegen der Zeichencodierung {#character-encoding}
 
 Auf dem Tab **[!UICONTROL SMTP]** der Versandparameter können Sie im Abschnitt **[!UICONTROL Zeichenkodierung]** eine bestimmte Kodierung festlegen.
 
@@ -107,21 +107,21 @@ Wählen Sie dazu die Option **[!UICONTROL Nachrichtenkodierung erzwingen (Codepa
 
 ![](assets/email-smtp-encoding.png)
 
-## Bounce Messages verwalten {#managing-bounce-emails}
+## Verwalten von Bounce Messages {#managing-bounce-emails}
 
-Die **[!UICONTROL SMTP]** in den Versandeigenschaften können Sie auch die Verwaltung von Bounce Messages konfigurieren.
+Auf der Registerkarte **[!UICONTROL SMTP]** der Versandeigenschaften lässt sich der Umgang mit Bounce Messages konfigurieren.
 
-* **[!UICONTROL Fehleradressen]**: Bounce Messages werden standardmäßig in der Standard-Fehlerbox der Plattform empfangen. Sie können aber auch eine bestimmte Fehleradresse für einen Versand definieren.
+* **[!UICONTROL Fehler-an-Adresse]**: Standardmäßig gehen Bounce Messages im Standard-Fehlerpostfach der Plattform ein. Es besteht jedoch die Möglichkeit, für einen Versand durch Abwählen der Standardoption eine spezifische Fehleradresse anzugeben.
 
 * **[!UICONTROL Bounce-Adresse]**: Sie können auch eine andere Adresse definieren, an die die nicht verarbeiteten Bounce Messages weitergeleitet werden. Diese Adresse ermöglicht es, die Gründe für das Bounce-Verhalten zu untersuchen, wenn E-Mails von der Anwendung nicht automatisch qualifiziert werden konnten.
 
-Jedes dieser Felder kann mithilfe des dedizierten Symbols personalisiert werden. Weitere Informationen zu Personalisierungsfeldern finden Sie in [diesem Abschnitt](personalization-fields.md).
+Jedes dieser Felder kann mithilfe des dedizierten Symbols personalisiert werden. In [diesem Abschnitt](personalization-fields.md) erfahren Sie mehr über Personalisierungsfelder.
 
 ![](assets/email-smtp-bounce.png)
 
 Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschnitt](delivery-failures.md#bounce-mail-management).
 
-## SMTP-Header hinzufügen {#adding-smtp-headers}
+## Hinzufügen von SMTP-Headern {#adding-smtp-headers}
 
 Sie haben die Möglichkeit, Ihren Sendungen weitere SMTP-Header hinzuzufügen. Gehen Sie hierfür in den Tab **[!UICONTROL SMTP]** in den Versandeigenschaften.
 

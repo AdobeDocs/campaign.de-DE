@@ -21,15 +21,15 @@ Außerdem wird die Konfiguration eines von einem Sammlungselement (orangefarbene
 
 * Welche Tabelle soll ausgewählt werden?
 
-   Die Empfängertabelle (**nms:recipient**)
+  Die Empfängertabelle (**nms:recipient**)
 
 * Felder, die als Ausgabespalten verwendet werden sollen?
 
-   Primärschlüssel, Nachname, Vorname und E-Mail
+  Primärschlüssel, Nachname, Vorname und E-Mail
 
 * Nach welchen Kriterien sind die Empfänger zu filtern?
 
-   Nach den Versandlogs der Empfänger, bis 7 Tage vor dem Tagesdatum
+  Nach den Versandlogs der Empfänger, bis 7 Tage vor dem Tagesdatum
 
 Gehen Sie wie folgt vor:
 
@@ -47,21 +47,21 @@ Gehen Sie wie folgt vor:
 
    * Wählen Sie also im **[!UICONTROL Ausdruck]**-Feld das durch einen orangefarbenen Knoten symbolisierte Sammlungselement **[!UICONTROL Versandlogs der Empfänger (broadLog)]**.
 
-      ![](assets/query_editor_nveau_67.png)
+     ![](assets/query_editor_nveau_67.png)
 
-      In diesem Fall ist der zu wählende Operator **[!UICONTROL nicht wie]** und es wird kein Wert angegeben.
+     In diesem Fall ist der zu wählende Operator **[!UICONTROL nicht wie]** und es wird kein Wert angegeben.
 
    * Der Inhalt der zweiten Filterbedingung ergibt sich direkt aus der Wahl der ersten: Hier wird das Feld **[!UICONTROL Ereignisdatum]** aus der Tabelle **[!UICONTROL Versandlogs der Empfänger]** vorgeschlagen, da eine Relation mit dieser Tabelle besteht.
 
-      ![](assets/query_editor_nveau_36.png)
+     ![](assets/query_editor_nveau_36.png)
 
-      Wählen Sie also **[!UICONTROL Ereignisdatum]** und den Operator **[!UICONTROL streng später als]** aus. Geben Sie den Wert **[!UICONTROL DaysAgo (7)]** ein. Klicken Sie hierzu im Feld **[!UICONTROL Wert]** auf **[!UICONTROL Ausdruck bearbeiten]**. Wählen Sie im Fenster **[!UICONTROL Formeltyp]** die Option **[!UICONTROL Datumsfunktionen]** und **[!UICONTROL Aktuelles Datum abzüglich n Tage]**. Geben Sie den Wert &quot;7&quot; ein.
+     Wählen Sie also **[!UICONTROL Ereignisdatum]** und den Operator **[!UICONTROL streng später als]** aus. Geben Sie den Wert **[!UICONTROL DaysAgo (7)]** ein. Klicken Sie hierzu im Feld **[!UICONTROL Wert]** auf **[!UICONTROL Ausdruck bearbeiten]**. Wählen Sie im Fenster **[!UICONTROL Formeltyp]** die Option **[!UICONTROL Datumsfunktionen]** und **[!UICONTROL Aktuelles Datum abzüglich n Tage]**. Geben Sie den Wert &quot;7&quot; ein.
 
-      ![](assets/query_editor_nveau_37.png)
+     ![](assets/query_editor_nveau_37.png)
 
-      Hiermit ist die Konfiguration der Filterbedingung abgeschlossen.
+     Hiermit ist die Konfiguration der Filterbedingung abgeschlossen.
 
-      ![](assets/query_editor_nveau_38.png)
+     ![](assets/query_editor_nveau_38.png)
 
 1. Im Fenster **[!UICONTROL Datenformatierung]** können Sie die Anzeige dahingehend ändern, dass alle Nachnamen in Großbuchstaben angezeigt werden. Klicken Sie hierfür in der Zeile **[!UICONTROL Nachname]** auf **[!UICONTROL Schreibweise]** und wählen Sie **[!UICONTROL Alles in Großbuchstaben]** aus der Dropdownliste.
 

@@ -5,7 +5,7 @@ role: User, Admin
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 100%
 
@@ -60,6 +60,7 @@ Nachdem Sie den erweiterten Zugriff erhalten haben, erstellen Sie eine Twitter-A
 >[!NOTE]
 >
 >Pro Twitter-Konto benötigen Sie eine Anwendung. Daher müssen Sie eine weitere Testanwendung erstellen, um Testsendungen an Ihr Testkonto durchzuführen.
+>
 
 ## Erstellen eines Twitter-Service in Campaign. {#create-tw-service}
 
@@ -70,6 +71,7 @@ Um Ihre Campaign-Instanz mit Ihrem Twitter-Konto zu verknüpfen, erstellen Sie e
 >Erstellen Sie einen **Twitter**-Service pro Twitter-Konto. Infolgedessen müssen Sie einen weiteren Test-Service erstellen, um Testsendungen an Ihr [Testkonto](#tw-test-account) zu senden.
 >
 >Jeder **Twitter**-Service muss ebenfalls von Adobe auf Ihrer MID-Instanz erstellt werden. Wenden Sie sich an Ihren Adobe-Support, um Ihre Umgebung konfigurieren zu lassen.
+>
 
 Um Einstellungen vorzunehmen, müssen Sie sowohl auf Ihre Adobe Campaign-Client-Konsole als auch auf die Berechtigungen Ihrer Twitter-App zugreifen.
 
@@ -81,6 +83,7 @@ Um Einstellungen vorzunehmen, müssen Sie sowohl auf Ihre Adobe Campaign-Client-
    >[!CAUTION]
    >
    >Der **[!UICONTROL Interne Name]** des Services muss mit dem Namen des Twitter-Kontos identisch sein.
+   >
 
 1. Standardmäßig werden Follower im Ordner **[!UICONTROL Besucher]** gespeichert. Sie können über das Feld **[!UICONTROL Besucherordner]** eine andere Position auswählen. [Weitere Informationen](../send/twitter.md#direct-tw-messages)
 
@@ -100,7 +103,7 @@ Um Ihre Einstellungen zu überprüfen, gehen Sie folgendermaßen vor:
 
 * Bearbeiten Sie den **Twitter**-Service, den Sie gerade erstellt haben.
 * Öffnen Sie die Registerkarte **[!UICONTROL Twitter-Seite]**: Ihr Twitter-Konto sollte angezeigt werden.
-   ![](assets/tw-page.png)
+  ![](assets/tw-page.png)
 
 
 ## Synchronisieren Ihres Twitter-Kontos {#synchro-tw-accounts}

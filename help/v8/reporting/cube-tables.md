@@ -113,7 +113,7 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
    * Kombination von Kennzahlen: ermöglicht die Erstellung der neuen Kennzahl auf Basis von existierenden Kennzahlen.
 
-      Für diese Kennzahlen stehen folgende Funktionen zur Verfügung: Summe, Differenz, Produkt und Rate.
+     Für diese Kennzahlen stehen folgende Funktionen zur Verfügung: Summe, Differenz, Produkt und Rate.
 
    * Anteil: ermöglicht die Berechnung der Anzahl an für eine gegebene Dimension gemessenen Datensätzen. Der Anteil kann in Bezug auf eine Dimension oder eine Unter-Dimension berechnet werden.
    * Abweichung: ermöglicht die Berechnung der Abweichungen der Werte einer Ebene.

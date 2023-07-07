@@ -32,7 +32,7 @@ Die in Kampagnen-Workflows zur Verfügung stehende Aktivität **Versandentwurf**
 
    * Versand mit Abfrage an das Angebotsmodul: Kreuzen Sie in diesem Fall die Option **[!UICONTROL Anzahl der ausgewählten Vorschläge begrenzen]** an. Konfigurieren Sie die Platzierung und die Anzahl an zu unterbreitenden Angeboten.
 
-      Gewichtung und Eignungsregeln der Angebote werden vom Angebotsmodul berücksichtigt.
+     Gewichtung und Eignungsregeln der Angebote werden vom Angebotsmodul berücksichtigt.
 
    * Versand ohne Abfrage an das Angebotsmodul: Alle im Versandentwurf enthaltenen Angebote werden unterbreitet.
 

@@ -27,11 +27,11 @@ Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Ausgehende Transition erzeugen]**
 
-   Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Sie haben die Wahl, die Zielgruppe der Versandaktion in der Transition abzurufen, oder nicht.
+  Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Sie haben die Wahl, die Zielgruppe der Versandaktion in der Transition abzurufen, oder nicht.
 
 * **[!UICONTROL Fehler verarbeiten]**
 
-   Siehe [Fehler verarbeiten](monitor-workflow-execution.md#processing-errors).
+  Siehe [Fehler verarbeiten](monitor-workflow-execution.md#processing-errors).
 
 ## Eingabeparameter {#input-parameters}
 

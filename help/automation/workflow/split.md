@@ -73,7 +73,8 @@ Es besteht die Möglichkeit, die Anzahl an Datensätzen in Teilmengen zu begrenz
    * **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten]**: Die Begrenzung erfolgt mithilfe von Sortierungskriterien. Wenn Sie beispielsweise das Feld **[!UICONTROL Alter]** als Kriterium wählen und eine Begrenzung von 100 angeben, werden nur die 100 jüngsten Empfänger beibehalten.
    * **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten (Auswahl nach Kriterien oder zufällig)]**: Kombination der beiden vorangehenden Optionen. Diese Option ermöglicht die Angabe von Sortierungskriterien und im Anschluss eine zufällige Auswahl aus den ersten Datensätzen, falls mehrere Datensätze für die gewählten Kriterien den gleichen Wert aufweisen.
 
-      Angenommen, das Feld **[!UICONTROL Alter]** wurde als Sortierungskriterium gewählt und die Anzahl der auszugebenden Datensätze auf 100 begrenzt. Wenn nun die 2000 jüngsten Empfänger in der Datenbank alle 18 Jahre alt sind, werden aus diesen 2000 Empfängern 100 zufällig ausgewählt.
+     Angenommen, das Feld **[!UICONTROL Alter]** wurde als Sortierungskriterium gewählt und die Anzahl der auszugebenden Datensätze auf 100 begrenzt. Wenn nun die 2000 jüngsten Empfänger in der Datenbank alle 18 Jahre alt sind, werden aus diesen 2000 Empfängern 100 zufällig ausgewählt.
+
    ![](assets/s_user_segmentation_partage_wz1.png)
 
 1. Wenn Sie sich für die Definition von Sortierungskriterien entscheiden, können Sie im darauffolgenden Schritt die Spalten und die Reihenfolge der Sortierung bestimmen.
@@ -88,7 +89,7 @@ Es besteht die Möglichkeit, die Anzahl an Datensätzen in Teilmengen zu begrenz
 
    * **[!UICONTROL Größe (in %)]**: Begrenzt die Datensätze auf einen prozentualen Anteil in Bezug auf die gesamte Population (in der vorangehenden Abbildung 10 %).
 
-      Der prozentuale Anteil bezieht sich auf die Eingangspopulation und nicht auf das Ergebnis der Aktivität.
+     Der prozentuale Anteil bezieht sich auf die Eingangspopulation und nicht auf das Ergebnis der Aktivität.
 
    * **[!UICONTROL Größe (in % von der Teilmenge)]**: Begrenzt die Datensätze auf einen prozentualen Anteil in Bezug auf die Teilmenge (und nicht auf die Eingangspopulation).
    * **[!UICONTROL Maximale Größe]**: Begrenzt die Datensätze auf eine anzugebende Anzahl.
@@ -148,7 +149,7 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
    * **[!UICONTROL Verteilungstyp]**: Wählen Sie hier aus, ob der Begrenzungswert im Tab **[!UICONTROL Verteilung]** als **[!UICONTROL Feste Größe]** oder als **[!UICONTROL Größe in Prozent]** ausgedrückt werden soll.
    * **[!UICONTROL Validierungsspeicherung]**: Wenn Sie die Aktivität [Lokale Validierung](local-approval.md) in Ihrem Zielgruppen-Workflow verwenden, geben Sie das Schema ein, in dem die Validierungsergebnisse gespeichert werden. Sie müssen ein Speicherschema pro Zielgruppenbestimmungsschema angeben. Wenn Sie das Zielgruppenbestimmungsschema für **[!UICONTROL Empfänger]** verwenden, geben Sie das standardmäßige Speicherschema **[!UICONTROL Lokale Validierung der Empfänger]** ein.
 
-      Bei einer einfachen Begrenzung durch Datenverteilung ohne lokale Validierung, ist im Feld **[!UICONTROL Validierungsspeicherung]** keine Angabe erforderlich.
+     Bei einer einfachen Begrenzung durch Datenverteilung ohne lokale Validierung, ist im Feld **[!UICONTROL Validierungsspeicherung]** keine Angabe erforderlich.
 
 1. Wenn Sie die Aktivität [Lokale Validierung](local-approval.md) verwenden, geben Sie die **[!UICONTROL Erweiterten Einstellungen]** für die Verteilungsvorlage ein:
 
@@ -158,19 +159,19 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
 
    * **[!UICONTROL Nachrichten validieren]**: Kreuzen Sie diese Option an, wenn alle Empfänger in der Liste der zu validierenden Empfänger vor-ausgewählt sein sollen. Wenn die Option deaktiviert ist, wird kein Empfänger vor-ausgewählt.
 
-      >[!NOTE]
-      >
-      >Diese Option ist standardmäßig aktiviert.
+     >[!NOTE]
+     >
+     >Diese Option ist standardmäßig aktiviert.
 
-      ![](assets/local_validation_notification.png)
+     ![](assets/local_validation_notification.png)
 
    * **[!UICONTROL Versandtitel]**: Erlaubt die Definition eines Ausdrucks zur Berechnung des Versandtitels in der Versandreaktionen-Benachrichtigung. Der Standardausdruck gibt den Versandtitel aus (Compute String). Der Ausdruck kann angepasst werden.
 
-      ![](assets/local_validation_notification_3.png)
+     ![](assets/local_validation_notification_3.png)
 
    * **[!UICONTROL Gruppierungsfeld]**: Erlaubt die Definition der für die Empfängeranzeige in den Validierungs- und Versandreaktionen-Benachrichtigungen verwendeten Gruppierung.
 
-      ![](assets/local_validation_notification_4.png)
+     ![](assets/local_validation_notification_4.png)
 
    * **[!UICONTROL Webschnittstelle]**: Erlaubt die Zuordnung einer Webschnittstelle zur Empfängerliste. In den Validierungs- und Versandreaktionen-Benachrichtigungen ist dann jeder Empfänger anklickbar und leitet auf die ausgewählte Webschnittstelle weiter. Im Feld **[!UICONTROL Parameter]** (z. B. **[!UICONTROL recipientId]**) kann der zusätzliche Parameter angegeben werden, der in der URL der Webanwendung verwendet werden soll.
 
@@ -181,16 +182,16 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
    * **[!UICONTROL Wert des Verteilungsfeldes]**: Geben Sie die Werte der Verteilung an.
    * **[!UICONTROL Prozent/Feste Größe]**: Geben Sie die jedem Wert zugeordnete Speicherbegrenzung in Prozent oder als feste Größe an.
 
-      Diese Spalte wird durch das Feld **[!UICONTROL Verteilungstyp]** im **[!UICONTROL Allgemein]**-Tab bestimmt.
+     Diese Spalte wird durch das Feld **[!UICONTROL Verteilungstyp]** im **[!UICONTROL Allgemein]**-Tab bestimmt.
 
    * **[!UICONTROL Titel]**: Vergeben Sie für jeden Verteilungswert einen Titel.
    * **[!UICONTROL Gruppe oder Benutzer]**: Wenn Sie eine [Lokale Validierung](local-approval.md) verwenden, wählen Sie den/die Benutzende(n) oder die Benutzergruppe aus, die jedem Verteilungswert zugeordnet sind.
 
-      Bei einer einfachen Begrenzung durch Datenverteilung ohne lokale Validierung ist in der Spalte **[!UICONTROL Benutzer oder Benutzergruppe]** keine Eingabe erforderlich.
+     Bei einer einfachen Begrenzung durch Datenverteilung ohne lokale Validierung ist in der Spalte **[!UICONTROL Benutzer oder Benutzergruppe]** keine Eingabe erforderlich.
 
-      >[!CAUTION]
-      >
-      >Stellen Sie sicher, dass die Benutzenden über die nötigen Berechtigungen verfügen.
+     >[!CAUTION]
+     >
+     >Stellen Sie sicher, dass die Benutzenden über die nötigen Berechtigungen verfügen.
 
 ## Filterparameter {#filtering-parameters}
 

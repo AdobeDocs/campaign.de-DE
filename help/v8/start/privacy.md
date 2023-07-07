@@ -6,7 +6,7 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 100%
 
@@ -144,7 +144,7 @@ Wenn Sie benutzerdefinierte Tabellen erstellt haben, für die eine Relation zur 
 Unten finden Sie die verschiedenen Status von Datenschutzanfragen in Adobe Campaign und deren Bedeutung:
 
 * **[!UICONTROL Neu]** / **[!UICONTROL Erneuter Versuch steht aus]**: Durchführung läuft, der Workflow hat die Anfrage noch nicht verarbeitet.
-* **[!UICONTROL Verarbeitungsvorgang läuft]** / **[!UICONTROL Erneuter Versuch läuft]**: Der Workflow verarbeitet gerade die Anfrage.
+* **[!UICONTROL Verarbeitung läuft]** / **[!UICONTROL Erneuter Versuch läuft]**: Der Workflow verarbeitet gerade die Anfrage.
 * **[!UICONTROL Löschen steht aus]**: Der Workflow hat alle zu löschenden Empfängerdaten identifiziert.
 * **[!UICONTROL Löschvorgang läuft]**: Der Workflow führt gerade die Löschung durch.
 * **[!UICONTROL Beendet]**: Die Verarbeitung der Anfrage wurde ohne Fehler abgeschlossen.

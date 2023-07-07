@@ -39,7 +39,7 @@ In diesem Beispiel werden verschiedene E-Mails an verschiedene Populationen gese
 * Speichern des Abfrageergebnisses
 * Segmentieren des Ergebnisses zum Senden mehrerer Sendungen
 
-   ![Die Verzweigung folgt der Schnittmenge aus zwei Abfragen und vorangehenden Aktivitäten zur Listen-Update- und Aufspaltungsaktivität.](assets/wkf_fork_example.png)
+  ![Die Verzweigung folgt der Schnittmenge aus zwei Abfragen und vorangehenden Aktivitäten zur Listen-Update- und Aufspaltungsaktivität.](assets/wkf_fork_example.png)
 
 Der Workflow umfasst die folgenden Aktivitäten:
 

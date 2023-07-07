@@ -25,59 +25,59 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 * **Inhalt aktualisieren**: Die Aufgabe kann den Betreff des Inhalts ändern oder den gesamten XML-Inhalt importieren.
 * **Auszuführende Aktion**: Der Inhalt kann gespeichert oder erzeugt werden.
 
-   ![](assets/content_mgmt_edit.png)
+  ![](assets/content_mgmt_edit.png)
 
 1. **Content**
 
    * **[!UICONTROL Wird durch die Transition angegeben]**
 
-      Bei Auswahl dieser Option wird der durch die eingehende Transition übermittelte Inhalt verwendet. Dies bedeutet, dass das Ereignis, welches das Content Management aktiviert, eine **[!UICONTROL contentId]**-Variable enthalten muss. Diese kann durch eine vorangehende Content-Management-Aktivität oder durch ein beliebiges Script bestimmt worden sein.
+     Bei Auswahl dieser Option wird der durch die eingehende Transition übermittelte Inhalt verwendet. Dies bedeutet, dass das Ereignis, welches das Content Management aktiviert, eine **[!UICONTROL contentId]**-Variable enthalten muss. Diese kann durch eine vorangehende Content-Management-Aktivität oder durch ein beliebiges Script bestimmt worden sein.
 
    * **[!UICONTROL Explizit]**
 
-      Wählen Sie diese Option, wenn ein zuvor erstellter Inhalt verwendet werden soll. Geben Sie diesen im Feld **[!UICONTROL Inhalt]** an. Das Feld erscheint nur, wenn die Option **[!UICONTROL Explizit]** angekreuzt wurde.
+     Wählen Sie diese Option, wenn ein zuvor erstellter Inhalt verwendet werden soll. Geben Sie diesen im Feld **[!UICONTROL Inhalt]** an. Das Feld erscheint nur, wenn die Option **[!UICONTROL Explizit]** angekreuzt wurde.
 
-      ![](assets/content_mgmt_explicit.png)
+     ![](assets/content_mgmt_explicit.png)
 
    * **[!UICONTROL Wird durch ein Script erstellt]**
 
-      Die Kennung des Inhalts wird über ein Script erstellt. Im Feld **[!UICONTROL Script]** wird das JavaScript-Template berechnet, welches die Kennung (den Primärschlüssel) des Inhalts evaluiert. Das Feld erscheint nur, wenn die Option **[!UICONTROL Wird durch ein Script erstellt]** angekreuzt wurde.
+     Die Kennung des Inhalts wird über ein Script erstellt. Im Feld **[!UICONTROL Script]** wird das JavaScript-Template berechnet, welches die Kennung (den Primärschlüssel) des Inhalts evaluiert. Das Feld erscheint nur, wenn die Option **[!UICONTROL Wird durch ein Script erstellt]** angekreuzt wurde.
 
-      ![](assets/content_mgmt_script.png)
+     ![](assets/content_mgmt_script.png)
 
    * **[!UICONTROL Neu, basierend auf einer Veröffentlichungsvorlage erstellt]**
 
-      Wählen Sie diese Option, wenn ein neuer, auf einer Vorlage beruhender Inhalt erstellt werden soll. Geben Sie im Feld **[!UICONTROL Inhaltskanal]** den Ordner an, in dem der neue Inhalt gespeichert werden soll und im Feld **[!UICONTROL Vorlage]** die zu verwendende Veröffentlichungsvorlage.
+     Wählen Sie diese Option, wenn ein neuer, auf einer Vorlage beruhender Inhalt erstellt werden soll. Geben Sie im Feld **[!UICONTROL Inhaltskanal]** den Ordner an, in dem der neue Inhalt gespeichert werden soll und im Feld **[!UICONTROL Vorlage]** die zu verwendende Veröffentlichungsvorlage.
 
-      ![](assets/content_mgmt_new.png)
+     ![](assets/content_mgmt_new.png)
 
 1. **Bereich Inhalt aktualisieren**
 
    * **[!UICONTROL Betreff]**
 
-      Hier kann der Betreff der dem Inhalt entsprechenden Versandaktion überschrieben werden.
+     Hier kann der Betreff der dem Inhalt entsprechenden Versandaktion überschrieben werden.
 
    * **[!UICONTROL Zugriff auf Daten eines XML-Streams]**
 
-      Mithilfe dieser Option ist es möglich, einen Inhalt ausgehend von einem XML-Dokument, das von einem Webserver heruntergeladen wurde, zu erstellen und ihn gegebenenfalls mit einem XSL-Stylesheet umzuwandeln. Im Feld **[!UICONTROL URL]** ist die URL für den XML-Download und im Feld **[!UICONTROL XSL-Stylesheet]** das für die Umwandlung zu nutzende Stylesheet anzugeben. Letzteres ist optional.
+     Mithilfe dieser Option ist es möglich, einen Inhalt ausgehend von einem XML-Dokument, das von einem Webserver heruntergeladen wurde, zu erstellen und ihn gegebenenfalls mit einem XSL-Stylesheet umzuwandeln. Im Feld **[!UICONTROL URL]** ist die URL für den XML-Download und im Feld **[!UICONTROL XSL-Stylesheet]** das für die Umwandlung zu nutzende Stylesheet anzugeben. Letzteres ist optional.
 
-      ![](assets/content_mgmt_xmlcontent.png)
+     ![](assets/content_mgmt_xmlcontent.png)
 
 1. **Auszuführende Aktion**
 
    * **[!UICONTROL Speichern]**
 
-      Der erstellte oder geänderte Inhalt wird gespeichert.
+     Der erstellte oder geänderte Inhalt wird gespeichert.
 
-      In diesem Fall wird die ausgehende Transition einmal aktiviert. In der Variable **[!UICONTROL contentId]** wird die Kennung des Inhalts gespeichert.
+     In diesem Fall wird die ausgehende Transition einmal aktiviert. In der Variable **[!UICONTROL contentId]** wird die Kennung des Inhalts gespeichert.
 
    * **[!UICONTROL Erzeugen]**
 
-      Der Inhalt wird gespeichert und die Ausgabedateien für alle Umwandlungsvorlagen mit dem Veröffentlichungstyp &#39;Datei&#39; werden erzeugt.
+     Der Inhalt wird gespeichert und die Ausgabedateien für alle Umwandlungsvorlagen mit dem Veröffentlichungstyp &#39;Datei&#39; werden erzeugt.
 
-      ![](assets/content_mgmt_generate.png)
+     ![](assets/content_mgmt_generate.png)
 
-      In diesem Fall wird die ausgehende Transition für jede erzeugte Datei aktiviert. In der Variable **[!UICONTROL contentId]** wird die Kennung des Inhalts und in der Variable **[!UICONTROL filename]** der Name der Datei gespeichert.
+     In diesem Fall wird die ausgehende Transition für jede erzeugte Datei aktiviert. In der Variable **[!UICONTROL contentId]** wird die Kennung des Inhalts und in der Variable **[!UICONTROL filename]** der Name der Datei gespeichert.
 
 ## Eingabeparameter {#input-parameters}
 
@@ -89,8 +89,8 @@ Kennung des zu verwendenden Inhalts, wenn die Option **[!UICONTROL Wird durch di
 
 * contentId
 
-   Kennung des Inhalts.
+  Kennung des Inhalts.
 
 * filename
 
-   Vollständiger Name der erzeugten Datei, wenn die Aktion **[!UICONTROL Erzeugen]** ausgewählt wurde.
+  Vollständiger Name der erzeugten Datei, wenn die Aktion **[!UICONTROL Erzeugen]** ausgewählt wurde.

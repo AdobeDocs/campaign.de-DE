@@ -7,7 +7,7 @@ breadcrumb-title: Übersicht über Campaign
 source-git-commit: 4f3e6227193fc607a968f9170484017e551fa560
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,13 +41,13 @@ ht-degree: 97%
       + E-Mails {#emails}
          + [Entwerfen und Validieren von E-Mails](send/email.md)
          + [Verlinken auf die Mirrorseite](send/mirror-page.md)
-         + [Zusätzliche E-Mail-Parameter definieren](send/email-parameters.md)
+         + [Definieren zusätzlicher E-Mail-Parameter](send/email-parameters.md)
          + [Versenden und Überwachen von E-Mails](send/send.md)
       + [SMS](send/sms.md)
       + Push-Benachrichtigungen {#push}
          + [Erstellen und Versenden von Push-Benachrichtigungen](send/push.md)
-         + [Push-Benachrichtigungskanal konfigurieren](send/push-settings.md)
-         + [Push-Benachrichtigungen mit Datenerfassung konfigurieren](send/push-data-collection.md)
+         + [Konfigurieren des Push-Benachrichtigungskanals](send/push-settings.md)
+         + [Konfigurieren von Push-Benachrichtigungen mit der Datenerfassung](send/push-data-collection.md)
       + [LINE-Messaging](send/line.md)
       + [Briefpost](send/direct-mail.md)
       + [Twitter](send/twitter.md)

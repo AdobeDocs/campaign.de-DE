@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Genehmigungen von Marketing-Kampagnen verwalt
 feature: Approvals, Campaigns
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
 source-git-commit: 382f0b1c4ee014f6ae5d62eaf93f5ae8c72c06b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2443'
 ht-degree: 100%
 
@@ -23,13 +23,13 @@ Die Personen, die als Verantwortliche für die Validierung in Adobe Campaign ern
 Sie können die Validierung auf verschiedene Weise vornehmen:
 
 * Von der Benachrichtigungsmeldung aus. Durch den Link in der E-Mail erhält die Person über einen Webbrowser Zugriff auf Campaign. Nach dem Verbinden kann die validierungsverantwortliche Person den Inhalt validieren oder auch nicht.
-   ![](assets/approval-content-email.png)
+  ![](assets/approval-content-email.png)
 
 * Vom Kampagnen-Dashboard aus.
-   ![](assets/approval-from-dashboard.png)
+  ![](assets/approval-from-dashboard.png)
 
 * Vom Versand-Dashboard aus.
-   ![](assets/approval-from-delivery-dashboard.png)
+  ![](assets/approval-from-delivery-dashboard.png)
 
 Benutzende können über das Validierungsfenster auf die Kampagne und den Versand zugreifen. Sie können auch einen Kommentar eingeben.
 
@@ -98,6 +98,7 @@ Sobald diese Validierungsphasen beendet sind, kann der Versand gestartet werden.
 >[!NOTE]
 >
 >Die Prozesse, für die eine Validierung erforderlich ist, können in der Kampagnenvorlage ausgewählt werden. [Weitere Informationen](marketing-campaign-templates.md).
+>
 
 ### Schritte zur Validierung eines Versands {#approving-processes}
 
@@ -109,33 +110,33 @@ Folgende Validierungsvorgänge stehen für Kampagnensendungen zur Verfügung:
 
 * **Validierung von Zielgruppe, Inhalt und Budget**
 
-   Wenn die Optionen **[!UICONTROL Zielgruppenvalidierung aktivieren]**, **[!UICONTROL Inhaltsvalidierung aktivieren]** oder **[!UICONTROL Budgetvalidierung aktivieren]** im Fenster der Validierungseinstellungen ausgewählt sind, werden die entsprechenden Links in den Kampagnen- und Versand-Dashboards angezeigt.
+  Wenn die Optionen **[!UICONTROL Zielgruppenvalidierung aktivieren]**, **[!UICONTROL Inhaltsvalidierung aktivieren]** oder **[!UICONTROL Budgetvalidierung aktivieren]** im Fenster der Validierungseinstellungen ausgewählt sind, werden die entsprechenden Links in den Kampagnen- und Versand-Dashboards angezeigt.
 
-   ![](assets/template-activate-6.png)
+  ![](assets/template-activate-6.png)
 
-   >[!NOTE]
-   >
-   >Die Budgetvalidierung ist nur verfügbar, wenn die Zielgruppenvalidierung im Fenster der Validierungseinstellungen aktiviert ist. Der Link zur Budgetvalidierung wird erst nach der Zielgruppenanalyse angezeigt.
+  >[!NOTE]
+  >
+  >Die Budgetvalidierung ist nur verfügbar, wenn die Zielgruppenvalidierung im Fenster der Validierungseinstellungen aktiviert ist. Der Link zur Budgetvalidierung wird erst nach der Zielgruppenanalyse angezeigt.
 
-   Wenn die Optionen **[!UICONTROL Inhaltsbearbeitung zuweisen]** oder **[!UICONTROL Externe Inhaltsvalidierung]** im Fenster der Validierungseinstellungen ausgewählt sind, werden im Dashboard die entsprechenden Links **[!UICONTROL Inhalt unterbreiten]** und **[!UICONTROL Externe Inhaltsvalidierung]** angezeigt.
+  Wenn die Optionen **[!UICONTROL Inhaltsbearbeitung zuweisen]** oder **[!UICONTROL Externe Inhaltsvalidierung]** im Fenster der Validierungseinstellungen ausgewählt sind, werden im Dashboard die entsprechenden Links **[!UICONTROL Inhalt unterbreiten]** und **[!UICONTROL Externe Inhaltsvalidierung]** angezeigt.
 
-   Die Inhaltsvaldiierung ermöglicht den Zugriff auf die durchgeführtenTestsendungen.
+  Die Inhaltsvaldiierung ermöglicht den Zugriff auf die durchgeführtenTestsendungen.
 
 * **Validierung der Extraktion (Briefpost)**
 
-   Wenn die Option **[!UICONTROL Extraktionsvalidierung aktivieren]** im Fenster der Validierungseinstellungen ausgewählt ist, muss die Extraktionsdatei validiert werden, bevor der Router benachrichtigt werden kann.
+  Wenn die Option **[!UICONTROL Extraktionsvalidierung aktivieren]** im Fenster der Validierungseinstellungen ausgewählt ist, muss die Extraktionsdatei validiert werden, bevor der Router benachrichtigt werden kann.
 
-   Die Option **[!UICONTROL Datei validieren]** ist im Kampagnen- und Versand-Dashboard verfügbar.
+  Die Option **[!UICONTROL Datei validieren]** ist im Kampagnen- und Versand-Dashboard verfügbar.
 
-   ![](assets/approve-file-preview.png)
+  ![](assets/approve-file-preview.png)
 
-   Sie können vor der Validierung die Ausgabedatei in der Vorschau anzeigen. Die Vorschau der Extraktionsdatei zeigt nur eine Auswahl der Daten. Es wird nicht die gesamte Datei geladen.
+  Sie können vor der Validierung die Ausgabedatei in der Vorschau anzeigen. Die Vorschau der Extraktionsdatei zeigt nur eine Auswahl der Daten. Es wird nicht die gesamte Datei geladen.
 
 * **Validierung der Sendungen**
 
-   Die Option **[!UICONTROL Individuelle Validierung jedes zugeordneten Versands aktivieren]** wird für einen primären Versand verwendet, der mit sekundären Sendungen verknüpft ist. Standardmäßig ist diese Option nicht aktiviert, sodass eine Gesamtvalidierung des Hauptversands durchgeführt werden kann. Wenn diese Option aktiviert ist, muss jeder Versand einzeln validiert werden.
+  Die Option **[!UICONTROL Individuelle Validierung jedes zugeordneten Versands aktivieren]** wird für einen primären Versand verwendet, der mit sekundären Sendungen verknüpft ist. Standardmäßig ist diese Option nicht aktiviert, sodass eine Gesamtvalidierung des Hauptversands durchgeführt werden kann. Wenn diese Option aktiviert ist, muss jeder Versand einzeln validiert werden.
 
-   ![](assets/enable-ind-approval.png)
+  ![](assets/enable-ind-approval.png)
 
 
 >[!NOTE]
@@ -259,19 +260,19 @@ In der Benutzeroberfläche sind Validierungsprotokolle verfügbar:
 
 * Im Validierungsprotokoll der Kampagne, Unterregisterkarte **[!UICONTROL Validierungen]** der Registerkarte **[!UICONTROL Bearbeiten > Audit]**:
 
-   ![](assets/approval-tracking-from-campaign.png)
+  ![](assets/approval-tracking-from-campaign.png)
 
 * Im Versandprotokoll der Kampagne, Unterregisterkarte **[!UICONTROL Sendungen]** der Registerkarte **[!UICONTROL Bearbeiten > Audit]**:
 
-   ![](assets/approval-tracking-from-campaign-deliveries.png)
+  ![](assets/approval-tracking-from-campaign-deliveries.png)
 
 * Der Validierungsstatus jedes Versands kann durch Klicken auf die Option **[!UICONTROL Protokolle ausblenden/anzeigen]** auf der Registerkarte **[!UICONTROL Zusammenfassung]** angezeigt werden.
 
-   ![](assets/approval-tracking-delivery-dashboard.png)
+  ![](assets/approval-tracking-delivery-dashboard.png)
 
 * Diese Informationen sind zudem über die Registerkarte **[!UICONTROL Audit > Validierungen]** jedes Versands zugänglich.
 
-   ![](assets/approval-tracking-delivery-tab.png)
+  ![](assets/approval-tracking-delivery-tab.png)
 
 >[!NOTE]
 >

@@ -49,25 +49,25 @@ Gehen Sie wie folgt vor, um eine Versandvorlage zu erstellen:
 
    * Klicken Sie auf den Link **[!UICONTROL Anhänge]** und dann auf den Pfeil neben der Schaltfläche **[!UICONTROL Hinzufügen]**. Wählen Sie **[!UICONTROL Berechneter Anhang...]** aus
 
-      ![](assets/use_case_report_4.png)
+     ![](assets/use_case_report_4.png)
 
    * Wählen Sie in der Dropdown-Liste **[!UICONTROL Typ]** die letzte Option aus: **[!UICONTROL Dateiname wird beim Versand jeder Nachricht berechnet (kann vom Empfängerprofil abhängen)]**.
 
-      ![](assets/use_case_report_5.png)
+     ![](assets/use_case_report_5.png)
 
-      Der im Feld **[!UICONTROL Titel]** angegebene Wert erscheint nicht im tatsächlichen Versand.
+     Der im Feld **[!UICONTROL Titel]** angegebene Wert erscheint nicht im tatsächlichen Versand.
 
    * Geben Sie in der Textzone den Pfad und den Namen der Datei ein.
 
-      ![](assets/use_case_report_6.png)
+     ![](assets/use_case_report_6.png)
 
-      >[!CAUTION]
-      >
-      >Pfad und Name müssen mit den Werten übereinstimmen, die in der **[!UICONTROL JavaScript-Code]**-Aktivität des Workflows eingegeben wurden (siehe [Schritt 3: Erstellen des Workflows](#step-3--creating-the-workflow)).
+     >[!CAUTION]
+     >
+     >Pfad und Name müssen mit den Werten übereinstimmen, die in der **[!UICONTROL JavaScript-Code]**-Aktivität des Workflows eingegeben wurden (siehe [Schritt 3: Erstellen des Workflows](#step-3--creating-the-workflow)).
 
    * Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus und markieren Sie **[!UICONTROL Script erstellen zur Berechnung des Dateinamens, der beim Empfänger angezeigt wird]**. Geben Sie in der Textzone den Namen des Anhangs im endgültigen Versand ein.
 
-      ![](assets/use_case_report_6b.png)
+     ![](assets/use_case_report_6b.png)
 
 ## Schritt 3: Erstellen des Workflows {#step-3--creating-the-workflow}
 
@@ -117,9 +117,9 @@ Um den Workflow zu erstellen, gehen Sie wie folgt vor:
    * **var reportName**: der interne Name des Berichts in Anführungsstrichen. Im vorliegenden Beispiel lautet der interne Name des **Tracking-Indikatoren**-Berichts &quot;deliveryFeedback&quot;.
    * **Var-Pfad**: Geben Sie den Speicherpfad der Datei („tmp“), den Namen, den Sie der Datei geben möchten („deliveryFeedback“), und die Dateierweiterung („.pdf“) ein. In diesem Fall haben wir den internen Namen als Dateinamen verwendet. Die Werte müssen zwischen doppelten Anführungszeichen stehen und durch ein „+“-Zeichen getrennt werden.
 
-      >[!CAUTION]
-      >
-      >Die Datei muss auf dem Server gespeichert werden. Sie müssen den gleichen Pfad und den gleichen Namen wie in der Registerkarte **[!UICONTROL Allgemein]** des Fensters „Bearbeiten“ für den berechneten Anhang eingeben, wie [hier](#step-2--create-the-delivery-template) beschrieben wird.
+     >[!CAUTION]
+     >
+     >Die Datei muss auf dem Server gespeichert werden. Sie müssen den gleichen Pfad und den gleichen Namen wie in der Registerkarte **[!UICONTROL Allgemein]** des Fensters „Bearbeiten“ für den berechneten Anhang eingeben, wie [hier](#step-2--create-the-delivery-template) beschrieben wird.
 
    * **var exportFormat**: Format des Anhangs (&quot;PDF&quot;).
    * **var _ctx** (Kontext): Im vorliegenden Beispiel wird der Bericht **[!UICONTROL Trackingindikatoren]** im allgemeinen Kontext verwendet.

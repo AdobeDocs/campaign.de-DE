@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte mit der Campaign FFDA-Implementierung
-description: Erste Schritte mit der Campaign FFDA-Implementierung
+title: Erste Schritte mit der Campaign FFDA-Bereitstellung
+description: Erste Schritte mit der Campaign FFDA-Bereitstellung
 feature: Architecture, FFDA
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
@@ -12,9 +12,9 @@ ht-degree: 100%
 
 ---
 
-# [!DNL Campaign] FFDA-Implementierung{#gs-ac-ffda}
+# [!DNL Campaign] FFDA-Bereitstellung{#gs-ac-ffda}
 
-Durch die Nutzung von [[!DNL Snowflake]](https://www.snowflake.com/), einer Cloud-Datenbanktechnologie, wird die Skalierbarkeit und Geschwindigkeit der FFDA-Implementierung von Adobe Campaign Enterprise erheblich verbessert. So kann eine größere Anzahl von Kundenprofilen verwaltet werden und es werden deutlich höhere Versandraten und mehr Transaktionen pro Stunde erreicht.
+Durch die Nutzung von [[!DNL Snowflake]](https://www.snowflake.com/), einer Cloud-Datenbanktechnologie, wird die Skalierbarkeit und Geschwindigkeit der FFDA-Bereitstellung von Adobe Campaign Enterprise erheblich verbessert. So kann eine größere Anzahl von Kundenprofilen verwaltet werden und es werden deutlich höhere Versandraten und mehr Transaktionen pro Stunde erreicht.
 
 ## Vorteile {#ffda-benefits}
 
@@ -33,10 +33,11 @@ Jedes integrierte Schema (bzw. Tabelle), das in die Cloud-Datenbank verschoben o
 >[!CAUTION]
 >
 > Kundendaten werden nicht in der lokalen [!DNL Campaign]-Datenbank gespeichert. Daher müssen benutzerdefinierte Tabellen in der Cloud-Datenbank erstellt werden.
+>
 
 ## Architektur von Campaign Enterprise (FFDA){#ffda-archi}
 
-In einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) kann [!DNL Adobe Campaign] v8 mit zwei Datenbanken verwendet werden: einer lokalen [!DNL Campaign]-Datenbank für Echtzeit-Messaging und Einzelabfragen und das Schreiben über APIs sowie einer Cloud-[!DNL Snowflake]-Datenbank für die Kampagnenausführung, für Batch-Abfragen und die Workflow-Ausführung.
+In einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) kann [!DNL Adobe Campaign] v8 mit zwei Datenbanken verwendet werden: einer lokalen [!DNL Campaign]-Datenbank für Echtzeit-Messaging und Einzelabfragen und das Schreiben über APIs sowie einer Cloud-[!DNL Snowflake]-Datenbank für die Kampagnenausführung, für Batch-Abfragen und die Workflow-Ausführung.
 
 Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank.
 
@@ -64,7 +65,7 @@ Die PostgreSQL-Datenbank in der Marketing-Instanz wird verwendet, um:
 * Alle Campaign-Daten zu speichern, einschließlich Versand- und Kampagneneinstellungen, Workflow- und Service-Definitionen.
 * Alle integrierten Referenztabellen (Auflistungen, Länder usw.) zu speichern, die nach [!DNL Snowflake] repliziert werden.
 
-   Folgendes können Sie jedoch nicht tun:
+  Folgendes können Sie jedoch nicht tun:
    * Anpassungen für Kundendaten erstellen, z. B. keine Haushaltstabelle in PostgreSQL erstellen, sondern nur in Snowflake.
    * Versandlogs, Trackinglogs usw. in der FFDA-Zielgruppendimension speichern.
    * Große Datenmengen speichern.
@@ -100,6 +101,7 @@ Ein spezieller technischer Workflow behandelt die Replikation von Tabellen, die 
 >
 > Es wurden mehrere Replikationsrichtlinien erstellt, die auf der Größe der Tabelle basieren (XS, XL usw.).
 > Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen aufweisen, andere werden eine vollständige Aktualisierung durchlaufen.
+>
 
 [Weitere Informationen zur Datenreplikation](replication.md)
 

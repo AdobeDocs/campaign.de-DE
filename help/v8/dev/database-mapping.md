@@ -46,19 +46,19 @@ Die SQL-Benennungsregeln lauten wie folgt:
 
 * Tabelle: Verkettung des Namespace und Namens des Schemas
 
-   In diesem Beispiel wird der Tabellenname über das Hauptelement des Schemas im Attribut **sqltable** eingegeben:
+  In diesem Beispiel wird der Tabellenname über das Hauptelement des Schemas im Attribut **sqltable** eingegeben:
 
-   ```
-   <element name="recipient" sqltable="CusRecipient">
-   ```
+  ```
+  <element name="recipient" sqltable="CusRecipient">
+  ```
 
 * Feld: Name des Elements mit vorangestelltem Präfix, das nach Typ definiert wird (&quot;i&quot; für Integer, &quot;d&quot; für Dublette, &quot;s&quot; für String, &quot;ts&quot; für Datumsangaben usw.)
 
-   Der Feldname wird über das Attribut **sqlname** für die verschiedenen Eingaben von **`<attribute>`** und **`<element>`** eingegeben:
+  Der Feldname wird über das Attribut **sqlname** für die verschiedenen Eingaben von **`<attribute>`** und **`<element>`** eingegeben:
 
-   ```
-   <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-   ```
+  ```
+  <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
+  ```
 
 >[!NOTE]
 >
@@ -89,17 +89,17 @@ Um ein Feld in XML auszufüllen, müssen Sie dem betreffenden Element das Attrib
 
 * Mehrzeiliges Kommentarfeld:
 
-   ```
-   <element name="comment" xml="true" type="memo" label="Comment"/>
-   ```
+  ```
+  <element name="comment" xml="true" type="memo" label="Comment"/>
+  ```
 
 * Beschreibung der Daten im HTML-Format:
 
-   ```
-   <element name="description" xml="true" type="html" label="Description"/>
-   ```
+  ```
+  <element name="description" xml="true" type="html" label="Description"/>
+  ```
 
-   Über den Typ &quot;html&quot; können Sie HTML-Inhalte in einem CDATA-Tag speichern und eine spezielle HTML-Bearbeitungsprüfung in der Benutzeroberfläche des Adobe Campaign-Clients anzeigen.
+  Über den Typ &quot;html&quot; können Sie HTML-Inhalte in einem CDATA-Tag speichern und eine spezielle HTML-Bearbeitungsprüfung in der Benutzeroberfläche des Adobe Campaign-Clients anzeigen.
 
 Bei Verwendung von XML-Feldern ist das Hinzufügen von Feldern ohne Anpassungen der physischen Struktur der Datenbank möglich. Ein weiterer Vorteil besteht darin, dass weniger Ressourcen benötigt werden (SQL-Feldern zugewiesene Größe, Anzahl der Felder pro Tabelle usw.).
 
@@ -126,81 +126,81 @@ Für Schlüssel gelten folgende Regeln:
 
 * Hinzufügen eines Schlüssels zur E-Mail-Adresse und zum Ort:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <key name="email">
-         <keyfield xpath="@email"/> 
-         <keyfield xpath="location/@city"/> 
-       </key>
-   
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
-       <element name="location" label="Location">
-         <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-       </element>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <key name="email">
+        <keyfield xpath="@email"/> 
+        <keyfield xpath="location/@city"/> 
+      </key>
+  
+      <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+      <element name="location" label="Location">
+        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
+      </element>
+    </element>
+  </srcSchema>
+  ```
 
-   Generiertes Schema:
+  Generiertes Schema:
 
-   ```
-   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-     <element name="recipient" sqltable="CusRecipient">    
-      <key name="email">      
-       <keyfield xpath="@email"/>      
-       <keyfield xpath="location/@city"/>    
-      </key>    
-   
-      <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-      <element label="Location" name="location">      
-        <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-      </element>  
-     </element>
-   </schema>
-   ```
+  ```
+  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
+    <element name="recipient" sqltable="CusRecipient">    
+     <key name="email">      
+      <keyfield xpath="@email"/>      
+      <keyfield xpath="location/@city"/>    
+     </key>    
+  
+     <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+     <element label="Location" name="location">      
+       <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
+     </element>  
+    </element>
+  </schema>
+  ```
 
 * Hinzufügen eines primären oder internen Schlüssels zum Namensfeld &quot;id&quot;:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <key name="id" internal="true">
-         <keyfield xpath="@id"/> 
-       </key>
-   
-       <key name="email">
-         <keyfield xpath="@email"/> 
-       </key>
-   
-       <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <key name="id" internal="true">
+        <keyfield xpath="@id"/> 
+      </key>
+  
+      <key name="email">
+        <keyfield xpath="@email"/> 
+      </key>
+  
+      <attribute name="id" type="long" label="Identifier"/>
+      <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+    </element>
+  </srcSchema>
+  ```
 
-   Generiertes Schema:
+  Generiertes Schema:
 
-   ```
-   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-     <element name="recipient" sqltable="CusRecipient">    
-       <key name="email">      
-         <keyfield xpath="@email"/>    
-       </key>  
-   
-       <key internal="true" name="id">      
-        <keyfield xpath="@id"/>    
-       </key>    
-   
-       <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
-       <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
-     </element>
-   </schema>
-   ```
+  ```
+  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
+    <element name="recipient" sqltable="CusRecipient">    
+      <key name="email">      
+        <keyfield xpath="@email"/>    
+      </key>  
+  
+      <key internal="true" name="id">      
+       <keyfield xpath="@id"/>    
+      </key>    
+  
+      <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
+      <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
+    </element>
+  </schema>
+  ```
 
 ### Primärschlüssel – Kennung{#primary-key}
 
-Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) ist der Primärschlüssel der Adobe Campaign-Tabellen eine **Universally Unique ID (UUID)**, die automatisch von der Datenbank-Engine generiert wird. Der Schlüsselwert ist in der gesamten Datenbank eindeutig. Der Inhalt des Schlüssels wird beim Einfügen des Datensatzes automatisch generiert.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist der Primärschlüssel der Adobe Campaign-Tabellen eine **Universally Unique ID (UUID)**, die automatisch von der Datenbank-Engine generiert wird. Der Schlüsselwert ist in der gesamten Datenbank eindeutig. Der Inhalt des Schlüssels wird beim Einfügen des Datensatzes automatisch generiert.
 
 **Beispiel**
 
@@ -285,11 +285,11 @@ Für Relationen gelten folgende Regeln:
       * **own**: Durch Löschen der Quellentität wird auch die Zielentität gelöscht.
       * **owncopy**: Führt die gleiche Operation aus wie **own** (beim Löschen) bzw. dupliziert die Entitäten (bei Duplizierung).
       * **neutral**: Führt keine Operation aus.
+
    * **revIntegrity** (optional): Integrität im Zielschema (optional, Standardwert ist &quot;normal&quot;)
    * **revCardinality** (optional): Mit dem Wert &quot;single&quot; wird die Kardinalität mit dem Typ 1-1 ausgefüllt (standardmäßig 1-N).
    * **externalJoin** (optional): Erzwingt den äußeren Join.
    * **revExternalJoin** (optional): Erzwingt den äußeren Join am Umkehr-Link.
-
 
 * Eine Relation referenziert ein oder mehrere Felder aus der Quelltabelle mit der Zieltabelle. Die Felder, aus denen sich der Join zusammensetzt (`<join>`-Element), müssen nicht ausgefüllt werden, da sie standardmäßig aus dem internen Schlüssel des Zielschemas abgeleitet werden.
 * Eine Relation setzt sich aus zwei Halb-Relationen zusammen, wobei die erste über das Quellschema deklariert und die zweite automatisch im erweiterten Schema des Zielschemas erstellt wird.
@@ -356,7 +356,7 @@ Ein Umkehrlink zur Tabelle &quot;cus:recipient&quot; wurde mit folgenden Paramet
 * **unbound**: Relation wird als Sammlungselement für eine 1-N-Kardinalität deklariert (standardmäßig)
 * **integrity**: Standardwert ist &quot;define&quot; (kann mit dem Attribut &quot;revIntegrity&quot; in der Definition der Relation im Quellschema erzwungen werden)
 
-Beachten Sie, dass der Parameter `autouuid="true"` nur im Zusammenhang mit einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) gilt.
+Beachten Sie, dass der Parameter `autouuid="true"` nur im Zusammenhang mit einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) gilt.
 
 ### Beispiel 2 {#example-2}
 

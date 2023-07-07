@@ -9,11 +9,11 @@ exl-id: b5a0fe46-f7b4-4be1-abf0-162fc1412886
 source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
 workflow-type: tm+mt
 source-wordcount: '1815'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Push-Benachrichtigungskanal konfigurieren {#push-notification-configuration}
+# Konfigurieren des Push-Benachrichtigungskanals {#push-notification-configuration}
 
 Bevor Sie mit dem Versand von Push-Benachrichtigungen mit Adobe Campaign beginnen, müssen Sie sicherstellen, dass Konfigurationen und Integrationen in der Mobile App sowie für Tags in Adobe Experience Platform vorhanden sind.
 
@@ -180,7 +180,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 1. Geben Sie den Namen Ihrer App im Feld **[!UICONTROL Titel]** ein.
 1. (Optional) Sie können den Inhalt einer Push-Nachricht mit einigen **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar und Teil der an das mobile Gerät gesendeten Nachrichten-Payload.
 
-   Im folgenden Beispiel wird die Variable **mediaURl** und **mediaExt** -Variablen hinzugefügt werden, um Rich-Push-Benachrichtigungen zu erstellen, und liefert dann der Anwendung das Bild, das in der Benachrichtigung angezeigt werden soll.
+   Im folgenden Beispiel werden die Variablen **mediaURl** und **mediaExt** hinzugefügt, um eine Rich-Push-Benachrichtigung zu erstellen. Danach wird der App das Bild bereitgestellt, das in der Benachrichtigung angezeigt werden soll.
 
    ![](assets/ios-app-parameters.png){width="600" align="left"}
 
@@ -192,7 +192,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
 1. Der Integrationsschlüssel ist für jede Anwendung spezifisch. Dadurch wird die Mobile App mit Adobe Campaign verknüpft.
 
-   Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
+   Stellen Sie sicher, dass in Adobe Campaign und im Appcode über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
    Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
@@ -232,7 +232,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 1. Geben Sie den Namen Ihrer App im Feld **[!UICONTROL Titel]** ein.
 1. Der Integrationsschlüssel ist für jede Anwendung spezifisch. Dadurch wird die Mobile App mit Adobe Campaign verknüpft.
 
-   Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
+   Stellen Sie sicher, dass in Adobe Campaign und im Appcode über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
    Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 

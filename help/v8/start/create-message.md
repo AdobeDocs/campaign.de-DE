@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 100%
 
@@ -38,27 +38,27 @@ Sobald Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, kön
 
 * Manuelles Senden von Nachrichten an die Hauptzielgruppe
 
-   ![](assets/send-email.png)
+  ![](assets/send-email.png)
 
-   In [diesem Abschnitt](../send/send.md) erfahren Sie, wie Sie Nachrichten senden können
+  In [diesem Abschnitt](../send/send.md) erfahren Sie, wie Sie Nachrichten senden können
 
 * Senden von Nachrichten, die einer [Marketing-Kampagne](campaigns.md) zugeordnet sind
 
-   ![](assets/deliveries-in-a-campaign.png)
+  ![](assets/deliveries-in-a-campaign.png)
 
-   In [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de) erfahren Sie, wie Sie Nachrichten im Rahmen einer Kampagne versenden können.
+  In [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de) erfahren Sie, wie Sie Nachrichten im Rahmen einer Kampagne versenden können.
 
 * Senden von Nachrichten über einen [Workflow](../config/workflows.md)
 
-   ![](assets/send-in-a-wf.png)
+  ![](assets/send-in-a-wf.png)
 
-    Auf [dieser Seite](../../automation/workflow/delivery.md) erfahren Sie, wie Sie einen E-Mail-Versand automatisieren können
+   Auf [dieser Seite](../../automation/workflow/delivery.md) erfahren Sie, wie Sie einen E-Mail-Versand automatisieren können
 
 * [Auslösen von Nachrichten](../send/transactional.md) durch ein Ereignis
 
 * Planen von Nachrichten
 
-   ![](assets/schedule-send.png)
+  ![](assets/schedule-send.png)
 
 [Anwendungsfall: Erfahren Sie, wie Sie eine Geburtstags-E-Mail planen und senden.](../../automation/workflow/send-a-birthday-email.md)
 

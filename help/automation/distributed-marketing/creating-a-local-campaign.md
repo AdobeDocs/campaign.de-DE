@@ -5,7 +5,7 @@ description: Erstellen einer lokalen Kampagne
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 100%
 
@@ -59,24 +59,24 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
 * **[!UICONTROL Briefing]**: Die Lokalstelle beschreibt die gewünschten Kampagnenparameter bei der Bestellung. Sobald die Bestellung validiert wurde, konfiguriert die Zentralstelle die Kampagne und führt sie aus.
 
-   ![](assets/mkt_distr_6.png)
+  ![](assets/mkt_distr_6.png)
 
 * **[!UICONTROL Standardformular]**: Die Lokalstelle hat Zugriff auf ein Web-Formular, in dem sie beispielsweise Inhalt, Zielgruppe, maximale Zielgruppengröße sowie Erstellungs- und Extraktionsdaten mithilfe von Personalisierungsfeldern bearbeiten kann. Zudem hat die Lokalstelle über dieses Web-Formular die Möglichkeit, die Zielgruppe zu evaluieren und den Inhalt in einer Vorschau zu überprüfen.
 
-   ![](assets/mkt_distr_8.png)
+  ![](assets/mkt_distr_8.png)
 
-   Das angebotene Formular wird in einer Web-Anwendung definiert, die in der Vorlage unter dem Link **[!UICONTROL Erweiterte Kampagnenparameter...]** in der Dropdown-Liste des Felds **[!UICONTROL Web-Schnittstelle]** ausgewählt werden muss. Siehe [Lokale Kampagne erstellen (Standardformular)](examples.md#creating-a-local-campaign--by-form-).
+  Das angebotene Formular wird in einer Web-Anwendung definiert, die in der Vorlage unter dem Link **[!UICONTROL Erweiterte Kampagnenparameter...]** in der Dropdown-Liste des Felds **[!UICONTROL Web-Schnittstelle]** ausgewählt werden muss. Siehe [Lokale Kampagne erstellen (Standardformular)](examples.md#creating-a-local-campaign--by-form-).
 
-   >[!NOTE]
-   >
-   >Bei der hier verwendeten Webanwendung handelt es sich nur um ein Beispiel. Um ein Formular verwenden zu können, muss vorab eine spezifische Webanwendung erstellt werden.
+  >[!NOTE]
+  >
+  >Bei der hier verwendeten Webanwendung handelt es sich nur um ein Beispiel. Um ein Formular verwenden zu können, muss vorab eine spezifische Webanwendung erstellt werden.
 
-   ![](assets/mkt_distr_7.png)
+  ![](assets/mkt_distr_7.png)
 
 * **[!UICONTROL Externes Formular]**: Die Lokalstelle hat Zugriff auf die Parameter der Kampagne über ihr Extranet (nicht über Adobe Campaign). Die Parameter sind identisch mit denen einer lokalen Kampagne mit Webschnittstellentyp **Standardformular**.
 * **[!UICONTROL Einfach]**: Die Lokalstelle bestellt die Kampagne über das Standardformular, ohne sie zu lokalisieren.
 
-   ![](assets/mkt_distr_5.png)
+  ![](assets/mkt_distr_5.png)
 
 ### Standardwerte {#default-values}
 

@@ -114,9 +114,9 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
    * Die **[!UICONTROL Ursprüngliche Zählung]** entspricht der Schätzung der Zielgruppe auf Ebene des Versands;
    * Die **[!UICONTROL Endgültige Zählung]** zeigt die Anzahl der nach Ausführung der Simulation verbleibenden Empfänger an.
 
-      Der Unterschied zwischen ursprünglicher und endgültiger Zählung spiegelt die vor der Simulation konfigurierten unterschiedlichen Regeln oder Filter wider.
+     Der Unterschied zwischen ursprünglicher und endgültiger Zählung spiegelt die vor der Simulation konfigurierten unterschiedlichen Regeln oder Filter wider.
 
-      Gehen Sie in den Untertab **[!UICONTROL Ausschlüsse]**, um die Details der Berechnung anzusehen.
+     Gehen Sie in den Untertab **[!UICONTROL Ausschlüsse]**, um die Details der Berechnung anzusehen.
 
 1. Die **[!UICONTROL Ausschlüsse]** werden nach Sendungen aufgestaffelt dargestellt.
 
@@ -212,15 +212,15 @@ Es soll eine zusätzliche Berichtsachse über den Empfängerstatus (&quot;Kunde&
 
    * **[!UICONTROL Statistiken der Zielgruppenüberschneidung erzeugen]**, um alle Überschneidungsstatistiken im Simulationsbericht zu erhalten. Die Überschneidung entspricht den Empfängern, die in mindestens zwei Sendungen einer Simulation der Zielgruppe angehören.
 
-      >[!CAUTION]
-      >
-      >Die Auswahl dieser Option verlängert die Ausführungsdauer der Simulation beträchtlich.
+     >[!CAUTION]
+     >
+     >Die Auswahl dieser Option verlängert die Ausführungsdauer der Simulation beträchtlich.
 
    * **[!UICONTROL Simulationsarbeitstabelle beibehalten]**, um Spuren der Simulation zu speichern.
 
-      >[!CAUTION]
-      >
-      >Die systematische Speicherung dieser Tabellen erfordert eine erhöhte Speicherkapazität: Stellen Sie sicher, dass Ihre Datenbank über entsprechenden Speicherplatz verfügt.
+     >[!CAUTION]
+     >
+     >Die systematische Speicherung dieser Tabellen erfordert eine erhöhte Speicherkapazität: Stellen Sie sicher, dass Ihre Datenbank über entsprechenden Speicherplatz verfügt.
 
 Bei der Anzeige der Simulationsergebnisse werden Informationen bezüglich des ausgewählten Ausdrucks im Untertab **[!UICONTROL Überschneidungen]** angezeigt.
 

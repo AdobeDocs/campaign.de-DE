@@ -5,7 +5,7 @@ description: Lokale Validierung
 feature: Workflows
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Benennen Sie zunächst die Aktivität und kreuzen Sie die **[!UICONTROL Auszufü
 
 * **Inkrementelle Abfrage**: erlaubt es, eine Abfrage auszuführen und deren Ausführung zu planen. Siehe Abschnitt [Inkrementelle Abfrage](incremental-query.md).
 
-   ![](assets/local_validation_intro_3.png)
+  ![](assets/local_validation_intro_3.png)
 
 ## Benachrichtigung zur Zielgruppenvalidierung {#target-approval-notification}
 
@@ -45,24 +45,24 @@ In diesem Fall sind folgende Felder zu konfigurieren:
 
 * **[!UICONTROL Verteilungskontext]**: Kreuzen sie **[!UICONTROL Wird von der Transition angegeben]** an, wenn Sie die Zielpopulation durch eine **[!UICONTROL Aufspaltung]** begrenzen. In diesem Fall wird die Verteilungsvorlage in der Aufspaltungsaktivität angegeben. Wenn die Population nicht begrenzt werden soll, ist die Option **[!UICONTROL Explizit]** anzukreuzen. Geben Sie dann im Feld **[!UICONTROL Datenverteilung]** die gewünschte Vorlage an.
 
-   Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unter [Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+  Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unter [Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Validierungsverwaltung:]**
 
    * Geben Sie die Versandvorlage und den Betreff der Benachrichtigungs-E-Mail an. Sie können die Standardvorlage **[!UICONTROL Benachrichtigung bezüglich der Zielgruppenvalidierung]** oder eine benutzerdefinierte Vorlage verwenden. Wenn Sie eine Beschreibung angeben, wird diese oberhalb der Empfängerlisten in den Benachrichtigungen oder im Versandreaktionen-Bericht angezeigt.
    * Geben Sie den **[!UICONTROL Validierungstyp]** an, d. h. die Validierungsdeadline (Datum oder Abstand vom Unterbreitungsdatum). Zum angegebenen Zeitpunkt wird die Ausführung des Workflows fortgesetzt. Nicht validierte Empfänger werden von der Zielgruppe ausgeschlossen. Nach Absendung der Benachrichtigungen wechselt die Aktivität in den Wartezustand bis die Lokalstellen-Verantwortlichen die Empfänger validiert haben oder der Validierungszeitraum abgelaufen ist.
 
-      >[!NOTE]
-      >
-      >Wenn nicht anders angegeben, wartet die Aktivität drei Tage.
+     >[!NOTE]
+     >
+     >Wenn nicht anders angegeben, wartet die Aktivität drei Tage.
 
-      Klicken Sie auf **[!UICONTROL Erinnerung hinzufügen]**, um die Validierungsverantwortlichen vor Ablauf der Frist zu erinnern.
+     Klicken Sie auf **[!UICONTROL Erinnerung hinzufügen]**, um die Validierungsverantwortlichen vor Ablauf der Frist zu erinnern.
 
 * **[!UICONTROL Komplement]**: Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, um eine zweite Ergebnismenge mit allen nicht validierten Empfängern zu erzeugen.
 
-   >[!NOTE]
-   >
-   >Standardmäßig ist diese Option deaktiviert.
+  >[!NOTE]
+  >
+  >Standardmäßig ist diese Option deaktiviert.
 
 ## Versandreaktionen-Bericht {#delivery-feedback-report}
 
@@ -85,19 +85,19 @@ Der Benutzerin bzw. dem Benutzer bieten sich zwei verschiedene Möglichkeiten, u
 
 * Validierung über Webzugriff
 
-   Die an die zuvor gewählte Benutzergruppe gesandte Benachrichtigung ermöglicht die Validierung der Versandzielgruppe. Die Benachrichtigung enthält den in der Vorlage definierten Text, wobei der JavaScript-Ausdruck durch den berechneten Wert (hier &#39;574&#39;) ersetzt wird.
+  Die an die zuvor gewählte Benutzergruppe gesandte Benachrichtigung ermöglicht die Validierung der Versandzielgruppe. Die Benachrichtigung enthält den in der Vorlage definierten Text, wobei der JavaScript-Ausdruck durch den berechneten Wert (hier &#39;574&#39;) ersetzt wird.
 
-   Um den Versand zu genehmigen, klicken Sie auf den entsprechenden Link und melden sich bei der Adobe Campaign-Client-Konsole an.
+  Um den Versand zu genehmigen, klicken Sie auf den entsprechenden Link und melden sich bei der Adobe Campaign-Client-Konsole an.
 
-   ![](assets/new-workflow-valid-webaccess.png)
+  ![](assets/new-workflow-valid-webaccess.png)
 
-   Kreuzen Sie die gewünschte Antwort an und klicken Sie auf **[!UICONTROL Absenden]**.
+  Kreuzen Sie die gewünschte Antwort an und klicken Sie auf **[!UICONTROL Absenden]**.
 
-   ![](assets/new-workflow-valid-webaccess-confirm.png)
+  ![](assets/new-workflow-valid-webaccess-confirm.png)
 
 * Genehmigung über die Client-Konsole
 
-   Im Navigationsbaum enthält der Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Ausstehende Validierungen]** die Liste der vom aktuellen Benutzer zu validierenden Aufgaben. Doppelklicken Sie auf die entsprechende Zeile, um die Validierung vorzunehmen.
+  Im Navigationsbaum enthält der Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Ausstehende Validierungen]** die Liste der vom aktuellen Benutzer zu validierenden Aufgaben. Doppelklicken Sie auf die entsprechende Zeile, um die Validierung vorzunehmen.
 
 ![](assets/new-workflow-7.png)
 

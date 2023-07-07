@@ -6,7 +6,7 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1845'
 ht-degree: 100%
 
@@ -77,9 +77,9 @@ Um die Sicherheit zu optimieren, wurden Sicherheits-Token aus den von Campaign g
 * Diese Änderung gilt nur für GET-URLs. Andere Typen, einschließlich POST-URLs, sind davon nicht betroffen.
 * Wenn Sie benutzerdefinierten Code verwenden, werden keine Sicherheits-Token mehr aus dem GET-URL-Sicherheits-Token-Parameter abgerufen. Sie müssen ein neues Sicherheits-Token mit folgendem JSSP-Code generieren:
 
-   ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
+  ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
 
-   Sie können auch die Anmelde-API verwenden, um Sicherheits-Token abzurufen.
+  Sie können auch die Anmelde-API verwenden, um Sicherheits-Token abzurufen.
 * Bei der Verwaltung von Sitzungs-Tokens gibt es keine Änderungen.
 
 **Verbesserungen**
@@ -226,9 +226,8 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 * Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3 wird jetzt in Campaign unterstützt. [Mehr dazu](../config/external-accounts.md#bounce-mails-external-account)
 * Es wurden kritische Fehlerbehebungen bei der Web-API des Microsoft Dynamics-Connectors vorgenommen.
 * Das neue Schreibrecht für Benutzer- und Gruppenschemas (operatorWrite) wurde hinzugefügt, um Benutzern das Einfügen, Aktualisieren und Löschen von Benutzer- (xtk:operator) und Benutzergruppen- (xtk:group)-Schemata zu ermöglichen.
-   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
-
-   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
+  <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
+  <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
 * Mehrere aktive LINE-Konten können jetzt auf einer einzigen Mid-Sourcing-Lösung konfiguriert werden.
 * Die Anzahl der Standardverbindungen für den Webprozess wurde von 50 auf 150 erhöht.
 * Campaign verfügt über eine Reihe neuer Schutzmechanismen, um das Einfügen duplizierter Schlüssel in eine Snowflake-Datenbank zu verhindern. [Mehr dazu](../architecture/keys.md)

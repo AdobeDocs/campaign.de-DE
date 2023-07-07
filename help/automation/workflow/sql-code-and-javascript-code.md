@@ -23,11 +23,11 @@ Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Script in Form eines JST
 
 * **[!UICONTROL Script]**
 
-   Das Script wird in den zentralen Bereich des Editors eingefügt. Da es sich beim Script um ein JST-Template handelt, kann es dem Workflow-Kontext entsprechend konfiguriert werden.
+  Das Script wird in den zentralen Bereich des Editors eingefügt. Da es sich beim Script um ein JST-Template handelt, kann es dem Workflow-Kontext entsprechend konfiguriert werden.
 
 * **[!UICONTROL Fehler verarbeiten]**
 
-   Siehe [Fehler verarbeiten](monitor-workflow-execution.md#processing-errors).
+  Siehe [Fehler verarbeiten](monitor-workflow-execution.md#processing-errors).
 
 ## JavaScript-Code und erweiterter JavaScript-Code {#javascript-code}
 

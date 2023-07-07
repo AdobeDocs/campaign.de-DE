@@ -49,9 +49,9 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
    * **activity.tableName**: SQL-Name der ausgehenden Arbeitstabelle.
    * **task.incomingTransitionByName(‘name’).tableName**: SQL-Name der Arbeitstabelle der zu verwendenden eingehenden Transition (die Transition wird durch den Namen identifiziert).
 
-      >[!NOTE]
-      >
-      >Der Wert (&#39;name&#39;) entspricht dem Feld **[!UICONTROL Name]** in den Transition-Eigenschaften.
+     >[!NOTE]
+     >
+     >Der Wert (&#39;name&#39;) entspricht dem Feld **[!UICONTROL Name]** in den Transition-Eigenschaften.
 
 1. Wenn das SQL-Script bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, deselektieren Sie die Option **[!UICONTROL Arbeitstabelle automatisch erstellen]**. Andernfalls wird automatisch eine Arbeitstabelle erstellt, wenn der Workflow ausgeführt wird.
 1. Wählen Sie **[!UICONTROL Ok]** aus, um die Konfiguration der Aktivität zu bestätigen.

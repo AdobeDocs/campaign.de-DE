@@ -5,7 +5,7 @@ description: Marketing-Kampagnenvorlagen
 feature: Campaigns, Templates
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 100%
 
@@ -66,96 +66,96 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 
 * Beispielsweise mit den folgenden Einstellungen:
 
-   ![](assets/campaign-template-select-functionalities.png)
+  ![](assets/campaign-template-select-functionalities.png)
 
-   Das Kampagnen-Dashboard zeigt Folgendes an:
+  Das Kampagnen-Dashboard zeigt Folgendes an:
 
-   ![](assets/campaign-template-dashboard-sample-1.png)
+  ![](assets/campaign-template-dashboard-sample-1.png)
 
-   Beachten Sie, dass die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** fehlt.
+  Beachten Sie, dass die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** fehlt.
 
-   Folgende Funktionen stehen zur Verfügung:
+  Folgende Funktionen stehen zur Verfügung:
 
-   ![](assets/campaign-template-edit-sample-1.png)
+  ![](assets/campaign-template-edit-sample-1.png)
 
-   Beachten Sie, dass die Registerkarte **[!UICONTROL Budget]** fehlt.
+  Beachten Sie, dass die Registerkarte **[!UICONTROL Budget]** fehlt.
 
-   Die erweiterten Einstellungen der Kampagne spiegeln diese Konfiguration ebenfalls wider.
+  Die erweiterten Einstellungen der Kampagne spiegeln diese Konfiguration ebenfalls wider.
 
-   ![](assets/campaign-template-parameters-sample-1.png)
+  ![](assets/campaign-template-parameters-sample-1.png)
 
-   Beachten Sie, dass die Registerkarte **[!UICONTROL Genehmigungen]** nicht verfügbar ist.
+  Beachten Sie, dass die Registerkarte **[!UICONTROL Genehmigungen]** nicht verfügbar ist.
 
 * Mit dieser Konfiguration:
-   ![](assets/campaign-template-dashboard-sample-2.png)
+  ![](assets/campaign-template-dashboard-sample-2.png)
 
-   Das Kampagnen-Dashboard zeigt Folgendes an:
+  Das Kampagnen-Dashboard zeigt Folgendes an:
 
-   ![](assets/campaign-template-select-functionalities-2.png)
+  ![](assets/campaign-template-select-functionalities-2.png)
 
-   Beachten Sie, dass die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** verfügbar ist, aber der Link **Dokument hinzufügen** fehlt.
+  Beachten Sie, dass die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** verfügbar ist, aber der Link **Dokument hinzufügen** fehlt.
 
-   Folgende Funktionen stehen zur Verfügung:
+  Folgende Funktionen stehen zur Verfügung:
 
-   ![](assets/campaign-template-edit-sample-2.png)
+  ![](assets/campaign-template-edit-sample-2.png)
 
-   Beachten Sie, dass die Registerkarte **[!UICONTROL Budget]** verfügbar ist.
+  Beachten Sie, dass die Registerkarte **[!UICONTROL Budget]** verfügbar ist.
 
-   Die erweiterten Einstellungen der Kampagne spiegeln diese Konfiguration ebenfalls wider.
+  Die erweiterten Einstellungen der Kampagne spiegeln diese Konfiguration ebenfalls wider.
 
-   ![](assets/campaign-template-parameters-sample-2.png)
+  ![](assets/campaign-template-parameters-sample-2.png)
 
-   Beachten Sie, dass die Registerkarte **[!UICONTROL Genehmigungen]** verfügbar ist, aber die Registerkarten **[!UICONTROL Kontrollpopulation]** und **[!UICONTROL Testadressen]** nicht aktiviert sind.
+  Beachten Sie, dass die Registerkarte **[!UICONTROL Genehmigungen]** verfügbar ist, aber die Registerkarten **[!UICONTROL Kontrollpopulation]** und **[!UICONTROL Testadressen]** nicht aktiviert sind.
 
 
 ## Typologie von Modulen {#typology-of-enabled-modules}
 
 * **Kontrollgruppe**
 
-   Wenn dieses Modul ausgewählt wird, wird ein zusätzlicher Tab in den erweiterten Parametern der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann in der Vorlage oder direkt in den einzelnen Kampagnen erfolgen. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#defining-a-control-group).
+  Wenn dieses Modul ausgewählt wird, wird ein zusätzlicher Tab in den erweiterten Parametern der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann in der Vorlage oder direkt in den einzelnen Kampagnen erfolgen. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#defining-a-control-group).
 
-   ![](assets/template-activate-1.png)
+  ![](assets/template-activate-1.png)
 
 
 * **Testadressen**
 
-   Wenn dieses Modul ausgewählt wird, wird ein zusätzlicher Tab in den erweiterten Parametern der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann in der Vorlage oder direkt in den einzelnen Kampagnen erfolgen.
+  Wenn dieses Modul ausgewählt wird, wird ein zusätzlicher Tab in den erweiterten Parametern der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann in der Vorlage oder direkt in den einzelnen Kampagnen erfolgen.
 
-   ![](assets/template-activate-2.png)
+  ![](assets/template-activate-2.png)
 
 * **Dokumente**
 
-   Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zur Registerkarte **[!UICONTROL Bearbeiten]** der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Anhänge können für jede Kampagne in der Vorlage oder einzeln hinzugefügt werden. Weitere Informationen zu Dokumenten finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#manage-associated-documents).
+  Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zur Registerkarte **[!UICONTROL Bearbeiten]** der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Anhänge können für jede Kampagne in der Vorlage oder einzeln hinzugefügt werden. Weitere Informationen zu Dokumenten finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#manage-associated-documents).
 
-   ![](assets/template-activate-3.png)
+  ![](assets/template-activate-3.png)
 
 * **Versandentwurf**
 
-   Wenn dieses Modul ausgewählt wird, wird dem Tab **[!UICONTROL Dokumente]** der Unter-Tab **[!UICONTROL Versandentwürfe]** hinzugefügt, um für die Kampagne unterschiedliche Versandentwürfe zu erstellen. Weitere Informationen zu Versandentwürfen finden Sie in [diesem Abschnitt](marketing-campaign-assets.md#delivery-outlines).
+  Wenn dieses Modul ausgewählt wird, wird dem Tab **[!UICONTROL Dokumente]** der Unter-Tab **[!UICONTROL Versandentwürfe]** hinzugefügt, um für die Kampagne unterschiedliche Versandentwürfe zu erstellen. Weitere Informationen zu Versandentwürfen finden Sie in [diesem Abschnitt](marketing-campaign-assets.md#delivery-outlines).
 
-   ![](assets/template-activate-4.png)
+  ![](assets/template-activate-4.png)
 
 * **Zielgruppenbestimmungen und Workflows**
 
-   Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können auch auf Basis dieser Vorlage einzeln für jede Kampagne konfiguriert werden. Weitere Informationen zu Kampagnen-Workflows finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können auch auf Basis dieser Vorlage einzeln für jede Kampagne konfiguriert werden. Weitere Informationen zu Kampagnen-Workflows finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
 
-   ![](assets/template-activate-5.png)
+  ![](assets/template-activate-5.png)
 
-   Wenn dieses Modul aktiviert ist, wird die Registerkarte **[!UICONTROL Vorgänge]** zu den erweiterten Einstellungen der Kampagne hinzugefügt, um die Reihenfolge der Prozessausführung zu definieren.
+  Wenn dieses Modul aktiviert ist, wird die Registerkarte **[!UICONTROL Vorgänge]** zu den erweiterten Einstellungen der Kampagne hinzugefügt, um die Reihenfolge der Prozessausführung zu definieren.
 
 * **Validierungen**
 
-   Wenn Sie die **[!UICONTROL Validierungen]** aktivieren, können Sie die zu genehmigenden Prozesse und die für die Genehmigungen zuständigen Personen auswählen. Weitere Informationen zu Validierungen finden Sie in [diesem Abschnitt](marketing-campaign-approval.md#select-reviewers).
+  Wenn Sie die **[!UICONTROL Validierungen]** aktivieren, können Sie die zu genehmigenden Prozesse und die für die Genehmigungen zuständigen Personen auswählen. Weitere Informationen zu Validierungen finden Sie in [diesem Abschnitt](marketing-campaign-approval.md#select-reviewers).
 
-   ![](assets/template-activate-6.png)
+  ![](assets/template-activate-6.png)
 
-   Sie können wählen, ob Sie die Prozessvalidierung über die Registerkarte **[!UICONTROL Genehmigungen]** im Abschnitt mit den erweiterten Einstellungen der Vorlagen aktivieren möchten oder nicht.
+  Sie können wählen, ob Sie die Prozessvalidierung über die Registerkarte **[!UICONTROL Genehmigungen]** im Abschnitt mit den erweiterten Einstellungen der Vorlagen aktivieren möchten oder nicht.
 
 * **Ausgaben und Budget**
 
-   Wenn dieses Modul ausgewählt wird, wird der Tab **[!UICONTROL Budget]** den Details der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt, damit das zugehörige Budget ausgewählt werden kann.
+  Wenn dieses Modul ausgewählt wird, wird der Tab **[!UICONTROL Budget]** den Details der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt, damit das zugehörige Budget ausgewählt werden kann.
 
-   ![](assets/template-activate-7.png)
+  ![](assets/template-activate-7.png)
 
 
 ## Vorlageneigenschaften {#template-properties}
@@ -173,7 +173,7 @@ Auf [dieser Seite](../../v8/config/ui-settings.md#enumerations) erfahren Sie, wi
 * Wählen Sie den **Kampagnentyp**: einmalig, wiederkehrend oder periodisch. Standardmäßig sind in Kampagnenvorlagen einmalige Kampagnen festgelegt. Wiederkehrende und periodische Kampagnen werden in [diesem Abschnitt](recurring-periodic-campaigns.md) beschrieben.
 * Dauer der Kampagne an: Gemeint ist der Zeitraum, über den sich die Kampagne erstrecken wird. Bei Erstellung einer auf einer Vorlage basierenden Kampagne werden Beginn und Ende somit automatisch ausgefüllt.
 
-   Handelt es sich um eine wiederkehrende Kampagne, müssen Beginn und Ende direkt in der Vorlage angegeben werden.
+  Handelt es sich um eine wiederkehrende Kampagne, müssen Beginn und Ende direkt in der Vorlage angegeben werden.
 
 * Geben Sie das mit der Vorlage **verknüpfte Programm** an: Kampagnen, die auf dieser Vorlage basieren, sind mit dem ausgewählten Programm verknüpft.
 

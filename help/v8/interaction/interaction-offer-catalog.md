@@ -48,7 +48,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    * im Tab **[!UICONTROL Eignung]** Daten für die Verwendung zuzuweisen.
 
-      ![](assets/offer_cat_create_004.png)
+     ![](assets/offer_cat_create_004.png)
 
    * **[!UICONTROL Bearbeiten Sie die Abfrage]**, um Filter auf die Angebots-Zielgruppe anzuwenden.
 

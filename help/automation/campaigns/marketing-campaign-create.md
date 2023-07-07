@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Marketing-Kampagnen erstellen und ausführen.
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Zur Konfiguration und Bearbeitung eines Programms stehen die folgenden Registerk
 
 * Über die Registerkarte **Bearbeiten** kann das Programm konfiguriert und verändert werden (Name, Beginn und Ende, Budget, verknüpfte Dokumente usw.).
 
-   ![](assets/new-program-edit-tab.png)
+  ![](assets/new-program-edit-tab.png)
 
 ## Arbeiten mit Kampagnen{#work-with-campaigns}
 

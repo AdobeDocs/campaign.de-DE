@@ -49,15 +49,15 @@ Gehen Sie dazu wie folgt vor:
 
    * **[!UICONTROL Verlaufsumfang (Tage)]**
 
-      Bereits berücksichtigte Empfänger bleiben die angegebene Anzahl an Tagen im Verlauf. Bei Angabe von &quot;0&quot; werden Empfänger nie aus dem Verlauf gelöscht.
+     Bereits berücksichtigte Empfänger bleiben die angegebene Anzahl an Tagen im Verlauf. Bei Angabe von &quot;0&quot; werden Empfänger nie aus dem Verlauf gelöscht.
 
    * **[!UICONTROL Verlauf beim Start beibehalten]**
 
-      Bei Auswahl dieser Option wird der Verlauf bei der Aktivierung der Aktivität nicht gelöscht.
+     Bei Auswahl dieser Option wird der Verlauf bei der Aktivierung der Aktivität nicht gelöscht.
 
    * **[!UICONTROL Name der SQL-Tabelle]**
 
-      Mithilfe dieses Felds kann die Standard-SQL-Tabelle, die den Verlauf enthält, überschrieben werden.
+     Mithilfe dieses Felds kann die Standard-SQL-Tabelle, die den Verlauf enthält, überschrieben werden.
 
 ## Ausgabeparameter {#output-parameters}
 

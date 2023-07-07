@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 100%
 
@@ -22,41 +22,41 @@ Folgende Optionen stehen zum Anmelden (Opt-in) eines Profils für einen Service 
 
 * Service manuell dem Empfängerprofil hinzufügen: Klicken Sie auf der Registerkarte **[!UICONTROL Abonnements]** des Empfängerprofils auf **[!UICONTROL Hinzufügen]** und wählen Sie den gewünschten Service aus.
 
-   ![](assets/subscribe-to-a-service.png)
+  ![](assets/subscribe-to-a-service.png)
 
-   ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=de#deliveries-tab).{target="_blank"}
+  ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=de#deliveries-tab).{target="_blank"}
 
 * Eine Gruppe von Empfängern automatisch für einen Service anmelden: Die Empfängerliste kann aus einem Filtervorgang, einer Gruppe, einem Ordner, einem Import oder einer direkten manuellen Auswahl erstellt werden. Um diese Empfänger anzumelden, wählen Sie die Profile aus und klicken Sie mit der rechten Maustaste. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]**.
 
-   ![](assets/subscribe-selection.png)
+  ![](assets/subscribe-selection.png)
 
-   Wählen Sie den betreffenden Dienst aus und starten Sie den Vorgang.
+  Wählen Sie den betreffenden Dienst aus und starten Sie den Vorgang.
 
-   ![](assets/subscribe-confirm.png)
+  ![](assets/subscribe-confirm.png)
 
-   ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=de#deliveries-tab){target="_blank"}
+  ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=de#deliveries-tab){target="_blank"}
 
 
 * Importieren Sie Empfängerinnen und Empfänger und lassen Sie sie automatisch einen Informations-Service abonnieren. Wählen Sie dazu im letzten Schritt des Importassistenten den betreffenden Service aus.
 
-   ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=de#step-5---additional-step-when-importing-recipients){target="_blank"}
+  ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=de#step-5---additional-step-when-importing-recipients){target="_blank"}
 
 * Empfänger melden sich persönlich über ein Web-Formular an.
 
-   ![](assets/opt-in-webapp.png)
+  ![](assets/opt-in-webapp.png)
 
-   Campaign verfügt über ein standardmäßiges Web-Formular zur Opt-in-Verwaltung. Sie können es personalisieren und die Profildaten zuordnen.
+  Campaign verfügt über ein standardmäßiges Web-Formular zur Opt-in-Verwaltung. Sie können es personalisieren und die Profildaten zuordnen.
 
-   ![](assets/web-app.png)
+  ![](assets/web-app.png)
 
-   ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=de#create-a-subscription--form-with-double-opt-in){target="_blank"}
+  ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=de#create-a-subscription--form-with-double-opt-in){target="_blank"}
 
 
 * Erstellen Sie einen Zielgruppen-Workflows und nutzen Sie die Aktivität **[!UICONTROL Anmeldedienst]**.
 
-   ![](assets/wf-subscription.png)
+  ![](assets/wf-subscription.png)
 
-   Weitere Informationen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=de).
+  Weitere Informationen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=de).
 
 Folgende Optionen stehen zum Abmelden (Opt-out) eines Profils von einem Service zur Verfügung:
 

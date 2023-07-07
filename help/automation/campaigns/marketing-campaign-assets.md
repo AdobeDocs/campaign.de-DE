@@ -90,11 +90,11 @@ Ein Versandentwurf kann Artikel, Personalisierungsfelder und Angebote enthalten:
 * Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
 * Personalisierungsfelder ermöglichen die Erstellung von mit Sendungen (und nicht Empfängern) verbundenen Personalisierungselementen. So können Werte erstellt werden, die in Sendungen mit einer spezifischen Zielgruppe verwendet werden (z. B. Willkommensangebot, prozentuale Ermäßigung). Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren...]** in den jeweiligen Entwurf importiert.
 
-   ![](assets/del-outline-perso-field.png)
+  ![](assets/del-outline-perso-field.png)
 
-   Über das Symbol **[!UICONTROL Hinzufügen]** rechts vom Bereich der Liste können dem Entwurf auch direkt Personalisierungselemente hinzugefügt werden.
+  Über das Symbol **[!UICONTROL Hinzufügen]** rechts vom Bereich der Liste können dem Entwurf auch direkt Personalisierungselemente hinzugefügt werden.
 
-   ![](assets/add-del-outline-button.png)
+  ![](assets/add-del-outline-button.png)
 
 
 ### Auswählen eines Versandentwurfs {#select-an-outline}

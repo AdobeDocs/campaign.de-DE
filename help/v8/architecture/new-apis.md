@@ -14,15 +14,15 @@ ht-degree: 100%
 
 # Spezifische FFDA-Kampagnen-APIs{#gs-new-api}
 
-Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) verfügt Campaign v8 über zwei konkrete APIs zum Verwalten von Daten zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank. Voraussetzungen für ihre Verwendung ist die Aktivierung des Staging-Mechanismus im Schema. [Weitere Informationen](staging.md)
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) verfügt Campaign v8 über zwei konkrete APIs zum Verwalten von Daten zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank. Voraussetzungen für ihre Verwendung ist die Aktivierung des Staging-Mechanismus im Schema. [Weitere Informationen](staging.md)
 
 * Aufnahme-API: **xtk.session.ingest**
 
-   Diese API ist nur für die Dateneinfügung geeignet. [Weitere Informationen](#data-insert-api)
+  Diese API ist nur für die Dateneinfügung geeignet. [Weitere Informationen](#data-insert-api)
 
 * Datenaktualisierungs-/Löschungs-API: **xtk.session.ingestExt**
 
-   Mit dieser API können Daten aktualisiert oder gelöscht werden. [Weitere Informationen](#data-update-api)
+  Mit dieser API können Daten aktualisiert oder gelöscht werden. [Weitere Informationen](#data-update-api)
 
 Ein dedizierter integrierter Workflow synchronisiert die Daten in der Cloud-Datenbank.
 

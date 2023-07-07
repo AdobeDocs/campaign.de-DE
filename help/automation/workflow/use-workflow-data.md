@@ -30,21 +30,21 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
 * **[!UICONTROL Zielgruppe anzeigen…]**
 
-   In diesem Menü werden die verfügbaren Daten der Zielpopulation angezeigt.
+  In diesem Menü werden die verfügbaren Daten der Zielpopulation angezeigt.
 
-   ![](assets/wf-right-click-display.png)
+  ![](assets/wf-right-click-display.png)
 
-   Sie können auf die Struktur der Arbeitstabelle in der Registerkarte **[!UICONTROL Schema]** zugreifen.
+  Sie können auf die Struktur der Arbeitstabelle in der Registerkarte **[!UICONTROL Schema]** zugreifen.
 
-   ![](assets/wf-right-click-schema.png)
+  ![](assets/wf-right-click-schema.png)
 
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](monitor-workflow-execution.md#worktables-and-workflow-schema).
+  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](monitor-workflow-execution.md#worktables-and-workflow-schema).
 
 * **[!UICONTROL Zielgruppe analysieren…]**
 
-   Diese Option bietet Zugriff auf den Assistenten zur beschreibenden Analyse, welcher die Erstellung von Statistiken und Berichten über die in der Transition übermittelten Daten ermöglicht.
+  Diese Option bietet Zugriff auf den Assistenten zur beschreibenden Analyse, welcher die Erstellung von Statistiken und Berichten über die in der Transition übermittelten Daten ermöglicht.
 
-   Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
+  Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
 
 Die Zielgruppendaten werden im Verlauf der Workflow-Ausführung bereinigt. Nur die letzte Arbeitstabelle bleibt zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Kreuzen Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** an.
 
@@ -126,15 +126,15 @@ Zur Aktualisierung der Adobe-Campaign-Datenbank und von Listen stehen zwei dediz
 
 * Über die Aktivität **[!UICONTROL Listen-Update]** können Arbeitstabellen in einer Datenliste gespeichert werden.
 
-   Hierbei kann eine existierende Liste verwendet oder eine neue erstellt werden. In diesem Fall werden ihr Name und gegebenenfalls ihr Speicherverzeichnis berechnet.
+  Hierbei kann eine existierende Liste verwendet oder eine neue erstellt werden. In diesem Fall werden ihr Name und gegebenenfalls ihr Speicherverzeichnis berechnet.
 
-   ![](assets/s_user_create_list.png)
+  ![](assets/s_user_create_list.png)
 
-   Siehe [Listen-Update](list-update.md).
+  Siehe [Listen-Update](list-update.md).
 
 * Die **[!UICONTROL Daten-Update]**-Aktivität ermöglicht eine gebündelte Aktualisierung von Datenbankfeldern.
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Daten-Update](update-data.md).
+  Weitere Informationen hierzu finden Sie im Abschnitt [Daten-Update](update-data.md).
 
 ### Verwalten von Abonnements {#subscription-management}
 

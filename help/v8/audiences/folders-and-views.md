@@ -21,6 +21,7 @@ Eine Ansicht ist ein spezieller Ordner, der keine Daten enthält, aber Daten anz
 
 >[!NOTE]
 >Um Ansichten von Standardordnern zu unterscheiden, wird ihr Name in hellblau anstelle von schwarz angezeigt.
+>
 
 Beachten Sie, dass Sie Ordnern Berechtigungen zuweisen können, um den Zugriff auf bestimmte Daten zu beschränken. [Weitere Informationen](#restrict-access-to-a-folder)
 
@@ -32,7 +33,7 @@ Beachten Sie, dass Sie Ordnern Berechtigungen zuweisen können, um den Zugriff a
 
 * **Definieren und verwenden Sie eine Namenskonvention**. Sie können beispielsweise die Workflows in alphabetischer Reihenfolge benennen, sodass sie in der Ausführungsreihenfolge sortiert werden, z. B.:
 
-   A1 – Empfänger importieren, beginnt um 10:00 Uhr;
+  A1 – Empfänger importieren, beginnt um 10:00 Uhr;
 A2 – Tickets importieren, beginnt um 11:00 Uhr.
 
 ## Erstellen von Ordnern{#create-a-folder}
@@ -51,6 +52,7 @@ Um einen anderen Ordnertyp zu erstellen, klicken Sie mit der rechten Maustaste a
 
 >[!CAUTION]
 >Diese Änderungen gelten für alle Campaign-Benutzer.
+>
 
 ## Umwandeln eines Ordners in eine Ansicht{#turn-a-folder-to-a-view}
 

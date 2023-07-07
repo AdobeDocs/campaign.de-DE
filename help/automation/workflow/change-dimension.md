@@ -45,27 +45,27 @@ Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen
 
    * Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]** und kreuzen Sie die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** an.
 
-      ![](assets/wf_change-dimension_sample_01.png)
+     ![](assets/wf_change-dimension_sample_01.png)
 
-      >[!NOTE]
-      >
-      >Weitere Informationen zur Erstellung und Verwendung von Zusatzspalten finden Sie unter [Daten hinzufügen](query.md#add-data).
+     >[!NOTE]
+     >
+     >Weitere Informationen zur Erstellung und Verwendung von Zusatzspalten finden Sie unter [Daten hinzufügen](query.md#add-data).
 
    * Wählen Sie die ursprüngliche Zielgruppendimension aus (vor der Dimensionsänderung), markieren Sie die **[!UICONTROL Kundennummer]** und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]****[!UICONTROL .]**
 
-      ![](assets/wf_change-dimension_sample_02.png)
+     ![](assets/wf_change-dimension_sample_02.png)
 
    * Klicken Sie auf die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** und kreuzen Sie die Option **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** an.
 
-      ![](assets/wf_change-dimension_sample_03.png)
+     ![](assets/wf_change-dimension_sample_03.png)
 
    * Verwenden Sie die Funktionsliste, um die Formel zu erstellen.
 
-      ![](assets/wf_change-dimension_sample_04.png)
+     ![](assets/wf_change-dimension_sample_04.png)
 
    * Geben Sie abschließend einen Titel für die neu erstellte Spalte an.
 
-      ![](assets/wf_change-dimension_sample_05.png)
+     ![](assets/wf_change-dimension_sample_05.png)
 
 1. Starten Sie den Workflow, um das Ergebnis zu prüfen. Die folgenden Abbildungen zeigen die Tabellen vor und nach der Dimensionsänderung sowie die Struktur der Workflow-Tabellen:
 

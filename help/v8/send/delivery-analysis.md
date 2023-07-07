@@ -61,6 +61,7 @@ Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die
    >[!NOTE]
    >
    >Klicken Sie auf den Link **[!UICONTROL Hauptzielgruppe des Versands ändern]**, wenn die Anzahl der zu sendenden Nachrichten nicht Ihren Erwartungen entspricht. Mit dieser Option können Sie die Definition der Zielgruppe ändern und die Analyse neu starten.
+   >
 
 1. Nachdem Sie das Ergebnis der Analyse geprüft haben, klicken Sie auf **[!UICONTROL Versand bestätigen]**, um die Nachricht an die Hauptzielgruppe zu senden.
 
@@ -77,11 +78,11 @@ Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Validierungsmodus]**: In diesem Feld können Sie nach Abschluss der Analyse einen manuellen oder automatischen Versand definieren.
 
-   Wenn bei der Analyse Warnungen erzeugt werden (z. B. wenn im Betreff des Versands bestimmte Zeichen mit einem Akzent versehen wurden usw.), können Sie den Versand so konfigurieren, dass festgelegt wird, ob er trotzdem ausgeführt werden soll oder nicht. Standardmäßig müssen Benutzende den Nachrichtenversand am Ende der Analysephase bestätigen: Hierbei handelt es sich um eine **manuelle** Validierung.
+  Wenn bei der Analyse Warnungen erzeugt werden (z. B. wenn im Betreff des Versands bestimmte Zeichen mit einem Akzent versehen wurden usw.), können Sie den Versand so konfigurieren, dass festgelegt wird, ob er trotzdem ausgeführt werden soll oder nicht. Standardmäßig müssen Benutzende den Nachrichtenversand am Ende der Analysephase bestätigen: Hierbei handelt es sich um eine **manuelle** Validierung.
 
-   In der Dropdown-Liste des entsprechenden Felds
+  In der Dropdown-Liste des entsprechenden Felds
 
-   stehen folgende Validierungsmodi zur Verfügung:
+  stehen folgende Validierungsmodi zur Verfügung:
 
    * **[!UICONTROL Manuell]**: Am Ende der Analysephase muss der Benutzer die Absendung bestätigen, um die Nachrichten abzuschicken. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Start]**, um den Versand zu starten.
    * **[!UICONTROL Halbautomatisch]**: Die Nachrichten werden automatisch abgeschickt, wenn die Analysephase ohne Warnhinweise abschließt.

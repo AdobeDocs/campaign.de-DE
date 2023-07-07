@@ -23,6 +23,7 @@ Adobe Campaign bietet zwei neue Modelle für maschinelles Lernen: [Prädiktive S
 >Diese Funktionen sind nicht im Produkt vorkonfiguriert. Sie sind nur für Kundinnen und Kunden von Adobe Campaign Managed Cloud Services verfügbar, die Adobe Campaign Classic v7 oder Adobe Campaign v8 verwenden.
 >
 >Die Implementierung erfordert die Einbindung von Adobe Consulting. Weitere Informationen erhalten Sie vom Adobe-Support.
+>
 
 
 ## Prädiktive Sendezeitoptimierung{#predictive-send}
@@ -64,6 +65,7 @@ Die prädiktive Sendezeitoptimierung wird auf Profilebene gespeichert:
 >[!NOTE]
 >
 >Das Modell benötigt mindestens einen Monat an Daten, um signifikante Ergebnisse zu erzielen. Diese prädiktiven Funktionen sind nur für E-Mail- und Push-Kanäle verfügbar.
+>
 
 
 ## Bewertung prädiktiver Interaktionen {#predictive-scoring}

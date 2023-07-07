@@ -82,7 +82,8 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
    * Im oberen Bereich können die betroffenen Empfänger begrenzt werden.
    * Im unteren Bereich dieses Tabs können die zu zählenden Nachrichten gefiltert werden.
 
-      Im folgenden Beispiel werden nur die im Ordner **NewContacts** gespeicherten Empfänger berücksichtigt und nur Sendungen, die mit **Newsletter** beginnen, sind betroffen.
+     Im folgenden Beispiel werden nur die im Ordner **NewContacts** gespeicherten Empfänger berücksichtigt und nur Sendungen, die mit **Newsletter** beginnen, sind betroffen.
+
    ![](assets/campaign_opt_create_a_rule_05.png)
 
 1. In der Registerkarte **[!UICONTROL Typologien]** können die Kampagnentypologien eingesehen werden, die diese Typologieregel anwenden. Zudem kann die Regel an dieser Stelle mit einer oder mehreren existierenden Typologien verknüpft werden. [Weitere Informationen](campaign-typologies.md#apply-typologies).
@@ -264,15 +265,15 @@ Bei der Versandanalyse werden Empfänger ausgeschlossen, wenn sie bereits eine b
 
 * das Ergebnis der Analyse ansehen:
 
-   ![](assets/campaign_opt_pressure_sample_1_8.png)
+  ![](assets/campaign_opt_pressure_sample_1_8.png)
 
 * den Versand öffnen und auf den Tab **[!UICONTROL Sendungen]** sowie den Untertab **[!UICONTROL Ausschlüsse]** klicken:
 
-   ![](assets/campaign_opt_pressure_sample_1_9.png)
+  ![](assets/campaign_opt_pressure_sample_1_9.png)
 
 * auf den Tab **[!UICONTROL Verfolgung]** und anschließend den Untertab **[!UICONTROL Ausschlussgründe]** klicken, um die Anzahl der Ausschlüsse und die angewandten Typologieregeln anzeigen zu lassen:
 
-   ![](assets/campaign_opt_pressure_sample_1_10.png)
+  ![](assets/campaign_opt_pressure_sample_1_10.png)
 
 ### Berechnen der Versandgewichtung basierend auf dem Empfängerverhalten {#calculate-the-delivery-weight-based-on-behavior}
 

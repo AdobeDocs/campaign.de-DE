@@ -8,7 +8,7 @@ exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
 source-git-commit: b333db04dd10cc28956959a446f6567e2a89b2d4
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ In Adobe Campaign können Sie einen Link zur Mirrorseite in den E-Mail-Inhalt ei
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-Weitere Informationen zum Einfügen von Gestaltungsbausteinen finden Sie unter [Gestaltungsbausteine](personalization-blocks.md).
+Weitere Informationen zum Einfügen von Gestaltungsinhaltsbausteinen finden Sie unter [Gestaltungsbausteine](personalization-blocks.md).
 
-## Mirrorseitenerstellung verwalten {#mirror-page-generation}
+## Verwalten der Mirrorseitenerstellung {#mirror-page-generation}
 
 Standardmäßig wird die Mirrorseite von Adobe Campaign automatisch erzeugt, wenn der E-Mail-Inhalt nicht leer ist und einen Link zur Mirrorseite enthält (auch Mirrorlink genannt).
 

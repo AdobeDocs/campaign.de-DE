@@ -25,7 +25,7 @@ Außerdem umfassen die Budgetverwaltungsfunktionen jetzt auch die Verwaltung von
 
 >[!AVAILABILITY]
 >
->Marketing Resource Management (MRM) ist im Zusammenhang mit einer [Enterprise (FFDA)-Implementierung](../../v8/architecture/enterprise-deployment.md) von Campaign nicht verfügbar.
+>Marketing Resource Management (MRM) ist im Zusammenhang mit einer [Enterprise (FFDA)-Bereitstellung](../../v8/architecture/enterprise-deployment.md) von Campaign nicht verfügbar.
 
 ## Konzepte und Terminologie {#core-concepts}
 
@@ -33,15 +33,15 @@ Bei der Verwaltung von Marketing-Ressourcen in Adobe Campaign werden die folgend
 
 * **Aufgabe**
 
-   Eine Aufgabe ist eine im Zuge einer Marketingkampagne durchzuführende Aktion, die einem Benutzer oder einer Gruppe von Benutzern zugeteilt wird. Unterschiedliche Aufgaben können einander untergeordnet werden: Eine übergeordnete Aufgabe ist nur dann erfüllt, wenn alle ihr untergeordneten Aufgaben beendet sind. Bei einer Aufgabe kann es sich beispielsweise um die Referenzierung einer Internetseite, eine Budgetüberprüfung, ein Protokoll o. Ä. handeln.
+  Eine Aufgabe ist eine im Zuge einer Marketingkampagne durchzuführende Aktion, die einem Benutzer oder einer Gruppe von Benutzern zugeteilt wird. Unterschiedliche Aufgaben können einander untergeordnet werden: Eine übergeordnete Aufgabe ist nur dann erfüllt, wenn alle ihr untergeordneten Aufgaben beendet sind. Bei einer Aufgabe kann es sich beispielsweise um die Referenzierung einer Internetseite, eine Budgetüberprüfung, ein Protokoll o. Ä. handeln.
 
-   Weitere Informationen finden Sie unter [Aufgaben erstellen und verwalten](creating-and-managing-tasks.md).
+  Weitere Informationen finden Sie unter [Aufgaben erstellen und verwalten](creating-and-managing-tasks.md).
 
 * **Marketing-Ressourcen**
 
-   Adobe Campaign ermöglicht die Verfolgung der Ausführung von kollaborativen Marketingprojekten wie beispielsweise Kommunikationsmedien, Aktionsplanungen, Newsletter etc. Der Ausführungs- und Validierungszyklus dieser Marketing-Ressourcen kann über das Dashboard der Ressourcen bis zu ihrer Veröffentlichung überwacht werden.
+  Adobe Campaign ermöglicht die Verfolgung der Ausführung von kollaborativen Marketingprojekten wie beispielsweise Kommunikationsmedien, Aktionsplanungen, Newsletter etc. Der Ausführungs- und Validierungszyklus dieser Marketing-Ressourcen kann über das Dashboard der Ressourcen bis zu ihrer Veröffentlichung überwacht werden.
 
-   Weitere Informationen finden Sie unter [Marketing-Ressourcen verwalten](managing-marketing-resources.md).
+  Weitere Informationen finden Sie unter [Marketing-Ressourcen verwalten](managing-marketing-resources.md).
 
 <!--
 >[!NOTE]

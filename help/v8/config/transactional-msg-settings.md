@@ -6,7 +6,7 @@ role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ Nachfolgend finden Sie ein Beispiel für eine Ereigniskonfiguration zum Senden v
 
 ## Ereignisse bereinigen {#purge-events}
 
-Sie können die Einstellungen des Implementierungsassistenten anpassen, um zu konfigurieren, wie lange die Daten in der Datenbank gespeichert werden.
+Sie können die Einstellungen des Bereitstellungsassistenten anpassen, um zu konfigurieren, wie lange die Daten in der Datenbank gespeichert werden.
 
 Die Ereignislöschung wird automatisch vom technischen Workflow **Datenbankbereinigung** durchgeführt. Dieser Workflow löscht die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in einer Kontrollinstanz archivierten Ereignisse.
 
@@ -85,7 +85,7 @@ Verwenden Sie die Pfeile, um die Bereinigungsparameter für die **Ereignisse** (
 
 ## Technische Workflows {#technical-workflows}
 
-Sie müssen sicherstellen, dass die technischen Workflows für Ihre Kontroll- und Ausführungsinstanzen gestartet wurden, bevor Transaktionsnachrichtenvorlagen implementiert werden.
+Sie müssen sicherstellen, dass die technischen Workflows für Ihre Kontroll- und Ausführungsinstanzen gestartet wurden, bevor Transaktionsnachrichtenvorlagen bereitgestellt werden.
 
 Diese Workflows können Sie dann über den Ordner **Administration > Betreibung > Message Center** aufrufen.
 
@@ -101,7 +101,7 @@ In der/den Ausführungsinstanz(en) müssen die folgenden technischen Workflows g
 * **[!UICONTROL Verarbeitung der Echtzeit-Ereignisse]** (interner Name **[!UICONTROL rtEventsProcessing]**): teilt die Echtzeit-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
 * **[!UICONTROL Update des Ereignisstatus]** (interner Name **[!UICONTROL updateEventStatus]**): ordnet jedem Ereignis einen Status zu.
 
-   Mögliche Ereignisstatus sind:
+  Mögliche Ereignisstatus sind:
 
    * **[!UICONTROL Ausstehend]**: Das Ereignis befindet sich in der Warteschlange und wurde noch keiner Nachrichtenvorlage zugeteilt.
    * **[!UICONTROL Versand ausstehend]**: Das Ereignis befindet sich in der Warteschlange, wurde einer Nachrichtenvorlage zugeordnet und wird vom Versand verarbeitet.

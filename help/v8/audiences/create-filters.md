@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 100%
 
@@ -339,7 +339,7 @@ Für vordefinierte Filter sind erweiterte Parameter verfügbar. Um darauf zuzugr
 
 * Um den Filter standardmäßig für alle Listen anzuzeigen, die auf diesem Dokumenttyp basieren, wählen Sie die Option **[!UICONTROL Standardfilter für diesen Dokumenttyp]** aus.
 
-   Beispielsweise wird der Filter **[!UICONTROL Nach Name oder Login]** auf Benutzer angewendet. Die Option &quot;Standardfilter für diesen Dokumenttyp&quot; ist angekreuzt, der Filter wird daher systematisch für alle Benutzerlisten vorgeschlagen.
+  Beispielsweise wird der Filter **[!UICONTROL Nach Name oder Login]** auf Benutzer angewendet. Die Option &quot;Standardfilter für diesen Dokumenttyp&quot; ist angekreuzt, der Filter wird daher systematisch für alle Benutzerlisten vorgeschlagen.
 
 * Um einen Filter für alle Campaign-Benutzer verfügbar zu machen, wählen Sie die  Option **[!UICONTROL Mit anderen Benutzern geteilter Filter]** aus.
 

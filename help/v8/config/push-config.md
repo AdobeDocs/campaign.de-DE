@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 100%
 
@@ -27,6 +27,7 @@ Als Campaign-Administrator können Sie Campaign SDKs über die [Software-Verteil
 >[!NOTE]
 >
 >Sie können das Adobe Experience Platform Mobile SDK auch verwenden, indem Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren. [Weitere Informationen finden Sie in der Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>
 
 ## Integrationsparameter deklarieren {#declaring-integration-settings}
 
@@ -34,29 +35,29 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
 
 * **Integrationsschlüssel**: zur Identifizierung der Mobile App durch die Adobe-Campaign-Plattform.
 
-   >[!NOTE]
-   >
-   >Dieser Integrationsschlüssel wird in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Informationen]** des Dienstes, der für die Mobile App zuständig ist, eingegeben.
+  >[!NOTE]
+  >
+  >Dieser Integrationsschlüssel wird in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Informationen]** des Dienstes, der für die Mobile App zuständig ist, eingegeben.
 
 * **Tracking-URL**: entspricht der Adresse des Adobe-Campaign-Trackingservers.
 * **Marketing-URL**: zur Abfrage der Abonnements.
 
 * **Für Android**:
 
-   ```sql
-   Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
-   Neolane.getInstance().setMarketingHost("https://yourMarketingHost:yourMarketingPort/");
-   Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/"); 
-   ```
+  ```sql
+  Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
+  Neolane.getInstance().setMarketingHost("https://yourMarketingHost:yourMarketingPort/");
+  Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/"); 
+  ```
 
 * **Für iOS**:
 
-   ```sql
-   Neolane_SDK *nl = [Neolane_SDK getInstance];
-   [nl setMarketingHost:strMktHost];
-   [nl setTrackingHost:strTckHost];
-   [nl setIntegrationKey:strIntegrationKey];
-   ```
+  ```sql
+  Neolane_SDK *nl = [Neolane_SDK getInstance];
+  [nl setMarketingHost:strMktHost];
+  [nl setTrackingHost:strTckHost];
+  [nl setIntegrationKey:strIntegrationKey];
+  ```
 
 ## Android SDK integrieren
 
@@ -81,7 +82,6 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 > * Vergessen Sie nicht, die Datei &quot;google-services.json&quot; herunterzuladen und in Ihr Projekt einzufügen.
 >
 > * Der `apiKey` muss mit dem `projectKey` übereinstimmen, der in der mit dieser Android-Anwendung verknüpften Adobe Campaign Mobile App festgelegt ist.
-
 
 ### Android SDK konfigurieren
 
@@ -567,6 +567,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
    * das Senden der Benachrichtigungskennung oder Push-ID (deviceToken bei iOS und registrationID bei Android) an Adobe Campaign.
    * die Abfrage des Abstimmschlüssels oder userKey (z. B. E-Mail-Adresse oder Kundennummer).
 
+
    ```sql
    // Callback called on successful registration to the APNs
     - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
@@ -793,7 +794,6 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
       @end
       ```
 
-
 ## Variablen {#variables}
 
 Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Code der mobilen Anwendung und in der Adobe Campaign Client-Konsole auf der Registerkarte **[!UICONTROL Variablen]** im speziellen Dienst für mobile Anwendungen definiert werden.
@@ -803,43 +803,43 @@ Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App al
 
 * **Für Android**:
 
-   ```sql
-   public void onReceive(Context context, Intent intent) {
-        ...
-       String event = intent.getStringExtra("VAR");
-        ...
-   }
-   ```
+  ```sql
+  public void onReceive(Context context, Intent intent) {
+       ...
+      String event = intent.getStringExtra("VAR");
+       ...
+  }
+  ```
 
 * **Für iOS**:
 
-   ```sql
-   - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-   {
-       ....
-       if( launchOptions )
-       {
-           // When application is not already launched, the notification data if any are stored in the key 'UIApplicationLaunchOptionsRemoteNotificationKey'
-           NSDictionary *localLaunchOptions = [launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
-           if( localLaunchOptions )
-           {
-            ...
-            [localLaunchOptions objectForKey:@"VAR"];
+  ```sql
+  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+  {
+      ....
+      if( launchOptions )
+      {
+          // When application is not already launched, the notification data if any are stored in the key 'UIApplicationLaunchOptionsRemoteNotificationKey'
+          NSDictionary *localLaunchOptions = [launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
+          if( localLaunchOptions )
+          {
            ...
-           }
+           [localLaunchOptions objectForKey:@"VAR"];
+          ...
+          }
+     }
+  }
+  
+  // Callback called when the application is already launched (whether the application is running foreground or background)
+  - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)launchOptions
+  {
+      if( launchOptions )
+      {
+       ...
+          [launchOptions objectForKey:@"VAR"];
       }
-   }
-   
-   // Callback called when the application is already launched (whether the application is running foreground or background)
-   - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)launchOptions
-   {
-       if( launchOptions )
-       {
-        ...
-           [launchOptions objectForKey:@"VAR"];
-       }
-   }
-   ```
+  }
+  ```
 
 >[!CAUTION]
 >
@@ -887,46 +887,46 @@ Gehen Sie hier folgendermaßen vor:
 
 * Ordnen Sie Ihre Inhaltserweiterung der von Adobe Campaign gesendeten Kategorie zu:
 
-   Wenn Ihre Mobile App ein Bild anzeigen soll, können Sie in Adobe Campaign als Kategoriewert &quot;image&quot; wählen und in Ihrer Mobile App eine Benachrichtigungserweiterung mit dem mit &quot;image&quot; festgelegten Parameter **UNNotificationExtensionCategory** erstellen. Wenn die Push-Benachrichtigung auf dem Gerät empfangen wird, wird die Erweiterung entsprechend dem definierten Kategoriewert abgerufen.
+  Wenn Ihre Mobile App ein Bild anzeigen soll, können Sie in Adobe Campaign als Kategoriewert &quot;image&quot; wählen und in Ihrer Mobile App eine Benachrichtigungserweiterung mit dem mit &quot;image&quot; festgelegten Parameter **UNNotificationExtensionCategory** erstellen. Wenn die Push-Benachrichtigung auf dem Gerät empfangen wird, wird die Erweiterung entsprechend dem definierten Kategoriewert abgerufen.
 
 * Definieren Sie das Layout Ihrer Benachrichtigung.
 
-   Sie müssen ein Layout mit den jeweiligen Widgets definieren. Das Widget für ein Bild ist **UIImageView**.
+  Sie müssen ein Layout mit den jeweiligen Widgets definieren. Das Widget für ein Bild ist **UIImageView**.
 
 * Stellen Sie Ihre Medien dar.
 
-   Sie müssen entsprechenden Code hinzufügen, um die Mediendaten an das Widget zu übertragen. Hier ist ein Beispiel für den Code eines Bildes:
+  Sie müssen entsprechenden Code hinzufügen, um die Mediendaten an das Widget zu übertragen. Hier ist ein Beispiel für den Code eines Bildes:
 
-   ```sql
-   #import "NotificationViewController.h"
-   #import <UserNotifications/UserNotifications.h>
-   #import <UserNotificationsUI/UserNotificationsUI.h>
-   
-   @interface NotificationViewController () <UNNotificationContentExtension>
-   
-   @property (strong, nonatomic) IBOutlet UIImageView *imageView;
-   @property (strong, nonatomic) IBOutlet UILabel *notifContent;
-   @property (strong, nonatomic) IBOutlet UILabel *label;
-   
-   @end
-   
-   @implementation NotificationViewController
-   
-   - (void)viewDidLoad {
-       [super viewDidLoad];
-       // Do any required interface initialization here.
-   }
-   
-   - (void)didReceiveNotification:(UNNotification *)notification {
-       self.label.text = notification.request.content.title;
-       self.notifContent.text = notification.request.content.body;
-       UNNotificationAttachment *attachment = [notification.request.content.attachments objectAtIndex:0];
-       if ([attachment.URL startAccessingSecurityScopedResource])
-       {
-         NSData * imageData = [[NSData alloc] initWithContentsOfURL:attachment.URL];
-         self.imageView.image =[UIImage imageWithData: imageData];
-         [attachment.URL stopAccessingSecurityScopedResource];
-       }
-   }
-   @end
-   ```
+  ```sql
+  #import "NotificationViewController.h"
+  #import <UserNotifications/UserNotifications.h>
+  #import <UserNotificationsUI/UserNotificationsUI.h>
+  
+  @interface NotificationViewController () <UNNotificationContentExtension>
+  
+  @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+  @property (strong, nonatomic) IBOutlet UILabel *notifContent;
+  @property (strong, nonatomic) IBOutlet UILabel *label;
+  
+  @end
+  
+  @implementation NotificationViewController
+  
+  - (void)viewDidLoad {
+      [super viewDidLoad];
+      // Do any required interface initialization here.
+  }
+  
+  - (void)didReceiveNotification:(UNNotification *)notification {
+      self.label.text = notification.request.content.title;
+      self.notifContent.text = notification.request.content.body;
+      UNNotificationAttachment *attachment = [notification.request.content.attachments objectAtIndex:0];
+      if ([attachment.URL startAccessingSecurityScopedResource])
+      {
+        NSData * imageData = [[NSData alloc] initWithContentsOfURL:attachment.URL];
+        self.imageView.image =[UIImage imageWithData: imageData];
+        [attachment.URL stopAccessingSecurityScopedResource];
+      }
+  }
+  @end
+  ```

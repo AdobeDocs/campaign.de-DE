@@ -25,8 +25,8 @@ Im Feld **[!UICONTROL Dauer]** können, wenn in den regionalen Parametern des Be
 
 * **s** für Sekunden, **m** für Minuten, **h** für Stunden, **d** für Tage und **y** für Jahre. Sobald die Eingabe validiert wird, wird der Wert in die am besten lesbare Einheit umgewandelt.
 
-   Die Standardeinheit ist **T** für Tag.
+  Die Standardeinheit ist **T** für Tag.
 
 * Wenn die regionalen Parameter für Deutschland definiert wurden, sind folgende Einheiten zu verwenden: **s** für Sekunden, **min** für Minuten, **h** für Stunden, **T** für Tage, **M** für Monate und **J** für Jahre. Sobald die Eingabe validiert wird, wird der Wert in die am besten lesbare Einheit umgewandelt. So wurde in oben stehender Abbildung die Eingabe **90s** in **1 min 30 s** umgewandelt.
 
-   Die Standardeinheit ist **T** für Tag.
+  Die Standardeinheit ist **T** für Tag.

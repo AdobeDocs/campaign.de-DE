@@ -21,11 +21,11 @@ Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Vorgä
 
 * Die Unterregisterkarte **[!UICONTROL Audit]** zeigt das Aktivitätenprotokoll an. Es enthält die für die Kampagne ausgeführten Vorgänge: Erstellung oder Start eines Workflows, Validierung, Extraktion, Lagerverwaltung usw.
 
-   ![](assets/campaign-audit-tab.png)
+  ![](assets/campaign-audit-tab.png)
 
 * Die Unterregisterkarte **[!UICONTROL Sendungen]** enthält alle Sendungen der Kampagne. Sie können in dieser Ansicht bearbeitet werden. Wählen Sie dazu einen Versand aus und klicken Sie auf das Symbol **[!UICONTROL Details]**.
 
-   ![](assets/campaign-delivery-tab.png)
+  ![](assets/campaign-delivery-tab.png)
 
 * Die Unterregisterkarte **[!UICONTROL Validierungen]** enthält den gesamten Validierungsprozess für die Kampagne. Sie können Details und Kommentare überprüfen.
 

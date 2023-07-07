@@ -28,34 +28,35 @@ Vor der Aktualisierung Ihrer Produktionsinstanzen werden Ihre Nicht-Produktionsi
 
 >[!NOTE]
 >Für dieses Upgrade ist ein Neustart des Apache-Webservers erforderlich. Die Ausfallzeit beträgt innerhalb des unten genannten Zeitfensters maximal 10 Minuten.
+> 
 
 ## Häufig gestellte Fragen {#apache-faq}
 
 * **Warum ist dieses Upgrade obligatorisch?**
 
-   Die aktuelle Apache-Version hat eine Schwachstelle und ist eine potenzielle Sicherheitsbedrohung. Ihre Campaign-Instanzen müssen auf die neueste Apache-Version aktualisiert werden, um dieses Sicherheitsrisiko zu beheben.
+  Die aktuelle Apache-Version hat eine Schwachstelle und ist eine potenzielle Sicherheitsbedrohung. Ihre Campaign-Instanzen müssen auf die neueste Apache-Version aktualisiert werden, um dieses Sicherheitsrisiko zu beheben.
 
 
 * **Welche Kunden erhalten diese Sicherheits-Updates?**
 
-   Alle Kunden, die Campaign-Umgebungen verwenden, die in älteren Apache-Versionen implementiert sind, erhalten ein Upgrade auf die neueste Apache-Version.
+  Alle Kunden, die Campaign-Umgebungen verwenden, die in älteren Apache-Versionen implementiert sind, erhalten ein Upgrade auf die neueste Apache-Version.
 
 * **Mit welcher Ausfallzeit ist zu rechnen?**
 
-   Die erwartete Ausfallzeit liegt bei maximal 10 Minuten.
+  Die erwartete Ausfallzeit liegt bei maximal 10 Minuten.
 
 * **Gibt es Maßnahmen, die der Kunde für dieses Sicherheits-Update treffen muss?**
 
-   Es sind keine Aktionen erforderlich, da das Sicherheits-Upgrade automatisch ausgeführt wird.
+  Es sind keine Aktionen erforderlich, da das Sicherheits-Upgrade automatisch ausgeführt wird.
 
 * **Welche Validierungen müssen von den Kunden ausgeführt werden?**
 
-   Für dieses Sicherheits-Update sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+  Für dieses Sicherheits-Update sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support)
 
 
 * **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
 
-   Da es sich um die Behebung einer Schwachstelle handelt, empfehlen wir dringend, sich an den vorgegebenen Zeitplan zu halten.
+  Da es sich um die Behebung einer Schwachstelle handelt, empfehlen wir dringend, sich an den vorgegebenen Zeitplan zu halten.
 
 
 Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).

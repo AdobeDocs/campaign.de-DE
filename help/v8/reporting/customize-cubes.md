@@ -7,7 +7,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 100%
 
@@ -82,11 +82,11 @@ Sie können
 
 * **[!UICONTROL Auffinden der am häufigsten verwendeten Werte]**
 
-   Wenn Sie vier Klassen erstellen, werden die vier am häufigsten verwendeten Klassen angezeigt, während die anderen gezählt und in der Kategorie „Sonstige“ zusammengefasst werden.
+  Wenn Sie vier Klassen erstellen, werden die vier am häufigsten verwendeten Klassen angezeigt, während die anderen gezählt und in der Kategorie „Sonstige“ zusammengefasst werden.
 
 * **[!UICONTROL Erzeugen von Klassen in Form von Slots]**
 
-   Für das gleiche Beispiel erstellt Adobe Campaign automatisch vier Slots von gleicher Größe, um die Werte in der Datenbank anzuzeigen.
+  Für das gleiche Beispiel erstellt Adobe Campaign automatisch vier Slots von gleicher Größe, um die Werte in der Datenbank anzuzeigen.
 
 In diesem Fall wird der im Faktenschema gewählte Filter ignoriert.
 
@@ -140,7 +140,7 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
    * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../automation/workflow/scheduler.md).
    * Über die Aktivität **[!UICONTROL Aggregat-Update]** wird der anzuwendende Aktualisierungsmodus ausgewählt: vollständig oder teilweise.
 
-      Standardmäßig wird das Aggregat bei jeder Ausführung vollständig aktualisiert. Bei Auswahl der teilweisen Aktualisierung sind mithilfe des entsprechenden Links die Aktualisierungsbedingungen zu definieren.
+     Standardmäßig wird das Aggregat bei jeder Ausführung vollständig aktualisiert. Bei Auswahl der teilweisen Aktualisierung sind mithilfe des entsprechenden Links die Aktualisierungsbedingungen zu definieren.
 
 ## Definieren von Kennzahlen {#define-measures}
 
@@ -186,7 +186,7 @@ Die Konfiguration der angezeigten Kennzahlen, Zeilen und Spalten kann für jede 
 
 * Klicken Sie auf das Symbol **[!UICONTROL Konfiguration der Pivot-Tabelle bearbeiten]**, um auf das Konfigurationsfenster für alle Kennzahlen zuzugreifen.
 
-   Sie können bestimmen, ob die Kennzahlen in Zeilen oder Spalten angezeigt und ob ihre Titel ein- oder ausgeblendet werden sollen.
+  Sie können bestimmen, ob die Kennzahlen in Zeilen oder Spalten angezeigt und ob ihre Titel ein- oder ausgeblendet werden sollen.
 
 ![](assets/cube-pivot-table-config-details.png)
 

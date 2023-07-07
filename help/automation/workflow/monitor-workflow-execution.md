@@ -5,7 +5,7 @@ description: Überwachen der Workflow-Ausführung
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2015'
 ht-degree: 100%
 
@@ -37,21 +37,21 @@ Das Protokoll enthält den Verlauf der Workflow-Ausführung. Es speichert die vo
 
 * im Tab **[!UICONTROL Verfolgung]** das Workflow-Protokoll einzusehen.
 
-   ![](assets/new-workflow-display-log-tab.png)
+  ![](assets/new-workflow-display-log-tab.png)
 
 * die Protokollnachrichten nach Aktivität zu filtern. Klicken Sie hierzu in der Symbolleiste oberhalb des Diagramms auf die Schaltfläche **[!UICONTROL Aufgaben und Protokoll anzeigen]**. Unter dem Diagramm erscheinen nun die Tabs **[!UICONTROL Protokoll]** und **[!UICONTROL Aufgaben]**. Markieren Sie eine Aktivität, um alle sie betreffenden Nachrichten anzuzeigen. Wenn keine Aktivität markiert wurde, werden alle Nachrichten angezeigt.
 
-   ![](assets/new-workflow-display-log-activity.png)
+  ![](assets/new-workflow-display-log-activity.png)
 
-   >[!NOTE]
-   >
-   >Durch Klick in den Diagrammhintergrund werden alle Markierungen entfernt.
+  >[!NOTE]
+  >
+  >Durch Klick in den Diagrammhintergrund werden alle Markierungen entfernt.
 
 * Um nur Nachrichten anzuzeigen, die eine bestimmte Aufgabe betreffen, gehen Sie in den Tab **[!UICONTROL Aufgaben]**, und klicken Sie auf eine Aktivität des Diagramms. Auf diese Weise wird die Liste auf die Nachrichten zu einer bestimmten Aktivität begrenzt. Durch Doppelklick auf eine Aufgabe werden alle Informationen angezeigt. Der letzte Tab des Fensters enthält das Protokoll.
 
-   ![](assets/new-workflow-display-tasks-activity.png)
+  ![](assets/new-workflow-display-tasks-activity.png)
 
-   Durch Klicken auf die Schaltfläche **[!UICONTROL Details...]** können Sie zusätzliche Informationen bezüglich der Aktivitätsausführung einsehen. Beispielsweise erscheinen hier die validierende Person und gegebenenfalls der Kommentar, den diese eingegeben hat.
+  Durch Klicken auf die Schaltfläche **[!UICONTROL Details...]** können Sie zusätzliche Informationen bezüglich der Aktivitätsausführung einsehen. Beispielsweise erscheinen hier die validierende Person und gegebenenfalls der Kommentar, den diese eingegeben hat.
 
 >[!NOTE]
 >
@@ -61,15 +61,15 @@ Die Nachrichten bezüglich der Ausführung der Workflow-Aktivitäten werden im P
 
 * Protokoll einer Zielgruppenbestimmung
 
-   Klicken Sie nach einer Zielgruppenbestimmung auf den Tab **[!UICONTROL Verfolgung]**, um die einzelnen Schritte der Ausführung nachzuvollziehen.
+  Klicken Sie nach einer Zielgruppenbestimmung auf den Tab **[!UICONTROL Verfolgung]**, um die einzelnen Schritte der Ausführung nachzuvollziehen.
 
-   ![](assets/s_user_segmentation_journal.png)
+  ![](assets/s_user_segmentation_journal.png)
 
-   Alle Vorgänge, Warnhinweise und Fehler werden protokolliert.
+  Alle Vorgänge, Warnhinweise und Fehler werden protokolliert.
 
 * Protokoll einer Aktivität
 
-   Auch die Ausführung von Aktivitäten wird detailliert protokolliert. Sie haben zwei Möglichkeiten, die Nachrichten einzusehen:
+  Auch die Ausführung von Aktivitäten wird detailliert protokolliert. Sie haben zwei Möglichkeiten, die Nachrichten einzusehen:
 
    1. Markieren Sie die gewünschte Aktivität und klicken Sie auf die Schaltfläche **[!UICONTROL Aufgaben und Protokoll anzeigen]**.
 
@@ -216,9 +216,9 @@ Bitte beachten Sie Folgendes:
 * In JavaScript ist ein nicht definierter Wert in einem Test auf false gesetzt. Dadurch kann die Instanzvariable noch vor ihrer Initialisierung geprüft werden.
 * Sie können die aufgrund dieses Mechanismus nicht verarbeiteten Aktivitäten überwachten, indem Sie dem Initialisierungsscript des &quot;Nein&quot;-Zweigs eine Protokollierungsanweisung hinzufügen.
 
-   ```
-   logInfo("Workflow already running, parallel execution not allowed.");
-   ```
+  ```
+  logInfo("Workflow already running, parallel execution not allowed.");
+  ```
 
 Im Abschnitt [Datenaktualisierungen koordinieren](coordinate-data-updates.md) wird ein Anwendungsbeispiel vorgestellt.
 

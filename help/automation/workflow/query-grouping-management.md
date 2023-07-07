@@ -19,15 +19,15 @@ Im folgenden Beispiel werden die E-Mail-Domains gesucht, die bei früheren Sendu
 
 * Welche Tabelle soll ausgewählt werden?
 
-   Die Empfängertabelle (nms:recipient)
+  Die Empfängertabelle (nms:recipient)
 
 * Felder, die als Ausgabespalten verwendet werden sollen?
 
-   E-Mail-Domain und Primärschlüssel (mit Zählung)
+  E-Mail-Domain und Primärschlüssel (mit Zählung)
 
 * Nach welchen Kriterien werden die Daten gruppiert?
 
-   Nach E-Mail-Domain mit einer Primärschlüsselanzahl von über 30. Hierfür wird die Funktion **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** ) verwendet, welche sowohl die Gruppierung (&quot;group by&quot;) als auch die Filterung (&quot;having&quot;) der Daten erlaubt, die gruppiert wurden.****
+  Nach E-Mail-Domain mit einer Primärschlüsselanzahl von über 30. Hierfür wird die Funktion **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** ) verwendet, welche sowohl die Gruppierung (&quot;group by&quot;) als auch die Filterung (&quot;having&quot;) der Daten erlaubt, die gruppiert wurden.****
 
 Gehen Sie wie folgt vor:
 

@@ -24,15 +24,15 @@ Nach der Unterbreitung von Angeboten haben Sie die Möglichkeit, den Verlauf der
 
 * Ausgehend vom Angebot: Klicken Sie im Tab **[!UICONTROL Bearbeiten]** des Angebots auf **[!UICONTROL Vorschläge]**.
 
-   ![](assets/offer_followup_006.png)
+  ![](assets/offer_followup_006.png)
 
 * Ausgehend vom Empfänger: Klicken Sie auf den Tab **[!UICONTROL Vorschläge]**.
 
-   ![](assets/offer_followup_002.png)
+  ![](assets/offer_followup_002.png)
 
 * Ausgehend von einer Platzierung: Klicken Sie auf den Tab **[!UICONTROL Vorschläge]**.
 
-   ![](assets/offer_space_prop_001_b.png)
+  ![](assets/offer_space_prop_001_b.png)
 
 ## Angebotsanalyse-Bericht{#offer-analysis-report}
 
@@ -42,14 +42,14 @@ Die Statistiken gliedern sich nach drei Merkmalen:
 
 * Nach Datum:
 
-   ![](assets/offer_report_perdate.png)
+  ![](assets/offer_report_perdate.png)
 
 * Nach Platzierung:
 
-   ![](assets/offer_report_perspaces.png)
+  ![](assets/offer_report_perspaces.png)
 
 * Nach Sendungen:
 
-   ![](assets/offer_report_perdeliveries.png)
+  ![](assets/offer_report_perdeliveries.png)
 
 Im Berichtskopf können Sie die angezeigten Daten mithilfe bestimmter Kriterien einschränken. Wählen Sie z. B. einen Zeitraum aus und klicken Sie abschließend auf **[!UICONTROL Aktualisieren]**, um die Filter auf den Bericht anzuwenden.

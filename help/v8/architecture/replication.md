@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Technische Workflows{#tech-wf}
 
-Im Kontext einer [Enterprise (FFDA)-Implementierung](enterprise-deployment.md) bietet Adobe Campaign eine Reihe integrierter technischer Workflows. Technische Workflows führen Prozesse oder Aufträge aus und werden auf dem Server regelmäßig geplant.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) bietet Adobe Campaign eine Reihe integrierter technischer Workflows. Technische Workflows führen Prozesse oder Aufträge aus und werden auf dem Server regelmäßig geplant.
 
 Solche Workflows führen Operationen zur Datenbankwartung aus, nutzen die Tracking-Informationen in den Versand-Logs, erstellen wiederkehrende Kampagnen und mehr.
 
@@ -28,8 +28,8 @@ Zusätzlich zu diesen technischen Workflows setzt Campaign v8 bei der Verwaltung
 Dieser Workflow sorgt für die automatische Replikation von integrierten Tabellen, die in der lokalen Campaign-Datenbank (Postgres) und in der Cloud-Datenbank ([!DNL Snowflake]) vorhanden sein müssen. Er ist so geplant, dass er Tag für Tag einmal stündlich ausgeführt wird. Wenn das Feld **lastModified** vorhanden ist, erfolgt die Replikation inkrementell, ansonsten wird die gesamte Tabelle repliziert. Die Reihenfolge der Tabellen im folgenden Array ist die Reihenfolge, die vom Replikations-Workflow verwendet wird.
 * **[!UICONTROL Staging-Daten replizieren]**
 Dieser Workflow repliziert Staging-Daten für einheitliche Aufrufe. Er ist so geplant, dass er Tag für Tag einmal stündlich ausgeführt wird.
-* **[!UICONTROL FFDA sofort freigeben]**\
-   Dieser Workflow sorgt für eine sofortige Bereitstellung in der Cloud-Datenbank.
+* **[!UICONTROL FFDA sofort bereitstellen]**\
+  Dieser Workflow sorgt für eine sofortige Bereitstellung in der Cloud-Datenbank.
 * **[!UICONTROL FFDA-Daten sofort replizieren]**
 Dieser Workflow repliziert die XS-Daten für ein bestimmtes externes Konto.
 

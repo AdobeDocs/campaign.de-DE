@@ -47,7 +47,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Datenbankbereinigung</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>Bereinigt obsolete Daten gemäß der Konfiguration im Softwareverteilungs-Assistenten. Berechnet diverse Statistiken und Vorgänge. Wird standardmäßig täglich um 4 Uhr gestartet.</p></td> 
+   <td> <p>Dieser Workflow ist der Datenbankwartungs-Workflow: Er führt verschiedene Berechnungen mit Statistiken und Prozessen durch und löscht gemäß der definierten Konfiguration im Bereitstellungsassistenten veraltete Daten aus der Datenbank. Er wird standardmäßig jeden Tag um 4 Uhr morgens ausgelöst.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Bereinigung ausgesetzter Workflows</span> <br /> </td> 
@@ -57,7 +57,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Angebotsbenachrichtigungen</span> <br /> </td> 
    <td> <span class="uicontrol">offerMgt</span> <br /> </td> 
-   <td> Gibt stündlich validierte Angebote sowie im Angebotskatalog erstellte Kategorien in die Live-Umgebung frei.<br /> </td> 
+   <td> Stellt stündlich validierte Angebote sowie im Angebotskatalog erstellte Kategorien in die Live-Umgebung bereit.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Planungen</span> <br /> </td> 

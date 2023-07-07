@@ -110,7 +110,7 @@ Bei Bedarf können Sie eine Adresse auch manuell aus der Quarantäneliste entfer
 
 * Sie können den Status der Adresse über den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** in **[!UICONTROL Gültig]** ändern.
 
-   ![](assets/tech-quarantine-status.png)
+  ![](assets/tech-quarantine-status.png)
 
 Möglicherweise müssen Massenaktualisierungen in der Quarantäneliste durchgeführt werden, z. B. im Falle eines ISP-Ausfalls, bei dem E-Mails fälschlicherweise als Bounces gekennzeichnet werden, da sie der Empfangsadresse nicht erfolgreich zugestellt werden können.
 

@@ -7,7 +7,7 @@ role: Admin, Developer
 level: Beginner, Intermediate, Experienced
 exl-id: fefb6d80-c3d1-448b-82ab-648da58a0ba4
 source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1946'
 ht-degree: 100%
 
@@ -53,6 +53,7 @@ Klicken Sie zum Laden aller Datensätze mit der rechten Maustaste auf die Liste 
 >[!CAUTION]
 >
 >Wenn eine Liste eine große Menge an Datensätzen enthält, kann das vollständige Laden einige Zeit in Anspruch nehmen.
+>
 
 ### Hinzufügen und Entfernen von Spalten {#add-columns}
 
@@ -79,6 +80,7 @@ Sie können auch den Listenkonfigurationsbildschirm verwenden, um Spalten hinzuz
    >Erweiterte Felder werden standardmäßig nicht angezeigt. Um sie anzuzeigen, klicken Sie auf das Symbol **Erweiterte Felder anzeigen** unten rechts in der Liste der verfügbaren Felder.
    >
    >Die Art der Felder (SQL-Felder, verknüpfte Tabellen, berechnete Felder usw.) wird durch verschiedene Symbole verdeutlicht. Für das jeweils ausgewählte Feld wird unter der Liste der verfügbaren Felder die entsprechende Beschreibung angezeigt.
+   >
 
 1. Mit den Pfeilen nach oben/unten können Sie die **Anzeigereihenfolge** ändern.
 
@@ -254,6 +256,7 @@ Mit der Unterregisterkarte **[!UICONTROL Alias]** einer Auflistung kann die Anza
 >[!CAUTION]
 >
 >Die Berechnung der Alias-Eingabeanzahl kann lange dauern.
+>
 
 Sie können die Trefferberechnung manuell über den Link **[!UICONTROL Werte bereinigen…]** ausführen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Erweiterte Parameter…]** und wählen Sie die gewünschten Optionen aus.
 

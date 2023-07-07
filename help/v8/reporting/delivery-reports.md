@@ -4,7 +4,7 @@ description: Integrierte Versandberichte in Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 100%
 
@@ -65,9 +65,9 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 * **[!UICONTROL Klicks auf den Mirrorseiten-Link]**[](../send/mirror-page.md): Anzahl der Klicks auf den Mirrorseiten-Link. Um berücksichtigt zu werden, muss der Link im Versand-Assistenten als solcher definiert worden sein (getrackte URLs).
 * **[!UICONTROL Schätzung der Weiterleitungen]**: Schätzung der Anzahl der E-Mails, die von Zielgruppenempfängern an andere Personen weitergeleitet wurden. Dieser Wert ist die Differenz aus den Unique Opens allgemein und den Unique Opens der Zielgruppenempfänger.
 
-   >[!NOTE]
-   >
-   >Weiterführende Informationen zur Unterscheidung von Personen und Zielgruppenempfängern finden Sie unter [Unterschied zwischen Personen und Zielgruppenempfängern](metrics-calculation.md#targeted-persons---recipients).
+  >[!NOTE]
+  >
+  >Weiterführende Informationen zur Unterscheidung von Personen und Zielgruppenempfängern finden Sie unter [Unterschied zwischen Personen und Zielgruppenempfängern](metrics-calculation.md#targeted-persons---recipients).
 
 **[!UICONTROL 3. Öffnungs- und Klickrate]**
 

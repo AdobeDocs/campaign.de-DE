@@ -1,5 +1,5 @@
 ---
-title: E-Mails mit Adobe Campaign konfigurieren
+title: Konfigurieren von E-Mails mit Adobe Campaign
 description: Erfahren Sie, wie Sie E-Mails in Adobe Campaign konfigurieren.
 feature: Email
 role: User
@@ -7,7 +7,7 @@ level: Beginner
 source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
 workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 83%
+ht-degree: 90%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 83%
 
 ## Festlegen zusätzlicher Parameter {#delivery-additional-parameters}
 
-Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** die Parameter der Versandeigenschaften definieren.
+Vor der Durchführung des Versands können Sie auf der Registerkarte **[!UICONTROL Versand]** die Parameter der Versandeigenschaften definieren.
 
 ![](assets/delivery-properties-delivery.png)
 
-* **[!UICONTROL Versandpriorität]**: Verwenden Sie diese Option, um die Versandreihenfolge für Ihre Sendungen zu ändern, indem Sie die Prioritätsstufe festlegen, von der aus **[!UICONTROL Sehr niedrig]** nach **[!UICONTROL Sehr hoch]** (der Standardwert ist **[!UICONTROL Normal]**).
+* **[!UICONTROL Versandpriorität]**: Verwenden Sie diese Option, um die Versandreihenfolge für Ihre Sendungen zu ändern, indem Sie die Prioritätsstufe festlegen, von **[!UICONTROL Sehr niedrig]** bis **[!UICONTROL Sehr hoch]** (der Standardwert ist **[!UICONTROL Normal]**).
 
 * **[!UICONTROL Kontingentgröße]**: Mithilfe dieser Option können Sie die Anzahl der in einem XML-Versand-Package enthaltenen Nachrichten festlegen. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
 
@@ -35,7 +35,7 @@ Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** d
   >
   >* Diese Option darf bei Mid-Sourcing nicht festgelegt werden.
   >
-  >* Weitere Informationen zur SMTP-Serverkonfiguration finden Sie in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
+  >* Weitere Informationen zur SMTP-Server-Konfiguration finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=de#smtp-relay){target="_blank"}.
 
 * **[!UICONTROL E-Mail-BCC]**: Mit dieser Option können Sie mit der BCC-Funktion E-Mails in einem externen System speichern, indem Sie einfach eine E-Mail-Adresse als BCC zu Ihrer Versandzielgruppe hinzufügen. [Weitere Informationen](email-parameters.md).
 
@@ -68,7 +68,7 @@ Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Si
 
      ![](assets/delivery-waves-calendar.png)
 
-   Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) stellt sicher, dass der letzte Schub vor der Versand-Deadline eingeplant ist. Kampagnentypologien und ihre Regeln, konfiguriert im **[!UICONTROL Typologie]** den Tab der Versandeigenschaften, siehe [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
+   Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) stellt sicher, dass der letzte Schub vor der Versand-Deadline eingeplant ist. Kampagnentypologien und ihre Regeln, die auf der Registerkarte **[!UICONTROL Typologie]** der Versandeigenschaften konfiguriert sind, werden in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC--> vorgestellt.
 
    >[!IMPORTANT]
    >

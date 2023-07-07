@@ -19,19 +19,19 @@ In diesem Beispiel werden die Namen und E-Mail-Adressen der Empfänger gesucht, 
 
 * Welche Tabelle soll ausgewählt werden?
 
-   Die Empfängertabelle (nms:recipient)
+  Die Empfängertabelle (nms:recipient)
 
 * Felder, die als Ausgabespalten verwendet werden sollen
 
-   E-Mail, Name, Wohnort und Kundennummer
+  E-Mail, Name, Wohnort und Kundennummer
 
 * Nach welchen Kriterien sind die Empfänger zu filtern?
 
-   Nach Wohnort und E-Mail-Domain
+  Nach Wohnort und E-Mail-Domain
 
 * Wird das Ergebnis sortiert?
 
-   Ja, nach **[!UICONTROL Kundennummer]** und **[!UICONTROL Nachname]**.
+  Ja, nach **[!UICONTROL Kundennummer]** und **[!UICONTROL Nachname]**.
 
 Gehen Sie wie folgt vor:
 

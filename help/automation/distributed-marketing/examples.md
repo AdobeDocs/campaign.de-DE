@@ -38,35 +38,35 @@ Im vorliegenden Beispiel enthält die Aktivität **Kampagnenbestellung**:
 
 * Felder, die von der Lokalstelle bei der Bestellung angegeben werden;
 
-   ![](assets/mkg_dist_web_app2.png)
+  ![](assets/mkg_dist_web_app2.png)
 
 * Links, die der Lokalstelle die Evaluierung der Kampagne ermöglichen (z. B. Zielgruppe, Budget, Inhalt etc.);
 
-   ![](assets/mkg_dist_web_app3.png)
+  ![](assets/mkg_dist_web_app3.png)
 
 * Scripts, die die Berechnung und Anzeige der Ergebnisse der vorhergenden Evaluierungen ermöglichen.
 
-   ![](assets/mkg_dist_web_app4.png)
+  ![](assets/mkg_dist_web_app4.png)
 
 Im vorliegenden Beispiel werden die folgenden APIs verwendet:
 
 * Zur Zielgruppen-Evaluierung:
 
-   ```
-   var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
+  ```
 
 * Zur Budget-Evaluierung:
 
-   ```
-   var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
-   ```
+  ```
+  var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
+  ```
 
 * Zur Inhalts-Evaluierung:
 
-   ```
-   var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
+  ```
 
 ## Erstellen einer partizipativen Kampagne (mit Zielgruppenvalidierung) {#creating-a-collaborative-campaign--by-target-approval-}
 
@@ -215,7 +215,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    * überprüft die Vorschau des Versandinhalts,
    * validiert ihre Teilnahme.
 
-      ![](assets/mkg_dist_use_case_form_8.png)
+     ![](assets/mkg_dist_use_case_form_8.png)
 
 1. Der für die Validierung der Bestellungen verantwortliche Benutzer genehmigt die Teilnahme.
 

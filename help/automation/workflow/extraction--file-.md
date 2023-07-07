@@ -58,7 +58,7 @@ Folgende Aggregatfunktionen stehen zur Verfügung:
 
 * **[!UICONTROL Zählung]**: zählt die Werte ungleich null des zu aggregierenden Felds einschließlich der doppelten Werte (des aggregierten Felds).
 
-   **[!UICONTROL Zählung - Unterschiedlich]**: zählt die unterschiedlichen Werte ungleich null des zu aggregierenden Felds. Doppelte Werte werden vor der Berechnung ausgeschlossen.
+  **[!UICONTROL Zählung - Unterschiedlich]**: zählt die unterschiedlichen Werte ungleich null des zu aggregierenden Felds. Doppelte Werte werden vor der Berechnung ausgeschlossen.
 
 * **[!UICONTROL Summe]**: gibt die Summe der Werte eines numerischen Felds aus.
 * **[!UICONTROL Minimaler Wert]**: gibt den Mindestwert eines beliebigen Felds aus.

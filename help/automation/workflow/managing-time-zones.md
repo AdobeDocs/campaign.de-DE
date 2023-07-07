@@ -29,19 +29,19 @@ Mögliche Werte:
 
 * Server-Zeitzone
 
-   Verwendet die Zeitzone des Adobe-Campaign-Anwendungsservers.
+  Verwendet die Zeitzone des Adobe-Campaign-Anwendungsservers.
 
 * Benutzer-Zeitzone
 
-   Verwendet die Zeitzone des Adobe-Campaign-Benutzers, der die Ausführung des Workflows startet.
+  Verwendet die Zeitzone des Adobe-Campaign-Benutzers, der die Ausführung des Workflows startet.
 
 * Zeitzone der Datenbank
 
-   Verwendet die Zeitzone des Datenbankservers.
+  Verwendet die Zeitzone des Datenbankservers.
 
 * Bestimmte Zeitzonen
 
-   Verwendet die ausgewählte Zeitzone.
+  Verwendet die ausgewählte Zeitzone.
 
 Bei Auswahl der Option **[!UICONTROL Standard]** wird die Zeitzone des Workflows oder, wenn nicht vorhanden, des Anwendungsservers verwendet.
 

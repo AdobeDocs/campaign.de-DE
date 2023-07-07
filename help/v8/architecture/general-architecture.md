@@ -14,19 +14,19 @@ ht-degree: 100%
 
 # Allgemeine Architektur{#general-architecture}
 
-Die typische Implementierung einer Adobe Campaign-Lösung setzt sich aus folgenden Komponenten zusammen:
+Die typische Bereitstellung einer Adobe Campaign-Lösung setzt sich aus folgenden Komponenten zusammen:
 
 * **Personalisierte Client-Umgebung**
 
-   Eine intuitive grafische Benutzeroberfläche, über die neben der Kommunikation zu und dem Tracking von Marketing-Angeboten die Erstellung von Kampagnen möglich ist, sämtliche Marketing-Aktivitäten, -Programme und Pläne (einschließlich E-Mails, Workflows und Landingpages) geprüft und verwaltet werden können und zudem die Erstellung und Verwaltung von Kundenprofilen und Audiences durchgeführt werden kann.
+  Eine intuitive grafische Benutzeroberfläche, über die neben der Kommunikation zu und dem Tracking von Marketing-Angeboten die Erstellung von Kampagnen möglich ist, sämtliche Marketing-Aktivitäten, -Programme und Pläne (einschließlich E-Mails, Workflows und Landingpages) geprüft und verwaltet werden können und zudem die Erstellung und Verwaltung von Kundenprofilen und Audiences durchgeführt werden kann.
 
 * **Entwicklungsumgebung**
 
-   Eine Server-seitige Software, die Marketing-Kampagnen über benutzerseitig ausgewählte Kommunikationskanäle ausführt, die von E-Mail, SMS und Push-Benachrichtigungen über Briefpost bis zu Web- und Social-Media-Kanälen reichen. In der Benutzeroberfläche werden dabei zugehörige Regeln und Workflows festgelegt.
+  Eine Server-seitige Software, die Marketing-Kampagnen über benutzerseitig ausgewählte Kommunikationskanäle ausführt, die von E-Mail, SMS und Push-Benachrichtigungen über Briefpost bis zu Web- und Social-Media-Kanälen reichen. In der Benutzeroberfläche werden dabei zugehörige Regeln und Workflows festgelegt.
 
 * **Datenbank-Container**
 
-   Basierend auf der Technologie relationaler Datenbanken speichert die Adobe Campaign Cloud-Datenbank alle Informationen, Kampagnenkomponenten, Angebote und Workflows sowie die Ergebnisse von Kampagnen in Containern der Datenbank.
+  Basierend auf der Technologie relationaler Datenbanken speichert die Adobe Campaign Cloud-Datenbank alle Informationen, Kampagnenkomponenten, Angebote und Workflows sowie die Ergebnisse von Kampagnen in Containern der Datenbank.
 
 ## Personalisierte Client-Umgebung {#client-env}
 
@@ -60,7 +60,7 @@ Dies sind die wichtigsten Prozesse:
 
 * **Weiterleitungs-Server** (nlserver webmdl)  - Bei E-Mails übernimmt Adobe Campaign automatisch das Öffnungs- und Klick-Tracking (wobei das Tracking von Transaktionen auf Website-Ebene ebenfalls möglich ist). Hierfür werden die in den E-Mail-Nachrichten enthaltenen URLs so umgeschrieben, dass sie auf dieses Modul verweisen. Dieses wiederum registriert Internet-Benutzer, während diese an die Ziel-URL weitergeleitet werden.
 
-   Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht sind diese Funktionen in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert. und nur unter Windows verfügbar.
+  Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht sind diese Funktionen in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert. und nur unter Windows verfügbar.
 
 Daneben sind auch noch weitere technische Prozesse verfügbar:
 
