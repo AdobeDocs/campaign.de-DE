@@ -3,9 +3,9 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
+source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '157'
 ht-degree: 82%
 
 ---
@@ -33,37 +33,53 @@ ht-degree: 82%
 
 ## Erste Schritte
 
-<table>
-<tr>
-  <td valign="bottom">
-    <a href="start/connect.md">
-      <img alt="Verbinden" src="start/assets/do-not-localize/login.jpeg"/>
-    </a>
-    <div>
-    <a href="start/connect.md">Herstellen einer Verbindung zu Campaign</a>
-    </div>
-    <br>
-  </td>
 
-<td valign="bottom">
-      <a href="start/import.md">
-       <img alt="Import" src="start/assets/do-not-localize/profiles.jpeg" />
-       </a>
-    <div><a href="start/import.md">Profile importieren</a>
-    </div>
-    <br>
-  </td>
-  <td valign="bottom">
-    <a href="start/create-message.md">
-      <img alt="E-Mail" src="start/assets/do-not-localize/email-design.jpeg" />
-    </a>
-    <div>
-    <a href="start/create-message.md">E-Mail erstellen</a>
-    </div>
-    <br>
-  </td>
-</tr>
-</table>
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="start/connect.md">
+<img alt="Herstellen einer Verbindung mit Campaign v8" src="start/assets/do-not-localize/login.jpeg">
+</a>
+<div><a href="start/connect.md"><strong>Herstellen einer Verbindung zu Campaign</strong>
+</div>
+<p>
+</td>
+<td>
+<a href="start/import.md">
+<img alt="Importieren von Profilen" src="start/assets/do-not-localize/profiles.jpeg">
+</a>
+<div>
+<a href="start/import.md"><strong>Profile importieren</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="start/create-message.md">
+<img alt="Erstellen einer E-Mail" src="start/assets/do-not-localize/email-design.jpeg">
+</a>
+<div>
+<a href="start/create-message.md"><strong>E-Mail erstellen</strong></a>
+</div>
+<p></td>
+<td>
+<a href="send/push.md">
+<img alt="Push-Benachrichtigungen senden" src="start/assets/do-not-localize/push-send.jpeg">
+</a>
+<div>
+<a href="send/push.md"><strong>Push-Benachrichtigungen senden</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="../automation/workflow/about-workflows.md">
+<img alt="Erstellen von Kampagnen" src="start/assets/do-not-localize/workflow.jpeg">
+</a>
+<div>
+<a href="../automation/workflow/about-workflows.md"><strong>Workflows erstellen</strong></a>
+</div>
+<p>
+</td>
+</tr></table>
+
 
 ## Mehr Ressourcen
 

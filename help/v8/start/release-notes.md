@@ -5,20 +5,20 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d5bd383dca524e15a098fc63661236b50144cb3d
+source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 58%
+ht-degree: 98%
 
 ---
 
 # Aktuelle Version{#latest-release}
 
-Adobe Campaign wird regelmäßig aktualisiert. Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihr Produkterlebnis zu verbessern. Adobe empfiehlt allen Kunden dringend, ein Upgrade auf die neueste Version durchzuführen.
+Adobe Campaign wird regelmäßig aktualisiert. Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihr Produkterlebnis zu verbessern. Adobe empfiehlt allen Kundinnen und Kunden dringend, ein Upgrade auf die neueste Version durchzuführen.
 
-Als Benutzer von Managed Cloud Services wird Ihre Instanz von Adobe mit jeder neuen Version aktualisiert. Adobe kontaktiert Sie und aktualisiert Ihre Umgebungen. Campaign Client Console **muss auf dieselbe Version aktualisiert werden** als Campaign-Server. Auf dieser [Seite](../start/connect.md#upgrade-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+Wenn Sie Managed Cloud Services nutzen, wird Ihre Instanz von Adobe mit jeder neuen Version aktualisiert. Adobe wird Sie kontaktieren und Ihre Umgebungen aktualisieren. Die Campaign-Client-Konsole **muss auf dieselbe Version aktualisiert werden** wie die Campaign-Server. Auf dieser [Seite](../start/connect.md#upgrade-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
-Als Kunde müssen Sie außerdem sicherstellen, dass Sie die neuesten unterstützten Versionen der Systeme verwenden, die im Abschnitt [Kompatibilitätsmatrix](compatibility-matrix.md).
+Außerdem sollten Sie als Kunde bzw. Kundin sicherstellen, dass Sie die neuesten unterstützten Versionen der in der [Kompatibilitätsmatrix](compatibility-matrix.md) aufgeführten Systeme verwenden. 
 
 ## Version 8.5.1 {#release-8-5}
 
@@ -34,47 +34,52 @@ _30. Juni 2023_
 </thead> 
 <tbody> 
 <tr> 
-<td><p>Campaign v8.5.1 führt den neuesten Push-Benachrichtigungsdienst ein, der auf einem robusten Framework basiert, das auf modernster Technologie basiert. Dieser Dienst wurde entwickelt, um neue Skalierbarkeitsstufen zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Maßstäbe und Zuverlässigkeit erwarten und Sie so in die Lage versetzen, mit Ihren Mobile-App-Anwendern wie nie zuvor in Kontakt zu treten und Verbindungen zu ihnen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).</p>
-<p>Weitere Informationen finden Sie in der <a href="../send/push-data-collection.md">entsprechenden Dokumentation</a>.</p>
+<td><p>Campaign v8.5.1 führt den neuesten Push-Benachrichtigungsdienst ein, der auf einem robusten Framework basiert, das auf modernster Technologie basiert. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).</p>
+<p>Weitere Informationen finden Sie im <a href="../send/push-data-collection.md">entsprechenden Handbuch</a>.</p>
 
 </td> 
 </tr> 
 </tbody> 
 </table>
 
-**Aktualisierungen zur Kompatibilität**
-
-* Die 32-Bit-Version der Client Console wird jetzt nicht mehr unterstützt. Ab 8.6. ist die Client-Konsole nur noch in 64 Bit verfügbar. Das Upgrade auf die 64-Bit-Version der Client Console ist nahtlos. Weitere Informationen zum Upgrade Ihres Betriebssystems finden Sie in dieser [Technote](../../technotes/upgrades/console.md).
-* Jetzt können Sie Ihre Campaign v8-Instanz mit Ihrer externen Azure synapse-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet. Weitere Informationen finden Sie unter [Campaign-Kompatibilitätsmatrix](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
-
 **Verbesserungen**
 
-* Der SMS-Durchsatz wurde durch die Implementierung einer Reihe von Optimierungen erheblich verbessert, was zu einer verbesserten Geschwindigkeit und Effizienz bei der SMS-Kommunikation führte.
-* Sie können jetzt die Adobe Experience Platform Destination-Verbindung nutzen, um Profilattribute wie Opt-out-Daten zwischen der Adobe Experience Platform- und der Campaign v8-Datenbank zu synchronisieren.
+
+
+
+* Der SMS-Durchsatz wurde durch die Implementierung einer Reihe von Optimierungen erheblich verbessert, was zu mehr Geschwindigkeit und Effizienz bei der SMS-Kommunikation führt.
+* Sie können jetzt die Adobe Experience Platform-Zielverbindung nutzen, um Profilattribute wie Opt-out-Daten zwischen der Adobe Experience Platform- und der Campaign v8-Datenbank zu synchronisieren.
 * Die Versandvorbereitung wurde optimiert.
-* Neben der vorhandenen Authentifizierungsmethode für Benutzer/Kennwort wurde für das externe SFTP-Konto eine neue schlüsselbasierte Authentifizierungsoption hinzugefügt. Benutzer können sich jetzt sicher mit einem privaten Schlüssel authentifizieren, was die Sicherheit verbessert und einen alternativen Authentifizierungsmechanismus für den SFTP-Zugriff bietet. Weiterführende Informationen finden Sie in [diesem Abschnitt](../config/external-accounts.md).
+* Neben der vorhandenen Authentifizierungsmethode für Benutzername/Kennwort wurde für das externe SFTP-Konto eine neue schlüsselbasierte Authentifizierungsoption hinzugefügt. Benutzerinnen und Benutzer können sich jetzt sicher mit einem privaten Schlüssel authentifizieren, was die Sicherheit verbessert und einen alternativen Authentifizierungsmechanismus für den SFTP-Zugriff bietet. Weiterführende Informationen finden Sie in [diesem Abschnitt](../config/external-accounts.md).
 
 **Verbesserungen bei der Sicherheit**
 
-* Ab Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert. Technische Benutzerinnen bzw. Benutzer müssen Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie, wie Sie Ihre vorhandenen technischen Konten migrieren können in [diese Technote](../../technotes/upgrades/ims-migration.md).
-* Sie können Benutzer nicht mehr über die Campaign Client Console erstellen. Die Benutzeroberfläche wurde entsprechend aktualisiert. Sie müssen jetzt Adobe Admin Console verwenden. [Weitere Informationen](../start/gs-permissions.md).
+* Ab Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert. Technische Benutzerinnen bzw. Benutzer müssen Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
+* Sie können Benutzerinnen und Benutzer nicht mehr über die Campaign-Client-Konsole erstellen. Die Benutzeroberfläche wurde entsprechend aktualisiert. Sie müssen jetzt die Adobe Admin Console verwenden. [Weitere Informationen](../start/gs-permissions.md).
 * Mehrere Drittanbieter-Tools wurden aktualisiert, um die Sicherheit zu optimieren.
+
+**Aktualisierungen zur Kompatibilität**
+
+* Die 32-Bit-Version der Client-Konsole wird jetzt nicht mehr unterstützt. Ab 8.6. ist die Client-Konsole nur noch in 64 Bit verfügbar. Das Upgrade auf die 64-Bit-Version der Client-Konsole ist nahtlos. Weitere Informationen zum Upgrade Ihres Betriebssystems finden Sie in dieser [Technote](../../technotes/upgrades/console.md).
+* Sie können nun Ihre Campaign v8-Instanz mit Ihrer externen Azure Synapse-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet. Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
+
+
 
 **Patches**
 
-* Fehlerkorrektur - Sonderzeichen im HTML-Inhalt eines Versands werden jetzt in mehreren Browsern korrekt kodiert. (NEO-60081)
-* Fehlerkorrektur - Berichte können jetzt in einer Campaign v8 Enterprise (FFDA)-Bereitstellung gespeichert werden. (NEO-56836)
-* Fehlerkorrektur - Beim Einfügen oder Aktualisieren von Daten in ein benutzerdefiniertes FFDA-Schema über die Workflow-Aktivität Daten-Update tritt jetzt kein Fehler mehr auf. (NEO-54708)
-* Fehlerkorrektur - Der Datenbankbereinigungs-Workflow kann jetzt Adressen aus der Tabelle nms:address in FFDA entfernen. (NEO-54460)
-* Fehlerkorrektur - Der Abrechnungs-Workflow funktioniert jetzt mit dem Fehler &quot;Kompilierungsspeicher ausgeschöpft&quot;. (NEO-51137)
-* Fehlerkorrektur - Die GPG-Entschlüsselung funktioniert jetzt in der Workflow-Aktivität Laden (Datei) ordnungsgemäß. (NEO-50257)
+* Fehlerkorrektur: Sonderzeichen im HTML-Inhalt eines Versands werden jetzt in mehreren Browsern korrekt codiert. (NEO-60081)
+* Fehlerkorrektur: Berichte können jetzt in einer Campaign v8 Enterprise (FFDA)-Bereitstellung gespeichert werden. (NEO-56836)
+* Fehlerkorrektur: Beim Einfügen oder Aktualisieren von Daten in ein benutzerdefiniertes FFDA-Schema über die Workflow-Aktivität „Daten-Update“ tritt jetzt kein Fehler mehr auf. (NEO-54708)
+* Fehlerkorrektur: Der Datenbankbereinigungs-Workflow kann jetzt Adressen aus der Tabelle „nms:address“ in FFDA entfernen. (NEO-54460)
+* Fehlerkorrektur: Der Abrechnungs-Workflow funktioniert jetzt mit dem Fehler „Kompilierungsspeicher ausgeschöpft“. (NEO-51137)
+* Fehlerkorrektur: Die GPG-Entschlüsselung funktioniert jetzt in der Workflow-Aktivität „Laden (Datei)“ ordnungsgemäß. (NEO-50257)
 * Fehlerkorrektur: Die Funktion `JSPContext.sqlExecWithOneParam` funktioniert jetzt. (NEO-50066)
-* Fehlerkorrektur - jetzt treten keine Versandfehler mehr auf, wenn nicht druckbare Zeichen in Personalisierungsfeldern verwendet werden. (NEO-48588)
-* Fehlerkorrektur - Beim Einfügen dynamischer Adobe Target-Bilder treten jetzt keine Versandfehler mehr auf. (NEO-62689)
-* Fehlerkorrektur - Browser können jetzt zusätzliche Leerzeichen hinzufügen, wenn bedingte Inhalte in einem Versand verwendet werden. (NEO-62132)
-* Fehlerkorrektur - jetzt wird kein Popup-Fenster mehr geöffnet, wenn auf ein Bild im E-Mail-Inhaltseditor geklickt wird. (NEO-60752)
-* Fehlerkorrektur - Jetzt tritt kein Fehler mehr auf und das Scrollen beim Bearbeiten des Inhalts eines Versands ist nicht mehr möglich. (NEO-61364)
-* Der Adobe Analytics-Connector exportiert die Metriken jetzt mit dem richtigen Kanaltyp. Zuvor war sie immer als &quot;E-Mail&quot;-Kanal eingestellt. (NEO-26340)
+* Fehlerkorrektur: Es treten keine Versandfehler mehr auf, wenn nicht druckbare Zeichen in Personalisierungsfeldern verwendet werden. (NEO-48588)
+* Fehlerkorrektur: Beim Einfügen dynamischer Adobe Target-Bilder treten jetzt keine Versandfehler mehr auf. (NEO-62689)
+* Fehlerkorrektur: Browser können jetzt zusätzliche Leerzeichen hinzufügen, wenn bedingte Inhalte in einem Versand verwendet werden. (NEO-62132)
+* Fehlerkorrektur: Es wird kein Pop-up-Fenster mehr geöffnet, wenn auf ein Bild im E-Mail-Inhaltseditor geklickt wird. (NEO-60752)
+* Fehlerkorrektur: Es tritt kein Fehler mehr auf, der das Scrollen beim Bearbeiten des Inhalts eines Versands verhinderte. (NEO-61364)
+* Der Adobe Analytics-Connector exportiert die Metriken jetzt mit dem richtigen Kanaltyp. Zuvor war er immer als „E-Mail“-Kanal eingestellt. (NEO-26340)
 
 
 ## Version 8.4.5 {#release-8-4-5}
