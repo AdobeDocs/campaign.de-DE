@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die technischen Workflows, die mit Campaign
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ In diesem [Abschnitt](monitor-technical-workflows.md) erfahren Sie, wie Sie tech
 | **Berichtsaggregate** (reportingAggregates) | Versand | Dieser Workflow aktualisiert die in Berichten verwendeten Aggregate. Er wird standardmäßig täglich um 2 Uhr morgens ausgelöst. |
 | **Übermittlung von Indikatoren und Kampagnenattributen** (webAnalyticsSendMetrics) | Web Analytics-Connectoren | Dieser Workflow ermöglicht es Ihnen, Indikatoren für E-Mail-Kampagnen aus Adobe Campaign über Adobe® Analytics Connector an Adobe Experience Cloud Suite zu senden. Dies betrifft die folgenden Indikatoren: Gesendet (iSent), Öffnungen insgesamt (iTotalRecipientOpen), Gesamtzahl der Empfänger, die geklickt haben (iTotalRecipientClick), Fehler (iError), Abmeldung (Opt-out) (iOptOut). |
 | **Lager: Bestellungen und Warnhinweise** (stockMgt) | Standardmäßig installiert | Dieser Workflow startet die Berechnung der Lagerbestände zu den Bestellzeilen und verwaltet Warnschwellen. |
-| **Synchronisieren von mobilen Apps aus der Adobe Experience Platform-Datenerfassung** (syncWithLaunch) | Standardmäßig, ab Version 8.5 installiert | Mit diesem Workflow werden mobile Eigenschaften aus der Datenerfassung automatisch mit Adobe Campaign synchronisiert. |
+| **Synchronisieren von Apps mit der Datenerfassung von Adobe Experience Platform** (syncWithLaunch) | Standardmäßig installiert, ab Version 8.5 | Mit diesem Workflow werden Mobile-Eigenschaften aus der Datenerfassung automatisch mit Adobe Campaign synchronisiert. |
 | **Tracking** (tracking) | Standardmäßig installiert | Dieser Workflow ruft Tracking-Informationen ab und konsolidiert sie. Er aktualisiert außerdem die Berechnung der Tracking- und Versandstatistiken, insbesondere der Statistiken, die von den Archivierungs-Workflows des Message Centers verwendet werden. Er wird standardmäßig stündlich ausgelöst. |
 | **Update des Ereignisstatus** (updateEventsStatus) | Ausführung einer Transaktionsnachricht (Message Center – Ausführung) | Dieser Workflow weist Ereignissen einen Status zu. Folgende Status sind möglich:<ul><li>Ausstehend: Das Ereignis befindet sich in der Warteschlange. Ihm wurde noch keine Nachrichtenvorlage zugeordnet.</li><li>Versand ausstehend: Das Ereignis befindet sich in der Warteschlange. Ihm wurde eine Nachrichtenvorlage zugeordnet und die Versandverarbeitung ist im Gange.</li><li>Gesendet: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass die Nachricht gesendet wurde.</li><li>Vom Versand ignoriert: Dieser Status wird aus den Versand-Logs übernommen. Er bedeutet, dass der Versand ignoriert wurde.</li><li>Versandfehler: Dieser Status wird aus den Versand-Logs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.</li><li>Ereignis wurde nicht berücksichtigt: Dem Ereignis konnte keine Nachrichtenvorlage zugeordnet werden. Es erfolgt kein weiterer Verarbeitungsversuch.</li></ul> |
 | **Update für Zustellbarkeit** (deliverabilityUpdate) | Standardmäßig installiert | Sobald das Paket zur Überwachung der Zustellbarkeit (E-Mail-Zustellbarkeit) installiert ist, wird dieser Workflow nachts ausgeführt und verwaltet die Qualifikationsregeln für unzustellbare E-Mails sowie die Liste der Domains und MXs. Dazu muss der HTTPS-Port auf der Plattform geöffnet sein. |
