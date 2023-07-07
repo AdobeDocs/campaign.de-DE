@@ -4,19 +4,19 @@ title: Abschaffung der Client-Konsole für 32-Bit
 description: Abschaffung der Client-Konsole für 32-Bit
 exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # Ende der Unterstützung für 32-Bit-Betriebssysteme {#console-eol}
 
-Die 32-Bit-Version der Client Console wird in Version 8.5 nicht mehr unterstützt. Eine neue 64-Bit-Version der Clientkonsole ist für eine nahtlose Aktualisierung verfügbar.
+Die 32-Bit-Version der Client-Konsole wird in Version 8.5 nicht mehr unterstützt. Eine neue 64-Bit-Version der Client-Konsole ist für ein nahtloses Upgrade verfügbar.
 
-Ab Version 8.6 bietet Campaign v8 keine Unterstützung für 32-Bit-Betriebssysteme mehr, einschließlich Produkt- und Sicherheitsupdates. Adobe empfiehlt dringend, dass Sie Ihre Sicherheits-Updates auf dem neuesten Stand halten.
+Ab Version 8.6 wird Campaign v8 keine 32-Bit-Betriebssysteme mehr unterstützen, einschließlich Produkt- und Sicherheits-Updates. Adobe empfiehlt dringend, dass Sie Ihre Sicherheits-Updates auf dem neuesten Stand halten.
 
-Diese Änderung wirkt sich nur auf Sie aus, wenn Sie über die 32-Bit-Version von Windows 8 oder 10 verfügen.
+Sie sind von dieser Änderung nur betroffen, wenn Sie die 32-Bit-Version von Windows 8 oder 10 nutzen.
 
 ## Ende der Unterstützung{#eol}
 
@@ -24,13 +24,13 @@ Das Ende der Unterstützung bedeutet, dass Adobe für alle Varianten eines Produ
 
 ## Empfehlungen{#console-eol-recommendations}
 
-Um die neuesten Funktionen und die verbesserte Sicherheit nutzen zu können, müssen Sie Ihren Computer auf ein 64-Bit-Betriebssystem aktualisieren.
+Um die Vorteile der neuesten Funktionen und der verbesserten Sicherheit zu nutzen, müssen Sie Ihren Computer auf ein 64-Bit-Betriebssystem aktualisieren.
 
 ## Häufig gestellte Fragen{#console-eol-faq}
 
-+++ Wie kann ich von Campaign v8 mit 32 Bit auf Campaign v8 mit 64 Bit aktualisieren?
++++Wie führe ich ein Upgrade von Campaign v8 32 Bit auf Campaign v8 64 Bit durch?
 
-Das Upgrade ist nahtlos. Sie müssen Ihre neue Version einfach wie ein reguläres Upgrade über das Setup installieren.
+Das Upgrade erfolgt nahtlos. Sie müssen die neue Version nur über das Setup installieren, wie bei einem normalen Upgrade.
 
 +++
 
