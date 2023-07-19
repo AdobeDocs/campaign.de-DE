@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
+source-git-commit: 70171ecfb39116f4db4c05ab03b55502e3faed43
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 98%
+source-wordcount: '1339'
+ht-degree: 97%
 
 ---
 
@@ -80,6 +80,7 @@ _30. Juni 2023_
 * Fehlerkorrektur: Es wird kein Pop-up-Fenster mehr geöffnet, wenn auf ein Bild im E-Mail-Inhaltseditor geklickt wird. (NEO-60752)
 * Fehlerkorrektur: Es tritt kein Fehler mehr auf, der das Scrollen beim Bearbeiten des Inhalts eines Versands verhinderte. (NEO-61364)
 * Der Adobe Analytics-Connector exportiert die Metriken jetzt mit dem richtigen Kanaltyp. Zuvor war er immer als „E-Mail“-Kanal eingestellt. (NEO-26340)
+* Fehlerkorrektur - Bei der Verwendung des Big Query-Connectors mit Datumszeitfeldern treten jetzt keine Fehler mehr auf. (NEO-49768)
 
 
 ## Version 8.4.5 {#release-8-4-5}
