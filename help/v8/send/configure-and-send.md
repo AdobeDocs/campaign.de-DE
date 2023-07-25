@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1217'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -102,18 +102,18 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   ![](assets/delivery-waves-ex-call-center.png)
 
-## Versand bestätigen {#confirm-delivery}
+## Bestätigen des Versands {#confirm-delivery}
 
-Wenn der Versand konfiguriert ist und versandbereit ist, vergewissern Sie sich, dass Sie die Versandanalyse durchgeführt haben, bevor Sie den Versand bestätigen.
+Wenn der Versand konfiguriert wurde und versandbereit ist, stellen Sie sicher, dass Sie vor dem Bestätigen des Sendens die Versandanalyse ausgeführt haben.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Klicken **[!UICONTROL Senden]** wählen Sie die gewünschte Aktion aus.
+1. Klicken Sie auf **[!UICONTROL Senden]** und wählen Sie die gewünschte Aktion aus.
 
    * Um den Versand sofort durchzuführen, wählen Sie [**Sendungen schnellstmöglich abschicken**].
-   * Um den Versand zu einem späteren Zeitpunkt zu planen, wählen Sie **[!UICONTROL Versand verzögern]**. [Weitere Informationen](#schedule-delivery-sending)
+   * Um den Versand für einen späteren Zeitpunkt zu planen, wählen Sie **[!UICONTROL Versand terminieren]**. [Weitere Informationen](#schedule-delivery-sending)
 
-1. Klicken **[!UICONTROL Analyse]**. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](delivery-analysis.md).
+1. Klicken Sie auf **[!UICONTROL Analysieren]**. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](delivery-analysis.md).
 
    ![](assets/delivery-send-analyze.png)
 
@@ -121,7 +121,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/delivery-send-confirm.png)
 
-1. Sie können den Versand-Assistenten schließen und die Ausführung des Versands im **[!UICONTROL Versand]** -Tab, der über die Details dieses Versands oder die Versandliste zugänglich ist.
+1. Nun können Sie den Versand-Assistenten schließen und die Durchführung des Versands auf der Registerkarte **[!UICONTROL Versand]** verfolgen (entweder in der Detailansicht des Versands oder in der Versandliste).
 
    Weitere Informationen hierzu finden Sie in den folgenden Abschnitten:
 
@@ -148,7 +148,7 @@ Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben
 
    ![](assets/delivery-send-scheduled.png)
 
-In der Versandliste wird der Versand mit der Variablen **[!UICONTROL Ausstehend]** Status.
+In der Versandliste erscheint der Versand mit dem Status **[!UICONTROL Ausstehend]**.
 
 Die Terminierung kann auch vorab über die Schaltfläche **[!UICONTROL Planung]** erfolgen.
 
