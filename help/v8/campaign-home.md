@@ -4,9 +4,9 @@ description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '157'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 
 ## Neue Funktionen
 
-* **[[!DNL Adobe Campaign] Automatisierungshandbuch](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"}** - Erfahren Sie, wie Sie Workflows und Kampagnen erstellen.
+* **[[!DNL Adobe Campaign] Automatisierungshandbuch](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"}** – Erfahren Sie, wie Sie Workflows und Kampagnen erstellen
 
 * **[ [!DNL Adobe Campaign]](start/get-started.md)** – Wichtige Funktionen und Anwendungsfälle
 
@@ -26,7 +26,7 @@ ht-degree: 82%
 
 * **[Von v7 zu v8](start/v7-to-v8.md)** – Planen Sie den Wechsel von Campaign Classic v7 zu v8? Die wichtigsten Unterschiede
 
-* **[Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}** - Führen Sie mit dem Campaign Control Panel eigenständig wichtige Administratoraufgaben aus.
+* **[Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}** – Führen Sie mit dem Campaign Control Panel eigenständig wichtige Administratoraufgaben aus
 
 * **[Versionshinweise](start/release-notes.md)**: Lernen Sie die neuesten Funktionen und Verbesserungen kennen
 
@@ -37,7 +37,7 @@ ht-degree: 82%
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="start/connect.md">
-<img alt="Herstellen einer Verbindung mit Campaign v8" src="start/assets/do-not-localize/login.jpeg">
+<img alt="Herstellen einer Verbindung zu Campaign v8" src="start/assets/do-not-localize/login.jpeg">
 </a>
 <div><a href="start/connect.md"><strong>Herstellen einer Verbindung zu Campaign</strong>
 </div>
@@ -48,7 +48,7 @@ ht-degree: 82%
 <img alt="Importieren von Profilen" src="start/assets/do-not-localize/profiles.jpeg">
 </a>
 <div>
-<a href="start/import.md"><strong>Profile importieren</strong></a>
+<a href="start/import.md"><strong>Importieren von Profilen</strong></a>
 </div>
 <p>
 </td>
@@ -57,15 +57,15 @@ ht-degree: 82%
 <img alt="Erstellen einer E-Mail" src="start/assets/do-not-localize/email-design.jpeg">
 </a>
 <div>
-<a href="start/create-message.md"><strong>E-Mail erstellen</strong></a>
+<a href="start/create-message.md"><strong>Erstellen einer E-Mail</strong></a>
 </div>
 <p></td>
 <td>
 <a href="send/push.md">
-<img alt="Push-Benachrichtigungen senden" src="start/assets/do-not-localize/push-send.jpeg">
+<img alt="Senden von Push-Benachrichtigungen" src="start/assets/do-not-localize/push-send.jpeg">
 </a>
 <div>
-<a href="send/push.md"><strong>Push-Benachrichtigungen senden</strong></a>
+<a href="send/push.md"><strong>Senden von Push-Benachrichtigungen</strong></a>
 </div>
 <p>
 </td>
@@ -74,7 +74,7 @@ ht-degree: 82%
 <img alt="Erstellen von Kampagnen" src="start/assets/do-not-localize/workflow.jpeg">
 </a>
 <div>
-<a href="../automation/workflow/about-workflows.md"><strong>Workflows erstellen</strong></a>
+<a href="../automation/workflow/about-workflows.md"><strong>Erstellen von Workflows</strong></a>
 </div>
 <p>
 </td>
