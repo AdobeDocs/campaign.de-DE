@@ -6,19 +6,19 @@ role: Data Engineer
 level: Beginner
 badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
 source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1519'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Überarbeitete Konfiguration für Push-Benachrichtigungen {#push-notifications-config}
 
-Campaign v8.5 führt den neuesten Push-Benachrichtigungsdienst ein, der auf einem robusten Framework basiert, das auf modernster Technologie basiert. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen.
+Campaign v8.5 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser wird durch ein robustes Framework gestützt, das auf moderner Spitzentechnologie aufbaut. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen.
 
 >[!AVAILABILITY]
 >
-> Diese Funktion steht ausschließlich neuen Kunden zur Verfügung, die von Campaign v8.5 an und schrittweise für ausgewählte Kunden eingeführt werden. Wenn Ihre Umgebung vor Juni 2023 bereitgestellt wurde, gilt diese Seite nicht für Sie und Sie müssen die detaillierten Verfahren befolgen [auf dieser Seite](push-settings.md).
+> Diese Funktion steht nur neuen Kundinnen und Kunden ab Campaign v8.5 zur Verfügung und wird schrittweise für ausgewählte Kundinnen und Kunden eingeführt. Wenn Ihre Umgebung vor Juni 2023 bereitgestellt wurde, gilt diese Seite nicht für Sie und Sie müssen die [auf dieser Seite](push-settings.md) erläuterten Verfahren befolgen.
 
 Führen Sie im Kontext dieser aktualisierten Implementierung die folgenden Schritte aus, um Push-Benachrichtigungen in Adobe Campaign zu senden:
 
