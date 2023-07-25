@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Erstellen einer lokalen Kampagne (Formular) {#creating-a-local-campaign--by-form-}
 
-Der Web-Schnittstellentyp **Formular** beinhaltet die Nutzung einer **Web-Anwendung**. Diese kann entsprechend ihrer Konfiguration unterschiedliche definierte personalisierte Elemente enthalten. Beispielsweise besteht die Möglichkeit, Links zur Evaluierung von Zielgruppe, Budget und Inhalt über dedizierte APIs zur Verfügung zu stellen.
+Der Web-Schnittstellentyp **Formular** beinhaltet die Nutzung einer **Web-Anwendung**. Diese kann entsprechend ihrer Konfiguration unterschiedliche definierte personalisierte Elemente enthalten. Beispielsweise besteht die Möglichkeit, Links zur Auswertung von Zielgruppe, Budget und Inhalt über dedizierte APIs zur Verfügung zu stellen.
 
 >[!NOTE]
 >
@@ -40,29 +40,29 @@ Im vorliegenden Beispiel enthält die Aktivität **Kampagnenbestellung**:
 
   ![](assets/mkg_dist_web_app2.png)
 
-* Links, die der Lokalstelle die Evaluierung der Kampagne ermöglichen (z. B. Zielgruppe, Budget, Inhalt etc.);
+* Links, die der Lokalstelle die Auswertung der Kampagne ermöglichen (z. B. Zielgruppe, Budget, Inhalt etc.);
 
   ![](assets/mkg_dist_web_app3.png)
 
-* Scripts, die die Berechnung und Anzeige der Ergebnisse der vorhergenden Evaluierungen ermöglichen.
+* Scripts, die die Berechnung und Anzeige der Ergebnisse der vorhergehenden Auswertungen ermöglichen.
 
   ![](assets/mkg_dist_web_app4.png)
 
 Im vorliegenden Beispiel werden die folgenden APIs verwendet:
 
-* Zur Zielgruppen-Evaluierung:
+* Zur Zielgruppenauswertung:
 
   ```
   var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
   ```
 
-* Zur Budget-Evaluierung:
+* Zur Budgetauswertung:
 
   ```
   var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
   ```
 
-* Zur Inhalts-Evaluierung:
+* Zur Inhaltsauswertung:
 
   ```
   var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
@@ -78,7 +78,7 @@ Dieses Angebot soll nur den Kunden unterbreitet werden, die seit Jahresbeginn f�
 
 Sie entschließen sich daher, mithilfe der Distributed-Marketing-Option eine partizipative Kampagne mit Zielgruppenvalidierung zu erstellen: Diese ermöglicht es Ihnen, die zuvor beschriebenen besten Kunden Ihrer Filialen je nach Region auszuwählen und ihnen das entsprechende Angebot zukommen zu lassen.
 
-Der erste Teil des Beispiels stellt die Perspektive der Lokalstellen dar: Sie erhalten bei der Erstellung der Kampagne eine Benachrichtigungs-E-Mail, über die sie die Kampagne konfigurieren, evaluieren und bestellen können.
+Der erste Teil des Beispiels stellt die Perspektive der Lokalstellen dar: Sie erhalten bei der Erstellung der Kampagne eine Benachrichtigungs-E-Mail, über die sie die Kampagne konfigurieren, auswerten und bestellen können.
 
 Der zweite Teil detailliert, wie diese Kampagnenart von der Zentralstelle erstellt wird.
 
@@ -181,7 +181,7 @@ Sie sind Marketing-Leiter einer großen Kosmetikmarke, die über einen Onlinesho
 
 Sie entschließen sich daher, mithilfe der Distributed-Marketing-Option eine partizipative Kampagne mit Formular zu erstellen: Diese ermöglicht es Ihnen, die Kunden der unterschiedlichen Filialen nach Altersgruppen auszuwählen. Die Kunden erhalten einen entsprechend ihrem Alter personalisierten E-Mail-Versand mit dem jeweiligen Sonderangebot.
 
-Der erste Teil des Beispiels stellt die Perspektive der Lokalstellen dar: Sie erhalten bei der Erstellung der Kampagne eine Benachrichtigungs-E-Mail, über die sie die Kampagne konfigurieren, evaluieren und bestellen können.
+Der erste Teil des Beispiels stellt die Perspektive der Lokalstellen dar: Sie erhalten bei der Erstellung der Kampagne eine Benachrichtigungs-E-Mail, über die sie die Kampagne konfigurieren, auswerten und bestellen können.
 
 Der zweite Teil detailliert, wie diese Kampagnenart von der Zentralstelle erstellt wird.
 
@@ -211,7 +211,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
 1. Jede Lokalstelle füllt das personalisierte Formular aus und:
 
-   * evaluiert Zielgruppe und Budget,
+   * wertet Zielgruppe und Budget aus,
    * überprüft die Vorschau des Versandinhalts,
    * validiert ihre Teilnahme.
 
