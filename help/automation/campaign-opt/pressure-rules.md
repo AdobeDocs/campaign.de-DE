@@ -4,10 +4,10 @@ title: Konfigurieren der Druckregeln
 description: Erfahren Sie, wie Sie Druckregeln konfigurieren
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
-source-git-commit: 6a1e2e0a872ce5886e7374d266c71975941e87b8
+source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
 workflow-type: tm+mt
-source-wordcount: '3164'
-ht-degree: 100%
+source-wordcount: '3174'
+ht-degree: 99%
 
 ---
 
@@ -57,7 +57,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
    >[!NOTE]
    >
-   >Terminierte Sendungen werden nicht berücksichtigt.
+   >Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../../v8/architecture/enterprise-deployment.md) von Campaign werden geplante Sendungen nicht berücksichtigt.
 
 1. Geben Sie den Berechnungsmodus der maximalen Nachrichtenanzahl an.
 

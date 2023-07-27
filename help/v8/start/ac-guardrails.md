@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner, Intermediate, Experienced
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: 58fff46ba12f5c6221bbcd88a40fa0806a6c98b9
+source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 100%
+source-wordcount: '254'
+ht-degree: 84%
 
 ---
 
@@ -26,6 +26,7 @@ Schutzmechanismen und Einschränkungen betreffen Funktionen, Architekturen oder 
 * Die [in diesem Abschnitt](v7-to-v8.md#gs-unavailable-features) aufgelisteten Funktionen sind im aktuellen Build von Campaign v8 nicht verfügbar.
 * Einige nicht verfügbare oder entfernte Funktionen sind weiterhin in der Benutzeroberfläche sichtbar.
 * Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) sind Mechanismen zur Anmeldung (Opt-in-) und zur Abmeldung (Opt-out) sowie die Mobile-Registrierung asynchrone Prozesse. Anfragen werden stündlich über einen speziellen technischen Workflow verarbeitet. [Weitere Informationen](../architecture/replication.md#tech-wf)
-* Duplikate müssen von Endbenutzern manuell korrigiert werden. [Weitere Informationen](../architecture/keys.md)
+* 
+   * Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), müssen Duplikate von Endbenutzern manuell verarbeitet werden. [Weitere Informationen](../architecture/keys.md)
 * Adobe Campaign v8 unterstützt keinen erweiterten Durchsatz in API- und Web-Anwendungen. Wenden Sie sich bei besonderen Anforderungen an Adobe, um Beratung zu erhalten.
-* Das Optimierungsmodul von Adobe Campaign berücksichtigt keine geplanten Sendungen in Drucktypologieregeln. Weitere Informationen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=de).
+* Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), berücksichtigt das Adobe Campaign Campaign Optimization-Modul geplante Sendungen nicht in Drucktypologieregeln. Weitere Informationen auf [dieser Seite](../../automation/campaign-opt/pressure-rules.md)
