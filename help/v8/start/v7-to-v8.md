@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 1297d5a602d125cb80ca6efb490b12174bcea8d6
+source-git-commit: 2d0c82df052c9b8c9f264c2ad15ac6050025f770
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 93%
@@ -37,7 +37,7 @@ Das neue Angebot kombiniert erstklassige Dienstleistungen mit proaktiver Aufsich
 
 Als früherer [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die in [diesem Abschnitt](#gs-removed) aufgeführt sind.
 
-Campaign v8 basiert auf einer **Hybridarchitektur**. Wenn Sie von Campaign Classic v7 wechseln, beachten Sie, dass alle Sendungen den Mid-Sourcing-Server durchlaufen. [Weitere Informationen](../architecture/architecture.md). Infolgedessen ist internes Routing in Campaign v8 **nicht möglich** und das externe Konto wurde entsprechend deaktiviert.
+Campaign v8 basiert auf einer **Hybridarchitektur**. Wenn Sie von Campaign Classic v7 wechseln, beachten Sie, dass alle Sendungen den Mid-Sourcing-Server durchlaufen. Infolgedessen ist internes Routing in Campaign v8 **nicht möglich** und das externe Konto wurde entsprechend deaktiviert. [Weitere Informationen](../architecture/architecture.md).
 
 >[!NOTE]
 >
