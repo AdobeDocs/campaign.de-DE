@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 5d307e0fcafdc4d25402c62c6869ecc07c1a47e4
+source-git-commit: 1297d5a602d125cb80ca6efb490b12174bcea8d6
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -37,13 +37,11 @@ Das neue Angebot kombiniert erstklassige Dienstleistungen mit proaktiver Aufsich
 
 Als früherer [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die in [diesem Abschnitt](#gs-removed) aufgeführt sind.
 
+Campaign v8 basiert auf einer **Hybridarchitektur**. Wenn Sie von Campaign Classic v7 wechseln, beachten Sie, dass alle Sendungen den Mid-Sourcing-Server durchlaufen. [Weitere Informationen](../architecture/architecture.md). Infolgedessen ist internes Routing in Campaign v8 **nicht möglich** und das externe Konto wurde entsprechend deaktiviert.
+
 >[!NOTE]
 >
-> Campaign v8 basiert auf einer Hybridarchitektur. Wenn Sie von Campaign Classic v7 wechseln, beachten Sie, dass alle Sendungen den Mid-Sourcing-Server durchlaufen. [Weitere Informationen](../architecture/architecture.md)
->
-> Infolgedessen ist internes Routing in Campaign v8 **nicht möglich** und das externe Konto wurde entsprechend deaktiviert.
-
-Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Ihre Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die für Sie vorkonfiguriert ist.
+>Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Ihre Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die für Sie vorkonfiguriert ist.
 
 ## [!DNL Campaign] und [!DNL Snowflake] {#ac-gs-snowflake}
 
