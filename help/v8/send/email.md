@@ -1,20 +1,20 @@
 ---
 title: Senden von E-Mails mit Adobe Campaign
-description: Erste Schritte mit E-Mails in Adobe Campaign. Senden Sie personalisierte E-Mails an eine Zielpopulation.
+description: Erste Schritte mit E-Mails in Adobe Campaign. Senden Sie personalisierte E-Mails an eine Zielguppenpopulation.
 feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: a08dd72a2be703e5e9cd3cdc20dbb3064b06b35d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Entwerfen und Senden von E-Mails
 
-Durch einen E-Mail-Versand können Sie personalisierte E-Mails an eine Zielpopulation senden. [Weitere Informationen](../send/send.md)
+Durch einen E-Mail-Versand können Sie personalisierte E-Mails an eine Zielgruppenpopulation senden. [Weitere Informationen](../send/send.md)
 
 ## Den ersten E-Mail-Versand erstellen
 
@@ -45,7 +45,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
    >[!NOTE]
    >
-   >Um Leistungsprobleme zu vermeiden, dürfen in E-Mails enthaltene Bilder 100 KB nicht überschreiten.
+   >Um Leistungsprobleme zu vermeiden, dürfen die in den E-Mails enthaltenen Bilder nicht größer als 100 KB sein.
 
 1. **Personalisieren Ihrer Nachricht**
 
@@ -81,7 +81,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
 1. Wenn der Inhalt fertig ist, klicken Sie auf **Speichern**: Er wird nun in Ihrer Versandliste auf der Registerkarte **[!UICONTROL Kampagnen > Sendungen]** angezeigt.
 
-Ihr erster E-Mail-Versand ist fertig. Definieren Sie nun die Audience, validieren Sie den Versand und führen Sie ihn aus.
+Ihr erster E-Mail-Versand ist fertig. Definieren Sie nun die Zielgruppe, validieren Sie den Versand und führen Sie ihn aus.
 
 In diesem [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de) erfahren Sie, wie Sie E-Mail-Inhalte importieren können.
 
@@ -89,13 +89,13 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 <!--[Design an email in Campaign]-->
 * [Erstellen und Verwenden von E-Mail-Vorlagen](../send/create-templates.md)
-* [Auswählen der Audience für Ihre E-Mail](../audiences/gs-audiences.md)
+* [Auswählen der Zielgruppe für Ihre E-Mail](../audiences/gs-audiences.md)
 * [Validieren eines Versands und Durchführen von Testsendungen](preview-and-proof.md)
 * [Konfigurieren und Durchführen des Versands](configure-and-send.md)
 
 ## Testen und Validieren von E-Mails
 
-Campaign bietet mehrere Möglichkeiten, E-Mails zu testen und zu validieren, bevor Sie sie an Ihre Audiences senden. Auf [dieser Seite](../send/preview-and-proof.md) erfahren Sie, wie Sie Ihren E-Mail-Inhalt in der Vorschau anzeigen und testen können.
+Campaign bietet mehrere Möglichkeiten, E-Mails zu testen und zu validieren, bevor Sie sie an Ihre Zielgruppen senden. Auf [dieser Seite](../send/preview-and-proof.md) erfahren Sie, wie Sie Ihren E-Mail-Inhalt in der Vorschau anzeigen und testen können.
 
 Sie haben folgende Möglichkeiten:
 
