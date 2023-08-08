@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 758d542b353a2d784407954089586e761825d740
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1468'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Außerdem sollten Sie als Kunde bzw. Kundin sicherstellen, dass Sie die neuesten
 
 _2. August 2023_
 
-Fehlerkorrektur - Beim Upgrade auf 8.5.1 tritt jetzt kein Sicherheitsproblem mehr auf. (NEO-64767)
+Es wurde ein Fehler behoben, der beim Upgrade auf 8.5.1 auftreten konnte. (NEO-64767)
 
 ## Version 8.5.1 {#release-8-5}
 
@@ -35,7 +35,7 @@ _30. Juni 2023_
 
 Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser wird durch ein robustes Framework gestützt, das auf moderner Spitzentechnologie aufbaut. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).
 
-Weitere Informationen finden Sie in der [entsprechenden Dokumentation](../send/push-data-collection.md).
+Weitere Informationen sind in der [entsprechenden Dokumentation](../send/push-data-collection.md) zu finden.
 
 
 **Verbesserter Durchsatz für mobile Kanäle**
@@ -61,16 +61,16 @@ These max throughput performances have been measured by Adobe testing teams, in 
 <td>
 <div>
 
-<p>Der neu eingeführte Push-Benachrichtigungsdienst zeigt erhebliche Verbesserungen des Durchsatzes für Push-Android und Push-iOS im Vergleich zur vorherigen Version (v8.4). Die Leistung des aktualisierten Dienstes in der neuesten Version (v8.5) wurde den Benutzern deutlich verbessert. </p>
+<p>Der neu eingeführte Push-Benachrichtigungsdienst zeigt erhebliche Verbesserungen des Durchsatzes für Push-Android und Push-iOS im Vergleich zur vorherigen Version (v8.4). Benutzerinnen und Benutzer werden mit dem aktualisierten Dienst in der neuesten Version (v8.5) eine merklich bessere Leistung feststellen. </p>
 <ul>
-<li>Push-Benachrichtigungen (Android): bis <strong>5x</strong> schneller </li>
-<li>Push-Benachrichtigungen (iOS): bis <strong>2.2x</strong> schneller</li>
+<li>Push-Benachrichtigungen (Android): bis zu <strong>5x</strong> schneller </li>
+<li>Push-Benachrichtigungen (iOS): bis zu <strong>2.2x</strong> schneller</li>
 </ul>
-<p>Der SMS-Durchsatz wurde durch eine Reihe von Optimierungen erheblich verbessert, was zu erheblichen Verbesserungen bei der Geschwindigkeit und Effizienz der SMS-Kommunikation führte. Diese Upgrades haben zu einem höheren Durchsatz von der vorherigen Version (v8.4) auf die neueste Version (v8.5) geführt, der sowohl Senden- als auch Feedback-Aktualisierungen umfasst. Benutzer können jetzt die Vorteile dieses erweiterten SMS-Dienstes nutzen.</p>
+<p>Der SMS-Durchsatz wurde durch eine Reihe von Optimierungen erheblich verbessert, was die Geschwindigkeit und Effizienz der SMS-Kommunikation deutlich besser macht. Diese Upgrades haben zu einem höheren Durchsatz von der vorherigen Version (v8.4) auf die neueste Version (v8.5) geführt, die Aktualisierungen sowohl beim Senden als auch beim Feedback umfasst. Benutzerinnen und Benutzer können jetzt die Vorteile dieses erweiterten SMS-Dienstes nutzen.</p>
 <ul>
-<li>SMS-Durchsatz: bis <strong>5x</strong> schneller</li>
+<li>SMS-Durchsatz: bis zu <strong>5x</strong> schneller</li>
 </ul>
-<p><em>Diese maximale Durchsatzleistung wurde von Adobe-Testteams unter Laborbedingungen gemessen.</em></p>
+<p><em>Diese maximale Durchsatzleistung wurde von Adobe-Test-Teams unter Laborbedingungen gemessen.</em></p>
 </div>
 <p></p>
 </td>
@@ -79,7 +79,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 
 **Allgemeine Verbesserungen**
 
-* Sie können jetzt die Adobe Experience Platform-Zielverbindung nutzen, um Profilattribute wie Opt-out-Daten zwischen der Adobe Experience Platform- und der Campaign v8-Datenbank zu synchronisieren.
+* Die Adobe Experience Platform-Zielverbindung kann jetzt genutzyt werden, um Profilattribute wie Opt-out-Daten zwischen der Adobe Experience Platform- und der Campaign v8-Datenbank zu synchronisieren.
 * Die Versandvorbereitung wurde für alle Kanäle optimiert.
 * Neben der vorhandenen Authentifizierungsmethode für Benutzername/Kennwort wurde für das externe SFTP-Konto eine neue schlüsselbasierte Authentifizierungsoption hinzugefügt. Benutzerinnen und Benutzer können sich jetzt sicher mit einem privaten Schlüssel authentifizieren, was die Sicherheit verbessert und einen alternativen Authentifizierungsmechanismus für den SFTP-Zugriff bietet. Weiterführende Informationen finden Sie in [diesem Abschnitt](../config/external-accounts.md).
 
