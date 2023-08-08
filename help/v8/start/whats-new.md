@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: f16fe79b8417a3fa146baf432f829c73fb839953
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Mit Adobe Campaign können Sie E-Mails besser, personalisierter und profitabler 
 
 ![](../assets/do-not-localize/glass.png) [Weitere Informationen zu Personalisierungsfunktionen](create-message.md)
 
-### Kundendatenmanagement {#customer-data-mgt}
+### Kundendaten-Management {#customer-data-mgt}
 
 Verschaffen Sie sich einen Überblick über Ihre Kunden, damit Sie schnell personalisierte Kampagnen für Ihr gesamtes Unternehmen erstellen können.
 
@@ -48,7 +48,7 @@ Mit Adobe Campaign können Sie Kundenprofile aus Daten erstellen, die über alle
 
 ![](../assets/do-not-localize/glass.png) [Weitere Informationen zum Kundendaten-Management](audiences.md)
 
-### Kampagnenverwaltung der besten Klasse {#best-in-campaign-mgt}
+### Erstklassige Kampagnenverwaltung {#best-in-campaign-mgt}
 
 Adobe Campaign v8 bietet Marketern erstklassige Funktionen zum kanalübergreifenden Planen, Launchen und Messen von Kampagnen.
 
@@ -76,7 +76,7 @@ Adobe Managed Cloud Service bietet Marketing-Experten eine agilere, sicherere un
 
 >[!NOTE]
 >
->Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Ihre Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die für Sie vorkonfiguriert ist.
+>Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Die Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die schon vorkonfiguriert ist.
 
 ### Geschwindigkeit und Skalierung {#speed-scale}
 
