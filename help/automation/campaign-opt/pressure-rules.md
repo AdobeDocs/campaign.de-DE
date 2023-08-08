@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Druckregeln konfigurieren
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3174'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
    >[!NOTE]
    >
-   >Im Kontext eines [Enterprise (FFDA)-Bereitstellung](../../v8/architecture/enterprise-deployment.md) von Campaign werden geplante Sendungen nicht berücksichtigt.
+   >Im Kontext einer [Enterprise-Bereitstellung (FFDA)](../../v8/architecture/enterprise-deployment.md) von Campaign werden geplante Sendungen nicht berücksichtigt.
 
 1. Geben Sie den Berechnungsmodus der maximalen Nachrichtenanzahl an.
 
@@ -108,7 +108,7 @@ Beispiel: Die zulässige Anzahl von Nachrichten kann entsprechend dem Segment in
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Für die Definition des Schwellenwerts können Sie eine in Zusammenhang mit der Zielgruppendimension stehende Dimension verwenden. So können beispielsweise auch die Nachrichten eingeschlossen werden, die an Empfängerprofile gesendet werden, die in der [Besuchertabelle](../../v8/audiences/target-mappings.md) gespeichert sind. Ein weiteres Beispiel ist die Begrenzung auf eine wöchentliche Nachricht für einen Haushalt mit u. U. mehreren E-Mail-Adressen. Dieser wird über eine mit der Empfängerdimension verknüpfte Dimension identifiziert.
+Um den Schwellenwert festzulegen, können Sie eine Dimension verwenden, die mit der Dimension „Zielgruppenbestimmung“ verknüpft ist: So können Sie beispielsweise Nachrichten einbeziehen, die an die in der [Besuchertabelle](../../v8/audiences/target-mappings.md) gespeicherten Empfängerprofile gesendet werden. Oder Sie können verhindern, dass mehr als eine Nachricht pro Woche an ein und denselben Haushalt (der sich auf mehrere E-Mail-Adressen beziehen kann) gesendet wird, der durch eine mit den Empfängern verknüpfte Dimension identifiziert wird.
 
 Wählen Sie hierfür die Option **[!UICONTROL Nachrichten einer verknüpften Dimension zählen]**. Wählen Sie danach den Besucher oder die Kontakttabelle aus.
 
