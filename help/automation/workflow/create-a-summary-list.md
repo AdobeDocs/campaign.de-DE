@@ -73,7 +73,7 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
 Nach dem Import der Daten, werden diese durch Erstellung einer Relation zur Referenztabelle (hier Geschäft) angereichert.
 
-Ziehen Sie die Anreicherung in das Diagramm und konfigurieren Sie sie wie folgt:
+Ziehen Sie die Aktivität „Anreicherung“ in das Diagramm und konfigurieren Sie sie wie folgt:
 
 1. Definieren Sie als Hauptmenge die aus der Aktivität **Laden (Datei)** stammenden Daten.
 

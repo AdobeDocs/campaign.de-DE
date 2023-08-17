@@ -53,7 +53,7 @@ Verwenden Sie die Registerkarte **[!UICONTROL Audit]**, um einen Testsendungs-Le
 >
 >Die Registerkarte **[!UICONTROL Verlauf]** enthält das Protokoll der Downloads und Aktualisierungen der Ressource. Über die Schaltfläche **[!UICONTROL Details]** kann die ausgewählte Version angezeigt werden.
 >
->Die Registerkarte **[!UICONTROL Audit]** ermöglicht die Überwachung der an der Ressource vorgenommenen Änderungen: Validierungen, Validierungsablehnungen, Kommentare und Publikationen.
+>Die Registerkarte **[!UICONTROL Audit]** ermöglicht die Überwachung der an der Ressource vorgenommenen Aktionen: Validierungen, Validierungsablehnungen, Kommentare und Publikationen.
 
 ### Ressourcen sperren/entsperren {#locking-unlocking-a-resource}
 

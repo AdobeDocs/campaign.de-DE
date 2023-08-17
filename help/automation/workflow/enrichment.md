@@ -48,7 +48,7 @@ Vier Relationstypen stehen zur Auswahl:
 
   Diese Option wird im Tab **[!UICONTROL Abstimmung &amp; Deduplizierung]** konfiguriert, auf den Sie über den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]** in der Aktivität **[!UICONTROL Anreicherung]** zugreifen können.
 
-Anwendungsbeispiele, mit denen die Funktionsweise der Anreicherungsaktivitäten im Kontext ausführlich beschrieben wird, sind in folgenden Abschnitten verfügbar:
+Anwendungsbeispiele, mit denen die Funktionsweise der Aktivitäten des Typs „Anreicherung“ im Kontext ausführlich beschrieben wird, sind in folgenden Abschnitten verfügbar:
 
 * [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](email-enrichment-with-custom-date-fields.md).
 * [Anreicherung von Daten](enrich-data.md)

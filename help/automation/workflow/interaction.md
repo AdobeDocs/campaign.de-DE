@@ -11,7 +11,7 @@ ht-degree: 100%
 ---
 
 
-# Interaction{#interaction}
+# Interaktion{#interaction}
 
 Die folgenden Workflows werden standardmäßig mit dem **Angebotsmodul (Interaction)** installiert.
 
