@@ -4,10 +4,10 @@ title: Laden (Datei)
 description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 feature: Workflows, Data Management Activity
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: cf88140d1e8b71203729732163f66060423965a0
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 100%
+source-wordcount: '1146'
+ht-degree: 99%
 
 ---
 
@@ -32,6 +32,10 @@ Im oberen Bereich des Fensters zur Konfiguration dieser Aktivität wird das Date
 Sie können eine Vorab-Bearbeitung definieren, die beim Dateiimport ausgeführt werden soll, z. B. um die Datei nicht auf dem Server entpacken zu müssen (und damit Platz für die entpackte Datei zu sparen), sondern um das Entpacken in die Dateiverarbeitung aufzunehmen. Wählen Sie die Option **[!UICONTROL Vorab-Bearbeitung der Datei vorsehen]** aus und danach Sie dieser drei Optionen: **[!UICONTROL Keine]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
+
+>[!IMPORTANT]
+>
+>Sie können komprimierte Dateien, die größer als 4 GB sind, nicht entpacken.
 
 ## Datei formatieren {#defining-the-file-format}
 
