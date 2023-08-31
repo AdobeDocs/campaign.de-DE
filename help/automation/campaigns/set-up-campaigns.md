@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Erstellen Ihrer ersten Kampagne
-description: Erfahren Sie, wie Sie eine Marketing-Kampagne starten
+title: Erste Schritte mit Marketing-Kampagnen
+description: Erfahren Sie, wie Sie mit Marketing-Kampagnen beginnen
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: ac4473625697d0fd545586a01868e3229bccc672
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 100%
+source-wordcount: '444'
+ht-degree: 98%
 
 ---
 
-# Erstellen Ihrer ersten Kampagne{#gs-marketing-campaigns}
+# Erste Schritte mit Marketing-Kampagnen {#gs-marketing-campaigns}
 
 Mit Adobe Campaign können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. Adobe Campaign fungiert dabei als zentrales Befehls- und Ausführungs-Tool für Marketing-Strategien. Sie können mehrere Datenquellen verwalten, Zielgruppensegmente definieren und mehrstufige kanalübergreifende Kampagnen über eine visuelle Workflow-Benutzeroberfläche per Drag-and-drop planen und ausführen.
 
