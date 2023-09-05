@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
-source-git-commit: 4f3e6227193fc607a968f9170484017e551fa560
+source-git-commit: 4ff6e8134c887da6c207afc7f9532a60ff9ef31e
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 100%
+source-wordcount: '570'
+ht-degree: 98%
 
 ---
 
@@ -35,44 +35,43 @@ ht-degree: 100%
 + Kampagnen-Management {#campaigns}
    + [Erste Schritte mit Kampagnen](start/campaigns.md)
    + [Kampagnenorchestrierung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
-   + Senden von Nachrichten {#send}
-      + [Erste Schritte mit Nachrichten](start/create-message.md)
-      + [Arbeiten mit Versandvorlagen](send/create-templates.md)
-      + E-Mails {#emails}
-         + [Entwerfen und Validieren von E-Mails](send/email.md)
-         + [Verlinken auf die Mirrorseite](send/mirror-page.md)
-         + [Definieren zusätzlicher E-Mail-Parameter](send/email-parameters.md)
-         + [Versenden und Überwachen von E-Mails](send/send.md)
-      + [SMS](send/sms.md)
-      + Push-Benachrichtigungen {#push}
-         + [Erstellen und Versenden von Push-Benachrichtigungen](send/push.md)
-         + [Konfigurieren des Push-Benachrichtigungskanals](send/push-settings.md)
-         + [Konfigurieren von Push-Benachrichtigungen mit der Datenerfassung](send/push-data-collection.md)
-      + [LINE-Messaging](send/line.md)
-      + [Briefpost](send/direct-mail.md)
-      + [Twitter](send/twitter.md)
-      + Transaktionsnachrichten {#real-time}
-         + [Erste Schritte mit Transaktionsnachrichten](send/transactional.md)
-         + [Erstellen und Veröffentlichen einer Vorlage](send/transactional-template.md)
-         + Ereignis-Management {#event}
++ Senden von Nachrichten {#send}
+   + [Erste Schritte mit Nachrichten](start/create-message.md)
+   + E-Mails {#emails}
+      + [Entwerfen und Validieren von E-Mails](send/email.md)
+      + [Verlinken auf die Mirrorseite](send/mirror-page.md)
+      + [Definieren zusätzlicher E-Mail-Parameter](send/email-parameters.md)
+      + [Versenden und Überwachen von E-Mails](send/send.md)
+   + [SMS](send/sms.md)
+   + Push-Benachrichtigungen {#push}
+      + [Erstellen und Versenden von Push-Benachrichtigungen](send/push.md)
+      + [Konfigurieren des Push-Benachrichtigungskanals](send/push-settings.md)
+      + [Konfigurieren von Push-Benachrichtigungen mit der Datenerfassung](send/push-data-collection.md)
+   + [LINE-Messaging](send/line.md)
+   + [Briefpost](send/direct-mail.md)
+   + [Twitter](send/twitter.md)
+   + Personalisieren von Inhalten {#personalize}
+      + [Erste Schritte mit der Personalisierung](send/personalize.md)
+      + [Personalisierungsdaten](send/personalization-data.md)
+      + [Hinzufügen von Personalisierungsfeldern,](send/personalization-fields.md)
+      + [Verwenden von Gestaltungsbausteinen](send/personalization-blocks.md)
+      + [Erstellen von Bedingungen](send/conditions.md)
+   + Versand validieren und senden {#validate}
+   + [Vorschau und Testsendungen](send/preview-and-proof.md)
+   + [Versandanalyse](send/delivery-analysis.md)
+   + [Konfigurieren und Durchführen des Versands](send/configure-and-send.md)
+   + [Optimieren des Sendezeitpunkts](send/predictive.md)
+   + Fehler, Bounces und Quarantänen{#failures}
+      + [Quarantänen](send/quarantines.md)
+      + [Versandfehler](send/delivery-failures.md)
+   + [Arbeiten mit Versandvorlagen](send/create-templates.md)
+   + Transaktionsnachrichten {#real-time}
+      + [Erste Schritte mit Transaktionsnachrichten](send/transactional.md)
+      + [Erstellen und Veröffentlichen einer Vorlage](send/transactional-template.md)
+      + Ereignis-Management {#event}
          + [Erfassen und Verarbeiten von Ereignissen](send/event-processing.md)
          + [Funktionsweise der Ereignisbeschreibung](send/event-description.md)
          + [Senden und Überwachen von Nachrichten](send/delivery-execution.md)
-      + Fehler, Bounces und Quarantänen{#failures}
-         + [Quarantänen](send/quarantines.md)
-         + [Versandfehler](send/delivery-failures.md)
-      + [Optimieren der Versandzeit](send/predictive.md)
-      + [Verwalten von Abonnements](start/subscriptions.md)
-      + Personalisieren von Inhalten {#personalize}
-         + [Erste Schritte mit der Personalisierung](send/personalize.md)
-         + [Personalisierungsdaten](send/personalization-data.md)
-         + [Hinzufügen von Personalisierungsfeldern,](send/personalization-fields.md)
-         + [Verwenden von Gestaltungsbausteinen](send/personalization-blocks.md)
-         + [Erstellen von Bedingungen](send/conditions.md)
-      + Validieren des Versands {#validate}
-         + [Vorschau und Testsendungen](send/preview-and-proof.md)
-         + [Versandanalyse](send/delivery-analysis.md)
-      + [Konfigurieren und Durchführen des Versands](send/configure-and-send.md)
 + Profil- und Zielgruppen-Management {#audience}
    + [Erste Schritte mit Profilen und Audiences](audiences/gs-audiences.md)
    + [Verwenden von Audiences](start/audiences.md)
@@ -87,8 +86,9 @@ ht-degree: 100%
    + Erstellen von Audiences {#create-audiences}
       + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
       + [Erstellen und Verwalten von Filtern](audiences/create-filters.md)
-   + [Audiences mit Adobe-Lösungen freigeben](start/shared-audiences.md)
+      + [Zielgruppen mit Adobe-Lösungen teilen](start/shared-audiences.md)
    + [Best Practices](audiences/audiences-best-practices.md)
+   + [Verwalten von Abonnements](start/subscriptions.md)
 + Content-Management {#content}
    + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
 + Datenschutz- und Sicherheits-Management {#privacy}
