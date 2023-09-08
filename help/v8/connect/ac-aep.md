@@ -1,14 +1,14 @@
 ---
-title: Verwenden von Campaign und Adobe Experience Platform
-description: Informationen zur Verwendung von Campaign und Adobe Experience Platform
+title: Zielgruppen und Profilattribute
+description: Erfahren Sie, wie Sie Adobe Experience Platform-Zielgruppen und Profilattribute mit Campaign synchronisieren.
 feature: Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: d9a91fddbdcfae0f59fe780f8b6962238b89c886
+source-git-commit: 2bd007dec1a61828a499d6c4db738e7673382fb4
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 100%
+source-wordcount: '557'
+ht-degree: 97%
 
 ---
 
