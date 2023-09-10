@@ -7,7 +7,7 @@ breadcrumb-title: Übersicht über Campaign
 source-git-commit: cb5bec3107872d4d6da83b4ddbc7cad3e9276b00
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 97%
       + [Hinzufügen von Personalisierungsfeldern,](send/personalization-fields.md)
       + [Verwenden von Gestaltungsbausteinen](send/personalization-blocks.md)
       + [Erstellen von Bedingungen](send/conditions.md)
-   + Versand validieren und senden {#validate}
+   + Validieren und Senden des Versands {#validate}
    + [Vorschau und Testsendungen](send/preview-and-proof.md)
    + [Versandanalyse](send/delivery-analysis.md)
    + [Konfigurieren und Durchführen des Versands](send/configure-and-send.md)
@@ -86,7 +86,7 @@ ht-degree: 97%
    + Erstellen von Audiences {#create-audiences}
       + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
       + [Erstellen und Verwalten von Filtern](audiences/create-filters.md)
-      + [Zielgruppen mit Adobe-Lösungen teilen](start/shared-audiences.md)
+      + [Zielgruppen mit Adobe-Lösungen freigeben](start/shared-audiences.md)
    + [Best Practices](audiences/audiences-best-practices.md)
    + [Verwalten von Abonnements](start/subscriptions.md)
 + Content-Management {#content}
