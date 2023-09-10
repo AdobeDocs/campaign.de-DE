@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 feature: Workflows, Data Management Activity
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
 source-git-commit: cf88140d1e8b71203729732163f66060423965a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Sie können eine Vorab-Bearbeitung definieren, die beim Dateiimport ausgeführt 
 
 >[!IMPORTANT]
 >
->Sie können komprimierte Dateien, die größer als 4 GB sind, nicht entpacken.
+>Sie können keine komprimierte Dateien entpacken, die größer als 4 GB sind.
 
 ## Datei formatieren {#defining-the-file-format}
 
