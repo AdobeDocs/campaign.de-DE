@@ -3,10 +3,10 @@ title: Migrieren von Campaign-Benutzern zum Adobe Identity Management System (IM
 description: Erfahren Sie, wie Sie Campaign-Benutzer zu Adobe Identity Management System (IMS) migrieren.
 hide: true
 hidefromtoc: true
-source-git-commit: 74d97c4c61a305aff1d2f108a8a24cb6943dea07
+source-git-commit: 53412ab167721c8a8f9d84e07112b0f410d4785d
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 9%
+source-wordcount: '1094'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,6 @@ Ab Campaign v8 sollten alle normalen Benutzer über Adobe Identity Management Sy
 Darüber hinaus ruft die Adobe Campaign-Clientanwendung im Rahmen der Bemühungen zur Verbesserung des Sicherheits- und Authentifizierungsprozesses jetzt Campaign-APIs direkt mithilfe des Tokens für das technische IMS-Konto auf. Die Migration für technische Benutzer wird in einem speziellen Artikel beschrieben, der unter [diese Seite](ims-migration.md).
 
 Diese Änderung gilt ab Campaign v8.5.2 und wird ab Campaign v8.6 **obligatorisch**.
-
 
 ## Sind Sie betroffen?{#migrate-ims-impacts}
 
@@ -49,8 +48,9 @@ Die wichtigsten Schritte für diese Migration sind unten aufgeführt:
 1. Arbeiten Sie mit Adobe zusammen, um ein Datum zu sichern, an dem Adobe die automatisierte Migration für Ihre nicht-technischen Anwender (Benutzer) und Produktprofile durchführen kann. Für diesen Schritt ist ein Stundenfenster ohne Ausfallzeiten für Ihre Instanzen erforderlich.
 1. Ihr interner Campaign-Administrator validiert diese Änderungen und stellt eine Abmeldung bereit. Nach dieser Migration dürfen Sie keinen weiteren Benutzer mehr erstellen, der sich mit seinem Login und Passwort authentifiziert.
 
-Sie können jetzt die Migration technischer Benutzer auf IMS gemäß [diese Technote](ims-migration.md)und bestätigen Sie nach Abschluss des Vorgangs mit Ihrem Adobe Transition Manager.
-Adobe markiert dann die Migration als abgeschlossen und aktiviert die Flags, um die Erstellung neuer nativer Benutzer und die Anmeldung nativer Benutzer zu blockieren.
+Sie können jetzt Ihren/Ihre technischen Benutzer zur Adobe Developer Console migrieren, wie im Abschnitt [diese Technote](ims-migration.md). Dieser Schritt ist bei der Verwendung von Campaign-APIs obligatorisch.
+
+Bestätigen Sie nach Abschluss dieser Migration Ihren Adobe Transition Manager: Adobe markiert die Migration als abgeschlossen und blockiert die neue native Benutzererstellung und die native Benutzeranmeldung. Ihre Umgebung wird dann gesichert und standardisiert.
 
 ## Häufig gestellte Fragen {#ims-migration-faq}
 
@@ -105,10 +105,19 @@ Während dieses Zeitraums müssen sich alle Campaign-Benutzer ab- und wieder mit
 
 Adobe empfiehlt dringend, dass alle Benutzer während des Migrationsfensters abgemeldet werden.
 
-### Benutzer in meinem Unternehmen verwenden IMS bereits. Muss ich trotzdem IMS-Migration durchführen?
+### Benutzer in meinem Unternehmen verwenden IMS bereits. Muss ich trotzdem IMS-Migration durchführen?{#ims-migration-needed}
 
 Diese Migration umfasst zwei Aspekte: die Migration von Endbenutzern und die Migration technischer Benutzer (wird in APIs in Ihrem benutzerspezifischen Code verwendet).
 
 Wenn alle Benutzer (Campaign-Benutzer) IMS verwenden, müssen Sie diese Migration nicht durchführen. Sie müssen jedoch weiterhin technische Benutzer migrieren, die Sie möglicherweise in benutzerdefiniertem Code verwendet haben. Weitere Informationen finden Sie auf [dieser Seite](ims-migration.md).
 
 Sobald diese Migration abgeschlossen ist, müssen Sie sich an Ihren Adobe Transition Manager wenden, damit Adobe die Migration abschließt.
+
+## Nützliche Links {#ims-useful-links}
+
+* [Migration von technischen Benutzerinnen und Benutzern zur Adobe Developer Console](ims-migration.md)
+* [Herstellen einer Verbindung zu Adobe Campaign v8](../../v8/start/connect.md)
+* [Zugriff und Berechtigungen in Adobe Campaign v8](../../v8/start/gs-permissions.md)
+* [Versionshinweise zu Adobe Campaign v8](../../v8/start/release-notes.md)
+* [Was ist Adobe Identity Management System (IMS)?](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}
+
