@@ -5,10 +5,10 @@ feature: Architecture
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: d791cb9afc51457e799ee62f8bb845fd888fecf2
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1129'
+ht-degree: 95%
 
 ---
 
@@ -78,6 +78,7 @@ Daneben sind auch noch weitere technische Prozesse verfügbar:
 
 * **Statistik-Server** (nlserver stat)  - Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einzelnen Mailserver gesendeten Nachrichten und zu deren Einschränkungen (Maximalzahl gleichzeitiger Verbindungen, Nachrichten pro Stunde und/oder Verbindung). Ebenfalls lassen sich über diesen Prozess Instanzen oder Computer zusammenführen, sofern diese dieselben öffentlichen IP-Adressen verwenden.
 
+
 ## Datenbank-Container {#db-containers}
 
 Die Cloud-Datenbank von Adobe Campaign nutzt [!DNL Snowflake], wo die funktionellen Daten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versand, Aufträge und Protokolle, Trackinglogs usw.) und die Arbeitsdaten (Bestellungen, Interessenten) für die Lösung abgelegt sind. Alle Komponenten von Adobe Campaign kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
@@ -92,3 +93,9 @@ Kunden können Adobe Campaign mithilfe der vordefinierten Datenbank und vordefin
 >Mit **Campaign Managed Cloud Services** wurden Ihre Umgebung und die anfängliche Konfiguration von Adobe gemäß den Bedingungen Ihrer Lizenzvereinbarung festgelegt. Sie dürfen keine installierten integrierten Packages, integrierten Schemata oder Berichte ändern.
 >
 >Wenn Sie ein Campaign-Add-on oder eine spezifische Funktion verwenden müssen, das/die Ihnen nicht zur Verfügung gestellt wurde, wenden Sie sich an die **Adobe-Kundenunterstützung**.
+
+## Datenbankspeicher {#db-storage}
+
+Die Gesamtspeichermenge wird auf die Hauptdatenbank und das Snowflake Warehouse aufgeteilt. Wo Daten gespeichert werden, sollte zum Zeitpunkt der Implementierung oder Aktualisierung entsprechend den kundenspezifischen Anwendungsfällen bestimmt werden.
+
+Erfahren Sie, wie Sie die Datenbanknutzung in [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.
