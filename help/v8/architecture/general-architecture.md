@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: d791cb9afc51457e799ee62f8bb845fd888fecf2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1129'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -96,6 +96,6 @@ Kunden können Adobe Campaign mithilfe der vordefinierten Datenbank und vordefin
 
 ## Datenbankspeicher {#db-storage}
 
-Die Gesamtspeichermenge wird auf die Hauptdatenbank und das Snowflake Warehouse aufgeteilt. Wo Daten gespeichert werden, sollte zum Zeitpunkt der Implementierung oder Aktualisierung entsprechend den kundenspezifischen Anwendungsfällen bestimmt werden.
+Die Gesamtspeichermenge wird auf die Hauptdatenbank und das Snowflake Warehouse aufgeteilt. Wo die Daten gespeichert werden, sollte zum Zeitpunkt der Implementierung oder des Upgrades festgelegt werden, je nach den kundenspezifischen Anwendungsfällen.
 
-Erfahren Sie, wie Sie die Datenbanknutzung in [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.
+Wie Sie die Nutzung Ihrer Datenbank überwachen können, erfahren Sie in der Dokumentation zu [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=de){target="_blank"}.
