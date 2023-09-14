@@ -1,11 +1,9 @@
 ---
 title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS)
 description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
-hide: true
-hidefromtoc: true
-source-git-commit: 53412ab167721c8a8f9d84e07112b0f410d4785d
+source-git-commit: a85368a8cd34c9bcdfcea91b71fa4b519b6437a3
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1078'
 ht-degree: 100%
 
 ---
@@ -88,7 +86,7 @@ Als Campaign-Admin müssen Sie allen nativen Benutzenden über die Client-Konsol
 1. Geben Sie die E-Mail-Adresse der jeweiligen Personen im Abschnitt **Kontaktmöglichkeiten** des Benutzerformulars ein.
 1. Speichern Sie Ihre Änderungen.
 
-Sie können auch eine CSV-Datei importieren, um alle Ihre Benutzerprofile mit ihrer E-Mail zu aktualisieren.
+<!--You can also import a CSV file to update all your operator profiles with their email.-->
 
 
 ### Wie meldet man sich über IMS bei Campaign an? {#ims-migration-log}
