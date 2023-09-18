@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 758d542b353a2d784407954089586e761825d740
+source-git-commit: c4a1539f140e85e1e8c97f743f9c6c0bba52e4de
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 100%
+source-wordcount: '1491'
+ht-degree: 95%
 
 ---
 
@@ -38,7 +38,6 @@ Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser
 Weitere Informationen sind in der [entsprechenden Dokumentation](../send/push-data-collection.md) zu finden.
 
 
-**Verbesserter Durchsatz für mobile Kanäle**
 
 <!--
 The newly introduced Push notification service showcases significant improvements in throughput for both Push Android and Push iOS compared to our previous version (v8.4). Users will experience notably enhanced performance with the upgraded service in the latest version (v8.5).
@@ -60,7 +59,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 </td>
 <td>
 <div>
-
+<p><strong>Verbesserter Durchsatz für mobile Kanäle</strong></p>
 <p>Der neu eingeführte Push-Benachrichtigungsdienst zeigt erhebliche Verbesserungen des Durchsatzes für Push-Android und Push-iOS im Vergleich zur vorherigen Version (v8.4). Benutzerinnen und Benutzer werden mit dem aktualisierten Dienst in der neuesten Version (v8.5) eine merklich bessere Leistung feststellen. </p>
 <ul>
 <li>Push-Benachrichtigungen (Android): bis zu <strong>5x</strong> schneller </li>
@@ -85,8 +84,8 @@ These max throughput performances have been measured by Adobe testing teams, in 
 
 **Verbesserungen bei der Sicherheit**
 
-* Ab Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert. Technische Benutzerinnen bzw. Benutzer müssen Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
-* Sie können Benutzerinnen und Benutzer nicht mehr über die Campaign-Client-Konsole erstellen. Die Benutzeroberfläche wurde entsprechend aktualisiert. Sie müssen jetzt die Adobe Admin Console verwenden. [Weitere Informationen](../start/gs-permissions.md).
+* Mit Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert und gesichert. Technische Benutzer müssen jetzt das Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
+* Ab der kommenden Version 8.6 dürfen Sie keine Benutzer mehr über die Campaign Client Console erstellen. Wenn Sie die native Authentifizierung mit Login/Passwort verwenden, müssen Sie Ihre Benutzer auf das Adobe Identity Management System (IMS) migrieren. Erfahren Sie, wie Sie Ihre Benutzer in migrieren können. [diese Technote](../../technotes/upgrades/migrate-users-to-ims.md).
 * Mehrere Drittanbieter-Tools wurden aktualisiert, um die Sicherheit zu optimieren.
 
 **Aktualisierungen zur Kompatibilität**
