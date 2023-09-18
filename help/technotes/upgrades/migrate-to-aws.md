@@ -3,7 +3,7 @@ title: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS)
 description: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: d0935df57d8a25fa023dd93e7923c2728d889577
+source-git-commit: 53080e3641e0070b0b6e47d1ec8b55b4c7aa2b1a
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Die Migration der Produktionsumgebungen ist für den Beginn in **Januar 2024**. 
 
 Als Campaign-Kunde erhalten Sie bei der Planung der Migrationswellen eine zusätzliche Benachrichtigung. Die Benachrichtigungen werden mindestens sieben Tage vor der Migration gesendet.
 
-## Wie wirkt sich das aus?{#aws-impact}
+## Wie wirkt sich das aus?{#impact}
 
 Dieser Schritt wird für die Kunden transparent sein:
 
