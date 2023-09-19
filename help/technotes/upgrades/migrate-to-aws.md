@@ -3,9 +3,9 @@ title: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS)
 description: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 3a8fd0a0c721d03f1818dce45b58a841284bbb00
+source-git-commit: f1b4002063c8b94eb7251a9bcde9fe11791d0be3
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '401'
 ht-degree: 20%
 
 ---
@@ -60,7 +60,7 @@ Dieser Schritt wird für die Kunden transparent sein:
 
 * **Gibt es vom Kunden für die Migration erforderliche Aktionen?**
 
-  Es sind keine Aktionen erforderlich, da die Migration automatisch durch Adobe ausgeführt wird.
+  Es sind keine Aktionen erforderlich, da die Migration automatisch von Adobe ausgeführt wird.
 
 * **Welche Validierungen müssen von den Kunden ausgeführt werden?**
 
