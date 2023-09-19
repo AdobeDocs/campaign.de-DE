@@ -1,10 +1,10 @@
 ---
 title: Migration von technischen Benutzerinnen und Benutzern zur Adobe Developer Console
 description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benutzer zu einem technischen Konto in der Adobe Developer-Konsole migrieren.
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 825e8147f6080e1d943184c97c4b64ac681f9411
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 100%
+source-wordcount: '919'
+ht-degree: 84%
 
 ---
 
@@ -26,6 +26,16 @@ Diese Änderung gilt ab Campaign v8.5 und wird ab Campaign v8.6 **obligatorisch*
 Wenn Sie Campaign-APIs verwenden, müssen Sie Ihre technischen Benutzerinnen und Benutzer wie unten beschrieben zur Adobe Developer Console migrieren.
 
 ## Wie wird die Migration durchgeführt?{#ims-migration-procedure}
+
+Jeder technische Betreiber sollte über mindestens ein technisches Konto verfügen.
+
+Die wichtigsten Schritte sind:
+
+1. Erstellen Sie zunächst das dem technischen Benutzer entsprechende Konto. Angenommen, das neu erstellte technische Konto (TA1) für den technischen Operator (TO1).
+1. Führen Sie die unten im technischen Konto TA1 beschriebenen Schritte aus.
+   [Schritt 4](#ims-migration-step-4) ist optional und nur erforderlich, wenn der technische Benutzer über bestimmte Ordnerberechtigungen verfügt.
+1. Migrieren Sie alle Implementierungen der Campaign API-Integration in das neu erstellte technische Konto TA1.
+1. Sobald alle Kunden mit API/Integration auf TA1 voll funktionsfähig sind, ersetzen Sie den technischen Operator TO1 durch das technische Konto TA1.
 
 ### Voraussetzungen{#ims-migration-prerequisites}
 
@@ -61,7 +71,6 @@ Sie können jetzt Ihr Campaign-Produktprofil zum Projekt hinzufügen, wie im Fol
 1. Navigieren Sie zur Registerkarte **Zugriffsdatendetails** und kopieren Sie den Wert von **E-Mail des technischen Kontos**.
 
 ### Schritt 4: Aktualisieren des technischen Benutzers bzw. der technischen Benutzerin in der Client-Konsole {#ims-migration-step-4}
-
 
 Dieser Schritt ist nur erforderlich, wenn für diesen Benutzer bzw. diese Benutzerin (nicht über die Benutzergruppe) spezifische Ordnerberechtigungen oder spezifische Berechtigungen definiert wurden.
 
@@ -181,7 +190,7 @@ Nach der Migration aller API/benutzerdefinierten Code-Integrationen mit dem Benu
 
 Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufrufe wie folgt aktualisiert:
 
-* Vor der Migration
+* Vor der Migration: Es wurde kein Zugriffstoken für technische Konten unterstützt.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
@@ -204,7 +213,7 @@ Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufru
   </soapenv:Envelope>
   ```
 
-* Nach der Migration
+* Nach der Migration: Unterstützung für Zugriffstoken für technische Konten. Das Zugriffstoken wird voraussichtlich bereitgestellt in `Authorization` -Kopfzeile als Trägertoken. Die Verwendung des Sitzungstokens sollte hier ignoriert werden, wie im folgenden Beispiel für einen Seife-Aufruf dargestellt.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
