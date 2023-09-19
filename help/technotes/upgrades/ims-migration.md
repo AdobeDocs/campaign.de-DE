@@ -1,7 +1,7 @@
 ---
 title: Migration von technischen Benutzerinnen und Benutzern zur Adobe Developer Console
 description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benutzer zu einem technischen Konto in der Adobe Developer-Konsole migrieren.
-source-git-commit: 825e8147f6080e1d943184c97c4b64ac681f9411
+source-git-commit: 43a124dd64532ffe84ca2b300113cacc545a811a
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 84%
@@ -190,7 +190,7 @@ Nach der Migration aller API/benutzerdefinierten Code-Integrationen mit dem Benu
 
 Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufrufe wie folgt aktualisiert:
 
-* Vor der Migration: Es wurde kein Zugriffstoken für technische Konten unterstützt.
+* Vor der Migration: Das Zugriffstoken für technische Konten wurde nicht unterstützt.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
