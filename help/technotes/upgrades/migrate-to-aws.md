@@ -3,10 +3,10 @@ title: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS)
 description: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: f1b4002063c8b94eb7251a9bcde9fe11791d0be3
+source-git-commit: 15beb6e4aae7a00b245277bcb4c6c60c13b22884
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 20%
+source-wordcount: '430'
+ht-degree: 23%
 
 ---
 
@@ -26,6 +26,7 @@ Diese Änderung betrifft:
 * Campaign Classic v7 gehostete und hybride Kunden
 * Campaign Managed Services-Kunden
 * Alle Campaign v8-Kunden
+* Campaign Standard
 
 ## Wann wird diese Migration stattfinden?{#aws-timeline}
 
@@ -48,11 +49,13 @@ Dieser Schritt wird für die Kunden transparent sein:
 
 * **Warum ist dieses Upgrade obligatorisch?**
 
-  Die neue Campaign-Versandinfrastruktur, die von Adobe Web Services (AWS) gehostet wird, verbessert die Qualität und Zuverlässigkeit für unsere Kunden. Es bietet außerdem eine starke und moderne Infrastruktur, um eine bessere Verfügbarkeit und optimalen Durchsatz zu gewährleisten.
+  Adobe plant die Stilllegung des alten Rechenzentrums, Adobe Campaign-Instanzen, die dort ausgeführt werden, müssen an das neue Referenz-Rechenzentrum, Amazon Web Services (AWS) übertragen werden.
+
+  Die Adobe Managed Services-Cloud wird auf Amazon Web Services (AWS) gehostet, einer modernen, sicheren und optimierten Umgebung. [Weitere Informationen zu Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
 
 * **Welche Kunden sind für diese Migration vorgesehen?**
 
-  Bei allen Campaign v8-Kunden und Campaign Classic v7-Hybrid-, gehosteten und Campaign Managed Services-Kunden wird die Migration ihrer Umgebungen durchgeführt.
+  Bei allen Campaign v8-Kunden und Campaign Classic v7-Hybrid-, gehosteten und Campaign Managed Services-Kunden wird die Migration ihrer Umgebungen durchgeführt. Auch Campaign Standard sind betroffen.
 
 * **Mit welcher Ausfallzeit ist zu rechnen?**
 
@@ -64,7 +67,7 @@ Dieser Schritt wird für die Kunden transparent sein:
 
 * **Welche Validierungen müssen von den Kunden ausgeführt werden?**
 
-  Für diese Migration sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+  Für diese Migration sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
@@ -72,4 +75,4 @@ Dieser Schritt wird für die Kunden transparent sein:
   Da es sich um eine obligatorische Migration handelt, empfehlen wir dringend, sich an den vorhandenen Zeitplan anzupassen.
 
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
