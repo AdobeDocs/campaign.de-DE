@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: c4a1539f140e85e1e8c97f743f9c6c0bba52e4de
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1491'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -84,8 +84,8 @@ These max throughput performances have been measured by Adobe testing teams, in 
 
 **Verbesserungen bei der Sicherheit**
 
-* Mit Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert und gesichert. Technische Benutzer müssen jetzt das Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
-* Ab der kommenden Version 8.6 dürfen Sie keine Benutzer mehr über die Campaign Client Console erstellen. Wenn Sie die native Authentifizierung mit Login/Passwort verwenden, müssen Sie Ihre Benutzer auf das Adobe Identity Management System (IMS) migrieren. Erfahren Sie, wie Sie Ihre Benutzer in migrieren können. [diese Technote](../../technotes/upgrades/migrate-users-to-ims.md).
+* Ab Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert und gesichert. Technische Benutzerinnen bzw. Benutzer müssen jetzt das Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
+* Ab der kommenden Version 8.6 dürfen Sie keine Benutzenden mehr über die Campaign-Client-Konsole erstellen. Wenn Sie die native Authentifizierung mit Login/Passwort verwenden, müssen Sie Ihre Benutzenden auf das Adobe Identity Management System (IMS) migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/upgrades/migrate-users-to-ims.md), wie Sie alte Benutzende migrieren können.
 * Mehrere Drittanbieter-Tools wurden aktualisiert, um die Sicherheit zu optimieren.
 
 **Aktualisierungen zur Kompatibilität**
