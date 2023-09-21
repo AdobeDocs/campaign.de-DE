@@ -3,44 +3,44 @@ title: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS)
 description: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 15beb6e4aae7a00b245277bcb4c6c60c13b22884
+source-git-commit: 9401e3564b53b920dd6a640ca6d00531992a2f21
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 23%
+source-wordcount: '481'
+ht-degree: 74%
 
 ---
 
 
-# Campaign - Versand der Infrastrukturmigration nach Amazon Web Services (AWS) {#migrate-infra-to-aws}
+# Migration der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS) {#migrate-infra-to-aws}
 
 ## Was hat sich geändert?{#aws-changes}
 
-Im Rahmen unserer kontinuierlichen Bemühungen, einen qualitativ hochwertigen E-Mail-Versand bereitzustellen, wird die Campaign-E-Mail-Versand-Infrastruktur von Adobe-gehosteten Rechenzentren nach Amazon Web Services (AWS) verschoben.
+Im Rahmen unserer kontinuierlichen Bemühungen, einen qualitativ hochwertigen E-Mail-Versand bereitzustellen, wird die Campaign-E-Mail-Versandinfrastruktur von Adobe-gehosteten Rechenzentren zu Amazon Web Services (AWS) verschoben.
 
-Dieser Schritt gewährleistet hohe Verfügbarkeit, optimalen Durchsatz und die Möglichkeit, die Skalierung an die Bedürfnisse unserer Kunden anzupassen.
+Dieser Schritt gewährleistet hohe Verfügbarkeit, optimalen Durchsatz und die Möglichkeit, die Skalierung an die Bedürfnisse unserer Kundinnen und Kunden anzupassen.
 
 ## Sind Sie betroffen?{#aws-impact}
 
 Diese Änderung betrifft:
 
-* Campaign Classic v7 gehostete und hybride Kunden
-* Campaign Managed Services-Kunden
-* Alle Campaign v8-Kunden
+* gehostete und hybride Kundinnen und Kunden von Campaign Classic v7
+* Kundinnen und Kunden von Campaign Managed Services
+* alle Kundinnen und Kunden von Campaign-v8
 * Campaign Standard
 
 ## Wann wird diese Migration stattfinden?{#aws-timeline}
 
-Die Migration der Entwicklungs- und Staging-Umgebungen erfolgt in **Oktober 2023**.
+Die Migration der Entwicklungs- und Staging-Umgebungen erfolgt im **Oktober 2023**.
 
-Die Migration der Produktionsumgebungen ist für den Beginn in **Januar 2024**. Weitere Informationen werden im nächsten Schritt des Datums bereitgestellt.
+Die Migration der Produktionsumgebungen beginnt im **Januar 2024**. Weitere Einzelheiten werden zu gegebener Zeit bekannt gegeben.
 
-Als Campaign-Kunde erhalten Sie bei der Planung der Migrationswellen eine zusätzliche Benachrichtigung. Benachrichtigungen werden mindestens 7 Tage vor der Migration für Staging-Umgebungen und mindestens 30 Tage vor der Migration für Produktionsumgebungen gesendet.
+Als Campaign-Kundin oder -Kunde erhalten Sie bei der Planung der Migrationswellen zusätzliche Benachrichtigungen. Benachrichtigungen werden mindestens 7 Tage vor der Migration der Staging-Umgebungen und mindestens 30 Tage vor der Migration der Produktionsumgebungen gesendet.
 
 ## Wie wirkt sich das aus?{#impact}
 
-Dieser Schritt wird für die Kunden transparent sein:
+Dieser Schritt wird für die Kundinnen und Kunden transparent sein:
 
-* Die Migration wird voraussichtlich zwischen 30 Minuten und 60 Minuten dauern
+* Die Länge der einzelnen Migrationswellen variiert je nach der Anzahl der betroffenen Campaign-Instanzen. Wenn eine Migrationswelle geplant ist, enthält die Benachrichtigung die erwartete Dauer.
 
 * Campaign-Instanzen können während des Migrationsfensters keine E-Mails senden. Andere Campaign-Funktionen sind nicht betroffen.
 
@@ -53,26 +53,25 @@ Dieser Schritt wird für die Kunden transparent sein:
 
   Die Adobe Managed Services-Cloud wird auf Amazon Web Services (AWS) gehostet, einer modernen, sicheren und optimierten Umgebung. [Weitere Informationen zu Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
 
-* **Welche Kunden sind für diese Migration vorgesehen?**
+* **Für welche Kundinnen und Kunden gilt diese Migration?**
 
-  Bei allen Campaign v8-Kunden und Campaign Classic v7-Hybrid-, gehosteten und Campaign Managed Services-Kunden wird die Migration ihrer Umgebungen durchgeführt. Auch Campaign Standard sind betroffen.
+  Bei allen Kundinnen und Kunden von Campaign v8, hybridem und gehostetem Campaign Classic v7 sowie Campaign Managed Services wird die Migration der Umgebungen durchgeführt. Auch Campaign Standard sind betroffen.
 
 * **Mit welcher Ausfallzeit ist zu rechnen?**
 
-  Die erwartete Ausfallzeit liegt zwischen 30 und 60 Minuten.
+  Die Migration dauert vermutlich zwischen 30 Minuten und 60 Minuten. Die Länge jedes Migrationsschritts variiert jedoch je nach Anzahl der betroffenen Campaign-Instanzen. Wenn eine Migrationswelle geplant ist, enthält die Benachrichtigung die erwartete Dauer.
 
-* **Gibt es vom Kunden für die Migration erforderliche Aktionen?**
+* **Gibt es Maßnahmen, die auf Kundenseite für diese Migration getroffen werden müssen?**
 
   Es sind keine Aktionen erforderlich, da die Migration automatisch von Adobe ausgeführt wird.
 
-* **Welche Validierungen müssen von den Kunden ausgeführt werden?**
+* **Welche Validierungen müssen auf Kundenseite ausgeführt werden?**
 
   Für diese Migration sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
 
-  Da es sich um eine obligatorische Migration handelt, empfehlen wir dringend, sich an den vorhandenen Zeitplan anzupassen.
-
+  Da es sich um eine obligatorische Migration handelt, können wir keine Änderungen am bestehenden Zeitplan vornehmen.
 
 Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
