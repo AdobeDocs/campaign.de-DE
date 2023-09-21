@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benut
 source-git-commit: 35263dc042642a6ba2f162461364b9399c30ad18
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 77%
+ht-degree: 92%
 
 ---
 
@@ -27,15 +27,15 @@ Wenn Sie Campaign-APIs verwenden, müssen Sie Ihre technischen Benutzerinnen und
 
 ## Wie wird die Migration durchgeführt?{#ims-migration-procedure}
 
-Jeder technische Betreiber sollte über mindestens ein technisches Konto verfügen.
+Alle technischen Benutzenden sollte über mindestens ein technisches Konto verfügen.
 
 Die wichtigsten Schritte sind:
 
-1. Erstellen Sie zunächst das dem technischen Benutzer entsprechende Konto. Angenommen, das neu erstellte technische Konto (TA1) für den technischen Operator (TO1).
-1. Führen Sie die unten im technischen Konto TA1 beschriebenen Schritte aus.
-   [Schritt 4](#ims-migration-step-4) ist optional und nur erforderlich, wenn der technische Benutzer über bestimmte Ordnerberechtigungen verfügt.
+1. Erstellen Sie zunächst das den technischen Benutzenden entsprechende Konto. Nehmen wir das neu erstellte technische Konto (TA1) für den technischen Benutzer oder die technische Benutzerin (TO1) an.
+1. Führen Sie die unten beschriebenen Schritte im technischen Konto TA1 aus.
+   [Schritt 4](#ims-migration-step-4) ist optional und nur erforderlich, wenn die technischen Benutzenden über bestimmte Ordnerberechtigungen verfügen.
 1. Migrieren Sie alle Implementierungen der Campaign API-Integration in das neu erstellte technische Konto TA1.
-1. Sobald alle Kunden mit API/Integration auf TA1 voll funktionsfähig sind, ersetzen Sie den technischen Operator TO1 durch das technische Konto TA1.
+1. Sobald für alle Kundinnen und Kunden die API/Integration auf TA1 voll funktionsfähig ist, ersetzen Sie die technische Benutzerin bzw. den technischen Benutzer TO1 durch das technische Konto TA1.
 
 ### Voraussetzungen{#ims-migration-prerequisites}
 
@@ -190,7 +190,7 @@ Nach der Migration aller API/benutzerdefinierten Code-Integrationen mit dem Benu
 
 Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufrufe wie folgt aktualisiert:
 
-* Vor der Migration: Das Zugriffstoken für technische Konten wurde nicht unterstützt.
+* Vor der Migration: Zugriffstoken für technische Konten wurden nicht unterstützt.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
@@ -213,7 +213,7 @@ Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufru
   </soapenv:Envelope>
   ```
 
-* Nach der Migration: Unterstützung für Zugriffstoken für technische Konten. Das Zugriffstoken wird voraussichtlich bereitgestellt in `Authorization` -Kopfzeile als Trägertoken. Die Verwendung des Sitzungstokens sollte hier ignoriert werden, wie im folgenden Beispiel für einen Seife-Aufruf dargestellt.
+* Nach der Migration: Zugriffstoken für technische Konten werden unterstützt. Es wird erwartet, dass das Zugriffstoken in der `Authorization` Kopfzeile als Bearer-Token angegeben wird. Die Verwendung eines Sitzungs-Tokens sollte hier ignoriert werden, wie im folgenden Beispiel für einen SOAP-Aufruf dargestellt.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
