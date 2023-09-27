@@ -3,9 +3,9 @@ title: Upgrade der Campaign-E-Mail-Versandinfrastruktur
 description: Upgrade der Campaign-E-Mail-Versandinfrastruktur
 hide: true
 hidefromtoc: true
-source-git-commit: 45ef2b46f2612bdb814270d8ef9e257fcaf98e5b
+source-git-commit: aa3ec8e96d3bda80d5cbd4b4d98cad07b4560b14
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '366'
 ht-degree: 23%
 
 ---
@@ -24,7 +24,6 @@ Diese Änderung betrifft:
 * Adobe Campaign Classic Managed Services-Kunden
 * Adobe Campaign Managed Cloud Services-Kunden
 * Adobe Campaign Standard On-Demand-Kunden
-* On-Demand-Kunden von Adobe Campaign Cloud Messaging
 
 ## Wann wird diese Migration stattfinden?{#aws-timeline}
 
