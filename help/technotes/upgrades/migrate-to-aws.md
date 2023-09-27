@@ -4,9 +4,9 @@ description: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services 
 hide: true
 hidefromtoc: true
 source-git-commit: 9401e3564b53b920dd6a640ca6d00531992a2f21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '481'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Diese Änderung betrifft:
 * gehostete und hybride Kundinnen und Kunden von Campaign Classic v7
 * Kundinnen und Kunden von Campaign Managed Services
 * alle Kundinnen und Kunden von Campaign-v8
-* Campaign Standard
+* Kundinnen und Kunden von Campaign Standard
 
 ## Wann wird diese Migration stattfinden?{#aws-timeline}
 
@@ -49,13 +49,13 @@ Dieser Schritt wird für die Kundinnen und Kunden transparent sein:
 
 * **Warum ist dieses Upgrade obligatorisch?**
 
-  Adobe plant die Stilllegung des alten Rechenzentrums, Adobe Campaign-Instanzen, die dort ausgeführt werden, müssen an das neue Referenz-Rechenzentrum, Amazon Web Services (AWS) übertragen werden.
+  Adobe plant die Stilllegung des alten Rechenzentrums. Die dort ausgeführten Adobe Campaign-Instanzen müssen in das neue Referenz-Rechenzentrum, Amazon Web Services (AWS) übertragen werden.
 
   Die Adobe Managed Services-Cloud wird auf Amazon Web Services (AWS) gehostet, einer modernen, sicheren und optimierten Umgebung. [Weitere Informationen zu Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
 
 * **Für welche Kundinnen und Kunden gilt diese Migration?**
 
-  Bei allen Kundinnen und Kunden von Campaign v8, hybridem und gehostetem Campaign Classic v7 sowie Campaign Managed Services wird die Migration der Umgebungen durchgeführt. Auch Campaign Standard sind betroffen.
+  Bei allen Kundinnen und Kunden von Campaign v8, hybridem und gehostetem Campaign Classic v7 sowie Campaign Managed Services wird die Migration der Umgebungen durchgeführt. Auch Kundinnen und Kunden von Campaign Standard sind betroffen.
 
 * **Mit welcher Ausfallzeit ist zu rechnen?**
 
