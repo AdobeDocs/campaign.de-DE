@@ -6,9 +6,9 @@ title: Technotes zu Adobe Campaign
 description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
 source-git-commit: 47fc1ee7e0a1cb96d66151cf79137c80ef2d67d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '56'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 91%
    + [Migrieren von Benutzenden zu IMS](upgrades/migrate-users-to-ims.md)
    + [Migration einer technischen Benutzerin bzw. eines technischen Benutzers zur Developer Console](upgrades/ims-migration.md)
    + [Migration der Campaign-Versandinfrastruktur an AWS](upgrades/migrate-to-aws.md)
-   + [Upgrade der Campaign-E-Mail-Versandinfrastruktur](upgrades/upgrade-to-aws.md)
+   + [Upgrade der E-Mail-Versandinfrastruktur in Campaign](upgrades/upgrade-to-aws.md)
    + [Aktualisierung der Apache-Version](upgrades/apache.md)
    + [Internet-Browser](upgrades/browsers.md)
    + [System-Upgrades für 2023](upgrades/tech-stack-upgrade.md)
