@@ -3,8 +3,9 @@ product: campaign
 title: Abfrage mit einer Viele-zu-viele-Beziehung
 description: Erfahren Sie, wie Sie mit einer Viele-zu-viele-Beziehung Abfragen durchführen können
 feature: Query Editor
+role: User, Data Engineer
 exl-id: c320054d-7f67-4b12-aaa7-785945bf0c18
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 100%
