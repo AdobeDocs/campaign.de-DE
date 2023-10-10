@@ -5,10 +5,10 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 87e56e7c296884458a0c8fd704b82611f56e695d
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 100%
+source-wordcount: '713'
+ht-degree: 78%
 
 ---
 
@@ -18,19 +18,19 @@ Adobe Campaign enthält ein vordefiniertes Datenmodell. Dieser Abschnitt enthäl
 
 Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschreiben:
 
-* **Empfängertabelle**: Das Datenmodell basiert auf einer Haupttabelle, die standardmäßig die Empfängertabelle (nmsRecipient) ist. In dieser Tabelle werden alle Marketing-Profile gespeichert.
+* **Empfängertabelle**: Das Datenmodell beruht auf einer Haupt-Tabelle, die standardmäßig die Empfängertabelle (**nmsRecipient**). In dieser Tabelle werden alle Marketing-Profile gespeichert. Weitere Informationen zur Empfängertabelle finden Sie unter [diesem Abschnitt](#ootb-profiles).
 
-  ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](#ootb-profiles).
-
-* **Versandtabelle**: Das Datenmodell enthält auch einen Teil, der dem Speichern aller Marketing-Aktivitäten dient. Normalerweise handelt es sich dabei um die Versandtabelle (NmsDelivery). Jeder Datensatz in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Er enthält alle erforderlichen Parameter zum Ausführen von Sendungen wie Zielgruppe, Inhalt usw.
+* **Versandtabelle**: Diese Tabelle speichert einen Datensatz pro Versandaktion. Normalerweise handelt es sich um die Versandtabelle (**NmsDelivery**). in dieser Tabelle eine Versandaktion oder eine Versandvorlage. Er enthält alle erforderlichen Parameter zum Ausführen von Sendungen wie Zielgruppe, Inhalt usw. Jeder Datensatz wird wiederholt aktualisiert, um den Versandfortschritt widerzuspiegeln
 
 * **Protokolltabelle**: In diesen Tabellen werden alle Protokolle gespeichert, die mit der Ausführung der Kampagnen verbunden sind.
 
-  Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle mit Versand-Logs (NmsBroadLogRcp) enthält die Versand-Logs für alle Empfänger.
-Die Haupt-Trackinglog-Tabelle (NmsTrackingLogRcp) speichert die Trackinglogs für alle Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
-Versand-Logs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben und änderbar ist. Daher wird dringend empfohlen, die Logs regelmäßig zu exportieren.
+   * Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die wichtigste Tabelle der Versandlogs (**NmsBroadLogRcp**) enthält die Versandlogs für alle Empfänger.
+   * Die **nmsBroadlog** -Tabelle ist die größte Tabelle im System. Pro gesendeter Nachricht wird ein Datensatz gespeichert. Diese Datensätze werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und beim Löschen des Verlaufs gelöscht.
+   * Die wichtigste Tabelle der Trackinglogs (**NmsTrackingLogRcp**) speichert die Trackinglogs für alle Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
 
-* **Technische Tabellen**: Enthalten technische Daten für Programmprozesse, einschließlich Benutzer- und Anwenderberechtigungen (xtkGroup) und Ordnern (XtkFolder).
+  Versand-Logs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben und änderbar ist. Daher wird dringend empfohlen, die Logs regelmäßig zu exportieren.
+
+* **Technische Tabellen**: Sammlung technischer Daten, die für den jeweiligen Prozess verwendet werden, einschließlich Benutzer- und Benutzerberechtigungen (**xtkGroup**), Benutzersitzungen (**xtkSessionInfo**), Ordner in der Explorer-Struktur (**XtkFolder**), Workflows (**xtkWorkflow**) und mehr.
 
 >[!NOTE]
 >
