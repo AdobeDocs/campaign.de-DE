@@ -1,15 +1,15 @@
 ---
-title: Upgrade der Campaign-E-Mail-Versandinfrastruktur
-description: Upgrade der Campaign-E-Mail-Versandinfrastruktur
-source-git-commit: 4478c4b4b1eb3697ff03acfcd618ebfb1d875df9
-workflow-type: tm+mt
+title: Upgrade der E-Mail-Versandinfrastruktur in Campaign
+description: Upgrade der E-Mail-Versandinfrastruktur in Campaign
+exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
+source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
-
-# Upgrade der Campaign-E-Mail-Versandinfrastruktur {#migrate-infra-to-aws}
+# Upgrade der E-Mail-Versandinfrastruktur in Campaign {#migrate-infra-to-aws}
 
 ## Was wird aktualisiert?{#aws-changes}
 
@@ -19,49 +19,49 @@ Im Rahmen unserer kontinuierlichen Bemühungen um ein erstklassiges Benutzererle
 
 Diese Änderung betrifft:
 
-* Adobe Campaign Classic Managed Services-Kunden
-* Adobe Campaign Managed Cloud Services-Kunden
-* Adobe Campaign Standard On-Demand-Kunden
+* Kundinnen und Kunden von Adobe Campaign Classic Managed Services
+* Kundinnen und Kunden von Adobe Campaign Managed Cloud Services
+* Kundinnen und Kunden von Adobe Campaign Standard On Demand
 
-## Wann wird dieses Upgrade durchgeführt?{#aws-timeline}
+## Wann wird dieses Upgrade stattfinden?{#aws-timeline}
 
-Die Aktualisierungen der Entwicklungs- und Staging-Umgebungen finden voraussichtlich in **Oktober 2023**.
+Das Upgrade für die Entwicklungs- und Staging-Umgebung wird voraussichtlich im **Oktober 2023** stattfinden.
 
 Wir planen die Aktualisierung der Produktionsumgebung ab **Januar 2024**.
 
-Als Campaign-Kunde erhalten Sie mindestens dreißig (30) Tage im Voraus eine zusätzliche Benachrichtigung bezüglich des Produktions-Upgrades.
+Als Campaign-Kundin bzw. -Kunde erhalten Sie mindestens dreißig (30) Tage im Voraus eine zusätzliche Benachrichtigung bezüglich des Produktions-Upgrades.
 
 ## Was ist zu erwarten?{#impact}
 
-* Die Länge jedes Aktualisierungsschritts hängt von der Anzahl der betroffenen Campaign-Instanzen ab. Wenn eine Produktionsaktualisierung geplant ist, enthält die Benachrichtigung die geschätzte Dauer.
+* Die Länge der einzelnen Upgrade-Wellen wird je nach der Anzahl der betroffenen Campaign-Instanzen variieren. Wenn eine Produktions-Upgrade-Welle geplant ist, enthält die Benachrichtigung die erwartete Dauer.
 
 * Campaign-Instanzen können sowohl in der Staging- als auch in der Produktionsumgebung während des Aktualisierungsfensters keine E-Mails senden. Andere Campaign-Funktionen werden voraussichtlich nicht beeinträchtigt.
 
 ## Häufig gestellte Fragen {#aws-faq}
 
-* **Ist diese Aktualisierung obligatorisch?**
+* **Ist dieses Upgrade obligatorisch?**
 
-  Ja. Als Campaign-Kunde erfordert Ihre E-Mail-Sendefunktion die Verwendung einer E-Mail-Versandinfrastruktur.
+  Ja. Als Campaign-Kundin bzw. -Kunde erfordert Ihre E-Mail-Sendefunktion die Verwendung einer E-Mail-Sendeinfrastruktur.
 
-* **Welche Kunden sind für dieses Upgrade vorgesehen?**
+* **Für welche Kundinnen und Kunden gilt dieses Upgrade?**
 
-  Für alle oben genannten Campaign-Kunden wird eine Aktualisierung ihrer Umgebungen durchgeführt.
+  Für alle oben genannten Campaign-Kundinnen und -Kunden wird eine Aktualisierung ihrer Umgebungen durchgeführt.
 
 * **Mit welcher Ausfallzeit ist zu rechnen?**
 
-  Die Länge der einzelnen Upgradewellen variiert je nach der Anzahl der betroffenen Campaign-Instanzen. Wenn eine Produktionsaktualisierung geplant ist, enthält die Benachrichtigung eine geschätzte Dauer.
+  Die Länge der einzelnen Upgrade-Wellen wird je nach der Anzahl der betroffenen Campaign-Instanzen variieren. Wenn ein Produktions-Upgrade geplant ist, enthält die Benachrichtigung eine geschätzte Dauer.
 
-* **Gibt es vom Kunden für das Upgrade erforderliche Aktionen?**
+* **Gibt es Maßnahmen, die auf Kundenseite für diese Migration getroffen werden müssen?**
 
-  Es ist keine Aktion erforderlich. Adobe verwaltet den Aktualisierungsprozess, der automatisch ausgeführt wird.
+  Es sind keine Maßnahmen erforderlich. Adobe verwaltet den Upgrade-Prozess, der automatisch ausgeführt wird.
 
-* **Welche Tests sind für die Kunden erforderlich?**
+* **Welche Tests sind für die Kundinnen und Kunden erforderlich?**
 
-  Wir erwarten keine Tests durch Kunden im Zusammenhang mit diesem Upgrade-Ereignis. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  Wir erwarten keine Tests durch Kundinnen und Kunden in Verbindung mit diesem Upgrade-Ereignis. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=de#support){target="_blank"}.
 
 
 * **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
 
-  Nein. Wir können keine angeforderten Änderungen an der bestehenden Planung vornehmen, da dies das zugewiesene Upgrade-Ereignis für einen anderen Kunden wahrscheinlich stören wird.
+  Nein. Wir können keine Anfragen bezüglich Änderungen an der bestehenden Planung berücksichtigen, da dies wahrscheinlich das zugewiesene Upgrade-Ereignis für andere Kundinnen und Kunden stören würde.
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=de#support){target="_blank"}.
