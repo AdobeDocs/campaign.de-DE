@@ -3,8 +3,9 @@ product: campaign
 title: Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage
 description: In diesem Anwendungsfall dient eine inkrementelle Abfrage zur automatischen Aktualisierung einer Empfängerliste.
 feature: Workflows
+role: User
 exl-id: eedc796a-865f-47a8-8807-5980546b8adf
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 100%

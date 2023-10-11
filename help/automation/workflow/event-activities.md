@@ -3,8 +3,9 @@ product: campaign
 title: Ereignisaktivitäten in Workflows
 description: Liste der Ereignisaktivitäten in Workflows
 feature: Workflows, Data Management
+role: User
 exl-id: 0e8ab370-06bc-431e-a685-310ac54a1246
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 100%
