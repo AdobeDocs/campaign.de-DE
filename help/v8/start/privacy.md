@@ -1,20 +1,20 @@
 ---
 title: Verwalten von Datenschutzanfragen in Campaign
 description: Erfahren Sie, wie Sie Datenschutzanfragen in Campaign verwalten.
-feature: Audiences
+feature: Privacy
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Verwalten von Datenschutzanfragen in Campaign {#privacy}
 
-Je nach Art Ihres Unternehmens und der Gerichtsbarkeit, der es unterliegt, können Ihre Datenoperationen rechtlichen Datenschutzbestimmungen unterliegen. Durch diese Vorschriften erhalten Ihre Kundinnen und Kunden häufig das Recht, den Zugriff auf ihre von Ihnen erfassten Daten anzufordern und die Löschung dieser gespeicherten Daten zu veranlassen. Diese Kundenanfragen in Bezug auf personenbezogenen Daten werden in der gesamten Dokumentation als &quot;Datenschutzanfragen&quot; bezeichnet.
+Je nach Art Ihres Unternehmens und der Gerichtsbarkeit, der es unterliegt, können Ihre Datenoperationen rechtlichen Datenschutzbestimmungen unterliegen. Durch diese Vorschriften erhalten Ihre Kundinnen und Kunden häufig das Recht, den Zugriff auf ihre von Ihnen erfassten Daten anzufordern und die Löschung dieser gespeicherten Daten zu veranlassen. Diese Kundenanfragen für ihre personenbezogenen Daten werden in der gesamten Dokumentation als &quot;Datenschutzanfragen&quot;bezeichnet.
 
 Adobe bietet Datenverantwortlichen Tools zum Erstellen und Verarbeiten von Datenschutzanfragen für in Campaign gespeicherte Daten. Als Datenverantwortlicher sind Sie außerdem verpflichtet, die Identität der betroffenen Person zu überprüfen, die die Anfrage stellt, und sicherzustellen, dass die dem Anfragenden übermittelten Daten zur betroffenen Person gehören. Weitere Informationen zu personenbezogenen Daten und zu den verschiedenen Entitäten, die Daten verwalten, finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#personal-data){target="_blank"}.
 
