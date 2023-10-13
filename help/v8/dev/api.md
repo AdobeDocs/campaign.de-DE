@@ -5,14 +5,14 @@ feature: API
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 9c7a4f7d4e84fde4b74bf6f8e0432681aa7e42d3
+source-git-commit: 4c2d3bba282f629a9f5cadcda9ab79a810ac9832
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 100%
 
 ---
 
-# Erste Schritte mit [!DNL Campaign] APIs{#gs-ac-api}
+# Erste Schritte mit [!DNL Campaign] APIs {#gs-ac-api}
 
 In [!DNL Adobe Campaign] stehen Ihnen eine Reihe von JavaScript-Funktionen zur Verfügung, die Sie wie folgt verwenden können:
 
@@ -33,7 +33,7 @@ Es ist zu beachten, dass Campaign in seiner [Enterprise (FFDA)-Bereitstellung](.
 >* [!DNL Adobe Campaign] v8 enthält eine Begrenzung des Durchsatzes (TPS) auf API-Ebene. Das Aufheben dieser Begrenzung führt zu einem standardmäßigen HTTP-Fehler (429). Als Benutzer von Managed Cloud Services können Sie sich an Adobe wenden, um die Begrenzung für jede API anzupassen.
 > 
 
-## Voraussetzungen
+## Voraussetzungen {#ac-api-prerequisites}
 
 Vor der Arbeit mit [!DNL Adobe Campaign]-APIs sollten Sie sich mit den folgenden Themen vertraut machen:
 
