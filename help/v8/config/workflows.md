@@ -5,10 +5,10 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1625'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können Folgendes einrichten:
 * Automatisches Senden von Berichten
 * Erzeugte Ereignisse
 
-## Entwerfen und Verwenden von Workflows{#gs-ac-wf}
+## Entwerfen und Verwenden von Workflows {#gs-ac-wf}
 
 Verwenden Sie Adobe Campaign-Workflows, um jeden Aspekt Ihrer Marketing-Kampagnen zu beschleunigen und zu skalieren – von der Erstellung von Segmenten über die Vorbereitung von Nachrichten bis hin zum Versand.
 
@@ -166,8 +166,8 @@ Hier erfahren Sie, wie Sie mithilfe eines Zielgruppen-Workflows zwei E-Mail-Vers
 * [Senden eines Berichts an eine Liste](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html?lang=de)
 Hier erfahren Sie, wie Sie einen monatlichen integrierten Bericht zu Tracking-Indikatoren im PDF-Format generieren und an eine Liste von Campaign-Benutzern senden.
 
-* [Überwachen Ihrer Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=de)
-Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen können, die &quot;ausgesetzt&quot;, &quot;angehalten&quot; oder &quot;fehlerhaft&quot; sind.
+* [Monitoring Ihrer Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=de)
+Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen können, die &quot;ausgesetzt&quot;, &quot;angehalten&quot;oder &quot;fehlgeschlagen&quot;sind.
 
 * [Senden von personalisierten Warnhinweisen an Benutzer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators.html?lang=de)
 Erfahren Sie, wie Sie Benutzern einen Warnhinweis senden, der den Namen der Profile enthält, welche einen Newsletter zwar geöffnet, aber nicht auf den darin enthaltenen Link geklickt haben.
@@ -204,8 +204,7 @@ Erfahren Sie, wie ein Workflow für den wiederholten Import von Profilen aus ein
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
 * [Abfrage der Empfängertabelle](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table.html?lang=de)
-
-Erfahren Sie, wie Sie die Namen und E-Mails der Empfänger abrufen können, deren E-Mail-Domain &quot;orange.co.uk&quot; lautet und die nicht in London leben.
+Hier erfahren Sie, wie Sie die Namen und E-Mails der Empfänger abrufen können, deren E-Mail-Domain &quot;orange.co.uk&quot; lautet und die nicht in London leben.
 
 * [Abfrage von Versandinformationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-delivery-info.html?lang=de)
 

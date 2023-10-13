@@ -1,18 +1,18 @@
 ---
 title: Erste Schritte mit der Campaign FFDA-Bereitstellung
 description: Erste Schritte mit der Campaign FFDA-Bereitstellung
-feature: Architecture, FFDA
+feature: Architecture, FFDA, Deployment
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 51bba0a2b4be03577f508d352fc7c2b514ba28e5
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
 
 ---
 
-# [!DNL Campaign] FFDA-Bereitstellung{#gs-ac-ffda}
+# [!DNL Campaign] FFDA-Bereitstellung {#gs-ac-ffda}
 
 Durch die Nutzung von [[!DNL Snowflake]](https://www.snowflake.com/), einer Cloud-Datenbanktechnologie, wird die Skalierbarkeit und Geschwindigkeit der FFDA-Bereitstellung von Adobe Campaign Enterprise erheblich verbessert. So kann eine größere Anzahl von Kundenprofilen verwaltet werden und es werden deutlich höhere Versandraten und mehr Transaktionen pro Stunde erreicht.
 

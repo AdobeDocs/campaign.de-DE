@@ -1,19 +1,19 @@
 ---
 title: Externe Konten in Campaign
 description: Externe Konten in Campaign
-feature: Application Settings
+feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 
-# Externe Konten konfigurieren
+# Externe Konten konfigurieren {#config-external-accounts}
 
 Adobe Campaign enthält eine Reihe vordefinierter externer Konten. Um Verbindungen zu externen Systemen einzurichten, können Sie neue externe Konten erstellen.
 
@@ -31,7 +31,7 @@ Sie können über Adobe Campaign **[!UICONTROL Explorer]** auf externe Konten zu
 >* Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) verwaltet ein spezielles externes **[!UICONTROL Full FDA]**-Konto (ffda) die Verbindung zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank ([!DNL Snowflake]).
 >
 
-## Campaign-spezifische externe Konten
+## Campaign-spezifische externe Konten {#ac-external-accounts}
 
 Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimmte Prozesse zu aktivieren und auszuführen.
 
@@ -91,7 +91,7 @@ Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campa
 
 Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der Kontrollinstanz verknüpft und miteinander verbunden. Transaktionsnachrichten-Vorlagen werden in der Ausführungsinstanz bereitgestellt. Weitere Informationen zur Message Center-Architektur finden Sie auf [dieser Seite](../architecture/architecture.md#transac-msg-archi).
 
-## Zugriff auf externe Systemkonten
+## Zugriff auf externe Systemkonten {#external-syst-external-accounts}
 
 * **Externe Datenbank (FDA)** - Ein externes Konto vom Typ **Externe Datenbank** wird verwendet, um über Federated Data Access (FDA) eine Verbindung mit einer externen Datenbank herzustellen. Weitere Informationen zur Option „Federated Data Access“ (FDA) finden Sie in [diesem Abschnitt](../connect/fda.md).
 
@@ -99,7 +99,7 @@ Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der 
 
 * **Twitter** – Ein externes Konto vom Typ **Twitter** wird verwendet, um Campaign mit Ihrem Twitter-Konto zu verbinden und Nachrichten in Ihrem Namen zu posten. Weitere Informationen zur Twitter-Integration finden Sie in [diesem Abschnitt](../connect/ac-tw.md).
 
-## Externe Konten zur Integration von Adobe-Lösungen
+## Externe Konten zur Integration von Adobe-Lösungen {#adobe-integration-external-accounts}
 
 * **Adobe Experience Cloud** - Ein externes Konto vom Typ **[!UICONTROL Adobe Experience Cloud]** wird verwendet, um Adobe Identity Management Service (IMS) für die Verbindung mit Adobe Campaign zu implementieren. Weitere Informationen zu Adobe Identity Management Service (IMS) finden Sie in [diesem Abschnitt](../start/connect.md#logon-to-ac).
 
@@ -108,13 +108,13 @@ Im Kontext der Transaktionsnachrichten werden die Ausführungsinstanzen mit der 
 * **Adobe Experience Manager** – Mit dem externen **[!UICONTROL AEM]**-Konto können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aem.md).
 
 
-## Externe CRM-Connector-Konten
+## Externe CRM-Connector-Konten {#crm-external-accounts}
 
 * **Microsoft Dynamics CRM** – Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import und Export von Microsoft Dynamics-Daten in Adobe Campaign. Weitere Informationen zur Integration von Adobe Campaign mit Microsoft Dynamics CRM finden Sie auf [dieser Seite](../connect/ac-ms-dyn.md).
 
 * **Salesforce.com** – Das externe **[!UICONTROL Salesforce CRM]**-Konto ermöglicht den Import und Export von Salesforce-Daten in Adobe Campaign. Weitere Informationen zur Integration von Adobe Campaign mit dem CRM Salesforce.com finden Sie auf [dieser Seite](../connect/ac-sfdc.md).
 
-## Übertragen von Daten mit externen Konten
+## Übertragen von Daten mit externen Konten {#transfer-data-external-accounts}
 
 Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** zum Importieren oder Exportieren von Daten in Adobe Campaign verwendet werden. Weitere Informationen zur **Dateiübertragung** in Workflows finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de).
 

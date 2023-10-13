@@ -1,17 +1,18 @@
 ---
 title: Datenbankstruktur aktualisieren
 description: Datenbankstruktur aktualisieren
+feature: Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: fc64f3ca-67f1-47b7-b154-9c9dd044192c
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 100%
 
 ---
 
-# Datenbankstruktur aktualisieren{#updating-the-database-structure}
+# Datenbankstruktur aktualisieren {#updating-the-database-structure}
 
 Um die an den Schemata vorgenommenen Änderungen anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistenten kann über **[!UICONTROL Tools > Erweitert > Datenbankstruktur aktualisieren]** zugegriffen werden. Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Scripts aus.
 

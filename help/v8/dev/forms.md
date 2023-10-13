@@ -1,24 +1,24 @@
 ---
 title: Formulare in Campaign
 description: Erfahren Sie, wie Sie Formulare anpassen
-feature: Web Forms
+feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '2574'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
-# Erste Schritte mit Formularen{#gs-ac-forms}
+# Erste Schritte mit Formularen {#gs-ac-forms}
 
 Wenn Sie ein Schema erstellen oder erweitern, müssen Sie die zugehörigen Eingabeformulare erstellen oder ändern, um diese Änderungen für die Endbenutzerinnen und -benutzer sichtbar zu machen.
 
 Mit einem Eingabeformular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten. Das Formular wird anhand seines Namens und seines Namespace identifiziert.
 
-Der Identifikationsschlüssel eines Formulars ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. &quot;cus:contact&quot;).
+Der Identifikationsschlüssel eines Formulars ist eine Zeichenfolge, die aus dem Namespace und dem Namen besteht, getrennt durch einen Doppelpunkt, z. B. &quot;cus:contact&quot;.
 
 ## Formulare bearbeiten
 

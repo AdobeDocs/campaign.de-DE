@@ -2,16 +2,17 @@
 product: campaign
 title: Unterbreiten von Angeboten für anonyme Profile (eingehende Interaktion)
 description: Hier erfahren Sie, wie Sie anonymen Profilen Angebote unterbreiten
+feature: Interaction, Offers
 role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
 
 ---
 
-# Anonyme Interaktionen{#anonymous-interactions}
+# Anonyme Interaktionen {#anonymous-interactions}
 
 ## Umgebung für anonyme Interaktionen {#environment-for-anonymous-interactions}
 

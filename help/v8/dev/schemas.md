@@ -1,14 +1,14 @@
 ---
 title: Mit Campaign-Schemata arbeiten
 description: Erste Schritte mit Schemata
-feature: Schema Extension
+feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -184,7 +184,7 @@ Beispiel:
 </key>
 ```
 
-In diesem Beispiel erstellen wir nicht anhand der Attribute **@autopk** oder **@autouuid** einen standardmäßigen Primärschlüssel namens &quot;id&quot;, sondern einen eigenen Primärschlüssel mit dem Namen &quot;householdId&quot;.
+In diesem Beispiel sollten Sie die **@autopk** oder **@autouuid** -Attribut einen standardmäßigen Primärschlüssel mit dem Namen &quot;id&quot;erstellen, geben wir unseren eigenen Primärschlüssel &quot;budgetId&quot;an.
 
 >[!CAUTION]
 >

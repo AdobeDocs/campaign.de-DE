@@ -5,14 +5,14 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 100%
 
 ---
 
-# Einstellungen für Transaktionsnachrichten
+# Einstellungen für Transaktionsnachrichten {#mc-settings}
 
 Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwalten von Trigger-Nachrichten entwickelt. Weitere Informationen zu Transaktionsnachrichten finden Sie in [diesem Abschnitt](../send/transactional.md).
 
@@ -20,15 +20,15 @@ Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwal
 
 ![](../assets/do-not-localize/speech.png) Wenn Sie Managed Cloud Services-Benutzer oder -Benutzerin sind, können Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
-## Berechtigungen definieren
+## Berechtigungen definieren {#mc-permissions}
 
-Um neue Benutzer für in Adobe Cloud gehostete Message Center-Ausführungsinstanzen zu erstellen, kontaktieren Sie die Adobe-Kundenunterstützung. Message Center-Benutzer benötigen für den Zugriff auf die Ordner &quot;Echtzeit-Ereignisse&quot; (nmsRtEvent) spezifische Berechtigungen.
+Um neue Benutzer für in Adobe Cloud gehostete Message-Center-Ausführungsinstanzen zu erstellen, kontaktieren Sie die Adobe-Kundenunterstützung. Message-Center-Benutzer benötigen für den Zugriff auf die Ordner &#39;Echtzeit-Ereignisse&#39; (nmsRtEvent) spezifische Berechtigungen.
 
-## Schemaerweiterungen
+## Schemaerweiterungen  {#mc-schema-ext}
 
 Alle Erweiterungen von Schemas, die von [technischen Workflows des Message Center-Moduls](#technical-workflows) in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
 
-## Push-Benachrichtigungen zu Transaktionen versenden
+## Push-Benachrichtigungen zu Transaktionen versenden {#mc-transactional-push}
 
 In Kombination mit dem [Mobile-App-Kanal-Modul](../send/push.md) können Sie Transaktionsnachrichten über Benachrichtigungen auf Mobilgeräten pushen.
 
@@ -59,7 +59,7 @@ Nachfolgend finden Sie ein Beispiel für eine Ereigniskonfiguration zum Senden v
          <urn:domEvent>
 
               <rtEvent wishedChannel="41" type="DELIVERY" registrationToken="2cefnefzef758398493srefzefkzq483974">
-                <mobileApp _operation=”none” uuid="com.adobe.NeoMiles"/>
+                <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
                     <url>http://www.adobe.com</url>
@@ -71,8 +71,6 @@ Nachfolgend finden Sie ein Beispiel für eine Ereigniskonfiguration zum Senden v
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
-
-
 
 ## Ereignisse bereinigen {#purge-events}
 

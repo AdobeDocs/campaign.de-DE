@@ -4,14 +4,14 @@ description: Integrierte Berichte
 feature: Reporting
 role: User
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 100%
 
 ---
 
-# Integrierte Berichte in Adobe Campaign{#ootb-reports}
+# Integrierte Berichte in Adobe Campaign {#ootb-reports}
 
 Auf dieser Seite finden Sie eine Liste der in Adobe Campaign integrierten Berichte, ihren Inhalt und den Kontext dieser Berichte. Adobe Campaign bietet eine Reihe integrierter Berichte, auf die über die Client-Konsole oder einen Internet-Browser zugegriffen werden kann.
 

@@ -3,11 +3,13 @@ product: campaign
 title: SQL-Daten-Management
 description: Erfahren Sie mehr über die Workflow-Aktivität "SQL-Daten-Management".
 feature: Workflows
+Role: User
+Level: Experienced
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -47,7 +49,7 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
    Mithilfe der Aktivität können Sie die folgenden Variablen im Script verwenden:
 
    * **activity.tableName**: SQL-Name der ausgehenden Arbeitstabelle.
-   * **task.incomingTransitionByName(‘name’).tableName**: SQL-Name der Arbeitstabelle der zu verwendenden eingehenden Transition (die Transition wird durch den Namen identifiziert).
+   * **task.incomingTransitionByName(&#39;name&#39;).tableName**: SQL-Name der Arbeitstabelle der zu verwendenden eingehenden Transition (die Transition wird durch ihren Namen identifiziert).
 
      >[!NOTE]
      >

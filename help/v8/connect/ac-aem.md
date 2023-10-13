@@ -5,14 +5,14 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 100%
 
 ---
 
-# Arbeiten mit Campaign und Adobe Experience Manager
+# Arbeiten mit Campaign und Adobe Experience Manager {#ac-aem}
 
 Die Integration von Adobe Campaign und Adobe Experience Manager ermöglicht es Ihnen, den Inhalt von E-Mail-Sendungen sowie von Formularen direkt in Adobe Experience Manager zu verwalten.
 

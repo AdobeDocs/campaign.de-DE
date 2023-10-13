@@ -5,14 +5,14 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: df08cdb90271f4d18fd37b8ae528ebd872d0ea63
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '2723'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# Best Practices für Datenmodelle{#data-model-best-practices}
+# Best Practices für Datenmodelle {#data-model-best-practices}
 
 In diesem Dokument werden die wichtigsten Empfehlungen beim Entwerfen Ihres Adobe Campaign-Datenmodells erläutert.
 
@@ -89,7 +89,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 | Kennung | Beschreibung | Best Practices |
 |--- |--- |--- |
 | ID | <ul><li>Die ID ist der physische Primärschlüssel einer Adobe Campaign-Tabelle. Bei integrierten Tabellen handelt es sich um eine Universally Unique ID (UUID).</li><li>Diese Kennung muss eindeutig sein. </li><li>Eine UUID kann in einer Schemadefinition sichtbar sein.</li></ul> | <ul><li>Automatisch erstellte Kennungen sollten nicht als Referenz in einem Workflow oder in einer Package-Definition verwendet werden.</li><li>Die ID in einer Tabelle ist eine UUID. Dieser Typ sollte nicht geändert werden.</li></ul> |
-| Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Ändern Sie den von Adobe Campaign erstellten Namen, wenn Sie das Objekt von einer Umgebung aus in einer anderen bereitstellen möchten.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Bestimmte reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk* usw.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces).</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen &quot; &quot;, Doppelpunkt &quot;:&quot; oder Bindestrich &quot;-&quot;. Alle diese Zeichen würden durch einen Unterstrich (_) ersetzt werden. Beispielsweise würden &quot;abc-def&quot; und &quot;abc:def&quot; als &quot;abc_def&quot; gespeichert werden und sich gegenseitig überschreiben.</li></ul> |
+| Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Ändern Sie den von Adobe Campaign erstellten Namen, wenn Sie das Objekt von einer Umgebung aus in einer anderen bereitstellen möchten.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Bestimmte reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk* usw.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces).</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen &quot;&quot;, Spalte &quot;halb&quot;:&quot;oder Bindestrich &quot;-&quot;. Alle diese Zeichen würden durch einen Unterstrich (_) ersetzt (erlaubt). Beispielsweise würden &quot;abc-def&quot;und &quot;abc:def&quot;als &quot;abc_def&quot;gespeichert und sich gegenseitig überschreiben.</li></ul> |
 | Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
 Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist der Primärschlüssel von Adobe Campaign eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden. [Weitere Informationen](../architecture/keys.md)
@@ -107,7 +107,7 @@ Dieser benutzerdefinierte Schlüssel ist der eigentliche Hauptschlüssel des Dat
 
 Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur Verfügung:
 * Kombination aus einem automatisch erstellten Schlüssel (ID) und einem internen Schlüssel (benutzerdefiniert). Diese Option ist interessant, wenn Ihr Systemschlüssel ein zusammengesetzter Schlüssel oder keine Ganzzahl ist. Mit Snowflake ermöglichen ganze Zahlen oder zeichenfolgenbasierte Schlüssel höhere Leistungen in großen Tabellen sowie in Verbindung mit anderen Tabellen.
-* Verwendung des Primärschlüssels als Primärschlüssel des externen Systems. Diese Lösung wird in der Regel bevorzugt, da sie das Importieren und Exportieren von Daten durch einen einheitlichen Schlüssel zwischen verschiedenen Systemen vereinfacht. **Autouuid** sollte deaktiviert werden, wenn der Schlüssel &quot;id&quot; heißt und mit externen Werten ausgefüllt wird (also nicht automatisch erstellt werden soll).
+* Verwendung des Primärschlüssels als Primärschlüssel des externen Systems. Diese Lösung wird in der Regel bevorzugt, da sie das Importieren und Exportieren von Daten durch einen einheitlichen Schlüssel zwischen verschiedenen Systemen vereinfacht. **Autouuid** sollte deaktiviert werden, wenn der Schlüssel &quot;id&quot;heißt und voraussichtlich mit externen Werten (nicht automatisch generiert) gefüllt wird.
 
 >[!CAUTION]
 >
@@ -129,7 +129,7 @@ Die Relation sollte entsprechend den tatsächlichen Daten in den Tabellen defini
 
 Benennen Sie die Relation konsequent nach der Tabelle: Der Name der Relation sollte Aufschluss über die ferne Tabelle geben.
 
-Benennen Sie eine Relation nicht mit &quot;id&quot; als Suffix. Benennen Sie sie beispielsweise &quot;transaction&quot; anstelle von &quot;transactionId&quot;.
+Benennen Sie einen Link nicht mit &quot;id&quot;als Suffix. Nennen Sie ihn beispielsweise &quot;transaction&quot; anstelle von &quot;transactionId&quot;.
 
 Standardmäßig erstellt Adobe Campaign eine Relation mit dem Primärschlüssel der externen Tabelle. Aus Gründen der Klarheit ist es besser, den Join in der Relationsdefinition explizit zu definieren.
 
@@ -183,7 +183,7 @@ Befolgen Sie die nachstehenden Best Practices, um eine bessere Leistung sicherzu
 
 ### Allgemeine Empfehlungen {#general-recommendations}
 
-* Vermeiden Sie die Verwendung von Operationen wie &quot;CONTAINS&quot; in Abfragen. Wenn Sie wissen, wonach gefiltert werden soll, wenden Sie dieselbe Bedingung mit &quot;EQUAL TO&quot; oder anderen spezifischen Filteroperatoren an.
+* Vermeiden Sie die Verwendung von Vorgängen wie &quot;CONTAINS&quot;in Abfragen. Wenn Sie wissen, wonach gefiltert werden soll, wenden Sie dieselbe Bedingung mit &quot;EQUAL TO&quot;oder anderen spezifischen Filteroperatoren an.
 * Vergewissern Sie sich, dass Prozesse wie Import und Export außerhalb der Geschäftszeiten ausgeführt werden.
 * Stellen Sie sicher, dass ein Zeitplan für alle täglichen Aktivitäten vorhanden ist und halten Sie sich an ihn.
 * Wenn einer oder mehrere der täglichen Prozesse fehlschlagen und sie am selben Tag noch ausgeführt werden müssen, stellen Sie sicher, dass beim Starten des manuellen Prozesses keine Konflikte auftreten, da dies die Systemleistung beeinträchtigen könnte.

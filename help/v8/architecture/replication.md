@@ -5,16 +5,16 @@ feature: Workflows, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 
 ---
 
-# Technische Workflows und Datenreplikation
+# Technische Workflows und Datenreplikation {#wf-data-replication}
 
-## Technische Workflows{#tech-wf}
+## Technische Workflows {#tech-wf}
 
 Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) bietet Adobe Campaign eine Reihe integrierter technischer Workflows. Technische Workflows führen Prozesse oder Aufträge aus und werden auf dem Server regelmäßig geplant.
 
@@ -37,7 +37,7 @@ Diese technischen Workflows sind im Knoten **[!UICONTROL Administration > Produk
 
 Bei Bedarf können Sie die Datensynchronisation manuell starten. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität **Planung** und wählen Sie **Aufgabe(n) jetzt bearbeiten**.
 
-## Datenreplikation{#data-replication}
+## Datenreplikation {#data-replication}
 
 Einige integrierte Tabellen werden mithilfe der oben beschriebenen dedizierten Workflows von der Campaign-Datenbank in die [!DNL Snowflake]-Cloud-Datenbank repliziert.
 
@@ -46,7 +46,7 @@ Erfahren Sie, welche Datenbanken Adobe Campaign v8 verwendet, warum Daten repli
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
 
-### Datenreplikationsrichtlinien{#data-replication-policies}
+### Datenreplikationsrichtlinien {#data-replication-policies}
 
 Replikationsrichtlinien richten sich nach der Größe der Tabellen. Einige Tabellen werden in Echtzeit repliziert, andere werden hingegen stündlich repliziert. Einige Tabellen erhalten inkrementelle Aktualisierungen, während andere ersetzt werden.
 
