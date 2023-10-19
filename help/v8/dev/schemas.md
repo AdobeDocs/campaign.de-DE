@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1269'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ Beispiel:
 </key>
 ```
 
-In diesem Beispiel sollten Sie die **@autopk** oder **@autouuid** -Attribut einen standardmäßigen Primärschlüssel mit dem Namen &quot;id&quot;erstellen, geben wir unseren eigenen Primärschlüssel &quot;budgetId&quot;an.
+In diesem Beispiel erstellen wir nicht anhand der Attribute **@autopk** oder **@autouuid** einen standardmäßigen Primärschlüssel namens „id“, sondern einen eigenen Primärschlüssel mit dem Namen „householdId“.
 
 >[!CAUTION]
 >
