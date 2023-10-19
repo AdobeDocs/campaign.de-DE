@@ -5,9 +5,9 @@ feature: Reporting
 role: User, Data Engineer
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '246'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,8 @@ Um Statistiken über Daten Ihrer Campaign-Datenbank zu erzeugen, können Sie Ber
 Um einen Analysebericht Ihrer Daten zu erstellen, zu veröffentlichen und zu versenden, durchlaufen Sie folgende Schritte:
 
 1. Erstellen eines neuen Berichts: siehe [Erstellen eines neuen Berichts](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-new-report.html?lang=de){target="_blank"},
-1. Zu analysierende Daten abrufen, siehe [Zu analysierende Daten erfassen](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/collecting-data-to-analyze.html?lang=de){target="_blank"}, and [Use the context](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/collecting-data-to-analyze.html?lang=de){target="_blank"},
-1. Definieren Sie den Inhalt des Berichts mit den Aktivitäten und ihren Containern, siehe [Erstellen einer Tabelle](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-table.html?lang=de){target="_blank"}, [Creating a chart](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=de){target="_blank"} and [Element layout](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/element-layout.html?lang=de){target="_blank"},
-1. Anzeigeoptionen konfigurieren: Anzeigetyp, freigegebene Berichte, siehe [Bedingten Inhalt definieren](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/defining-a-conditional-content.html?lang=de){target="_blank"} and [Configure access to the report](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=de){target="_blank"},
+1. Abrufen der zu analysierenden Daten: siehe [Erfassen von zu analysierenden Daten](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/collecting-data-to-analyze.html?lang=de){target="_blank"}, and [Use the context](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/collecting-data-to-analyze.html?lang=de){target="_blank"},
+1. Bestimmung des Berichtsinhalts mit Aktivitäten und deren Containern: siehe [Erstellen einer Tabelle](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-table.html?lang=de){target="_blank"}, [Creating a chart](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=de){target="_blank"} and [Element layout](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/element-layout.html?lang=de){target="_blank"},
+1. Konfigurieren der Anzeigeoptionen: Anzeigetyp, freigegebene Berichte: siehe [Definieren von bedingtem Inhalt](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/defining-a-conditional-content.html?lang=de){target="_blank"} and [Configure access to the report](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=de){target="_blank"},
 1. Veröffentlichen des Berichts (Veröffentlichungsassistent): siehe [Veröffentlichen des Berichts](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=de#publishing-the-report){target="_blank"},
 1. Konvertieren des Berichts: Export, Verlauf, Anzeige im Browser: siehe [Aktionen zu Berichten](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports.html?lang=de){target="_blank"}.
