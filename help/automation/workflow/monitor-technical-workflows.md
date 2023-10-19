@@ -6,9 +6,9 @@ feature: Workflows
 role: Admin
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -36,15 +36,15 @@ Folgen Sie je nach technischem Workflow den unten beschriebenen Schritten, um ei
 
 In diesem [Abschnitt](technical-workflows.md) erfahren Sie, was jeder technische Workflow bewirkt.
 
-Für **[!UICONTROL Datenbankbereinigungs-Workflow (&#39;cleanup&#39;)]**:
+**[!UICONTROL Datenbankbereinigungs-Workflow („cleanup“)]**:
 
 Vergewissern Sie sich im Protokoll, dass die verstrichene Zeit auch langfristig ungefähr konstant bleibt und andere Workflows nicht stört.
 
-Für **[!UICONTROL Tracking-Workflow (&#39;tracking&#39;)]**:
+**[!UICONTROL Tracking-Workflow („tracking“)]**:
 
 Vergewissern Sie sich, dass der Tracking-Workflow plangemäß ausgeführt wird (standardmäßig jede Stunde) und im Protokoll keine wiederkehrenden Fehler aufgezeigt werden. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](delivery.md).
 
-Für **[!UICONTROL Aktualisierung der Zustellbarkeit (&#39;deliverabilityUpdate&#39;)]**:
+**[!UICONTROL Aktualisierung der Zustellbarkeit („deliverabilityUpdate“)]**:
 
 1. Vergewissern Sie sich, dass der Workflow **[!UICONTROL Zustellbarkeitsaktualisierung]** täglich ausgeführt und erfolgreich abgeschlossen wird.
 1. Prüfen Sie im Protokoll, ob die Regeln regelmäßig aktualisiert werden.
@@ -64,7 +64,7 @@ Wenn ein Problem auftritt, sollte eine Warnung erzeugt und an die entsprechende 
 
 Vergewissern Sie sich, dass für jeden Benutzer eine gültige E-Mail-Adresse angegeben ist.
 
-Jeder Workflow, der ausgeführt werden sollte, damit die Plattform funktioniert, z. B. tägliche Datenimporte, sollte als &quot;Produktion&quot; deklariert (Kontrollkästchen) und fett gedruckt angezeigt werden.
+Alle Workflows, die zur Ausführung der Plattform erforderlich sind, wie etwa tägliche Datenimporte, sollten als „Produktion“ deklariert (Kontrollkästchen) und fett dargestellt werden.
 
 ## Workflow-Wartungsliste {#workflow-maintenance-list}
 
