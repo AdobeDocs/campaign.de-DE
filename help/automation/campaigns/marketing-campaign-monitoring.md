@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Überwachen von Marketing-Kampagnen {#monitor-marketing-campaigns}
 
-## Verfolgen einer Kampagne {#tracking-a-campaign}
+## Nachverfolgen einer Kampagne {#tracking-a-campaign}
 
 Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Vorgänge und deren Status an.
 
@@ -32,7 +32,7 @@ Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Vorgä
 
 * Die Workflows, die zur Generierung der Nachrichten an Dienstleister erstellt werden, werden in der Unterregisterkarte **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** aufgelistet. Klicken Sie auf das Symbol **[!UICONTROL Details]**, um den ausgewählten Workflow anzuzeigen.
 
-## Tracken von Sendungen {#delivery-tracking}
+## Nachverfolgen von Sendungen {#delivery-tracking}
 
 Eine Liste der Sendungen ist über die gleichnamige Schaltfläche in der Kampagnen-Rubrik verfügbar.****
 
