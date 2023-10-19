@@ -7,13 +7,13 @@ level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1145'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Workflow starten, anhalten {#starting-a-workflow}
+# Starten, Pausieren und Stoppen eines Workflows {#starting-a-workflow}
 
 Workflows werden grundsätzlich manuell gestartet, Nach dem Starten können sie jedoch inaktiv bleiben, je nachdem, welche Informationen über eine Planung (siehe [Planung](scheduler.md)) oder Aktivitätsplanung angegeben wurden.
 
@@ -81,7 +81,7 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
   Dieser Befehl erstellt eine neue, auf dem markierten Workflow basierende Workflow-Vorlage. Geben Sie im Feld **[!UICONTROL Ordner]** den gewünschten Speicherordner an.
 
 
-## Best Practices bei der Workflow-Ausführung {#workflow-execution-best-practices}
+## Best Practices für die Workflow-Ausführung {#workflow-execution-best-practices}
 
 Verbessern Sie die Stabilität Ihrer Instanz, indem Sie die folgenden Best Practices beachten:
 
