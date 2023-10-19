@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1276'
 ht-degree: 100%
 
@@ -227,7 +227,7 @@ Folgende Attribute werden übermittelt:
 * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
 * **[!UICONTROL Kontaktdatum]** (scheduling/@contactDate)
 
-## Verfolgen von Sendungen {#tracking-deliveries-in-adobe-campaign}
+## Nachverfolgen von Sendungen {#tracking-deliveries-in-adobe-campaign}
 
 Damit die Adobe Experience Cloud nach Versand der Nachrichten durch Adobe Campaign die Aktivitäten auf den Webseiten verfolgen kann, muss der entsprechende Connector in den Versandeigenschaften angegeben werden. Gehen Sie wie folgt vor:
 
