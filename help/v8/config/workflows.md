@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1625'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -153,11 +153,11 @@ Erfahren Sie, wie Sie eine E-Mail mit benutzerdefinierten Datenfeldern an Profil
 
 Und diese Seiten in der Dokumentation zu Campaign v7:
 
-* [Automatisierte Inhaltserstellung, -bearbeitung und -veröffentlichung](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html?lang=de){target="_blank"}
-Erfahren Sie, wie Sie die Erstellung und Bereitstellung eines Inhaltsbausteins mit dem Campaign Content Management-Add-on automatisieren.
+* [Automatische Erstellung, Bearbeitung und Veröffentlichung von Inhalten](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html?lang=de){target="_blank"}
+Erfahren Sie, wie Sie die Erstellung und den Versand eines Inhaltsbausteins mit dem Add-on für Content-Management in Campaign automatisieren.
 
 * [A/B-Tests](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html?lang=de){target="_blank"}
-Hier erfahren Sie, wie Sie mithilfe eines Zielgruppen-Workflows zwei E-Mail-Versandinhalte vergleichen. Nachricht und Text sind bei beiden Sendungen identisch – nur das Layout ist unterschiedlich. Die Zielpopulation wird in drei Gruppen aufgeteilt: zwei Testgruppen und die restliche Population. An jede Testgruppe wird eine andere Version des Versands gesendet.
+Erfahren Sie, wie Sie mithilfe eines Zielgruppen-Workflows Inhalte von zwei E-Mail-Sendungen vergleichen. Nachricht und Text sind bei beiden Sendungen identisch – nur das Layout ist unterschiedlich. Die Zielpopulation wird in drei Gruppen aufgeteilt: zwei Testgruppen und die restliche Population. An jede Testgruppe wird eine andere Version des Versands gesendet.
 
 ### Monitoring {#monitoring}
 
@@ -166,8 +166,8 @@ Hier erfahren Sie, wie Sie mithilfe eines Zielgruppen-Workflows zwei E-Mail-Vers
 * [Senden eines Berichts an eine Liste](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html?lang=de)
 Hier erfahren Sie, wie Sie einen monatlichen integrierten Bericht zu Tracking-Indikatoren im PDF-Format generieren und an eine Liste von Campaign-Benutzern senden.
 
-* [Monitoring Ihrer Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=de)
-Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen können, die &quot;ausgesetzt&quot;, &quot;angehalten&quot;oder &quot;fehlgeschlagen&quot;sind.
+* [Überwachen Ihrer Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=de)
+Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen können, die „ausgesetzt“, „angehalten“ oder „fehlerhaft“ sind.
 
 * [Senden von personalisierten Warnhinweisen an Benutzer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators.html?lang=de)
 Erfahren Sie, wie Sie Benutzern einen Warnhinweis senden, der den Namen der Profile enthält, welche einen Newsletter zwar geöffnet, aber nicht auf den darin enthaltenen Link geklickt haben.
@@ -204,7 +204,7 @@ Erfahren Sie, wie ein Workflow für den wiederholten Import von Profilen aus ein
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
 * [Abfrage der Empfängertabelle](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table.html?lang=de)
-Hier erfahren Sie, wie Sie die Namen und E-Mails der Empfänger abrufen können, deren E-Mail-Domain &quot;orange.co.uk&quot; lautet und die nicht in London leben.
+Erfahren Sie, wie Sie die Namen und E-Mails der Empfängerinnen und Empfänger abrufen können, deren E-Mail-Domain „orange.co.uk“ lautet und die nicht in London leben.
 
 * [Abfrage von Versandinformationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-delivery-info.html?lang=de)
 
