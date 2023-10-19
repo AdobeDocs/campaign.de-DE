@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '713'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -18,23 +18,23 @@ Adobe Campaign enthält ein vordefiniertes Datenmodell. Dieser Abschnitt enthäl
 
 Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschreiben:
 
-* **Empfängertabelle**: Das Datenmodell beruht auf einer Haupt-Tabelle, die standardmäßig die Empfängertabelle (**nmsRecipient**). In dieser Tabelle werden alle Marketing-Profile gespeichert. Weitere Informationen zur Empfängertabelle finden Sie unter [diesem Abschnitt](#ootb-profiles).
+* **Empfängertabelle**: Das Datenmodell basiert auf einer Haupttabelle, die standardmäßig die Empfängertabelle (**nmsRecipient**) ist. In dieser Tabelle werden alle Marketing-Profile gespeichert. Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](#ootb-profiles).
 
-* **Versandtabelle**: Diese Tabelle speichert einen Datensatz pro Versandaktion. Normalerweise handelt es sich um die Versandtabelle (**NmsDelivery**). in dieser Tabelle eine Versandaktion oder eine Versandvorlage. Er enthält alle erforderlichen Parameter zum Ausführen von Sendungen wie Zielgruppe, Inhalt usw. Jeder Datensatz wird wiederholt aktualisiert, um den Versandfortschritt widerzuspiegeln
+* **Versandtabelle**: Diese Tabelle speichert einen Eintrag pro Versandaktion. Normalerweise handelt es sich dabei um die Versandtabelle (**NmsDelivery**). in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Es enthält alle zum Ausführen von Sendungen erforderlichen Parameter wie Zielgruppe, Inhalt usw. Jeder Eintrag wird wiederholt aktualisiert, um den Versandfortschritt widerzuspiegeln
 
 * **Protokolltabelle**: In diesen Tabellen werden alle Protokolle gespeichert, die mit der Ausführung der Kampagnen verbunden sind.
 
-   * Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die wichtigste Tabelle der Versandlogs (**NmsBroadLogRcp**) enthält die Versandlogs für alle Empfänger.
-   * Die **nmsBroadlog** -Tabelle ist die größte Tabelle im System. Pro gesendeter Nachricht wird ein Datensatz gespeichert. Diese Datensätze werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und beim Löschen des Verlaufs gelöscht.
-   * Die wichtigste Tabelle der Trackinglogs (**NmsTrackingLogRcp**) speichert die Trackinglogs für alle Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
+   * Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle der Versandlogs (**NmsBroadLogRcp**) enthält die Versandlogs für alle Empfängerinnen und Empfänger.
+   * Die Tabelle **nmsBroadlog** ist die größte Tabelle im System. Pro gesendeter Nachricht wird ein Eintrag gespeichert. Diese Einträge werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und gelöscht, wenn der Verlauf gelöscht wird.
+   * Die Haupttabelle der Trackinglogs (**NmsTrackingLogRcp**) speichert die Trackinglogs für alle Empfängerinnen und Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängerinnen und Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
 
   Versand-Logs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben und änderbar ist. Daher wird dringend empfohlen, die Logs regelmäßig zu exportieren.
 
-* **Technische Tabellen**: Sammlung technischer Daten, die für den jeweiligen Prozess verwendet werden, einschließlich Benutzer- und Benutzerberechtigungen (**xtkGroup**), Benutzersitzungen (**xtkSessionInfo**), Ordner in der Explorer-Struktur (**XtkFolder**), Workflows (**xtkWorkflow**) und mehr.
+* **Technische Tabellen**: Diese Tabellen sammeln technische Daten, die für den jeweiligen Prozess verwendet werden, einschließlich Benutzende und Benutzerberechtigungen (**xtkGroup**), Benutzersitzungen (**xtkSessionInfo**), Ordner in der Explorer-Struktur (**XtkFolder**), Workflows (**xtkWorkflow**) und mehr.
 
 >[!NOTE]
 >
->Um auf die Beschreibung der einzelnen Tabellen zuzugreifen, navigieren Sie zu **Administration > Konfiguration > Datenschemata**, wählen Sie eine Ressource aus der Liste aus und klicken Sie auf die **Dokumentation** Registerkarte.
+>Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **Administration > Konfiguration > Datenschemata**, wählen Sie eine Ressource aus der Liste aus und klicken Sie auf die Registerkarte **Dokumentation**.
 
 Wenn Sie mit Adobe Campaign beginnen, müssen Sie das Standarddatenmodell evaluieren, um zu prüfen, welche Tabelle am besten zur Speicherung Ihrer Marketing-Daten geeignet ist.
 
