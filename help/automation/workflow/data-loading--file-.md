@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
-source-wordcount: '1146'
-ht-degree: 100%
+source-git-commit: d946d4a50a4fc13e848b22ee87b02a10b7dfd2ad
+workflow-type: tm+mt
+source-wordcount: '1169'
+ht-degree: 98%
 
 ---
 
@@ -51,6 +51,10 @@ Sie haben nun die Möglichkeit, allgemeine Formatierungsoptionen der Datei sowie
 In den allgemeinen Formatierungsoptionen kann beispielsweise die Art der Spaltenerkennung definiert werden (Kodierung der Datei, verwendete Trennzeichen etc.).
 
 Verschiedene Optionen zum Umgang mit den Spaltenwerten stehen zur Auswahl:
+
+>[!NOTE]
+>
+>Sie können beliebig viele Spalten hinzufügen. Die maximale Länge der Werte in jeder Spalte wird durch den ausgewählten Datentyp bestimmt.
 
 * **[!UICONTROL Spalte ignorieren]**: Spalte wird beim Laden der Daten nicht berücksichtigt.
 * **[!UICONTROL Datentyp]**: Angabe des in der Spalte erwarteten Datentyps.
