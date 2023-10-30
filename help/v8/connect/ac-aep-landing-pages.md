@@ -1,10 +1,11 @@
 ---
 title: Landingpages und Profilattribute von Campaign
 description: Erfahren Sie, wie Sie Adobe Campaign-Landingpages und Adobe Experience Platform-Profilattribute synchronisieren.
-feature: Platform Integration
+feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
-source-git-commit: 79faf36db774239477089c13c98cbf48a66752a3
+exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
+source-git-commit: a17c4325917ef1466bbb2c397aea55ebcf7fbcb5
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 100%
