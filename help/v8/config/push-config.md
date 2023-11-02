@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie Campaign Android- und iOS-SDKs mit Ihrer Mobi
 version: v8
 feature: Push
 role: Admin, Developer
-level: Intermediate, Experienced
+level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 100%

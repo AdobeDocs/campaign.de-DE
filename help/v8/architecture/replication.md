@@ -3,10 +3,10 @@ title: Technische Workflows und Datenreplikation
 description: Technische Workflows und Datenreplikation
 feature: Workflows, FFDA
 role: Developer
-level: Beginner, Intermediate, Experienced
+level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: ht
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Dieser Workflow repliziert die XS-Daten für ein bestimmtes externes Konto.
 
 Diese technischen Workflows sind im Knoten **[!UICONTROL Administration > Produktion > Technische Workflows > Vollständige FFDA-Replikation]** von Campaign Explorer verfügbar. **Sie dürfen nicht geändert werden.**
 
-Bei Bedarf können Sie die Datensynchronisation manuell starten. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität **Planung** und wählen Sie **Aufgabe(n) jetzt bearbeiten**.
+Bei Bedarf können Sie die Datensynchronisation manuell starten. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität **Planung** und wählen Sie **Ausstehende Aufgabe(n) ausführen**.
 
 ## Datenreplikation {#data-replication}
 

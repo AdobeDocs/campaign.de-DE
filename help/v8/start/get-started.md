@@ -2,11 +2,11 @@
 title: Erste Schritte mit Campaign v8
 description: Sind Sie neuer Benutzer von Adobe Campaign? Hier finden Sie die Dokumentation zur Inbetriebnahme der Software und zu den ersten Schritten in der Benutzeroberfläche.
 feature: Overview, Cross Channel Orchestration
-role: Admin, Developer, User
+role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
-workflow-type: ht
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 100%
 

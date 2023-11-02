@@ -3,10 +3,10 @@ title: Verwalten von Datenschutzanfragen in Campaign
 description: Erfahren Sie, wie Sie Datenschutzanfragen in Campaign verwalten.
 feature: Privacy
 role: Admin
-level: Beginner, Intermediate, Experienced
+level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
-workflow-type: ht
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 100%
 
@@ -143,9 +143,9 @@ Wenn Sie benutzerdefinierte Tabellen erstellt haben, für die eine Relation zur 
 
 Unten finden Sie die verschiedenen Status von Datenschutzanfragen in Adobe Campaign und deren Bedeutung:
 
-* **[!UICONTROL Neu]** / **[!UICONTROL Erneuter Versuch steht aus]**: Durchführung läuft, der Workflow hat die Anfrage noch nicht verarbeitet.
+* **[!UICONTROL Neu]** / **[!UICONTROL Weitere Versuche ausstehend]**: Durchführung läuft, der Workflow hat die Anfrage noch nicht verarbeitet.
 * **[!UICONTROL Verarbeitung läuft]** / **[!UICONTROL Erneuter Versuch läuft]**: Der Workflow verarbeitet gerade die Anfrage.
-* **[!UICONTROL Löschen steht aus]**: Der Workflow hat alle zu löschenden Empfängerdaten identifiziert.
+* **[!UICONTROL Ausstehende löschen]**: Der Workflow hat alle zu löschenden Empfängerdaten identifiziert.
 * **[!UICONTROL Löschvorgang läuft]**: Der Workflow führt gerade die Löschung durch.
 * **[!UICONTROL Beendet]**: Die Verarbeitung der Anfrage wurde ohne Fehler abgeschlossen.
 * **[!UICONTROL Fehler]**: Workflow ist fehlerhaft. Die Spalte **[!UICONTROL Anfragestatus]** in der Liste der Datenschutzanfragen zeigt den Grund an. Beispielsweise bedeutet **[!UICONTROL Fehlerdaten nicht gefunden]**, dass in der Datenbank keine Empfängerdaten gefunden wurden, die dem **[!UICONTROL Abstimmwert]** der betroffenen Person entsprechen.

@@ -3,12 +3,12 @@ title: Arbeiten mit Campaign und Microsoft Dynamics
 description: Erfahren Sie, wie Sie Campaign und Microsoft Dynamics verwenden können.
 feature: Microsoft CRM Integration
 role: Admin, User
-level: Beginner, Intermediate, Experienced
+level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Microsoft Dynamics 365
 
 ### Generieren der Microsoft Dynamics-Zertifikatschlüsselkennung und Schlüssel-ID {#config-certificate-key-id}
 
-Um die **Zertifikatschlüsselkennung (customKeyIdentifier)** und die **Schlüssel-ID (keyId)** abzurufen, müssen Sie ein Zertifikat hochladen. Zertifikate können beim Anfordern eines Tokens als Geheimnisse zum Nachweis der Identität der Anwendung verwendet werden. Sie können auch als öffentliche Schlüssel bezeichnet werden.
+Um die **Zertifikatschlüsselkennung (customKeyIdentifier)** und die **Schlüssel-ID (keyId)** abzurufen, müssen Sie ein Zertifikat hochladen. Zertifikate können als Geheimnisse zum Nachweis der Identität der Anwendung beim Anfordern eines Tokens verwendet werden. Sie können auch als öffentliche Schlüssel bezeichnet werden.
 
 Gehen Sie wie folgt vor:
 

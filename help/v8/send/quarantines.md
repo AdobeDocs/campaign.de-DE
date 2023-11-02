@@ -2,13 +2,13 @@
 title: Quarantäneverwaltung in Campaign
 description: Quarantäneverwaltung in Adobe Campaign
 feature: Profiles, Monitoring
-role: User, Developer
-level: Beginner, Intermediate
+role: User, Data Engineer
+level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: b783b1444457b3204fea35b613582642499acf65
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1235'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,11 +22,11 @@ Wenn die Adresse oder Telefonnummer von Empfängern in Quarantäne ist, werden d
 
 **Quarantäne** gilt nur für eine **E-Mail-Adresse**, eine **Telefonnummer** oder ein **Geräte-Token**, aber nicht für das Profil selbst. Wenn beispielsweise ein Profil mit einer in Quarantäne befindlichen E-Mail-Adresse eine neue Adresse angibt, kann es erneut in Versandzielgruppen aufgenommen werden. Wenn zwei Profile dieselbe Telefonnummer haben, sind beide betroffen, wenn die Nummer unter Quarantäne gestellt wird. Die unter Quarantäne gestellten Adressen oder Telefonnummern werden in den [Ausschlusslogs](#delivery-quarantines) (für einen Versand) oder in der [Quarantäneliste](#non-deliverable-bounces) (für die gesamte Plattform) angezeigt.
 
-Profile können auch auf der **Blockierungsliste** für einen bestimmten Kanal stehen, wie etwa nach einer Abmeldung (Opt-out). In diesem Fall werden diese Profile überhaupt nicht mehr kontaktiert. Hat ein Profil auf der Blockierungsliste für den E-Mail-Kanal zwei E-Mail-Adressen, werden folglich beide Adressen vom Versand ausgeschlossen. Im Bereich **[!UICONTROL Nicht mehr kontaktieren]** der Registerkarte **[!UICONTROL Allgemein]** des Profils können Sie überprüfen, ob sich ein Profil auf der Blockierungsliste für einen oder mehrere Kanäle befindet. [Weitere Informationen](../audiences/view-profiles.md)
+Profile können auch auf der **Blockierungsliste** für einen bestimmten Kanal stehen, wie etwa nach einer Abmeldung (Opt-out). In diesem Fall werden diese Profile überhaupt nicht mehr kontaktiert. Hat ein Profil auf der Blockierungsliste für den E-Mail-Kanal zwei E-Mail-Adressen, werden folglich beide Adressen vom Versand ausgeschlossen. Im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** der Registerkarte **[!UICONTROL Allgemein]** des Profils können Sie überprüfen, ob sich ein Profil auf der Blockierungsliste für einen oder mehrere Kanäle befindet. [Weitere Informationen](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->Wenn Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Schlüsselwort wie &quot;STOP&quot; antworten, wird ihre Adresse oder Telefonnummer als **[!UICONTROL Auf die Blockierungsliste gesetzt]** unter Quarantäne gestellt. Die jeweiligen Profile werden entsprechend aktualisiert.
+>Wenn Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Schlüsselwort wie &quot;STOP&quot; antworten, wird ihre Adresse oder Telefonnummer unter Quarantäne gestellt als **[!UICONTROL Auf die Blockierungsliste gesetzt]**. Die jeweiligen Profile werden entsprechend aktualisiert.
 
 <!--For the email channel, email addresses are quarantined. For the mobile app channel, device tokens are quarantined. For the SMS channel, phone numbers are quarantined.?-->
 
@@ -118,7 +118,7 @@ Dazu muss ein Workflow erstellt und der Quarantänetabelle eine Abfrage hinzugef
 
 Nachfolgend befinden sich die empfohlenen Richtlinien für diese Abfrage:
 
-* **Fehlertext (Quarantänetext)** enthält &quot;Momen_Code10_InvalidRecipient&quot;
+* **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
 * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
 * **Aktualisierungsstatus (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
 * **Aktualisierungsstatus (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
