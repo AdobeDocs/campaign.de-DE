@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
-source-git-commit: db27abf860b0744a4120166c68e2cc2ae8a3d172
-workflow-type: tm+mt
-source-wordcount: '373'
+source-git-commit: 4c787abbf9b13c08263e602930bc532d73e08a5a
+workflow-type: ht
+source-wordcount: '386'
 ht-degree: 100%
 
 ---
@@ -26,12 +26,14 @@ Adobe Campaign verfügt über die folgenden integrierten Zielgruppen-Mappings:
 
 | Name | Verwendung Verwendungszweck | Schema |
 |---|---|---|
-| Empfänger | Versand an Empfänger (integrierte Empfängertabelle) | nms:recipient |
+| Empfängerinnen und Empfänger | Versand an Empfänger (integrierte Empfängertabelle) | nms:recipient |
 | Besucher | Versand an Besucher, deren Profile beispielsweise über Empfehlungen (Viral Marketing) erfasst wurden. | mns:visitor |
 | Abonnements  | Versand richtet sich an Abonnenten eines Informationsdienstes wie z. B. einen Newsletter | nms:subscription |
 | Besucher-Abonnements | Versand richtet sich an Besucher, die einen Informationsdienst beziehen | nms:visitorSub |
 | Benutzer | Versand richtet sich an Adobe-Campaign-Benutzer | nms:operator |
 | Externe Datei | Versand basiert auf einer Datei, die alle notwendigen Informationen enthält | Ohne Schema oder Zielgruppe |
+| Abonnierte Anwendungen | Versand an Empfängerinnen und Empfänger, die eine Anwendung abonniert haben | nms:appSubscriptionRcp |
+
 
 ## Erstellen eines Zielgruppen-Mappings {#new-mapping}
 
