@@ -2,8 +2,8 @@
 title: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 description: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
-workflow-type: ht
+source-git-commit: 557a74dbfbd0af385cc5104801ce3ab91dd33a95
+workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
 
@@ -64,4 +64,4 @@ Als Campaign-Kundin bzw. -Kunde erhalten Sie mindestens dreißig (30) Tage im Vo
 
   Nein. Wir können keine Anfragen bezüglich Änderungen an der bestehenden Planung berücksichtigen, da dies wahrscheinlich das zugewiesene Upgrade-Ereignis für andere Kundinnen und Kunden stören würde.
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=de#support){target="_blank"}.
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=de#support){target="_blank"}..
