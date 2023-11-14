@@ -4,10 +4,10 @@ title: Künftige Änderungen am Push-Benachrichtigungskanal
 description: Künftige Änderungen am Push-Benachrichtigungskanal
 hide: true
 hidefromtoc: true
-source-git-commit: 4072421cd8f0f3ab3b15c4a475428a59503aa955
+source-git-commit: 9ff84e523e7de6f1d6bb4e8cd193d19743fcf90c
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 25%
+source-wordcount: '810'
+ht-degree: 24%
 
 ---
 
@@ -69,7 +69,7 @@ Um Ihre Umgebung auf HTTP v1 zu migrieren, führen Sie die folgenden Schritte au
 
 1. Klicken Sie auf **[!UICONTROL Beenden]** und danach auf **[!UICONTROL Speichern]**.
 
-Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachrichtigung weiter personalisieren können:
+Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachrichtigung weiter personalisieren können. Diese Optionen werden im Detail beschrieben [here](#fcm-apps).
 
 | Nachrichtentyp | Konfigurierbares Nachrichtenelement (FCM-Payload-Name) | Konfigurierbare Optionen (Name der FCM-Payload) |
 |:-:|:-:|:-:|
@@ -79,7 +79,7 @@ Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachric
 
 >[!NOTE]
 >
->Der Wechsel zur HTTP v1-API wird auf alle neuen Sendungen angewendet. Bereitstellungen, die wiederholt ausgeführt und noch verwendet werden, verwenden weiterhin die HTTP-API (frühere Version).
+>Sobald diese Änderungen auf all Ihren Server angewendet werden, verwenden alle neuen Push-Benachrichtigungen, die an Android-Geräte gesendet werden, die HTTP v1-API. Vorhandene Push-Sendungen, die wiederholt, in Bearbeitung und in Verwendung sind, verwenden weiterhin die HTTP-API (frühere Version).
 
 ### Wie wirkt sich dies auf meine Android-Apps aus? {#fcm-apps}
 
@@ -89,6 +89,7 @@ Mit HTTP v1 können Sie Ihre Push-Benachrichtigung jedoch mit **[!UICONTROL Zus�
 
 ![](assets/android-push-additional-options.png)
 
+Sie haben folgende Möglichkeiten:
 
 * Verwenden Sie die **[!UICONTROL Ticker]** -Feld, um den Ticker-Text Ihrer Benachrichtigung festzulegen.
 * Verwenden Sie die **[!UICONTROL Bild]** -Feld, um die URL des Bildes festzulegen, das in Ihrer Benachrichtigung angezeigt werden soll.
