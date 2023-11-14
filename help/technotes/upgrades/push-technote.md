@@ -4,20 +4,20 @@ title: Künftige Änderungen am Push-Benachrichtigungskanal
 description: Künftige Änderungen am Push-Benachrichtigungskanal
 hide: true
 hidefromtoc: true
-source-git-commit: fc274e1266d37611c8781a007ccb6a293a683c21
+source-git-commit: 5ed6a5c9c458381ef701428aeab146afe4788d58
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 24%
+source-wordcount: '857'
+ht-degree: 23%
 
 ---
 
 # Künftige Änderungen am Push-Benachrichtigungskanal {#push-upgrade}
 
-Sie können Campaign verwenden, um Push-Benachrichtigungen auf Android-Geräten zu senden. Dazu benötigt Campaign bestimmte externe Android-Konten und Abonnementdienste. Einige wichtige Änderungen am Android Firebase Cloud Messaging (FCM)-Dienst werden 2024 veröffentlicht und können sich auf Ihre Adobe Campaign-Implementierung auswirken.
+Sie können Campaign verwenden, um Push-Benachrichtigungen auf Android-Geräten zu senden. Dazu benötigt Campaign bestimmte Abonnementdienste. Einige wichtige Änderungen am Android Firebase Cloud Messaging (FCM)-Dienst werden 2024 veröffentlicht und können sich auf Ihre Adobe Campaign-Implementierung auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen.
 
 ## Was hat sich geändert? {#fcm-changes}
 
-Im Rahmen der kontinuierlichen Bemühungen von Google, seine Dienste zu verbessern, werden die veralteten FCM-APIs eingestellt auf **20. Juni 2024**. Weitere Informationen zum Firebase Cloud Messaging-HTTP-Protokoll finden Sie in [Google-Dokumentation](https://firebase.google.com/docs/cloud-messaging/http-server-ref){target="_blank"}.
+Im Rahmen der kontinuierlichen Bemühungen von Google, seine Dienste zu verbessern, werden die veralteten FCM-APIs eingestellt auf **20. Juni 2024**. Weitere Informationen zum Firebase Cloud Messaging-HTTP-Protokoll finden Sie in [Dokumentation zu Google Firebase](https://firebase.google.com/docs/cloud-messaging/http-server-ref){target="_blank"}.
 
 Adobe Campaign Classic v7 und Adobe Campaign v8 unterstützen bereits die neuesten APIs zum Senden von Push-Benachrichtigungen. Einige alte Implementierungen sind jedoch weiterhin auf die Legacy-APIs angewiesen. Diese Implementierungen müssen aktualisiert werden.
 
@@ -30,30 +30,33 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 ![](assets/filter-services-fcm.png)
 
 
-* Wenn eine Ihrer aktiven Push-Benachrichtigungskampagnen die Variable **HTTP (veraltet)** API verwenden, wird sich diese Änderung direkt auf Ihr Setup auswirken. Sie müssen Ihre aktuellen Konfigurationen überprüfen und zu den neueren APIs migrieren, wie unten beschrieben.
+* Wenn einer Ihrer aktiven Push-Benachrichtigungsdienste die **HTTP (veraltet)** API verwenden, wird sich diese Änderung direkt auf Ihr Setup auswirken. Sie müssen Ihre aktuellen Konfigurationen überprüfen und zu den neueren APIs migrieren, wie unten beschrieben.
 
-* Wenn Ihr Setup ausschließlich die Funktion **HTTP v1** API für Android-Push-Benachrichtigungen verwenden, sind Sie bereits konform und es sind keine weiteren Maßnahmen Ihrerseits erforderlich.
+* Wenn Ihr Setup ausschließlich die Funktion **HTTP v1** API für Android-Push-Benachrichtigungen verwenden, sind Sie bereits konform und es ist kein weiteres Vorgehen Ihrerseits erforderlich.
 
-## Wie wird die Migration durchgeführt?{#fcm-migration-procedure}
+## Wie wird die Migration durchgeführt? {#fcm-migration-procedure}
 
-### Voraussetzungen{#fcm-migration-prerequisites}
+### Voraussetzungen {#fcm-migration-prerequisites}
 
-* Für Campaign Classic v7 wurde die Unterstützung von HTTP v1 in Version 20.3.1 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, besteht eine Voraussetzung für die Migration auf HTTP v1 darin, Ihre Umgebung auf die [neueste Campaign Classic-Build](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"}. Für Campaign v8 wird HTTP v1 von allen Versionen unterstützt. Es ist kein Upgrade erforderlich.
+* Für Campaign Classic v7 wurde die Unterstützung von HTTP v1 in Version 20.3.1 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, besteht eine Voraussetzung für die Migration auf HTTP v1 darin, Ihre Umgebung auf die [neueste Campaign Classic-Build](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"}. Für Campaign v8 wird HTTP v1 von allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
 
-* Um die Migration durchzuführen, ist die JSON-Kontodatei des Android Firebase Admin SDK-Dienstes erforderlich, damit die Mobile App auf HTTPv1 verschoben wird. Mehr dazu erfahren Sie auf [dieser Seite](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+* Die JSON-Kontodatei des Android Firebase Admin SDK-Dienstes ist erforderlich, damit die Mobile App auf HTTP v1 verschoben wird. Erfahren Sie, wie Sie diese Datei in [Dokumentation zu Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* Wenden Sie sich bei Hybrid-, gehosteten und Managed Services-Bereitstellungen an Adobe, um Ihren Echtzeitausführungsserver (RT) zu aktualisieren.
+* Bei Hybrid-, gehosteten und Managed Services-Bereitstellungen wenden Sie sich neben dem unten beschriebenen Migrationsverfahren an Adobe, um Ihren Echtzeit-Ausführungsserver (RT) zu aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
+
+* Als On-Premise-Benutzer von Campaign Classic v7 müssen Sie sowohl die Marketing- als auch die Echtzeit-Ausführungsserver aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
 
 ### Migrationsverfahren {#fcm-migration-steps}
 
-Um Ihre Umgebung auf HTTP v1 zu migrieren, führen Sie die folgenden Schritte auf Ihren Marketing- und Echtzeitausführungsservern aus:
+Gehen Sie wie folgt vor, um Ihre Umgebung auf HTTP v1 zu migrieren:
 
 1. Navigieren Sie zu Ihrer Liste von **Dienste und Abonnements**.
-1. Suchen Sie alle Mobile Apps mithilfe der **HTTP (veraltet)** API-Version.
+1. Auflisten aller Mobile Apps mit **HTTP (veraltet)** API-Version.
 1. Legen Sie für jede dieser Mobile Apps die Variable **API-Version** nach **HTTP v1**.
 1. Klicken Sie auf **[!UICONTROL Projekt-JSON-Datei laden , um Projektdetails zu extrahieren..]** -Link, um Ihre JSON-Schlüsseldatei direkt zu laden.
 
    Sie können auch die folgenden Details manuell eingeben:
+
    * **[!UICONTROL Projektkennung]**
    * **[!UICONTROL Privater Schlüssel]**
    * **[!UICONTROL Client-E-Mail]**
