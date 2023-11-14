@@ -4,7 +4,7 @@ title: Künftige Änderungen am Push-Benachrichtigungskanal
 description: Künftige Änderungen am Push-Benachrichtigungskanal
 hide: true
 hidefromtoc: true
-source-git-commit: 9ff84e523e7de6f1d6bb4e8cd193d19743fcf90c
+source-git-commit: fc274e1266d37611c8781a007ccb6a293a683c21
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 24%
@@ -49,11 +49,8 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 Um Ihre Umgebung auf HTTP v1 zu migrieren, führen Sie die folgenden Schritte auf Ihren Marketing- und Echtzeitausführungsservern aus:
 
 1. Navigieren Sie zu Ihrer Liste von **Dienste und Abonnements**.
-
 1. Suchen Sie alle Mobile Apps mithilfe der **HTTP (veraltet)** API-Version.
-
 1. Legen Sie für jede dieser Mobile Apps die Variable **API-Version** nach **HTTP v1**.
-
 1. Klicken Sie auf **[!UICONTROL Projekt-JSON-Datei laden , um Projektdetails zu extrahieren..]** -Link, um Ihre JSON-Schlüsseldatei direkt zu laden.
 
    Sie können auch die folgenden Details manuell eingeben:
@@ -64,9 +61,7 @@ Um Ihre Umgebung auf HTTP v1 zu migrieren, führen Sie die folgenden Schritte au
    ![](assets/android-http-v1-config.png)
 
 1. Klicken Sie auf **[!UICONTROL Verbindung testen]**, um zu prüfen, ob Ihre Konfiguration korrekt ist und ob der Marketing-Server Zugriff auf den FCM-Server hat. Beachten Sie bei Mid-Sourcing-Bereitstellungen, dass die Variable **[!UICONTROL Verbindung testen]** kann nicht überprüfen, ob der Server Zugriff auf den Android Firebase Cloud Messaging (FCM)-Dienst hat.
-
 1. Bei Bedarf können Sie die Inhalte von Push-Nachrichten mit bestimmten **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar; ein Teil der Payload der Nachricht wird an das Mobilgerät gesendet.
-
 1. Klicken Sie auf **[!UICONTROL Beenden]** und danach auf **[!UICONTROL Speichern]**.
 
 Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachrichtigung weiter personalisieren können. Diese Optionen werden im Detail beschrieben [here](#fcm-apps).
