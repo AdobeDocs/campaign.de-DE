@@ -2,12 +2,17 @@
 product: campaign
 title: Künftige Änderungen am Push-Benachrichtigungskanal
 description: Künftige Änderungen am Push-Benachrichtigungskanal
+feature: Push
+role: Admin
+level: Experienced
+badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 hide: true
 hidefromtoc: true
-source-git-commit: 5ed6a5c9c458381ef701428aeab146afe4788d58
+source-git-commit: 65b8d84e600e1814484fa81fb814475c0a8b9296
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 23%
+source-wordcount: '869'
+ht-degree: 24%
 
 ---
 
