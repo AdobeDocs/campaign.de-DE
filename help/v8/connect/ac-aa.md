@@ -176,7 +176,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
    >[!IMPORTANT]
    >
-   >Diese Konfigurationsoption sollte erfahrenen Nutzern vorbehalten bleiben, da Fehler in der Formel dazu führen können, dass der Nachrichtenversand blockiert wird.
+   >Diese Konfigurationsoption sollte erfahrenen Nutzern vorbehalten bleiben, da Fehler in der Formel dazu führen können, dass die Nachrichtensendungen blockiert wird.
 
 1. Im Tab **[!UICONTROL Erweitert]** können Sie fortgeschrittene Parameter ändern.
 
@@ -240,7 +240,7 @@ Damit die Adobe Experience Cloud nach Versand der Nachrichten durch Adobe Campai
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
-1. Jetzt können Sie Ihre Nachrichten senden und auf den entsprechenden Bericht in Adobe Analytics zugreifen.
+1. Sie können jetzt Ihren Versand durchführen und Ihren Bericht dazu in Adobe Analytics abrufen.
 
 
 **Verwandte Themen**
