@@ -22,7 +22,7 @@ Campaign v8 Enterprise (FFDA) bietet eine End-to-End-Skalierung bei jedem Schrit
 
 * Skalieren Sie die Datenmenge, die Sie verarbeiten können (bis 8 TB)
 * Skalieren Sie die Leistung von Abfragen für Segmentierung und Zielgruppenbestimmung, aber auch für Datenaufnahme und -abgabe
-* Skalieren der Sendungsvorbereitung (von Stunden auf Minuten)
+* Skalieren der Versandvorbereitung (von Stunden auf Minuten)
 
 Dies ist eine grundlegende Änderung der Software-Architektur. Die Daten sind jetzt remote und Campaign führt die gesamten Daten, einschließlich Profilen, zusammen. Die [!DNL Campaign]-Prozesse skalieren jetzt durchgängig, vom Targeting bis zur Ausführung der Nachricht: Datenaufnahme, Segmentierung, Zielgruppenbestimmung, Abfragen und Sendungen laufen jetzt typischerweise in Minuten ab. Diese neue Version löst die ganze Herausforderung der Skalierung und bewahrt dabei den gleichen Grad an Flexibilität und Erweiterbarkeit. Die Anzahl der Profile ist nahezu unbegrenzt, und die Datenspeicherung kann verlängert werden.
 
