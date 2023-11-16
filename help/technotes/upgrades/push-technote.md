@@ -12,7 +12,7 @@ hidefromtoc: true
 source-git-commit: 65b8d84e600e1814484fa81fb814475c0a8b9296
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
@@ -86,7 +86,7 @@ Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachric
 
 ### Wie wirkt sich dies auf meine Android-Apps aus? {#fcm-apps}
 
-Es sind keine spezifischen Änderungen am Code der Android Mobile Apps erforderlich und das Benachrichtigungsverhalten sollte sich nicht ändern.
+Es sind keine spezifischen Änderungen am Code der Android Mobile Apps erforderlich, und das Benachrichtigungsverhalten sollte sich nicht ändern.
 
 Mit HTTP v1 können Sie Ihre Push-Benachrichtigung jedoch mit **[!UICONTROL Zusätzliche Optionen für HTTPV1]**.
 

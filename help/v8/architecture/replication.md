@@ -16,7 +16,7 @@ ht-degree: 96%
 
 ## Technische Workflows {#tech-wf}
 
-Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) bietet Adobe Campaign eine Reihe integrierter technischer Workflows. Technische Workflows führen Prozesse oder Aufträge aus und werden auf dem Server regelmäßig geplant.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) bietet Adobe Campaign eine Reihe integrierter technischer Workflows. Technische Workflows führen Prozesse oder Vorgänge aus und werden auf dem Server regelmäßig geplant.
 
 Solche Workflows führen Operationen zur Datenbankwartung aus, nutzen die Tracking-Informationen in den Versand-Logs, erstellen wiederkehrende Kampagnen und mehr.
 
