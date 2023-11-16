@@ -55,9 +55,9 @@ Der Zugriff auf Berichte über Listen, Dienste, Angebote etc. erfolgt auf die gl
 ![](assets/reporting-on-offer.png)
 
 
-## Versandberichte {#reports-on-deliveries}
+## Sendungsberichte {#reports-on-deliveries}
 
-Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
+Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
 Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschnitt](delivery-reports.md).
 
