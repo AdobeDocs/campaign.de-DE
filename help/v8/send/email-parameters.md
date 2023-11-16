@@ -69,7 +69,7 @@ Beachten Sie die folgenden Besonderheiten und Empfehlungen:
 
 ## Auswählen von Nachrichtenformaten {#selecting-message-formats}
 
-Sie können das Format der zu versendenden E-Mails konfigurieren. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Eigenschaften]** und begeben Sie sich in den Tab .
+Sie können das Format der gesendeten E-Mail-Nachrichten ändern. Bearbeiten Sie dazu die Eigenschaften des Versands und klicken Sie auf die Registerkarte **[!UICONTROL Versand]**.
 
 ![](assets/email-message-format.png)
 
@@ -132,7 +132,7 @@ Werte werden bei Bedarf automatisch verschlüsselt.
 
 >[!IMPORTANT]
 >
->Das Hinzufügen zusätzlicher SMTP-Header ist eine Aufgabe für erfahrene Benutzer.
+>Das Hinzufügen eines Skripts zum Einfügen zusätzlicher SMTP-Header ist fortgeschrittenen Benutzern vorbehalten.
 >
 >Die Syntax des Scripts muss die Anforderungen für diesen Inhaltstyp (keine überflüssigen Leerzeichen, keine Leerzeilen usw.) erfüllen.
 
