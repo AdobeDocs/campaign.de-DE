@@ -34,7 +34,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Zurzeit ist Campaign v8 nur in Managed Cloud Services verfügbar, die vollständig von Adobe gehostet werden.
 
-1. **Wie kann ich den E-Mail-Versand optimieren?**
+1. **Wie kann ich die Zustellbarkeit von E-Mails verbessern?**
 
    Die Zustellbarkeit von E-Mails, ein wichtiger Faktor für den Erfolg jedes Marketing-Programms, unterliegt ständig wechselnden Kriterien und Regeln. Eine effektive Navigation in dieser digitalen Welt erfordert eine regelmäßige Abstimmung Ihrer E-Mail-Strategie unter Berücksichtigung der wichtigsten Trends mit Blick auf die Zustellbarkeit, um Ihre Audiences optimal zu erreichen.
 
@@ -44,7 +44,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
 1. **Wie weiß ich, dass mein Versand fehlerfrei durchgeführt wird?**
 
-   Adobe Campaign ist mit einer Reihe von Dashboards und Tools zur Überwachung des E-Mail-Versands ausgestattet.
+   Adobe Campaign ist mit einer Reihe von Dashboards und Tools zur Überwachung von E-Mail-Sendungen ausgestattet.
 
    [Lesen Sie die Dokumentation zu Campaign Classic v7, um zu erfahren](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=de){target="_blank"}, wie Sie dafür sorgen, dass Ihre Nachrichten gesendet werden, und die Ausführung überwachen sowie Fehler beheben können.
 
@@ -85,4 +85,4 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Um in diesem neuen System ein Problem zu melden oder eine Chat-Sitzung zu starten, verbinden Sie sich mit [Adobe Admin Console](https://adminConsole.adobe.com/overview){target="_blank"}.
 
-   Das System erfordert für jeden Benutzer ein individuelles Konto mit den entsprechenden Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht mit Ihrer Adobe ID anmelden können, fordern Sie über Experience League Zugriff an. Unser Kundenunterstützungs-Team wird den Zugriff so schnell wie möglich einrichten. [Weitere Informationen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
+   Das System erfordert für jeden Benutzer ein individuelles Konto mit den entsprechenden Berechtigungen. Wenn Sie sich nicht mit Ihrer Adobe ID anmelden können, beantragen Sie den Zugang über die Experience League, und das Kundenunterstützungs-Team wird ihn so schnell wie möglich einrichten. [Weitere Informationen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
