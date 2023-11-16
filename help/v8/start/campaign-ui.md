@@ -58,7 +58,7 @@ Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICO
 
 ## Verwenden eines Webbrowsers {#web-browser}
 
-Sie können auch über einen Webbrowser auf eine Untergruppe von Campaign-Funktionen zugreifen.
+Sie können auch über einen Webbrowser auf eine Teilmenge von Campaign-Funktionen zugreifen.
 
 Die Benutzeroberfläche für den Web-Zugriff ähnelt der Benutzeroberfläche der Konsole. Von einem Browser aus können Sie dieselben Funktionen zum Navigieren und Anzeigen wie in der Konsole verwenden, aber Sie können nur einen reduzierten Satz von Aktionen für Kampagnen durchführen. Sie können beispielsweise Kampagnen anzeigen und abbrechen, aber keine Kampagnen ändern.
 
