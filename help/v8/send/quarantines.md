@@ -6,15 +6,15 @@ role: User, Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1235'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Quarantäne {#quarantine-management}
 
-Adobe Campaign verwaltet für Online-Kanäle (E-Mail, SMS, Push-Benachrichtigung) eine Liste von unter Quarantäne gestellten Adressen. Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Providern auf eine Blockierungsliste gesetzt zu werden. Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus dem Versand ausgeschlossen werden.
+Adobe Campaign verwaltet für Online-Kanäle (E-Mail, SMS, Push-Benachrichtigung) eine Liste von unter Quarantäne gestellten Adressen. Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Providern auf eine Blockierungsliste gesetzt zu werden. Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus den Sendungen ausgeschlossen werden.
 
 Wenn die Adresse oder Telefonnummer von Empfängern in Quarantäne ist, werden diese während der Versandanalyse von der Zielgruppe ausgeschlossen: Dann können Sie diesen Kontakten keine Marketing-Nachrichten, einschließlich automatisierter Workflow-E-Mails, senden. Sind diese in Quarantäne befindlichen Adressen auch in Listen enthalten, werden sie beim Versand an diese Listen ausgeschlossen. Eine E-Mail-Adresse kann unter Quarantäne gestellt werden, wenn beispielsweise das Postfach voll ist, die E-Mail-Adresse nicht existiert oder der E-Mail-Server nicht verfügbar ist.
 
@@ -26,7 +26,7 @@ Profile können auch auf der **Blockierungsliste** für einen bestimmten Kanal s
 
 >[!NOTE]
 >
->Wenn Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Schlüsselwort wie &quot;STOP&quot; antworten, wird ihre Adresse oder Telefonnummer unter Quarantäne gestellt als **[!UICONTROL Auf die Blockierungsliste gesetzt]**. Die jeweiligen Profile werden entsprechend aktualisiert.
+>Wenn Empfängerinnen oder Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Schlüsselwort wie „STOP“ antworten, wird ihre Adresse oder Telefonnummer als **[!UICONTROL Auf die Blockierungsliste gesetzt]** unter Quarantäne gestellt. Die jeweiligen Profile werden entsprechend aktualisiert.
 
 <!--For the email channel, email addresses are quarantined. For the mobile app channel, device tokens are quarantined. For the SMS channel, phone numbers are quarantined.?-->
 
