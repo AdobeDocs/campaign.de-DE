@@ -6,7 +6,7 @@ role: User
 level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '693'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Beispiel für Ereignisdaten:
 
 Um Transaktionsnachrichten-Ereignisse zu verarbeiten, werden die folgenden Schritte auf der/den Ausführungsinstanz(en) ausgeführt:
 
-1. [Ereignisabruf](#event-collection)
+1. [Ereignissammlung](#event-collection)
 1. [Weiterleitung des Ereignisses zu einer Nachrichtenvorlage](#routing-towards-a-template)
 1. Anreicherung des Ereignisses mit Personalisierungsdaten
 1. [Versandausführung](delivery-execution.md)
