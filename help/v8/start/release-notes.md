@@ -35,7 +35,7 @@ _30. Juni 2023_
 
 Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser wird durch ein robustes Framework gestützt, das auf moderner Spitzentechnologie aufbaut. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).
 
-Weitere Informationen sind in der [entsprechenden Dokumentation](../send/push-data-collection.md) zu finden.
+Weitere Informationen finden Sie in der [entsprechenden Dokumentation](../send/push-data-collection.md).
 
 
 
@@ -85,7 +85,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 **Verbesserungen bei der Sicherheit**
 
 * Ab Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert und gesichert. Technische Benutzerinnen bzw. Benutzer müssen jetzt das Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
-* Ab der kommenden Version 8.6 dürfen Sie keine Benutzenden mehr über die Campaign-Client-Konsole erstellen. Wenn Sie die native Authentifizierung mit Login/Passwort verwenden, müssen Sie Ihre Benutzenden auf das Adobe Identity Management System (IMS) migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/upgrades/migrate-users-to-ims.md), wie Sie alte Benutzende migrieren können.
+* Ab der kommenden Version v8.6 dürfen Sie keine Benutzenden mehr über die Campaign-Client-Konsole erstellen. Wenn Sie die native Authentifizierung mit Login/Passwort verwenden, müssen Sie Ihre Benutzenden auf das Adobe Identity Management System (IMS) migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/upgrades/migrate-users-to-ims.md), wie Sie alte Benutzende migrieren können.
 * Mehrere Drittanbieter-Tools wurden aktualisiert, um die Sicherheit zu optimieren.
 
 **Aktualisierungen zur Kompatibilität**
@@ -149,7 +149,7 @@ _27. Januar 2023_
 
 * Fehlerkorrektur: Es wurde ein Synchronisierungsproblem von Versandindikatoren zwischen dem Marketing-Server und dem Mid-Sourcing-Server behoben. (NEO-50724) <!--OKKKK-->
 * Fehlerkorrektur: Es wurde ein Problem behoben, das beim Export eines Workflows zu einem Fehler führen konnte. (NEO-50555) <!--OKKKK-->
-* Fehlerkorrektur: Es wurde ein Problem beim Erweitern eines zuvor erweiterten Schemas behoben. (NEO-49118) <!--OKKKK-->
+* Ein Problem bei der Erweiterung eines Schemas, das zuvor erweitert wurde, wurde behoben. (NEO-49118) <!--OKKKK-->
 * Fehlerkorrektur: Es wurde ein Problem bei der Verwendung von zwei Anreicherungsaktivitäten mit derselben Kennung in der Link-Definition behoben. (NEO-48851)
 * Fehlerkorrektur: Es wurden zwei Fehler bei der Versandvorbereitung behoben. Die Versandvorbereitung konnte fehlschlagen, wenn die Anzahl der bearbeiteten potenziellen Angebote zu hoch war. Das zweite Problem trat auf, wenn die Bild-URLs als URLs definiert waren, die in einem Versand im Textformat nachverfolgt werden sollten. (NEO-48807) <!--OKKKK-->
 * Fehlerkorrektur: Es wurde ein Problem behoben, das zu Workflow-Fehlern führen konnte, wodurch der im externen Konto definierte Warehouse-Name für Nicht-FFDA-Konten von einem Workflow überschrieben werden konnte. (NEO-43209) <!--OKKKK-->
