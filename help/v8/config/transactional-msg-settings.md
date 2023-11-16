@@ -26,7 +26,7 @@ Um neue Benutzerinnen und Benutzer für in Adobe Cloud gehostete Message-Center-
 
 ## Schemaerweiterungen  {#mc-schema-ext}
 
-Alle Erweiterungen von Schemas, die von [technischen Workflows des Message Center-Moduls](#technical-workflows) in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
+Alle Schemaerweiterungen, die von [technischen Workflows des Message Center-Moduls](#technical-workflows) in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
 
 ## Push-Benachrichtigungen zu Transaktionen versenden {#mc-transactional-push}
 
@@ -95,9 +95,9 @@ In der Kontrollinstanz müssen Sie für jedes externe Konto der **[!UICONTROL Me
 
 In der/den Ausführungsinstanz(en) müssen die folgenden technischen Workflows gestartet werden:
 
-* **[!UICONTROL Verarbeitung der Batch-Ereignisse]** (interner Name **[!UICONTROL batchEventsProcessing]**): teilt die Batch-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
-* **[!UICONTROL Verarbeitung der Echtzeit-Ereignisse]** (interner Name **[!UICONTROL rtEventsProcessing]**): teilt die Echtzeit-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
-* **[!UICONTROL Update des Ereignisstatus]** (interner Name **[!UICONTROL updateEventStatus]**): ordnet jedem Ereignis einen Status zu.
+* **[!UICONTROL Batch-Ereignisse verarbeiten]** (interner Name **[!UICONTROL batchEventsProcessing]** ): Mit diesem Workflow schlüsseln Sie Batch-Ereignisse in einer Warteschlange auf, bevor sie mit einer Nachrichtenvorlage verknüpft werden.
+* **[!UICONTROL Echtzeitereignisse verarbeiten]** (interner Name **[!UICONTROL rtEventsProcessing]**): Mit diesem Workflow schlüsseln Sie Echtzeitereignisse in einer Warteschlange auf, bevor sie mit einer Nachrichtenvorlage verknüpft werden.
+* **[!UICONTROL Ereignisstatus aktualisieren]**(interner Name: **[!UICONTROL updateEventStatus]**): Mit diesem Workflow weisen Sie dem Ereignis einen Status zu.
 
   Mögliche Ereignisstatus sind:
 
