@@ -254,4 +254,4 @@ Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-L�
 
 Nachdem Sie Ihre App in der Datenerfassung erfolgreich konfiguriert haben, können Sie jetzt Push-Benachrichtigungen in Adobe Campaign erstellen und senden.
 
-Auf [dieser Seite](push.md#push-create) finden Sie die detaillierten Elemente zur Bereitstellung von iOS- und Android-Benachrichtigungen.
+Auf [dieser Seite](push.md#push-create) finden Sie die detaillierten Elemente, die speziell für den Versand von iOS- und Android-Benachrichtigungen gelten.
