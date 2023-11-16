@@ -14,9 +14,9 @@ ht-degree: 100%
 
 # Erstellen und Versenden von Push-Benachrichtigungen{#push-notifications-create}
 
-Mit Mobile-App-Sendungen können Sie  Benachrichtigungen an iOS- und Android-Geräte senden.
+Mit Mobile-App-Sendungen können Sie Benachrichtigungen an iOS- und Android-Geräte senden.
 
-Bevor Sie mit dem Versand von Push-Benachrichtigungen mit Adobe Campaign beginnen, müssen Sie sicherstellen, dass Konfigurationen und Integrationen in der App sowie für Tags in Adobe Experience Platform vorhanden sind. [Erfahren Sie mehr über die Push-Konfiguration.](push-settings.md)
+Bevor Sie mit dem Versand von Push-Benachrichtigungen mit Adobe Campaign beginnen, müssen Sie sicherstellen, dass Konfigurationen und Integrationen in der Mobile App sowie für Tags in Adobe Experience Platform vorhanden sind. [Erfahren Sie mehr über die Push-Konfiguration.](push-settings.md)
 
 ## Erstellen der ersten Push-Benachrichtigung{#push-create}
 
