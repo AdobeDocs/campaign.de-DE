@@ -211,7 +211,7 @@ Gehen Sie wie folgt vor, um einen Alias zu erstellen:
 
 1. Klicken Sie auf **[!UICONTROL OK]** und bestätigen Sie.
 
-1. Speichern Sie Ihre Änderungen. Die Ersetzung von Werten erfolgt durch den Worklow der **Alias-Verwaltung**, der jede Nacht ausgeführt wird. Weitere Informationen finden Sie unter [Datenbereinigung durchführen](#running-data-cleansing).
+1. Speichern Sie Ihre Änderungen. Die Ersetzung von Werten erfolgt durch den Workflow der **Alias-Verwaltung**, der jede Nacht ausgeführt wird. Weitere Informationen finden Sie unter [Datenbereinigung durchführen](#running-data-cleansing).
 
 Wenn der Wert **Adob** in einem firmenbezogenen Feld (in der Adobe Campaign-Client-Konsole, in einem Web-Formular) eingegeben wird, wird er in allen Feldern, die auf dieser Auflistung basieren, automatisch durch den Wert **Adobe** ersetzt.
 
