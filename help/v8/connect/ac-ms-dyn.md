@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Microsoft Dynamics 365
 
 ### Generieren der Microsoft Dynamics-Zertifikatschlüsselkennung und Schlüssel-ID {#config-certificate-key-id}
 
-Um die **Zertifikatschlüsselkennung (customKeyIdentifier)** und die **Schlüssel-ID (keyId)** abzurufen, müssen Sie ein Zertifikat hochladen. Zertifikate können als Geheimnisse zum Nachweis der Identität der Anwendung beim Anfordern eines Tokens verwendet werden. Sie können auch als öffentliche Schlüssel bezeichnet werden.
+Um die **Zertifikatschlüsselkennung (customKeyIdentifier)** und die **Schlüssel-ID (keyId)** abzurufen, müssen Sie ein Zertifikat hochladen. Zertifikate können als Geheimnisse verwendet werden, um bei Anforderung eines Tokens die Identität der Anwendung zu beweisen. Sie können auch als öffentliche Schlüssel bezeichnet werden.
 
 Gehen Sie wie folgt vor:
 
@@ -173,7 +173,7 @@ Sie können jetzt die Tabellen konfigurieren, die synchronisiert werden sollen.
 
 1. Klicken Sie auf **[!UICONTROL Konfigurationsassistent für Microsoft CRM...]**.
 1. Wählen Sie die zu synchronisierenden Tabellen aus und starten Sie den Prozess.
-1. Prüfen Sie unter dem Knoten **[!UICONTROL Administration > Konfiguration > Datenschemas]** das in Adobe Campaign erzeugte Schema.
+1. Überprüfen Sie das in Adobe Campaign generierte Schema im Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]**.
 
 >[!NOTE]
 >
