@@ -38,7 +38,7 @@ Unicity Service verfügt über den speziellen, integrierten Workflow **[!UICONTR
 
 Dieser technische Workflow ist im Knoten **[!UICONTROL Administration > Produktion > Technische Workflows > Vollständige FFDA-Eindeutigkeit]** von Campaign Explorer verfügbar. **Er darf nicht geändert werden**.
 
-Dieser Workflow überprüft alle benutzerdefinierten und integrierten Schemas, um duplizierte Zeilen zu erkennen.
+Dieser Workflow überprüft alle benutzerdefinierten und integrierten Schemata, um duplizierte Zeilen zu erkennen.
 
 ![](assets/unicity-alerting-wf.png)
 
@@ -65,7 +65,7 @@ Campaign verfügt über eine Reihe neuer Schutzmaßnahmen, um das Einfügen eine
 
 ### Versandvorbereitung{#remove-duplicates-delivery-preparation}
 
-Adobe Campaign entfernt während der Versandvorbereitung automatisch jede doppelte UUID aus einer Zielgruppe. Dieser Mechanismus verhindert, dass beim Vorbereiten von Sendungen Fehler auftreten. Als Endbenutzer können Sie diese Informationen in den Versandlogs überprüfen. Manche Empfänger können wegen eines doppelten Schlüssels aus der Hauptzielgruppe ausgeschlossen werden. In diesem Fall wird folgender Warnhinweis angezeigt: `Exclusion of duplicates (based on the primary key or targeted records)`.
+Adobe Campaign entfernt während der Versandvorbereitung automatisch jede doppelte UUID aus einer Zielgruppe. Dieser Mechanismus verhindert, dass bei der Vorbereitung eines Versands ein Fehler auftritt. Als Endbenutzer können Sie diese Informationen in den Versandlogs überprüfen. Manche Empfänger können wegen eines doppelten Schlüssels aus der Hauptzielgruppe ausgeschlossen werden. In diesem Fall wird folgender Warnhinweis angezeigt: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
 ![](assets/exclusion-duplicates-log.png)
 
@@ -77,7 +77,7 @@ Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) k�
 
 ### Abfrage eines Schemas mit Duplikaten{#query-with-duplicates}
 
-Wenn ein Workflow die Abfrage eines Schemas startet, prüft Adobe Campaign, ob ein doppelter Eintrag in der [Audit-Unicity-Tabelle](#unicity-wf) vorhanden ist. In diesem Fall protokolliert der Workflow eine Warnung, da der nachfolgende Vorgang mit den doppelten Daten möglicherweise das Workflow-Ergebnis beeinflusst.
+Wenn ein Workflow eine Abfrage zu einem Schema startet, prüft Adobe Campaign, ob ein doppelter Eintrag in der Tabelle [Audit Unicity](#unicity-wf) gefunden wird. In diesem Fall protokolliert der Workflow eine Warnung, da der nachfolgende Vorgang mit den doppelten Daten möglicherweise das Workflow-Ergebnis beeinflusst.
 
 ![](assets/query-with-duplicates.png)
 
