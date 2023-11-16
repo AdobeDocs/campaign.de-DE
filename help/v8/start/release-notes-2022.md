@@ -22,7 +22,7 @@ _28. Oktober 2022_
 
 **Verbesserungen**
 
-* Fehlerkorrektur – Der Indikator „Erfolg Auslieferungsrate“ wird jetzt korrekt aktualisiert, wenn Adobe Campaign Enhanced MTA verwendet wird. (NEO-50462)
+* Es wurde ein Problem behoben, bei dem der Indikator für den erfolgreichen Versand nicht korrekt aktualisiert wurde, wenn Sie Adobe Campaign Enhanced MTA verwenden. (NEO-50462)
 
 ## Version 8.4.1 {#release-8-4-1}
 
@@ -236,7 +236,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 
 * Fehlerkorrektur: Bei der Verwendung von Testadressen und Kontrollgruppen im selben wiederkehrenden Versand tritt jetzt kein Fehler mehr auf. (NEO-41197)
 * Fehlerkorrektur: Bei FFDA wird der E-Mail-Versand für alle Empfänger, die zum selben deliveryPart gehören, während des Sendevorgangs (bis zu 256) nicht mehr blockiert, wenn Personalisierungsblöcke eines der folgenden Zeichen enthalten: `' & < > "`. Diese Zeichen werden jetzt in Personalisierungsblöcken unterstützt (Beispiel: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
-* Fehlerkorrektur: Jetzt schlägt der Tracking-Workflow bei der Verwendung eines benutzerdefinierten Schemas als Zielgruppen-Mapping nicht mehr fehl. Beim Generieren des broadLog-Schemas über den Zielgruppen-Mapping-Assistenten stellen wir nun sicher, dass der Typ des Fremdlinks zu einem benutzerdefinierten Zielgruppenschema korrekt ist. (NEO-43506)
+* Es wurde ein Problem behoben, das dazu führen konnte, dass der Tracking-Workflow bei der Verwendung eines benutzerdefinierten Schemas als Zielgruppe-Mapping fehlschlug. Beim Generieren des broadLog-Schemas über den Zielgruppen-Mapping-Assistenten stellen wir nun sicher, dass der Typ des Fremdlinks zu einem benutzerdefinierten Zielgruppenschema korrekt ist. (NEO-43506)
 * Fehlerkorrektur: Die FFDA-Bereitstellungs-Workflows schlagen jetzt in anderen Sprachen als Englisch nicht mehr fehl. (NEO-44561)
 
 ## Version 8.2.10 {#release-8-2-10}
