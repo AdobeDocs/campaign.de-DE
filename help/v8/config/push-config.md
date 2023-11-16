@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ---
 
-# Integrieren von Campaign SDKs mit Ihrer Mobile App {#integrate-campaign-sdk}
+# Campaign SDKs mit Ihrer Mobile App integrieren {#integrate-campaign-sdk}
 
 Sie können Campaign SDKs für iOS und Android verwenden, um die Integration Ihrer App in die Adobe Campaign-Plattform zu ermöglichen.
 
@@ -40,7 +40,7 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
   >Dieser Integrationsschlüssel wird in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Informationen]** des Dienstes, der für die Mobile App zuständig ist, eingegeben.
 
 * **Tracking-URL**: entspricht der Adresse des Adobe-Campaign-Trackingservers.
-* **Marketing-URL**: zur Abfrage der Abonnements.
+* **Marketing-URL**: um die Sammlung der Abonnements zu ermöglichen.
 
 * **Für Android**:
 
@@ -226,7 +226,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
 1. **Firebase Messaging Service konfigurieren**
 
-   Erweitern Sie den `FirebaseMessagingService` im Callback `onMessageReceived`, um Nachrichten zu erhalten. Es wird empfohlen, beim Aufrufen des Callback `onMessageReceived` die Funktion `notifyReceive` aufzurufen, um auf dem Mobilgerät eine Verfolgung des Benachrichtigungsempfangs zu ermöglichen. In Adobe Campaign heißt dies **print**-Benachrichtigung: Diese Funktion sollte kurz vor der Anforderung aufgerufen werden, dass das Betriebssystem die Benachrichtigung anzeigen soll.
+   Erweitern Sie den `FirebaseMessagingService` im Callback `onMessageReceived`, um Nachrichten zu erhalten. Es wird empfohlen, beim Aufrufen des Callback `onMessageReceived` die Funktion `notifyReceive` aufzurufen, um auf dem Mobilgerät eine Verfolgung des Benachrichtigungsempfangs zu ermöglichen. In Adobe Campaign heißt dies Benachrichtigung **drucken**: Diese Funktion sollte aufgerufen werden, kurz bevor das Betriebssystem aufgefordert wird, die Benachrichtigung anzuzeigen.
 
    YourApplicationMessagingService.java
 
