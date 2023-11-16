@@ -293,7 +293,7 @@ Eine Dropdown-Liste wird verwendet, um ein Zielelement aus der Liste der bereits
 
 Mit dem Symbol **[!UICONTROL Relation ändern]** (Ordner) wird ein Auswahlformular mit der Liste der Zielelemente und einem Filterbereich gestartet.
 
-Das Symbol **[!UICONTROL Relation bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig vom Schlüssel des Zielschemas abgeleitet. Mit dem Attribut **form** können Sie den Namen des Bearbeitungsformulars erzwingen (z. B. &quot;cus:company2&quot;).
+Das Symbol **[!UICONTROL Relation bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig auf den Schlüssel des Zielschemas zurückgeführt. Mit dem Attribut **form** können Sie den Namen des Bearbeitungsformulars erzwingen (z. B. &quot;cus:company2&quot;).
 
 Es besteht außerdem die Möglichkeit, die Auswahl von Zielelementen durch Hinzufügen des Elements **`<sysfilter>`** aus der Definition der Relation in das Formular einzuschränken:
 
@@ -392,7 +392,7 @@ Beispiel einer Beziehungstabelle in einem Schema:
 </srcSchema>
 ```
 
-Für unser Beispiel beginnen wir mit dem Formular des Schemas &quot;cus:recipient&quot;. Die Liste muss die Verbindungen mit Abonnements von Services anzeigen und Sie müssen das Hinzufügen eines Abonnements durch Auswahl eines vorhandenen Services ermöglichen.
+In unserem Beispiel beginnen wir mit dem Eingabeformular des Schemas „cus:recipient“. Die Liste muss die Verbindungen mit Abonnements von Services anzeigen und Sie müssen das Hinzufügen eines Abonnements durch Auswahl eines vorhandenen Services ermöglichen.
 
 ![](assets/do-not-localize/form_exemple12.png)
 
