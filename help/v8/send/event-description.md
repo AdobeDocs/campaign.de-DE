@@ -116,7 +116,7 @@ Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`*
 
 In diesem Beispiel sind mit der E-Mail-Adresse und der Mobiltelefonnummer zwei Kanäle angegeben. Das Feld **wishedChannel** ermöglicht die Bestimmung des Kanals, der bei der Reaktion auf ein Ereignis verwendet werden soll. Der Wert &quot;0&quot; entspricht dem E-Mail-Kanal, der Wert &quot;1&quot; dem Mobile-Kanal usw.
 
-Wenn Sie die Verarbeitung eines Ereignisses terminieren möchten, fügen Sie das Feld **[!UICONTROL scheduled]** hinzu, gefolgt vom gewünschten Datum. Erst zum angegebenen Zeitpunkt wird auf das Ereignis reagiert.
+Wenn Sie den Versand eines Ereignisses verschieben möchten, fügen Sie das Feld **[!UICONTROL geplant]** gefolgt von dem gewünschten Datum hinzu. Das Ereignis wird an diesem Datum in eine Nachricht umgewandelt.
 
 Es wird empfohlen, die Attribute @wishedChannel und @emailFormat in Form von numerischen Werten anzugeben. Die Mapping-Tabelle der numerischen Werte und der ihnen zugeordnete Titel finden sich in der Beschreibung der Datenschemata.
 
