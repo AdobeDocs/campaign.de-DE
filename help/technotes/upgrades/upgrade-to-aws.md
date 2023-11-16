@@ -60,7 +60,7 @@ Als Campaign-Kundin bzw. -Kunde erhalten Sie mindestens dreißig (30) Tage im Vo
   Wir erwarten keine Tests durch Kundinnen und Kunden in Verbindung mit diesem Upgrade-Ereignis. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=de#support){target="_blank"}.
 
 
-* **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
+* **Kann ich eine Änderung des Datums/der Uhrzeit für das geplante Sicherheits-Upgrade beantragen?**
 
   Nein. Wir können keine Anfragen bezüglich Änderungen an der bestehenden Planung berücksichtigen, da dies wahrscheinlich das zugewiesene Upgrade-Ereignis für andere Kundinnen und Kunden stören würde.
 
