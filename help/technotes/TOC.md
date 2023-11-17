@@ -5,10 +5,10 @@ type: Event
 title: Technotes zu Adobe Campaign
 description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
-source-git-commit: 4863679106dec92d6b63f63cec0911738853dc04
-workflow-type: ht
+source-git-commit: 9f93057d2d729d4251d914426488f46b6ef24bbb
+workflow-type: tm+mt
 source-wordcount: '67'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 100%
 + [Technotes zu Campaign](technotes-home.md)
 + Aktualisierungen{#tn-new}
    + [Migrieren von Benutzenden zu IMS](upgrades/migrate-users-to-ims.md)
-   + [Migration einer technischen Benutzerin bzw. eines technischen Benutzers zur Developer Console](upgrades/ims-migration.md)
-   + [Migration einer technischen Benutzerin bzw. eines technischen Benutzers zur Developer Console](upgrades/ims-migration-updated.md)
+   + [Migration technischer Operatoren zur Developer Console](upgrades/ims-migration.md)
+   + [Migration einer technischen Benutzerin bzw. eines technischen Benutzers zur Developer Console](upgrades/ims-migration-old.md)
    + [Migration der Campaign-Versandinfrastruktur an AWS](upgrades/migrate-to-aws.md)
    + [Upgrade der E-Mail-Versandinfrastruktur in Campaign](upgrades/upgrade-to-aws.md)
    + [Aktualisierung der Apache-Version](upgrades/apache.md)
