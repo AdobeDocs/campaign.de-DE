@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 555e1d64ada12dc145fbba9124611e30d7746ba5
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 100%
+source-wordcount: '1231'
+ht-degree: 91%
 
 ---
 
@@ -47,7 +47,7 @@ Die Definition des Inhalts der Transaktionsnachricht entspricht der für alle Se
 >[!CAUTION]
 >
 >In Nachrichten enthaltene Bilder müssen öffentlich zugänglich sein. Adobe Campaign verfügt über keinen Mechanismus zum Online-Stellen der Bilder für Transaktionsnachrichten.\
->Im Gegensatz zu JSSP oder webApp bietet `<%=` keine standardmäßige Escape-Funktion.
+>Im Gegensatz zu JSSP oder webApp `<%=` verfügt nicht über eine standardmäßige Maskierung.
 >
 >In diesem Fall müssen Sie alle Daten, die aus dem Ereignis stammen, ordnungsgemäß maskieren. Dieses Escape-Sequenz hängt davon ab, wie dieses Feld verwendet wird. Verwenden Sie beispielsweise innerhalb einer URL encodeURIComponent. Für eine Anzeige im HTML-Code, können Sie escapeXMLString verwenden.
 
@@ -158,6 +158,18 @@ Gehen Sie zur Durchführung des Testversands wie folgt vor:
 Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage eingesehen werden.
 
 ![](assets/messagecenter_send_proof_003.png)
+
+#### Übergang von [!DNL Campaign Classic] v7
+
+Wenn Sie [Umstellung von Campaign Classic v7](../start/v7-to-v8.md), werden alle Sendungen über den Mid-Sourcing-Server durchgeführt.
+
+Bei der Erstellung einer Transaktionsnachrichtenvorlage wird jedoch das für die erfolgreiche Verwendung der Vorlage erforderliche Routing benötigt **interner E-Mail-Versand**. Dieses Routing verhindert den Versand von Testsendungen.
+
+Um einen Testversand für Ihre Transaktionsnachrichtenvorlage durchzuführen, müssen Sie daher das Routing vom internen E-Mail-Versand zum **Mid-Sourcing-Routing-Konto**.
+
+![](assets/messagecenter_send_proof_004.png)
+
+Nach dem Versand der Testsendungen müssen Sie das Routing zurück zum internen E-Mail-Versand ändern, bevor Sie die Transaktionsnachrichtenvorlage veröffentlichen.
 
 ## Vorlage veröffentlichen {#publish-message-template}
 
