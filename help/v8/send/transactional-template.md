@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 555e1d64ada12dc145fbba9124611e30d7746ba5
+source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 91%
@@ -130,7 +130,7 @@ Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalt
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### Führen Sie einen Testversand durch.
+### Führen Sie einen Testversand durch. {#send-proof}
 
 Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versand einen Testversand durchzuführen.
 
@@ -159,7 +159,7 @@ Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage einge
 
 ![](assets/messagecenter_send_proof_003.png)
 
-#### Übergang von [!DNL Campaign Classic] v7
+#### Übergang von [!DNL Campaign Classic] v7 {#transition-from-v7}
 
 Wenn Sie [Umstellung von Campaign Classic v7](../start/v7-to-v8.md), werden alle Sendungen über den Mid-Sourcing-Server durchgeführt.
 
