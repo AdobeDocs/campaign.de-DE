@@ -4,10 +4,10 @@ title: Kohärenzregeln
 description: Kohärenzregeln
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 8247bed87deb3fb19a01447dab180ed9c97ea96c
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
+source-wordcount: '792'
+ht-degree: 92%
 
 ---
 
@@ -97,7 +97,7 @@ Die Verfügbarkeitszeilen dienen nur als Richtwerte. Um überschüssige Nachrich
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Die Anzahl der zu verarbeitenden Nachrichten ist gleichmäßig über den gesamten festgelegten Zeitraum verteilt. Dies ist insbesondere für Callcenter von Bedeutung, da die Anzahl der Anrufe, die diese pro Tag verarbeiten können, begrenzt ist. Im Fall von E-Mail-Sendungen können Sie mit der Option **[!UICONTROL Sofortige Versandkapazität nicht begrenzen]** diesen Zeitraum ignorieren und gleichzeitig Ihre E-Mails versenden.
+Die maximale Anzahl von Nachrichten, die verarbeitet werden können, ist gleichmäßig über den definierten Verfügbarkeitsbereich verteilt. Dies ist besonders für Callcenter von Bedeutung, da die Anzahl der Anrufe pro Tag begrenzt ist. Im Fall von E-Mail-Sendungen wird die **[!UICONTROL Sofortige Auslieferungskapazität nicht begrenzen]** -Option können Sie diesen Verfügbarkeitsbereich ignorieren und Ihre E-Mails gleichzeitig versenden.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
