@@ -6,7 +6,7 @@ feature: Workflows
 role: Admin
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 100%
 
@@ -56,7 +56,7 @@ Vergewissern Sie sich, dass der Tracking-Workflow plangemäß ausgeführt wird (
 
 ## Workflow-Supervision {#workflow-supervision}
 
-In der Gruppe **[!UICONTROL Workflow-Supervisoren]** sollten Benutzer enthalten sein, die von Fehlschlägen informiert werden müssen und umgehend Abhilfemaßnahmen setzen können.
+In der Gruppe **[!UICONTROL Workflow-Verantwortliche]** sollten Benutzer enthalten sein, die von Fehlschlägen informiert werden müssen und umgehend Abhilfemaßnahmen setzen können.
 
 ![](assets/monitoring_technical_workflows3.png)
 

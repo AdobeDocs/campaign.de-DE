@@ -6,7 +6,7 @@ feature: Distributed Marketing
 role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 100%
 
@@ -129,7 +129,7 @@ Für **partizipative Kampagnen** muss die Zentralstelle einen Anmeldeschluss und
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
-### Audience {#audience}
+### Zielgruppe {#audience}
 
 Die Zentralstelle muss für die Teilnahme an der Kampagne vorgesehenen Lokalstellen bei der Erstellung der partizipativen Kampagne angeben, außer bei Kampagnen mit Zielgruppenvalidierung.
 

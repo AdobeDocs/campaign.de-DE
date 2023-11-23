@@ -6,7 +6,7 @@ feature: Workflows, Approvals
 role: User
 exl-id: 31089026-3fc0-4491-8b70-0fb7fd1e3ac0
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 100%
 
@@ -143,7 +143,7 @@ Folgende Angaben sind erforderlich:
 1. Im Bereich **[!UICONTROL Validierungsverwaltung]**: Wählen Sie die Versandvorlage aus und geben Sie den Betreff für die Benachrichtigungs-E-Mail an. Im vorliegenden Beispiel wurde die Standardvorlage beibehalten, d. h. **[!UICONTROL Benachrichtigung bezüglich der Zielgruppenvalidierung]**.
 1. Definieren Sie außerdem den **[!UICONTROL Validierungstyp]**. Im vorliegenden Beispiel wurde die Standardoption beibehalten, d. h. die Validierung muss spätestens 3 Tage nach dem Unterbreitungsdatum erfolgen, andernfalls werden die nicht validierten Empfänger beim Versand nicht berücksichtigt.
 
-Durch die Aktivität **[!UICONTROL Lokale Validierung]** wird eine Benachrichtigungs-E-Mail an lokale Supervisoren und Supervisorinnen gesendet.
+Durch die Aktivität **[!UICONTROL Lokale Validierung]** wird eine Benachrichtigungs-E-Mail an lokale Verantwortliche gesendet.
 
 ### Warten {#wait}
 

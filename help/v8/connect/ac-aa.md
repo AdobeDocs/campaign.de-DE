@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Durch diese Integration können Adobe Campaign und Adobe Analytics über das Add
 
 ![](../assets/do-not-localize/speech.png) Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Campaign mit Adobe Experience Cloud-Services und -Lösungen zu verbinden. Das Add-on Web Analytics Connector muss über das dedizierte Paket in Ihrer Umgebung installiert werden.
 
-Mit Adobe Analytics Connector kann Adobe Campaign die Internet-Audience (Web Analytics) messen. Die Web-Analyse-Tools von Adobe Campaign ermöglichen die Weiterleitung von Indikatoren und Kampagnenattributen an Analytics.
+Mit Adobe Analytics Connector kann Adobe Campaign die Internet-Zielgruppe (Web Analytics) messen. Die Web-Analyse-Tools von Adobe Campaign ermöglichen die Weiterleitung von Indikatoren und Kampagnenattributen an Analytics.
 
 Die Anwendungsbereiche der einzelnen Tools sind folgende:
 
@@ -185,7 +185,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
 >[!NOTE]
 >
->Bei Verwendung verschiedener Audience-Mess-Tools können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und dem anderen Messtool erwarteten Parameter hinzufügen.
+>Bei Verwendung verschiedener Zielgruppe-Mess-Tools können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und dem anderen Messtool erwarteten Parameter hinzufügen.
 
 ## Technische Workflows der Web-Analyse-Prozesse {#technical-workflows-of-web-analytics-processes}
 

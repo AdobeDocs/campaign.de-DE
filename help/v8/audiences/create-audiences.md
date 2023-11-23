@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Profil-Audiences in Campaign
-description: Erfahren Sie, wie Sie Listen und eine Audience erstellen
+title: Erstellen von Profil-Zielgruppen in Campaign
+description: Erfahren Sie, wie Sie Listen und eine Zielgruppe erstellen
 feature: Audiences, Profiles
 role: User
 level: Beginner
@@ -12,9 +12,9 @@ ht-degree: 100%
 
 ---
 
-# Erstellen einer Audience in einer Liste{#create-segments}
+# Erstellen einer Zielgruppe in einer Liste{#create-segments}
 
-Verwenden Sie Campaign-Listen, um Audiences zu erstellen und zu ordnen.
+Verwenden Sie Campaign-Listen, um Zielgruppen zu erstellen und zu ordnen.
 
 Eine Liste ist ein statischer Satz von Kontakten, die in Versandaktionen als Zielkontakte dienen oder beim Importieren bzw. bei einer Workflow-Ausführung aktualisiert werden können. So kann beispielsweise eine Population, die über eine Abfrage aus der Datenbank extrahiert wurde, als Liste gespeichert werden.
 

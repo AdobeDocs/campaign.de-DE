@@ -3,13 +3,13 @@ title: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS)
 description: Migrieren der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 9401e3564b53b920dd6a640ca6d00531992a2f21
-workflow-type: ht
+exl-id: 50279a2f-0296-43f5-8967-16cc6a0c88f6
+source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
+workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 100%
 
 ---
-
 
 # Migration der Campaign-Versandinfrastruktur zu Amazon Web Services (AWS) {#migrate-infra-to-aws}
 
@@ -67,11 +67,11 @@ Dieser Schritt wird für die Kundinnen und Kunden transparent sein:
 
 * **Welche Validierungen müssen auf Kundenseite ausgeführt werden?**
 
-  Für diese Migration sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  Für diese Migration sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=de#support){target="_blank"}.
 
 
 * **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
 
   Da es sich um eine obligatorische Migration handelt, können wir keine Änderungen am bestehenden Zeitplan vornehmen.
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=de#support){target="_blank"}.

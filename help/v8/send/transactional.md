@@ -108,7 +108,7 @@ Die Definition des Inhalts der Transaktionsnachricht entspricht der für alle Se
 
 >[!CAUTION]
 >
->In Nachrichten enthaltene Bilder müssen öffentlich zugänglich sein. Adobe Campaign verfügt über keinen Mechanismus zum Online-Stellen der Bilder für Transaktionsnachrichten.\
+>In Nachrichten enthaltene Bilder müssen öffentlich zugänglich sein. Adobe Campaign verfügt über keinen Mechanismus zum Hochladen von Bildern für Transaktionsnachrichten.\
 >Im Gegensatz zu JSSP oder webApp bietet `<%=` keine standardmäßige Escape-Funktion.
 >
 >In diesem Fall müssen Sie alle Daten, die aus dem Ereignis stammen, ordnungsgemäß maskieren. Dieses Escape-Sequenz hängt davon ab, wie dieses Feld verwendet wird. Verwenden Sie beispielsweise innerhalb einer URL encodeURIComponent. Für eine Anzeige im HTML-Code, können Sie escapeXMLString verwenden.
@@ -136,7 +136,7 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
 ### Testadressen hinzufügen{#add-seeds}
 
-Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen Testversand senden und die Personalisierung der Nachricht testen, bevor Sie die Nachricht senden. Testadressen sind mit dem Versand verknüpft und können nicht für andere Versände verwendet werden.
+Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen Testversand senden und die Personalisierung der Nachricht testen, bevor Sie die Nachricht senden. Testadressen sind mit dem Versand verknüpft und können nicht für andere Sendungen verwendet werden.
 
 1. Klicken Sie in der Transaktionsnachrichten-Vorlage auf die Registerkarte **[!UICONTROL Testadressen]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
@@ -219,7 +219,7 @@ Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage einge
 
 ![](assets/messagecenter_send_proof_003.png)
 
-## Vorlage veröffentlichen {#publish-message-template}
+## Veröffentlichen der Vorlage {#publish-message-template}
 
 Wenn die erstellte Nachrichtenvorlage<!-- on the control instance--> vollständig ist, können Sie sie veröffentlichen, wodurch Sie Nachrichten versenden können, die mit Echtzeit- und Batch-Ereignissen verknüpft sind.
 

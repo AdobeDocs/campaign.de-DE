@@ -6,7 +6,7 @@ feature: Workflows, Channels Activity
 role: User
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
 ![](assets/wkf_cross-channel_7.png)
 
-## Schritt 1: Aufbauen einer Audience {#step-1--build-the-audience}
+## Schritt 1: Aufbauen einer Zielgruppe {#step-1--build-the-audience}
 
 Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung der Empfänger.
 
@@ -64,7 +64,7 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
    ![](assets/wkf_cross-channel_4.png)
 
-## Schritt 3: Segmentieren der resultierenden Audience {#step-3--segment-the-resulting-audience}
+## Schritt 3: Segmentieren der resultierenden Zielgruppe {#step-3--segment-the-resulting-audience}
 
 Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie die Zielgruppe mithilfe von Filterbedingungen in unterschiedliche Populationen unterteilen.
 

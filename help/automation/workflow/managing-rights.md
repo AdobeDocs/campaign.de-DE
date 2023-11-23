@@ -6,7 +6,7 @@ feature: Workflows, Permissions
 role: Admin
 exl-id: 3cb8aeec-e758-4b71-adef-67942cf9ded7
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Die Verwaltung der Benutzenden sowie ihrer Berechtigungen wird in [diesem Abschn
 Folgende Benutzergruppen sind im Zusammenhang mit Workflows von Bedeutung:
 
 * Die Gruppe **[!UICONTROL Workflow-Ausführung]** dient der Ausführungs- und Validierungskontrolle von Zielgruppen-Workflows. Die Benutzer dieser Gruppe verfügen automatisch über die spezifische Berechtigung WORKFLOW. Diese ist neben den Datenzugriffsrechten Vorraussetzung für alle Workflow-bezogenen Aktionen. Die Gruppe **[!UICONTROL Workflow-Ausführung]** verfügt standardmäßig über Lesezugriff auf die Standard-Ordner der Zielgruppen-Workflows und der Workflow-Vorlagen. Die Benutzer dieser Gruppen haben des Weiteren Lese- und Schreibzugriff auf den Ordner der ausstehenden Validierungen.
-* Die Gruppe **[!UICONTROL Workflow-Supervisoren]** ermöglicht den Benutzern die Verwaltung der Workflow-Validierungen.
+* Die Gruppe **[!UICONTROL Workflow-Verantwortliche]** ermöglicht den Benutzern die Verwaltung der Workflow-Validierungen.
 * Die Benutzer der Gruppe **[!UICONTROL Kampagnenverantwortliche Benutzer]** haben Zugriff auf Kampagnen-Workflows.
 
 ## Spezifische Berechtigungen {#named-rights}

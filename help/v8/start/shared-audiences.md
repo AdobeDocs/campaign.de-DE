@@ -1,6 +1,6 @@
 ---
-title: Audiences für Adobe Experience Cloud-Lösungen freigeben
-description: Erfahren Sie, wie Sie Audiences für Adobe Experience Cloud-Lösungen freigeben können
+title: Zielgruppen für Adobe Experience Cloud-Lösungen freigeben
+description: Erfahren Sie, wie Sie Zielgruppen für Adobe Experience Cloud-Lösungen freigeben können
 feature: Audiences
 role: User
 level: Beginner
@@ -8,13 +8,13 @@ hide: true
 hidefromtoc: true
 exl-id: c4d30771-db5e-40be-8af6-50f0fab9f9af
 source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 100%
 
 ---
 
-# Audiences für Adobe Experience Cloud-Lösungen freigeben{#shared-audiences}
+# Zielgruppen für Adobe Experience Cloud-Lösungen freigeben{#shared-audiences}
 
 
 Option 1: AEP-Quellen und -Ziele

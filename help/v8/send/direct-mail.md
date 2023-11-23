@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Die Schritte zum Generieren der Datei sind:
 
    ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html?lang=de).{target="_blank"}
 
-1. Audience definieren
+1. Zielgruppe definieren
 
    Die Empfängerprofile müssen mindestens ihren Namen und ihre Anschrift enthalten.
 
@@ -54,4 +54,4 @@ Die Schritte zum Generieren der Datei sind:
 
    Mit der Bestätigung wird die Extraktion der Daten in die angegebene Datei gestartet.
 
-   Im Rahmen einer Marketing-Kampagne werden die Extraktionsdateien nach Erteilung aller Validierungen über einen speziellen Workflow erstellt, der in einer Standardkonfiguration automatisch gestartet wird, wenn ein Briefpost-Versand auf die Extraktion wartet. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de).
+   Im Rahmen einer Marketing-Kampagne werden die Extraktionsdateien nach Erteilung aller Validierungen über einen speziellen Workflow erstellt, der in einer Standardkonfiguration automatisch gestartet wird, wenn bei einem Briefpostversand die Extraktion ausstehend ist. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de).

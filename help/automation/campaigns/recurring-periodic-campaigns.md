@@ -6,7 +6,7 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 68c5b903-5043-4e74-b3f6-90a7f2fb3b9a
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '848'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Wiederkehrende und periodische Kampagnen {#recurring-and-periodic-campaigns}
 
-Eine **wiederkehrende Kampagne** ist eine auf einer bestimmten Vorlage basierende Kampagne, deren Workflows so konfiguriert sind, dass sie entsprechend einem verknüpften Zeitplan ausgeführt werden. Die Zielgruppenbestimmung wird bei jeder Ausführung dupliziert, und die unterschiedlichen Prozesse und Zielgruppen werden getrackt.  Nach der Konfiguration erstellen wiederkehrende Kampagnen automatisch einen neuen Workflow (durch Duplizieren der Workflow-Vorlage) und führen ihn aus. Wenn Sie beispielsweise monatliche Erinnerungen an ein Audience-Segment senden möchten, konfigurieren Sie eine wiederkehrende Kampagne so, dass zu Beginn jedes Jahres zwölf Workflows erstellt werden, einer pro Monat. [Weitere Informationen](#create-a-recurring-campaign)
+Eine **wiederkehrende Kampagne** ist eine auf einer bestimmten Vorlage basierende Kampagne, deren Workflows so konfiguriert sind, dass sie entsprechend einem verknüpften Zeitplan ausgeführt werden. Die Zielgruppenbestimmung wird bei jeder Ausführung dupliziert, und die unterschiedlichen Prozesse und Zielgruppen werden getrackt.  Nach der Konfiguration erstellen wiederkehrende Kampagnen automatisch einen neuen Workflow (durch Duplizieren der Workflow-Vorlage) und führen ihn aus. Wenn Sie beispielsweise monatliche Erinnerungen an ein Zielgruppen-Segment senden möchten, konfigurieren Sie eine wiederkehrende Kampagne so, dass zu Beginn jedes Jahres zwölf Workflows erstellt werden, einer pro Monat. [Weitere Informationen](#create-a-recurring-campaign)
 
 Eine **periodische Kampagne** ist eine auf einer bestimmten Vorlage basierende Kampagne, mit der Sie Kampagneninstanzen auf der Grundlage einer Ausführungsplanung erstellen können. Kampagneninstanzen werden automatisch auf Basis einer Vorlage für periodische Kampagnen und abhängig von der in der Vorlagenplanung definierten Häufigkeit erstellt. [Weitere Informationen](#create-a-periodic-campaign)
 

@@ -6,7 +6,7 @@ role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Weitere Informationen zur Benutzeroberfläche und Ausführung von Workflows find
 
 * [Überwachen der Ausführung von Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de)
 
-* [Erstellen einer Audience im Workflow einer Marketing-Kampagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de)
+* [Erstellen einer Zielgruppe im Workflow einer Marketing-Kampagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de)
 
 ## Workflow-Aktivitäten {#wf-activities}
 
@@ -146,7 +146,7 @@ Wenn Ihr Versandinhalt in einer auf einem Remote-Server gespeicherten HTML-Datei
 
 * [Workflow für einen kanalübergreifenden Versand](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/cross-channel-delivery-workflow.html?lang=de)
 
-Erfahren Sie, wie Sie einen Workflow für einen kanalübergreifenden Versand erstellen. Ziel ist es, eine Audience von den Empfängern in Ihrer Datenbank in verschiedene Gruppen zu unterteilen und der einen Gruppe eine E-Mail und der anderen eine SMS zu senden.
+Erfahren Sie, wie Sie einen Workflow für einen kanalübergreifenden Versand erstellen. Ziel ist es, eine Zielgruppe von den Empfängern in Ihrer Datenbank in verschiedene Gruppen zu unterteilen und der einen Gruppe eine E-Mail und der anderen eine SMS zu senden.
 
 * [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=de)
 Erfahren Sie, wie Sie eine E-Mail mit benutzerdefinierten Datenfeldern an Profile senden, die in diesem Monat Geburtstag feiern. Die E-Mail enthält einen Gutschein, der eine Woche vor bis eine Woche nach dem Geburtstag gültig ist.

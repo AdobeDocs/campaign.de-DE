@@ -70,7 +70,7 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
 * **[!UICONTROL Template]**
 
-  Geben Sie in diesem Feld die Vorlage für die Benachrichtigung an, die die Workflow-Supervisoren erhalten, wenn ein Workflow den Status **[!UICONTROL Fehlgeschlagen]** annimmt.
+  Geben Sie in diesem Feld die Vorlage für die Benachrichtigung an, die die Workflow-Verantwortlichen erhalten, wenn ein Workflow den Status **[!UICONTROL Fehlgeschlagen]** annimmt.
 
   Die betroffenen Benutzer werden per E-Mail benachrichtigt, sofern in ihrem Profil eine E-Mail-Adresse angegeben wurde. Die verantwortlichen Supervisoren werden im Feld **[!UICONTROL Supervisor(en)]** im **[!UICONTROL Allgemein]**-Tab der Workflow-Eigenschaften ausgewählt.
 

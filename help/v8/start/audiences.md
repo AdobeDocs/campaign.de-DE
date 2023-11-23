@@ -1,6 +1,6 @@
 ---
-title: Arbeiten mit Audiences in Campaign
-description: Arbeiten mit Audiences in Campaign
+title: Arbeiten mit Zielgruppen in Campaign
+description: Arbeiten mit Zielgruppen in Campaign
 feature: Audiences
 role: User
 level: Beginner
@@ -12,13 +12,13 @@ ht-degree: 100%
 
 ---
 
-# Arbeiten mit Audiences in Campaign{#gs-ac-audiences}
+# Arbeiten mit Zielgruppen in Campaign{#gs-ac-audiences}
 
 Profile sind in der Campaign-Datenbank gespeicherte Kontakte.
 
 In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) die **Empfänger**. Mit den in der Datenbank gespeicherten Empfängerdaten können Sie die Zielgruppe filtern, die einen bestimmten Versand erhalten soll, und Personalisierungsdaten in den Versandinhalt einfügen. In der Datenbank gibt es noch andere Arten von Profilen. Sie sind für unterschiedliche Zwecke gedacht. So werden beispielsweise Testprofile erstellt, um Ihre Sendungen zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
 
-[In diesem Abschnitt](../audiences/gs-audiences.md) erfahren Sie, wie Sie Profile und Audiences importieren, aktualisieren und verwalten.
+[In diesem Abschnitt](../audiences/gs-audiences.md) erfahren Sie, wie Sie Profile und Zielgruppen importieren, aktualisieren und verwalten.
 
 ## Erstellen von Listen{#create-lists}
 
@@ -28,15 +28,15 @@ Eine Liste ist ein statischer Satz von Kontakten, die in Versandaktionen als Zie
 
 ## Filtern der Datenbank{#filter-the-database}
 
-Die Filterkonfiguration ermöglicht die **[!UICONTROL dynamische]** Auswahl von Daten aus einer Liste. Bei Änderung der Daten werden die gefilterten Daten aktualisiert. Sie können eigene Filter erstellen oder die integrierten Filter verwenden, um eine Audience zu definieren.
+Die Filterkonfiguration ermöglicht die **[!UICONTROL dynamische]** Auswahl von Daten aus einer Liste. Bei Änderung der Daten werden die gefilterten Daten aktualisiert. Sie können eigene Filter erstellen oder die integrierten Filter verwenden, um eine Zielgruppe zu definieren.
 
 ![](../assets/do-not-localize/glass.png) Weitere Informationen dazu, wie Sie Filter erstellen und verwalten, finden Sie auf [dieser Seite](../audiences/create-filters.md).
 
-## Eine Audience in einem Workflow erstellen
+## Eine Zielgruppe in einem Workflow erstellen
 
-Zielgruppenbestimmung kann über eine Kombination von Abfragen in einer grafischen Abfolge in einem Workflow erstellt werden. Sie können Audiences erstellen und deren Targeting entsprechend Ihren Anforderungen anpassen. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
+Zielgruppenbestimmung kann über eine Kombination von Abfragen in einer grafischen Abfolge in einem Workflow erstellt werden. Sie können Zielgruppen erstellen und deren Targeting entsprechend Ihren Anforderungen anpassen. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
 
-Weitere Informationen zur Erstellung einer Audience in einem Kampagnen-Workflow finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de).
+Weitere Informationen zur Erstellung einer Zielgruppe in einem Kampagnen-Workflow finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de).
 
 
 ## Aktive Profile{#active-profiles}
@@ -61,6 +61,6 @@ Adobe Campaign ist ein leistungsstarkes Tool zur Erfassung und Verarbeitung von 
 
 * [Kampagnenspezifische Workflows entwerfen und ausführen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html?lang=de)
 
-* [Audience einer Kampagne auswählen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de)
+* [Zielgruppe einer Kampagne auswählen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de)
 
 * [Erste Schritte mit Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)

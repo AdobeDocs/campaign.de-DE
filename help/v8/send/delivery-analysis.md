@@ -21,7 +21,7 @@ Die Analyse ist der Versandvorbereitungsschritt. Sie kann gestartet werden, soba
 Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die Zielgruppe definiert worden sind, und gehen Sie wie folgt vor:
 
 1. Klicken Sie im Versandfenster auf die Schaltfläche **[!UICONTROL Senden]**.
-1. Wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]** aus, um die Audience-Berechnung und Inhaltsvorbereitung für einen sofortigen Versand durchzuführen. Sie können den Versand auch auf einen späteren Zeitpunkt verschieben oder eine Schätzung der Population abrufen, ohne den Inhalt vorzubereiten.
+1. Wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]** aus, um die Zielgruppe-Berechnung und Inhaltsvorbereitung für einen sofortigen Versand durchzuführen. Sie können den Versand auch auf einen späteren Zeitpunkt verschieben oder eine Schätzung der Population abrufen, ohne den Inhalt vorzubereiten.
 
    ![](assets/delivery-analysis-start.png)
 

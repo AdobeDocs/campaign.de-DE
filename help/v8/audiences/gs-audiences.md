@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte mit Profilen und Audiences in Campaign
-description: Erfahren Sie, wie Sie in Campaign Profile und Audiences erstellen und verwalten.
+title: Erste Schritte mit Profilen und Zielgruppen in Campaign
+description: Erfahren Sie, wie Sie in Campaign Profile und Zielgruppen erstellen und verwalten.
 feature: Audiences, Profiles
 role: User
 level: Beginner
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 ---
 
-# Erste Schritte mit Profilen und Audiences{#gs-profiles-and-audiences}
+# Erste Schritte mit Profilen und Zielgruppen{#gs-profiles-and-audiences}
 
 Profile sind in der Campaign-Datenbank gespeicherte Kontakte, z. B. Kunden, Abonnenten eines Services oder potenzielle Kunden. Die Akquise von Profilen und die Datenbankerstellung können auf viele verschiedene Weisen erfolgen: Online-Akquise über Web-Formulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie Marketing-Verlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PI-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen. Profile enthalten alle Informationen, die für Zielgruppenbestimmung, Qualifizierung und Tracking von Personen erforderlich sind.
 
@@ -37,4 +37,4 @@ Um Profildaten zu Adobe Campaign hinzuzufügen, haben Sie folgende Möglichkeite
 
 <!--You can also select your message audience in an external file: recipients are stored not in the database, but in files. These are known as “external” deliveries. These contacts can be imported or not in Adobe Campaign. [Learn more](external-profiles.md).-->
 
-Nach dem Import können Sie Audiences erstellen, um Ihre Nachrichten zu versenden. [In diesem Abschnitt](create-audiences.md) erfahren Sie, wie Sie Audiences erstellen.
+Nach dem Import können Sie Zielgruppen erstellen, um Ihre Nachrichten zu versenden. [In diesem Abschnitt](create-audiences.md) erfahren Sie, wie Sie Zielgruppen erstellen.

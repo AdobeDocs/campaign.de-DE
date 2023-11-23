@@ -1,6 +1,6 @@
 ---
 title: Erstellen eines Zielgruppen-Workflows
-description: Hier erfahren Sie, wie Sie in einem Workflow Audiences erstellen.
+description: Hier erfahren Sie, wie Sie in einem Workflow Zielgruppen erstellen.
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Erstellen eines Zielgruppen-Workflows{#target-data}
 
-Workflows können für die Abfrage einer Datenbank und die Segmentierung von Daten verwendet werden. Das Workflow-Modul von Campaign ist ein leistungsstarkes Tool, um Daten-Management-Aktivitäten durchzuführen, Daten zu extrahieren, anzureichern und umzuwandeln, Audiences zu verwalten und Populationen zu verfeinern.
+Workflows können für die Abfrage einer Datenbank und die Segmentierung von Daten verwendet werden. Das Workflow-Modul von Campaign ist ein leistungsstarkes Tool, um Daten-Management-Aktivitäten durchzuführen, Daten zu extrahieren, anzureichern und umzuwandeln, Zielgruppen zu verwalten und Populationen zu verfeinern.
 
 Zielgruppen-Workflows erlauben die Bestimmung von einer oder mehreren Versandzielgruppen. Dies geschieht mithilfe von Abfragen, Vereinigungen oder Ausschlüssen nach bestimmten Kriterien. Das Ergebnis der Zielgruppenbestimmung kann dann beispielsweise in eine Liste übertragen werden, um diese als Grundlage für Versandaktionen zu verwenden.
 

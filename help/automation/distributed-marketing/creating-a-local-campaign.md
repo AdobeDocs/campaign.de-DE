@@ -6,7 +6,7 @@ feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 100%
 
@@ -190,7 +190,7 @@ Diese und andere Informationen sind über den Link in der den Lokalstellen gesen
 
 ![](assets/s_advuser_mkg_dist_local_notif.png)
 
-### Audience {#audience}
+### Zielgruppe {#audience}
 
 Für eine lokale Kampagne kann die Zentralstelle die teilnehmenden Lokalstellen durch Ankreuzen der Option **[!UICONTROL Kampagnenkit auf gewisse Lokalstellen beschränken]** festlegen.
 

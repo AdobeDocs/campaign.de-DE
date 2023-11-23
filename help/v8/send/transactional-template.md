@@ -8,7 +8,7 @@ exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
 source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
 workflow-type: tm+mt
 source-wordcount: '1231'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,8 +46,8 @@ Die Definition des Inhalts der Transaktionsnachricht entspricht der für alle Se
 
 >[!CAUTION]
 >
->In Nachrichten enthaltene Bilder müssen öffentlich zugänglich sein. Adobe Campaign verfügt über keinen Mechanismus zum Online-Stellen der Bilder für Transaktionsnachrichten.\
->Im Gegensatz zu JSSP oder webApp `<%=` verfügt nicht über eine standardmäßige Maskierung.
+>In Nachrichten enthaltene Bilder müssen öffentlich zugänglich sein. Adobe Campaign verfügt über keinen Mechanismus zum Hochladen von Bildern für Transaktionsnachrichten.\
+>Im Gegensatz zu JSSP oder webApp bietet `<%=` keine standardmäßige Escape-Funktion.
 >
 >In diesem Fall müssen Sie alle Daten, die aus dem Ereignis stammen, ordnungsgemäß maskieren. Dieses Escape-Sequenz hängt davon ab, wie dieses Feld verwendet wird. Verwenden Sie beispielsweise innerhalb einer URL encodeURIComponent. Für eine Anzeige im HTML-Code, können Sie escapeXMLString verwenden.
 
@@ -74,7 +74,7 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
 ### Testadressen hinzufügen{#add-seeds}
 
-Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen Testversand senden und die Personalisierung der Nachricht testen, bevor Sie die Nachricht senden. Testadressen sind mit dem Versand verknüpft und können nicht für andere Versände verwendet werden.
+Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen Testversand senden und die Personalisierung der Nachricht testen, bevor Sie die Nachricht senden. Testadressen sind mit dem Versand verknüpft und können nicht für andere Sendungen verwendet werden.
 
 1. Klicken Sie in der Transaktionsnachrichten-Vorlage auf die Registerkarte **[!UICONTROL Testadressen]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
@@ -159,19 +159,19 @@ Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage einge
 
 ![](assets/messagecenter_send_proof_003.png)
 
-#### Übergang von [!DNL Campaign Classic] v7 {#transition-from-v7}
+#### Wechsel von [!DNL Campaign Classic] v7 {#transition-from-v7}
 
-Wenn Sie [Umstellung von Campaign Classic v7](../start/v7-to-v8.md), werden alle Sendungen über den Mid-Sourcing-Server durchgeführt.
+Wenn Sie [von Campaign Classic v7 wechseln](../start/v7-to-v8.md), durchlaufen alle Sendungen den Mid-Sourcing-Server.
 
-Bei der Erstellung einer Transaktionsnachrichtenvorlage wird jedoch das für die erfolgreiche Verwendung der Vorlage erforderliche Routing benötigt **interner E-Mail-Versand**. Dieses Routing verhindert den Versand von Testsendungen.
+Bei der Erstellung einer Transaktionsnachrichtenvorlage ist jedoch das Routing, das für eine erfolgreiche Verwendung der Vorlage erforderlich ist, der **interne E-Mail-Versand**. Dieses Routing verhindert den Versand von Testsendungen.
 
-Um einen Testversand für Ihre Transaktionsnachrichtenvorlage durchzuführen, müssen Sie daher das Routing vom internen E-Mail-Versand zum **Mid-Sourcing-Routing-Konto**.
+Um einen Testversand für Ihre Transaktionsnachrichtenvorlage durchzuführen, müssen Sie daher das Routing vom internen E-Mail-Versand zum **Mid-Sourcing-Routing-Konto** ändern.
 
 ![](assets/messagecenter_send_proof_004.png)
 
 Nach dem Versand der Testsendungen müssen Sie das Routing zurück zum internen E-Mail-Versand ändern, bevor Sie die Transaktionsnachrichtenvorlage veröffentlichen.
 
-## Vorlage veröffentlichen {#publish-message-template}
+## Veröffentlichen der Vorlage {#publish-message-template}
 
 Wenn die erstellte Nachrichtenvorlage<!-- on the control instance--> vollständig ist, können Sie sie veröffentlichen, wodurch Sie Nachrichten versenden können, die mit Echtzeit- und Batch-Ereignissen verknüpft sind.
 

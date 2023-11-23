@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 100%
 
@@ -33,9 +33,9 @@ Campaign v8 kann verbunden werden mit:
 * [Adobe Experience Cloud Triggers](../connect/ac-triggers.md)
 * [Adobe Target](../connect/ac-at.md)
 
-Sie können Ihre **Audiences** und **Assets** über Experience Cloud-Lösungen hinweg auch mit Funktionen zum Freigeben von Assets und Audiences kombinieren.
+Sie können Ihre **Zielgruppen** und **Assets** über Experience Cloud-Lösungen hinweg auch mit Funktionen zum Freigeben von Assets und Zielgruppen kombinieren.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zur **gemeinsamen Nutzung von Audiences** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
+![](../assets/do-not-localize/book.png) Weitere Informationen zur **gemeinsamen Nutzung von Zielgruppen** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
 
 ![](../assets/do-not-localize/book.png) Weitere Informationen zur **gemeinsamen Nutzung von Assets** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
 

@@ -18,7 +18,7 @@ Dieses Anwendungsbeispiel zeigt die Erstellung eines Workflows zur Überwachung 
 Sie ermöglicht Ihnen Folgendes:
 
 * Die Erstellung eines Workflows zur Überwachung einer Reihe von geschäftsrelevanten Workflows.
-* Den Versand einer Benachrichtigung an einen Supervisor mithilfe einer Versandaktivität.
+* Den Versand einer Benachrichtigung an eine verantwortliche Person mithilfe einer Versandaktivität.
 
 Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte erforderlich:
 
@@ -47,7 +47,7 @@ Der vorliegende Workflow besteht aus folgenden Aktivitäten:
 
 * **Beginn**,
 * **JavaScript-Code** zur Analyse des Ordners mit geschäftsspezifischen Workflows,
-* **Test** zum Start eines Versands an den Supervisor oder um den Workflow wiederaufzunehmen,
+* **Test** zum Start eines Versands an die verantwortliche Person oder um den Workflow wiederaufzunehmen,
 * **Versand** mit den Informationen sur Aufmachung der Nachricht,
 * **Warten** zur Steuerung der zeitlichen Intervalle zwischen den einzelnen Ausführungen des Workflows.
 
@@ -117,7 +117,7 @@ vars.strWorkflowStop = strStop;
 
 Die Testaktivität bestimmt, ob ein Versand oder ein neuer Workflow-Zyklus gestartet werden soll. In letzterem Fall wird die Warteaktivität aktiviert.
 
-Der Versand an den Supervisor wird gestartet, **wenn wenigstens eine der drei Ereignisvariablen &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot;, &quot;vars.strWorkflowStop&quot; nicht null ist**.
+Der Versand an die verantwortliche Person wird gestartet, **wenn wenigstens eine der drei Ereignisvariablen &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot;, &quot;vars.strWorkflowStop&quot; nicht null ist**.
 
 ![](assets/uc_monitoring_workflow_test.png)
 
@@ -131,7 +131,7 @@ Die Versandaktivität basiert auf einer **Versandvorlage**, auf die über den Kn
 
 In der Vorlage müssen folgende Informationen gespeichert sein:
 
-* **E-Mail-Adresse des Supervisors**,
+* **E-Mail-Adresse der verantwortlichen Person**,
 * **HTML-Inhalt** mit der Möglichkeit, einen personalisierten Text einzufügen.
 
   ![](assets/uc_monitoring_workflow_variables_diffusion.png)

@@ -1,6 +1,6 @@
 ---
-title: Best Practices bei der Verwendung von Audiences
-description: Erfahren Sie mehr über Best Practices bei der Verwendung von Audiences
+title: Best Practices bei der Verwendung von Zielgruppen
+description: Erfahren Sie mehr über Best Practices bei der Verwendung von Zielgruppen
 feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
@@ -14,4 +14,4 @@ ht-degree: 100%
 
 ---
 
-# Best Practices bei der Verwendung von Audiences
+# Best Practices bei der Verwendung von Zielgruppen

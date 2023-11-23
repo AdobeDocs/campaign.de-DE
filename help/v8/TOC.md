@@ -73,8 +73,8 @@ ht-degree: 100%
          + [Funktionsweise der Ereignisbeschreibung](send/event-description.md)
          + [Senden und Überwachen von Nachrichten](send/delivery-execution.md)
 + Profil- und Zielgruppen-Management {#audience}
-   + [Erste Schritte mit Profilen und Audiences](audiences/gs-audiences.md)
-   + [Verwenden von Audiences](start/audiences.md)
+   + [Erste Schritte mit Profilen und Zielgruppen](audiences/gs-audiences.md)
+   + [Verwenden von Zielgruppen](start/audiences.md)
    + [Zugriff auf Profile](audiences/view-profiles.md)
    + Hinzufügen von Profilen {#add-profiles}
       + [Manuelles Erstellen von Profilen](audiences/create-profiles.md)
@@ -83,7 +83,7 @@ ht-degree: 100%
       + [Erfassen von Profildaten in Web-Formularen](audiences/collect-profiles.md)
       + [Arbeiten mit Zielgruppen-Mappings](audiences/target-mappings.md)
       + [Erstellen von Testprofilen](audiences/test-profiles.md)
-   + Erstellen von Audiences {#create-audiences}
+   + Erstellen von Zielgruppen {#create-audiences}
       + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
       + [Erstellen und Verwalten von Filtern](audiences/create-filters.md)
       + [Zielgruppen mit Adobe-Lösungen freigeben](start/shared-audiences.md)

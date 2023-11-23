@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Mit Campaign können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können eine Datei laden, mehrere Kontaktaktualisierungen planen und automatisieren, Daten im Internet sammeln oder Profilinformationen direkt in die Empfängertabelle eingeben.
 
-![](../assets/do-not-localize/glass.png) Erste Schritte mit [Audiences](audiences.md)
+![](../assets/do-not-localize/glass.png) Erste Schritte mit [Zielgruppen](audiences.md)
 
 ![](../assets/do-not-localize/glass.png) Verstehen des Campaign-[Datenmodells](../dev/datamodel.md)
 
@@ -45,6 +45,6 @@ Verwenden Sie Campaign, um Web-Formulare zu erstellen und Profilinformationen ei
 
 **Verwandte Themen**
 
-* [Audiences erstellen](audiences.md)
+* [Zielgruppen erstellen](audiences.md)
 * [Profile deduplizieren](../../automation/workflow/deduplication-merge.md)
 * [Profildaten anreichern](../../automation/workflow/enrich-data.md)

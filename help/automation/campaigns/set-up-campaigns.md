@@ -6,7 +6,7 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 100%
 
@@ -36,8 +36,8 @@ Ein Programm ist ein Satz von Marketing-Aktivitäten, die für einen Zeitraum de
 1. **Erstellen Sie Ihre erste Kampagne**
 In einer Kampagne werden alle Elemente im Zusammenhang mit ihrer Durchführung zusammengefasst: Versand, Regeln zur Zielgruppenbestimmung, Kosten, Exportdateien, zugehörige Dokumente usw. Jede Kampagne ist mit einem Programm verbunden. In [diesem Abschnitt](marketing-campaign-create.md#create-a-campaign) erfahren Sie, wie Sie eine Kampagne erstellen.
 
-1. **Audience auswählen**
-Audiences können aus einer Liste importiert oder mithilfe von Abfragen in einen Kampagnen-Workflow integriert werden. Wie Sie die Zielgruppe einer Kampagne definieren, erfahren Sie in [diesem Abschnitt](marketing-campaign-target.md#select-the-target-population).
+1. **Zielgruppe auswählen**
+Zielgruppen können aus einer Liste importiert oder mithilfe von Abfragen in einen Kampagnen-Workflow integriert werden. Wie Sie die Zielgruppe einer Kampagne definieren, erfahren Sie in [diesem Abschnitt](marketing-campaign-target.md#select-the-target-population).
 
 1. **Sendungen erstellen**
 Orchestrieren Sie Ihre kanalübergreifenden Sendungen in Ihren Kampagnen. Optimieren Sie Ihre Kommunikation mithilfe von Adobe Campaign durch personalisierte E-Mails, SMS, Push-Benachrichtigungen und In-App-Nachrichten. Sie können auch Briefpost-Sendungen hinzufügen. In [diesem Abschnitt](marketing-campaign-deliveries.md) erfahren Sie, wie Sie Sendungen in Ihren Kampagnen erstellen, validieren und überwachen.

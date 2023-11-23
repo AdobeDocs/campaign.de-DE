@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Erstellen und Verwalten von Filtern{#create-filters}
 
-Beim Filtern von Daten wird ein kleinerer Teil Ihrer Datenmenge ausgewählt, nämlich nur die Einträge, die bestimmten Kriterien entsprechen. Diese Untergruppe wird für bestimmte Aktionen (Aktualisierungen, Erstellung von Audiences) oder Analysen verwendet.
+Beim Filtern von Daten wird ein kleinerer Teil Ihrer Datenmenge ausgewählt, nämlich nur die Einträge, die bestimmten Kriterien entsprechen. Diese Untergruppe wird für bestimmte Aktionen (Aktualisierungen, Erstellung von Zielgruppen) oder Analysen verwendet.
 
 Beim Durchsuchen von Campaign über den **[!UICONTROL Explorer]** werden die Daten in Listen angezeigt. Sie können vorhandene integrierte Filter verwenden, um auf eine bestimmte Untergruppe dieser Daten zuzugreifen: Beispielsweise Adressen in Quarantäne, nicht kontaktierte Empfänger, eine bestimmte Altersgruppe oder das Erstellungsdatum.
 
@@ -330,7 +330,7 @@ In diesen Beispielen erfahren Sie, wie Sie erweiterte Abfragen erstellen:
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de) erfahren Sie, wie Sie einfache Empfängerattribute für Ihr Targeting verwenden können.
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de) erfahren Sie, wie Sie nach Empfängern filtern können, die in den letzten 7 Tagen nicht kontaktiert wurden.
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de) erfahren Sie, wie Sie eine Liste der Benutzer abrufen können, die nach aktiven Konten gefiltert werden können.
-* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de) erfahren Sie, wie Sie eine Audience für Geburtstags-E-Mails erstellen können.
+* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de) erfahren Sie, wie Sie eine Zielgruppe für Geburtstags-E-Mails erstellen können.
 
 
 ### Erweiterte Parameter für vordefinierte Filter {#param-for-data-filters}

@@ -47,7 +47,7 @@ In Adobe Campaign und Adobe Target müssen folgende Schritte vorgenommen werden:
 
 1. [Dynamisches Angebot in eine E-Mail einfügen](#inserting-dynamic-offer)
 1. [Umleitungsangebote erstellen](#create-redirect-offers)
-1. [Audiences erstellen](#audiences-target)
+1. [Zielgruppen erstellen](#audiences-target)
 1. [Experience Targeting-Aktivität erstellen](#creating-targeting-activity)
 1. [Vorschau anzeigen und Nachricht senden](#preview-send-email)
 
@@ -96,9 +96,9 @@ In unserem Fall benötigen wir zwei Umleitungsangebote. Das dritte (das Standard
 
 1. Führen Sie dieselben Schritte für das andere Umleitungsangebot durch. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=de#experiences).
 
-### Audiences erstellen {#audiences-target}
+### Zielgruppen erstellen {#audiences-target}
 
-Erstellen Sie in Adobe Target die zwei Audiences, in die die Besucher Ihres Angebots unterteilt werden und denen die unterschiedlichen Inhalte präsentiert werden. Fügen Sie für jede Audience eine Regel hinzu, um festzulegen, wer das Angebot sehen kann.
+Erstellen Sie in Adobe Target die zwei Zielgruppen, in die die Besucher Ihres Angebots unterteilt werden und denen die unterschiedlichen Inhalte präsentiert werden. Fügen Sie für jede Audience eine Regel hinzu, um festzulegen, wer das Angebot sehen kann.
 
 1. Um in Target eine neue Audience zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Zielgruppen]** auf **[!UICONTROL Zielgruppe erstellen]**.
 
@@ -116,7 +116,7 @@ Erstellen Sie in Adobe Target die zwei Audiences, in die die Besucher Ihres Ange
 
 Wir müssen in Adobe Target eine Experience Targeting-Aktivität erstellen, die diversen Erlebnisse definieren und sie mit den entsprechenden Angeboten verknüpfen.
 
-Zuerst müssen Sie die Audience definieren:
+Zuerst müssen Sie die Zielgruppe definieren:
 
 1. Um eine Experience Targeting-Aktivität zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Aktivitäten]** auf **[!UICONTROL Aktivität erstellen]** und dann auf **[!UICONTROL Experience Targeting]**.
 
@@ -134,7 +134,7 @@ Zuerst müssen Sie die Audience definieren:
 
 1. Erstellen Sie ein weiteres Erlebnis durch Klicken auf **[!UICONTROL Experience Targeting hinzufügen]**.
 
-Fügen Sie dann für jede Audience Inhalt hinzu:
+Fügen Sie dann für jede Zielgruppe Inhalt hinzu:
 
 1. Wählen Sie den Namen des Speicherorts, den Sie beim Einfügen des dynamischen Angebots in Adobe Campaign festgelegt haben.
 

@@ -6,7 +6,7 @@ feature: Workflows
 role: Admin
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2015'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Wenn Sie auf das Symbol **[!UICONTROL Fortschritt anzeigen]** klicken, werden Wo
 
 ![](assets/s_user_segmentation_toolbar_progr.png)
 
-In diesem Fall erscheinen laufende Aktivitäten in Blau, wartende Aktivitäten blinken und Warnhinweise und Fehler werden in Orange bzw. Rot angezeigt. Des Weiteren werden auf den ausgehenden Transitionen die Ergebnisse der Aktivitäten eingeblendet, gefolgt vom in der Aktivität definierten Ergebnistitel sowie der Ausführungsdauer, wenn sie mehr als eine Sekunde beträgt.
+In diesem Fall erscheinen laufende Aktivitäten in Blau, ausstehende Aktivitäten blinken und Warnhinweise und Fehler werden in Orange bzw. Rot angezeigt. Des Weiteren werden auf den ausgehenden Transitionen die Ergebnisse der Aktivitäten eingeblendet, gefolgt vom in der Aktivität definierten Ergebnistitel sowie der Ausführungsdauer, wenn sie mehr als eine Sekunde beträgt.
 
 ![](assets/s_user_segmentation_results.png)
 
@@ -112,7 +112,7 @@ Im Explorer enthält die Listenansicht der Workflows standardmäßig die Spalte 
 
 ![](assets/wf-explorer_errors_col.png)
 
-Wenn ein Workflow aufgrund von Fehlern ausgesetzt wird, werden der oder die mit dem Workflow-Monitoring betrauten Benutzer per E-Mail benachrichtigt, vorrausgesetzt ihre E-Mail-Adresse ist im Benutzerprofil gespeichert. Die zu benachrichtigende Benutzergruppe wird im Feld **[!UICONTROL Supervisor(en)]** der Workflow-Eigenschaften ausgewählt.
+Wenn ein Workflow aufgrund von Fehlern ausgesetzt wird, werden der oder die mit dem Workflow-Monitoring betrauten Benutzer per E-Mail benachrichtigt, vorrausgesetzt ihre E-Mail-Adresse ist im Benutzerprofil gespeichert. Die zu benachrichtigende Benutzergruppe wird im Feld **[!UICONTROL Verantwortliche(r)]** der Workflow-Eigenschaften ausgewählt.
 
 ![](assets/wf-properties_select-supervisors.png)
 
@@ -235,13 +235,13 @@ Sie können auch spezifische technische Workflows erstellen, um unnötige Daten 
 
 Die Arbeitstabellen ausgesetzter Workflows werden standardmäßig nie bereinigt. Ab Build 8880 werden Workflows, die zu lange in einem ausgesetzten Zustand angehalten werden, automatisch gestoppt und deren Arbeitstabellen bereinigt. Dieses Verhalten wird wie folgt ausgelöst:
 
-* Sind Workflows länger als sieben Tage ausgesetzt, erscheint ein Warnhinweis im Monitoring-Dashboard (und in der Monitoring-API) und eine Benachrichtigung wird an die Supervisoren-Gruppe gesendet.
+* Sind Workflows länger als sieben Tage ausgesetzt, erscheint ein Warnhinweis im Monitoring-Dashboard (und in der Monitoring-API) und eine Benachrichtigung wird an die Gruppe der Verantwortlichen gesendet.
 * Dasselbe passiert jede Woche, wenn der technische Workflow **[!UICONTROL cleanupPausedWorkflows]** ausgelöst wird. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](delivery.md).
 * Nach vier Benachrichtigungen (d. h. standardmäßig nach einem Monat im ausgesetzten Zustand) wird der Workflow bedingungslos gestoppt. Ein Protokoll wird im Workflow angezeigt, nachdem er angehalten wurde. Die Tabellen werden bei der nächsten Ausführung des Workflows **[!UICONTROL Bereinigung]** bereinigt
 
 Diese Zeiträume können mit der Option NmsServer_PausedWorkflowPeriod konfiguriert werden.
 
-Die Supervisoren des Workflows sowie der Ersteller und der letzte Benutzer, der den Workflow modifiziert hat, werden benachrichtigt. Administratoren erhalten keine Benachrichtigung.
+Die Verantwortlichen des Workflows sowie der Ersteller und der letzte Benutzer, der den Workflow modifiziert hat, werden benachrichtigt. Administratoren erhalten keine Benachrichtigung.
 
 ## Filtern von Workflows nach ihrem Status{#filtering-workflows-status}
 

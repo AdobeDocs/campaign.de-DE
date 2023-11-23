@@ -6,7 +6,7 @@ feature: Workflows
 role: User, Admin
 exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
 source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 100%
 
@@ -54,9 +54,9 @@ Kampagnen-Workflows (Workflows, die als Teil einer Kampagne erstellt werden) mit
 
 Alle Ihre terminierten in Produktionsumgebungen ausgeführten Workflows sollten überwacht werden, damit Sie bei Auftreten eines Fehlers benachrichtigt werden.
 
-Wählen Sie dazu in den Workflow-Eigenschaften eine Gruppe von Supervisoren. Dies können entweder die standardmäßigen **[!UICONTROL Workflow-Supervisoren]** oder eine benutzerdefinierte Gruppe sein. Achten Sie darauf, dass zumindest ein Benutzer der Gruppe eine eingerichtete E-Mail-Adresse besitzt.
+Wählen Sie dazu in den Workflow-Eigenschaften eine Gruppe von Verantwortlichen. Dies können entweder die standardmäßigen **[!UICONTROL Workflow-Verantwortlichen]** oder eine benutzerdefinierte Gruppe sein. Achten Sie darauf, dass zumindest ein Benutzer der Gruppe eine eingerichtete E-Mail-Adresse besitzt.
 
-Bestimmen Sie zu Beginn der Workflow-Erstellung Workflow-Supervisoren. Diese werden bei Fehlern per E-Mail informiert. Weitere Informationen hierzu finden Sie unter [Fehler beheben](monitor-workflow-execution.md#managing-errors).
+Bestimmen Sie zu Beginn der Workflow-Erstellung Workflow-Verantwortliche. Diese werden bei Fehlern per E-Mail informiert. Weitere Informationen hierzu finden Sie unter [Fehler beheben](monitor-workflow-execution.md#managing-errors).
 
 Überprüfen Sie regelmäßig den Tab **[!UICONTROL Monitoring]**, um den Gesamtstatus der aktiven Workflows anzuzeigen. Weitere Informationen hierzu finden Sie unter [Instanz-Monitoring](monitor-workflow-execution.md#instance-supervision).
 

@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
 source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Bevor Sie mit der Implementierung von Marketing-Kampagnen beginnen, müssen Sie 
 
 * **Plan**: der Marketing-Plan kann mehrere Programm enthalten. Er ist an einen Zeitraum im Kalender gebunden, verfügt über zugewiesene Haushaltsmittel und kann auch mit Dokumenten und Zielen verknüpft werden.
 
-* **Kampagnen-Workflow** ein Kampagnen-Workflow enthält Aktivitäten zum Aufbau der Kampagnen-Logik. Verwenden Sie Kampagnen-Workflows, um Audiences zu definieren und Sendungen für alle verfügbaren Kanäle zu erstellen.
+* **Kampagnen-Workflow** ein Kampagnen-Workflow enthält Aktivitäten zum Aufbau der Kampagnen-Logik. Verwenden Sie Kampagnen-Workflows, um Zielgruppen zu definieren und Sendungen für alle verfügbaren Kanäle zu erstellen.
 
 * **Wiederkehrende Kampagnen**: wiederkehrende Kampagnen werden anhand einer bestimmten Vorlage erstellt, die die auszuführende Workflow-Vorlage definiert, und anhand der Ausführungsplanung.
 
@@ -64,13 +64,13 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=de) erfahren Sie mehr über wiederkehrende Kampagnen und darüber, wie Sie diese konfigurieren können.
 
-1. **Audiences definieren**
+1. **Zielgruppen definieren**
 
-   Sie können die Audience in einem Workflow erstellen oder eine bestehende Gruppe auswählen, z. B. eine Empfänger-Liste, Abonnenten eines Newsletters, Empfänger eines vorherigen Versands oder eine beliebige Filterbedingung.
+   Sie können die Zielgruppe in einem Workflow erstellen oder eine bestehende Gruppe auswählen, z. B. eine Empfänger-Liste, Abonnenten eines Newsletters, Empfänger eines vorherigen Versands oder eine beliebige Filterbedingung.
 
    ![](assets/campaign-wf.png)
 
-   Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de) erfahren Sie, wie Sie die Audience für Ihre Nachrichten definieren.
+   Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de) erfahren Sie, wie Sie die Zielgruppe für Ihre Nachrichten definieren.
 
 1. **Sendungen erstellen**
 

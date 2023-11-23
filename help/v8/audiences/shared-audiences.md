@@ -1,6 +1,6 @@
 ---
-title: Audiences für Adobe Experience Cloud-Lösungen freigeben
-description: Erfahren Sie, wie Sie Audiences für Adobe Experience Cloud-Lösungen freigeben können
+title: Zielgruppen für Adobe Experience Cloud-Lösungen freigeben
+description: Erfahren Sie, wie Sie Zielgruppen für Adobe Experience Cloud-Lösungen freigeben können
 feature: Audiences, Profiles
 role: User
 level: Beginner
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ---
 
-# Audiences für Adobe Experience Cloud-Lösungen freigeben{#shared-audiences}
+# Zielgruppen für Adobe Experience Cloud-Lösungen freigeben{#shared-audiences}
 
 Option 1: AEP-Quellen und -Ziele
 

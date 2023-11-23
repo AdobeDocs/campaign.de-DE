@@ -6,7 +6,7 @@ role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 In diesem Abschnitt erfahren Sie, wie Sie Adobe Campaign an die Anforderungen Ihrer Firma anpassen. Verwenden Sie die folgenden Richtlinien, um Ihre Implementierung zu strukturieren und zu organisieren.
 
 1. **Einstellungen definieren**: Zugriff gewähren, Client-Konsole freigeben, Kanäle konfigurieren (E-Mail, Push, SMS). [Weitere Informationen](#implementation-ac-settings)
-1. **Ihre Umgebung vorbereiten**: Profile importieren, Audiences erstellen, Workflow- und Kampagnenvorlagen entwerfen, Typologieregeln erstellen. [Weitere Informationen](#implementation-prepare-your-env)
+1. **Ihre Umgebung vorbereiten**: Profile importieren, Zielgruppen erstellen, Workflow- und Kampagnenvorlagen entwerfen, Typologieregeln erstellen. [Weitere Informationen](#implementation-prepare-your-env)
 1. **Ihre Instanz anpassen**: neue Datenfelder erstellen, Tabellen/Schemata hinzufügen. [Weitere Informationen](#implementation-custom-your-instance)
 1. **Prozesse automatisieren**: Automatisierungsfunktionen von Adobe Campaign konfigurieren. [Weitere Informationen](#implementation-automation)
 1. **Ihre Bereitstellung erweitern**: mit Adobe-Lösungen, anderen Produkten und Systemen verbinden – Connectoren, Einstellungen für mehrere Lösungen. [Weitere Informationen](#implementation-extend)
@@ -68,13 +68,13 @@ Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. ein nativ
 
 Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folgendes tun:
 
-1. **Importieren von Profilen und Erstellen von Audiences**
+1. **Importieren von Profilen und Erstellen von Zielgruppen**
 
    Mit Campaign können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können eine Datei laden, mehrere Kontaktaktualisierungen planen und automatisieren, Daten im Internet sammeln oder Profilinformationen direkt in die Empfängertabelle eingeben.
 
    ![](../assets/do-not-localize/glass.png) [Erfahren Sie, wie Sie Profile importieren](import.md).
 
-   Audiences werden in Listen gruppiert und können über Workflows erstellt werden. Sie können dann in kanalübergreifenden Sendungen gezielt angesprochen werden.
+   Zielgruppen werden in Listen gruppiert und können über Workflows erstellt werden. Sie können dann in kanalübergreifenden Sendungen gezielt angesprochen werden.
 
    ![](../assets/do-not-localize/glass.png) [Erfahren Sie, wie Sie Audiences definieren](audiences.md).
 
@@ -135,7 +135,7 @@ Sie können viele verschiedene Bereiche und Funktionen in Campaign anpassen. Die
 
 ## Einrichten der Automatisierung in Campaign{#implementation-automation}
 
-Nutzen Sie die Funktionen zur Kampagnenautomatisierung, um komplexe Marketing-Kampagnen an verschiedene Audiences über mehrere Kanäle zu orchestrieren.
+Nutzen Sie die Funktionen zur Kampagnenautomatisierung, um komplexe Marketing-Kampagnen an verschiedene Zielgruppen über mehrere Kanäle zu orchestrieren.
 
 * Verwenden Sie **Workflows** zur Verwaltung von Prozessen und Daten. Weitere Informationen finden Sie in [dieser Dokumentation](../../automation/workflow/about-workflows.md).
 

@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Verwenden von Workflow-Daten{#how-to-use-workflow-data}
 
-Sie können Workflow-Aktivitäten zur Durchführung unterschiedlicher Aufgaben verwenden. Im Folgenden finden Sie Beispiele zur Aktualisierung der Datenbank durch die Erstellung von Listen, die Verwaltung von Abonnements, den Versand von Nachrichten über einen Workflow oder die Anreicherung von Sendungen und ihren Audiences.
+Sie können Workflow-Aktivitäten zur Durchführung unterschiedlicher Aufgaben verwenden. Im Folgenden finden Sie Beispiele zur Aktualisierung der Datenbank durch die Erstellung von Listen, die Verwaltung von Abonnements, den Versand von Nachrichten über einen Workflow oder die Anreicherung von Sendungen und ihren Zielgruppen.
 
 Mehrere Anwendungsfälle für Workflows finden Sie in [diesem Abschnitt](workflow-use-cases.md).
 

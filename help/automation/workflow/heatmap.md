@@ -6,7 +6,7 @@ feature: Workflows, Heatmap
 role: Admin
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Genauer gesagt, hilft sie den Administratoren der Plattform bei Folgendem:
 
 >[!NOTE]
 >
->Zusätzlich zur **Workflow-Heatmap** können Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen und wiederkehrende Nachrichten an Supervisoren senden können. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](workflow-supervision.md).
+>Zusätzlich zur **Workflow-Heatmap** können Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen und wiederkehrende Nachrichten an Verantwortliche senden können. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](workflow-supervision.md).
 
 Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgenden Konzepte: [Workflows](about-workflows.md), [Aktivitäten](activities.md) und [Best Practices bei Workflows](workflow-best-practices.md).
 

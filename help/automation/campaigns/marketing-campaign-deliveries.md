@@ -6,7 +6,7 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Ein Versand kann durchgeführt werden, sobald alle Validierungen erteilt wurden.
 
 ### Starten eines E-Mail- oder Mobile-Versands {#start-an-online-delivery}
 
-Sobald alle Validierungsanfragen bestätigt wurden, erhält der Versand den Status **[!UICONTROL Zu bestätigen]** und kann gestartet werden. Validierungsverantwortliche, die den Versand starten können, werden darüber informiert, dass ein Versand startbereit ist.
+Sobald alle Validierungsanfragen bestätigt wurden, erhält der Versand den Status **[!UICONTROL Bestätigung ausstehend]** und kann gestartet werden. Validierungsverantwortliche, die den Versand starten können, werden darüber informiert, dass ein Versand startbereit ist.
 
 ![](assets/confirm-delivery.png)
 
@@ -63,7 +63,7 @@ Sie können jedoch auch zulassen, dass der/die Kampagnenverantwortliche den Vers
 
 ### Starten eines Briefpostversands {#start-an-offline-delivery}
 
-Sobald alle Validierungen erteilt wurden, ändert sich der Versandstatus in **[!UICONTROL Extraktion ausstehend]**. Die Extraktionsdateien werden über einen speziellen [technischen Workflow](../workflow/technical-workflows.md) erstellt, der in einer Standardkonfiguration automatisch gestartet wird, wenn ein Briefpostversand auf die Extraktion wartet. Wenn ein Prozess in Bearbeitung ist, wird er im Dashboard angezeigt und kann über seinen Link bearbeitet werden.
+Sobald alle Validierungen erteilt wurden, ändert sich der Versandstatus in **[!UICONTROL Extraktion ausstehend]**. Die Extraktionsdateien werden über einen speziellen [technischen Workflow](../workflow/technical-workflows.md) erstellt, der in einer Standardkonfiguration automatisch gestartet wird, wenn bei einem Briefpostversand die Extraktion ausstehend ist. Wenn ein Prozess in Bearbeitung ist, wird er im Dashboard angezeigt und kann über seinen Link bearbeitet werden.
 
 Wenn der Extraktions-Workflow korrekt ausgeführt wurde, muss die Extrationsdatei validiert werden (sofern die Validierung der Extraktionsdatei in der Versandkonfiguration aktiviert wurde). [Weitere Informationen](marketing-campaign-approval.md#approving-an-extraction-file).
 
