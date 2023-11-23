@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: f807963a7640773ac18d49999b561f2f3b894d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Erfahren Sie, welche Datenbanken Adobe Campaign v8 verwendet, warum Daten repli
 
 ### Datenreplikationsrichtlinien {#data-replication-policies}
 
-Replikationsrichtlinien richten sich nach der Größe der Tabellen. Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen erhalten inkrementelle Aktualisierungen, während andere ersetzt werden.
+Replikationsrichtlinien richten sich nach der Größe der Tabellen. Einige Tabellen werden in Echtzeit repliziert, andere hingegen stündlich. Einige Tabellen erhalten inkrementelle Aktualisierungen, während andere ersetzt werden.
 
 Zusätzlich zum integrierten technischen Workflow **Referenztabellen replizieren** können Sie die Datenreplikation in Ihren Workflows erzwingen.
 
