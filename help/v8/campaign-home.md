@@ -3,10 +3,10 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 8b1f8fe7f78440f1db1b518f1cca24a898dabddb
+source-git-commit: 05afe85c73a6fc54af6e139cdaadb98cd7a832b6
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 100%
+source-wordcount: '454'
+ht-degree: 58%
 
 ---
 
@@ -16,67 +16,102 @@ ht-degree: 100%
 
 ## Neue Funktionen
 
-* **[[!DNL Adobe Campaign] Automatisierungshandbuch](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"}** – Erfahren Sie, wie Sie Workflows und Kampagnen erstellen
+Verschaffen Sie sich einen Überblick über die neuesten Verbesserungen in Journey Optimizer! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie im [Versionshinweise](start/release-notes.md).
 
-* **[ [!DNL Adobe Campaign]](start/get-started.md)** – Wichtige Funktionen und Anwendungsfälle
+>[!BEGINTABS]
 
-* **[Neue Funktionen in v8](start/whats-new.md)** – Entdecken Sie die Möglichkeiten von Campaign v8
+>[!TAB Verbesserter Push-Benachrichtigungsdienst]
 
-* **[Implementierungsrichtlinien](start/implement.md)** – Hier erfahren Sie, wie Sie Ihre Implementierung beginnen.
+Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser wird durch ein robustes Framework gestützt, das auf moderner Spitzentechnologie aufbaut. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).
 
-* **[Von v7 zu v8](start/v7-to-v8.md)** – Planen Sie den Wechsel von Campaign Classic v7 zu v8? Die wichtigsten Unterschiede
+[![Bild](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
 
-* **[Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}** – Führen Sie mit dem Campaign Control Panel eigenständig wichtige Administratoraufgaben aus
+>[!TAB Verbesserter Durchsatz für mobile Kanäle]
 
-* **[Versionshinweise](start/release-notes.md)**: Lernen Sie die neuesten Funktionen und Verbesserungen kennen
+Der neu eingeführte Push-Benachrichtigungsdienst zeigt erhebliche Verbesserungen des Durchsatzes für Push-Android und Push-iOS im Vergleich zur vorherigen Version (v8.4). Benutzerinnen und Benutzer werden mit dem aktualisierten Dienst in der neuesten Version (v8.5) eine merklich bessere Leistung feststellen.
 
+* Push-Benachrichtigungen (Android): bis zu **5x** schneller
+* Push-Benachrichtigungen (iOS): bis zu **2.2x** schneller
 
-## Erste Schritte
+Der SMS-Durchsatz wurde durch eine Reihe von Optimierungen erheblich verbessert, was die Geschwindigkeit und Effizienz der SMS-Kommunikation deutlich besser macht. Diese Upgrades haben zu einem höheren Durchsatz von der vorherigen Version (v8.4) auf die neueste Version (v8.5) geführt, die Aktualisierungen sowohl beim Senden als auch beim Feedback umfasst. Benutzerinnen und Benutzer können jetzt die Vorteile dieses erweiterten SMS-Dienstes nutzen.
 
+* SMS-Durchsatz: bis zu <strong>5x</strong> schneller</li>
 
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td>
-<a href="start/connect.md">
-<img alt="Herstellen einer Verbindung zu Campaign v8" src="start/assets/do-not-localize/login.jpeg">
-</a>
-<div><a href="start/connect.md"><strong>Herstellen einer Verbindung zu Campaign</strong>
-</div>
-<p>
-</td>
-<td>
-<a href="start/import.md">
-<img alt="Importieren von Profilen" src="start/assets/do-not-localize/profiles.jpeg">
-</a>
-<div>
-<a href="start/import.md"><strong>Importieren von Profilen</strong></a>
-</div>
-<p>
-</td>
-<td>
-<a href="start/create-message.md">
-<img alt="Erstellen einer E-Mail" src="start/assets/do-not-localize/email-design.jpeg">
-</a>
-<div>
-<a href="start/create-message.md"><strong>Erstellen einer E-Mail</strong></a>
-</div>
-<p></td>
-<td>
-<a href="send/push.md">
-<img alt="Senden von Push-Benachrichtigungen" src="start/assets/do-not-localize/push-send.jpeg">
-</a>
-<div>
-<a href="send/push.md"><strong>Senden von Push-Benachrichtigungen</strong></a>
-</div>
-<p>
-</td>
-</tr></table>
+Diese maximale Durchsatzleistung wurde von Adobe-Test-Teams unter Laborbedingungen gemessen.
 
+>[!ENDTABS]
 
-## Mehr Ressourcen
+## Erste Schritte mit den Grundlagen
 
-* [Schutzmechanismen und Begrenzungen](start/ac-guardrails.md)
-* [Architektur](architecture/architecture.md)
-* [Messen und Verfolgen](reporting/gs-reporting.md)
-* [Herstellen von Verbindungen zu anderen Lösungen](connect/integration.md)
-* [Häufig gestellte Fragen zu Campaign v8](start/campaign-faq.md)
+<table style="table-layout:fixed">
+  <tr style="border: 0;">
+    <td>
+    <a href="start/whats-new.md"><img src="assets/do-not-localize/start-capabilities.png"></a></a>
+    <div><strong>Schlüsselfunktionen</strong><br/>Erfahren Sie mehr über die wichtigsten Funktionen von Adobe Campaign v8 für die kanalübergreifende Kampagnenverwaltung.</div>
+    </td>
+    <td>
+    <a href="start/connect.md"><img src="assets/do-not-localize/start-connect.jpeg"></a>
+    <div><strong>Verbindung zu Campaign v8 herstellen</strong><br/>Erfahren Sie, wie Sie eine Verbindung zu Adobe Campaign v8 herstellen und Ihre Kampagnenverwaltungs-Journey starten, indem Sie die Client Console installieren und konfigurieren.</div><br/>
+    </td>
+    <td>
+    <a href="start/create-message.md"><img src="assets/do-not-localize/start-send.jpeg"></a>
+    <div><strong>Nachrichten senden</strong><br/>Hier erfahren Sie, wie Sie Nachrichten über verschiedene Kanäle senden können, z. B. E-Mail, SMS oder Push-Benachrichtigungen.
+    </div></td>
+    <td>
+    <a href="audiences/create-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
+    <div><strong>Profile importieren</strong><br/>Die Erstellung von Profilen in der Adobe Campaign v8-Datenbank ist unkompliziert. Fügen Sie Profile manuell oder durch Importe hinzu, verfeinern Sie Kundendaten und passen Sie Kampagnen mühelos an.</div>
+    </td>
+  </tr>
+</table>
+
+## Dokumentation
+
+<table style="table-layout:auto">
+  <tr style="border: 0;">
+    <td>
+      <img src="assets/do-not-localize/icon-start.svg" width="70px">
+    <td>
+      <strong>Erste Schritte</strong><br/><a href="start/campaign-ui.md">Benutzeroberfläche</a> - <a href="start/ac-components.md">Komponenten und Prozesse</a> - <a href="start/v7-to-v8.md">Von Classic v7 bis v8</a> - <a href="start/campaign-faq.md">FAQs</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-experience.svg" width="70px">
+    </td>
+    <td>
+      <strong>Kundenerlebnis</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatisieren mit Workflows</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Kampagnenverwaltung</a> - <a href="interaction/interaction.md">Entscheidungsmanagement</a> - <a href="send/personalize.md">Personalisierung</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-send.svg" width="70px">
+    </td>
+    <td>
+      <strong>Nachrichten senden</strong><br/><a href="start/create-message.md">Erste Schritte</a> - <a href="send/preview-and-proof.md">Vorschau und Testsendungen</a> - <a href="send/predictive.md">Sendezeitoptimierung</a> - <a href="reporting/gs-reporting.md">Reports &amp; Analysen</a>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td>
+      <img src="assets/do-not-localize/icon_profile-audience.svg" width="70px">
+    </td>
+    <td>
+      <strong>Profile und Audiences</strong><br/><a href="audiences/create-profiles.md">Profile hinzufügen</a> - <a href="audiences/create-audiences.md">Erstellen von Zielgruppen</a> - <a href="start/subscriptions.md">Abonnements verwalten</a> - <a href="start/privacy.md">Datenschutz</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-configure.svg" width="70px">
+    </td>
+    <td>
+      <strong>Architektur und Konfiguration</strong><br/><a href="architecture/architecture.md">Architektur</a> - <a href="start/implement.md">Implementierung von Campaign v8</a> - <a href="connect/integration.md">Verbindung mit anderen Lösungen</a> - <a href="start/gs-permissions.md">Benutzer und Berechtigungen</a>
+    </td>
+    <td>
+      <img src="assets/do-not-localize/icon-dev.svg" width="70px">
+    </td>
+    <td>
+      <strong>Entwicklungsressourcen</strong><br/><a href="dev/datamodel.md">Datenmodell von Campaign v8</a> - <a href="dev/schemas.md">Schemas</a> - <a href="dev/api.md">APIs</a>
+    </td>
+  </tr>
+</table>
+
+## Zusätzliche Ressourcen
+
 * [Adobe Campaign v8 – Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}
+* [-Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"}
+* [[!DNL Adobe Campaign] Automatisierungshandbuch](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"}
+* [Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
+
