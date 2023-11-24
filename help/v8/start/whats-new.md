@@ -1,18 +1,18 @@
 ---
 title: Neue Funktionen in Campaign v8
-description: Entdecken Sie die wichtigsten Funktionen in Adobe Campaign v8, neue Funktionen und alles, was Sie von der neuesten Version erwarten können.
-feature: Overview, Release Notes
+description: Wichtige Funktionen in Adobe Campaign v8
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 5c4bbbd06eb7bf6dc9ada1d08c3fc696e88ee760
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
-# Neue Funktionen in Adobe Campaign v8  {#ac-gs-what-is-new}
+# Wichtige Adobe Campaign v8-Funktionen {#ac-gs-what-is-new}
 
 Adobe Campaign v8 wurde für Marketer entwickelt, die eine branchenführende Cloud-Lösung für das kanalübergreifende Kampagnen-Management für das gesamte Unternehmen benötigen. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Adobe Campaign v8 ist außerdem mit einem skalierbaren Echtzeit-Messaging-Server verbunden, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einer umfassenden Payload von jedem IT-System für Dinge wie Passwortzurücksetzung, Bestellbestätigungen, E-Quittungen und vieles mehr zu senden.
 
