@@ -3,9 +3,9 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 05afe85c73a6fc54af6e139cdaadb98cd7a832b6
+source-git-commit: 09aacde1f06b679899ca8a736419f64a5cf46823
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '455'
 ht-degree: 58%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 58%
 
 ## Neue Funktionen
 
-Verschaffen Sie sich einen Überblick über die neuesten Verbesserungen in Journey Optimizer! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie im [Versionshinweise](start/release-notes.md).
+Verschaffen Sie sich einen Überblick über die neuesten Verbesserungen in Adobe Campaign v8! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie im [Versionshinweise](start/release-notes.md).
 
 >[!BEGINTABS]
 
