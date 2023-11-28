@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: b9e4cb3cbbb5a29879146eeecf7261b59f413993
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 99%
 
 ---
@@ -161,11 +161,10 @@ ht-degree: 99%
       + [Campaign FDA -Bereitstellung](architecture/fda-deployment.md)
       + FFDA-Bereitstellung in Unternehmen {#ffda}
          + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
-         + Merkmale {#ffda-characteristics}
-            + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
-            + [Neue APIs](architecture/new-apis.md)
-            + [API-Staging-Mechanismus](architecture/staging.md)
-            + [Replikationsmechanismus](architecture/replication.md)
+         + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
+         + [Neue APIs](architecture/new-apis.md)
+         + [API-Staging-Mechanismus](architecture/staging.md)
+         + [Replikationsmechanismus](architecture/replication.md)
    + Implementierung {#implement}
       + [Implementierungsschritte](start/implement.md)
       + [Anpassen der Instanz](dev/customize.md)
