@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
-source-git-commit: b9e4cb3cbbb5a29879146eeecf7261b59f413993
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 99%
+source-wordcount: '579'
+ht-degree: 98%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 99%
       + [Konfigurieren von Push-Benachrichtigungen mit der Datenerfassung](send/push-data-collection.md)
    + [LINE-Messaging](send/line.md)
    + [Briefpost](send/direct-mail.md)
-   + [Twitter](send/twitter.md)
+   + [X (Twitter)](send/twitter.md)
    + Personalisieren von Inhalten {#personalize}
       + [Erste Schritte mit der Personalisierung](send/personalize.md)
       + [Personalisierungsdaten](send/personalization-data.md)
@@ -141,7 +141,7 @@ ht-degree: 99%
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
    + [Campaign + Experience Cloud Triggers](connect/ac-triggers.md)
-   + [Campaign + Twitter](connect/ac-tw.md)
+   + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + externe Datenbank](connect/fda.md)
    + Campaign + Ihr CRM-System   {#ac-crm}
       + [Erste Schritte mit CRM-Connectoren](connect/crm.md)
