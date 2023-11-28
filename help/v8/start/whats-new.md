@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 5c4bbbd06eb7bf6dc9ada1d08c3fc696e88ee760
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 98%
+source-wordcount: '910'
+ht-degree: 96%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe Managed Cloud Service bietet Marketing-Experten eine agilere, sicherere un
 
 Adobe Campaign kann jetzt Cloud-Skalierungstechnologien nutzen, um Größe und Geschwindigkeit der Datenbank drastisch zu verbessern.
 
-[Campaign v8 Enterprise](../architecture/enterprise-deployment.md) bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit diesem neuen Angebot vereinfacht Campaign v8 das Daten-Management: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. [!DNL Snowflake] ist die Campaign Cloud-Datenbank und bringt Ihnen Geschwindigkeit und Ausdauer: Somit vermeiden Sie Überlastung durch Systemaktivitätsspitzen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
+[Campaign v8 Enterprise](../architecture/enterprise-deployment.md) bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit diesem neuen Angebot vereinfacht Campaign v8 das Daten-Management: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. [!DNL Snowflake] ist die Campaign Cloud-Datenbank. Sie ermöglicht Geschwindigkeit und Ausdauer: keine Überlastung der Aktivitätsspitzen des Systems. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
 
 ![](../assets/do-not-localize/glass.png) [Weitere Informationen zur Implementierung von Enterprise (FFDA)](../architecture/enterprise-deployment.md)
 

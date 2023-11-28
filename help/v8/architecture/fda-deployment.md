@@ -1,20 +1,20 @@
 ---
-title: Erste Schritte mit der Bereitstellung von FDA-Snowflake in Campaign
-description: Erste Schritte mit der Bereitstellung von FDA-Snowflake in Campaign
+title: Erste Schritte mit der FDA-Implementierung von Campaign
+description: Erste Schritte mit der FDA-Implementierung von Campaign
 feature: Architecture, Federated Data Access, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: b3df0336-f40e-4ac1-b6a4-068b8827dca2
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '303'
+ht-degree: 77%
 
 ---
 
-# [!DNL Campaign] FDA[!DNL Snowflake]-Bereitstellung{#gs-fda-snowflake}
+# [!DNL Campaign] FDA-Bereitstellung{#gs-fda}
 
-In einer [!DNL Snowflake] FDA-Bereitstellung (Standard) ist [!DNL Adobe Campaign] v8 zwecks Datenzugriff über die [Federated Data Access](../connect/fda.md)-Funktion mit [!DNL Snowflake] verbunden: Sie können auf externe Daten und Informationen, die in Ihrer [!DNL Snowflake]-Datenbank gespeichert sind, zugreifen und diese verarbeiten, ohne die Datenstruktur in Adobe Campaign ändern zu müssen.
+In seiner Campaign FDA-Bereitstellung (Standard) [!DNL Adobe Campaign] v8 kann mit [!DNL Snowflake] für den Datenzugriff über [Federated Data Access](../connect/fda.md) Funktion: Sie können dann auf externe Daten und Informationen zugreifen und diese verarbeiten, die in Ihrer [!DNL Snowflake] -Datenbank ohne Änderung der Datenstruktur in Adobe Campaign.
 
 ## Vorteile{#fda-benefits}
 
@@ -37,4 +37,4 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem 
 
 ![](assets/fda-architecture.png)
 
-PostgreSQL ist die primäre Datenbank und Snowflake ist die sekundäre Datenbank. Sie können Ihr Datenmodell erweitern und Ihre Daten in Snowflake speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und hervorragende Leistung erzielen.
+PostgreSQL ist die primäre Datenbank und Snowflake kann als sekundäre Datenbank verwendet werden. Sie können Ihr Datenmodell erweitern und Ihre Daten in Snowflake speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und hervorragende Leistung erzielen.

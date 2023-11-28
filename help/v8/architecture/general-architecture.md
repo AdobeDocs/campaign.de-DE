@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 100%
+source-wordcount: '1136'
+ht-degree: 95%
 
 ---
 
@@ -81,7 +81,7 @@ Daneben sind auch noch weitere technische Prozesse verfügbar:
 
 ## Datenbank-Container {#db-containers}
 
-Die Cloud-Datenbank von Adobe Campaign nutzt [!DNL Snowflake], wo die funktionellen Daten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versand, Vorgänge und Protokolle, Trackinglogs usw.) und die Arbeitsdaten (Bestellungen, Interessenten) für die Lösung abgelegt sind. Alle Komponenten von Adobe Campaign kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
+In [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md), ist die Adobe Campaign Cloud-Datenbank auf [!DNL Snowflake] enthält die funktionalen Daten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versandaufträge und Protokolle, Trackinglogs usw.) und die Arbeitsdaten (Bestellungen, Interessenten) für die Lösung abgelegt sind. Alle Komponenten von Adobe Campaign kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
 
 Sie können Adobe Campaign unter Verwendung der vordefinierten Datenbank und Schemata bereitstellen und diese vordefinierte Umgebung bei Bedarf erweitern. Der Zugriff auf alle Daten im Datamart durch Adobe Campaign erfolgt über SQL-Aufrufe. Adobe Campaign bietet außerdem eine vollständige Ergänzung der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels derer Daten in das und aus dem System importiert und exportiert werden können.
 
@@ -96,6 +96,6 @@ Sie können Adobe Campaign unter Verwendung der vordefinierten Datenbank und Sch
 
 ## Datenbankspeicher {#db-storage}
 
-Die Gesamtspeichermenge wird auf die Hauptdatenbank und das Snowflake Warehouse aufgeteilt. Wo die Daten gespeichert werden, sollte zum Zeitpunkt der Implementierung oder des Upgrades festgelegt werden, je nach den kundenspezifischen Anwendungsfällen.
+Die Gesamtspeichermenge wird auf die Hauptdatenbank und die (optionale) sekundäre Snowflake-Datenbank aufgeteilt. Wo die Daten gespeichert werden, sollte zum Zeitpunkt der Implementierung oder des Upgrades festgelegt werden, je nach den kundenspezifischen Anwendungsfällen.
 
 Wie Sie die Nutzung Ihrer Datenbank überwachen können, erfahren Sie in der Dokumentation zu [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=de){target="_blank"}.

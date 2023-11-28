@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 100%
+source-wordcount: '1042'
+ht-degree: 91%
 
 ---
 
@@ -32,9 +32,14 @@ Sie können Packages von einer Umgebung in eine andere exportieren und importier
 
 Es stehen zwei Bereitstellungsmodelle zur Verfügung:
 
-* **Campaign FDA [!DNL Snowflake]-Bereitstellung**
+* **Campaign FDA -Bereitstellung**
 
-  In seiner [[!DNL Snowflake]  FDA-Bereitstellung](fda-deployment.md) ist [!DNL Adobe Campaign] v8 zwecks Datenzugriff über die Federated Data Access-Funktion mit [!DNL Snowflake] verbunden: Sie können auf externe Daten und Informationen, die in Ihrer [!DNL Snowflake]-Datenbank gespeichert sind, zugreifen und diese verarbeiten, ohne die Datenstruktur in Adobe Campaign ändern zu müssen. PostgreSQL ist die primäre Datenbank und Snowflake ist die sekundäre Datenbank. Sie können Ihr Datenmodell erweitern und Ihre Daten in Snowflake speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und hervorragende Leistung erzielen.
+  In [FDA-Bereitstellung](fda-deployment.md), [!DNL Adobe Campaign] v8 kann mit [!DNL Snowflake] für den Zugriff auf Daten über die Federated Data Access-Funktion: Sie können auf externe Daten und Informationen zugreifen und diese verarbeiten, die in Ihrem [!DNL Snowflake] -Datenbank ohne Änderung der Datenstruktur in Adobe Campaign. PostgreSQL ist die primäre Datenbank. Sie können Snowflake als sekundäre Datenbank verwenden, um Ihr Datenmodell zu erweitern und Ihre Daten in Snowflake zu speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und hervorragende Leistung erzielen.
+
+  >[!NOTE]
+  >
+  >In diesem Bereitstellungsmodell wird die [!DNL Snowflake] Die sekundäre Datenbank ist nur auf Anfrage verfügbar. So aktualisieren Sie Ihre Implementierung mit [!DNL Snowflake], wenden Sie sich an Ihren technischen Kundenbetreuer von Adobe.
+  >
 
 * **Bereitstellung von Campaign Enterprise (FFDA)**
 
