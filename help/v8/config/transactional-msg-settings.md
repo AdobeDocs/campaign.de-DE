@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '634'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwal
 
 ## Definieren von Berechtigungen {#mc-permissions}
 
-Um neue Benutzerinnen und Benutzer für in Adobe Cloud gehostete Message-Center-Ausführungsinstanzen zu erstellen, kontaktieren Sie die Adobe-Kundenunterstützung. Benutzerinnen und Benutzer von Message Center benötigen für den Zugriff auf die Ordner „Echtzeit-Ereignisse“ (nmsRtEvent) spezifische Berechtigungen.
+Wenden Sie sich an Ihren Adobe Transition Manager, um neue Benutzer für auf der Adobe Cloud gehostete Message Center-Ausführungsinstanzen zu erstellen. Message Center-Benutzer sind bestimmte Benutzer, die spezielle Berechtigungen für den Zugriff auf die Ordner &quot;Echtzeit-Ereignisse&quot;(nmsRtEvent) benötigen.
 
 ## Schemaerweiterungen  {#mc-schema-ext}
 

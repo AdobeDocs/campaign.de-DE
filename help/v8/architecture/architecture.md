@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ Es stehen zwei Bereitstellungsmodelle zur Verfügung:
 
   >[!NOTE]
   >
-  >In diesem Bereitstellungsmodell wird die [!DNL Snowflake] Die sekundäre Datenbank ist nur auf Anfrage verfügbar. So aktualisieren Sie Ihre Implementierung mit [!DNL Snowflake], wenden Sie sich an Ihren technischen Kundenbetreuer von Adobe.
+  >In diesem Bereitstellungsmodell wird die [!DNL Snowflake] Die sekundäre Datenbank ist nur auf Anfrage verfügbar. So aktualisieren Sie Ihre Implementierung mit [!DNL Snowflake], wenden Sie sich an Ihren Adobe Transition Manager.
   >
 
 * **Bereitstellung von Campaign Enterprise (FFDA)**
@@ -70,7 +70,7 @@ Dazu werden zusätzliche externe Konten mit dem **[!UICONTROL Aufspaltungs]**-Ro
 
 >[!IMPORTANT]
 >
->Der Aufspaltungs-Routing-Modus ist standardmäßig für das Konto „Aufspaltung Versand – E-Mail“ aktiviert. Für alle anderen Kanäle und externen Konten wenden Sie sich bitte an die Kundenunterstützung, um die Option aktivieren zu lassen.
+>Der Aufspaltungs-Routing-Modus ist standardmäßig für das Konto „Aufspaltung Versand – E-Mail“ aktiviert. Wenden Sie sich bei allen anderen Kanälen an Ihren Adobe Transition Manager, damit die Option aktiviert ist.
 >
 >Standardmäßig beträgt der Schwellenwert für die Aufteilung eines Versands auf mehrere Mids 100.000. Sie können diesen Wert in der Option „NmsDelivery_MultiMidSplitThreshold“ im Menü **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Optionen]** ändern.
 
