@@ -3,9 +3,9 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 09aacde1f06b679899ca8a736419f64a5cf46823
+source-git-commit: b0f5f5b4871752651c43c6f582d0f543be7bb5bd
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '458'
 ht-degree: 58%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 58%
 
 ## Neue Funktionen
 
-Verschaffen Sie sich einen Überblick über die neuesten Verbesserungen in Adobe Campaign v8! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie im [Versionshinweise](start/release-notes.md).
+Hier erhalten Sie einen Einblick in die neuesten Verbesserungen des Adobe Campaign v8-Produkts und der Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie im [Versionshinweise](start/release-notes.md).
 
 >[!BEGINTABS]
 
