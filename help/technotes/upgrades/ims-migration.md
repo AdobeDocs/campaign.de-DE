@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benut
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 935426cea75e1f8bca757863290b6f9d4c7dce18
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '1590'
-ht-degree: 100%
+source-wordcount: '1511'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Es folgt eine Übersicht über die Schritte:
 
 ### Voraussetzungen für die Migration{#ims-migration-prerequisites}
 
-Um die technischen Konten erstellen zu können, die die technischen Benutzenden ersetzen, muss die Voraussetzung validiert werden, ob die entsprechenden Campaign-Produktprofile in der Admin Console für alle Campaign-Instanzen vorhanden sind. Weitere Informationen zu Produktprofilen in der Adobe Console finden Sie unter [Dokumentation zur Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
+<!--To be able to create the technical accounts which replace the technical operators, the prerequisite that the proper Campaign Product Profiles exist within the Admin Console for all Campaign instances need to be validated. You can learn more about Product Profiles within the Adobe Console in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.-->
 
 Für API-Aufrufe der Message-Center-Instanz(en) sollte während der Aktualisierung auf Campaign v8.5 oder während der Bereitstellung der Instanz ein Produktprofil erstellt worden sein. Dieses Produktprofil hat den Namen:
 
@@ -155,7 +155,7 @@ Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufru
 
 
 
-* Vor der Migration: Zugriffstoken für technische Konten wurden nicht unterstützt.
+* Vor der Migration: Es wurde kein Zugriffstoken für technische Konten unterstützt.
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1

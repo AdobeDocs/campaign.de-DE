@@ -5,7 +5,7 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 7deb5e8f646b086adec2e0652538a187e68adbee
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 97%
@@ -22,7 +22,7 @@ Weitere Informationen zu Campaign finden Sie auf [dieser Seite](../start/get-sta
 
 Nachfolgend werden die Adobe Campaign-Komponenten und die globale Architektur beschrieben.
 
-![](assets/ac-components.png)
+![](assets/do-not-localize//ac-components.png)
 
 ### Präsentationsebene{#presentation-layer}
 
@@ -58,13 +58,13 @@ Adobe Campaign v8 wird als Managed Service bereitgestellt: Alle Komponenten von 
 
 Der Campaign-Webserver steuert den Zugriff auf Campaign-Web-Prozesse. JavaScript ist die Server-seitige Sprache, die für zentrale Produktfunktionen und die Anpassung verwendet wird. Tomcat ist die Back-End-Engine und im Rahmen des Web-Prozesses in das Campaign-Produkt eingebettet. JavaScript wird beispielsweise auf JSP- oder JSSP-Seiten zum Rendern dynamischer Inhalte verwendet.
 
-![](assets/ac-processes.png)
+![](assets/do-not-localize/ac-processes.png)
 
 Die Campaign Client-Konsole stellt eine Verbindung mit dem Webserver her, indem sie SOAP XML über HTTP verwendet. Der Webserver stellt die Sicherheitsebene bereit, übergibt die Anfragen mithilfe von JavaScript an die Anwendungsebene und die internen Prozesse von Campaign greifen mithilfe von SQL auf die Datenbank zu.
 
 Die allgemeine Kommunikation zwischen Campaign-Prozessen wird im folgenden Diagramm einer Standalone-Bereitstellung beschrieben: Alle Campaign-Komponenten sind auf demselben Computer installiert.
 
-![](assets/ac-standalone.png)
+![](assets/do-not-localize//ac-standalone.png)
 
 Der Benutzer stellt mithilfe von HTTP eine Verbindung zum Campaign-Anwendungs-Server her. Alle Daten und Informationen werden in der Campaign-Datenbank verwaltet. Wenn ein Campaign-Entwickler Änderungen an der Konfiguration durchführt, werden diese in der Datenbank erfasst. Wenn ein Marketer eine neue Kampagne erstellt, werden alle mit dieser neuen Kampagne verbundenen Informationen und Daten ebenfalls in der Datenbank verwaltet. Wenn ein Marketer eine Kampagne ausführt, werden vom Campaign-Server über den SMTP-Server E-Mail-Sendungen an Profile durchgeführt. Wenn Profile mit E-Mail-Sendungen interagieren, wie etwa beim Öffnen einer E-Mail, werden Tracking-Daten an den Tracking-Server zurückgesendet.
 
