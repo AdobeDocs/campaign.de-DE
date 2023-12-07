@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer o
 
 ## Arbeiten mit Social Media{#gs-social}
 
-Interagieren Sie mit Adobe Campaign über X (früher Twitter) mit Kunden und Interessenten.
+Interagieren Sie mit Adobe Campaign über X (ehemals Twitter) mit aktuellen und potenziellen Kundinnen und Kunden.
 
 Sie haben folgende Möglichkeiten:
 
@@ -64,6 +64,6 @@ Sie haben folgende Möglichkeiten:
 * Posten auf Ihrem X-Konto
 * Neue Kontakte sammeln
 
-Erfahren Sie, wie Sie die X-Integration einrichten und verwenden in [diese Seite](../connect/ac-tw.md).
+Auf [dieser Seite](../connect/ac-tw.md) erfahren Sie, wie Sie die X-Integration einrichten und verwenden können.
 
-Erfahren Sie, wie Sie X Beiträge erstellen und Direktnachrichten an Ihre Follower senden können in [diese Seite](../send/twitter.md).
+Auf [dieser Seite](../send/twitter.md) erfahren Sie, wie Sie X-Beiträge erstellen und Direktnachrichten an Ihre Follower senden können.
