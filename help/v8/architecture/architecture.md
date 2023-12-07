@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1042'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -32,13 +32,13 @@ Sie können Packages von einer Umgebung in eine andere exportieren und importier
 
 Es stehen zwei Bereitstellungsmodelle zur Verfügung:
 
-* **Campaign FDA -Bereitstellung**
+* **Campaign FDA-Bereitstellung**
 
-  In [FDA-Bereitstellung](fda-deployment.md), [!DNL Adobe Campaign] v8 kann mit [!DNL Snowflake] für den Zugriff auf Daten über die Federated Data Access-Funktion: Sie können auf externe Daten und Informationen zugreifen und diese verarbeiten, die in Ihrem [!DNL Snowflake] -Datenbank ohne Änderung der Datenstruktur in Adobe Campaign. PostgreSQL ist die primäre Datenbank. Sie können Snowflake als sekundäre Datenbank verwenden, um Ihr Datenmodell zu erweitern und Ihre Daten in Snowflake zu speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und hervorragende Leistung erzielen.
+  In der [FDA-Bereitstellung](fda-deployment.md) ist [!DNL Adobe Campaign] v8 zwecks Datenzugriff über die Federated Data Access-Funktion mit [!DNL Snowflake] verbunden: Sie können auf externe Daten und Informationen, die in Ihrer [!DNL Snowflake]-Datenbank gespeichert sind, zugreifen und diese verarbeiten, ohne die Datenstruktur in Adobe Campaign ändern zu müssen. PostgreSQL ist die primäre Datenbank. Sie können Snowflake als sekundäre Datenbank verwenden, um Ihr Datenmodell zu erweitern und Ihre Daten in Snowflake zu speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und eine hervorragende Leistung erzielen.
 
   >[!NOTE]
   >
-  >In diesem Bereitstellungsmodell wird die [!DNL Snowflake] Die sekundäre Datenbank ist nur auf Anfrage verfügbar. So aktualisieren Sie Ihre Implementierung mit [!DNL Snowflake], wenden Sie sich an Ihren Adobe Transition Manager.
+  >In diesem Bereitstellungsmodell ist die sekundäre Datenbank von [!DNL Snowflake] nur auf Anfrage verfügbar. Um Ihre Bereitstellung mit [!DNL Snowflake] zu aktualisieren, wenden Sie sich an Ihren Adobe Transition Manager.
   >
 
 * **Bereitstellung von Campaign Enterprise (FFDA)**
@@ -70,7 +70,7 @@ Dazu werden zusätzliche externe Konten mit dem **[!UICONTROL Aufspaltungs]**-Ro
 
 >[!IMPORTANT]
 >
->Der Aufspaltungs-Routing-Modus ist standardmäßig für das Konto „Aufspaltung Versand – E-Mail“ aktiviert. Wenden Sie sich bei allen anderen Kanälen an Ihren Adobe Transition Manager, damit die Option aktiviert ist.
+>Der Aufspaltungs-Routing-Modus ist standardmäßig für das Konto „Aufspaltung Versand – E-Mail“ aktiviert. Für alle anderen Kanäle und externen Konten wenden Sie sich bitte an Ihren Adobe Transition Manager, um die Option aktivieren zu lassen.
 >
 >Standardmäßig beträgt der Schwellenwert für die Aufteilung eines Versands auf mehrere Mids 100.000. Sie können diesen Wert in der Option „NmsDelivery_MultiMidSplitThreshold“ im Menü **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Optionen]** ändern.
 
