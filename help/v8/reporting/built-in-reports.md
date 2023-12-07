@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
 source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1118'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -381,7 +381,7 @@ Nachfolgende Berichte stehen ebenfalls nativ zur Verfügung. Weitere Information
   </tr> 
   <tr> 
    <td> Verlauf der Akquise aus sozialen Netzwerken (socialVisitorStatistics)<br /> </td> 
-   <td> Verlauf der Akquise von X (ehemals Twitter) und Facebook Prospect; abhängig vom Social-Marketing-Add-on<br /> </td> 
+   <td> Verlauf der Akquise aus X (ehemals Twitter) und Facebook, abhängig vom Social-Media-Marketing-Add-on.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 
