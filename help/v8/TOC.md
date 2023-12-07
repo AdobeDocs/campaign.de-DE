@@ -5,9 +5,9 @@ title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Übersicht über Campaign
 source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '579'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -155,10 +155,10 @@ ht-degree: 98%
       + [Berechtigungen für Ordner hinzufügen](start/folder-permissions.md)
    + [Control Panel](config/self-service.md)
 + Architektur und Konfiguration {#config}
-   + Architektur von Campaign v8 {#architecture}
+   + Campaign v8 – Architektur {#architecture}
       + [Allgemeine Prinzipien](architecture/general-architecture.md)
-      + [Architektur models](architecture/architecture.md)
-      + [Campaign FDA -Bereitstellung](architecture/fda-deployment.md)
+      + [Architektur Modelle](architecture/architecture.md)
+      + [Campaign FDA-Bereitstellung](architecture/fda-deployment.md)
       + FFDA-Bereitstellung in Unternehmen {#ffda}
          + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
          + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
