@@ -6,15 +6,15 @@ role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # [!DNL Campaign] FFDA-Bereitstellung {#gs-ac-ffda}
 
-Durch Nutzung [[!DNL Snowflake]](https://www.snowflake.com/){target="_blank"}, eine Cloud-Datenbanktechnologie, verbessert die Bereitstellung von Adobe Campaign Enterprise Full Federated Access (FFDA) erheblich deren Größe und Geschwindigkeit, da eine größere Anzahl von Kundenprofilen sowie deutlich höhere Bereitstellungsraten und Transaktionen pro Stunde verwaltet werden können.
+Durch die Nutzung von [[!DNL Snowflake]](https://www.snowflake.com/){target="_blank"}, einer Cloud-Datenbanktechnologie, wird die Skalierbarkeit und Geschwindigkeit der FFDA-Bereitstellung von Adobe Campaign Enterprise erheblich verbessert. So kann eine größere Anzahl von Kundenprofilen verwaltet werden und es werden deutlich höhere Versandraten und mehr Transaktionen pro Stunde erreicht.
 
 ## Vorteile {#ffda-benefits}
 
