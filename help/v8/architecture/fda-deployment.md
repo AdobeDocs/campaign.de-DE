@@ -1,24 +1,24 @@
 ---
-title: Erste Schritte mit der FDA-Implementierung von Campaign
-description: Erste Schritte mit der FDA-Implementierung von Campaign
+title: Erste Schritte mit der Campaign FDA-Bereitstellung
+description: Erste Schritte mit der Campaign FDA-Bereitstellung
 feature: Architecture, Federated Data Access, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: b3df0336-f40e-4ac1-b6a4-068b8827dca2
 source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # [!DNL Campaign] FDA-Bereitstellung{#gs-fda}
 
-In seiner Campaign FDA-Bereitstellung (Standard) [!DNL Adobe Campaign] v8 kann mit [!DNL Snowflake] für den Datenzugriff über [Federated Data Access](../connect/fda.md) Funktion: Sie können dann auf externe Daten und Informationen zugreifen und diese verarbeiten, die in Ihrer [!DNL Snowflake] -Datenbank ohne Änderung der Datenstruktur in Adobe Campaign.
+In einer FDA-Bereitstellung (Standard) von Campaign ist [!DNL Adobe Campaign] v8 zwecks Datenzugriff über die [Federated Data Access](../connect/fda.md)-Funktion mit [!DNL Snowflake] verbunden: Sie können auf externe Daten und Informationen zugreifen, die in Ihrer [!DNL Snowflake]-Datenbank gespeichert sind, und diese verarbeiten, ohne die Datenstruktur in Adobe Campaign ändern zu müssen.
 
 >[!NOTE]
 >
->In diesem Bereitstellungsmodell wird die [!DNL Snowflake] Die sekundäre Datenbank ist nur auf Anfrage verfügbar. So aktualisieren Sie Ihre Implementierung mit [!DNL Snowflake], wenden Sie sich an Ihren Adobe Transition Manager.
+>In diesem Bereitstellungsmodell ist die sekundäre Datenbank von [!DNL Snowflake] nur auf Anfrage verfügbar. Um Ihre Bereitstellung mit [!DNL Snowflake] zu aktualisieren, wenden Sie sich an Ihren Adobe Transition Manager.
 >
 
 ## Vorteile{#fda-benefits}
