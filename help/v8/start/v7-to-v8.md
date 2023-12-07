@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '690'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Als früherer [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die me
 
 Campaign v8 basiert auf einer **Hybridarchitektur**. Beim Umstieg von Campaign Classic v7 ist zu beachten, dass alle Sendungen über den Mid-Sourcing-Server laufen. Infolgedessen ist internes Routing in Campaign v8 **nicht möglich** und das externe Konto wurde entsprechend deaktiviert.
 
-![](../assets/do-not-localize/glass.png) Erfahren Sie mehr über das Senden von Testsendungen von Transaktionsnachrichten beim Übergang von v7 zu [diese Seite](../send/transactional-template.md#transition-from-v7).
+![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](../send/transactional-template.md#transition-from-v7) mehr über das Senden von Testsendungen für Transaktionsnachrichten beim Übergang von v7 zu v8.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Campaign v8 basiert auf einer **Hybridarchitektur**. Beim Umstieg von Campaign C
 
 ## [!DNL Campaign] und [!DNL Snowflake] {#ac-gs-snowflake}
 
-In [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8 funktioniert mit zwei Datenbanken: einer lokalen [!DNL Campaign] Datenbank für die Echtzeit-Messaging- und Einzelabfragen der Benutzeroberfläche sowie Schreiben über APIs und eine Cloud [!DNL Snowflake] Datenbank für Kampagnenausführung, Batch-Abfragen und Workflow-Ausführung.
+In der [Bereitstellung „Enterprise (FFDA)“](../architecture/enterprise-deployment.md) kann [!DNL Adobe Campaign] v8 mit zwei Datenbanken verwendet werden: einer lokalen [!DNL Campaign]-Datenbank für Echtzeit-Messaging und Einzelabfragen und das Schreiben über APIs sowie einer [!DNL Snowflake]-Cloud-Datenbank für die Kampagnenausführung, für Batch-Abfragen und die Workflow-Ausführung.
 
 Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit dieser neuen Architektur vereinfacht die Campaign v8 Enterprise (FFDA)-Bereitstellung die Datenverwaltung: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen und die Daten kopieren und schon können Sie loslegen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
 
