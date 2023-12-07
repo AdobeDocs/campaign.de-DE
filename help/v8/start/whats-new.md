@@ -1,6 +1,6 @@
 ---
 title: Neue Funktionen in Campaign v8
-description: Kennenlernen der wichtigen Funktionen in Campaign v8
+description: Kennenlernen von wichtigen Funktionen in Adobe Campaign v8
 feature: Overview
 role: User
 level: Beginner
@@ -8,11 +8,11 @@ exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Wichtige Adobe Campaign v8-Funktionen {#ac-gs-what-is-new}
+# Wichtige Funktionen von Adobe Campaign v8 {#ac-gs-what-is-new}
 
 Adobe Campaign v8 wurde für Marketer entwickelt, die eine branchenführende Cloud-Lösung für das kanalübergreifende Kampagnen-Management für das gesamte Unternehmen benötigen. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Adobe Campaign v8 ist außerdem mit einem skalierbaren Echtzeit-Messaging-Server verbunden, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einer umfassenden Payload von jedem IT-System für Dinge wie Passwortzurücksetzung, Bestellbestätigungen, E-Quittungen und vieles mehr zu senden.
 
@@ -82,7 +82,7 @@ Adobe Managed Cloud Service bietet Marketing-Experten eine agilere, sicherere un
 
 Adobe Campaign kann jetzt Cloud-Skalierungstechnologien nutzen, um Größe und Geschwindigkeit der Datenbank drastisch zu verbessern.
 
-[Campaign v8 Enterprise](../architecture/enterprise-deployment.md) bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit diesem neuen Angebot vereinfacht Campaign v8 das Daten-Management: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. [!DNL Snowflake] ist die Campaign Cloud-Datenbank. Sie ermöglicht Geschwindigkeit und Ausdauer: keine Überlastung der Aktivitätsspitzen des Systems. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
+[Campaign v8 Enterprise](../architecture/enterprise-deployment.md) bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit diesem neuen Angebot vereinfacht Campaign v8 das Daten-Management: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. [!DNL Snowflake] ist die Campaign Cloud-Datenbank und bringt Ihnen Geschwindigkeit und Ausdauer, um Überlastung bei Systemaktivitätsspitzen zu vermeiden. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
 
 ![](../assets/do-not-localize/glass.png) [Weitere Informationen zur Implementierung von Enterprise (FFDA)](../architecture/enterprise-deployment.md)
 

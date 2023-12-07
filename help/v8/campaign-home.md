@@ -6,7 +6,7 @@ exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74
 source-git-commit: 0f86b6303bd380f5079b38de88ee3d097e415695
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 57%
+ht-degree: 86%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 57%
 
 ## Neue Funktionen
 
-Hier erhalten Sie einen Einblick in die neuesten Verbesserungen des Adobe Campaign v8-Produkts und der Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie im [Versionshinweise](start/release-notes.md).
+Hier erhalten Sie einen Einblick in die neuesten Verbesserungen in Adobe Campaign v8 und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](start/release-notes.md).
 
 >[!BEGINTABS]
 
@@ -22,7 +22,7 @@ Hier erhalten Sie einen Einblick in die neuesten Verbesserungen des Adobe Campai
 
 Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser wird durch ein robustes Framework gestützt, das auf moderner Spitzentechnologie aufbaut. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).
 
-[![image](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
+[![Bild](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
 
 >[!TAB Verbesserter Durchsatz für mobile Kanäle]
 
@@ -39,7 +39,7 @@ Diese maximale Durchsatzleistung wurde von Adobe-Test-Teams unter Laborbedingung
 
 >[!ENDTABS]
 
-## Erste Schritte mit den Grundlagen
+## Die Grundlagen
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
@@ -49,15 +49,15 @@ Diese maximale Durchsatzleistung wurde von Adobe-Test-Teams unter Laborbedingung
     </td>
     <td>
     <a href="start/connect.md"><img src="assets/do-not-localize/start-connect.jpeg"></a>
-    <div><strong>Verbindung zu Campaign v8 herstellen</strong><br/>Erfahren Sie, wie Sie eine Verbindung zu Adobe Campaign v8 herstellen und Ihre Kampagnenverwaltungs-Journey starten, indem Sie die Client Console installieren und konfigurieren.</div><br/>
+    <div><strong>Verbindung zu Campaign v8 herstellen</strong><br/>Erfahren Sie, wie Sie eine Verbindung zu Adobe Campaign v8 herstellen und starten Sie mit Ihrer Tour zur Kampagnenverwaltung, indem Sie die Client-Konsole installieren und konfigurieren.</div><br/>
     </td>
     <td>
     <a href="start/create-message.md"><img src="assets/do-not-localize/start-send.jpeg"></a>
-    <div><strong>Nachrichten senden</strong><br/>Hier erfahren Sie, wie Sie Nachrichten über verschiedene Kanäle senden können, z. B. E-Mail, SMS oder Push-Benachrichtigungen.
+    <div><strong>Nachrichten senden</strong><br/>Erfahren Sie, wie Sie Nachrichten über verschiedene Kanäle senden können, z. B. E-Mail, SMS oder Push-Benachrichtigungen.
     </div></td>
     <td>
     <a href="audiences/create-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>Profile importieren</strong><br/>Die Erstellung von Profilen in der Adobe Campaign v8-Datenbank ist unkompliziert. Fügen Sie Profile manuell oder durch Importe hinzu, verfeinern Sie Kundendaten und passen Sie Kampagnen mühelos an.</div>
+    <div><strong>Profile importieren</strong><br/>Das Erstellen von Profilen in der Datenbank von Adobe Campaign v8 ist unkompliziert. Fügen Sie Profile manuell oder durch Importe hinzu, verfeinern Sie Kundendaten und passen Sie Kampagnen mühelos an.</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -68,7 +68,7 @@ Diese maximale Durchsatzleistung wurde von Adobe-Test-Teams unter Laborbedingung
     </tr>
 </table>
 
-## Dokumentation
+## Erkunden der Dokumentation
 
 <table style="table-layout:auto">
   <tr style="border: 0;">
@@ -109,5 +109,5 @@ Diese maximale Durchsatzleistung wurde von Adobe-Test-Teams unter Laborbedingung
 
 ## Zusätzliche Ressourcen
 
-[Adobe Campaign v8 - Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
+[Adobe Campaign v8 – Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=de){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
 
