@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1188'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ In diesem Abschnitt erfahren Sie, wie Sie Adobe Campaign an die Anforderungen Ih
 >
 >Mit **Campaign Managed Cloud Services** wird Ihre Umgebung und die anfängliche Konfiguration von Adobe gemäß den Bedingungen Ihrer Lizenzvereinbarung festgelegt. Sie dürfen keine installierten integrierten Packages, integrierten Schemata oder Berichte ändern.
 >
->Wenn Sie ein Campaign-Add-on oder eine spezielle Funktion verwenden möchten, die Ihnen nicht zur Verfügung gestellt wurde, müssen Sie sich an Ihren **Adobe Transition Manager**.
+>Wenn Sie ein Campaign-Add-on oder eine spezifische Funktion verwenden müssen, das bzw. die Ihnen nicht zur Verfügung gestellt wurde, wenden Sie sich an Ihren **Adobe Transition Manager**.
 
 ## Vor Beginn{#before-starting}
 
