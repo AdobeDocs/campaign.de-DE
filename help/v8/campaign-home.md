@@ -3,10 +3,10 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 0f86b6303bd380f5079b38de88ee3d097e415695
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 86%
+source-wordcount: '348'
+ht-degree: 74%
 
 ---
 
@@ -18,28 +18,21 @@ Hier erhalten Sie einen Einblick in die neuesten Verbesserungen in Adobe Campaig
 
 >[!BEGINTABS]
 
+>[!TAB Anstehende Änderungen am Push-Kanal]
+
+Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können bereits prüfen und Maßnahmen ergreifen.
+
+[![Bild](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
+
 >[!TAB Verbesserter Push-Benachrichtigungsdienst]
 
 Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser wird durch ein robustes Framework gestützt, das auf moderner Spitzentechnologie aufbaut. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
 
->[!TAB Verbesserter Durchsatz für mobile Kanäle]
-
-Der neu eingeführte Push-Benachrichtigungsdienst zeigt erhebliche Verbesserungen des Durchsatzes für Push-Android und Push-iOS im Vergleich zur vorherigen Version (v8.4). Benutzerinnen und Benutzer werden mit dem aktualisierten Dienst in der neuesten Version (v8.5) eine merklich bessere Leistung feststellen.
-
-* Push-Benachrichtigungen (Android): bis zu **5x** schneller
-* Push-Benachrichtigungen (iOS): bis zu **2.2x** schneller
-
-Der SMS-Durchsatz wurde durch eine Reihe von Optimierungen erheblich verbessert, was die Geschwindigkeit und Effizienz der SMS-Kommunikation deutlich besser macht. Diese Upgrades haben zu einem höheren Durchsatz von der vorherigen Version (v8.4) auf die neueste Version (v8.5) geführt, die Aktualisierungen sowohl beim Senden als auch beim Feedback umfasst. Benutzerinnen und Benutzer können jetzt die Vorteile dieses erweiterten SMS-Dienstes nutzen.
-
-* SMS-Durchsatz: bis zu <strong>5x</strong> schneller</li>
-
-Diese maximale Durchsatzleistung wurde von Adobe-Test-Teams unter Laborbedingungen gemessen.
-
 >[!ENDTABS]
 
-## Die Grundlagen
+## Beginnen Sie mit den Grundlagen
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">

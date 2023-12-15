@@ -6,18 +6,22 @@ feature: Push
 role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '1815'
-ht-degree: 100%
+source-wordcount: '1787'
+ht-degree: 94%
 
 ---
 
 # Konfigurieren des Push-Benachrichtigungskanals {#push-notification-configuration}
 
-Bevor Sie mit dem Versand von Push-Benachrichtigungen mit Adobe Campaign beginnen, müssen Sie sicherstellen, dass Konfigurationen und Integrationen in der Mobile App sowie für Tags in Adobe Experience Platform vorhanden sind.
+Um Push-Benachrichtigungen mit Adobe Campaign zu senden, müssen Sie zunächst Ihre Umgebung und App wie auf dieser Seite beschrieben konfigurieren. In Adobe Campaign ist der Kanal zum Senden von Push-Benachrichtigungen der mobile App-Kanal.
 
-Das Adobe Experience Platform Mobile SDK bietet Client-seitige Integrations-APIs für Ihre Mobilgeräte über Android- und iOS-kompatible SDKs.
+>[!CAUTION]
+>
+>Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können bereits prüfen und Maßnahmen ergreifen. [Weitere Informationen](../../technotes/upgrades/push-technote.md).
+
+Bevor Sie mit dem Versand von Push-Benachrichtigungen mit Adobe Campaign beginnen, müssen Sie sicherstellen, dass Konfigurationen und Integrationen in der Mobile App sowie für Tags in Adobe Experience Platform vorhanden sind. Das Adobe Experience Platform Mobile SDK bietet Client-seitige Integrations-APIs für Ihre Mobilgeräte über Android- und iOS-kompatible SDKs.
 
 Gehen Sie wie folgt vor, um Ihre App mit Adobe Experience Platform Mobile SDKs einzurichten:
 
@@ -163,7 +167,7 @@ Gehen Sie wie folgt vor, um einen Dienst zum Senden von Push-Benachrichtigungen 
 
    >[!NOTE]
    >
-   >Das standardmäßig vorgeschlagene Zielgruppen-Mapping **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** bezieht sich auf die Empfängertabelle. Wenn Sie ein anderes Zielgruppen-Mapping verwenden wollen, haben Sie die Möglichkeit, im Feld **[!UICONTROL Zielgruppen-Mapping]** des Service ein neues Zielgruppen-Mapping anzugeben. Weitere Informationen über Zielgruppen-Mapping finden Sie auf [dieser Seite](../audiences/target-mappings.md).
+   >Die Standardeinstellung **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** Zielgruppen-Mapping ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im **[!UICONTROL Zielgruppen-Mapping]** -Feld des Dienstes. Weitere Informationen über Zielgruppen-Mapping finden Sie auf [dieser Seite](../audiences/target-mappings.md).
 
 1. Klicken Sie dann auf das Symbol **[!UICONTROL Hinzufügen]** oben rechts, um die Mobile Apps zu definieren, die diesen Dienst verwenden.
 
