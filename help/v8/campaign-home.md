@@ -4,9 +4,9 @@ description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Hier erhalten Sie einen Einblick in die neuesten Verbesserungen in Adobe Campaig
 
 >[!BEGINTABS]
 
->[!TAB Anstehende Änderungen am Push-Kanal]
+>[!TAB Künftige Änderungen am Push-Kanal]
 
-Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können bereits prüfen und Maßnahmen ergreifen.
+Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können dies bereits überprüfen und Maßnahmen ergreifen.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
 
