@@ -3,11 +3,11 @@ audience: end-user
 user-guide-title: Campaign v8
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
-breadcrumb-title: Übersicht über Campaign
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: ht
-source-wordcount: '579'
-ht-degree: 100%
+breadcrumb-title: Dokumentation zu Campaign v8
+source-git-commit: 24785675a2138e3ce9c806fb52ac29a6a18c6d31
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 95%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 100%
       + [Erstellen von Platzierungen](interaction/interaction-offer-spaces.md)
    + [Erstellen eines Angebotskatalogs](interaction/interaction-offer-catalog.md)
    + [Erstellen eines Angebots](interaction/interaction-offer.md)
-   + [Senden eines Angebots    (ausgehend)](interaction/interaction-send-offers.md)
+   + [Angebot senden (ausgehend)](interaction/interaction-send-offers.md)
    + Unterbreiten eines Angebots (eingehend){#inbound}
       + [Kontext](interaction/interaction-present-offers.md)
       + [Aufrufen eines Angebots auf einer Webseite](interaction/interaction-integration.md)
@@ -133,7 +133,7 @@ ht-degree: 100%
    + [Workflow-Dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
 + Integrationen {#connect}
    + [Campaign mit anderen Lösungen verbinden](connect/integration.md)
-   + Campaign + Experience Platform {#ac-aep}
+   + Kampagne + Experience Platform {#ac-aep}
       + [Zielgruppen und Profilattribute](connect/ac-aep.md)
       + [Landingpages und Profilattribute von Campaign](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
@@ -143,7 +143,7 @@ ht-degree: 100%
    + [Campaign + Experience Cloud Triggers](connect/ac-triggers.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + externe Datenbank](connect/fda.md)
-   + Campaign + Ihr CRM-System   {#ac-crm}
+   + Campaign und Ihr CRM {#ac-crm}
       + [Erste Schritte mit CRM-Connectoren](connect/crm.md)
       + [Arbeiten mit Campaign und SFDC](connect/ac-sfdc.md)
       + [Arbeiten mit Campaign und Microsoft Dynamics](connect/ac-ms-dyn.md)
@@ -157,7 +157,7 @@ ht-degree: 100%
 + Architektur und Konfiguration {#config}
    + Campaign v8 – Architektur {#architecture}
       + [Allgemeine Prinzipien](architecture/general-architecture.md)
-      + [Architektur Modelle](architecture/architecture.md)
+      + [Architekturmodelle](architecture/architecture.md)
       + [Campaign FDA-Bereitstellung](architecture/fda-deployment.md)
       + FFDA-Bereitstellung in Unternehmen {#ffda}
          + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
@@ -174,7 +174,7 @@ ht-degree: 100%
       + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
       + [E-Mail-Einstellungen](config/email-settings.md)
       + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
-      + [Campaign SDKs mit Ihrer Mobile App integrieren - VERALTETE SEITE](config/push-config.md)
+      + [Integrieren von Campaign SDKs in Ihre App - VERALTETE SEITE](config/push-config.md)
       + [Externe Konten](config/external-accounts.md)
 + Ressourcen für Entwickler {#developer}
    + [Campaign-Datenmodell](dev/datamodel.md)
