@@ -4,7 +4,7 @@ description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ## Neue Funktionen
 
-Hier erhalten Sie einen Einblick in die neuesten Verbesserungen in Adobe Campaign v8 und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](start/release-notes.md).
+Hier erhalten Sie einen Einblick in die neuesten Verbesserungen in Adobe Campaign v8 und in der zugehörigen Dokumentation. Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](start/release-notes.md).
 
 >[!BEGINTABS]
 
@@ -67,35 +67,35 @@ Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
-    <br/>
-      <strong>Erste Schritte</strong><br/><a href="start/campaign-ui.md">Benutzeroberfläche</a> - <a href="start/ac-components.md">Komponenten und Prozesse</a> - <a href="start/v7-to-v8.md">Von Classic v7 zu v8</a> - <a href="start/campaign-faq.md">FAQs</a>
+    <br/>
+      <strong>Erste Schritte</strong><br/><a href="start/campaign-ui.md">Benutzeroberfläche</a> - <a href="start/ac-components.md">Komponenten und Prozesse</a> - <a href="start/v7-to-v8.md">Von Classic v7 zu v8</a> - <a href="start/campaign-faq.md">FAQs</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
-    <br/>
-      <strong>Kundenerlebnis</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatisieren mit Workflows</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Kampagnenorchestrierung</a> - <a href="interaction/interaction.md">Entscheidungs-Management</a> - <a href="send/personalize.md">Personalisierung</a>
+    <br/>
+      <strong>Kundenerlebnis</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatisieren mit Workflows</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Kampagnenorchestrierung</a> - <a href="interaction/interaction.md">Entscheidungs-Management</a> - <a href="send/personalize.md">Personalisierung</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
-    <br/>
-      <strong>Nachrichten senden</strong><br/><a href="start/create-message.md">Erste Schritte</a> - <a href="send/preview-and-proof.md">Vorschau und Testsendungen</a> - <a href="send/predictive.md">Sendezeitoptimierung</a> - <a href="reporting/gs-reporting.md">Berichte und Analysen</a>
+    <br/>
+      <strong>Nachrichten senden</strong><br/><a href="start/create-message.md">Erste Schritte</a> - <a href="send/preview-and-proof.md">Vorschau und Testsendungen</a> - <a href="send/predictive.md">Sendezeitoptimierung</a> - <a href="reporting/gs-reporting.md">Berichte und Analysen</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
-    <br/>
-      <strong>Profile und Zielgruppen</strong><br/><a href="audiences/create-profiles.md">Profile hinzufügen</a> - <a href="audiences/create-audiences.md">Zielgruppen erstellen</a> - <a href="start/subscriptions.md">Abonnements verwalten</a> - <a href="start/privacy.md">Datenschutz</a>
+    <br/>
+      <strong>Profile und Zielgruppen</strong><br/><a href="audiences/create-profiles.md">Profile hinzufügen</a> - <a href="audiences/create-audiences.md">Zielgruppen erstellen</a> - <a href="start/subscriptions.md">Abonnements verwalten</a> - <a href="start/privacy.md">Datenschutz</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
-    <br/>
-      <strong>Architektur und Konfiguration</strong><br/><a href="architecture/architecture.md">Architektur</a> - <a href="start/implement.md">Implementierung von Campaign v8</a> - <a href="connect/integration.md">Verbinden mit anderen Lösungen</a> - <a href="start/gs-permissions.md">Benutzende und Berechtigungen</a>
+    <br/>
+      <strong>Architektur und Konfiguration</strong><br/><a href="architecture/architecture.md">Architektur</a> - <a href="start/implement.md">Implementierung von Campaign v8</a> - <a href="connect/integration.md">Verbinden mit anderen Lösungen</a> - <a href="start/gs-permissions.md">Benutzende und Berechtigungen</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
-    <br/>
-      <strong>Entwickler-Ressourcen</strong><br/><a href="dev/datamodel.md">Datenmodell von Campaign v8</a> - <a href="dev/schemas.md">Schemata</a> - <a href="dev/api.md">APIs</a>
+    <br/>
+      <strong>Entwickler-Ressourcen</strong><br/><a href="dev/datamodel.md">Datenmodell von Campaign v8</a> - <a href="dev/schemas.md">Schemata</a> - <a href="dev/api.md">APIs</a>
     </td>
   </tr>
 </table>
