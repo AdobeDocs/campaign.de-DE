@@ -5,8 +5,8 @@ feature: Push
 role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
-workflow-type: tm+mt
+source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
+workflow-type: ht
 source-wordcount: '947'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Bevor Sie mit dem Versand von Push-Benachrichtigungen mit Adobe Campaign beginne
 
 In diesem Abschnitt werden die Elemente beschrieben, die für den Versand von iOS- und Android-Benachrichtigungen erforderlich sind.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist die Mobile-Registrierung jetzt **asynchron**. [Weitere Informationen](../architecture/staging.md)
 
