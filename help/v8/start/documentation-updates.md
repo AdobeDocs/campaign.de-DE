@@ -1,13 +1,13 @@
 ---
 title: Aktualisierungen der Dokumentation
-description: Informationen zu den neuesten Dokumentationsaktualisierungen
+description: Erfahren Sie mehr über die neuesten Aktualisierungen der Dokumentation
 feature: Release Notes
 role: User
 level: Beginner
 source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '48'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
@@ -18,4 +18,4 @@ Auf dieser Seite werden alle Aktualisierungen der Dokumentation für [!DNL Campa
 
 ## Januar 2024 {#jan-2024}
 
-* Es wurden Informationen darüber hinzugefügt, wie das standardmäßige Feld postalAddress für Briefpost definiert wird und warum es wichtig ist sicherzustellen, dass die Adressen vollständig sind. [Weitere Informationen](../send/direct-mail.md)
+* Es wurden Informationen darüber hinzugefügt, wie das Standardfeld „postalAddress“ für Direkt-Mail definiert wird und warum es wichtig ist sicherzustellen, dass die Adressen vollständig sind. [Weitere Informationen](../send/direct-mail.md)
