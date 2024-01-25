@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '953'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Adobe Campaign bietet eine Plattform für die Gestaltung kanalübergreifender Kundenerlebnisse und eine Umgebung für die visuelle Kampagnenorchestrierung, die Verwaltung von Interaktionen in Echtzeit und die kanalübergreifende Ausführung.
 
-Adobe Campaign v8 ist das Kampagnenwerkzeug der nächsten Generation, das für herkömmliche Marketingkanäle wie E-Mail und Briefpost entwickelt wurde. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Adobe Campaign v8 ist außerdem mit einem skalierbaren Echtzeit-Messaging-Server verbunden, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einer umfassenden Payload von jedem IT-System für Dinge wie Passwortzurücksetzung, Bestellbestätigungen, E-Quittungen und vieles mehr zu senden.
+Adobe Campaign v8 ist das Kampagnen-Tool der nächsten Generation, das für herkömmliche Marketing-Kanäle wie E-Mail und Direkt-Mail entwickelt wurde. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Adobe Campaign v8 ist außerdem mit einem skalierbaren Echtzeit-Messaging-Server verbunden, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einer umfassenden Payload von jedem IT-System für Dinge wie Passwortzurücksetzung, Bestellbestätigungen, E-Quittungen und vieles mehr zu senden.
 
 Mit Campaign haben Sie folgende Möglichkeiten:
 
