@@ -6,9 +6,9 @@ title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
 source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '565'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 96%
       + [Erstellen von Platzierungen](interaction/interaction-offer-spaces.md)
    + [Erstellen eines Angebotskatalogs](interaction/interaction-offer-catalog.md)
    + [Erstellen eines Angebots](interaction/interaction-offer.md)
-   + [Angebot senden (ausgehend)](interaction/interaction-send-offers.md)
+   + [Senden eines Angebots (ausgehend)](interaction/interaction-send-offers.md)
    + Unterbreiten eines Angebots (eingehend){#inbound}
       + [Kontext](interaction/interaction-present-offers.md)
       + [Aufrufen eines Angebots auf einer Webseite](interaction/interaction-integration.md)
@@ -135,7 +135,7 @@ ht-degree: 96%
    + [Workflow-Dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
 + Integrationen {#connect}
    + [Campaign mit anderen Lösungen verbinden](connect/integration.md)
-   + Kampagne + Experience Platform {#ac-aep}
+   + Campaign + Experience Platform {#ac-aep}
       + [Zielgruppen und Profilattribute](connect/ac-aep.md)
       + [Landingpages und Profilattribute von Campaign](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
@@ -145,7 +145,7 @@ ht-degree: 96%
    + [Campaign + Experience Cloud Triggers](connect/ac-triggers.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + externe Datenbank](connect/fda.md)
-   + Campaign und Ihr CRM {#ac-crm}
+   + Campaign + Ihr CRM {#ac-crm}
       + [Erste Schritte mit CRM-Connectoren](connect/crm.md)
       + [Arbeiten mit Campaign und SFDC](connect/ac-sfdc.md)
       + [Arbeiten mit Campaign und Microsoft Dynamics](connect/ac-ms-dyn.md)
@@ -176,7 +176,7 @@ ht-degree: 96%
       + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
       + [E-Mail-Einstellungen](config/email-settings.md)
       + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
-      + [Integrieren von Campaign SDKs in Ihre App - VERALTETE SEITE](config/push-config.md)
+      + [Integrieren von Campaign-SDKs mit Ihrer Mobile App – VERALTETE SEITE](config/push-config.md)
       + [Externe Konten](config/external-accounts.md)
 + Ressourcen für Entwickler {#developer}
    + [Campaign-Datenmodell](dev/datamodel.md)
