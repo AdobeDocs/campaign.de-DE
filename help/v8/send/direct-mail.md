@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
 source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '392'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ Die Schritte zum Generieren der Datei sind:
 
    Die Empfängerprofile müssen mindestens ihren Namen und ihre Anschrift enthalten.
 
-   Postanschriften sind berechnete Felder. Standardmäßig kann eine Adresse bis zu sechs Zeilen enthalten: Das erste enthält den Vor- und Nachnamen, die nächsten Zeilen die Postanschrift (Straße usw.) und das letzte Feld die Postleitzahl und Ort. Die Definition des standardmäßigen berechneten Felds postalAddress kann im Schema nms:recipient überprüft werden.
+   Postanschriften sind berechnete Felder. Standardmäßig kann eine Anschrift bis zu sechs Zeilen haben: Die erste enthält den Vor- und Nachnamen der Empfängerin bzw. des Empfängers, die folgenden Zeilen die für die Zustellung erforderlichen Informationen (z. B. Straße und Zusätze) und die letzte Zeile Postleitzahl und Ort. Die Definition des berechneten Standardfelds „postalAddress“ kann im Schema „nms:recipient“ überprüft werden.
 
-   Eine Adresse gilt als vollständig, wenn die Felder Name, Postleitzahl und Ort nicht leer sind. Empfänger mit unvollständigen Adressen werden vom Briefpost-Versand ausgeschlossen.
+   Eine Anschrift gilt als vollständig angegeben, wenn die Felder Name, Postleitzahl und Ort nicht leer sind. Empfängerinnen bzw. Empfänger mit unvollständigen Adressen werden vom Direkt-Mail-Versand ausgeschlossen.
 
    ![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html?lang=de){target="_blank"}
 
