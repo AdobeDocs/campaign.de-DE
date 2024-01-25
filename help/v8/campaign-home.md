@@ -4,9 +4,9 @@ description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '363'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 ## Neue Funktionen
 
-Hier erhalten Sie einen Einblick in die neuesten Verbesserungen in Adobe Campaign v8 und in der zugehörigen Dokumentation. Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](start/release-notes.md). Aktuelle Informationen zu den neuesten Änderungen in unserer Dokumentation erhalten Sie im Abschnitt [Dokumentationsaktualisierungen](start/documentation-updates.md) Seite.
+Hier erhalten Sie einen Einblick in die neuesten Verbesserungen in Adobe Campaign v8 und in der zugehörigen Dokumentation. Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](start/release-notes.md). Aktuelle Informationen zu den neuesten Änderungen in unserer Dokumentation finden Sie auf der [Seite mit den Dokumentationsaktualisierungen](start/documentation-updates.md).
 
 >[!BEGINTABS]
 
