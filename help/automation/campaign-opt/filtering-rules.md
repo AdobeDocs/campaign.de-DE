@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Filterregeln konfigurieren
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
 source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '551'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Aus dem **Filter** ändern Sie die standardmäßige Zielgruppendimension in **Abonnements** (**nms:subscription**).
+1. Ändern Sie auf der Registerkarte **Filter** die Standard-Zieldimension in **Abonnements** (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -74,7 +74,7 @@ Diese **[!UICONTROL Filtertypologien]** können bei der Zielgruppenbestimmung ei
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-Wählen Sie dann die auf den Versand anzuwendende Filtertypologie aus. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die anzuwendenden Typologien aus.
+Wählen Sie dann die Filtertypologie aus, die auf den Versand angewendet werden soll. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Typologien aus, die angewendet werden sollen.
 
 Im unteren Bereich des gleichen Tabs können Sie zudem einzelne Filterregeln hinzufügen, die nicht in einer Typologie zusammengefasst sind.
 
