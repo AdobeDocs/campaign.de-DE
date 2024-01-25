@@ -1,14 +1,14 @@
 ---
 title: Erste Schritte mit der Campaign-Architektur
-description: Erfahren Sie mehr über Umgebungen und Implementierungsgrundlagen, einschließlich der Berichterstellung über eine Kampagnenumgebung.
+description: Erfahren Sie mehr über Umgebungen und Bereitstellungsgrundlagen, einschließlich der Berichterstellung über eine Kampagnenumgebung.
 feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 86fa52c445b89227cfabb65e74627c5da7d3db1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Es stehen zwei Arten von Umgebungen zur Verfügung:
 
 Sie können Packages von einer Umgebung in eine andere exportieren und importieren.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zu Paketen finden Sie in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=de){target="_blank"}
+![](../assets/do-not-localize/book.png) Weitere Informationen über Packages in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=de){target="_blank"}
 
 ## Bereitstellungsmodelle {#ac-deployment}
 
-Zwei Bereitstellungsmodelle sind verfügbar: **Campaign FDA-Bereitstellung** (P1-P3) und **Bereitstellung von Campaign Enterprise (FFDA)** (P4).
+Es sind zwei Bereitstellungsmodelle verfügbar: **Campaign FDA-Bereitstellung** (P1-P3) und **Bereitstellung von Campaign Enterprise (FFDA)** (P4).
 
 ### Campaign FDA-Bereitstellung {#ac-deployment-fda}
 
