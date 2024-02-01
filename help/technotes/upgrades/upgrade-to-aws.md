@@ -2,10 +2,10 @@
 title: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 description: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 557a74dbfbd0af385cc5104801ce3ab91dd33a95
+source-git-commit: 68252db5ad53e2a37c76765cd35650f824101289
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '331'
+ht-degree: 90%
 
 ---
 
@@ -25,11 +25,9 @@ Diese Änderung betrifft:
 
 ## Wann wird dieses Upgrade stattfinden?{#aws-timeline}
 
-Das Upgrade für die Entwicklungs- und Staging-Umgebung wird voraussichtlich im **Oktober 2023** stattfinden.
+Die Aktualisierungen der Entwicklungs- und Staging-Umgebungen beginnen in **Oktober 2023**.
 
-Wir planen die Aktualisierung der Produktionsumgebung ab **Januar 2024**.
-
-Als Campaign-Kundin bzw. -Kunde erhalten Sie mindestens dreißig (30) Tage im Voraus eine zusätzliche Benachrichtigung bezüglich des Produktions-Upgrades.
+Die Aktualisierungen der Produktionsumgebungen wurden in **Januar 2024**.
 
 ## Was ist zu erwarten?{#impact}
 
@@ -64,4 +62,4 @@ Als Campaign-Kundin bzw. -Kunde erhalten Sie mindestens dreißig (30) Tage im Vo
 
   Nein. Wir können keine Anfragen bezüglich Änderungen an der bestehenden Planung berücksichtigen, da dies wahrscheinlich das zugewiesene Upgrade-Ereignis für andere Kundinnen und Kunden stören würde.
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=de#support){target="_blank"}..
+Für jede andere Frage können Sie sich an [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&amp;lang=de#support){target="_blank"}.
