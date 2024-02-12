@@ -7,10 +7,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: fefdf71acc921cdddcf5b3f4bf81dca594a84486
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 100%
+source-wordcount: '364'
+ht-degree: 23%
 
 ---
 
@@ -18,55 +18,33 @@ ht-degree: 100%
 
 Auf dieser Seite werden Verbesserungen und Fehlerbehebungen beschrieben, die in der nächsten Version von Campaign v8 enthalten sein werden. Dieser Inhalt kann ohne vorherige Ankündigung bis zum Veröffentlichungsdatum geändert werden. Die offiziellen Versionshinweise finden Sie auf dieser [Seite](../start/release-notes.md).
 
-## Version 8.5.1 {#release-8-5}
+## Version 8.6.1 {#release-8-6-1}
 
-_30. Juni 2023_
+_14. Februar 2024_
 
-**Neue Funktionen**
 
-<table> 
-<thead>
-<tr> 
-<th> <strong>Verbesserter Push-Benachrichtigungsdienst</strong><br /> </th> 
-</tr> 
-</thead> 
-<tbody> 
-<tr> 
-<td><p>Campaign 8.5.1 führt die neue v8 unseres Push-Benachrichtigungsdienstes ein. Dieser basiert auf einem robusten Framework, das auf moderner Spitzentechnologie aufbaut. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).</p>
-</td> 
-</tr> 
-</tbody> 
-</table>
+### Neuheiten {#new-8-6-1}
 
-**Aktualisierungen zur Kompatibilität**
+* Ab dieser Version haben Sie Zugriff auf die neue **Campaign-Webbenutzeroberfläche**, verfügbar in der zentralen Adobe Experience Cloud-Umgebung. Experience Cloud ist die integrierte Familie von Anwendungen, Produkten und Diensten von Adobe für das digitale Marketing. Über die intuitive Benutzeroberfläche können Sie schnell auf Ihre Cloud-Anwendungen, Produktfunktionen und Dienste zugreifen. Erfahren Sie, wie Sie eine Verbindung zu Adobe Experience Cloud herstellen und auf die Adobe Campaign-Web-Oberfläche zugreifen. [auf dieser Seite](campaign-ui.md#ac-web-ui).
 
-* Die 32-Bit-Version der Client-Konsole wird jetzt nicht mehr unterstützt. Ab 8.6. ist die Client-Konsole nur noch in 64 Bit verfügbar. Das Upgrade auf die 64-Bit-Version der Client-Konsole ist nahtlos. Weitere Informationen zum Upgrade Ihres Betriebssystems finden Sie in dieser [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=de).
-* Sie können nun Ihre Campaign v8-Instanz mit Ihrer externen Azure Synapse-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet.
 
-**Verbesserungen**
+* Adobe Campaign v8 ist jetzt mit **Adobe Experience Manager as a Cloud Service**, wobei das Authoring ausschließlich über die Adobe Campaign-Web-Benutzeroberfläche verfügbar ist.
 
-* Der SMS-Durchsatz wurde durch die Implementierung einer Reihe von Optimierungen erheblich verbessert, was zu mehr Geschwindigkeit und Effizienz bei der SMS-Kommunikation führt.
-* Ab Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert. Technische Benutzerinnen bzw. Benutzer müssen Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen.
-* Sie können jetzt Ziel- und Quellverbindungen nutzen, um Profilattribute wie Opt-out-Daten zwischen der Adobe Experience Platform- und der Campaign v8-Datenbank zu synchronisieren
-* Die Versandvorbereitung wurde optimiert.
-* Neben der vorhandenen Authentifizierungsmethode für Benutzername/Kennwort wurde für das externe SFTP-Konto eine neue schlüsselbasierte Authentifizierungsoption hinzugefügt. Benutzerinnen und Benutzer können sich jetzt sicher mit einem privaten Schlüssel authentifizieren, was die Sicherheit verbessert und einen alternativen Authentifizierungsmechanismus für den SFTP-Zugriff bietet.
+* Sie können jetzt Ihre **Adobe Experience Manager Assets-Bibliothek** neben Ihren Experience Cloud Assets auch dann, wenn das Package Integration mit Adobe Experience Cloud auf Ihrer Adobe Campaign-Instanz installiert ist.
 
-**Verbesserungen bei der Sicherheit**
 
-* Sie können keine Benutzenden mehr über die Client-Konsole erstellen. Sie müssen jetzt die Admin Console verwenden. [Weitere Informationen](../start/gs-permissions.md).
-* Mehrere Drittanbieter-Tools wurden aktualisiert, um die Sicherheit zu optimieren.
+### Allgemeine Verbesserungen {#improvements-8-6-1}
 
-**Patches**
+* Campaign v8.6 verbessert den Durchsatz für **Trackingindikatoren von E-Mail-Sendungen**. Mit unseren optimierten Prozessen wird die Tracking-Erfassung und Rechenzeit verkürzt, und Sie können Ihre Versandschlüsselindikatoren viel schneller überprüfen.
 
-* Fehlerkorrektur: Sonderzeichen im HTML-Inhalt eines Versands werden jetzt in mehreren Browsern korrekt codiert. (NEO-60081)
-* Fehlerkorrektur: Berichte können jetzt in einer Campaign v8 Enterprise (FFDA)-Bereitstellung gespeichert werden. (NEO-56836)
-* Fehlerkorrektur: Beim Einfügen oder Aktualisieren von Daten in ein benutzerdefiniertes FFDA-Schema über die Workflow-Aktivität „Daten-Update“ tritt jetzt kein Fehler mehr auf. (NEO-54708)
-* Fehlerkorrektur: Der Datenbankbereinigungs-Workflow kann jetzt Adressen aus der Tabelle „nms:address“ in FFDA entfernen. (NEO-54460)
-* Fehlerkorrektur: Der Abrechnungs-Workflow funktioniert jetzt mit dem Fehler „Kompilierungsspeicher ausgeschöpft“. (NEO-51137)
-* Fehlerkorrektur: Die GPG-Entschlüsselung funktioniert jetzt in der Workflow-Aktivität „Laden (Datei)“ ordnungsgemäß. (NEO-50257)
-* Fehlerkorrektur: Die Funktion `JSPContext.sqlExecWithOneParam` funktioniert jetzt. (NEO-50066)
-* Fehlerkorrektur: Es treten keine Versandfehler mehr auf, wenn nicht druckbare Zeichen in Personalisierungsfeldern verwendet werden. (NEO-48588)
-* Fehlerkorrektur: Beim Einfügen dynamischer Adobe Target-Bilder treten jetzt keine Versandfehler mehr auf. (NEO-62689)
-* Fehlerkorrektur: Browser können jetzt zusätzliche Leerzeichen hinzufügen, wenn bedingte Inhalte in einem Versand verwendet werden. (NEO-62132)
-* Fehlerkorrektur: Es wird kein Pop-up-Fenster mehr geöffnet, wenn auf ein Bild im E-Mail-Inhaltseditor geklickt wird. (NEO-60752)
-* Fehlerkorrektur: Es tritt kein Fehler mehr auf, der das Scrollen beim Bearbeiten des Inhalts eines Versands verhinderte. (NEO-61364)
+
+### Aktualisierungen der Zustellbarkeit {#deliverability-8-6-1}
+
+* Bis Februar 2024 sendet jedes Unternehmen mehr als 5.000 E-Mail-Nachrichten über Google oder Yahoo! muss zunächst eine Authentifizierungstechnologie verwenden, die als Domain-based Message Authentication Reporting and Conformance (DMARC) bezeichnet wird. Stellen Sie sicher, dass für alle Subdomains, die Sie mit Adobe Campaign verwenden, DMARC-Datensätze eingerichtet sind. [Weitere Informationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=de){target="_blank"}
+
+* Ab dem 1. Juni 2024, Google und Yahoo! verlangt von den Absendern die Einhaltung von One-Click List-Unsubscribe. Adobe Campaign unterstützt diese Option jetzt. [Weitere Informationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#one-click-list-unsubscribe){target="_blank"}
+
+
+### Fehlerbehebungen {#fixes-8-6-1}
+
+Folgende Probleme wurden in dieser Version behoben: NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984 NEO-64680, NEO-63973, NEO-63879, NEO-63815, NEO-63657, NEO-63539, NEO-63387, NEO-632 94, NEO-63174, NEO-62964, NEO-62750, NEO-62686, NEO-62455, NEO-62406, NEO-61580, NEO-6 1199, NEO-60786, NEO-59544, NEO-59198, NEO-59059, NEO-58637, NEO-55197, NEO-52542 O-50488, NEO-47789
