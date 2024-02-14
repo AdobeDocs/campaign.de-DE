@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie Marketing-Ressourcen verwalten.
 feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '1172'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -53,9 +53,9 @@ Verwenden Sie die Registerkarte **[!UICONTROL Audit]**, um einen Testsendungs-Le
 
 >[!NOTE]
 >
->Die Registerkarte **[!UICONTROL Verlauf]** enthält das Protokoll der Downloads und Aktualisierungen der Ressource. Über die Schaltfläche **[!UICONTROL Details]** kann die ausgewählte Version angezeigt werden.
+>Die **[!UICONTROL Geschichte]** enthält das Download- und Aktualisierungsprotokoll für die Ressource. Die **[!UICONTROL Details]** -Schaltfläche können Sie die ausgewählte Version anzeigen.
 >
->Die Registerkarte **[!UICONTROL Audit]** ermöglicht die Überwachung der an der Ressource vorgenommenen Aktionen: Validierungen, Validierungsablehnungen, Kommentare und Publikationen.
+>Die Registerkarte **[!UICONTROL Audit]** ermöglicht die Überwachung der an der Ressource vorgenommenen Aktionen: Validierungen, Validierungsablehnungen, Kommentare und Veröffentlichungen.
 
 ### Ressourcen sperren/entsperren {#locking-unlocking-a-resource}
 
@@ -95,13 +95,13 @@ Weitere Informationen finden Sie im Abschnitt [Diskussionsforen](discussion-foru
 
 ### Validierungsprozess {#approval-process}
 
-Das erwartete Verfügbarkeitsdatum wird in den Details der Ressource angezeigt, sofern es im Tab **[!UICONTROL Verfolgung]** angegeben wurde. Bei Erreichen des Datums kann der Validierungsprozess im Ressourcen-Dashboard über die Schaltfläche **[!UICONTROL Zur Validierung unterbreiten]** gestartet werden. Der Status der Ressource wechselt zu **[!UICONTROL Validierung in Gang]**.
+Das erwartete Verfügbarkeitsdatum wird in den Ressourcendetails angezeigt, wenn es in der Variablen **[!UICONTROL Tracking]** Registerkarte. Sobald dieses Datum erreicht ist, können Sie den Validierungsprozess mit der **[!UICONTROL Zur Genehmigung einreichen]** im Ressourcen-Dashboard. Der Ressourcenstatus ändert sich dann in **[!UICONTROL Genehmigung läuft]**.
 
 Um eine Ressource zu genehmigen, klicken Sie auf **[!UICONTROL Ressource validieren]** auf dem Dashboard.
 
 ![](assets/mkt-resouce-approve.png)
 
-Autorisierte Benutzerinnen und Benutzer können dann die Validierung akzeptieren oder ablehnen. Diese Aktion kann über den Link in der E-Mail-Benachrichtigung oder über die Schaltfläche **[!UICONTROL Genehmigen]** in der Client-Konsole ausgeführt werden.
+Autorisierte Benutzerinnen und Benutzer können dann die Validierung akzeptieren oder ablehnen. Diese Aktion ist entweder über die gesendete E-Mail (durch Klicken auf den Link in der Benachrichtigungs-E-Mail) oder über die Clientkonsole (durch Klicken auf die Schaltfläche **[!UICONTROL Genehmigen]** ).
 
 Im Genehmigungsfenster kann ein Kommentar eingegeben werden.
 
@@ -125,7 +125,7 @@ Die Ressourcenveröffentlichung kann auch über einen Workflow automatisiert wer
 
 Eine Ressource zu veröffentlichen bedeutet, sie verfügbar zu machen, zum Beispiel zur Verwendung in einer Aufgabe. Der eigentliche Vorgang der Veröffentlichung hängt von der Art der Ressource ab: Ein Flyer zum Beispiel kann zum Druck als Datei an einen Dienstleister geschickt oder aber auf einer Webseite online gestellt werden.
 
-Damit Adobe Campaign die Veröffentlichung durchführt, muss ein entsprechender Workflow erstellt und dieser mit der Ressource verbunden werden. Öffnen Sie hierzu das Feld **[!UICONTROL Erweiterte Einstellungen...]** der Ressource und wählen Sie den gewünschten Workflow im Feld **[!UICONTROL Anschlussvorgang]** aus.
+Damit Adobe Campaign veröffentlichen kann, müssen Sie einen geeigneten Workflow erstellen und ihn mit der Ressource verknüpfen. Öffnen Sie dazu die **[!UICONTROL Erweiterte Einstellungen...]** und wählen Sie den gewünschten Workflow im **[!UICONTROL Nachbearbeitung]** -Feld.
 
 ![](assets/mkt-resource-post-processing-wf.png)
 

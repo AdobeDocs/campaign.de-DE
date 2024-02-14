@@ -5,15 +5,15 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 100%
+source-wordcount: '845'
+ht-degree: 79%
 
 ---
 
 
-# Senden und Überwachen Ihrer E-Mails
+# Senden und Überwachen Ihrer E-Mails  {#send-and-monitor-emails}
 
 Stellen Sie sicher, dass Sie nach der Konfiguration des Versands die Versandanalyse ausgeführt haben, bevor Sie den Versand durchführen. [Weitere Informationen](delivery-analysis.md)
 
@@ -21,12 +21,18 @@ Bestätigen Sie anschließend den Versand, um den Versand der Nachrichten zu sta
 
 Sie können die Ausführung des Versands über die Registerkarte **Versand** verfolgen, die über die Details dieses Versands oder über die Versandliste zugänglich ist.
 
-## E-Mails überwachen
+## E-Mails überwachen {#email-monitoring}
 
-Nach dem Versand können Sie im Versand-Dashboard den Versandstatus überprüfen und auf Versandprotokolle und Berichte zugreifen, die bestätigen, dass die Nachrichten korrekt versendet wurden.
+Überprüfen Sie nach dem Versand Ihren Versandstatus im **Versand-Dashboard** und greifen Sie auf Versandlogs und Berichte zu, um zu bestätigen, dass die Nachrichten korrekt gesendet wurden.
 
-![](../assets/do-not-localize/book.png) [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de).{target="_blank"}
+Im Versand-Dashboard können Sie die verarbeiteten Nachrichten und die Versandprüfprotokolle überprüfen. In den Versand-Logs können Sie den Status der Nachrichten feststellen.
 
+>[!NOTE]
+>
+>Der Versandstatus wird nicht in Echtzeit angezeigt. Erfahren Sie mehr über Email Feedback Service [in diesem Abschnitt](#email-feedback-service).
+
+
+![](../assets/do-not-localize/book.png) [Weitere Informationen zur Versandüberwachung finden Sie in der Campaign Classic v7-Dokumentation .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de){target="_blank"}
 
 ## Campaign MTA {#mta}
 
@@ -36,7 +42,7 @@ Er ist für alle Campaign v8-Kunden verfügbar und garantiert Skalierbarkeit und
 
 ### Vorteile
 
-Adobe Campaign verwendet einen Mail Transfer Agent (MTA), der den kommerziellen E-Mail-MTA von SparkPost namens **Momentum** ausführt. 
+Adobe Campaign verwendet einen Mail Transfer Agent (MTA), der den kommerziellen E-Mail-MTA von SparkPost mit dem Namen ausführt. **Momentum**.
 
 Momentum steht für eine innovative, hochleistungsfähige MTA-Technologie, die eine intelligentere Handhabung von Bounce-E-Mails und eine automatische Zustellbarkeitsoptimierung beinhaltet, die den Absendern hilft, optimale Zustellraten im Posteingang zu erreichen und beizubehalten.
 
@@ -61,7 +67,7 @@ In [diesem Abschnitt](delivery-failures.md) erfahren Sie mehr über fehlgeschlag
 
 MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen einem Sende- und einem Empfangs-Server.
 
-Der MTA hat seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domains stammt, von denen Sie E-Mails senden, angepasst werden.
+Der MTA verfügt über eigene MX-Regeln, mit denen Sie Ihren Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, nach Domain anpassen können.
 
 ### DKIM-Signierung
 
@@ -73,11 +79,9 @@ Im [Handbuch von Adobe zu Best Practices für die Zustellbarkeit](https://experi
 
 ## E-Mail-Feedback-Service {#email-feedback-service}
 
-Mit der EFS-Funktion (E-Mail-Feedback-Service) wird der Status jeder E-Mail genau aufgezeichnet, da das Feedback direkt vom MTA erfasst wird.
+Der Campaign Email Feedback Service (EFS) meldet den Status jedes mit Adobe Campaign gesendeten E-Mail-Versands.
 
-Nachdem der Versand gestartet wurde, ändert sich der **[!UICONTROL Erfolgsprozentsatz]** nicht, wenn die Nachricht erfolgreich von Campaign an den MTA weitergeleitet wurde.
-
-Die Versandlogs zeigen für jede Zieladresse den Status **[!UICONTROL Vom Dienstleister berücksichtigt]** an.
+Nach dem Start des Versands ändert sich die **[!UICONTROL Erfolg]** Prozentsatz, wenn die Nachricht erfolgreich von Campaign an den MTA weitergeleitet wurde. Die Versandlogs zeigen für jede Zieladresse den Status **[!UICONTROL Vom Dienstleister berücksichtigt]** an.
 
 Wenn die Nachricht den Zielgruppenprofilen zugestellt wird und diese Information vom MTA in Echtzeit zurückgemeldet wird, zeigen die Versandlogs für jede Adresse, die die Nachricht erfolgreich erhalten hat, den Status **[!UICONTROL Gesendet]** an. Der **[!UICONTROL Erfolgsprozentsatz]** wird mit jedem erfolgreichen Versand erhöht.
 
@@ -95,7 +99,7 @@ Wenn Softbounces vom MTA zurückgemeldet werden, bleibt ihr Log-Status unveränd
 >
 >Weitere Informationen zu zusätzlichen Zustellversuchen nach einem vorübergehend fehlgeschlagenen Versand finden Sie in [diesem Abschnitt](delivery-failures.md#retries).
 
-Die nachstehende Tabelle zeigt, wie die Status der KPIs und Versandlogs bei jedem Schritt des Versandvorgangs mit der EFS-Funktion aktualisiert werden.
+Die nachstehende Tabelle zeigt, wie die Status der KPIs und Versandlogs bei jedem Schritt des Versandvorgangs aktualisiert werden.
 
 | Schritt im Versandprozess | KPI-Zusammenfassung | Versandlogstatus |
 |--- |--- |--- |

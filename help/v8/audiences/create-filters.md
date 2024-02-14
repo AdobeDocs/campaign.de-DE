@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 100%
+source-wordcount: '1708'
+ht-degree: 98%
 
 ---
 
@@ -193,7 +193,7 @@ Verwenden und kombinieren Sie **Schnellfilter**, um Filter für bestimmte Felder
 
 Nach dem Hinzufügen werden die Schnellfilterfelder nacheinander über der Datenliste angezeigt. Sie können unabhängig voneinander gelöscht werden.
 
-Schnellfilter sind für jeden Benutzer und jede Benutzerin spezifisch und werden bei jeder Cache-Leerung der Client-Konsole erneut initialisiert.
+Schnellfilter sind für jeden Benutzer spezifisch und werden bei jeder Cache-Leerung der Client-Konsole erneut initialisiert.
 
 Wenn Sie einen Filter wiederverwenden müssen, erstellen Sie einen **erweiterten Filter** und speichern Sie ihn. [Weitere Informationen](#advanced-filters).
 
@@ -255,7 +255,7 @@ Definieren Sie die Filterbedingungen. Im folgenden Beispiel filtern Sie nach Emp
 
    ![](assets/select-operator.png)
 
-1. Geben Sie dann in der Spalte **[!UICONTROL Wert]** den Vergleichswert an. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Für jede weitere Filterbedingung klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
+1. Wählen Sie einen erwarteten Wert aus der **[!UICONTROL Wert]** Spalte. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Um eine Filterbedingung hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/add-an-exp.png)
 

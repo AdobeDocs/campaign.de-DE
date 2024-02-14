@@ -5,10 +5,10 @@ description: Überwachen der Workflow-Ausführung
 feature: Workflows
 role: Admin
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '2015'
-ht-degree: 100%
+source-wordcount: '2009'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,7 @@ Das Protokoll enthält den Verlauf der Workflow-Ausführung. Es speichert die vo
 
   ![](assets/new-workflow-display-log-tab.png)
 
-* die Protokollnachrichten nach Aktivität zu filtern. Klicken Sie hierzu in der Symbolleiste oberhalb des Diagramms auf die Schaltfläche **[!UICONTROL Aufgaben und Protokoll anzeigen]**. Unter dem Diagramm erscheinen nun die Tabs **[!UICONTROL Protokoll]** und **[!UICONTROL Aufgaben]**. Markieren Sie eine Aktivität, um alle sie betreffenden Nachrichten anzuzeigen. Wenn keine Aktivität markiert wurde, werden alle Nachrichten angezeigt.
+* Filtern Sie die Protokollmeldungen nach Aktivität. Klicken Sie dazu auf **[!UICONTROL Aufgaben und Protokoll anzeigen]** in der Symbolleiste über dem Diagramm, um die **[!UICONTROL Protokoll]** und **[!UICONTROL Aufgaben]** Registerkarten unterhalb des Diagramms. Wählen Sie eine Aktivität aus, um alle zugehörigen Nachrichten anzuzeigen. Diese Liste enthält alle Nachrichten, wenn keine Aktivität ausgewählt ist.
 
   ![](assets/new-workflow-display-log-activity.png)
 
@@ -48,7 +48,7 @@ Das Protokoll enthält den Verlauf der Workflow-Ausführung. Es speichert die vo
   >
   >Durch Klick in den Diagrammhintergrund werden alle Markierungen entfernt.
 
-* Um nur Nachrichten anzuzeigen, die eine bestimmte Aufgabe betreffen, gehen Sie in den Tab **[!UICONTROL Aufgaben]**, und klicken Sie auf eine Aktivität des Diagramms. Auf diese Weise wird die Liste auf die Nachrichten zu einer bestimmten Aktivität begrenzt. Durch Doppelklick auf eine Aufgabe werden alle Informationen angezeigt. Der letzte Tab des Fensters enthält das Protokoll.
+* Zeigen Sie nur die Nachrichten an, die mit einer bestimmten Aufgabe verknüpft sind. Wählen Sie dazu die **[!UICONTROL Aufgaben]** und wählen Sie dann eine Aktivität im Diagramm aus, um die Liste zu beschränken. Doppelklicken Sie auf eine Aufgabe, um die Informationen anzuzeigen. Der letzte Tab im Fenster enthält das Protokoll.
 
   ![](assets/new-workflow-display-tasks-activity.png)
 
@@ -90,7 +90,7 @@ Die Nachrichten bezüglich der Ausführung der Workflow-Aktivitäten werden im P
 
 ## Verläufe bereinigen {#purging-the-logs}
 
-Workflow-Verläufe werden nicht automatisch bereinigt; alle Nachrichten werden standardmäßig beibehalten. Gehen Sie zur Bereinigung in **[!UICONTROL Datei > Aktionen]** oder klicken Sie auf die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste oberhalb der Workflow-Liste und wählen Sie die Option **[!UICONTROL Verlauf bereinigen]**. Die im Menü **[!UICONTROL Aktionen]** verfügbaren Optionen werden im Abschnitt [Aktionen-Symbolleiste](start-a-workflow.md) beschrieben.
+Workflow-Verläufe werden nicht automatisch bereinigt: Alle Nachrichten werden standardmäßig beibehalten. Der Verlauf kann über die **[!UICONTROL Datei > Aktionen]** oder durch Klicken auf **[!UICONTROL Aktionen]** in der Symbolleiste oberhalb der Liste. Auswählen **[!UICONTROL Verlauf bereinigen]**. Die im Menü **[!UICONTROL Aktionen]** verfügbaren Optionen werden im Abschnitt [Aktionen-Symbolleiste](start-a-workflow.md) beschrieben.
 
 ![](assets/purge_historique.png)
 
@@ -112,7 +112,7 @@ Im Explorer enthält die Listenansicht der Workflows standardmäßig die Spalte 
 
 ![](assets/wf-explorer_errors_col.png)
 
-Wenn ein Workflow aufgrund von Fehlern ausgesetzt wird, werden der oder die mit dem Workflow-Monitoring betrauten Benutzer per E-Mail benachrichtigt, vorrausgesetzt ihre E-Mail-Adresse ist im Benutzerprofil gespeichert. Die zu benachrichtigende Benutzergruppe wird im Feld **[!UICONTROL Verantwortliche(r)]** der Workflow-Eigenschaften ausgewählt.
+Wenn ein Workflow fehlerhaft ist, werden die zur Workflow-Überwachungsgruppe gehörenden Benutzer per E-Mail benachrichtigt, sofern ihre E-Mail-Adresse in ihrem Profil angegeben ist. Diese Gruppe ist im Feld **[!UICONTROL Verantwortliche(r)]** der Workflow-Eigenschaften ausgewählt.
 
 ![](assets/wf-properties_select-supervisors.png)
 
@@ -122,11 +122,11 @@ Beispiel einer Benachrichtigung:
 
 ![](assets/wf-notification_error-msg.png)
 
-Über den Link können Sie im Web-Modus auf die Adobe Campaign-Client-Konsole zugreifen. Nach Anmeldung können Sie dann den fehlgeschlagenen Workflow bearbeiten.
+Über den Link können Sie im Webmodus auf die Adobe Campaign-Clientkonsole zugreifen und den Fehler-Workflow bearbeiten, sobald Sie sich angemeldet haben.
 
 ![](assets/wf-notification_error-console.png)
 
-Es besteht die Möglichkeit, das Aussetzen des Workflows im Falle von Fehlern zu vermeiden und die sich anschließenden Aufgaben wie geplant auszuführen. Öffnen Sie hierzu die Workflow-**[!UICONTROL Eigenschaften]** und wählen Sie im Bereich **[!UICONTROL Umgang mit Fehlern]** des Ausführungs-Tabs im Feld **[!UICONTROL Bei Fehler]** die Option **[!UICONTROL Ignorieren]** aus der Dropdown-Liste aus. Geben Sie dann die maximale Anzahl an aufeinanderfolgenden Fehlern an, die ignoriert werden dürfen, bevor der Workflow ausgesetzt wird.
+Sie können den Workflow so konfigurieren, dass er bei Fehlern nicht ausgesetzt wird und die Ausführung fortgesetzt wird. Bearbeiten Sie dazu den Workflow **[!UICONTROL Eigenschaften]** und im **[!UICONTROL Fehlerverwaltung]** auswählen, wählen Sie die **[!UICONTROL Ignorieren]** in der **[!UICONTROL Bei Fehler]** -Feld. Anschließend können Sie die Anzahl aufeinander folgender Fehler angeben, die ignoriert werden können, bevor der Prozess angehalten wird.
 
 In diesem Fall wird die fehlerhafte Aufgabe abgebrochen. Dieser Modus ist insbesondere bei Workflows mit wiederkehrenden Aktionen angebracht.
 
@@ -134,7 +134,7 @@ In diesem Fall wird die fehlerhafte Aufgabe abgebrochen. Dieser Modus ist insbes
 
 >[!NOTE]
 >
->Es besteht die Möglichkeit, diese Vorgehensweise innerhalb eines Workflows nur für bestimmte Aktivitäten zu konfigurieren. Gehen Sie hierzu in die Eigenschaften der entsprechenden Aktivität und wählen Sie im **[!UICONTROL Erweitert]**-Tab den gewünschten Umgang mit Fehlern aus.
+>Es besteht die Möglichkeit, diese Vorgehensweise innerhalb eines Workflows nur für bestimmte Aktivitäten zu konfigurieren. Bearbeiten Sie dazu die Aktivitätseigenschaften und wählen Sie den Fehlerverwaltungsmodus im **[!UICONTROL Erweitert]** Registerkarte.
 
 ## Fehler verarbeiten {#processing-errors}
 
@@ -190,7 +190,7 @@ Hier ist ein einfacher Test-Workflow:
 
 ![](assets/wkf_simultaneous_execution1.png)
 
-Die **[!UICONTROL Planung]** löst jede Minute ein Ereignis aus. Mit der folgenden **[!UICONTROL Test]**-Aktivität wird die Instanzvariable **isRunning** getestet, um zu entscheiden, ob die Ausführung fortgesetzt werden soll oder nicht:
+Die **[!UICONTROL Planung]** löst jede Minute ein Ereignis aus. Die folgenden **[!UICONTROL Test]** -Aktivität die **isRunning** Instanzvariable, um zu entscheiden, ob die Ausführung fortgesetzt werden soll oder nicht:
 
 ![](assets/wkf_simultaneous_execution2.png)
 
@@ -236,7 +236,7 @@ Sie können auch spezifische technische Workflows erstellen, um unnötige Daten 
 Die Arbeitstabellen ausgesetzter Workflows werden standardmäßig nie bereinigt. Ab Build 8880 werden Workflows, die zu lange in einem ausgesetzten Zustand angehalten werden, automatisch gestoppt und deren Arbeitstabellen bereinigt. Dieses Verhalten wird wie folgt ausgelöst:
 
 * Sind Workflows länger als sieben Tage ausgesetzt, erscheint ein Warnhinweis im Monitoring-Dashboard (und in der Monitoring-API) und eine Benachrichtigung wird an die Gruppe der Verantwortlichen gesendet.
-* Dasselbe passiert jede Woche, wenn der technische Workflow **[!UICONTROL cleanupPausedWorkflows]** ausgelöst wird. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](delivery.md).
+* Dasselbe passiert jede Woche, wenn die Variable **[!UICONTROL cleanupPausedWorkflows]** Der technische Workflow wird ausgelöst. Weitere Informationen zum Workflow finden Sie unter [diesem Abschnitt](delivery.md).
 * Nach vier Benachrichtigungen (d. h. standardmäßig nach einem Monat im ausgesetzten Zustand) wird der Workflow bedingungslos gestoppt. Ein Protokoll wird im Workflow angezeigt, nachdem er angehalten wurde. Die Tabellen werden bei der nächsten Ausführung des Workflows **[!UICONTROL Bereinigung]** bereinigt
 
 Diese Zeiträume können mit der Option NmsServer_PausedWorkflowPeriod konfiguriert werden.

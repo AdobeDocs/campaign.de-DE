@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1588'
 ht-degree: 100%
 
 ---
@@ -70,7 +70,7 @@ _Donnerstag, 28. Oktober 2021_
 
 **Verbesserungen**
 
-* Der Snowflake-Connector wurde hinsichtlich der Leistung verbessert.
+* Der Snowflake-Connector wurde hinsichtlich der Performance verbessert.
 * Zu Überwachungs- und Testzwecken enthalten die Prüfprotokolle des Workflows **[!UICONTROL Replizieren von Staging-Daten]** jetzt die Anzahl der Datensätze, die an die FFDA-Datenbank (Full Federated Data Access) gesendet wurden.
 * Die SQL-Code-Aktivität ermöglicht jetzt die Auswahl der Datenbank, in der das SQL-Skript gespeichert wird: die Standarddatenquelle oder ein ausgewähltes aktives externes FDA-Konto.
 * Eine Reihe vordefinierter Warehouses ist jetzt verfügbar und kann verwendet werden, um verschiedene Abfragen parallel auszuführen, wie Segmentierung, ETL oder Spitzen. [Weitere Informationen](../config/workflows.md)

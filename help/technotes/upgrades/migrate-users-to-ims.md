@@ -2,10 +2,10 @@
 title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS)
 description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: 1cdb21533138623fc603424503063cf3dbc2d94c
-workflow-type: ht
-source-wordcount: '1116'
-ht-degree: 100%
+source-git-commit: b539b84907c7232f236b96ae8dfd11c8998a06b9
+workflow-type: tm+mt
+source-wordcount: '1345'
+ht-degree: 81%
 
 ---
 
@@ -76,7 +76,7 @@ Sobald die vollständige IMS-Migration abgeschlossen ist, wendet Adobe die Einsc
 
 Für neue Kundinnen und Kunden ist die Erstellung von neuen nativen Benutzenden von Anfang an nicht erlaubt.
 
-Als Campaign-Admin können Sie den Benutzenden Ihrer Organisation über die Adobe Admin Console und die Campaign Client-Konsole Berechtigungen erteilen. Benutzende melden sich mit ihrer Adobe ID bei Adobe Campaign an. Weitere Informationen finden Sie in [dieser Dokumentation](../../v8/start/gs-permissions.md).
+Als Campaign-Administrator können Sie den Benutzern Ihrer Organisation über die Adobe Admin Console- und Campaign-Clientkonsole Berechtigungen erteilen. Benutzende melden sich mit ihrer Adobe ID bei Adobe Campaign an. Weitere Informationen finden Sie in [dieser Dokumentation](../../v8/start/gs-permissions.md).
 
 ### Wie kann ich E-Mails für aktuelle native Benutzende hinzufügen? {#ims-migration-id}
 
@@ -87,7 +87,41 @@ Als Campaign-Admin müssen Sie allen nativen Benutzenden über die Client-Konsol
 1. Geben Sie die E-Mail-Adresse der jeweiligen Personen im Abschnitt **Kontaktmöglichkeiten** des Benutzerformulars ein.
 1. Speichern Sie Ihre Änderungen.
 
-<!--You can also import a CSV file to update all your operator profiles with their email.-->
+Als Workflow-Supervisor oder Campaign-Administrator können Sie mit einem Workflow auch eine Massenaktualisierung Ihrer Benutzer durchführen.
+
+++ + Wichtige Schritte zum Aktualisieren Ihrer Benutzer mit einem Workflow
+
+Gehen Sie wie folgt vor, um eine Massenaktualisierung Ihrer nativen Operatoren durchzuführen:
+
+1. Erstellen Sie einen Workflow, um alle Benutzer, die eine Verbindung mit Campaign mit dem nativen Authentifizierungsmodus herstellen, in eine CSV-Datei zu extrahieren. Verwenden Sie eine **Abfrage** und eine **Extraktion (Datei)** -Aktivität, um die CSV-Datei zu erstellen. Für jeden Benutzer können Sie anhand seiner Profildaten die folgenden Spalten exportieren: `Name, Label`.
+
+   Weitere Informationen zum **Abfrage** Aktivität in [diese Seite](../../automation/workflow/query.md)
+
+   Weitere Informationen zum **Extraktion (Datei)** Aktivität in [diese Seite](../../automation/workflow/extraction--file-.md)
+
+1. Aktualisieren Sie die CSV-Datei mit einer neuen Spalte, die die E-Mails Ihrer Benutzer enthält.
+
+1. Erstellen Sie einen Workflow zum Importieren aktualisierter Daten mit einem **Laden (Datei)** und eine **Daten aktualisieren** -Aktivität im Workflow.
+
+   ![](assets/update-operators-wf.png){width="70%"}
+
+1. Bearbeiten Sie die **Laden (Datei)** und definieren Sie die Einstellungen zum Laden der aktualisierten CSV-Datei gemäß dem unten stehenden Beispiel.
+
+   ![](assets/data-loading-activity.png){width="70%"}
+
+   Weitere Informationen zum **Laden (Datei)** Aktivität in [diese Seite](../../automation/workflow/data-loading--file-.md)
+
+1. Bearbeiten Sie die **Daten aktualisieren** und definieren Sie die Einstellungen gemäß dem unten stehenden Beispiel. Beachten Sie Folgendes: **Aktualisierte Dimension** wurde geändert in `Operators (xtk)`.
+
+   ![](assets/update-data-activity.png){width="70%"}
+
+   Weitere Informationen zum **Daten aktualisieren** Aktivität in [diese Seite](../../automation/workflow/update-data.md)
+
+1. Führen Sie den Workflow aus und überprüfen Sie die Ergebnisse. Die E-Mail-Adresse wurde dem Benutzerprofil hinzugefügt.
+
+   ![](assets/updated-operator.png){width="70%"}
+
++++
 
 
 ### Wie meldet man sich über IMS bei Campaign an? {#ims-migration-log}

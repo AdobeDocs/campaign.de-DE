@@ -5,10 +5,10 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
-workflow-type: ht
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+workflow-type: tm+mt
 source-wordcount: '1125'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -74,7 +74,7 @@ Um Ihre Campaign-Instanz mit Ihrem X-Konto zu verknüpfen, erstellen Sie einen *
 >Jeder **Twitter**-Service muss ebenfalls von Adobe auf Ihrer MID-Instanz erstellt werden. Wenden Sie sich an Ihren Adobe-Support, um Ihre Umgebung konfigurieren zu lassen.
 >
 
-Um Einstellungen vorzunehmen, müssen Sie sowohl auf Ihre Adobe Campaign-Client-Konsole als auch auf die Berechtigungen Ihrer X-App zugreifen.
+Zum Eingeben von Einstellungen müssen Sie sowohl auf Ihre Adobe Campaign-Clientkonsole als auch auf Ihre X-App-Berechtigungen zugreifen.
 
 1. Gehen Sie in **Adobe Campaign** zur Registerkarte **[!UICONTROL Profile und Zielgruppen]** und klicken Sie auf den Link **[!UICONTROL Services und Abonnements]**.
 1. Erstellen Sie einen neuen Service.

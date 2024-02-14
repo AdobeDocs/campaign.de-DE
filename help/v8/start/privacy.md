@@ -5,9 +5,9 @@ feature: Privacy
 role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '968'
 ht-degree: 100%
 
 ---
@@ -23,10 +23,10 @@ Um Datenschutzanfragen in Campaign zu verwalten, müssen Sie zunächst [einen Na
 
 ![](../assets/do-not-localize/speech.png) Erfahren Sie mehr über das **Recht auf Zugriff** und das **Recht auf Vergessenwerden**(Löschanfrage) in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=de#right-access-forgotten){target="_blank"}
 
-
+<!--
 >[!NOTE]
 >
->Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie in [diesem Abschnitt](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+>This capability is available starting Campaign v8.3. To check your version, refer to [this section](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
 
 ## Definieren eines Namespace {#namespaces}
 

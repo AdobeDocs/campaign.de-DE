@@ -5,10 +5,10 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
-workflow-type: ht
-source-wordcount: '660'
-ht-degree: 100%
+source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 97%
 
 ---
 
@@ -24,21 +24,7 @@ Nachfolgend werden die Adobe Campaign-Komponenten und die globale Architektur be
 
 ![](assets/do-not-localize//ac-components.png)
 
-### Präsentationsebene{#presentation-layer}
 
-Sie können über einen Rich-Client, einen Thin-Client oder eine API-Integration auf Adobe Campaign zugreifen.
-
-* Rich-Client
-
-  Der Campaign Rich-Client ist eine native Anwendung, die über Standard-Internetprotokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. [Erfahren Sie mehr über die Campaign-Client-Konsole](../start/connect.md).
-
-* Thin-Client
-
-  Mit den Web-basierten Adobe Campaign-Zugriffsfunktionen können Sie über eine HTML-Benutzeroberfläche mit einem Webbrowser auf eine Teilmenge von Campaign-Funktionen zugreifen. Verwenden Sie diese Web-Benutzeroberfläche, um auf Berichte zuzugreifen, Nachrichten zu steuern und zu validieren, auf Monitoring-Dashboards zuzugreifen und vieles mehr.  [Erfahren Sie mehr über den Web-basierten Zugriff auf Campaign](../start/connect.md).
-
-* Externe Anwendungen mit APIs
-
-  In bestimmten Fällen kann das System über die via SOAP-Protokoll bereitgestellten Web Services-APIs von einem externen Programm aus aufgerufen werden. [Erfahren Sie mehr über Campaign-APIs](../dev/api.md).
 
 ### Persistenzebene{#persistance-layer}
 
@@ -52,7 +38,7 @@ Die logische Anwendungsebene von Campaign kann einfach konfiguriert werden, um k
 
 ## Campaign Managed Cloud Services{#ac-managed-services}
 
-Adobe Campaign v8 wird als Managed Service bereitgestellt: Alle Komponenten von Adobe Campaign, einschließlich der Benutzeroberfläche, der Ausführungsverwaltungs-Engine und der Campaign-Datenbanken, werden vollständig von Adobe gehostet, einschließlich E-Mail-Ausführung, Mirror-Seiten, Tracking-Server und nach außen gerichtete Web-Komponenten wie die Abmelde-Seite bzw. das Präferenzcenter und Landingpages.
+Adobe Campaign v8 wird als Managed Service bereitgestellt: Alle Komponenten von Adobe Campaign, einschließlich der Benutzeroberfläche, der Ausführungsverwaltungs-Engine und der Campaign-Datenbanken, werden vollständig von Adobe gehostet, einschließlich E-Mail-Ausführung, Mirrorseiten, Tracking-Server und nach außen gerichtete Web-Komponenten wie die Abmelde-Seite bzw. das Präferenzcenter und Landingpages.
 
 ## Prozesse in Campaign
 
@@ -60,7 +46,7 @@ Der Campaign-Webserver steuert den Zugriff auf Campaign-Web-Prozesse. JavaScript
 
 ![](assets/do-not-localize/ac-processes.png)
 
-Die Campaign Client-Konsole stellt eine Verbindung mit dem Webserver her, indem sie SOAP XML über HTTP verwendet. Der Webserver stellt die Sicherheitsebene bereit, übergibt die Anfragen mithilfe von JavaScript an die Anwendungsebene und die internen Prozesse von Campaign greifen mithilfe von SQL auf die Datenbank zu.
+Die Campaign-Clientkonsole stellt eine Verbindung zum Webserver mithilfe von SOAP XML über HTTP her. Der Webserver stellt die Sicherheitsebene bereit, übergibt die Anfragen mithilfe von JavaScript an die Anwendungsebene und die internen Prozesse von Campaign greifen mithilfe von SQL auf die Datenbank zu.
 
 Die allgemeine Kommunikation zwischen Campaign-Prozessen wird im folgenden Diagramm einer Standalone-Bereitstellung beschrieben: Alle Campaign-Komponenten sind auf demselben Computer installiert.
 

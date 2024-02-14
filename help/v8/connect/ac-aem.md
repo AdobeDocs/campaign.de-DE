@@ -5,23 +5,87 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: b267cb37a94bd389232ccfb9b8df69c9c2caa990
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 100%
+source-wordcount: '496'
+ht-degree: 23%
 
 ---
 
 # Arbeiten mit Campaign und Adobe Experience Manager {#ac-aem}
 
-Die Integration von Adobe Campaign und Adobe Experience Manager ermöglicht es Ihnen, den Inhalt von E-Mail-Sendungen sowie von Formularen direkt in Adobe Experience Manager zu verwalten.
+Durch die Integration von Adobe Campaign mit Adobe Experience Manager können Sie den Inhalt Ihrer E-Mail-Sendungen sowie Ihrer Formulare direkt in Adobe Experience Manager verwalten. Sie haben die Möglichkeit, entweder Ihre **Adobe Experience Manager** Inhalte in Campaign einbinden oder eine Verbindung herstellen **Adobe Experience Manager as a Cloud Service** -Konto, über das Sie Inhalte direkt in der Web-Oberfläche bearbeiten können.
 
-Sie können Assets auch direkt aus Ihrer Adobe Experience Manager Asset-Bibliothek einfügen, während Sie eine E-Mail oder Landingpage in Adobe Campaign bearbeiten. Diese Funktion wird im Kapitel [Adobe Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html?lang=de) näher beschrieben.
+![](../assets/do-not-localize/book.png) [Erfahren Sie, wie Sie in der Campaign-Weboberfläche Adobe Experience Manager als Cloud Service bearbeiten](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/content/integrations/aem-content.html?lang=en)
 
-Dies bedeutet, dass Sie sowohl die Funktionen zur Inhaltsbearbeitung von Adobe Experience Manager als auch die Versandfunktionen von Adobe Campaign optimal nutzen können.
+![](../assets/do-not-localize/book.png) [Weitere Informationen zu Adobe Experience Manager finden Sie in diesem Dokument .](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=de#aem-and-adobe-campaign-integration-workflow)
 
-![](../assets/do-not-localize/book.png) [Weitere Informationen finden Sie in diesem Dokument.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=de#aem-and-adobe-campaign-integration-workflow)
-
-![](../assets/do-not-localize/book.png) [Erfahren Sie mehr über diese Integration in diesem End-to-End-Muster.](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html?lang=de#integrating-with-adobe-experience-cloud)
+## Authoring mit Adobe Experience Manager {#integrating-with-aem}
 
 ![](../assets/do-not-localize/speech.png) Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Adobe Experience Manager mit Campaign zu integrieren.
+
+Mit dieser Integration kann beispielsweise ein Newsletter in Adobe Experience Manager erstellt werden, der danach in Adobe Campaign als Teil einer E-Mail-Kampagne verwendet wird.
+
+**In Adobe Experience Manager:**
+
+1. Navigieren Sie zu Ihrer [!DNL Adobe Experience Manager] Autoreninstanz erstellen, und klicken Sie oben links auf der Seite auf Adobe Erlebnis . Auswählen **[!UICONTROL Sites]** aus dem Menü.
+
+   ![](assets/aem_authoring_1.png)
+
+1. Zugriff **[!UICONTROL Kampagnen > Name Ihrer Marke (hier we.Shopping) > Hauptbereich > E-Mail]**.
+
+1. Klicks **[!UICONTROL Erstellen]** und wählen **[!UICONTROL Seite]** aus dem Dropdown-Menü aus.
+
+   ![](assets/aem_authoring_2.png)
+
+1. Wählen Sie die **[!UICONTROL Adobe Campaign Email]** und benennen Sie Ihren Newsletter.
+
+1. Rufen Sie nach dem Erstellen Ihrer Seite die **[!UICONTROL Seiteninformationen]** Menü und klicken Sie **[!UICONTROL Eigenschaften öffnen]**.
+
+   ![](assets/aem_authoring_3.png)
+
+1. Passen Sie Ihren E-Mail-Inhalt an, indem Sie Komponenten wie Personalisierungsfelder aus Adobe Campaign hinzufügen. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=en#editing-email-content)
+
+1. Sobald Ihre E-Mail fertig ist, navigieren Sie zur **[!UICONTROL Seiteninformationen]** Menü und klicken Sie **[!UICONTROL Workflow starten]**.
+
+   ![](assets/aem_authoring_4.png)
+
+1. Wählen Sie aus der ersten Dropdown-Liste **[!UICONTROL Genehmigen von Adobe Campaign]** als Workflow-Modell und klicken Sie auf **[!UICONTROL Workflow starten]**.
+
+   ![](assets/aem_authoring_5.png)
+
+1. Oben auf Ihrer Seite erscheint ein Haftungsausschluss mit folgenden Angaben: `This page is subject to the workflow Approve for Adobe Campaign`. Klicks **[!UICONTROL Fertig]** neben dem Haftungsausschluss klicken, um die Überprüfung zu bestätigen, und **[!UICONTROL Ok]**.
+
+1. Klicks **[!UICONTROL Fertig]** erneut auswählen **[!UICONTROL Newsletter-Validierung]** im **[!UICONTROL Nächster Schritt]** angezeigt.
+
+   ![](assets/aem_authoring_6.png)
+
+Ihr Newsletter ist jetzt fertig und in Adobe Campaign synchronisiert.
+
+**In Adobe Campaign:**
+
+1. Wählen Sie im Tab **[!UICONTROL Kampagnen]** die Option **[!UICONTROL Sendungen]** und danach die Schaltfläche **[!UICONTROL Erstellen]** aus.
+
+1. Wählen Sie die **[!UICONTROL E-Mail-Versand mit AEM Inhalt (mailAEMContent)]** Vorlage aus der **[!UICONTROL Versandvorlage]** Dropdown-Menü.
+
+   ![](assets/aem_authoring_7.png)
+
+1. Fügen Sie zu Ihrem Versand einen **[!UICONTROL Titel]** hinzu und wählen Sie dann **[!UICONTROL Fortfahren]** aus.
+
+1. Klicks **[!UICONTROL Synchronisieren]** , um auf Ihre AEM zuzugreifen.
+
+   Wenn die Schaltfläche in der Benutzeroberfläche nicht sichtbar ist, navigieren Sie zum **[!UICONTROL Eigenschaften]** und greifen Sie auf die **[!UICONTROL Erweitert]** Registerkarte. Stellen Sie sicher, dass **[!UICONTROL Inhaltsbearbeitungsmodus]** -Feld konfiguriert ist, um **[!UICONTROL AEM]** und geben Sie Ihre AEM-Instanzdetails in das **[!UICONTROL AEM]** -Feld.
+
+   ![](assets/aem_authoring_8.png)
+
+1. Wählen Sie den zuvor in AEM erstellten Versand aus [!DNL Adobe Experience Manager] und bestätigen Sie durch Klicken auf **[!UICONTROL Ok]**.
+
+1. Sie können Assets direkt aus Ihrem [!DNL Adobe Experience Manager Assets] oder [!DNL Adobe Experience Manager Assets Library] beim Bearbeiten einer E-Mail in Adobe Campaign. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html?lang=de).
+
+   Verwenden Sie **Adobe Experience Manager Assets-Bibliothek**, greifen Sie auf **[!UICONTROL Eigenschaften]** und wählen Sie die **[!UICONTROL Erweitert]** Registerkarte. Aktivieren Sie die **[!UICONTROL Verwenden Sie AEM oben als freigegebene Asset-Bibliothek.]** -Option.
+
+   ![](assets/aem_authoring_9.png)
+
+1. Stellen Sie sicher, dass Sie auf die **[!UICONTROL Inhalt aktualisieren]** immer dann, wenn Änderungen an Ihrem AEM vorgenommen werden.
+
+Ihre E-Mail kann jetzt an Ihre Audience gesendet werden.

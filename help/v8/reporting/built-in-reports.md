@@ -5,9 +5,9 @@ feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: ht
-source-wordcount: '1118'
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+workflow-type: tm+mt
+source-wordcount: '1111'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Der Zugriff auf Berichte über Listen, Dienste, Angebote etc. erfolgt auf die gl
 
 ## Sendungsberichte {#reports-on-deliveries}
 
-Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
+Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
 Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschnitt](delivery-reports.md).
 

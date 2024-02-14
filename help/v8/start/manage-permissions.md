@@ -1,14 +1,14 @@
 ---
 title: Berechtigungen für Campaign v8 erteilen
-description: Erfahren Sie, wie Sie Berechtigungen für Campaign v8 erteilen Benutzer
+description: Erfahren Sie, wie Sie Campaign v8-Benutzern Berechtigungen erteilen.
 feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 100%
+source-wordcount: '1734'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor, um einen Benutzer hinzuzufügen:
 
 Weitere Informationen zur Benutzererstellung in der Admin Console finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-users-individually.html){target="_blank"}.
 
-Wenn sich neue Benutzerinnen und Benutzer [mit ihrer Adobe ID bei Campaign](connect.md) anmelden, werden sie in der Client-Konsole zur Liste der Campaign-Benutzerinnen und -Benutzer hinzugefügt. Campaign-Benutzende werden im Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Benutzer]** des Campaign-Explorers gespeichert.
+Wenn sich neue Benutzende mit ihrer Adobe ID [bei Campaign anmelden](connect.md), werden sie der Liste der Campaign-Benutzenden in der Client-Konsole hinzugefügt. Campaign-Benutzende werden im Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Benutzer]** des Campaign-Explorers gespeichert.
 
 ## Arbeiten mit externen Profilen{#product-profiles}
 
@@ -104,7 +104,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
    * **[!UICONTROL ADMINISTRATION]**: Berechtigt zum Ausführen, Erstellen, Bearbeiten und Löschen von Objekten wie Workflows, Sendungen, Skripten usw.
 
-1. **[!UICONTROL Versandverantwortliche Benutzer]** (Versand)
+1. **[!UICONTROL Versandverantwortliche Benutzer]** (delivery)
 
    Die Benutzer dieser Gruppe sind für die Versandverwaltung verantwortlich. Die Gruppe verleiht Zugriff auf die für die Erstellung und Vorbereitung von Sendungen notwendigen Hauptressourcen (Kampagnentypologien, Versandmappings, Standardvorlagen, Gestaltungsbausteine etc.).
 
@@ -113,7 +113,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
    * **[!UICONTROL SENDUNGEN VORBEREITEN]**: Berechtigt zum Erstellen, Bearbeiten und Starten der Versandanalyse;
    * **[!UICONTROL SENDUNGEN STARTEN]**: Berechtigt zur Validierung von zuvor analysierten Sendungen.
 
-1. **[!UICONTROL Kampagnenverantwortliche Benutzer]** (operation)
+1. **[!UICONTROL Kampagnenverantwortliche Benutzer]** (Vorgang)
 
    Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten. Diese Berechtigung verleiht Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets etc.) im Rahmen von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
 
@@ -126,7 +126,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
    >
    >Benutzer dieser Gruppe können keine Sendungen starten.
 
-1. **[!UICONTROL Autoren]** (content)
+1. **[!UICONTROL Autoren]** (Inhalt)
 
    Benutzer dieser Gruppe können auf die Inhaltsordner im Kontext des Add-ons **[!UICONTROL Content-Management]** zugreifen. Diese Gruppe erteilt keine zusätzlichen Berechtigungen.
 
@@ -136,7 +136,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
 1. **[!UICONTROL Workflow-Ausführung]** (Workflow)
 
-   Die Gruppe **[!UICONTROL Workflow-Ausführung]** dient der Ausführungs- und Validierungskontrolle von Zielgruppen-Workflows. Die Benutzer dieser Gruppe verfügen automatisch über die spezifische Berechtigung WORKFLOW. Diese ist neben den Datenzugriffsrechten Voraussetzung für alle Workflow-bezogenen Aktionen. Die Gruppe **[!UICONTROL Workflow-Ausführung]** verfügt standardmäßig über Lesezugriff auf die Standard-Ordner der Zielgruppen-Workflows und der Workflow-Vorlagen. Die Benutzer dieser Gruppe haben des Weiteren Lese- und Schreibzugriff auf den Ordner der ausstehenden Validierungen.
+   Die **[!UICONTROL Workflow-Ausführung]** -Gruppe ermöglicht die Steuerung der Ausführung und Validierung von Zielgruppen-Workflows. Die spezifische Berechtigung WORKFLOW wird den Benutzern dieser Gruppe zugeordnet. Sie ist für alle Aktionen in Workflows erforderlich, zusätzlich zu den Zugriffsrechten auf die Datendateien. Standardmäßig wird die Variable **[!UICONTROL Workflow-Ausführung]** hat schreibgeschützten Zugriff auf Standard-Zielgruppen-Workflow-Dateien und Workflow-Vorlagen. Benutzer dieser Gruppe haben auch Lese- und Schreibzugriff auf die ausstehende Validierungsdatei.
 
 1. **[!UICONTROL Workflow-Verwantwortliche]** (workflowSupervisor)
 

@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie Marketing-Kampagnen erstellen und ausführen.
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d7750add8d71bb51ea1c099a45a7bce05da3b4d7
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 100%
+source-wordcount: '1348'
+ht-degree: 88%
 
 ---
 
@@ -105,7 +105,7 @@ Für jede Kampagne stehen folgende Funktionen zur Verfügung:
 * Kosten definieren: Adobe Campaign ermöglicht es, für jede Kampagne Kosteneinträge und Kostenberechnungsstrukturen zu definieren, die bei der Erstellung der Marketing-Kampagne verwendet werden können. Beispiel: Druckkosten, Nutzung einer externen Agentur, Raummiete usw. [Weitere Informationen](providers--stocks-and-budgets.md#defining-cost-categories).
 * Definition von Zielen: Sie können quantifizierbare Ziele für eine Kampagne definieren, z. B. die Anzahl der Abonnenten, das Geschäftsvolumen etc. Diese Informationen werden später in Kampagnenberichten verwendet.
 * Verwalten Sie Testadressen und Kontrollgruppen. [Weitere Informationen](marketing-campaign-deliveries.md#defining-a-control-group).
-* Validierungsverwaltung: Sie können die zu validierenden Vorgänge sowie bei Bedarf validierungsverantwortliche Benutzer oder Benutzergruppen auswählen. [Weitere Informationen](marketing-campaign-approval.md#checking-and-approving-deliveries).
+* Validierungsverwaltung: Sie können die zu validierenden Abwandlungen sowie bei Bedarf validierungsverantwortliche Benutzer oder Benutzergruppen auswählen. [Weitere Informationen](marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Um einen Plan, ein Programm, eine Kampagne oder einen Versand zu bearbeiten, nav
 
 ![](assets/campaign-calendar.png)
 
-Sie haben die Möglichkeit, die im Kampagnenkalender angezeigten Informationen zu filtern. Klicken Sie hierzu auf den Link **[!UICONTROL Filtern]** und wählen Sie die gewünschten Kriterien aus.
+Sie können die im Kampagnenkalender angezeigten Informationen filtern. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie die Filterkriterien aus.
 
 ![](assets/campaign_planning_filter.png)
 
@@ -155,12 +155,17 @@ Beim Durchsuchen des Kalenders können Sie auch ein Programm oder eine Kampagne 
 
 ![](assets/campaign-create-from-calendar.png)
 
-Wenn Sie eine Kampagne im Tab **[!UICONTROL Planung]** eines Programms erstellen, wird die Kampagne dem jeweiligen Programm automatisch hinzugefügt. Das Feld **[!UICONTROL Programm]** wird in diesem Fall ausgeblendet.
+Wenn Sie eine Kampagne über die **[!UICONTROL Zeitplan]** in einem Programm, wird die Kampagne automatisch mit dem betreffenden Programm verknüpft. Die **[!UICONTROL Programm]** -Feld in diesem Fall ausgeblendet wird.
 
 
-## Verwenden der Web-Schnittstelle {#use-the-web-interface-}
+## Zugriff auf Campaign über einen Webbrowser {#use-the-web-interface}
 
-Sie können über einen Internet-Browser auf die Bildschirme der Adobe Campaign-Client-Konsole zugreifen, um alle Kampagnen und Sendungen sowie Berichte und Informationen zu den Profilen in Ihrer Datenbank anzuzeigen. Dieser Zugriff ermöglicht keine Erstellung von Datensätzen. Abhängig von den Benutzerrechten können Sie die Daten in der Datenbank anzeigen und/oder bearbeiten. Sie können beispielsweise Kampagneninhalte und Zielgruppenbestimmungen genehmigen, einen Versand neu starten oder stoppen, usw.
+
+>[!AVAILABILITY]
+>
+>Ab Campaign v8.6 ist Campaign in einer Web-Benutzeroberfläche verfügbar. Die meisten Marketing-Aktionen können über diese neue Benutzeroberfläche durchgeführt werden. [Weitere Informationen](../../v8/start/campaign-ui.md#discover-the-user-interface).
+
+Über einen Internetbrowser haben Sie Zugriff auf einige Bildschirme der Adobe Campaign-Clientkonsole, in denen Sie alle Kampagnen und Sendungen sowie Berichte und Informationen zu Profilen in Ihrer Datenbank ansehen können. Sie können keine Komponenten aus diesem Webzugriff erstellen, aber je nach Zugriffsrechten können Sie die Daten in der Datenbank anzeigen und/oder bearbeiten. In der Regel können Sie Inhalte und Zielgruppen einer Kampagne validieren, einen Versand neu starten oder stoppen etc.
 
 1. Melden Sie sich wie gewohnt über https://`<your instance>:<port>/view/home` an.
 1. Über die unterschiedlichen Rubriken besteht Zugriff auf Listen und weitere Navigationselemente.

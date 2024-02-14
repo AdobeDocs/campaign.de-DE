@@ -3,10 +3,10 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
+source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 100%
+source-wordcount: '301'
+ht-degree: 79%
 
 ---
 
@@ -14,9 +14,22 @@ ht-degree: 100%
 
 ## Neue Funktionen
 
-Hier erhalten Sie einen Einblick in die neuesten Verbesserungen in Adobe Campaign v8 und in der zugehörigen Dokumentation. Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](start/release-notes.md). Aktuelle Informationen zu den neuesten Änderungen in unserer Dokumentation finden Sie auf der [Seite mit den Dokumentationsaktualisierungen](start/documentation-updates.md).
+Verschaffen Sie sich einen Überblick über die neuesten Verbesserungen des Adobe Campaign v8 (Konsole)-Produkts und der Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](start/release-notes.md). Aktuelle Informationen zu den neuesten Änderungen in unserer Dokumentation finden Sie auf der [Seite mit den Dokumentationsaktualisierungen](start/documentation-updates.md).
 
 >[!BEGINTABS]
+
+>[!TAB Campaign-Version 8.6 ist live]
+
+
+[![Bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
+
+
+>[!TAB Neue Campaign-Webbenutzeroberfläche]
+
+Erleben Sie die neue Adobe Campaign-Benutzeroberfläche. Moderner, intuitiver und dynamischer!
+
+[![Bild](assets/do-not-localize/learn-more-button.svg)](start/campaign-ui.md#ac-web-ui)
+
 
 >[!TAB Künftige Änderungen am Push-Kanal]
 
@@ -24,11 +37,7 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
 
->[!TAB Verbesserter Push-Benachrichtigungsdienst]
 
-Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser wird durch ein robustes Framework gestützt, das auf moderner Spitzentechnologie aufbaut. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).
-
-[![Bild](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
 
 >[!ENDTABS]
 
@@ -42,7 +51,7 @@ Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser
     </td>
     <td>
     <a href="start/connect.md"><img src="assets/do-not-localize/start-connect.jpeg"></a>
-    <div><strong>Verbindung zu Campaign v8 herstellen</strong><br/>Erfahren Sie, wie Sie eine Verbindung zu Adobe Campaign v8 herstellen und starten Sie mit Ihrer Tour zur Kampagnenverwaltung, indem Sie die Client-Konsole installieren und konfigurieren.</div><br/>
+    <div><strong>Verbindung zu Campaign v8 herstellen</strong><br/>Erfahren Sie, wie Sie eine Verbindung zu Adobe Campaign v8 herstellen und Ihre Kampagnenverwaltungs-Journey starten können, indem Sie die Clientkonsole installieren und konfigurieren.</div><br/>
     </td>
     <td>
     <a href="start/create-message.md"><img src="assets/do-not-localize/start-send.jpeg"></a>
@@ -102,5 +111,5 @@ Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser
 
 ## Zusätzliche Ressourcen
 
-[Adobe Campaign v8 – Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=de){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
+[Adobe Campaign v8 – Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Adobe Campaign Web user interface documentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=de){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
 

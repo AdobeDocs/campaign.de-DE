@@ -8,10 +8,10 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 100%
+source-wordcount: '1233'
+ht-degree: 96%
 
 ---
 
@@ -796,7 +796,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
 ## Variablen {#variables}
 
-Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Code der mobilen Anwendung und in der Adobe Campaign Client-Konsole auf der Registerkarte **[!UICONTROL Variablen]** im speziellen Dienst für mobile Anwendungen definiert werden.
+Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Mobile-App-Code und in der Adobe Campaign-Clientkonsole in der Variablen **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst.
 
 
 Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
@@ -891,7 +891,7 @@ Gehen Sie hier folgendermaßen vor:
 
 * Definieren Sie das Layout Ihrer Benachrichtigung.
 
-  Sie müssen ein Layout mit den jeweiligen Widgets definieren. Das Widget für ein Bild ist **UIImageView**.
+  Sie müssen ein Layout mit den entsprechenden Widgets definieren. Für ein Bild trägt das Widget den Namen **UIImageView**.
 
 * Stellen Sie Ihre Medien dar.
 

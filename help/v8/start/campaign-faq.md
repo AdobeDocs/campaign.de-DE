@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 100%
+source-wordcount: '594'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
 1. **Wie kann ich eine Verbindung zu Campaign v8 herstellen?**
 
-   Sie müssen die Campaign-Client-Konsole herunterladen und installieren, um eine Verbindung zu Adobe Campaign herzustellen.
+   Sie müssen die Campaign-Clientkonsole herunterladen und installieren, um eine Verbindung mit Adobe Campaign herzustellen.
 
    ![](../assets/do-not-localize/glass.png) [Hier erfahren Sie mehr darüber](connect.md).
 
@@ -68,7 +68,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
 1. **Wo kann ich Campaign herunterladen?**
 
-   Sie können das Installationsprogramm und die Client-Konsole vom Adobe-Download-Center abrufen.
+   Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download Center abrufen.
 
    Greifen Sie als Admin-Benutzerin bzw. -Benutzer auf die Adobe-[Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} zu, um Adobe Campaign herunterzuladen.
 
@@ -76,7 +76,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
 1. **Kann ich mich mit Campaign-Experten in Verbindung setzen?**
 
-   Der Campaign-Community beitreten: Suchen Sie nach Antworten in bereits gestellten Fragen oder fragen Sie die Experten. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+   Der Campaign-Community beitreten: Suchen Sie nach Antworten in bereits gestellten Fragen oder fragen Sie die Experten. [Gespräch beitreten](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Wie kann ich ein Problem protokollieren?**

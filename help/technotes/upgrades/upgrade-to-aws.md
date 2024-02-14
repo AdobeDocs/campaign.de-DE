@@ -2,10 +2,10 @@
 title: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 description: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 68252db5ad53e2a37c76765cd35650f824101289
-workflow-type: ht
+source-git-commit: 4c41e5d1fef1dcb3279a26f6025338e41525e6b3
+workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Diese Änderung betrifft:
 
 Die Upgrades der Entwicklungs- und Staging-Umgebung begannen im **Oktober 2023**.
 
-Die Upgrades der Produktionsumgebung begannen im **Januar 2024**.
+Die Aktualisierungen der Produktionsumgebungen wurden in **Januar 2024**.
 
 ## Was ist zu erwarten?{#impact}
 

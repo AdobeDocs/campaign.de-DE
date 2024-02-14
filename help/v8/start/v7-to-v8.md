@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
-workflow-type: ht
-source-wordcount: '690'
-ht-degree: 100%
+source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
+workflow-type: tm+mt
+source-wordcount: '714'
+ht-degree: 92%
 
 ---
 
@@ -31,19 +31,27 @@ Adobe Campaign Managed Cloud Services bietet eine Managed Cloud Services-Plattfo
 
 Das neue Angebot kombiniert erstklassige Dienstleistungen mit proaktiver Aufsicht und rechtzeitigen Warnmeldungen und konzentriert sich auf drei Bereiche:
 
-* **Cloud-Agilität** – Automatisierung durch Adobe mit optimierten, standardisierten Cloud-Bereitstellungen für eine prognostizierbarere Leistung, größere Agilität und verbesserte Self-Service-Produktivität.
-* **Service-Erlebnis** – proaktive Verfügbarkeit, Kapazität und Leistungsüberwachung und -reaktion, um Unterbrechungen zu verhindern, Störungen schneller zu beheben und den Service regelmäßig zu überprüfen, und so kontinuierliche Verbesserungen zu gewährleisten.
+* **Cloud-Agilität** – Automatisierung durch Adobe mit optimierten, standardisierten Cloud-Bereitstellungen für eine prognostizierbarere Performance, größere Agilität und verbesserte Self-Service-Produktivität.
+* **Service-Erlebnis** – proaktive Verfügbarkeit, Kapazität und Performance-Überwachung und -reaktion, um Unterbrechungen zu verhindern, Störungen schneller zu beheben und den Service regelmäßig zu überprüfen, und so kontinuierliche Verbesserungen zu gewährleisten.
 * **Profundes Expertenwissen zu Campaign** – hochaffiner Service von erfahrenen Customer-Engineering-Teams, um funktionale, technische oder Zustellbarkeitserfordernisse zu erfüllen, das Bereitstellungsrisiko zu reduzieren und das Änderungsmanagement zu verbessern.
 
 Als früherer [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die in [diesem Abschnitt](#gs-removed) aufgeführt sind.
 
-Campaign v8 basiert auf einer **Hybridarchitektur**. Beim Umstieg von Campaign Classic v7 ist zu beachten, dass alle Sendungen über den Mid-Sourcing-Server laufen. Infolgedessen ist internes Routing in Campaign v8 **nicht möglich** und das externe Konto wurde entsprechend deaktiviert.
+>Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Die Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die schon vorkonfiguriert ist.
+
+
+## Hybrid-Architekturreifen {#hybrid-archi}
+
+Campaign v8 basiert auf einer **Hybridarchitektur**. Wenn Sie von Campaign Classic v7 wechseln, beachten Sie, dass alle Sendungen den Mid-Sourcing-Server durchlaufen.
+
+Dies hat folgende Auswirkungen:
+
+* Internes Routing ist **nicht möglich** in Campaign v8 und das externe Konto entsprechend deaktiviert wurde,
+* Der Status der Sendungen wird nicht sofort aktualisiert - In der Marketing-Instanz wird ein technischer Prozess ausgeführt, der den Versandstatus zeitnah aktualisiert.
+
 
 ![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](../send/transactional-template.md#transition-from-v7) mehr über das Senden von Testsendungen für Transaktionsnachrichten beim Übergang von v7 zu v8.
 
->[!NOTE]
->
->Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Die Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die schon vorkonfiguriert ist.
 
 ## [!DNL Campaign] und [!DNL Snowflake] {#ac-gs-snowflake}
 
@@ -79,7 +87,7 @@ Beachten Sie, dass einige Funktionen im Kontext einer [Enterprise (FFDA)-Bereits
 
 Einige historische Funktionen von Campaign Classic v7 werden in Campaign v8 nicht mehr unterstützt, wie etwa:
 
-* Social Marketing    mit Facebook
+* Social Marketing mit Facebook
 * ACS-Connector (Prime-Angebote)
 * Integration mit LDAP
 * Anmelden mit Benutzer/Kennwort

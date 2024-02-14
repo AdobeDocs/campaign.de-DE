@@ -5,9 +5,9 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1400'
 ht-degree: 100%
 
 ---
@@ -134,7 +134,7 @@ Die folgenden Datentypen werden in Schemata unterstützt:
 
   Die Größe kann über das Attribut **length** (optional, Standardwert &quot;255&quot;) angegeben werden.
 
-* **boolean**: Boolesches Feld. Beispiel für mögliche Werte: true/false, 0/1, yes/no usw.
+* **boolean**: Boolesches Feld. Beispiel für mögliche Werte: wahr/falsch, 0/1, ja/nein usw.
 * **byte**, **short**, **long**: ganze Zahlen (1 Byte, 2 Byte, 4 Byte). Beispiele: Alter, Kontonummer, Anzahl der Punkte usw.
 * **double**: Gleitkommazahl doppelter Genauigkeit. Beispiele: Preis, Quote usw.
 * **date**, **datetime**: Datum und Datum + Uhrzeit. Beispiele: Geburtsdatum, Kaufdatum usw.
@@ -180,13 +180,13 @@ Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mi
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  Das Label wird im Eingabeformular der Adobe Campaign-Client-Konsole angezeigt:
+  Das Label wird vom Formular der Adobe Campaign-Client-Konsole aus angezeigt:
 
   ![](assets/schema_label.png)
 
 * Mit der Eigenschaft **desc** können Sie eine lange Beschreibung eingeben.
 
-  Die Beschreibung ist im Eingabeformular in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole zu finden.
+  Die Beschreibung ist vom Formular aus in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole zu finden.
 
   >[!NOTE]
   >

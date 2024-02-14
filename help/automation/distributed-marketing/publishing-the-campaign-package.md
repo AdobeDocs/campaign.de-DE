@@ -5,10 +5,10 @@ description: Veröffentlichen des Kampagnenkits
 feature: Distributed Marketing
 role: User
 exl-id: 2cd1981d-f192-41dc-b2f2-4fcd60493079
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '479'
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Die Benutzer der Zentralstelle veröffentlichen in der **[!UICONTROL Kampagnenkit-Liste]** die Kits, die den Lokalstellen zur Verfügung gestellt werden sollen.
 
-Vor der Veröffentlichung in der Liste der Kampagnenkits müssen diese von der Zentralstelle validiert werden. Sie haben die Möglichkeit, hierzu einen einzelnen oder eine Gruppe von Validierern über den Link **[!UICONTROL Validierungsparameter...]** des Kampagnenkits festzulegen.
+Bevor sie in der Kampagnenkit-Liste veröffentlicht werden können, müssen die Kampagnenkits von der Zentralstelle genehmigt werden. Zu diesem Zweck können Sie einen Validierer oder eine Gruppe von Validierungsverantwortlichen über die **[!UICONTROL Validierungsparameter]** im Kampagnenkit.
 
 ## Validierungsverantwortliche Person zuweisen {#assigning-a-reviewer}
 
@@ -46,7 +46,7 @@ Der validierungsverantwortliche Benutzer erhält daraufhin eine Benachrichtigung
 
 Wenn nicht anders angegeben, muss die Validierung innerhalb von drei Tagen ab dem Unterbreitungsdatum erfolgen.
 
-Im unteren Abschnitt des Bearbeitungsfensters der Validierer können Sie Erinnerungen konfigurieren, die bei einer ausstehenden Validierung eines Kits an die Validierungsverantwortlichen geschickt werden. Klicken Sie hierzu auf den Link **[!UICONTROL Erinnerung hinzufügen]** und anschließend auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
+Im Fenster &quot;Validierer bearbeiten&quot;können Sie Erinnerungen festlegen, die eine oder mehrere Nachrichten senden, wenn ein Kampagnenkit nicht validiert wurde. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Erinnerung hinzufügen]** -Link, dann **[!UICONTROL Hinzufügen]** Schaltfläche.
 
 Erinnerungen können entweder an einem bestimmten Datum und/oder **x** Tage nach dem Übermittlungsdatum gesendet werden. Die Art der Erinnerung kann in der ersten Spalte der Erinnerungen-Tabelle konfiguriert werden. Im folgenden Beispiel erhalten die validierungsverantwortlichen Personen am 11.01.2023 eine Erinnerungsnachricht, also zwei Tage vor dem in der Variablen **[!UICONTROL Datum]** ausgewählten Datum. Sie erhalten eine zweite Erinnerung einen Tag vor Ablauf des Validierungszeitraums, d. h. zwei Tage nach dem Datum der Übermittlung zur Validierung.
 
@@ -54,7 +54,7 @@ Erinnerungen können entweder an einem bestimmten Datum und/oder **x** Tage nach
 
 Sobald er definiert ist und das Paket zur Validierung eingereicht wurde, wird der Ausführungsplan auf der Registerkarte **[!UICONTROL Audit]** angezeigt. Er enthält die Bearbeitungsfrist, die auf der Grundlage der vorherigen Konfiguration berechnet wurde, sowie die Termine aller konfigurierten Mahnungen.
 
-## Genehmigen über die Client-Konsole {#approving-via-the-adobe-campaign-console}
+## Validierung über die Clientkonsole {#approving-via-the-adobe-campaign-console}
 
 Wenn kein Validierungsverantwortlicher bestimmt wurde oder keiner der benachrichtigten Benutzer das Kit validiert hat, kann die Validierung direkt über die Schaltfläche **[!UICONTROL Kampagnenkit validieren]** des **[!UICONTROL Dashboards]** des Kampagnenkits oder über die Übersicht der Kits erfolgen.
 

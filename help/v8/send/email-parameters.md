@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 100%
+source-wordcount: '631'
+ht-degree: 83%
 
 ---
 
@@ -18,58 +18,11 @@ In diesem Abschnitt werden die in den Versandeigenschaften verfügbaren Optionen
 
 ## Verwenden von E-Mail BCC {#email-bcc}
 
-<!--
->[!NOTE]
->
->This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
-
-Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird.
-
-Adobe Campaign selbst ermöglicht keine Verwaltung von archivierten Dateien. Sie können aber die gewünschten Nachrichten an eine bestimmte BCC (Blind Carbon Copy)-E-Mail-Adresse senden, wo sie mithilfe eines externen Systems verarbeitet und archiviert werden. Die .eml-Dateien, die den gesendeten E-Mails entsprechen, können dann auf einen Remote-Server wie z. B. einen SMTP-E-Mail-Server übertragen werden.
-
->[!CAUTION]
->
->Aus Datenschutzgründen müssen BCC-E-Mails von einem Archivierungssystem bearbeitet werden, in dem personenbezogene Daten (PII, Personally Identifiable Information) sicher aufbewahrt werden.
-
-Das Archivierungsziel ist die von Ihnen ausgewählte BCC-E-Mail-Adresse, die für die Versandempfänger unsichtbar bleibt.
-
-![](../assets/do-not-localize/speech.png) Wenn Sie Managed Cloud Services verwenden, [wenden Sie sich an Adobe](../start/campaign-faq.md#support){target="_blank"}, um die für die Archivierung zu verwendende BCC-E-Mail-Adresse mitzuteilen.
-
-Nachdem die BCC-E-Mail-Adresse definiert wurde, müssen Sie die entsprechende Option auf Versandebene aktivieren.
-
->[!CAUTION]
->
->**[!UICONTROL E-Mail-BCC]** ist standardmäßig nicht aktiviert. Sie müssen die Funktion auf der E-Mail-Versand- oder Versandvorlagenebene manuell aktivieren.
-
-Gehen Sie dazu wie folgt vor:
-
-1. Gehen Sie zu **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** oder **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Versandvorlagen]**.
-1. Wählen Sie den gewünschten Versand aus oder duplizieren Sie die Standardvorlage **[!UICONTROL E-Mail-Versand]**, und wählen Sie dann die duplizierte Vorlage aus.
-1. Wählen Sie die **[!UICONTROL Eigenschaften]**-Schaltfläche aus.
-1. Gehen Sie in den **[!UICONTROL Versand]**-Tab.
-1. Aktivieren Sie die Option **[!UICONTROL E-Mail-BCC.]**
-
-   ![](assets/email-bcc.png)
-
-1. Klicken Sie auf **[!UICONTROL OK]**.
-
-Eine Kopie aller gesendeten Nachrichten für jeden Versand, der auf dieser Vorlage basiert, wird an die dafür konfigurierte BCC-E-Mail-Adresse gesendet.
-
-Beachten Sie die folgenden Besonderheiten und Empfehlungen:
-
-* Sie können nur eine einzige BCC-E-Mail-Adresse verwenden.
-
-* Stellen Sie sicher, dass die BCC-Adresse über genügend Aufnahmekapazität verfügt, um alle gesendeten E-Mails zu archivieren.
-
-* E-Mail-BCC <!--with Enhanced MTA--> sendet die Nachrichten an die BCC-E-Mail-Adresse, bevor sie an die Empfänger gesendet werden. Dies kann dazu führen, dass BCC-Nachrichten gesendet werden, auch wenn die Original-Sendungen möglicherweise einen Bounce erzeugt haben. Weitere Informationen zu Bounces finden Sie unter [Fehlgeschlagene Sendungen](delivery-failures.md).
-
-* Wenn die an eine BCC-Adresse gesendeten E-Mails geöffnet und angeklickt werden, wird dies in der Versandanalyse in **[!UICONTROL Gesamtöffnungen]** und **[!UICONTROL Klicks]** berücksichtigt, was zu falschen Berechnungen führen könnte.
-
-<!--Only successfully sent emails are taken in account, bounces are not.-->
+Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von Ihrer Plattform gesendeten E-Mails aufbewahrt wird. Diese Option wird im Abschnitt [diese Seite](email-bcc.md).
 
 ## Auswählen von Nachrichtenformaten {#selecting-message-formats}
 
-Sie können das Format der gesendeten E-Mail-Nachrichten ändern. Bearbeiten Sie dazu die Eigenschaften des Versands und klicken Sie auf die Registerkarte **[!UICONTROL Versand]**.
+Sie können das Format der gesendeten E-Mail-Nachrichten ändern. Bearbeiten Sie hierzu die Versandeigenschaften und klicken Sie auf die Schaltfläche **[!UICONTROL Versand]** Registerkarte.
 
 ![](assets/email-message-format.png)
 
@@ -124,7 +77,7 @@ Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschn
 
 ## Hinzufügen von SMTP-Headern {#adding-smtp-headers}
 
-Sie haben die Möglichkeit, Ihren Sendungen weitere SMTP-Header hinzuzufügen. Gehen Sie hierfür in den Tab **[!UICONTROL SMTP]** in den Versandeigenschaften.
+Sie können Ihren Sendungen auch SMTP-Header hinzufügen. Verwenden Sie dazu den entsprechenden Abschnitt des **[!UICONTROL SMTP]** im Versand.
 
 Das in diesem Fenster erfasste Script muss pro Zeile einen Header im Format **Name: Wert** enthalten.
 
@@ -138,9 +91,9 @@ Werte werden bei Bedarf automatisch verschlüsselt.
 
 ![](assets/email-smtp-headers.png)
 
-<!--
-## Generate mirror page {#generating-mirror-page}
 
-The mirror page is an HTML page accessible online via a web browser. Its content is identical to the email. It can be useful if your recipients are experiencing rendering issues or broken images when trying to view your email in their inbox.
+## Mirrorseite generieren {#generating-mirror-page}
 
-Learn how to insert a link to the mirror page in [this section](mirror-page.md).-->
+Eine Mirrorseite ist eine HTML-Seite, die über einen Webbrowser online abgerufen werden kann und deren Inhalt mit dem der E-Mail identisch ist. Dies kann nützlich sein, wenn bei Ihren Empfängern Rendering-Probleme auftreten oder Bilder beschädigt sind, wenn sie versuchen, Ihre E-Mail in ihrem Posteingang anzuzeigen.
+
+Erfahren Sie, wie Sie einen Link zur Mirrorseite in [diesem Abschnitt](mirror-page.md)

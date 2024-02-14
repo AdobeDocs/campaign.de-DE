@@ -5,9 +5,9 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2573'
 ht-degree: 100%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 100%
 
 Wenn Sie ein Schema erstellen oder erweitern, müssen Sie die zugehörigen Eingabeformulare erstellen oder ändern, um diese Änderungen für die Endbenutzerinnen und -benutzer sichtbar zu machen.
 
-Mit einem Eingabeformular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten. Das Formular wird anhand seines Namens und seines Namespace identifiziert.
+Mit einem Formular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten. Das Formular wird anhand seines Namens und seines Namespace identifiziert.
 
 Der Identifikationsschlüssel eines Formulars ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt, z. B. „cus:contact“.
 
 ## Bearbeiten von Eingabeformularen
 
-Erstellen und konfigurieren Sie Eingabeformulare im Ordner **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Eingabeformulare]** der Client-Konsole:
+Erstellen und konfigurieren Sie Formulare im Ordner **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Formulare]** der Client-Konsole:
 
 ![](assets/form_arbo.png)
 

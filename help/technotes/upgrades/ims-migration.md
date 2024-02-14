@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benut
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
-workflow-type: ht
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+workflow-type: tm+mt
 source-wordcount: '1511'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -204,13 +204,13 @@ Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufru
 
 
 
-### Schritt 9: (optional) Aktualisieren der technischen Kontenbenutzenden in der Campaign Client Console {#ims-migration-step-9}
+### Schritt 9: (optional) Aktualisieren Sie den technischen Konto-Operator in der Campaign-Clientkonsole. {#ims-migration-step-9}
 
 Dieser Schritt ist optional und nur innerhalb der Marketing-Instanz(en) verfügbar, nicht aber in einer Message Center-Instanz. Wenn spezifische Ordnerberechtigungen oder spezifische Berechtigungen für die technischen Benutzenden nicht über die zugewiesene(n) Benutzergruppe(n) definiert wurden. Sie müssten jetzt die neu erstellten Benutzenden des technischen Kontos in der Admin Console aktualisieren, um die erforderlichen Ordnerberechtigungen oder spezifischen Berechtigungen zu erteilen.
 
 Beachten Sie, dass die Benutzenden des technischen Kontos so lange NICHT in Adobe Campaign vorhanden sind, bis mindestens ein API-Aufruf an die Campaign-Instanz erfolgt. Zu diesem Zeitpunkt erstellt IMS die Benutzenden in Campaign. Wenn Sie die technischen Benutzenden in Campaign nicht finden können, stellen Sie sicher, dass Sie erfolgreich einen API-Aufruf senden konnten, wie [in Schritt 7](#ims-migration-step-7) beschrieben.
 
-1. Um die für die neuen Benutzenden des technischen Kontos erforderlichen Änderungen anzuwenden, suchen Sie diese in der Campaign Client Console nach E-Mail-Adresse. Diese E-Mail-Adresse wurde während der obigen Schritte zur Projekterstellung und -authentifizierung erstellt.
+1. Um die für den neuen Benutzer des technischen Kontos erforderlichen Änderungen anzuwenden, suchen Sie diese in der Campaign-Clientkonsole nach E-Mail-Adresse. Diese E-Mail-Adresse wurde während der obigen Schritte zur Projekterstellung und -authentifizierung erstellt.
 
    Klicken Sie auf die Überschrift **OAuth-Server-zu-Server** im Abschnitt **Anmeldeinformationen** des Projekts, um diese E-Mail-Adresse zu finden.
 
@@ -220,11 +220,11 @@ Beachten Sie, dass die Benutzenden des technischen Kontos so lange NICHT in Adob
 
    ![](assets/do-not-localize/ims-updates-08.png)
 
-1. Sie müssen jetzt den neu erstellten technischen Benutzer bzw. die Benutzerin in der Adobe Campaign-Client-Konsole aktualisieren. Sie müssen die bestehenden Berechtigungen für den Ordner des technischen Benutzers bzw. der Benutzerin auf die neue Person übertragen.
+1. Sie müssen jetzt den neu erstellten technischen Operator in der Adobe Campaign-Clientkonsole aktualisieren. Sie müssen die bestehenden Berechtigungen für den Ordner des technischen Benutzers bzw. der Benutzerin auf die neue Person übertragen.
 
    Gehen Sie wie folgt vor, um diesen Benutzer bzw. diese Benutzerin zu aktualisieren:
 
-   1. Navigieren Sie im Explorer der Campaign-Client-Konsole zu **Administration > Zugriffsverwaltung > Benutzer**.
+   1. Navigieren Sie im Explorer der Campaign-Clientkonsole zum **Administration > Zugriffe > Benutzer**.
    1. Greifen Sie auf den bestehenden technischen Benutzer bzw. die technische Benutzerin zu, der bzw. die für APIs verwendet wird.
    1. Navigieren Sie zu den Ordnerberechtigungen und überprüfen Sie die Berechtigungen.
    1. Wenden Sie dieselben Berechtigungen auf den neu erstellten technischen Benutzer bzw. die neu erstellte technische Benutzerin an. Die E-Mail-Adresse dieser Benutzerin bzw. dieses Benutzers ist der Wert der **E-Mail für technische Konten**, der zuvor kopiert wurde.
@@ -233,11 +233,11 @@ Beachten Sie, dass die Benutzenden des technischen Kontos so lange NICHT in Adob
 
 >[!CAUTION]
 >
->Der neue technische Benutzer bzw. die Benutzerin muss mindestens einen API-Aufruf durchgeführt haben, damit er der Campaign-Client-Konsole hinzugefügt werden kann.
+>Der neue technische Benutzer muss mindestens einen API-Aufruf durchgeführt haben, der zur Campaign-Clientkonsole hinzugefügt werden soll.
 >
 
 ### Schritt 10: Entfernen der alten technischer Benutzenden aus Adobe Campaign {#ims-migration-step-10}
 
-Sobald Sie alle Drittanbietersysteme migriert haben, um das neue technische Konto mit IMS-Authentifizierung zu verwenden, können Sie die alten technischen Benutzenden aus der Campaign-Client-Konsole löschen.
+Nachdem Sie alle Drittanbietersysteme zur Verwendung des neuen technischen Kontos mit IMS-Authentifizierung migriert haben, können Sie den alten technischen Benutzer aus der Campaign-Clientkonsole löschen.
 
-Melden Sie sich dazu bei der Campaign-Client-Konsole an und navigieren Sie zu **Administration > Zugriffsverwaltung > Benutzer**, wo Sie die alten technischen Benutzenden finden und löschen können.
+Melden Sie sich dazu bei der Campaign-Clientkonsole an und navigieren Sie zu **Administration > Zugriffe > Benutzer** und die alten technischen Benutzer finden und löschen.

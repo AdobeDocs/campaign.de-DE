@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
-workflow-type: ht
-source-wordcount: '1853'
-ht-degree: 100%
+source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
+workflow-type: tm+mt
+source-wordcount: '1925'
+ht-degree: 98%
 
 ---
 
@@ -20,9 +20,9 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 _28. Oktober 2022_
 
-**Verbesserungen**
+**Fehlerbehebungen**
 
-* Es wurde ein Problem behoben, bei dem der Indikator für den erfolgreichen Versand nicht korrekt aktualisiert wurde, wenn Sie Adobe Campaign Enhanced MTA verwenden. (NEO-50462)
+* Fehlerkorrektur – Der Versandindikator „Erfolg“ wird jetzt korrekt aktualisiert, wenn Adobe Campaign Enhanced MTA verwendet wird. (NEO-50462)
 
 ## Version 8.4.1 {#release-8-4-1}
 
@@ -94,7 +94,7 @@ Um die Sicherheit zu optimieren, wurden Sicherheits-Token aus den von Campaign g
 
 Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](compatibility-matrix.md).
 
-**Patches**
+**Fehlerbehebungen**
 
 * Es wurde ein Problem behoben, das sich auf die Statusaktualisierungen des Versandlogs auf der MID-Instanz auswirkte, wenn die Option &quot;FeatureFlag_GZIP_Compression&quot; aktiviert war. (NEO-49183)
 * Es wurde ein Problem behoben, das dazu führen konnte, dass Sendungen im Status **Ausstehend** blieben, auch wenn das Kontaktdatum erreicht war. (NEO-48079)
@@ -113,7 +113,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 * Fehlerkorrektur – Die Versandanalyse ist jetzt während des Ausschlusses von auf die Blockierungsliste gesetzten Empfängern nicht mehr verlangsamt, wenn die Zielgruppe aus einer großen Mengen von Empfängern besteht. (NEO-48019)
 * Die Stabilität bei der Verarbeitung ungültiger XML-Zeichenfolgen während SOAP-Aufrufen wurde verbessert. (NEO-48027)
 * Fehlerkorrektur – Jetzt werden keine unnötigen Versandkontingente mehr erstellt, wenn für den Versand Kalender- und Aufspaltungsmodi verwendet werden. (NEO-48634)
-* Es wurde ein Leistungsproblem bei der Verwendung von auf Kalendern basierenden Schüben behoben. (NEO-48451)
+* Es wurde ein Performance-Problem bei der Verwendung von auf Kalendern basierenden Schüben behoben. (NEO-48451)
 * Fehlerkorrektur – Im Bildschirm der Versandliste wird jetzt nach der Erstellung eines neuen Zielgruppen-Mappings für ein benutzerdefiniertes Schema keine Fehlermeldung mehr angezeigt. (NEO-49237)
 * Fehlerkorrektur – Jetzt gehen keine Daten mehr verloren, wenn der Staging-Workflow fehlerhaft ist und die Aufbewahrungsfrist vollständig abgelaufen ist. (NEO-48975)
 
@@ -121,11 +121,11 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 
 >[!CAUTION]
 >
-> Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../start/connect.md#download-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+> Die Aktualisierung der Clientkonsole ist obligatorisch. Informationen zum Aktualisieren der Clientkonsole finden Sie in diesem Abschnitt [page](../start/connect.md#download-ac-console).
 
 _7. Oktober 2022_
 
-**Verbesserungen**
+**Fehlerbehebungen**
 
 * Es wurde ein Problem behoben, das sich auf die Statusaktualisierungen des Versandlogs auf der MID-Instanz auswirkte, wenn die Option &quot;FeatureFlag_GZIP_Compression&quot; aktiviert war. (NEO-49183)
 * Der technische Workflow **Datenbankbereinigung** kann jetzt auch für benutzerdefinierte Staging-Schemata verwendet werden. (NEO-48974)
@@ -137,7 +137,7 @@ _7. Oktober 2022_
 * Es wurde ein Problem behoben, bei dem ein Fehler angezeigt wurde, wenn die Vorschau eines Versands in einem archivierten Ereignis des Message Centers aufgerufen wurde. (NEO-43620)
 * Es wurde ein Problem in Workflows behoben, das dazu führen konnte, dass Dateien auf dem Server nicht aktualisiert wurden, wenn die Aktivität **Laden (Datei)** verwendet wurde. Der Prozess wurde bei 100 % angehalten, aber nie beendet. (NEO-47269)
 * Fehlerkorrektur – Jetzt werden keine unnötigen Versandkontingente mehr erstellt, wenn für den Versand Kalender- und Aufspaltungsmodi verwendet werden. (NEO-48634)
-* Es wurde ein Leistungsproblem bei der Verwendung von auf Kalendern basierenden Schüben behoben. (NEO-48451)
+* Es wurde ein Performance-Problem bei der Verwendung von auf Kalendern basierenden Schüben behoben. (NEO-48451)
 * Fehlerkorrektur – Im Bildschirm der Versandliste wird jetzt nach der Erstellung eines neuen Zielgruppen-Mappings für ein benutzerdefiniertes Schema keine Fehlermeldung mehr angezeigt. (NEO-49237)
 * Fehlerkorrektur – Jetzt tritt kein Problem mehr auf, wenn ein Versand während des MTA-Prozesses eine bestimmte Größe erreicht. (NEO-46097)
 * Fehlerkorrektur – Trackinglogs geben nun problemlos Daten über den Browser der Empfängerin bzw. des Empfängers zurück.  (NEO-46612)
@@ -232,7 +232,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 * Die Anzahl der Standardverbindungen für den Webprozess wurde von 50 auf 150 erhöht.
 * Campaign verfügt über eine Reihe neuer Schutzmechanismen, um das Einfügen duplizierter Schlüssel in eine Snowflake-Datenbank zu verhindern. [Mehr dazu](../architecture/keys.md)
 
-**Patches**
+**Fehlerbehebungen**
 
 * Fehlerkorrektur: Bei der Verwendung von Testadressen und Kontrollgruppen im selben wiederkehrenden Versand tritt jetzt kein Fehler mehr auf. (NEO-41197)
 * Fehlerkorrektur: Bei FFDA wird der E-Mail-Versand für alle Empfänger, die zum selben deliveryPart gehören, während des Sendevorgangs (bis zu 256) nicht mehr blockiert, wenn Personalisierungsblöcke eines der folgenden Zeichen enthalten: `' & < > "`. Diese Zeichen werden jetzt in Personalisierungsblöcken unterstützt (Beispiel: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
@@ -243,7 +243,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 
 _2. Februar 2022_
 
-**Patches**
+**Fehlerbehebungen**
 
 * Fehlerkorrektur – Die Versandvorbereitung schlägt jetzt nicht mehr fehl, wenn die in der Typologieregel definierte maximale Nachrichtenanzahl erreicht ist.
 * Fehlerkorrektur – Bei der Konfiguration des Adobe Analytics-Connectors tritt jetzt kein Fehler mehr auf, wenn die E-Mail-Adresse das Zeichen &quot;s&quot; enthält.
