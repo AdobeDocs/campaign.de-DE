@@ -3,10 +3,10 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
+source-git-commit: 08a7a5f51d20068c31980e7b256e80c36ba6ff31
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 79%
+source-wordcount: '319'
+ht-degree: 74%
 
 ---
 
@@ -14,12 +14,13 @@ ht-degree: 79%
 
 ## Neue Funktionen
 
-Verschaffen Sie sich einen Überblick über die neuesten Verbesserungen des Adobe Campaign v8 (Konsole)-Produkts und der Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](start/release-notes.md). Aktuelle Informationen zu den neuesten Änderungen in unserer Dokumentation finden Sie auf der [Seite mit den Dokumentationsaktualisierungen](start/documentation-updates.md).
+Hier erhalten Sie einen Einblick in die neuesten Verbesserungen des Adobe Campaign-Produkts und der Dokumentation v8 (Clientkonsole)! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](start/release-notes.md). Aktuelle Informationen zu den neuesten Änderungen in unserer Dokumentation finden Sie auf der [Seite mit den Dokumentationsaktualisierungen](start/documentation-updates.md).
 
 >[!BEGINTABS]
 
 >[!TAB Campaign-Version 8.6 ist live]
 
+Die neueste Version von Adobe Campaign ist jetzt verfügbar. Weitere Informationen finden Sie in den Versionshinweisen .
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
 
