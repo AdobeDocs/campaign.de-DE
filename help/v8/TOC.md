@@ -4,9 +4,8 @@ user-guide-title: Campaign v8
 user-guide-description: Produktdokumentation für Adobe Campaign v8 (Clientkonsole).
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
-hidefromtoc: true
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
+source-git-commit: df0c05495788fc497af51092f482e879fe2dffa7
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 96%
