@@ -5,10 +5,10 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: b267cb37a94bd389232ccfb9b8df69c9c2caa990
+source-git-commit: 92fe7c41047aafd26cca70a547025a3eff73e398
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 23%
+source-wordcount: '618'
+ht-degree: 19%
 
 ---
 
@@ -80,12 +80,30 @@ Ihr Newsletter ist jetzt fertig und in Adobe Campaign synchronisiert.
 
 1. Wählen Sie den zuvor in AEM erstellten Versand aus [!DNL Adobe Experience Manager] und bestätigen Sie durch Klicken auf **[!UICONTROL Ok]**.
 
-1. Sie können Assets direkt aus Ihrem [!DNL Adobe Experience Manager Assets] oder [!DNL Adobe Experience Manager Assets Library] beim Bearbeiten einer E-Mail in Adobe Campaign. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html?lang=de).
-
-   Verwenden Sie **Adobe Experience Manager Assets-Bibliothek**, greifen Sie auf **[!UICONTROL Eigenschaften]** und wählen Sie die **[!UICONTROL Erweitert]** Registerkarte. Aktivieren Sie die **[!UICONTROL Verwenden Sie AEM oben als freigegebene Asset-Bibliothek.]** -Option.
-
-   ![](assets/aem_authoring_9.png)
-
 1. Stellen Sie sicher, dass Sie auf die **[!UICONTROL Inhalt aktualisieren]** immer dann, wenn Änderungen an Ihrem AEM vorgenommen werden.
 
 Ihre E-Mail kann jetzt an Ihre Audience gesendet werden.
+
+## Importieren von Assets aus der Adobe Experience Manager Assets-Bibliothek {#assets-library}
+
+Sie können auch direkt Assets aus Ihrem [!DNL Adobe Experience Manager Assets Library] während der Bearbeitung einer E-Mail oder Landingpage in Adobe Campaign. Diese Funktion wird im Abschnitt [Adobe Experience Manager Assets-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en).
+
+1. Hochladen der Assets in Ihrer **Adobe Experience Manager Assets-Bibliothek**. [Mehr erfahren](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en#uploading-assets)
+
+1. Erstellen Sie in Adobe Campaign einen neuen Versand, indem Sie zur **Kampagnen** Registerkarte, klicken **Sendungen** und klicken Sie auf **Erstellen** oberhalb der Versandliste.
+
+1. Wählen Sie eine **Versandvorlage** und geben Sie Ihrem Versand einen Namen.
+
+1. Definieren und personalisieren Sie den Nachrichteninhalt. [Weitere Informationen](../send/email.md)
+
+1. Verwenden Sie **Adobe Experience Manager Assets-Bibliothek**, greifen Sie auf **[!UICONTROL Eigenschaften]** und wählen Sie die **[!UICONTROL Erweitert]** Registerkarte. Aktivieren Sie die **[!UICONTROL Verwenden Sie AEM oben als freigegebene Asset-Bibliothek.]** -Option.
+
+   ![](assets/aem_authoring_9.png)
+
+1. Aus dem **Bild** aufrufen, können Sie **[!UICONTROL Freigegebene Assets auswählen]** Menü.
+
+   ![](assets/aem_authoring_10.png)
+
+1. Wählen Sie im Auswahlfenster ein Bild aus Ihrem **Adobe Experience Manager Assets-Bibliothek**, und bestätigen Sie dann.
+
+Ihr E-Mail-Versand ist fertig. Jetzt können Sie die Zielgruppe festlegen, den Versand bestätigen und mit dem Versand fortfahren.
