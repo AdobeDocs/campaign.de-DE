@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 100%
+source-wordcount: '457'
+ht-degree: 79%
 
 ---
 
@@ -39,23 +39,23 @@ Zielgruppenbestimmung kann über eine Kombination von Abfragen in einer grafisch
 Weitere Informationen zur Erstellung einer Zielgruppe in einem Kampagnen-Workflow finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de).
 
 
-## Aktive Profile{#active-profiles}
+## Aktive Profile {#active-profiles}
 
-Gemäß Ihrem Vertrag erhalten alle Ihre Campaign-Instanzen eine bestimmte Anzahl aktiver Profile, die zu Abrechnungszwecken gezählt werden. Informationen zur Anzahl der gekauften aktiven Profile finden Sie in Ihrem aktuellen Vertrag.
+Ein aktives Profil ist ein Profil, mit dem der Kunde in den letzten 12 Monaten über einen beliebigen Kanal kommuniziert hat. Lizenzmetriken basieren auf aktiven Profilen. Weitere Informationen finden Sie unter [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-**Profil** bezeichnet einen Datensatz, der einen Endkunden, einen Interessenten oder Lead repräsentiert. Bei diesen Daten kann es sich etwa um einen Datensatz in der [Empfängertabelle](../dev/datamodel.md) oder einer externen Tabelle handeln, die die Kennung eines Cookies, eines Kunden oder eines Mobile-Kanals oder andere für einen bestimmten Kanal relevante Informationen enthält. Profile gelten als aktiv, wenn sie in den letzten 12 Monaten über einen beliebigen Kanal angesprochen wurden oder über einen beliebigen Kanal mit ihnen kommuniziert wurde.
+Sie können die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Campaign Control Panel überwachen. Weitere Informationen hierzu finden Sie im Abschnitt [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de){target="_blank"}.
 
-<!--
-You can monitor the number of active profiles used on your instances directly from Campaign Control Panel. 
-
-![](../assets/do-not-localize/book.png) For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
--->
+>[!CAUTION]
+>
+>* Ein Profil, das für mehrere Sendungen ausgewählt wurde, wird nur einmal gezählt.
+>
+>* Profile, die im Rahmen von Social Marketing auf X (Twitter) angesprochen werden, werden nicht als aktive Profile berücksichtigt.
 
 ## Datenschutz und Einverständniserklärung{#privacy-and-consent}
 
 Adobe Campaign ist ein leistungsstarkes Tool zur Erfassung und Verarbeitung von großen Datenmengen, einschließlich personenbezogener Daten und vertraulicher Informationen. Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vertraulicher Daten, erfassen. Es ist daher unerlässlich, dass Sie das Einverständnis Ihrer Empfänger erhalten und überwachen.
 
-![](../assets/do-not-localize/book.png) Wie Sie Datenschutz und Einverständnis gewährleisten, erfahren Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target="_blank"}.
+![](../assets/do-not-localize/book.png) Erfahren Sie, wie Sie Datenschutz und Einverständniserklärung in verwalten [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target="_blank"}.
 
 **Verwandte Themen** 
 

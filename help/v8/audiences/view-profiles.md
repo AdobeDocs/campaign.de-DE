@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
-source-git-commit: b5574ba2d9fa520b701f7af4e34862304b825a66
+source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 85%
+source-wordcount: '469'
+ht-degree: 100%
 
 ---
 
@@ -80,16 +80,3 @@ Für einen typischen integrierten Empfänger können Sie auf die folgenden Tabs 
 * **Tracking**: für alle Tracking-Logs für das ausgewählte Profil. Diese Informationen werden verwendet, um das Verhalten von Profilen im Anschluss an Sendungen zu verfolgen. Dieser Tab zeigt alle in Sendungen getrackten URLs an. In der Regel enthält die anpassbare Liste folgende Daten: die geklickte URL, Datum und Uhrzeit des Klicks, das Dokument, in dem die URL enthalten war
 
   Weitere Informationen zum Tracking finden Sie in [diesem Abschnitt](../start/tracking.md).
-
-
-## Aktive Profile {#active-profiles}
-
-Ein aktives Profil ist ein Profil, mit dem der Kunde in den letzten 12 Monaten über einen beliebigen Kanal kommuniziert hat. Lizenzmetriken basieren auf aktiven Profilen. Weitere Informationen finden Sie unter [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
-
->[!CAUTION]
->
->* Ein Profil, das für mehrere Sendungen ausgewählt wurde, wird nur einmal gezählt.
->
->* Profile, die im Rahmen von Social Marketing auf X (früher Twitter) angesprochen werden, werden nicht als aktive Profile berücksichtigt.
-
-Sie können die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Campaign Control Panel überwachen. Weitere Informationen hierzu finden Sie im Abschnitt [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de){target="_blank"}.
