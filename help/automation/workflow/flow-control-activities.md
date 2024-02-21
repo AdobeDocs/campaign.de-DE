@@ -5,7 +5,7 @@ description: Liste der Fluss-Steuerungsaktivitäten
 feature: Workflows
 role: User
 exl-id: 904f2d94-bd3e-4c46-aeab-2ef77a7bdeee
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%
@@ -21,7 +21,7 @@ Bei den folgenden Aktivitäten handelt es sich um Datenbankaktivitäten, d. h. s
 * **[Validierung](approval.md)**: sendet eine E-Mail an einen Benutzer oder eine Benutzergruppe und wartet auf die Validierung, bevor die Ausführung fortgesetzt wird. 
 * **[Externes Signal](external-signal.md)**: aktiviert eine ausgehende Transition als Reaktion auf ein externes Signal.
 * **[Verzweigung](fork.md)**: ermöglicht es Ihnen, alle ausgehende Transitionen zu aktivieren.
-* **[Sprung (Start- und Zielpunkt)](jump--start-point-and-end-point-.md)**: ermöglicht die Implementierung von Transitionen ohne Verknüpfungen.
+* **[Sprung (Start- und Zielpunkt)](jump-start-point-and-end-point.md)**: ermöglicht die Implementierung von Transitionen ohne Verknüpfungen.
 * **[Start und Ende](start-and-end.md)**: markieren den Anfangs- bzw. den Endpunkt eines Workflows.
 * **[Planung](scheduler.md)**: dient der Konfiguration einer Ausführungsplanung für den Workflow.
 * **[Unter-Workflow](sub-workflow.md)**: startet die Ausführung eines weiteren Workflows.

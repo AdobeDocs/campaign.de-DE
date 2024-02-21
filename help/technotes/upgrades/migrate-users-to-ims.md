@@ -2,7 +2,7 @@
 title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS)
 description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: b539b84907c7232f236b96ae8dfd11c8998a06b9
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 81%
@@ -97,7 +97,7 @@ Gehen Sie wie folgt vor, um eine Massenaktualisierung Ihrer nativen Operatoren d
 
    Weitere Informationen zum **Abfrage** Aktivität in [diese Seite](../../automation/workflow/query.md)
 
-   Weitere Informationen zum **Extraktion (Datei)** Aktivität in [diese Seite](../../automation/workflow/extraction--file-.md)
+   Weitere Informationen zum **Extraktion (Datei)** Aktivität in [diese Seite](../../automation/workflow/extraction-file.md)
 
 1. Aktualisieren Sie die CSV-Datei mit einer neuen Spalte, die die E-Mails Ihrer Benutzer enthält.
 
@@ -109,7 +109,7 @@ Gehen Sie wie folgt vor, um eine Massenaktualisierung Ihrer nativen Operatoren d
 
    ![](assets/data-loading-activity.png){width="70%"}
 
-   Weitere Informationen zum **Laden (Datei)** Aktivität in [diese Seite](../../automation/workflow/data-loading--file-.md)
+   Weitere Informationen zum **Laden (Datei)** Aktivität in [diese Seite](../../automation/workflow/data-loading-file.md)
 
 1. Bearbeiten Sie die **Daten aktualisieren** und definieren Sie die Einstellungen gemäß dem unten stehenden Beispiel. Beachten Sie Folgendes: **Aktualisierte Dimension** wurde geändert in `Operators (xtk)`.
 

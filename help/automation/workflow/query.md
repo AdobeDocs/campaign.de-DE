@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Abfrage".
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 0191ca8c29813c448040fc887f98550c74197578
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 84%
@@ -66,7 +66,7 @@ Wählen Sie im ersten Fenster des Assistenten zunächst den Typ der hinzuzufüge
 ![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
 * Die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** erlaubt den Zugriff auf Daten aus der Adobe-Campaign-Datenbank.
-* Auswählen **[!UICONTROL Externe Daten]** , um Daten aus einer externen Datenbank hinzuzufügen. Diese Option ist nur verfügbar, wenn Sie die **Federated Data Access** -Option. Weitere Informationen hierzu finden Sie unter [Zugriff auf eine externe Datenbank (FDA)](accessing-an-external-database--fda-.md).
+* Auswählen **[!UICONTROL Externe Daten]** , um Daten aus einer externen Datenbank hinzuzufügen. Diese Option ist nur verfügbar, wenn Sie die **Federated Data Access** -Option. Weitere Informationen hierzu finden Sie unter [Zugriff auf eine externe Datenbank (FDA)](accessing-an-external-database-fda.md).
 * Wählen Sie die **[!UICONTROL Angebotsvorschläge]** -Option, um eine Reihe von Spalten hinzuzufügen, mit denen der vom Angebotsmodul am besten erstellte Vorschlag gespeichert werden kann. Diese Option ist nur verfügbar, wenn Sie die **Interaction** -Modul.
 
 Wenn keines der o. g. Module auf Ihrer Plattform installiert ist, überspringt der Assistent das Auswahlfenster. Sie werden direkt zum nächsten Schritt weitergeleitet.

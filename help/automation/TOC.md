@@ -2,9 +2,9 @@
 audience: user
 user-guide-title: Handbuch zur Kampagnenautomatisierung
 user-guide-description: Handbuch zur Kampagnenautomatisierung
-source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 100%
          + [Validierung](workflow/approval.md)
          + [Externes Signal](workflow/external-signal.md)
          + [Verzweigung](workflow/fork.md)
-         + [Sprung (Start und Ende)](workflow/jump--start-point-and-end-point-.md)
+         + [Sprung (Start und Ende)](workflow/jump-start-point-and-end-point.md)
          + [Start und Ende](workflow/start-and-end.md)
          + [Planung](workflow/scheduler.md)
          + [Unter-Workflow](workflow/sub-workflow.md)
@@ -74,9 +74,9 @@ ht-degree: 100%
          + [Content-Management](workflow/content-management.md)
          + [Versand (fortlaufend)](workflow/continuous-delivery.md)
          + [Kanalübergreifender Versand](workflow/cross-channel-deliveries.md)
-         + [Datenextraktion (Datei)](workflow/extraction--file-.md)
-         + [Laden (Datei)](workflow/data-loading--file-.md)
-         + [Laden (DBMS)](workflow/data-loading--rdbms-.md)
+         + [Datenextraktion (Datei)](workflow/extraction-file.md)
+         + [Laden (Datei)](workflow/data-loading-file.md)
+         + [Laden (DBMS)](workflow/data-loading-rdbms.md)
          + [Versand](workflow/delivery.md)
          + [Versand bearbeiten](workflow/delivery-control.md)
          + [Lokale Validierung](workflow/local-approval.md)
@@ -101,7 +101,7 @@ ht-degree: 100%
          + [Laden des Versandinhalts](workflow/load-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/email-enrichment-with-custom-date-fields.md)
-      + Monitoring      {#monitoring}
+      + Überwachung {#monitoring}
          + [Senden eines Berichts an eine Liste](workflow/send-a-report-to-a-list.md)
          + [Überwachen Ihrer Workflows](workflow/workflow-supervision.md)
          + [Senden personalisierter Warnungen an Benutzer](workflow/send-alerts-to-operators.md)
@@ -128,7 +128,7 @@ ht-degree: 100%
       + [Erweiterte Parameter](workflow/advanced-parameters.md)
       + [JavaScript-Scripte und -Vorlagen](workflow/javascript-scripts-and-templates.md)
       + [Beispiele für JavaScript-Code in Workflows](workflow/javascript-in-workflows.md)
-      + [Auf eine externe Datenbank zugreifen](workflow/accessing-an-external-database--fda-.md)
+      + [Auf eine externe Datenbank zugreifen](workflow/accessing-an-external-database-fda.md)
       + [Verwalten von Berechtigungen](workflow/managing-rights.md)
       + [Ändern von Aktivitätsbildern](workflow/change-activity-images.md)
       + [Verwalten von Zeitzonen](workflow/managing-time-zones.md)
@@ -142,7 +142,7 @@ ht-degree: 100%
    + [Genehmigungen einrichten und verwalten](campaigns/marketing-campaign-approval.md)
    + [Wiederkehrende und periodische Kampagnen](campaigns/recurring-periodic-campaigns.md)
    + [Kampagnen überwachen](campaigns/marketing-campaign-monitoring.md)
-   + [Dienstleister, Lager und Budgets](campaigns/providers--stocks-and-budgets.md)
+   + [Dienstleister, Lager und Budgets](campaigns/providers-stocks-and-budgets.md)
 + Kampagnenoptimierung (Add-on){#campaign-optimization}
    + [Erste Schritte mit Kampagnentypologien](campaign-opt/campaign-typologies.md)
    + [Filterregeln](campaign-opt/filtering-rules.md)

@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 100%
+source-wordcount: '754'
+ht-degree: 92%
 
 ---
 
@@ -50,7 +50,7 @@ Sobald alle Validierungsanfragen bestätigt wurden, erhält der Versand den Stat
 
 ![](assets/confirm-delivery.png)
 
-Diese Information wird ebenfalls im Dashboard der Kampagne angezeigt. Über den Link **[!UICONTROL Versand bestätigen]** kann der Versand gestartet werden.
+Die Informationen werden auch im Dashboard der Kampagne angezeigt. Die **[!UICONTROL Versand bestätigen]** -Link ermöglicht den Start des Versands.
 
 ![](assets/confirm-delivery-from-dashboard.png)
 
@@ -79,9 +79,9 @@ Gehen Sie wie folgt vor, um den Inhalt zu validieren und die Datei an den Provid
 
    Zunächst muss die Zielgruppe der Testsendungen bestimmt werden.
 
-   Sie können so viele Testsendungen erstellen wie nötig. Auf die durchgeführten Testsendungen besteht Zugriff über den Link **[!UICONTROL Briefpost...]** in den Versanddetails.
+   Sie können so viele Testsendungen wie nötig erstellen. Diese werden über die **[!UICONTROL Briefpost...]** Link der Versanddetails.
 
-1. Der Versand erhält nun den Status **[!UICONTROL Zu unterbreiten]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Testsendungen unterbreiten]** um den Validierungsprozess zu starten.
+1. Der Versandstatus ändert sich in **[!UICONTROL Senden]**. Klicken Sie auf **[!UICONTROL Testsendungen durchführen]** -Schaltfläche, um den Validierungsprozess zu starten.
 
 1. Der Versandstatus wird daraufhin zu **[!UICONTROL Testversand zu validieren]**. Über die entsprechende Schaltfläche kann die Validierung erfolgen.
 
@@ -112,4 +112,4 @@ Die Dateiextraktion startet zwei Prozesse: Budgetberechnung und Bestandsberechnu
 
   >[!NOTE]
   >
-  >Weitere Informationen über Budgets finden Sie [in diesem Abschnitt](providers--stocks-and-budgets.md).
+  >Weitere Informationen über Budgets finden Sie [in diesem Abschnitt](providers-stocks-and-budgets.md).

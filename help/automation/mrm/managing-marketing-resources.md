@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Marketing-Ressourcen verwalten.
 feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 88%
@@ -172,7 +172,7 @@ Sie können eine Marketing-Ressource mit einem oder mehreren Lagern verknüpfen,
 
 Gehen Sie wie folgt vor, um eine Marketing-Ressource mit einem Lager zu verknüpfen:
 
-1. Bearbeiten Sie ein Lager oder erstellen Sie ein neues Lager. Weitere Informationen zu Lagern finden Sie in [diesem Abschnitt](../campaigns/providers--stocks-and-budgets.md#stock-management).
+1. Bearbeiten Sie ein Lager oder erstellen Sie ein neues Lager. Weitere Informationen zu Lagern finden Sie in [diesem Abschnitt](../campaigns/providers-stocks-and-budgets.md#stock-management).
 
 1. Fügen Sie eine Lagerposition hinzu und wählen Sie die entsprechende Marketing-Ressource aus.
 

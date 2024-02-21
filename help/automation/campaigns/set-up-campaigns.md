@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie mit Marketing-Kampagnen beginnen
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 100%
@@ -49,7 +49,7 @@ Definieren Sie die Validierungsverantwortlichen und konfigurieren Sie den Validi
 Verfolgen Sie Ihre Kampagnen über das Dashboard, überprüfen Sie die Versandstatus und die Ausführung über die Campaign-Benutzeroberfläche. [Weitere Informationen](marketing-campaign-monitoring.md).
 
 1. **Verfolgen Sie Budgets, Lager und zugehörige Kosten**.
-Verwenden Sie Adobe Campaign, um die Budgetzuweisung zu kontrollieren und Ihre Lieferanten, Lager und Kosten zu verwalten. [Weitere Informationen](providers--stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
+Verwenden Sie Adobe Campaign, um die Budgetzuweisung zu kontrollieren und Ihre Lieferanten, Lager und Kosten zu verwalten. [Weitere Informationen](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
 
 Wenn diese Schritte abgeschlossen sind, können Sie [die Sendungen starten](marketing-campaign-deliveries.md#start-a-delivery), die Daten, Prozesse und Informationen zu den Sendungen überprüfen und, falls erforderlich, [die zugehörigen Dokumente verwalten](marketing-campaign-deliveries.md#manage-associated-documents). Sie können für Ihre Kampagnen und Sendungen auch [die Ausführung verfolgen und überwachen](marketing-campaign-monitoring.md).
 

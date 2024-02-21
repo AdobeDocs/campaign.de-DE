@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Marketing-Kampagnen erstellen und ausführen.
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: d7750add8d71bb51ea1c099a45a7bce05da3b4d7
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 88%
@@ -92,7 +92,7 @@ In den folgenden Abschnitten erfahren Sie, wie Sie Ihre Kampagne konfigurieren:
 * [Verwalten von Assets und Dokumenten](marketing-campaign-assets.md)
 * [Erstellen der Zielgruppe](marketing-campaign-target.md)
 * [Einrichten des Validierungsprozesses](marketing-campaign-approval.md)
-* [Verwalten von Lagern und Budgets](providers--stocks-and-budgets.md)
+* [Verwalten von Lagern und Budgets](providers-stocks-and-budgets.md)
 
 
 ### Bearbeiten von Kampagneneinstellungen {#campaign-settings}
@@ -102,7 +102,7 @@ Kampagnen werden über Kampagnenvorlagen erstellt. Sie können wiederverwendbare
 Für jede Kampagne stehen folgende Funktionen zur Verfügung:
 
 * Referenzdokumente und -ressourcen: Sie können die Kampagne mit Dokumenten verknüpfen (Kurzbeschreibung, Bericht, Bilder etc.). Alle Dokumentenformate werden unterstützt. [Weitere Informationen](marketing-campaign-deliveries.md#manage-associated-documents).
-* Kosten definieren: Adobe Campaign ermöglicht es, für jede Kampagne Kosteneinträge und Kostenberechnungsstrukturen zu definieren, die bei der Erstellung der Marketing-Kampagne verwendet werden können. Beispiel: Druckkosten, Nutzung einer externen Agentur, Raummiete usw. [Weitere Informationen](providers--stocks-and-budgets.md#defining-cost-categories).
+* Kosten definieren: Adobe Campaign ermöglicht es, für jede Kampagne Kosteneinträge und Kostenberechnungsstrukturen zu definieren, die bei der Erstellung der Marketing-Kampagne verwendet werden können. Beispiel: Druckkosten, Nutzung einer externen Agentur, Raummiete usw. [Weitere Informationen](providers-stocks-and-budgets.md#defining-cost-categories).
 * Definition von Zielen: Sie können quantifizierbare Ziele für eine Kampagne definieren, z. B. die Anzahl der Abonnenten, das Geschäftsvolumen etc. Diese Informationen werden später in Kampagnenberichten verwendet.
 * Verwalten Sie Testadressen und Kontrollgruppen. [Weitere Informationen](marketing-campaign-deliveries.md#defining-a-control-group).
 * Validierungsverwaltung: Sie können die zu validierenden Abwandlungen sowie bei Bedarf validierungsverantwortliche Benutzer oder Benutzergruppen auswählen. [Weitere Informationen](marketing-campaign-approval.md#checking-and-approving-deliveries).
