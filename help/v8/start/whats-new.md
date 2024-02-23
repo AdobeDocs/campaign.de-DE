@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 43b6ee223d0d6b6a0e2fd9f067378965274e63a4
+source-git-commit: c8eb0972226da40aae5def0518660f9297697eb2
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 84%
+source-wordcount: '1029'
+ht-degree: 83%
 
 ---
 
@@ -72,7 +72,7 @@ Adobe Campaign v8 ist als verwalteter Cloud Service verfügbar, der eine proakti
 
 Der Ansatz für verwaltete Dienste ermöglicht es Marketing-Experten, den betrieblichen Umfang und die Wirtschaftlichkeit der Cloud-Infrastruktur zu nutzen, ohne dass interne IT-Ressourcen stark unterstützt werden müssen. Adobe-Beratungs- und Implementierungsteams arbeiten mit Ihnen zusammen, um Ihre Marketingpläne, bestehenden Vorgehensweisen, Datenanforderungen und das Nachrichtenvolumen zu bewerten. Anschließend empfehlen sie die am besten geeigneten Service-, Support- und Zustellbarkeitspakete. Das Adobe Campaign Managed Cloud Services-Team kann dann die Kampagnenleistung, den Ruf der Marke, Kundenerlebnismetriken und mehr überwachen und darüber Berichte dazu erstellen.
 
-[!BADGE PDF]{type=Informative}[Dieses Whitepaper lesen](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} , um mehr über den Geschäftswert von Adobe Campaign Managed Cloud Services zu erfahren.
+[!BADGE PDF]{type=Informative}[Dieses Whitepaper lesen](https://experienceleague.adobe.com/docs/campaign/assets/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} , um mehr über den Geschäftswert von Adobe Campaign Managed Cloud Services zu erfahren.
 
 Beachten Sie, dass die neue Cloud-Architektur es Campaign ermöglicht, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Die Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die schon vorkonfiguriert ist.
 
