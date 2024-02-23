@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 100%
+source-wordcount: '1029'
+ht-degree: 86%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Adobe Campaign v8 wurde für Marketer entwickelt, die eine branchenführende Cloud-Lösung für das kanalübergreifende Kampagnen-Management für das gesamte Unternehmen benötigen. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Adobe Campaign v8 ist außerdem mit einem skalierbaren Echtzeit-Messaging-Server verbunden, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einer umfassenden Payload von jedem IT-System für Dinge wie Passwortzurücksetzung, Bestellbestätigungen, E-Quittungen und vieles mehr zu senden.
 
-Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Zustellbarkeit und Monitoring.
+Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Zustellbarkeit und Monitoring. Es ist als **Verwalteter Cloud Service** , die Dienste mit einer proaktiven Aufsicht und zeitnahen Bearbeitung verbindet. Weitere Informationen zu Campaign Managed Cloud Service [in diesem Abschnitt](#acms-desc).
 
 ![](assets/home-page.png)
 
@@ -52,7 +52,7 @@ Mit Adobe Campaign können Sie Kundenprofile aus Daten erstellen, die über alle
 
 Adobe Campaign v8 bietet Marketern erstklassige Funktionen zum kanalübergreifenden Planen, Launchen und Messen von Kampagnen.
 
-Zu den Funktionen gehört ein integriertes Profil, das eine einheitliche Sicht auf den Kunden bietet. Daten-Management und Segmentierung für die Erstellung von Kampagnenzielgruppen in großem Umfang. Kanalübergreifendes Workflow-Management zur Automatisierung von Multi-Channel- und Multi-Wave-Kampagnen. Integrierter E-Mail-Versand, Verringerung der Abhängigkeit von kostspieligen ESPs. Berichterstellung und Analyse zum Verständnis des Kundenverhaltens und der Kampagnenleistung.
+Zu den Funktionen gehört ein integriertes Profil, das eine einheitliche Sicht auf den Kunden bietet. Daten-Management und Segmentierung für die Erstellung von Kampagnenzielgruppen in großem Umfang. Kanalübergreifendes Workflow-Management zur Automatisierung von Multi-Channel- und Multi-Wave-Kampagnen. Integrierter E-Mail-Versand, Verringerung der Abhängigkeit von kostspieligen ESPs. Berichterstellung und Analyse zum Verständnis des Kundenverhaltens und der Kampagnen-Performance.
 
 ![](../assets/do-not-localize/glass.png) [Weitere Informationen zur Kampagnenverwaltung](campaigns.md)
 
@@ -70,9 +70,11 @@ Mit Journey-KI können Sie auch eine prädiktive Sendezeitoptimierung und ein pr
 
 ### Managed Cloud Services {#acms-desc}
 
-Adobe Campaign v8 ist als Managed Cloud Service verfügbar und bietet proaktive Überwachung, zeitgerechte Warnmeldungen und Service-Governance.
+Adobe Campaign v8 ist als verwalteter Cloud Service verfügbar, der eine proaktive Aufsicht, rechtzeitige Warnungen und Service-Governance bietet. Adobe Managed Cloud Service bietet Marketing-Experten eine agilere, sicherere und skalierbarere Lösung für das Cross-Channel-Kampagnen-Management mit niedrigen Gesamtbetriebskosten. Das neue Angebot kombiniert Services mit einer proaktiven Überwachung und rechtzeitigen Warnmeldungen.
 
-Adobe Managed Cloud Service bietet Marketing-Experten eine agilere, sicherere und skalierbarere Lösung für das Cross-Channel-Kampagnen-Management mit niedrigen Gesamtbetriebskosten. Das neue Angebot kombiniert Services mit einer proaktiven Überwachung und rechtzeitigen Warnmeldungen.
+Der Ansatz für verwaltete Dienste ermöglicht es Marketing-Experten, den betrieblichen Umfang und die Wirtschaftlichkeit der Cloud-Infrastruktur zu nutzen, ohne dass interne IT-Ressourcen stark unterstützt werden müssen. Adobe-Beratungs- und Implementierungsteams arbeiten mit Ihnen zusammen, um Ihre Marketingpläne, bestehenden Vorgehensweisen, Datenanforderungen und das Nachrichtenvolumen zu bewerten. Anschließend empfehlen sie die am besten geeigneten Service-, Support- und Zustellbarkeitspakete. Das Adobe Campaign Managed Cloud Services-Team kann dann die Kampagnenleistung, den Ruf der Marke, Kundenerlebnismetriken und mehr überwachen und darüber Berichte dazu erstellen.
+
+[Whitepaper herunterladen](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf) , um mehr über den Geschäftswert von Adobe Campaign Managed Cloud Services zu erfahren.
 
 >[!NOTE]
 >
