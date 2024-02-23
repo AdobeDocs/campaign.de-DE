@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 2f8cee4522efb59782a568334fc1300fc39d559f
+source-git-commit: 3b790305984436f1168f9c73aa09df509b2217f0
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 25%
+source-wordcount: '478'
+ht-degree: 24%
 
 ---
 
@@ -21,10 +21,19 @@ Als Benutzer von Managed Cloud Service wird Ihre Instanz durch Adobe mit jeder n
 Außerdem sollten Sie als Kunde bzw. Kundin sicherstellen, dass Sie die neuesten unterstützten Versionen der in der [Kompatibilitätsmatrix](compatibility-matrix.md) aufgeführten Systeme verwenden. 
 
 
+## Version 8.6.2 {#release-8-6-2}
+
+_23.02.2024_
+
+### Fehlerbehebungen {#fixes-8-6-2}
+
+Dieses Release behebt das folgende Problem:
+
+* Fehlerkorrektur - In der Mid-Sourcing-Instanz tritt jetzt kein Leistungsproblem mehr auf (NEO-72595).
+
 ## Version 8.6.1 {#release-8-6-1}
 
 _14. Februar 2024_
-
 
 ### Neuheiten {#new-8-6-1}
 
