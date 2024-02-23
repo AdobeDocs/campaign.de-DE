@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
+source-git-commit: 43b6ee223d0d6b6a0e2fd9f067378965274e63a4
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 86%
+source-wordcount: '1028'
+ht-degree: 84%
 
 ---
 
@@ -21,8 +21,6 @@ Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktu
 ![](assets/home-page.png)
 
 ## Wichtigste Funktionen{#key-capabilities}
-
-Die wichtigsten Funktionen sind unten aufgeführt.
 
 ### Zentrale Workflow-Verwaltung{#central-wf-mgt}
 
@@ -74,11 +72,17 @@ Adobe Campaign v8 ist als verwalteter Cloud Service verfügbar, der eine proakti
 
 Der Ansatz für verwaltete Dienste ermöglicht es Marketing-Experten, den betrieblichen Umfang und die Wirtschaftlichkeit der Cloud-Infrastruktur zu nutzen, ohne dass interne IT-Ressourcen stark unterstützt werden müssen. Adobe-Beratungs- und Implementierungsteams arbeiten mit Ihnen zusammen, um Ihre Marketingpläne, bestehenden Vorgehensweisen, Datenanforderungen und das Nachrichtenvolumen zu bewerten. Anschließend empfehlen sie die am besten geeigneten Service-, Support- und Zustellbarkeitspakete. Das Adobe Campaign Managed Cloud Services-Team kann dann die Kampagnenleistung, den Ruf der Marke, Kundenerlebnismetriken und mehr überwachen und darüber Berichte dazu erstellen.
 
-[Whitepaper herunterladen](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf) , um mehr über den Geschäftswert von Adobe Campaign Managed Cloud Services zu erfahren.
+[!BADGE PDF]{type=Informative}[Dieses Whitepaper lesen](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} , um mehr über den Geschäftswert von Adobe Campaign Managed Cloud Services zu erfahren.
 
->[!NOTE]
+Beachten Sie, dass die neue Cloud-Architektur es Campaign ermöglicht, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Die Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die schon vorkonfiguriert ist.
+
+
+>[!AVAILABILITY]
 >
->Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Die Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die schon vorkonfiguriert ist.
+>* Campaign v8 ist derzeit **nur** als Managed Cloud Service verfügbar und kann nicht in On-Premise- oder Hybridumgebungen bereitgestellt werden.
+>
+>* Die automatische Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht verfügbar.
+
 
 ### Geschwindigkeit und Skalierung {#speed-scale}
 
@@ -87,12 +91,6 @@ Adobe Campaign kann jetzt Cloud-Skalierungstechnologien nutzen, um Größe und G
 [Campaign v8 Enterprise](../architecture/enterprise-deployment.md) bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit diesem neuen Angebot vereinfacht Campaign v8 das Daten-Management: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. [!DNL Snowflake] ist die Campaign Cloud-Datenbank und bringt Ihnen Geschwindigkeit und Ausdauer, um Überlastung bei Systemaktivitätsspitzen zu vermeiden. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
 
 ![](../assets/do-not-localize/glass.png) [Weitere Informationen zur Implementierung von Enterprise (FFDA)](../architecture/enterprise-deployment.md)
-
->[!CAUTION]
->
->* Campaign v8 ist derzeit **nur** als Managed Cloud Service verfügbar und kann nicht in On-Premise- oder Hybridumgebungen bereitgestellt werden.
->
->* Die automatische Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht verfügbar.
 
 
 ## Self-Service-Admin-Benutzeroberfläche{#self-service-admin}
