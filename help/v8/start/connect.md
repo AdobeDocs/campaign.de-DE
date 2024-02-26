@@ -1,6 +1,6 @@
 ---
 title: Verbindung zu Campaign mit der Client-Konsole herstellen
-description: Erfahren Sie, wie Sie die Campaign-Clientkonsole auf Ihrem Computer installieren und eine Verbindung mit Adobe Campaign herstellen
+description: Erfahren Sie, wie Sie die Campaign-Client-Konsole auf Ihrem Computer installieren und eine Verbindung mit Adobe Campaign herstellen.
 feature: Client Console
 role: User
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 68%
+ht-degree: 70%
 
 ---
 
