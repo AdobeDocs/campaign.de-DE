@@ -4,7 +4,7 @@ description: Linkverwaltung in Adobe Campaign-Schemata
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: c7171a121f03eff0d945e64758e3ba1842e5436f
+source-git-commit: 6db351c8b5d30f722ddc4b0261af93cd8e3b72cd
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 56%
@@ -35,7 +35,7 @@ Für Verknüpfungsrelationen mit Federated Database Access (FDA):
 * ![](assets/do-not-localize/join_fda_11.png): 1-1-Kardinalität
 * ![](assets/do-not-localize/join_fda_1m.png): 1-N-Kardinalität
 
-Weitere Informationen zu FDA-Tabellen finden Sie unter [Zugriff auf externe Datenbanken](../../installation/using/about-fda.md).
+Weitere Informationen zu FDA-Tabellen finden Sie unter [Zugriff auf externe Datenbanken](../connect/fda.md).
 
 In dem Schema, das den Fremdschlüssel der Tabelle enthält, muss über das Hauptelement eine Relation angegeben werden:
 
