@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: a79ae8611f413b910fe31c1e1c5213f40e873879
+source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 97%
+source-wordcount: '581'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 + [Dokumentation zu Campaign v8](campaign-home.md)
 + Versionen und aktuelle Updates {#releases}
    + [Aktualisierungen der Dokumentation](start/documentation-updates.md)
-   + [Frühzeitige Versionshinweise](start/e-release-notes.md)
+   + [Frühere Versionshinweise](start/e-release-notes.md)
    + [Versionen und Upgrades](start/upgrades.md)
    + [Versionshinweise](start/release-notes.md)
    + Frühere Versionshinweise {#previous-rn}
@@ -31,7 +31,7 @@ ht-degree: 97%
 + Erste Schritte {#new}
    + [Erste Schritte mit Adobe Campaign](start/get-started.md)
    + [Wichtigste Funktionen](start/whats-new.md)
-   + [Entdecken Sie die Benutzeroberfläche](start/campaign-ui.md)
+   + [Erkunden der Benutzeroberfläche](start/campaign-ui.md)
    + [Herstellen einer Verbindung zu Campaign](start/connect.md)
    + [Komponenten und Prozesse](start/ac-components.md)
    + [Wechsel von Classic v7 zu v8](start/v7-to-v8.md)
@@ -190,6 +190,8 @@ ht-degree: 97%
       + [Filtern von Schemata](dev/filter-schema.md)
       + [Schemastruktur](dev/schema-structure.md)
       + [Datenbank-Mapping](dev/database-mapping.md)
+      + [Schlüsselverwaltung](dev/database-keys.md)
+      + [Linkverwaltung](dev/database-links.md)
       + [Einschränken der Anzeige von personenbezogenen Daten](dev/restrict-pi-view.md)
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
