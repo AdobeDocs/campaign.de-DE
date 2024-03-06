@@ -6,9 +6,9 @@ feature: Workflows, Approvals
 role: User
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung v
   >
   >Nur der ausgewählte Benutzer verfügt über die Berechtigung zur Validierung der Aufgabe.
 
-* Es besteht die Möglichkeit, eine Abfrage zur Filterung der validierenden Benutzer zu definieren. Wählen Sie dazu die **[!UICONTROL Filter]** Wert in **[!UICONTROL Zuweisungstyp]** und klicken Sie auf **[!UICONTROL Erweiterte Parameter...]** -Link, um Filterbedingungen zu definieren, wie im folgenden Beispiel gezeigt:
+* Es besteht die Möglichkeit, eine Abfrage zu erstellen, um die für die Validierung verantwortlichen Benutzenden zu filtern. Wählen Sie hierzu im Feld **[!UICONTROL Zuweisungstyp]** die Option **[!UICONTROL Filter]** aus und klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter…]**, um die Filterkriterien zu definieren, wie im unten stehendem Beispiel dargestellt:
 
   ![](assets/s_advuser_validation_box_filter.png)
 
@@ -42,7 +42,7 @@ Im Fall einer Mehrfach-Validierung wird für jede vorgenommene Validierung die e
 
 Diese Aktivität betrifft nicht den gesamten Workflow, andere Aufgaben können parallel ausgeführt werden.
 
-Ein Benutzer kann die diesem Benutzer zugewiesenen Aufgaben über die Clientkonsole validieren. Benutzer bzw. Benutzerinnen mit Administratorrechten können die Aufgaben, die einem Benutzer bzw. einer Benutzerin zugewiesen sind, anzeigen und löschen, aber nicht darauf antworten.
+Eine Benutzerin oder ein Benutzer kann die ihr bzw. ihm zugewiesenen Aufgaben über die Client-Konsole genehmigen. Benutzer bzw. Benutzerinnen mit Administratorrechten können die Aufgaben, die einem Benutzer bzw. einer Benutzerin zugewiesen sind, anzeigen und löschen, aber nicht darauf antworten.
 
 Änderungen in Bezug auf die Titel oder den Nachrichten-Textkörper der Aktivität haben keinen Einfluss auf laufende Aufgaben. Sollten jedoch die möglichen Antworten geändert werden, werden die neuen Optionen automatisch in den laufenden Aufgaben übernommen.
 
@@ -74,4 +74,4 @@ Ein Validierungsbeispiel finden Sie im Abschnitt [Validierungen definieren](defi
 
 * **[!UICONTROL responseOperator]**
 
-  Kennung des Benutzers, der reagiert hat. Dieses Feld ist ein numerischer Wert, aber ein **[!UICONTROL Zeichenfolge]** -Feld.
+  Kennung der Person, die geantwortet hat. Dieses Feld ist ein numerischer Wert, aber ein Feld mit einer **[!UICONTROL Zeichenfolge]**.

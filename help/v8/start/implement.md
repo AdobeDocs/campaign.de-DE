@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 
 In diesem Abschnitt erfahren Sie, wie Sie Adobe Campaign an die Anforderungen Ihrer Firma anpassen. Verwenden Sie die folgenden Richtlinien, um Ihre Implementierung zu strukturieren und zu organisieren.
 
-1. **Einstellungen definieren**: Gewähren Sie Zugriff, teilen Sie die Clientkonsole, konfigurieren Sie Kanäle (E-Mail, Push, SMS). [Weitere Informationen](#implementation-ac-settings)
+1. **Einstellungen definieren**: Zugriff gewähren, Client-Konsole freigeben, Kanäle konfigurieren (E-Mail, Push, SMS) [Weitere Informationen](#implementation-ac-settings)
 1. **Ihre Umgebung vorbereiten**: Profile importieren, Zielgruppen erstellen, Workflow- und Kampagnenvorlagen entwerfen, Typologieregeln erstellen. [Weitere Informationen](#implementation-prepare-your-env)
 1. **Ihre Instanz anpassen**: neue Datenfelder erstellen, Tabellen/Schemata hinzufügen. [Weitere Informationen](#implementation-custom-your-instance)
 1. **Prozesse automatisieren**: Automatisierungsfunktionen von Adobe Campaign konfigurieren. [Weitere Informationen](#implementation-automation)
@@ -58,11 +58,11 @@ Sie können Benutzer entsprechend Ihrer Rollenhierarchie manuell zu Campaign hin
 
 ![](../assets/do-not-localize/glass.png)[ In diesem Abschnitt](../start/gs-permissions.md) erfahren Sie, wie Sie Benutzer zu Adobe Campaign hinzufügen.
 
-### Installieren der Campaign-Clientkonsole{#implementation-install-console}
+### Installieren der Campaign-Client-Konsole{#implementation-install-console}
 
-Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. ein natives Programm (Windows), das ausschließlich mit Standard-Internet-Protokollen (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungs-Server kommuniziert. Die Adobe Campaign-Clientkonsole bietet eine hervorragende Benutzerfreundlichkeit für die Produktivität, verwendet sehr wenig Bandbreite (durch Verwendung eines lokalen Caches) und ist für eine einfache Implementierung ausgelegt. Diese Konsole kann über einen Internet-Browser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.
+Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. ein natives Programm (Windows), das ausschließlich mit Standard-Internet-Protokollen (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungs-Server kommuniziert. Die Adobe Campaign-Client-Konsole bietet eine hohe Benutzerfreundlichkeit für hohe Produktivität, verbraucht sehr wenig Bandbreite (durch die Verwendung eines lokalen Cache) und wurde für eine einfache Bereitstellung entwickelt. Diese Konsole kann über einen Internet-Browser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.
 
-![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über die Campaign-Clientkonsole](connect.md).
+![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über die Campaign-Client-Konsole](connect.md).
 
 ## Ihre Umgebung vorbereiten{#implementation-prepare-your-env}
 
@@ -160,7 +160,7 @@ Wenn Sie andere Adobe-Lösungen einsetzen, können Sie diese mit Ihrer Campaign-
 * Campaign – Analytics Data Connectors
 
 
-Sie können nur Single Sign-On (SSO) verwenden, um eine Verbindung zu Campaign herzustellen. Weitere Informationen finden Sie auf [dieser Seite](connect.md).
+Sie können nur Single Sign-on (SSO) verwenden, um eine Verbindung zu Campaign herzustellen. Weitere Informationen finden Sie auf [dieser Seite](connect.md).
 
 ![](../assets/do-not-localize/glass.png) Sehen Sie [auf dieser Seite](../connect/integration.md) die vollständige Liste der Adobe-Lösungen, die mit Adobe Campaign integriert werden können.
 

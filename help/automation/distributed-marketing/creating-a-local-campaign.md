@@ -6,9 +6,9 @@ feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1686'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -46,17 +46,17 @@ Klicken Sie im Kampagnenfenster auf die Registerkarte **[!UICONTROL Bearbeiten]*
 
 ![](assets/mkt_distr_4.png)
 
-### Art der Benutzeroberfläche {#web-interface}
+### Typ der Schnittstelle {#web-interface}
 
-Im **Dezentrales Marketing** können Sie den Schnittstellentyp auswählen und die Standardwerte und Parameter angeben, die bei der Bestellung durch eine Lokalstelle eingegeben werden sollen.
+Im Tab **Dezentrales Marketing** können Sie den Typ der Schnittstelle sowie die Standardwerte und die erweiterten Parameter festlegen, die bei der Bestellung durch eine Lokalstelle einzugeben sind.
 
-Die Benutzeroberfläche entspricht einem Formular, das von der Lokalstelle bei der Kampagnenbestellung auszufüllen ist.
+Die Schnittstelle stellt ein Formular dar, das von der Lokalstelle bei der Kampagnenbestellung auszufüllen ist.
 
-Wählen Sie den Schnittstellentyp aus, der auf die in der Vorlage erstellten Kampagnen angewendet werden soll:
+Wählen Sie den Schnittstellentyp aus, der für die auf dieser Vorlage basierenden Kampagnen angewandt werden soll:
 
 ![](assets/mkt_distr_1.png)
 
-Es gibt vier Arten von Schnittstellen:
+Es stehen vier unterschiedliche Schnittstellentypen zur Verfügung:
 
 * **[!UICONTROL Briefing]**: Die Lokalstelle beschreibt die gewünschten Kampagnenparameter bei der Bestellung. Sobald die Bestellung validiert wurde, konfiguriert die Zentralstelle die Kampagne und führt sie aus.
 
@@ -74,7 +74,7 @@ Es gibt vier Arten von Schnittstellen:
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL Nach externem Formular]** : Lokalstelle hat Zugriff auf Kampagnenparameter im Extranet (nicht in Adobe Campaign). Diese Parameter sind mit denen von **lokale Kampagne (nach Formular)**.
+* **[!UICONTROL Nach externem Formular]**: Lokalstelle hat Zugriff auf Kampagnenparameter im Extranet (nicht in Adobe Campaign). Diese Parameter sind mit denen einer **lokalen Kampagne (nach Formular)** identisch.
 * **[!UICONTROL Einfach]**: Die Lokalstelle bestellt die Kampagne über das Standardformular, ohne sie zu lokalisieren.
 
   ![](assets/mkt_distr_5.png)
@@ -107,7 +107,7 @@ Wenn keine Angabe validierungsverantwortlicher Benutzer für die Kampagnen gewü
 
 ### Dokumente {#documents}
 
-Sie können Benutzern von Lokalstellen erlauben, bei der Erstellung der Bestellung Dokumente (Textdateien, Tabellen, Bilder, Kampagnenbeschreibungen etc.) mit der lokalen Kampagne zu verknüpfen. Die **[!UICONTROL Erweiterte Kampagnenerfassungsparameter..]** -Link können Sie die Anzahl der Dokumente einschränken. Geben Sie dazu einfach die maximal zulässige Anzahl in das Feld **[!UICONTROL Anzahl Dokumente]** -Feld.
+Sie können Benutzenden von Lokalstellen erlauben, beim Erstellen der Bestellung Dokumente (Textdateien, Tabellen, Bilder, Kampagnenbeschreibungen etc.) mit der lokalen Kampagne zu verknüpfen. Über den Link **[!UICONTROL Erweiterte Kampagnenerfassungs-Parameter…]** können Sie die Anzahl der Dokumente einschränken. Geben Sie dazu einfach die maximal zulässige Anzahl in das Feld **[!UICONTROL Anzahl Dokumente]** ein.
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -147,7 +147,7 @@ Konfigurieren Sie bei Bedarf die Maximalgröße des Versands:
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-Suchen Sie die HTML Ihres Versands. Beispiel: in **[!UICONTROL Versand > Aktuelle Bestellung > Zusätzliche Felder]**, verwenden Sie die **[!UICONTROL Alterssegment]** um den Versand nach Alter der Zielgruppe zu lokalisieren.
+Suchen Sie die HTML Ihres Versands. Gehen Sie beispielsweise zu **[!UICONTROL Versand > Aktuelle Bestellung > Zusätzliche Felder]** und nutzen Sie das Feld **[!UICONTROL Altersgruppe]**, um den Versand anhand des Alters der Zielgruppe zu suchen.
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
@@ -296,17 +296,17 @@ Wenn eine Lokalstelle eine Kampagne bestellt hat, werden die validierungsverantw
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Validierung über die Clientkonsole {#approving-via-the-adobe-campaign-console}
+#### Genehmigen über die Client-Konsole {#approving-via-the-adobe-campaign-console}
 
-Die Bestellung kann auch über die Clientkonsole in der Übersicht der Kampagnenbestellungen validiert werden. Um einen Auftrag zu genehmigen, wählen Sie ihn aus und klicken auf **[!UICONTROL Bestellung genehmigen]**.
+Die Bestellung kann auch über die Client-Konsole in der Übersicht der Kampagnenbestellungen genehmigt werden. Um einen Auftrag zu genehmigen, wählen Sie ihn aus und klicken Sie auf **[!UICONTROL Bestellung genehmigen]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
 >[!NOTE]
 >
->Die Kampagne kann bis zum Verfügbarkeitsdatum der Kampagne bearbeitet und neu konfiguriert werden. Die Lokalstellen können die Kampagne auch ablehnen, indem Sie auf **[!UICONTROL Abbrechen]** Schaltfläche.
+>Die Kampagne kann bis zum Verfügbarkeitsdatum der Kampagne bearbeitet und neu konfiguriert werden. Die Lokalstellen können die Kampagne auch durch Klicken auf die Schaltfläche **[!UICONTROL Abbrechen]** ablehnen.
 
-#### Kampagnen erstellen         {#creating-a-campaign}
+#### Erstellen einer Kampagne {#creating-a-campaign}
 
 Wenn eine Bestellung validiert wurde, kann es von der Lokalstelle konfiguriert und ausgeführt werden.
 
@@ -322,7 +322,7 @@ Ein validierungsverantwortlicher Benutzer kann die Validierung eines Kampagnenki
 
 Wenn der validierungsverantwortliche Benutzer eine Bestellung ablehnt, werden die betroffenen Lokalstellen hiervon automatisch per E-Mail benachrichtigt. Die E-Mail enthält gegebenenfalls einen Kommentar des Validierers.
 
-Informationen werden auf der Seite mit der Liste der Kampagnenkits oder auf der Kampagnenbestellseite angezeigt. Wenn sie Zugriff auf die Adobe Campaign-Clientkonsole haben, werden die Lokalstellen über diese Ablehnung informiert.
+Informationen werden auf der Seite mit der Liste der Kampagnenkits oder auf der Kampagnenbestellseite angezeigt. Wenn die Lokalstellen Zugriff auf die Adobe Campaign-Client-Konsole haben, werden sie über diese Ablehnung informiert.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

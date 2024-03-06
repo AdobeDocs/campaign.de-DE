@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1925'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 
 >[!CAUTION]
 >
-> Die Aktualisierung der Clientkonsole ist obligatorisch. Informationen zum Aktualisieren der Clientkonsole finden Sie in diesem Abschnitt [page](../start/connect.md#download-ac-console).
+> Die Aktualisierung der Client-Konsole ist obligatorisch. Auf [dieser Seite](../start/connect.md#download-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
 _7. Oktober 2022_
 

@@ -1,20 +1,20 @@
 ---
-title: Verbindung zu Campaign mit der Client-Konsole herstellen
+title: Herstellen einer Verbindung mit Campaign über die Client-Konsole
 description: Erfahren Sie, wie Sie die Campaign-Client-Konsole auf Ihrem Computer installieren und eine Verbindung mit Adobe Campaign herstellen.
 feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '866'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
-# Verbindung zu Campaign mit der Client-Konsole herstellen{#gs-ac-connect}
+# Herstellen einer Verbindung mit Campaign über die Client-Konsole{#gs-ac-connect}
 
-Um eine Verbindung mit Campaign mit der Clientkonsole herzustellen, müssen Sie diese zunächst installieren und konfigurieren.
+Um Campaign mit der Client-Konsole zu verbinden, müssen Sie diese zunächst installieren und konfigurieren.
 
 Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
@@ -26,34 +26,34 @@ Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
 >[!NOTE]
 >
->Sie können auch über einen Webbrowser eine Verbindung zur Webbenutzeroberfläche von Campaign herstellen. Erfahren Sie mehr über die neue Campaign-Web-Benutzeroberfläche in [diese Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
+>Sie können die Verbindung zur Campaign Web-Benutzeroberfläche auch über einen Webbrowser herstellen.  Weitere Informationen über die neue Campaign Web-Benutzeroberfläche finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}.
 
 
-## Client-Konsole installieren{#download-ac-console}
+## Installieren der Client-Konsole{#download-ac-console}
 
 ### Microsoft Edge WebView2-Laufzeitumgebung {#webview}
 
-Ab der Campaign Classic-Build-Version 8.4 ist die Installation der Microsoft Edge Webview 2-Laufzeit für jede Client-Konsoleninstallation erforderlich.
+Ab der Build-Version 8.4 von Campaign Classic ist die Installation der Microsoft Edge WebView2-Laufzeitumgebung für jede Installation der Client-Konsole erforderlich.
 
-WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign-Clientkonsole aufgefordert, es von herunterzuladen. [Microsoft Developer-Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
+WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn sie nicht bereits auf Ihrem System vorhanden ist, fordert Sie das Installationsprogramm der Campaign-Client-Konsole auf, diese von der [Microsoft Developer Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"} herunterzuladen. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
 ### Herunterladen der Konsole{#install-ac-console}
 
-Wenn Sie Campaign zum ersten Mal verwenden, müssen Sie die Clientkonsole herunterladen und installieren.
+Bei der erstmaligen Verwendung von Campaign müssen Sie die Client-Konsole herunterladen und installieren.
 
-Es stehen zwei Optionen zum Herunterladen der Clientkonsole zur Verfügung:
+Es gibt zwei Möglichkeiten, die Client-Konsole herunterzuladen:
 
-1. Als Campaign-Administrierende verbinden Sie sich mit der Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"}.
+1. Als Campaign-Admin verbinden Sie sich mit der [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"}.
 
-1. Als Endbenutzer stellt Ihr Campaign-Administrator die Clientkonsole für Sie bereit und stellt sie über eine dedizierte URL zur Verfügung.
+1. Für Endbenutzende stellen deren Campaign-Admins die Client-Konsole bereit und machen sie über eine spezielle URL verfügbar.
 
-Nachdem das Installationsprogramm der Clientkonsole heruntergeladen wurde, installieren Sie es auf Ihrem lokalen Computer.
+Sobald das Installationsprogramm für die Client-Konsole heruntergeladen wurde, installieren Sie es auf dem lokalen Rechner.
 
-Beachten Sie, dass Sie die Sprache der Clientkonsole nach der Installation nicht mehr ändern können.
+Beachten Sie, dass die Sprache der Client-Konsole nach der Installation nicht mehr geändert werden kann.
 
 ## Herstellen der Verbindung{#create-your-connection}
 
-Nachdem die Client-Konsole installiert wurde, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungsserver herzustellen:
+Sobald die Client-Konsole installiert ist, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungs-Server herzustellen:
 
 1. Starten Sie die Konsole und durchsuchen Sie den Link in der rechten Ecke, um den Bildschirm für die Verbindungskonfiguration aufzurufen.
 
@@ -95,11 +95,11 @@ Sie können sich dann mit Ihrer Adobe ID bei Campaign anmelden.
 >
 >Da Microsoft Edge WebView2 keine Proxy-Anmeldeinformationen speichert, kann die Konsole Sie bei Ihrer ersten Verbindung auffordern, sich zweimal zu authentifizieren.
 
-## Clientkonsole aktualisieren{#upgrade-ac-console}
+## Aktualisieren Ihrer Client-Konsole{#upgrade-ac-console}
 
 Wenn Ihr System auf eine neuere Version aktualisiert wird, müssen Sie Ihre Client-Konsole auf dieselbe Version aktualisieren. Dies ist eine Best Practice, und für einige Versionen ist dieses Upgrade obligatorisch. In diesem Fall wird dies in den [Versionshinweise](release-notes.md) angegeben.
 
-Als Benutzer von Managed Cloud Service stellt Adobe die Clientkonsole für Sie bereit. Wenn Sie eine Verbindung zu Ihrer aktualisierten Umgebung herstellen, werden Sie aufgefordert, die neueste Version der Clientkonsole in einem Popup-Fenster herunterzuladen. Sie müssen dieses Upgrade akzeptieren und die Clientkonsole nach Bedarf aktualisieren.
+Für Benutzerinnen und Benutzer von Managed Cloud Services stellt Adobe die Client-Konsole bereit. Wenn Sie eine Verbindung zu Ihrer aktualisierten Umgebung herstellen, werden Sie in einem Popup-Fenster aufgefordert, die neueste Version der Client-Konsole herunterzuladen. Sie müssen dieses Upgrade akzeptieren und die Client-Konsole wie gefordert aktualisieren.
 
 >[!CAUTION]
 >

@@ -1,14 +1,14 @@
 ---
-title: Berechtigungen für Campaign v8 erteilen
-description: Erfahren Sie, wie Sie Campaign v8-Benutzern Berechtigungen erteilen.
+title: Erteilen von Berechtigungen für Campaign v8
+description: Erfahren Sie, wie Sie Berechtigungen für Benutzende von Campaign v8 erteilen
 feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1734'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
    * **[!UICONTROL ADMINISTRATION]**: Berechtigt zum Ausführen, Erstellen, Bearbeiten und Löschen von Objekten wie Workflows, Sendungen, Skripten usw.
 
-1. **[!UICONTROL Versandverantwortliche Benutzer]** (delivery)
+1. **[!UICONTROL Versandverantwortliche Benutzer]** (Versand)
 
    Die Benutzer dieser Gruppe sind für die Versandverwaltung verantwortlich. Die Gruppe verleiht Zugriff auf die für die Erstellung und Vorbereitung von Sendungen notwendigen Hauptressourcen (Kampagnentypologien, Versandmappings, Standardvorlagen, Gestaltungsbausteine etc.).
 
@@ -136,7 +136,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
 1. **[!UICONTROL Workflow-Ausführung]** (Workflow)
 
-   Die **[!UICONTROL Workflow-Ausführung]** -Gruppe ermöglicht die Steuerung der Ausführung und Validierung von Zielgruppen-Workflows. Die spezifische Berechtigung WORKFLOW wird den Benutzern dieser Gruppe zugeordnet. Sie ist für alle Aktionen in Workflows erforderlich, zusätzlich zu den Zugriffsrechten auf die Datendateien. Standardmäßig wird die Variable **[!UICONTROL Workflow-Ausführung]** hat schreibgeschützten Zugriff auf Standard-Zielgruppen-Workflow-Dateien und Workflow-Vorlagen. Benutzer dieser Gruppe haben auch Lese- und Schreibzugriff auf die ausstehende Validierungsdatei.
+   Die Gruppe **[!UICONTROL Workflow-Ausführung]** ermöglicht es, die Ausführung und Genehmigung von Zielgruppen-Workflows zu steuern. Die spezifische Berechtigung WORKFLOW wird den Benutzenden dieser Gruppe zugeordnet. Sie ist für alle Aktionen in Workflows erforderlich, zusätzlich zu den Zugriffsrechten auf die Datendateien. Standardmäßig hat die Gruppe **[!UICONTROL Workflow-Ausführung]** schreibgeschützten Zugriff auf standardmäßige Zielgruppen-Workflow-Dateien und Workflow-Vorlagen. Benutzende in dieser Gruppe haben auch Lese- und Schreibzugriff auf die Datei der ausstehenden Validierungen.
 
 1. **[!UICONTROL Workflow-Verwantwortliche]** (workflowSupervisor)
 

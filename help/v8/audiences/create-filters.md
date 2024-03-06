@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1708'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -255,7 +255,7 @@ Definieren Sie die Filterbedingungen. Im folgenden Beispiel filtern Sie nach Emp
 
    ![](assets/select-operator.png)
 
-1. Wählen Sie einen erwarteten Wert aus der **[!UICONTROL Wert]** Spalte. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Um eine Filterbedingung hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Geben Sie dann in der Spalte **[!UICONTROL Wert]** den Vergleichswert an. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Um eine Filterbedingung hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/add-an-exp.png)
 

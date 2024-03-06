@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ Die typische Bereitstellung einer Adobe Campaign-Lösung setzt sich aus folgende
 
 ## Personalisierte Client-Umgebung {#client-env}
 
-Der Zugriff auf die Anwendung erfolgt auf unterschiedliche Weise: Webbenutzeroberfläche, Clientkonsole (Rich-Client), Webzugriff (Thin Client) oder API-Integration.
+Der Zugriff auf die Anwendung erfolgt auf unterschiedliche Weise: Web-Benutzeroberfläche, Client-Konsole (Rich-Client), Internet-Zugriff (Thin-Client) oder API-Integration.
 
-![](../assets/do-not-localize/glass.png) [Weitere Informationen zur Benutzeroberfläche von Campaign](../start/campaign-ui.md).
+![](../assets/do-not-localize/glass.png) [Weitere Informationen zur Campaign-Benutzeroberfläche](../start/campaign-ui.md).
 
 ## Entwicklungsumgebung {#dev-env}
 
@@ -48,9 +48,9 @@ Es gibt drei Typen von Adobe Campaign-Modulen:
 
 Dies sind die wichtigsten Prozesse:
 
-* **Anwendungsserver** (nlserver web) - Dieser Prozess stellt die gesamte Bandbreite der Adobe Campaign-Funktionen über Web-Services-APIs (SOAP/HTTP + XML) bereit. Darüber hinaus kann er dynamisch die Web-Seiten generieren, die für den HTML-basierten Zugriff verwendet werden (Berichte, Web-Formulare usw.). Um dies zu ermöglichen, umfasst der Prozess einen Apache Tomcat JSP-Server. Dies ist der Prozess, an den die Konsole angebunden ist.
+* **Anwendungs-Server** (nlserver web) – Dieser Prozess stellt das gesamte Spektrum an Adobe Campaign-Funktionen mittels Web-Services-APIs (SOAP/HTTP + XML) zur Verfügung. Darüber hinaus kann er dynamisch die Web-Seiten generieren, die für den HTML-basierten Zugriff verwendet werden (Berichte, Web-Formulare usw.). Um dies zu ermöglichen, umfasst der Prozess einen Apache Tomcat JSP-Server. Dies ist der Prozess, an den die Konsole angebunden ist.
 
-* **Workflow-Engine** (nlserver wfserver) - Dieser Prozess führt die in der Anwendung definierten Workflow-Prozesse aus. Außerdem werden durch ihn regelmäßig technische Workflows ausgeführt, darunter:
+* **Workflow-Engine** (nlserver wfserver) – Durch diesen Prozess werden die in der Anwendung definierten Workflow-Prozesse ausgeführt. Außerdem werden durch ihn regelmäßig technische Workflows ausgeführt, darunter:
 
    * **Tracking**: Stellt Trackinglogs wieder her und konsolidiert sie, sodass Sie die Protokolle vom Weiterleitungs-Server abrufen und die vom Berichtsmodul verwendeten aggregierten Indikatoren erstellen können.
    * **Bereinigung**: Bereinigt die Datenbank, löscht alte Einträge und verhindert, dass die Datenbank exponentiell wächst.
@@ -58,25 +58,25 @@ Dies sind die wichtigsten Prozesse:
 
 * **Versand-Server** (nlserver-mta): Adobe Campaign verfügt über eine native Funktion zum Senden von E-Mails. Dieser Prozess fungiert als SMTP Mail Transfer Agent (MTA). Er personalisiert Nachrichten individuell für den jeweiligen Empfänger und verarbeitet deren physischen Versand. Dies erfolgt mittels Versandvorgängen, wobei zudem auch nachgelagerte, weitere Zustellversuche automatisiert werden. Ist Tracking aktiviert, werden zusätzlich die URLs automatisch ersetzt, sodass sie auf den Weiterleitungs-Server verweisen. Über diesen Prozess ist die Anpassung sowie der automatische Versand an einen Dritt-Router für SMS, Fax und Briefpost möglich.
 
-* **Weiterleitungsserver** (nlserver webmdl) - Für E-Mails verarbeitet Adobe Campaign automatisch das Öffnungs- und Klick-Tracking (das Transaktions-Tracking auf Website-Ebene ist eine weitere Möglichkeit). Hierfür werden die in den E-Mail-Nachrichten enthaltenen URLs so umgeschrieben, dass sie auf dieses Modul verweisen. Dieses wiederum registriert Internet-Benutzer, während diese an die Ziel-URL weitergeleitet werden.
+* **Weiterleitungs-Server** (nlserver webmdl) – Bei E-Mails übernimmt Adobe Campaign automatisch das Öffnungs- und Klick-Tracking (wobei das Tracking von Transaktionen auf Website-Ebene ebenfalls möglich ist). Hierfür werden die in den E-Mail-Nachrichten enthaltenen URLs so umgeschrieben, dass sie auf dieses Modul verweisen. Dieses wiederum registriert Internet-Benutzer, während diese an die Ziel-URL weitergeleitet werden.
 
   Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht sind diese Funktionen in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert. und nur unter Windows verfügbar.
 
 Daneben sind auch noch weitere technische Prozesse verfügbar:
 
-* **Bounce Messages verwalten** (nlserver inMail) - Dieser Prozess ermöglicht es Ihnen, E-Mails automatisch von Postfächern abzurufen, die für den Empfang von nicht zugestellten Nachrichten konfiguriert sind, die im Falle eines fehlgeschlagenen Versands zurückgegeben werden. Diese Nachrichten werden dann einer regelbasierten Verarbeitung unterzogen, um die Gründe für den Nichtversand zu ermitteln (unbekannter Empfänger, Kontigent überschritten, etc.) und den Versandstatus in der Datenbank zu aktualisieren. Alle diese Operationen laufen vollkommen automatisch und sind vorkonfiguriert.
+* **Bounce Messages verwalten** (nlserver inMail) – Dieser Prozess ermöglicht den automatischen Abruf von E-Mails aus Postfächern, die für den Empfang von Nachrichten konfiguriert sind, die bei fehlgeschlagenem Versand als unzustellbar zurückgesendet werden. Diese Nachrichten werden dann einer regelbasierten Verarbeitung unterzogen, um die Gründe für den Nichtversand zu ermitteln (unbekannter Empfänger, Kontigent überschritten, etc.) und den Versandstatus in der Datenbank zu aktualisieren. Alle diese Operationen laufen vollkommen automatisch und sind vorkonfiguriert.
 
-* **SMS-Versandstatus** (nlserver sms) - Dieser Prozess fragt den SMS-Router ab, um den Fortschrittsstatus zu erfassen und die Datenbank zu aktualisieren.
+* **Status des SMS-Versands** (nlserver sms) – Dieser Prozess fragt beim SMS-Router den Status des Versandfortschritts ab und aktualisiert diesen in der Datenbank.
 
 * **Schreiben von Protokollnachrichten** (nlserver syslogd): Dieser technische Prozess erfasst von anderen Prozessen generierte Protokollnachrichten und -spuren und schreibt sie auf die Festplatte. Dadurch stehen im Falle von Problemen umfangreiche Informationen zur Diagnose zur Verfügung.
 
-* **Trackinglogs schreiben** (nlserver trackinglogd) - Dieser Prozess speichert die Trackinglogs, die durch den Weiterleitungsprozess generiert wurden.
+* **Schreiben von Trackinglogs** (nlserver trackinglogd) – Dieser Prozess speichert die Trackinglogs, die durch den Weiterleitungsprozess generiert werden.
 
 * **Schreiben eingehender Ereignisse** (nlserver interaction): Dieser Prozess stellt sicher, dass eingehende Ereignisse im Rahmen von Interaction auf der Festplatte aufgezeichnet werden.
 
-* **Überwachungsmodule** (nlserver watchdog): Dieser technische Prozess fungiert als primärer Prozess, der die anderen hervorbringt. Zugleich überwacht er diese aber auch startet sie beim Auftreten von Vorfällen automatisch neu, sodass maximale Systemverfügbarkeit gewährleistet bleibt.
+* **Überwachungsmodule** (nlserver watchdog): Dieser technische Prozess fungiert als primärer Prozess, der die anderen hervorbringt. Zugleich überwacht er diese aber auch und startet sie beim Auftreten von Vorfällen automatisch neu, sodass die maximale Systemverfügbarkeit gewährleistet bleibt.
 
-* **Statistikserver** (nlserver stat) - Dieser Prozess verwaltet Statistiken über die Anzahl der Verbindungen, die gesendeten Nachrichten für jeden E-Mail-Server, an den Nachrichten gesendet werden, sowie deren Einschränkungen (die höchste Anzahl simultaner Verbindungen, Nachrichten pro Stunde/ und Verbindung). Ebenfalls lassen sich über diesen Prozess Instanzen oder Computer zusammenführen, sofern diese dieselben öffentlichen IP-Adressen verwenden.
+* **Statistik-Server** (nlserver stat) – Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einzelnen Mailserver gesendeten Nachrichten und zu deren Einschränkungen (z. B. Maximalzahl gleichzeitiger Verbindungen, Nachrichten pro Stunde und/oder Verbindung usw.). Ebenfalls lassen sich über diesen Prozess Instanzen oder Computer zusammenführen, sofern diese dieselben öffentlichen IP-Adressen verwenden.
 
 
 ## Datenbank-Container {#db-containers}

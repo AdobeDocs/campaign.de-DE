@@ -1,13 +1,13 @@
 ---
-title: Versionshinweise zu Campaign v8 (Konsole) 2023
+title: Versionshinweise 2023 zu Campaign v8 (Konsole)
 description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 2023
 feature: Release Notes
 role: User
 level: Beginner
 source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1476'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,12 +66,12 @@ Weitere Informationen finden Sie in der [entsprechenden Dokumentation](../send/p
 **Verbesserungen bei der Sicherheit**
 
 * Ab Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert und gesichert. Technische Benutzerinnen bzw. Benutzer müssen jetzt das Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
-* Ab der kommenden Version 8.6 dürfen Sie keine Benutzer mehr über die Campaign-Clientkonsole erstellen. Wenn Sie die native Authentifizierung mit Login/Passwort verwenden, müssen Sie Ihre Benutzenden auf das Adobe Identity Management System (IMS) migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/upgrades/migrate-users-to-ims.md), wie Sie alte Benutzende migrieren können.
+* Ab der kommenden Version v8.6 dürfen Sie keine Benutzenden mehr über die Campaign-Client-Konsole erstellen. Wenn Sie die native Authentifizierung mit Login/Passwort verwenden, müssen Sie Ihre Benutzenden auf das Adobe Identity Management System (IMS) migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/upgrades/migrate-users-to-ims.md), wie Sie alte Benutzende migrieren können.
 * Mehrere Drittanbieter-Tools wurden aktualisiert, um die Sicherheit zu optimieren.
 
 **Aktualisierungen zur Kompatibilität**
 
-* Die 32-Bit-Version der Clientkonsole wird jetzt nicht mehr unterstützt. Ab 8.6 ist die Client-Konsole nur noch mit 64 Bit verfügbar. Das Upgrade auf die 64-Bit-Version der Clientkonsole ist nahtlos. Weitere Informationen zum Upgrade Ihres Betriebssystems finden Sie in dieser [Technote](../../technotes/upgrades/console.md).
+* Die 32-Bit-Version der Client-Konsole wird jetzt nicht mehr unterstützt. Ab 8.6. ist die Client-Konsole nur noch in 64 Bit verfügbar. Das Upgrade auf die 64-Bit-Version der Client-Konsole ist nahtlos. Weitere Informationen zum Upgrade Ihres Betriebssystems finden Sie in dieser [Technote](../../technotes/upgrades/console.md).
 * Sie können nun Ihre Campaign v8-Instanz mit Ihrer externen Azure Synapse-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet. Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
 
 

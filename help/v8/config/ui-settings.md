@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1948'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -132,7 +132,7 @@ Sie können diese Konfiguration dann auf jeden anderen Ordner desselben Typs anw
 
 ### Exportieren einer Liste {#exporting-a-list}
 
-Um Daten aus einer Liste zu exportieren, müssen Sie einen Export-Assistenten verwenden. Um darauf zuzugreifen, wählen Sie die aus der Liste zu exportierenden Elemente aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Export...]**.
+Um Daten aus einer Liste zu exportieren, müssen Sie einen Export-Assistenten verwenden. Um darauf zuzugreifen, wählen Sie die zu exportierenden Elemente in der Liste aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Exportieren…]** aus.
 
 <!--The use of the import and export functions is explained in [Generic imports and exports](../../platform/using/about-generic-imports-exports.md).-->
 
@@ -213,7 +213,7 @@ Gehen Sie wie folgt vor, um einen Alias zu erstellen:
 
 1. Speichern Sie Ihre Änderungen. Die Ersetzung von Werten erfolgt durch den Workflow der **Alias-Verwaltung**, der jede Nacht ausgeführt wird. Weitere Informationen finden Sie unter [Datenbereinigung durchführen](#running-data-cleansing).
 
-Bei allen auf dieser Auflistung basierenden Feldern, wenn ein Benutzer den Wert eingibt **Adobe** in einem Feld &quot;Firma&quot;(in der Adobe Campaign-Clientkonsole in einem Webformular) automatisch durch den Wert ersetzt **Adobe**.
+Wenn der Wert **Adob** in einem unternehmensbezogenen Feld (in der Adobe Campaign-Client-Konsole, in einem Web-Formular) eingegeben wird, wird er in allen Feldern, die auf dieser Auflistung basieren, automatisch durch den Wert **Adobe** ersetzt.
 
 #### Konvertieren eines falschen Werts in einen Alias{#convert-to-alias}
 
@@ -251,7 +251,7 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um die Datenbereinig
 
 ##### Überwachen der Eingabeanzahl {#calculate-entry-occurrences}
 
-Die **[!UICONTROL Alias]** Unter-Tab einer Auflistung kann die Anzahl der Erscheinungen eines Alias unter allen eingegebenen Werten anzeigen. Diese Informationen sind eine Schätzung und werden im **[!UICONTROL Treffer]** Spalte.
+Mit der Unterregisterkarte **[!UICONTROL Alias]** einer Auflistung kann die Anzahl der Vorkommen eines Alias unter allen eingegebenen Werten angezeigt werden. Es handelt sich bei dieser Information um eine Schätzung. Sie wird in der Spalte **[!UICONTROL Treffer]** angezeigt.
 
 >[!CAUTION]
 >

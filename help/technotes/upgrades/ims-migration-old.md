@@ -5,9 +5,9 @@ exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
 hidefromtoc: true
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -73,14 +73,14 @@ Sie können jetzt Ihr Campaign-Produktprofil zum Projekt hinzufügen, wie im Fol
 1. Weisen Sie alle relevanten Produktprofile der API zu, z. B. „messagecenter“, und speichern Sie Ihre Änderungen.
 1. Navigieren Sie zur Registerkarte **Zugriffsdatendetails** und kopieren Sie den Wert von **E-Mail des technischen Kontos**.
 
-### Schritt 4: Aktualisieren des technischen Operators in der Clientkonsole {#ims-migration-step-4}
+### Schritt 4: Aktualisieren des technischen Benutzers bzw. der technischen Benutzerin in der Client-Konsole {#ims-migration-step-4}
 
 Dieser Schritt ist nur erforderlich, wenn für diesen Benutzer bzw. diese Benutzerin (nicht über die Benutzergruppe) spezifische Ordnerberechtigungen oder spezifische Berechtigungen definiert wurden.
 
-Sie müssen jetzt den neu erstellten technischen Operator in der Adobe Campaign-Clientkonsole aktualisieren. Sie müssen die bestehenden Berechtigungen für den Ordner des technischen Benutzers bzw. der Benutzerin auf die neue Person übertragen.
+Sie müssen jetzt den neu erstellten technischen Benutzer bzw. die Benutzerin in der Adobe Campaign-Client-Konsole aktualisieren. Sie müssen die bestehenden Berechtigungen für den Ordner des technischen Benutzers bzw. der Benutzerin auf die neue Person übertragen.
 Gehen Sie wie folgt vor, um diesen Benutzer bzw. diese Benutzerin zu aktualisieren:
 
-1. Navigieren Sie im Explorer der Campaign-Clientkonsole zum **Administration > Zugriffe > Benutzer**.
+1. Navigieren Sie im Explorer der Campaign-Client-Konsole zu **Administration > Zugriffsverwaltung > Benutzer**.
 1. Greifen Sie auf den bestehenden technischen Benutzer bzw. die technische Benutzerin zu, der bzw. die für APIs verwendet wird.
 1. Navigieren Sie zu den Ordnerberechtigungen und überprüfen Sie die Berechtigungen.
 1. Wenden Sie dieselben Berechtigungen auf den neu erstellten technischen Benutzer bzw. die neu erstellte technische Benutzerin an. Die E-Mail-Adresse dieser Benutzerin bzw. dieses Benutzers ist der Wert der **E-Mail für technische Konten**, der zuvor kopiert wurde.
@@ -89,7 +89,7 @@ Gehen Sie wie folgt vor, um diesen Benutzer bzw. diese Benutzerin zu aktualisier
 
 >[!CAUTION]
 >
->Der neue technische Benutzer muss mindestens einen API-Aufruf durchgeführt haben, der zur Campaign-Clientkonsole hinzugefügt werden soll.
+>Der neue technische Benutzer bzw. die Benutzerin muss mindestens einen API-Aufruf durchgeführt haben, damit diese Person der Campaign-Client-Konsole hinzugefügt werden kann.
 >
 
 <!--

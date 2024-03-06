@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
 source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -99,8 +99,8 @@ Klicken Sie auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]** und a
 
 ## Testadressen und benutzerdefinierte Tabelle {#using-an-external-recipient-table}
 
-Wenn es sich bei der Versandtabelle um eine externe Tabelle handelt, müssen Sie zusätzliche Konfigurationen vornehmen. Die **[!UICONTROL nms:seedmember]** -Schema erweitert werden. Den Testadressen wird ein Tab hinzugefügt, um die entsprechenden Felder zu definieren
+Wenn es sich bei der Versandtabelle um eine externe Tabelle handelt, müssen Sie zusätzliche Konfigurationen vornehmen. Das Schema **[!UICONTROL nms:seedmember]** muss erweitert werden. Es wird eine Registerkarte zu den Testadressen hinzugefügt, um die entsprechenden Felder zu definieren
 
-Geben Sie in diesem Fall die Testadressen-Daten direkt in den jeweiligen Feldern des entsprechenden Tabs auf Ebene des Versands ein oder importieren Sie Adressenvorlagen.
+Geben Sie in diesem Fall die Testadressen direkt in den jeweiligen Feldern der entsprechenden Registerkarte auf Ebene des Versands ein oder importieren Sie die Adressenvorlagen.
 
 <!--The **nms:seedMember** schema extension is [this section](../../configuration/using/seed-addresses.md).-->

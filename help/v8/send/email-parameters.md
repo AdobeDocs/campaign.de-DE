@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
 source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '631'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ In diesem Abschnitt werden die in den Versandeigenschaften verfügbaren Optionen
 
 ## Verwenden von E-Mail BCC {#email-bcc}
 
-Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von Ihrer Plattform gesendeten E-Mails aufbewahrt wird. Diese Option wird im Abschnitt [diese Seite](email-bcc.md).
+Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird. Die Option wird auf [dieser Seite](email-bcc.md) detailliert beschrieben.
 
 ## Auswählen von Nachrichtenformaten {#selecting-message-formats}
 
-Sie können das Format der gesendeten E-Mail-Nachrichten ändern. Bearbeiten Sie hierzu die Versandeigenschaften und klicken Sie auf die Schaltfläche **[!UICONTROL Versand]** Registerkarte.
+Sie können das Format der gesendeten E-Mail-Nachrichten ändern. Bearbeiten Sie hierzu die Versandeigenschaften und klicken Sie auf die Registerkarte **[!UICONTROL Versand]**.
 
 ![](assets/email-message-format.png)
 
@@ -77,7 +77,7 @@ Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschn
 
 ## Hinzufügen von SMTP-Headern {#adding-smtp-headers}
 
-Sie können Ihren Sendungen auch SMTP-Header hinzufügen. Verwenden Sie dazu den entsprechenden Abschnitt des **[!UICONTROL SMTP]** im Versand.
+Sie können Ihren Sendungen auch SMTP-Header hinzufügen. Verwenden Sie dazu den entsprechenden Abschnitt der Registerkarte **[!UICONTROL SMTP]** im Versand.
 
 Das in diesem Fenster erfasste Script muss pro Zeile einen Header im Format **Name: Wert** enthalten.
 
@@ -92,8 +92,8 @@ Werte werden bei Bedarf automatisch verschlüsselt.
 ![](assets/email-smtp-headers.png)
 
 
-## Mirrorseite generieren {#generating-mirror-page}
+## Generieren einer Mirrorseite {#generating-mirror-page}
 
-Eine Mirrorseite ist eine HTML-Seite, die über einen Webbrowser online abgerufen werden kann und deren Inhalt mit dem der E-Mail identisch ist. Dies kann nützlich sein, wenn bei Ihren Empfängern Rendering-Probleme auftreten oder Bilder beschädigt sind, wenn sie versuchen, Ihre E-Mail in ihrem Posteingang anzuzeigen.
+Eine Mirrorseite ist eine HTML-Seite, die über einen Webbrowser online abgerufen werden kann und deren Inhalt mit dem der E-Mail identisch ist. Dies kann nützlich sein, wenn bei Ihren Empfängerinnen und Empfängern Rendering-Probleme oder fehlerhafte Bilder auftreten, wenn sie versuchen, Ihre E-Mail in ihrem Posteingang anzuzeigen.
 
-Erfahren Sie, wie Sie einen Link zur Mirrorseite in [diesem Abschnitt](mirror-page.md)
+Weitere Informationen dazu, wie Sie einen Link zur Mirrorseite einfügen, finden Sie in [diesem Abschnitt](mirror-page.md).

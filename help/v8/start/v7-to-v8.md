@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '714'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -40,17 +40,17 @@ Als früherer [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die me
 >Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Die Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die schon vorkonfiguriert ist.
 
 
-## Hybrid-Architekturreifen {#hybrid-archi}
+## Hybrid-Architektur {#hybrid-archi}
 
 Campaign v8 basiert auf einer **Hybridarchitektur**. Wenn Sie von Campaign Classic v7 wechseln, beachten Sie, dass alle Sendungen den Mid-Sourcing-Server durchlaufen.
 
 Dies hat folgende Auswirkungen:
 
-* Internes Routing ist **nicht möglich** in Campaign v8 und das externe Konto entsprechend deaktiviert wurde,
-* Der Status der Sendungen wird nicht sofort aktualisiert - In der Marketing-Instanz wird ein technischer Prozess ausgeführt, der den Versandstatus zeitnah aktualisiert.
+* Das interne Routing in Campaign v8 ist **nicht möglich** und das externe Konto wurde entsprechend deaktiviert.
+* Der Versandstatus wird nicht sofort aktualisiert – In der Marketing-Instanz wird ein technischer Prozess ausgeführt, der den Versandstatus zeitnah aktualisiert.
 
 
-![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](../send/transactional-template.md#transition-from-v7) mehr über das Senden von Testsendungen für Transaktionsnachrichten beim Übergang von v7 zu v8.
+![](../assets/do-not-localize/glass.png) Auf [dieser Seite](../send/transactional-template.md#transition-from-v7) erfahren Sie mehr über das Senden von Testsendungen für Transaktionsnachrichten beim Übergang von v7 zu v8.
 
 
 ## [!DNL Campaign] und [!DNL Snowflake] {#ac-gs-snowflake}
@@ -87,7 +87,7 @@ Beachten Sie, dass einige Funktionen im Kontext einer [Enterprise (FFDA)-Bereits
 
 Einige historische Funktionen von Campaign Classic v7 werden in Campaign v8 nicht mehr unterstützt, wie etwa:
 
-* Social Marketing mit Facebook
+* Social-Media-Marketing mit Facebook
 * ACS-Connector (Prime-Angebote)
 * Integration mit LDAP
 * Anmelden mit Benutzer/Kennwort
