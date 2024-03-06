@@ -7,7 +7,7 @@ role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '43'
-ht-degree: 100%
+ht-degree: 60%
 
 ---
 
@@ -28,7 +28,7 @@ Der unten beschriebene Workflow wird standardmäßig mit dem Modul **Mid-Sourcin
   <tr> 
    <td> <span class="uicontrol">Versandindikatoren</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
-   <td> Aktualisiert Trackingindikatoren von Sendungen. Wird standardmäßig stündlich gestartet.<br /> </td> 
+   <td> Dieser Workflow aktualisiert die Trackingindikatoren eines Versands. Dieser Workflow wird standardmäßig stündlich ausgelöst.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

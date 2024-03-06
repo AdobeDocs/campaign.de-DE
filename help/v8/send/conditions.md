@@ -8,7 +8,7 @@ exl-id: bcbf3101-d43c-4ed3-ab02-a9936ec55b71
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um einen von einem Feldwert abhängigen bedingten Inhal
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**, um den Nachrichten inhalt entsprechend dem Versandempfänger oder der dem Versandempfängerin anzuzeigen. Wählen Sie eine Empfängerin oder einen Empfänger aus, für die bzw. den die Bedingung zutrifft, um den Inhalt zu überprüfen. Wählen Sie dann eine andere Empfängerin oder einen anderen Empfänger aus, für die bzw. den sie nicht zutrifft, und überprüfen Sie erneut.
 
-Sie können weitere Bedingungen hinzufügen und Inhalte in Abhängigkeit von einem oder mehreren Feldwerten konfigurieren. Dies ist mit den Optionen **[!UICONTROL Bedingter Inhalt > Sonst]** und **[!UICONTROL Bedingter Inhalt > Sonst wenn]** möglich. Die Vorgehensweise ist die gleiche wie beim **Wenn**-Ausdruck.
+Sie können weitere Fälle hinzufügen und je nach den Werten eines oder mehrerer Felder unterschiedliche Inhalte definieren. Verwenden Sie dazu **[!UICONTROL Bedingter Inhalt > Sonst]** und **[!UICONTROL Bedingter Inhalt > Sonst , wenn]**. Diese Ausdrücke werden auf die gleiche Weise wie die **if** Ausdruck.
 
 >[!CAUTION]
 >
@@ -54,7 +54,7 @@ Sie können weitere Bedingungen hinzufügen und Inhalte in Abhängigkeit von ein
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen. Inhalte werden in der bevorzugten Sprache der Empfängerin bzw. des Empfängers angezeigt.
 
-1. Erstellen Sie eine E-Mail und wählen Sie eine Zielgruppe aus. In diesem Beispiel basiert die Bedingung für die Darstellung einer bestimmten Version auf dem Wert **Sprache** des Empfängerprofils. Diese Werte sind auf **EN**, **FR**, **ES** festgelegt.
+1. Erstellen Sie eine E-Mail und wählen Sie die Zielpopulation aus. In diesem Beispiel basiert die Bedingung, dass die eine Version oder die andere angezeigt wird, auf der **Sprache** Wert des Empfängerprofils. Diese Werte sind auf **DE**, **FR**, **ES**.
 1. Klicken Sie im HTML-Inhalt der E-Mail auf den Tab **[!UICONTROL Quelle]** und fügen Sie folgenden Code ein:
 
    ```

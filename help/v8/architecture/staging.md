@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Campaign-API-Staging-Mechanismus
 
-Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ist es im Hinblick auf die Leistung (Latenz und Gleichzeitigkeit) nicht empfehlenswert, einzelne Abfragen zu starten. Batch-Vorgänge sind daher vorzuziehen. Um die Leistung zu verbessern, werden Aufnahme-APIs an die lokale Datenbank weitergeleitet.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ist es im Hinblick auf die Performance (Latenz und Gleichzeitigkeit) nicht empfehlenswert, einzelne Abfragen zu starten. Batch-Vorgänge sind daher vorzuziehen. Um die Performance zu verbessern, werden Aufnahme-APIs an die lokale Datenbank weitergeleitet.
 
 Die Staging-Funktion von Campaign ist in einigen nativen Schemata standardmäßig aktiviert. Sie kann auch für jedes benutzerdefinierte Schema aktiviert werden. Staging-Verfahren in Kürze:
 

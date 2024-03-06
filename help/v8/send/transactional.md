@@ -8,7 +8,7 @@ exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,7 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. Ergänzen Sie das Feld unter Einhaltung folgender Syntax: .**Elementname**.@**Attributname**. Beispiel:
+1. Füllen Sie das Tag mit der folgenden Syntax aus: **Elementname**.@**Attributname** wie unten dargestellt.
 
    ![](assets/messagecenter_create_custo_2.png)
 
@@ -192,7 +192,7 @@ Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalt
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### Führen Sie einen Testversand durch.
+### Durchführen eines Testversands
 
 Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versand einen Testversand durchzuführen.
 
@@ -266,7 +266,7 @@ Sobald eine Nachrichtenvorlage <!--on the execution instances--> veröffentlicht
 Gehen Sie wie folgt vor, um die Veröffentlichung einer Transaktionsnachrichten-Vorlage aufzuheben.
 
 1. Navigieren Sie zum Ordner **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]**.
-1. Wählen Sie die Vorlage aus, deren Veröffentlichung rückgängig gemacht werden soll.
+1. Wählen Sie die Vorlage aus, deren Veröffentlichung aufgehoben werden soll.
 1. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**.
 1. Klicken Sie auf **[!UICONTROL Starten]**.
 

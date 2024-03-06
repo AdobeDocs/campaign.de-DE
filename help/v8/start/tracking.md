@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '680'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Der technische **Tracking**-Workflow ruft die Tracking-Daten ab, sobald der Vers
 
 **Tracking testen**
 
-Bevor Sie Ihre Nachrichten mit Ihrem Tracking senden, können Sie das Tracking auf Ihrer Mirror-Seite, in Ihren E-Mail-Protokollen und Links testen.
+Bevor Sie Ihre Nachrichten mit Ihrem Tracking senden, können Sie das Tracking auf Ihrer Mirrorseite, in Ihren E-Mail-Protokollen und Links testen.
 
 [Weitere Informationen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/testing-tracking.html?lang=de#sending-messages){target="_blank"}
 

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 100%
+source-wordcount: '866'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +79,7 @@ Wählen Sie die Option **[!UICONTROL Liste neu erstellen]** aus, um die existier
 
 Wenn Sie die Option **[!UICONTROL Vorgang nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Vorgang betreffenden Protokollnachrichten gespeichert werden.
 
-In der oberen Hälfte des Assistenten werden Informationen bezüglich der Ausführung angezeigt. Durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** kann der Vorgang gestoppt werden. Bereits verarbeitete Datensätze werden jedoch trotzdem der Liste zugeordnet.
+Im oberen Bereich des Fensters können Sie die Ausführung überwachen. Die **[!UICONTROL Anhalten]** -Schaltfläche können Sie den Vorgang stoppen. Bereits verarbeitete Kontakte werden mit der Liste verknüpft.
 
 Nachdem die Ausführung abgeschlossen ist, öffnen Sie das Menü **[!UICONTROL Profile und Zielgruppen > Listen]** und wählen Sie die Liste aus: die Registerkarte **[!UICONTROL Inhalte]** zeigt die mit der Liste verknüpften Profile an.
 

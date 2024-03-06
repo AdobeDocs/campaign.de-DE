@@ -8,7 +8,7 @@ exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1348'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Um einen Plan, ein Programm, eine Kampagne oder einen Versand zu bearbeiten, nav
 
 ![](assets/campaign-calendar.png)
 
-Sie können die im Kampagnenkalender angezeigten Informationen filtern. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie die Filterkriterien aus.
+Sie können die im Kampagnenkalender angezeigten Informationen filtern. Klicken Sie hierzu auf den Link **[!UICONTROL Filter]** und wählen Sie die Filterkriterien aus.
 
 ![](assets/campaign_planning_filter.png)
 
@@ -155,17 +155,17 @@ Beim Durchsuchen des Kalenders können Sie auch ein Programm oder eine Kampagne 
 
 ![](assets/campaign-create-from-calendar.png)
 
-Wenn Sie eine Kampagne über die **[!UICONTROL Zeitplan]** in einem Programm, wird die Kampagne automatisch mit dem betreffenden Programm verknüpft. Die **[!UICONTROL Programm]** -Feld in diesem Fall ausgeblendet wird.
+Wenn Sie eine Kampagne über die Registerkarte **[!UICONTROL Planung]** eines Programms erstellen, wird die Kampagne dem jeweiligen Programm automatisch hinzugefügt. Das Feld **[!UICONTROL Programm]** wird in diesem Fall ausgeblendet.
 
 
-## Zugriff auf Campaign über einen Webbrowser {#use-the-web-interface}
+## Zugreifen auf Campaign über einen Webbrowser {#use-the-web-interface}
 
 
 >[!AVAILABILITY]
 >
 >Ab Campaign v8.6 ist Campaign in einer Web-Benutzeroberfläche verfügbar. Die meisten Marketing-Aktionen können über diese neue Benutzeroberfläche durchgeführt werden. [Weitere Informationen](../../v8/start/campaign-ui.md#discover-the-user-interface).
 
-Über einen Internetbrowser haben Sie Zugriff auf einige Bildschirme der Adobe Campaign-Clientkonsole, in denen Sie alle Kampagnen und Sendungen sowie Berichte und Informationen zu Profilen in Ihrer Datenbank ansehen können. Sie können keine Komponenten aus diesem Webzugriff erstellen, aber je nach Zugriffsrechten können Sie die Daten in der Datenbank anzeigen und/oder bearbeiten. In der Regel können Sie Inhalte und Zielgruppen einer Kampagne validieren, einen Versand neu starten oder stoppen etc.
+Sie können über einen Internet-Browser auf einige Bildschirme der Adobe Campaign-Client-Konsole zugreifen, um alle Kampagnen und Sendungen sowie Berichte und Informationen zu den Profilen in Ihrer Datenbank anzuzeigen. Sie können über diesen Web-Zugriff keine Komponenten erstellen, aber je nach Zugriffsrechten können Sie die Daten in der Datenbank anzeigen und/oder bearbeiten. Sie können normalerweise Kampagneninhalte und Zielgruppenbestimmungen genehmigen, einen Versand neu starten oder stoppen usw.
 
 1. Melden Sie sich wie gewohnt über https://`<your instance>:<port>/view/home` an.
 1. Über die unterschiedlichen Rubriken besteht Zugriff auf Listen und weitere Navigationselemente.

@@ -6,7 +6,7 @@ role: User
 exl-id: ee201cfd-a351-41d8-a5ad-2f2e538dc643
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '590'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,7 @@ Um die Zusammenführungsfunktion zu aktivieren, müssen Sie zunächst die Aktivi
 
 1. Öffnen Sie die Aktivität und klicken Sie dann auf den Link **[Konfiguration bearbeiten]**.
 
-1. Wählen Sie das für das Deduplizierung zu verwendende Abgleichungsfeld aus und klicken Sie dann auf **[!UICONTROL Weiter]**. In diesem Beispiel möchten wir die Duplizierung basierend auf dem E-Mail-Feld deduplizieren.
+1. Wählen Sie das für das Deduplizierung zu verwendende Abstimmungsfeld aus und klicken Sie dann auf **[!UICONTROL Weiter]**. In diesem Beispiel möchten wir die Duplizierung basierend auf dem E-Mail-Feld deduplizieren.
 
    ![](assets/uc_merge_edit.png)
 

@@ -7,7 +7,7 @@ level: Intermediate, Experienced
 exl-id: e8ad021c-ce2e-4a74-b9bf-a989d8879fd1
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '426'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Systemfilter {#system-filters}
 
-Sie können den Schema-Zugriff abhängig von Berechtigungen nach bestimmten Benutzern filtern. Mit Systemfiltern können Sie die Lese- und Schreibberechtigungen von Entitäten verwalten, die in Schemas beschrieben sind. Dabei verwenden Sie die Parameter **readAccess** und **writeAccess**.
+Sie können den Schema-Zugriff abhängig von Berechtigungen nach bestimmten Benutzern filtern. Mit Systemfiltern können Sie die Lese- und Schreibberechtigungen von Entitäten verwalten, die in Schemata beschrieben sind. Dabei verwenden Sie die Parameter **readAccess** und **writeAccess**.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Sie können den Schema-Zugriff abhängig von Berechtigungen nach bestimmten Benu
 
 * **readAccess**: bietet schreibgeschützten Zugriff auf Schemadaten.
 
-  **Warnung**  - Alle verknüpften Tabellen müssen mit derselben Einschränkung versehen werden. Diese Konfiguration kann die Leistung beeinträchtigen.
+  **Warnung**  - Alle verknüpften Tabellen müssen mit derselben Einschränkung versehen werden. Diese Konfiguration kann die Performance beeinträchtigen.
 
 * **writeAccess**: bietet Schreibzugriff auf Schemadaten.
 

@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 100%
+source-wordcount: '1483'
+ht-degree: 95%
 
 ---
 
@@ -144,7 +144,7 @@ Die Angebotsmodul-Abfrage stellt sich wie folgt dar:
 
 * Der optionale Parameter &quot;**cb**&quot; erhält den Namen der Funktion, die den vom Angebotsmodul zurückgegebenen XML-Knoten auswerten wird (Callback).
 
-* Der optionale Parameter &quot;**t**&quot; erhält bei Interaktionen mit identifizierten Kontakten die Kennung des Kontakts. Der Parameter kann auch mit der Variablen **interactionTarget** übergeben werden.
+* Die &quot;**t** Der Parameter erhält den Wert der Zielgruppe, nur für eine identifizierte Interaktion. Dieser Parameter kann auch mit der **interactionTarget** -Variable. Dieser Parameter ist optional.
 
 * Der optionale Parameter &quot;**c**&quot; erhält die Liste der internen Kategorienamen.
 
@@ -342,8 +342,8 @@ Als Antwort auf die Abfrage gibt der SOAP-Dienst folgende Parameter zurück:
 
 Ergänzen Sie die URL mit dem Befehl **nms:interaction#UpdateStatus** und folgenden Parametern:
 
-* **proposition** - die die vom Angebotsmodul ausgegebene Vorschlagskennung enthaltende Zeichenkette. Siehe [Angebotsvorschläge](#offer-proposition).
-* **status** - Zahl, die den neuen Status des Angebots angibt. Die möglichen Werte sind in der Auflistung **propositionStatus**, im Schema **nms:common** aufgeführt. Beispielsweise entspricht die Zahl 3 werksmäßig dem Status **Akzeptiert**.
+* **proposition** - die die vom Angebotsmodul ausgegebene Vorschlagskennung enthaltende Zeichenfolge. Siehe [Angebotsvorschläge](#offer-proposition).
+* **status**: String-Typ, der den neuen Status des Angebots angibt. Die möglichen Werte sind im Abschnitt **propositionStatus** Auflistung, in der **nms:common** Schema. Beispielsweise entspricht die vordefinierte Zahl 3 dem **Akzeptiert** -Status.
 * **context** - XML-Element, mit dem Sie Kontextdaten zum Platzierungsschema hinzufügen können. Wenn das verwendete Schema **nms:interaction** lautet, sollte **`<empty>`** hinzugefügt werden.
 
 ### Anwendungsbeispiel eines SOAP-Aufrufs {#example-using-a-soap-call}

@@ -8,7 +8,7 @@ exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -166,7 +166,7 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen notwendig:
 
 * Geben Sie den **Titel** der Vorlage ein: Der Titel ist obligatorisch und wird als Standardbtitel für alle auf dieser Vorlage basierenden Kampagnen verwendet.
-* **Kampagnenart**: Die in der Dropdown-Liste angebotenen Werte entsprechen den in der Aufzählung **[!UICONTROL natureOp]** gespeicherten Werten.
+* Kampagnen auswählen **Natur** aus der Dropdown-Liste. Die in dieser Liste verfügbaren Werte sind die in der **[!UICONTROL natureOp]** -Auflistung.
 
 Auf [dieser Seite](../../v8/config/ui-settings.md#enumerations) erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und sie konfigurieren können.
 

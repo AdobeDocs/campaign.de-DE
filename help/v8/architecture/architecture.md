@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 86fa52c445b89227cfabb65e74627c5da7d3db1f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Es stehen zwei Arten von Umgebungen zur Verfügung:
 
 * **Produktionsumgebung**: hostet die Programme für die diversen Fachleute.
 
-* **Staging-Umgebung**: wird für verschiedene Leistungs- und Qualitätstests verwendet, bevor Änderungen am Programm in die Produktionsumgebung übertragen werden.
+* **Staging-Umgebung**: wird für verschiedene Performance- und Qualitätstests verwendet, bevor Änderungen am Programm in die Produktionsumgebung übertragen werden.
 
 Sie können Packages von einer Umgebung in eine andere exportieren und importieren.
 
@@ -34,7 +34,7 @@ Es sind zwei Bereitstellungsmodelle verfügbar: **Campaign FDA-Bereitstellung** 
 
 ### Campaign FDA-Bereitstellung {#ac-deployment-fda}
 
-In der [FDA-Bereitstellung](fda-deployment.md) ist [!DNL Adobe Campaign] v8 zwecks Datenzugriff über die Federated Data Access-Funktion mit [!DNL Snowflake] verbunden: Sie können auf externe Daten und Informationen, die in Ihrer [!DNL Snowflake]-Datenbank gespeichert sind, zugreifen und diese verarbeiten, ohne die Datenstruktur in Adobe Campaign ändern zu müssen. PostgreSQL ist die primäre Datenbank. Sie können Snowflake als sekundäre Datenbank verwenden, um Ihr Datenmodell zu erweitern und Ihre Daten in Snowflake zu speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und eine hervorragende Leistung erzielen.
+In der [FDA-Bereitstellung](fda-deployment.md) ist [!DNL Adobe Campaign] v8 zwecks Datenzugriff über die Federated Data Access-Funktion mit [!DNL Snowflake] verbunden: Sie können auf externe Daten und Informationen, die in Ihrer [!DNL Snowflake]-Datenbank gespeichert sind, zugreifen und diese verarbeiten, ohne die Datenstruktur in Adobe Campaign ändern zu müssen. PostgreSQL ist die primäre Datenbank. Sie können Snowflake als sekundäre Datenbank verwenden, um Ihr Datenmodell zu erweitern und Ihre Daten in Snowflake zu speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und eine hervorragende Performance erzielen.
 
 
 ![](assets/P1-P3-architecture.png){zoomable=&quot;yes&quot;}
@@ -63,7 +63,7 @@ Abhängig vom Campaign v8-Package verfügen Sie über eine bestimmte Anzahl von 
 
 Standardmäßig verwenden die externen Konten für alle Kanäle einen **[!UICONTROL alternierenden]** Routing-Modus, d. h., ein Versand wird jeweils abwechselnd von jeder Mid-Instanz gesendet.
 
-Um höhere Leistungen sowohl in Bezug auf die Geschwindigkeit als auch auf die Skalierbarkeit zu gewährleisten, können Sie die automatische Aufteilung von Sendungen auf Ihre Mid-Sourcing-Instanzen zulassen, damit diese schneller an die Empfängerinnen und Empfänger gesendet werden. Dieser Vorgang ist transparent, wenn der Versand von der Marketing-Instanz aus ausgeführt wird: Nachdem der Versand durchgeführt wurde, werden alle Logs zusammengeführt, bevor sie an die Marketing-Instanz in einem einzigen Versandobjekt zurückgesendet werden.
+Um höhere Performance sowohl in Bezug auf die Geschwindigkeit als auch auf die Skalierbarkeit zu gewährleisten, können Sie die automatische Aufteilung von Sendungen auf Ihre Mid-Sourcing-Instanzen zulassen, damit diese schneller an die Empfängerinnen und Empfänger gesendet werden. Dieser Vorgang ist transparent, wenn der Versand von der Marketing-Instanz aus ausgeführt wird: Nachdem der Versand durchgeführt wurde, werden alle Logs zusammengeführt, bevor sie an die Marketing-Instanz in einem einzigen Versandobjekt zurückgesendet werden.
 
 Dazu werden zusätzliche externe Konten mit dem **[!UICONTROL Aufspaltungs]**-Routing-Modus bei der Bereitstellung für jeden Kanal erstellt:
 

@@ -8,7 +8,7 @@ exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -81,11 +81,11 @@ Der Kampagnenworkflow muss die Aktivität **Lokale Validierung** beinhalten. Die
 * **[!UICONTROL Verteilungskontext]**: Explizit;
 * **[!UICONTROL Datenverteilung]**: Lokalstellen-Datenverteilung.
 
-Erstellen Sie eine Datenverteilung vom Typ **Lokalstellen-Datenverteilung**. Mit der Datenverteilungsvorlage können Sie die Anzahl der Datensätze aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie unter **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**, um eine neue **[!UICONTROL Datenverteilung]** zu erstellen. Für weitere Informationen zur Datenverteilung
+**Lokalstellen-Verteilung** Datenverteilung vom Typ muss erstellt werden. Die Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl ausgehend von einer Liste von Gruppierungswerten. In **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]**, klicken Sie auf die **[!UICONTROL Neu]** Symbol zum Erstellen eines neuen **[!UICONTROL Datenverteilung]**. Weitere Informationen zur Datenverteilung finden Sie unter
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Geben Sie die **[!UICONTROL Zielgruppendimension]** sowie das **[!UICONTROL Verteilungsfeld]** an. Wählen Sie als **Zuweisungstyp** **Lokalstelle** aus.
+Wählen Sie die **Zielgruppendimension** und **[!UICONTROL Verteilungsfeld]**. Für **[!UICONTROL Zuweisungstyp]** auswählen **Lokalstelle**.
 
 Fügen Sie im Tab **[!UICONTROL Verteilung]** ein Feld für jede Lokalstelle hinzu und geben Sie den jeweiligen Wert an.
 
@@ -153,7 +153,7 @@ Im automatischen Modus wird die Lokalstelle automatisch für die Kampagne angeme
 
 ### Benachrichtigungen {#notifications}
 
-Die Konfiguration der Benachrichtigungen entspricht der für lokale Kampagnen. Siehe hierzu [diesen Abschnitt](creating-a-local-campaign.md#notifications).
+Die Konfiguration der Benachrichtigungen entspricht den Benachrichtigungen für eine Lokalstelle. Weitere Informationen finden Sie in [diesem Abschnitt](creating-a-local-campaign.md#notifications).
 
 ## Bestellen einer Kampagne {#ordering-a-campaign}
 
@@ -175,4 +175,4 @@ Weitere Informationen hierzu finden Sie im Abschnitt [Validierungsprozess](creat
 
 ## Validieren einer Bestellung {#approving-an-order}
 
-Die Validierung der Bestellung eines partizipativen Kampagnen-Kits entspricht der von lokalen Kampagnen. Siehe hierzu [diesen Abschnitt](creating-a-local-campaign.md#approving-an-order).
+Die Validierung der Bestellung eines partizipativen Kampagnenkits entspricht der von lokalen Kampagnen. Weitere Informationen finden Sie in [diesem Abschnitt](creating-a-local-campaign.md#approving-an-order).

@@ -7,8 +7,8 @@ role: User
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 82%
 
 ---
 
@@ -35,7 +35,7 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung der Empfänger.
 
 1. Kampagne erstellen. Weitere Informationen finden Sie auf [dieser Seite](../campaigns/marketing-campaign-create.md).
-1. Fügen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](query.md).
+1. Im **[!UICONTROL Zielbestimmungen und Workflows]** im Tab Ihrer Kampagne, fügen Sie eine **Abfrage** -Aktivität zu Ihrem Workflow hinzu. Weitere Informationen zur Verwendung dieser Aktivität finden Sie unter [diesem Abschnitt](query.md).
 1. Definieren Sie die Empfänger, die Ihre Sendungen erhalten sollen. Wählen Sie beispielsweise Gold-Mitglieder als Zieldimension aus.
 1. Fügen Sie Filterbedingungen zu Ihrer Abfrage hinzu. Wählen Sie in diesem Beispiel Empfänger, die eine E-Mail-Adresse und eine Mobiltelefonnummer haben.
 
@@ -68,7 +68,7 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
 Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie die Zielgruppe mithilfe von Filterbedingungen in unterschiedliche Populationen unterteilen.
 
-1. Fügen Sie zum Workflow die Aktivität **Aufspaltung** hinzu und öffnen Sie sie. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](split.md).
+1. Hinzufügen einer **Aufspaltung** -Aktivität in den Workflow ein und öffnen Sie ihn. Weitere Informationen zur Verwendung dieser Aktivität finden Sie unter [diesem Abschnitt](split.md).
 1. Erstellen Sie aus der zuvor in der Abfrage berechneten Population drei Segmente.
 
    ![](assets/wkf_cross-channel_6.png)
@@ -81,7 +81,7 @@ Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie 
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. Wählen Sie in den Filterparametern in der Dropdown-Liste **[!UICONTROL Verhalten]** die Option **[!UICONTROL Empfänger, die weder geöffnet noch geklickt haben (E-Mail)]** aus. Wählen Sie danach die zu sendende E-Mail mit dem Angebot aus der Versandliste aus. Wählen Sie **[!UICONTROL Beenden]**.
+1. Wählen Sie in den Filtereinstellungen **[!UICONTROL Empfänger, die weder geöffnet noch geklickt haben (E-Mail)]** aus dem **[!UICONTROL Verhalten]** aus der Dropdown-Liste und wählen Sie die E-Mail mit dem Angebot aus, das Sie senden möchten. Klicken Sie auf **[!UICONTROL Beenden]**.
 
    ![](assets/wkf_cross-channel_10.png)
 
@@ -112,4 +112,4 @@ Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie 
 1. Doppelklicken Sie auf die Aktivität **[!UICONTROL Listen-Update]** und wählen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** aus.
 1. Verwenden Sie die Schaltfläche **Starten** in der Aktionsleiste, um den Workflow auszuführen.
 
-Die von der Aktivität **Abfrage** ausgewählte Population wird segmentiert und erhält je nach Empfängerverhalten eine E-Mail oder eine SMS. Die restliche Population wird mit der Aktivität **[!UICONTROL Listen-Update]** zur Datenbank hinzugefügt.
+Die durch die **Abfrage** Die Aktivität wird segmentiert, um je nach Empfängerverhalten einen E-Mail- oder SMS-Versand zu erhalten. Die verbleibende Population wird mithilfe der **[!UICONTROL Listen-Update]** -Aktivität.

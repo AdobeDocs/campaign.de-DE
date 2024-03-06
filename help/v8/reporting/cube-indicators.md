@@ -8,7 +8,7 @@ exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -104,11 +104,11 @@ Im Beispiel sollen nur Jahre, Monate und Tage angezeigt werden. Beachten Sie, da
 
 Sie können auch hier die Klassierung aktivieren, um die Lesbarkeit der Informationen zu erleichtern, und in diesem Fall die Werte mit einem Auflistungswert verknüpfen.
 
-Wählen Sie die Auflistung in der Dropdown-Liste aus.. Beachten Sie, dass diese Auflistung als **[!UICONTROL Reserviert für Klassierung]** definiert werden muss.
+Wählen Sie die Auflistung aus der Dropdown-Liste aus. Beachten Sie, dass diese Auflistung als **[!UICONTROL Reserviert für Klassierung]** definiert werden muss.
 
 ![](assets/cube-dimension-with-enum.png)
 
-Nur die in der Auflistung vorhandenen Werte werden angezeigt. Alle anderen werden unter einem Titel zusammengefasst, den Sie im Feld **[!UICONTROL Titel der anderen Werte]** definieren können.
+Nur die Werte in der Auflistung werden angezeigt. Die anderen werden unter dem im Feld **[!UICONTROL Titel der anderen Werte]** -Feld.
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](customize-cubes.md#dynamically-manage-bins).
 

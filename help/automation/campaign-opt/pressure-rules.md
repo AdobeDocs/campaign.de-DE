@@ -6,8 +6,8 @@ feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
 workflow-type: tm+mt
-source-wordcount: '3174'
-ht-degree: 100%
+source-wordcount: '3241'
+ht-degree: 84%
 
 ---
 
@@ -29,7 +29,7 @@ Die Schlichtungskriterien (Nachrichtengewichtung und/oder Schwelle der Nachricht
 * den Präferenzen der Empfänger, die deklarativen Informationen entsprechen: Newsletter-Abonnements, Empfängerstatus (Kunde oder potenzieller Kunde);
 * dem Verhalten der Empfänger: Einkäufe, besuchte Links usw.
 
-Die Schlichtungsregel zur Bestimmung der geeigneten Nachrichten wird in der Analyseetappe angewandt. Die Nachricht wird für jeden Empfänger und den betroffenen Zeitraum versandt, wenn folgende Formel wahr ist: **(Anzahl gesendeter Nachrichten) + (Anzahl der Nachrichten mit einer größeren Gewichtung) &lt; Schwelle**
+Die Schlichtungsregel zur Definition der geeigneten Nachrichten wird während der Analysephase angewendet. Für jeden Empfänger und den betroffenen Zeitraum wird die Nachricht gesendet, wenn die folgende Formel wahr ist: **(Anzahl gesendeter Nachrichten) + (Anzahl der Nachrichten mit einer größeren Gewichtung) &lt; Schwelle**.
 
 Im gegensätzlichen Fall erscheint in den Logs der Hinweis **[!UICONTROL Ausgeschlossen nach Schlichtung]**. [Weitere Informationen](#exclusion-after-arbitration).
 
@@ -47,7 +47,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
    ![](assets/campaign_opt_create_a_rule_02.png)
 
-1. Sie können die Ausführungsreihenfolge nach Bedarf ändern. Wenn mehrere Typologieregeln in Form eines Sets von **[!UICONTROL Typologien]** angewendet werden, werden die Regeln mit der niedrigeren Reihenfolge zuerst angewendet. [Weitere Informationen](apply-rules.md#execution-order).
+1. Ändern Sie bei Bedarf die Ausführungsreihenfolge. Wenn mehrere Typologieregeln als **[!UICONTROL Typologie]** festgelegt ist, werden zuerst die Regeln mit der niedrigeren Reihenfolge angewendet. [Weitere Informationen](apply-rules.md#execution-order).
 1. Definieren Sie im Bereich **[!UICONTROL Berechnungsparameter]** eine Häufigkeit, wenn Sie die Zielgruppenbestimmung über die nächste tägliche Ausführung hinaus speichern möchten. [Weitere Informationen](apply-rules.md#adjust-calculation-frequency).
 1. Gehen Sie in den Tab **[!UICONTROL Druck]** und wählen Sie den Zeitraum im Kalender aus, während dessen die Regel angewandt werden soll.
 
@@ -77,7 +77,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
    Jede Sendung hat eine Gewichtung, d. h. einen Wert, der ihrer Priorität entspricht: Dies ermöglicht eine Schlichtung zwischen den Kampagnen. Die Gewichtung wird entsprechend der Formel berechnet, die in der Typologieregel und/oder direkt in ihren Eigenschaften bestimmt wird. [Weitere Informationen](#message-weight).
 
-1. Standardmäßig werden alle Nachrichten in der Schwellenberechnung berücksichtigt. Im Tab **[!UICONTROL Druck]** können von der Regel betroffene Empfänger und Nachrichten gefiltert werden:
+1. Standardmäßig werden bei der Schwellenberechnung alle Nachrichten berücksichtigt. Die **[!UICONTROL Einschränkung]** -Tab können Sie die von der Typologieregel betroffenen Nachrichten filtern:
 
    * Im oberen Bereich können die betroffenen Empfänger begrenzt werden.
    * Im unteren Bereich dieses Tabs können die zu zählenden Nachrichten gefiltert werden.
@@ -104,7 +104,7 @@ Der Schwellwert kann konstant sein oder mithilfe einer Formel berechnet werden, 
 
 **Beispiel:**
 
-Beispiel: Die zulässige Anzahl von Nachrichten kann entsprechend dem Segment indexiert werden, zu dem der Empfänger gehört. Ein im Segment &quot;Web&quot; verzeichneter Empfänger kann so beispielsweise mehr Nachrichten als andere Empfänger erhalten. Mit einer Formel vom Typ **[!UICONTROL Iif (@origin=&#39;Web&#39;, 5, 3)]** wäre etwa der Versand von 5 Nachrichten an diese Empfänger zulässig, für die Empfänger aus anderen Segmenten dagegen nur 3. Dies erfordert folgende Konfiguration:
+Sie können die Anzahl der autorisierten Nachrichten entsprechend dem Segment indexieren, zu dem der Empfänger gehört. Dies bedeutet, dass ein Empfänger, der zum Websegment gehört, mehr Nachrichten als andere Empfänger erhalten kann. Ein **[!UICONTROL Iif (@origin=&#39;Web&#39;, 5, 3)]** Typformel erlaubt den Versand von fünf Nachrichten an Empfänger und von drei Nachrichten an andere Segmente. Die Konfiguration sieht wie folgt aus:
 
 ![](assets/campaign_opt_pressure_sample.png)
 
@@ -120,14 +120,14 @@ Die Gewichtung kann konstant sein oder mithilfe einer Formel empfängerabhängig
 
 >[!CAUTION]
 >
->Die in einer Regel festgelegte Gewichtung kann für jeden einzelnen Versand über den Tab **[!UICONTROL Eigenschaften]** des jeweiligen Versands überschrieben werden. Klicken Sie auf den **[!UICONTROL Typologie]**-Tab, um die Kampagnentypologie auszuwählen und bei Bedarf die anzuwendende Gewichtung anzugeben.\
+>Die in einer Typologieregel definierte Gewichtung kann für jeden einzelnen Versand im Abschnitt **[!UICONTROL Eigenschaften]** Registerkarte. Klicken Sie auf **[!UICONTROL Typologie]** zur Auswahl der Kampagnentypologie und bei Bedarf zur Bestimmung der anzuwendenden Gewichtung.\
 >Eine in einer Typologieregel A festgelegte Gewichtung wird jedoch nicht in den Berechnungen einer Typologieregel B berücksichtigt: Die Gewichtung betrifft jeweils nur die Sendungen, die die Regel A anwenden.
 
 **Beispiel:**
 
 Im folgenden Beispiel wird die Gewichtung von Musik-Newslettern abhängig von der Neigung der Empfänger zu diesem Thema berechnet.
 
-1. Erstellen Sie ein neues Feld, um die für die Neigung der Empfänger ermittelten Werte festzuhalten. Dieses Feld, hier **@Music**, kann mit Antworten auf Online-Erhebungen und -Umfragen, erfassten Trackingdaten etc. angereichert werden.
+1. Erstellen Sie ein neues Feld, um die Tendenzwerte der Empfänger zu speichern. das Feld, **@Music** in diesem Fall mit Antworten auf Umfragen und Online-Umfragen, erfassten Tracking-Daten usw. angereichert werden.
 1. Erstellen Sie eine Typologieregel, um die Nachrichtengewichtung auf diesem Feld basierend zu berechnen.
 
    ![](assets/campaign_opt_pressure_weight_sample.png)
@@ -193,7 +193,7 @@ Die Schlichtung wird jede Nacht durch den technischen Workflow **[!UICONTROL Pla
 
 Der Workflow **[!UICONTROL Planungen]** berechnet die Daten über die (seit dem Beginn des Zeitraums bis zum jetzigen Zeitpunkt) verstrichene Zeitspanne, die zur Anwendung der Typologieregeln während der Analyse notwendig sind. Er berechnet zudem jede Nacht die Ausschlusszähler für die Schlichtungen neu.
 
-Adobe Campaign stellt so für jeden Empfänger sicher, dass die Anzahl der zu sendenden Nachrichten die Schwelle nicht überschreitet, unter Berücksichtigung der Anzahl der bereits im betroffenen Zeitraum gesendeten Nachrichten. Diese Informationen sind nur **Indikatoren**, da die Berechnungen zum Zeitpunkt des Versands aktualisiert werden.
+So prüft Adobe Campaign für jeden Empfänger, ob die Anzahl der zu sendenden Nachrichten den Schwellenwert nicht überschreitet, unter Berücksichtigung der Anzahl der bereits im betreffenden Zeitraum gesendeten Nachrichten. Diese Informationen sind **Indikator**, da alle Berechnungen zum Zeitpunkt des Versands aktualisiert werden.
 
 Bei Überschreiten der Schwelle werden die in der Kampagnentypologie bestimmten Schlichtungsregeln angewandt und die Empfänger werden durch die Schlichtung von Kampagnen mit geringerer Gewichtung ausgeschlossen.
 
@@ -214,7 +214,7 @@ Zur Identifikation von Kunden und Interessenten wird das Feld **[!UICONTROL Stat
 Befolgen Sie die nachstehenden Schritte, um die Regel zu konfigurieren:
 
 1. Erstellen Sie eine neue Typologieregel vom Typ **Druck**.
-1. Gehen Sie in den Tab **[!UICONTROL Druck]**, um im Abschnitt **[!UICONTROL Maximale Nachrichtenanzahl]** die Formel zur empfängerabhängigen Schwellenberechnung zu definieren. Wählen Sie daher in der Dropdown-Liste **[!UICONTROL Schwellentyp]** die Option **[!UICONTROL Empfängerabhängig]** aus und klicken Sie anschließend auf das Symbol **[!UICONTROL Ausdruck bearbeiten]**, das sich rechts vom Feld **[!UICONTROL Formel]** befindet.
+1. Bearbeiten Sie die **[!UICONTROL Druck]** Registerkarte: im **[!UICONTROL Maximale Nachrichtenanzahl]** erstellen, möchten wir eine Formel zur Berechnung der Schwelle für jeden Empfänger erstellen. Wählen Sie die **[!UICONTROL Empfängerabhängig]** Wert in **[!UICONTROL Schwellentyp]** und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]** rechts von der **[!UICONTROL Formel]** -Feld.
 
    Klicken Sie auf die Schaltfläche **[!UICONTROL Erweiterte Auswahl]**, um die Formel zu erstellen.
 
@@ -281,16 +281,16 @@ Druckregeln können dem Empfängerverhalten entsprechend festgelegt werden. Auf 
 
 Im folgenden Beispiel wird ein Versand mit einer Gewichtung von 5 erstellt. Dieser Gewichtung werden Neigungswerte entsprechend dem Empfängerverhalten hinzugefügt: Ein Kunde, der bereits eine Bestellung auf der Webseite aufgegeben hat, erhält einen Neigungswert von 5, während einem Kunde, der noch nie online bestellt hat, ein Neigungswert von 4 zugeordnet wird.
 
-Für diese Art von Konfiguration muss mit einer Formel die Gewichtung der Nachrichten bestimmt werden. Auf Informationen bezüglich der Neigung und der Umfragenantworten muss über das Datenmodell Zugriff bestehen. Im vorliegenden Beispiel wurde das Feld **Neigungen** hinzugefügt.
+Für diese Art der Konfiguration müssen Sie eine Formel verwenden, um die Nachrichtengewichtung zu definieren. Informationen zu Tendenzwerten und Umfrageantworten müssen im Datenmodell verfügbar sein. In unserem Beispiel wird die **Tendenz** wurde hinzugefügt.
 
 Befolgen Sie zur Konfiguration die nachstehenden Etappen:
 
 1. Erstellen Sie eine neue Typologieregel vom Typ **Druck**.
-1. Im Tab **[!UICONTROL Druck]** wird nun eine empfängerabhängige Schwellenberechnungsformel erstellt: Klicken Sie auf das Symbol **[!UICONTROL Ausdruck bearbeiten]** rechts vom Feld **[!UICONTROL Gewichtungsformel]**.
+1. Bearbeiten Sie die **[!UICONTROL Druck]** Registerkarte. Wir möchten eine Schwellenformel erstellen, die auf jedem einzelnen Empfänger basiert: Klicken Sie auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]** rechts neben dem **[!UICONTROL Gewichtungsformel]** -Feld.
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
-1. Im oberen Abschnitt des Ausdruckeditors wird standardmäßig der Wert **5** angegeben. Dieser Gewichtung soll nun der empfängerabhängige Neigungswert hinzugefügt werden. Positionieren Sie dafür den Zeiger der Maus rechts von der Ziffer 5, geben Sie das Zeichen **+** ein und wählen Sie das Feld **Neigungen** aus.
+1. Der Standardwert ist **5** wird im oberen Abschnitt des Ausdruckseditors angezeigt. Dieser Gewichtung soll der Neigungswert jedes Empfängers hinzugefügt werden: Platzieren Sie den Cursor rechts von den 5, geben Sie die **+** und wählen Sie die **Tendenz** -Feld.
 
    ![](assets/campaign_opt_pressure_sample_2_2.png)
 
@@ -323,8 +323,8 @@ Konfigurieren Sie zuerst die Druckregel.
 Erstellen und konfigurieren Sie jetzt einen Workflow für jeden Versand, auf den die Druckregel angewendet werden soll.
 
 1. Kampagne erstellen. [Weitere Informationen](../campaigns/marketing-campaign-create.md#create-a-campaign).
-1. Fügen Sie im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../workflow/query.md).
-1. Fügen Sie zum Workflow die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und öffnen Sie ihn. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../workflow/delivery.md).
+1. Im **[!UICONTROL Zielbestimmungen und Workflows]** im Tab Ihrer Kampagne, fügen Sie eine **Abfrage** -Aktivität zu Ihrem Workflow hinzu. Weitere Informationen zur Verwendung dieser Aktivität finden Sie unter [diesem Abschnitt](../workflow/query.md).
+1. Hinzufügen einer **[!UICONTROL Email delivery]** -Aktivität in den Workflow ein und öffnen Sie ihn. Weitere Informationen zur Verwendung dieser Aktivität finden Sie unter [diesem Abschnitt](../workflow/delivery.md).
 1. Gehen Sie zum Tab **[!UICONTROL Validierungen]** der **[!UICONTROL Versandeigenschaften]** und deaktivieren Sie alle Validierungen.
 
    ![](assets/campaign_opt_pressure_example_2.png)
@@ -333,7 +333,7 @@ Erstellen und konfigurieren Sie jetzt einen Workflow für jeden Versand, auf den
 
    ![](assets/campaign_opt_pressure_example_3.png)
 
-1. Wählen Sie im Versand die Option **[!UICONTROL Planung]** aus und danach **[!UICONTROL Versand planen (automatische Ausführung am geplanten Datum)]**. In unserem Beispiel müssen Sie die Option **[!UICONTROL Formel verwenden]** auswählen.
+1. Klicken Sie im Versand auf **[!UICONTROL Planung]** und wählen **[!UICONTROL Bereitstellung planen (automatische Ausführung bei Erreichen des geplanten Datums)]**. Wählen Sie in diesem Beispiel die **[!UICONTROL Berechnungsformel verwenden]** -Option.
 1. Legen Sie das Extraktionsdatum mit 10 Minuten fest (aktuelles Datum + 10 Minuten).
 1. Legen Sie das Kontaktdatum mit dem nächsten Tag fest (aktueller Tag + 1 Tag).
 

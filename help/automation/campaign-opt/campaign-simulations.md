@@ -7,7 +7,7 @@ exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '1341'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -39,7 +39,7 @@ Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
    ![](assets/simu_campaign_opti_01.png)
 
-1. Wählen Sie eine Simulationsvorlage aus und geben Sie einen Titel an. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Simulation zu erstellen.
+1. Geben Sie die Vorlage und den Titel der Simulation an. Klicks **[!UICONTROL Speichern]** um die Simulation zu erstellen.
 
    ![](assets/simu_campaign_opti_02.png)
 
@@ -47,7 +47,7 @@ Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
    ![](assets/simu_campaign_opti_edit.png)
 
-1. Geben Sie im Tab **[!UICONTROL Perimeter]** die für diese Simulation zu berücksichtigenden Sendungen an. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie den gewünschten Modus aus.
+1. Im **[!UICONTROL Anwendungsbereich]** die Sendungen, die Sie für diese Simulation berücksichtigen möchten. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie den zu berücksichtigenden Versandauswahlmodus an.
 
    ![](assets/simu_campaign_opti_edit_scope.png)
 
@@ -55,7 +55,7 @@ Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
    >[!NOTE]
    >
-   >Wenn Sie die Sendungen eines Plans, eines Programms oder einer Kampagne auswählen, kann Adobe Campaign automatisch die Liste der zu berücksichtigenden Sendungen bei jedem Simulationsstart aktualisieren. Kreuzen Sie dafür die Option **[!UICONTROL Versandauswahl bei jedem Simulationsstart aktualisieren]** an.
+   >Wenn Sie Sendungen über einen Plan, ein Programm oder eine Kampagne auswählen, kann Adobe Campaign automatisch die Liste der zu berücksichtigenden Sendungen bei jedem Simulationsstart aktualisieren. Überprüfen Sie dazu die **[!UICONTROL Die Auswahl der Sendungen bei jedem Simulationsstart aktualisieren]** -Option.
    >  
    >Andernfalls werden nur die zum Zeitpunkt der Simulationserstellung im Plan, Programm oder in der Kampagne vorhandenen Sendungen berücksichtigt: Später hinzugefügte Sendungen werden nicht beachtet.
 
@@ -71,7 +71,7 @@ Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   Über den Link **[!UICONTROL Dynamische Bedingung bearbeiten]** können Sie eine dynamische Bedingung hinzufügen..
+   Bei Bedarf können Sie eine dynamische Bedingung über die **[!UICONTROL Dynamische Bedingung bearbeiten..]** -Link.
 
    Klicken Sie zur Bestätigung der Konfiguration auf die Schaltfläche **[!UICONTROL Speichern]**.
 
@@ -93,7 +93,7 @@ Im Tab **[!UICONTROL Allgemein]** der Simulation können Sie ihre Ausführungspa
 
 * Die Option **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]** verschiebt die Simulation auf einen weniger ausgelasteten Zeitpunkt, entsprechend der gewählten Priorität. Da Simulationen umfangreiche Datenbankressourcen in Anspruch nehmen, sollten weniger dringende Simulationen zum Beispiel nachts ausgeführt werden.
 * Die **[!UICONTROL Priorität]** entspricht der Dringlichkeit, die der Simulation zugeteilt wird, um sie schnellstmöglich durchzuführen oder ihren Start zu verzögern.
-* Option **[!UICONTROL SQL-Abfragen im Protokoll speichern]**: SQL-Logs dienen dazu, fehlerhafte oder zu langsame Simulationen zu diagnostizieren. Die entsprechenden Logs sind nach der Simulation im Untertab **[!UICONTROL SQL-Logs]** des Tabs **[!UICONTROL Verfolgung]** verfügbar.
+* **[!UICONTROL SQL-Abfragen im Protokoll speichern]**. In SQL-Logs können Sie eine Simulation diagnostizieren, wenn sie mit Fehlern endet. Sie können Ihnen auch dabei helfen herauszufinden, warum eine Simulation zu langsam ist. Diese Nachrichten werden nach der Simulation im **[!UICONTROL SQL-Logs]** Unterregisterkarte des **[!UICONTROL Prüfung]** Registerkarte.
 
 ## Ausführen einer Simulation {#execute-a-simulation}
 
@@ -131,7 +131,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
 #### Verfolgung {#audit}
 
-Über den Tab **[!UICONTROL Verfolgung]** können Sie die Ausführung der Simulation überwachen. Insbesondere für erfahrene Benutzer ist hier der Unter-Tab **[!UICONTROL SQL-Logs]** hilfreich, auf dem die Ausführungs-Logs im SQL-Format aufgeführt werden. Damit die SQL-Logs angezeigt werden, muss vor Ausführung der Simulation im Tab **[!UICONTROL Allgemein]** die Option **[!UICONTROL SQL-Abfragen im Protokoll speichern]** aktiviert werden.
+Die **[!UICONTROL Prüfung]** -Tab zur Überwachung der Simulationsausführung. Die **[!UICONTROL SQL-Protokolle]** ist für erfahrene Benutzer nützlich. Es werden Ausführungslogs im SQL-Format aufgelistet. Diese Protokolle werden nur angezeigt, wenn die **[!UICONTROL SQL-Abfragen im Protokoll speichern]** wurde in der **[!UICONTROL Allgemein]** vor der Ausführung der Simulation.
 
 ![](assets/simu_campaign_opti_11.png)
 
@@ -145,7 +145,7 @@ Descriptive analysis is detailed in [this section](../../reporting/using/about-a
 
 ## Ergebnisse einer Simulation {#results-of-a-simulation}
 
-Die in den Tabs **[!UICONTROL Log]** und **[!UICONTROL Ergebnisse]** dargestellten Indikatoren geben einen ersten Einblick in das Ergebnis der Simulation. Im Tab **[!UICONTROL Berichte]** können Sie eine präzise Analyse der Informationen vornehmen.
+Die Indikatoren im **[!UICONTROL Protokoll]** und **[!UICONTROL Ergebnisse]** Tabs bieten einen ersten Überblick über die Simulationsergebnisse. Um eine detailliertere Ansicht der Ergebnisse zu erhalten, öffnen Sie die **[!UICONTROL Berichte]** Registerkarte.
 
 ### Berichte {#reports}
 

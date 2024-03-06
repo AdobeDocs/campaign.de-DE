@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1525'
+ht-degree: 87%
 
 ---
 
@@ -47,7 +47,7 @@ Im unten stehenden Beispiel werden Sprachen in drei Gruppen verteilt: Englisch-D
 
 ![](assets/cube-add-new-bin-2.png)
 
-Sie können eine SQL-Maske nutzen, um mehrere Werte nach einem Filter zu gruppieren. Aktivieren Sie hierzu die Option **[!UICONTROL Ja]** in der Spalte **[!UICONTROL SQL-Maske benutzen]** und geben Sie den anzuwendenden SQL-Filter in der Spalte **[!UICONTROL Werte oder Ausdruck]** an.
+Sie können eine SQL-Maske verwenden, um mehrere Werte zu einem Filter zu kombinieren. Überprüfen Sie hierzu die Option **[!UICONTROL Ja]** im **[!UICONTROL Verwenden einer SQL-Maske]** und geben Sie den anzuwendenden SQL-Filter im **[!UICONTROL Wert oder Ausdruck]** Spalte.
 
 <!--In the example below, all email domains that start with **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.), or with **ymail** (ymail.com, ymail.eu, etc.) will be grouped under the label **YAHOO!**, as well as addresses with the **rocketmail.com** domain.-->
 
@@ -76,7 +76,7 @@ Geben Sie anschließend die oberen und unteren Grenzwerte an und klicken Sie zur
 
 ### Automatisches Erzeugen von Klassen {#generate-bins-automatically}
 
-Es besteht auch die Möglichkeit, die Klassen automatisch zu erzeugen. Klicken Sie hierzu auf den Link **[!UICONTROL Klassen erzeugen...]**.
+Es ist auch möglich, Klassen automatisch zu generieren. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Klassen generieren...]** -Link.
 
 Sie können
 
@@ -102,11 +102,11 @@ Diese Auflistung ist nach folgendem Modell gestaltet:
 
 ![](assets/nmx_enum_domain.png)
 
-Um einen diese Auflistung verwendenden Bericht zu erstellen, müssen Sie zunächst einen die Dimension **[!UICONTROL E-Mail-Domain]** verwendenden Cube erstellen. Wählen Sie die Option **[!UICONTROL Klassierung aktivieren]** und dann **[!UICONTROL Klassen aus einer Auflistung ableiten (dynamisch)]**. Wählen Sie anschließend die oben dargestellte Auflistung **Domains (domain)** aus. Alle Werte, für die kein Alias definiert worden ist, werden unter dem Titel **Sonstige** gruppiert.
+Um einen Bericht mit dieser Auflistung zu erstellen, erstellen Sie einen Cube mit der **[!UICONTROL E-Mail-Domain]** Dimension. Wählen Sie die **[!UICONTROL Klassierung aktivieren]** Option dann **[!UICONTROL Dynamische Verknüpfung der Werte mit einer Auflistung]**. Wählen Sie dann die **Domänen** -Auflistung wie oben gezeigt. Alle Werte ohne angegebenen Alias werden unter der **sonstige** Beschriftung.
 
 Erstellen Sie anschließend einen auf diesem Cube basierenden Bericht, um die Werte anzuzeigen.
 
-Dabei genügt es, die Auflistung abzuändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise den Wert **Adobe** und fügen Sie auf Auflistungsniveau den Alias **adobe.com** hinzu: Der Bericht wird automatisch mit dem Wert Adobe aktualisiert.
+Sie müssen nur die Auflistung ändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise das **Adobe** und fügen Sie **adobe.com** Alias und der Bericht werden auf Auflistungsebene automatisch mit dem Adobe-Wert aktualisiert.
 
 ![](assets/nmx_add_alias.png)
 
@@ -137,7 +137,7 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
 1. Wählen Sie die Dimension sowie deren Ebene aus. Wiederholen Sie diesen Vorgang für alle zu berechnenden Dimensionen und Ebenen.
 1. Gehen Sie in den Tab **[!UICONTROL Workflow]**, um den Aggregations-Workflow zu erstellen.
 
-   * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../automation/workflow/scheduler.md).
+   * Die **[!UICONTROL Planung]** ermöglicht die Bestimmung der Aktualisierungshäufigkeit der Berechnungen. Die Planung wird im Abschnitt [diesem Abschnitt](../../automation/workflow/scheduler.md).
    * Über die Aktivität **[!UICONTROL Aggregat-Update]** wird der anzuwendende Aktualisierungsmodus ausgewählt: vollständig oder teilweise.
 
      Standardmäßig wird das Aggregat bei jeder Ausführung vollständig aktualisiert. Bei Auswahl der teilweisen Aktualisierung sind mithilfe des entsprechenden Links die Aktualisierungsbedingungen zu definieren.
@@ -156,7 +156,7 @@ Gehen Sie wie folgt vor, um eine neue Kennzahl zu definieren:
 
 1. Wählen Sie je nach gewählter Funktion den Ausdruck aus, auf den sich die Berechnung bezieht.
 
-   Über die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** können komplexe Formeln erstellt werden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../automation/workflow/query.md).
+   Die **[!UICONTROL Erweiterte Auswahl]** -Schaltfläche können Sie komplexe Formeln erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../automation/workflow/query.md).
 
 1. Der Link **[!UICONTROL Kennzahldaten filtern...]** ermöglicht es, das Berechnungsfeld auf bestimmte Daten zu beschränken.
 
@@ -238,7 +238,7 @@ Gehen Sie dazu wie folgt vor:
 
 Klicken Sie nach jeder Hinzufügung, Änderung oder Löschung von Filtern auf den Pfeil, um die Berechnung neu zu starten.
 
-Filter können auch basierend auf einer Auswahl erstellt werden. Wählen Sie hierzu die Quellzellen, -zeilen und -spalten und klicken Sie auf das Symbol **[!UICONTROL Filter hinzufügen]**.
+Filter können auch basierend auf einer Auswahl erstellt werden. Wählen Sie dazu die Quellzellen, -zeilen und -spalten aus und klicken Sie auf die Schaltfläche **[!UICONTROL Filter hinzufügen]** Symbol.
 
 Um eine Zeile, Spalte oder Zelle auszuwählen, klicken Sie diese mit der linken Maustaste an. Klicken Sie ein zweites Mal, um sie wieder abzuwählen.
 

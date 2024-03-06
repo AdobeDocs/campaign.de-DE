@@ -7,7 +7,7 @@ level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1257'
 ht-degree: 100%
 
 ---
@@ -74,7 +74,7 @@ Die **`<element>`**-Tags definieren die Namen von Entitätselementen. **`<attrib
 
 Ein Schema wird anhand seines Namens und seines Namespace identifiziert.
 
-Mit einem Namespace können Sie eine Reihe von Schemas nach Interessensgebieten gruppieren. Beispielsweise wird der Namespace **cus** für die kundenspezifische Konfiguration (**customers**) verwendet.
+Mit einem Namespace können Sie eine Reihe von Schemata nach Interessensgebieten gruppieren. Beispielsweise wird der Namespace **cus** für die kundenspezifische Konfiguration (**customers**) verwendet.
 
 >[!CAUTION]
 >

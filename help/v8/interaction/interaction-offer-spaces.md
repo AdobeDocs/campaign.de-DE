@@ -7,8 +7,8 @@ level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 100%
+source-wordcount: '889'
+ht-degree: 94%
 
 ---
 
@@ -131,9 +131,9 @@ Wenn nun ein Besucher auf den Vorschlag und somit auf die URL klickt, wird dem V
 
 >[!NOTE]
 >
->Wenn Sie in der URL einen anderen Status festlegen möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den dem gewünschten Status entsprechenden Wert. Beispiel: **[!UICONTROL Abgelehnt]** = &quot;5&quot;, **[!UICONTROL Unterbreitet]** = &quot;1&quot; usw.
+>Wenn Sie einen anderen Status in der URL angeben möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den Wert, der dem gewünschten Status entspricht. Beispiel: **[!UICONTROL Abgelehnt]** = &quot;5&quot;, **[!UICONTROL präsentiert]** = &quot;1&quot; usw.
 >
->Status und die ihnen zugehörigen Werte können aus dem Datenschema **[!UICONTROL Angebotsvorschläge (nms)]** abgerufen werden. Näheres hierzu finden Sie auf [dieser Seite](../dev/create-schema.md).
+>Status und ihre Werte können im Abschnitt **[!UICONTROL Angebotsvorschläge (nms)]** Datenschema. Weitere Informationen hierzu finden Sie auf [dieser Seite](../dev/create-schema.md).
 
 **Ausgehende Interaktionen**
 

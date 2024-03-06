@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: a08dd72a2be703e5e9cd3cdc20dbb3064b06b35d
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Erstellen Sie personalisierte und kontextuelle E-Mails, die mit dem übrigen Kun
 ![](assets/new-email-content.png)
 
 
-Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campaign erstellen, der personalisierte Daten, Links zu einer externen URL und einen Link zur Mirror-Seite enthält.
+Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campaign erstellen, der personalisierte Daten, Links zu einer externen URL und einen Link zur Mirrorseite enthält.
 
 1. **Erstellen eines Versands**
 
@@ -45,7 +45,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
    >[!NOTE]
    >
-   >Um Leistungsprobleme zu vermeiden, dürfen die in den E-Mails enthaltenen Bilder nicht größer als 100 KB sein.
+   >Um Performance-Probleme zu vermeiden, dürfen die in den E-Mails enthaltenen Bilder nicht größer als 100 KB sein.
 
 1. **Personalisieren Ihrer Nachricht**
 
@@ -69,9 +69,9 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
      ![](assets/add-a-link.png)
 
-   * Hinzufügen einer Mirror-Seite
+   * Hinzufügen einer Mirrorseite
 
-     Um Empfangenden zu ermöglichen, Ihren Versandinhalt in einem Webbrowser zu sehen, können Sie einen Link zu einer [Mirror-Seite](mirror-page.md) Ihrer Nachricht einfügen.
+     Um Empfangenden zu ermöglichen, Ihren Versandinhalt in einem Webbrowser zu sehen, können Sie einen Link zu einer [Mirrorseite](mirror-page.md) Ihrer Nachricht einfügen.
 
      Platzieren Sie den Cursor an der gewünschten Stelle, klicken Sie auf das letzte Symbol in der Symbolleiste, klicken Sie auf **[!UICONTROL Einfügen]** und wählen Sie **[!UICONTROL Mirrorseiten-Link]** aus.
 

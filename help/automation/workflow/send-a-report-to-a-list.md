@@ -6,8 +6,8 @@ feature: Workflows
 exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 100%
+source-wordcount: '733'
+ht-degree: 96%
 
 ---
 
@@ -114,7 +114,7 @@ Um den Workflow zu erstellen, gehen Sie wie folgt vor:
 
    mit den folgenden Variablen:
 
-   * **var reportName**: der interne Name des Berichts in Anführungsstrichen. Im vorliegenden Beispiel lautet der interne Name des **Tracking-Indikatoren**-Berichts &quot;deliveryFeedback&quot;.
+   * **var reportName**: Geben Sie den internen Namen des Berichts in doppelte Anführungszeichen ein. In diesem Fall ist der interne Name der **Trackingindikator** ist &quot;deliveryFeedback&quot;.
    * **Var-Pfad**: Geben Sie den Speicherpfad der Datei („tmp“), den Namen, den Sie der Datei geben möchten („deliveryFeedback“), und die Dateierweiterung („.pdf“) ein. In diesem Fall haben wir den internen Namen als Dateinamen verwendet. Die Werte müssen zwischen doppelten Anführungszeichen stehen und durch ein „+“-Zeichen getrennt werden.
 
      >[!CAUTION]

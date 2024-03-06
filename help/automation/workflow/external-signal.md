@@ -8,7 +8,7 @@ exl-id: 45cb95ec-77bf-4bab-895f-b94f6ce660fd
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ Wenn eine Aufgabe „Externes Signal“ aktiviert wird, wird sie unbegrenzt oder
 
 Weiterführende Hinweise zu SOAP-Aufrufen und der PostEvent-Funktion finden Sie in der einschlägigen Online-Literatur.
 
-Es besteht die Möglichkeit, in der Aktivität Ereignisse zu konfigurieren, die bei Abwesenheit von Signalen wirksam werden. Öffnen Sie hierzu die Aktivität und gehen Sie in den Tab **[!UICONTROL Ablauf]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um Ereignisse zu erstellen und zu konfigurieren.
+Sie können diese Aktivität konfigurieren, um Ereignisse zu definieren, wenn kein Signal empfangen wird. Bearbeiten Sie hierzu die Aktivität und klicken Sie auf die Schaltfläche **[!UICONTROL Ablauf]** Registerkarte. Klicken Sie auf **[!UICONTROL Einfügen]** -Schaltfläche, um ein Ereignis zu erstellen und zu konfigurieren.
 
 ![](assets/edit_signal.png)
 

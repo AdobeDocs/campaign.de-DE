@@ -24,7 +24,7 @@ Sie können für Ihre Sendungen aber auch andere Zielgruppen-Mappings verwenden 
 
 Adobe Campaign verfügt über die folgenden integrierten Zielgruppen-Mappings:
 
-| Name | Verwendung Verwendungszweck | Schema |
+| Name | Verwendungszweck | Schema |
 |---|---|---|
 | Empfängerinnen und Empfänger | Versand an Empfänger (integrierte Empfängertabelle) | nms:recipient |
 | Besucher | Versand an Besucher, deren Profile beispielsweise über Empfehlungen (Viral Marketing) erfasst wurden. | mns:visitor |

@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '3057'
-ht-degree: 100%
+source-wordcount: '3042'
+ht-degree: 85%
 
 ---
 
@@ -66,7 +66,7 @@ Die Art und Weise, wie die Bounce-Message-Qualifizierung in Adobe Campaign verar
 
 * **Synchrone Fehler**: Der MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück. Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht für Fehlernachrichten bei **synchronen** Sendungen verwendet.
 
-* **Asynchrone Fehler**: Die von Campaign zur Qualifizierung von fehlgeschlagenen Sendungen verwendeten Regeln werden im Knoten **[!UICONTROL Administration > Campaign Management > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** aufgelistet. Asynchrone Bounces werden vom InMail-Prozess über die Regeln für **[!UICONTROL eingehende E-Mails]** qualifiziert. Mehr dazu finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=de#bounce-mail-qualification){target="_blank"}.
+* **Asynchrone Fehler**: Die von Campaign zur Qualifizierung von fehlgeschlagenen Sendungen verwendeten Regeln werden im Knoten **[!UICONTROL Administration > Campaign Management > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** aufgelistet. Asynchrone Bounces werden vom InMail-Prozess über die Regeln für **[!UICONTROL eingehende E-Mails]** qualifiziert. Weitere Informationen hierzu finden Sie unter [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=de#bounce-mail-qualification){target="_blank"}.
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -130,7 +130,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Konto deaktiviert </td> 
    <td> Softbounce / Hardbounce </td> 
    <td> 4 </td> 
-   <td> Das mit der Adresse verknüpfte Konto ist nicht mehr aktiv. Wenn das Konto längere Zeit nicht abgefragt wird, kann es vom Internetanbieter geschlossen werden, was den Versand an diese Empfängeradresse unmöglich macht. Wenn das Konto vorübergehend wegen einer sechsmonatigen Inaktivität deaktiviert ist und wieder aktiviert werden kann, wird der Status "Mit Fehlern" zugewiesen und der Zustellversuch wird wiederholt, bis der Fehlerzähler 5 erreicht hat. Wenn aus den Fehlern hervorgeht, dass das Konto permanent deaktiviert ist, wird es sofort unter Quarantäne gestellt.<br /> </td> 
+   <td> Das mit der Adresse verknüpfte Konto ist nicht mehr aktiv. Wenn der Internet Access Provider (IAP) eine längere Inaktivität feststellt, kann er das Konto des Benutzers schließen. Sendungen an die Adresse des Benutzers sind dann nicht mehr möglich. Wenn das Konto vorübergehend wegen einer sechsmonatigen Inaktivität deaktiviert ist und weiterhin aktiviert werden kann, wird der Status Mit Fehlern zugewiesen und der Versuch für das Konto wird wiederholt, bis der Fehlerzähler 5 erreicht hat. Wenn der Fehler signalisiert, dass das Konto dauerhaft deaktiviert ist, wird es direkt in Quarantäne gesetzt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Adresse in Quarantäne </td> 
@@ -190,7 +190,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Ungültige Domain </td> 
    <td> Soft </td> 
    <td> 2 </td> 
-   <td> Die Domain der E-Mail-Adresse ist fehlerhaft oder existiert nicht mehr. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Datensatz in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> </td> 
+   <td> Die Domain der E-Mail-Adresse ist fehlerhaft oder existiert nicht mehr. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Datensatz in den Quarantänestatus versetzt und es wird kein weiterer Versuch unternommen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Postfach voll </td> 
@@ -220,7 +220,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Zurückgewiesen </td> 
    <td> Softbounce / Hardbounce </td> 
    <td> 20 </td> 
-   <td> Die Adresse wurde wegen eines Sicherheits-Feedbacks unter Quarantäne gestellt, da die Nachricht als Spam gemeldet wurde. Je nach Fehler wird der Zustellversuch wiederholt, bis der Fehlerzähler 5 erreicht hat, oder die Adresse wird sofort unter Quarantäne gestellt.<br /> </td> 
+   <td> Die Adresse wurde wegen eines Sicherheits-Feedbacks unter Quarantäne gestellt, da die Nachricht als Spam gemeldet wurde. Je nach Fehler wird der Zustellversuch wiederholt, bis der Fehlerzähler 5 erreicht hat, oder die Adresse wird direkt unter Quarantäne gestellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Größe der Zielgruppe begrenzt </td> 
@@ -238,7 +238,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Unerreichbar </td> 
    <td> Softbounce / Hardbounce </td> 
    <td> 3 </td> 
-   <td> In der Verteilungskette der Nachricht ist ein Fehler aufgetreten. Hierbei kann es sich um einen Vorfall beim SMTP-Server oder eine zeitweilig unerreichbare Domain handeln etc. Je nach Fehler wird der Zustellversuch wiederholt, bis der Fehlerzähler 5 erreicht hat, oder die Adresse wird sofort unter Quarantäne gestellt.<br /> </td> 
+   <td> In der Verteilungskette der Nachricht ist ein Fehler aufgetreten. Es kann sich um einen Vorfall beim SMTP-Server handeln, eine zeitweilig unerreichbare Domain usw. Je nach Fehler wird der Zustellversuch wiederholt, bis der Fehlerzähler 5 erreicht hat, oder die Adresse wird direkt unter Quarantäne gestellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Unbekannter Nutzer </td> 
@@ -312,7 +312,7 @@ Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
    <td> Nein<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problem mit Zertifikat (Passwort, Beschädigung etc.) und Fehler bei Testverbindung mit APNS<br /> </td> 
+   <td> Problem mit Zertifikat (Passwort, Beschädigung usw.) und Problem bei Testverbindung mit APNs<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Verschiedene Fehlernachrichten je nach Fehler<br /> </td> 
    <td> Soft<br /> </td> 
@@ -356,7 +356,7 @@ Für jede Benachrichtigung erhält Adobe Campaign die synchronen Fehler direkt v
 * Gerätequote überschritten: kein Neuversuch, Softbounce, Grund für Fehler ist **[!UICONTROL Abgelehnt]**.
 * Ungültiger oder abgemeldeter Token, unerwarteter Fehler, Problem mit Absenderkonto: kein Neuversuch, Hardbounce, Grund für Fehler ist **[!UICONTROL Abgelehnt]**.
 
-Der **[!UICONTROL mobileAppOptOutMgt]**-Workflow wird alle sechs Stunden zur Aktualisierung der **AppSubscriptionRcp**-Tabelle durchgeführt. Für jeden abgemeldeten oder nicht mehr gültigen Token wird das Feld **Deaktiviert** auf **Wahr** gesetzt und das mit dem Gerät verknüpfte Abonnement wird automatisch von künftigen Sendungen ausgeschlossen.
+Die **[!UICONTROL mobileAppOptOutMgt]** Der Workflow wird alle 6 Stunden ausgeführt, um die **AppSubscriptionRcp** Tabelle. Für die Token, die als nicht registriert oder nicht mehr gültig erklärt wurden, wird das Feld **Behinderte** auf **True** und das mit diesem Geräte-Token verknüpfte Abonnement automatisch aus künftigen Sendungen ausgeschlossen wird.
 
 Während der Versandanalyse werden alle Geräte, die von der Zielgruppe ausgeschlossen werden, automatisch zur Tabelle **excludeLogAppSubRcp** hinzugefügt.
 
@@ -368,7 +368,7 @@ Während der Versandanalyse werden alle Geräte, die von der Zielgruppe ausgesch
 >* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
 >* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
 >
->Adobe Campaign kontaktiert den Baidu-Server alle zehn Minuten, um den Status der versendeten Nachrichten abzurufen, und aktualisiert die Versandlogs. Wenn eine Nachricht als gesendet gemeldet wird, ändert sich der Status der Nachricht in den Versandlogs in **[!UICONTROL Erhalten]**. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]** gesetzt.
+>Adobe Campaign kontaktiert den Baidu-Server alle zehn Minuten, um den Status der gesendeten Nachricht abzurufen, und aktualisiert die Broadlogs. Wenn eine Nachricht als gesendet deklariert wird, wird der Status der Nachricht in den Broadlogs auf **[!UICONTROL Erhalten]**. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]**.
 
 **Für Android V2**
 
@@ -640,7 +640,7 @@ Die Besonderheiten für den SMS-Kanal sind unten aufgeführt.
 
 Bei Verwendung des SMPP-Protokolls zum Senden von SMS-Nachrichten wird die Fehlerverwaltung anders gehandhabt.
 
-Der SMPP-Connector ruft zum Filtern des Inhalts mithilfe regulärer Ausdrücke (regexes) Daten von der zurückgegebenen Empfangsbestätigung ab. Diese Daten werden dann mit den Informationen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** abgeglichen. Der Zugriff darauf erfolgt über das Menü **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Unzustellbarkeitsverwaltung]**.
+Der SMPP-Connector ruft Daten aus der zurückgegebenen SR-Meldung (Status Report) mithilfe regulärer Ausdrücke (Regexes) ab, um den Inhalt zu filtern. Diese Daten werden dann mit den Informationen im **[!UICONTROL Versandlogqualifizierung]** -Tabelle (verfügbar über **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Verwaltung von Fehlern]** Menü).
 
 Bevor ein neuer Fehlertyp qualifiziert wird, wird der Fehlergrund immer standardmäßig auf **Abgelehnt** gesetzt.
 
@@ -672,6 +672,6 @@ Standardmäßig erfolgt die Regex-Extraktion des **stat:**-Felds entsprechend de
 
   Standardmäßig erfolgt die Regex-Extraktion des **err:**-Felds entsprechend der Definition im Bereich **Anhang B** der **SMPP 3.4-Spezifikation**.
 
-* Alles, was hinter dem senkrechten Strich (|) steht, wird nur in der Spalte **[!UICONTROL Erster Text]** der Tabelle **[!UICONTROL Versandlogqualifizierung]** dargestellt. Nach der Bereinigung der Nachricht wird dieser Inhalt durch **#MESSAGE#** ersetzt. Dadurch wird vermieden, dass für ähnliche Fehler mehrere Einträge vorgenommen werden. Das Verfahren ist dasselbe wie für E-Mails.
+* Alles, was hinter dem senkrechten Strich (|) steht, wird nur im **[!UICONTROL Erster Text]** Spalte **[!UICONTROL Versandlogqualifizierung]** Tabelle. Dieser Inhalt wird immer durch **#MESSAGE#** nachdem die Nachricht normalisiert wurde. Dadurch wird verhindert, dass mehrere Einträge für ähnliche Fehler vorliegen, und der Prozess ist mit dem für E-Mails identisch.
 
 Der Connector für erweitertes allgemeines SMPP wendet eine Heuristik an, um sinnvolle Standardwerte zu finden: Ein mit **DELIV** beginnender Status wird als erfolgreich bewertet, da dies den üblicherweise von Providern verwendeten Statuswerten **DELIVRD** oder **DELIVERED** entspricht. Alle anderen Statuswerte verursachen einen Hardbounce.

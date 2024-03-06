@@ -6,9 +6,9 @@ role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
-workflow-type: ht
-source-wordcount: '379'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 
 ## Control Panel – häufig gestellte Fragen {#ac-control-faq}
 
-[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de#control-panel){target="_blank"}, um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"}, um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ## SFTP-Verwaltung {#ac-control-sftp}
 
@@ -46,9 +46,9 @@ Erfahren Sie, wie Sie Ihre Subdomains und deren Zertifikate überwachen.
 * [Einrichten einer neuen Subdomain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de){target="_blank"}
 * [Überwachen der SSL-Zertifikate Ihrer Subdomains](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=de){target="_blank"}
 
-## Überwachen der Leistung
+## Überwachen der Performance
 
-Das Control Panel bietet verschiedene Funktionen, mit denen Sie Ihre Instanzen überwachen und eine optimale Leistung sicherstellen können. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de).{target="_blank"}
+Das Control Panel bietet verschiedene Funktionen, mit denen Sie Ihre Instanzen überwachen und eine optimale Performance sicherstellen können. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de).{target="_blank"}
 
 
 ## Instanzeneinstellungen

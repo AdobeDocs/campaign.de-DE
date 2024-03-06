@@ -8,7 +8,7 @@ exl-id: 83947f69-9f8e-4829-9a64-fd734d0cde37
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 100%
+ht-degree: 76%
 
 ---
 
@@ -52,4 +52,4 @@ Die Statistiken gliedern sich nach drei Merkmalen:
 
   ![](assets/offer_report_perdeliveries.png)
 
-Im Berichtskopf können Sie die angezeigten Daten mithilfe bestimmter Kriterien einschränken. Wählen Sie z. B. einen Zeitraum aus und klicken Sie abschließend auf **[!UICONTROL Aktualisieren]**, um die Filter auf den Bericht anzuwenden.
+Die Daten können nach den verschiedenen Kriterien im oberen Bereich des Berichts gefiltert werden. Klicken Sie nach Auswahl der gewünschten Kriterien auf die **[!UICONTROL Aktualisieren]** -Link, um sie auf den Bericht anzuwenden.

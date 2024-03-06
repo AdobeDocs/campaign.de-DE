@@ -8,7 +8,7 @@ exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    ![](assets/offer_cat_create_002.png)
 
-1. Benennen Sie die Kategorie. Der Titel kann später auch über die Registerkarte **[!UICONTROL Allgemein]** der Kategorie geändert werden.
+1. Benennen Sie die Kategorie neu. Sie können den Titel später mithilfe der **[!UICONTROL Allgemein]** Registerkarte.
 
    ![](assets/offer_cat_create_003.png)
 

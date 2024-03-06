@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
 source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Sie können den Nachrichteninhalt wie folgt personalisieren:
 
 * Einfügen von vordefinierten **Inhaltsbausteinen**
 
-  Campaign verfügt über eine Reihe von Gestaltungsbausteinen, die ein bestimmtes Rendering enthalten, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußbotschaft oder einen Link zur Mirror-Seite der Nachricht hinzufügen. Inhaltsbausteine sind über einen eigenen Eintrag im Personalisierungseditor verfügbar. [Weitere Informationen](personalization-blocks.md).
+  Campaign verfügt über eine Reihe von Gestaltungsbausteinen, die ein bestimmtes Rendering enthalten, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußbotschaft oder einen Link zur Mirrorseite der Nachricht hinzufügen. Inhaltsbausteine sind über einen eigenen Eintrag im Personalisierungseditor verfügbar. [Weitere Informationen](personalization-blocks.md).
 
 * Erstellen **bedingter Inhalte**
 

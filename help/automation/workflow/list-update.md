@@ -7,8 +7,8 @@ role: User
 exl-id: abb7f777-0b4a-4bf2-bcb6-32264f340a58
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '537'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ Kreuzen Sie die Option **[!UICONTROL Liste mit eigener Tabelle erstellen oder ve
 
 In diesem Fall müssen die entsprechenden Tabellen zuvor in der Adobe-Campaign-Instanz konfiguriert werden.
 
-Im Allgemeinen stellt die Speicherung einer Zielgruppe in einer Liste das Ende eines Workflows dar. Standardmäßig bietet die **[!UICONTROL Listen-Update]**-Aktivität daher keine ausgehende Transition. Dies kann durch Ankreuzen der Option **[!UICONTROL Ausgehende Transition erzeugen]** umgangen werden.
+Im Allgemeinen bildet das Speichern einer Zielgruppe in einer Liste das Ende eines Workflows. Standardmäßig wird die Variable **[!UICONTROL Listen-Update]** -Aktivität keine ausgehende Transition aufweist. Überprüfen Sie die **[!UICONTROL Ausgehende Transition erzeugen]** -Option, um eine hinzuzufügen.
 
 ![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie vom Explorer aus eine Liste von Empfängern erstellen](#video)
 

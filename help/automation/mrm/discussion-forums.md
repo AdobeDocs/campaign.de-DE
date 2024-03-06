@@ -8,7 +8,7 @@ exl-id: c2336507-beea-4ddb-aa8c-1ec591eb5683
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -62,7 +62,7 @@ Um eine Nachricht zu beantworten, klicken Sie auf den E-Mail-Text und melden Sie
 
 * Wenn Sie sich von einem Forum abmelden möchten, klicken Sie auf die Schaltfläche **[!UICONTROL Abmelden]** in dem blauen Band.
 
-* In Ihrem persönlichen Dashboard werden die von Ihnen abonnierten Foren aufgelistet. Klicken Sie auf den Link **[!UICONTROL Forum-Abonnements]**, um die Liste anzuzeigen, und anschließend auf das Forum, auf das Sie zugreifen möchten.
+* In Ihrem persönlichen Dashboard werden die Foren aufgelistet, die Sie abonniert haben. Klicken Sie auf **[!UICONTROL Teilnahme an Diskussionsforen]** -Link, um die Liste anzuzeigen, und klicken Sie dann auf das Element, das Sie für den Zugriff auf das Forum interessiert.
 
   ![](assets/forum-subscribed.png)
 
@@ -78,4 +78,4 @@ Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, 
    * Gehen Sie von der Adobe Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
    * Gehen Sie im Campaign-Explorer zu **[!UICONTROL Administration > Produktion > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
 
-  Im Fenster **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]** befinden sich die Versand-Logs auf der Registerkarte **[!UICONTROL Bearbeiten > Versand]**. Überprüfen Sie ebenfalls die Registerkarten **[!UICONTROL Tracking > Protokoll]** und **[!UICONTROL Ausschlussgründe]**.
+  Im **[!UICONTROL Benachrichtigungen zu Diskussionsforen]** die Versandlogs im **[!UICONTROL Bearbeiten > Versand]** Registerkarte. Sie können auch die **[!UICONTROL Tracking > Protokoll]** und **[!UICONTROL Ausschlussgründe]** Registerkarten.

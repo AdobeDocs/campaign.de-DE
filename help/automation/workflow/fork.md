@@ -7,7 +7,7 @@ role: User
 exl-id: 7b94776c-2478-4e12-82a6-c94be12e7e22
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '366'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Sie können die Aktivität **[!UICONTROL Verzweigung]** verwenden, um mehrere au
 
 >[!IMPORTANT]
 >
->Die ausgehenden Transitionen, die Sie nach einer Aktivität **[!UICONTROL Verzweigung]** hinzufügen, werden nicht gleichzeitig ausgeführt. Dieses Verhalten kann sich auf die Workflow-Leistung auswirken. Verwenden Sie die Aktivität **[!UICONTROL Verzweigung]**, wenn Sie mehrere Aktivitäten unabhängig voneinander ausführen müssen. Optional können Sie die ausgehenden Aktivitäten vor dem folgenden Teil des Workflows verbinden.
+>Die ausgehenden Transitionen, die Sie nach einer Aktivität **[!UICONTROL Verzweigung]** hinzufügen, werden nicht gleichzeitig ausgeführt. Dieses Verhalten kann sich auf die Workflow-Performance auswirken. Verwenden Sie die Aktivität **[!UICONTROL Verzweigung]**, wenn Sie mehrere Aktivitäten unabhängig voneinander ausführen müssen. Optional können Sie die ausgehenden Aktivitäten vor dem folgenden Teil des Workflows verbinden.
 
 Gehen Sie wie folgt vor, um eine Aktivität **[!UICONTROL Verzweigung]** und die zugehörigen Aktivitäten zu konfigurieren:
 

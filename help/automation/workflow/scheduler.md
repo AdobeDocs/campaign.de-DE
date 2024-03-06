@@ -7,8 +7,8 @@ role: User
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 100%
+source-wordcount: '339'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Eine **[!UICONTROL Planung]** entspricht einem programmierten Start, daher sind 
 
 ## Best Practices {#best-practices}
 
-* Es wird empfohlen, Workflows nicht öfter als alle 15 Minuten auszuführen, da die Gesamtleistung des Systems beeinträchtigt werden kann und Blöcke in der Datenbank entstehen können.
+* Es wird empfohlen, Workflows nicht öfter als alle 15 Minuten auszuführen, da die Gesamt-Performance des Systems beeinträchtigt werden kann und Blöcke in der Datenbank entstehen können.
 
 * Verwenden Sie in einem Workflow nie mehr als eine **[!UICONTROL Planungs]**-Aktivität pro Verzweigung. Siehe [Verwenden von Aktivitäten](workflow-best-practices.md#using-activities).
 
@@ -34,7 +34,7 @@ Eine **[!UICONTROL Planung]** entspricht einem programmierten Start, daher sind 
 
 ## Konfigurieren der Planungsaktivität {#configuring-scheduler-activity}
 
-In der Planung wird die einmalige oder periodische Aktivierung der ausgehenden Transition geplant. Öffnen Sie hierzu die Aktivität und klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]**.
+Die Planung definiert die Aktivierungsplanung der Transition. Doppelklicken Sie zur Konfiguration auf das grafische Objekt und klicken Sie auf **[!UICONTROL Ändern...]**
 
 ![](assets/s_user_segmentation_scheduler.png)
 

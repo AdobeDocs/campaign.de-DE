@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 100%
+ht-degree: 59%
 
 ---
 
@@ -28,7 +28,7 @@ Der folgende Workflow wird mit dem Modul **Dezentrales Marketing** installiert. 
   <tr> 
    <td> <span class="uicontrol">Bearbeitungsvorgänge des dezentralen Marketings</span> <br /> </td> 
    <td> <span class="uicontrol">centralLocalMgt</span> <br /> </td> 
-   <td> Führt die Vorgänge im Zusammenhang mit dem Distributed-Marketing-Modul aus. Erstellt lokale Kampagnen und verwaltet Benachrichtigungen in Bezug auf Bestellungen und der Verfügbarkeit von Kampagnenkits.<br /> </td> 
+   <td> Dieser Workflow startet die Verarbeitung im Zusammenhang mit der Verwendung des dezentralen Marketing-Moduls. Es startet die Erstellung lokaler Kampagnen und verwaltet Benachrichtigungen im Zusammenhang mit Bestellungen und der Verfügbarkeit von Kampagnenkits.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

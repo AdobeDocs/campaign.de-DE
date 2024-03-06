@@ -8,7 +8,7 @@ exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 79%
+ht-degree: 92%
 
 ---
 
@@ -41,13 +41,13 @@ Weitere Informationen zur Erstellung einer Zielgruppe in einem Kampagnen-Workflo
 
 ## Aktive Profile {#active-profiles}
 
-Ein aktives Profil ist ein Profil, mit dem der Kunde in den letzten 12 Monaten über einen beliebigen Kanal kommuniziert hat. Lizenzmetriken basieren auf aktiven Profilen. Weitere Informationen finden Sie unter [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Ein aktives Profil ist ein Profil, mit dem die Kundin oder der Kunde in den letzten 12 Monaten über einen beliebigen Kanal versucht hat, zu kommunizieren. Lizenzmetriken basieren auf aktiven Profilen. Weitere Informationen finden Sie in der [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Sie können die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Campaign Control Panel überwachen. Weitere Informationen hierzu finden Sie im Abschnitt [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de){target="_blank"}.
+Sie können die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Control Panel von Campaign überwachen. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de){target="_blank"}.
 
 >[!CAUTION]
 >
->* Ein Profil, das für mehrere Sendungen ausgewählt wurde, wird nur einmal gezählt.
+>* Ein Profil, das durch mehrere Sendungen angesprochen wurde, wird nur einmal gezählt.
 >
 >* Profile, die im Rahmen von Social Marketing auf X (Twitter) angesprochen werden, werden nicht als aktive Profile berücksichtigt.
 

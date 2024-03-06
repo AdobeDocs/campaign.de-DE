@@ -9,7 +9,7 @@ exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
    >
    >Der Codierer des SQL-Scripts ist dafür verantwortlich, dass das SQL-Script funktioniert und seine Referenzen (Feldnamen etc.) dem Outbound-Schema entsprechen.
 
-   Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die Option **[!UICONTROL Der SQL-Code ist in einer in der Datenbank gespeicherten Entität enthalten]** aus. SQL-Scripts müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** erstellt und gespeichert werden.
+   Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die **[!UICONTROL Das SQL-Skript ist in einer in der Datenbank gespeicherten Entität enthalten]** -Option. SQL-Skripte müssen im **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** Menü.
 
    Andernfalls können Sie Ihr SQL-Script auch in den dafür vorgesehenen Bereich kopieren.
 

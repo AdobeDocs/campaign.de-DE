@@ -8,7 +8,7 @@ exl-id: cfa1f45c-e1ac-4055-996c-6e8d041889bb
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 100%
+ht-degree: 65%
 
 ---
 
@@ -25,11 +25,11 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_recipients_1.png)
 
-1. Definieren Sie die folgende Filterbedingung für die Empfänger im Versandlog. Wählen Sie in der Spalte **Ausdruck** die Option **Versandlog eines Empfängers (Broadlog)** und in der Spalte **Operator** die Option **wie** aus.
+1. Definieren Sie die folgende Filterbedingung für die im Versandlog vorhandenen Empfänger. Auswählen **Versandlog eines Empfängers (broadlog)** im **Ausdruck** Spalte, wählen **vorhanden sind, z. B.** im **Operator** Spalte.
 
    ![](assets/query_recipients_2.png)
 
-1. Definieren Sie die folgende Filterbedingung für Ihren Versand. Wählen Sie in der Ausdrucksspalte die Option **[!UICONTROL Interner Name]** und in der Operator-Spalte die Option **[!UICONTROL gleich]**.
+1. Definieren Sie die folgende Filterbedingung für Ihren Versand. Auswählen **[!UICONTROL Interner Name]** in der Spalte Ausdruck und **[!UICONTROL gleich]** in der Spalte Operator .
 1. Fügen Sie in der Wertspalte den internen Namen des Versands ein.
 
    ![](assets/query_recipients_3.png)
