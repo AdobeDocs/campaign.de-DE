@@ -5,10 +5,10 @@ feature: Salesforce Integration, Microsoft CRM Integration
 role: Admin
 level: Beginner
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 98%
+source-wordcount: '1402'
+ht-degree: 96%
 
 ---
 
@@ -87,7 +87,7 @@ Das Datum der letzten Synchronisation wird in einer im Konfigurationsfenster ang
 >
 >Dieser Hinweis gilt nur für die allgemeine **[!UICONTROL CRM-Connector]**-Aktivität. Für andere CRM-Aktivitäten läuft der Prozess automatisch ab.
 >
->Diese Option muss manuell unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** erstellt und ausgefüllt werden. Es muss sich um eine Textoption handeln, deren Wert dem folgenden Format entspricht: **jjjj/MM/tt hh:mm:ss**.
+>Diese Option muss manuell unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** erstellt und ausgefüllt werden. Es muss sich um eine Textoption handeln, deren Wert dem folgenden Format entspricht: **`yyyy/MM/dd hh:mm:ss`**.
 > 
 >Diese Option muss bei jedem weiteren Import manuell aktualisiert werden.
 
@@ -106,7 +106,7 @@ Die Aktivierung der Option **[!UICONTROL Automatischer Index]** erzeugt drei Var
 
   >[!NOTE]
   >
-  >Das Datum wird im Format **jjjj/MM/tt hh:mm:ss** ausgedrückt.
+  >Diese Daten werden im folgenden Format angezeigt: **`yyyy/MM/dd hh:mm:ss`**.
 
 ### Daten filtern {#filtering-data}
 

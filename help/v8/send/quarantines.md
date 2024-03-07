@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User, Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 99%
+source-wordcount: '1221'
+ht-degree: 98%
 
 ---
 
@@ -120,8 +120,8 @@ Nachfolgend befinden sich die empfohlenen Richtlinien für diese Abfrage:
 
 * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
 * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
-* **Aktualisierungsstatus (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
-* **Aktualisierungsstatus (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
+* **Status aktualisieren (@lastModified)** auf oder nach `MM/DD/YYYY HH:MM:SS AM`
+* **Status aktualisieren (@lastModified)** auf oder vor `MM/DD/YYYY HH:MM:SS PM`
 
 Sobald die Liste der betroffenen Empfängerinnen und Empfänger vorliegt, muss die Aktivität **[!UICONTROL Daten-Update]** hinzugefügt werden, um ihren Status auf **[!UICONTROL Gültig]** zu setzen, damit sie durch den **[!UICONTROL Datenbankbereinigungs]**-Workflow aus der Quarantäneliste entfernt werden. Sie können sie auch einfach aus der Quarantänetabelle löschen.
 

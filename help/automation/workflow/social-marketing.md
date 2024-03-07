@@ -3,7 +3,7 @@ product: campaign
 title: Social Marketing
 description: Erfahren Sie mehr über die technische Workflows für Social Marketing.
 feature: Workflows
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 100%
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!AVAILABILITY]
 >
->:warning: Diese Funktion ist nur in Campaign Classic v7 verfügbar.
+>`:warning:` Diese Funktion ist nur in Campaign Classic v7 verfügbar.
 
 Die folgenden Workflows werden standardmäßig mit dem Modul **Social-Media-Marketing** installiert.
 
