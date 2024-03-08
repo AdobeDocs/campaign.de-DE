@@ -1,18 +1,18 @@
 ---
-title: Zielgruppen und Profilattribute
+title: Zielgruppen und Profilattribute mit Adobe Experience Platform freigeben und synchronisieren
 description: Erfahren Sie, wie Sie Adobe Experience Platform-Zielgruppen und Profilattribute mit Campaign synchronisieren.
 feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: 6ebbdf2ab57577594a4f964e2cfcba46fcb7b4ca
+source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 100%
+source-wordcount: '557'
+ht-degree: 94%
 
 ---
 
-# Arbeiten mit Campaign und Adobe Experience Platform
+# Zielgruppen mit Adobe Experience Platform teilen und synchronisieren {#gs-ac-aep}
 
 Die Ziel- und Quell-Connectoren für Adobe Campaign Managed Cloud Service ermöglichen eine nahtlose Integration zwischen Adobe Campaign und Adobe Experience Platform. Diese Integration ermöglicht Ihnen Folgendes:
 

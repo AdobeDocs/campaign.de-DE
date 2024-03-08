@@ -1,20 +1,20 @@
 ---
-title: Landingpages und Profilattribute von Campaign
+title: Aktualisieren von Adobe Experience Platform-Profilen über Adobe Campaign-Landingpages
 description: Erfahren Sie, wie Sie Adobe Campaign-Landingpages und Adobe Experience Platform-Profilattribute synchronisieren.
 feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: a17c4325917ef1466bbb2c397aea55ebcf7fbcb5
+source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 100%
+source-wordcount: '1063'
+ht-degree: 92%
 
 ---
 
-# Aktualisieren von Adobe Experience Platform-Profilen über Adobe Campaign-Landingpages
+# Adobe Experience Platform-Profile über Adobe Campaign-Landingpages aktualisieren {#ac-aep-lp}
 
-Durch die Integration von Adobe Campaign mit Adobe Experience Platform können Sie Daten nahtlos zwischen Ihren Adobe Campaign-Landingpages und Adobe Experience Platform synchronisieren. Diese Integration ermöglicht Ihnen Folgendes:
+Durch die Integration von Adobe Campaign mit Adobe Experience Platform können Sie Profildaten nahtlos zwischen Ihren Adobe Campaign-Landingpages und Adobe Experience Platform synchronisieren. Diese Integration ermöglicht Ihnen Folgendes:
 
 * Abrufen von Adobe Experience Platform-Profilattributen zur Anzeige aktualisierter Informationen auf Adobe Campaign-Landingpages,
 * Senden aktualisierter Profilattribute an Adobe Experience Platform, um die entsprechenden Attribute basierend auf den in den Landingpages ausgefüllten und gesendeten Elementen zu aktualisieren.
@@ -40,8 +40,8 @@ Gehen Sie dazu wie folgt vor:
 1. Erstellen Sie eine neue API-Verbindung mit dem Adobe Experience Platform-API-Produkt. Ausführliche Anweisungen zum Abrufen eines OAuth 2.0-Zugriffstokens finden Sie in der [Dokumentation zur Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/Tools/OAuthPlayground/).
 1. Nachdem die Verbindung erstellt wurde, navigieren Sie zum Menü **[!UICONTROL OAuth Server-zu-Server]** und kopieren Sie die folgenden Details, die für die Authentifizierung in Campaign erforderlich sind:
 
-   * CLIENT-ID
-   * CLIENT-GEHEIMNIS
+   * `CLIENT ID`
+   * `CLIENT SECRET`
    * ORGANISATIONS-ID
 
    ![](assets/ac-lp-oauth.png){width="70%"}
@@ -102,7 +102,7 @@ Um diese Optionen bei Ausführung des Landingpage-Workflows automatisch zu konfi
 
 Bei Ausführung des Workflows werden die Optionen automatisch in der Campaign-Konsole mit den angegebenen Werten erstellt.
 
-    ```
+    &quot;javascript
     loadLibrary(&quot;xtk:shared/nl.js&quot;);
     loadLibrary(&quot;xtk:shared/xtk.js&quot;);
     loadLibrary(&quot;xtk:shared/json2.js&quot;);
@@ -115,7 +115,7 @@ Bei Ausführung des Workflows werden die Optionen automatisch in der Campaign-Ko
     setOption(&quot;IMS_ORG_ID&quot;, cryptString(&#39;ORGANIZATION ID&#39;));
     setOption(&quot;IMS_CLIENT_API_KEY&quot;, cryptString(&#39;CLIENT ID&#39;));
     }
-    ```
+    &quot;
 
 >[!ENDTABS]
 
@@ -138,7 +138,7 @@ Um die Datensynchronisation zwischen Landingpages und Adobe Experience Platform 
 
    Dieser Code prüft, ob das Profil in Adobe Experience Platform vorhanden ist, bevor die Landingpage geladen wird. Er ruft die Profilattribute ab und zeigt sie in den entsprechenden Feldern der Landingpage an.
 
-   ```
+   ```javascript
    // API implementation to read profile from AEP
    function getProfileInfo(email)
    {
@@ -161,7 +161,7 @@ Um die Datensynchronisation zwischen Landingpages und Adobe Experience Platform 
 
    Dieser Code aktualisiert die Profilattribute in Adobe Experience Platform mit den auf der Landingpage übermittelten Werten.
 
-   ```
+   ```javascript
    // API implementation to update profile in AEP
    loadLibrary("xtk:shared/nl.js");
    loadLibrary("xtk:shared/xtk.js");
@@ -215,7 +215,7 @@ Mit den zu Adobe Campaign hinzugefügten JavaScript-Codes können Sie diese mit 
 
 +++ Skript 1: Laden von Profilattributen von Experience Platform
 
-  ```
+  ```javascript
   // Script code to read profile from AEP.
   
   logInfo("Loading profile from AEP");
@@ -255,7 +255,7 @@ Mit den zu Adobe Campaign hinzugefügten JavaScript-Codes können Sie diese mit 
 
 +++ Skript 2: Aktualisieren der Profilattribute von Experience Platform
 
-  ```
+  ```javascript
   // Script code to update profile in AEP and ACC.
   
   logInfo("Executing script to update AEP profile.");
