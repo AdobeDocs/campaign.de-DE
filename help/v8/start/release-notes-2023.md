@@ -4,7 +4,8 @@ description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 20
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
+exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
+source-git-commit: 3a63539bc6bb20fa79bdac76dd60efe7b232458b
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Versionshinweise 2023 {#2023-rn}
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen 2022** aufgelistet.
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen 2023** aufgelistet.
 
 ## Version 8.5.2 {#release-8-5-2}
 
@@ -151,5 +152,3 @@ _27. Januar 2023_
 * Fehlerkorrektur: Die Verwaltung von Tracking-URLs wurde in Workflows mit mehreren Sendungen verbessert, um die Performance zu verbessern. (NEO-50894) <!--OKKKK-->
 * Fehlerkorrektur: Es wurde ein Problem behoben, das zum Scheitern der Replikation von Schemata führen konnte, die Xtkfolder verwenden. (NEO-46787) <!--OKKKK-->
 * Fehlerkorrektur: Es wurde ein Problem behoben, dass dazu führen konnte, dass die benutzerdefinierte Spalte &quot;lastModified&quot; in der NmsSubscription-Tabelle gelöscht wurde. (NEO-48402)
-
-
