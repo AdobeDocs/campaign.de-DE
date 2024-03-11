@@ -4,8 +4,9 @@ title: Technote – Adobe Campaign-System-Upgrades
 description: Adobe Campaign-System-Upgrade
 hide: true
 hidefromtoc: true
-source-git-commit: c362e6ff932f5017530434c4b458070ec1a97abc
-workflow-type: tm+mt
+exl-id: cc64cce1-2473-4136-aadc-8b13e89ef7f9
+source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
+workflow-type: ht
 source-wordcount: '313'
 ht-degree: 100%
 
