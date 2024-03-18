@@ -8,7 +8,7 @@ breadcrumb-title: Dokumentation zu Campaign v8
 source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -139,7 +139,7 @@ ht-degree: 96%
 + Integrationen {#connect}
    + [Campaign mit anderen Lösungen verbinden](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
-      + [Zielgruppen und Profilattribute freigeben und synchronisieren](connect/ac-aep.md)
+      + [Freigeben und Synchronisieren von Zielgruppen und Profilattributen](connect/ac-aep.md)
       + [Aktualisieren von AEP-Profilen über Campaign-Landingpages](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
@@ -190,8 +190,8 @@ ht-degree: 96%
       + [Filtern von Schemata](dev/filter-schema.md)
       + [Schemastruktur](dev/schema-structure.md)
       + [Datenbank-Mapping](dev/database-mapping.md)
-      + [Schlüsselverwaltung](dev/database-keys.md)
-      + [Linkverwaltung](dev/database-links.md)
+      + [Schlüssel-Management](dev/database-keys.md)
+      + [Link-Management](dev/database-links.md)
       + [Einschränken der Anzeige von personenbezogenen Daten](dev/restrict-pi-view.md)
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
