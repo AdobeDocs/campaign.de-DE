@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a494ac834b1febcafe04f4bb05eb74834df7b024
+source-git-commit: a280e560a6e84f5afa214daaded9ac5331018d7c
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 56%
+source-wordcount: '1413'
+ht-degree: 55%
 
 ---
 
@@ -136,7 +136,7 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 ![](assets/filter-services-ios.png)
 
 
-* Wenn einer Ihrer aktiven Push-Benachrichtigungsdienste die **Zertifikatbasierte Authentifizierung** -Modus, sollten Ihre aktuellen Implementierungen überprüft und in eine **Token-basierte Authentifizierung** wie unten beschrieben.
+* Wenn einer Ihrer aktiven Push-Benachrichtigungsdienste die **Zertifikatbasierte Authentifizierung** -Modus (.p12), sollten Ihre aktuellen Implementierungen überprüft und in eine **Token-basierte Authentifizierung** mode (.p8) wie unten beschrieben.
 
 * Wenn Ihr Setup ausschließlich die Funktion **Token-basierte Authentifizierung** -Modus für iOS-Push-Benachrichtigungen verwenden, ist Ihre Implementierung bereits auf dem neuesten Stand und Sie müssen keine weiteren Maßnahmen ergreifen.
 
@@ -157,9 +157,9 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 Gehen Sie wie folgt vor, um Ihre mobilen iOS-Anwendungen in den Token-basierten Authentifizierungsmodus zu versetzen:
 
 1. Navigieren Sie zu Ihrer Liste von **Diensten und Abonnements**.
-1. Auflisten aller Mobile Apps mit **Zertifikatbasierte Authentifizierung** -Modus.
+1. Auflisten aller Mobile Apps mit **Zertifikatbasierte Authentifizierung** mode (.p12).
 1. Bearbeiten Sie jede dieser Mobile Apps und navigieren Sie zum **Zertifikat/privater Schlüssel** Registerkarte.
-1. Aus dem **Authentifizierungsmodus** Dropdown-Liste auswählen **Token-basierte Authentifizierung**.
+1. Aus dem **Authentifizierungsmodus** Dropdown-Liste auswählen **Token-basierte Authentifizierung** mode (.p8).
 1. Füllen Sie die APNs-Verbindungseinstellungen aus. **[!UICONTROL Schlüssel-ID]**, **[!UICONTROL Team-ID]** und **[!UICONTROL Bundle-ID]** Wählen Sie dann Ihr p8-Zertifikat aus, indem Sie auf **[!UICONTROL Geben Sie den privaten Schlüssel ein...]**.
 
    ![](assets/token-based-certif.png)
