@@ -8,24 +8,30 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
+source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 100%
+source-wordcount: '1409'
+ht-degree: 64%
 
 ---
 
 # Künftige Änderungen am Push-Benachrichtigungskanal {#push-upgrade}
 
-Sie können Campaign verwenden, um Push-Benachrichtigungen an Android-Geräte zu senden. Dazu benötigt Campaign bestimmte Abonnementdienste. Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen.
+Sie können Campaign verwenden, um Push-Benachrichtigungen auf iOS- und Android-Geräten zu senden. Dazu nutzt Campaign Mobile-App-Abonnementdienste.
 
-## Was hat sich geändert? {#fcm-changes}
+Einige wichtige Änderungen am Android Firebase Cloud Messaging (FCM)-Dienst werden 2024 veröffentlicht und können sich auf Ihre Adobe Campaign-Implementierung auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen.
+
+Darüber hinaus empfiehlt Adobe dringend, zur Token-basierten Verbindung zu APNs zu wechseln, anstatt zu einer bestimmten, sichereren und skalierbaren Verbindung zu wechseln.
+
+## Google Android Firebase Cloud Messaging (FCM)-Dienst {#fcm-push-upgrade}
+
+### Was hat sich geändert? {#fcm-changes}
 
 Im Rahmen der kontinuierlichen Bemühungen von Google, seine Dienste zu verbessern, werden die veralteten FCM-APIs am **20. Juni 2024** eingestellt. Weitere Informationen zum HTTP-Protokoll von Firebase Cloud Messaging finden Sie in der [Google Firebase-Dokumentation](https://firebase.google.com/docs/cloud-messaging/http-server-ref){target="_blank"}.
 
 Adobe Campaign Classic v7 und Adobe Campaign v8 unterstützen bereits die neuesten APIs zum Senden von Push-Benachrichtigungen. Einige alte Implementierungen sind jedoch weiterhin auf die alten APIs angewiesen. Diese Implementierungen müssen aktualisiert werden.
 
-## Sind Sie betroffen? {#fcm-impact}
+### Sind Sie betroffen? {#fcm-impact}
 
 Wenn Ihre aktuelle Implementierung Anmeldedienste unterstützt, die über die veralteten APIs eine Verbindung zu FCM herstellen, sind Sie betroffen. Die Migration zu den neuesten APIs ist obligatorisch, um Dienstunterbrechungen zu vermeiden. In diesem Fall werden Adobe-Teams Kontakt mit Ihnen aufnehmen.
 
@@ -38,9 +44,9 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 
 * Wenn Ihr Setup ausschließlich die **HTTP-v1**-API für Android-Push-Benachrichtigungen verwendet, sind Sie bereits konform und es sind keine weiteren Maßnahmen Ihrerseits erforderlich.
 
-## Wie wird die Migration durchgeführt? {#fcm-migration-procedure}
+### Wie wird die Migration durchgeführt? {#fcm-migration-procedure}
 
-### Voraussetzungen {#fcm-migration-prerequisites}
+#### Voraussetzungen {#fcm-migration-prerequisites}
 
 * Für Campaign Classic v7 wurde die Unterstützung von HTTP v1 in Version 20.3.1 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, besteht eine Voraussetzung für die Migration auf HTTP v1 darin, Ihre Umgebung auf den [neueste Campaign Classic-Build](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"} zu aktualisieren. Bei Campaign v8 wird HTTP v1 von allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
 
@@ -50,7 +56,7 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 
 * On-Premise-Benutzende von Campaign Classic v7 wie Sie müssen sowohl die Marketing- als auch die Echtzeit-Ausführungs-Server aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
 
-### Migrationsverfahren {#fcm-migration-steps}
+#### Migrationsverfahren {#fcm-migration-steps}
 
 Gehen Sie wie folgt vor, um Ihre Umgebung auf HTTP v1 zu migrieren:
 
@@ -101,3 +107,65 @@ Sie haben folgende Möglichkeiten:
 * Setzen Sie die **[!UICONTROL Sichtbarkeitsstufe]** Ihrer Benachrichtigung auf öffentlich, privat oder geheim.
 
 Weitere Informationen zu den **[!UICONTROL zusätzlichen HTTP v1-Optionen]** und dazu, wie diese Felder auszufüllen sind, finden Sie in der [FCM-Dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
+
+
+
+
+## Apple iOS Push Notification Service (APNs) {#apns-push-upgrade}
+
+### Was hat sich geändert? {#ios-changes}
+
+Wie von Apple empfohlen, sollten Sie Ihre Kommunikation mit dem Apple Push Notification Service (APNs) mithilfe von stateless-Authentifizierungstoken sichern.
+
+Token-basierte Authentifizierung bietet eine stateless-Möglichkeit, mit APNs zu kommunizieren. Staatenlose Kommunikation ist schneller als zertifikatbasierte Kommunikation, da es keine APNs erfordert, das Zertifikat oder andere Informationen zu Ihrem Provider-Server nachzuschlagen. Die Verwendung der Token-basierten Authentifizierung bietet noch weitere Vorteile:
+
+* Sie können dasselbe Token von mehreren Anbieterservern verwenden.
+
+* Mit einem Token können Sie Benachrichtigungen für alle Apps Ihres Unternehmens verteilen.
+
+Erfahren Sie mehr über Token-basierte Verbindungen zu APNS in [Dokumentation für Apple-Entwickler](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
+
+Adobe Campaign Classic v7 und Adobe Campaign v8 unterstützen sowohl Token-basierte als auch zertifikatbasierte Verbindungen. Wenn Ihre Implementierung auf einer zertifikatbasierten Verbindung basiert, empfiehlt Adobe dringend, sie auf eine Token-basierte Verbindung zu aktualisieren.
+
+### Sind Sie betroffen? {#ios-impact}
+
+Wenn Ihre aktuelle Implementierung für die Verbindung mit APNS auf zertifikatbasierten Anforderungen basiert, sind Sie betroffen. Es wird empfohlen, zu einer Token-basierten Verbindung zu wechseln.
+
+Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonnements** mit dem untenstehenden Filter filtern:
+
+![](assets/filter-services-ios.png)
+
+
+* Wenn einer Ihrer aktiven Push-Benachrichtigungsdienste die **Zertifikatbasierte Authentifizierung** -Modus, sollten Ihre aktuellen Implementierungen überprüft und in eine **Token-basierte Authentifizierung** wie unten beschrieben.
+
+* Wenn Ihr Setup ausschließlich die Funktion **Token-basierte Authentifizierung** -Modus für iOS-Push-Benachrichtigungen verwenden, ist Ihre Implementierung bereits auf dem neuesten Stand und Sie müssen keine weiteren Maßnahmen ergreifen.
+
+### Wie wird die Migration durchgeführt? {#ios-migration-procedure}
+
+#### Voraussetzungen {#ios-migration-prerequisites}
+
+* Für Campaign Classic v7 die Unterstützung von **Token-basierte Authentifizierung** -Modus wurde in Version 20.2 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, besteht eine Voraussetzung für diese Änderung darin, Ihre Umgebung auf die [neueste Campaign Classic-Build](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"}. Für Campaign v8: **Token-basierte Authentifizierung** -Modus wird von allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
+
+* Sie benötigen einen Signaturschlüssel des APNs-Authentifizierungstokens, um die Token zu generieren, die Ihr Server verwendet. Sie fordern diesen Schlüssel wie unter [Dokumentation für Apple-Entwickler](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
+
+* Bei hybriden, gehosteten und Managed Services-Bereitstellungen wenden Sie sich zusätzlich zur Ausführung des unten beschriebenen Migrationsverfahrens an Adobe, um Ihren Echtzeit(RT)-Ausführungs-Server zu aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
+
+* On-Premise-Benutzende von Campaign Classic v7 wie Sie müssen sowohl die Marketing- als auch die Echtzeit-Ausführungs-Server aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
+
+#### Migrationsverfahren {#ios-migration-steps}
+
+Gehen Sie wie folgt vor, um Ihre mobilen iOS-Anwendungen in den Token-basierten Authentifizierungsmodus zu migrieren:
+
+1. Navigieren Sie zu Ihrer Liste von **Diensten und Abonnements**.
+1. Auflisten aller Mobile Apps mit **Zertifikatbasierte Authentifizierung** -Modus.
+1. Bearbeiten Sie jede dieser Mobile Apps und navigieren Sie zum **Zertifikat/privater Schlüssel** Registerkarte.
+1. Aus dem **Authentifizierungsmodus** Dropdown-Liste auswählen **Token-basierte Authentifizierung**.
+1. Füllen Sie die APNs-Verbindungseinstellungen aus. **[!UICONTROL Schlüssel-ID]**, **[!UICONTROL Team-ID]** und **[!UICONTROL Bundle-ID]** Wählen Sie dann Ihr p8-Zertifikat aus, indem Sie auf **[!UICONTROL Geben Sie den privaten Schlüssel ein...]**.
+
+   ![](assets/token-based-certif.png)
+
+1. Klicks **[!UICONTROL Verbindung testen]** , um zu überprüfen, ob Ihre Konfiguration korrekt ist und ob der Server Zugriff auf APNs hat. Beachten Sie bei Mid-Sourcing-Bereitstellungen, dass die Variable **[!UICONTROL Verbindung testen]** -Schaltfläche kann nicht überprüfen, ob der Server Zugriff auf APNS hat.
+1. Nun können Sie die Produktionsanwendung konfigurieren, indem Sie auf **[!UICONTROL Weiter]** klicken und nach dem gleichen Verfahren wie oben beschrieben vorgehen.
+1. Klicken Sie auf **[!UICONTROL Beenden]** und danach auf **[!UICONTROL Speichern]**.
+
+Ihre iOS-Anwendung wird jetzt in den Token-basierten Authentifizierungsmodus versetzt.
