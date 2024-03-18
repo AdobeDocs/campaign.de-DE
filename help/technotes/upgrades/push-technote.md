@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: c81744fdf4a4fc47820c077f69288a0ea66fa5e4
+source-git-commit: a494ac834b1febcafe04f4bb05eb74834df7b024
 workflow-type: tm+mt
 source-wordcount: '1408'
-ht-degree: 64%
+ht-degree: 56%
 
 ---
 
@@ -33,32 +33,32 @@ Adobe Campaign Classic v7 und Adobe Campaign v8 unterstützen bereits die neuest
 
 ### Sind Sie betroffen? {#fcm-impact}
 
-Wenn Ihre aktuelle Implementierung Anmeldedienste unterstützt, die über die veralteten APIs eine Verbindung zu FCM herstellen, sind Sie betroffen. Die Migration zu den neuesten APIs ist obligatorisch, um Dienstunterbrechungen zu vermeiden. In diesem Fall werden Adobe-Teams Kontakt mit Ihnen aufnehmen.
+Wenn Ihre aktuelle Implementierung Anmeldedienste unterstützt, die über die veralteten APIs eine Verbindung zu FCM herstellen, sind Sie betroffen. Der Übergang zu den neuesten APIs ist obligatorisch, um eine Dienstverzerrung zu vermeiden. In diesem Fall werden Adobe-Teams Kontakt mit Ihnen aufnehmen.
 
 Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonnements** mit dem untenstehenden Filter filtern:
 
 ![](assets/filter-services-fcm.png)
 
 
-* Wenn einer Ihrer aktiven Push-Benachrichtigungsdienste die **(veraltete) HTTP-API** verwendet, ist Ihr Setup direkt von dieser Änderung betroffen. Sie müssen Ihre aktuellen Konfigurationen überprüfen und zu den neueren APIs migrieren, wie unten beschrieben.
+* Wenn einer Ihrer aktiven Push-Benachrichtigungsdienste die **(veraltete) HTTP-API** verwendet, ist Ihr Setup direkt von dieser Änderung betroffen. Sie müssen Ihre aktuellen Konfigurationen überprüfen und zu den neueren APIs wechseln, wie unten beschrieben.
 
 * Wenn Ihr Setup ausschließlich die **HTTP-v1**-API für Android-Push-Benachrichtigungen verwendet, sind Sie bereits konform und es sind keine weiteren Maßnahmen Ihrerseits erforderlich.
 
-### Wie wird die Migration durchgeführt? {#fcm-migration-procedure}
+### Wie wird die Aktualisierung durchgeführt? {#fcm-transition-procedure}
 
-#### Voraussetzungen {#fcm-migration-prerequisites}
+#### Voraussetzungen {#fcm-transition-prerequisites}
 
-* Für Campaign Classic v7 wurde die Unterstützung von HTTP v1 in Version 20.3.1 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, besteht eine Voraussetzung für die Migration auf HTTP v1 darin, Ihre Umgebung auf den [neueste Campaign Classic-Build](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"} zu aktualisieren. Bei Campaign v8 wird HTTP v1 von allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
+* Für Campaign Classic v7 wurde die Unterstützung von HTTP v1 in Version 20.3.1 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, besteht eine Voraussetzung für die Umstellung auf HTTP v1 darin, Ihre Umgebung auf die [neueste Campaign Classic-Build](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"}. Bei Campaign v8 wird HTTP v1 von allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
 
 * Die JSON-Datei des Kontos des Firebase Admin SDK-Dienstes ist erforderlich, damit die Mobile App auf HTTP v1 verschoben wird. In der [Dokumentation zu Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"} erfahren Sie, wie Sie diese Datei erhalten.
 
-* Bei hybriden, gehosteten und Managed Services-Bereitstellungen wenden Sie sich zusätzlich zur Ausführung des unten beschriebenen Migrationsverfahrens an Adobe, um Ihren Echtzeit(RT)-Ausführungs-Server zu aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
+* Bei Hybrid-, gehosteten und Managed Services-Bereitstellungen wenden Sie sich neben dem unten beschriebenen Übergangsverfahren an Adobe, um Ihren Echtzeit-Ausführungsserver (RT) zu aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
 
 * On-Premise-Benutzende von Campaign Classic v7 wie Sie müssen sowohl die Marketing- als auch die Echtzeit-Ausführungs-Server aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
 
-#### Migrationsverfahren {#fcm-migration-steps}
+#### Übergangsverfahren {#fcm-transition-steps}
 
-Gehen Sie wie folgt vor, um Ihre Umgebung auf HTTP v1 zu migrieren:
+Gehen Sie wie folgt vor, um Ihre Umgebung auf HTTP v1 zu verschieben:
 
 1. Navigieren Sie zu Ihrer Liste von **Diensten und Abonnements**.
 1. Listen Sie alle Mobile Apps auf, die die **(veraltete) HTTP-API-Version** verwenden.
@@ -129,7 +129,7 @@ Adobe Campaign Classic v7 und Adobe Campaign v8 unterstützen sowohl Token-basie
 
 ### Sind Sie betroffen? {#ios-impact}
 
-Wenn Ihre aktuelle Implementierung für die Verbindung mit APNS auf zertifikatbasierten Anforderungen basiert, sind Sie betroffen. Es wird empfohlen, zu einer Token-basierten Verbindung zu wechseln.
+Wenn Ihre aktuelle Implementierung für die Verbindung mit APNS auf zertifikatbasierten Anforderungen basiert, sind Sie betroffen. Der Übergang zu einer Token-basierten Verbindung wird empfohlen.
 
 Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonnements** mit dem untenstehenden Filter filtern:
 
@@ -140,21 +140,21 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 
 * Wenn Ihr Setup ausschließlich die Funktion **Token-basierte Authentifizierung** -Modus für iOS-Push-Benachrichtigungen verwenden, ist Ihre Implementierung bereits auf dem neuesten Stand und Sie müssen keine weiteren Maßnahmen ergreifen.
 
-### Wie wird die Migration durchgeführt? {#ios-migration-procedure}
+### Wie wird die Aktualisierung durchgeführt? {#ios-transition-procedure}
 
-#### Voraussetzungen {#ios-migration-prerequisites}
+#### Voraussetzungen {#ios-transition-prerequisites}
 
 * Für Campaign Classic v7 die Unterstützung von **Token-basierte Authentifizierung** -Modus wurde in Version 20.2 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, besteht eine Voraussetzung für diese Änderung darin, Ihre Umgebung auf die [neueste Campaign Classic-Build](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"}. Für Campaign v8: **Token-basierte Authentifizierung** -Modus wird von allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
 
 * Sie benötigen einen Signaturschlüssel des APNs-Authentifizierungstokens, um die Token zu generieren, die Ihr Server verwendet. Sie fordern diesen Schlüssel wie unter [Dokumentation für Apple-Entwickler](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 
-* Bei hybriden, gehosteten und Managed Services-Bereitstellungen wenden Sie sich zusätzlich zur Ausführung des unten beschriebenen Migrationsverfahrens an Adobe, um Ihren Echtzeit(RT)-Ausführungs-Server zu aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
+* Bei Hybrid-, gehosteten und Managed Services-Bereitstellungen wenden Sie sich neben dem unten beschriebenen Übergangsverfahren an Adobe, um Ihren Echtzeit-Ausführungsserver (RT) zu aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
 
 * On-Premise-Benutzende von Campaign Classic v7 wie Sie müssen sowohl die Marketing- als auch die Echtzeit-Ausführungs-Server aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
 
-#### Migrationsverfahren {#ios-migration-steps}
+#### Übergangsverfahren {#ios-transition-steps}
 
-Gehen Sie wie folgt vor, um Ihre mobilen iOS-Anwendungen in den Token-basierten Authentifizierungsmodus zu migrieren:
+Gehen Sie wie folgt vor, um Ihre mobilen iOS-Anwendungen in den Token-basierten Authentifizierungsmodus zu versetzen:
 
 1. Navigieren Sie zu Ihrer Liste von **Diensten und Abonnements**.
 1. Auflisten aller Mobile Apps mit **Zertifikatbasierte Authentifizierung** -Modus.
