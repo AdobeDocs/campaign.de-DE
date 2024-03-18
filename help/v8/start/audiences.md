@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -49,13 +49,13 @@ Sie können die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Con
 >
 >* Ein Profil, das durch mehrere Sendungen angesprochen wurde, wird nur einmal gezählt.
 >
->* Profile, die im Rahmen von Social Marketing auf X (Twitter) angesprochen werden, werden nicht als aktive Profile berücksichtigt.
+>* Profile, die im Rahmen von Social-Media-Marketing auf X (Twitter) angesprochen werden, werden nicht als aktive Profile berücksichtigt.
 
 ## Datenschutz und Einverständniserklärung{#privacy-and-consent}
 
 Adobe Campaign ist ein leistungsstarkes Tool zur Erfassung und Verarbeitung von großen Datenmengen, einschließlich personenbezogener Daten und vertraulicher Informationen. Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vertraulicher Daten, erfassen. Es ist daher unerlässlich, dass Sie das Einverständnis Ihrer Empfänger erhalten und überwachen.
 
-![](../assets/do-not-localize/book.png) Erfahren Sie, wie Sie Datenschutz und Einverständniserklärung in verwalten [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target="_blank"}.
+![](../assets/do-not-localize/book.png) Erfahren Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target="_blank"}, wie Sie Datenschutz und Einverständnis gewährleisten.
 
 **Verwandte Themen** 
 

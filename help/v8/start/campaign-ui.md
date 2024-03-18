@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie die Campaign-Benutzeroberfläche durchsuchen 
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
-workflow-type: tm+mt
+exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
+source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
+workflow-type: ht
 source-wordcount: '1011'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +33,7 @@ Sie können über die Client-Konsole oder die Web-Benutzeroberfläche auf Adobe 
 
 ## Arbeiten mit der Client-Konsole {#ui-access}
 
-Die Campaign-Client-Konsole ist eine native Anwendung, die über Standard-Internet-Protokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert eine minimale Bandbreite, da sie auf einem lokalen Cache beruht. Die Campaign-Client-Konsole, die für eine einfache Bereitstellung entwickelt wurde, kann über einen Internet-Browser bereitgestellt werden sowie automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.  [Erfahren Sie mehr über die Campaign-Clientkonsole](../start/connect.md). Sie können von der dedizierten Karte auf der Startseite der Clientkonsole zur Campaign-Webbenutzeroberfläche wechseln.
+Die Campaign-Client-Konsole ist eine native Anwendung, die über Standard-Internet-Protokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert eine minimale Bandbreite, da sie auf einem lokalen Cache beruht. Die Campaign-Client-Konsole, die für eine einfache Bereitstellung entwickelt wurde, kann über einen Internet-Browser bereitgestellt werden sowie automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.  [Weitere Informationen zur Campaign-Client-Konsole](../start/connect.md). Sie können von der dedizierten Karte auf der Startseite der Client-Konsole zur Campaign Web-Benutzeroberfläche wechseln.
 
 ![](assets/web-ui.png)
 

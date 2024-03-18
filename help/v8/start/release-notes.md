@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 3a63539bc6bb20fa79bdac76dd60efe7b232458b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -18,18 +18,18 @@ Adobe Campaign wird regelmäßig aktualisiert. Dieser regelmäßige Aktualisieru
 
 Wenn Sie Managed Cloud Services nutzen, wird Ihre Instanz von Adobe mit jeder neuen Version aktualisiert. Adobe wird Sie jeweils kontaktieren und Ihre Umgebungen aktualisieren. Die Campaign-Client-Konsole **muss auf dieselbe Version aktualisiert werden** wie die Campaign-Server. Weitere Informationen dazu, wie Sie die Client-Konsole aktualisieren, erhalten Sie auf [dieser Seite](../start/connect.md#upgrade-ac-console).
 
-Als Kunde müssen Sie außerdem sicherstellen, dass Sie die neueste unterstützte Version der Systeme verwenden, die im Abschnitt [Kompatibilitätsmatrix](compatibility-matrix.md).
+Außerdem sollten Sie als Kunde bzw. Kundin sicherstellen, dass Sie die neuesten unterstützten Versionen der in der [Kompatibilitätsmatrix](compatibility-matrix.md) aufgeführten Systeme verwenden.
 
 
 ## Version 8.6.2 {#release-8-6-2}
 
-_23.02.2024_
+_23. Februar 2024_
 
 ### Fehlerbehebungen {#fixes-8-6-2}
 
-Dieses Release behebt das folgende Problem:
+Mit dieser Version wird das folgende Problem behoben:
 
-* Fehlerkorrektur - In der Mid-Sourcing-Instanz tritt jetzt kein Leistungsproblem mehr auf (NEO-72595).
+* Es wurde ein Leistungsproblem behoben, dass in der Mid-Sourcing-Instanz auftrat (NEO-72595).
 
 ## Version 8.6.1 {#release-8-6-1}
 
