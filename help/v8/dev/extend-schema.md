@@ -5,10 +5,10 @@ feature: Schema Extension, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: e4dcb228-0683-437a-88cd-bd7ed33da921
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Die wichtigsten Schritte zum Anpassen des Campaign-Datenmodells sind:
 >[!CAUTION]
 >Das integrierte Schema darf nicht direkt geändert werden. Wenn Sie ein integriertes Schema anpassen möchten, müssen Sie es erweitern.
 
-![](../assets/do-not-localize/glass.png) Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie auf [dieser Seite](datamodel.md). Siehe auch Empfehlungen zum Erstellen eines neuen Schemas auf [dieser Seite](create-schema.md).
+Die in Campaign integrierten Tabellen und deren Interaktion werden im Abschnitt [diese Seite](datamodel.md). Siehe auch Empfehlungen zum Erstellen eines neuen Schemas auf [dieser Seite](create-schema.md).
 
 Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 

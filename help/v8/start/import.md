@@ -5,10 +5,10 @@ feature: Profiles, Data Management
 role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 Mit Campaign können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können eine Datei laden, mehrere Kontaktaktualisierungen planen und automatisieren, Daten im Internet sammeln oder Profilinformationen direkt in die Empfängertabelle eingeben.
 
-![](../assets/do-not-localize/glass.png) Erste Schritte mit [Zielgruppen](audiences.md)
+Erste Schritte mit [Zielgruppen](audiences.md)
 
-![](../assets/do-not-localize/glass.png) Verstehen des Campaign-[Datenmodells](../dev/datamodel.md)
+Campaign verstehen [datamodel](../dev/datamodel.md)
 
 ## Profile in einen Workflow importieren
 
@@ -33,7 +33,7 @@ Erstellen Sie einen generischen Datenimportauftrag zum Laden von Kontakten in di
 
 ![](assets/new-import.png)
 
-![](../assets/do-not-localize/book.png) In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de) erfahren Sie, wie Sie einzelne Importvorgänge ausführen, um Ihre Datenbank zu befüllen{target="_blank"}.
+Erfahren Sie, wie Sie Einzelimport-Aufträge ausführen, um Ihre Datenbank in zu versorgen. [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de){target="_blank"}.
 
 ## Erfassen von Profilen über Web-Anwendungen
 
@@ -41,7 +41,7 @@ Verwenden Sie Campaign, um Web-Formulare zu erstellen und Profilinformationen ei
 
 ![](assets/web-form-page.png)
 
-![](../assets/do-not-localize/book.png) Wie Sie Web-Formulare erstellen, erfahren Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de){target="_blank"}.
+Erfahren Sie, wie Sie Webformulare in erstellen [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de){target="_blank"}.
 
 **Verwandte Themen**
 

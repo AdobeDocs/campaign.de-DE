@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1146'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -56,13 +56,13 @@ Informationen zu Sicherheitsrichtlinien und -prinzipien für Adobe Campaign find
 
 Sie können Benutzer entsprechend Ihrer Rollenhierarchie manuell zu Campaign hinzufügen und sie Gruppen zuordnen. Die Benutzer können sich dann anmelden und auf die für sie geeigneten Daten und Berechtigungen zugreifen.
 
-![](../assets/do-not-localize/glass.png)[ In diesem Abschnitt](../start/gs-permissions.md) erfahren Sie, wie Sie Benutzer zu Adobe Campaign hinzufügen.
+Erfahren Sie, wie Sie Benutzer zu Adobe Campaign hinzufügen in [diesem Abschnitt](../start/gs-permissions.md).
 
 ### Installieren der Campaign-Client-Konsole{#implementation-install-console}
 
 Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. ein natives Programm (Windows), das ausschließlich mit Standard-Internet-Protokollen (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungs-Server kommuniziert. Die Adobe Campaign-Client-Konsole bietet eine hohe Benutzerfreundlichkeit für hohe Produktivität, verbraucht sehr wenig Bandbreite (durch die Verwendung eines lokalen Cache) und wurde für eine einfache Bereitstellung entwickelt. Diese Konsole kann über einen Internet-Browser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.
 
-![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über die Campaign-Client-Konsole](connect.md).
+[Erfahren Sie mehr über die Campaign-Client-Konsole](connect.md).
 
 ## Ihre Umgebung vorbereiten{#implementation-prepare-your-env}
 
@@ -72,22 +72,22 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folg
 
    Mit Campaign können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können eine Datei laden, mehrere Kontaktaktualisierungen planen und automatisieren, Daten im Internet sammeln oder Profilinformationen direkt in die Empfängertabelle eingeben.
 
-   ![](../assets/do-not-localize/glass.png) [Erfahren Sie, wie Sie Profile importieren](import.md).
+   [Erfahren Sie, wie Sie Profile importieren](import.md).
 
    Zielgruppen werden in Listen gruppiert und können über Workflows erstellt werden. Sie können dann in kanalübergreifenden Sendungen gezielt angesprochen werden.
 
-   ![](../assets/do-not-localize/glass.png) [Erfahren Sie, wie Sie Audiences definieren](audiences.md).
+   [Erfahren Sie, wie Sie Zielgruppen definieren](audiences.md).
 
 1. **Verwenden von Vorlagen**
 
    Kampagnen, Sendungen, Vorgänge oder Workflows basieren auf einer Vorlage, in der wichtige Einstellungen und Funktionen gespeichert sind. Für jede Komponente, für die keine spezifische Konfiguration definiert wurde, wird eine integrierte Vorlage bereitgestellt. Sie müssen die Vorlagen konfigurieren, an Ihre Anforderungen anpassen und für Endbenutzer verfügbar machen.
 
 
-   ![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=de), wie Sie mit Kampagnenvorlagen arbeiten
+   Erfahren Sie, wie Sie mit Kampagnenvorlagen in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=de)
 
-   ![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de), wie Sie eine Workflow-Vorlage konfigurieren
+   Erfahren Sie, wie Sie eine Workflow-Vorlage in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de)
 
-   ![](../assets/do-not-localize/book.png) Weitere Informationen zu E-Mail-Vorlagen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target="_blank"}
+   Weitere Informationen zu E-Mail-Vorlagen finden Sie in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target="_blank"}
 
 
 1. **Konfigurieren von Typologieregeln**
@@ -100,7 +100,7 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folg
 
    Adobe Campaign enthält ein vordefiniertes Datenmodell. Um Ihre Umgebung zu implementieren und anzupassen, müssen Sie mit den integrierten Tabellen des Adobe Campaign-Datenmodells vertraut sein und wissen, wie sie sich zueinander verhalten.
 
-   ![](../assets/do-not-localize/glass.png) [Erfahren Sie mehr über das Campaign-Datenmodell](../dev/datamodel.md).
+   [Weitere Informationen zum Datenmodell von Campaign](../dev/datamodel.md).
 
 ## Anpassen der Instanz{#implementation-custom-your-instance}
 
@@ -110,19 +110,19 @@ Sie können viele verschiedene Bereiche und Funktionen in Campaign anpassen. Die
 
    Adobe Campaign verfügt über gemeinsame Schemata zur Identifizierung von Daten wie: Empfänger, Versandprotokolle, Abonnements und mehr.
 
-   ![](../assets/do-not-localize/glass.png) In diesem Abschnitt erfahren Sie mehr über das [integrierte Datenmodell von Campaign](../dev/datamodel.md).
+   Weitere Informationen finden Sie in diesem Abschnitt . [Integriertes Datenmodell von Campaign](../dev/datamodel.md).
 
-   ![](../assets/do-not-localize/glass.png) Sie können bestehende Schemata erweitern oder Schemata von Grund auf neu erstellen. Weiterführende Informationen finden Sie auf [dieser Seite](../dev/customize.md).
+   Sie können vorhandene Schemata erweitern oder neue Schemas von Grund auf neu erstellen. Weiterführende Informationen finden Sie auf [dieser Seite](../dev/customize.md).
 
 1. **Dashboards und Listen**
 
    Sie können auf einfache Weise Listen konfigurieren, Felder hinzufügen und entfernen und Spalten anpassen.
 
-   ![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](../dev/customize.md#gs-lists-and-filters), wie Sie in Campaign Filter und Listen verwalten.
+   Erfahren Sie, wie Sie in Campaign Filter und Listen verwalten [diese Seite](../dev/customize.md#gs-lists-and-filters).
 
    Sie können auch neue Dashboards erstellen, um Campaign-Daten je nach Bedarf anzuzeigen.
 
-   ![](../assets/do-not-localize/glass.png) Weiterführende Informationen finden Sie auf [dieser Seite](../dev/customize.md#gs-custom-dashboards).
+   Weitere Informationen finden Sie auf [dieser Seite](../dev/customize.md#gs-custom-dashboards).
 
 1. **Berichte**
 
@@ -130,7 +130,7 @@ Sie können viele verschiedene Bereiche und Funktionen in Campaign anpassen. Die
 
    Abgesehen von den integrierten Berichten können Sie in Adobe Campaign auch benutzerdefinierte Berichte entsprechend dem jeweiligen Kontext und Ihren Anforderungen erstellen. In diesem Dokument werden die Grundsätze der Nutzung und die Implementierungsmodi erläutert.
 
-   ![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](../reporting/gs-reporting.md) mehr über die Reporting-Funktionen in Campaign.
+   Weitere Informationen zu Berichtsfunktionen in Campaign finden Sie in [diese Seite](../reporting/gs-reporting.md).
 
 
 ## Einrichten der Automatisierung in Campaign{#implementation-automation}
@@ -162,22 +162,22 @@ Wenn Sie andere Adobe-Lösungen einsetzen, können Sie diese mit Ihrer Campaign-
 
 Sie können nur Single Sign-on (SSO) verwenden, um eine Verbindung zu Campaign herzustellen. Weitere Informationen finden Sie auf [dieser Seite](connect.md).
 
-![](../assets/do-not-localize/glass.png) Sehen Sie [auf dieser Seite](../connect/integration.md) die vollständige Liste der Adobe-Lösungen, die mit Adobe Campaign integriert werden können.
+Entdecken Sie die vollständige Liste der Adobe-Lösungen, die in Adobe Campaign integriert werden können. [auf dieser Seite](../connect/integration.md).
 
 ### Connectoren{#implementation-connectors}
 
 Verbinden Sie Campaign mit Systemen von Drittanbietern, um eine große Bandbreite an Funktionen zu kombinieren und Prozesse zu automatisieren.
 
-![](../assets/do-not-localize/glass.png) In [diesem Abschnitt](../connect/integration.md) finden Sie weitere Informationen zu verfügbaren Connectoren.
+Weitere Informationen zu verfügbaren Connectoren finden Sie in [diesem Abschnitt](../connect/integration.md).
 
 **Ihr CRM mit Campaign verbinden**
 
 Sie können Ihre Adobe Campaign-Plattform mit Ihren CRM-Systemen von Drittanbietern verbinden und Daten synchronisieren: Kontakte, Konten, Käufe usw.
 
-![](../assets/do-not-localize/glass.png) In [diesem Abschnitt](../connect/integration.md#gs-crm-connectors) erfahren Sie, wie Sie Ihr CRM-System mit Campaign verbinden.
+Erfahren Sie, wie Sie Ihr CRM-System mit Campaign verbinden. [diesem Abschnitt](../connect/integration.md#gs-crm-connectors)
 
 **Verbindung zu einer externen Datenbank herstellen**
 
 Sie können die Campaign Cloud-Datenbank über das Federated Data Access-Modul (FDA) mit externen Systemen verbinden.
 
-![](../assets/do-not-localize/glass.png) In [diesem Abschnitt](../connect/integration.md#gs-fda) erfahren Sie, wie Sie das FDA-Modul von Campaign konfigurieren, um Zugriffsparameter zu definieren.
+Erfahren Sie, wie Sie das FDA-Modul von Campaign konfigurieren, um Zugriffsparameter in [diesem Abschnitt](../connect/integration.md#gs-fda)

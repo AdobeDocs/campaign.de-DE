@@ -5,10 +5,10 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1362'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -121,11 +121,11 @@ Erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign
 
 Verwenden Sie Transaktionsnachrichten in Campaign, um Nachrichten zu automatisieren, die von durch Informationssysteme ausgelösten Ereignissen generiert werden. Diese Transaktionsnachrichten können z. B. Rechnungen, Auftragsbestätigungen, Versandbestätigungen, Passwortänderungen, Benachrichtigungen über die Nichtverfügbarkeit von Produkten, Kontoauszüge oder die Erstellung von Website-Konten sein. Diese Nachrichten können einzeln oder in Batches per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
-![](../assets/do-not-localize/glass.png) Weitere Informationen zu den Funktionen von Transaktionsnachrichten finden Sie in [diesem Abschnitt](../send/transactional.md).
+Erfahren Sie mehr über die Funktionen von Transaktionsnachrichten in [diesem Abschnitt](../send/transactional.md).
 
 Verbinden Sie Adobe Campaign und Adobe Analytics, um Benutzeraktionen abzurufen und nahezu in Echtzeit personalisierte Nachrichten zu versenden.
 
-![](../assets/do-not-localize/glass.png) In [diesem Abschnitt](../start/connect.md) erfahren Sie, wie Sie Campaign mit anderen Lösungen integrieren.
+Erfahren Sie, wie Sie Campaign mit anderen Lösungen in integrieren können. [diesem Abschnitt](../start/connect.md)
 
 
 ## Anwendungsfälle von Workflows{#end-to-end-uc}

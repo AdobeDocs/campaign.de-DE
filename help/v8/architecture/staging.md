@@ -5,10 +5,10 @@ feature: Configuration, API, FFDA
 role: Developer
 level: Intermediate
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um den Campaign-Staging-Mechanismus für eine bestimmte
    </srcSchema>
    ```
 
-   ![](../assets/do-not-localize/glass.png) Weitere Informationen zur Erstellung benutzerdefinierter Schemata finden Sie auf [dieser Seite](../dev/create-schema.md).
+   Weitere Informationen zur Erstellung von benutzerdefinierten Schemas finden Sie unter [diese Seite](../dev/create-schema.md).
 
 1. Speichern und aktualisieren Sie die Datenbankstruktur. [Weitere Informationen](../dev/update-database-structure.md)
 

@@ -5,10 +5,10 @@ feature: Architecture, FFDA, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -84,13 +84,13 @@ Die PostgreSQL-Datenbank in der Mid-Sourcing-Instanz wird verwendet, um:
 
 In der [!DNL Campaign]-Cloud-Datenbank werden gebündelte Einzelabfragen aufgrund von Performance-Einbußen (Latenz und gleichzeitige Nutzung) nicht empfohlen. Batch-Vorgänge sind daher vorzuziehen. Um eine optimale Performance der APIs zu gewährleisten, verarbeitet Campaign API-Aufrufe weiterhin auf lokaler Datenbankebene.
 
-![](../assets/do-not-localize/glass.png) [Der API-Staging-Mechanismus wird auf dieser Seite beschrieben.](staging.md)
+[Der API-Staging-Mechanismus wird auf dieser Seite beschrieben.](staging.md)
 
 ### Neue APIs{#new-apis}
 
 Für die Verwaltung der Datensynchronisation zwischen der lokalen [!DNL Campaign]-Datenbank und der Cloud-Datenbank stehen neue APIs zur Verfügung. Außerdem wurde ein neuer Mechanismus zur Verarbeitung von API-Aufrufen auf lokaler Datenbankebene eingeführt, um Latenzen zu minimieren und die Gesamt-Performance zu erhöhen.
 
-![](../assets/do-not-localize/glass.png) [Neue APIs werden auf dieser Seite beschrieben.](new-apis.md)
+[Neue APIs werden auf dieser Seite beschrieben.](new-apis.md)
 
 
 ### Datenreplikation{#data-replication}

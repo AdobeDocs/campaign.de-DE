@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 55c177b6931ef2c427c8e9793b463274b8abb015
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -50,7 +50,7 @@ Dies hat folgende Auswirkungen:
 * Der Versandstatus wird nicht sofort aktualisiert – In der Marketing-Instanz wird ein technischer Prozess ausgeführt, der den Versandstatus zeitnah aktualisiert.
 
 
-![](../assets/do-not-localize/glass.png) Auf [dieser Seite](../send/transactional-template.md#transition-from-v7) erfahren Sie mehr über das Senden von Testsendungen für Transaktionsnachrichten beim Übergang von v7 zu v8.
+Erfahren Sie mehr über das Senden von Testsendungen von Transaktionsnachrichten beim Übergang von v7 zu [diese Seite](../send/transactional-template.md#transition-from-v7).
 
 
 ## [!DNL Campaign] und [!DNL Snowflake] {#ac-gs-snowflake}
@@ -59,14 +59,14 @@ In der [Bereitstellung „Enterprise (FFDA)“](../architecture/enterprise-deplo
 
 Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit dieser neuen Architektur vereinfacht die Campaign v8 Enterprise (FFDA)-Bereitstellung die Datenverwaltung: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen und die Daten kopieren und schon können Sie loslegen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
 
-![](../assets/do-not-localize/glass.png) Weitere Informationen zur Architektur von [!DNL Campaign] v8 finden Sie auf [dieser Seite](../architecture/architecture.md).
+Weitere Informationen [!DNL Campaign] v8-Architektur in [diese Seite](../architecture/architecture.md).
 
 
 ## Verwenden Sie Ihre Adobe ID, um eine Verbindung mit Campaign herzustellen.{#adobe-id}
 
 Campaign-Benutzende stellen über ihre Adobe ID eine Verbindung her. Dieselbe Adobe ID wird verwendet, um alle Ihre Adobe-Pläne und -Produkte für alle Adobe Experience Cloud-Lösungen mit einem einzigen Konto zu verknüpfen.
 
-![](../assets/do-not-localize/glass.png) Erfahren Sie auf [dieser Seite](connect.md), wie Sie eine Verbindung zu [!DNL Campaign] herstellen können. 
+Erfahren Sie, wie Sie eine Verbindung herstellen [!DNL Campaign] in [diese Seite](connect.md).
 
 ## Analysieren von Daten mit Cubes{#adobe-reporting}
 

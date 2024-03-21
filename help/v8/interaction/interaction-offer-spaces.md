@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -156,4 +156,4 @@ Sollte kein Angebot für einen Empfänger infrage kommen, ist dies in der Vorsch
 
 Die Vorschau berücksichtigt Kontexte möglicherweise nicht, wenn sie auf eine Platzierung beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema erweitert wurde, um Felder hinzuzufügen, auf die eine einen eingehenden Kanal verwendende Platzierung Bezug nimmt. 
 
-![](../assets/do-not-localize/book.png) Weitere Informationen finden Sie in diesem Beispiel der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}
+Weitere Informationen hierzu finden Sie in diesem Beispiel unter [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}.

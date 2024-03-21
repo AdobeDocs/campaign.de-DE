@@ -5,10 +5,10 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe Campaign ermöglicht die Erstellung, Konfiguration, Ausführung und Analys
 
 ![](assets/calendar.png)
 
-![](../assets/do-not-localize/book.png) In [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de) erfahren Sie, wie Sie auf Marketing-Kampagnen zugreifen und diese implementieren können.
+Erfahren Sie, wie Sie in auf Marketing-Kampagnen zugreifen und diese implementieren können. [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de).
 
 ## Wichtige Schritte zum Beginn{#gs-ac-start}
 
@@ -56,7 +56,7 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    Definieren Sie Hierarchie und Zeitplan, stellen Sie Budget ein, fügen Sie Ressourcen hinzu, wählen Sie Benutzer aus.
 
-   ![](../assets/do-not-localize/book.png) Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de) erfahren Sie, wie Sie einen Marketing-Plan erstellen und Kampagnen konfigurieren können.
+   Erfahren Sie, wie Sie einen Marketingplan erstellen und Kampagnen konfigurieren in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de).
 
    Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Haupteinstellungen und -funktionen gespeichert sind. Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen können, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
 
@@ -78,11 +78,11 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    ![](assets/campaign-dashboard.png)
 
-   ![](../assets/do-not-localize/book.png) Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de) erfahren Sie, wie Sie Sendungen für Marketing-Kampagnen erstellen und starten können.
+   Erfahren Sie, wie Sie Sendungen von Marketing-Kampagnen erstellen und starten in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de).
 
    Sie können einer Kampagne verschiedene Dokumente zuordnen: Berichte, Fotos, Websites, Diagramme usw.
 
-   ![](../assets/do-not-localize/book.png) Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=de) erfahren Sie mehr über zugehörige Dokumente.
+   Weitere Informationen zu zugehörigen Dokumenten finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=de).
 
 1. **Einrichten des Validierungsprozesses**
 

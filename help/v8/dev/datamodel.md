@@ -5,10 +5,10 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ Sie können die standardmäßige Empfängertabelle mit den vordefinierten Felder
 * [Erweitern einer vorhandenen Tabelle](extend-schema.md) mit neuen Feldern. Sie können der Empfängertabelle beispielsweise ein neues Feld „Treue“ hinzufügen.
 * [Erstellen Sie eine neue Tabelle](create-schema.md), z. B. eine Tabelle „Einkauf“, in der alle von den einzelnen Profilen der Datenbank getätigten Käufe aufgelistet sind, und verknüpfen Sie sie mit der Empfängertabelle.
 
-![](../assets/do-not-localize/glass.png) Lernen Sie in [diesem Abschnitt](datamodel-best-practices.md) Best Practices zum Arbeiten mit dem Campaign-Datenmodell kennen.
+Best Practices beim Arbeiten mit dem Campaign-Datenmodell in [diesem Abschnitt](datamodel-best-practices.md).
 
 ## Native Profiltabelle {#ootb-profiles}
 
@@ -58,9 +58,9 @@ Die Verwendung der standardmäßigen Empfängertabelle bietet folgende Vorteile:
 
 Es ist möglich, die Empfängertabelle zu erweitern. Die Anzahl der Empfänger oder Relationen in der Tabelle lässt sich aber nicht verringern.
 
-![](../assets/do-not-localize/glass.png) Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie in [diesem Abschnitt](extend-schema.md).
+Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie in [diesem Abschnitt](extend-schema.md).
 
-![](../assets/do-not-localize/book.png) Beispiele für integrierte Erweiterungen von Empfängertabellen in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table){target="_blank"}
+Beispiele für integrierte Erweiterungen von Empfängertabellen in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table){target="_blank"}
 
 Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre geschäftlichen oder funktionalen Anforderungen zugeschnitten ist. Diese Methode weist Einschränkungen auf und wird in [diesem Abschnitt](custom-recipient.md) beschrieben.
 
@@ -68,9 +68,9 @@ Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre gesch
 
 Zum besseren Verständnis der Tabellenverwaltung in Campaign v8 ist zu beachten, dass im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) die Tabellen zwischen Campaign und der Snowflake Cloud-Datenbank repliziert werden.
 
-![](../assets/do-not-localize/glass.png) Weitere Informationen zu Replikationsstrategien und -verfahren finden Sie in [diesem Abschnitt](../architecture/replication.md).
+Erfahren Sie mehr über die Replikationsstrategie und -mechanismen in [diesem Abschnitt](../architecture/replication.md).
 
-**Verwandte Themen**
+**Verwandte Themen** 
 
-![](../assets/do-not-localize/glass.png): Erfahren Sie in [diesem Abschnitt](../start/import.md), wie Sie Profile importieren.
-![](../assets/do-not-localize/glass.png)Weitere Informationen zu Campaign-Audiences finden Sie in [diesem Abschnitt](../start/audiences.md).
+Erfahren Sie, wie Sie Profile importieren in [diesem Abschnitt](../start/import.md)
+Erfahren Sie mehr über Campaign-Zielgruppen in [diesem Abschnitt](../start/audiences.md)

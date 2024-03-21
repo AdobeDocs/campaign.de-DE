@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: f6ccec05d63c397d0a286c18f4114eb414156d45
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 90%
+ht-degree: 83%
 
 ---
 
@@ -36,9 +36,9 @@ Campaign v8 kann eine Verbindung zu den folgenden Adobe-Lösungen herstellen. Un
 
 Sie können Ihre **Zielgruppen** und **Assets** über Experience Cloud-Lösungen hinweg auch mit Funktionen zum Freigeben von Assets und Zielgruppen kombinieren.
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zur **gemeinsamen Nutzung von Zielgruppen** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
+Weitere Informationen **Zielgruppenfreigabe** zwischen Campaign und Experience Cloud-Lösungen in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/book.png) Weitere Informationen zur **gemeinsamen Nutzung von Assets** zwischen Campaign- und Experience Cloud-Lösungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud).
+Weitere Informationen **Asset-Freigabe** zwischen Campaign und Experience Cloud-Lösungen in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de#integrating-with-adobe-experience-cloud)
 
 ## Integration mit Ihrem CRM-Connector{#gs-crm-connectors}
 
@@ -53,7 +53,7 @@ Auf [dieser Seite](crm.md) erfahren Sie, wie Sie Campaign mit Microsoft Dynamics
 
 Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer oder mehreren **externen Datenbanken** zu verbinden und darin gespeicherte Informationen zu verarbeiten, ohne die Daten in Ihrer Campaign Cloud-Datenbank zu beeinflussen.
 
-![](../assets/do-not-localize/glass.png) Weiterführende Informationen finden Sie auf [dieser Seite](fda.md)
+Weitere Informationen finden Sie auf [dieser Seite](fda.md).
 
 ## Arbeiten mit Social Media{#gs-social}
 
