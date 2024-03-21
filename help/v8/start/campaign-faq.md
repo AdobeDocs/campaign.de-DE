@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 193d2459d5a4ba55822c20a7e376d18b3c6d8795
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 100%
+source-wordcount: '706'
+ht-degree: 89%
 
 ---
 
@@ -30,9 +30,14 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    ![](../assets/do-not-localize/glass.png) [Hier erfahren Sie mehr darüber](connect.md).
 
+   Ab Campaign-Version 8.6 haben Sie Zugriff auf die neue **Campaign-Webbenutzeroberfläche**, verfügbar in der zentralen Adobe Experience Cloud-Umgebung. Experience Cloud ist die integrierte Familie von Anwendungen, Produkten und Diensten von Adobe für das digitale Marketing. Über die intuitive Benutzeroberfläche können Sie schnell auf Ihre Cloud-Anwendungen, Produktfunktionen und Dienste zugreifen.
+
+   [Auf dieser Seite](campaign-ui.md#ac-web-ui) erfahren Sie, wie Sie eine Verbindung mit Adobe Experience Cloud herstellen und auf die Benutzeroberfläche von Adobe Campaign Web zugreifen.
+
+   Weitere Informationen finden Sie unter [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 1. **Kann Campaign v8 in einer On-Premise- oder Hybridumgebung installiert werden?**
 
-   Zurzeit ist Campaign v8 nur in Managed Cloud Services verfügbar, die vollständig von Adobe gehostet werden.
+   Campaign v8 ist nur in verwalteten Cloud Services verfügbar, die vollständig unter Adobe gehostet werden.
 
 1. **Wie kann ich die Zustellbarkeit von E-Mails verbessern?**
 
@@ -60,11 +65,15 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Sie können Ihre Domain in Subdomains unterteilen, um Ihre Marken oder unterschiedlichen Textsorten (Transaktionsnachrichten, Marketing-Informationen usw.) voreinander zu trennen.
 
-   ![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services wenden Sie sich an Adobe, um Ihre Subdomains an Adobe zu delegieren.
+   ![](../assets/do-not-localize/speech.png) Wenden Sie sich als Managed Cloud Service-Benutzer an Adobe, um Ihre Subdomains an Adobe zu delegieren.
 
 1. **Kann ich als Campaign Classic v7-Anwender zu Campaign v8 migrieren?**
 
-   Derzeit ist Campaign v8 nur als neue Implementierung verfügbar.
+   Die automatische Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht verfügbar.
+
+   Campaign v8 ist derzeit **nur** als Managed Cloud Service verfügbar und kann nicht in On-Premise- oder Hybrid-Umgebungen bereitgestellt werden.
+
+   ![](../assets/do-not-localize/speech.png) Weitere Informationen zum Migrationsprozess erhalten Sie von Ihrem Adobe-Support-Mitarbeiter.
 
 1. **Wo kann ich Campaign herunterladen?**
 
