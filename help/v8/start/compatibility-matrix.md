@@ -5,10 +5,10 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -80,6 +80,6 @@ Die folgenden Browser sind mit Campaign for Web Access kompatibel. Erfahren Sie 
 * [Campaign – Versionsaktualisierungen](upgrades.md)
 * [Überprüfen Sie Ihre Campaign-Version](upgrades.md#version)
 * [Installieren der Campaign-Client-Konsole](connect.md)
-* [Control Panel-Versionen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de){target="_blank"}.
+* [Control Panel-Versionen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de){target="_blank"}
 
 Abonnieren Sie das [Prioritätsprodukt-Update von Adobe](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"}, um über neue Versionen der Experience Cloud-Lösungen informiert zu werden.

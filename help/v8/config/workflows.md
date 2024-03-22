@@ -5,10 +5,10 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1362'
-ht-degree: 93%
+ht-degree: 62%
 
 ---
 
@@ -33,26 +33,26 @@ Erfahren Sie durch diese [End-to-End-Anwendungsfälle](#end-to-end-uc), wie Sie 
 
 Weitere Informationen zur Benutzeroberfläche und Ausführung von Workflows finden Sie auf diesen Seiten: 
 
-* [Erste Schritte mit Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
+* [Erste Schritte mit Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de){target="_blank"}
 
-* [Best Practices bei Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de)
+* [Best Practices bei Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}
 
-* [Integrierte technische Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de)
+* [Integrierte technische Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de){target="_blank"}
 
-* [Überwachen der Ausführung von Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de)
+* [Ausführung von Workflows überwachen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}
 
-* [Erstellen einer Zielgruppe im Workflow einer Marketing-Kampagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de)
+* [Erstellen einer Zielgruppe in einem Marketingkampagnen-Workflow](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de){target="_blank"}
 
 ## Workflow-Aktivitäten {#wf-activities}
 
-Weitere Informationen über die verfügbaren Workflow-Aktivitäten finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=de).
+Erfahren Sie mehr über die verfügbaren Workflow-Aktivitäten in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=de){target="_blank"}
 
 Workflow-Aktivitäten sind in Kategorien gruppiert. Diese vier Aktivitätskategorien sind verfügbar:
 
-* [Zielgruppenbestimmungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html?lang=de): Abfrage, Lesen von Listen, Anreicherung, Vereinigung und mehr
-* [Flusssteuerungs-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html?lang=de): Planung, Verzweigung, Warnhinweis, externes Signal und mehr
-* [Aktionsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=de): Kanalübergreifende Sendungen, JavaScript-Code, CRM-Aktivitäten, Aggregat aktualisieren und mehr
-* [Ereignisaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html?lang=de): Dateiübertragung, HTTP-Übertragung und mehr
+* [Zielgruppenbestimmungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html?lang=de){target="_blank"}: Abfrage, Liste lesen, Anreicherung, Vereinigung und mehr
+* [Steuerungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html?lang=de){target="_blank"}: Planung, Verzweigung, Warnung, Externes Signal und mehr
+* [Aktionsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=de){target="_blank"}: Kanalübergreifender Versand, JavaScript-Code, CRM-Aktivitäten, Aggregat-Update und mehr
+* [Ereignisaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html?lang=de){target="_blank"}: Dateiübertragung, HTTP-Übertragung und mehr
 
 ### Aktivität „Datenquelle ändern“ {#change-data-source-activity}
 
@@ -72,7 +72,7 @@ So verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**:
 
 1. Fragen Sie Ihre ausgewählten Empfänger mit einer **[!UICONTROL Abfrage]**-Aktivität ab.
 
-   Weitere Informationen über die Aktivität **[!UICONTROL Abfrage]** finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de).
+   Weitere Informationen über **[!UICONTROL Abfrage]** Aktivität, siehe [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
 
 1. Fügen Sie im Tab **[!UICONTROL Targeting]** die Aktivität **[!UICONTROL Datenquelle ändern]** hinzu und doppelklicken Sie darauf, um die Option **[!UICONTROL Standardmäßige Datenquelle]** auszuwählen.
 
@@ -80,7 +80,7 @@ So verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**:
 
 1. Ziehen Sie aus der Registerkarte **[!UICONTROL Aktionen]** die Aktivität **[!UICONTROL JavaScript-Code]** per Drag-and-drop, um einzelne Vorgänge auf die Arbeitstabelle anzuwenden.
 
-   Weitere Informationen über die Aktivität **[!UICONTROL JavaScript-Code]** finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html?lang=de).
+   Weitere Informationen über **[!UICONTROL JavaScript-Code]** Aktivität, siehe [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html?lang=de){target="_blank"}.
 
 1. Fügen Sie eine weitere Aktivität vom Typ **[!UICONTROL Datenquelle ändern]** hinzu, um zur Cloud-Datenbank zurückzukehren.
 
@@ -92,7 +92,7 @@ So verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**:
 
 Nach der Erstellung Ihres Workflows haben Sie mit der Schaltfläche **[!UICONTROL Eigenschaften]** Zugriff auf weitere Konfigurationen.
 
-Weitere Informationen über **Workflow-Eigenschaften** finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html?lang=de).
+Weitere Informationen **Workflow-Eigenschaften** in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html?lang=de){target="_blank"}.
 
 Auf der Registerkarte **[!UICONTROL Ausführung]** in den **[!UICONTROL Eigenschaften]** Ihres Workflows können Sie Ihren Workflow mit verschiedenen Warehouses verknüpfen und die Verwaltung Ihres Arbeitsaufkommens optimieren. Lesen Sie für weiterführende Informationen über **Warehouses** die [Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
 
@@ -114,7 +114,7 @@ Je nach Zweck Ihres Workflows können Sie in der Dropdown-Liste **[!UICONTROL Wa
 
 Entwerfen Sie einen wiederkehrenden Workflow und erstellen Sie bei jeder Workflow-Ausführung eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, führt dies nach einem Jahr zu 52 Sendungen. Das bedeutet auch, dass die Protokolle für jede Versandinstanz getrennt erstellt werden.
 
-Erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=de), wie Sie eine wiederkehrende Kampagne erstellen.
+Erfahren Sie, wie Sie eine wiederkehrende Kampagne in [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=de){target="_blank"}.
 
 
 ## Erzeugte Ereignisse nutzen
@@ -137,18 +137,17 @@ In diesem Abschnitt finden Sie verschiedene Anwendungsfälle, die Funktionen von
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 
-* [Senden einer Geburtstags-E-Mail](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de)
+* [Geburtstags-E-Mail senden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de){target="_blank"}
 
   Im folgenden Anwendungsbeispiel wird aufgezeigt, wie sich der wiederkehrende Versand einer E-Mail an Empfänger zu deren Geburtstag planen lässt.
 
-* [Laden von Versandinhalten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de)
-Wenn Ihr Versandinhalt in einer auf einem Remote-Server gespeicherten HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden.
+* [Versandinhalt laden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"}
+Wenn Ihr Versandinhalt in einer HTML-Datei auf einem Remote-Server verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden.
 
-* [Workflow für einen kanalübergreifenden Versand](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/cross-channel-delivery-workflow.html?lang=de)
-
+* [Workflow für einen kanalübergreifenden Versand](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/cross-channel-delivery-workflow.html?lang=de){target="_blank"}
 Erfahren Sie, wie Sie einen Workflow für einen kanalübergreifenden Versand erstellen. Ziel ist es, eine Zielgruppe von den Empfängern in Ihrer Datenbank in verschiedene Gruppen zu unterteilen und der einen Gruppe eine E-Mail und der anderen eine SMS zu senden.
 
-* [E-Mail-Erweiterung mit benutzerdefinierten Datumsfeldern](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=de)
+* [E-Mail-Erweiterung mit benutzerdefinierten Datumsfeldern](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=de){target="_blank"}
 Erfahren Sie, wie Sie eine E-Mail mit benutzerdefinierten Datenfeldern an Profile senden, die in diesem Monat Geburtstag feiern. Die E-Mail enthält einen Gutschein, der eine Woche vor bis eine Woche nach dem Geburtstag gültig ist.
 
 Und diese Seiten in der Dokumentation zu Campaign v7:
@@ -163,63 +162,54 @@ Erfahren Sie, wie Sie mithilfe eines Zielgruppen-Workflows Inhalte von zwei E-Ma
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
-* [Bericht an eine Liste senden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html?lang=de)
+* [Bericht an eine Liste senden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html?lang=de){target="_blank"}
 Hier erfahren Sie, wie Sie einen monatlichen integrierten Bericht zu Trackingindikatoren im PDF-Format generieren und an eine Liste von Campaign-Benutzern senden.
 
-* [Überwachen Ihrer Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=de)
-Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen können, die „ausgesetzt“, „angehalten“ oder „fehlerhaft“ sind.
+* [Monitoring Ihrer Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=de){target="_blank"}
+Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen können, die &quot;ausgesetzt&quot;, &quot;angehalten&quot;oder &quot;fehlgeschlagen&quot;sind.
 
-* [Senden von personalisierten Warnhinweisen an Benutzer](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators.html?lang=de)
-Erfahren Sie, wie Sie Benutzern einen Warnhinweis senden, der den Namen der Profile enthält, welche einen Newsletter zwar geöffnet, aber nicht auf den darin enthaltenen Link geklickt haben.
+* [Benutzern personalisierte Warnungen senden](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators.html?lang=de){target="_blank"}
+Hier erfahren Sie, wie Sie eine Warnung an einen Benutzer senden, der den Namen der Profile enthält, die einen Newsletter geöffnet, aber nicht auf den darin enthaltenen Link geklickt haben.
 
 ### Daten-Management {#management}
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 
-* [Koordinieren von Datenaktualisierungen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/coordinate-data-updates.html?lang=de)
-
+* [Datenaktualisierungen koordinieren](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/coordinate-data-updates.html?lang=de){target="_blank"}
 Erfahren Sie, wie Sie überprüfen können, ob der Aktualisierungsprozess beendet wurde, bevor Sie einen weiteren Aktualisierungsvorgang ausführen. Zu diesem Zweck richten wir eine Instanzvariable ein und lassen den Workflow testen, ob die Instanz ausgeführt wird, um dann zu entscheiden, ob die Ausführung des Workflows fortgesetzt und die Aktualisierung durchgeführt werden soll.
 
-* [Erstellen einer zusammenfassenden Liste](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/create-a-summary-list.html?lang=de)
+* [Zusammenfassungsliste erstellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/create-a-summary-list.html?lang=de){target="_blank"}
+Hier erfahren Sie, wie Sie einen Workflow erstellen, der nach dem Erfassen von Dateien und mehreren Anreicherungen eine Zusammenfassungsliste erstellt. Das Beispiel basiert auf einer Liste von Kontakten, die in einem Geschäft Einkäufe getätigt haben.
 
-Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie nach dem Erfassen von Dateien und mehreren Anreicherungen eine zusammenfassende Liste erstellen können. Das Beispiel basiert auf einer Liste von Kontakten, die in einem Geschäft Einkäufe getätigt haben.
-
-* [Daten anreichern](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=de)
+* [Daten anreichern](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=de){target="_blank"}
 Hier erfahren Sie, wie Sie je nach Ergebnis personalisierte Sendungen an Profile senden, die am letzten Wettbewerb teilgenommen haben.
 
-* [Verwenden von Aggregaten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=de)
+* [Verwendung von Aggregaten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=de){target="_blank"}
+Hier erfahren Sie, wie Sie die letzten zur Datenbank hinzugefügten Empfänger identifizieren.
 
-Erfahren Sie, wie Sie die letzten zur Datenbank hinzugefügten Empfänger identifizieren.
-
-* [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/quarterly-list-update.html?lang=de)
-
+* [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/quarterly-list-update.html?lang=de){target="_blank"}
 Erfahren Sie, wie Sie mit einer inkrementellen Abfrage automatisch eine Empfängerliste aktualisieren können.
 
-* [Einrichten eines wiederkehrenden Import-Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=de)
-
-Erfahren Sie, wie ein Workflow für den wiederholten Import von Profilen aus einer CRM-Lösung in die Adobe Campaign-Datenbank erstellt wird.
+* [Einrichten eines Workflows für den wiederkehrenden Import](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=de){target="_blank"}
+Erfahren Sie, wie Sie einen Workflow erstellen, der zum wiederholten Import von Profilen aus einem CRM-System in der Adobe Campaign-Datenbank verwendet werden kann.
 
 ### Zielgruppenbestimmung {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
-* [Abfrage der Empfängertabelle](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table.html?lang=de)
-Erfahren Sie, wie Sie die Namen und E-Mails der Empfängerinnen und Empfänger abrufen können, deren E-Mail-Domain „orange.co.uk“ lautet und die nicht in London leben.
+* [Abfrage der Empfängertabelle](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table.html?lang=de){target="_blank"}
+Hier erfahren Sie, wie Sie die Namen und E-Mails der Empfänger abrufen können, deren E-Mail-Domain &quot;orange.co.uk&quot; lautet und die nicht in London leben.
 
-* [Abfrage von Versandinformationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-delivery-info.html?lang=de)
+* [Versandinformationen abfragen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-delivery-info.html?lang=de){target="_blank"}
+Erfahren Sie, wie Sie Abfragen zu Versandinformationen definieren, um das Verhalten des Profils abzurufen.
 
-Erfahren Sie, wie Sie Abfragen zu Versandinformationen durchführen, um das Verhalten eines Profils abzurufen.
+* [Aggregate berechnen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/compute-aggregates.html?lang=de){target="_blank"}
+Erfahren Sie, wie Sie die Anzahl der in London lebenden Profile nach Geschlecht zählen.
 
-* [Berechnen von Aggregaten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/compute-aggregates.html?lang=de)
+* [Abfrage mit einer n:n-Relation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de){target="_blank"}
+Hier erfahren Sie, wie Sie Profile finden, die in den letzten sieben Tagen nicht kontaktiert wurden.
 
-Erfahren Sie, wie Sie die Anzahl der in London lebenden Profile aufgeschlüsselt nach Geschlecht feststellen.
-
-* [Abfrage mit einer n:n-Relation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de)
-
-Erfahren Sie, wie Sie Profile finden, die in den letzten sieben Tagen nicht kontaktiert wurden.
-
-* [Aufrufen einer Instanzvariablen in einer Abfrage](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/javascript-scripts-and-templates.html?lang=de)
-
+* [Instanzvariablen in Abfragen aufrufen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/javascript-scripts-and-templates.html?lang=de){target="_blank"}
 Erfahren Sie, wie Sie mit einer Instanzvariablen den auf eine Population anzuwendenden Aufspaltungsprozentsatz dynamisch berechnen können.
 
 <!--

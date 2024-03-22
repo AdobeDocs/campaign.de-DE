@@ -4,13 +4,13 @@ description: Erfahren Sie mehr über die Aktivierung von BCC für E-Mails in Ado
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
+exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
-
 
 # Senden einer Kopie Ihrer Nachrichten an eine BCC-Adresse {#bcc}
 
@@ -26,7 +26,9 @@ Adobe Campaign selbst ermöglicht keine Verwaltung von archivierten Dateien. Die
 
 Das Archivierungsziel ist die von Ihnen ausgewählte BCC-E-Mail-Adresse, die für die Empfängerinnen und Empfänger des Versands unsichtbar bleibt. Nachdem die BCC-E-Mail-Adresse definiert wurde, müssen Sie die entsprechende Option auf der Ebene der [Versandvorlage](create-templates.md) aktivieren.
 
-![](../assets/do-not-localize/speech.png) Wenn Sie Managed Cloud Services verwenden, [wenden Sie sich an Adobe](../start/campaign-faq.md#support){target="_blank"}, um die für die Archivierung zu verwendende BCC-E-Mail-Adresse mitzuteilen.
+>[!NOTE]
+>
+>Als Benutzer von Managed Cloud Service [Adobe kontaktieren](../start/campaign-faq.md#support){target="_blank"} um die für die Archivierung zu verwendende BCC-E-Mail-Adresse zu übermitteln.
 
 >[!CAUTION]
 >

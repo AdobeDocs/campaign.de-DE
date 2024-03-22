@@ -5,10 +5,10 @@ feature: Target Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 99%
+source-wordcount: '1026'
+ht-degree: 97%
 
 ---
 
@@ -19,9 +19,9 @@ Verbinden Sie Campaign und Target, um ein Angebot aus Adobe Target in einen Adob
 Diese Integration hilft Ihnen wie folgt beim Implementieren von Anwendungsfällen: Wenn ein Empfänger eine per Adobe Campaign gesendete E-Mail öffnet, können Sie mit einem Aufruf an Adobe Target eine dynamische Inhaltsversion anzeigen. Diese dynamische Version wird anhand von bei der E-Mail-Erstellung definierten Regeln berechnet.
 
 >[!NOTE]
->Im Rahmen der Integration werden nur statische Bilder unterstützt. Die anderen Inhaltstypen können nicht personalisiert werden.
-
-![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Experience Cloud Triggers mit Campaign zu implementieren.
+>* Im Rahmen der Integration werden nur statische Bilder unterstützt. Die anderen Inhaltstypen können nicht personalisiert werden.
+>
+>* Wenn Sie Managed Cloud Services verwenden, [kontaktieren Sie Adobe](../start/campaign-faq.md#support), um Experience Cloud Triggers in Campaign zu implementieren.
 
 Mit Adobe Target können folgende Datentypen zum Einsatz kommen:
 
@@ -74,7 +74,7 @@ Anschließend können Sie die Bildparameter definieren:
 * Mit der **[!UICONTROL Landingpage]** können Sie das Standardbild zu einer standardmäßigen Landingpage umleiten. Diese URL gilt nur, wenn in der letzten E-Mail das Standardbild angezeigt wird. Das ist optional.
 * Im Bereich **[!UICONTROL Zusätzliche Entscheidungsparameter]** wird das Mapping zwischen den in den Adobe Target-Segmenten definierten Feldern und den Feldern in Adobe Campaign hergestellt. Die in Adobe Campaign verwendeten Felder müssen zuvor in der Rawbox angegeben werden. In unserem Beispiel haben wir das Feld &quot;Country&quot; (Land) hinzugefügt.
 
-Wenn Sie in Ihren Einstellungen in Adobe Target Berechtigungen auf Unternehmensebene verwenden, fügen Sie in diesem Feld die entsprechende Eigenschaft hinzu. Weitere Informationen zu Berechtigungen für Target-Unternehmen finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=de#administer).
+Wenn Sie in Ihren Einstellungen in Adobe Target Berechtigungen auf Unternehmensebene verwenden, fügen Sie in diesem Feld die entsprechende Eigenschaft hinzu. Weitere Informationen zu Berechtigungen für Target-Unternehmen finden Sie unter [Adobe Target-Dokumentation](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
 ![](assets/target_13.png)
 
@@ -94,7 +94,7 @@ In unserem Fall benötigen wir zwei Umleitungsangebote. Das dritte (das Standard
 
    ![](assets/target_6.png)
 
-1. Führen Sie dieselben Schritte für das andere Umleitungsangebot durch. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=de#experiences).
+1. Führen Sie dieselben Schritte für das andere Umleitungsangebot durch. Weitere Informationen hierzu finden Sie in diesem Abschnitt [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=de#experiences){target="_blank"}.
 
 ### Zielgruppen erstellen {#audiences-target}
 

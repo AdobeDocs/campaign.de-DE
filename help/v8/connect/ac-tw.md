@@ -5,10 +5,10 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1125'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,10 @@ Das Modul **Verwalten sozialer Netzwerke (Social-Media-Marketing)** ermöglicht 
 
 * Neue Kontakte zu sammeln – Mit Adobe Campaign Social-Media-Marketing können Sie auch einfach neue Kontakte über Facebook sammeln: Kontaktieren Sie die Benutzer und fragen Sie sie, ob sie ihre Profilinformationen weitergeben möchten. Wenn sie zustimmen, ruft Adobe Campaign die Daten automatisch ab, sodass Sie zielgerichtete Kampagnen durchführen und kanalübergreifende Strategien implementieren können.
 
-![](../assets/do-not-localize/speech.png) Als Benutzerin bzw. Benutzer von Managed Cloud Service müssen Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign mit X zu verbinden. Das Add-on zum **Verwalten sozialer Netzwerke (Social-Media-Marketing)** muss in Ihrer Umgebung über das dedizierte Paket installiert sein, und das externe Twitter-Konto muss konfiguriert sein.
+
+>[!NOTE]
+>
+>Als Benutzer von Managed Cloud Service [Adobe kontaktieren](../start/campaign-faq.md#support) um Campaign mit X zu verbinden. Die  **Verwalten sozialer Netzwerke (Social Marketing)** -Add-on muss in Ihrer Umgebung über das dedizierte -Package installiert sein und das externe Twitter-Konto muss konfiguriert werden.
 
 
 Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren X-Konten veröffentlicht werden, delegieren Sie den Schreibzugriff für diese Konten an Adobe Campaign. Gehen Sie dazu folgendermaßen vor:
@@ -42,7 +45,7 @@ Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen S
 Nachdem Sie den erweiterten Zugriff erhalten haben, erstellen Sie eine X-Anwendung, damit Adobe Campaign Tweets auf Ihrem X-Konto posten kann. Gehen Sie dazu wie folgt vor:
 
 1. Melden Sie sich bei Ihrem X-Konto an.
-1. Stellen Sie eine Verbindung mit dem [X-Entwicklerportal](https://developer.twitter.com/en/apps) her.
+1. Verbinden mit [X-Entwicklerportal](https://developer.twitter.com/en/apps){target="_blank"}.
 1. Wählen Sie **App erstellen** aus.
 1. Der X-Assistent führt Sie durch den Prozess.
 1. Um Adobe Campaign zu erlauben, Tweets auf Ihrem Konto zu posten, bearbeiten Sie die **App-Berechtigungen** im Abschnitt „Benutzerauthentifizierung einrichten“ Ihrer App. Wählen Sie **Lesen, Schreiben und Direktnachrichten**.

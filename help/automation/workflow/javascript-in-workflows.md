@@ -5,10 +5,10 @@ description: Diese Beispiele zeigen, wie Sie JavaScript-Code in einem Workflow v
 feature: Workflows
 role: Developer
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1690'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Diese Beispiele zeigen, wie Sie JavaScript-Code in einem Workflow verwenden kön
 * [Auslösen eines Workflows mit einer statischen SOAP-Methode](#trigger-example)
 * [Interagieren mit der Datenbank mithilfe einer nicht statischen SOAP-Methode](#interact-example)
 
-[Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de) über statische und nicht statische SOAP-Methoden.
+[Weitere Infos](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de){target="_blank"} über statische und nicht statische SOAP-Methoden.
 
 In diesen Beispielen wird die Erweiterung ECMAScript for XML (E4X) verwendet. Mit dieser Erweiterung können Sie JavaScript-Aufrufe und XML-Primitive im selben Script kombinieren.
 
@@ -99,7 +99,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Löschen eines Datensatzes
 
-Verwenden Sie die `DeleteCollection`-Methode. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=de).
+Verwenden Sie die `DeleteCollection`-Methode. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=de){target="_blank"}.
 
 Geben Sie diese Informationen an:
 
@@ -273,7 +273,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängersammlung zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de) über die `logInfo`-Funktion.
+Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängersammlung zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Infos](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de){target="_blank"} über die `logInfo` -Funktion.
 
 #### Ergebnisse eines `getIfExists`-Vorgangs
 
@@ -359,7 +359,7 @@ Sie können Workflows programmgesteuert auslösen, beispielsweise in technischen
 
 Das Auslösen von Workflows erfolgt durch die Verwendung von Ereignissen. Sie können die folgenden Funktionen für Ereignisse verwenden:
 
-* Um ein Ereignis zu posten, können Sie die statische `PostEvent`-Methode verwenden. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=de).
+* Um ein Ereignis zu posten, können Sie die statische `PostEvent`-Methode verwenden. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=de){target="_blank"}.
 * Um ein Ereignis zu erhalten, können Sie die Aktivität **[!UICONTROL Externes Signal]** verwenden. [Weitere Informationen](external-signal.md).
 
 Sie haben verschiedene Möglichkeiten, Workflows auszulösen:
@@ -426,10 +426,10 @@ Führen Sie folgende Schritte aus:
 
 1. Definieren Sie die Abfrage:
 
-   * Rufen Sie eine Entität mithilfe der `create`-Methode für das entsprechende Schema ab, z. B. das `xtk:workflow`-Schema. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de).
+   * Rufen Sie eine Entität mithilfe der `create`-Methode für das entsprechende Schema ab, z. B. das `xtk:workflow`-Schema. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de){target="_blank"}.
    * Verwenden Sie die `queryDef`-Methode, um eine SQL-Abfrage auszugeben.
 
-1. Führen Sie die Abfrage mithilfe der `ExecuteQuery`-Methode aus. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=de).
+1. Führen Sie die Abfrage mithilfe der `ExecuteQuery`-Methode aus. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=de){target="_blank"}.
 
    Verwenden Sie die `for each`-Schleife zum Abrufen der Ergebnisse.
 
@@ -611,11 +611,11 @@ In diesem Video wird ein Beispiel für die Verwendung einer nicht statischen API
 
 ### API-Dokumentation
 
-* [Beispiele für SOAP-Aufrufe](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de)
+* [Beispiele für SOAP-Aufrufe](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de){target="_blank"}
 * Methoden:
-   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de)
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=de)
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=de)
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=de)
-   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=de)
-* [logInfo-Funktion](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de)
+   * [Erstellen](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de){target="_blank"}
+   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=de){target="_blank"}
+   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=de){target="_blank"}
+   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=de){target="_blank"}
+   * [Schreiben](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=de){target="_blank"}
+* [logInfo-Funktion](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de){target="_blank"}

@@ -5,10 +5,10 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '2745'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -175,7 +175,7 @@ Es gibt verschiedene Lösungen, um den Bedarf an Datensätzen in Adobe Campaign 
 
 Sie können in einem Schema das Attribut &quot;deleteStatus&quot; deklarieren. Effizienter ist es, den Datensatz als gelöscht zu markieren und das Löschen in die Bereinigungsaufgabe zu verschieben.
 
-![](../assets/do-not-localize/speech.png)  Wenden Sie sich als Benutzer von Managed Cloud Services an die Berater oder technischen Administratoren von Adobe, um mehr über die Datenspeicherung zu erfahren oder wenn Sie eine Datenspeicherung für benutzerdefinierte Tabellen aktivieren müssen.
+Wenden Sie sich als Managed Cloud Service-Benutzer an die Adobe-Berater oder technischen Administratoren, um mehr über die Beibehaltung zu erfahren oder um festzustellen, ob Sie die Beibehaltung für benutzerdefinierte  festlegen müssen.
 
 ## Performance {#performance}
 

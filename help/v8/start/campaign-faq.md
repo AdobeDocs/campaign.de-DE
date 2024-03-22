@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 86%
+ht-degree: 84%
 
 ---
 
@@ -22,7 +22,9 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihr Produkterlebnis zu verbessern. Deshalb erachten wir es für wichtig, dass Sie die aktuelle Version von Adobe Campaign verwenden.
 
-   ![](../assets/do-not-localize/speech.png)  Als Benutzer von Managed Cloud Services wird Ihre Instanz von Adobe mit jeder neuen Version aktualisiert.
+   >[!NOTE]
+   >
+   >Als Benutzer von Managed Cloud Service wird Ihre Instanz mit jeder neuen Version von Adobe aktualisiert.
 
 1. **Wie kann ich eine Verbindung zu Campaign v8 herstellen?**
 
@@ -65,7 +67,9 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Sie können Ihre Domain in Subdomains unterteilen, um Ihre Marken oder unterschiedlichen Textsorten (Transaktionsnachrichten, Marketing-Informationen usw.) voreinander zu trennen.
 
-   ![](../assets/do-not-localize/speech.png) Wenden Sie sich als Managed Cloud Service-Benutzer an Adobe, um Ihre Subdomains an Adobe zu delegieren.
+   >[!NOTE]
+   >
+   >Wenden Sie sich als Managed Cloud Service-Benutzer an Adobe, um Ihre Subdomains an Adobe zu delegieren.
 
 1. **Kann ich als Campaign Classic v7-Anwender zu Campaign v8 migrieren?**
 
@@ -73,7 +77,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Campaign v8 ist derzeit **nur** als Managed Cloud Service verfügbar und kann nicht in On-Premise- oder Hybrid-Umgebungen bereitgestellt werden.
 
-   ![](../assets/do-not-localize/speech.png) Weitere Informationen zum Migrationsprozess erhalten Sie von Ihrem Adobe-Support-Mitarbeiter.
+   Weitere Informationen zum Migrationsprozess erhalten Sie von Ihrem Adobe-Support-Mitarbeiter.
 
 1. **Wo kann ich Campaign herunterladen?**
 

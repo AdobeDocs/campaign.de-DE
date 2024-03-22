@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '3042'
-ht-degree: 85%
+ht-degree: 81%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 Bounces sind das Ergebnis eines Versandversuchs und -fehlers, bei dem der ISP Fehlermeldungen zurückgibt. Die Bounce-Verarbeitung ist ein wichtiger Bestandteil der Listenhygiene. Nach mehrmaligen Bounces einer E-Mail wird sie von diesem Prozess markiert und unterdrückt.
 
-Dadurch wird verhindert, dass Systeme weiterhin E-Mails mit ungültigen E-Mail-Adressen versenden. Bounces sind eines der wichtigsten Kriterien, mit denen ISPs die IP-Reputation bestimmen. Es ist wichtig, diese Metrik im Auge zu behalten. Die häufigste Methode zur Messung des Versands von Marketing-Nachrichten ist wahrscheinlich der Vergleich von „Zugestellt“ mit „Bounce“. Je höher der Prozentsatz der zugestellten Mails ist, desto besser.
+Dadurch wird verhindert, dass Systeme weiterhin E-Mails mit ungültigen E-Mail-Adressen versenden. Bounces sind eines der wichtigsten Kriterien, mit denen ISPs die IP-Reputation bestimmen. Es ist wichtig, diese Metrik im Auge zu behalten. Die häufigste Methode zur Messung des Versands von Marketing-Nachrichten ist wahrscheinlich &quot;Zugestellt&quot;oder &quot;Bounce&quot;. Je höher der bereitgestellte Prozentsatz ist, desto besser.
 
 Wenn eine Nachricht nicht an ein Profil gesendet werden kann, sendet der Remote-Server automatisch eine Fehlermeldung an Adobe Campaign. Dieser Fehler wird qualifiziert, um festzustellen, ob die E-Mail-Adresse, die Telefonnummer oder das Gerät unter Quarantäne gestellt werden soll. Siehe [Bounce-Message-Verwaltung](#bounce-mail-qualification).
 
@@ -29,9 +29,9 @@ Wenn eine E-Mail-Adresse unter Quarantäne gestellt wird oder sich ein Profil au
 Es gibt zwei Typen von fehlgeschlagenen Sendungen. Jeder Fehlertyp bestimmt, ob eine Adresse in [Quarantäne](quarantines.md#quarantine-reason) gestellt wird oder nicht.
 
 * **Hardbounces**
-Hardbounces sind dauerhafte Fehler, die erzeugt werden, wenn ein ISP feststellt, dass eine E-Mail nicht an eine Abonnentenadresse zugestellt werden kann. Innerhalb von Adobe Campaign werden Hardbounces, die als nicht zustellbar kategorisiert sind, zur Quarantäneliste hinzugefügt, was bedeutet, dass kein erneuter Zustellversuch stattfindet. In manchen Fällen wird ein Hardbounce ignoriert, wenn die Ursache des Fehlers unbekannt ist.
+Hardbounces sind dauerhafte Fehler, die erzeugt werden, wenn ein ISP feststellt, dass eine E-Mail nicht an eine Abonnentenadresse zugestellt werden kann. Innerhalb von Adobe Campaign werden Hardbounces, die als nicht zustellbar kategorisiert sind, der Quarantäneliste hinzugefügt, was bedeutet, dass sie nicht erneut versucht werden. In manchen Fällen wird ein Hardbounce ignoriert, wenn die Ursache des Fehlers unbekannt ist.
 
-  Im Folgenden finden Sie einige gängige Beispiele für Hardbounces: Adresse existiert nicht, Konto deaktiviert, fehlerhafte Syntax, ungültige Domain
+  Im Folgenden finden Sie einige häufige Beispiele für Hardbounces: Adresse ist nicht vorhanden, Konto deaktiviert, schlechte Syntax, ungültige Domain
 
 * **Softbounces**
 Softbounces sind temporäre Fehler, die von ISPs bei Versandproblemen von E-Mails erzeugt werden. Bei Softbounces werden mehrfache [erneute Zustellversuche](#retries) unternommen (abhängig von den benutzerdefinierten oder vorkonfigurierten Versandeinstellungen), um einen erfolgreichen Versand durchzuführen. Adressen, die kontinuierlich einen Softbounce verursachen, werden erst dann unter Quarantäne gestellt, wenn eine maximale Anzahl erneuter Zustellungen versucht wurde (was wiederum je nach Einstellungen variiert).
@@ -40,7 +40,7 @@ Softbounces sind temporäre Fehler, die von ISPs bei Versandproblemen von E-Mail
 
 **Ignoriert**: Vorübergehender Fehler, beispielsweise &quot;Out of office&quot; oder technischer Fehler bei Absendern vom Typ &quot;Postmaster&quot;.
 
-Die Feedback-Schleife funktioniert wie Bounce-E-Mails: Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen an diesen Benutzer blockiert werden. Die Adressen dieser Benutzer befinden sich dann auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen werden in die Quarantänetabelle (**NmsAddress**) und nicht in die Empfängertabelle (**NmsRecipient**) mit dem Status **[!UICONTROL Auf die Blockierungsliste gesetzt]** aufgenommen. Im [Handbuch von Adobe mit Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops) erfahren Sie mehr über den Mechanismus der Feedback-Schleife.
+Die Feedback-Schleife funktioniert wie Bounce-E-Mails: Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen an diesen Benutzer blockiert werden. Die Adressen dieser Benutzer befinden sich dann auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen werden in die Quarantänetabelle (**NmsAddress**) und nicht in die Empfängertabelle (**NmsRecipient**) mit dem Status **[!UICONTROL Auf die Blockierungsliste gesetzt]** aufgenommen. Erfahren Sie mehr über den Feedback Loop-Mechanismus in [Best Practices für die Adobe-Zustellbarkeit - Handbuch](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops){target="_blank"}.
 
 ## Synchrone und asynchrone Fehler {#synchronous-and-asynchronous-errors}
 
@@ -97,7 +97,7 @@ Bounce mails can have the following qualification status:
 
 Wenn der Nachrichtenversand aufgrund eines temporären Fehlers fehlschlägt (**Soft** oder **Ignoriert**), versucht Campaign eine erneute Zustellung. Diese weiteren Zustellversuche können bis zum Ende der Versandlaufzeit durchgeführt werden.
 
-Weitere Zustellversuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den MTA bestimmt, basierend auf Typ und Schweregrad der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
+Versuche mit Softbounces und die Zeitdauer zwischen ihnen werden durch den MTA bestimmt, der auf dem Typ und der Schwere der Bounce-Antworten basiert, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
 >[!NOTE]
 >
