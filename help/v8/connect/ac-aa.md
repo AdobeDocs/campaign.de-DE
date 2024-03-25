@@ -5,10 +5,10 @@ feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: adfde71faebf3cec7e7b730c9753e6765aeadab0
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 92%
+source-wordcount: '1527'
+ht-degree: 84%
 
 ---
 
@@ -124,7 +124,7 @@ Beachten Sie Folgendes: Wenn eine Ihrer **[!UICONTROL Report Suites]**, **[!UICO
 
 Weitere Informationen hierzu finden Sie im Abschnitt [Produktprofile für Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=de#product-profile-admins){target="_blank"} Seite.
 
-1. Rufen Sie im Navigationsbaum von Adobe Campaign den Ordner **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]** auf und klicken Sie auf **[!UICONTROL Neu]**.
+1. Navigieren Sie zum **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]** Ordner des Adobe Campaign-Explorer-Navigationsbaums und klicken Sie auf **[!UICONTROL Neu]**.
 
    ![](assets/analytics_connnector_9.png)
 
@@ -244,6 +244,25 @@ Damit die Adobe Experience Cloud nach Versand der Nachrichten durch Adobe Campai
 
 1. Sie können jetzt Ihren Versand durchführen und Ihren Bericht dazu in Adobe Analytics abrufen.
 
+
+## Remarketing-Kampagne erstellen {#create-a-re-marketing-campaign}
+
+Zur Vorbereitung von Remarketing-Kampagnen ist die Erstellung von spezifischen Versandvorlagen erforderlich. Anschließend ist die Remarketing-Kampagne zu konfigurieren und einem Segment zuzuweisen. Jedem Segment muss eine andere Remarketing-Kampagne entsprechen.
+
+Remarketing-Kampagnen werden automatisch gestartet, sobald Adobe Campaign die Segmente wiederhergestellt hat, mit denen das Verhalten der Zielgruppe der ursprünglichen Kampagne analysiert wurde. Im Falle eines Warenkorbabbruchs oder einer Anzeige eines Produkts ohne Kauf wird ein Versand an die betroffenen Empfänger gesendet, damit der Besucher auf der Website seinen Kauf abschließen kann.
+
+Adobe Campaign stellt vorkonfigurierte Versandvorlagen zur Verfügung, die Sie verwenden oder als Anregung für Ihre Kampagnen nutzen können.
+
+1. Rufen Sie vom **[!UICONTROL Explorer]** aus den Ordner **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Versandvorlagen]** im Navigationsbaum von Adobe Campaign auf.
+1. Duplizieren Sie die Vorlage **[!UICONTROL E-Mail-Versand (Remarketing)]** oder die von Adobe Campaign vorgeschlagenen Remarketing-Vorlagenbeispiele.
+1. Passen Sie die Vorlage Ihren Bedürfnissen an und speichern Sie sie.
+1. Erstellen Sie eine neue Kampagne und wählen Sie aus der Dropdown-Liste die Vorlage **[!UICONTROL Remarketing-Kampagne]** aus;
+1. Klicken Sie auf den Link **[!UICONTROL Konfigurieren...]**, um das Segment und die der Kampagne entsprechende Versandvorlage anzugeben;
+1. Wählen Sie Analytics e aus.[Externes Konto](#external-account-ac)und dem entsprechenden Segment.
+1. Wählen Sie die für diese Remarketing-Kampagne zu verwendende Versandvorlage aus und klicken Sie auf **[!UICONTROL Beenden]**, um das Konfigurationsfenster zu schließen.
+1. Klicken Sie nun auf **[!UICONTROL OK]**, um das Kampagnenfenster zu schließen.
+
+Die **[!UICONTROL Remarketing-Effizienz]** auf der Seite &quot;Globale Berichte&quot;zugreifen. Damit können Sie die Anzahl der konvertierten Kontakte (d. h. die gekauften Artikel) in Bezug auf die Anzahl der Warenkorbabbrüche im Anschluss an die Adobe Campaign-Remarketing-Kampagne anzeigen. Die Konversionsrate wird pro Woche, Monat oder seit Beginn der Synchronisation zwischen Adobe Campaign und Adobe Analytics berechnet.
 
 **Verwandte Themen**
 
