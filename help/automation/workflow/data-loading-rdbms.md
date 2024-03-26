@@ -8,7 +8,7 @@ exl-id: 2d650573-f630-4aba-bd40-2db88ef1c346
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   Der Name der Tabelle, die in das entsprechende Feld eingegeben wurde, dient als Vorlage für die Datenerfassung in der externen Datenbank. Der Name der vom Workflow verarbeiteten Tabelle kann durch die eingehende Transition der Aktivität zum Laden der Daten berechnet oder übermittelt werden. Klicken Sie auf die Schaltfläche **[!UICONTROL Erweitert..]**. und wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** oder **[!UICONTROL Explizit]**.
+   Der im zugehörigen Feld eingetragene Name der Tabelle dient als Vorlage zum Abruf der Daten in der externen Datenbank. Der Name der Tabelle, die vom Workflow verarbeitet wird, kann berechnet oder von der eingehenden Transition der Datenladeaktivität übermittelt werden. Um die zu verwendende Tabelle auszuwählen, klicken Sie auf den Link **[!UICONTROL Erweitert…]**. und wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** oder **[!UICONTROL Explizit]**.
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 
@@ -34,6 +34,6 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_advuser_wf_sgbd_sample_2.png)
 
-1. Sie können einen Filter für diese Daten definieren. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Abfrage bearbeiten...]** -Link.
+1. Sie können einen Filter für diese Daten definieren. Klicken Sie dazu auf den Link **[!UICONTROL Abfrage bearbeiten…]**.
 
-   Derart abgerufene Daten sind im weiteren Verlauf des Workflows verwendbar.
+   Die derart abgerufenen Daten sind im weiteren Verlauf des Workflows verwendbar.

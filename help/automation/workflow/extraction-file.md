@@ -8,7 +8,7 @@ exl-id: 8510e879-2862-491f-bc52-ca8f56105932
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
    Die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** fügt eine weitere Etappe hinzu, die die Filterung des Aggregats ermöglicht (z. B. nach einer bestimmten Art von Bestellung, nach Kunden mit mehr als zehn Bestellungen etc.).
 
-1. Bei Bedarf können Sie der Ausgabedatei neue Spalten hinzufügen, z. B. Berechnungen oder Verarbeitungsergebnisse. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** Symbol.
+1. Bei Bedarf können Sie der Ausgabedatei zusätzliche Spalten hinzufügen, zum Beispiel die Ergebnisse von Auswertungen oder Verarbeitungen. Wählen Sie hierzu das Symbol **[!UICONTROL Hinzufügen]**.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -37,11 +37,11 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
    ![](assets/s_advuser_extract_file_add_exp.png)
 
-   Sie gelangen dann in das Auswahlfenster. Klicks **[!UICONTROL Erweiterte Auswahl]** , um den auf die Daten anzuwendenden Prozess auszuwählen.
+   Sie greifen dann auf das Auswahlfenster zu. Klicken Sie auf **[!UICONTROL Erweiterte Auswahl]**, um den auf die Daten anzuwendenden Prozess auszuwählen.
 
    ![](assets/s_advuser_extract_file_advanced_selection.png)
 
-   Kreuzen Sie den gewünschten Formeltyp an.
+   Kreuzen Sie die gewünschte Formel an.
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 

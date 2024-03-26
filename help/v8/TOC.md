@@ -192,7 +192,7 @@ ht-degree: 98%
       + [Schemastruktur](dev/schema-structure.md)
       + [Datenbank-Mapping](dev/database-mapping.md)
       + [Schlüssel-Management](dev/database-keys.md)
-      + [Link-Management](dev/database-links.md)
+      + [Verknüpfungs-Management](dev/database-links.md)
       + [Einschränken der Anzeige von personenbezogenen Daten](dev/restrict-pi-view.md)
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)

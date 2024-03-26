@@ -8,13 +8,13 @@ exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
 source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '1476'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Versionshinweise 2023 {#2023-rn}
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen aufgelistet, die mit **Campaign v8-Versionen 2023**.
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen von 2023** aufgelistet.
 
 ## Version 8.5.2 {#release-8-5-2}
 

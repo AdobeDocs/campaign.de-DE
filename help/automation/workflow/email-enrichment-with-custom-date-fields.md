@@ -8,7 +8,7 @@ exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '631'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -81,7 +81,7 @@ Konfigurieren Sie anschließend die Aktivität **[!UICONTROL Anreicherung]**:
 
    ![](assets/uc_enrichment_12.png)
 
-1. Klicks **[!UICONTROL Ok]**. Ihre Anreicherung ist jetzt fertig.
+1. Klicken Sie auf **[!UICONTROL OK]**. Ihre Anreicherung ist jetzt fertig.
 
 Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinzufügen. In unserem Fall haben wir einen E-Mail-Versand hinzugefügt, mit dem Empfänger, die im aktuellen Monat Geburtstag feiern, ein spezielles Angebot mit Gültigkeitsdaten erhalten.
 

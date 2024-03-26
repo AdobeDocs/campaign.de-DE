@@ -8,7 +8,7 @@ exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
 source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -220,4 +220,4 @@ Sie können im CRM-System gelöschte Objekte in Adobe Campaign importieren.
 
 Geben Sie zur Löschung von Objekten im CRM den Primärschlüssel der zu löschenden Remote-Elemente an.
 
-Die **[!UICONTROL Verhalten]** -Tab ermöglicht die Aktivierung der Zurückweisungsverarbeitung. Diese Option erzeugt eine zweite ausgehende Transition für die **[!UICONTROL CRM-Connector]** -Aktivität. Konsultieren Sie diesbezüglich die [Fehlerverarbeitung](#error-processing).
+Die Registerkarte **[!UICONTROL Verhalten]** ermöglicht es, die Verarbeitung von Zurückweisungen zu aktivieren. Diese Option erzeugt eine zweite ausgehende Transition für die Aktivität **[!UICONTROL CRM-Connector]**. Mehr dazu finden Sie unter [Fehlerverarbeitung](#error-processing).

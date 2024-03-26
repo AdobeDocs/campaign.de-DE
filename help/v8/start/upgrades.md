@@ -8,7 +8,7 @@ exl-id: 04bda36f-051f-41a3-84b3-6af3c5e34ab2
 source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Bei den Upgrades kann es sich um folgende Arten handeln:
 
 * **Wichtige Upgrades**, von einer Hauptversion auf eine andere, z. B. von v7 zu v8. Diese Upgrades beinhalten neue Funktionen, Verbesserungen, Kompatibilitäts- und Sicherheitsaktualisierungen sowie Fehlerbehebungen.
 * **Geringfügige Upgrades**, von einer Nebenversion auf eine andere, z. B. von v8.5 auf v8.6. Diese Upgrades beinhalten Verbesserungen, Kompatibilitäts- und Sicherheitsaktualisierungen sowie Fehlerbehebungen.
-* **Patch-Upgrades**, von einer Patch-Version zu einer anderen, z. B. von v8.5.1 bis v8.5.2. Diese Aktualisierungen bringen Sicherheitsupdates und -korrekturen mit sich.
+* **Patch-Upgrades**, von einer Patch-Version auf eine andere, z. B. von v8.5.1 auf v8.5.2. Diese Upgrades beinhalten Sicherheitsaktualisierungen und Fehlerbehebungen.
 
 Detaillierte Informationen zu den einzelnen neuen Versionen finden Sie in den [Versionshinweisen](release-notes.md).
 

@@ -8,7 +8,7 @@ exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1061'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
    ![](assets/uc2_enrich_collecteur.png)
 
-   Die **Datei-Wächter** -Aktivität können Sie das Fehlen einer Datei im Quellverzeichnis verwalten. Überprüfen Sie dazu die **[!UICONTROL Fehlen von Dateien bearbeiten]** -Option. In diesem Workflow wird ein **Warten** wurde hinzugefügt, um eine weitere Dateierfassung auszuprobieren, wenn sie zum Zeitpunkt der Sammlung im Verzeichnis fehlt.
+   Mit der Aktivität **Datei-Wächter** können Sie die Abwesenheit einer Datei im Quellverzeichnis verwalten. Kreuzen Sie hierzu die Option **[!UICONTROL Fehlen von Dateien bearbeiten]** an. In diesem Workflow wurde eine Aktivität **Warten** hinzugefügt, um eine weitere Dateisammlung zu versuchen, wenn sie zum Zeitpunkt der Sammlung im Verzeichnis fehlt.
 
 1. Konfigurieren Sie die Aktivität **Laden (Datei)**, indem Sie eine Beispieldatei angeben, die die gleiche Datenstruktur wie die zu importierenden Daten aufweist.
 
@@ -109,7 +109,7 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 ## Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Bestellungen&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
 
-In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die &quot;Verkauf&quot;-Tabelle geschrieben werden. Dazu müssen wir eine **Daten aktualisieren** -Aktivität.
+In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die Tabelle „Bestellungen“ geschrieben werden. Dafür müssen wir eine Aktivität vom Typ **Daten-Update** verwenden.
 
 Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.****
 
@@ -126,7 +126,7 @@ Konfigurieren Sie die **Datenaktualisierung**-Aktivität wie folgt:
 1. Aktivieren Sie im Feld **[!UICONTROL Aktionstyp]** die Option **[!UICONTROL Hinzufügen oder aktualisieren]**, um zu vermeiden, dass bei jedem Datenabruf neue Datensätze erstellt werden.
 1. Geben Sie bei der Option **[!UICONTROL Datensatz-Identifizierung]** den Wert **[!UICONTROL Über die Zielgruppendimension]** an.
 1. Wählen Sie als **[!UICONTROL Dokumenttyp]** das Schema &quot;Verkauf&quot; aus.
-1. Geben Sie die Liste der zu aktualisierenden Felder an. Die **[!UICONTROL Ziel]** -Spalte können Sie die Felder des Schemas &quot;Verkauf&quot; definieren. Die **[!UICONTROL Ausdruck]** -Spalte können Sie die Felder der Arbeitstabelle auswählen, um eine Zuordnung vorzunehmen.
+1. Geben Sie die Liste der zu aktualisierenden Felder an. In der Spalte **[!UICONTROL Ziel]** können Sie die Felder des Schemas „Bestellungen“ definieren. In der Spalte **[!UICONTROL Ausdruck]** können Sie die Felder der Arbeitstabelle auswählen, um eine Zuordnung vorzunehmen.
 1. Aktivieren Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]**.
 
 

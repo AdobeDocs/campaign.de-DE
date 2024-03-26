@@ -8,7 +8,7 @@ exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -88,12 +88,12 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 
 Ein Versandentwurf kann Artikel, Personalisierungsfelder und Angebote enthalten:
 
-* Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
-* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen und nicht auf Empfänger beziehen. Auf diese Weise können Werte erstellt werden, die in Sendungen mit einer bestimmten Zielgruppe verwendet werden (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über das **[!UICONTROL Personalisierungsfelder importieren..]** -Link.
+* Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und dem Versand angehängt werden.
+* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen statt auf Empfängerinnen oder Empfänger beziehen. Auf diese Weise können Werte erstellt werden, die in Sendungen mit einer bestimmten Zielgruppe verwendet werden sollen (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Entwurf importiert.
 
   ![](assets/del-outline-perso-field.png)
 
-  Über das Symbol **[!UICONTROL Hinzufügen]** rechts vom Bereich der Liste können dem Entwurf auch direkt Personalisierungselemente hinzugefügt werden.
+  Über das Symbol **[!UICONTROL Hinzufügen]** rechts vom Bereich der Liste können in dem Entwurf auch direkt Personalisierungselemente erstellt werden.
 
   ![](assets/add-del-outline-button.png)
 

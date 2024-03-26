@@ -40,7 +40,7 @@ Als früherer [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die me
 >Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Die Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die schon vorkonfiguriert ist.
 
 
-## Hybride Architektur {#hybrid-archi}
+## Hybridarchitektur {#hybrid-archi}
 
 Campaign v8 basiert auf einer **Hybridarchitektur**. Wenn Sie von Campaign Classic v7 wechseln, beachten Sie, dass alle Sendungen den Mid-Sourcing-Server durchlaufen.
 

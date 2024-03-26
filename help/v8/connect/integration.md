@@ -8,7 +8,7 @@ exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
@@ -22,9 +22,9 @@ Adobe Campaign verfügt über mehrere Connectoren, über die Sie mit externen Pr
 
 Kombinieren Sie Adobe Experience Cloud-Lösungen, um Ihre Implementierung zu modernisieren.
 
-Campaign v8 kann eine Verbindung zu den folgenden Adobe-Lösungen herstellen. Unter den Links erfahren Sie mehr zu Anwendungsfällen, Konfiguration und Richtlinien:
+Campaign v8 kann eine Verbindung zu den folgenden Adobe-Lösungen herstellen. Gehen Sie die Links durch, um mehr über Anwendungsfälle, die Konfiguration und Richtlinien zu erfahren:
 
-* Adobe Analytics.[Weitere Informationen](../connect/ac-aa.md)
+* Adobe Analytics.     [Weitere Informationen](../connect/ac-aa.md)
 * Adobe Experience Cloud-Trigger. [Weitere Informationen](../connect/ac-triggers.md)
 * Adobe Experience Manager: [Weitere Informationen](../connect/ac-aem.md)
 * Adobe Experience Platform. [Weitere Informationen](../connect/ac-aep.md)

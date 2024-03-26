@@ -8,7 +8,7 @@ exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '754'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Sobald alle Validierungsanfragen bestätigt wurden, erhält der Versand den Stat
 
 ![](assets/confirm-delivery.png)
 
-Die Informationen werden auch im Dashboard der Kampagne angezeigt. Die **[!UICONTROL Versand bestätigen]** -Link ermöglicht den Start des Versands.
+Die Informationen werden auch auf dem Kampagnen-Dashboard angezeigt. Der Link **[!UICONTROL Absendung bestätigen]** ermöglicht es, den Versand zu beginnen.
 
 ![](assets/confirm-delivery-from-dashboard.png)
 
@@ -79,9 +79,9 @@ Gehen Sie wie folgt vor, um den Inhalt zu validieren und die Datei an den Provid
 
    Zunächst muss die Zielgruppe der Testsendungen bestimmt werden.
 
-   Sie können so viele Testsendungen wie nötig erstellen. Diese werden über die **[!UICONTROL Briefpost...]** Link der Versanddetails.
+   Sie können so viele Testsendungen wie nötig erstellen. Über den Link **[!UICONTROL Briefpost…]** der Versanddetails können Sie auf sie zugreifen.
 
-1. Der Versandstatus ändert sich in **[!UICONTROL Senden]**. Klicken Sie auf **[!UICONTROL Testsendungen durchführen]** -Schaltfläche, um den Validierungsprozess zu starten.
+1. Der Versandstatus ändert sich zu **[!UICONTROL Zu unterbreiten]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Testsendungen unterbreiten]**, um den Validierungsprozess zu beginnen.
 
 1. Der Versandstatus wird daraufhin zu **[!UICONTROL Testversand zu validieren]**. Über die entsprechende Schaltfläche kann die Validierung erfolgen.
 

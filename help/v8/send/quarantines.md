@@ -8,7 +8,7 @@ exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Ende 2. Jahr: ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
 
 Darüber hinaus zeigt der integrierte Bericht **[!UICONTROL Fehler und Bounces]**, der im Abschnitt **Berichte** auf der Startseite verfügbar ist, Informationen zu den in Quarantäne befindlichen E-Mail-Adressen, zu den aufgetretenen Fehlertypen und zur Verteilung von Fehlern nach Domain. Sie können Daten nach einem bestimmten Versand filtern oder diesen Bericht nach Bedarf anpassen.
 
-Erfahren Sie mehr über Bounce-Adressen in der [Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=de){target="_blank"}.
+Im [Handbuch zu den Best Practices für die Optimierung der Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=de){target="_blank"} erfahren Sie mehr über Bounce-Adressen.
 
 ### E-Mail-Adresse in Quarantäne {#quarantined-recipient}
 
@@ -120,8 +120,8 @@ Nachfolgend befinden sich die empfohlenen Richtlinien für diese Abfrage:
 
 * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
 * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
-* **Status aktualisieren (@lastModified)** auf oder nach `MM/DD/YYYY HH:MM:SS AM`
-* **Status aktualisieren (@lastModified)** auf oder vor `MM/DD/YYYY HH:MM:SS PM`
+* **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS AM` oder später
+* **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS PM` oder früher 
 
 Sobald die Liste der betroffenen Empfängerinnen und Empfänger vorliegt, muss die Aktivität **[!UICONTROL Daten-Update]** hinzugefügt werden, um ihren Status auf **[!UICONTROL Gültig]** zu setzen, damit sie durch den **[!UICONTROL Datenbankbereinigungs]**-Workflow aus der Quarantäneliste entfernt werden. Sie können sie auch einfach aus der Quarantänetabelle löschen.
 

@@ -4,17 +4,17 @@ description: Grundlegendes zur Schlüsselverwaltung in Adobe Campaign-Schemata
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
+exl-id: cf1f5cfc-172f-44ec-ac97-804d15f9d628
+source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
-
 # Schlüsselverwaltung {#management-of-keys}
 
-Jede mit einem Datenschema verknüpfte Tabelle muss über mindestens einen Schlüssel zur Identifizierung eines Datensatzes in einer Tabelle verfügen.
+Jede mit einem Datenschema verknüpfte Tabelle benötigt mindestens einen Schlüssel zur Identifizierung eines Eintrags in einer Tabelle.
 
 Ein Schlüssel wird über das Hauptelement des Datenschemas deklariert.
 
@@ -26,7 +26,7 @@ Ein Schlüssel wird über das Hauptelement des Datenschemas deklariert.
 </key>
 ```
 
-Ein Schlüssel wird als &quot;Primärschlüssel&quot;bezeichnet, wenn er der erste im Schema ist, der ausgefüllt werden soll, oder wenn er die Variable `internal` auf &quot;true&quot;gesetzt ist.
+Ein Schlüssel wird als „Primärschlüssel“ bezeichnet, wenn er an erster Stelle im auszufüllenden Schema steht oder wenn er ein `internal`-Attribut enthält, das auf „true“ festgelegt ist.
 
 Ein Schlüssel kann auf ein oder mehrere Felder in der Tabelle verweisen.
 
@@ -50,7 +50,7 @@ Ein Schlüssel kann auf ein oder mehrere Felder in der Tabelle verweisen.
   </srcSchema>
   ```
 
-  Generiertes Schema:
+  Das generierte Schema:
 
   ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -87,7 +87,7 @@ Ein Schlüssel kann auf ein oder mehrere Felder in der Tabelle verweisen.
   </srcSchema>
   ```
 
-  Generiertes Schema:
+  Das generierte Schema:
 
   ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -122,7 +122,7 @@ Im folgenden Beispiel deklarieren wir einen inkrementellen Schlüssel im Quellsc
 </srcSchema>
 ```
 
-Generiertes Schema:
+Das generierte Schema:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -142,4 +142,3 @@ Zusätzlich zur Definition des Schlüssels wurde dem erweiterten Schema ein nume
 >[!CAUTION]
 >
 >Ein Datensatz mit einem auf 0 gesetzten Primärschlüssel wird bei der Erstellung der Tabelle automatisch eingefügt. Durch die Verwendung dieses Datensatzes werden äußere Joins vermieden, die sich bei Volumentabellen als nicht effektiv erweisen. Standardmäßig werden alle Fremdschlüssel mit dem Wert 0 initialisiert. Auf diese Weise kann beim Join immer ein Ergebnis zurückgegeben werden, wenn das Datenelement nicht ausgefüllt wird.
-

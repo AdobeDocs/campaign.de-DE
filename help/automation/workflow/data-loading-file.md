@@ -8,7 +8,7 @@ exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Im oberen Bereich des Fensters zur Konfiguration dieser Aktivität wird das Date
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-Sie können eine Vorab-Bearbeitung definieren, die beim Dateiimport ausgeführt werden soll, um beispielsweise die Datei nicht auf dem Server entpacken zu müssen (und damit Speicherplatz für die entpackte Datei zu sparen), sondern die Dateiverarbeitung mit der Dekomprimierung zu beauftragen. Wählen Sie die **[!UICONTROL Vorab-Bearbeitung der Datei]** und wählen Sie eine der drei Optionen: **[!UICONTROL Keines]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (g).
+Es besteht die Möglichkeit, eine Vorab-Bearbeitung zu definieren, die während des Dateiimports ausgeführt werden soll. Hierbei kann es sich z. B. darum handeln, dass die Datei nicht auf dem Server, sondern im Zuge der Dateiverarbeitung entpackt wird (was Speicherplatz für die entpackte Datei spart). Wählen Sie die Option **[!UICONTROL Datei vorab bearbeiten]** und wählen Sie dann eine der drei Optionen: **[!UICONTROL Keine]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
 
@@ -73,7 +73,7 @@ Verschiedene Optionen zum Umgang mit den Spaltenwerten stehen zur Auswahl:
    * **[!UICONTROL Großbuchstaben]**: Alle Buchstaben des Strings werden großgeschrieben.
    * **[!UICONTROL Kleinbuchstaben]**: Alle Buchstaben des Strings werden kleingeschrieben.
 
-* **[!UICONTROL Verwaltung von Leerraum]**: Gibt an, ob bestimmte Leerzeichen in einer Zeichenfolge ignoriert werden müssen. Die **[!UICONTROL Leerzeichen ignorieren]** -Wert erlaubt nur, Leerzeichen am Anfang und am Ende einer Zeichenfolge zu ignorieren.
+* **[!UICONTROL Umgang mit Leerzeichen]**: Angabe, ob gewisse Leerzeichen einem String ignoriert werden sollen. Der Wert **[!UICONTROL Leerzeichen ignorieren]** erlaubt es nur, Leerzeichen am Anfang und am Ende eines Strings zu ignorieren.
 * **[!UICONTROL Umgang mit Fehlern]**: Definition des Verhaltens beim Auftritt von Fehlern.
 
    * **[!UICONTROL Wert ignorieren]**: Der Wert wird ignoriert. Im Ausführungsprotokoll des Workflows wird ein Hinweis erzeugt.
@@ -134,6 +134,6 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
 
    ![](assets/s_advuser_load_file_sample_6.png)
 
-1. Definieren Sie dann die Prozesse für jeden Populationstyp. In unserem Beispiel werden wir **[!UICONTROL Daten aktualisieren]** in der Datenbank. Platzieren Sie dazu eine **[!UICONTROL Daten aktualisieren]** -Aktivität am Ende jeder ausgehenden Transition aus der Aufspaltungsaktivität.
+1. Definieren Sie dann die auszuführenden Prozesse für jeden Populationstyp. In unserem Beispiel werden wir in der Datenbank die **[!UICONTROL Daten aktualisieren]**. Platzieren Sie dazu die Aktivität **[!UICONTROL Daten-Update]** am Ende jeder ausgehenden Transition der Aktivität „Aufspaltung“.
 
    Die Aktivität **[!UICONTROL Daten-Update]** wird im Abschnitt [Daten-Update](update-data.md) genauer beschrieben.

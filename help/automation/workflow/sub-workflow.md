@@ -7,7 +7,7 @@ exl-id: c530fb4e-d21e-4059-88e1-77a8d33a7832
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Im folgenden Beispiel ruft ein primärer Workflow einen Unter-Workflow mithilfe 
    ![](assets/subworkflow_selection.png)
 
 1. Es besteht auch die Möglichkeit, ein Konfigurationsscript hinzuzufügen, um die Funktionsweise des referenzierten Workflows anzupassen.
-1. Klicks **[!UICONTROL Ok]**. Es wird automatisch eine ausgehende Transition mit dem Titel der **[!UICONTROL Sprung (Startpunkt)]** -Aktivität aus dem ausgewählten Workflow aus.
+1. Klicken Sie auf **[!UICONTROL OK]**. Dadurch wird automatisch eine ausgehende Transition mit dem Titel der Aktivität **[!UICONTROL Sprung (Start)]** aus dem ausgewählten Workflow erstellt.
 
    ![](assets/subworkflow_outbound.png)
 

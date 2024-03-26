@@ -8,11 +8,11 @@ exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1061'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
-# Adobe Experience Platform-Profile über Adobe Campaign-Landingpages aktualisieren {#ac-aep-lp}
+# Aktualisieren von Adobe Experience Platform-Profilen über Adobe Campaign-Landingpages {#ac-aep-lp}
 
 Durch die Integration von Adobe Campaign mit Adobe Experience Platform können Sie Profildaten nahtlos zwischen Ihren Adobe Campaign-Landingpages und Adobe Experience Platform synchronisieren. Diese Integration ermöglicht Ihnen Folgendes:
 
@@ -102,7 +102,7 @@ Um diese Optionen bei Ausführung des Landingpage-Workflows automatisch zu konfi
 
 Bei Ausführung des Workflows werden die Optionen automatisch in der Campaign-Konsole mit den angegebenen Werten erstellt.
 
-    &quot;javascript
+    ```javascript
     loadLibrary(&quot;xtk:shared/nl.js&quot;);
     loadLibrary(&quot;xtk:shared/xtk.js&quot;);
     loadLibrary(&quot;xtk:shared/json2.js&quot;);
@@ -115,7 +115,7 @@ Bei Ausführung des Workflows werden die Optionen automatisch in der Campaign-Ko
     setOption(&quot;IMS_ORG_ID&quot;, cryptString(&#39;ORGANIZATION ID&#39;));
     setOption(&quot;IMS_CLIENT_API_KEY&quot;, cryptString(&#39;CLIENT ID&#39;));
     }
-    &quot;
+    ```
 
 >[!ENDTABS]
 

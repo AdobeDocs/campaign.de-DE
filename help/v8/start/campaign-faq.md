@@ -8,7 +8,7 @@ exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 84%
+ht-degree: 89%
 
 ---
 
@@ -32,11 +32,11 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    [Hier erfahren Sie mehr darüber](connect.md).
 
-   Ab Campaign-Version 8.6 haben Sie Zugriff auf die neue **Campaign-Webbenutzeroberfläche**, verfügbar in der zentralen Adobe Experience Cloud-Umgebung. Experience Cloud ist die integrierte Familie von Anwendungen, Produkten und Diensten von Adobe für das digitale Marketing. Über die intuitive Benutzeroberfläche können Sie schnell auf Ihre Cloud-Anwendungen, Produktfunktionen und Dienste zugreifen.
+   Ab der Campaign-Version v8.6 haben Sie Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist. Experience Cloud ist die integrierte Familie von Anwendungen, Produkten und Diensten von Adobe für das digitale Marketing. Über die intuitive Benutzeroberfläche können Sie schnell auf Ihre Cloud-Anwendungen, Produktfunktionen und Dienste zugreifen.
 
    [Auf dieser Seite](campaign-ui.md#ac-web-ui) erfahren Sie, wie Sie eine Verbindung mit Adobe Experience Cloud herstellen und auf die Benutzeroberfläche von Adobe Campaign Web zugreifen.
 
-   Weitere Informationen finden Sie unter [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+   Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 1. **Kann Campaign v8 in einer On-Premise- oder Hybridumgebung installiert werden?**
 
    Campaign v8 ist nur in verwalteten Cloud Services verfügbar, die vollständig unter Adobe gehostet werden.

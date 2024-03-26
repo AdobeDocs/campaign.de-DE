@@ -9,7 +9,7 @@ exl-id: 1a75f411-3f71-4114-b738-277820dc6138
 source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
 workflow-type: tm+mt
 source-wordcount: '1819'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -213,7 +213,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
    * (Empfohlen) **[!UICONTROL Token-basierte Authentifizierung]**: Füllen Sie die Verbindungseinstellungen **[!UICONTROL Schlüssel-ID]**, **[!UICONTROL Team-ID]** und **[!UICONTROL Paket-ID]** aus und wählen Sie dann Ihr p8-Zertifikat, indem Sie auf **[!UICONTROL Privaten Schlüssel eingeben...]** klicken. Weitere Informationen zur **[!UICONTROL Token-basierten Authentifizierung]** finden Sie in der [Apple-Dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
-   * **[!UICONTROL Zertifikatbasierte Authentifizierung]**: Klicken **[!UICONTROL Geben Sie das Zertifikat ein...]**  Wählen Sie dann Ihren p12-Schlüssel aus und geben Sie das vom Entwickler der Mobile App bereitgestellte Kennwort ein. Beachten Sie, dass dieses Zertifikat mit einem Ablaufdatum versehen ist und jährlich erneuert werden muss. Um eine Unterbrechung des Diensts für Ihre Benutzer zu vermeiden, aktualisieren Sie Ihre Zertifikate, bevor sie ablaufen. Zertifikate sind ein Jahr lang gültig und müssen aktualisiert werden, damit Sie weiterhin mit APNS kommunizieren können.
+   * **[!UICONTROL Zertifikatbasierte Authentifizierung]**: Klicken Sie auf **[!UICONTROL Zertifikat eingeben…]**. Wählen Sie dann Ihren p12-Schlüssel und geben Sie das Passwort ein, das der Entwickler bzw. die Entwicklerin der Mobile App bereitgestellt hat. Beachten Sie, dass dieses Zertifikat ein Ablaufdatum besitzt und jährlich erneuert werden muss. Um eine Unterbrechung des Diensts für Ihre Benutzenden zu vermeiden, müssen Sie Ihre Zertifikate aktualisieren, bevor sie ablaufen. Zertifikate sind ein Jahr lang gültig und müssen aktualisiert werden, um weiterhin mit APNs kommunizieren zu können.
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Verbindung testen]**, um Ihre Konfiguration zu validieren.
 
