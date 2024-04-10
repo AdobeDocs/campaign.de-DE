@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Verbessern Sie die Geschwindigkeit und den Umfang aller Aspekte Ihrer Marketing-
 
 Adobe Campaign erleichtert Ihnen die Synchronisation Ihrer Kanäle mithilfe einer zentralen, benutzerfreundlichen Benutzeroberfläche für die Kampagnenorchestrierung. Auf diese Weise können Ihre Online-Kanäle – wie E-Mail, Internet, Mobile und Social Media – optimal auf Ihre Offline-Kanäle abgestimmt werden, einschließlich Briefpost, Callcenter, Ladengeschäft usw. Adobe Campaign ermöglicht es Ihnen, Ihren Kunden ein konsistentes und kontextuelles Erlebnis in digitalen und traditionellen Kanälen bereitzustellen. Adobe Campaign vereinfacht die Bereitstellung von Inhalten für alle Pfade, für die sich Ihre Kunden entscheiden können – auf jedem beliebigen Kanal.
 
-[Weitere Informationen zu Campaign-Workflows](../config/workflows.md)
+[Weitere Informationen zu Workflows in Campaign](../config/workflows.md)
 
 ### Personalisiertes E-Mail-Marketing {#perso-email-mkt}
 

@@ -6,9 +6,9 @@ role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Wichtigste Vorteile:
 
 Sie können das Campaign Control Panel auch zum Konfigurieren Ihrer Instanzeinstellungen (z. B. IP-Zulassungsliste und URL-Berechtigungen) oder Abrufen von Informationen über Ihre Instanz nutzen.
 
-Weitere Informationen finden Sie unter [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"}.
 
 ## Zugriff auf das Control Panel {#ac-control-panel-access}
 
@@ -32,7 +32,7 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 
 ## Control Panel – häufig gestellte Fragen {#ac-control-faq}
 
-[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"}, um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de#control-panel){target="_blank"}, um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ## SFTP-Verwaltung {#ac-control-sftp}
 
@@ -48,7 +48,7 @@ Erfahren Sie, wie Sie Ihre Subdomains und deren Zertifikate überwachen.
 
 ## Überwachen der Performance
 
-Das Control Panel bietet verschiedene Funktionen, mit denen Sie Ihre Instanzen überwachen und eine optimale Performance sicherstellen können. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de){target="_blank"}.
+Das Control Panel bietet verschiedene Funktionen, mit denen Sie Ihre Instanzen überwachen und eine optimale Performance sicherstellen können. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de).{target="_blank"}
 
 
 ## Instanzeneinstellungen

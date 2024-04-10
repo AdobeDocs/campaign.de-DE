@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    >[!NOTE]
    >
-   >Als Benutzer von Managed Cloud Service wird Ihre Instanz mit jeder neuen Version von Adobe aktualisiert.
+   >Wenn Sie Managed Cloud Services nutzen, wird Ihre Instanz von Adobe mit jeder neuen Version aktualisiert.
 
 1. **Wie kann ich eine Verbindung zu Campaign v8 herstellen?**
 
@@ -37,17 +37,17 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
    [Auf dieser Seite](campaign-ui.md#ac-web-ui) erfahren Sie, wie Sie eine Verbindung mit Adobe Experience Cloud herstellen und auf die Benutzeroberfläche von Adobe Campaign Web zugreifen.
 
    Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
-1. **Kann Campaign v8 in einer On-Premise- oder Hybridumgebung installiert werden?**
+1. **Kann Campaign v8 in einer On-Premise- oder Hybrid-Umgebung installiert werden?**
 
-   Campaign v8 ist nur in verwalteten Cloud Services verfügbar, die vollständig von Adobe gehostet werden.
+   Campaign v8 ist nur in Managed Cloud Services verfügbar, die vollständig von Adobe gehostet werden.
 
 1. **Wie kann ich die Zustellbarkeit von E-Mails verbessern?**
 
    Die Zustellbarkeit von E-Mails, ein wichtiger Faktor für den Erfolg jedes Marketing-Programms, unterliegt ständig wechselnden Kriterien und Regeln. Eine effektive Navigation in dieser digitalen Welt erfordert eine regelmäßige Abstimmung Ihrer E-Mail-Strategie unter Berücksichtigung der wichtigsten Trends mit Blick auf die Zustellbarkeit, um Ihre Zielgruppen optimal zu erreichen.
 
-   Weitere Informationen finden Sie in diesem Handbuch . [Best Practices für den Versand](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de){target="_blank"}
+   Lesen Sie dieses Handbuch, um [Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de){target="_blank"} kennenzulernen.
 
-   Informationen zur Implementierung der Zustellbarkeit in Campaign [in diesem Handbuch](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de){target="_blank"}
+   In [diesem Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine hohe Zustellbarkeit in Campaign gewährleisten.
 
 1. **Wie weiß ich, dass mein Versand fehlerfrei durchgeführt wird?**
 
@@ -69,15 +69,15 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    >[!NOTE]
    >
-   >Als Managed Cloud Service-Anwender können Sie Adobe kontaktieren , um Ihre Subdomains an Adobe zu delegieren.
+   >Wenn Sie Managed Cloud Services nutzen, kontaktieren Sie Adobe, um Ihre Subdomains an Adobe zu delegieren.
 
-1. **Kann ich als Campaign Classic v7-Anwender zu Campaign v8 migrieren?**
+1. **Wenn ich Campaign Classic v7 verwende, kann ich dann zu Campaign v8 migrieren?**
 
    Die automatische Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht verfügbar.
 
    Campaign v8 ist derzeit **nur** als Managed Cloud Service verfügbar und kann nicht in On-Premise- oder Hybrid-Umgebungen bereitgestellt werden.
 
-   Weitere Informationen zum Migrationsprozess erhalten Sie von Ihrem Adobe-Support-Mitarbeiter.
+   Weitere Informationen zum Migrationsprozess erhalten Sie von Ihrer Adobe-Support-Kontaktperson.
 
 1. **Wo kann ich Campaign herunterladen?**
 
