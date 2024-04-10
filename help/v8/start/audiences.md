@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 99cb937a475997aae714a67b1f9f91c6bae932f4
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 85%
+source-wordcount: '525'
+ht-degree: 73%
 
 ---
 
@@ -41,15 +41,20 @@ Erfahren Sie, wie Sie in einem Kampagnen-Workflow eine Zielgruppe erstellen kön
 
 ## Aktive Profile {#active-profiles}
 
-Ein aktives Profil ist ein Profil, mit dem die Kundin oder der Kunde in den letzten 12 Monaten über einen beliebigen Kanal versucht hat, zu kommunizieren. Lizenzmetriken basieren auf aktiven Profilen. Weitere Informationen finden Sie in der [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+
+Ein aktives Profil ist ein Profil, mit dem der Kunde in den letzten 12 Monaten über einen beliebigen Kanal kommuniziert hat.
+
+Gemäß Ihrem Vertrag erhalten alle Ihre Campaign-Instanzen eine bestimmte Anzahl aktiver Profile, die zu Abrechnungszwecken gezählt werden. Informationen zur Anzahl der gekauften aktiven Profile finden Sie in Ihrem aktuellen Vertrag. Weitere Informationen finden Sie in der [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Sie können die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Control Panel von Campaign überwachen. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de){target="_blank"}.
 
->[!CAUTION]
->
->* Ein Profil, das durch mehrere Sendungen angesprochen wurde, wird nur einmal gezählt.
->
->* Profile, die im Rahmen von Social-Media-Marketing auf X (Twitter) angesprochen werden, werden nicht als aktive Profile berücksichtigt.
+
+Es gelten die folgenden Limits und Einschränkungen:
+
+* Ein Profil, das durch mehrere Sendungen angesprochen wurde, wird nur einmal gezählt.
+* Profile, die im Rahmen von Social-Media-Marketing auf X (Twitter) angesprochen werden, werden nicht als aktive Profile berücksichtigt.
+* Die Zählung basiert auf dem Primärschlüssel des Empfängers. Wenn also ein Profil in zwei verschiedenen Empfängertabellen vorhanden ist, kann es doppelt als aktives Profil gezählt werden.
+
 
 ## Datenschutz und Einverständniserklärung{#privacy-and-consent}
 
