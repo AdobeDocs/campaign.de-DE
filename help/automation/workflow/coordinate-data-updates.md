@@ -41,7 +41,7 @@ Gehen Sie zur Erstellung des Workflows wie folgt vor:
    ![](assets/uc_dataupdate_test.png)
 
 1. Fügen Sie zur **Nein**-Verzweigung die Aktivität **Ende** hinzu, damit nichts ausgeführt wird, falls der Workflow bereits ausgeführt wird.
-1. Fügen Sie der **Ja** Abspaltung. In unserem Fall **Abfrage** und **Daten aktualisieren** Aktivitäten.
+1. Fügen Sie die gewünschten Aktivitäten zur hinzu. **Ja** Verzweigung. In unserem Fall, **Abfrage** und **Daten aktualisieren** Aktivitäten.
 1. Öffnen Sie die erste Aktivität und fügen Sie den Befehl **instance.vars.isRunning = true** auf dem Tab **[!UICONTROL Erweitert]** hinzu. Auf diese Weise wird die Instanzvariable auf „wird ausgeführt“ gesetzt.
 
    ![](assets/uc_dataupdate_query.png)

@@ -55,9 +55,9 @@ Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Si
 
 1. Zur Konfiguration von Schüben haben Sie die folgenden Möglichkeiten:
 
-   * Definieren Sie die Größe für jeden Schub. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
+   * Definieren Sie die Größe für jede Welle. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
 
-     Im **[!UICONTROL Zeitraum]** geben Sie die Verzögerung zwischen dem Start zweier aufeinander folgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
+     In der **[!UICONTROL Zeitraum]** -Feld geben Sie die Verzögerung zwischen dem Beginn zweier aufeinander folgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
 
      ![](assets/delivery-waves-size.png)
 
@@ -75,9 +75,9 @@ Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Si
    >
    >Achten Sie darauf, dass die letzten Schübe nicht die Versandgültigkeit überschreiten, die im Tab **[!UICONTROL Gültigkeit]** festgelegt wird. Ansonsten werden manche Nachrichten nicht gesendet.
    >
-   >Bei der Konfiguration der letzten Schübe müssen Sie auch genügend Zeit für weitere Versuche lassen. <!--See [this section]().-->
+   >Sie müssen auch genügend Zeit für weitere Zustellversuche einräumen, wenn Sie die letzten Schübe konfigurieren. <!--See [this section]().-->
 
-1. Gehen Sie zur Überwachung Ihrer Sendungen zu den Versandlogs. Weitere Informationen finden Sie auf [dieser Seite](send.md)<!--ref TBC-->.
+1. Um Ihre Sendungen zu überwachen, gehen Sie zu den Versandlogs. Weitere Informationen finden Sie auf [dieser Seite](send.md)<!--ref TBC-->.
 
    Die Versandlogs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
 
@@ -89,7 +89,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   Um zu verhindern, dass Ihre Sendungen als Spam eingestuft werden, können Sie das gesendete Volumen schrittweise mithilfe von Schüben erhöhen. Damit gewährleisten Sie eine problemlose Entwicklung in der Anfangsphase und die Verringerung der Anzahl der ungültigen Adressen.
 
-  Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Setzen Sie beispielsweise den ersten Schub auf 10 %, den zweiten auf 15 % usw.
+  Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Legen Sie beispielsweise die erste Welle auf 10 %, die zweite auf 15 % fest usw.
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
@@ -165,7 +165,7 @@ Dies bietet die Möglichkeit, den Versand auf einen späteren Zeitpunkt zu versc
 
   Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]**, wählen Sie **[!UICONTROL Versand terminieren]**, starten Sie die Analyse und bestätigen Sie den Versand. Auf diese Weise wird die Analyse durchgeführt und die Zielgruppe vorbereitet. Am angegebenen Stichtag werden die Nachrichten dann automatisch versendet.
 
-Datum und Uhrzeit werden in der Zeitzone des aktuellen Benutzers angegeben. Die **[!UICONTROL Zeitzone]** in der Dropdown-Liste unter dem Eingabefeld Kontaktdatum können Sie das eingegebene Datum und die eingegebene Uhrzeit automatisch in die ausgewählte Zeitzone konvertieren.
+Datum und Uhrzeit werden in der Zeitzone des aktuellen Benutzers angegeben. Die **[!UICONTROL Zeitzone]** Mit der Dropdown-Liste unter dem Eingabefeld Kontaktdatum können Sie das eingegebene Datum und die Uhrzeit automatisch in die ausgewählte Zeitzone konvertieren.
 
 Wenn Sie also beispielsweise einen Versand für 8 Uhr Brüsseler Zeit terminieren, wird die Uhrzeit automatisch in die ausgewählte Zeitzone konvertiert:
 

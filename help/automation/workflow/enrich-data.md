@@ -22,7 +22,7 @@ In diesem Anwendungsbeispiel werden mögliche Verwendungen der Aktivität **[!UI
 
 In [diesem Abschnitt](email-enrichment-with-custom-date-fields.md) finden Sie außerdem ein Anwendungsbeispiel zur Anreicherung eines E-Mail-Versands mit benutzerdefinierten Datumsangaben.
 
-Den Kontakten in der Marketingdatenbank wird über eine Webanwendung eine Einladung zur Teilnahme an einem Wettbewerb geschickt. Die Ergebnisse des Wettbewerbs werden im **[!UICONTROL Wettbewerbsergebnisse]** Tabelle. Diese Tabelle ist mit der Kontakttabelle verknüpft (**[!UICONTROL Empfänger]**). Die **[!UICONTROL Wettbewerbsergebnisse]** -Tabelle enthält die folgenden Felder:
+Die Kontakte in der Marketing-Datenbank werden über eine Webanwendung zur Teilnahme an einem Wettbewerb eingeladen. Die Ergebnisse des Wettbewerbs werden im **[!UICONTROL Wettbewerbsergebnisse]** Tabelle. Diese Tabelle ist mit der Kontakttabelle verknüpft (**[!UICONTROL Empfängerinnen und Empfänger]**). Die **[!UICONTROL Wettbewerbsergebnisse]** Die Tabelle enthält die folgenden Felder:
 
 * Wettbewerbsname (@game),
 * Versuchnummer (@trial),
@@ -71,19 +71,19 @@ In diesem Beispiel erfahren Sie, wie Sie Sendungen entsprechend des Felds **[!UI
 
    ![](assets/uc1_enrich_7.png)
 
-1. Geben Sie eine ID und einen Titel ein und wählen Sie die **[!UICONTROL Zeilenanzahl begrenzen]** in der **[!UICONTROL Erfasste Daten]** -Feld. Im **[!UICONTROL Abrufen von Zeilen]** als Wert &quot;1&quot;ein. Für jeden Empfänger fügt die Anreicherungsaktivität eine Zeile aus der **[!UICONTROL Wettbewerbsergebnisse]** in die Arbeitstabelle des Workflows. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Geben Sie eine ID und einen Titel ein und wählen Sie **[!UICONTROL Zeilenanzahl begrenzen]** Option in der **[!UICONTROL Erfasste Daten]** Feld. In der **[!UICONTROL Abzurufende Zeilen]** Feld, wählen Sie &#39;1&#39; als Wert. Bei jeder Empfängerin bzw. jedem Empfänger fügt die Aktivität Anreicherung eine einzelne Zeile aus der **[!UICONTROL Wettbewerbsergebnisse]** in die Arbeitstabelle des Workflows ein. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/uc1_enrich_8.png)
 
-1. In diesem Beispiel möchten wir das höchste Ergebnis des Empfängers abrufen, jedoch nur für den letzten Wettbewerb. Fügen Sie dazu einen Filter zum **[!UICONTROL Wettbewerbsname]** -Feld, um alle Zeilen auszuschließen, die sich auf frühere Auswahlverfahren beziehen. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. In diesem Beispiel möchten wir die höchste Punktzahl des Empfängers abrufen, jedoch nur für den letzten Wettbewerb. Fügen Sie dazu einen Filter zu hinzu **[!UICONTROL Name des Wettbewerbs]** Feld, um alle Zeilen auszuschließen, die sich auf frühere Wettbewerbe beziehen. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/uc1_enrich_9.png)
 
-1. Navigieren Sie zu **[!UICONTROL Sortieren]** und klicken Sie auf **[!UICONTROL Hinzufügen]** -Schaltfläche, wählen Sie die **[!UICONTROL Ergebnis]** und aktivieren Sie das Kontrollkästchen im **[!UICONTROL absteigend]** -Spalte, um Elemente der **[!UICONTROL Ergebnis]** in absteigender Reihenfolge. Für jeden Empfänger fügt die Anreicherungsaktivität eine Zeile hinzu, die dem höchsten Wert für das letzte Spiel entspricht. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Zum **[!UICONTROL Sortierung]** und klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** -Schaltfläche, wählen Sie die **[!UICONTROL Ergebnis]** und aktivieren Sie das Kontrollkästchen in der **[!UICONTROL absteigend]** Spalte zum Sortieren der Elemente der **[!UICONTROL Ergebnis]** Felder in absteigender Reihenfolge. Bei jeder Empfängerin bzw. jedem Empfänger wird durch die Aktivität Anreicherung eine Zeile hinzugefügt, die der höchsten Punktzahl für das letzte Spiel entspricht. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/uc1_enrich_10.png)
 
-1. Im **[!UICONTROL Daten zum Hinzufügen]** durch Doppelklick auf das **[!UICONTROL Ergebnis]** -Feld. Für jeden Empfänger fügt die Anreicherungsaktivität nur die **[!UICONTROL Ergebnis]** -Feld. Klicken Sie auf **[!UICONTROL Beenden]**.
+1. In der **[!UICONTROL Hinzuzufügende Daten]** doppelklicken Sie im Fenster auf die **[!UICONTROL Ergebnis]** Feld. Bei jeder Empfängerin bzw. jedem Empfänger fügt die Aktivität Anreicherung nur die **[!UICONTROL Ergebnis]** Feld. Klicken Sie auf **[!UICONTROL Beenden]**.
 
    ![](assets/uc1_enrich_11.png)
 
@@ -117,7 +117,7 @@ Im Anschluss an die Anreicherung sorgt die **[!UICONTROL Aufspaltung]** für die
 
    ![](assets/uc1_enrich_17.png)
 
-1. Die dritte (**Verlierer**) enthält alle anderen Empfänger. Navigieren Sie zu **[!UICONTROL Allgemein]** und überprüfen Sie die **[!UICONTROL Komplement erzeugen]** , um alle Empfänger auszuwählen, die nicht die beiden höchsten Werte erreicht haben.
+1. Die dritte (**Verlierer**) Eine Untergruppe enthält alle anderen Empfänger. Zum **[!UICONTROL Allgemein]** und überprüfen Sie die **[!UICONTROL Komplement erzeugen]** Kästchen, um alle Empfänger anzusprechen, die nicht die beiden höchsten Werte erreicht haben.
 
    ![](assets/uc1_enrich_19.png)
 

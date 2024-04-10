@@ -23,7 +23,7 @@ Das Modul **Verwalten sozialer Netzwerke (Social-Media-Marketing)** ermöglicht 
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service [Adobe kontaktieren](../start/campaign-faq.md#support) um Campaign mit X zu verbinden. Die  **Verwalten sozialer Netzwerke (Social Marketing)** -Add-on muss in Ihrer Umgebung über das dedizierte -Package installiert sein und das externe Twitter-Konto muss konfiguriert werden.
+>Als Benutzer von Managed Cloud Service [Kontakt Adobe](../start/campaign-faq.md#support) Campaign mit X verbinden.  **Soziale Netzwerke verwalten (Social Marketing)** Das Add-on muss über das dedizierte Paket in Ihrer Umgebung installiert und das externe Twitter-Konto konfiguriert werden.
 
 
 Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren X-Konten veröffentlicht werden, delegieren Sie den Schreibzugriff für diese Konten an Adobe Campaign. Gehen Sie dazu folgendermaßen vor:
@@ -36,9 +36,9 @@ Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren X-Konten veröffentl
 
 ## X-Entwicklerkonto {#dev-account}
 
-Um mit dieser Integration zu beginnen, müssen Sie sich für ein [X-Entwicklerkonto](https://developer.twitter.com) registrieren{target="_blank"}.
+Um mit dieser Integration zu beginnen, müssen Sie sich für ein [X-Entwicklerkonto](https://developer.twitter.com){target="_blank"} registrieren.
 
-Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. [Auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated) erfahren Sie mehr über den erweiterten Zugriff auf X{target="_blank"}.
+Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. [Auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated){target="_blank"} erfahren Sie mehr über den erweiterten Zugriff auf X.
 
 ## Erstellen einer Anwendung auf X {#create-an-app-on-twitter}
 

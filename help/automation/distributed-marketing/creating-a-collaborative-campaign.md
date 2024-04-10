@@ -81,11 +81,11 @@ Der Kampagnenworkflow muss die Aktivität **Lokale Validierung** beinhalten. Die
 * **[!UICONTROL Verteilungskontext]**: Explizit;
 * **[!UICONTROL Datenverteilung]**: Lokalstellen-Datenverteilung.
 
-**Lokalstellen-Verteilung** Datenverteilung vom Typ muss erstellt werden. Die Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl ausgehend von einer Liste von Gruppierungswerten. In **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]**, klicken Sie auf die **[!UICONTROL Neu]** Symbol zum Erstellen eines neuen **[!UICONTROL Datenverteilung]**. Weitere Informationen zur Datenverteilung finden Sie unter
+**Lokalstellen-Verteilung** Die Datenverteilung vom Typ muss erstellt werden. Mit der Datenverteilungsvorlage können Sie die Anzahl der Datensätze aus einer Liste von Gruppierungswerten begrenzen. in **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]**, klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** Symbol zum Erstellen eines neuen **[!UICONTROL Datenverteilung]**. Weitere Informationen zur Datenverteilung finden Sie unter
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Wählen Sie die **Zielgruppendimension** und **[!UICONTROL Verteilungsfeld]**. Für **[!UICONTROL Zuweisungstyp]** auswählen **Lokalstelle**.
+Wählen Sie die **Zielgruppendimension** und die **[!UICONTROL Verteilungsfeld]**. Für die **[!UICONTROL Zuweisungstyp]**, auswählen **Lokalstelle**.
 
 Fügen Sie im Tab **[!UICONTROL Verteilung]** ein Feld für jede Lokalstelle hinzu und geben Sie den jeweiligen Wert an.
 
@@ -153,7 +153,7 @@ Im automatischen Modus wird die Lokalstelle automatisch für die Kampagne angeme
 
 ### Benachrichtigungen {#notifications}
 
-Die Konfiguration der Benachrichtigungen entspricht den Benachrichtigungen für eine Lokalstelle. Weitere Informationen finden Sie in [diesem Abschnitt](creating-a-local-campaign.md#notifications).
+Die Konfiguration der Benachrichtigungen entspricht der für lokale Kampagnen. Weitere Informationen finden Sie in [diesem Abschnitt](creating-a-local-campaign.md#notifications).
 
 ## Bestellen einer Kampagne {#ordering-a-campaign}
 

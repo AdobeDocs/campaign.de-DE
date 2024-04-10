@@ -15,7 +15,7 @@ ht-degree: 72%
 # Dateiübertragung{#file-transfer}
 
 Mit der Aktivität **Dateiübertragung** können Sie Dateien senden und empfangen, das Vorhandensein von Dateien prüfen oder Dateien auf einem Server auflisten. Hierfür können die Protokolle Azure Blob Storage, Amazon Simple Storage Service (S3), FTP oder SFTP verwendet werden.
-Bei Verwendung einer S3-, Azure Blob Storage- oder SFTP-Verbindung ist es außerdem möglich, Segmentdaten über die Echtzeit-Kundendatenplattform von Adobe in Adobe Campaign zu importieren. Weitere Informationen hierzu finden Sie in diesem Abschnitt [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de){target="_blank"}.
+Bei Verwendung einer S3-, Azure Blob Storage- oder SFTP-Verbindung ist es außerdem möglich, Segmentdaten über die Echtzeit-Kundendatenplattform von Adobe in Adobe Campaign zu importieren. Weiterführende Informationen hierzu finden Sie hier [Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de){target="_blank"}.
 
 ## Eigenschaften {#properties}
 
@@ -37,13 +37,13 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
 1. **Dateiübertragung**
 
-   Um eine Datei an einen Server zu senden, wählen Sie **[!UICONTROL Datei-Upload]** im **[!UICONTROL Aktion]** -Feld. Sie müssen den Zielserver im **[!UICONTROL Remote-Server]** des Editors. Die Parameter sind mit denen für eingehende Dateien identisch. Siehe oben.
+   Um eine Datei an einen Server zu senden, wählen Sie **[!UICONTROL Datei-Upload]** in der **[!UICONTROL Aktion]** Feld. Sie müssen den Zielserver im Feld **[!UICONTROL Remote-Server]** -Abschnitt des Editors. Die Parameter sind dieselben wie für eingehende Dateien. Siehe oben.
 
-   Die Quelldatei kann aus der vorherigen Aktivität stammen. In diesem Fall wird die **[!UICONTROL Verwenden Sie die von der vorangehenden Aktivität erzeugte Datei.]** muss ausgewählt sein.
+   Die Quelldatei kann aus der vorherigen Aktivität stammen. In diesem Fall gilt Folgendes: **[!UICONTROL Durch vorhergehende Aktivität erzeugte Datei verwenden]** Die Option muss ausgewählt sein.
 
    ![](assets/file_transfert_edit_send.png)
 
-   Dies kann sich auch auf eine oder mehrere andere Dateien beziehen. Um sie auszuwählen, deaktivieren Sie die Option und klicken Sie auf **[!UICONTROL Einfügen]**. Geben Sie den Zugriffspfad der zu sendenden Datei an. Um eine weitere Datei hinzuzufügen, klicken Sie auf **[!UICONTROL Einfügen]** erneut. Die Dateien haben nun jeweils einen eigenen Tab.
+   Dies kann auch eine oder mehrere andere Dateien betreffen. Um sie auszuwählen, deaktivieren Sie die Option und klicken Sie dann auf **[!UICONTROL Einfügen]**. Geben Sie den Zugriffspfad der zu sendenden Datei an. Um eine weitere Datei hinzuzufügen, klicken Sie auf **[!UICONTROL Einfügen]** Nochmals. Die Dateien haben nun jeweils eine eigene Registerkarte.
 
    ![](assets/file_transfert_source.png)
 
@@ -53,13 +53,13 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
 1. **Existenztest einer Datei**
 
-   Um das Vorhandensein einer Datei zu testen, wählen Sie die **[!UICONTROL Existenztest einer Datei]** in der **[!UICONTROL Aktion]** -Feld. Die Konfiguration des Remote-Servers entspricht der für den Dateidownload. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
+   Um zu testen, ob eine Datei vorhanden ist, wählen Sie die **[!UICONTROL Testen, ob die Datei existiert]** Option in der **[!UICONTROL Aktion]** Feld. Die Konfiguration des Remote-Servers entspricht der Konfiguration für den Datei-Download. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
 
    ![](assets/file_transfert_edit_test.png)
 
 1. **Dateiauflistung**
 
-   Um die Dateien aufzulisten, wählen Sie die **[!UICONTROL Dateiauflistung]** Option aus der **[!UICONTROL Aktion]** -Feld. Die Konfiguration des Remote-Servers entspricht der für den Dateiempfang. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
+   Um die Dateien aufzulisten, wählen Sie die **[!UICONTROL Dateiauflistung]** Option aus dem **[!UICONTROL Aktion]** Feld. Die Konfiguration des Remote-Servers entspricht der für den Empfang von Dateien. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
 
    Die Option **[!UICONTROL Alle Dateien auflisten]**, die bei Auswahl der Aktion **[!UICONTROL Dateiauflistung]** erscheint, ermöglicht es, alle auf dem Server befindlichen Dateien in der Ereignisvariable **vars.filenames** zu erfassen. Die Dateinamen werden durch `\n`-Zeichen getrennt angegeben.
 

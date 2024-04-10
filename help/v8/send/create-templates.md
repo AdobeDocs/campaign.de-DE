@@ -87,7 +87,7 @@ Gehen Sie wie folgt vor, um eine Versandvorlage von Grund auf zu konfigurieren:
 1. Bestätigen Sie im Tab **Allgemein** die in den Dropdown-Menüs **Ausführungsordner**, **Ordner** und **Routing** ausgewählten Speicherorte oder ändern Sie sie.
 1. Tragen Sie der Kategorie **E-Mail-Parameter** den E-Mail-Betreff und die Zielgruppe ein.
 1. Fügen Sie Ihren **HTML-Inhalt** ein, um Ihre Vorlage zu personalisieren. Sie können auch einen Mirrorseite-Link und einen Abmelde-Link angeben.[](../send/mirror-page.md)
-1. Wählen Sie die **Vorschau** Registerkarte. Im **Personalisierung testen** Dropdown-Menü auswählen **Empfänger** um eine Vorschau Ihrer Vorlage als ausgewähltes Profil anzuzeigen.
+1. Wählen Sie die **Vorschau** Tabulator. In der **Personalisierung testen** Dropdown-Menü auswählen **Empfängerin oder Empfänger** , um Ihre Vorlage als ausgewähltes Profil in der Vorschau anzuzeigen.
 1. Klicken Sie auf **Speichern**. Ihre Vorlage kann jetzt in einem Versand verwendet werden.
 
 

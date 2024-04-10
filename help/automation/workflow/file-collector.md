@@ -70,7 +70,7 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
    Informationen zum Schritt **[!UICONTROL Verlaufserstellung]** finden Sie unter [HTTP-Übertragung](web-download.md).
 
-Die Dateiverarbeitungsreihenfolge kann nicht bestimmt werden. Um einen Dateisatz sequenziell zu verarbeiten, verwenden Sie die **[!UICONTROL Beenden, sobald eine Datei verarbeitet wurde]** und erstellen Sie eine Schleife. In diesem Fall werden die Dateien in alphabetischer Reihenfolge verarbeitet. Die **[!UICONTROL Fehlen von Dateien bearbeiten]** -Option können Sie die Iteration abschließen.
+Die Reihenfolge der Dateiverarbeitung kann nicht bestimmt werden. Um einen Dateisatz sequenziell zu verarbeiten, verwenden Sie die **[!UICONTROL Beenden, sobald eine Datei verarbeitet wurde]** und eine Schleife erstellen. In diesem Fall werden die Dateien in alphabetischer Reihenfolge verarbeitet. Die **[!UICONTROL Keine Prozessdatei vorhanden]** Mit dieser Option können Sie die Iteration abschließen.
 
 ![](assets/file_collect_loop.png)
 

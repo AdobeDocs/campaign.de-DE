@@ -21,7 +21,7 @@ Diese Beispiele zeigen, wie Sie JavaScript-Code in einem Workflow verwenden kön
 * [Auslösen eines Workflows mit einer statischen SOAP-Methode](#trigger-example)
 * [Interagieren mit der Datenbank mithilfe einer nicht statischen SOAP-Methode](#interact-example)
 
-[Weitere Infos](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de){target="_blank"} über statische und nicht statische SOAP-Methoden.
+[Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de){target="_blank"} Über statische und nicht statische SOAP-Methoden.
 
 In diesen Beispielen wird die Erweiterung ECMAScript for XML (E4X) verwendet. Mit dieser Erweiterung können Sie JavaScript-Aufrufe und XML-Primitive im selben Script kombinieren.
 
@@ -273,7 +273,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängersammlung zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Infos](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de){target="_blank"} über die `logInfo` -Funktion.
+Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängersammlung zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de){target="_blank"} Über die `logInfo` Funktion.
 
 #### Ergebnisse eines `getIfExists`-Vorgangs
 

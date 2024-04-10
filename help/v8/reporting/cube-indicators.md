@@ -108,7 +108,7 @@ Wählen Sie die Auflistung aus der Dropdown-Liste aus. Beachten Sie, dass diese 
 
 ![](assets/cube-dimension-with-enum.png)
 
-Nur die Werte in der Auflistung werden angezeigt. Die anderen werden unter dem im Feld **[!UICONTROL Titel der anderen Werte]** -Feld.
+Nur die Werte in der Auflistung werden angezeigt. Die anderen werden unter dem in der **[!UICONTROL Titel der anderen Werte]** Feld.
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](customize-cubes.md#dynamically-manage-bins).
 

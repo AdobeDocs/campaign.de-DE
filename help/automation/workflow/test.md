@@ -17,11 +17,11 @@ ht-degree: 69%
 
 Ein **Test** aktiviert die erste Transition, welche die ihm zugeordneten Bedingungen erfüllt. Wenn keine der Bedingungen &#39;wahr&#39; zurückgibt, wird die **[!UICONTROL Standard-Verzweigung]** aktiviert, vorrausgesetzt, die entsprechende Option wurde angekreuzt.
 
-Eine Bedingung ist ein JavaScript-Ausdruck, der als &quot;true&quot;oder &quot;false&quot;ausgewertet werden muss. Um den Ausdruck einzugeben, klicken Sie auf das Symbol rechts neben dem Namen der Bedingung und wählen Sie **[!UICONTROL Bearbeiten...]**.
+Eine Bedingung ist ein JavaScript-Ausdruck, der als „true“ oder „false“ ausgewertet werden muss. Um den Ausdruck einzugeben, klicken Sie auf das Symbol rechts neben dem Namen der Bedingung und wählen Sie dann aus **[!UICONTROL Bearbeiten…]**.
 
 ![](assets/edit_test.png)
 
-Weitere Informationen zu allen zusätzlichen JavaScript-Funktionen und SOAP-Methoden des über Workflow-JavaScript zugänglichen Anwendungsservers finden Sie unter [JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de){target="_blank"}.
+Weitere Informationen zu allen zusätzlichen JavaScript-Funktionen und SOAP-Methoden des Anwendungsservers, auf die über Workflow-JavaScript zugegriffen werden kann, finden Sie unter [JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de){target="_blank"}.
 
 Im Editor können auch direkt Variablen eingegeben werden. Weitere Informationen zum Arbeiten mit Variablen finden Sie in [diesem Abschnitt](javascript-scripts-and-templates.md#variables).
 

@@ -83,7 +83,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
 Ihr erster E-Mail-Versand ist fertig. Definieren Sie nun die Zielgruppe, validieren Sie den Versand und führen Sie ihn aus.
 
-Informationen zum Importieren von E-Mail-Inhalt finden Sie in diesem . [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"}.
+In diesem Abschnitt erfahren Sie, wie Sie E-Mail-Inhalte importieren. [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"}.
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 

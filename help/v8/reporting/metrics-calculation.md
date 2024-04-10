@@ -46,7 +46,7 @@ ht-degree: 91%
  </tbody> 
 </table>
 
-Dieser Bericht basiert auf dem **[!UICONTROL Konsolidiertes Tracking]** -Tabelle (nms:trackingStats). Diese Aggregattabelle wird aus Leistungsgründen bei der Anzeige von Berichten anstelle der **[!UICONTROL Trackinglogs der Empfänger]** -Tabelle (nms:trackingLogRcp) und nicht in Echtzeit berechnet. Die Tabelle wird einige Minuten nach dem Abrufen der Trackinglogs generiert. Wenn die Indikatoren aktuell sind, werden die Ergebnisse mit denen der Indikatoren **Trackingindikatoren** Bericht. Der Indikator @totalclicks gibt die Gesamtzahl der Klicks über einen Zeitraum von 5 Minuten an.
+Dieser Bericht basiert auf dem **[!UICONTROL Konsolidiertes Tracking]** Tabelle (nms:trackingStats). Diese aggregierte Tabelle wird aus Leistungsgründen verwendet, wenn Berichte anstelle von angezeigt werden. **[!UICONTROL Trackinglogs der Empfänger]** -Tabelle (nms:trackingLogRcp) und wird nicht in Echtzeit berechnet. Die Tabelle wird einige Minuten nach Abrufen der Trackinglogs generiert. Wenn die Indikatoren auf dem neuesten Stand sind, werden die Ergebnisse die gleichen sein wie für die Indikatoren der **Tracking-Indikatoren** Bericht. Der @totalclicks Indikator gibt die Gesamtzahl der Klicks über einen Zeitraum von 5 Minuten an.
 
 ## Fehler und Bounces {#non-deliverables-and-bounces-1}
 
@@ -129,7 +129,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatis
 
 **Verteilung nach Domain**
 
-Der zweite Teil des Berichts zeigt die Verteilung fehlgeschlagener Nachrichten nach Domain im Gegensatz zum Fehlertyp. Die mit der Variablen **Fehler** -Indikator (@value) in diesem Fall lautet: Count(@status=2 und @domain=&quot;Wert des Domain-Namens&quot;), d. h. eine Zählung aller Nachrichten mit Status &quot;Fehlgeschlagen&quot; für diese Domain.
+Im zweiten Teil des Berichts wird die Aufschlüsselung der fehlgeschlagenen Nachrichten nach Internet-Domain und Fehlertyp beschrieben. Die mit dem verknüpfte Formel **Fehler** Indikator (@value) ist in diesem Fall: Count(@status=2 and @domain=„Value of the domain name„), d. h. eine Anzahl aller Nachrichten mit dem Status Fehlgeschlagen für diese Domain.
 
 ## Browser {#browsers-1}
 
@@ -478,7 +478,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Dienste]** (nms:service).
   <tr> 
    <td> Entwicklung<br /> </td> 
    <td> -<br /> </td> 
-   <td> Anzahl Anmeldungen abzüglich Abmeldungen. Der Prozentsatz wird in Bezug auf die Gesamtzahl der Abonnenten berechnet.<br /> </td> 
+   <td> Anzahl der Abonnements minus der Anzahl der Abmeldungen. Der Tarif wird in Relation zur Gesamtzahl der Abonnenten berechnet.<br /> </td> 
    <td> Iif(number(@_subscription) &gt; number(@_unsubscription), '+', '')+format(@_subscription - @_unsubscription, 'number', '# ##0')+ Iif(@_subscriber&gt;0,' (' + format(100*percent(@_subscription - @_unsubscription, @_subscriber), 'number', '#,##0.00')+ '%)','')<br /> </td> 
   </tr> 
   <tr> 
@@ -723,7 +723,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
    <td> Klicks<br /> </td> 
    <td> @_click<br /> </td> 
    <td> Zählung aller @totalClicks mit URL-Primärschlüssel ungleich 1.<br /> </td> 
-   <td> count(Iif([@url-id] != 1, @totalClicks, 0))<br /> </td> 
+   <td> count(iif([@url-id] != 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Klicks (in %)<br /> </td> 
@@ -912,11 +912,11 @@ Dieser Bericht basiert auf den **Versand-** und **Trackinglog-** Tabellen (nms:d
 
 ## Andere Indikatoren {#other-indicators}
 
-Die **Gesendet** Indikator (@sent); Zugriff über **Sendungen (nms:delivery) > Indikatoren** node entspricht der Gesamtzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird nur für SMS-Sendungen verwendet und darf nicht für andere Versandtypen verwendet werden (nicht zu verwechseln mit dem **@success** und **@processed** Indikatoren).
+Die **Gesendet** Indikator (@sent), Zugriff über **Sendungen (nms:delivery) > Indikatoren** Der Knoten entspricht der Gesamtzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird nur für SMS-Sendungen verwendet und darf nicht für andere Versandtypen verwendet werden (nicht zu verwechseln mit **@success** und **@processed** Indikatoren).
 
 ## Indikatoren synchronisieren {#indicator-synchronization}
 
-Wenn bei bestimmten Indikatoren die Synchronisation oder Inkonsistenz auftritt, wählen Sie den betreffenden Versand im Adobe Campaign-Explorer aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie die Option **[!UICONTROL Aktion > Sende- und Trackingindikatoren neu berechnen]**. Klicks **[!UICONTROL Nächste]** Klicken Sie auf **[!UICONTROL Beenden]**.
+Falls Sie Abweichungen oder Inkonsistenzen in gewissen Indikatoren bemerken, können Sie den betreffenden Versand im Adobe Campaign-Explorer auswählen. Klicken Sie dann mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktion > Versand- und Trackingindikatoren neu berechnen]**. Klick **[!UICONTROL Weiter]** und klicken Sie dann auf **[!UICONTROL beenden]**.
 
 ## Öffnungs-Tracking {#tracking-opens-}
 

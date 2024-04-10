@@ -34,10 +34,10 @@ Folgende Benutzergruppen sind im Zusammenhang mit Workflows von Bedeutung:
 
 ## Spezifische Berechtigungen {#named-rights}
 
-Nur die spezifische Berechtigung WORKFLOW bezieht sich auf Workflows: Sie ermöglicht die Erstellung, den Start und das Anhalten von Workflows. Leserechte für die Workflow-Datei sind erforderlich, damit die spezifische Berechtigung angewendet werden kann. Bei Zielgruppen-Workflows die Leseberechtigung auf der **[!UICONTROL Profile und Zielgruppen]** -Datei erforderlich ist.
+Nur die spezifische Berechtigung WORKFLOW gilt für Workflows: Damit können Sie Workflows erstellen, starten und stoppen. Leserechte für die Workflow-Datei sind erforderlich, damit die spezifische Berechtigung angewendet werden kann. Bei Zielgruppen-Workflows ist die Leseberechtigung auf der **[!UICONTROL Profile und Zielgruppen]** -Datei ist erforderlich.
 
 ## Workflow-Ausführungskonto {#workflow-execution-account}
 
 Das Ausführungskonto eines Workflows wird auf Niveau der Vorlage definiert. Das Ausführungskonto ermöglicht die direkte Zuordnung der Rechte zum Workflow, unabhängig vom Adobe-Campaign-Benutzer, der die Ausführung startet. Standardmäßig wird jeder Workflow mit den Rechten des Benutzers ausgeführt, der ihn gestartet hat.
 
-Gehen Sie zur Zuordnung eines Ausführungskontos zu einem Workflow in die Liste der Workflow-Vorlagen und klicken Sie mit der rechten Maustaste auf die dem Workflow entsprechende Vorlage. Auswählen **[!UICONTROL Aktion > Ausführungskonto ändern...]** und wählen Sie das zu verwendende Konto aus.
+Um einem Workflow ein Ausführungskonto zuzuordnen, gehen Sie zur Liste der Workflow-Vorlagen und klicken Sie mit der rechten Maustaste auf die mit dem Workflow verknüpfte Vorlage. Auswählen **[!UICONTROL Aktion > Ausführungskonto ändern…]** Wählen Sie dann das zu verwendende Konto aus.

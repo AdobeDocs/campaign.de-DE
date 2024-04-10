@@ -18,7 +18,7 @@ Das Campaign-Modul &quot;Transaktionsnachricht (Message Center)&quot; wurde zum 
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service [Adobe kontaktieren](../start/campaign-faq.md#support){target="_blank"} zum Konfigurieren von Campaign-Transaktionsnachrichten in Ihrer Umgebung.
+>Als Benutzer von Managed Cloud Service [Kontakt Adobe](../start/campaign-faq.md#support){target="_blank"} , um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu konfigurieren.
 
 Transaktionsnachrichten dienen zum Senden von:
 

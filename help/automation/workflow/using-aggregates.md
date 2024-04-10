@@ -33,11 +33,11 @@ Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erst
 1. Erstellen Sie eine Abfrage. Ziel ist die Berechnung des letzten bekannten Erstellungsdatums aus allen in der Datenbank enthaltenen Empfängern. Die Abfrage enthält somit keinen Filter.
 1. Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]**.
 1. Wählen Sie in den aufeinanderfolgenden Fenstern die Optionen **[!UICONTROL Daten in Relation mit der Filterdimension]** und **[!UICONTROL Daten der Filterdimension]**.
-1. Im **[!UICONTROL Daten zum Hinzufügen]** eine Spalte zur Berechnung des Höchstwerts für **Erstellungsdatum** in der Empfängertabelle angezeigt. Sie können den Ausdruckseditor verwenden oder **max(@created)** direkt in ein Feld im **[!UICONTROL Ausdruck]** Spalte. Klicken Sie anschließend auf **[!UICONTROL Beenden]** Schaltfläche.
+1. In der **[!UICONTROL Hinzuzufügende Daten]** eine Spalte hinzufügen, die den Höchstwert für die **Erstellungsdatum** Feld in der Empfängertabelle. Sie können den Ausdruckseditor verwenden oder eingeben **max(@created)** Direkt in ein Feld im **[!UICONTROL Ausdruck]** Spalte. Klicken Sie dann auf die Schaltfläche **[!UICONTROL beenden]** Schaltfläche.
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Klicks **[!UICONTROL Zusätzliche Daten bearbeiten]** then **[!UICONTROL Erweiterte Parameter...]**. Überprüfen Sie die **[!UICONTROL Automatische Hinzufügung der Primärschlüssel der Zielgruppendimension deaktivieren]** -Option.
+1. Klick **[!UICONTROL Zusätzliche Daten bearbeiten]** dann **[!UICONTROL Erweiterte Parameter…]**. Überprüfen Sie die **[!UICONTROL Automatisches Hinzufügen der Primärschlüssel der Zielgruppendimension deaktivieren]** Option.
 
    Diese Option ermöglicht es, nicht alle Empfänger als Ergebnis auszugeben und nur die Daten beizubehalten, die explizit hinzugefügt wurden. Hier handelt es sich um das Datum, an dem zuletzt ein Empfänger erstellt wurde.
 

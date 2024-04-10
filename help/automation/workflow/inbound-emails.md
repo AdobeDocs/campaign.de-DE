@@ -26,7 +26,7 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
 
    * **[!UICONTROL Externes Konto verwenden]**
 
-     Wenn diese Option aktiviert ist, können Sie ein externes POP3-Konto auswählen, anstatt die Verbindungsparameter einzugeben. Die **[!UICONTROL Externes Konto]** gibt das externe POP3-Konto an, über das eine Verbindung zum E-Mail-Dienst hergestellt werden soll. Dieses Feld ist nur sichtbar, wenn die Option &quot;Externes Konto verwenden&quot;aktiviert ist.
+     Wenn diese Option aktiviert ist, können Sie ein externes POP3-Konto auswählen, anstatt die Verbindungsparameter einzugeben. Die **[!UICONTROL Externes Konto]** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Dieses Feld ist nur sichtbar, wenn die Option „Externes Konto verwenden“ aktiviert ist.
 
      Wenn die zuvor beschriebene Option nicht aktiviert wurde, sind folgende Parameter anzugeben:
 
@@ -67,7 +67,7 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
 
 1. **[!UICONTROL Planung]**
 
-   Um einen Zeitplan für die Aktivität festzulegen, klicken Sie auf das **[!UICONTROL Planung]** Registerkarte und aktivieren **[!UICONTROL Ausführung planen]**. Klicken Sie auf **[!UICONTROL Änderung]** -Schaltfläche, um den Zeitplan zu konfigurieren.
+   Um einen Zeitplan für die Aktivität festzulegen, klicken Sie auf das Symbol **[!UICONTROL Planung]** Tabulatortaste und Prüfung **[!UICONTROL Ausführung planen]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Änderung]** Schaltfläche zum Konfigurieren des Zeitplans.
 
    Die Konfiguration erfolgt analog zum Planungsassistenten. Siehe [Planung](scheduler.md).
 

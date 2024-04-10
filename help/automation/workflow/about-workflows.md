@@ -42,7 +42,7 @@ Jeder Workflow besteht aus:
 
 * **[!UICONTROL Activities]**
 
-  Eine Aktivität beschreibt eine Aufgabenvorlage. Die verschiedenen verfügbaren Aktivitäten werden im Diagramm durch Symbole dargestellt. Jeder Typ verfügt über gemeinsame Eigenschaften und spezifische Eigenschaften. Während beispielsweise alle Aktivitäten einen Namen und eine Bezeichnung haben, wird nur die **[!UICONTROL Validierung]** -Aktivität eine Zuweisung hat.
+  Eine Aktivität beschreibt eine Aufgabenvorlage. Die verschiedenen verfügbaren Aktivitäten werden im Diagramm durch Symbole dargestellt. Jeder Typ verfügt über gemeinsame Eigenschaften und spezifische Eigenschaften. Während beispielsweise alle Aktivitäten einen Namen und eine Kennzeichnung haben, gilt nur für die **[!UICONTROL Validierung]** Aktivität hat eine Zuweisung.
 
   In einem Workflow-Diagramm kann eine einzelne Aktivität verschiedene Aufgaben auslösen. Dies ist insbesondere der Fall bei Schleifen oder (periodisch) wiederkehrenden Aktionen.
 
@@ -72,7 +72,7 @@ In den folgenden Abschnitten finden Sie Anleitungen und Best Practices zur Autom
 
 * Weiterführende Informationen zu Workflow-Aktivitäten finden Sie auf [dieser Seite](use-workflow-data.md).
 * Informationen zum Erstellen eines Workflows finden Sie in [diesem Abschnitt](build-a-workflow.md).
-* Hier erfahren Sie, wie Sie mit Workflows Daten in Campaign importieren können. [diesem Abschnitt](campaign-workflows.md).
+* Erfahren Sie, wie Sie mit Workflows Daten in Campaign importieren können. [Dieser Abschnitt](campaign-workflows.md)..
 * Die Best Practices bei Workflows werden auf [dieser Seite](workflow-best-practices.md) beschrieben.
 * Hinweise zur Workflow-Ausführung finden Sie in [diesem Abschnitt](start-a-workflow.md).
 * Informationen zum Überwachen von Workflows finden Sie auf [dieser Seite](monitor-workflow-execution.md).

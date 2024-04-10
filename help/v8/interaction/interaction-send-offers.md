@@ -100,7 +100,7 @@ Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritt
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
 1. Konfigurieren Sie die Angebotsauswahl. Zwei Optionen stehen zur Auswahl:
 
-   * **[!UICONTROL Suche nach dem besten Angebot einer Kategorie]** : Kreuzen Sie diese Option an und geben Sie die Anrufparameter des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Angebotsmodul berechnet automatisch die zu verwendenden Angebote entsprechend diesen Parametern. Es wird empfohlen, **[!UICONTROL Kategorie]** oder **[!UICONTROL Design]** nicht beides gleichzeitig.
+   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]** : Aktivieren Sie diese Option und geben Sie die Parameter der Angebotsmodul-Aufrufe an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote entsprechend diesen Parametern. Es wird empfohlen, entweder **[!UICONTROL Kategorie]** oder die **[!UICONTROL Design]** statt beides zur gleichen Zeit.
 
      ![](assets/int_enrichment_offer3.png)
 
@@ -159,13 +159,13 @@ Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten
 
 1. Bestätigen Sie Ihre Wahl und speichern Sie den Workflow.
 
-Der Versand speichert automatisch Rang und Gewichtung der Angebote. Diese Informationen werden im Versand angezeigt. **[!UICONTROL Angebote]** Registerkarte.
+Im Versand werden Ranking und Gewichtung der Angebote automatisch gespeichert. Diese Informationen sind in den **[!UICONTROL Angebote]** Tabulator.
 
 ### Angebotsmodul {#offer-engine}
 
 Auch die Aktivität **[!UICONTROL Angebotsmodul]** ermöglicht die Konfiguration einer einem Versand vorangestellten Modulabfrage.
 
-Weitere Informationen finden Sie unter **Angebotsmodul** Aktivität, siehe [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=de){target="_blank"}.
+Weitere Informationen zu **Angebotsmodul** Aktivität, siehe [Diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=de){target="_blank"}.
 
 Das Prinzip dieser Aktivität entspricht dem der **Anreicherung**. Auch hier werden die Daten der Eingangspopulation mit einem vom Modul berechneten Angebot angereichert, bevor die eigentliche Versandaktivität startet.
 
@@ -188,7 +188,7 @@ Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritt
 
 Mithilfe der Aktivität **[!UICONTROL Angebote pro Segment]** lässt sich die eingehende Population (die beispielsweise aus einer Abfrage hervorgeht) in mehrere Zielgruppen aufspalten, um so je Segment spezifische Angebote zu unterbreiten.
 
-Weitere Informationen finden Sie unter **Angebot pro Segment** Aktivität, siehe [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=de){target="_blank"}.
+Weitere Informationen zu **Angebot pro Segment** Aktivität, siehe [Diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=de){target="_blank"}.
 
 Gehen Sie dazu wie folgt vor:
 

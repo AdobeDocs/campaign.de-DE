@@ -49,5 +49,5 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/delivery_loadcontent_script.png)
 
-1. Speichern und starten Sie den Workflow. Ein neuer Versand mit dem geladenen Inhalt wird unter erstellt. **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]**.
+1. Speichern und starten Sie den Workflow. Ein neuer Versand mit dem geladenen Inhalt wird erstellt unter **[!UICONTROL Kampagnen-Management]** > **[!UICONTROL Sendungen]**.
 

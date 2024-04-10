@@ -16,7 +16,7 @@ ht-degree: 84%
 
 Adobe Campaign verfügt über ein Grafikmodul zur Definition und Veröffentlichung von **Web-Formularen**, um Seiten mit Eingabe- und Auswahlfeldern zu erstellen, die Daten aus der Datenbank enthalten können. Auf diese Weise können Sie Web-Seiten entwerfen und posten, auf die Benutzer zugreifen können, um Informationen anzuzeigen oder einzugeben.
 
-Erfahren Sie, wie Sie Webformulare erstellen und veröffentlichen in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de#designing-content){target="_blank"}
+Erfahren Sie, wie Sie Web-Formulare in erstellen und veröffentlichen. [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de#designing-content){target="_blank"}
 
 ![](assets/sample.png)
 
@@ -24,4 +24,4 @@ Adobe Campaign ermöglicht es Ihnen, mit Daten aus der Datenbank dynamische und 
 
 Sie können Seiten erstellen (z. B. ein Bearbeitungsformular in einem Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. beinhalten). Mit dieser Funktion können Sie Webseiten entwerfen und posten, auf denen Benutzer Daten suchen oder eingeben können.
 
-Erfahren Sie, wie Sie Webanwendungen erstellen und veröffentlichen in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=de#designing-content){target="_blank"}
+Erfahren Sie, wie Sie Web-Anwendungen in erstellen und veröffentlichen. [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=de#designing-content){target="_blank"}

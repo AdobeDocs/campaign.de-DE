@@ -50,7 +50,7 @@ Dies hat folgende Auswirkungen:
 * Der Versandstatus wird nicht sofort aktualisiert – In der Marketing-Instanz wird ein technischer Prozess ausgeführt, der den Versandstatus zeitnah aktualisiert.
 
 
-Erfahren Sie mehr über das Senden von Testsendungen von Transaktionsnachrichten beim Übergang von v7 zu [diese Seite](../send/transactional-template.md#transition-from-v7).
+Erfahren Sie mehr über den Versand von Testsendungen von Transaktionsnachrichten bei der Umstellung von Version 7 auf [Diese Seite](../send/transactional-template.md#transition-from-v7).
 
 
 ## [!DNL Campaign] und [!DNL Snowflake] {#ac-gs-snowflake}
@@ -59,14 +59,14 @@ In der [Bereitstellung „Enterprise (FFDA)“](../architecture/enterprise-deplo
 
 Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit dieser neuen Architektur vereinfacht die Campaign v8 Enterprise (FFDA)-Bereitstellung die Datenverwaltung: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen und die Daten kopieren und schon können Sie loslegen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
 
-Weitere Informationen [!DNL Campaign] v8-Architektur in [diese Seite](../architecture/architecture.md).
+Weitere Informationen über [!DNL Campaign] v8-Architektur in [Diese Seite](../architecture/architecture.md).
 
 
 ## Verwenden Sie Ihre Adobe ID, um eine Verbindung mit Campaign herzustellen.{#adobe-id}
 
 Campaign-Benutzende stellen über ihre Adobe ID eine Verbindung her. Dieselbe Adobe ID wird verwendet, um alle Ihre Adobe-Pläne und -Produkte für alle Adobe Experience Cloud-Lösungen mit einem einzigen Konto zu verknüpfen.
 
-Erfahren Sie, wie Sie eine Verbindung herstellen [!DNL Campaign] in [diese Seite](connect.md).
+Erfahren Sie, wie Sie eine Verbindung zu [!DNL Campaign] in [Diese Seite](connect.md).
 
 ## Analysieren von Daten mit Cubes{#adobe-reporting}
 

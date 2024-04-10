@@ -31,7 +31,7 @@ Die folgenden Workflows werden mit dem Modul **Integration mit Adobe Experience 
   <tr> 
    <td> <span class="uicontrol">Zielgruppenexport zu Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> Dieser Workflow exportiert Zielgruppen als freigegebene Zielgruppen/Segmente. Diese Zielgruppen können in den verschiedenen von Ihnen verwendeten Adobe Experience Cloud-Lösungen verwendet werden.<br /> </td> 
+   <td> Dieser Workflow exportiert Zielgruppen als freigegebene Zielgruppen/Segmente. Diese Zielgruppen können in den verschiedenen Adobe Experience Cloud-Lösungen verwendet werden, die Sie verwenden.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

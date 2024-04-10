@@ -43,7 +43,7 @@ Sie können die standardmäßige Empfängertabelle mit den vordefinierten Felder
 * [Erweitern einer vorhandenen Tabelle](extend-schema.md) mit neuen Feldern. Sie können der Empfängertabelle beispielsweise ein neues Feld „Treue“ hinzufügen.
 * [Erstellen Sie eine neue Tabelle](create-schema.md), z. B. eine Tabelle „Einkauf“, in der alle von den einzelnen Profilen der Datenbank getätigten Käufe aufgelistet sind, und verknüpfen Sie sie mit der Empfängertabelle.
 
-Best Practices beim Arbeiten mit dem Campaign-Datenmodell in [diesem Abschnitt](datamodel-best-practices.md).
+Best Practices für die Arbeit mit dem Campaign-Datenmodell in [Dieser Abschnitt](datamodel-best-practices.md).
 
 ## Native Profiltabelle {#ootb-profiles}
 
@@ -60,7 +60,7 @@ Es ist möglich, die Empfängertabelle zu erweitern. Die Anzahl der Empfänger o
 
 Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie in [diesem Abschnitt](extend-schema.md).
 
-Beispiele für integrierte Erweiterungen von Empfängertabellen in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table){target="_blank"}
+Beispiele für integrierte Empfängertabellen-Erweiterungen in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table){target="_blank"}
 
 Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre geschäftlichen oder funktionalen Anforderungen zugeschnitten ist. Diese Methode weist Einschränkungen auf und wird in [diesem Abschnitt](custom-recipient.md) beschrieben.
 
@@ -68,9 +68,9 @@ Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre gesch
 
 Zum besseren Verständnis der Tabellenverwaltung in Campaign v8 ist zu beachten, dass im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) die Tabellen zwischen Campaign und der Snowflake Cloud-Datenbank repliziert werden.
 
-Erfahren Sie mehr über die Replikationsstrategie und -mechanismen in [diesem Abschnitt](../architecture/replication.md).
+Erfahren Sie mehr über Replikationsstrategien und -verfahren in [Dieser Abschnitt](../architecture/replication.md).
 
 **Verwandte Themen** 
 
-Erfahren Sie, wie Sie Profile importieren in [diesem Abschnitt](../start/import.md)
-Erfahren Sie mehr über Campaign-Zielgruppen in [diesem Abschnitt](../start/audiences.md)
+Erfahren Sie, wie Sie Profile in importieren. [Dieser Abschnitt](../start/import.md)
+Weitere Informationen zu Campaign-Audiences finden Sie in [Dieser Abschnitt](../start/audiences.md)

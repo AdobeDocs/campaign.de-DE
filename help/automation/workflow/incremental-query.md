@@ -33,7 +33,7 @@ Die Konfiguration der Abfrage entspricht der von Standardabfragen, aber die Ausf
 
 Gehen Sie dazu wie folgt vor:
 
-1. Im **[!UICONTROL Planung und Verlauf]** auswählen, wählen Sie die **[!UICONTROL Ausführung planen]** -Option. Die Aufgabe bleibt aktiv, sobald sie erstellt wurde, und wird nur zu den im Zeitplan für die Ausführung der Abfrage angegebenen Zeitpunkten ausgelöst. Wenn die Option jedoch deaktiviert ist, wird die Abfrage sofort ausgeführt **und in einem Schritt**.
+1. In der **[!UICONTROL Planung und Verlauf]** wählen Sie die Registerkarte **[!UICONTROL Ausführung planen]** Option. Die Aufgabe bleibt nach ihrer Erstellung aktiv und wird nur zu den Zeiten ausgelöst, die im Zeitplan für die Ausführung der Abfrage angegeben sind. Wenn die Option jedoch deaktiviert ist, wird die Abfrage sofort ausgeführt **und zwar in einem Schritt**.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]**.
 
    Im sich öffnenden **[!UICONTROL Planungsassistent]**-Fenster können Sie den Ausführungsrhythmus und den Gültigkeitszeitraum definieren.

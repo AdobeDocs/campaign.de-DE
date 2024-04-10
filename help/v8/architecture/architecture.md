@@ -100,7 +100,7 @@ Um aufgespaltete externe Konten als Standardkonto für den Versand von Sendungen
 
 Das Campaign-Modul &quot;Transaktionsnachricht (Message Center)&quot; wurde zum Verwalten von Trigger-Nachrichten entwickelt.
 
-Erfahren Sie, wie Sie Transaktionsnachrichten senden in [diesem Abschnitt](../send/transactional.md).
+Erfahren Sie, wie Sie in Transaktionsnachrichten senden können. [Dieser Abschnitt](../send/transactional.md).
 
 Als Reaktion auf eine Kundenaktion auf einer Website wird ein Ereignis über eine REST-API gesendet. Die Nachrichtenvorlage wird mit den Informationen oder Daten gefüllt, die über den API-Aufruf bereitgestellt werden, und eine Transaktionsnachricht wird in Echtzeit an den Kunden gesendet. Diese Nachrichten können einzeln oder in Batches per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
@@ -108,7 +108,7 @@ In der hier angewendeten Architektur sind Ausführungszelle und Kontrollinstanz 
 
 * Die **Kontrollinstanz** (oder die Marketing-Instanz) wird von Marketing-Experten und IT-Teams zum Erstellen, Konfigurieren und Veröffentlichen von Nachrichtenvorlagen verwendet. Diese Instanz zentralisiert auch die Überwachung und den Verlauf von Ereignissen.
 
-  Erfahren Sie, wie Sie Nachrichtenvorlagen erstellen und veröffentlichen in [diesem Abschnitt](../send/transactional.md).
+  Erfahren Sie, wie Sie Nachrichtenvorlagen in erstellen und veröffentlichen. [Dieser Abschnitt](../send/transactional.md).
 
 * Die **Ausführungsinstanz** ruft eingehende Ereignisse (z. B. Passwortrücksetzung oder Bestellungen von einer Website) ab und versendet personalisierte Nachrichten. Es kann mehr als eine Ausführungsinstanz geben, um Nachrichten über den Load-Balancer zu verarbeiten und die Anzahl der zu verarbeitenden Ereignisse zwecks maximaler Verfügbarkeit zu skalieren.
 

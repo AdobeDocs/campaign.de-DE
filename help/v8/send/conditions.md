@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um einen von einem Feldwert abhängigen bedingten Inhal
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**, um den Nachrichten inhalt entsprechend dem Versandempfänger oder der dem Versandempfängerin anzuzeigen. Wählen Sie eine Empfängerin oder einen Empfänger aus, für die bzw. den die Bedingung zutrifft, um den Inhalt zu überprüfen. Wählen Sie dann eine andere Empfängerin oder einen anderen Empfänger aus, für die bzw. den sie nicht zutrifft, und überprüfen Sie erneut.
 
-Sie können weitere Fälle hinzufügen und je nach den Werten eines oder mehrerer Felder unterschiedliche Inhalte definieren. Verwenden Sie dazu **[!UICONTROL Bedingter Inhalt > Sonst]** und **[!UICONTROL Bedingter Inhalt > Sonst , wenn]**. Diese Ausdrücke werden auf die gleiche Weise wie die **if** Ausdruck.
+Sie können weitere Fälle hinzufügen und je nach den Werten eines oder mehrerer Felder unterschiedliche Inhalte definieren. Verwenden Sie dazu **[!UICONTROL Bedingte Inhalte > Sonst]** und **[!UICONTROL Bedingter Inhalt > Sonst wenn]**. Diese Ausdrücke werden auf die gleiche Weise konfiguriert wie **if** Ausdruck.
 
 >[!CAUTION]
 >
@@ -54,7 +54,7 @@ Sie können weitere Fälle hinzufügen und je nach den Werten eines oder mehrere
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen. Inhalte werden in der bevorzugten Sprache der Empfängerin bzw. des Empfängers angezeigt.
 
-1. Erstellen Sie eine E-Mail und wählen Sie die Zielpopulation aus. In diesem Beispiel basiert die Bedingung, dass die eine Version oder die andere angezeigt wird, auf der **Sprache** Wert des Empfängerprofils. Diese Werte sind auf **DE**, **FR**, **ES**.
+1. Erstellen Sie eine E-Mail und wählen Sie die Zielpopulation aus. In diesem Beispiel basiert die Bedingung für die Anzeige der einen oder anderen Version auf dem **Sprache** Wert des Empfängerprofils. Diese Werte werden festgelegt auf **DE**, **FR**, **ES**.
 1. Klicken Sie im HTML-Inhalt der E-Mail auf den Tab **[!UICONTROL Quelle]** und fügen Sie folgenden Code ein:
 
    ```

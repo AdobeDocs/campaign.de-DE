@@ -53,7 +53,7 @@ Der **[!UICONTROL Ereignisverlauf des Message Centers]** zeigt einen Überblick 
 
 Beim Öffnen des Berichts entsprechen die standardmäßig angezeigten Daten der Rate der erfolgreich gesendeten Transaktionsnachrichten. Sie können die unterschiedlichen Knoten aufklappen, um weitere Ebenen anzuzeigen. Fahren Sie mit dem Mauszeiger über eine Ebene, um sie hervorzuheben.
 
-Sie können die für jeden Ereignistyp spezifischen Daten für jeden Zeitraum anzeigen. Die **[!UICONTROL Veranstaltungen]** -Spalte entspricht der Anzahl der pro Kontrollinstanz empfangenen Ereignisse. Die Anzahl der Ereignisse, die in personalisierte Transaktionsnachrichten umgewandelt werden, wird im Abschnitt **[!UICONTROL Gesendet]** Spalte.
+Sie können die für jeden Ereignistyp spezifischen Daten für jeden Zeitraum anzeigen. Die **[!UICONTROL -Events]** Spalte entspricht der Anzahl der pro Kontrollinstanz empfangenen Ereignisse. Die Anzahl der Ereignisse, die in personalisierte Transaktionsnachrichten umgewandelt wurden, wird im Abschnitt **[!UICONTROL Gesendet]** Spalte.
 
 
 ### Message-Center-Verarbeitungsdauer {#processing-time}

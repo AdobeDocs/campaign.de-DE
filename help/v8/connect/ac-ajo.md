@@ -22,7 +22,7 @@ Die wichtigsten Schritte sind die Erstellung einer Transaktionsnachrichtenvorlag
 ![](assets/ajo-integration.png)
 
 
-[Entdecken Sie diese Integration in diesem durchgehenden Beispiel](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.
+[Erfahren Sie mehr über diese Integration in diesem End-to-End-Beispiel.](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.
 
 
-[Weitere Informationen in der Dokumentation zu Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.
+[Weitere Informationen finden Sie in der Dokumentation zu Journey Optimizer .](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.

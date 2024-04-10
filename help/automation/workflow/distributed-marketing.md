@@ -28,7 +28,7 @@ Der folgende Workflow wird mit dem Modul **Dezentrales Marketing** installiert. 
   <tr> 
    <td> <span class="uicontrol">Bearbeitungsvorgänge des dezentralen Marketings</span> <br /> </td> 
    <td> <span class="uicontrol">centralLocalMgt</span> <br /> </td> 
-   <td> Dieser Workflow startet die Verarbeitung im Zusammenhang mit der Verwendung des dezentralen Marketing-Moduls. Es startet die Erstellung lokaler Kampagnen und verwaltet Benachrichtigungen im Zusammenhang mit Bestellungen und der Verfügbarkeit von Kampagnenkits.<br /> </td> 
+   <td> Dieser Workflow startet die Verarbeitung im Zusammenhang mit der Verwendung des Moduls Verteiltes Marketing . Sie startet die Erstellung lokaler Kampagnen und verwaltet Benachrichtigungen im Zusammenhang mit Bestellungen und der Verfügbarkeit von Kampagnenkits.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

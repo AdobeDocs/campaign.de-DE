@@ -62,7 +62,7 @@ Um eine Nachricht zu beantworten, klicken Sie auf den E-Mail-Text und melden Sie
 
 * Wenn Sie sich von einem Forum abmelden möchten, klicken Sie auf die Schaltfläche **[!UICONTROL Abmelden]** in dem blauen Band.
 
-* In Ihrem persönlichen Dashboard werden die Foren aufgelistet, die Sie abonniert haben. Klicken Sie auf **[!UICONTROL Teilnahme an Diskussionsforen]** -Link, um die Liste anzuzeigen, und klicken Sie dann auf das Element, das Sie für den Zugriff auf das Forum interessiert.
+* Ihr persönliches Dashboard listet die Foren auf, die Sie abonniert haben. Klicken Sie auf die Schaltfläche **[!UICONTROL Abonnement für Diskussionsforen]** Link zum Anzeigen der Liste und klicken Sie dann auf das Element, das Sie interessiert, um auf sein Forum zuzugreifen.
 
   ![](assets/forum-subscribed.png)
 
@@ -78,4 +78,4 @@ Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, 
    * Gehen Sie von der Adobe Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
    * Gehen Sie im Campaign-Explorer zu **[!UICONTROL Administration > Produktion > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
 
-  Im **[!UICONTROL Benachrichtigungen zu Diskussionsforen]** die Versandlogs im **[!UICONTROL Bearbeiten > Versand]** Registerkarte. Sie können auch die **[!UICONTROL Tracking > Protokoll]** und **[!UICONTROL Ausschlussgründe]** Registerkarten.
+  In der **[!UICONTROL Benachrichtigungen zu Diskussionsforen]** die Versandlogs in der Datei **[!UICONTROL Bearbeiten > Versand]** Tabulator. Sie können auch Folgendes anzeigen **[!UICONTROL Tracking > Protokoll]** und die **[!UICONTROL Ausschlussgründe]** Registerkarten.

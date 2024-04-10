@@ -42,13 +42,13 @@ In diesem Beispiel wird gezeigt, wie ein Workflow für den wiederholten Import v
 
    * Wählen Sie im Bereich **[!UICONTROL Name der zu ladenden Datei]** die Option **[!UICONTROL Lokal existierende Datei laden]** und lassen Sie das Feld leer. Jedes Mal, wenn ein neuer Workflow von dieser Vorlage erstellt wird, können Sie hier die gewünschte Datei spezifizieren, solange sie der definierten Struktur entspricht.
 
-     Sie können alle beliebigen Optionen verwenden, müssen aber die Vorlage entsprechend ändern. Wenn Sie beispielsweise **[!UICONTROL Wird durch die Transition angegeben]**, können Sie eine **[!UICONTROL Dateiübertragung]** -Aktivität vor, um die zu importierende Datei von einem FTP-/SFTP-Server abzurufen. Mit einer S3- oder SFTP-Verbindung können Sie auch Segmentdaten mit der Adobe-Echtzeit-Kundendatenplattform in Adobe Campaign importieren. Weitere Informationen hierzu finden Sie unter [Adobe Experience Platform-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de){target="_blank"}.
+     Sie können alle beliebigen Optionen verwenden, müssen aber die Vorlage entsprechend ändern. Wenn Sie beispielsweise **[!UICONTROL Wird in der Transition angegeben]** können Sie ein **[!UICONTROL Dateiübertragung]** -Aktivität vor abrufen, um die von einem FTP-/SFTP-Server zu importierende Datei abzurufen. Mit einer S3- oder SFTP-Verbindung können Sie auch Segmentdaten mit der Adobe-Echtzeit-Kundendatenplattform in Adobe Campaign importieren. Weitere Informationen hierzu finden Sie unter [Dokumentation zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de){target="_blank"}.
 
      ![](assets/import_template_example1.png)
 
 1. Konfigurieren Sie die Aktivität **[!UICONTROL Anreicherung]**. Diese Aktivität hat in unserem Fall den Zweck, die eingehenden Daten zu identifizieren.
 
-   * Im **[!UICONTROL Anreicherung]** Registerkarte auswählen **[!UICONTROL Daten hinzufügen]** und definieren eine Relation zwischen den importierten Daten und der Zielgruppendimension der Empfänger. In unserem Beispiel wird diese Join-Bedingung mithilfe des benutzerdefinierten Feldes **Kennung im CRM** erstellt. Verwenden Sie das erforderliche Feld oder eine Kombination von Feldern, um eindeutige Datensätze zu identifizieren.
+   * In der **[!UICONTROL Anreicherung]** Registerkarte, Auswählen **[!UICONTROL Daten hinzufügen]** und definiert eine Relation zwischen den importierten Daten und der Zielgruppendimension der Empfänger. In unserem Beispiel wird diese Join-Bedingung mithilfe des benutzerdefinierten Feldes **Kennung im CRM** erstellt. Verwenden Sie das erforderliche Feld oder eine Kombination von Feldern, um eindeutige Datensätze zu identifizieren.
    * Lassen Sie im Tab **[!UICONTROL Abstimmung]** die Option **[!UICONTROL Dokument zur Zielgruppenbestimmung aufgrund der Arbeitsdaten identifizieren]** deaktiviert.
 
    ![](assets/import_template_example2.png)
@@ -78,7 +78,7 @@ In diesem Beispiel wird gezeigt, wie ein Workflow für den wiederholten Import v
 1. Konfigurieren Sie die Aktivität **[!UICONTROL Daten-Update]**, die auf die erste ausgehende Transition der zuvor konfigurierten **[!UICONTROL Aufspaltung]** folgt.
 
    * Wählen Sie als **[!UICONTROL Kampagnentyp]** die Option **[!UICONTROL Aktualisieren]** aus, da die eingehende Transition nur bereits in der Datenbank vorhandene Empfänger enthält.
-   * Im **[!UICONTROL Datensatz-Identifizierung]** Bereich, wählen Sie **[!UICONTROL Über Abstimmschlüssel]** und definieren einen Schlüssel zwischen der Zielgruppendimension und der in der **[!UICONTROL Anreicherung]**. In unserem Beispiel wird das benutzerdefinierte Feld **Kennung im CRM** verwendet.
+   * In der **[!UICONTROL Kennung des Eintrags]** auswählen **[!UICONTROL Abstimmschlüssel verwenden]** und legen einen Schlüssel zwischen der Zielgruppendimension und der in der erstellten Relation fest **[!UICONTROL Anreicherung]**. In unserem Beispiel wird das benutzerdefinierte Feld **Kennung im CRM** verwendet.
    * Geben Sie im Bereich **[!UICONTROL Zu aktualisierende Felder]** an, welche Felder aus der Empfänger-Dimension mit dem Wert der entsprechenden Spalte in der Datei aktualisiert werden sollen. Wenn die Namen der Dateispalten mit den Namen der Dimensionsfelder der Empfänger übereinstimmen oder ihnen sehr ähnlich sind, können Sie die Felder mithilfe des Zauberstab-Symbols automatisch miteinander abstimmen.
 
      ![](assets/import_template_example6.png)
@@ -105,6 +105,6 @@ In diesem Beispiel wird gezeigt, wie ein Workflow für den wiederholten Import v
 1. Fügen Sie nach der dritten Transition der Aktivität **[!UICONTROL Aufspaltung]** die Aktivität **[!UICONTROL Extraktion (Datei)]** und eine **[!UICONTROL Dateiübertragung]** hinzu, wenn Sie die noch nicht in die Datenbank übertragenen Daten verfolgen möchten. Konfigurieren Sie diese Aktivitäten, um die benötigte Spalte zu exportieren und die Datei auf einen FTP- oder SFTP-Server zu übertragen, wo Sie sie abrufen können.
 1. Fügen Sie eine **[!UICONTROL Ende]**-Aktivität an und speichern Sie die Workflow-Vorlage.
 
-Die Vorlage ist jetzt einsatzbereit und kann für jeden neuen Workflow verwendet werden. Dann muss nur noch die Datei spezifiziert werden, die die zu importierenden Daten im **[!UICONTROL Laden (Datei)]** -Aktivität.
+Die Vorlage ist jetzt einsatzbereit und kann für jeden neuen Workflow verwendet werden. Anschließend müssen Sie nur noch die Datei mit den zu importierenden Daten angeben **[!UICONTROL Laden (Datei)]** Aktivität.
 
 ![](assets/import_template_example9.png)

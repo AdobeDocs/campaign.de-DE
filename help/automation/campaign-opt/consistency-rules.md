@@ -38,9 +38,9 @@ Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
    >[!NOTE]
    >
-   >Die Verfügbarkeitszeilen dienen nur zu Informationszwecken. Wenn Sie Nachrichten bei Erreichen der Kapazitätsbegrenzung ausschließen müssen, lesen Sie den Abschnitt [diesem Abschnitt](#exclude-messages-when-capacity-limit-reached).
+   >Verfügbarkeitszeilen dienen nur zu Informationszwecken. Wenn Sie Nachrichten ausschließen müssen, wenn die Kapazitätsgrenze erreicht ist, siehe [Dieser Abschnitt](#exclude-messages-when-capacity-limit-reached).
 
-1. Weisen Sie diese Regel einer Typologie zu und referenzieren Sie die Typologie in Ihrem Versand, um diese Kapazitätsregel anzuwenden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](apply-rules.md#apply-a-typology-to-a-delivery).
+1. Verknüpfen Sie diese Regel mit einer Typologie und referenzieren Sie dann die Typologie in Ihrem Versand, um diese Kapazitätsregel anzuwenden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](apply-rules.md#apply-a-typology-to-a-delivery).
 1. Über die Tabs **[!UICONTROL Entnahmen]** und **[!UICONTROL Kapazität]** für diese Regel können Sie die Auslastung der Kapazitäten überwachen.
 
    Wenn eine Regel in einem Versand verwendet wird, zeigen die Spalten **[!UICONTROL Entnommen]** und **[!UICONTROL Verbleibend]** die verbrauchte Menge an, wie im unten stehenden Beispiel:
@@ -93,7 +93,7 @@ Der Workflow **[!UICONTROL Planungen]** erstellt automatisch alle entsprechenden
 
 ## Nachrichten bei Erreichen des Kapazitätslimits ausschließen {#exclude-messages-when-capacity-limit-reached}
 
-Verfügbarkeitszeilen dienen nur zu Informationszwecken. Um überschüssige Nachrichten auszuschließen, aktivieren Sie die Option **[!UICONTROL Von der Zielgruppe ausschließen, wenn die Kapazität überschritten wird]** -Option. Dadurch wird verhindert, dass die Kapazität überschritten wird. Für dieselbe Population wie im vorherigen Beispiel dürfen Verbrauch und verbleibende Kapazität die ursprüngliche Menge nicht übersteigen:
+Verfügbarkeitszeilen dienen nur zu Informationszwecken. Um überschüssige Nachrichten auszuschließen, aktivieren Sie die Option **[!UICONTROL Nachrichten, die die Kapazität überschreiten, von der Zielgruppe ausschließen]** Option. Dadurch wird eine Kapazitätsüberschreitung verhindert. Bei der gleichen Population wie im vorherigen Beispiel dürfen der Verbrauch und die verbleibende Kapazität die Anfangsmenge nicht überschreiten:
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
@@ -109,7 +109,7 @@ Die maximale Anzahl von Nachrichten, die verarbeitet werden können, ist gleichm
 
 ## Überwachen des Verbrauchs {#monitoring-consumption}
 
-Kapazitätsregeln dienen standardmäßig nur Informationszwecken. Wählen Sie die **[!UICONTROL Ausschließen von Nachrichten, die die Kapazität übersteigen, aus der Zielgruppe]** -Option, um zu verhindern, dass die definierte Last überschritten wird. Überschüssige Nachrichten werden in diesem Fall automatisch von Sendungen ausgeschlossen, die diese Typologieregel verwenden.
+Standardmäßig dienen Kapazitätsregeln nur zu Veranschaulichungszwecken. Wählen Sie die **[!UICONTROL Nachrichten, die die Kapazität überschreiten, von der Zielgruppe ausschließen]** Option, um zu verhindern, dass die definierte Last überschritten wird. In diesem Fall werden überschüssige Nachrichten mithilfe dieser Typologieregel automatisch von den Sendungen ausgeschlossen.
 
 Im Tab **[!UICONTROL Kapazität]** der Typologieregel haben Sie die Möglichkeit, in der **[!UICONTROL Verbraucht]**-Spalte die Inanspruchnahme der vorhandenen Ressourcen zu verfolgen.
 

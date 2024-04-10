@@ -35,7 +35,7 @@ Das Adobe Campaign Interaction-Modul bietet zwei Arten von Interaktionen:
 * **eingehende** Interaktionen, initiiert durch einen Kontakt. [Weitere Informationen](interaction-present-offers.md)
 * **ausgehende** Interaktionen, die von einem versandverantwortlichen Benutzer für die Kampagne initiiert werden. [Weitere Informationen](interaction-send-offers.md)
 
-Diese beiden Arten von Interaktionen können entweder in **Einzelmodus** (Angebot wird für einen einzelnen Kontakt berechnet) oder in **Batch-Modus** (Angebot wird für eine Gruppe von Kontakten berechnet). Im Allgemeinen werden eingehende Interaktionen im Einzelmodus durchgeführt und ausgehende Interaktionen im Batch-Modus. Es kann jedoch bestimmte Ausnahmen geben für [Transaktionsnachrichten](../send/transactional.md) , wobei die ausgehende Interaktion beispielsweise im Einzelmodus erfolgt.
+Diese beiden Arten von Interaktionen können in folgenden Bereichen durchgeführt werden: **Einzelmodus** (Angebot wird für einen einzelnen Kontakt berechnet) oder in **Batch-Modus** (Angebot wird für eine Gruppe von Kontakten berechnet). Im Allgemeinen werden eingehende Interaktionen im Einzelmodus und ausgehende Interaktionen im Batch-Modus ausgeführt. Es kann jedoch einige Ausnahmen geben, zum Beispiel [Transaktionsnachrichten](../send/transactional.md) Zum Beispiel, wobei die ausgehende Interaktion im Einzelmodus durchgeführt wird.
 
 Wenn ein Angebot unterbreitet werden kann oder soll (je nach Konfiguration), spielt das Angebotsmodul eine zentrale Rolle: Es ermittelt automatisch aus einer Reihe von möglichen Angeboten das für den Kontakt am besten geeignete Angebot, indem es die für ihn vorliegenden Daten und die in der Anwendung definierten Regeln kombiniert und abgleicht.
 
@@ -98,7 +98,7 @@ Bei den Kontrollinstanzen:
    * Wählen Sie den Typ **[!UICONTROL Ausführungsinstanz]** aus.
    * Kreuzen Sie die Option **[!UICONTROL Aktiviert]** an.
    * Geben Sie die Verbindungsparameter zur Ausführungsinstanz an.
-   * Jede Ausführungsinstanz muss mit einer ID verknüpft sein. Diese ID wird zugewiesen, wenn Sie auf die **[!UICONTROL Verbindung initialisieren]** Schaltfläche.
+   * Jede Ausführungsinstanz muss mit einer ID verknüpft sein. Diese ID wird zugewiesen, wenn Sie auf die Schaltfläche **[!UICONTROL Initialisieren der Verbindung]** Schaltfläche.
    * Kreuzen Sie die verwendete Anwendung an: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** oder beide.
    * Geben Sie das genutzte FDA-Konto an. Benutzer müssen in den Ausführungsinstanzen erstellt werden und über die folgenden Lese- und Schreibberechtigungen in den entsprechenden Instanzen verfügen:
 
@@ -122,7 +122,7 @@ Bei den Kontrollinstanzen:
      >
      >Sollten Fehler auftreten, sind die technischen Workflows zur Vorschlagssynchronisation und Angebotsbenachrichtigung zu prüfen.
 
-Wenn aus Optimierungsgründen nur ein Teil der Marketing-Datenbank auf den Ausführungsinstanzen dupliziert wird, können Sie ein mit der Umgebung verknüpftes eingeschränktes Schema angeben, damit Benutzer nur die in den Ausführungsinstanzen verfügbaren Daten verwenden können. Sie können ein Angebot mit Daten erstellen, die in Ausführungsinstanzen nicht verfügbar sind. Dazu müssen Sie die Regel für die anderen Kanäle deaktivieren, indem Sie diese Regel auf den ausgehenden Kanal (**[!UICONTROL Wird berücksichtigt, wenn]** -Feld).
+Wenn aus Optimierungsgründen nur ein Teil der Marketing-Datenbank in den Ausführungsinstanzen dupliziert wird, können Sie ein eingeschränktes, mit der Umgebung verknüpftes Schema angeben, damit die Benutzer nur Daten verwenden können, die in den Ausführungsinstanzen verfügbar sind. Sie können ein Angebot mit Daten erstellen, die in Ausführungsinstanzen nicht verfügbar sind. Dazu müssen Sie die Regel auf den anderen Kanälen deaktivieren, indem Sie diese Regel auf den ausgehenden Kanal beschränken (**[!UICONTROL Berücksichtigt, wenn]** Feld ).
 
 ![](assets/ita_filtering.png)
 

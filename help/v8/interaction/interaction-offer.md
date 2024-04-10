@@ -116,7 +116,7 @@ Definieren Sie auf der Registerkarte **[!UICONTROL Inhalt]** den Angebotsinhalt.
 
 1. Legen Sie die verschiedenen Parameter für den Angebotsinhalt fest:
 
-   * **[!UICONTROL Titel]** : Geben Sie den Titel an, der in Ihrem Angebot angezeigt werden soll. Warnung: Hierbei handelt es sich nicht um den Titel des Angebots, der im Abschnitt **[!UICONTROL Allgemein]** Registerkarte.
+   * **[!UICONTROL Anrede]** : Geben Sie den Titel an, der in Ihrem Angebot angezeigt werden soll. Warnung: Dies bezieht sich nicht auf die Beschriftung des Angebots, die in der **[!UICONTROL Allgemein]** Tabulator.
    * **[!UICONTROL Ziel-URL]**: Geben Sie die URL Ihres Angebots an. Sie muss zwingend mit &quot;http://&quot; oder &quot;https://&quot; beginnen.
    * **[!UICONTROL Bild-URL]**: Geben Sie die URL oder einen Zugangspfad für das Bild Ihres Angebots an.
    * **[!UICONTROL HTML-Inhalt]**/**[!UICONTROL Textinhalt]**: Geben Sie den Body Ihres Angebots in den Tab Ihrer Wahl ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise erzeugt ein `<table>`-Element auf der HTML-Seite Folgendes:

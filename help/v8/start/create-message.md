@@ -46,7 +46,7 @@ Sobald Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, kön
 
   ![](assets/deliveries-in-a-campaign.png)
 
-  Erfahren Sie, wie Sie im Kontext einer Kampagne Nachrichten senden können in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de){target="_blank"}
+  Erfahren Sie, wie Sie Nachrichten im Kontext einer Kampagne in senden. [Dieser Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de){target="_blank"}
 
 * Senden von Nachrichten über einen [Workflow](../config/workflows.md)
 
@@ -86,5 +86,5 @@ Die Schritte zum Konfigurieren und Senden von Transaktionsnachrichten werden auf
 
 Die Überwachung Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen. Sie können nach dem Versand überwachen sowie nachvollziehen, wie Zustellungsfehler und Quarantänen gehandhabt werden.
 
-Informationen zur Überwachung Ihrer Sendungen finden Sie unter [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=de#sending-messages){target="_blank"}
+Erfahren Sie, wie Sie Ihre Sendungen in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=de#sending-messages){target="_blank"}
 

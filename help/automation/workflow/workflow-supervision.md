@@ -29,7 +29,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 >[!NOTE]
 >
->Zusätzlich zum Workflow wird Campaign **Workflow-Heatmap** ermöglicht es Ihnen, die derzeit ausgeführten Workflows detailliert zu analysieren. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](heatmap.md).
+>Zusätzlich zum Workflow wird Campaign **Workflow-Heatmap** Ermöglicht die Detailanalyse in den derzeit ausgeführten Workflows. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](heatmap.md).
 >
 >Weitere Informationen zur **Überwachung der Ausführung Ihrer Workflows** finden Sie in [diesem Abschnitt](monitor-workflow-execution.md).
 
@@ -37,7 +37,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 Der zu überwachende Workflow-Ordner ist **CustomWorkflows** im Knoten **Administration > Betreibung > Technische Workflows**. Dieser Ordner enthält diverse geschäftsrelevante Workflows.
 
-Die **Monitoring-Workflow** wird im Stammverzeichnis des Ordners Technische Workflows gespeichert. Die verwendete Bezeichnung lautet **&quot;Überwachung&quot;**.
+Die **Überwachen von Workflows** wird im Stammverzeichnis des Ordners Technische Workflows gespeichert. Die Bezeichnung wird verwendet **„Überwachung“**.
 
 Das folgende Schema stellt die Beziehungen zwischen den einzelnen Aktivitäten dar.
 
@@ -121,7 +121,7 @@ Der Versand an die verantwortliche Person wird gestartet, **wenn wenigstens eine
 
 ![](assets/uc_monitoring_workflow_test.png)
 
-Die Warten -Aktivität kann so konfiguriert werden, dass sie den Monitoring-Workflow in regelmäßigen Abständen neu startet. Für diesen Anwendungsfall: **die Wartezeit auf eine Stunde festgelegt ist**.
+Die Aktivität „Warten“ kann so konfiguriert werden, dass der Überwachungs-Workflow in regelmäßigen Abständen neu gestartet wird. Für diesen Anwendungsfall: **Die Wartezeit ist auf eine Stunde festgelegt**.
 
 ![](assets/uc_monitoring_workflow_attente.png)
 

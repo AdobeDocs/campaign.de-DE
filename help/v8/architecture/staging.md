@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um den Campaign-Staging-Mechanismus für eine bestimmte
    </srcSchema>
    ```
 
-   Weitere Informationen zur Erstellung von benutzerdefinierten Schemas finden Sie unter [diese Seite](../dev/create-schema.md).
+   Weitere Informationen zur Erstellung benutzerdefinierter Schemata in [Diese Seite](../dev/create-schema.md).
 
 1. Speichern und aktualisieren Sie die Datenbankstruktur. [Weitere Informationen](../dev/update-database-structure.md)
 

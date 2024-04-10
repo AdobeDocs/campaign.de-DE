@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor:
 
 1. Wählen Sie im Feld **[!UICONTROL Typ]** des Fensters **[!UICONTROL Definition eines berechneten Export-Feldes]** die Option **[!UICONTROL Auflistungen]** aus.
 
-   Definieren Sie die Spalte, auf die sich das neue berechnete Feld beziehen soll. Wählen Sie dazu die **[!UICONTROL Geschlecht]** im Dropdown-Menü des **[!UICONTROL Quellspalte]** -Feld: Die Zielwerte entsprechen dem **[!UICONTROL Geschlecht]** Spalte.
+   Definieren Sie die Spalte, auf die das neue berechnete Feld verweisen muss. Wählen Sie dazu die **[!UICONTROL Geschlecht]** Spalte im Dropdown-Menü der **[!UICONTROL Quellspalte]** Feld: Die Zielwerte stimmen mit den **[!UICONTROL Geschlecht]** Spalte.
 
    ![](assets/query_editor_nveau_76.png)
 
@@ -75,10 +75,10 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_78.png)
 
-   Wenn Sie beispielsweise das Geschlecht &quot;2&quot;nicht im **[!UICONTROL Liste der Auflistungswerte]** und die **[!UICONTROL Warnhinweis erzeugen und fortfahren]** Funktion der **[!UICONTROL In anderen Fällen]** ausgewählt ist, wird ein Warnprotokoll angezeigt. Dieses Protokoll zeigt an, dass das Geschlecht &quot;2&quot; (Weiblich) nicht eingegeben wurde. Sie wird im **[!UICONTROL Beim Export erzeugte Protokolle]** -Feld des Datenvorschaufensters.
+   Wenn Sie z. B. in das Feld „Geschlecht 2“ nicht eingeben **[!UICONTROL Liste der Auflistungswerte]** und die **[!UICONTROL Warnung erzeugen und fortfahren]** Funktion des **[!UICONTROL In anderen Fällen]** Wenn das Feld ausgewählt ist, wird ein Warnprotokoll angezeigt. Dieses Protokoll gibt an, dass Geschlecht „2“ (Weiblich) nicht eingegeben wurde. Er wird in der **[!UICONTROL Beim Export generierte Logs]** Feld des Datenvorschau-Fensters.
 
    ![](assets/query_editor_nveau_79.png)
 
-   Nehmen wir ein anderes Beispiel und sagen, dass der Auflistungswert &quot;2&quot; nicht eingegeben wurde. Wählen Sie die **[!UICONTROL Fehler erzeugen und Zeile zurückweisen]** Funktion: Alle geschlechtsspezifischen &quot;2&quot;-Empfänger rufen Anomalien und die anderen Informationen in der Zeile auf (Vor- und Nachname usw.) wird nicht exportiert. Ein Fehlerprotokoll wird im **[!UICONTROL Beim Export erzeugte Protokolle]** -Feld des Datenvorschaufensters. Dieses Protokoll zeigt an, dass der Auflistungswert &quot;2&quot; nicht eingegeben wurde.
+   Nehmen wir ein anderes Beispiel und sagen, dass der Auflistungswert „2“ nicht eingegeben wurde. Wählen Sie die **[!UICONTROL Fehler erzeugen und Zeile ablehnen]** Funktion: Alle Empfänger mit „Geschlecht 2“ melden Anomalien und die anderen Informationen in der Zeile (Vor- und Nachname usw.) wird nicht exportiert. Ein Fehlerprotokoll wird in der **[!UICONTROL Beim Export generierte Logs]** Feld des Datenvorschau-Fensters. Dieses Protokoll gibt an, dass der Auflistungswert „2“ nicht eingegeben wurde.
 
    ![](assets/query_editor_nveau_80.png)

@@ -86,7 +86,7 @@ Mögliche Status sind:
 * **Versand ausstehend**
 Das Ereignis wurde verarbeitet und die Versandvorlage ist verknüpft. Die E-Mail ist versandbereit und der Standard-Versandprozess wird angewendet. Details können direkt im Versand eingesehen werden.
 * **Gesendet**, **Ignoriert** und **Versandfehler**
-Diese Versandstatus werden über die **updateEventsStatus** Arbeitsablauf. Für weitere Informationen können Sie den entsprechenden Versand öffnen.
+Diese Versandstatus werden über das **updateEventsStatus** Workflow. Für weitere Informationen können Sie den entsprechenden Versand öffnen.
 * **Ereignis wurde nicht berücksichtigt**
 Die Routing-Phase der Transaktionsnachricht ist fehlgeschlagen. Ein Beispiel hierfür wäre, dass Adobe Campaign die E-Mail, die als Vorlage für das Ereignis dient, nicht finden konnte.
 * **Ereignis ist abgelaufen**

@@ -106,7 +106,7 @@ Doppelklicken Sie auf eine Aktivität, um sie zu konfigurieren oder klicken Sie 
 >
 >Aktivitäten des Kampagnen-Workflows werden in [diesem Abschnitt](activities.md) erläutert.
 
-Der erste Tab enthält die grundlegende Konfiguration. Die **[!UICONTROL Erweitert]** enthält die zusätzlichen Parameter, die insbesondere zur Definition des Verhaltens bei Fehlern, zur Angabe der Ausführungsdauer einer Aktivität und zur Eingabe eines Initialisierungsskripts verwendet werden.
+Die erste Registerkarte enthält die Basiskonfiguration. Die **[!UICONTROL Erweitert]** Diese Registerkarte enthält die zusätzlichen Parameter, die insbesondere dazu dienen, das Verhalten bei Auftreten eines Fehlers zu definieren, die Ausführungsdauer für eine Aktivität festzulegen und ein Initialisierungsskript einzugeben.
 
 Um die Aktivitäten besser zu verstehen und die Lesbarkeit des Workflows zu verbessern, können Sie in die Aktivitäten Kommentare einfügen.
 

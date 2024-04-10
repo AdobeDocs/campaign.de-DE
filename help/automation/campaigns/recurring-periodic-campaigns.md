@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor, um eine Vorlage für wiederkehrende Kampagnen zu erstel
 
    >[!NOTE]
    >
-   >Dieser Workflow muss als wiederkehrende Workflow-Vorlage gespeichert werden. Bearbeiten Sie dazu die Workflow-Eigenschaften und wählen Sie die **[!UICONTROL Wiederkehrende Workflow-Vorlage]** in der **[!UICONTROL Ausführung]** Registerkarte.
+   >Dieser Workflow muss als Vorlage für einen wiederkehrenden Workflow gespeichert werden. Bearbeiten Sie dazu die Workflow-Eigenschaften und wählen Sie die Option aus. **[!UICONTROL Vorlage für wiederkehrenden Workflow]** Option in der **[!UICONTROL Ausführung]** Tabulator.
 
    ![](assets/recurring-campaign-wf-properties.png)
 
@@ -64,7 +64,7 @@ Um eine wiederkehrende Kampagne zu erstellen und ihre Workflows der festgelegten
 
    Bei Ausführung des **[!UICONTROL Kampagnenvorgänge]**-Workflows werden die dedizierten Workflows entsprechend der zuvor festgelegten Kampagnenplanung erstellt, d. h. ein Workflow für jedes Ausführungsdatum.
 
-1. Wiederkehrende Workflows werden automatisch aus der in der Kampagne vorhandenen Workflow-Vorlage erstellt. Sie sind in der **[!UICONTROL Zielbestimmungen und Workflows]** der Kampagne.
+1. Wiederkehrende Workflows werden automatisch anhand der in der Kampagne vorhandenen Workflow-Vorlage erstellt. Sie sind in der **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Registerkarte der Kampagne.
 
    ![](assets/recurring-wf-created.png)
 

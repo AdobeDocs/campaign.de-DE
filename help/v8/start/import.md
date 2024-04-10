@@ -18,7 +18,7 @@ Mit Campaign können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können e
 
 Erste Schritte mit [Zielgruppen](audiences.md)
 
-Campaign verstehen [datamodel](../dev/datamodel.md)
+Grundlagen zu Campaign [Datenmodell](../dev/datamodel.md)
 
 ## Profile in einen Workflow importieren
 
@@ -33,7 +33,7 @@ Erstellen Sie einen generischen Datenimportauftrag zum Laden von Kontakten in di
 
 ![](assets/new-import.png)
 
-Erfahren Sie, wie Sie Einzelimport-Aufträge ausführen, um Ihre Datenbank in zu versorgen. [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de){target="_blank"}.
+Erfahren Sie, wie Sie einzelne Importvorgänge ausführen, um Ihre Datenbank zu befüllen [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de){target="_blank"}.
 
 ## Erfassen von Profilen über Web-Anwendungen
 
@@ -41,7 +41,7 @@ Verwenden Sie Campaign, um Web-Formulare zu erstellen und Profilinformationen ei
 
 ![](assets/web-form-page.png)
 
-Erfahren Sie, wie Sie Webformulare in erstellen [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de){target="_blank"}.
+Erfahren Sie, wie Sie Web-Formulare in erstellen. [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de){target="_blank"}.
 
 **Verwandte Themen**
 

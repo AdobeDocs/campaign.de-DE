@@ -19,4 +19,4 @@ LINE ist ein Programm für kostenloses Instant Messaging, Sprach- und Videoanruf
 
 Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=de){target="_blank"}.
 
-Siehe hierzu [End-to-End-Beispiel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=de#example--create-and-send-a-personalized-line-message){target="_blank"} in der Campaign Classic v7-Dokumentation , um Ihren ersten LINE-Versand zu erstellen und zu senden.
+Siehe hier [End-to-End-Beispiel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=de#example--create-and-send-a-personalized-line-message){target="_blank"} in der Dokumentation zu Campaign Classic v7 zum Erstellen und Senden Ihres ersten LINE-Versands.

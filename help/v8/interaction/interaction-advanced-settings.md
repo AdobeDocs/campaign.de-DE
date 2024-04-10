@@ -15,11 +15,11 @@ ht-degree: 39%
 
 Die Konfiguration des Campaign Interaction-Moduls ist erfahrenen Benutzern vorbehalten. Die erweiterten Einstellungen werden in der **Dokumentation zu Campaign Classic v7** erläutert:
 
-Erfahren Sie, wie Sie zusätzliche Kontextdaten in Angeboten verwenden. [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html?lang=de){target="_blank"}.
+Erfahren Sie, wie Sie zusätzliche kontextuelle Daten in Angeboten verwenden [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html?lang=de){target="_blank"}.
 
-Erfahren Sie, wie Sie die Eignungskriterien Ihrer Angebote anreichern. [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}.
+Erfahren Sie, wie Sie die Eignungskriterien Ihrer Angebote anreichern [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}.
 
 Erfahren Sie, wie Sie eine Testumgebung erstellen  [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html?lang=de){target="_blank"}.
 
-Erfahren Sie, wie Sie mithilfe von Erweiterungspunkten das Standardverhalten des Angebotsmoduls ändern können. [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html?lang=de){target="_blank"}.
+Erfahren Sie, wie Sie mithilfe von Erweiterungspunkten das Standardverhalten des Angebotsmoduls ändern können [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html?lang=de){target="_blank"}.
 

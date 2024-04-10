@@ -28,7 +28,7 @@ Mehrere standardmäßige Regeln führen grundlegende Kontrollen durch. Es handel
 
 ## Erstellen einer Kontrollregel {#create-a-control-rule}
 
-Sie können nach Bedarf neue Kontrollregeln erstellen. Erstellen Sie dazu eine **[!UICONTROL Kontrolle]** Typologieregel und geben Sie die Kontrollformel in SQL im **[!UICONTROL Code]** Registerkarte.
+Es ist möglich, neue Kontrollregeln zu erstellen, die Ihren Anforderungen entsprechen. Erstellen Sie dazu eine **[!UICONTROL Kontrolle]** Typologieregel hinzufügen und die Kontrollformel in SQL in das Feld **[!UICONTROL Code]** Tabulator.
 
 **Beispiel:**
 
@@ -36,7 +36,7 @@ Im folgenden Beispiel wird eine Regel erstellt, die den Versand eines Angebots a
 
 Gehen Sie wie folgt vor:
 
-1. Erstellen Sie eine **[!UICONTROL Kontrolle]** Typologieregel. Wählen Sie eine **[!UICONTROL Warnung]** Warnhinweisebene.
+1. Erstellen eines **[!UICONTROL Kontrolle]** Typologieregel. Select a **[!UICONTROL WARNUNG]** Alarmstufe.
 
    ![](assets/campaign_opt_create_control_01.png)
 

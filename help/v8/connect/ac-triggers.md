@@ -22,5 +22,5 @@ Sie können Experience Cloud Triggers verwenden, um Daten mithilfe der Pipeline 
 
 Weitere Informationen zu Adobe Campaign und Experience Cloud Triggers finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=de){target="_blank"}.
 
-Erfahren Sie, wie Sie [Erstellen eines Experience Cloud-Triggers](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=de){target="_blank"} und kritische Verbraucherverhaltensweisen zu identifizieren, zu definieren und zu überwachen.
+Erfahren Sie mehr über [Erstellen eines Experience Cloud-Triggers](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=de){target="_blank"} kritische Verbraucherverhaltensweisen identifizieren, definieren und überwachen.
 

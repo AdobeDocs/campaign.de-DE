@@ -30,7 +30,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendung an Mid-So
   <tr> 
    <td> <span class="uicontrol">Mid-Sourcing (Versandlogs)</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> Ruft Versandlogs auf dem Mid-Sourcing-Server ab. Er wird standardmäßig jede Stunde ausgelöst.<br /> </td> 
+   <td> Dieser Workflow erfasst Versandlogs auf dem Mid-Sourcing-Server. Er wird standardmäßig stündlich ausgelöst.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -36,7 +36,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    ![](assets/offer_cat_create_002.png)
 
-1. Benennen Sie die Kategorie neu. Sie können den Titel später mithilfe der **[!UICONTROL Allgemein]** Registerkarte.
+1. Benennen Sie die Kategorie um. Sie können den Titel später bearbeiten, indem Sie die Schaltfläche **[!UICONTROL Allgemein]** Tabulator.
 
    ![](assets/offer_cat_create_003.png)
 

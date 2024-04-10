@@ -32,7 +32,7 @@ Im Versand-Dashboard können Sie außerdem die verarbeiteten Nachrichten und Ver
 >Der Versandstatus wird nicht in Echtzeit angezeigt. Weitere Informationen zum E-Mail-Feedback-Service finden Sie [in diesem Abschnitt](#email-feedback-service).
 
 
-[Weitere Informationen zur Versandüberwachung finden Sie in der Campaign Classic v7-Dokumentation .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de){target="_blank"}
+[Weitere Informationen zur Versandüberwachung finden Sie in der Dokumentation zu Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de){target="_blank"}
 
 ## Campaign MTA {#mta}
 

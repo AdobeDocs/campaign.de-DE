@@ -75,7 +75,7 @@ Gehen Sie hierzu wie folgt vor:
 
    Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
-1. Wiederholen Sie diesen Vorgang, um den dem aktuellen Monat entsprechenden Geburtsmonat abzurufen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte 3 bis 10, ersetzen Sie **[!UICONTROL Tag]** mit **[!UICONTROL Monat]**.
+1. Wiederholen Sie diesen Vorgang, um den Geburtsmonat abzurufen, der dem aktuellen Monat entspricht. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** Taste und wiederholen Sie die Schritte 3 bis 10, und ersetzen **[!UICONTROL Tag]** mit **[!UICONTROL Monat]**.
 
    Die vollständige Formel lautet wie folgt:
 
@@ -115,7 +115,7 @@ Die Auswahl der Empfänger, deren Geburtstag dem aktuellen Datum entspricht, wir
 
 Prüfen Sie mithilfe einer **[!UICONTROL Test]**-Aktivität, ob das aktuelle Jahr ein Schaljahr und ob das aktuelle Datum der 1. März ist.
 
-Wenn der Test überprüft wird (das Jahr ist kein Schaltjahr - es gibt keinen 29. Februar - und das aktuelle Datum ist tatsächlich der 1. März), wird die **[!UICONTROL True]** Die Transition ist aktiviert und die Empfänger, die am 29. Februar Geburtstag haben, werden zum Versand am 1. März hinzugefügt. Andernfalls wird die **[!UICONTROL False]** Transition aktiviert ist und nur die Empfänger, die am aktuellen Datum Geburtstag haben, den Versand erhalten.
+Wenn der Test bestätigt wird (das Jahr ist kein Schaltjahr - es gibt keinen 29. Februar - und das aktuelle Datum ist tatsächlich der 1. März), dann gilt Folgendes: **[!UICONTROL wahr]** Die Transition ist aktiviert und die am 29. Februar geborenen Empfänger werden zum Versand am 1. März hinzugefügt. Andernfalls wird die **[!UICONTROL Falsch]** Die Transition ist aktiviert und nur die am aktuellen Datum geborenen Empfänger erhalten den Versand.
 
 Kopieren Sie den unten stehenden Code und fügen Sie ihn im Bereich **[!UICONTROL Initialisierungsscript]** des **[!UICONTROL Erweitert]**-Tabs ein.
 

@@ -52,11 +52,11 @@ Gehen Sie wie folgt vor:
 
      In diesem Fall ist der zu wählende Operator **[!UICONTROL nicht wie]** und es wird kein Wert angegeben.
 
-   * Der Inhalt der zweiten Filterbedingung hängt von der ersten ab. Hier wird die **[!UICONTROL Ereignisdatum]** direkt im Feld **[!UICONTROL Versandlogs der Empfänger]** -Tabelle, da ein Link zu dieser Tabelle vorhanden ist.
+   * Der Inhalt der zweiten Filterbedingung hängt von der ersten ab. Hier gilt Folgendes **[!UICONTROL Ereignisdatum]** Das Feld wird direkt im **[!UICONTROL Versandlogs der Empfänger]** Tabelle, da ein Link zu dieser Tabelle vorhanden ist.
 
      ![](assets/query_editor_nveau_36.png)
 
-     Auswählen **[!UICONTROL Ereignisdatum]** mit dem **[!UICONTROL größer als oder gleich]** Operator. Wählen Sie die **[!UICONTROL DaysAgo (7)]** -Wert. Klicken Sie dazu auf **[!UICONTROL Ausdruck bearbeiten]** im **[!UICONTROL Wert]** -Feld. Im **[!UICONTROL Formeltyp]** auswählen **[!UICONTROL Datumsfunktionen]** und **[!UICONTROL Aktuelles Datum minus n Tage]**, wobei &quot;7&quot;als Wert angegeben wird.
+     Auswählen **[!UICONTROL Ereignisdatum]** mit dem **[!UICONTROL Größer oder gleich]** Operator. Wählen Sie die **[!UICONTROL Vor Tagen (7)]** Wert. Klicken Sie dazu auf **[!UICONTROL Ausdruck bearbeiten]** in der **[!UICONTROL Wert]** Feld. In der **[!UICONTROL Formeltyp]** Fenster, auswählen **[!UICONTROL Verarbeitung nach Daten]** und **[!UICONTROL Aktuelles Datum abzüglich n Tage]**, wobei „7“ als Wert angegeben wird.
 
      ![](assets/query_editor_nveau_37.png)
 
@@ -64,13 +64,13 @@ Gehen Sie wie folgt vor:
 
      ![](assets/query_editor_nveau_38.png)
 
-1. Im **[!UICONTROL Datenformatierung]** -Fenster die Nachnamen in Großbuchstaben ändern. Klicken Sie auf **[!UICONTROL Nachname]** in der **[!UICONTROL Transformation]** und wählen Sie **[!UICONTROL Alles in Großbuchstaben]** im Dropdown-Menü.
+1. In der **[!UICONTROL Datenformatierung]** Fenster, die Nachnamen werden in Großbuchstaben geändert. Klicken Sie auf die Schaltfläche **[!UICONTROL Nachname]** Zeile in der **[!UICONTROL Transformation]** Spalte und auswählen **[!UICONTROL Großschreibung verwenden]** im Dropdown-Menü.
 
    ![](assets/query_editor_nveau_39.png)
 
 1. Verwenden Sie die Funktion **[!UICONTROL Berechnetes Feld hinzufügen]**, um eine neue Spalte zu erstellen.
 
-   Fügen Sie in diesem Beispiel ein berechnetes Feld mit dem Vor- und Nachnamen der Empfänger in einer Spalte hinzu. Klicken Sie auf **[!UICONTROL Berechnetes Feld hinzufügen]** -Funktion. Im **[!UICONTROL Definition eines berechneten Felds exportieren]** ein Fenster, einen Titel und einen internen Namen eingeben und die **[!UICONTROL JavaScript-Ausdruck]** Typ. Geben Sie dann den folgenden Ausdruck ein:
+   In diesem Beispiel fügen Sie ein berechnetes Feld mit dem Vor- und Nachnamen der Empfänger in einer einzigen Spalte hinzu. Klicken Sie auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]** Funktion. In der **[!UICONTROL Berechnete Felddefinition exportieren]** ein, geben Sie einen Titel und einen internen Namen ein und wählen Sie **[!UICONTROL JavaScript-Ausdruck]** Typ. Geben Sie dann folgenden Ausdruck ein:
 
    ```
    var rep = source._firstName+" - "+source._lastName
@@ -79,7 +79,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_40.png)
 
-   Klicks **[!UICONTROL OK]**. Die **[!UICONTROL Datenformatierung]** -Fenster konfiguriert wurde.
+   Klick **[!UICONTROL OK]**. Die **[!UICONTROL Datenformatierung]** Das Fenster ist konfiguriert.
 
    Weiterführende Informationen zum Hinzufügen berechneter Felder finden Sie in diesem Abschnitt.
 

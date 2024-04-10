@@ -28,7 +28,7 @@ Das Archivierungsziel ist die von Ihnen ausgewählte BCC-E-Mail-Adresse, die fü
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service [Adobe kontaktieren](../start/campaign-faq.md#support){target="_blank"} um die für die Archivierung zu verwendende BCC-E-Mail-Adresse zu übermitteln.
+>Als Benutzer von Managed Cloud Service [Kontakt Adobe](../start/campaign-faq.md#support){target="_blank"} um die für die Archivierung zu verwendende BCC-E-Mail-Adresse mitzuteilen.
 
 >[!CAUTION]
 >

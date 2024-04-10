@@ -30,7 +30,7 @@ Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Vorgä
 
 * Die Unterregisterkarte **[!UICONTROL Validierungen]** enthält den gesamten Validierungsprozess für die Kampagne. Sie können Details und Kommentare überprüfen.
 
-* Die Workflows, die zum Generieren von Nachrichten für Dienstleister erstellt wurden, werden im Abschnitt **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** Unterregisterkarte. Klicken Sie auf **[!UICONTROL Detail]** -Symbol, um den ausgewählten Workflow anzuzeigen.
+* Die Workflows, die zur Generierung der Nachrichten an Dienstleister erstellt wurden, werden in der **[!UICONTROL Vorgänge bei Dienstleistern]** Unterregisterkarte. Klicken Sie auf die Schaltfläche **[!UICONTROL Detail]** Symbol zum Anzeigen des ausgewählten Workflows.
 
 ## Nachverfolgen von Sendungen {#delivery-tracking}
 

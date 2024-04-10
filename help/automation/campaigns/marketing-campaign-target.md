@@ -58,7 +58,7 @@ Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow defin
 
 ### Erstellen eines Workflows {#create-a-targeting-workflow}
 
-Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterbedingungen in einer grafischen Abfolge in einem Workflow erfolgen. Sie können Populationen und Unterpopulationen erstellen, die entsprechend Ihren Anforderungen angesprochen werden. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
+Das Targeting kann durch eine Kombination von Filterbedingungen in einer grafischen Abfolge in einem Workflow erstellt werden. Sie können Populationen und Unterpopulationen erstellen, die Ihren Anforderungen entsprechend ausgewählt werden. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
 
 ![](assets/targeting-and-wf-tab.png)
 
@@ -88,7 +88,7 @@ Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, 
 
 Es besteht die Möglichkeit, mehrere Zielgruppen-Workflows für eine einzelne Kampagne zu erstellen. Gehen Sie wie folgt vor, um einen Workflow hinzuzufügen:
 
-1. Gehen Sie zum linken oberen Bereich des Workflow-Erstellungsbereichs, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Hinzufügen]**. Sie können auch die **[!UICONTROL Neu]** oberhalb dieses Bereichs.
+1. Klicken Sie mit der rechten Maustaste in den oberen linken Bereich der Workflow-Erstellungszone und wählen Sie **[!UICONTROL Hinzufügen]**. Sie können auch den **[!UICONTROL Neu]** Schaltfläche oberhalb dieser Zone.
 
    ![](assets/add-a-wf.png)
 
@@ -101,7 +101,7 @@ Benutzer mit entsprechenden Berechtigungen können Zielgruppen-Workflows manuell
 
 Die Zielgruppenbestimmung kann so konfiguriert werden, dass sie entsprechend einer Planungsaktivität (Planungsassistent) oder abhängig von einem Ereignis (externes Signal, Dateiimport usw.) automatisch ausgeführt wird.
 
-Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) are **asynchron** Prozesse: Der Befehl wird gespeichert und wird ausgeführt, sobald der Server verfügbar ist, um ihn anzuwenden.
+Die Aktionen zur Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause usw.) sind **asynchron** Prozesse: Der Befehl wird gespeichert und wird wirksam, sobald der Server für die Anwendung verfügbar ist.
 
 Über die Symbolleiste hingegen kann die Ausführung des Zielgruppen-Workflows unmittelbar gesteuert werden.
 
@@ -111,9 +111,9 @@ Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Star
 
      ![](assets/start.png)
 
-     Der Server berücksichtigt die Anfrage, wie durch seinen Status gezeigt: **[!UICONTROL Starten Sie so bald wie möglich]**.
+     Der Server berücksichtigt die Anfrage, wie der Status zeigt: **[!UICONTROL Schnellstmöglicher Start]**.
 
-   * Sie können den Zielgruppen-Workflow über das entsprechende Symbolleistensymbol neu starten. Dieser Befehl kann nützlich sein, wenn die Variable **[!UICONTROL Starten]** -Symbol nicht verfügbar ist, z. B. wenn der Workflow zur Zielgruppenbestimmung angehalten wird. Klicken Sie in diesem Fall auf die **[!UICONTROL Neu starten]** -Symbol, um den Neustart vorherzusehen. Diese Anfrage wird daraufhin vom Server erfasst, wie am Ausführungsstatus zu erkennen ist: **[!UICONTROL Soll neu gestartet werden]**.
+   * Sie können den Zielgruppenbestimmungs-Workflow über das entsprechende Symbolleistensymbol neu starten. Dieser Befehl kann nützlich sein, wenn **[!UICONTROL Starten]** Das -Symbol ist nicht verfügbar, z. B. wenn der Zielgruppen-Workflow gerade angehalten wird. Klicken Sie in diesem Fall auf die Schaltfläche **[!UICONTROL Neu starten]** Symbol für den vorzeitigen Neustart. Diese Anfrage wird daraufhin vom Server erfasst, wie am Ausführungsstatus zu erkennen ist: **[!UICONTROL Soll neu gestartet werden]**.
 
 * Anhalten oder aussetzen
 
@@ -123,9 +123,9 @@ Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Star
 
      ![](assets/pause.png)
 
-     Der Server berücksichtigt den Befehl, da sein Status Folgendes anzeigt: **[!UICONTROL Anhalten angefordert]**.
+     Der Server berücksichtigt den Befehl, wie der Status zeigt: **[!UICONTROL Soll ausgesetzt werden]**.
 
-     Sie können einen Zielgruppen-Workflow auch automatisch anhalten, wenn die Ausführung eine bestimmte Aktivität erreicht. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, ab der der Zielgruppen-Workflow ausgesetzt werden soll, und wählen Sie **[!UICONTROL Aktivieren, aber nicht ausführen]**.
+     Sie können einen Zielgruppen-Workflow auch automatisch anhalten, wenn seine Ausführung eine bestimmte Aktivität erreicht. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, von der der Zielgruppenbestimmungs-Workflow angehalten werden soll, und wählen Sie **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
      ![](assets/donotexecute.png)
 
@@ -143,9 +143,9 @@ Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Star
 
      ![](assets/stop.png)
 
-     Der Server berücksichtigt den Befehl, da sein Status Folgendes anzeigt: **[!UICONTROL Beenden angefordert]**.
+     Der Server berücksichtigt den Befehl, wie der Status zeigt: **[!UICONTROL Wartet auf Stopp]**.
 
-  Ein Zielgruppen-Workflow kann auch automatisch angehalten werden, wenn die Ausführung eine Aktivität erreicht. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, von der aus der Zielgruppen-Workflow gestoppt werden soll, und wählen Sie **[!UICONTROL Nicht aktivieren]**.
+  Sie können einen Zielgruppen-Workflow auch automatisch stoppen, wenn die Ausführung eine Aktivität erreicht. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, von der der Zielgruppenbestimmungs-Workflow gestoppt werden soll, und wählen Sie **[!UICONTROL Nicht aktivieren]**.
 
   ![](assets/donotactivate.png)
 

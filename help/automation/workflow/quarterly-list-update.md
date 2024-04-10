@@ -30,7 +30,7 @@ Jeweils zu Beginn einer neuen Saison werden geeignete sportliche Aktivitäten be
 
 1. Da die Liste jeweils zu Saisonbeginn aktualisiert werden soll, muss als Häufigkeit **[!UICONTROL Monatlich]** ausgewählt werden.
 1. Wählen Sie im nächsten Bildschirm die Monate März, Juni, September und Dezember aus. Geben Sie als Tag den 20. des Monats an und die Uhrzeit, an der der Workflow gestartet werden soll.
-1. Wählen Sie anschließend die Gültigkeitsdauer der Abfrage aus. Wenn diese Aktivität beispielsweise dauerhaft aktiv sein soll, wählen Sie **[!UICONTROL Dauerhafte Gültigkeit]**.
+1. Wählen Sie anschließend den Gültigkeitszeitraum für die Abfrage aus. Wenn diese Aktivität beispielsweise dauerhaft aktiv sein soll, wählen Sie **[!UICONTROL Permanente Gültigkeit]**.
 
 1. Konfigurieren Sie nun die Aktivität Listen-Update (wie im Abschnitt ](list-update.md)Listen-Update[ beschrieben).
 

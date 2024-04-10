@@ -114,7 +114,7 @@ Um den Workflow zu erstellen, gehen Sie wie folgt vor:
 
    mit den folgenden Variablen:
 
-   * **var reportName**: Geben Sie den internen Namen des Berichts in doppelte Anführungszeichen ein. In diesem Fall ist der interne Name der **Trackingindikator** ist &quot;deliveryFeedback&quot;.
+   * **var reportName**: Geben Sie den internen Namen des Berichts in doppelten Anführungszeichen ein. In diesem Fall der interne Name des **Tracking-Anzeige** Bericht ist „deliveryFeedback„.
    * **Var-Pfad**: Geben Sie den Speicherpfad der Datei („tmp“), den Namen, den Sie der Datei geben möchten („deliveryFeedback“), und die Dateierweiterung („.pdf“) ein. In diesem Fall haben wir den internen Namen als Dateinamen verwendet. Die Werte müssen zwischen doppelten Anführungszeichen stehen und durch ein „+“-Zeichen getrennt werden.
 
      >[!CAUTION]

@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um beispielsweise ein Produktprofil „Validierungsvera
 
 #### Erstellen des Produktprofils in der Admin Console{#create-profile-in-admin-console}
 
-1. Stellen Sie eine Verbindung zur [Admin Console](https://adminconsole.adobe.com/enterprise) her{target="_blank"}.
+1. Stellen Sie eine Verbindung zur [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} her.
 1. Öffnen Sie vom Abschnitt **Produkt und Dienstleistungen** auf der Startseite aus das Campaign-Produkt.
 1. Klicken Sie auf **Neues Profil** und geben Sie den Namen des zu erstellenden Produktprofils mit der exakt korrekten Syntax wie [hier](#product-profiles) beschrieben ein. In unserem Beispiel geben wir Folgendes ein: Kampagne – `<your-instance-name>` – Validierungsverantwortliche
 

@@ -45,13 +45,13 @@ Dieser Bericht enthält Informationen zum Datendurchsatz der Sendungen in Bezug 
 
 ![](assets/report-toolbar.png)
 
-Sie können die angezeigten Werte durch Änderung des Parameters (z. B. 1 Stunde, 3 Stunden, 24 Stunden) konfigurieren. Klicks **[!UICONTROL Aktualisieren]** um Ihre Auswahl zu bestätigen.
+Sie können die angezeigten Werte konfigurieren, indem Sie die Zeitskala ändern: 1-Stunden-Ansicht, 3-Stunden-Ansicht, 24-Stunden-Ansicht usw. Klick **[!UICONTROL Aktualisieren]** , um Ihre Auswahl zu bestätigen.
 
 >[!NOTE]
 >
->Sie können die Anzahl der pro Stunde gesendeten Sendungen auch mithilfe der Variablen [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de){target="_blank"}.
+>Sie können auch die Anzahl der pro Stunde gesendeten Sendungen mithilfe der [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de){target="_blank"}.
 >
->Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte zum Gewähren des Administratorzugriffs für einen Benutzer werden im Abschnitt [diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
+>Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie unter [Diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
 >
 
 ## Nutzer-Aktivitäten {#user-activities}
@@ -61,7 +61,7 @@ Dieser Bericht zeigt Öffnungen, Klicks und Transaktionen in Form eines Diagramm
 Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Öffnungen]**: Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht berücksichtigt. [Weitere Informationen](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Klicks]** : Gesamtzahl der Klicks auf Links in Sendungen. Klicks auf Abmelde- und Mirrorseite-Links werden nicht berücksichtigt.
+* **[!UICONTROL Klicks]** : Gesamtzahl der Klicks auf Links in Sendungen. Klicks auf Abmelde-Links und Mirrorseiten werden nicht berücksichtigt.
 <!--
 * **[!UICONTROL Transactions]** : Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -118,7 +118,7 @@ Jede Zeile der Datentabelle kann durch Klick auf das Symbol ]+[ ausgeklappt werd
 
 >[!NOTE]
 >
->Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie die **[!UICONTROL Versandlogs (broadlogrcp)]** Cube. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md). Die **[!UICONTROL sonstige]** -Kategorie enthält Domänennamen, die nicht zu einer bestimmten Klasse gehören.
+>Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie die **[!UICONTROL Versandlogs (broadLogRcp)]** Cube. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md). Die **[!UICONTROL Sonstige]** Die Kategorie enthält Domain-Namen, die nicht zu einer bestimmten Klasse gehören.
 
 ## Browser {#browsers}
 
@@ -253,7 +253,7 @@ Dieser Bericht enthält Informationen bezüglich der Informationsdienst-Abonneme
 
 ![](assets/service-report.png)
 
-Es kann für ein Abonnement angezeigt werden, indem Sie auf die **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** -Knoten der Startseite oder des Explorer. Wählen Sie das gewünschte Abonnement aus und klicken Sie auf die Schaltfläche **[!UICONTROL Berichte]** Registerkarte. Die **[!UICONTROL Abonnement-Verfolgung]** ist standardmäßig verfügbar. Sie können damit die An- und Abmeldetrends und die Treuerate über einen Zeitraum hinweg sehen. Die Darstellung dieser Daten kann über die Dropdown-Liste konfiguriert werden. Klicks **[!UICONTROL Aktualisieren]** , um die ausgewählte Konfiguration zu validieren.
+Er kann für ein Abonnement angezeigt werden, indem Sie auf die Schaltfläche **[!UICONTROL Profile und Zielgruppen > Services und Abonnements]** Knoten der Startseite oder des Explorers. Wählen Sie das gewünschte Abonnement aus und klicken Sie dann auf die Schaltfläche **[!UICONTROL Berichte]** Tabulator. Die **[!UICONTROL Abonnement-Tracking]** Der Bericht ist standardmäßig verfügbar. Damit können Sie die An- und Abmeldetrends sowie die Treuerate für einen bestimmten Zeitraum anzeigen. Sie können die Darstellung dieser Daten über die Dropdown-Liste konfigurieren. Klick **[!UICONTROL Aktualisieren]** , um die ausgewählte Konfiguration zu validieren.
 
 Weiterführende Informationen dazu finden Sie auf [dieser Seite](../start/subscriptions.md).
 

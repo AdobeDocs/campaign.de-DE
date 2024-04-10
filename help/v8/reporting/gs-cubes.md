@@ -26,7 +26,7 @@ Nach ihrer Erstellung und Konfiguration werden die Cubes in den Abfrage-Aktivit�
 
 Verwenden Sie das Marketing Analytics-Modul von Campaign, um:
 
-1. Cubes und Indikatoren erstellen
+1. Erstellen von Cubes und Indikatoren
 
    * Daten zu aggregieren und in einer Arbeitstabelle zu speichern, um Indikatoren auf der Grundlage von Benutzeranforderungen im Voraus zu berechnen,
    * das in den verschiedenen Berechnungen der Berichte und Abfragen bewegte Datenenvolumen zu reduzieren und dadurch die Berechnungszeit der Indikatoren deutlich zu optimieren,
@@ -34,7 +34,7 @@ Verwenden Sie das Marketing Analytics-Modul von Campaign, um:
 
    Weiterführende Informationen hierzu finden Sie unter [Erstellen von Indikatoren](cube-indicators.md).
 
-1. Pivot-Tabellen erstellen und Daten analysieren
+1. Pivot-Tabellen erstellen und Daten untersuchen
 
    * berechnete Daten und konfigurierte Kennzahlen zu analysieren,
    * die anzuzeigenden Daten sowie ihren Anzeigemodus auszuwählen,

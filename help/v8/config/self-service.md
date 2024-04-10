@@ -48,7 +48,7 @@ Erfahren Sie, wie Sie Ihre Subdomains und deren Zertifikate überwachen.
 
 ## Überwachen der Performance
 
-Das Control Panel bietet verschiedene Funktionen, mit denen Sie Ihre Instanzen überwachen und eine optimale Performance sicherstellen können. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de).{target="_blank"}
+Das Control Panel bietet verschiedene Funktionen, mit denen Sie Ihre Instanzen überwachen und eine optimale Performance sicherstellen können. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de){target="_blank"}.
 
 
 ## Instanzeneinstellungen

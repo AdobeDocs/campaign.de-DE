@@ -131,9 +131,9 @@ Wenn nun ein Besucher auf den Vorschlag und somit auf die URL klickt, wird dem V
 
 >[!NOTE]
 >
->Wenn Sie einen anderen Status in der URL angeben möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den Wert, der dem gewünschten Status entspricht. Beispiel: **[!UICONTROL Abgelehnt]** = &quot;5&quot;, **[!UICONTROL präsentiert]** = &quot;1&quot; usw.
+>Wenn Sie einen anderen Status in der URL angeben möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den Wert, der dem gewünschten Status entspricht. Beispiel: **[!UICONTROL abgelehnt]** = „5„, **[!UICONTROL Präsentiert]** = „1“ und so weiter.
 >
->Status und ihre Werte können im Abschnitt **[!UICONTROL Angebotsvorschläge (nms)]** Datenschema. Weitere Informationen hierzu finden Sie auf [dieser Seite](../dev/create-schema.md).
+>Status und ihre Werte können abgerufen werden in der **[!UICONTROL Angebotsvorschläge (nms)]** Datenschema. Weitere Informationen hierzu finden Sie auf [dieser Seite](../dev/create-schema.md).
 
 **Ausgehende Interaktionen**
 
@@ -156,4 +156,4 @@ Sollte kein Angebot für einen Empfänger infrage kommen, ist dies in der Vorsch
 
 Die Vorschau berücksichtigt Kontexte möglicherweise nicht, wenn sie auf eine Platzierung beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema erweitert wurde, um Felder hinzuzufügen, auf die eine einen eingehenden Kanal verwendende Platzierung Bezug nimmt. 
 
-Weitere Informationen hierzu finden Sie in diesem Beispiel unter [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}.
+Weiterführende Informationen hierzu finden Sie in diesem Beispiel unter [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}.

@@ -37,7 +37,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Marketing-Ressour
   <tr> 
    <td> <span class="uicontrol">Vorgänge in Diskussionsforen</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> Dieser Workflow verwaltet den Versand von Benachrichtigungen in Diskussionsforen. Sie wird ausgelöst, wenn ein Genehmigungssignal empfangen wird.<br /> </td> 
+   <td> Dieser Workflow verwaltet den Versand von Benachrichtigungen aus Diskussionsforen. Sie wird ausgelöst, wenn ein Validierungssignal empfangen wird.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

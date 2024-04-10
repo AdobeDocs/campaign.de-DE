@@ -119,7 +119,7 @@ Adobe Campaign bietet eine Reihe von Funktionen zur Überwachung Ihrer Prozesse 
 
 Die Überwachung Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen.
 
-Erfahren Sie mehr über die Daten, die Sie nach dem Senden eines Versands überwachen können, und lernen Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=de#sending-messages), wie Zustellungsfehler und Quarantänen verwaltet werden.{target="_blank"}
+Erfahren Sie mehr über die Daten, die Sie nach dem Senden eines Versands überwachen können, und lernen Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=de#sending-messages){target="_blank"}, wie Zustellungsfehler und Quarantänen verwaltet werden.
 
 ### Überwachen von Workflows
 
@@ -127,7 +127,7 @@ Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/w
 
 ### Überwachen einer Instanz
 
-Richtlinien zur Instanzüberwachung finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=de#monitoring-campaign-classic).{target="_blank"}
+Richtlinien zur Instanzüberwachung finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=de#monitoring-campaign-classic){target="_blank"}.
 
 Verwenden Sie die Selbstbedienungsoberfläche des Audit-Protokolls, um die in Ihrer Instanz vorgenommenen Änderungen zu überwachen. Das Audit-Protokoll erfasst in Echtzeit eine umfassende Liste von Aktionen und Ereignissen, die in Ihrer Adobe Campaign-Instanz auftreten. Sie können auf einen Datenverlauf zugreifen, um zum Beispiel folgende Fragen zu beantworten: Was ist mit Ihren Workflows geschehen und wer hat sie zuletzt aktualisiert? Was haben Ihre Anwender in der Instanz getan?
 

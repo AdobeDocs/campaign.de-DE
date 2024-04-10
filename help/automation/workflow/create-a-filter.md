@@ -44,7 +44,7 @@ Um dem Filter zu entsprechen, muss das Benutzerkonto eine der folgenden Bedingun
 >
 >Bei Verwendung der Funktion **[!UICONTROL Upper]** werden bei einer Abfrage Groß- und Kleinschreibung nicht beachtet.
 
-Die **[!UICONTROL Wird berücksichtigt, wenn]** -Spalte können Sie die Anwendungskriterien für diese Filterbedingungen definieren. Hier wird die **$(/tmp/@text)** -Zeichen stellen den Inhalt des mit dem Filter verknüpften Eingabefelds dar:
+Die **[!UICONTROL Berücksichtigt, wenn]** In dieser Spalte können Sie die Anwendungskriterien für diese Filterbedingungen definieren. Hier gilt Folgendes **$(/tmp/@text)** Zeichen stellen den Inhalt des Eingabefelds dar, das mit dem Filter verknüpft ist:
 
 ![](assets/query_editor_filter_sample_5.png)
 

@@ -20,7 +20,7 @@ Durch diese Integration können Adobe Campaign und Adobe Analytics über das Add
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service [Adobe kontaktieren](../start/campaign-faq.md#support) , um Campaign mit Adobe Experience Cloud-Diensten und -Lösungen zu verbinden. Das Add-on Web Analytics Connector muss über das dedizierte Paket in Ihrer Umgebung installiert werden.
+>Als Benutzer von Managed Cloud Service [Kontakt Adobe](../start/campaign-faq.md#support) um Campaign mit Adobe Experience Cloud-Services und -Lösungen zu verbinden. Das Add-on Web Analytics Connector muss über das dedizierte Paket in Ihrer Umgebung installiert werden.
 
 Mit Adobe Analytics Connector kann Adobe Campaign die Internet-Zielgruppe (Web Analytics) messen. Die Web-Analyse-Tools von Adobe Campaign ermöglichen die Weiterleitung von Indikatoren und Kampagnenattributen an Analytics.
 
@@ -55,7 +55,7 @@ Gehen Sie wie folgt vor, um Ihre **[!UICONTROL Report Suite]** in [!DNL Adobe An
 
 1. Klicken Sie auf der Seite **[!UICONTROL Report Suite-Manager]** auf **[!UICONTROL Neu erstellen]** und anschließend auf **[!UICONTROL Report Suite]**.
 
-   Für das detaillierte Verfahren zu **[!UICONTROL Report Suite]** Erstellung, siehe [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=de#prerequisites){target="_blank"}.
+   Für das ausführliche Verfahren zu **[!UICONTROL Report Suite]** Erstellung, siehe [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=de#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -85,7 +85,7 @@ Im Anschluss an die Erstellung Ihrer **[!UICONTROL Report Suite]** müssen Sie *
 
 1. Klicken Sie auf **[!UICONTROL Neu hinzufügen]**, um die für die Messung der Effektivität der E-Mail-Kampagne erforderlichen Kennungen zu erstellen, also den internen Kampagnennamen (cid) und die ID der iNmsBroadlog-Tabelle (bid).
 
-   Informationen zum Bearbeiten **[!UICONTROL Konversionsvariablen]**, siehe [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=de#admin-tools){target="_blank"}.
+   Informationen zur Bearbeitung **[!UICONTROL Konversionsvariablen]**, siehe hier [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=de#admin-tools){target="_blank"}.
 
    ![](assets/analytics_connnector_6.png)
 
@@ -108,7 +108,7 @@ Im Anschluss an die Erstellung Ihrer **[!UICONTROL Report Suite]** müssen Sie *
    * **[!UICONTROL Einzelöffnungen]**
    * **[!UICONTROL Abgemeldet]**
 
-   Informationen zur Konfiguration **[!UICONTROL Erfolgsereignisse]**, siehe [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=de#admin-tools)
+   Informationen zur Konfiguration von **[!UICONTROL Erfolgsereignisse]**, siehe hier [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=de#admin-tools)
 
    ![](assets/analytics_connnector_8.png)
 
@@ -122,9 +122,9 @@ Nun müssen Sie in Adobe Campaign ein externes **[!UICONTROL Web Analytics]**-Ko
 
 Beachten Sie Folgendes: Wenn eine Ihrer **[!UICONTROL Report Suites]**, **[!UICONTROL Konversionsvariablen]** oder eines Ihrer **[!UICONTROL Erfolgsereignisse]** beim Konfigurieren Ihres externen Kontos nicht angezeigt wird, bedeutet dies, dass Sie im **[!UICONTROL Produktprofil]**, das dem Benutzer zugeordnet ist, über keine Berechtigung für diese neu erstellte Komponente verfügen.
 
-Weitere Informationen hierzu finden Sie im Abschnitt [Produktprofile für Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=de#product-profile-admins){target="_blank"} Seite.
+Weiterführende Informationen hierzu finden Sie in der [Produktprofile für Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=de#product-profile-admins){target="_blank"} Seite.
 
-1. Navigieren Sie zum **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]** Ordner des Adobe Campaign-Explorer-Navigationsbaums und klicken Sie auf **[!UICONTROL Neu]**.
+1. Navigieren Sie zu . **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]** Ordner der Adobe Campaign Explorer-Baumstruktur und klicken Sie auf **[!UICONTROL Neu]**.
 
    ![](assets/analytics_connnector_9.png)
 
@@ -182,7 +182,7 @@ Weitere Informationen hierzu finden Sie im Abschnitt [Produktprofile für Adobe 
 
 1. Im Tab **[!UICONTROL Erweitert]** können Sie fortgeschrittene Parameter ändern.
 
-   * **[!UICONTROL Lebensdauer]**: Hier können Sie die Verzögerung (in Tagen) angeben, nach der die in Adobe Campaign durch technische Workflows wiederhergestellten Web-Ereignisse abgerufen wurden. Standard: 180 Tage.
+   * **[!UICONTROL Lebensdauer]**: Hier können Sie die Verzögerung (in Tagen) angeben, nach der die Web-Ereignisse von technischen Workflows in Adobe Campaign wiederhergestellt werden. Standard: 180 Tage.
    * **[!UICONTROL Persistenz]**: Zeitraum (standardmäßig 7 Tage), während dem ein Webereignis (z. B. eine Bestellung) einer Remarketing-Kampagne zugeordnet werden kann.
 
 >[!NOTE]
@@ -245,11 +245,11 @@ Damit die Adobe Experience Cloud nach Versand der Nachrichten durch Adobe Campai
 1. Sie können jetzt Ihren Versand durchführen und Ihren Bericht dazu in Adobe Analytics abrufen.
 
 
-## Remarketing-Kampagne erstellen {#create-a-re-marketing-campaign}
+## Erstellen einer Remarketing-Kampagne {#create-a-re-marketing-campaign}
 
 Zur Vorbereitung von Remarketing-Kampagnen ist die Erstellung von spezifischen Versandvorlagen erforderlich. Anschließend ist die Remarketing-Kampagne zu konfigurieren und einem Segment zuzuweisen. Jedem Segment muss eine andere Remarketing-Kampagne entsprechen.
 
-Remarketing-Kampagnen werden automatisch gestartet, sobald Adobe Campaign die Segmente wiederhergestellt hat, mit denen das Verhalten der Zielgruppe der ursprünglichen Kampagne analysiert wurde. Im Falle eines Warenkorbabbruchs oder einer Anzeige eines Produkts ohne Kauf wird ein Versand an die betroffenen Empfänger gesendet, damit der Besucher auf der Website seinen Kauf abschließen kann.
+Remarketing-Kampagnen werden automatisch gestartet, sobald Adobe Campaign die Segmentwiederherstellung abgeschlossen hat und das Verhalten der Personen analysiert hat, die von der ursprünglichen Kampagne angesprochen wurden. Im Falle eines Warenkorbabbruchs oder der Anzeige eines Produkts ohne Kauf wird ein Versand an die betroffenen Empfängerinnen und Empfänger gesendet, damit ihre Website-Navigation ihren Kauf abschließen kann.
 
 Adobe Campaign stellt vorkonfigurierte Versandvorlagen zur Verfügung, die Sie verwenden oder als Anregung für Ihre Kampagnen nutzen können.
 
@@ -258,11 +258,11 @@ Adobe Campaign stellt vorkonfigurierte Versandvorlagen zur Verfügung, die Sie v
 1. Passen Sie die Vorlage Ihren Bedürfnissen an und speichern Sie sie.
 1. Erstellen Sie eine neue Kampagne und wählen Sie aus der Dropdown-Liste die Vorlage **[!UICONTROL Remarketing-Kampagne]** aus;
 1. Klicken Sie auf den Link **[!UICONTROL Konfigurieren...]**, um das Segment und die der Kampagne entsprechende Versandvorlage anzugeben;
-1. Wählen Sie Analytics e aus.[Externes Konto](#external-account-ac)und dem entsprechenden Segment.
+1. Analytics-Seite auswählen[Externes Konto](#external-account-ac), und das betreffende Segment.
 1. Wählen Sie die für diese Remarketing-Kampagne zu verwendende Versandvorlage aus und klicken Sie auf **[!UICONTROL Beenden]**, um das Konfigurationsfenster zu schließen.
 1. Klicken Sie nun auf **[!UICONTROL OK]**, um das Kampagnenfenster zu schließen.
 
-Die **[!UICONTROL Remarketing-Effizienz]** auf der Seite &quot;Globale Berichte&quot;zugreifen. Damit können Sie die Anzahl der konvertierten Kontakte (d. h. die gekauften Artikel) in Bezug auf die Anzahl der Warenkorbabbrüche im Anschluss an die Adobe Campaign-Remarketing-Kampagne anzeigen. Die Konversionsrate wird pro Woche, Monat oder seit Beginn der Synchronisation zwischen Adobe Campaign und Adobe Analytics berechnet.
+Die **[!UICONTROL Remarketing-Effizienz]** Der Zugriff auf den Bericht erfolgt über die Seite Globale Berichte . Sie ermöglicht die Anzeige der Anzahl der konvertierten Kontakte (d. h., die etwas gekauft haben) im Verhältnis zur Anzahl der Warenkorbabbrüche nach der Remarketing-Kampagne von Adobe Campaign. Die Konversionsrate wird pro Woche, Monat oder seit Beginn der Synchronisierung zwischen Adobe Campaign und Adobe Analytics berechnet.
 
 **Verwandte Themen**
 

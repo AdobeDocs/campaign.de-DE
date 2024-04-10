@@ -28,7 +28,7 @@ Der unten beschriebene Workflow wird standardmäßig mit dem Modul **Mid-Sourcin
   <tr> 
    <td> <span class="uicontrol">Versandindikatoren</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
-   <td> Dieser Workflow aktualisiert die Trackingindikatoren eines Versands. Dieser Workflow wird standardmäßig stündlich ausgelöst.<br /> </td> 
+   <td> Dieser Workflow aktualisiert die Versandverfolgungsindikatoren für einen Versand. Dieser Workflow wird standardmäßig stündlich ausgelöst.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

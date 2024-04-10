@@ -25,7 +25,7 @@ Der Zugriff auf integrierte Berichte erfolgt über die Campaign-Startseite, das 
 
 Auf der Startseite steht eine Liste wichtiger Berichte zur Verfügung, mit denen Sie schnell auf die Versanddaten zugreifen können. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Außerdem erfahren Sie, wie Sie Ihre eigenen Berichte zur Registerkarte **[!UICONTROL Berichte]** hinzufügen.
 
-Weiterführende Informationen zu diesen benutzerdefinierten Konfigurationen finden Sie in diesem Abschnitt [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=de){target="_blank"}.
+Weiterführende Informationen zu diesen benutzerdefinierten Konfigurationen finden Sie hier [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=de){target="_blank"}.
 
 
 ## Zugriff auf integrierte Berichte {#access-ootb-reports}

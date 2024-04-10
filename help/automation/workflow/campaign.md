@@ -46,7 +46,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Kampagne** instal
   <tr> 
    <td> <span class="uicontrol">Kampagnenvorgänge</span> <br /> </td> 
    <td> <span class="uicontrol">operationMgt</span> <br /> </td> 
-   <td> Verwaltet Vorgänge für Marketingkampagnen (Zielgruppenbestimmung, Dateiextraktion etc.). Außerdem werden Workflows erstellt, die sich auf wiederkehrende und periodische Kampagnen beziehen.<br /> </td> 
+   <td> Dieser Workflow verwaltet die Vorgänge für Marketing-Kampagnen (Starts, Zielgruppenbestimmung, Dateiextraktion usw.). Außerdem werden Workflows für wiederkehrende und periodische Kampagnen erstellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Bearbeitungsvorgänge bezüglich der Dienstleister</span> <br /> </td> 

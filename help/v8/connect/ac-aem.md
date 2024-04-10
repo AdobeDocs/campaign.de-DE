@@ -16,14 +16,14 @@ ht-degree: 90%
 
 Die Integration von Adobe Campaign und Adobe Experience Manager ermöglicht es Ihnen, den Inhalt von E-Mail-Sendungen sowie von Formularen direkt in Adobe Experience Manager zu verwalten. Sie haben die Möglichkeit, entweder Ihre **Adobe Experience Manager**-Inhalte in Campaign zu importieren oder eine Verbindung mit Ihrem **Adobe Experience Manager as a Cloud Service**-Konto herzustellen, wodurch Sie Inhalte direkt in der Web-Oberfläche bearbeiten können.
 
-[Erfahren Sie, wie Sie in der Campaign-Weboberfläche Adobe Experience Manager als Cloud Service bearbeiten](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html){target="_blank"}.
+[Erfahren Sie, wie Sie Ihre Adobe Experience Manager als Cloud Service-Inhalte in der Web-Benutzeroberfläche von Campaign bearbeiten](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html){target="_blank"}.
 
 [Weitere Informationen zu Adobe Experience Manager finden Sie in diesem Dokument .](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=de#aem-and-adobe-campaign-integration-workflow){target="_blank"}.
 
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service [Adobe kontaktieren](../start/campaign-faq.md#support) zur Integration von Adobe Experience Manager in Campaign.
+>Als Benutzer von Managed Cloud Service [Kontakt Adobe](../start/campaign-faq.md#support) zur Integration von Adobe Experience Manager mit Campaign.
 
 ## Importieren von Inhalten aus Adobe Experience Manager {#integrating-with-aem}
 
@@ -47,7 +47,7 @@ Mit dieser Integration kann beispielsweise ein Newsletter in Adobe Experience Ma
 
    ![](assets/aem_authoring_3.png)
 
-1. Bearbeiten Sie den E-Mail-Inhalt, indem Sie Komponenten hinzufügen, z. B. Personalisierungsfelder aus Adobe Campaign. Weitere Informationen finden Sie unter [Adobe Experience Manager-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html#editing-email-content){target="_blank"}.
+1. Bearbeiten Sie den E-Mail-Inhalt, indem Sie Komponenten hinzufügen, z. B. Personalisierungsfelder aus Adobe Campaign. Weitere Informationen finden Sie unter [Dokumentation zu Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html#editing-email-content){target="_blank"}.
 
 1. Wenn Ihre E-Mail fertig ist, navigieren Sie zum Menü **[!UICONTROL Seiteninformationen]** und klicken Sie auf **[!UICONTROL Workflow starten]**.
 
@@ -95,7 +95,7 @@ Ihre E-Mail kann jetzt an Ihre Zielgruppe gesendet werden.
 
 ## Importieren von Assets aus der Adobe Experience Manager Assets-Bibliothek {#assets-library}
 
-Sie können Assets auch direkt aus Ihrer [!DNL Adobe Experience Manager Assets Library] einfügen, während Sie eine E-Mail oder Landingpage in Adobe Campaign bearbeiten. Diese Funktion wird im Abschnitt [Adobe Experience Manager Assets-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html){target="_blank"}.
+Sie können Assets auch direkt aus Ihrer [!DNL Adobe Experience Manager Assets Library] einfügen, während Sie eine E-Mail oder Landingpage in Adobe Campaign bearbeiten. Diese Funktion wird hier beschrieben: [Dokumentation zu Adobe Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html){target="_blank"}.
 
 **In Adobe Experience Manager:**
 

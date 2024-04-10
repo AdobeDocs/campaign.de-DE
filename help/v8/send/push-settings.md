@@ -7,7 +7,7 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
 source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1819'
 ht-degree: 100%
 
@@ -27,9 +27,9 @@ Gehen Sie wie folgt vor, um Ihre App mit Adobe Experience Platform Mobile SDKs e
 
 1. Überprüfen Sie die [Voraussetzungen](#before-starting).
 1. Richten Sie eine [mobile Tag-Eigenschaft](#launch-property) in der Adobe Experience Platform-Datenerfassung ein.
-1. Rufen Sie das Adobe Experience Platform Mobile SDK ab, wie [auf dieser Seite](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) beschrieben{target="_blank"}.
-1. (optional) Aktivieren Sie die Protokollierung und Lebenszyklusmetriken, wie [auf dieser Seite](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/) beschrieben{target="_blank"}.
-1. (optional) Fügen Sie [Adobe Experience Platform Assurance](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/) zu Ihrer App hinzu{target="_blank"} to validate your implementation. Learn how to implement Adobe Experience Platform Assurance extension [in this page](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
+1. Rufen Sie das Adobe Experience Platform Mobile SDK ab, wie [auf dieser Seite](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"} beschrieben.
+1. (optional) Aktivieren Sie die Protokollierung und Lebenszyklusmetriken, wie [auf dieser Seite](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"} beschrieben.
+1. (optional) Fügen Sie [Adobe Experience Platform Assurance zu Ihrer App hinzu](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} to validate your implementation. Learn how to implement Adobe Experience Platform Assurance extension [in this page](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
 1. Konfigurieren Sie Ihre Mobile Services für iOS und Android in Adobe Campaign, wie [auf dieser Seite](#push-service) beschrieben.
 1. Installieren und konfigurieren Sie die [Adobe Campaign-Erweiterung](#configure-extension) in Ihrer Mobile-Eigenschaft.
 1. Folgen Sie der [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"}, um das Adobe Experience Platform Mobile SDK in Ihrer App einzurichten.

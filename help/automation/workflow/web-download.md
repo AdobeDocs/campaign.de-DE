@@ -29,7 +29,7 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
    * Bei Verwendung eines **[!UICONTROL externen Kontos]** wird das Konto aus der Dropdown-Liste ausgewählt und die zu ladende Datei angegeben.
 
-     Externe Konten werden über die **[!UICONTROL Administration > Plattform > Externe Konten]** -Knoten des Adobe Campaign-Baums. Die Kontoparameter können im **[!UICONTROL Link bearbeiten]** Symbol.
+     Externe Konten werden über das konfiguriert. **[!UICONTROL Administration > Plattform > Externe Konten]** Knoten der Adobe Campaign-Baumstruktur. Die Kontoparameter können über das **[!UICONTROL Link bearbeiten]** Symbol.
 
      ![](assets/download_web_edit_external.png)
 
@@ -45,7 +45,7 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
    Folgende Optionen stehen zur Verfügung:
 
-   * **[!UICONTROL Standardspeicherverzeichnis verwenden]**: Die Datei wird immer verschoben, bevor sie verarbeitet wird. Wenn diese Option aktiviert ist, wird die Datei in das standardmäßige Speicherverzeichnis (das **vars** -Ordner des Adobe Campaign-Installationsordners). Um einen Speicherordner anzugeben, deaktivieren Sie das Kontrollkästchen und geben Sie seinen Pfad im **[!UICONTROL Speicherordner]** field
+   * **[!UICONTROL Standard-Speicherverzeichnis verwenden]**: Die Datei wird immer verschoben, bevor sie verarbeitet wird. Wenn diese Option aktiviert ist, wird die Datei in das standardmäßige Speicherverzeichnis (das **Vars** Verzeichnis des Adobe Campaign-Installationsordners). Um ein Speicherverzeichnis anzugeben, deaktivieren Sie das Kontrollkästchen und geben Sie den Pfad in der **[!UICONTROL Speicherverzeichnis]** Feld
    * **[!UICONTROL Anzahl Dateien]**: Geben Sie die Anzahl an Dateien an, die maximal im Speicherverzeichnis beibehalten werden soll.
    * **[!UICONTROL Maximale Größe (in MB)]**: Geben Sie die Größe an, die das Speicherverzeichnis nicht überschreiten darf (in Megabytes).
 

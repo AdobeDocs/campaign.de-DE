@@ -30,7 +30,7 @@ In diesem Beispiel wird die Anzahl der Empfänger gesucht, die in Berlin wohnen,
 
 Gehen Sie wie folgt vor:
 
-1. In **[!UICONTROL Zu extrahierende Daten]**, definieren Sie eine Anzahl für den Primärschlüssel (wie im vorherigen Beispiel gezeigt). Fügen Sie die **[!UICONTROL Geschlecht]** in der Ausgabespalte. Überprüfen Sie die **[!UICONTROL Gruppe]** in der **[!UICONTROL Geschlecht]** Spalte. Auf diese Weise werden die Empfänger nach Geschlecht gruppiert.
+1. in **[!UICONTROL Zu extrahierende Daten]** definiert eine Anzahl für den Primärschlüssel (wie im vorherigen Beispiel gezeigt). Hinzufügen des **[!UICONTROL Geschlecht]** in der Ausgabespalte an. Überprüfen Sie die **[!UICONTROL Gruppe]** Option in der **[!UICONTROL Geschlecht]** Spalte. Auf diese Weise werden die Empfänger nach Geschlecht gruppiert.
 
    ![](assets/query_editor_nveau_27.png)
 

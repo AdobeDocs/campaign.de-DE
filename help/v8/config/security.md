@@ -30,7 +30,7 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service arbeitet Adobe mit Ihnen zusammen, um diese Konfigurationen in Ihre Umgebung zu implementieren.
+>Als Managed Cloud Service-Anwender unterstützt Sie Adobe bei der Implementierung dieser Konfigurationen in Ihrer Umgebung.
 
 
 ## Zugriffsverwaltung 

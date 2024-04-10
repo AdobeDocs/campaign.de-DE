@@ -327,10 +327,10 @@ Verwenden Sie Funktionen zur Definition des Inhalts des Filters, um erweiterte F
 
 In diesen Beispielen erfahren Sie, wie Sie erweiterte Abfragen erstellen:
 
-* Erfahren Sie, wie Sie in einfache Empfängerattribute auswählen können. [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
-* Informationen zum Filtern von Empfängern, die in den letzten sieben Tagen nicht kontaktiert wurden, finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de){target="_blank"}.
-* Informationen dazu, wie Sie die Benutzerliste abrufen können, finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"}.
-* Erfahren Sie, wie Sie eine Geburtstags-E-Mail-Zielgruppe erstellen in  [diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de){target="_blank"}.
+* Erfahren Sie, wie Sie in auf einfache Empfängerattribute abzielen können. [Diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
+* Erfahren Sie, wie Sie nach Empfängern filtern, die in den letzten 7 Tagen nicht kontaktiert wurden in [Diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de){target="_blank"}.
+* Erfahren Sie, wie Sie die Liste der Benutzer abrufen können, die nach aktiven Konten gefiltert werden können in [Diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"}.
+* Erfahren Sie, wie Sie in eine Audience für Geburtstags-E-Mails erstellen  [Diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de){target="_blank"}.
 
 
 ### Erweiterte Parameter für vordefinierte Filter {#param-for-data-filters}

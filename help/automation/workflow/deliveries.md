@@ -28,7 +28,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Bericht-Aggregate</span> <br /> </td> 
    <td> <span class="uicontrol">reportingAggregates</span> <br /> </td> 
-   <td> Dieser Workflow aktualisiert die in Berichten verwendeten Aggregate. Er wird standardmäßig täglich um 2 Uhr ausgelöst.<br /> </td> 
+   <td> Dieser Workflow aktualisiert die in Berichten verwendeten Aggregate. Er wird standardmäßig jeden Tag um 2 Uhr morgens ausgelöst.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Fakturierung</span> <br /> </td> 
@@ -38,12 +38,12 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Alias-Verwaltung</span> <br /> </td> 
    <td> <span class="uicontrol">aliasCleansing</span> <br /> </td> 
-   <td> Dieser Workflow standardisiert Auflistungswerte. Er wird standardmäßig täglich um 3 Uhr ausgelöst.<br /> </td> 
+   <td> Dieser Workflow standardisiert Auflistungswerte. Sie wird standardmäßig jeden Tag um 3 Uhr morgens ausgelöst.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Zustellbarkeit</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td> Erstellt die Liste der Qualifizierungsregeln für Bounce Messages sowie die Liste der Domains und MXs der Plattform. Dieser Workflow funktioniert nur, wenn der HTTPS-Port geöffnet ist. Diese Listen werden nur aktualisiert, wenn das Zustellbarkeits-Modul installiert ist.<br /> </td> 
+   <td> Mit diesem Workflow können Sie die Liste der Bounce-Message-Qualifizierungsregeln sowie die Liste der Domains und MXs in der Plattform erstellen. Dieser Workflow funktioniert nur, wenn der HTTPS-Port geöffnet ist. Diese Listen werden nur aktualisiert, wenn das Modul Zustellbarkeit installiert ist.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Datenbankbereinigung</span> <br /> </td> 
@@ -63,12 +63,12 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Planungen</span> <br /> </td> 
    <td> <span class="uicontrol">forecasting</span> <br /> </td> 
-   <td> Dieser Workflow analysiert die im Planungskalender gespeicherten Sendungen (Erstellung von Planungslogs). Er wird standardmäßig täglich um 1 Uhr ausgelöst.<br /> </td> 
+   <td> Dieser Workflow analysiert Sendungen, die im Planungskalender gespeichert wurden (erstellt vorläufige Protokolle). Er wird standardmäßig jeden Tag um 1 Uhr morgens ausgelöst.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Tracking</span> <br /> </td> 
    <td> <span class="uicontrol">tracking</span> <br /> </td> 
-   <td> Dieser Workflow ruft Tracking-Informationen ab und konsolidiert sie. Außerdem wird die Neuberechnung der Tracking- und Versandstatistiken, insbesondere der von den Archivierungs-Workflows des Message-Centers verwendeten, sichergestellt. Standardmäßig wird sie einmal pro Stunde ausgelöst. <br /> </td> 
+   <td> Dieser Workflow führt die Wiederherstellung und Konsolidierung von Tracking-Informationen durch. Darüber hinaus wird die Neuberechnung von Tracking- und Versandstatistiken sichergestellt, insbesondere derjenigen, die von Archivierungs-Workflows des Message Centers verwendet werden. Standardmäßig wird sie einmal pro Stunde ausgelöst. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -107,7 +107,7 @@ Ein spezieller technischer Workflow behandelt die Replikation von Tabellen, die 
 
 ### ID-Management{#id-mgt-ffda}
 
-Campaign v8-Objekte verwenden jetzt eine **Universally Unique ID (UUID)**, wodurch unbegrenzte eindeutige Werte zur Identifizierung von Daten möglich sind.
+Campaign v8-Objekte verwenden jetzt eine **Universally Unique ID (UUID)**, das zur Identifizierung von Daten unbegrenzte eindeutige Werte ermöglicht.
 
 Beachten Sie, dass diese Kennung zeichenfolgenbasiert und nicht sequenziell ist. In Campaign v8 ist der Primärschlüssel kein numerischer Wert. In Ihren Schemata müssen Sie die Attribute **autouid** und **autopk** verwenden.
 

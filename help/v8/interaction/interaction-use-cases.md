@@ -16,10 +16,10 @@ ht-degree: 56%
 
 Nutzen Sie die Interaktionsfunktionen von Campaign bei diesen Schritt-für-Schritt-Anwendungsfällen, die in der Dokumentation zu Campaign Classic v7 beschrieben werden:
 
-[Unterbreitungsregeln erstellen und anwenden](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html?lang=de){target="_blank"}
+[Erstellen und Anwenden von Unterbreitungsregeln](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html?lang=de){target="_blank"}
 
-[Versand eines E-Mail-Angebots](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=de){target="_blank"}
+[Senden eines E-Mail-Angebots](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=de){target="_blank"}
 
-[Angebot an einen anonymen Besucher unterbreiten](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=de){target="_blank"}
+[Unterbreitung eines Angebots an einen anonymen Besucher](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=de){target="_blank"}
 
-[Angebotssimulation durchführen](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=de){target="_blank"}
+[Durchführen einer Angebotssimulation](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=de){target="_blank"}
