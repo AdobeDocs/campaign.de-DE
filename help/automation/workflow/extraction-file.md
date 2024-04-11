@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Extraktion (Datei)
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 8510e879-2862-491f-bc52-ca8f56105932
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 014743172e09d46cb83b2fe2befaa8f3c54669b1
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '338'
 ht-degree: 100%
 
 ---
@@ -46,8 +46,6 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
 Sie können eine Nachbearbeitung definieren, die während der Datenextraktion ausgeführt werden soll, damit die Dateien komprimiert oder verschlüsselt werden. Dazu muss der gewünschte Befehl auf dem Tab **[!UICONTROL Script]** der Aktivität hinzugefügt werden.
-
-Weiterführende Informationen finden Sie in diesem Abschnitt: [Komprimieren oder Verschlüsseln einer Datei](use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 
