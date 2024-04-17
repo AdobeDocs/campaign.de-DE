@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '310'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verk
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service legt Adobe die Sicherheitszonen für Sie fest. Nehmen Sie für weitere Information [Kontakt mit Adobe auf](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+>Adobe legt für Sie als Benutzende von Managed Cloud Services die Sicherheitszonen fest. Nehmen Sie für weitere Information [Kontakt mit Adobe auf](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 **Weitere Informationen**
 
