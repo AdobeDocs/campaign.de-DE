@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1026'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Anschließend können Sie die Bildparameter definieren:
 * Mit der **[!UICONTROL Landingpage]** können Sie das Standardbild zu einer standardmäßigen Landingpage umleiten. Diese URL gilt nur, wenn in der letzten E-Mail das Standardbild angezeigt wird. Das ist optional.
 * Im Bereich **[!UICONTROL Zusätzliche Entscheidungsparameter]** wird das Mapping zwischen den in den Adobe Target-Segmenten definierten Feldern und den Feldern in Adobe Campaign hergestellt. Die in Adobe Campaign verwendeten Felder müssen zuvor in der Rawbox angegeben werden. In unserem Beispiel haben wir das Feld &quot;Country&quot; (Land) hinzugefügt.
 
-Wenn Sie in Ihren Einstellungen in Adobe Target Berechtigungen auf Unternehmensebene verwenden, fügen Sie in diesem Feld die entsprechende Eigenschaft hinzu. Weitere Informationen zu Target Enterprise-Berechtigungen finden Sie in [Dokumentation zu Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
+Wenn Sie in Ihren Einstellungen in Adobe Target Berechtigungen auf Unternehmensebene verwenden, fügen Sie in diesem Feld die entsprechende Eigenschaft hinzu. Weiterführende Informationen zu Berechtigungen auf Unternehmensebene in Target finden Sie in der [Dokumentation zu Adobe Target](https://experienceleague.adobe.com/de/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
 ![](assets/target_13.png)
 
@@ -94,7 +94,7 @@ In unserem Fall benötigen wir zwei Umleitungsangebote. Das dritte (das Standard
 
    ![](assets/target_6.png)
 
-1. Führen Sie dieselben Schritte für das andere Umleitungsangebot durch. Weiterführende Informationen hierzu finden Sie hier [Dokumentation zu Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=de#experiences){target="_blank"}.
+1. Führen Sie dieselben Schritte für das andere Umleitungsangebot durch. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=de#experiences){target="_blank"}.
 
 ### Zielgruppen erstellen {#audiences-target}
 

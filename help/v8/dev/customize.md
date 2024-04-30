@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '451'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Um einen komplett neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht stan
 
 **Verwandte Themen**
 
-Beispiel für die Schemabearbeitung in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#configuring-campaign-classic){target="_blank"}
+Beispiel zur Schemabearbeitung in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#configuring-campaign-classic){target="_blank"}
 
-Anwendungsfall: Verknüpfen eines Felds mit einer vorhandenen Referenztabelle in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#uc-link){target="_blank"}
+Anwendungsfall: Verknüpfen eines Felds mit einer vorhandenen Referenztabelle in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#uc-link){target="_blank"}
 
 
 ## Eingabefelder ändern

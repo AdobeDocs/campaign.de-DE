@@ -6,9 +6,9 @@ role: Admin
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer o
 >
 >* Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist ein spezielles externes Konto verfügbar, über das die Kommunikation zwischen der lokalen Campaign-Datenbank und der Snowflake-Cloud-Datenbank verwaltet werden kann. Dieses externe Konto wird von Adobe für Sie eingerichtet und **darf nicht** geändert werden.
 >
->* Als Benutzer von Managed Cloud Service [Kontakt Adobe](../start/campaign-faq.md#support) , um Ihre externe(n) Datenbank(en) mit Campaign zu verbinden.
+>* Benutzende von Managed Cloud Services können [Adobe kontaktieren](../start/campaign-faq.md#support), um ihre externe(n) Datenbank(en) mit Campaign zu verbinden.
 
 
 ## Best Practices und Einschränkungen
@@ -71,7 +71,7 @@ Beispielsweise können Sie in der Aktivität **[!UICONTROL Abfrage]** eine tempo
 1. Wählen Sie die Option **[!UICONTROL Datenquelle lokal definieren]**
 1. Wählen Sie aus der Dropdown-Liste die Zieldatenbank-Engine aus. Geben Sie den Namen des Servers und die Authentifizierungsparameter ein. Geben Sie auch den Namen der externen Datenbank an.
 1. Wählen Sie die Tabelle aus, in der die Daten gespeichert sind. Sie können den Namen der Tabelle direkt in das entsprechende Feld eingeben oder auf das Bearbeiten-Symbol klicken, um eine Liste mit Datenbanktabellen zu öffnen.
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** Schaltfläche zur Definition eines oder mehrerer Abstimmfelder zwischen den Daten der externen Datenbank und den Daten in der Adobe Campaign-Datenbank. Die **[!UICONTROL Ausdruck bearbeiten]** Symbole der **[!UICONTROL Remote-Feld]** und **[!UICONTROL Lokales Feld]** Ermöglicht den Zugriff auf die Liste der Felder jeder Tabelle.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um ein oder mehrere Abstimmungsfelder zwischen den Daten der externen Datenbank und den Daten in der Adobe Campaign-Datenbank zu definieren. Über die Symbole **[!UICONTROL Ausdruck bearbeiten]** der Option **[!UICONTROL Remote-Feld]** und **[!UICONTROL Lokales Feld]** erhalten Sie Zugriff auf die Liste mit den Feldern einer jeden Tabelle.
 1. Spezifizieren Sie nötigenfalls eine Filterbedingung und den Datensortierungsmodus.
-1. Auswahl der zusätzlichen Daten, die in der externen Datenbank erfasst werden sollen. Doppelklicken Sie dazu auf die Felder, die Sie hinzufügen möchten, um sie in der **[!UICONTROL Ausgabespalten]**.
+1. Wählen Sie zusätzlich in der externen Datenbank zu sammelnden Daten aus. Doppelklicken Sie dazu auf die Felder, die Sie hinzufügen möchten, damit sie in den **[!UICONTROL Ausgabespalten]** angezeigt werden.
 1. Klicken Sie zur Bestätigung der Konfiguration auf **[!UICONTROL Beenden]**.

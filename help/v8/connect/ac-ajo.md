@@ -6,9 +6,9 @@ feature: Journey Optimizer Integration
 level: Beginner
 exl-id: 52d8e2a5-9fdf-498a-bdbd-13a9935a94d6
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Die wichtigsten Schritte sind die Erstellung einer Transaktionsnachrichtenvorlag
 ![](assets/ajo-integration.png)
 
 
-[Erfahren Sie mehr über diese Integration in diesem End-to-End-Beispiel.](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.
+[Erfahren Sie mehr über diese Integration in diesem End-to-End-Muster](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.
 
 
-[Weitere Informationen finden Sie in der Dokumentation zu Journey Optimizer .](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.
+[Weitere Informationen finden Sie in der Dokumentation zu Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.

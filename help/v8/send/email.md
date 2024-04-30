@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '523'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
 Ihr erster E-Mail-Versand ist fertig. Definieren Sie nun die Zielgruppe, validieren Sie den Versand und führen Sie ihn aus.
 
-In diesem Abschnitt erfahren Sie, wie Sie E-Mail-Inhalte importieren. [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"}.
+In diesem [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de) erfahren Sie, wie Sie E-Mail-Inhalte importieren können{target="_blank"}.
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
@@ -100,6 +100,6 @@ Campaign bietet mehrere Möglichkeiten, E-Mails zu testen und zu validieren, bev
 Sie haben folgende Möglichkeiten:
 
 * [Durchführen eines Testversands](preview-and-proof.md)
-* [Testadressen hinzufügen](../audiences/test-profiles.md)
+* [Hinzufügen von Testadressen](../audiences/test-profiles.md)
 * [Versand-Analyse-Protokolle überprüfen](delivery-analysis.md)
 

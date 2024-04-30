@@ -6,9 +6,9 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '593'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 
 >[!NOTE]
 >
->Als Managed Cloud Service-Anwender unterstützt Sie Adobe bei der Implementierung dieser Konfigurationen in Ihrer Umgebung.
+>Adobe unterstützt Sie als Benutzerin bzw. Benutzer von Managed Cloud Services bei der Implementierung dieser Konfigurationen in Ihrer Umgebung.
 
 
 ## Zugriffsverwaltung 
@@ -52,7 +52,7 @@ Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) so
 
 * **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
 
-Weitere Informationen finden Sie unter [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target="_blank"}.
 
 
 ## Personalisierung
@@ -147,4 +147,4 @@ Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) so
 
 * **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
 
-Weitere Informationen finden Sie unter [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target="_blank"}.

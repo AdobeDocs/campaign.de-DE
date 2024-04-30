@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '239'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Bereiten Sie Ihre Daten in einer Datei vor und strukturieren Sie sie, um sie mit
 
 Die im Workflow verarbeiteten Daten können aus einer strukturierten Datei extrahiert werden, sodass sie in Adobe Campaign importiert werden können. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html?lang=de){target="_blank"}.
 
-Nachdem die Daten erfasst wurden, können Sie sie in Ihren Workflows verwenden, um beispielsweise einen Versand anzureichern oder die Datenbank zu aktualisieren. Weitere Informationen hierzu finden Sie unter [Dieser Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=de){target="_blank"}.
+Nachdem die Daten erfasst wurden, können Sie sie in Ihren Workflows verwenden, um beispielsweise einen Versand anzureichern oder die Datenbank zu aktualisieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=de){target="_blank"}.
 
 ## Einmalige Importe{#import-jobs}
 
@@ -38,4 +38,4 @@ Allgemeine Importe werden über das Menü **[!UICONTROL Profile und Zielgruppen 
 
 ![](assets/new-import-job.png)
 
-Die Schritte zur Durchführung eines allgemeinen Imports werden hier beschrieben: [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de#getting-started){target="_blank"}.
+Die Schritte zur Durchführung eines allgemeinen Imports werden in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de#getting-started) detailliert beschrieben{target="_blank"}.

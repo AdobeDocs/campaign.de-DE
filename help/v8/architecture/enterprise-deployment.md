@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Ein spezieller technischer Workflow behandelt die Replikation von Tabellen, die 
 
 ### ID-Management{#id-mgt-ffda}
 
-Campaign v8-Objekte verwenden jetzt eine **Universally Unique ID (UUID)**, das zur Identifizierung von Daten unbegrenzte eindeutige Werte ermöglicht.
+Campaign v8-Objekte verwenden jetzt eine **Universally Unique ID (UUID)**, die die Identifizierung von Daten durch unbegrenzte eindeutige Werte ermöglicht.
 
 Beachten Sie, dass diese Kennung zeichenfolgenbasiert und nicht sequenziell ist. In Campaign v8 ist der Primärschlüssel kein numerischer Wert. In Ihren Schemata müssen Sie die Attribute **autouid** und **autopk** verwenden.
 

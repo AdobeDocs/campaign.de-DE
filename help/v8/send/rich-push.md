@@ -1,7 +1,7 @@
 ---
 audience: end-user
 title: Erstellen eines Rich-Push-Benachrichtigungs-Versands
-description: Erfahren Sie, wie Sie mit Adobe Campaign Web einen Rich-Push-Benachrichtigungs-Versand für Android erstellen
+description: Erfahren Sie, wie Sie mit Adobe Campaign Web einen Rich-Push-Benachrichtigungs-Versand für Android erstellen.
 feature: Push
 role: User
 level: Beginner
@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
 source-git-commit: 5f1ffd5d59791a0e6ff8a67feb08c8eed128cc1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1234'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Auf den folgenden Registerkarten erfahren Sie, wie Sie eine Nachricht für jede 
 
 >[!TAB Standardvorlage]
 
-1. Aus dem **[!UICONTROL Benachrichtigungstyp]** Dropdown, wählen Sie **[!UICONTROL Standard]**.
+1. Wählen Sie **[!UICONTROL Standard]** aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]**.
 
    ![](assets/rich_push_default.png)
 
@@ -49,7 +49,7 @@ Auf den folgenden Registerkarten erfahren Sie, wie Sie eine Nachricht für jede 
 
 1. Verwenden Sie dynamische Personalisierungsfelder, um Inhalte zu definieren, Daten zu personalisieren und dynamische Inhalte hinzuzufügen. [Weitere Informationen](../send/personalize.md)
 
-1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und **[!UICONTROL Zusätzliche HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
+1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
    ![](assets/rich_push_default_3.png)
 
@@ -57,7 +57,7 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
 >[!TAB Einfache Vorlage]
 
-1. Aus dem **[!UICONTROL Benachrichtigungstyp]** Dropdown, wählen Sie **[!UICONTROL Einfach]**.
+1. Wählen Sie **[!UICONTROL Einfach]** aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]**.
 
    ![](assets/rich_push_basic.png)
 
@@ -69,11 +69,11 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
 1. Verwenden Sie dynamische Personalisierungsfelder, um Inhalte zu definieren, Daten zu personalisieren und dynamische Inhalte hinzuzufügen. [Weitere Informationen](../send/personalize.md)
 
-1. Unter dem **[!UICONTROL Farboptionen]** die hexadezimalen Farbcodes für Ihre **[!UICONTROL Anrede]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Hintergrund]**.
+1. Geben Sie unter dem Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, Ihre **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
-1. Hinzufügen einer **[!UICONTROL Schaltfläche „Später erinnern“]** bei Bedarf. Geben Sie Ihr **[!UICONTROL Erinnerungstext]** und **Datum** in den entsprechenden Feldern.
+1. Fügen Sie bei Bedarf eine **[!UICONTROL Schaltfläche „Später erinnern“]** hinzu. Geben Sie den **[!UICONTROL Text für die Erinnerung]** und das **Datum** in die entsprechenden Felder ein.
 
-   Die **[!UICONTROL Erinnerungsdatum]** Das Feld erwartet einen Wert, der eine Epoche in Sekunden darstellt.
+   Das Feld **[!UICONTROL Erinnerungsdatum]** benötigt einen Wert, der eine Zeitspanne in Sekunden darstellt.
 
 1. Klicken Sie auf **[!UICONTROL Schaltfläche hinzufügen]** und füllen Sie folgende Felder aus:
 
@@ -82,7 +82,7 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    Sie haben die Möglichkeit, bis zu drei Schaltflächen in Ihre Push-Benachrichtigung einzubauen. Wenn Sie sich für die **[!UICONTROL Schaltfläche „Später erinnern“]** entscheiden, können Sie maximal zwei Schaltflächen einfügen.
 
-1. Wählen Sie die **[!UICONTROL Verknüpfungstyp]** der verknüpften URL Ihrer Schaltfläche:
+1. Wählen Sie den **[!UICONTROL Link-Typ]** für die verlinkte URL Ihrer Schaltfläche:
 
    * **[!UICONTROL Web-URL]**: Web-URLs leiten Benutzende zu Online-Inhalten weiter. Beim Anklicken öffnen sie den Standard-Webbrowser des Geräts und navigieren zu der angegebenen URL.
 
@@ -94,7 +94,7 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_basic_3.png)
 
-1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und **[!UICONTROL Zusätzliche HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
+1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
    ![](assets/rich_push_basic_4.png)
 
@@ -102,7 +102,7 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
 >[!TAB Karussell-Vorlage]
 
-1. Aus dem **[!UICONTROL Benachrichtigungstyp]** Dropdown, wählen Sie **[!UICONTROL Karussell]**.
+1. Wählen Sie **[!UICONTROL Karussell]** aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]**.
 
    ![](assets/rich_push_carousel.png)
 
@@ -114,22 +114,22 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
 1. Verwenden Sie den Ausdruckseditor, um Inhalte zu definieren, Daten zu personalisieren und dynamische Inhalte hinzuzufügen. [Weitere Informationen](../send/personalize.md)
 
-1. Unter dem **[!UICONTROL Farboptionen]** die hexadezimalen Farbcodes für Ihre **[!UICONTROL Anrede]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Hintergrund]**.
+1. Geben Sie unter dem Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, Ihre **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
-1. Auswählen, wie die **[!UICONTROL Karussell]** wird wie folgt betrieben:
+1. Wählen Sie, wie das **[!UICONTROL Karussell]** bedient werden soll:
 
    * **[!UICONTROL Automatisch]**: Die Bilder werden automatisch in vordefinierten Intervallen als Folien wiedergegeben.
    * **[!UICONTROL Manuell]**: Benutzende können manuell zwischen den Folien streichen, um durch die Bilder zu navigieren.
 
-1. Aus dem **[!UICONTROL Layout]** Dropdown, wählen Sie **[!UICONTROL Filmstreifen]** Option, um neben der Hauptfolie eine Vorschau der vorherigen und nächsten Bilder anzuzeigen.
+1. Aktivieren Sie die Option **[!UICONTROL Filmstreifen]** aus der Dropdown-Liste **[!UICONTROL Layout]**, um die Vorschau der vorherigen und der nächsten Bilder neben der Hauptfolie einzuschließen.
 
-1. Klick **[!UICONTROL Bild hinzufügen]** und geben Sie Ihre Bild-URL, Text- und Aktions-URL ein.
+1. Klicken Sie auf **[!UICONTROL Bild hinzufügen]** und geben Sie Ihre Bild-URL, Ihren Text und Ihre Aktions-URL ein.
 
    Stellen Sie sicher, dass Sie mindestens drei und maximal fünf Bilder einfügen.
 
    ![](assets/rich_push_carousel_2.png)
 
-1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und **[!UICONTROL Zusätzliche HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
+1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
    ![](assets/rich_push_carousel_3.png)
 
@@ -144,21 +144,21 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 | Parameter | Beschreibung |
 |---------|---------|
 | **[!UICONTROL Kanal-ID]** | Legen Sie die Kanal-ID Ihrer Benachrichtigung fest. Die App muss einen Kanal mit dieser Kanal-ID erstellen, bevor eine Benachrichtigung mit dieser Kanal-ID empfangen werden kann. |
-| **[!UICONTROL Symbol]** | Legen Sie das Benachrichtigungssymbol fest, das auf den Geräten Ihrer Profile angezeigt werden soll. |
+| **[!UICONTROL Symbol]** | Legt das Symbol fest, das für die Benachrichtigung auf den Geräten Ihrer Profile angezeigt werden soll. |
 | **[!UICONTROL Ton]** | Legt den Ton fest, der abgespielt werden soll, wenn das Gerät Ihre Benachrichtigung erhält. |
 | **[!UICONTROL Tag]** | Legt eine Kennung fest, die zum Ersetzen bestehender Benachrichtigungen in der Benachrichtigungsablage verwendet wird. Dadurch wird verhindert, dass sich mehrere Benachrichtigungen ansammeln, und sichergestellt, dass nur die jeweils letzte relevante Benachrichtigung angezeigt wird. |
-| **[!UICONTROL Farbe]** | Legen Sie die Symbolfarbe Ihrer Benachrichtigung mit dem hexadezimalen Farbcode fest. |
-| **[!UICONTROL Klick-Aktion]** | Legen Sie die Aktion fest, die einem Benutzer zugeordnet ist, der auf Ihre Benachrichtigung klickt. |
+| **[!UICONTROL Farbe]** | Legt die Farbe des Symbols Ihrer Benachrichtigung mit einem hexadezimalen Farb-Code fest. |
+| **[!UICONTROL Klick-Aktion]** | Legt die Aktion fest, die für das Klicken der Benutzenden auf Ihre Benachrichtigung zugewiesen ist. |
 | **[!UICONTROL Hintergrundfarbe der Benachrichtigungen]** | Legt die Farbe des Benachrichtigungshintergrunds mit den gewünschten Hexadezimal-Farb-Codes fest. |
-| **[!UICONTROL Verknüpfungstyp]** | <ul><li>Web-URL: Web-URLs leiten Benutzer zu Online-Inhalten. Beim Anklicken öffnen sie den Standard-Webbrowser des Geräts und navigieren zu der angegebenen URL.</li><li>Deeplink: Deep-Links sind URLs, die Benutzer zu bestimmten Abschnitten innerhalb einer App führen, selbst wenn die App geschlossen ist. Beim Anklicken kann ein Dialogfeld angezeigt werden, in dem Benutzende aus verschiedenen Apps wählen können, die den Link verarbeiten können.</li><li> Mobile App öffnen : Mit Mobile-App-URLs können Sie eine direkte Verbindung zu Inhalten in einer Mobile App herstellen. Diese Art von URL ermöglicht es Ihrer Anwendung, sich als Standard-Handler für einen bestimmten Link-Typ zu etablieren und so das Dialogfeld zur Disambiguierung zu umgehen.</li></ul> |
+| **[!UICONTROL Link-Typ]** | <ul><li>Web-URL: Web-URLs leiten Benutzende zu Online-Inhalten weiter. Beim Anklicken öffnen sie den Standard-Webbrowser des Geräts und navigieren zu der angegebenen URL.</li><li>Deeplink: Deeplinks sind URLs, die Benutzende zu bestimmten Abschnitten in einer App führen, selbst wenn die App geschlossen ist. Beim Anklicken kann ein Dialogfeld angezeigt werden, in dem Benutzende aus verschiedenen Apps wählen können, die den Link verarbeiten können.</li><li> Open App: Open App-URLs ermöglichen es Ihnen, sich direkt mit Inhalten innerhalb einer Anwendung zu verbinden. Diese Art von URL ermöglicht es Ihrer Anwendung, sich als Standard-Handler für einen bestimmten Link-Typ zu etablieren und so das Dialogfeld zur Disambiguierung zu umgehen.</li></ul> |
 
 ### Zusätzliche Optionen für HTTPv1 {#additional-options}
 
 | Parameter | Beschreibung |
 |---------|---------|
-| **[!UICONTROL Ticker]** | Legen Sie den Tickertext Ihrer Benachrichtigung fest. Nur verfügbar bei Geräten mit Android 5.0 Lollipop. |
+| **[!UICONTROL Ticker]** | Legt den Ticker-Text Ihrer Benachrichtigung fest. Nur verfügbar bei Geräten mit Android 5.0 Lollipop. |
 | **[!UICONTROL Sticky]** | Wenn diese Option aktiviert ist, bleibt die Benachrichtigung auch dann sichtbar, wenn darauf geklickt wird. <br>Wenn sie deaktiviert ist, wird die Benachrichtigung automatisch verworfen, sobald damit interagiert wird. Durch das Sticky-Verhalten können wichtige Benachrichtigungen über längere Zeiträume auf dem Bildschirm beibehalten werden. |
-| **[!UICONTROL Bild]** | Legen Sie die URL des Bildes fest, die in Ihrer Benachrichtigung angezeigt werden soll. |
+| **[!UICONTROL Bild]** | Legt die URL des Bilds fest, das in Ihrer Benachrichtigung angezeigt werden soll. |
 | **[!UICONTROL Benachrichtigungspriorität]** | Legen Sie die Prioritätsstufe Ihrer Benachrichtigung fest. Dies kann „Standard“, „Minimum“, „Niedrig“ oder „Hoch“ sein. Die Prioritätsstufe bestimmt die Wichtigkeit und Dringlichkeit der Benachrichtigung und beeinflusst deren Anzeige sowie die Frage, ob sie bestimmte Systemeinstellungen umgehen kann. Weitere Informationen hierzu finden Sie in der [FCM-Dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#notificationpriority). |
 | **[!UICONTROL Anzahl der Benachrichtigungen]** | Legt die Zahl der neuen ungelesenen Informationen fest, die direkt auf dem Symbol der App angezeigt werden. Dadurch können die Benutzenden schnell die Anzahl der ausstehenden Benachrichtigungen sehen. |
 | **[!UICONTROL Sichtbarkeit]** | Legen Sie die Sichtbarkeitsstufe Ihrer Benachrichtigung fest. Dies kann öffentlich, privat oder geheim sein. Die Sichtbarkeitsstufe bestimmt, wie viel des Benachrichtigungsinhalts auf dem Sperrbildschirm und anderen sensiblen Bereichen angezeigt wird. Weitere Informationen finden Sie in der [FCM-Dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility). |

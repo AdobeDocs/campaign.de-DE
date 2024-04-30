@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Im Versand-Dashboard können Sie außerdem die verarbeiteten Nachrichten und Ver
 >Der Versandstatus wird nicht in Echtzeit angezeigt. Weitere Informationen zum E-Mail-Feedback-Service finden Sie [in diesem Abschnitt](#email-feedback-service).
 
 
-[Weitere Informationen zur Versandüberwachung finden Sie in der Dokumentation zu Campaign Classic v7 .](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de){target="_blank"}
+[Weitere Informationen zum Versand-Monitoring finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de){target="_blank"}.
 
 ## Campaign MTA {#mta}
 

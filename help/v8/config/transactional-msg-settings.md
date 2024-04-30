@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwal
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service [Kontakt Adobe](../start/campaign-faq.md#support) , um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
+>Als Benutzerin bzw. Benutzer von Managed Cloud Services müssen Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
 ## Definieren von Berechtigungen {#mc-permissions}
 

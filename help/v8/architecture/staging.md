@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um den Campaign-Staging-Mechanismus für eine bestimmte
    </srcSchema>
    ```
 
-   Weitere Informationen zur Erstellung benutzerdefinierter Schemata in [Diese Seite](../dev/create-schema.md).
+   Weitere Informationen zur Erstellung benutzerdefinierter Schemata finden Sie auf [dieser Seite](../dev/create-schema.md).
 
 1. Speichern und aktualisieren Sie die Datenbankstruktur. [Weitere Informationen](../dev/update-database-structure.md)
 

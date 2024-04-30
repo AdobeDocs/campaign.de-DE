@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: a2ab85c3-ef5f-49fd-a6c4-2fd397c8d21b
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -22,5 +22,5 @@ Sie können Experience Cloud Triggers verwenden, um Daten mithilfe der Pipeline 
 
 Weitere Informationen zu Adobe Campaign und Experience Cloud Triggers finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=de){target="_blank"}.
 
-Erfahren Sie mehr über [Erstellen eines Experience Cloud-Triggers](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=de){target="_blank"} kritische Verbraucherverhaltensweisen identifizieren, definieren und überwachen.
+Entdecken Sie, wie Sie [einen Experience Cloud-Trigger erstellen](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=de){target="_blank"} und kritische Verbraucherverhaltensweisen identifizieren, definieren und überwachen können.
 

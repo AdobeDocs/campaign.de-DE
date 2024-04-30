@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1708'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -327,10 +327,10 @@ Verwenden Sie Funktionen zur Definition des Inhalts des Filters, um erweiterte F
 
 In diesen Beispielen erfahren Sie, wie Sie erweiterte Abfragen erstellen:
 
-* Erfahren Sie, wie Sie in auf einfache Empfängerattribute abzielen können. [Diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
-* Erfahren Sie, wie Sie nach Empfängern filtern, die in den letzten 7 Tagen nicht kontaktiert wurden in [Diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de){target="_blank"}.
-* Erfahren Sie, wie Sie die Liste der Benutzer abrufen können, die nach aktiven Konten gefiltert werden können in [Diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"}.
-* Erfahren Sie, wie Sie in eine Audience für Geburtstags-E-Mails erstellen  [Diese Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de){target="_blank"}.
+* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de) erfahren Sie, wie Sie einfache Empfängerattribute für Ihr Targeting verwenden können{target="_blank"}.
+* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de) erfahren Sie, wie Sie nach Empfängerinnen und Empfängern filtern können, die in den letzten 7 Tagen nicht kontaktiert wurden{target="_blank"}.
+* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de) erfahren Sie, wie Sie eine Liste der Benutzenden abrufen können, in der nach aktiven Konten gefiltert werden kann{target="_blank"}.
+* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de) erfahren Sie, wie Sie eine Zielgruppe für Geburtstags-E-Mails erstellen können{target="_blank"}.
 
 
 ### Erweiterte Parameter für vordefinierte Filter {#param-for-data-filters}

@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Es stehen zwei Arten von Umgebungen zur Verfügung:
 
 Sie können Packages von einer Umgebung in eine andere exportieren und importieren.
 
-Weitere Informationen zu Paketen finden Sie in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=de){target="_blank"}
+Weitere Informationen über Packages in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=de){target="_blank"}
 
 ## Bereitstellungsmodelle {#ac-deployment}
 
@@ -100,7 +100,7 @@ Um aufgespaltete externe Konten als Standardkonto für den Versand von Sendungen
 
 Das Campaign-Modul &quot;Transaktionsnachricht (Message Center)&quot; wurde zum Verwalten von Trigger-Nachrichten entwickelt.
 
-Erfahren Sie, wie Sie in Transaktionsnachrichten senden können. [Dieser Abschnitt](../send/transactional.md).
+In [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Transaktionsnachrichten senden können.
 
 Als Reaktion auf eine Kundenaktion auf einer Website wird ein Ereignis über eine REST-API gesendet. Die Nachrichtenvorlage wird mit den Informationen oder Daten gefüllt, die über den API-Aufruf bereitgestellt werden, und eine Transaktionsnachricht wird in Echtzeit an den Kunden gesendet. Diese Nachrichten können einzeln oder in Batches per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
@@ -108,7 +108,7 @@ In der hier angewendeten Architektur sind Ausführungszelle und Kontrollinstanz 
 
 * Die **Kontrollinstanz** (oder die Marketing-Instanz) wird von Marketing-Experten und IT-Teams zum Erstellen, Konfigurieren und Veröffentlichen von Nachrichtenvorlagen verwendet. Diese Instanz zentralisiert auch die Überwachung und den Verlauf von Ereignissen.
 
-  Erfahren Sie, wie Sie Nachrichtenvorlagen in erstellen und veröffentlichen. [Dieser Abschnitt](../send/transactional.md).
+  In [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Nachrichtenvorlagen erstellen und veröffentlichen.
 
 * Die **Ausführungsinstanz** ruft eingehende Ereignisse (z. B. Passwortrücksetzung oder Bestellungen von einer Website) ab und versendet personalisierte Nachrichten. Es kann mehr als eine Ausführungsinstanz geben, um Nachrichten über den Load-Balancer zu verarbeiten und die Anzahl der zu verarbeitenden Ereignisse zwecks maximaler Verfügbarkeit zu skalieren.
 

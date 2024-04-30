@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1257'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -100,11 +100,11 @@ Der Identifizierungsschlüssel eines Stylesheets ist eine Zeichenfolge, die den 
 
 Um einem der Standard-Datenschemata in Campaign ein Feld oder ein anderes Element hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern.
 
-Weitere Informationen hierzu finden Sie unter [Schema erweitern](extend-schema.md).
+Weiterführende Informationen hierzu finden Sie unter [Erweitern eines Schemas](extend-schema.md).
 
 Um einen völlig neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht vorhanden ist (z. B. eine Tabelle zu Verträgen), können Sie direkt ein benutzerdefiniertes Schema erstellen.
 
-Weitere Informationen hierzu finden Sie unter [Erstellen eines neuen Schemas](create-schema.md).
+Weiterführende Informationen hierzu finden Sie unter [Erstellen eines neuen Schemas](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -188,9 +188,9 @@ In diesem Beispiel erstellen wir nicht anhand der Attribute **@autopk** oder **@
 
 >[!CAUTION]
 >
->Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselfolge (@pkSequence) beibehalten.
+>Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselsequenz (@pkSequence) beibehalten.
 
-Weitere Informationen zu Schlüsseln in [Dieser Abschnitt](database-mapping.md#management-of-keys).
+Weiterführende Informationen zu Schlüsseln finden Sie in [diesem Abschnitt](database-mapping.md#management-of-keys).
 
 ## Attribute (Felder) {#attributes--fields-}
 
@@ -198,9 +198,9 @@ Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt best
 
 ![](assets/schemaextension_2.png)
 
-Eine vollständige Liste der Attribute finden Sie im `<attribute>` Element-Abschnitt in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=de#content-model){target="_blank"}. Im Folgenden finden Sie einige der gebräuchlichsten Attribute: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
+Eine vollständige Liste der Attribute finden Sie im Abschnitt `<attribute>`-Element in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=de#content-model){target="_blank"}. Im Folgenden finden Sie einige der gebräuchlichsten Attribute: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-Weitere Informationen zu den einzelnen Attributen finden Sie in der entsprechenden Attributbeschreibung in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic){target="_blank"}.
+Weitere Informationen zu den einzelnen Attributen finden Sie in der Attributbeschreibung in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic){target="_blank"}.
 
 ### Beispiele {#examples}
 

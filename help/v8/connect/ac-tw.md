@@ -6,9 +6,9 @@ feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1125'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Das Modul **Verwalten sozialer Netzwerke (Social-Media-Marketing)** ermöglicht 
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service [Kontakt Adobe](../start/campaign-faq.md#support) Campaign mit X verbinden.  **Soziale Netzwerke verwalten (Social Marketing)** Das Add-on muss über das dedizierte Paket in Ihrer Umgebung installiert und das externe Twitter-Konto konfiguriert werden.
+>Als Benutzerin bzw. Benutzer von Managed Cloud Service müssen Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign mit X zu verbinden. Das Add-on zum **Verwalten sozialer Netzwerke (Social-Media-Marketing)** muss in Ihrer Umgebung über das dedizierte Paket installiert sein und das externe Twitter-Konto muss konfiguriert sein.
 
 
 Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren X-Konten veröffentlicht werden, delegieren Sie den Schreibzugriff für diese Konten an Adobe Campaign. Gehen Sie dazu folgendermaßen vor:
@@ -45,7 +45,7 @@ Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen S
 Nachdem Sie den erweiterten Zugriff erhalten haben, erstellen Sie eine X-Anwendung, damit Adobe Campaign Tweets auf Ihrem X-Konto posten kann. Gehen Sie dazu wie folgt vor:
 
 1. Melden Sie sich bei Ihrem X-Konto an.
-1. Verbinden mit [X-Entwicklerportal](https://developer.twitter.com/en/apps){target="_blank"}.
+1. Stellen Sie eine Verbindung mit dem [X-Entwicklerportal](https://developer.twitter.com/en/apps) her{target="_blank"}.
 1. Wählen Sie **App erstellen** aus.
 1. Der X-Assistent führt Sie durch den Prozess.
 1. Um Adobe Campaign zu erlauben, Tweets auf Ihrem Konto zu posten, bearbeiten Sie die **App-Berechtigungen** im Abschnitt „Benutzerauthentifizierung einrichten“ Ihrer App. Wählen Sie **Lesen, Schreiben und Direktnachrichten**.

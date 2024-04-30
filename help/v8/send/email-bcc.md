@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Das Archivierungsziel ist die von Ihnen ausgewählte BCC-E-Mail-Adresse, die fü
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service [Kontakt Adobe](../start/campaign-faq.md#support){target="_blank"} um die für die Archivierung zu verwendende BCC-E-Mail-Adresse mitzuteilen.
+>Wenn Sie Managed Cloud Services verwenden, [wenden Sie sich an Adobe](../start/campaign-faq.md#support){target="_blank"}, um die für die Archivierung zu verwendende BCC-E-Mail-Adresse mitzuteilen.
 
 >[!CAUTION]
 >

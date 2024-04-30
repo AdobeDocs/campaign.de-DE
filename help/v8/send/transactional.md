@@ -6,9 +6,9 @@ role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1560'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Das Campaign-Modul &quot;Transaktionsnachricht (Message Center)&quot; wurde zum 
 
 >[!NOTE]
 >
->Als Benutzer von Managed Cloud Service [Kontakt Adobe](../start/campaign-faq.md#support){target="_blank"} , um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu konfigurieren.
+>Wenn Sie Benutzer oder Benutzerin von Managed Cloud Services sind, [kontaktieren Sie Adobe](../start/campaign-faq.md#support){target="_blank"}, um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu konfigurieren.
 
 Transaktionsnachrichten dienen zum Senden von:
 
@@ -130,13 +130,13 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. Füllen Sie das Tag mit der folgenden Syntax aus: **Elementname**.@**Attributname** wie unten dargestellt.
+1. Ergänzen Sie das Feld unter Einhaltung folgender Syntax: **Elementname**.@**Attributname**. Beispiel:
 
    ![](assets/messagecenter_create_custo_2.png)
 
 ## Testen der Transaktionsnachrichtenvorlage {#test-message-template}
 
-### Testadressen hinzufügen{#add-seeds}
+### Hinzufügen von Testadressen{#add-seeds}
 
 Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen Testversand senden und die Personalisierung der Nachricht testen, bevor Sie die Nachricht senden. Testadressen sind mit dem Versand verknüpft und können nicht für andere Sendungen verwendet werden.
 

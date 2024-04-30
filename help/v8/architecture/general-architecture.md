@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Die typische Bereitstellung einer Adobe Campaign-Lösung setzt sich aus folgende
 
 Der Zugriff auf die Anwendung erfolgt auf unterschiedliche Weise: Web-Benutzeroberfläche, Client-Konsole (Rich-Client), Internet-Zugriff (Thin-Client) oder API-Integration.
 
-[Weitere Informationen zur Benutzeroberfläche von Campaign](../start/campaign-ui.md).
+[Erhalten Sie weitere Informationen zur Campaign-Benutzeroberfläche](../start/campaign-ui.md).
 
 ## Entwicklungsumgebung {#dev-env}
 

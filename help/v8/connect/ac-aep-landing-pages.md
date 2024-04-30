@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1061'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Mit der vorhandenen OAuth-Verbindung besteht der nächste Schritt darin, eine **
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. Konfigurieren Sie die Verbindung entsprechend Ihren Anforderungen. Detaillierte Informationen zum Konfigurieren einer HTTP-API-Verbindung finden Sie unter [Dokumentation zu Adobe Experience Platform-Quellen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=de){target="_blank"}.
+1. Konfigurieren Sie die Verbindung entsprechend Ihren Anforderungen. Detaillierte Informationen zum Konfigurieren einer HTTP-API-Verbindung finden Sie in der [Dokumentation zu Adobe Experience Platform-Quellen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=de){target="_blank"}.
 
    Aktivieren Sie im Schritt **[!UICONTROL Authentifizierung]** die Option **[!UICONTROL Authentifizierung aktivieren]**, um sich mit dem zuvor über die OAuth-Integration generierten Zugriffstoken zu authentifizieren.
 
@@ -344,5 +344,5 @@ Im Folgenden finden Sie ein Beispiel für eine Landingpage und eine JavaScript-C
 ### Weitere Informationen
 
 * [Konfigurieren einer JavaScript-Code-Aktivität](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Landingpage erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=de){target="_blank"}
-* [Verwaltung von Abonnements und Abmeldungen](../start/subscriptions.md)
+* [Erstellen einer Landingpage](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=de){target="_blank"}
+* [Verwalten von Abonnements und Abmeldungen](../start/subscriptions.md)
