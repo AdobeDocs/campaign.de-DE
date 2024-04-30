@@ -6,55 +6,59 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: cec935c2c73e3df4d2e03d54305004df9bd2655e
+exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
+source-git-commit: f9b064dffa0f8792e8653760cb2ac44cfdf43848
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '696'
 ht-degree: 1%
 
 ---
-
 
 # Verbessertes Sicherheits-Add-on {#enhanced-security}
 
 Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, [!DNL Adobe Campaign] bietet eine neue **Verbesserte Sicherheit** -Add-on.
 
-Dieses Add-on umfasst derzeit zwei Ökosystemfunktionen:
+Dieses Add-on umfasst zwei Ökosystemfunktionen:
 
 * [Sichere CMK-Integration](#secure-cmk-integration)
 
 * [Sicheres VPN-Tunneln](#secure-vpn-tunneling)
 
+Diese Funktionen werden nachfolgend beschrieben.
+
 ## Sichere CMK-Integration {#secure-cmk-integration}
 
-**Sichere Integration von kundenverwaltetem Schlüssel (CMK)** ermöglicht Ihnen, Ihre Instanz und Ihre Daten mithilfe Ihres eigenen Schlüssels über Ihr AWS-Konto zu verschlüsseln<!--instead of Adobe-owned keys-->. Indem Sie die Verantwortung für die Generierung und Verwaltung von Verschlüsselungsschlüsseln übernehmen, können Sie mit dieser Kapazität mehr Kontrolle über diese Schlüssel haben, einschließlich der Sperrung eines Schlüssels.
+Die **Sichere Integration von kundenverwaltetem Schlüssel (CMK)** ermöglicht Ihnen, Ihre Instanz und Ihre Daten mithilfe Ihres eigenen Schlüssels über Ihr Amazon Web Services (AWS)-Konto zu verschlüsseln.
+
+Vom Kunden verwaltete Schlüssel sind Schlüssel des Key Management Service (KMS) in Ihrem AWS-Konto, die Sie erstellen, besitzen und verwalten. Sie haben die volle Kontrolle über diese KMS-Schlüssel und verwenden sie zum Verschlüsseln und Entschlüsseln von Daten. Indem Sie die Verantwortung für die Generierung und Verwaltung von Verschlüsselungsschlüsseln übernehmen, können Sie mit dieser Kapazität mehr Kontrolle über diese Schlüssel haben, einschließlich der Sperrung eines Schlüssels.
 
 >[!CAUTION]
 >
 >Wenn Sie einen Schlüssel widerrufen, müssen Sie sich der Auswirkungen bewusst sein. [Weitere Informationen](#cmk-callouts)
 
-Gehen Sie wie folgt vor, um diese Funktion zu aktivieren:
+Gehen Sie wie folgt vor, um die CMK-Integration in Campaign zu aktivieren:
 
-1. Vergewissern Sie sich, dass Sie [AWS](https://aws.amazon.com/){target="_blank"} -Konto.
+1. Verbinden Sie Ihre [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} -Konto.
 
-1. Generieren Sie mithilfe des AWS Key Management Service (KMS) einen Schlüssel mit automatischer Rotation. [Erfahren Sie mehr](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}
+1. Generieren Sie mithilfe des AWS Key Management Service (KMS) einen Schlüssel mit automatischer Rotation. [Erfahren Sie mehr](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
-1. Wenden Sie die von Adobe bereitgestellte Richtlinie auf Ihr AWS-Konto an, um Zugriff auf Ihre Ressourcen zu gewähren. [Weitere Infos](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"} <!--link TBC-->
+1. Wenden Sie die von Adobe bereitgestellte Richtlinie auf Ihr AWS-Konto an, um Zugriff auf Ihre Ressourcen zu gewähren. [Weitere Infos](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. Geben Sie Ihren Amazon-Ressourcennamen (key ARN) für [!DNL Adobe Campaign]. Wenden Sie sich dazu an Ihren Adobe-Support-Mitarbeiter. <!--or Adobe transition manager?-->
+1. Freigeben [Amazon-Ressourcenname (key ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} mit [!DNL Adobe Campaign]. Wenden Sie sich dazu an Ihren Adobe-Support-Mitarbeiter. <!--or Adobe transition manager?-->
 
-1. Erstellen und testen Sie die Amazon EventBridge-Regeln, um die Überwachung Ihrer Schlüssel durch Adobe zu ermöglichen. &#x200B; [Weitere Informationen](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}
+1. Erstellen und testen Sie die Amazon EventBridge-Regeln, um die Überwachung Ihrer Schlüssel durch Adobe zu ermöglichen. &#x200B; [Weitere Informationen](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
 ## Sicheres VPN-Tunneln {#secure-vpn-tunneling}
 
-**Sicheres VPN-Tuning (Virtual Private Network)** ist ein standortübergreifendes VPN, das einen sicheren Zugriff für Ihre Daten ermöglicht, die über ein privates Netzwerk von Ihrem Standort zum [!DNL Adobe Campaign] -Instanz.
+Die **Sicheres VPN-Tuning (Virtual Private Network)** ist ein standortübergreifendes VPN, das einen sicheren Zugriff für Ihre Daten ermöglicht, die über ein privates Netzwerk von Ihrem Standort zum [!DNL Adobe Campaign] -Instanz.
 
 <!--As it connects two networks together, it is a site-to-site VPN.-->
 
-Um eine hohe Verfügbarkeit (HA) zu gewährleisten, verwendet es zwei Tunnels, um im Falle eines Problems in einem Tunnel einen Ausfall zu vermeiden
+Um eine hohe Verfügbarkeit (HA) zu gewährleisten, verwendet es zwei Tunnel, um im Falle eines Problems in einem Tunnel einen Ausfall zu vermeiden.
 
 Es werden drei Anwendungsfälle unterstützt:
 
-* FDA über VPN<!--to access your on-premise database from the Campaign instance over VPN-->
+* Federated Data Access (FDA) über VPN<!--to access your on-premise database from the Campaign instance over VPN-->
 
 * Anmeldung einer Instanz über VPN von einem dicken Client
 
@@ -68,7 +72,7 @@ Um die ordnungsgemäße Verwendung dieser Funktion sicherzustellen, befolgen Sie
 
 * Richten Sie Ihr seitiges VPN basierend auf der Adobe-seitigen VPN-Konfiguration ein.
 
-* Halten Sie beide Tunnel für HA bereit.
+* Halten Sie beide Tunnel für hohe Verfügbarkeit bereit.
 
 * Überwachen Sie Ihren Seitentunnel.
 
