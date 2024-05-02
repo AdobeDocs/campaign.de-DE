@@ -5,10 +5,10 @@ role: Admin, User
 feature: Journey Optimizer Integration
 level: Beginner
 exl-id: 52d8e2a5-9fdf-498a-bdbd-13a9935a94d6
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: ht
+source-git-commit: 7cd2e433cbfce9634b5664d037ad6e73e05b7516
+workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Die wichtigsten Schritte sind die Erstellung einer Transaktionsnachrichtenvorlag
 ![](assets/ajo-integration.png)
 
 
-[Erfahren Sie mehr über diese Integration in diesem End-to-End-Muster](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.
+[Erfahren Sie mehr über diese Integration in diesem End-to-End-Muster](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/business-use-cases/ajo-ac){target="_blank"}.
 
 
-[Weitere Informationen finden Sie in der Dokumentation zu Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html?lang=de){target="_blank"}.
+[Weitere Informationen in der Dokumentation zu Journey Optimizer]https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.
