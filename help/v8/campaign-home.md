@@ -3,7 +3,7 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 520a7798cd1969e7c29519cbc918b66a44ff2a71
+source-git-commit: 43666e72cdbdb1e7305208903dbb82eda73fa46f
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 96%
@@ -20,7 +20,7 @@ Werfen Sie einen Blick auf die neuesten Verbesserungen im Produkt und in der Dok
 
 >[!TAB Campaign-Version 8.7 ist live]
 
-Die neueste Version von Adobe Campaign ist jetzt verfügbar. Es wurde unter &quot;Eingeschränkte Verfügbarkeit&quot;(LA) veröffentlicht. Weitere Informationen finden Sie in den Versionshinweisen.
+Die neueste Version von Adobe Campaign ist jetzt verfügbar. Es wird veröffentlicht in **Eingeschränkte Verfügbarkeit** (LA). Weitere Informationen finden Sie in den Versionshinweisen.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
 
