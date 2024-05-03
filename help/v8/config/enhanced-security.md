@@ -1,6 +1,6 @@
 ---
-title: Verbessertes Sicherheits-Add-on
-description: Erste Schritte mit dem Campaign Enhanced Security-Add-on
+title: Add-on für verbesserte Sicherheit
+description: Erste Schritte mit dem Campaign-Add-on für verbesserte Sicherheit
 feature: Configuration
 role: Developer
 level: Experienced
@@ -8,61 +8,61 @@ hide: true
 hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: f9b064dffa0f8792e8653760cb2ac44cfdf43848
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '696'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Verbessertes Sicherheits-Add-on {#enhanced-security}
+# Add-on für verbesserte Sicherheit {#enhanced-security}
 
-Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, [!DNL Adobe Campaign] bietet eine neue **Verbesserte Sicherheit** -Add-on.
+Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet [!DNL Adobe Campaign] ein neues Add-on für **verbesserte Sicherheit**.
 
 Dieses Add-on umfasst zwei Ökosystemfunktionen:
 
 * [Sichere CMK-Integration](#secure-cmk-integration)
 
-* [Sicheres VPN-Tunneln](#secure-vpn-tunneling)
+* [Sicheres VPN-Tunneling](#secure-vpn-tunneling)
 
 Diese Funktionen werden nachfolgend beschrieben.
 
 ## Sichere CMK-Integration {#secure-cmk-integration}
 
-Die **Sichere Integration von kundenverwaltetem Schlüssel (CMK)** ermöglicht Ihnen, Ihre Instanz und Ihre Daten mithilfe Ihres eigenen Schlüssels über Ihr Amazon Web Services (AWS)-Konto zu verschlüsseln.
+Die **sichere CMK-Integration (Customer Managed Key)** ermöglicht es Ihnen, Ihre Instanz und Ihre Daten mithilfe Ihres eigenen Schlüssels über Ihr Amazon Web Services(AWS)-Konto zu verschlüsseln.
 
-Vom Kunden verwaltete Schlüssel sind Schlüssel des Key Management Service (KMS) in Ihrem AWS-Konto, die Sie erstellen, besitzen und verwalten. Sie haben die volle Kontrolle über diese KMS-Schlüssel und verwenden sie zum Verschlüsseln und Entschlüsseln von Daten. Indem Sie die Verantwortung für die Generierung und Verwaltung von Verschlüsselungsschlüsseln übernehmen, können Sie mit dieser Kapazität mehr Kontrolle über diese Schlüssel haben, einschließlich der Sperrung eines Schlüssels.
+Kundenverwaltete Schlüssel sind KMS-Schlüssel (Key Management Service) in Ihrem AWS-Konto, die Sie erstellen, besitzen und verwalten. Sie haben die volle Kontrolle über diese KMS-Schlüssel und verwenden sie zum Verschlüsseln und Entschlüsseln von Daten. Indem Sie die Verantwortung für die Generierung und Verwaltung von Verschlüsselungsschlüsseln übernehmen, erhalten Sie dank dieser Kapazität mehr Kontrolle über diese Schlüssel, einschließlich des Widerrufs eines Schlüssels.
 
 >[!CAUTION]
 >
 >Wenn Sie einen Schlüssel widerrufen, müssen Sie sich der Auswirkungen bewusst sein. [Weitere Informationen](#cmk-callouts)
 
-Gehen Sie wie folgt vor, um die CMK-Integration in Campaign zu aktivieren:
+Um die CMK-Integration in Campaign zu aktivieren, führen Sie die folgenden Schritte aus:
 
-1. Verbinden Sie Ihre [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} -Konto.
+1. Verbinden Sie sich mit Ihrem [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}-Konto.
 
-1. Generieren Sie mithilfe des AWS Key Management Service (KMS) einen Schlüssel mit automatischer Rotation. [Erfahren Sie mehr](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
+1. Generieren Sie mithilfe des AWS Key Management Service (KMS) einen Schlüssel mit automatischer Rotation. [Weitere Informationen dazu](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
-1. Wenden Sie die von Adobe bereitgestellte Richtlinie auf Ihr AWS-Konto an, um Zugriff auf Ihre Ressourcen zu gewähren. [Weitere Infos](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
+1. Wenden Sie die von Adobe bereitgestellte Regel auf Ihr AWS-Konto an, um Zugriff auf Ihre Ressourcen zu gewähren. [Weitere Informationen dazu](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. Freigeben [Amazon-Ressourcenname (key ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} mit [!DNL Adobe Campaign]. Wenden Sie sich dazu an Ihren Adobe-Support-Mitarbeiter. <!--or Adobe transition manager?-->
+1. Teilen Sie Ihren [Amazon-Ressourcennamen (Schlüssel-ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} mit [!DNL Adobe Campaign]. Wenden Sie sich dazu an den Adobe-Support. <!--or Adobe transition manager?-->
 
-1. Erstellen und testen Sie die Amazon EventBridge-Regeln, um die Überwachung Ihrer Schlüssel durch Adobe zu ermöglichen. &#x200B; [Weitere Informationen](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
+1. Erstellen und testen Sie die Amazon EventBridge-Regeln, um die Überwachung Ihrer Schlüssel durch Adobe zu aktivieren. [Weitere Informationen](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
-## Sicheres VPN-Tunneln {#secure-vpn-tunneling}
+## Sicheres VPN-Tunneling {#secure-vpn-tunneling}
 
-Die **Sicheres VPN-Tuning (Virtual Private Network)** ist ein standortübergreifendes VPN, das einen sicheren Zugriff für Ihre Daten ermöglicht, die über ein privates Netzwerk von Ihrem Standort zum [!DNL Adobe Campaign] -Instanz.
+Das **sichere Virtual Private Network(VPN)-Tunneling** ist ein VPN von einer Site zur anderen, das einen sicheren Zugang für Ihre sich im Transit befindlichen Daten über ein privates Netzwerk von Ihrem Standort zur [!DNL Adobe Campaign]-Instanz bietet.
 
 <!--As it connects two networks together, it is a site-to-site VPN.-->
 
-Um eine hohe Verfügbarkeit (HA) zu gewährleisten, verwendet es zwei Tunnel, um im Falle eines Problems in einem Tunnel einen Ausfall zu vermeiden.
+Um eine hohe Verfügbarkeit (HA, High Availability), zu gewährleisten, verwendet es zwei Tunnel, um im Falle eines Problems in einem Tunnel einen Ausfall zu vermeiden.
 
-Es werden drei Anwendungsfälle unterstützt:
+Die folgenden drei Anwendungsfälle werden unterstützt:
 
-* Federated Data Access (FDA) über VPN<!--to access your on-premise database from the Campaign instance over VPN-->
+* Federated Data Access (FDA) über ein VPN<!--to access your on-premise database from the Campaign instance over VPN-->
 
-* Anmeldung einer Instanz über VPN von einem dicken Client
+* Instanz-Login über ein VPN von einem Thick Client
 
-* Instanz-SFTP-Zugriff über VPN
+* Instanz-SFTP-Zugriff über ein VPN
 
 >[!CAUTION]
 >
@@ -70,67 +70,67 @@ Es werden drei Anwendungsfälle unterstützt:
 
 Um die ordnungsgemäße Verwendung dieser Funktion sicherzustellen, befolgen Sie die folgenden Richtlinien:
 
-* Richten Sie Ihr seitiges VPN basierend auf der Adobe-seitigen VPN-Konfiguration ein.
+* Richten Sie auf Ihrer Seite das VPN auf der Grundlage der VPN-Konfiguration auf der Adobe-Seite ein.
 
-* Halten Sie beide Tunnel für hohe Verfügbarkeit bereit.
+* Lassen Sie beide Tunnel für hohe Verfügbarkeit aktiv.
 
-* Überwachen Sie Ihren Seitentunnel.
+* Überwachen Sie den Tunnel auf Ihrer Seite.
 
-* Sie müssen der Initiator des Tunnels sein und so ausgerichtet sein, dass Sie die Verbindung neu starten, wenn der Tunnel ausfällt.
+* Sie müssen Initiator des Tunnels sein und in der Lage sein, die Verbindung neu zu initiieren, wenn der Tunnel unterbrochen wird.
 
-* Richten Sie einen Wiederholungsmechanismus an Ihrem Ende ein, falls ein Verbindungsfehler auftritt.
+* Richten Sie auf Ihrer Seite einen Mechanismus zum erneuten Aufbau der Verbindung ein, falls diese ausfällt.
 
 ## Schutzmechanismen {#callouts}
 
-Im Folgenden finden Sie einige Limits und Einschränkungen in Bezug auf die erweiterten Sicherheitsfunktionen.
+Im Folgenden finden Sie einige Schutzmechanismen und Einschränkungen in Bezug auf die erweiterten Sicherheitsfunktionen.
 
-* Stellen Sie sicher, dass alle Anwendungsfälle für die sichere CMK-Integration/Secure VPN-Tunnelverarbeitung funktionieren.
+* Stellen Sie sicher, dass alle Anwendungsfälle für die sichere CMK-Integration bzw. das sichere VPN-Tunneling funktionieren.
 
 <!--* Adobe shall reach out to you or your technical team if any issue is found on your side.
 
 * Currently, when using Enhanced security features, any communication with Adobe must be performed manually via email.-->
 
-* Adobe überwacht:
+* Adobe überwacht dabei:
 
-   * Ihre Instanzverfügbarkeit und fahren Sie mit der Warnung fort, wenn der Schlüssel nicht verfügbar ist.
+   * die Verfügbarkeit Ihrer Instanz und sendet eine Warnmeldung, wenn der Schlüssel nicht verfügbar ist.
 
-   * Die VPN-Tunnel und fahren mit der Warnung fort, falls Probleme auftreten.
+   * die VPN-Tunnel und sendet eine Warnmeldung, falls ein Problem auftritt.
 
-### Limits bei der sicheren CMK-Integration {#cmk-callouts}
+### Schutzmechanismen bei der sicheren CMK-Integration {#cmk-callouts}
 
-* Adobe stellt kein AWS-Konto bereit. Sie müssen über ein eigenes AWS-Konto verfügen und dieses so einrichten, dass Sie Ihren Schlüssel generieren und für Adobe freigeben.
+* Adobe stellt kein AWS-Konto bereit. Sie müssen über ein eigenes AWS-Konto verfügen und dieses so einrichten, dass es Ihren Schlüssel generiert und für Adobe freigibt.
 
-* Nur [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)-Schlüssel werden unterstützt. Es können keine kundengenerierten Schlüssel außerhalb von KMS verwendet werden. &#x200B;
+* Nur [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)-Schlüssel werden unterstützt. Es können keine Schlüssel verwendet werden, die von Kundinnen und Kunden außerhalb von KMS erzeugt wurden.&#x200B;
 
-* Für die Ersteinrichtung sind einige Ausfallzeiten erforderlich. &#x200B;Die Ausfallzeitdauer hängt von der Größe Ihrer Datenbank ab.
+* Bei der Ersteinrichtung ist mit Ausfallzeiten zu rechnen.&#x200B;Die Dauer der Ausfallzeit hängt von der Größe Ihrer Datenbank ab.
 
-* Da Sie den Schlüssel besitzen und pflegen, müssen Sie sich bei jeder Änderung Ihres Schlüssels an die Adobe wenden. &#x200B;
+* Da Sie den Schlüssel besitzen und pflegen, müssen Sie sich bei jeder Änderung Ihres Schlüssels an Adobe wenden.&#x200B;
 
-* Sie können Ihren Schlüssel mit [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} und sperren Sie sie bei Bedarf. &#x200B;
+* Sie können Ihren Schlüssel mit [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} überprüfen und ihn bei Bedarf widerrufen.&#x200B;
 
-* Wenn Sie den Schlüssel sperren, deaktivieren oder löschen, wird der Zugriff auf Ihre verschlüsselten Ressourcen und Instanzen erst wieder aufgehoben, wenn Sie die entsprechende Aktion zurücksetzen.
+* Wenn Sie den Schlüssel widerrufen, deaktivieren oder löschen, wird der Zugriff auf Ihre verschlüsselten Ressourcen und Ihre Instanz gesperrt, bis Sie die entsprechende Aktion rückgängig machen.
 
   >[!CAUTION]
   >
-  >Wenn Sie den Schlüssel deaktivieren und diese Aktion nicht innerhalb von 7 Tagen zurücksetzen, kann Ihre Datenbank nur aus der Sicherung abgerufen werden.
+  >Wenn Sie den Schlüssel deaktivieren und diese Aktion nicht innerhalb von 7 Tagen rückgängig machen, kann Ihre Datenbank nur aus einem Backup wiederhergestellt werden.
   >
-  >Wenn Sie den Schlüssel löschen und diese Aktion nicht innerhalb von 30 Tagen wiederherstellen, werden alle Ihre Daten dauerhaft gelöscht und gehen verloren. &#x200B;
+  >Wenn Sie den Schlüssel löschen und diese Aktion nicht innerhalb von 30 Tagen rückgängig machen, werden alle Ihre Daten dauerhaft gelöscht und gehen verloren.&#x200B;
 
-### Sichere VPN-Tunnelwächter {#vpn-callouts}
+### Schutzmechanismen beim sicheren VPN-Tunneling {#vpn-callouts}
 
-* Derzeit werden nur On-Premise-Datenbanken unterstützt, wie z. B.<!--Richa to check the list with PM-->:
+* Derzeit werden nur On-Premise-Datenbanken unterstützt, wie z. B.<!--Richa to check the list with PM-->:
 
    * MySQL
-   * Netezza 
-   * Oracle 
-   * SAP HANA 
-   * SQL Server 
-   * Sybase 
-   * Teradata 
+   * Netezza 
+   * Oracle 
+   * SAP HANA 
+   * SQL Server 
+   * Sybase 
+   * Teradata 
    * Hadoop über HiveSQL
 
-* Es werden nur AWS-konforme VPN-Geräte unterstützt. Eine Liste kompatibler Geräte finden Sie unter [diese Seite](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}<!--check which list should be communicated-->.
+* Es werden nur AWS-konforme VPN-Geräte unterstützt. Eine Liste kompatibler Geräte finden Sie auf [dieser Seite](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}<!--check which list should be communicated-->.
 
 * VPN-Verbindungen zu Drittanbietern oder externen Anbietern werden nicht unterstützt.
 
-* Adobe-verwaltete zusätzliche VPNs für private Cloud-Datenbanken sind nicht enthalten.
+* Von Adobe verwaltete zusätzliche VPNs für private Cloud-Datenbanken sind nicht enthalten.
