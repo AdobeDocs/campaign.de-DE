@@ -8,7 +8,7 @@ breadcrumb-title: Dokumentation zu Campaign v8
 source-git-commit: 5312045424d74f8aa1eb44b2f40347553d471a12
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
