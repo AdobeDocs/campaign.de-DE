@@ -1,129 +1,130 @@
 ---
 product: campaign
 title: Audit-Protokoll
-description: Erfahren Sie, wie Sie Ihre Instanz mit dem Campaign Audit-Protokoll überwachen.
+description: Erfahren Sie, wie Sie Ihre Instanz mit dem Audit-Protokoll von Campaign überwachen.
 feature: Audit Trail, Monitoring, Workflows
-source-git-commit: bb74393f0b24fa5b9781eee15c4527daba527192
-workflow-type: tm+mt
+exl-id: 6a937575-42d4-4dc5-8168-43c25bb2cde6
+source-git-commit: b4b361a4aabd1b33554166c2638989b99a02baec
+workflow-type: ht
 source-wordcount: '650'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Audit-Protokoll{#audit-trail}
 
-Die **[!UICONTROL Audit-Protokoll]** -Funktion in Adobe Campaign bietet einen detaillierten Datensatz aller Änderungen, die an wichtigen Entitäten in Ihrer Instanz vorgenommen wurden. Dies sind typischerweise Änderungen, die einen reibungslosen Betrieb der Instanz erheblich beeinträchtigen. Es dient als Echtzeit-Protokoll und erfasst eine detaillierte Liste von Aktionen und Ereignissen, sobald sie auftreten.
+Die Funktion **[!UICONTROL Audit-Protokoll]** in Adobe Campaign bietet eine detaillierte Aufzeichnung aller Änderungen, die an wichtigen Entitäten in Ihrer Instanz vorgenommen wurden. Dies sind typischerweise Änderungen, die den reibungslosen Betrieb der Instanz wesentlich beeinflussen. Es dient als Echtzeit-Protokoll und erfasst eine detaillierte Liste von Aktionen und Ereignissen, sobald sie auftreten.
 
 >[!NOTE]
 >
 >Adobe Campaign prüft keine Änderungen an Benutzerrechten, Vorlagen, Personalisierungen oder Kampagnen.\
->Das Audit-Protokoll kann nur von Administratoren der Instanz verwaltet werden.
+>Das Audit-Protokoll kann nur von Admins der Instanz verwaltet werden.
 
-+++ Weitere Informationen zu verfügbaren Entitäten im Audit-Protokoll
++++ Weitere Informationen über die verfügbaren Entitäten im Audit-Protokoll
 
-* **Schema-Audit-Protokoll**: ermöglicht es Ihnen, die Änderungen an Ihren Schemas zu untersuchen und zu identifizieren, wer diese Änderungen vorgenommen hat und wann sie vorgenommen wurden.
+* **Schema-Audit-Protokoll**: ermöglicht es Ihnen, die Änderungen an Ihren Schemata zu untersuchen und zu identifizieren, wer diese Änderungen vorgenommen hat und wann sie vorgenommen wurden.
 
-  Detaillierte Informationen zu Schemata finden Sie unter [page](../dev/schemas.md).
+  Detaillierte Informationen zu Schemata finden Sie auf [Seite](../dev/schemas.md).
 
-* **Workflow-Audit-Protokoll** verfolgt alle Aktionen im Zusammenhang mit Ihren Workflows, einschließlich:
+* Das **Workflow-Audit-Protokoll** verfolgt alle Aktionen im Zusammenhang mit Ihren Workflows, einschließlich:
 
    * Starten
    * Aussetzen
    * Stoppen
    * Neu starten
-   * Bereinigung, die dem Aktionsbereinigungsverlauf entspricht
-   * Simulieren, welche der Aktion Start im Simulationsmodus entspricht
-   * Wakeup, der der Aktion Ausstehende Aufgaben jetzt ausführen entspricht
+   * Bereinigen, was der Aktion „Verlauf bereinigen“ entspricht
+   * Simulieren, was der Aktion „Starten“ im Simulationsmodus entspricht
+   * Wecken, was der Aktion „Vorgezogene Ausführung der ausstehenden Aufgaben“ entspricht
    * Unbedingter Stopp
 
-  Weiterführende Informationen zu Workflows finden Sie in diesem Abschnitt [page](../../automation/workflow/about-workflows.md).
+  Weiterführende Informationen zu Workflows finden Sie auf [dieser Seite](../../automation/workflow/about-workflows.md).
 
-  Weiterführende Informationen zur Überwachung von Workflows finden Sie im Abschnitt [dedizierter Abschnitt](../../automation/workflow/monitor-workflow-execution.md).
+  Weiterführende Informationen zur Überwachung Workflows finden Sie im [entsprechenden Abschnitt](../../automation/workflow/monitor-workflow-execution.md).
 
-* **Option-Audit-Protokoll** können Sie Aktivitäten überprüfen und letzte Änderungen an Ihren Optionen vornehmen.
+* Das **Audit-Protokoll für Optionen** ermöglicht Ihnen die Überprüfung der Aktivitäten und der letzten Änderungen an Ihren Optionen.
 
-  Weiterführende Informationen zu Optionen finden Sie in diesem Abschnitt [page](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
+  Weiterführende Informationen zu Optionen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options).
 
-* **Versandaudit-Protokoll** ermöglicht Ihnen, die Aktivitäten und letzten Änderungen an Ihren Sendungen zu überprüfen.
+* Das **Audit-Protokoll für den Versand** ermöglicht Ihnen die Überprüfung der Aktivitäten und der letzten Änderungen an Ihren Sendungen.
 
-  Weiterführende Informationen zu Sendungen finden Sie in diesem Abschnitt [page](../start/create-message.md).
+  Weiterführende Informationen zu Sendungen finden Sie auf [dieser Seite](../start/create-message.md).
 
-* **Externes Konto** können Sie Änderungen an externen Konten überprüfen, die von technischen Prozessen wie technischen Workflows oder Kampagnen-Workflows verwendet werden.
+* **Externes Konto** ermöglicht Ihnen die Überprüfung von Änderungen an externen Konten, die von technischen Prozessen wie technischen Workflows oder Kampagnen-Workflows verwendet werden.
 
-  Weiterführende Informationen zu externen Konten finden Sie in diesem Abschnitt [page](../config/external-accounts.md).
+  Weiterführende Informationen zu „Externes Konto“ finden Sie auf [dieser Seite](../config/external-accounts.md).
 
-* **Versandzuordnung** ermöglicht es Ihnen, Aktivitäten und kürzlich an Ihren Versandzuordnungen vorgenommene Änderungen zu überwachen.
+* **Versand-Mapping** ermöglicht es Ihnen, Aktivitäten und kürzlich an Ihren Versand-Mappings vorgenommene Änderungen zu überwachen.
 
-  Weiterführende Informationen zum Versand-Mapping finden Sie in diesem Abschnitt [page](../audiences/target-mappings.md).
+  Weiterführende Informationen zu „Versand-Mapping“ finden Sie auf [dieser Seite](../audiences/target-mappings.md).
 
-* **Webanwendung** können Sie Änderungen an Webformularen in Campaign V8 überprüfen, die zum Erstellen von Seiten mit Eingabe- und Auswahlfeldern verwendet werden und die Daten aus der Datenbank enthalten können.
+* **Web-Anwendung** ermöglicht Ihnen das Überprüfen von Änderungen an Web-Formularen in Campaign V8, die zum Erstellen von Seiten mit Eingabe- und Auswahlfeldern verwendet werden und die Daten aus der Datenbank enthalten können.
 
-  Weiterführende Informationen zur Webanwendung finden Sie in diesem Abschnitt [page](../dev/webapps.md).
+  Weiterführende Informationen zu „Web-Anwendung“ finden Sie auf [dieser Seite](../dev/webapps.md).
 
 * **Angebot** ermöglicht es Ihnen, die Aktivitäten und letzten Änderungen an Ihren Angeboten zu überprüfen.
 
-  Weiterführende Informationen zu Angeboten finden Sie in diesem Abschnitt [page](../interaction/interaction.md).
+  Weiterführende Informationen zu „Angebot“ finden Sie auf [dieser Seite](../interaction/interaction.md).
 
-* **Operator** ermöglicht es Ihnen, Aktivitäten und Änderungen zu überwachen, die an Ihren Benutzern vor Kurzem vorgenommen wurden.
+* **Operator** ermöglicht es Ihnen, Aktivitäten und Änderungen zu überwachen, die vor Kurzem an Ihren Operatoren vorgenommen wurden.
 
-  Weiterführende Informationen zu Benutzern finden Sie in diesem Abschnitt [page](../interaction/interaction-operators.md).
+  Weiterführende Informationen zu Benutzerinnen und Benutzern finden Sie auf [dieser Seite](../interaction/interaction-operators.md).
 
 +++
 
 ## Zugriff auf das Audit-Protokoll {#accessing-audit-trail}
 
-So greifen Sie auf die **[!UICONTROL Audit-Protokoll]**:
+So greifen auf das **[!UICONTROL Audit-Protokoll]** Ihrer Instanz zu:
 
-1. Zugriff auf **[!UICONTROL Explorer]** -Menü Ihrer Instanz.
+1. Greifen Sie auf das Menü **[!UICONTROL Explorer]** Ihrer Instanz zu.
 
-1. Unter dem **[!UICONTROL Administration]** Menü auswählen **[!UICONTROL Prüfung]** then **[!UICONTROL Audit-Protokoll]**.
+1. Wählen Sie unter dem Menü **[!UICONTROL Administration]** die Option **[!UICONTROL Audit]** und dann **[!UICONTROL Audit-Protokoll]** aus.
 
    ![](assets/audit-trail-1.png)
 
-1. Das Fenster **[!UICONTROL Audit-Protokoll]** wird mit der Liste Ihrer Entitäten geöffnet. Adobe Campaign prüft die Aktionen zum Erstellen, Bearbeiten und Löschen für Ihre verschiedenen Entitäten.
+1. Das Fenster **[!UICONTROL Audit-Protokoll]** wird mit der Liste Ihrer Entitäten geöffnet. Adobe Campaign prüft die Aktionen zum Erstellen, Bearbeiten und Löschen für Ihre unterschiedlichen Entitäten.
 
    Wählen Sie eine der Entitäten aus, um mehr über die letzten Änderungen zu erfahren.
 
-1. Die **[!UICONTROL Auditstelle]** enthält detailliertere Informationen zur ausgewählten Entität, z. B.:
+1. Im Fenster **[!UICONTROL Audit-Entität]** erhalten Sie detailliertere Informationen zu der ausgewählten Entität, z. B.:
 
    * **[!UICONTROL Typ]**: Workflow, Optionen, Sendungen oder Schemata.
    * **[!UICONTROL Entität]**: Interner Name Ihrer Aktivitäten.
-   * **[!UICONTROL Geändert von]**: Benutzername der letzten Person, die diese Entität zuletzt geändert hat.
-   * **[!UICONTROL Aktion]**: Letzte Aktion, die für diese Entität ausgeführt wurde, entweder &quot;Erstellt&quot;, &quot;Geändert&quot;oder &quot;Gelöscht&quot;.
-   * **[!UICONTROL Änderungsdatum]**: Datum der letzten Aktion, die für diese Entität durchgeführt wurde.
+   * **[!UICONTROL Geändert von]**: Benutzername der Person, die diese Entität zuletzt geändert hat.
+   * **[!UICONTROL Aktion]**: Letzte Aktion, die für diese Entität ausgeführt wurde, entweder „Erstellt“, „Geändert“ oder „Gelöscht“.
+   * **[!UICONTROL Änderungsdatum]**: Datum der letzten Aktion, die an dieser Entität durchgeführt wurde.
 
    ![](assets/audit-trail-2.png)
 
 >[!NOTE]
 >
->Standardmäßig ist die Aufbewahrungsfrist auf 180 Tage für **[!UICONTROL Auditprotokolle]**. Dieser Wert kann im Softwareverteilungs-Assistenten geändert werden.
+>Die Aufbewahrungsfrist für **[!UICONTROL Auditlogs]** ist standardmäßig auf 180 Tage festgelegt. Dieser Wert kann im Bereitstellungsassistenten geändert werden.
 
-## Audit-Protokoll aktivieren/deaktivieren {#enable-disable-audit-trail}
+## Aktivieren/Deaktivieren des Audit-Protokolls {#enable-disable-audit-trail}
 
-Das Audit-Protokoll kann für eine bestimmte Aktivität einfach aktiviert oder deaktiviert werden, wenn Sie beispielsweise Speicherplatz in der Datenbank sparen möchten.
+Das Audit-Protokoll kann für eine bestimmte Aktivität einfach aktiviert oder deaktiviert werden, beispielsweise wenn Sie Speicherplatz in der Datenbank sparen möchten.
 
 Gehen Sie dabei folgendermaßen vor:
 
-1. Zugriff auf **[!UICONTROL Explorer]** -Menü Ihrer Instanz.
+1. Greifen Sie auf das Menü **[!UICONTROL Explorer]** Ihrer Instanz zu.
 
-1. Unter dem **[!UICONTROL Administration]** Menü auswählen **[!UICONTROL Plattform]** then **[!UICONTROL Optionen]**.
+1. Wählen Sie unter dem Menü **[!UICONTROL Administration]** die Option **[!UICONTROL Plattform]** und dann **[!UICONTROL Optionen]** aus.
 
-1. Wählen Sie je nach Entität, die Sie aktivieren/deaktivieren möchten, eine der folgenden Optionen aus:
+1. Wählen Sie je nach zu aktivierender/deaktivierender Entität eine der folgenden Optionen aus:
 
    * Für Workflow: **[!UICONTROL XtkAudit_Workflows]**
-   * Für Schemas: **[!UICONTROL XtkAudit_DataSchema]**
+   * Für Schemata: **[!UICONTROL XtkAudit_DataSchema]**
    * Für Optionen: **[!UICONTROL XtkAudit_Option]**
    * Für Sendungen: **[!UICONTROL XtkAudit_Delivery]**
    * Für externes Konto: **[!UICONTROL XtkAudit_ExtAccount]**
-   * Für die Versandzuordnung: **[!UICONTROL XtkAudit_DeliveryMapping]**
-   * Für Webanwendungen: **[!UICONTROL XtkAudit_WebApp]**
+   * Für Versand-Mapping: **[!UICONTROL XtkAudit_DeliveryMapping]**
+   * Für Web-Anwendung: **[!UICONTROL XtkAudit_WebApp]**
    * Für Angebot: **[!UICONTROL XtkAudit_Offer]**
    * Für Operator: **[!UICONTROL XtkAudit_Operator]**
    * Für jede Entität: **[!UICONTROL XtkAudit_Enable_All]**
 
    ![](assets/audit-trail-3.png)
 
-1. Ändern Sie die **[!UICONTROL Wert]** auf 1 gesetzt, wenn Sie die Entität aktivieren möchten, oder auf 0, wenn Sie sie deaktivieren möchten.
+1. Ändern Sie den **[!UICONTROL Wert]** in „1“, wenn Sie die Entität aktivieren möchten, oder in „0“, wenn Sie sie deaktivieren möchten.
 
    ![](assets/audit-trail-4.png)
 
