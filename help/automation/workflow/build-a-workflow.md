@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie einen Workflow erstellen
 feature: Workflows
 role: User
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: b7fa3dfb1e596d2ea41674278cbe315199264611
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 96%
+source-wordcount: '868'
+ht-degree: 95%
 
 ---
 
@@ -106,7 +106,7 @@ Doppelklicken Sie auf eine Aktivität, um sie zu konfigurieren oder klicken Sie 
 >
 >Aktivitäten des Kampagnen-Workflows werden in [diesem Abschnitt](activities.md) erläutert.
 
-Die erste Registerkarte enthält die Basiskonfiguration. Die **[!UICONTROL Erweitert]** Diese Registerkarte enthält die zusätzlichen Parameter, die insbesondere dazu dienen, das Verhalten bei Auftreten eines Fehlers zu definieren, die Ausführungsdauer für eine Aktivität festzulegen und ein Initialisierungsskript einzugeben.
+Der erste Tab enthält die grundlegende Konfiguration. Die **[!UICONTROL Erweitert]** enthält die zusätzlichen Parameter, die insbesondere zur Definition des Verhaltens bei Fehlern, zur Angabe der Ausführungsdauer einer Aktivität und zur Eingabe eines Initialisierungsskripts verwendet werden.
 
 Um die Aktivitäten besser zu verstehen und die Lesbarkeit des Workflows zu verbessern, können Sie in die Aktivitäten Kommentare einfügen.
 
@@ -145,31 +145,3 @@ Sie können verschiedene Typen von Workflows duplizieren. Nach dem Duplizieren w
 1. Ändern Sie den Workflow-Titel im Workflow-Fenster.
 1. Wählen Sie **Speichern** aus.
 
-Die duplizierte Funktion steht in der Ansicht einer Kampagne nicht direkt zur Verfügung.
-
-Sie können jedoch eine Ansicht erstellen, die alle Workflows in Ihrer Instanz anzeigt. In dieser Ansicht können Sie Workflows mit **Duplizieren in** duplizieren.
-
-**Erstellen einer Ansicht**
-
-1. Navigieren Sie in **Explorer** zu dem Ordner, in dem Sie Ihre Ansicht erstellen müssen.
-1. Klicken Sie mit der rechten Maustaste und gehen Sie zu **Neuen Ordner hinzufügen** > **Prozess**, wählen Sie **Workflows** aus.
-
-   ![](assets/add-new-folder-workflows.png)
-
-Der neue Ordner **Workflows** wird erstellt.
-
-1. Klicken Sie mit der rechten Maustaste und wählen Sie **Eigenschaften** aus.
-1. Aktivieren Sie auf der Registerkarte **Einschränkung** die Option **Dieser Ordner ist eine Ansicht** und klicken Sie auf **Speichern**.
-
-   ![](assets/folder-is-a-view.png)
-
-Der Ordner wird nun mit allen Workflows Ihrer Instanz gefüllt.
-
-**Duplizieren von Kampagnen-Workflows**
-
-1. Wählen Sie in der Workflow-Ansicht einen Kampagnen-Workflow aus.
-1. Klicken Sie mit der rechten Maustaste auf **Duplizieren in**.
-1. Ändern Sie den Titel.
-1. Wählen Sie **Speichern** aus.
-
-Ihr duplizierter Workflow wird in der Ansicht „Workflow“ angezeigt.
