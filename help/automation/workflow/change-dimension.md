@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie die Aktivität der Dimensionsänderung verwen
 feature: Workflows, Targeting Activity
 role: User
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 100%
+source-wordcount: '449'
+ht-degree: 89%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 100%
 Verwenden Sie die Aktivität **[!UICONTROL Dimensionsänderung]**, um die Zielgruppendimension beim Erstellen einer Audience zu ändern. Diese Aktivität verschiebt die Achse je nach Datenvorlage und der eingegebenen Dimension. Sie wechseln beispielsweise von der Dimension &quot;Verträge&quot; zur Dimension &quot;Kunden&quot;.
 
 Sie können diese Aktivität auch verwenden, um die zusätzlichen Spalten der neuen Zielgruppe und Kriterien zur Datendeduplizierung zu definieren.
+
+>[!IMPORTANT]
+>
+>Beachten Sie, dass die Variable **[!UICONTROL Dimension ändern]** und **[!UICONTROL Datenquelle ändern]** -Aktivitäten sollten nicht in einer Zeile hinzugefügt werden. Wenn Sie beide Aktivitäten nacheinander verwenden müssen, müssen Sie eine **[!UICONTROOL Anreicherung]** Aktivitäten zwischen ihnen. Dadurch wird eine ordnungsgemäße Ausführung sichergestellt und potenzielle Konflikte oder Fehler werden vermieden.
 
 Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen Sie die folgenden Schritte aus:
 
