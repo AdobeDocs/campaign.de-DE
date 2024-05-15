@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie die Aktivität der Dimensionsänderung verwen
 feature: Workflows, Targeting Activity
 role: User
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
-source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
+source-git-commit: b77c37ab9ba9556fdefc563deac6b55ab0d91dc8
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 89%
@@ -20,7 +20,7 @@ Sie können diese Aktivität auch verwenden, um die zusätzlichen Spalten der ne
 
 >[!IMPORTANT]
 >
->Beachten Sie, dass die Variable **[!UICONTROL Dimension ändern]** und **[!UICONTROL Datenquelle ändern]** -Aktivitäten sollten nicht in einer Zeile hinzugefügt werden. Wenn Sie beide Aktivitäten nacheinander verwenden müssen, müssen Sie eine **[!UICONTROOL Anreicherung]** Aktivitäten zwischen ihnen. Dadurch wird eine ordnungsgemäße Ausführung sichergestellt und potenzielle Konflikte oder Fehler werden vermieden.
+>Beachten Sie, dass die Variable **[!UICONTROL Dimension ändern]** und **[!UICONTROL Datenquelle ändern]** -Aktivitäten sollten nicht in einer Zeile hinzugefügt werden. Wenn Sie beide Aktivitäten nacheinander verwenden müssen, müssen Sie eine **[!UICONTROL Anreicherung]** Aktivitäten zwischen ihnen. Dadurch wird eine ordnungsgemäße Ausführung sichergestellt und potenzielle Konflikte oder Fehler werden vermieden.
 
 Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen Sie die folgenden Schritte aus:
 
