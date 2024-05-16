@@ -8,7 +8,7 @@ exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '631'
-ht-degree: 82%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Gehen Sie wie folgt vor:
    ![](assets/uc_enrichment_1.png)
 
 1. Fügen Sie die Aktivität **[!UICONTROL Aufspaltung]** hinzu, um die Empfänger, die im aktuellen Monat Geburtstag haben, von den restlichen Empfängern zu trennen.
-1. So teilen Sie Ihre Liste auf: **[!UICONTROL Filtern ausgewählter Datensätze]** Kategorie, auswählen **[!UICONTROL Filterbedingung für die Eingangspopulation hinzufügen]**. Klicken Sie anschließend auf **[!UICONTROL Bearbeiten]**.
+1. Um Ihre Liste aufzuspalten, wählen Sie in der Kategorie **[!UICONTROL Filterung der Datensätze]** die Option **[!UICONTROL Filterbedingung für die Eingangspopulation hinzufügen]** aus. Klicken Sie danach auf **[!UICONTROL Bearbeiten]**.
 
    ![](assets/uc_enrichment_2.png)
 
@@ -46,9 +46,9 @@ Gehen Sie wie folgt vor:
 
    ![](assets/uc_enrichment_4.png)
 
-1. Klicken Sie auf **[!UICONTROL Beenden]**. Dann in der **[!UICONTROL Allgemein]** Registerkarte Ihres **[!UICONTROL Aufspaltung]** Klicken Sie auf die Aktivität **[!UICONTROL Komplement erzeugen]** in der **[!UICONTROL Ergebnisse]** Kategorie.
+1. Klicken Sie auf **[!UICONTROL Beenden]**. Wählen Sie dann im Tab **[!UICONTROL Allgemein]** der Aktivität **[!UICONTROL Aufspaltung]** in der Kategorie **[!UICONTROL Ergebnisse]** die Option **[!UICONTROL Komplement erzeugen]** aus.
 
-   Mit dem **[!UICONTROL Komplement]** Daher können Sie eine Versandaktivität hinzufügen oder eine Liste aktualisieren. Hier haben wir gerade ein hinzugefügt **[!UICONTROL Ende]** Aktivität.
+   Mit dem Ergebnis von **[!UICONTROL Komplement]** können Sie eine Versandaktivität hinzufügen oder eine Liste aktualisieren. In unserem Beispiel haben wir einfach die Aktivität **[!UICONTROL Ende]** hinzugefügt.
 
    ![](assets/uc_enrichment_6.png)
 
@@ -58,7 +58,7 @@ Konfigurieren Sie anschließend die Aktivität **[!UICONTROL Anreicherung]**:
 
    ![](assets/uc_enrichment_7.png)
 
-1. Öffnen Sie Ihre **[!UICONTROL Anreicherung]** Aktivität. In der **[!UICONTROL Ergänzende Informationen]** Kategorie, klicken Sie auf **[!UICONTROL Daten hinzufügen]**.
+1. Öffnen Sie die Aktivität **[!UICONTROL Anreicherung]**. Wählen Sie in der Kategorie **[!UICONTROL Zusatzinformationen]** die Option **[!UICONTROL Daten hinzufügen]** aus.
 
    ![](assets/uc_enrichment_8.png)
 
@@ -67,7 +67,7 @@ Konfigurieren Sie anschließend die Aktivität **[!UICONTROL Anreicherung]**:
 
    ![](assets/uc_enrichment_9.png)
 
-1. Hinzufügen einer **[!UICONTROL Bezeichnung]**. Dann in der **[!UICONTROL Ausdruck]** -Spalte, klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]**.
+1. Fügen Sie einen **[!UICONTROL Titel]** hinzu. Wählen Sie dann in der Spalte **[!UICONTROL Ausdruck]** die Option **[!UICONTROL Ausdruck bearbeiten]** aus.
 
    ![](assets/uc_enrichment_10.png)
 
@@ -81,7 +81,7 @@ Konfigurieren Sie anschließend die Aktivität **[!UICONTROL Anreicherung]**:
 
    ![](assets/uc_enrichment_12.png)
 
-1. Klicken Sie auf **[!UICONTROL OK]**. Ihre Anreicherung ist jetzt bereit.
+1. Klicken Sie auf **[!UICONTROL OK]**. Ihre Anreicherung ist nun fertig.
 
 Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinzufügen. In unserem Fall haben wir einen E-Mail-Versand hinzugefügt, mit dem Empfänger, die im aktuellen Monat Geburtstag feiern, ein spezielles Angebot mit Gültigkeitsdaten erhalten.
 
@@ -108,7 +108,7 @@ Sie können jetzt Ihre E-Mail-Nachricht mit den benutzerdefinierten Feldern gest
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Klick ![](assets/uc_enrichment_16.png). Auswählen **[!UICONTROL Target-Erweiterung]** dann werden die zuvor erstellten benutzerdefinierten Gültigkeitsdaten mit dem **[!UICONTROL Anreicherung]** Aktivität zum Hinzufügen Ihrer Erweiterung zum formatDate-Ausdruck.
+1. Klicks ![](assets/uc_enrichment_16.png). Auswählen **[!UICONTROL Target-Erweiterung]** dann die zuvor erstellten benutzerdefinierten Gültigkeitsdaten mit den **[!UICONTROL Anreicherung]** -Aktivität, um Ihre Erweiterung zum formatDate-Ausdruck hinzuzufügen.
 
    ![](assets/uc_enrichment_19.png)
 

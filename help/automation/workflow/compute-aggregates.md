@@ -8,7 +8,7 @@ exl-id: 00e564b5-3c8e-45d4-b240-c872a8b8ccb6
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ In diesem Beispiel wird die Anzahl der Empfänger gesucht, die in Berlin wohnen,
 
 Gehen Sie wie folgt vor:
 
-1. in **[!UICONTROL Zu extrahierende Daten]** definiert eine Anzahl für den Primärschlüssel (wie im vorherigen Beispiel gezeigt). Hinzufügen des **[!UICONTROL Geschlecht]** in der Ausgabespalte an. Überprüfen Sie die **[!UICONTROL Gruppe]** Option in der **[!UICONTROL Geschlecht]** Spalte. Auf diese Weise werden die Empfänger nach Geschlecht gruppiert.
+1. Konfigurieren Sie im Fenster **[!UICONTROL Zu extrahierende Daten]** wie im vorangehenden Beispiel eine Primärschlüssel-Zählung. Fügen Sie das Feld **[!UICONTROL Geschlecht]** zu den Ausgabespalten hinzu. Kreuzen Sie die Option **[!UICONTROL Gruppieren]** der Spalte **[!UICONTROL Geschlecht]** an. Auf diese Weise werden die Empfänger nach Geschlecht angeordnet.
 
    ![](assets/query_editor_nveau_27.png)
 

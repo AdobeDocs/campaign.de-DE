@@ -8,7 +8,7 @@ exl-id: 23bfabac-62cc-4f86-a739-a34a0e183c31
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1427'
-ht-degree: 86%
+ht-degree: 92%
 
 ---
 
@@ -124,7 +124,7 @@ Gehen Sie hierzu wie folgt vor:
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Wählen Sie die **[!UICONTROL Relationsdefinition]** und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]** Schaltfläche. Geben Sie den Typ des zu erstellenden Links an. In diesem Beispiel möchten wir das Land des Dateiempfängers mit einem Land in der Liste der verfügbaren Länder in der entsprechenden Tabelle der Datenbank abgleichen. Wählen Sie die **[!UICONTROL Definieren Sie einen Link, indem Sie unter mehreren Optionen nach einem Verweis suchen.]** Option. Wählen Sie die Ländertabelle in der **[!UICONTROL Zielschema]** Feld.
+1. Wählen Sie die **[!UICONTROL Linkdefinition]** und klicken Sie auf **[!UICONTROL Nächste]** Schaltfläche. Geben Sie den Typ des zu erstellenden Links an. In diesem Beispiel möchten wir das Land des Dateiempfängers mit einem Land in der Liste der verfügbaren Länder in der entsprechenden Tabelle der Datenbank abstimmen. Wählen Sie die **[!UICONTROL Relation durch Suche nach einer Referenz aus mehreren Optionen definieren]** -Option. Wählen Sie die Ländertabelle im **[!UICONTROL Zielschema]** -Feld.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -138,7 +138,7 @@ Nach Ausführung der Anreicherungsaktivität enthält das temporäre Schema wie 
 
 ## Datenabstimmung {#data-reconciliation}
 
-Die Anreicherungsaktivität kann verwendet werden, um die Datenabstimmung zu konfigurieren, auch nachdem Daten in die Datenbank geladen wurden. In diesem Fall gilt Folgendes: **[!UICONTROL Abstimmung]** Über diese Registerkarte können Sie die Relation zwischen den Daten in der Adobe Campaign-Datenbank und den Daten in der Arbeitstabelle definieren.
+Die Anreicherungsaktivität kann zur Abstimmung von Daten genutzt werden, beispielsweise wenn externe Daten in die Datenbank geladen werden. In diesem Fall kann im Tab **[!UICONTROL Abstimmung]** die Relation zwischen den existierenden Daten und denen der Arbeitstabelle definiert werden.
 
 Kreuzen Sie die Option **[!UICONTROL Dokument zur Zielgruppenbestimmung aufgrund der Arbeitsdaten identifizieren]** an und geben Sie das Schema an, zu dem die Relation hergestellt werden soll. Geben Sie dann die abzustimmenden Felder an: im Feld **[!UICONTROL Quellausdruck]** die der Arbeitsdaten und im Feld **[!UICONTROL Zielausdruck]** die der Zielgruppendimension.
 
@@ -169,7 +169,7 @@ Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](qu
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
 1. Konfigurieren Sie die Angebotsauswahl. Zwei Optionen stehen zur Auswahl:
 
-   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Aktivieren Sie diese Option und geben Sie die Parameter der Angebotsmodul-Aufrufe an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote entsprechend diesen Parametern. Es wird empfohlen, entweder **[!UICONTROL Kategorie]** oder die **[!UICONTROL Design]** statt beides zur gleichen Zeit.
+   * **[!UICONTROL Suche nach dem besten Angebot einer Kategorie]**: Kreuzen Sie diese Option an und geben Sie die Parameter für die Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Angebotsmodul berechnet automatisch die zu verwendenden Angebote entsprechend diesen Parametern. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
 
      ![](assets/int_enrichment_offer3.png)
 
@@ -226,4 +226,4 @@ Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten
 
 1. Bestätigen Sie Ihre Wahl und speichern Sie den Workflow.
 
-Im Versand werden Ranking und Gewichtung der Angebote automatisch gespeichert. Diese Informationen sind in den **[!UICONTROL Angebote]** Tabulator.
+Der Versand speichert automatisch die Rangfolge und Gewichtung der Angebote. Diese Informationen werden in der Registerkarte **[!UICONTROL Angebote]** des Versands angezeigt.

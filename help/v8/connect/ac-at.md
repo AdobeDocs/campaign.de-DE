@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1026'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Wir möchten, dass eines der Bilder in dieser E-Mail entsprechend den folgenden 
 In Adobe Campaign und Adobe Target müssen folgende Schritte vorgenommen werden:
 
 1. [Dynamisches Angebot in eine E-Mail einfügen](#inserting-dynamic-offer)
-1. [Umleitungsangebote erstellen](#create-redirect-offers)
+1. [Erstellen von Umleitungsangeboten](#create-redirect-offers)
 1. [Zielgruppen erstellen](#audiences-target)
 1. [Experience Targeting-Aktivität erstellen](#creating-targeting-activity)
 1. [Vorschau anzeigen und Nachricht senden](#preview-send-email)

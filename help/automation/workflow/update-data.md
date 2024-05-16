@@ -7,7 +7,7 @@ exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -53,11 +53,11 @@ Es besteht auch die Möglichkeit, die Zuordnung manuell vorzunehmen, indem Sie d
 
 ![](assets/s_advuser_update_data_3.png)
 
-Wählen Sie alle zu aktualisierenden Felder aus und fügen Sie bei Bedarf Bedingungen hinzu, je nachdem, welche Aktualisierung durchgeführt werden soll. Dies ist in der Spalte **[!UICONTROL Berücksichtigt wenn]** möglich. Bedingungen werden nacheinander und in der Reihenfolge der Liste angewendet. Verwenden Sie die Pfeile auf der rechten Seite, um die Reihenfolge der Aktualisierungen zu ändern.
+Wählen Sie alle zu aktualisierenden Felder aus und geben Sie bei Bedarf Bedingungen für die Aktualisierung an. Dies ist in der Spalte **[!UICONTROL Berücksichtigt wenn]** möglich. Die Bedingungen werden nacheinander, in Reihenfolge der Liste geprüft. Die Reihenfolge kann mithilfe der blauen Pfeile rechts der Tabelle angepasst werden.
 
 Ein Zielfeld kann mehrmals verwendet werden.
 
-Innerhalb eines **[!UICONTROL Einfügen oder aktualisieren]** Operation : Sie können die anzuwendende Kampagne einzeln oder für jedes Feld auswählen. Wählen Sie dazu den gewünschten Wert in der **[!UICONTROL Vorgang]** Spalte.
+Innerhalb eines **[!UICONTROL Einfügen oder Aktualisieren]** -Funktion können Sie die zu verwendende Kampagne entweder einzeln oder für jedes Feld auswählen. Wählen Sie dazu den gewünschten Wert im **[!UICONTROL Vorgang]** Spalte.
 
 ![](assets/s_advuser_update_data_5.png)
 
@@ -72,7 +72,7 @@ Nur Datensätze, die mindestens eine Änderung aufweisen, werden aktualisiert. A
 * **[!UICONTROL Bei leerem Quellwert (NULL) den Zielwert löschen]** (standardmäßig aktiviert);
 * **[!UICONTROL Alle Spalten mit übereinstimmenden Namen aktualisieren]**;
 * Angabe von Bedingungen bezüglich der Quellelemente mithilfe eines Ausdrucks im Feld **[!UICONTROL Berücksichtigung]**;
-* Geben Sie Bedingungen an, die Duplikate mithilfe eines Ausdrucks berücksichtigen. Wenn Sie die **[!UICONTROL Datensätze ignorieren, die dieselbe Zielgruppe betreffen]** nur die erste in der Liste der Ausdrücke berücksichtigt.
+* Angabe von Bedingungen zur Berücksichtigung von Dubletten mithilfe eines Ausdrucks. Wenn die Option **[!UICONTROL Den gleichen Zielkontakt betreffende Datensätze ignorieren]** aktiviert ist, wird nur der erste Datensatz der Ausdruckliste berücksichtigt.
 
 **[!UICONTROL Ausgehende Transition erzeugen]**
 

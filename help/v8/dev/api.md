@@ -8,7 +8,7 @@ exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
 source-git-commit: 07e85c2933194a24b4275519dd7da9c3226f6a3c
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Es ist zu beachten, dass Campaign in seiner [Enterprise (FFDA)-Bereitstellung](.
 
 >[!CAUTION]
 >
->* Als Campaign-Benutzer, der von Campaign Standard aus wechselt, können Sie REST-APIs mit Campaign v8 verwenden. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/get-started-apis){target="_blank"}.
+>* Als Campaign-Benutzende, die von Campaign Standard aus wechseln, können Sie REST-APIs mit Campaign v8 verwenden. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-cloud/campaign/apis/get-started-apis){target="_blank"}.
 >
 >* Ab Campaign v8.5.1 hat sich der Authentifizierungsprozess für Campaign v8 geändert. Technische Benutzerinnen bzw. Benutzer müssen Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
 >

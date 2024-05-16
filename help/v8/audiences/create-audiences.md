@@ -8,7 +8,7 @@ exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Wählen Sie die Option **[!UICONTROL Liste neu erstellen]** aus, um die existier
 
 Wenn Sie die Option **[!UICONTROL Vorgang nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Vorgang betreffenden Protokollnachrichten gespeichert werden.
 
-Im oberen Bereich des Fensters können Sie die Ausführung überwachen. Die **[!UICONTROL Stoppen]** Mit der Schaltfläche können Sie den Vorgang stoppen. Bereits verarbeitete Kontakte werden mit der Liste verknüpft.
+Im oberen Bereich des Fensters können Sie die Ausführung überwachen. Mit der Schaltfläche **[!UICONTROL Anhalten]** können Sie den Vorgang stoppen. Bereits verarbeitete Kontakte werden mit der Liste verknüpft.
 
 Nachdem die Ausführung abgeschlossen ist, öffnen Sie das Menü **[!UICONTROL Profile und Zielgruppen > Listen]** und wählen Sie die Liste aus: die Registerkarte **[!UICONTROL Inhalte]** zeigt die mit der Liste verknüpften Profile an.
 
@@ -103,7 +103,7 @@ Im folgenden Beispiel wird eine Liste aller Empfänger zwischen 25 und 40 erstel
 
    ![](assets/targeting-wf-age-filter.png)
 
-   Erfahren Sie, wie Sie in einem Workflow eine Abfrage erstellen [Dieser Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
+   In [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de) erfahren Sie, wie Sie eine Abfrage in einem Workflow erstellen{target="_blank"}.
 
 1. Geben Sie dieser Abfrage einen Titel und speichern Sie die Änderungen.
 1. Fügen Sie die Aktivität **[!UICONTROL Listen-Update]** hinzu und bearbeiten Sie sie.

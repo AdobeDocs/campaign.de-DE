@@ -7,7 +7,7 @@ exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
 source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
 workflow-type: tm+mt
 source-wordcount: '1019'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Work
 
 Einige Berechnungen verwenden nämlich Werte, die sich nicht täglich ändern. Es wäre daher überflüssig, die Daten täglich neu zu berechnen und die Datenbank unnötig zu überlasten. Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit der Tendenzauswertung und Kaufinformationen der Kundschaft anreichert, müssen die auf diesen Werten basierenden Daten nicht täglich neu berechnet werden.
 
-Gehen Sie dazu folgendermaßen vor: **[!UICONTROL Häufigkeit]** Feld der **[!UICONTROL Allgemein]** Über diese Registerkarte können Sie den maximalen Zeitraum festlegen, in dem die Zielgruppenbestimmung gespeichert wird. Standardmäßig wird der Wert **0** Gibt an, dass die Berechnung bis zur nächsten Ausführung der täglichen Re-Schlichtung gültig bleibt.
+Geben Sie hierzu im Feld **[!UICONTROL Frequenz]** des Tabs **[!UICONTROL Allgemein]** an, wie lange die Berechnungen höchstens beibehalten werden sollen. Der Standardwert **0s** veranlasst, dass die Berechnungen bis zur nächsten Ausführung der täglichen Neuschlichtung gültig bleiben.
 
 Um die Ergebnisse über diese Begrenzung hinaus beizubehalten, geben Sie einen Wert von über 12h im Feld **[!UICONTROL Frequenz]** an: Wenn diese Frist abgelaufen ist, werden alle Regeln erneut angewandt.
 
@@ -91,7 +91,7 @@ Im Standard-Ausführungsmodus werden die Regeln in der folgenden Reihenfolge aus
 >
 >Wenn Sie das Modul &quot;Interaction&quot; nutzen, werden die Eignungsregeln gleichzeitig mit den Filterregeln (für Angebote in Versandentwürfen) oder während der Personalisierungsphase beim Aufruf des Angebotsmoduls angewendet.
 
-Sie können die Ausführungssequenz von Regeln desselben Typs mithilfe des entsprechenden Felds im **[!UICONTROL Allgemein]** Registerkarte der Regel. Wenn während derselben Nachrichtenverarbeitungsphase mehrere Regeln ausgeführt werden, können Sie die Ausführungssequenz in der Datei **[!UICONTROL Ausführungsreihenfolge]** Feld.
+Sie können die Ausführungsreihenfolge von Regeln mit demselben Typ mithilfe des entsprechenden Felds im **[!UICONTROL Allgemein]** -Registerkarte der Regel. Dies ist insbesondere interessant, wenn in der gleichen Verarbeitungsphase der Nachrichten mehrere Regeln zur Anwendung kommen.****
 
 Beispielsweise wird eine Druckregel mit einer Anwendungsreihenfolge von 20 vor einer Druckregel mit einem Wert von 30 ausgeführt.
 

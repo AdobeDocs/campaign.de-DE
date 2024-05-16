@@ -8,7 +8,7 @@ exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -55,9 +55,9 @@ Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Si
 
 1. Zur Konfiguration von Schüben haben Sie die folgenden Möglichkeiten:
 
-   * Definieren Sie die Größe für jede Welle. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
+   * Definieren Sie die Größe für jeden Schub. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
 
-     In der **[!UICONTROL Zeitraum]** -Feld geben Sie die Verzögerung zwischen dem Beginn zweier aufeinander folgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
+     Geben Sie im Feld **[!UICONTROL Zeitraum]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
 
      ![](assets/delivery-waves-size.png)
 
@@ -75,9 +75,9 @@ Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Si
    >
    >Achten Sie darauf, dass die letzten Schübe nicht die Versandgültigkeit überschreiten, die im Tab **[!UICONTROL Gültigkeit]** festgelegt wird. Ansonsten werden manche Nachrichten nicht gesendet.
    >
-   >Sie müssen auch genügend Zeit für weitere Zustellversuche einräumen, wenn Sie die letzten Schübe konfigurieren. <!--See [this section]().-->
+   >Bei der Konfiguration der letzten Schübe müssen Sie auch genügend Zeit für weitere Versuche lassen. <!--See [this section]().-->
 
-1. Um Ihre Sendungen zu überwachen, gehen Sie zu den Versandlogs. Weitere Informationen finden Sie auf [dieser Seite](send.md)<!--ref TBC-->.
+1. Gehen Sie zur Überwachung Ihrer Sendungen zu den Versandlogs. Weitere Informationen finden Sie auf [dieser Seite](send.md)<!--ref TBC-->.
 
    Die Versandlogs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
 
@@ -89,7 +89,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   Um zu verhindern, dass Ihre Sendungen als Spam eingestuft werden, können Sie das gesendete Volumen schrittweise mithilfe von Schüben erhöhen. Damit gewährleisten Sie eine problemlose Entwicklung in der Anfangsphase und die Verringerung der Anzahl der ungültigen Adressen.
 
-  Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Legen Sie beispielsweise die erste Welle auf 10 %, die zweite auf 15 % fest usw.
+  Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Wählen Sie beispielsweise für den ersten Schub 10 %, für den zweiten 15 % usw.
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
@@ -165,7 +165,7 @@ Dies bietet die Möglichkeit, den Versand auf einen späteren Zeitpunkt zu versc
 
   Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]**, wählen Sie **[!UICONTROL Versand terminieren]**, starten Sie die Analyse und bestätigen Sie den Versand. Auf diese Weise wird die Analyse durchgeführt und die Zielgruppe vorbereitet. Am angegebenen Stichtag werden die Nachrichten dann automatisch versendet.
 
-Datum und Uhrzeit werden in der Zeitzone des aktuellen Benutzers angegeben. Die **[!UICONTROL Zeitzone]** Mit der Dropdown-Liste unter dem Eingabefeld Kontaktdatum können Sie das eingegebene Datum und die Uhrzeit automatisch in die ausgewählte Zeitzone konvertieren.
+Datum und Uhrzeit beziehen sich jeweils auf den aktuellen Benutzer. Die unter dem Eingabefeld des Kontaktdatums situierte Dropdown-Liste **[!UICONTROL Zeitzone]** ermöglicht es, die oberhalb eingegebene Uhrzeit der ausgewählten Zeitzone anzupassen.
 
 Wenn Sie also beispielsweise einen Versand für 8 Uhr Brüsseler Zeit terminieren, wird die Uhrzeit automatisch in die ausgewählte Zeitzone konvertiert:
 

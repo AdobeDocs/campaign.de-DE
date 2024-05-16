@@ -9,7 +9,7 @@ exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1146'
-ht-degree: 76%
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 76%
 
 Workflows werden grundsätzlich manuell gestartet, Nach dem Starten können sie jedoch inaktiv bleiben, je nachdem, welche Informationen über eine Planung (siehe [Planung](scheduler.md)) oder Aktivitätsplanung angegeben wurden.
 
-Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause usw.) sind **asynchron** Prozesse: Die Bestellung wird aufgezeichnet und wird wirksam, sobald der Server für die Anwendung verfügbar ist.
+Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) are **asynchron** Prozesse: Die Reihenfolge wird aufgezeichnet und wird wirksam, sobald der Server verfügbar ist, um sie anzuwenden.
 
 Anhand der Schaltflächen der Symbolleiste kann die Ausführung des Workflows gesteuert und überwacht werden.
 
@@ -45,7 +45,7 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Anhalten]**
 
-  Diese Aktion stoppt einen derzeit ausgeführten Workflow. Der Status der Instanz ist festgelegt auf **BEENDET**. Vorgänge, die gerade ausgeführt werden, werden nach Möglichkeit angehalten. Importe und SQL-Abfragen werden sofort abgebrochen.
+  Dieser Befehl hält die Ausführung eines laufenden Workflows an. Der Status der Workflow-Instanz wechselt zu **Abgeschlossen**. Laufende Aktionen werden nach Möglichkeit unterbrochen. Gestartete Importe oder SQL-Abfragen werden sofort abgebrochen.
 
   >[!IMPORTANT]
   >
@@ -69,16 +69,16 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Im Simulationsmodus starten]**
 
-  Mit dieser Option können Sie den Workflow im Simulationsmodus und nicht im Echtmodus starten. Wenn Sie diesen Modus aktivieren, werden also nur Aktivitäten ausgeführt, die sich nicht auf die Datenbank oder das Dateisystem auswirken (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die Auswirkungen haben (z. **[!UICONTROL Export]**, **[!UICONTROL importieren]** usw.) sowie die nach ihnen (in derselben Verzweigung) werden nicht ausgeführt.
+  Mit dieser Option können Sie den Workflow im Simulationsmodus starten, nicht im eigentlichen Modus. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die einen Einfluss haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.) sowie die darauf folgenden (im selben Zweig) nicht ausgeführt werden.
 
 * **[!UICONTROL Vorgezogene Ausführung der ausstehenden Aufgaben]**
 
-  Mit dieser Aktion können Sie alle ausstehenden Aufgaben so bald wie möglich starten. Um eine bestimmte Aufgabe zu starten, klicken Sie mit der rechten Maustaste auf ihre Aktivität und wählen Sie **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]**.
+  Dieser Befehl bietet die Möglichkeit, so schnell wie möglich alle ausstehenden Aufgaben zu starten. Wenn Sie eine bestimmte Aufgabe starten möchten, klicken Sie auf die entsprechende Aktivität und wählen Sie **[!UICONTROL Aufgabe(n) jetzt bearbeiten]**.
 
 
 * **[!UICONTROL Als Vorlage speichern]**
 
-  Diese Aktion erstellt eine neue Workflow-Vorlage basierend auf dem ausgewählten Workflow. Sie müssen den Ordner angeben, in dem sie gespeichert werden (in der **[!UICONTROL Ordner]** Feld ).
+  Dieser Befehl erstellt eine neue, auf dem markierten Workflow basierende Workflow-Vorlage. Geben Sie im Feld **[!UICONTROL Ordner]** den gewünschten Speicherordner an.
 
 
 ## Best Practices für die Workflow-Ausführung {#workflow-execution-best-practices}
@@ -87,12 +87,12 @@ Verbessern Sie die Stabilität Ihrer Instanz, indem Sie die folgenden Best Pract
 
 * **Es wird empfohlen, Workflows nicht öfter als alle 15 Minuten auszuführen**, da die Gesamt-Performance des Systems beeinträchtigt werden kann und Blockierungen in der Datenbank entstehen können.
 
-* **Vermeiden Sie es, Ihre Workflows in einem angehaltenen Zustand zu belassen**. Wenn Sie einen temporären Workflow erstellen, stellen Sie sicher, dass er korrekt abgeschlossen werden kann und nicht in einem Workflow verbleibt **[!UICONTROL Angehalten]** Bundesland. Wenn es angehalten wird, bedeutet dies, dass Sie die temporären Tabellen beibehalten müssen und somit die Größe der Datenbank erhöhen. Weisen Sie unter „Workflow-Eigenschaften“ Workflow-Verantwortliche zu, um eine Warnung zu senden, wenn ein Workflow fehlschlägt oder vom System ausgesetzt wird.
+* **Vermeiden Sie es, Ihre Workflows in einem angehaltenen Zustand zu belassen**. Wenn Sie einen temporären Workflow erstellen, stellen Sie sicher, dass er korrekt beendet werden kann und nicht in einem **[!UICONTROL pausierten]** Zustand bleibt. Wenn er pausiert ist, bedeutet dies nämlich, dass Sie die temporären Tabellen beibehalten müssen und somit die Größe der Datenbank erhöhen. Weisen Sie unter „Workflow-Eigenschaften“ Workflow-Verantwortliche zu, um eine Warnung zu senden, wenn ein Workflow fehlschlägt oder vom System ausgesetzt wird.
 
   So vermeiden Sie, dass Workflows ausgesetzt werden:
 
    * Prüfen Sie Ihre Workflows regelmäßig, um sicherzustellen, dass keine unerwarteten Fehler auftreten.
-   * Halten Sie Ihre Workflows so einfach wie möglich, z. B. indem Sie große Workflows in mehrere verschiedene Workflows aufteilen. Sie können Folgendes verwenden **[!UICONTROL Externes Signal]** Aktivitäten führen Trigger zu ihrer Ausführung auf der Grundlage der Ausführung anderer Workflows aus.
+   * Bauen Sie Ihre Workflows möglichst einfach auf, indem Sie beispielsweise große Workflows in mehrere kleine unterteilen. Mit der Aktivität **[!UICONTROL Externes Signal]** können Sie Workflows durch andere Workflows auslösen.
    * Vermeiden Sie es, Aktivitäten mit Flüssen in Ihren Workflows zu deaktivieren, die Threads offen lassen und zu vielen temporären Tabellen führen, die viel Platz verbrauchen können. Behalten Sie in Ihren Workflows keine Aktivitäten im Status **[!UICONTROL Nicht aktivieren]** oder **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
 * **Stoppen von nicht verwendeten Workflows**. Workflows, die weiterhin ausgeführt werden, halten Verbindungen zur Datenbank aufrecht.

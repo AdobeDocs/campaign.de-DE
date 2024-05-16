@@ -8,7 +8,7 @@ exl-id: 58574983-86c7-46f5-b41b-bae90171048d
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 70%
+ht-degree: 76%
 
 ---
 
@@ -26,7 +26,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
    Sie haben folgende Möglichkeiten:
 
-   * Bearbeitet den in der eingehenden Transition angegebenen Versand. Wählen Sie dazu die erste Option aus **[!UICONTROL Versand]** Fensterbereich.
+   * Handelt nach dem in der eingehenden Transition angegebenen Versand. Wählen Sie dazu die erste Option der **[!UICONTROL Versand]** des Fensters.
 
      Diese Option kann verwendet werden, wenn eine vorangehende Workflow-Aktivität bereits den Versand erstellt oder bezeichnet. Dies kann wie in unten stehendem Beispiel durch eine Aktivität des gleichen Typs erfolgen, die eine ausgehende Transition erzeugt.
 
@@ -34,9 +34,9 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
      ![](assets/specified_transition_option_exemple.png)
 
-   * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie dazu die **[!UICONTROL Explizit]** auswählen und den Versand aus der Dropdown-Liste der **[!UICONTROL Versand]** Feld.
+   * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.****
 
-     In der Liste werden noch nicht abgeschlossene Sendungen angezeigt, die in der **Sendungen** Ordner standardmäßig. Um auf andere Kampagnen zuzugreifen, klicken Sie auf die Schaltfläche **[!UICONTROL Link auswählen]** Symbol.
+     Standardmäßig enthält die Liste die im Ordner **Sendungen** gespeicherten Kommunikationen, die noch nicht abgeschlossen sind. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um auf andere Ordner zugreifen zu können.
 
      ![](assets/diffusion_edit_1.png)
 
@@ -50,7 +50,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
      ![](assets/diffusion_edit_3.png)
 
-   * Erstellen Sie einen neuen Versand. Wählen Sie dazu die **[!UICONTROL Neu, basierend auf einer Vorlage erstellt]** und wählen Sie die Versandvorlage aus, auf der der Versand basieren soll.
+   * Erstellen Sie einen neuen Versand. Wählen Sie die gewünschte Versandvorlage aus.****
 
      ![](assets/diffusion_edit_4.png)
 
@@ -77,10 +77,10 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
    Wählen Sie eine der möglichen Optionen aus:
 
    * **[!UICONTROL Speichern]**: Der Versand wird erstellt und gespeichert, jedoch weder analysiert noch abgeschickt.
-   * **[!UICONTROL Schätzen der Zielgruppe]**: Mit dieser Option können Sie die Zielgruppe des Versands berechnen, um sein Potenzial einzuschätzen (erste Analysephase). Diese Aktion entspricht der Auswahl von **[!UICONTROL Schätzen der zu kontaktierenden Population]** Option und Klicken **[!UICONTROL Analysieren]** Beim Senden eines Versands an die Hauptzielgruppe über **Versand**.
-   * **[!UICONTROL Vorbereiten]**: Mit dieser Option können Sie den gesamten Analyseprozess ausführen (Zielgruppenberechnung und Inhaltsvorbereitung). Der Versand wird nicht gesendet. Diese Aktion entspricht der Auswahl von **[!UICONTROL So bald wie möglich versenden]** Option und Klicken **[!UICONTROL Analysieren]** Beim Senden eines Versands an die Hauptzielgruppe mit **Versand**.
-   * **[!UICONTROL Durchführen eines Testversands]**: Mit dieser Option können Sie einen Testversand durchführen. Diese Aktion entspricht einem Klick auf die Schaltfläche **[!UICONTROL Durchführen eines Testversands]** Schaltfläche in der Symbolleiste eines Versands mit **Versand**
-   * **[!UICONTROL Vorbereiten und starten]**: Mit dieser Option wird der vollständige Analyseprozess (Zielgruppenberechnung und Inhaltsvorbereitung) gestartet und der Versand gesendet. Diese Aktion entspricht einem Klick auf **[!UICONTROL So bald wie möglich versenden]**, **[!UICONTROL Analysieren]**, und **[!UICONTROL Versand bestätigen]** Option für den Versand eines Versands an die Hauptzielgruppe mit **Versand**.
+   * **[!UICONTROL Schätzen der Zielgruppe]**: Diese Option ermöglicht die Berechnung der Versandzielgruppe, um ihr Potenzial einzuschätzen (erste Analysephase). Diese Aktion entspricht der Auswahl der **[!UICONTROL Schätzen der Zielpopulation]** Option und Klicken **[!UICONTROL Analyse]** beim Versand an die Hauptzielgruppe über **Versand**.
+   * **[!UICONTROL Vorbereiten]**: Mit dieser Option können Sie den gesamten Analyseprozess ausführen (Zielgruppenberechnung und Inhaltsvorbereitung). Der Versand wird nicht durchgeführt. Diese Aktion entspricht der Auswahl der **[!UICONTROL Sendungen schnellstmöglich abschicken]** Option und Klicken **[!UICONTROL Analyse]** beim Versand an die Hauptzielgruppe mit **Versand**.
+   * **[!UICONTROL Testversand durchführen]**: Dieser Befehl ermöglicht den Versand eines Testversands. Diese Aktion entspricht dem Klicken auf die **[!UICONTROL Testversand durchführen]** in der Symbolleiste eines Versands mit **Versand**
+   * **[!UICONTROL Vorbereiten und Starten]**: Diese Option startet den gesamten Analyseprozess (Zielgruppenberechnung und Inhaltsvorbereitung) und sendet den Versand. Diese Aktion entspricht dem Klicken auf **[!UICONTROL Sendungen schnellstmöglich abschicken]**, **[!UICONTROL Analyse]**, und **[!UICONTROL Versand bestätigen]** Option beim Versand an die Hauptzielgruppe mit **Versand**.
 
    Eine im weiteren Verlauf des Workflows platzierte Aktivität des Typs **[!UICONTROL Versand bearbeiten]** erlaubt die Ausführung der für den Versandstart noch fehlenden Etappen (Zielgruppenberechnung, Inhaltsvorbereitung, Versand). Weitere Informationen hierzu finden Sie unter [Versand bearbeiten](delivery-control.md).
 
@@ -161,7 +161,7 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Dieser Satz von drei Werten identifiziert die Zielgruppe, die aus dem Versand resultiert. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Kennungen der Zielgruppe speichert **[!UICONTROL Schema]** ist das Schema der Population (normalerweise nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
+Anhand der drei Werte lässt sich die durch den Versand ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** der Name der Tabelle, die die Kennungen der Zielgruppe speichert, **[!UICONTROL schema]** ist das Schema der Population (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.
 

@@ -44,7 +44,7 @@ In der Regel werden diese Optionen im Diagramm durch Rechtsklick auf die Aktivit
 
 * **[!UICONTROL Normal]** - die Aufgabe wird ausgeführt.
 * **[!UICONTROL Nicht aktivieren]** - die Aufgabe sowie alle im selben Zweig folgenden Aktivitäten werden nicht ausgeführt.
-* **[!UICONTROL Aktivieren, aber nicht ausführen]**: Diese Aufgabe und alle folgenden Aufgaben (in derselben Verzweigung) werden automatisch angehalten. Dies kann nützlich sein, wenn Sie beim Start der Aufgabe dabei sein möchten. Um die Aufgabe manuell auszuführen, klicken Sie mit der rechten Maustaste auf die Aktivität und wählen Sie **[!UICONTROL Normale Ausführung]**.
+* **[!UICONTROL Aktivieren, aber nicht ausführen]**: Diese Aufgabe und alle folgenden Aufgaben (im selben Zweig) werden automatisch angehalten. Dies kann nützlich sein, wenn Sie beim Starten der Aufgabe dort sein möchten. Klicken Sie mit der rechten Maustaste auf die Aktivität und wählen Sie **[!UICONTROL Normale Ausführung]**.
 
 ## Affinität {#affinity}
 
@@ -53,7 +53,7 @@ Es besteht die Möglichkeit, die Ausführung eines Workflows oder einer Workflow
 
 ## Max. Ausführungsdauer {#max--execution-period}
 
-In diesem Feld können Sie eine Warnung festlegen, wenn die Aufgabe zu lange dauert. Dies wirkt sich nicht auf den Workflow-Vorgang aus. Wenn die Aufgabe nicht bis zum Ende der Aufgabe abgeschlossen ist **[!UICONTROL Max. Ausführungszeitraum]** ist vorbei, **[!UICONTROL Instanz-Monitoring]** Auf der Seite wird eine Warnung für diesen Workflow angezeigt. Der Zugriff auf diese Seite erfolgt über **[!UICONTROL Überwachung]** Registerkarte der Startseite.
+In diesem Feld können Sie eine Warnung einrichten, wenn die Aufgabe zu lange dauert. Dies wirkt sich nicht auf den Workflow-Vorgang aus. Wenn die Aufgabe nicht zum Zeitpunkt der **[!UICONTROL Max. Ausführungsdauer]** ist vorbei, die **[!UICONTROL Instanzenüberwachung]** -Seite wird eine Warnung für diesen Workflow angezeigt. Auf diese Seite kann über das **[!UICONTROL Überwachung]** auf der Startseite.
 
 ## Verhalten {#behavior}
 

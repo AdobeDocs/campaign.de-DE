@@ -46,7 +46,7 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
   Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
 
-Die Zieldaten werden bei Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie können den Workflow so konfigurieren, dass alle Arbeitstabellen weiterhin zugänglich sind: Aktivieren Sie die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** in den Workflow-Eigenschaften.
+Die Zielgruppendaten werden bei Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie können den Workflow so konfigurieren, dass alle Arbeitstabellen zugänglich bleiben: Überprüfen Sie die **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population beibehalten]** in den Workflow-Eigenschaften.
 
 ![](assets/wf-purge-data-option.png)
 
@@ -99,7 +99,7 @@ Im folgenden Beispiel sollen Kundeninformationen in einer Liste gesammelt und da
 
    >[!CAUTION]
    >
-   >Zur Personalisierung des Versands dürfen nur die in der Transition enthaltenen Daten verwendet werden. **targetData** Personalisierungsfelder vom Typ sind nur für die eingehende Population des s verfügbar **[!UICONTROL Versand]** Aktivität.
+   >Nur die in der Transition enthaltenen Daten können zur Personalisierung des Versands verwendet werden. **targetData** Personalisierungsfelder sind nur für die Eingangspopulation der **[!UICONTROL Versand]** -Aktivität.
 
 1. Verwenden Sie in der Versandvorlage die im Workflow gesammelten Daten.
 

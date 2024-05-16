@@ -8,7 +8,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: b4f54deaf35c852012a88d1445268bce9be4e8c1
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -22,23 +22,23 @@ Außerdem sollten Sie als Kunde bzw. Kundin sicherstellen, dass Sie die neuesten
 
 ## Version 8.7.1 {#release-8-7-1}
 
-_Freitag, 2. Mai 2024_
+_2. Mai 2024_
 
 >[!AVAILABILITY]
 >
->Diese Version befindet sich in **Eingeschränkte Verfügbarkeit** (LA). Dies ist auf Kunden beschränkt, die migrieren **von Adobe Campaign Standard nach Adobe Campaign v8** und können nicht in einer anderen Umgebung bereitgestellt werden.
+>Diese Version ist nur **eingeschränkt verfügbar**. Sie ist Kundinnen und Kunden vorbehalten, die **von Adobe Campaign Standard zu Adobe Campaign v8** migrieren, und kann nicht in anderen Umgebungen bereitgestellt werden.
 >
->Campaign Standard, die auf Campaign v8 umsteigen, finden Informationen unter [Umstellung der Campaign Standard auf Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/release-notes/acs-migration) und [Funktionen für Campaign Standard](https://experienceleague.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html).
+>Benutzende von Campaign Standard, die auf Campaign v8 umsteigen, finden Informationen unter [Wechsel von Campaign Standard zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/release-notes/acs-migration) und [Funktionen für Campaign Standard-Benutzende](https://experienceleague.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html?lang=de).
 
 ### Neue Funktionen {#new-8-7-1}
 
-* **Vorlagen für Rich-Push-Benachrichtigungen** - Sie können jetzt Rich-Push-Benachrichtigungen über Android senden. Rich-Push-Benachrichtigungen sind eine erweiterte Form von Mobile-Benachrichtigungen, die über einfache Textnachrichten hinausgehen und Multimedia-Elemente wie Bilder, interaktive Schaltflächen oder andere Rich-Media-Inhalte enthalten. [Weitere Informationen](../send/rich-push.md)
+* **Vorlagen für Rich-Push-Benachrichtigungen**: Sie können jetzt Rich-Push-Benachrichtigungen über Android senden. Rich-Push-Benachrichtigungen sind eine erweiterte Form von Benachrichtigungen an Mobilgeräte, die über einfache Textnachrichten hinausgehen und Multimedia-Elemente wie Bilder, interaktive Schaltflächen oder andere Rich-Media-Inhalte enthalten. [Weitere Informationen](../send/rich-push.md)
 
-* **Branding** - Als Campaign Standard migrierte Benutzer können Ihre technischen Administratoren jetzt eine oder mehrere Marken definieren, um die Parameter zu zentralisieren, die sich auf die Markenidentität auswirken. das Logo der Marke, die Domain der Zugangs-URL zu den Landingpages, Einstellungen zum Nachrichten-Tracking. Sie können diese Marken erstellen und mit Nachrichten oder Landingpages verknüpfen. Diese Konfiguration wird in Vorlagen verwaltet. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html)
+* **Branding**: Wenn Sie von Campaign Standard migriert sind, können Ihre technischen Admins nun eine oder mehrere Marken definieren, um die Parameter zu zentralisieren, die sich auf die Markenidentität auswirken, z. B. das Logo der Marke, die Domain der Zugangs-URL zu den Landingpages, Einstellungen zum Nachrichten-Tracking. Sie können diese Marken erstellen und mit verschiedenen Nachrichten oder Landingpages verknüpfen. Diese Konfiguration wird in Vorlagen verwaltet. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=de)
 
-* **Rest-APIs** - Als Campaign Standard migrierter Benutzer können Sie REST-APIs verwenden, um Integrationen für Adobe Campaign zu erstellen und Ihr eigenes Ökosystem zu erstellen, indem Sie Adobe Campaign mit dem von Ihnen verwendeten Technologiebereich verbinden. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html)
+* **Rest-APIs**: Wenn Sie von Campaign Standard migriert sind, können Sie REST-APIs verwenden, um Integrationen für Adobe Campaign zu erstellen und Ihr eigenes Ökosystem zu erstellen, indem Sie Adobe Campaign mit den von Ihnen verwendeten Technologien verbinden. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html?lang=de)
 
-* **Dynamische Berichterstellung** - Als Campaign Standard migrierter Benutzer können Sie auf die dynamische Berichterstellung zugreifen, die vollständig anpassbare und in Echtzeit aktualisierte Berichte zur Messung der Wirkung Ihrer Marketingaktivitäten bietet. Durch sie kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Stadt und Alter sowie nach Daten von E-Mail-Kampagnen wie Öffnungen und Klicks ermöglicht. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html)
+* **Dynamisches Reporting**: Wenn Sie von Campaign Standard migriert sind, können Sie auf das dynamische Reporting zugreifen, das vollständig anpassbare und in Echtzeit aktualisierte Berichte zum Messen der Wirkung Ihrer Marketing-Aktivitäten bietet. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Stadt und Alter sowie nach Daten von E-Mail-Kampagnen wie Öffnungen und Klicks ermöglicht. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=de)
 
 <!--
 * **New Enhanced security add-on**: To make your network connection more secure and provide improved security for your resources, Adobe Campaign offers a new Enhanced security add-on, which includes two features: Secure CMK integration and Secure VPN tunneling.
@@ -50,13 +50,14 @@ Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Ac
 
 ### Allgemeine Verbesserungen {#improvements-8-7-1}
 
-* Mehrere Schemata wurden von 32 auf 64 Bit geändert. Dies gilt nur für Kunden, die von Campaign Standard migrieren. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html)
+* Mehrere Schemata wurden von 32 auf 64 Bit geändert. Dies betrifft nur Kundinnen und Kunden, die von Campaign Standard migrieren. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=de)
 
-* In Campaign-Tabellen können Sie mit einer neuen Markierung Änderungen an den Attributen lastModified, created und createdBy-id vornehmen. Wenn das Flag aktiviert ist, werden die Werte ignoriert, die von Benutzern für diese Attribute bereitgestellt werden. Es werden nur die Server-Zeit und die ID aus dem Benutzerkontext verwendet. Wenn das Flag deaktiviert ist, werden benutzerdefinierte Werte für diese Attribute verwendet. Das Flag ignoreTimestampsID befindet sich in der Datei serverConf.xml unter dem Knoten &quot;shared&quot;.
+* In Campaign-Tabellen können Sie mit einem neuen Flag Änderungen an den Attributen „lastModified“, „created“ und „createdBy-id“ vornehmen. Wenn das Flag aktiviert ist, werden die Werte ignoriert, die von Benutzenden für diese Attribute bereitgestellt werden. Es werden nur die Server-Zeit und die ID aus dem Benutzerkontext verwendet. Wenn das Flag deaktiviert ist, werden benutzerdefinierte Werte für diese Attribute verwendet. Das Flag „ignoreTimestampsID“ befindet sich in der Datei „serverConf.xml“ unter dem Knoten „Freigegeben“.
 
 ### Fehlerbehebungen {#fixes-8-7-1}
 
-Die folgenden Probleme wurden in dieser Version behoben: NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704 NEO-68192, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-641 99, NEO-63706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-5 8596, NEO-58314, NEO-58004, NEO-40054
+Folgende Probleme wurden in dieser Version behoben:
+NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-68192, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-63706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, NEO-58314, NEO-58004, NEO-40054
 
 ## Version 8.6.2 {#release-8-6-2}
 

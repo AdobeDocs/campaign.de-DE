@@ -23,7 +23,7 @@ Interaction arbeitet mit zwei Angebotsumgebungstypen:
 
 ![](assets/offer_environments_overview_001.png)
 
-Jeder **[!UICONTROL Design]** Umgebung ist mit einer verknüpft **[!UICONTROL LIVE]** Umgebung. Wenn ein Angebot abgeschlossen ist, werden sein Inhalt und seine Eignungsregeln einem Validierungszyklus unterzogen. Sobald dieser Zyklus abgeschlossen ist, wird das betreffende Angebot automatisch in der **[!UICONTROL LIVE]** Umgebung. Von diesem Moment an ist es für die Lieferung verfügbar.
+Jeder **[!UICONTROL Design]** -Umgebung mit einer **[!UICONTROL Live]** Umgebung. Nach Abschluss eines Angebots werden Inhalt und Eignungsregeln einem Validierungszyklus unterzogen. Sobald dieser Zyklus abgeschlossen ist, wird das betreffende Angebot automatisch für die **[!UICONTROL Live]** Umgebung. Ab diesem Zeitpunkt ist es für den Versand verfügbar.
 
 Standardmäßig verfügt Campaign über eine **[!UICONTROL Design]**-Umgebung und eine **[!UICONTROL Live]**-Umgebung, die mit der Design-Umgebung verknüpft ist. Beide Umgebungen sind für die [integrierte Empfängertabelle](../dev/datamodel.md#ootb-profiles) vorkonfiguriert.
 

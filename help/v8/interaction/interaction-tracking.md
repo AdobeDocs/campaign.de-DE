@@ -52,4 +52,4 @@ Die Statistiken gliedern sich nach drei Merkmalen:
 
   ![](assets/offer_report_perdeliveries.png)
 
-Die Daten können anhand der verschiedenen Kriterien gefiltert werden, die im oberen Abschnitt des Berichts verfügbar sind. Nachdem Sie die gewünschten Kriterien ausgewählt haben, klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]** Link, um sie auf den Bericht anzuwenden.
+Die Daten können nach den verschiedenen Kriterien im oberen Bereich des Berichts gefiltert werden. Klicken Sie nach Auswahl der gewünschten Kriterien auf die **[!UICONTROL Aktualisieren]** -Link, um sie auf den Bericht anzuwenden.

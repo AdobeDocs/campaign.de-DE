@@ -22,7 +22,7 @@ Bei der Erstellung einer anonymen Umgebung mithilfe des Assistenten ist im Tab *
 
 Die **[!UICONTROL Zielgruppendimension]** wird vorausgefüllt und verweist standardmäßig auf die Besuchertabelle.
 
-Die **[!UICONTROL Besucherordner]** Das Feld wird angezeigt. Er wird automatisch ausgefüllt, um eine Verknüpfung mit dem **[!UICONTROL Besucher]** Ordner. In diesem Feld können Sie auswählen, wo Besucherprofile gespeichert werden sollen.
+Die **[!UICONTROL Besucherordner]** angezeigt. Es wird automatisch abgeschlossen, um eine Verknüpfung zum **[!UICONTROL Besucher]** Ordner. In diesem Feld können Sie auswählen, wo Besucherprofile gespeichert werden sollen.
 
 ![](assets/anonymous_environment_option.png)
 

@@ -8,7 +8,7 @@ exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
 source-git-commit: a78019d11a0a2acbd8c0d9ba7c2082c09f90356c
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -131,4 +131,4 @@ Richtlinien zur Instanzüberwachung finden Sie in der [Dokumentation zu Campaign
 
 Verwenden Sie die Selbstbedienungsoberfläche des Audit-Protokolls, um die in Ihrer Instanz vorgenommenen Änderungen zu überwachen. Das Audit-Protokoll erfasst in Echtzeit eine umfassende Liste von Aktionen und Ereignissen, die in Ihrer Adobe Campaign-Instanz auftreten. Sie können auf einen Datenverlauf zugreifen, um zum Beispiel folgende Fragen zu beantworten: Was ist mit Ihren Workflows geschehen und wer hat sie zuletzt aktualisiert? Was haben Ihre Anwender in der Instanz getan?
 
-Weitere Informationen zum Audit-Protokoll finden Sie in diesem [page](../reporting/audit-trail.md){target="_blank"}
+Weitere Informationen zum Audit-Protokoll finden Sie auf dieser [Seite](../reporting/audit-trail.md){target="_blank"}.

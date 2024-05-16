@@ -166,7 +166,7 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen notwendig:
 
 * Geben Sie den **Titel** der Vorlage ein: Der Titel ist obligatorisch und wird als Standardbtitel für alle auf dieser Vorlage basierenden Kampagnen verwendet.
-* Auswählen der Kampagne **Wesen** aus der Dropdown-Liste aus. Die in dieser Liste verfügbaren Werte sind die in der **[!UICONTROL natureOp]** Auflistung.
+* Kampagnen auswählen **Natur** aus der Dropdown-Liste. Die in dieser Liste verfügbaren Werte sind die in der **[!UICONTROL natureOp]** -Auflistung.
 
 Auf [dieser Seite](../../v8/config/ui-settings.md#enumerations) erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und sie konfigurieren können.
 

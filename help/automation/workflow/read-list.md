@@ -8,7 +8,7 @@ exl-id: 91c87f8f-bdd2-4ca1-94c2-ec9e7affc1a0
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 80%
+ht-degree: 85%
 
 ---
 
@@ -34,7 +34,7 @@ Nach erfolgter Konfiguration der Liste können Sie über die Option **[!UICONTRO
 >
 >Um in einer Liste-lesen-Aktivität Filter verwenden zu können, muss die Liste als Datei vorliegen.
 
-Die Listen können über die direkt in Adobe Campaign erstellt werden. **[!UICONTROL Profile und Zielgruppen > Listen]** Link der Startseite. Sie können auch in einem Workflow erstellt werden, indem Sie die Variable **[!UICONTROL Listen-Update]** Aktivität.
+Die Listen können direkt in Adobe Campaign über die **[!UICONTROL Profile und Zielgruppen > Listen]** -Link der Startseite. Sie können auch in einem Workflow mit der **[!UICONTROL Listen-Update]** -Aktivität.
 
 **Anwendungsbeispiel: Ausschluss einer Adressenliste von einem Versand**
 
@@ -56,13 +56,13 @@ Die im **Premiumkunden**-Ordner enthaltenen Profile sollen im Rahmen einer Marke
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
-   Ausschlussregeln werden im mittleren Bereich des Bearbeitungswerkzeugs konfiguriert. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** Schaltfläche zum Definieren der Art des anzuwendenden Ausschlusses.
+   Die Ausschlussregeln werden im mittleren Bereich des Fensters konfiguriert. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um den Ausschlusstyp zu definieren.
 
    Sie können für jede in die Aktivität eingehende Transition einen Ausschluss definieren.
 
 1. Wählen Sie im Feld **[!UICONTROL Ausschlussmenge]** die Aktivität **[!UICONTROL Liste lesen]** aus. Die von dieser Aktivität übermittelten Daten werden somit von der Hauptmenge ausgeschlossen.
 
-   In unserem Beispiel haben wir einen Ausschluss bei Joins: Die in der Liste enthaltenen Daten werden mit den Daten des Hauptsatzes über das Feld, das die E-Mail-Adresse enthält, abgeglichen. Um den Join zu konfigurieren, wählen Sie aus **[!UICONTROL Joins]** in der **[!UICONTROL Dimensionsänderung]** Feld.
+   Im vorliegenden Beispiel handelt es sich um einen Ausschluss von Joins: Die in der Liste enthaltenen Daten werden über das die E-Mail-Adresse enthaltende Feld mit den Daten der Hauptmenge abgestimmt. Um den Join zu konfigurieren, wählen Sie **[!UICONTROL Joins]** im **[!UICONTROL Dimensionsänderung]** -Feld.
 
    ![](assets/s_advuser_list_read_sample_4.png)
 

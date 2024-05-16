@@ -8,7 +8,7 @@ exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Definieren Sie auf der Registerkarte **[!UICONTROL Inhalt]** den Angebotsinhalt.
 
 1. Legen Sie die verschiedenen Parameter für den Angebotsinhalt fest:
 
-   * **[!UICONTROL Anrede]** : Geben Sie den Titel an, der in Ihrem Angebot angezeigt werden soll. Warnung: Dies bezieht sich nicht auf die Beschriftung des Angebots, die in der **[!UICONTROL Allgemein]** Tabulator.
+   * **[!UICONTROL Titel]** : Geben Sie den Titel an, der in Ihrem Angebot angezeigt werden soll. Warnung: Hierbei handelt es sich nicht um den Titel des Angebots, der in der Registerkarte **[!UICONTROL Allgemein]** definiert ist.
    * **[!UICONTROL Ziel-URL]**: Geben Sie die URL Ihres Angebots an. Sie muss zwingend mit &quot;http://&quot; oder &quot;https://&quot; beginnen.
    * **[!UICONTROL Bild-URL]**: Geben Sie die URL oder einen Zugangspfad für das Bild Ihres Angebots an.
    * **[!UICONTROL HTML-Inhalt]**/**[!UICONTROL Textinhalt]**: Geben Sie den Body Ihres Angebots in den Tab Ihrer Wahl ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise erzeugt ein `<table>`-Element auf der HTML-Seite Folgendes:
@@ -196,4 +196,4 @@ Mithilfe des Moduls **Simulation** können Sie die Verteilung der Angebote einer
 
 Bei der Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die bisher für Angebote und deren Unterbreitungsregeln galten. Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
 
-Weitere Informationen zur Angebotssimulation finden Sie unter [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=de){target="_blank"}.
+Weitere Informationen zur Angebotssimulation finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=de){target="_blank"}.

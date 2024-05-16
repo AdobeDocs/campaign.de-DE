@@ -8,7 +8,7 @@ exl-id: c2336507-beea-4ddb-aa8c-1ec591eb5683
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Um eine Nachricht zu beantworten, klicken Sie auf den E-Mail-Text und melden Sie
 
 * Wenn Sie sich von einem Forum abmelden möchten, klicken Sie auf die Schaltfläche **[!UICONTROL Abmelden]** in dem blauen Band.
 
-* Ihr persönliches Dashboard listet die Foren auf, die Sie abonniert haben. Klicken Sie auf die Schaltfläche **[!UICONTROL Abonnement für Diskussionsforen]** Link zum Anzeigen der Liste und klicken Sie dann auf das Element, das Sie interessiert, um auf sein Forum zuzugreifen.
+* In Ihrem persönlichen Dashboard werden die von Ihnen abonnierten Foren aufgelistet. Klicken Sie auf den Link **[!UICONTROL Forum-Abonnements]**, um die Liste anzuzeigen, und anschließend auf das Forum, auf das Sie zugreifen möchten.
 
   ![](assets/forum-subscribed.png)
 
@@ -78,4 +78,4 @@ Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, 
    * Gehen Sie von der Adobe Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
    * Gehen Sie im Campaign-Explorer zu **[!UICONTROL Administration > Produktion > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
 
-  In der **[!UICONTROL Benachrichtigungen zu Diskussionsforen]** die Versandlogs in der Datei **[!UICONTROL Bearbeiten > Versand]** Tabulator. Sie können auch Folgendes anzeigen **[!UICONTROL Tracking > Protokoll]** und die **[!UICONTROL Ausschlussgründe]** Registerkarten.
+  Im Fenster **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]** befinden sich die Versandlogs im Tab **[!UICONTROL Bearbeiten > Versand]**. Überprüfen Sie ebenfalls die Tabs **[!UICONTROL Verfolgung > Protokoll]** und **[!UICONTROL Ausschlussgründe]**.

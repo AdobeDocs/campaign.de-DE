@@ -8,7 +8,7 @@ exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -108,7 +108,7 @@ Wählen Sie die Auflistung aus der Dropdown-Liste aus. Beachten Sie, dass diese 
 
 ![](assets/cube-dimension-with-enum.png)
 
-Nur die Werte in der Auflistung werden angezeigt. Die anderen werden unter dem in der **[!UICONTROL Titel der anderen Werte]** Feld.
+Nur die in der Auflistung vorhandenen Werte werden angezeigt. Alle anderen werden unter einem Titel zusammengefasst, den Sie im Feld **[!UICONTROL Titel der anderen Werte]** definieren können.
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](customize-cubes.md#dynamically-manage-bins).
 

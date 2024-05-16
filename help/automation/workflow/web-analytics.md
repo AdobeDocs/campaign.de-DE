@@ -6,7 +6,7 @@ feature: Workflows, Analytics Integration
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 81%
+ht-degree: 90%
 
 ---
 
@@ -32,7 +32,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Web-Analytics-Con
   <tr> 
    <td> <span class="uicontrol">Identifizierung der konvertierten Kontakte</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Dieser Workflow indiziert Website-Besuchende, die ihren Kauf nach einer Remarketing-Kampagne abgeschlossen haben. Die durch diesen Workflow abgerufenen Daten sind verfügbar unter <span class="uicontrol">Bericht zur Remarketing-Effizienz</span> (siehe hier ). <br /> </td> 
+   <td> Dieser Workflow indexiert die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Auf die mithilfe dieses Workflows abgerufenen Daten kann im Abschnitt <span class="uicontrol">Bericht zur Remarketing-Effizienz</span> (Siehe hierzu ). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ereignislöschung</span> <br /> </td> 

@@ -8,7 +8,7 @@ exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
 source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
 workflow-type: tm+mt
 source-wordcount: '1387'
-ht-degree: 83%
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ Bestimmen Sie zu Beginn der Workflow-Erstellung Workflow-Verantwortliche. Diese 
 
 Überprüfen Sie regelmäßig den Tab **[!UICONTROL Monitoring]**, um den Gesamtstatus der aktiven Workflows anzuzeigen. Weitere Informationen hierzu finden Sie unter [Instanz-Monitoring](monitor-workflow-execution.md#instance-supervision).
 
-Mit der Workflow-Heatmap können Adobe Campaign-Plattformadministratoren die Auslastung der Instanz überwachen und Workflows entsprechend planen. Weitere Informationen hierzu finden Sie unter [Workflow-Überwachung](heatmap.md).
+Die Workflow-Heatmap ermöglicht den Administratoren der Adobe Campaign-Plattform, die Auslastung der Instanz zu überwachen und Workflows entsprechend zu planen. Weitere Informationen dazu finden Sie unter [Workflow-Monitoring](heatmap.md).
 
 ## Aktivitäten {#using-activities}
 
@@ -72,11 +72,11 @@ Mit der Workflow-Heatmap können Adobe Campaign-Plattformadministratoren die Aus
 
 Bei der Entwicklung Ihres Workflows erhalten alle Aktivitäten sowie alle Adobe Campaign-Objekte einen Namen. Diese Namen werden zwar vom Tool erstellt, wir empfehlen jedoch, sie bei der Konfiguration zu ändern. Geschieht dies erst zu einem späteren Zeitpunkt, besteht die Gefahr, dass der Workflow durch Aktivitäten mit Namen einer anderen früheren Aktivität unterbrochen wird. Deshalb wäre eine nachträgliche Aktualisierung der Namen eine schwierige Aufgabe.
 
-Den Aktivitätsnamen finden Sie in der **[!UICONTROL Erweitert]** Tabulator. Lasst sie nicht beim Namen **[!UICONTROL Abfrage]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, aber geben Sie ihnen explizite Namen wie **[!UICONTROL querySubscribedRecipients]**. Dieser Name wird im Protokoll und ggf. in den SQL-Protokollen angezeigt. Dies hilft beim Debugging des Workflows bei der Konfiguration.
+Der Aktivitätsname ist im Tab **[!UICONTROL Erweitert]** verfügbar. Belassen Sie sie nicht wie folgt: **[!UICONTROL Abfrage]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, aber geben Sie ihnen explizite Namen wie **[!UICONTROL querySubscribedRecipients]**. Dieser Name wird im Protokoll angezeigt und gegebenenfalls auch in den SQL-Logs, was Ihnen hilft, bei der Konfiguration des Workflows Fehler zu beheben.
 
 ### Erste und letzte Aktivitäten {#first-and-last-activities}
 
-* Starten Sie Ihren Workflow immer mit einem **[!UICONTROL Starten]** Aktivität oder eine **[!UICONTROL Scheduler]** Aktivität. Bei Bedarf können Sie auch eine **[!UICONTROL Externes Signal]** Aktivität.
+* Beginnen Sie Ihren Workflow stets mit der Aktivität **[!UICONTROL Beginn]** oder **[!UICONTROL Planung]**. Bei Bedarf können Sie auch die Aktivität **[!UICONTROL Externes Signal]** hinzufügen.
 * Pro Workflow-Verzweigung darf nur eine einzige **** Planung verwendet werden. Wenn dieselbe Verzweigung eines Workflows mehrere Planungen enthält, die miteinander verknüpft sind, steigt die Anzahl der auszuführenden Aufgaben exponentiell an, wodurch die Datenbank überlastet würde. Diese Regel gilt auch für alle Aktivitäten mit einem Tab **[!UICONTROL Planung &amp; Verlauf]**. Weitere Informationen zur [Planung](scheduler.md).
 
   ![](assets/wf-scheduler.png)
@@ -85,13 +85,13 @@ Den Aktivitätsnamen finden Sie in der **[!UICONTROL Erweitert]** Tabulator. Las
 
 ### JavaScript innerhalb einer Aktivität {#javascript-within-an-activity}
 
-Bei der Initialisierung einer Workflow-Aktivität empfiehlt es sich, JavaScript hinzuzufügen. Dies kann in der Datei einer Aktivität erfolgen. **[!UICONTROL Erweitert]** Registerkarte der Aktivität.
+Sie können bei der Initialisierung einer Workflow-Aktivität JavaScript hinzufügen. Dies kann in der Aktivität **[!UICONTROL Erweitert]** der Aktivität.
 
 Um den Workflow leichter erkennbar zu machen, empfehlen wir, am Anfang und Ende des Titels der Aktivität doppelte Bindestriche zu setzen, z. B.: -- Mein Titel --.
 
 ### Signal {#signal}
 
-Meistens weiß man nicht, woher das Signal kommt. Um dieses Problem zu vermeiden, verwenden Sie die **[!UICONTROL Kommentar]** Feld innerhalb der **[!UICONTROL Erweitert]** Registerkarte der Signalaktivität, um den erwarteten Ursprung eines Signals für diese Aktivität zu dokumentieren.
+Meistens ist nicht bekannt, wo das Signal ausgelöst wurde. Um dies zu vermeiden, notieren Sie im Tab **[!UICONTROL Erweitert]** der Signalaktivität im Feld **[!UICONTROL Kommentar]** den erwarteten Auslöser eines Signals für diese Aktivität.
 
 ## Workflow-Aktualisierungen {#workflow-update}
 
@@ -113,7 +113,7 @@ Die Option **Zwischen zwei Ausführungen die ermittelte Population festhalten** 
 
 Diese Option ist auf der Registerkarte **[!UICONTROL Allgemein]** der Workflow-Eigenschaften verfügbar und kann für Entwicklungs- und Testzwecke verwendet werden, um Daten zu überwachen und Ergebnisse zu überprüfen. Sie können diese Option in Entwicklungsumgebungen verwenden, sollten sie aber nie in Produktionsumgebungen verwenden. Die Beibehaltung temporärer Tabellen könnte dazu führen, dass die Größe der Datenbank erheblich zunimmt und letztendlich die Größenbeschränkung erreicht wird. Außerdem wird dadurch das Backup verlangsamt.
 
-Nur die Arbeitstabellen der letzten Ausführung des Workflows werden beibehalten. Arbeitstabellen früherer Ausführungen werden vom Bereinigt **[!UICONTROL Bereinigung]** -Workflow, der täglich ausgeführt wird.
+Nur die Arbeitstabellen der letzten Ausführung des Workflows werden aufbewahrt. Arbeitstabellen früherer Ausführungen werden durch den täglich durchgeführten **[!UICONTROL Bereinigungs]**-Workflow bereinigt.
 
 >[!CAUTION]
 >
@@ -124,7 +124,7 @@ Nur die Arbeitstabellen der letzten Ausführung des Workflows werden beibehalten
 
 Die Option **SQL-Abfragen im Protokoll speichern** ist auf der Registerkarte **[!UICONTROL Ausführung]** der Workflow-Eigenschaften verfügbar. Diese Option protokolliert alle SQL-Abfragen aus den verschiedenen Aktivitäten und zeigt an, was von der Plattform tatsächlich ausgeführt wird. Diese Option sollte jedoch nur **vorübergehend** während der Entwicklung verwendet und **nicht in der Produktion aktiviert werden**.
 
-Es empfiehlt sich, die Protokolle zu entfernen, wenn sie nicht mehr benötigt werden. Workflow-Verläufe werden nicht automatisch bereinigt: Alle Nachrichten werden standardmäßig beibehalten. Der Verlauf kann über die **[!UICONTROL Datei > Aktionen]** oder durch Klicken auf die Schaltfläche Aktionen in der Symbolleiste oberhalb der Liste. Wählen Sie Bereinigungsverlauf aus.
+Es empfiehlt sich, die Protokolle zu entfernen, wenn sie nicht mehr benötigt werden. Workflow-Verläufe werden nicht automatisch bereinigt: Alle Nachrichten werden standardmäßig beibehalten. Gehen Sie zur Bereinigung zu **[!UICONTROL Datei > Aktionen]** oder klicken Sie in der Symbolleiste oberhalb der Workflow-Liste auf die Schaltfläche „Aktionen“. Wählen Sie die Option „Verlauf bereinigen“ aus.
 Informationen zum Bereinigen der Logs finden Sie in dieser [Dokumentation](start-a-workflow.md).
 
 ### Workflow-Planung {#workflow-planning}

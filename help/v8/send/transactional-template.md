@@ -8,7 +8,7 @@ exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
 source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
 workflow-type: tm+mt
 source-wordcount: '1231'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -66,13 +66,13 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. Füllen Sie das Tag mit der folgenden Syntax aus: **Elementname**.@**Attributname** wie unten dargestellt.
+1. Ergänzen Sie das Feld unter Einhaltung folgender Syntax: **Elementname**.@**Attributname**. Beispiel:
 
    ![](assets/messagecenter_create_custo_2.png)
 
 ## Testen der Transaktionsnachrichtenvorlage {#test-message-template}
 
-### Testadressen hinzufügen{#add-seeds}
+### Hinzufügen von Testadressen{#add-seeds}
 
 Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen Testversand senden und die Personalisierung der Nachricht testen, bevor Sie die Nachricht senden. Testadressen sind mit dem Versand verknüpft und können nicht für andere Sendungen verwendet werden.
 

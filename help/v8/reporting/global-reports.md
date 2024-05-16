@@ -7,7 +7,7 @@ exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1880'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -41,17 +41,17 @@ Klicken Sie zur Anzeige eines Berichts auf seinen Namen. Standardmäßig stehen 
 
 ## Versanddurchsatz {#delivery-throughput}
 
-Dieser Bericht enthält Informationen zum Datendurchsatz der Sendungen in Bezug auf die gesamte Plattform für einen bestimmten Zeitraum. Zur Messung der Versandgeschwindigkeit von Nachrichten werden zwei Kennzahlen herangezogen: Anzahl an gesendeten Nachrichten pro Stunde und die gesendete Datenmenge in Bits pro Sekunde. Die unten stehende Grafik zeigt in Blau die Anzahl der erfolgreich versandten und in Orange die Anzahl der fehlgeschlagenen Nachrichten.
+Dieser Bericht enthält Informationen zum Datendurchsatz der Sendungen in Bezug auf die gesamte Plattform für einen bestimmten Zeitraum. Zur Messung der Versandgeschwindigkeit von Nachrichten werden zwei Kennzahlen herangezogen: Anzahl der gesendeten Nachrichten pro Stunde und die gesendete Datenmenge in Bits pro Sekunde. Die unten stehende Grafik zeigt in Blau die Anzahl der erfolgreich gesendeten und in Orange die Anzahl der fehlgeschlagenen Nachrichten.
 
 ![](assets/report-toolbar.png)
 
-Sie können die angezeigten Werte konfigurieren, indem Sie die Zeitskala ändern: 1-Stunden-Ansicht, 3-Stunden-Ansicht, 24-Stunden-Ansicht usw. Klick **[!UICONTROL Aktualisieren]** , um Ihre Auswahl zu bestätigen.
+Sie können die Anzeige durch Ändern des Parameters (z. B. 1 Stunde, 3 Stunden, 24 Stunden) variieren. Klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
 
 >[!NOTE]
 >
->Sie können auch die Anzahl der pro Stunde gesendeten Sendungen mithilfe der [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de){target="_blank"}.
+>Sie können die Anzahl der pro Stunde gesendeten Sendungen auch mithilfe des [Control Panels](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de) überwachen{target="_blank"}.
 >
->Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie unter [Diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
+>Das Control Panel steht allen Admins zur Verfügung. Die Schritte, um Benutzenden Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
 >
 
 ## Nutzer-Aktivitäten {#user-activities}
@@ -61,7 +61,7 @@ Dieser Bericht zeigt Öffnungen, Klicks und Transaktionen in Form eines Diagramm
 Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Öffnungen]**: Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht berücksichtigt. [Weitere Informationen](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Klicks]** : Gesamtzahl der Klicks auf Links in Sendungen. Klicks auf Abmelde-Links und Mirrorseiten werden nicht berücksichtigt.
+* **[!UICONTROL Klicks]**: Gesamtzahl der Klicks auf Links in Sendungen. Klicks auf Abmeldungs-Links und Mirrorseiten werden nicht berücksichtigt.
 <!--
 * **[!UICONTROL Transactions]** : Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -76,7 +76,7 @@ Die **[!UICONTROL Anzahl verarbeiteter Nachrichten]** entspricht der Gesamtzahl 
 
 >[!NOTE]
 >
->Die in diesem Bericht angezeigten Fehler lösen einen Quarantäneprozess aus. Weitere Informationen zur Quarantäneverwaltung finden Sie unter [Quarantäneverwaltung](../send/quarantines.md).
+>Die in diesem Bericht angezeigten Fehler lösen einen Quarantäneprozess aus. Weiterführende Informationen zur Quarantäneverwaltung finden Sie im Abschnitt [Quarantäneverwaltung](../send/quarantines.md).
 
 Der erste Teil des Berichts zeigt die Verteilung der fehlgeschlagenen Nachrichten nach Typ in Form einer Tabelle und eines Diagramms.
 
@@ -118,7 +118,7 @@ Jede Zeile der Datentabelle kann durch Klick auf das Symbol ]+[ ausgeklappt werd
 
 >[!NOTE]
 >
->Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie die **[!UICONTROL Versandlogs (broadLogRcp)]** Cube. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md). Die **[!UICONTROL Sonstige]** Die Kategorie enthält Domain-Namen, die nicht zu einer bestimmten Klasse gehören.
+>Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie den Cube **[!UICONTROL Versandlogs (broadlogrcp)]**. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md). Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die nicht zu einer bestimmten Klasse gehören.
 
 ## Browser {#browsers}
 
@@ -249,11 +249,11 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 
 ## Abonnement-Verfolgung {#subscription-tracking}
 
-Dieser Bericht enthält Informationen bezüglich der Informationsdienst-Abonnements. An- und Abmeldungen werden im Detail beleuchtet.
+Mit diesem Bericht können Sie die Abonnements von Informationsdiensten überwachen. Er zeigt Abonnements und Abbestellungen an.
 
 ![](assets/service-report.png)
 
-Er kann für ein Abonnement angezeigt werden, indem Sie auf die Schaltfläche **[!UICONTROL Profile und Zielgruppen > Services und Abonnements]** Knoten der Startseite oder des Explorers. Wählen Sie das gewünschte Abonnement aus und klicken Sie dann auf die Schaltfläche **[!UICONTROL Berichte]** Tabulator. Die **[!UICONTROL Abonnement-Tracking]** Der Bericht ist standardmäßig verfügbar. Damit können Sie die An- und Abmeldetrends sowie die Treuerate für einen bestimmten Zeitraum anzeigen. Sie können die Darstellung dieser Daten über die Dropdown-Liste konfigurieren. Klick **[!UICONTROL Aktualisieren]** , um die ausgewählte Konfiguration zu validieren.
+Er kann für ein Abonnement angezeigt werden, indem Sie auf den Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** der Homepage oder des Explorers klicken. Wählen Sie das gewünschte Abonnement aus und klicken Sie dann auf die Registerkarte **[!UICONTROL Berichte]**. Der Bericht **[!UICONTROL Abonnement-Tracking]** ist standardmäßig verfügbar. Sie können damit die An- und Abmelde-Trends und die Treuerate über einen Zeitraum hinweg sehen. Die Darstellung dieser Daten kann über die Dropdown-Liste konfiguriert werden. Klicken Sie auf **[!UICONTROL Aktualisieren]**, um die ausgewählte Konfiguration zu validieren.
 
 Weiterführende Informationen dazu finden Sie auf [dieser Seite](../start/subscriptions.md).
 

@@ -6,7 +6,7 @@ role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Erfahren Sie, wie Sie Ihre Subdomains und deren Zertifikate überwachen.
 
 ## Überwachen der Performance
 
-Das Control Panel bietet verschiedene Funktionen, mit denen Sie Ihre Instanzen überwachen und eine optimale Performance sicherstellen können. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de).{target="_blank"}
+Das Control Panel bietet verschiedene Funktionen, mit denen Sie Ihre Instanzen überwachen und eine optimale Performance sicherstellen können. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de){target="_blank"}.
 
 
 ## Instanzeneinstellungen

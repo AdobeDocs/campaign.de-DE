@@ -7,7 +7,7 @@ exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
 source-git-commit: b77c37ab9ba9556fdefc563deac6b55ab0d91dc8
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Beachten Sie, dass Sie bei Verwendung der Aktivität **[!UICONTROL Datenquelle �
 
 >[!IMPORTANT]
 >
->Beachten Sie, dass die Variable **[!UICONTROL Dimension ändern]** und **[!UICONTROL Datenquelle ändern]** -Aktivitäten sollten nicht in einer Zeile hinzugefügt werden. Wenn Sie beide Aktivitäten nacheinander verwenden müssen, müssen Sie eine **[!UICONTROL Anreicherung]** Aktivitäten zwischen ihnen. Dadurch wird eine ordnungsgemäße Ausführung sichergestellt und potenzielle Konflikte oder Fehler werden vermieden.
+>Beachten Sie, dass die Aktivitäten **[!UICONTROL Dimensionsänderung]** und **[!UICONTROL Datenquelle ändern]** nicht in einer Zeile hinzugefügt werden sollten. Wenn Sie beide Aktivitäten nacheinander verwenden müssen, fügen Sie dazwischen die Aktivität **[!UICONTROL Anreicherung]** ein. Dadurch wird eine ordnungsgemäße Ausführung sichergestellt und potenzielle Konflikte oder Fehler werden vermieden.
 
 So verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**:
 

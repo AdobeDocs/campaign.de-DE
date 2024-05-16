@@ -8,7 +8,7 @@ exl-id: 45cb95ec-77bf-4bab-895f-b94f6ce660fd
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Wenn eine Aufgabe „Externes Signal“ aktiviert wird, wird sie unbegrenzt oder
 
 Weiterführende Hinweise zu SOAP-Aufrufen und der PostEvent-Funktion finden Sie in der einschlägigen Online-Literatur.
 
-Sie können diese Aktivität konfigurieren, um Ereignisse zu definieren, wenn kein Signal empfangen wird. Bearbeiten Sie dazu die Aktivität und klicken Sie auf die Schaltfläche **[!UICONTROL Gültigkeit]** Tabulator. Klicken Sie auf die Schaltfläche **[!UICONTROL Einfügen]** Schaltfläche zum Erstellen und Konfigurieren eines Ereignisses.
+Sie können diese Aktivität so konfigurieren, dass Ereignisse definiert werden, wenn kein Signal empfangen wird. Bearbeiten Sie hierzu die Aktivität und klicken Sie auf die Registerkarte **[!UICONTROL Gültigkeit]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Einfügen]**, um ein Ereignis zu erstellen und zu konfigurieren.
 
 ![](assets/edit_signal.png)
 

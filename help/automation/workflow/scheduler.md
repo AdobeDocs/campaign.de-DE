@@ -34,7 +34,7 @@ Eine **[!UICONTROL Planung]** entspricht einem programmierten Start, daher sind 
 
 ## Konfigurieren der Planungsaktivität {#configuring-scheduler-activity}
 
-Die Planung definiert den Aktivierungsplan der Transition. Doppelklicken Sie zum Konfigurieren auf das grafische Objekt und dann auf **[!UICONTROL Ändern…]**
+Die Planung definiert die Aktivierungsplanung der Transition. Doppelklicken Sie zur Konfiguration auf das grafische Objekt und klicken Sie auf **[!UICONTROL Ändern...]**
 
 ![](assets/s_user_segmentation_scheduler.png)
 

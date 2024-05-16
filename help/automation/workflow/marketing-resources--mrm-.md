@@ -8,7 +8,7 @@ hidefromtoc: true
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '83'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Marketing-Ressour
   <tr> 
    <td> <span class="uicontrol">Vorgänge in Diskussionsforen</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> Dieser Workflow verwaltet den Versand von Benachrichtigungen aus Diskussionsforen. Sie wird ausgelöst, wenn ein Validierungssignal empfangen wird.<br /> </td> 
+   <td> Sendet Benachrichtigungen in Diskussionsforen. Wird gestartet, sobald ein Validierungssignal empfangen wird.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

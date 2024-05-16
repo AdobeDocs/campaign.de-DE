@@ -7,7 +7,7 @@ exl-id: 362b347b-f914-4ebf-84d7-9989aef28a82
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '650'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 >[!NOTE]
 >
->Zusätzlich zum Workflow wird Campaign **Workflow-Heatmap** Ermöglicht die Detailanalyse in den derzeit ausgeführten Workflows. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](heatmap.md).
+>Zusätzlich zum Workflow können Sie mit der **Campaign Workflow-Heatmap** die aktuell aktiven Workflows im Detail analysieren. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](heatmap.md).
 >
 >Weitere Informationen zur **Überwachung der Ausführung Ihrer Workflows** finden Sie in [diesem Abschnitt](monitor-workflow-execution.md).
 
@@ -37,7 +37,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 Der zu überwachende Workflow-Ordner ist **CustomWorkflows** im Knoten **Administration > Betreibung > Technische Workflows**. Dieser Ordner enthält diverse geschäftsrelevante Workflows.
 
-Die **Überwachen von Workflows** wird im Stammverzeichnis des Ordners Technische Workflows gespeichert. Die Bezeichnung wird verwendet **„Überwachung“**.
+Die **Monitoring-Workflow** wird im Stammverzeichnis des Ordners Technische Workflows gespeichert. Die verwendete Bezeichnung lautet **&quot;Überwachung&quot;**.
 
 Das folgende Schema stellt die Beziehungen zwischen den einzelnen Aktivitäten dar.
 
@@ -121,7 +121,7 @@ Der Versand an die verantwortliche Person wird gestartet, **wenn wenigstens eine
 
 ![](assets/uc_monitoring_workflow_test.png)
 
-Die Aktivität „Warten“ kann so konfiguriert werden, dass der Überwachungs-Workflow in regelmäßigen Abständen neu gestartet wird. Für diesen Anwendungsfall: **Die Wartezeit ist auf eine Stunde festgelegt**.
+Die Warteaktivität kann dahingehend konfiguriert werden, dass sie den Monitoring-Workflow in regelmäßigen Abständen neu startet. Im vorliegenden Beispiel **beträgt die Wartezeit eine Stunde**.
 
 ![](assets/uc_monitoring_workflow_attente.png)
 

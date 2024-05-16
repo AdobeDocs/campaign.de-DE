@@ -8,7 +8,7 @@ exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -131,11 +131,11 @@ Wenn nun ein Besucher auf den Vorschlag und somit auf die URL klickt, wird dem V
 
 >[!NOTE]
 >
->Wenn Sie einen anderen Status in der URL angeben möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den Wert, der dem gewünschten Status entspricht. Beispiel: **[!UICONTROL abgelehnt]** = „5„, **[!UICONTROL Präsentiert]** = „1“ und so weiter.
+>Wenn Sie in der URL einen anderen Status festlegen möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den dem gewünschten Status entsprechenden Wert. Beispiel: **[!UICONTROL Abgelehnt]** = &quot;5&quot;, **[!UICONTROL Unterbreitet]** = &quot;1&quot; usw.
 >
->Status und ihre Werte können abgerufen werden in der **[!UICONTROL Angebotsvorschläge (nms)]** Datenschema. Weitere Informationen hierzu finden Sie auf [dieser Seite](../dev/create-schema.md).
+>Status und die ihnen zugehörigen Werte können aus dem Datenschema **[!UICONTROL Angebotsvorschläge (nms)]** abgerufen werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../dev/create-schema.md).
 
-**Ausgehende Interaktionen**
+**Ausgehende Interaktion**
 
 Sie können den Status **[!UICONTROL Interessant]** automatisch auf einen Angebotsvorschlag anwenden, falls der Versand einen Link enthält. Fügen Sie einfach den Wert **_urlType=&quot;11&quot;** zum Link hinzu:
 
@@ -156,4 +156,4 @@ Sollte kein Angebot für einen Empfänger infrage kommen, ist dies in der Vorsch
 
 Die Vorschau berücksichtigt Kontexte möglicherweise nicht, wenn sie auf eine Platzierung beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema erweitert wurde, um Felder hinzuzufügen, auf die eine einen eingehenden Kanal verwendende Platzierung Bezug nimmt. 
 
-Weiterführende Informationen hierzu finden Sie in diesem Beispiel unter [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}.
+Weitere Informationen finden Sie in diesem Beispiel der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}.

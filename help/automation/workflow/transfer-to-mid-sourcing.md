@@ -6,7 +6,7 @@ feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendung an Mid-So
   <tr> 
    <td> <span class="uicontrol">Mid-Sourcing (Versandlogs)</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> Dieser Workflow erfasst Versandlogs auf dem Mid-Sourcing-Server. Er wird standardmäßig stündlich ausgelöst.<br /> </td> 
+   <td> Ruft Versandlogs vom Mid-Sourcing-Server ab. Wird standardmäßig stündlich gestartet.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

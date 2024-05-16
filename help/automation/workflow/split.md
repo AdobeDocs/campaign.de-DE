@@ -7,7 +7,7 @@ exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '1995'
-ht-degree: 81%
+ht-degree: 86%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 81%
 
 Über die **Aufspaltung** lässt sich eine Population in verschiedene Teilmengen splitten. Die Zielgruppe wird aus allen eingehenden Ergebnissen erstellt, dies bedeutet, dass die vorgeschalteten Aktivitäten beendet sein müssen, bevor die Aufspaltung ausgeführt werden kann.
 
-Diese Aktivität enthält keinen Trigger für eine Vereinigung eingehender Populationen. Wenn mehrere Transitionen in einer Aufspaltungsaktivität landen, wird empfohlen, eine **[!UICONTROL Vereinigung]** Aktivität davor.
+Diese Aktivität Trigger keine Vereinigung der eingehenden Populationen. Wenn mehrere Transitionen in einer Aufspaltungsaktivität landen, wird empfohlen, eine **[!UICONTROL Vereinigung]** -Aktivität vor.
 
 Weiterführende Informationen zur Aufspaltungsaktivität finden Sie in [diesem Abschnitt](targeting-workflows.md#create-subsets-using-the-split-activity).
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor:
    >
    >Es können maximal Daten aus zwei externen Datenbanken gefiltert werden.
 
-1. Sie können die maximale Anzahl von Datensätzen angeben, die aus der Zielgruppe extrahiert werden sollen, um die Teilmenge zu erstellen. Aktivieren Sie dazu die Option **[!UICONTROL Ausgewählte Datensätze begrenzen]** und klicken Sie auf die Schaltfläche **[!UICONTROL Bearbeiten…]** -Link.
+1. Sie können die Anzahl an Datensätzen festlegen, die maximal aus der Zielgruppe extrahiert werden sollen, um die Teilmenge zu erstellen. Überprüfen Sie dazu die **[!UICONTROL Ausgewählte Datensätze begrenzen]** und klicken Sie auf **[!UICONTROL Bearbeiten...]** -Link.
 
    Mit einem Assistenten können Sie den Auswahlmodus für Datensätze dieser Teilmenge auswählen. [Weitere Informationen](#limit-the-number-of-subset-records).
 
@@ -70,7 +70,7 @@ Es besteht die Möglichkeit, die Anzahl an Datensätzen in Teilmengen zu begrenz
 1. Wählen Sie den Begrenzungstyp aus:
 
    * **[!UICONTROL Zufallsauswahl aktivieren]**: Die Datenbank-Engine wählt die Datensätze nach dem Zufallsprinzip aus.
-   * **[!UICONTROL Nur die ersten Datensätze nach dem Sortieren beibehalten]**: Mit dieser Option können Sie eine Einschränkung festlegen, die auf einer oder mehreren Sortierreihenfolgen basiert. Wenn Sie die **[!UICONTROL Alter]** Feld als Sortierkriterium und 100 als Limit, nur die jüngsten 100 Empfänger werden beibehalten.
+   * **[!UICONTROL Nur die ersten Datensätze nach der Sortierung beibehalten]**: Mit dieser Option können Sie eine Begrenzung festlegen, die auf einer oder mehreren Sortierreihenfolgen basiert. Wenn Sie die **[!UICONTROL Alter]** als Sortierungskriterium und 100 als Begrenzung angeben, werden nur die jüngsten 100 Empfänger beibehalten.
    * **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten (Auswahl nach Kriterien oder zufällig)]**: Kombination der beiden vorangehenden Optionen. Diese Option ermöglicht die Angabe von Sortierungskriterien und im Anschluss eine zufällige Auswahl aus den ersten Datensätzen, falls mehrere Datensätze für die gewählten Kriterien den gleichen Wert aufweisen.
 
      Angenommen, das Feld **[!UICONTROL Alter]** wurde als Sortierungskriterium gewählt und die Anzahl der auszugebenden Datensätze auf 100 begrenzt. Wenn nun die 2000 jüngsten Empfänger in der Datenbank alle 18 Jahre alt sind, werden aus diesen 2000 Empfängern 100 zufällig ausgewählt.
@@ -113,7 +113,7 @@ Wenn Sie beispielsweise das Feld **[!UICONTROL Sprache]** als Gruppierungsfeld a
 
    ![](assets/s_user_segmentation_partage_wz4.png)
 
-1. Geben Sie abschließend die Schwellenwerte für die Datengruppierung an (mithilfe der festen Werte oder Prozentsätze, je nach der zuvor ausgewählten Gruppierungsmethode). Um denselben Schwellenwert für jeden Wert festzulegen (wenn Sie beispielsweise für jede Sprache die Anzahl der Datensätze auf 10 setzen möchten), wählen Sie die Option **[!UICONTROL Alle Datengruppierungen haben dieselbe Größe]** Option. Um für jeden Wert ein anderes Limit festzulegen, wählen Sie die **[!UICONTROL Einschränkungen nach Gruppierungswert]** Option. Auf diese Weise können Sie eine andere Einschränkung für Englisch, Französisch usw. wählen.
+1. Definieren Sie abschließend die Schwellenwerte für die Datengruppierung (unter Verwendung der festen Werte oder Prozentsätze je nach zuvor ausgewählter Gruppierungsmethode). Um für jeden Wert denselben Schwellenwert festzulegen, wählen Sie beispielsweise für jede Sprache die Option **[!UICONTROL Alle Datengruppierungen haben dieselbe Größe]** -Option. Um für jeden Wert eine andere Begrenzung festzulegen, wählen Sie die **[!UICONTROL Einschränkungen nach Gruppierungswert]** -Option. Auf diese Weise können Sie eine andere Einschränkung für Englisch, Französisch usw. auswählen.
 
    ![](assets/s_user_segmentation_partage_wz5.png)
 
@@ -145,7 +145,7 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
 
    * **[!UICONTROL Titel]**: Titel der Verteilungsvorlage.
    * **[!UICONTROL Zielgruppendimension]**: Geben Sie das Schema an, auf das sich die Verteilung beziehen soll, z. B. **[!UICONTROL Empfänger]**. Das Schema muss mit den im Zielgruppen-Workflow verwendeten Daten kompatibel sein.
-   * **[!UICONTROL Verteilungsfeld]**: Wählen Sie ein Feld über die Zielgruppendimension aus. Wenn Sie beispielsweise **[!UICONTROL E-Mail-Domain]** in diesem Feld wird die Empfängerliste nach Domain aufgeschlüsselt.
+   * **[!UICONTROL Verteilungsfeld]**: Wählen Sie ein Feld über die Zielgruppendimension aus. Wenn Sie beispielsweise die **[!UICONTROL E-Mail-Domain]** -Feld, wird die Empfängerliste nach Domain aufgeschlüsselt.
    * **[!UICONTROL Verteilungstyp]**: Wählen Sie hier aus, ob der Begrenzungswert im Tab **[!UICONTROL Verteilung]** als **[!UICONTROL Feste Größe]** oder als **[!UICONTROL Größe in Prozent]** ausgedrückt werden soll.
    * **[!UICONTROL Validierungsspeicherung]**: Wenn Sie die Aktivität [Lokale Validierung](local-approval.md) in Ihrem Zielgruppen-Workflow verwenden, geben Sie das Schema ein, in dem die Validierungsergebnisse gespeichert werden. Sie müssen ein Speicherschema pro Zielgruppenbestimmungsschema angeben. Wenn Sie das Zielgruppenbestimmungsschema für **[!UICONTROL Empfänger]** verwenden, geben Sie das standardmäßige Speicherschema **[!UICONTROL Lokale Validierung der Empfänger]** ein.
 
@@ -173,7 +173,7 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
 
      ![](assets/local_validation_notification_4.png)
 
-   * **[!UICONTROL Web-Oberfläche]**: dient der Verknüpfung einer Web-Anwendung mit der Empfängerliste. In der Validierungs- und Rücksendebenachrichtigung kann jeder Empfänger angeklickt werden und eine Verknüpfung zur ausgewählten Web-Anwendung herstellen. Die **[!UICONTROL Parameter]** Feld (zum Beispiel **[!UICONTROL recipientId]**) ermöglicht die Konfiguration des zusätzlichen Parameters, der in der URL und im Web-Programm verwendet werden soll.
+   * **[!UICONTROL Webschnittstelle]**: erstellt eine Relation zwischen einer Webanwendung und der Empfängerliste. In der Validierungs- und Versandreaktionen-Benachrichtigung kann jeder Empfänger angeklickt werden und verweist auf die ausgewählte Webanwendung. Die **[!UICONTROL Parameter]** -Feld (z. B. **[!UICONTROL recipientId]**) können Sie den zusätzlichen Parameter konfigurieren, der in der URL und der Webanwendung verwendet werden soll.
 
 1. Im Tab **[!UICONTROL Verteilung]** wird die Liste der Verteilungswerte definiert.
 
@@ -207,7 +207,7 @@ Damit diese Option korrekt arbeiten kann, müssen die eingehenden Daten einen Pr
 
 Wenn die Daten beispielsweise direkt aus einer externen Datenbank wie Netezza (die keine Unterstützung von Indizes bietet) über eine **[!UICONTROL Laden-(SGBD)]**-Aktivität gelesen werden, ist das von der **[!UICONTROL Aufspaltung]** erzeugte Komplement falsch.
 
-Um dies zu vermeiden, können Sie ein **[!UICONTROL Anreicherung]** Aktivität direkt vor dem **[!UICONTROL Aufspaltung]** Aktivität. In der **[!UICONTROL Anreicherung]** Aktivität, überprüfen Sie die **[!UICONTROL Alle Zusatzdaten aus der Hauptmenge beibehalten]** und geben Sie in den zusätzlichen Daten die Spalten an, die Sie für die Konfiguration der Filter der **[!UICONTROL Aufspaltung]** Aktivität. Die Daten der eingehenden Transition der **[!UICONTROL Aufspaltung]** Die Aktivität wird dann lokal in einer temporären Tabelle auf dem Adobe Campaign-Server gespeichert und das Komplement kann korrekt generiert werden.
+Dies lässt sich vermeiden, indem Sie der **[!UICONTROL Aufspaltung]** eine **[!UICONTROL Anreicherung]** vorschalten. Aktivieren Sie in der **[!UICONTROL Anreicherung]** die Option **[!UICONTROL Alle Zusatzdaten der Hauptmenge beibehalten]** und geben Sie als Zusatzdaten die Spalten an, die Sie für die Konfiguration der Filter der **[!UICONTROL Aufspaltung]** verwenden möchten. Die Daten der in die **[!UICONTROL Aufspaltung]** eingehenden Transition werden in diesem Fall lokal in einer temporären Tabelle auf dem Adobe-Campaign-Server gespeichert und das Komplement kann korrekt erzeugt werden.
 
 Die Option **[!UICONTROL Überlappung der Ausgabepopulationen zulassen]** ermöglicht den Umgang mit Profilen, die in mehreren Teilmengen enthalten sind:
 
@@ -227,6 +227,6 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Dieser Satz von drei Werten identifiziert die Zielgruppe, die aus dem Ausschluss resultiert. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppe enthält, **[!UICONTROL schema]** ist das Schema der Population, (in der Regel nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
+Anhand der drei Werte lässt sich die durch den Ausschluss ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppe enthält, **[!UICONTROL schema]** ist das Schema der Population, (in der Regel nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.

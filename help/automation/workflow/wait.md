@@ -27,6 +27,6 @@ Im Feld **[!UICONTROL Dauer]** können, wenn in den regionalen Parametern des Be
 
   Die Standardeinheit ist **T** für Tag.
 
-* Wenn zum Beispiel die regionalen Einstellungen auf „Français“ eingestellt sind: **s** für Sekunden, **MN** für Minuten, **h** für Stunden, **J** für Tage, **m** für Monate, **a** Seit Jahren. Zum Zeitpunkt der Genehmigung wird der Wert automatisch in die am besten lesbare Einheit umgewandelt, wie im Beispiel oben **90er** wurde in konvertiert **1MN 30S**.
+* Wenn beispielsweise die regionalen Gegebenheiten auf &quot;Français&quot; gesetzt werden, **s** für Sekunden, **mn** für Minuten, **h** für Stunden, **j** für Tage, **m** für Monate, **a** für Jahre. Zum Zeitpunkt der Validierung wird der Wert automatisch in die am besten lesbare Einheit konvertiert, wie im obigen Beispiel **90 s** wurde in **1 min 30 s**.
 
   Die Standardeinheit ist **T** für Tag.
