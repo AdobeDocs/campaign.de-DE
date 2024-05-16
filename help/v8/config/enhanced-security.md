@@ -7,10 +7,10 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 042a1cc96b819a1a77442e274defbadeb393eafc
+source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 79%
+source-wordcount: '743'
+ht-degree: 76%
 
 ---
 
@@ -37,7 +37,7 @@ Nach der Implementierung dieser Funktionen überwacht Adobe Folgendes:
 
 ## Sichere, kundenverwaltete Schlüsselintegration {#secure-cmk-integration}
 
-Die **sichere CMK-Integration (Customer Managed Key)** ermöglicht es Ihnen, Ihre Instanz und Ihre Daten mithilfe Ihres eigenen Schlüssels über Ihr Amazon Web Services(AWS)-Konto zu verschlüsseln.
+Die **Sichere Integration von kundenverwaltetem Schlüssel (CMK)** ermöglicht Ihnen, Daten während der Ruhezeit mit Ihrem eigenen Schlüssel über Ihr Amazon Web Services (AWS)-Konto zu verschlüsseln.
 
 Kundenverwaltete Schlüssel sind KMS-Schlüssel (Key Management Service) in Ihrem AWS-Konto, die Sie erstellen, besitzen und verwalten. Sie haben die volle Kontrolle über diese KMS-Schlüssel und verwenden sie zum Verschlüsseln und Entschlüsseln von Daten. Indem Sie die Verantwortung für die Generierung und Verwaltung von Verschlüsselungsschlüsseln übernehmen, erhalten Sie dank dieser Kapazität mehr Kontrolle über diese Schlüssel, einschließlich des Widerrufs eines Schlüssels.
 

@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie einen Workflow erstellen
 feature: Workflows
 role: User
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: b7fa3dfb1e596d2ea41674278cbe315199264611
+source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -133,9 +133,7 @@ Neben den gängigen Workflow-Parametern können Sie in den Eigenschaften der Vor
 
 Sie können verschiedene Typen von Workflows duplizieren. Nach dem Duplizieren werden Änderungen des Workflows nicht in die Kopie des Workflows übernommen.
 
->[!CAUTION]
->
->Die Funktion zum Kopieren/Einfügen ist in den Workflows verfügbar. Es wird jedoch empfohlen, **Duplizieren** zu verwenden. Die Konfiguration der kopierten Aktivitäten bleibt dabei unverändert. Bei Versandaktivitäten (E-Mail, SMS, Push-Benachrichtigung ...) wird auch das der Aktivität angehängte Versandobjekt kopiert, was zu einem Absturz führen kann.
+Adobe empfiehlt, einen Workflow zu duplizieren, anstatt Aktivitäten zu kopieren und einzufügen. Beim Kopieren einer Aktivität werden alle zugehörigen Einstellungen beibehalten. Bei Kanalaktivitäten wird auch das der Aktivität zugeordnete Versandobjekt kopiert, was zu größeren Problemen führen kann.
 
 1. Klicken Sie mit der rechten Maustaste auf einen Workflow.
 1. Klicken Sie auf **Duplizieren**.
