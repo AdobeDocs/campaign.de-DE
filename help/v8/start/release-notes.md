@@ -5,7 +5,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: bcb833fae75ee515ae210342756fab035a4e1c03
+source-git-commit: b364b557bdf060e022196786a970517056eb2bf7
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 93%
@@ -50,7 +50,7 @@ Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Ac
 
 ### Allgemeine Verbesserungen {#improvements-8-7-1}
 
-* Mehrere Schemata wurden von 32 auf 64 Bit geändert. Dies betrifft nur Kundinnen und Kunden, die von Campaign Standard migrieren. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=de)
+* Mehrere Schemata wurden von 32 auf 64 Bit geändert. Dies betrifft nur Kundinnen und Kunden, die von Campaign Standard migrieren. [Mehr dazu](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=de){target="_blank"}
 
 * In Campaign-Tabellen werden die folgenden Attribute jetzt standardmäßig durch das Datum und die Uhrzeit des Servers ausgefüllt: lastModified, created, createdBy-id. Werte, die von Benutzern in API-Aufrufen bereitgestellt werden, werden ignoriert. <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
