@@ -1,5 +1,5 @@
 ---
-title: Campaign Enhanced Security Add-On
+title: Campaign-Add-on für verbesserte Sicherheit
 description: Erste Schritte mit dem Campaign-Add-on für verbesserte Sicherheit
 feature: Configuration
 role: Developer
@@ -10,24 +10,24 @@ exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
 workflow-type: tm+mt
 source-wordcount: '743'
-ht-degree: 76%
+ht-degree: 96%
 
 ---
 
 
-# Campaign Enhanced Security-Add-on {#enhanced-security}
+# Campaign-Add-on für verbesserte Sicherheit {#enhanced-security}
 
 Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet [!DNL Adobe Campaign] ein neues Add-on für **verbesserte Sicherheit**.
 
 Dieses Add-on umfasst zwei Ökosystemfunktionen:
 
-* [Sichere Integration von kundenverwaltetem Schlüssel (CMK)](#secure-cmk-integration)
+* [Sichere CMK-Integration (Customer Managed Key)](#secure-cmk-integration)
 
-* [Sicheres VPN-Tuning (Virtual Private Network)](#secure-vpn-tunneling)
+* [Sicheres VPN-Tunneling (Virtual Private Network)](#secure-vpn-tunneling)
 
 Diese Funktionen werden nachfolgend beschrieben.
 
-Auf dieser Seite finden Sie einige Limits und Einschränkungen bezüglich der erweiterten Sicherheitsfunktionen. Zusätzlich müssen Sie sicherstellen, dass alle Anwendungsfälle der Secure CMK Integration/Secure VPN Tuning funktionieren.
+Auf dieser Seite finden Sie einige Schutzmechanismen und Einschränkungen in Bezug auf die erweiterten Sicherheitsfunktionen. Außerdem sollten Sie sicherstellen, dass alle Anwendungsfälle für die sichere CMK-Integration bzw. das sichere VPN-Tunneling funktionieren.
 
 Nach der Implementierung dieser Funktionen überwacht Adobe Folgendes:
 
@@ -35,7 +35,7 @@ Nach der Implementierung dieser Funktionen überwacht Adobe Folgendes:
 
 * die VPN-Tunnel und sendet eine Warnmeldung, falls ein Problem auftritt.
 
-## Sichere, kundenverwaltete Schlüsselintegration {#secure-cmk-integration}
+## Sichere CMK-Integration (Customer Managed Key) {#secure-cmk-integration}
 
 Die **Sichere Integration von kundenverwaltetem Schlüssel (CMK)** ermöglicht Ihnen, Daten während der Ruhezeit mit Ihrem eigenen Schlüssel über Ihr Amazon Web Services (AWS)-Konto zu verschlüsseln.
 
@@ -58,17 +58,17 @@ Um die CMK-Integration in Campaign zu aktivieren, führen Sie die folgenden Schr
 1. Erstellen und testen Sie die Amazon EventBridge-Regeln, um die Überwachung Ihrer Schlüssel durch Adobe zu aktivieren. [Weitere Informationen](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
 
-### Schutzmechanismen und Begrenzungen {#cmk-callouts}
+### Schutzmechanismen und Einschränkungen {#cmk-callouts}
 
-Die folgenden Limits und Einschränkungen gelten für die CMK-Integration mit Adobe Campaign v8:
+Die folgenden Schutzmechanismen und Einschränkungen gelten für die CMK-Integration mit Adobe Campaign v8:
 
-* Adobe bietet keine [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} -Konto. Sie müssen über ein eigenes AWS-Konto verfügen und dieses so einrichten, dass es Ihren Schlüssel generiert und für Adobe freigibt.
+* Adobe stellt kein [Amazon Web Services (AWS)-Konto](https://aws.amazon.com/){target="_blank"} bereit. Sie müssen über ein eigenes AWS-Konto verfügen und dieses so einrichten, dass es Ihren Schlüssel generiert und für Adobe freigibt.
 
 * Nur [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)-Schlüssel werden unterstützt. Es können keine Schlüssel verwendet werden, die von Kundinnen und Kunden außerhalb von KMS erzeugt wurden.&#x200B;
 
-* Während der Ersteinrichtung werden Ausfallzeiten erwartet. &#x200B;Die Ausfallzeitdauer hängt von der Größe Ihrer Datenbank ab.
+* Bei der Ersteinrichtung ist mit Ausfallzeiten zu rechnen.Die Dauer der Ausfallzeit hängt von der Größe Ihrer Datenbank ab.
 
-* Als Kunde besitzen und verwalten Sie den Schlüssel. Bei jeder Änderung Ihres Schlüssels müssen Sie sich an Adobe wenden. &#x200B;
+* Als Kundin bzw. Kunde besitzen und verwalten Sie den Schlüssel. Bei jeder Änderung Ihres Schlüssels müssen Sie sich an Adobe wenden.
 
 * Sie können Ihren Schlüssel mit [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} überprüfen und ihn bei Bedarf widerrufen.&#x200B;
 
@@ -80,7 +80,7 @@ Die folgenden Limits und Einschränkungen gelten für die CMK-Integration mit Ad
   >
   >Wenn Sie den Schlüssel löschen und diese Aktion nicht innerhalb von 30 Tagen rückgängig machen, werden alle Ihre Daten dauerhaft gelöscht und gehen verloren.&#x200B;
 
-## Sichere Virtual Private Network-Tuning {#secure-vpn-tunneling}
+## Sicheres Virtual-Private-Network-Tunneling {#secure-vpn-tunneling}
 
 Das **sichere Virtual Private Network(VPN)-Tunneling** ist ein VPN von einer Site zur anderen, das einen sicheren Zugang für Ihre sich im Transit befindlichen Daten über ein privates Netzwerk von Ihrem Standort zur [!DNL Adobe Campaign]-Instanz bietet.
 
@@ -113,9 +113,9 @@ Um die ordnungsgemäße Verwendung dieser Funktion sicherzustellen, befolgen Sie
 * Richten Sie auf Ihrer Seite einen Mechanismus zum erneuten Aufbau der Verbindung ein, falls diese ausfällt.
 
 
-### Schutzmechanismen und Begrenzungen {#vpn-callouts}
+### Schutzmechanismen und Einschränkungen {#vpn-callouts}
 
-Die folgenden Limits und Einschränkungen gelten für die VPN-Tunnelintegration mit Adobe Campaign v8:
+Die folgenden Schutzmechanismen und Einschränkungen gelten für die VPN-Tunnelintegration mit Adobe Campaign v8:
 
 * Derzeit werden nur On-Premise-Datenbanken unterstützt, wie z. B.<!--Richa to check the list with PM-->:
 
