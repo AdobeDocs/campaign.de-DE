@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
 source-git-commit: 91d19874dfb313a1a470ac4f39cf5af7ca7dfa19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '157'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Auf dieser Seite werden alle aktuellen Updates in der [!DNL Campaign] v8 (Konsol
 
 ## Mai 2024 {#may-2024}
 
-Es wurde ein Hinweis hinzugefügt, der angibt, dass **[!UICONTROL Dimension ändern]** und **[!UICONTROL Datenquelle ändern]** -Aktivitäten sollten nicht in einer Zeile hinzugefügt werden und eine **[!UICONTROL Anreicherung]** Aktivitäten zwischen ihnen. Weitere Informationen finden Sie unter [Dimension ändern](../../automation/workflow/change-dimension.md) und [Datenquelle ändern](../../automation/workflow/change-data-source.md) Abschnitte.
+Es wurde ein Hinweis dazu ergänzt, dass die Aktivitäten **[!UICONTROL Dimension ändern]** und **[!UICONTROL Datenquelle ändern]** nicht in einer Zeile hinzugefügt werden dürfen und die Aktivität **[!UICONTROL Anreicherung]** zwischen ihnen benötigt wird. Weitere Informationen finden Sie in den Abschnitten [Dimension ändern](../../automation/workflow/change-dimension.md) und [Datenquelle ändern](../../automation/workflow/change-data-source.md).
 
 ## Februar 2024 {#feb-2024}
 
