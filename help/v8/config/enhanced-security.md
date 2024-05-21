@@ -4,13 +4,11 @@ description: Erste Schritte mit dem Campaign-Add-on für verbesserte Sicherheit
 feature: Configuration
 role: Developer
 level: Experienced
-hide: true
-hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
+source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 96%
+source-wordcount: '753'
+ht-degree: 93%
 
 ---
 
@@ -90,7 +88,7 @@ Um eine hohe Verfügbarkeit (HA, High Availability), zu gewährleisten, verwende
 
 Die folgenden drei Anwendungsfälle werden unterstützt:
 
-* Federated Data Access (FDA) über ein VPN<!--to access your on-premise database from the Campaign instance over VPN-->
+* Federated Data Access (FDA) über VPN, um von der Campaign-Instanz über VPN auf Ihre On-Premise-Datenbank zuzugreifen
 
 * Instanz-Login über ein VPN von einem Thick Client
 
@@ -117,7 +115,7 @@ Um die ordnungsgemäße Verwendung dieser Funktion sicherzustellen, befolgen Sie
 
 Die folgenden Schutzmechanismen und Einschränkungen gelten für die VPN-Tunnelintegration mit Adobe Campaign v8:
 
-* Derzeit werden nur On-Premise-Datenbanken unterstützt, wie z. B.<!--Richa to check the list with PM-->:
+* Es werden nur On-Premise-Datenbanken unterstützt, z. B.<!--Richa to check the list with PM-->:
 
    * MySQL
    * Netezza
