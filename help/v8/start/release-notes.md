@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 247d687597c6784aec49b70f9e68f50e49d169dd
+source-git-commit: 74523cc93f694710e136b191fec3372872605ab6
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 93%
+source-wordcount: '996'
+ht-degree: 81%
 
 ---
 
@@ -46,13 +46,18 @@ _2. Mai 2024_
 
 ### Aktualisierungen zur Kompatibilität {#comp-8-7-1}
 
-Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
+* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
+
+* Ab dieser Version sind ausgehende Campaign-Integrationen mit Adobe-Lösungen und -Apps bei veralteten JWT-Anmeldedaten von Adobe auf OAuth Server-zu-Server-Anmeldedaten angewiesen. Adobe führt die Migration von JWT zu OAuth für Ihre ausgehenden Integrationen durch, z. B. die Integration von Campaign mit Analytics oder die Integration von Experience Cloud-Triggern.
+
+  Wenn Sie eingehende Integrationen mit Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie im Abschnitt [diese Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. Vorhandene Service-Konto-Anmeldedaten (JWT) funktionieren weiterhin, bis **27. Januar 2025**. Darüber hinaus unterstützt die Developer Console die Erstellung neuer Service Account (JWT)-Anmeldedaten auch weiterhin, bis **3. Juni 2024**. Eine neue JWT-Berechtigung (Service Account) kann nach diesem Datum nicht mehr erstellt oder einem Projekt hinzugefügt werden.
+
 
 ### Allgemeine Verbesserungen {#improvements-8-7-1}
 
 * Mehrere Schemata wurden von 32 auf 64 Bit geändert. Dies betrifft nur Kundinnen und Kunden, die von Campaign Standard migrieren. [Mehr dazu](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=de){target="_blank"}
 
-* In Campaign-Tabellen werden die folgenden Attribute jetzt standardmäßig nach Datum und Uhrzeit des Servers ausgefüllt: `lastModified` und `created`. Werte, die von Benutzern in API-Aufrufen bereitgestellt werden, werden ignoriert. <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
+* In Campaign-Tabellen werden die folgenden Attribute jetzt standardmäßig nach Datum und Uhrzeit des Servers ausgefüllt: `lastModified` und `created`. Die `createdBy-id` -Attributwert nun standardmäßig mit der aktuellen Anmelde-ID ausgefüllt. Werte, die von Benutzern in API-Aufrufen bereitgestellt werden, werden ignoriert. <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
 ### Fehlerbehebungen {#fixes-8-7-1}
 
