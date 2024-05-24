@@ -6,9 +6,9 @@ role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '753'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Nach der Implementierung dieser Funktionen überwacht Adobe Folgendes:
 
 ## Sichere CMK-Integration (Customer Managed Key) {#secure-cmk-integration}
 
-Die **Sichere Integration von kundenverwaltetem Schlüssel (CMK)** ermöglicht Ihnen, Daten während der Ruhezeit mit Ihrem eigenen Schlüssel über Ihr Amazon Web Services (AWS)-Konto zu verschlüsseln.
+Die **sichere CMK-Integration (Customer Managed Key)** ermöglicht es Ihnen, ruhende Daten mithilfe Ihres eigenen Schlüssels über Ihr Amazon Web Services(AWS)-Konto zu verschlüsseln.
 
 Kundenverwaltete Schlüssel sind KMS-Schlüssel (Key Management Service) in Ihrem AWS-Konto, die Sie erstellen, besitzen und verwalten. Sie haben die volle Kontrolle über diese KMS-Schlüssel und verwenden sie zum Verschlüsseln und Entschlüsseln von Daten. Indem Sie die Verantwortung für die Generierung und Verwaltung von Verschlüsselungsschlüsseln übernehmen, erhalten Sie dank dieser Kapazität mehr Kontrolle über diese Schlüssel, einschließlich des Widerrufs eines Schlüssels.
 
@@ -115,7 +115,7 @@ Um die ordnungsgemäße Verwendung dieser Funktion sicherzustellen, befolgen Sie
 
 Die folgenden Schutzmechanismen und Einschränkungen gelten für die VPN-Tunnelintegration mit Adobe Campaign v8:
 
-* Es werden nur On-Premise-Datenbanken unterstützt, z. B.<!--Richa to check the list with PM-->:
+* Es werden nur On-Premise-Datenbanken unterstützt, wie <!--Richa to check the list with PM-->:
 
    * MySQL
    * Netezza

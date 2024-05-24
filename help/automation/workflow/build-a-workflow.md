@@ -6,9 +6,9 @@ feature: Workflows
 role: User
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
 source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Doppelklicken Sie auf eine Aktivität, um sie zu konfigurieren oder klicken Sie 
 >
 >Aktivitäten des Kampagnen-Workflows werden in [diesem Abschnitt](activities.md) erläutert.
 
-Der erste Tab enthält die grundlegende Konfiguration. Die **[!UICONTROL Erweitert]** enthält die zusätzlichen Parameter, die insbesondere zur Definition des Verhaltens bei Fehlern, zur Angabe der Ausführungsdauer einer Aktivität und zur Eingabe eines Initialisierungsskripts verwendet werden.
+Der erste Tab enthält die grundlegende Konfiguration. Der Tab **[!UICONTROL Erweitert]** enthält die zusätzlichen Parameter, die den Umgang mit Fehlern und die Ausführungsdauer der Aktivität bestimmen oder ein Initialisierungsskript erfassen können.
 
 Um die Aktivitäten besser zu verstehen und die Lesbarkeit des Workflows zu verbessern, können Sie in die Aktivitäten Kommentare einfügen.
 
