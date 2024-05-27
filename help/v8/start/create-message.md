@@ -5,14 +5,16 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: fb0b7dbeae1d083935da91bbe50a711ce5f47b7e
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1322'
 ht-degree: 66%
 
 ---
 
-# Erste Schritte mit Nachrichten{#gs-ac-audiences}
+# Erste Schritte mit Nachrichten {#gs-ac-audiences}
+
+## Versandkanäle {#gs-ac-channels}
 
 Mit Adobe Campaign können Sie Cross-Channel-Kampagnen wie E-Mails, SMS, Push-Benachrichtigungen und Briefpost senden und deren Effektivität mithilfe verschiedener dedizierter Berichte messen. Diese Nachrichten werden mittels Sendungen entworfen und gesendet und können für jeden Empfänger personalisiert werden.
 
@@ -35,7 +37,7 @@ Adobe Campaign v8 enthält die folgenden Versandkanäle:
   >
   >Die Anzahl der verfügbaren Kanäle hängt von Ihrem Vertrag ab. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
-## Kanal auswählen{#gs-channel}
+## Kanal auswählen {#gs-channel}
 
 ### E-Mail-Kanal {#gs-channel-email}
 

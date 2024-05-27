@@ -5,10 +5,10 @@ description: Dienstleister, Lager und Budgets
 feature: Budget Management, Campaigns
 role: User
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1920'
-ht-degree: 100%
+source-wordcount: '1918'
+ht-degree: 99%
 
 ---
 
@@ -148,7 +148,7 @@ Wenn ein Dienst ausgewählt wird, werden die dem Versandtyp (Briefpost, E-Mail u
 
   ![](assets/supplier-mail-delivery-select.png)
 
-* In Mobile- oder Telefonsendungen werden Dienstleistungen auf die gleiche Weise wie bei Briefpost-Sendungen ausgewählt.
+* Bei Sendungen über Mobile-Kanäle gilt der gleiche Auswahlmodus.
 * In E-Mail-Sendungen werden Dienstleistungen über den Tab **[!UICONTROL Erweitert]** der Eigenschaften des jeweiligen Versands ausgewählt, wie im folgenden Beispiel:
 
   ![](assets/supplier-email-delivery-select.png)

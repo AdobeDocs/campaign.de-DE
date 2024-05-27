@@ -4,10 +4,10 @@ title: Kohärenzregeln
 description: Kohärenzregeln
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 8247bed87deb3fb19a01447dab180ed9c97ea96c
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 90%
+source-wordcount: '794'
+ht-degree: 78%
 
 ---
 
@@ -19,11 +19,11 @@ Mithilfe von **Kapazitätsregeln** kann etwa verhindert werden, dass die Plattfo
 
 ## Kontrollieren der Kapazität {#control-capacity}
 
-Stellen Sie vor dem Versand von Nachrichten sicher, dass Ihre physische Infrastruktur über ausreichende Kapazitäten verfügt, um sowohl ausgehende als auch eingehende Nachrichten (z. B. Antworten, Bounces, Anrufe im Callcenter etc.) verarbeiten zu können.
+Stellen Sie vor dem Versand von Nachrichten sicher, dass Ihre Organisation über die Kapazität (physische Infrastruktur) verfügt, um den Versand zu verarbeiten, über die vom Versand erzeugten Antworten (eingehende Nachrichten) und über die Anzahl der Anrufe, die an Abonnenten gesendet werden (z. B. Verarbeitungskapazität des Callcenters).
 
-Erstellen Sie hierfür Typologieregeln vom Typ **[!UICONTROL Kapazität]**.
+Erstellen Sie dazu **[!UICONTROL Kapazität]** Typologieregeln.
 
-Im folgenden Beispiel wird eine Typologieregel für eine telefonische Treuekampagne erstellt. Die Regel soll die Anzahl der Nachrichten auf 20 pro Tag begrenzen, entsprechend der Verarbeitungskapazität eines Callcenters. Nachdem die Regel auf zwei Sendungen angewendet wurde, kann die Auslastung über die Logs abgelesen werden.
+Im folgenden Beispiel erstellen wir eine Typologieregel für eine Treuekampagne per Telefon. Wir beschränken die Anzahl der Nachrichten auf 20 pro Tag, d. h. die tägliche Verarbeitungskapazität eines Callcenters. Sobald die Regel auf zwei Sendungen angewendet wurde, können wir den Verbrauch über Protokolle überwachen.
 
 Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 

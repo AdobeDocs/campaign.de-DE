@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 98%
+source-wordcount: '1251'
+ht-degree: 78%
 
 ---
 
@@ -44,42 +44,45 @@ Vor der Durchführung des Versands können Sie auf der Registerkarte **[!UICONTR
 
 Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Sie Sendungen in mehrere Schübe unterteilen. Konfigurieren Sie die Anzahl der Schübe und ihre Größe in Bezug auf den gesamten Versand.
 
->[!NOTE]
->
->Sie können nur die Größe und die Zeitverzögerung zwischen zwei aufeinanderfolgenden Schüben definieren. Die Empfängerauswahlkriterien für jeden Schub können nicht konfiguriert werden.
+Gehen Sie wie folgt vor, um Schübe zu definieren:
 
-1. Öffnen Sie das Versandeigenschaftenfenster und wählen Sie den **[!UICONTROL Versand]**-Tab aus.
-1. Wählen Sie die Option **[!UICONTROL In mehreren Schüben versenden]** aus und danach den Link **[!UICONTROL Definition der Schübe...]**.
+1. Öffnen Sie die Versandeigenschaften und navigieren Sie zum **[!UICONTROL Versand]** Registerkarte.
+1. Aktivieren Sie die **[!UICONTROL In mehreren Schüben versenden]** und klicken Sie auf die **[!UICONTROL Definieren von Schüben...]** -Link.
 
    ![](assets/delivery-define-waves.png)
 
-1. Zur Konfiguration von Schüben haben Sie die folgenden Möglichkeiten:
 
-   * Definieren Sie die Größe für jeden Schub. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
+1. Konfigurieren Sie Schübe wie unten beschrieben.
 
-     Geben Sie im Feld **[!UICONTROL Zeitraum]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
-
-     ![](assets/delivery-waves-size.png)
-
-   * Definieren Sie einen Kalendereintrag für den Versand eines jeden Schubs.
-
-     Geben Sie in der Spalte **[!UICONTROL Start]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Geben Sie in der Spalte **[!UICONTROL Größe]** eine feste Zahl oder einen Prozentsatz ein.
-
-     Im unten stehenden Beispiel beinhaltet der erste Schub 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten und beginnt unmittelbar. Die nächsten drei Schübe vervollständigen den Versand und starten in Intervallen von je sechs Stunden.
-
-     ![](assets/delivery-waves-calendar.png)
-
-   Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) stellt sicher, dass der letzte Schub vor der Versand-Deadline eingeplant ist. Kampagnentypologien und ihre Regeln, die auf der Registerkarte **[!UICONTROL Typologie]** der Versandeigenschaften konfiguriert sind, werden in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC--> vorgestellt.
-
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >Achten Sie darauf, dass die letzten Schübe nicht die Versandgültigkeit überschreiten, die im Tab **[!UICONTROL Gültigkeit]** festgelegt wird. Ansonsten werden manche Nachrichten nicht gesendet.
-   >
-   >Bei der Konfiguration der letzten Schübe müssen Sie auch genügend Zeit für weitere Versuche lassen. <!--See [this section]().-->
+   >Sie können nur die Größe und die Zeitverzögerung zwischen zwei aufeinanderfolgenden Schüben definieren. Die Empfängerauswahlkriterien für jeden Schub können nicht konfiguriert werden.
 
-1. Gehen Sie zur Überwachung Ihrer Sendungen zu den Versandlogs. Weitere Informationen finden Sie auf [dieser Seite](send.md)<!--ref TBC-->.
+Sie können Folgendes definieren:
 
-   Die Versandlogs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
+    * **Die Größe für jeden Schub**. Wenn Sie beispielsweise ** eingeben[!UICONTROL 30 %]** im entsprechenden Feld enthält jeder Schub 30 % der im Versand enthaltenen Nachrichten, mit Ausnahme des letzten Schubs, der 10 % der Nachrichten ausmacht.
+    
+    Im **[!UICONTROL Zeitraum]** die Verzögerung zwischen dem Start zweier aufeinander folgender Schübe angeben. Wenn Sie beispielsweise ** eingeben[!UICONTROL 2d]**, die erste Welle beginnt sofort, die zweite Welle wird in zwei Tagen starten, die dritte Welle in vier Tagen, und so weiter.
+    
+    ![](assets/delivery-waves-size.png)
+    
+    * **Ein Kalender für den Versand jedes Schubs**.  Der erste Schub entspricht beispielsweise 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten und beginnt sofort. Die beiden nächsten Schübe vervollständigen den Versand und starten in Sechs-Stunden-Intervallen.
+    
+    Im **[!UICONTROL Starten]** Spalte geben Sie die Verzögerung zwischen dem Start zweier aufeinander folgender Schübe an. Im **[!UICONTROL Größe]** eine feste Zahl oder einen Prozentsatz eingeben.
+    
+    ![](assets/delivery-waves-calendar.png)
+
+Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) stellt sicher, dass der letzte Schub vor der Versand-Deadline eingeplant ist. Kampagnentypologien und ihre Regeln, die auf der Registerkarte **[!UICONTROL Typologie]** der Versandeigenschaften konfiguriert sind, werden in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC--> vorgestellt.
+
+>[!IMPORTANT]
+>
+>Achten Sie darauf, dass die letzten Schübe nicht die Gültigkeitsdauer des Versands überschreiten, die in der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt wird. Ansonsten werden manche Nachrichten möglicherweise nicht gesendet. Erfahren Sie mehr über die Gültigkeitsdauer eines Versands in [diesem Abschnitt](delivery-failures.md#valid-period).
+>
+>Bei der Konfiguration der letzten Schübe müssen Sie auch genügend Zeit für weitere Versuche festlegen. Weitere Informationen zu Wiederholungen finden Sie unter [diesem Abschnitt](delivery-failures.md#retries).
+
+Um Ihre Sendungen zu überwachen, navigieren Sie zu den Versandlogs. Siehe [diese Seite](send.md)
+
+Die Versandlogs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
 
 Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
@@ -93,11 +96,11 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
-* **Kampagnen, die ein Callcenter beinhalten**
+* **Kampagnen mit Callcenter**
 
-  Bei telefonischen Treuekampagnen verfügen Unternehmen oft über begrenzte Kapazitäten für die Verarbeitung der Anrufe an Abonnenten.
+  Bei der telefonischen Verwaltung einer Treuekampagne verfügt Ihr Unternehmen über eine begrenzte Kapazität zur Verarbeitung der Anzahl der Anrufe an Abonnenten.
 
-  Mithilfe von Schüben kann die Anzahl der Nachrichten auf 20 pro Tag beschränkt werden, was der täglichen Verarbeitungskapazität eines Callcenters entspricht.
+  Mithilfe von Schüben können Sie die Anzahl der Nachrichten auf 20 pro Tag beschränken, beispielsweise unter Berücksichtigung der täglichen Verarbeitungskapazität eines Callcenters.
 
   Wählen Sie dazu die Option **[!UICONTROL Mehrere Schübe derselben Größe planen]**. Geben Sie **[!UICONTROL 20]** als Schubgröße und **[!UICONTROL 1d]** im Feld **[!UICONTROL Zeitraum]** ein.
 

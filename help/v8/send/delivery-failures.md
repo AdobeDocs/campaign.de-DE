@@ -5,7 +5,7 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
 source-wordcount: '3042'
 ht-degree: 100%
@@ -103,7 +103,7 @@ Weitere Zustellversuche aufgrund von Softbounces und die Zeitdauer zwischen ihne
 >
 >Die Einstellungen für weitere Zustellversuche in den Versandeigenschaften werden von Campaign nicht verwendet.
 
-## Gültigkeitszeitraum
+## Gültigkeitszeitraum {#valid-period}
 
 Die Einstellung des Gültigkeitszeitraums in Ihren Campaign-Sendungen ist auf **3,5 Tage oder weniger** begrenzt. Wenn Sie für Ihren Versand in Campaign einen Wert von mehr als 3,5 Tagen definieren, wird dieser nicht berücksichtigt.
 
