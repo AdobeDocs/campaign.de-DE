@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
+source-git-commit: 5f62addc95197ce5f4f80c026cc51ac14e61ff58
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 91%
+source-wordcount: '185'
+ht-degree: 85%
 
 ---
 
@@ -21,6 +21,7 @@ Auf dieser Seite werden alle aktuellen Updates in der [!DNL Campaign] v8 (Konsol
 ## Mai 2024 {#may-2024}
 
 * Die Liste der Kanäle und Versandtypen finden Sie jetzt in [diese Seite](create-message.md).
+* Die Abschnitte Versandeinstellungen und Wellenmanagement wurden umstrukturiert und verbessert. [Weitere Informationen](../send/configure-and-send.md)
 * Es wurde ein Hinweis dazu ergänzt, dass die Aktivitäten **[!UICONTROL Dimension ändern]** und **[!UICONTROL Datenquelle ändern]** nicht in einer Zeile hinzugefügt werden dürfen und die Aktivität **[!UICONTROL Anreicherung]** zwischen ihnen benötigt wird. Weitere Informationen finden Sie in den Abschnitten [Dimension ändern](../../automation/workflow/change-dimension.md) und [Datenquelle ändern](../../automation/workflow/change-data-source.md).
 
 ## Februar 2024 {#feb-2024}
