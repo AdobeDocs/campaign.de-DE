@@ -5,14 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
+source-git-commit: 52863e9cb3b9ccf03c8e2b838827af862b30e3b9
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 78%
+source-wordcount: '1263'
+ht-degree: 69%
 
 ---
 
 # Konfigurieren und Durchführen des Versands {#configure-delivery}
+
+Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können einen Versand definieren [priority](#delivery-priority), einrichten [Wellen](#sending-using-multiple-waves)und testen Sie den Versand. Sobald diese Konfiguration abgeschlossen ist, können Sie den Versand wie unter [diesem Abschnitt](#confirm-delivery). Nachrichten werden dann sofort oder je nach Versand gesendet [Zeitplan](#schedule-delivery-sending).
 
 ## Festlegen zusätzlicher Parameter {#delivery-additional-parameters}
 
@@ -20,25 +22,27 @@ Vor der Durchführung des Versands können Sie auf der Registerkarte **[!UICONTR
 
 ![](assets/delivery-properties-delivery.png)
 
-* **[!UICONTROL Versandpriorität]**: Verwenden Sie diese Option, um die Versandreihenfolge für Ihre Sendungen zu ändern, indem Sie die Prioritätsstufe festlegen, von **[!UICONTROL Sehr niedrig]** bis **[!UICONTROL Sehr hoch]** (der Standardwert ist **[!UICONTROL Normal]**).
+### Delivery priority {#delivery-priority}
 
-* **[!UICONTROL Kontingentgröße]**: Mithilfe dieser Option können Sie die Anzahl der in einem XML-Versand-Package enthaltenen Nachrichten festlegen. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
+Verwenden Sie die **[!UICONTROL Versandpriorität]** Option zur Änderung der Versandreihenfolge Ihrer Sendungen durch Festlegen der Prioritätsstufe, von **[!UICONTROL Sehr niedrig]** nach **[!UICONTROL Sehr hoch]** (der Standardwert ist **[!UICONTROL Normal]**).
 
-  >[!IMPORTANT]
-  >
-  >Wenn der Versand durch Duplizieren eines existierenden Versands erstellt wird, wird dieser Parameter zurückgesetzt.
+### Stapelmenge
 
-* **[!UICONTROL In mehreren Schüben versenden]**: Verwenden Sie diese Option, um Ihre Nachrichten in mehreren Schüben anstatt gleichzeitig zu versenden. [Weitere Informationen](#sending-using-multiple-waves).
+Verwenden Sie die  **[!UICONTROL Anzahl der Nachrichten]** -Option, um die Anzahl der Nachrichten zu definieren, die innerhalb desselben XML-Versandpakets gruppiert sind. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
 
-* **[!UICONTROL SMTP-Versand testen]**: Verwenden Sie diese Option, um den Versand per SMTP zu testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, aber nicht gesendet: Für jeden Empfänger des Versands stellt Campaign eine Verbindung mit dem Server des SMTP-Anbieters her, führt den SMTP-Befehl RCPT TO aus und schließt die Verbindung vor dem SMTP-Befehl DATA.
+>[!IMPORTANT]
+>
+>Wenn der Versand durch Duplizieren eines existierenden Versands erstellt wird, wird dieser Parameter zurückgesetzt.
 
-  >[!NOTE]
-  >
-  >* Diese Option darf bei Mid-Sourcing nicht festgelegt werden.
-  >
-  >* Weitere Informationen zur SMTP-Server-Konfiguration finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=de#smtp-relay){target="_blank"}.
+### Testen des Versands
 
-* **[!UICONTROL E-Mail-BCC]**: Mit dieser Option können Sie mit der BCC-Funktion E-Mails in einem externen System speichern, indem Sie einfach eine E-Mail-Adresse als BCC zu Ihrer Versandzielgruppe hinzufügen. [Weitere Informationen](email-parameters.md).
+Verwenden Sie die  **[!UICONTROL SMTP-Versand testen]** Option zum Testen des Versands über SMTP. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, aber nicht gesendet: Für jeden Empfänger des Versands stellt Campaign eine Verbindung mit dem Server des SMTP-Anbieters her, führt den SMTP-Befehl RCPT TO aus und schließt die Verbindung vor dem SMTP-Befehl DATA.
+
+>[!NOTE]
+>
+>* Diese Option darf bei Mid-Sourcing nicht festgelegt werden.
+>
+>* Weitere Informationen zur SMTP-Server-Konfiguration finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=de#smtp-relay){target="_blank"}.
 
 ## Versenden in mehreren Schüben {#sending-using-multiple-waves}
 
