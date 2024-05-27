@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 52863e9cb3b9ccf03c8e2b838827af862b30e3b9
+source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 69%
+source-wordcount: '1278'
+ht-degree: 76%
 
 ---
 
@@ -48,6 +48,8 @@ Verwenden Sie die  **[!UICONTROL SMTP-Versand testen]** Option zum Testen des Ve
 
 Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Sie Sendungen in mehrere Schübe unterteilen. Konfigurieren Sie die Anzahl der Schübe und ihre Größe in Bezug auf den gesamten Versand.
 
+### Schübe aktivieren {#enable-waves}
+
 Gehen Sie wie folgt vor, um Schübe zu definieren:
 
 1. Öffnen Sie die Versandeigenschaften und navigieren Sie zum **[!UICONTROL Versand]** Registerkarte.
@@ -55,26 +57,27 @@ Gehen Sie wie folgt vor, um Schübe zu definieren:
 
    ![](assets/delivery-define-waves.png)
 
+### Schübe konfigurieren {#config-waves}
 
-1. Konfigurieren Sie Schübe wie unten beschrieben.
+>[!NOTE]
+>
+>Sie können nur die Größe und die Zeitverzögerung zwischen zwei aufeinanderfolgenden Schüben definieren. Die Empfängerauswahlkriterien für jeden Schub können nicht konfiguriert werden.
 
-   >[!NOTE]
-   >
-   >Sie können nur die Größe und die Zeitverzögerung zwischen zwei aufeinanderfolgenden Schüben definieren. Die Empfängerauswahlkriterien für jeden Schub können nicht konfiguriert werden.
+Sie können entweder die Größe der einzelnen Schübe definieren oder sie einem Kalender hinzufügen.
 
-Sie können Folgendes definieren:
+* **Definieren der Größe für jeden Schub**. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
 
-    * **Die Größe für jeden Schub**. Wenn Sie beispielsweise ** eingeben[!UICONTROL 30 %]** im entsprechenden Feld enthält jeder Schub 30 % der im Versand enthaltenen Nachrichten, mit Ausnahme des letzten Schubs, der 10 % der Nachrichten ausmacht.
-    
-    Im **[!UICONTROL Zeitraum]** die Verzögerung zwischen dem Start zweier aufeinander folgender Schübe angeben. Wenn Sie beispielsweise ** eingeben[!UICONTROL 2d]**, die erste Welle beginnt sofort, die zweite Welle wird in zwei Tagen starten, die dritte Welle in vier Tagen, und so weiter.
-    
-    ![](assets/delivery-waves-size.png)
-    
-    * **Ein Kalender für den Versand jedes Schubs**.  Der erste Schub entspricht beispielsweise 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten und beginnt sofort. Die beiden nächsten Schübe vervollständigen den Versand und starten in Sechs-Stunden-Intervallen.
-    
-    Im **[!UICONTROL Starten]** Spalte geben Sie die Verzögerung zwischen dem Start zweier aufeinander folgender Schübe an. Im **[!UICONTROL Größe]** eine feste Zahl oder einen Prozentsatz eingeben.
-    
-    ![](assets/delivery-waves-calendar.png)
+  Geben Sie im Feld **[!UICONTROL Zeitraum]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
+
+  ![](assets/delivery-waves-size.png)
+
+* **Definieren eines Kalenders zum Senden jedes Schubs**.  Der erste Schub entspricht beispielsweise 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten und beginnt sofort. Die beiden nächsten Schübe vervollständigen den Versand und starten in Sechs-Stunden-Intervallen.
+
+  Geben Sie in der Spalte **[!UICONTROL Start]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Geben Sie in der Spalte **[!UICONTROL Größe]** eine feste Zahl oder einen Prozentsatz ein.
+
+  ![](assets/delivery-waves-calendar.png)
+
+### Prüfung der Wave Scheduling {#check-waves}
 
 Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) stellt sicher, dass der letzte Schub vor der Versand-Deadline eingeplant ist. Kampagnentypologien und ihre Regeln, die auf der Registerkarte **[!UICONTROL Typologie]** der Versandeigenschaften konfiguriert sind, werden in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC--> vorgestellt.
 
@@ -84,9 +87,14 @@ Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) st
 >
 >Bei der Konfiguration der letzten Schübe müssen Sie auch genügend Zeit für weitere Versuche festlegen. Weitere Informationen zu Wiederholungen finden Sie unter [diesem Abschnitt](delivery-failures.md#retries).
 
+### Schübe überwachen {#monitor-waves}
+
 Um Ihre Sendungen zu überwachen, navigieren Sie zu den Versandlogs. Siehe [diese Seite](send.md)
 
 Die Versandlogs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
+
+
+### Wellen Proben {#samples-waves}
 
 Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
