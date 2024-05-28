@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 607ef2ab8f1f1c7400451019e188c70f8c7d6091
+source-git-commit: 8621ad138d90fed92788d1b9753adeb2fe772a71
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 74%
+source-wordcount: '1097'
+ht-degree: 80%
 
 ---
 
@@ -26,10 +26,7 @@ _Mittwoch, 28. Mai 2024_
 
 ### Migration zu OAuth-Server-zu-Server-Anmeldedaten {#change-8-5-3}
 
-* Ab dieser Version sind ausgehende Campaign-Integrationen mit Adobe-Lösungen und -Apps bei veralteten JWT-Anmeldedaten von Adobe auf OAuth Server-zu-Server-Anmeldedaten angewiesen. Adobe führt die Migration von JWT zu OAuth für Ihre ausgehenden Integrationen durch, z. B. die Integration von Campaign mit Analytics oder die Integration von Experience Cloud-Triggern.
-
-  Wenn Sie eingehende Integrationen mit Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie im Abschnitt [diese Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. Vorhandene Service-Konto-Anmeldedaten (JWT) funktionieren weiterhin, bis **27. Januar 2025**. Darüber hinaus unterstützt die Developer Console die Erstellung neuer Service Account (JWT)-Anmeldedaten auch weiterhin, bis **3. Juni 2024**. Eine neue JWT-Berechtigung (Service Account) kann nach diesem Datum nicht mehr erstellt oder einem Projekt hinzugefügt werden.
-
+Ab dieser Version sind ausgehende Campaign-Integrationen mit Adobe-Lösungen und -Apps bei veralteten JWT-Anmeldedaten von Adobe auf OAuth Server-zu-Server-Anmeldedaten angewiesen. [Weitere Informationen](#change-8-7-1)
 
 ### Fehlerbehebungen {#fixes-8-5-3}
 
@@ -62,9 +59,11 @@ _2. Mai 2024_
 
 * Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
 
-* Ab dieser Version sind ausgehende Campaign-Integrationen mit Adobe-Lösungen und -Apps bei veralteten JWT-Anmeldedaten von Adobe auf OAuth Server-zu-Server-Anmeldedaten angewiesen. Adobe führt die Migration von JWT zu OAuth für Ihre ausgehenden Integrationen durch, z. B. die Integration von Campaign mit Analytics oder die Integration von Experience Cloud-Triggern.
+### Migration zu OAuth-Server-zu-Server-Anmeldedaten {#change-8-7-1}
 
-  Wenn Sie eingehende Integrationen mit Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie im Abschnitt [diese Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. Vorhandene Service-Konto-Anmeldedaten (JWT) funktionieren weiterhin, bis **27. Januar 2025**. Darüber hinaus unterstützt die Developer Console die Erstellung neuer Service Account (JWT)-Anmeldedaten auch weiterhin, bis **3. Juni 2024**. Eine neue JWT-Berechtigung (Service Account) kann nach diesem Datum nicht mehr erstellt oder einem Projekt hinzugefügt werden.
+Ab dieser Version sind ausgehende Campaign-Integrationen mit Adobe-Lösungen und -Apps bei veralteten JWT-Anmeldedaten von Adobe auf OAuth Server-zu-Server-Anmeldedaten angewiesen. Adobe führt die Migration von JWT zu OAuth für Ihre ausgehenden Integrationen durch, z. B. die Integration von Campaign mit Analytics oder die Integration von Experience Cloud-Triggern.
+
+Wenn Sie eingehende Integrationen mit Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie im Abschnitt [diese Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. Vorhandene Service-Konto-Anmeldedaten (JWT) funktionieren weiterhin, bis **27. Januar 2025**. Darüber hinaus unterstützt die Developer Console die Erstellung neuer Service Account (JWT)-Anmeldedaten auch weiterhin, bis **3. Juni 2024**. Eine neue JWT-Berechtigung (Service Account) kann nach diesem Datum nicht mehr erstellt oder einem Projekt hinzugefügt werden.
 
 
 ### Allgemeine Verbesserungen {#improvements-8-7-1}
