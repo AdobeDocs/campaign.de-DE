@@ -3,10 +3,10 @@ title: Verwenden von Workflow-Daten
 description: Erfahren Sie, wie Sie die Workflow-Daten verwenden.
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 90%
+source-wordcount: '736'
+ht-degree: 85%
 
 ---
 
@@ -42,9 +42,9 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
 * **[!UICONTROL Zielgruppe analysieren…]**
 
-  Diese Option bietet Zugriff auf den Assistenten zur beschreibenden Analyse, welcher die Erstellung von Statistiken und Berichten über die in der Transition übermittelten Daten ermöglicht.
+  Greifen Sie mithilfe dieses Menüs auf den Assistenten zur deskriptiven Analyse zu, der die Erstellung von Statistiken und Berichten über die Transitionsdaten ermöglicht.
 
-  Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
+  Erfahren Sie, wie Sie den Analyse-Assistenten in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
 
 Die Zielgruppendaten werden bei Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie können den Workflow so konfigurieren, dass alle Arbeitstabellen zugänglich bleiben: Überprüfen Sie die **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population beibehalten]** in den Workflow-Eigenschaften.
 
