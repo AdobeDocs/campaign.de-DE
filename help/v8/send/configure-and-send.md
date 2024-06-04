@@ -6,15 +6,15 @@ role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1278'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren und Durchführen des Versands {#configure-delivery}
 
-Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können einen Versand definieren [priority](#delivery-priority), einrichten [Wellen](#sending-using-multiple-waves)und testen Sie den Versand. Sobald diese Konfiguration abgeschlossen ist, können Sie den Versand wie unter [diesem Abschnitt](#confirm-delivery). Nachrichten werden dann sofort oder je nach Versand gesendet [Zeitplan](#schedule-delivery-sending).
+Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können für den Versand eine [Priorität](#delivery-priority) definieren, [Schübe](#sending-using-multiple-waves) einrichten und den Versand testen. Nach Abschluss dieser Konfiguration können Sie den Versand wie in [diesem Abschnitt](#confirm-delivery) beschrieben bestätigen. Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten [Zeitplan](#schedule-delivery-sending) gesendet.
 
 ## Festlegen zusätzlicher Parameter {#delivery-additional-parameters}
 
@@ -22,13 +22,13 @@ Vor der Durchführung des Versands können Sie auf der Registerkarte **[!UICONTR
 
 ![](assets/delivery-properties-delivery.png)
 
-### Delivery priority {#delivery-priority}
+### Versandpriorität {#delivery-priority}
 
-Verwenden Sie die **[!UICONTROL Versandpriorität]** Option zur Änderung der Versandreihenfolge Ihrer Sendungen durch Festlegen der Prioritätsstufe, von **[!UICONTROL Sehr niedrig]** nach **[!UICONTROL Sehr hoch]** (der Standardwert ist **[!UICONTROL Normal]**).
+Verwenden Sie die Option **[!UICONTROL Versandpriorität]**, um die Versandreihenfolge für Ihre Sendungen zu ändern. Legen Sie dazu eine Prioritätsstufe von **[!UICONTROL Sehr niedrig]** bis **[!UICONTROL Sehr hoch]** fest (der Standardwert ist **[!UICONTROL Normal]**).
 
-### Stapelmenge
+### Kontingentgröße
 
-Verwenden Sie die  **[!UICONTROL Anzahl der Nachrichten]** -Option, um die Anzahl der Nachrichten zu definieren, die innerhalb desselben XML-Versandpakets gruppiert sind. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
+Mithilfe der Option **[!UICONTROL Kontingentgröße]** können Sie die Anzahl der in einem XML-Versand-Package enthaltenen Nachrichten festlegen. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ Verwenden Sie die  **[!UICONTROL Anzahl der Nachrichten]** -Option, um die Anzah
 
 ### Testen des Versands
 
-Verwenden Sie die  **[!UICONTROL SMTP-Versand testen]** Option zum Testen des Versands über SMTP. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, aber nicht gesendet: Für jeden Empfänger des Versands stellt Campaign eine Verbindung mit dem Server des SMTP-Anbieters her, führt den SMTP-Befehl RCPT TO aus und schließt die Verbindung vor dem SMTP-Befehl DATA.
+Verwenden Sie die Option **[!UICONTROL SMTP-Versand testen]**, um den Versand per SMTP zu testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, aber nicht gesendet: Für jeden Empfänger des Versands stellt Campaign eine Verbindung mit dem Server des SMTP-Anbieters her, führt den SMTP-Befehl RCPT TO aus und schließt die Verbindung vor dem SMTP-Befehl DATA.
 
 >[!NOTE]
 >
@@ -46,55 +46,55 @@ Verwenden Sie die  **[!UICONTROL SMTP-Versand testen]** Option zum Testen des Ve
 
 ## Versenden in mehreren Schüben {#sending-using-multiple-waves}
 
-Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Sie Sendungen in mehrere Schübe unterteilen. Konfigurieren Sie die Anzahl der Schübe und ihre Größe in Bezug auf den gesamten Versand.
+Um eine gleichmäßige Auslastung sicherzustellen, können Sie Sendungen in mehrere Schübe unterteilen. Konfigurieren Sie die Anzahl der Schübe und ihre Größe in Bezug auf den gesamten Versand.
 
-### Schübe aktivieren {#enable-waves}
+### Aktivieren von Schüben {#enable-waves}
 
 Gehen Sie wie folgt vor, um Schübe zu definieren:
 
-1. Öffnen Sie die Versandeigenschaften und navigieren Sie zum **[!UICONTROL Versand]** Registerkarte.
-1. Aktivieren Sie die **[!UICONTROL In mehreren Schüben versenden]** und klicken Sie auf die **[!UICONTROL Definieren von Schüben...]** -Link.
+1. Öffnen Sie die Versandeigenschaften und navigieren Sie zur Registerkarte **[!UICONTROL Versand]**.
+1. Aktivieren Sie die Option **[!UICONTROL In mehreren Schüben versenden]** und klicken Sie auf den Link **[!UICONTROL Definition der Schübe]**.
 
    ![](assets/delivery-define-waves.png)
 
-### Schübe konfigurieren {#config-waves}
+### Konfigurieren von Schüben {#config-waves}
 
 >[!NOTE]
 >
->Sie können nur die Größe und die Zeitverzögerung zwischen zwei aufeinanderfolgenden Schüben definieren. Die Empfängerauswahlkriterien für jeden Schub können nicht konfiguriert werden.
+>Sie können nur die Größe und den zeitlichen Abstand zwischen zwei aufeinanderfolgenden Schüben definieren. Die Empfängerauswahlkriterien für jeden Schub können nicht konfiguriert werden.
 
 Sie können entweder die Größe der einzelnen Schübe definieren oder sie einem Kalender hinzufügen.
 
-* **Definieren der Größe für jeden Schub**. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
+* **Definieren Sie die Größe jedes Schubs**. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der im Versand enthaltenen Nachrichten. Nur der letzte Schub enthält 10 % der Nachrichten.
 
-  Geben Sie im Feld **[!UICONTROL Zeitraum]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
+  Geben Sie im Feld **[!UICONTROL Zeitraum]** den zeitlichen Abstand zwischen zwei aufeinanderfolgenden Schüben an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
 
   ![](assets/delivery-waves-size.png)
 
-* **Definieren eines Kalenders zum Senden jedes Schubs**.  Der erste Schub entspricht beispielsweise 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten und beginnt sofort. Die beiden nächsten Schübe vervollständigen den Versand und starten in Sechs-Stunden-Intervallen.
+* **Definieren Sie einen Kalendereintrag für den Versand jedes Schubs**. Beispielsweise beinhaltet der erste Schub 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten und beginnt sofort. Die beiden nächsten Schübe vervollständigen den Versand und starten in Sechs-Stunden-Intervallen.
 
   Geben Sie in der Spalte **[!UICONTROL Start]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Geben Sie in der Spalte **[!UICONTROL Größe]** eine feste Zahl oder einen Prozentsatz ein.
 
   ![](assets/delivery-waves-calendar.png)
 
-### Prüfung der Wave Scheduling {#check-waves}
+### Prüfung der Schub-Planung {#check-waves}
 
 Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) stellt sicher, dass der letzte Schub vor der Versand-Deadline eingeplant ist. Kampagnentypologien und ihre Regeln, die auf der Registerkarte **[!UICONTROL Typologie]** der Versandeigenschaften konfiguriert sind, werden in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC--> vorgestellt.
 
 >[!IMPORTANT]
 >
->Achten Sie darauf, dass die letzten Schübe nicht die Gültigkeitsdauer des Versands überschreiten, die in der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt wird. Ansonsten werden manche Nachrichten möglicherweise nicht gesendet. Erfahren Sie mehr über die Gültigkeitsdauer eines Versands in [diesem Abschnitt](delivery-failures.md#valid-period).
+>Achten Sie darauf, dass die letzten Schübe nicht die Versand-Deadline überschreiten, die auf der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt ist. Andernfalls werden einige Nachrichten möglicherweise nicht gesendet. Weitere Informationen zum Gültigkeitszeitraum eines Versands finden Sie in [diesem Abschnitt](delivery-failures.md#valid-period).
 >
->Bei der Konfiguration der letzten Schübe müssen Sie auch genügend Zeit für weitere Versuche festlegen. Weitere Informationen zu Wiederholungen finden Sie unter [diesem Abschnitt](delivery-failures.md#retries).
+>Planen Sie beim Konfigurieren der letzten Schübe zudem genügend Zeit für weitere Zustellversuche ein. Nähere Informationen zu weiteren Zustellversuchen finden Sie in [diesem Abschnitt](delivery-failures.md#retries).
 
-### Schübe überwachen {#monitor-waves}
+### Überwachen von Schüben {#monitor-waves}
 
-Um Ihre Sendungen zu überwachen, navigieren Sie zu den Versandlogs. Siehe [diese Seite](send.md)
+Öffnen Sie die Versand-Logs, um Ihre Sendungen zu überwachen. Siehe [diese Seite](send.md).
 
-Die Versandlogs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
+Die Versand-Logs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
 
 
-### Wellen Proben {#samples-waves}
+### Beispiele für Schübe {#samples-waves}
 
 Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
@@ -104,15 +104,15 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   Um zu verhindern, dass Ihre Sendungen als Spam eingestuft werden, können Sie das gesendete Volumen schrittweise mithilfe von Schüben erhöhen. Damit gewährleisten Sie eine problemlose Entwicklung in der Anfangsphase und die Verringerung der Anzahl der ungültigen Adressen.
 
-  Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Wählen Sie beispielsweise für den ersten Schub 10 %, für den zweiten 15 % usw.
+  Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Wählen Sie beispielsweise für den ersten Schub 10 %, für den zweiten 15 % usw. aus.
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
-* **Kampagnen mit Callcenter**
+* **Kampagnen mit Callcentern**
 
-  Bei der telefonischen Verwaltung einer Treuekampagne verfügt Ihr Unternehmen über eine begrenzte Kapazität zur Verarbeitung der Anzahl der Anrufe an Abonnenten.
+  Bei telefonischen Treuekampagnen haben Unternehmen oft nur begrenzte Kapazitäten, um Abonnierende anzurufen.
 
-  Mithilfe von Schüben können Sie die Anzahl der Nachrichten auf 20 pro Tag beschränken, beispielsweise unter Berücksichtigung der täglichen Verarbeitungskapazität eines Callcenters.
+  Mithilfe von Schüben kann die Anzahl der Nachrichten beispielsweise auf 20 pro Tag beschränkt werden, sofern dies der täglichen Verarbeitungskapazität eines Callcenters entspricht.
 
   Wählen Sie dazu die Option **[!UICONTROL Mehrere Schübe derselben Größe planen]**. Geben Sie **[!UICONTROL 20]** als Schubgröße und **[!UICONTROL 1d]** im Feld **[!UICONTROL Zeitraum]** ein.
 
@@ -182,7 +182,7 @@ Dies bietet die Möglichkeit, den Versand auf einen späteren Zeitpunkt zu versc
 
 Datum und Uhrzeit beziehen sich jeweils auf den aktuellen Benutzer. Die unter dem Eingabefeld des Kontaktdatums situierte Dropdown-Liste **[!UICONTROL Zeitzone]** ermöglicht es, die oberhalb eingegebene Uhrzeit der ausgewählten Zeitzone anzupassen.
 
-Wenn Sie also beispielsweise einen Versand für 8 Uhr Brüsseler Zeit terminieren, wird die Uhrzeit automatisch in die ausgewählte Zeitzone konvertiert:
+Wenn Sie also beispielsweise einen Versand für 8 Uhr MEZ terminieren, wird die Uhrzeit automatisch in die ausgewählte Zeitzone konvertiert:
 
 ![](assets/delivery-schedule-time-zone.png)
 

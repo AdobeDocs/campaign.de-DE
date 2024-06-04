@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Workflow-Daten verwenden.
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -42,11 +42,11 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
 * **[!UICONTROL Zielgruppe analysieren…]**
 
-  Greifen Sie mithilfe dieses Menüs auf den Assistenten zur deskriptiven Analyse zu, der die Erstellung von Statistiken und Berichten über die Transitionsdaten ermöglicht.
+  Greifen Sie über dieses Menü auf den Analyse-Assistenten (deskriptiv) zu, mit dem dem Sie Statistiken und Berichte über die Transitionsdaten erstellen können.
 
-  Erfahren Sie, wie Sie den Analyse-Assistenten in [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
+  Informationen zum Verwenden des Analyse-Assistenten (deskriptiv) finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
 
-Die Zielgruppendaten werden bei Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie können den Workflow so konfigurieren, dass alle Arbeitstabellen zugänglich bleiben: Überprüfen Sie die **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population beibehalten]** in den Workflow-Eigenschaften.
+Die Zielgruppendaten werden bei der Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie können den Workflow so konfigurieren, dass alle Arbeitstabellen zugänglich bleiben: Aktivieren Sie in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]**.
 
 ![](assets/wf-purge-data-option.png)
 
@@ -65,7 +65,7 @@ Auf diese Weise können Sie beispielsweise Daten verwenden, die über eine Liste
 %= targetData.FIELD %
 ```
 
-Personalisierungselemente vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) stehen in Zielgruppen-Workflows nicht zur Verfügung. Dies bedeutet, dass die Versandzielgruppe im Workflow bestimmt und in der eingehenden  Transition des Versands spezifiziert werden muss.
+Personalisierungselemente vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) stehen in Zielgruppen-Workflows nicht zur Verfügung. Dies bedeutet, dass die Versandzielgruppe im Workflow bestimmt und in der eingehenden Transition des Versands spezifiziert werden muss.
 
 Im folgenden Beispiel sollen Kundeninformationen in einer Liste gesammelt und dann in einer personalisierten E-Mail verwendet werden. Gehen Sie wie folgt vor:
 
@@ -99,7 +99,7 @@ Im folgenden Beispiel sollen Kundeninformationen in einer Liste gesammelt und da
 
    >[!CAUTION]
    >
-   >Nur die in der Transition enthaltenen Daten können zur Personalisierung des Versands verwendet werden. **targetData** Personalisierungsfelder sind nur für die Eingangspopulation der **[!UICONTROL Versand]** -Aktivität.
+   >Nur die in der Transition enthaltenen Daten können zur Personalisierung des Versands verwendet werden. Personalisierungsfelder vom Typ **targetData** sind nur für die Eingangspopulation der Aktivität **[!UICONTROL Versand]** verfügbar.
 
 1. Verwenden Sie in der Versandvorlage die im Workflow gesammelten Daten.
 

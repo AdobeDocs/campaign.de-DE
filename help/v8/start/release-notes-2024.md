@@ -3,15 +3,15 @@ title: Versionshinweise 2023 zu Campaign v8 (Konsole)
 description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 2023
 feature: Release Notes
 source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Versionshinweise 2024 {#2024-rn}
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen von 2024** aufgelistet.
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen 2024** aufgelistet.
 
 
 ## Version 8.6.2 {#release-8-6-2}
@@ -53,4 +53,4 @@ _14. Februar 2024_
 
 Die folgenden Probleme wurden in dieser Version behoben:
 
-NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984, NEO-64 80, NEO-63973, NEO-63879, NEO-63815, NEO-63657, NEO-63539, NEO-63387, NEO-63294, NEO-6 3174, NEO-62964, NEO-62750, NEO-62686, NEO-62455, NEO-62406, NEO-61580, NEO-61199 O-60786, NEO-59544, NEO-59198, NEO-59059, NEO-58637, NEO-55197, NEO-52542, NEO-5048 8, NEO-47789
+NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984, NEO-64680, NEO-63973, NEO-63879, NEO-63815, NEO-63657, NEO-63539, NEO-63387, NEO-63294, NEO-63174, NEO-62964, NEO-62750, NEO-62686, NEO-62455, NEO-62406, NEO-61580, NEO-61199, NEO-60786, NEO-59544, NEO-59198, NEO-59059, NEO-58637, NEO-55197, NEO-52542, NEO-50488, NEO-47789

@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 role: User
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
 source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1172'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 
 
-Die Deduplizierung dient der Identifizierung von Dubletten in der oder den eingehenden Aktivitäten. Die Deduplizierung kann für die E-Mail-Adresse, Telefonnummer oder ein anderes Feld durchgeführt werden.
+Die Deduplizierung dient der Identifizierung von Dubletten in der oder den eingehenden Aktivitäten. Zur Deduplizierung können beispielsweise die E-Mail-Adresse, eine Telefonnummer oder andere Felder herangezogen werden.
 
 Die Aktivität **[!UICONTROL Deduplizierung]** wird zum Entfernen von Duplikat-Zeilen aus einem Datensatz verwendet. Die folgenden Datensätze können beispielsweise als Duplikate betrachtet werden, da sie dieselbe E-Mail-Adresse und dieselbe Mobil- und/oder Festnetztelefonnummer haben.
 
@@ -172,6 +172,6 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Anhand dieser drei Werte lässt sich die durch die Deduplizierung ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** der Name der Tabelle, in der Zielgruppenkennungen gespeichert werden, **[!UICONTROL schema]** ist das Schema der Population (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
+Anhand der drei Werte lässt sich die durch die Deduplizierung ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Kennungen der Zielgruppe enthält; **[!UICONTROL schema]** ist das Schema der Population, (in der Regel „nms:recipient“) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.

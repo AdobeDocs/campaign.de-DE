@@ -6,9 +6,9 @@ title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
 source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '613'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -201,7 +201,7 @@ ht-degree: 99%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Daten-Packages ](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
 + [Campaign Control Panel >](https://experienceleague.adobe.com/de/docs/control-panel/using/control-panel-home)
 + [Handbuch zur Kampagnenautomatisierung >](https://experienceleague.adobe.com/de/docs/campaign/automation/home)

@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1322'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -24,20 +24,20 @@ Adobe Campaign v8 enthält die folgenden Versandkanäle:
 
 * **E-Mail-Kanal**: Ein E-Mail-Versand richtet personalisierte elektronische Nachrichten an eine zuvor bestimmte Zielpopulation. [Weitere Informationen](#gs-channel-email)
 
-* **Mobile Kanäle**: Ein Versand über Mobile-Kanäle ermöglicht den Versand personalisierter Nachrichten auf Mobilgeräten an die Zielpopulation. [Weitere Informationen](#gs-channel-sms)
+* **Mobile-Kanäle**: Beim Versand über Mobile-Kanäle können Sie personalisierte Nachrichten auf Mobilgeräten an die Zielpopulation senden. [Weitere Informationen](#gs-channel-sms)
 
-* **Mobile-App-Kanal**: Mit Mobile-App-Sendungen können Sie Benachrichtigungen an iOS- und Android-Geräte senden. [Weitere Informationen](#gs-channel-push)
+* **Mobile-App-Kanal**: Beim Mobile-App-Versand können Sie Benachrichtigungen an iOS- und Android-Geräte senden. [Weitere Informationen](#gs-channel-push)
 
-* **Briefpost-Kanal**: Ein Briefpost-Versand erzeugt eine Ausgabedatei, die die Daten der Zielpopulation enthält. [Weitere Informationen](#gs-channel-direct)
+* **Briefpost-Kanal**: Beim Briefpost-Versand können Sie eine Ausgabedatei erzeugen, die Daten zur Zielpopulation enthält. [Weitere Informationen](#gs-channel-direct)
 
 
-  Weitere Kanäle werden beschrieben unter [diesem Abschnitt](#other-channels).
+  Sonstige Kanäle werden in [diesem Abschnitt](#other-channels) beschrieben.
 
   >[!NOTE]
   >
   >Die Anzahl der verfügbaren Kanäle hängt von Ihrem Vertrag ab. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
-## Kanal auswählen {#gs-channel}
+## Auswählen des Kanals {#gs-channel}
 
 ### E-Mail-Kanal {#gs-channel-email}
 
@@ -46,10 +46,10 @@ Der [E-Mail-Kanal](../send/direct-mail.md) ist einer der wichtigsten Kanäle in 
 Verschiedene Typen von E-Mails können gesendet werden:
 
 * Einmalige E-Mails: E-Mails, die ein einziges Mal an eine definierte Zielgruppe gesendet werden. Sie werden zur Verbreitung spezifischer Inhalte verwendet, die nur ein einziges Mal vorbereitet und gesendet werden (Newsletter, Werbe-E-Mails etc.).
-* Wiederkehrende E-Mails: In einer Kampagne wird regelmäßig dieselbe E-Mail gesendet und jeder Versand und seine Berichte werden regelmäßig aggregiert. Dieselbe E-Mail wird gesendet, in der Regel aber an eine andere Zielgruppe, basierend auf der für den Versandtag infrage kommenden Zielgruppe. Ein häufiges Beispiel ist eine Geburtstags-E-Mail. Weitere Informationen hierzu finden Sie unter [Wiederkehrende Sendungen](../../automation/workflow/recurring-delivery.md).
-* Transaktions-E-Mails: einzelne E-Mails, die auf der Basis des Kundenverhaltens ausgelöst werden. Siehe auch [Transaktionsnachrichten](../send/transactional.md).
+* Wiederkehrende E-Mails: Ein und dieselbe E-Mail wird im Rahmen einer Kampagne regelmäßig gesendet und die Sendungen und zugehörigen Berichte werden regelmäßig aggregiert. Die E-Mail selbst bleibt zwar gleich, doch die Zielgruppe ändert sich je nach Versandtag. Ein Beispiel dafür sind Geburtstags-E-Mails. Weitere Informationen hierzu finden Sie unter [Wiederkehrender Versand](../../automation/workflow/recurring-delivery.md).
+* Transaktions-E-Mails: Hierbei handelt es sich um einzelne E-Mails, die abhängig vom Kundenverhalten ausgelöst werden. Siehe [Transaktionsnachrichten](../send/transactional.md).
 
-Weitere Informationen zur Verwendung von Sendungen und Empfehlungen finden Sie unter Adobe Campaign Classic . [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=de#sending-messages){target="_blank"}
+Weitere Informationen sowie Empfehlungen zum Versand finden Sie in der Adobe Campaign Classic-Dokumentation unter [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=de#sending-messages){target="_blank"}.
 
 Weiterführende Informationen zu den unterschiedlichen Versandarten finden Sie in [diesem Abschnitt](#types-of-deliveries).
 
@@ -69,28 +69,28 @@ Folgende Voraussetzungen müssen gegeben sein, um SMS- oder LINE-Nachrichten an 
 
 ### Push-Benachrichtigungs-Kanal {#gs-channel-push}
 
-Mit Adobe Campaign können Sie personalisierte und segmentierte Nachrichten senden [Push-Benachrichtigungen](../send/push.md) auf mobilen iOS- und Android-Geräten über dedizierte Apps. Nachdem die Konfigurations- und Integrationsschritte ausgeführt wurden, können iOS- und Android-Sendungen erstellt und mit Adobe Campaign gesendet werden. Sie können auch Rich-Benachrichtigungen mit Bildern oder Videos erstellen und an Android-Geräte senden.
+Sie können mit Adobe Campaign über spezielle Apps personalisierte und segmentspezifische [Push-Benachrichtigungen](../send/push.md) an iOS- und Android-Mobilgeräte senden. Nach der Durchführung von Konfigurations- und Integrationsschritten können iOS- und Android-Sendungen mit Adobe Campaign erstellt und gesendet werden. Sie können auch Rich-Benachrichtigungen mit Bildern oder Videos erstellen und an Android-Geräte senden.
 
 ### Briefpost-Kanal {#gs-channel-direct}
 
-[Briefpost](../send/direct-mail.md) ist ein Offline-Kanal, mit dem Sie eine externe Datei erstellen, personalisieren und generieren können, die für Ihre Briefpost-Dienstleister freigegeben werden kann. Verwenden Sie diesen Kanal, um Online- und Offline-Kanäle in Ihren Journey zu orchestrieren.
+[Briefpost](../send/direct-mail.md) ist ein Offline-Kanal, über den Sie eine externe Datei erstellen, personalisieren und erzeugen und dann für Ihren Briefpost-Dienstleister freigeben können. Verwenden Sie diesen Kanal, um Online- und Offline-Kanäle in Ihren Customer Journeys zu koordinieren.
 
-Wenn Sie einen Briefpost-Versand vorbereiten, erzeugt Adobe Campaign eine Datei, die alle Zielgruppenprofile und die ausgewählte Kontaktinformationen enthält (z. B. Postanschrift). Sie können diese Datei dann an Ihren Briefpost-Dienstleister senden, der sich um den tatsächlichen Versand kümmert.
+Wenn Sie einen Briefpost-Versand vorbereiten, erzeugt Adobe Campaign eine Datei, die alle Zielgruppenprofile und die ausgewählte Kontaktinformationen (z. B. Postanschrift) enthält. Anschließend können Sie diese Datei an Ihren Briefpost-Dienstleister senden, der den tatsächlichen Versand vornimmt.
 
 
 ### Sonstige Kanäle {#other-channels}
 
-Adobe Campaign verfügt außerdem über eine Vorlage für den Telefonversand, mit der externe Sendungen erstellt werden können. Die Verwendung dieses Kanals setzt voraus, dass Sie dedizierte Methoden zur Verarbeitung von Ausgabedateien implementieren. Die Konfigurationsschritte sind mit denen des [Brief-Kanals](../send/direct-mail.md) identisch.
+Adobe Campaign enthält außerdem eine Vorlage für den Festnetztelefon-Versand, die zur Erstellung von externen Sendungen dient.  Um diesen Kanal verwenden zu können, müssen Sie spezielle Methoden zur Verarbeitung von Ausgabedateien implementieren.  Die Konfigurationsschritte sind mit denen des [Briefpost-Kanals](../send/direct-mail.md) identisch.
 
 >[!NOTE]
 >
->Der Telefonkanal ist kein integrierter Kanal. Seine Implementierung erfordert die Einbindung von Adobe Consulting oder einem Adobe-Partner. Wenden Sie sich für weitere Informationen an Ihren Adobe-Support-Mitarbeiter.
+>Der Telefon-Kanal ist kein nativer Kanal. Seine Implementierung erfordert die Einbindung von Adobe Consulting oder einem Adobe-Partner. Wenden Sie sich für weitere Informationen an Ihren Adobe-Support-Mitarbeiter.
 
-Sendungen vom Typ &quot;Sonstige&quot; verwenden eine spezifische technische Vorlage, die keinen Vorgang ausführt. Auf diese Weise können außerhalb der Adobe Campaign-Plattform ausgeführte Marketing-Aktionen verwaltet werden.
+Sendungen vom Typ „Sonstige“ verwenden eine spezifische technische Vorlage, die keinen Vorgang auslöst. Dies ermöglicht beispielsweise die Verwaltung von außerhalb der Adobe Campaign-Plattform durchgeführten Marketing-Aktionen.
 
-Dieser Kanal besitzt keinen bestimmten Mechanismus. Es handelt sich dabei um einen generischen Kanal mit einer eigenen externen Konto-Routing-Option, einem Versandvorlagentyp und einer Kampagnen-Workflow-Aktivität, genau wie bei jedem anderen Kommunikationskanal, der in Adobe Campaign verfügbar ist. Dieser Kanal ist nur für informative Zwecke konzipiert, wie etwa um Zielgruppeninformationen zu mit externen Tools durchgeführten Kampagnen zu speichern.
+Dieser Kanal besitzt keinen bestimmten Mechanismus. Er ist ein allgemeiner Kanal, der wie jeder andere Kommunikationskanal in Adobe Campaign über eine eigene externe Konto-Routing-Möglichkeit, Kampagnen-Workflow-Aktivität und einen eigenen Versandvorlagentyp verfügt.  Dieser Kanal ist nur für informative Zwecke konzipiert, wie etwa um Zielgruppeninformationen zu Kampagnen zu speichern, die mit anderen Tools als Adobe Campaign durchgeführt wurden.
 
-## Versandtyp auswählen {#types-of-deliveries}
+## Auswählen des Versandtyps {#types-of-deliveries}
 
 In Campaign gibt es drei Typen von Versandobjekten:
 
@@ -104,13 +104,13 @@ Workflows bieten abhängig vom zu verwendeten Kanal auch spezifische Versandakti
 
 ### Wiederkehrender Versand {#recurring-delivery}
 
-A **Wiederkehrender Versand** ist im Kontext eines Workflows verfügbar. Damit können Sie bei jeder Ausführung der Aktivität einen neuen Versand erstellen. Auf diese Weise wird vermieden, dass Sie einen neuen Versand für wiederkehrende Aufgaben erstellen müssen. Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das im Jahr 12 Sendungen.
+Ein **wiederkehrender Versand** ist im Kontext eines Workflows verfügbar. Mit diesem Versandtyp können Sie jedes Mal, wenn die Aktivität ausgeführt wird, einen neuen Versand erstellen. Dadurch müssen Sie für sich wiederholende Aufgaben nicht jedes Mal erneut einen Versand erstellen.  Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das im Jahr 12 Sendungen.
 
-Wiederkehrende Sendungen werden über Workflows mit der Aktivität [](../../automation/workflow/recurring-delivery.md)Wiederkehrender Versand erstellt. Ein Beispiel für diese Aktivität finden Sie in diesem Abschnitt: [Erstellen eines wiederkehrenden Versands in einem Zielgruppen-Workflow](../../automation/workflow/send-a-birthday-email.md).
+Wiederkehrende Sendungen werden über Workflows mit der Aktivität [](../../automation/workflow/recurring-delivery.md)Wiederkehrender Versand erstellt. Ein Beispiel für diese Aktivität finden Sie im Abschnitt [Erstellen eines wiederkehrenden Versands in einem Zielgruppen-Workflow](../../automation/workflow/send-a-birthday-email.md).
 
-### Versand (fortlaufend) {#continuous-delivery}
+### Fortlaufender Versand {#continuous-delivery}
 
-A **kontinuierliche Bereitstellung** ist im Kontext eines Workflows verfügbar. Damit können Sie einem bestehenden Versand neue Empfänger hinzufügen, sodass Sie nicht jedes Mal einen neuen Versand erstellen müssen.
+Ein **fortlaufender Versand** ist im Kontext eines Workflows verfügbar. Mit diesem Versandtyp können Sie einem bestehenden Versand neue Empfangende hinzufügen, sodass Sie nicht jedes Mal einen neuen Versand erstellen müssen.
 
 Wenn sich Daten im Versand ändern (Inhalt, Name etc.), wird bei der Ausführung des Versands ein neues Versandobjekt erstellt. Wenn keine Daten geändert wurden, wird dasselbe Versandobjekt erneut verwendet und die Versand- und Trackinglogs werden im selben Objekt hinzugefügt.
 
@@ -143,7 +143,7 @@ Sobald Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, kön
 
 * [Auslösen von Nachrichten](../send/transactional.md) durch ein Ereignis
 
-  Das Campaign-Modul &quot;Transaktionsnachricht (Message Center)&quot; wurde zum Verwalten von Trigger-Nachrichten entwickelt.
+  Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwalten von Trigger-Nachrichten entwickelt.
 
   Weitere Informationen zur Funktion für Transaktionsnachrichten finden Sie in [diesem Abschnitt](../architecture/architecture.md#transac-msg-archi).
 
@@ -153,9 +153,9 @@ Sobald Ihre Nachricht erstellt und ihr Inhalt entworfen und getestet wurde, kön
 
   ![](assets/schedule-send.png)
 
-  Informationen zum Planen des Versands Ihrer Sendungen finden Sie unter [diese Seite](../send/configure-and-send.md)
+  Auf [dieser Seite](../send/configure-and-send.md) erfahren Sie, wie Sie den Versand Ihrer Sendungen planen.
 
-  Siehe auch [Anwendungsfall: Erfahren Sie, wie Sie eine Geburtstags-E-Mail planen und senden.](../../automation/workflow/send-a-birthday-email.md)
+  Weitere Informationen zum Planen und Senden einer Geburtstags-E-Mail finden Sie über diesen [Anwendungsfall](../../automation/workflow/send-a-birthday-email.md).
 
 
 ## Hinzufügen von Personalisierung{#personalization}

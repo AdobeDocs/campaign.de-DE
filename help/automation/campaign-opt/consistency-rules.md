@@ -5,9 +5,9 @@ description: Kohärenzregeln
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
 source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '794'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ Mithilfe von **Kapazitätsregeln** kann etwa verhindert werden, dass die Plattfo
 
 ## Kontrollieren der Kapazität {#control-capacity}
 
-Stellen Sie vor dem Versand von Nachrichten sicher, dass Ihre Organisation über die Kapazität (physische Infrastruktur) verfügt, um den Versand zu verarbeiten, über die vom Versand erzeugten Antworten (eingehende Nachrichten) und über die Anzahl der Anrufe, die an Abonnenten gesendet werden (z. B. Verarbeitungskapazität des Callcenters).
+Stellen Sie vor dem Versand von Nachrichten sicher, dass Ihr Unternehmen über genügend Kapazitäten (physische Infrastruktur und Callcenter-Kapazität) verfügt, um beispielsweise den Versand, die durch den Versand möglicherweise erzeugten eingehenden Nachrichten und die Anzahl der Anrufe, die beispielsweise an Abonnierende zu richten sind, zu verarbeiten.
 
-Erstellen Sie dazu **[!UICONTROL Kapazität]** Typologieregeln.
+Erstellen Sie hierfür Typologieregeln vom Typ **[!UICONTROL Kapazität]**.
 
-Im folgenden Beispiel erstellen wir eine Typologieregel für eine Treuekampagne per Telefon. Wir beschränken die Anzahl der Nachrichten auf 20 pro Tag, d. h. die tägliche Verarbeitungskapazität eines Callcenters. Sobald die Regel auf zwei Sendungen angewendet wurde, können wir den Verbrauch über Protokolle überwachen.
+Im folgenden Beispiel erstellen wir eine Typologieregel für eine telefonische Treuekampagne. Wir beschränken die Anzahl der Nachrichten auf 20 pro Tag, was der täglichen Verarbeitungskapazität eines Callcenters entspricht.  Nachdem die Regel auf zwei Sendungen angewendet wurde, können wir den Verbrauch über Logs überwachen.
 
 Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
@@ -38,7 +38,7 @@ Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
    >[!NOTE]
    >
-   >Die Verfügbarkeitszeilen dienen nur zu Informationszwecken. Wenn Sie Nachrichten bei Erreichen der Kapazitätsbegrenzung ausschließen müssen, lesen Sie den Abschnitt [diesem Abschnitt](#exclude-messages-when-capacity-limit-reached).
+   >Die Verfügbarkeitszeilen dienen nur als Richtwerte.  Sie können bei Bedarf jedoch auch festlegen, dass bei Erreichen der Kapazitätsbegrenzung Nachrichten ausgeschlossen werden. Näheres hierzu finden Sie in [diesem Abschnitt](#exclude-messages-when-capacity-limit-reached).
 
 1. Weisen Sie diese Regel einer Typologie zu und referenzieren Sie die Typologie in Ihrer Sendung, damit die Kapazitätsregel von dieser angewendet wird. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](apply-rules.md#apply-a-typology-to-a-delivery).
 1. Über die Tabs **[!UICONTROL Entnahmen]** und **[!UICONTROL Kapazität]** für diese Regel können Sie die Auslastung der Kapazitäten überwachen.
@@ -93,7 +93,7 @@ Der Workflow **[!UICONTROL Planungen]** erstellt automatisch alle entsprechenden
 
 ## Nachrichten bei Erreichen des Kapazitätslimits ausschließen {#exclude-messages-when-capacity-limit-reached}
 
-Verfügbarkeitszeilen dienen nur zu Informationszwecken. Um überschüssige Nachrichten auszuschließen, aktivieren Sie die Option **[!UICONTROL Von der Zielgruppe ausschließen, wenn die Kapazität überschritten wird]** -Option. Dadurch wird verhindert, dass die Kapazität überschritten wird. Für dieselbe Population wie im vorherigen Beispiel dürfen Verbrauch und verbleibende Kapazität die ursprüngliche Menge nicht übersteigen:
+Die Verfügbarkeitszeilen dienen nur als Richtwerte.  Um überzählige Nachrichten auszuschließen, aktivieren Sie die Option **[!UICONTROL Die die Kapazität übersteigenden Nachrichten aus der Zielgruppe ausschließen]**. Dadurch wird verhindert, dass die Kapazität überschritten wird. Verbrauch und verbleibende Kapazität dürfen für dieselbe Population wie im vorherigen Beispiel die Ursprungsmenge nicht übersteigen:
 
 ![](assets/campaign_opt_create_capacity_04.png)
 

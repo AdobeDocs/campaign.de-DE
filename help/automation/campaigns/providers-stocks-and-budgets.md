@@ -6,9 +6,9 @@ feature: Budget Management, Campaigns
 role: User
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
 source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1918'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -144,11 +144,11 @@ Wenn ein Dienst ausgewählt wird, werden die dem Versandtyp (Briefpost, E-Mail u
 >
 >Wenn bei der Auswahl eines Dienstes keine Kostenkategorie angezeigt wird, bedeutet dies, dass für diese Art von Prozess keine Kostenkategorie definiert wurde. Beispiel: Falls bei einem E-Mail-Versand keine Kostenkategorie mit dem Typ **[!UICONTROL E-Mail]** definiert wurde, wird keine Kategorie angezeigt und die Auswahl des Dienstes hat keine Auswirkungen.
 
-* In Direkt-Mail-Sendungen können Sie den Service über das Konfigurationsfenster auswählen.
+* Beim Briefpost-Versand können Sie den Dienst über das Konfigurationsfenster auswählen.
 
   ![](assets/supplier-mail-delivery-select.png)
 
-* Bei Sendungen über Mobile-Kanäle gilt der gleiche Auswahlmodus.
+* Beim Versand über mobile Kanäle werden Dienste auf die gleiche Weise wie beim Briefpost-Versand ausgewählt.
 * In E-Mail-Sendungen werden Dienstleistungen über den Tab **[!UICONTROL Erweitert]** der Eigenschaften des jeweiligen Versands ausgewählt, wie im folgenden Beispiel:
 
   ![](assets/supplier-email-delivery-select.png)
