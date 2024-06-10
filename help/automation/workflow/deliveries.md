@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die standardmäßigen Workflows für Sendun
 feature: Workflows
 role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '317'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Fakturierung</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
-   <td> Dieser Workflow übermittelt per E-Mail den Aktivitätsbericht des Systems an den fakturierungsverantwortlichen Benutzer ('billing'). Er wird standardmäßig am 25. jedes Monats ausgelöst.<br /> </td> 
+   <td> Dieser Workflow übermittelt per E-Mail den Aktivitätsbericht des Systems an den fakturierungsverantwortlichen Benutzer ('billing'). Wird standardmäßig an jedem 25. des Monats gestartet.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Alias-Verwaltung</span> <br /> </td> 
@@ -43,7 +43,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Zustellbarkeit</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td> Erstellt die Liste der Qualifizierungsregeln für Bounce Messages sowie die Liste der Domains und MXs der Plattform. Dieser Workflow funktioniert nur, wenn der HTTPS-Port geöffnet ist. Wenn das Zustellbarkeitsmodul (Email Deliverability) nicht installiert ist, werden die Listen nicht aktualisiert.<br /> </td> 
+   <td> Mit diesem Workflow können Sie die Liste der Qualifizierungsregeln für Bounce-Nachrichten sowie die Liste der Domains und MX der Plattform erstellen. Der Workflow wird nur bei geöffnetem HTTPS-Port ausgeführt. Wenn das Zustellbarkeitsmodul (Email Deliverability) nicht installiert ist, werden die Listen nicht aktualisiert.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Datenbankbereinigung</span> <br /> </td> 
@@ -68,7 +68,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Tracking</span> <br /> </td> 
    <td> <span class="uicontrol">tracking</span> <br /> </td> 
-   <td> Dieser Workflow ruft Tracking-Informationen ab und konsolidiert sie. Außerdem wird die Neuberechnung der Tracking- und Versandstatistiken, insbesondere der von den Archivierungs-Workflows des Message-Centers verwendeten, sichergestellt. Standardmäßig wird sie einmal pro Stunde ausgelöst. <br /> </td> 
+   <td> Dieser Workflow führt die Wiederherstellung und Konsolidierung von Tracking-Informationen durch. Er aktualisiert außerdem die Berechnung der Tracking- und Versandstatistiken, insbesondere der Statistiken, die von den Archivierungs-Workflows des Message Centers verwendet werden. Standardmäßig wird er einmal pro Stunde ausgelöst. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -7,9 +7,9 @@ level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 91%
 
 Workflows werden grundsätzlich manuell gestartet, Nach dem Starten können sie jedoch inaktiv bleiben, je nachdem, welche Informationen über eine Planung (siehe [Planung](scheduler.md)) oder Aktivitätsplanung angegeben wurden.
 
-Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) are **asynchron** Prozesse: Die Reihenfolge wird aufgezeichnet und wird wirksam, sobald der Server verfügbar ist, um sie anzuwenden.
+Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause usw.) sind **asynchrone** Prozesse: der Auftrag wird gespeichert und erst dann ausgeführt, wenn der Server verfügbar ist.
 
 Anhand der Schaltflächen der Symbolleiste kann die Ausführung des Workflows gesteuert und überwacht werden.
 
@@ -69,7 +69,7 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Im Simulationsmodus starten]**
 
-  Mit dieser Option können Sie den Workflow im Simulationsmodus starten, nicht im eigentlichen Modus. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die einen Einfluss haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.) sowie die darauf folgenden (im selben Zweig) nicht ausgeführt werden.
+  Mithilfe dieses Befehls wird der Workflow im Simulationsmodus gestartet. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die einen Einfluss haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.) sowie die darauf folgenden (im selben Zweig) werden nicht ausgeführt.
 
 * **[!UICONTROL Vorgezogene Ausführung der ausstehenden Aufgaben]**
 

@@ -6,9 +6,9 @@ feature: Interaction, Offers
 role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1483'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Die Angebotsmodul-Abfrage stellt sich wie folgt dar:
 
 * Der optionale Parameter &quot;**cb**&quot; erhält den Namen der Funktion, die den vom Angebotsmodul zurückgegebenen XML-Knoten auswerten wird (Callback).
 
-* Die &quot;**t** Der Parameter erhält den Wert der Zielgruppe, nur für eine identifizierte Interaktion. Dieser Parameter kann auch mit der **interactionTarget** -Variable. Dieser Parameter ist optional.
+* Der optionale Parameter „**t**“ erhält bei Interaktionen mit identifizierten Kontakten die Kennung des Kontakts. Der Parameter kann auch mit der Variablen **interactionTarget** übergeben werden. Dieser Parameter ist optional.
 
 * Der optionale Parameter &quot;**c**&quot; erhält die Liste der internen Kategorienamen.
 

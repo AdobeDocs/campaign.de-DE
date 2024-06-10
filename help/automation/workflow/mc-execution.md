@@ -5,9 +5,9 @@ description: Message Center (Ausführung)
 feature: Workflows
 role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Die folgenden Workflows werden standardmäßig mit dem Add-on **Message Center �
   <tr> 
    <td> <span class="uicontrol">Update des Ereignisstatus</span> <br /> </td> 
    <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
-   <td> Mit diesem Workflow können Sie einem Ereignis einen Status zuweisen. Folgende Ereignisstatus stehen zur Verfügung:<br /> 
+   <td> Mit diesem Workflow können Sie Ereignissen einen Status zuweisen. Folgende Ereignisstatus stehen zur Verfügung:<br /> 
     <ul> 
      <li> <p><strong>Ausstehend</strong>: Das Ereignis befindet sich in der Warteschlange. Ihm wurde noch keine Nachrichtenvorlage zugeordnet.</p> </li> 
      <li> <p><strong>Versand ausstehend</strong>: Das Ereignis befindet sich in der Warteschlange. Ihm wurde eine Nachrichtenvorlage zugeordnet und die Versandverarbeitung ist in Gang.</p> </li> 

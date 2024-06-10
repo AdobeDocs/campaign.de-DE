@@ -6,9 +6,9 @@ feature: Workflows, Data Management
 role: User, Admin
 exl-id: aafd977e-c8af-426b-904c-8388c9d8e595
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ In der Regel werden diese Optionen im Diagramm durch Rechtsklick auf die Aktivit
 
 * **[!UICONTROL Normal]** - die Aufgabe wird ausgeführt.
 * **[!UICONTROL Nicht aktivieren]** - die Aufgabe sowie alle im selben Zweig folgenden Aktivitäten werden nicht ausgeführt.
-* **[!UICONTROL Aktivieren, aber nicht ausführen]**: Diese Aufgabe und alle folgenden Aufgaben (im selben Zweig) werden automatisch angehalten. Dies kann nützlich sein, wenn Sie beim Starten der Aufgabe dort sein möchten. Klicken Sie mit der rechten Maustaste auf die Aktivität und wählen Sie **[!UICONTROL Normale Ausführung]**.
+* **[!UICONTROL Aktivieren aber nicht ausführen]** - die Aufgabe sowie alle im selben Zweig folgenden Aktivitäten werden mit sofortiger Wirkung ausgesetzt. Dies ist v. a. dann interessant, wenn die Aufgabe in Ihrer Anwesenheit gestartet werden soll. Klicken Sie mit der rechten Maustaste auf die Aktivität und wählen Sie **[!UICONTROL Normale Ausführung]**.
 
 ## Affinität {#affinity}
 
@@ -53,7 +53,7 @@ Es besteht die Möglichkeit, die Ausführung eines Workflows oder einer Workflow
 
 ## Max. Ausführungsdauer {#max--execution-period}
 
-In diesem Feld können Sie eine Warnung einrichten, wenn die Aufgabe zu lange dauert. Dies wirkt sich nicht auf den Workflow-Vorgang aus. Wenn die Aufgabe nicht zum Zeitpunkt der **[!UICONTROL Max. Ausführungsdauer]** ist vorbei, die **[!UICONTROL Instanzenüberwachung]** -Seite wird eine Warnung für diesen Workflow angezeigt. Auf diese Seite kann über das **[!UICONTROL Überwachung]** auf der Startseite.
+In diesem Feld können Sie eine Warnung einrichten, wenn die Aufgabe zu lange dauert. Dies wirkt sich nicht auf den Workflow-Vorgang aus. Wenn die Aufgabe nicht zum Zeitpunkt der **[!UICONTROL Max. Ausführungsdauer]** vorbei ist, zeigt das **[!UICONTROL Monitoring der Instanz]** einen Warnhinweis bezüglich des Workflows an. Auf diese Seite kann von der Startseite aus über die Rubrik **[!UICONTROL Monitoring]** zugegriffen werden.
 
 ## Verhalten {#behavior}
 

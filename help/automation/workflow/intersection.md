@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 role: User
 exl-id: 12777107-5ccc-4f19-9dcd-8f6cade3ee98
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -59,4 +59,4 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch die Schnittmenge ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** der Name der Tabelle, in der die Kennungen der Zielgruppe gespeichert werden, **[!UICONTROL schema]** ist das Schema der Population (normalerweise **[!UICONTROL nms:recipient]**) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
+Anhand der drei Werte lässt sich die durch die Schnittmenge ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. **[!UICONTROL nms:recipient]**) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.

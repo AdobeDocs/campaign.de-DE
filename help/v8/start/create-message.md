@@ -46,8 +46,8 @@ Der [E-Mail-Kanal](../send/direct-mail.md) ist einer der wichtigsten Kanäle in 
 Verschiedene Typen von E-Mails können gesendet werden:
 
 * Einmalige E-Mails: E-Mails, die ein einziges Mal an eine definierte Zielgruppe gesendet werden. Sie werden zur Verbreitung spezifischer Inhalte verwendet, die nur ein einziges Mal vorbereitet und gesendet werden (Newsletter, Werbe-E-Mails etc.).
-* Wiederkehrende E-Mails: Ein und dieselbe E-Mail wird im Rahmen einer Kampagne regelmäßig gesendet und die Sendungen und zugehörigen Berichte werden regelmäßig aggregiert. Die E-Mail selbst bleibt zwar gleich, doch die Zielgruppe ändert sich je nach Versandtag. Ein Beispiel dafür sind Geburtstags-E-Mails. Weitere Informationen hierzu finden Sie unter [Wiederkehrender Versand](../../automation/workflow/recurring-delivery.md).
-* Transaktions-E-Mails: Hierbei handelt es sich um einzelne E-Mails, die abhängig vom Kundenverhalten ausgelöst werden. Siehe [Transaktionsnachrichten](../send/transactional.md).
+* Wiederkehrende E-Mails: In einer Kampagne wird ein und dieselbe E-Mail regelmäßig gesendet und die Sendungen und Berichte werden regelmäßig aggregiert. Die gesendete E-Mail bleibt unverändert, doch die Zielgruppe ändert sich je nach Versandtag. Ein Beispiel dafür sind Geburtstags-E-Mails. Weiterführende Informationen dazu finden Sie unter [Wiederkehrender Versand](../../automation/workflow/recurring-delivery.md).
+* Transaktions-E-Mails: einzelne E-Mails, die auf der Basis des Kundenverhaltens ausgelöst werden. Siehe [Transaktionsnachrichten](../send/transactional.md).
 
 Weitere Informationen sowie Empfehlungen zum Versand finden Sie in der Adobe Campaign Classic-Dokumentation unter [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=de#sending-messages){target="_blank"}.
 

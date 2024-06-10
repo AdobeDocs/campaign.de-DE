@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 role: User, Data Engineer
 exl-id: 91c87f8f-bdd2-4ca1-94c2-ec9e7affc1a0
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Nach erfolgter Konfiguration der Liste können Sie über die Option **[!UICONTRO
 >
 >Um in einer Liste-lesen-Aktivität Filter verwenden zu können, muss die Liste als Datei vorliegen.
 
-Die Listen können direkt in Adobe Campaign über die **[!UICONTROL Profile und Zielgruppen > Listen]** -Link der Startseite. Sie können auch in einem Workflow mit der **[!UICONTROL Listen-Update]** -Aktivität.
+Listen können direkt in der Adobe Campaign-Startseite über die Schaltfläche **[!UICONTROL Profile und Zielgruppen > Listen]** erstellt werden. Sie können auch im Rahmen eines Workflows über die Aktivität **[!UICONTROL Listen-Update]** erstellt werden.
 
 **Anwendungsbeispiel: Ausschluss einer Adressenliste von einem Versand**
 
@@ -62,7 +62,7 @@ Die im **Premiumkunden**-Ordner enthaltenen Profile sollen im Rahmen einer Marke
 
 1. Wählen Sie im Feld **[!UICONTROL Ausschlussmenge]** die Aktivität **[!UICONTROL Liste lesen]** aus. Die von dieser Aktivität übermittelten Daten werden somit von der Hauptmenge ausgeschlossen.
 
-   Im vorliegenden Beispiel handelt es sich um einen Ausschluss von Joins: Die in der Liste enthaltenen Daten werden über das die E-Mail-Adresse enthaltende Feld mit den Daten der Hauptmenge abgestimmt. Um den Join zu konfigurieren, wählen Sie **[!UICONTROL Joins]** im **[!UICONTROL Dimensionsänderung]** -Feld.
+   Im vorliegenden Beispiel handelt es sich um einen Ausschluss über einen Join: Die Daten der Liste werden über das E-Mail-Feld mit der Hauptmenge abgestimmt. Wählen Sie zur Konfiguration des Joins im Feld **[!UICONTROL Dimensionsänderung]** die Option **[!UICONTROL Join]** aus.
 
    ![](assets/s_advuser_list_read_sample_4.png)
 

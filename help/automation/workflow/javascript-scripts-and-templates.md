@@ -6,9 +6,9 @@ feature: Workflows
 role: Developer
 exl-id: 14160de5-23d2-4f53-84c6-0f9e3b1dcf21
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1268'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Austausch von Dat
 
 Ereignisvariablen sind die am häufigsten verwendeten Variablen und sind Instanzvariablen vorzuziehen.
 
-Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Variablen vom Typ Zeichenfolge. Beispielsweise wird bei einem Export der Wert **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
+Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Variablen vom Typ Zeichenfolge. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
 
 ### Anwendungsfälle {#example}
 
@@ -194,7 +194,7 @@ Eine Aktivitätseigenschaft kann unter bestimmten Bedingungen zum Zeitpunkt der 
 
 Die Mehrzahl der Aktivitätseigenschaften kann dynamisch berechnet werden, entweder unter Verwendung eines JavaScript-Templates oder weil die Workflow-Eigenschaften die Berechnung des Werts durch ein Script explizit erlauben.
 
-Für andere Eigenschaften müssen Sie jedoch das Initialisierungsscript verwenden. Dieses Skript wird ausgewertet, bevor die Aufgabe ausgeführt wird. Die Variable **[!UICONTROL activity]** referenziert die der Aufgabe entsprechende Aktivität. Die Eigenschaften dieses Objekts können geändert werden und betreffen nur diese Aufgabe.
+Für andere Eigenschaften müssen Sie jedoch das Initialisierungsskript verwenden. Dieses Skript wird ausgewertet, bevor die Aufgabe ausgeführt wird. Die Variable **[!UICONTROL activity]** referenziert die der Aufgabe entsprechende Aktivität. Die Eigenschaften dieses Objekts können geändert werden und betreffen nur diese Aufgabe.
 
 **Verwandte Themen**
 [Beispiele für JavaScript-Code in Workflows](javascript-in-workflows.md)

@@ -225,7 +225,7 @@ Entitäten können direkt über ihren Speicherort in der Instanz zu einer Packag
 
 ### Erzeugung von Package-Definitionen konfigurieren {#configure-package-definitions-generation}
 
-Die Package-Erzeugung kann über die Registerkarte **[!UICONTROL Inhalt]** der Package-Definition konfiguriert werden. Klicken Sie dazu auf den Link **[!UICONTROL Erzeugungsparameter]**.
+Die Package-Erzeugung kann über den Tab **[!UICONTROL Inhalt]** der Package-Definition konfiguriert werden. Klicken Sie dazu auf den Link **[!UICONTROL Erzeugungsparameter]**.
 
 ![](assets/packagedefinition_generationparameters.png)
 

@@ -5,9 +5,9 @@ description: Machen Sie sich mit der Verwendung von Aggregaten vertraut
 feature: Workflows
 exl-id: 7522f449-341e-4aef-8c1e-c49e13809c08
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erst
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Klicks **[!UICONTROL Zusätzliche Daten bearbeiten]** then **[!UICONTROL Erweiterte Parameter...]**. Überprüfen Sie die **[!UICONTROL Automatische Hinzufügung der Primärschlüssel der Zielgruppendimension deaktivieren]** -Option.
+1. Klicken Sie auf **[!UICONTROL Zusätzliche Daten bearbeiten...]** und dann auf **[!UICONTROL Erweiterte Parameter…]**. Aktivieren Sie die Option **[!UICONTROL Automatisches Hinzufügen der Primärschlüssel der Zielgruppendimension deaktivieren]**.
 
    Diese Option ermöglicht es, nicht alle Empfänger als Ergebnis auszugeben und nur die Daten beizubehalten, die explizit hinzugefügt wurden. Hier handelt es sich um das Datum, an dem zuletzt ein Empfänger erstellt wurde.
 

@@ -67,7 +67,7 @@ Sie können entweder die Größe der einzelnen Schübe definieren oder sie einem
 
 * **Definieren Sie die Größe jedes Schubs**. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der im Versand enthaltenen Nachrichten. Nur der letzte Schub enthält 10 % der Nachrichten.
 
-  Geben Sie im Feld **[!UICONTROL Zeitraum]** den zeitlichen Abstand zwischen zwei aufeinanderfolgenden Schüben an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
+  Geben Sie im Feld **[!UICONTROL Zeitraum]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
 
   ![](assets/delivery-waves-size.png)
 

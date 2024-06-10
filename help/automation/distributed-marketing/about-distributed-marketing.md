@@ -6,9 +6,9 @@ feature: Distributed Marketing
 role: User
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1181'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokal
   Eine partizipative Kampagne ist eine Kampagne, deren **Ausführungsplanung von der Zentralstelle festgelegt** wird. Die Lokalstellen können frei entscheiden, ob sie teilnehmen oder nicht. Abhängig von der Konfiguration der Kampagne können Zielgruppe und Inhalt von der Lokalstelle angepasst werden. Es gibt verschiedene Arten partizipativer Kampagnen:
 
    * **[!UICONTROL Partizipative Kampagne (Formular)]**: eignet sich für Kampagnen für bis zu 300 Lokalstellen. Die Lokalstelle kann vordefinierte Parameter zur Zielgruppe und Inhaltspersonalisierung in einem Web-Formular erfassen. Es kann sowohl ein Adobe Campaign-Formular als auch ein externes Formular (Kunden-Extranet) verwendet werden. Die Definition und Konfiguration des Formulars können von einem funktionellen Administrator auf Basis einer vom Systemintegrator definierten Formularvorlage erfolgen. Zur Bestellung der Kampagne benötigt die Lokalstelle in diesem Fall nur Web-Zugriff.
-   * **[!UICONTROL Partizipative Kampagne (nach Kampagne)]**: wird für Kampagnen empfohlen, die auf Dutzende von Lokalstellen ausgerichtet sind. Dieser Kampagnentyp erstellt für jede Lokalstelle untergeordnete Kampagnen. Wenn die Bestellung einer **[!UICONTROL Partizipativen Kampagne mit Kampagnenzugriff]** von der Zentralstelle validiert wurde, wird die Kampagne der Lokalstelle zur Verfügung gestellt und kann von dieser angepasst werden. Die Ausführung von über- und untergeordneten Kampagnen wird automatisch synchronisiert. Die Lokalstelle benötigt Zugriff zu einer Instanz, um die Kampagne zu bestellen und ausführen zu können.
+   * **[!UICONTROL Partizipative Kampagne (Kampagnenzugriff)]**: wird für Kampagnen empfohlen, die auf Dutzende von Lokalstellen ausgerichtet sind. Dieser Kampagnentyp erstellt für jede Lokalstelle eine untergeordnete Kampagne. Wenn die Bestellung einer **[!UICONTROL Partizipativen Kampagne mit Kampagnenzugriff]** von der Zentralstelle validiert wurde, wird die Kampagne der Lokalstelle zur Verfügung gestellt und kann von dieser angepasst werden. Die Ausführung von über- und untergeordneten Kampagnen wird automatisch synchronisiert. Die Lokalstelle benötigt Zugriff zu einer Instanz, um die Kampagne zu bestellen und ausführen zu können.
    * **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidierung)]**: eignet sich für Kampagnen für mehrere Tausend Lokalstellen. Die Lokalstellen erhalten eine von der Zentralstelle ausgewählte Kontaktliste. Sie haben dank eines Web-Formulars die Möglichkeit, je nach Inhalt der Kampagne Kontakte herauszustreichen. Die teilnehmenden Lokalstellen werden von der ausgewählten Kontaktliste abgeleitet. Die Lokalstelle benötigt lediglich einen Web-Zugriff, um an der Kampagne teilnehmen zu können.
    * **[!UICONTROL Partizipative Kampagne ohne Konfiguration]**: Dieser Modus stellt die Kompatibilität mit dezentralen Kampagnen aus vorhergehenden Versionen sicher.
 
@@ -108,7 +108,7 @@ Um eine Organisationseinheit zu erstellen, klicken Sie auf den Ordner **[!UICONT
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-Jede Organisationseinheit enthält Identifizierungsinformationen (Titel, interner Name, Kontaktinformationen usw.) und Gruppen, die am Bestellvalidierungsprozess beteiligt sind. Diese werden im **[!UICONTROL Benachrichtigungen und Genehmigungen]** im Abschnitt **[!UICONTROL Allgemein]** Registerkarte.
+Jede Organisationseinheit enthält Identifizierungsinformationen (Titel, interner Name, Kontaktinformationen usw.) und Gruppen, die am Bestellvalidierungsprozess beteiligt sind. Diese werden im Abschnitt **[!UICONTROL Benachrichtigungen und Validierungen]** der Registerkarte **[!UICONTROL Allgemein]** bestimmt.
 
 * Definieren Sie eine Benachrichtigungsgruppe, die bei Aktionen bezüglich der Kampagnenkits informiert wird: Alle Benutzer dieser Gruppe erhalten eine Benachrichtigung, wenn der Kampagnenkit-Liste ein neuer Kit hinzugefügt wird und wenn eine Kampagne verfügbar wird.
 * Wählen Sie anschließend die Benutzergruppe aus, die dafür verantwortlich ist, die Kampagnenbestellungen der Lokalstelle zu validieren.

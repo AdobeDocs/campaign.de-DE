@@ -38,7 +38,7 @@ Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
    >[!NOTE]
    >
-   >Die Verfügbarkeitszeilen dienen nur als Richtwerte.  Sie können bei Bedarf jedoch auch festlegen, dass bei Erreichen der Kapazitätsbegrenzung Nachrichten ausgeschlossen werden. Näheres hierzu finden Sie in [diesem Abschnitt](#exclude-messages-when-capacity-limit-reached).
+   >Die Verfügbarkeitszeilen dienen nur als Richtwerte. Sie können bei Bedarf jedoch auch festlegen, dass bei Erreichen der Kapazitätsbegrenzung Nachrichten ausgeschlossen werden. Näheres hierzu finden Sie in [diesem Abschnitt](#exclude-messages-when-capacity-limit-reached).
 
 1. Weisen Sie diese Regel einer Typologie zu und referenzieren Sie die Typologie in Ihrer Sendung, damit die Kapazitätsregel von dieser angewendet wird. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](apply-rules.md#apply-a-typology-to-a-delivery).
 1. Über die Tabs **[!UICONTROL Entnahmen]** und **[!UICONTROL Kapazität]** für diese Regel können Sie die Auslastung der Kapazitäten überwachen.
@@ -93,7 +93,7 @@ Der Workflow **[!UICONTROL Planungen]** erstellt automatisch alle entsprechenden
 
 ## Nachrichten bei Erreichen des Kapazitätslimits ausschließen {#exclude-messages-when-capacity-limit-reached}
 
-Die Verfügbarkeitszeilen dienen nur als Richtwerte.  Um überzählige Nachrichten auszuschließen, aktivieren Sie die Option **[!UICONTROL Die die Kapazität übersteigenden Nachrichten aus der Zielgruppe ausschließen]**. Dadurch wird verhindert, dass die Kapazität überschritten wird. Verbrauch und verbleibende Kapazität dürfen für dieselbe Population wie im vorherigen Beispiel die Ursprungsmenge nicht übersteigen:
+Die Verfügbarkeitszeilen dienen nur als Richtwerte. Um überschüssige Nachrichten auszuschließen, aktivieren Sie die Option **[!UICONTROL Die die Kapazität übersteigenden Nachrichten aus der Zielgruppe ausschließen]**. Die Kapazität kann so nicht überschritten werden. Für dieselbe Population wie im vorherigen Beispiel dürfen Verbrauch und verbleibende Kapazität die ursprüngliche Menge nicht übersteigen:
 
 ![](assets/campaign_opt_create_capacity_04.png)
 

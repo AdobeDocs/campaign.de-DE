@@ -6,9 +6,9 @@ feature: Query Editor
 role: User, Data Engineer
 exl-id: c320054d-7f67-4b12-aaa7-785945bf0c18
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -52,11 +52,11 @@ Gehen Sie wie folgt vor:
 
      In diesem Fall ist der zu wählende Operator **[!UICONTROL nicht wie]** und es wird kein Wert angegeben.
 
-   * Der Inhalt der zweiten Filterbedingung hängt von der ersten ab. Hier wird die **[!UICONTROL Ereignisdatum]** direkt im Feld **[!UICONTROL Versandlogs der Empfänger]** -Tabelle, da ein Link zu dieser Tabelle vorhanden ist.
+   * Der Inhalt der zweiten Filterbedingung hängt von der ersten ab. Hier wird das Feld **[!UICONTROL Ereignisdatum]** aus der Tabelle **[!UICONTROL Versandlogs der Empfänger]** vorgeschlagen, da eine Relation mit dieser Tabelle besteht.
 
      ![](assets/query_editor_nveau_36.png)
 
-     Auswählen **[!UICONTROL Ereignisdatum]** mit dem **[!UICONTROL größer als oder gleich]** Operator. Wählen Sie die **[!UICONTROL DaysAgo (7)]** -Wert. Klicken Sie dazu auf **[!UICONTROL Ausdruck bearbeiten]** im **[!UICONTROL Wert]** -Feld. Im **[!UICONTROL Formeltyp]** auswählen **[!UICONTROL Datumsfunktionen]** und **[!UICONTROL Aktuelles Datum minus n Tage]**, wobei &quot;7&quot;als Wert angegeben wird.
+     Wählen Sie also **[!UICONTROL Ereignisdatum]** und den Operator **[!UICONTROL größer als oder gleich]** aus. Wählen Sie den Wert **[!UICONTROL DaysAgo (7)]** aus. Klicken Sie hierzu im Feld **[!UICONTROL Wert]** auf **[!UICONTROL Ausdruck bearbeiten]**. Wählen Sie im Fenster **[!UICONTROL Formeltyp]** die Option **[!UICONTROL Datumsfunktionen]** und **[!UICONTROL Aktuelles Datum abzüglich n Tage]**. Geben Sie den Wert „7“ ein.
 
      ![](assets/query_editor_nveau_37.png)
 
@@ -70,7 +70,7 @@ Gehen Sie wie folgt vor:
 
 1. Verwenden Sie die Funktion **[!UICONTROL Berechnetes Feld hinzufügen]**, um eine neue Spalte zu erstellen.
 
-   Fügen Sie in diesem Beispiel ein berechnetes Feld mit dem Vor- und Nachnamen der Empfänger in einer Spalte hinzu. Klicken Sie auf **[!UICONTROL Berechnetes Feld hinzufügen]** -Funktion. Im **[!UICONTROL Definition eines berechneten Felds exportieren]** ein Fenster, einen Titel und einen internen Namen eingeben und die **[!UICONTROL JavaScript-Ausdruck]** Typ. Geben Sie dann den folgenden Ausdruck ein:
+   Fügen Sie in diesem Beispiel ein berechnetes Feld mit dem Vor- und Nachnamen der Empfangenden in einer Spalte hinzu. Klicken Sie also auf **[!UICONTROL Berechnetes Feld hinzufügen]**. Geben Sie im Fenster **[!UICONTROL Definition eines berechneten Export-Feldes]** einen Titel und einen internen Namen für die neue Spalte ein. Wählen Sie den Typ **[!UICONTROL JavaScript-Ausdruck]** aus der Dropdown-Liste. Geben Sie folgenden Ausdruck ein:
 
    ```
    var rep = source._firstName+" - "+source._lastName

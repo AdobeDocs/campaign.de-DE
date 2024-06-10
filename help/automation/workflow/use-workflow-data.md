@@ -99,7 +99,7 @@ Im folgenden Beispiel sollen Kundeninformationen in einer Liste gesammelt und da
 
    >[!CAUTION]
    >
-   >Nur die in der Transition enthaltenen Daten können zur Personalisierung des Versands verwendet werden. Personalisierungsfelder vom Typ **targetData** sind nur für die Eingangspopulation der Aktivität **[!UICONTROL Versand]** verfügbar.
+   >Nur die von der Transition übermittelten Daten können für die Versandpersonalisierung verwendet werden. Personalisierungsfelder vom Typ **targetData** stehen nur für die in die **[!UICONTROL Versandaktivität]** eingehende Population zur Verfügung.
 
 1. Verwenden Sie in der Versandvorlage die im Workflow gesammelten Daten.
 

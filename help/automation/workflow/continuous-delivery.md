@@ -6,9 +6,9 @@ feature: Workflows, Channels Activity
 role: User
 exl-id: e3ad6d92-8d53-4098-90fd-cfed29f2e56e
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Dies gilt nur, wenn die Option **[!UICONTROL Wird durch das Eingangsereignis ang
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch den unmittelbaren Versand ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** der Name der Tabelle, die die Kennungen der Zielgruppe speichert, **[!UICONTROL schema]** ist das Schema der Population (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
+Anhand der drei Werte lässt sich die durch den unmittelbaren Versand ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.
 

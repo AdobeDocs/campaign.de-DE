@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 role: User
 exl-id: 3e9f92c3-080f-441b-a15a-2ec9d056d1f9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Die Konfiguration der Abfrage entspricht der von Standardabfragen, aber die Ausf
 
 Gehen Sie dazu wie folgt vor:
 
-1. Im **[!UICONTROL Planung und Verlauf]** auswählen, wählen Sie die **[!UICONTROL Ausführung planen]** -Option. Die Aufgabe bleibt aktiv, sobald sie erstellt wurde, und wird nur zu den im Zeitplan für die Ausführung der Abfrage angegebenen Zeitpunkten ausgelöst. Wenn die Option deaktiviert wurde, wird die Abfrage **einmalig und sofort** ausgeführt.
+1. Aktivieren Sie auf der Registerkarte **[!UICONTROL Planung und Verlauf]** die Option **[!UICONTROL Ausführung planen]**. Nach Erstellung bleibt die Aufgabe aktiv, aber sie startet nur zu den in der Planung angegebenen Zeitpunkten, um die Abfrage auszuführen. Wenn die Option deaktiviert wurde, wird die Abfrage **einmalig und sofort** ausgeführt.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]**.
 
    Im sich öffnenden **[!UICONTROL Planungsassistent]**-Fenster können Sie den Ausführungsrhythmus und den Gültigkeitszeitraum definieren.
