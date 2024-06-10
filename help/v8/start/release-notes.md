@@ -3,10 +3,10 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 338432b41276317f1f07a92f0106e20177b5becd
+source-git-commit: e119c415ce363a635f9f0318e3fd70f90f4bde06
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '801'
+ht-degree: 97%
 
 ---
 
@@ -32,6 +32,14 @@ Die folgenden Probleme wurden in dieser Version behoben:
 
 NEO-70263, NEO-64984, NEO-63657, NEO-63387, NEO-62964, NEO-62750, NEO-62686, NEO-59544, NEO-52542
 
+
+## Mai-Updates {#may-updates}
+
+Die folgende Änderung wurde im Mai veröffentlicht und steht jetzt Campaign v8-Benutzern zur Verfügung:
+
+* **Neues Add-on für verbesserte Sicherheit**: Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet Adobe Campaign ein neues Add-on für verbesserte Sicherheit an. Die darin enthaltenen Funktionen ermöglichen eine sichere CMK-Integration und sicheres VPN-Tunneling.  [Weitere Informationen](../config/enhanced-security.md)
+
+
 ## Version 8.7.1 {#release-8-7-1}
 
 _2. Mai 2024_
@@ -52,7 +60,7 @@ _2. Mai 2024_
 
 * **Dynamisches Reporting**: Wenn Sie von Campaign Standard migriert sind, können Sie auf das dynamische Reporting zugreifen, das vollständig anpassbare und in Echtzeit aktualisierte Berichte zum Messen der Wirkung Ihrer Marketing-Aktivitäten bietet. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Stadt und Alter sowie nach Daten von E-Mail-Kampagnen wie Öffnungen und Klicks ermöglicht. [Mehr dazu](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=de){target="_blank"}
 
-* **Neues Add-on für verbesserte Sicherheit**: Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet Adobe Campaign ein neues Add-on für verbesserte Sicherheit an. Die darin enthaltenen Funktionen ermöglichen eine sichere CMK-Integration und sicheres VPN-Tunneling.  [Weitere Informationen](../config/enhanced-security.md)
+
 
 
 ### Aktualisierungen zur Kompatibilität {#comp-8-7-1}
