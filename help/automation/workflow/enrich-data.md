@@ -8,7 +8,7 @@ exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ In diesem Beispiel erfahren Sie, wie Sie Sendungen entsprechend des Felds **[!UI
 
    ![](assets/uc1_enrich_9.png)
 
-1. Navigieren Sie zu **[!UICONTROL Sortieren]** und klicken Sie auf **[!UICONTROL Hinzufügen]** -Schaltfläche, wählen Sie die **[!UICONTROL Ergebnis]** und aktivieren Sie das Kontrollkästchen im **[!UICONTROL absteigend]** -Spalte, um Elemente der **[!UICONTROL Ergebnis]** in absteigender Reihenfolge. Für jeden Empfänger fügt die Anreicherungsaktivität eine Zeile hinzu, die dem höchsten Wert für das letzte Spiel entspricht. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Klicken Sie im Bildschirm **[!UICONTROL Sortierung]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie das Feld **[!UICONTROL Score]** aus und aktivieren Sie das Kästchen in der Spalte **[!UICONTROL Absteigend]**, um die Elemente der **[!UICONTROL Score]**-Felder in absteigender Reihenfolge zu sortieren. Für jede Empfängerin und jeden Empfänger fügt die Anreicherungsaktivität somit die Zeile ein, die dem höchsten Score für das letzte Spiel entspricht. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/uc1_enrich_10.png)
 

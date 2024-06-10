@@ -8,7 +8,7 @@ exl-id: 6cc2c415-1886-4f31-8020-dbaf97a3cc43
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
 
    * **[!UICONTROL Externes Konto verwenden]**
 
-     Wenn diese Option aktiviert ist, können Sie ein externes POP3-Konto auswählen, anstatt die Verbindungsparameter einzugeben. Die **[!UICONTROL Externes Konto]** gibt das externe POP3-Konto an, über das eine Verbindung zum E-Mail-Dienst hergestellt werden soll. Dieses Feld ist nur sichtbar, wenn die Option &quot;Externes Konto verwenden&quot;aktiviert ist.
+     Wenn diese Option aktiviert wird, können Sie direkt ein externes POP3-Konto auswählen, anstatt die Verbindungsparameter anzugeben. Im Feld **[!UICONTROL Externes Konto]** wird das zu verwendende POP3-Konto angegeben, das für die Verbindung zum E-Mail-Dienst genutzt werden soll. Dieses Feld ist nur sichtbar, wenn die Option „Externes Konto verwenden&quot;aktiviert ist.
 
      Wenn die zuvor beschriebene Option nicht aktiviert wurde, sind folgende Parameter anzugeben:
 

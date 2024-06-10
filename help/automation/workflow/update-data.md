@@ -7,7 +7,7 @@ exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Wählen Sie alle zu aktualisierenden Felder aus und geben Sie bei Bedarf Bedingu
 
 Ein Zielfeld kann mehrmals verwendet werden.
 
-Innerhalb eines **[!UICONTROL Einfügen oder Aktualisieren]** -Funktion können Sie die zu verwendende Kampagne entweder einzeln oder für jedes Feld auswählen. Wählen Sie dazu den gewünschten Wert im **[!UICONTROL Vorgang]** Spalte.
+Wenn Sie die Option **[!UICONTROL Hinzufügen oder aktualisieren]** gewählt haben, können Sie für jedes Feld individuell entscheiden, welche der möglichen Aktionen ausgeführt werden soll. Wählen Sie dazu den gewünschten Wert in der Spalte **[!UICONTROL Vorgang]** aus.
 
 ![](assets/s_advuser_update_data_5.png)
 
