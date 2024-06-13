@@ -6,9 +6,9 @@ feature: Query Editor
 role: User, Data Engineer
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '304'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_02.png)
 
-1. Im **[!UICONTROL Zu extrahierende Daten]** auswählen, wählen Sie die **[!UICONTROL E-Mail-Domain]** und **[!UICONTROL Primärer Schlüssel]** -Felder. Führen Sie eine Zählung für die **[!UICONTROL Primärer Schlüssel]** -Feld.
+1. Im Fenster **[!UICONTROL Zu extrahierende Daten]** wählen Sie die Felder **[!UICONTROL E-Mail-Domain]** und **[!UICONTROL Primärschlüssel]** aus. Führen Sie eine Zählung des Felds **[!UICONTROL Primärschlüssel]** durch.
 
 1. Kreuzen Sie die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** an.
 
@@ -46,7 +46,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_70.png)
 
-1. In **[!UICONTROL Datenfilterung]** auswählen **[!UICONTROL Filterbedingungen]**. Navigieren Sie zu **[!UICONTROL Zielelemente]** Fenster und klicken Sie auf **[!UICONTROL Nächste]**.
+1. Wählen Sie dann im Fenster **[!UICONTROL Datenfilter]** die Option **[!UICONTROL Filterbedingungen]**. Wechseln Sie zum Fenster **[!UICONTROL Zielelemente]** und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Klicken Sie im Fenster **[!UICONTROL Gruppierung der Daten]** auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL E-Mail-Domain]** aus.
 
    Die Gruppierung (GROUP BY) erfolgt an dieser Stelle. Das Fenster wird nur angezeigt, wenn die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** angekreuzt wurde.

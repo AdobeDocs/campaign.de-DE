@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1525'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Geben Sie anschließend die oberen und unteren Grenzwerte an und klicken Sie zur
 
 Es besteht auch die Möglichkeit, die Klassen automatisch zu erzeugen. Klicken Sie hierzu auf den Link **[!UICONTROL Klassen erzeugen...]**.
 
-Sie können
+Sie haben folgende Möglichkeiten:
 
 * **[!UICONTROL Auffinden der am häufigsten verwendeten Werte]**
 
@@ -106,7 +106,7 @@ Um einen diese Auflistung verwendenden Bericht zu erstellen, müssen Sie zunäch
 
 Erstellen Sie anschließend einen auf diesem Cube basierenden Bericht, um die Werte anzuzeigen.
 
-Sie müssen nur die Auflistung ändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise das **Adobe** und fügen Sie **adobe.com** Alias und der Bericht werden auf Auflistungsebene automatisch mit dem Adobe-Wert aktualisiert.
+Dabei genügt es, die Auflistung abzuändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise den Wert **Adobe** und fügen Sie auf Auflistungsniveau den Alias **adobe.com** hinzu: Der Bericht wird automatisch mit dem Wert „Adobe“ aktualisiert.
 
 ![](assets/nmx_add_alias.png)
 

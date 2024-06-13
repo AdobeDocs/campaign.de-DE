@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Kampagnensimulationen konfigurieren
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1341'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   Bei Bedarf können Sie eine dynamische Bedingung über die **[!UICONTROL Dynamische Bedingung bearbeiten..]** -Link.
+   Über den Link **[!UICONTROL Dynamische Bedingung bearbeiten…]** können Sie eine dynamische Bedingung verwenden.
 
    Klicken Sie zur Bestätigung der Konfiguration auf die Schaltfläche **[!UICONTROL Speichern]**.
 
@@ -93,7 +93,7 @@ Im Tab **[!UICONTROL Allgemein]** der Simulation können Sie ihre Ausführungspa
 
 * Die Option **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]** verschiebt die Simulation auf einen weniger ausgelasteten Zeitpunkt, entsprechend der gewählten Priorität. Da Simulationen umfangreiche Datenbankressourcen in Anspruch nehmen, sollten weniger dringende Simulationen zum Beispiel nachts ausgeführt werden.
 * Die **[!UICONTROL Priorität]** entspricht der Dringlichkeit, die der Simulation zugeteilt wird, um sie schnellstmöglich durchzuführen oder ihren Start zu verzögern.
-* **[!UICONTROL SQL-Abfragen im Protokoll speichern]**. In SQL-Logs können Sie eine Simulation diagnostizieren, wenn sie mit Fehlern endet. Sie können Ihnen auch dabei helfen herauszufinden, warum eine Simulation zu langsam ist. Diese Nachrichten werden nach der Simulation im **[!UICONTROL SQL-Logs]** Unterregisterkarte des **[!UICONTROL Prüfung]** Registerkarte.
+* **[!UICONTROL SQL-Abfragen im Protokoll speichern]**. In SQL-Logs können Sie eine Simulation diagnostizieren, wenn sie mit Fehlern endet. Sie können Ihnen auch dabei helfen herauszufinden, warum eine Simulation zu langsam ist. Die entsprechenden Logs sind nach der Simulation auf der Unterregisterkarte **[!UICONTROL SQL-Logs]** der Registerkarte **[!UICONTROL Verfolgung]** verfügbar.
 
 ## Ausführen einer Simulation {#execute-a-simulation}
 
@@ -131,7 +131,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
 #### Verfolgung {#audit}
 
-Die **[!UICONTROL Prüfung]** -Tab zur Überwachung der Simulationsausführung. Die **[!UICONTROL SQL-Protokolle]** ist für erfahrene Benutzer nützlich. Es werden Ausführungslogs im SQL-Format aufgelistet. Diese Protokolle werden nur angezeigt, wenn die **[!UICONTROL SQL-Abfragen im Protokoll speichern]** wurde in der **[!UICONTROL Allgemein]** vor der Ausführung der Simulation.
+Die Registerkarte **[!UICONTROL Audit]** ermöglicht die Überwachung der Simulation. Die Unterregisterkarte **[!UICONTROL SQL-Logs]** ist insbesondere für erfahrene Benutzer hilfreich. Es werden Ausführungslogs im SQL-Format aufgelistet. Damit die SQL-Logs angezeigt werden, muss vor Ausführung der Simulation auf der Registerkarte **[!UICONTROL Allgemein]** die Option **[!UICONTROL SQL-Abfragen im Protokoll speichern]** aktiviert werden.
 
 ![](assets/simu_campaign_opti_11.png)
 

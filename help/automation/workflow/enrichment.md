@@ -6,9 +6,9 @@ feature: Workflows, Enrichment Activity, Targeting Activity
 role: User
 exl-id: 23bfabac-62cc-4f86-a739-a34a0e183c31
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1427'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ Gehen Sie hierzu wie folgt vor:
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Wählen Sie die **[!UICONTROL Linkdefinition]** und klicken Sie auf **[!UICONTROL Nächste]** Schaltfläche. Geben Sie den Typ des zu erstellenden Links an. In diesem Beispiel möchten wir das Land des Dateiempfängers mit einem Land in der Liste der verfügbaren Länder in der entsprechenden Tabelle der Datenbank abstimmen. Wählen Sie die **[!UICONTROL Relation durch Suche nach einer Referenz aus mehreren Optionen definieren]** -Option. Wählen Sie die Ländertabelle im **[!UICONTROL Zielschema]** -Feld.
+1. Aktivieren Sie die Option **[!UICONTROL Relation]** und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**. Geben Sie die Art der zu erstellenden Relation an. Im vorliegenden Beispiel soll das Land des Empfängers der eingehenden Datei mit einem Land aus der entsprechenden Datenbanktabelle abgestimmt werden. Wählen Sie daher die Option **[!UICONTROL Relation durch Suche nach einer Referenz aus mehreren möglichen definieren]**. Wählen Sie im Feld **[!UICONTROL Zielschema]** die Ländertabelle an.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -169,7 +169,7 @@ Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](qu
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
 1. Konfigurieren Sie die Angebotsauswahl. Zwei Optionen stehen zur Auswahl:
 
-   * **[!UICONTROL Suche nach dem besten Angebot einer Kategorie]**: Kreuzen Sie diese Option an und geben Sie die Parameter für die Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Angebotsmodul berechnet automatisch die zu verwendenden Angebote entsprechend diesen Parametern. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
+   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Markieren Sie diese Option und geben Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die den Parametern entsprechenden hinzuzufügenden Angebote. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
 
      ![](assets/int_enrichment_offer3.png)
 

@@ -6,8 +6,8 @@ role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: tm+mt
-source-wordcount: '968'
+workflow-type: ht
+source-wordcount: '980'
 ht-degree: 100%
 
 ---
@@ -109,7 +109,7 @@ Der Dateiname setzt sich folgendermaßen zusammen: `<InstanceName>-<NamespaceId>
 
 >[!CAUTION]
 >
->Um eine Anfrage mit dem benutzerdefinierten Namespace-Typ einzureichen, nutzen Sie die [JSON-Methode](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=de#json){target="_blank"} and add the namespaceId to the request, or use the [API call](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=de#access-delete){target="_blank"}, um die Anfrage zu stellen.
+>Um eine Anfrage mit dem benutzerdefinierten Namespace-Typ zu senden, nutzen Sie die [JSON-Methode](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=de#json){target="_blank"} und fügen Sie die namespaceId zur Anfrage hinzu. Alternativ können Sie den [API-Aufruf](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=de#access-delete){target="_blank"} für die Anfrage verwenden.
 >
 >Verwenden Sie nur die [Datenschutz-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=de#request-builder){target="_blank"}, um Anfragen mithilfe des standardmäßigen Namespace-Typs einzureichen.
 

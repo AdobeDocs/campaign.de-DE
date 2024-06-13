@@ -6,9 +6,9 @@ feature: Campaigns, Audiences
 role: User
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1566'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Benutzer mit entsprechenden Berechtigungen können Zielgruppen-Workflows manuell
 
 Die Zielgruppenbestimmung kann so konfiguriert werden, dass sie entsprechend einer Planungsaktivität (Planungsassistent) oder abhängig von einem Ereignis (externes Signal, Dateiimport usw.) automatisch ausgeführt wird.
 
-Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) are **asynchron** Prozesse: Der Befehl wird gespeichert und wird ausgeführt, sobald der Server verfügbar ist, um ihn anzuwenden.
+Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) sind **asynchrone** Prozesse: der Befehl wird gespeichert und erst dann ausgeführt, wenn der Server verfügbar ist.
 
 Über die Symbolleiste hingegen kann die Ausführung des Zielgruppen-Workflows unmittelbar gesteuert werden.
 
@@ -111,7 +111,7 @@ Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Star
 
      ![](assets/start.png)
 
-     Der Server berücksichtigt die Anfrage, wie durch seinen Status gezeigt: **[!UICONTROL Starten Sie so bald wie möglich]**.
+     Der Server berücksichtigt die Anfrage, wie durch seinen Status dargestellt: **[!UICONTROL Schnellstmöglicher Start]**.
 
    * Sie können den Zielgruppen-Workflow über das entsprechende Symbol der Menüleiste neu starten. Dieser Befehl kann besonders dann nützlich sein, wenn das Symbol **[!UICONTROL Starten]** nicht verfügbar ist, beispielsweise wenn der Workflow gerade angehalten wird. Klicken Sie in diesem Fall auf das Symbol **[!UICONTROL Neu starten]**, um den Neustart vorzuziehen. Diese Anfrage wird daraufhin vom Server erfasst, wie am Ausführungsstatus zu erkennen ist: **[!UICONTROL Soll neu gestartet werden]**.
 
@@ -123,9 +123,9 @@ Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Star
 
      ![](assets/pause.png)
 
-     Der Server berücksichtigt den Befehl, da sein Status Folgendes anzeigt: **[!UICONTROL Anhalten angefordert]**.
+     Der Server berücksichtigt den Befehl, wie sein Status darstellt: **[!UICONTROL Soll ausgesetzt werden]**.
 
-     Sie können einen Zielgruppen-Workflow auch automatisch anhalten, wenn die Ausführung eine bestimmte Aktivität erreicht. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, ab der der Zielgruppen-Workflow ausgesetzt werden soll, und wählen Sie **[!UICONTROL Aktivieren, aber nicht ausführen]**.
+     Ein Zielgruppen-Workflow kann auch automatisch ausgesetzt werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, ab der der Zielgruppen-Workflow ausgesetzt werden soll, und wählen Sie **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
      ![](assets/donotexecute.png)
 
@@ -143,9 +143,9 @@ Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Star
 
      ![](assets/stop.png)
 
-     Der Server berücksichtigt den Befehl, da sein Status Folgendes anzeigt: **[!UICONTROL Beenden angefordert]**.
+     Der Server berücksichtigt den Befehl, wie sein Status darstellt: **[!UICONTROL Wartet auf Stopp]**.
 
-  Ein Zielgruppen-Workflow kann auch automatisch angehalten werden, wenn die Ausführung eine Aktivität erreicht. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, von der aus der Zielgruppen-Workflow gestoppt werden soll, und wählen Sie **[!UICONTROL Nicht aktivieren]**.
+  Ein Zielgruppen-Workflow kann auch automatisch angehalten werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, von der aus der Zielgruppen-Workflow gestoppt werden soll, und wählen Sie **[!UICONTROL Nicht aktivieren]**.
 
   ![](assets/donotactivate.png)
 
@@ -199,7 +199,7 @@ Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt stand
 >Wenn Sie eine Kontrollgruppe für eine Kampagne bestimmt haben und eine andere für einen Versand dieser Kampagne konfigurieren, so wird nur die für den Versand bestimmte Kontrollgruppe angewandt.
 
 1. Bearbeiten Sie den betreffenden Versand und klicken Sie auf den Link **[!UICONTROL An]**.
-1. Klicken Sie auf den Tab **[!UICONTROL Kontrollgruppe]** und wählen Sie dann **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Kontrollgruppe]** und wählen Sie dann **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
 
    ![](assets/enable-control-group-for-a-delivery.png)
 

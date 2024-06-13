@@ -6,15 +6,15 @@ role: Developer
 level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
 source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '568'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Schlüsselverwaltung und Eindeutigkeit {#key-management}
 
-Im Kontext eines [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md), ist der Primärschlüssel eine Universally Unique IDentifier (UUID), eine Zeichenfolge. Um diese UUID zu erstellen, muss das Hauptelement des Schemas die Attribute **autouid** und **autopk** enthalten, die auf **true** gesetzt sind.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ist der Primärschlüssel ein Universally Unique IDentifier (UUID), d. h. eine Zeichenfolge. Um diese UUID zu erstellen, muss das Hauptelement des Schemas die Attribute **autouid** und **autopk** enthalten, die auf **true** gesetzt sind.
 
 Adobe Campaign v8 verwendet [!DNL Snowflake] als Hauptdatenbank. Die verteilte Architektur der [!DNL Snowflake]-Datenbank bietet keine Mechanismen zur Gewährleistung der Eindeutigkeit eines Schlüssels in einer Tabelle. Die Endbenutzer sind dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen.
 

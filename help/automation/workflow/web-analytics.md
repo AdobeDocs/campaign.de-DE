@@ -4,9 +4,9 @@ title: Web Analytics
 description: Erfahren Sie mehr über das Web Analytics-Package.
 feature: Workflows, Analytics Integration
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Web-Analytics-Con
   <tr> 
    <td> <span class="uicontrol">Identifizierung der konvertierten Kontakte</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Dieser Workflow indexiert die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Auf die mithilfe dieses Workflows abgerufenen Daten kann im Abschnitt <span class="uicontrol">Bericht zur Remarketing-Effizienz</span> (Siehe hierzu ). <br /> </td> 
+   <td> Dieser Workflow indexiert die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Die durch diesen Workflow wiederhergestellten Daten können im <span class="uicontrol">Remarketing-Effizienz-Bericht</span> abgerufen werden (siehe dort). <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ereignislöschung</span> <br /> </td> 

@@ -5,9 +5,9 @@ feature: Reporting
 role: Data Engineer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3097'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatis
 
 **Verteilung nach Domain**
 
-Der zweite Teil des Berichts zeigt die Verteilung fehlgeschlagener Nachrichten nach Domain im Gegensatz zum Fehlertyp. Die mit der Variablen **Fehler** -Indikator (@value) in diesem Fall lautet: Count(@status=2 und @domain=&quot;Wert des Domain-Namens&quot;), d. h. eine Zählung aller Nachrichten mit Status &quot;Fehlgeschlagen&quot; für diese Domain.
+Der zweite Teil des Berichts zeigt die Verteilung der fehlgeschlagenen Nachrichten, und zwar nicht nach Fehlertyp, sondern nach Domain. Die Formel für die Kennzahl **Fehler** (@value) lautet in diesem Fall: Count(@status=2 und @domain=&quot;Wert des Domain-Namens&quot;), also eine Zählung aller Nachrichten mit Status &quot;Fehlgeschlagen&quot; für diese Domain.
 
 ## Browser {#browsers-1}
 
@@ -912,11 +912,11 @@ Dieser Bericht basiert auf den **Versand-** und **Trackinglog-** Tabellen (nms:d
 
 ## Andere Indikatoren {#other-indicators}
 
-Die **Gesendet** Indikator (@sent); Zugriff über **Sendungen (nms:delivery) > Indikatoren** node entspricht der Gesamtzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird nur für SMS-Sendungen verwendet und darf nicht für andere Versandtypen verwendet werden (nicht zu verwechseln mit dem **@success** und **@processed** Indikatoren).
+Der über den Knoten **Sendungen (nms:delivery) > Indikatoren** zugängliche Indikator **Gesendet** (@sent) entspricht der Gesamtanzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird ausschliesslich für SMS-Sendungen verwendet und darf nicht für andere Versandtypen genutzt werden. Er ist nicht zu verwechseln mit den Indikatoren **@success** und **@processed**.
 
 ## Indikatoren synchronisieren {#indicator-synchronization}
 
-Wenn bei bestimmten Indikatoren die Synchronisation oder Inkonsistenz auftritt, wählen Sie den betreffenden Versand im Adobe Campaign-Explorer aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie die Option **[!UICONTROL Aktion > Sende- und Trackingindikatoren neu berechnen]**. Klicks **[!UICONTROL Nächste]** Klicken Sie auf **[!UICONTROL Beenden]**.
+Falls Sie bei bestimmten Indikatoren eine Desynchronisierung oder Inkonsistenz bemerken, wählen Sie im Adobe Campaign-Explorer den entsprechenden Versand aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie die Option **[!UICONTROL Aktionen > Sende- und Tracking-Indikatoren neu berechnen]**. Klicken Sie auf **[!UICONTROL Weiter]** und schließlich auf **[!UICONTROL Beenden]**.
 
 ## Öffnungs-Tracking {#tracking-opens-}
 

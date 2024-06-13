@@ -6,7 +6,7 @@ feature: Campaigns, Monitoring
 role: User
 exl-id: 13a7432e-6216-4a5c-84fc-bc374b5af5ee
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Vorgä
 
 * Die Unterregisterkarte **[!UICONTROL Validierungen]** enthält den gesamten Validierungsprozess für die Kampagne. Sie können Details und Kommentare überprüfen.
 
-* Die zur Generierung der Nachrichten an Dienstleister erstellten Workflows werden im Untertab **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** aufgelistet. Klicken Sie auf das Symbol **[!UICONTROL Details]**, um den ausgewählten Workflow anzuzeigen.
+* Die zur Generierung der Nachrichten an Dienstleister erstellten Workflows werden in der Unterregisterkarte **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** aufgelistet. Klicken Sie auf das Symbol **[!UICONTROL Details]**, um den ausgewählten Workflow anzuzeigen.
 
 ## Nachverfolgen von Sendungen {#delivery-tracking}
 

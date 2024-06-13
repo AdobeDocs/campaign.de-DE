@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1319'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Das Adobe Campaign Interaction-Modul bietet zwei Arten von Interaktionen:
 * **eingehende** Interaktionen, initiiert durch einen Kontakt. [Weitere Informationen](interaction-present-offers.md)
 * **ausgehende** Interaktionen, die von einem versandverantwortlichen Benutzer für die Kampagne initiiert werden. [Weitere Informationen](interaction-send-offers.md)
 
-Diese beiden Arten von Interaktionen können entweder in **Einzelmodus** (Angebot wird für einen einzelnen Kontakt berechnet) oder in **Batch-Modus** (Angebot wird für eine Gruppe von Kontakten berechnet). Im Allgemeinen werden eingehende Interaktionen im Einzelmodus durchgeführt und ausgehende Interaktionen im Batch-Modus. Es kann jedoch bestimmte Ausnahmen geben für [Transaktionsnachrichten](../send/transactional.md) , wobei die ausgehende Interaktion beispielsweise im Einzelmodus erfolgt.
+Diese beiden Interaktionstypen können entweder im **Einzelmodus** (Angebot wird für einen einzelnen Kontakt berechnet) oder im **Batch-Modus** (Angebot wird für eine Gruppe von Kontakten berechnet) durchgeführt werden. Im Allgemeinen werden eingehende Interaktionen im Einzelmodus durchgeführt und ausgehende Interaktionen im Batch-Modus. Es kann jedoch bestimmte Ausnahmen geben, beispielsweise bei [Transaktionsnachrichten](../send/transactional.md), bei denen die ausgehende Interaktion im Einzelmodus erfolgt.
 
 Wenn ein Angebot unterbreitet werden kann oder soll (je nach Konfiguration), spielt das Angebotsmodul eine zentrale Rolle: Es ermittelt automatisch aus einer Reihe von möglichen Angeboten das für den Kontakt am besten geeignete Angebot, indem es die für ihn vorliegenden Daten und die in der Anwendung definierten Regeln kombiniert und abgleicht.
 

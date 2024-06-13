@@ -6,9 +6,9 @@ feature: Distributed Marketing
 role: User
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1371'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -122,17 +122,17 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 1. Geben Sie im Tab **[!UICONTROL Allgemein]** folgende Parameter an:
 
-   * die **[!UICONTROL Zielgruppendimension]**. Hier finden Sie die **Datenverteilung** im Rahmen der **Empfänger**.
-   * die **[!UICONTROL Verteilungstyp]**. Sie können eine **Feste Größe** oder **Größe in Prozent**.
-   * die **[!UICONTROL Zuweisungstyp]**. Wählen Sie die **Lokalstelle** -Option.
-   * die **[!UICONTROL Verteilungstyp]**. Hier ist es das **[!UICONTROL Ursprung (@origin)]** Feld in der Empfängertabelle, das die Identifizierung der Relation zwischen Kontakt und Lokalstelle ermöglicht.
-   * Die **[!UICONTROL Validierungsspeicherung]** -Feld. Wählen Sie die **Lokale Validierung des Empfängers** -Option.
+   * die **[!UICONTROL Zielgruppendimension]**. Die **Datenverteilung** erfolgt hier für die **Empfänger**.
+   * den **[!UICONTROL Verteilungstyp]** Sie können eine **Feste Größe** oder eine **Größe in Prozent** auswählen.
+   * den **[!UICONTROL Zuweisungstyp]**. Wählen Sie die Option **Lokalstelle**.
+   * den **[!UICONTROL Verteilungstyp]** Das Feld **[!UICONTROL Herkunft (@origin)]** aus der Empfängertabelle ermöglicht es hier, die Relation zwischen Kontakt und Lokalstelle zu identifizieren.
+   * Das Feld **[!UICONTROL Validierungsspeicherung]**. Wählen Sie die Option **Lokale Validierung eines Empfängers**.
 
 1. Geben Sie im Tab **[!UICONTROL Verteilung]** folgende Parameter an:
 
    * den **[!UICONTROL Wert des Verteilungsfelds]**, der den an der vorgesehenen Kampagne beteiligten Lokalstellen entspricht;
    * den **[!UICONTROL Titel]** der Lokalstelle;
-   * die **[!UICONTROL Größe]** (fest oder in Prozent). Die **0 Standardwert** Auswahl aller mit der Lokalstelle verbundenen Empfänger.
+   * die **[!UICONTROL Größe]** (fest oder in Prozent). Der **Standardwert 0** bewirkt eine Auswahl aller mit der jeweiligen Lokalstelle in Verbindung stehender Empfänger.
 
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
@@ -141,7 +141,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 #### Erstellen einer partizipativen Kampagne {#creating-a-collaborative-campaign}
 
 1. Erstellen Sie vom Ordner **[!UICONTROL Kampagnenverwaltung > Kampagnen]** des Campaign-Explorers aus eine neue **[!UICONTROL partizipative Kampagne (mit Zielgruppenvalidierung)]**.
-1. Erstellen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** einen Workflow für die Kampagne. Dieser muss eine Aktivität vom Typ **Aufspaltung** enthalten, deren **[!UICONTROL Begrenzung der Anzahl von Datensätzen]** durch die **[!UICONTROL Datenverteilung]** festgelegt wird.
+1. Erstellen Sie auf der Registerkarte **[!UICONTROL Zielbestimmungen und Workflows]** einen Workflow für die Kampagne. Dieser muss eine Aktivität vom Typ **Aufspaltung** enthalten, deren **[!UICONTROL Begrenzung der Anzahl von Datensätzen]** durch die **[!UICONTROL Datenverteilung]** festgelegt wird.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
@@ -149,7 +149,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
    * den Inhalt der Benachrichtigung, die die Lokalstellen erhalten;
    * die Validierungserinnerung;
-   * die erwartete Verarbeitung für die Kampagne.
+   * die erwartete Bearbeitung der Kampagne.
 
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
@@ -159,7 +159,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 Fügen Sie nun über den Tab **[!UICONTROL Kampagnen]** ein **Kampagnenkit** hinzu.
 
-1. Wählen Sie **[!UICONTROL Referenzkampagne]**. Im **[!UICONTROL Bearbeiten]** im Tab Ihres Pakets können Sie die **[!UICONTROL Validierungsmodus]** zur Verwendung für Ihre Kampagne:
+1. Wählen Sie **[!UICONTROL Referenzkampagne]**. Auf der Registerkarte **[!UICONTROL Bearbeiten]** des Kits können Sie den **[!UICONTROL Validierungsmodus]** für Ihre Kampagne wählen:
 
    * im Modus **Manuell** nehmen die Lokalstellen an der Kampagne teil, wenn Sie die Einladung der Zentralstelle akzeptieren. Sie können bei Bedarf die vorausgewählten Kontakte löschen. Eine Validierung der Teilnahme durch einen Vorgesetzten ist zwingend erforderlich.
    * im Modus **Automatisch** sind die Lokalstellen verpflichtet, an der Kampagne teilzunehmen, sofern sie sich nicht manuell abmelden. Sie können Kontakte löschen, ohne dass eine weitere Validierung erforderlich ist.

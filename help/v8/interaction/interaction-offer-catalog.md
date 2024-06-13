@@ -6,7 +6,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    ![](assets/offer_cat_create_001.png)
 
-1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]** aus.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Neuen Angebotskategorie-Ordner erstellen]** aus.
 
    ![](assets/offer_cat_create_002.png)
 

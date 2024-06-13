@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '638'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzuf�
 1. Der Gestaltungsbaustein wird in Form eines Skripts eingefügt und in der Personalisierungsphase automatisch an das Empfängerprofil angepasst.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Vorschau]** und wählen Sie eine Person aus, um den Inhalt dieses Bausteins für eine bestimmte Empfängerin oder einen bestimmten Empfänger anzuzeigen.
 
-Sie können den Quellcode eines Gestaltungsbausteins in den Versandinhalt einfügen. Wählen Sie dazu **[!UICONTROL HTML-Quellcode des Blocks einschließen]** bei der Auswahl.
+Sie können den Quell-Code eines Gestaltungsbausteins in den Versandinhalt einfügen. Wählen Sie die Option **[!UICONTROL HTML-Quell-Code des Bausteins einfügen]** aus.
 
 ## Integrierte Gestaltungsbausteine {#ootb-personalization-blocks}
 

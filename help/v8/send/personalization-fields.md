@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 14a741dd-794e-4760-bfa3-bafbe993a3f7
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Im folgenden Anwendungsbeispiel erfahren Sie, wie Sie den Betreff und Text einer
 
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen vorhandenen E-Mail-Versand.
 1. Navigieren Sie zum Link **[!UICONTROL Betreff]**, um den Betreff der Nachricht zu bearbeiten.
-1. Eingabe &quot; **Sonderangebot für** und verwenden Sie die Schaltfläche in der Symbolleiste, um ein Personalisierungsfeld einzufügen. Auswählen **[!UICONTROL Empfänger > Titel]**.
+1. Geben Sie z. B. den Text **Sonderangebot für** ein. Nutzen Sie nun die Schaltfläche in der Symbolleiste, um ein Personalisierungsfeld einzufügen. Wählen Sie **[!UICONTROL Empfängerinnen und Empfänger > Titel]**.
 1. Wiederholen Sie den Vorgang, um den Nachnamen der Empfänger einzufügen. Vergessen Sie die Leerzeichen zwischen den Personalisierungsfeldern nicht.
 1. Wählen Sie zur Bestätigung **[!UICONTROL OK]** aus.
 1. Im nächsten Schritt wird der Nachrichten-Textkörper angepasst. Klicken Sie dazu in das Inhaltsfeld der Nachricht und danach auf die Schaltfläche zum Einfügen von Personalisierungsfeldern.

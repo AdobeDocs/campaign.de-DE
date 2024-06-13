@@ -6,9 +6,9 @@ feature: Workflows
 role: User, Developer
 exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '631'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Sie können jetzt Ihre E-Mail-Nachricht mit den benutzerdefinierten Feldern gest
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Klicks ![](assets/uc_enrichment_16.png). Auswählen **[!UICONTROL Target-Erweiterung]** dann die zuvor erstellten benutzerdefinierten Gültigkeitsdaten mit den **[!UICONTROL Anreicherung]** -Aktivität, um Ihre Erweiterung zum formatDate-Ausdruck hinzuzufügen.
+1. Klicken Sie auf ![](assets/uc_enrichment_16.png). Wählen Sie **[!UICONTROL Erweiterung des Zieldatensatzes]** aus und wählen Sie danach mit der Aktivität **[!UICONTROL Anreicherung]** die zuvor erstellten benutzerdefinierten Gültigkeitsdaten aus, um Ihre Erweiterung zum formatDate-Ausdruck hinzuzufügen.
 
    ![](assets/uc_enrichment_19.png)
 

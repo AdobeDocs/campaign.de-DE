@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: bcbf3101-d43c-4ed3-ab02-a9936ec55b71
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '441'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Sie können weitere Bedingungen hinzufügen und Inhalte in Abhängigkeit von ein
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen. Inhalte werden in der bevorzugten Sprache der Empfängerin bzw. des Empfängers angezeigt.
 
-1. Erstellen Sie eine E-Mail und wählen Sie die Zielpopulation aus. In diesem Beispiel basiert die Bedingung, dass die eine Version oder die andere angezeigt wird, auf der **Sprache** Wert des Empfängerprofils. Diese Werte sind auf **DE**, **FR**, **ES**.
+1. Erstellen Sie eine E-Mail und wählen Sie die Zielpopulation aus. In diesem Beispiel basiert die Bedingung für die Darstellung einer bestimmten Version auf dem Wert **Sprache** des Empfängerprofils. Diese Werte sind festgelegt auf **EN**, **FR**, **ES**.
 1. Klicken Sie im HTML-Inhalt der E-Mail auf den Tab **[!UICONTROL Quelle]** und fügen Sie folgenden Code ein:
 
    ```

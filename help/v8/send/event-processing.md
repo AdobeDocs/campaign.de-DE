@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '695'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Mögliche Status sind:
 * **Versand ausstehend**
 Das Ereignis wurde verarbeitet und die Versandvorlage ist verknüpft. Die E-Mail ist versandbereit und der Standard-Versandprozess wird angewendet. Details können direkt im Versand eingesehen werden.
 * **Gesendet**, **Ignoriert** und **Versandfehler**
-Diese Versandstatus werden über die **updateEventsStatus** Arbeitsablauf. Für weitere Informationen können Sie den entsprechenden Versand öffnen.
+Diese Versandstatus werden über den Workflow **updateEventsStatus** wiederhergestellt. Für weitere Informationen können Sie den entsprechenden Versand öffnen.
 * **Ereignis wurde nicht berücksichtigt**
 Die Routing-Phase der Transaktionsnachricht ist fehlgeschlagen. Ein Beispiel hierfür wäre, dass Adobe Campaign die E-Mail, die als Vorlage für das Ereignis dient, nicht finden konnte.
 * **Ereignis ist abgelaufen**

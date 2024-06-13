@@ -5,15 +5,15 @@ feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
 source-git-commit: 5d3dd679eb7a756200d604601c20c3fed5770fc2
-workflow-type: tm+mt
-source-wordcount: '1511'
+workflow-type: ht
+source-wordcount: '1530'
 ht-degree: 100%
 
 ---
 
 # Migration von technischen Campaign-Benutzerinnen und -Benutzern zur Adobe Developer Console {#migrate-tech-users-to-ims}
 
-Im Rahmen der Bemühungen um die Verbesserung des Sicherheits- und Authentifizierungsprozesses wird ab Campaign v8.5 der Authentifizierungsprozess für Campaign v8 verbessert. Technische Benutzende können jetzt das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"} benutzen.
+Im Rahmen der Bemühungen um die Verbesserung des Sicherheits- und Authentifizierungsprozesses wird ab Campaign v8.5 der Authentifizierungsprozess für Campaign v8 verbessert. Technische Benutzende können sich jetzt über das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} mit Campaign verbinden. In der [Dokumentation zur Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"} erfahren Sie mehr über den neuen Server-zu-Server-Authentifizierungsprozess.
 
 Eine technische Benutzerin bzw. ein technischer Benutzer ist ein Campaign-Benutzerprofil, das explizit für die API-Integration erstellt wurde. In diesem Artikel werden die Schritte beschrieben, die zum Migrieren einer technischen Benutzerin bzw. eines technischen Benutzers zu einem technischen Konto über die Adobe Developer Console erforderlich sind.
 

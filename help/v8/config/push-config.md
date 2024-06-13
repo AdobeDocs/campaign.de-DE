@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 99e3643dc8628c5bbf938aac0e32036f4043432b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1232'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -796,7 +796,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
 ## Variablen {#variables}
 
-Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Mobile-App-Code und in der Adobe Campaign-Clientkonsole in der Variablen **[!UICONTROL Variablen]** in der dedizierten Mobile App.
+Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Code der mobilen Anwendung und in der Adobe Campaign Client-Konsole auf der Registerkarte **[!UICONTROL Variablen]** in der speziellen mobilen Anwendung definiert werden.
 
 
 Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.

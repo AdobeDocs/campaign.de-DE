@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1627'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
 * **Umgebung**: ein Set, das einen Angebotskatalog und Haken (Angebotsplatzierungen) enthält. Erstellen Sie eine Umgebung anhand der Zielgruppendimension. Hier bestehen zwei Arten von Einschränkungen:
 
    * **Design-Umgebung**: Umgebung, in der Angebote erstellt und/oder Typologieregeln definiert werden (Regeln, die bestimmen, welche Angebote einer Zielperson unterbreitet werden sollen oder nicht). Die Tabelle der Einzelanwender, an die sich die Angebote richten sollen, und die Tabelle zum Speichern aller Angebotsvorschläge werden ebenfalls darin definiert. Der Knoten **[!UICONTROL Design-Umgebung]** enthält Platzierungs-Unterordner, vordefinierte Filter und Angebotskategorien. Für jede **[!UICONTROL Design-Umgebung]** gibt es eine entsprechende schreibgeschützte **[!UICONTROL Live-Umgebung]**, die aus derselben **[!UICONTROL Design-Umgebung]** erzeugt wird.
-   * **Live-Umgebung**: Umgebung, die mit einer **[!UICONTROL Design-Umgebung]**. Sie enthält schreibgeschützte Angebote, deren Inhalte und Eignung in der **[!UICONTROL Design-Umgebung]** genehmigt wurden. Sie können auf einer Website angezeigt oder in eine Nachricht eingefügt werden.
+   * **Live-Umgebung**: Eine Live-Umgebung ist mit einer **[!UICONTROL Design-Umgebung]** verknüpft. Sie enthält schreibgeschützte Angebote, deren Inhalte und Eignung in der **[!UICONTROL Design-Umgebung]** genehmigt wurden. Sie können auf einer Website angezeigt oder in eine Nachricht eingefügt werden.
 
 * **Platzierung**: Ordner, der festlegt, wo das Angebot gezeigt wird. Bei der Definition einer Platzierung haben Sie folgende Möglichkeiten:
    * Kanal auswählen

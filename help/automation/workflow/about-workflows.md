@@ -6,9 +6,9 @@ feature: Workflows
 role: User
 exl-id: 297aa4e3-b672-46b5-9016-5accee8568b8
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ In den folgenden Abschnitten finden Sie Anleitungen und Best Practices zur Autom
 
 * Weiterführende Informationen zu Workflow-Aktivitäten finden Sie auf [dieser Seite](use-workflow-data.md).
 * Informationen zum Erstellen eines Workflows finden Sie in [diesem Abschnitt](build-a-workflow.md).
-* Hier erfahren Sie, wie Sie mit Workflows Daten in Campaign importieren können. [diesem Abschnitt](campaign-workflows.md).
+* In [diesem Abschnitt](campaign-workflows.md) erfahren Sie, wie Sie Daten mithilfe von Workflows in Campaign importieren.
 * Die Best Practices bei Workflows werden auf [dieser Seite](workflow-best-practices.md) beschrieben.
 * Hinweise zur Workflow-Ausführung finden Sie in [diesem Abschnitt](start-a-workflow.md).
 * Informationen zum Überwachen von Workflows finden Sie auf [dieser Seite](monitor-workflow-execution.md).
