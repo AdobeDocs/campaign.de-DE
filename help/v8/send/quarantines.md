@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: ht
-source-wordcount: '1221'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -73,7 +73,7 @@ Um die Liste der in Quarantäne befindlichen Adressen **für die gesamte Plattfo
 >
 >Ende 1. Jahr: (1 &#42; 0,33) / (1 + 0,5) = 22 %.
 >
->Ende 2. Jahr: ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
+Ende 2. Jahr: ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
 
 Darüber hinaus zeigt der integrierte Bericht **[!UICONTROL Fehler und Bounces]**, der im Abschnitt **Berichte** auf der Startseite verfügbar ist, Informationen zu den in Quarantäne befindlichen E-Mail-Adressen, zu den aufgetretenen Fehlertypen und zur Verteilung von Fehlern nach Domain. Sie können Daten nach einem bestimmten Versand filtern oder diesen Bericht nach Bedarf anpassen.
 
@@ -104,7 +104,7 @@ Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!CAUTION]
 >
->Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
+Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
 
 Bei Bedarf können Sie eine Adresse auch manuell aus der Quarantäneliste entfernen. Um eine E-Mail-Adresse aus der Quarantäne zu entfernen, haben Sie folgende Möglichkeiten:
 

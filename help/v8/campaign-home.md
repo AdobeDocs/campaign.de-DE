@@ -5,7 +5,7 @@ title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: 574206bd243a2492e512ee62f057da940d29da6e
 workflow-type: ht
-source-wordcount: '341'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
