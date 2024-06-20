@@ -6,10 +6,10 @@ feature: Workflows
 level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: ht
-source-wordcount: '1146'
-ht-degree: 100%
+source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
+workflow-type: tm+mt
+source-wordcount: '1209'
+ht-degree: 94%
 
 ---
 
@@ -62,6 +62,16 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 * **[!UICONTROL Neu starten]**
 
   Dieser Befehl hält einen Workflow zunächst an und startet ihn dann erneut.In den meisten Fällen ermöglicht diese Vorgehensweise einen schnelleren Neustart als die separate Verwendung der Anhalten- und Starten-Schaltflächen. Dies ist insbesondere dann nützlich, wenn das Anhalten eines Workflows geraume Zeit in Anspruch nimmt, da der Befehl &quot;Starten&quot; erst wieder verfügbar ist, wenn der Workflow tatsächlich angehalten wurde.
+
+  Beachten Sie Folgendes: **Neu starten** Aktion löscht nicht die Workflow-Instanzvariablen im Vergleich zu **Ausführung**, **Anhalten**, und **Starten** Aktionen (das Löschen der Instanzvariablen erfolgt bei der Aktion Start ). Beim Neustart eines Workflows sind Instanzvariablen weiterhin für die Verwendung mit beibehaltenen Werten verfügbar. Um sie zu löschen, haben Sie folgende Möglichkeiten:
+   * Ausführen **Anhalten** und **Starten** Aktionen.
+   * Fügen Sie am Ende der Workflow-Ausführung folgenden JavaScript-Code hinzu:
+
+     ```
+     var wkf = xtk.workflow.load(instance.id)
+     wkf.variables='<variables/>'
+     wkf.save()
+     ```
 
 * **[!UICONTROL Verlaufsbereinigung]**
 

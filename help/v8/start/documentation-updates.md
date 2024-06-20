@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: 5f62addc95197ce5f4f80c026cc51ac14e61ff58
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,9 @@ ht-degree: 100%
 
 Auf dieser Seite werden alle aktuellen Updates in der [!DNL Campaign] v8 (Konsole)-Dokumentation aufgeführt.
 
+## Juni 2024 {#june-2024}
+
+Es wurde ein Hinweis hinzugefügt, der angibt, wie Instanzvariablen beim Neustart von Workflows gelöscht werden können - [Weitere Informationen](../../automation/workflow/start-a-workflow.md)
 
 ## Mai 2024 {#may-2024}
 
