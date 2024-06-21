@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benut
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 5d3dd679eb7a756200d604601c20c3fed5770fc2
-workflow-type: ht
-source-wordcount: '1530'
-ht-degree: 100%
+source-git-commit: 07c2a7460c407a0afb536d8b64f4105d8bc547f4
+workflow-type: tm+mt
+source-wordcount: '1551'
+ht-degree: 98%
 
 ---
 
@@ -151,9 +151,13 @@ Weitere Informationen zu den Schritten der API-Integration, einschließlich eine
 
 Im Folgenden finden Sie Beispiele für SOAP-Aufrufe, die die Aufrufe vor und nach der Migration für die Systeme von Drittanbietern zeigen.
 
+Bei Verwendung der Adobe Identity Management System (IMS)-Authentifizierung zum Generieren einer WSDL-Datei sollten Sie die `Authorization: Bearer <IMS_Technical_Token_Token>` im Postman-Aufruf:
+
+```
+curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
+```
+
 Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufrufe wie folgt aktualisiert:
-
-
 
 * Vor der Migration: Zugriffstoken für technische Konten wurden nicht unterstützt.
 
@@ -201,8 +205,6 @@ Sobald der Migrationsprozess erreicht und validiert wurde, werden die SOAP-Aufru
   </soapenv:Body>
   </soapenv:Envelope>
   ```
-
-
 
 ### Schritt 9: (optional) Aktualisieren der Benutzenden des technischen Kontos in der Campaign Client-Konsole {#ims-migration-step-9}
 

@@ -4,10 +4,10 @@ title: Aufspaltung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Aufspaltung".
 feature: Workflows, Targeting Activity
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: ht
-source-wordcount: '1995'
-ht-degree: 100%
+source-git-commit: a5d44321c3d68b9370cfb6e9b1df62435de0dbda
+workflow-type: tm+mt
+source-wordcount: '2020'
+ht-degree: 98%
 
 ---
 
@@ -17,11 +17,13 @@ ht-degree: 100%
 
 Diese Aktivität löst keine Vereinigung der eingehenden Populationen aus. Wenn mehrere eingehende Transitionen in einer Split-Aktivität landen, wird empfohlen, eine **[!UICONTROL Vereinigung]** vorzuschalten.
 
-Weiterführende Informationen zur Aufspaltungsaktivität finden Sie in [diesem Abschnitt](targeting-workflows.md#create-subsets-using-the-split-activity).
+>[!NOTE]
+>
+>Aufspaltungsvorgänge können nicht für Tabellen mit unterschiedlichen Quellen durchgeführt werden. Zu diesem Zweck müssen Sie eine **Anreicherung** -Aktivität vor **Aufspaltung** -Aktivität.
 
-Ein Beispiel für die Verwendung der Aufspaltungs-Aktivität zur Segmentierung der Zielgruppe in unterschiedliche Populationen mithilfe von Filterbedingungen finden Sie in [diesem Abschnitt](cross-channel-delivery-workflow.md).
-
-Ein Beispiel für die Verwendung einer Instanzvariablen in einer Aufspaltungs-Aktivität finden Sie in [diesem Abschnitt](javascript-scripts-and-templates.md).
+* Weiterführende Informationen zur Aufspaltungsaktivität finden Sie in [diesem Abschnitt](targeting-workflows.md#create-subsets-using-the-split-activity).
+* Ein Beispiel für die Verwendung der Aufspaltungs-Aktivität zur Segmentierung der Zielgruppe in unterschiedliche Populationen mithilfe von Filterbedingungen finden Sie in [diesem Abschnitt](cross-channel-delivery-workflow.md).
+* Ein Beispiel für die Verwendung einer Instanzvariablen in einer Aufspaltungs-Aktivität finden Sie in [diesem Abschnitt](javascript-scripts-and-templates.md).
 
 Konfigurieren Sie die Aktivität, indem Sie im Tab **[!UICONTROL Teilmengen]** jeweils einen Titel und die Auswahlkriterien der Teilmengen angeben. Geben Sie im Tab **[!UICONTROL Allgemein]** die Zielgruppendimension an.
 
