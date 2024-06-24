@@ -4,9 +4,9 @@ description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: e119c415ce363a635f9f0318e3fd70f90f4bde06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '801'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ NEO-70263, NEO-64984, NEO-63657, NEO-63387, NEO-62964, NEO-62750, NEO-62686, NEO
 
 ## Mai-Updates {#may-updates}
 
-Die folgende Änderung wurde im Mai veröffentlicht und steht jetzt Campaign v8-Benutzern zur Verfügung:
+Die folgende Änderung wurde im Mai veröffentlicht und steht jetzt Benutzenden von Campaign v8 zur Verfügung:
 
 * **Neues Add-on für verbesserte Sicherheit**: Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet Adobe Campaign ein neues Add-on für verbesserte Sicherheit an. Die darin enthaltenen Funktionen ermöglichen eine sichere CMK-Integration und sicheres VPN-Tunneling.  [Weitere Informationen](../config/enhanced-security.md)
 
