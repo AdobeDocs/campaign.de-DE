@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
+source-git-commit: 4ef40ff971519c064b980df8235188c717855f27
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1477'
 ht-degree: 95%
 
 ---
@@ -84,7 +84,7 @@ Befolgen Sie die folgenden Schritte, um Ihre Umgebung zu HTTP v1 zu migrieren:
    | Datennachricht | K. A. | validate_only |
    | Benachrichtigungsinhalt | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-1. Sobald die Umstellung auf HTTP v1 abgeschlossen ist, müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen, um die Anzahl der Batch-Nachrichten zu erhöhen. Navigieren Sie dazu zu den Eigenschaften Ihrer Android-Versandvorlage und im **Versand** Registerkarte, legen Sie die [Menge des Nachrichten-Batches](../../v8/send/configure-and-send.md#delivery-batch-quantity) nach **256**. Wenden Sie diese Änderung auf alle Android-Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle Ihre bestehenden Android-Sendungen.
+1. Sobald die Umstellung auf HTTP v1 abgeschlossen ist, müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen, um die Anzahl der Batch-Nachrichten zu erhöhen. Navigieren Sie dazu zu den Eigenschaften Ihrer Android-Versandvorlage und im **Versand** Registerkarte, legen Sie die [Menge des Nachrichten-Batches](../../v8/send/configure-and-send.md#delivery-batch-quantity) nach **256**. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle Ihre bestehenden Android-Sendungen.
 
 
 >[!NOTE]
