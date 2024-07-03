@@ -5,8 +5,8 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
-workflow-type: ht
+source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
+workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Vor der Durchführung des Versands können Sie auf der Registerkarte **[!UICONTR
 
 Verwenden Sie die Option **[!UICONTROL Versandpriorität]**, um die Versandreihenfolge für Ihre Sendungen zu ändern. Legen Sie dazu eine Prioritätsstufe von **[!UICONTROL Sehr niedrig]** bis **[!UICONTROL Sehr hoch]** fest (der Standardwert ist **[!UICONTROL Normal]**).
 
-### Kontingentgröße
+### Kontingentgröße {#delivery-batch-quantity}
 
 Mithilfe der Option **[!UICONTROL Kontingentgröße]** können Sie die Anzahl der in einem XML-Versand-Package enthaltenen Nachrichten festlegen. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
 
