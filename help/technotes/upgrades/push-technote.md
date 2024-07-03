@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 24d9adddbc983a600f99dab8bab1235585b48ceb
+source-git-commit: 9eb8521a1cc264d4d0137c68654ca45ccade81bd
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 100%
+source-wordcount: '1478'
+ht-degree: 95%
 
 ---
 
@@ -77,12 +77,14 @@ Befolgen Sie die folgenden Schritte, um Ihre Umgebung zu HTTP v1 zu migrieren:
 1. Bei Bedarf können Sie die Inhalte von Push-Nachrichten mit bestimmten **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar; ein Teil der Payload der Nachricht wird an das Mobilgerät gesendet.
 1. Klicken Sie auf **[!UICONTROL Beenden]** und danach auf **[!UICONTROL Speichern]**.
 
-Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachrichtigung weiter personalisieren können. Diese Optionen werden [hier](#fcm-apps) im Detail beschrieben.
+   Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachrichtigung weiter personalisieren können. Diese Optionen werden [hier](#fcm-apps) im Detail beschrieben.
 
-| Nachrichtentyp | Konfigurierbares Nachrichtenelement (FCM-Payload-Name) | Konfigurierbare Optionen (Name der FCM-Payload) |
-|:-:|:-:|:-:|
-| Datennachricht | K. A. | validate_only |
-| Benachrichtigungsinhalt | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
+   | Nachrichtentyp | Konfigurierbares Nachrichtenelement (FCM-Payload-Name) | Konfigurierbare Optionen (Name der FCM-Payload) |
+   |:-:|:-:|:-:|
+   | Datennachricht | K. A. | validate_only |
+   | Benachrichtigungsinhalt | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
+
+1. Sobald die Umstellung auf HTTP v1 abgeschlossen ist, müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen, um die Anzahl der Batch-Nachrichten zu erhöhen. Navigieren Sie dazu zu den Eigenschaften Ihrer Android-Versandvorlage und im **Versand** Registerkarte, legen Sie die **Menge des Nachrichten-Batches** nach **256**. Wenden Sie diese Änderung auf alle Android-Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle Ihre bestehenden Android-Sendungen.
 
 
 >[!NOTE]
@@ -107,7 +109,6 @@ Sie haben folgende Möglichkeiten:
 * Setzen Sie die **[!UICONTROL Sichtbarkeitsstufe]** Ihrer Benachrichtigung auf öffentlich, privat oder geheim.
 
 Weitere Informationen zu den **[!UICONTROL zusätzlichen HTTP v1-Optionen]** und dazu, wie diese Felder auszufüllen sind, finden Sie in der [FCM-Dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
-
 
 
 
