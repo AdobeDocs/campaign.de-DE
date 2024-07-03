@@ -5,10 +5,10 @@ feature: Push
 role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
-workflow-type: ht
-source-wordcount: '947'
-ht-degree: 100%
+source-git-commit: 48aba38f3dc8bb322e6d0b38c1b743e980671cd7
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 87%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 100%
 
 Mit Mobile-App-Sendungen können Sie Benachrichtigungen an iOS- und Android-Geräte senden.
 
-Bevor Sie mit dem Versand von Push-Benachrichtigungen mit Adobe Campaign beginnen, müssen Sie sicherstellen, dass Konfigurationen und Integrationen in der Mobile App sowie für Tags in Adobe Experience Platform vorhanden sind. [Erfahren Sie mehr über die Push-Konfiguration.](push-settings.md)
+Bevor Sie mit dem Versand von Push-Benachrichtigungen mit Adobe Campaign beginnen, müssen Sie sicherstellen, dass Konfigurationen und Integrationen in der Mobile App sowie für Tags in Adobe Experience Platform vorhanden sind. [Erfahren Sie mehr über die Push-Konfiguration.](push-settings.md).
 
 >[!CAUTION]
 >
->Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können dies bereits überprüfen und Maßnahmen ergreifen. [Weitere Informationen](../../technotes/upgrades/push-technote.md).
+>Einige wichtige Änderungen am Android Firebase Cloud Messaging (FCM)-Dienst werden 2024 veröffentlicht und können sich auf Ihre Adobe Campaign-Implementierung auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können dies bereits überprüfen und Maßnahmen ergreifen. [Weitere Informationen](../../technotes/upgrades/push-technote.md).
 
 
-## Erstellen der ersten Push-Benachrichtigung{#push-create}
+## Erstellen der ersten Push-Benachrichtigung {#push-create}
 
 In diesem Abschnitt werden die Elemente beschrieben, die für den Versand von iOS- und Android-Benachrichtigungen erforderlich sind.
 
@@ -31,9 +31,13 @@ In diesem Abschnitt werden die Elemente beschrieben, die für den Versand von iO
 >
 >Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist die Mobile-Registrierung jetzt **asynchron**. [Weitere Informationen](../architecture/staging.md)
 
+
 Um einen neuen Versand zu erstellen, gehen Sie zur Registerkarte **[!UICONTROL Kampagnen]**, klicken Sie auf **[!UICONTROL Sendungen]** und anschließend auf die Schaltfläche **[!UICONTROL Erstellen]** oberhalb der Liste der vorhandenen Sendungen.
 
 ![](assets/delivery_step_1.png)
+
+
+Standardmäßig enthält Adobe Campaign zwei Versandvorlagen: eine für iOS und eine für Android. Sie können sie duplizieren, um Ihre eigenen Einstellungen zu definieren. Die Schritte zum Konfigurieren eines Push-Versands auf der Basis dieser Vorlagen werden nachfolgend beschrieben.
 
 >[!BEGINTABS]
 
@@ -133,6 +137,11 @@ Gehen Sie wie folgt vor, um Benachrichtigungen auf Android-Geräten zu senden:
 
    ![](assets/push-template-android.png)
 
+   >[!NOTE]
+   > 
+   >Mit den neuesten FCM-APIs (HTTP v1) müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen, um die Anzahl der Batch-Nachrichten zu erhöhen. Navigieren Sie dazu zu den Eigenschaften Ihrer Android-Versandvorlage und im **Versand** Registerkarte, legen Sie die [Menge des Nachrichten-Batches](../../v8/send/configure-and-send.md#delivery-batch-quantity) nach **256**. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle Ihre bestehenden Android-Sendungen.
+
+
 1. Klicken Sie zur Bestimmung der Zielgruppe der Benachrichtigung auf den Link **[!UICONTROL An]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/push-android-select-target.png)
@@ -155,7 +164,8 @@ Gehen Sie wie folgt vor, um Benachrichtigungen auf Android-Geräten zu senden:
 
 >[!ENDTABS]
 
-## Push-Benachrichtigungen testen, senden und überwachen
+
+## Push-Benachrichtigungen testen, senden und überwachen {#push-test}
 
 Testsendungen und der endgültige Versand werden analog zu anderen Versandmethoden durchgeführt.
 
