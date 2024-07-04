@@ -5,7 +5,7 @@ type: Event
 title: Technotes zu Adobe Campaign
 description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
-source-git-commit: 29665df166a12a4928c6e356e1ff1a3bb47e30e5
+source-git-commit: c5e804db7deaa6b9511858d088eb6da5d16e8abf
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 85%
@@ -27,4 +27,4 @@ ht-degree: 85%
    + [Internet-Browser](upgrades/browsers.md)
    + [System-Upgrades für 2023](upgrades/tech-stack-upgrade.md)
    + [Abschaffung der Client-Konsole für 32-Bit](upgrades/console.md)
-+ [&lt; Zurück zur Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
++ [&lt; Zurück zur Campaign v8-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)
