@@ -1,20 +1,20 @@
 ---
 keywords: Campaign Standard;Startseite;beliebte Themen
-description: Adobe Campaign-Technotes
+description: Technotes zu Adobe Campaign
 title: Technische Artikel zu Adobe Campaign
 role: Developer
 level: Experienced
 exl-id: ae1ef010-24d5-4be4-a30c-899e2b0040a4
 source-git-commit: 0844a4fcd34220d825ae30368b284cbcaf93d02b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Technotes zu Adobe Campaign v8 {#campaign-technotes}
+# Technotes zu Adobe Campaign v8 {#campaign-technotes}
 
-Die neuesten Campaign-Technotes finden Sie in diesem Abschnitt. Diese Technotes gelten für Campaign v8.
+In diesem Abschnitt finden Sie aktuelle Technotes zu Campaign. Diese Technotes gelten für Campaign v8.
 
 >[!BEGINTABS]
 
@@ -28,7 +28,7 @@ Einige wichtige Änderungen am Android Firebase Cloud Messaging(FCM)-Dienst werd
 
 >[!TAB Identity Management System (IMS)]
 
-Ab Campaign v8.6 wird der Authentifizierungsprozess für Campaign v8 verbessert. Alle Benutzer verwenden nur Adobe Identity Management System (IMS), um eine Verbindung zu Campaign herzustellen.
+Ab Campaign v8.6 wird der Authentifizierungsprozess für Campaign v8 verbessert. Alle Benutzerinnen bzw. Benutzer verwenden für die Verbindung mit Campaign ausschließlich das Adobe Identity Management System (IMS)
 
 [![Bild](../v8/assets/do-not-localize/learn-more-button.svg)](upgrades/migrate-users-to-ims.md)
 

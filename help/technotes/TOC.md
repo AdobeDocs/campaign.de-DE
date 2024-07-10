@@ -6,9 +6,9 @@ title: Technotes zu Adobe Campaign
 description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
 source-git-commit: c5e804db7deaa6b9511858d088eb6da5d16e8abf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '64'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -27,4 +27,4 @@ ht-degree: 85%
    + [Internet-Browser](upgrades/browsers.md)
    + [System-Upgrades für 2023](upgrades/tech-stack-upgrade.md)
    + [Abschaffung der Client-Konsole für 32-Bit](upgrades/console.md)
-+ [&lt; Zurück zur Campaign v8-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)
++ [&lt; Zurück zur Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)

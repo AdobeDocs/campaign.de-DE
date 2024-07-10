@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: 48aba38f3dc8bb322e6d0b38c1b743e980671cd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 87%
 
 Mit Mobile-App-Sendungen können Sie Benachrichtigungen an iOS- und Android-Geräte senden.
 
-Bevor Sie mit dem Versand von Push-Benachrichtigungen mit Adobe Campaign beginnen, müssen Sie sicherstellen, dass Konfigurationen und Integrationen in der Mobile App sowie für Tags in Adobe Experience Platform vorhanden sind. [Erfahren Sie mehr über die Push-Konfiguration.](push-settings.md).
+Bevor Sie mit dem Versand von Push-Benachrichtigungen mit Adobe Campaign beginnen, müssen Sie sicherstellen, dass Konfigurationen und Integrationen in der Mobile App sowie für Tags in Adobe Experience Platform vorhanden sind. [Erfahren Sie mehr über die Push-Konfiguration](push-settings.md).
 
 >[!CAUTION]
 >
->Einige wichtige Änderungen am Android Firebase Cloud Messaging (FCM)-Dienst werden 2024 veröffentlicht und können sich auf Ihre Adobe Campaign-Implementierung auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können dies bereits überprüfen und Maßnahmen ergreifen. [Weitere Informationen](../../technotes/upgrades/push-technote.md).
+>Einige wichtige Änderungen am Android Firebase Cloud Messaging-Dienst (FCM) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können dies bereits überprüfen und Maßnahmen ergreifen. [Weitere Informationen](../../technotes/upgrades/push-technote.md).
 
 
 ## Erstellen der ersten Push-Benachrichtigung {#push-create}
@@ -139,7 +139,7 @@ Gehen Sie wie folgt vor, um Benachrichtigungen auf Android-Geräten zu senden:
 
    >[!NOTE]
    > 
-   >Mit den neuesten FCM-APIs (HTTP v1) müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen, um die Anzahl der Batch-Nachrichten zu erhöhen. Navigieren Sie dazu zu den Eigenschaften Ihrer Android-Versandvorlage und im **Versand** Registerkarte, legen Sie die [Menge des Nachrichten-Batches](../../v8/send/configure-and-send.md#delivery-batch-quantity) nach **256**. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle Ihre bestehenden Android-Sendungen.
+   >Bei den aktuellen FCM-APIs (HTTP v1) müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen aktualisieren, um die Anzahl der Batch-Nachrichten zu erhöhen. Öffnen Sie zu diesem Zweck die Eigenschaften Ihrer Android-Versandvorlage und legen Sie auf der Registerkarte **Versand** für die Einstellung [ Kontingentgröße](../../v8/send/configure-and-send.md#delivery-batch-quantity) den Wert **256** fest. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle vorhandenen Android-Sendungen.
 
 
 1. Klicken Sie zur Bestimmung der Zielgruppe der Benachrichtigung auf den Link **[!UICONTROL An]** und anschließend auf **[!UICONTROL Hinzufügen]**.

@@ -3,9 +3,9 @@ audience: user
 user-guide-title: Handbuch zur Kampagnenautomatisierung
 user-guide-description: Handbuch zur Kampagnenautomatisierung
 source-git-commit: c5e804db7deaa6b9511858d088eb6da5d16e8abf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -165,4 +165,4 @@ ht-degree: 98%
    + [Auf Kampagnen zugreifen](distributed-marketing/accessing-campaigns.md)
    + [Verfolgen einer Kampagne](distributed-marketing/tracking-a-campaign.md)
    + [Anwendungsfälle](distributed-marketing/examples.md)
-+ [&lt; Zurück zur Campaign v8-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)
++ [&lt; Zurück zur Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)

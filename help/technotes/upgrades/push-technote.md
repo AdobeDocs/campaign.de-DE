@@ -9,9 +9,9 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
 source-git-commit: 4ef40ff971519c064b980df8235188c717855f27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1477'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Darüber hinaus empfiehlt Adobe dringend, zur Token-basierten anstatt einer zert
 
 ### Was hat sich verändert? {#fcm-changes}
 
-Im Rahmen der kontinuierlichen Bemühungen von Google, seine Dienste zu verbessern, werden die veralteten FCM-APIs am **Dienstag, 22. Juli 2024** eingestellt. Weitere Informationen zum HTTP-Protokoll von Firebase Cloud Messaging finden Sie in der [Google Firebase-Dokumentation](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
+Im Rahmen der kontinuierlichen Bemühungen von Google, seine Dienste zu verbessern, werden die veralteten FCM-APIs am **22. Juli 2024** eingestellt. Weitere Informationen zum HTTP-Protokoll von Firebase Cloud Messaging finden Sie in der [Google Firebase-Dokumentation](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
 
 Adobe Campaign Classic v7 und Adobe Campaign v8 unterstützen bereits die neuesten APIs zum Senden von Push-Benachrichtigungen. Einige alte Implementierungen sind jedoch weiterhin auf die alten APIs angewiesen. Diese Implementierungen müssen aktualisiert werden.
 
@@ -84,7 +84,7 @@ Befolgen Sie die folgenden Schritte, um Ihre Umgebung zu HTTP v1 zu migrieren:
    | Datennachricht | K. A. | validate_only |
    | Benachrichtigungsinhalt | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-1. Sobald die Umstellung auf HTTP v1 abgeschlossen ist, müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen, um die Anzahl der Batch-Nachrichten zu erhöhen. Navigieren Sie dazu zu den Eigenschaften Ihrer Android-Versandvorlage und im **Versand** Registerkarte, legen Sie die [Menge des Nachrichten-Batches](../../v8/send/configure-and-send.md#delivery-batch-quantity) nach **256**. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle Ihre bestehenden Android-Sendungen.
+1. Nach der Migration zu HTTP v1 müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen aktualisieren, um die Anzahl der Batch-Nachrichten zu erhöhen. Öffnen Sie zu diesem Zweck die Eigenschaften Ihrer Android-Versandvorlage und legen Sie auf der Registerkarte **Versand** für die Einstellung [ Kontingentgröße](../../v8/send/configure-and-send.md#delivery-batch-quantity) den Wert **256** fest. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle vorhandenen Android-Sendungen.
 
 
 >[!NOTE]

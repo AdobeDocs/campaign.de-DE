@@ -5,9 +5,9 @@ feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
 source-git-commit: 07c2a7460c407a0afb536d8b64f4105d8bc547f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1551'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ Weitere Informationen zu den Schritten der API-Integration, einschließlich eine
 
 Im Folgenden finden Sie Beispiele für SOAP-Aufrufe, die die Aufrufe vor und nach der Migration für die Systeme von Drittanbietern zeigen.
 
-Bei Verwendung der Adobe Identity Management System (IMS)-Authentifizierung zum Generieren einer WSDL-Datei sollten Sie die `Authorization: Bearer <IMS_Technical_Token_Token>` im Postman-Aufruf:
+Wenn Sie die Authentifizierung über das Adobe Identity Management System (IMS) verwenden, sollten Sie im Postman-Aufruf „`Authorization: Bearer <IMS_Technical_Token_Token>`“ hinzufügen:
 
 ```
 curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
