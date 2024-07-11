@@ -6,10 +6,10 @@ feature: Push
 role: User
 level: Beginner
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
-source-git-commit: 94dba45c59c699680675bdcd2b73da386d727435
-workflow-type: ht
-source-wordcount: '1241'
-ht-degree: 100%
+source-git-commit: 5236cc94e78db11b8975ad84c49594b282fdecf3
+workflow-type: tm+mt
+source-wordcount: '1263'
+ht-degree: 98%
 
 ---
 
@@ -26,6 +26,10 @@ Bei Firebase Cloud Messaging stehen Ihnen zwei Nachrichtentypen zur Auswahl:
 * Die **[!UICONTROL Benachrichtigungsmeldung]** wird automatisch vom FCM SDK verarbeitet. FCM übernimmt für die Client-App automatisch das Anzeigen der Nachricht auf den Geräten Ihrer Benutzenden. Benachrichtigungsmeldungen enthalten einen vordefinierten Satz von Parametern und Optionen, können aber mit benutzerspezifischen Anwendungsvariablen weiter personalisiert werden.
 
 ## Festlegen des Inhalts der Benachrichtigung {#push-message}
+
+>[!IMPORTANT]
+>
+>Bevor Sie eine Rich-Push-Benachrichtigung entwerfen, müssen Sie zunächst Ihren Connector konfigurieren. Siehe Abschnitt [diese Seite](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) für das detaillierte Verfahren.
 
 Sobald Ihr Push-Versand erstellt ist, können Sie seinen Inhalt festlegen. Es sind drei Vorlagen verfügbar:
 
