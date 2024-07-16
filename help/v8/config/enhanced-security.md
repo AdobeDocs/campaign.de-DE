@@ -5,10 +5,10 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
-workflow-type: ht
-source-wordcount: '753'
-ht-degree: 100%
+source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
+workflow-type: tm+mt
+source-wordcount: '738'
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ Die folgenden drei Anwendungsfälle werden unterstützt:
 
 >[!CAUTION]
 >
->Nur On-Premise-Datenbanken und AWS-konforme VPN-Geräte werden unterstützt. [Weitere Informationen](#vpn-callouts)
+>Nur On-Premise-Datenbanken und AWS-konforme VPN-Geräte werden unterstützt. [Weitere Informationen](#vpn-databases)
 
 Um die ordnungsgemäße Verwendung dieser Funktion sicherzustellen, befolgen Sie die folgenden Richtlinien:
 
@@ -110,24 +110,23 @@ Um die ordnungsgemäße Verwendung dieser Funktion sicherzustellen, befolgen Sie
 
 * Richten Sie auf Ihrer Seite einen Mechanismus zum erneuten Aufbau der Verbindung ein, falls diese ausfällt.
 
+### Unterstützte Datenbanken und Geräte {#vpn-databases}
 
-### Schutzmechanismen und Einschränkungen {#vpn-callouts}
+Die folgenden On-Premise-Datenbanken werden unterstützt:
 
-Die folgenden Schutzmechanismen und Einschränkungen gelten für die VPN-Tunnelintegration mit Adobe Campaign v8:
+* MySQL
+* Netezza
+* Oracle
+* SAP HANA
+* SQL Server
+* Sybase
+* Teradata
+* Hadoop über HiveSQL
 
-* Es werden nur On-Premise-Datenbanken unterstützt, wie <!--Richa to check the list with PM-->:
+Es werden nur AWS-konforme VPN-Geräte unterstützt. Eine Liste kompatibler Geräte finden Sie auf [dieser Seite](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}.
 
-   * MySQL
-   * Netezza
-   * Oracle
-   * SAP HANA
-   * SQL Server
-   * Sybase
-   * Teradata
-   * Hadoop über HiveSQL
-
-* Es werden nur AWS-konforme VPN-Geräte unterstützt. Eine Liste kompatibler Geräte finden Sie auf [dieser Seite](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}<!--check which list should be communicated-->.
-
-* VPN-Verbindungen zu Drittanbietern oder externen Anbietern werden nicht unterstützt.
-
-* Von Adobe verwaltete zusätzliche VPNs für private Cloud-Datenbanken sind nicht enthalten.
+>[!NOTE]
+>
+>* VPN-Verbindungen zu Drittanbietern oder externen Anbietern werden nicht unterstützt.
+>
+>* Von Adobe verwaltete zusätzliche VPNs für private Cloud-Datenbanken sind nicht enthalten.

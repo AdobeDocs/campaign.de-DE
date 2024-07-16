@@ -5,9 +5,9 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
+workflow-type: tm+mt
+source-wordcount: '429'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Ac
 
 
 >[!AVAILABILITY]
->Darüber hinaus können Sie mit dem [Add-on für verbesserte Sicherheit](../config/enhanced-security.md) über das sichere VPN-Tunneling auf Ihre lokalen Datenbanken zugreifen. [Weitere Informationen](../config/enhanced-security.md#vpn-callouts)
+>Darüber hinaus können Sie mit dem [Add-on für verbesserte Sicherheit](../config/enhanced-security.md#secure-vpn-tunneling) über das sichere VPN-Tunneling auf Ihre lokalen Datenbanken zugreifen. [Weitere Informationen](../config/enhanced-security.md#vpn-callouts)
 
 ## Mobile SDK {#MobileSDK}
 
