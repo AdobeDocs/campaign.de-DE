@@ -3,10 +3,10 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: e119c415ce363a635f9f0318e3fd70f90f4bde06
-workflow-type: ht
-source-wordcount: '801'
-ht-degree: 100%
+source-git-commit: 09b8ced170ff28b24713722e0a82852038053201
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 91%
 
 ---
 
@@ -71,7 +71,7 @@ _2. Mai 2024_
 
 Ab dieser Version sind ausgehende Campaign-Integrationen in Adobe-Lösungen und -Apps auf OAuth-Server-zu-Server-Anmeldedaten angewiesen, weil die Anmeldedatenoption „Service-Konto (JWT)“ eingestellt wurde. Adobe führt die Migration von JWT zu OAuth für Ihre ausgehenden Integrationen durch, z. B. die Integration von Campaign-Analytics oder die Integration von Experience Cloud Triggers.
 
-Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"} beschrieben. Vorhandene Service-Konto(JWT)-Anmeldedaten funktionieren bis zum **27. Januar 2025** weiter. Darüber hinaus unterstützt die Developer Console die Erstellung neuer Service-Konto(JWT)-Anmeldedaten weiter bis zum **3. Juni 2024**. Danach ist es nicht mehr möglich, Service-Konto(JWT)-Anmeldedaten zu erstellen oder einem Projekt hinzufügen.
+Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"} beschrieben. Bereits vorhandene Service-Konto(JWT)-Anmeldedaten funktionieren noch bis zum **27. Januar 2025** weiterhin.
 
 
 ### Allgemeine Verbesserungen {#improvements-8-7-1}
@@ -80,7 +80,11 @@ Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie I
 
 * In Campaign-Tabellen werden die folgenden Attribute jetzt standardmäßig nach Datum und Uhrzeit des Servers ausgefüllt: `lastModified` und `created`. Der `createdBy-id`-Attributwert wird nun standardmäßig mit der aktuellen Anmelde-ID ausgefüllt. Werte, die von Benutzenden in API-Aufrufen bereitgestellt werden, werden ignoriert. <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
+* Um die Sicherheit der gesamten Kommunikation zwischen Anwendungen zu erhöhen, wird mTLS jetzt für externe API-Aufrufe unterstützt.
+
+
 ### Fehlerbehebungen {#fixes-8-7-1}
 
-Folgende Probleme wurden in dieser Version behoben:
-NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-68192, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-63706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, NEO-58314, NEO-58004, NEO-40054
+Die folgenden Probleme wurden in dieser Version behoben:
+
+NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-681 92, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-6 NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, NEO-6 O-58314, NEO-58004, NEO-40054
