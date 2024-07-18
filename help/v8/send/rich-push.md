@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
 source-git-commit: 5236cc94e78db11b8975ad84c49594b282fdecf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1263'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Bei Firebase Cloud Messaging stehen Ihnen zwei Nachrichtentypen zur Auswahl:
 
 >[!IMPORTANT]
 >
->Bevor Sie eine Rich-Push-Benachrichtigung entwerfen, müssen Sie zunächst Ihren Connector konfigurieren. Siehe Abschnitt [diese Seite](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) für das detaillierte Verfahren.
+>Bevor Sie eine Rich-Push-Benachrichtigung entwerfen, müssen Sie zunächst Ihren Connector konfigurieren. Eine detaillierte Vorgehensweise dazu finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android).
 
 Sobald Ihr Push-Versand erstellt ist, können Sie seinen Inhalt festlegen. Es sind drei Vorlagen verfügbar:
 
