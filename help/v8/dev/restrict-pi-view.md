@@ -5,10 +5,10 @@ feature: PI, Privacy, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
-workflow-type: ht
-source-wordcount: '396'
-ht-degree: 100%
+source-git-commit: b6f7b8a6652034145602d9949fa196eae929fb95
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 89%
 
 ---
 
@@ -52,6 +52,10 @@ Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 * In einem Workflow können Sie die eingeschränkte Spalte der Zielpopulation als zusätzliche Spalte des Übergangs hinzufügen, sie ist aber für Adobe Campaign-Benutzer immer noch unzugänglich.
 * Beim Speichern der Zielpopulation in einer Gruppe (Liste) sind die Eigenschaften der gespeicherten Felder identisch mit der Datenquelle.
 * Die Daten sind standardmäßig nicht für JS-Code verfügbar.
+
+>[!IMPORTANT]
+>
+>Die Verwendung des Attributs **accessibleIf** bei kritischen Parametern (z. B. bei zusammengesetzten Schlüsseln) kann zu Fehlern für Benutzer führen, die die Daten aufgrund ausgeblendeter Daten nicht lesen dürfen. Dies kann zu Abfragefehlern oder unerwartetem Verhalten führen. Stellen Sie sicher, dass wichtige Parameter verfügbar sind, um Unterbrechungen zu verhindern.
 
 ## Empfehlungen {#recommendations}
 
