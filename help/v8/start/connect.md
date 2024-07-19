@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 10b1113a20c11e0b97804f597cb0a48568fcae3d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
 * Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](compatibility-matrix.md)
 * Ermitteln Sie Ihre Campaign-Server-URL
-* Erstellen Sie Ihre Adobe ID oder rufen Sie Ihre Benutzeranmeldeinformationen von Ihrem Unternehmen ab
+* Erstellen Sie Ihre Adobe ID oder rufen Sie Ihre Benutzeranmeldedaten von Ihrem Unternehmen ab
 * Installieren Sie die Microsoft Edge Webview2-Laufzeitumgebung auf Ihrem System. [Weitere Informationen](#webview)
 
 

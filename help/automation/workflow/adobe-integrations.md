@@ -5,8 +5,8 @@ description: Erfahren Sie mehr über die Integrationen mit Workflows von Adobe E
 role: User
 topic-tags: technical-workflows
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '109'
 ht-degree: 100%
 
 ---

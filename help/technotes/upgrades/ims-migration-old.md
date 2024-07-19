@@ -5,7 +5,7 @@ exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
 hidefromtoc: true
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Für diese Migration müssen Sie in Ihrem Projekt die folgenden APIs hinzufügen
 
 Nachdem Ihr Projekt in der Adobe Developer Console erstellt wurde, fügen Sie eine API hinzu, die die Server-zu-Server-Authentifizierung verwendet. Erfahren Sie in der [Dokumentation zur Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}, wie Sie die OAuth-Server-zu-Server-Anmeldedaten einrichten,
 
-Wenn die API erfolgreich verbunden wurde, können Sie auf die neu generierten Anmeldeinformationen zugreifen, einschließlich Client-ID und Client-Geheimnis, und ein Zugriffs-Token generieren.
+Wenn die API erfolgreich verbunden wurde, können Sie auf die neu generierten Anmeldedaten zugreifen, einschließlich Client-ID und Client-Geheimnis, und ein Zugriffs-Token generieren.
 
 ### Schritt 3: Hinzufügen des Produktprofils zum Projekt{#ims-migration-step-3}
 
@@ -71,7 +71,7 @@ Sie können jetzt Ihr Campaign-Produktprofil zum Projekt hinzufügen, wie im Fol
    ![](assets/do-not-localize/ims-edit-api.png)
 
 1. Weisen Sie alle relevanten Produktprofile der API zu, z. B. „messagecenter“, und speichern Sie Ihre Änderungen.
-1. Navigieren Sie zur Registerkarte **Zugriffsdatendetails** und kopieren Sie den Wert von **E-Mail des technischen Kontos**.
+1. Navigieren Sie zur Registerkarte **Berechtigungsdetails** und kopieren Sie den Wert von **E-Mail des technischen Kontos**.
 
 ### Schritt 4: Aktualisieren des technischen Benutzers bzw. der technischen Benutzerin in der Client-Konsole {#ims-migration-step-4}
 

@@ -6,8 +6,8 @@ feature: Workflows
 role: User
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '332'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ Wenn Ihr Versandinhalt in einer auf einem Amazon-S3-, FTP- oder SFTP-Server gesp
 
 Gehen Sie dazu wie folgt vor:
 
-1. Wenn Sie die Verbindung zwischen Adobe Campaign und dem (S)FTP-Server, auf dem sich die Inhaltsdateien befinden, noch nicht definiert haben, erstellen Sie ein neues S3-, FTP- oder externes SFTP-Konto in **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]**. Geben Sie in diesem externen Konto die für die Verbindung zum S3- oder (S)FTP-Server verwendete Adresse und die entsprechenden Zugangsdaten an.
+1. Wenn Sie die Verbindung zwischen Adobe Campaign und dem (S)FTP-Server, auf dem sich die Inhaltsdateien befinden, noch nicht definiert haben, erstellen Sie ein neues S3-, FTP- oder externes SFTP-Konto in **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]**. Geben Sie in diesem externen Konto die für die Verbindung zum S3- oder (S)FTP-Server verwendete Adresse und die entsprechenden Anmeldedaten an.
 
    Hier ist ein Beispiel eines externen S3-Kontos:
 

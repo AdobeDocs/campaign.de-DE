@@ -6,8 +6,8 @@ feature: Workflows, Data Management
 role: User
 exl-id: 0e8ab370-06bc-431e-a685-310ac54a1246
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '101'
 ht-degree: 100%
 
 ---

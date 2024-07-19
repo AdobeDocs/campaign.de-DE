@@ -4,7 +4,7 @@ title: Sendung an Mid-Sourcing-Server
 description: Erfahren Sie mehr über die Workflows "Sendung an Mid-Sourcing-Server".
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 100%
 

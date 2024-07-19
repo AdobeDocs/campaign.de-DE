@@ -5,7 +5,7 @@ feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
 source-git-commit: 07c2a7460c407a0afb536d8b64f4105d8bc547f4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1551'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Es folgt eine Übersicht über die Schritte:
 * Erstellen Sie ein Projekt in der Adobe Developer Console
 * Weisen Sie die entsprechenden APIs dem neu erstellten Projekt zu
 * Weisen Sie die erforderlichen Campaign-Produktprofile dem Projekt zu
-* Aktualisieren Sie die APIs für die Verwendung der neu erstellten technischen Kontoanmeldeinformationen
+* Aktualisieren Sie die APIs für die Verwendung der neu erstellten technischen Kontoanmeldedaten
 * Entfernen Sie die veralteten technischen Benutzerinnen und Benutzer aus Ihrer Campaign-Instanz
 
 ### Voraussetzungen für die Migration{#ims-migration-prerequisites}
@@ -214,7 +214,7 @@ Beachten Sie, dass die Benutzenden des technischen Kontos so lange NICHT in Adob
 
 1. Um die für die neuen Benutzenden des technischen Kontos erforderlichen Änderungen anzuwenden, durchsuchen Sie die Campaign Client-Konsole nach E-Mail-Adresse. Diese E-Mail-Adresse wurde während der obigen Schritte zur Projekterstellung und -authentifizierung erstellt.
 
-   Klicken Sie auf die Überschrift **OAuth-Server-zu-Server** im Abschnitt **Anmeldeinformationen** des Projekts, um diese E-Mail-Adresse zu finden.
+   Klicken Sie auf die Überschrift **OAuth-Server-zu-Server** im Abschnitt **Anmeldedaten** des Projekts, um diese E-Mail-Adresse zu finden.
 
    ![](assets/do-not-localize/ims-updates-07.png)
 

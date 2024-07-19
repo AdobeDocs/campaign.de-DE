@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Ihre Instanz mit dem Audit-Protokoll von Camp
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 6a937575-42d4-4dc5-8168-43c25bb2cde6
 source-git-commit: b4b361a4aabd1b33554166c2638989b99a02baec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 100%
 

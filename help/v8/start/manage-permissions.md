@@ -6,7 +6,7 @@ role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Verwenden Sie Produktprofile, um Benutzer mit den Fähigkeiten auszustatten, die
 
 * Für jedes Produkt in der Admin Console können Sie ein oder mehrere Produktprofile erstellen.
 * In jedem Produktprofil weisen Sie Benutzende und Benutzergruppen (in Ihrer Organisation) zu.
-* Wenn sich ein Benutzer mit seinen im Produktprofil angegebenen Anmeldeinformationen anmeldet, erhält er Zugriff auf die Apps und Services des Produkts, auf dem das Produktprofil basiert.
+* Wenn sich ein Benutzer mit seinen im Produktprofil angegebenen Anmeldedaten anmeldet, erhält er Zugriff auf die Apps und Services des Produkts, auf dem das Produktprofil basiert.
 
 Diese Produktprofile stimmen mit den Benutzergruppen überein, die im Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Benutzergruppen]** des Campaign-Explorers gespeichert sind.
 

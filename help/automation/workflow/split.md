@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Aufspaltung".
 feature: Workflows, Targeting Activity
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
 source-git-commit: a5d44321c3d68b9370cfb6e9b1df62435de0dbda
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 100%
 
@@ -214,7 +214,7 @@ Dies lässt sich vermeiden, indem Sie der **[!UICONTROL Aufspaltung]** eine **[!
 Die Option **[!UICONTROL Überlappung der Ausgabepopulationen zulassen]** ermöglicht den Umgang mit Profilen, die in mehreren Teilmengen enthalten sind:
 
 * Wenn diese Option deaktiviert ist, stellt die Aufspaltung sicher, dass ein Profil nur in einer Ergebnismenge enthalten ist, auch wenn es den Kriterien anderer Teilmengen entspricht. Das Profil ist in der ersten Teilmenge enthalten, dessen Kriterien es entspricht.
-* Wenn die Option aktiviert ist, sind die Profile in allen Teilmengen enthalten, deren Kriterien sie erfüllen. Es wird jedoch empfohlen, keine Überlappungen zuzulassen.
+* Wenn die Option aktiviert ist, sind die Profile in allen Teilmengen enthalten, deren Filterkriterien sie erfüllen. Es wird für Adobe Campaign jedoch empfohlen, keine Überschneidungen zuzulassen.
 
 ## Eingabeparameter {#input-parameters}
 

@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflows für Datenschutzbestimmungen.
 role: User
 feature: Workflows, Privacy
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 100%
 

@@ -5,8 +5,8 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Zeitliche Beschrä
 feature: Workflows
 exl-id: 0a922827-456d-425c-be04-d9efbb152c92
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '88'
 ht-degree: 100%
 
 ---

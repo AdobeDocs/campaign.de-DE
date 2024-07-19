@@ -3,7 +3,7 @@ audience: user
 user-guide-title: Handbuch zur Kampagnenautomatisierung
 user-guide-description: Handbuch zur Kampagnenautomatisierung
 source-git-commit: c5e804db7deaa6b9511858d088eb6da5d16e8abf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 100%
 

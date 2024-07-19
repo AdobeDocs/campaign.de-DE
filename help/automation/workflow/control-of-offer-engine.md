@@ -6,8 +6,8 @@ feature: Workflows, Offers
 role: User
 topic-tags: technical-workflows
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '52'
 ht-degree: 100%
 
 ---

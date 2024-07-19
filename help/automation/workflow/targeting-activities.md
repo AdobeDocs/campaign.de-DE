@@ -5,8 +5,8 @@ description: Über Zielgruppenbestimmungsaktivitäten
 feature: Workflows, Audiences, Targeting Activity
 exl-id: e89c9f20-fc10-421f-9c14-2e33be562a8d
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '305'
 ht-degree: 100%
 
 ---

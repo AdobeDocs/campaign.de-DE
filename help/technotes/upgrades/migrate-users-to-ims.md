@@ -3,8 +3,8 @@ title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (
 description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1345'
 ht-degree: 100%
 
 ---

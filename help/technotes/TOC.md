@@ -6,7 +6,7 @@ title: Technotes zu Adobe Campaign
 description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
 source-git-commit: a9a376e1726bf92ddce937d5598314cbfd744f1f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 100%
 

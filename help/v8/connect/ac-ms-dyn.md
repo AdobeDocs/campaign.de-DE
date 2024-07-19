@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 100%
 
@@ -144,7 +144,7 @@ Zunächst müssen Sie das externe Microsoft Dynamics 365-Konto erstellen.
 
    ![](assets/ms-dyn-external-account.png)
 
-   1. Um das externe Microsoft Dynamics CRM-Konto für die Verbindung mit Adobe Campaign mit **Passwort-Zugangsdaten** zu konfigurieren, geben Sie die folgenden Details an:
+   1. Um das externe Microsoft Dynamics CRM-Konto für die Verbindung mit Adobe Campaign mit **Passwort-Anmeldedaten** zu konfigurieren, geben Sie die folgenden Details an:
 
       * **Server**: URL Ihres Microsoft CRM-Servers Um Ihre Microsoft CRM-Server-URL zu finden, rufen Sie Ihr Microsoft Dynamics CRM-Konto auf, klicken Sie dann auf Dynamics 365 und wählen Sie Ihre Anwendung aus. Ihre Server-URL finden Sie dann in der Adressleiste Ihres Browsers, z. B. https://myserver.crm.dynamics.com/.
       * **Konto**: Konto, mit dem die Anmeldung bei Microsoft CRM erfolgt.

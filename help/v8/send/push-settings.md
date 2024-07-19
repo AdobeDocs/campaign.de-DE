@@ -7,7 +7,7 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
 source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1835'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Gehen Sie wie folgt vor, um Rechte für **Eigenschaft** und **Firma** zuzuweisen
    * **[!UICONTROL App-Konfigurationen verwalten]**
    * **[!UICONTROL Eigenschaften verwalten]**
 
-   Diese Berechtigungen sind erforderlich, damit die Entwicklerin bzw. der Entwickler der mobilen App in der **Datenerfassung in Adobe Experience Platform** Push-Anmeldeinformationen einrichten kann.
+   Diese Berechtigungen sind erforderlich, damit die Entwicklerin bzw. der Entwickler der mobilen App in der **Datenerfassung in Adobe Experience Platform** Push-Anmeldedaten einrichten kann.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 

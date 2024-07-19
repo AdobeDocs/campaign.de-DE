@@ -7,7 +7,7 @@ level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
   Dieser Befehl hält einen Workflow zunächst an und startet ihn dann erneut.In den meisten Fällen ermöglicht diese Vorgehensweise einen schnelleren Neustart als die separate Verwendung der Anhalten- und Starten-Schaltflächen. Dies ist insbesondere dann nützlich, wenn das Anhalten eines Workflows geraume Zeit in Anspruch nimmt, da der Befehl &quot;Starten&quot; erst wieder verfügbar ist, wenn der Workflow tatsächlich angehalten wurde.
 
   Beachten Sie, dass die Aktion **Neu starten** nicht die Workflow-Instanzvariablen löscht, wie dies bei den Aktionen **Ausführung**, **Stoppen** und **Start** der Fall ist (das Löschen der Instanzvariablen erfolgt bei der Aktion „Start“). Beim Neustart eines Workflows sind Instanzvariablen weiterhin für die Verwendung mit beibehaltenen Werten verfügbar. Zum Löschen haben Sie folgende Möglichkeiten:
-   * Führen Sie die Aktionen **Stoppen** und **Start** aus.
+   * Führen Sie die Aktionen **Anhalten** und **Starten** aus.
    * Fügen Sie am Ende der Workflow-Ausführung folgenden JavaScript-Code hinzu:
 
      ```

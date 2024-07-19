@@ -6,7 +6,7 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 100%
 
@@ -120,7 +120,7 @@ Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UIC
 
 * **FTP und SFTP** – Mit dem externen **FTP**-Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Sie können aber auch Ihre eigenen externen Konten erstellen, um eine Verbindung mit externen Systemen wie SFTP- oder FTP-Servern zum Zweck des Dateitransfers herzustellen.
 
-  Geben Sie dazu in diesem externen Konto die Adresse und die Zugangsdaten für die Verbindungsherstellung zum SFTP- oder FTP-Server an.
+  Geben Sie dazu in diesem externen Konto die Adresse und die Anmeldedaten für die Verbindungsherstellung zum SFTP- oder FTP-Server an.
 
   >[!NOTE]
   >
