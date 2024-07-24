@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
 source-git-commit: b6f7b8a6652034145602d9949fa196eae929fb95
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 
 >[!IMPORTANT]
 >
->Die Verwendung des Attributs **accessibleIf** bei kritischen Parametern (z. B. bei zusammengesetzten Schlüsseln) kann zu Fehlern für Benutzer führen, die die Daten aufgrund ausgeblendeter Daten nicht lesen dürfen. Dies kann zu Abfragefehlern oder unerwartetem Verhalten führen. Stellen Sie sicher, dass wichtige Parameter verfügbar sind, um Unterbrechungen zu verhindern.
+>Die Verwendung des Attributs **accessibleIf** bei kritischen Parametern (z. B. bei zusammengesetzten Schlüsseln) kann zu Fehlern für Benutzende führen, die die Daten aufgrund ausgeblendeter Daten nicht lesen dürfen. Dies kann zu Abfragefehlern oder unerwartetem Verhalten führen. Stellen Sie sicher, dass wichtige Parameter verfügbar sind, um Unterbrechungen zu verhindern.
 
 ## Empfehlungen {#recommendations}
 

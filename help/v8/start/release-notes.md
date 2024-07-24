@@ -4,9 +4,9 @@ description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 65efda7469c5ad35e8d03703951c3d1480b015f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -82,4 +82,4 @@ Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie I
 
 Die folgenden Probleme wurden in dieser Version behoben:
 
-NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-681 92, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-6 NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, NEO-6 O-58314, NEO-58004, NEO-40054
+NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO-68192, NEO-67814, NEO-67702, NEO-67620, NEO-66022, NEO-65774, NEO-65633, NEO-64199, NEO-63706, NEO-63705, NEO-63287, NEO-63197, NEO-62575, NEO-60250, NEO-60192, NEO-58596, NEO-58314, NEO-58004, NEO-40054
