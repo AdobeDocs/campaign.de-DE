@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie einen iOS-Rich-Push-Benachrichtigungsversand 
 feature: Push
 role: User
 level: Beginner
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
+source-git-commit: 0c13ee22a7d40aaa9a8c27d3450ec3275a02748f
 workflow-type: tm+mt
 source-wordcount: '1260'
 ht-degree: 42%
@@ -187,4 +187,3 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 | **[!UICONTROL Klick-Aktion]** | Legt die Aktion fest, die für das Klicken der Benutzenden auf Ihre Benachrichtigung zugewiesen ist. |
 | **[!UICONTROL Unterbrechungsgrad]** | <ul><li>Aktiv: Standardmäßig zeigt das System die Benachrichtigung sofort an, beleuchtet den Bildschirm und kann einen Ton abspielen. Benachrichtigungen durchbrechen die Fokusmodi nicht.</li><li>Passiv: Das System fügt die Benachrichtigung zur Benachrichtigungsliste hinzu, ohne den Bildschirm anzuzeigen oder einen Ton abzuspielen. Benachrichtigungen umgehen nicht den Fokusmodus.</li><li> Zeitabhängig: Das System stellt die Benachrichtigung sofort vor, beleuchtet den Bildschirm, kann einen Ton abspielen und den Fokusmodus durchbrechen. Für diese Stufe ist keine spezielle Berechtigung von Apple erforderlich.</li><li>Kritisch: Das System zeigt die Benachrichtigung sofort an, beleuchtet den Bildschirm und umgeht den Stummschaltungs- oder Fokusmodus. Beachten Sie, dass für diese Stufe eine spezielle Berechtigung von Apple erforderlich ist.</li></ul> |
 | **[!UICONTROL Relevanzwert]** | Legen Sie einen Relevanzwert von 0 bis 100 fest. Das System verwendet diesen Wert, um die Benachrichtigungen in der Benachrichtigungszusammenfassung zu sortieren. |
-
