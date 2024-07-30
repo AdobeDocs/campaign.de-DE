@@ -3,10 +3,10 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 65efda7469c5ad35e8d03703951c3d1480b015f4
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: bd53d04791af91afffe683ca92fa78562640170a
+workflow-type: tm+mt
+source-wordcount: '931'
+ht-degree: 97%
 
 ---
 
@@ -17,6 +17,33 @@ Adobe Campaign wird regelmäßig aktualisiert. Dieser regelmäßige Aktualisieru
 Wenn Sie Managed Cloud Services nutzen, wird Ihre Instanz von Adobe mit jeder neuen Version aktualisiert. Adobe wird Sie jeweils kontaktieren und Ihre Umgebungen aktualisieren. Die Campaign-Client-Konsole **muss auf dieselbe Version aktualisiert werden** wie die Campaign-Server. Auf [dieser Seite](../start/connect.md#upgrade-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
 Außerdem sollten Sie als Kundin bzw. Kunde sicherstellen, dass Sie die neuesten unterstützten Versionen der in der [Kompatibilitätsmatrix](compatibility-matrix.md) aufgeführten Systeme verwenden.
+
+
+
+## Version 8.6.3 {#release-8-6-3}
+
+_30. Juli 2024_
+
+### Neue Funktionen {#new-8-6-3}
+
+* **Rich-Push-Benachrichtigungen**: Sie können jetzt Rich-Push-Benachrichtigungen senden. Rich-Push-Benachrichtigungen sind eine erweiterte Form von Benachrichtigungen an Mobilgeräte, die über einfache Textnachrichten hinausgehen und Multimedia-Elemente wie Bilder, interaktive Schaltflächen oder andere Rich-Media-Inhalte enthalten. Mit dieser Version ist jetzt eine Reihe von Vorlagen für Rich-Push-Benachrichtigungen für Ihre iOS- und Android-Apps verfügbar. [Weitere Informationen](../send/rich-push.md)
+
+* Ab dieser Version sind ausgehende Campaign-Integrationen in Adobe-Lösungen und -Apps auf OAuth-Server-zu-Server-Anmeldedaten angewiesen, weil die Anmeldedatenoption „Service-Konto (JWT)“ eingestellt wurde. [Weitere Informationen](release-notes.md#change-8-7-1)
+
+### Allgemeine Verbesserungen {#improvements-8-6-3}
+
+* Um die Sicherheit der gesamten Kommunikation zwischen Anwendungen zu erhöhen, wird mTLS jetzt für externe API-Aufrufe unterstützt.
+
+### Fehlerbehebungen {#fixes-8-6-3}
+
+Die folgenden Probleme wurden in dieser Version behoben:
+
+NEO-79328, NEO-78843, NEO-77795, NEO-77014, NEO-76958, NEO-76097, NEO-75898, NEO-725 04, NEO-70263, NEO-67620, NEO-63197, NEO-58596, NEO-56832.
+
+<!--
+https://jira.corp.adobe.com/issues/?filter=585288&jql=fixVersion%20%3D%208.6.3%20AND%20type%20not%20in%20(epic%2C%20test%2C%20sub-task%2C%20Roadmap)%20AND%20resolution%20!%3D%20unresolved%20AND%20%22Fixed%20in%20Build%22%20is%20not%20EMPTY%20and%20type%20in%20(%22customer%20request%22)
+-->
+
 
 ## Version 8.5.3 {#release-8-5-3}
 
