@@ -1,19 +1,19 @@
 ---
 audience: end-user
-title: Erstellen eines Rich-Push-Benachrichtigungs-Versands
+title: Erstellen eines Rich-Push-Benachrichtigungsversands
 description: Erfahren Sie, wie Sie einen Rich-Push-Benachrichtigungs-Versand mit Adobe Campaign Web erstellen.
 feature: Push
 role: User
 level: Beginner
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
 source-git-commit: 4e52e596d4eb2a8e1a1799fcd7104dcd894b6c2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2311'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# Erstellen eines Rich-Push-Versands für Android {#rich-push}
+# Erstellen eines Rich-Push-Versands in Android {#rich-push}
 
 >[!IMPORTANT]
 >
@@ -25,29 +25,29 @@ Bei Firebase Cloud Messaging stehen Ihnen zwei Nachrichtentypen zur Auswahl:
 
 * Die **[!UICONTROL Benachrichtigungsmeldung]** wird automatisch vom FCM SDK verarbeitet. FCM übernimmt für die Client-App automatisch das Anzeigen der Nachricht auf den Geräten Ihrer Benutzenden. Benachrichtigungsmeldungen enthalten einen vordefinierten Satz von Parametern und Optionen, können aber mit benutzerspezifischen Anwendungsvariablen weiter personalisiert werden.
 
-Wenn die Bildlaufleiste auf Ihrer Benutzeroberfläche deaktiviert ist, greifen Sie auf **[!UICONTROL Administration]** `>` **[!UICONTROL Plattform]** `>` **[!UICONTROL Optionen]** zu und setzen Sie die Option **[!UICONTROL XtkUseScrollBar]** auf &quot;1&quot;.
+Wenn die Bildlaufleiste auf Ihrer Benutzeroberfläche deaktiviert ist, greifen Sie auf **[!UICONTROL Administration]** `>` **[!UICONTROL Plattform]** `>` **[!UICONTROL Optionen]** zu und setzen Sie die Option **[!UICONTROL XtkUseScrollBar]** auf „1“.
 
-## Inhalt einer Android-Benachrichtigung definieren {#push-message}
+## Festlegen des Inhalts einer Android-Benachrichtigung {#push-message}
 
-Nach der Erstellung Ihres Push-Versands können Sie dessen Inhalt mit einer der folgenden Vorlagen definieren:
+Sobald Ihr Push-Versand erstellt ist, können Sie seinen Inhalt mit einer der folgenden Vorlagen definieren:
 
-* Mit **Standard** können Sie Benachrichtigungen mit einem einfachen Symbol und einem zugehörigen Bild senden.
+* **Standard** ermöglicht es Ihnen, Benachrichtigungen mit einem einfachen Symbol und einem dazugehörigen Bild zu versenden.
 
-* **Standard** kann Text, Bilder und Schaltflächen in Ihre Benachrichtigungen aufnehmen.
+* **Einfach** ermöglicht es Ihnen, Texte, Bilder und Schaltflächen in Ihre Benachrichtigungen einzufügen.
 
-* Mit **Karussell** können Sie Benachrichtigungen mit Text und mehreren Bildern senden, durch die Benutzer wischen können.
+* **Karussell** ermöglicht es Ihnen, Benachrichtigungen mit Text und mehreren Bildern zu senden, zwischen denen die Benutzenden hin und her wischen können.
 
-* Mit den Schaltflächen **Symbol** können Sie Benachrichtigungen mit einem Symbol und einem entsprechenden Bild senden.
+* **Symbolschaltflächen** ermöglichen es Ihnen, Benachrichtigungen mit einem einfachen Symbol und einem zugehörigen Bild zu versnden.
 
 * **Eingabefeld** erfasst Benutzereingaben und Feedback direkt über die Benachrichtigung.
 
 * **Produktkatalog** zeigt eine Vielzahl von Produktbildern an.
 
-* Mit der **Produktbewertung** können Benutzer Feedback geben und Produkte bewerten.
+* **Produktbewertung** ermöglicht es Benutzenden, Feedback und Bewertungen von Produkten abzugeben.
 
-* **Timer** enthält einen Live-Countdown-Timer in Ihren Benachrichtigungen.
+* **Timer** fügt einen Live-Countdown-Timer in Ihre Benachrichtigungen ein.
 
-* **Zero Bezel** verwendet die gesamte Hintergrundfläche für ein Bild, wobei Text nahtlos überlagert wird.
+* **Rahmenlos** verwendet die gesamte Hintergrundfläche für ein Bild mit nahtlos überlagertem Text.
 
 Navigieren Sie durch die folgenden Registerkarten, um mehr über die Personalisierung dieser Vorlagen zu erfahren.
 
@@ -69,7 +69,7 @@ Navigieren Sie durch die folgenden Registerkarten, um mehr über die Personalisi
 
    ![](assets/rich_push_default_3.png)
 
-Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
 
 >[!TAB Einfach]
 
@@ -114,7 +114,7 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_basic_4.png)
 
-Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
 
 >[!TAB Karussell]
 
@@ -149,23 +149,23 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_carousel_3.png)
 
-Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
 
 >[!TAB Symbolschaltflächen]
 
-1. Wählen Sie aus der Dropdownliste **[!UICONTROL Benachrichtigungstyp]** die Option **[!UICONTROL Symbolschaltflächen]** aus.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Symbolschaltflächen]** aus.
 
    ![](assets/rich_push_icon.png)
 
-1. Geben Sie unter dem Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farbcodes für Ihren **[!UICONTROL Hintergrund]** ein.
+1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Hintergrund]** ein.
 
    ![](assets/rich_push_icon_2.png)
 
-1. Geben Sie die URL für das Bild der Schaltfläche **[!UICONTROL Abbrechen]** an.
+1. Geben Sie die URL für das **[!UICONTROL Bild der Schaltfläche „Abbrechen“]** an.
 
-1. Klicken Sie unter den Schaltflächen für das Symbol **[!UICONTROL Bild hinzufügen]** auf **[!UICONTROL Bild hinzufügen]**. Geben Sie dann die **Bild-URL**, den **Link-Typ** und den **Link-URI** ein.
+1. Klicken Sie unter den **[!UICONTROL Symbolbildschaltflächen]** auf **[!UICONTROL Bild hinzufügen]**. Geben Sie dann die **Bild-URL**, den **Link-Typ** und den **Link-URI** ein.
 
-   Stellen Sie sicher, dass Sie mindestens drei Bilder und maximal fünf Schaltflächen einschließen.
+   Stellen Sie sicher, dass Sie mindestens drei Bilder und maximal fünf Schaltflächen einfügen.
 
    ![](assets/rich_push_icon_3.png)
 
@@ -173,11 +173,11 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_icon_5.png)
 
-Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
 
 >[!TAB Eingabefeld]
 
-1. Wählen Sie aus der Dropdownliste **[!UICONTROL Benachrichtigungstyp]** die Option **[!UICONTROL Eingabefeld]** aus.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Eingabefeld]** aus.
 
    ![](assets/rich_push_input.png)
 
@@ -187,12 +187,12 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_input_2.png)
 
-1. Geben Sie unter dem Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farbcodes für die Felder **[!UICONTROL Titel]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Hintergrund]** ein.
+1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für den **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
-1. Geben Sie im Menü **[!UICONTROL Optionen für das Eingabefeld]** die folgende Option ein:
+1. Geben Sie im Menü **[!UICONTROL Eingabefeldoptionen]** die folgende Option ein:
 
-   * **[!UICONTROL Name des Empfängers für die Eingabe]**: Geben Sie den Namen oder die Kennung für den Empfänger der Eingabe ein.
-   * **[!UICONTROL Eingabetext]**: Geben Sie den Text für das Feld **Eingabe** ein.
+   * **[!UICONTROL Namen der Empfängerin bzw. des Empfängers eingeben]**: Geben Sie den Namen oder die Kennung für die Empfängerin bzw. den Empfänger der Eingabe ein.
+   * **[!UICONTROL Eingabetext]**: Geben Sie den Text für das **Eingabefeld** ein.
    * **[!UICONTROL Feedback-Text]**: Geben Sie den Text ein, der nach einer Antwort angezeigt werden soll.
    * **[!UICONTROL Feedback-Bild]**: Fügen Sie die URL für das Bild hinzu, das nach einer Antwort angezeigt wird.
 
@@ -202,11 +202,11 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_input_4.png)
 
-Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
 
 >[!TAB Produktkatalog]
 
-1. Wählen Sie aus der Dropdownliste **[!UICONTROL Benachrichtigungstyp]** die Option **[!UICONTROL Produktkatalog]** aus.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Produktkatalog]** aus.
 
    ![](assets/rich_push_catalog.png)
 
@@ -216,11 +216,11 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_catalog_2.png)
 
-1. Geben Sie unter dem Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, Ihre **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
+1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
-1. Füllen Sie unter dem Menü **[!UICONTROL Produktkatalogoptionen]** die folgenden Optionen aus:
+1. Geben Sie im Menü **[!UICONTROL Produktkatalogoptionen]** die folgenden Optionen ein:
 
-   * **[!UICONTROL Aktionsschaltflächen-Text]**: Auf der Schaltfläche angezeigter Text.
+   * **[!UICONTROL Text der Aktionsschaltfläche]**: Text, der auf der Schaltfläche angezeigt wird.
    * **[!UICONTROL Textfarbe der Aktionsschaltfläche]**: Farbe des Textes der Aktionsschaltfläche.
    * **[!UICONTROL Farbe der Aktionsschaltfläche]**: Farbe der Aktionsschaltfläche.
    * **[!UICONTROL Aktionsschaltflächen-URI]**: Geben Sie den URI an, der beim Klicken auf die Schaltfläche ausgeführt werden soll.
@@ -230,23 +230,23 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
 1. Klicken Sie im Menü **[!UICONTROL Produktkatalogelemente]** auf **[!UICONTROL Hinzufügen]** und geben Sie die folgenden Details für jedes Element ein:
 
-   * **[!UICONTROL Titel]**
+   * **[!UICONTROL Title]**
    * **[!UICONTROL Beschreibung]**
    * **[!UICONTROL Bild-URL]**
    * **[!UICONTROL Preis]**
    * **[!UICONTROL URI]**
 
-   Stellen Sie sicher, dass Sie maximal drei Elemente angeben.
+   Stellen Sie sicher, dass Sie maximal drei Elemente einfügen.
 
    ![](assets/rich_push_catalog_4.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
 
 >[!TAB Produktbewertung]
 
-1. Wählen Sie aus der Dropdownliste **[!UICONTROL Benachrichtigungstyp]** die Option **[!UICONTROL Produktbewertung]** aus.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Produktbewertung]** aus.
 
    ![](assets/rich_push_rating.png)
 
@@ -256,13 +256,13 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_rating_2.png)
 
-1. Geben Sie unter dem Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, Ihre **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
+1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
-1. Geben Sie im Menü **[!UICONTROL Optionen für die Produktbewertung]** die URLs für das Symbol **[!UICONTROL Bewertung mit nicht ausgewähltem Status]** und das Symbol **[!UICONTROL Bewertung mit ausgewähltem Status]** ein.
+1. Geben Sie im Menü **[!UICONTROL Produktbewertungsoptionen]** die URLs für das **[!UICONTROL Bewertungssymbol im nicht ausgewählten Zustand]** und das **[!UICONTROL Bewertungssymbol im ausgewählten Zustand]** ein.
 
    ![](assets/rich_push_rating_3.png)
 
-1. Klicken Sie unter dem Menü **[!UICONTROL Produktempfehlungselemente]** auf **[!UICONTROL Hinzufügen]** , geben Sie Ihren **[!UICONTROL Link-URI]** ein und wählen Sie Ihren **[!UICONTROL Linktyp]** aus.
+1. Klicken Sie im Menü **[!UICONTROL Produktbewertungselemente]** auf **[!UICONTROL Hinzufügen]**, geben Sie Ihre **[!UICONTROL Link-URL]** ein und wählen Sie Ihren **[!UICONTROL Link-Typ]** aus.
 
    * **[!UICONTROL Web-URL]**: Web-URLs leiten Benutzende zu Online-Inhalten weiter. Beim Anklicken öffnen sie den Standard-Webbrowser des Geräts und navigieren zu der angegebenen URL.
 
@@ -270,9 +270,9 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    * **[!UICONTROL Open App]**: Open App-URLs ermöglichen es Ihnen, sich direkt mit Inhalten innerhalb einer Anwendung zu verbinden. Diese Art von URL ermöglicht es Ihrer Anwendung, sich als Standard-Handler für einen bestimmten Link-Typ zu etablieren und so das Dialogfeld zur Disambiguierung zu umgehen.
 
-   * **[!UICONTROL Beenden]**: Der Schaltfläche ist keine URL zugeordnet. Durch Klicken auf wird das Dialogfeld oder die Benutzeroberfläche einfach geschlossen.
+   * **[!UICONTROL Verwerfen]**: Der Schaltfläche ist keine URL zugeordnet. Durch Klicken wird das Dialogfeld oder die Benutzeroberfläche einfach geschlossen.
 
-   Stellen Sie sicher, dass Sie mindestens drei Werte und maximal fünf Werte angeben.
+   Stellen Sie sicher, dass Sie mindestens drei und maximal fünf Werte einfügen.
 
    ![](assets/rich_push_rating_4.png)
 
@@ -280,11 +280,11 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_carousel_3.png)
 
-Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
 
 >[!TAB Timer]
 
-1. Wählen Sie aus der Dropdownliste **[!UICONTROL Benachrichtigungstyp]** die Option **[!UICONTROL Timer]** aus.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Timer]** aus.
 
    ![](assets/rich_push_timer.png)
 
@@ -294,23 +294,23 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_timer_2.png)
 
-1. Geben Sie den Text ein, der angezeigt werden soll, nachdem der Timer abgelaufen ist, in die Felder **[!UICONTROL Alternativer Titel]**, **[!UICONTROL Alternativnachricht]** und **[!UICONTROL Erweiterte erweiterte alternative Nachricht senden]** ein.
+1. Geben Sie den Text, der nach Ablauf des Timers angezeigt werden soll, in die Felder **[!UICONTROL Alternativer Titel]**, **[!UICONTROL Alternative Nachricht]** und **[!UICONTROL Alternative erweiterte Nachricht]** ein.
 
-1. Geben Sie unter dem Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farbcodes für Ihren **[!UICONTROL Titel]**, **[!UICONTROL Nachricht]**, **[!UICONTROL Hintergrund]** und Ihren **[!UICONTROL Timer]** ein.
+1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]**, den **[!UICONTROL Hintergrund]** und den **[!UICONTROL Timer]** ein.
 
    ![](assets/rich_push_timer_3.png)
 
-1. Setzen Sie Ihre **[!UICONTROL Timer-Dauer]** in Sekunden oder den **[!UICONTROL Timer-Endzeitstempel]** auf einen bestimmten Epoch-Zeitstempel und fügen Sie Ihre URL für das **[!UICONTROL alternative Bild]** hinzu, die nach Ablauf des Timers angezeigt wird.
+1. Legen Sie die **[!UICONTROL Dauer des Timers]** in Sekunden oder den **[!UICONTROL Zeitstempel für Timer-Ende]** auf einen bestimmten Epoch-Zeitstempel fest und fügen Sie die URL für **[!UICONTROL Alternatives Bild]** ein, das nach Ablauf des Timers angezeigt wird.
 
    ![](assets/rich_push_timer_4.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
 
->[!TAB Null-Verkleidung]
+>[!TAB Rahmenlos]
 
-1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Benachrichtigungstyp]** die Option **[!UICONTROL Null-Verkleidung]** aus.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Rahmenlos]** aus.
 
    ![](assets/rich_push_bezel.png)
 
@@ -320,15 +320,15 @@ Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen
 
    ![](assets/rich_push_zero_2.png)
 
-1. Geben Sie unter dem Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, Ihre **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
+1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
-1. Fügen Sie im Menü **[!UICONTROL Nullsummenoptionen]** Ihre Bild-URL im Feld **[!UICONTROL Reduzierter Benachrichtigungsstil]** hinzu.
+1. Fügen Sie im Menü **[!UICONTROL Optionen für rahmenlose Displays]** Ihre Bild-URL im Feld **[!UICONTROL Ausgeblendeter Benachrichtigungsstil]** hinzu.
 
    ![](assets/rich_push_zero_3.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
 
 >[!ENDTABS]
 
