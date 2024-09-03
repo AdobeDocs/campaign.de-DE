@@ -5,10 +5,10 @@ feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: f7047c6e-f045-4534-b117-311dd90dd92b
-source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -26,14 +26,14 @@ In der Benutzeroberfläche werden Kardinalitäten mit einem bestimmten Symbol da
 
 Für Join-Beziehungen mit einer Campaign-Tabelle/-Datenbank:
 
-* ![](assets/do-not-localize/join_with_campaign11.png): 1-1-Kardinalität. Dies kann etwa eine Beziehung zwischen einem Empfänger und einer aktuellen Bestellung sein. Ein Empfänger kann jeweils nur mit einer Entität der aktuellen Tabelle zu Bestellungen verknüpft sein.
-* ![](assets/do-not-localize/externaljoin11.png): 1-1-Kardinalität, externer Join. Dies kann etwa eine Beziehung zwischen einem Empfänger und dem ihm zugehörigen Land sein. Ein Empfänger kann nur mit einer Entität der Ländertabelle verknüpft sein. Der Inhalt der Ländertabelle wird nicht gespeichert.
-* ![](assets/do-not-localize/join_with_campaign1n.png): 1-N-Kardinalität. Dies kann etwa eine Beziehung zwischen einem Empfänger und der Tabelle zu Abonnements sein. Ein Empfänger oder eine Empfängerin kann mit mehreren Instanzen in der Abonnements-Tabelle verknüpft sein.
+* 0: Kardinalität 1-1. ![](assets/do-not-localize/join_with_campaign11.png) Dies kann etwa eine Beziehung zwischen einem Empfänger und einer aktuellen Bestellung sein. Ein Empfänger kann jeweils nur mit einer Entität der aktuellen Tabelle zu Bestellungen verknüpft sein.
+* 0: Kardinalität 1-1, externer Join. ![](assets/do-not-localize/externaljoin11.png) Dies kann etwa eine Beziehung zwischen einem Empfänger und dem ihm zugehörigen Land sein. Ein Empfänger kann nur mit einer Entität der Ländertabelle verknüpft sein. Der Inhalt der Ländertabelle wird nicht gespeichert.
+* 0: Kardinalität 1-N. Beispielsweise zwischen einem Empfänger und der Abonnementtabelle. ![](assets/do-not-localize/join_with_campaign1n.png) Ein Empfänger oder eine Empfängerin kann mit mehreren Instanzen in der Abonnements-Tabelle verknüpft sein.
 
 Für Join-Beziehungen, die Federated Data Access (FDA) nutzen:
 
-* ![](assets/do-not-localize/join_fda_11.png): 1-1-Kardinalität
-* ![](assets/do-not-localize/join_fda_1m.png): 1-N-Kardinalität
+* ![](assets/do-not-localize/join_fda_11.png): Kardinalität 1-1
+* ![](assets/do-not-localize/join_fda_1m.png): Kardinalität 1-N
 
 Weitere Informationen zu FDA-Tabellen finden Sie unter [Zugriff auf eine externe Datenbank](../connect/fda.md).
 

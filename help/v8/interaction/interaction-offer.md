@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -116,10 +116,10 @@ Definieren Sie auf der Registerkarte **[!UICONTROL Inhalt]** den Angebotsinhalt.
 
 1. Legen Sie die verschiedenen Parameter für den Angebotsinhalt fest:
 
-   * **[!UICONTROL Titel]** : Geben Sie den Titel an, der in Ihrem Angebot angezeigt werden soll. Warnung: Hierbei handelt es sich nicht um den Titel des Angebots, der in der Registerkarte **[!UICONTROL Allgemein]** definiert ist.
-   * **[!UICONTROL Ziel-URL]**: Geben Sie die URL Ihres Angebots an. Sie muss zwingend mit &quot;http://&quot; oder &quot;https://&quot; beginnen.
+   * **[!UICONTROL Titel]**: Geben Sie den Titel an, der in Ihrem Angebot angezeigt werden soll. Warnung: Hierbei handelt es sich nicht um den Titel des Angebots, der in der Registerkarte **[!UICONTROL Allgemein]** definiert ist.
+   * **[!UICONTROL Ziel-URL]**: Geben Sie die URL Ihres Angebots an. Sie muss mit &quot;http://&quot;oder &quot;https://&quot;beginnen.
    * **[!UICONTROL Bild-URL]**: Geben Sie die URL oder einen Zugangspfad für das Bild Ihres Angebots an.
-   * **[!UICONTROL HTML-Inhalt]**/**[!UICONTROL Textinhalt]**: Geben Sie den Body Ihres Angebots in den Tab Ihrer Wahl ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise erzeugt ein `<table>`-Element auf der HTML-Seite Folgendes:
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Textinhalt]**: Geben Sie den Hauptteil Ihres Angebots auf der gewünschten Registerkarte ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise erzeugt ein `<table>`-Element auf der HTML-Seite Folgendes:
 
    ```
       <div> 

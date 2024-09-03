@@ -5,10 +5,10 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '750'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -74,7 +74,7 @@ Navigieren Sie zur Registerkarte **[!UICONTROL Analyse]** in den Versandeigensch
 
 Folgende Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Titel und Versandcode]**: Die Optionen in diesem Abschnitt werden in der Versandanalysephase zur Berechnung der Werte dieser Felder verwendet. Das Feld **[!UICONTROL Ausführungsordner bei der Versandanalyse berechnen]** berechnet den Namen des Ordners, der in der Analysephase diese Versandaktion enthält.
+* **[!UICONTROL Titel und Versandcode]**: Die Optionen in diesem Abschnitt werden zur Berechnung der Werte dieser Felder während der Versandanalyse verwendet. Das Feld **[!UICONTROL Ausführungsordner bei der Versandanalyse berechnen]** berechnet den Namen des Ordners, der in der Analysephase diese Versandaktion enthält.
 
 * **[!UICONTROL Validierungsmodus]**: In diesem Feld können Sie nach Abschluss der Analyse einen manuellen oder automatischen Versand definieren.
 
@@ -88,6 +88,6 @@ Folgende Optionen stehen zur Verfügung:
    * **[!UICONTROL Halbautomatisch]**: Die Nachrichten werden automatisch abgeschickt, wenn die Analysephase ohne Warnhinweise abschließt.
    * **[!UICONTROL Automatisch]**: Die Nachrichten werden unabhängig vom Ergebnis der Analysephase automatisch abgeschickt.
 
-* **[!UICONTROL Vorgang in einem separaten Prozess starten]**: Mit dieser Option können Sie die Versandanalyse in einem separaten Prozess starten. Standardmäßig verwendet die Analysefunktion den Prozess des Adobe Campaign-Anwendungs-Servers (web nlserver). Durch Auswählen dieser Option stellen Sie sicher, dass die Analyse auch im Falle eines Anwendungs-Server-Problems vollständig durchgeführt wird.
-* **[!UICONTROL Zielbestimmungs- und Personalisierungsabfragen im Protokoll speichern]**: Schreibt in der Analysephase die SQL-Abfrage-Logs in das Versandprotokoll.
-* **[!UICONTROL Personalisierungsscripts beim Versand ignorieren]**: Mit dieser Option werden im HTML-Inhalt enthaltene JavaScript-Anweisungen nicht interpretiert, sondern 1:1 im gesendeten Inhalten abgebildet. Diese Anweisungen werden mit dem Tag `<%=` eingeführt.
+* **[!UICONTROL Vorgang in einem separaten Prozess starten]**: Mit dieser Option können Sie die Versandanalyse in einem separaten Prozess starten. Standardmäßig verwendet die Analysefunktion den Prozess des Adobe Campaign-Anwendungs-Server (nlserver web). Durch Ankreuzen dieser Option stellen Sie sicher, dass die Analyse selbst im Falle eines Problems mit dem Anwendungs-Server vollständig durchgeführt wird.
+* **[!UICONTROL Zielbestimmungs- und Personalisierungsabfragen im Protokoll speichern]** - schreibt in der Analysephase die SQL-Abfrage-Logs in das Versandprotokoll.
+* **[!UICONTROL Personalisierungsskripte beim Senden ignorieren]**: Mit dieser Option können Sie die Interpretation von JavaScript-Direktiven im HTML-Inhalt umgehen. Sie werden wie im bereitgestellten Inhalt angezeigt. Diese Anweisungen werden mit dem Tag `<%=` eingeführt.

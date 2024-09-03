@@ -5,10 +5,10 @@ description: Erstellen einer lokalen Kampagne
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1686'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -62,7 +62,7 @@ Es stehen vier unterschiedliche Schnittstellentypen zur Verfügung:
 
   ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL Standardformular]**: Die Lokalstelle hat Zugriff auf ein Web-Formular, in dem sie beispielsweise Inhalt, Zielgruppe, maximale Zielgruppengröße sowie Erstellungs- und Extraktionsdaten mithilfe von Personalisierungsfeldern bearbeiten kann. Zudem hat die Lokalstelle über dieses Web-Formular die Möglichkeit, die Zielgruppe auszuwerten und den Inhalt in einer Vorschau zu überprüfen.
+* **[!UICONTROL Durch Formular]**: Die Lokalstelle hat Zugriff auf ein Webformular, in dem sie je nach verwendeter Vorlage Inhalt, Zielgruppe, maximale Größe sowie Erstellungs- und Extraktionsdaten mithilfe von Personalisierungsfeldern bearbeiten kann. Die Lokalstelle kann die Zielgruppe über dieses Webformular auswerten und Inhalte in der Vorschau anzeigen.
 
   ![](assets/mkt_distr_8.png)
 
@@ -74,7 +74,7 @@ Es stehen vier unterschiedliche Schnittstellentypen zur Verfügung:
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL Nach externem Formular]**: Lokalstelle hat Zugriff auf Kampagnenparameter im Extranet (nicht in Adobe Campaign). Diese Parameter sind mit denen einer **lokalen Kampagne (nach Formular)** identisch.
+* **[!UICONTROL Externes Formular]**: Die Lokalstelle hat Zugriff auf die Kampagnenparameter im Extranet (nicht in Adobe Campaign). Diese Parameter sind mit denen einer **lokalen Kampagne (nach Formular)** identisch.
 * **[!UICONTROL Einfach]**: Die Lokalstelle bestellt die Kampagne über das Standardformular, ohne sie zu lokalisieren.
 
   ![](assets/mkt_distr_5.png)

@@ -5,10 +5,10 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -119,7 +119,7 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
 * **Schlichtung**: Auswahl der Angebote, die in einer Umgebung angezeigt werden sollen (geeignete Angebote). Das Schlichtungsprinzip ordnet Angebote nach ihrer Priorität entsprechend den Kriterien, die in Kategorien, Angeboten und Kontextangeboten definiert wurden.
 * **Kontakt**: Person am Ursprung einer eingehenden Interaktion. Bei einer Abfrage des Angebotsmoduls wird der Kontakt einer Zielgruppendimension zugeordnet. Es werden zwei Kontakttypen unterschieden:
 
-   * **[!UICONTROL Identifizierter Kontakt]**: Kontakt, der sich explizit im Kanal identifiziert hat (z. B. durch Angabe einer Benutzerkennung und eines Kennworts). Bei ausgehenden Interaktionen sind alle Kontakte systematisch identifiziert.
+   * **[!UICONTROL Identifizierter Kontakt]**: Kontakt, der sich explizit im Kanal identifiziert hat (z. B. durch Angabe einer Benutzerkennung und eines Kennworts). Bei ausgehenden Interaktionen wird der Kontakt automatisch identifiziert.
    * **[!UICONTROL Anonymer Kontakt]**: Kontakt, der sich nicht explizit im Kanal identifiziert hat, der jedoch mithilfe eines Cookies implizit identifiziert werden kann. Diese Art von Kontakten tritt nur bei eingehenden Interaktionen auf.
 
      >[!NOTE]
@@ -132,9 +132,9 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
 * **Einzelmodus**: Zu einem gegebenen Zeitpunkt wird jeweils ein Kontakt verarbeitet. Dieser Modus wird in der Regel für eingehende Interaktionen und Transaktionsnachrichten verwendet.
 * **Identifizierungsmodus**: bezieht sich auf den Status eines Kontakts:
 
-   * **[!UICONTROL explizit]** : Kontakte werden durch ihre Anmeldung bei der Kanalschnittstelle identifiziert.
-   * **[!UICONTROL implizit]** : Kontakte werden durch ein Cookie (permanent oder Sitzungsinstanz) identifiziert. Sie können als anonymer oder identifizierter Kontakt verarbeitet werden.
-   * **[!UICONTROL anonym]**: Kontakte können nicht identifiziert werden.
+   * **[!UICONTROL explizit]**: Kontakte werden durch ihre Anmeldung in der Kanalschnittstelle identifiziert.
+   * **[!UICONTROL implizit]**: Der Kontakt wird durch ein Cookie (permanente Sitzung oder Sitzung) identifiziert. Sie können als anonymer oder identifizierter Kontakt verarbeitet werden.
+   * **[!UICONTROL anonymous]**: Kontakte können nicht identifiziert werden.
 
 * **Geeignetes Angebot**: Angebot, das bestimmten, zuvor definierten Bedingungen entspricht und somit einer Zielgruppe auf mit ihrer Markenerfahrung kohärente Weise unterbreitet werden kann.
 * **Unterbreitungsregeln**: Typologieregeln, die auf Basis der einem Kontakt bereits vorgeschlagenen Angebote bestimmte Angebote von der Unterbreitung ausschließen. Die Regeln werden auf Ebene der Umgebung der Angebote verzeichnet.

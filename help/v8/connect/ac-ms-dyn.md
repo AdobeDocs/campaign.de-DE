@@ -5,10 +5,10 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1410'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -202,7 +202,7 @@ Bei Microsoft Dynamics 365 werden folgende Attributtypen unterstützt/nicht unte
 
 | Attributtyp | Unterstützt |
 | --------------------------------------------------------------------------------- | --------- |
-| Basistypen: Boolesch, Datum + Uhrzeit, Dezimalzahl, Gleitkommazahl, Dublette, Integer, Bigint, Zeichenfolge | Ja |
+| Grundlegende Typen: boolesch, datetime, decimal, float, double, integer, bigint , string | Ja |
 | Geld (als Dublette) | Ja |
 | memo, entityname, primarykey, uniqueidentifier (als Zeichenfolgen) | Ja |
 | Status, Auswahlliste (wir speichern die möglichen Werte in Auflistungen), Status (Zeichenfolge) | Ja |

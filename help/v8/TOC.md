@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
-workflow-type: ht
-source-wordcount: '623'
-ht-degree: 100%
+source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+workflow-type: tm+mt
+source-wordcount: '675'
+ht-degree: 94%
 
 ---
 
@@ -49,11 +49,27 @@ ht-degree: 100%
       + [Hinzufügen einer BCC-Adresse](send/email-bcc.md)
       + [Definieren zusätzlicher E-Mail-Parameter](send/email-parameters.md)
       + [Versenden und Überwachen von E-Mails](send/send.md)
-   + [SMS](send/sms.md)
+   + SMS {#sms}
+      + [Erste Schritte mit SMS](send/sms/sms.md)
+      + Konfigurieren des SMS-Kanals {#config-sms}
+         + [Einstellungen für externe SMPP-Konten](send/sms/smpp-external-account.md)
+         + [Merkmale des SMS-Kanals](send/sms/sms-channel.md)
+         + [Validieren einer SMPP-Verbindung](send/sms/smpp-connection.md)
+         + [Standalone-Instanz](send/sms/sms-standalone-instance.md)
+         + [Mid-Sourcing-Infrastruktur](send/sms/sms-mid-sourcing.md)
+         + [Beschreibung des SMPP-Connectors](send/sms/smpp-connector-delivery.md)
+      + SMS erstellen {#create-sms}
+         + [SMS-Versandeinstellungen](send/sms/sms-delivery-settings.md)
+         + [Inhalt des Berichts definieren](send/sms/sms-content.md)
+         + [Audience auswählen](send/sms/sms-audience.md)
+      + SMS validieren und senden {#validate-sms}
+         + [SMS-Testsendungen senden](send/sms/sms-proofs.md)
+         + [An die Zielgruppe senden](send/sms/sms-send.md)
+      + [SMS überwachen und verfolgen](send/sms/sms-monitor.md)
    + Push-Benachrichtigungen {#push}
       + [Erstellen und Versenden von Push-Benachrichtigungen](send/push.md)
       + Rich-Push {#rich-push}
-         + [Erstellen eines Rich-Push-Versands in Android](send/rich-push-android.md)
+         + [Entwerfen eines Rich-Push-Versands für Android](send/rich-push-android.md)
          + [Erstellen eines Rich-Push-Versands in iOS](send/rich-push-ios.md)
       + [Konfigurieren des Push-Benachrichtigungskanals](send/push-settings.md)
       + [Konfigurieren von Push-Benachrichtigungen mit der Datenerfassung](send/push-data-collection.md)
@@ -67,10 +83,10 @@ ht-degree: 100%
       + [Verwenden von Gestaltungsbausteinen](send/personalization-blocks.md)
       + [Erstellen von Bedingungen](send/conditions.md)
    + Validieren und Senden des Versands {#validate}
-   + [Vorschau und Testsendungen](send/preview-and-proof.md)
-   + [Versandanalyse](send/delivery-analysis.md)
-   + [Konfigurieren und Durchführen des Versands](send/configure-and-send.md)
-   + [Optimieren des Sendezeitpunkts](send/predictive.md)
+      + [Vorschau und Testsendungen](send/preview-and-proof.md)
+      + [Versandanalyse](send/delivery-analysis.md)
+      + [Konfigurieren und Durchführen des Versands](send/configure-and-send.md)
+      + [Optimieren des Sendezeitpunkts](send/predictive.md)
    + Fehler, Bounces und Quarantänen{#failures}
       + [Quarantänen](send/quarantines.md)
       + [Versandfehler](send/delivery-failures.md)

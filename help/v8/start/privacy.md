@@ -5,10 +5,10 @@ feature: Privacy
 role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -101,7 +101,7 @@ Je nach der Anzahl der verwendeten Namespaces wird jeder **[!DNL Privacy Service
 
 Außerdem kann ein Vorgang in mehreren Instanzen ausgeführt werden. Daher werden für einen Vorgang mehrere Dateien erstellt. Wenn sich eine Anfrage beispielsweise auf zwei Namespaces bezieht und drei Instanzen betrifft, werden insgesamt sechs Dateien gesendet. Eine Datei pro Namespace und Instanz.
 
-Der Dateiname setzt sich folgendermaßen zusammen: `<InstanceName>-<NamespaceId>-<ReconciliationKey>.xml`.
+Das Muster für einen Dateinamen lautet: `<InstanceName>-<NamespaceId>-<ReconciliationKey>.xml`
 
 * **InstanceName**: der Name der Campaign-Instanz
 * **NamespaceId**: die Namespace-Kennung des Identity Service für den verwendeten Namespace

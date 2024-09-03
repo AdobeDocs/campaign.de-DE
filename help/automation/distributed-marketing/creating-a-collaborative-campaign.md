@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen
 feature: Distributed Marketing
 role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 100%

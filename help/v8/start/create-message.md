@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
+source-git-commit: c508c80bea39e4fc32786d92d06651a1f91ca697
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 100%
@@ -55,7 +55,7 @@ Weiterführende Informationen zu den unterschiedlichen Versandarten finden Sie i
 
 ### Mobile-Kanal {#gs-channel-sms}
 
-Adobe Campaign ermöglicht den Versand von Nachrichten per [SMS](../send/sms.md) und [LINE](../send/line.md) auf Mobiltelefone.
+Adobe Campaign ermöglicht den Versand von Nachrichten per [SMS](../send/sms/sms.md) und [LINE](../send/line.md) auf Mobiltelefone.
 
 Die Inhalt-Kachel von SMS bietet ebenfalls die Möglichkeit der Erstellung, Anpassung und Personalisierung von Nachrichteninhalten, jedoch ausschließlich im Textformat. Es ist außerdem möglich, vor dem Versand eine Vorschau der SMS zu erzeugen.
 
