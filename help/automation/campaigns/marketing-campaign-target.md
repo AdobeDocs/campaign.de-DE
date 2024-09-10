@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie die Audience Ihrer Marketing-Kampagnen defini
 feature: Campaigns, Audiences
 role: User
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 100%
+source-wordcount: '1573'
+ht-degree: 99%
 
 ---
 
@@ -165,6 +165,10 @@ Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Star
   Sie können Ihren Workflow stoppen, indem Sie das Symbol **[!UICONTROL Aktionen]** und danach **[!UICONTROL Unbedingter Stopp]** auswählen. Damit wird Ihr Kampagnen-Workflow sofort angehalten.
 
   ![](assets/stop_unconditional.png)
+
+  >[!CAUTION]
+  >
+  >Unbedingter Stopp ist auf Admin-Benutzer beschränkt.
 
 ## Hinzufügen einer Kontrollgruppe {#add-a-control-group}
 

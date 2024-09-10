@@ -6,10 +6,10 @@ feature: Workflows
 level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
+source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 100%
+source-wordcount: '1216'
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
   >[!CAUTION]
   >
-  >Die Verwendung dieses Befehls sollte erfahrenen Benutzern vorbehalten bleiben.
+  >Unbedingter Stopp ist auf Admin-Benutzer beschränkt.
 
 * **[!UICONTROL Neu starten]**
 
@@ -107,7 +107,7 @@ Verbessern Sie die Stabilität Ihrer Instanz, indem Sie die folgenden Best Pract
 
 * **Stoppen von nicht verwendeten Workflows**. Workflows, die weiterhin ausgeführt werden, halten Verbindungen zur Datenbank aufrecht.
 
-* **Verwenden Sie den bedingungslosen Stopp so selten wie möglich**. Verwenden Sie diese Aktion nicht regelmäßig. Wenn Verbindungen, die von Workflows zur Datenbank erzeugt werden, nicht sauber geschlossen werden, beeinträchtigt dies die Performance.
+* **Verwenden Sie den bedingungslosen Stopp so selten wie möglich**. Diese Option ist auf Admin-Benutzer beschränkt. Verwenden Sie diese Aktion nicht regelmäßig. Wenn Verbindungen, die von Workflows zur Datenbank erzeugt werden, nicht sauber geschlossen werden, beeinträchtigt dies die Performance.
 
 * **Führen Sie nicht mehrere Stopp-Anfragen für denselben Workflow aus**. Das Anhalten eines Workflows ist ein asynchroner Prozess: Die Anfrage wird registriert und der oder die Workflow-Server brechen die laufenden Vorgänge ab. Das Anhalten einer Workflow-Instanz kann daher einige Zeit in Anspruch nehmen, insbesondere wenn der Workflow auf mehreren Servern ausgeführt wird, von denen jeder die laufenden Aufgaben abbrechen muss. Um Probleme zu vermeiden, warten Sie, bis der Stopp-Vorgang abgeschlossen ist, und vermeiden Sie, einen Workflow mehrmals anzuhalten.
 
