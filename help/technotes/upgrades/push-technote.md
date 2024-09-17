@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: dffe082d5e31eda4ecfba369b92d8a2d441fca04
+source-git-commit: a6a1af4e0255a2fec359c415cbbf45da2e4baf67
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1689'
 ht-degree: 85%
 
 ---
@@ -91,7 +91,7 @@ Befolgen Sie die folgenden Schritte, um Ihre Umgebung zu HTTP v1 zu migrieren:
 >
 >Sobald diese Änderungen auf Ihren gesamten Server angewendet werden, verwenden alle **neuen** Push-Benachrichtigungsversand an Android-Geräte die HTTP v1-API. Vorhandene Push-Sendungen, die wiederholt, in Bearbeitung und in Verwendung sind, verwenden weiterhin die HTTP-API (frühere Version). Erfahren Sie im folgenden Abschnitt, wie Sie sie aktualisieren können.
 
-### Vorhandene Vorlagen aktualisieren {#fcm-transition-update}
+#### Vorhandene Vorlagen aktualisieren {#fcm-transition-update}
 
 Nach der Migration zu HTTP v1 müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen aktualisieren, um die Anzahl der Batch-Nachrichten zu erhöhen. Öffnen Sie zu diesem Zweck die Eigenschaften Ihrer Android-Versandvorlage und legen Sie auf der Registerkarte **Versand** für die Einstellung [ Kontingentgröße](../../v8/send/configure-and-send.md#delivery-batch-quantity) den Wert **256** fest. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle vorhandenen Android-Sendungen.
 
@@ -101,14 +101,14 @@ Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor
 
 * Laden Sie für On-Premise-Umgebungen das Skript `fcm-httpv1-migration.js` herunter und führen Sie es wie unten beschrieben aus.
 
-  Laden Sie [fcm-httpv1-migration.js](assets/do-not-localize/fcm-httpv1-migration.js) herunter.
+  Laden Sie [fcm-httpv1-migration.zip](assets/do-not-localize/fcm-httpv1-migration-js.zip) herunter.
 
   >[!CAUTION]
   >
   >Das Skript muss in Ihren Marketing-, Mid-Sourcing- und Echtzeit-Umgebungen ausgeführt werden.
 
 
-  +++ Schritte zum Aktualisieren vorhandener Sendungen und Vorlagen
+  +++ Schritte zum Aktualisieren vorhandener Sendungen und Vorlagen (nur On-Premise)
 
   Gehen Sie wie folgt vor, um alle Sendungen und Versandvorlagen zu patchen, die vor dem Upgrade auf eine Version erstellt wurden, die HTTP v1 unterstützt:
 
