@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 4ef40ff971519c064b980df8235188c717855f27
+source-git-commit: dffe082d5e31eda4ecfba369b92d8a2d441fca04
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 100%
+source-wordcount: '1686'
+ht-degree: 85%
 
 ---
 
@@ -56,6 +56,8 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 
 * On-Premise-Benutzende von Campaign Classic v7 wie Sie müssen sowohl die Marketing- als auch die Echtzeit-Ausführungs-Server aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
 
+* Überprüfen Sie als On-Premise- oder Hybrid-Benutzer von Campaign Classic v7, ob Ihr externes Android-Routing-Konto mit `androidPushConnectorV2.js` konfiguriert ist. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)
+
 #### Migrationsverfahren {#fcm-transition-steps}
 
 Befolgen Sie die folgenden Schritte, um Ihre Umgebung zu HTTP v1 zu migrieren:
@@ -84,12 +86,73 @@ Befolgen Sie die folgenden Schritte, um Ihre Umgebung zu HTTP v1 zu migrieren:
    | Datennachricht | K. A. | validate_only |
    | Benachrichtigungsinhalt | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-1. Nach der Migration zu HTTP v1 müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen aktualisieren, um die Anzahl der Batch-Nachrichten zu erhöhen. Öffnen Sie zu diesem Zweck die Eigenschaften Ihrer Android-Versandvorlage und legen Sie auf der Registerkarte **Versand** für die Einstellung [ Kontingentgröße](../../v8/send/configure-and-send.md#delivery-batch-quantity) den Wert **256** fest. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle vorhandenen Android-Sendungen.
-
 
 >[!NOTE]
 >
->Sobald diese Änderungen auf allen Ihren Servern vorgenommen wurden, verwenden alle neuen Sendungen von Push-Benachrichtigungen an Android-Geräte die HTTP v1 API. Für bestehende Push-Sendungen, die gerade erneut versucht werden, gestartet sind oder verwendet werden, wird weiterhin die (veraltete) HTTP-API verwendet.
+>Sobald diese Änderungen auf Ihren gesamten Server angewendet werden, verwenden alle **neuen** Push-Benachrichtigungsversand an Android-Geräte die HTTP v1-API. Vorhandene Push-Sendungen, die wiederholt, in Bearbeitung und in Verwendung sind, verwenden weiterhin die HTTP-API (frühere Version). Erfahren Sie im folgenden Abschnitt, wie Sie sie aktualisieren können.
+
+### Vorhandene Vorlagen aktualisieren {#fcm-transition-update}
+
+Nach der Migration zu HTTP v1 müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen aktualisieren, um die Anzahl der Batch-Nachrichten zu erhöhen. Öffnen Sie zu diesem Zweck die Eigenschaften Ihrer Android-Versandvorlage und legen Sie auf der Registerkarte **Versand** für die Einstellung [ Kontingentgröße](../../v8/send/configure-and-send.md#delivery-batch-quantity) den Wert **256** fest. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle vorhandenen Android-Sendungen.
+
+Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor dem Upgrade auf eine Version erstellt wurden, die HTTP v1 unterstützt. Um dies durchzuführen:
+
+* Wenden Sie sich als verwaltete Cloud Service oder gehosteter Kunde an Adobe, um Ihre bestehenden Android-Versandvorlagen zu aktualisieren.
+
+* Laden Sie für On-Premise-Umgebungen das Skript `fcm-httpv1-migration.js` herunter und führen Sie es wie unten beschrieben aus.
+
+  Laden Sie [fcm-httpv1-migration.js](assets/do-not-localize/fcm-httpv1-migration.js) herunter.
+
+  >[!CAUTION]
+  >
+  >Das Skript muss in Ihren Marketing-, Mid-Sourcing- und Echtzeit-Umgebungen ausgeführt werden.
+
+
+  +++ Schritte zum Aktualisieren vorhandener Sendungen und Vorlagen
+
+  Gehen Sie wie folgt vor, um alle Sendungen und Versandvorlagen zu patchen, die vor dem Upgrade auf eine Version erstellt wurden, die HTTP v1 unterstützt:
+
+   1. Exportieren Sie Ihre bestehenden Sendungen und Versandvorlagen in ein Package, um sie im Falle eines unerwarteten Problems beim Patchen wiederherzustellen.
+   1. Führen Sie den folgenden Befehl in Posgresql aus:
+
+      ```sql
+      pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
+      ```
+
+   1. Standardmäßig befindet sich das Skript im Modus `dryrun` . Sie können es in diesem Modus starten, um zu überprüfen, ob ein Versand gepatcht werden muss.
+
+      Befehl
+
+      ```sql
+      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
+      ```
+
+      Ausgabe
+
+      ```sql
+      ...
+      HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+      HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+      ...
+      HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
+      HH:MM:SS >>  - X had not patchable androidCheckParams formula!
+      HH:MM:SS >   - Y had androidCheckParams formula patched.
+      HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
+      ```
+
+      >[!NOTE]
+      >
+      >Die `not patchable` Sendungen müssen manuell aktualisiert werden. Ihre Kennung finden Sie im Protokoll.
+
+   1. Führen Sie das Skript im Ausführungsmodus wie folgt aus, um Sendungen zu aktualisieren:
+
+      ```sql
+      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
+      ```
+
++++
 
 ### Wie wirkt sich dies auf meine Android-Apps aus? {#fcm-apps}
 
