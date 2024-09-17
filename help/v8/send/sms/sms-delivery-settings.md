@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
-source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
+exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
+source-git-commit: 8dffc24ff859ded70ea9c5b9ede39512c1543e74
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 14%
 
 ---
-
 
 # SMS-Versandeinstellungen {#sms-settings}
 
@@ -55,12 +55,12 @@ Hier finden Sie die Informationen, die Sie zum Ausfüllen dieses Formulars benö
 
 * **[!UICONTROL Übertragungsmodus]**
 
-In diesem Feld wird die Art der SMS angegeben, die Sie übertragen möchten: normale oder Flash-Nachrichten, die auf dem Mobiltelefon oder der SIM-Karte gespeichert werden. Diese Einstellung wird im optionalen Feld dest_addr_subunit in der SUBMIT_SM PDU übertragen.
+  In diesem Feld wird die Art der SMS angegeben, die Sie übertragen möchten: normale oder Flash-Nachrichten, die auf dem Mobiltelefon oder der SIM-Karte gespeichert werden. Diese Einstellung wird im optionalen Feld dest_addr_subunit in der SUBMIT_SM PDU übertragen.
 
-* **Flash** setzt den Wert auf 1. Es wird eine Flash-Nachricht gesendet, die auf dem Mobiltelefon angezeigt und nicht im Speicher abgelegt wird.
-* **Normal** setzt den Wert auf 0. Es wird eine normale Nachricht gesendet.
-* **Auf Mobilgerät speichern** setzt den Wert auf 2. Das Telefon wird angewiesen, die SMS im internen Speicher abzulegen.
-* **Auf Gerät speichern** setzt den Wert auf 3. Das Telefon wird angewiesen, die SMS auf der SIM-Karte zu speichern.
+   * **Flash** setzt den Wert auf 1. Es wird eine Flash-Nachricht gesendet, die auf dem Mobiltelefon angezeigt und nicht im Speicher abgelegt wird.
+   * **Normal** setzt den Wert auf 0. Es wird eine normale Nachricht gesendet.
+   * **Auf Mobilgerät speichern** setzt den Wert auf 2. Das Telefon wird angewiesen, die SMS im internen Speicher abzulegen.
+   * **Auf Gerät speichern** setzt den Wert auf 3. Das Telefon wird angewiesen, die SMS auf der SIM-Karte zu speichern.
 
 * **[!UICONTROL Priorität, Kommunikationstyp]**
 
