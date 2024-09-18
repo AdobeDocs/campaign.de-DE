@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: aba0048e5aff1caa2067eb61d26548b08a3deb36
+source-git-commit: a9aa9cb508ca1f5cdcd59e61b5be029e3de1a82f
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1721'
 ht-degree: 81%
 
 ---
@@ -109,7 +109,7 @@ Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor
 
   >[!CAUTION]
   >
-  >Das Skript muss in Ihrer Marketing-Instanz ausgeführt werden.
+  >Das Skript muss in Ihrer lokalen Marketing-Instanz ausgeführt werden.
 
 
   +++ Schritte zum Aktualisieren vorhandener Sendungen und Vorlagen (nur On-Premise)
