@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a6a1af4e0255a2fec359c415cbbf45da2e4baf67
+source-git-commit: aba0048e5aff1caa2067eb61d26548b08a3deb36
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 85%
+source-wordcount: '1720'
+ht-degree: 81%
 
 ---
 
@@ -48,15 +48,19 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 
 #### Voraussetzungen {#fcm-transition-prerequisites}
 
-* Für Campaign Classic v7 wurde die Unterstützung von HTTP v1 in Version 20.3.1 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, besteht eine Voraussetzung für die Migration zu HTTP v1 darin, Ihre Umgebung auf den [neuesten Campaign Classic-Build](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"} zu aktualisieren. Bei Campaign v8 wird HTTP v1 von allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
-
 * Die JSON-Datei des Kontos des Firebase Admin SDK-Dienstes ist erforderlich, damit die Mobile App auf HTTP v1 verschoben wird. In der [Dokumentation zu Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"} erfahren Sie, wie Sie diese Datei erhalten.
 
-* Bei hybriden, gehosteten und Managed Services-Bereitstellungen wenden Sie sich zusätzlich zum unten beschriebenen Migrationsverfahren an Adobe, um Ihren Echtzeit(RT)-Ausführungs-Server zu aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
+* Für Campaign Classic v7 wurde die Unterstützung von HTTP v1 in Version 20.3.1 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, besteht eine Voraussetzung für die Migration zu HTTP v1 darin, Ihre Umgebung auf den [neuesten Campaign Classic-Build](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"} zu aktualisieren. Bei Campaign v8 wird HTTP v1 von allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
 
-* On-Premise-Benutzende von Campaign Classic v7 wie Sie müssen sowohl die Marketing- als auch die Echtzeit-Ausführungs-Server aktualisieren. Der Mid-Sourcing-Server ist nicht betroffen.
+* Als On-Premise-Benutzer von Campaign Classic v7 müssen Sie sowohl die Marketing- als auch die Echtzeit-Ausführungsserver aktualisieren.
 
-* Überprüfen Sie als On-Premise- oder Hybrid-Benutzer von Campaign Classic v7, ob Ihr externes Android-Routing-Konto mit `androidPushConnectorV2.js` konfiguriert ist. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)
+* Bei hybriden, gehosteten und verwalteten Cloud Service-Bereitstellungen wenden Sie sich neben dem unten beschriebenen Übergangsverfahren an Adobe, um Ihren Echtzeit-Ausführungsserver (RT) zu aktualisieren.
+
+* Über das externe Android-Routing-Konto:
+
+   * Überprüfen Sie als On-Premise- oder Hybrid-Benutzer von Campaign Classic v7, ob Ihr externes Android-Routing-Konto mit `androidPushConnectorV2.js` konfiguriert ist. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+
+   * Bei hybriden, gehosteten und verwalteten Cloud Service-Bereitstellungen müssen Sie sich auch mit dem Adobe-Kundenunterstützungsteam verbinden, um zu überprüfen, ob der `androidPushConnectorV2.js (nms)` -Connector im externen Android-Routing-Konto Ihres Mid-Sourcing-Servers ausgewählt ist.
 
 #### Migrationsverfahren {#fcm-transition-steps}
 
@@ -105,7 +109,7 @@ Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor
 
   >[!CAUTION]
   >
-  >Das Skript muss in Ihren Marketing-, Mid-Sourcing- und Echtzeit-Umgebungen ausgeführt werden.
+  >Das Skript muss in Ihrer Marketing-Instanz ausgeführt werden.
 
 
   +++ Schritte zum Aktualisieren vorhandener Sendungen und Vorlagen (nur On-Premise)
