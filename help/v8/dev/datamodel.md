@@ -5,10 +5,10 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '706'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Sie können die standardmäßige Empfängertabelle mit den vordefinierten Felder
 * [Erweitern einer vorhandenen Tabelle](extend-schema.md) mit neuen Feldern. Sie können der Empfängertabelle beispielsweise ein neues Feld „Treue“ hinzufügen.
 * [Erstellen Sie eine neue Tabelle](create-schema.md), z. B. eine Tabelle „Einkauf“, in der alle von den einzelnen Profilen der Datenbank getätigten Käufe aufgelistet sind, und verknüpfen Sie sie mit der Empfängertabelle.
 
-Lernen Sie in [diesem Abschnitt](datamodel-best-practices.md) Best Practices zum Arbeiten mit dem Campaign-Datenmodell kennen.
+In [diesem Abschnitt](datamodel-best-practices.md) finden Sie Best Practices für die Arbeit mit dem Campaign-Datenmodell.
 
 ## Native Profiltabelle {#ootb-profiles}
 
