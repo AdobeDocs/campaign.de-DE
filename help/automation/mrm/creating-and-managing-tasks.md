@@ -6,7 +6,7 @@ feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3928'
 ht-degree: 100%
 
@@ -372,12 +372,12 @@ Eine Benachrichtigungsaufgabe kann folgende Status haben:
 
 ![](assets/mrm_task_notif_dashboard.png)
 
-Bei der Erstellung müssen folgende Elemente der Aufgabe erfasst werden:
+Bei der Erstellung müssen folgende Elemente der Aufgabe eingegeben werden:
 
-* **[!UICONTROL Zugeordneter Benutzer]**: Es handelt sich um den Benutzer bzw. die Benutzergruppe, die die E-Mail erhält. Wenn die Aufgabe nach dem Versand neu zugeordnet wird, wird die E-Mail nicht mehr an den neu zugeordneten Benutzer versandt (hierzu muss die Aufgabe zurückgesetzt und ihr Beginn angepasst werden).
+* **[!UICONTROL Zugewiesen an]**: Es handelt sich um die Person bzw. die Benutzergruppe, die die E-Mail erhält. Wenn die Aufgabe nach dem Versand neu zugeordnet wird, wird die E-Mail nicht mehr an die neu zugeordnete Person versandt (hierzu muss die Aufgabe zurückgesetzt und ihr Startdatum angepasst werden).
 * **Beginn der Aufgabe**: Es handelt sich um das Datum, an dem die Benachrichtigungs-E-Mail versandt wird. Dieses Datum muss zum Zeitpunkt der Aufgabenspeicherung zwingend in der Zukunft liegen.
 * **Ende der Aufgabe**: Es handelt sich um das Datum, an dem die Aufgabe den Status **[!UICONTROL Abgeschlossen]** annimmt. Standardmäßig entspricht dieses Datum dem Beginn. Die Angabe einer längeren Dauer ermöglicht es gegebenenfalls, in der Planung die Zeit zu symbolisieren, über die der Benutzer zur Bearbeitung verfügt.
-* **[!UICONTROL Beschreibung]**: Der hier eingegebene Text erscheint im Body der Benachrichtigungs-E-Mail.
+* **[!UICONTROL Beschreibung]**: Der hier eingegebene Text erscheint im Hauptteil der Benachrichtigungs-E-Mail.
 
   ![](assets/mrm_task_notif_dashboard_msg.png)
 

@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
 source-git-commit: 6926d84576df1810b511ef1a9976593cb99585bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Der Campaign-Webserver steuert den Zugriff auf Campaign-Web-Prozesse. JavaScript
 
 ![](assets/do-not-localize/ac-processes.png)
 
-Die Campaign-Client-Konsole stellt eine Verbindung mit dem Webserver her, indem sie SOAP XML über HTTP verwendet. Der Webserver stellt die Sicherheitsebene bereit, übergibt die Anfragen mithilfe von JavaScript an die Anwendungsebene und die internen Prozesse von Campaign greifen mithilfe von SQL auf die Datenbank zu.
+Die Campaign-Client-Konsole stellt eine Verbindung mit dem Webserver her, indem sie SOAP XML über HTTP verwendet. Der Webserver stellt die Sicherheitsebene bereit und übergibt die Anfragen mithilfe von JavaScript an die Anwendungsebene, und die internen Prozesse von Campaign greifen mithilfe von SQL auf die Datenbank zu.
 
 <!--The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
 

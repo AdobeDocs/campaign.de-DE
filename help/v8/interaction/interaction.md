@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1627'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -117,14 +117,14 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
   Auf Angebotsniveau lassen sich mithilfe der Eignungsregeln die Gültigkeit von Angeboten zeitlich begrenzen sowie Kriterien der Zielgruppenbestimmung definieren.
 
 * **Schlichtung**: Auswahl der Angebote, die in einer Umgebung angezeigt werden sollen (geeignete Angebote). Das Schlichtungsprinzip ordnet Angebote nach ihrer Priorität entsprechend den Kriterien, die in Kategorien, Angeboten und Kontextangeboten definiert wurden.
-* **Kontakt**: Person am Ursprung einer eingehenden Interaktion. Bei einer Abfrage des Angebotsmoduls wird der Kontakt einer Zielgruppendimension zugeordnet. Es werden zwei Kontakttypen unterschieden:
+* **Kontakt**: Person am Ursprung einer eingehenden Interaktion. Während der Verarbeitung des Anrufs durch die Engine wird der Kontakt einer Zielgruppendimension zugeordnet. Es werden zwei Kontakttypen unterschieden:
 
    * **[!UICONTROL Identifizierter Kontakt]**: Kontakt, der sich explizit im Kanal identifiziert hat (z. B. durch Angabe einer Benutzerkennung und eines Kennworts). Bei ausgehenden Interaktionen wird der Kontakt automatisch identifiziert.
    * **[!UICONTROL Anonymer Kontakt]**: Kontakt, der sich nicht explizit im Kanal identifiziert hat, der jedoch mithilfe eines Cookies implizit identifiziert werden kann. Diese Art von Kontakten tritt nur bei eingehenden Interaktionen auf.
 
      >[!NOTE]
      >
-     >Nicht identifizierbare anonyme Kontakte werden der Zielgruppendimension der Besucher zugeordnet.
+     >Nicht identifizierbare anonyme Kontakte werden der Zielgruppendimension „Besucher“ zugeordnet.
 
 * Eine **ausgehende Interaktion** ruft das Angebotsmodul von einer Kontaktliste aus auf (für den Versand von E-Mails, Direkt-Mail usw.). Auf jeden Kontakt werden die gleichen Regeln und Prozesse angewendet. Dieser Interaktionstyp wird in der Regel im Batch-Modus verarbeitet.
 * **Eingehende Interaktionen**: Interaktion nach einem eingehenden Aufruf, der durch die Aktion eines Kontakts im Kanal generiert wurde. Dieser Interaktionstyp wird im Allgemeinen im Einzelmodus verarbeitet.
@@ -132,9 +132,9 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
 * **Einzelmodus**: Zu einem gegebenen Zeitpunkt wird jeweils ein Kontakt verarbeitet. Dieser Modus wird in der Regel für eingehende Interaktionen und Transaktionsnachrichten verwendet.
 * **Identifizierungsmodus**: bezieht sich auf den Status eines Kontakts:
 
-   * **[!UICONTROL explizit]**: Kontakte werden durch ihre Anmeldung in der Kanalschnittstelle identifiziert.
-   * **[!UICONTROL implizit]**: Der Kontakt wird durch ein Cookie (permanente Sitzung oder Sitzung) identifiziert. Sie können als anonymer oder identifizierter Kontakt verarbeitet werden.
-   * **[!UICONTROL anonymous]**: Kontakte können nicht identifiziert werden.
+   * **[!UICONTROL explizit]**: Kontakte werden durch ihre Anmeldung bei der Kanalschnittstelle identifiziert.
+   * **[!UICONTROL implizit]** : Kontakte werden durch ein Cookie (permanent oder Sitzung) identifiziert. Sie können als anonymer oder identifizierter Kontakt verarbeitet werden.
+   * **[!UICONTROL anonym]**: Kontakte können nicht identifiziert werden.
 
 * **Geeignetes Angebot**: Angebot, das bestimmten, zuvor definierten Bedingungen entspricht und somit einer Zielgruppe auf mit ihrer Markenerfahrung kohärente Weise unterbreitet werden kann.
 * **Unterbreitungsregeln**: Typologieregeln, die auf Basis der einem Kontakt bereits vorgeschlagenen Angebote bestimmte Angebote von der Unterbreitung ausschließen. Die Regeln werden auf Ebene der Umgebung der Angebote verzeichnet.

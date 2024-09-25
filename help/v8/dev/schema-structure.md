@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Mit dem zugehörigen Datenschema:
 </srcSchema>
 ```
 
-## Beschreibung  {#description}
+## Beschreibung {#description}
 
 Der Startpunkt des Schemas ist sein Hauptelement. Es ist leicht identifizierbar, da sein Name mit dem des Schemas identisch ist. Außerdem handelt es sich um das direkte untergeordnete Element der Wurzel. Ausgehend von diesem Element beginnt die Inhaltsbeschreibung.
 
@@ -217,9 +217,9 @@ Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weiterführen
 
 Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die Variable `<default>  or  <sqldefault>   field.  </sqldefault> </default>` verwenden.
 
-`<default>`: Ermöglicht es Ihnen, das Feld beim Erstellen von Entitäten mit einem Standardwert vorab auszufüllen. Der Wert wird kein SQL-Standardwert sein.
+`<default>`: ermöglicht es Ihnen, das Feld beim Erstellen von Entitäten mit einem Standardwert vorauszufüllen. Der Wert wird kein SQL-Standardwert sein.
 
-`<sqldefault>`: Ermöglicht Ihnen beim Erstellen eines Felds einen Mehrwert. Dieser Wert wird als SQL-Ergebnis angezeigt. Während einer Aktualisierung des Schemas wirkt sich dieser Wert nur auf die neuen Einträge aus.
+`<sqldefault>`: ermöglicht es Ihnen, beim Erstellen eines Felds einen zusätzlichen Wert zu erhalten. Dieser Wert wird als SQL-Ergebnis angezeigt. Während einer Aktualisierung des Schemas wirkt sich dieser Wert nur auf die neuen Einträge aus.
 
 ### Auflistungen {#enumerations}
 

@@ -6,9 +6,9 @@ feature: Workflows, Heatmap
 role: Admin
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1155'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -71,8 +71,8 @@ Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgend
 
 1. Sie können auch nach dem **[!UICONTROL Workflow-Typ]** filtern:
 
-   * **[!UICONTROL Technisch]**: Es werden nur [integrierte technische Workflows](technical-workflows.md) und [Datenmanagement-Workflows](targeting-workflows.md#data-management) angezeigt.
-   * **[!UICONTROL Marketing]**: Es werden nur Workflows angezeigt, die mit einer Marketing-Kampagne verknüpft sind, die als [Kampagnen-Workflows](campaign-workflows.md) bezeichnet wird.
+   * **[!UICONTROL Technisch]**: Es werden nur [native technische Workflows](technical-workflows.md) und [Daten-Management-Workflows](targeting-workflows.md#data-management) angezeigt.
+   * **[!UICONTROL Marketing]**: Es werden nur Workflows angezeigt, die mit einer Marketing-Kampagne verknüpft sind. Diese sind auch als [Kampagnen-Workflows](campaign-workflows.md) bekannt.
 
 1. Um einen bestimmten Workflow nach Namen zu suchen, können Sie auch das Feld **[!UICONTROL Namensfilter für Workflows]** verwenden.
 

@@ -6,9 +6,9 @@ feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1686'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -58,11 +58,11 @@ Wählen Sie den Schnittstellentyp aus, der für die auf dieser Vorlage basierend
 
 Es stehen vier unterschiedliche Schnittstellentypen zur Verfügung:
 
-* **[!UICONTROL Briefing]**: Die Lokalstelle beschreibt die gewünschten Kampagnenparameter bei der Bestellung. Sobald die Bestellung validiert wurde, konfiguriert die Zentralstelle die Kampagne und führt sie aus.
+* **[!UICONTROL Briefing]**: Die Lokalstelle muss eine Beschreibung liefern, in der sie die Konfigurationen der Kampagne beschreibt. Sobald der Auftrag genehmigt ist, konfiguriert die Zentralstelle die Kampagne und führt sie als Ganzes durch.
 
   ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL Durch Formular]**: Die Lokalstelle hat Zugriff auf ein Webformular, in dem sie je nach verwendeter Vorlage Inhalt, Zielgruppe, maximale Größe sowie Erstellungs- und Extraktionsdaten mithilfe von Personalisierungsfeldern bearbeiten kann. Die Lokalstelle kann die Zielgruppe über dieses Webformular auswerten und Inhalte in der Vorschau anzeigen.
+* **[!UICONTROL Standardformular]**: Die Lokalstelle hat Zugriff auf ein Web-Formular, in dem sie je nach der verwendeten Vorlage Inhalt, Zielgruppe, maximale Zielgruppengröße sowie Erstellungs- und Extraktionsdaten mithilfe von Personalisierungsfeldern bearbeiten kann. Zudem hat die Lokalstelle über dieses Web-Formular die Möglichkeit, die Zielgruppe auszuwerten und den Inhalt in einer Vorschau zu überprüfen.
 
   ![](assets/mkt_distr_8.png)
 
@@ -74,8 +74,8 @@ Es stehen vier unterschiedliche Schnittstellentypen zur Verfügung:
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL Externes Formular]**: Die Lokalstelle hat Zugriff auf die Kampagnenparameter im Extranet (nicht in Adobe Campaign). Diese Parameter sind mit denen einer **lokalen Kampagne (nach Formular)** identisch.
-* **[!UICONTROL Einfach]**: Die Lokalstelle bestellt die Kampagne über das Standardformular, ohne sie zu lokalisieren.
+* **[!UICONTROL Externes Formular]**: Die Lokalstelle hat Zugriff auf Kampagnenparameter im Extranet (nicht in Adobe Campaign). Diese Parameter sind mit denen einer **lokalen Kampagne (nach Formular)** identisch.
+* **[!UICONTROL Einfach]**: Die Lokalstelle gibt die Kampagne über das Standardformular in Auftrag, ohne sie zu lokalisieren.
 
   ![](assets/mkt_distr_5.png)
 

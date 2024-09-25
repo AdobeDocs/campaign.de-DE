@@ -1,55 +1,54 @@
 ---
-title: SMS überwachen und tracken
-description: Über die Überwachung und Verfolgung eines SMS-Versands
+title: Überwachen und Verfolgen von SMS
+description: Informationen zum Überwachen und Verfolgen eines SMS-Versands
 feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
-source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
-workflow-type: tm+mt
+exl-id: 42be45db-3a90-4ad0-896d-f082afff1f8e
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Überwachen und Verfolgen von SMS
 
-# SMS überwachen und tracken
+Es ist wichtig, den Versand Ihrer SMS zu überwachen, um die Effizienz Ihrer Marketing-Kampagnen sicherzustellen.
 
-Es ist wichtig, den SMS-Versand zu überwachen, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind.
+Hier sind die Möglichkeiten, wie Sie wissen können, was nach dem Versand geschieht.
 
-Hier erfahren Sie, was nach dem Versand der Nachrichten geschieht.
+## Verstehen des SMS-Versand-Dashboards
 
-## Das Dashboard des SMS-Versands
+Das Versand-Dashboard bietet Ihnen zahlreiche Informationen zu Ihrer SMS.
 
-Im Versand-Dashboard finden Sie viele Informationen zu Ihrer SMS.
-
-Doppelklicken Sie auf Ihren Versand in der Versandliste, um auf das Dashboard zuzugreifen.
+Doppelklicken Sie in der Versandliste auf Ihren Versand, um auf das Dashboard zuzugreifen.
 
 Auf der Registerkarte **[!UICONTROL Zusammenfassung]** befinden sich die Hauptdaten wie die Anzahl der verarbeiteten Nachrichten und die Erfolgsanzahl.
 
 ![](assets/sms_summary.png){zoomable="yes"}
 
-Nach dem Versand der SMS ist der Tab **[!UICONTROL SMS]**, der sich auf den Inhalt des Versands bezieht, für eine Änderung nicht mehr zugänglich.
+Nach dem Versand der SMS ist die Registerkarte **[!UICONTROL SMS]**, die sich auf den Inhalt des Versands bezieht, nicht mehr für Änderungen zugänglich.
 
-Auf dem Tab **[!UICONTROL Versand]** finden Sie Informationen zu den Versandlogs. Für jede kontaktierte Adresse können Sie sehen, ob die SMS gesendet wurde oder nicht
+Auf der Registerkarte **[!UICONTROL Versand]** finden Sie Informationen zu den Versandlogs. Sie können für jede kontaktierte Adresse sehen, ob die SMS gesendet wurde oder nicht.
 
 ![](assets/sms_deliverylogs.png){zoomable="yes"}
 
-Im Tab **[!UICONTROL Ausschlüsse]** finden Sie Details dazu, warum einige Adressen aus der Zielgruppe ausgeschlossen sind.
+Auf der Registerkarte **[!UICONTROL Ausschlüsse]** finden Sie Details dazu, warum einige Adressen aus der Zielgruppe ausgeschlossen wurden.
 
 ![](assets/sms_exclusions.png){zoomable="yes"}
 
-Auf der Registerkarte **[!UICONTROL Tracking]** wird das Tracking beschrieben. Nachfolgend finden Sie ein Beispiel für eine im SMS-Inhalt getrackte URL.
+Auf der Registerkarte **[!UICONTROL Tracking]** finden Sie Informationen zum Tracking. Nachfolgend finden Sie ein Beispiel für eine verfolgte URL im SMS-Inhalt.
 
 ![](assets/sms_trackinglogs.png){zoomable="yes"}
 
-Schließlich enthält der Tab **[!UICONTROL Audit]** alle Details während des Starts des Versands:
+Und abschließend die Registerkarte **[!UICONTROL Audit]** mit allen Details während des Starts des Versands:
 
 ![](assets/sms_audit.png){zoomable="yes"}
 
-## Fehlgeschlagene SMS verstehen
+## Verstehen von SMS-Fehlschlägen
 
-Die Fehlertypen und -ursachen für SMS sind dieselben wie für E-Mails.
+Die Typen und Ursachen für das Fehlschlagen von SMS sind dieselben wie für E-Mails.
 
 Erfahren Sie mehr über [Versandfehler](../delivery-failures.md) und insbesondere über [SMS-Quarantänen](../delivery-failures.md#sms-quarantines).
-

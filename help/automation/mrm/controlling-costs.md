@@ -6,9 +6,9 @@ feature: Campaigns, Resource Management
 role: User
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2498'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Zur Nutzung der Budget-Verwaltung mit MRM sind folgende Etappen umzusetzen:
 
 1. Definieren Sie die Kostenberechnungsmethode: Für die Dienstleister werden Kostenstrukturen definiert. [Weitere Informationen](../campaigns/providers-stocks-and-budgets.md).
 
-1. Definieren Sie die Kampagnenkosten (Sendungen/Aufgaben): Die durch Sendungen und Aufgaben entstehenden Kosten werden einzeln oder global in die Kampagnenvorlage eingegeben. [Weitere Informationen](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
+1. Definieren Sie die Kosten der Kampagne (Sendungen/Aufgaben): Die durch Sendungen und Aufgaben anfallenden Kosten werden einzeln oder pauschal in der Kampagnenvorlage angegeben. [Weitere Informationen](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks).
 
 1. Konsolidieren Sie: Gemäß dem Fortschrittsstatus der Aufgaben, Sendungen und Kampagnen werden die Kosten berechnet und das entsprechende Budget wird damit belastet. Wenn die Erstellung der Kampagne ausreichend fortgeschritten ist, kann der Erfüllungsstatus des Kampagnenbudgets in **[!UICONTROL Angegeben]** geändert werden. Die berechneten Kosten des Programms werden daraufhin automatisch mit den berechneten Kosten der Kampagnen konsolidiert. [Weitere Informationen](#cost-commitment--calculation-and-charging).
 

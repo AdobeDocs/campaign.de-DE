@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Kampagnensimulationen konfigurieren
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1341'
 ht-degree: 100%
 
@@ -154,8 +154,8 @@ Um das Ergebnis einer Simulation zu analysieren, nutzen Sie die mit ihr verbunde
 Standardmäßig werden folgende Berichte angeboten:
 
 * **[!UICONTROL Detail der Simulationsausschlüsse]**: Dieser Bericht bietet eine detaillierte Tabelle aller Ausschlussgründe für alle von dieser Simulation betroffenen Sendungen.
-* **[!UICONTROL Simulationszusammenfassung]**: Dieser Bericht zeigt den Umfang der von der Simulation ausgeschlossenen Zielgruppen gestaffelt nach Sendungen an.
-* **[!UICONTROL Zusammenfassung der simulationsbedingten Ausschlüsse]**: Dieser Bericht zeigt eine Tabelle der Ausschlüsse durch die Simlation an. Des weiteren werden die Typologieregeln aufgeführt, die zum Ausschluss geführt haben sowie ihr jeweiliger Anteil an den regelbedingten Ausschlüssen.
+* **[!UICONTROL Simulationszusammenfassung]**: Dieser Bericht zeigt den Umfang der von der Simulation ausgeschlossenen Zielgruppen während der verschiedenen Sendungen an.
+* **[!UICONTROL Zusammenfassung der simulationsbedingten Ausschlüsse]**: Dieser Bericht zeigt eine Tabelle der Ausschlüsse durch die Simlation an. Des Weiteren werden die Typologieregeln aufgeführt, die zum Ausschluss geführt haben, sowie ihr jeweiliger Anteil an den regelbedingten Ausschlüssen.
 
 <!--
 >[!NOTE]

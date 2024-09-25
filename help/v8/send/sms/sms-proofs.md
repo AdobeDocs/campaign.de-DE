@@ -1,47 +1,47 @@
 ---
-title: SMS-Testsendungen
-description: Erfahren Sie, wie Sie Testsendungen eines SMS-Versands durchführen.
+title: SMS-Testversand
+description: Erfahren Sie, wie Sie einen SMS-Testversand durchführen.
 feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
-source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
-workflow-type: tm+mt
+exl-id: d2ec4d92-7f00-47c8-98e6-0613d6387de0
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+workflow-type: ht
 source-wordcount: '282'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
+# Durchführen eines SMS-Testversands {#sms-proof}
 
-# Testversand eines SMS-Versands {#sms-proof}
-
-Adobe empfiehlt dringend, einen Validierungszyklus für Sendungen einzurichten. Vergewissern Sie sich, dass Ihr Inhalt validiert wurde, bevor er an Ihre Audience gesendet wird.
+Adobe empfiehlt ausdrücklich, einen Validierungszyklus für Sendungen einzurichten. Vergewissern Sie sich, dass Ihr Inhalt genehmigt wurde, bevor dieser an Ihre Zielgruppe gesendet wird.
 
 Sie können einen Testversand für Ihren SMS-Versand durchführen, um ihn zu validieren:
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Testversand durchführen]** . Daraufhin wird ein Fenster geöffnet
+1. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Testversand erzeugen]**. Daraufhin wird das folgende Fenster geöffnet:
 
    ![](assets/proof_targeting.png){zoomable="yes"}
 
-   Sie haben mehrere Modi, um einen Testversand durchzuführen:
+   Es stehen mehrere Modi für einen Testversand zur Verfügung:
 
-   * **[!UICONTROL Definition einer speziellen Testversand-Zielgruppe]**: ermöglicht die Abfrage mit Filtern der Datenbankadressen als Testversand-Zielgruppe
-   * **[!UICONTROL Adressersetzung]**: ermöglicht die Eingabe Ihrer Testadressen und die Verwendung der Zielgruppenempfänger-Daten zur Überprüfung des Inhalts. Die Ersatzadressen können manuell eingegeben oder aus der Dropdown-Liste ausgewählt werden. Die zugehörige Auflistung ist **[!UICONTROL Ersatzadresse (rcpAddress)]**.
-Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie können jedoch über das Symbol **[!UICONTROL Detail]** einen bestimmten Empfänger aus der Hauptzielgruppe auswählen.
-   * **[!UICONTROL Testadressen]**: ermöglicht Ihnen den Zugriff auf Testadressen als Testversand-Zielgruppe. Diese Adressen können aus einer Datei importiert oder manuell eingegeben werden.
-   * **[!UICONTROL Spezifische Ziel- und Testadressen]**: ermöglicht die Kombination von Testadressen und -adressen aus einem Empfänger.
+   * **[!UICONTROL Bestimmung einer speziellen Testversand-Zielgruppe]**: Ermöglicht Abfragen, die die Adressen in der Datenbank als Testversand-Zielgruppe filtern.
+   * **[!UICONTROL Adressersetzung]**: Ermöglicht die Eingabe von Testadressen und Validierung des Inhalts mithilfe der Zielgruppen-Empfängerdaten. Die Ersatzadressen können manuell eingegeben oder aus der Dropdown-Liste ausgewählt werden. Die zugehörige Auflistung ist die **[!UICONTROL Ersatzadresse (rcpAddress)]**.
+Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie können jedoch über das **[!UICONTROL Detail]**-Symbol eine bestimmte Empfängerin oder einen bestimmten Empfänger aus der Hauptzielgruppe auswählen.
+   * **[!UICONTROL Testadressen]**: Ermöglicht den Zugriff auf Testadressen als Testversand-Zielgruppe. Diese Adressen können aus einer Datei importiert oder manuell eingegeben werden.
+   * **[!UICONTROL Spezifische Zielgruppe und Testadressen]**: Ermöglicht die Kombination von Testadressen und Adressen von Empfängerinnen und Empfängern.
 
-1. Fügen Sie nach Auswahl Ihres **[!UICONTROL Targeting-Modus]** Ihre Testadressen entsprechend hinzu.
+1. Fügen Sie nach Auswahl des gewünschten **[!UICONTROL Zielgruppenbestimmungsmodus]** Ihre Testadressen entsprechend hinzu.
 
-   Im folgenden Beispiel wählen wir **[!UICONTROL Definition einer bestimmten Testversand-Zielgruppe]** und fügen einen Empfänger hinzu:
+   Im folgenden Beispiel wird **[!UICONTROL Bestimmung einer speziellen Testversand-Zielgruppe]** ausgewählt und eine Empfängerin bzw. ein Empfänger hinzugefügt:
 
    ![](assets/proof_recipient.png){zoomable="yes"}
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Analysieren]** .
-Adobe Campaign führt die gesamte Kontrolle aus, bevor der Testversand validiert wird. Am Ende der Analyse ist die Schaltfläche **[!UICONTROL Versand bestätigen]** angeklickt.
+1. Wählen Sie die Schaltfläche **[!UICONTROL Analysieren]** aus.
+Adobe Campaign führt die gesamte Kontrolle aus, bevor der Testversand validiert wird. Am Ende der Analyse kann auf die Schaltfläche **[!UICONTROL Absendung bestätigen]** geklickt werden.
 
    ![](assets/proof_analyze.png){zoomable="yes"}
 
-1. Um den Testversand Ihres SMS-Versands durchzuführen, wählen Sie die Schaltfläche **[!UICONTROL Versand bestätigen]** aus.
+1. Um den SMS-Testversand durchzuführen, klicken Sie auf die Schaltfläche **[!UICONTROL Absendung bestätigen]**.
 
-Wenn in dieser Phase alles in Ordnung ist, können Sie fortfahren und [Ihren SMS-Versand an die Audience senden](sms-audience.md).
+Wenn alles in Ordnung ist, können Sie fortfahren und [den SMS-Versand an die Zielgruppe durchführen](sms-audience.md).

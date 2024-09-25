@@ -6,7 +6,7 @@ feature: Distributed Marketing
 role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '985'
 ht-degree: 100%
 
@@ -77,8 +77,8 @@ Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidie
 
 Der Kampagnenworkflow muss die Aktivität **Lokale Validierung** beinhalten. Diese hat folgende Parameter:
 
-* **[!UICONTROL Auszuführende Aktion]**: Benachrichtigung zur Zielgruppenvalidierung;
-* **[!UICONTROL Verteilungskontext]**: Explizit;
+* **[!UICONTROL Auszuführende Aktion]**: Benachrichtigung zur Zielgruppenvalidierung.
+* **[!UICONTROL Verteilungskontext]**: Explizit.
 * **[!UICONTROL Datenverteilung]**: Lokalstellen-Datenverteilung.
 
 Erstellen Sie eine Datenverteilung vom Typ **Lokalstellen-Datenverteilung**. Mit der Datenverteilungsvorlage können Sie die Anzahl der Datensätze aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie unter **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**, um eine neue **[!UICONTROL Datenverteilung]** zu erstellen. Für weitere Informationen zur Datenverteilung,

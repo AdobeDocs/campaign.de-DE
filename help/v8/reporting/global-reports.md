@@ -5,9 +5,9 @@ feature: Reporting, Monitoring
 role: User, Data Engineer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1880'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ Klicken Sie zur Anzeige eines Berichts auf seinen Namen. Standardmäßig stehen 
 >
 >Dieser Abschnitt behandelt nur versandbezogene Berichte.
 
-* **[!UICONTROL Versanddurchsatz]**: siehe [Versanddurchsatz](#delivery-throughput).
-* **[!UICONTROL Browser]**: siehe [Browser](#browsers).
-* **[!UICONTROL Teilen über soziale Netzwerke]**: siehe [Teilen über soziale Netzwerke](#sharing-to-social-networks).
-* **[!UICONTROL Statistiken zu Teilungsaktivitäten]**: siehe [Statistiken zu Teilungsaktivitäten](#statistics-on-sharing-activities).
-* **[!UICONTROL Betriebssysteme]**: siehe [Betriebssysteme](#operating-systems).
-* **[!UICONTROL URLs und Clickstreams]**: siehe [URLs und Clickstreams](delivery-reports.md#urls-and-click-streams).
-* **[!UICONTROL Trackingindikatoren]**: siehe [Trackingindikatoren](delivery-reports.md#tracking-indicators).
-* **[!UICONTROL Fehler und Bounces]**: siehe [Fehler und Bounces](#non-deliverables-and-bounces).
-* **[!UICONTROL Benutzeraktivitäten]**: siehe [Benutzeraktivitäten](#user-activities).
-* **[!UICONTROL Abonnement-Verfolgung]**: siehe [Abonnement-Verfolgung](#subscription-tracking).
-* **[!UICONTROL Versandzusammenfassung]**: siehe [Versandzusammenfassung](delivery-reports.md#delivery-summary).
-* **[!UICONTROL Versandstatistiken]**: siehe [Versandstatistiken](#delivery-statistics).
-* **[!UICONTROL Öffnungsverteilung]**: siehe [Öffnungsverteilung](#breakdown-of-opens).
+* **[!UICONTROL Versanddurchsatz]**: Siehe [Versanddurchsatz](#delivery-throughput).
+* **[!UICONTROL Browser]**: Siehe [Browser](#browsers).
+* **[!UICONTROL Teilen über soziale Netzwerke]**: Siehe [Teilen über soziale Netzwerke](#sharing-to-social-networks).
+* **[!UICONTROL Statistiken zu Teilungsaktivitäten]**: Siehe [Statistiken zu Teilungsaktivitäten](#statistics-on-sharing-activities).
+* **[!UICONTROL Betriebssysteme]**: Siehe [Betriebssysteme](#operating-systems).
+* **[!UICONTROL URLs und Clickstreams]**: Siehe [URLs und Clickstreams](delivery-reports.md#urls-and-click-streams).
+* **[!UICONTROL Tracking-Indikatoren]**: Siehe [Tracking-Indikatoren](delivery-reports.md#tracking-indicators).
+* **[!UICONTROL Unzustellbare Nachrichten und Bounces]**: Siehe [Unzustellbare Nachrichten und Bounces](#non-deliverables-and-bounces).
+* **[!UICONTROL Nutzeraktivitäten]**: Siehe [Nutzeraktivitäten](#user-activities).
+* **[!UICONTROL Abonnement-Verfolgung]**: Siehe [Abonnement-Verfolgung](#subscription-tracking).
+* **[!UICONTROL Versandzusammenfassung]**: Siehe [Versandzusammenfassung](delivery-reports.md#delivery-summary).
+* **[!UICONTROL Versandstatistiken]**: Siehe [Versandstatistiken](#delivery-statistics).
+* **[!UICONTROL Öffnungsverteilung]**: Siehe [Öffnungsverteilung](#breakdown-of-opens).
 
 ## Versanddurchsatz {#delivery-throughput}
 
@@ -61,7 +61,7 @@ Dieser Bericht zeigt Öffnungen, Klicks und Transaktionen in Form eines Diagramm
 Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Öffnungen]**: Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht berücksichtigt. [Weitere Informationen](metrics-calculation.md#tracking-opens-).
-* **[!UICONTROL Klicks]**: Gesamtzahl der Klicks auf Links in Sendungen. Klicks auf Abmelde- und Mirrorseite-Links werden nicht berücksichtigt.
+* **[!UICONTROL Klicks]**: Gesamtzahl der Klicks auf Links in Sendungen. Klicks auf Abmelde-Links und Mirrorseiten werden nicht berücksichtigt.
 <!--
 * **[!UICONTROL Transactions]**: Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -90,10 +90,10 @@ Folgende Indikatoren werden angezeigt:
 
 * **[!UICONTROL Unbekannter Nutzer]**: Fehlertyp, der während des Versands erzeugt wird, um anzuzeigen, dass die E-Mail-Adresse ungültig ist.
 * **[!UICONTROL Ungültige Domain]**: Fehlertyp, der beim Senden eines Versands erzeugt wird, um anzuzeigen, dass die Domain der E-Mail-Adresse falsch ist oder nicht existiert.
-* **[!UICONTROL Postfach voll]**: Fehler, der nach fünf fehlgeschlagenen Zustellversuchen erzeugt wird, wenn das Postfach zu viele Nachrichten enthält.
+* **[!UICONTROL Postfach voll]**: Fehlertyp, der nach fünf fehlgeschlagenen Versandversuchen erzeugt wird, wenn das Postfach der Empfängerin bzw. des Empfängers zu viele Nachrichten enthält.
 * **[!UICONTROL Account deaktiviert]**: Fehlertyp, der beim Senden eines Versands erzeugt wird, um anzuzeigen, dass die Adresse nicht mehr existiert.
-* **[!UICONTROL Abgelehnt]**: Fehler, wenn eine Adresse von einem ISP (Internet Service Provider) z. B. infolge der Anwendung einer Sicherheitsregel (Anti-Spam-Software) zurückgewiesen wird.
-* **[!UICONTROL Unerreichbar]**: Fehlertyp, der in der Nachrichtenverteilungs-Zeichenfolge der Nachricht auftritt: Vorfall im SMTP-Relais, Domain vorübergehend unerreichbar, usw.
+* **[!UICONTROL Abgelehnt]**: Fehler, wenn eine Adresse von einem ISP (Internet Service Provider) z. B. infolge der Anwendung einer Sicherheitsregel (Anti-Spam-Software) zurückgewiesen wird.
+* **[!UICONTROL Unerreichbar]**: Fehlertyp, der in der Nachrichtenverteilungs-Zeichenfolge auftritt: Vorfall im SMTP-Relais, Domain vorübergehend unerreichbar usw.
 * **[!UICONTROL Nicht angemeldet]**: Fehlertyp, wenn das Mobiltelefon der Empfängerin bzw. des Empfängers zum Zeitpunkt des Versands ausgeschaltet war oder über keinen Netzempfang verfügte.
 
   >[!NOTE]
@@ -136,9 +136,9 @@ Die allgemeinen Statistiken zur Browserverwendung werden als Tabelle und Diagram
 
 Folgende Indikatoren werden angezeigt:
 
-* **[!UICONTROL Besucher]**: Gesamtzahl der Zielgruppenempfänger nach Domain, die mindestens einmal in einer Nachricht geklickt haben.
-* **[!UICONTROL Angesehene Seiten]**: Gesamtzahl der Klicks auf Links in Sendungen nach Browser, bezogen auf alle Sendungen.
-* **[!UICONTROL Nutzungsrate]**: Prozentuale Verteilung der Besucher nach Browser in Bezug auf die Gesamt-Besucherzahl.
+* **[!UICONTROL Besucher]**: Gesamtzahl der angesprochenen Empfängerinnen und Empfänger (nach Internet-Browser), die mindestens einmal in einem Versand geklickt haben.
+* **[!UICONTROL Angesehene Seiten]**: Gesamtzahl der Klicks auf Links in einem Versand (nach Internet-Browser) für alle Sendungen.
+* **[!UICONTROL Nutzungsrate]**: Diese Rate stellt die Aufschlüsselung der Besucherinnen und Besucher (nach Internet-Browser) im Verhältnis zur Gesamt-Besucherzahl dar.
 
 **Statistiken nach Browsern**
 
@@ -154,8 +154,8 @@ Die **[!UICONTROL Verteilung nach Versionen]** zeigt den prozentualen Anteil der
 
 In der Tabelle werden folgende Indikatoren dargestellt:
 
-* **[!UICONTROL Gesamtanteil]**: Prozentualer Anteil der Besucher je Version, bezogen auf die Gesamt-Besucherzahl und auf alle Browser.
-* **[!UICONTROL Relativer Anteil]**: Prozentualer Anteil der Besucher je Version, bezogen auf die Gesamt-Besucherzahl und auf den betreffenden Browser.
+* **[!UICONTROL Gesamtanteil]**: Diese Rate stellt die Aufschlüsselung der Besucherinnen und Besucher nach Version im Vergleich zur Gesamt-Besucherzahl (auf allen Browsern) dar.
+* **[!UICONTROL Relativer Anteil]**: Diese Rate stellt die Aufschlüsselung der Besucherinnen und Besucher nach Version im Vergleich zur Gesamt-Besucherzahl (auf dem betreffenden Browser) dar.
 
 
 <!--
@@ -226,9 +226,9 @@ Die allgemeinen Statistiken bezüglich der verwendeten Betriebssysteme werden in
 
 Folgende Indikatoren werden angezeigt:
 
-* **[!UICONTROL Besucher]**: Durchschnittliche Anzahl der Zielgruppenempfänger pro Tag nach Betriebssystem, die mindestens einmal in einer Nachricht geklickt haben.
-* **[!UICONTROL Angesehene Seiten]**: Durchschnittliche Anzahl von Klicks auf Links in Sendungen nach Betriebssystem, bezogen auf alle Sendungen.
-* **[!UICONTROL Nutzungsrate]**: Prozentuale Verteilung der Besucher nach Betriebssystem in Bezug auf die Gesamt-Besucherzahl.
+* **[!UICONTROL Besucher]**: Tagesdurchschnitt der Gesamtzahl der angesprochenen Empfängerinnen und Empfänger (nach Betriebssystem), die mindestens einmal in einem Versand geklickt haben.
+* **[!UICONTROL Angesehene Seiten]**: Tagesdurchschnitt der Gesamtzahl der Klicks auf Links in einem Versand (nach Betriebssystem) für alle Sendungen.
+* **[!UICONTROL Nutzungsrate]**: Diese Rate stellt die Aufschlüsselung der Besucherinnen und Besucher (nach Betriebssystem) im Verhältnis zur Gesamt-Besucherzahl dar.
 
 **Statistiken nach Betriebssystem**
 
@@ -244,8 +244,8 @@ Die **[!UICONTROL Verteilung nach Versionen]** zeigt den prozentualen Anteil der
 
 In der Tabelle werden folgende Indikatoren dargestellt:
 
-* **[!UICONTROL Gesamtanteil]**: Prozentualer Anteil der Besucher je Version, bezogen auf die Gesamt-Besucherzahl und auf alle Betriebssysteme.
-* **[!UICONTROL Relativer Anteil]**: Prozentualer Anteil der Besucher je Version, bezogen auf die Gesamt-Besucherzahl und alle Browser.
+* **[!UICONTROL Gesamtanteil]**: Diese Rate stellt die Aufschlüsselung der Besucherinnen und Besucher (nach Version) im Verhältnis zur Gesamt-Besucherzahl über alle Betriebssysteme hinweg dar.
+* **[!UICONTROL Relativer Anteil]**: Diese Rate stellt die Aufschlüsselung der Besucherinnen und Besucher (nach Version) im Verhältnis zur Gesamt-Besucherzahl für das betreffende Betriebssystem dar.
 
 ## Abonnement-Verfolgung {#subscription-tracking}
 
@@ -263,11 +263,11 @@ Die Zeile **[!UICONTROL Anzahl Anmeldungen bis heute]** gibt die Gesamtzahl alle
 
 In der Tabelle werden folgende Indikatoren dargestellt:
 
-* **[!UICONTROL Angemeldet]**: Anzahl der Abonnenten insgesamt für den entsprechenden Zeitraum.
-* **[!UICONTROL Anmeldungen]**: Anzahl der Anmeldungen für den entsprechenden Zeitraum.
-* **[!UICONTROL Abmeldungen]**: Anzahl der Abmeldungen für den entsprechenden Zeitraum.
-* **[!UICONTROL Entwicklung]**: Anzahl Anmeldungen abzüglich Abmeldungen. Der Prozentsatz in Klammern bezieht sich auf die Gesamtzahl der Abonnenten.
-* **[!UICONTROL Treue]**: Treuerate der Abonnenten über den entsprechenden Zeitraum.
+* **[!UICONTROL Abonnenten]**: Anzahl der Abonnentinnen und Abonnenten insgesamt für den entsprechenden Zeitraum.
+* **[!UICONTROL Abonnements]**: Anzahl der Anmeldungen für den entsprechenden Zeitraum.
+* **[!UICONTROL Abmeldungen]**: Anzahl der Abmeldungen von Abonnements für den entsprechenden Zeitraum.
+* **[!UICONTROL Entwicklung]**: Anzahl der Abmeldungen abzüglich der Anmeldungen. Die Rate wird auf der Grundlage der Gesamtzahl der Abonnentinnen und Abonnenten berechnet.
+* **[!UICONTROL Treue]**: Treuerate der Abonnentinnen und Abonnenten über den entsprechenden Zeitraum.
 
 **[!UICONTROL Kurven zur Anmeldeentwicklung]**
 
@@ -281,18 +281,18 @@ Dieser Bericht enthält die Anzahl verarbeiteter E-Mails sowie den prozentualen 
 
 Folgende Indikatoren werden angezeigt:
 
-* **[!UICONTROL Verarbeitete E-Mails]**: Gesamtzahl der E-Mails, die vom Versandserver verarbeitet wurden.
-* **[!UICONTROL Zugestellt]**: Prozentualer Anteil der erfolgreich zugestellten E-Mails in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
-* **[!UICONTROL Hardbounces]**: Prozentualer Anteil der Hardbounces in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
-* **[!UICONTROL Softbounces]**: Prozentualer Anteil der Softbounces in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
+* **[!UICONTROL Verarbeitete E-Mails]**: Gesamtzahl der Nachrichten, die vom Versand-Server verarbeitet wurden.
+* **[!UICONTROL Zugestellt]**: Prozentualer Anteil der erfolgreich verarbeiteten Nachrichten im Vergleich zur Gesamtzahl der verarbeiteten Nachrichten.
+* **[!UICONTROL Hardbounces]**: Prozentualer Anteil der Hardbounces im Vergleich zur Gesamtzahl der verarbeiteten Nachrichten.
+* **[!UICONTROL Softbounces]**: Prozentualer Anteil der Softbounces im Vergleich zur Gesamtzahl der verarbeiteten Nachrichten.
 
   >[!NOTE]
   >
   >Weiterführende Informationen zu Hard- und Softbounces finden Sie auf [dieser Seite](../send/quarantines.md).
 
-* **[!UICONTROL Öffnungen]**: Prozentualer Anteil der unterschiedlichen Zielgruppenempfänger, die mindestens einmal die betreffende Nachricht geöffnet haben, in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
-* **[!UICONTROL Klicks]**: Prozentualer Anteil der unterschiedlichen Zielgruppenempfänger, die mindestens einmal in eine Nachricht geklickt haben, in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
-* **[!UICONTROL Abmeldungen]**: Prozentualer Anteil der Klicks auf einen Abmelde-Link in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
+* **[!UICONTROL Öffnungen]**: Prozentualer Anteil der angesprochenen Empfängerinnen und Empfänger, die mindestens einmal eine Nachricht geöffnet haben, im Vergleich zur Gesamtzahl der erfolgreich verarbeiteten Nachrichten.
+* **[!UICONTROL Klicks]**: Prozentualer Anteil der angesprochenen Empfängerinnen und Empfänger, die mindestens einmal in einem Versand geklickt haben, im Vergleich zur Anzahl der erfolgreich verarbeiteten Nachrichten.
+* **[!UICONTROL Abmeldung]**: Prozentualer Anteil der Klicks auf einen Abmelde-Link im Vergleich zur Anzahl der erfolgreich verarbeiteten Nachrichten.
 
 ## Öffnungsverteilung {#breakdown-of-opens}
 

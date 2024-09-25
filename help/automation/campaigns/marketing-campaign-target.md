@@ -6,9 +6,9 @@ feature: Campaigns, Audiences
 role: User
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1573'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -168,7 +168,7 @@ Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Star
 
   >[!CAUTION]
   >
-  >Unbedingter Stopp ist auf Admin-Benutzer beschränkt.
+  >„Unbedingter Stopp“ steht nur Admins zur Verfügung.
 
 ## Hinzufügen einer Kontrollgruppe {#add-a-control-group}
 

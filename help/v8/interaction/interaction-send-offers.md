@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1316'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -59,12 +59,12 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in einen Versand einzufügen:
 
 ### Parameter des Angebotsmoduls {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Platzierung]**: Bereich der Angebotsumgebung, der ausgewählt werden muss, um das Angebotsmodul zu aktivieren.
-* **[!UICONTROL Kategorie]**: spezifischer Ordner, in dem Angebote sortiert werden. Wenn keine Kategorie angegeben wird, werden alle in der Umgebung enthaltenen Angebote vom Angebotsmodul berücksichtigt, es sei denn, ein Design wurde ausgewählt.
+* **[!UICONTROL Platzierung]**: Zur Aktivierung des Angebotsmoduls ist die Angabe einer Platzierung aus der Angebotsumgebung zwingend erforderlich.
+* **[!UICONTROL Kategorie]**: spezifischer Ordner, in dem die Angebote sortiert werden. Wenn keine Kategorie angegeben wird, berücksichtigt das Angebotsmodul alle in der Umgebung enthaltenen Angebote, es sei denn, es wird ein Thema ausgewählt.
 * **[!UICONTROL Themen]**: zuvor auf Kategorieebene definierte Schlüsselwörter, die wie ein Filter agieren. Die zu unterbreitenden Angebote werden den Themen entsprechend aus einer Gruppe von Kategorien ausgewählt.
-* **[!UICONTROL Vorschlagsanzahl]**: Anzahl von Angeboten, die in den Nachrichten-Textkörper eingeschlossen werden können. Auch wenn sie nicht in die Nachricht eingeschlossen werden, werden die Angebote erzeugt aber nicht unterbreitet.
-* **[!UICONTROL Nicht infrage kommende Empfänger ausschließen]**: Diese Option erlaubt es, Empfänger, für die nicht ausreichend Angebote infrage kommen, vom Versand auszuschließen. Wenn Sie diese Option nicht ankreuzen, erhält ein Empfänger den Versand, auch wenn für ihn nicht die gewünschte Anzahl an Angeboten ausgewählt werden konnte. Seine Nachricht enthält somit weniger oder gar keine Angebote.
-* **[!UICONTROL Leere Darstellung anzeigen, wenn kein Angebot ausgewählt wurde]**: Mithilfe dieser Option wählen Sie den Umgang mit Nachrichten aus, für die ein einzufügender Vorschlag nicht (mehr) existiert. Wenn Sie die Option ankreuzen, erscheint in der Nachricht nichts, was sich auf den fehlenden Vorschlag bezieht, und der Versand wird wie üblich verarbeitet. Im anderen Fall wird die gesamte Nachricht vom Versand ausgeschlossen und die entsprechenden Empfänger erhalten keine Nachricht.
+* **[!UICONTROL Vorschlagsanzahl]**: Anzahl der von der Engine zurückgegebenen Angebote, die in den Textkörper des Versands eingeschlossen werden können. Wenn sie nicht in die Nachricht eingeschlossen werden, werden die Angebote immer noch erzeugt, aber nicht unterbreitet.
+* **[!UICONTROL Nicht infrage kommende Empfänger ausschließen]**: Diese Option erlaubt es, Empfängerinnen und Empfänger, für die nicht ausreichend geeignete Angebote vorhanden sind, vom Versand auszuschließen. Die Anzahl der geeigneten Angebote kann geringer sein als die angeforderte Anzahl der Angebote. Wenn dieses Kästchen aktiviert ist, werden Empfängerinnen und Empfänger, für die nicht genügend Angebote vorliegen, vom Versand ausgeschlossen. Wenn Sie diese Option nicht wählen, werden diese Personen zwar nicht ausgeschlossen, doch sie erhalten nicht die gewünschte Anzahl von Angeboten.
+* **[!UICONTROL Nichts anzeigen, wenn kein Angebot ausgewählt wurde]**: Mit dieser Option können Sie festlegen, wie die Nachricht verarbeitet werden soll, wenn eines der Angebote nicht vorhanden ist. Wenn dieses Kästchen markiert ist, wird die Darstellung des fehlenden Angebots nicht angezeigt und es erscheint kein Inhalt in der Nachricht für dieses Angebot. Ist das Kästchen nicht angekreuzt, wird die Nachricht selbst während des Versands abgebrochen und die Empfängerinnen und Empfänger erhalten keine Nachrichten mehr.
 
 ## Senden von Angeboten in Workflows{#offer-via-wf}
 
@@ -100,11 +100,11 @@ Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritt
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
 1. Konfigurieren Sie die Angebotsauswahl. Zwei Optionen stehen zur Auswahl:
 
-   * **[!UICONTROL Suchen Sie nach dem besten Angebot einer Kategorie]**: Aktivieren Sie diese Option und geben Sie die Anrufparameter der Angebotsmodul an (Platzierung, Kategorie oder Thema(e), Kontaktdatum, Anzahl beizubehaltender Angebote). Das Angebotsmodul berechnet automatisch die zu verwendenden Angebote entsprechend diesen Parametern. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
+   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Beim Ankreuzen dieser Option geben Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl der beizubehaltenden Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, aber nicht beide gleichzeitig.
 
      ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL Ein vordefiniertes Angebot]**: Aktivieren Sie diese Option und geben Sie eine Platzierung, ein bestimmtes Angebot und ein Kontaktdatum an, um das Angebot, das Sie hinzufügen möchten, direkt zu konfigurieren, ohne das Angebotsmodul aufzurufen.
+   * **[!UICONTROL Vordefiniertes Angebot]**: Beim Ankreuzen dieser Option können Sie ohne Abfrage des Angebotsmoduls direkt das einzufügende Angebot konfigurieren (Platzierung, ein bestimmtes Angebot und ein Kontaktdatum).
 
      ![](assets/int_enrichment_offer4.png)
 
