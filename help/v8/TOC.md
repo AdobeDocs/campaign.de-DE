@@ -8,7 +8,7 @@ breadcrumb-title: Dokumentation zu Campaign v8
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -52,20 +52,20 @@ ht-degree: 94%
    + SMS {#sms}
       + [Erste Schritte mit SMS](send/sms/sms.md)
       + Konfigurieren des SMS-Kanals {#config-sms}
-         + [Einstellungen für externe SMPP-Konten](send/sms/smpp-external-account.md)
+         + [SMPP-Einstellungen für externe Konten](send/sms/smpp-external-account.md)
          + [Merkmale des SMS-Kanals](send/sms/sms-channel.md)
          + [Validieren einer SMPP-Verbindung](send/sms/smpp-connection.md)
-         + [Standalone-Instanz](send/sms/sms-standalone-instance.md)
+         + [Eigenständige Instanz](send/sms/sms-standalone-instance.md)
          + [Mid-Sourcing-Infrastruktur](send/sms/sms-mid-sourcing.md)
          + [Beschreibung des SMPP-Connectors](send/sms/smpp-connector-delivery.md)
-      + SMS erstellen {#create-sms}
+      + Erstellen einer SMS {#create-sms}
          + [SMS-Versandeinstellungen](send/sms/sms-delivery-settings.md)
-         + [Inhalt des Berichts definieren](send/sms/sms-content.md)
-         + [Audience auswählen](send/sms/sms-audience.md)
-      + SMS validieren und senden {#validate-sms}
-         + [SMS-Testsendungen senden](send/sms/sms-proofs.md)
-         + [An die Zielgruppe senden](send/sms/sms-send.md)
-      + [SMS überwachen und verfolgen](send/sms/sms-monitor.md)
+         + [Definieren des Inhalts](send/sms/sms-content.md)
+         + [Auswählen der Zielgruppe](send/sms/sms-audience.md)
+      + Validieren und Versenden einer SMS {#validate-sms}
+         + [Senden von SMS-Testsendungen](send/sms/sms-proofs.md)
+         + [Senden an die Zielgruppe](send/sms/sms-send.md)
+      + [Überwachen und Verfolgen einer SMS](send/sms/sms-monitor.md)
    + Push-Benachrichtigungen {#push}
       + [Erstellen und Versenden von Push-Benachrichtigungen](send/push.md)
       + Rich-Push {#rich-push}
