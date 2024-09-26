@@ -5,10 +5,10 @@ feature: Configuration, FFDA
 role: Developer
 level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
+source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 100%
+source-wordcount: '591'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Wenn doppelte Schlüssel erkannt werden, wird eine bestimmte Benachrichtigung an
 ![](assets/wf-alert-activity.png)
 
 
-## Zusätzliche Schutzmaßnahmen{#duplicates-guardrails}
+## Zusätzliche Schutzmaßnahmen {#duplicates-guardrails}
 
 Campaign verfügt über eine Reihe neuer Schutzmaßnahmen, um das Einfügen eines doppelten Schlüssels in die [!DNL Snowflake]-Datenbank zu verhindern.
 
@@ -63,19 +63,19 @@ Campaign verfügt über eine Reihe neuer Schutzmaßnahmen, um das Einfügen eine
 >
 >Diese Schutzmaßnahmen sind ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie in [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 
-### Versandvorbereitung{#remove-duplicates-delivery-preparation}
+### Versandvorbereitung {#remove-duplicates-delivery-preparation}
 
 Adobe Campaign entfernt während der Versandvorbereitung automatisch jede doppelte UUID aus einer Zielgruppe. Dieser Mechanismus verhindert, dass bei der Vorbereitung eines Versands ein Fehler auftritt. Als Endbenutzer können Sie diese Informationen in den Versandlogs überprüfen. Manche Empfänger können wegen eines doppelten Schlüssels aus der Hauptzielgruppe ausgeschlossen werden. In diesem Fall wird folgender Warnhinweis angezeigt: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
 ![](assets/exclusion-duplicates-log.png)
 
-### Aktualisieren von Daten in einem Workflow {#duplicates-update-data}
+### Aktualisieren von Daten in einem Workflow  {#duplicates-update-data}
 
 Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) können Sie keinen internen Schlüssel (UUID) als Feld auswählen, um Daten in einem Workflow zu aktualisieren.
 
 ![](assets/update-data-no-internal-key.png)
 
-### Abfrage eines Schemas mit Duplikaten{#query-with-duplicates}
+### Abfrage eines Schemas mit Duplikaten {#query-with-duplicates}
 
 Wenn ein Workflow eine Abfrage zu einem Schema startet, prüft Adobe Campaign, ob ein doppelter Eintrag in der Tabelle [Audit Unicity](#unicity-wf) gefunden wird. In diesem Fall protokolliert der Workflow eine Warnung, da der nachfolgende Vorgang mit den doppelten Daten möglicherweise das Workflow-Ergebnis beeinflusst.
 
@@ -86,3 +86,8 @@ Diese Prüfung wird in den folgenden Workflow-Aktivitäten durchgeführt:
 * Abfrage
 * Inkrementelle Abfrage
 * Liste lesen
+
+
+>[!NOTE]
+>
+>Wenn Sie von einer anderen Campaign-Version wechseln, ist es unbedingt erforderlich, Duplikate zu entfernen, Daten zu beheben und zu bereinigen, um eine Beeinträchtigung Ihrer Transition zu vermeiden.

@@ -5,16 +5,16 @@ feature: Configuration, API, FFDA
 role: Developer
 level: Intermediate
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 96%
 
 ---
 
 # Campaign-API-Staging-Mechanismus
 
-Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ist es im Hinblick auf die Performance (Latenz und Gleichzeitigkeit) nicht empfehlenswert, einzelne Abfragen zu starten. Batch-Vorgänge sind daher vorzuziehen. Um die Performance zu verbessern, werden Aufnahme-APIs an die lokale Datenbank weitergeleitet.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ist es im Hinblick auf die Performance (Latenz und Gleichzeitigkeit) nicht empfehlenswert, einzelne Abfragen zu starten. Wenn Sie keine extrem geringe Menge senden, wird der Batch-Vorgang **must** verwendet. Um die Performance zu verbessern, werden Aufnahme-APIs an die lokale Datenbank weitergeleitet.
 
 Die Staging-Funktion von Campaign ist in einigen nativen Schemata standardmäßig aktiviert. Sie kann auch für jedes benutzerdefinierte Schema aktiviert werden. Staging-Verfahren in Kürze:
 
