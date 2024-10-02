@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie die Empfängertabelle abfragen
 feature: Query Editor
 role: User, Data Engineer
 exl-id: 7f859ce9-7ab8-46e1-8bd6-43aaffe30da2
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -84,6 +84,6 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_13.png)
 
-   Klicken Sie auf **[!UICONTROL Erzeugte SQL-Abfragen]**, um die SQL-Entsprechung der Abfrage anzusehen.
+   Die Registerkarte **[!UICONTROL Erzeugte SQL-Abfragen]** zeigt das Abfrageergebnis im SQL-Format an.
 
    ![](assets/query_editor_nveau_14.png)
