@@ -5,10 +5,10 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 10b1113a20c11e0b97804f597cb0a48568fcae3d
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 100%
+source-wordcount: '952'
+ht-degree: 99%
 
 ---
 
@@ -61,7 +61,7 @@ Sobald die Client-Konsole installiert ist, führen Sie die folgenden Schritte au
 
 1. Geben Sie per URL eine Verbindung zum Adobe Campaign-Anwendungs-Server an. Verwenden Sie entweder einen DNS oder einen Alias des Computers oder Ihre IP-Adresse.
 
-   Sie können beispielsweise eine URL vom Typ [`https://<machine>.<domain>.com`](https://myserver.adobe.com) eingeben.
+   Sie können beispielsweise die URL vom Typ `https://<machine>.<domain>.com` verwenden.
 
 1. Aktivieren Sie die Option **[!UICONTROL Anmeldung mit einer Adobe ID]**.
 

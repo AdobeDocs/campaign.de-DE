@@ -5,10 +5,10 @@ feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-source-git-commit: adfde71faebf3cec7e7b730c9753e6765aeadab0
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
 source-wordcount: '1527'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -108,7 +108,7 @@ Im Anschluss an die Erstellung Ihrer **[!UICONTROL Report Suite]** müssen Sie *
    * **[!UICONTROL Einzelöffnungen]**
    * **[!UICONTROL Abgemeldet]**
 
-   Weitere Informationen zum Konfigurieren von **[!UICONTROL Erfolgsereignissen]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=de#admin-tools)
+   Weitere Informationen zum Konfigurieren von **[!UICONTROL Erfolgsereignissen]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html)
 
    ![](assets/analytics_connnector_8.png)
 
