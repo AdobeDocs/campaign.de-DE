@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Mit Campaign können Sie der Cloud-Datenbank Kontakte hinzufügen. Sie können e
 
 Erste Schritte mit [Zielgruppen](audiences.md)
 
-Campaign [Datenmodell](../dev/datamodel.md)
+Grundlegendes zum [Datenmodell](../dev/datamodel.md) von Campaign
 
 ## Profile in einen Workflow importieren
 

@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Vor der Arbeit mit [!DNL Adobe Campaign]-APIs sollten Sie sich mit den folgenden
 
 * JavaScript
 * SOAP-Protokoll
-* [!DNL Adobe Campaign] Datenmodell
+* [!DNL Adobe Campaign]-Datenmodell
 
 Um APIs verwenden und mit [!DNL Adobe Campaign] interagieren zu können, müssen Sie auch mit Ihrem Datenmodell vertraut sein.
 

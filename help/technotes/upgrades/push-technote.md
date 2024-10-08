@@ -9,9 +9,9 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic
 badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
 source-git-commit: a9aa9cb508ca1f5cdcd59e61b5be029e3de1a82f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1721'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -52,15 +52,15 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 
 * Für Campaign Classic v7 wurde die Unterstützung von HTTP v1 in Version 20.3.1 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, besteht eine Voraussetzung für die Migration zu HTTP v1 darin, Ihre Umgebung auf den [neuesten Campaign Classic-Build](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"} zu aktualisieren. Bei Campaign v8 wird HTTP v1 von allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
 
-* Als On-Premise-Benutzer von Campaign Classic v7 müssen Sie sowohl die Marketing- als auch die Echtzeit-Ausführungsserver aktualisieren.
+* On-Premise-Benutzende von Campaign Classic v7 wie Sie müssen sowohl die Marketing- als auch die Echtzeit-Ausführungs-Server aktualisieren.
 
-* Bei hybriden, gehosteten und verwalteten Cloud Service-Bereitstellungen wenden Sie sich neben dem unten beschriebenen Übergangsverfahren an Adobe, um Ihren Echtzeit-Ausführungsserver (RT) zu aktualisieren.
+* Bei hybriden, gehosteten und Managed Cloud Services-Bereitstellungen wenden Sie sich zusätzlich zum unten beschriebenen Migrationsverfahren an Adobe, um Ihren Echtzeit(RT)-Ausführungs-Server zu aktualisieren.
 
 * Über das externe Android-Routing-Konto:
 
-   * Überprüfen Sie als On-Premise- oder Hybrid-Benutzer von Campaign Classic v7, ob Ihr externes Android-Routing-Konto mit `androidPushConnectorV2.js` konfiguriert ist. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+   * Überprüfen Sie, wenn Sie zur Gruppe der On-Premise- oder Hybrid-Benutzenden von Campaign Classic v7 gehören, ob Ihr externes Android-Routing-Konto mit `androidPushConnectorV2.js` konfiguriert ist. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
 
-   * Bei hybriden, gehosteten und verwalteten Cloud Service-Bereitstellungen müssen Sie sich auch mit dem Adobe-Kundenunterstützungsteam verbinden, um zu überprüfen, ob der `androidPushConnectorV2.js (nms)` -Connector im externen Android-Routing-Konto Ihres Mid-Sourcing-Servers ausgewählt ist.
+   * Bei hybriden, gehosteten und Managed Cloud Services-Bereitstellungen müssen Sie sich auch mit dem Team der Adobe-Kundenunterstützung in Verbindung setzen, um zu überprüfen, ob der Connector `androidPushConnectorV2.js (nms)` vom externen Android-Routing-Konto Ihres Mid-Sourcing-Servers ausgewählt wird.
 
 #### Migrationsverfahren {#fcm-transition-steps}
 
@@ -93,15 +93,15 @@ Befolgen Sie die folgenden Schritte, um Ihre Umgebung zu HTTP v1 zu migrieren:
 
 >[!NOTE]
 >
->Sobald diese Änderungen auf Ihren gesamten Server angewendet werden, verwenden alle **neuen** Push-Benachrichtigungsversand an Android-Geräte die HTTP v1-API. Vorhandene Push-Sendungen, die wiederholt, in Bearbeitung und in Verwendung sind, verwenden weiterhin die HTTP-API (frühere Version). Erfahren Sie im folgenden Abschnitt, wie Sie sie aktualisieren können.
+>Sobald diese Änderungen auf allen Ihren Servern vorgenommen wurden, wird bei jedem Versand von **neuen** Push-Benachrichtigungen an Android-Geräte das HTTP v1-API verwendet. Für bestehende Push-Sendungen, die gerade erneut versucht werden, gestartet sind oder verwendet werden, wird weiterhin das (veraltete) HTTP-API verwendet. Im folgenden Abschnitt erfahren Sie, wie Sie sie aktualisieren können.
 
-#### Vorhandene Vorlagen aktualisieren {#fcm-transition-update}
+#### Aktualisieren vorhandener Vorlagen {#fcm-transition-update}
 
 Nach der Migration zu HTTP v1 müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen aktualisieren, um die Anzahl der Batch-Nachrichten zu erhöhen. Öffnen Sie zu diesem Zweck die Eigenschaften Ihrer Android-Versandvorlage und legen Sie auf der Registerkarte **Versand** für die Einstellung [ Kontingentgröße](../../v8/send/configure-and-send.md#delivery-batch-quantity) den Wert **256** fest. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle vorhandenen Android-Sendungen.
 
-Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor dem Upgrade auf eine Version erstellt wurden, die HTTP v1 unterstützt. Um dies durchzuführen:
+Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor dem Upgrade auf eine Version erstellt wurden, die HTTP v1 unterstützt. Durchführung:
 
-* Wenden Sie sich als verwaltete Cloud Service oder gehosteter Kunde an Adobe, um Ihre bestehenden Android-Versandvorlagen zu aktualisieren.
+* Wenden Sie Managed Cloud Services oder eine gehostete Bereitstellung nutzen, wenden Sie sich an Adobe, um Ihre vorhandenen Android-Versandvorlagen zu aktualisieren.
 
 * Laden Sie für On-Premise-Umgebungen das Skript `fcm-httpv1-migration.js` herunter und führen Sie es wie unten beschrieben aus.
 
@@ -109,21 +109,21 @@ Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor
 
   >[!CAUTION]
   >
-  >Das Skript muss in Ihrer lokalen Marketing-Instanz ausgeführt werden.
+  >Das Skript muss in Ihrer On-Premise-Marketing-Instanz ausgeführt werden.
 
 
-  +++ Schritte zum Aktualisieren vorhandener Sendungen und Vorlagen (nur On-Premise)
+  +++Schritte zum Aktualisieren vorhandener Sendungen und Vorlagen (nur On-Premise)
 
-  Gehen Sie wie folgt vor, um alle Sendungen und Versandvorlagen zu patchen, die vor dem Upgrade auf eine Version erstellt wurden, die HTTP v1 unterstützt:
+  Gehen Sie wie folgt vor, um alle Sendungen und Versandvorlagen zu patchen, die vor dem Upgrade auf eine Version erstellt wurden, die HTTP v1 unterstützt:
 
-   1. Exportieren Sie Ihre bestehenden Sendungen und Versandvorlagen in ein Package, um sie im Falle eines unerwarteten Problems beim Patchen wiederherzustellen.
+   1. Exportieren Sie Ihre vorhandenen Sendungen und Versandvorlagen in ein Paket, um sie im Falle eines unerwarteten Problems beim Patchen wiederherzustellen.
    1. Führen Sie den folgenden Befehl in Posgresql aus:
 
       ```sql
       pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
       ```
 
-   1. Standardmäßig befindet sich das Skript im Modus `dryrun` . Sie können es in diesem Modus starten, um zu überprüfen, ob ein Versand gepatcht werden muss.
+   1. Standardmäßig befindet sich das Skript im Modus `dryrun`. Sie können es in diesem Modus starten, um zu überprüfen, ob ein Versand gepatcht werden muss.
 
       Befehl
 
@@ -148,7 +148,7 @@ Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor
 
       >[!NOTE]
       >
-      >Die `not patchable` Sendungen müssen manuell aktualisiert werden. Ihre Kennung finden Sie im Protokoll.
+      >Sendungen der Kategorie `not patchable` müssen manuell aktualisiert werden. Ihre ID finden Sie im Protokoll.
 
    1. Führen Sie das Skript im Ausführungsmodus wie folgt aus, um Sendungen zu aktualisieren:
 

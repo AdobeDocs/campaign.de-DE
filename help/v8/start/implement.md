@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1148'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folg
 
    Adobe Campaign enthält ein vordefiniertes Datenmodell. Um Ihre Umgebung zu implementieren und anzupassen, müssen Sie mit den integrierten Tabellen des Adobe Campaign-Datenmodells vertraut sein und wissen, wie sie sich zueinander verhalten.
 
-   [Erfahren Sie mehr über das Campaign-Datenmodell](../dev/datamodel.md).
+   [Erfahren Sie mehr zum Campaign-Datenmodell](../dev/datamodel.md).
 
 ## Anpassen der Instanz{#implementation-custom-your-instance}
 
@@ -110,7 +110,7 @@ Sie können viele verschiedene Bereiche und Funktionen in Campaign anpassen. Die
 
    Adobe Campaign verfügt über gemeinsame Schemata zur Identifizierung von Daten wie: Empfänger, Versandprotokolle, Abonnements und mehr.
 
-   In diesem Abschnitt erfahren Sie mehr über das integrierte Datenmodell von [Campaign](../dev/datamodel.md).
+   In diesem Abschnitt erfahren Sie mehr über das [integrierte Datenmodell von Campaign](../dev/datamodel.md).
 
    Sie können bestehende Schemata erweitern oder Schemata von Grund auf neu erstellen. Weiterführende Informationen finden Sie auf [dieser Seite](../dev/customize.md).
 

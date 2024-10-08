@@ -6,9 +6,9 @@ role: Developer
 level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
 source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -90,4 +90,4 @@ Diese Prüfung wird in den folgenden Workflow-Aktivitäten durchgeführt:
 
 >[!NOTE]
 >
->Wenn Sie von einer anderen Campaign-Version wechseln, ist es unbedingt erforderlich, Duplikate zu entfernen, Daten zu beheben und zu bereinigen, um eine Beeinträchtigung Ihrer Transition zu vermeiden.
+>Wenn Sie von einer anderen Campaign-Version wechseln, ist es unbedingt erforderlich, Duplikate zu entfernen, Probleme zu beheben und Daten zu bereinigen, um Beeinträchtigungen bei diesem Wechsel zu vermeiden.

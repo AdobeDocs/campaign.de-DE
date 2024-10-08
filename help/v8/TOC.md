@@ -6,7 +6,7 @@ title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '677'
 ht-degree: 100%
 
@@ -206,7 +206,7 @@ ht-degree: 100%
       + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
       + [Integrieren von Campaign-SDKs mit Ihrer Mobile App – VERALTETE SEITE](config/push-config.md)
       + [Externe Konten](config/external-accounts.md)
-+ Ressourcen für Entwickler {#developer}
++ Ressourcen für Entwickelnde {#developer}
    + [Campaign-Datenmodell](dev/datamodel.md)
    + Schemata und Formulare {#shemas-forms}
       + [Arbeiten mit Schemata](dev/schemas.md)
