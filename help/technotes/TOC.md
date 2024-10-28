@@ -5,10 +5,10 @@ type: Event
 title: Technotes zu Adobe Campaign
 description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
-source-git-commit: a9a376e1726bf92ddce937d5598314cbfd744f1f
+source-git-commit: ccd60b7ff54bb538ae21693eff41a3943f1c6c88
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 100%
+source-wordcount: '77'
+ht-degree: 88%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 100%
    + [Internet-Browser](upgrades/browsers.md)
    + [System-Upgrades für 2023](upgrades/tech-stack-upgrade.md)
    + [Einstellung der Client-Konsole für 32 Bit](upgrades/console.md)
+   + [Benutzerzugriffsverwaltung von Campaign Standard zu Campaign V8](upgrades/user-management-acs.md)
    + Sicherheit {#security}
       + [Rotation von Kundenanmeldedaten](security/credential-rotation-guide.md)
 + [&lt; Zurück zur Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)
