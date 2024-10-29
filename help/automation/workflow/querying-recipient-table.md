@@ -6,9 +6,9 @@ feature: Query Editor
 role: User, Data Engineer
 exl-id: 7f859ce9-7ab8-46e1-8bd6-43aaffe30da2
 source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
-workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -84,6 +84,6 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_13.png)
 
-   Die Registerkarte **[!UICONTROL Erzeugte SQL-Abfragen]** zeigt das Abfrageergebnis im SQL-Format an.
+   Auf der Registerkarte **[!UICONTROL Erzeugte SQL-Abfragen]** wird das Abfrageergebnis im SQL-Format angezeigt.
 
    ![](assets/query_editor_nveau_14.png)
