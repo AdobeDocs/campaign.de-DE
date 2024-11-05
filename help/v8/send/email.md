@@ -5,16 +5,18 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '535'
+ht-degree: 97%
 
 ---
 
 # Entwerfen und Senden von E-Mails
 
 Durch einen E-Mail-Versand können Sie personalisierte E-Mails an eine Zielgruppenpopulation senden. [Weitere Informationen](../send/send.md)
+
+Erfahren Sie mehr über die wichtigsten Schritte zum Erstellen und Konfigurieren eines Versands auf [dieser Seite](../start/create-message.md).
 
 ## Den ersten E-Mail-Versand erstellen
 

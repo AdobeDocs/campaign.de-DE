@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 44%
@@ -169,7 +169,7 @@ Ein Testversand dient der Validierung einer Nachricht, bevor sie an die Haupt-Zi
 
 Weiterführende Informationen zu Testversand-Empfängern und -sendungen finden Sie in [diesem Abschnitt](../send/preview-and-proof.md#send-proofs).
 
-![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#seeds-and-proofs-video)
+![](../send/assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#seeds-and-proofs-video)
 
 
 #### Anleitungsvideo {#seeds-and-proofs-video}
