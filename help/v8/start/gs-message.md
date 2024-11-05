@@ -4,9 +4,9 @@ description: Erste Schritte mit Nachrichten
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 0ff645a87700c038b78fb4cc45062822d6d97148
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1308'
 ht-degree: 88%
 
 ---
@@ -17,7 +17,7 @@ Mit Adobe Campaign können Sie Cross-Channel-Kampagnen wie E-Mails, SMS, Push-Be
 
 Zu den Kernfunktionen gehören die Zielgruppenbestimmung, Definition und Personalisierung von Nachrichten, die Ausführung von Mitteilungen und die damit verbundenen operativen Berichte.
 
-## Erstellen eines Versands {#gs-ac-delivery}
+## Anwendungsfälle {#gs-ac-delivery}
 
 Um Nachrichten zu senden, müssen Sie einen Versand erstellen. Der Erstellungsmodus des Versands hängt von Ihrem Anwendungsfall ab.
 
@@ -147,7 +147,7 @@ Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das 
 
 Fortlaufende Sendungen werden in Workflows über die Aktivität [Versand (fortlaufend)](../../automation/workflow/continuous-delivery.md) erstellt.
 
-## Hinzufügen von Personalisierung{#personalization}
+## Hinzufügen von Personalisierung {#personalization}
 
 Nachrichten, die von Adobe Campaign versendet werden, können auf verschiedene Weise personalisiert werden. [Weitere Informationen zu Personalisierungsfunktionen](../send/personalize.md)
 
@@ -158,7 +158,7 @@ Sie haben folgende Möglichkeiten:
 * Bedingte Inhalte erstellen. [Weitere Informationen](../send/conditions.md)
 
 
-## Versand- und Trackinglogs{#gs-tracking-logs}
+## Senden und verfolgen {#gs-tracking-logs}
 
 Die Überwachung Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen. Sie können nach dem Versand überwachen sowie nachvollziehen, wie Zustellungsfehler und Quarantänen gehandhabt werden.
 
