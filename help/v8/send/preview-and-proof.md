@@ -5,7 +5,7 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Sobald der Nachrichteninhalt definiert worden ist, können Sie ihn mithilfe von Testprofilen in der Vorschau sehen und testen. Wenn Sie [personalisierte Inhalte](personalize.md) eingefügt haben, können Sie mithilfe von Testprofildaten überprüfen, wie diese Inhalte in der Nachricht angezeigt werden. Zusätzlich können Sie Testsendungen an Testprofile durchführen, um mögliche Fehler im Nachrichteninhalt oder in den Personalisierungseinstellungen zu erkennen. Bei jeder Änderung sollte ein Testversand durchgeführt werden, um den aktuellen Inhalt zu validieren.
 
-## Inhaltsvorschau{#preview-content}
+## Inhaltsvorschau {#preview-content}
 
 Bevor Sie Testsendungen durchführen, sollten Sie den Nachrichteninhalt im Vorschaubereich des Versandfensters überprüfen.
 
@@ -68,7 +68,7 @@ Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie k�
 
 * Verwenden Sie die Option **[!UICONTROL Spezifische Zielgruppen und Testadressen]** zur Kombination von Testadressen und spezifischen E-Mail-Adressen. Die entsprechenden Konfigurationen werden dann in zwei separaten Unterregisterkarten definiert.
 
-### Durchführen eines Testversands{#proofs-send}
+### Durchführen eines Testversands {#proofs-send}
 
 Gehen Sie wie folgt vor, um einen Testversand durchzuführen:
 
@@ -88,7 +88,7 @@ Es wird empfohlen, nach jeder Änderung am Nachrichteninhalt Testsendungen durch
 >
 >Bei Testsendungen ist der Link zur Mirrorseite nicht aktiv. Er wird nur in den endgültigen Nachrichten aktiviert.
 
-### Eigenschaften des Testversands{#proofs-properties}
+### Eigenschaften des Testversands {#proofs-properties}
 
 Die Eigenschaften des Testversands werden im Abschnitt **[!UICONTROL Erweitert]** im Fenster der Versandeigenschaften festgelegt. Klicken Sie auf den Link **[!UICONTROL Testversandeigenschaften...]**, um die Parameter und den Titel der Testsendungen zu definieren. Sie können wählen, Folgendes beizubehalten:
 

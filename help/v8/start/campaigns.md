@@ -5,14 +5,14 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 100%
+source-wordcount: '774'
+ht-degree: 94%
 
 ---
 
-# Erste Schritte mit Kampagnen{#gs-ac-campaigns}
+# Erste Schritte mit Kampagnen {#gs-ac-campaigns}
 
 Adobe Campaign umfasst mehrere Lösungen, mit denen Sie Kampagnen personalisieren und auf allen Online- und Offline-Kanälen versenden können. Sie können Marketing-Kampagnen erstellen, konfigurieren, ausführen und analysieren. Alle Marketing-Kampagnen können von einem einheitlichen Kontrollzentrum aus verwaltet werden. In diesem Abschnitt erfahren Sie, wie Sie Marketing-Kampagnen durchsuchen und erstellen können.
 
@@ -78,11 +78,9 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    ![](assets/campaign-dashboard.png)
 
-   Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de){target="_blank"} erfahren Sie, wie Sie Sendungen für Marketing-Kampagnen erstellen und starten.
+   Erfahren Sie, wie Sie in [dieser Seite](../../automation/campaigns/marketing-campaign-deliveries.md) Marketingkampagnen-Sendungen erstellen und starten.
 
-   Sie können einer Kampagne verschiedene Dokumente zuordnen: Berichte, Fotos, Websites, Diagramme usw.
-
-   Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=de){target="_blank"} erfahren Sie mehr über zugehörige Dokumente.
+   Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Web-Seite, Diagramm usw. Weitere Informationen zu zugehörigen Dokumenten finden Sie auf [dieser Seite](../../automation/campaigns/marketing-campaign-assets.md).
 
 1. **Einrichten des Validierungsprozesses**
 
@@ -93,7 +91,7 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
 ## Add-on für dezentrales Marketing{#distributed-marketing-add-on}
 
-Adobe Campaign bietet ein **dezentrales Marketing**-Add-on zur Implementierung von Kooperationskampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Entitäten (Ladengeschäfte, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **[!UICONTROL Kampagnenkit-Liste]** genannt, wobei von zentralen Entitäten entworfene Kampagnenvorlagen den lokalen Entitäten angeboten werden.
+Adobe Campaign bietet ein **Add-on für verteiltes Marketing** zur Implementierung von Kooperationskampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und Lokalstellen (Stores, Regionalagenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **[!UICONTROL Kampagnenkit-Liste]** genannt, wobei von zentralen Entitäten entworfene Kampagnenvorlagen den lokalen Entitäten angeboten werden.
 
 >[!NOTE]
 >
