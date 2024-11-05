@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
+source-git-commit: 1bf3c4b2d0c8d9b1bdbc82a9047c52c0d80cd997
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 44%
@@ -28,7 +28,7 @@ Anschließend können Sie Ihre Nachrichten vorbereiten, testen, versenden und ü
 
 >[!NOTE]
 >
->Bei den in diesem Abschnitt beschriebenen Schritten wird davon ausgegangen, dass alle Zielgruppenempfänger und ihre Profile in der Datenbank gespeichert sind, mit Ausnahme des externen Versands (siehe [Externe Empfänger auswählen](steps-defining-the-target-population.md#selecting-external-recipients)).
+>Bei den in diesem Abschnitt beschriebenen Schritten wird davon ausgegangen, dass alle Zielgruppenempfänger und ihre Profile in der Datenbank gespeichert sind, ausgenommen externe Sendungen. Siehe [Auswählen externer Empfänger](#selecting-external-recipients).
 
 ## Erstellen des Versands {#create-the-delivery}
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor, um einen Versand zu erstellen:
 
    Für jeden installierten Kanal wird eine integrierte Vorlage bereitgestellt: Briefpost, E-Mail, Telefon, Mobiltelefon (SMS), X (Twitter) usw. Die in der Liste verfügbaren Kanäle hängen von Ihrem Lizenzvertrag ab.
 
-   Sie können neue Versandvorlagen erstellen, um bestimmte Parameter vorab an Ihre Anforderungen anzupassen. Weiterführende Informationen zu Vorlagen finden Sie in [diesem Abschnitt](about-templates.md).
+   Sie können neue Versandvorlagen erstellen, um bestimmte Parameter vorab an Ihre Anforderungen anzupassen. Weiterführende Informationen zu Vorlagen finden Sie in [diesem Abschnitt](../send/create-templates.md).
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den Versand ein.
 
@@ -74,7 +74,7 @@ Zusätzlich können Sie im Rahmen einer Marketingkampagne Folgendes hinzufügen:
 
 ### Auswahl der Hauptempfänger des Versands {#select-the-main-target}
 
-Meistens wird die Hauptzielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können jedoch auch in einer [externen Datei](steps-defining-the-target-population.md#selecting-external-recipients) gespeichert werden.
+Meistens wird die Hauptzielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können jedoch auch in einer [externen Datei](#selecting-external-recipients) gespeichert werden.
 
 Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
@@ -157,7 +157,7 @@ Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Doppelte Adressen beim Versand ausschließen]**: Diese Option ist standardmäßig aktiviert und entfernt doppelte E-Mail-Adressen während des Versands. Die angewendete Strategie kann je nach Verwendung von Adobe Campaign und Datentyp in der Datenbank variieren. Der Wert der Option kann für jede Versandvorlage konfiguriert werden.
 * **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d. h. Empfänger, deren E-Mail-Adressen sich auf einer Blockierungsliste (&quot;Opt-out&quot;) befinden. Diese Option muss ausgewählt bleiben, um die Berufsethik des E-Marketing zu beachten.
-* **[!UICONTROL Empfänger in Quarantäne ausschließen]**: Mit dieser Option können Sie alle Profile mit einer Adresse, die in Quarantäne ist, aus der Zielgruppe ausschließen. Es wird dringend empfohlen, diese Option aktiviert zu lassen. Weitere Informationen zur Quarantäneverwaltung finden Sie in [diesem Abschnitt](understanding-quarantine-management.md).
+* **[!UICONTROL Empfänger in Quarantäne ausschließen]**: Mit dieser Option können Sie alle Profile mit einer Adresse, die in Quarantäne ist, aus der Zielgruppe ausschließen. Es wird dringend empfohlen, diese Option aktiviert zu lassen. Weitere Informationen zur Quarantäneverwaltung finden Sie in [diesem Abschnitt](../send/quarantines.md).
 * **[!UICONTROL Begrenzen Sie den Versand]** auf eine bestimmte Anzahl von Nachrichten. Geben Sie die maximale Anzahl an zu sendenden Nachrichten an. Wenn die Zielgruppe die angegebene Anzahl von Nachrichten überschreitet, wird eine zufällige Auswahl auf die Zielgruppe angewendet. Behalten Sie den Wert &quot;0&quot; bei, um alle Nachrichten zu senden.
 * **[!UICONTROL Duplizierte Datensätze beibehalten (identische Kennung)]**: Mit dieser Option können mehrere Sendungen an Empfänger gesendet werden, die verschiedene Targeting-Kriterien erfüllen.
 
