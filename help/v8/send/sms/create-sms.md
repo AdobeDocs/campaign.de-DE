@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie einen SMS-Versand erstellen
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '177'
 ht-degree: 72%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 72%
 
 Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 
-1. Erstellen Sie einen neuen Versand und wählen Sie die SMS-Versandvorlage aus, die Sie für Ihren SMS-Versand erstellt haben. [Weitere Informationen finden Sie hier](sms-mid-sourcing.md#sms-delivery-template).
+1. Erstellen Sie einen neuen Versand und wählen Sie die [SMS-Versandvorlage](sms-mid-sourcing.md#sms-delivery-template) aus, die Sie für Ihren SMS-Versand erstellt haben.
 
    ![](assets/sms_create.png){zoomable="yes"}
 
-   Weitere Informationen zu den Schritten zur Versanderstellung finden Sie auf [dieser Seite](../../start/create-message.md).
+   Die Schritte zum Erstellen von Sendungen werden auf [dieser Seite](../../start/create-message.md) beschrieben.
 
 <!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
 * For mid-sourcing infrastructure, -->
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 
 1. Sie können über die Schaltfläche **[!UICONTROL Eigenschaften]** prüfen, ob alles nach Bedarf eingerichtet ist. [Weitere Informationen zur Registerkarte „SMS“](sms-delivery-settings.md#sms-tab)
 
-![](assets/sms_settings.png){zoomable="yes"}
+   ![](assets/sms_settings.png){zoomable="yes"}
 
 1. [Definieren Sie den Inhalt](sms-content.md) Ihres Versands.
 
