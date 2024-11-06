@@ -5,27 +5,27 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 79%
 
 ---
 
 # Erste Schritte mit SMS {#gs-sms-channel}
 
-Verwenden Sie Adobe Campaign, um personalisierte SMS-Nachrichten zu senden.
+Mit Adobe Campaign können Sie personalisierte [SMS](../send/sms/sms.md) auf Mobiltelefonen bereitstellen.
+
+Die Inhalt-Kachel von SMS bietet ebenfalls die Möglichkeit der Erstellung, Anpassung und Personalisierung von Nachrichteninhalten, jedoch ausschließlich im Textformat. Es ist außerdem möglich, vor dem Versand eine Vorschau der SMS zu erzeugen.
 
 >[!NOTE]
 >
->Die Option **Mobile App Channel (NMAC)** ermöglicht darüber hinaus den Versand von Push-Benachrichtigungen auf Mobilgeräte. Weiterführende Informationen finden Sie in [diesem Abschnitt](../push.md).
+>Sie können Adobe Campaign auch verwenden, um [LINE](../send/line.md) -Nachrichten mit Text und/oder Bildern und Links zu senden.
 
-Die Einfachheit und Anwenderfreundlichkeit von SMS machen sie neben ihrer Robustheit und der konkurrenzlosen Kompatibilität mit Milliarden von Endgeräten zu einem sehr wertvollen Kommunikationskanal.
+Um SMS mit Adobe Campaign an ein Mobiltelefon senden zu können, benötigen Sie:
 
-Es gibt zwei Hauptmöglichkeiten, eine SMS zu senden:
-
-* Manuelles Senden von einem Telefon. Dies ist die übliche Art, die für die Kommunikation zwischen Personen verwendet wird.
-* Absenden aus dem Internet. Dies ist die Art, die Adobe Campaign zum Senden von Nachrichten verwendet. Dazu benötigen Sie einen SMS-Dienstleister, der als Brücke vom Internet zum Mobilfunknetz fungiert.
+* Ein externes Konto, das für den Kanal **[!UICONTROL Mobiltelefon (SMS)]** oder **[!UICONTROL LINE]** konfiguriert wurde.
+* Eine SMS-Versandvorlage, die korrekt mit diesem externen Konto verknüpft ist.
 
 Diese Dokumentation enthält die Schritte zum Konfigurieren, Senden und Überwachen eines SMS-Versands:
 
