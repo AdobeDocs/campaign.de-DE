@@ -5,7 +5,7 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
+source-git-commit: bb77b915f50b31d8d91e25da6fa86aa15b03bba4
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 79%
@@ -14,13 +14,13 @@ ht-degree: 79%
 
 # Erste Schritte mit SMS {#gs-sms-channel}
 
-Mit Adobe Campaign können Sie personalisierte [SMS](../send/sms/sms.md) auf Mobiltelefonen bereitstellen.
+Adobe Campaign ermöglicht den Versand personalisierter SMS auf Mobiltelefone.
 
 Die Inhalt-Kachel von SMS bietet ebenfalls die Möglichkeit der Erstellung, Anpassung und Personalisierung von Nachrichteninhalten, jedoch ausschließlich im Textformat. Es ist außerdem möglich, vor dem Versand eine Vorschau der SMS zu erzeugen.
 
 >[!NOTE]
 >
->Sie können Adobe Campaign auch verwenden, um [LINE](../send/line.md) -Nachrichten mit Text und/oder Bildern und Links zu senden.
+>Sie können Adobe Campaign auch verwenden, um [LINE](../../send/line.md) -Nachrichten mit Text und/oder Bildern und Links zu senden.
 
 Um SMS mit Adobe Campaign an ein Mobiltelefon senden zu können, benötigen Sie:
 
