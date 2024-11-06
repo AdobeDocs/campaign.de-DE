@@ -4,9 +4,9 @@ description: Erste Schritte mit Nachrichten
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 0ff645a87700c038b78fb4cc45062822d6d97148
+source-git-commit: a7225fb958ad168d89e09445f4fad27e7b6817aa
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1294'
 ht-degree: 88%
 
 ---
@@ -25,31 +25,21 @@ Um Nachrichten zu senden, müssen Sie einen Versand erstellen. Der Erstellungsmo
 >
 >Bei der Erstellung eines Versands müssen Sie eine Vorlage auswählen. Für jeden Kanal stehen Standardvorlagen zur Verfügung. Weiterführende Informationen zu Versandvorlagen finden Sie auf [dieser Seite](../send/create-templates.md).
 
-### einmalige Nachrichten {#msg-single}
+1. einmalige Nachrichten - Sie können einmalige Nachrichten an eine Audience senden. In [diesem Abschnitt](create-message.md) erfahren Sie, wie Sie Ihre erste Nachricht senden.
 
-Sie können einmalige Nachrichten manuell an die Hauptzielgruppe senden. In [diesem Abschnitt](create-message.md) erfahren Sie, wie Sie Ihre erste Nachricht senden.
+   ![](assets/send-email.png)
 
-![](assets/send-email.png)
+1. Nachrichten in einer Marketing-Kampagne - Sie können Nachrichten im Rahmen einer [Marketing-Kampagne](campaigns.md) senden, einen Validierungsprozess definieren, sie senden und in einem konsolidierten Dashboard verfolgen. Erfahren Sie mehr in [diesem Abschnitt](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-### Nachrichten in einer Marketing-Kampagne {#msg-campaign}
+   ![](assets/deliveries-in-a-campaign.png)
 
-Sie können Nachrichten im Rahmen einer [Marketing-Kampagne](campaigns.md) versenden, einen Validierungsprozess definieren, sie senden und tracken. Erfahren Sie mehr in [diesem Abschnitt](../../automation/campaigns/marketing-campaign-deliveries.md)
+1. Nachrichten in einem Workflow - Sie können Nachrichten über einen [Workflow](../config/workflows.md) senden und Ihre Sendungen automatisieren. Erfahren Sie, wie Sie auf [dieser Seite](../../automation/workflow/delivery.md) erfahren.
 
-![](assets/deliveries-in-a-campaign.png)
+   ![](assets/send-in-a-wf.png)
 
-### Nachrichten in einem Workflow {#msg-wf}
+1. Ausgelöste Nachrichten - Sie können [Trigger messages](../send/transactional.md) aus einem Ereignis auswählen. Transaktionsnachrichten (Message Center) sind das Campaign-Modul zur Verwaltung von Trigger-Nachrichten. Die Schritte zum Konfigurieren und Senden von Transaktionsnachrichten werden auf [dieser Seite](../send/transactional.md) ausführlich beschrieben.
 
-Sie können Nachrichten über einen [Workflow](../config/workflows.md) versenden und Ihre Sendungen automatisieren. Erfahren Sie, wie Sie auf [dieser Seite](../../automation/workflow/delivery.md)
-
-![](assets/send-in-a-wf.png)
-
-### Ausgelöste Nachrichten {#msg-trigger}
-
-Sie können [Trigger messages](../send/transactional.md) aus einem Ereignis auswählen. Transaktionsnachrichten (Message Center) sind das Campaign-Modul zur Verwaltung von Trigger-Nachrichten.  Weitere Informationen zur Funktion für Transaktionsnachrichten finden Sie in [diesem Abschnitt](../architecture/architecture.md#transac-msg-archi).
-
-Die Schritte zum Konfigurieren und Senden von Transaktionsnachrichten werden auf [dieser Seite](../send/transactional.md) ausführlich beschrieben.
-
-## Auswählen des Kanals {#gs-channel}
+## Kommunikationskanal {#gs-channel}
 
 Adobe Campaign v8 enthält die folgenden Versandkanäle:
 
@@ -60,7 +50,6 @@ Adobe Campaign v8 enthält die folgenden Versandkanäle:
 * **Mobile-App-Kanal**: Beim Mobile-App-Versand können Sie Benachrichtigungen an iOS- und Android-Geräte senden. [Weitere Informationen](#gs-channel-push)
 
 * **Briefpost-Kanal**: Beim Briefpost-Versand können Sie eine Ausgabedatei erzeugen, die Daten zur Zielpopulation enthält. [Weitere Informationen](#gs-channel-direct)
-
 
   Sonstige Kanäle werden in [diesem Abschnitt](#other-channels) beschrieben.
 
@@ -119,7 +108,7 @@ Sendungen vom Typ „Sonstige“ verwenden eine spezifische technische Vorlage, 
 
 Dieser Kanal besitzt keinen bestimmten Mechanismus. Er ist ein allgemeiner Kanal, der wie jeder andere Kommunikationskanal in Adobe Campaign über eine eigene externe Konto-Routing-Möglichkeit, Kampagnen-Workflow-Aktivität und einen eigenen Versandvorlagentyp verfügt.  Dieser Kanal ist nur für informative Zwecke konzipiert, wie etwa um Zielgruppeninformationen zu Kampagnen zu speichern, die mit anderen Tools als Adobe Campaign durchgeführt wurden.
 
-## Auswählen des Versandtyps {#types-of-deliveries}
+## Versandtypen {#types-of-deliveries}
 
 In Campaign gibt es drei Typen von Versandobjekten:
 
@@ -147,7 +136,7 @@ Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das 
 
 Fortlaufende Sendungen werden in Workflows über die Aktivität [Versand (fortlaufend)](../../automation/workflow/continuous-delivery.md) erstellt.
 
-## Hinzufügen von Personalisierung {#personalization}
+## Personalization-Funktionen {#personalization}
 
 Nachrichten, die von Adobe Campaign versendet werden, können auf verschiedene Weise personalisiert werden. [Weitere Informationen zu Personalisierungsfunktionen](../send/personalize.md)
 
@@ -158,7 +147,7 @@ Sie haben folgende Möglichkeiten:
 * Bedingte Inhalte erstellen. [Weitere Informationen](../send/conditions.md)
 
 
-## Senden und verfolgen {#gs-tracking-logs}
+## Tracking und Monitoring {#gs-tracking-logs}
 
 Die Überwachung Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen. Sie können nach dem Versand überwachen sowie nachvollziehen, wie Zustellungsfehler und Quarantänen gehandhabt werden.
 
