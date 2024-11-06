@@ -6,10 +6,10 @@ role: User
 level: Beginner, Intermediate
 badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
-source-git-commit: 8dffc24ff859ded70ea9c5b9ede39512c1543e74
-workflow-type: ht
-source-wordcount: '928'
-ht-degree: 100%
+source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 98%
 
 ---
 
@@ -23,13 +23,12 @@ ht-degree: 100%
 
 Die folgenden technischen Einstellungen werden für einen SMS-Versand benötigt:
 
-* Das Routing: [das externe SMPP-Konto](smpp-external-account.md#smpp-connection-settings)
-
-* [ ](#sms-tab)
+* Das externe SMPP-Konto für das Nachrichten-Routing. [Weitere Informationen](smpp-external-account.md#smpp-connection-settings)
+* Konfigurieren Sie den Tab SMS . [Weitere Informationen dazu](#sms-tab)
 
 Sie können all diese Einrichtungen in einer Versandvorlage vornehmen, sodass Sie die Einstellungen nicht für jede SMS-Versanderstellung festlegen müssen.
 
-## Konfigurieren der Registerkarte **[!UICONTROL SMS]** {#sms-tab}
+## Tab SMS konfigurieren {#sms-tab}
 
 ![](assets/send_settings.png){zoomable="yes"}
 
@@ -97,25 +96,3 @@ Die Tabelle enthält optionale Parameter, die mit jeder Nachricht gesendet werde
   >
   >Binärformate werden immer in Big-Endian-Form codiert.
 
-## Erstellen eines SMS-Versands {#sms-delivery}
-
-Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
-
-1. Erstellen Sie einen neuen Versand, beispielsweise über das Versand-Dashboard oder im Ordner „Versand“ im **[!UICONTROL Explorer]**.  Er wird standardmäßig mit „E-Mail-Versand“ bezeichnet.
-
-1. Wählen Sie die für Ihre SMS-Sendungen erstellte Versandvorlage aus. [Weitere Informationen finden Sie hier](sms-mid-sourcing.md#sms-delivery-template).
-
-   ![](assets/sms_create.png){zoomable="yes"}
-
-<!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
-* For mid-sourcing infrastructure, -->
-
-1. Benennen Sie Ihren Versand im Feld **[!UICONTROL Titel]** um und fügen Sie Informationen im Feld **[!UICONTROL Versandcode]** und in der Liste **[!UICONTROL Art]** hinzu, falls dies für das Tracking erforderlich ist. Sie können auch eine **[!UICONTROL Beschreibung]** zu Ihrem Versand hinzufügen.
-
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]** . Jetzt haben Sie alle Einstellungen Ihrer Vorlage in Ihrem Versand.
-
-1. Sie können über die Schaltfläche **[!UICONTROL Eigenschaften]** prüfen, ob alles nach Bedarf eingerichtet ist. [Weitere Informationen zur Registerkarte „SMS“](#sms-tab)
-
-![](assets/sms_settings.png){zoomable="yes"}
-
-Jetzt können Sie Ihren [SMS-Inhalt](sms-content.md) konfigurieren.
