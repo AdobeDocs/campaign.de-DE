@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
 source-wordcount: '3650'
 ht-degree: 100%
@@ -71,7 +71,7 @@ Wenn diese Option aktiviert ist, werden zusätzliche Protokolle in die Log-Datei
 
 ![](assets/smpp_channel_settings.png){zoomable="yes"}
 
-### Transliteration der Zeichen zulassen
+### Transliteration der Zeichen zulassen {#smpp-transliteration}
 
 Bei der Transliteration werden äquivalente Zeichen zu fehlenden Zeichen gefunden. Beispielsweise fehlt das französische Zeichen „ê“ (e mit Zirkumflex-Akzent) in der GSM-Kodierung, es kann jedoch durch„e“ ersetzt werden, ohne die Lesbarkeit zu stark zu beeinträchtigen.
 
