@@ -4,7 +4,7 @@ description: Best Practices beim Entwerfen und Versand mit Adobe Campaign
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: b4fad76b43a77909a4ea2c0877527af80027681a
+source-git-commit: 10af828319569ad9aeeecc809bc213f9608791ac
 workflow-type: tm+mt
 source-wordcount: '2903'
 ht-degree: 75%
@@ -151,7 +151,7 @@ Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig
 
 **Tipp**: Da menschliche Fehler immer möglich sind, überprüfen Sie vor jedem Versand, ob der Abmelde-Link ordnungsgemäß funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass das Feld `No longer contact this recipient `in `Yes` geändert wird.
 
-[In diesem Abschnitt](personalization-blocks.md#personalization-blocks-example) erfahren Sie, wie man einen Ausschluss-Link einfügt.
+[In diesem Abschnitt](../send/personalization-blocks.md) erfahren Sie, wie man einen Ausschluss-Link einfügt.
 
 ### Größe der E-Mail
 
@@ -328,7 +328,7 @@ Sie können einen vollständigen Validierungsprozess einschließlich der Adobe-C
 
 #### Schübe verwenden
 
-Mit Schüben können Sie das gesendete Nachrichtenvolumen nach und nach steigern. Dadurch wird verhindert, dass Ihre Nachrichten als Spam gekennzeichnet werden, oder Sie können die Anzahl der pro Tag versendeten Nachrichten beschränken. Mit Schüben können Sie Sendungen in mehrere Teilsendungen unterteilen, anstatt große Mengen von Nachrichten gleichzeitig zu senden. Weiterführende Informationen finden Sie [in diesem Abschnitt](../send/configure-and-send.mdsending-using-multiple-waves).
+Mit Schüben können Sie das gesendete Nachrichtenvolumen nach und nach steigern. Dadurch wird verhindert, dass Ihre Nachrichten als Spam gekennzeichnet werden, oder Sie können die Anzahl der pro Tag versendeten Nachrichten beschränken. Mit Schüben können Sie Sendungen in mehrere Teilsendungen unterteilen, anstatt große Mengen von Nachrichten gleichzeitig zu senden. Weiterführende Informationen finden Sie [in diesem Abschnitt](../send/configure-and-send.md#sending-using-multiple-waves).
 
 #### Nachrichten priorisieren
 
