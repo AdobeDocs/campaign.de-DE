@@ -4,7 +4,7 @@ description: Best Practices beim Entwerfen und Versand mit Adobe Campaign
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: b4fad76b43a77909a4ea2c0877527af80027681a
 workflow-type: tm+mt
 source-wordcount: '2903'
 ht-degree: 75%
@@ -117,7 +117,7 @@ Weitere Informationen zu Gestaltungsbausteinen finden Sie in [diesem Abschnitt](
 
 Sie können die Personalisierungsdaten in einem Workflow vorbereiten, um die Analyse der Versandvorbereitung zu verbessern. Dies sollte insbesondere dann verwendet werden, wenn die Personalisierungsdaten über Federated Data Access (FDA) aus einer externen Tabelle stammen. Diese Option wird in diesem [Abschnitt beschrieben](../send/personalization-data.md#optimize-personalization).
 
-### Erstellen optimierter Inhalte {#optimize-content}
+### Erstellen optimierter Inhalte {#build-optimized-content}
 
 Beachten Sie beim Erstellen Ihrer E-Mails die folgenden allgemeinen Best Practices:
 
