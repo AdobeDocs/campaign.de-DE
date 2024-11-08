@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
+source-git-commit: 55b752713a29c035680dd39e42422b1743e15269
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 37%
+source-wordcount: '1612'
+ht-degree: 36%
 
 ---
 
@@ -176,15 +176,12 @@ Ein Testversand dient der Validierung einer Nachricht, bevor sie an die Haupt-Zi
 
 Weiterführende Informationen zu Testversand-Empfängern und -sendungen finden Sie in [diesem Abschnitt](../send/preview-and-proof.md#send-proofs).
 
-![](../send/assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#seeds-and-proofs-video)
-
 
 #### Anleitungsvideo {#seeds-and-proofs-video}
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
-
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 
@@ -200,7 +197,7 @@ Gehen Sie dazu wie folgt vor:
 
 >[!IMPORTANT]
 >
->Die beiden oben genannten Schritte MÜSSEN nach jeder Änderung am Nachrichteninhalt ausgeführt werden.
+>Die beiden Schritte über **müssen** nach jeder Änderung des Nachrichteninhalts ausgeführt werden.
 
 
 ## Konfigurieren und Durchführen des Versands {#configuring-and-sending-the-delivery}
