@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 61c86c3c9d6dbbabf2d5174b8b7b1721b38280cb
+source-git-commit: 58d88498c8472381a43d735b4dfb2a802a293952
 workflow-type: tm+mt
-source-wordcount: '2924'
-ht-degree: 73%
+source-wordcount: '2968'
+ht-degree: 68%
 
 ---
 
@@ -66,11 +66,11 @@ Um den Nachrichtenversand an ungültige Adressen zu vermeiden, unnütze Kommunik
 
 Versandvorlagen ermöglichen eine effiziente Nutzung, da sie für die häufigsten Aktivitäten vordefinierte Szenarien enthalten. Mit Vorlagen können Marketing-Experten neue Kampagnen mit minimaler Anpassung innerhalb kürzester Zeit bereitstellen. [Erfahren Sie mehr über Versandvorlagen](../send/create-templates.md).
 
-### Branding
+### Subdomains und Branding {#subdomains-and-branding}
 
 Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Angenommen die Domain einer Bank heißt bluebank.com, dann könnten ihre Subdomains @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com usw. lauten. Wenn Sie für jede Subdomain eine Versandvorlage haben, können Sie stets die richtigen vorkonfigurierten Parameter für jede Marke verwenden, um Fehler zu vermeiden und Zeit zu sparen. Weitere Informationen zum Branding von Subdomains finden Sie in der Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/de/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"} .[
 
-### Konfigurieren von Adressen
+### Konfigurieren von Adressen {#configure-addresses}
 
 Beachten Sie die folgenden Richtlinien:
 
@@ -79,7 +79,7 @@ Beachten Sie die folgenden Richtlinien:
 * Die Adresse muss die Identität des Absenders enthalten. Die Domain muss im Besitz des Absenders und auf ihn registriert sein.
 * Adobe empfiehlt, E-Mail-Konten zu erstellen, die der Absender- und Antwortadresse entsprechen. Wenden Sie sich diesbezüglich bitte an den Administrator Ihres E-Mail-Programms.
 
-+++ **Konfigurieren von Adressen in der Campaign-Benutzeroberfläche**
++++ **Schritte zum Konfigurieren von Adressen in der Campaign-Benutzeroberfläche**
 
 Gehen Sie wie folgt vor, um Adressen in der Campaign-Benutzeroberfläche zu konfigurieren:
 
@@ -91,15 +91,15 @@ Gehen Sie wie folgt vor, um Adressen in der Campaign-Benutzeroberfläche zu konf
 
 1. Im Feld **[!UICONTROL Text der Antwortadresse]** wird für Antworten standardmäßig die Adresse des Absenders verwendet. Adobe empfiehlt, eine echte Adresse zu verwenden, wie etwa den Kundendienst Ihrer Marke. So kann sich dieser gegebenenfalls um etwaige Antworten kümmern.
 
-### Einrichten einer Kontrollgruppe
+### Einrichten einer Kontrollgruppe {#set-up-control-group}
 
 Sobald der Versand durchgeführt wurde, können Sie das Verhalten der ausgeschlossenen Empfänger mit den Empfängern vergleichen, die den Versand erhalten haben. Anschließend können Sie die Effizienz Ihrer Kampagnen messen. Weiterführende Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
-### Verwenden von Typologien, um Filter und Kontrollregeln anzuwenden
+### Verwenden von Typologien, um Filter und Kontrollregeln anzuwenden {#create-typologies}
 
 Eine Typologie enthält Regeln, die in der Analysephase vor dem Versand einer Nachricht angewendet werden.
 
-Ändern Sie in den Eigenschaften der Vorlage im Tab **[!UICONTROL Typologie]** die Standardtypologie entsprechend Ihren Anforderungen.
+Auf der Registerkarte **[!UICONTROL Typologie]** der Eigenschaften der Vorlage können Sie bei Bedarf eine benutzerdefinierte Typologie auswählen.
 
 Um beispielsweise den ausgehenden Traffic besser zu steuern, können Sie festlegen, welche IP-Adressen verwendet werden können, indem Sie für jede Subdomain eine Affinität definieren und für jede Affinität eine Typologie erstellen. Affinitäten werden in der Konfigurationsdatei der Instanz bestimmt. Kontaktieren Sie dazu Ihren Adobe Campaign-Administrator.
 
@@ -111,17 +111,20 @@ Weiterführende Informationen zu Typologien finden Sie in [diesem Abschnitt](../
 
 Zur Personalisierung Ihrer Nachrichten können Sie die in der Datenbank gespeicherten oder über Tracking, Landingpages, Abonnements etc. erfassten Empfängerdaten verwenden. Die Grundlagen der Personalisierung werden in [diesem Abschnitt](../send/personalize.md) dargestellt.
 
-Stellen Sie sicher, dass Ihr Nachrichteninhalt ordnungsgemäß entwickelt wurde, um Fehler zu vermeiden, die mit der Personalisierung in Zusammenhang stehen können. Ein Adobe Campaign-Personalisierungs-Tag hat immer das folgende Formular: `<%=table.field%>`. Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise folgendermaßen verwendet werden:
++++ **Lesen Sie einige Best Practices**
 
-``
-<%
-var brand = "xxx"
-%>
-``
+* Überprüfen Sie Ihre Personalisierungseinstellungen - Stellen Sie sicher, dass Ihr Nachrichteninhalt ordnungsgemäß entwickelt wurde, um Fehler zu vermeiden, die mit der Personalisierung in Zusammenhang stehen können. Ein Adobe Campaign-Personalisierungs-Tag hat immer das folgende Formular: `<%=table.field%>`. Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise folgendermaßen verwendet werden:
 
-Weitere Informationen zu Gestaltungsbausteinen finden Sie in [diesem Abschnitt](../send/personalization-blocks.md).
+  ``
+  <%
+  var brand = "xxx"
+  %>
+  ``
 
-Sie können die Personalisierungsdaten in einem Workflow vorbereiten, um die Analyse der Versandvorbereitung zu verbessern. Dies sollte insbesondere dann verwendet werden, wenn die Personalisierungsdaten über Federated Data Access (FDA) aus einer externen Tabelle stammen. Diese Option wird in diesem [Abschnitt beschrieben](../send/personalization-data.md#optimize-personalization).
+  Weitere Informationen zu Gestaltungsbausteinen finden Sie in [diesem Abschnitt](../send/personalization-blocks.md).
+
+* Personalisierungsdaten vorbereiten - Sie können Personalisierungsdaten in einem Workflow vorbereiten, um die Analyse der Versandvorbereitung zu verbessern. Dies sollte insbesondere dann verwendet werden, wenn die Personalisierungsdaten über Federated Data Access (FDA) aus einer externen Tabelle stammen. Diese Option wird in diesem [Abschnitt beschrieben](../send/personalization-data.md#optimize-personalization).
++++
 
 ### Erstellen optimierter Inhalte {#build-optimized-content}
 
@@ -142,7 +145,7 @@ Wenden Sie beim Erstellen Ihrer E-Mails die allgemeinen Best Practices für E-Ma
 +++
 
 
-### Betreff
+### Betreff  {#subject-line-check}
 
 Bearbeiten Sie die E-Mail [Betreffzeile](../send/personalization-fields.md#personalization-fields-uc), um die Öffnungsraten zu verbessern.
 
@@ -154,15 +157,17 @@ Bearbeiten Sie die E-Mail [Betreffzeile](../send/personalization-fields.md#perso
 
 * Vermeiden Sie die wiederholte Verwendung von Wörtern wie „gratis“ oder „Angebot“, die als Spam angesehen werden könnten.
 
-* Vermeiden Sie Großbuchstaben und Sonderzeichen wie „!“, „£“, „€“ oder „$“.
+* Vermeiden von Großbuchstaben
+
+* Verwenden Sie keine Sonderzeichen wie &quot;!&quot;, &quot;£&quot;, &quot;€&quot;, &quot;$&quot;.
 
 +++
 
-### Mirrorseite
+### Mirrorseite {#mirror-page-check}
 
 Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position ist am Anfang der E-Mail – Weitere Informationen zur Mirrorseite finden Sie auf [dieser Seite](../send/mirror-page.md) .
 
-### Abmelde-Link
+### Abmelde-Link {#unsub-link-check}
 
 Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig sein, und das Formular muss funktionieren. Bei der Analyse der Nachricht wird standardmäßig von einer integrierten Typologieregel **[!UICONTROL Genehmigung des Abmelde-Links]** [ ](../../automation/campaign-opt/control-rules.md) überprüft, ob ein Abmelde-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt.
 
@@ -174,7 +179,7 @@ Da menschliche Fehler immer möglich sind, prüfen Sie vor jedem Versand, ob der
 
 +++
 
-### Größe der E-Mail
+### Größe der E-Mail {#email-size-check}
 
 Um Performance- oder Zustellbarkeitsprobleme zu vermeiden, wird eine E-Mail mit einer maximalen Größe von **35 KB** empfohlen. Um die Nachrichtengröße zu überprüfen, durchsuchen Sie die Registerkarte **[!UICONTROL Vorschau]** und wählen Sie ein Testprofil aus. Nach der Erstellung wird die Nachrichtengröße in der oberen rechten Ecke angezeigt.
 
@@ -192,17 +197,18 @@ Testen Sie alle Änderungen vor dem endgültigen Senden.
 +++
 
 
-### Länge der SMS
+### Länge der SMS {#sms-length-check}
 
 Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SMS der Mobilfunkstandard GSM (Global System for Mobile Communications) zur Anwendung. SMS, die das GSM-Alphabet verwenden, sind auf 160 Zeichen begrenzt oder auf 153 Zeichen pro SMS bei Nachrichten, die in mehreren Teilen gesendet werden.
 
-Die Transliteration besteht darin, ein Zeichen einer SMS durch ein anderes zu ersetzen, wenn dieses Zeichen vom GSM-Standard nicht berücksichtigt wird. Beachten Sie, dass durch das Einfügen von Personalisierungsfeldern in den Inhalt Ihrer SMS-Nachricht Zeichen eingeführt werden können, die von der GSM-Kodierung nicht berücksichtigt werden. Sie können die Transliteration von Zeichen zulassen, indem Sie das entsprechende Feld im Tab Parameter des SMPP-Kanals des entsprechenden **[!UICONTROL externen Kontos]** aktivieren.
 
 +++ **Lesen Sie einige Best Practices**
 
 * Aktivieren Sie die Transliteration nicht, wenn Sie alle Zeichen Ihrer SMS beibehalten möchten, um beispielsweise Eigennamen unverändert zu übermitteln.
 
 * Wenn Ihre SMS-Nachrichten jedoch viele Zeichen enthalten, die vom GSM-Standard nicht unterstützt werden, aktivieren Sie die Transliteration, um die Kosten für den Nachrichtenversand zu begrenzen. Weitere Informationen finden Sie in [diesem Abschnitt](../send/sms/smpp-external-account.md#smpp-transliteration).
+
+* Sie können die SMS-Transliteration anwenden, d. h. ein Zeichen einer SMS durch ein anderes ersetzen, wenn dieses Zeichen vom GSM-Standard nicht berücksichtigt wird. Die Verwendung von Personalisierungsfeldern im SMS-Inhalt führt u. U. zu Zeichen, die nicht von GSM unterstützt werden. Als Campaign-Administrator können Sie die Transliteration von Zeichen aktivieren, indem Sie das entsprechende Kontrollkästchen auf der Registerkarte &quot;Parameter des SMPP-Kanals&quot;des entsprechenden **[!UICONTROL externen Kontos]** aktivieren. [Weitere Informationen](../send/sms/smpp-external-account.md#smpp-transliteration)
 
 +++
 
@@ -221,26 +227,28 @@ To avoid common formatting errors, check the following elements:
 
 * Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
-
 ## Verwalten von Bildern {#manage-images}
 
 Im Folgenden finden Sie einige spezifische Richtlinien zum Optimieren von Bildern für Ihre E-Mail-Marketing-Kampagne.
 
-### Verhindern der Bildblockierung
+### Verhindern der Bildblockierung {#image-blocking}
 
-Manche E-Mail-Clients blockieren Bilder standardmäßig. Einstellungen können aber auch vom Benutzer so konfiguriert werden, dass Bilder blockiert werden, um den Datenverbrauch zu reduzieren. Wenn keine Bilder heruntergeladen werden, kann die gesamte Nachricht verloren gehen. Um dies zu vermeiden:
+Einige E-Mail-Clients blockieren Bilder standardmäßig. Benutzer können ihre Einstellungen ändern, um Bilder zum Speichern bei der Datennutzung zu blockieren.  Wenn also keine Bilder heruntergeladen werden, kann die gesamte Nachricht verloren gehen.
 
-* Achten Sie auf eine ausgewogene Mischung aus Bild und Text. Vermeiden Sie vollständig bildbasierte E-Mails.
++++ Um dies zu vermeiden, können Sie diese Best Practices anwenden
+
+* Vermeiden Sie vollständig bildbasierte E-Mails. Balance zwischen Inhalt und Bild und Text.
 
 * Wenn in einem Bild Text enthalten sein muss, verwenden Sie „alt“ (formatierten Alternativtext) oder „title text“ (Titeltext), um die Botschaft richtig zu übermitteln. Gestalten Sie „alt“/„title text“, um sein Erscheinungsbild zu verbessern.
 
 * Vermeiden Sie eine Verwendung von Hintergrundbildern, da diese von einigen E-Mail-Clients nicht unterstützt werden.
++++
 
-### Verwenden responsiver Bilder
+### Verwenden responsiver Bilder {#responsive-images}
 
-Verwenden Sie responsive, in der Größe veränderbare Bilder. Beachten Sie, dass sich dies auf die Kosten auswirken kann, da die Erstellung länger dauert.
+Versuchen Sie, Bilder responsiv und anpassbar zu machen, damit sie in allen Kontexten und Geräten sichtbar sind. Beachten Sie, dass sich dies auf die Kosten auswirken kann, da die Erstellung länger dauert.
 
-### Verwenden absoluter Bildreferenzen
+### Verwenden absoluter Bildreferenzen {#absolute-images}
 
 Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und öffentlichen Ressourcen verwendeten Bilder, die mit Kampagnen verknüpft sind, auf einem extern zugänglichen Server gespeichert sein.
 
