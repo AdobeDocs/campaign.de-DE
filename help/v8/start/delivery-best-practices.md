@@ -4,10 +4,11 @@ description: Best Practices beim Entwerfen und Versand mit Adobe Campaign
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 10af828319569ad9aeeecc809bc213f9608791ac
+exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
+source-git-commit: 61c86c3c9d6dbbabf2d5174b8b7b1721b38280cb
 workflow-type: tm+mt
-source-wordcount: '2903'
-ht-degree: 75%
+source-wordcount: '2924'
+ht-degree: 73%
 
 ---
 
@@ -44,7 +45,7 @@ Weitere Informationen zum Starten einer neuen Plattform finden Sie im [Best Prac
 Technische Empfehlungen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
 
 
-**Tipps**
++++ **Lesen Sie einige Best Practices**
 
 * Adobe empfiehlt den Import ungültiger Adressen in die Quarantänetabelle über **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Unzustellbarkeitsverwaltung]** > **[!UICONTROL Adressen unzustellbarer Sendungen]**.
 
@@ -52,6 +53,9 @@ Technische Empfehlungen finden Sie in [diesem Abschnitt](https://experienceleagu
 Adobe Campaign verwaltet fehlerhafte Adressen je nach zurückgegebenem Fehlertyp. [Weitere Informationen zu Quarantänen](../send/quarantines.md)
 
 * Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Providern auf eine Blockierungsliste gesetzt zu werden.
+
++++
+
 
 
 ### Anmeldemöglichkeit mit doppelter Bestätigung (Double opt-in) {#double-opt-in}
@@ -74,6 +78,8 @@ Beachten Sie die folgenden Richtlinien:
 * Eine schlecht formulierte Adresse könnte vom Empfangs-Server abgelehnt werden. Achten Sie darauf, dass eine korrekte Adresse angegeben ist.
 * Die Adresse muss die Identität des Absenders enthalten. Die Domain muss im Besitz des Absenders und auf ihn registriert sein.
 * Adobe empfiehlt, E-Mail-Konten zu erstellen, die der Absender- und Antwortadresse entsprechen. Wenden Sie sich diesbezüglich bitte an den Administrator Ihres E-Mail-Programms.
+
++++ **Konfigurieren von Adressen in der Campaign-Benutzeroberfläche**
 
 Gehen Sie wie folgt vor, um Adressen in der Campaign-Benutzeroberfläche zu konfigurieren:
 
@@ -119,7 +125,9 @@ Sie können die Personalisierungsdaten in einem Workflow vorbereiten, um die Ana
 
 ### Erstellen optimierter Inhalte {#build-optimized-content}
 
-Beachten Sie beim Erstellen Ihrer E-Mails die folgenden allgemeinen Best Practices:
+Wenden Sie beim Erstellen Ihrer E-Mails die allgemeinen Best Practices für E-Mail-Inhalte an.
+
++++ **Lesen Sie einige Best Practices**
 
 * Halten Sie das Design einfach.
 
@@ -131,15 +139,24 @@ Beachten Sie beim Erstellen Ihrer E-Mails die folgenden allgemeinen Best Practic
 
 * Kodieren Sie Sonderzeichen.
 
++++
+
+
 ### Betreff
 
-Achten Sie besonders auf den [Betreff](../send/personalization-fields.md#personalization-fields-uc), um die Öffnungsraten zu verbessern:
+Bearbeiten Sie die E-Mail [Betreffzeile](../send/personalization-fields.md#personalization-fields-uc), um die Öffnungsraten zu verbessern.
+
+
++++ **Lesen Sie einige Best Practices**
+
 
 * Vermeiden Sie einen zu langen Betreff. Verwenden Sie maximal 50 Zeichen.
 
 * Vermeiden Sie die wiederholte Verwendung von Wörtern wie „gratis“ oder „Angebot“, die als Spam angesehen werden könnten.
 
 * Vermeiden Sie Großbuchstaben und Sonderzeichen wie „!“, „£“, „€“ oder „$“.
+
++++
 
 ### Mirrorseite
 
@@ -149,15 +166,20 @@ Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position ist a
 
 Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig sein, und das Formular muss funktionieren. Bei der Analyse der Nachricht wird standardmäßig von einer integrierten Typologieregel **[!UICONTROL Genehmigung des Abmelde-Links]** [ ](../../automation/campaign-opt/control-rules.md) überprüft, ob ein Abmelde-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt.
 
-**Tipp**: Da menschliche Fehler immer möglich sind, überprüfen Sie vor jedem Versand, ob der Abmelde-Link ordnungsgemäß funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass das Feld `No longer contact this recipient `in `Yes` geändert wird.
-
 [In diesem Abschnitt](../send/personalization-blocks.md) erfahren Sie, wie man einen Ausschluss-Link einfügt.
+
++++ **Wenden Sie diese Best Practice an**
+
+Da menschliche Fehler immer möglich sind, prüfen Sie vor jedem Versand, ob der Abmelde-Link ordnungsgemäß funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass das Feld `No longer contact this recipient `in `Yes` geändert wird.
+
++++
 
 ### Größe der E-Mail
 
 Um Performance- oder Zustellbarkeitsprobleme zu vermeiden, wird eine E-Mail mit einer maximalen Größe von **35 KB** empfohlen. Um die Nachrichtengröße zu überprüfen, durchsuchen Sie die Registerkarte **[!UICONTROL Vorschau]** und wählen Sie ein Testprofil aus. Nach der Erstellung wird die Nachrichtengröße in der oberen rechten Ecke angezeigt.
 
-Um Ihre E-Mail unter dem Grenzwert zu halten, beachten Sie Folgendes:
+
++++ **Lesen Sie einige Best Practices**
 
 * Entfernen Sie redundante oder nicht verwendete Stile.
 
@@ -167,19 +189,22 @@ Um Ihre E-Mail unter dem Grenzwert zu halten, beachten Sie Folgendes:
 
 Testen Sie alle Änderungen vor dem endgültigen Senden.
 
++++
+
+
 ### Länge der SMS
 
 Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SMS der Mobilfunkstandard GSM (Global System for Mobile Communications) zur Anwendung. SMS, die das GSM-Alphabet verwenden, sind auf 160 Zeichen begrenzt oder auf 153 Zeichen pro SMS bei Nachrichten, die in mehreren Teilen gesendet werden.
 
 Die Transliteration besteht darin, ein Zeichen einer SMS durch ein anderes zu ersetzen, wenn dieses Zeichen vom GSM-Standard nicht berücksichtigt wird. Beachten Sie, dass durch das Einfügen von Personalisierungsfeldern in den Inhalt Ihrer SMS-Nachricht Zeichen eingeführt werden können, die von der GSM-Kodierung nicht berücksichtigt werden. Sie können die Transliteration von Zeichen zulassen, indem Sie das entsprechende Feld im Tab Parameter des SMPP-Kanals des entsprechenden **[!UICONTROL externen Kontos]** aktivieren.
 
-**Tipps**
++++ **Lesen Sie einige Best Practices**
 
 * Aktivieren Sie die Transliteration nicht, wenn Sie alle Zeichen Ihrer SMS beibehalten möchten, um beispielsweise Eigennamen unverändert zu übermitteln.
 
-* Sollte Ihre SMS jedoch eine hohe Anzahl an Zeichen enthalten, die vom GSM-Standard nicht unterstützt werden, aktivieren Sie die Transliteration, um Ihre Versandkosten zu begrenzen.
+* Wenn Ihre SMS-Nachrichten jedoch viele Zeichen enthalten, die vom GSM-Standard nicht unterstützt werden, aktivieren Sie die Transliteration, um die Kosten für den Nachrichtenversand zu begrenzen. Weitere Informationen finden Sie in [diesem Abschnitt](../send/sms/smpp-external-account.md#smpp-transliteration).
 
-Weiterführende Informationen finden Sie [in diesem Abschnitt](../send/sms/smpp-external-account.md#smpp-transliteration).
++++
 
 ### Anhänge vermeiden
 
@@ -385,8 +410,7 @@ Im Versand-Dashboard von Campaign können Sie die verarbeiteten Nachrichten und 
 
 Um das Verhalten Ihrer Empfänger besser kennenzulernen, können Sie ihre Reaktion auf einen Versand verfolgen: Empfang, Öffnung, Klicks auf Links, Abmeldungen usw. Diese Informationen werden in Campaign im Tab **Tracking** der vom Versand ausgewählten Empfänger und im Tab Tracking des Versands angezeigt.
 
-**Tipp:** Das Nachrichten-Tracking ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versandassistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie die Nachverfolgung aktivieren möchten.
+Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versandassistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie die Nachverfolgung aktivieren möchten.
 
 
 [Weitere Informationen zu Tracking-Funktionen finden Sie in der Campaign Classic v7-Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=de#sending-messages){target="_blank"}
-
