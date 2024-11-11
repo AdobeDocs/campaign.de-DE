@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
+source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 100%
@@ -83,9 +83,9 @@ Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) st
 
 >[!IMPORTANT]
 >
->Achten Sie darauf, dass die letzten Schübe nicht die Versand-Deadline überschreiten, die auf der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt ist. Andernfalls werden einige Nachrichten möglicherweise nicht gesendet. Weitere Informationen zum Gültigkeitszeitraum eines Versands finden Sie in [diesem Abschnitt](delivery-failures.md#valid-period).
+>* Achten Sie darauf, dass die letzten Schübe nicht die Versand-Deadline überschreiten, die auf der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt ist. Andernfalls werden einige Nachrichten möglicherweise nicht gesendet. Weitere Informationen zum Gültigkeitszeitraum eines Versands finden Sie in [diesem Abschnitt](delivery-failures.md#valid-period).
 >
->Planen Sie beim Konfigurieren der letzten Schübe zudem genügend Zeit für weitere Zustellversuche ein. Nähere Informationen zu weiteren Zustellversuchen finden Sie in [diesem Abschnitt](delivery-failures.md#retries).
+>* Planen Sie beim Konfigurieren der letzten Schübe zudem genügend Zeit für weitere Zustellversuche ein. Nähere Informationen zu weiteren Zustellversuchen finden Sie in [diesem Abschnitt](delivery-failures.md#retries).
 
 ### Überwachen von Schüben {#monitor-waves}
 

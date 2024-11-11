@@ -1,20 +1,20 @@
 ---
 title: Best Practices beim Versand
 description: Best Practices beim Entwerfen und Versand mit Adobe Campaign
-feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
+feature: Email, Push, SMS, Direct Mail
 role: User
 level: Beginner
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 58d88498c8472381a43d735b4dfb2a802a293952
+source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '2970'
 ht-degree: 68%
 
 ---
 
 # Best Practices beim Versand {#delivery-best-practices}
 
-Best Practices für Campaign-Versandfunktionen.
+Lesen Sie die folgenden Best Practices für Campaign-Versandfunktionen.
 
 ## Optimieren des Versands {#optimize-delivery}
 
