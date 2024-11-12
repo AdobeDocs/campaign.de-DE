@@ -6,20 +6,22 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: acb559c74aea3f59c05792b7596d0f85ff05047c
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 90%
+source-wordcount: '971'
+ht-degree: 76%
 
 ---
 
 # Arbeiten mit Versandvorlagen {#work-with-delivery-template}
 
-Jeder Versand wird basierend auf einer Vorlage erstellt. Für jeden Kanal stehen integrierte Vorlagen zur Verfügung. Sie können sie anpassen, um dieselben Einstellungen auf eine Reihe von Sendungen anzuwenden.
+## Erste Schritte mit Versandvorlagen
 
-Eine Vorlage umfasst:
+Jeder Versand wird basierend auf einer Vorlage erstellt. Eine Vorlage ist eine Konfiguration, die wiederverwendet werden kann, um Ihre Implementierung zu erleichtern und zu standardisieren. Sie können eine integrierte oder benutzerdefinierte Vorlage verwenden.
 
-* Typologieregeln
+Eine Vorlage kann teilweise oder vollständige Konfigurationseinstellungen enthalten, z. B.:
+
+* [Typologieregeln](../../automation/campaign-opt/campaign-typologies.md)
 * Absender- und Antwortadressen
 * Grundlegende [Gestaltungsbausteine](../send/personalization-blocks.md)
 * Links zu [Mirrorseiten](../send/mirror-page.md) und Abmelde-Links
@@ -27,6 +29,17 @@ Eine Vorlage umfasst:
 * Andere Versandeigenschaften, z. B. die Gültigkeit der Ressource, die Parameter für erneute Versuche oder die Quarantäneeinstellungen.
 
 ![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#delivery-template-video)
+
+In Adobe Campaign können Sie zwei Arten von Vorlagen verwenden:
+
+1. Adobe Campaign **integrierte** Versandvorlagen - Integrierte Vorlagen stehen für jeden Kanal zur Verfügung. Sie dürfen weder geändert noch gelöscht werden. Sie enthalten eine grundlegende Konfiguration für jeden Versandkanal. Als Administrator können Sie Standardwerte festlegen oder bestimmte Funktionen auf Endbenutzer beschränken, z. B. die Änderung von Tracking-Parametern, Absender-E-Mail-Adressen und mehr. Integrierte Vorlagen werden in der Vorlagenliste fettgedruckt angezeigt.
+
+1. **Benutzerdefinierte** Versandvorlagen - Als Adobe Campaign-Administrator können Sie neue Versandvorlagen erstellen. Es empfiehlt sich, eine integrierte Vorlage zu duplizieren und zu aktualisieren, anstatt eine Vorlage von Grund auf neu zu erstellen. Sie können beispielsweise eine E-Mail-Versandvorlage konfigurieren. Wenn Benutzer einen Versand aus dieser Vorlage erstellen, müssen sie nur den Text oder den HTML-Inhalt eingeben. Alle anderen Einstellungen sind bereits definiert.
+
+>[!NOTE]
+>
+>Welche Vorlagen Ihnen zur Verfügung stehen, hängt von Ihren Benutzerrechten, der Konfiguration Ihrer Instanz und dem jeweiligen Anwendungskontext ab. Wenn Sie beispielsweise einen Informationsdienst erstellen, können Sie eine Vorlage zum Versand von Bestätigungsnachrichten verwenden. In diesem Kontext werden nur Vorlagen mit dem Zielgruppen-Mapping &quot;Abonnements&quot; angezeigt. Andere Vorlagen sind in diesem Zusammenhang nicht sichtbar. Mehr dazu finden Sie unter [Auswählen eines Zielgruppen-Mappings](../audiences/target-mappings.md) und [Services und Abonnements](../start/subscriptions.md).
+
 
 ## Erstellen einer Vorlage {#create-a-delivery-template}
 
