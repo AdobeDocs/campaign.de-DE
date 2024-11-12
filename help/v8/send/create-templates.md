@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 12de29e15d660cd5a40cda059fc19e45311fe312
+source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 71%
+source-wordcount: '1026'
+ht-degree: 69%
 
 ---
 
@@ -38,7 +38,7 @@ Versandvorlagen werden im Explorer im Ordner **[!UICONTROL Ressourcen > Vorlagen
 
 >[!NOTE]
 >
->Welche Vorlagen Ihnen zur Verfügung stehen, hängt von Ihren Benutzerrechten, der Konfiguration Ihrer Instanz und dem jeweiligen Anwendungskontext ab. Wenn Sie beispielsweise einen Informationsdienst erstellen, können Sie eine Vorlage zum Versand von Bestätigungsnachrichten verwenden. In diesem Kontext werden nur Vorlagen mit dem Zielgruppen-Mapping &quot;Abonnements&quot; angezeigt. Andere Vorlagen sind in diesem Zusammenhang nicht sichtbar. Mehr dazu finden Sie unter [Auswählen eines Zielgruppen-Mappings](../audiences/target-mappings.md) und [Services und Abonnements](../start/subscriptions.md).
+>Welche Vorlagen Ihnen zur Verfügung stehen, hängt von Ihren Benutzerrechten, der Konfiguration Ihrer Instanz und dem jeweiligen Anwendungskontext ab. Wenn Sie beispielsweise einen Informationsdienst erstellen, können Sie eine Vorlage zum Versand von Bestätigungsnachrichten verwenden. In diesem Kontext werden nur Vorlagen mit dem Zielgruppen-Mapping &quot;Abonnements&quot; angezeigt. Andere Vorlagen sind in diesem Zusammenhang nicht sichtbar. Weitere Informationen hierzu finden Sie unter [Arbeiten mit Zielgruppen-Mappings](../audiences/target-mappings.md) und [Verwalten von Anmeldungen und Abmeldungen](../start/subscriptions.md).
 
 
 ## Erstellen einer Vorlage {#create-a-delivery-template}
