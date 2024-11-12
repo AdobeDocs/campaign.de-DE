@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: acb559c74aea3f59c05792b7596d0f85ff05047c
+source-git-commit: 5054dd1352972b402d54c1b51cfee1fb41ff4d1c
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 76%
+source-wordcount: '1024'
+ht-degree: 71%
 
 ---
 
@@ -30,7 +30,7 @@ Eine Vorlage kann teilweise oder vollständige Konfigurationseinstellungen entha
 
 ![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#delivery-template-video)
 
-In Adobe Campaign können Sie zwei Arten von Vorlagen verwenden:
+Versandvorlagen werden im Explorer im Ordner **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** gespeichert. In Adobe Campaign können Sie zwei Arten von Vorlagen verwenden:
 
 1. Adobe Campaign **integrierte** Versandvorlagen - Integrierte Vorlagen stehen für jeden Kanal zur Verfügung. Sie dürfen weder geändert noch gelöscht werden. Sie enthalten eine grundlegende Konfiguration für jeden Versandkanal. Als Administrator können Sie Standardwerte festlegen oder bestimmte Funktionen auf Endbenutzer beschränken, z. B. die Änderung von Tracking-Parametern, Absender-E-Mail-Adressen und mehr. Integrierte Vorlagen werden in der Vorlagenliste fettgedruckt angezeigt.
 
@@ -121,18 +121,19 @@ Wählen Sie dann die zu verwendende Versandvorlage aus und klicken Sie auf **[!U
 
 ### Ausführen einer Vorlage {#execute-a-template}
 
-Sie können die Ausführung einer Vorlage direkt über die Vorlagenliste starten, ohne zuvor einen Versand zu erstellen.
+Sie können die Ausführung einer Vorlage direkt über die Vorlagenliste starten, ohne zuvor einen Versand zu erstellen. Die Versandvorlage kann manuell ausgeführt werden, wie unten beschrieben, oder durch ein Ereignis ausgelöst werden (das zu einem bestimmten Zeitpunkt ausgeführt wird, wenn eine Datei auf dem Server verfügbar ist usw.), wie in [diesem Abschnitt](../../automation/workflow/deliveries.md) beschrieben.
 
-Wählen Sie dazu die auszuführende Vorlage aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Ausgewählte Versandvorlage ausführen...]** aus.
+Gehen Sie wie folgt vor, um eine Vorlage manuell auszuführen:
 
-Sie können auch das Menü **[!UICONTROL Datei > Aktionen > Ausgewählte Versandvorlage ausführen...]** verwenden.
+1. Wählen Sie die auszuführende Vorlage aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Ausgewählte Versandvorlage ausführen...]** aus.
 
-![](assets/execute-delivery-template.png)
+   Sie können auch das Menü **[!UICONTROL Datei > Aktionen > Ausgewählte Versandvorlage ausführen...]** verwenden.
 
-Geben Sie die Versandparameter an und klicken Sie auf **[!UICONTROL Senden]**.
+   ![](assets/execute-delivery-template.png)
+
+1. Geben Sie die Versandparameter an und klicken Sie auf **[!UICONTROL Senden]**.
 
 Dadurch wird ein Versand im Ordner erzeugt, der mit der Vorlage verknüpft ist. Der Name dieses Versands ist der Name der Versandvorlage, aus der er erstellt wurde.
-
 
 ## Anleitungsvideos {#delivery-template-video}
 
