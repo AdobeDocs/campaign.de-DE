@@ -6,9 +6,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 5054dd1352972b402d54c1b51cfee1fb41ff4d1c
+source-git-commit: 9f19d5c9836c21cea7b4b55241f828e295831339
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1025'
 ht-degree: 71%
 
 ---
@@ -121,7 +121,7 @@ Wählen Sie dann die zu verwendende Versandvorlage aus und klicken Sie auf **[!U
 
 ### Ausführen einer Vorlage {#execute-a-template}
 
-Sie können die Ausführung einer Vorlage direkt über die Vorlagenliste starten, ohne zuvor einen Versand zu erstellen. Die Versandvorlage kann manuell ausgeführt werden, wie unten beschrieben, oder durch ein Ereignis ausgelöst werden (das zu einem bestimmten Zeitpunkt ausgeführt wird, wenn eine Datei auf dem Server verfügbar ist usw.), wie in [diesem Abschnitt](../../automation/workflow/deliveries.md) beschrieben.
+Sie können die Ausführung einer Vorlage direkt über die Vorlagenliste starten, ohne zuvor einen Versand zu erstellen. Die Versandvorlage kann manuell ausgeführt werden, wie unten beschrieben, oder durch ein Ereignis ausgelöst werden (das zu einem bestimmten Zeitpunkt ausgeführt wird, wenn eine Datei auf dem Server verfügbar ist usw.), wie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery) beschrieben.
 
 Gehen Sie wie folgt vor, um eine Vorlage manuell auszuführen:
 
