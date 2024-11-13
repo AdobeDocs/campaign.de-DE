@@ -5,16 +5,16 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 55b752713a29c035680dd39e42422b1743e15269
+source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1610'
 ht-degree: 36%
 
 ---
 
 # Erstversand erstellen {#create-a-msg}
 
-Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. Sie können für Ihre Anwendungsfälle weitere Versandtypen erstellen. Weitere Informationen zu den verschiedenen Versandtypen und deren Erstellung finden Sie auf [dieser Seite](gs-message.md).
+Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. Sie können weitere Versandtypen erstellen, um Ihre Anwendungsfälle zu erstellen. Weitere Informationen zu den verschiedenen Versandtypen und deren Erstellung finden Sie auf [dieser Seite](gs-message.md).
 
 Die wichtigsten Schritte bei der Erstellung eines einmaligen Versands sind:
 
