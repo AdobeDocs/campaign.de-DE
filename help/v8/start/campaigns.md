@@ -8,7 +8,7 @@ exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
 source-git-commit: 8d6c3e03f9b7533f7f325b755e3b6d4f74b63a8d
 workflow-type: tm+mt
 source-wordcount: '774'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -78,9 +78,9 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    ![](assets/campaign-dashboard.png)
 
-   Erfahren Sie, wie Sie in [dieser Seite](../../automation/campaigns/marketing-campaign-deliveries.md) Marketingkampagnen-Sendungen erstellen und starten.
+   Auf [dieser Seite](../../automation/campaigns/marketing-campaign-deliveries.md) erfahren Sie, wie Sie Sendungen für Marketing-Kampagnen erstellen und starten.
 
-   Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Web-Seite, Diagramm usw. Weitere Informationen zu zugehörigen Dokumenten finden Sie auf [dieser Seite](../../automation/campaigns/marketing-campaign-assets.md).
+   Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Web-Seite, Diagramm usw. Auf [dieser Seite](../../automation/campaigns/marketing-campaign-assets.md) erfahren Sie mehr über zugehörige Dokumente.
 
 1. **Einrichten des Validierungsprozesses**
 
@@ -89,9 +89,9 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
    Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=de#campaign-orchestration){target="_blank"} erfahren Sie, wie Sie Validierungen einrichten und verwalten.
 
 
-## Add-on für dezentrales Marketing{#distributed-marketing-add-on}
+## Add-on für verteiltes Marketing{#distributed-marketing-add-on}
 
-Adobe Campaign bietet ein **Add-on für verteiltes Marketing** zur Implementierung von Kooperationskampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und Lokalstellen (Stores, Regionalagenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **[!UICONTROL Kampagnenkit-Liste]** genannt, wobei von zentralen Entitäten entworfene Kampagnenvorlagen den lokalen Entitäten angeboten werden.
+Adobe Campaign bietet ein Add-on für **verteiltes Marketing** zur Implementierung von Kooperationskampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen) und lokalen Entitäten (Filialen und regionale Agenturen). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **[!UICONTROL Kampagnenkit-Liste]** genannt, wobei von zentralen Entitäten entworfene Kampagnenvorlagen den lokalen Entitäten angeboten werden.
 
 >[!NOTE]
 >
