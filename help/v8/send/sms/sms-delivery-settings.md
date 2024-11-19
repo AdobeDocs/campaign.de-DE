@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
 source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '813'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 98%
 Die folgenden technischen Einstellungen werden für einen SMS-Versand benötigt:
 
 * Das externe SMPP-Konto für das Nachrichten-Routing. [Weitere Informationen](smpp-external-account.md#smpp-connection-settings)
-* Konfigurieren Sie den Tab SMS . [Weitere Informationen dazu](#sms-tab)
+* Das Konfigurieren der Registerkarte „SMS“.  [Weitere Informationen](#sms-tab)
 
 Sie können all diese Einrichtungen in einer Versandvorlage vornehmen, sodass Sie die Einstellungen nicht für jede SMS-Versanderstellung festlegen müssen.
 
-## Tab SMS konfigurieren {#sms-tab}
+## Konfigurieren der Registerkarte „SMS“ {#sms-tab}
 
 ![](assets/send_settings.png){zoomable="yes"}
 

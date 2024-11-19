@@ -1,26 +1,26 @@
 ---
 title: Erstellen eines SMS-Versands
-description: Erfahren Sie, wie Sie einen SMS-Versand erstellen
+description: Erfahren Sie, wie Sie einen SMS-Versand erstellen.
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
-workflow-type: tm+mt
+exl-id: 3b15eb3e-8625-4049-bf0d-327407ae5ea6
+source-git-commit: 25a4ac40f8a178b85e88fbce1ff32ebe2c027f4b
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
-
-# Den ersten SMS-Versand erstellen {#sms-delivery}
+# Erstellen des ersten SMS-Versands {#sms-delivery}
 
 Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 
-1. Erstellen Sie einen neuen Versand und wählen Sie die [SMS-Versandvorlage](sms-mid-sourcing.md#sms-delivery-template) aus, die Sie für Ihren SMS-Versand erstellt haben.
+1. Erstellen Sie einen neuen Versand und wählen Sie die [SMS-Versandvorlage](sms-mid-sourcing.md#sms-delivery-template) aus, die Sie für Ihre SMS-Sendungen erstellt haben.
 
    ![](assets/sms_create.png){zoomable="yes"}
 
-   Die Schritte zum Erstellen von Sendungen werden auf [dieser Seite](../../start/create-message.md) beschrieben.
+   Ausführliche Informationen zu den Schritten der Versanderstellung finden Sie auf [dieser Seite](../../start/create-message.md).
 
 <!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
 * For mid-sourcing infrastructure, -->
@@ -39,9 +39,9 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 
 Die Schritte zum Definieren einer Zielgruppe finden Sie auf [dieser Seite](../../audiences/create-audiences.md).
 
-## SMS validieren und senden {#sms-validate}
+## Validieren und Senden von SMS {#sms-validate}
 
-Nach der Erstellung Ihres Versands haben Sie folgende Möglichkeiten:
+Nach dem Erstellen Ihres Versands haben Sie folgende Möglichkeiten:
 
 1. [Senden Sie Testsendungen](sms-proofs.md), um das Rendern und den Inhalt zu validieren,
 
@@ -50,5 +50,3 @@ Nach der Erstellung Ihres Versands haben Sie folgende Möglichkeiten:
 ## Überwachen und Verfolgen einer SMS {#sms-monitor}
 
 Erfahren Sie, wie Sie nach dem Senden [Ihre SMS überwachen und verfolgen](sms-monitor.md).
-
-

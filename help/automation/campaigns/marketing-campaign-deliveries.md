@@ -6,15 +6,15 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '754'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Sendungen für eine Marketing-Kampagne {#marketing-campaign-deliveries}
 
-Orchestrieren Sie Ihre kanalübergreifenden Sendungen in Ihren Kampagnen: Optimieren Sie mit Adobe Campaign Ihre Kommunikation durch personalisierte E-Mails, SMS, Push-Benachrichtigungen und In-App-Nachrichten. Sie können Rich Media wie Videos, Emojis oder GIF verwenden und sie direkt integrieren.
+Orchestrieren Sie Ihre kanalübergreifenden Sendungen in Ihren Kampagnen: Optimieren Sie mit Adobe Campaign Ihre Kommunikation durch personalisierte E-Mails, SMS, Push-Benachrichtigungen und In-App-Nachrichten. Sie können Rich Media wie Videos, Emojis oder GIFs verwenden und direkt integrieren.
 
 Sendungen können über das Dashboard einer Kampagne, einen Kampagnen-Workflow oder direkt über die Versandübersicht erstellt werden. Wenn Sendungen in einer Kampagne erstellt werden, werden sie mit dieser Kampagne verknüpft und auf Kampagnenebene zusammengefasst.
 

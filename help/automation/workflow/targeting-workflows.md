@@ -4,9 +4,9 @@ description: Hier erfahren Sie, wie Sie in einem Workflow Zielgruppen erstellen.
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
 source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2370'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Mit den Aktivitäten vom Typ **[!UICONTROL Vereinigung]** und **[!UICONTROL Schn
 
 ![](assets/use-common-add-data-only.png)
 
-### Mit zusätzlichen Daten abstimmen {#reconciliation-with-additional-data}
+### Abstimmen mit zusätzlichen Daten {#reconciliation-with-additional-data}
 
 Bei der Datenabstimmung (der Aktivitäten **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** etc.) können Sie die zur Abstimmung zu verwendenden Spalten aus den zusätzlichen Spalten auswählen. Konfigurieren Sie hierzu eine Abstimmung einer Auswahl an Spalten und geben Sie die Hauptmenge an. Wählen Sie dann im unteren Fensterbereich wie dargestellt die entsprechenden Spalten aus:
 

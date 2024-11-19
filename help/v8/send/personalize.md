@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
 source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Um die Versandsicherheit zu erhöhen, können Sie für die Personalisierungsphas
 
 Wählen Sie auf dem Tab **[!UICONTROL Versand]** der **[!UICONTROL Versandeigenschaften]** einen Maximalwert in Sekunden für die Option **[!UICONTROL Maximale Laufzeit der Personalisierung]** aus.
 
-Wenn die Personalisierungsphase während der Vorschau oder des Versands die in diesem Feld festgelegte maximale Zeit überschreitet, wird der Prozess mit einer Fehlermeldung abgebrochen und der Versand schlägt fehl.
+Wenn die Personalisierungsphase während der Vorschau oder beim Senden die in diesem Feld angegebene maximale Zeit überschreitet, wird der Prozess mit einer Fehlermeldung abgebrochen und der Versand schlägt fehl.
 
 Der Standardwert ist 5 Sekunden.
 

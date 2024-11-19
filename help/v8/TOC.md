@@ -6,9 +6,9 @@ title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
 source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 99%
    + [Kampagnenorchestrierung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
 + Senden von Nachrichten {#send}
    + [Erste Schritte mit Nachrichten](start/gs-message.md)
-   + [Erstversand erstellen](start/create-message.md)
+   + [Erstellen Ihres ersten Versands](start/create-message.md)
    + [Best Practices beim Versand](start/delivery-best-practices.md)
    + E-Mails {#emails}
       + [Entwerfen und Validieren von E-Mails](send/email.md)
@@ -62,7 +62,7 @@ ht-degree: 99%
          + [Mid-Sourcing-Infrastruktur](send/sms/sms-mid-sourcing.md)
          + [Beschreibung des SMPP-Connectors](send/sms/smpp-connector-delivery.md)
       + Erstellen einer SMS {#create-sms}
-         + [SMS-Versand erstellen](send/sms/create-sms.md)
+         + [Erstellen eines SMS-Versands](send/sms/create-sms.md)
          + [Definieren des Inhalts](send/sms/sms-content.md)
          + [Auswählen der Zielgruppe](send/sms/sms-audience.md)
       + Validieren und Versenden einer SMS {#validate-sms}

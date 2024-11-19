@@ -6,27 +6,27 @@ role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
 source-git-commit: 95dca48ae0e2ee82b80464cdf9414538776969ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '159'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit SMS {#gs-sms-channel}
 
-Verwenden Sie Adobe Campaign, um Ihren Kunden auf ihren Mobilgeräten Textnachrichten zu senden. Sie können Nachrichten im Textformat im SMS-Editor erstellen, personalisieren und in der Vorschau anzeigen.
+Verwenden Sie Adobe Campaign, um Textnachrichten an die Mobilgeräte Ihrer Kundinnen und Kunden zu senden. Im SMS-Editor können Sie Nachrichten im Textformat erstellen, personalisieren und in der Vorschau anzeigen.
 
-Um SMS mit Adobe Campaign an Mobilgeräte zu senden, benötigen Sie:
+Um SMS mit Adobe Campaign an Mobilgeräte zu senden, benötigen Sie Folgendes:
 
-* Ein externes Konto, das für den Kanal **[!UICONTROL Mobiltelefon (SMS)]** konfiguriert wurde. Erfahren Sie, wie Sie den SMS-Kanal in Ihrer [Mid-Sourcing-Infrastruktur](sms-mid-sourcing.md) konfigurieren. Für diese Konfiguration müssen Sie die Parameter [Externes SMPP-Konto](smpp-external-account.md) und die Merkmale des [SMS-Kanals](sms-channel.md) kennen.
-Überprüfen Sie nach der Einrichtung Ihre SMPP-Verbindung und erfahren Sie, wie Sie sie bei Bedarf beheben können. [Weitere Informationen](smpp-connection.md).
+* Ein externes Konto, das für den Kanal **[!UICONTROL Mobiltelefon (SMS)]** konfiguriert wurde. Erfahren Sie, wie Sie den SMS-Kanal in Ihrer [Mid-Sourcing-Infrastruktur](sms-mid-sourcing.md) konfigurieren.  Für diese Konfiguration müssen Sie die [Parameter des externen SMPP-Kontos](smpp-external-account.md) und die [Merkmale des SMS-Kanals](sms-channel.md) kennen.
+Überprüfen Sie nach dieser Einrichtung Ihre SMPP-Verbindung und informieren Sie sich, wie Sie bei Bedarf Fehler beheben können.  [Weitere Informationen](smpp-connection.md).
 
 * Eine SMS-Versandvorlage, die korrekt mit diesem externen Konto verknüpft ist.
 
 
 >[!NOTE]
 >
->Sie können Adobe Campaign auch verwenden, um [Push-Benachrichtigungen](../push.md) und [LINE](../line.md) an Mobilgeräte zu senden.
+>Sie können mit Adobe Campaign auch [Push-Benachrichtigungen](../push.md) und [LINE](../line.md)-Nachrichten an Mobilgeräte versenden.
 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
@@ -43,7 +43,7 @@ Um SMS mit Adobe Campaign an Mobilgeräte zu senden, benötigen Sie:
 <img alt="SMS-Inhalt" src="../../assets/do-not-localize/sms-create.jpeg">
 </a>
 <div>
-<a href="sms-content.md"><strong>SMS-Inhalt definieren</strong></a>
+<a href="sms-content.md"><strong>Definieren Ihres SMS-Inhalts</strong></a>
 </div>
 <p></td>
 <td>
@@ -51,7 +51,7 @@ Um SMS mit Adobe Campaign an Mobilgeräte zu senden, benötigen Sie:
 <img alt="SMS-Zielgruppe" src="../../assets/do-not-localize/sms-opt-out.jpg">
 </a>
 <div>
-<a href="sms-audience.md"><strong>Audience auswählen</strong></a>
+<a href="sms-audience.md"><strong>Zielgruppe auswählen</strong></a>
 </div>
 <p>
 </td>
