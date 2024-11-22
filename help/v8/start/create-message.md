@@ -6,15 +6,15 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1610'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Erstellen Ihres ersten Versands {#create-a-msg}
 
-Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. Sie können weitere Versandtypen erstellen, um Ihre Anwendungsfälle zu erstellen. Weitere Informationen zu den verschiedenen Versandtypen und deren Erstellung finden Sie auf [dieser Seite](gs-message.md).
+Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. Sie können für Ihre Anwendungsfälle weitere Versandtypen erstellen. Weitere Informationen zu den verschiedenen Versandtypen und deren Erstellung finden Sie auf [dieser Seite](gs-message.md).
 
 Dies sind die wichtigsten Schritte beim Erstellen eines einmaligen Versands:
 
