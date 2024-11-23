@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Ve
 feature: Workflows
 role: User, Data Engineer
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 100%
+source-wordcount: '266'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versand
 
 ![Wiederkehrender Versand](assets/delivery_recurring.jpg)
 
-Wenn Sie die Ausführung eines wiederkehrenden Versands stoppen möchten, sollten Sie die Kampagne vollständig abbrechen oder den Workflow, mit dem sie ausgeführt wird, stoppen. Wird der Versand über das Kampagnen-Dashboard gestoppt, wird nur der aktuelle Versand gestoppt, doch die nächsten Instanzen des wiederkehrenden Versands werden bei jeder Workflow-Ausführung weiterhin erstellt.
+Wenn Sie die Ausführung eines wiederkehrenden Versands stoppen möchten, sollten Sie die Kampagne vollständig abbrechen oder den Workflow, mit dem sie ausgeführt wird, stoppen. Das Anhalten des Versands über das Kampagnen-Dashboard stoppt nur das Eintreten des Versands: Die nächsten Instanzen des wiederkehrenden Versands werden bei jeder Ausführung des Workflows weiterhin erstellt.
 
 >[!NOTE]
 >

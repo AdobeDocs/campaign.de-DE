@@ -2,10 +2,10 @@
 title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS)
 description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 100%
+source-wordcount: '1343'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Mit Campaign v8 sollten sich alle regulären Anwenderinnen und Anwender bereits 
 
 Darüber hinaus ruft die Adobe Campaign-Client-Anwendung zur Verbesserung der Sicherheit und des Authentifizierungsprozesses die Campaign-APIs jetzt direkt über das technische IMS-Konto-Token auf. Die Migration für technische Benutzende wird in einem speziellen Artikel beschrieben, der auf [dieser Seite](ims-migration.md) zu finden ist.
 
-Diese Änderung gilt seit Campaign v8.5.2 und wird ab Campaign v8.6 **obligatorisch**.
+Diese Änderung gilt ab Campaign v8.5.2 und ist **mandatory** ab Campaign v8.6.
 
 ## Sind Sie betroffen?{#migrate-ims-impacts}
 

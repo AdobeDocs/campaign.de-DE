@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 100%
@@ -126,7 +126,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie auf **[!UICONTROL Senden]** und wählen Sie die gewünschte Aktion aus.
 
-   * Um den Versand sofort durchzuführen, wählen Sie [**Sendungen schnellstmöglich abschicken**].
+   * Um den Versand sofort durchzuführen, wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]**.
    * Um den Versand für einen späteren Zeitpunkt zu planen, wählen Sie **[!UICONTROL Versand terminieren]**. [Weitere Informationen](#schedule-delivery-sending)
 
 1. Klicken Sie auf **[!UICONTROL Analysieren]**. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](delivery-analysis.md).
