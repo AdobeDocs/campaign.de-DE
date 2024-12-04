@@ -5,48 +5,41 @@ description: Erfahren Sie mehr über die technischen Workflows, die mit Campaign
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
-workflow-type: ht
-source-wordcount: '1819'
-ht-degree: 100%
+source-git-commit: 97ab8259c0044b65fec2ad5ddc44d28f0cbf65e5
+workflow-type: tm+mt
+source-wordcount: '1820'
+ht-degree: 91%
 
 ---
 
 # Technische Workflows{#about-technical-workflows}
 
-Adobe Campaign verfügt über eine Reihe integrierter technischer Workflows. Diese verwalten Verfahren und Vorgänge, die für eine periodische Ausführung auf dem Server geplant sind. Sie ermöglichen die Wartung der Datenbank, die Weiterleitung von Tracking-Informationen über Sendungen oder die Einrichtung vorläufiger Versandprozesse. Technische Workflows werden über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** konfiguriert.
-
-![](assets/navtree.png)
-
-Zur Erstellung von technischen Workflows stehen spezifische Vorlagen zu Verfügung. Diese können je nach Bedarf angepasst werden.
-
-Der Unterordner **[!UICONTROL Kampagnenprozesse]** enthält die für die Ausführung wichtiger Kampagnenvorgänge (Benachrichtigungen zu Aufgaben, Lagerverwaltung, Kostenberechnungen etc.) notwendigen Workflows.
-
-![](assets/campaign-processes-wf.png)
-
-
->[!NOTE]
->
->Die mit den verschiedenen Modulen gelieferten technischen Workflows werden in einem [gesonderten Kapitel](technical-workflows.md) beschrieben.
-
-Sie haben die Möglichkeit, im Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** weitere technische Workflows zu erstellen. Dies sollte jedoch erfahrenen Benutzern vorbehalten bleiben.
-
-Die angebotenen Aktivitäten entsprechen denen für Zielgruppen-Workflows. [Mehr dazu](targeting-workflows.md)
-
-Die in diesem Abschnitt beschriebenen Workflows werden mit den verschiedenen in Adobe Campaign integrierten Paketen installiert. Diese Pakete und die damit verbundenen technischen Workflows hängen von Ihrer Lizenzvereinbarung ab.
+Adobe Campaign verfügt über eine Reihe integrierter technischer Workflows. Sie steuern Vorgänge und Aufträge, die für die periodische Ausführung auf dem Server geplant sind. Technische Workflows führen Wartungsarbeiten an Ihrer Campaign-Datenbank durch, verwalten Tracking-Daten zu Sendungen und richten provisorische Versandprozesse ein.
 
 Standardmäßig sind technische Workflows in einem Unterordner des folgenden Knotens verfügbar: **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]**.
 
-Beachten Sie, dass technische Workflows nur von Benutzern mit Administratorrechten gestartet und geändert werden können.
+![](assets/navtree.png){width="50%" align="center" zoomable="yes"}
 
 >[!NOTE]
 >
->Technische Workflows im Zusammenhang mit dem Message Center-Add-on sind standardmäßig im Knoten **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technische Workflows]** verfügbar.
+>* Die Liste der technischen Workflows, die mit jedem Modul installiert werden, finden Sie in [diesem Abschnitt](#list-technical-workflows).
+>
+>* Technische Workflows, die mit dem Message Center-Add-on in Verbindung stehen, werden standardmäßig im Knoten **[!UICONTROL Administration]** > **[!UICONTROL Betreibung]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technische Workflows]** gespeichert.
 
-In diesem [Abschnitt](monitor-technical-workflows.md) erfahren Sie, wie Sie technische Workflows überwachen.
+Der Unterordner **[!UICONTROL Kampagnenprozesse]** enthält die für die Ausführung wichtiger Kampagnenvorgänge (Benachrichtigungen zu Aufgaben, Lagerverwaltung, Kostenberechnungen etc.) notwendigen Workflows.
 
+![](assets/campaign-processes-wf.png){width="70%" align="center" zoomable="yes"}
+
+
+## Technische Workflows verwalten und erstellen {#manage-tech-workflows}
+
+Technische Workflows für Campaign können nur von Benutzern mit **Administratorberechtigungen** gestartet und geändert werden. In diesem [Abschnitt](monitor-technical-workflows.md) erfahren Sie, wie Sie technische Workflows überwachen.
+
+Sie können benutzerdefinierte technische Workflows im Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** der Baumstruktur erstellen. Zur Erstellung von technischen Workflows stehen spezifische Vorlagen zu Verfügung. Sie können entsprechend Ihren Anforderungen konfiguriert werden. Dieser Prozess ist jedoch erfahrenen Benutzern vorbehalten. Die in technischen Workflows verfügbaren Aktivitäten entsprechen denen von Zielgruppen-Workflows. [Weitere Informationen](targeting-workflows.md).
 
 ## Liste der technischen Workflows {#list-technical-workflows}
+
+Die auf dieser Seite beschriebenen Workflows werden mit den integrierten Adobe Campaign-Packages installiert. Diese Pakete und die damit verbundenen technischen Workflows hängen von Ihrer Lizenzvereinbarung und Ihren Add-ons ab.
 
 | Technischer Workflow | Package | Beschreibung  |
 |------|--------|-----------|
@@ -59,12 +52,12 @@ In diesem [Abschnitt](monitor-technical-workflows.md) erfahren Sie, wie Sie tech
 | **Datenbankbereinigung** (cleanup) | Standardmäßig installiert | Dieser Workflow ist der Datenbankwartungs-Workflow: Er führt verschiedene Berechnungen mit Statistiken und Prozessen durch und löscht gemäß der definierten Konfiguration im Bereitstellungsassistenten veraltete Daten aus der Datenbank. Er wird standardmäßig jeden Tag um 4 Uhr morgens ausgelöst. |
 | **Löschen von gesperrten LINE-Benutzern** (deleteBlockedLineUsersV2) | LINE-Kanal | Dieser Workflow stellt sicher, dass die Daten der LINE V2-Benutzer gelöscht werden, nachdem sie das offizielle LINE-Konto 180 Tage lang gesperrt haben. |
 | **Löschen von Datenschutzanfragedaten** (deletePrivacyRequestsData) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten gelöscht. |
-| **Versandindikatoren** (deliveryIndicators) | Mid-Sourcing-Plattform | Dieser Workflow aktualisiert Tracking-Indikatoren eines Versands. Er wird standardmäßig stündlich ausgelöst. |
+| **Versandindikatoren** (deliveryIndicators) | Standardmäßig installiert | Dieser Workflow aktualisiert Tracking-Indikatoren eines Versands. Er wird standardmäßig stündlich ausgelöst. |
 | **Bearbeitungsvorgänge des verteilten Marketings** (centralLocalMgt) | Zentrales/lokales Marketing (verteiltes Marketing) | Dieser Workflow führt die Vorgänge im Zusammenhang mit dem Modul &quot;verteiltes Marketing&quot; aus. Er erstellt lokale Kampagnen und verwaltet Benachrichtigungen in Bezug auf Bestellungen und die Verfügbarkeit von Campaign-Packages. |
 | **Bereinigen von Ereignissen** (webAnalyticsPurgeWebEvents) | Web Analytics-Connectoren | Mit diesem Workflow können Sie jedes Ereignis aus dem Datenbankfeld entsprechend dem im Feld &quot;Lebensdauer&quot; konfigurierten Zeitraum löschen. |
 | **Exportieren von Audiences zu Adobe Experience Cloud** (exportSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow exportiert freigegebene Audiences/Segmente. Diese können dann in anderen von Ihnen verwendeten Lösungen von Adobe Experience Cloud genutzt werden. |
 | **ffdaUnsuscribe** | Standardmäßig installiert | Dieser Workflow verarbeitet Abmeldungen, die als Bounce-E-Mails zurückgesendet wurden (mithilfe der `<mailto>`-Abmeldemethode). Er wird täglich im Stundentakt nur auf Marketing-Instanzen mit einer Unternehmensbereitstellung (FFDA) ausgeführt.<br/><br/>Der Workflow überprüft Broadlogs aus einem bestimmten Zeitraum (letzte Verarbeitungszeit und aktuelle Zeit), die vom inMail-Modul als Abmelde-Bounces markiert werden (Markierung wurde in der NmsBroadLog-Tabelle in der Spalte „iFlags“ festgelegt), und verarbeitet eine Abmeldung abhängig davon, ob der Dienst des Broadlogs festgelegt ist oder nicht:<ul><li>Wenn die serviceId „0“ lautet (nicht definiert), wird die Empfängerin bzw. der Empfänger auf die Blockierungsliste gesetzt.</li><li>Wenn die serviceId nicht „0“ lautet (mit einem vorhandenen Dienst verknüpft), wird die Empfängerin bzw. der Empfänger von diesem Dienst abgemeldet.</li></ul><br/>Hinweis: Dieser Workflow verarbeitet nur Bounce-Abmeldungen. Abmeldungen, die über den Ausschluss-Link erfolgen, und Ein-Klick-Abmeldungen (URL-Methode) werden separat außerhalb dieses Workflows verarbeitet. |
-| **Prognosen** (forecasting) | Versand | Dieser Workflow analysiert die im Planungskalender verzeichneten Sendungen (Erstellung von Planungslogs). Er wird standardmäßig täglich um 1 Uhr morgens ausgelöst. |
+| **Prognosen** (forecasting) | Standardmäßig installiert | Dieser Workflow analysiert die im Planungskalender verzeichneten Sendungen (Erstellung von Planungslogs). Er wird standardmäßig täglich um 1 Uhr morgens ausgelöst. |
 | **Berechnung des vollständigen Aggregats (propositionrcp-Cube)** (agg_nmspropositionrcp_full) | Angebotsmodul (interaction) | Dieser Workflow aktualisiert das volle Aggregat des Angebotsvorschlag-Cubes. Er wird standardmäßig täglich um 6 Uhr morgens ausgelöst. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Versand, Marketing-Angebot und -Datum. Der Cube „Angebotsvorschlag“ wird dann zur Erstellung von angebotsbasierten Berichten verwendet. Weitere Informationen zu Cubes finden Sie in [diesem Abschnitt](../../v8/reporting/gs-cubes.md). |
 | **Identifizierung der konvertierten Kontakte** (webAnalyticsFindConverted) | Web Analytics-Connectoren | Dieser Workflow indexiert die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Die von diesem Workflow ermittelten Daten werden im Bericht Remarketing-Effizienz zur Verfügung gestellt (siehe diese Seite). |
 | **Importieren von Audiences aus Adobe Experience Cloud** (importSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow ermöglicht den Import von Audiences/Segmenten aus den unterschiedlichen Adobe Experience Cloud-Lösungen in Adobe Campaign. |
