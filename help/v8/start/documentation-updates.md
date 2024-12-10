@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Auf dieser Seite werden alle aktuellen Updates in der [!DNL Campaign] v8 (Konsol
 
 ## November 2024 {#october-2024}
 
-* Der Workflow **ffdaUnsubscribe** wurde zur Liste der technischen Workflows hinzugefügt. [Weitere Informationen](../../automation/workflow/technical-workflows.md)
+* Der Workflow **ffdaUnsubscribe** wurde der Liste technischer Workflows hinzugefügt. [Weitere Informationen](../../automation/workflow/technical-workflows.md)
 * Die Seite über Campaign-Versionen und -Upgrades wurde verbessert. [Weitere Informationen](upgrades.md)
 
 ## Juni 2024 {#june-2024}

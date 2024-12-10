@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 04bda36f-051f-41a3-84b3-6af3c5e34ab2
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '775'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 Adobe Campaign wird regelmäßig aktualisiert. Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihr Produkterlebnis zu verbessern. Adobe empfiehlt allen Kundinnen und Kunden dringend, ein Upgrade auf die neueste Version durchzuführen.
 
-Wenn Sie Managed Cloud Services nutzen, wird Ihre Instanz von Adobe mit jeder neuen Version aktualisiert. Ihr Adobe-Support-Mitarbeiter kontaktiert Sie zum Upgrade Ihrer Umgebungen. Die Campaign-Client-Konsole **muss auf dieselbe Version aktualisiert werden** wie die Campaign-Server. Auf [dieser Seite](../start/connect.md#upgrade-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+Wenn Sie Managed Cloud Services nutzen, wird Ihre Instanz von Adobe mit jeder neuen Version aktualisiert. Ihr Kontakt beim Adobe-Support wird sich mit Ihnen in Verbindung setzen, um Ihre Umgebungen zu aktualisieren. Die Campaign-Client-Konsole **muss auf dieselbe Version aktualisiert werden** wie die Campaign-Server. Auf [dieser Seite](../start/connect.md#upgrade-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
 Außerdem sollten Sie als Kundin bzw. Kunde sicherstellen, dass Sie die neuesten unterstützten Versionen der in der [Kompatibilitätsmatrix](compatibility-matrix.md) aufgeführten Systeme verwenden.
 
@@ -58,14 +58,14 @@ Sie erhalten folgende Informationen:
 
 ### So erhalten Sie Informationen zu Veröffentlichungen neuer Versionen {#upgrades-0}
 
-Neue Versionen und die Änderungen, die sie enthalten, werden in den [Versionshinweise](release-notes.md) aufgeführt. Sobald eine neue Version verfügbar ist, kontaktiert Ihr Adobe-Support-Mitarbeiter Sie und aktualisiert Ihre Umgebungen.
+Neue Versionen und die Änderungen, die sie enthalten, werden in den [Versionshinweise](release-notes.md) aufgeführt. Sobald eine neue Version verfügbar ist, wird Ihr Kontakt beim Adobe-Support sich mit Ihnen in Verbindung setzen und Ihre Umgebungen aktualisieren.
 
-Um über neue Experience Cloud-Lösungsversionen und deren Inhalt informiert zu werden, abonnieren Sie die Mitteilung [Adobe Priority Product Updates](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"} .
+Abonnieren Sie [Prioritätsprodukt-Updates von Adobe](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"}, um über neue Versionen der Experience Cloud-Lösungen und deren Inhalt informiert zu werden.
 
 Sie können außerdem die [Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} besuchen, um Informationen über Versionsaktualisierungen zu erhalten.
 
 
-### Warum muss mein Unternehmen ein Upgrade durchführen? {#upgrades-1}
+### Warum benötigt meine Organisation ein Upgrade? {#upgrades-1}
 
 Durch die Aktualisierung Ihrer Infrastruktur auf die neueste Version wird sichergestellt, dass Ihr Konto vor Sicherheitslücken geschützt ist und dass die aktuelle Technologie verwendet wird.
 
@@ -85,8 +85,8 @@ Normalerweise bietet ein Upgrade auf die neueste Version Folgendes:
   Im Laufe der Zeit ermittelt das Adobe Campaign-Team Möglichkeiten zur Verbesserung der Stabilität und Leistung des Produkts sowie zur Behebung bekannter Probleme. Durch die Aktualisierung wird Ihre Instanz mit diesen Verbesserungen auf dem neuesten Stand gehalten und die allgemeinen Herausforderungen für Unternehmen beseitigt, die in ihren Campaign-Instanzen ein rasches Wachstum und/oder eine schnelle Komplexität verzeichnen. Verbesserungen im gesamten Technologie-Stack von Campaign werden sowohl dem Marketing- als auch dem IT-Team Ihres Unternehmens zugutekommen.
 
 
-### Was ist der Prozess und der Zeitplan für eine Aktualisierung? {#upgrades-2}
+### Wie sieht das Verfahren und der Zeitplan für ein Upgrade aus? {#upgrades-2}
 
 Als v8-Kunde oder -Kundin werden Sie von Adobe direkt benachrichtigt, wenn für Ihr Konto ein Upgrade auf eine neue Version erforderlich ist.
 
-Das Adobe-Team begleitet Ihr Unternehmen durch diese Journey.  Ein Team engagierter Kundenbetreuer, Produktmanager, Techniker, TechOps-Spezialisten und Produktberater ist hier, um Ihnen zu helfen und sicherzustellen, dass das Erlebnis reibungslos funktioniert.
+Das Adobe-Team begleitet Ihr Unternehmen durch diese Journey.  Zur Unterstützung wurde ein Team aus engagierten Mitarbeitenden aus den Bereichen Kundenunterstützung, Produkt-Management, Engineering, TechOps und Produktberatung zusammengestellt, um ein möglichst reibungsloses Erlebnis zu gewährleisten.

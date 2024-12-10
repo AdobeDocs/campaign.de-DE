@@ -6,15 +6,15 @@ feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
 source-git-commit: 0a074b2ef84e89e67363b722372718e4c46d65e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1827'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Technische Workflows{#about-technical-workflows}
 
-Adobe Campaign verfügt über eine Reihe integrierter technischer Workflows. Sie steuern Vorgänge und Aufträge, die für die periodische Ausführung auf dem Server geplant sind. Technische Workflows führen Wartungsarbeiten an Ihrer Campaign-Datenbank durch, verwalten Tracking-Daten zu Sendungen und richten provisorische Versandprozesse ein.
+Adobe Campaign verfügt über eine Reihe integrierter technischer Workflows. Diese kontrollieren Verfahren und Aufträge, die für eine periodische Ausführung auf dem Server geplant sind. Technische Workflows führen Wartungsarbeiten an Ihrer Campaign-Datenbank durch, verwalten Tracking-Daten zu Sendungen und richten auch vorläufige Versandprozesse ein.
 
 Standardmäßig sind technische Workflows in einem Unterordner des folgenden Knotens verfügbar: **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]**.
 
@@ -22,23 +22,23 @@ Standardmäßig sind technische Workflows in einem Unterordner des folgenden Kno
 
 >[!NOTE]
 >
->* Die Liste der technischen Workflows, die mit jedem Modul installiert werden, finden Sie in [diesem Abschnitt](#list-technical-workflows).
+>* Die Liste mit den verschiedenen Modulen gelieferten technischen Workflows werden in [diesem Abschnitt](#list-technical-workflows) beschrieben.
 >
->* Technische Workflows, die mit dem Message Center-Add-on in Verbindung stehen, werden standardmäßig im Knoten **[!UICONTROL Administration]** > **[!UICONTROL Betreibung]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technische Workflows]** gespeichert.
+>* Technische Workflows, die sich auf das Add-on Message Center beziehen, werden standardmäßig im Knoten **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technische Workflows]** gespeichert.
 
 Der Unterordner **[!UICONTROL Kampagnenprozesse]** enthält die für die Ausführung wichtiger Kampagnenvorgänge (Benachrichtigungen zu Aufgaben, Lagerverwaltung, Kostenberechnungen etc.) notwendigen Workflows.
 
 ![](assets/campaign-processes-wf.png)
 
-## Technische Workflows verwalten und erstellen {#manage-tech-workflows}
+## Verwalten und Erstellen technischer Workflows {#manage-tech-workflows}
 
-Technische Workflows für Campaign können nur von Benutzern mit **Administratorberechtigungen** gestartet und geändert werden. In diesem [Abschnitt](monitor-technical-workflows.md) erfahren Sie, wie Sie technische Workflows überwachen.
+Technische Workflows in Campaign können nur von Benutzerinnen und Benutzer mit der Berechtigung **Administration** gestartet und geändert werden. In diesem [Abschnitt](monitor-technical-workflows.md) erfahren Sie, wie Sie technische Workflows überwachen.
 
-Sie können benutzerdefinierte technische Workflows im Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** der Baumstruktur erstellen. Zur Erstellung von technischen Workflows stehen spezifische Vorlagen zu Verfügung. Sie können entsprechend Ihren Anforderungen konfiguriert werden. Dieser Prozess ist jedoch erfahrenen Benutzern vorbehalten. Die in technischen Workflows verfügbaren Aktivitäten entsprechen denen von Zielgruppen-Workflows. [Weitere Informationen](targeting-workflows.md).
+Sie können benutzerdefinierte technische Workflows im Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** des Navigationsbaums erstellen. Zur Erstellung von technischen Workflows stehen spezifische Vorlagen zur Verfügung. Diese können je nach Bedarf angepasst werden. Dies sollte jedoch erfahrenen Benutzerinnen und Benutzern vorbehalten bleiben. Die in technischen Workflows verfügbaren Aktivitäten entsprechen denen für Zielgruppen-Workflows. [Weitere Informationen](targeting-workflows.md).
 
 ## Integrierte technische Workflows {#list-technical-workflows}
 
-Die auf dieser Seite beschriebenen Workflows werden mit den integrierten Adobe Campaign-Packages installiert. Diese Pakete und die damit verbundenen technischen Workflows hängen von Ihrer Lizenzvereinbarung und Ihren Add-ons ab.
+Die auf dieser Seite beschriebenen Workflows werden mit den verschiedenen in Adobe Campaign integrierten Paketen installiert. Diese Pakete und die damit verbundenen technischen Workflows hängen von Ihrer Lizenzvereinbarung und den Add-ons ab.
 
 | Technischer Workflow | Package | Beschreibung  |
 |------|--------|-----------|
