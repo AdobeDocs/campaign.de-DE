@@ -5,10 +5,10 @@ feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
-workflow-type: ht
-source-wordcount: '1527'
-ht-degree: 100%
+source-git-commit: e465b846b3144a2138bb912b4baa09238f8c5b4c
+workflow-type: tm+mt
+source-wordcount: '1552'
+ht-degree: 98%
 
 ---
 
@@ -143,6 +143,10 @@ Weitere Informationen hierzu finden Sie auf der Seite [Produktprofile für Adobe
 
 
 1. Ordnen Sie unter der Kategorie **[!UICONTROL eVars]** die beiden **[!UICONTROL Konversionsvariablen]** zu, die in [!DNL Adobe Analytics] konfiguriert sind.
+
+   >[!NOTE]
+   >
+   >Die Felder Kampagnen-ID und Broadload-ID werden über JavaScript auf der Landingpage oder durch Verarbeitungsregeln erfasst. [Weitere Informationen zu Verarbeitungsregeln](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 
