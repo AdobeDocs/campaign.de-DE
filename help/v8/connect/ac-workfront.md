@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit Adobe Campaign und Adobe Workfront
+title: 'Arbeiten mit Adobe Campaign und Adobe Workfront '
 description: Erfahren Sie, wie Sie mit Campaign und Adobe Workfront arbeiten können
 role: Admin, User
 level: Beginner

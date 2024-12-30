@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Campaign Control Panel {#ac-control-panel}
 
-Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign effizienteres Arbeiten. Sie können damit die Einstellungen aller Instanzen verwalten und deren Nutzung erfassen. Dank der intuitiven Benutzeroberfläche können die Nutzung wichtiger Ressourcen überwacht und administrative Aufgaben einfach durchgeführt werden. So können beispielsweise IP-Adressen auf die Zulassungsliste gesetzt, der Speicher von SFTP-Servern überwacht und die Schlüssel verwaltet werden.
+Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign effizienteres Arbeiten. Sie können damit die Einstellungen aller Instanzen verwalten und deren Nutzung erfassen. Mit der intuitiven Benutzeroberfläche können Sie die Nutzung von Schlüsselressourcen einfach überwachen und administrative Aufgaben wie das Hinzufügen von IP-Adressen, die Überwachung von SFTP-Speicher, die Schlüsselverwaltung und vieles mehr durchführen.
 
 Wichtigste Vorteile:
 

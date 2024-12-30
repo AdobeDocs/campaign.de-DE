@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
 source-git-commit: 4e52e596d4eb2a8e1a1799fcd7104dcd894b6c2d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2311'
 ht-degree: 100%
 
@@ -31,19 +31,19 @@ Wenn die Bildlaufleiste auf Ihrer Benutzeroberfläche deaktiviert ist, greifen S
 
 Sobald Ihr Push-Versand erstellt ist, können Sie seinen Inhalt mit einer der folgenden Vorlagen definieren:
 
-* **Standard** ermöglicht es Ihnen, Benachrichtigungen mit einem einfachen Symbol und einem dazugehörigen Bild zu versenden.
+* **Standard** ermöglicht es Ihnen, Benachrichtigungen mit einem einfachen Symbol und einem zugehörigen Bild zu senden.
 
-* **Einfach** ermöglicht es Ihnen, Texte, Bilder und Schaltflächen in Ihre Benachrichtigungen einzufügen.
+* **Einfach** ermöglicht es Ihnen, Text, Bilder und Schaltflächen in Ihre Benachrichtigungen einzufügen.
 
 * **Karussell** ermöglicht es Ihnen, Benachrichtigungen mit Text und mehreren Bildern zu senden, zwischen denen die Benutzenden hin und her wischen können.
 
-* **Symbolschaltflächen** ermöglichen es Ihnen, Benachrichtigungen mit einem einfachen Symbol und einem zugehörigen Bild zu versnden.
+* **Symbolschaltflächen** ermöglichen es Ihnen, Benachrichtigungen mit einem einfachen Symbol und einem zugehörigen Bild zu versenden.
 
 * **Eingabefeld** erfasst Benutzereingaben und Feedback direkt über die Benachrichtigung.
 
 * **Produktkatalog** zeigt eine Vielzahl von Produktbildern an.
 
-* **Produktbewertung** ermöglicht es Benutzenden, Feedback und Bewertungen von Produkten abzugeben.
+* **Produktbewertung** ermöglicht Benutzenden die Rückmeldung von Feedback und Bewertung von Produkten.
 
 * **Timer** fügt einen Live-Countdown-Timer in Ihre Benachrichtigungen ein.
 
@@ -69,7 +69,7 @@ Navigieren Sie durch die folgenden Registerkarten, um mehr über die Personalisi
 
    ![](assets/rich_push_default_3.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Einfach]
 
@@ -114,7 +114,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    ![](assets/rich_push_basic_4.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Karussell]
 
@@ -149,7 +149,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    ![](assets/rich_push_carousel_3.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Symbolschaltflächen]
 
@@ -173,7 +173,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    ![](assets/rich_push_icon_5.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Eingabefeld]
 
@@ -280,7 +280,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    ![](assets/rich_push_carousel_3.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Timer]
 
@@ -328,7 +328,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!ENDTABS]
 

@@ -5,14 +5,15 @@ description: Erfahren Sie, wie Sie einen Rich-Push-Benachrichtigungsversand in i
 feature: Push
 role: User
 level: Beginner
-source-git-commit: 4e52e596d4eb2a8e1a1799fcd7104dcd894b6c2d
-workflow-type: ht
+exl-id: 75a57ddb-558e-4dd2-a684-e63e51545554
+source-git-commit: fef2c829da637b43067147b51aff7030d25c9744
+workflow-type: tm+mt
 source-wordcount: '1260'
 ht-degree: 100%
 
 ---
 
-# Erstellen eines Rich-Push-Versands in iOS {#rich-push}
+# Erstellen eines Rich-Push-Versands für iOS {#rich-push}
 
 >[!IMPORTANT]
 >
@@ -22,7 +23,7 @@ ht-degree: 100%
 
 Sobald Ihr Push-Versand erstellt ist, können Sie seinen Inhalt mit einer der folgenden Vorlagen definieren:
 
-* **Standard** ermöglicht es Ihnen, Benachrichtigungen mit einem einfachen Symbol und einem dazugehörigen Bild zu versenden.
+* **Standard** ermöglicht es Ihnen, Benachrichtigungen mit einem einfachen Symbol und einem zugehörigen Bild zu senden.
 
 * **Einfach** ermöglicht es Ihnen, Text, Bilder und Schaltflächen in Ihre Benachrichtigungen einzufügen.
 
@@ -173,18 +174,17 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 | **[!UICONTROL Wert]** | Legen Sie eine Zahl fest, die verwendet wird, um direkt auf dem Anwendungssymbol die Anzahl der neuen ungelesenen Informationen anzuzeigen. |
 | **[!UICONTROL Kritischer Alarmmodus]** | Aktivieren Sie diese Option, um Ihrer Benachrichtigung einen Ton hinzuzufügen, selbst wenn das Telefon der Benutzerin oder des Benutzers auf den Fokusmodus festgelegt oder das iPhone stummgeschaltet ist. |
 | **[!UICONTROL Name]** | Wählen Sie den Ton aus, der beim Erhalt der Benachrichtigung vom Mobilgerät abgespielt werden soll. |
-| **[!UICONTROL Lautstärke]** | Legen Sie die Lautstärke des Tons auf einer Skala von 0 bis 100 fest. Die Töne müssen in der App enthalten sein und bei der Erstellung des Dienstes definiert werden. |
+| **[!UICONTROL Lautstärke]** | Legen Sie die Lautstärke Ihres Tons auf einer Skala von 0 bis 100 fest. Die Töne müssen in der App enthalten sein und bei der Erstellung des Dienstes definiert werden. |
 
 ### Erweiterte Optionen {#notification-options}
 
 | Parameter | Beschreibung |
 |---------|---------|
 | **[!UICONTROL Veränderlicher Inhalt]** | Aktivieren Sie diese Option, damit die Mobile App Medieninhalte herunterladen kann. |
-| **[!UICONTROL Thread-ID]** | Legen Sie die Kennung fest, die verwendet wird, um zusammengehörige Benachrichtigungen zu gruppieren. |
+| **[!UICONTROL Thread-ID]** | Legen Sie die Kennung fest, die zur Gruppierung zusammengehöriger Meldungen verwendet wird. |
 | **[!UICONTROL Kategorie]** | Legen Sie den Namen Ihrer Kategorie-ID fest, über die Aktionsschaltflächen angezeigt werden. Diese Benachrichtigungen ermöglichen es Benutzerinnen und Benutzern, verschiedene Aufgaben als Reaktion auf eine Benachrichtigung schneller auszuführen, ohne die App öffnen oder darin navigieren zu müssen. |
 | **[!UICONTROL ID des Zielinhalts]** | Legen Sie eine Kennung fest, die angibt, welches App-Fenster beim Öffnen der Benachrichtigung im Vordergrund erscheinen soll. |
 | **[!UICONTROL Startbild]** | Legen Sie den Dateinamen des anzuzeigenden Startbildes fest. Wenn die Benutzerinnen und Benutzer die App starten, wird anstelle des Startbildschirms der App das ausgewählte Bild angezeigt. |
 | **[!UICONTROL Klick-Aktion]** | Legt die Aktion fest, die für das Klicken der Benutzenden auf Ihre Benachrichtigung zugewiesen ist. |
-| **[!UICONTROL Unterbrechungsgrad]** | <ul><li>Aktiv: Standardmäßig eingestellt, zeigt das System die Benachrichtigung sofort an, der Bildschirm leuchtet auf und es kann ein Ton abgespielt werden. Benachrichtigungen umgehen nicht die Fokusmodi.</li><li>Passiv: Das System fügt die Benachrichtigung der Benachrichtigungsliste hinzu, ohne dass der Bildschirm aufleuchtet oder ein Ton abgespielt wird. Benachrichtigungen umgehen nicht die Fokusmodi.</li><li> Dringlich: Das System zeigt die Benachrichtigung sofort an, der Bildschirm leuchtet auf, es kann ein Ton abgespielt werden und der Fokusmodus wird unterbrochen. Für diese Stufe ist keine spezielle Berechtigung von Apple erforderlich.</li><li>Kritisch: Das System zeigt die Benachrichtigung sofort an, der Bildschirm leuchtet auf und die Stummschaltung oder der Fokusmodus werden umgangen. Beachten Sie, dass für diese Stufe eine spezielle Berechtigung von Apple erforderlich ist.</li></ul> |
+| **[!UICONTROL Unterbrechungsgrad]** | <ul><li>Aktiv: Standardmäßig eingestellt, zeigt das System die Benachrichtigung sofort an, der Bildschirm leuchtet auf und es kann ein Ton abgespielt werden. Benachrichtigungen umgehen nicht die Fokusmodi.</li><li>Passiv: Das System fügt die Benachrichtigung der Benachrichtigungsliste hinzu, ohne dass der Bildschirm aufleuchtet oder ein Ton abgespielt wird. Benachrichtigungen umgehen nicht die Fokusmodi.</li><li> Zeitkritisch: Das System zeigt die Benachrichtigung sofort an, der Bildschirm leuchtet auf, es kann ein Ton abgespielt werden und Fokusmodi werden umgangen. Für diese Stufe ist keine spezielle Berechtigung von Apple erforderlich.</li><li>Kritisch: Das System zeigt die Benachrichtigung sofort an, der Bildschirm leuchtet auf und der Stummschalter oder die Focus-Modi werden umgangen. Beachten Sie, dass für diese Stufe eine spezielle Berechtigung von Apple erforderlich ist.</li></ul> |
 | **[!UICONTROL Relevanzwert]** | Legen Sie einen Relevanzwert auf der Skala von 0 bis 100 fest. Das System verwendet diesen Wert, um die Benachrichtigungen in der Benachrichtigungszusammenfassung zu sortieren. |
-

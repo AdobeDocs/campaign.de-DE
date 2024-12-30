@@ -8,7 +8,7 @@ exl-id: 711256e2-ab77-404a-b052-6793a85da193
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Personalisierungsdaten können aus verschiedenen Datenquelle bezogen werden: aus
 
 ## Campaign-Datenbank als Datenquelle
 
-In den häufigsten Fällen werden Personalisierungsdaten in der Datenbank gespeichert. Beispielsweise sind „Empfänger-Personalisierungsfelder“ alle in der Empfängertabelle definierten Felder, entweder Standardfelder (typischerweise: Nachname, Vorname, Adresse, Stadt, Geburtsdatum usw.) oder benutzerdefinierte Felder.
+In den häufigsten Fällen werden Personalisierungsdaten in der Datenbank gespeichert. Beispielsweise sind „Empfänger-Personalisierungsfelder“ alle in der Empfängertabelle definierten Felder, Standardfelder (typischerweise: Nachname, Vorname, Adresse, Stadt, Geburtsdatum usw.) oder benutzerdefinierte Felder.
 
 ![Personalisierungsfelder einer Kampagne in einer E-Mail](assets/perso-campaign-datasource.png)
 

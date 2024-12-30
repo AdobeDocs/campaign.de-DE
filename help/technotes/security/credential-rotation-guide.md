@@ -4,7 +4,8 @@ title: Technote – Handbuch zur Rotation von Anmeldedaten
 description: Technote zu Adobe Campaign – Handbuch zur Rotation von Anmeldedaten
 hide: true
 hidefromtoc: true
-source-git-commit: 9d280a5c9d428a2795f2c893aad2d31ae2f122b9
+exl-id: 0848ee2d-3506-4167-9aea-a1589aa82805
+source-git-commit: 14e49a0b4de1b82239113bd670213449f464c27f
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%

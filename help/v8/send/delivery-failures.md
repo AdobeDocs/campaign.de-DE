@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3042'
 ht-degree: 100%
 
@@ -312,7 +312,7 @@ Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
    <td> Nein<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problem mit Zertifikat (Passwort, Beschädigung etc.) und Problem bei Testverbindung mit APNs<br /> </td> 
+   <td> Problem mit Zertifikat (Passwort, Beschädigung etc.) und Fehler bei Testverbindung mit APNS<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Verschiedene Fehlernachrichten je nach Fehler<br /> </td> 
    <td> Soft<br /> </td> 

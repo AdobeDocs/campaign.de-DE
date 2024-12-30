@@ -8,7 +8,7 @@ exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -60,11 +60,11 @@ Dies sind die wichtigsten Prozesse:
 
 * **Weiterleitungs-Server** (nlserver webmdl) – Bei E-Mails übernimmt Adobe Campaign automatisch das Öffnungs- und Klick-Tracking (wobei das Tracking von Transaktionen auf Website-Ebene ebenfalls möglich ist). Hierfür werden die in den E-Mail-Nachrichten enthaltenen URLs so umgeschrieben, dass sie auf dieses Modul verweisen. Dieses wiederum registriert Internet-Benutzer, während diese an die Ziel-URL weitergeleitet werden.
 
-  Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht sind diese Funktionen in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert. und nur unter Windows verfügbar.
+  Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht ist diese Funktion in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert und nur unter Windows verfügbar.
 
 Daneben sind auch noch weitere technische Prozesse verfügbar:
 
-* **Bounce Messages verwalten** (nlserver inMail) – Dieser Prozess ermöglicht den automatischen Abruf von E-Mails aus Postfächern, die für den Empfang von Nachrichten konfiguriert sind, die bei fehlgeschlagenem Versand als unzustellbar zurückgesendet werden. Diese Nachrichten werden dann einer regelbasierten Verarbeitung unterzogen, um die Gründe für den Nichtversand zu ermitteln (unbekannter Empfänger, Kontigent überschritten, etc.) und den Versandstatus in der Datenbank zu aktualisieren. Alle diese Operationen laufen vollkommen automatisch und sind vorkonfiguriert.
+* **Bounce Messages verwalten** (nlserver inMail) – Dieser Prozess ermöglicht den automatischen Abruf von E-Mails aus Postfächern, die für den Empfang von Nachrichten konfiguriert sind, die bei fehlgeschlagenem Versand als unzustellbar zurückgesendet werden. Diese Nachrichten werden dann regelbasiert verarbeitet, um die Gründe für die Unzustellbarkeit (z. B. Empfänger unbekannt, Nachrichtenkontingente ausgeschöpft) zu ermitteln und den Versandstatus in der Datenbank zu aktualisieren. Alle diese Operationen laufen vollkommen automatisch und sind vorkonfiguriert.
 
 * **Status des SMS-Versands** (nlserver sms) – Dieser Prozess fragt beim SMS-Router den Status des Versandfortschritts ab und aktualisiert diesen in der Datenbank.
 
@@ -81,7 +81,7 @@ Daneben sind auch noch weitere technische Prozesse verfügbar:
 
 ## Datenbank-Container {#db-containers}
 
-In der [Bereitstellung „Enterprise (FFDA)“](enterprise-deployment.md) nutzt die Cloud-Datenbank von Adobe Campaign [!DNL Snowflake], wo die funktionellen Daten (Profile, Abonnements, Inhalte usw.) und die technischen Daten (Versandvorgänge und Protokolle, Trackinglogs usw.) enthalten sind und die Arbeitsdaten (Bestellungen, Interessenten) für die Lösung abgelegt sind. Alle Komponenten von Adobe Campaign kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
+In ihrer [Enterprise (FFDA)-](enterprise-deployment.md) stützt sich die Adobe Campaign-Cloud-Datenbank auf [!DNL Snowflake], die die Funktionsdaten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versandvorgänge und -protokolle, Trackinglogs usw.) und die Arbeitsdaten (Käufe, Leads) für die Lösung enthält, und alle Adobe Campaign-Komponenten kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
 
 Sie können Adobe Campaign unter Verwendung der vordefinierten Datenbank und Schemata bereitstellen und diese vordefinierte Umgebung bei Bedarf erweitern. Der Zugriff auf alle Daten im Datamart durch Adobe Campaign erfolgt über SQL-Aufrufe. Adobe Campaign bietet außerdem ein vollständiges Komplement der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels dessen Daten in das und aus dem System importiert und exportiert werden können.
 

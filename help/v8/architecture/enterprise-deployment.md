@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Die [!DNL Snowflake]-Datenbank auf Marketing-Seite wird verwendet, um:
 * Alle Kundendaten zu speichern: Profile, kundenspezifische Daten wie Transaktionen, Produkte, Standorte usw.
 * Alle Ereignisse und Verhaltensdaten, die von Campaign generiert oder gesammelt werden, zu speichern, z. B. Versandlogs, Trackinglogs, Push-Registrierungen usw.
 * Alle Datenaggregate der oben Genannten zu speichern.
-* Eine Kopie (h+1) von Referenztabellen (wie Sendungen, Auflistungen, Länder usw.), die in Workflows, Kampagnen und Berichten verwendet werden, zu speichern.
+* Eine Kopie (h+1) von Referenztabellen (wie Sendungen, Auflistungen, Länder usw.) speichern, die in Workflows, Kampagnen und Berichten verwendet werden.
 * Alle Batch-Prozesse und -Workflows auszuführen.
 
 
@@ -63,7 +63,7 @@ Die PostgreSQL-Datenbank in der Marketing-Instanz wird verwendet, um:
 
 * Bestimmte Workloads auszuführen, z. B. APIs mit geringem Volumen.
 * Alle Campaign-Daten zu speichern, einschließlich Versand- und Kampagneneinstellungen, Workflow- und Service-Definitionen.
-* Alle integrierten Referenztabellen (Auflistungen, Länder usw.) zu speichern, die nach [!DNL Snowflake] repliziert werden.
+* Alle integrierten Referenztabellen (Auflistungen, Länder usw.) speichern, die nach [!DNL Snowflake] repliziert werden.
 
   Folgendes können Sie jedoch nicht tun:
    * Anpassungen für Kundendaten erstellen, z. B. keine Haushaltstabelle in PostgreSQL erstellen, sondern nur in Snowflake.

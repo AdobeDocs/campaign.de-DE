@@ -8,7 +8,7 @@ exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '1734'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
 1. **[!UICONTROL Kampagnenverantwortliche Benutzer]** (Vorgang)
 
-   Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten. Diese Berechtigung verleiht Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets etc.) im Rahmen von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
+   Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten. Damit können Sie auf die mit Kampagnen verknüpften Objekte (Pläne, Programme, Workflows, Budgets usw.) im Rahmen von **[!UICONTROL Kampagne]** (optionales Adobe Campaign-Modul) zugreifen.
 
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 

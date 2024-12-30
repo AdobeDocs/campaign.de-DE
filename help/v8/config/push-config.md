@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1232'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -499,7 +499,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
    Bei Benachrichtigungsinhalten muss der Tracking-Empfang auf zwei Ebenen konfiguriert werden:
 
    * `onMessageReceived` (Anwendung nicht im Hintergrund): Die Implementierung wurde im vorherigen Abschnitt
-   * `onCreate` der Startaktivität vorgenommen (oder der Zielaktivität, wenn die `click_action`-Funktion zum Einsatz kommt) (Anwendung nicht im Hintergrund).
+   * `onCreate` der Startaktivität (bzw. der Zielaktivität, wenn `click_action`Funktion verwendet wird) (Anwendung nicht im Hintergrund).
 
    Dies muss zur selben Zeit wie das Öffnungs-/Klicktracking erfolgen.
 

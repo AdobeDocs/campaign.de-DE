@@ -8,7 +8,7 @@ exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ Gehen Sie wie folgt vor, um einen Gestaltungsbaustein zu erstellen:
    * Wählen Sie einen **Versand**-Inhaltstyp aus.
    * Aktivieren Sie die Option **[!UICONTROL Im Personalisierungsmenü anzeigen]**, um den Baustein über das Einfügen-Symbol der Personalisierungsfelder verfügbar zu machen.
    * Aktivieren Sie bei Bedarf die Option **[!UICONTROL Der Inhalt des Bausteins ist formatabhängig]**, um zwei verschiedene Bausteine für HTML- und Text-E-Mails zu definieren.
-   * Geben Sie den Inhalt des Gestaltungsbausteins (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
+   * Geben Sie den Inhalt (HTML, Text, JavaScript usw.) des Gestaltungsbausteins ein und klicken Sie auf **[!UICONTROL Speichern]**.
 
 Nach der Speicherung ist der neue Gestaltungsbaustein im Versand-Editor verfügbar.
 
