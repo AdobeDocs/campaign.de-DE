@@ -6,7 +6,7 @@ feature: Campaigns, Audiences
 role: User
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 100%
 
@@ -101,7 +101,7 @@ Benutzer mit entsprechenden Berechtigungen können Zielgruppen-Workflows manuell
 
 Die Zielgruppenbestimmung kann so konfiguriert werden, dass sie entsprechend einer Planungsaktivität (Planungsassistent) oder abhängig von einem Ereignis (externes Signal, Dateiimport usw.) automatisch ausgeführt wird.
 
-Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) sind **asynchrone** Prozesse: der Befehl wird gespeichert und erst dann ausgeführt, wenn der Server verfügbar ist.
+Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) handelt es sich um **asynchrone** Prozesse: Der jeweilige Befehl wird gespeichert und wird ausgeführt, sobald der Server verfügbar ist.
 
 Über die Symbolleiste hingegen kann die Ausführung des Zielgruppen-Workflows unmittelbar gesteuert werden.
 

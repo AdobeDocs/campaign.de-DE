@@ -8,7 +8,7 @@ exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -58,7 +58,7 @@ Im Abschnitt **[!UICONTROL Dokument(e)]** des Kampagnen-Dashboards werden alle d
 
 ## Verwenden von Versandentwürfen {#delivery-outlines}
 
-Ein Versandentwurf besteht aus einem strukturierten Satz von Elementen (Dokumente, Geschäfte, Werbegutscheine usw.), der vom Unternehmen für eine bestimmte Kampagne erstellt wurde. Er wird im Zusammenhang mit Briefpost-Sendungen verwendet.
+Ein Versandentwurf ist ein strukturierter Satz von Elementen (Dokumente, Geschäfte, Werbegutscheine usw.), die vom Unternehmen und für eine bestimmte Kampagne erstellt werden. Er wird im Zusammenhang mit Briefpost-Sendungen verwendet.
 
 Diese Elemente sind in Versandentwürfen gruppiert und jeder Versandentwurf ist mit einem Versand verbunden. Auf diesen Versand wird in der an den **Dienstleister** gesendeten Extraktionsdatei verwiesen, damit diese Elemente an den Versand angehängt werden. Sie können beispielsweise einen Versandentwurf erstellen, der sich auf eine Unternehmenseinheit und die von ihr verwendeten Marketing-Prospekte bezieht.
 
@@ -89,7 +89,7 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 Ein Versandentwurf kann Artikel, Personalisierungsfelder und Angebote enthalten:
 
 * Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und dem Versand angehängt werden.
-* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen statt auf Empfängerinnen oder Empfänger beziehen. Auf diese Weise können Werte erstellt werden, die in Sendungen mit einer bestimmten Zielgruppe verwendet werden sollen (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Entwurf importiert.
+* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen und nicht auf Empfänger beziehen. So ist es möglich, Werte zu erstellen, die in Sendungen für eine bestimmte Zielgruppe verwendet werden (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Versandentwurf importiert.
 
   ![](assets/del-outline-perso-field.png)
 
