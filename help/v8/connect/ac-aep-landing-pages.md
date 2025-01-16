@@ -5,7 +5,7 @@ feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: 02d7909c409bd25cfa3cc7aad189247ce7b5176e
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 100%
@@ -121,7 +121,7 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
 
 Nachdem nun die Authentifizierungsoptionen in Campaign konfiguriert worden sind, müssen Sie benutzerdefinierte JavaScript-Codes erstellen, um die Datensynchronisation zwischen Campaign und Adobe Experience Platform von Ihrer Landingpage aus zu ermöglichen.
 
-## Hinzufügen von Optionen bei der Workflow-Ausführung {#javacript}
+## Hinzufügen von Optionen bei der Workflow-Ausführung {#javascript}
 
 Um die Datensynchronisation zwischen Landingpages und Adobe Experience Platform zu ermöglichen, müssen benutzerdefinierte JavaScript-Codes zu Adobe Campaign hinzugefügt werden.  Führen Sie folgende Schritte aus:
 

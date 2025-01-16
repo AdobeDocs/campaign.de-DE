@@ -4,16 +4,14 @@ title: Workflow-Eigenschaften
 description: Erfahren Sie mehr über die Campaign-Workflow-Eigenschaften.
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 63b7eaba3ea7b580d9b6c3c0e0c015c057539aa8
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 100%
+source-wordcount: '706'
+ht-degree: 87%
 
 ---
 
 # Workflow-Eigenschaften{#workflow-properties}
-
-
 
 ## Ausführungs-Tab {#execution-tab}
 
@@ -55,7 +53,17 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
   Diese Option darf nur zur Problembehebung verwendet werden und nie im Produktionsalltag. Bei Aktivierung der Option wird der Workflow prioritär. Alle anderen Workflows werden bis zu seinem Abschluss von der Workflow-Engine angehalten.
 
-### Umgang mit Fehlern       {#error-management}
+* **[!UICONTROL Watchdog-Supervisor aktivieren, um den Workflow dauerhaft laufen zu lassen]**
+
+  Diese Option zwingt Workflows dazu, nach einem Fehler automatisch neu zu starten. Nach der Aktivierung überprüft der Neustart alle 30 Sekunden den Status des Workflows und startet ihn bei Bedarf neu. Um das 30-Sekunden-Intervall anzupassen, können Sie die technische Option &quot;`XtkWorkflow_WatchdogTimerTimeout`&quot; erstellen und einen ganzzahligen Datentyp verwenden, um die gewünschte Verzögerung anzugeben.
+
+  >[!NOTE]
+  >
+  >Diese Option richtet sich an fortgeschrittene Benutzer und sollte nur für **technische Workflows** aktiviert werden.
+  >
+  >Sie ist standardmäßig für die zentralen Replikations-Workflows aktiviert, die mit dem Paket `fullFdaMkt`verfügbar sind.
+
+### Umgang mit Fehlern {#error-management}
 
 * **[!UICONTROL Fehlerbehebung]**
 
