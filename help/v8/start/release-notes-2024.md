@@ -1,11 +1,11 @@
 ---
-title: Versionshinweise 2023 zu Campaign v8 (Konsole)
-description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 2023
+title: Versionshinweise 2024 zu Campaign v8 (Konsole)
+description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 2024
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
+source-git-commit: 3bf433f3125183001d9f2a02a6a91011de1aa6ad
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1191'
 ht-degree: 97%
 
 ---
@@ -18,36 +18,11 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 **Auf dieser Seite**
 
-* Campaign v8.7 - [Version 8.7.1](#release-8-7-1) | [Version 8.7.2 ](#release-8-7-2)
+* Campaign v8.7 - [Version 8.7.1](#release-8-7-1)
 * Campaign v8.6 - [Version 8.6.1](#release-8-6-1) | [Version 8.6.2](#release-8-6-2) | [Version 8.6.3 ](#release-8-6-3)
 * Campaign v8.5 - [Version 8.5.3](#release-8-5-3)
 
 >[!ENDSHADEBOX]
-
-
-## Version 8.7.2 {#release-8-7-2}
-
-_3. September 2024_
-
->[!AVAILABILITY]
->
->Diese Version ist nur **eingeschränkt verfügbar**. Sie ist Kundinnen und Kunden vorbehalten, die **von Adobe Campaign Standard zu Adobe Campaign v8** migrieren, und kann nicht in anderen Umgebungen bereitgestellt werden.
->
->Benutzende von Campaign Standard, die auf Campaign v8 umsteigen, können in der [Dokumentation zur Web-Benutzeroberfläche von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"} mehr über diese Transition erfahren.
-
-### Neue Funktionen {#new-8-7-2}
-
-* **Neuer SMS-Versand-Connector**: Der SMS-Versand-Connector wurde modernisiert und verbessert, um SMPP-Verbindungen im Transceiver-Modus zu aktivieren, persistente SMPP-Verbindungen zu ermöglichen und eine bessere Kompatibilität für Umgebungen sicherzustellen, die von Adobe Campaign Standard aus umgestellt werden. Für alle neuen SMS-Implementierungen ist jetzt ein neues externes SMS-Konto verfügbar. Die vorhandene Implementierung wird weiterhin unterstützt. Es wird jedoch empfohlen, zu diesem neuen, modernen und erweiterten Connector zu wechseln. [Weitere Informationen](../send/sms/sms.md)
-
-* **Rich-Push-Benachrichtigungen (GA)**: Sie können jetzt Rich-Push-Benachrichtigungen senden. Rich-Push-Benachrichtigungen sind eine erweiterte Form von Benachrichtigungen an Mobilgeräte, die über einfache Textnachrichten hinausgehen und Multimedia-Elemente wie Bilder, interaktive Schaltflächen oder andere Rich-Media-Inhalte enthalten. Mit dieser Version ist jetzt eine Reihe von Vorlagen für Rich-Push-Benachrichtigungen für Ihre iOS- und Android-Apps verfügbar. [Weitere Informationen](../send/rich-push-android.md)
-
-* **Branding**: Branding-Optionen sind jetzt für alle Kanäle verfügbar, einschließlich SMS und Direkt-Mail. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=de){target="_blank"}
-
-### Fehlerbehebungen {#fixes-8-7-2}
-
-Die folgenden Probleme wurden in dieser Version behoben:
-
-NEO-48232, NEO-56832, NEO-72504, NEO-74855, NEO-75898, NEO-76097, NEO-76958, NEO-77014, NEO-77795, NEO-78843, NEO-79328
 
 
 
