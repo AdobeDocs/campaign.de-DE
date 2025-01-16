@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 100%
+source-wordcount: '691'
+ht-degree: 99%
 
 ---
 
@@ -119,6 +119,7 @@ ht-degree: 100%
    + [Best Practices](audiences/audiences-best-practices.md)
    + [Verwalten von Abonnements](start/subscriptions.md)
 + Content-Management {#content}
+   + [Landingpages erstellen](dev/landing-pages.md)
    + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
 + Automatisierung und Workflows {#automation}
    + [Handbuch zur Kampagnenautomatisierung >](https://experienceleague.adobe.com/de/docs/campaign/automation/home)
