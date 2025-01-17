@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 1cb92c6075e9478b641b11eae52372a909258cd3
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -21,7 +21,12 @@ ht-degree: 100%
 
 ## Über BCC für E-Mails {#gs-bcc}
 
-Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird. Mit dieser Option können Sie Nachrichten an eine bestimmte BCC (Blind Carbon Copy)-E-Mail-Adresse senden, wo sie mithilfe eines externen Systems verarbeitet und archiviert werden.
+Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird. Mit dieser Option können Sie Nachrichten an eine dedizierte BCC-E-Mail-Adresse (Blind Carbon Copy) senden, von der aus sie mithilfe eines externen Systems verarbeitet und archiviert werden können.
+
+>[!CAUTION]
+>
+>Aus Datenschutzgründen müssen BCC-E-Mails von einem Archivierungssystem bearbeitet werden, in dem personenbezogene Daten (PII, Personally Identifiable Information) sicher aufbewahrt werden.
+
 Adobe Campaign selbst ermöglicht keine Verwaltung von archivierten Dateien. Die .eml-Dateien, die den gesendeten E-Mails entsprechen, können dann auf einen Remote-Server wie z. B. einen SMTP-E-Mail-Server übertragen werden.
 
 Das Archivierungsziel ist die von Ihnen ausgewählte BCC-E-Mail-Adresse, die für die Empfängerinnen und Empfänger des Versands unsichtbar bleibt. Nachdem die BCC-E-Mail-Adresse definiert wurde, müssen Sie die entsprechende Option auf der Ebene der [Versandvorlage](create-templates.md) aktivieren.
@@ -29,11 +34,6 @@ Das Archivierungsziel ist die von Ihnen ausgewählte BCC-E-Mail-Adresse, die fü
 >[!NOTE]
 >
 >Wenn Sie Managed Cloud Services verwenden, [wenden Sie sich an Adobe](../start/campaign-faq.md#support){target="_blank"}, um die für die Archivierung zu verwendende BCC-E-Mail-Adresse mitzuteilen.
-
->[!CAUTION]
->
->Aus Datenschutzgründen müssen BCC-E-Mails von einem Archivierungssystem bearbeitet werden, in dem personenbezogene Daten (PII, Personally Identifiable Information) sicher aufbewahrt werden.
-
 
 ## Aktivieren von BCC für E-Mails {#enable-bcc}
 
