@@ -6,16 +6,20 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
+source-git-commit: fdd0e534feb80e3acaec0a68238ac4ac596980e2
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '252'
+ht-degree: 93%
 
 ---
 
 # Aktualisierungen der Dokumentation {#latest-updates}
 
 Auf dieser Seite werden alle aktuellen Updates in der [!DNL Campaign] v8 (Konsole)-Dokumentation aufgeführt.
+
+## Januar 2025 {#january-2025}
+
+Die Seite zur Datenreplikation für FFDA-Bereitstellungen wurde neu organisiert und mit neuen Informationen angereichert. [Weitere Informationen](../architecture/replication.md)
 
 ## November 2024 {#october-2024}
 
