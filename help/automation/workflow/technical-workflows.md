@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die technischen Workflows, die mit Campaign
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 0a074b2ef84e89e67363b722372718e4c46d65e5
+source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 100%
+source-wordcount: '2080'
+ht-degree: 92%
 
 ---
 
@@ -52,6 +52,7 @@ Die auf dieser Seite beschriebenen Workflows werden mit den verschiedenen in Ado
 | **Löschen von gesperrten LINE-Benutzern** (deleteBlockedLineUsersV2) | LINE-Kanal | Dieser Workflow stellt sicher, dass die Daten der LINE V2-Benutzer gelöscht werden, nachdem sie das offizielle LINE-Konto 180 Tage lang gesperrt haben. |
 | **Löschen von Datenschutzanfragedaten** (deletePrivacyRequestsData) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten gelöscht. |
 | **Versandindikatoren** (deliveryIndicators) | Standardmäßig installiert | Dieser Workflow aktualisiert Tracking-Indikatoren eines Versands. Er wird standardmäßig stündlich ausgelöst. |
+| **FFDA sofort bereitstellen** (ffdaDeploy) | Standardmäßig nur bei [Campaign Enterprise (FFDA)-Bereitstellungen](../../v8/architecture/enterprise-deployment.md) installiert | Sofortige Bereitstellung in der Cloud-Datenbank [Weitere Informationen zur Datenreplikation](../../v8/architecture/replication.md) |
 | **Bearbeitungsvorgänge des verteilten Marketings** (centralLocalMgt) | Zentrales/lokales Marketing (verteiltes Marketing) | Dieser Workflow führt die Vorgänge im Zusammenhang mit dem Modul &quot;verteiltes Marketing&quot; aus. Er erstellt lokale Kampagnen und verwaltet Benachrichtigungen in Bezug auf Bestellungen und die Verfügbarkeit von Campaign-Packages. |
 | **Bereinigen von Ereignissen** (webAnalyticsPurgeWebEvents) | Web Analytics-Connectoren | Mit diesem Workflow können Sie jedes Ereignis aus dem Datenbankfeld entsprechend dem im Feld &quot;Lebensdauer&quot; konfigurierten Zeitraum löschen. |
 | **Exportieren von Audiences zu Adobe Experience Cloud** (exportSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow exportiert freigegebene Audiences/Segmente. Diese können dann in anderen von Ihnen verwendeten Lösungen von Adobe Experience Cloud genutzt werden. |
@@ -74,6 +75,13 @@ Die auf dieser Seite beschriebenen Workflows werden mit den verschiedenen in Ado
 | **Verarbeitung von Echtzeitereignissen** (rtEventsProcessing) | Ausführung einer Transaktionsnachricht (Message Center – Ausführung) | Mit diesem Workflow können Sie Echtzeitereignisse in eine Warteschlange stellen, bevor ihnen eine Nachrichtenvorlage zugeordnet wird. |
 | **Synchronisation von Vorschlägen** (propositionSynch) | Steuerung des Angebotsmoduls durch die Ausführungsinstanz | Dieser Workflow synchronisiert Vorschläge zwischen der Marketing-Instanz und der Ausführungsinstanz, die für Interaktionen verwendet wird. |
 | **Abruf von Web-Ereignissen** (webAnalyticsGetWebEvents) | Web Analytics-Connectoren | Dieser Workflow ruft stündlich die Segmente ab, die sich auf das Besucherverhalten einer gegebenen Website beziehen, fügt die Daten zur Adobe Campaign-Datenbank hinzu und startet den Remarketing-Workflow. |
+| **FFDA-Daten sofort replizieren** (ffdaReplicate) | Standardmäßig nur bei [Campaign Enterprise (FFDA)-Bereitstellungen](../../v8/architecture/enterprise-deployment.md) installiert | Repliziert die XS-Daten für ein bestimmtes externes Konto. [Weitere Informationen zur Datenreplikation](../../v8/architecture/replication.md) |
+| **NmsDelivery-Warteschlange replizieren** (ffdaReplicateQueueDelivery) | Standardmäßig nur bei [Campaign Enterprise (FFDA)-Bereitstellungen](../../v8/architecture/enterprise-deployment.md) installiert | Warteschlange für die `nms:delivery`. [Weitere Informationen zur Datenreplikation](../../v8/architecture/replication.md) |
+| **NmsDlvExclusion-Warteschlange replizieren** (ffdaReplicateQueueDlvExclusion) | Standardmäßig nur bei [Campaign Enterprise (FFDA)-Bereitstellungen](../../v8/architecture/enterprise-deployment.md) installiert | Warteschlange für die `nms:dlvExclusion`. [Weitere Informationen zur Datenreplikation](../../v8/architecture/replication.md) |
+| **NmsDlvMidRemoteIdRel-Warteschlange replizieren** (ffdaReplicateQueueDlvMidRemoteIdRel) | Standardmäßig nur bei [Campaign Enterprise (FFDA)-Bereitstellungen](../../v8/architecture/enterprise-deployment.md) installiert | Warteschlange für die `nms:dlvRemoteIdRel`. [Weitere Informationen zur Datenreplikation](../../v8/architecture/replication.md) |
+| **NmsTrackingUrl-Warteschlange replizieren** (ffdaReplicateQueueTrackingUrl)<br/>**NmsTrackingUrl-Warteschlange gleichzeitig replizieren** (ffdaReplicateQueueTrackingUrl_2) | Standardmäßig nur bei [Campaign Enterprise (FFDA)-Bereitstellungen](../../v8/architecture/enterprise-deployment.md) installiert | Gleichzeitige Warteschlangen für die `nms:trackingUrl`-Tabelle, wobei zwei Workflows verwendet werden, um die Effizienz durch die Verarbeitung von Anfragen basierend auf verschiedenen Prioritäten zu verbessern. [Weitere Informationen zur Datenreplikation](../../v8/architecture/replication.md) |
+| **Referenztabellen replizieren** (ffdaReplicateReferenceTables) | Standardmäßig nur bei [Campaign Enterprise (FFDA)-Bereitstellungen](../../v8/architecture/enterprise-deployment.md) installiert | Automatische Replikation von integrierten Tabellen, die in der lokalen Campaign-Datenbank (PostgreSQL) und in der Cloud-Datenbank ([!DNL Snowflake]) vorhanden sein müssen. Er ist so geplant, dass er Tag für Tag einmal stündlich ausgeführt wird. Wenn das Feld **lastModified** vorhanden ist, erfolgt die Replikation inkrementell, ansonsten wird die gesamte Tabelle repliziert. [Weitere Informationen zur Datenreplikation](../../v8/architecture/replication.md) |
+| **Staging-Daten replizieren** (ffdaReplicateStagingData) | Standardmäßig nur bei [Campaign Enterprise (FFDA)-Bereitstellungen](../../v8/architecture/enterprise-deployment.md) installiert | Repliziert Staging-Daten für einheitliche Aufrufe. Er ist so geplant, dass er Tag für Tag einmal stündlich ausgeführt wird. [Weitere Informationen zur Datenreplikation](../../v8/architecture/replication.md) |
 | **Berichtsaggregate** (reportingAggregates) | Versand | Dieser Workflow aktualisiert die in Berichten verwendeten Aggregate. Er wird standardmäßig täglich um 2 Uhr morgens ausgelöst. |
 | **Übermittlung von Indikatoren und Kampagnenattributen** (webAnalyticsSendMetrics) | Web Analytics-Connectoren | Dieser Workflow ermöglicht es Ihnen, Indikatoren für E-Mail-Kampagnen aus Adobe Campaign über Adobe® Analytics Connector an Adobe Experience Cloud Suite zu senden. Dies betrifft die folgenden Indikatoren: Gesendet (iSent), Öffnungen insgesamt (iTotalRecipientOpen), Gesamtzahl der Empfänger, die geklickt haben (iTotalRecipientClick), Fehler (iError), Abmeldung (Opt-out) (iOptOut). |
 | **Lager: Bestellungen und Warnhinweise** (stockMgt) | Standardmäßig installiert | Dieser Workflow startet die Berechnung der Lagerbestände zu den Bestellzeilen und verwaltet Warnschwellen. |
