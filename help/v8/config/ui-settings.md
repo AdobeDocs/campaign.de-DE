@@ -6,7 +6,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Sie können Ordner zu Campaign Explorer hinzufügen, Ansichten erstellen und Ber
 
 Auf [dieser Seite](../audiences/folders-and-views.md) erfahren Sie, wie Sie Ordner und Ansichten verwalten.
 
-## Verwalten und Anpassen von Listen{#customize-lists}
+## Verwalten und Anpassen von Listen {#customize-lists}
 
 In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Datensätze zählen und Ihre Einstellungen speichern und freigeben.
 

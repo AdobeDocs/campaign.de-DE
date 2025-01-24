@@ -4,16 +4,19 @@ description: Erste Schritte mit Landingpages
 feature: Landing Pages
 role: User, Developer
 level: Beginner
-source-git-commit: 45999f56c2d9e4417c6a54987d8395b69cdd2b2f
+exl-id: ad639a39-f011-4f0f-9db6-d06078f2e7a2
+source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 16%
+source-wordcount: '228'
+ht-degree: 28%
 
 ---
 
 # Erstellen und Verwalten von Landingpages {#ac-gs-lp}
 
-Die Web-Benutzeroberfläche von [Adobe Campaign v8](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui) bietet ein neu gestaltetes Benutzererlebnis für Landingpages. Mit Campaign können Sie Landingpages erstellen, entwerfen und freigeben. Mit Landingpages können Sie Ihre Benutzer zu Online-Formularen weiterleiten, über die sie ihre Daten aktualisieren, sich gegen den Erhalt Ihrer Nachrichten anmelden oder einen bestimmten Dienst wie einen Newsletter abonnieren können. Als Campaign v8-Benutzer haben Sie Zugriff auf diese neue Benutzeroberfläche, um Aufgaben auszuführen und das Anwendererlebnis bei der Verwendung von Adobe Campaign zu vereinfachen. Weitere Informationen über
+Durch Landingpages können Sie Benutzende zu Online-Formularen leiten, auf denen sie ihre Daten aktualisieren, sich für den Erhalt Ihrer Nachrichten anmelden bzw. davon abmelden oder einen bestimmten Dienst wie einen Newsletter abonnieren können.
+
+Um Landingpages zu erstellen, navigieren Sie zur [Web-Benutzeroberfläche](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign verfügt über ein überarbeitetes Benutzererlebnis für Landingpages, das nur in der Web-Benutzeroberfläche verfügbar ist.
 
 
 >[!AVAILABILITY]
