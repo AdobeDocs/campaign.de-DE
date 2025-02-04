@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
+source-git-commit: 9d5a2ca1e9858a727377b8afa6bdd7e3761c1b56
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 95%
+source-wordcount: '1080'
+ht-degree: 92%
 
 ---
 
@@ -117,7 +117,7 @@ Als Benutzerin oder Benutzer der Campaign v8-Client-Konsole haben Sie ab v8.6.1 
 >Die Web-Benutzeroberfläche von Campaign steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Erfahren Sie mehr über das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
 >
 
-Weitere Informationen über die neue Campaign Web-Benutzeroberfläche finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}.
+Weitere Informationen zur neuen Web-Benutzeroberfläche von Campaign finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}. Sie können auch die entsprechende Seite [Häufig gestellte Fragen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/faq){target="_blank"} in der Dokumentation zur Benutzeroberfläche von Campaign Web besuchen.
 
 Zusätzliche und erweiterte Funktionen, Konfigurationen und Einstellungen sind nur in der Client-Konsole verfügbar. Weitere Informationen über die verfügbaren Funktionen in beiden Benutzeroberflächen finden Sie [in der Dokumentation der Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=de){target="_blank"}.
 
