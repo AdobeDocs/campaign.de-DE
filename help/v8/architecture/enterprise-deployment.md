@@ -5,10 +5,10 @@ feature: Architecture, FFDA, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
+source-git-commit: 3235701e0939466d4275b1e9202f82694ccdb352
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 96%
+source-wordcount: '1053'
+ht-degree: 91%
 
 ---
 
@@ -82,9 +82,7 @@ Die PostgreSQL-Datenbank in der Mid-Sourcing-Instanz wird verwendet, um:
 
 ### [!DNL Campaign]-API-Staging-Mechanismus{#staging-api}
 
-In der [!DNL Campaign]-Cloud-Datenbank werden gebündelte Einzelabfragen aufgrund von Performance-Einbußen (Latenz und gleichzeitige Nutzung) nicht empfohlen. Außer bei einem extremen Versandvolumen muss der Batch-Vorgang verwendet werden, um eine optimale Leistung der APIs sicherzustellen. Campaign verarbeitet dazu API-Aufrufe weiterhin auf lokaler Datenbankebene.
-
-[Der API-Staging-Mechanismus wird auf dieser Seite beschrieben.](staging.md)
+In der [!DNL Campaign] Cloud-Datenbank ist es im Hinblick auf die Leistung (Latenz und gleichzeitige Nutzung) nicht empfehlenswert, einzelne Abfragen zu starten. Batch-Vorgänge müssen verwendet werden, um eine optimale API-Leistung zu gewährleisten, es sei denn, Sie senden extrem geringe Mengen. Um die Leistung zu verbessern, werden Aufnahme-APIs an die lokale Datenbank umgeleitet. [Erfahren Sie mehr über den Staging-Mechanismus der Campaign-API](staging.md)
 
 ### Neue APIs{#new-apis}
 
