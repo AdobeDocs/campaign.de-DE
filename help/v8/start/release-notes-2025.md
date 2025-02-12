@@ -2,55 +2,17 @@
 title: Versionshinweise 2025 zu Campaign v8 (Konsole)
 description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 2025
 feature: Release Notes
-source-git-commit: c5452082104432af49a93ecaa96865f19ee89ec2
+exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
+source-git-commit: 82622a4517356eaba1f7eba23d4b3050d8ca37c9
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 55%
+source-wordcount: '277'
+ht-degree: 92%
 
 ---
 
 # Versionshinweise 2025 {#2025-rn}
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen 2025** aufgelistet.
-
->[!BEGINSHADEBOX]
-
-**Auf dieser Seite**
-
-* Campaign v8.6 - [Version 8.6.4](#release-8-6-4)
-* Campaign v8.7 - [Version 8.7.2](#release-8-7-2)
-
->[!ENDSHADEBOX]
-
-## Version 8.6.4 {#release-8-6-4}
-
-_15. Januar 2025_
-
-### Allgemeine Verbesserungen {#improvements-8-6-4}
-
-* Die Stabilität der Campaign-Anwendung wurde bei der Versandanalyse im Kontext einer [Enterprise (FFDA)-Bereitstellung) ](../../v8/architecture/enterprise-deployment.md).
-* Diese Version enthält verbesserte und verstärkte FFDA-Architekturmechanismen, einschließlich Schlüsselverwaltung, Staging und Datenreplikation.
-* Für die Implementierung von [Enterprise (FFDA) wurden neue technische Workflows ](../../v8/architecture/enterprise-deployment.md). Diese Workflows replizieren Bereitstellungs- und zugehörige Daten, indem sie parallele Replikationsanfragen für die entsprechenden Tabellen zentralisieren. Diese Workflows beginnen mit `Replicate nms`. [Weitere Informationen](../architecture/replication.md)
-* Eine neue Option **Watchdog-Supervisor aktivieren, um den Workflow dauerhaft**, ist jetzt in den Workflow-Eigenschaften verfügbar. Wenn diese Option aktiviert ist, werden Workflows nach einem Fehler automatisch neu gestartet. Der Neustart erfolgt standardmäßig alle 30 Sekunden, wenn der Workflow noch immer einen Fehler aufweist. Um dieses Intervall anzupassen, können Sie eine neue `XtkWorkflow_WatchdogTimerTimeout` erstellen und einen ganzzahligen Datentyp festlegen, um die neue Verzögerung anzugeben. Diese Option sollte nur in technischen Workflows aktiviert werden. [Weitere Informationen](../../automation/workflow/workflow-properties.md#execution)
-
-### Verbesserungen bezüglich der Sicherheit {#security-8-6-4}
-
-Die Verbindung mit Adobe-Lösungen und Apps über das externe Konto **[!UICONTROL Adobe Experience Cloud]** wurde aktualisiert, um die Sicherheit zu erhöhen.
-
-<!--
-### Connection to Campaign {#ims-8-6-4}
-
-**(Limited availability)** For a restricted list of customers, Campaign v8.6.4 can allow native authentication mode instead of Adobe Identity Management System (IMS). Note that if you are using Campaign native authentication, you cannot access to [Campaign Web User Interface](../start/campaign-ui.md#campaign-web-user-interface).-->
-
-### Aktualisierungen zur Kompatibilität {#comp-8-6-4}
-
-Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
-
-### Fehlerbehebungen {#fixes-8-6-4}
-
-Die folgenden Probleme wurden in dieser Version behoben:
-
-NEO-48232, NEO-67814, NEO-71388, NEO-74855, NEO-75643, NEO-75962, NEO-76132, NEO-76958, NEO-76986, NEO-77452, NEO-78946, NEO-80243, NEO-81127, NEO-81209, NEO-77162, NEO-81223, NEO-81287, NEO-79373, NEO-80314, NEO-81290, NEO-81312, NEO-81512, NEO-81520, NEO-81566, NEO-81704, NEO-81908, NEO-82195, NEO-82591 NEO-82592, NEO-82640, NEO-82665, NEO-82781, NEO-82920, NEO-83081, NEO-83096, NEO-83137 83143.
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der Campaign **2025 v8-Versionen**. Die neuesten Versionen sind auf [dieser Seite](release-notes.md) aufgeführt.
 
 ## Version 8.7.2 {#release-8-7-2}
 

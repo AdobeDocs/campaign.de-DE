@@ -1,9 +1,9 @@
 ---
-keywords: Campaign Standard;Startseite;beliebte Themen
+keywords: Campaign Classic;Startseite;beliebte Themen
 description: Hilfe-Center zu Campaign v8
 title: Produktdokumentation zu Adobe Campaign v8
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 11614d555aa250adfcabce40dedb455328845eaa
+source-git-commit: 82622a4517356eaba1f7eba23d4b3050d8ca37c9
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 98%
@@ -22,7 +22,7 @@ Werfen Sie einen Blick auf die neuesten Verbesserungen im Produkt und in der Dok
 
 Die neueste Version von Adobe Campaign ist jetzt verfügbar. Weitere Informationen finden Sie in den Versionshinweisen.
 
-[![Bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
+[![Bild](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md#release-8-6-4)
 
 
 >[!TAB Neue Campaign Web-Benutzeroberfläche]
