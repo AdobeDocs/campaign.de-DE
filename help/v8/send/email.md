@@ -5,16 +5,21 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 578f774152afbd42342da0f161b679ba9dd10c78
+source-git-commit: a76d2c30d3e1c723bcd4881f28980d346aade3dc
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '578'
+ht-degree: 93%
 
 ---
 
 # Entwerfen und Senden von E-Mails
 
 Mit Adobe Campaign können Sie E-Mail-Sendungen erstellen, um personalisierte E-Mails an die Zielpopulation zu senden. [Weitere Informationen](../send/send.md)
+
+>[!NOTE]
+>
+>Um fesselnde und individuell zugeschnittene E-Mails zu erstellen, gehen Sie zur [Web-Benutzeroberfläche](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign verfügt über die E-Mail-Designer, eine intuitive Drag-and-Drop-Oberfläche, über die Sie alle Inhalte für jede E-Mail entwerfen und verfeinern können.
+
 
 Auf [dieser Seite](../start/create-message.md) erfahren Sie mehr über die wichtigsten Schritte zum Erstellen und Konfigurieren eines Versands.
 
