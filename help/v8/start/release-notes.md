@@ -3,10 +3,10 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: dcc3802a165091597505c4556dd7626d6810266f
+source-git-commit: 15faa6850c035d2d26dd43dc221e0128c33999c2
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 25%
+source-wordcount: '569'
+ht-degree: 21%
 
 ---
 
@@ -69,7 +69,15 @@ Die Verbindung mit Adobe-Lösungen und -Apps über das externe Konto **[!UICONTR
 
 ### Aktualisierungen zur Kompatibilität {#comp-8-6-4}
 
-Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
+* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
+
+* Ein neuer Amazon Redshift FDA ODBC-Connector ist jetzt verfügbar. Es bietet verbesserte Konnektivität, einfachere Wartung und verbesserte Kompatibilität. Diese neue Version bietet die folgenden Verbesserungen:
+
+   * Der neue Connector basiert auf der ODBC-Schnittstelle, die mit unseren neuesten FDA-Connectoren übereinstimmt. Dies sichert eine langfristige Unterstützung.
+   * Außerdem wird ein neuer Datenlademechanismus mit S3-Buckets eingeführt, wodurch die Leistung erheblich verbessert wird.
+   * Redshift Spectrum-Unterstützung wurde hinzugefügt.
+
+  Der alte Connector kann weiterhin verwendet werden. Wenn Sie die neue Version ausprobieren möchten, wenden Sie sich an den Adobe-Support.
 
 ### Fehlerbehebungen {#fixes-8-6-4}
 
