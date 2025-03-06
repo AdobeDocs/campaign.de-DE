@@ -5,10 +5,10 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 5b649e17f464d09124064f61712856d9301fc6d6
+source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 99%
+source-wordcount: '437'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,8 @@ Die folgenden CRM-Systeme (Customer Relationship Management) sind mit Adobe Camp
 
 Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Access (FDA)-Modul kompatibel. Weitere Informationen über FDA finden Sie [auf dieser Seite](../connect/fda.md).
 
-* **[!DNL Amazon Redshift]**
+* **[!DNL Amazon Redshift]** des ODBC-Connectors, ab Campaign v8.6.4
+* Legacy-Connector **[!DNL Amazon Redshift]**
 * **[!DNL Azure Synapse]**, ab Campaign v8.5
 * **[!DNL Databricks]**, ab Campaign v8.6.4 / v8.7
 * **[!DNL Google Big Query]**
@@ -64,7 +65,7 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Ac
 
 ## Mobile SDK {#MobileSDK}
 
-Zum Senden von [Push-Benachrichtigungen](../send/push.md) mit Campaign können Sie das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren.
+Zum Senden von [Push-Benachrichtigungen](../send/push.md) mit Campaign können Sie das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign Classic-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren.
 
 Kompatible Versionen für iOS und Android werden in der [Adobe Developer-Dokumentation](https://developer.adobe.com/client-sdks/home/){target="_blank"} beschrieben.
 
