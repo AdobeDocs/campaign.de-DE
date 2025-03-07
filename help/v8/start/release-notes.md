@@ -3,10 +3,10 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
+source-git-commit: 041df8d2d6128d72a04008affbc9680ba5b640a1
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 21%
+source-wordcount: '569'
+ht-degree: 18%
 
 ---
 
@@ -67,9 +67,11 @@ Die Verbindung mit Adobe-Lösungen und -Apps über das externe Konto **[!UICONTR
 
 **(Limited availability)** For a restricted list of customers, Campaign v8.6.4 can allow native authentication mode instead of Adobe Identity Management System (IMS). Note that if you are using Campaign native authentication, you cannot access to [Campaign Web User Interface](../start/campaign-ui.md#campaign-web-user-interface).-->
 
-### Aktualisierungen zur Kompatibilität {#comp-8-6-4}
+### Kompatibilitätsaktualisierungen {#comp-8-6-4}
 
-* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
+Die folgenden FDA-Connectoren wurden hinzugefügt. Mehr dazu erfahren Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
+
+* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt.
 
 * Ein neuer Amazon Redshift FDA ODBC-Connector ist jetzt verfügbar. Es bietet verbesserte Konnektivität, einfachere Wartung und verbesserte Kompatibilität. Diese neue Version bietet die folgenden Verbesserungen:
 

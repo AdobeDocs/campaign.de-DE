@@ -3,10 +3,10 @@ title: Versionshinweise 2024 zu Campaign v8 (Konsole)
 description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 2024
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: 54cc5686cc5187a1ab0514abcaf9fcd69e7a1ede
+source-git-commit: 041df8d2d6128d72a04008affbc9680ba5b640a1
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 95%
+source-wordcount: '1308'
+ht-degree: 87%
 
 ---
 
@@ -46,9 +46,18 @@ _2. Mai 2024_
 
 * **Dynamisches Reporting**: Wenn Sie von Campaign Standard migriert sind, können Sie auf das dynamische Reporting zugreifen, das vollständig anpassbare und in Echtzeit aktualisierte Berichte zum Messen der Wirkung Ihrer Marketing-Aktivitäten bietet. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Stadt und Alter sowie nach Daten von E-Mail-Kampagnen wie Öffnungen und Klicks ermöglicht. [Mehr dazu](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=de){target="_blank"}
 
-### Aktualisierungen zur Kompatibilität {#comp-8-7-1}
+### Kompatibilitätsaktualisierungen {#comp-8-7-1}
 
-* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
+Die folgenden FDA-Connectoren wurden hinzugefügt. Mehr dazu erfahren Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
+
+* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt.
+
+* Ein neuer Amazon Redshift FDA ODBC-Connector ist jetzt verfügbar. Es bietet verbesserte Konnektivität, einfachere Wartung und verbesserte Kompatibilität. Diese neue Version bietet die folgenden Verbesserungen:
+
+   * Der neue Connector basiert auf der ODBC-Schnittstelle, die mit unseren neuesten FDA-Connectoren übereinstimmt. Dies sichert eine langfristige Unterstützung.
+   * Außerdem wird ein neuer Datenlademechanismus mit S3-Buckets eingeführt, wodurch die Leistung erheblich verbessert wird.
+
+  Der alte Connector kann weiterhin verwendet werden. Wenn Sie die neue Version ausprobieren möchten, wenden Sie sich an den Adobe-Support.
 
 ### Migration zu OAuth-Server-zu-Server-Anmeldedaten {#change-8-7-1}
 
@@ -123,7 +132,7 @@ _14. Februar 2024_
 
   >[!AVAILABILITY]
   >
-  >Die Web-Benutzeroberfläche von Campaign steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Erfahren Sie mehr über das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+  >Die Web-Benutzeroberfläche von Campaign steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Weitere Informationen zu [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
   >
 
 * Adobe Campaign v8 kann jetzt in **Adobe Experience Manager as a Cloud Service** integriert werden, wobei das Authoring ausschließlich über die Adobe Campaign Web-Benutzeroberfläche verfügbar ist. [Weitere Informationen](../connect/ac-aem.md)
