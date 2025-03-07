@@ -5,9 +5,9 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
+source-git-commit: fb2cf4407750f8cff65ca53f0e87c32e9702de92
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '438'
 ht-degree: 97%
 
 ---
@@ -51,7 +51,7 @@ Die folgenden CRM-Systeme (Customer Relationship Management) sind mit Adobe Camp
 
 Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Access (FDA)-Modul kompatibel. Weitere Informationen über FDA finden Sie [auf dieser Seite](../connect/fda.md).
 
-* **[!DNL Amazon Redshift]** des ODBC-Connectors, ab Campaign v8.6.4
+* **[!DNL Amazon Redshift]** des ODBC-Connectors, ab Campaign v8.6.4 / v8.7.1
 * Legacy-Connector **[!DNL Amazon Redshift]**
 * **[!DNL Azure Synapse]**, ab Campaign v8.5
 * **[!DNL Databricks]**, ab Campaign v8.6.4 / v8.7
