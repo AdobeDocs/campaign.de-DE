@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 253f3be945cbfa304fa7342c68f0c73b079e2870
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 100%
+source-wordcount: '1231'
+ht-degree: 98%
 
 ---
 
@@ -161,7 +161,7 @@ Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage einge
 
 #### Wechsel von [!DNL Campaign Classic] v7 {#transition-from-v7}
 
-Wenn Sie [von Campaign Classic v7 wechseln](../start/v7-to-v8.md), durchlaufen alle Sendungen den Mid-Sourcing-Server.
+Wenn Sie [von Campaign Classic v7](../start/v7-to-v8.md) wechseln, durchlaufen alle Sendungen den Mid-Sourcing-Server (MID).
 
 Bei der Erstellung einer Transaktionsnachrichtenvorlage ist jedoch das Routing, das für eine erfolgreiche Verwendung der Vorlage erforderlich ist, der **interne E-Mail-Versand**. Dieses Routing verhindert den Versand von Testsendungen.
 

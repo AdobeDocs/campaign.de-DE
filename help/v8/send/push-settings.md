@@ -6,10 +6,10 @@ feature: Push
 role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 100%
+source-wordcount: '1836'
+ht-degree: 99%
 
 ---
 
@@ -257,7 +257,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 
    >[!CAUTION]
    >
-   >Mit der Schaltfläche **[!UICONTROL Verbindung testen]** wird nicht geprüft, ob der MID-Server Zugriff auf den FCM-Server hat.
+   >Mit der Schaltfläche **[!UICONTROL Verbindung testen]** wird nicht geprüft, ob der Mid-Sourcing-Server (MID) Zugriff auf den FCM-Server hat.
 
 1. Bei Bedarf können Sie die Inhalte von Push-Nachrichten mit bestimmten **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar und Teil der an das mobile Gerät gesendeten Nachrichten-Payload.
 

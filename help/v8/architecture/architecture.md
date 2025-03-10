@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1049'
+ht-degree: 94%
 
 ---
 
@@ -57,11 +57,11 @@ Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FF
 
 >[!AVAILABILITY]
 >
->Diese Funktion ist nur für Kundinnen und Kunden mit mehreren MID-Instanzkonfigurationen verfügbar.
+>Diese Funktion steht nur Kunden mit mehreren Mid-Sourcing-Instanzkonfigurationen zur Verfügung.
 
 Abhängig vom Campaign v8-Package verfügen Sie über eine bestimmte Anzahl von Mid-Sourcing-Instanzen, welche für die Durchführung von Sendungen zuständig sind.
 
-Standardmäßig verwenden die externen Konten für alle Kanäle einen **[!UICONTROL alternierenden]** Routing-Modus, d. h., ein Versand wird jeweils abwechselnd von jeder Mid-Instanz gesendet.
+Standardmäßig verwenden die externen Konten für alle Kanäle einen **[!UICONTROL Alternate]**-Routing-Modus, d. h., ein Versand wird jeweils abwechselnd von jeder Mid-Sourcing-Instanz (MID) gesendet.
 
 Um höhere Performance sowohl in Bezug auf die Geschwindigkeit als auch auf die Skalierbarkeit zu gewährleisten, können Sie die automatische Aufteilung von Sendungen auf Ihre Mid-Sourcing-Instanzen zulassen, damit diese schneller an die Empfängerinnen und Empfänger gesendet werden. Dieser Vorgang ist transparent, wenn der Versand von der Marketing-Instanz aus ausgeführt wird: Nachdem der Versand durchgeführt wurde, werden alle Logs zusammengeführt, bevor sie an die Marketing-Instanz in einem einzigen Versandobjekt zurückgesendet werden.
 
@@ -78,7 +78,7 @@ Dazu werden zusätzliche externe Konten mit dem **[!UICONTROL Aufspaltungs]**-Ro
 >
 >Der Aufspaltungs-Routing-Modus ist standardmäßig für das Konto „Aufspaltung Versand – E-Mail“ aktiviert. Für alle anderen Kanäle und externen Konten wenden Sie sich bitte an Ihren Adobe Transition Manager, um die Option aktivieren zu lassen.
 >
->Standardmäßig beträgt der Schwellenwert für die Aufteilung eines Versands auf mehrere Mids 100.000. Sie können diesen Wert in der Option „NmsDelivery_MultiMidSplitThreshold“ im Menü **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Optionen]** ändern.
+>Standardmäßig beträgt der Schwellenwert für die Aufspaltung eines Versands auf mehrere Mid-Sourcing-Instanzen (MID) 100.000. Sie können diesen Wert in der Option „NmsDelivery_MultiMidSplitThreshold“ im Menü **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Optionen]** ändern.
 
 Um aufgespaltete externe Konten als Standardkonto für den Versand von Sendungen festzulegen, müssen Sie den Routing-Provider in Ihren Versandvorlagen ändern. Gehen Sie dazu wie folgt vor:
 
