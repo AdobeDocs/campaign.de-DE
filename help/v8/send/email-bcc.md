@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: 1cb92c6075e9478b641b11eae52372a909258cd3
+source-git-commit: 286af4739c33b79c74b3cb7fa90ad167670a4b4c
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 92%
+source-wordcount: '385'
+ht-degree: 89%
 
 ---
 
@@ -42,7 +42,7 @@ Gehen Sie wie folgt vor, um BCC für eine bestimmte [Versandvorlage](create-temp
 1. Navigieren Sie im Campaign-Explorer zum Ordner „Versandvorlagen“. Standardmäßig werden Versandvorlagen im Ordner **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Versandvorlagen]** gespeichert.
 1. Bearbeiten Sie die Versandvorlage, um sie mit BCC zu aktualisieren.
 1. Wählen Sie die Schaltfläche **[!UICONTROL Eigenschaften]** aus.
-1. Kreuzen Sie in der Registerkarte **[!UICONTROL Versand]**, die Option **[!UICONTROL E-Mail-BCC]** an.
+1. Aktivieren Sie auf der **[!UICONTROL Versand]** die Option **[!UICONTROL E-Mail-BCC mit erweitertem]**).
 
    ![](assets/email-bcc.png)
 
