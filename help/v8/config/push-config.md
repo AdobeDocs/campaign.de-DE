@@ -1,14 +1,13 @@
 ---
 title: Campaign SDKs mit Ihrer Mobile App integrieren
 description: Erfahren Sie, wie Sie Campaign Android- und iOS-SDKs mit Ihrer Mobile App integrieren.
-version: v8
 feature: Push
 role: Admin, Developer
 level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
 workflow-type: tm+mt
 source-wordcount: '1232'
 ht-degree: 98%
@@ -33,13 +32,13 @@ Als Campaign-Administrator können Sie Campaign SDKs über die [Software-Verteil
 
 Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folgende Informationen vom funktionalen Administrator:
 
-* **Integrationsschlüssel**: zur Identifizierung der Mobile App durch die Adobe-Campaign-Plattform.
+* **Integrationsschlüssel**: zur Identifizierung der Mobile App durch die Adobe Campaign-Plattform.
 
   >[!NOTE]
   >
   >Dieser Integrationsschlüssel wird in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Informationen]** des Dienstes, der für die Mobile App zuständig ist, eingegeben.
 
-* **Tracking-URL**: entspricht der Adresse des Adobe-Campaign-Trackingservers.
+* **Tracking-URL**: entspricht der Adresse des Adobe Campaign-Trackingservers.
 * **Marketing-URL**: um die Sammlung der Abonnements zu ermöglichen.
 
 * **Für Android**:
