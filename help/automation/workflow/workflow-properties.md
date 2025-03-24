@@ -4,10 +4,10 @@ title: Workflow-Eigenschaften
 description: Erfahren Sie mehr über die Campaign-Workflow-Eigenschaften.
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
+source-git-commit: d31040885ec45068d70a7d4c0b481269c8af7a33
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 87%
+source-wordcount: '718'
+ht-degree: 86%
 
 ---
 
@@ -59,9 +59,11 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
   >[!NOTE]
   >
-  >Diese Option richtet sich an fortgeschrittene Benutzer und sollte nur für **technische Workflows** aktiviert werden.
+  >* Diese Option ist ab Version 8.6.4 verfügbar.
   >
-  >Sie ist standardmäßig für die zentralen Replikations-Workflows aktiviert, die mit dem Paket `fullFdaMkt`verfügbar sind.
+  >* Diese Option richtet sich an fortgeschrittene Benutzer und sollte nur für **technische Workflows** aktiviert werden.
+  >
+  >* Diese Option ist standardmäßig für die zentralisierten Replikations-Workflows aktiviert, die im Kontext einer [Enterprise (FFDA)-Bereitstellung verfügbar ](../../v8/architecture/enterprise-deployment.md). [Weitere Informationen](../../v8/architecture/replication.md)
 
 ### Umgang mit Fehlern {#error-management}
 
