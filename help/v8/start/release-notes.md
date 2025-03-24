@@ -3,7 +3,7 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 041df8d2d6128d72a04008affbc9680ba5b640a1
+source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 18%
@@ -56,7 +56,7 @@ _15. Januar 2025_
 * Die Stabilität der Campaign-Anwendung wurde bei der Versandanalyse im Kontext einer [Enterprise (FFDA)-Bereitstellung) ](../../v8/architecture/enterprise-deployment.md).
 * Diese Version enthält verbesserte und verstärkte FFDA-Architekturmechanismen, einschließlich Schlüsselverwaltung, Staging und Datenreplikation.
 * Für die Implementierung von [Enterprise (FFDA) wurden neue technische Workflows ](../../v8/architecture/enterprise-deployment.md). Diese Workflows replizieren Bereitstellungs- und zugehörige Daten, indem sie parallele Replikationsanfragen für die entsprechenden Tabellen zentralisieren. Diese Workflows beginnen mit `Replicate nms`. [Weitere Informationen](../architecture/replication.md)
-* Eine neue Option **Watchdog-Supervisor aktivieren, um den Workflow dauerhaft**, ist jetzt in den Workflow-Eigenschaften verfügbar. Wenn diese Option aktiviert ist, werden Workflows nach einem Fehler automatisch neu gestartet. Der Neustart erfolgt standardmäßig alle 30 Sekunden, wenn der Workflow noch immer einen Fehler aufweist. Um dieses Intervall anzupassen, können Sie eine neue `XtkWorkflow_WatchdogTimerTimeout` erstellen und einen ganzzahligen Datentyp festlegen, um die neue Verzögerung anzugeben. Diese Option sollte nur in technischen Workflows aktiviert werden. [Weitere Informationen](../../automation/workflow/workflow-properties.md#execution)
+* Eine neue Option **Watchdog-Supervisor aktivieren, um den Workflow dauerhaft**, ist jetzt in den Workflow-Eigenschaften verfügbar. Wenn diese Option aktiviert ist, werden Workflows nach einem Fehler automatisch neu gestartet. Der Neustart erfolgt standardmäßig alle 30 Sekunden, wenn der Workflow noch immer einen Fehler aufweist. Um dieses Intervall anzupassen, können Sie eine neue `XtkWorkflow_WatchdogRestartTimerTimeout` erstellen und einen ganzzahligen Datentyp festlegen, um die neue Verzögerung anzugeben. Diese Option sollte nur in technischen Workflows aktiviert werden. [Weitere Informationen](../../automation/workflow/workflow-properties.md#execution)
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-6-4}
 

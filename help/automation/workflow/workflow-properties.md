@@ -4,7 +4,7 @@ title: Workflow-Eigenschaften
 description: Erfahren Sie mehr über die Campaign-Workflow-Eigenschaften.
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 63b7eaba3ea7b580d9b6c3c0e0c015c057539aa8
+source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 87%
@@ -55,7 +55,7 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
 * **[!UICONTROL Watchdog-Supervisor aktivieren, um den Workflow dauerhaft laufen zu lassen]**
 
-  Diese Option zwingt Workflows dazu, nach einem Fehler automatisch neu zu starten. Nach der Aktivierung überprüft der Neustart alle 30 Sekunden den Status des Workflows und startet ihn bei Bedarf neu. Um das 30-Sekunden-Intervall anzupassen, können Sie die technische Option &quot;`XtkWorkflow_WatchdogTimerTimeout`&quot; erstellen und einen ganzzahligen Datentyp verwenden, um die gewünschte Verzögerung anzugeben.
+  Diese Option zwingt Workflows dazu, nach einem Fehler automatisch neu zu starten. Nach der Aktivierung überprüft der Neustart alle 30 Sekunden den Status des Workflows und startet ihn bei Bedarf neu. Um das 30-Sekunden-Intervall anzupassen, können Sie die technische Option &quot;`XtkWorkflow_WatchdogRestartTimerTimeout`&quot; erstellen und einen ganzzahligen Datentyp verwenden, um die gewünschte Verzögerung anzugeben.
 
   >[!NOTE]
   >
