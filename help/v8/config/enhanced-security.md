@@ -5,10 +5,10 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
+source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 100%
+source-wordcount: '737'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Nach der Implementierung dieser Funktionen überwacht Adobe Folgendes:
 
 * die VPN-Tunnel und sendet eine Warnmeldung, falls ein Problem auftritt.
 
-## Sichere CMK-Integration (Customer Managed Key) {#secure-cmk-integration}
+## Sichere Integration von kundenverwalteten Schlüsseln {#secure-cmk-integration}
 
 Die **sichere CMK-Integration (Customer Managed Key)** ermöglicht es Ihnen, ruhende Daten mithilfe Ihres eigenen Schlüssels über Ihr Amazon Web Services(AWS)-Konto zu verschlüsseln.
 
