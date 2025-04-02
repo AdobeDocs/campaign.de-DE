@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Planung".
 feature: Workflows
 role: User
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: ba8cf031db178f6575104858340e16d4e7bd6a31
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 100%
+source-wordcount: '400'
+ht-degree: 43%
 
 ---
 
@@ -22,15 +22,15 @@ Eine **[!UICONTROL Planung]** entspricht einem programmierten Start, daher sind 
 
 ## Best Practices {#best-practices}
 
-* Es wird empfohlen, Workflows nicht öfter als alle 15 Minuten auszuführen, da die Gesamt-Performance des Systems beeinträchtigt werden kann und Blöcke in der Datenbank entstehen können.
+**Workflow nach einer Änderung der Zeitplanung neu starten** - Beim Ändern der geplanten Zeit der **[!UICONTROL Planung]**-Aktivität ist es wichtig, den Workflow neu zu starten. Dadurch wird sichergestellt, dass der Workflow zu den aktualisierten Zeiten ausgeführt wird. Ohne Neustart wird der Workflow weiterhin gemäß dem alten Zeitplan ausgeführt.
 
-* Verwenden Sie in einem Workflow nie mehr als eine **[!UICONTROL Planungs]**-Aktivität pro Verzweigung. Siehe [Verwenden von Aktivitäten](workflow-best-practices.md#using-activities).
+**Planungshäufigkeit begrenzen** - Vermeiden Sie es, Workflows so zu planen, dass sie häufiger als alle 15 Minuten ausgeführt werden. Eine häufigere Ausführung kann die Systemleistung beeinträchtigen und zu einer Überlastung der Datenbank führen.
 
-* Die Verwendung einer Planungsaktivität kann dazu führen, dass mehrere Workflow-Ausführungen gleichzeitig vorgenommen werden. Beispielsweise kann eine Planung die Workflow-Ausführung stündlich auslösen, während die Ausführung des gesamten Workflows aber mehr als eine Stunde dauert.
+**Eine Planungsaktivität pro Verzweigung verwenden** - Jede Verzweigung Ihres Workflows sollte nur eine **[!UICONTROL Planungsaktivität]** aufweisen. Weitere Informationen zu Best Practices für die Verwendung von Aktivitäten in Workflows finden Sie auf der [ „Best Practices für Workflows](workflow-best-practices.md#using-activities).
 
-  Sie können die Ausführung ggf. überspringen, wenn der Workflow bereits ausgeführt wird. Weitere Informationen hierzu, wie Sie gleichzeitige Ausführungen eines Workflows verhindern können, finden Sie auf [dieser Seite](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
+**Gleichzeitige Workflow-Ausführungen verhindern** - Wenn ein Workflow von einer Planung ausgelöst wird, sollten Sie beachten, dass mehrere Instanzen des Workflows gleichzeitig ausgeführt werden können. Wenn beispielsweise der Workflow stündlich von einer Planung Trigger wird, die Workflow-Ausführung jedoch länger als eine Stunde dauert, kann es zu Überschneidungen bei den Ausführungen kommen. Um dies zu vermeiden, sollten Sie Prüfungen einrichten, um mehrere gleichzeitige Ausführungen zu verhindern. [Erfahren Sie, wie Sie mehrere gleichzeitige Workflow-Ausführungen verhindern können](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
-* Beachten Sie, dass die Transition mehrere Stunden später aktiviert werden kann, wenn der Workflow eine langfristige Aufgabe ausgeführt hat, wie z. B. einen Import, oder wenn das wfserver-Modul eine bestimmte Zeit lang angehalten wurde. In diesem Fall kann es erforderlich sein, die Ausführung der von der Planung aktivierten Aufgabe auf einen bestimmten Zeitraum zu beschränken.
+**Konto für verzögerte Transitionen** - Transitionen, die vom Planer ausgelöst werden, können verzögert werden, wenn der Workflow lang laufende Aufgaben ausführt (z. B. Importe) oder wenn das wfserver-Modul vorübergehend angehalten wurde. Um dies abzumildern, beschränken Sie die Aktivierungszeiten der Planung, um sicherzustellen, dass die Aufgaben innerhalb eines definierten Zeitfensters ausgeführt werden.
 
 ## Konfigurieren der Planungsaktivität {#configuring-scheduler-activity}
 

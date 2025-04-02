@@ -6,16 +6,20 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: fdd0e534feb80e3acaec0a68238ac4ac596980e2
+source-git-commit: ba8cf031db178f6575104858340e16d4e7bd6a31
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 93%
+source-wordcount: '282'
+ht-degree: 85%
 
 ---
 
 # Aktualisierungen der Dokumentation {#latest-updates}
 
 Auf dieser Seite werden alle aktuellen Updates in der [!DNL Campaign] v8 (Konsole)-Dokumentation aufgeführt.
+
+## April 2025 {#april-2025}
+
+Es wurde eine Best Practice hinzugefügt, um den Workflow neu zu starten, nachdem die geplante Zeit der **[!UICONTROL Planungsaktivität]** geändert wurde, um sicherzustellen, dass er gemäß dem aktualisierten Zeitplan ausgeführt wird. [Weitere Informationen](../../automation/workflow/scheduler.md)
 
 ## Januar 2025 {#january-2025}
 
