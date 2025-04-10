@@ -3,10 +3,10 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
+source-git-commit: 49ce7d776eb626d6a927da7630ed7d0e2644fda3
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 18%
+source-wordcount: '740'
+ht-degree: 20%
 
 ---
 
@@ -18,11 +18,33 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 **Auf dieser Seite**
 
-* Campaign v8.6 - [Version 8.6.4](#release-8-6-4)
-* Campaign v8.7 - [Version 8.7.3](#release-8-7-3)
+* [Version 8.7.4](#release-8-7-4)
+* [Version 8.7.](#release-8-7-3)
+* [Version 8.6.4](#release-8-6-4)
 
 >[!ENDSHADEBOX]
 
+## Version 8.7.4 {#release-8-7-4}
+
+_Freitag, 10. April 2025_
+
+>[!AVAILABILITY]
+>
+>Diese Version ist nur **eingeschränkt verfügbar**. Sie ist Kundinnen und Kunden vorbehalten, die **von Adobe Campaign Standard zu Adobe Campaign v8** migrieren, und kann nicht in anderen Umgebungen bereitgestellt werden.
+>
+>Wenn Sie als Campaign Standard-Anwender zu Campaign v8 wechseln, erfahren Sie mehr über diesen Wechsel in der [Dokumentation zur Web-Benutzeroberfläche von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration).
+
+### Neue Funktionen {#features-8-7-4}
+
+* **SMS-REST-API-**: Die REST-API für Transaktionsnachrichten ist jetzt für den SMS-Kanal verfügbar. Wenn sowohl E-Mail als auch Mobiltelefon in der Payload vorhanden sind, können Sie das Feld „wishChannel“ verwenden, um den Kanal anzugeben. Wenn keine E-Mail-Adresse angegeben wird, wird sie standardmäßig verwendet, es sei denn, WishedChannel fordert explizit SMS an.
+
+* **Mehrsprachige Sendungen** - Mit der Veröffentlichung der Campaign Web-Benutzeroberfläche im April können Sie mehrere E-Mail-Sendungen in verschiedenen Sprachen senden und auf die zugehörigen dynamischen Berichte zugreifen. Diese Funktion ist nur Ende April in der Web-Benutzeroberfläche von Adobe Campaign verfügbar und erfordert ein Server-Update auf Campaign v8.7.4.
+
+### Fehlerbehebungen {#fixes-8-7-4}
+
+Die folgenden Probleme wurden in dieser Version behoben:
+
+NEO-80245, NEO-83559
 
 ## Version 8.7.3 {#release-8-7-3}
 
@@ -32,13 +54,13 @@ _14. Februar 2025_
 >
 >Diese Version ist nur **eingeschränkt verfügbar**. Sie ist Kundinnen und Kunden vorbehalten, die **von Adobe Campaign Standard zu Adobe Campaign v8** migrieren, und kann nicht in anderen Umgebungen bereitgestellt werden.
 >
->Benutzende von Campaign Standard, die auf Campaign v8 umsteigen, können in der [Dokumentation zur Web-Benutzeroberfläche von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"} mehr über diese Transition erfahren.
+>Wenn Sie als Campaign Standard-Anwender zu Campaign v8 wechseln, erfahren Sie mehr über diesen Wechsel in der [Dokumentation zur Web-Benutzeroberfläche von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration).
 
 ### Neue Funktionen {#features-8-7-3}
 
-* **Dynamisches Reporting für Transaktionsnachrichten** - Sie können jetzt Ihre Transaktionsnachrichten in der Benutzeroberfläche des dynamischen Reportings überwachen. Diese Berichte ermöglichen es dem Marketing-Experten, alle Berichtsmetriken und Dimensionen von Transaktionsnachrichten sowie die Aufschlüsselung der über eine Vorlage gesendeten Sendungen in Echtzeit anzuzeigen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
+* **Dynamisches Reporting für Transaktionsnachrichten** - Sie können jetzt Ihre Transaktionsnachrichten in der Benutzeroberfläche des dynamischen Reportings überwachen. Diese Berichte ermöglichen es dem Marketing-Experten, alle Berichtsmetriken und Dimensionen von Transaktionsnachrichten sowie die Aufschlüsselung der über eine Vorlage gesendeten Sendungen in Echtzeit anzuzeigen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-cloud/campaign/reporting/get-started-reporting)
 
-* **REST-APIs für Transaktionsnachrichten** - Ereignisbasierte Transaktions-APIs sind jetzt für E-Mails verfügbar. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
+* **REST-APIs für Transaktionsnachrichten** - Ereignisbasierte Transaktions-APIs sind jetzt für E-Mails verfügbar. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages)
 
 ### Fehlerbehebungen {#fixes-8-7-3}
 
@@ -60,7 +82,7 @@ _15. Januar 2025_
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-6-4}
 
-Die Verbindung mit Adobe-Lösungen und -Apps über das externe Konto **[!UICONTROL Adobe Experience Cloud]** wurde aktualisiert, um die Sicherheit zu erhöhen.
+Die Verbindung mit Adobe-Lösungen und -Anwendungen über das externe **[!UICONTROL Adobe Experience Cloud]**-Konto wurde aktualisiert, um die Sicherheit zu erhöhen.
 
 <!--
 ### Connection to Campaign {#ims-8-6-4}
