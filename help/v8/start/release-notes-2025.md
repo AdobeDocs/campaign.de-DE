@@ -3,16 +3,26 @@ title: Versionshinweise 2025 zu Campaign v8 (Konsole)
 description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 2025
 feature: Release Notes
 exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
-source-git-commit: ff874a8e06303625b4c96f49fdf4f303b50fb908
+source-git-commit: 66e4b59915eae595b28076622f7bcfb5b5a0ffa4
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 68%
+source-wordcount: '428'
+ht-degree: 66%
 
 ---
 
 # Versionshinweise 2025 {#2025-rn}
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der Campaign **2025 v8-Versionen**. Die neuesten Versionen sind auf [dieser Seite](release-notes.md) aufgeführt.
+
+>[!BEGINSHADEBOX]
+
+**Auf dieser Seite**
+
+* Campaign v8.7 - [Version 8.7.2](#release-8-7-2) | [Version 8.7.](#release-8-7-3)
+
+
+>[!ENDSHADEBOX]
+
 
 ## Version 8.7.3 {#release-8-7-3}
 
