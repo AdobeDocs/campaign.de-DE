@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Abfrage".
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: cc0d1b7f662d39443ef82412d6df671af4ac8d97
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 100%
+source-wordcount: '1666'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,11 @@ ht-degree: 100%
 
 Über Abfragen lassen sich Zielgruppen anhand von Filterkriterien bestimmen. Es besteht die Möglichkeit, dem Abfrageergebnis einen Segment-Code zuzuweisen und es mit Zusatzdaten zu ergänzen.
 Weitere Informationen zu Beispielen für Abfragen finden Sie in diesem [Abschnitt](querying-recipient-table.md).
+
+>[!NOTE]
+>
+>Die Web-Benutzeroberfläche von Adobe Campaign bietet einen leistungsstarken Abfragemodellierer, der den Prozess der Datenbankfilterung vereinfacht, um bestimmte Ziele basierend auf verschiedenen Kriterien auszuwählen, sodass Sie Ihre Abfrage einfacher erstellen und verwalten können. Weitere Informationen zum Abfrage-Modellierer für die Web-Benutzeroberfläche finden Sie in der Dokumentation zur Web-Benutzeroberfläche von [Adobe Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
+
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
@@ -55,7 +60,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
 ## Hinzufügen von Daten {#adding-data}
 
-Es besteht die Möglichkeit, in Workflows zusätzliche Informationen über die Zielgruppe zu verwenden. Dies können beispielsweise Versicherungsnummern, Abonnements von bestimmten Newslettern oder die Herkunft der Empfänger sein. Diese Informationen können entweder aus der Adobe-Campaign-Datenbank oder aus externen Datenbanken stammen.
+Es besteht die Möglichkeit, in Workflows zusätzliche Informationen über die Zielgruppe zu verwenden. Dies können beispielsweise Versicherungsnummern, Abonnements von bestimmten Newslettern oder die Herkunft der Empfänger sein. Diese Informationen können entweder aus der Adobe Campaign-Datenbank oder aus externen Datenbanken stammen.
 
 Die Auswahl dieser Zusatzinformationen erfolgt über den Link **[!UICONTROL Daten hinzufügen...]**.
 
@@ -65,13 +70,13 @@ Wählen Sie im ersten Fenster des Assistenten zunächst den Typ der hinzuzufüge
 
 ![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
-* Die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** erlaubt den Zugriff auf Daten aus der Adobe-Campaign-Datenbank.
+* Die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** erlaubt den Zugriff auf Daten aus der Adobe Campaign-Datenbank.
 * Wählen Sie **[!UICONTROL Externe Daten]** aus, um Daten aus einer externen Datenbank hinzuzufügen. Diese Option ist nur verfügbar, wenn Sie die Option **Federated Data Access** erworben haben. Weitere Informationen hierzu finden Sie unter [Zugriff auf eine externe Datenbank (FDA)](accessing-an-external-database-fda.md).
 * Wählen Sie die Option **[!UICONTROL Angebotsvorschlag]** aus, um einen Spaltensatz hinzuzufügen, mit dem Sie den besten, vom Angebotsmodul erzeugten Vorschlag speichern können. Diese Option ist nur verfügbar, wenn Sie das Modul **Interaktion** erworben haben.
 
 Wenn keines der o. g. Module auf Ihrer Plattform installiert ist, überspringt der Assistent das Auswahlfenster. Sie werden direkt zum nächsten Schritt weitergeleitet.
 
-Gehen Sie folgendermaßen vor, um Daten aus der Adobe-Campaign-Datenbank hinzuzufügen:
+Gehen Sie folgendermaßen vor, um Daten aus der Adobe Campaign-Datenbank hinzuzufügen:
 
 1. Wählen Sie den Datentyp aus, der hinzugefügt werden soll. Hierbei kann es sich um Daten der Filterdimension direkt oder Daten aus in Relation zur Filterdimension stehenden Tabellen handeln.
 
