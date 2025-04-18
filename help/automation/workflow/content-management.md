@@ -5,10 +5,10 @@ description: Content Management
 feature: Workflows, Data Management
 role: User
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 9014c2d235fd3dde4afb961ef970334e4e909778
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 87%
 
 ---
 
@@ -19,6 +19,10 @@ Mithilfe der Aktivität **Content Management** lassen sich Inhalte erstellen und
 >[!CAUTION]
 >
 >Das Content Management ist ein optionales Modul von Adobe Campaign. Bitte prüfen Sie Ihren Lizenzvertrag.
+
+>[!NOTE]
+>
+>Mit der Web-Benutzeroberfläche von Adobe Campaign können Sie Inhaltsfragmente für Ihre Inhalte verwenden. Es ermöglicht es Marketing-Benutzern, mehrere benutzerdefinierte Inhaltsbausteine vorab zu erstellen, dank wiederverwendbarer Komponenten, die in einer oder mehreren Nachrichten referenziert werden können, und ermöglicht es Ihnen, Nachrichteninhalte schnell in einem verbesserten Design-Prozess zusammenzustellen. Weitere Informationen zu Inhaltsfragmenten finden Sie in der Dokumentation zur [Adobe Campaign-Web-Benutzeroberfläche.](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
