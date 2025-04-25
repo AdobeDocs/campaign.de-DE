@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 98%
+source-wordcount: '1238'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Gehen Sie wie folgt vor, um eine Nachrichtenvorlage zu erstellen:
    ![](assets/messagecenter_create_model_002.png)
 
 1. Ändern Sie bei Bedarf den Titel.
-1. Wählen Sie den Ereignistyp aus, der der zu sendenden Nachricht entspricht. Ereignistypen, die zur Verarbeitung durch Adobe Campaign bestimmt sind, müssen zuvor erstellt werden. [Weitere Informationen](#create-event-types)
+1. Wählen Sie den Ereignistyp aus, der der zu sendenden Nachricht entspricht. Ereignistypen, die zur Verarbeitung durch Adobe Campaign bestimmt sind, müssen zuvor erstellt werden. [Weitere Informationen](../send/transactional.md#create-event-types)
 
    ![](assets/messagecenter_create_model_003.png)
 
@@ -86,7 +86,7 @@ Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen 
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Fügen Sie Testdaten ein. Weitere Informationen finden Sie in [diesem Abschnitt](#personalization-data).
+1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-data.html){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 

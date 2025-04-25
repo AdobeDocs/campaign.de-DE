@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1206'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Im oberen Bereich des Fensters zur Konfiguration dieser Aktivität wird das Date
 
 >[!CAUTION]
 >
->Unterstützt werden ausschließlich Dateiformate mit einfach strukturierten Daten wie beispielsweise .txt, .csv etc. Die Verwendung von XML wird nicht empfohlen.
+>Es werden nur „flache“ Strukturdateien unterstützt (z. B. CSV, TXT usw.). Die Verwendung des XML-Formats wird nicht empfohlen. Mit der Client-Konsole können Sie Dateien mit einer maximalen Größe von 150 MB laden. In der -Web-Benutzeroberfläche ist das Laden von Dateien auf 50 MB beschränkt. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 
@@ -60,11 +60,11 @@ Verschiedene Optionen zum Umgang mit den Spaltenwerten stehen zur Auswahl:
 * **[!UICONTROL Datentyp]**: Angabe des in der Spalte erwarteten Datentyps.
 * **[!UICONTROL NULL erlauben]**: Angabe des Umgangs mit leeren Werten.
 
-   * **[!UICONTROL Adobe-Campaign-Standardeinstellung]**: Erzeugt nur bei numerischen Feldern einen Fehler. Fügt bei anderen Feldern den Wert NULL ein.
+   * **[!UICONTROL Adobe Campaign-Standardeinstellung]**: Erzeugt nur bei numerischen Feldern einen Fehler. Fügt bei anderen Feldern den Wert NULL ein.
    * **[!UICONTROL Leer erlaubt]**: Leere Werte sind zulässig, der Wert NULL wird eingefügt.
    * **[!UICONTROL Leer nicht erlaubt]**: Erzeugung eines Fehlers bei leeren Werten.
 
-* **[!UICONTROL Länge]**: Angabe der maximal zulässigen Anzahl an Zeichen für Daten vom Typ **String**.
+* **[!UICONTROL Länge]**: Angabe der maximal zulässigen Anzahl an Zeichen für den Datentyp **String**.
 * **[!UICONTROL Format]**: Definition des Formats von Uhrzeit und Datum.
 * **[!UICONTROL Formatierung]**: Definition der Groß- und Kleinschreibung bei Daten vom Typ **String**.
 
