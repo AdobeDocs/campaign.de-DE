@@ -3,10 +3,10 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 66e4b59915eae595b28076622f7bcfb5b5a0ffa4
+source-git-commit: 5ece3ca4ebf9f3973d9cbd1a00ea57b29c1f2e93
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 17%
+source-wordcount: '786'
+ht-degree: 28%
 
 ---
 
@@ -18,10 +18,37 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 **Auf dieser Seite**
 
+* [Version 8.6.5](#release-8-6-4)
 * [Version 8.7.4](#release-8-7-4)
 * [Version 8.6.4](#release-8-6-4)
 
 >[!ENDSHADEBOX]
+
+## Version 8.6.5 {#release-8-6-5}
+
+_Samstag, 25. April 2025_
+
+>[!AVAILABILITY]
+>
+>Diese Version ist in **Eingeschränkte Verfügbarkeit** (LA) verfügbar.
+
+### Neue Funktionen {#features-8-6-5}
+
+**Neuer SMS-Versand-Connector**: Der SMS-Versand-Connector wurde modernisiert und verbessert, um SMPP-Verbindungen im Transceiver-Modus zu aktivieren, persistente SMPP-Verbindungen zu ermöglichen und eine bessere Kompatibilität für Umgebungen sicherzustellen, die von Adobe Campaign Standard aus umgestellt werden. Für alle neuen SMS-Implementierungen ist jetzt ein neues externes SMS-Konto verfügbar. Die vorhandene Implementierung wird weiterhin unterstützt. Es wird jedoch empfohlen, zu diesem neuen, modernen und erweiterten Connector zu wechseln. [Weitere Informationen](../send/sms/sms.md)
+
+### Allgemeine Verbesserungen {#improvements-8-6-5}
+
+* Die globale Leistung der Anwendung wurde im Kontext einer Enterprise (FFDA)-Bereitstellung verbessert, einschließlich des Versands zum Testversand und der Datenbankbereinigung.
+
+* Um die Sicherheit der gesamten Kommunikation zwischen Anwendungen zu erhöhen, wird mTLS jetzt für externe API-Aufrufe unterstützt.
+
+* Mail Transfer Agent (MTA): Behebung eines Problems, bei dem ein verwaistes untergeordnetes MTA-Element im Status **[!UICONTROL Start ausstehend]** hängen bleibt.
+
+### Fehlerbehebungen {#fixes-8-6-5}
+
+Die folgenden Probleme wurden ebenfalls in dieser Version behoben:
+
+NEO-67620, NEO-71534, NEO-80245, NEO-81105, NEO-81758, NEO-81908, NEO-82351, NEO-82742, NEO-83044, NEO-83138, NEO-83350, NEO-83729, NEO-83809, NEO-84038, NEO-84108, NEO-83793, NEO-85269, NEO-86121, NEO-86556, NEO-86739
 
 ## Version 8.7.4 {#release-8-7-4}
 
