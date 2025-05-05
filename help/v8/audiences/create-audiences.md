@@ -26,7 +26,7 @@ Sie können eine Liste mithilfe der Aktivität **Liste aktualisieren** in einem 
 
 In diesem Video erfahren Sie mehr über die Verwaltung von Listen in Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3426457?quality=12&captions=ger)
 
 
 ## Erstellen einer Liste von Kontakten {#create-a-list-of-contacts}

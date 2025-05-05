@@ -79,4 +79,4 @@ Nach der Speicherung ist der neue Gestaltungsbaustein im Versand-Editor verfügb
 
 Im folgenden Video erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3449015?quality=12&captions=ger)
