@@ -42,7 +42,7 @@ Replikationsrichtlinien definieren, wie viele Daten aus einer Tabelle der lokale
 
 Campaign v8 stützt sich bei der Verwaltung geplanter Datenreplikationen auf bestimmte technische Workflows. Diese technischen Workflows sind im Knoten **[!UICONTROL Administration > Produktion > Technische Workflows > Vollständige FFDA-Replikation]** von Campaign Explorer verfügbar. **Sie dürfen nicht geändert werden.**
 
-Technische Workflows führen Prozesse oder Aufträge aus, die regelmäßig auf dem Server geplant werden. Die vollständige Liste der technischen Workflows ist auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de) aufgeführt{target="_blank"}.
+Technische Workflows führen Prozesse oder Aufträge aus, die regelmäßig auf dem Server geplant werden. Die vollständige Liste der technischen Workflows ist auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de){target="_blank"} aufgeführt.
 
 Folgende technische Workflows sorgen für die Datenreplikation:
 

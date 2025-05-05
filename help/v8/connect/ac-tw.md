@@ -45,7 +45,7 @@ Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen S
 Nachdem Sie den erweiterten Zugriff erhalten haben, erstellen Sie eine X-Anwendung, damit Adobe Campaign Tweets auf Ihrem X-Konto posten kann. Gehen Sie dazu wie folgt vor:
 
 1. Melden Sie sich bei Ihrem X-Konto an.
-1. Stellen Sie eine Verbindung mit dem [X-Entwicklerportal](https://developer.twitter.com/en/apps) her{target="_blank"}.
+1. Stellen Sie eine Verbindung mit dem [X-Entwicklerportal](https://developer.twitter.com/en/apps){target="_blank"} her.
 1. Wählen Sie **App erstellen** aus.
 1. Der X-Assistent führt Sie durch den Prozess.
 1. Um Adobe Campaign zu erlauben, Tweets auf Ihrem Konto zu posten, bearbeiten Sie die **App-Berechtigungen** im Abschnitt „Benutzerauthentifizierung einrichten“ Ihrer App. Wählen Sie **Lesen, Schreiben und Direktnachrichten**.

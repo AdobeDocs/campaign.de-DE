@@ -132,9 +132,9 @@ Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UIC
 
    * **[!UICONTROL AWS-S3-Konto-Server]**: URL Ihres Servers; sollte wie folgt ausgefüllt werden: `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
-   * **[!UICONTROL Kennung des AWS-Zugriffsschlüssels]**: Erfahren Sie in der [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys), wie Sie die Kennung Ihres AWS-Zugangsschlüssels finden.{target="_blank"}
+   * **[!UICONTROL Kennung des AWS-Zugriffsschlüssels]**: Erfahren Sie in der [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}, wie Sie die Kennung Ihres AWS-Zugangsschlüssels finden.
 
-   * **[!UICONTROL Geheimer Zugriffsschlüssel für AWS]**: Erfahren Sie in der [Amazon-Dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/), wie Sie Ihren geheimen AWS-Zugriffsschlüssel finden.{target="_blank"}
+   * **[!UICONTROL Geheimer Zugriffsschlüssel für AWS]**: Erfahren Sie in der [Amazon-Dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}, wie Sie Ihren geheimen AWS-Zugriffsschlüssel finden.
 
    * **[!UICONTROL AWS-Region]**: Weitere Informationen zu AWS-Regionen finden Sie in der [Amazon-Dokumentation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
 
@@ -146,4 +146,4 @@ Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UIC
 
    * **[!UICONTROL Verschlüsselung]**: Art der Verschlüsselung, **[!UICONTROL Keine]** oder **[!UICONTROL SSL]**.
 
-   * **[!UICONTROL Zugriffsschlüssel]**: Erfahren Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal), wie Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden{target="_blank"}.
+   * **[!UICONTROL Zugriffsschlüssel]**: Erfahren Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}, wie Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden.
