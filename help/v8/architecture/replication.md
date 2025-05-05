@@ -117,4 +117,4 @@ In diesem Video werden die wichtigsten Konzepte vorgestellt, welche Datenbanken 
 
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-Weitere Tutorials zur Client-Konsole von Campaign v8 [hier](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview).
+Weitere Tutorials zur Client-Konsole von Campaign v8 [hier](https://experienceleague.adobe.com/de/docs/campaign-learn/tutorials/overview).

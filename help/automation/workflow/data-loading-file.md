@@ -26,7 +26,7 @@ Im oberen Bereich des Fensters zur Konfiguration dieser Aktivität wird das Date
 
 >[!CAUTION]
 >
->Es werden nur „flache“ Strukturdateien unterstützt (z. B. CSV, TXT usw.). Die Verwendung des XML-Formats wird nicht empfohlen. Mit der Client-Konsole können Sie Dateien mit einer maximalen Größe von 150 MB laden. In der -Web-Benutzeroberfläche ist das Laden von Dateien auf 50 MB beschränkt. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
+>Es werden nur „flache“ Strukturdateien unterstützt (z. B. CSV, TXT usw.). Die Verwendung des XML-Formats wird nicht empfohlen. Mit der Client-Konsole können Sie Dateien mit einer maximalen Größe von 150 MB laden. In der -Web-Benutzeroberfläche ist das Laden von Dateien auf 50 MB beschränkt. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=de){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 
