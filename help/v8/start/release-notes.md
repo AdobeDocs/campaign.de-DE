@@ -3,10 +3,10 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 5ece3ca4ebf9f3973d9cbd1a00ea57b29c1f2e93
+source-git-commit: 6d2425f7e7f35f5461151790fbda2bef2959bff4
 workflow-type: tm+mt
 source-wordcount: '786'
-ht-degree: 28%
+ht-degree: 31%
 
 ---
 
@@ -62,7 +62,7 @@ _Freitag, 10. April 2025_
 
 ### Neue Funktionen {#features-8-7-4}
 
-* **SMS-REST-API-**: Die REST-API für Transaktionsnachrichten ist jetzt für den SMS-Kanal verfügbar. Wenn sowohl E-Mail als auch Mobiltelefon in der Payload vorhanden sind, können Sie das Feld „wishChannel“ verwenden, um den Kanal anzugeben. Wenn keine E-Mail-Adresse angegeben wird, wird sie standardmäßig verwendet, es sei denn, WishedChannel fordert explizit SMS an.
+* **SMS-REST-API-**: Die REST-API für Transaktionsnachrichten ist jetzt für den SMS-Kanal verfügbar. Wenn sowohl „email“ als auch „mobilePhone“ in der Payload vorhanden sind, können Sie den Kanal über das Feld „wishedChannel“ angeben. Wenn keine E-Mail-Adresse angegeben wird, wird sie standardmäßig verwendet, es sei denn, WishedChannel fordert explizit SMS an.
 
 * **Mehrsprachige Sendungen** - Mit der Veröffentlichung der Campaign Web-Benutzeroberfläche im April können Sie mehrere E-Mail-Sendungen in verschiedenen Sprachen senden und auf die zugehörigen dynamischen Berichte zugreifen. Diese Funktion ist nur Ende April in der Web-Benutzeroberfläche von Adobe Campaign verfügbar und erfordert ein Server-Update auf Campaign v8.7.4.
 
