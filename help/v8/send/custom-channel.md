@@ -17,7 +17,7 @@ Mit Adobe Campaign können Sie benutzerdefinierte externe Kanäle erstellen, die
 
 Die Versanderstellung und der Versand können sowohl in der Client-Konsole als auch in der Web-Benutzeroberfläche durchgeführt werden. Der benutzerdefinierte externe Kanal wird jedoch nur in der Client-Konsole ausgeführt.
 
-Informationen zum Erstellen und Senden eines Versands auf der Grundlage eines benutzerdefinierten externen Kanals finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html).
+Informationen zum Erstellen und Senden eines Versands auf der Grundlage eines benutzerdefinierten externen Kanals finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=de).
 
 Im Folgenden finden Sie die Schritte zum Erstellen eines neuen externen benutzerdefinierten Kanals in der Client-Konsole:
 
