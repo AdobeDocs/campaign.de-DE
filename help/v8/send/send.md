@@ -4,11 +4,12 @@ description: Erfahren Sie mehr über den Umfang und die Besonderheiten des E-Mai
 feature: Email
 role: Data Engineer
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +33,7 @@ Im Versand-Dashboard können Sie außerdem die verarbeiteten Nachrichten und Ver
 >Der Versandstatus wird nicht in Echtzeit angezeigt. Weitere Informationen zum E-Mail-Feedback-Service finden Sie [in diesem Abschnitt](#email-feedback-service).
 
 
-[Weitere Informationen zum Versand-Monitoring finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de){target="_blank"}.
+[ Weitere Informationen zur Versandüberwachung finden Sie in der Dokumentation zu Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de){target="_blank"}
 
 ## Campaign MTA {#mta}
 
@@ -75,7 +76,7 @@ Domain Keys Identified Mail (DKIM) ist eine Authentifizierungsmethode, mit der g
 
 In Adobe Campaign wird die DKIM-E-Mail-Authentifizierungssignatur vom MTA durchgeführt.
 
-Im [Handbuch von Adobe zu Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication){target="_blank"} erfahren Sie mehr über DKIM.
+Im Handbuch zu Best Practices für die Zustellbarkeit von [Adobe erfahren Sie mehr ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication){target="_blank"} DKIM.
 
 ## E-Mail-Feedback-Service {#email-feedback-service}
 

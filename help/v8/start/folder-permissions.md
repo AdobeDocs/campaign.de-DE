@@ -5,10 +5,11 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 5bd8dbba-7a06-4737-bc5a-60354f91c709
-source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +36,7 @@ Gehen Sie wie folgt vor, um Berechtigungen für einen bestimmten Campaign-Ordner
 >
 >Sie sollten kein Objekt erstellen können, für das Sie nicht über mindestens einen Ordner mit Schreibrechten verfügen.
 >
->Sie müssen kein Administrator sein, um Fragmente zu erstellen, Sie müssen jedoch über Schreibrechte für mindestens einen Ordner „Visuelle Inhaltsfragmente“ verfügen. Andernfalls können Sie kein visuelles Fragment erstellen.
+>Sie müssen nicht Teil des Admin-Teams sein, um Fragmente zu erstellen, benötigen aber Schreibrechte für mindestens einen Ordner „Inhalt – Visuelle Fragmente“. Andernfalls können Sie kein visuelles Fragment erstellen.
 
 ## Ausdehnen von Berechtigungen {#propagate-permissions}
 

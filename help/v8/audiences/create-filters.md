@@ -5,7 +5,8 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 100%
@@ -193,7 +194,7 @@ Verwenden und kombinieren Sie **Schnellfilter**, um Filter für bestimmte Felder
 
 Nach dem Hinzufügen werden die Schnellfilterfelder nacheinander über der Datenliste angezeigt. Sie können unabhängig voneinander gelöscht werden.
 
-Schnellfilter sind für jeden Benutzer spezifisch und werden bei jeder Cache-Leerung der Client-Konsole erneut initialisiert.
+Schnellfilter sind für jeden Benutzer und jede Benutzerin spezifisch und werden bei jeder Cache-Leerung der Client-Konsole erneut initialisiert.
 
 Wenn Sie einen Filter wiederverwenden müssen, erstellen Sie einen **erweiterten Filter** und speichern Sie ihn. [Weitere Informationen](#advanced-filters).
 
@@ -327,10 +328,10 @@ Verwenden Sie Funktionen zur Definition des Inhalts des Filters, um erweiterte F
 
 In diesen Beispielen erfahren Sie, wie Sie erweiterte Abfragen erstellen:
 
-* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de) erfahren Sie, wie Sie einfache Empfängerattribute für Ihr Targeting verwenden können{target="_blank"}.
-* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de) erfahren Sie, wie Sie nach Empfängerinnen und Empfängern filtern können, die in den letzten 7 Tagen nicht kontaktiert wurden{target="_blank"}.
-* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de) erfahren Sie, wie Sie eine Liste der Benutzenden abrufen können, in der nach aktiven Konten gefiltert werden kann{target="_blank"}.
-* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de) erfahren Sie, wie Sie eine Zielgruppe für Geburtstags-E-Mails erstellen können{target="_blank"}.
+* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"} erfahren Sie, wie Sie einfache Empfängerattribute für Ihr Targeting verwenden können.
+* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de){target="_blank"} erfahren Sie, wie Sie nach Empfängern filtern können, die in den letzten 7 Tagen nicht kontaktiert wurden.
+* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine Liste der Benutzer abrufen können, die nach aktiven Konten gefiltert werden können.
+* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine Zielgruppe für Geburtstags-E-Mails erstellen können.
 
 
 ### Erweiterte Parameter für vordefinierte Filter {#param-for-data-filters}

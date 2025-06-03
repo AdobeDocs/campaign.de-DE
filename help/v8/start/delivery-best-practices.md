@@ -4,11 +4,12 @@ description: Erfahren Sie mehr zu Best Practices für das Erstellen und Durchfü
 feature: Email, Push, SMS, Direct Mail
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '2970'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +32,7 @@ Um dies zu vermeiden, koordinieren Sie die zeitliche Durchführung von Sendungen
 
 * Workflow-Ausführung: Die Überwachung Ihrer Workflows ist unverzichtbar, um Probleme mit der Performance der Plattform zu vermeiden. Befolgen Sie die [in diesem Dokument](../../automation/workflow/workflow-best-practices.md#execution-and-performance) aufgeführten Richtlinien.
 
-* Stellen Sie eine Verbindung zu den [Funktionen des Control Panels von Campaign](https://experienceleague.adobe.com/de/docs/control-panel/using/discover-control-panel/key-features){target="_blank"} her, um Ihre Plattform mit den Funktionen zur [Leistungsüberwachung](https://experienceleague.adobe.com/de/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"} zu überwachen.
+* Stellen Sie eine Verbindung zu Ihren [Funktionen des Campaign Control Panels](https://experienceleague.adobe.com/de/docs/control-panel/using/discover-control-panel/key-features){target="_blank"} her, um Ihre Plattform mithilfe der Funktionen [Leistungsüberwachung](https://experienceleague.adobe.com/de/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"} zu überwachen.
 
 #### Quarantäneverwaltung {#quarantine-management}
 
@@ -40,9 +41,9 @@ Achten Sie in Ihrem eigenen Interesse auf eine gute Quarantäneverwaltung.
 Wenn Sie auf einer neuen Plattform erstmals E-Mails versenden, verwenden Sie möglicherweise eine Liste mit fehlerhaften Adressen. Wenn Sie Nachrichten an ungültige Adressen oder an Honeypot-Adressen (Postfächer, die ausschließlich der Täuschung von Spammern dienen) senden, mindert dies die Reputation Ihrer Plattform. Mit guten Prozessen für die Quarantäneverwaltung können Sie die Adressqualität pflegen, verhindern, dass Sie von ISPs auf eine Blockierungsliste gesetzt werden, und Ihre Fehlerrate senken, was den Versand beschleunigt und den Durchsatz erhöht.
 
 
-Weitere Informationen zum Starten einer neuen Plattform finden Sie im [Handbuch von Adobe zu Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}.
+Im Handbuch zu Best Practices für die Zustellbarkeit von [Adobe erfahren Sie, wie Sie eine neue Plattform ](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}.
 
-Die technischen Empfehlungen werden in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"} aufgeführt.
+Technische Empfehlungen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}.
 
 
 +++ **Hier finden Sie einige Best Practices**
@@ -68,7 +69,7 @@ Versandvorlagen ermöglichen eine effiziente Nutzung, da sie für die häufigste
 
 ### Subdomains und Branding {#subdomains-and-branding}
 
-Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Angenommen die Domain einer Bank heißt bluebank.com, dann könnten ihre Subdomains @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com usw. lauten. Mit einer Versandvorlage pro Subdomain können Sie stets die richtigen vorkonfigurierten Parameter für jede Marke verwenden, um Fehler zu vermeiden und Zeit zu sparen.  Weitere Informationen zum Subdomain-Branding finden Sie in der [Dokumentation zum Control Panel von Campaign](https://experienceleague.adobe.com/de/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Angenommen die Domain einer Bank heißt bluebank.com, dann könnten ihre Subdomains @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com usw. lauten. Mit einer Versandvorlage pro Subdomain können Sie stets die richtigen vorkonfigurierten Parameter für jede Marke verwenden, um Fehler zu vermeiden und Zeit zu sparen.  Weitere Informationen zum Subdomain-Branding finden Sie in [ Dokumentation zum Campaign Control Panel ](https://experienceleague.adobe.com/de/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Konfigurieren von Adressen {#configure-addresses}
 
@@ -225,7 +226,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
 ## Verwalten von Bildern {#manage-images}
 
@@ -269,7 +270,7 @@ Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorsc
 
 ## Definieren der richtigen Zielgruppe {#define-the-right-audience}
 
-Die Bestimmung der Zielgruppen ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Listen sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients sowie auf Smartphones und Tablets und stellen Sie sicher, dass Ihre E-Mail-Listen aktuell sind (und keine unbekannten oder veralteten Adressen enthalten).  Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.  Weitere Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](../audiences/gs-audiences.md).
+Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Listen sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients sowie auf Smartphones und Tablets und stellen Sie sicher, dass Ihre E-Mail-Listen aktuell sind (und keine unbekannten oder veralteten Adressen enthalten).  Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.  Weitere Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](../audiences/gs-audiences.md).
 
 ### Ansprechen der richtigen Audience {#target-the-right-audience}
 
@@ -357,7 +358,7 @@ Optimieren Sie Ihre Geschäftschancen und nutzen Sie die Funktionen von Adobe Ca
 
 #### Validierungsprozess
 
-Sie können einen vollständigen Validierungsprozess einschließlich der Adobe-Campaign-Benutzer und -Gruppen definieren, um die Zielgruppe und den Nachrichteninhalt zu validieren. Dadurch wird eine umfassende Steuerung und Kontrolle der unterschiedlichen Kampagnenprozesse ermöglicht. Hierzu gehören Zielgruppenbestimmung, Inhalt, Budget, Extraktion und Testversand. Je nach Berechtigung werden Benutzer benachrichtigt, erhalten Testsendungen und können die Nachricht validieren oder ablehnen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../automation/campaigns/marketing-campaign-approval.md).
+Sie können einen vollständigen Validierungsprozess einschließlich der Adobe Campaign-Benutzer und -Gruppen definieren, um die Zielgruppe und den Nachrichteninhalt zu validieren. Dadurch wird eine umfassende Steuerung und Kontrolle der unterschiedlichen Kampagnenprozesse ermöglicht. Hierzu gehören Zielgruppenbestimmung, Inhalt, Budget, Extraktion und Testversand. Je nach Berechtigung werden Benutzer benachrichtigt, erhalten Testsendungen und können die Nachricht validieren oder ablehnen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../automation/campaigns/marketing-campaign-approval.md).
 
 #### Schübe verwenden
 
@@ -411,7 +412,7 @@ Um Ihre Kampagnen steuern zu können, müssen Sie zunächst sichergehen, dass Ih
 
 Prüfen Sie im Versand-Dashboard von Campaign die verarbeiteten Nachrichten und Versand-Auditlogs.  In den Versandlogs können Sie den Status der Nachrichten feststellen.
 
-[Weitere Informationen zum Versand-Monitoring finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de){target="_blank"}.
+[ Weitere Informationen zur Versandüberwachung finden Sie in der Dokumentation zu Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de){target="_blank"}
 
 
 ## Nachverfolgen von Verhaltensmustern {#track-behaviour}
@@ -421,4 +422,4 @@ Um das Verhalten Ihrer Empfangenden besser kennenzulernen, können Sie ihre Reak
 Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versandassistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie die Nachverfolgung aktivieren möchten.
 
 
-[Weitere Informationen zu den Tracking-Funktionen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=de#sending-messages){target="_blank"}.
+[Weitere Informationen zu Tracking-Funktionen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=de#sending-messages){target="_blank"}

@@ -4,11 +4,12 @@ description: Erste Schritte mit E-Mails in Adobe Campaign. Senden Sie personalis
 feature: Email
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 693b9d9d50d5e60061bd952090380382ebaf8df8
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -90,11 +91,11 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
 Ihr erster E-Mail-Versand ist fertig. Definieren Sie nun die Zielgruppe, validieren Sie den Versand und führen Sie ihn aus.
 
-In diesem [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"} erfahren Sie, wie Sie einen Workflow zum Importieren von E-Mail-Inhalten erstellen.
+In diesem Anwendungsfall erfahren Sie, wie Sie einen Workflow zum Importieren [ E-Mail-](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"} erstellen.
 
 >[!MORELIKETHIS]
 >
->* [Erstellen eines Versands](../start/create-message.md)
+>* [Versand erstellen](../start/create-message.md)
 >* [Erstellen und Verwenden von E-Mail-Vorlagen](create-templates.md)
 >* [Auswählen der Zielgruppe für Ihre E-Mail](../audiences/gs-audiences.md)
 >* [Validieren eines Versands und Durchführen von Testsendungen](preview-and-proof.md)

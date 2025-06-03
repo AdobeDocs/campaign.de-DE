@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 100%
+source-wordcount: '3028'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Softbounces sind temporäre Fehler, die von ISPs bei Versandproblemen von E-Mail
 
 **Ignoriert**: Vorübergehender Fehler, beispielsweise &quot;Out of office&quot; oder technischer Fehler bei Absendern vom Typ &quot;Postmaster&quot;.
 
-Die Feedback-Schleife funktioniert wie Bounce-E-Mails: Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen an diesen Benutzer blockiert werden. Die Adressen dieser Benutzer befinden sich dann auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen werden in die Quarantänetabelle (**NmsAddress**) und nicht in die Empfängertabelle (**NmsRecipient**) mit dem Status **[!UICONTROL Auf die Blockierungsliste gesetzt]** aufgenommen. Im [Handbuch von Adobe mit Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops) erfahren Sie mehr über den Mechanismus der Feedback-Schleife{target="_blank"}.
+Die Feedback-Schleife funktioniert wie Bounce-E-Mails: Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen an diesen Benutzer blockiert werden. Die Adressen dieser Benutzer befinden sich dann auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen werden in die Quarantänetabelle (**NmsAddress**) und nicht in die Empfängertabelle (**NmsRecipient**) mit dem Status **[!UICONTROL Auf die Blockierungsliste gesetzt]** aufgenommen. Im [Handbuch von Adobe mit Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops){target="_blank"} erfahren Sie mehr über den Mechanismus der Feedback-Schleife.
 
 ## Synchrone und asynchrone Fehler {#synchronous-and-asynchronous-errors}
 
@@ -111,7 +111,7 @@ Wenn der Gültigkeitszeitraum in Campaign beispielsweise auf den Standardwert vo
 
 Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht gesendet werden konnte, wird sie mit einem Timeout beendet, und ihr Status ändert sich von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** (in den Versandlogs).
 
-Weitere Informationen zum Gültigkeitszeitraum finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"}.
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## E-Mail-Fehlertypen {#email-error-types}

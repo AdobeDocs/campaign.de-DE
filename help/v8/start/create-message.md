@@ -4,11 +4,12 @@ description: Erstellen Ihres ersten Versands
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '1610'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -58,7 +59,7 @@ Der Versandinhalt ist bereit zur Konfiguration. Die Definition des Versandinhalt
 * [Definieren des E-Mail-Inhalts](../send/email.md)
 * [Definieren des SMS-Inhalts](../send/sms/sms-content.md)
 * [Definieren des Direkt-Mail-Inhalts](../send/direct-mail.md)
-* [Definieren des Inhalts der Push-Benachrichtigung](../send/push.md)
+* [Definieren des Inhalts einer Push-Benachrichtigung](../send/push.md)
 
 
 ## Definieren der Zielgruppe {#target-population}
@@ -181,7 +182,7 @@ Weiterführende Informationen zu Testversand-Empfangenden und zum Testversand fi
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447008?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 
