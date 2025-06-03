@@ -197,4 +197,4 @@ Wenn Sie beispielsweise eine Produktliste in Ihrer E-Mail eingefügt haben und d
 
 Im folgenden Video wird erläutert, wie Sie AMP in Adobe Campaign aktivieren und nutzen können.
 
->[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32952?quality=12&learn=on&captions=ger)
