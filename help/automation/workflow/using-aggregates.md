@@ -3,8 +3,9 @@ product: campaign
 title: Verwenden von Aggregaten
 description: Machen Sie sich mit der Verwendung von Aggregaten vertraut
 feature: Workflows
+version: Campaign v8, Campaign Classic v7
 exl-id: 7522f449-341e-4aef-8c1e-c49e13809c08
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 100%
@@ -28,7 +29,7 @@ Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erst
 
 ![](assets/datamanagement_usecase_1.png)
 
-## 1. Schritt: Berechnung des Aggregats {#step-1--calculating-the-aggregate-result}
+## &#x200B;1. Schritt: Berechnung des Aggregats {#step-1--calculating-the-aggregate-result}
 
 1. Erstellen Sie eine Abfrage. Ziel ist die Berechnung des letzten bekannten Erstellungsdatums aus allen in der Datenbank enthaltenen Empfängern. Die Abfrage enthält somit keinen Filter.
 1. Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]**.
@@ -43,7 +44,7 @@ Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erst
 
    Lassen Sie die Option **[!UICONTROL Dubletten löschen (DISTINCT)]** angekreuzt.
 
-## 2. Schritt: Verknüpfung von Empfängern und Aggregat {#step-2--linking-the-recipients-and-the-aggregation-function-result}
+## &#x200B;2. Schritt: Verknüpfung von Empfängern und Aggregat {#step-2--linking-the-recipients-and-the-aggregation-function-result}
 
 Verwenden Sie die Schema-Bearbeitung, um die auf Empfänger bezogene Abfrage mit der zur Berechnung eines Aggregats dienenden Abfrage zu verknüpfen.
 
@@ -58,7 +59,7 @@ Verwenden Sie die Schema-Bearbeitung, um die auf Empfänger bezogene Abfrage mit
 
 Auf diese Weise wird das Ergebnis des Aggregats mit jedem einzelnen der Empfänger verknüpft.
 
-## 3. Schritt: Filterung der Empfänger mithilfe des Aggregats  {#step-3--filtering-recipients-using-the-aggregate-}
+## &#x200B;3. Schritt: Filterung der Empfänger mithilfe des Aggregats  {#step-3--filtering-recipients-using-the-aggregate-}
 
 Nach Erzeugung der Relation sind die Empfänger und das Aggregat Teil desselben temporären Schemas. Dadurch ist es nun möglich, einen Filter auf das Schema anzuwenden, der den Vergleich zwischen dem Erstellungsdatum der Empfänger und dem letzten Erstellungsdatum (durch das Aggregat berechnet) vornimmt. Hierzu wird eine Aufspaltung verwendet.
 

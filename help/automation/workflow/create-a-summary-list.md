@@ -4,8 +4,9 @@ title: Erstellen einer zusammenfassenden Liste
 description: Erstellen einer zusammenfassenden Liste
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 100%
@@ -54,7 +55,7 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
 1. Ziehen Sie die Aktivitäten **Datei-Wächter** und **Laden (Datei)** in das Workflow-Diagramm.
 
-   Der **Datei-Wächter** sammelt Dateien und sendet sie auf den Adobe-Campaign-Server.
+   Der **Datei-Wächter** sammelt Dateien und sendet sie auf den Adobe Campaign-Server.
 
    Die Aktivität **Laden (Datei)** lädt die gesammelten Daten in die Arbeitstabelle des Workflows. Weiterführende Informationen zu dieser Aktivität finden Sie auf [dieser Seite](data-loading-file.md).
 

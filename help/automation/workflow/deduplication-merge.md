@@ -3,8 +3,9 @@ title: Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität
 description: Erfahren Sie, wie Sie die Zusammenführungsfunktion der Deduplizierungsaktivität verwenden.
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: ee201cfd-a351-41d8-a5ad-2f2e538dc643
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 100%

@@ -3,8 +3,9 @@ product: campaign
 title: Senden eines Berichts an eine Liste
 description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine Liste senden.
 feature: Workflows
+version: Campaign v8, Campaign Classic v7
 exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 100%
@@ -23,7 +24,7 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 * Erstellen Sie eine Versandvorlage, die bei jeder Ausführung des Workflows einen neuen Versand erstellt. [Weitere Informationen](#step-2--create-the-delivery-template).
 * Erstellen Sie einen Workflow, der den Bericht im PDF-Format erzeugt und an die Empfängerliste sendet. [Weitere Informationen](#step-3--create-the-workflow)).
 
-## 1. Schritt: Erstellen der Empfängerliste {#step-1--create-the-recipient-list}
+## &#x200B;1. Schritt: Erstellen der Empfängerliste {#step-1--create-the-recipient-list}
 
 Gehen Sie wie folgt vor, um eine Liste der gewünschten Empfänger zu erstellen:
 
@@ -33,7 +34,7 @@ Gehen Sie wie folgt vor, um eine Liste der gewünschten Empfänger zu erstellen:
 
 Weiterführende Informationen zum Erstellen von Listen finden Sie in [diesem Abschnitt](../../v8/audiences/create-audiences.md).
 
-## 2. Schritt: Erstellen der Versandvorlage {#step-2--create-the-delivery-template}
+## &#x200B;2. Schritt: Erstellen der Versandvorlage {#step-2--create-the-delivery-template}
 
 Gehen Sie wie folgt vor, um eine Versandvorlage zu erstellen:
 

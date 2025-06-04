@@ -3,11 +3,12 @@ title: CRM-Connector-Aktivität
 description: Erfahren Sie mehr über den CRM-Connector und konfigurieren Sie die Datensynchronisation.
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 9da636a7-ed57-440f-8166-6982dce0213c
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -28,4 +29,4 @@ Wählen Sie zunächst das externe Konto aus, das dem CRM-System entspricht, mit 
 
 ![](assets/crm_task_select_obj.png)
 
-Weiterführende Informationen zu CRM-Connectoren in Adobe Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html?lang=de){target="_blank"}.
+Weiterführende Informationen zu CRM-Connectoren in Adobe Campaign finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html?lang=de){target="_blank"}.

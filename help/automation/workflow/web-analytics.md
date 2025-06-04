@@ -3,7 +3,8 @@ product: campaign
 title: Web Analytics
 description: Erfahren Sie mehr über das Web Analytics-Package.
 feature: Workflows, Analytics Integration
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+version: Campaign v8, Campaign Classic v7
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 100%
@@ -42,7 +43,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Web-Analytics-Con
   <tr> 
    <td> <span class="uicontrol">Abruf der Web-Ereignisse</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsGetWebEvents</span> <br /> </td> 
-   <td> Ruft stündlich die Segmente ab, die sich auf das Besucherverhalten der angegebenen Webseite beziehen, fügt die Daten zur Adobe-Campaign-Datenbank hinzu und startet den Remarketing-Workflow. <br /> </td> 
+   <td> Ruft stündlich die Segmente ab, die sich auf das Besucherverhalten der angegebenen Webseite beziehen, fügt die Daten zur Adobe Campaign-Datenbank hinzu und startet den Remarketing-Workflow. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

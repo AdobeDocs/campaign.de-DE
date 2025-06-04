@@ -4,8 +4,9 @@ title: Content Management
 description: Content Management
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-source-git-commit: c73f9f3dc7958152c284dbaf06210d09115e5df8
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 87%
@@ -22,7 +23,7 @@ Mithilfe der Aktivität **Content Management** lassen sich Inhalte erstellen und
 
 >[!NOTE]
 >
->Mit der Web-Benutzeroberfläche von Adobe Campaign können Sie Inhaltsfragmente für Ihre Inhalte verwenden. Es ermöglicht Marketing-Benutzern das Vorerstellen mehrerer benutzerdefinierter Inhaltsbausteine dank wiederverwendbarer Komponenten, die in einer oder mehreren Nachrichten referenziert werden können, sodass Sie Nachrichteninhalte schnell in einem verbesserten Design-Prozess zusammenstellen können. Weitere Informationen zu Inhaltsfragmenten finden Sie in der Dokumentation zur [Adobe Campaign-Web-Benutzeroberfläche.](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
+>Mit der Web-Benutzeroberfläche von Adobe Campaign können Sie Inhaltsfragmente für Ihre Inhalte verwenden. Es ermöglicht Marketing-Benutzern das Vorerstellen mehrerer benutzerdefinierter Inhaltsbausteine dank wiederverwendbarer Komponenten, die in einer oder mehreren Nachrichten referenziert werden können, sodass Sie Nachrichteninhalte schnell in einem verbesserten Design-Prozess zusammenstellen können. Weitere Informationen zu Inhaltsfragmenten finden Sie in der Dokumentation zur [Adobe Campaign-Web-Benutzeroberfläche.](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 

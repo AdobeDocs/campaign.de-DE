@@ -4,8 +4,9 @@ title: Wiederkehrender Versand
 description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Versand".
 feature: Workflows
 role: User, Data Engineer
+version: Campaign v8, Campaign Classic v7
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
-source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
@@ -52,6 +53,6 @@ Wenn Sie die Ausführung eines wiederkehrenden Versands stoppen möchten, sollte
 
 In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/30201?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.

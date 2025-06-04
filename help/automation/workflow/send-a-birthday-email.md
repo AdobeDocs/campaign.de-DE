@@ -3,8 +3,9 @@ product: campaign
 title: Senden einer Geburtstags-E-Mail
 description: Erfahren Sie, wie Sie mit einem Workflow eine Geburtstags-E-Mail senden
 feature: Workflows
+version: Campaign v8, Campaign Classic v7
 exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 100%
@@ -99,7 +100,7 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
 Sollte es sich bei dem laufenden Jahr **nicht um ein Schaltjahr handeln**, müssen bei der Workflow-Ausführung am 1. März auch die Empfänger ausgewählt und zu der Empfängerliste hinzugefügt werden, deren Geburtstag am 29. Februar ist. In allen anderen Fällen ist keinerlei zusätzliche Maßnahme notwendig.
 
-### 1. Schritt: Wählen Sie die Empfänger aus {#step-1--selecting-the-recipients}
+### &#x200B;1. Schritt: Wählen Sie die Empfänger aus {#step-1--selecting-the-recipients}
 
 Konfigurieren Sie zunächst die **[!UICONTROL Planung]** für eine tägliche Ausführung des Workflows. Identifizieren Sie dann alle Empfänger, deren Geburtstag dem aktuellen Datum entspricht.
 
@@ -111,7 +112,7 @@ Konfigurieren Sie zunächst die **[!UICONTROL Planung]** für eine tägliche Aus
 
 Die Auswahl der Empfänger, deren Geburtstag dem aktuellen Datum entspricht, wird im Abschnitt [Identifizieren von Empfängern, die Geburtstag haben](#identifying-recipients-whose-birthday-it-is) beschrieben.
 
-### 2. Schritt: Test, ob ein Schaltjahr vorliegt {#step-2--select-whether-or-not-it-is-a-leap-year}
+### &#x200B;2. Schritt: Test, ob ein Schaltjahr vorliegt {#step-2--select-whether-or-not-it-is-a-leap-year}
 
 Prüfen Sie mithilfe einer **[!UICONTROL Test]**-Aktivität, ob das aktuelle Jahr ein Schaljahr und ob das aktuelle Datum der 1. März ist.
 
@@ -171,7 +172,7 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 ![](assets/birthday-workflow_usecase_4.png)
 
-### 3. Schritt: Auswahl der Empfänger, die am 29. Februar Geburtstag haben {#step-3--select-any-recipients-born-on-february-29th}
+### &#x200B;3. Schritt: Auswahl der Empfänger, die am 29. Februar Geburtstag haben {#step-3--select-any-recipients-born-on-february-29th}
 
 Ziehen Sie eine **[!UICONTROL Verzweigung]** in das Diagramm und schließen Sie an eine der ausgehenden Transitionen eine **[!UICONTROL Abfrage]**-Aktivität an.
 

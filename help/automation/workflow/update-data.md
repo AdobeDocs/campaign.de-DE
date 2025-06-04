@@ -3,8 +3,9 @@ product: campaign
 title: Daten-Update
 description: Erfahren Sie mehr über die Workflow-Aktivität "Daten-Update".
 feature: Workflows, Targeting Activity, Data Management
+version: Campaign v8, Campaign Classic v7
 exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 100%
@@ -25,7 +26,7 @@ Geben Sie im Feld **[!UICONTROL Aktionstyp]** an, auf welche Weise die Daten akt
 * **[!UICONTROL Hinzufügen]**: fügt nur neue Daten hinzu (existierende Daten werden nicht verändert).
 * **[!UICONTROL Aktualisieren]**: aktualisiert existierende Daten (fügt keine neuen Datensätze hinzu).
 * **[!UICONTROL Sammlung aktualisieren und fusionieren]**: Aktualisieren Sie Daten und wählen Sie einen primären Datensatz; verknüpfen Sie dann Elemente, die mit den Duplikaten in diesem primären Datensatz verknüpft sind. Anschließend können Duplikate gelöscht werden, ohne dass verwaiste angehängte Elemente erstellt werden.
-* **[!UICONTROL Löschen]** - löscht in der Datenbank existierende Daten.
+* **[!UICONTROL Löschen]** – löscht in der Datenbank existierende Daten.
 
 ![](assets/s_advuser_update_data_1.png)
 

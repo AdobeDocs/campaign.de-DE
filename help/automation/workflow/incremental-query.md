@@ -4,8 +4,9 @@ title: Inkrementelle Abfrage
 description: Erfahren Sie mehr über die Workflow-Aktivität "Inkrementelle Abfrage".
 feature: Workflows, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 3e9f92c3-080f-441b-a15a-2ec9d056d1f9
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 100%

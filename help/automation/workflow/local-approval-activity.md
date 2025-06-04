@@ -4,8 +4,9 @@ title: Verwenden der lokalen Validierungsaktivität
 description: Erfahren Sie, wie Sie die lokale Validierungsaktivität verwenden
 feature: Workflows, Approvals
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 31089026-3fc0-4491-8b70-0fb7fd1e3ac0
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 100%
@@ -42,7 +43,7 @@ Der lokale Validierungsprozess gliedert sich in folgende Schritte:
 
 1. Einige Tage später sendet die zweite **[!UICONTROL Lokale Validierung]** allen lokalen Verantwortlichen eine E-Mail-Benachrichtigung, die sie über die Empfängerreaktionen (Klicks, Öffnungen usw.) informiert.
 
-## 1. Schritt: Erstellen der Datenverteilungsvorlage {#step-1--creating-the-data-distribution-template-}
+## &#x200B;1. Schritt: Erstellen der Datenverteilungsvorlage {#step-1--creating-the-data-distribution-template-}
 
 Die Verteilungsvorlage ermöglicht es, die aus der Zielgruppenbestimmung resultierende Population mithilfe einer Datengruppierung zu begrenzen, wobei jeder Wert einem lokalen Verantwortlichen zugewiesen werden kann. In diesem Beispiel haben wir die Variable **[!UICONTROL Domain der E-Mail-Adresse]** als Verteilungsfeld ein und jedem lokalen Verantwortlichen eine Domain zugewiesen.
 
@@ -80,7 +81,7 @@ Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unt
      >
      >Stellen Sie sicher, dass die Benutzer über die nötigen Berechtigungen verfügen.
 
-## 2. Schritt: Erstellen des Zielgruppen-Workflows {#step-2--creating-the-targeting-workflow}
+## &#x200B;2. Schritt: Erstellen des Zielgruppen-Workflows {#step-2--creating-the-targeting-workflow}
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 

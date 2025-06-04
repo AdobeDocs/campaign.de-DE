@@ -4,8 +4,9 @@ title: Anreichern von Daten
 description: Erfahren Sie mehr über die Workflow-Aktivität "Anreicherung".
 feature: Workflows, Enrichment Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 100%
@@ -34,7 +35,7 @@ Ein in der **[!UICONTROL Empfängertabelle]** enthaltener Kontakt kann mehrere E
 
 ![](assets/uc1_enrich_2.png)
 
-Ziel des vorliegenden Beispiels ist es, den Teilnehmern des letzten Wettbewerbs eine je nach erreichtem Score personalisierte Mitteilung zukommen zu lassen. Der Teilnehmer mit dem höchsten Score erhält den ersten Preis, der Teilnehmer mit dem zweithöchsten Score einen Trostpreis und alle anderen Teilnehmer werden aufgefordert, ihr Glück beim nächsten Wettbewerb erneut zu versuchen.
+Ziel des vorliegenden Beispiels ist es, den Teilnehmern des letzten Wettbewerbs eine je nach erreichtem Score personalisierte Nachricht zukommen zu lassen. Der Teilnehmer mit dem höchsten Score erhält den ersten Preis, der Teilnehmer mit dem zweithöchsten Score einen Trostpreis und alle anderen Teilnehmer werden aufgefordert, ihr Glück beim nächsten Wettbewerb erneut zu versuchen.
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
@@ -47,7 +48,7 @@ Die Workflow-Erstellung gliedert sich in folgende Schritte:
 1. Mithilfe der Aktivität des Typs **[!UICONTROL Aufspaltung]** werden je nach erreichtem Score Empfänger-Teilmengen erstellt.
 1. Jeder Teilmenge wird eine Aktivität **[!UICONTROL Versand]** hinzugefügt.
 
-## 1. Schritt: Zielgruppenbestimmung {#step-1--targeting}
+## &#x200B;1. Schritt: Zielgruppenbestimmung {#step-1--targeting}
 
 In der ersten Abfrage werden Kontakte abgerufen, die innerhalb der letzten sechs Monate in die Datenbank aufgenommen wurden.
 
@@ -59,7 +60,7 @@ In der zweiten Abfrage werden die Kontakte abgerufen, die am letzten Wettbewerb 
 
 Die **[!UICONTROL Schnittmenge]** ermittelt dann die Population, die beiden Bedingungen entspricht.
 
-## 2. Schritt: Anreicherung {#step-2--enrichment}
+## &#x200B;2. Schritt: Anreicherung {#step-2--enrichment}
 
 In diesem Beispiel erfahren Sie, wie Sie Sendungen entsprechend des Felds **[!UICONTROL Score]** in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** personalisieren. Diese Tabelle weist eine 1:n-Beziehung mit der Empfängertabelle auf. Die Aktivität **[!UICONTROL Anreicherung]** wird verwendet, um Daten aus einer mit der Filterdimension verknüpften Tabelle zur Arbeitstabelle des Workflows hinzuzufügen.
 
@@ -103,7 +104,7 @@ Auch das Schema wurde entsprechend angereichert.
 
 ![](assets/uc1_enrich_14.png)
 
-## 3. Schritt: Aufspaltung und Versand {#step-3--split-and-delivery}
+## &#x200B;3. Schritt: Aufspaltung und Versand {#step-3--split-and-delivery}
 
 Im Anschluss an die Anreicherung sorgt die **[!UICONTROL Aufspaltung]** für die Verteilung der Empfänger nach den erreichten Scores.
 
