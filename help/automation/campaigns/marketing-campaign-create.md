@@ -208,4 +208,4 @@ Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden
 
 In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3426473?quality=12&captions=ger)
