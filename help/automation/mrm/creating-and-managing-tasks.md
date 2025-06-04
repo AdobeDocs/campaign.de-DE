@@ -5,16 +5,16 @@ description: Verwaltung von Aufgaben
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '3928'
+source-wordcount: '3927'
 ht-degree: 100%
 
 ---
 
 # Aufgaben erstellen und verwalten{#creating-and-managing-tasks}
 
-Adobe Campaign ermöglicht die Erstellung von Aufgaben sowie die Verwaltung ihres gesamten Lebenszyklus innerhalb der Anwendung selbst. Die Ausführung von Programmen und Kampagnen kann in Aufgaben unterteilt werden, die Adobe-Campaign-Benutzern oder externen Dienstleistern zugeordnet werden. Dank dieser Funktionsweise ist eine reibungslose Zusammenarbeit aller internen und externen Projektbeteiligten möglich.
+Adobe Campaign ermöglicht die Erstellung von Aufgaben sowie die Verwaltung ihres gesamten Lebenszyklus innerhalb der Anwendung selbst. Die Ausführung von Programmen und Kampagnen kann in Aufgaben unterteilt werden, die Adobe Campaign-Benutzern oder externen Dienstleistern zugeordnet werden. Dank dieser Funktionsweise ist eine reibungslose Zusammenarbeit aller internen und externen Projektbeteiligten möglich.
 
 Die Aufgaben können in der Aufgabenliste und über das Dashboard einer Kampagne erstellt, angesehen und verfolgt werden. Ansicht und Verfolgung sind darüber hinaus auch in den Marketing-Plan-, Programm- und Kampagnenkalendern möglich.
 
@@ -469,7 +469,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 1. Wenn ein Beteiligter seinen Teil der Aufgabe abgeschlossen hat, kann er die Aufgabe auf zweierlei Weisen erfüllen:
 
    * über die Benachrichtigungs-E-Mail;
-   * im Dashboard der Aufgabe über die Client-Konsole oder den Web-Zugriff.
+   * im Dashboard der Aufgabe über die Client-Konsole oder die Web-Schnittstelle.
 
      ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -483,7 +483,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. Wenn die verantwortliche Person die Aufgabe als abgeschlossen erachtet, kann sie sie entweder über die Benachrichtigungs-E-Mail, die sie zu Beginn der Aufgabe erhalten hat, über die Client-Konsole oder über die Web-Schnittstelle schließen.
+1. Wenn der Verantwortliche die Aufgabe als abgeschlossen erachtet, kann er sie entweder über die Benachrichtigungs-E-Mail, die er zu Beginn der Aufgabe erhalten hat, über die Client-Konsole oder über die Web-Schnittstelle schließen.
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -493,7 +493,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
 1. Die Aufgabe erhält damit den Status **[!UICONTROL Zu validieren]** und der Validierer wird benachrichtigt.
 
-   Diese Person validiert die Aufgabe über die Benachrichtigungs-E-Mail, die Client-Konsole oder den Webbrowser.
+   Sie genehmigen die Aufgabe über die Benachrichtigungs-E-Mail, die Client-Konsole oder die Web-Schnittstelle.
 
    Er kann das Kampagnen-Dashboard zur Validierung nutzen:
 

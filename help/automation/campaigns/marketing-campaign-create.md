@@ -6,9 +6,9 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1319'
 ht-degree: 100%
 
 ---
@@ -159,14 +159,9 @@ Beim Durchsuchen des Kalenders können Sie auch ein Programm oder eine Kampagne 
 Wenn Sie eine Kampagne über die Registerkarte **[!UICONTROL Planung]** eines Programms erstellen, wird die Kampagne dem jeweiligen Programm automatisch hinzugefügt. Das Feld **[!UICONTROL Programm]** wird in diesem Fall ausgeblendet.
 
 
-## Zugreifen auf Campaign über einen Webbrowser {#use-the-web-interface}
+## Verwenden der Web-Schnittstelle {#use-the-web-interface-}
 
-
->[!AVAILABILITY]
->
->Ab Campaign v8.6 ist Campaign in einer Web-Benutzeroberfläche verfügbar. Die meisten Marketing-Aktionen können über diese neue Benutzeroberfläche durchgeführt werden. [Weitere Informationen](../../v8/start/campaign-ui.md#discover-the-user-interface).
-
-Sie können über einen Internet-Browser auf einige Bildschirme der Adobe Campaign-Client-Konsole zugreifen, um alle Kampagnen und Sendungen sowie Berichte und Informationen zu den Profilen in Ihrer Datenbank anzuzeigen. Sie können über diesen Web-Zugriff keine Komponenten erstellen, aber je nach Zugriffsrechten können Sie die Daten in der Datenbank anzeigen und/oder bearbeiten. Sie können normalerweise Kampagneninhalte und Zielgruppenbestimmungen genehmigen, einen Versand neu starten oder stoppen usw.
+Sie können über einen Internet-Browser auf die Bildschirme der Adobe Campaign-Client-Konsole zugreifen, um alle Kampagnen und Sendungen sowie Berichte und Informationen zu den Profilen in Ihrer Datenbank anzuzeigen. Dieser Zugriff ermöglicht keine Erstellung von Datensätzen. Abhängig von den Benutzerrechten können Sie die Daten in der Datenbank anzeigen und/oder bearbeiten. Sie können beispielsweise Kampagneninhalte und Zielgruppenbestimmungen genehmigen, einen Versand neu starten oder stoppen, usw.
 
 1. Melden Sie sich wie gewohnt über https://`<your instance>:<port>/view/home` an.
 1. Über die unterschiedlichen Rubriken besteht Zugriff auf Listen und weitere Navigationselemente.
@@ -213,4 +208,4 @@ Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden
 
 In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426473?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

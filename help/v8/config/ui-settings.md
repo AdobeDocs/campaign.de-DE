@@ -5,7 +5,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 100%
@@ -212,7 +212,7 @@ Gehen Sie wie folgt vor, um einen Alias zu erstellen:
 
 1. Speichern Sie Ihre Änderungen. Die Ersetzung von Werten erfolgt durch den Workflow der **Alias-Verwaltung**, der jede Nacht ausgeführt wird. Weitere Informationen finden Sie unter [Datenbereinigung durchführen](#running-data-cleansing).
 
-Wenn der Wert **Adob** in einem unternehmensbezogenen Feld (in der Adobe Campaign-Client-Konsole, in einem Web-Formular) eingegeben wird, wird er in allen Feldern, die auf dieser Auflistung basieren, automatisch durch den Wert **Adobe** ersetzt.
+Wenn der Wert **Adob** in einem firmenbezogenen Feld (in der Adobe Campaign-Client-Konsole, in einem Web-Formular) eingegeben wird, wird er in allen Feldern, die auf dieser Auflistung basieren, automatisch durch den Wert **Adobe** ersetzt.
 
 #### Konvertieren eines falschen Werts in einen Alias{#convert-to-alias}
 

@@ -5,18 +5,18 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 100%
+source-wordcount: '667'
+ht-degree: 94%
 
 ---
 
 # Arbeiten mit Campaign und Adobe Experience Manager {#ac-aem}
 
-Die Integration von Adobe Campaign und Adobe Experience Manager ermöglicht es Ihnen, den Inhalt von E-Mail-Sendungen sowie von Formularen direkt in Adobe Experience Manager zu verwalten. Sie haben die Möglichkeit, entweder Ihre **Adobe Experience Manager**-Inhalte in Campaign zu importieren oder eine Verbindung mit Ihrem **Adobe Experience Manager as a Cloud Service**-Konto herzustellen, wodurch Sie Inhalte direkt in der Web-Oberfläche bearbeiten können.
+Die Integration von Adobe Campaign und Adobe Experience Manager ermöglicht es Ihnen, den Inhalt von E-Mail-Sendungen sowie von Formularen direkt in Adobe Experience Manager zu verwalten.
 
-[Erfahren Sie, wie Sie in der Campaign Web-Benutzeroberfläche Ihre Inhalte aus Adobe Experience Manager as a Cloud Service bearbeiten](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html?lang=de){target="_blank"}.
+[Erfahren Sie, wie Sie Ihre Adobe Experience Manager as a Cloud Service-Inhalte in der Web-Benutzeroberfläche von Campaign bearbeiten](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html?lang=de){target="_blank"}.
 
 [Weitere Informationen zu Adobe Experience Manager finden Sie in diesem Dokument](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=de#aem-and-adobe-campaign-integration-workflow){target="_blank"}.
 
@@ -47,7 +47,7 @@ Mit dieser Integration kann beispielsweise ein Newsletter in Adobe Experience Ma
 
    ![](assets/aem_authoring_3.png)
 
-1. Bearbeiten Sie den E-Mail-Inhalt, indem Sie Komponenten hinzufügen, z. B. Personalisierungsfelder aus Adobe Campaign. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=de#editing-email-content){target="_blank"}.
+1. Bearbeiten Sie den E-Mail-Inhalt, indem Sie Komponenten hinzufügen, z. B. Personalisierungsfelder aus Adobe Campaign. Weitere Informationen finden Sie in der Dokumentation zu [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=de#editing-email-content){target="_blank"}.
 
 1. Wenn Ihre E-Mail fertig ist, navigieren Sie zum Menü **[!UICONTROL Seiteninformationen]** und klicken Sie auf **[!UICONTROL Workflow starten]**.
 
@@ -95,7 +95,7 @@ Ihre E-Mail kann jetzt an Ihre Zielgruppe gesendet werden.
 
 ## Importieren von Assets aus der Adobe Experience Manager Assets-Bibliothek {#assets-library}
 
-Sie können Assets auch direkt aus Ihrer [!DNL Adobe Experience Manager Assets Library] einfügen, während Sie eine E-Mail oder Landingpage in Adobe Campaign bearbeiten. Diese Funktion wird in der [Dokumentation zu Adobe Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=de) näher beschrieben{target="_blank"}.
+Sie können Assets auch direkt aus Ihrer [!DNL Adobe Experience Manager Assets Library] einfügen, während Sie eine E-Mail oder Landingpage in Adobe Campaign bearbeiten. Diese Funktion wird in der [Dokumentation zu Adobe Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=de){target="_blank"} näher beschrieben.
 
 **In Adobe Experience Manager:**
 
@@ -103,7 +103,7 @@ Sie können Assets auch direkt aus Ihrer [!DNL Adobe Experience Manager Assets L
 
    ![](assets/aem_assets_1.png)
 
-1. Klicken Sie auf **Erstellen** und dann auf **Dateien**, um das Asset in Ihre **Adobe Experience Manager Assets-Bibliothek** zu importieren. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=de#uploading-assets){target="_blank"}.
+1. Klicken Sie auf **Erstellen** und dann auf **Dateien**, um das Asset in Ihre **Adobe Experience Manager Assets-Bibliothek** zu importieren. Weitere Informationen finden Sie in der Dokumentation zu [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=de#uploading-assets){target="_blank"}.
 
    ![](assets/aem_assets_2.png)
 

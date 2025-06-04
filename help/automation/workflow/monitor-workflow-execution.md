@@ -5,7 +5,7 @@ description: Überwachen der Workflow-Ausführung
 feature: Workflows
 role: Admin
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: a78019d11a0a2acbd8c0d9ba7c2082c09f90356c
+source-git-commit: 3ce23cadf94eb561fb406fff739edd3eddf83b58
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 100%
@@ -34,7 +34,7 @@ In diesem Fall erscheinen laufende Aktivitäten in Blau, ausstehende Aktivitäte
 
 ## Protokoll anzeigen {#displaying-logs}
 
-Das Protokoll enthält den Verlauf der Workflow-Ausführung. Es speichert die von den Benutzern angeforderten Befehle, ausgeführte Vorgänge und aufgetretene Fehler. Sie haben die Möglichkeit:
+Das Protokoll enthält den Verlauf bzw. das Audit-Protokoll der Workflow-Ausführung. Es speichert die von Benutzenden angeforderten Befehle, ausgeführte Vorgänge und aufgetretene Fehler. Sie haben die Möglichkeit:
 
 * im Tab **[!UICONTROL Verfolgung]** das Workflow-Protokoll einzusehen.
 
@@ -122,7 +122,7 @@ Beispiel einer Benachrichtigung:
 
 ![](assets/wf-notification_error-msg.png)
 
-Über den Link können Sie im Web-Modus auf die Client-Konsole in Adobe Campaign zugreifen. Nach Anmeldung können Sie dann den fehlgeschlagenen Workflow bearbeiten.
+Über den Link können Sie im Web-Modus auf die Adobe Campaign-Client-Konsole zugreifen. Nach Anmeldung können Sie dann den fehlgeschlagenen Workflow bearbeiten.
 
 ![](assets/wf-notification_error-console.png)
 

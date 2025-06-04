@@ -1,20 +1,22 @@
 ---
-title: Herstellen einer Verbindung mit Campaign über die Client-Konsole
-description: Erfahren Sie, wie Sie die Campaign-Client-Konsole auf Ihrem Computer installieren und eine Verbindung mit Adobe Campaign herstellen.
+title: Herstellen einer Verbindung mit Campaign v8
+description: Erfahren Sie, wie Sie eine Verbindung mit Adobe Campaign v8 herstellen und die Konsole auf Ihrem Computer installieren, um den Zugriff zu erleichtern.
 feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 97%
+source-wordcount: '1022'
+ht-degree: 93%
 
 ---
 
-# Herstellen einer Verbindung mit Campaign über die Client-Konsole{#gs-ac-connect}
+# Herstellen einer Verbindung mit Adobe Campaign v8{#gs-ac-connect}
 
-Um Campaign mit der Client-Konsole zu verbinden, müssen Sie diese zunächst installieren und konfigurieren.
+Um mit Campaign arbeiten zu können, müssen Sie die Client-Konsole installieren und konfigurieren.
+
+Die Client-Konsole ist eine native Anwendung, die über Standard-Internetprotokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert minimale Bandbreite, da sie auf einem lokalen Cache beruht. Die Campaign-Client-Konsole, die im Hinblick auf eine einfache Bereitstellung entwickelt wurde, kann über einen Internet-Browser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.
 
 Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
@@ -23,33 +25,27 @@ Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 * Erstellen Sie Ihre Adobe ID oder rufen Sie Ihre Benutzeranmeldedaten von Ihrem Unternehmen ab
 * Installieren Sie die Microsoft Edge Webview2-Laufzeitumgebung auf Ihrem System. [Weitere Informationen](#webview)
 
-
->[!NOTE]
->
->Sie können die Verbindung zur Campaign Web-Benutzeroberfläche auch über einen Webbrowser herstellen.  Weitere Informationen über die neue Campaign Web-Benutzeroberfläche finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}.
-
-
 ## Installieren der Client-Konsole{#download-ac-console}
 
 ### Microsoft Edge WebView2-Laufzeitumgebung {#webview}
 
-Ab der Build-Version 8.4 von Campaign Classic ist die Installation der Microsoft Edge WebView2-Laufzeitumgebung für jede Installation der Client-Konsole erforderlich.
+Ab der Build-Version 8.4 von Campaign Classic ist die Installation der Microsoft Edge WebView2-Laufzeitumgebung für jede Client-Konsolen-Installation erforderlich.
 
-WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn sie nicht bereits auf Ihrem System vorhanden ist, fordert Sie das Installationsprogramm der Campaign-Client-Konsole auf, diese von der [Microsoft Developer Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"} herunterzuladen. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
+WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn sie nicht bereits auf Ihrem System vorhanden ist, fordert Sie das Installationsprogramm der Campaign-Client-Konsole auf, sie von der [Microsoft Developer Website herunterzuladen](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
 ### Herunterladen der Konsole{#install-ac-console}
 
-Bei der erstmaligen Verwendung von Campaign müssen Sie die Client-Konsole herunterladen und installieren.
+Wenn Sie Campaign zum ersten Mal verwenden, müssen Sie die Client-Konsole herunterladen und installieren.
 
 Es gibt zwei Möglichkeiten, die Client-Konsole herunterzuladen:
 
-1. Als Campaign-Admin verbinden Sie sich mit der [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"}.
+1. Stellen Sie als Campaign-Admin eine Verbindung zur Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} her.
 
-1. Für Endbenutzende stellen deren Campaign-Admins die Client-Konsole bereit und machen sie über eine spezielle URL verfügbar.
+1. Für Endbenutzende stellen Campaign-Administrierende die Client-Konsole bereit und machen sie über eine spezielle URL verfügbar.
 
-Sobald das Installationsprogramm für die Client-Konsole heruntergeladen wurde, installieren Sie es auf dem lokalen Rechner.
+Sobald Sie das Installationsprogramm für die Client-Konsole heruntergeladen haben, installieren Sie es auf Ihrem lokalen Rechner.
 
-Beachten Sie, dass die Sprache der Client-Konsole nach der Installation nicht mehr geändert werden kann.
+Beachten Sie, dass Sie die Sprache der Client Console nach der Installation nicht mehr ändern können.
 
 ## Herstellen der Verbindung{#create-your-connection}
 
@@ -95,11 +91,11 @@ Sie können sich dann mit Ihrer Adobe ID bei Campaign anmelden.
 >
 >Da Microsoft Edge WebView2 keine Proxy-Anmeldeinformationen speichert, kann die Konsole Sie bei Ihrer ersten Verbindung auffordern, sich zweimal zu authentifizieren.
 
-## Aktualisieren Ihrer Client-Konsole{#upgrade-ac-console}
+## Aktualisieren der Client-Konsole{#upgrade-ac-console}
 
 Wenn Ihr System auf eine neuere Version aktualisiert wird, müssen Sie Ihre Client-Konsole auf dieselbe Version aktualisieren. Dies ist eine Best Practice, und für einige Versionen ist dieses Upgrade obligatorisch. In diesem Fall wird dies in den [Versionshinweise](release-notes.md) angegeben.
 
-Für Benutzerinnen und Benutzer von Managed Cloud Services stellt Adobe die Client-Konsole bereit. Wenn Sie eine Verbindung zu Ihrer aktualisierten Umgebung herstellen, werden Sie in einem Popup-Fenster aufgefordert, die neueste Version der Client-Konsole herunterzuladen. Sie müssen dieses Upgrade akzeptieren und die Client-Konsole wie gefordert aktualisieren.
+Für Kundinnen und Kunden von Managed Cloud Services stellt Adobe die Client-Konsole bereit. Wenn Sie eine Verbindung zu Ihrer aktualisierten Umgebung herstellen, werden Sie in einem Popup-Fenster aufgefordert, die neueste Version der Client-Konsole herunterzuladen. Sie müssen dieses Upgrade akzeptieren und die Client-Konsole wie gefordert aktualisieren.
 
 >[!CAUTION]
 >
@@ -125,12 +121,12 @@ Ab der Campaign-Version v8.6 haben Sie Zugriff auf die neue **Campaign Web-Benut
 
 >[!AVAILABILITY]
 >
->Die Web-Benutzeroberfläche von Campaign steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Erfahren Sie mehr über das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+>Die Web-Benutzeroberfläche von Campaign steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Weitere Informationen zu [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
 >
 
 [Auf dieser Seite](campaign-ui.md#ac-web-ui) erfahren Sie, wie Sie eine Verbindung mit Adobe Experience Cloud herstellen und auf die Benutzeroberfläche von Adobe Campaign Web zugreifen.
 
-Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Weitere Informationen finden Sie in der Dokumentation zur Web-Benutzeroberfläche von [Adobe Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 ### Web-Zugriff {#web-access}
 

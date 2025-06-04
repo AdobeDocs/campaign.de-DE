@@ -3,7 +3,7 @@ title: Versionshinweise 2022 zu Campaign v8
 description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 2022
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
+source-git-commit: b3ca222fb28c1a5d35190e41cfbbe463c5d1bcad
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 97%
@@ -131,7 +131,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 
 >[!CAUTION]
 >
-> Die Aktualisierung der Client-Konsole ist obligatorisch. Auf [dieser Seite](../start/connect.md#download-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+> Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../start/connect.md#download-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
 _7. Oktober 2022_
 

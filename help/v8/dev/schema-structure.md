@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
 source-wordcount: '1400'
 ht-degree: 100%
@@ -124,7 +124,7 @@ Folgende Regeln müssen eingehalten werden:
 
 Der Datentyp wird über das Attribut **type** in den Elementen **`<attribute>`** und **`<element>`** eingegeben.
 
-In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic) finden Sie eine detaillierte Liste{target="_blank"}.
+In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic){target="_blank"} finden Sie eine detaillierte Liste.
 
 Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Wenn es gefüllt ist, wird es nur zur hierarchischen Strukturierung der Elemente verwendet (Element **`<location>`** in unserem Beispiel).
 
@@ -180,13 +180,13 @@ Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mi
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  Das Label wird vom Formular der Adobe Campaign-Client-Konsole aus angezeigt:
+  Das Label wird im Eingabeformular der Adobe Campaign-Client-Konsole angezeigt:
 
   ![](assets/schema_label.png)
 
 * Mit der Eigenschaft **desc** können Sie eine lange Beschreibung eingeben.
 
-  Die Beschreibung ist vom Formular aus in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole zu finden.
+  Die Beschreibung ist im Eingabeformular in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole zu finden.
 
   >[!NOTE]
   >

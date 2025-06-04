@@ -5,10 +5,10 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '2573'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 100%
 
 Wenn Sie ein Schema erstellen oder erweitern, müssen Sie die zugehörigen Eingabeformulare erstellen oder ändern, um diese Änderungen für die Endbenutzerinnen und -benutzer sichtbar zu machen.
 
-Mit einem Formular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten. Das Formular wird anhand seines Namens und seines Namespace identifiziert.
+Mit einem Eingabeformular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten. Das Formular wird anhand seines Namens und seines Namespace identifiziert.
 
 Der Identifikationsschlüssel eines Formulars ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt, z. B. „cus:contact“.
 
 ## Bearbeiten von Eingabeformularen
 
-Erstellen und konfigurieren Sie Formulare im Ordner **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Formulare]** der Client-Konsole:
+Erstellen und konfigurieren Sie Eingabeformulare im Ordner **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Eingabeformulare]** der Client-Konsole:
 
 ![](assets/form_arbo.png)
 
@@ -87,7 +87,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
 
-In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=de) sind alle Formularattribute aufgeführt{target="_blank"}.
+Alle Formularattribute sind in der Dokumentation zu [Campaign Classic v7 ](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=de){target="_blank"}.
 
 ## Formatierung {#formatting}
 

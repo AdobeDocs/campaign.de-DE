@@ -5,7 +5,7 @@ feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 100%
@@ -80,7 +80,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   </tr> 
   <tr> 
    <td> Fehler und Bounces (errors)<br /> </td> 
-   <td> Verteilung von Fehlern und Bounces nach Ursache und Domain<br /> </td> 
+   <td> Verteilung von unzustellbaren Nachrichten und Bounces nach Ursache und Domain<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -180,7 +180,7 @@ Berichte zu Kampagnen beziehen sich auf die Daten der Tabelle **nms:operation**.
   </tr> 
   <tr> 
    <td> Fehler und Bounces (operationErrors)<br /> </td> 
-   <td> Verteilung von Fehlern und Bounces nach Ursache und Domain; abhängig von Campaign<br /> </td> 
+   <td> Verteilung von unzustellbaren Nachrichten und Bounces nach Ursache und Domain; abhängig von Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td> Kostenzeilenanalyse (budgetExplorerOperation)<br /> </td> 

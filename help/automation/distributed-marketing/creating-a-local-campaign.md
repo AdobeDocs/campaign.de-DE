@@ -5,9 +5,9 @@ description: Erstellen einer lokalen Kampagne
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1689'
 ht-degree: 100%
 
 ---
@@ -46,17 +46,17 @@ Klicken Sie im Kampagnenfenster auf die Registerkarte **[!UICONTROL Bearbeiten]*
 
 ![](assets/mkt_distr_4.png)
 
-### Typ der Schnittstelle {#web-interface}
+### Web-Schnittstelle {#web-interface}
 
-Im Tab **Dezentrales Marketing** können Sie den Typ der Schnittstelle sowie die Standardwerte und die erweiterten Parameter festlegen, die bei der Bestellung durch eine Lokalstelle einzugeben sind.
+Im Tab **Dezentrales Marketing** können Sie den Typ der Web-Schnittstelle sowie die Standardwerte und die erweiterten Parameter festlegen, die bei der Bestellung durch eine Lokalstellen einzugeben sind.
 
-Die Schnittstelle stellt ein Formular dar, das von der Lokalstelle bei der Kampagnenbestellung auszufüllen ist.
+Die Web-Schnittstelle stellt ein Formular dar, dass von der Lokalstelle bei der Kampagnenbestellung auszufüllen ist.
 
-Wählen Sie den Schnittstellentyp aus, der für die auf dieser Vorlage basierenden Kampagnen angewandt werden soll:
+Wählen Sie den Web-Schnittstellentyp aus, der für die auf dieser Vorlage basierenden Kampagnen angewandt werden soll:
 
 ![](assets/mkt_distr_1.png)
 
-Es stehen vier unterschiedliche Schnittstellentypen zur Verfügung:
+Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
 * **[!UICONTROL Briefing]**: Die Lokalstelle muss eine Beschreibung liefern, in der sie die Konfigurationen der Kampagne beschreibt. Sobald der Auftrag genehmigt ist, konfiguriert die Zentralstelle die Kampagne und führt sie als Ganzes durch.
 
@@ -234,7 +234,7 @@ Um eine von der Zentralstelle angebotene Kampagne nutzen zu können, muss die Lo
 
 Gehen Sie wie folgt vor:
 
-1. Klicken Sie auf den Link **[!UICONTROL Kampagne bestellen]** in der Benachrichtigungs-E-Mail oder klicken Sie auf die entsprechende Schaltfläche in Ihrer Adobe-Campaign-Konsole.
+1. Klicken Sie auf den Link **[!UICONTROL Kampagne bestellen]** in der Benachrichtigungs-E-Mail oder klicken Sie auf die entsprechende Schaltfläche in Ihrer Adobe Campaign-Konsole.
 
    Geben Sie Ihre Kennung und Ihr Passwort ein, um die Bestellung vorzunehmen. Sie werden zu der Webanwendung weitergeleitet, die das von der Zentralstelle konfigurierte Formular enthält.
 
@@ -322,7 +322,7 @@ Ein validierungsverantwortlicher Benutzer kann die Validierung eines Kampagnenki
 
 Wenn der validierungsverantwortliche Benutzer eine Bestellung ablehnt, werden die betroffenen Lokalstellen hiervon automatisch per E-Mail benachrichtigt. Die E-Mail enthält gegebenenfalls einen Kommentar des Validierers.
 
-Informationen werden auf der Seite mit der Liste der Kampagnenkits oder auf der Kampagnenbestellseite angezeigt. Wenn die Lokalstellen Zugriff auf die Adobe Campaign-Client-Konsole haben, werden sie über diese Ablehnung informiert.
+Informationen werden auf der Seite mit der Liste der Kampagnenkits oder auf der Kampagnenbestellseite angezeigt. Wenn sie Zugriff auf die Adobe Campaign-Client-Konsole haben, werden die Lokalstellen über diese Ablehnung informiert.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

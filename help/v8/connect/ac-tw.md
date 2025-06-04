@@ -5,10 +5,10 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
 source-wordcount: '1126'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -36,9 +36,9 @@ Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren X-Konten veröffentl
 
 ## X-Entwicklerkonto {#dev-account}
 
-Um mit dieser Integration zu beginnen, müssen Sie sich für ein [X-Entwicklerkonto](https://developer.twitter.com){target="_blank"} registrieren.
+Um mit dieser Integration zu beginnen, müssen Sie sich in einem [X-Entwicklerkonto ](https://developer.twitter.com){target="_blank"}.
 
-Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. [Auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated){target="_blank"} erfahren Sie mehr über den erweiterten Zugriff auf X.
+Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. Weitere Informationen zu X Elevated Access [auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
 
 ## Erstellen einer Anwendung auf X {#create-an-app-on-twitter}
 

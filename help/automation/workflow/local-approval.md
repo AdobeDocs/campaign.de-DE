@@ -5,7 +5,7 @@ description: Lokale Validierung
 feature: Workflows, Approvals
 role: User
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 100%
@@ -88,7 +88,7 @@ Der Benutzerin bzw. dem Benutzer bieten sich zwei verschiedene Möglichkeiten, u
 
   Die an die zuvor gewählte Benutzergruppe gesandte Benachrichtigung ermöglicht die Validierung der Versandzielgruppe. Die Benachrichtigung enthält den in der Vorlage definierten Text, wobei der JavaScript-Ausdruck durch den berechneten Wert (hier &#39;574&#39;) ersetzt wird.
 
-  Um den Versand zu genehmigen, klicken Sie auf den entsprechenden Link und melden sich bei der Client-Konsole von Adobe Campaign an.
+  Um den Versand zu genehmigen, klicken Sie auf den entsprechenden Link und melden sich bei der Adobe Campaign-Client-Konsole an.
 
   ![](assets/new-workflow-valid-webaccess.png)
 

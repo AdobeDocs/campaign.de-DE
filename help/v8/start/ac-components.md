@@ -5,9 +5,9 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 6926d84576df1810b511ef1a9976593cb99585bb
+source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '637'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,21 @@ Nachfolgend werden die Adobe Campaign-Komponenten und die globale Architektur be
 
 ![](assets/do-not-localize//ac-components.png)
 
+### Präsentationsebene{#presentation-layer}
 
+Sie können über einen Rich-Client, einen Thin-Client oder eine API-Integration auf Adobe Campaign zugreifen.
+
+* Rich-Client
+
+  Der Campaign Rich-Client ist eine native Anwendung, die über Standard-Internetprotokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. [Erfahren Sie mehr über die Campaign-Client-Konsole](../start/connect.md).
+
+* Thin-Client
+
+  Mit den Web-basierten Adobe Campaign-Zugriffsfunktionen können Sie über eine HTML-Benutzeroberfläche mit einem Webbrowser auf eine Teilmenge von Campaign-Funktionen zugreifen. Verwenden Sie diese Web-Benutzeroberfläche, um auf Berichte zuzugreifen, Nachrichten zu steuern und zu validieren, auf Monitoring-Dashboards zuzugreifen und vieles mehr.  [Erfahren Sie mehr über den Web-basierten Zugriff auf Campaign](../start/connect.md).
+
+* Externe Anwendungen mit APIs
+
+  In bestimmten Fällen kann das System über die via SOAP-Protokoll bereitgestellten Web Services-APIs von einem externen Programm aus aufgerufen werden. [Erfahren Sie mehr über Campaign-APIs](../dev/api.md).
 
 ### Persistenzebene{#persistance-layer}
 
@@ -46,7 +60,7 @@ Der Campaign-Webserver steuert den Zugriff auf Campaign-Web-Prozesse. JavaScript
 
 ![](assets/do-not-localize/ac-processes.png)
 
-Die Campaign-Client-Konsole stellt eine Verbindung mit dem Webserver her, indem sie SOAP XML über HTTP verwendet. Der Webserver stellt die Sicherheitsebene bereit und übergibt die Anfragen mithilfe von JavaScript an die Anwendungsebene, und die internen Prozesse von Campaign greifen mithilfe von SQL auf die Datenbank zu.
+Die Campaign Client-Konsole stellt eine Verbindung mit dem Webserver her, indem sie SOAP XML über HTTP verwendet. Der Webserver stellt die Sicherheitsebene bereit und übergibt die Anfragen mithilfe von JavaScript an die Anwendungsebene, und die internen Prozesse von Campaign greifen mithilfe von SQL auf die Datenbank zu.
 
 <!--The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
 

@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 10%
+source-wordcount: '817'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,7 @@ Replikationsrichtlinien definieren, wie viele Daten aus einer Tabelle der lokale
 
 Campaign v8 stützt sich bei der Verwaltung geplanter Datenreplikationen auf bestimmte technische Workflows. Diese technischen Workflows sind im Knoten **[!UICONTROL Administration > Produktion > Technische Workflows > Vollständige FFDA-Replikation]** von Campaign Explorer verfügbar. **Sie dürfen nicht geändert werden.**
 
-Technische Workflows führen Prozesse oder Aufträge aus, die regelmäßig auf dem Server geplant werden. Die vollständige Liste der technischen Workflows ist auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de){target="_blank"} aufgeführt.
+Technische Workflows führen Prozesse oder Aufträge aus, die regelmäßig auf dem Server geplant werden. Die vollständige Liste der technischen Workflows ist auf [ Seite ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de){target="_blank"}.
 
 Folgende technische Workflows sorgen für die Datenreplikation:
 
@@ -81,7 +81,7 @@ Zusätzlich zum integrierten technischen Workflow **Referenztabellen replizieren
 
 >[!NOTE]
 >
->Die Ad-hoc-Replikation wird von bestimmten technischen Threads statt von Workflows verarbeitet. Die Konfiguration für diesen Modus wird in der Datei „serverConf.xml“ verwaltet. Sie können die Datei serverConf.xml so konfigurieren, dass sie spezifischen Anwendungsfällen entspricht, z. B. dass XS-Tabellen inkrementell repliziert werden, anstatt vollständig. Weitere Informationen erhalten Sie vom Adobe-Support.
+>Die Ad-hoc-Replikation wird von bestimmten technischen Threads statt von Workflows verarbeitet. Die Konfiguration für diesen Modus wird in der Datei „serverConf.xml“ verwaltet. Sie können die Datei serverConf.xml so konfigurieren, dass sie spezifischen Anwendungsfällen entspricht, z. B. dass XS-Tabellen inkrementell repliziert werden, anstatt vollständig. Weitere Informationen erhalten Sie beim Adobe-Support.
 
 ## APIs
 
@@ -117,4 +117,4 @@ In diesem Video werden die wichtigsten Konzepte vorgestellt, welche Datenbanken 
 
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-Weitere Tutorials zur Client-Konsole von Campaign v8 [hier](https://experienceleague.adobe.com/de/docs/campaign-learn/tutorials/overview).
+Weitere Tutorials zur Client-Konsole von Campaign v8 [hier](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview).
