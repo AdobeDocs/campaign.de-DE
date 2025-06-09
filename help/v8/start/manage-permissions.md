@@ -20,7 +20,7 @@ Als Produktadministrator können Sie Benutzer hinzufügen und Zugriff auf Campai
 
 Gehen Sie wie folgt vor, um einen Benutzer hinzuzufügen:
 
-1. Wählen Sie auf der Startseite von ](https://adminconsole.adobe.com/enterprise){target="_blank"}0}Admin Console **die Option „Benutzer hinzufügen** aus.[
+1. Wählen Sie auf der Startseite von [&#128279;](https://adminconsole.adobe.com/enterprise){target="_blank"}0&rbrace;Admin Console **die Option „Benutzer hinzufügen** aus.
 
    ![](assets/add-a-user.png)
 

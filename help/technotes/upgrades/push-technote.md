@@ -156,7 +156,7 @@ Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor
       nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
       ```
 
-+++
+  +++
 
 ### Wie wirkt sich dies auf meine Android-Apps aus? {#fcm-apps}
 
