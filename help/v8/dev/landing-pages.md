@@ -34,7 +34,7 @@ Mit Landingpages können Sie:
 * Geben Sie Ihren Empfängern die Möglichkeit, sich vom Erhalt Ihrer Nachrichten abzumelden.
 
 
-Weitere Informationen zu Landingpages finden Sie in [ Dokumentation zur Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
+Weitere Informationen zu Landingpages finden Sie in [ Dokumentation zur Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}.
 
 Sie können auch die folgenden Abschnitte durchsuchen:
 

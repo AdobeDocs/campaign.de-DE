@@ -117,7 +117,7 @@ Als Benutzerin oder Benutzer der Campaign v8-Client-Konsole haben Sie ab v8.6.1 
 >Die Web-Benutzeroberfläche von Campaign steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Weitere Informationen zu [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
 >
 
-Weitere Informationen zur neuen Web-Benutzeroberfläche von Campaign finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}. Sie können auch die entsprechende Seite [Häufig gestellte Fragen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/faq){target="_blank"} in der Dokumentation zur Benutzeroberfläche von Campaign Web besuchen.
+Weitere Informationen zur neuen Web-Benutzeroberfläche von Campaign finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}. Sie können auch die entsprechende Seite [Häufig gestellte Fragen](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/faq){target="_blank"} in der Dokumentation zur Benutzeroberfläche von Campaign Web besuchen.
 
 Zusätzliche und erweiterte Funktionen, Konfigurationen und Einstellungen sind nur in der Client-Konsole verfügbar. Erfahren Sie mehr über die Funktionen, die in beiden Benutzeroberflächen verfügbar sind [in der Dokumentation zur Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=de){target="_blank"}.
 

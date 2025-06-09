@@ -68,7 +68,7 @@ Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend 
 
 * Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quellcode direkt in den Tab **[!UICONTROL Quelle]** einzufügen.
 
-  Wenn Sie den Digital Content Editor (DCE) verwenden, lesen Sie die [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html#step-3---selecting-a-content).
+  Wenn Sie den Digital Content Editor (DCE) verwenden, lesen Sie die [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html?lang=de#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -140,7 +140,7 @@ Sie können Emoticons in Ihren E-Mail-Inhalt einfügen.
 
 1. Klicken Sie danach auf die Schaltfläche **[!UICONTROL Schließen]**.
 
-Informationen zum Anpassen der Emoticon-Liste finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list.html).
+Informationen zum Anpassen der Emoticon-Liste finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list.html?lang=de).
 
 ## Hinzufügen von Bildern {#adding-images}
 
@@ -151,7 +151,7 @@ E-Mail-Sendungen im HTML-Format können Bilder enthalten. Sie können eine HTML-
 
 Um Performance-Probleme zu vermeiden, dürfen die in den E-Mails enthaltenen Bilder nicht größer als 100 KB sein. Diese standardmäßig festgelegte Beschränkung kann in der Option `NmsDelivery_MaxDownloadedImageSize` geändert werden. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
 
-Weitere Informationen zur Liste der Kampagnenoptionen finden Sie in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
+Weitere Informationen zur Liste der Kampagnenoptionen finden Sie in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=de#delivery).
 
 ### Bildtypen {#img-types}
 
@@ -162,7 +162,7 @@ Diese Bilder können:
 
   Auf öffentliche Ressourcen kann im Knoten **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Navigationsbaums zugegriffen werden. Sie sind in einer Bibliothek zusammengefasst und können in E-Mails, Kampagnen, Aufgaben und dem Content Management verwendet werden.
 
-* Ein für Adobe Experience Cloud freigegebenes Asset. Weitere Informationen finden Sie in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html).
+* Ein für Adobe Experience Cloud freigegebenes Asset. Weitere Informationen finden Sie in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de).
 
 ### Einfügen und Verwalten von Bildern {#manage-images}
 
