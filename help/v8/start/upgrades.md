@@ -8,7 +8,7 @@ exl-id: 04bda36f-051f-41a3-84b3-6af3c5e34ab2
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
 source-wordcount: '775'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -60,9 +60,9 @@ Sie erhalten folgende Informationen:
 
 Neue Versionen und die Änderungen, die sie enthalten, werden in den [Versionshinweise](release-notes.md) aufgeführt. Sobald eine neue Version verfügbar ist, wird Ihr Kontakt beim Adobe-Support sich mit Ihnen in Verbindung setzen und Ihre Umgebungen aktualisieren.
 
-Abonnieren Sie [Prioritätsprodukt-Updates von Adobe](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"}, um über neue Versionen der Experience Cloud-Lösungen und deren Inhalt informiert zu werden.
+Abonnieren Sie die Mitteilung [Adobe Priority Product Updates](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"}, um über neue Versionen der Experience Cloud-Lösungen und deren Inhalt informiert zu werden.
 
-Sie können außerdem die [Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=de&style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} besuchen, um Informationen über Versionsaktualisierungen zu erhalten.
+Sie können auch die [Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&amp;sort=date&amp;order=desc&amp;filters=adobe-campaign-classic-community&amp;topic=Campaign+v8){target="_blank"} besuchen, um über Versionsaktualisierungen informiert zu werden.
 
 
 ### Warum benötigt meine Organisation ein Upgrade? {#upgrades-1}

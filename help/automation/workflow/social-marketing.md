@@ -13,7 +13,7 @@ ht-degree: 73%
 
 # Social-Media-Marketing {#social-marketing}
 
-Die folgenden Workflows werden mit dem Modul **Social Marketing** installiert. Dieses Modul ermöglicht die Integration mit X (früher als Twitter bekannt).
+Die folgenden Workflows werden mit dem Modul **Social Marketing** installiert. Dieses Modul ermöglicht die Integration mit X (früher bekannt als Twitter).
 
 
 >[!AVAILABILITY]
@@ -43,12 +43,12 @@ Die folgenden Workflows werden mit dem Modul **Social Marketing** installiert. D
    <td> Berechnet die Statistiken in Bezug auf Interaktionen mit Fans bei Facebook.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Synchronisieren der Facebook-Lüfter (nur v7)</span> <br /> </td> 
+   <td> <span class="uicontrol">Facebook-Fans synchronisieren (nur v7)</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebookFans</span> <br /> </td> 
    <td> Importiert täglich um 7 Uhr Facebook-Fans in Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Synchronisieren von Facebook-Seiten (nur v7)</span> <br /> </td> 
+   <td> <span class="uicontrol">Facebook-Seiten synchronisieren (nur v7)</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebook</span> <br /> </td> 
    <td> Synchronisiert täglich um 7 Uhr Facebook-Seiten mit Adobe Campaign.<br /> </td> 
   </tr> 

@@ -8,7 +8,7 @@ exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Es ist möglich, die Empfängertabelle zu erweitern. Die Anzahl der Empfänger o
 
 Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie in [diesem Abschnitt](extend-schema.md).
 
-Beispiele für integrierte Empfängertabellen-Erweiterungen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table){target="_blank"}.
+Beispiele für integrierte Empfängertabellen-Erweiterungen finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table){target="_blank"}
 
 Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre geschäftlichen oder funktionalen Anforderungen zugeschnitten ist. Diese Methode weist Einschränkungen auf und wird in [diesem Abschnitt](custom-recipient.md) beschrieben.
 

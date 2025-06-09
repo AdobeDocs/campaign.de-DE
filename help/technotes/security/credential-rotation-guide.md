@@ -8,7 +8,7 @@ exl-id: 0848ee2d-3506-4167-9aea-a1589aa82805
 source-git-commit: 14e49a0b4de1b82239113bd670213449f464c27f
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -45,10 +45,10 @@ Für die spezifischen technischen Operatoren `mc*` (z. B.: mc1, mc2, etc) und `
 
 Informationen zur Rotation der auf Mobile Services bezogenen privaten Schlüssel und Zertifikate finden Sie unter den nachfolgenden Links.
 
-* Informationen zu Android finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android){target="_blank"}.
+* Informationen zu Android finden Sie [dieser Dokumentation](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android){target="_blank"}.
 Navigieren Sie zum Abschnitt **Erstellen einer Mobile App für Android > Konfigurieren der API-Version**.
 
-* Informationen zu iOS finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application){target="_blank"}.
+* Informationen zu iOS finden Sie [dieser Dokumentation](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application){target="_blank"}.
 Navigieren Sie zum Abschnitt **Erstellen einer Mobile App für iOS > Authentifizierungsmodus**.
 
 ## GPG-Schlüssel {#ac-gpg-credentials}

@@ -6,7 +6,7 @@ feature: Overview
 source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 # Handbücher zur Kampagnenautomatisierung {#automation}
 
 + [Handbuch zur Kampagnenautomatisierung](home.md)
-+ Mit Workflows automatisieren {#workflows}
++ Automatisieren mit Workflows {#workflows}
    + Erste Schritte mit Workflows {#introduction}
       + [Über Workflows](workflow/about-workflows.md)
       + Typen von Workflows {#wf-type}
@@ -34,7 +34,7 @@ ht-degree: 100%
       + [Workflow-Heatmap](workflow/heatmap.md)
    + Workflow-Aktivitäten {#wf-activities}
       + [Erste Schritte mit Aktivitäten](workflow/activities.md)
-      + Zielgruppenaktivitäten {#targeting-activities}
+      + Zielgruppenbestimmungs-Aktivitäten {#targeting-activities}
          + [Liste der Zielgruppenaktivitäten](workflow/targeting-activities.md)
          + [Segmente](workflow/cells.md)
          + [Ändern der Datenquelle](workflow/change-data-source.md)
@@ -56,7 +56,7 @@ ht-degree: 100%
          + [Abonnements](workflow/subscription-services.md)
          + [Vereinigung](workflow/union.md)
          + [Daten-Update](workflow/update-data.md)
-      + Fluss-Steuerungsaktivitäten {#flow-control-activities}
+      + Aktivitäten zur Flusskontrolle {#flow-control-activities}
          + [Liste der Fluss-Steuerungsaktivitäten](workflow/flow-control-activities.md)
          + [Warnhinweis](workflow/alert.md)
          + [Und-Verknüpfung](workflow/and-join.md)
@@ -102,7 +102,7 @@ ht-degree: 100%
          + [Laden des Versandinhalts](workflow/load-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/email-enrichment-with-custom-date-fields.md)
-      + Überwachung {#monitoring}
+      + Monitoring      {#monitoring}
          + [Senden eines Berichts an eine Liste](workflow/send-a-report-to-a-list.md)
          + [Überwachen Ihrer Workflows](workflow/workflow-supervision.md)
          + [Senden personalisierter Warnungen an Benutzer](workflow/send-alerts-to-operators.md)
@@ -124,7 +124,7 @@ ht-degree: 100%
          + [Hinzufügen eines berechneten Auflistungsfelds](workflow/adding-enumeration-type-calculated-field.md)
          + [Erstellen von Filtern](workflow/create-a-filter.md)
          + [Filtern doppelter Empfänger](workflow/filter-duplicated-recipients.md)
-   + Erweiterte Parameter {#advanced-management}
+   + Erweiterte Einstellungen {#advanced-management}
       + [Workflow-Eigenschaften](workflow/workflow-properties.md)
       + [Erweiterte Parameter](workflow/advanced-parameters.md)
       + [JavaScript-Scripte und -Vorlagen](workflow/javascript-scripts-and-templates.md)
@@ -133,7 +133,7 @@ ht-degree: 100%
       + [Verwalten von Berechtigungen](workflow/managing-rights.md)
       + [Ändern von Aktivitätsbildern](workflow/change-activity-images.md)
       + [Verwalten von Zeitzonen](workflow/managing-time-zones.md)
-+ Kampagnenorchestrierung {#campaign-orchestration}
++ Kampagnen-Orchestrierung {#campaign-orchestration}
    + [Erste Schritte mit Marketing-Kampagnen](campaigns/set-up-campaigns.md)
    + [Erstellen von Programmen und Kampagnen](campaigns/marketing-campaign-create.md)
    + [Vorlagen erstellen und konfigurieren](campaigns/marketing-campaign-templates.md)

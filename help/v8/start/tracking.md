@@ -8,7 +8,7 @@ exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
 source-git-commit: a78019d11a0a2acbd8c0d9ba7c2082c09f90356c
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](h
 
 Das Versand-Dashboard ist ein wichtiges Tool, mit dem Sie Sendungen beobachten und mögliche Probleme beim Nachrichtenversand erkennen können.
 
-Weitere Informationen dazu finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=de#sending-messages){target="_blank"}.
+Weitere Informationen hierzu finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=de#sending-messages){target="_blank"}.
 
 Die wichtigsten in Campaign verfügbaren Tracking-Funktionen sind unten aufgeführt.
 
@@ -119,7 +119,7 @@ Adobe Campaign bietet eine Reihe von Funktionen zur Überwachung Ihrer Prozesse 
 
 Die Überwachung Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen.
 
-Erfahren Sie mehr über die Daten, die Sie nach dem Senden eines Versands überwachen können, und lernen Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=de#sending-messages){target="_blank"}, wie Zustellungsfehler und Quarantänen verwaltet werden.
+Erfahren Sie mehr über die Informationen, die Sie nach dem Senden eines Versands überwachen können, und lernen Sie in der Dokumentation zu [Campaign Classic v7, wie Zustellungsfehler und Quarantänen verwaltet werden](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=de#sending-messages){target="_blank"}
 
 ### Überwachen von Workflows
 
@@ -127,7 +127,7 @@ Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/w
 
 ### Überwachen einer Instanz
 
-Richtlinien zur Instanzüberwachung finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=de#monitoring-campaign-classic){target="_blank"}.
+Richtlinien zur Instanzüberwachung finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html?lang=de#monitoring-campaign-classic){target="_blank"}
 
 Verwenden Sie die Selbstbedienungsoberfläche des Audit-Protokolls, um die in Ihrer Instanz vorgenommenen Änderungen zu überwachen. Das Audit-Protokoll erfasst in Echtzeit eine umfassende Liste von Aktionen und Ereignissen, die in Ihrer Adobe Campaign-Instanz auftreten. Sie können auf einen Datenverlauf zugreifen, um zum Beispiel folgende Fragen zu beantworten: Was ist mit Ihren Workflows geschehen und wer hat sie zuletzt aktualisiert? Was haben Ihre Anwender in der Instanz getan?
 

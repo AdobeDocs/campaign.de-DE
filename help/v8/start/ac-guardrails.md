@@ -8,13 +8,13 @@ exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 # Produkt-Schutzmechanismen{#guardrails}
 
-Berechtigungen, Produktbeschränkungen und die Performance betreffende Leitplanken finden Sie auf der [Produktbeschreibungsseite zu Adobe Campaign Managed Cloud Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Berechtigungen, Produktbeschränkungen und die Leistung betreffende Leitplanken sind auf der Seite [Adobe Campaign Managed Cloud Services-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} aufgeführt.
 
 Unten finden Sie zusätzliche Schutzmechanismen und Einschränkungen bei der Verwendung von [!DNL Adobe Campaign].
 

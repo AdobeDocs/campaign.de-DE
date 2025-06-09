@@ -26,7 +26,7 @@ Sie können eine Liste mithilfe der Aktivität **Liste aktualisieren** in einem 
 
 In diesem Video erfahren Sie mehr über die Verwaltung von Listen in Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426457?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
 ## Erstellen einer Liste von Kontakten {#create-a-list-of-contacts}
@@ -103,7 +103,7 @@ Im folgenden Beispiel wird eine Liste aller Empfänger zwischen 25 und 40 erstel
 
    ![](assets/targeting-wf-age-filter.png)
 
-   In [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de) erfahren Sie, wie Sie eine Abfrage in einem Workflow erstellen{target="_blank"}.
+   In [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine Abfrage in einem Workflow erstellen.
 
 1. Geben Sie dieser Abfrage einen Titel und speichern Sie die Änderungen.
 1. Fügen Sie die Aktivität **[!UICONTROL Listen-Update]** hinzu und bearbeiten Sie sie.

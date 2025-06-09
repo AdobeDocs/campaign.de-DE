@@ -48,7 +48,7 @@ ht-degree: 100%
 
 Der Nutzer-Aktivitäten-Bericht basiert auf der Tabelle **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats). Diese Aggregat-Tabelle wird bei der Berichtanzeige aus Performance-Gründen anstelle der Tabelle **[!UICONTROL Trackinglogs der Empfänger]** (nms:trackingLogRcp) verwendet. Sie wird nicht in Echtzeit berechnet, sondern wenige Minuten nach Abruf der Trackinglogs erzeugt. Wenn die Indikatoren aktuell sind, sind die Ergebnisse mit denen der Indikatoren im Bericht **Trackingindikatoren** identisch. Die Kennzahl @totalclicks entspricht der Summe der Klicks über einen Zeitraum von 5 Minuten.
 
-## Fehler und Bounces {#non-deliverables-and-bounces-1}
+## Unzustellbare Nachrichten und Bounces {#non-deliverables-and-bounces-1}
 
 **Verteilung nach Fehlertyp**
 

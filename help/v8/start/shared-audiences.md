@@ -10,7 +10,7 @@ exl-id: c4d30771-db5e-40be-8af6-50f0fab9f9af
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '252'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -42,4 +42,4 @@ Siehe:
 
 [Dokumentation zu Adobe Audience Manager](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=de){target="_blank"}
 
-[Handbuch zu zentralen Benutzeroberflächen-Komponenten in Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=de){target="_blank"}
+[Komponentenhandbuch für die zentrale Adobe Experience Cloud-Benutzeroberfläche](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=de){target="_blank"}

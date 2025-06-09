@@ -1,5 +1,5 @@
 ---
-keywords: Campaign Standard;Startseite;beliebte Themen
+keywords: Campaign Classic;Startseite;beliebte Themen
 description: Technotes zu Adobe Campaign
 title: Technische Artikel zu Adobe Campaign
 role: Developer
@@ -8,7 +8,7 @@ exl-id: ae1ef010-24d5-4be4-a30c-899e2b0040a4
 source-git-commit: 0844a4fcd34220d825ae30368b284cbcaf93d02b
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -75,5 +75,5 @@ Ab Campaign v8.6 wird der Authentifizierungsprozess für Campaign v8 verbessert.
 
 ## Zusätzliche Ressourcen
 
-[Adobe Campaign v8-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Dokumentation der Web-Benutzeroberfläche von Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"} – [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=de){target="_blank"} - [[!DNL Adobe Campaign] Automatisierungshandbuch](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"} - [Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
+[Adobe Campaign v8-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Dokumentation zur Adobe Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=de){target="_blank"} - [[!DNL Adobe Campaign] Automatisierungshandbuch](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"} - [Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
 

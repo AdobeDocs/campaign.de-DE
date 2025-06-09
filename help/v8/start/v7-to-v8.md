@@ -8,7 +8,7 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ Als früherer [!DNL Campaign Classic] v7-Benutzer sollten Sie bei der Interaktio
 
 Adobe Campaign v8 ist als **Managed Cloud Service** verfügbar.
 
-Adobe Campaign Managed Cloud Services bietet eine Managed Cloud Services-Plattform für die Konzeption kanalübergreifender Kundenerlebnisse. In dieser Umgebung können Kampagnen visuell orchestriert, Interaktionen in Echtzeit verwaltet und Kampagnen kanalübergreifend ausgeführt werden. Weitere Informationen zu Campaign Managed Cloud Services sind auf der [Produktbeschreibungsseite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} zu finden.
+Adobe Campaign Managed Cloud Services bietet eine Managed Cloud Services-Plattform für die Konzeption kanalübergreifender Kundenerlebnisse. In dieser Umgebung können Kampagnen visuell orchestriert, Interaktionen in Echtzeit verwaltet und Kampagnen kanalübergreifend ausgeführt werden. Weitere Informationen zu Campaign Managed Cloud Services finden Sie auf der [Produktbeschreibungsseite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Das neue Angebot kombiniert erstklassige Dienstleistungen mit proaktiver Aufsicht und rechtzeitigen Warnmeldungen und konzentriert sich auf drei Bereiche:
 
@@ -70,7 +70,7 @@ Informationen zum Herstellen einer Verbindung mit [!DNL Campaign] finden Sie auf
 
 ## Analysieren von Daten mit Cubes{#adobe-reporting}
 
-Verwenden Sie das Modul &quot;Marketing Analytics&quot;, um Daten zu analysieren und zu messen, Statistiken zu berechnen und die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Erstellen Sie außerdem Berichte und Zielgruppen: Nach der Identifizierung werden sie in Listen gespeichert, die in Adobe Campaign verwendet werden können (für Zielgruppenbestimmung, Segmentierung usw.).
+Verwenden Sie das Modul &quot;Marketing Analytics&quot;, um Daten zu analysieren und zu messen, Statistiken zu berechnen und die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Erstellen Sie außerdem Berichte und Zielpopulationen: Nach der Identifizierung werden sie in Listen gespeichert, die in Adobe Campaign verwendet werden können (für Zielgruppenbestimmung, Segmentierung usw.).
 
 In Adobe Campaign v8 sind Cube-Berichte optimiert und bieten bessere Skalierungsfunktionen als Campaign Classic v7. In diesem spezifischen Bereitstellungsmodell gelten frühere Einschränkungen bei Cubes nicht für Campaign v8. Weitere Informationen zu Cubes finden Sie in [diesem Abschnitt](../../v8/reporting/gs-cubes.md).
 

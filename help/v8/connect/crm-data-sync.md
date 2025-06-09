@@ -57,7 +57,7 @@ Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muste
 
    >[!CAUTION]
    >
-   >Um die Objekte aus dem CRM-System mit denen in der Adobe-Campaign-Anwendung zu verknüpfen, wird die Kennung des CRM-Datensatzes benötigt. Diese wird automatisch bei Bestätigung des Dialogfensters hinzugefügt.
+   >Um die Objekte aus dem CRM-System mit denen in der Adobe Campaign-Anwendung zu verknüpfen, wird die Kennung des CRM-Datensatzes benötigt. Diese wird automatisch bei Bestätigung des Dialogfensters hinzugefügt.
    >
    >Außerdem ist das Datum der letzten CRM-seitigen Änderung erforderlich, um einen inkrementellen Datenimport zu ermöglichen.
 

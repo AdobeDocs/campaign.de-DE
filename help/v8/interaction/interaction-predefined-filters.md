@@ -18,7 +18,7 @@ Erstellen Sie vordefinierte Filter, um Eignungsregeln für die Zielpopulation zu
 
 >[!NOTE]
 >
->Die Web-Benutzeroberfläche von Adobe Campaign bietet eine benutzerfreundliche Oberfläche, mit der Sie vordefinierte Filter mühelos verwalten und an Ihre spezifischen Anforderungen anpassen können. Sie können Filter einmal erstellen und für die zukünftige Verwendung speichern. Weitere Informationen zu vordefinierten Filtern für die Web-Benutzeroberfläche finden Sie in der Dokumentation zur Web-Benutzeroberfläche von [Adobe Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
+>Die Web-Benutzeroberfläche von Adobe Campaign bietet eine benutzerfreundliche Oberfläche, mit der Sie vordefinierte Filter mühelos verwalten und an Ihre spezifischen Anforderungen anpassen können. Sie können Filter einmal erstellen und für die zukünftige Verwendung speichern. Weitere Informationen zu vordefinierten Filtern für die Web-Benutzeroberfläche finden Sie in der Dokumentation zur Web-Benutzeroberfläche von [Adobe Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
 
 
 Gehen Sie wie folgt vor, um einen Filter zu erstellen:

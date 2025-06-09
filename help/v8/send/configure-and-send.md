@@ -8,7 +8,7 @@ exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Verwenden Sie die Option **[!UICONTROL SMTP-Versand testen]**, um den Versand pe
 >
 >* Diese Option darf bei Mid-Sourcing nicht festgelegt werden.
 >
->* Weitere Informationen zur SMTP-Server-Konfiguration finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=de#smtp-relay){target="_blank"}.
+>* Weitere Informationen zur SMTP-Server-Konfiguration finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=de#smtp-relay){target="_blank"}.
 
 ## Versenden in mehreren Schüben {#sending-using-multiple-waves}
 

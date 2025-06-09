@@ -25,7 +25,7 @@ Als Campaign-Administrator können Sie Campaign SDKs über die [Software-Verteil
 
 >[!NOTE]
 >
->Sie können das Adobe Experience Platform Mobile SDK auch verwenden, indem Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren. [Weitere Informationen finden Sie in der Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Sie können das Adobe Experience Platform Mobile SDK auch verwenden, indem Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren. [Weitere Informationen finden Sie in der Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 >
 
 ## Integrationsparameter deklarieren {#declaring-integration-settings}

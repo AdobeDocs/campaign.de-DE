@@ -8,7 +8,7 @@ exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 99%
+ht-degree: 91%
 
 ---
 
@@ -45,13 +45,13 @@ Kundenverwaltete Schlüssel sind KMS-Schlüssel (Key Management Service) in Ihre
 
 Um die CMK-Integration in Campaign zu aktivieren, führen Sie die folgenden Schritte aus:
 
-1. Verbinden Sie sich mit Ihrem [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}-Konto.
+1. Verbinden mit Ihrem [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}Konto.
 
-1. Generieren Sie mithilfe des AWS Key Management Service (KMS) einen Schlüssel mit automatischer Rotation. [Weitere Informationen dazu](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
+1. Generieren Sie mithilfe des AWS Key Management Service (KMS) einen Schlüssel mit automatischer Rotation. [Erfahren Sie mehr](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
-1. Wenden Sie die von Adobe bereitgestellte Regel auf Ihr AWS-Konto an, um Zugriff auf Ihre Ressourcen zu gewähren. [Weitere Informationen dazu](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
+1. Wenden Sie die von Adobe bereitgestellte Regel auf Ihr AWS-Konto an, um Zugriff auf Ihre Ressourcen zu gewähren. [Weitere Informationen](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. Teilen Sie Ihren [Amazon-Ressourcennamen (Schlüssel-ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} mit [!DNL Adobe Campaign]. Wenden Sie sich dazu an den Adobe-Support. <!--or Adobe transition manager?-->
+1. Geben Sie Ihren [Amazon-Ressourcennamen (Schlüssel ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} für [!DNL Adobe Campaign] frei. Wenden Sie sich dazu an den Adobe-Support. <!--or Adobe transition manager?-->
 
 1. Erstellen und testen Sie die Amazon EventBridge-Regeln, um die Überwachung Ihrer Schlüssel durch Adobe zu aktivieren. [Weitere Informationen](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
@@ -60,15 +60,15 @@ Um die CMK-Integration in Campaign zu aktivieren, führen Sie die folgenden Schr
 
 Die folgenden Schutzmechanismen und Einschränkungen gelten für die CMK-Integration mit Adobe Campaign v8:
 
-* Adobe stellt kein [Amazon Web Services (AWS)-Konto](https://aws.amazon.com/){target="_blank"} bereit. Sie müssen über ein eigenes AWS-Konto verfügen und dieses so einrichten, dass es Ihren Schlüssel generiert und für Adobe freigibt.
+* Adobe stellt kein [Amazon Web Services (AWS)-](https://aws.amazon.com/){target="_blank"} bereit. Sie müssen über ein eigenes AWS-Konto verfügen und dieses so einrichten, dass es Ihren Schlüssel generiert und für Adobe freigibt.
 
-* Nur [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)-Schlüssel werden unterstützt. Es können keine Schlüssel verwendet werden, die von Kundinnen und Kunden außerhalb von KMS erzeugt wurden.&#x200B;
+* Es werden nur [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"}-Schlüssel (KMS) unterstützt. Es können keine Schlüssel verwendet werden, die von Kundinnen und Kunden außerhalb von KMS erzeugt wurden.&#x200B;
 
 * Bei der Ersteinrichtung ist mit Ausfallzeiten zu rechnen.Die Dauer der Ausfallzeit hängt von der Größe Ihrer Datenbank ab.
 
 * Als Kundin bzw. Kunde besitzen und verwalten Sie den Schlüssel. Bei jeder Änderung Ihres Schlüssels müssen Sie sich an Adobe wenden.
 
-* Sie können Ihren Schlüssel mit [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} überprüfen und ihn bei Bedarf widerrufen.&#x200B;
+* Sie können Ihren Schlüssel mit [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} überprüfen und ihn bei Bedarf widerrufen&#x200B;
 
 * Wenn Sie den Schlüssel widerrufen, deaktivieren oder löschen, wird der Zugriff auf Ihre verschlüsselten Ressourcen und Ihre Instanz gesperrt, bis Sie die entsprechende Aktion rückgängig machen.
 

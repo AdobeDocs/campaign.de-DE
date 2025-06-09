@@ -8,7 +8,7 @@ exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1257'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -200,7 +200,7 @@ Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt best
 
 Eine vollständige Liste der Attribute finden Sie im Abschnitt `<attribute>`-Element in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=de#content-model){target="_blank"}. Im Folgenden finden Sie einige der gebräuchlichsten Attribute: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-Weitere Informationen zu den einzelnen Attributen finden Sie in der Attributbeschreibung in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic){target="_blank"}.
+Weitere Informationen zu den einzelnen Attributen finden Sie in der entsprechenden Erläuterung der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=de#configuring-campaign-classic){target="_blank"}.
 
 ### Beispiele {#examples}
 

@@ -8,7 +8,7 @@ exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Es stehen zwei Arten von Umgebungen zur Verfügung:
 
 Sie können Packages von einer Umgebung in eine andere exportieren und importieren.
 
-Weitere Informationen über Packages in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=de){target="_blank"}
+Weitere Informationen über Packages in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=de){target="_blank"}
 
 ## Bereitstellungsmodelle {#ac-deployment}
 

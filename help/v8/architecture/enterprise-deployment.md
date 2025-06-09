@@ -98,7 +98,7 @@ Ein spezieller technischer Workflow behandelt die Replikation von Tabellen, die 
 >[!NOTE]
 >
 > Es wurden mehrere Replikationsrichtlinien erstellt, die auf der Größe der Tabelle basieren (XS, XL usw.).
-> Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen aufweisen, andere werden eine vollständige Aktualisierung durchlaufen.
+> > Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen aufweisen, andere werden eine vollständige Aktualisierung durchlaufen.
 >
 
 [Weitere Informationen zur Datenreplikation](replication.md)

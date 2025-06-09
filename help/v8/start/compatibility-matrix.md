@@ -8,7 +8,7 @@ exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: fb2cf4407750f8cff65ca53f0e87c32e9702de92
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 97%
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Für die Nutzung der Campaign-Client-Konsole sind die folgenden Betriebssysteme 
 
 * **Microsoft Edge**
 
-* **Microsoft Edge WebView2**, neueste Version. Sie kann von der [Microsoft Developer-Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"} heruntergeladen werden.
+* **Microsoft Edge WebView2**, neueste Version. Sie kann von der [Microsoft Developer-Website heruntergeladen ](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}.
 
 ## CRM-Connectoren {#CRMconnectors}
 
@@ -67,7 +67,7 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Ac
 
 Zum Senden von [Push-Benachrichtigungen](../send/push.md) mit Campaign können Sie das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign Classic-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren.
 
-Kompatible Versionen für iOS und Android werden in der [Adobe Developer-Dokumentation](https://developer.adobe.com/client-sdks/home/){target="_blank"} beschrieben.
+Kompatible Versionen für iOS und Android werden in der [Dokumentation zu Adobe Developer ](https://developer.adobe.com/client-sdks/home/){target="_blank"}.
 
 ## Web-Benutzeroberfläche {#web-ui}
 

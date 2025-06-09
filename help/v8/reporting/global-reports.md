@@ -49,9 +49,9 @@ Sie können die Anzeige durch Ändern des Parameters (z. B. 1 Stunde, 3 Stunden
 
 >[!NOTE]
 >
->Sie können die Anzahl der pro Stunde gesendeten Sendungen auch mithilfe des [Control Panels](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de) überwachen{target="_blank"}.
+>Sie können die Anzahl der pro Stunde gesendeten Sendungen auch mithilfe des [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de){target="_blank"} überwachen.
 >
->Das Control Panel steht allen Admins zur Verfügung. Die Schritte, um Benutzenden Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
+>Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
 >
 
 ## Nutzer-Aktivitäten {#user-activities}
@@ -66,9 +66,9 @@ Folgende Optionen stehen zur Verfügung:
 * **[!UICONTROL Transactions]**: Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
 
-## Fehler und Bounces {#non-deliverables-and-bounces}
+## Unzustellbare Nachrichten und Bounces {#non-deliverables-and-bounces}
 
-Dieser Bericht zeigt die Verteilung der Fehler nach Typ und nach Domain.
+Dieser Bericht zeigt die Verteilung der unzustellbaren Nachrichten nach Typ und nach Domain.
 
 Die **[!UICONTROL Anzahl verarbeiteter Nachrichten]** entspricht der Gesamtzahl der vom Versandserver verarbeiteten Nachrichten. Die Anzahl kann u. U. geringer als die Zahl der zu versendenden Nachrichten ausfallen, wenn ein Teil der Nachrichten vor der Verarbeitung durch den Server gestoppt oder ausgesetzt wurden.
 
@@ -78,7 +78,7 @@ Die **[!UICONTROL Anzahl verarbeiteter Nachrichten]** entspricht der Gesamtzahl 
 >
 >Die in diesem Bericht angezeigten Fehler lösen einen Quarantäneprozess aus. Weiterführende Informationen zur Quarantäneverwaltung finden Sie im Abschnitt [Quarantäneverwaltung](../send/quarantines.md).
 
-Der erste Teil des Berichts zeigt die Verteilung der fehlgeschlagenen Nachrichten nach Typ in Form einer Tabelle und eines Diagramms.
+Der erste Teil des Berichts zeigt die Verteilung der unzustellbaren Nachrichten nach Typ in Form einer Tabelle und eines Diagramms.
 
 Zu jedem Fehlertyp erscheint:
 

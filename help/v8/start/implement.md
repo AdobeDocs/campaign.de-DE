@@ -8,7 +8,7 @@ exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Campaign verfügt über Prozesse und Einstellungen, die es Ihnen ermöglic
 
 * **Benutzerzustimmung und Datenspeicherung**: Sie müssen die Einwilligungen der jeweiligen Benutzenden einholen, Anmeldemechanismen mit Double-Opt-in einrichten, den Opt-out erleichtern und die Datenspeicherung konfigurieren.
 
-  Weitere Informationen finden Sie in der [Dokumentation zum Datenschutz in Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent){target="_blank"}
+  Weitere Informationen finden Sie in der Dokumentation zum Datenschutz in Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent){target="_blank"}[
 
 * **Datenschutzbestimmungen**: In [diesem Abschnitt](privacy.md) finden Sie Informationen über Datenschutzanforderungen und darüber, wie sich diese Bestimmungen auf Ihre Organisation und Adobe Campaign auswirken.
 
@@ -85,16 +85,16 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folg
 
    Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=de){target="_blank"} erfahren Sie, wie Sie mit Kampagnenvorlagen arbeiten.
 
-   Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine Workflow-Vorlage konfigurieren.
+   Erfahren Sie auf [ Seite , wie Sie eine Workflow-Vorlage ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"}.
 
-   Weitere Informationen zu E-Mail-Vorlagen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target="_blank"}.
+   Weitere Informationen zu E-Mail-Vorlagen finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target="_blank"}.
 
 
 1. **Konfigurieren von Typologieregeln**
 
    Nutzen Sie die Campaign-Typologieregeln, um den Versand zu filtern, zu steuern und zu überwachen. Zum Beispiel steuern Ermüdungsregeln die Häufigkeit und Menge der Nachrichten, um eine Übersättigung der Empfänger zu vermeiden. Einmal implementiert, werden Typologieregeln in den Sendungen referenziert.
 
-   Weitere Informationen zu Typologien und zur Ermüdungsverwaltung finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de){target="_blank"}.
+   Weitere Informationen über Typologien und die Ermüdungsverwaltung finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de){target="_blank"}.
 
 1. **Einführung in das integrierte Datenmodell in Campaign**
 

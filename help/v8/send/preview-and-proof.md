@@ -23,7 +23,7 @@ Bevor Sie Testsendungen durchführen, sollten Sie den Nachrichteninhalt im Vorsc
 Gehen Sie wie folgt vor, um eine Vorschau des Nachrichteninhalts anzuzeigen:
 
 1. Navigieren Sie zur Registerkarte **Vorschau** des Versands.
-1. Klicken Sie auf **[!UICONTROL Personalisierung testen]**, um ein Profil zum Ausfüllen der Personalisierungsdaten auszuwählen. Sie können eine bestimmte Empfängerin bzw. einen Empfänger in der Datenbank oder eine Testadresse auswählen oder ein Profil aus der Zielgruppe auswählen, sofern diese bereits definiert worden ist. Sie können den Inhalt auch ohne Personalisierung überprüfen.
+1. Klicken Sie auf **[!UICONTROL Personalisierung testen]**, um ein Profil zum Ausfüllen der Personalisierungsdaten auszuwählen. Sie können eine bestimmte Empfängerin bzw. einen Empfänger in der Datenbank oder eine Testadresse auswählen oder ein Profil aus der Zielpopulation auswählen, sofern diese bereits definiert worden ist. Sie können den Inhalt auch ohne Personalisierung überprüfen.
 
    ![](assets/test-personalization.png)
 
@@ -105,4 +105,4 @@ Standardmäßig werden Testversandnachrichten durch die Variable `Proof #N` im B
 
 Hier erfahren Sie, wie Sie einen E-Mail-Testversand durchführen und validieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447008?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

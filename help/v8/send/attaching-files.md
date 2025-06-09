@@ -5,7 +5,8 @@ description: Anhänge erstellen
 feature: Email
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+exl-id: 27d13642-2971-466b-818d-39328c198b14
+source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 96%
@@ -20,7 +21,7 @@ Sie können an einen E-Mail-Versand eine oder mehrere Dateien anhängen.
 
 >[!NOTE]
 >
->Zur Vermeidung von Performance-Problemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über die Liste der Kampagnenoptionen konfiguriert werden. Weitere Informationen finden Sie in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=de#delivery).
+>Zur Vermeidung von Performance-Problemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über die Liste der Kampagnenoptionen konfiguriert werden. Weitere Informationen finden Sie in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 Sie haben zwei Möglichkeiten:
 
@@ -37,7 +38,7 @@ Um Performance-Probleme zu vermeiden, dürfen die in den E-Mails enthaltenen Bil
 
 Adobe empfiehlt außerdem, die Größe und Anzahl der angehängten Dateien zu begrenzen. Standardmäßig kann nur eine Datei als Anhang zu einer E-Mail hinzugefügt werden. Dieser Schwellenwert kann in der Option `NmsDelivery_MaxRecommendedAttachments` konfiguriert werden.
 
-Weitere Informationen finden Sie in der Liste der Kampagnenoptionen in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=de#delivery).
+Weitere Informationen finden Sie in der Liste der Kampagnenoptionen in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery).
 
 ## Lokale Datei anhängen {#attaching-a-local-file}
 

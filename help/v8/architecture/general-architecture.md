@@ -8,7 +8,7 @@ exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -98,4 +98,4 @@ Sie können Adobe Campaign unter Verwendung der vordefinierten Datenbank und Sch
 
 Die Gesamtspeichermenge wird auf die Hauptdatenbank und (optional) die sekundäre Datenbank von Snowflake aufgeteilt. Wo die Daten gespeichert werden, sollte zum Zeitpunkt der Implementierung oder des Upgrades festgelegt werden, je nach den kundenspezifischen Anwendungsfällen.
 
-Wie Sie die Nutzung Ihrer Datenbank überwachen können, erfahren Sie in der Dokumentation zu [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=de){target="_blank"}.
+Erfahren Sie in der Dokumentation zum Campaign Control [, wie Sie die Datenbanknutzung ](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=de){target="_blank"}.

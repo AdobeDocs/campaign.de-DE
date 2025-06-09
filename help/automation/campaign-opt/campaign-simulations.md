@@ -154,7 +154,7 @@ Um das Ergebnis einer Simulation zu analysieren, nutzen Sie die mit ihr verbunde
 Standardmäßig werden folgende Berichte angeboten:
 
 * **[!UICONTROL Detail der Simulationsausschlüsse]**: Dieser Bericht bietet eine detaillierte Tabelle aller Ausschlussgründe für alle von dieser Simulation betroffenen Sendungen.
-* **[!UICONTROL Simulationszusammenfassung]**: Dieser Bericht zeigt den Umfang der von der Simulation ausgeschlossenen Zielgruppen während der verschiedenen Sendungen an.
+* **[!UICONTROL Simulationszusammenfassung]**: Dieser Bericht zeigt den Umfang der von der Simulation ausgeschlossenen Populationen während der verschiedenen Sendungen an.
 * **[!UICONTROL Zusammenfassung der simulationsbedingten Ausschlüsse]**: Dieser Bericht zeigt eine Tabelle der Ausschlüsse durch die Simlation an. Des Weiteren werden die Typologieregeln aufgeführt, die zum Ausschluss geführt haben, sowie ihr jeweiliger Anteil an den regelbedingten Ausschlüssen.
 
 <!--

@@ -344,5 +344,5 @@ Im Folgenden finden Sie ein Beispiel für eine Landingpage und eine JavaScript-C
 ### Weitere Informationen
 
 * [Konfigurieren einer JavaScript-Code-Aktivität](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Erstellen einer Landingpage](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=de){target="_blank"}
-* [Verwalten von Abonnements und Abmeldungen](../start/subscriptions.md)
+* [Landingpage erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=de){target="_blank"}
+* [Verwaltung von Abonnements und Abmeldungen](../start/subscriptions.md)

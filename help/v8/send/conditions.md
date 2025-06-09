@@ -86,4 +86,4 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
 
 Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446720?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)

@@ -14,7 +14,7 @@ ht-degree: 97%
 
 # Verwenden von Gestaltungsbausteinen{#personalization-blocks}
 
-Gestaltungsbausteine sind dynamische Inhalte, die ein spezifisches Rendering enthalten, das Sie in Ihre Sendungen einfügen können. Sie ermöglichen beispielsweise das Einfügen eines Logos, einer bestimmten Anrede oder auch eines Links zu einer Mirrorseite.
+Gestaltungsbausteine sind dynamische Inhalte, die ein spezifisches Rendering enthalten, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußnachricht oder einen Link zur Mirrorseite hinzufügen.
 
 Um auf personalisierte Inhaltsbausteine zuzugreifen, navigieren Sie zum Knoten **[!UICONTROL Ressourcen > Kampagnen-Management > Gestaltungsbausteine]** des Explorers. Integrierte Gestaltungsbausteine werden in [diesem Abschnitt](#ootb-personalization-blocks) aufgelistet.
 
@@ -79,4 +79,4 @@ Nach der Speicherung ist der neue Gestaltungsbaustein im Versand-Editor verfügb
 
 Im folgenden Video erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449015?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

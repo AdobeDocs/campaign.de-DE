@@ -9,7 +9,7 @@ exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
 source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
 workflow-type: tm+mt
 source-wordcount: '1479'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Führen Sie im Kontext dieser aktualisierten Implementierung die folgenden Schri
 
 1. [Erstellen und Konfigurieren einer Mobile-Eigenschaft in der Adobe Experience Platform-Datenerfassung](#create-mobile-property)
 
-1. [Hinzufügen der Adobe Experience Platform Assurance-Erweiterung von Adobe](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(empfohlen)
+1. [Adobe Adobe Experience Platform Assurance-Erweiterung hinzufügen](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(empfohlen)
 
 1. [Hinzufügen von Campaign Classic zur App](#campaign-mobile-ap)
 
@@ -83,7 +83,7 @@ Die Registrierung der Push-Anmeldedaten für Apps ist erforderlich, damit Adobe 
 
       1. Wechseln Sie zu **[!UICONTROL Push-Anmeldedaten]**, um Ihre Anmeldedaten hinzuzufügen.
 
-      1. Ziehen Sie die FCM-Push-Anmeldedaten per Drag-und-Drop in den Arbeitsbereich. Weitere Informationen zum Abrufen der Push-Anmeldedaten finden Sie in der [Google-Dokumentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+      1. Ziehen Sie die FCM-Push-Anmeldedaten per Drag-und-Drop in den Arbeitsbereich. Weitere Informationen zum Abrufen der Push-Anmeldeinformationen finden Sie in der [Dokumentation zu Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um Ihre App-Konfiguration zu erstellen.
 
@@ -145,7 +145,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
    Stellen Sie sicher, dass in Adobe Campaign und im Appcode über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
-   Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Weitere Informationen finden Sie in [Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
@@ -180,7 +180,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 
    Stellen Sie sicher, dass in Adobe Campaign und im Appcode über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
-   Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Weitere Informationen finden Sie in [Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
    >[!NOTE]
    >
@@ -248,7 +248,7 @@ Ihre Mobile-Eigenschaft wird jetzt automatisch mit dem technischen Workflow der 
 
 Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen.
 
-[Weitere Informationen finden Sie in der Adobe Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
+[Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 
 ## Erstellen der ersten Push-Benachrichtigung{#push-create}
 

@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um auf Berichte zuzugreifen:
    * **[!UICONTROL Tracking-Statistiken]**
    * **[!UICONTROL URLs und Clickstreams]**
    * **[!UICONTROL Tracking-Indikatoren]**
-   * **[!UICONTROL Fehler und Bounces]**
+   * **[!UICONTROL Unzustellbare Nachrichten und Bounces]**
    * **[!UICONTROL Nutzer-Aktivitäten]**
    * **[!UICONTROL Versandzusammenfassung]**
    * **[!UICONTROL Abonnement-Tracking]**

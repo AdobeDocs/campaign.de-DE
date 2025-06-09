@@ -8,7 +8,7 @@ exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
 source-wordcount: '1135'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
 Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
-Weitere Informationen über eingehende E-Mails finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
+Weitere Informationen über eingehende E-Mails finden [ auf dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -132,9 +132,9 @@ Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UIC
 
    * **[!UICONTROL AWS-S3-Konto-Server]**: URL Ihres Servers; sollte wie folgt ausgefüllt werden: `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
-   * **[!UICONTROL Kennung des AWS-Zugriffsschlüssels]**: Erfahren Sie in der [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}, wie Sie die Kennung Ihres AWS-Zugangsschlüssels finden.
+   * **[!UICONTROL AWS-Zugriffsschlüssel-ID]**: Erfahren Sie in der [Amazon-Dokumentation, wie Sie Ihre AWS-Zugriffsschlüssel-ID finden](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
-   * **[!UICONTROL Geheimer Zugriffsschlüssel für AWS]**: Erfahren Sie in der [Amazon-Dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}, wie Sie Ihren geheimen AWS-Zugriffsschlüssel finden.
+   * **[!UICONTROL Geheimer AWS-Zugriffsschlüssel]**: Erfahren Sie in der [Amazon-Dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}, wie Sie Ihren geheimen Zugriffsschlüssel für AWS finden.
 
    * **[!UICONTROL AWS-Region]**: Weitere Informationen zu AWS-Regionen finden Sie in der [Amazon-Dokumentation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
 
