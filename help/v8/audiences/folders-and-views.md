@@ -6,10 +6,10 @@ role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '705'
-ht-degree: 100%
+source-git-commit: 567ca1cd8fa6e4f03c8871488152710753ea02f1
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 98%
 
 ---
 
@@ -21,8 +21,8 @@ Eine Ansicht ist ein spezieller Ordner, der keine Daten enthält, aber Daten anz
 
 
 >[!NOTE]
->Um Ansichten von Standardordnern zu unterscheiden, wird ihr Name in hellblau anstelle von schwarz angezeigt.
 >
+>Um Ansichten von Standardordnern zu unterscheiden, wird ihr Name in hellblau anstelle von schwarz angezeigt.
 
 Beachten Sie, dass Sie Ordnern Berechtigungen zuweisen können, um den Zugriff auf bestimmte Daten zu beschränken. [Weitere Informationen](#restrict-access-to-a-folder)
 
@@ -52,14 +52,19 @@ Um einen anderen Ordnertyp zu erstellen, klicken Sie mit der rechten Maustaste a
 ![](assets/add-new-folder.png)
 
 >[!CAUTION]
->Diese Änderungen gelten für alle Campaign-Benutzer.
 >
+>Diese Änderungen gelten für alle Campaign-Benutzer.
 
 ## Umwandeln eines Ordners in eine Ansicht{#turn-a-folder-to-a-view}
 
 Eine Ansicht ist ein spezieller Ordner, der keine Daten enthält, aber Daten anzeigt, die physisch in anderen Ordnern desselben Typs gespeichert sind.
 
 Sie können jeden Ordner in eine Ansicht umwandeln, der Ordner muss jedoch leer sein. Alle im Ordner gespeicherten Daten werden gelöscht, wenn Sie den Ordner in eine Ansicht umwandeln.
+
+>[!IMPORTANT]
+>
+>Vorkonfigurierte Ordner sollten nicht in eine Ansicht umgewandelt werden.
+
 
 >[!CAUTION]
 >
