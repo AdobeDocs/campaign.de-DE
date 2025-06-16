@@ -3,7 +3,7 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 6d2425f7e7f35f5461151790fbda2bef2959bff4
+source-git-commit: 9187ac7fd0d17a6dc28c3b6564913bcd93e45943
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 31%
@@ -18,13 +18,13 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 **Auf dieser Seite**
 
-* [Version 8.6.5](#release-8-6-4)
-* [Version 8.7.4](#release-8-7-4)
-* [Version 8.6.4](#release-8-6-4)
+* [Version 8.6.5](#release-8-6-5)
+* [Version 8.7.4](#release-8-7-4)
+* [Version 8.6.4](#release-8-6-4)
 
 >[!ENDSHADEBOX]
 
-## Version 8.6.5 {#release-8-6-5}
+## Version 8.6.5 {#release-8-6-5}
 
 _Samstag, 25. April 2025_
 
@@ -50,7 +50,7 @@ Die folgenden Probleme wurden ebenfalls in dieser Version behoben:
 
 NEO-67620, NEO-71534, NEO-80245, NEO-81105, NEO-81758, NEO-81908, NEO-82351, NEO-82742, NEO-83044, NEO-83138, NEO-83350, NEO-83729, NEO-83809, NEO-84038, NEO-84108, NEO-83793, NEO-85269, NEO-86121, NEO-86556, NEO-86739
 
-## Version 8.7.4 {#release-8-7-4}
+## Version 8.7.4 {#release-8-7-4}
 
 _Freitag, 10. April 2025_
 
@@ -72,7 +72,7 @@ Die folgenden Probleme wurden in dieser Version behoben:
 
 NEO-80245, NEO-83559
 
-## Version 8.6.4 {#release-8-6-4}
+## Version 8.6.4 {#release-8-6-4}
 
 _15. Januar 2025_
 
