@@ -6,9 +6,9 @@ title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 # Dokumentation zu Adobe Campaign v8 (Konsole) {#campaign-v8}
 
 + [Dokumentation zu Campaign v8](campaign-home.md)
-+ Versionshinweise zu {#releases}
++ Versionshinweise {#releases}
    + [Frühere Versionshinweise](start/e-release-notes.md)
    + [Versionen und Upgrades](start/upgrades.md)
    + [Neueste Versionen](start/release-notes.md)
@@ -30,7 +30,7 @@ ht-degree: 92%
    + [Bekannte Probleme](start/known-issues.md)
    + [Kompatibilitätsmatrix](start/compatibility-matrix.md)
    + [Aktualisierungen der Dokumentation](start/documentation-updates.md)
-+ Jetzt starten {#new}
++ Erste Schritte {#new}
    + [Erste Schritte mit Adobe Campaign](start/get-started.md)
    + [Wichtigste Funktionen](start/whats-new.md)
    + [Erkunden der Benutzeroberfläche](start/campaign-ui.md)
@@ -55,7 +55,7 @@ ht-degree: 92%
       + [Definieren zusätzlicher E-Mail-Parameter](send/email-parameters.md)
       + [Versenden und Überwachen von E-Mails](send/send.md)
       + [Senden von E-Mails auf japanischen Mobiltelefonen](send/sending-emails-on-japanese-mobiles.md)
-      + [Dateien an eine E-Mail anhängen](send/attaching-files.md)
+      + [Anhängen von Dateien an eine E-Mail](send/attaching-files.md)
    + SMS {#sms}
       + [Erste Schritte mit SMS](send/sms/sms.md)
       + SMS-Kanal konfigurieren {#config-sms}
@@ -66,7 +66,7 @@ ht-degree: 92%
          + [Eigenständige Instanz](send/sms/sms-standalone-instance.md)
          + [Mid-Sourcing-Infrastruktur](send/sms/sms-mid-sourcing.md)
          + [Beschreibung des SMPP-Connectors](send/sms/smpp-connector-delivery.md)
-      + SMS erstellen  {#create-sms}
+      + Erstellen einer SMS  {#create-sms}
          + [Erstellen eines SMS-Versands](send/sms/create-sms.md)
          + [Definieren des Inhalts](send/sms/sms-content.md)
          + [Auswählen der Zielgruppe](send/sms/sms-audience.md)
@@ -103,7 +103,7 @@ ht-degree: 92%
    + Transaktionsnachrichten {#real-time}
       + [Erste Schritte mit Transaktionsnachrichten](send/transactional.md)
       + [Erstellen und Veröffentlichen einer Vorlage](send/transactional-template.md)
-      + Event-Management {#event}
+      + Ereignis-Management {#event}
          + [Erfassen und Verarbeiten von Ereignissen](send/event-processing.md)
          + [Funktionsweise der Ereignisbeschreibung](send/event-description.md)
          + [Senden und Überwachen von Nachrichten](send/delivery-execution.md)
@@ -125,7 +125,7 @@ ht-degree: 92%
    + [Best Practices](audiences/audiences-best-practices.md)
    + [Verwalten von Abonnements](start/subscriptions.md)
 + Content-Management {#content}
-   + [Landingpages erstellen](dev/landing-pages.md)
+   + [Erstellen von Landingpages](dev/landing-pages.md)
    + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
 + Automatisierung und Workflows {#automation}
    + [Handbuch zur Kampagnenautomatisierung >](https://experienceleague.adobe.com/de/docs/campaign/automation/home)
@@ -156,7 +156,7 @@ ht-degree: 92%
    + [Audit-Protokoll](reporting/audit-trail.md)
    + Arbeiten mit Berichten{#reports}
       + [Erste Schritte mit Berichten](reporting/gs-reporting.md)
-      + Cubes zu erstellen{#cubes}
+      + Erstellen von Cubes{#cubes}
          + [Erste Schritte mit Cubes](reporting/gs-cubes.md)
          + [Erstellen von Cubes](reporting/cube-indicators.md)
          + [Erstellen von Berichten mit Cubes](reporting/cube-tables.md)
@@ -190,7 +190,7 @@ ht-degree: 92%
       + [Arbeiten mit Campaign und Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [Daten synchronisieren](connect/crm-data-sync.md)
 + Administration {#admin}
-   + Benutzer und Berechtigungen {#permissions}
+   + Benutzende und Berechtigungen {#permissions}
       + [Erste Schritte mit Berechtigungen](start/gs-permissions.md)
       + [Verwalten von Benutzerberechtigungen](start/manage-permissions.md)
       + [Berechtigungen für Ordner hinzufügen](start/folder-permissions.md)
@@ -200,7 +200,7 @@ ht-degree: 92%
       + [Allgemeine Prinzipien](architecture/general-architecture.md)
       + [Architekturmodelle](architecture/architecture.md)
       + [Campaign FDA-Bereitstellung](architecture/fda-deployment.md)
-      + FFDA-Bereitstellung in Unternehmen {#ffda}
+      + Bereitstellung in Unternehmen (FFDA) {#ffda}
          + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
          + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
          + [Neue APIs](architecture/new-apis.md)
@@ -216,7 +216,7 @@ ht-degree: 92%
       + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
       + [Integrieren von Campaign-SDKs mit Ihrer Mobile App – VERALTETE SEITE](config/push-config.md)
       + [Externe Konten](config/external-accounts.md)
-+ Ressourcen für Entwickler {#developer}
++ Ressourcen für Entwickelnde {#developer}
    + [Campaign-Datenmodell](dev/datamodel.md)
    + Schemata und Formulare {#shemas-forms}
       + [Arbeiten mit Schemata](dev/schemas.md)

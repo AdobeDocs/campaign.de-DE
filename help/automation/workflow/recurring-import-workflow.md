@@ -7,9 +7,9 @@ role: User, Data Engineer
 version: Campaign v8, Campaign Classic v7
 exl-id: 13f0091b-b62c-47df-9658-6631ba1cf03a
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1134'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity
 version: Campaign v8, Campaign Classic v7
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2020'
 ht-degree: 100%
 
@@ -212,10 +212,10 @@ Wenn die Daten beispielsweise direkt aus einer externen Datenbank wie Netezza (d
 
 Dies lässt sich vermeiden, indem Sie der **[!UICONTROL Aufspaltung]** eine **[!UICONTROL Anreicherung]** vorschalten. Aktivieren Sie in der **[!UICONTROL Anreicherung]** die Option **[!UICONTROL Alle Zusatzdaten der Hauptmenge beibehalten]** und geben Sie als Zusatzdaten die Spalten an, die Sie für die Konfiguration der Filter der **[!UICONTROL Aufspaltung]** verwenden möchten. Die Daten der in die **[!UICONTROL Aufspaltung]** eingehenden Transition werden in diesem Fall lokal in einer temporären Tabelle auf dem Adobe-Campaign-Server gespeichert und das Komplement kann korrekt erzeugt werden.
 
-Die Option **[!UICONTROL Überlappung der Ausgabepopulationen zulassen]** ermöglicht den Umgang mit Profilen, die in mehreren Teilmengen enthalten sind:
+Die Option **[!UICONTROL Überlappung der Ausgabepopulationen zulassen]** ermöglicht Ihnen die Verwaltung von Populationen, die in mehreren Teilmengen enthalten sind:
 
-* Wenn diese Option deaktiviert ist, stellt die Aufspaltung sicher, dass ein Profil nur in einer Ergebnismenge enthalten ist, auch wenn es den Kriterien anderer Teilmengen entspricht. Sie befinden sich in der Zielgruppe der ersten Registerkarte mit passenden Kriterien.
-* Wenn die Option aktiviert ist, sind die Profile in allen Teilmengen enthalten, deren Filterkriterien sie erfüllen. Es wird für Adobe Campaign jedoch empfohlen, keine Überschneidungen zuzulassen.
+* Wenn diese Option deaktiviert ist, stellt die Aktivität der Aufspaltung sicher, dass ein Profil nicht in mehreren Ausgangstransitionen vorhanden sein kann, selbst wenn es die Kriterien mehrerer Teilmengen erfüllt. Sie befinden sich in der Zielgruppe der ersten Registerkarte mit passenden Kriterien.
+* Wenn die Option aktiviert ist, sind die Profile in allen Teilmengen enthalten, deren Filterkriterien sie erfüllen. Es wird für Adobe Campaign jedoch empfohlen, ausschließende Kriterien zu verwenden.
 
 ## Eingabeparameter {#input-parameters}
 

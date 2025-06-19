@@ -7,7 +7,7 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1319'
 ht-degree: 100%
 
@@ -208,4 +208,4 @@ Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden
 
 In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426473?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

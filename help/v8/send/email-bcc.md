@@ -7,9 +7,9 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 89%
 
 ## Über BCC für E-Mails {#gs-bcc}
 
-Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird. Mit dieser Option können Sie Nachrichten an eine dedizierte BCC-E-Mail-Adresse (Blind Carbon Copy) senden, von der aus sie mithilfe eines externen Systems verarbeitet und archiviert werden können.
+Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird. Mit dieser Option können Sie Nachrichten an eine bestimmte BCC-E-Mail-Adresse (Blind Carbon Copy) senden, wo sie mithilfe eines externen Systems verarbeitet und archiviert werden.
 
 >[!CAUTION]
 >
->Aus Datenschutzgründen müssen BCC-E-Mails von einem Archivierungssystem bearbeitet werden, in dem personenbezogene Daten (PII, Personally Identifiable Information) sicher aufbewahrt werden.
+>Aus Datenschutzgründen müssen BCC-E-Mails von einem Archivierungssystem verarbeitet werden, in dem personenbezogene Daten (PII, Personally Identifiable Information) sicher aufbewahrt werden.
 
 Adobe Campaign selbst ermöglicht keine Verwaltung von archivierten Dateien. Die .eml-Dateien, die den gesendeten E-Mails entsprechen, können dann auf einen Remote-Server wie z. B. einen SMTP-E-Mail-Server übertragen werden.
 
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um BCC für eine bestimmte [Versandvorlage](create-temp
 1. Navigieren Sie im Campaign-Explorer zum Ordner „Versandvorlagen“. Standardmäßig werden Versandvorlagen im Ordner **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Versandvorlagen]** gespeichert.
 1. Bearbeiten Sie die Versandvorlage, um sie mit BCC zu aktualisieren.
 1. Wählen Sie die Schaltfläche **[!UICONTROL Eigenschaften]** aus.
-1. Aktivieren Sie auf der **[!UICONTROL Versand]** die Option **[!UICONTROL E-Mail-BCC mit erweitertem]**).
+1. Aktivieren Sie auf der Registerkarte **[!UICONTROL Versand]** die Option **[!UICONTROL E-Mail-BCC mit erweitertem Momentum]**.
 
    ![](assets/email-bcc.png)
 

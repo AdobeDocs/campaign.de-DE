@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1734'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Als Produktadministrator können Sie Benutzer hinzufügen und Zugriff auf Campai
 
 Gehen Sie wie folgt vor, um einen Benutzer hinzuzufügen:
 
-1. Wählen Sie auf der Startseite von [&#128279;](https://adminconsole.adobe.com/enterprise){target="_blank"}0&rbrace;Admin Console **die Option „Benutzer hinzufügen** aus.
+1. Wählen Sie auf der Startseite der [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} die Option **Benutzer hinzufügen** aus.
 
    ![](assets/add-a-user.png)
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um einen Benutzer hinzuzufügen:
 
 1. Klicken Sie auf **Speichern**. Der Benutzer wird hinzugefügt und in der Benutzerliste angezeigt. Wenn Sie Benutzenden eine Administratorrolle oder ein Produktprofil zuweisen, erhalten diese eine E-Mail-Benachrichtigung. Benutzende müssen dem Link folgen, um ihr Profil auszufüllen.
 
-Weitere Informationen zur Benutzererstellung finden Sie in der Admin Console auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-users-individually.html){target="_blank"}.
+Weitere Informationen zur Benutzererstellung in der Admin Console finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-users-individually.html){target="_blank"}.
 
 Wenn sich neue Benutzerinnen und Benutzer [mit ihrer Adobe ID bei Campaign](connect.md) anmelden, werden sie in der Client-Konsole zur Liste der Campaign-Benutzerinnen und -Benutzer hinzugefügt. Campaign-Benutzende werden im Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Benutzer]** des Campaign-Explorers gespeichert.
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um beispielsweise ein Produktprofil „Validierungsvera
 
 #### Erstellen des Produktprofils in der Admin Console{#create-profile-in-admin-console}
 
-1. Herstellen einer Verbindung mit der [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
+1. Stellen Sie eine Verbindung zur [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} her.
 1. Öffnen Sie vom Abschnitt **Produkt und Dienstleistungen** auf der Startseite aus das Campaign-Produkt.
 1. Klicken Sie auf **Neues Profil** und geben Sie den Namen des zu erstellenden Produktprofils mit der exakt korrekten Syntax wie [hier](#product-profiles) beschrieben ein. In unserem Beispiel geben wir Folgendes ein: Kampagne – `<your-instance-name>` – Validierungsverantwortliche
 
@@ -115,7 +115,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
 1. **[!UICONTROL Kampagnenverantwortliche Benutzer]** (Vorgang)
 
-   Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten. Damit können Sie auf die mit Kampagnen verknüpften Objekte (Pläne, Programme, Workflows, Budgets usw.) im Rahmen von **[!UICONTROL Kampagne]** (optionales Adobe Campaign-Modul) zugreifen.
+   Die Benutzenden in dieser Gruppe können Marketing-Kampagnen verwalten. Diese Berechtigung verleiht Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets etc.) im Framework von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
 
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
@@ -175,7 +175,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
 Sie können die Admin Console verwenden, um Benutzergruppen zu erstellen und ihnen Benutzende zuzuweisen.
 
-Eine Benutzergruppe ist eine Sammlung verschiedener Benutzender, denen ein gemeinsamer Berechtigungssatz erteilt werden muss. Erfahren Sie in ([ Abschnitt), wie Sie Benutzergruppen ](https://helpx.adobe.com/de/enterprise/using/user-groups.html){target="_blank"}.
+Eine Benutzergruppe ist eine Sammlung verschiedener Benutzender, denen ein gemeinsamer Berechtigungssatz erteilt werden muss. In [diesem Abschnitt](https://helpx.adobe.com/de/enterprise/using/user-groups.html){target="_blank"} erfahren Sie, wie Sie Benutzergruppen erstellen.
 
 Sie können Produktprofile an Benutzergruppen zuweisen. Alle Benutzenden in dieser Gruppe erhalten also denselben Satz von Produktberechtigungen.
 

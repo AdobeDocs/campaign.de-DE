@@ -6,9 +6,9 @@ feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '718'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -54,17 +54,17 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
   Diese Option darf nur zur Problembehebung verwendet werden und nie im Produktionsalltag. Bei Aktivierung der Option wird der Workflow prioritär. Alle anderen Workflows werden bis zu seinem Abschluss von der Workflow-Engine angehalten.
 
-* **[!UICONTROL Watchdog-Supervisor aktivieren, um den Workflow dauerhaft laufen zu lassen]**
+* **[!UICONTROL Watchdog-Supervisor darf den Workflow dauerhaft laufen lassen]**
 
-  Diese Option zwingt Workflows dazu, nach einem Fehler automatisch neu zu starten. Nach der Aktivierung überprüft der Neustart alle 30 Sekunden den Status des Workflows und startet ihn bei Bedarf neu. Um das 30-Sekunden-Intervall anzupassen, können Sie die technische Option &quot;`XtkWorkflow_WatchdogRestartTimerTimeout`&quot; erstellen und einen ganzzahligen Datentyp verwenden, um die gewünschte Verzögerung anzugeben.
+  Diese Option erzwingt den automatischen Neustart von Workflows nach einem Fehler. Nach der Aktivierung überprüft der Neustart alle 30 Sekunden den Status des Workflows und startet ihn bei Bedarf neu. Um das 30-Sekunden-Intervall anzupassen, können Sie die technische Option `XtkWorkflow_WatchdogRestartTimerTimeout` erstellen und einen Datentyp als Ganzzahl festlegen, um die gewünschte Verzögerung anzugeben. 
 
   >[!NOTE]
   >
   >* Diese Option ist ab Version 8.6.4 verfügbar.
   >
-  >* Diese Option richtet sich an fortgeschrittene Benutzer und sollte nur für **technische Workflows** aktiviert werden.
+  >* Diese Option richtet sich an fortgeschrittene Benutzende und sollte nur für **technische Workflows** aktiviert werden.
   >
-  >* Diese Option ist standardmäßig für die zentralisierten Replikations-Workflows aktiviert, die im Kontext einer [Enterprise (FFDA)-Bereitstellung verfügbar ](../../v8/architecture/enterprise-deployment.md). [Weitere Informationen](../../v8/architecture/replication.md)
+  >* Diese Option ist standardmäßig für die zentralisierten Replikations-Workflows aktiviert, die im Kontext einer [Enterprise-Bereitstellung (FFDA)](../../v8/architecture/enterprise-deployment.md) verfügbar sind. [Weitere Informationen](../../v8/architecture/replication.md)
 
 ### Umgang mit Fehlern {#error-management}
 

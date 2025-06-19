@@ -6,9 +6,9 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2573'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
 
-Alle Formularattribute sind in der Dokumentation zu [Campaign Classic v7 ](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=de){target="_blank"}.
+In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=de){target="_blank"} sind alle Formularattribute aufgeführt.
 
 ## Formatierung {#formatting}
 

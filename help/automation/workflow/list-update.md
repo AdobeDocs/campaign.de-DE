@@ -7,7 +7,7 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: abb7f777-0b4a-4bf2-bcb6-32264f340a58
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
 ht-degree: 100%
 
@@ -73,6 +73,6 @@ Identifiziert die in der Gruppe zu speichernde Population.
 
 In diesem Video wird gezeigt, wie man vom Explorer aus eine Liste von Empfängern erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/27502?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.

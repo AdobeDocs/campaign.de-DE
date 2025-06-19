@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 2c12c45b-4429-4e60-bc96-ff70a95d4c9e
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Die Aktivität **SMS-Empfang** ermöglicht den Abruf und die Verarbeitung von SM
 
 Geben Sie im Tab **SMS-Empfang** die SMS-Routing-Parameter sowie das bei Empfang jeder Nachricht auszuführende Script an. Im zweiten Tab können Sie eine Planung für die Aktivität definieren und im dritten bei Bedarf eine Ablauffrist.
 
-1. **[!UICONTROL SMS-Routing]**: Wählen Sie das für den SMS-Empfang zu verwendende externe Konto aus. Externe Konten werden über den Verzeichnisknoten **[!UICONTROL Administration > Plattform > Externe]**) konfiguriert. [Weitere Informationen](../../v8/config/external-accounts.md)
+1. **[!UICONTROL SMS-Routing]**: Wählen Sie das für den SMS-Empfang zu verwendende externe Konto aus. Externe Konten werden im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** der Baumstruktur konfiguriert. [Weitere Informationen](../../v8/config/external-accounts.md)
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Planung]**
 

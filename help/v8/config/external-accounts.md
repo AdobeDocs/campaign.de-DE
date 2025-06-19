@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1135'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
 Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
-Weitere Informationen über eingehende E-Mails finden [ auf dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
+Weitere Informationen über eingehende E-Mails finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -87,7 +87,7 @@ Um ein externes POP3-Programm mit Microsoft OAuth 2.0 zu konfigurieren, markiere
 
 Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campaign verfügbaren Kanal abhängig von den installierten Packages konfigurieren.
 
-Weitere Informationen zur Verwaltung externer Konten und zur Versandausführung finden Sie [ (diesem Abschnitt](../architecture/architecture.md#split).
+Weitere Informationen zur Verwaltung externer Konten und zur Versandausführung finden Sie in [diesem Abschnitt](../architecture/architecture.md#split).
 
 ### Ausführungsinstanz {#execution-instance}
 
@@ -126,13 +126,13 @@ Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UIC
 
   >[!NOTE]
   >
-  >Ab Version 8.5 können Sie sich jetzt bei der Konfiguration Ihres externen SFTP-Kontos sicher mit einem privaten Schlüssel authentifizieren. [Weitere Informationen zur Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=de){target="_blank"}.
+  >Ab Version 8.5 können Sie sich jetzt bei der Konfiguration Ihres externen SFTP-Kontos sicher mit einem privaten Schlüssel authentifizieren. [Erfahren Sie mehr über die Schlüsselverwaltung](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=de){target="_blank"}.
 
 * **Amazon Simple Storage Service (S3)** – Die **AWS S3**-Verbindung kann zum Importieren oder Exportieren von Daten in Adobe Campaign über die Workflow-Aktivität **[!UICONTROL Datei übertragen]** verwendet werden. Zum Einrichten dieses neuen externen Kontos benötigen Sie die folgenden Details:
 
    * **[!UICONTROL AWS-S3-Konto-Server]**: URL Ihres Servers; sollte wie folgt ausgefüllt werden: `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
-   * **[!UICONTROL AWS-Zugriffsschlüssel-ID]**: Erfahren Sie in der [Amazon-Dokumentation, wie Sie Ihre AWS-Zugriffsschlüssel-ID finden](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
+   * **[!UICONTROL Kennung des AWS-Zugriffsschlüssels]**: In der [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"} erfahren Sie, wie Sie die Kennung Ihres AWS-Zugangsschlüssels finden.
 
    * **[!UICONTROL Geheimer AWS-Zugriffsschlüssel]**: Erfahren Sie in der [Amazon-Dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}, wie Sie Ihren geheimen Zugriffsschlüssel für AWS finden.
 

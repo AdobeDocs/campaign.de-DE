@@ -6,9 +6,9 @@ role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
 source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1238'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen 
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-data.html){target="_blank"}
+1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-data){target="_blank"}.
 
    ![](assets/messagecenter_create_custo_3.png)
 
@@ -161,7 +161,7 @@ Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage einge
 
 #### Wechsel von [!DNL Campaign Classic] v7 {#transition-from-v7}
 
-Wenn Sie [von Campaign Classic v7](../start/v7-to-v8.md) wechseln, durchlaufen alle Sendungen den Mid-Sourcing-Server (MID).
+Wenn Sie [von Campaign Classic v7 wechseln](../start/v7-to-v8.md), durchlaufen alle Sendungen den Mid-Sourcing(MID)-Server.
 
 Bei der Erstellung einer Transaktionsnachrichtenvorlage ist jedoch das Routing, das für eine erfolgreiche Verwendung der Vorlage erforderlich ist, der **interne E-Mail-Versand**. Dieses Routing verhindert den Versand von Testsendungen.
 

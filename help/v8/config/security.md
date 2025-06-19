@@ -7,9 +7,9 @@ level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2280'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Darüber hinaus arbeiten wir mit unseren Partnern sowie mit führenden Sicherhei
 
 ## Datenschutz
 
-Um den Datenschutz korrekt zu handhaben und personenbezogene Daten korrekt zu verwalten, müssen Sie die für die Region(en) geltenden Gesetze einhalten, in denen Sie tätig sind. Die Funktionen von Adobe Campaign helfen Ihnen bei der Einhaltung der auf [ Seite ](../start/privacy.md) Vorschriften
+Um den Datenschutz korrekt zu handhaben und personenbezogene Daten korrekt zu verwalten, müssen Sie die für die Region(en) geltenden Gesetze einhalten, in denen Sie tätig sind. Die Funktionen von Adobe Campaign unterstützen Sie bei der Einhaltung der auf [dieser Seite](../start/privacy.md) aufgeführten Vorschriften.
 
 ### Adobe Experience Cloud – Datenschutz {#experience-cloud-privacy}
 
@@ -38,7 +38,7 @@ Adobe Campaign ist Teil der Adobe Experience Cloud-Lösungen. Die Art und Weise,
 * **Verwendung von Adobe Experience Cloud zur Erfassung von Informationen**
 
    * Adobe Experience Cloud-Lösungen verwenden Cookies und ähnliche Technologien, wie Webbeacons (auch als Tags oder Pixel bezeichnet), um die Erfassung von Informationen zu ermöglichen. Weitere Informationen zu Cookies und Tracking-Funktionen mit Adobe Campaign finden Sie in [diesem Abschnitt](#tracking-capabilities).
-   * Sie können Adobe Experience Cloud-Technologien auch in Ihren mobilen Apps verwenden. Weiterführende Informationen zum Senden von Sendungen an Mobilgeräte mit Campaign finden Sie unter [SMS-Kanal](../send/sms/sms-channel.md) und Mobile-App-Kanal.
+   * Sie können Adobe Experience Cloud-Technologien auch in Ihren mobilen Apps verwenden. Weitere Informationen zu mobilen Sendungen mit Campaign finden Sie unter [SMS-Kanal](../send/sms/sms-channel.md) und „Mobile-App-Kanal“.
 
 * **Datenschutzoptionen Ihrer Benutzer bezüglich Ihrer Verwendung von Adobe Experience Cloud**
 
@@ -59,7 +59,7 @@ Bei der Verwaltung des Datenschutzes ist es wichtig zu definieren, welche Daten 
 * **Personenbezogene Daten** sind Informationen, die eine lebende Person direkt oder indirekt identifizieren können.
 * **Vertrauliche personenbezogene Daten** sind Informationen zu Rasse, politischen Ansichten, religiösen Überzeugungen, kriminellem Hintergrund, genetischen Informationen, Gesundheitsdaten, sexuellen Vorlieben, biometrischen Informationen sowie zur Gewerkschaftsmitgliedschaft.
 
-Bei der Integration von Campaign mit anderen Experience Cloud-Lösungen, bei denen Zielgruppen von einem System in ein anderes übertragen werden können, z. B. [Adobe Analytics](../connect/ac-aa.md), [Experience Cloud Audiences](../start/shared-audiences.md), Campaign Standard, oder mit anderen Lösungen über [CRM-Connector](../../automation/workflow/crm-connector.md) müssen Sie besonders auf den Schutz personenbezogener Daten achten.
+Bei der Integration von Campaign mit anderen Experience Cloud-Lösungen, bei denen Zielgruppen von einem System auf ein anderes übertragen werden können, wie z. B. [Adobe Analytics](../connect/ac-aa.md), [Experience Cloud Audiences](../start/shared-audiences.md), Campaign Standard, oder mit anderen Lösungen durch [CRM-Connectoren](../../automation/workflow/crm-connector.md) müssen Sie dem Schutz personenbezogener Daten besondere Aufmerksamkeit widmen.
 
 Die [wichtigsten Rechtsvorschriften](#privacy-regulations) beziehen sich auf die verschiedenen Einheiten, die Daten wie folgt verwalten:
 
@@ -108,14 +108,14 @@ Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vert
 
 ## Datenschutzverwaltung {#privacy-management}
 
-Datenschutzverwaltung bezieht sich auf alle Prozesse und Tools, die Ihnen bei der Einhaltung von Datenschutzbestimmungen (DSGVO, CCPA usw.) helfen.
+Die Datenschutzverwaltung bezieht sich auf alle Prozesse und Tools, die Ihnen helfen, die Datenschutzbestimmungen (DSGVO, CCPA usw.) einzuhalten.
 
 Adobe Campaign bietet Ihnen verschiedene Funktionen zur Datenschutzverwaltung:
 * Einverständnisverwaltung, Datenbeibehaltung und Benutzerrollen. Siehe [diesen Abschnitt](#consent).
 * Datenschutzanfragen (Recht auf Zugriff und Recht auf Vergessenwerden). Siehe [diesen Abschnitt](#privacy-requests).
-* Opt-out aus dem Verkauf personenbezogener Daten (CCPA-spezifisch).
+* Abmeldung (Opt-out) vom Verkauf personenbezogener Daten (CCPA-spezifisch).
 
-Die wichtigsten Datenschutzfunktionen in Campaign und ein Beispiel der beteiligten Rollen werden in [diesem Abschnitt](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow) dargestellt.
+Die wichtigsten Datenschutzfunktionen in Campaign und ein Beispiel der beteiligten Personas werden in [diesem Abschnitt](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow) vorgestellt.
 
 ### Einverständnis, Datenbeibehaltung und Benutzerrollen {#consent}
 
@@ -156,13 +156,13 @@ Vorschriften wie die EU-Datenschutz-Grundverordnung (DSGVO) besagen, dass Untern
 
 ### Nachrichten-Tracking {#message-tracking}
 
-Mit Adobe Campaign können Sie die gesendeten E-Mails und das Verhalten der Empfänger Ihrer Sendungen verfolgen: Öffnen, Klicks auf Links, Abmeldungen usw. Weitere Informationen hierzu finden Sie unter [Über Nachrichten](../start/gs-message.md).
+Mit Adobe Campaign können Sie die gesendeten E-Mails sowie das Verhalten der Empfängerinnen und Empfänger Ihrer Sendungen verfolgen: Öffnen, Klicks auf Links, Abmeldungen usw. Weitere Informationen hierzu finden Sie im Abschnitt [Über Nachrichten](../start/gs-message.md).
 
-Fügen Sie dazu Ihren Nachrichten getrackte Links hinzu, um die Wirkung Ihres Versand- und Empfängerverhaltens auf der Registerkarte Tracking des Versand-Dashboards zu messen. Tracking-Daten werden im Bericht Tracking-Indikatoren interpretiert. Weitere Informationen zum Tracking finden Sie auf [dieser Seite](../start/tracking.md).
+Fügen Sie zu diesem Zweck getrackte Links zu Ihren Nachrichten hinzu, um die Wirkung Ihres Versands und das Verhalten Ihrer Empfängerinnen und Empfänger auf der Registerkarte „Tracking“ des Versand-Dashboards zu messen. Tracking-Daten werden im Bericht zu Trackingindikatoren interpretiert. Weiterführende Informationen zum Tracking finden Sie auf [dieser Seite](../start/tracking.md).
 
 ### Webtracking {#web-tracking}
 
-Mit Adobe Campaign können Sie auch überwachen, wie Empfänger Ihre Website durchsuchen: Einfügen von Tracking-Tags, um Informationen zu sammeln und Besuche auf Web-Anwendungsseiten zu messen.
+Mit Adobe Campaign können Sie auch überwachen, wie die Empfängerinnen und Empfänger auf Ihrer Website surfen: Fügen Sie Trackingtags ein, um Informationen zu sammeln und Besuche auf Seiten der Web-Anwendung zu messen.
 
 Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../start/tracking.md) erläutert.
 
@@ -201,7 +201,7 @@ Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) so
 
 * **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
 
-Weitere Informationen finden Sie in der Dokumentation zu [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target="_blank"}.
 
 
 ## Personalisierung
@@ -296,4 +296,4 @@ Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) so
 
 * **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
 
-Weitere Informationen finden Sie in der Dokumentation zu [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target="_blank"}.

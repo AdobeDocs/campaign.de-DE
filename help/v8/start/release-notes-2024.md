@@ -4,9 +4,9 @@ description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 20
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
 source-git-commit: 57b18835b87be2a201ce23f5b6053266d13b9cb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1308'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 **Auf dieser Seite**
 
-* Campaign v8.7 - [Version 8.7.1](#release-8-7-1)
-* Campaign v8.6 - [Version 8.6.1](#release-8-6-1) | [Version 8.6.2](#release-8-6-2) | [Version 8.6.3 ](#release-8-6-3)
-* Campaign v8.5 - [Version 8.5.3](#release-8-5-3)
+* Campaign v8.7 – [Version 8.7.1](#release-8-7-1)
+* Campaign v8.6 – [Version 8.6.1](#release-8-6-1) | [Version 8.6.2](#release-8-6-2) | [Version 8.6.3](#release-8-6-3)
+* Campaign v8.5 – [Version 8.5.3](#release-8-5-3)
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ _2. Mai 2024_
 >
 >Diese Version ist nur **eingeschränkt verfügbar**. Sie ist Kundinnen und Kunden vorbehalten, die **von Adobe Campaign Standard zu Adobe Campaign v8** migrieren, und kann nicht in anderen Umgebungen bereitgestellt werden.
 >
->Wenn Sie als Campaign Standard-Anwender zu Campaign v8 wechseln, erfahren Sie mehr über diesen Wechsel in der [Dokumentation zur Web-Benutzeroberfläche von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
+>Benutzende von Campaign Standard, die auf Campaign v8 umsteigen, können in der [Dokumentation zur Web-Benutzeroberfläche von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"} mehr über diese Transition erfahren.
 
 ### Neue Funktionen {#new-8-7-1}
 
@@ -46,24 +46,24 @@ _2. Mai 2024_
 
 * **Dynamisches Reporting**: Wenn Sie von Campaign Standard migriert sind, können Sie auf das dynamische Reporting zugreifen, das vollständig anpassbare und in Echtzeit aktualisierte Berichte zum Messen der Wirkung Ihrer Marketing-Aktivitäten bietet. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Stadt und Alter sowie nach Daten von E-Mail-Kampagnen wie Öffnungen und Klicks ermöglicht. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=de){target="_blank"}
 
-### Aktualisierungen zur Kompatibilität {#comp-8-7-1}
+### Kompatibilitätsaktualisierungen {#comp-8-7-1}
 
-Die folgenden FDA-Connectoren wurden hinzugefügt. Mehr dazu erfahren Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
+Die folgenden FDA-Connectoren wurden hinzugefügt: Mehr dazu erfahren Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
 
-* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt.
+* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. 
 
-* Ein neuer Amazon Redshift FDA ODBC-Connector ist jetzt verfügbar. Es bietet verbesserte Konnektivität, einfachere Wartung und verbesserte Kompatibilität. Diese neue Version bietet die folgenden Verbesserungen:
+* Ein neuer Amazon Redshift FDA ODBC-Connector ist jetzt verfügbar. Er bietet verbesserte Konnektivität, einfachere Wartung und optimierte Kompatibilität. Diese neue Version bietet die folgenden Verbesserungen:
 
-   * Der neue Connector basiert auf der ODBC-Schnittstelle, die mit unseren neuesten FDA-Connectoren übereinstimmt. Dies sichert eine langfristige Unterstützung.
-   * Außerdem wird ein neuer Datenlademechanismus mit S3-Buckets eingeführt, wodurch die Leistung erheblich verbessert wird.
+   * Der neue Connector basiert auf der ODBC-Schnittstelle, die auf unsere neuesten FDA-Connectoren ausgerichtet ist. Dies sichert eine langfristige Unterstützung.
+   * Außerdem wird ein neuer Mechanismus zum Laden von Daten mit S3-Buckets eingeführt, wodurch die Leistung erheblich verbessert wird.
 
-  Der alte Connector kann weiterhin verwendet werden. Wenn Sie die neue Version ausprobieren möchten, wenden Sie sich an den Adobe-Support.
+  Der alte Connector kann weiterhin verwendet werden. Wenn Sie den neuen ausprobieren möchten, wenden Sie sich an den Adobe-Support.
 
 ### Migration zu OAuth-Server-zu-Server-Anmeldedaten {#change-8-7-1}
 
 Ab dieser Version sind ausgehende Campaign-Integrationen in Adobe-Lösungen und -Apps auf OAuth-Server-zu-Server-Anmeldedaten angewiesen, weil die Anmeldedatenoption „Service-Konto (JWT)“ eingestellt wurde. Adobe führt die Migration von JWT zu OAuth für Ihre ausgehenden Integrationen durch, z. B. die Integration von Campaign-Analytics oder die Integration von Experience Cloud Triggers.
 
-Wenn Sie eingehende Integrationen mit Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"} beschrieben. Bestehende Service-Konto(JWT)-Anmeldedaten funktionieren noch bis **30. Juni 2025**.
+Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"} beschrieben. Bestehende Service-Konto(JWT)-Anmeldedaten funktionieren noch bis **30. Juni 2025**.
 
 ### Allgemeine Verbesserungen {#improvements-8-7-1}
 
@@ -106,7 +106,7 @@ https://jira.corp.adobe.com/issues/?filter=585288&jql=fixVersion%20%3D%208.6.3%2
 -->
 
 
-## Updates vom Mai 2024 {#may-updates}
+## Aktualisierungen im Mai 2024 {#may-updates}
 
 Die folgende Änderung wurde im Mai veröffentlicht und steht jetzt Benutzenden von Campaign v8 zur Verfügung:
 
@@ -132,7 +132,7 @@ _14. Februar 2024_
 
   >[!AVAILABILITY]
   >
-  >Die Web-Benutzeroberfläche von Campaign steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Weitere Informationen zu [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+  >Die Campaign Web-Benutzeroberfläche steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Erfahren Sie mehr über das [Identitäts-Management-System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} von Adobe.
   >
 
 * Adobe Campaign v8 kann jetzt in **Adobe Experience Manager as a Cloud Service** integriert werden, wobei das Authoring ausschließlich über die Adobe Campaign Web-Benutzeroberfläche verfügbar ist. [Weitere Informationen](../connect/ac-aem.md)
@@ -148,7 +148,7 @@ _14. Februar 2024_
 
 * Bis Februar 2024 muss jedes Unternehmen, das mehr als 5.000 E-Mails über Google oder Yahoo! sendet, eine sogenannte DMARC-Authentifizierungstechnologie (Domain-based Message Authentication Reporting and Conformance) verwenden. Stellen Sie sicher, dass für alle Subdomains, die Sie mit Adobe Campaign verwenden, DMARC-Einträge eingerichtet sind. [Weitere Informationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=de){target="_blank"}
 
-* Ab dem 1. Juni 2024, verlangen Google und Yahoo! von Absenderinnen und Absendern die Einhaltung der Vorschrift, eine Ein-Klick-Abmeldung anzubieten. Adobe Campaign unterstützt nun diese Option. [Weitere Informationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=de#list-unsubscribe){target="_blank"}
+* Ab dem 1. Juni 2024, verlangen Google und Yahoo! von Absenderinnen und Absendern die Einhaltung der Vorschrift, eine Ein-Klick-Abmeldung anzubieten. Adobe Campaign unterstützt nun diese Option. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#list-unsubscribe){target="_blank"}
 
 
 ### Fehlerbehebungen {#fixes-8-6-1}

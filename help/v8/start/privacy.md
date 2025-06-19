@@ -7,9 +7,9 @@ level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '995'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe bietet Datenverantwortlichen Tools zum Erstellen und Verarbeiten von Daten
 
 Um Datenschutzanfragen in Campaign zu verwalten, müssen Sie zunächst [einen Namespace definieren](#namespaces). Anschließend können Sie Datenschutzanfragen erstellen und verwalten. Verwenden Sie zum Ausführen von Datenschutzanfragen die Integration **Adobe Privacy Service**. Die vom Privacy Service an alle Adobe Experience Cloud-Lösungen gesendeten Datenschutzanfragen werden von Campaign mithilfe eines speziellen Workflows automatisch verarbeitet. [Weitere Informationen](#create-privacy-request)
 
-Erfahren Sie mehr über **Recht auf Zugriff** und das **Recht auf Vergessenwerden** (Löschanfrage) in der Dokumentation zu [Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=de#right-access-forgotten){target="_blank"}.
+Mehr über das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** (Löschanfrage) erfahren Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=de#right-access-forgotten){target="_blank"}.
 
 
 >[!NOTE]
@@ -35,7 +35,7 @@ Bevor Sie eine Datenschutzanfrage stellen, müssen Sie **den zu verwendenden Nam
 
 >[!NOTE]
 >
->Weitere Informationen zu Identity-Namespaces finden Sie in der Dokumentation zu [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=de){target="_blank"}.
+>Weitere Informationen zu Identity-Namespaces finden Sie in der [Dokumentation zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=de){target="_blank"}.
 
 Derzeit unterstützt Adobe Campaign nicht den Import von Namespaces aus dem Identity-Namespace-Service von Experience Platform. Nachdem Sie im Identity-Namespace-Service einen Namespace erstellt haben, müssen Sie daher den entsprechenden Namespace in der Adobe Campaign-Benutzeroberfläche manuell erstellen. Gehen Sie dazu wie folgt vor:
 
@@ -47,9 +47,9 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 >For optimal performance, it is recommended to use out-of-the-box namespaces.
 -->
 
-1. Erstellen Sie einen Namespace im [Identity-Namespace-](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
+1. Erstellen Sie einen Namespace im [Identity-Namespace-Service](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
 
-1. Bei der [Auflistung der Identity](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"}Namespaces), die für Ihre Organisation verfügbar sind, erhalten Sie z. B. die folgenden Details zum Namespace:
+1. Bei der [Auflistung der Identity-Namespaces](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"}, die für Ihre Organisation verfügbar sind, erhalten Sie zum Beispiel die folgenden Details zum Namespace:
 
    ```
    {
@@ -96,7 +96,7 @@ Jetzt können Sie Datenschutzanfragen basierend auf Ihrem neuen Namespace erstel
 
 Durch die Integration von **[!DNL Adobe Experience Platform Privacy Service]** können Sie Datenschutzanfragen in einer Umgebung mit mehreren Lösungen über nur einen einzigen JSON-API-Aufruf automatisieren. Adobe Campaign verarbeitet die vom Privacy Service über einen speziellen Workflow übertragenen Anfragen automatisch.
 
-Weitere Informationen zum Erstellen von Datenschutzanfragen mittels Privacy Core Service finden Sie in der Dokumentation zum [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de){target="_blank"}.
+Weitere Informationen zum Erstellen von Datenschutzanfragen mithilfe des Privacy Core Service finden Sie in der Dokumentation zum [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de){target="_blank"}.
 
 Je nach der Anzahl der verwendeten Namespaces wird jeder **[!DNL Privacy Service]**-Vorgang in Adobe Campaign in mehrere Datenschutzanfragen untergeteilt, wobei eine Anfrage einem Namespace entspricht.
 
@@ -110,9 +110,9 @@ Der Dateiname setzt sich folgendermaßen zusammen: `<InstanceName>-<NamespaceId>
 
 >[!CAUTION]
 >
->Um eine Anfrage mit dem benutzerdefinierten Namespace-Typ zu senden, nutzen Sie die [JSON-](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=de#json){target="_blank"} und fügen Sie die namespaceId zur Anfrage hinzu. Alternativ können Sie den [API-Aufruf](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=de#access-delete){target="_blank"} für die Anfrage verwenden.
+>Um eine Anfrage mit dem benutzerdefinierten Namespace-Typ zu senden, nutzen Sie die [JSON-Methode](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=de#json){target="_blank"} und fügen Sie die namespaceId zur Anfrage hinzu. Alternativ können Sie für die Anfrage den [API-Aufruf](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=de#access-delete){target="_blank"} verwenden.
 >
->Verwenden Sie nur die [Datenschutz-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=de#request-builder){target="_blank"} um Anfragen mithilfe des standardmäßigen Namespace-Typs zu senden.
+>Verwenden Sie die [Datenschutz-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=de#request-builder){target="_blank"} nur, um Anfragen mithilfe des standardmäßigen Namespace-Typs einzureichen.
 
 ### Bei der Verarbeitung von Anfragen durchsuchte Tabellen {#list-of-tables}
 
@@ -157,6 +157,6 @@ Unten finden Sie die verschiedenen Status von Datenschutzanfragen in Adobe Campa
 
 * [Erste Schritte mit der Datenschutzverwaltung](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=de){target="_blank"}
 
-* [Verordnungen zur Datenschutzverwaltung](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=de#privacy-management-regulations){target="_blank"} (DSGVO, CCPA, PDPA und LGPD)
+* [Vorschriften zur Datenschutzverwaltung](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=de#privacy-management-regulations){target="_blank"} (DSGVO, CCPA, PDPA und LGPD)
 
-* [Opt-out aus dem Verkauf von personenbezogenen Daten](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html?lang=de){target="_blank"} (spezifisch für CCPA)
+* [Opt-out vom Verkauf personenbezogener Daten](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html?lang=de){target="_blank"} (speziell für CCPA)

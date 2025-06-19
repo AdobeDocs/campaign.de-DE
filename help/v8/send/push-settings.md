@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
 source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1836'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -26,18 +26,18 @@ Gehen Sie wie folgt vor, um Ihre App mit Adobe Experience Platform Mobile SDKs e
 
 1. Überprüfen Sie die [Voraussetzungen](#before-starting).
 1. Richten Sie eine [mobile Tag-Eigenschaft](#launch-property) in der Adobe Experience Platform-Datenerfassung ein.
-1. Rufen Sie die Adobe Experience Platform Mobile SDK wie [ beschrieben ab (auf dieser Seite](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
-1. (Optional) Aktivieren Sie die Protokollierung und Lebenszyklusmetriken, wie auf [ Seite beschrieben](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}.
-1. (Optional) Fügen Sie [Adobe Experience Platform Assurance zu Ihrer App hinzu](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} um Ihre Implementierung zu validieren. Erfahren Sie auf dieser Seite , wie Sie [ Adobe Experience Platform Assurance-Erweiterung ](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}.
+1. Rufen Sie das Adobe Experience Platform Mobile SDK ab, wie [auf dieser Seite](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"} beschrieben.
+1. (optional) Aktivieren Sie die Protokollierung und Lebenszyklusmetriken, wie [auf dieser Seite](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"} beschrieben.
+1. (optional) Fügen Sie [Adobe Experience Platform Assurance zu Ihrer App hinzu](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"}, um Ihre Implementierung zu validieren. [Auf dieser Seite](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} erfahren Sie, wie Sie die Adobe Experience Platform Assurance-Erweiterung implementieren.
 1. Konfigurieren Sie Ihre Mobile Services für iOS und Android in Adobe Campaign, wie [auf dieser Seite](#push-service) beschrieben.
 1. Installieren und konfigurieren Sie die [Adobe Campaign-Erweiterung](#configure-extension) in Ihrer Mobile-Eigenschaft.
-1. Folgen Sie der Dokumentation zu [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} um die Einrichtung in Ihrer App mit Adobe Experience Platform Mobile SDKs durchzuführen.
+1. Folgen Sie der [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"}, um das Adobe Experience Platform Mobile SDK in Ihrer App einzurichten.
 
 ## Voraussetzungen {#before-starting}
 
 ### Einrichten von Berechtigungen {#setup-permissions}
 
-Bevor Sie eine Mobile App erstellen, müssen Sie zunächst sicherstellen, dass Sie in Adobe Experience Platform über die richtigen Benutzerberechtigungen für Tags verfügen, oder diese Berechtigungen zuweisen. Benutzerberechtigungen für Tags in Adobe Experience Platform werden Benutzerinnen und Benutzern über Adobe Admin Console zugewiesen. Weitere Informationen finden Sie in [Tags-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de){target="_blank"}.
+Bevor Sie eine Mobile App erstellen, müssen Sie zunächst sicherstellen, dass Sie in Adobe Experience Platform über die richtigen Benutzerberechtigungen für Tags verfügen, oder diese Berechtigungen zuweisen. Benutzerberechtigungen für Tags in Adobe Experience Platform werden Benutzerinnen und Benutzern über Adobe Admin Console zugewiesen. Weitere Informationen finden Sie in der [Tags-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=de){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um Rechte für **Eigenschaft** und **Firma** zuzuweisen
 
 1. Greifen Sie auf die **[!DNL Admin Console]** zu.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Produkte]** die Karte **[!UICONTROL Datenerfassung in Adobe Experience Platform]** aus.
-1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie mit der Schaltfläche **[!UICONTROL Neues Profil]** ein neues. Wie Sie ein neues **[!UICONTROL Neues Profil“ erstellen]** erfahren Sie in der [Dokumentation zur Admin Console](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=de#ui){target="_blank"}.
+1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie mit der Schaltfläche **[!UICONTROL Neues Profil]** ein neues. Wie Sie ein **[!UICONTROL neues Profil]** erstellen, erfahren Sie in der [Dokumentation zur Admin Console](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=de#ui){target="_blank"}.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Berechtigungen]** die Option **[!UICONTROL Eigenschaftsrechte]** aus.
 1. Klicken Sie auf **[!UICONTROL Alle hinzufügen]**. Dadurch wird Ihrem Produktprofil die folgende Berechtigung hinzugefügt:
    * **[!UICONTROL Genehmigen]**
@@ -79,7 +79,7 @@ Um dieses **[!UICONTROL Produktprofil]** für Benutzerinnen und Benutzer zuzuwei
 
    >[!NOTE]
    >
-   >Wenn der Benutzer vorher noch nicht in der Admin Console erstellt wurde, lesen Sie den Abschnitt [Dokumentation zum Hinzufügen von Benutzern](https://helpx.adobe.com/de/enterprise/using/manage-users-individually.html#add-users){target="_blank"}.
+   >Wenn die Benutzerin bzw. der Benutzer nicht zuvor in der Admin Console erstellt wurde, lesen Sie die [Dokumentation zum Hinzufügen von Benutzerinnen und Benutzern](https://helpx.adobe.com/de/enterprise/using/manage-users-individually.html#add-users){target="_blank"}.
 
 ### Konfigurieren der App {#configure-app}
 
@@ -87,8 +87,8 @@ Die technische Einrichtung erfordert eine enge Zusammenarbeit zwischen der Perso
 
 Folgen Sie den Implementierungsschritten, die in den folgenden Links beschrieben werden:
 
-* Für **Apple iOS**: Erfahren Sie in der [Apple-Dokumentation, wie Sie Ihre App beim APNs registrieren](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns){target="_blank"}
-* Für **Google Android**: Erfahren Sie in der [Google-Dokumentation, wie Sie eine Firebase Cloud Messaging-Client-App auf Android einrichten](https://firebase.google.com/docs/cloud-messaging/android/client){target="_blank"}
+* Für **Apple iOS**: In der [Apple-Dokumentation](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns){target="_blank"} erfahren Sie, wie Sie Ihre App mit APNs registrieren.
+* Für **Google Android**: In der [Google-Dokumentation](https://firebase.google.com/docs/cloud-messaging/android/client){target="_blank"} erfahren Sie, wie Sie eine Firebase Cloud Messaging-Client-App unter Android einrichten.
 
 <!--
 ## Add your app push credentials in Adobe Experience Platform Data Collection {#push-credentials}
@@ -131,7 +131,7 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 ## Einrichten einer Mobile-Tag-Eigenschaft in der Datenerfassung in Adobe Experience Platform {#launch-property}
 
-Durch das Einrichten einer Mobile-Eigenschaft können Entwicklerinnen und Entwickler der Mobile App oder Marketing-Fachleute die Mobile SDKs konfigurieren. Normalerweise erstellen Sie für jede Mobile App, die Sie verwalten möchten, eine Mobile-Eigenschaft. In der Dokumentation zu [Adobe Experience Platform Mobile SDK erfahren Sie, wie Sie eine Mobile-Eigenschaft erstellen und ](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+Durch das Einrichten einer Mobile-Eigenschaft können Entwicklerinnen und Entwickler der Mobile App oder Marketing-Fachleute die Mobile SDKs konfigurieren. Normalerweise erstellen Sie für jede Mobile App, die Sie verwalten möchten, eine Mobile-Eigenschaft. In der [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"} erfahren Sie, wie Sie eine Mobile-Eigenschaft erstellen und konfigurieren.
 <!--
 To get the SDKs needed for push notification to work you will need the following SDK extensions, for both Android and iOS:
 
@@ -141,7 +141,7 @@ To get the SDKs needed for push notification to work you will need the following
 * **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
 -->
 
-Weitere Informationen zu [!DNL Adobe Experience Platform Data Collection]-Tags finden Sie in der [Dokumentation zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de){target="_blank"}.
+Weitere Informationen über [!DNL Adobe Experience Platform Data Collection]-Tags finden Sie in der [Dokumentation zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de){target="_blank"}.
 
 Öffnen Sie nach der Erstellung die neue Tag-Eigenschaft und erstellen Sie eine Bibliothek. Gehen Sie dazu wie folgt vor:
 
@@ -197,7 +197,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
    Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
-   Weitere Informationen finden Sie in [Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
 
 
    >[!NOTE]
@@ -235,7 +235,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 
    Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
-   Weitere Informationen finden Sie in [Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
 
 
    >[!NOTE]
@@ -245,7 +245,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 
 1. Wählen Sie im Feld **[!UICONTROL Anwendungssymbol]** das Symbol aus, um die Mobile App in Ihrem Dienst zu personalisieren.
 1. Wählen Sie **HTTP v1** in der Dropdown-Liste **[!UICONTROL API-Version]** aus.
-1. Klicken Sie auf **[!UICONTROL Projekt-JSON-Datei zum Extrahieren der Projektdetails laden...]**, um Ihre JSON-Schlüsseldatei direkt zu laden. Weitere Informationen zum Extrahieren der JSON-Datei finden Sie in der [Dokumentation zu Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+1. Klicken Sie auf **[!UICONTROL Projekt-JSON-Datei zum Extrahieren der Projektdetails laden...]**, um Ihre JSON-Schlüsseldatei direkt zu laden. Weitere Informationen dazu, wie Sie die JSON-Datei extrahieren, finden Sie in der [Dokumentation zu Google Firebase](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
    Sie können auch die folgenden Details manuell eingeben:
    * **[!UICONTROL Projektkennung]**
@@ -256,7 +256,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 
    >[!CAUTION]
    >
-   >Mit der Schaltfläche **[!UICONTROL Verbindung testen]** wird nicht geprüft, ob der Mid-Sourcing-Server (MID) Zugriff auf den FCM-Server hat.
+   >Mit der Schaltfläche **[!UICONTROL Verbindung testen]** wird nicht geprüft, ob der Mid-Sourcing(MID)-Server Zugriff auf den FCM-Server hat.
 
 1. Bei Bedarf können Sie die Inhalte von Push-Nachrichten mit bestimmten **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar und Teil der an das mobile Gerät gesendeten Nachrichten-Payload.
 
@@ -281,6 +281,6 @@ Diese Erweiterung, die sowohl für Campaign Classic v7 als auch für Campaign v8
 1. Öffnen Sie die zuvor erstellte Tag-Eigenschaft.
 1. Navigieren Sie in der linken Navigation zu **Erweiterungen** und öffnen Sie die Registerkarte **Katalog**. Verwenden Sie das Suchfeld, um die **Adobe Campaign Classic**-Erweiterung zu finden.
 1. Klicken Sie auf der Karte „Campaign Classic“ auf die Schaltfläche **Installieren**.
-1. Geben Sie die Einstellungen ein, wie in der Dokumentation zu [Adobe Experience Platform Mobile SDK beschrieben](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/){target="_blank"}.
+1. Geben Sie Einstellungen ein, wie in der [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/){target="_blank"} beschrieben.
 
-Sie können jetzt Campaign zu Ihrer App hinzufügen, wie in der Dokumentation zu [Adobe Experience Platform Mobile SDK beschrieben](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
+Sie können jetzt Campaign zu Ihrer App hinzufügen, wie in der [Dokumentation zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"} beschrieben.

@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1232'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Als Campaign-Administrator können Sie Campaign SDKs über die [Software-Verteil
 
 >[!NOTE]
 >
->Sie können das Adobe Experience Platform Mobile SDK auch verwenden, indem Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren. [Weitere Informationen finden Sie in der Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Sie können das Adobe Experience Platform Mobile SDK auch verwenden, indem Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren. [Weitere Informationen finden Sie in der Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 >
 
 ## Integrationsparameter deklarieren {#declaring-integration-settings}
@@ -498,7 +498,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
    Bei Benachrichtigungsinhalten muss der Tracking-Empfang auf zwei Ebenen konfiguriert werden:
 
    * `onMessageReceived` (Anwendung nicht im Hintergrund): Die Implementierung wurde im vorherigen Abschnitt
-   * `onCreate` der Startaktivität (bzw. der Zielaktivität, wenn `click_action`Funktion verwendet wird) (Anwendung nicht im Hintergrund).
+   * `onCreate` der Startaktivität vorgenommen (oder der Zielaktivität, wenn die Funktion `click_action` zum Einsatz kommt). (Anwendung nicht im Hintergrund). 
 
    Dies muss zur selben Zeit wie das Öffnungs-/Klicktracking erfolgen.
 

@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Senden von E-Mails auf japanischen Mobiltelefonen mit Adobe Campaign
+title: Versenden von E-Mails an japanische Mobiltelefone mit Adobe Campaign
 description: Erfahren Sie, wie Sie E-Mails konfigurieren, entwerfen und versenden, die auf einem japanischen Mobilgerät gelesen werden sollen
 feature: Email, Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 02cca21f-b1ac-4ac2-9761-015f6c7f5567
 source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Damit ein Empfänger, der eines dieser Formate verwendet, Nachrichten korrekt an
 
 Wenn Sie hingegen im Feld **[!UICONTROL E-Mail-Format]** eine der Optionen **[!UICONTROL Unbekannt]**, **[!UICONTROL HTML]** oder **[!UICONTROL Text]** auswählen, erkennt Adobe Campaign bei Versand der E-Mail das japanische Format, das zu verwenden ist, um eine korrekte Anzeige zu gewährleisten.
 
-Dieses automatische Erkennungssystem beruht auf der in den E-Mail-Regeln **[!UICONTROL E-Mail-Formatverwaltung]** gespeicherten Domainliste. Weiterführende Informationen zur Verwaltung von E-Mail-Formaten finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=de#managing-email-formats).
+Dieses automatische Erkennungssystem beruht auf der in den E-Mail-Regeln **[!UICONTROL E-Mail-Formatverwaltung]** gespeicherten Domainliste. Weitere Informationen zum Verwalten von E-Mail-Formaten finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability#managing-email-formats).
 
 ## Einschränkungen und Empfehlungen {#limitations-and-recommendations}
 

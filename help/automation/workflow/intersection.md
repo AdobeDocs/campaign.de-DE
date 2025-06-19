@@ -7,7 +7,7 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 12777107-5ccc-4f19-9dcd-8f6cade3ee98
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Dabei werden nur die in jeder der eingehenden Aktivitäten enthaltenen Populatio
 
 Weitere Informationen zur Konfiguration und Verwendung der Schnittmengenaktivität finden Sie unter [Gemeinsame Daten aus Populationen extrahieren (Schnittmenge)](targeting-workflows.md#extracting-joint-data--intersection-).
 
-Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie auch die nicht in der Schnittmenge enthaltene Population verwenden möchten. Das Komplement enthält die Vereinigung der Ergebnisse aller eingehenden Aktivitäten abzüglich der Schnittmenge. Die Aufspaltungsaktivität weist somit, wie unten abgebildet, eine zusätzliche Transition auf:
+Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie auch die nicht in der Schnittmenge enthaltene Population verwenden möchten. Das Komplement enthält die Vereinigung der Ergebnisse aller eingehenden Aktivitäten abzüglich der Schnittmenge. Die Aktivität weist somit, wie unten abgebildet, eine zusätzliche ausgehende Transition auf:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 

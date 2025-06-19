@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1206'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Im oberen Bereich des Fensters zur Konfiguration dieser Aktivität wird das Date
 
 >[!CAUTION]
 >
->Es werden nur „flache“ Strukturdateien unterstützt (z. B. CSV, TXT usw.). Die Verwendung des XML-Formats wird nicht empfohlen. Mit der Client-Konsole können Sie Dateien mit einer maximalen Größe von 150 MB laden. In der -Web-Benutzeroberfläche ist das Laden von Dateien auf 50 MB beschränkt. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=de){target="_blank"}
+>Unterstützt werden ausschließlich Dateiformate mit einfach strukturierten Daten (z. B. CSV, TXT etc.). Die Verwendung des XML-Formats wird nicht empfohlen. Mit der Client-Konsole können Sie Dateien mit einer Größe von bis zu 150 MB laden. In der Web-Benutzeroberfläche ist die Aktivität „Datei laden“ auf 50 MB beschränkt. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=de){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 

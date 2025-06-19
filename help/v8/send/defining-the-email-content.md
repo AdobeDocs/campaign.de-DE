@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Definieren des E-Mail-Inhalts in Adobe Campaign
+title: Definieren des E-Mail-Inhalts in Adobe Campaign
 description: Hier erfahren Sie, wie Sie mit Adobe Campaign den E-Mail-Inhalt definieren können.
 feature: Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: c3e107b5-6d2e-408f-9c7d-a81a4756b4ef
 source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2031'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Klicken Sie auf **[!UICONTROL Von]**, um den Namen und die Adresse des Absenders
 
 In dem sich öffnenden Fenster werden alle im E-Mail-Header angezeigten Informationen erfasst. Diese können vom Benutzer individuell gestaltet werden. Nutzen Sie hierfür die Personalisierungsfelder, die über die Schaltflächen rechts der Eingabefelder eingefügt werden.
 
-Wie Sie Personalisierungsfelder einfügen und verwenden können, erfahren Sie in [diesem Abschnitt](personalize.md).
+Die Verwendung von Personalisierungsfeldern wird in [diesem Abschnitt](personalize.md) beschrieben.
 
 >[!NOTE]
 >
 >* Die Absenderadresse wird standardmäßig auch als Antwortadresse verwendet.
->* Die Kopfzeilenparameter dürfen nicht leer sein. Standardmäßig enthalten sie die Werte, die beim Konfigurieren des Bereitstellungsassistenten eingegeben werden.
+>* Die Header-Parameter dürfen nicht leer sein. Standardmäßig enthalten sie die Werte, die beim Konfigurieren des Bereitstellungsassistenten eingegeben werden. 
 >* Die Angabe der Absenderadresse ist für den E-Mail-Versand zwingend erforderlich (gemäß RFC-Standard).
 >* Adobe Campaign führt eine Syntax-Prüfung der angegebenen E-Mail-Adressen durch.
 
@@ -52,7 +52,7 @@ In oben stehender Nachricht wurde beispielsweise der Betreff der Nachricht für 
 
 >[!NOTE]
 >
->Die Verwendung von Personalisierungsfeldern wird in ([ Abschnitt) ](personalize.md).
+>Die Verwendung von Personalisierungsfeldern wird in [diesem Abschnitt](personalize.md) beschrieben.
 
 Mit dem Popup-Fenster **[!UICONTROL Emoticon einfügen]** können Sie auch Emoticons zu Ihrer Betreffzeile hinzufügen.
 
@@ -66,9 +66,9 @@ Der eigentliche Nachrichteninhalt wird im unteren Bereich des Versandkonfigurati
 
 Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend im HTML- oder Textformat versandt. Um die korrekte Anzeige in allen E-Mail-Systemen zu gewährleisten, wird empfohlen, jeweils sowohl HTML- als auch Textinhalte zu erstellen. Weitere Informationen hierzu finden Sie unter [Wahl des Nachrichtenformats](email-parameters.md#selecting-message-formats).
 
-* Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quellcode direkt in den Tab **[!UICONTROL Quelle]** einzufügen.
+* Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quell-Code direkt in die Unterregisterkarte **[!UICONTROL Quelle]** einzufügen.
 
-  Wenn Sie den Digital Content Editor (DCE) verwenden, lesen Sie die [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html?lang=de#step-3---selecting-a-content).
+  Wenn Sie den Digital Content Editor (DCE) verwenden, lesen Sie die [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -90,7 +90,7 @@ Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend 
 
   >[!NOTE]
   >
-  >Die Verwendung von Personalisierungsfeldern wird in ([ Abschnitt) ](personalize.md).
+  >Die Verwendung von Personalisierungsfeldern wird in [diesem Abschnitt](personalize.md) beschrieben.
 
   In den Registerkarten am unteren Seitenrand können Sie den HTML-Code der zu erstellenden Seite anzeigen und das Rendering der Nachricht mit ihrer Personalisierung anzeigen. Klicken Sie hierfür auf die Registerkarte **[!UICONTROL Vorschau]** und wählen Sie über die Symbolleisten-Schaltfläche **[!UICONTROL Personalisierung testen...]** eine Empfängerin bzw. einen Empfänger aus. Sie können eine Empfängerin bzw. einen Empfänger aus der/den definierten Zielgruppe(n) auswählen oder eine andere Empfängerin bzw. einen anderen Empfänger auswählen.
 
@@ -121,13 +121,13 @@ Sie können den Inhalt des Versands mithilfe der Content-Management-Formulare di
 
 ![](assets/s_ncs_content_in_delivery.png)
 
-Ein zusätzlicher Tab erlaubt nun die Erstellung eines Inhalts, der automatisch den Regeln des Content Managements entsprechend formatiert und integriert wird.
+Eine zusätzliche Registerkarte erlaubt nun die Erstellung von Inhalten, die automatisch entsprechend den Regeln des Content-Managements formatiert und integriert werden.
 
 ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
 >[!NOTE]
 >
->Weitere Informationen zur Inhaltsverwaltung in Adobe Campaign finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/about-content-management.html?lang=de).
+>Weiterführende Informationen zum Content-Management in Adobe Campaign finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/about-content-management.html?lang=de).
 
 ## Einfügen von Emoticons {#inserting-emoticons}
 
@@ -140,7 +140,7 @@ Sie können Emoticons in Ihren E-Mail-Inhalt einfügen.
 
 1. Klicken Sie danach auf die Schaltfläche **[!UICONTROL Schließen]**.
 
-Informationen zum Anpassen der Emoticon-Liste finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list.html?lang=de).
+Informationen zum Anpassen der Emoticon-Liste finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list).
 
 ## Hinzufügen von Bildern {#adding-images}
 
@@ -151,7 +151,7 @@ E-Mail-Sendungen im HTML-Format können Bilder enthalten. Sie können eine HTML-
 
 Um Performance-Probleme zu vermeiden, dürfen die in den E-Mails enthaltenen Bilder nicht größer als 100 KB sein. Diese standardmäßig festgelegte Beschränkung kann in der Option `NmsDelivery_MaxDownloadedImageSize` geändert werden. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
 
-Weitere Informationen zur Liste der Kampagnenoptionen finden Sie in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=de#delivery).
+Weitere Informationen zur Liste der Campaign-Optionen finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options#delivery):
 
 ### Bildtypen {#img-types}
 
@@ -162,7 +162,7 @@ Diese Bilder können:
 
   Auf öffentliche Ressourcen kann im Knoten **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Navigationsbaums zugegriffen werden. Sie sind in einer Bibliothek zusammengefasst und können in E-Mails, Kampagnen, Aufgaben und dem Content Management verwendet werden.
 
-* Ein für Adobe Experience Cloud freigegebenes Asset. Weitere Informationen finden Sie in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=de).
+* Ein für Adobe Experience Cloud freigegebenes Asset. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud).
 
 ### Einfügen und Verwalten von Bildern {#manage-images}
 

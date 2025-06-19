@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Druckregeln konfigurieren
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3265'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,13 +35,13 @@ Andernfalls ist die Empfängerin bzw. der Empfänger **[!UICONTROL Ausgeschlosse
 
 ## Erstellen einer Druckregel {#create-a-pressure-rule}
 
-Um eine Schlichtung zwischen Adobe Campaign-Kampagnen einzurichten, müssen zunächst Kampagnentypologien erstellt und die damit verbundenen Typologieregeln definiert werden.**&#x200B;**
+Um eine Schlichtung zwischen Adobe Campaign-Kampagnen einzurichten, müssen zunächst Kampagnentypologien erstellt und die damit verbundenen Typologieregeln definiert werden.****
 
 >[!NOTE]
 >
 >Damit eine Druckregel korrekt angewendet werden kann, muss die Zielgruppendimension der Regel mit der Zielgruppendimension des Versand-Mappings übereinstimmen.
 
-Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfigurieren, durchlaufen Sie folgende Etappen:
+Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfigurieren, gehen Sie wie folgt vor:
 
 1. Klicken Sie in der Liste der Kampagnentypologieregeln auf das Symbol **[!UICONTROL Neu]** oberhalb der Liste.
 

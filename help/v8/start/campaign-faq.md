@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    [Auf dieser Seite](campaign-ui.md#ac-web-ui) erfahren Sie, wie Sie eine Verbindung mit Adobe Experience Cloud herstellen und auf die Benutzeroberfläche von Adobe Campaign Web zugreifen.
 
-   Weitere Informationen finden Sie in der Dokumentation zur Web-Benutzeroberfläche von [Adobe Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+   Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 1. **Kann Campaign v8 in einer On-Premise- oder Hybrid-Umgebung installiert werden?**
 
@@ -46,9 +46,9 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Die Zustellbarkeit von E-Mails, ein wichtiger Faktor für den Erfolg jedes Marketing-Programms, unterliegt ständig wechselnden Kriterien und Regeln. Eine effektive Navigation in dieser digitalen Welt erfordert eine regelmäßige Abstimmung Ihrer E-Mail-Strategie unter Berücksichtigung der wichtigsten Trends mit Blick auf die Zustellbarkeit, um Ihre Zielgruppen optimal zu erreichen.
 
-   Lesen Sie dieses Handbuch, um mehr über [ Best Practices für den Versand zu ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de){target="_blank"}
+   Lesen Sie dieses Handbuch, um [Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de){target="_blank"} kennenzulernen.
 
-   Wie Sie eine hohe Zustellbarkeit in Campaign gewährleisten, erfahren [ in diesem Abschnitt ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de){target="_blank"}
+   In [diesem Handbuch](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de){target="_blank"} erfahren Sie, wie Sie in Campaign eine hohe Zustellbarkeit gewährleisten.
 
 1. **Wie weiß ich, dass mein Versand fehlerfrei durchgeführt wird?**
 
@@ -84,13 +84,13 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download Center abrufen.
 
-   Greifen Sie als Admin-Benutzerin bzw. -Benutzer auf die Adobe-[Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} zu, um Adobe Campaign herunterzuladen.
+   Greifen Sie als Admin-Benutzerin bzw. -Benutzer auf die [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} von Adobe zu, um Adobe Campaign herunterzuladen.
 
    [Auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"} finden Sie weitere Informationen zum Verteilungs-Center.
 
 1. **Kann ich mich mit Campaign-Experten in Verbindung setzen?**
 
-   Der Campaign-Community beitreten: Suchen Sie nach Antworten in bereits gestellten Fragen oder fragen Sie die Fachleute. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"}
+   Der Campaign-Community beitreten: Suchen Sie nach Antworten in bereits gestellten Fragen oder fragen Sie die Fachleute. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Wie kann ich ein Problem protokollieren?**

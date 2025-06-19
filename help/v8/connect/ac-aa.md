@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: e465b846b3144a2138bb912b4baa09238f8c5b4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1552'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Gehen Sie wie folgt vor, um Ihre **[!UICONTROL Report Suite]** in [!DNL Adobe An
 
 1. Klicken Sie auf der Seite **[!UICONTROL Report Suite-Manager]** auf **[!UICONTROL Neu erstellen]** und anschließend auf **[!UICONTROL Report Suite]**.
 
-   Eine detaillierte Anleitung zur Erstellung von **[!UICONTROL Report]**&quot; finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=de#prerequisites){target="_blank"}.
+   Eine detaillierte Anleitung zur Erstellung von **[!UICONTROL Report Suites]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=de#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -85,7 +85,7 @@ Im Anschluss an die Erstellung Ihrer **[!UICONTROL Report Suite]** müssen Sie *
 
 1. Klicken Sie auf **[!UICONTROL Neu hinzufügen]**, um die für die Messung der Effektivität der E-Mail-Kampagne erforderlichen Kennungen zu erstellen, also den internen Kampagnennamen (cid) und die ID der iNmsBroadlog-Tabelle (bid).
 
-   Informationen zur Bearbeitung von **[!UICONTROL Konversionsvariablen]** finden Sie in dieser [Adobe Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=de#admin-tools){target="_blank"}.
+   Weiterführende Informationen zur Bearbeitung von **[!UICONTROL Konversionsvariablen]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=de#admin-tools){target="_blank"}.
 
    ![](assets/analytics_connnector_6.png)
 
@@ -146,7 +146,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
    >[!NOTE]
    >
-   >Die Felder Kampagnen-ID und Broadload-ID werden über JavaScript auf der Landingpage oder durch Verarbeitungsregeln erfasst. [Weitere Informationen zu Verarbeitungsregeln](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Die Felder Kampagnenkennung und Broadlog-ID werden über JavaScript auf der Landingpage oder durch Verarbeitungsregeln erfasst. [Weitere Informationen zu Verarbeitungsregeln](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 

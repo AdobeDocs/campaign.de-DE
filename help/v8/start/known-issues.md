@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
 source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -84,9 +84,9 @@ Der Prozess endet nie.
 
 Dies kann umgangen werden, indem eine ältere Client-Konsole verwendet wird. Damit können Sie die Datei auf den Server hochladen.
 
-Als Campaign-Administrator können Sie die Client-Konsole für Campaign v8.3.1 in der [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"} herunterladen.
+Als Campaign-Admin können Sie die Client-Konsole für Campaign v8.3.1 in der [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=4){target="_blank"} herunterladen.
 
-Erfahren Sie auf dieser Seite , wie Sie [ Adobe Software Distribution ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
+Auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"} erfahren Sie, wie Sie auf die Adobe-Software-Verteilung zugreifen können.
 
 Auf [dieser Seite](connect.md) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 

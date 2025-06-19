@@ -7,9 +7,9 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1610'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -182,7 +182,7 @@ Weiterführende Informationen zu Testversand-Empfangenden und zum Testversand fi
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447008?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 

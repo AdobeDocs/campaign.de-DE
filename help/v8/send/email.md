@@ -7,9 +7,9 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Mit Adobe Campaign können Sie E-Mail-Sendungen erstellen, um personalisierte E-
 
 >[!NOTE]
 >
->Um fesselnde und individuell zugeschnittene E-Mails zu erstellen, gehen Sie zur [Web-Benutzeroberfläche](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign verfügt über die E-Mail-Designer, eine intuitive Drag-and-Drop-Oberfläche, über die Sie alle Inhalte für jede E-Mail entwerfen und verfeinern können.
+>Navigieren Sie zum Erstellen fesselnder und individuell zugeschnittener E-Mails zur [Web-Benutzeroberfläche](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign verfügt über den E-Mail-Designer, eine intuitive Drag-and-Drop-Oberfläche, mit der Sie alle Inhalte für jede E-Mail entwerfen und verfeinern können.
 
 
 Auf [dieser Seite](../start/create-message.md) erfahren Sie mehr über die wichtigsten Schritte zum Erstellen und Konfigurieren eines Versands.
@@ -91,11 +91,11 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
 Ihr erster E-Mail-Versand ist fertig. Definieren Sie nun die Zielgruppe, validieren Sie den Versand und führen Sie ihn aus.
 
-In diesem Anwendungsfall erfahren Sie, wie Sie einen Workflow zum Importieren [ E-Mail-](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"} erstellen.
+In diesem [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"} erfahren Sie, wie Sie einen Workflow zum Importieren von E-Mail-Inhalten erstellen.
 
 >[!MORELIKETHIS]
 >
->* [Versand erstellen](../start/create-message.md)
+>* [Erstellen eines Versands](../start/create-message.md)
 >* [Erstellen und Verwenden von E-Mail-Vorlagen](create-templates.md)
 >* [Auswählen der Zielgruppe für Ihre E-Mail](../audiences/gs-audiences.md)
 >* [Validieren eines Versands und Durchführen von Testsendungen](preview-and-proof.md)

@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
 source-git-commit: 9d5a2ca1e9858a727377b8afa6bdd7e3761c1b56
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1080'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Sie können über die Client-Konsole oder die Web-Benutzeroberfläche auf Adobe 
 
 >[!CAUTION]
 >
->Diese Dokumentation konzentriert sich auf die Verwendung der Campaign-Client-Konsole. Wenn Sie die Web-Benutzeroberfläche von Campaign verwenden, lesen Sie [diese Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}.
+>Diese Dokumentation konzentriert sich auf die Verwendung der Campaign-Client-Konsole. Weitere Informationen zur Verwendung der Campaign Web-Benutzeroberfläche finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}.
 
 * **Client-Konsole**: Die Client-Konsole ist eine native Anwendung, die über Standard-Internet-Protokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert eine minimale Bandbreite, da sie auf einem lokalen Cache beruht. Die Campaign-Client-Konsole, die für eine einfache Bereitstellung entwickelt wurde, kann über einen Internet-Browser bereitgestellt werden sowie automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt. [Weitere Informationen](#ui-access)
 
@@ -28,7 +28,7 @@ Sie können über die Client-Konsole oder die Web-Benutzeroberfläche auf Adobe 
 
   >[!AVAILABILITY]
   >
-  >Die Web-Benutzeroberfläche von Campaign steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Weitere Informationen zu [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+  >Die Campaign Web-Benutzeroberfläche steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Erfahren Sie mehr über das [Identitäts-Management-System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} von Adobe.
   >
 
 * **Web-Zugriff**: Mit den Web-basierten Adobe Campaign-Zugriffsfunktionen können Sie über eine HTML-Benutzeroberfläche mit einem Webbrowser auf eine Teilmenge von Campaign-Funktionen zugreifen. Verwenden Sie diese Web-Benutzeroberfläche, um auf Berichte zuzugreifen, Nachrichten zu steuern und zu validieren, auf Monitoring-Dashboards zuzugreifen und vieles mehr. Weitere Informationen zum Web-basierten Zugriff auf Campaign finden Sie [in diesem Abschnitt](../start/connect.md#web-access).
@@ -114,12 +114,12 @@ Als Benutzerin oder Benutzer der Campaign v8-Client-Konsole haben Sie ab v8.6.1 
 
 >[!AVAILABILITY]
 >
->Die Web-Benutzeroberfläche von Campaign steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Weitere Informationen zu [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+>Die Campaign Web-Benutzeroberfläche steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Erfahren Sie mehr über das [Identitäts-Management-System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} von Adobe.
 >
 
-Weitere Informationen zur neuen Web-Benutzeroberfläche von Campaign finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}. Sie können auch die entsprechende Seite [Häufig gestellte Fragen](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/faq){target="_blank"} in der Dokumentation zur Benutzeroberfläche von Campaign Web besuchen.
+Weitere Informationen über die neue Campaign Web-Benutzeroberfläche finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}. Sie können auch die entsprechende Seite [Häufig gestellte Fragen](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/faq){target="_blank"} in der Dokumentation zur Campaign Web-Benutzeroberfläche besuchen.
 
-Zusätzliche und erweiterte Funktionen, Konfigurationen und Einstellungen sind nur in der Client-Konsole verfügbar. Erfahren Sie mehr über die Funktionen, die in beiden Benutzeroberflächen verfügbar sind [in der Dokumentation zur Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=de){target="_blank"}.
+Zusätzliche und erweiterte Funktionen, Konfigurationen und Einstellungen sind nur in der Client-Konsole verfügbar. Weitere Informationen über die verfügbaren Funktionen in beiden Benutzeroberflächen finden Sie [in der Dokumentation der Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=de){target="_blank"}.
 
 
 ## Unterstützte Sprachen {#languages}
@@ -139,7 +139,7 @@ Die unterstützten Sprachen hängen von der Benutzeroberfläche ab.
   >
   >Die Sprache wird während der Installation ausgewählt und kann danach nicht mehr geändert werden.
 
-* Die von der Campaign Web-Benutzeroberfläche unterstützten Sprachen [ Sie auf dieser Seite ](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
+* Weitere Informationen zu den unterstützten Sprachen für die Campaign Web-Benutzeroberfläche finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
 
 
 Die Sprachauswahl beeinflusst Datums- und Uhrzeitformate.

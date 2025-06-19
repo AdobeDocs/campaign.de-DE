@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
 source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '713'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Im Abschnitt **[!UICONTROL Dokument(e)]** des Kampagnen-Dashboards werden alle d
 
 ## Verwenden von Versandentwürfen {#delivery-outlines}
 
-Ein Versandentwurf ist ein strukturierter Satz von Elementen (Dokumente, Geschäfte, Werbegutscheine usw.), die vom Unternehmen und für eine bestimmte Kampagne erstellt werden. Er wird im Zusammenhang mit Briefpost-Sendungen verwendet.
+Ein Versandentwurf ist ein strukturierter Satz von Elementen (Dokumente, Gutscheine usw.), die für eine bestimmte Kampagne von der Firma erstellt wurden. Er wird im Zusammenhang mit Briefpost-Sendungen verwendet.
 
 Diese Elemente sind in Versandentwürfen gruppiert und jeder Versandentwurf ist mit einem Versand verbunden. Auf diesen Versand wird in der an den **Dienstleister** gesendeten Extraktionsdatei verwiesen, damit diese Elemente an den Versand angehängt werden. Sie können beispielsweise einen Versandentwurf erstellen, der sich auf eine Unternehmenseinheit und die von ihr verwendeten Marketing-Prospekte bezieht.
 

@@ -7,9 +7,9 @@ level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4360'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,11 @@ Mit Adobe Campaign können Sie Daten aus einer oder mehreren Dateien im Text-, C
 
 Mit dem Import-Assistenten können Sie einen Import konfigurieren, seine Optionen definieren (z. B. Formatierung) und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Imports (einfach oder mehrfach) und den Rechten der Benutzerin bzw. des Benutzers abhängt.
 
-Der Importassistent wird nach dem Erstellen eines neuen Importvorgangs angezeigt.
+Der Import-Assistent wird nach der Erstellung eines neuen Importauftrags angezeigt.
 
 >[!NOTE]
 >
->Bei Verwendung eines IIS-Web-Servers ist u. U. eine zusätzliche Konfiguration erforderlich, um das Hochladen großer Dateien (> 28 MB) zu ermöglichen.
+>Bei Verwendung eines IIS-Web-Servers ist möglicherweise eine zusätzliche Konfiguration erforderlich, um das Hochladen großer Dateien (mehr als 28 MB) zu ermöglichen.
 
 #### Quelldatei {#source-file}
 
@@ -104,7 +104,7 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
    * **[!UICONTROL Auflistungen nicht aktualisieren]**
 
-     Wählen Sie diese Option aus, um zu vermeiden, dass die Liste der Aufzählungswerte in der Datenbank erweitert wird.
+     Aktivieren Sie diese Option, wenn die Liste der Auflistungswerte in der Datenbank nicht ergänzt werden soll.
 
 * Im Tab **[!UICONTROL Variablen]**
 
@@ -331,7 +331,7 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Sie können eine neue Liste für diese Empfänger erstellen, indem Sie auf **[!UICONTROL Link auswählen]** und dann auf **[!UICONTROL Erstellen]** klicken.
+      Sie können eine neue Liste für diese Empfängerinnen und Empfänger erstellen, indem Sie auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf **[!UICONTROL Erstellen]** klicken. 
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -355,17 +355,17 @@ Im letzten Schritt des Assistenten wird der Datenimport ausgelöst. Klicken Sie 
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Sie können dann die Ausführung des Importvorgangs überwachen (siehe [Überwachen der Workflow-Ausführung](../../automation/workflow/monitor-workflow-execution.md)).
+Anschließend können Sie die Ausführung des Importauftrages überwachen (siehe [Überwachen der Workflow-Ausführung](../../automation/workflow/monitor-workflow-execution.md)).
 
-### Daten exportieren
+### Exportieren von Daten
 
-Mit Exportvorgängen können Sie Daten aus der Datenbank aufrufen und extrahieren: Kontakte, Kunden, Listen, Segmente usw.
+Mit Exportaufträgen können Sie Daten aus der Datenbank aufrufen und extrahieren: Kontakte, Kundinnen und Kunden, Listen, Segmente usw.
 
-Beispielsweise kann es nützlich sein, Tracking-Daten für Kampagnen (Tracking-Verlauf usw.) in einer Tabelle zu verwenden. Die Ausgabedaten können in den Formaten &quot;txt&quot;, &quot;CSV&quot;, &quot;TAB&quot; oder &quot;XML&quot; vorliegen.
+So kann es sinnvoll sein, Tracking-Daten von Kampagnen (Tracking-Verlauf usw.) in einer Tabelle zu verwenden. Die Ausgabedaten können in den Formaten *.txt, *.csv, *.tab oder *.xml vorliegen.
 
 Mit dem Export-Assistenten können Sie einen Export konfigurieren, seine Optionen definieren und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Exports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
-Der Exportassistent wird nach dem Erstellen eines neuen Exportvorgangs angezeigt.
+Der Export-Assistent wird nach dem Erstellen eines neuen Exportauftrags angezeigt.
 
 #### &#x200B;1. Schritt – Exportvorlage auswählen {#step-1---choosing-the-export-template}
 
@@ -425,7 +425,7 @@ Wählen Sie die zu exportierenden Felder aus. Gehen Sie dazu folgendermaßen vor
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um Funktionen aufzurufen.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um Funktionen aufzurufen. 
 
 #### &#x200B;5. Schritt – Spalten sortieren {#step-5---sorting-columns}
 
@@ -435,7 +435,7 @@ An dieser Stelle kann die Sortierreihenfolge der einzelnen Spalten festgelegt we
 
 #### &#x200B;6. Schritt – Filterbedingungen {#step-6---filter-conditions-}
 
-Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedingungen zu konfigurieren. Die Konfiguration dieser Filterung entspricht der Zielgruppenbestimmung für Empfänger im Versand-Assistenten.
+Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedingungen zu konfigurieren. Die Vorgehensweise beim Filtern entspricht der Zielgruppenbestimmung im Versandassistenten. 
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -453,9 +453,9 @@ An dieser Stelle können die Reihenfolge der Spalten in der Ausgabedatei und ihr
 
   ![](assets/s_ncs_user_export_wizard06.png)
 
-* Verwenden Sie die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**, um eine neue Spalte zu erstellen (z. B. eine Spalte mit Vor- und Nachnamen). Weiterführende Informationen hierzu finden Sie im Abschnitt Daten importieren .
+* Verwenden Sie die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**, um eine neue Spalte zu erstellen (z. B. eine Spalte mit Vor- und Nachnamen). Weiterführende Informationen hierzu finden Sie im Abschnitt „Datenimport“.
 
-Wenn Sie Sammlungselemente exportieren (beispielsweise Abonnements von Empfängern, Listen, denen sie angehören usw.), müssen Sie angeben, wie viele Elemente exportiert werden sollen.
+Wenn Sie eine Sammlung von Elementen exportieren (beispielsweise Abonnements von Empfängerinnen und Empfängern, Listen, denen sie angehören usw.), müssen Sie angeben, wie viele Elemente der Sammlung exportiert werden sollen.
 
 ![](assets/s_ncs_user_export_wizard06_c.png)
 
@@ -473,7 +473,7 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um den Exportprozess
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Sie können dann die Ausführung des Importvorgangs überwachen.
+Anschließend können Sie die Ausführung des Importauftrages überwachen.
 
 
 ## Erfassen von Profilen über Web-Anwendungen
@@ -482,10 +482,10 @@ Verwenden Sie Campaign, um Web-Formulare zu erstellen und Profilinformationen ei
 
 ![](assets/web-form-page.png)
 
-Wie Sie Web-Formulare erstellen, erfahren Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de){target="_blank"}.
+In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de){target="_blank"} erfahren Sie, wie Sie Web-Formulare erstellen.
 
 **Verwandte Themen**
 
-* [Zielgruppen erstellen](audiences.md)
+* [Erstellen von Zielgruppen](audiences.md)
 * [Profile deduplizieren](../../automation/workflow/deduplication-merge.md)
 * [Profildaten anreichern](../../automation/workflow/enrich-data.md)

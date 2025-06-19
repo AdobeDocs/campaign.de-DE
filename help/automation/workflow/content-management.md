@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Content Management
-description: Content Management
+title: Content-Management
+description: Content-Management
 feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Content Management{#content-management}
+# Content-Management{#content-management}
 
 Mithilfe der Aktivität **Content Management** lassen sich Inhalte erstellen und bearbeiten sowie Inhaltsdateien erzeugen. Die Inhalte können dann im Ramen einer Versandaktivität genutzt werden.
 
@@ -23,7 +23,7 @@ Mithilfe der Aktivität **Content Management** lassen sich Inhalte erstellen und
 
 >[!NOTE]
 >
->Mit der Web-Benutzeroberfläche von Adobe Campaign können Sie Inhaltsfragmente für Ihre Inhalte verwenden. Es ermöglicht Marketing-Benutzern das Vorerstellen mehrerer benutzerdefinierter Inhaltsbausteine dank wiederverwendbarer Komponenten, die in einer oder mehreren Nachrichten referenziert werden können, sodass Sie Nachrichteninhalte schnell in einem verbesserten Design-Prozess zusammenstellen können. Weitere Informationen zu Inhaltsfragmenten finden Sie in der Dokumentation zur [Adobe Campaign-Web-Benutzeroberfläche.](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
+>Über die Web-Benutzeroberfläche von Adobe Campaign können Sie Inhaltsfragmente für Ihre Inhalte verwenden. Sie ermöglicht es Marketing-Benutzenden, durch wiederverwendbare Komponenten mehrere benutzerdefinierte Inhaltsbausteine vorab zu erstellen, die in einer oder mehreren Nachrichten referenziert werden können, sodass Sie Nachrichteninhalte in einem verbesserten Design-Prozess schnell zusammenstellen können. Weitere Informationen zu Inhaltsfragmenten finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}.
 
 Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 

@@ -4,9 +4,9 @@ description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 20
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: b3ca222fb28c1a5d35190e41cfbbe463c5d1bcad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1949'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 **Auf dieser Seite**
 
-* Campaign v8.4 - [Version 8.4.1](#release-8-4-1) | [Version 8.4.2 ](#release-8-4-2)
-* Campaign v8.3 - [Version 8.3.8](#release-8-3-8) | [Version 8.3.9](#release-8-3-9)
-* Campaign v8.2 - [Version 8.2.10](#release-8-2-10)
+* Campaign v8.4 – [Version 8.4.1](#release-8-4-1) | [Version 8.4.2](#release-8-4-2)
+* Campaign v8.3 – [Version 8.3.8](#release-8-3-8) | [Version 8.3.9](#release-8-3-9)
+* Campaign v8.2 – [Version 8.2.10](#release-8-2-10)
 
 >[!ENDSHADEBOX]
 
@@ -217,7 +217,7 @@ _18. Mai 2022_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Das verteilte Marketing in Campaign ermöglicht die Implementierung kollaborativer Kampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Entitäten (Verkaufsstellen, regionalen Agenturen usw.). Über einen freigegebenen Arbeitsbereich (Kampagnenkits) können Sie Kampagnenvorlagen erstellen und diese Ihren lokalen Entitäten vorschlagen.</p>
+<td> <p>Mit dem verteilten Marketing von Campaign können Sie Kooperationskampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Entitäten (Filialen, regionale Agenturen usw.) implementieren. Über einen freigegebenen Arbeitsbereich (Kampagnenkits) können Sie Kampagnenvorlagen erstellen und diese Ihren lokalen Entitäten vorschlagen.</p>
 <p>Weitere Informationen finden Sie in der <a href="../start/campaigns.md#distributed-marketing-add-on">entsprechenden Dokumentation</a>.</p>
 </td> 
 </tr> 

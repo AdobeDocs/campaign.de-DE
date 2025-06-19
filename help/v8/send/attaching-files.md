@@ -7,13 +7,13 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 27d13642-2971-466b-818d-39328c198b14
 source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1087'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Dateien an eine E-Mail anhängen{#attaching-files}
+# Anhängen von Dateien an eine E-Mail{#attaching-files}
 
 ## Über E-Mail-Anhänge {#about-email-attachments}
 
@@ -21,7 +21,7 @@ Sie können an einen E-Mail-Versand eine oder mehrere Dateien anhängen.
 
 >[!NOTE]
 >
->Zur Vermeidung von Performance-Problemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über die Liste der Kampagnenoptionen konfiguriert werden. Weitere Informationen finden Sie in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=de#delivery).
+>Zur Vermeidung von Performance-Problemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über die Liste der Campaign-Optionen konfiguriert werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options#delivery).
 
 Sie haben zwei Möglichkeiten:
 
@@ -30,7 +30,7 @@ Sie haben zwei Möglichkeiten:
 
 >[!NOTE]
 >
->Diese Konfiguration wird in der Regel in den Versandvorlagen vorgenommen. Weitere Informationen hierzu finden Sie in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de).
+>Diese Konfiguration wird in der Regel in den Versandvorlagen vorgenommen. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de).
 
 ## Schutzmechanismen {#attachments-guardrails}
 
@@ -38,7 +38,7 @@ Um Performance-Probleme zu vermeiden, dürfen die in den E-Mails enthaltenen Bil
 
 Adobe empfiehlt außerdem, die Größe und Anzahl der angehängten Dateien zu begrenzen. Standardmäßig kann nur eine Datei als Anhang zu einer E-Mail hinzugefügt werden. Dieser Schwellenwert kann in der Option `NmsDelivery_MaxRecommendedAttachments` konfiguriert werden.
 
-Weitere Informationen finden Sie in der Liste der Kampagnenoptionen in der Dokumentation zu [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=de#delivery).
+Weitere Informationen finden Sie in der Liste der Campaign-Optionen in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options#delivery):
 
 ## Lokale Datei anhängen {#attaching-a-local-file}
 

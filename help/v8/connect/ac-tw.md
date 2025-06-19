@@ -6,9 +6,9 @@ feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1126'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren X-Konten veröffentl
 
 ## X-Entwicklerkonto {#dev-account}
 
-Um mit dieser Integration zu beginnen, müssen Sie sich in einem [X-Entwicklerkonto ](https://developer.twitter.com){target="_blank"}.
+Um mit dieser Integration zu beginnen, müssen Sie sich für ein [X-Entwicklerkonto](https://developer.twitter.com){target="_blank"} registrieren.
 
-Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. Weitere Informationen zu X Elevated Access [auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
+Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. [Auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated){target="_blank"} erfahren Sie mehr über den erweiterten Zugriff auf X.
 
 ## Erstellen einer Anwendung auf X {#create-an-app-on-twitter}
 
@@ -74,7 +74,7 @@ Um Ihre Campaign-Instanz mit Ihrem X-Konto zu verknüpfen, erstellen Sie einen *
 >
 >Erstellen Sie einen **Twitter**-Service pro X-Konto. Infolgedessen müssen Sie einen weiteren Test-Service erstellen, um Testsendungen an Ihr [Testkonto](#tw-test-account) zu senden.
 >
->Jeder **Twitter**-Service muss auch von Adobe in Ihrer Mid-Sourcing-Instanz (MID) erstellt werden. Wenden Sie sich an Ihren Adobe-Support, um Ihre Umgebung konfigurieren zu lassen.
+>Jeder **Twitter**-Service muss ebenfalls von Adobe auf Ihrer Mid-Sourcing(MID)-Instanz erstellt werden. Wenden Sie sich an den Adobe-Support, um Ihre Umgebung konfigurieren zu lassen.
 >
 
 Um Einstellungen vorzunehmen, müssen Sie sowohl auf Ihre Adobe Campaign-Client-Konsole als auch auf die Berechtigungen Ihrer X-App zugreifen.

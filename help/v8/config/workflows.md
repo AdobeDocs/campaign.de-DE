@@ -6,9 +6,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: 8e1401ef0aada30d941905936b45c6c1819c83a7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Sie können Folgendes einrichten:
 
 >[!NOTE]
 >
->Die Adobe Campaign-Web-Benutzeroberfläche verfügt über eine überarbeitete Arbeitsfläche für Workflows, mit der dynamischere und personalisiertere Kunden-Journey erstellt werden können. Weitere Informationen zu Workflows für die Web-Benutzeroberfläche finden Sie in der Dokumentation zur [Adobe Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
+>Die Adobe Campaign Web-Benutzeroberfläche verfügt über eine überarbeitete Arbeitsfläche für Workflows, mit der dynamischere und stärker personalisierte Customer Journeys erstellt werden können. Weitere Informationen zu Workflows für die Web-Benutzeroberfläche finden Sie in der [Dokumentation zur Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
 
 
 ## Entwerfen und Verwenden von Workflows {#gs-ac-wf}
@@ -119,7 +119,7 @@ Je nach Zweck Ihres Workflows können Sie in der Dropdown-Liste **[!UICONTROL Wa
 
 Entwerfen Sie einen wiederkehrenden Workflow und erstellen Sie bei jeder Workflow-Ausführung eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, führt dies nach einem Jahr zu 52 Sendungen. Das bedeutet auch, dass die Protokolle für jede Versandinstanz getrennt erstellt werden.
 
-Auf [ Seite erfahren Sie, wie Sie eine wiederkehrende Kampagne ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=de){target="_blank"}.
+Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine wiederkehrende Kampagne erstellen.
 
 
 ## Erzeugte Ereignisse nutzen
@@ -154,12 +154,12 @@ Wenn Ihr Versandinhalt in einer auf einem Remote-Server gespeicherten HTML-Datei
 Erfahren Sie, wie Sie einen Workflow für einen kanalübergreifenden Versand erstellen. Ziel ist es, eine Zielgruppe von den Empfängerinnen und Empfängern in Ihrer Datenbank in verschiedene Gruppen zu unterteilen und der einen Gruppe eine E-Mail, aber der anderen eine SMS zu senden.
 
 * [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html?lang=de){target="_blank"}
-Erfahren Sie, wie Sie eine E-Mail mit benutzerdefinierten Datenfeldern an Profile senden, die in diesem Monat Geburtstag feiern. Die E-Mail enthält einen Gutschein, der eine Woche vor bis eine Woche nach dem Geburtstag gültig ist.
+Erfahren Sie, wie Sie eine E-Mail mit benutzerdefinierten Datumsfeldern an Profile senden, die in diesem Monat Geburtstag feiern. Die E-Mail enthält einen Gutschein, der eine Woche vor bis eine Woche nach dem Geburtstag gültig ist.
 
 Und diese Seiten in der Dokumentation zu Campaign v7:
 
 * [Automatische Erstellung, Bearbeitung und Veröffentlichung von Inhalten](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html?lang=de){target="_blank"}
-Erfahren Sie, wie Sie die Erstellung und Bereitstellung eines Inhaltsbausteins mit dem Add-on für Content-Management in Campaign automatisieren.
+Erfahren Sie, wie Sie die Erstellung und den Versand eines Inhaltsbausteins mit dem Add-on für Content-Management in Campaign automatisieren.
 
 * [A/B-Tests](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html?lang=de){target="_blank"}
 Erfahren Sie, wie Sie mithilfe eines Zielgruppen-Workflows Inhalte von zwei E-Mail-Sendungen vergleichen. Nachricht und Text sind bei beiden Sendungen identisch – nur das Layout ist unterschiedlich. Die Zielpopulation wird in drei Gruppen aufgeteilt: zwei Testgruppen und die restliche Population. An jede Testgruppe wird eine andere Version des Versands gesendet.
@@ -169,7 +169,7 @@ Erfahren Sie, wie Sie mithilfe eines Zielgruppen-Workflows Inhalte von zwei E-Ma
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
 * [Senden eines Berichts an eine Liste](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html?lang=de){target="_blank"}
-Erfahren Sie, wie Sie einen monatlichen integrierten Bericht zu Tracking-Indikatoren im PDF-Format generieren und an eine Liste von Campaign-Benutzern senden.
+Hier erfahren Sie, wie Sie einen monatlichen integrierten Bericht zu Trackingindikatoren im PDF-Format generieren und an eine Liste von Campaign-Benutzenden senden.
 
 * [Überwachen Ihrer Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=de){target="_blank"}
 Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen können, die „ausgesetzt“, „angehalten“ oder „fehlerhaft“ sind.
@@ -187,7 +187,7 @@ Erfahren Sie, wie Sie überprüfen können, ob der Aktualisierungsprozess beende
 
 * [Erstellen einer zusammenfassenden Liste](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/create-a-summary-list.html?lang=de){target="_blank"}
 
-Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie nach dem Erfassen von Dateien und mehreren Anreicherungen eine zusammenfassende Liste erstellen können. Das Beispiel basiert auf einer Liste von Kontakten, die in einem Geschäft Einkäufe getätigt haben.
+Erfahren Sie, wie Sie einen Workflow erstellen, mit dem Sie nach dem Erfassen von Dateien und mehreren Anreicherungen eine zusammenfassende Liste erstellen können. Das Beispiel basiert auf einer Liste von Kontakten, die in einem Ladengeschäft Einkäufe getätigt haben.
 
 * [Anreichern von Daten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=de){target="_blank"}
 Erfahren Sie, wie Sie abhängig von der erzielten Punktzahl personalisierte Sendungen an Profile durchführen, die am letzten Wettbewerb teilgenommen haben.
@@ -240,7 +240,7 @@ In this use case, learn how to use the **[!UICONTROL Change data source]** activ
 
 1. Query your targeted recipients from the NmsRecipient table with a **[!UICONTROL Query]** activity. 
 
-    For more information on the **[!UICONTROL Query]** activity, refer to the [Query](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=de#creating-a-query) page in Campaign Classic V7 documentation.
+    For more information on the **[!UICONTROL Query]** activity, refer to the [Query](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html#creating-a-query) page in Campaign Classic V7 documentation.
 
 1. 
 

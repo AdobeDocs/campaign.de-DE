@@ -7,9 +7,9 @@ level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Erfahren Sie auf [dieser Seite](manage-permissions.md#add-users), wie Sie Benutz
 
 ## Über Produktprofile{#ootb-product-profiles}
 
-Produktprofile sind Gruppen von Produkten und Services, die Sie Benutzern zuweisen können. In Adobe Experience Cloud basieren die Berechtigungen auf dem Produktprofil und nicht auf dem Benutzer. Sie können jedoch bestimmten Benutzern Administratorrechte delegieren.
+Produktprofile sind Gruppen von Produkten und Services, die Sie Benutzern zuweisen können. In Adobe Experience Cloud basieren die Berechtigungen auf dem Profil eines Produkts und nicht auf der Benutzerin bzw. dem Benutzer. Sie können jedoch Administratorrechte an bestimmte Benutzende delegieren.
 
 In der Admin Console wird jedes **Produktprofil** von Adobe Experience Cloud für Campaign mit einer **Benutzergruppe** in der Client-Konsole von Campaign verknüpft.
 

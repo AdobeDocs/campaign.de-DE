@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1022'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Bevor Sie beginnen, müssen Sie folgende Schritte ausführen:
 
 Ab der Build-Version 8.4 von Campaign Classic ist die Installation der Microsoft Edge WebView2-Laufzeitumgebung für jede Client-Konsolen-Installation erforderlich.
 
-WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn sie nicht bereits auf Ihrem System vorhanden ist, fordert Sie das Installationsprogramm der Campaign-Client-Konsole auf, sie von der [Microsoft Developer Website herunterzuladen](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
+WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, fordert Sie das Installationsprogramm der Campaign-Client-Konsole auf, es von der [Microsoft Developer Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"} herunterzuladen. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
 ### Herunterladen der Konsole{#install-ac-console}
 
@@ -39,7 +39,7 @@ Wenn Sie Campaign zum ersten Mal verwenden, müssen Sie die Client-Konsole herun
 
 Es gibt zwei Möglichkeiten, die Client-Konsole herunterzuladen:
 
-1. Stellen Sie als Campaign-Admin eine Verbindung zur Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} her.
+1. Als Campaign-Admin verbinden Sie sich mit der [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"}.
 
 1. Für Endbenutzende stellen Campaign-Administrierende die Client-Konsole bereit und machen sie über eine spezielle URL verfügbar.
 
@@ -121,12 +121,12 @@ Ab der Campaign-Version v8.6 haben Sie Zugriff auf die neue **Campaign Web-Benut
 
 >[!AVAILABILITY]
 >
->Die Web-Benutzeroberfläche von Campaign steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Weitere Informationen zu [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+>Die Campaign Web-Benutzeroberfläche steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Erfahren Sie mehr über das [Identitäts-Management-System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} von Adobe.
 >
 
 [Auf dieser Seite](campaign-ui.md#ac-web-ui) erfahren Sie, wie Sie eine Verbindung mit Adobe Experience Cloud herstellen und auf die Benutzeroberfläche von Adobe Campaign Web zugreifen.
 
-Weitere Informationen finden Sie in der Dokumentation zur Web-Benutzeroberfläche von [Adobe Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 ### Web-Zugriff {#web-access}
 

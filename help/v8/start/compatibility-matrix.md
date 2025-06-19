@@ -6,9 +6,9 @@ role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: fb2cf4407750f8cff65ca53f0e87c32e9702de92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Für die Nutzung der Campaign-Client-Konsole sind die folgenden Betriebssysteme 
 
 * **Microsoft Edge**
 
-* **Microsoft Edge WebView2**, neueste Version. Sie kann von der [Microsoft Developer-Website heruntergeladen ](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"}.
+* **Microsoft Edge WebView2**, neueste Version. Sie kann von der [Microsoft Developer-Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de){target="_blank"} heruntergeladen werden.
 
 ## CRM-Connectoren {#CRMconnectors}
 
@@ -51,10 +51,10 @@ Die folgenden CRM-Systeme (Customer Relationship Management) sind mit Adobe Camp
 
 Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Access (FDA)-Modul kompatibel. Weitere Informationen über FDA finden Sie [auf dieser Seite](../connect/fda.md).
 
-* **[!DNL Amazon Redshift]** des ODBC-Connectors, ab Campaign v8.6.4 / v8.7.1
-* Legacy-Connector **[!DNL Amazon Redshift]**
+* **[!DNL Amazon Redshift]** ODBC-Connector, ab Campaign v8.6.4/v8.7.1
+* Veralteter **[!DNL Amazon Redshift]**-Connector
 * **[!DNL Azure Synapse]**, ab Campaign v8.5
-* **[!DNL Databricks]**, ab Campaign v8.6.4 / v8.7
+* **[!DNL Databricks]**, ab Campaign v8.6.4/v8.7
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
@@ -67,7 +67,7 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Ac
 
 Zum Senden von [Push-Benachrichtigungen](../send/push.md) mit Campaign können Sie das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign Classic-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren.
 
-Kompatible Versionen für iOS und Android werden in der [Dokumentation zu Adobe Developer ](https://developer.adobe.com/client-sdks/home/){target="_blank"}.
+Kompatible Versionen für iOS und Android sind im Detail in der [Dokumentation zu Adobe Developer](https://developer.adobe.com/client-sdks/home/){target="_blank"} aufgeführt.
 
 ## Web-Benutzeroberfläche {#web-ui}
 

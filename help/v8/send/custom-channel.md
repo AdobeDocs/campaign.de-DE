@@ -5,33 +5,33 @@ role: User
 level: Beginner, Intermediate
 exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
 source-git-commit: f94074d954137c4db39b2ef9f85141b79fe3356b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '268'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit benutzerdefinierten externen Kanälen {#gs-custom-channel}
 
-Mit Adobe Campaign können Sie benutzerdefinierte externe Kanäle erstellen, die mit Drittanbietern integriert sind. Sie können dann Sendungen basierend auf diesen Kanälen orchestrieren und ausführen.
+Mit Adobe Campaign können Sie benutzerdefinierte externe Kanäle erstellen, die mit Drittanbietern integriert sind. Anschließend können Sie Sendungen basierend auf diesen Kanälen orchestrieren und ausführen.
 
-Die Versanderstellung und der Versand können sowohl in der Client-Konsole als auch in der Web-Benutzeroberfläche durchgeführt werden. Der benutzerdefinierte externe Kanal wird jedoch nur in der Client-Konsole ausgeführt.
+Die Versanderstellung und das Versenden können sowohl in der Client-Konsole als auch in der Web-Benutzeroberfläche durchgeführt werden. Der benutzerdefinierte externe Kanal wird jedoch nur in der Client-Konsole ausgeführt.
 
-Informationen zum Erstellen und Senden eines Versands auf der Grundlage eines benutzerdefinierten externen Kanals finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=de).
+Informationen zum Erstellen und Senden eines Versands auf der Grundlage eines benutzerdefinierten externen Kanals finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign-web/v8/msg/gs-custom-channel).
 
 Im Folgenden finden Sie die Schritte zum Erstellen eines neuen externen benutzerdefinierten Kanals in der Client-Konsole:
 
 1. Konfigurieren des Schemas, [weitere Informationen](#configure-schema)
-1. Erstellen eines neuen externen Kontos, [mehr dazu](#create-ext-account)
+1. Erstellen eines neuen externen Kontos, [weitere Informationen](#create-ext-account)
 1. Erstellen einer neuen Versandvorlage, [weitere Informationen](#create-template)
 
 ## Konfigurieren des Schemas{#configure-schema}
 
 Zunächst müssen Sie das Schema konfigurieren, um den neuen Kanal zur Liste der verfügbaren Kanäle hinzuzufügen.
 
-1. Wählen Sie im Campaign-Explorer **Administration** > **Konfiguration** > **Datenschemata**.
+1. Wählen Sie im Explorer von Campaign **Administration** > **Konfiguration** > **Datenschemata** aus.
 
-1. Erstellen Sie eine Schemaerweiterung, um die MessageType-Auflistung um den neuen Kanal zu erweitern.
+1. Erstellen Sie eine Schemaerweiterung, um die messageType-Auflistung um den neuen Kanal zu erweitern.
 
    Beispiel:
 
@@ -44,11 +44,11 @@ Zunächst müssen Sie das Schema konfigurieren, um den neuen Kanal zur Liste der
 
    ![](assets/cus-schema.png){zoomable="yes"}
 
-## Neues externes Konto erstellen{#create-ext-account}
+## Erstellen eines neuen externen Kontos{#create-ext-account}
 
 Anschließend müssen Sie ein neues externes Routing-Konto erstellen.
 
-1. Wählen Sie im Campaign-Explorer **Administration** > **Plattform** > **Externe Konten**.
+1. Wählen Sie im Explorer von Campaign **Administration** > **Plattform** > **Externe Konten** aus.
 
 1. Erstellen Sie ein neues externes Konto.
 
@@ -60,11 +60,11 @@ Anschließend müssen Sie ein neues externes Routing-Konto erstellen.
 
 Erstellen wir nun die neue Vorlage, die mit dem neuen Kanal verknüpft ist.
 
-1. Wählen Sie im Campaign-Explorer **Ressourcen** > **Vorlagen** > **Versandvorlagen**.
+1. Wählen Sie über den Explorer von Campaign **Ressourcen** > **Vorlagen** > **Versandvorlagen** aus.
 
 1. Erstellen Sie eine neue Vorlage.
 
-1. Klicken Sie auf **Eigenschaften** und wählen Sie den richtigen Ordner und das richtige Routing aus.
+1. Klicken Sie auf **Eigenschaften** und wählen Sie den richtigen Ordner sowie das richtige Routing aus.
 
    ![](assets/cus-template.png){zoomable="yes"}
 

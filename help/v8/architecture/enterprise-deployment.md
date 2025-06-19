@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: 3235701e0939466d4275b1e9202f82694ccdb352
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1053'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Die [!DNL Snowflake]-Datenbank auf Marketing-Seite wird verwendet, um:
 * Alle Kundendaten zu speichern: Profile, kundenspezifische Daten wie Transaktionen, Produkte, Standorte usw.
 * Alle Ereignisse und Verhaltensdaten, die von Campaign generiert oder gesammelt werden, zu speichern, z. B. Versandlogs, Trackinglogs, Push-Registrierungen usw.
 * Alle Datenaggregate der oben Genannten zu speichern.
-* Eine Kopie (h+1) von Referenztabellen (wie Sendungen, Auflistungen, Länder usw.) speichern, die in Workflows, Kampagnen und Berichten verwendet werden.
+* Eine Kopie (h+1) von Referenztabellen (wie Sendungen, Auflistungen, Länder usw.) zu speichern, die in Workflows, Kampagnen und Berichten verwendet werden.
 * Alle Batch-Prozesse und -Workflows auszuführen.
 
 
@@ -63,7 +63,7 @@ Die PostgreSQL-Datenbank in der Marketing-Instanz wird verwendet, um:
 
 * Bestimmte Workloads auszuführen, z. B. APIs mit geringem Volumen.
 * Alle Campaign-Daten zu speichern, einschließlich Versand- und Kampagneneinstellungen, Workflow- und Service-Definitionen.
-* Alle integrierten Referenztabellen (Auflistungen, Länder usw.) speichern, die nach [!DNL Snowflake] repliziert werden.
+* Alle integrierten Referenztabellen (Auflistungen, Länder usw.) zu speichern, die nach [!DNL Snowflake] repliziert werden.
 
   Folgendes können Sie jedoch nicht tun:
    * Anpassungen für Kundendaten erstellen, z. B. keine Haushaltstabelle in PostgreSQL erstellen, sondern nur in Snowflake.
@@ -80,9 +80,9 @@ Die PostgreSQL-Datenbank in der Mid-Sourcing-Instanz wird verwendet, um:
 
 ## Auswirkungen{#ffda-impacts}
 
-### [!DNL Campaign]-API-Staging-Mechanismus{#staging-api}
+### API-Staging-Mechanismus von [!DNL Campaign]{#staging-api}
 
-In der [!DNL Campaign] Cloud-Datenbank ist es im Hinblick auf die Leistung (Latenz und gleichzeitige Nutzung) nicht empfehlenswert, einzelne Abfragen zu starten. Batch-Vorgänge müssen verwendet werden, um eine optimale API-Leistung zu gewährleisten, es sei denn, Sie senden extrem geringe Mengen. Um die Leistung zu verbessern, werden Aufnahme-APIs an die lokale Datenbank umgeleitet. [Erfahren Sie mehr über den Staging-Mechanismus der Campaign-API](staging.md)
+In der Cloud-Datenbank von [!DNL Campaign] wird das Bündeln von einzelnen Abfragen aufgrund von Performance-Einbußen (Latenz und gleichzeitige Nutzung) nicht empfohlen. Es müssen Batch-Vorgänge verwendet werden, um eine optimale API-Leistung zu gewährleisten, es sei denn, Sie senden ein extrem niedriges Volumen. Um die Performance zu verbessern, werden Aufnahme-APIs an die lokale Datenbank weitergeleitet. [Weitere Informationen zum API-Staging-Mechanismus von Campaign](staging.md)
 
 ### Neue APIs{#new-apis}
 
@@ -98,7 +98,7 @@ Ein spezieller technischer Workflow behandelt die Replikation von Tabellen, die 
 >[!NOTE]
 >
 > Es wurden mehrere Replikationsrichtlinien erstellt, die auf der Größe der Tabelle basieren (XS, XL usw.).
-> &#x200B;> Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen aufweisen, andere werden eine vollständige Aktualisierung durchlaufen.
+> > Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen aufweisen, andere werden eine vollständige Aktualisierung durchlaufen.
 >
 
 [Weitere Informationen zur Datenreplikation](replication.md)
