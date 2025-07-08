@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '712'
+source-git-commit: b4947c8c20e123877e24f57d5ad7a15aa3f304a2
+workflow-type: tm+mt
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
@@ -45,7 +45,8 @@ ht-degree: 100%
 + Senden von Nachrichten{#send}
    + [Erste Schritte mit Nachrichten](start/gs-message.md)
    + [Erstellen Ihres ersten Versands](start/create-message.md)
-   + [Best Practices beim Versand](start/delivery-best-practices.md)
+   + [Arbeiten mit Versandvorlagen](send/create-templates.md)
+   + [Best Practices für den Versand](start/delivery-best-practices.md)
    + E-Mails {#emails}
       + [Entwerfen und Validieren von E-Mails](send/email.md)
       + [Definieren des E-Mail-Inhalts](send/defining-the-email-content.md)
@@ -99,7 +100,12 @@ ht-degree: 100%
    + Fehler, Bounces und Quarantänen{#failures}
       + [Quarantänen](send/quarantines.md)
       + [Versandfehler](send/delivery-failures.md)
-   + [Arbeiten mit Versandvorlagen](send/create-templates.md)
+   + Verwaltung der Zustellbarkeit {#deliverability-management}
+      + [Was ist Zustellbarkeit](send/about-deliverability.md)
+      + [Steuern des Nachrichteninhalts](send/control-message-content.md)
+      + [Überwachen der Zustellbarkeit](send/monitoring-deliverability.md)
+      + [Inbox Rendering](send/inbox-rendering.md)
+      + [SpamAssassin](send/spamassassin.md)
    + Transaktionsnachrichten {#real-time}
       + [Erste Schritte mit Transaktionsnachrichten](send/transactional.md)
       + [Erstellen und Veröffentlichen einer Vorlage](send/transactional-template.md)
