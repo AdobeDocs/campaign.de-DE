@@ -5,16 +5,19 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
-source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
-workflow-type: ht
-source-wordcount: '1498'
-ht-degree: 100%
+source-git-commit: b52308bcbe68a7c382918fe28f8166e3bfcb6cde
+workflow-type: tm+mt
+source-wordcount: '1520'
+ht-degree: 97%
 
 ---
 
 # Versionshinweise 2023 {#2023-rn}
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen von 2023** aufgelistet.
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen 2023** aufgelistet. Die neueste Version finden Sie auf [dieser Seite](release-notes.md).
+
+Installieren Sie für jede neue Implementierung oder jedes Upgrade auf eine vorhandene Umgebung [die neueste Version](release-notes.md).
+
 
 >[!BEGINSHADEBOX]
 

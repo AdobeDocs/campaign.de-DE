@@ -4,12 +4,11 @@ description: Erfahren Sie, wie Sie einen SMS-Versand in einer Mid-Sourcing-Infra
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
 exl-id: b5eb9eaa-0ca8-478c-9ed5-e5006e9b5609
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '669'
+ht-degree: 96%
 
 ---
 
@@ -17,9 +16,9 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Diese Dokumentation gilt für Adobe Campaign v8.7.2 und höher.
+>Diese Dokumentation gilt für Adobe Campaign Version 8.7.2 und höher. Informationen zum Wechsel vom alten zum neuen SMS-Connector finden Sie in dieser [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->Für ältere Versionen lesen Sie die [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up).
+>Für ältere Versionen lesen Sie die [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 Für SMS-Sendungen mit einer Mid-Sourcing-Infrastruktur ist Folgendes erforderlich:
 

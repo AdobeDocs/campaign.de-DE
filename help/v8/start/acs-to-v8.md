@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 98613a0a-7a6d-41a5-9541-e045d4ca318f
-source-git-commit: bc37a2a1075c7397f1656b38071dcae737043fb8
+source-git-commit: 57ae2cbe8744bd71002d33ed2d815e422601bda8
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 80%
+source-wordcount: '179'
+ht-degree: 86%
 
 ---
 
@@ -24,5 +24,6 @@ Campaign v8-Benutzende haben jetzt Zugriff auf die neue Campaign Web-Benutzerob
 
 * Weitere Informationen zur neuen Web-Benutzeroberfläche von Campaign finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}.
 
-* Um Ihnen den Wechsel zu erleichtern, wurden Funktionen aus Campaign Standard in Campaign v8 aufgenommen. Diese Funktionen sind auf Kunden beschränkt, die von Campaign Standard wechseln, und werden in [dieser Dokumentation](https://experienceleague.adobe.com/de/docs/experience-cloud/campaign/campaign-standard-migration-home){target="_blank"} beschrieben.
+<!--
+* Campaign Standard capabilities have been added to Campaign v8 to facilitate your transition. These capabilities are restricted to customers transitioning from Campaign Standard, and are described in [this documentation](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/campaign-standard-migration-home){target="_blank"}.-->
 

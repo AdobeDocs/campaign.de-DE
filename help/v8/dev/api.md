@@ -5,10 +5,10 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
+source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 100%
+source-wordcount: '274'
+ht-degree: 97%
 
 ---
 
@@ -26,9 +26,11 @@ Sie können JavaScript-APIs verwenden, um in der Cloud-Datenbank von Campaign Sc
 
 Es ist zu beachten, dass Campaign in seiner [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) mit zwei Datenbanken verwendet werden kann: einer lokalen Datenbank für Echtzeit-Messaging und Einzelabfragen über die Benutzeroberfläche und das Schreiben über APIs sowie einer Cloud-Datenbank für die Kampagnenausführung, für das Reporting, für die Datenaufnahme, für Batch-Abfragen und für die Workflow-Ausführung.
 
->[!CAUTION]
+>[!NOTE]
 >
->* Als Campaign-Benutzende, die von Campaign Standard aus wechseln, können Sie REST-APIs mit Campaign v8 verwenden. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-cloud/campaign/apis/get-started-apis){target="_blank"}.
+>* Sie können REST-APIs mit Campaign v8 verwenden. [Weitere Informationen](../dev/api/get-started-apis.md).
+
+>[!CAUTION]
 >
 >* Ab Campaign v8.5.1 hat sich der Authentifizierungsprozess für Campaign v8 geändert. Technische Benutzerinnen bzw. Benutzer müssen Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
 >

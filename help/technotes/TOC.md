@@ -5,10 +5,10 @@ type: Event
 title: Technotes zu Adobe Campaign
 description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
-source-git-commit: 0fa6767f042eb595b1697d086e5c5cd5fc42625e
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 98%
+source-wordcount: '71'
+ht-degree: 94%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 98%
 
 + [Technotes zu Campaign](technotes-home.md)
 + Aktualisierungen{#tn-new}
+   + [Migration des SMS-Connectors](upgrades/sms-migration.md)
    + [Änderungen am Push-Benachrichtigungskanal](upgrades/push-technote.md)
    + [Migrieren von Benutzenden zu IMS](upgrades/migrate-users-to-ims.md)
    + [Migration technischer Benutzender zur Developer Console](upgrades/ims-migration.md)

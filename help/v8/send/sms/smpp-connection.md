@@ -4,11 +4,10 @@ description: Erfahren Sie, wie Sie eine SMPP-Verbindung validieren
 feature: SMS
 role: User
 level: Intermediate
-badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
 exl-id: eda6934a-e48a-4932-8c88-588f661005d6
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '4445'
+source-wordcount: '4443'
 ht-degree: 100%
 
 ---
@@ -161,7 +160,7 @@ So isolieren Sie das externe Konto, das Probleme verursacht:
 1. Deaktivieren Sie alle externen Konten.
 1. Aktivieren Sie ein externes Konto.
 1. Versuchen Sie, das Problem zu reproduzieren.
-1. Wenn das Problem bei diesem einen Konto nicht auftritt, deaktivieren Sie es und beginnen Sie beim nächsten Konto erneut mit Schritt 2. Nachdem Sie jedes Konto einzeln geprüft haben, gibt es zwei mögliche Szenarien:
+1. Wenn das Problem bei diesem einen Konto nicht auftritt, deaktivieren Sie es und beginnen Sie erneut mit Schritt 2 beim nächsten Konto. Nachdem Sie jedes Konto einzeln geprüft haben, gibt es zwei mögliche Szenarien:
 
 **Das Problem trat bei einem oder mehreren Konten auf**
 

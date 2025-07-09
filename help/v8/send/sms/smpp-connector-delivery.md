@@ -4,12 +4,11 @@ description: Informationen zu den Einstellungen des SMPP-Connectors in Sendungen
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
-source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 99%
+source-wordcount: '1340'
+ht-degree: 98%
 
 ---
 
@@ -17,9 +16,9 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->Dies gilt für Adobe Campaign v8.7.2 und höher.
+>Diese Dokumentation gilt für Adobe Campaign Version 8.7.2 und höher. Informationen zum Wechsel vom alten zum neuen SMS-Connector finden Sie in dieser [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}.
 >
->Ältere Versionen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
+>Für ältere Versionen lesen Sie die [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## Datenfluss des SMS-Connectors {#sms-data-flow}
 
@@ -114,7 +113,7 @@ Diese Tabelle fasst alle Einstellungen zusammen. Werte, die Min/Max beinhalten, 
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | batchUpdateSize | Größe der aktualisierten Mikro-Batches | 5000 | 100: Sehr niedrige Latenz | maxWaitingMessages/updateThreads: Das Überschreiten dieses Werts ist unnötig, da maxWaitingMessages die Pufferung ohnehin beschränkt. | 1: Deaktivieren der Mikro-Batching-Funktion, einzelnes Aktualisieren der Nachrichten. |
 | configRefreshMillis | Zeitraum für das Neuladen der Konfiguration in Millisekunden | 10000 | pollPeriodMillis: Geringe Latenz | 600000: Nicht zu schnell neu laden, um Ressourcen zu sparen | 500: Geringe Latenz ermöglicht schnelleres Ausprobieren neuer Einstellungen |
-| deliveryPartRetryCount | Maximale Anzahl von Wiederholungsversuchen oder Verschiebungen eines Versandkontingents. Achtung: Das erneute Starten des Sendevorgangs zählt als Wiederholungsversuch. Abstürze können ebenfalls als Wiederholungsversuch zählen. | 20 | 1: Weitere Zustellversuche deaktivieren | 50: Nachrichten persistenter machen, um instabile Provider zu umgehen | 1: Deaktivieren weiterer Zustellversuche. 1000: Vermeiden des Sendens von fehlgeschlagenen Nachrichten. |
+| deliveryPartRetryCount | Maximale Anzahl von Wiederholungsversuchen oder Verschiebungen eines Versandkontingents. Achtung: Das Neustarten des Sendevorgangs zählt als Wiederholungsversuch. Abstürze können ebenfalls als Wiederholungsversuch zählen. | 20 | 1: Weitere Zustellversuche deaktivieren | 50: Nachrichten persistenter machen, um instabile Provider zu umgehen | 1: Deaktivieren weiterer Zustellversuche. 1000: Vermeiden des Sendens von fehlgeschlagenen Nachrichten. |
 | deliveryPartRetryDelaySeconds | Mindestverzögerung, bevor ein Versandkontingent erneut versucht wird. Dies ist Prozess- und Container-übergreifend. Die Verzögerung wird in Sekunden angegeben. | 60 | 0: Sofortige weitere Zustellversuche | 3600: Sehr langsame weitere Zustellversuche (1 Stunde zwischen jedem weiteren Zustellversuch) | 1: Erleichtert das Nachverfolgen von Wiederholungsversuchen in sehr dichten Protokollen. |
 | logOutput | Sendet Monitoring- und Profilierungsdaten in der Hauptausgabe der Protokolle. | true | false: Kann den Durchsatz etwas erhöhen. Von dieser Einstellung wird abgeraten. | true: Aktivieren der Protokollierung. | true |
 | maxWaitingMessages | Maximale Anzahl an zu jedem Zeitpunkt verarbeiteten Nachrichten | 50000 | 256: Ausreichend für einen einzigen Versandteil | 200000: Begrenzt durch SQL-Abfragelänge (64k) | 1: Nachrichten einzeln verarbeiten |

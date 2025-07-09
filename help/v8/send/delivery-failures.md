@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
+workflow-type: tm+mt
 source-wordcount: '3028'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -111,7 +111,7 @@ Wenn der Gültigkeitszeitraum in Campaign beispielsweise auf den Standardwert vo
 
 Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht gesendet werden konnte, wird sie mit einem Timeout beendet, und ihr Status ändert sich von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** (in den Versandlogs).
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## E-Mail-Fehlertypen {#email-error-types}
@@ -238,7 +238,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Unerreichbar </td> 
    <td> Softbounce / Hardbounce </td> 
    <td> 3 </td> 
-   <td> In der Versandkette der Nachricht ist ein Fehler aufgetreten. Es könnte sich um einen Vorfall auf dem SMTP-Relais, eine zeitweilig unerreichbare Domain o. a. handeln. Je nach Fehler wird der Zustellversuch wiederholt, bis der Fehlerzähler 5 erreicht hat, oder die Adresse wird sofort unter Quarantäne gestellt.<br /> </td> 
+   <td> In der Versandkette der Nachricht ist ein Fehler aufgetreten. Es könnte sich um einen Vorfall auf dem SMTP-Relais, eine zeitweilig unerreichbare Domain o. a. handeln. Je nach Fehler wird die Adresse erneut versucht, bis der Fehlerzähler 5 erreicht, oder sie wird direkt unter Quarantäne gestellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Unbekannter Nutzer </td> 

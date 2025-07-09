@@ -5,10 +5,10 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '3650'
-ht-degree: 100%
+source-wordcount: '3666'
+ht-degree: 99%
 
 ---
 
@@ -332,6 +332,10 @@ Sie können für jedes Feld das zugehörige Tag sowie dessen Format festlegen. B
 
 * Tag: der Tag-Wert im Dezimalformat (z. B. 12345) oder im Hexadezimalformat mit 0x-Präfix (z. B. 0x12ab). Tags können zwischen 0 und 65535 liegen.
 * Format: das für den Wert verwendete Format. Binärwerte sind alle signierten Big-Endian-Binärwerte. Wählen Sie für Textfelder die vom SMPP-Provider verwendete Codierung aus.
+
+>[!NOTE]
+>
+>Wenn das Feld **Kundenkonto** leer gelassen wird, wird es durch die Kurzwahlnummer ersetzt.
 
 ### Automatische Antwort auf MO          
 

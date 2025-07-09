@@ -5,10 +5,10 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
-workflow-type: ht
-source-wordcount: '737'
-ht-degree: 100%
+source-git-commit: 3f36d7c425dd5a9a13e1de7a77371b29a462dbea
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 97%
 
 ---
 
@@ -96,7 +96,7 @@ Die folgenden drei Anwendungsfälle werden unterstützt:
 
 >[!CAUTION]
 >
->Nur On-Premise-Datenbanken und AWS-konforme VPN-Geräte werden unterstützt. [Weitere Informationen](#vpn-databases)
+>On-Premise- und Cloud-Datenbanken werden unterstützt. [Weitere Informationen](#vpn-databases)
 
 Um die ordnungsgemäße Verwendung dieser Funktion sicherzustellen, befolgen Sie die folgenden Richtlinien:
 
@@ -122,8 +122,9 @@ Die folgenden On-Premise-Datenbanken werden unterstützt:
 * Sybase
 * Teradata
 * Hadoop über HiveSQL
+* PostgreSQL
 
-Es werden nur AWS-konforme VPN-Geräte unterstützt. Eine Liste kompatibler Geräte finden Sie auf [dieser Seite](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}.
+Cloud-Datenbanken werden unterstützt. Siehe die [Kompatibilitätsmatrix](../start/compatibility-matrix.md#FederatedDataAccessFDA).
 
 >[!NOTE]
 >
