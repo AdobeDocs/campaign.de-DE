@@ -32,7 +32,7 @@ Auf die Blockierungsliste setzen Profile können sich jedoch auch **{**} auf der
 
 >[!NOTE]
 >
->Abgemeldete Empfänger über die [ „mailto“ List-Unsubscribe-Methode ](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} nicht unter Quarantäne gestellt. Sie haben das Abonnement für den [Service](../start/subscriptions.md), der mit dem Versand verknüpft ist, oder werden an die Blockierungsliste gesendet (sichtbar im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** des Profils), wenn für den Versand kein Service definiert wurde.
+>Abgemeldete Empfänger über die [ „mailto“ List-Unsubscribe-Methode ](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} nicht unter Quarantäne gestellt. Sie haben das Abonnement für den [Service](../start/subscriptions.md), der mit dem Versand verknüpft ist, oder werden an die Blockierungsliste gesendet (sichtbar im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** des Profils), wenn für den Versand kein Service definiert wurde.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
