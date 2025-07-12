@@ -88,7 +88,7 @@ _14. Februar 2025_
 
 ### Neue Funktionen {#features-8-7-3}
 
-* **Dynamische Berichte für Transaktionsnachrichten**: Sie können jetzt Ihre Transaktionsnachrichten in der Benutzeroberfläche der dynamischen Berichte überwachen. Diese Berichte ermöglichen es Marketing-Fachleuten, alle Berichtsmetriken und Dimensionen von Transaktionsnachrichten sowie die Aufschlüsselung der über eine Vorlage gesendeten Sendungen in Echtzeit anzuzeigen. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}
+* **Dynamische Berichte für Transaktionsnachrichten**: Sie können jetzt Ihre Transaktionsnachrichten in der Benutzeroberfläche der dynamischen Berichte überwachen. Diese Berichte ermöglichen es Marketing-Fachleuten, alle Berichtsmetriken und Dimensionen von Transaktionsnachrichten sowie die Aufschlüsselung der über eine Vorlage gesendeten Sendungen in Echtzeit anzuzeigen. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=de){target="_blank"}
 
 * **REST-APIs für Transaktionsnachrichten**: Ereignisbasierte Transaktions-APIs sind jetzt für E-Mails verfügbar. [Weitere Informationen](../dev/api/get-started-apis.md)
 
