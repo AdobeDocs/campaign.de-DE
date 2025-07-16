@@ -7,18 +7,16 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 83524feeb6a5de32a1b32c8d66f97a32d270f62d
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 50%
+source-wordcount: '212'
+ht-degree: 53%
 
 ---
 
 # Erste Schritte mit Campaign REST-APIs {#get-started-apis}
 
 >[!CAUTION]
->
->Diese Dokumentation richtet sich an Adobe Campaign Standard-Kunden, die zu Campaign v8 migrieren.
 >
 >Bevor Sie API-Aufrufe ausführen, überprüfen Sie bitte die Volumenbeschränkungen in Ihrer Lizenzvereinbarung. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/de/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers).
 
@@ -41,4 +39,4 @@ Die APIs, die wir bereitstellen, basieren auf **Standardkonzepten** mit einer RE
 
 Alle Endpunkte werden in dieser Dokumentation ausführlich mit den allgemeinen Begriffen beschrieben, die Sie für die Bearbeitung der API kennen sollten, sowie mit der vollständigen API-Referenz, Code-Beispielen und Schnellstartanleitungen. Alle Beispiele arbeiten mit Postman; Sie können aber auch Ihren bevorzugten REST-Client nutzen.
 
-Wenn etwas fehlt oder fehlerhaft erscheint, fragen Sie bitte die [Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community?profile.language=de).
+Wenn etwas fehlt oder fehlerhaft erscheint, fragen Sie bitte die [Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community).
