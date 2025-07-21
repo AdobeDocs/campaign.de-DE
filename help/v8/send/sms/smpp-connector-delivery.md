@@ -5,18 +5,18 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 98%
+source-wordcount: '1342'
+ht-degree: 83%
 
 ---
 
 # Beschreibung des SMPP-Connectors {#smpp-connector-desc}
 
->[!IMPORTANT]
+>[!AVAILABILITY]
 >
->Diese Dokumentation gilt für Adobe Campaign Version 8.7.2 und höher. Informationen zum Wechsel vom alten zum neuen SMS-Connector finden Sie in dieser [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}.
+>Diese Funktion steht allen Campaign FDA-Umgebungen zur Verfügung. Sie **nicht** für Campaign FFDA-Bereitstellungen verfügbar. Diese Dokumentation gilt für Adobe Campaign Version 8.7.2 und höher. Informationen zum Wechsel vom alten zum neuen SMS-Connector finden Sie in dieser [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
 >Für ältere Versionen lesen Sie die [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
@@ -32,7 +32,7 @@ Der SMS-Prozess umfasst zwei wichtige Komponenten: den SMPP-Connector selbst, de
 
 ### Datenfluss für SMPP-Konten {#sms-data-flow-smpp-accounts}
 
-Der SMS-Prozess fragt nms:extAccount ab und erzeugt neue Verbindungen in seinem SMPP-Connector, wobei die Einstellungen jedes Kontos weitergegeben werden. Die Abrufhäufigkeit kann in serverConf in der Einstellung *configRefreshMillis* angepasst werden.
+Der SMS-Prozess fragt nms:extAccount ab und erzeugt neue Verbindungen in seinem SMPP-Connector, wobei die Einstellungen der einzelnen Konten übergeben werden. Die Abrufhäufigkeit kann in serverConf in der Einstellung *configRefreshMillis* angepasst werden.
 
 Der SMPP-Connector versucht für jedes aktive SMPP-Konto, Verbindungen immer aktiv zu halten. Wenn die Verbindung verloren geht, stellt er die Verbindung wieder her.
 
@@ -47,30 +47,30 @@ Der SMPP-Connector versucht für jedes aktive SMPP-Konto, Verbindungen immer akt
 * Der SMS-Prozess erweitert die Vorlage mit Personalisierungsdaten aus dem Versandteil.
 * Der SMPP-Connector generiert ein MT (SUBMIT_SM-PDU), der dem Inhalt und anderen Einstellungen entspricht.
 * Der SMPP-Connector sendet den MT über eine Transmitter- (oder Transceiver-)Verbindung.
-* Der Provider gibt eine ID für diesen MT zurück. Sie wird in nms:providerMsgId eingefügt.
+* Der Provider gibt eine ID für diesen MT zurück. Er wird in nms:providerMsgId eingefügt.
 * Der SMS-Prozess aktualisiert das Broadlog auf den Versandstatus.
-* Im Fall eines endgültigen Fehlers aktualisiert der SMS-Prozess das Broadlog entsprechend und kann eine neue Fehlerart in nms:broadLogMsg erstellen.
+* Im Falle eines endgültigen Fehlers aktualisiert der SMS-Prozess das Broadlog entsprechend und kann eine neue Art von Fehler in nms:broadLogMsg erzeugen.
 
 ### Datenfluss beim Empfangen von SR {#sms-data-flow-sr}
 
 * Der SMPP-Connector empfängt und decodiert den SR (DELIVER_SM-PDU). Er verwendet im externen Konto definierte Regexes, um die Nachrichten-ID und den Status zu erhalten.
-* Nachrichten-ID und Status werden in nms:providerMsgStatus eingefügt
+* Nachrichten-ID und Status werden in nms eingefügt:providerMsgStatus
 * Nach dem Einfügen antwortet der SMPP-Connector mit einer DELIVER_SM_RESP-PDU.
 * Wenn während des Prozesses etwas schiefgelaufen ist, sendet der SMPP-Connector eine negative DELIVER_SM_RESP-PDU und protokolliert eine Nachricht.
 
 ### Datenfluss beim Empfangen eines MO {#sms-data-flow-mo}
 
 * Der SMPP-Connector empfängt und decodiert den MO (DELIVER_SM-PDU).
-* Das Schlüsselwort wird aus der Nachricht extrahiert. Wenn es mit einem deklarierten Schlüsselwort übereinstimmt, werden die entsprechenden Aktionen ausgeführt. Es kann in nms:address geschrieben werden, um die Quarantäne zu aktualisieren.
+* Das Schlüsselwort wird aus der Nachricht extrahiert. Wenn es mit einem deklarierten Schlüsselwort übereinstimmt, werden die entsprechenden Aktionen ausgeführt. Er kann in nms:address schreiben, um die Quarantäne zu aktualisieren.
 * Wenn benutzerdefinierte TLV deklariert werden, werden sie entsprechend ihren jeweiligen Einstellungen decodiert.
-* Der vollständig decodierte und verarbeitete MO wird in die Tabelle nms:inSms eingefügt.
+* Der vollständig decodierte und verarbeitete MO wird in die nms:inSms-Tabelle eingefügt.
 * Der SMPP-Connector antwortet mit einer DELIVER_SM_RESP-PDU. Wenn ein Fehler erkannt wurde, wird ein Fehler-Code an den Provider zurückgegeben.
 
 ### Datenfluss beim Abstimmen von MT und SR {#sms-reconciling-mt-sr}
 
-* Die SR-Abstimmungskomponente liest regelmäßig nms:providerMsgId und nms:providerMsgStatus. Daten aus beiden Tabellen werden zusammengeführt.
-* Für alle Nachrichten, die in beiden Tabellen einen Eintrag enthalten, wird der entsprechende nms:broadLog-Eintrag aktualisiert.
-* Die Tabelle nms:broadLogMsg kann während des Prozesses aktualisiert werden, wenn eine neue Fehlerart erkannt wird, oder um Zähler für Fehler zu aktualisieren, die nicht manuell qualifiziert wurden.
+* Die SR-Abstimmkomponente liest regelmäßig nms:providerMsgId und nms:providerMsgStatus. Daten aus beiden Tabellen werden zusammengeführt.
+* Für alle Nachrichten, die einen Eintrag in beiden Tabellen haben, wird der entsprechende nms:broadLog-Eintrag aktualisiert.
+* Die nms:broadLogMsg-Tabelle kann während des Prozesses aktualisiert werden, wenn ein neuer Fehlertyp erkannt wird, oder um die Zähler für Fehler zu aktualisieren, die nicht manuell qualifiziert wurden.
 
 ## Abgleichen von MT-, SR- und Broadlog-Einträgen {#sms-matching-entries}
 
@@ -84,7 +84,7 @@ Im Folgenden finden Sie ein Diagramm, das den gesamten Prozess beschreibt:
 * Der SMPP-Connector formatiert sie als SUBMIT_SM MT PDU.
 * Der MT wird an den SMPP-Provider gesendet.
 * Der Provider antwortet mit SUBMIT_SM_RESP. SUBMIT_SM und SUBMIT_SM_RESP werden durch ihre sequence_number abgeglichen.
-* SUBMIT_SM_RESP stellt eine ID bereit, die vom Provider stammt. Diese ID wird zusammen mit der Broadlog-ID in die Tabelle nms:providerMsgId eingefügt.
+* SUBMIT_SM_RESP stellt eine ID bereit, die vom Provider stammt. Diese ID wird zusammen mit der Broadlog-ID in die nms:providerMsgId-Tabelle eingefügt.
 
 **Phase 2**
 
@@ -95,7 +95,7 @@ Im Folgenden finden Sie ein Diagramm, das den gesamten Prozess beschreibt:
 
 **Phase 3**
 
-* Die SR-Abstimmungskomponente des SMS-Prozesses scannt die Tabellen nms:providerMsgId und nms:providerMsgStatus regelmäßig.
+* Die SR-Abstimmkomponente des SMS-Prozesses scannt sowohl nms:providerMsgId als auch nms:providerMsgStatus-Tabellen regelmäßig.
 * Wenn eine Zeile in beiden Tabellen übereinstimmende Anbieter-IDs enthält, werden die beiden Einträge zusammengeführt. Dadurch kann die Broadlog-ID (gespeichert in providerMsgId) mit dem Status (gespeichert in providerMsgStatus) abgeglichen werden.
 * Das Broadlog wird mit dem entsprechenden Status aktualisiert.
 
