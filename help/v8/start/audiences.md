@@ -5,18 +5,18 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
+version: Campaign v8, Campaign Classic v7
+source-git-commit: b24e05f152bc299ea7953856bfa71950b5cc9837
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 93%
+source-wordcount: '497'
+ht-degree: 77%
 
 ---
 
+
 # Arbeiten mit Zielgruppen in Campaign{#gs-ac-audiences}
 
-Profile sind in der Campaign-Datenbank gespeicherte Kontakte.
-
-In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) die **Empfänger**. Mit den in der Datenbank gespeicherten Empfängerdaten können Sie die Zielgruppe filtern, die einen bestimmten Versand erhalten soll, und Personalisierungsdaten in den Versandinhalt einfügen. In der Datenbank gibt es noch andere Arten von Profilen. Sie sind für unterschiedliche Zwecke gedacht. So werden beispielsweise Testprofile erstellt, um Ihre Sendungen zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
+Profile stellen die Kontakte dar, die in Ihrer Adobe Campaign-Datenbank gespeichert sind. Standardmäßig sind **Empfänger** die primären Profile, die zum Senden von Sendungen wie E-Mails, SMS oder Briefpost verwendet werden. Mit den in der Datenbank gespeicherten Empfängerdaten können Sie Ihre Zielgruppen definieren und filtern sowie den Versandinhalt personalisieren. Neben den Empfängerinnen und Empfängern gibt es für bestimmte Zwecke auch andere Profiltypen. Beispielsweise können Sie mit Testprofilen Sendungen testen, bevor sie an Ihre tatsächliche Audience gesendet werden.
 
 [In diesem Abschnitt](../audiences/gs-audiences.md) erfahren Sie, wie Sie Profile und Zielgruppen importieren, aktualisieren und verwalten.
 
