@@ -5,10 +5,10 @@ type: Event
 title: Technotes zu Adobe Campaign
 description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: d80d81bf8c25c467c909c9ccac7c31e6963409f0
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 94%
+source-wordcount: '73'
+ht-degree: 91%
 
 ---
 
@@ -30,4 +30,5 @@ ht-degree: 94%
    + [Einstellung der Client-Konsole für 32 Bit](upgrades/console.md)
    + Sicherheit {#security}
       + [Rotation von Kundenanmeldedaten](security/credential-rotation-guide.md)
+      + [Asymetrische Verschlüsselung](security/asymetric-encryption.md)
 + [&lt; Zurück zur Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)
