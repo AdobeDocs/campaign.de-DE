@@ -5,10 +5,10 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 1d9d4111cde1e230220a04c8fd10a126116339ad
+source-git-commit: 115b7b6824f3736e03f9fb87898f1264f9bab636
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 95%
+source-wordcount: '286'
+ht-degree: 88%
 
 ---
 
@@ -21,10 +21,9 @@ In [!DNL Adobe Campaign] stehen Ihnen eine Reihe von JavaScript-Funktionen zur V
 
 >[!NOTE]
 >
->* Je nach Bereitstellungsmodell können Sie REST-APIs auch mit Campaign v8 verwenden. [Weitere Informationen](../dev/api/get-started-apis.md).
+>Je nach Bereitstellungsmodell können Sie REST-APIs auch mit Campaign v8 verwenden. [Weitere Informationen](../dev/api/get-started-apis.md).
 
-
-Sie können JavaScript-APIs verwenden, um in der Cloud-Datenbank von Campaign Schreibvorgänge auszuführen oder aus ihr Daten abzufragen:
+Sie können [Campaign JavaScript-APIs](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"} verwenden, um in der Cloud-Datenbank von Campaign zu schreiben oder aus ihr zu lesen:
 
 * Geschäftsspezifische APIs, mit denen Sie auf jedes Objekt reagieren können: Sendungen, Workflows, Abonnements usw. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=de#configuring-campaign-classic){target="_blank"}.
 * Generische Datenzugriffs-APIs zur Abfrage von Datenmodelldaten. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=de){target="_blank"}.
@@ -55,3 +54,4 @@ Um APIs verwenden und mit [!DNL Adobe Campaign] interagieren zu können, müssen
 **Verwandte Themen**
 
 * [Best Practices für Datenmodelle](datamodel-best-practices.md)
+* [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}
