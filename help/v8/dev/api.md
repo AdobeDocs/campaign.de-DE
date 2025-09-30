@@ -5,10 +5,10 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 1d9d4111cde1e230220a04c8fd10a126116339ad
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 97%
+source-wordcount: '280'
+ht-degree: 95%
 
 ---
 
@@ -19,16 +19,17 @@ In [!DNL Adobe Campaign] stehen Ihnen eine Reihe von JavaScript-Funktionen zur V
 * Innerhalb von Skripten – in [!DNL Adobe Campaign]-Workflows
 * Über APIs für externe Systeme
 
+>[!NOTE]
+>
+>* Je nach Bereitstellungsmodell können Sie REST-APIs auch mit Campaign v8 verwenden. [Weitere Informationen](../dev/api/get-started-apis.md).
+
+
 Sie können JavaScript-APIs verwenden, um in der Cloud-Datenbank von Campaign Schreibvorgänge auszuführen oder aus ihr Daten abzufragen:
 
 * Geschäftsspezifische APIs, mit denen Sie auf jedes Objekt reagieren können: Sendungen, Workflows, Abonnements usw. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=de#configuring-campaign-classic){target="_blank"}.
 * Generische Datenzugriffs-APIs zur Abfrage von Datenmodelldaten. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=de){target="_blank"}.
 
 Es ist zu beachten, dass Campaign in seiner [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) mit zwei Datenbanken verwendet werden kann: einer lokalen Datenbank für Echtzeit-Messaging und Einzelabfragen über die Benutzeroberfläche und das Schreiben über APIs sowie einer Cloud-Datenbank für die Kampagnenausführung, für das Reporting, für die Datenaufnahme, für Batch-Abfragen und für die Workflow-Ausführung.
-
->[!NOTE]
->
->* Sie können REST-APIs mit Campaign v8 verwenden. [Weitere Informationen](../dev/api/get-started-apis.md).
 
 >[!CAUTION]
 >

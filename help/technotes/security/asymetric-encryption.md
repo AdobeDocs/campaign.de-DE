@@ -4,10 +4,10 @@ title: Technote - Asymmetrische Ver- und Entschlüsselung in Adobe Campaign
 description: Technische Anmerkung - Asymmetrische Verschlüsselung und Entschlüsselung in Adobe Campaign
 hide: true
 hidefromtoc: true
-source-git-commit: d80d81bf8c25c467c909c9ccac7c31e6963409f0
+source-git-commit: 1d9d4111cde1e230220a04c8fd10a126116339ad
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 0%
+source-wordcount: '142'
+ht-degree: 2%
 
 ---
 
@@ -51,3 +51,7 @@ var decrypted = rsaPrivateDecrypt(
 );
 ```
 
+**Zusätzliche Ressourcen**
+
+* [Erste Schritte mit  [!DNL Campaign] -APIs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/api){target="_blank"}
+* [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}
