@@ -24,7 +24,7 @@ Einige Konsolenfelder werden mit Auflistungen konfiguriert. Wenn eine Auflistung
 
 ## Zugreifen auf Auflistungen
 
-Die in diesen Feldern verwendeten Werte werden zentral verwaltet. Sie können sie in der Explorer-Struktur unter **Administration“,** (Platform`>` **** Auflistungen`>` hinzufügen **bearbeiten** aktualisieren oder löschen.
+Die in diesen Feldern verwendeten Werte werden zentral verwaltet. Sie können sie in der Explorer-Struktur unter **Administration“,** (Platform`>` **&#x200B;**&#x200B;Auflistungen`>` hinzufügen **bearbeiten** aktualisieren oder löschen.
 
 * Im oberen Abschnitt befindet sich die Liste der Felder, für die eine Auflistung bestimmt wurde.
 * Im unteren Abschnitt werden die verfügbaren Werte aufgelistet.
