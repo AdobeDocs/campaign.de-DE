@@ -5,10 +5,10 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
-workflow-type: ht
-source-wordcount: '1410'
-ht-degree: 100%
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+workflow-type: tm+mt
+source-wordcount: '1420'
+ht-degree: 99%
 
 ---
 
@@ -179,21 +179,23 @@ Sie können jetzt die Tabellen konfigurieren, die synchronisiert werden sollen.
 >
 >Fügen Sie der Zulassungsliste unbedingt zwei URLs hinzu: die Server-URL und `login.microsoftonline.com`. Wenden Sie sich dazu an Ihren Adobe-Support-Mitarbeiter.
 
-## Synchronisation der Auflistungen{#sfdc-enum-sync}
+## Synchronisation der Aufzählungen{#sfdc-enum-sync}
 
-Sobald das Schema erstellt ist, können Sie Auflistungen in Dynamics 365 automatisch mit Adobe Campaign synchronisieren.
+Sobald das Schema erstellt ist, können Sie Aufzählungen in Dynamics 365 automatisch mit Adobe Campaign synchronisieren.
 
-1. Öffnen Sie den Assistenten über den Link **[!UICONTROL Auflistungen synchronisieren...]**.
-1. Wählen Sie die Adobe Campaign-Auflistung aus, die der Dynamics 365-Auflistung entspricht.
-Sie können alle Werte einer Adobe Campaign-Auflistung durch die des CRM-Systems ersetzen: Wählen Sie hierzu in der Spalte **[!UICONTROL Ersetzen]** die Option **[!UICONTROL Ja]**.
-1. Klicken Sie abschließend auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL Starten]**, um mit dem Import der Auflistungen zu beginnen.
-1. Durchsuchen Sie den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]**, um die importierten Werte zu überprüfen.
+1. Öffnen Sie den Assistenten über den Link **[!UICONTROL Aufzählungen synchronisieren...]**.
+1. Wählen Sie die Adobe Campaign-Aufzählung aus, die der Dynamics 365-Aufzählung entspricht.
+Sie können alle Werte einer Adobe Campaign-Aufzählung durch die des CRM-Systems ersetzen: Wählen Sie hierzu in der Spalte **[!UICONTROL Ersetzen]** die Option **[!UICONTROL Ja]**.
+1. Klicken Sie abschließend auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL Starten]**, um mit dem Import der Aufzählungen zu beginnen.
+1. Durchsuchen Sie den Knoten **[!UICONTROL Administration > Plattform > Aufzählungen]**, um die importierten Werte zu überprüfen.
 
 Adobe Campaign und Microsoft Dynamics 365 sind nun miteinander verbunden. Sie können eine Datensynchronisation zwischen den beiden Systemen einrichten.
 
 Um Daten zwischen Adobe Campaign und Microsoft CRM zu synchronisieren, müssen Sie einen Workflow erstellen und die Aktivität **[!UICONTROL CRM-Connector]** verwenden.
 
 Weitere Informationen zur Datensynchronisation finden Sie [auf dieser Seite](crm-data-sync.md).
+
+Weitere Informationen zur Auflistungsverwaltung in Campaign [auf dieser Seite](../dev/enumerations.md).
 
 ### Unterstützte Felddatentypen {#ms-dyn-supported-types}
 
@@ -205,7 +207,7 @@ Bei Microsoft Dynamics 365 werden folgende Attributtypen unterstützt/nicht unte
 | Basistypen: boolean, datetime, decimal, float, double, integer, bigint, string | Ja |
 | Geld (als Dublette) | Ja |
 | memo, entityname, primarykey, uniqueidentifier (als Zeichenfolgen) | Ja |
-| Status, Auswahlliste (wir speichern die möglichen Werte in Auflistungen), Status (Zeichenfolge) | Ja |
+| Status, Auswahlliste (wir speichern die möglichen Werte in Aufzählungen), Status (Zeichenfolge) | Ja |
 | owner (als Zeichenfolge) | Ja |
 | Suche (nur Referenzsuche einzelner Entitäten) | Ja |
 | customer | Nein |

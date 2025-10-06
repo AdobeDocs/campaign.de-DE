@@ -5,10 +5,10 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
-workflow-type: ht
-source-wordcount: '1400'
-ht-degree: 100%
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+workflow-type: tm+mt
+source-wordcount: '1423'
+ht-degree: 98%
 
 ---
 
@@ -221,15 +221,17 @@ Um einen Standardwert mit einem Feld zu verknüpfen, können Sie das `<default> 
 
 `<sqldefault>`: ermöglicht es Ihnen, beim Erstellen eines Felds einen zusätzlichen Wert zu erhalten. Dieser Wert wird als SQL-Ergebnis angezeigt. Während einer Aktualisierung des Schemas wirkt sich dieser Wert nur auf die neuen Einträge aus.
 
-### Auflistungen {#enumerations}
+### Aufzählungen {#enumerations}
 
-#### Freie Auflistung {#free-enumeration}
+Verwenden Sie freie, feste oder datenbankbasierte Auflistungen [Auflistungen](../dev/enumerations.md) um Feldwerte zu steuern. Sie bieten Dropdown-Listen für einfachere Eingabe, konsistente Daten und ein flexibles Schema-Design.
 
-Mit der Eigenschaft **userEnum** können Sie eine freie Auflistung definieren, um die in diesem Feld eingegebenen Werte zu speichern und anzuzeigen. Die Syntax sieht folgendermaßen aus:
+#### Freie Aufzählung {#free-enumeration}
 
-**userEnum=&quot;Name der Auflistung&quot;**
+Mit der Eigenschaft **userEnum** können Sie eine freie Aufzählung definieren, um die in diesem Feld eingegebenen Werte zu speichern und anzuzeigen. Die Syntax sieht folgendermaßen aus:
 
-Der Name der Auflistung kann frei gewählt und für andere Felder freigegeben werden.
+**userEnum=&quot;Name der Aufzählung&quot;**
+
+Der Name der Aufzählung kann frei gewählt und für andere Felder freigegeben werden.
 
 Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 
@@ -237,19 +239,19 @@ Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 
 >[!NOTE]
 >
->In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Auflistungen]** zum Verwalten von Auflistungen verwendet.
+>In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Aufzählungen]** zum Verwalten von Aufzählungen verwendet.
 
-#### Auflistung festlegen {#set-enumeration}
+#### Aufzählung festlegen {#set-enumeration}
 
-Mit der Eigenschaft **enum** können Sie eine feste Auflistung definieren, die verwendet wird, wenn die Liste der möglichen Werte im Voraus bekannt ist.
+Mit der Eigenschaft **enum** können Sie eine feste Aufzählung definieren, die verwendet wird, wenn die Liste der möglichen Werte im Voraus bekannt ist.
 
-Das Attribut **enum** bezieht sich auf die Definition einer Auflistungsklasse, die im Schema außerhalb des Hauptelements gefüllt wird.
+Das Attribut **enum** bezieht sich auf die Definition einer Aufzählungsklasse, die im Schema außerhalb des Hauptelements gefüllt wird.
 
-Auflistungen ermöglichen es dem Benutzer, einen Wert aus einer Dropdown-Liste auszuwählen, anstatt ihn in ein reguläres Eingabefeld einzugeben:
+Aufzählungen ermöglichen es dem Benutzer, einen Wert aus einer Dropdown-Liste auszuwählen, anstatt ihn in ein reguläres Eingabefeld einzugeben:
 
 ![](assets/schema_enum.png)
 
-Beispiel für eine Deklaration einer Auflistung im Datenschema:
+Beispiel für eine Deklaration einer Aufzählung im Datenschema:
 
 ```
 <enumeration name="gender" basetype="byte" default="0">    
@@ -259,29 +261,29 @@ Beispiel für eine Deklaration einer Auflistung im Datenschema:
 </enumeration>
 ```
 
-Eine Auflistung wird über das Element **`<enumeration>`** außerhalb des Hauptelements deklariert.
+Eine Aufzählung wird über das Element **`<enumeration>`** außerhalb des Hauptelements deklariert.
 
-Die Eigenschaften der Auflistung lauten wie folgt:
+Die Eigenschaften der Aufzählung lauten wie folgt:
 
 * **baseType**: Datentyp, der mit den Werten verknüpft ist,
-* **label**: Beschreibung der Auflistung,
-* **name**: Name der Auflistung,
-* **default**: Standardwert der Auflistung.
+* **label**: Beschreibung der Aufzählung,
+* **name**: Name der Aufzählung,
+* **default**: Standardwert der Aufzählung.
 
-Die Werte für die Auflistung werden im Element **`<value>`** mit den folgenden Attributen deklariert:
+Die Werte für die Aufzählung werden im Element **`<value>`** mit den folgenden Attributen deklariert:
 
 * **name**: Name des intern gespeicherten Werts,
 * **label**: über die grafische Oberfläche angezeigtes Label.
 
-#### dbenum-Auflistung {#dbenum-enumeration}
+#### dbenum-Aufzählung {#dbenum-enumeration}
 
-* Mit der Eigenschaft **dbenum** können Sie eine Auflistung definieren, deren Eigenschaften denen der Eigenschaft **enum** ähnlich sind.
+* Mit der Eigenschaft **dbenum** können Sie eine Aufzählung definieren, deren Eigenschaften denen der Eigenschaft **enum** ähnlich sind.
 
   Das Attribut **name** speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
 
-  Die Werte werden über den Knoten **[!UICONTROL Administration > Auflistungen]** definiert.
+  Die Werte werden über den Knoten **[!UICONTROL Administration > Aufzählungen]** definiert.
 
-  Diese Auflistung dient beispielsweise zur Angabe der Art von Kampagnen.
+  Diese Aufzählung dient beispielsweise zur Angabe der Art von Kampagnen.
 
   ![](assets/schema_dbenum.png)
 

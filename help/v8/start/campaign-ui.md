@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 73%
+source-wordcount: '1129'
+ht-degree: 75%
 
 ---
 
@@ -189,25 +189,7 @@ Die Hauptunterschiede zwischen US-amerikanischem Englisch und britischem Englisc
 </table>
 
 
+## Zusätzliche Ressourcen
 
-## Standardeinheiten {#default-units}
-
-In Feldern, die eine Dauer bezeichnen (z. B. Gültigkeit von Versandressourcen, Validierungszeitraum einer Aufgabe etc.), sind verschiedene **Einheiten** möglich:
-
-* **[!UICONTROL s]** für Sekunden,
-* **[!UICONTROL min]** für Minuten,
-* **[!UICONTROL h]** für Stunden,
-* **[!UICONTROL T]** für Tage.
-
-
-## Aufzählung {#enumeration}
-
-Mithilfe der Eingabefelder mit einer Dropdown-Liste können Sie einen Auflistungswert eingeben, der gespeichert und dann als Option in der Dropdown-Liste vorgeschlagen werden kann.
-
-Beispiel: Im Feld **[!UICONTROL Ort]** auf der Registerkarte **[!UICONTROL Allgemein]** eines Empfängerprofils können Sie „London“ eingeben. Wenn Sie die Eingabetaste drücken, um diesen Wert zu bestätigen, werden Sie gefragt, ob Sie diesen Wert für die mit dem Feld verknüpfte Auflistung speichern möchten.  Wenn Sie auf **[!UICONTROL Ja]** klicken, ist dieser Wert in der Dropdown-Liste des entsprechenden Felds verfügbar.
-
-Auflistungen (auch als „Einzelauflistungen“ bezeichnet) werden vom Administrator über den Abschnitt **[!UICONTROL Administration > Plattform > Auflistungen]** verwaltet.
-
-Erfahren Sie, wie [mit Auflistungen arbeiten](../dev/enumerations.md)
-
-Weitere Informationen zu [Auflistungen in Schemata](../dev/schema-structure.md#enumerations)
+* **[Arbeiten mit Auflistungen](../dev/enumerations.md)** - Standardisieren von Feldwerten mit vordefinierten Dropdown-Listen für eine schnellere, konsistentere Dateneingabe.
+* **[Auflistungen in Schemata](../dev/schema-structure.md#enumerations)** - Als Campaign-Entwicklungsperson können Sie freie, feste oder datenbankbasierte Auflistungen in Ihren Schemata verwenden, um Feldwerte zu steuern.

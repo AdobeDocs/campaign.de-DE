@@ -5,10 +5,10 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
-workflow-type: ht
-source-wordcount: '380'
-ht-degree: 100%
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 97%
 
 ---
 
@@ -60,22 +60,24 @@ Sie können jetzt die Tabellen konfigurieren, die synchronisiert werden sollen.
 
    ![](assets/sfdc-schemas.png)
 
-## Synchronisation der Auflistungen{#sfdc-enum-sync}
+## Synchronisation der Aufzählungen{#sfdc-enum-sync}
 
 Sobald das Schema erstellt ist, können Sie Aufzählungen in Salesforce automatisch mit Adobe Campaign synchronisieren.
 
-1. Öffnen Sie den Assistenten über den Link **[!UICONTROL Auflistungen synchronisieren...]**.
-1. Wählen Sie die Adobe Campaign-Auflistung aus, die der Salesforce-Auflistung entspricht.
-Sie können alle Werte einer Adobe Campaign-Auflistung durch die des CRM-Systems ersetzen: Wählen Sie hierzu in der Spalte **[!UICONTROL Ersetzen]** die Option **[!UICONTROL Ja]**.
+1. Öffnen Sie den Assistenten über den Link **[!UICONTROL Aufzählungen synchronisieren...]**.
+1. Wählen Sie die Adobe Campaign-Aufzählung aus, die der Salesforce-Aufzählung entspricht.
+Sie können alle Werte einer Adobe Campaign-Aufzählung durch die des CRM-Systems ersetzen: Wählen Sie hierzu in der Spalte **[!UICONTROL Ersetzen]** die Option **[!UICONTROL Ja]**.
 
    ![](assets/sfdc-enum.png)
 
-1. Klicken Sie abschließend auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL Starten]**, um mit dem Import der Auflistungen zu beginnen.
+1. Klicken Sie abschließend auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL Starten]**, um mit dem Import der Aufzählungen zu beginnen.
 
-1. Durchsuchen Sie den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]**, um die importierten Werte zu überprüfen. Weitere Informationen über Auflistungen finden Sie auf [dieser Seite](../config/ui-settings.md#enumerations).
+1. Durchsuchen Sie den Knoten **[!UICONTROL Administration > Plattform > Aufzählungen]**, um die importierten Werte zu überprüfen. Weitere Informationen über Aufzählungen finden Sie auf [dieser Seite](../config/ui-settings.md#enumerations).
 
 Adobe Campaign und Salesforce.com sind jetzt verbunden. Sie können eine Datensynchronisation zwischen den beiden Systemen einrichten.
 
 Um Daten zwischen Adobe Campaign und SFDC zu synchronisieren, müssen Sie einen Workflow erstellen und die Aktivität **[!UICONTROL CRM-Connector]** verwenden.
 
 Weitere Informationen zur Datensynchronisation finden Sie [auf dieser Seite](crm-data-sync.md).
+
+Weitere Informationen zur Auflistungsverwaltung in Campaign [auf dieser Seite](../dev/enumerations.md).
