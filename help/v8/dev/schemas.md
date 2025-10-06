@@ -5,10 +5,10 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 98%
+source-wordcount: '1255'
+ht-degree: 94%
 
 ---
 
@@ -94,11 +94,11 @@ Bestimmte Namespaces sind für Beschreibungen der Systementitäten reserviert, d
 * **temp**: für temporäre Schemata reserviert
 * **crm**: für CRM-Connector-Integration reserviert
 
-Der Identifizierungsschlüssel eines Stylesheets ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt (z. B. **nms:recipient**).
+Der Identifizierungsschlüssel eines Schemas ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt (z. B. **nms:recipient**.
 
 ## Campaign-Schemata erstellen und erweitern {#create-or-extend-schemas}
 
-Um einem der Standard-Datenschemata in Campaign ein Feld oder ein anderes Element hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern.
+Um einem der Standard-Datenschemata in Campaign ein Feld oder ein anderes Element hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern.
 
 Weiterführende Informationen hierzu finden Sie unter [Erweitern eines Schemas](extend-schema.md).
 
@@ -111,13 +111,13 @@ Weiterführende Informationen hierzu finden Sie unter [Erstellen eines neuen Sch
 
 Im Anschluss an die Erstellung oder Erweiterung eines Schemas für Ihre Arbeit sollten Sie dessen XML-Inhaltselemente in der im Folgenden aufgeführten Reihenfolge definieren.
 
-## Auflistungen {#enumerations}
+## Aufzählungen {#enumerations}
 
-Auflistungen werden als Erstes definiert, noch vor dem Hauptelement des Schemas. Über sie können Sie Werte in einer Liste anzeigen, um die Auswahl einzuschränken, die der Benutzer für ein bestimmtes Feld hat.
+Aufzählungen werden als Erstes definiert, noch vor dem Hauptelement des Schemas. Über sie können Sie Werte in einer Liste anzeigen, um die Auswahl einzuschränken, die der Benutzer für ein bestimmtes Feld hat.
 
 Beispiel:
 
-```
+```xml
 <enumeration basetype="byte" name="exTransactionTypeEnum" default="store">
 <value label="Website" name="web" value="0"/>
 <value label="Call Center" name="phone" value="1"/>
@@ -125,16 +125,16 @@ Beispiel:
 </enumeration>
 ```
 
-Beim Definieren von Feldern können Sie diese Auflistung wie folgt verwenden:
+Beim Definieren von Feldern können Sie diese Aufzählung wie folgt verwenden:
 
-```
+```xml
 <attribute desc="Type of Transaction" label="Transaction Type" name="transactionType" 
 type="string" enum="exTransactionTypeEnum"/>
 ```
 
 >[!NOTE]
 >
->Sie können auch benutzerseitig verwaltete Auflistungen verwenden (in der Regel unter **[!UICONTROL Administration]** > **[!UICONTROL Platform]**), um die Werte für ein bestimmtes Feld anzugeben. Dabei handelt es sich um globale Auflistungen. Sie sind besser geeignet, wenn Ihre Auflistung außerhalb des von Ihnen eingesetzten Schemas verwendet werden kann.
+>Sie können auch benutzerseitig verwaltete Aufzählungen verwenden (in der Regel unter **[!UICONTROL Administration]** > **[!UICONTROL Platform]**), um die Werte für ein bestimmtes Feld anzugeben. Dabei handelt es sich um globale Aufzählungen. Sie sind besser geeignet, wenn Ihre Aufzählung außerhalb des von Ihnen eingesetzten Schemas verwendet werden kann.
 
 <!--
 ## Index {#index} 
@@ -178,7 +178,7 @@ Der Primärschlüssel kann auch mit dem Attribut **internal** definiert werden.
 
 Beispiel:
 
-```
+```xml
 <key name="householdId" internal="true">
   <keyfield xpath="@householdId"/>
 </key>
@@ -206,25 +206,25 @@ Weitere Informationen zu den einzelnen Attributen finden Sie in der entsprechend
 
 Beispiel für die Definition eines Standardwerts:
 
-```
+```xml
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
 ```
 
 Beispiel für die Verwendung eines allgemeinen Attributs als Vorlage für ein Feld, das ebenfalls als obligatorisch gekennzeichnet ist:
 
-```
+```xml
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
 Beispiel eines berechneten Felds, das mit dem Attribut **@advanced** ausgeblendet wird:
 
-```
+```xml
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
 Beispiel für ein XML-Feld, das ebenfalls in einem SQL-Feld gespeichert ist und ein **@dataPolicy**-Attribut aufweist.
 
-```
+```xml
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
 ```
 
@@ -246,19 +246,19 @@ Es gibt drei Arten von Kardinalität: 1-1, 1-N und N-N. Standardmäßig wird der
 
 Beispiel für eine 1-N-Relation zwischen der Empfängertabelle (vordefiniertes Schema) und einer Tabelle mit benutzerdefinierten Transaktionen:
 
-```
+```xml
 <element label="Recipient" name="lnkRecipient" revLink="lnkTransactions" target="nms:recipient" type="link"/>
 ```
 
 Beispiel für eine 1-1-Relation zwischen einem benutzerspezifischen Schema &quot;Car&quot; (im Namespace &quot;cus&quot;) und der Empfängertabelle:
 
-```
+```xml
 <element label="Car" name="lnkCar" revCardinality="single" revLink="recipient" target="cus:car" type="link"/>
 ```
 
 Beispiel für eine externe Relation zwischen der Empfängertabelle und einer Tabelle mit Adressen, die auf der E-Mail-Adresse anstatt auf dem Primärschlüssel basiert:
 
-```
+```xml
 <element name="emailInfo" label="Email Info" revLink="recipient" target="nms:address" type="link" externalJoin="true">
   <join xpath-dst="@address" xpath-src="@email"/>
 </element>
@@ -272,7 +272,7 @@ Es kann sich als nützlich erweisen, am Ende Ihres Schemas ein Tracking-Element 
 
 Gehen Sie wie im nachfolgenden Beispiel vor, um Felder mit Bezug auf das Erstellungsdatum, den Benutzer, der die Daten erstellt hat, das Datum und den Autor der letzten Änderung für alle Daten in Ihrer Tabelle einzubeziehen:
 
-```
+```xml
 <element aggregate="xtk:common:auditTrail" name="auditTrail"/>
 ```
 

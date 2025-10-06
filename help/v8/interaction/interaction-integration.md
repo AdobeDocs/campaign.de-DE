@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie ein Angebot auf einer Web-Seite hinzufügen.
 feature: Interaction, Offers
 role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 100%
+source-wordcount: '1479'
+ht-degree: 95%
 
 ---
 
@@ -175,7 +175,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Das Schema definiert die Felder Titel 2 und Preis.
 
-   Im vorliegenden Beispiel trägt es den Namen **cus:offer**.
+   Der Name des Schemas im Beispiel lautet **cus:offer**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -318,11 +318,11 @@ Die für die Angebotsverwaltung verfügbaren SOAP-Webservices unterscheiden sich
 
 ### Angebotsvorschläge {#offer-proposition}
 
-Für Angebotsvorschläge über SOAP muss der Befehl **nms:proposition#Propose** hinzugefügt werden, gefolgt von im Anschluss erläuterten Parametern:
+Fügen Sie für einen Angebotsvorschlag über SOAP den Befehl **nms:proposition#Propose** hinzu, gefolgt von den folgenden Parametern:
 
-* **targetId** - Primärschlüssel des Kontakts (es kann sich um einen zusammengesetzten Schlüssel handeln).
+* **targetId** – Primärschlüssel des Kontakts (es kann sich um einen zusammengesetzten Schlüssel handeln).
 * **maxCount** - gibt die Anzahl an Angebotsvorschlägen für den Kontakt an.
-* **context** - erlaubt das Einfügen von Kontextdaten in das Platzierungsschema. Wenn das verwendete Schema **nms:interaction** lautet, sollte **`<empty>`** hinzugefügt werden.
+* **context** - erlaubt das Einfügen von Kontextdaten in das Platzierungsschema. Wenn das verwendete Schema &quot;**&quot;:interaction**, sollte **`<empty>`** hinzugefügt werden.
 * **categories** - bezeichnet die Kategorie, der die vorgeschlagenen Angebote angehören müssen.
 * **themes** - bezeichnet die Themen, denen die vorgeschlagenen Angebote entsprechen müssen.
 * **uuid** - Wert des permanenten Adobe Campaign-Cookies (&quot;uuid230&quot;).
@@ -340,11 +340,11 @@ Als Antwort auf die Abfrage gibt der SOAP-Dienst folgende Parameter zurück:
 
 ### Angebotsaktualisierung {#offer-update}
 
-Ergänzen Sie die URL mit dem Befehl **nms:interaction#UpdateStatus** und folgenden Parametern:
+Fügen Sie den **nms:interaction#UpdateStatus**-Befehl zur URL hinzu, gefolgt von diesen Parametern:
 
 * **proposition** - die die vom Angebotsmodul ausgegebene Vorschlagskennung enthaltende Zeichenfolge. Siehe [Angebotsvorschläge](#offer-proposition).
-* **status** - Zeichenfolge, die den neuen Status des Angebots angibt. Die möglichen Werte sind in der Auflistung **propositionStatus**, im Schema **nms:common** aufgeführt. Beispielsweise entspricht die Zahl 3 werksmäßig dem Status **Akzeptiert**.
-* **context** - XML-Element, mit dem Sie Kontextdaten zum Platzierungsschema hinzufügen können. Wenn das verwendete Schema **nms:interaction** lautet, sollte **`<empty>`** hinzugefügt werden.
+* **status** - Zeichenfolge, die den neuen Status des Angebots angibt. Die möglichen Werte werden im Schema **propositionStatus** [enumeration](../config/enumerations.md) im **nms:common** aufgeführt. Beispielsweise entspricht die Zahl 3 werksmäßig dem Status **Akzeptiert**.
+* **context** - XML-Element, mit dem Sie Kontextdaten zum Platzierungsschema hinzufügen können. Wenn das verwendete Schema &quot;**&quot;:interaction**, sollte **`<empty>`** hinzugefügt werden.
 
 ### Anwendungsbeispiel eines SOAP-Aufrufs {#example-using-a-soap-call}
 

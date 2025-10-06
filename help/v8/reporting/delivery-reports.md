@@ -3,7 +3,7 @@ title: Integrierte Versandberichte in Adobe Campaign
 description: Integrierte Versandberichte in Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 100%
@@ -71,7 +71,7 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 
 **[!UICONTROL 3. Öffnungs- und Klickrate]**
 
-Die Tabelle zeigt - aufgeschlüsselt nach Domains - Sendungen, Öffnungen, Klicks und Brutto-Reaktionsraten. Folgende Indikatoren werden angezeigt:
+Die Tabelle zeigt – aufgeschlüsselt nach Domains – Sendungen, Öffnungen, Klicks und Brutto-Reaktionsraten. Folgende Indikatoren werden angezeigt:
 
 * **[!UICONTROL Gesendet]**: Gesamtzahl der auf dieser Domain gesendeten Nachrichten.
 * **[!UICONTROL Beschwerden]**: Anzahl der Nachrichten für diese Domain, die von den Empfängerinnen oder Empfängern als unerwünscht erklärt wurden. Die Rate wird auf der Grundlage der Gesamtzahl der auf dieser Domain gesendeten Nachrichten berechnet.
@@ -83,7 +83,7 @@ Die Tabelle zeigt - aufgeschlüsselt nach Domains - Sendungen, Öffnungen, Klick
 >
 >Die in diesem Bericht dargestellten Domain-Namen werden in der auf Cube-Niveau verwendeten Auflistung definiert. Um Standard-Domains zu ändern, hinzuzufügen oder zu entfernen, bearbeiten Sie die **[!UICONTROL Domains]**-Auflistung und passen Sie die Werte und Aliase an. Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die keinem Auflistungswert entsprechen.
 >
->Auf [dieser Seite](../config/ui-settings.md) erfahren Sie, wie Sie auf Ihre Auflistungen zugreifen und sie konfigurieren können.
+>Auf [dieser Seite](../config/enumerations.md) erfahren Sie, wie Sie auf Ihre Aufzählungen zugreifen und sie konfigurieren können.
 
 
 **[!UICONTROL 4. Erzeugte Clickstreams]**
@@ -161,7 +161,7 @@ Dieser Bereich zeigt zwei Indikatoren:
 
 **[!UICONTROL Ausschlussgründe]**
 
-Das Diagramm in der Mitte veranschaulicht die Verteilung der ausgeschlossenen Nachrichten nach Regeln.
+Das Diagramm in der Mitte veranschaulicht die Aufschlüsselung der ausgeschlossenen Nachrichten nach Regeln.
 
 **[!UICONTROL Versandstatistiken]**
 

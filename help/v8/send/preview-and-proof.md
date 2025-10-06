@@ -5,10 +5,10 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 100%
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
@@ -48,8 +48,9 @@ Die Testversand-Zielgruppe kann in der Versandvorlage oder versandspezifisch def
 Der Typ der Testversand-Zielgruppe wird aus der Dropdown-Liste **[!UICONTROL Zielgruppenbestimmungsmodus]** ausgewählt.
 
 * Verwenden Sie die Option **[!UICONTROL Bestimmung einer speziellen Testversand-Zielgruppe]**, um die Empfängerinnen und Empfänger in der Datenbank als die Testversand-Zielgruppe auszuwählen.
-* Verwenden Sie die Option **[!UICONTROL Adressersetzung]** zur Eingabe der E-Mail-Adressen und zur Validierung des Inhalts mithilfe der Zielgruppen-Empfängerdaten. Die Ersatzadressen können manuell eingegeben oder aus der Dropdown-Liste ausgewählt werden. Die zugehörige Auflistung ist die Ersatzadresse (rcpAddress).
-Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie können jedoch eine bestimmte Empfängerin oder einen bestimmten Empfänger aus der Hauptzielgruppe über das **[!UICONTROL Detail]**-Symbol auswählen.
+* Verwenden Sie die Option **[!UICONTROL Adressersetzung]** zur Eingabe der E-Mail-Adressen und zur Validierung des Inhalts mithilfe der Zielgruppen-Empfängerdaten. Die Ersatzadressen können manuell eingegeben oder aus der Dropdown-Liste ausgewählt werden. Die zugehörige [Auflistung](../config/enumerations.md) ist **Substitutionsadresse (rcpAddress)**.
+
+  Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie können jedoch eine bestimmte Empfängerin oder einen bestimmten Empfänger aus der Hauptzielgruppe über das **[!UICONTROL Detail]**-Symbol auswählen.
 
   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
@@ -62,7 +63,7 @@ Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie k�
 
   >[!NOTE]
   >
-  >Testadressen gehören nicht zur Standard-Empfängertabelle (nms:recipient), sondern werden in einer separaten Tabelle erstellt. Wenn Sie die Empfängertabelle um neue Daten erweitern, müssen Sie die Testadressen-Tabelle ebenfalls um die gleichen Daten erweitern.
+  >Testadressen gehören nicht zur Standard-Empfängertabelle (nms), :recipient werden in einer separaten Tabelle erstellt. Wenn Sie die Empfängertabelle um neue Daten erweitern, müssen Sie die Testadressen-Tabelle ebenfalls um die gleichen Daten erweitern.
 
   Weitere Informationen zu Testadressen finden Sie in [diesem Abschnitt](../audiences/test-profiles.md).
 
@@ -105,4 +106,4 @@ Standardmäßig werden Testversandnachrichten durch die Variable `Proof #N` im B
 
 Hier erfahren Sie, wie Sie einen E-Mail-Testversand durchführen und validieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447008?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

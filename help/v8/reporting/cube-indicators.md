@@ -5,10 +5,10 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -102,13 +102,13 @@ Im Beispiel sollen nur Jahre, Monate und Tage angezeigt werden. Beachten Sie, da
 
 1. Erstellen Sie eine weitere Dimension, um Daten relativ zur Stadt des Empfängers zu analysieren. Fügen Sie hierzu eine neue Dimension hinzu und wählen Sie im Knoten **[!UICONTROL Geografische Lokalisierung]** des Empfängerschemas das Feld Ort aus.
 
-Sie können auch hier die Klassierung aktivieren, um die Lesbarkeit der Informationen zu erleichtern, und in diesem Fall die Werte mit einem Auflistungswert verknüpfen.
+Sie können die Klassierung aktivieren, um das Lesen von Informationen zu vereinfachen, und die Werte mit einer [Auflistung“ ](../config/enumerations.md).
 
-Wählen Sie die Auflistung in der Dropdown-Liste aus. Beachten Sie, dass diese Auflistung als **[!UICONTROL Reserviert für Klassierung]** definiert werden muss.
+Wählen Sie die Aufzählung in der Dropdown-Liste aus. Beachten Sie, dass diese Aufzählung als **[!UICONTROL Reserviert für Klassierung]** definiert werden muss.
 
 ![](assets/cube-dimension-with-enum.png)
 
-Nur die in der Auflistung vorhandenen Werte werden angezeigt. Alle anderen werden unter einem Titel zusammengefasst, den Sie im Feld **[!UICONTROL Titel der anderen Werte]** definieren können.
+Nur die in der Aufzählung vorhandenen Werte werden angezeigt. Alle anderen werden unter einem Titel zusammengefasst, den Sie im Feld **[!UICONTROL Titel der anderen Werte]** definieren können.
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](customize-cubes.md#dynamically-manage-bins).
 

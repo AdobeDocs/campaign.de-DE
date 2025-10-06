@@ -1,13 +1,13 @@
 ---
 title: Erste Schritte mit benutzerdefinierten Kanälen
-description: Erfahren Sie, wie Sie benutzerdefinierte Kanalsendungen mit Adobe Campaign Web erstellen und senden
+description: Erfahren Sie, wie Sie mit Adobe Campaign Web Sendungen für benutzerdefinierte Kanäle erstellen und durchführen
 role: User
 level: Beginner, Intermediate
 exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
-source-git-commit: e2c7529fb7dc033f35f9c0d2e73273d7f20bac64
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 32%
+ht-degree: 36%
 
 ---
 
@@ -19,7 +19,7 @@ Die Versanderstellung und das Versenden können sowohl in der Client-Konsole als
 
 Informationen zum Erstellen und Senden eines Versands auf der Grundlage eines benutzerdefinierten Kanals finden Sie auf dieser [Seite](https://experienceleague.adobe.com/de/docs/campaign-web/v8/msg/gs-custom-channel){target="_blank"}.
 
-Im Folgenden finden Sie die Schritte zum Konfigurieren eines neuen benutzerdefinierten Kanals in der Client-Konsole. Diese Schritte gelten für benutzerdefinierte externe und API-Kanäle:
+Im Folgenden finden Sie die Schritte zum Konfigurieren eines neuen benutzerdefinierten Kanals in der Client-Konsole. Diese Schritte gelten für benutzerdefinierte externe Kanäle und API-Kanäle:
 
 1. Konfigurieren des Schemas, [weitere Informationen](#configure-schema)
 1. Erstellen eines neuen externen Kontos, [weitere Informationen](#create-ext-account)
@@ -33,7 +33,7 @@ Zunächst müssen Sie das Schema konfigurieren, um den neuen Kanal zur Liste der
 
 1. Wählen Sie im Explorer von Campaign **Administration** > **Konfiguration** > **Datenschemata** aus.
 
-1. Erstellen Sie eine Schemaerweiterung, um die messageType-Aufzählung um den neuen Kanal zu erweitern.
+1. Erstellen Sie eine Schemaerweiterung, um die Auflistung **messageType** [ mit ](../config/enumerations.md) neuen Kanal zu erweitern.
 
    Beispiel:
 
@@ -90,7 +90,7 @@ Richten Sie in der Web-Benutzeroberfläche von Campaign die Definition des benut
 
    ![](assets/cus-schema2.png){zoomable="yes"}
 
-1. Wählen Sie die Registerkarte aus, die Ihrem Kanal entspricht, und definieren Sie, wie die Felder im Inhaltsbildschirm des Versands angezeigt werden. Weiterführende Informationen zur Bildschirmbearbeitung finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=de#fields){target="_blank"}.
+1. Wählen Sie die Registerkarte aus, die Ihrem Kanal entspricht, und definieren Sie, wie die Felder im Inhaltsbildschirm des Versands angezeigt werden. Weiterführende Informationen zur Bildschirmbearbeitung finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
 
    ![](assets/cus-schema3.png){zoomable="yes"}
 

@@ -6,10 +6,10 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '1525'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 100%
 
 ## Klassieren von Daten {#data-binning}
 
-Nutzen Sie die Datenklassierung, um die Anzeige der Daten zu vereinfachen, indem Sie Werte nach Kriterien gruppieren. Je nach den verfügbaren Informationen können Sie Altersgruppen definieren, E-Mail-Domains gruppieren, auf aufgelistete Werte beschränken, die anzuzeigenden Daten explizit einschränken und alle anderen Daten in einer eigenen Zeile oder Spalte zusammenfassen usw.
+Nutzen Sie die Datenklassierung, um die Anzeige der Daten zu vereinfachen, indem Sie Werte nach Kriterien gruppieren. Je nach den verfügbaren Informationen können Sie Altersgruppen definieren, E-Mail-Domains gruppieren, auf aufgezählte Werte beschränken, die anzuzeigenden Daten explizit einschränken und alle anderen Daten in einer eigenen Zeile oder Spalte zusammenfassen usw.
 
 Insgesamt sind drei Klassierungstypen möglich:
 
 1. Mit manuell definierten Wertebereichen. Beispielweise Alter, durchschnittlicher Warenkorb, Anzahl der geöffneten Sendungen usw. Weitere Informationen hierzu finden Sie unter [Klassen manuell definieren](#defining-each-bin).
-1. Dynamisch, entsprechend den Werten einer Auflistung: Nur die in der Auflistungen enthaltenen Werte werden angezeigt, alle anderen werden als „Sonstige“ gruppiert. Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](#dynamically-managing-bins).
+1. Dynamisch, abhängig von den Werten einer [Auflistung](../config/enumerations.md): Nur die in der Auflistung enthaltenen Werte anzeigen, alle anderen Werte werden in „Sonstige“ gruppiert. Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](#dynamically-managing-bins).
 1. Mit Wertebereichen, wobei alle anderen Bereiche gruppiert werden. Zum Beispiel 18- bis 25-Jährige, 26- bis 59-Jährige und andere. Weitere Informationen hierzu finden Sie unter [Wertebereiche anzeigen](#creating-value-ranges).
 
 Um die Klassierung zu aktivieren, kreuzen Sie die entsprechende Option bei der Erstellung der Dimension an.
 
 ![](assets/cube-class.png)
 
-Sie können jede Klasse manuell erstellen oder sie mit einer existierenden Auflistung verknüpfen.
+Sie können Klassen entweder manuell erstellen oder sie mit einer vorhandenen [Auflistung“ ](../config/enumerations.md).
 
 Adobe Campaign bietet zudem einen Assistenten, um die Klassen automatisch zu erzeugen: Die Werte können in n Klassen verteilt oder nach den am häufigsten in der Datenbank vertretenen Werten gruppiert werden.
 
@@ -53,18 +53,18 @@ Sie können eine SQL-Maske nutzen, um mehrere Werte nach einem Filter zu gruppie
 
 ### Dynamisches Verwalten der Klassen {#dynamically-manage-bins}
 
-Die Werte können über Auflistungen dynamisch verwaltet werden. So werden nur die in der Auflistung enthaltenen Werte angezeigt. Bei Änderung der Auflistungswerte wird der Cube-Inhalt automatisch angepasst.
+Die Werte können über Aufzählungen dynamisch verwaltet werden. So werden nur die in der Aufzählung enthaltenen Werte angezeigt. Bei Änderung der Aufzählungswerte wird der Cube-Inhalt automatisch angepasst.
 
 Gehen Sie wie folgt vor, um diesen Klassierungstyp zu erstellen:
 
 1. Erstellen Sie eine neue Dimension und aktivieren Sie die Klassierung.
-1. Aktivieren Sie die Option **[!UICONTROL Klassen aus einer Auflistung ableiten (dynamisch)]** und wählen Sie die entsprechende Auflistung aus.
+1. Aktivieren Sie die Option **[!UICONTROL Klassen aus einer Aufzählung ableiten (dynamisch)]** und wählen Sie die entsprechende Aufzählung aus.
 
    ![](assets/cube-link-to-enum.png)
 
-   Bei Aktualisierung der Auflistungswerte werden die Klassen automatisch angepasst, ohne benutzerseitige Intervention.
+   Bei Aktualisierung der Aufzählungswerte werden die Klassen automatisch angepasst, ohne benutzerseitige Intervention.
 
-Weitere Informationen über Auflistungen finden Sie auf [dieser Seite](../../v8/config/ui-settings.md#enumerations).
+   Weitere Informationen über Aufzählungen finden Sie auf [dieser Seite](../config/enumerations.md).
 
 ### Erstellen von Wertebereichen {#create-value-ranges}
 
@@ -90,11 +90,11 @@ Sie haben folgende Möglichkeiten:
 
 In diesem Fall wird der im Faktenschema gewählte Filter ignoriert.
 
-### Auflistungen {#enumerations}
+### Aufzählungen {#enumerations}
 
-Zur Erhöhung der Lesbarkeit und Relevanz von Berichten bietet Adobe Campaign die Möglichkeit, spezifische Auflistungen zu erstellen, um unterschiedliche Werte in ein und derselben Klasse zu gruppieren. Diese der Klassierung vorbehaltenen Auflistungen können in Cubes referenziert und in Berichten angezeigt werden.
+Zur Erhöhung der Lesbarkeit und Relevanz von Berichten bietet Adobe Campaign die Möglichkeit, spezifische Aufzählungen zu erstellen, um unterschiedliche Werte in ein und derselben Klasse zu gruppieren. Diese der Klassierung vorbehaltenen Aufzählungen können in Cubes referenziert und in Berichten angezeigt werden.
 
-Auf diese Weise bietet Adobe Campaign eine Auflistung von Domains, mithilfe derer sich die Liste der nach ISP gruppierten E-Mail-Domains von allen Datenbankkontakten wie im unten stehenden Beispiel anzeigen lässt:
+Auf diese Weise bietet Adobe Campaign eine Aufzählung von Domains, mithilfe derer sich die Liste der nach ISP gruppierten E-Mail-Domains von allen Datenbankkontakten wie im unten stehenden Beispiel anzeigen lässt:
 
 ![](assets/nmx_report_sample.png)
 
@@ -102,19 +102,19 @@ Diese Auflistung ist nach folgendem Modell gestaltet:
 
 ![](assets/nmx_enum_domain.png)
 
-Um einen diese Auflistung verwendenden Bericht zu erstellen, müssen Sie zunächst einen die Dimension **[!UICONTROL E-Mail-Domain]** verwendenden Cube erstellen. Wählen Sie die Option **[!UICONTROL Klassierung aktivieren]** und dann **[!UICONTROL Klassen aus einer Auflistung ableiten (dynamisch)]**. Wählen Sie anschließend die oben dargestellte Auflistung **Domains (domain)** aus. Alle Werte, für die kein Alias definiert worden ist, werden unter dem Titel **Sonstige** gruppiert.
+Um einen diese Auflistung verwendenden Bericht zu erstellen, müssen Sie zunächst einen die Dimension **[!UICONTROL E-Mail-Domain]** verwendenden Cube erstellen. Wählen Sie die Option **[!UICONTROL Klassierung aktivieren]** und dann **[!UICONTROL Klassen aus einer Aufzählung ableiten (dynamisch)]**. Wählen Sie anschließend die oben dargestellte Aufzählung **Domains (domain)** aus. Alle Werte, für die kein Alias definiert worden ist, werden unter dem Titel **Sonstige** gruppiert.
 
 Erstellen Sie anschließend einen auf diesem Cube basierenden Bericht, um die Werte anzuzeigen.
 
-Dabei genügt es, die Auflistung abzuändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise den Wert **Adobe** und fügen Sie auf Auflistungsniveau den Alias **adobe.com** hinzu: Der Bericht wird automatisch mit dem Wert „Adobe“ aktualisiert.
+Dabei genügt es, die Aufzählung abzuändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise den Wert **Adobe** und fügen Sie auf Aufzählungsniveau den Alias **adobe.com** hinzu: Der Bericht wird automatisch mit dem Wert „Adobe“ aktualisiert.
 
 ![](assets/nmx_add_alias.png)
 
-Die Auflistung **[!UICONTROL Domains (domains)]** wird zur Erzeugung der nativen Berichte verwendet, in denen die Domain-Liste angezeigt wird. Sie können diese Liste abändern, um den Inhalt der Berichte anzupassen.
+Die Aufzählung **[!UICONTROL Domains (domains)]** wird zur Erzeugung der nativen Berichte verwendet, in denen die Domain-Liste angezeigt wird. Sie können diese Liste abändern, um den Inhalt der Berichte anzupassen.
 
-Sie können weitere, der Klassierung vorbehaltene Auflistungen erstellen und diese in anderen Cubes verwenden: Alle Alias-Werte werden in den im ersten Tab der Auflistung definierten Klassen gruppiert.
+Sie können weitere, der Klassierung vorbehaltene Aufzählungen erstellen und diese in anderen Cubes verwenden: Alle Alias-Werte werden in den im ersten Tab der Aufzählung definierten Klassen gruppiert.
 
-Weitere Informationen über Auflistungen finden Sie auf [dieser Seite](../../v8/config/ui-settings.md#enumerations).
+Weitere Informationen über Aufzählungen finden Sie auf [dieser Seite](../../v8/config/ui-settings.md#enumerations).
 
 ## Aggregate in Cubes {#calculate-and-use-aggregates}
 
