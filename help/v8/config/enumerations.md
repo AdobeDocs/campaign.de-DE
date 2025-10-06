@@ -5,10 +5,10 @@ feature: Configuration, Application Settings
 role: Developer
 version: Campaign v8, Campaign Classic v7
 level: Intermediate, Experienced
-source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
+source-git-commit: a1f479538a2d93a2ec13e35cb6813e09c8c4a5f8
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 89%
+source-wordcount: '852'
+ht-degree: 79%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 89%
 
 Eine Auflistung (auch als Auflistungsliste bezeichnet) ist eine vordefinierte Liste von Werten, die Sie zum Ausfüllen bestimmter Felder verwenden können. Auflistungen helfen, Feldwerte zu standardisieren, die Dateneingabe konsistenter zu gestalten und Abfragen zu vereinfachen.
 
-Sofern verfügbar, werden die Werte in einer Dropdown-Liste angezeigt. Sie können entweder einen Wert direkt auswählen oder mit der Eingabe beginnen - eine prädiktive Eingabe schlägt übereinstimmende Werte vor und führt sie automatisch aus.
+Wenn definiert, werden Werte in einer Dropdown-Liste angezeigt. Ein Wert kann direkt ausgewählt oder über eine prädiktive Eingabe eingegeben werden, die übereinstimmende Einträge vorschlägt und ausfüllt. Einige Felder enthalten vordefinierte Auflistungen, und bei Bedarf können zusätzliche Auflistungen erstellt werden.
 
 ![](assets/enum_values.png)
 
-Einige Konsolenfelder werden mit Auflistungen konfiguriert. Wenn eine Auflistung **offen** ist, können Sie auch neue Werte direkt in das Feld einfügen.
-
-![Zugreifen auf Aufzählungen](../config/assets/enumerations-menu.png)
 
 ## Aufzählungstypen {#types-of-enum}
 
 Aufzählungen werden im Ordner **[!UICONTROL Administration > Plattform > Aufzählungen]** des Explorers gespeichert.
 
-Sie können von einem der folgenden Typen sein: Offen, System, Emoticon oder Geschlossen.
+![Zugreifen auf Aufzählungen](../config/assets/enumerations-menu.png)
+
+
+Eine Auflistung kann Folgendes sein: **Open**, **System**, **Emoticon** oder **Closed**.
 
 * Eine Aufzählung des Typs **Offen** ermöglicht es Benutzerinnen und Benutzern, neue Werte direkt in die auf dieser Aufzählung basierenden Felder einzufügen.
 * Ein Aufzählung des Typs **Geschlossen** verfügt über eine feste Liste von Werten, die nur über den Ordner **[!UICONTROL Administration > Plattform > Aufzählungen]** des Explorers geändert werden kann.
@@ -44,11 +44,12 @@ Für Aufzählungen des Typs **Offen** und **Geschlossen** sind spezifische Optio
 
 ## Alias-Bereinigung {#alias-cleansing}
 
-In den Aufzählungsfeldern können Sie einen Wert auswählen oder einen benutzerdefinierten Wert eingeben, der in der Dropdown-Liste nicht verfügbar ist. Benutzerdefinierte Werte können zu den vorhandenen Aufzählungswerten als neue Werte hinzugefügt werden – in diesem Fall muss die Option **[!UICONTROL Offen]** ausgewählt sein. Diese benutzerdefinierten Werte können mithilfe der Funktionen der Alias-Verwaltung bereinigt werden. Wenn beispielsweise eine Benutzerin oder ein Benutzer `Adob` anstelle von `Adobe` eingibt, kann der Vorgang der Alias-Verwaltung dies automatisch durch den richtigen Begriff ersetzen.
+In Auflistungsfeldern kann ein Wert aus der Dropdown-Liste ausgewählt oder manuell eingegeben werden, wenn er nicht in der Liste verfügbar ist. Benutzerdefinierte Werte können zur Auflistung hinzugefügt werden, wenn die Option **[!UICONTROL Öffnen]** aktiviert ist. Diese Werte können später durch die Alias-Verwaltung standardisiert werden, die Varianten automatisch durch den richtigen Begriff ersetzt (z. B. Konvertieren von `Adob` in `Adobe`).
+
 
 >[!CAUTION]
 >
->Die Datenbereinigung ist ein kritischer Prozess, der sich auf die Daten in der Datenbank auswirkt. Adobe Campaign aktualisiert Daten gebündelt, was zur Löschung von gewissen Werten führen kann. Dieser Vorgang ist daher erfahrenen Benutzerinnen und Benutzern vorbehalten.
+>Die Datenbereinigung ist ein kritischer Vorgang, der sich auf Datenbankwerte auswirkt. Adobe Campaign führt Massenaktualisierungen von Daten durch, die zum Löschen bestimmter Werte führen können. Dieser Vorgang ist nur für erfahrene Benutzer gedacht.
 
 Aktivieren Sie die Option **[!UICONTROL Alias-Verwaltung]**, um Datenbereinigungsfunktionen für eine Aufzählung zu verwenden. Wenn diese Option ausgewählt ist, wird unten im Fenster die Registerkarte **[!UICONTROL Alias]** angezeigt.
 
