@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: ed390d5ddd817791dc4f5c2c1c621b594170a836
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '787'
 ht-degree: 97%
 
 ---
@@ -201,25 +201,25 @@ ht-degree: 97%
       + [Verwalten von Benutzerberechtigungen](start/manage-permissions.md)
       + [Berechtigungen für Ordner hinzufügen](start/folder-permissions.md)
    + [Control Panel](config/self-service.md)
-+ Architektur und Konfiguration {#config}
-   + Architektur von Campaign v8 {#architecture}
-      + [Allgemeine Prinzipien](architecture/general-architecture.md)
-      + [Architekturmodelle](architecture/architecture.md)
-      + [Campaign FDA-Bereitstellung](architecture/fda-deployment.md)
-      + Bereitstellung in Unternehmen (FFDA) {#ffda}
-         + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
-         + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
-         + [Neue APIs](architecture/new-apis.md)
-         + [API-Staging-Mechanismus](architecture/staging.md)
-         + [Replikationsmechanismus](architecture/replication.md)
++ Architektur {#architecture}
+   + [Allgemeine Prinzipien](architecture/general-architecture.md)
+   + [Architekturmodelle](architecture/architecture.md)
+   + [Campaign FDA-Bereitstellung](architecture/fda-deployment.md)
+   + Bereitstellung in Unternehmen (FFDA) {#ffda}
+      + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
+      + [Schlüsselverwaltung und Eindeutigkeit](architecture/keys.md)
+      + [Neue APIs](architecture/new-apis.md)
+      + [API-Staging-Mechanismus](architecture/staging.md)
+      + [Replikationsmechanismus](architecture/replication.md)
++ Konfiguration {#config}
    + Implementierung {#implement}
       + [Implementierungsschritte](start/implement.md)
       + [Anpassen der Instanz](dev/customize.md)
-      + [Arbeiten mit Aufzählungen](dev/enumerations.md)
       + [Best Practices für Datenmodelle](dev/datamodel-best-practices.md)
-   + Einstellungen und Konfiguration {#configuration}
+   + Einstellungen        {#settings}
       + [Einstellungen der Benutzeroberfläche](config/ui-settings.md)
       + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
+      + [Arbeiten mit Aufzählungen](dev/enumerations.md)
       + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
       + [Integrieren von Campaign-SDKs mit Ihrer Mobile App – VERALTETE SEITE](config/push-config.md)
       + [Externe Konten](config/external-accounts.md)
@@ -238,7 +238,7 @@ ht-degree: 97%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + REST APIs {#apis}
       + [Erste Schritte mit REST-APIs](dev/api/get-started-apis.md)
