@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '791'
 ht-degree: 97%
 
 ---
@@ -133,8 +133,9 @@ ht-degree: 97%
 + Content-Management {#content}
    + [Erstellen von Landingpages](dev/landing-pages.md)
    + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
-+ Automatisierung und Workflows {#automation}
-   + [Handbuch zur Kampagnenautomatisierung >](https://experienceleague.adobe.com/de/docs/campaign/automation/home)
++ Workflows {#workflows}
+   + [Erste Schritte mit Workflows](config/workflows.md)
+   + [Workflow-Dokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
 + Datenschutz- und Sicherheits-Management {#privacy}
    + [Verwalten von Datenschutzanfragen](start/privacy.md)
    + [Sicherheitsrichtlinien](config/security.md)
@@ -174,9 +175,11 @@ ht-degree: 97%
          + [Berechnung integrierter Metriken](reporting/metrics-calculation.md)
       + [Benutzerdefinierte Berichte](reporting/custom-reports.md)
 + Daten-Management {#data}
-   + [Erste Schritte mit Workflows](config/workflows.md)
+   + [Workflow-Dokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
    + [Datenimport](start/import.md)
-   + [Workflow-Dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
+   + Erstellen von Abfragen {#query}
+      + [Entwerfen von Abfragen](start/query-editor.md)
+      + [Filterbedingungen definieren](start/filter-conditions.md)
 + Integrationen  {#connect}
    + [Campaign mit anderen Lösungen verbinden](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -238,7 +241,7 @@ ht-degree: 97%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + REST APIs {#apis}
       + [Erste Schritte mit REST-APIs](dev/api/get-started-apis.md)

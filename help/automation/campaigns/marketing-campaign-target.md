@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Ziel-Audience der Marketing-Kampagne
-description: Erfahren Sie, wie Sie die Audience Ihrer Marketing-Kampagnen definieren.
+title: Ziel-Zielgruppe der Marketing-Kampagne
+description: Erfahren Sie, wie Sie die Zielgruppe Ihrer Marketing-Kampagnen definieren.
 feature: Campaigns, Audiences
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
-workflow-type: ht
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 100%
 
 ---
 
-# Auswählen der Audience für Ihre Kampagnen {#marketing-campaign-deliveries}
+# Auswählen der Zielgruppe für Ihre Kampagnen {#marketing-campaign-deliveries}
 
 In einer Marketing-Kampagne können Sie für jeden Versand Folgendes definieren:
 
@@ -49,7 +49,7 @@ Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und die
 
 1. Klicken Sie auf **[!UICONTROL Beenden]**, wenn alle Kriterien definiert sind, und speichern Sie die Hauptzielgruppe.
 
-## Erstellen der Audience in einem Campaign-Workflow {#build-the-main-target-in-a-workflow}
+## Erstellen der Zielgruppe in einem Campaign-Workflow {#build-the-main-target-in-a-workflow}
 
 Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow definiert werden: Die grafische Umgebung ermöglicht die Erstellung einer Zielgruppe mithilfe von Abfragen, Tests und Funktionen wie Vereinigungen, Deduplizierungen, Aufspaltungen usw.
 
@@ -120,7 +120,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
    * Über die Symbolleiste kann die Ausführung des Zielgruppen-Workflows angehalten oder ausgesetzt werden.
 
-     Bei Klick auf das Symbol **[!UICONTROL Aussetzen]** werden laufende Prozesse **[!UICONTROL nicht]** abgebrochen, es wird jedoch bis zur Wiederaufnahme keine andere Aktivität gestartet.
+     Bei Klick auf das Symbol **[!UICONTROL Aussetzen]** werden laufende Prozesse **[!UICONTROL nicht]** abgebrochen, es wird jedoch bis zum Neustart keine andere Aktivität gestartet.
 
      ![](assets/pause.png)
 
@@ -136,7 +136,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
      >[!NOTE]
      >
-     >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielbestimmung als nützlich.
+     >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielgruppenbestimmung als nützlich.
 
      Klicken Sie auf **[!UICONTROL Starten]**, um die Ausführung wieder aufzunehmen.
 
@@ -157,13 +157,13 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
   >[!NOTE]
   >
-  >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielbestimmung als nützlich.
+  >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielgruppenbestimmung als nützlich.
 
 * Unbedingter Stopp
 
   Wählen Sie im Explorer **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Kampagnen-Workflows]** aus, um auf einen beliebigen Campaign-Workflow zuzugreifen und diesen zu steuern.
 
-  Sie können Ihren Workflow stoppen, indem Sie das Symbol **[!UICONTROL Aktionen]** und danach **[!UICONTROL Unbedingter Stopp]** auswählen. Damit wird Ihr Kampagnen-Workflow sofort angehalten.
+  Sie können Ihren Workflow stoppen, indem Sie das Symbol **[!UICONTROL Aktionen]** und danach **[!UICONTROL Unbedingter Stopp]** auswählen. Damit wird Ihr Kampagnen-Workflow sofort beendet.
 
   ![](assets/stop_unconditional.png)
 
@@ -222,7 +222,7 @@ Diese Population kann aus einer Empfängerliste stammen oder über eine spezifis
 
 >[!NOTE]
 >
->Der Abfrageeditor von Adobe Campaign wird in [diesem Abschnitt](../workflow/query.md) beschrieben.
+>Der Abfrageeditor von Adobe Campaign wird in [diesem Abschnitt](../../v8/start/query-editor.md) beschrieben.
 
 ### Extrahieren der Kontrollgruppe aus der Hauptzielgruppe {#extract-the-control-group-from-the-main-target}
 

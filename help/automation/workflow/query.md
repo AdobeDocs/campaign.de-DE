@@ -6,10 +6,10 @@ feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '1667'
-ht-degree: 100%
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+workflow-type: tm+mt
+source-wordcount: '1663'
+ht-degree: 94%
 
 ---
 
@@ -20,18 +20,15 @@ ht-degree: 100%
 ## Erstellen einer Abfrage {#creating-a-query}
 
 Über Abfragen lassen sich Zielgruppen anhand von Filterkriterien bestimmen. Es besteht die Möglichkeit, dem Abfrageergebnis einen Segment-Code zuzuweisen und es mit Zusatzdaten zu ergänzen.
-Weitere Informationen zu Beispielen für Abfragen finden Sie in diesem [Abschnitt](querying-recipient-table.md).
-
->[!NOTE]
->
->Die Adobe Campaign Web-Benutzeroberfläche verfügt über einen leistungsstarken Abfrage-Modeler, der das Filtern von Datenbanken zur Auswahl spezifischer Zielgruppen anhand verschiedener Kriterien vereinfacht, sodass Sie Ihre Abfrage leichter erstellen und verwalten können. Weitere Informationen zum Abfrage-Modeler für die Web-Benutzeroberfläche finden Sie in der [Dokumentation zur Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
-
+In diesem Abschnitt erfahren Sie, wie Sie anhand von Anwendungsfällen [ Abfragen ](querying-recipient-table.md). Siehe auch den Abschnitt über den [Abfrage-Editor](../../v8/start/query-editor.md).
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
-Weitere Informationen zum Verwenden und Verwalten zusätzlicher Daten finden Sie unter [Hinzufügen von Daten](#adding-data).
+>[!NOTE]
+>
+>Die Web-Benutzeroberfläche von Adobe Campaign bietet einen leistungsstarken Abfragemodellierer, der den Prozess der Datenbankfilterung vereinfacht, um bestimmte Ziele basierend auf verschiedenen Kriterien auszuwählen, sodass Sie Ihre Abfrage einfacher erstellen und verwalten können. Weitere Informationen zum Abfrage-Modeler für die Web-Benutzeroberfläche finden Sie in der [Dokumentation zur Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}.
 
-Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wie folgt vor, um Zielgruppentyp, Beschränkungen und Auswahlkriterien der anzusprechenden Population zu definieren:
+Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wie folgt vor, um Zielgruppenbestimmungstyp, Beschränkungen und Auswahlkriterien der anzusprechenden Population zu definieren:
 
 1. Wählen Sie zunächst Zielgruppen- und Filterdimension aus. Standardmäßig wird die Zielgruppe aus den Empfängern ausgewählt. Die vorgeschlagenen Einschränkungsfilter sind dieselben wie bei der Zielgruppenbestimmung in einem Versand.
 
@@ -39,11 +36,11 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
    Filterdimensionen ermöglichen die spezifische Auswahl der Elemente, beispielsweise nach Kriterien wie Verträgen, Altersgruppen etc.
 
-   Weitere Informationen hierzu finden Sie unter [Zielgruppen- und Filterdimension](targeting-workflows.md#targeting-and-filtering-dimensions).
+   Weitere Informationen hierzu finden Sie unter [Zielgruppenbestimmungs- und Filterdimension](targeting-workflows.md#targeting-and-filtering-dimensions).
 
    ![](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
 
-   Eine Abfrage kann sich bei Bedarf auf die Daten der eingehenden Transition beziehen. Aktivieren Sie in diesem Fall bei der Auswahl der Zielgruppen- und Filterdimension die Option **[!UICONTROL Temporäres Schema]**.
+   Eine Abfrage kann sich bei Bedarf auf die Daten der eingehenden Transition beziehen. Aktivieren Sie in diesem Fall bei der Auswahl der Zielgruppenbestimmungs- und Filterdimension die Option **[!UICONTROL Temporäres Schema]**.
 
    ![](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
 
@@ -160,7 +157,7 @@ In folgendem Beispiel sollen alle Männer zwischen 18 und 30 Jahre identifiziert
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch die Abfrage ermittelte Population identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppe enthält, **[!UICONTROL schema]** ist das Schema der Population, (in der Regel nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
+Anhand der drei Werte lässt sich die durch die Abfrage ermittelte Population identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Zielkennungen aufzeichnet, **[!UICONTROL schema]** ist das Schema der Population (normalerweise nms:recipient) und **[!UICONTROL recCount]** die Anzahl der Elemente in der Tabelle.
 
 Dieser Wert ist das Schema der Arbeitstabelle. Dieser Parameter ist für alle Transitionen mit **[!UICONTROL tableName]** und **[!UICONTROL schema]** gültig.
 

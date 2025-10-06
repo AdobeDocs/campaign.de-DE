@@ -4,10 +4,10 @@ title: Anwenden von Typologieregeln
 description: Hier erfahren Sie, wie Sie Typologieregeln anwenden
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
 source-wordcount: '1019'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ Typologieregeln können demnach so konfiguriert werden, dass sie nur bestimmte S
 
 Um die Anwendungskriterien einer Regel zu bestimmen, klicken Sie auf den Link **[!UICONTROL Anwendungskriterien der Regel bearbeiten]** im Tab **[!UICONTROL Allgemein]**.
 
-Bestimmen Sie nun im Abfrage-Editor die Filterbedingungen. Im unten stehenden Beispiel betrifft die Kapazitätsregel nur Sendungen, die den Begriff &quot;Angebot&quot; im Betreff enthalten, und solche, die vor dem 1. April 2013 erstellt wurden.
+Verwenden Sie dann den [Abfrage-Editor](../../v8/start/query-editor.md), um Filterbedingungen zu definieren. Im folgenden Beispiel betrifft die Kapazitätsregel nur Sendungen, die das Wort „Angebot“ in ihrer Bezeichnung enthalten, oder Sendungen, die vor dem 1. April 2013 erstellt wurden.
 
 ![](assets/campaign_opt_create_capacity_criterion.png)
 
@@ -111,7 +111,7 @@ Mögliche Werte:
 
   Wenn Sie die Größe der Zielgruppe kennen müssen, um die Kontrollregel anzuwenden, wählen Sie diese Phase aus.
 
-  Die Kontrollregel **[!UICONTROL Prüfung der Testversandgröße]** beispielsweise wird zwingend nach der Zielbestimmungsphase angewandt: Diese Regel verhindert eine Nachrichtenpersonalisierung, wenn die Zielgruppe des Testversands zu groß ist.
+  Die Kontrollregel **[!UICONTROL Prüfung der Testversandgröße]** beispielsweise wird zwingend nach der Zielgruppenbestimmungsphase angewandt: Diese Regel verhindert eine Nachrichtenpersonalisierung, wenn die Zielgruppe des Testversands zu groß ist.
 
 * **[!UICONTROL Zu Beginn der Personalisierung]**
 

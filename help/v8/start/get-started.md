@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ Informationen zum Hinzufügen von Profilen in Campaign finden Sie in [diesem Abs
 
 ## Zielgruppensegmentierung {#targeted-segmentation}
 
-Adobe Campaign enthält leistungsstarke Analyse- und Zielgruppenbestimmungsfunktionen, die es Ihnen ermöglichen, sehr spezifische, dem Kundenprofil entsprechende Angebote zu erstellen. Dank der deskriptiven Analysefunktionen können Sie Informationen vor und nach Ihren Marketing-Kampagnen detailliert betrachten. Außerdem ermöglichen es Filter und ein benutzerfreundliches Abfrage-Tool, registrierte Kontakte mithilfe unzähliger Kriterien zu kategorisieren und extrem genaue Zielgruppen zu definieren.
+Adobe Campaign enthält leistungsstarke Analyse- und Zielgruppenbestimmungsfunktionen, die es Ihnen ermöglichen, sehr spezifische, dem Kundenprofil entsprechende Angebote zu erstellen. Mit der deskriptiven Analysefunktion können Sie Informationen vor und nach Ihren Marketing-Kampagnen analysieren. Mit der [Filterverwaltung](../audiences/create-filters.md) und der grafischen [Abfrage-Editor](query-editor.md)-Funktion können Sie Ihre Abonnentenpopulation filtern und Stichproben erstellen oder Zielgruppen anhand einer unbegrenzten Anzahl von Kriterien erstellen.
 
 Fortschrittliche Funktionen für das Daten-Management erweitern die Datenverarbeitungskapazitäten. Sie vereinfachen und optimieren den Zielgruppenbestimmungsprozess, indem sie nicht modellierte Daten in den Datamart einschließen.
 

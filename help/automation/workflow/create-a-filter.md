@@ -6,18 +6,18 @@ feature: Query Editor, Workflows
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '222'
-ht-degree: 100%
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 77%
 
 ---
 
 # Erstellen von Filtern {#creating-a-filter}
 
-Filter werden in Adobe Campaign über Filterbedingungen definiert, die ähnlich wie Abfragen erstellt werden.
+Die in Adobe Campaign verfügbaren Filter werden über Filterbedingungen definiert, die mit demselben Betriebsmodus erstellt werden wie beim Erstellen von Abfragen im [Abfrage-Editor](../../v8/start/query-editor.md).
 
-Der Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** enthält alle in Listen und Übersichten verwendeten Filter.
+Der Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** enthält alle Standardfilter. Einige davon werden in Listen und Übersichten verwendet. Weitere Informationen über [integrierte vordefinierte Filter](../../v8/audiences/create-filters.md).
 
 Beispielsweise kann die Benutzerliste nach **[!UICONTROL Aktiven Konten]** gefiltert werden:
 

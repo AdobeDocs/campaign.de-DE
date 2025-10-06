@@ -6,16 +6,16 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+workflow-type: tm+mt
 source-wordcount: '1708'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 # Erstellen und Verwalten von Filtern{#create-filters}
 
-Beim Filtern von Daten wird ein kleinerer Teil Ihrer Datenmenge ausgewählt, nämlich nur die Einträge, die bestimmten Kriterien entsprechen. Diese Untergruppe wird für bestimmte Aktionen (Aktualisierungen, Erstellung von Zielgruppen) oder Analysen verwendet.
+Beim Filtern von Daten wird ein kleinerer Teil Ihrer Datenmenge ausgewählt, nämlich nur die Einträge, die bestimmten Kriterien entsprechen. Diese Teilmenge wird für bestimmte Aktionen (Aktualisierungen, Erstellung von Zielgruppen) oder Analysen verwendet.
 
 Beim Durchsuchen von Campaign über den **[!UICONTROL Explorer]** werden die Daten in Listen angezeigt. Sie können vorhandene integrierte Filter verwenden, um auf eine bestimmte Untergruppe dieser Daten zuzugreifen: Beispielsweise Adressen in Quarantäne, nicht kontaktierte Empfänger, eine bestimmte Altersgruppe oder das Erstellungsdatum.
 
@@ -52,7 +52,7 @@ Verwenden Sie die letzte Registerkarte, um die gefilterten Daten in der Vorschau
 ![](assets/built-in-filter-preview.png)
 
 
-Integrierte vordefinierte Filter sind:
++++  Integrierte vordefinierte Filter
 
 <table> 
  <tbody> 
@@ -159,6 +159,7 @@ Integrierte vordefinierte Filter sind:
  </tbody> 
 </table>
 
++++
 
 ### Standardfilter{#default-filters}
 
@@ -353,3 +354,6 @@ Für vordefinierte Filter sind erweiterte Parameter verfügbar. Um darauf zuzugr
 
    * Sie können eine SQL-Tabelle mit dem Filter verknüpfen, um ihn für alle Bearbeiter freizugeben, die die Tabelle gemeinsam nutzen.
    * Um zu verhindern, dass Benutzer den Filter überschreiben, wählen Sie die Option **[!UICONTROL Filter nicht weiter einschränken]** aus. Diese Option ist beispielsweise für die Filter &quot;Versandempfänger&quot; und &quot;Empfänger von Sendungen eines bestimmten Ordners&quot; aktiv, die im Versand-Assistenten verfügbar sind. Diese Filter können nicht überschrieben werden.
+
+
+### Operatoren
