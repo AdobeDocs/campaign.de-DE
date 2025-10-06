@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 98%
@@ -223,7 +223,7 @@ Um einen Standardwert mit einem Feld zu verknüpfen, können Sie das `<default> 
 
 ### Aufzählungen {#enumerations}
 
-Verwenden Sie freie, feste oder datenbankbasierte Auflistungen [Auflistungen](../dev/enumerations.md) um Feldwerte zu steuern. Sie bieten Dropdown-Listen für einfachere Eingabe, konsistente Daten und ein flexibles Schema-Design.
+Verwenden Sie freie, feste oder datenbankbasierte Auflistungen [Auflistungen](../config/enumerations.md) um Feldwerte zu steuern. Sie bieten Dropdown-Listen für einfachere Eingabe, konsistente Daten und ein flexibles Schema-Design.
 
 #### Freie Aufzählung {#free-enumeration}
 

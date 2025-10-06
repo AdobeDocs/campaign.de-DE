@@ -6,7 +6,7 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 75%
@@ -191,5 +191,5 @@ Die Hauptunterschiede zwischen US-amerikanischem Englisch und britischem Englisc
 
 ## Zusätzliche Ressourcen
 
-* **[Arbeiten mit Auflistungen](../dev/enumerations.md)** - Standardisieren von Feldwerten mit vordefinierten Dropdown-Listen für eine schnellere, konsistentere Dateneingabe.
+* **[Arbeiten mit Auflistungen](../config/enumerations.md)** - Standardisieren von Feldwerten mit vordefinierten Dropdown-Listen für eine schnellere, konsistentere Dateneingabe.
 * **[Auflistungen in Schemata](../dev/schema-structure.md#enumerations)** - Als Campaign-Entwicklungsperson können Sie freie, feste oder datenbankbasierte Auflistungen in Ihren Schemata verwenden, um Feldwerte zu steuern.

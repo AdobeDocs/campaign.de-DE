@@ -5,7 +5,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 97%
@@ -160,4 +160,4 @@ Sie können die Sortierung konfigurieren oder Sortierkriterien kombinieren. Gehe
 ## Zusätzliche Ressourcen
 
 * **[Erste Schritte mit der Campaign-Benutzeroberfläche](../start/campaign-ui.md)** - Erfahren Sie, wie Sie die Benutzeroberfläche von Adobe Campaign aufrufen und durchsuchen können.
-* **[Arbeiten mit Auflistungen](../dev/enumerations.md)** - Standardisieren von Feldwerten mit vordefinierten Dropdown-Listen für eine schnellere, konsistentere Dateneingabe.
+* **[Arbeiten mit Auflistungen](../config/enumerations.md)** - Standardisieren von Feldwerten mit vordefinierten Dropdown-Listen für eine schnellere, konsistentere Dateneingabe.
