@@ -33,7 +33,7 @@ Zunächst müssen Sie das Schema konfigurieren, um den neuen Kanal zur Liste der
 
 1. Wählen Sie im Explorer von Campaign **Administration** > **Konfiguration** > **Datenschemata** aus.
 
-1. Erstellen Sie eine Schemaerweiterung, um die Auflistung **messageType** [ mit ](../config/enumerations.md) neuen Kanal zu erweitern.
+1. Erstellen Sie eine Schemaerweiterung, um die Auflistung **messageType** [&#x200B; mit &#x200B;](../config/enumerations.md) neuen Kanal zu erweitern.
 
    Beispiel:
 
