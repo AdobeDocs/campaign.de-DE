@@ -5,7 +5,7 @@ feature: Query Editor
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 79cfde18cce2f9f48cbd6d77026350dec1a71536
+source-git-commit: 3a521f7006ca833af96f1ef5d5b369c2c0568635
 workflow-type: tm+mt
 source-wordcount: '3491'
 ht-degree: 99%
@@ -288,7 +288,7 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
   Dem Quellwert einer Spalte kann ein Zielwert zugeordnet werden. Es ist der Zielwert, der in der neuen Ausgabespalte angezeigt wird.
 
-  Ein Beispiel zu berechneten **[!UICONTROL Aufzählungsfeldern]** können Sie [diesem Abschnitt](../../workflow/using/adding-enumeration-type-calculated-field.md) entnehmen.
+  Ein Beispiel zu berechneten **[!UICONTROL Aufzählungsfeldern]** können Sie [diesem Abschnitt](../../automation/workflow/adding-enumeration-type-calculated-field.md) entnehmen.
 
   ![](assets/query_editor_nveau_63.png)
 
@@ -344,7 +344,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
 
    ![](assets/query_editor_nveau_71.png)
 
-   Im Abschnitt [&#128279;](#list-of-functions)Funktionsliste finden Sie eine vollständige Liste aller Funktionen.
+   Im Abschnitt ](#list-of-functions)Funktionsliste[ finden Sie eine vollständige Liste aller Funktionen.
 
 ## Funktionsliste {#list-of-functions}
 
