@@ -5,7 +5,7 @@ feature: Query Editor
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 79cfde18cce2f9f48cbd6d77026350dec1a71536
 workflow-type: tm+mt
 source-wordcount: '3491'
 ht-degree: 99%
@@ -344,7 +344,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
 
    ![](assets/query_editor_nveau_71.png)
 
-   Im Abschnitt [&#128279;](#list-of-functions)Funktionsliste finden Sie eine vollständige Liste aller Funktionen.
+   Im Abschnitt ](#list-of-functions)Funktionsliste[ finden Sie eine vollständige Liste aller Funktionen.
 
 ## Funktionsliste {#list-of-functions}
 
@@ -352,7 +352,7 @@ Mit der Option **[!UICONTROL Ausdruck]** gelangen Sie zum Fenster &quot;Ausdruck
 
 Der Ausdruckseditor gestaltet sich wie folgt:
 
-![](assets/s_ncs_user_filter_define_expression.png)
+![](assets/filter-define-expression.png)
 
 Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgenden fortgeschrittenen Funktionen:
 
