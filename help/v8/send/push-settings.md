@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK in I
 feature: Push
 role: Admin, Developer
 level: Intermediate
+version: Campaign v8, Campaign Classic v7
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
-workflow-type: ht
-source-wordcount: '1836'
-ht-degree: 100%
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+workflow-type: tm+mt
+source-wordcount: '1834'
+ht-degree: 98%
 
 ---
 
@@ -166,7 +167,7 @@ Gehen Sie wie folgt vor, um einen Dienst zum Senden von Push-Benachrichtigungen 
 
    >[!NOTE]
    >
-   >Das standardmäßige Zielgruppen-Mapping von **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weitere Informationen über Zielgruppen-Mapping finden Sie auf [dieser Seite](../audiences/target-mappings.md).
+   >Das standardmäßige **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** Zielgruppen-Mapping ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weitere Informationen über Zielgruppen-Mapping finden Sie auf [dieser Seite](../audiences/target-mappings.md).
 
 1. Klicken Sie dann auf das Symbol **[!UICONTROL Hinzufügen]** oben rechts, um die Mobile Apps zu definieren, die diesen Dienst verwenden.
 
@@ -187,7 +188,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
    ![](assets/ios-app-parameters.png){width="600" align="left"}
 
-1. Auf der Registerkarte **[!UICONTROL Abonnementparameter]** können Sie das Mapping mit einer Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** definieren.
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Abonnementparameter]**, um die Zuordnung mit einer Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** definieren.
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Töne]**, um einen Ton festzulegen, der wiedergegeben werden soll. Klicken Sie auf **[!UICONTROL Hinzufügen]** und füllen Sie das Feld **[!UICONTROL Interner Name]** aus, das den Namen der in die Anwendung eingebetteten Datei oder den Namen des Systemtons enthalten muss.
 

@@ -5,10 +5,10 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
-workflow-type: ht
-source-wordcount: '1588'
-ht-degree: 100%
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+workflow-type: tm+mt
+source-wordcount: '1584'
+ht-degree: 98%
 
 ---
 
@@ -176,7 +176,7 @@ _Freitag, 23. Juli 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Der <a href="../send/line.md">LINE-Kanal</a> ist jetzt in Campaign v8 verfügbar, einschließlich der folgenden Verbesserungen in Kombination mit dem Modul <a href="../send/transactional.md">Transaktionsnachrichten</a>:
+<td> <p>Der <a href="../send/line/line.md">LINE-Kanal</a> ist jetzt in Campaign v8 verfügbar, einschließlich der folgenden Verbesserungen in Kombination mit dem Modul <a href="../send/transactional.md">Transaktionsnachrichten</a>:
 <ul> 
 <li><p>Fehlerkorrektur – Jetzt können Besucher in einem LINE-Versand als Ziel ausgewählt werden. 
 </p></li>

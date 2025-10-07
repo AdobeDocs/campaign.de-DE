@@ -6,8 +6,8 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a523e76d-776c-47d3-9c15-34241cee1092
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Adobe Campaign v8 enthält die unten aufgeführten Versandkanäle.  Die in Ihre
 
 * **E-Mail-Kanal**: Ein E-Mail-Versand richtet personalisierte elektronische Nachrichten an eine zuvor bestimmte Zielpopulation. [Weitere Informationen](../send/email.md)
 
-* **Mobile-Kanäle**: Beim Versand über Mobile-Kanäle können Sie personalisierte Nachrichten auf Mobilgeräten an die Zielpopulation senden. Sie können [SMS](../send/sms/sms.md)- und [LINE](../send/line.md)-Nachrichten an Mobilgeräte senden.
+* **Mobile-Kanäle**: Beim Versand über Mobile-Kanäle können Sie personalisierte Nachrichten auf Mobilgeräten an die Zielpopulation senden. Sie können [SMS](../send/sms/sms.md)- und [LINE](../send/line/line.md)-Nachrichten an Mobilgeräte senden.
 
 * **Mobile-App-Kanal**: Sie können mit Adobe Campaign über spezielle Apps personalisierte und segmentspezifische [Push-Benachrichtigungen](../send/push.md) an iOS- und Android-Mobilgeräte senden. Nach der Durchführung von Konfigurations- und Integrationsschritten können iOS- und Android-Sendungen mit Adobe Campaign erstellt und gesendet werden. Sie können auch Rich-Benachrichtigungen mit Bildern oder Videos erstellen und an Android-Geräte senden.
 

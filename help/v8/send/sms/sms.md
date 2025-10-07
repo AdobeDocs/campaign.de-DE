@@ -5,7 +5,7 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 95dca48ae0e2ee82b80464cdf9414538776969ad
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 100%
@@ -26,7 +26,7 @@ Um SMS mit Adobe Campaign an Mobilgeräte zu senden, benötigen Sie Folgendes:
 
 >[!NOTE]
 >
->Sie können mit Adobe Campaign auch [Push-Benachrichtigungen](../push.md) und [LINE](../line.md)-Nachrichten an Mobilgeräte versenden.
+>Sie können mit Adobe Campaign auch [Push-Benachrichtigungen](../push.md) und [LINE](../line/line.md)-Nachrichten an Mobilgeräte versenden.
 
 
 <table style="table-layout:fixed"><tr style="border: 0;">

@@ -5,7 +5,7 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 97%
@@ -82,7 +82,7 @@ ht-degree: 97%
          + [Erstellen eines Rich-Push-Versands in iOS](send/rich-push-ios.md)
       + [Konfigurieren des Push-Benachrichtigungskanals](send/push-settings.md)
       + [Konfigurieren von Push-Benachrichtigungen mit der Datenerfassung](send/push-data-collection.md)
-   + [LINE-Messaging](send/line.md)
+   + [LINE-Messaging](send/line/line.md)
    + [Briefpost](send/direct-mail.md)
    + [X (Twitter)](send/twitter.md)
    + [Benutzerdefinierter externer Kanal](send/custom-channel.md)
@@ -241,7 +241,7 @@ ht-degree: 97%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + REST APIs {#apis}
       + [Erste Schritte mit REST-APIs](dev/api/get-started-apis.md)
