@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 100%
+source-wordcount: '1611'
+ht-degree: 99%
 
 ---
 
@@ -94,7 +94,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    Folgende Zieltypen stehen zur Verfügung:
 
-   * **[!UICONTROL Filterbedingungen]**: Verwenden Sie diese Option, um eine Abfrage zu definieren und das Ergebnis anzuzeigen. Informationen zum Erstellen einer Abfrage finden Sie in [diesem Abschnitt](../start/query-editor.md).
+   * **[!UICONTROL Filterbedingungen]**: Verwenden Sie diese Option, um eine benutzerdefinierte Abfrage zum Abrufen der Empfänger zu definieren. Informationen zum Erstellen einer Abfrage finden Sie in [diesem Abschnitt](../start/query-editor.md).
    * **[!UICONTROL Empfängerliste]**: Verwenden Sie diese Option, um eine Profilliste auszuwählen. Weitere Informationen zu Listen finden Sie in [diesem Abschnitt](../audiences/create-audiences.md).
    * **[!UICONTROL Empfänger]**: Verwenden Sie diese Option, um ein bestimmtes Profil in der Datenbank auszuwählen.
    * **[!UICONTROL Empfänger aus einem Ordner]**: Verwenden Sie diese Option, um alle Profile in einem bestimmten Ordner auszuwählen.
@@ -182,7 +182,7 @@ Weiterführende Informationen zu Testversand-Empfangenden und zum Testversand fi
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447008?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 

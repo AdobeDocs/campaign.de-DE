@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: 449f24cb23afa2d6bd7d6f2ad7ff3ba65e0a1d5d
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 97%
+source-wordcount: '797'
+ht-degree: 96%
 
 ---
 
@@ -175,11 +175,12 @@ ht-degree: 97%
          + [Berechnung integrierter Metriken](reporting/metrics-calculation.md)
       + [Benutzerdefinierte Berichte](reporting/custom-reports.md)
 + Daten-Management {#data}
-   + [Workflow-Dokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
-   + [Datenimport](start/import.md)
-   + Erstellen von Abfragen {#query}
-      + [Entwerfen von Abfragen](start/query-editor.md)
+   + Abfragen der Datenbank {#query}
+      + [Arbeiten mit dem Abfrage-Editor](start/query-editor.md)
+      + [Entwerfen von Abfragen](start/design-queries.md)
       + [Filterbedingungen definieren](start/filter-conditions.md)
+   + [Datenimport](start/import.md)
+   + [Workflow-Dokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
 + Integrationen  {#connect}
    + [Campaign mit anderen Lösungen verbinden](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
@@ -241,7 +242,7 @@ ht-degree: 97%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + REST APIs {#apis}
       + [Erste Schritte mit REST-APIs](dev/api/get-started-apis.md)
