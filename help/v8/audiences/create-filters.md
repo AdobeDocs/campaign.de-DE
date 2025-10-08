@@ -6,22 +6,22 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 24a5c4f1d73ea08e40d271db483da33bf5615fb2
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 99%
+source-wordcount: '1982'
+ht-degree: 83%
 
 ---
 
-# Erstellen und Verwalten von Filtern{#create-filters}
+# Arbeiten mit Filtern{#create-filters}
 
-Beim Filtern von Daten wird ein kleinerer Teil Ihrer Datenmenge ausgewählt, nämlich nur die Einträge, die bestimmten Kriterien entsprechen. Diese Teilmenge wird für bestimmte Aktionen (Aktualisierungen, Erstellung von Zielgruppen) oder Analysen verwendet.
+Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur die Datensätze enthält, die bestimmten Kriterien entsprechen. Diese Teilmenge kann dann für zielgerichtete Aktionen (wie Aktualisierungen oder Zielgruppenerstellung) oder für Analysen verwendet werden.
 
-Beim Durchsuchen von Campaign über den **[!UICONTROL Explorer]** werden die Daten in Listen angezeigt. Sie können vorhandene integrierte Filter verwenden, um auf eine bestimmte Untergruppe dieser Daten zuzugreifen: Beispielsweise Adressen in Quarantäne, nicht kontaktierte Empfänger, eine bestimmte Altersgruppe oder das Erstellungsdatum.
+Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können integrierte Filter anwenden, um schnell auf eine definierte Teilmenge zuzugreifen, z. B. Adressen in Quarantäne, nicht kontaktierte Empfänger oder Datensätze innerhalb eines bestimmten Altersbereichs oder Erstellungsdatums.
 
-Sie können auch eigene Filter erstellen, diese zur späteren Verwendung speichern oder für andere Campaign-Benutzer freigeben.
+Darüber hinaus können Sie benutzerdefinierte Filter erstellen, sie für die zukünftige Verwendung speichern und für andere Campaign-Benutzer freigeben.
 
-Die Filterkonfiguration ermöglicht die **[!UICONTROL dynamische]** Auswahl von Daten aus einer Liste. Bei Änderung der Daten werden die gefilterten Daten aktualisiert.
+Filter werden **dynamisch** angewendet: Wenn sich die Daten ändern, werden die gefilterten Ergebnisse automatisch aktualisiert.
 
 >[!NOTE]
 >
@@ -29,7 +29,62 @@ Die Filterkonfiguration ermöglicht die **[!UICONTROL dynamische]** Auswahl von 
 
 Die folgenden Filtertypen sind in Adobe Campaign verfügbar:
 
+* [Vordefinierte Filter](#predefined-filters)
+* [Schnellfilter](#quick-filters)
+* [Erweiterte benutzerdefinierte Filter](#advanced-filters)
+
 ## Vordefinierte Filter{#predefined-filters}
+
+### Vordefinierte Filter in den Dashboards
+
+Standardmäßig zeigt Adobe Campaign alle Datenbankdatensätze an, die der Benutzer lesen darf. Sie können diese Daten mithilfe der Optionen filtern, die im oberen Abschnitt des Browser-Fensters verfügbar sind.
+
+![](assets/filter_web_zone.png)
+
+Es gibt mehrere Möglichkeiten, die anzuzeigenden Daten zu filtern. Bei Bedarf können diese zusammen verwendet werden. Auf den folgenden Registerkarten erfahren Sie mehr über Filteroptionen.
+
+
+>[!BEGINTABS]
+
+>[!TAB Nach Ordner filtern]
+
+Um Daten nach ihrem Ordner zu filtern, klicken Sie auf das Symbol **[!UICONTROL Ordner]** und wählen Sie den Ordner aus, der die anzuzeigenden Daten enthält.
+
+![](assets/filter_web_select_folder.png)
+
+Nur die Profile im Ordner werden angezeigt:
+
+![](assets/filter_web_folder_display.png)
+
+Über das rechts von der Zeile der Ordnerauswahl gelegene Kreuz kann der Standard-Anzeigemodus wieder aktiviert werden.
+
+>[!TAB Nach Status filtern]
+
+Je nach Typ der angezeigten Informationen können Sie einen Filter nach Status oder Status anwenden.
+
+Sie können beispielsweise für Sendungen festlegen, dass nur abgeschlossene Sendungen angezeigt werden sollen, wie unten dargestellt:
+
+![](assets/filter_delivery.png)
+
+>[!TAB Sortieren nach]
+
+Über die Dropdown-Liste rechts des Ordner-Filterfelds kann die Sortierreihenfolge der angezeigten Daten ausgewählt werden. Der Inhalt dieses Filters hängt vom Datentyp der aufgerufenen Seite ab.
+
+Sie können Aufgaben beispielsweise nach Priorität, Erstellungsdatum oder alphabetischer Reihenfolge sortieren.
+
+![](assets/order_data_sample.png)
+
+>[!TAB Schnellsuche]
+
+Verwenden Sie das Suchfeld, um schnell auf ein bestimmtes Element zuzugreifen: Geben Sie im Titel oder im internen Namen des Elements enthaltene Zeichen ein und bestätigen Sie die Eingabe, um die Daten auf der Seite automatisch zu filtern.
+
+![](assets/filter_search.png)
+
+Klicken Sie auf das Kreuz, um den Inhalt des Suchfelds zu löschen und erneut alle vorhandenen Elemente anzuzeigen.
+
+>[!ENDTABS]
+
+### Vordefinierte Filter im Explorer
 
 Vordefinierte Filter sind über den Button **Filter** oberhalb jeder Liste verfügbar.
 
@@ -52,7 +107,7 @@ Verwenden Sie die letzte Registerkarte, um die gefilterten Daten in der Vorschau
 ![](assets/built-in-filter-preview.png)
 
 
-+++  Integrierte vordefinierte Filter
++++  Integrierte vordefinierte Filter für Profile
 
 <table> 
  <tbody> 
@@ -161,7 +216,7 @@ Verwenden Sie die letzte Registerkarte, um die gefilterten Daten in der Vorschau
 
 +++
 
-### Standardfilter{#default-filters}
+#### Standardfilter{#default-filters}
 
 In den Feldern oberhalb jeder Liste können Sie den **vordefinierten Standardfilter** für diese Liste verwenden. Für die Empfängerliste können Sie standardmäßig nach dem Namen und der E-Mail-Adresse filtern.
 
@@ -191,7 +246,7 @@ Gehen Sie wie folgt vor:
 
 ## Schnellfilter{#quick-filters}
 
-Verwenden und kombinieren Sie **Schnellfilter**, um Filter für bestimmte Felder zu definieren.
+Sie können „Schnellfilter **festlegen und kombinieren** um benutzerdefinierte Filter für bestimmte Felder zu erstellen.
 
 Nach dem Hinzufügen werden die Schnellfilterfelder nacheinander über der Datenliste angezeigt. Sie können unabhängig voneinander gelöscht werden.
 
@@ -199,7 +254,7 @@ Schnellfilter sind für jeden Benutzer und jede Benutzerin spezifisch und werden
 
 Wenn Sie einen Filter wiederverwenden müssen, erstellen Sie einen **erweiterten Filter** und speichern Sie ihn. [Weitere Informationen](#advanced-filters).
 
-Gehen Sie wie folgt vor, um einen **Schnellfilter** zu erstellen:
+Gehen Sie wie **vor, um einen** Schnellfilter“ zu erstellen:
 
 1. Klicken Sie mit der rechten Maustaste auf das Feld, nach dem Sie die Daten filtern möchten, und wählen Sie die Option **[!UICONTROL Nach diesem Feld filtern]** aus.
 
@@ -216,7 +271,7 @@ Gehen Sie wie folgt vor, um einen **Schnellfilter** zu erstellen:
    ![](assets/add-filter-above-the-list.png)
 
 
-Wenn Sie nach einem Feld filtern müssen, das im Formular nicht vorhanden ist, fügen Sie es in die Spalten ein und filtern Sie nach dieser Spalte. Gehen Sie dazu wie folgt vor,
+Wenn Sie nach einem Feld filtern müssen, das nicht im Formular, sondern in den Spalten verfügbar ist, und nach dieser Spalte filtern müssen. Gehen Sie dazu wie folgt vor,
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Liste konfigurieren]**.
 
@@ -236,7 +291,7 @@ Wenn Sie nach einem Feld filtern müssen, das im Formular nicht vorhanden ist, f
 
 ## Erweiterte Filter{#advanced-filters}
 
-Kombinieren Sie in **Erweiterte Filter** komplexe Kriterien. Verwenden Sie diese Filter, um eine komplexe Abfrage oder eine Kombination von Abfragen Ihrer Daten zu erstellen. Diese Filter können gespeichert und für andere Campaign-Benutzer freigegeben werden.
+Kombinieren Sie komplexe Kriterien in benutzerdefinierten **erweiterten Filtern**. Verwenden Sie diese Filter, um eine komplexe Abfrage oder eine Kombination von Abfragen Ihrer Daten zu erstellen. Diese Filter können gespeichert und für andere Campaign-Benutzer freigegeben werden.
 
 ### Erstellen eines erweiterten Filters{#create-adv-filters}
 
@@ -355,5 +410,3 @@ Für vordefinierte Filter sind erweiterte Parameter verfügbar. Um darauf zuzugr
    * Sie können eine SQL-Tabelle mit dem Filter verknüpfen, um ihn für alle Bearbeiter freizugeben, die die Tabelle gemeinsam nutzen.
    * Um zu verhindern, dass Benutzer den Filter überschreiben, wählen Sie die Option **[!UICONTROL Filter nicht weiter einschränken]** aus. Diese Option ist beispielsweise für die Filter &quot;Versandempfänger&quot; und &quot;Empfänger von Sendungen eines bestimmten Ordners&quot; aktiv, die im Versand-Assistenten verfügbar sind. Diese Filter können nicht überschrieben werden.
 
-
-### Operatoren
