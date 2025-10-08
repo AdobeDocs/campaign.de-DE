@@ -23,7 +23,7 @@ Der generische Abfrage-Editor zentralisiert alle Abfragefunktionen. Sie ermögli
 ![Zugriff auf den Abfrage-Editor und Auswahl einer Tabelle](assets/query_editor_nveau_21.png)
 
 
-Die Schritte zum Erstellen einer Abfrage werden [auf dieser Seite) ](design-queries.md).
+Die Schritte zum Erstellen einer Abfrage werden [auf dieser Seite) &#x200B;](design-queries.md).
 
 <!--
 Contexts to use the query editor iin Campaign are listed below:

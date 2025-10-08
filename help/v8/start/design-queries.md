@@ -29,7 +29,7 @@ Folgende Schritte sind auszuführen, um eine Abfrage in Adobe Campaign zu erstel
 >
 >* Alle diese Schritte sind im [generischen Abfrage-Editor](query-editor.md) verfügbar. Wenn eine Abfrage in einem anderen Kontext erstellt wird, können einige Schritte ausgeschlossen werden.
 >
->* Weitere Informationen zu Abfragen und deren Erstellung finden Sie in der [ zum Campaign-Workflow ](../../automation/workflow/query.md).
+>* Weitere Informationen zu Abfragen und deren Erstellung finden Sie in der [&#x200B; zum Campaign-Workflow &#x200B;](../../automation/workflow/query.md).
 
 Um die Campaign-Datenbank abzufragen, öffnen Sie **[Generischer Abfrage-Editor](query-editor.md)** und führen Sie die folgenden Schritte aus:
 
@@ -82,7 +82,7 @@ Die angebotenen Filter hängen von der der Abfrage zugrunde liegenden Tabelle ab
 
 Nach Auswahl der **[!UICONTROL Filterbedingungen]** gelangen Sie zum Abschnitt **[!UICONTROL Zielelemente]**. Hier können Sie festlegen, wie die anzuzeigenden Daten gefiltert werden sollen.
 
-* Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die für die Erstellung der zu verifizierenden Formel erforderlich sind, sodass Daten ausgewählt werden können. Sie können auch mehrere Bedingungen kombinieren, wie auf [ Seite beschrieben](filter-conditions.md).
+* Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die für die Erstellung der zu verifizierenden Formel erforderlich sind, sodass Daten ausgewählt werden können. Sie können auch mehrere Bedingungen kombinieren, wie auf [&#x200B; Seite beschrieben](filter-conditions.md).
 * Sie haben auch die Möglichkeit, zuvor erstellte Filter zu verwenden. Öffnen Sie die Dropdown-Liste der Schaltfläche **[!UICONTROL Hinzufügen]**, klicken Sie auf **[!UICONTROL Vordefinierter Filter]** und wählen Sie den gewünschten Filter aus.
 
   ![](assets/query_editor_15.png)
