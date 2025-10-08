@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Daten-Update".
 feature: Workflows, Targeting Activity, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
+workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Die Felder **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICON
 
 Nur Datensätze, die mindestens eine Änderung aufweisen, werden aktualisiert. Alle anderen bleiben unverändert.
 
-Über den Link **[!UICONTROL Erweiterte Parameter]** können weitere Optionen zur Aktualisierung und den Umgang mit Dubletten definiert werden:
+Über den Link **[!UICONTROL Erweiterte Parameter]** können weitere Optionen zur Aktualisierung und den Umgang mit Duplikaten definiert werden:
 
 * **[!UICONTROL Automatische Schlüsselverwaltung deaktivieren]**;
 * **[!UICONTROL Audit deaktivieren]**;
@@ -81,7 +81,7 @@ Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Im Allgemeine
 
 **[!UICONTROL Ausgehende Transition für die Zurückweisungen erzeugen]**
 
-Erzeugt eine ausgehende Transition, welche die Datensätze enthält, die im Zuge der Aktualisierung nicht korrekt verarbeitet werden konnten (z. B. Dubletten). Im Allgemeinen bildet die Daten-Update-Aktivität den Schlusspunkt eines Zielgruppen-Workflows. Aus diesem Grund, wird die ausgehende Transition nicht standardmäßig erzeugt.
+Erzeugt eine ausgehende Transition, welche die Datensätze enthält, die im Zuge der Aktualisierung nicht korrekt verarbeitet werden konnten (z. B. Duplikate). Im Allgemeinen bildet die Daten-Update-Aktivität den Schlusspunkt eines Zielgruppen-Workflows. Aus diesem Grund, wird die ausgehende Transition nicht standardmäßig erzeugt.
 
 ## Aktualisierung und Fusion von Sammlungen {#updating-and-merging-collections}
 
@@ -101,7 +101,7 @@ Die Aktualisierung mit Fusion von Sammlungen ermöglicht die Aktualisierung von 
 
 1. Geben Sie die in den Hauptdatensatz zu verschiebenden Sammlungen und die zu aktualisierenden Felder an.
 
-   Definieren Sie die Regeln, die in Bezug auf die Felder gelten sollen, wenn ein oder mehrere sekundäre Datensätze identifiziert wurden. Hierzu können Sie den Expression Builder verwenden. Geben Sie beispielsweise an, dass bei Werten aus verschiedenen möglichen Datensätzen jeweils der zuletzt aktualisierte Wert beibehalten werden soll.
+   Definieren Sie die Regeln, die im Bezug auf die Felder gelten sollen, wenn ein oder mehrere sekundäre Datensätze identifiziert wurden. Dazu können Sie den [Ausdrucksgenerator“ ](../../v8/start/filter-conditions.md#list-of-functions). Geben Sie beispielsweise an, dass bei Werten aus verschiedenen möglichen Datensätzen jeweils der zuletzt aktualisierte Wert beibehalten werden soll.
 
    Geben Sie die Bedingungen zur Berücksichtigung der Regel an.
 
@@ -109,7 +109,7 @@ Die Aktualisierung mit Fusion von Sammlungen ermöglicht die Aktualisierung von 
 
    Die Sammlungsfusion ermöglicht die Verschmelzung von heterogenen Daten wie z. B. bei der Liste der Abonnements eines Empfängers. Mithilfe der Regeln kann einer neuer, auf den sekundären Datensätzen beruhender Abonnementverlauf erstellt oder die Liste der Abonnements eines sekundären Datensatzes zum primären Datensatz verschoben werden.
 
-1. Im **[!UICONTROL Dubletten]**-Tab der **[!UICONTROL Erweiterten Parameter]** besteht die Möglichkeit, die Reihenfolge anzugeben, in der die sekundären Datensätze verarbeitet werden sollen.
+1. Auf der Registerkarte **[!UICONTROL Duplikate]** der **[!UICONTROL Erweiterten Parameter]** besteht die Möglichkeit, die Reihenfolge anzugeben, in der die sekundären Datensätze verarbeitet werden sollen.
 
    ![](assets/update_and_merge_collections3.png)
 
@@ -117,7 +117,7 @@ Die Daten der sekundären Datensätze werden dem Hauptdatensatz zugeordnet, wenn
 
 ## Anwendungsbeispiel: Daten-Update nach einer Anreicherung {#example--update-data-following-an-enrichment}
 
-Ein Beispiel für ein Daten-Update nach einer Anreicherungsaktivität finden Sie im Anwendungsbeispiel zur Erstellung einer Zusammenfassungsliste in [Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Bestellungen&quot;](create-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table).
+Ein Beispiel für ein Daten-Update nach einer Anreicherungsaktivität finden Sie im Anwendungsbeispiel zur Erstellung einer Zusammenfassungsliste in [Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Käufe&quot;](create-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table).
 
 ## Eingabeparameter {#input-parameters}
 

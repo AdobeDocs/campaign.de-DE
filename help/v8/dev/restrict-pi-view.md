@@ -5,10 +5,10 @@ feature: PI, Privacy, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -39,7 +39,7 @@ Nachfolgend finden Sie ein Beispiel für eine Erweiterung des Empfängerschemas,
 
 Die wichtigsten Eigenschaften sind:
 
-* **[!UICONTROL visibleIf]** : Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem Ausdrucksassistenten aufgerufen werden können. Dadurch werden jedoch keine Daten ausgeblendet. Wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
+* **[!UICONTROL visibleIf]**: Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem [Ausdrucksgenerator“ aufgerufen werden ](../../v8/start/filter-conditions.md#list-of-functions). Dadurch werden jedoch keine Daten ausgeblendet. Wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
 * **[!UICONTROL accessibleIf]** : Blendet die Daten aus der resultierenden Abfrage aus (und ersetzt sie durch leere Werte). Wenn &quot;visibleIf&quot; leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]**.
 
 Die Verwendung dieses Attributs in Campaign hat folgende Folgen:

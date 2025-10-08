@@ -6,10 +6,10 @@ feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
 workflow-type: tm+mt
 source-wordcount: '1663'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 ## Erstellen einer Abfrage {#creating-a-query}
 
 Über Abfragen lassen sich Zielgruppen anhand von Filterkriterien bestimmen. Es besteht die Möglichkeit, dem Abfrageergebnis einen Segment-Code zuzuweisen und es mit Zusatzdaten zu ergänzen.
-In diesem Abschnitt erfahren Sie, wie Sie anhand von Anwendungsfällen [&#x200B; Abfragen &#x200B;](querying-recipient-table.md). Siehe auch den Abschnitt über den [Abfrage-Editor](../../v8/start/query-editor.md).
+In diesem Abschnitt erfahren Sie, wie Sie anhand von Anwendungsfällen [ Abfragen ](querying-recipient-table.md). Siehe auch den Abschnitt über den [Abfrage-Editor](../../v8/start/query-editor.md).
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
@@ -52,7 +52,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
    Darüber hinaus können Sie die gefilterten Daten gruppieren, indem Sie das entsprechende Kästchen aktivieren. Hierzu muss sich die Filterdimension von der Zielgruppendimension der Abfrage unterscheiden.  Weiterführende Informationen finden Sie in [diesem Abschnitt](query-grouping-management.md).
 
-   Sie können auch weitere Kriterien hinzufügen, indem Sie den Expression Builder verwenden und ihn mit den logischen Optionen AND, OR und EXCEPT kombinieren.
+   Sie können auch weitere Kriterien hinzufügen, indem Sie den [Ausdrucksgenerator](../../v8/start/filter-conditions.md#using-and--or--except) verwenden und ihn mit den logischen Optionen AND, OR und EXCEPT kombinieren.
 
    Speichern Sie Ihren Filter, um ihn später erneut verwenden zu können.
 
