@@ -1,14 +1,14 @@
 ---
-title: Erstellen von Filtern in Adobe Campaign
+title: Arbeiten mit Filtern in Adobe Campaign
 description: Erfahren Sie, wie Sie Ihre Daten filtern und Filter in Campaign speichern können.
 feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 24a5c4f1d73ea08e40d271db483da33bf5615fb2
+source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
 workflow-type: tm+mt
-source-wordcount: '1982'
+source-wordcount: '1983'
 ht-degree: 83%
 
 ---

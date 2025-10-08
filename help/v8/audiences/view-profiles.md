@@ -6,14 +6,14 @@ role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
+workflow-type: tm+mt
 source-wordcount: '469'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Anzeige vorhandener Profile{#view-profiles}
+# Anzeige vorhandener Profile {#view-profiles}
 
 Gehen Sie zu **[!UICONTROL Profile und Zielgruppen]**, um auf in der Adobe Campaign-Datenbank gespeicherte Empfänger zuzugreifen.
 
@@ -28,10 +28,10 @@ Erweiterte Möglichkeiten zur Bearbeitung von Profilen erhalten Sie, wenn Sie ü
 
 >[!CAUTION]
 >
->Der integrierte Bildschirm &quot;Empfänger&quot; wird durch ein XML-Schema und das zugehörige Formular definiert. Das XML-Schema ist im Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** der Adobe Campaign-Explorer-Baumstruktur gespeichert. Nur erfahrene Benutzer dürfen Änderungen an diesen Schemata vornehmen.
+>Der integrierte Bildschirm „Empfänger“ wird durch ein XML-Schema und das zugehörige Formular definiert. Das XML-Schema ist im Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** der Adobe Campaign-Explorer-Baumstruktur gespeichert. Nur erfahrene Benutzer dürfen Änderungen an diesen Schemata vornehmen.
 >
 
-## Bearbeiten von Profilen{#edit-a-profiles}
+## Bearbeiten von Profilen {#edit-a-profiles}
 
 Wählen Sie ein Profil aus, um auf einem neuen Tab Details anzuzeigen.
 
