@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 449f24cb23afa2d6bd7d6f2ad7ff3ba65e0a1d5d
+source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '796'
 ht-degree: 96%
 
 ---
@@ -117,6 +117,7 @@ ht-degree: 96%
    + [Erste Schritte mit Profilen und Zielgruppen](audiences/gs-audiences.md)
    + [Verwenden von Zielgruppen](start/audiences.md)
    + [Zugriff auf Profile](audiences/view-profiles.md)
+   + [Arbeiten mit Filtern](audiences/create-filters.md)
    + Hinzufügen von Profilen {#add-profiles}
       + [Manuelles Erstellen von Profilen](audiences/create-profiles.md)
       + [Importieren von Profilen aus einer Datei](audiences/import-profiles.md)
@@ -126,7 +127,6 @@ ht-degree: 96%
       + [Erstellen von Testprofilen](audiences/test-profiles.md)
    + Erstellen von Zielgruppen {#create-audiences}
       + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
-      + [Erstellen und Verwalten von Filtern](audiences/create-filters.md)
       + [Zielgruppen mit Adobe-Lösungen freigeben](start/shared-audiences.md)
    + [Best Practices](audiences/audiences-best-practices.md)
    + [Verwalten von Abonnements](start/subscriptions.md)
@@ -242,7 +242,7 @@ ht-degree: 96%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + REST APIs {#apis}
       + [Erste Schritte mit REST-APIs](dev/api/get-started-apis.md)

@@ -5,13 +5,11 @@ description: Künftige Änderungen am Push-Benachrichtigungskanal
 feature: Push
 role: Admin
 level: Experienced
-badge-v7: label="v7" type="Informative" tooltip="Gilt auch für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt für Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a9aa9cb508ca1f5cdcd59e61b5be029e3de1a82f
+source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
 workflow-type: tm+mt
-source-wordcount: '1721'
-ht-degree: 94%
+source-wordcount: '1709'
+ht-degree: 93%
 
 ---
 
