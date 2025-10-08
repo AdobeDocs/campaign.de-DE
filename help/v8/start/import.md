@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: adea4eb54f3d519802119646bc501aae2ef5f831
 workflow-type: tm+mt
-source-wordcount: '4141'
-ht-degree: 99%
+source-wordcount: '4162'
+ht-degree: 97%
 
 ---
 
@@ -417,9 +417,13 @@ Wenn Sie eine Sammlung von Elementen exportieren (beispielsweise Abonnements von
 
 ### &#x200B;8. Schritt – Datenvorschau {#step-8---data-preview}
 
-Klicken Sie auf **[!UICONTROL Datenvorschau starten]**. Standardmäßig werden die ersten 200 Zeilen des Ergebnisses des Exports angezeigt. Durch Eingabe eines anderen Werts im Feld **[!UICONTROL Angezeigte Zeilen]** können Sie die Liste Ihren Bedürfnissen gemäß anpassen.
+Klicken Sie **[!UICONTROL Vorschau der Daten starten]** um eine Vorschau des Exportergebnisses anzuzeigen.
 
 ![](assets/s_ncs_user_export_wizard07.png)
+
+>[!NOTE]
+>
+>Wie bei allen in der Konsole verfügbaren Listen werden standardmäßig nur die ersten 200 Zeilen im Fenster **[!UICONTROL Datenvorschau“]**. Geben Sie eine Zahl in das Feld **[!UICONTROL Anzuzeigende Zeilen“ ein]** klicken Sie auf **[!UICONTROL Vorschau der Daten starten]**. [Weitere Informationen](../config/ui-settings.md#manage-and-customize-lists)
 
 Durch Klick auf die Registerkarten unten im Fenster können Sie von der Ergebnisansicht in Spalten zur XML-Anzeige wechseln. Sie können außerdem die generierten SQL-Abfragen anzeigen.
 
