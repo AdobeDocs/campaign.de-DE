@@ -101,7 +101,7 @@ Die Aktualisierung mit Fusion von Sammlungen ermöglicht die Aktualisierung von 
 
 1. Geben Sie die in den Hauptdatensatz zu verschiebenden Sammlungen und die zu aktualisierenden Felder an.
 
-   Definieren Sie die Regeln, die im Bezug auf die Felder gelten sollen, wenn ein oder mehrere sekundäre Datensätze identifiziert wurden. Dazu können Sie den [Ausdrucksgenerator“ ](../../v8/start/filter-conditions.md#list-of-functions). Geben Sie beispielsweise an, dass bei Werten aus verschiedenen möglichen Datensätzen jeweils der zuletzt aktualisierte Wert beibehalten werden soll.
+   Definieren Sie die Regeln, die im Bezug auf die Felder gelten sollen, wenn ein oder mehrere sekundäre Datensätze identifiziert wurden. Dazu können Sie den [Ausdrucksgenerator“ &#x200B;](../../v8/start/filter-conditions.md#list-of-functions). Geben Sie beispielsweise an, dass bei Werten aus verschiedenen möglichen Datensätzen jeweils der zuletzt aktualisierte Wert beibehalten werden soll.
 
    Geben Sie die Bedingungen zur Berücksichtigung der Regel an.
 
