@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit dem Social-Media-Marketing-Modul von Adob
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '859'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Nach der Konfiguration der Integration haben Sie folgende Möglichkeiten:
 
 * Senden von Direktnachrichten an Ihre Follower
 * Posten auf Ihrem X-Konto
-* Sammeln Sie neue Kontakte, indem Sie die Profildaten abrufen, um auf der Basis dieser Daten Zielgruppen-Kampagnen durchzuführen und Cross-Channel-Strategien anzuwenden. Diese Aktion erfordert die Benutzerzustimmung.
+* Sammeln Sie neue Kontakte, indem Sie die Profildaten abrufen, um auf der Basis dieser Daten Zielgruppenbestimmungs-Kampagnen durchzuführen und Cross-Channel-Strategien anzuwenden. Diese Aktion erfordert die Benutzerzustimmung.
 
 
 Die Konfigurationsschritte zur Integration Ihres X-Kontos mit Adobe Campaign werden auf [dieser Seite](../connect/ac-tw.md) beschrieben.
@@ -149,7 +149,7 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
 >[!CAUTION]
 >
->Sie können pro Tag maximal 250 Direktnachrichten senden. Um eine Überschreitung dieses Grenzwerts zu vermeiden, können Sie in mehreren Schüben senden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#sending-using-multiple-waves){target="_blank"}.
+>Sie können pro Tag maximal 250 Direktnachrichten senden. Um eine Überschreitung dieses Grenzwerts zu vermeiden, können Sie in mehreren Schüben senden. Weitere Informationen hierzu finden Sie in diesem [Abschnitt](configure-and-send.md#sending-using-multiple-waves).
 
 
 ## Zugriff auf Tracking-Daten {#tw-tracking}

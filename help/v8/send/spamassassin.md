@@ -6,10 +6,10 @@ feature: Email, Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,8 @@ SpamAssassin nutzt eine Vielzahl von Spam-Erkennungs-Methoden, darunter:
 
 Nachdem Sie Ihren E-Mail-Versand erstellt und seinen Inhalt definiert haben, folgen Sie den unten stehenden Schritten, um die Risiken auszuwerten.
 
-Weiterführende Informationen zur Erstellung und Konzeption eines Versands finden Sie in [diesem Abschnitt](defining-the-email-content.md).
+Weiterführende Informationen zum Erstellen und Entwerfen eines Versands finden Sie auf dieser [Seite](defining-the-email-content.md).
+
 
 1. Gehen Sie zum Tab **[!UICONTROL Vorschau]**.
 1. Wählen Sie einen Empfänger aus, um Ihren Versand in der Vorschau zu betrachten.

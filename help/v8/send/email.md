@@ -6,9 +6,9 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '578'
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+workflow-type: tm+mt
+source-wordcount: '579'
 ht-degree: 100%
 
 ---
@@ -100,7 +100,7 @@ In diesem [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/auto
 >* [Auswählen der Zielgruppe für Ihre E-Mail](../audiences/gs-audiences.md)
 >* [Validieren eines Versands und Durchführen von Testsendungen](preview-and-proof.md)
 >* [Konfigurieren und Durchführen des Versands](configure-and-send.md)
->* [Best Practices beim Versand](../start/delivery-best-practices.md)
+>* [Best Practices beim Versand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}
 
 ## Testen und Validieren von E-Mails
 

@@ -6,10 +6,10 @@ feature: Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 98%
+source-wordcount: '754'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 >[!NOTE]
 >
->Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie unter [Definieren des E-Mail-Inhalts](defining-the-email-content.md).
+>Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie auf dieser [Seite](defining-the-email-content.md).
 
 ## Absenderadresse {#sender-address}
 
@@ -37,7 +37,7 @@ Bestimmte Internet-Anbieter überprüfen die Gültigkeit der Absenderadresse (**
 
 Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungassistent...]**) oder in den am häufigsten verwendeten Szenarien eine richtige Adresse angegeben wird.
 
-Weitere Informationen zur Bestimmung der Absenderadresse finden Sie auf [dieser Seite](defining-the-email-content.md#sender).
+Weitere Informationen zur Bestimmung der Absenderadresse finden Sie auf dieser [Seite](defining-the-email-content.md#sender).
 
 ## Personalisierung {#personalization}
 

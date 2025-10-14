@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1145'
 ht-degree: 97%
 
 ---
@@ -42,7 +42,7 @@ Adobe Campaign verfügt über Prozesse und Einstellungen, die es Ihnen ermöglic
 
 * **Benutzerzustimmung und Datenspeicherung**: Sie müssen die Einwilligungen der jeweiligen Benutzenden einholen, Anmeldemechanismen mit Double-Opt-in einrichten, den Opt-out erleichtern und die Datenspeicherung konfigurieren.
 
-  Weitere Informationen finden Sie in der Dokumentation zum Datenschutz in Campaign Classic v7[&#128279;](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent){target="_blank"}
+  Weitere Informationen finden Sie in der Dokumentation zum Datenschutz in Campaign Classic v7[](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent){target="_blank"}
 
 * **Datenschutzbestimmungen**: In [diesem Abschnitt](privacy.md) finden Sie Informationen über Datenschutzanforderungen und darüber, wie sich diese Bestimmungen auf Ihre Organisation und Adobe Campaign auswirken.
 
@@ -87,7 +87,7 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folg
 
    Erfahren Sie auf [ Seite , wie Sie eine Workflow-Vorlage ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"}.
 
-   Weitere Informationen zu E-Mail-Vorlagen finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=de){target="_blank"}.
+   Weitere Informationen zu E-Mail-Vorlagen finden Sie auf [Seite](../send/create-templates.md).
 
 
 1. **Konfigurieren von Typologieregeln**

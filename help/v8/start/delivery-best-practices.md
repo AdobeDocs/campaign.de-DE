@@ -6,9 +6,9 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '2970'
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+workflow-type: tm+mt
+source-wordcount: '2959'
 ht-degree: 100%
 
 ---
@@ -226,7 +226,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
 ## Verwalten von Bildern {#manage-images}
 
@@ -249,7 +249,7 @@ Manche E-Mail-Clients blockieren Bilder standardmäßig. Einstellungen können a
 
 Versuchen Sie, Bilder responsiv und anpassbar zu machen, damit sie in allen Kontexten und auf allen Geräten sichtbar sind. Beachten Sie, dass sich dies auf die Kosten auswirken kann, da die Erstellung länger dauert.
 
-### Verwenden absoluter Bildreferenzen {#absolute-images}
+### Verwenden absoluter Bildverweise {#absolute-images}
 
 Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und öffentlichen Ressourcen verwendeten Bilder, die mit Kampagnen verknüpft sind, auf einem extern zugänglichen Server gespeichert sein.
 
@@ -272,7 +272,7 @@ Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorsc
 
 Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Listen sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients sowie auf Smartphones und Tablets und stellen Sie sicher, dass Ihre E-Mail-Listen aktuell sind (und keine unbekannten oder veralteten Adressen enthalten).  Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.  Weitere Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](../audiences/gs-audiences.md).
 
-### Ansprechen der richtigen Audience {#target-the-right-audience}
+### Ansprechen der richtigen Zielgruppe {#target-the-right-audience}
 
 Wenn Ihr Inhalt fertiggestellt ist, müssen Sie sorgfältig auswählen, wer Ihre Nachricht erhalten soll.
 
@@ -411,9 +411,6 @@ Sie haben auf die Schaltfläche **Senden** geklickt? Lassen Sie uns sehen, was d
 Um Ihre Kampagnen steuern zu können, müssen Sie zunächst sichergehen, dass Ihre Nachricht bei Ihren Empfängerinnen und Empfängern tatsächlich angekommen ist.
 
 Prüfen Sie im Versand-Dashboard von Campaign die verarbeiteten Nachrichten und Versand-Auditlogs.  In den Versandlogs können Sie den Status der Nachrichten feststellen.
-
-[Weitere Informationen zum Versand-Monitoring finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=de){target="_blank"}.
-
 
 ## Nachverfolgen von Verhaltensmustern {#track-behaviour}
 
