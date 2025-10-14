@@ -36,7 +36,7 @@ Informationen zum Erstellen und Verwalten von Filtern finden Sie auf [dieser Sei
 
 Zielgruppenbestimmung kann über eine Kombination von Abfragen in einer grafischen Abfolge in einem Workflow erstellt werden. Sie können Zielgruppen erstellen und deren Targeting entsprechend Ihren Anforderungen anpassen. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
 
-Auf dieser Seite erfahren Sie, wie Sie eine Audience in einem Kampagnen[Workflow ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de){target="_blank"}.
+Auf dieser Seite erfahren Sie, wie Sie eine Audience in einem Kampagnen[Workflow &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de){target="_blank"}.
 
 
 ## Aktive Profile {#active-profiles}
@@ -58,5 +58,5 @@ Es gelten die folgenden Schutzmechanismen und Einschränkungen:
 
 Adobe Campaign ist ein leistungsstarkes Tool zur Erfassung und Verarbeitung von großen Datenmengen, einschließlich personenbezogener Daten und vertraulicher Informationen. Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vertraulicher Daten, erfassen. Es ist daher unerlässlich, dass Sie das Einverständnis Ihrer Empfänger erhalten und überwachen.
 
-Erfahren Sie in der Dokumentation zu [Adobe Campaign Classic v7, wie Sie Datenschutz und Einverständnis ](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target="_blank"}.
+Erfahren Sie in der Dokumentation zu [Adobe Campaign Classic v7, wie Sie Datenschutz und Einverständnis &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target="_blank"}.
 
