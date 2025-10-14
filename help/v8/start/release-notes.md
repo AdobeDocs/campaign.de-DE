@@ -28,8 +28,8 @@ Der **neue SMS-**-Connector) ist jetzt für [Campaign FFDA-Bereitstellungen](../
 
 Diese Version enthält auch eine Reihe von Funktionen, die in der Web-Benutzeroberfläche von Campaign verfügbar sind:
 
-* [Profilanreicherung in Transaktionsnachrichten](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
-* [Mehrsprachige Funktionen für Transaktionsnachrichten, Push-Benachrichtigungen und SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilanreicherung in Transaktionsnachrichten](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=de){target="_blank"}
+* [Mehrsprachige Funktionen für Transaktionsnachrichten, Push-Benachrichtigungen und SMS](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=de){target="_blank"}
 
 Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
 
