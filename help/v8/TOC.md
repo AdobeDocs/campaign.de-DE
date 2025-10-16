@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
+source-git-commit: 0e2e96a37165b82829df7421760de761a2c2b1a5
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '806'
 ht-degree: 96%
 
 ---
@@ -92,6 +92,9 @@ ht-degree: 96%
       + [Hinzufügen von Personalisierungsfeldern,](send/personalization-fields.md)
       + [Verwenden von Gestaltungsbausteinen](send/personalization-blocks.md)
       + [Erstellen von Bedingungen](send/conditions.md)
+      + [Personalisierte Gutscheine](send/personalized-coupons.md)
+      + [Personalisierte PDF-Dokumente erstellen](send/generating-personalized-pdf-documents.md)
+      + [Emoticon-Liste personalisieren](send/customizing-emoticon-list.md)
    + Validieren und Senden des Versands {#validate}
       + [Vorschau und Testsendungen](send/preview-and-proof.md)
       + [Versandanalyse](send/delivery-analysis.md)
@@ -242,7 +245,7 @@ ht-degree: 96%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + REST APIs {#apis}
       + [Erste Schritte mit REST-APIs](dev/api/get-started-apis.md)
