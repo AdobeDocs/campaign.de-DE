@@ -6,9 +6,9 @@ feature: Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: c3e107b5-6d2e-408f-9c7d-a81a4756b4ef
-source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
-workflow-type: ht
-source-wordcount: '2031'
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+workflow-type: tm+mt
+source-wordcount: '2028'
 ht-degree: 100%
 
 ---
@@ -140,7 +140,7 @@ Sie können Emoticons in Ihren E-Mail-Inhalt einfügen.
 
 1. Klicken Sie danach auf die Schaltfläche **[!UICONTROL Schließen]**.
 
-Informationen zum Anpassen der Emoticon-Liste finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/personalizing-deliveries/customizing-emoticon-list).
+Informationen zum Anpassen der Emoticon-Liste finden Sie auf dieser [Seite](customizing-emoticon-list.md).
 
 ## Hinzufügen von Bildern {#adding-images}
 
@@ -160,7 +160,7 @@ Diese Bilder können:
 * lokal gespeichert sein oder von einem Server abgerufen werden;
 * aus der Bibliothek der öffentlichen Ressourcen in Adobe Campaign stammen;
 
-  Auf öffentliche Ressourcen kann im Knoten **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Navigationsbaums zugegriffen werden. Sie sind in einer Bibliothek zusammengefasst und können in E-Mails, Kampagnen, Aufgaben und dem Content Management verwendet werden.
+  Auf öffentliche Ressourcen kann im Knoten **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Navigationsbaums zugegriffen werden. Sie sind in einer Bibliothek zusammengefasst und können in E-Mails, Kampagnen, Aufgaben und dem Content-Management verwendet werden.
 
 * Ein für Adobe Experience Cloud freigegebenes Asset. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud).
 
