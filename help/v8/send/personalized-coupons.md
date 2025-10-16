@@ -5,11 +5,10 @@ description: Erfahren Sie, wie Sie personalisierte Gutscheine erstellen und einf
 feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
-exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 33462c1e2af34000131ce81e23ac2360c2cc5a3a
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 98%
+source-wordcount: '969'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +22,7 @@ Durch das Hinzufügen von Coupons zu Ihren Sendungen können Sie Ihren Empfänge
 
 Die Couponverwaltung basiert auf einem Kit, das installiert werden muss. Um festzustellen, ob Sie dieses Kit zur Couponverwaltung installiert haben, gehen Sie zu **[!UICONTROL Administration > Konfiguration > Kit-Verwaltung > Installierte Kits.]**
 
-Coupondaten können im CSV- und XML-Format importiert und exportiert werden. [Weitere Informationen](../../platform/using/get-started-data-import-export.md).
+Coupondaten können im CSV- und XML-Format importiert und exportiert werden. [Weitere Informationen](../start/import.md).
 
 ## Erstellen eines Coupons {#creating-a-coupon}
 
@@ -58,7 +57,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
 
    >[!NOTE]
    >
-   >Individuelle Gutscheine können gesammelt importiert werden. Weiterführende Informationen zum Importieren und Exportieren finden Sie in [diesem Abschnitt](../../platform/using/get-started-data-import-export.md).
+   >Individuelle Gutscheine können gesammelt importiert werden. Weiterführende Informationen zum Importieren und Exportieren finden Sie in [diesem Abschnitt](../start/import.md).
 
 ### Konfigurieren von individuellen Gutscheinen {#configuring-individual-coupons}
 
@@ -75,8 +74,7 @@ Die Werte für **[!UICONTROL Status]**, **[!UICONTROL Kanal]** und **[!UICONTROL
 
 ## Einfügen eines Gutscheins in einen E-Mail-Versand {#inserting-a-coupon-into-an-email-delivery}
 
-Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterführende Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](about-email-channel.md). Sie können auch in einem Workflow einem Versand einen Gutschein hinzufügen.
-
+Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Detaillierte Anweisungen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](email.md)
 1. Gehen Sie zu **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Sendungen]** aus.
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
@@ -150,9 +148,9 @@ So prüfen Sie, ob der Versand erfolgreich war:
 
 >[!NOTE]
 >
->Standardmäßig verwendet das Couponverwaltungsmodul eine **nms:recipient**-Tabelle. [Weitere Informationen](../../configuration/using/about-data-model.md#default-recipient-table).
+>Standardmäßig verwendet das Couponverwaltungsmodul eine **nms:recipient**-Tabelle. [Weitere Informationen](../dev/datamodel.md#ootb-profiles).
 >
-> [Auf dieser Seite](../../configuration/using/about-custom-recipient-table.md) erfahren Sie, wie Sie eine benutzerdefinierte Empfängertabelle verwenden.
+> [Auf dieser Seite](../dev/custom-recipient.md) erfahren Sie, wie Sie eine benutzerdefinierte Empfängertabelle verwenden.
 
 ## Verwalten bei unzureichender Anzahl von Gutscheinen {#managing-insufficient-coupons}
 
