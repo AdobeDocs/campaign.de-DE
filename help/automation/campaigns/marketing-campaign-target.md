@@ -6,10 +6,10 @@ feature: Campaigns, Audiences
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 100%
+source-wordcount: '1587'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ In einer Marketing-Kampagne können Sie für jeden Versand Folgendes definieren:
 
 * Die Zielgruppe. Sie können Nachrichten an eine [Empfängerliste](#send-to-a-group) senden oder eine [Zielgruppe in einem Workflow](#build-the-main-target-in-a-workflow) erstellen.
 * Eine Kontrollgruppe. Sie können eine [Kontrollgruppe hinzufügen](#add-a-control-group), um das Empfängerverhalten nach dem Nachrichtenversand zu überwachen.
-* Testadressen: Weitere Informationen finden Sie in [diesem Abschnitt](../../v8/audiences/test-profiles.md).-->
+* Testadressen: Weitere Informationen finden Sie in [diesem Abschnitt](../../v8/audiences/test-profiles.md).
 
 Einige dieser Informationen werden von der [Kampagnenvorlage](marketing-campaign-templates.md#campaign-templates) übernommen.
 
@@ -176,6 +176,10 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 Bei der Kontrollgruppe handelt es sich um eine Population, die den Versand nicht erhält. Sie erlaubt es, Verhaltensunterschiede im Vergleich zu den Empfängern der Zielgruppe, die den Versand erhält, und somit die Auswirkungen einer Kampagne zu messen.
 
 Die Kontrollgruppe kann aus der Hauptzielgruppe extrahiert werden und/oder aus einer speziellen Abfrage hervorgehen.
+
+>[!CAUTION]
+>
+>Sie können keine Kontrollgruppen verwenden, wenn Sie die Zielgruppen-Population aus einer externen Datei laden.
 
 ### Aktivieren der Kontrollgruppe für eine Kampagne {#activate-the-control-group-for-a-campaign}
 
