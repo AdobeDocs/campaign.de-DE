@@ -3,10 +3,10 @@ keywords: Campaign Classic;Startseite;beliebte Themen
 description: Hilfe finden Sie im Adobe Campaign v8-Hilfezentrum. Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerbehebungen in Campaign v8.
 title: Adobe Campaign v8-Produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: dc8aef5fe542db06368a2cc0c832b4d43b069fc7
+source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 91%
+source-wordcount: '298'
+ht-degree: 90%
 
 ---
 
@@ -31,13 +31,13 @@ Erleben Sie die neue Adobe Campaign-Benutzeroberfläche. Moderner, intuitiver un
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](start/campaign-ui.md#ac-web-ui)
 
+<!--
+>[!TAB Push channel upcoming changes] 
 
->[!TAB Künftige Änderungen am Push-Kanal]
+Some important changes to the Android Firebase Cloud Messaging (FCM) service will be released in 2024, and may impact your Adobe Campaign implementation. Your subscription services configuration for Android push messages may need to be updated to support this change. You can already check and take action.
 
-Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können dies bereits überprüfen und Maßnahmen ergreifen.
-
-[![Bild](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
-
+[![image](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
+-->
 
 
 >[!ENDTABS]

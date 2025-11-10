@@ -1,9 +1,11 @@
 ---
 title: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 description: Upgrade der E-Mail-Versandinfrastruktur in Campaign
+hide: true
+hidefromtoc: true
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
-workflow-type: ht
+source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
 
@@ -55,11 +57,11 @@ Die Upgrades der Produktionsumgebung begannen im **Januar 2024**.
 
 * **Welche Tests sind für die Kundinnen und Kunden erforderlich?**
 
-  Wir erwarten keine Tests durch Kundinnen und Kunden in Verbindung mit diesem Upgrade-Ereignis. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support){target="_blank"}.
+  Wir erwarten keine Tests durch Kundinnen und Kunden in Verbindung mit diesem Upgrade-Ereignis. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&lang=de#support){target="_blank"}.
 
 
 * **Kann ich eine Änderung des Datums/der Uhrzeit für das geplante Sicherheits-Upgrade beantragen?**
 
   Nein. Wir können keine Anfragen bezüglich Änderungen an der bestehenden Planung berücksichtigen, da dies wahrscheinlich das zugewiesene Upgrade-Ereignis für andere Kundinnen und Kunden stören würde.
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support){target="_blank"}.
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&lang=de#support){target="_blank"}.

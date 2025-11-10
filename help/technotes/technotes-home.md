@@ -5,10 +5,10 @@ title: Technische Artikel zu Adobe Campaign
 role: Developer
 level: Experienced
 exl-id: ae1ef010-24d5-4be4-a30c-899e2b0040a4
-source-git-commit: 0844a4fcd34220d825ae30368b284cbcaf93d02b
+source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 90%
+source-wordcount: '118'
+ht-degree: 100%
 
 ---
 
@@ -16,23 +16,25 @@ ht-degree: 90%
 
 In diesem Abschnitt finden Sie aktuelle Technotes zu Campaign. Diese Technotes gelten für Campaign v8.
 
+<!--
 >[!BEGINTABS]
 
->[!TAB Änderungen am Push-Benachrichtigungskanal]
+>[!TAB Push Notification Channel changes] 
 
-Einige wichtige Änderungen am Android Firebase Cloud Messaging(FCM)-Dienst werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen.
+Some important changes to the Android Firebase Cloud Messaging (FCM) service are released in 2024, and may impact your Adobe Campaign implementation. Your subscription services configuration for Android push messages may need to be updated to support this change.
 
 
-[![Bild](../v8//assets/do-not-localize/learn-more-button.svg)](upgrades/push-technote.md)
+[![image](../v8//assets/do-not-localize/learn-more-button.svg)](upgrades/push-technote.md)
 
 
 >[!TAB Identity Management System (IMS)]
 
-Ab Campaign v8.6 wird der Authentifizierungsprozess für Campaign v8 verbessert. Alle Benutzerinnen bzw. Benutzer verwenden für die Verbindung mit Campaign ausschließlich das Adobe Identity Management System (IMS)
+Starting Campaign v8.6, the authentication process to Campaign v8 is being improved. All operators will use Adobe Identity Management System (IMS) only to connect to Campaign
 
-[![Bild](../v8/assets/do-not-localize/learn-more-button.svg)](upgrades/migrate-users-to-ims.md)
+[![image](../v8/assets/do-not-localize/learn-more-button.svg)](upgrades/migrate-users-to-ims.md)
 
 >[!ENDTABS]
+-->
 
 ## Erkunden Sie die Dokumentation
 
@@ -75,5 +77,5 @@ Ab Campaign v8.6 wird der Authentifizierungsprozess für Campaign v8 verbessert.
 
 ## Zusätzliche Ressourcen
 
-[Adobe Campaign v8-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Dokumentation zur Adobe Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=de){target="_blank"} - [[!DNL Adobe Campaign] Automatisierungshandbuch](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"} - [Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
+[Adobe Campaign v8-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Dokumentation der Web-Benutzeroberfläche von Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"} – [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=de){target="_blank"} – [[!DNL Adobe Campaign] Automatisierungshandbuch](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"} – [Control Panel für Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
 
