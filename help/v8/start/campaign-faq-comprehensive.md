@@ -7,10 +7,10 @@ level: Beginner
 keywords: FAQ, Campaign v8, Fragen, Antworten, Hilfe, Support, Fehlerbehebung
 hide: true
 hidefromtoc: true
-source-git-commit: 15e52d3c7d990bd1a1a5c9d1a2d83d8fee9aaaed
+source-git-commit: 299228306a9aee85249db78cf658ab61005d1cf5
 workflow-type: tm+mt
-source-wordcount: '10867'
-ht-degree: 23%
+source-wordcount: '12372'
+ht-degree: 11%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 
 Erhalten Sie schnelle Antworten auf die häufigsten Fragen zu Adobe Campaign v8. Unabhängig davon, ob Sie gerade erst anfangen oder nach Hilfe zur erweiterten Konfiguration suchen, finden Sie Antworten, die nach Themen geordnet unten sind.
 
-**Neu bei Campaign?** beginnen mit [allgemeinen &#x200B;](#general) und [Schlüsselkonzepten](#key-concepts).\
+**Neu bei Campaign?** beginnen mit [allgemeinen ](#general) und [Schlüsselkonzepten](#key-concepts).\
 **Benötigen Sie technische Hilfe?** Überprüfen Sie [Entwickler](#developers) und [Kampagneneinstellungen](#settings).\
 **Finden Sie keine Antwort?** Besuchen Sie unsere [Community-Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"} oder [Support kontaktieren](#get-help).
 
@@ -117,13 +117,13 @@ Adobe Campaign ist mit einer Reihe von Dashboards und Tools zur Überwachung des
 
 +++ Kann ich die Ausführung von Workflows überwachen?
 
-Informationen zur Überwachung der Workflow-Ausführung von Campaign [finden Sie auf dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}.
+Informationen zur Überwachung der Workflow-Ausführung von Campaign [finden Sie auf dieser Seite](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}.
 
 +++
 
 +++ Mit welchen Systemen und Komponenten ist Campaign v8 kompatibel?
 
-Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign &#x200B;](compatibility-matrix.md).
+Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign ](compatibility-matrix.md).
 
 +++
 
@@ -133,7 +133,7 @@ Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download 
 
 Greifen Sie als Admin-Benutzerin bzw. -Benutzer auf Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} zu, um Adobe Campaign herunterzuladen.
 
-Weitere Informationen zum Verteilungs-Center [&#x200B; Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
+Weitere Informationen zum Verteilungs-Center [ Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
 
 +++
 
@@ -179,7 +179,7 @@ Campaign v8 ist die Campaign-Version der nächsten Generation, die für Managed 
 
 Adobe Campaign v8 ist ausschließlich als **Managed Cloud Service** verfügbar und kann nicht in einer On-Premise- oder Hybridumgebung bereitgestellt werden.
 
-[&#x200B; Erfahren Sie mehr über den Wechsel von Campaign Classic v7 zu v8](v7-to-v8.md).
+[ Erfahren Sie mehr über den Wechsel von Campaign Classic v7 zu v8](v7-to-v8.md).
 
 +++
 
@@ -193,7 +193,7 @@ Die damit einhergehenden Rechte und Einschränkungen ermöglichen dem Benutzer F
 * Zugriff auf bestimmte Daten
 * Erstellen, Ändern und/oder Löschen von Daten
 
-[Weitere &#x200B;](../start/gs-permissions.md) zu Benutzerberechtigungen in Campaign v8.
+[Weitere ](../start/gs-permissions.md) zu Benutzerberechtigungen in Campaign v8.
 
 **Verwandte Themen:**
 
@@ -207,13 +207,13 @@ Die damit einhergehenden Rechte und Einschränkungen ermöglichen dem Benutzer F
 
 Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung von Datenschutzbestimmungen in Bezug auf die DSGVO, den CCPA und andere Datenschutzbestimmungen unterstützen.
 
-[&#x200B; Erfahren Sie &#x200B;](../start/privacy.md) über die Datenschutzverwaltung und die Tools und Funktionen, die Adobe Campaign Ihnen zur Einhaltung Ihrer Datenschutzbestimmungen bietet.
+[ Erfahren Sie ](../start/privacy.md) über die Datenschutzverwaltung und die Tools und Funktionen, die Adobe Campaign Ihnen zur Einhaltung Ihrer Datenschutzbestimmungen bietet.
 
 +++
 
 +++ Über welche Benutzeroberflächen-Konzepte von Campaign sollte ich Bescheid wissen?
 
-Adobe Campaign Weitere Informationen [&#x200B; Grundlagen zur Benutzeroberfläche von &#x200B;](campaign-ui.md) finden Sie in diesem Abschnitt.
+Adobe Campaign Weitere Informationen [ Grundlagen zur Benutzeroberfläche von ](campaign-ui.md) finden Sie in diesem Abschnitt.
 
 Ab Campaign v8.6 haben Sie auch Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist.
 
@@ -466,7 +466,7 @@ Campaign v8 ist eine vollständige Neugestaltung von Adobe Campaign, die für ei
 * [Von Campaign Classic v7 zu v8](v7-to-v8.md) | [v7 zu v8 - Übergangshandbuch](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
 * [Von Campaign Standard zu v8](acs-to-v8.md) | [Campaign Standard-Transition](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 * [Übernahmeleitfaden für Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/home){target="_blank"}
-* [Funktionsmatrix von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* [Funktionsmatrix von Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 * [Architektur von Campaign v8](../architecture/architecture.md)
 * [Schutzmechanismen und Einschränkungen](ac-guardrails.md)
 
@@ -517,7 +517,7 @@ Campaign v8 bietet erhebliche Verbesserungen bei gleichzeitiger Beibehaltung der
 
 * Adobe bietet Unterstützung, Anleitungen und Tools für die Migration
 * v8 ist nur Managed Cloud Service (keine On-Premise- oder Hybridbereitstellung)
-* Einige technische Implementierungen können unterschiedlich sein. Überprüfen Sie die [Funktionsmatrix](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* Einige technische Implementierungen können unterschiedlich sein. Überprüfen Sie die [Funktionsmatrix](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 * Datenmigration und -tests erfordern Planung und Ressourcen
 * **Für Campaign Standard-**: Die Umstellung soll reibungslos und mit minimaler Workflow-Unterbrechung erfolgen
 
@@ -541,13 +541,13 @@ Wenden Sie sich an den Adobe-Support unter:
 
 * [Campaign Standard-Wechsel zu v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 * [Übernahmeleitfaden für Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/home){target="_blank"}
-* [Überblick über Campaign Standard zu v8](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/overview){target="_blank"}
-* [Erste Schritte für Marketing-Fachleute](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/marketers){target="_blank"}
-* [Erste Schritte für Admin/Entwickler](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
+* [Überblick über Campaign Standard zu v8](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/overview){target="_blank"}
+* [Erste Schritte für Marketing-Fachleute](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/marketers){target="_blank"}
+* [Erste Schritte für Admin/Entwickler](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
 
 **Allgemeine Ressourcen:**
 
-* [Funktionsmatrix von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* [Funktionsmatrix von Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 * [Kompatibilitätsmatrix](compatibility-matrix.md)
 
 +++
@@ -609,7 +609,7 @@ Die folgenden Begriffe wurden in der Web-Benutzeroberfläche von Campaign aktual
 
 **Verwandte Themen:**
 
-* [Funktionsmatrix](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"} - Vergleichen von Funktionen über Schnittstellen hinweg
+* [Funktionsmatrix](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} - Vergleichen von Funktionen über Schnittstellen hinweg
 * [Kompatibilitätsmatrix](compatibility-matrix.md) - Unterstützte Systeme und Komponenten
 * [Schutzmechanismen und Einschränkungen](ac-guardrails.md)
 * [v7- zu v8-Umstellungshandbuch](v7-to-v8.md)
@@ -663,7 +663,7 @@ Eine Liste ist eine statische Gruppe von Empfängern, die Sie in Sendungen ausw�
 >
 >Verwenden Sie Workflows für Listen, die regelmäßige Aktualisierungen erfordern, und manuelle Erstellung für eine einmalige Segmentierung.
 
-[Zielgruppen erstellen](../audiences/create-audiences.md) | [Aktivität „Listen-Update“](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html?lang=de){target="_blank"}
+[Zielgruppen erstellen](../audiences/create-audiences.md) | [Aktivität „Listen-Update“](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html){target="_blank"}
 
 +++
 
@@ -697,7 +697,7 @@ Campaign verfolgt den Verlauf von An-/Abmeldungen und verwaltet die An-/Abmeldun
 
 Verwenden Sie die **[!UICONTROL Ausschluss]**-Aktivität in einem Workflow, um unerwünschte Profile aus Ihrer Zielgruppe zu entfernen. Platzieren Sie sie nach Ihren Zielgruppenbestimmungsaktivitäten und definieren Sie, welche Population ausgeschlossen werden soll.
 
-[Ausschlussaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html?lang=de){target="_blank"}
+[Ausschlussaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html){target="_blank"}
 
 +++
 
@@ -780,7 +780,7 @@ Hauptfunktionen: automatische Inhaltsduplizierung, automatisches sprachbasiertes
 
 Die Client-Konsole unterstützt auch mehrsprachige Inhalte mit bedingten Inhalten und Workflows, erfordert jedoch eine manuellere Konfiguration.
 
-[Mehrsprachige Sendungen (Web-Benutzeroberfläche)](https://experienceleague.adobe.com/de/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Bedingter Inhalt (Client-Konsole)](../send/conditions.md)
+[Mehrsprachige Sendungen (Web-Benutzeroberfläche)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Bedingter Inhalt (Client-Konsole)](../send/conditions.md)
 
 +++
 
@@ -808,7 +808,7 @@ Ja, aber **nur über die Campaign Web-Benutzeroberfläche**. Der KI-Assistent un
 >
 >Der KI-Assistent ist ausschließlich in der Web-Benutzeroberfläche von Campaign verfügbar und unterstützt derzeit nur Englisch. Benutzer benötigen entsprechende Berechtigungen und müssen einer Benutzervereinbarung zustimmen.
 
-[Überblick über den KI-Assistenten](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [Anwendungsfälle des KI-Assistenten](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Markenausrichtung](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
+[Überblick über den KI-Assistenten](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [Anwendungsfälle des KI-Assistenten](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Markenausrichtung](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
 
 +++
 
@@ -847,7 +847,7 @@ Testadressen sind spezielle Empfängerinnen und Empfänger, die automatisch zu j
 
 Testadressen verwalten in **[!UICONTROL Ressourcen > Kampagnen-Management > Testadressen]**. Halten Sie Listen klein, um eine Beeinträchtigung der Versandmetriken zu vermeiden.
 
-[Leitfaden zu Testadressen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html?lang=de){target="_blank"}
+[Leitfaden zu Testadressen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html){target="_blank"}
 
 +++
 
@@ -1403,7 +1403,7 @@ Es hängt davon ab, welche Benutzeroberfläche Sie verwenden. Die Sprache **Clie
 * Die Spracheinstellung der Web-Benutzeroberfläche ist unabhängig von der Sprache Ihres Campaign-Servers und Ihrer Client-Konsole
 
 
-[Ändern der Sprache in der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Erste Schritte mit der Campaign-Client-Konsole](connect.md)
+[Ändern der Sprache in der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Erste Schritte mit der Campaign-Client-Konsole](connect.md)
 
 +++
 
@@ -1522,7 +1522,7 @@ Ja. Campaign bietet native CRM-Connectoren für eine nahtlose bidirektionale Syn
 
 **Best Practice:** Starten Sie mit der schreibgeschützten Synchronisierung, um die Zuordnung zu testen, und aktivieren Sie dann die bidirektionale Synchronisierung. Überwachen Sie Synchronisierungsprotokolle auf Fehler und sorgen Sie in beiden Systemen für saubere Daten.
 
-[CRM-Connector-Konfiguration](../connect/crm.md) | [Workflow-CRM-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html?lang=de){target="_blank"}
+[CRM-Connector-Konfiguration](../connect/crm.md) | [Workflow-CRM-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html){target="_blank"}
 
 +++
 
@@ -1606,57 +1606,158 @@ Erhalten Sie Einblicke in die Reporting-Funktionen von Campaign, einschließlich
 
 +++ Wie kann ich neue Berichte erstellen?
 
-Abgesehen von den integrierten Berichten können Sie in Adobe Campaign auch benutzerdefinierte Berichte entsprechend dem jeweiligen Kontext und Ihren Anforderungen erstellen.
+Campaign bietet je nach Bedarf und technischem Know-how verschiedene Reporting-Optionen. Sie können integrierte Berichte verwenden, benutzerdefinierte Berichte in der Client-Konsole erstellen oder visuelle Dashboards in der Web-Benutzeroberfläche von Campaign erstellen.
 
-Adobe Campaign ist keine auf Berichterstellung spezialisierte Anwendung: Die hier erstellten Berichte dienen hauptsächlich der Visualisierung aggregierter Daten.
+**Berichtsoptionen:**
 
-[Weitere Informationen](../reporting/gs-reporting.md) über die Reporting-Funktionen von Campaign.
+* **Integrierte Berichte** - Einsatzbereite Versand-, Kampagnen- und Tracking-Berichte, die über die Registerkarte **[!UICONTROL Berichte]** zugänglich sind
+* **Deskriptive Analyse** - Schnelle statistische Berichte zu beliebigen Daten mit einer assistentengesteuerten Oberfläche
+* **Benutzerspezifische Berichte** - Erweiterte Berichte, die von technischen Anwendern mit dem Reporting-Editor erstellt wurden
+* **Web-UI-Dashboards** - Moderne visuelle Berichte und Dashboards mit Drag-and-Drop-Oberfläche
+* **Cubes** - Mehrdimensionale Datenexploration und Pivot-Tabellenanalyse
+
+**Wichtig:** Campaign wurde für die Berichterstellung zu Marketing-Vorgängen entwickelt, nicht als spezielles Business Intelligence-Tool. Bei komplexen Analyseanforderungen sollten Sie die Integration mit Adobe Analytics oder dedizierten BI-Plattformen in Betracht ziehen.
+
+[Erste Schritte mit Reporting](../reporting/gs-reporting.md) | [Berichte der Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
 +++ Wie kann ich Statistikberichte zu Populationen erstellen und teilen?
 
-Adobe Campaign [Deskriptive Analyseberichte](../reporting/built-in-reports.md) ermöglichen es Ihnen, Statistikberichte zu Ihren Populationen zu erstellen und freizugeben.
+Mit dem deskriptiven Analyse-Tool von Campaign können Sie schnell statistische Berichte zu Populationsdaten erstellen. Mit dieser assistentengesteuerten Funktion können Sie Verteilungen, Trends und Muster ohne technisches Know-how analysieren.
 
-[Weitere Informationen](../reporting/built-in-reports.md).
+**Was Sie analysieren können:**
+
+* Aufschlüsselung der Empfängerdemografie und Segmentierung
+* Leistungsmetriken und Reaktionsraten von Campaign
+* Verteilung von Profilattributen (Alter, Standort, Voreinstellungen)
+* Versandstatistiken und Interaktionsmuster
+* Benutzerdefinierte Feldwerte und Metriken zur Datenqualität
+
+**Erstellen:** Wählen Sie eine Liste oder ein Abfrageergebnis aus → klicken Sie mit der rechten Maustaste auf → **[!UICONTROL Aktionen > Analysieren]** → wählen Sie den Analysetyp (qualitativ oder quantitativ) → konfigurieren Sie Anzeigeoptionen → Bericht erstellen.
+
+**Freigabe** Exportieren Sie Berichte nach Excel/PDF oder speichern Sie sie im Ordner **[!UICONTROL Berichte]**, um Team-Zugriff mit entsprechenden Berechtigungen zu erhalten.
+
+[Deskriptive Analyse](../reporting/built-in-reports.md)
 
 +++
 
 +++ Wie kann ich erweiterte Berichte zu meinen Daten erstellen?
 
-In Campaign v8 können Sie [erweiterte Berichte erstellen](../reporting/custom-reports.md). Als erfahrener Benutzer können Sie benutzerdefinierte Berichte zu Ihren Daten erstellen, aktualisieren und verteilen.
+Campaign bietet zwei Ansätze zum Erstellen erweiterter benutzerdefinierter Berichte: technische Berichte in der Client-Konsole für komplexe Analysen und visuelle Dashboards für eine einfachere Berichterstellung.
 
-Sie können auch die Web-Benutzeroberfläche von Campaign verwenden, um Berichte und Dashboards zu erstellen. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}.
+In der Client-Konsole haben Sie folgende Möglichkeiten:
+
+* Erstellen komplexer Berichte mithilfe von SQL-Abfragen und benutzerdefinierten Berechnungen
+* Erstellen mehrseitiger Berichte mit Diagrammen, Tabellen und Pivot-Tabellen
+* Entwerfen bedingter Formatierung und dynamischer Inhalte
+* Zugriff auf das vollständige Campaign-Datenmodell und externe Datenbanken (FDA)
+
+
+[Erstellen benutzerdefinierter Berichte (Client-Konsole)](../reporting/custom-reports.md)
 
 +++
 
-+++ Was ist ein Cube und wie kann ich einen solchen Bericht erstellen?
++++ Was ist ein Cube und wie kann ich ihn für das Reporting verwenden?
 
-Dies ermöglicht es, die Kapazitäten zur Datenexploration und -analyse optimal zu nutzen. Gleichzeitig wird die Konfiguration der Berichte und Tabellen für den Endbenutzer vereinfacht: Es muss nur ein existierender, vollständig konfigurierter Cube bei der Bericht- oder Tabellenerstellung ausgewählt werden, um dessen Berechnungen, Kennzahlen und Statistiken zu übernehmen.
+Cubes sind mehrdimensionale Datenstrukturen, mit denen Business-Anwender Campaign-Daten ohne technische Kenntnisse mithilfe von Pivot-Tabellen untersuchen und analysieren können. Stellen Sie sie sich als vorkonfigurierte Datenmodelle vor, die komplexe Berichte vereinfachen.
 
-Nach ihrer Erstellung und Konfiguration werden die Cubes in den Abfrage-Aktivitäten der Berichte und Webanwendungen genutzt. Sie können außerdem in Pivot-Tabellen verwendet und verändert werden.
 
-Erfahren Sie, wie Sie Ihre Daten [mit Cubes analysieren](../reporting/gs-cubes.md) können.
+* Technische Benutzende erstellen und konfigurieren Cubes, die Dimensionen (Zeit, Geografie, Kanäle) und Kennzahlen (Öffnungen, Klicks, Umsatz) definieren
+* Business-Anwender wählen beim Erstellen von Berichten und Drag-and-Drop von Dimensionen einen Cube aus, um Daten zu untersuchen
+* Die Daten werden automatisch aggregiert und basierend auf der Cube-Konfiguration berechnet
+* Ergebnisse können als Pivot-Tabellen, Diagramme oder nach Excel exportiert werden
+
+
+[Erkunden von Daten mit Cubes](../reporting/gs-cubes.md)
 
 +++
 
 +++ Kann ich einen Bericht aus Antworten auf eine Online-Umfrage erstellen?
 
-Campaign v8 verfügt über keine integrierte Umfragefunktion. Sie können Adobe Experience Manager oder andere Web-Lösungen zum Erstellen von Umfragen verwenden.
+Ja! Campaign enthält ein Umfragemodul, mit dem Sie Online-Fragebögen erstellen und integrierte Berichte zu Umfrageantworten generieren können.
 
-Sie können jedoch Reporting-Funktionen verwenden, um alle erfassten Daten zu analysieren und benutzerdefinierte Berichte zu erstellen.
+>[!AVAILABILITY]
+>
+>Die Umfrageverwaltung ist in Campaign v8 Enterprise (FFDA)-Bereitstellungen nicht verfügbar. [Weitere Informationen](../architecture/enterprise-deployment.md).
+
+**Umfragefunktionen:**
+
+* Erstellen von Online-Fragebögen mit mehreren Seiten und Fragetypen
+* Sammeln von Antworten in der Datenbank oder lokalen Variablen
+* Echtzeit-Tracking der Umfrageantworten anzeigen
+* Erstellung spezieller Berichte zu Umfrageantworten (Aufschlüsselung nach Fragen, allgemeine Statistiken)
+* Exportieren von Umfrageantworten nach Excel, PDF oder CSV für weitere Analysen
+* Verwenden von Umfragedaten in Zielgruppen-Workflows zur Personalisierung von Kampagnen
+
+**Integrierte Umfrageberichte:**
+
+* **Allgemeiner Bericht** - Reaktionstrends im Zeitverlauf, Verteilung nach Herkunft und Sprache
+* **Aufschlüsselung der Antworten** - Detaillierte Aufschlüsselung der Antworten auf die einzelnen Fragen
+* **Dokumentationsbericht** - Visuelle Darstellung der Umfragestruktur
+
+**Erweiterte Analyse:**
+
+* Greifen Sie über die Registerkarte **[!UICONTROL Antworten“ auf]** Umfrageantworten zu und exportieren Sie Daten
+* Verwenden **[!UICONTROL Aktivität „Umfrageantworten]** in Workflows, um Empfänger anhand ihrer Antworten anzusprechen
+* Kombinieren von Umfragedaten mit anderen Campaign-Daten zur Segmentierung und Personalisierung
+* Erstellen benutzerdefinierter Berichte und Cubes für die mehrdimensionale Umfrageanalyse
+
+
+[Erste Schritte mit Umfragen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [Umfrageberichte](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
 
 +++
 
-+++ Wie kann ich den Zugriff auf meinen Bericht in der Campaign-Oberfläche freigeben?
++++ Wie kann ich den Zugriff auf meine Berichte freigeben?
 
-Sie können festlegen, in welchem Kontext Ihr Bericht in der Benutzeroberfläche von Adobe Campaign angezeigt werden soll. Weiterführende Informationen zum Zugriff auf Berichte finden Sie in [diesem Abschnitt](../reporting/custom-reports.md).
+Campaign bietet flexible Optionen zum Freigeben von Berichten mit verschiedenen Benutzergruppen, zum Steuern der Sichtbarkeit und von Zugriffsberechtigungen basierend auf Rollen und Zuständigkeiten.
+
+**Zugriffskontrolle für Berichte:**
+
+* **Ordnerberechtigungen** - Platzieren von Berichten in Ordnern mit geeignetem Lese-/Schreibzugriff für Benutzergruppen
+* **Spezifische Berechtigungen** - Weisen Sie spezifische Berechtigungen zum Anzeigen, Erstellen oder Ändern von Berichten zu
+* **Anzeigekontext** - Definieren, wo Berichte angezeigt werden: im **[!UICONTROL Berichte]** Ordner, auf Kampagnen-Registerkarten oder auf Versandbildschirmen
+* **Freigabe der Web** Benutzeroberfläche: Dashboard-Links über die Web-Benutzeroberfläche von Campaign für Team-Mitglieder freigeben
+
+**So konfigurieren Sie den Zugriff:**
+
+1. Speichern Sie Ihren Bericht in einem bestimmten Ordner in der Client-Konsole
+2. Konfigurieren von Ordnerzugriffsberechtigungen für die relevanten Benutzergruppen
+3. Berichteigenschaften definieren: Berichtstyp, Anzeigekontext und Verfügbarkeit
+4. Testen des Zugriffs mit einem Benutzer aus der Zielgruppe vor dem größeren Rollout
+
+**Best Practice:** Erstellen dedizierter Berichtsordner für verschiedene Teams (Marketing, Vorgänge, Management) mit maßgeschneiderten Zugriffsberechtigungen. Dokumentieren des Berichtszwecks und der Zeitpläne.
+
+[Benutzerdefinierte Berichte](../reporting/custom-reports.md) | [Benutzerberechtigungen](gs-permissions.md)
 
 +++
 
 +++ Kann ich Berichte in verschiedenen Formaten exportieren?
 
-Ja, Sie können Campaign-Berichte in verschiedene Formate wie Excel, PDF oder CSV exportieren. [Weitere Informationen](../reporting/custom-reports.md).
+Ja, Campaign unterstützt mehrere Exportformate für Berichte sowohl der Client-Konsole als auch der Web-Benutzeroberfläche und ermöglicht so eine einfache Freigabe für Stakeholder und Integration mit anderen Tools.
+
+**Verfügbare Exportformate:**
+
+* **Excel (.xlsx)** - Am besten geeignet für Datenmanipulationen, weitere Analysen und Pivot-Tabellen
+* **PDF** - Ideal für Präsentationen, Zusammenfassungen für Führungskräfte und gedruckte Berichte
+* **CSV** - Ideal für Datenimporte in andere Systeme und BI-Tools
+* **OpenDocument (.ods)** - Open-Source-Tabellenformat
+* **XML** - Für Systemintegrationen und automatisierte Verarbeitung
+
+**So exportieren Sie:**
+
+* **Client-Konsole:** Bericht öffnen → auf die Schaltfläche **[!UICONTROL Exportieren]** klicken → Format auswählen → Datei speichern
+* **Web-Benutzeroberfläche:** Dashboard öffnen → auf das Exportsymbol klicken → Format auswählen → Herunterladen
+* **Automatisierte Exporte:** Planen Sie regelmäßige Exporte mithilfe von Workflows mit Exportaktivitäten
+
+**Best Practices:**
+
+* Excel für Berichte verwenden, die eine Analyse der Stakeholder und Anmerkungen erfordern
+* Verwenden Sie PDF für statische Berichte, die an Führungskräfte gesendet oder zur Einhaltung archiviert werden
+* Verwenden von CSV für Integrationen mit Data Warehouses oder externen Analyse-Tools
+* Testen exportierter Berichte zur Sicherstellung der Formatierung und Datengenauigkeit
+
+[Benutzerdefinierte Berichte](../reporting/custom-reports.md) | [Berichte der Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -1666,85 +1767,279 @@ Zugreifen auf technische Informationen für Entwickler, einschließlich Datenmod
 
 +++ Was ist das Campaign-Datenmodell?
 
-Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Reihe integrierter Tabellen und deren Interaktion. Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens Schema.
+Das Datenmodell von Campaign ist eine schemabasierte relationale Datenbankstruktur, die definiert, wie Marketing-Daten organisiert und miteinander verknüpft sind. Es besteht aus integrierten Tabellen für zentrale Marketing-Objekte (Empfänger, Sendungen, Kampagnen) und kann entsprechend Ihren spezifischen Geschäftsanforderungen erweitert werden.
 
-[Erfahren Sie mehr zum Campaign-Datenmodell](../dev/datamodel.md).
+**Wichtige Datenmodellkonzepte:**
 
-[Auf dieser Seite finden Sie Best Practices](../dev/datamodel-best-practices.md).
+* **Schemata** - XML-Definitionen, die die Tabellenstruktur, Felder und Beziehungen beschreiben
+* **Integrierte Tabellen** - Zentrale Marketing-Entitäten (Empfänger, Sendungen, Workflows, Kampagnen)
+* **Relationen** - Beziehungen zwischen Tabellen (1-1, 1-N, N-N)
+* **Auflistungen** - Vordefinierte Wertelisten für Dropdown-Felder
+* **Erweiterungen** - Benutzerdefinierte Felder und Tabellen, die zum Standardmodell hinzugefügt wurden
+
+**Integrierte Hauptschemata:**
+
+* **Empfänger (:recipient)** - Kundenprofile und Kontaktinformationen
+* **Versand (:delivery)** - E-Mail-, SMS- und Push-Kampagnen
+* **Workflow (xtk:workflow)** - Automatisierungsprozesse
+* **Kampagne (nms:operation)** - Orchestrierung einer Marketing-Kampagne
+* **Trackinglogs** - Öffnungen, Klicks und Interaktionsdaten
+
+**Warum das wichtig ist:** Das Verständnis des Datenmodells ist für die Erstellung von Workflows, die Erstellung von Abfragen, die Erweiterung von Schemata und die Entwicklung benutzerdefinierter Integrationen von entscheidender Bedeutung. Der schemabasierte Ansatz stellt Datenkonsistenz sicher und ermöglicht leistungsstarke Abfragefunktionen.
+
+[Campaign-Datenmodell](../dev/datamodel.md) | [Best Practices für Datenmodelle](../dev/datamodel-best-practices.md)
 
 +++
 
 +++ Wie funktionieren Schemata in Campaign?
 
-In Adobe Campaign werden Datenschemata folgendermaßen genutzt:
+Schemata bilden die Grundlage der Datenstruktur von Campaign, indem sie Tabellen, Felder und Beziehungen im XML-Format definieren. Das Verständnis von Schemata ist für die Anpassung, Integration und erweiterte Workflow-Entwicklung von entscheidender Bedeutung.
 
-* Definieren der Verknüpfung zwischen den Datenobjekten in der Anwendung mit den zugrunde liegenden Datenbanktabellen
-* Definieren von Beziehungen zwischen den unterschiedlichen Datenobjekten in der Campaign-Anwendung
-* Definieren und Beschreiben der einzelnen Felder eines jeden Objekts
+**Was Schemata definieren:**
 
-[Erste Schritte mit Tabellen und Schemata](../dev/schemas.md) um zu verstehen, wie Sie mit Datenschemata arbeiten, Campaign erweitern und an Ihre Anforderungen anpassen können.
+* **Tabellenstruktur** - Datenbanktabellen und die zugehörigen Anwendungsobjekte
+* **Feldeigenschaften** - Datentypen, Beschriftungen, Validierungsregeln und Standardwerte
+* **Beziehungen** - Verknüpfungen zwischen Tabellen (Joins) und Kardinalität
+* **Indizes** - Datenbankoptimierung für die Abfrageleistung
+* **Zugriffssteuerung** - Welche Felder können Benutzer anzeigen und ändern?
+
+**Arbeiten mit Schemata:**
+
+* **Anzeigen von Schemata:** Zugriff über **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Client-Konsole
+* **Schemata erweitern:** Erstellen Sie Erweiterungsschemata (z. B. `cus:recipient` erweitert `nms:recipient`), um benutzerdefinierte Felder hinzuzufügen, ohne die Kernschemata zu ändern
+* **Benutzerdefinierte Schemata erstellen** Erstellen Sie völlig neue Tabellen für geschäftsspezifische Daten
+* **Datenbank aktualisieren:** Anwenden von Schemaänderungen mithilfe von **[!UICONTROL Tools > Erweitert > Datenbankstruktur aktualisieren]**
+
+**Häufige Anwendungsfälle:**
+
+* Hinzufügen benutzerdefinierter Felder zur Empfängertabelle (Unternehmens-ID, Treuestufe, Voreinstellungen)
+* Erstellen benutzerdefinierter Tabellen für Produkte, Geschäfte oder Transaktionen
+* Definieren von Beziehungen zwischen benutzerdefinierten und integrierten Tabellen
+* Implementieren von geschäftsspezifischen Datenmodellen
+
+**Wichtig:** Nie integrierte Schemata direkt ändern. Verwenden Sie immer Erweiterungsschemata, um die Upgrade-Kompatibilität und Adobe-Unterstützung zu erhalten.
+
+[Erste Schritte mit Schemata](../dev/schemas.md) | [Schema erweitern](../dev/extend-schema.md)
 
 +++
 
 +++ Wie wird eine benutzerdefinierte Empfängertabelle verwendet?
 
-Sie können eine benutzerdefinierte Empfängertabelle in Campaign erstellen und implementieren, um Nachrichten zu senden.
+Campaign ermöglicht es Ihnen, eine benutzerdefinierte Tabelle anstelle der integrierten Empfängertabelle zu verwenden, wenn Ihr Unternehmen eine andere Datenstruktur für das Targeting benötigt (z. B. B2B-Konten, Abonnenten, Leads oder externe Kontakte).
 
-[Weitere Informationen](../dev/custom-recipient.md)
+**Gründe für die Verwendung einer benutzerdefinierten Empfängertabelle:**
+
+* B2B-Unternehmen oder Organisationseinheiten anstelle einzelner Kontakte ansprechen
+* Abonnentendaten von der Hauptkundendatenbank trennen
+* Verwenden einer vorhandenen Kundentabelle aus einem anderen System
+* Implementieren von Mehrmarkenarchitekturen mit separaten Kontakttabellen
+* Einhaltung spezifischer Data Governance-Anforderungen
+
+**Implementierungsschritte:**
+
+1. Benutzerdefiniertes Schema zur Definition der Empfängertabellenstruktur erstellen
+2. Obligatorische Felder einschließen (E-Mail, Primärschlüssel, Ausschlussflags)
+3. Konfigurieren von Zielgruppen-Mappings zur Verknüpfung Ihrer Tabelle mit Sendungen
+4. Aktualisieren von Versandvorlagen zur Verwendung des neuen Zielgruppen-Mappings
+5. Anpassen von Workflows und Abfragen, um auf die benutzerdefinierte Tabelle zu verweisen
+
+**Wichtige Aspekte:**
+
+* Benutzerdefinierte Empfängertabellen müssen erforderliche Felder für Sendungen enthalten (E-Mail, Ausschlüsse, Tracking)
+* Workflows und Formulare müssen an die benutzerdefinierte Struktur angepasst werden
+* Einige integrierte Funktionen müssen möglicherweise angepasst werden
+* Tests sind vor der Migration von Produktionskampagnen wichtig
+
+**Best Practice:** Sie zunächst die standardmäßige Empfängertabelle erweitern, bevor Sie eine benutzerdefinierte Tabelle in Betracht ziehen. Benutzerdefinierte Empfängertabellen erhöhen die Komplexität und sollten nur verwendet werden, wenn dies wirklich erforderlich ist.
+
+[Benutzerdefinierte Empfängertabelle](../dev/custom-recipient.md) | [Zielgruppen-Mappings](../audiences/target-mappings.md)
 
 +++
 
 +++ Was sind die Best Practices zum Definieren von Abfragen in Campaign?
 
-Der Abfrage-Editor von Adobe Campaign ermöglicht das leistungsstarke Analysieren von Daten und Erstellen von Segmenten.
+Der Abfrage-Editor von Campaign ist ein leistungsstarkes visuelles Tool zum Erstellen von Datenbankabfragen ohne SQL-Kenntnisse. Sie zu meistern ist für effektives Targeting, Segmentierung und Datenanalyse unerlässlich.
 
-Die Adobe Campaign-Plattform bietet ein leistungsstarkes Abfragetool, das bei der Erfüllung verschiedener Funktionen wie Zielpopulationsbestimmung, Segmentation des Kundenstamms, Extraktion und Filterung von Trackinglogs sowie Erstellung von Filtern zur Anwendung kommt.
+**Wo Abfragen verwendet werden:**
 
-Sie können mit diesem generischen Abfrage-Editor Daten aus der Campaign-Datenbank abrufen. Der Zugriff darauf erfolgt über das Menü **Werkzeuge > Generischer Abfrage-Editor...** Sie können damit in einer Datenbank gespeicherte Informationen extrahieren sowie organisieren, gruppieren, sortieren usw. So kann ein Benutzer beispielsweise die Empfängerinnen und Empfänger abrufen, die innerhalb eines bestimmten Zeitraums mehr als x-mal auf einen Link in einem Newsletter geklickt haben. Mit diesem Tool können Sie Ergebnisse nach Bedarf sammeln, sortieren und anzeigen.
+* **Workflow-Aktivitäten** - Abfrage, Aufspaltung, Daten aktualisieren, Anreicherungsaktivitäten
+* **Versandzielgruppe** - Empfängerpopulationen für Kampagnen definieren
+* **Listen** - Dynamische oder statische Empfängerlisten erstellen
+* **Berichte** - Erstellen benutzerdefinierter Datenextraktionen und Analysen
+* **Filter** - Erstellen wiederverwendbarer Zielgruppenkriterien
 
-[Weitere Informationen](../start/query-editor.md). Weitere Informationen finden Sie im [Handbuch zur Kampagnenautomatisierung](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
+**Best Practices für Abfragen:**
+
+* **Einfach beginnen** - Abfragen schrittweise erstellen und bei jedem Schritt testen
+* **Filterdimensionen verwenden** - Nutzen von Beziehungen zwischen Tabellen (Empfänger → Sendungen → Trackinglogs)
+* **Leistung optimieren** - Indizieren Sie häufig abgefragte Felder, und vermeiden Sie komplexe berechnete Felder.
+* **Vordefinierte Filter nutzen** - Vorhandene Filter wiederverwenden und kombinieren, um Konsistenz zu gewährleisten
+* **Testen mit kleinen Beispielen** - Validieren der Abfragelogik vor der Ausführung in der vollständigen Datenbank
+* **Komplexe Abfragen dokumentieren** - Beschreibungen für Wartung und Wissenstransfer hinzufügen
+
+**Häufige Abfragemuster:**
+
+* Empfänger ansprechen, die einen bestimmten Versand geöffnet haben: Filtern nach mit Empfängern verknüpften Trackinglogs
+* Inaktive Kontakte suchen: Abfrage zum letzten Versanddatum oder zur Tracking-Aktivität
+* Nach Verhalten segmentieren: Versand-, Tracking- und Profilkriterien kombinieren
+* Vorherige Empfänger ausschließen: Set-Vorgänge verwenden (Vereinigung, Schnittmenge, Ausschluss)
+
+**Zugriff auf generischen Abfrage-Editor:** **[!UICONTROL Tools > Generischer Abfrage-Editor]** für Ad-hoc-Datenbankexploration und Datenextraktion außerhalb von Workflows.
+
+[Abfrage-Editor](../start/query-editor.md) | [Abfrageaktivität in Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}
 
 +++
 
 +++ Wie kann ich Daten-Packages importieren?
 
-Adobe Campaign ermöglicht über ein Package-System den Export oder Import von Plattformkonfigurationen und Daten. Mithilfe von Datenpackages können Entitäten in der Adobe Campaign-Datenbank als Dateien im XML-Format dargestellt werden. Dies umfasst alle Daten einer in einem Package enthaltenen Entität.
+Mit Datenpaketen können Sie Campaign-Konfigurationen (Schemata, Workflows, Typologien, Filter) und Daten zwischen Instanzen exportieren und importieren. Dies ist für die Bereitstellung von Konfigurationen von der Entwicklung bis zur Produktion oder für die unternehmensübergreifende Freigabe von Komponenten von entscheidender Bedeutung.
 
-Das Prinzip der Datenpackages besteht darin, eine Datenkonfiguration zu exportieren und in ein anderes Adobe Campaign-System zu integrieren.
+**Was kann verpackt werden:**
 
-[Weitere Informationen](../dev/packages.md) wie Sie mit Datenpaketen arbeiten, um Campaign-Konfigurationen zu importieren und zu exportieren.
+* **Konfigurationsobjekte** - Schemata, Workflows, Typologieregeln, Formulare, Filter
+* **Kampagnenkomponenten** - Versandvorlagen, Kampagnenvorlagen, Inhaltsbausteine
+* **Anwendungseinstellungen** - Benutzer, Benutzergruppen, Ordnerstrukturen
+* **Daten** - Empfängerlisten, Testadressen, Inhaltsfragmente
+* **Benutzerdefinierte Entwicklungen** - JavaScript-Code, SQL-Skripte, Web-Anwendungen
+
+
+**Pakettypen:**
+
+* **Benutzerpaket** - Benutzerdefinierte Konfigurationen, die Sie erstellen und exportieren
+* **Platform-Paket** - Von Adobe bereitgestellte Funktionen und Updates
+* **Datenpaket** - Enthält tatsächliche Datensätze, nicht nur die Struktur
+
+**Best Practices:**
+
+* Exportieren Sie Pakete immer aus derselben oder einer älteren Campaign-Version
+* Package-Importe vor der Produktion in die Entwicklungsumgebung testen
+* Dokumentpaketinhalte und -abhängigkeiten
+* Verwenden der Versionskontrolle für XML-Paketdateien
+* Sicherungsinstanz vor wichtigen Package-Importen
+
+[Arbeiten mit Daten-Packages ](../dev/packages.md)
 
 +++
 
 +++ Wo finde ich die Liste der Campaign v8-APIs?
 
-Alle Campaign-APIs inklusive vollständiger Beschreibung finden Sie in dieser speziellen [Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de){target="_blank"}.
+Campaign v8 bietet eine umfassende API-Dokumentation, die sowohl SOAP-APIs (für Interaktionen mit der Client-Konsole) als auch REST-APIs (für moderne Integrationen) umfasst. Die API-Referenz enthält alle verfügbaren Methoden, Parameter und Antwortformate.
+
+**Campaign-API-Typen:**
+
+* **SOAP-**: Herkömmliche APIs für Campaign-Client-Konsolenvorgänge, Schemabearbeitung und Workflow-Steuerung
+* **REST-APIs** - Moderne HTTP-APIs für externe Systemintegrationen, die Profilverwaltung und die Ereignisauslösung
+* **JavaScript-APIs** - Server-seitige Skript-APIs für Workflow-Aktivitäten und benutzerdefinierte Geschäftslogik
+
+**API-Dokumentationsressourcen:**
+
+* **Vollständige API-Referenz:** Umfassende Dokumentation zur SOAP-API mit Methodensignaturen, Parametern und Beispielen
+* **REST-API-Handbuch** Moderne REST-Endpunkte für Profile, Ereignisse und Organisationseinheiten
+* **JavaScript-API:** Server-seitige Funktionen, die in Workflow-Skripten und Web-Anwendungen verfügbar sind
+
+**Häufige API-Anwendungsfälle:**
+
+* Campaign mit CRM-, ERP- oder benutzerdefinierten Programmen integrieren
+* Automatisieren von Kampagnenvorgängen und Workflow-Ausführung
+* Daten zwischen Systemen in Echtzeit synchronisieren
+* Erstellen benutzerdefinierter Überwachungs- und Warnmeldungslösungen
+* Erstellen externer Schnittstellen für Campaign-Daten und -Vorgänge
+
+**Zugriff:** [API-Dokumentation zu Campaign v8](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de){target="_blank"}
 
 +++
 
-+++ Was ist die Campaign REST-API?
-
-Campaign v8 stellt eine Reihe von REST-APIs bereit, mit denen Sie Integrationen für Adobe Campaign erstellen und Ihr eigenes Ökosystem aufbauen können, indem Sie Adobe Campaign mit dem von Ihnen verwendeten Technologiebereich verbinden.
-
-[Weitere Informationen](../dev/api/get-started-apis.md).
-
-+++
 
 +++ Wie kann ich Workflows über die API überwachen?
 
-Erfahren Sie auf dieser [&#x200B; Seite , wie Sie Workflows mithilfe von Campaign-APIs &#x200B;](../dev/api/controlling-a-workflow.md).
+Mit Campaign-APIs können Sie die Workflow-Ausführung programmgesteuert steuern und überwachen und so externe Überwachungssysteme, automatische Warnhinweise und benutzerdefinierte Orchestrierungslösungen aktivieren.
+
+**Was Sie über die API tun können:**
+
+* **Workflows starten** - Programmgesteuerte Ausführung des Trigger-Workflows
+* **Workflows anhalten/fortsetzen** - Workflow-Ausführung steuern
+* **Workflows anhalten** - Laufende Workflows beenden
+* **Abfrage-Workflow-Status** - Überprüfen, ob Workflows ausgeführt, angehalten oder abgeschlossen werden
+* **Protokolle abrufen** - Auf Workflow-Ausführungsprotokolle und Fehlermeldungen zugreifen
+* **Überwachen des Aktivitätsfortschritts** - Verfolgen des Abschlusses einzelner Workflow-Aktivitäten
+
+**API-Methoden:**
+
+* `xtk:workflow#Start` - Starten einer Workflow-Instanz
+* `xtk:workflow#Pause` - laufenden Workflow anhalten
+* `xtk:workflow#Stop` - Workflow-Ausführung stoppen
+* `xtk:workflow#GetState` - Aktuellen Workflow-Status abrufen
+* `xtk:workflow#GetLogs` - Ausführungsprotokolle abrufen
+
+**Häufige Anwendungsfälle:**
+
+* Erstellen benutzerdefinierter Überwachungs-Dashboards mit Workflow-Status
+* Automatisierte Warnhinweise implementieren, wenn Workflows fehlschlagen oder zu lange ausgeführt werden
+* Orchestrieren von Workflows aus externen Schedulern oder Ereignissystemen
+* Erstellen von Workflow-Abhängigkeiten über mehrere Campaign-Instanzen hinweg
+* Erstellen benutzerdefinierter Workflow-Ausführungsberichte
+
+**Best Practice:** Kombinieren Sie API-Überwachung mit dem Workflow-Audit-Protokoll, um eine umfassende Workflow-Governance zu gewährleisten. Verwenden Sie externe Überwachungs-Tools, um Workflow-SLAs und Leistungsmetriken zu verfolgen.
+
+[Steuern von Workflows über API](../dev/api/controlling-a-workflow.md)
 
 +++
 
 +++ Wie kann ich die Datenbankstruktur aktualisieren?
 
-Wenn Sie Campaign-Datenschemata ändern, müssen Sie die Datenbankstruktur aktualisieren. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../dev/update-database-structure.md).
+Nach der Änderung von Campaign-Schemata (Hinzufügen von Feldern, Erstellen von Tabellen, Ändern von Datentypen) müssen Sie die physische Datenbankstruktur aktualisieren, um Ihre Änderungen anzuwenden. Durch diese Synchronisierung wird sichergestellt, dass die Datenbank mit Ihren Schemadefinitionen übereinstimmt.
+
+**Wenn Datenbankaktualisierungen erforderlich sind:**
+
+* Hinzufügen neuer Felder zu vorhandenen Schemata
+* Erstellen benutzerdefinierter Tabellen oder Erweitern integrierter Tabellen
+* Ändern von Feldeigenschaften (Datentyp, Länge, erforderlicher Status)
+* Relationen zwischen Tabellen hinzufügen oder entfernen
+* Erstellen neuer Indizes für die Abfrageoptimierung
+
+
+**Wichtige Überlegungen:**
+
+* **Sicherung zuerst** - Sichern Sie Ihre Datenbank immer vor strukturellen Änderungen
+* **Test in Entwicklung** - Validieren von Schemaänderungen in der Entwicklungsumgebung vor der Produktion
+* **Ausfallzeitplanung** - Große strukturelle Änderungen können kurze Wartungsfenster erfordern
+* **Für Managed Cloud Services** - Koordinieren wichtiger Änderungen mit dem Adobe-Support
+* **Reversibilität** - Einige Änderungen (wie das Entfernen von Feldern) können zu Datenverlust führen
+
+**Best Practice:** Verwendung von Schemaversionierung und Änderungs-Tracking. Dokumentieren Sie alle benutzerdefinierten Schemaänderungen zur Wartung und Fehlerbehebung.
+
+[Datenbankstruktur aktualisieren](../dev/update-database-structure.md) | [Schema erweitern](../dev/extend-schema.md)
 
 +++
 
 +++ Welche Einschränkungen gibt es in Campaign v8?
 
-Campaign v8 weist einige Einschränkungen im Vergleich zu Campaign Classic v7 auf, die auf [&#x200B; Seite beschrieben &#x200B;](../start/v7-to-v8.md#limitations).
+Campaign v8 führt Änderungen an der Architektur ein (insbesondere in FFDA-Bereitstellungen), die erhebliche Leistungsverbesserungen, aber auch einige Unterschiede zu Campaign Classic v7 mit sich bringen. Wenn Sie diese verstehen, können Sie Migrationen planen und entsprechende Erwartungen wecken.
+
+**Überlegungen zu Main v8:**
+
+* **FFDA-**: Unternehmensbereitstellungen verwenden Cloud-Datenbanken (Snowflake) mit unterschiedlichen Datenzugriffsmustern
+* **Unit-**: Datenaktualisierungen sollten in Workflows und nicht über APIs oder direkten Datenbankzugriff erfolgen
+* **Echtzeit-Schreibvorgänge** - Optimiert für Batch-Vorgänge anstelle von hochfrequenten individuellen Aktualisierungen
+* **Datenmodell** - Einige Schemaanpassungen erfordern unterschiedliche Ansätze
+* **Zugriff auf externe Datenbanken** - Die FDA-Konfiguration (Federated Data Access) unterscheidet sich von der Konfiguration in v7.
+
+**Funktionen sind in FFDA-Bereitstellungen nicht verfügbar:**
+
+* Umfragen (in standardmäßigen v8-Bereitstellungen verfügbar)
+* Marketing Resource Management (MRM)
+* Einige spezifische Connector-Konfigurationen
+
+**Überlegungen zur Migration:**
+
+* Benutzerdefinierter Code, der direkte Datenbankschreibvorgänge verwendet, muss umstrukturiert werden
+* API-Integrationen müssen möglicherweise für die Batch-Verarbeitung angepasst werden
+* Workflows sollten den FFDA-Best Practices für Datenvorgänge entsprechen
+* Tests sind für die Validierung benutzerdefinierter Entwicklungen von entscheidender Bedeutung
+
+**Wichtig:** Diese Einschränkungen entwickeln sich weiter, während Adobe v8 weiter verbessert. Den aktuellen Status und die Roadmap finden Sie in der aktuellen Dokumentation.
+
+[Migration von Campaign v7 zu v8](../start/v7-to-v8.md#limitations) | [FFDA-Architektur](../architecture/enterprise-deployment.md)
 
 +++
 
@@ -1752,102 +2047,99 @@ Campaign v8 weist einige Einschränkungen im Vergleich zu Campaign Classic v7 au
 
 Erfahren Sie, wie Sie mit Adobe Campaign Datenschutzbestimmungen wie die DSGVO und den CCPA einhalten und Anfragen von betroffenen Personen verwalten können.
 
-+++ Was sind die Schlüsselbegriffe zum Datenschutz?
++++ Was sind die wichtigsten Datenschutzkonzepte in Campaign?
 
-Die unten aufgelisteten Elemente verlinken zu den wichtigsten Begriffen und Konzepten im Zusammenhang mit Datenschutz und Einverständniserklärung in Adobe Campaign:
+Campaign unterstützt Sie bei der Einhaltung von Datenschutzbestimmungen (DSGVO, CCPA, PDPA, LGPD) durch Tools zur Verwaltung der Rechte betroffener Personen, der Einwilligung und der Datenspeicherung. Zu den wichtigsten Konzepten gehören Datenschutzbestimmungen, die Identifizierung personenbezogener Daten, die Rechte betroffener Personen (Zugriff, Löschung, Übertragbarkeit), Einverständnisverwaltung und Richtlinien zur Datenspeicherung.
 
-* [Verordnungen zur Datenschutzverwaltung](../start/privacy.md#privacy-regulations)
-* [Personenbezogene Daten und Personas](../start/privacy.md#personal-data)
-* [Recht auf Zugriff und Recht auf Vergessenwerden](../start/privacy.md#right-access-forgotten)
-* [Einverständnis, Datenbeibehaltung und Benutzerrollen](../start/privacy.md#consent-retention-roles)
+Als Datenverantwortlicher sind Sie dafür verantwortlich, Anfragen von betroffenen Personen zu bearbeiten, Einverständnisdatensätze aufzubewahren und eine transparente Datennutzung sicherzustellen.
 
-+++
-
-+++ Was empfiehlt Adobe Campaign, um die neuesten Datenschutzverordnungen einzuhalten?
-
-Adobe bietet keine Rechtsberatung. Sie sollten mit Ihrer eigenen Rechtsabteilung zusammenarbeiten, um sicherzustellen, dass alle notwendigen Schritte für DSGVO, CCPA, PDPA, LGPD oder andere relevante Vorschriften unternommen werden.
-
-**Vorbereitung auf Datenzugriffs- und Datenlöschanfragen**
-
-* Legen Sie ein Verfahren für den Empfang/die Beantwortung von Anfragen durch betroffene Personen fest und ernennen Sie einen Datenschutzbeauftragten.
-
-* Überprüfen Sie die in Adobe Campaign gespeicherten Kundendaten und vergeben Sie eindeutige Kennungen (wahrscheinlich ist mehr als eine nötig).
-
-* Bestimmen Sie eine Richtlinie und einen Prozess zur Validierung bzw. zur Authentifizierung, um die Identität von betroffenen Personen zu bestätigen.
-
-* Achten Sie darauf, dass die Antwort an betroffene Personen einfach verständlich ist.
-
-**Überarbeitung des Einverständnisprozesses**
-
-* Nennen und aktualisieren Sie alle für die DSGVO relevanten Kontaktpunkte der Datenerfassung (z. B. Sprache, Verfahren zur Erteilung des Einverständnisses und Einverständnisprotokolle).
-
-* Achten Sie darauf, dass alle Marketing-E-Mails Abmelde-Links enthalten.
-
-* Überdenken Sie die globale Strategie für das E-Mail-Marketing, um landesspezifische Implementierungen festzulegen.
-
-**Analyse der Daten**
-
-* Überprüfen Sie alle Quellen für den Datenimport und die Datenerfassung, aus denen Daten in Adobe Campaign übertragen werden, und dokumentieren Sie, welche Felder für Ihre Marketing-Zwecke verwendet werden.
-
-* Entfernen Sie nicht genutzte Datenattribute aus der Adobe Campaign-Datenbank.
-
-* Verwenden Sie die in Adobe Campaign verfügbaren Daten zu dem Zweck, zu dem sie erfasst wurden, und bieten Sie Ihren Kunden stärker personalisierte Erlebnisse.
-
-* Überarbeiten und aktualisieren Sie Datenzugriffsgenehmigungen, um sicherzustellen, dass Benutzer von Adobe Campaign nur die für ihre Kampagnen benötigten Daten verwenden, aber darüber hinaus auf keine weiteren Daten zugreifen können.
-
-* Achten Sie darauf, dass jeder Benutzer von Adobe Campaign die entsprechenden Zugriffsberechtigungen für die Durchführung seiner Aufgaben hat, aber keine darüber hinausreichenden Rechte.
+[Datenschutzverwaltung](../start/privacy.md)
 
 +++
 
-+++ Wie können Datenverantwortliche das Einverständnis ihrer Kunden erlangen, ohne die Benutzerinteraktion zu beeinträchtigen?
++++ Wie stelle ich die Einhaltung von Datenschutzbestimmungen in Campaign sicher?
 
-In den Fällen, in denen das Einverständnis für bestimmte Marketing-Aktivitäten erforderlich ist, muss eine aktive Einverständniserklärung vom Verbraucher gegeben werden (d. h. kein Schweigen als Einverständnis oder vorab markierte Kontrollkästchen). Diese Einverständniserklärung muss außerdem ungebündelt erfolgen und darf nicht davon abhängig gemacht werden, dass Dienstleistungen angeboten werden.
+Campaign bietet Tools für die Einhaltung von Datenschutzbestimmungen, aber die rechtliche Verantwortung liegt bei Ihnen. Arbeiten Sie mit einem Rechtsbeistand für Ihr Datenschutzprogramm zusammen.
 
-Es kann sogar Fälle geben, in denen bestimmte Einverständniserklärungen aktualisiert werden müssen, damit die Daten in Zukunft weiterverwendet werden können.
+**Grundlegende Maßnahmen:**
 
-Marketer sollten diese erweiterten Einverständnisanforderungen als echten Indikator für Markeninteraktion und -treue sowie für Kundenzufriedenheit und -vertrauen nutzen.
+* Einrichten von Prozessen für die Bearbeitung von Anfragen betroffener Personen (Zugriff, Löschung)
+* Implementieren der Einverständnisverwaltung mit Zeitstempeln und Umfangsverfolgung
+* Abmelde-Links in alle Marketing-E-Mails einschließen
+* Datenquellen überprüfen und nicht verwendete Daten entfernen
+* Anwenden von Zugriffssteuerungen mit geringsten Berechtigungen
 
-+++
+Campaign bietet Privacy Core Service-Integration, Einverständnisverfolgung, automatisierte Löschungs-Workflows und Audit-Trails für die Einhaltung der Vorschriften.
 
-+++ Wie können Datenverantwortliche das Einverständnis in Adobe Campaign verwalten?
-
-Adobe Campaign bietet bereits Funktionen zur Einverständnisverwaltung auf mehr Ebenen, als die meisten Marketing-Experten nutzen: über benutzerdefinierte Datenfelder oder über einen oder mehrere Dienste.
-
-Marketing-Experten sollten sich von ihrer Rechtsabteilung beraten lassen und dann die bereits in Adobe Campaign integrierten Funktionen nutzen.
-
-So kann zum Beispiel das Datenmodell in Adobe Campaign erweitert werden, um nicht nur zu verfolgen, ob sich Personen für ein Einverständnis entschieden haben, sondern auch um den Zeitstempel des Einverständnisses und eine Art Indikator zu tracken, der den genauen Umfang des Einverständnisses erfasst.
+[Datenschutzverwaltung](../start/privacy.md)
 
 +++
 
-+++ Welche Daten können von Datenverantwortlichen in Adobe Campaign gelöscht werden, wenn sie eine Kundenanfrage einer betroffenen Person erhalten?
++++ Wie sollte ich das Benutzereinverständnis erfassen und verwalten?
 
-Alle mit der betroffenen Person verknüpften Daten werden gelöscht, einschließlich vordefinierter und benutzerdefinierter Tabellen.
+Eine gültige Einwilligung erfordert eine aktive, spezifische, informierte und widerrufliche Zustimmung. Benutzende müssen explizit handeln - keine vorab markierten Kästchen oder Schweigen als Zustimmung. Getrennte Einverständnisse für verschiedene Zwecke (entbündelt), klare Erläuterungen geben und Datensätze mit Zeitstempeln verwalten.
 
-Technisch gesehen werden alle Daten gelöscht, die mit der betroffenen Person mit `integrity="own"` verknüpft sind.
+**Best Practices:** Bereitstellung granularer Opt-in-Optionen, regelmäßige Aktualisierung des Einverständnisses, Erleichterung des Zugriffs auf Präferenzzentren und Einverständniserklärung als Grundlage für Vertrauen.
 
-Als Datenverantwortlicher haben Sie die Möglichkeit, diese Einstellung anzupassen, indem Sie die Integrität der in den Datenschemata definierten Links ändern (z. B. wenn Sie einen geschäftlichen Grund haben, bestimmte Daten nicht zu löschen).
+Campaign bietet Abonnement-Services, Präferenzzentren, benutzerdefinierte Einverständnisfelder mit Zeitstempelverfolgung und Workflow-basierte Einverständnisaktualisierung.
 
-+++
-
-+++ Wie wirkt sich die Löschung von Versand- und Trackinglogs auf Berichte aus?
-
-Berichte in Adobe Campaign basieren auf Indikatoren, die von aggregierten Daten aus Versand- und Trackinglogs berechnet werden. Deshalb sollte das Entfernen von einzelnen Logs keine Auswirkungen auf die in den Berichten dargestellten Metriken haben.
+[Abonnements](../start/subscriptions.md) | [Datenschutz und Einverständnis](../start/privacy.md#consent-retention-roles)
 
 +++
 
-+++ Muss ich darauf achten, dass Daten zu einem späteren Zeitpunkt möglicherweise erneut importiert werden?
++++ Wie implementiere ich die Einverständnisverwaltung in Campaign?
 
-In Adobe Campaign werden Datensätze häufig aus einer externen Datenquelle hochgeladen.
+Campaign bietet Abonnement-Services, Präferenzzentren, Opt-out-Kennzeichnungen und benutzerdefinierte Einverständnisfelder zur Verfolgung des Einverständnisses.
 
-Als Datenverantwortlicher müssen Sie sicherstellen, dass beim Erhalt einer Löschanfrage alle entsprechenden Daten der betroffenen Person aus allen Ihren Systemen gelöscht werden.
+**Implementierungsansatz:** Empfängerschema für Einverständnisfelder (Datum, Typ, Quelle) erweitern, Abonnement-Services für jeden Einverständnistyp erstellen, Web-Formulare für das Präferenzzentrum erstellen, Workflows zur Durchsetzung des Einverständnisses beim Targeting verwenden und Audit-Trails pflegen.
+
+Konsultieren Sie den Rechtsbeistand, um sicherzustellen, dass Ihre Implementierung die gesetzlichen Anforderungen erfüllt.
+
+[Anmeldedienste](../start/subscriptions.md) | [Datenschutzverwaltung](../start/privacy.md)
 
 +++
 
-+++ Kann sich eine betroffene Person, deren Daten aus Adobe Campaign gelöscht wurden, zu einem späteren Zeitpunkt wieder für ein Opt-in entscheiden?
++++ Welche Daten werden bei der Bearbeitung einer Löschanfrage gelöscht?
 
-Eine betroffene Person kann sich zu einem späteren Zeitpunkt wieder anmelden oder als neuer Empfänger hinzugefügt werden, nachdem ihre Daten aus Adobe Campaign gelöscht wurden.
+Campaign löscht automatisch alle mit einer betroffenen Person verknüpften Daten: Empfängerprofil, Versand- und Trackinglogs, benutzerdefinierte Daten mit Eigentümerbeziehungen, Abonnementverlauf und Webtrackingdaten.
 
-Sie können das Audit-Protokoll verwenden, in dem angegeben wird, wann die vorherige Löschung durchgeführt und der neue Empfänger angelegt wurde.
+**Funktionsweise:** Campaign löscht alle Daten, bei denen die Relation zum Empfänger in der Schemadefinition `integrity="own"` ist, und stellt so eine kaskadierende Löschung über verwandte Tabellen hinweg sicher.
+
+Sie können den Löschbereich anpassen, indem Sie die Link-Integrität in Schemata ändern, aber zuerst einen Rechtsbeistand konsultieren. Das Löschen ist dauerhaft und kann nicht rückgängig gemacht werden.
+
+[Datenschutzverwaltung](../start/privacy.md) | [Schema-Links](../dev/schemas.md)
+
++++
+
++++ Wirken sich Löschungen von Daten auf meine Versandberichte aus?
+
+Nein. Kampagnenberichte basieren auf vorab berechneten aggregierten Metriken (insgesamt gesendet, Öffnungen, Klicks) und nicht auf Live-Abfragen einzelner Protokolle. Durch das Löschen einzelner Empfängerdaten werden historische Aggregatstatistiken nicht geändert.
+
+Insgesamt bleiben Versandstatistiken und Leistungsmetriken intakt, während einzelne Trackinglogs und persönliche Details entfernt werden. Auf diese Weise können Sie Marketing-Analysen verwalten und gleichzeitig die Rechte der betroffenen Person respektieren.
+
+[Datenschutzverwaltung](../start/privacy.md) | [Berichte](../reporting/gs-reporting.md)
+
++++
+
++++ Wie kann ich verhindern, dass gelöschte Daten erneut importiert werden?
+
+Sie müssen Daten aus allen Quellsystemen löschen, nicht nur aus Campaign. Daten fließen häufig aus externen Systemen (CRM, E-Commerce, Data Warehouses).
+
+**Erforderliche Aktionen** Identifizieren aller Datenquellen, Löschen aus Quellsystemen, Hinzufügen zu Ausschluss-/Unterdrückungslisten, Aktualisieren von Import-Workflows unter Berücksichtigung von Löschkennzeichnungen und Dokumentieren des Prozesses.
+
+Als Datenverantwortlicher sind Sie für die vollständige Entfernung von Daten in Ihrem gesamten Technologie-Ökosystem verantwortlich.
+
+[Datenschutzverwaltung](../start/privacy.md) | [Workflows importieren](../config/workflows.md)
+
++++
+
++++ Können sich gelöschte Benutzer erneut anmelden?
+
+Ja. Betroffene Personen können sich nach der Löschung erneut anmelden. Campaign erstellt einen völlig neuen Empfängerdatensatz ohne Verknüpfung mit zuvor gelöschten Daten. Das Profil beginnt mit einem Neuanfang.
+
+Das Audit-Protokoll von Campaign zeichnet sowohl das Löschereignis als auch die Erstellung eines neuen Profils auf. Es zeigt die Einhaltung der Vorschriften und dass das neue Opt-in nach dem Löschen frei erteilt wurde.
+
+[Datenschutzverwaltung](../start/privacy.md) | [Abonnements](../start/subscriptions.md)
 
 +++
 
@@ -1860,8 +2152,8 @@ Du findest nicht, was du suchst? Im Folgenden finden Sie zusätzliche Ressourcen
 Tauschen Sie sich mit anderen Campaign-Benutzern und Adobe-Experten aus, um Informationen auszutauschen und Antworten zu erhalten.
 
 * **[Adobe Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"}** - Stellen Sie Fragen, teilen Sie Lösungen mit anderen und treten Sie in die Campaign-Community ein
-* **[Experience League-](https://experienceleaguecommunities.adobe.com/?profile.language=de){target="_blank"}**: Durchsuchen Sie Diskussionen über alle Adobe-Produkte hinweg.
-* **[Campaign Community Office Hours](https://experienceleague.adobe.com/de){target="_blank"}** - Nehmen Sie an Live-Sessions mit Adobe-Experten teil.
+* **[Experience League-](https://experienceleaguecommunities.adobe.com/){target="_blank"}**: Durchsuchen Sie Diskussionen über alle Adobe-Produkte hinweg.
+* **[Campaign Community Office Hours](https://experienceleague.adobe.com/){target="_blank"}** - Nehmen Sie an Live-Sessions mit Adobe-Experten teil.
 
 ### Dokumentation und Lernen
 
@@ -1878,7 +2170,7 @@ Zugriff auf umfassende Handbücher, Tutorials und Schulungsmaterialien.
 Hier finden Sie ausführliche technische Dokumentationen und Entwicklerressourcen.
 
 * **[Campaign-](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de){target="_blank"}**: Vollständige API-Referenzdokumentation
-* **[Campaign GitHub](https://github.com/AdobeDocs/campaign.de-DE)** - Zur Dokumentation beitragen
+* **[Campaign GitHub](https://github.com/AdobeDocs/campaign.en)** - Zur Dokumentation beitragen
 * **[Technische Hinweise](https://experienceleague.adobe.com/de/docs/campaign/technotes-ac/technotes-home){target="_blank"}** - Detaillierte technische Artikel
 * **[Kompatibilitätsmatrix](compatibility-matrix.md)** - Unterstützte Systeme und Versionen
 
@@ -1896,17 +2188,17 @@ Erhalten Sie Hilfe vom Support-Team von Adobe und verwalten Sie Ihre Instanz.
 Erweitern Sie Ihre Kenntnisse mit offiziellen Adobe-Schulungs- und Zertifizierungsprogrammen.
 
 * **[Adobe Digital Learning Services](https://learning.adobe.com/){target="_blank"}** - Offizielle, von Kursleitern geführte Kurse und Kurse zum Selbststudium
-* **[Adobe Campaign-Zertifizierung](https://experienceleague.adobe.com/docs/certification/program/overview.html?lang=de){target="_blank"}** - Validieren Sie Ihr Fachwissen mit einer professionellen Zertifizierung.
-* **[Experience League-Lernpfade](https://experienceleague.adobe.com/de?lang=de#dashboard/learning){target="_blank"}** - Geführte Journey
+* **[Adobe Campaign-Zertifizierung](https://experienceleague.adobe.com/docs/certification/program/overview.html){target="_blank"}** - Validieren Sie Ihr Fachwissen mit einer professionellen Zertifizierung.
+* **[Experience League-Lernpfade](https://experienceleague.adobe.com/?lang=de#dashboard/learning){target="_blank"}** - Geführte Journey
 
 ### Weitere hilfreiche Ressourcen
 
 * **[Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=de){target="_blank"}** - Referenz für Benutzer von Classic v7
 * **[Dokumentation zur Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}** - Handbuch für die neue Web-Benutzeroberfläche
 * **[Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de){target="_blank"}** - Optimieren des E-Mail-Versands
-* **[Produktaktualisierungen](https://experienceleague.adobe.com/de/docs/release-notes/experience-cloud/current){target="_blank"}** - Neueste Adobe Experience Cloud-Updates
+* **[Produktaktualisierungen](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current){target="_blank"}** - Neueste Adobe Experience Cloud-Updates
 
 **Zuletzt aktualisiert:** November 2025 | **Gilt für:** Campaign v8.6 und höher
 
-*Fehler gefunden oder Verbesserungsvorschläge gemacht? [Bearbeiten Sie diese Seite auf GitHub](https://github.com/AdobeDocs/campaign.de-DE/edit/main/help/v8/start/campaign-faq-comprehensive.md)*
+*Fehler gefunden oder Verbesserungsvorschläge gemacht? [Bearbeiten Sie diese Seite auf GitHub](https://github.com/AdobeDocs/campaign.en/edit/main/help/v8/start/campaign-faq-comprehensive.md)*
 
