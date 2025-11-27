@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
+source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 75%
+source-wordcount: '1185'
+ht-degree: 69%
 
 ---
 
@@ -82,19 +82,17 @@ Im Abschnitt **[!UICONTROL Browsen]** können Sie für jede Funktion auf die wic
 
 Wenn Sie beispielsweise zur Registerkarte **[!UICONTROL Profile und Zielgruppen]** gehen, können Sie auf die Empfängerlisten, Abonnements, existierende Zielgruppen-Workflows und die Verknüpfungen zur Erstellung dieser Komponenten zugreifen.
 
-![](assets/overview-list.png)
+![Benutzeroberfläche der Campaign-Konsole, über die der Zugriff auf die Listen über die Registerkarte Profile und Zielgruppe erfolgt](assets/overview-list.png)
 
 Wenn Sie ein Element auf dem Bildschirm auswählen, wird es in eine neue Registerkarte geladen, sodass Sie Inhalte einfach durchsuchen können.
 
-![](assets/new-tab.png)
+![Benutzeroberfläche der Campaign-Konsole, in der das Bearbeiten einer Liste auf einer neuen Registerkarte angezeigt wird](assets/new-tab.png)
 
 ### Erstellen eines Elements {#create-an-element}
 
 Verwenden Sie im Abschnitt **[!UICONTROL Erstellen]** auf der linken Bildschirmseite Tastaturbefehle, um neue Elemente hinzufügen. Sie können auch den Button **[!UICONTROL Erstellen]** oberhalb der Liste verwenden, um der aktuellen Liste neue Elemente hinzuzufügen.
 
-Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICONTROL Erstellen]**, um einen neuen Versand anzulegen.
-
-![](assets/new-recipient.png)
+![Benutzeroberfläche der Campaign-Konsole, die das Erstellen eines Empfängers über den Bildschirm „Profile und Zielgruppe“ anzeigt](assets/new-recipient.png)
 
 <!--
 ## Use a web browser {#web-browser}
@@ -109,7 +107,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
 Durchsuchen Sie den Campaign Explorer, um auf alle Funktionen und Einstellungen von Adobe Campaign zuzugreifen.
 
-![](assets/explorer.png)
+![Benutzeroberfläche der Campaign-Konsole, auf der der Explorer mit Fokus auf dem Menü Kampagnen angezeigt wird](assets/explorer.png)
 
 In diesem Arbeitsbereich können Sie auf die Explorer-Baumstruktur zugreifen, um alle Funktionen und Optionen zu durchsuchen.
 
@@ -153,7 +151,7 @@ Die unterstützten Sprachen hängen von der Benutzeroberfläche ab.
   >
   >Die Sprache wird während des Installationsprozesses ausgewählt und **kann später nicht mehr geändert**.
 
-* Weitere Informationen zu den unterstützten Sprachen für die Campaign Web-Benutzeroberfläche finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
+* Informationen zu den von der Campaign-Web-Benutzeroberfläche unterstützten Sprachen [ Sie in der Dokumentation zur Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
 
 ## Formate
 

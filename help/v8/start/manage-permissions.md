@@ -4,9 +4,10 @@ description: Erfahren Sie, wie Sie Berechtigungen für Benutzende von Campaign v
 feature: Permissions
 role: User, Admin
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
-workflow-type: ht
+source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
+workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 100%
 
@@ -215,7 +216,7 @@ Standardmäßige spezifische Berechtigungen in Adobe Campaign sind:
 
 * **[!UICONTROL LOKAL]**: Berechtigt zur lokalen Verwaltung (Dezentrales Marketing).
 
-* **[!UICONTROL FUSION]**: Berechtigt zum Verbinden der ausgewählten Datensätze zu einem Datensatz. Wenn Empfänger als Duplikate vorhanden sind, kann der Benutzer mit der Berechtigung **[!UICONTROL FUSION]** die Duplikate auswählen und zu einem primären Empfänger vereinen.
+* **[!UICONTROL ZUSAMMENFÜHRUNG]**: Berechtigt zum Zusammenführen der ausgewählten Datensätze zu einem Datensatz. Wenn Empfänger als Duplikate vorhanden sind, kann der Benutzer mit der Berechtigung **[!UICONTROL ZUSAMMENFÜHRUNG]** die Duplikate auswählen und zu einem primären Empfänger vereinen.
 
 * **[!UICONTROL SENDUNGEN VORBEREITEN]**: Berechtigung zum Erstellen, Bearbeiten und Speichern einer Sendung. Benutzer mit der Berechtigung **[!UICONTROL SENDUNGEN VORBEREITEN]** können auch den Prozess der Versandanalyse starten.
 
