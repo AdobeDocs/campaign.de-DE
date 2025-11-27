@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 0e2e96a37165b82829df7421760de761a2c2b1a5
+source-git-commit: 0830dea0e04a67c2d0b4102e41c0e57d8c98302a
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '811'
 ht-degree: 96%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 96%
    + [Komponenten und Prozesse](start/ac-components.md)
    + [Wechsel von Campaign Classic v7 zu v8](start/v7-to-v8.md)
    + [Wechsel von Campaign Standard zu v8](start/acs-to-v8.md)
+   + [Häufig gestellte Fragen](start/campaign-faq-comprehensive.md)
    + [Häufig gestellte Fragen](start/campaign-faq.md)
 + Kampagnen-Management {#campaigns}
    + [Erste Schritte mit Kampagnen](start/campaigns.md)
@@ -232,7 +233,7 @@ ht-degree: 96%
       + [Externe Konten](config/external-accounts.md)
 + Ressourcen für Entwickelnde {#developer}
    + [Campaign-Datenmodell](dev/datamodel.md)
-   + Schemata und Formulare {#shemas-forms}
+   + Schemata und Formulare {#schemas-forms}
       + [Arbeiten mit Schemata](dev/schemas.md)
       + [Erstellen von Schemata](dev/create-schema.md)
       + [Erweitern von Schemata](dev/extend-schema.md)
@@ -245,7 +246,7 @@ ht-degree: 96%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + REST APIs {#apis}
       + [Erste Schritte mit REST-APIs](dev/api/get-started-apis.md)
@@ -264,7 +265,7 @@ ht-degree: 96%
          + [Profile abrufen](dev/api/retrieving-profiles.md)
          + [Aktualisieren von Profilen](dev/api/updating-profiles.md)
          + [Profile erstellen](dev/api/creating-profiles-api.md)
-      + Services und Abonnements verwalten {#managing-services-and-subscriptiopns}
+      + Services und Abonnements verwalten {#managing-services-and-subscriptions}
          + [Erstellen eines Service](dev/api/creating-a-service.md)
          + [Abrufen von Abonnements](dev/api/retrieving-subscriptions.md)
          + [Abonnements ausführen](dev/api/perform-subscriptions.md)
