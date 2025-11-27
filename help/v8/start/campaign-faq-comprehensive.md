@@ -18,7 +18,7 @@ ht-degree: 29%
 
 Erhalten Sie schnelle Antworten auf die häufigsten Fragen zu Adobe Campaign v8. Unabhängig davon, ob Sie gerade erst anfangen oder nach Hilfe zur erweiterten Konfiguration suchen, finden Sie Antworten, die nach Themen geordnet unten sind.
 
-**Neu bei Campaign?** beginnen mit [allgemeinen ](#general) und [Schlüsselkonzepten](#key-concepts).\
+**Neu bei Campaign?** beginnen mit [allgemeinen &#x200B;](#general) und [Schlüsselkonzepten](#key-concepts).\
 **Benötigen Sie technische Hilfe?** Überprüfen Sie [Entwickler](#developers) und [Kampagneneinstellungen](#settings).\
 **Finden Sie keine Antwort?** Besuchen Sie unsere [Community-Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"} oder [Support kontaktieren](#get-help).
 
@@ -123,7 +123,7 @@ Informationen zur Überwachung der Workflow-Ausführung von Campaign [finden Sie
 
 +++ Mit welchen Systemen und Komponenten ist Campaign v8 kompatibel?
 
-Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign ](compatibility-matrix.md).
+Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign &#x200B;](compatibility-matrix.md).
 
 +++
 
@@ -133,7 +133,7 @@ Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download 
 
 Greifen Sie als Admin-Benutzerin bzw. -Benutzer auf Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} zu, um Adobe Campaign herunterzuladen.
 
-Weitere Informationen zum Verteilungs-Center [ Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
+Weitere Informationen zum Verteilungs-Center [&#x200B; Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
 
 +++
 
@@ -179,7 +179,7 @@ Campaign v8 ist die Campaign-Version der nächsten Generation, die für Managed 
 
 Adobe Campaign v8 ist ausschließlich als **Managed Cloud Service** verfügbar und kann nicht in einer On-Premise- oder Hybridumgebung bereitgestellt werden.
 
-[ Erfahren Sie mehr über den Wechsel von Campaign Classic v7 zu v8](v7-to-v8.md).
+[&#x200B; Erfahren Sie mehr über den Wechsel von Campaign Classic v7 zu v8](v7-to-v8.md).
 
 +++
 
@@ -193,7 +193,7 @@ Die damit einhergehenden Rechte und Einschränkungen ermöglichen dem Benutzer F
 * Zugriff auf bestimmte Daten
 * Erstellen, Ändern und/oder Löschen von Daten
 
-[Weitere ](../start/gs-permissions.md) zu Benutzerberechtigungen in Campaign v8.
+[Weitere &#x200B;](../start/gs-permissions.md) zu Benutzerberechtigungen in Campaign v8.
 
 **Verwandte Themen:**
 
@@ -207,13 +207,13 @@ Die damit einhergehenden Rechte und Einschränkungen ermöglichen dem Benutzer F
 
 Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung von Datenschutzbestimmungen in Bezug auf die DSGVO, den CCPA und andere Datenschutzbestimmungen unterstützen.
 
-[ Erfahren Sie ](../start/privacy.md) über die Datenschutzverwaltung und die Tools und Funktionen, die Adobe Campaign Ihnen zur Einhaltung Ihrer Datenschutzbestimmungen bietet.
+[&#x200B; Erfahren Sie &#x200B;](../start/privacy.md) über die Datenschutzverwaltung und die Tools und Funktionen, die Adobe Campaign Ihnen zur Einhaltung Ihrer Datenschutzbestimmungen bietet.
 
 +++
 
 +++ Über welche Benutzeroberflächen-Konzepte von Campaign sollte ich Bescheid wissen?
 
-Adobe Campaign Weitere Informationen [ Grundlagen zur Benutzeroberfläche von ](campaign-ui.md) finden Sie in diesem Abschnitt.
+Adobe Campaign Weitere Informationen [&#x200B; Grundlagen zur Benutzeroberfläche von &#x200B;](campaign-ui.md) finden Sie in diesem Abschnitt.
 
 Ab Campaign v8.6 haben Sie auch Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist.
 
@@ -531,7 +531,7 @@ Campaign v8 bietet die meisten Campaign Classic v7-Funktionen mit Verbesserungen
 
 **Wichtig:** Die meisten Marketing- und Betriebsfunktionen sind in v8 verfügbar und wurden verbessert. Technische Funktionen und Funktionen auf Infrastrukturebene werden von Adobe in der Cloud-Umgebung verwaltet.
 
-[Ausführliche Informationen finden Sie in ](compatibility-matrix.md) vollständigen Kompatibilitätsmatrix.
+[Ausführliche Informationen finden Sie in &#x200B;](compatibility-matrix.md) vollständigen Kompatibilitätsmatrix.
 
 **Verwandte Themen:**
 
@@ -1531,7 +1531,7 @@ Campaign v8 stellt eine Reihe von REST-APIs bereit, mit denen Sie Integrationen 
 
 +++ Wie kann ich Workflows über die API überwachen?
 
-Erfahren Sie auf dieser [ Seite , wie Sie Workflows mithilfe von Campaign-APIs ](../dev/api/controlling-a-workflow.md).
+Erfahren Sie auf dieser [&#x200B; Seite , wie Sie Workflows mithilfe von Campaign-APIs &#x200B;](../dev/api/controlling-a-workflow.md).
 
 +++
 
@@ -1543,7 +1543,7 @@ Wenn Sie Campaign-Datenschemata ändern, müssen Sie die Datenbankstruktur aktua
 
 +++ Welche Einschränkungen gibt es in Campaign v8?
 
-Campaign v8 weist einige Einschränkungen im Vergleich zu Campaign Classic v7 auf, die auf [ Seite beschrieben ](../start/v7-to-v8.md#limitations).
+Campaign v8 weist einige Einschränkungen im Vergleich zu Campaign Classic v7 auf, die auf [&#x200B; Seite beschrieben &#x200B;](../start/v7-to-v8.md#limitations).
 
 +++
 
