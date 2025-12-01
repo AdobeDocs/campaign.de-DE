@@ -19,7 +19,7 @@ ht-degree: 10%
 
 Erhalten Sie schnelle Antworten auf die häufigsten Fragen zu Adobe Campaign v8. Unabhängig davon, ob Sie gerade erst anfangen oder nach Hilfe zur erweiterten Konfiguration suchen, finden Sie Antworten, die nach Themen geordnet unten sind.
 
-**Neu bei Campaign?** beginnen mit [allgemeinen ](#general) und [Schlüsselkonzepten](#key-concepts).\
+**Neu bei Campaign?** beginnen mit [allgemeinen &#x200B;](#general) und [Schlüsselkonzepten](#key-concepts).\
 **Benötigen Sie technische Hilfe?** Überprüfen Sie [Entwickler](#developers) und [Kampagneneinstellungen](#settings).\
 **Finden Sie keine Antwort?** Besuchen Sie unsere [Community-Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"} oder [Support kontaktieren](#get-help).
 
@@ -36,7 +36,7 @@ Sie müssen die Campaign-Client-Konsole herunterladen und installieren, um eine 
 
 Ab Campaign v8.6 haben Sie Zugriff auf die **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist. Experience Cloud ist Adobes integrierte Produktfamilie von Programmen, Produkten und Services für das digitale Marketing.
 
-Erfahren Sie auf dieser Seite , wie Sie eine Verbindung zu Adobe Experience Cloud herstellen und auf [ Adobe Campaign-Web-Oberfläche ](campaign-ui.md#ac-web-ui). Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Erfahren Sie auf dieser Seite , wie Sie eine Verbindung zu Adobe Experience Cloud herstellen und auf [&#x200B; Adobe Campaign-Web-Oberfläche &#x200B;](campaign-ui.md#ac-web-ui). Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 
 **Verwandte Themen:**
@@ -57,7 +57,7 @@ Nein. Campaign v8 ist ausschließlich als **Managed Cloud Service** verfügbar u
 * Kein Infrastruktur-Management oder IT-Overhead
 * Integrierte Hochverfügbarkeit und Notfallwiederherstellung
 
-Erfahren Sie mehr über [ Architektur von Campaign v8 ](../architecture/architecture.md) die [Unterschiede zwischen Campaign v8 und Classic v7](../start/v7-to-v8.md).
+Erfahren Sie mehr über [&#x200B; Architektur von Campaign v8 &#x200B;](../architecture/architecture.md) die [Unterschiede zwischen Campaign v8 und Classic v7](../start/v7-to-v8.md).
 
 +++
 
@@ -199,7 +199,7 @@ Erfahren Sie mehr über [Überwachung der Workflow](https://experienceleague.ado
 
 +++ Mit welchen Systemen und Komponenten ist Campaign v8 kompatibel?
 
-Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign ](compatibility-matrix.md).
+Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign &#x200B;](compatibility-matrix.md).
 
 +++
 
@@ -209,7 +209,7 @@ Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download 
 
 Greifen Sie als Admin-Benutzerin bzw. -Benutzer auf Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} zu, um Adobe Campaign herunterzuladen.
 
-Weitere Informationen zum Verteilungs-Center [ Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
+Weitere Informationen zum Verteilungs-Center [&#x200B; Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
 
 +++
 
@@ -276,7 +276,7 @@ Campaign v8 ist die Campaign-Version der nächsten Generation, die für Managed 
 
 Adobe Campaign v8 ist ausschließlich als **Managed Cloud Service** verfügbar und kann nicht in einer On-Premise- oder Hybridumgebung bereitgestellt werden.
 
-[ Erfahren Sie mehr über den Wechsel von Campaign Classic v7 zu v8](v7-to-v8.md).
+[&#x200B; Erfahren Sie mehr über den Wechsel von Campaign Classic v7 zu v8](v7-to-v8.md).
 
 +++
 
@@ -290,7 +290,7 @@ Die damit einhergehenden Rechte und Einschränkungen ermöglichen dem Benutzer F
 * Zugriff auf bestimmte Daten
 * Erstellen, Ändern und/oder Löschen von Daten
 
-[Weitere ](../start/gs-permissions.md) zu Benutzerberechtigungen in Campaign v8.
+[Weitere &#x200B;](../start/gs-permissions.md) zu Benutzerberechtigungen in Campaign v8.
 
 **Verwandte Themen:**
 
@@ -300,7 +300,7 @@ Die damit einhergehenden Rechte und Einschränkungen ermöglichen dem Benutzer F
 
 +++ Über welche Benutzeroberflächen-Konzepte von Campaign sollte ich Bescheid wissen?
 
-Adobe Campaign Weitere Informationen [ Grundlagen zur Benutzeroberfläche von ](campaign-ui.md) finden Sie in diesem Abschnitt.
+Adobe Campaign Weitere Informationen [&#x200B; Grundlagen zur Benutzeroberfläche von &#x200B;](campaign-ui.md) finden Sie in diesem Abschnitt.
 
 Ab Campaign v8.6 haben Sie auch Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist.
 
@@ -1749,7 +1749,7 @@ In der Client-Konsole haben Sie folgende Möglichkeiten:
 * Entwerfen bedingter Formatierung und dynamischer Inhalte
 * Zugriff auf das vollständige Campaign-Datenmodell und externe Datenbanken (FDA)
 
-Erfahren Sie, wie [ benutzerdefinierte Berichte erstellen (Client-Konsole)](../reporting/custom-reports.md)
+Erfahren Sie, wie [&#x200B; benutzerdefinierte Berichte erstellen (Client-Konsole)](../reporting/custom-reports.md)
 
 +++
 
