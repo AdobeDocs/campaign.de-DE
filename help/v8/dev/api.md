@@ -5,10 +5,10 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 115b7b6824f3736e03f9fb87898f1264f9bab636
+source-git-commit: 26fededf0ee83299477e45e891df30a46c6d40fe
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 88%
+source-wordcount: '296'
+ht-degree: 79%
 
 ---
 
@@ -26,7 +26,7 @@ In [!DNL Adobe Campaign] stehen Ihnen eine Reihe von JavaScript-Funktionen zur V
 Sie können [Campaign JavaScript-APIs](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"} verwenden, um in der Cloud-Datenbank von Campaign zu schreiben oder aus ihr zu lesen:
 
 * Geschäftsspezifische APIs, mit denen Sie auf jedes Objekt reagieren können: Sendungen, Workflows, Abonnements usw. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=de#configuring-campaign-classic){target="_blank"}.
-* Generische Datenzugriffs-APIs zur Abfrage von Datenmodelldaten. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=de){target="_blank"}.
+* Generische Datenzugriffs-APIs zum Abfragen der Datenmodelldaten mithilfe von queryDef- und NLWS-Methoden. Weitere Informationen finden Sie unter [Datenbank mit queryDef abfragen](query-api.md).
 
 Es ist zu beachten, dass Campaign in seiner [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) mit zwei Datenbanken verwendet werden kann: einer lokalen Datenbank für Echtzeit-Messaging und Einzelabfragen über die Benutzeroberfläche und das Schreiben über APIs sowie einer Cloud-Datenbank für die Kampagnenausführung, für das Reporting, für die Datenaufnahme, für Batch-Abfragen und für die Workflow-Ausführung.
 
@@ -53,5 +53,6 @@ Um APIs verwenden und mit [!DNL Adobe Campaign] interagieren zu können, müssen
 
 **Verwandte Themen**
 
+* [Datenbank mit queryDef abfragen](query-api.md)
 * [Best Practices für Datenmodelle](datamodel-best-practices.md)
 * [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}
