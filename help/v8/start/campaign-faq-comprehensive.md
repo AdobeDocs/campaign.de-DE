@@ -8,9 +8,9 @@ keywords: FAQ, Campaign v8, Fragen, Antworten, Hilfe, Support, Fehlerbehebung
 version: Campaign v8
 hide: true
 hidefromtoc: true
-source-git-commit: ceab90331fab0725962a2a98f338ac3dc31a2588
+source-git-commit: 266facaaf2bd6bcce23db2bb5ab29f1c419bb3c1
 workflow-type: tm+mt
-source-wordcount: '13578'
+source-wordcount: '13056'
 ht-degree: 10%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 Erhalten Sie schnelle Antworten auf die häufigsten Fragen zu Adobe Campaign v8. Unabhängig davon, ob Sie gerade erst anfangen oder nach Hilfe zur erweiterten Konfiguration suchen, finden Sie Antworten, die nach Themen geordnet unten sind.
 
-**Neu bei Campaign?** beginnen mit [allgemeinen &#x200B;](#general) und [Schlüsselkonzepten](#key-concepts).\
+**Neu bei Campaign?** beginnen mit [allgemeinen ](#general) und [Schlüsselkonzepten](#key-concepts).\
 **Benötigen Sie technische Hilfe?** Überprüfen Sie [Entwickler](#developers) und [Kampagneneinstellungen](#settings).\
 **Finden Sie keine Antwort?** Besuchen Sie unsere [Community-Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"} oder [Support kontaktieren](#get-help).
 
@@ -36,7 +36,7 @@ Sie müssen die Campaign-Client-Konsole herunterladen und installieren, um eine 
 
 Ab Campaign v8.6 haben Sie Zugriff auf die **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist. Experience Cloud ist Adobes integrierte Produktfamilie von Programmen, Produkten und Services für das digitale Marketing.
 
-Erfahren Sie auf dieser Seite , wie Sie eine Verbindung zu Adobe Experience Cloud herstellen und auf [&#x200B; Adobe Campaign-Web-Oberfläche &#x200B;](campaign-ui.md#ac-web-ui). Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Erfahren Sie auf dieser Seite , wie Sie eine Verbindung zu Adobe Experience Cloud herstellen und auf [ Adobe Campaign-Web-Oberfläche ](campaign-ui.md#ac-web-ui). Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 
 **Verwandte Themen:**
@@ -93,15 +93,15 @@ Erfahren Sie mehr über [Überwachen von Sendungen](https://experienceleague.ado
 
 Ja. Campaign bietet mehrere Tools zur Überwachung der Workflow-Ausführung:
 
-* **[Workflow-Dashboard](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}** - Echtzeitstatus, Fortschritt und Fehler für jede Workflow-Aktivität anzeigen
-* **[Workflow-Protokolle](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#displaying-logs){target="_blank"}** - Zugriff auf detaillierte Ausführungsprotokolle zur Fehlerbehebung
-* **[Heatmap](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/monitoring-workflows/heatmap){target="_blank"}** - Visualisieren der Workflow-Aktivität und Ermitteln von Leistungsengpässen
+* **[Workflow-Dashboard](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}** - Echtzeitstatus, Fortschritt und Fehler für jede Workflow-Aktivität anzeigen
+* **[Workflow-Protokolle](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#displaying-logs){target="_blank"}** - Zugriff auf detaillierte Ausführungsprotokolle zur Fehlerbehebung
+* **[Heatmap](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/heatmap){target="_blank"}** - Visualisieren der Workflow-Aktivität und Ermitteln von Leistungsengpässen
 * **[Audit-Protokoll](../reporting/audit-trail.md)** - Verfolgen Sie alle Änderungen an Workflows
-* **[Warnhinweise](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators){target="_blank"}** - Einrichten von Benachrichtigungen bei Fehlern oder Verzögerungen bei Workflows
+* **[Warnhinweise](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators){target="_blank"}** - Einrichten von Benachrichtigungen bei Fehlern oder Verzögerungen bei Workflows
 
 Um einen Workflow zu überwachen, öffnen Sie ihn und klicken Sie auf die Registerkarte **Protokolle**. Fehlgeschlagene Aktivitäten werden rot hervorgehoben, und durch Klicken auf sie können Fehlerdetails angezeigt werden.
 
-Erfahren Sie mehr über [Überwachung der Workflow](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}Ausführung und [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}.
+Erfahren Sie mehr über [Überwachung der Workflow](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}Ausführung und [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}.
 
 +++
 
@@ -111,7 +111,7 @@ Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download 
 
 Greifen Sie als Admin-Benutzerin bzw. -Benutzer auf Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} zu, um Adobe Campaign herunterzuladen.
 
-Weitere Informationen zum Verteilungs-Center [&#x200B; Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
+Weitere Informationen zum Verteilungs-Center [ Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
 
 +++
 
@@ -139,7 +139,7 @@ Der Campaign-Community beitreten: Suchen Sie nach Antworten in bereits gestellte
 
 +++ Mit welchen Systemen und Komponenten ist Campaign v8 kompatibel?
 
-Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign &#x200B;](compatibility-matrix.md).
+Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign ](compatibility-matrix.md).
 
 +++
 
@@ -206,7 +206,7 @@ Campaign v8 ist derzeit **nur** als Managed Cloud Service verfügbar und kann n
 
 Weitere Informationen zum Migrationsprozess erhalten Sie von Ihrer Adobe-Support-Kontaktperson.
 
-Weitere Informationen finden Sie im Abschnitt [Campaign v8 im Vergleich zu früheren &#x200B;](#v7-differences)).
+Weitere Informationen finden Sie im Abschnitt [Campaign v8 im Vergleich zu früheren ](#v7-differences)).
 
 +++
 
@@ -320,7 +320,7 @@ Die damit einhergehenden Rechte und Einschränkungen ermöglichen dem Benutzer F
 * Zugriff auf bestimmte Daten
 * Erstellen, Ändern und/oder Löschen von Daten
 
-[Weitere &#x200B;](../start/gs-permissions.md) zu Benutzerberechtigungen in Campaign v8.
+[Weitere ](../start/gs-permissions.md) zu Benutzerberechtigungen in Campaign v8.
 
 **Verwandte Themen:**
 
@@ -330,7 +330,7 @@ Die damit einhergehenden Rechte und Einschränkungen ermöglichen dem Benutzer F
 
 +++ Über welche Benutzeroberflächen-Konzepte von Campaign sollte ich Bescheid wissen?
 
-Adobe Campaign Weitere Informationen [&#x200B; Grundlagen zur Benutzeroberfläche von &#x200B;](campaign-ui.md) finden Sie in diesem Abschnitt.
+Adobe Campaign Weitere Informationen [ Grundlagen zur Benutzeroberfläche von ](campaign-ui.md) finden Sie in diesem Abschnitt.
 
 Ab Campaign v8.6 haben Sie auch Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist.
 
@@ -521,63 +521,27 @@ Nein. Campaign v8 ist ausschließlich als **Managed Cloud Service** verfügbar u
 * Kein Infrastruktur-Management oder IT-Overhead
 * Integrierte Hochverfügbarkeit und Notfallwiederherstellung
 
-Erfahren Sie mehr über [&#x200B; Architektur von Campaign v8 &#x200B;](../architecture/architecture.md) die [Unterschiede zwischen Campaign v8 und Classic v7](../start/v7-to-v8.md).
+Erfahren Sie mehr über [ Architektur von Campaign v8 ](../architecture/architecture.md) die [Unterschiede zwischen Campaign v8 und Classic v7](../start/v7-to-v8.md).
 
 +++
 
 +++ Was sind die Hauptunterschiede zwischen Campaign v8 und früheren Versionen?
 
-Campaign v8 ist eine vollständige Neugestaltung von Adobe Campaign, die für eine moderne Cloud-native Architektur entwickelt wurde und gegenüber Campaign Classic v7 und Campaign Standard erhebliche Verbesserungen mit sich bringt:
+Campaign v8 basiert auf einer modernen Cloud-nativen Architektur mit erheblichen Verbesserungen:
 
-**Bereitstellungsmodell:**
+* **Nur Managed Cloud Services** - Vollständig von Adobe gehostet (keine On-Premise-/Hybrid-Optionen)
+* **Überlegene Leistung** - Bis zu 20 Millionen Vorgänge/Stunde mit FFDA-Architektur (Full Federated Data Access)
+* **Neue Web-Benutzeroberfläche von Campaign** - Moderne, intuitive Benutzeroberfläche neben der klassischen Konsole
+* **Automatische Upgrades** - Immer die neueste Version ohne Ausfallzeiten
+* **Erweiterte Funktionen** - KI-Assistent, Rich-Push-Benachrichtigungen, aktualisierte SMS, verbesserte Integrationen mit Adobe Experience Cloud
 
-* **v8:** Nur Managed Cloud Services - vollständig von Adobe gehostet und verwaltet
-* **v7/Standard:** Verfügbare Optionen für On-Premise, Hybrid oder Hosted
-* **Vorteil:** Infrastrukturmanagement ohne zusätzliche Kosten, automatische Skalierung, Sicherheit auf Unternehmensniveau, proaktive Überwachung
+**Für Campaign Classic v7-Benutzer:** Erfahren Sie mehr über den [Wechsel von v7 zu v8](v7-to-v8.md) einschließlich Änderungen an der Architektur, nicht verfügbaren Funktionen und Überlegungen zur Migration.
 
-**Architektur und Leistung:**
-
-* **v8:** Verbesserte FFDA-Architektur (FFDA) mit PostgreSQL-Datenbank
-* **v8:** Batch-Verarbeitungsdurchsatz erreicht bis zu **20 Millionen Vorgänge pro Stunde**
-* **v8:** Transaktionsnachrichten-Durchsatz von **1 Million pro Stunde**
-* **v8:** Echtzeit-Datenexploration und schnelle Zielgruppenbildung (Minuten vs. Stunden)
-* **Vorteil:** bessere Leistung für groß angelegte Vorgänge und komplexe Kampagnen
-
-**Benutzeroberfläche:**
-
-* **v8:** Neue **Web-Benutzeroberfläche von Campaign** zusammen mit der Client-Konsole - intuitiv, barrierefrei, ideal für Marketing-Experten
-* **v8:** Modernes, responsives Design mit Drag-and-Drop-Funktionen
-* **v8:** Vereinfachtes Erstellen und Verwalten von Kampagnen
-* **v8:** weist viele Ähnlichkeiten mit der Benutzeroberfläche von Campaign Standard auf
-* **Vorteil:** Schnelleres Onboarding, einfachere Kampagnenausführung, bessere Barrierefreiheit, minimale Lernkurve
-
-**Neue wichtige Funktionen:**
-
-* **Rich-Push** Benachrichtigungen mit Bildern, Videos, interaktiven Schaltflächen, Karussells und Timern
-* **KI-Assistent** für die Inhaltserstellung (E-Mail, SMS, Push) mit Bewertung der Markenausrichtung
-* **Aktualisierte SMS-Infrastruktur (SMS v2.0)** verbesserte Zuverlässigkeit und Kompatibilität
-* **Adobe Experience Manager as a Cloud Service-Integration** für nahtloses Content-Management
-* **Verbessertes Reporting** einschließlich dynamischer Berichterstellung für Campaign Standard-Benutzer
-
-**Aktualisierungen und Wartung:**
-
-* **v8:** Von Adobe verwaltete automatische Upgrades - immer auf der neuesten stabilen Version mit kontinuierlichem Bereitstellungsmodell
-* **v7/Standard:** Planung und Ausführung manueller Upgrades erforderlich
-* **Vorteil** Geringerer Wartungsaufwand, sofortiger Zugriff auf neue Funktionen, keine Ausfallzeiten
-
-**APIs und Integration:**
-
-* **v8:** Moderne REST-APIs mit verbesserter Leistung und Zuverlässigkeit
-* **v8:** Nahtlose Integration mit Adobe Experience Cloud und Adobe Experience Platform
-* **Vorteil:** Integrationen, bessere Interoperabilität, moderne Entwicklungspraktiken
-
-[Weitere Informationen zu den wichtigsten Funktionen von Campaign v8](whats-new.md)
+**Für Campaign Standard-Benutzer:** Entdecken Sie den [Umstellungspfad zu v8](acs-to-v8.md) und das [Migrationshandbuch zu Campaign Standard](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"}.
 
 **Verwandte Themen:**
 
-[Von Campaign Classic v7 zu v8](v7-to-v8.md) | [v7 zu v8 - Übergangshandbuch](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"} | [Von Campaign Standard zu v8](acs-to-v8.md) | [Campaign Standard-Transition](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Übernahmeleitfaden für Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Funktionsmatrix von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
-* [Architektur von Campaign v8](../architecture/architecture.md)
-* [Schutzmechanismen und Einschränkungen](ac-guardrails.md)
+[Wichtigste Funktionen von Campaign v8](whats-new.md) | [Architektur von Campaign v8](../architecture/architecture.md) | [Funktionsmatrix](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [Leitplanken und Einschränkungen](ac-guardrails.md)
 
 +++
 
@@ -626,7 +590,7 @@ Campaign v8 bietet erhebliche Verbesserungen bei gleichzeitiger Beibehaltung der
 
 * Adobe bietet Unterstützung, Anleitungen und Tools für die Migration
 * v8 ist nur Managed Cloud Service (keine On-Premise- oder Hybridbereitstellung)
-* Einige technische Implementierungen können unterschiedlich sein. Überprüfen Sie die [Funktionsmatrix](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* Einige technische Implementierungen können unterschiedlich sein. Überprüfen Sie die [Funktionsmatrix](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 * Datenmigration und -tests erfordern Planung und Ressourcen
 * **Für Campaign Standard-**: Die Umstellung soll reibungslos und mit minimaler Workflow-Unterbrechung erfolgen
 
@@ -643,64 +607,26 @@ Wenden Sie sich an den Adobe-Support unter:
 
 **Für Campaign Classic v7-Benutzer:** [Von Campaign Classic v7 zu v8](v7-to-v8.md) | [v7 zu v8 - Detailliertes Handbuch](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
 
-**Für Campaign Standard-Benutzer:** [Wechsel von Campaign Standard zu v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Übernahmeleitfaden für Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Überblick über Campaign Standard zu v8](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/overview){target="_blank"} | [Erste Schritte für Marketing-Fachleute](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/marketers){target="_blank"} | [Erste Schritte für Admin/Entwickler](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
+**Für Campaign Standard-Benutzer:** [Wechsel von Campaign Standard zu v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Übernahmeleitfaden für Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/home){target="_blank"} | [Überblick über Campaign Standard zu v8](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/overview){target="_blank"} | [Erste Schritte für Marketing-Fachleute](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/marketers){target="_blank"} | [Erste Schritte für Admin/Entwickler](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
 
-**Allgemeine Ressourcen:** Funktionsmatrix [Campaign v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
-* [Kompatibilitätsmatrix](compatibility-matrix.md)
+**Allgemeine Ressourcen:** Funktionsmatrix [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [Kompatibilitätsmatrix](compatibility-matrix.md)
 
 +++
 
 +++ Wie migriere ich meine On-Premise- oder Hybridumgebung von Campaign Classic v7 zu Adobe Managed Services?
 
-Die Migration Ihrer Campaign Classic v7 On-Premise- oder Hybridumgebung zu Adobe Managed Services ist oft ein strategischer Schritt vor der Umstellung auf Campaign v8. Diese Migration bietet sofortige Vorteile und legt gleichzeitig die Grundlage für die zukünftige Einführung von v8.
+Die Migration zu Adobe Managed Services bietet einen strategischen Weg von On-Premise/Hybrid v7 zur Cloud und bietet mehr Skalierbarkeit, Sicherheit und einen geringeren IT-Overhead. Vor der Umstellung auf Campaign v8 ist dies oft ein Sprungbrett.
 
-**Warum migrieren Sie zu Managed Services?**
+**Wichtigste Punkte:**
 
-* **Pfad zu Campaign v8** - Managed Services bietet mit seiner Web-Oberfläche und seinen GenAI-Funktionen einen reibungsloseren Upgrade-Pfad auf v8
-* **Skalierbarkeit und Zuverlässigkeit** - Nutzen Sie die Cloud-Infrastruktur von Adobe für bessere Leistung und automatische Skalierung
-* **Erweiterte Sicherheit** - Profitieren Sie von kontinuierlicher Überwachung, automatischen Sicherheits-Patches und Schutz auf Unternehmensniveau
-* **Expert Support** - Zugriff auf Support-Team und Infrastrukturressourcen von Adobe
-* **Geringerer IT-Overhead** - Kein Infrastrukturmanagement, automatische Backups und Disaster Recovery inklusive
-* **Adobe Experience Platform-Integration** - Nahtlose Integration mit Adobe Experience Platform für umfassende Marketing-Lösungen
+* Kein automatisiertes Migrationswerkzeug verfügbar - manuelle Planung und Ausführung erforderlich
+* Adobe Professional Services-Support wird dringend empfohlen
+* Zu den Vorteilen gehören Cloud-Infrastruktur, automatische Sicherheits-Patches, Expertensupport und der einfachere Weg zu v8
+* Die Migration umfasst Due Diligence, Umgebungsprüfung, Datenbereinigung, Staging-Migration und Produktionsumstellung
 
-**Wichtige Überlegungen:**
+**Erste Schritte:** Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um Ihre Umgebung zu bewerten und einen detaillierten Migrationsplan mit Adobe Professional Services zu erstellen.
 
-* **Keine automatisierte Migration** - Derzeit ist kein automatisiertes Migrations-Tool verfügbar. Manuelle Planung und Ausführung sind erforderlich
-* **Adobe Professional Services-Support** - Es wird dringend empfohlen, Adobe Professional Services mit Rat und Tat zu beauftragen
-* **Vorbereitung erforderlich** - Organisieren Sie Ihre Daten, bewerten Sie Anforderungen, prüfen Sie aktuelle Praktiken und stellen Sie die Kompatibilität sicher.
-* **Migrationskomplexität** - Berücksichtigt Faktoren wie die Komplexität der Umgebung, das Datenvolumen, Anpassungen und Objektabhängigkeiten
-
-**Die wichtigsten Herausforderungen für die Planung:**
-
-1. **Beschränkungen beim Datenimport nach XML/Blob** - Kann nur mithilfe von Paketen oder Dump-and-Restore-Methoden importiert werden
-2. **Große Datentabellen** - Empfängertabellen und Versand-/Trackinglogs erfordern besondere Optimierungsstrategien
-3. **Objekt-IDs** - Jedes importierte Objekt erhält eine neue ID, die zur Kontinuität eine ID-Neuausrichtung erfordert
-4. **Build-Upgrades** - Planen Sie vor der Migration ein Upgrade auf die neueste verfügbare v7-Version.
-
-**Allgemeine Migrations-Roadmap:**
-
-1. **Due-Diligence- und Umfangsdefinition** - Führen Sie mit dem Adobe Managed Services-Team eine gründliche Analyse durch, definieren Sie den Umfang und bewerten Sie den Bereitstellungsbedarf
-2. **Audit und Umfangsverfeinerung** - Überprüfen Sie aktuelle Verfahren, bewerten Sie Datenmodelle und -flüsse, identifizieren Sie schlechte Verfahren und reduzieren Sie unnötige Migrationselemente
-3. **Bereinigung und Vorbereitung** - Beheben Sie identifizierte Probleme, entfernen Sie nicht verwendete Daten und führen Sie Build-Upgrades auf die neueste Version durch
-4. **Erstmigration (Phase)** - Bereitstellung einer neuen Cloud-Instanz, Backup-Struktur, Importieren von Paketen, Einrichten von Sequenzen/Zählern, Importieren von Objekten, Neuausrichten von IDs, Importieren von Nicht-XML-Daten und Validieren
-5. **Endgültige Migration (Produktion)** - Aktualisieren Sie die Produktion mit verifizierten Staging-Instanzen, führen Sie Leistungstests durch, migrieren Sie direkt zur Produktion und aktivieren Sie Tracking-/Echtzeitfunktionen.
-
-**Best Practice:** Führen Sie immer die Erstmigration auf einer Staging-Instanz durch, bevor Sie zur Produktion übergehen, um Risiken zu minimieren und den Prozess zu validieren.
-
-**Erste Schritte:**
-
-Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter und kontaktieren Sie Adobe Professional Services, um:
-
-* Bewertung der aktuellen Umgebung und der Migrationsbereitschaft
-* Entwickeln eines detaillierten Migrationsplans mit Zeitplänen und Abhängigkeiten
-* Unterstützung durch Experten während des gesamten Migrationsprozesses
-* Nutzung bewährter Best Practices und Vermeidung häufiger Fehler
-
-Erfahren Sie mehr über [Migration zu Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=de){target="_blank"} in der Adobe Campaign-Community.
-
-**Verwandte Themen:**
-
-[Von Campaign Classic v7 zu v8](v7-to-v8.md) | [v7 zu v8 - Übergangshandbuch](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"} | [Architektur von Campaign v8](../architecture/architecture.md) | [Adobe Professional Services](https://business.adobe.com/de/customers/consulting-services/main.html){target="_blank"}
+Erfahren Sie mehr über [Migration zu Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"} einschließlich Herausforderungen, Best Practices und einer detaillierten Migrationsstrategie.
 
 +++
 
@@ -761,7 +687,7 @@ Die folgenden Begriffe wurden in der Web-Benutzeroberfläche von Campaign aktual
 
 **Verwandte Themen:**
 
-[Funktionsmatrix](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [Kompatibilitätsmatrix](compatibility-matrix.md) | [Leitplanken und Einschränkungen](ac-guardrails.md) | [v7 zu v8 - Übergangshandbuch](v7-to-v8.md)
+[Funktionsmatrix](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [Kompatibilitätsmatrix](compatibility-matrix.md) | [Leitplanken und Einschränkungen](ac-guardrails.md) | [v7 zu v8 - Übergangshandbuch](v7-to-v8.md)
 
 [Wechsel von Campaign Standard zu v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 
@@ -818,7 +744,7 @@ Eine Liste ist eine statische Gruppe von Empfängern, die Sie in Sendungen ausw�
 
 **Verwandte Themen:**
 
-[Zielgruppen erstellen](../audiences/create-audiences.md) | [Aktivität „Listen-Update“](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html?lang=de){target="_blank"}
+[Zielgruppen erstellen](../audiences/create-audiences.md) | [Aktivität „Listen-Update“](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html){target="_blank"}
 
 +++
 
@@ -852,7 +778,7 @@ Campaign verfolgt den Verlauf von An-/Abmeldungen und verwaltet die An-/Abmeldun
 
 Verwenden Sie die **[!UICONTROL Ausschluss]**-Aktivität in einem Workflow, um unerwünschte Profile aus Ihrer Zielgruppe zu entfernen. Platzieren Sie sie nach Ihren Zielgruppenbestimmungsaktivitäten und definieren Sie, welche Population ausgeschlossen werden soll.
 
-Weitere Informationen zur [Ausschlussaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html?lang=de){target="_blank"}
+Weitere Informationen zur [Ausschlussaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html){target="_blank"}
 
 +++
 
@@ -935,7 +861,7 @@ Hauptfunktionen: automatische Inhaltsduplizierung, automatisches sprachbasiertes
 
 Die Client-Konsole unterstützt auch mehrsprachige Inhalte mit bedingten Inhalten und Workflows, erfordert jedoch eine manuellere Konfiguration.
 
-[Mehrsprachige Sendungen (Web-Benutzeroberfläche)](https://experienceleague.adobe.com/de/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Bedingter Inhalt (Client-Konsole)](../send/conditions.md)
+[Mehrsprachige Sendungen (Web-Benutzeroberfläche)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Bedingter Inhalt (Client-Konsole)](../send/conditions.md)
 
 +++
 
@@ -961,7 +887,7 @@ Ja, aber **nur über die Campaign Web-Benutzeroberfläche**. Der KI-Assistent un
 
 **Hinweis:** KI-Assistent ist ausschließlich in der Web-Benutzeroberfläche von Campaign verfügbar und unterstützt derzeit nur Englisch. Benutzer benötigen entsprechende Berechtigungen und müssen einer Benutzervereinbarung zustimmen.
 
-[Überblick über den KI-Assistenten](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [Anwendungsfälle des KI-Assistenten](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Markenausrichtung](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
+[Überblick über den KI-Assistenten](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [Anwendungsfälle des KI-Assistenten](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Markenausrichtung](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
 
 +++
 
@@ -1000,7 +926,7 @@ Testadressen sind spezielle Empfängerinnen und Empfänger, die automatisch zu j
 
 Testadressen verwalten in **[!UICONTROL Ressourcen > Kampagnen-Management > Testadressen]**. Halten Sie Listen klein, um eine Beeinträchtigung der Versandmetriken zu vermeiden.
 
-[Leitfaden zu Testadressen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html?lang=de){target="_blank"}
+[Leitfaden zu Testadressen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html){target="_blank"}
 
 +++
 
@@ -1560,7 +1486,7 @@ Es hängt davon ab, welche Benutzeroberfläche Sie verwenden. Die Sprache **Clie
 
 **Verwandte Themen:**
 
-[Ändern der Sprache in der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Erste Schritte mit der Campaign-Client-Konsole](connect.md)
+[Ändern der Sprache in der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Erste Schritte mit der Campaign-Client-Konsole](connect.md)
 
 +++
 
@@ -1693,7 +1619,7 @@ Ja. Campaign bietet native CRM-Connectoren für eine nahtlose bidirektionale Syn
 
 **Verwandte Themen:**
 
-[CRM-Connector-Konfiguration](../connect/crm.md) | [Workflow-CRM-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html?lang=de){target="_blank"}
+[CRM-Connector-Konfiguration](../connect/crm.md) | [Workflow-CRM-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html){target="_blank"}
 
 +++
 
@@ -1828,7 +1754,7 @@ In der Client-Konsole haben Sie folgende Möglichkeiten:
 * Entwerfen bedingter Formatierung und dynamischer Inhalte
 * Zugriff auf das vollständige Campaign-Datenmodell und externe Datenbanken (FDA)
 
-Erfahren Sie, wie [&#x200B; benutzerdefinierte Berichte erstellen (Client-Konsole)](../reporting/custom-reports.md)
+Erfahren Sie, wie [ benutzerdefinierte Berichte erstellen (Client-Konsole)](../reporting/custom-reports.md)
 
 +++
 
@@ -1876,7 +1802,7 @@ Ja! Campaign enthält ein Umfragemodul, mit dem Sie Online-Fragebögen erstellen
 
 **Verwandte Themen:**
 
-[Erste Schritte mit Umfragen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [Umfrageberichte](https://experienceleague.adobe.com/de/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
+[Erste Schritte mit Umfragen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [Umfrageberichte](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
 
 +++
 
@@ -2320,8 +2246,8 @@ Du findest nicht, was du suchst? Im Folgenden finden Sie zusätzliche Ressourcen
 Tauschen Sie sich mit anderen Campaign-Benutzern und Adobe-Experten aus, um Informationen auszutauschen und Antworten zu erhalten.
 
 * **[Adobe Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"}** - Stellen Sie Fragen, teilen Sie Lösungen mit anderen und treten Sie in die Campaign-Community ein
-* **[Experience League-](https://experienceleaguecommunities.adobe.com/?profile.language=de){target="_blank"}**: Durchsuchen Sie Diskussionen über alle Adobe-Produkte hinweg.
-* **[Campaign Community Office Hours](https://experienceleague.adobe.com/de){target="_blank"}** - Nehmen Sie an Live-Sessions mit Adobe-Experten teil.
+* **[Experience League-](https://experienceleaguecommunities.adobe.com/){target="_blank"}**: Durchsuchen Sie Diskussionen über alle Adobe-Produkte hinweg.
+* **[Campaign Community Office Hours](https://experienceleague.adobe.com/){target="_blank"}** - Nehmen Sie an Live-Sessions mit Adobe-Experten teil.
 
 ### Dokumentation und Lernen
 
@@ -2353,10 +2279,10 @@ Erhalten Sie Hilfe vom Support-Team von Adobe und verwalten Sie Ihre Instanz.
 
 Erweitern Sie Ihre Kenntnisse mit offiziellen Adobe-Schulungs- und Zertifizierungsprogrammen.
 
-* **[Experience League-Hilfe](https://experienceleague.adobe.com/de/browse/campaign/campaign-v8){target="_blank"}** - Hilferessourcen für Campaign v8 (Web-Benutzeroberfläche und Client-Konsole)
+* **[Experience League-Hilfe](https://experienceleague.adobe.com/en/browse/campaign/campaign-v8){target="_blank"}** - Hilferessourcen für Campaign v8 (Web-Benutzeroberfläche und Client-Konsole)
 * **[Adobe Digital Learning Services](https://learning.adobe.com/){target="_blank"}** - Offizielle, von Kursleitern geführte Kurse und Kurse zum Selbststudium
-* **[Adobe Campaign-Zertifizierung](https://experienceleague.adobe.com/docs/certification/program/overview.html?lang=de){target="_blank"}** - Validieren Sie Ihr Fachwissen mit einer professionellen Zertifizierung.
-* **[Experience League-Lernpfade](https://experienceleague.adobe.com/de?lang=de#dashboard/learning){target="_blank"}** - Geführte Journey
+* **[Adobe Campaign-Zertifizierung](https://experienceleague.adobe.com/docs/certification/program/overview.html){target="_blank"}** - Validieren Sie Ihr Fachwissen mit einer professionellen Zertifizierung.
+* **[Experience League-Lernpfade](https://experienceleague.adobe.com/?lang=de#dashboard/learning){target="_blank"}** - Geführte Journey
 
 ### Weitere hilfreiche Ressourcen
 
