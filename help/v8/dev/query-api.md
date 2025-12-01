@@ -561,7 +561,7 @@ logInfo("Generated SQL: " + sql);
 // Output: "SELECT iRecipientId, sEmail FROM NmsRecipient WHERE sEmail IS NOT NULL"
 ```
 
-Weitere Informationen zu &quot;[ Query](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html){target="_blank"}.
+Weitere Informationen zu &quot;[&#x200B; Query](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html){target="_blank"}.
 
 ### BuildQueryEx - SQL mit Formatzeichenfolge abrufen {#build-query-ex}
 
@@ -755,7 +755,7 @@ for each(var record in xml.collection) {
 
 Beim Arbeiten mit den Methoden queryDef und NLWS:
 
-* **Verwenden von Workflows für große Datensätze** - QueryDef ist nicht für die Verarbeitung umfangreicher Daten konzipiert. Verwenden Sie für Datensätze mit mehr als 1.000 Datensätzen Workflows, die Millionen von Zeilen effizient verarbeiten können. Weitere Informationen finden Sie in der [ zu Campaign SDK ](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
+* **Verwenden von Workflows für große Datensätze** - QueryDef ist nicht für die Verarbeitung umfangreicher Daten konzipiert. Verwenden Sie für Datensätze mit mehr als 1.000 Datensätzen Workflows, die Millionen von Zeilen effizient verarbeiten können. Weitere Informationen finden Sie in der [&#x200B; zu Campaign SDK &#x200B;](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
 * **Parametrisierte Abfragen verwenden** - Gebundene Parameter (`$(sz)`, `$(l)`) immer mit `sqlExec` verwenden, um das Einschleusen von SQL zu verhindern
 * **Explizite Limits festlegen** - Verwenden Sie `lineCount`, um die Ergebnisgröße zu steuern. Die Standardbeschränkungen von Campaign variieren je nach Kontext (200-10.000 Datensätze)
 * **Verwenden von orderBy mit Paginierung** - Verwenden Sie bei der Verwendung von `orderBy` und `startLine` immer eine `lineCount`, um eine konsistente Paginierung sicherzustellen.
