@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 26fededf0ee83299477e45e891df30a46c6d40fe
+source-git-commit: 16c9cc60041f41702b4983383954033b06ba1d99
 workflow-type: tm+mt
 source-wordcount: '816'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -40,10 +40,15 @@ ht-degree: 95%
    + [Wechsel von Campaign Standard zu v8](start/acs-to-v8.md)
    + [Häufig gestellte Fragen](start/campaign-faq-comprehensive.md)
    + [Häufig gestellte Fragen](start/campaign-faq.md)
++ Administration und Berechtigungen {#permissions}
+   + [Erste Schritte mit Berechtigungen](start/gs-permissions.md)
+   + [Verwalten von Benutzerberechtigungen](start/manage-permissions.md)
+   + [Berechtigungen für Ordner hinzufügen](start/folder-permissions.md)
+   + [Control Panel](config/self-service.md)
 + Kampagnen-Management {#campaigns}
    + [Erste Schritte mit Kampagnen](start/campaigns.md)
-   + [Kampagnenorchestrierung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
-+ Senden von Nachrichten{#send}
+   + [Dokumentation zur Kampagnenorchestrierung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
++ Nachrichten senden {#send}
    + [Erste Schritte mit Nachrichten](start/gs-message.md)
    + [Erstellen Ihres ersten Versands](start/create-message.md)
    + [Arbeiten mit Versandvorlagen](send/create-templates.md)
@@ -60,22 +65,20 @@ ht-degree: 95%
       + [Anhängen von Dateien an eine E-Mail](send/attaching-files.md)
    + SMS {#sms}
       + [Erste Schritte mit SMS](send/sms/sms.md)
+      + [Merkmale des SMS-Kanals](send/sms/sms-channel.md)
+      + [Erstellen eines SMS-Versands](send/sms/create-sms.md)
+      + [Definieren des Inhalts](send/sms/sms-content.md)
+      + [Auswählen der Zielgruppe](send/sms/sms-audience.md)
+      + [SMS-Testsendungen durchführen](send/sms/sms-proofs.md)
+      + [An die Zielgruppe senden](send/sms/sms-send.md)
+      + [Überwachen und Verfolgen einer SMS](send/sms/sms-monitor.md)
       + SMS-Kanal konfigurieren {#config-sms}
          + [SMS-Versandeinstellungen](send/sms/sms-delivery-settings.md)
          + [SMPP-Einstellungen für externe Konten](send/sms/smpp-external-account.md)
-         + [Merkmale des SMS-Kanals](send/sms/sms-channel.md)
          + [Validieren einer SMPP-Verbindung](send/sms/smpp-connection.md)
          + [Eigenständige Instanz](send/sms/sms-standalone-instance.md)
          + [Mid-Sourcing-Infrastruktur](send/sms/sms-mid-sourcing.md)
          + [Beschreibung des SMPP-Connectors](send/sms/smpp-connector-delivery.md)
-      + Erstellen einer SMS  {#create-sms}
-         + [Erstellen eines SMS-Versands](send/sms/create-sms.md)
-         + [Definieren des Inhalts](send/sms/sms-content.md)
-         + [Auswählen der Zielgruppe](send/sms/sms-audience.md)
-      + Validieren und Senden von SMS {#validate-sms}
-         + [Senden von SMS-Testsendungen](send/sms/sms-proofs.md)
-         + [Senden an die Zielgruppe](send/sms/sms-send.md)
-      + [Überwachen und Verfolgen einer SMS](send/sms/sms-monitor.md)
    + Push-Benachrichtigungen {#push}
       + [Erstellen und Versenden von Push-Benachrichtigungen](send/push.md)
       + Rich-Push {#rich-push}
@@ -83,10 +86,11 @@ ht-degree: 95%
          + [Erstellen eines Rich-Push-Versands in iOS](send/rich-push-ios.md)
       + [Konfigurieren des Push-Benachrichtigungskanals](send/push-settings.md)
       + [Konfigurieren von Push-Benachrichtigungen mit der Datenerfassung](send/push-data-collection.md)
-   + [LINE-Messaging](send/line/line.md)
-   + [Briefpost](send/direct-mail.md)
-   + [X (Twitter)](send/twitter.md)
-   + [Benutzerdefinierter externer Kanal](send/custom-channel.md)
+   + Sonstige Kanäle {#other-channels}
+      + [LINE-Messaging](send/line/line.md)
+      + [Briefpost](send/direct-mail.md)
+      + [X (Twitter)](send/twitter.md)
+      + [Benutzerdefinierter externer Kanal](send/custom-channel.md)
    + Personalisieren von Inhalten {#personalize}
       + [Erste Schritte mit der Personalisierung](send/personalize.md)
       + [Personalisierungsdaten](send/personalization-data.md)
@@ -117,7 +121,7 @@ ht-degree: 95%
          + [Erfassen und Verarbeiten von Ereignissen](send/event-processing.md)
          + [Funktionsweise der Ereignisbeschreibung](send/event-description.md)
          + [Senden und Überwachen von Nachrichten](send/delivery-execution.md)
-+ Profil- und Zielgruppen-Management {#audience}
++ Profil und Audiences {#audience}
    + [Erste Schritte mit Profilen und Zielgruppen](audiences/gs-audiences.md)
    + [Verwenden von Zielgruppen](start/audiences.md)
    + [Zugriff auf Profile](audiences/view-profiles.md)
@@ -134,21 +138,21 @@ ht-degree: 95%
       + [Zielgruppen mit Adobe-Lösungen freigeben](start/shared-audiences.md)
    + [Best Practices](audiences/audiences-best-practices.md)
    + [Verwalten von Abonnements](start/subscriptions.md)
-+ Content-Management {#content}
++ Landingpages und Web-Inhalte {#content}
    + [Erstellen von Landingpages](dev/landing-pages.md)
    + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
 + Workflows {#workflows}
    + [Erste Schritte mit Workflows](config/workflows.md)
    + [Workflow-Dokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
-+ Datenschutz- und Sicherheits-Management {#privacy}
++ Datenschutz und Sicherheit {#privacy}
    + [Verwalten von Datenschutzanfragen](start/privacy.md)
    + [Sicherheitsrichtlinien](config/security.md)
    + [Add-on für verbesserte Sicherheit](config/enhanced-security.md)
-+ Entscheidungs-Management {#offers}
++ Angebotsverwaltung - Interaction {#offers}
    + [Erste Schritte mit Echtzeit-Interaktionen](interaction/interaction.md)
    + [Umgebungen und Architektur](interaction/interaction-architecture.md)
    + [Best Practices](interaction/interaction-best-practices.md)
-   + Definieren von Einstellungen{#interaction-settings}
+   + Konfigurationseinstellungen {#interaction-settings}
       + [Erstellen von Benutzern](interaction/interaction-operators.md)
       + [Erstellen von Umgebungen](interaction/interaction-env.md)
       + [Erstellen vordefinierter Filter](interaction/interaction-predefined-filters.md)
@@ -203,12 +207,6 @@ ht-degree: 95%
       + [Arbeiten mit Campaign und SFDC](connect/ac-sfdc.md)
       + [Arbeiten mit Campaign und Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [Daten synchronisieren](connect/crm-data-sync.md)
-+ Administration {#admin}
-   + Benutzende und Berechtigungen {#permissions}
-      + [Erste Schritte mit Berechtigungen](start/gs-permissions.md)
-      + [Verwalten von Benutzerberechtigungen](start/manage-permissions.md)
-      + [Berechtigungen für Ordner hinzufügen](start/folder-permissions.md)
-   + [Control Panel](config/self-service.md)
 + Architektur {#architecture}
    + [Allgemeine Prinzipien](architecture/general-architecture.md)
    + [Architekturmodelle](architecture/architecture.md)
@@ -246,7 +244,7 @@ ht-degree: 95%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + [Datenbank mit queryDef abfragen](dev/query-api.md)
    + REST APIs {#apis}
@@ -255,7 +253,7 @@ ht-degree: 95%
       + [Verwendung von REST-APIs](dev/api/why-using-campaign-standard-apis.md)
       + [Einrichten von API-Zugriff](dev/api/setting-up-api-access.md)
       + Globale Konzepte {#global-concepts}
-         + [Wichtige Informationen](dev/api/must-read.md)
+         + [Grundlegende Konzepte](dev/api/must-read.md)
          + [Endpunkte](dev/api/endpoints.md)
          + [Metadatenmechanismus](dev/api/metadata-mechanism.md)
          + [Verben](dev/api/verbs.md)
@@ -275,6 +273,7 @@ ht-degree: 95%
       + Workflows verwalten {#managing-workflows}
          + [Steuern eines Workflows](dev/api/controlling-a-workflow.md)
          + [Auslösen einer Signalaktivität](dev/api/triggering-a-signal-activity.md)
-+ [Technotes zu Campaign >](https://experienceleague.adobe.com/de/docs/campaign/technotes-ac/technotes-home)
-+ [Dokumentation zur Campaign Web-Benutzeroberfläche >](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home)
++ Zusätzliche Ressourcen {#resources}
+   + [Technische Hinweise zu Campaign >](https://experienceleague.adobe.com/de/docs/campaign/technotes-ac/technotes-home)
+   + [Dokumentation zur Web-Benutzeroberfläche von Campaign >](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home)
 
