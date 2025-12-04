@@ -711,7 +711,7 @@ Error while compiling script 'content htmlContent' line X: `[table]` is not defi
 
 **Lösung**: Überprüfen Sie den Workflow und den Versandinhalt, um genau zu bestimmen, welche Personalisierung versucht, die betreffende Tabelle aufzurufen. Entfernen Sie dann entweder den Aufruf dieser Tabelle im HTML oder korrigieren Sie die Zuordnung zum Versand.
 
-Weitere Informationen zur Personalisierung finden [ in diesem Abschnitt ](personalize.md).
+Weitere Informationen zur Personalisierung finden [&#x200B; in diesem Abschnitt &#x200B;](personalize.md).
 
 ### Fehler bei mehreren Personalisierungswerten {#multiple-values-error}
 
