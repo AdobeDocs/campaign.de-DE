@@ -1,14 +1,14 @@
 ---
 title: Erstellen von Abfragen in Campaign v8
-description: Erfahren Sie, wie Sie Abfragen erstellen
+description: Erfahren Sie, wie Sie in der Client-Konsole von Campaign Abfragen erstellen.
 feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: adea4eb54f3d519802119646bc501aae2ef5f831
+source-git-commit: edd495a377559007dad7158c9ab4a4917d89ae73
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 29%
+source-wordcount: '958'
+ht-degree: 28%
 
 ---
 
@@ -77,7 +77,7 @@ Mit dem Abfrage-Editor können Sie Daten filtern, um Ihre Ergebnisse einzugrenze
 
 Nach Auswahl **[!UICONTROL Filterbedingungen]** wird der Abschnitt **[!UICONTROL Target-Elemente]** geöffnet. Hier können Sie die Regeln für das Filtern der zu erfassenden Daten definieren.
 
-* Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die zum Erstellen der Bedingung erforderlich sind. Sie können auch mehrere Bedingungen kombinieren, wie [auf dieser Seite) &#x200B;](filter-conditions.md).
+* Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die zum Erstellen der Bedingung erforderlich sind. Sie können auch mehrere Bedingungen kombinieren, wie [auf dieser Seite) ](filter-conditions.md).
 
 * Um einen vorhandenen Filter wiederzuverwenden, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie **[!UICONTROL Vordefinierter Filter]** und wählen Sie den gewünschten Filter aus.
 

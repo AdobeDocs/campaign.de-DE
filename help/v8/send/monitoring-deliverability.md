@@ -79,7 +79,7 @@ Prüfen Sie regelmäßig, ob das [Bounce](delivery-failures.md#bounce-mail-quali
 
 ### Leistungsprüfungen beim Versand
 
-Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [&#x200B; Versand-Dashboard](delivery-dashboard.md) abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
+Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [ Versand-Dashboard](delivery-dashboard.md) abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
 
 ### Validierung des zeitlichen Verlaufs einer Welle
 

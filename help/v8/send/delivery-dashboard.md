@@ -72,7 +72,7 @@ Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden
 
 Der **[!UICONTROL Versand]**-Tab zeigt die Versandlogs, d. h. die Liste der Zustellversuche, und zeigt für jeden Empfänger den Status des Versands sowie die entsprechenden Nachrichten an.
 
-Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Verschiedene Status werden auf der Seite [Versandstatus“ &#x200B;](delivery-statuses.md).
+Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Verschiedene Status werden auf der Seite [Versandstatus“ ](delivery-statuses.md).
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ Wenn Ihr Versand länger als üblich dauert, nachdem Sie auf die Schaltfläche *
 
 ### Probleme mit der IP-Adresse und der Reputation
 
-Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. Überprüfen Sie Ihre Versandlogs (Broadlogs) auf der Registerkarte **[!UICONTROL Versand]** auf Bounce-Nachrichten, die auf Reputationsprobleme hinweisen. Orientierungshilfen zur Reputationsverwaltung finden [&#x200B; im Abschnitt &#x200B;](monitoring-deliverability.md)Zustellbarkeits-Monitoring“.
+Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. Überprüfen Sie Ihre Versandlogs (Broadlogs) auf der Registerkarte **[!UICONTROL Versand]** auf Bounce-Nachrichten, die auf Reputationsprobleme hinweisen. Orientierungshilfen zur Reputationsverwaltung finden [ im Abschnitt ](monitoring-deliverability.md)Zustellbarkeits-Monitoring“.
 
 ### Versandgröße und -komplexität
 

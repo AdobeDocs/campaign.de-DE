@@ -112,7 +112,7 @@ Wenn der Gültigkeitszeitraum in Campaign beispielsweise auf den Standardwert vo
 
 Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht gesendet werden konnte, wird sie mit einem Timeout beendet, und ihr Status ändert sich von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** (in den Versandlogs).
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## E-Mail-Fehlertypen {#email-error-types}
@@ -711,7 +711,7 @@ Error while compiling script 'content htmlContent' line X: `[table]` is not defi
 
 **Lösung**: Überprüfen Sie den Workflow und den Versandinhalt, um genau zu bestimmen, welche Personalisierung versucht, die betreffende Tabelle aufzurufen. Entfernen Sie dann entweder den Aufruf dieser Tabelle im HTML oder korrigieren Sie die Zuordnung zum Versand.
 
-Weitere Informationen zur Personalisierung finden [&#x200B; in diesem Abschnitt &#x200B;](personalize.md).
+Weitere Informationen zur Personalisierung finden [ in diesem Abschnitt ](personalize.md).
 
 ### Fehler bei mehreren Personalisierungswerten {#multiple-values-error}
 

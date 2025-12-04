@@ -29,7 +29,7 @@ Um die Klassierung zu aktivieren, kreuzen Sie die entsprechende Option bei der E
 
 ![](assets/cube-class.png)
 
-Sie können Klassen entweder manuell erstellen oder sie mit einer vorhandenen [Auflistung“ &#x200B;](../config/enumerations.md).
+Sie können Klassen entweder manuell erstellen oder sie mit einer vorhandenen [Auflistung“ ](../config/enumerations.md).
 
 Adobe Campaign bietet zudem einen Assistenten, um die Klassen automatisch zu erzeugen: Die Werte können in n Klassen verteilt oder nach den am häufigsten in der Datenbank vertretenen Werten gruppiert werden.
 

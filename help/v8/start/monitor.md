@@ -82,13 +82,13 @@ Weitere Informationen zu [Audit-Protokoll](../reporting/audit-trail.md)
 
 Campaign v8 bietet verschiedene Überwachungsfunktionen, um die Leistung Ihrer Instanz zu verfolgen und einen optimalen Betrieb sicherzustellen:
 
-**Datenbanküberwachung** - Überwachen Sie die Datenbanknutzung und -kapazität über das Control Panel, um eine optimale Leistung und Speicherverwaltung sicherzustellen. [Erfahren Sie mehr über die Datenbanküberwachung](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html?lang=de){target="_blank"}
+**Datenbanküberwachung** - Überwachen Sie die Datenbanknutzung und -kapazität über das Control Panel, um eine optimale Leistung und Speicherverwaltung sicherzustellen. [Erfahren Sie mehr über die Datenbanküberwachung](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html){target="_blank"}
 
 **Überwachen aktiver Profile** - Verfolgen Sie die aktive Profilnutzung anhand Ihrer vertraglichen Beschränkungen, um die Compliance aufrechtzuerhalten und die Ressourcenzuweisung zu optimieren. [Erfahren Sie mehr über aktive Profile](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de){target="_blank"}
 
 **Workflow-Überwachung** - Überwachen Sie den Ausführungsstatus des Workflows, um langwierige Workflows zu identifizieren und sicherzustellen, dass alle technischen Workflows ordnungsgemäß ausgeführt werden. [Erfahren Sie mehr über technische Workflows](#technical-workflows)
 
-**Versanddurchsatz und Latenz** - Verfolgen Sie den Versanddurchsatz (Nachrichten pro Stunde) und die Latenz für die Transaktionskommunikation über das Control Panel. [Erfahren Sie mehr über die Überwachung des Durchsatzes](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html?lang=de){target="_blank"}
+**Versanddurchsatz und Latenz** - Verfolgen Sie den Versanddurchsatz (Nachrichten pro Stunde) und die Latenz für die Transaktionskommunikation über das Control Panel. [Erfahren Sie mehr über die Überwachung des Durchsatzes](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html){target="_blank"}
 
 >[!NOTE]
 >
