@@ -3,10 +3,8 @@ title: Wechsel zum neuen SMS-Connector v2
 description: Erfahren Sie, wie Sie zum neuen SMS-Connector v2 wechseln.
 feature: Technote
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: 61a5a3e8-59f8-47ea-afc9-66ec243b8265
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: ed9e784c1610a6f042b99223ac0d4cc0cf312b09
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -23,7 +21,7 @@ Der dedizierte SMS-Prozess führt die Unterstützung für den SMPP-Transceiver-M
 
 ## Differences v1- und v2-Connectoren
 
-Der dedizierte SMS-Connector in Adobe Campaign v8 führt mehrere Änderungen an der Architektur im Vergleich zum MTA-basierten Connector ein. Ein wichtiger Unterschied ist die standardmäßige Verwendung des SMPP-Transceiver-Modus, der die Anzahl der Verbindungen durch die Kombination von Sende- und Empfangsfunktionen reduziert. Wenn der Provider diesen Modus nicht unterstützt, können dennoch separate Sender- und Empfängerverbindungen verwendet werden. Im Gegensatz zum MTA-Connector hat die Aktivierung automatischer Antworten keine Auswirkungen auf die Anzahl der Verbindungen, und alle Empfängerverbindungen können jede Art eingehender Nachrichten verarbeiten.
+Der dedizierte SMS-Connector in Adobe Campaign v8 führt mehrere Änderungen an der Architektur im Vergleich zum MTA-basierten Connector ein. Ein wichtiger Unterschied ist die standardmäßige Verwendung des SMPP-Transceiver-Modus, der die Anzahl der Verbindungen durch die Kombination von Sende- und Empfangsfunktionen reduziert. Wenn der Anbieter diesen Modus nicht unterstützt, können dennoch separate Sender- und Empfängerverbindungen verwendet werden. Im Gegensatz zum MTA-Connector hat die Aktivierung automatischer Antworten keine Auswirkungen auf die Anzahl der Verbindungen, und alle Empfängerverbindungen können jede Art eingehender Nachrichten verarbeiten.
 
 Die Anzahl der Verbindungen wird jetzt mithilfe einer anderen Formel berechnet:
 
