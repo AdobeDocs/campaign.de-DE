@@ -94,7 +94,7 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 
   Der Grenzwert gleichzeitiger Kampagnen wird in der Option **[!UICONTROL NmsOperation_LimitConcurrency]** definiert. Der Standardwert ist 10.
 
-  Als Managed Cloud Services-Anwender können Sie mit Adobe zusammenarbeiten, um dieses Limit bei Bedarf anzupassen. Weitere Informationen zu Optionen finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}.
+  Als Managed Cloud Services-Anwender können Sie mit Adobe zusammenarbeiten, um dieses Limit bei Bedarf anzupassen. Weitere Informationen zu Optionen finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=de){target="_blank"}.
 
 * **Probleme mit der Ressourcenverfügbarkeit**
 
