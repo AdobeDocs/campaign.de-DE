@@ -3,11 +3,11 @@ product: campaign
 title: Einrichten eines wiederkehrenden Imports
 description: Erfahren Sie, wie Sie eine Workflow-Vorlage für wiederkehrende Importe konfigurieren
 feature: Workflows, Data Management
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 13f0091b-b62c-47df-9658-6631ba1cf03a
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 100%
 

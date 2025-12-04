@@ -4,13 +4,13 @@ description: Empfehlungen und Einschränkungen bei der Migration auf Campaign v8
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 mini-toc-levels: 1
 exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1052'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Einige Felder aus der Datenbank werden während der Migration gelöscht. Bei Ver
 
 ## POST mit verknüpften Ressourcen
 
-Bei Verwendung des folgenden Anfragetext-Formats, wobei „VehicleOwner“ den Link zu „nms:recipient“ darstellt:
+Bei Verwendung des folgenden Anfragetext-Formats, wobei „vehierOwner“ den Link zu „nms“ :recipient:
 
 ```
 {

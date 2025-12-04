@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit dem Social-Media-Marketing-Modul von Adob
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 100%
+source-wordcount: '855'
+ht-degree: 99%
 
 ---
 
@@ -158,5 +158,5 @@ In der integrierten Versandvorlage **[!UICONTROL Tweet]** ist Tracking standardm
 
 Tracking kann in den Versandberichten und in der Registerkarte **[!UICONTROL Bearbeiten > Tracking]** des Versands und des Services eingesehen werden.
 
-Die Tracking-Konfiguration ist dieselbe wie bei einem E-Mail-Versand. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=de){target="_blank"}.
+Die Tracking-Konfiguration ist dieselbe wie bei einem E-Mail-Versand. Weitere Informationen über [Tracking](tracking.md).
 

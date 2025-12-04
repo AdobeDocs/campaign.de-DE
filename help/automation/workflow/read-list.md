@@ -3,11 +3,11 @@ product: campaign
 title: Liste lesen
 description: Erfahren Sie mehr über die Workflow-Aktivität "Liste lesen".
 feature: Workflows, Targeting Activity
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 91c87f8f-bdd2-4ca1-94c2-ec9e7affc1a0
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Listen können direkt in der Adobe Campaign-Startseite über die Schaltfläche *
 
 **Anwendungsbeispiel: Ausschluss einer Adressenliste von einem Versand**
 
-Im folgenden Beispiel soll eine Datei mit Adressen importiert werden, die gundsätzlich vom E-Mail-Versand auszuschließen sind (beispielsweise, weil die Empfänger nicht mehr existieren).
+Im folgenden Beispiel soll eine Datei mit Adressen importiert werden, die grundsätzlich vom E-Mail-Versand auszuschließen sind (beispielsweise, weil die Empfänger nicht mehr existieren).
 
 ![](assets/s_advuser_list_read_sample_1.png)
 

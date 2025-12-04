@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
-source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 97%
@@ -80,4 +80,4 @@ Für einen typischen integrierten Empfänger können Sie auf die folgenden Tabs 
 
 * **Tracking**: für alle Tracking-Logs für das ausgewählte Profil. Diese Informationen werden verwendet, um das Verhalten von Profilen im Anschluss an Sendungen zu verfolgen. Dieser Tab zeigt alle in Sendungen getrackten URLs an. In der Regel enthält die anpassbare Liste folgende Daten: die geklickte URL, Datum und Uhrzeit des Klicks, das Dokument, in dem die URL enthalten war
 
-  Weitere Informationen zum Tracking finden Sie in [diesem Abschnitt](../start/tracking.md).
+  Weitere Informationen zum Tracking finden Sie in [diesem Abschnitt](../send/tracking.md).

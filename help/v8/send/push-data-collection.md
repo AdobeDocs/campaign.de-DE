@@ -2,14 +2,14 @@
 title: Versenden von Push-Benachrichtigungen mit Adobe Campaign
 description: Erste Schritte mit Push-Benachrichtigungen in Campaign
 feature: Push
-role: Data Engineer
+role: Developer
 level: Intermediate
 badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 97%
+source-wordcount: '1481'
+ht-degree: 94%
 
 ---
 
@@ -55,37 +55,43 @@ Die Registrierung der Push-Anmeldedaten für Apps ist erforderlich, damit Adobe 
 
 1. Wählen Sie unter **[!UICONTROL App-Konfiguration]** das Betriebssystem:
 
-   * **Für iOS**
+>[!BEGINTABS]
 
-     ![](assets/push-config-2.png)
+>[!TAB iOS]
 
-      1. Geben Sie die **Paket-ID** der App in das Feld **[!UICONTROL App ID (iOS Bundle ID)]** ein.
+![](assets/push-config-2.png)
 
-         Die Paket-ID der App finden Sie auf der Registerkarte **Allgemein** des primären Ziels in **XCode** Ihres Apple-Entwicklerkontos.
+1. Geben Sie die **Paket-ID** der App in das Feld **[!UICONTROL App ID (iOS Bundle ID)]** ein.
 
-      1. Schalten Sie **[!UICONTROL Push-Anmeldedaten]** ein, um Ihre Anmeldedaten hinzuzufügen.
+   Die Paket-ID der App finden Sie auf der Registerkarte **Allgemein** des primären Ziels in **XCode** Ihres Apple-Entwicklerkontos.
 
-      1. Ziehen Sie die .p8-Datei mit dem Apple-Authentifizierungsschlüssel für Push-Benachrichtigungen per Drag-und-Drop in den Arbeitsbereich.
+1. Schalten Sie **[!UICONTROL Push-Anmeldedaten]** ein, um Ihre Anmeldedaten hinzuzufügen.
 
-         Dieser Schlüssel kann über die Seite **Zertifikate**, **Kennungen** und **Profile** Ihres Apple-Entwicklerkontos erworben werden.
+1. Ziehen Sie die .p8-Datei mit dem Apple-Authentifizierungsschlüssel für Push-Benachrichtigungen per Drag-und-Drop in den Arbeitsbereich.
 
-      1. Stellen Sie die **Schlüssel-ID** bereit. Dies ist eine 10-stellige Zeichenfolge, die bei der Erstellung des p8-Authentifizierungsschlüssels zugewiesen wurde.
+   Dieser Schlüssel kann über die Seite **Zertifikate**, **Kennungen** und **Profile** Ihres Apple-Entwicklerkontos erworben werden.
 
-         Sie finden diese auf der Registerkarte **Schlüssel** auf der Seite **Zertifikate**, **Kennungen** und **Profile** Ihres Apple-Entwicklerkontos.
+1. Stellen Sie die **Schlüssel-ID** bereit. Dies ist eine 10-stellige Zeichenfolge, die bei der Erstellung des p8-Authentifizierungsschlüssels zugewiesen wurde.
 
-      1. Stellen Sie die **Team-ID** bereit. Dies ist ein Zeichenfolgenwert, der auf der Registerkarte **Mitgliedschaft** zu finden ist.
-
-   * **Für Android**
-
-     ![](assets/push-config-3.png)
-
-      1. Stellen Sie die **[!UICONTROL App-ID (Android-Paketname)]** bereit. Normalerweise ist der Paketname die App-ID in Ihrer `build.gradle`-Datei.
-
-      1. Wechseln Sie zu **[!UICONTROL Push-Anmeldedaten]**, um Ihre Anmeldedaten hinzuzufügen.
-
-      1. Ziehen Sie die FCM-Push-Anmeldedaten per Drag-und-Drop in den Arbeitsbereich. Weitere Informationen zum Abrufen der Push-Anmeldeinformationen finden Sie in der [Dokumentation zu Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+       Sie finden sie auf der Registerkarte **Schlüssel** auf der Seite **Zertifikate**, **Kennungen** und **Profile** Ihres Apple-Entwicklerkontos.
+   
+1. Stellen Sie die **Team-ID** bereit. Dies ist ein Zeichenfolgenwert, der auf der Registerkarte **Mitgliedschaft** zu finden ist.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um Ihre App-Konfiguration zu erstellen.
+
+>[!TAB Android]
+
+![](assets/push-config-3.png)
+
+1. Stellen Sie die **[!UICONTROL App-ID (Android-Paketname)]** bereit. Normalerweise ist der Paketname die App-ID in Ihrer `build.gradle`-Datei.
+
+1. Wechseln Sie zu **[!UICONTROL Push-Anmeldedaten]**, um Ihre Anmeldedaten hinzuzufügen.
+
+1. Ziehen Sie die FCM-Push-Anmeldedaten per Drag-und-Drop in den Arbeitsbereich. Weitere Informationen zum Abrufen der Push-Anmeldeinformationen finden Sie in der [Dokumentation zu Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um Ihre App-Konfiguration zu erstellen.
+
+>[!ENDTABS]
 
 ## Konfigurieren der Anwendungseinstellungen in Adobe Campaign{#push-config-campaign}
 
@@ -105,7 +111,7 @@ Gehen Sie wie folgt vor, um einen Dienst zum Senden von Push-Benachrichtigungen 
 
    >[!NOTE]
    >
-   >Das standardmäßige Zielgruppen-Mapping von **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weitere Informationen über Zielgruppen-Mapping finden Sie auf [dieser Seite](../audiences/target-mappings.md).
+   >Das standardmäßige Zielgruppen-Mapping für **[!UICONTROL abonnierte Anwendungen (nms:appSubscriptionRcp)]** ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weitere Informationen über Zielgruppen-Mapping finden Sie auf [dieser Seite](../audiences/target-mappings.md).
 
 1. Klicken Sie dann auf das Symbol **[!UICONTROL Hinzufügen]** oben rechts, um die Mobile Apps zu definieren, die diesen Dienst verwenden.
 
@@ -135,7 +141,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
    ![](assets/push-config-8.png)
 
-1. Auf der Registerkarte **[!UICONTROL Abonnementparameter]** können Sie das Mapping mit einer Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** definieren.
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Abonnementparameter]**, um die Zuordnung mit einer Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** definieren.
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Töne]**, um einen Ton festzulegen, der wiedergegeben werden soll. Klicken Sie auf **[!UICONTROL Hinzufügen]** und füllen Sie das Feld **[!UICONTROL Interner Name]** aus, das den Namen der in die Anwendung eingebetteten Datei oder den Namen des Systemtons enthalten muss.
 
@@ -145,7 +151,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
    Stellen Sie sicher, dass in Adobe Campaign und im Appcode über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
-   Weitere Informationen finden Sie in [Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
 
 
    >[!NOTE]
@@ -180,7 +186,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 
    Stellen Sie sicher, dass in Adobe Campaign und im Appcode über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
 
-   Weitere Informationen finden Sie in [Entwicklerdokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
 
    >[!NOTE]
    >
@@ -192,7 +198,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 
 1. Bei Bedarf können Sie die Inhalte von Push-Nachrichten mit bestimmten **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar und Teil der an das mobile Gerät gesendeten Nachrichten-Payload.
 
-1. Auf der Registerkarte **[!UICONTROL Abonnementparameter]** können Sie das Mapping mit einer Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** definieren.
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Abonnementparameter]**, um die Zuordnung mit einer Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** definieren.
 
 1. Klicken Sie auf **[!UICONTROL Beenden]** und danach auf **[!UICONTROL Speichern]**.
 

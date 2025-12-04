@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Campaign-Datenmodell
 description: Beginnen Sie mit dem Campaign-Datenmodell und nutzen Sie Daten aus Ihren Quellen, um Ihre Kommunikations- und Marketing-Ergebnisse zu nutzen.
 feature: Data Model
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 98%

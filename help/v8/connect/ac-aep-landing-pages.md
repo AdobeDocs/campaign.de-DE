@@ -2,11 +2,11 @@
 title: Aktualisieren von Adobe Experience Platform-Profilen über Adobe Campaign-Landingpages
 description: Erfahren Sie, wie Sie Adobe Campaign-Landingpages und Adobe Experience Platform-Profilattribute synchronisieren.
 feature: Experience Platform Integration
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: 02d7909c409bd25cfa3cc7aad189247ce7b5176e
-workflow-type: ht
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 100%
 
@@ -134,7 +134,7 @@ Um die Datensynchronisation zwischen Landingpages und Adobe Experience Platform 
 
    ![](assets/ac-lp-script.png){width="70%"}
 
-+++  Skript 1: Laden von Profilattributen von Experience Platform
+   +++  Skript 1: Laden von Profilattributen von Experience Platform
 
    Dieser Code prüft, ob das Profil in Adobe Experience Platform vorhanden ist, bevor die Landingpage geladen wird. Er ruft die Profilattribute ab und zeigt sie in den entsprechenden Feldern der Landingpage an.
 
@@ -155,9 +155,9 @@ Um die Datensynchronisation zwischen Landingpages und Adobe Experience Platform 
    }
    ```
 
-+++
+   +++
 
-+++ Skript 2: Aktualisieren der Profilattribute von Experience Platform
+   +++ Skript 2: Aktualisieren der Profilattribute von Experience Platform
 
    Dieser Code aktualisiert die Profilattribute in Adobe Experience Platform mit den auf der Landingpage übermittelten Werten.
 
@@ -203,7 +203,7 @@ Um die Datensynchronisation zwischen Landingpages und Adobe Experience Platform 
    }
    ```
 
-+++
+   +++
 
 Nachdem nun die benutzerdefinierten JavaScript-Codes in Adobe Campaign erstellt worden sind, können Sie den Workflow mit Ihrer Landingpage so konfigurieren, dass diese JavaScript-Codes für die Datensynchronisation verwendet werden.
 
@@ -213,7 +213,7 @@ Mit den zu Adobe Campaign hinzugefügten JavaScript-Codes können Sie diese mit 
 
 * Um Daten von Experience Platform zu laden, bevor die Landingpage geladen wird, fügen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität vor der Landingpage-Aktivität hinzu und fügen Sie Skript 1 ein.
 
-+++ Skript 1: Laden von Profilattributen von Experience Platform
+  +++ Skript 1: Laden von Profilattributen von Experience Platform
 
   ```javascript
   // Script code to read profile from AEP.
@@ -249,11 +249,11 @@ Mit den zu Adobe Campaign hinzugefügten JavaScript-Codes können Sie diese mit 
   }
   ```
 
-+++
+  +++
 
 * Um die Experience Platform-Profilattribute mit den auf der Landingpage eingegebenen Daten zu aktualisieren, fügen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität nach der Landingpage-Aktivität hinzu und fügen Sie Skript 2 ein.
 
-+++ Skript 2: Aktualisieren der Profilattribute von Experience Platform
+  +++ Skript 2: Aktualisieren der Profilattribute von Experience Platform
 
   ```javascript
   // Script code to update profile in AEP and ACC.
@@ -323,7 +323,7 @@ Mit den zu Adobe Campaign hinzugefügten JavaScript-Codes können Sie diese mit 
   }
   ```
 
-+++
+  +++
 
 >[!CAUTION]
 >

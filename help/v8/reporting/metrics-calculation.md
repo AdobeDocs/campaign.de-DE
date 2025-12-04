@@ -2,12 +2,12 @@
 title: Berechnung integrierter Berichtsmetriken
 description: Berechnung integrierter Berichtsmetriken
 feature: Reporting
-role: Data Engineer
+role: Developer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '3097'
-ht-degree: 100%
+source-wordcount: '3074'
+ht-degree: 92%
 
 ---
 
@@ -46,13 +46,13 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-Der Nutzer-Aktivitäten-Bericht basiert auf der Tabelle **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats). Diese Aggregat-Tabelle wird bei der Berichtanzeige aus Performance-Gründen anstelle der Tabelle **[!UICONTROL Trackinglogs der Empfänger]** (nms:trackingLogRcp) verwendet. Sie wird nicht in Echtzeit berechnet, sondern wenige Minuten nach Abruf der Trackinglogs erzeugt. Wenn die Indikatoren aktuell sind, sind die Ergebnisse mit denen der Indikatoren im Bericht **Trackingindikatoren** identisch. Die Kennzahl @totalclicks entspricht der Summe der Klicks über einen Zeitraum von 5 Minuten.
+Dieser Bericht basiert auf der **[!UICONTROL Konsolidierte]** (nms:trackingStats). Diese aggregierte Tabelle wird aus Leistungsgründen verwendet, wenn Berichte anstelle der Tabelle **[!UICONTROL Empfänger-Trackinglogs]** (nms) angezeigt werden:trackingLogRcp und wird nicht in Echtzeit berechnet. Sie wird nicht in Echtzeit berechnet, sondern wenige Minuten nach Abruf der Trackinglogs erzeugt. Wenn die Indikatoren aktuell sind, sind die Ergebnisse mit denen der Indikatoren im Bericht **Trackingindikatoren** identisch. Die Kennzahl @totalclicks entspricht der Summe der Klicks über einen Zeitraum von 5 Minuten.
 
 ## Unzustellbare Nachrichten und Bounces {#non-deliverables-and-bounces-1}
 
-**Verteilung nach Fehlertyp**
+**Aufschlüsselung nach Fehlertyp**
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatistiken]** (nms:deliveryLogStats).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Tracking]** (nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -119,7 +119,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatis
    <td> percent(@value,@totalErrors)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Verteilung<br /> </td> 
+   <td> Aufschlüsselung<br /> </td> 
    <td> -<br /> </td> 
    <td> Prozentualer Anteil der fehlerhaften Nachrichten diesen Typs in Bezug auf die Gesamtzahl der zu verarbeiteten Nachrichten.<br /> </td> 
    <td> percent(@value,@totalProcessed)<br /> </td> 
@@ -127,13 +127,13 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatis
  </tbody> 
 </table>
 
-**Verteilung nach Domain**
+**Aufschlüsselung nach Domain**
 
-Der zweite Teil des Berichts zeigt die Verteilung der fehlgeschlagenen Nachrichten, und zwar nicht nach Fehlertyp, sondern nach Domain. Die Formel für die Kennzahl **Fehler** (@value) lautet in diesem Fall: Count(@status=2 und @domain=&quot;Wert des Domain-Namens&quot;), also eine Zählung aller Nachrichten mit Status &quot;Fehlgeschlagen&quot; für diese Domain.
+Der zweite Teil des Berichts zeigt die Aufschlüsselung der fehlgeschlagenen Nachrichten, und zwar nicht nach Fehlertyp, sondern nach Domain. Die Formel für die Kennzahl **Fehler** (@value) lautet in diesem Fall: Count(@status=2 und @domain=&quot;Wert des Domain-Namens&quot;), also eine Zählung aller Nachrichten mit Status &quot;Fehlgeschlagen&quot; für diese Domain.
 
 ## Browser {#browsers-1}
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Browser-Statistiken]** (nms:userAgentsStats).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Internetbrowser-]** (nms:userAgentsStats).
 
 **Allgemeine Statistiken**
 
@@ -203,7 +203,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Browser-Statistiken]** (nms
 
 ## Teilen über soziale Netzwerke {#sharing-to-social-networks-1}
 
-Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand]** (nms:delivery), **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats) und **[!UICONTROL Webtracking]** (nms:webTrackingLog).
+Dieser Bericht basiert auf den **[!UICONTROL Versand]** (nms:delivery), **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats) und **[!UICONTROL Webtracking]** (nms:webTrackingLog).
 
 <table> 
  <thead> 
@@ -291,7 +291,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand]** (nms:delivery),
    <td> Sum(iIf([url/@category]="Wert des sozialen Netzwerk-Typs",@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Verteilung<br /> </td> 
+   <td> Aufschlüsselung<br /> </td> 
    <td> @percent<br /> </td> 
    <td> Prozentualer Anteil der Teilungen in diesem Netzwerk in Bezug auf die Gesamt-Teilungszahl.<br /> </td> 
    <td> percent(@forward, sum(@forward))<br /> </td> 
@@ -324,7 +324,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand]** (nms:delivery),
    <td> Count<br /> </td> 
   </tr> 
   <tr> 
-   <td> Verteilung<br /> </td> 
+   <td> Aufschlüsselung<br /> </td> 
    <td> @percentOpen<br /> </td> 
    <td> Prozentualer Anteil der Öffnungen in diesem sozialen Netzwerk in Bezug auf die Gesamt-Öffnungszahl.<br /> </td> 
    <td> percent(@open, sum(@open))<br /> </td> 
@@ -340,7 +340,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand]** (nms:delivery),
 
 ## Statistiken zu Teilungsaktivitäten {#statistics-on-sharing-activities-1}
 
-Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand]** (nms:delivery), **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats) und **[!UICONTROL Webtracking]** (nms:webTrackingLog).
+Dieser Bericht basiert auf den **[!UICONTROL Versand]** (nms:delivery), **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats) und **[!UICONTROL Webtracking]** (nms:webTrackingLog).
 
 <table> 
  <thead> 
@@ -375,7 +375,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand]** (nms:delivery),
 
 ## Betriebssysteme {#operating-systems-1}
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Browser-Statistiken]** (nms:userAgentsStats).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Internetbrowser-]** (nms:userAgentsStats).
 
 **Allgemeine Statistiken**
 
@@ -404,7 +404,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Browser-Statistiken]** (nms
   <tr> 
    <td> Nutzungsrate<br /> </td> 
    <td> -<br /> </td> 
-   <td> Verteilung der Besucher nach Betriebssystem in Bezug auf die Gesamt-Besucherzahl.<br /> </td> 
+   <td> Aufschlüsselung der Besucher nach Betriebssystem in Bezug auf die Gesamt-Besucherzahl.<br /> </td> 
    <td> percent(@totalVisitors, sum(@totalVisitors))<br /> </td> 
   </tr> 
  </tbody> 
@@ -445,7 +445,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Browser-Statistiken]** (nms
 
 ## Abonnement-Verfolgung {#subscription-tracking-1}
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Dienste]** (nms:service).
+Dieser Bericht basiert auf der **[!UICONTROL Services]**-Tabelle (nms:service).
 
 <table> 
  <thead> 
@@ -492,7 +492,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Dienste]** (nms:service).
 
 ## Tracking-Indikatoren {#tracking-indicators-1}
 
-Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstatistiken]** (nms:deliveryLogStats) und **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats).
+Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Tracking]** (nms:deliveryLogStats) und **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats).
 
 <table> 
  <thead> 
@@ -689,7 +689,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
 
 ## URLs und Clickstreams {#urls-and-click-streams-1}
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
+Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
 
 <table> 
  <thead> 
@@ -736,7 +736,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
 
 ## Versandzusammenfassung {#delivery-summary-1}
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
+Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
 
 <table> 
  <thead> 
@@ -789,13 +789,13 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
 
 ## Klicks {#hot-clicks-1}
 
-Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand]** (nms:delivery) und Konsolidiertes Tracking (nms:trackingStats).
+Dieser Bericht basiert auf den Tabellen Versand (nms:delivery) und **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats).
 
 Er zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentualen Klickanteil für jeden Link. Links in Gestaltungsbausteinen, der Abmelde-Link sowie der Mirrorseite-Link werden in der Gesamtklickzahl berücksichtigt, in diesem Bericht jedoch nicht angezeigt.
 
 ## Tracking-Statistiken {#tracking-statistics-1}
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
+Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
 
 <table> 
  <thead> 
@@ -830,7 +830,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
 
 ## Versandstatistiken {#delivery-statistics-1}
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatistiken]** (nms:deliveryLogStats).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Tracking]** (nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -887,9 +887,9 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatis
  </tbody> 
 </table>
 
-## Öffnungsverteilung {#breakdown-of-opens-1}
+## Aufschlüsselung der Öffnungen {#breakdown-of-opens-1}
 
-Dieser Bericht basiert auf den **Versand-** und **Trackinglog-** Tabellen (nms:delivery bzw. nms:trackingLogRcp).
+Dieser Bericht basiert auf den **Sendungen** (nms:delivery) und **Trackinglogs** (nms:trackingLogRcp).
 
 <table> 
  <thead> 
@@ -912,7 +912,7 @@ Dieser Bericht basiert auf den **Versand-** und **Trackinglog-** Tabellen (nms:d
 
 ## Andere Indikatoren {#other-indicators}
 
-Der über den Knoten **Sendungen (nms:delivery) > Indikatoren** zugängliche Indikator **Gesendet** (@sent) entspricht der Gesamtanzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird ausschliesslich für SMS-Sendungen verwendet und darf nicht für andere Versandtypen genutzt werden. Er ist nicht zu verwechseln mit den Indikatoren **@success** und **@processed**.
+Der **Gesendet**-Indikator (@sent), auf den über den Knoten **Sendungen (nms:delivery) > Indikatoren zugegriffen**, entspricht der Gesamtzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird ausschliesslich für SMS-Sendungen verwendet und darf nicht für andere Versandtypen genutzt werden. Er ist nicht zu verwechseln mit den Indikatoren **@success** und **@processed**.
 
 ## Indikatoren synchronisieren {#indicator-synchronization}
 

@@ -3,13 +3,13 @@ product: campaign
 title: Abfrage der Empfängertabelle
 description: Erfahren Sie, wie Sie die Empfängertabelle abfragen
 feature: Query Editor
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 7f859ce9-7ab8-46e1-8bd6-43aaffe30da2
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '452'
-ht-degree: 100%
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ In diesem Beispiel werden die Namen und E-Mail-Adressen der Empfänger gesucht, 
 
 Gehen Sie wie folgt vor:
 
-1. Klicken Sie auf **[!UICONTROL Werkzeuge > Generisches Abfragetool...]** und wählen Sie die Tabelle **Empfängerinnen und Empfänger** (**nms:recipient**). Klicken Sie nun auf **[!UICONTROL Weiter]**.
+1. Klicken Sie **[!UICONTROL Tools > Generischer Abfrage-Editor…]** und wählen Sie die **Empfänger**-Tabelle (**nms:recipient**) aus. Klicken Sie nun auf **[!UICONTROL Weiter]**.
 1. Wählen Sie: **[!UICONTROL Nachname]**, **[!UICONTROL Vorname]**, **[!UICONTROL E-Mail]**, **[!UICONTROL Ort]** und **[!UICONTROL Kundennummer]**. Diese Felder werden zu **[!UICONTROL Ausgabespalten]**. Klicken Sie nun auf **[!UICONTROL Weiter]**.
 
    ![](assets/query_editor_03.png)

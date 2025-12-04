@@ -3,11 +3,11 @@ product: campaign
 title: Wiederkehrender Versand
 description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Versand".
 feature: Workflows
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ Ein **[!UICONTROL wiederkehrender Versand]** dient der Konfiguration einer Versa
 
 ![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#recurring-delivery-video).
 
-Diese Aktivität ist nur im Tab **[!UICONTROL Zielbestimmungen und Workflows]** von Kampagnen verfügbar.
+Diese Aktivität ist nur im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** von Kampagnen verfügbar.
 
 Gehen Sie dazu wie folgt vor:
 
@@ -53,6 +53,6 @@ Wenn Sie die Ausführung eines wiederkehrenden Versands stoppen möchten, sollte
 
 In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/30201?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.

@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
-source-git-commit: 5c5d19c9b9b413bb630a4e5738c6697d2341665a
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 97%
@@ -70,7 +70,7 @@ Das Feld *data_coding* gibt an, welche Codierung verwendet wird. Ein Hauptproble
 Die maximale Größe einer Nachricht hängt von ihrer Kodierung ab. In dieser Tabelle sind alle relevanten Informationen zusammengefasst:
 
 | Kodierung | Übliche Datenkodierung (data_coding) | Nachrichtengröße (Zeichen) | Größe der Teile für mehrteilige SMS | Verfügbare Zeichen |
-|:-:|:-:|:-:|:-:|:-:|  
+|:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | GSM7-Standardzeichensatz + Erweiterung (erweiterte Zeichen benötigen 2 Zeichen) |
 | Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 UTF-16 | 8 | 70 | 67 | Unicode (variiert von Telefon zu Telefon) |

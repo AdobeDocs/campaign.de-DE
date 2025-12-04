@@ -2,13 +2,14 @@
 title: Quarantäneverwaltung in Campaign
 description: Quarantäneverwaltung in Adobe Campaign
 feature: Profiles, Monitoring
-role: User, Data Engineer
+role: User, Developer
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: cb4cbc9ba14e953d2b3109e87eece4f310bfe838
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 92%
+source-wordcount: '1380'
+ht-degree: 73%
 
 ---
 
@@ -28,11 +29,11 @@ Wenn die Adresse oder Telefonnummer von Empfängern in Quarantäne ist, werden d
 >
 >Wenn Empfängerinnen oder Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Schlüsselwort wie „STOP“ antworten, wird ihre Adresse oder Telefonnummer als **[!UICONTROL Auf die Blockierungsliste gesetzt]** unter Quarantäne gestellt. Die jeweiligen Profile werden entsprechend aktualisiert.
 
-Auf die Blockierungsliste setzen Profile können sich jedoch auch **{**} auf der **&#x200B;**-Seite befinden, wie etwa nach einer Abmeldung (Opt-out) für einen bestimmten Kanal: Dies bedeutet, dass sie nicht mehr in den Versand eingeschlossen sind. Hat ein Profil auf der Blockierungsliste für den E-Mail-Kanal zwei E-Mail-Adressen, werden folglich beide Adressen vom Versand ausgeschlossen. Im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** der Registerkarte **[!UICONTROL Allgemein]** des Profils können Sie überprüfen, ob sich ein Profil auf der Blockierungsliste für einen oder mehrere Kanäle befindet. [Weitere Informationen](../audiences/view-profiles.md)
+Auf die Blockierungsliste setzen Profile können sich jedoch auch **{**} auf der ****-Seite befinden, wie etwa nach einer Abmeldung (Opt-out) für einen bestimmten Kanal: Dies bedeutet, dass sie nicht mehr in den Versand eingeschlossen sind. Hat ein Profil auf der Blockierungsliste für den E-Mail-Kanal zwei E-Mail-Adressen, werden folglich beide Adressen vom Versand ausgeschlossen. Im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** der Registerkarte **[!UICONTROL Allgemein]** des Profils können Sie überprüfen, ob sich ein Profil auf der Blockierungsliste für einen oder mehrere Kanäle befindet. [Weitere Informationen](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->Abgemeldete Empfänger über die [&#x200B; „mailto“ List-Unsubscribe-Methode &#x200B;](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} nicht unter Quarantäne gestellt. Sie haben das Abonnement für den [Service](../start/subscriptions.md), der mit dem Versand verknüpft ist, oder werden an die Blockierungsliste gesendet (sichtbar im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** des Profils), wenn für den Versand kein Service definiert wurde.
+>Abgemeldete Empfänger über die [ „mailto“ List-Unsubscribe-Methode ](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} nicht unter Quarantäne gestellt. Sie haben das Abonnement für den [Service](../start/subscriptions.md), der mit dem Versand verknüpft ist, oder werden an die Blockierungsliste gesendet (sichtbar im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** des Profils), wenn für den Versand kein Service definiert wurde.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -45,7 +46,7 @@ Es können zwei Typen von Fehlern erfasst werden:
 * **Hardbounce**: Die E-Mail-Adresse, die Telefonnummer oder das Gerät wird sofort unter Quarantäne gestellt.
 * **Softbounce**: Softbounces erhöhen den Fehlerzähler und können E-Mail-Adressen, Telefonnummern oder Geräte-Token unter Quarantäne stellen. Campaign unternimmt [weitere Zustellversuche](delivery-failures.md#retries): Wenn der Fehlerzähler den Grenzwert erreicht, wird die E-Mail-Adresse, die Telefonnummer oder das Geräte-Token unter Quarantäne gestellt. [Weitere Informationen](delivery-failures.md#retries).
 
-Bei Adressen in Quarantäne zeigt das Feld **[!UICONTROL Fehlerursache]** an, was die Quarantäne ausgelöst hat. [Weitere Informationen](#identifying-quarantined-addresses-for-the-entire-platform).
+Bei Adressen in Quarantäne zeigt das Feld **[!UICONTROL Fehlerursache]** an, was die Quarantäne ausgelöst hat. [Weitere Informationen](#non-deliverable-bounces).
 
 
 Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, wird die Nachricht automatisch an ein von Adobe verwaltetes technisches Postfach weitergeleitet. Die E-Mail-Adresse des Benutzers wird dann automatisch unter Quarantäne gestellt und der Status in **[!UICONTROL Auf Blockierungsliste]** geändert. Der Status bezieht sich ausschließlich auf die Adresse, und das Profil wird nicht auf die Blockierungsliste gesetzt, sodass der Empfänger nach wie vor SMS-Nachrichten und Push-Benachrichtigungen erhält. Im [Handbuch zu Best Practices beim Versand](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops){target="_blank"} erfahren Sie mehr über Feedback-Schleifen.
@@ -53,6 +54,12 @@ Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, wird die Nachricht automati
 >[!NOTE]
 >
 >Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
+
+## Verwaltung von Softbounces {#soft-error-management}
+
+Im Gegensatz zu Hardbounces senden Softbounces eine Adresse nicht sofort in Quarantäne, sondern erhöhen stattdessen einen Fehlerzähler. Wenn der Fehlerzähler den Grenzwert erreicht, wird die Adresse unter Quarantäne gestellt. Weitere Informationen zu weiteren Zustellversuchen und Fehlertypen finden Sie unter [ von fehlgeschlagenen Sendungen ](delivery-failures.md).
+
+Der Fehlerzähler wird erneut initialisiert, wenn der letzte signifikante Fehler vor mehr als 10 Tagen aufgetreten ist. Der Status der Adresse wird auf **[!UICONTROL Gültig]** gesetzt und mithilfe des Workflows **[!UICONTROL Datenbankbereinigung]** wird die Adresse aus der Quarantäneliste gelöscht. [Weitere Informationen zu technischen Workflows](../config/workflows.md#technical-workflows).
 
 ## Zugriff auf unter Quarantäne gestellte E-Mail-Adressen {#access-quarantined-addresses}
 
@@ -66,6 +73,8 @@ Die **[!UICONTROL Versandzusammenfassung]** gibt Aufschluss über die Anzahl der
 
 * die Adressen, die bei der Versandanalyse ausgeschlossen wurden,
 * die Adressen, die infolge des Versands neu unter Quarantäne gestellt wurden.
+
+Weitere Informationen zu Versandberichten finden Sie in [diesem Abschnitt](../reporting/gs-reporting.md).
 
 ### Nicht zustellbare und Bounce-Adressen{#non-deliverable-bounces}
 
@@ -81,7 +90,7 @@ Um die Liste der in Quarantäne befindlichen Adressen **für die gesamte Plattfo
 >
 >Ende 2. Jahr: ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
 
-Darüber hinaus zeigt der integrierte Bericht **[!UICONTROL Unzustellbare Nachrichten und Bounces]**, der im Abschnitt **Berichte** auf der Startseite verfügbar ist, Informationen zu den in Quarantäne befindlichen E-Mail-Adressen, zu den aufgetretenen Fehlertypen und zur Verteilung von Fehlern nach Domain. Sie können Daten nach einem bestimmten Versand filtern oder diesen Bericht nach Bedarf anpassen.
+Darüber hinaus zeigt der integrierte Bericht **[!UICONTROL Fehler und Bounces]** der im Abschnitt **Berichte** dieser Startseite verfügbar ist, Informationen zu den in Quarantäne befindlichen E-Mail-Adressen, zu den aufgetretenen Fehlertypen und zur Verteilung von Fehlern nach Domain. Sie können Daten nach einem bestimmten Versand filtern oder diesen Bericht nach Bedarf anpassen.
 
 Weitere Informationen zu Bounce-Adressen finden Sie im [Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=de){target="_blank"}.
 
@@ -98,7 +107,9 @@ Sie können für jeden Ordner mit dem integrierten Filter **[!UICONTROL E-Mail-A
 
 ## Entfernen einer Adresse aus der Quarantäne {#remove-a-quarantined-address}
 
-Adressen, die bestimmte Bedingungen erfüllen, werden durch den integrierten Workflow der **Datenbankbereinigung** automatisch aus der Quarantäneliste gelöscht.
+### Automatische Aktualisierungen {#unquarantine-auto}
+
+Adressen, die bestimmte Bedingungen erfüllen, werden durch den integrierten Workflow der **[!UICONTROL Datenbankbereinigung]** automatisch aus der Quarantäneliste gelöscht.
 
 In den folgenden Fällen werden die Adressen automatisch aus der Quarantäneliste entfernt:
 
@@ -112,22 +123,30 @@ Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 >
 >Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
 
-Bei Bedarf können Sie eine Adresse auch manuell aus der Quarantäneliste entfernen. Um eine E-Mail-Adresse aus der Quarantäne zu entfernen, haben Sie folgende Möglichkeiten:
+### Manuelle Aktualisierungen {#unquarantine-manual}
 
-* Sie können den Status der Adresse über den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** in **[!UICONTROL Gültig]** ändern.
+Bei Bedarf können Sie eine Adresse auch manuell aus der Quarantäneliste entfernen. Um eine Adresse manuell aus der Quarantäne zu entfernen, können Sie im Knoten **[!UICONTROL Administration > Kampagnen-Management > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** ihren Status in **[!UICONTROL Gültig]** ändern.
 
-  ![](assets/tech-quarantine-status.png)
+![](assets/tech-quarantine-status.png)
 
-Möglicherweise müssen Massenaktualisierungen in der Quarantäneliste durchgeführt werden, z. B. im Falle eines ISP-Ausfalls, bei dem E-Mails fälschlicherweise als Bounces gekennzeichnet werden, da sie der Empfangsadresse nicht erfolgreich zugestellt werden können.
+### Massenaktualisierungen {#unquarantine-bulk}
 
-Dazu muss ein Workflow erstellt und der Quarantänetabelle eine Abfrage hinzugefügt werden, um alle betroffenen Empfängerinnen und Empfänger herauszufiltern, sodass sie aus der Quarantäneliste entfernt und in künftige Campaign-E-Mail-Sendungen aufgenommen werden können.
+Möglicherweise müssen Sie in bestimmten Situationen Massenaktualisierungen auf der Quarantäneliste durchführen, z. B. bei einem ISP-Ausfall, bei dem E-Mails fälschlicherweise als Bounces gekennzeichnet werden, da sie ihrem Empfänger nicht erfolgreich zugestellt werden können.
 
-Nachfolgend befinden sich die empfohlenen Richtlinien für diese Abfrage:
+So führen Sie eine Massenaktualisierung durch:
 
-* **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
-* **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
-* **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS AM` oder später
-* **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS PM` oder früher 
+1. Erstellen eines Workflows und Hinzufügen einer Abfrage in der Quarantänetabelle (**[!UICONTROL nms:address]**), um betroffene Empfänger zu filtern
+2. Verwenden Sie Abfragebedingungen, um Adressen zu identifizieren, die nicht in Quarantäne gestellt werden sollen, z. B.:
+   * **E-Mail-Domain (@domain)** ist gleich den betroffenen ISP-Domains
+   * **Aktualisierungsstatus (@lastModified)** innerhalb des Zeitrahmens des Ausfalls
+   * **Status (@status)** entspricht Quarantänestatus
+3. Fügen Sie die Aktivität **[!UICONTROL Daten aktualisieren]** hinzu, um den Adressenstatus auf &quot;**[!UICONTROL &quot;]**
 
-Sobald die Liste der betroffenen Empfängerinnen und Empfänger vorliegt, muss die Aktivität **[!UICONTROL Daten-Update]** hinzugefügt werden, um ihren Status auf **[!UICONTROL Gültig]** zu setzen, damit sie durch den **[!UICONTROL Datenbankbereinigungs]**-Workflow aus der Quarantäneliste entfernt werden. Sie können sie auch einfach aus der Quarantänetabelle löschen.
+Die Adressen werden dann durch den Workflow **[!UICONTROL Datenbankbereinigung“ automatisch aus der Quarantäneliste entfernt]** können in zukünftige Sendungen aufgenommen werden.
+
+## Verwandte Themen
+
+* [Fehlgeschlagene Sendungen verstehen](delivery-failures.md) - Erfahren Sie mehr über die verschiedenen Arten von fehlgeschlagenen Sendungen und darüber, wie Campaign mit Bounces umgeht.
+* [Sendungen überwachen](delivery-dashboard.md) - Auf Versandlogs zugreifen und die Versandleistung überwachen
+* [Best Practices beim Versand](../start/delivery-best-practices.md) - Best Practices für die Aufrechterhaltung einer guten Zustellbarkeit und das Vermeiden von Quarantänen
 

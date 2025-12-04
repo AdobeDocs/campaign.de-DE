@@ -3,10 +3,10 @@ product: campaign
 title: Anpassen von Cubes
 description: Best Practices bei der Implementierung von Cubes in Adobe Campaign
 feature: Reporting
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 97%
@@ -29,7 +29,7 @@ Um die Klassierung zu aktivieren, kreuzen Sie die entsprechende Option bei der E
 
 ![](assets/cube-class.png)
 
-Sie können Klassen entweder manuell erstellen oder sie mit einer vorhandenen [Auflistung“ &#x200B;](../config/enumerations.md).
+Sie können Klassen entweder manuell erstellen oder sie mit einer vorhandenen [Auflistung“ ](../config/enumerations.md).
 
 Adobe Campaign bietet zudem einen Assistenten, um die Klassen automatisch zu erzeugen: Die Werte können in n Klassen verteilt oder nach den am häufigsten in der Datenbank vertretenen Werten gruppiert werden.
 

@@ -3,10 +3,10 @@ audience: user
 user-guide-title: Handbuch zur Kampagnenautomatisierung
 user-guide-description: Handbuch zur Kampagnenautomatisierung
 feature: Overview
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 95%
       + [Erstellen eines Workflows](workflow/build-a-workflow.md)
       + [Best Practices](workflow/workflow-best-practices.md)
       + [Verwenden von Workflow-Daten](workflow/use-workflow-data.md)
-   + Workflow ausführen {#executing-a-workflow}
+   + Ausführen eines Workflows {#executing-a-workflow}
       + [Workflow starten](workflow/start-a-workflow.md)
       + [Lebenszyklus eines Workflows](workflow/workflow-life-cycle.md)
       + [Einrichten von Validierungen](workflow/define-approvals.md)
@@ -34,8 +34,8 @@ ht-degree: 95%
       + [Workflow-Heatmap](workflow/heatmap.md)
    + Workflow-Aktivitäten {#wf-activities}
       + [Erste Schritte mit Aktivitäten](workflow/activities.md)
-      + Zielgruppenbestimmungs-Aktivitäten {#targeting-activities}
-         + [Liste der Zielgruppenaktivitäten](workflow/targeting-activities.md)
+      + Zielgruppenbestimmungsaktivitäten {#targeting-activities}
+         + [Liste der Targeting-Aktivitäten](workflow/targeting-activities.md)
          + [Segmente](workflow/cells.md)
          + [Ändern der Datenquelle](workflow/change-data-source.md)
          + [Ändern der Dimension](workflow/change-dimension.md)
@@ -56,7 +56,7 @@ ht-degree: 95%
          + [Abonnements](workflow/subscription-services.md)
          + [Vereinigung](workflow/union.md)
          + [Daten-Update](workflow/update-data.md)
-      + Aktivitäten zur Flusskontrolle {#flow-control-activities}
+      + Flusssteuerungsaktivitäten {#flow-control-activities}
          + [Liste der Fluss-Steuerungsaktivitäten](workflow/flow-control-activities.md)
          + [Warnhinweis](workflow/alert.md)
          + [Und-Verknüpfung](workflow/and-join.md)
@@ -113,7 +113,7 @@ ht-degree: 95%
          + [Verwenden von Aggregaten](workflow/using-aggregates.md)
          + [Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität](workflow/deduplication-merge.md)
          + [Einrichten eines Workflows für den wiederkehrenden Import](workflow/recurring-import-workflow.md)
-      + Erstellen von Abfragen {#designing-queries}
+      + Entwerfen von Abfragen {#designing-queries}
          + [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](workflow/quarterly-list-update.md)
       + Abfrage und Filter {#designing-queries}
          + [Abfrage zur Empfängertabelle](workflow/querying-recipient-table.md)
@@ -121,7 +121,7 @@ ht-degree: 95%
          + [Berechnen von Aggregaten](workflow/compute-aggregates.md)
          + [Abfrage mit Gruppierungsverwaltung](workflow/query-grouping-management.md)
          + [Abfrage mit einer n:n-Beziehung](workflow/query-many-to-many-relationship.md)
-         + [Hinzufügen eines berechneten Auflistungsfelds](workflow/adding-enumeration-type-calculated-field.md)
+         + [Hinzufügen eines berechneten Aufzählungsfelds](workflow/adding-enumeration-type-calculated-field.md)
          + [Erstellen von Filtern](workflow/create-a-filter.md)
          + [Filtern doppelter Empfänger](workflow/filter-duplicated-recipients.md)
    + Erweiterte Einstellungen {#advanced-management}
@@ -138,7 +138,7 @@ ht-degree: 95%
    + [Erstellen von Programmen und Kampagnen](campaigns/marketing-campaign-create.md)
    + [Vorlagen erstellen und konfigurieren](campaigns/marketing-campaign-templates.md)
    + [Sendungen hinzufügen](campaigns/marketing-campaign-deliveries.md)
-   + [Audience auswählen](campaigns/marketing-campaign-target.md)
+   + [Zielgruppe auswählen](campaigns/marketing-campaign-target.md)
    + [Dokumente und Assets verwalten](campaigns/marketing-campaign-assets.md)
    + [Genehmigungen einrichten und verwalten](campaigns/marketing-campaign-approval.md)
    + [Wiederkehrende und periodische Kampagnen](campaigns/recurring-periodic-campaigns.md)

@@ -2,10 +2,10 @@
 title: Erstellen eines Cubes in Adobe Campaign
 description: Wie man Cubes erstellt
 feature: Reporting
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 97%
@@ -102,7 +102,7 @@ Im Beispiel sollen nur Jahre, Monate und Tage angezeigt werden. Beachten Sie, da
 
 1. Erstellen Sie eine weitere Dimension, um Daten relativ zur Stadt des Empfängers zu analysieren. Fügen Sie hierzu eine neue Dimension hinzu und wählen Sie im Knoten **[!UICONTROL Geografische Lokalisierung]** des Empfängerschemas das Feld Ort aus.
 
-Sie können die Klassierung aktivieren, um das Lesen von Informationen zu vereinfachen, und die Werte mit einer [Auflistung“ &#x200B;](../config/enumerations.md).
+Sie können die Klassierung aktivieren, um das Lesen von Informationen zu vereinfachen, und die Werte mit einer [Auflistung“ ](../config/enumerations.md).
 
 Wählen Sie die Aufzählung in der Dropdown-Liste aus. Beachten Sie, dass diese Aufzählung als **[!UICONTROL Reserviert für Klassierung]** definiert werden muss.
 

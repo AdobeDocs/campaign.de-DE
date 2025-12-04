@@ -4,11 +4,12 @@ description: Mögliche Fehler beim Senden von Nachrichten mit Adobe Campaign
 feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
+version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '3028'
-ht-degree: 99%
+source-wordcount: '3476'
+ht-degree: 87%
 
 ---
 
@@ -111,12 +112,14 @@ Wenn der Gültigkeitszeitraum in Campaign beispielsweise auf den Standardwert vo
 
 Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht gesendet werden konnte, wird sie mit einem Timeout beendet, und ihr Status ändert sich von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** (in den Versandlogs).
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## E-Mail-Fehlertypen {#email-error-types}
 
 Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschlagenen Versand aufgeführt.
+
++++ Hier klicken, um die vollständige Liste der E-Mail-Fehlertypen anzuzeigen
 
 <table> 
  <tbody> 
@@ -249,7 +252,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
  </tbody> 
 </table>
 
-
++++
 
 ## Fehlertypen bei Push-Benachrichtigungen {#push-error-types}
 
@@ -260,6 +263,8 @@ Für den Mobile-App-Kanal sind unten mögliche Ursachen für einen fehlgeschlage
 Das HTTP/V2-Protokoll ermöglicht für jeden Push-Versand ein direktes Feedback zu dessen Status. Bei Verwendung des Connectors für das HTTP/V2-Protokoll wird der Feedback-Dienst des Workflows **[!UICONTROL mobileAppOptOutMgt]** nicht mehr aufgerufen. Ein Token gilt als abgemeldet, wenn eine Mobile App deinstalliert oder neu installiert wird.
 
 Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt, wird der Ziel-Token direkt unter Quarantäne gestellt.
+
++++ Klicken, um iOS-Quarantäneszenarien anzuzeigen
 
 <table> 
  <tbody> 
@@ -346,6 +351,8 @@ Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
  </tbody> 
 </table>
 
++++
+
 ### Quarantäne bei Android-Geräten {#android-quarantine}
 
 **Für Android V1**
@@ -373,6 +380,8 @@ Während der Versandanalyse werden alle Geräte, die von der Zielgruppe ausgesch
 **Für Android V2**
 
 Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für Android V1. Dasselbe gilt für die Aktualisierung von Anmeldungen und Ausschlüssen. Weiterführende Informationen hierzu finden Sie im Abschnitt [Android V1](#android-quarantine).
+
++++ Hier klicken, um Android V2-Quarantäneszenarien anzuzeigen
 
 <table> 
  <tbody> 
@@ -579,6 +588,8 @@ Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für 
  </tbody> 
 </table>
 
++++
+
 ## Quarantäne für SMS {#sms-quarantines}
 
 **Für Standard-Connectoren**
@@ -588,6 +599,8 @@ Die Besonderheiten für den SMS-Kanal sind unten aufgeführt.
 >[!NOTE]
 >
 >Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
+
++++ Klicken, um SMS-Fehlertypen für Standard-Connectoren anzuzeigen
 
 <table> 
  <tbody> 
@@ -636,6 +649,8 @@ Die Besonderheiten für den SMS-Kanal sind unten aufgeführt.
  </tbody> 
 </table>
 
++++
+
 **Für den Connector für erweitertes allgemeines SMPP**
 
 Bei Verwendung des SMPP-Protokolls zum Senden von SMS-Nachrichten wird die Fehlerverwaltung anders gehandhabt.
@@ -675,3 +690,61 @@ Standardmäßig erfolgt die Regex-Extraktion des **stat:**-Felds entsprechend de
 * Alles, was hinter dem senkrechten Strich (|) steht, wird nur in der Spalte **[!UICONTROL Erster Text]** der Tabelle **[!UICONTROL Versandlogqualifizierung]** angezeigt. Dieser Inhalt wird immer durch **#MESSAGE#** ersetzt, nachdem die Nachricht normalisiert wurde. Dadurch wird verhindert, dass mehrere Einträge für ähnliche Fehler vorliegen, und der Prozess ist mit dem für E-Mails identisch.
 
 Der Connector für erweitertes allgemeines SMPP wendet eine Heuristik an, um sinnvolle Standardwerte zu finden: Ein mit **DELIV** beginnender Status wird als erfolgreich bewertet, da dies den üblicherweise von Providern verwendeten Statuswerten **DELIVRD** oder **DELIVERED** entspricht. Alle anderen Statuswerte verursachen einen Hardbounce.
+
+## Fehlerbehebung bei fehlgeschlagenen Sendungen {#troubleshooting}
+
+Dieser Abschnitt enthält Anleitungen zur Diagnose und Lösung häufiger Probleme bei Versandfehlern.
+
+### Fehlgeschlagener Status mit Personalisierungsfehlern {#personalization-errors}
+
+Wenn der Status eines E-Mail-Versands **[!UICONTROL Fehlgeschlagen]** lautet, kann die Ursache an Problemen mit Gestaltungsbausteinen liegen. Gestaltungsbausteine in einem Versand können zu Fehlern führen, wenn die Schemata nicht mit dem Versand-Mapping übereinstimmen.
+
+Versandlogs sind der Schlüssel zu den Ursachen für fehlgeschlagene Sendungen. Im Folgenden finden Sie einen häufigen Fehler:
+
+Bei Empfängernachrichten wird eine &quot;Unerreichbar&quot;-Fehlermeldung mit folgenden Informationen angezeigt:
+
+```
+Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
+```
+
+**Ursache**: Die Personalisierung innerhalb der HTML versucht, eine Tabelle oder ein Feld aufzurufen, die bzw. das in der vorgelagerten Zielgruppenbestimmung oder im Zielgruppen-Mapping des Versands nicht definiert oder zugeordnet wurde.
+
+**Lösung**: Überprüfen Sie den Workflow und den Versandinhalt, um genau zu bestimmen, welche Personalisierung versucht, die betreffende Tabelle aufzurufen. Entfernen Sie dann entweder den Aufruf dieser Tabelle im HTML oder korrigieren Sie die Zuordnung zum Versand.
+
+Weitere Informationen zur Personalisierung finden [ in diesem Abschnitt ](personalize.md).
+
+### Fehler bei mehreren Personalisierungswerten {#multiple-values-error}
+
+Wenn ein Versand fehlschlägt, kann der folgende Fehler in den Versandlogs angezeigt werden:
+
+```
+DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
+```
+
+**Ursache**: Es gibt ein Personalisierungsfeld oder -block in der E-Mail, das mehr als einen Wert für den Empfänger hat. Es wird ein Personalisierungsblock verwendet, mit dem mehrere Datensätze für einen bestimmten Empfänger abgerufen werden.
+
+**Lösung**: Überprüfen Sie die verwendeten Personalisierungsdaten und überprüfen Sie dann die Zielgruppe auf Empfänger, die mehr als einen Eintrag für eines dieser Felder haben. Sie können im Zielgruppen **[!UICONTROL Workflow auch vor der Versandaktivität eine Aktivität des Typs „Deduplizierung]** verwenden, um sicherzustellen, dass jeweils nur ein Personalisierungsfeld vorhanden ist. Weitere Informationen zur Deduplizierung finden Sie in der [Workflow-Dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=de){target="_blank"}.
+
+### Verarbeitung automatischer Antworten {#auto-reply-handling}
+
+Einige Sendungen können mit dem Fehler „Unerreichbar“ fehlschlagen, der Folgendes angibt:
+
+```
+Inbound email bounce (rule 'Auto_replies' has matched this bounce).
+```
+
+**Erläuterung**: Dies bedeutet, dass der Versand erfolgreich war, Adobe Campaign jedoch eine automatische Antwort vom Empfänger erhalten hat (z. B. eine Antwort „Abwesend„), die den Regeln für automatische Antworten auf eingehende E-Mails entsprach.
+
+Die automatische Antwort-E-Mail wird von Adobe Campaign ignoriert, und die Empfängeradresse wird nicht unter Quarantäne gestellt. Dieses Verhalten ist zu erwarten und weist nicht auf einen fehlgeschlagenen Versand hin.
+
+## Verwandte Themen
+
+[Versandstatus](delivery-statuses.md) erläutert die verschiedenen Status, die ein Versand während seines Lebenszyklus aufweisen kann.
+
+[Überwachen von Sendungen in der Campaign-](delivery-dashboard.md): Bietet Anleitungen dazu, wie Sie mit dem Versand-Dashboard die Versandleistung verfolgen und Probleme diagnostizieren können.
+
+[Quarantäneverwaltung](quarantines.md) erläutert, wie Campaign unter Quarantäne gestellte Adressen verwaltet, um Ihre Reputation als Versender zu schützen.
+
+[Zustellbarkeit überwachen](monitoring-deliverability.md) bietet Anleitungen zur Aufrechterhaltung einer guten Zustellbarkeit und Reputation des Absenders.
+
+[Best Practices für den Versand](../start/delivery-best-practices.md) behandelt Best Practices für die Erstellung und den Versand von Sendungen in Campaign.

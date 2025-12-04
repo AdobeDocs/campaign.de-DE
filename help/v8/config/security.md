@@ -6,10 +6,10 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '2280'
-ht-degree: 100%
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
+workflow-type: tm+mt
+source-wordcount: '2177'
+ht-degree: 99%
 
 ---
 
@@ -151,22 +151,19 @@ Dank der Tracking-Funktionen können Sie mit Adobe Campaign die Navigation Ihrer
 
 Vorschriften wie die EU-Datenschutz-Grundverordnung (DSGVO) besagen, dass Unternehmen die Zustimmung der Website-Benutzer benötigen, bevor sie Cookies installieren.
 
-* Eine Möglichkeit besteht darin, Besucher von Webtracking betroffenen Seiten zur Zustimmung aufzufordern, indem im oberen Bereich auf der ersten besuchten Seite ein Banner eingeblendet und zum Ankreuzen eines Feldes aufgefordert wird.
 * Vermeiden Sie jedoch Pop-ups, da diese häufig von den Browsern blockiert werden.
 
 ### Nachrichten-Tracking {#message-tracking}
 
 Mit Adobe Campaign können Sie die gesendeten E-Mails sowie das Verhalten der Empfängerinnen und Empfänger Ihrer Sendungen verfolgen: Öffnen, Klicks auf Links, Abmeldungen usw. Weitere Informationen hierzu finden Sie im Abschnitt [Über Nachrichten](../start/gs-message.md).
 
-Fügen Sie zu diesem Zweck getrackte Links zu Ihren Nachrichten hinzu, um die Wirkung Ihres Versands und das Verhalten Ihrer Empfängerinnen und Empfänger auf der Registerkarte „Tracking“ des Versand-Dashboards zu messen. Tracking-Daten werden im Bericht zu Trackingindikatoren interpretiert. Weiterführende Informationen zum Tracking finden Sie auf [dieser Seite](../start/tracking.md).
+Fügen Sie zu diesem Zweck getrackte Links zu Ihren Nachrichten hinzu, um die Wirkung Ihres Versands und das Verhalten Ihrer Empfängerinnen und Empfänger auf der Registerkarte „Tracking“ des Versand-Dashboards zu messen. Tracking-Daten werden im Bericht zu Trackingindikatoren interpretiert. Weiterführende Informationen zum Tracking finden Sie auf [dieser Seite](../send/tracking.md).
 
 ### Webtracking {#web-tracking}
 
-Mit Adobe Campaign können Sie auch überwachen, wie die Empfängerinnen und Empfänger auf Ihrer Website surfen: Fügen Sie Trackingtags ein, um Informationen zu sammeln und Besuche auf Seiten der Web-Anwendung zu messen.
-
-Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../start/tracking.md) erläutert.
-
-Zusätzlich können Sie in Adobe Campaign ein Opt-out-Banner anzeigen, über das Endbenutzer das Tracking ihres Web-Verhaltens beenden können. Weitere Informationen hierzu finden Sie unter [Opt-out vom Web-Anwendungs-Tracking](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-applications/web-application-tracking-opt-out){target=_blank}.
+>[!AVAILABILITY]
+>
+>Webtracking ist in Campaign v8 nicht verfügbar. Weitere Informationen zu nicht verfügbaren Funktionen finden Sie auf [dieser Seite](../start/v7-to-v8.md#gs-unavailable-features).
 
 <!--
 Privacy configuration and hardening is a key element of security optimization. Here are some best practices to follow regarding privacy:

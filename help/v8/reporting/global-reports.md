@@ -2,9 +2,9 @@
 title: Globale Adobe Campaign-Berichte
 description: Erfahren Sie, wie Sie auf globale Berichte zugreifen und diese verwenden können
 feature: Reporting, Monitoring
-role: User, Data Engineer
+role: User, Developer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1880'
 ht-degree: 100%
@@ -37,7 +37,7 @@ Klicken Sie zur Anzeige eines Berichts auf seinen Namen. Standardmäßig stehen 
 * **[!UICONTROL Abonnement-Verfolgung]**: Siehe [Abonnement-Verfolgung](#subscription-tracking).
 * **[!UICONTROL Versandzusammenfassung]**: Siehe [Versandzusammenfassung](delivery-reports.md#delivery-summary).
 * **[!UICONTROL Versandstatistiken]**: Siehe [Versandstatistiken](#delivery-statistics).
-* **[!UICONTROL Öffnungsverteilung]**: Siehe [Öffnungsverteilung](#breakdown-of-opens).
+* **[!UICONTROL Aufschlüsselung der Öffnungen]**: Siehe [Aufschlüsselung der Öffnungen](#breakdown-of-opens).
 
 ## Versanddurchsatz {#delivery-throughput}
 
@@ -56,7 +56,7 @@ Sie können die Anzeige durch Ändern des Parameters (z. B. 1 Stunde, 3 Stunden
 
 ## Nutzer-Aktivitäten {#user-activities}
 
-Dieser Bericht zeigt Öffnungen, Klicks und Transaktionen in Form eines Diagramms (Verteilung nach Tagen, Stunden oder halben Stunden).
+Dieser Bericht zeigt Öffnungen, Klicks und Transaktionen in Form eines Diagramms (Aufschlüsselung nach Tagen, Stunden oder halben Stunden).
 
 Folgende Optionen stehen zur Verfügung:
 
@@ -68,17 +68,17 @@ Folgende Optionen stehen zur Verfügung:
 
 ## Unzustellbare Nachrichten und Bounces {#non-deliverables-and-bounces}
 
-Dieser Bericht zeigt die Verteilung der unzustellbaren Nachrichten nach Typ und nach Domain.
+Dieser Bericht zeigt die Aufschlüsselung der unzustellbaren Nachrichten nach Typ und nach Domain.
 
 Die **[!UICONTROL Anzahl verarbeiteter Nachrichten]** entspricht der Gesamtzahl der vom Versandserver verarbeiteten Nachrichten. Die Anzahl kann u. U. geringer als die Zahl der zu versendenden Nachrichten ausfallen, wenn ein Teil der Nachrichten vor der Verarbeitung durch den Server gestoppt oder ausgesetzt wurden.
 
-**[!UICONTROL Verteilung der Fehler nach Typ]**
+**[!UICONTROL Aufschlüsselung der Fehler nach Typ]**
 
 >[!NOTE]
 >
 >Die in diesem Bericht angezeigten Fehler lösen einen Quarantäneprozess aus. Weiterführende Informationen zur Quarantäneverwaltung finden Sie im Abschnitt [Quarantäneverwaltung](../send/quarantines.md).
 
-Der erste Teil des Berichts zeigt die Verteilung der unzustellbaren Nachrichten nach Typ in Form einer Tabelle und eines Diagramms.
+Der erste Teil des Berichts zeigt die Aufschlüsselung der unzustellbaren Nachrichten nach Typ in Form einer Tabelle und eines Diagramms.
 
 Zu jedem Fehlertyp erscheint:
 
@@ -100,11 +100,11 @@ Folgende Indikatoren werden angezeigt:
   >
   >Dieser Indikator bezieht sich nur auf Sendungen auf [mobilen Kanälen](../send/send.md).
 
-  Jede Zeile der Datentabelle kann durch Anklicken des Symbols `[+]` ausgeklappt werden. Damit kann für jeden Fehlertyp die Verteilung der fehlerhaften Nachrichten nach Domain angezeigt werden.
+  Jede Zeile der Datentabelle kann durch Anklicken des Symbols `[+]` ausgeklappt werden. Damit kann für jeden Fehlertyp die Aufschlüsselung der fehlerhaften Nachrichten nach Domain angezeigt werden.
 
-**[!UICONTROL Verteilung der Fehler nach Domain]**
+**[!UICONTROL Aufschlüsselung der Fehler nach Domain]**
 
-Der zweite Teil des Berichts zeigt die Verteilung der fehlgeschlagenen Nachrichten nach Domains in Form einer Tabelle und eines Diagramms.
+Der zweite Teil des Berichts zeigt die Aufschlüsselung der fehlgeschlagenen Nachrichten nach Domains in Form einer Tabelle und eines Diagramms.
 
 Zu jeder Domain erscheint:
 
@@ -112,7 +112,7 @@ Zu jeder Domain erscheint:
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der verarbeiteten Nachrichten dieser Domain,
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der fehlerhaften Nachrichten.
 
-Jede Zeile der Datentabelle kann durch Klick auf das Symbol ]+[ ausgeklappt werden. Dies ermöglicht die Anzeige der Verteilung der fehlerhaften Nachrichten nach Fehlertyp für jede Domain.
+Jede Zeile der Datentabelle kann durch Klick auf das Symbol ]+[ ausgeklappt werden. Dies ermöglicht die Anzeige der Aufschlüsselung der fehlerhaften Nachrichten nach Fehlertyp für jede Domain.
 
 ![](assets/errors-report-details.png)
 
@@ -122,7 +122,7 @@ Jede Zeile der Datentabelle kann durch Klick auf das Symbol ]+[ ausgeklappt werd
 
 ## Browser {#browsers}
 
-Dieser Bericht enthält die Verteilung der Browser, die von den Versandempfängern im ausgewählten Zeitraum verwendet wurden.
+Dieser Bericht enthält die Aufschlüsselung der Browser, die von den Versandempfängern im ausgewählten Zeitraum verwendet wurden.
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
 Der **[!UICONTROL Verlauf]** zeigt die tägliche Besucherrate des ausgewählten Browsers in Bezug auf die höchste gemessene Besucherzahl.
 
-Die **[!UICONTROL Verteilung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für den gewählten Browser.
+Die **[!UICONTROL Aufschlüsselung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für den gewählten Browser.
 
 In der Tabelle werden folgende Indikatoren dargestellt:
 
@@ -212,7 +212,7 @@ The following indicators are used:
 
 ## Betriebssysteme {#operating-systems}
 
-Dieser Bericht enthält die Betriebssysteme, die von den Versandempfängern im ausgewählten Zeitraum verwendet wurden.
+Dieser Bericht enthält die Aufschlüsselung der Betriebssysteme, die von den Versandempfängern im ausgewählten Zeitraum verwendet wurden.
 
 >[!NOTE]
 >
@@ -240,7 +240,7 @@ Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
 Der **[!UICONTROL Verlauf]** zeigt die tägliche Nutzungsrate des ausgewählten Betriebssystems in Bezug auf die höchste gemessene Besucherzahl.
 
-Die **[!UICONTROL Verteilung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für das gewählte Betriebssystem.
+Die **[!UICONTROL Aufschlüsselung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für das gewählte Betriebssystem.
 
 In der Tabelle werden folgende Indikatoren dargestellt:
 
@@ -294,9 +294,9 @@ Folgende Indikatoren werden angezeigt:
 * **[!UICONTROL Klicks]**: Prozentualer Anteil der angesprochenen Empfängerinnen und Empfänger, die mindestens einmal in einem Versand geklickt haben, im Vergleich zur Anzahl der erfolgreich verarbeiteten Nachrichten.
 * **[!UICONTROL Abmeldung]**: Prozentualer Anteil der Klicks auf einen Abmelde-Link im Vergleich zur Anzahl der erfolgreich verarbeiteten Nachrichten.
 
-## Öffnungsverteilung {#breakdown-of-opens}
+## Aufschlüsselung der Öffnungen {#breakdown-of-opens}
 
-Dieser Bericht zeigt die Öffnungsverteilung nach Betriebssystem, Geräteart und Browser für den ausgewählten Zeitraum. Für jede Kategorie stehen zwei Diagramme zur Verfügung. Das erste zeigt die Öffnungsstatistiken für Computer und Mobilgeräte an, das zweite nur für Mobilgeräte.
+Dieser Bericht zeigt die Aufschlüsselung der Öffnungen nach Betriebssystem, Geräteart und Browser für den ausgewählten Zeitraum. Für jede Kategorie stehen zwei Diagramme zur Verfügung. Das erste zeigt die Öffnungsstatistiken für Computer und Mobilgeräte an, das zweite nur für Mobilgeräte.
 
 Die Zahl der Öffnungen entspricht der Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht berücksichtigt. Weitere Informationen zum Tracking von Öffnungen finden Sie in [diesem Abschnitt](metrics-calculation.md#tracking-opens-).
 

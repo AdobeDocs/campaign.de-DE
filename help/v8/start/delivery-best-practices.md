@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 096c453f727b461a7b09a47282e186e91ffc847e
 workflow-type: tm+mt
-source-wordcount: '2959'
-ht-degree: 100%
+source-wordcount: '3102'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,19 @@ Adobe Campaign verwaltet fehlerhafte Adressen je nach zurückgegebenem Fehlertyp
 
 +++
 
+### Bereitstellung und Wartung {#delivery-maintenance}
 
+Die regelmäßige Wartung Ihrer Sendungen ist für eine optimale Plattformleistung unerlässlich.
+
++++ **Hier finden Sie einige Best Practices**
+
+* **Fehlgeschlagene und nicht benötigte Sendungen entfernen**: Behalten Sie Sendungen in der Instanz nicht im Status „Fehlgeschlagen“ bei, da dies temporäre Tabellen verwaltet und die Leistung beeinträchtigt. Entfernen Sie regelmäßig Sendungen, die nicht mehr benötigt werden, um Systemressourcen freizugeben.
+
+* **Inaktive Empfänger bereinigen**: Inaktive Empfänger der letzten 12 Monate sollten aus der Datenbank entfernt werden, um die Adressqualität zu gewährleisten. ISPs deaktivieren Adressen nach einer gewissen Zeit der Inaktivität, und Bounce Messages werden an die Absender gesendet, um sie über diesen neuen Status zu informieren. Regelmäßige Listenbereinigung verbessert die Zustellbarkeit und reduziert Kosten.
+
+* **Große Sendungen umsichtig planen**: Planen Sie keine großen Sendungen gemeinsam. Stimmen Sie die Planung der Sendungen mit den anderen Mitgliedern Ihres Teams ab, um die Last gleichmäßig auf das System zu verteilen. Wenn mehrere große Sendungen gleichzeitig durchgeführt werden, kann sich dies auf die Gesamtleistung der Plattform auswirken.
+
++++
 
 ### Anmeldemöglichkeit mit doppelter Bestätigung (Double opt-in) {#double-opt-in}
 
@@ -226,7 +238,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
 ## Verwalten von Bildern {#manage-images}
 
@@ -234,7 +246,7 @@ Im Folgenden finden Sie einige spezifische Richtlinien für die Optimierung von 
 
 ### Verhindern der Bildblockierung {#image-blocking}
 
-Manche E-Mail-Clients blockieren Bilder standardmäßig. Einstellungen können aber auch von Benutzenden so konfiguriert werden, dass Bilder blockiert werden, um den Datenverbrauch zu reduzieren.   Daher kann die gesamte Nachricht verloren gehen, wenn keine Bilder heruntergeladen werden.
+Manche E-Mail-Clients blockieren Bilder standardmäßig. Einstellungen können aber auch von Benutzenden so konfiguriert werden, dass Bilder blockiert werden, um den Datenverbrauch zu reduzieren.   Wenn Bilder nicht heruntergeladen werden, kann daher die gesamte Nachricht verloren gehen.
 
 +++ Um dies zu vermeiden, können Sie diese Best Practices anwenden:
 
@@ -286,7 +298,7 @@ Diese Zuordnungen (Mapping) werden [in diesem Abschnitt](../audiences/target-map
 
 ### Externe Empfänger {#external-recipients}
 
-Sie können Nachrichten an Empfänger senden, die in einer externen Datei anstatt in der Datenbank gespeichert sind. Weiterführende Informationen finden Sie [in diesem Abschnitt](create-message.md#select-external-recipients-selecting-external-recipients).
+Sie können Nachrichten an Empfangende senden, die in einer externen Datei anstatt in der Datenbank gespeichert sind. Weiterführende Informationen finden Sie [in diesem Abschnitt](create-message.md#select-external-recipients-selecting-external-recipients).
 
 <!--
 ### Send to your subscribers {#send-to-subscribers}
@@ -419,4 +431,4 @@ Um das Verhalten Ihrer Empfangenden besser kennenzulernen, können Sie ihre Reak
 Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versandassistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie die Nachverfolgung aktivieren möchten.
 
 
-[Weitere Informationen zu den Tracking-Funktionen finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html?lang=de#sending-messages){target="_blank"}.
+[Weitere Informationen zu Tracking-Funktionen](../send/tracking.md)

@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: d886072b3a21d5e5b70662c67919223cf9a1b68e
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 91%
+source-wordcount: '841'
+ht-degree: 89%
 
 ---
 
@@ -105,9 +105,11 @@ ht-degree: 91%
       + [Versandanalyse](send/delivery-analysis.md)
       + [Konfigurieren und Durchführen des Versands](send/configure-and-send.md)
       + [Optimieren der Versandzeit](send/predictive.md)
-   + Fehler, Bounces und Quarantänen {#failures}
-      + [Quarantäne](send/quarantines.md)
+   + Sendungen überwachen {#monitor}
+      + [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](send/delivery-dashboard.md)
+      + [Versandstatus](send/delivery-statuses.md)
       + [Versandfehler](send/delivery-failures.md)
+      + [Quarantäne](send/quarantines.md)
    + Verwaltung der Zustellbarkeit {#deliverability-management}
       + [Was ist Zustellbarkeit](send/about-deliverability.md)
       + [Steuern des Nachrichteninhalts](send/control-message-content.md)
@@ -166,8 +168,15 @@ ht-degree: 91%
       + [Verwalten anonymer Interaktionen](interaction/anonymous-interactions.md)
    + [Berichte und Verlauf](interaction/interaction-tracking.md)
    + [Anwendungsfälle](interaction/interaction-use-cases.md)
-+ Reporting und Analysen {#analytics}
-   + [Verfolgen und Überwachen](start/tracking.md)
++ Tracking und Analysen {#analytics}
+   + Nachrichten-Tracking {#tracking}
+      + [Erste Schritte mit dem Tracking](send/tracking.md)
+      + [Konfigurieren getrackter Links](send/tracked-links.md)
+      + [Konfigurieren von URL-Tracking-Optionen](send/url-tracking.md)
+      + [Nachverfolgen von personalisierten Links](send/personalized-links.md)
+      + [Tracking testen](send/testing-tracking.md)
+      + [Zugriff auf Trackinglogs](send/tracking-logs.md)
+   + [Übersicht über die Überwachung von Kampagnen](start/monitor.md)
    + [Audit-Protokoll](reporting/audit-trail.md)
    + Arbeiten mit Berichten{#reports}
       + [Erste Schritte mit Berichten](reporting/gs-reporting.md)
@@ -244,7 +253,7 @@ ht-degree: 91%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + [Datenbank mit queryDef abfragen](dev/query-api.md)
    + REST APIs {#apis}

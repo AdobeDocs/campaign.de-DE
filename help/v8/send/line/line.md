@@ -2,11 +2,11 @@
 title: Senden von direkten LINE-Nachrichten mit Adobe Campaign
 description: Erste Schritte mit LINE-Messaging
 feature: Line App
-role: Data Engineer
+role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1332'
 ht-degree: 96%
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 LINE ist ein Programm für kostenloses Instant Messaging, Sprach- und Videoanrufe, das für alle Smartphones und für Desktop verfügbar ist. Sie können Adobe Campaign verwenden, um LINE-Nachrichten zu senden.
 
-Ebenfalls möglich ist die Kombination von [!DNL LINE] mit dem Transaktionsnachrichten-Modul. Dadurch können Echtzeitnachrichten über die auf Endbenutzergeräten installierte [!DNL LINE]-Mobile-App versendet werden. Weitere Informationen hierzu finden Sie auf dieser [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) Dokumentation zu Campaign Classic v7.
+Ebenfalls möglich ist die Kombination von [!DNL LINE] mit dem Transaktionsnachrichten-Modul. Dadurch können Echtzeitnachrichten über die auf Endbenutzergeräten installierte [!DNL LINE]-Mobile-App versendet werden. Weitere Informationen hierzu finden Sie auf dieser [ in ](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) Dokumentation zu Campaign Classic v7.
 
 ![](assets/line_message.png)
 
