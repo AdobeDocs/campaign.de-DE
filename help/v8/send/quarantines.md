@@ -29,11 +29,11 @@ Wenn die Adresse oder Telefonnummer von Empfängern in Quarantäne ist, werden d
 >
 >Wenn Empfängerinnen oder Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Schlüsselwort wie „STOP“ antworten, wird ihre Adresse oder Telefonnummer als **[!UICONTROL Auf die Blockierungsliste gesetzt]** unter Quarantäne gestellt. Die jeweiligen Profile werden entsprechend aktualisiert.
 
-Auf die Blockierungsliste setzen Profile können sich jedoch auch **{**} auf der ****-Seite befinden, wie etwa nach einer Abmeldung (Opt-out) für einen bestimmten Kanal: Dies bedeutet, dass sie nicht mehr in den Versand eingeschlossen sind. Hat ein Profil auf der Blockierungsliste für den E-Mail-Kanal zwei E-Mail-Adressen, werden folglich beide Adressen vom Versand ausgeschlossen. Im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** der Registerkarte **[!UICONTROL Allgemein]** des Profils können Sie überprüfen, ob sich ein Profil auf der Blockierungsliste für einen oder mehrere Kanäle befindet. [Weitere Informationen](../audiences/view-profiles.md)
+Auf die Blockierungsliste setzen Profile können sich jedoch auch **{**} auf der **&#x200B;**-Seite befinden, wie etwa nach einer Abmeldung (Opt-out) für einen bestimmten Kanal: Dies bedeutet, dass sie nicht mehr in den Versand eingeschlossen sind. Hat ein Profil auf der Blockierungsliste für den E-Mail-Kanal zwei E-Mail-Adressen, werden folglich beide Adressen vom Versand ausgeschlossen. Im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** der Registerkarte **[!UICONTROL Allgemein]** des Profils können Sie überprüfen, ob sich ein Profil auf der Blockierungsliste für einen oder mehrere Kanäle befindet. [Weitere Informationen](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->Abgemeldete Empfänger über die [ „mailto“ List-Unsubscribe-Methode ](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} nicht unter Quarantäne gestellt. Sie haben das Abonnement für den [Service](../start/subscriptions.md), der mit dem Versand verknüpft ist, oder werden an die Blockierungsliste gesendet (sichtbar im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** des Profils), wenn für den Versand kein Service definiert wurde.
+>Abgemeldete Empfänger über die [&#x200B; „mailto“ List-Unsubscribe-Methode &#x200B;](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} nicht unter Quarantäne gestellt. Sie haben das Abonnement für den [Service](../start/subscriptions.md), der mit dem Versand verknüpft ist, oder werden an die Blockierungsliste gesendet (sichtbar im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** des Profils), wenn für den Versand kein Service definiert wurde.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -57,7 +57,7 @@ Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, wird die Nachricht automati
 
 ## Verwaltung von Softbounces {#soft-error-management}
 
-Im Gegensatz zu Hardbounces senden Softbounces eine Adresse nicht sofort in Quarantäne, sondern erhöhen stattdessen einen Fehlerzähler. Wenn der Fehlerzähler den Grenzwert erreicht, wird die Adresse unter Quarantäne gestellt. Weitere Informationen zu weiteren Zustellversuchen und Fehlertypen finden Sie unter [ von fehlgeschlagenen Sendungen ](delivery-failures.md).
+Im Gegensatz zu Hardbounces senden Softbounces eine Adresse nicht sofort in Quarantäne, sondern erhöhen stattdessen einen Fehlerzähler. Wenn der Fehlerzähler den Grenzwert erreicht, wird die Adresse unter Quarantäne gestellt. Weitere Informationen zu weiteren Zustellversuchen und Fehlertypen finden Sie unter [&#x200B; von fehlgeschlagenen Sendungen &#x200B;](delivery-failures.md).
 
 Der Fehlerzähler wird erneut initialisiert, wenn der letzte signifikante Fehler vor mehr als 10 Tagen aufgetreten ist. Der Status der Adresse wird auf **[!UICONTROL Gültig]** gesetzt und mithilfe des Workflows **[!UICONTROL Datenbankbereinigung]** wird die Adresse aus der Quarantäneliste gelöscht. [Weitere Informationen zu technischen Workflows](../config/workflows.md#technical-workflows).
 
