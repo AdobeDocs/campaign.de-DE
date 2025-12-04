@@ -5,10 +5,10 @@ feature: Monitoring, Email
 role: User
 level: Beginner
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: 90ed82673b893b62a185227dd8cdfe80cc8f1455
+source-git-commit: 57e177dc6c30502f2ed3bb08b18586fa5399e89c
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 72%
+source-wordcount: '456'
+ht-degree: 73%
 
 ---
 
@@ -78,7 +78,7 @@ Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Web-Seit
 
 Anhand dieses Beispiels können Sie den Unterschied beim Tracking zwischen einer Person/Personen und einem Empfänger in Adobe Campaign besser verstehen.
 
-Weitere Informationen zu Personen und Empfängern finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/person-people-recipients.html?lang=de#reporting){target="_blank"}
+[Weitere Informationen zu Zielpersonen und -empfängern](../reporting/metrics-calculation.md#targeted-persons---recipients)
 
 **Tracking-Indikatoren**
 
