@@ -5,10 +5,10 @@ feature: Architecture, Deployment
 role: Developer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: 7465cacc74b8b7df38c5eb10d2928749c70a87ea
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -34,7 +34,7 @@ Es sind zwei Bereitstellungsmodelle verfügbar: **Campaign FDA-Bereitstellung** 
 
 ### Campaign FDA-Bereitstellung {#ac-deployment-fda}
 
-In der [FDA-Bereitstellung](fda-deployment.md) ist [!DNL Adobe Campaign] v8 zwecks Datenzugriff über die Federated Data Access-Funktion mit [!DNL Snowflake] verbunden: Sie können auf externe Daten und Informationen, die in Ihrer [!DNL Snowflake]-Datenbank gespeichert sind, zugreifen und diese verarbeiten, ohne die Datenstruktur in Adobe Campaign ändern zu müssen. PostgreSQL ist die primäre Datenbank. Sie können Snowflake als sekundäre Datenbank verwenden, um Ihr Datenmodell zu erweitern und Ihre Daten in Snowflake zu speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und eine hervorragende Performance erzielen.
+In der [FDA-Bereitstellung](fda-deployment.md) ist [!DNL Adobe Campaign] v8 zwecks Datenzugriff über die Federated Data Access-Funktion mit [!DNL Snowflake] verbunden: Sie können auf externe Daten und Informationen, die in Ihrer [!DNL Snowflake]-Datenbank gespeichert sind, zugreifen und diese verarbeiten, ohne die Datenstruktur in Adobe Campaign ändern zu müssen. PostgreSQL ist die primäre Datenbank, und Sie können Snowflake als sekundäre Datenbank verwenden, um Ihr Datenmodell zu erweitern und Ihre Daten in Snowflake zu speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und eine hervorragende Performance erzielen.
 
 
 ![](assets/P1-P3-architecture.png){zoomable="yes"}
@@ -63,7 +63,7 @@ Je nach Campaign v8-Package verfügen Sie über eine bestimmte Anzahl von Mid-So
 
 Standardmäßig verwenden die externen Konten für alle Kanäle einen **[!UICONTROL alternierenden]** Routing-Modus, d. h., ein Versand wird jeweils reihum von jeder Mid-Sourcing(MID)-Instanz gesendet.
 
-Um höhere Performance sowohl in Bezug auf die Geschwindigkeit als auch auf die Skalierbarkeit zu gewährleisten, können Sie die automatische Aufteilung von Sendungen auf Ihre Mid-Sourcing-Instanzen zulassen, damit diese schneller an die Empfängerinnen und Empfänger gesendet werden. Dieser Vorgang ist transparent, wenn der Versand von der Marketing-Instanz aus ausgeführt wird: Nachdem der Versand durchgeführt wurde, werden alle Logs zusammengeführt, bevor sie an die Marketing-Instanz in einem einzigen Versandobjekt zurückgesendet werden.
+Um eine bessere Leistung sowohl in Bezug auf die Geschwindigkeit als auch auf die Skalierbarkeit sicherzustellen, können Sie zulassen, dass Sendungen automatisch auf Ihre Mid-Sourcing-Instanzen aufgeteilt werden, um schneller an die Empfängerinnen und Empfänger gesendet zu werden. Dieser Vorgang ist transparent, wenn der Versand von der Marketing-Instanz aus ausgeführt wird: Nachdem der Versand durchgeführt wurde, werden alle Logs zusammengeführt, bevor sie an die Marketing-Instanz in einem einzigen Versandobjekt zurückgesendet werden.
 
 Dazu werden zusätzliche externe Konten mit dem **[!UICONTROL Aufspaltungs]**-Routing-Modus bei der Bereitstellung für jeden Kanal erstellt:
 
@@ -76,7 +76,7 @@ Dazu werden zusätzliche externe Konten mit dem **[!UICONTROL Aufspaltungs]**-Ro
 
 >[!IMPORTANT]
 >
->Der Aufspaltungs-Routing-Modus ist standardmäßig für das Konto „Aufspaltung Versand – E-Mail“ aktiviert. Für alle anderen Kanäle und externen Konten wenden Sie sich bitte an Ihren Adobe Transition Manager, um die Option aktivieren zu lassen.
+>Der Aufspaltungs-Routing-Modus ist standardmäßig für das Konto „Aufspaltung Versand – E-Mail“ aktiviert. Wenden Sie sich für alle anderen externen Kanalkonten an Ihren Adobe Transition Manager, damit die Option aktiviert wird.
 >
 >Standardmäßig beträgt der Schwellenwert für die Aufteilung eines Versands auf mehrere Mid-Sourcing(MID)-Instanzen 100.000. Sie können diesen Wert in der Option „NmsDelivery_MultiMidSplitThreshold“ im Menü **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Optionen]** ändern.
 
@@ -110,11 +110,11 @@ In der hier angewendeten Architektur sind Ausführungszelle und Kontrollinstanz 
 
   In [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Nachrichtenvorlagen erstellen und veröffentlichen.
 
-* Die **Ausführungsinstanz** ruft eingehende Ereignisse (z. B. Passwortrücksetzung oder Bestellungen von einer Website) ab und versendet personalisierte Nachrichten. Es kann mehr als eine Ausführungsinstanz geben, um Nachrichten über den Load-Balancer zu verarbeiten und die Anzahl der zu verarbeitenden Ereignisse zwecks maximaler Verfügbarkeit zu skalieren.
+* Die **Ausführungsinstanz** ruft eingehende Ereignisse (z. B. Passwortrücksetzung oder Bestellungen von einer Website) ab und versendet personalisierte Nachrichten. Es kann mehr als eine Ausführungsinstanz geben, um Nachrichten über den Load-Balancer zu verarbeiten und die Anzahl der zu verarbeitenden Ereignisse für maximale Verfügbarkeit zu skalieren.
 
 >[!CAUTION]
 >
->Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
+>Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können nicht auf derselben Campaign-Instanz ausgeführt werden.
 
 ![](assets/messagecenter_diagram.png)
 
@@ -127,6 +127,6 @@ Bei der Interaktion mit einer gehosteten Message Center-Ausführungsinstanz kann
 Dann kann die externe Anwendung mit dem von der Ausführungsinstanz als Antwort auf den obigen Aufruf bereitgestellten Sitzungs-Token SOAP-API-Aufrufe (rtEvents oder batchEvents) ausführen, um Nachrichten zu senden, ohne dass in jedem SOAP-Aufruf der Kontoanmeldename und das Passwort enthalten sein müssen.
 
 * Mehrere Ausführungsinstanzen
-In einer mehrzelligen Ausführungsarchitektur mit mehreren Ausführungsinstanzen hinter einem Load-Balancer durchläuft die vom externen Programm aufgerufene Anmeldemethode den Load-Balancer: Aus diesem Grund kann keine Token-basierte Authentifizierung verwendet werden. Eine Benutzer-/Passwortbasierte Authentifizierung ist erforderlich.
+In einer mehrzelligen Ausführungsarchitektur mit mehreren Ausführungsinstanzen hinter einem Load-Balancer durchläuft die von der externen Anwendung aufgerufene Anmeldemethode den Load-Balancer: Aus diesem Grund kann keine Token-basierte Authentifizierung verwendet werden. Eine Benutzer-/Passwortbasierte Authentifizierung ist erforderlich.
 
 Erfahren Sie auf [dieser Seite](../send/event-processing.md) mehr über Ereignisse von Transaktionsnachrichten.
