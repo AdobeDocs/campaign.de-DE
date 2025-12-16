@@ -5,7 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
+hide: true
+hidefromtoc: true
+source-git-commit: 9c751429ac3da2a583990ba0d891744353bd65c8
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 96%
@@ -54,7 +56,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Adobe Campaign ist mit einer Reihe von Dashboards und Tools zur Überwachung von E-Mail-Sendungen ausgestattet.
 
-   Erfahren Sie, wie [&#x200B; Ihre Nachrichten verfolgen und überwachen können](../send/tracking.md) um sicherzustellen, dass Ihre Nachrichten gesendet werden, und wie Sie die Ausführung überwachen sowie Fehler beheben können.
+   Erfahren Sie, wie [ Ihre Nachrichten verfolgen und überwachen können](../send/tracking.md) um sicherzustellen, dass Ihre Nachrichten gesendet werden, und wie Sie die Ausführung überwachen sowie Fehler beheben können.
 
 1. **Kann ich die Ausführung von Workflows überwachen?**
 
@@ -90,7 +92,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
 1. **Kann ich mich mit Campaign-Experten in Verbindung setzen?**
 
-   Der Campaign-Community beitreten: Suchen Sie nach Antworten in bereits gestellten Fragen oder fragen Sie die Fachleute. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"}
+   Der Campaign-Community beitreten: Suchen Sie nach Antworten in bereits gestellten Fragen oder fragen Sie die Fachleute. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **Wie kann ich ein Problem protokollieren?**
