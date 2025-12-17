@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 89%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 89%
       + [Versandanalyse](send/delivery-analysis.md)
       + [Konfigurieren und Durchführen des Versands](send/configure-and-send.md)
       + [Optimieren der Versandzeit](send/predictive.md)
-   + Sendungen überwachen {#monitor}
+   + Überwachen von Sendungen {#monitor}
       + [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](send/delivery-dashboard.md)
       + [Versandstatus](send/delivery-statuses.md)
       + [Versandfehler](send/delivery-failures.md)
@@ -131,7 +131,6 @@ ht-degree: 89%
    + Hinzufügen von Profilen {#add-profiles}
       + [Manuelles Erstellen von Profilen](audiences/create-profiles.md)
       + [Importieren von Profilen aus einer Datei](audiences/import-profiles.md)
-      + [Arbeiten mit externen Profilen](audiences/external-profiles.md)
       + [Erfassen von Profildaten in Web-Formularen](audiences/collect-profiles.md)
       + [Arbeiten mit Zielgruppen-Mappings](audiences/target-mappings.md)
       + [Erstellen von Testprofilen](audiences/test-profiles.md)
@@ -253,7 +252,7 @@ ht-degree: 89%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+   + [Arbeiten mit Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + [Datenbank mit queryDef abfragen](dev/query-api.md)
    + REST APIs {#apis}
