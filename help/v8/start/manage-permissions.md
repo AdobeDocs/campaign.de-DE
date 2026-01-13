@@ -6,10 +6,10 @@ role: User, Admin
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 100%
+source-wordcount: '1816'
+ht-degree: 93%
 
 ---
 
@@ -99,11 +99,15 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
 1. **[!UICONTROL Administrator]** (Admin)
 
-   Die Benutzenden in dieser Gruppe haben vollen Zugriff auf die Instanz. Admins sind Benutzer, die Zugriff auf die meisten technischen Elemente der Benutzeroberfläche haben.
+   Die Benutzer in dieser Gruppe haben vollen Zugriff auf die Instanz. Admins sind Benutzer, die Zugriff auf die meisten technischen Elemente der Benutzeroberfläche haben.
 
    Die Gruppe beinhaltet die folgende spezifische Berechtigung:
 
    * **[!UICONTROL ADMINISTRATION]**: Berechtigt zum Ausführen, Erstellen, Bearbeiten und Löschen von Objekten wie Workflows, Sendungen, Skripten usw.
+
+   >[!IMPORTANT]
+   >
+   >Die **[!UICONTROL Administrator]**-Rolle gewährt Zugriff auf das Campaign Control Panel. Jedes Produktprofil in der Adobe Admin Console, das das Wort „admin“ im Namen enthält (z. B. „administrators“, „admin“, „admins“, „approval admin“ usw.), gewährt Zugriff auf das Control Panel. Weitere Informationen zum [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 1. **[!UICONTROL Versandverantwortliche Benutzer]** (Versand)
 
@@ -196,9 +200,9 @@ Mitglieder von Operatorgruppen können Zugriffsrechte auf Ordner gewähren oder 
 
 Standardmäßige spezifische Berechtigungen in Adobe Campaign sind:
 
-* **[!UICONTROL ADMINISTRATION]**: Benutzer mit **[!UICONTROL ADMINISTRATORRECHTEN]** haben vollen Zugriff auf die Instanz. Administratoren können Objekte wie Workflows, Sendungen, Skripte usw. ausführen, erstellen, bearbeiten und löschen.
+* **[!UICONTROL ADMINISTRATION]**: Benutzer mit **[!UICONTROL ADMINISTRATORRECHTEN]** haben vollen Zugriff auf die Instanz. Admin-Benutzer können jedes Objekt wie Workflow, Versand, Skripte usw. ausführen/erstellen/bearbeiten/löschen. **Hinweis** Produktprofile in der Adobe Admin Console, die das Wort „Admin“ enthalten, gewähren Zugriff auf das Campaign Control Panel.
 
-* **[!UICONTROL VALIDIERUNGSADMINISTRATION]**: Sie können verschiedene Validierungsschritte innerhalb von Workflows und Sendungen festlegen, um sicherzustellen, dass der aktuelle Status durch einen zugewiesenen Benutzer oder eine zugewiesene Gruppe validiert wurde. Benutzer mit der Berechtigung **[!UICONTROL VALIDIERUNGSADMINISTRATION]** können Validierungsschritte festlegen und auch einen Benutzer oder eine Benutzergruppe zuweisen, der bzw. die diese Schritte validieren soll.
+* **[!UICONTROL VALIDIERUNGSADMINISTRATION]**: Sie können verschiedene Validierungsschritte innerhalb von Workflows und Sendungen festlegen, um sicherzustellen, dass der aktuelle Status durch einen zugewiesenen Benutzer oder eine zugewiesene Gruppe validiert wurde. Benutzer mit der Berechtigung **[!UICONTROL GENEHMIGUNGSADMINISTRATION]** können Genehmigungsschritte festlegen und außerdem einen Benutzer oder eine Benutzergruppe zuweisen, der bzw. die diese Schritte genehmigen soll. **Hinweis** Produktprofile, die das Wort „Admin“ enthalten (z. B. „Validierungs-Admin„), gewähren Zugriff auf das Campaign Control Panel.
 
 * **[!UICONTROL ZENTRAL]**: Berechtigt zur zentralen Verwaltung (Dezentrales Marketing).
 

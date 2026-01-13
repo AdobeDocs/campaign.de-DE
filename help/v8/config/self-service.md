@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 96%
+source-wordcount: '372'
+ht-degree: 77%
 
 ---
 
@@ -28,7 +28,15 @@ Weitere Informationen finden Sie in [Dokumentation zum Campaign Control Panel](h
 
 ## Zugriff auf das Control Panel {#ac-control-panel-access}
 
-Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=de){target="_blank"}, um weitere Informationen zu erhalten.
+Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es ist nur für Admin-Benutzer zugänglich.
+
+>[!IMPORTANT]
+>
+>Standardmäßig ist das Control Panel für Admin-Benutzer zugänglich, die zum Produktprofil „Administratoren“ gehören. Je nach Konfiguration Ihres Unternehmens kann das Produktprofil anders benannt werden („Admin“, „Admins“, „Genehmigungsadmin“ usw.). **Jedes Produktprofil, das das Wort „admin“ im Namen enthält, gewährt automatisch Zugriff auf das Control Panel.**
+>
+>Überprüfen Sie die Benennung Ihres Produktprofils sorgfältig, um sicherzustellen, dass nur autorisierte Benutzer Zugriff auf das Control Panel haben.
+
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=de){target="_blank"}, um weitere Informationen zu erhalten.
 
 ## Control Panel – häufig gestellte Fragen {#ac-control-faq}
 
@@ -38,7 +46,7 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 
 Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Sie können ihre Speicherkapazitäten überwachen sowie IP-Adressen auf der Zulassungsliste und öffentliche SSH-Schlüssel verwalten. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=de#sftp-management){target="_blank"}, um weitere Informationen zu erhalten.
 
-## Subdomains und Zertifikate {#ac-control-subdomain}
+## Sub-Domains und Zertifikate {#ac-control-subdomain}
 
 Erfahren Sie, wie Sie Ihre Subdomains und deren Zertifikate überwachen.
 
