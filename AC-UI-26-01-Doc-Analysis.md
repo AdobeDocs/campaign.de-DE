@@ -50,7 +50,7 @@ Aktivieren Sie die vorkonfigurierte dateibasierte Versandplanung mit berechneten
 
 **Kontext:** Kundengesteuert (H&amp;M), ACS zu ACC-Paritätsanforderung
 
-**Verweise:** [ACS-Dokumentation](https://experienceleague.adobe.com/en/docs/campaign-standard/using/testing-and-sending/scheduling-messages/computing-the-sending-date)
+**Verweise:** [ACS-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign-standard/using/testing-and-sending/scheduling-messages/computing-the-sending-date)
 
 &#x200B;---
 
@@ -134,7 +134,7 @@ Die optimierte AEM-Integration ermöglicht die Erstellung von Live Copies und Sp
 
 **Kontext:** Anforderung an Microsoft, Arbeit an Himanshus Team übertragen
 
-**Verweise:** [ACS-Dokumentation](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-experience-manager/creating-multilingual-email-aem.html)
+**Verweise:** [ACS-Dokumentation](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-experience-manager/creating-multilingual-email-aem.html?lang=de)
 
 &#x200B;---
 
@@ -201,7 +201,7 @@ OOTB-Datei-Upload-Funktion zur Erstellung von mehrsprachigen Push-Benachrichtigu
 
 **Kontext:** Kundengesteuert (H&amp;M), Parität von ACS zu ACC, wichtig für die Migration
 
-**Verweise:** [ACS-Dokumentation](https://experienceleague.adobe.com/en/docs/campaign-standard/using/communication-channels/push-notifications/generating-csv-multilingual-push)
+**Verweise:** [ACS-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign-standard/using/communication-channels/push-notifications/generating-csv-multilingual-push)
 
 &#x200B;---
 
@@ -278,7 +278,7 @@ Validierungsprozess-Management ermöglicht Validierungs-Workflows für Versandin
 
 **Kontext:** Kundengesteuert (Pierre Fabre), Microsoft-Anforderung, Entwicklung abgeschlossen und im Testmodus
 
-**Referenzen:** [Klassische Dokumentation](https://experienceleague.adobe.com/en/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval), [Figma mocks](https://www.figma.com/design/r2vpqXoVyI3aucKgkt8TLN/Approvals)
+**Referenzen:** [Klassische Dokumentation](https://experienceleague.adobe.com/de/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval), [Figma mocks](https://www.figma.com/design/r2vpqXoVyI3aucKgkt8TLN/Approvals)
 
 &#x200B;---
 
