@@ -35,7 +35,7 @@ Diese Version enth채lt eine Reihe von Funktionen, die in der Web-Benutzeroberfl�
 * [Kontinuierliche Versandaktivit채t](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html)
 * [Validierungsverwaltung f체r Kampagnen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html)
 
-Weitere Informationen finden Sie in den Versionshinweisen zur [ Web-Benutzeroberfl채che von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
+Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benutzeroberfl채che von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
 
 ### Verbesserungen bez체glich der Sicherheit {#security-8-9-1}
 
