@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: User
 level: Intermediate
 exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: 6693bb8a62c0d126b871dc24a75b76de71b86f8d
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 92%
 
 ---
 
@@ -22,15 +22,15 @@ Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwende
 
 In diesem Abschnitt werden die in Zusammenhang mit den Schemata des Transaktionsnachrichten-Moduls verwendeten SOAP-Methoden beschrieben.
 
-Die zwei SOAP-Methoden **PushEvent** und **PushEvents** werden jeweils den Datenschemata **nms:rtEvent** und **nms:BatchEvent** zugeordnet. Das Informationssystem bestimmt hierbei, ob es sich um ein &quot;Batch&quot;- oder &quot;Echtzeit&quot;-Ereignis handelt.
+Zwei **PushEvent** oder **PushEvents** SOAP-Methoden sind mit den beiden **nms:rtEvent** und **nms:BatchEvent**-Datenschemata verknüpft. Das Informationssystem bestimmt hierbei, ob es sich um ein &quot;Batch&quot;- oder &quot;Echtzeit&quot;-Ereignis handelt.
 
 * **PushEvent** ermöglicht das Einfügen eines einzelnen Ereignisses in eine Nachricht,
 * **PushEvents** ermöglicht das Einfügen einer Kollektion von Ereignissen in eine Nachricht.
 
 Die WSDL-Zugriffspfade der zwei Methoden lauten:
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent**, um auf das Echtzeit-Schema zuzugreifen;
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent**, um auf das Batch-Schema zuzugreifen.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent**, um auf das Echtzeit-Typschema zuzugreifen.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent**, um auf das Stapeltypschema zuzugreifen.
 
 Beide Methoden enthalten ein **`<urn:sessiontoken>`**-Element zum Anmelden beim Modul für den Transaktionsnachrichtenversand. Wir empfehlen die Verwendung einer Authentifizierungsmethode über vertrauenswürdige IP-Adressen. Um das Sitzungstoken abzurufen, führen Sie einen SOAP-Aufruf zur Anmeldung und dann ein GET-Token gefolgt von einer Abmeldung durch. Verwenden Sie dasselbe Token für mehrere RT-Aufrufe. Die in diesem Abschnitt enthaltenen Beispiele verwenden die Sitzungstoken-Methode, wobei es sich um das empfohlene Verfahren handelt.
 
@@ -100,13 +100,13 @@ Beispiel der Methode PushEvents:
 </urn:PushEvents>
 ```
 
-Die **`<rtevent>`**- und **`<batchevent>`**-Elemente besitzen einen Satz an Attributen sowie ein unbedingt erforderliches untergeordnetes Element **`<ctx>`**, welches die Integration der Nachrichtendaten ermöglicht.
+Die **`<rtevent>`**- und **`<batchEvent>`**-Elemente besitzen einen Satz an Attributen sowie ein unbedingt erforderliches untergeordnetes Element **`<ctx>`**, welches die Integration der Nachrichtendaten ermöglicht.
 
 >[!NOTE]
 >
->Mit dem **`<batchevent>`**-Element können Sie das Ereignis der „Batch“-Warteschlange hinzufügen. Das Ereignis **`<rtevent>`** wird der Warteschlange „Echtzeit“ hinzugefügt.
+>Mit dem **`<batchEvent>`**-Element können Sie das Ereignis der „Batch“-Warteschlange hinzufügen. Das Ereignis **`<rtevent>`** wird der Warteschlange „Echtzeit“ hinzugefügt.
 
-Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`** lauten „@type“ und „@email“. Der Wert von „@type“ muss mit dem bei der Konfiguration der Ausführungsinstanz definierten Auflistungswert übereinstimmen. Mit diesem Wert können Sie die Vorlage definieren, die beim Versand mit dem Inhalt des Ereignisses verknüpft werden soll.
+Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchEvent>`** lauten „@type“ und „@email“. Der Wert von „@type“ muss mit dem bei der Konfiguration der Ausführungsinstanz definierten Auflistungswert übereinstimmen. Mit diesem Wert können Sie die Vorlage definieren, die beim Versand mit dem Inhalt des Ereignisses verknüpft werden soll.
 
 `<rtevent> configuration example:`
 
@@ -122,7 +122,7 @@ Es wird empfohlen, die Attribute @wishedChannel und @emailFormat in Form von num
 
 >[!NOTE]
 >
->Zulässige Attribute und ihre Werte werden in den Schemabeschreibungen von **nms:rtEvent** und **nms:BatchEvent** aufgeführt.
+>Eine ausführliche Beschreibung aller autorisierten Attribute sowie deren Werte finden Sie in der Beschreibung des Datenschemas **nms:rtEvent** und **nms:BatchEvent** .
 
 Das **`<ctx>`**-Element enthält die Nachrichtendaten. Der XML-Inhalt ist offen, d. h. er kann je nach zu sendendem Inhalt konfiguriert werden.
 
