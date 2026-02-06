@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 334b327c7798c78fcfa90e90afe04896959037eb
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 98%
@@ -55,11 +55,11 @@ Weitere Informationen zum Senden von Testsendungen für Transaktionsnachrichten 
 
 ## [!DNL Campaign] und [!DNL Snowflake] {#ac-gs-snowflake}
 
-In der [Bereitstellung „Enterprise (FFDA)“](../architecture/enterprise-deployment.md) kann [!DNL Adobe Campaign] v8 mit zwei Datenbanken verwendet werden: einer lokalen [!DNL Campaign]-Datenbank für Echtzeit-Messaging und Einzelabfragen und das Schreiben über APIs sowie einer [!DNL Snowflake]-Cloud-Datenbank für die Kampagnenausführung, für Batch-Abfragen und die Workflow-Ausführung.
+In der [Bereitstellung „Enterprise (FFDA)“](../../v8/architecture/enterprise-deployment.md) kann [!DNL Adobe Campaign] v8 mit zwei Datenbanken verwendet werden: einer lokalen [!DNL Campaign]-Datenbank für Echtzeit-Messaging und Einzelabfragen und das Schreiben über APIs sowie einer [!DNL Snowflake]-Cloud-Datenbank für die Kampagnenausführung, für Batch-Abfragen und die Workflow-Ausführung.
 
 Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit dieser neuen Architektur vereinfacht die Campaign v8 Enterprise (FFDA)-Bereitstellung die Datenverwaltung: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen und die Daten kopieren und schon können Sie loslegen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
 
-Weitere Informationen zur Architektur von [!DNL Campaign] v8 finden Sie auf [dieser Seite](../architecture/architecture.md).
+Weitere Informationen zur Architektur von [!DNL Campaign] v8 finden Sie auf [dieser Seite](../../v8/architecture/architecture.md).
 
 
 ## Verwenden Sie Ihre Adobe ID, um eine Verbindung mit Campaign herzustellen.{#adobe-id}
@@ -76,7 +76,7 @@ In Adobe Campaign v8 sind Cube-Berichte optimiert und bieten bessere Skalierungs
 
 ## Nicht verfügbare Funktionen{#gs-unavailable-features}
 
-Beachten Sie, dass einige Funktionen im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) von Campaign nicht verfügbar sind, z. B.:
+Beachten Sie, dass einige Funktionen im Kontext einer [Enterprise (FFDA)-Bereitstellung](../../v8/architecture/enterprise-deployment.md) von Campaign nicht verfügbar sind, z. B.:
 
 * Verwaltung von Marketing-Ressourcen
 * Coupons
