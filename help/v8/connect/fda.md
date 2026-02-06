@@ -5,7 +5,7 @@ feature: Federated Data Access
 role: Admin
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 631c4986d24daeff870412566318adb170ce040f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
@@ -20,7 +20,7 @@ Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer o
 >
 >* Kompatible Datenbanken für Federated Data Access sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt.
 >
->* Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist ein spezielles externes Konto verfügbar, über das die Kommunikation zwischen der lokalen Campaign-Datenbank und der Snowflake-Cloud-Datenbank verwaltet werden kann. Dieses externe Konto wird von Adobe für Sie eingerichtet und **darf nicht** geändert werden.
+>* Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../../v8/architecture/enterprise-deployment.md) ist ein spezielles externes Konto verfügbar, über das die Kommunikation zwischen der lokalen Campaign-Datenbank und der Snowflake-Cloud-Datenbank verwaltet werden kann. Dieses externe Konto wird von Adobe für Sie eingerichtet und **darf nicht** geändert werden.
 >
 >* Benutzende von Managed Cloud Services können [Adobe kontaktieren](../start/campaign-faq.md#support), um ihre externe(n) Datenbank(en) mit Campaign zu verbinden.
 

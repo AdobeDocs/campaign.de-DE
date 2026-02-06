@@ -5,7 +5,7 @@ feature: Configuration
 role: User
 level: Beginner
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 631c4986d24daeff870412566318adb170ce040f
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 93%
@@ -22,7 +22,7 @@ Schutzmechanismen und Einschränkungen betreffen Funktionen, Architekturen oder 
 
 * Adobe Campaign v8 ist nicht für On-Premise-/Hybridbereitstellungen verfügbar, sondern ausschließlich als Adobe Managed Cloud Service
 * Für Bestandskundinnen und -kunden ist keine automatische Migration auf Adobe Campaign v8 verfügbar
-* Im Kontext einer [Enterprise (FFDA)-Implementierung](../architecture/enterprise-deployment.md) wird keine bidirektionale Datenreplikation bereitgestellt: Die Replikation erfolgt nur von der lokalen Campaign-Datenbank in die Cloud-Datenbank.
+* Im Kontext einer [Enterprise (FFDA)-Implementierung](../../v8/architecture/enterprise-deployment.md) wird keine bidirektionale Datenreplikation bereitgestellt: Die Replikation erfolgt nur von der lokalen Campaign-Datenbank in die Cloud-Datenbank.
 * Die [in diesem Abschnitt](v7-to-v8.md#gs-unavailable-features) aufgelisteten Funktionen sind im aktuellen Build von Campaign v8 nicht verfügbar.
 * Einige nicht verfügbare oder entfernte Funktionen sind weiterhin in der Benutzeroberfläche sichtbar.
 * Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) sind Mechanismen zur Anmeldung (Opt-in-) und zur Abmeldung (Opt-out) sowie die Mobile-Registrierung asynchrone Prozesse. Anfragen werden stündlich über einen speziellen technischen Workflow verarbeitet. [Weitere Informationen](../architecture/replication.md#tech-wf)
