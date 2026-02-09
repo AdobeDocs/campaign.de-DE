@@ -3,10 +3,10 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 981fa2029528cac5806da7c39aec3a2e6de0bf56
+source-git-commit: 4fe8b8eaf88f763e796dbe06ef3c1477de12bad6
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 21%
+source-wordcount: '921'
+ht-degree: 18%
 
 ---
 
@@ -28,14 +28,14 @@ Der **neue SMS-**-Connector) ist jetzt für alle Kunden (GA) verfügbar. Weiterf
 
 Diese Version enthält eine Reihe von Funktionen, die in der Web-Benutzeroberfläche von Campaign verfügbar sind:
 
-* [Mehrsprachige Bereitstellungsfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=de){target="_blank"}
-* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=de){target="_blank"}
-* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=de){target="_blank"}
-* [Inhaltsexperimente - A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=de){target="_blank"}
-* [Kontinuierliche Versandaktivität](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=de){target="_blank"}
-* [Validierungsverwaltung für Kampagnen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=de){target="_blank"}
+* [Mehrsprachige Bereitstellungsfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Inhaltsexperimente - A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Kontinuierliche Versandaktivität](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Validierungsverwaltung für Kampagnen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
+Weitere Informationen finden Sie in den Versionshinweisen zur [ Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-9-1}
 
@@ -52,36 +52,43 @@ Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benu
 
 ### Fehlerbehebungen {#fixes-8-9-1}
 
-* Es wurde ein Problem behoben, bei dem dynamische Berichte bei der Gruppierung nach bestimmten Spalten falsche Zählungen anzeigten. (NEO-86898)
-* Es wurden Datendiskrepanzen zwischen dynamischen Berichten und tatsächlichen Kampagnendaten behoben. (NEO-88068)
-* Es wurden Verkettungsprobleme mit PostgreSQL „char“-Feldtypen behoben, die zu unerwarteten Ergebnissen in Abfragen führten. (NEO-87769)
-* Fehlerkorrektur - Der JavaScript-Befehl logInfo verarbeitet bestimmte Parameter nicht ordnungsgemäß. (NEO-88263)
-* Behobene Synchronisierungsprobleme bei der Echtzeit-Ereignisverarbeitung in Message Center. (NEO-88330)
-* Es wurde ein Problem behoben, bei dem der Visual Editor HTML-Inhalte automatisch neu formatierte, was zu Layout-Änderungen führte. (NEO-88409)
-* Es wurde ein Problem behoben, bei dem die Aktivität Deduplizierung nicht ordnungsgemäß mit temporären Schemata funktionierte. (NEO-88577)
-* Fehlerkorrektur - Testadressen werden jetzt beim Senden von Testsendungen generiert. (NEO-88720)
-* Verbesserte PostgreSQL-Abfrageleistung durch Optimierung der Behandlung von Partitionsspalten. (NEO-88771)
-* Es wurde ein Problem behoben, bei dem Dateiübertragungsaktivitäten Zeilenfortsetzungszeichen nicht ordnungsgemäß verarbeiten konnten. (NEO-88812)
-* Verbesserte PostgreSQL-Abfrageoptimierung für eine bessere Leistung in großen Datensätzen. (NEO-88885)
-* Es wurde ein Fehler „Berechtigung verweigert“ behoben, der das Öffnen von Hybrid-Kampagnen verhinderte. (NEO-88955)
-* Erweiterte Barcode-Funktionsunterstützung für die Verarbeitung längerer Textzeichenfolgen. (NEO-88958)
-* Fehlerkorrektur - In den Kampagnenprotokollen tritt jetzt kein Fehler mehr auf, wenn Testsendungen mit wiederkehrenden Sendungen verwendet werden. (NEO-88976)
-* Fehlerkorrektur - E-Mail-Versandvorgänge werden jetzt in bestimmten Szenarien zuverlässig ausgeführt. (NEO-89019)
-* Es wurde ein Problem behoben, bei dem der Workflow-Startmodus unerwartet von Sofort in Normal geändert wurde. (NEO-89025)
-* Es wurden Fehler behoben, die bei der Ausführung der Aktivität Daten-Update unter bestimmten Bedingungen auftraten. (NEO-89031)
-* Es wurde ein Problem behoben, bei dem die Aktivität Daten-Update benutzerdefinierte Schemadateien verlor. (NEO-89056)
-* Fehlerkorrektur - Bei der Versandvorbereitung tritt jetzt kein Validierungsfehler mehr auf. (NEO-89063)
-* Die ungültige SQL-Generierung wurde behoben, wenn Abfragen Filter für 1:1-Link-Beziehungen enthielten. (NEO-89065)
-* Es wurde ein Problem behoben, bei dem die Aktivität Inkrementelle Abfrage die konfigurierte Größenbeschränkung nicht beachtete. (NEO-89066)
-* Verbesserte Workflow-Leistung in FFDA-Bereitstellungen für groß angelegte Vorgänge. (NEO-89098)
-* Verbesserte Speicherverwaltung und Stabilität für Workflow-Prozesse. (NEO-89105)
-* Strenge Spaltenvalidierung für Web-Formulare wurde aktiviert, um Dateninkonsistenzen zu vermeiden. (NEO-89111)
-* Es wurden Synchronisationsprobleme des Message Centers behoben, die zu Verarbeitungsverzögerungen führten. (NEO-89138)
-* Fehlerkorrektur - Der Workflow Zustellbarkeit funktioniert jetzt fehlerfrei. (NEO-89160)
-* Fehler, die beim Ausführen von JavaScript-Code-Aktivitäten in Workflows aufgetreten sind, wurden korrigiert. (NEO-89169)
-* Hartcodierte Snowflake Warehouse-Konfigurationen wurden entfernt, um ordnungsgemäße Einstellungen für externe Konten zu ermöglichen. (NEO-89201)
-* Behebung von 403 Fehlern, die bei Workflow-Dateiübertragungsvorgängen auftraten und die nicht zulässig waren. (NEO-89226)
-* Optimierte langsame Abfragen der Empfängertabelle in FFDA-Bereitstellungen. (NEO-89268)
-* Es wurde ein Problem behoben, bei dem inkrementelle Abfrageaktivitäten konfigurierte Zeitpläne ignorierten. (NEO-89317)
-* Behobene Zugriffsfehler beim Öffnen von Kampagnen in Hybridumgebungen. (NEO-89320)
+* Es wurde ein Problem behoben, bei dem die Datenbankstruktur nach sysFilter-Änderungen nicht aktualisiert werden konnte. (NEO-93306)
+* Es wurde ein Problem behoben, bei dem dynamische Berichtsdaten nach der Migration fehlten. (NEO-92962)
+* Fehlerkorrektur - Der Versandstatus wird jetzt korrekt aktualisiert. (NEO-92908)
+* Es wurde eine Problemumgehung für Datenblöcke hinzugefügt, die die Katalogeinschränkung FDA-Verwendung verwenden. (NEO-92900)
+* Es wurde ein Problem behoben, bei dem das HTML-Layout auf dem Windows Outlook-Desktop durch den Visual Editor beschädigt wurde. (NEO-92611)
+* Es wurde ein kritisches Problem mit der Datenintegrität behoben, bei dem Bereitstellungs-Primärschlüssel auf der Mid-Instanz nach dem Upgrade dupliziert wurden. (NEO-92424)
+* Fehlerkorrektur - Links können jetzt im Dialogfeld Tracking und Bilder in einem Versand deaktiviert werden. (NEO-92381)
+* Fehlerkorrektur - Die Funktion nms.subscription.RecipientSubscribe() funktioniert jetzt auch bei Massenabonnements. (NEO-92308)
+* Fehlerkorrektur - Versandfehler treten jetzt nicht mehr auf, wenn Versandteile nach dem Upgrade fehlen. (NEO-92278)
+* Fehlerkorrektur - Der Tracking-Workflow funktioniert jetzt einwandfrei. (NEO-92239)
+* Es wurde ein Problem behoben, bei dem nach der Erstellung einer Liste mithilfe eines Workflows temporäre Aufzählungsreferenzen in der XML-Liste fehlten. (NEO-91158)
+* Es wurde ein Problem behoben, bei dem das Dialogfeld Veröffentlichen/Veröffentlichung rückgängig machen nicht geschlossen und eingefroren wurde. (NEO-91038)
+* Es wurde ein Problem behoben, bei dem Empfängerinnen und Empfänger, die den Status „Vom Dienstleister berücksichtigt“ nicht erreichten, Momentum nicht erreichten. (NEO-90927)
+* Es wurde ein Problem behoben, bei dem in v8 für Opt-out-Links der Ursprung (Abmeldung) fehlte. (NEO-90714)
+* Fehlerkorrektur - Das Hinzufügen von Coupons schlägt bei der Versandvorbereitung fehl. (NEO-90547)
+* Es wurde ein Problem behoben, bei dem die Anzahl der Einfüge-Zurückweisungen nicht korrekt auf der Registerkarte Audit angezeigt wurde. (NEO-90318)
+* Es wurde ein Sicherheitsproblem behoben, das zu einem Denial of Service der Anwendung führen konnte. (NEO-89984)
+* Es wurde ein Problem behoben, bei dem die heruntergeladene PDF des Hotclick-Berichts fehlerhaft war. (NEO-89954)
+* Es wurde ein SSL-Fehler behoben, der nach dem Upgrade auftrat und beim Lesen von Fehlern zu einem unerwarteten ENOF führte. (NEO-89108)
+* Es wurde ein Problem behoben, bei dem Daten nach einem Upgrade nicht im Datenschema abgefragt werden konnten. (NEO-88663)
+* Fehlerkorrektur - Beim Verketten eines „char“-Felds in PostgreSQL 15 tritt jetzt kein Fehler mehr auf. (NEO-88028)
+* Fehlerkorrektur - Beim Speichern oder Duplizieren der Vorlage ändert sich jetzt nicht mehr die Reihenfolge der Versandvorlagenvariablen. (NEO-87845)
+* Es wurde ein Problem behoben, bei dem das Erstellen eines neuen Datenbibliotheksschemas zum Absturz der Web-Schnittstelle führte. (NEO-87816)
+* Es wurde ein Problem behoben, bei dem der Komplement-Set-Segment-Code der Deduplizierungsaktivität nicht funktionierte. (NEO-87711)
+* Es wurde eine Anfrage für ein Installationspaket ohne X11-Abhängigkeit behoben. (NEO-87471)
+* Es wurde ein Problem behoben, bei dem Segment-Codes nicht in dynamischen Berichten verwendet werden konnten. (NEO-87276)
+* Es wurde ein Problem behoben, bei dem Workflows in der Aktivität Daten-Update hängen blieben. (NEO-87252)
+* Es wurde ein Problem behoben, bei dem BigQuery eine falsche Zeitzone verwendete. (NEO-86622)
+* Es wurde ein JavaScript-Fehler bei der Auswertung des Skripts „mcSynch_mcExec1/jsReplicateUrl“ korrigiert. (NEO-86553)
+* Es wurde ein Problem behoben, bei dem aufgrund einer Kennungsberechnungsmethode doppelte Ereignisse in der eventHistory-Tabelle angezeigt wurden. (NEO-86544)
+* Es wurde ein Problem behoben, bei dem die Registerkarte Erweitert beim Kopieren für iOS Push nicht angezeigt wurde. (NEO-86231)
+* Es wurde ein Problem behoben, bei dem der Workflow Referenztabellen replizieren beim Replizieren des nms:delivery-Schemas fehlgeschlagen ist. (NEO-85884)
+* Fehlerkorrektur - Beim Senden von Sendungen treten jetzt keine Domain-Fehler mehr auf, die den MXIP-Adressen entsprechen. (NEO-85238)
+* Es wurde eine Möglichkeit hinzugefügt, technische Versandvorlagen nach allen Änderungen zu aktualisieren, die an Optionen vorgenommen wurden. (NEO-84149)
+* Fehlerkorrektur - Im vordefinierten Workflow Abrechnung tritt jetzt kein Fehler mehr auf. (NEO-83624)
+* Es wurde ein Problem behoben, bei dem Duplikate nur anhand des Primärschlüssels der Zieldatensätze ausgeschlossen wurden. (NEO-82910)
 * Es wurden Diskrepanzen in den Berichten der Web-Benutzeroberfläche von Campaign behoben, bei denen Tracking-Statistiken im Vergleich zur Konsole andere Werte angezeigt haben. Die Berichte Tracking-Indikatoren, Versandzusammenfassung und URL-Clickstreams zeigen jetzt über beide Schnittstellen hinweg konsistente Metriken an. (NEO-82339)
+* Es wurde ein Problem behoben, bei dem sich das Datum der letzten Änderung auch dann änderte, wenn der Datensatz in der Aktivität Daten-Update nicht aktualisiert werden sollte. (NEO-82002)
+* Es wurde ein Problem behoben, bei dem das Hinzufügen neuer Attribute in einer Liste dazu führte, dass Workflows, die die Liste lesen, fehlschlugen. (NEO-80258)
+* Anomalie im Bericht „Tracking-Indikatoren“ behoben. (NEO-79466)
