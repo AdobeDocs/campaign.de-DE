@@ -101,7 +101,7 @@ Ein **externes Konto** Externe Datenbank) wird verwendet, um über Federated Dat
 >
 >Externe Datenbanken, die mit Adobe Campaign v8 kompatibel sind, sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt. FDA-Verbindungen verwenden ODBC-Treiber. Bei Adobe Campaign Managed Cloud Services werden der ODBC-Treiber und die Konfiguration externer Konten von Adobe eingerichtet.
 
-Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-Engine ab. Bei Adobe Campaign Managed Cloud Services wird die Konfiguration externer Konten durch Adobe durchgeführt. Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu [Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-Engine ab. Bei Adobe Campaign Managed Cloud Services wird die Konfiguration externer Konten durch Adobe durchgeführt. Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu [Adobe Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Externes DataBricks-Konto {#databricks-external-accounts}
 
