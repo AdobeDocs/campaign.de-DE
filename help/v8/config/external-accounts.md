@@ -5,10 +5,10 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: a0aadd7e991dcceb5646f0afbc9cb1534e459e2c
+source-git-commit: 776a0e5eead9161b7e2c9d7746c72cba42ea42cb
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 66%
+source-wordcount: '1376'
+ht-degree: 67%
 
 ---
 
@@ -101,7 +101,7 @@ Ein **externes Konto** Externe Datenbank) wird verwendet, um über Federated Dat
 >
 >Externe Datenbanken, die mit Adobe Campaign v8 kompatibel sind, sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt. FDA-Verbindungen verwenden ODBC-Treiber. Bei Adobe Campaign Managed Cloud Services werden der ODBC-Treiber und die Konfiguration externer Konten von Adobe eingerichtet.
 
-Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-Engine ab. Bei Adobe Campaign Managed Cloud Services wird die Konfiguration externer Konten durch Adobe durchgeführt. Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu [Adobe Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-Engine ab. Bei Adobe Campaign Managed Cloud Services wird die Konfiguration externer Konten durch Adobe durchgeführt. Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu [Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Externes DataBricks-Konto {#databricks-external-accounts}
 
@@ -113,7 +113,7 @@ So konfigurieren Sie die OAuth2-Authentifizierung über einen Service-Prinzipal 
 
 1. Der DataBricks Workspace-Administrator aktiviert Service-Prinzipale für den DataBricks Workspace und generiert Anmeldeinformationen. Um den Zugriff auf Ihre Azure-Datenblöcke-Ressourcen mit OAuth zu autorisieren, erstellen Sie ein OAuth-Geheimnis (das zum Generieren von OAuth-Zugriffstoken für die Authentifizierung verwendet wird).
 2. Erstellen oder bearbeiten Sie in Adobe Campaign ein externes Databricks-Konto und öffnen Sie die Registerkarte **OAuth**.
-3. Fügen Sie die Anmeldeinformationen in das Feld **Secret** der Registerkarte OAuth des externen Datenbricks-Kontos ein.
+3. Fügen Sie die Anmeldeinformationen in die Felder der Registerkarte OAuth des externen Datenbricks-Kontos ein.
 4. Verwenden **[!UICONTROL Verbindung testen]** um die Konfiguration zu überprüfen.
 
 ### X (früher bekannt als Twitter) {#twitter-external-account}
@@ -126,7 +126,7 @@ Ein externes **Twitter**-Konto wird verwendet, um Campaign mit Ihrem X-Konto zu 
 
 * **Web-Analyse** – Das externe **[!UICONTROL Web-Analyse (Adobe Analytics)]**-Konto wird verwendet, um die Datenübertragung von Adobe Analytics an Adobe Campaign zu konfigurieren. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aa.md).
 
-* **Adobe Experience Manager** – Mit dem externen **[!UICONTROL AEM]**-Konto können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Experience Manager finden [&#x200B; auf dieser Seite &#x200B;](../connect/ac-aem.md).
+* **Adobe Experience Manager** – Mit dem externen **[!UICONTROL AEM]**-Konto können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Experience Manager finden [ auf dieser Seite ](../connect/ac-aem.md).
 
 
 ## Externe CRM-Connector-Konten {#crm-external-accounts}
