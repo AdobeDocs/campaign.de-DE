@@ -1,15 +1,15 @@
 ---
 title: Best Practices für die Campaign-Sicherheit
-description: Erste Schritte mit Best Practices für die Campaign-Sicherheit
+description: Empfohlene Anleitungen zur sicheren Konfiguration für Campaign
 feature: Privacy, PI
 role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: da2274cfd19bb067fcc1e990360093f161d5638a
+source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '2820'
-ht-degree: 69%
+source-wordcount: '2887'
+ht-degree: 67%
 
 ---
 
@@ -23,6 +23,7 @@ Darüber hinaus arbeiten wir mit unseren Partnern sowie mit führenden Sicherhei
 >
 >**Campaign v8 Managed Cloud Services:** Die Infrastruktur (Netzwerk, Server, TLS, Patching) wird von Adobe verwaltet. Diese Seite konzentriert sich auf die Konfiguration auf Mandanten- und Anwendungsebene, die Sie steuern: Zugriffsverwaltung, Authentifizierung, Instanzeneinstellungen, Datenschutz, Codierung und betriebliche Verfahren.
 
+
 ## Sicherheitscheckliste {#security-checklist}
 
 Verwenden Sie diese Checkliste, um Ihre Konfiguration an den empfohlenen sicheren Standardwerten auszurichten:
@@ -34,6 +35,16 @@ Verwenden Sie diese Checkliste, um Ihre Konfiguration an den empfohlenen sichere
 * [Kodierungsrichtlinien](#coding-guidelines): Keine hartcodierten Geheimnisse, Eingabe validieren, parametrisierte SQL, Captchas
 * [Datenbeschränkung](#data-restriction): Beschränken des Zugriffs auf Passwort- und Geheimnisfelder in externen Konten
 * [Betrieb und Compliance](#operational-and-compliance): Mit dieser Grundlinie regelmäßig vergleichen und Audit-Protokoll verwenden
+
+### Wo Sie diese Anleitung finden {#public-guidance}
+
+Dieser empfohlene Leitfaden zur sicheren Konfiguration wird öffentlich auf Experience League veröffentlicht. Sie können sie uneingeschränkt verwenden und freigeben:
+
+* **Diese Seite** - [Best Practices für die Campaign-Sicherheit](#ac-security) (Checkliste und detaillierte Abschnitte)
+* **[Erweitertes Sicherheits-Add-on](enhanced-security.md)** - Sichere CMK-Integration und sicheres VPN-Tunneln
+* **[Erste Schritte mit Berechtigungen](../start/gs-permissions.md)** - Zugriff und Produktprofile
+* **[Anzeige von personenbezogenen Daten einschränken](../dev/restrict-pi-view.md)** - Einschränken des Zugriffs auf sensible Felder
+* **[Implementierungsrichtlinien](../start/implement.md)** - Sicherheit und Datenschutz vor dem Start
 
 ## Datenschutz
 

@@ -1,19 +1,21 @@
 ---
 title: Campaign-Add-on für verbesserte Sicherheit
-description: Erste Schritte mit dem Campaign-Add-on für verbesserte Sicherheit
+description: Anleitung zur sicheren Konfiguration für das Add-on für die erweiterte Sicherheit von Campaign
 feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 3f36d7c425dd5a9a13e1de7a77371b29a462dbea
+source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 97%
+source-wordcount: '743'
+ht-degree: 94%
 
 ---
 
 
 # Campaign-Add-on für verbesserte Sicherheit {#enhanced-security}
+
+Diese Seite ist Teil der [öffentlich verfügbaren empfohlenen sicheren Konfigurationsanleitung von Adobe ](security.md#public-guidance) Campaign v8.
 
 Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet [!DNL Adobe Campaign] ein neues Add-on für **verbesserte Sicherheit**.
 
