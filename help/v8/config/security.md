@@ -6,10 +6,10 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
+source-git-commit: da2274cfd19bb067fcc1e990360093f161d5638a
 workflow-type: tm+mt
-source-wordcount: '2177'
-ht-degree: 99%
+source-wordcount: '2820'
+ht-degree: 69%
 
 ---
 
@@ -18,6 +18,22 @@ ht-degree: 99%
 Bei Adobe hat die Sicherheit Ihres digitalen Erlebnisses höchste Priorität. Sicherheitsmaßnahmen sind tief in unsere internen Prozesse und Tools rund um die Entwicklung und den Betrieb von Software implementiert und werden von unseren Teams über alle Funktionsbereiche hinweg strikt befolgt, um Sicherheitsvorfällen vorzubeugen bzw. diese schnellstmöglich zu erkennen und zu beheben.
 
 Darüber hinaus arbeiten wir mit unseren Partnern sowie mit führenden Sicherheitsanalysten, Sicherheitsforschungseinrichtungen und anderen Branchenverbänden zusammen und gewährleisten so, mit den neuesten Bedrohungen und Schwachstellen Schritt halten zu können und regelmäßig fortschrittliche Sicherheitsverfahren in unsere Angebote und Services zu integrieren.
+
+>[!NOTE]
+>
+>**Campaign v8 Managed Cloud Services:** Die Infrastruktur (Netzwerk, Server, TLS, Patching) wird von Adobe verwaltet. Diese Seite konzentriert sich auf die Konfiguration auf Mandanten- und Anwendungsebene, die Sie steuern: Zugriffsverwaltung, Authentifizierung, Instanzeneinstellungen, Datenschutz, Codierung und betriebliche Verfahren.
+
+## Sicherheitscheckliste {#security-checklist}
+
+Verwenden Sie diese Checkliste, um Ihre Konfiguration an den empfohlenen sicheren Standardwerten auszurichten:
+
+* [Zugriffsverwaltung](#access-management): Sicherheitsgruppen erstellen, entsprechende Rechte zuweisen, Admin-Verwendung einschränken, einen Benutzer pro Benutzer verwenden, regelmäßig überprüfen
+* [Authentifizierung und Sitzung](#authentication-and-session): Verwenden von Adobe IMS, starke Identitätsrichtlinie, Sitzungs-Timeout
+* [Instanz- und Netzwerksicherheit](#instance-and-network-security): IP-Zulassungsliste, URL-Berechtigungen, GPG-Schlüssel über das Control Panel
+* [Daten- und PII-](#data-and-pii-protection): HTTPS, Einschränkung der PII-Ansicht, Einschränkung von Passwörtern, Schutz sensibler Seiten
+* [Kodierungsrichtlinien](#coding-guidelines): Keine hartcodierten Geheimnisse, Eingabe validieren, parametrisierte SQL, Captchas
+* [Datenbeschränkung](#data-restriction): Beschränken des Zugriffs auf Passwort- und Geheimnisfelder in externen Konten
+* [Betrieb und Compliance](#operational-and-compliance): Mit dieser Grundlinie regelmäßig vergleichen und Audit-Protokoll verwenden
 
 ## Datenschutz
 
@@ -165,38 +181,58 @@ Fügen Sie zu diesem Zweck getrackte Links zu Ihren Nachrichten hinzu, um die Wi
 >
 >Webtracking ist in Campaign v8 nicht verfügbar. Weitere Informationen zu nicht verfügbaren Funktionen finden Sie auf [dieser Seite](../start/v7-to-v8.md#gs-unavailable-features).
 
-<!--
-Privacy configuration and hardening is a key element of security optimization. Here are some best practices to follow regarding privacy:
+## Daten- und Datenschutz {#data-and-pii-protection}
 
-* Protect your customer Personal Information (PI) by using HTTPS instead of HTTP
-* Use [PI view restriction](../dev/restrict-pi-view.md) to protect privacy and prevent data from being misused
-* Make sure that encrypted passwords are restricted
-* Protect the pages that might contain personal information such as mirror pages, web applications, etc.
--->
+Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale Bestandteile der Optimierung der Sicherheit. Befolgen Sie die folgenden Best Practices:
+
+* **HTTPS für alle Endpunkte verwenden** - Stellen Sie sicher, dass alle von Campaign verwendeten Endpunkte (Tracking, Mirrorseite, Web-Anwendungen, APIs) über HTTPS bereitgestellt werden.
+* **PII-Ansicht beschränken** - Verwenden Sie [PII-Ansichtsbeschränkung](../dev/restrict-pi-view.md), damit nur autorisierte Benutzende sensible Felder (z. B. E-Mail, Telefon) in Schemata und Bildschirmen sehen können.
+* **Zugriff auf verschlüsselte Kennwörter beschränken** - Beschränken des Zugriffs auf Passwort- und Geheimnisfelder in externen Konten und anderen Schemata, sodass nur Administratoren oder eine minimale Gruppe von Benutzern sie anzeigen können. Siehe [Dateneinschränkung](#data-restriction) unten.
+* **Schutz sensibler Seiten** - Beschränken des Zugriffs auf Mirrorseiten, Web-Anwendungen und Landingpages, die personenbezogene Daten anzeigen oder erfassen; Verwenden von Benutzer- und Ordnerberechtigungen und gegebenenfalls Captchas und Einverständnis.
 
 >[!NOTE]
 >
 >Adobe unterstützt Sie als Benutzerin bzw. Benutzer von Managed Cloud Services bei der Implementierung dieser Konfigurationen in Ihrer Umgebung.
 
-
-## Zugriffsverwaltung 
+## Zugriffsverwaltung  {#access-management}
 
 Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements. Im Folgenden finden Sie die wichtigsten Best Practices:
 
-* Erstellen Sie eine ausreichende Anzahl von Sicherheitsgruppen.
-* Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
+* **ausreichend Sicherheitsgruppen erstellen** - Benutzergruppen definieren, die mit den Rollen übereinstimmen, und nur die Rechte zuweisen, die jede Rolle benötigt.
+* **Überprüfen, ob jeder Benutzer über die entsprechenden Zugriffsrechte verfügt** - Wenden Sie das Prinzip der geringsten Rechte an. Gewähren Sie standardmäßig keine ADMINISTRATIONS- oder anderen allgemeinen Rechte.
+* **Verwenden Sie nicht den Admin-Operator und vermeiden Sie zu viele Operatoren in der Admin-Gruppe** - Geben Sie das integrierte Admin-Konto nicht frei. Erstellen Sie für Rechenschaftspflicht und Audit einen Operator pro physischem Benutzer.
+* **Ein Benutzer pro physischem Benutzer** - Geben Sie keine Konten frei. Erstellen Sie pro Person einen Campaign-Benutzer (Adobe ID), damit Audit-Protokolle zugeordnet werden können.
+* **Spezifische Berechtigungen mit hohen Berechtigungen beschränken** - Gewähren Sie **ADMINISTRATION**, **PROGRAM EXECUTION** (createProcess) und **SQL** nur einer kleinen Anzahl vertrauenswürdiger Operatoren. Dokumentieren Sie, wer diese Berechtigungen hat und warum.
+* **Zugriff regelmäßig überprüfen** - Überprüfen Sie Benutzer, Benutzergruppen und Ordnerberechtigungen regelmäßig. Entfernen oder reduzieren Sie den Zugriff, wenn sich die Rollen ändern oder Personen die Seite verlassen.
+* **Produktprofile konsistent verwenden** - Weisen Sie in Admin Console vorzugsweise Benutzende Produktprofilen (Benutzergruppen) zu. Achten Sie auf eine konsistente Benennung (z. B. `campaign - <instance> - <group>`). Siehe [Erste Schritte mit Berechtigungen](../start/gs-permissions.md).
+* **Zugriff auf das Control**: In Campaign v8 können Produktprofile oder spezifische Berechtigungen, deren Name „Admin“ enthält, Zugriff auf das Campaign Control Panel gewähren. Verwenden Sie „admin“ nicht in Profil- oder Gruppennamen, es sei denn, diese Benutzer sollten Zugriff auf das Control Panel haben.
 
-Weiterführende Informationen zu Berechtigungen finden Sie in [diesem Abschnitt](../start/gs-permissions.md)
+Weiterführende Informationen zu Berechtigungen finden Sie in [diesem Abschnitt](../start/gs-permissions.md).
 
-## Leitlinien zur Codierung
+## Authentifizierung und Sitzung {#authentication-and-session}
+
+* **Adobe IMS verwenden** - Alle Benutzer sollten sich mit ihrer Adobe ID (IMS) anmelden. Verlassen Sie sich nicht auf ältere Anmelde-/Kennworte für tägliche Benutzer.
+* **Starke Identitäts- und Passwortrichtlinie erforderlich** - Verwenden Sie Admin Console oder Ihren Identitätsanbieter für MFA- und Passwortrichtlinien, um sicherzustellen, dass nur autorisierte Benutzende Campaign-Produktprofilen zugewiesen werden.
+* **Sitzungs-Timeout konfigurieren** Legen Sie, sofern konfigurierbar (z. B. in der Client-Konsole), einen angemessenen Sitzungs-Timeout fest und sperren Sie den Bildschirm, wenn Sie die Workstation verlassen.
+
+## Instanz- und Netzwerksicherheit {#instance-and-network-security}
+
+Verwenden Sie als Produktadministrator von Campaign v8 das [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"}, um die Sicherheit auf Instanzebene zu verwalten:
+
+* **IP-**: Verwalten Sie die IP-Zulassungsliste auf die Zulassungsliste setzte für den Zugriff auf Instanzen, beschränken Sie sie auf bekannte Netzwerke (z. B. Office, VPN) und vermeiden Sie nach Möglichkeit zu große Bereiche.
+* **URL-Berechtigungen** - Beschränken Sie URL-Berechtigungen auf die Domains, die Ihre Instanz aufrufen muss (APIs, Tracking, externe Dienste), um das Risiko des Missbrauchs Server-seitiger Anfragen zu reduzieren.
+* **GPG-Schlüssel** - Wenn Sie Verschlüsselung für Dateiübertragungen oder andere Anwendungsfälle verwenden, verwalten Sie GPG-Schlüssel über das Control Panel und drehen Sie sie entsprechend Ihrer Sicherheitsrichtlinie.
+
+## Leitlinien zur Codierung {#coding-guidelines}
 
 Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) sollten Sie sich grundsätzlich an diesen Leitlinien orientieren:
 
-* **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Konkatenation, und vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen auf die Zulassungsliste setzen.
-
-* **Schutz des Datenmodells**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken, und fügen Sie Systemfilter hinzu (sysFilter).
-
-* **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
+* **Skripterstellung** - Versuchen Sie, unformatiertes SQL zu vermeiden. Verwenden Sie parametrisierte Funktionen anstelle der Verkettung von Zeichenfolgen. Vermeiden Sie SQL-Injection, indem Sie nur die SQL-Funktionen hinzufügen, die Sie zur Zulassungsliste benötigen.
+* **Datenmodell sichern** - Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken und Systemfilter hinzuzufügen (sysFilter).
+* **Hinzufügen von Captchas in Web-Anwendungen** - Hinzufügen von Captchas zu öffentlichen Landingpages und Abonnementseiten.
+* **Geheimnisse nicht fest kodieren** - Kennwörter, API-Schlüssel oder Token in Workflows, JavaScript oder JSSP nicht fest kodieren, sondern externe Konten oder sichere Konfigurationen verwenden.
+* **Eingabe validieren und bereinigen** - Benutzereingaben in Web-Anwendungen und Workflow-Parametern überprüfen und bereinigen, um Injektions- und XSS-Risiken zu reduzieren.
+* **Zulassungsliste für SQL verwenden** - Wenn eine SQL- oder Skriptausführung erforderlich ist, die Zulassungsliste für zulässige SQL-Funktionen verwenden und das Erstellen von Abfragen aus Benutzereingaben über eine Zeichenfolgenverkettung vermeiden.
 
 Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target="_blank"}.
 
@@ -211,11 +247,11 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 * `https://<%= sub-domain >.domain.tld/path`
 * `https://sub.domain<%= main domain %>/path`
 
-## Dateneinschränkung
+## Dateneinschränkung {#data-restriction}
 
 Sie müssen sicherstellen, dass keine authentifizierten Benutzer mit unzureichender Berechtigung auf die verschlüsselten Passwörter zugreifen können. Dazu können Sie den Zugriff entweder auf Passwortfelder oder auf die gesamte Entität einschränken.
 
-Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. Weiterführende Informationen finden Sie auf [dieser Seite](../dev/restrict-pi-view.md).
+Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. Weitere Informationen finden Sie auf [dieser Seite](../dev/restrict-pi-view.md).
 
 1. Gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL Konfigurieren]** > **[!UICONTROL Datenschemata]**.
 
@@ -273,24 +309,7 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Kont
    >
    >Sie können `$(loginId) = 0 or $(login) = 'admin'` durch `hasNamedRight('admin')` ersetzen, damit diese Passwörter für alle Benutzer mit Administratorberechtigung einsehbar sind.
 
+## Betrieb und Compliance {#operational-and-compliance}
 
-## Zugriffsverwaltung 
-
-Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements. Im Folgenden finden Sie die wichtigsten Best Practices:
-
-* Erstellen Sie eine ausreichende Anzahl von Sicherheitsgruppen.
-* Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
-
-Weiterführende Informationen zu Berechtigungen finden Sie in [diesem Abschnitt](../start/gs-permissions.md).
-
-## Leitlinien zur Codierung
-
-Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) sollten Sie sich grundsätzlich an diesen Leitlinien orientieren:
-
-* **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Konkatenation, und vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen auf die Zulassungsliste setzen.
-
-* **Schutz des Datenmodells**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken, und fügen Sie Systemfilter hinzu (sysFilter).
-
-* **Hinzufügen von Captchas in Web-Anwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
-
-Weitere Informationen finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=de#installing-campaign-classic){target="_blank"}.
+* **Mit sicherer Grundlinie vergleichen** - Vergleichen Sie regelmäßig Ihre Benutzergruppen, spezifischen Berechtigungen und Ordnerberechtigungen mit den Empfehlungen auf dieser Seite (und ggf. mit dem Add-on [Erweiterte Sicherheit](enhanced-security.md)), um die empfohlenen sicheren Standardwerte einzuhalten.
+* **Verwenden des Audit-Protokolls** - Nutzen Sie das Audit-Protokoll von Campaign für wichtige Änderungen (z. B. Workflows, Sendungen, Schlüsselkonfiguration); bewahren Sie Protokolle auf und überprüfen Sie sie, wie es Ihre Compliance- und Aufbewahrungsrichtlinie erfordert.
