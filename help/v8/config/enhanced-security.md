@@ -15,7 +15,7 @@ ht-degree: 94%
 
 # Campaign-Add-on für verbesserte Sicherheit {#enhanced-security}
 
-Diese Seite ist Teil der [öffentlich verfügbaren empfohlenen sicheren Konfigurationsanleitung von Adobe ](security.md#public-guidance) Campaign v8.
+Diese Seite ist Teil der [öffentlich verfügbaren empfohlenen sicheren Konfigurationsanleitung von Adobe &#x200B;](security.md#public-guidance) Campaign v8.
 
 Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet [!DNL Adobe Campaign] ein neues Add-on für **verbesserte Sicherheit**.
 
