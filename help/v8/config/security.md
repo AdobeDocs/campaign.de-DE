@@ -6,9 +6,9 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
+source-git-commit: 956b2bf5bb8b08654c039b190c020d80ebea223d
 workflow-type: tm+mt
-source-wordcount: '2887'
+source-wordcount: '2906'
 ht-degree: 67%
 
 ---
@@ -38,9 +38,10 @@ Verwenden Sie diese Checkliste, um Ihre Konfiguration an den empfohlenen sichere
 
 ### Wo Sie diese Anleitung finden {#public-guidance}
 
-Dieser empfohlene Leitfaden zur sicheren Konfiguration wird öffentlich auf Experience League veröffentlicht. Sie können sie uneingeschränkt verwenden und freigeben:
+Adobe Campaign bietet derzeit keine empfohlenen sicheren Konfigurationsanleitungen in einem maschinenlesbaren Format. In der folgenden Dokumentation können Sie Ihre aktuellen Einstellungen mit den empfohlenen sicheren Standardeinstellungen vergleichen:
 
 * **Diese Seite** - [Best Practices für die Campaign-Sicherheit](#ac-security) (Checkliste und detaillierte Abschnitte)
+* **[Kampagneneinstellungen (FAQ)](../start/campaign-faq-comprehensive.md#settings)** - Einstellungen mit empfohlenen sicheren Standardeinstellungen vergleichen
 * **[Erweitertes Sicherheits-Add-on](enhanced-security.md)** - Sichere CMK-Integration und sicheres VPN-Tunneln
 * **[Erste Schritte mit Berechtigungen](../start/gs-permissions.md)** - Zugriff und Produktprofile
 * **[Anzeige von personenbezogenen Daten einschränken](../dev/restrict-pi-view.md)** - Einschränken des Zugriffs auf sensible Felder
