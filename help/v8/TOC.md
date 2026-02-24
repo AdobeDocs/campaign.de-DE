@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
+source-git-commit: 4626d93dea22e0ee458babfd53758c8c63a98ad4
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '840'
 ht-degree: 89%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 89%
    + [Bekannte Probleme](start/known-issues.md)
    + [Kompatibilitätsmatrix](start/compatibility-matrix.md)
    + [Aktualisierungen der Dokumentation](start/documentation-updates.md)
+   + [Bericht zu monatlichen Aktualisierungen](../../monthly-updates-report.md)
 + Erste Schritte {#new}
    + [Erste Schritte mit Adobe Campaign](start/get-started.md)
    + [Wichtigste Funktionen](start/whats-new.md)
@@ -52,7 +53,7 @@ ht-degree: 89%
    + [Erste Schritte mit Nachrichten](start/gs-message.md)
    + [Erstellen Ihres ersten Versands](start/create-message.md)
    + [Arbeiten mit Versandvorlagen](send/create-templates.md)
-   + [Best Practices beim Versand](start/delivery-best-practices.md)
+   + [Best Practices für den Versand](start/delivery-best-practices.md)
    + E-Mails {#emails}
       + [Entwerfen und Validieren von E-Mails](send/email.md)
       + [Definieren des E-Mail-Inhalts](send/defining-the-email-content.md)
@@ -67,7 +68,7 @@ ht-degree: 89%
       + [Erste Schritte mit SMS](send/sms/sms.md)
       + [Merkmale des SMS-Kanals](send/sms/sms-channel.md)
       + [Erstellen eines SMS-Versands](send/sms/create-sms.md)
-      + [Definieren des Inhalts](send/sms/sms-content.md)
+      + [Inhalt des Berichts definieren](send/sms/sms-content.md)
       + [Auswählen der Zielgruppe](send/sms/sms-audience.md)
       + [SMS-Testsendungen durchführen](send/sms/sms-proofs.md)
       + [An die Zielgruppe senden](send/sms/sms-send.md)
@@ -79,7 +80,7 @@ ht-degree: 89%
          + [Eigenständige Instanz](send/sms/sms-standalone-instance.md)
          + [Mid-Sourcing-Infrastruktur](send/sms/sms-mid-sourcing.md)
          + [Beschreibung des SMPP-Connectors](send/sms/smpp-connector-delivery.md)
-   + Push-Benachrichtigungen {#push}
+   + Push-Benachrichtigungen  {#push}
       + [Erstellen und Versenden von Push-Benachrichtigungen](send/push.md)
       + Rich-Push {#rich-push}
          + [Entwerfen eines Rich-Push-Versands für Android](send/rich-push-android.md)
@@ -92,14 +93,14 @@ ht-degree: 89%
       + [X (Twitter)](send/twitter.md)
       + [Benutzerdefinierter externer Kanal](send/custom-channel.md)
    + Personalisieren von Inhalten {#personalize}
-      + [Erste Schritte mit der Personalisierung](send/personalize.md)
+      + [Erste Schritte bei der Personalisierung](send/personalize.md)
       + [Personalisierungsdaten](send/personalization-data.md)
       + [Hinzufügen von Personalisierungsfeldern,](send/personalization-fields.md)
       + [Verwenden von Gestaltungsbausteinen](send/personalization-blocks.md)
       + [Erstellen von Bedingungen](send/conditions.md)
       + [Personalisierte Gutscheine](send/personalized-coupons.md)
-      + [Personalisierte PDF-Dokumente erstellen](send/generating-personalized-pdf-documents.md)
-      + [Emoticon-Liste personalisieren](send/customizing-emoticon-list.md)
+      + [Erstellen von personalisierten PDF-Dokumenten](send/generating-personalized-pdf-documents.md)
+      + [Personalisieren der Emoticon-Liste](send/customizing-emoticon-list.md)
    + Validieren und Senden des Versands {#validate}
       + [Vorschau und Testsendungen](send/preview-and-proof.md)
       + [Versandanalyse](send/delivery-analysis.md)
@@ -134,11 +135,11 @@ ht-degree: 89%
       + [Erfassen von Profildaten in Web-Formularen](audiences/collect-profiles.md)
       + [Arbeiten mit Zielgruppen-Mappings](audiences/target-mappings.md)
       + [Erstellen von Testprofilen](audiences/test-profiles.md)
-   + Erstellen von Zielgruppen {#create-audiences}
+   + Zielgruppen erstellen {#create-audiences}
       + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
       + [Zielgruppen mit Adobe-Lösungen freigeben](start/shared-audiences.md)
    + [Best Practices](audiences/audiences-best-practices.md)
-   + [Verwalten von Abonnements](start/subscriptions.md)
+   + [Abonnements verwalten](start/subscriptions.md)
 + Landingpages und Forms {#content}
    + [Erstellen von Landingpages](dev/landing-pages.md)
    + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
@@ -157,9 +158,9 @@ ht-degree: 89%
       + [Erstellen von Benutzern](interaction/interaction-operators.md)
       + [Erstellen von Umgebungen](interaction/interaction-env.md)
       + [Erstellen vordefinierter Filter](interaction/interaction-predefined-filters.md)
-      + [Erstellen von Platzierungen](interaction/interaction-offer-spaces.md)
+      + [Platzierungen erstellen](interaction/interaction-offer-spaces.md)
    + [Erstellen eines Angebotskatalogs](interaction/interaction-offer-catalog.md)
-   + [Erstellen eines Angebots](interaction/interaction-offer.md)
+   + [Angebot erstellen](interaction/interaction-offer.md)
    + [Senden eines Angebots (ausgehend)](interaction/interaction-send-offers.md)
    + Unterbreiten eines Angebots (eingehend){#inbound}
       + [Kontext](interaction/interaction-present-offers.md)
@@ -179,7 +180,7 @@ ht-degree: 89%
    + [Audit-Protokoll](reporting/audit-trail.md)
    + Arbeiten mit Berichten{#reports}
       + [Erste Schritte mit Berichten](reporting/gs-reporting.md)
-      + Erstellen von Cubes{#cubes}
+      + Cubes zu erstellen{#cubes}
          + [Erste Schritte mit Cubes](reporting/gs-cubes.md)
          + [Erstellen von Cubes](reporting/cube-indicators.md)
          + [Erstellen von Berichten mit Cubes](reporting/cube-tables.md)
@@ -251,8 +252,8 @@ ht-degree: 89%
       + [Einschränken der Anzeige von personenbezogenen Daten](dev/restrict-pi-view.md)
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
-      + [Formulare](dev/forms.md)
-   + [Arbeiten mit Daten-Packages &#x200B;](dev/packages.md)
+      + [Eingabeformulare](dev/forms.md)
+   + [Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + [Datenbank mit queryDef abfragen](dev/query-api.md)
    + REST APIs {#apis}
