@@ -6,9 +6,9 @@ role: Developer
 level: Beginner
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 956b2bf5bb8b08654c039b190c020d80ebea223d
+source-git-commit: 04dff810f5a838b2468280519948c88e29acf221
 workflow-type: tm+mt
-source-wordcount: '2906'
+source-wordcount: '2875'
 ht-degree: 67%
 
 ---
@@ -74,10 +74,6 @@ Adobe Campaign ist Teil der Adobe Experience Cloud-Lösungen. Die Art und Weise,
 
    * Ihre Datenschutzpraktiken in Verbindung mit Adobe Experience Cloud
    * Die Art und Weise, auf die Benutzer ihre Voreinstellungen für die Erfassung oder Verwendung ihrer Informationen in Verbindung mit Adobe Experience Cloud festlegen können
-
-  >[!NOTE]
-  >
-  >Wie bei allen Produkten von Adobe können Campaign-Benutzer die Weitergabe von Informationen, die über Apps und Websites erfasst wurden, deaktivieren. Weitere Informationen finden Sie in den [häufig gestellten Fragen zu den Adobe Experience Cloud-Nutzungsinformationen](https://www.adobe.com/de/privacy/experience-cloud-usage-info-faq.html).
 
 Weitere Informationen zum Datenschutz in Adobe Experience Cloud finden Sie auf [dieser Seite](https://www.adobe.com/de/privacy/marketing-cloud.html).
 
