@@ -130,11 +130,11 @@ Um Ihre Nachrichten zu personalisieren, können Sie die Empfängerdaten verwende
 
 * Überprüfen Sie Ihre Personalisierungseinstellungen – Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um Fehler zu vermeiden, die oft bei der Personalisierung auftreten. Ein Personalisierungs-Tag in Adobe Campaign präsentiert sich stets in folgender Form: `<%=table.field%>`.  Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise folgendermaßen verwendet werden:
 
-  ``
+  &grave;&grave;
   <%
   var brand = "xxx"
   %>
-  ``
+  &grave;&grave;
 
   Weitere Informationen zu Gestaltungsbausteinen finden Sie in [diesem Abschnitt](../send/personalization-blocks.md).
 
