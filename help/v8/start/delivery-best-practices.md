@@ -1,19 +1,19 @@
 ---
-title: Best Practices beim Versand
+title: Best Practices für den Versand
 description: Erfahren Sie mehr zu Best Practices für das Erstellen und Durchführen von Sendungen in Adobe Campaign
 feature: Email, Push, SMS, Direct Mail
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 096c453f727b461a7b09a47282e186e91ffc847e
+source-git-commit: 7bfe0ac7ba99ebf26844d2cea14a75f32ecb8b74
 workflow-type: tm+mt
 source-wordcount: '3102'
 ht-degree: 94%
 
 ---
 
-# Best Practices beim Versand {#delivery-best-practices}
+# Best Practices für den Versand {#delivery-best-practices}
 
 Lesen Sie die folgenden Best Practices für die Versandfunktionen in Campaign.
 
@@ -27,7 +27,7 @@ Mehrere Faktoren können die Server-Leistung direkt beeinflussen und die Campaig
 
 * Anzahl und Art der [Personalisierungselemente](../send/personalize.md): Durch Personalisierung in E-Mails werden Daten für jede Empfängerin bzw. jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen ist die für die Versandvorbereitung benötigte Datenmenge größer. Dies kann Ihre Plattform verlangsamen. Weiterführende Informationen zu Schutzmechanismen für die Personalisierung finden Sie in [diesem Abschnitt](../send/personalize.md#perso-guardrails).
 
-* Auslastung des Servers: Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Leistung reduziert werden. Der Marketing-Server muss alle eingehenden und ausgehenden Daten für alle Sendungen koordinieren, um sicherzustellen, dass die Daten korrekt sind und rechtzeitig gesendet werden.
+* Auslastung des Servers: Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Performance verlangsamt werden. Der Marketing-Server muss alle eingehenden und ausgehenden Daten für alle Sendungen koordinieren, um sicherzustellen, dass die Daten korrekt sind und rechtzeitig gesendet werden.
 Um dies zu vermeiden, koordinieren Sie die zeitliche Durchführung von Sendungen mit anderen Team-Mitgliedern, sodass eine optimale Leistung gewährleistet ist.
 
 * Workflow-Ausführung: Die Überwachung Ihrer Workflows ist unverzichtbar, um Probleme mit der Performance der Plattform zu vermeiden. Befolgen Sie die [in diesem Dokument](../../automation/workflow/workflow-best-practices.md#execution-and-performance) aufgeführten Richtlinien.
@@ -75,7 +75,7 @@ Die regelmäßige Wartung Ihrer Sendungen ist für eine optimale Plattformleistu
 
 Um den Nachrichtenversand an ungültige Adressen zu vermeiden, unnütze Kommunikation zu minimieren und die Reputation des Absenders zu schützen, empfiehlt Adobe die doppelte Anmeldung zur Bestätigung eines Abonnements. Damit können Sie sicherstellen, dass sich eine Empfängerin bzw. ein Empfänger absichtlich angemeldet hat.
 
-## Verwenden von Vorlagen {#use-templates}
+## Vorlagen verwenden {#use-templates}
 
 Versandvorlagen ermöglichen eine effiziente Nutzung, da sie für die häufigsten Aktivitäten vordefinierte Szenarien enthalten. Mit Vorlagen können Marketing-Fachleute in kürzerer Zeit neue Kampagnen bei minimaler Anpassung bereitstellen.  [Erfahren Sie mehr über Versandvorlagen](../send/create-templates.md).
 
@@ -104,6 +104,8 @@ Gehen Sie wie folgt vor, um Adressen in der Campaign-Benutzeroberfläche zu konf
 
 1. Im Feld **[!UICONTROL Text der Antwortadresse]** wird für Antworten standardmäßig die Adresse des Absenders verwendet. Adobe empfiehlt, eine echte Adresse zu verwenden, wie etwa den Kundendienst Ihrer Marke. So kann sich dieser gegebenenfalls um etwaige Antworten kümmern.
 
++++
+
 ### Einrichten einer Kontrollgruppe {#set-up-control-group}
 
 Sobald der Versand durchgeführt wurde, können Sie das Verhalten der ausgeschlossenen Empfänger mit den Empfängern vergleichen, die den Versand erhalten haben. Anschließend können Sie die Effizienz Ihrer Kampagnen messen. Weiterführende Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
@@ -128,11 +130,11 @@ Um Ihre Nachrichten zu personalisieren, können Sie die Empfängerdaten verwende
 
 * Überprüfen Sie Ihre Personalisierungseinstellungen – Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um Fehler zu vermeiden, die oft bei der Personalisierung auftreten. Ein Personalisierungs-Tag in Adobe Campaign präsentiert sich stets in folgender Form: `<%=table.field%>`.  Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise folgendermaßen verwendet werden:
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
   Weitere Informationen zu Gestaltungsbausteinen finden Sie in [diesem Abschnitt](../send/personalization-blocks.md).
 
@@ -147,7 +149,7 @@ Achten Sie beim Erstellen von E-Mails darauf, die allgemeinen Best Practices fü
 
 * Halten Sie das Design einfach.
 
-* Denken Sie an Benutzer mit Smartphones und Tablets.
+* Denken Sie an Benutzer mit Mobilgeräten.
 
 * Vermeiden Sie vollständig bildbasierte E-Mails.
 
@@ -184,7 +186,7 @@ Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position ist a
 
 Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig sein, und das Formular muss funktionieren. Bei der Analyse einer Nachricht überprüft die [Typologieregel](../../automation/campaign-opt/control-rules.md) **[!UICONTROL Genehmigung des Abmelde-Links]** standardmäßig, ob ein Ausschluss-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt.
 
-[In diesem Abschnitt](../send/personalization-blocks.md) erfahren Sie, wie Sie einen Ausschluss-Link einfügen.
+[In diesem Abschnitt](../send/personalization-blocks.md) erfahren Sie, wie man einen Ausschluss-Link einfügt.
 
 +++ **Wenden Sie diese Best Practice an**
 
@@ -219,7 +221,7 @@ Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SM
 
 * Aktivieren Sie die Transliteration nicht, wenn Sie alle Zeichen Ihrer SMS beibehalten möchten, um beispielsweise Eigennamen unverändert zu übermitteln.
 
-* Sollte Ihre SMS jedoch eine hohe Anzahl an Zeichen enthalten, die vom GSM-Standard nicht unterstützt werden, aktivieren Sie die Transliteration, um Ihre Versandkosten zu begrenzen.  Weitere Informationen finden Sie in [diesem Abschnitt](../send/sms/smpp-external-account.md#smpp-transliteration).
+* Sollte Ihre SMS jedoch eine hohe Anzahl an Zeichen enthalten, die vom GSM-Standard nicht unterstützt werden, aktivieren Sie die Transliteration, um Ihre Versandkosten zu begrenzen.  Weiterführende Informationen finden Sie [in diesem Abschnitt](../send/sms/smpp-external-account.md#smpp-transliteration).
 
 * Sie können eine SMS-Transliteration anwenden. Hierbei wird ein Zeichen einer SMS durch ein anderes ersetzt, wenn das erste Zeichen nicht vom GSM-Standard unterstützt wird. Beachten Sie, dass die Verwendung von Personalisierungsfeldern im SMS-Inhalt dazu führen kann, dass von der GSM-Kodierung nicht unterstützte Zeichen eingefügt werden. Als Campaign-Admin können Sie die Transliteration von Zeichen aktivieren, indem Sie das entsprechende Kästchen auf der Registerkarte „SMPP-Kanaleinstellungen“ des entsprechenden **[!UICONTROL externen Kontos]** markieren.  [Weitere Informationen](../send/sms/smpp-external-account.md#smpp-transliteration)
 
@@ -238,7 +240,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
 ## Verwalten von Bildern {#manage-images}
 
@@ -282,7 +284,7 @@ Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorsc
 
 ## Definieren der richtigen Zielgruppe {#define-the-right-audience}
 
-Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Listen sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients sowie auf Smartphones und Tablets und stellen Sie sicher, dass Ihre E-Mail-Listen aktuell sind (und keine unbekannten oder veralteten Adressen enthalten).  Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.  Weitere Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](../audiences/gs-audiences.md).
+Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Listen sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients sowie auf den gängigsten Mobilgeräten und stellen Sie sicher, dass Ihre E-Mail-Listen aktuell sind (und keine unbekannten oder veralteten Adressen enthalten).  Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.  Weitere Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](../audiences/gs-audiences.md).
 
 ### Ansprechen der richtigen Zielgruppe {#target-the-right-audience}
 
@@ -364,7 +366,7 @@ If you have several contents for an email delivery, you can use A/B testing to f
 
 Learn more [in this section](get-started-a-b-testing.md).-->
 
-### Überprüfen der Nachrichtenzustellung {#make-sure-your-message-is-delivered}
+### Nachrichtenzustellung überprüfen {#make-sure-your-message-is-delivered}
 
 Optimieren Sie Ihre Geschäftschancen und nutzen Sie die Funktionen von Adobe Campaign, um sicherzustellen, dass Ihre Nachricht tatsächlich bei den entsprechenden Empfängerinnen und Empfängern ankommt.
 
