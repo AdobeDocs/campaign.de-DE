@@ -5,10 +5,10 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 776a0e5eead9161b7e2c9d7746c72cba42ea42cb
+source-git-commit: d18c876de44b367c79abb04a65fce0698ff6ff78
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 67%
+source-wordcount: '1643'
+ht-degree: 56%
 
 ---
 
@@ -101,7 +101,7 @@ Ein **externes Konto** Externe Datenbank) wird verwendet, um über Federated Dat
 >
 >Externe Datenbanken, die mit Adobe Campaign v8 kompatibel sind, sind in der [Kompatibilitätsmatrix](../start/compatibility-matrix.md) aufgeführt. FDA-Verbindungen verwenden ODBC-Treiber. Bei Adobe Campaign Managed Cloud Services werden der ODBC-Treiber und die Konfiguration externer Konten von Adobe eingerichtet.
 
-Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-Engine ab. Bei Adobe Campaign Managed Cloud Services wird die Konfiguration externer Konten durch Adobe durchgeführt. Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu [Adobe Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-Engine ab. Bei Adobe Campaign Managed Cloud Services wird die Konfiguration externer Konten durch Adobe durchgeführt. Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu [Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Externes DataBricks-Konto {#databricks-external-accounts}
 
@@ -116,6 +116,40 @@ So konfigurieren Sie die OAuth2-Authentifizierung über einen Service-Prinzipal 
 3. Fügen Sie die Anmeldeinformationen in die Felder der Registerkarte OAuth des externen Datenbricks-Kontos ein.
 4. Verwenden **[!UICONTROL Verbindung testen]** um die Konfiguration zu überprüfen.
 
+#### Externes Snowflake-Konto {#snowflake-external-accounts}
+
+Die Snowflake FDA-Verbindung verwendet den Snowflake ODBC-Treiber. Ab Campaign v8.9.1 unterstützen externe Snowflake-Konten die OAuth2-Authentifizierung, die eine sichere Authentifizierung für den Federated Data Access bietet.
+
+Weitere Informationen zu OAuth in Snowflake finden Sie in der Dokumentation zu [Snowflake](https://docs.snowflake.com/en/user-guide/oauth-intro){target="_blank"}.
+
+Führen Sie zunächst die folgenden Schritte für Snowflake aus:
+
+1. Bevor Sie Ihr externes Snowflake-Konto mit OAuth 2.0 konfigurieren, müssen Sie zunächst eine OAuth-Sicherheitsintegration in Snowflake erstellen. Die **ACCOUNTADMIN**-Rolle ist erforderlich, um die Sicherheitsintegration zu erstellen.
+
+   Weitere Informationen zum Erstellen einer OAuth-Sicherheitsintegration finden Sie in der Dokumentation zu [Snowflake](https://docs.snowflake.com/en/sql-reference/sql/create-security-integration-oauth-snowflake){target="_blank"}.
+
+1. Sie können dann die Client-ID und den geheimen Client-Schlüssel wie folgt abfragen:
+
+   ```
+   select system$show_oauth_client_secrets('OAUTH_INTEGRATION_ABC'); // use uppercase letters
+   ```
+
+Gehen Sie wie folgt vor, um die OAuth2-Authentifizierung in Campaign zu konfigurieren:
+
+1. Erstellen oder bearbeiten Sie in Adobe Campaign ein externes Snowflake-Konto und aktivieren Sie die Option **[!UICONTROL Verwenden von OAuth 2.0]** .
+
+1. Legen Sie den Server, die Datenbank und das Schema fest und öffnen Sie die Registerkarte **[!UICONTROL OAuth]**.
+
+1. Die Sicherheitsparameter **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL Umleitungs-URL]** festlegen. Diese Parameter werden von Ihrer Snowflake OAuth-Sicherheitsintegration abgerufen. Weitere Informationen finden Sie in der Dokumentation zu [Snowflake](https://docs.snowflake.com/en/user-guide/oauth-custom){target="_blank"}.
+
+1. Klicken Sie **[!UICONTROL Fortfahren, um sich anzumelden]**, um eine manuelle Anmeldung durchzuführen. Ein neues Browser-Fenster wird geöffnet, in dem Sie aufgefordert werden, Ihre Snowflake-Benutzeranmeldeinformationen einzugeben.
+
+1. Nach Abschluss des Authentifizierungsprozesses wird das Konto für die in Ihrer Snowflake OAuth-Sicherheitsintegration definierte Anzahl von Tagen authentifiziert (mithilfe des `OAUTH_REFRESH_TOKEN_VALIDITY`-Parameters). Das Aktualisierungs-Token wird im externen Konto gespeichert.
+
+>[!CAUTION]
+>
+>Beachten Sie, dass die Umleitungs-URL immer `oauth.jsp` auf dem Campaign-Anwendungs-Server-Computer über HTTPS (Port 443) adressieren sollte. Außerdem werden Server-Domains mit Unterstrichen bei der Verwendung von OAuth nicht unterstützt. Verwenden von Server-Domains ohne Unterstriche, bei denen die Verwendung von OAuth beabsichtigt ist.
+
 ### X (früher bekannt als Twitter) {#twitter-external-account}
 
 Ein externes **Twitter**-Konto wird verwendet, um Campaign mit Ihrem X-Konto zu verbinden und Nachrichten in Ihrem Namen zu posten. Weitere Informationen zur X-Integration finden Sie in [diesem Abschnitt](../connect/ac-tw.md).
@@ -126,7 +160,7 @@ Ein externes **Twitter**-Konto wird verwendet, um Campaign mit Ihrem X-Konto zu 
 
 * **Web-Analyse** – Das externe **[!UICONTROL Web-Analyse (Adobe Analytics)]**-Konto wird verwendet, um die Datenübertragung von Adobe Analytics an Adobe Campaign zu konfigurieren. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aa.md).
 
-* **Adobe Experience Manager** – Mit dem externen **[!UICONTROL AEM]**-Konto können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Experience Manager finden [&#x200B; auf dieser Seite &#x200B;](../connect/ac-aem.md).
+* **Adobe Experience Manager** – Mit dem externen **[!UICONTROL AEM]**-Konto können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Experience Manager finden [ auf dieser Seite ](../connect/ac-aem.md).
 
 
 ## Externe CRM-Connector-Konten {#crm-external-accounts}
