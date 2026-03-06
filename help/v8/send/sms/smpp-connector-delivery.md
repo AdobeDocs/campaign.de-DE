@@ -5,20 +5,14 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
-source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 83%
+source-wordcount: '1290'
+ht-degree: 86%
 
 ---
 
 # Beschreibung des SMPP-Connectors {#smpp-connector-desc}
-
->[!AVAILABILITY]
->
->Diese Funktion steht allen Campaign FDA-Umgebungen zur Verfügung. Sie **nicht** für Campaign FFDA-Bereitstellungen verfügbar. Diese Dokumentation gilt für Adobe Campaign Version 8.7.2 und höher. Informationen zum Wechsel vom alten zum neuen SMS-Connector finden Sie in dieser [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
->
->Für ältere Versionen lesen Sie die [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 ## Datenfluss des SMS-Connectors {#sms-data-flow}
 
@@ -72,7 +66,7 @@ Der SMPP-Connector versucht für jedes aktive SMPP-Konto, Verbindungen immer akt
 * Für alle Nachrichten, die einen Eintrag in beiden Tabellen haben, wird der entsprechende nms:broadLog-Eintrag aktualisiert.
 * Die nms:broadLogMsg-Tabelle kann während des Prozesses aktualisiert werden, wenn ein neuer Fehlertyp erkannt wird, oder um die Zähler für Fehler zu aktualisieren, die nicht manuell qualifiziert wurden.
 
-## Abgleichen von MT-, SR- und Broadlog-Einträgen {#sms-matching-entries}
+## Abgleichen von MT-, SR- und broadLog-Einträgen {#sms-matching-entries}
 
 Im Folgenden finden Sie ein Diagramm, das den gesamten Prozess beschreibt:
 

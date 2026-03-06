@@ -3,7 +3,7 @@ keywords: Campaign Classic;Startseite;beliebte Themen
 description: Hilfe finden Sie im Adobe Campaign v8-Hilfezentrum. Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerbehebungen in Campaign v8.
 title: Adobe Campaign v8-Produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 90%
@@ -18,7 +18,7 @@ Werfen Sie einen Blick auf die neuesten Verbesserungen im Produkt und in der Dok
 
 >[!BEGINTABS]
 
->[!TAB Campaign Version 8.8 ist live]
+>[!TAB Campaign Version 8.9 ist live]
 
 Die neueste Version von Adobe Campaign ist jetzt verfügbar. Weitere Informationen finden Sie in den Versionshinweisen.
 
@@ -60,7 +60,7 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
     </div></td>
     <td>
     <a href="audiences/create-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>Profile importieren</strong><br/>Das Erstellen von Profilen in der Datenbank von Adobe Campaign v8 ist unkompliziert. Fügen Sie Profile manuell oder durch Importe hinzu, verfeinern Sie Kundendaten und passen Sie Kampagnen mühelos an.</div>
+    <div><strong>Profile importieren</strong><br/>Das Erstellen von Profilen in der Datenbank von Adobe Campaign v8 ist unkompliziert. Fügen Sie Profile manuell oder durch Importieren hinzu, verfeinern Sie Kundendaten und passen Sie Kampagnen mühelos an.</div>
     </td>
   </tr>
   <tr style="border: 0;">

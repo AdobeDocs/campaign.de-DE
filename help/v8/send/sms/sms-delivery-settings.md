@@ -5,20 +5,14 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
-source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 95%
+source-wordcount: '791'
+ht-degree: 100%
 
 ---
 
 # SMS-Versandeinstellungen {#sms-settings}
-
->[!AVAILABILITY]
->
->Diese Funktion steht allen Campaign FDA-Umgebungen zur Verfügung. Sie **nicht** für Campaign FFDA-Bereitstellungen verfügbar. Diese Dokumentation gilt für Adobe Campaign Version 8.7.2 und höher. Informationen zum Wechsel vom alten zum neuen SMS-Connector finden Sie in dieser [Technote](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
->
->Für ältere Versionen lesen Sie die [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}.
 
 Die folgenden technischen Einstellungen werden für einen SMS-Versand benötigt:
 
@@ -66,7 +60,7 @@ Hier finden Sie die Informationen, die Sie zum Ausfüllen dieses Formulars benö
 
 * **[!UICONTROL Maximale Anzahl an SMS pro Nachricht]**
 
-  Diese Einstellung funktioniert nur, wenn die Einstellung „Nachrichten-Payload“ deaktiviert ist (weitere Informationen finden Sie in den Einstellungen für das externe Konto). Wenn die Nachricht mehr SMS erfordert, als dieser Wert angibt, wird ein Fehler ausgelöst.
+  Diese Einstellung funktioniert nur, wenn die Einstellung „Nachrichten-Payload“ deaktiviert ist (weitere Informationen finden Sie in den Einstellungen für das externe Konto). Wenn die Nachricht mehr SMS als diesen Wert erfordert, wird ein Fehler ausgelöst.
 
   Das SMS-Protokoll begrenzt SMS auf 255 Teile. Allerdings haben einige Mobiltelefone Probleme, lange Nachrichten mit mehr als zehn Teilen zusammenzustellen (die Begrenzung hängt vom genauen Modell ab). Wenn Sie sicher gehen möchten, überschreiten Sie nicht fünf Teile pro Nachricht.
 

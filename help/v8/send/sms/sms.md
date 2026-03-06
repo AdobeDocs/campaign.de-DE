@@ -5,10 +5,10 @@ feature: SMS
 role: User, Developer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 85%
+source-wordcount: '175'
+ht-degree: 92%
 
 ---
 
@@ -23,12 +23,11 @@ Um SMS mit Adobe Campaign an Mobilgeräte zu senden, benötigen Sie Folgendes:
 
 * Eine SMS-Versandvorlage, die korrekt mit diesem externen Konto verknüpft ist.
 
+Adobe Campaign unterstützt zwei SMS-Connectoren, die zum Senden von SMS-Nachrichten an Ihre Kunden verwendet werden. [Weitere Informationen](sms-connectors.md).
 
 >[!NOTE]
 >
 >Sie können mit Adobe Campaign auch [Push-Benachrichtigungen](../push.md) und [LINE](../line/line.md)-Nachrichten an Mobilgeräte versenden.
->
-> Für Kunden, die den alten SMS-Connector verwenden, wird die vorhandene Implementierung weiterhin unterstützt. Wir empfehlen jedoch, zum neuen Connector zu wechseln. Wenden Sie sich an Adobe, wenn Sie den Übergang vornehmen möchten.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

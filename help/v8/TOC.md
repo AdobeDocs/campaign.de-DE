@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 4626d93dea22e0ee458babfd53758c8c63a98ad4
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '842'
 ht-degree: 89%
 
 ---
@@ -66,6 +66,7 @@ ht-degree: 89%
       + [Anhängen von Dateien an eine E-Mail](send/attaching-files.md)
    + SMS {#sms}
       + [Erste Schritte mit SMS](send/sms/sms.md)
+      + [SMS-Connectoren](send/sms/sms-connectors.md)
       + [Merkmale des SMS-Kanals](send/sms/sms-channel.md)
       + [Erstellen eines SMS-Versands](send/sms/create-sms.md)
       + [Inhalt des Berichts definieren](send/sms/sms-content.md)
@@ -253,7 +254,7 @@ ht-degree: 89%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Eingabeformulare](dev/forms.md)
-   + [Daten-Packages &#x200B;](dev/packages.md)
+   + [Daten-Packages ](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + [Datenbank mit queryDef abfragen](dev/query-api.md)
    + REST APIs {#apis}
