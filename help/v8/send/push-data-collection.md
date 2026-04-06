@@ -6,7 +6,7 @@ role: Developer
 level: Intermediate
 badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: 52ea7f0a7690ef656568cc75925b9982e1f475e9
 workflow-type: tm+mt
 source-wordcount: '1481'
 ht-degree: 94%
@@ -73,8 +73,8 @@ Die Registrierung der Push-Anmeldedaten für Apps ist erforderlich, damit Adobe 
 
 1. Stellen Sie die **Schlüssel-ID** bereit. Dies ist eine 10-stellige Zeichenfolge, die bei der Erstellung des p8-Authentifizierungsschlüssels zugewiesen wurde.
 
-       Sie finden sie auf der Registerkarte **Schlüssel** auf der Seite **Zertifikate**, **Kennungen** und **Profile** Ihres Apple-Entwicklerkontos.
-   
+   Sie finden diese auf **Registerkarte** auf der Seite **Zertifikate**, **Kennungen** und **Profile** Ihres Apple-Entwicklerkontos.
+
 1. Stellen Sie die **Team-ID** bereit. Dies ist ein Zeichenfolgenwert, der auf der Registerkarte **Mitgliedschaft** zu finden ist.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um Ihre App-Konfiguration zu erstellen.
@@ -252,7 +252,7 @@ Ihre Mobile-Eigenschaft wird jetzt automatisch mit dem technischen Workflow der 
 
 ## Hinzufügen von Campaign Classic zur App {#campaign-mobile-app}
 
-Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen.
+Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen.
 
 [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 

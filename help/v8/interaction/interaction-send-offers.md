@@ -5,7 +5,7 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 98%
@@ -48,7 +48,7 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in einen Versand einzufügen:
 
    ![](assets/offer_delivery_007.png)
 
-1. Fügen Sie die Eigenschaften mithilfe der Fusionsfelder in den Versandinhalt ein. Die Anzahl der verfügbaren Vorschläge hängt von der Konfiguration des Angebotsmodul-Aufrufs ab und ihre Reihenfolge hängt von der Priorität der Angebote ab.
+1. Fügen Sie die Eigenschaften mithilfe der Zusammenführungsfelder in den Versandinhalt ein. Die Anzahl der verfügbaren Vorschläge hängt von der Konfiguration des Angebotsmodul-Aufrufs ab und ihre Reihenfolge hängt von der Priorität der Angebote ab.
 
    ![](assets/offer_delivery_008.png)
 
@@ -85,7 +85,7 @@ Sie können beispielsweise aus einer Abfrage stammende Empfängerdaten vor Durch
 Zwei Methoden ermöglichen in diesem Fall die Auswahl der Angebotsvorschläge:
 
 * Konfiguration eines Angebots oder einer Abfrage des Angebotsmoduls.
-* Referenzierung einer Verknüpfung mit einem Angebot.
+* Referenzierung einer Relation zu einem Angebot.
 
 #### Konfigurieren eines Angebots oder einer Angebotsmodul-Abfrage {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
@@ -100,7 +100,7 @@ Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritt
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
 1. Konfigurieren Sie die Angebotsauswahl. Zwei Optionen stehen zur Auswahl:
 
-   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Beim Ankreuzen dieser Option geben Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl der beizubehaltenden Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, aber nicht beide gleichzeitig.
+   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Beim Ankreuzen dieser Option geben Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl der beizubehaltenden Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
 
      ![](assets/int_enrichment_offer3.png)
 
@@ -148,7 +148,7 @@ Standardmäßig werden Ranking und Gewichtung bei Verwendung der Aktivität **An
 Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten:
 
 1. Erstellen Sie eine Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die nach einer Abfrage und vor einer Versandaktivität platziert wird. [Weitere Informationen](#specifying-an-offer-or-a-call-to-the-offer-engine)
-1. Klicken Sie auf der Registerkarte &quot;Anreicherung&quot; der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
+1. Klicken Sie im Anreicherung-Tab der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
@@ -204,7 +204,6 @@ Gehen Sie dazu wie folgt vor:
 1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht.
 
 <!--
-
 ## Delivering with delivery outlines {#delivering-with-delivery-outlines}
 
 You can also present offers in a delivery using delivery outlines.

@@ -10,16 +10,16 @@ type: Documentation
 git-repo: https://github.com/AdobeDocs/campaign.de-DE
 mini-toc-levels: 2
 index: true
-source-git-commit: 7bfe0ac7ba99ebf26844d2cea14a75f32ecb8b74
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '53'
-ht-degree: 100%
+ht-degree: 71%
 
 ---
 
 
-# Metadaten für den internen Gebrauch
+# Metadaten für die interne Verwendung
 
-Die Datei &quot;metadata.md&quot; enthält Metadaten auf Repository-Ebene, die in die &quot;TOC.md&quot;-Dateien des Benutzerhandbuchs im Repository übergeben werden. Wenn Sie den &quot;metadata.md&quot;-Inhalt für ein Benutzerhandbuch ändern möchten, können Sie dies in jeder beliebigen &quot;TOC.md&quot;-Datei tun.
+Die Datei „metadata.md“ enthält Metadaten auf Repository-Ebene, die an die im Repository enthaltenen Dateien „TOC.md“ des Benutzerhandbuchs weitergegeben werden. Wenn Sie den Inhalt von „metadata.md“ für ein Benutzerhandbuch ändern möchten, verwenden Sie dazu eine beliebige Datei „TOC.md“.
 
-Unter [Metadaten](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=de) finden Sie eine Liste mit gültigen Werten für **Lösung**, **Produkt** und **Typ**.
+Unter [Metadaten](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html) finden Sie eine Liste gültiger Werte für **Lösung**, **** und **Typ**.

@@ -3,10 +3,10 @@ title: Integrierte Versandberichte in Adobe Campaign
 description: Integrierte Versandberichte in Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1159'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 >
 >Die Prozentsätze werden in Bezug auf die erfolgreich zugestellten Nachrichten berechnet.
 
-* **[!UICONTROL Unterschiedene Öffnungen für die erreichte Population]**: Schätzung der Anzahl der angesprochenen Empfängerinnen und Empfänger, die eine Nachricht mindestens einmal geöffnet haben. Klicks auf getrackte URLs werden dabei berücksichtigt, da E-Mails erst geöffnet werden müssen, damit auf einen Link geklickt werden kann.
+* **[!UICONTROL Unterschiedene Öffnungen für die erreichte Population]**: Schätzung der Anzahl der angesprochenen Empfängerinnen und Empfänger, die eine Nachricht mindestens einmal geöffnet haben. Klicks auf getrackte URLs werden berücksichtigt, da E-Mails geöffnet werden müssen, damit auf einen Link geklickt werden kann.
 * **[!UICONTROL Summe der Öffnungen in Bezug auf die erreichte Population]**: Schätzung der Gesamtzahl der Öffnungen durch die angesprochenen Empfängerinnen und Empfänger.
 * **[!UICONTROL Klicks auf den Ausschluss-Link]**: Anzahl der Klicks auf den Link zum Abmelden.
 * **[!UICONTROL Klicks auf den Mirrorseite-Link]**: Anzahl der Klicks auf den Link zur [Mirrorseite](../send/mirror-page.md). Um berücksichtigt zu werden, muss der Link im Versand-Assistenten als solcher definiert worden sein (getrackte URLs).
@@ -101,9 +101,9 @@ Die Tabelle zeigt – aufgeschlüsselt nach Domains – Sendungen, Öffnungen,
 
 * **[!UICONTROL Visited pages]**: Number of web pages visited following message reception.
 * **[!UICONTROL Transactions]**: Number of purchases following message reception.
-* **[!UICONTROL Total amount]**: Total amount of purchases following message reception. 
-* **[!UICONTROL Average transaction amount]**: Average purchase made by distinct delivery recipients. 
-* **[!UICONTROL Articles]**: Number of articles purchased by the delivery recipients. 
+* **[!UICONTROL Total amount]**: Total amount of purchases following message reception.
+* **[!UICONTROL Average transaction amount]**: Average purchase made by distinct delivery recipients.
+* **[!UICONTROL Articles]**: Number of articles purchased by the delivery recipients.
 * **[!UICONTROL Average count of articles per transaction]**: Average number of items per purchase made by distinct recipients.
 * **[!UICONTROL Average amount per message]**: Average amount of purchases generated per message.
 
@@ -117,7 +117,7 @@ This section shows the number of messages shared on each social network. For mor
 
 ## URLs and click streams {#urls-and-click-streams}
 
-This report shows the list of pages visited following a delivery. 
+This report shows the list of pages visited following a delivery.
 
 ![](assets/s_ncs_user_url_report.png)
 
@@ -131,14 +131,14 @@ The following rates are displayed in the upper section of the report:
   >
   >For more information on tracking opens, refer to [this section](metrics-calculation.md#tracking-opens-).
 
-* **[!UICONTROL Distinct clicks]**: Number of distinct people having clicked at least once (excluding unsubscription link and mirror page) in a delivery. The rate displayed is calculated based on the number of messages delivered successfully. 
+* **[!UICONTROL Distinct clicks]**: Number of distinct people having clicked at least once (excluding unsubscription link and mirror page) in a delivery. The rate displayed is calculated based on the number of messages delivered successfully.
 * **[!UICONTROL Cumulated clicks]**: Total number of clicks by targeted recipients (excluding unsubscription link and mirror page). The rate displayed is calculated based on the number of messages forwarded successfully.
 
 **[!UICONTROL Platform average]**: This average rate, displayed under each rate (reactivity, distinct clicks, and cumulated clicks), is calculated for deliveries sent over the previous six months. Only deliveries with the same typology and on the same channel are taken into account. Proofs are excluded.
 
 The central table provides the following information:
 
-* **[!UICONTROL Clicks]**: Number of cumulated clicks, per link. 
+* **[!UICONTROL Clicks]**: Number of cumulated clicks, per link.
 * **[!UICONTROL Clicks (in %)]**: Breakdown of the number of clicks per link, in relation to the total number of cumulated clicks.
 
 **[!UICONTROL Breakdown of clicks in time]**
@@ -168,7 +168,7 @@ Das Diagramm in der Mitte veranschaulicht die Aufschlüsselung der ausgeschlosse
 Dieser Bereich zeigt folgende Indikatoren:
 
 * **[!UICONTROL Zu sendende Nachricht(en)]**: Gesamtzahl der nach erfolgter Versandanalyse zu versendenden Nachrichten.
-* **[!UICONTROL Erfolg]**: Anzahl der erfolgreich verarbeiteten Nachrichten. Die zugeordnete Rate ist das Verhältnis zur Anzahl der zu versendenden Nachrichten.
+* **[!UICONTROL Erfolg]**: Anzahl der erfolgreich verarbeiteten Nachrichten. Die zugehörige Rate wird in Bezug auf die Anzahl der zu versendenden Nachrichten berechnet.
 * **[!UICONTROL Fehler]**: Kumulierte Gesamtzahl an Fehlern in Sendungen und der automatischen Bounce-Verarbeitung. Die zugeordnete Rate wird in Bezug auf die Anzahl der zu versendenden Nachrichten berechnet.
 * **[!UICONTROL Neu in Quarantäne]**: Anzahl der Adressen, die infolge eines fehlgeschlagenen Zustellversuchs eines Versands unter Quarantäne gestellt wurden (unbekannter Nutzer, ungültige Domain). Die zugeordnete Rate wird in Bezug auf die Anzahl der zu versendenden Nachrichten berechnet.
 
@@ -194,7 +194,6 @@ Die Statistiken werden in Form einer Tabelle und eines Pareto-Diagramms dargeste
 <!--
 * **[!UICONTROL Transactions]**: Time required to achieve a percentage of the total number of transactions following message reception. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
-
 
 ## Zusammenfassende Berichte {#cumulated-reports}
 

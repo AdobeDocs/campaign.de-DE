@@ -5,8 +5,8 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
-workflow-type: ht
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Grundlegendes zu Komponenten und Prozessen in Campaign {#components-and-processes}
 
-Adobe Campaign ist eine Cross-Channel-Marketing-Lösung, die E-Mail-, Mobile-, Social Media- und Offline-Kampagnen automatisiert. Adobe Campaign bietet eine zentrale Stelle für den Zugriff auf Ihre Kundendaten und -profile. Verwenden Sie Adobe Campaign, um konsistente Erlebnisse für Ihre Kunden zu orchestrieren, Ihre Marketing-Maßnahmen kanalübergreifend zu entwickeln, auszuführen und zu personalisieren und gleichzeitig die Kundenerlebnisse auf allen Geräten und an jedem Touchpoint zu verbessern. Mit Adobe Campaign können Sie mehrere Datenquellen verwalten, Zielgruppensegmente definieren und mehrstufige Cross-Channel-Kampagnen über eine visuelle Workflow-Benutzeroberfläche per Drag-and-drop planen und ausführen.
+Adobe Campaign ist eine Cross-Channel-Marketing-Lösung, die E-Mail-, Mobile-, Social Media- und Offline-Kampagnen automatisiert. Adobe Campaign bietet eine zentrale Stelle für den Zugriff auf Ihre Kundendaten und -profile. Verwenden Sie Adobe Campaign, um konsistente Erlebnisse für Ihre Kunden zu orchestrieren, Ihre Marketing-Maßnahmen kanalübergreifend zu entwickeln, auszuführen und zu personalisieren und gleichzeitig die Kundenerlebnisse auf allen Geräten und an jedem Touchpoint zu verbessern. Mit Adobe Campaign können Sie mehrere Datenquellen verwalten, Zielgruppensegmente definieren und mehrstufige Cross-Channel-Kampagnen über eine visuelle Workflow-Oberfläche per Drag-and-Drop planen und ausführen.
 
 Weitere Informationen zu Campaign finden Sie auf [dieser Seite](../start/get-started.md).
 
@@ -42,7 +42,7 @@ Sie können über einen Rich-Client, einen Thin-Client oder eine API-Integration
 
 ### Persistenzebene{#persistance-layer}
 
-Campaign-Datenbanken werden als Persistenzebenen verwendet und enthalten fast alle von Adobe Campaign verwalteten Informationen und Daten. Dazu gehören: Funktionsdaten wie Profile, Abonnements, Inhalte, technische Daten wie Versandvorgänge und -Logs, Trackinglogs; und Arbeitsdaten (Bestellungen, Leads).
+Campaign-Datenbanken werden als Persistenzebenen verwendet und enthalten fast alle von Adobe Campaign verwalteten Informationen und Daten. Dazu gehören: Funktionsdaten wie Profile, Abonnements, Inhalte, technische Daten wie Versandaufträge und -Logs, Trackinglogs; und Arbeitsdaten (Käufe, Leads).
 
 Die Zuverlässigkeit der Datenbank ist von größter Bedeutung, da die meisten Adobe Campaign-Komponenten Zugriff auf die Datenbank benötigen, damit sie ihre Aufgaben ausführen können (mit Ausnahme des Umleitungsmoduls).
 
@@ -62,9 +62,11 @@ Der Campaign-Webserver steuert den Zugriff auf Campaign-Web-Prozesse. JavaScript
 
 Die Campaign Client-Konsole stellt eine Verbindung mit dem Webserver her, indem sie SOAP XML über HTTP verwendet. Der Webserver stellt die Sicherheitsebene bereit und übergibt die Anfragen mithilfe von JavaScript an die Anwendungsebene, und die internen Prozesse von Campaign greifen mithilfe von SQL auf die Datenbank zu.
 
-<!--The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
+<!--
+The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
 
-![](assets/do-not-localize//ac-standalone.png) -->
+![](assets/do-not-localize//ac-standalone.png)
+-->
 
 Der Benutzer stellt mithilfe von HTTP eine Verbindung zum Campaign-Anwendungs-Server her. Alle Daten und Informationen werden in der Campaign-Datenbank verwaltet. Wenn ein Campaign-Entwickler Änderungen an der Konfiguration durchführt, werden diese in der Datenbank erfasst. Wenn ein Marketer eine neue Kampagne erstellt, werden alle mit dieser neuen Kampagne verbundenen Informationen und Daten ebenfalls in der Datenbank verwaltet. Wenn ein Marketer eine Kampagne ausführt, werden vom Campaign-Server über den SMTP-Server E-Mail-Sendungen an Profile durchgeführt. Wenn Profile mit E-Mail-Sendungen interagieren, wie etwa beim Öffnen einer E-Mail, werden Tracking-Daten an den Tracking-Server zurückgesendet.
 

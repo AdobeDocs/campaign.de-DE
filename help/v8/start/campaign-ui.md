@@ -6,7 +6,7 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 69%
@@ -88,7 +88,7 @@ Wenn Sie ein Element auf dem Bildschirm auswählen, wird es in eine neue Registe
 
 ![Benutzeroberfläche der Campaign-Konsole, in der das Bearbeiten einer Liste auf einer neuen Registerkarte angezeigt wird](assets/new-tab.png)
 
-### Erstellen eines Elements {#create-an-element}
+### Element erstellen {#create-an-element}
 
 Verwenden Sie im Abschnitt **[!UICONTROL Erstellen]** auf der linken Bildschirmseite Tastaturbefehle, um neue Elemente hinzufügen. Sie können auch den Button **[!UICONTROL Erstellen]** oberhalb der Liste verwenden, um der aktuellen Liste neue Elemente hinzuzufügen.
 
@@ -99,9 +99,10 @@ Verwenden Sie im Abschnitt **[!UICONTROL Erstellen]** auf der linken Bildschirms
 
 You can also access a subset of Campaign capabilities through the a web browser.
 
-The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns. 
+The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns.
 
-[Learn more about Campaign web access](../start/connect.md#web-access).-->
+[Learn more about Campaign web access](../start/connect.md#web-access).
+-->
 
 ### Zugriff auf Campaign Explorer {#ac-explorer-ui}
 
@@ -151,7 +152,7 @@ Die unterstützten Sprachen hängen von der Benutzeroberfläche ab.
   >
   >Die Sprache wird während des Installationsprozesses ausgewählt und **kann später nicht mehr geändert**.
 
-* Informationen zu den von der Campaign-Web-Benutzeroberfläche unterstützten Sprachen [&#x200B; Sie in der Dokumentation zur Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
+* Informationen zu den von der Campaign-Web-Benutzeroberfläche unterstützten Sprachen [ Sie in der Dokumentation zur Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
 
 ## Formate
 

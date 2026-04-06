@@ -6,8 +6,8 @@ role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 100%
 
@@ -39,7 +39,8 @@ Bevor Sie eine Datenschutzanfrage stellen, müssen Sie **den zu verwendenden Nam
 
 Derzeit unterstützt Adobe Campaign nicht den Import von Namespaces aus dem Identity-Namespace-Service von Experience Platform. Nachdem Sie im Identity-Namespace-Service einen Namespace erstellt haben, müssen Sie daher den entsprechenden Namespace in der Adobe Campaign-Benutzeroberfläche manuell erstellen. Gehen Sie dazu wie folgt vor:
 
-<!--v7?
+<!--
+v7?
 Three namespaces are available out-of-the-box: email, phone and mobile phone. If you need a different namespace (a recipient custom field, for example), you can create a new one from **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
 >[!NOTE]
@@ -98,9 +99,9 @@ Durch die Integration von **[!DNL Adobe Experience Platform Privacy Service]** k
 
 Weitere Informationen zum Erstellen von Datenschutzanfragen mithilfe des Privacy Core Service finden Sie in der Dokumentation zum [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de){target="_blank"}.
 
-Je nach der Anzahl der verwendeten Namespaces wird jeder **[!DNL Privacy Service]**-Vorgang in Adobe Campaign in mehrere Datenschutzanfragen untergeteilt, wobei eine Anfrage einem Namespace entspricht.
+Je nach der Anzahl der verwendeten Namespaces wird jeder **[!DNL Privacy Service]**-Auftrag in Adobe Campaign in mehrere Datenschutzanfragen untergeteilt, wobei eine Anfrage einem Namespace entspricht.
 
-Außerdem kann ein Vorgang in mehreren Instanzen ausgeführt werden. Daher werden für einen Vorgang mehrere Dateien erstellt. Wenn sich eine Anfrage beispielsweise auf zwei Namespaces bezieht und drei Instanzen betrifft, werden insgesamt sechs Dateien gesendet. Eine Datei pro Namespace und Instanz.
+Außerdem kann ein Auftrag in mehreren Instanzen ausgeführt werden. Daher werden für einen Auftrag mehrere Dateien erstellt. Wenn sich eine Anfrage beispielsweise auf zwei Namespaces bezieht und drei Instanzen betrifft, werden insgesamt sechs Dateien gesendet. Eine Datei pro Namespace und Instanz.
 
 Der Dateiname setzt sich folgendermaßen zusammen: `<InstanceName>-<NamespaceId>-<ReconciliationKey>.xml`
 
@@ -138,7 +139,8 @@ Wenn Sie benutzerdefinierte Tabellen erstellt haben, für die eine Relation zur 
 >If you perform Privacy batch requests using profile deletion workflows, please take into consideration the following remarks:
 >* Profile deletion via workflows do not process children tables.
 >* You need to handle the deletion for all the children tables.
->* Adobe recommends that you create an ETL workflow that add the lines to delete in the Privacy Access table and let the **[!UICONTROL Delete privacy requests data]** workflow perform the deletion. We suggest to limit to 200 profiles per day to delete for performance reasons.-->
+>* Adobe recommends that you create an ETL workflow that add the lines to delete in the Privacy Access table and let the **[!UICONTROL Delete privacy requests data]** workflow perform the deletion. We suggest to limit to 200 profiles per day to delete for performance reasons.
+-->
 
 ### Status von Datenschutzanfragen {#privacy-request-statuses}
 

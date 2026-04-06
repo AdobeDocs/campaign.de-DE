@@ -4,7 +4,7 @@ title: Anwenden von Typologieregeln
 description: Hier erfahren Sie, wie Sie Typologieregeln anwenden
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 96%
@@ -91,7 +91,7 @@ Im Standard-Ausführungsmodus werden die Regeln in der folgenden Reihenfolge aus
 >
 >Wenn Sie das Modul &quot;Interaction&quot; nutzen, werden die Eignungsregeln gleichzeitig mit den Filterregeln (für Angebote in Versandentwürfen) oder während der Personalisierungsphase beim Aufruf des Angebotsmoduls angewendet.
 
-Sie können die Anwendungsreihenfolge von Regeln mit demselben Typ mithilfe des entsprechenden Felds auf der Registerkarte **[!UICONTROL Allgemein]** der Regel anpassen. Dies ist insbesondere interessant, wenn in der gleichen Verarbeitungsphase der Nachrichten mehrere Regeln zur Anwendung kommen.**&#x200B;**
+Sie können die Anwendungsreihenfolge von Regeln mit demselben Typ mithilfe des entsprechenden Felds auf der Registerkarte **[!UICONTROL Allgemein]** der Regel anpassen. Dies ist insbesondere interessant, wenn in der gleichen Verarbeitungsphase der Nachrichten mehrere Regeln zur Anwendung kommen.****
 
 Beispielsweise wird eine Druckregel mit einer Anwendungsreihenfolge von 20 vor einer Druckregel mit einem Wert von 30 ausgeführt.
 
@@ -134,7 +134,8 @@ Mögliche Werte:
 >Die Affinitätenverwaltung gilt nicht für **[!UICONTROL Filter]**-Typologien.
 
 <!--
->Affinities are defined in the instance configuration file, on the Adobe Campaign server. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).-->
+>Affinities are defined in the instance configuration file, on the Adobe Campaign server. For more on this, refer to [this section](../../installation/using/about-initial-configuration.md).
+-->
 
 ### Kampagnenoptimierung und dezentrales Marketing {#campaign-optimization-and-distributed-marketing}
 

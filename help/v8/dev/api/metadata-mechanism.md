@@ -7,7 +7,7 @@ topic-tags: campaign-standard-apis
 role: Developer
 level: Experienced
 exl-id: 58ec0999-b28a-4198-8d57-729b074c6a6d
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 100%
@@ -36,8 +36,10 @@ Wenn &quot;type&quot; mit dem Wert &quot;enumeration&quot; ausgefüllt wird, wir
 * Der Knoten **Filter** gibt die URL zum Abrufen der zugehörigen Filter zurück. Weiterführende Informationen zu Filtern finden Sie in [diesem Abschnitt](sorting.md#filtering).
 
 <!-- créer une section au même niveau sur les liens -->
-<!-- dans l'exemple: birthdate, email +  mettre 2 liens : un de type 1-1 , 1-N
-si on prend l'exemple de l'org unit, on aura un bon exemple lien -->
+<!--
+dans l'exemple: birthdate, email +  mettre 2 liens : un de type 1-1 , 1-N
+si on prend l'exemple de l'org unit, on aura un bon exemple lien
+-->
 <!-- plus reparler du node Data -->
 
 <br/>

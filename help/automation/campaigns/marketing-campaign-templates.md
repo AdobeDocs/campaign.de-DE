@@ -6,7 +6,7 @@ feature: Campaigns, Templates
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 100%
@@ -50,19 +50,19 @@ Sie können die integrierte Vorlage auch **duplizieren**, um ihre Konfiguration 
 
    ![](assets/campaign-template-create-wf.png)
 
-1. Wählen Sie **Speichern** aus. Ihre Vorlage kann jetzt zur Erstellung einer neuen Kampagne verwendet werden.
+1. Klicken Sie auf **Speichern**. Ihre Vorlage kann jetzt zur Erstellung einer neuen Kampagne verwendet werden.
 
 Die unterschiedlichen Registerkarten und Unterregisterkarten der Kampagnenvorlage ermöglichen den Zugriff auf die Einstellungen. Sie werden im Abschnitt [Allgemeine Konfiguration](#general-configuration) beschrieben.
 
 ## Auswählen von Modulen {#select-modules}
 
-Über den Link **[!UICONTROL Erweiterte Kampagnenparameter...]** können Sie Vorgänge für die auf dieser Vorlage basierenden Kampagnen aktivieren und deaktivieren. Wählen Sie die Funktionen aus, die Sie in den über diese Vorlage erstellten Kampagnen aktivieren möchten.
+Über den Link **[!UICONTROL Erweiterte Kampagnenparameter...]** können Sie Aufträge für die auf dieser Vorlage basierenden Kampagnen aktivieren und deaktivieren. Wählen Sie die Funktionen aus, die Sie in den über diese Vorlage erstellten Kampagnen aktivieren möchten.
 
 ![](assets/campaign-template-select-modules.png)
 
 Wenn eine Funktionalität nicht ausgewählt ist, werden die den Prozess betreffenden Elemente (Menüs, Symbole, Optionen, Registerkarten, Unterregisterkarten usw.) weder in der Benutzeroberfläche der Vorlage noch in auf dieser Vorlage basierenden Kampagnen angezeigt. Die Registerkarten auf der linken Seite der Kampagnendetails und die verfügbaren Registerkarten entsprechen den in der Vorlage ausgewählten Funktionen. Wenn zum Beispiel die Funktion **Ausgaben und Ziele** nicht aktiviert ist, wird die entsprechende Registerkarte **[!UICONTROL Budget]** in Kampagnen, die auf dieser Vorlage basieren, nicht angezeigt.
 
-Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenstern hinzugefügt: Wenn eine Funktionalität aktiviert ist, können Sie über einen Link im Dashboard direkt darauf zugreifen.
+Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenstern hinzugefügt: Wenn eine Funktionalität aktiviert ist, besteht über einen Link im Dashboard direkter Zugriff auf diese.
 
 ### Konfigurationsbeispiele
 
@@ -143,7 +143,7 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 
   ![](assets/template-activate-5.png)
 
-  Wenn dieses Modul aktiviert ist, wird die Registerkarte **[!UICONTROL Vorgänge]** zu den erweiterten Einstellungen der Kampagne hinzugefügt, um die Reihenfolge der Prozessausführung zu definieren.
+  Wenn dieses Modul aktiviert ist, wird die Registerkarte **[!UICONTROL Aufträge]** zu den erweiterten Einstellungen der Kampagne hinzugefügt, um die Reihenfolge der Prozessausführung zu definieren.
 
 * **Validierungen**
 
@@ -188,4 +188,5 @@ In the task configuration box, go to the **[!UICONTROL Implementation schedule]*
 
 ![](assets/mrm_task_in_template_start_date.png)
 
-When you create a campaign using this template, the task start date will be calculated automatically. However, you can always change it later.-->
+When you create a campaign using this template, the task start date will be calculated automatically. However, you can always change it later.
+-->

@@ -1,19 +1,19 @@
 ---
-title: Erste Schritte mit der Personalisierung
+title: Erste Schritte bei der Personalisierung
 description: Erfahren Sie, wie Sie Nachrichteninhalte personalisieren können
 feature: Personalization
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
 
 ---
 
-# Erste Schritte mit der Personalisierung {#personalize-content}
+# Erste Schritte bei der Personalisierung {#personalize-content}
 
 Um jede Marketing-Kampagne optimal zu nutzen, bietet Ihnen Adobe Campaign eine Möglichkeit, benutzerdefinierte Inhalte bereitzustellen, die Kundinnen und Kunden auf ihrer Ebene ansprechen. Basierend auf den Profildaten sind Personalisierungsfunktionen zum Erstellen eines benutzerdefinierten Erlebnisses für verschiedene Gruppen und Einzelpersonen verfügbar: Sie können Ihre Nachrichten an jede Empfängerin und jeden Empfänger einzeln anpassen, indem Sie die vorhandenen Daten und Informationen nutzen. Dies können Vornamen, Interessen, Wohnorte, bisherige Käufe und vieles mehr sein.
 
@@ -40,8 +40,9 @@ Sie können den Nachrichteninhalt wie folgt personalisieren:
 
   Konfigurieren Sie bedingte Inhalte, um beispielsweise eine dynamische Personalisierung basierend auf dem Empfängerprofil hinzuzufügen. Textblöcke und/oder Bilder werden eingefügt, wenn eine bestimmte Bedingung erfüllt ist. [Weitere Informationen](conditions.md).
 
-<!--* Add **personalized offers**
-    
+<!--
+* Add **personalized offers**
+
     Insert personalized offers in your message content, depending on the recipient location, the current weather, or the last purchase order.
 -->
 
@@ -66,9 +67,9 @@ Wenn Sie diese Option auf 0 setzen, gilt für die Personalisierungsphase keine Z
 Bei den folgenden Variablen handelt es sich um interne Variablen, die im Rahmen der Personalisierung verwendet werden können, aber nicht abgeändert werden dürfen: **delivery**, **message**, **dataSource**, **targetData**, **provider**, **coupon**, **couponValue**, **proposition**.
 
 
-## Tutorial-Video {#personalization-video}
+## Anleitungsvideo {#personalization-video}
 
 Machen Sie sich mit den verschiedenen Arten von dynamischem Content vertraut und erfahren Sie, wie Sie Gestaltungsbausteine und bedingte Anweisungen erstellen und auf einen Versand anwenden.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452877?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)

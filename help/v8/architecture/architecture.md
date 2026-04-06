@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Developer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 7465cacc74b8b7df38c5eb10d2928749c70a87ea
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 84%
@@ -92,9 +92,11 @@ Um aufgespaltete externe Konten als Standardkonto für den Versand von Sendungen
 
 1. Speichern Sie Ihre Änderungen. Alle mit der Vorlage verschickten Sendungen verwenden nun standardmäßig den Aufspaltungs-Routing-Modus.
 
-<!--In addition, you can select split external accounts as the default routing provider for all future delivery templates. To do this, change the value of the **[!UICONTROL xtkoption NmsBroadcast_DefaultProvider]** option to the name of the split account.
+<!--
+In addition, you can select split external accounts as the default routing provider for all future delivery templates. To do this, change the value of the **[!UICONTROL xtkoption NmsBroadcast_DefaultProvider]** option to the name of the split account.
 
-![](assets/split-default-options.png) -->
+![](assets/split-default-options.png)
+-->
 
 ## Message Center-Architektur{#transac-msg-archi}
 
@@ -114,7 +116,7 @@ In der hier angewendeten Architektur sind Ausführungszelle und Kontrollinstanz 
 
 >[!CAUTION]
 >
->Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können nicht auf derselben Campaign-Instanz ausgeführt werden.
+>Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
 
 ![](assets/messagecenter_diagram.png)
 

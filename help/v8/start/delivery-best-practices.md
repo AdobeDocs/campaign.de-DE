@@ -6,7 +6,7 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 7bfe0ac7ba99ebf26844d2cea14a75f32ecb8b74
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '3102'
 ht-degree: 94%
@@ -130,11 +130,11 @@ Um Ihre Nachrichten zu personalisieren, können Sie die Empfängerdaten verwende
 
 * Überprüfen Sie Ihre Personalisierungseinstellungen – Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um Fehler zu vermeiden, die oft bei der Personalisierung auftreten. Ein Personalisierungs-Tag in Adobe Campaign präsentiert sich stets in folgender Form: `<%=table.field%>`.  Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise folgendermaßen verwendet werden:
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
   Weitere Informationen zu Gestaltungsbausteinen finden Sie in [diesem Abschnitt](../send/personalization-blocks.md).
 
@@ -238,9 +238,10 @@ To avoid common formatting errors, check the following elements:
 
 * Correct **date formatting**: Adobe Campaign provides date formatting functions for the JavaScript templates and XSL stylesheets. [Learn more](formatting.md#date-display)
 
-* Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
+* Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode.
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+-->
 
 ## Verwalten von Bildern {#manage-images}
 
@@ -305,7 +306,8 @@ Sie können Nachrichten an Empfangende senden, die in einer externen Datei ansta
 <!--
 ### Send to your subscribers {#send-to-subscribers}
 
-To send messages to the subscribers of a newsletter, you can directly target the subscribers to the corresponding information service. Learn more [in this section](../audiences/).-->
+To send messages to the subscribers of a newsletter, you can directly target the subscribers to the corresponding information service. Learn more [in this section](../audiences/).
+-->
 
 ### Testempfangende {#test-recipients-seed-addresses}
 
@@ -347,7 +349,8 @@ Inbox rendering enables you to preview your messages on major email clients, sca
 
 * Inbox rendering capabilities are crucial to identifying whether your email campaigns successfully make it past the filters of major ISPs (Internet Service Providers) and webmail services. Such tools send a pre-flight copy of an email to a network of test inboxes, so you can see how the message will display, or render, across these services. They may also include reports and code correction options that help you quickly identify and make fixes that improve deliverability.
 
-Learn more [in this section](inbox-rendering.md).-->
+Learn more [in this section](inbox-rendering.md).
+-->
 
 ### Nachrichten in Testsendungen {#proof-messages}
 
@@ -364,7 +367,8 @@ If you have several contents for an email delivery, you can use A/B testing to f
 
 * Select the one with the highest success rate and send it to the rest of your target
 
-Learn more [in this section](get-started-a-b-testing.md).-->
+Learn more [in this section](get-started-a-b-testing.md).
+-->
 
 ### Nachrichtenzustellung überprüfen {#make-sure-your-message-is-delivered}
 
@@ -409,7 +413,8 @@ You can:
 
 >[!NOTE]
 >
->Most of these steps can only be performed by an expert user.-->
+>Most of these steps can only be performed by an expert user.
+-->
 
 #### Typologien verwenden
 

@@ -5,7 +5,7 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 95%
@@ -41,7 +41,7 @@ Folgende Optionen stehen zum Anmelden (Opt-in) eines Profils für einen Service 
 
   Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=de#step-5---additional-step-when-importing-recipients){target="_blank"}.
 
-* Empfänger melden sich persönlich über ein Web-Formular an.
+* Empfänger melden sich persönlich über ein Webformular an.
 
   ![](assets/opt-in-webapp.png)
 
@@ -79,7 +79,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](h
 >Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) sind An- und Abmeldungen **asynchrone** Prozesse. Opt-in und Opt-out-Anfragen werden stündlich verarbeitet. [Weitere Informationen](../architecture/new-apis.md#sub-apis)
 
 <!--
-You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages. 
+You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages.
 
-For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=de#viral-marketing--forward-to-a-friend){target="_blank"}
+For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html#viral-marketing--forward-to-a-friend){target="_blank"}
 -->

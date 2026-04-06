@@ -3,7 +3,7 @@ keywords: Campaign Classic;Startseite;beliebte Themen
 description: Hilfe finden Sie im Adobe Campaign v8-Hilfezentrum. Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerbehebungen in Campaign v8.
 title: Adobe Campaign v8-Produktdokumentation
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 90%
@@ -32,7 +32,7 @@ Erleben Sie die neue Adobe Campaign-Benutzeroberfläche. Moderner, intuitiver un
 [![Bild](assets/do-not-localize/learn-more-button.svg)](start/campaign-ui.md#ac-web-ui)
 
 <!--
->[!TAB Push channel upcoming changes] 
+>[!TAB Push channel upcoming changes]
 
 Some important changes to the Android Firebase Cloud Messaging (FCM) service will be released in 2024, and may impact your Adobe Campaign implementation. Your subscription services configuration for Android push messages may need to be updated to support this change. You can already check and take action.
 

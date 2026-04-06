@@ -5,14 +5,14 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 98%
 
 ---
 
-# Erstellen eines Angebots
+# Angebot erstellen
 
 Um ein Angebot zu erstellen, gehen Sie wie folgt vor:
 
@@ -102,7 +102,7 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
 ### Übersicht der für ein Angebot konfigurierten Eignungsregeln {#a-summary-of-offer-eligibility-rules}
 
-Im Dashboard des Angebots können Sie auf die Details der Eignungskonfiguration zugreifen.
+Im Dashboard des Angebots können Sie auf eine Zusammenfassung der Eignungsregeln zugreifen.
 
 Klicken Sie hierfür auf den Link **[!UICONTROL Planung und Eignungsregeln des Angebots]**.
 
@@ -152,7 +152,7 @@ Sobald der Angebotsinhalt konfiguriert ist, können Sie das Angebot so anzeigen,
 
 Gehen Sie dazu wie folgt vor:
 
-1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**.
+1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
 
    ![](assets/offer_preview_create_001.png)
 
@@ -163,7 +163,6 @@ Gehen Sie dazu wie folgt vor:
 1. Wenn Sie den Inhalt des Angebots personalisiert haben, ist die Auswahl eines Empfängers erforderlich, um die Personalisierung prüfen zu können.
 
 <!--
-
 ## Create a hypothesis on an offer {#creating-a-hypothesis-on-an-offer}
 
 You can create hypotheses on your offer propositions. This lets you determine the impact of your offers on purchases carried out for the product concerned.
@@ -175,7 +174,6 @@ You can create hypotheses on your offer propositions. This lets you determine th
 Hypotheses carried out on an offer proposition are referenced in their **[!UICONTROL Measure]** tab.
 
 Creating hypotheses is detailed in [this page](../../campaign/using/about-response-manager.md).
-
 -->
 
 ## Angebot genehmigen und aktivieren{#approve-offers}
@@ -192,7 +190,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](h
 
 ## Angebotssimulation
 
-Mithilfe des Moduls **Simulation** können Sie die Verteilung der Angebote einer Kategorie oder einer Umgebung evaluieren, bevor Sie den Vorschlag den Empfängern unterbreiten.
+Mithilfe von **Simulationen** können Sie die Verteilung der Angebote einer Kategorie oder einer Umgebung evaluieren, bevor Sie den Vorschlag den Empfängern unterbreiten.
 
 Bei der Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die bisher für Angebote und deren Unterbreitungsregeln galten. Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
 

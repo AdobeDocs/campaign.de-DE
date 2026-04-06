@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
-source-git-commit: b52308bcbe68a7c382918fe28f8166e3bfcb6cde
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 97%
+source-wordcount: '1518'
+ht-degree: 95%
 
 ---
 
@@ -36,14 +36,14 @@ Es wurde ein Fehler behoben, der beim Upgrade auf 8.5.1 auftreten konnte. (NEO-6
 
 ## Version 8.5.1 {#release-8-5}
 
-_30. Juni 2023_
+_Samstag, 30. Juni 2023_
 
 
 **Verbesserter Push-Benachrichtigungsdienst**
 
 Campaign v8.5.1 führt unseren neuesten Push-Benachrichtigungsdienst ein. Dieser wird durch ein robustes Framework gestützt, das auf moderner Spitzentechnologie aufbaut. Dieser Dienst wurde entwickelt, um neue Ebenen der Skalierbarkeit zu erschließen und sicherzustellen, dass Ihre Benachrichtigungen eine größere Zielgruppe mit nahtloser Effizienz erreichen können. Mit unserer verbesserten Infrastruktur und optimierten Prozessen können Sie höhere Skalierbarkeit und Zuverlässigkeit erwarten, die es Ihnen ermöglicht, mit Ihren App-Nutzenden wie nie zuvor in Kontakt zu treten und Verbindungen herzustellen. Diese Funktion steht nur einer ausgewählten Kundengruppe zur Verfügung (eingeschränkte Verfügbarkeit).
 
-Weitere Informationen finden Sie in der [entsprechenden Dokumentation](../send/push-data-collection.md).
+Weitere Informationen finden Sie im [entsprechenden Handbuch](../send/push-data-collection.md).
 
 
 <table style="table-layout:fixed" text-align="bottom"><tr style="border: 0;">
@@ -79,7 +79,7 @@ Weitere Informationen finden Sie in der [entsprechenden Dokumentation](../send/p
 **Verbesserungen bei der Sicherheit**
 
 * Ab Campaign v8.5.1 wurde der Authentifizierungsprozess für Campaign v8 verbessert und gesichert. Technische Benutzerinnen bzw. Benutzer müssen jetzt das Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
-* Ab der kommenden Version v8.6 dürfen Sie keine Benutzenden mehr über die Campaign-Client-Konsole erstellen. Wenn Sie die native Authentifizierung mit Login/Passwort verwenden, müssen Sie Ihre Benutzenden auf das Adobe Identity Management System (IMS) migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/upgrades/migrate-users-to-ims.md), wie Sie alte Benutzende migrieren können.
+* Ab der kommenden Version v8.6 dürfen Sie keine Benutzenden mehr über die Campaign-Client-Konsole erstellen. Wenn Sie die native Authentifizierung mit Login/Passwort verwenden, müssen Sie Ihre Benutzenden auf das Adobe Identity Management System (IMS) migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/upgrades/migrate-users-to-ims.md), wie Sie Ihre Benutzenden migrieren können.
 * Mehrere Drittanbieter-Tools wurden aktualisiert, um die Sicherheit zu optimieren.
 
 **Aktualisierungen zur Kompatibilität**
@@ -93,7 +93,7 @@ Weitere Informationen finden Sie in der [entsprechenden Dokumentation](../send/p
 * Fehlerkorrektur: Sonderzeichen im HTML-Inhalt eines Versands werden jetzt in mehreren Browsern korrekt codiert. (NEO-60081)
 * Fehlerkorrektur: Berichte können jetzt in einer Campaign v8 Enterprise (FFDA)-Bereitstellung gespeichert werden. (NEO-56836)
 * Fehlerkorrektur: Beim Einfügen oder Aktualisieren von Daten in ein benutzerdefiniertes FFDA-Schema über die Workflow-Aktivität „Daten-Update“ tritt jetzt kein Fehler mehr auf. (NEO-54708)
-* Fehlerkorrektur: Der Datenbankbereinigungs-Workflow kann jetzt Adressen aus der Tabelle „nms:address“ in FFDA entfernen. (NEO-54460)
+* Fehlerkorrektur - Der Datenbankbereinigungs-Workflow kann jetzt Adressen aus der nms::address-Tabelle in FFDA entfernen. (NEO-54460)
 * Fehlerkorrektur: Der Abrechnungs-Workflow funktioniert jetzt mit dem Fehler „Kompilierungsspeicher ausgeschöpft“. (NEO-51137)
 * Fehlerkorrektur: Die GPG-Entschlüsselung funktioniert jetzt in der Workflow-Aktivität „Laden (Datei)“ ordnungsgemäß. (NEO-50257)
 * Fehlerkorrektur: Die Funktion `JSPContext.sqlExecWithOneParam` funktioniert jetzt. (NEO-50066)
@@ -108,7 +108,7 @@ Weitere Informationen finden Sie in der [entsprechenden Dokumentation](../send/p
 
 ## Version 8.4.5 {#release-8-4-5}
 
-_3. April 2023_
+_Dienstag, 3. April 2023_
 
 **Fehlerbehebungen**
 
@@ -122,7 +122,7 @@ _3. April 2023_
 
 ## Version 8.4.4 {#release-8-4-4}
 
-_8. März 2023_
+_Donnerstag, 8. März 2023_
 
 **Sicherheitsverbesserung**
 
@@ -137,7 +137,7 @@ _8. März 2023_
 ## Version 8.4.3 {#release-8-4-3}
 
 
-_27. Januar 2023_
+_Samstag, 27. Januar 2023_
 
 **Fehlerbehebungen**
 
@@ -148,15 +148,17 @@ _27. Januar 2023_
 * Fehlerkorrektur: Es wurden zwei Fehler bei der Versandvorbereitung behoben. Die Versandvorbereitung konnte fehlschlagen, wenn die Anzahl der bearbeiteten potenziellen Angebote zu hoch war. Das zweite Problem trat auf, wenn die Bild-URLs als URLs definiert waren, die in einem Versand im Textformat nachverfolgt werden sollten. (NEO-48807) <!--OKKKK-->
 * Fehlerkorrektur: Es wurde ein Problem behoben, das zu Workflow-Fehlern führen konnte, wodurch der im externen Konto definierte Warehouse-Name für Nicht-FFDA-Konten von einem Workflow überschrieben werden konnte. (NEO-43209) <!--OKKKK-->
 * Fehlerkorrektur: Verbesserte Sicherheit für Webanwendungen, um DDoS-Angriffe zu verhindern. (NEO-50757) <!--OKKKK-->
-* Fehlerkorrektur: Die Verwaltung konsolidierter Tracking-Daten wurde in der FFDA-Tabelle für **[!UICONTROL konsolidiertes Tracking]** (nms:trackingStats) verbessert, um Duplikate zu vermeiden. (NEO-46409)
+* Die Verwaltung konsolidierter Tracking-Daten wurde in der FFDA-Tabelle **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats) verbessert, um Duplikate zu vermeiden. (NEO-46409)
 * Fehlerkorrektur: Ein Problem mit dem logischen Operator in Workflow-Abfragen bei der Verwendung von `enableIf` in einer logischen Operator-Bedingung wurde behoben. Die vorherige logische Bedingung wurde überschrieben. (NEO-45815)  <!--OKKKK-->
 * Fehlerkorrektur: Die Erstellung aktiver Profile wurde im Abrechnungs-Workflow optimiert, um die Performance zu verbessern. (NEO-47658) <!--OKKKK-->
 * Fehlerkorrektur: Beim HTML-Dateiimport tritt jetzt kein Fehler mehr auf, wenn Bildknoten (img) URLs mit Personalisierungsfeldern enthalten. (NEO-48396)
 * Fehlerkorrektur: Es wurde ein Problem bei der Verwendung des Sortierparameters in der Workflow-Aktivität **Aufspaltung** bei Snowflake (alle Bereitstellungen) behoben. (NEO-45899) <!--OKKKK-->
 * Fehlerkorrektur: Jetzt tritt kein Fehler mehr auf, wenn ein Benutzer bzw. eine Benutzerin mit Lesezugriffsrechten für den Ordner &quot;nmsDeliveryMapping&quot; versucht, eine Kampagne oder einen Workflow auszuführen. (NEO-48230)
 * Fehlerkorrektur: Bei umfangreichem HTML-Code in der HTML-Tabelle eines Versands tritt jetzt kein Performance-Problem mehr auf. (NEO-47440)
-<!-- * Fixed an issue which could lead to a "Character set mismatch" error when using certain functions such as `to_nclob` with an Oracle unicode database where NChar was not enabled. (NEO-49361)
-* Fixed an issue which prevented users from inserting a Time datatype in a **Data Update** workflow activity on MSSQL. (NEO-47763)-->
+<!--
+ * Fixed an issue which could lead to a "Character set mismatch" error when using certain functions such as `to_nclob` with an Oracle unicode database where NChar was not enabled. (NEO-49361)
+* Fixed an issue which prevented users from inserting a Time datatype in a **Data Update** workflow activity on MSSQL. (NEO-47763)
+-->
 * Fehlerkorrektur: Es wurde ein Problem behoben, das Benutzende davon abhielt, die Workflow-Option **Ausgewählte Zeilen zusammenführen** zu verwenden. (NEO-48488)
 * Fehlerkorrektur: Es wurde ein Problem im Snowflake FDA-Connector behoben, das dazu führte, dass Einträge bei Verwendung der Option &quot;Einfache Relation mit Kardinalität 0 oder 1&quot; während der Anreicherung gelöscht wurden. (NEO-48737)
 * Die verbleibenden Verweise auf die log4j-Bibliothek wurden aus der Campaign-Installation unter Windows entfernt. (NEO-44851)

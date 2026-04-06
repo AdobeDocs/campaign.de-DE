@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
-source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 100%
@@ -37,7 +37,8 @@ Die von der Ausführungsinstanz gesendeten Transaktionsnachrichten werden durch 
 >Die Sendungen sammeln die Ereignisse wöchentlich auf der Grundlage der neuesten Ereignisaktualisierung, und nicht am Erstellungsdatum des Ereignisses. Daher kann sich beim Extrahieren von Transaktionsnachrichten-Versandlogs in der Kontrollinstanz die mit jeder Versandlog-Kennung verknüpfte Versandkennung im Laufe der Zeit ändern, wenn das Log aktualisiert wird (z. B. wenn für das Ereignis ein eingehender Bounce empfangen wird).
 
 <!--
-To monitor the activity and running of the execution instance(s), see [Transactional messaging reports](transactional-messaging-reports.md).-->
+To monitor the activity and running of the execution instance(s), see [Transactional messaging reports](transactional-messaging-reports.md).
+-->
 
 ## Reporting{#reporting-transactional-msg}
 
@@ -47,7 +48,7 @@ Der Zugriff auf diese Message Center-Berichte erfolgt über den Tab **[!UICONTRO
 
 ![](assets/mc-reports.png)
 
-### Message-Center-Ereignisverlauf {#history-events}
+### Message Center-Ereignisverlauf {#history-events}
 
 Der **[!UICONTROL Ereignisverlauf des Message Centers]** zeigt einen Überblick über die Aktivität des Message-Center-Moduls an, d. h. die Anzahl der als Transaktionsnachrichten verarbeiteten und zugestellten Ereignisse.
 
@@ -56,7 +57,7 @@ Beim Öffnen des Berichts entsprechen die standardmäßig angezeigten Daten der 
 Sie haben zudem die Möglichkeit, für jeden Zeitraum die Daten jedes Ereignisses zu visualisieren. Die Spalte **[!UICONTROL Ereignisse]** entspricht der Anzahl von der Kontrollinstanz empfangenen Ereignisse. In der Spalte **[!UICONTROL Gesendet]** werden die als Reaktion auf die Ereignisse gesendeten personalisierten Transaktionsnachrichten berechnet.
 
 
-### Message-Center-Verarbeitungsdauer {#processing-time}
+### Message Center-Verarbeitungsdauer {#processing-time}
 
 Die **[!UICONTROL Verarbeitungszeit des Message Centers]** zeigt die wichtigsten Indikatoren im Zusammenhang mit der Echtzeit-Warteschlange an. Auf diesen Bericht kann auch über die Registerkarte **[!UICONTROL Überwachung]** der Kontrollinstanz zugegriffen werden.
 
@@ -79,7 +80,7 @@ Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indika
 
 
 
-### Message-Center-Dienstqualität {#service-level}
+### Message Center-Dienstqualität {#service-level}
 
 Die **[!UICONTROL Dienstqualität des Message Centers]** zeigt die Versandstatistiken der Transaktionsnachrichten sowie die Fehleraufschlüsselung. Sie können auf einen Fehlertyp klicken, um dessen Details anzuzeigen.
 

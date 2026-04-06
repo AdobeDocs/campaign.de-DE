@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: a05b1d7d9b35f8d9189046fd4288d0b80f30967a
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '1238'
 ht-degree: 99%
@@ -46,7 +46,7 @@ Die Definition des Inhalts der Transaktionsnachricht entspricht der für alle Se
 
 >[!CAUTION]
 >
->In Nachrichten enthaltene Bilder müssen öffentlich zugänglich sein. Adobe Campaign verfügt über keinen Mechanismus zum Hochladen von Bildern für Transaktionsnachrichten.\
+>In Nachrichten enthaltene Bilder müssen öffentlich zugänglich sein. Adobe Campaign verfügt über keinen Mechanismus zum Online-Stellen der Bilder für Transaktionsnachrichten.\
 >Im Gegensatz zu JSSP oder webApp bietet `<%=` keine standardmäßige Escape-Funktion.
 >
 >In diesem Fall müssen Sie alle Daten, die aus dem Ereignis stammen, ordnungsgemäß maskieren. Dieses Escape-Sequenz hängt davon ab, wie dieses Feld verwendet wird. Verwenden Sie beispielsweise innerhalb einer URL encodeURIComponent. Für eine Anzeige im HTML-Code, können Sie escapeXMLString verwenden.
@@ -86,7 +86,7 @@ Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen 
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}.
+1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}.
 
    ![](assets/messagecenter_create_custo_3.png)
 
@@ -99,14 +99,13 @@ Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen 
 Sobald die Adressen erstellt wurden, können Sie eine Vorschau der Nachricht und ihrer Personalisierung erzeugen.
 
 <!--
-
 ### Add personalization data{#personalization-data}
 
 You can add data in the message template to test transactional message personalization. This will allow you to generate a preview or send a proof. If you install the **Deliverability** module, this data allows you to display a rendering of the messages for various desktop, web or mobile clients.
 
 The purpose of this data is to test your messages before their final delivery. These messages do not coincide with actual data to be processed by Message Center.
 
-However, the XML structure must be identical to that of the event stored in the execution instance, as shown below. 
+However, the XML structure must be identical to that of the event stored in the execution instance, as shown below.
 
 ![](assets/messagecenter_create_custo_4.png)
 
@@ -175,15 +174,17 @@ Nach dem Versand der Testsendungen müssen Sie das Routing zurück zum internen 
 
 Wenn die erstellte Nachrichtenvorlage<!-- on the control instance--> vollständig ist, können Sie sie veröffentlichen, wodurch Sie Nachrichten versenden können, die mit Echtzeit- und Batch-Ereignissen verknüpft sind.
 
-<!--This process will also publish it on all execution instances.
+<!--
+This process will also publish it on all execution instances.
 
 NOTE: When publishing transactional message templates, typology rules are also automatically published on the execution instances.
 
-Publication lets you automatically create two message templates on the execution instances, which will allow you to send messages linked to real-time and batch events.-->
+Publication lets you automatically create two message templates on the execution instances, which will allow you to send messages linked to real-time and batch events.
+-->
 
 >[!CAUTION]
 >
->Wenn Sie an einer Vorlage Änderungen vornehmen, müssen Sie sie erneut veröffentlichen, damit diese Änderungen während des Versands der Transaktionsnachricht wirksam werden.
+>Wenn Sie an einer Vorlage Änderungen vornehmen, stellen Sie sicher, dass Sie sie erneut veröffentlichen, damit diese Änderungen während des Versands der Transaktionsnachricht wirksam werden.
 
 1. Gehen Sie im Navigationsbaum zum Ordner **[!UICONTROL Message Center > Transaktionsnachrichtenvorlagen]**.
 1. Wählen Sie die Vorlage aus, die Sie veröffentlichen möchten<!--on your execution instances-->.

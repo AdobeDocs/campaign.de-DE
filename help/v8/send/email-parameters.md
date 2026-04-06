@@ -6,7 +6,7 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: 6b70ad987b828dc1c17bc4f0683046be4eff0408
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 70%
@@ -48,7 +48,8 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 <!--
 >[!NOTE]
 >
->For more on defining the email content, see [this section]().-->
+>For more on defining the email content, see [this section]().
+-->
 
 ## Festlegen der Zeichencodierung {#character-encoding}
 
@@ -78,7 +79,7 @@ Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschn
 
 ## Abmelde-Liste mit einem Klick aktivieren {#one-click-list-unsubscribe}
 
-Die Abmelde-URL mit einem Klick ist ein Link oder eine Schaltfläche neben den E-Mail-Absenderinformationen, über den bzw. die Empfänger Ihre Mailing-Listen sofort mit einem einzigen Klick abmelden können. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=de#list-unsubscribe){target="_blank"}-->
+Die Abmelde-URL mit einem Klick ist ein Link oder eine Schaltfläche neben den E-Mail-Absenderinformationen, über den bzw. die Empfänger Ihre Mailing-Listen sofort mit einem einzigen Klick abmelden können. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Es wird als **Abmelden**-Link in den E-Mail-Schnittstellen der ISPs angezeigt. Beispiel:
 
@@ -101,7 +102,8 @@ Um diese Funktion zu aktivieren, wählen Sie die Option **[!UICONTROL Hinzufüge
 <!--
 >[!WARNING]
 >
->If you uncheck this option in the delivery template, it will still be enabled by default in the deliveries created from this template. You need to enable the option again at the delivery level.-->
+>If you uncheck this option in the delivery template, it will still be enabled by default in the deliveries created from this template. You need to enable the option again at the delivery level.
+-->
 
 Je nach E-Mail-Client und der Methode, die er zum Opt-out verwendet, kann das Klicken auf den **Abmelden**-Link in der E-Mail-Kopfzeile die folgenden Auswirkungen haben:
 
@@ -117,7 +119,7 @@ Je nach E-Mail-Client und der Methode, die er zum Opt-out verwendet, kann das Kl
 
 >[!NOTE]
 >
->Sie können auch die Methoden [One-Click List-Unsubscribe](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} und [„mailto“ List-Unsubscribe](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuell festlegen. Die detaillierten Schritte werden im Experience Cloud [Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#list-unsubscribe){target="_blank"} beschrieben.
+>Sie können auch die Methoden [One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} und [„mailto“ List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuell festlegen. Die detaillierten Schritte werden im Experience Cloud [Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#list-unsubscribe){target="_blank"} beschrieben.
 
 
 ## Hinzufügen von SMTP-Headern {#adding-smtp-headers}
