@@ -3,12 +3,11 @@ product: campaign
 title: Abschaffung der Client-Konsole für 32 Bit
 description: Abschaffung der Client-Konsole für 32 Bit
 hide: true
-hidefromtoc: true
 exl-id: 9411e38a-5783-439c-ad54-f33bd374f2b8
-source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '338'
+ht-degree: 81%
 
 ---
 
@@ -36,7 +35,7 @@ Das Upgrade erfolgt nahtlos. Sie müssen die neue Version nur über das Setup in
 
 +++
 
-+++ Ist die 64-Bit-Version der Client-Konsole von Campaign v8 mit 32-Bit-Computern kompatibel?
++++Ist die 64-Bit-Version der Client-Konsole von Campaign v8 mit 32-Bit-Computern kompatibel?
 
 Nein. Die 64-Bit-Version der Client-Konsole von Campaign v8 unterstützt nur 64-Bit-Computer.
 
@@ -48,13 +47,13 @@ Ja. Ab Version 8.6 ist die Client-Konsole von Campaign v8 nicht mehr in 32 Bit v
 
 +++
 
-+++ Welche Versionen von Campaign v8 unterstützen 32-Bit-Betriebssysteme nicht mehr?
++++Welche Versionen von Campaign v8 unterstützen 32-Bit-Betriebssysteme nicht mehr?
 
 Ab Version 8.6 werden 32-Bit-Betriebssysteme in allen Campaign v8-Versionen nicht mehr unterstützt.
 
 +++
 
-+++ Wie kann ich von Windows (32 Bit) auf Windows (64 Bit) aktualisieren?
++++Wie führe ich ein Upgrade von Windows (32 Bit) auf Windows (64 Bit) durch?
 
 Stellen Sie sicher, dass der Prozessor Ihres Computers die Installation eines 64-Bit-Betriebssystems unterstützt. Für die Aktualisierung von der 32-Bit-Version auf die 64-Bit-Version von Windows müssen Sie Ihre Festplatte neu formatieren, die 64-Bit-Version von Windows installieren und dann alles, was Sie auf Ihrem Gerät hatten, neu installieren. Weitere Informationen finden Sie unter [32-Bit- und 64-Bit-Windows: Häufig gestellte Fragen](https://support.microsoft.com/de-de/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
 

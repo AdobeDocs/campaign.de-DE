@@ -6,9 +6,8 @@ feature: Push
 role: Admin
 level: Experienced
 hide: true
-hidefromtoc: true
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 93%
@@ -25,9 +24,9 @@ Darüber hinaus empfiehlt Adobe dringend, zur Token-basierten anstatt einer zert
 
 ## Google Android Firebase Cloud Messaging (FCM)-Dienst {#fcm-push-upgrade}
 
-### Was hat sich verändert? {#fcm-changes}
+### Was hat sich geändert? {#fcm-changes}
 
-Im Rahmen der kontinuierlichen Bemühungen von Google, seine Dienste zu verbessern, werden die veralteten FCM-APIs am **22. Juli 2024** eingestellt. Weitere Informationen zum Firebase Cloud Messaging-HTTP-Protokoll finden Sie in der [Dokumentation zu Google Firebase](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
+Im Rahmen der kontinuierlichen Bemühungen von Google, seine Dienste zu verbessern, werden die veralteten FCM-APIs am **Dienstag, 22. Juli 2024** eingestellt. Weitere Informationen zum Firebase Cloud Messaging-HTTP-Protokoll finden Sie in der [Dokumentation zu Google Firebase](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
 
 Adobe Campaign Classic v7 und Adobe Campaign v8 unterstützen bereits die neuesten APIs zum Senden von Push-Benachrichtigungen. Einige alte Implementierungen sind jedoch weiterhin auf die alten APIs angewiesen. Diese Implementierungen müssen aktualisiert werden.
 
@@ -44,7 +43,7 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 
 * Wenn Ihr Setup ausschließlich die **HTTP-v1**-API für Android-Push-Benachrichtigungen verwendet, sind Sie bereits konform und es sind keine weiteren Maßnahmen Ihrerseits erforderlich.
 
-### Wie erfolgt die Aktualisierung? {#fcm-transition-procedure}
+### Wie wird die Aktualisierung durchgeführt? {#fcm-transition-procedure}
 
 #### Voraussetzungen {#fcm-transition-prerequisites}
 
@@ -80,7 +79,7 @@ Befolgen Sie die folgenden Schritte, um Ihre Umgebung zu HTTP v1 zu migrieren:
    ![](assets/android-http-v1-config.png)
 
 1. Klicken Sie auf **[!UICONTROL Verbindung testen]**, um zu prüfen, ob Ihre Konfiguration korrekt ist und ob der Marketing-Server Zugriff auf den FCM-Server hat. Beachten Sie bei Mid-Sourcing-Bereitstellungen, dass die Schaltfläche **[!UICONTROL Verbindung testen]** nicht überprüfen kann, ob der Server Zugriff auf den Android Firebase Cloud Messaging(FCM)-Dienst hat.
-1. Bei Bedarf können Sie die Inhalte von Push-Nachrichten mit bestimmten **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar; ein Teil der Payload der Nachricht wird an das Mobilgerät gesendet.
+1. Bei Bedarf können Sie die Inhalte von Push-Nachrichten mit bestimmten **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar und Teil der an das mobile Gerät gesendeten Nachrichten-Payload.
 1. Klicken Sie auf **[!UICONTROL Beenden]** und danach auf **[!UICONTROL Speichern]**.
 
    Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachrichtigung weiter personalisieren können. Diese Optionen werden [hier](#fcm-apps) im Detail beschrieben.
@@ -171,7 +170,7 @@ Sie haben folgende Möglichkeiten:
 * Verwenden Sie das Feld **[!UICONTROL Ticker]**, um den Ticker-Text Ihrer Benachrichtigung festzulegen.
 * Verwenden Sie das Feld **[!UICONTROL Bild]**, um die URL des Bildes festzulegen, das in Ihrer Benachrichtigung angezeigt werden soll.
 * Verwenden Sie das Feld **[!UICONTROL Anzahl der Benachrichtigungen]**, um festzulegen, dass die Zahl der neuen, ungelesenen Informationen direkt auf dem App-Symbol angezeigt werden soll.
-* Setzen Sie die Option **[!UICONTROL Sticky]** auf „false“, damit die Benachrichtigung automatisch verworfen wird, wenn die Benutzenden darauf klicken. Bei der Einstellung „true“ wird die Benachrichtigung weiter angezeigt, auch wenn die Benutzenden darauf klicken.
+* Setzen Sie die Option **[!UICONTROL Sticky]** auf „false“, damit die Benachrichtigung automatisch verworfen wird, wenn die Benutzenden darauf klicken. Bei der Einstellung &quot;Wahr&quot; wird die Benachrichtigung weiter angezeigt, wenn der Benutzer darauf klickt.
 * Setzen Sie die **[!UICONTROL Benachrichtigungsprioritätsstufe]** Ihrer Benachrichtigung auf Standard, Minimum, niedrig oder hoch.
 * Setzen Sie die **[!UICONTROL Sichtbarkeitsstufe]** Ihrer Benachrichtigung auf öffentlich, privat oder geheim.
 
@@ -181,7 +180,7 @@ Weitere Informationen zu den **[!UICONTROL zusätzlichen HTTP v1-Optionen]** un
 
 ## Apple iOS-Push-Benachrichtigungsdienst (APNs) {#apns-push-upgrade}
 
-### Was hat sich verändert? {#ios-changes}
+### Was hat sich geändert? {#ios-changes}
 
 Wie von Apple empfohlen, sollten Sie Ihre Kommunikation mit dem Apple-Push-Benachrichtigungsdienst (APNs) mithilfe von Stateless-Authentifizierungs-Token sichern.
 
@@ -208,7 +207,7 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 
 * Wenn Ihr Setup ausschließlich den Modus **Token-basierte Authentifizierung** für iOS-Push-Benachrichtigungen verwendet, ist Ihre Implementierung bereits aktuell und es sind keine weiteren Maßnahmen Ihrerseits erforderlich.
 
-### Wie erfolgt die Aktualisierung? {#ios-transition-procedure}
+### Wie wird die Aktualisierung durchgeführt? {#ios-transition-procedure}
 
 #### Voraussetzungen {#ios-transition-prerequisites}
 

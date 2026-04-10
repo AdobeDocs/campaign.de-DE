@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: a81ec247d3c44c06aad977c0c58ad7916d6aa2a6
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 89%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 89%
 
 + [Dokumentation zu Campaign v8](campaign-home.md)
 + Versionshinweise {#releases}
-   + [Frühere Versionshinweise](start/e-release-notes.md)
+   + {hide-from-toc}[Frühzeitige Versionshinweise](start/e-release-notes.md)
    + [Versionen und Upgrades](start/upgrades.md)
    + [Neueste Versionen](start/release-notes.md)
    + Frühere Versionen {#previous-rn}
@@ -25,11 +25,11 @@ ht-degree: 89%
       + [2024](start/release-notes-2024.md)
       + [2023](start/release-notes-2023.md)
       + [2022](start/release-notes-2022.md)
-      + [2021](start/release-notes-2021.md)
+      + {hide-from-toc}[2021](start/release-notes-2021.md)
    + [Schutzmechanismen](start/ac-guardrails.md)
-   + [Bekannte Probleme](start/known-issues.md)
+   + {hide-from-toc}[Bekannte Probleme](start/known-issues.md)
    + [Kompatibilitätsmatrix](start/compatibility-matrix.md)
-   + [Aktualisierungen der Dokumentation](start/documentation-updates.md)
+   + {hide-from-toc}[Aktualisierungen der Dokumentation](start/documentation-updates.md)
    + [Bericht zu monatlichen Aktualisierungen](../../monthly-updates-report.md)
 + Erste Schritte {#new}
    + [Erste Schritte mit Adobe Campaign](start/get-started.md)
@@ -40,7 +40,7 @@ ht-degree: 89%
    + [Wechsel von Campaign Classic v7 zu v8](start/v7-to-v8.md)
    + [Wechsel von Campaign Standard zu v8](start/acs-to-v8.md)
    + [Häufig gestellte Fragen](start/campaign-faq-comprehensive.md)
-   + [Häufig gestellte Fragen](start/campaign-faq.md)
+   + {hide-from-toc}[Häufig gestellte Fragen](start/campaign-faq.md)
 + Administration und Berechtigungen {#permissions}
    + [Erste Schritte mit Berechtigungen](start/gs-permissions.md)
    + [Verwalten von Benutzerberechtigungen](start/manage-permissions.md)
@@ -78,7 +78,7 @@ ht-degree: 89%
          + [SMS-Versandeinstellungen](send/sms/sms-delivery-settings.md)
          + [SMPP-Einstellungen für externe Konten](send/sms/smpp-external-account.md)
          + [Validieren einer SMPP-Verbindung](send/sms/smpp-connection.md)
-         + [Eigenständige Instanz](send/sms/sms-standalone-instance.md)
+         + {hide-from-toc}[Eigenständige Instanz](send/sms/sms-standalone-instance.md)
          + [Mid-Sourcing-Infrastruktur](send/sms/sms-mid-sourcing.md)
          + [Beschreibung des SMPP-Connectors](send/sms/smpp-connector-delivery.md)
    + Push-Benachrichtigungen  {#push}
@@ -138,8 +138,8 @@ ht-degree: 89%
       + [Erstellen von Testprofilen](audiences/test-profiles.md)
    + Zielgruppen erstellen {#create-audiences}
       + [Erstellen einer Liste von Kontakten](audiences/create-audiences.md)
-      + [Zielgruppen mit Adobe-Lösungen freigeben](start/shared-audiences.md)
-   + [Best Practices](audiences/audiences-best-practices.md)
+      + {hide-from-toc}[Audiences mit Adobe-Lösungen freigeben](start/shared-audiences.md)
+   + {hide-from-toc}[Best Practices](audiences/audiences-best-practices.md)
    + [Abonnements verwalten](start/subscriptions.md)
 + Landingpages und Forms {#content}
    + [Erstellen von Landingpages](dev/landing-pages.md)
@@ -237,7 +237,7 @@ ht-degree: 89%
       + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
       + [Arbeiten mit Aufzählungen](config/enumerations.md)
       + [Einstellungen für Transaktionsnachrichten](config/transactional-msg-settings.md)
-      + [Integrieren von Campaign-SDKs mit Ihrer Mobile App – VERALTETE SEITE](config/push-config.md)
+      + {hide-from-toc}[Campaign SDKs mit Ihrer Mobile App integrieren - VERALTETE SEITE](config/push-config.md)
       + [Externe Konten](config/external-accounts.md)
 + Ressourcen für Entwickelnde {#developer}
    + [Campaign-Datenmodell](dev/datamodel.md)
@@ -256,7 +256,7 @@ ht-degree: 89%
       + [Eingabeformulare](dev/forms.md)
    + [Daten-Packages &#x200B;](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
-   + [Datenbank mit queryDef abfragen](dev/query-api.md)
+   + {hide-from-toc}[Datenbank mit queryDef abfragen](dev/query-api.md)
    + REST APIs {#apis}
       + [Erste Schritte mit REST-APIs](dev/api/get-started-apis.md)
       + [Empfehlungen und Einschränkungen](dev/api/limitations.md)

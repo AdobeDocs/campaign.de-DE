@@ -2,9 +2,8 @@
 title: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 description: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 hide: true
-hidefromtoc: true
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
@@ -60,8 +59,8 @@ Die Upgrades der Produktionsumgebung begannen im **Januar 2024**.
   Wir erwarten keine Tests durch Kundinnen und Kunden in Verbindung mit diesem Upgrade-Ereignis. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support){target="_blank"}.
 
 
-* **Kann ich eine Änderung des Datums/der Uhrzeit für das geplante Sicherheits-Upgrade beantragen?**
+* **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
 
   Nein. Wir können keine Anfragen bezüglich Änderungen an der bestehenden Planung berücksichtigen, da dies wahrscheinlich das zugewiesene Upgrade-Ereignis für andere Kundinnen und Kunden stören würde.
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support){target="_blank"}.
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support){target="_blank"}.

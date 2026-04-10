@@ -3,9 +3,8 @@ title: 'Versionshinweise zu Campaign v8 2021 '
 description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 2021
 feature: Release Notes
 hide: true
-hidefromtoc: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '1584'
 ht-degree: 98%
@@ -18,7 +17,7 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 ## Version 8.2.8 {#release-8-2-8}
 
-_Donnerstag, 28. Oktober 2021_
+_Freitag, 28. Oktober 2021_
 
 <table>
 <thead>
@@ -30,7 +29,7 @@ _Donnerstag, 28. Oktober 2021_
 <tr>
 <td>
 <p>Die Interaktionsverwaltung in Echtzeit ist jetzt für eingehende Kanäle verfügbar. Verwenden Sie das Modul "Inbound Interaction" in Campaign, um Ihren Kunden das beste Angebot zu unterbreiten, wenn sie Ihre Website besuchen oder sich an Ihr Callcenter wenden. Diese Funktion ist im Lieferumfang von Campaign v8 enthalten und erfordert eine spezifische Konfiguration für Ihre Instanz. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um Zugriff auf das Modul "Inbound Interaction" zu erhalten.</p>
-<p>Weitere Informationen finden Sie in der <a href="../interaction/interaction-architecture.md">entsprechenden Dokumentation</a>.</p>
+<p>Weitere Informationen finden Sie im <a href="../interaction/interaction-architecture.md">entsprechenden Handbuch</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -45,7 +44,7 @@ _Donnerstag, 28. Oktober 2021_
 <tbody> 
 <tr> 
 <td> <p>Das Modul "Kampagnenoptimierung" ist jetzt verfügbar. Mit diesem Modul können Sie Sendungen steuern, filtern und überwachen. Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.</p>
-<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de#campaign-optimization">entsprechenden Dokumentation</a>.</p>
+<p>Weitere Informationen finden Sie im <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de#campaign-optimization">entsprechenden Handbuch</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -71,7 +70,7 @@ _Donnerstag, 28. Oktober 2021_
 **Verbesserungen**
 
 * Der Snowflake-Connector wurde hinsichtlich der Performance verbessert.
-* Zu Überwachungs- und Testzwecken enthalten die Prüfprotokolle des Workflows **[!UICONTROL Replizieren von Staging-Daten]** jetzt die Anzahl der Datensätze, die an die FFDA-Datenbank (Full Federated Data Access) gesendet wurden.
+* Zu Überwachungs- und Testzwecken enthalten die Auditlogs des Workflows **[!UICONTROL Replizieren von Staging-Daten]** jetzt die Anzahl der Datensätze, die an die FFDA-Datenbank (Full Federated Data Access) gesendet wurden.
 * Die SQL-Code-Aktivität ermöglicht jetzt die Auswahl der Datenbank, in der das SQL-Skript gespeichert wird: die Standarddatenquelle oder ein ausgewähltes aktives externes FDA-Konto.
 * Eine Reihe vordefinierter Warehouses ist jetzt verfügbar und kann verwendet werden, um verschiedene Abfragen parallel auszuführen, wie Segmentierung, ETL oder Spitzen. [Weitere Informationen](../config/workflows.md)
 
@@ -89,29 +88,29 @@ _Donnerstag, 28. Oktober 2021_
 * Es wurde ein Problem behoben, das den Import von Packages verlangsamen konnte.
 * Es wurde ein Problem behoben, das verhindern konnte, dass E-Mail-Sendungen an Testadressen durchgeführt wurden.
 * Es wurde ein Problem behoben, das verhindern konnte, dass Vorschläge in der Tabelle mit den Angebotsvorschlägen gespeichert wurden.
-* Es wurde ein Fehler behoben, der dazu führte, dass Probleme mit Netzwerküberschreitungen fälschlicherweise als Skriptunterbrechungsprobleme anstatt als Netzwerkfehler protokolliert wurden. Dieses Problem trat bei HTTP-Anfragen auf, die in JavaScript-Aktivitäten enthalten waren.
+* Fehlerkorrektur – Probleme mit Netzwerk-Timeouts werden jetzt nicht mehr fälschlicherweise als Skriptunterbrechungsprobleme anstatt als Netzwerkfehler protokolliert. Dieses Problem trat bei HTTP-Anfragen auf, die in JavaScript-Aktivitäten enthalten waren.
 * Es wurde ein Problem behoben, durch das Angebote nicht in die Live-Angebotsumgebung auf Snowflake repliziert werden konnten.
 * Es wurde ein Problem behoben, durch das das Attribut &quot;autoStg&quot; für nicht erweiterte integrierte Schemata ignoriert wurde.
 * Es wurde ein Problem behoben, das verhinderte, dass Benutzer bei der Vorschau eines Profils den Link **[!UICONTROL Land/Region]** auswählen konnten.
 * Es wurde ein Fehler behoben, der dazu führte, dass die Datumsauswahl in benutzerdefinierten Berichten zu einem Skriptfehler führte. (NEO-36345)
 * Es wurde ein Problem behoben, das zum Absturz des Systems führte, wenn die Konfiguration im Falle von fehlerhaften Konfigurationsdateien neu generiert wurde.
 * Es wurde ein Problem behoben, das verhinderte, dass die Marketing- und Kontrollinstanzen erfolgreich aktualisiert werden konnten.
-* Es wurde ein Problem behoben, das zum Absturz des Abrechnungs-Workflows bei Marketing-Instanzen führen konnte.
+* Fehlerkorrektur – Der Abrechnungs-Workflows bei Marketing-Instanzen stürzt jetzt nicht mehr ab.
 * Es wurde ein Problem behoben, das zu doppelten Schlüsseln in nativen FFDA-Snowflake-Tabellen führen konnte. (NEO-38583)
 * Es wurde ein Problem behoben, das dazu führen konnte, dass temporäre Workflow-Schemata verloren gingen, wenn zwei Deduplizierungsaktivitäten nacheinander bearbeitet wurden. (NEO-34063)
 * Es wurde ein Problem behoben, durch das beim Ausführen der HoursDiff- und MinutesDiff-Funktionen von Amazon Redshift beim Versuch, die Zeitkomponente zu extrahieren, falsche Ergebnisse ausgegeben wurden.(NEO-31673)
 * Es wurde ein Problem behoben, das dazu führen konnte, dass sich Benutzer aufgrund eines Proxy-Konfigurationsproblems nicht an der Konsole anmelden konnten. (NEO-38388)
 * Es wurde ein Regressionsproblem behoben, das dazu führte, dass die Funktion **Ordner bereinigen** nicht ordnungsgemäß funktionierte. (NEO-37459)
-* Es wurde ein Problem behoben, das dazu führen konnte, dass die Vorschau von Mobile-Sendungen, die mit einem Workflow verbunden waren, nicht angezeigt wurde.
+* Fehlerkorrektur – Die Vorschau von Mobile-Sendungen, die mit einem Workflow verbunden sind, wird jetzt angezeigt.
 * Es wurde ein Problem behoben, das dazu führen konnte, dass die Workflow-Aktivität **Liste lesen** nicht funktionierte, wenn die Liste in der Datenbank mit einer negativen ID identifiziert wurde. (NEO-39607)
 
 ## Version 8.1.20 {#release-8-1-20}
 
-_Dienstag, 7. September 2021_
+_7. September 2021_
 
 **Verbesserungen bei der Sicherheit**
 
-* Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Directory Traversal-Angriffen zu verbessern. (NEO-28547)
+* Fehlerkorrektur – Der Schutz vor Verzeichnisdurchlauf-Angriffen ist jetzt verbessert. (NEO-28547)
 
 **Verbesserungen**
 
@@ -124,7 +123,7 @@ _Dienstag, 7. September 2021_
 * Veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Bereitstellungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html?lang=de#configure-acc-for-microsoft)
 
 * Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Skript aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
-* Es wurde ein Schutzmechanismus hinzugefügt, mit dem nur der [technische Workflow &quot;Abrechnung&quot;](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=de#billing-report) auf der Marketing-Instanz ausgeführt werden kann.
+* Es wurde ein Schutzmechanismus hinzugefügt, der sicherstellt, dass nur der [technische Abrechnungs-Workflow](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=de#billing-report) auf der Marketing-Instanz ausgeführt wird.
 * In den Daten- und Schema-Tabs des Fensters **Population ansehen** der Workflow-Transitionen wurde die Identifizierung der Datenquelle verbessert.
 * Fehlende Datenbankindizes wurden den folgenden Schemata hinzugefügt, um Probleme bei der Datenbankaktualisierung zu vermeiden: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
@@ -137,16 +136,16 @@ _Dienstag, 7. September 2021_
 * Fehlerkorrektur – Die Verbindung mit Microsoft CRM über die Web-API funktioniert jetzt fehlerfrei. Die Fehlermeldung wurde entfernt, da keine Funktionen betroffen waren.
 * Fehlerkorrektur – Wenn der Mid-Server als Relais zwischen Tracking- und Marketing-Servern festgelegt wird, funktioniert die Trackinglog-Deduplizierung jetzt problemlos. (NEO-36285)
 * Fehlerkorrektur – Bei einer Regression kann Vault als spezifischer Code-Store verwendet werden.
-* Fehlerkorrektur – In der Workflow-Aktivität **Anreicherung** können jetzt Variablen verwendet werden, wenn die eingehende Transition aus einer FDA-Datenquelle stammt.
+* Fehlerkorrektur – Variablen können jetzt in einer Workflow-Aktivität vom Typ **Anreicherung** verwendet werden, wenn die eingehende Transition aus einer FDA-Datenquelle stammt.
 * Fehlerkorrektur – Die ordnungsgemäße Replikation von Benutzergruppen und Berechtigungen wird nicht mehr durch ein Problem mit FFDA verhindert.
 * Fehlerkorrektur – Jetzt wird kein falscher Abmelde-Link mehr über den Versand gesendet.
 * Fehlerkorrektur – Die Replikationsverwaltung wirkt sich jetzt nicht mehr auf die Dauer des Postupgrades aus.
 * Fehlerkorrektur – Die **Klickposition** wird jetzt angezeigt.
-* Fehlerkorrektur – URLs in E-Mail-Nachrichten werden jetzt fehlerfrei angezeigt.
+* Fehlerkorrektur – URLs in E-Mail-Nachrichten werden jetzt nicht mehr beschädigt.
 
 ## Version 8.1.14 {#release-8-1-14}
 
-_Freitag, 23. Juli 2021_
+_Samstag, 23. Juli 2021_
 
 **Neue Funktionen**
 

@@ -5,10 +5,10 @@ type: Event
 title: Technotes zu Adobe Campaign
 description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
-source-git-commit: ed9e784c1610a6f042b99223ac0d4cc0cf312b09
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '76'
-ht-degree: 88%
+ht-degree: 46%
 
 ---
 
@@ -17,18 +17,18 @@ ht-degree: 88%
 
 + [Technotes zu Campaign](technotes-home.md)
 + Aktualisierungen{#tn-new}
-   + [Änderungen am Push-Benachrichtigungskanal](upgrades/push-technote.md)
+   + {hide-from-toc}[Änderungen am Push-Benachrichtigungskanal](upgrades/push-technote.md)
    + [Migrieren von Benutzenden zu IMS](upgrades/migrate-users-to-ims.md)
    + [Migration technischer Benutzender zur Developer Console](upgrades/ims-migration.md)
-   + [Migration einer technischen Benutzerin bzw. eines technischen Benutzers zur Developer Console](upgrades/ims-migration-old.md)
+   + {hide-from-toc}[Migrieren einer technischen Benutzerin bzw. eines technischen Benutzers zu Developer Console](upgrades/ims-migration-old.md)
    + [Wechseln Sie zum neuen SMS-Connector](upgrades/sms-migration.md)
-   + [Migration der Campaign-Versandinfrastruktur an AWS](upgrades/migrate-to-aws.md)
-   + [Upgrade der E-Mail-Versandinfrastruktur in Campaign](upgrades/upgrade-to-aws.md)
-   + [Aktualisierung der Apache-Version](upgrades/apache.md)
-   + [Internet-Browser](upgrades/browsers.md)
-   + [System-Upgrades für 2023](upgrades/tech-stack-upgrade.md)
-   + [Einstellung der Client-Konsole für 32 Bit](upgrades/console.md)
+   + {hide-from-toc}[Campaign sendet die Infrastrukturmigration an AWS](upgrades/migrate-to-aws.md)
+   + {hide-from-toc}[Upgrade der Campaign-E-Mail-Versandinfrastruktur](upgrades/upgrade-to-aws.md)
+   + {hide-from-toc}[Aktualisieren der Apache-Version](upgrades/apache.md)
+   + {hide-from-toc}[Internet-Browser](upgrades/browsers.md)
+   + {hide-from-toc}[2023-System-Upgrades](upgrades/tech-stack-upgrade.md)
+   + {hide-from-toc}[Einstellung der Client-Konsole für 32-Bit](upgrades/console.md)
    + Sicherheit {#security}
-      + [Rotation von Kundenanmeldedaten](security/credential-rotation-guide.md)
-      + [Asymetrische Verschlüsselung](security/asymetric-encryption.md)
+      + {hide-from-toc}[Rotation der Kundenanmeldeinformationen](security/credential-rotation-guide.md)
+      + {hide-from-toc}[Asymetrische Verschlüsselung](security/asymetric-encryption.md)
 + [&lt; Zurück zur Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)
