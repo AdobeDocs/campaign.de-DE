@@ -5,9 +5,8 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 hide: true
-hidefromtoc: true
-exl-id: 0fd39d6c-9e87-4b0f-a960-2aef76c9c8eb
-source-git-commit: ceab90331fab0725962a2a98f338ac3dc31a2588
+exl-id: c2862f94-7d15-4a49-a74e-df90d0ea7bc9
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 2%
@@ -40,7 +39,7 @@ NLWS.<namespace><SchemaName>.<method>()
 
 Zu den gängigen API-Methoden gehören:
 
-* `load(id)` - Lädt eine Entität anhand ihrer ID. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-load.html?lang=de){target="_blank"}
+* `load(id)` - Lädt eine Entität anhand ihrer ID. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-load.html){target="_blank"}
 * `create(data)` - Neue Entität erstellen
 * `save()` - Änderungen an einer Entität speichern
 
@@ -138,7 +137,7 @@ Das `xtk:queryDef` bietet Methoden zum Erstellen und Ausführen von Datenbankabf
 * `getIfExists` : Ruft einen einzelnen Datensatz ab und gibt null zurück, wenn er nicht gefunden wurde.
 * `count` - Anzahl der Datensätze, die den Kriterien entsprechen
 
-Weitere Informationen zu queryDef-Methoden finden Sie in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=de){target="_blank"}.
+Weitere Informationen zu queryDef-Methoden finden Sie in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}.
 
 ## Abfrage mit JSON {#query-json}
 
@@ -310,7 +309,7 @@ for each(var record in records.getElements()) {
 
 >[!CAUTION]
 >
->Verwenden Sie immer parametrisierte Abfragen mit `$(sz)` für Zeichenfolgen und `$(l)` für Ganzzahlen, um SQL-Injection-Schwachstellen zu vermeiden. Weitere Informationen finden Sie in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html?lang=de){target="_blank"}.
+>Verwenden Sie immer parametrisierte Abfragen mit `$(sz)` für Zeichenfolgen und `$(l)` für Ganzzahlen, um SQL-Injection-Schwachstellen zu vermeiden. Weitere Informationen finden Sie in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html){target="_blank"}.
 
 ## Zählen von Datensätzen {#count-records}
 
@@ -561,7 +560,7 @@ logInfo("Generated SQL: " + sql);
 // Output: "SELECT iRecipientId, sEmail FROM NmsRecipient WHERE sEmail IS NOT NULL"
 ```
 
-Weitere Informationen zu &quot;[&#x200B; Query](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html?lang=de){target="_blank"}.
+Weitere Informationen zu &quot;[ Query](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html){target="_blank"}.
 
 ### BuildQueryEx - SQL mit Formatzeichenfolge abrufen {#build-query-ex}
 
@@ -586,7 +585,7 @@ logInfo("Format: " + format);
 var results = sqlSelect(format, sql);
 ```
 
-Weitere Informationen zu [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html?lang=de){target="_blank"}.
+Weitere Informationen zu [BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html){target="_blank"}.
 
 ### Alle auswählen - Alle auszuwählenden Felder hinzufügen {#select-all}
 
@@ -609,7 +608,7 @@ var result = query.ExecuteQuery();
 // Result contains all recipient fields
 ```
 
-Weitere Informationen zu [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html?lang=de){target="_blank"}.
+Weitere Informationen zu [SelectAll](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html){target="_blank"}.
 
 ### Aktualisieren - Datensätze für die Massenaktualisierung {#mass-update}
 
@@ -639,7 +638,7 @@ logInfo("Mass update completed");
 >
 >Massenaktualisierungen wirken sich auf alle Datensätze aus, die der Where-Klausel entsprechen. Testen Sie immer, wo Ihre Bedingungen sind, indem Sie zuerst eine SELECT-Abfrage durchführen, um zu überprüfen, welche Datensätze betroffen sind.
 
-Weitere Informationen zu [Aktualisieren](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html?lang=de){target="_blank"}.
+Weitere Informationen zu [Aktualisieren](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html){target="_blank"}.
 
 ### GetInstanceFromModel - Instanzen der Abfragevorlage {#get-instance-from-model}
 
@@ -662,7 +661,7 @@ var query = NLWS.xtkQueryDef.create(
 var instance = query.GetInstanceFromModel("nms:delivery");
 ```
 
-Weitere Informationen zu [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html?lang=de){target="_blank"}.
+Weitere Informationen zu [GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html){target="_blank"}.
 
 ## Batch-Vorgänge {#batch-operations}
 
@@ -755,7 +754,7 @@ for each(var record in xml.collection) {
 
 Beim Arbeiten mit den Methoden queryDef und NLWS:
 
-* **Verwenden von Workflows für große Datensätze** - QueryDef ist nicht für die Verarbeitung umfangreicher Daten konzipiert. Verwenden Sie für Datensätze mit mehr als 1.000 Datensätzen Workflows, die Millionen von Zeilen effizient verarbeiten können. Weitere Informationen finden Sie in der [&#x200B; zu Campaign SDK &#x200B;](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
+* **Verwenden von Workflows für große Datensätze** - QueryDef ist nicht für die Verarbeitung umfangreicher Daten konzipiert. Verwenden Sie für Datensätze mit mehr als 1.000 Datensätzen Workflows, die Millionen von Zeilen effizient verarbeiten können. Weitere Informationen finden Sie in der [ zu Campaign SDK ](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
 * **Parametrisierte Abfragen verwenden** - Gebundene Parameter (`$(sz)`, `$(l)`) immer mit `sqlExec` verwenden, um das Einschleusen von SQL zu verhindern
 * **Explizite Limits festlegen** - Verwenden Sie `lineCount`, um die Ergebnisgröße zu steuern. Die Standardbeschränkungen von Campaign variieren je nach Kontext (200-10.000 Datensätze)
 * **Verwenden von orderBy mit Paginierung** - Verwenden Sie bei der Verwendung von `orderBy` und `startLine` immer eine `lineCount`, um eine konsistente Paginierung sicherzustellen.
@@ -901,8 +900,7 @@ Vollständige Struktur des `queryDef`:
 
 * [Erste Schritte mit Campaign-APIs](api.md)
 * [Campaign JavaScript SDK - Abfrage-API](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
-* [queryDef API-Referenz](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=de){target="_blank"}
+* [queryDef API-Referenz](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}
 * [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}
 * [Arbeiten mit Schemata](schemas.md)
 * [Arbeiten mit dem Abfrage-Editor](../start/query-editor.md)
-

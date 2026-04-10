@@ -3,9 +3,8 @@ title: Migration von technischen Benutzerinnen und Benutzern zur Adobe Developer
 description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benutzer zu einem technischen Konto in der Adobe Developer-Konsole migrieren.
 exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
-hidefromtoc: true
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
-workflow-type: ht
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
+workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 100%
 
