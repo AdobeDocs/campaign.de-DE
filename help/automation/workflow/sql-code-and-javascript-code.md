@@ -1,22 +1,20 @@
 ---
 product: campaign
 title: SQL-Code und JavaScript-Code
-description: Erfahren Sie mehr über die Workflow-Aktivitäten für SQL- und JavaScript-Codes.
+description: Weitere Informationen zu Workflow-Aktivitäten mit SQL- und JavaScript-Code
 feature: Workflows
 Role: User
 level: Experienced
 version: Campaign v8, Campaign Classic v7
 exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '300'
-ht-degree: 100%
+source-git-commit: aa9413dc794cf1a3683b33ca064ce228c90107f7
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 69%
 
 ---
 
 # SQL-Code und JavaScript-Code{#sql-code-and-javascript-code}
-
-
 
 ## SQL-Code {#sql-code}
 
@@ -31,6 +29,22 @@ Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Script in Form eines JST
 * **[!UICONTROL Fehler verarbeiten]**
 
   Siehe [Fehler verarbeiten](monitor-workflow-execution.md#processing-errors).
+
+### Wichtige Hinweise        {#important-notes}
+
+Ab 8.9.1 wurden die Workflow-Aktivitäten **[!UICONTROL SQL-Code]** und **[!UICONTROL SQL-Daten-Management]** verbessert, um PostgreSQL-Datenbanken besser zu schützen und dafür zu sorgen, dass Ihre Workflows reibungslos ausgeführt werden, wenn benutzerdefinierte SQL von Campaign aus ausgeführt wird. Im Folgenden finden Sie Best Practices für den Fall von Fehlern.
+
+Optionen sind unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** verfügbar. Für den Fall von Fehlern stehen zwei Lösungen zur Verfügung:
+
+**Lösung 1**
+
+Legen Sie `XtkSecurity_FeatureFlag_SqlSensitive` auf `0` fest. Die Funktion ist deaktiviert.
+
+**Lösung 2**
+
+`XtkSecurity_SqlSensitive_Methods` ändern. Sie können `<method name="TRUNCATE" action="block"/>` in `<method name="TRUNCATE" action="warn"/>` ändern
+
+Andere Methoden wie VACUUM FULL, REINDEX, CREATE INDEX, DROP INDEX sind ebenfalls standardmäßig blockiert, um die Datenbankintegrität zu schützen. Seien Sie vorsichtig, wenn Sie sie auf WARNUNG anstelle von BLOCK einstellen möchten. Diese Methoden können bei der Ausführung schwerwiegende Auswirkungen auf die Datenbankleistung haben.
 
 ## JavaScript-Code und erweiterter JavaScript-Code {#javascript-code}
 

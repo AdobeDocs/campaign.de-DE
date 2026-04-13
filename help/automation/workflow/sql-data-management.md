@@ -7,10 +7,10 @@ Role: User
 level: Experienced
 version: Campaign v8, Campaign Classic v7
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '393'
-ht-degree: 100%
+source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 87%
 
 ---
 
@@ -25,6 +25,16 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
 * Die Aktivität ist nur für Remote-Datenquellen verfügbar.
 * Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein.
 
+## Wichtige Hinweise        {#important-notes}
+
+Ab 8.9.1 wurden die Workflow-Aktivitäten **[!UICONTROL SQL-Code]** und **[!UICONTROL SQL-Daten-Management]** verbessert, um PostgreSQL-Datenbanken besser zu schützen und dafür zu sorgen, dass Ihre Workflows reibungslos ausgeführt werden, wenn benutzerdefinierte SQL von Campaign aus ausgeführt wird.
+
+Bei Fehlern stehen zwei Lösungen zur Verfügung:
+
+* Lösung 1 — `XtkSecurity_FeatureFlag_SqlSensitive`
+* Lösung 2 — `XtkSecurity_SqlSensitive_Methods`
+
+Weitere Informationen [&#x200B; Best Practices finden &#x200B;](sql-code-and-javascript-code.md#important-notes) unter SQL-Code .
 
 ## SQL-Daten-Management-Aktivität konfigurieren {#configuring-the-sql-data-management-activity}
 
@@ -39,7 +49,7 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
 
    >[!CAUTION]
    >
-   >Der Codierer des SQL-Scripts ist dafür verantwortlich, dass das SQL-Script funktioniert und seine Referenzen (Feldnamen etc.) dem Outbound-Schema entsprechen.
+   >Der Codierer des SQL-Scripts ist dafür verantwortlich, dass das SQL-Script funktioniert und seine Verweise (Feldnamen etc.) dem Outbound-Schema entsprechen.
 
    Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die Option **[!UICONTROL Der SQL-Code ist in einer in der Datenbank gespeicherten Entität enthalten]** aus. SQL-Scripts müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** erstellt und gespeichert werden.
 
@@ -65,7 +75,7 @@ Die Aktivität ist jetzt konfiguriert und kann im Workflow ausgeführt werden.
 >
 >Nachdem die Aktivität ausgeführt wurde, ist die Anzahl der gezählten Datensätze in der ausgehenden Transition nur als Richtwert zu erachten. Dieser kann je nach Komplexität des SQL-Scripts variieren.
 >  
->Wenn die Aktivität erneut gestartet wird, wird das gesamte Script unabhängig vom Ausführungsstatus von vorn ausgeführt.
+>Wenn die Aktivität neu gestartet wird, wird das gesamte Script unabhängig vom Ausführungsstatus von vorn ausgeführt.
 
 ## Muster für SQL-Scripts {#sql-script-samples}
 
@@ -104,7 +114,7 @@ CREATE INDEX ON <%= activity.tableName %> (sEmail);
 ANALYZE <%= activity.tableName %> (sEmail);
 ```
 
-Mit diesem Script können Sie zwei Arbeitstabellen verbinden:
+Mit diesem Skript können Sie zwei Arbeitstabellen zusammenführen:
 
 ```
 CREATE TABLE <%= activity.tableName %>
