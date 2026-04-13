@@ -5,7 +5,8 @@ title: Monatlicher Bericht zu Dokumentationsaktualisierungen
 description: Liste der neuen und aktualisierten Dokumentationsseiten
 hide: true
 hidefromtoc: true
-source-git-commit: 4626d93dea22e0ee458babfd53758c8c63a98ad4
+exl-id: 5e13798e-314f-4cbe-aea8-6229b7c1f9e6
+source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
@@ -22,7 +23,7 @@ _Keine neuen Seiten in diesem Zeitraum._
 
 ### Aktualisierte Seiten
 
-- [Best Practices für die Campaign](help/v8/config/security.md) - 19. Februar - FRR-RSC-05, FRR-RSC-08, FRR-RSC-09. Es wurde ein Hinweis zum Umfang von Managed Cloud Services und eine Sicherheitscheckliste oben hinzugefügt. Auf die Zulassungsliste setzen Neue Abschnitte: Daten- und PII-Schutz (HTTPS, PII-Einschränkung, Kennwörter, vertrauliche Seiten), Authentifizierung und Sitzung (Adobe IMS, Sitzungs-Timeout), Instanz- und Netzwerksicherheit (IP-Adresse, URL-Berechtigungen, GPG-Schlüssel), Betrieb und Compliance (Grundlegender Vergleich, Audit-Protokoll). Erweiterte Zugriffsverwaltung (Sicherheitsgruppen, Admin-Limits, Produktprofile) und Kodierungsrichtlinien (keine hartcodierten Geheimnisse, Eingabevalidierung, SQL-Zulassungsliste). FRR-RSC-08: Erklärung, dass Campaign keine maschinenlesbare Anleitung bietet; Link zu den häufig gestellten Fragen zu Kampagneneinstellungen, um die Einstellungen mit den empfohlenen Standardeinstellungen zu vergleichen.
+- [Best Practices für die Campaign](help/v8/config/security.md) - 19. Februar - FRR-RSC-05, FRR-RSC-08, FRR-RSC-09. Es wurde ein Hinweis zum Umfang von Managed Cloud Services und eine Sicherheitscheckliste oben hinzugefügt. Neue Abschnitte: Daten- und PII-Schutz (HTTPS, PII-Einschränkung, Kennwörter, vertrauliche Seiten), Authentifizierung und Sitzung (Adobe IMS, Sitzungs-Timeout), Instanz- und Netzwerksicherheit (IP-Adresse, URL-Berechtigungen, GPG-Schlüssel), Betrieb und Compliance (Grundlegender Vergleich, Audit-Protokoll). Erweiterte Zugriffsverwaltung (Sicherheitsgruppen, Admin-Limits, Produktprofile) und Kodierungsrichtlinien (keine hartcodierten Geheimnisse, Eingabevalidierung, SQL-Zulassungsliste). FRR-RSC-08: Erklärung, dass Campaign keine maschinenlesbare Anleitung bietet; Link zu den häufig gestellten Fragen zu Kampagneneinstellungen, um die Einstellungen mit den empfohlenen Standardeinstellungen zu vergleichen.
 - [Campaign Enhanced Security Add-on](help/v8/config/enhanced-security.md) - 19. Februar - FRR-RSC-09. Beschreibung auf „Öffentlich verfügbare sichere Konfigurationsanleitungen für das Campaign Enhanced Security Add-on“ festgelegt. Es wurde ein einleitender Satz hinzugefügt, der besagt, dass diese Seite Teil der öffentlich verfügbaren empfohlenen sicheren Konfigurationshandbücher für Campaign v8 von Adobe ist, mit einem Link zurück zu security.md#public-guidance.
 - [Häufig gestellte Fragen](help/v8/start/campaign-faq-comprehensive.md) - 19. Februar — FRR-RSC-05. Neue häufig gestellte Fragen in den Kampagneneinstellungen: „Wie kann ich überprüfen, ob meine Benutzer und Berechtigungen die Best Practices für die Sicherheit befolgen?“ Beschreibt, wo die aktuellen Einstellungen (Administration > Zugriffsverwaltung, Control Panel), die empfohlene sichere Baseline (Sicherheitsrichtlinien + erweitertes Sicherheits-Add-on) angezeigt werden und wie Administratoren die Konfiguration mit dokumentierten Empfehlungen vergleichen. Links zu Erste Schritte mit Berechtigungen, Sicherheitsrichtlinien, Add-on für erweiterte Sicherheit.
 - [Konfigurieren Ihrer externen Konten](help/v8/config/external-accounts.md) - 18. Februar - Einrichtung und Konfiguration externer Konten verbessert. Dokumentation zu Databricks und anderen FDA-Connectoren aktualisiert.
