@@ -18,7 +18,7 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
 * **Dynamische Berichterstellung**
 
-  Die dynamische Berichterstellung ist über die Web-Benutzeroberfläche von Campaign verfügbar und bietet vollständig anpassbare Echtzeitberichte zur Messung der Wirkung Ihrer Marketing-Aktivitäten. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Ort und Alter ermöglicht, zusätzlich zur Analyse basierend auf Daten von E-Mail-Kampagnen wie Öffnungen und Klicks. Weitere Informationen finden Sie in der [Dokumentation zur Web-Benutzeroberfläche v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}.
+  Die dynamische Berichterstellung ist über die Web-Benutzeroberfläche von Campaign verfügbar und bietet vollständig anpassbare Echtzeitberichte zur Messung der Wirkung Ihrer Marketing-Aktivitäten. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Ort und Alter ermöglicht, zusätzlich zur Analyse basierend auf Daten von E-Mail-Kampagnen wie Öffnungen und Klicks. Weitere Informationen finden Sie in der [Dokumentation zur Web-Benutzeroberfläche v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=de){target="_blank"}.
 
 * **Cubes**
 
