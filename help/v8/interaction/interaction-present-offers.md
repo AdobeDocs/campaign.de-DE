@@ -14,7 +14,7 @@ ht-degree: 70%
 
 # Unterbreiten des besten Angebots{#interaction-present-offers}
 
-Angebote können in verschiedenen Platzierungen über eingehende [ ausgehende Kanäle unterbreitet ](interaction-architecture.md#interaction-types). In diesem Kapitel werden einige spezifische Funktionen für eingehende Kanäle beschrieben.
+Angebote können in verschiedenen Platzierungen über eingehende [&#x200B; ausgehende Kanäle unterbreitet &#x200B;](interaction-architecture.md#interaction-types). In diesem Kapitel werden einige spezifische Funktionen für eingehende Kanäle beschrieben.
 
 ![](assets/inbound-interactions.png)
 

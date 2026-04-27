@@ -20,7 +20,7 @@ Campaign v8-Benutzende haben jetzt Zugriff auf die neue Campaign Web-Benutzerob
 
 **Nützliche Links für den Beginn:**
 
-* Erfahren Sie in diesem [ wichtige Unterschiede und Anleitungen](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/home){target="_blank"}.
+* Erfahren Sie in diesem [&#x200B; wichtige Unterschiede und Anleitungen](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/home){target="_blank"}.
 
 * Weitere Informationen zur neuen Web-Benutzeroberfläche von Campaign finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}.
 

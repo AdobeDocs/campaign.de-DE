@@ -71,11 +71,11 @@ Bei einem Briefpost-Versand wird der Extraktionsinhalt über den Link **[!UICONT
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weitere Informationen hierzu finden Sie in der Adobe Campaign Classic-[ (Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"}.
+Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weitere Informationen hierzu finden Sie in der Adobe Campaign Classic-[&#x200B; (Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"}.
 
 >[!NOTE]
 >
->Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [ sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
+>Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [&#x200B; sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
 
 ## Versand validieren{#validating}
 
@@ -89,7 +89,7 @@ Die Ausgabedatei eines Briefpost-Versands wird während der Versandanalyse gener
 
 >[!NOTE]
 >
->Die Analysephase wird in diesem [ beschrieben](delivery-analysis.md).
+>Die Analysephase wird in diesem [&#x200B; beschrieben](delivery-analysis.md).
 
 Während der Analysephase wird die Datei zwar generiert, die Empfängerinformationen (d. h. die Versandlogs) werden jedoch nicht aktualisiert. Sie können diesen Vorgang daher ohne Risiko abbrechen.
 
