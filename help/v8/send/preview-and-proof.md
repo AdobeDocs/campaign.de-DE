@@ -106,4 +106,4 @@ Standardmäßig werden Testversandnachrichten durch die Variable `Proof #N` im B
 
 Hier erfahren Sie, wie Sie einen E-Mail-Testversand durchführen und validieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/333404)
+>[!VIDEO](https://video.tv.adobe.com/v/3447008?captions=ger)
