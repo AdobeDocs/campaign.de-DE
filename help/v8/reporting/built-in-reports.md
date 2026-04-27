@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
-workflow-type: ht
-source-wordcount: '1111'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1115'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Auf der Startseite steht eine Liste wichtiger Berichte zur Verfügung, mit denen
 Weiterführende Informationen zu diesen benutzerdefinierten Konfigurationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=de){target="_blank"}.
 
 
-## Zugriff auf integrierte Berichte {#access-ootb-reports}
+## Zugriff auf native Berichte {#access-ootb-reports}
 
 Zugriff auf native Campaign-Berichte:
 
@@ -55,7 +55,7 @@ Der Zugriff auf Berichte über Listen, Dienste, Angebote etc. erfolgt auf die gl
 ![](assets/reporting-on-offer.png)
 
 
-## Sendungsberichte {#reports-on-deliveries}
+## Versandberichte {#reports-on-deliveries}
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
@@ -70,7 +70,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   </tr> 
   <tr> 
    <td> Nutzer-Aktivitäten (recipientActivity)<br /> </td> 
-   <td> Verteilung der Öffnungen, Klicks und Transaktionen der Nutzer nach Zeitspanne<br /> </td> 
+   <td> Aufschlüsselung der Öffnungen, Klicks und Transaktionen der Nutzer nach Zeitspanne<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -145,7 +145,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   </tr> 
   <tr> 
    <td> Reaktionsrate (deliveryFeedbackSocial)<br /> </td> 
-   <td> Feedback-Rate eines Versands und Feedback-Verteilung<br /> </td> 
+   <td> Feedback-Rate eines Versands und Feedback-Aufschlüsselung<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -158,7 +158,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
 
 ## Kampagnenberichte {#reports-on-campaigns}
 
-Berichte zu Kampagnen beziehen sich auf die Daten der Tabelle **nms:operation**.
+Berichte zu Kampagnen beziehen sich auf die Daten in der Tabelle **nms:operation**.
 
 <table> 
  <tbody> 
@@ -168,7 +168,7 @@ Berichte zu Kampagnen beziehen sich auf die Daten der Tabelle **nms:operation**.
   </tr> 
   <tr> 
    <td> Nutzer-Aktivitäten (operationRecipientActivity)<br /> </td> 
-   <td> Verteilung der Öffnungen, Klicks und Transaktionen der Nutzer nach Zeitspanne; abhängig von Campaign<br /> </td> 
+   <td> Aufschlüsselung der Öffnungen, Klicks und Transaktionen der Nutzer nach Zeitspanne; abhängig von Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td> Versanddurchsatz (operationThroughput)<br /> </td> 
@@ -215,7 +215,7 @@ Berichte zu Kampagnen beziehen sich auf die Daten der Tabelle **nms:operation**.
 
 ## Dienstberichte {#reports-on-services}
 
-Berichte über Services beziehen sich auf die Daten der Tabelle **nms:service**.
+Berichte zu Services beziehen sich auf die Daten in der Tabelle **nms:service**.
 
 <table> 
  <tbody> 
@@ -228,8 +228,8 @@ Berichte über Services beziehen sich auf die Daten der Tabelle **nms:service**.
    <td> Webanwendungen, über die Interessenten akquiriert wurden Hängt vom Social Marketing-Add-on ab.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Abonnement-Verteilung (mobileAppDistribution)<br /> </td> 
-   <td> Verteilung der aktiven Abonnements pro Mobile App; abhängig vom Mobile-App-Kanal-Add-on<br /> </td> 
+   <td> Abonnement-Aufschlüsselung (mobileAppDistribution)<br /> </td> 
+   <td> Aufschlüsselung der aktiven Abonnements pro Mobile App; abhängig vom Mobile-App-Kanal-Add-on<br /> </td> 
   </tr> 
   <tr> 
    <td> Abonnement-Verfolgung (subscriptionsProgress)<br /> </td> 
@@ -248,7 +248,7 @@ Berichte über Services beziehen sich auf die Daten der Tabelle **nms:service**.
 
 ## Budgetberichte {#budget-reports}
 
-Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
+Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
 <table> 
  <tbody> 
@@ -259,7 +259,7 @@ Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle auf
   </tr> 
   <tr> 
    <td> Programmen zugeordnete Kosten (budgetProgramCost)<br /> </td> 
-   <td> Verteilung der Programmkosten.<br /> </td> 
+   <td> Aufschlüsselung der Programmkosten.<br /> </td> 
    <td> nms:program<br /> </td> 
   </tr> 
   <tr> 
@@ -302,7 +302,7 @@ Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle auf
 
 ## Simulationsberichte {#reports-on-simulations}
 
-Berichte über Simulationen beziehen sich auf die Daten der Tabelle **nms:simulation**.
+Berichte zu Simulationen beziehen sich auf die Daten in der Tabelle **nms:simulation**.
 
 <table> 
  <tbody> 
@@ -315,8 +315,8 @@ Berichte über Simulationen beziehen sich auf die Daten der Tabelle **nms:simula
    <td> Detaillierte Tabelle aller Ausschlussgründe<br /> </td> 
   </tr> 
   <tr> 
-   <td> Angebotsverteilung nach Rang (offerSimulationRanking)<br /> </td> 
-   <td> Verteilung der simulierten Angebote nach Rang<br /> </td> 
+   <td> Angebotsaufschlüsselung nach Rang (offerSimulationRanking)<br /> </td> 
+   <td> Aufschlüsselung der simulierten Angebote nach Rang<br /> </td> 
   </tr> 
   <tr> 
    <td> Simulationszusammenfassung (dlvSimuLossesSummary)<br /> </td> 
@@ -335,7 +335,7 @@ Berichte über Simulationen beziehen sich auf die Daten der Tabelle **nms:simula
 
 ## Berichte über Web-Anwendungen {#reports-on-web-applications}
 
-Berichte über Web-Anwendungen beziehen sich auf die Daten der Tabelle **nms:WebApp**.
+Berichte zu Web-Anwendungen beziehen sich auf die Daten in der Tabelle **nms:WebApp**.
 
 <table> 
  <tbody> 
@@ -352,15 +352,15 @@ Berichte über Web-Anwendungen beziehen sich auf die Daten der Tabelle **nms:Web
    <td> Eigenschaften der Umfrage<br /> </td> 
   </tr> 
   <tr> 
-   <td> Antwortenverteilung (surveyDistribution)<br /> </td> 
-   <td> Verteilung der Umfrageantworten<br /> </td> 
+   <td> Aufschlüsselung der Antworten (surveyDistribution)<br /> </td> 
+   <td> Aufschlüsselung der Umfrageantworten<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Andere Standardberichte {#other-ootb-reports}
 
-Nachfolgende Berichte stehen ebenfalls nativ zur Verfügung. Weitere Informationen erhalten Sie im Handbuch der zugehörigen Anwendung.
+Die folgenden Berichte sind ebenfalls integriert. Weitere Informationen hierzu finden Sie im Dokument zu den Funktionen, die sie betreffen.
 
 <table> 
  <tbody> 

@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: b96ebf8c-9846-44c3-bd9b-9d617e389b1c
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '117'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 77%
 
 ---
 
@@ -27,7 +27,7 @@ Sie springen von einer Aktivität zur nächsten, wie im folgenden Beispiel gezei
 
 Für jeden Sprung (Start) muss ein Sprung (Ziel) im Diagramm positioniert werden.
 
-Ein Workflow kann mehrere derartige Sprung-Paare aufweisen. Sprung-Paare werden durch eine in den Parametern zu erfassende Ziffer identifiziert:
+Sie können mehrere Start- und Endpunktsprünge in denselben Workflow einfügen. Sie werden durch eine Zahl identifiziert, die in den Parametern eingegeben werden muss:
 
 ![](assets/s_user_segmentation_jump_in.png)
 

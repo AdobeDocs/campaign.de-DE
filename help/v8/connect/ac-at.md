@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 98%
+source-wordcount: '1049'
+ht-degree: 93%
 
 ---
 
@@ -45,13 +45,13 @@ Wir möchten, dass eines der Bilder in dieser E-Mail entsprechend den folgenden 
 
 In Adobe Campaign und Adobe Target müssen folgende Schritte vorgenommen werden:
 
-1. [Dynamisches Angebot in eine E-Mail einfügen](#inserting-dynamic-offer)
+1. [Einfügen eines dynamischen Angebots in eine E-Mail](#inserting-dynamic-offer)
 1. [Erstellen von Umleitungsangeboten](#create-redirect-offers)
 1. [Zielgruppen erstellen](#audiences-target)
 1. [Experience Targeting-Aktivität erstellen](#creating-targeting-activity)
 1. [Vorschau anzeigen und Nachricht senden](#preview-send-email)
 
-### Dynamisches Angebot in eine E-Mail einfügen {#inserting-dynamic-offer}
+### Einfügen eines dynamischen Angebots in eine E-Mail {#inserting-dynamic-offer}
 
 Definieren Sie in Adobe Campaign die Zielgruppe und den Inhalt Ihrer E-Mail. Sie können ein dynamisches Bild aus Adobe Target einfügen.
 
@@ -78,7 +78,7 @@ Wenn Sie in Ihren Einstellungen in Adobe Target Berechtigungen auf Unternehmense
 
 ![](assets/target_13.png)
 
-### Umleitungsangebote erstellen {#create-redirect-offers}
+### Erstellen von Umleitungsangeboten {#create-redirect-offers}
 
 In Adobe Target können Sie für ein Angebot unterschiedliche Versionen erstellen. Für jedes Benutzererlebnis können Sie ein spezifisches Umleitungsangebot definieren und ein anderes Bild wählen.
 
@@ -98,19 +98,19 @@ In unserem Fall benötigen wir zwei Umleitungsangebote. Das dritte (das Standard
 
 ### Zielgruppen erstellen {#audiences-target}
 
-Erstellen Sie in Adobe Target die zwei Zielgruppen, in die die Besucher Ihres Angebots unterteilt werden und denen die unterschiedlichen Inhalte präsentiert werden. Fügen Sie für jede Audience eine Regel hinzu, um festzulegen, wer das Angebot sehen kann.
+Erstellen Sie in Adobe Target die zwei Zielgruppen, in die die Besucher Ihres Angebots unterteilt werden und denen die unterschiedlichen Inhalte präsentiert werden. Fügen Sie für jede Zielgruppe eine Regel hinzu, um festzulegen, wer das Angebot sehen kann.
 
 1. Um in Target eine neue Audience zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Zielgruppen]** auf **[!UICONTROL Zielgruppe erstellen]**.
 
    ![](assets/audiences_1.png)
 
-1. Fügen Sie Ihrer Audience einen Namen hinzu.
+1. Fügen Sie Ihrer Zielgruppe einen Namen hinzu.
 
    ![](assets/audiences_2.png)
 
-1. Klicken Sie auf **[!UICONTROL Add a rule (Regel hinzufügen)]** und wählen Sie eine Kategorie aus. Die Regel benutzt spezifische Kriterien für die Besucher. Sie können die Regeln verfeinern, indem Sie Bedingungen hinzufügen oder neue Regeln in anderen Kategorien erstellen.
+1. Klicken Sie **[!UICONTROL Regel hinzufügen]** und wählen Sie eine Kategorie aus. Die Regel verwendet bestimmte Kriterien, um die Besucher anzusprechen. Sie können die Regeln verfeinern, indem Sie Bedingungen hinzufügen oder neue Regeln in anderen Kategorien erstellen.
 
-1. Führen Sie dieselben Schritte für die anderen Audiences durch.
+1. Führen Sie dieselben Schritte für die anderen Zielgruppen durch.
 
 ### Experience Targeting-Aktivität erstellen {#creating-targeting-activity}
 
@@ -128,7 +128,7 @@ Zuerst müssen Sie die Zielgruppe definieren:
 
    ![](assets/target_10_2.png)
 
-1. Wählen Sie die Audience aus, die in den vorherigen Schritten erstellt wurde.
+1. Wählen Sie die Zielgruppe aus, die in den vorherigen Schritten erstellt wurde.
 
    ![](assets/target_10_3.png)
 
@@ -150,7 +150,7 @@ Fügen Sie dann für jede Zielgruppe Inhalt hinzu:
 
 1. Führen Sie dieselben Schritte für das zweite Erlebnis aus.
 
-Im Fenster **[!UICONTROL Target]** finden Sie einen Überblick über Ihre Aktivitäten. Bei Bedarf können Sie weitere Erlebnisse hinzufügen.
+Das **[!UICONTROL Target]**-Fenster fasst Ihre Aktivität zusammen. Bei Bedarf können Sie weitere Erlebnisse hinzufügen.
 
 ![](assets/target_experience.png)
 

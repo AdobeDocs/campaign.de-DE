@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 99%
+source-wordcount: '1261'
+ht-degree: 88%
 
 ---
 
@@ -46,12 +46,12 @@ Die Definition des Inhalts der Transaktionsnachricht entspricht der für alle Se
 
 >[!CAUTION]
 >
->In Nachrichten enthaltene Bilder müssen öffentlich zugänglich sein. Adobe Campaign verfügt über keinen Mechanismus zum Online-Stellen der Bilder für Transaktionsnachrichten.\
+>Die in der Nachricht enthaltenen Bilder müssen öffentlich zugänglich sein. Adobe Campaign bietet keinen Mechanismus zum Hochladen von Bildern für Transaktionsnachrichten.\
 >Im Gegensatz zu JSSP oder webApp bietet `<%=` keine standardmäßige Escape-Funktion.
 >
 >In diesem Fall müssen Sie alle Daten, die aus dem Ereignis stammen, ordnungsgemäß maskieren. Dieses Escape-Sequenz hängt davon ab, wie dieses Feld verwendet wird. Verwenden Sie beispielsweise innerhalb einer URL encodeURIComponent. Für eine Anzeige im HTML-Code, können Sie escapeXMLString verwenden.
 
-Integrieren Sie nach der Erstellung des Inhalts die Ereignisinformationen in den Nachrichten-Textkörper, um die Nachricht zu personalisieren. Verwenden Sie hierzu die zur Verfügung stehenden Personalisierungsfelder.
+Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Ereignisinformationen in den Nachrichtentext integrieren und personalisieren. Ereignisinformationen werden mithilfe von Personalisierungs-Tags in den Textkörper eingefügt.
 
 ![](assets/messagecenter_create_content.png)
 
@@ -66,7 +66,7 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. Ergänzen Sie das Feld unter Einhaltung folgender Syntax: **Elementname**.@**Attributname**. Beispiel:
+1. Füllen Sie das Tag wie folgt aus: **Elementname**.@**Attributname**, wie unten dargestellt.
 
    ![](assets/messagecenter_create_custo_2.png)
 
@@ -82,11 +82,11 @@ Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen 
 
 1. Weisen Sie eine Bezeichnung zur einfachen späteren Auswahl zu und geben Sie dann die Testadresse ein (E-Mail oder Mobiltelefon je nach Kommunikationskanal).
 
-1. Geben Sie eine externe Kennung an. Dieses optionale Feld dient dazu, einen allen Anwendungen Ihrer Webseite gemeinsamen, benutzerdefinierten Schlüssel zu vergeben (eindeutige Kennung, Name + E-Mail etc.), um Ihre Profile zu identifizieren. Wenn dieses Feld auch in der Adobe Campaign-Datenbank vorhanden ist, haben Sie die Möglichkeit, Ereignisse mit Profilen der Datenbank abzustimmen.
+1. Externe Kennung eingeben: In diesem optionalen Feld können Sie einen Geschäftsschlüssel eingeben (eindeutige Kennung, Name + E-Mail usw.) Dies ist bei allen Anwendungen auf Ihrer Website üblich, mit denen Ihre Profile identifiziert werden. Wenn dieses Feld auch in der Adobe Campaign-Marketing-Datenbank vorhanden ist, können Sie ein Ereignis mit einem Profil in der Datenbank abstimmen.
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}.
+1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}.
 
    ![](assets/messagecenter_create_custo_3.png)
 

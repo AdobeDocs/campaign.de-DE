@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '400'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 77%
 
 ---
 
@@ -29,7 +29,7 @@ Eine **[!UICONTROL Planung]** entspricht einem programmierten Start, daher sind 
 
 **Eine Planung pro Verzweigung verwenden**: Jede Verzweigung Ihres Workflows sollte nur eine Aktivität vom Typ **[!UICONTROL Planung]** aufweisen. Weitere Informationen zu den Best Practices für die Verwendung von Aktivitäten in Workflows finden Sie auf der Seite [Best Practices bei Workflows](workflow-best-practices.md#using-activities).
 
-**Gleichzeitige Ausführungen von Workflows verhindern**: Wenn ein Workflow von einer Planung ausgelöst wird, sollten Sie beachten, dass mehrere Instanzen des Workflows gleichzeitig ausgeführt werden können. Wenn der Workflow beispielsweise stündlich von einer Planung ausgelöst wird, die Ausführung des Workflows jedoch länger als eine Stunde dauert, kann es zu Überschneidungen bei den Ausführungen kommen. Um dies zu vermeiden, sollten Sie Prüfungen einrichten, um mehrere gleichzeitige Ausführungen zu verhindern. [Erfahren Sie, wie Sie die gleichzeitige Ausführung mehrerer Workflows verhindern können](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
+**Gleichzeitige Ausführungen von Workflows verhindern**: Wenn ein Workflow von einer Planung ausgelöst wird, sollten Sie beachten, dass mehrere Instanzen des Workflows gleichzeitig ausgeführt werden können. Wenn beispielsweise der Workflow stündlich von einer Planung Trigger wird, die Workflow-Ausführung jedoch länger als eine Stunde dauert, kann es zu Überschneidungen bei den Ausführungen kommen.Um dies zu vermeiden, sollten Sie Prüfungen einrichten, um mehrere gleichzeitige Ausführungen zu verhindern. [Erfahren Sie, wie Sie die gleichzeitige Ausführung mehrerer Workflows verhindern können](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 **Konto für verzögerte Transitionen**: Von der Planung ausgelöste Transitionen können verzögert werden, wenn der Workflow lange andauernde Aufgaben ausführt (z. B. Importe) oder wenn das Modul „wfserver“ vorübergehend angehalten wurde. Um dies zu verhindern, beschränken Sie die Aktivierungszeiten der Planung, um sicherzustellen, dass die Aufgaben innerhalb eines festgelegten Zeitfensters ausgeführt werden.
 
@@ -39,13 +39,13 @@ Die Planung definiert die Aktivierungsplanung der Transition. Doppelklicken Sie 
 
 ![](assets/s_user_segmentation_scheduler.png)
 
-In den folgenden Schritten des Assistenten lassen sich die Frequenz der Ausführungen und die Gültigkeit der Aktivität festlegen. Gehen Sie wie folgt vor:
+Mit einem Assistenten können Sie die Häufigkeit und den Gültigkeitszeitraum der Aktivität definieren. Die Konfiguration stellt sich wie folgt dar:
 
 1. Kreuzen Sie die gewünschte Häufigkeit an und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/s_user_segmentation_scheduler2.png)
 
-1. Geben Sie die Tage und Uhrzeit der Ausführung an. Die zur Verfügung stehenden Parameter hängen von der im ersten Schritt ausgewählten Häufigkeit ab. Wenn Sie die Aktivität mehrmals täglich aktivieren, sind folgende Optionen verfügbar:
+1. Geben Sie die Aktivierungszeiten und -tage an. Die Parameter für diesen Schritt hängen von der im vorherigen Schritt ausgewählten Häufigkeit ab. Wenn Sie die Aktivität mehrmals täglich starten möchten, stehen Ihnen folgende Konfigurationsoptionen zur Verfügung:
 
    ![](assets/s_user_segmentation_scheduler3.png)
 

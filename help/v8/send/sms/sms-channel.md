@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 100%
+source-wordcount: '1353'
+ht-degree: 97%
 
 ---
 
@@ -46,14 +46,14 @@ Eine SMS enthält mehr Informationen als Text. Hier ist eine Liste der Informati
 
 Die wichtigste Regel: **Wenden Sie sich bei Codierungsproblemen immer an den SMPP-Provider**. Nur dieser verfügt über genaue Kenntnisse der jeweils unterstützten Codierung und über spezielle Regeln, die aufgrund von Einschränkungen in der technischen Plattform des Providers gelten können. Lassen Sie den Provider prüfen, was zwischen Ihnen und dem Provider verschickt wird. Nur so ist eine erfolgreiche und stabile Verbindung möglich.
 
-SMS-Nachrichten verwenden eine spezielle 7-Bit-Codierung, die häufig als GSM7-Kodierung bezeichnet wird. Auf Wikipedia gibt es [einen guten Artikel dazu (GSM 03.38)](https://de.wikipedia.org/wiki/GSM_03.38).
+SMS-Nachrichten verwenden eine spezielle 7-Bit-Codierung, die häufig als GSM7-Kodierung bezeichnet wird.  Auf Wikipedia gibt es [einen guten Artikel dazu (GSM 03.38)](https://de.wikipedia.org/wiki/GSM_03.38).
 
 Im SMPP-Protokoll wird der GSM7-Text auf 8 Bit pro Zeichen erweitert, um die Fehlerbehebung zu erleichtern. Das SMSC packt ihn in 7 Bit pro Zeichen, bevor er an das Mobilgerät gesendet wird. Das bedeutet, dass das Feld „short_message“ der SMS im SMPP-Frame bis zu 160 Byte lang sein kann, während es beim Senden im Mobilfunknetz auf 140 Byte begrenzt ist (das höchstwertige Bit wird einfach verworfen).
 
 Bei Kodierungsproblemen sollten Sie Folgendes überprüfen:
 * Zunächst sollten Sie wissen, welche Zeichen zu welcher Codierung gehören. GSM7 ist berüchtigt wegen seiner teilweisen Unterstützung diakritischer Zeichen (Akzente). Besonders im Französischen, wo é und è zu GSM7 gehören, ê, â oder ï aber nicht. Dasselbe gilt für Spanisch.
 * Das C mit Unterhäkchen (ç) ist im GSM7-Alphabet nur in Großbuchstaben vorhanden, einige Telefone rendern es jedoch in Kleinbuchstaben oder „intelligenter“ Groß-/Kleinschreibung: Die allgemeine Empfehlung lautet, dies vollständig zu vermeiden und das Unterhäkchen zu entfernen (auf Französisch nach wie vor gut lesbar) oder auf UCS-2 umzusteigen.
-* **Verwenden Sie kein ASCII in SMS,** es sei denn, dies wird vom SMPP-Provider ausdrücklich verlangt: Diese Codierung verschwendet Speicherplatz, da sie 8-Bit-Zeichen und eine geringere Abdeckung als GSM7 aufweist. Diese Codierung kann für (in Nordamerika verwendete) CDMA-Netzwerke erforderlich sein.
+* **Verwenden Sie ASCII nicht in SMS!** sofern nicht ausdrücklich vom SMPP-Provider angefordert: Diese Kodierung verschwendet Speicherplatz, da sie 8-Bit-Zeichen und eine geringere Abdeckung als GSM7 hat. Diese Codierung kann für (in Nordamerika verwendete) CDMA-Netzwerke erforderlich sein.
 * Latein-1 wird nicht immer unterstützt. Überprüfen Sie die Kompatibilität mit Ihrem SMPP-Provider, bevor Sie versuchen, Latin-1 zu verwenden.
 * Nationale Sprachverschiebungstabellen werden vom Adobe Campaign-Connector nicht unterstützt. Sie müssen stattdessen UCS-2 oder ein anderes data_coding verwenden.
 * UCS-2 und UTF-16 werden oft per Telefon gemischt. Dies ist ein Problem, wenn Emojis und andere selten verwendete Zeichen versendet werden, die nicht in UCS-2 vorhanden sind.

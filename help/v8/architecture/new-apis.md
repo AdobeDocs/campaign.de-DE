@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ve
 
 Ein dedizierter integrierter Workflow synchronisiert die Daten in der Cloud-Datenbank.
 
-## Einfügen von Daten {#data-insert-api}
+## Einfügen von Daten{#data-insert-api}
 
 Die API **xtk.session.ingest** ist nur für die Dateneinfügung vorgesehen. Keine Aktualisierung/Löschung.
 
@@ -145,7 +145,7 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befül
 
 Als Ergebnis wird die Staging-Tabelle erwartungsgemäß befüllt.
 
-## Aktualisieren oder Löschen von Daten {#data-update-api}
+## Aktualisieren oder Löschen von Daten{#data-update-api}
 
 Die API **xtk.session.IngestExt** wurde für die Aktualisierung/Löschung von Daten optimiert. Zum Einfügen verwenden Sie **xtk.session.ingest**. Das Einfügen funktioniert auch dann, wenn der Datensatz-Schlüssel nicht in der Staging-Tabelle enthalten ist.
 
@@ -212,4 +212,4 @@ Die Eingabe von An- und Abmeldedaten beruht auf dem [Staging-Mechanismus](stagin
 
 **Verwandte Themen**
 
-* [Campaign-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}
+* [Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}

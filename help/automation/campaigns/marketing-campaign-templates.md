@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 100%
+source-wordcount: '1029'
+ht-degree: 79%
 
 ---
 
@@ -60,9 +60,9 @@ Die unterschiedlichen Registerkarten und Unterregisterkarten der Kampagnenvorlag
 
 ![](assets/campaign-template-select-modules.png)
 
-Wenn eine Funktionalität nicht ausgewählt ist, werden die den Prozess betreffenden Elemente (Menüs, Symbole, Optionen, Registerkarten, Unterregisterkarten usw.) weder in der Benutzeroberfläche der Vorlage noch in auf dieser Vorlage basierenden Kampagnen angezeigt. Die Registerkarten auf der linken Seite der Kampagnendetails und die verfügbaren Registerkarten entsprechen den in der Vorlage ausgewählten Funktionen. Wenn zum Beispiel die Funktion **Ausgaben und Ziele** nicht aktiviert ist, wird die entsprechende Registerkarte **[!UICONTROL Budget]** in Kampagnen, die auf dieser Vorlage basieren, nicht angezeigt.
+Wenn keine Funktion ausgewählt ist, werden die den Prozess betreffenden Elemente (Menüs, Symbole, Optionen, Registerkarten, Unterregisterkarten usw.) nicht in der Benutzeroberfläche der Vorlage oder in den auf dieser Vorlage basierenden Kampagnen angezeigt. Die Registerkarten auf der linken Seite der Kampagnendetails und die verfügbaren Registerkarten entsprechen den in der Vorlage ausgewählten Funktionen. Wenn zum Beispiel die Funktion **Ausgaben und Ziele** nicht aktiviert ist, wird die entsprechende Registerkarte **[!UICONTROL Budget]** in Kampagnen, die auf dieser Vorlage basieren, nicht angezeigt.
 
-Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenstern hinzugefügt: Wenn eine Funktionalität aktiviert ist, besteht über einen Link im Dashboard direkter Zugriff auf diese.
+Darüber hinaus werden dem Kampagnen-Dashboard Verknüpfungen zu den Konfigurationsfenstern hinzugefügt. Wenn eine Funktion aktiviert ist, ermöglicht ein direkter Link den Zugriff darauf über das Kampagnen-Dashboard.
 
 ### Konfigurationsbeispiele
 
@@ -114,14 +114,14 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 
 * **Kontrollgruppe**
 
-  Wenn dieses Modul ausgewählt wird, wird ein zusätzlicher Tab in den erweiterten Parametern der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann in der Vorlage oder direkt in den einzelnen Kampagnen erfolgen. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#defining-a-control-group).
+  Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zu den erweiterten Einstellungen der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#defining-a-control-group).
 
   ![](assets/template-activate-1.png)
 
 
 * **Testadressen**
 
-  Wenn dieses Modul ausgewählt wird, wird ein zusätzlicher Tab in den erweiterten Parametern der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann in der Vorlage oder direkt in den einzelnen Kampagnen erfolgen.
+  Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zu den erweiterten Einstellungen der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden.
 
   ![](assets/template-activate-2.png)
 
@@ -139,7 +139,7 @@ Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenst
 
 * **Zielgruppenbestimmungen und Workflows**
 
-  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können auch auf Basis dieser Vorlage einzeln für jede Kampagne konfiguriert werden. Weitere Informationen zu Kampagnen-Workflows finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können basierend auf dieser Vorlage auch einzeln für jede Kampagne konfiguriert werden.Weitere Informationen zu Kampagnen-Workflows finden Sie [ diesem Abschnitt](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
 
   ![](assets/template-activate-5.png)
 
@@ -171,8 +171,8 @@ Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen
 
   Auf [dieser Seite](../../v8/config/enumerations.md) erfahren Sie, wie Sie auf Ihre Aufzählungen zugreifen und sie konfigurieren können.
 
-* Wählen Sie den **Kampagnentyp**: einmalig, wiederkehrend oder periodisch. Standardmäßig sind in Kampagnenvorlagen einmalige Kampagnen festgelegt. Wiederkehrende und periodische Kampagnen werden in [diesem Abschnitt](recurring-periodic-campaigns.md) beschrieben.
-* Dauer der Kampagne an: Gemeint ist der Zeitraum, über den sich die Kampagne erstrecken wird. Bei Erstellung einer auf einer Vorlage basierenden Kampagne werden Start- und Enddatum somit automatisch ausgefüllt.
+* Wählen Sie den **Kampagnentyp** aus: eindeutig, wiederkehrend oder regelmäßig. Standardmäßig gelten Kampagnenvorlagen für eindeutige Kampagnen. Wiederkehrende und periodische Kampagnen werden in [diesem Abschnitt](recurring-periodic-campaigns.md) beschrieben.
+* Geben Sie die Dauer der Kampagne an, d. h. die Anzahl der Tage, über die die Kampagne stattfinden soll. Wenn Sie eine auf dieser Vorlage basierende Kampagne erstellen, werden das Start- und Enddatum der Kampagne automatisch ausgefüllt.
 
   Handelt es sich um eine wiederkehrende Kampagne, müssen Start- und Enddatum direkt in der Vorlage angegeben werden.
 

@@ -8,13 +8,13 @@ exl-id: bcbf3101-d43c-4ed3-ab02-a9936ec55b71
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # Bedingte Inhalte erstellen{#conditional-content}
 
-Die Konfiguration bedingter Inhalte erlaubt einen weitreichenden Personalisierungsgrad. Vollständige Absätze oder Bildbereiche werden ersetzt, wenn eine bestimmte Bedingung erfüllt ist.
+Durch die Konfiguration bedingter Inhalte können Sie erweiterte Personalisierung erstellen. Gesamte Textblöcke und/oder Bilder werden ersetzt, wenn eine bestimmte Bedingung erfüllt ist.
 
 
 ## Verwenden von Bedingungen in einer E-Mail {#conditions-in-an-email}
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um einen von einem Feldwert abhängigen bedingten Inhal
 
    ![Einfügen einer Bedingung](assets/condition-insert.png)
 
-   Die Personalisierungselemente werden in den Nachrichten-Textkörper eingefügt.
+   Die Personalisierungselemente werden in den Nachrichtentext eingefügt. Jetzt müssen Sie sie konfigurieren.
 
 1. Füllen Sie die Parameter des **If**-Ausdrucks aus.
 
@@ -86,4 +86,4 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
 
 Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446720?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)

@@ -6,17 +6,17 @@ feature: Distributed Marketing
 role: User
 exl-id: 2cd1981d-f192-41dc-b2f2-4fcd60493079
 source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
-workflow-type: ht
-source-wordcount: '479'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 63%
 
 ---
 
 # Veröffentlichen des Kampagnenkits{#publishing-the-campaign-package}
 
-Die Benutzenden der Zentralstelle veröffentlichen in der **[!UICONTROL Liste der Kampagnen-Kits]** die Kits, die den Lokalstellen zur Verfügung gestellt werden sollen.
+Die Benutzenden der Zentralstelle veröffentlichen in der **[!UICONTROL Liste der Kampagnenkits]** die Kits, die den Lokalstellen zur Verfügung gestellt werden sollen.
 
-Bevor sie in der Liste der Kampagnen-Kits veröffentlicht werden können, müssen die Kampagnen-Kits von der Zentralstelle genehmigt werden. Zu diesem Zweck können Sie Validierungsverantwortliche oder Gruppen von Validierungsverantwortlichen über den Link **[!UICONTROL Validierungsparameter]** im Kampagnen-Kit festlegen.
+Bevor sie in der Liste der Kampagnenkits veröffentlicht werden können, müssen die Kampagnenkits von der Zentralstelle genehmigt werden. Zu diesem Zweck können Sie Validierungsverantwortliche oder Gruppen von Validierungsverantwortlichen über den Link **[!UICONTROL Validierungsparameter]** im Kampagnenkit festlegen.
 
 ## Validierungsverantwortliche Person zuweisen {#assigning-a-reviewer}
 
@@ -28,7 +28,7 @@ Um den Validierungsprozess zu starten, klicken Sie auf die Schaltfläche **[!UIC
 
 ![](assets/s_advuser_mkg_dist_valid_process.png)
 
-Der validierungsverantwortliche Benutzer erhält daraufhin eine Benachrichtigung, um die Verfügbarkeit des Kampagnenkits zu bestätigen. Über einen in der Nachricht enthaltenen Link kann er per Web-Zugriff die Validierung akzeptieren oder ablehnen.
+Der Validierungsverantwortliche erhält dann eine Benachrichtigung, mit der er die Verfügbarkeit dieses Kampagnenkits bestätigt. Die Nachricht enthält einen Link zum Akzeptieren oder Ablehnen der Validierung über den Web-Zugriff.
 
 ![](assets/s_advuser_mkg_dist_valid_process1.png)
 
@@ -38,7 +38,7 @@ Der validierungsverantwortliche Benutzer erhält daraufhin eine Benachrichtigung
 
 ## Hinzufügen weiterer validierungsverantwortlicher Personen {#adding-other-reviewers}
 
-Über den Link **[!UICONTROL Bearbeiten...]** im Tab **[!UICONTROL Validierungsparameter...]** des Kampagnenkits können weitere validierungsverantwortliche Benutzende hinzugefügt werden.
+Über den Link **[!UICONTROL Bearbeiten...]** im Tab **[!UICONTROL Validierungsparameter...]** des Kampagnenkits können weitere validierungsverantwortliche Benutzer hinzugefügt werden.
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
@@ -46,13 +46,13 @@ Der validierungsverantwortliche Benutzer erhält daraufhin eine Benachrichtigung
 
 Wenn nicht anders angegeben, muss die Validierung innerhalb von drei Tagen ab dem Unterbreitungsdatum erfolgen.
 
-Im Fenster „Validierungsverantwortliche bearbeiten“ können Sie auch Erinnerungen einstellen, um eine oder mehrere Nachrichten zu senden, wenn ein Kampagnen-Kit nicht genehmigt wurde. Klicken Sie dazu zunächst auf den Link **[!UICONTROL Erinnerung hinzufügen]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
+Im Fenster „Validierungsverantwortliche bearbeiten“ können Sie auch Erinnerungen einstellen, um eine oder mehrere Nachrichten zu senden, wenn ein Kampagnenkit nicht genehmigt wurde. Klicken Sie dazu zunächst auf den Link **[!UICONTROL Erinnerung hinzufügen]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
-Erinnerungen können entweder an einem bestimmten Datum und/oder **x** Tage nach dem Übermittlungsdatum gesendet werden. Die Art der Erinnerung kann in der ersten Spalte der Erinnerungen-Tabelle konfiguriert werden. Im folgenden Beispiel erhalten die validierungsverantwortlichen Personen am 11.01.2023 eine Erinnerungsnachricht, also zwei Tage vor dem in der Variablen **[!UICONTROL Datum]** ausgewählten Datum. Sie erhalten eine zweite Erinnerung einen Tag vor Ablauf des Validierungszeitraums, d. h. zwei Tage nach dem Datum der Übermittlung zur Validierung.
+Erinnerungen können entweder an einem bestimmten Datum und/oder **x** Tage nach dem Übermittlungsdatum gesendet werden. Die Art der Erinnerung kann in der ersten Spalte der Erinnerungstabelle konfiguriert werden. Im folgenden Beispiel erhalten die validierungsverantwortlichen Personen am 11.01.2023 eine Erinnerungsnachricht, also zwei Tage vor dem in der Variablen **[!UICONTROL Datum]** ausgewählten Datum. Sie erhalten eine zweite Erinnerung einen Tag vor Ablauf des Validierungszeitraums, d. h. zwei Tage nach dem Datum der Übermittlung zur Validierung.
 
 ![](assets/s_advuser_mkg_dist_reminder_planning.png)
 
-Sobald er definiert ist und das Paket zur Validierung eingereicht wurde, wird der Ausführungsplan auf der Registerkarte **[!UICONTROL Audit]** angezeigt. Er enthält die Bearbeitungsfrist, die auf der Grundlage der vorherigen Konfiguration berechnet wurde, sowie die Termine aller konfigurierten Mahnungen.
+Sobald er definiert ist und das Paket zur Genehmigung eingereicht wurde, wird der Ausführungsplan auf der Registerkarte **[!UICONTROL Audit]** angezeigt. Darin werden die auf der Grundlage der vorherigen Konfiguration berechnete Verarbeitungsfrist sowie die Daten aller konfigurierten Mahnungen angezeigt.
 
 ## Genehmigen über die Client-Konsole {#approving-via-the-adobe-campaign-console}
 
@@ -60,4 +60,4 @@ Wenn kein Validierungsverantwortlicher bestimmt wurde oder keiner der benachrich
 
 ![](assets/s_advuser_mkg_dist_valid_button.png)
 
-Sobald die Kampagne validiert ist wird sie automatisch veröffentlicht, d. h. sie wird der Liste der Kampagnenkits hinzugefügt. Ab ihrem Verfügbarkeitsdatum kann sie von den Lokalstellen genutzt werden. Sofern bei der Kampagnenerstellung teilnehmende Lokalstellen bestimmt wurden, werden die Benutzer der Gruppe „Benachrichtigung bezüglich Kampagnenkits“ über die Verfügbarkeit der Kampagne benachrichtigt. Ist dies nicht der Fall, ist die Kampagne standardmäßig für alle Lokalstellen zugänglich. Weitere Informationen hierzu finden Sie unter [Organisationseinheiten](about-distributed-marketing.md#organizational-entities).
+Nach der Validierung wird die Kampagne veröffentlicht und der Liste hinzugefügt. Sobald das Verfügbarkeitsdatum erreicht ist, können Lokalstellen sie verwenden. Wenn die Lokalstellen bei der Erstellung der Kampagne angegeben wurden, wird eine Nachricht an die Benutzenden in der Benachrichtigungsgruppe gesendet, um sie darüber zu informieren, dass die Kampagne verfügbar ist. Wenn zuvor keine Entität angegeben wurde, ist die Kampagne standardmäßig für alle Lokalstellen verfügbar. Weitere Informationen hierzu finden Sie unter [Organisationseinheiten](about-distributed-marketing.md#organizational-entities).

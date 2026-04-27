@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '3102'
-ht-degree: 94%
+source-wordcount: '3188'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,7 @@ Lesen Sie die folgenden Best Practices für die Versandfunktionen in Campaign.
 
 ## Optimieren des Versands {#optimize-delivery}
 
-Bevor Sie mit dem Erstellen von Sendungen beginnen, können Sie mehrere Maßnahmen treffen, um den vorgelagerten Versandprozess zu optimieren.  Im folgenden Abschnitt werden Best Practices und empfohlene Verfahren für die optimale Konfiguration von Adobe Campaign erläutert.
+Bevor Sie mit dem Erstellen von Sendungen beginnen, können Sie mehrere Maßnahmen treffen, um den vorgelagerten Versandprozess zu optimieren. Im folgenden Abschnitt werden Best Practices und empfohlene Verfahren für die optimale Konfiguration von Adobe Campaign erläutert.
 
 ### Performance der Plattform
 
@@ -73,24 +73,24 @@ Die regelmäßige Wartung Ihrer Sendungen ist für eine optimale Plattformleistu
 
 ### Anmeldemöglichkeit mit doppelter Bestätigung (Double opt-in) {#double-opt-in}
 
-Um den Nachrichtenversand an ungültige Adressen zu vermeiden, unnütze Kommunikation zu minimieren und die Reputation des Absenders zu schützen, empfiehlt Adobe die doppelte Anmeldung zur Bestätigung eines Abonnements. Damit können Sie sicherstellen, dass sich eine Empfängerin bzw. ein Empfänger absichtlich angemeldet hat.
+Um das Senden von Nachrichten an ungültige Adressen zu vermeiden, unsachgemäße Kommunikation zu begrenzen und die Reputation des Absenders zu verbessern, empfiehlt Adobe die Implementierung eines Mechanismus zum doppelten Opt-in für die Bestätigung nach dem Abonnement. Dadurch wird sichergestellt, dass sich ein Empfänger absichtlich angemeldet hat.
 
 ## Vorlagen verwenden {#use-templates}
 
-Versandvorlagen ermöglichen eine effiziente Nutzung, da sie für die häufigsten Aktivitäten vordefinierte Szenarien enthalten. Mit Vorlagen können Marketing-Fachleute in kürzerer Zeit neue Kampagnen bei minimaler Anpassung bereitstellen.  [Erfahren Sie mehr über Versandvorlagen](../send/create-templates.md).
+Versandvorlagen ermöglichen eine effiziente Nutzung, da sie für die häufigsten Aktivitäten vordefinierte Szenarien enthalten. Mit Vorlagen können Marketing-Fachleute in kürzerer Zeit neue Kampagnen bei minimaler Anpassung bereitstellen. [Erfahren Sie mehr über Versandvorlagen](../send/create-templates.md).
 
 ### Subdomains und Branding {#subdomains-and-branding}
 
-Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Angenommen die Domain einer Bank heißt bluebank.com, dann könnten ihre Subdomains @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com usw. lauten. Mit einer Versandvorlage pro Subdomain können Sie stets die richtigen vorkonfigurierten Parameter für jede Marke verwenden, um Fehler zu vermeiden und Zeit zu sparen.  Weitere Informationen zum Subdomain-Branding finden Sie in der [Dokumentation zum Control Panel von Campaign](https://experienceleague.adobe.com/de/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Wenn eine Bank die Domain bluebank.com besitzt, können ihre Subdomains @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com usw. sein. Eine Versandvorlage pro Subdomain ermöglicht die Verwendung der richtigen vorkonfigurierten Parameter für jede Ihrer Marken, wodurch Fehler vermieden und Zeit gespart werden. Weitere Informationen zum Subdomain-Branding finden Sie in der [Dokumentation zum Control Panel von Campaign](https://experienceleague.adobe.com/de/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Konfigurieren von Adressen {#configure-addresses}
 
 Achten Sie darauf, die folgenden Richtlinien anzuwenden:
 
-* Die Angabe der Absenderadresse ist für den E-Mail-Versand zwingend erforderlich.  Manche ISPs (Internet Service Provider) prüfen die Gültigkeit der Absenderadresse, bevor sie Nachrichten akzeptieren.
+* Die Angabe der Absenderadresse ist für den E-Mail-Versand zwingend erforderlich. Manche ISPs (Internet Service Provider) prüfen die Gültigkeit der Absenderadresse, bevor sie Nachrichten akzeptieren.
 * Eine schlecht formulierte Adresse könnte vom Empfangs-Server abgelehnt werden. Achten Sie darauf, dass eine korrekte Adresse angegeben ist.
-* Die Adresse muss die Identität des Absenders enthalten. Die Domain muss im Besitz des Absenders und auf ihn registriert sein.
-* Adobe empfiehlt, E-Mail-Konten zu erstellen, die der Absender- und Antwortadresse entsprechen. Wenden Sie sich diesbezüglich bitte an den Administrator Ihres E-Mail-Programms.
+* Die Adresse muss den Absender explizit identifizieren. Die Domain muss im Besitz des Absenders und für ihn registriert sein.
+* Adobe empfiehlt, E-Mail-Konten zu erstellen, die den für Sendungen und Antworten angegebenen Adressen entsprechen. Wenden Sie sich an Ihren Messaging-Systemadministrator.
 
 +++ **Schritte zum Konfigurieren von Adressen in der Campaign-Benutzeroberfläche**
 
@@ -116,7 +116,7 @@ Eine Typologie enthält Regeln, die in der Analysephase vor dem Versand einer Na
 
 In den Eigenschaften der Vorlage können Sie auf der Registerkarte **[!UICONTROL Typologie]** bei Bedarf eine benutzerdefinierte Typologie auswählen.
 
-Um beispielsweise den ausgehenden Traffic besser zu steuern, können Sie festlegen, welche IP-Adressen verwendet werden können, indem Sie für jede Subdomain eine Affinität definieren und für jede Affinität eine Typologie erstellen. Affinitäten werden in der Konfigurationsdatei der Instanz bestimmt. Kontaktieren Sie dazu Ihren Adobe Campaign-Administrator.
+Um beispielsweise den ausgehenden Traffic besser zu kontrollieren, können Sie festlegen, welche IP-Adressen verwendet werden können, indem Sie eine Affinität pro Subdomain definieren und eine Typologie pro Affinität erstellen. Die Affinitäten werden in der Konfigurationsdatei der Instanz definiert. Wenden Sie sich an Ihren Adobe Campaign-Administrator.
 
 Weiterführende Informationen zu Typologien finden Sie in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md).
 
@@ -124,17 +124,17 @@ Weiterführende Informationen zu Typologien finden Sie in [diesem Abschnitt](../
 
 ### Erstellen personalisierter Inhalte {#perso-content}
 
-Um Ihre Nachrichten zu personalisieren, können Sie die Empfängerdaten verwenden, die in der Datenbank gespeichert sind oder mithilfe von Tracking, Landingpages oder Abonnements erfasst wurden.  Die Grundlagen der Personalisierung werden in [diesem Abschnitt](../send/personalize.md) dargestellt.
+Um Ihre Nachrichten zu personalisieren, können Sie die Empfängerdaten verwenden, die in der Datenbank gespeichert oder über Tracking, Landingpages, Abonnements usw. erfasst wurden. Die Grundlagen von Personalization werden in [diesem Abschnitt](../send/personalize.md) beschrieben.
 
 +++ **Hier finden Sie einige Best Practices**
 
-* Überprüfen Sie Ihre Personalisierungseinstellungen – Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um Fehler zu vermeiden, die oft bei der Personalisierung auftreten. Ein Personalisierungs-Tag in Adobe Campaign präsentiert sich stets in folgender Form: `<%=table.field%>`.  Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise folgendermaßen verwendet werden:
+* Überprüfen Sie Ihre Personalisierungseinstellungen – Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um Fehler zu vermeiden, die oft bei der Personalisierung auftreten. Ein Personalisierungs-Tag in Adobe Campaign präsentiert sich stets in folgender Form: `<%=table.field%>`. Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann ein Problem darstellen. Variablen in JavaScript sollten beispielsweise wie folgt verwendet werden:
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
   Weitere Informationen zu Gestaltungsbausteinen finden Sie in [diesem Abschnitt](../send/personalization-blocks.md).
 
@@ -184,7 +184,7 @@ Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position ist a
 
 ### Abmelde-Link {#unsub-link-check}
 
-Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig sein, und das Formular muss funktionieren. Bei der Analyse einer Nachricht überprüft die [Typologieregel](../../automation/campaign-opt/control-rules.md) **[!UICONTROL Genehmigung des Abmelde-Links]** standardmäßig, ob ein Ausschluss-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt.
+Der Abmelde-Link ist wichtig. Sie muss sichtbar und gültig sein und das Formular muss funktionsfähig sein. Bei der Analyse einer Nachricht überprüft die [Typologieregel](../../automation/campaign-opt/control-rules.md) **[!UICONTROL Genehmigung des Abmelde-Links]** standardmäßig, ob ein Ausschluss-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt.
 
 [In diesem Abschnitt](../send/personalization-blocks.md) erfahren Sie, wie man einen Ausschluss-Link einfügt.
 
@@ -221,9 +221,9 @@ Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SM
 
 * Aktivieren Sie die Transliteration nicht, wenn Sie alle Zeichen Ihrer SMS beibehalten möchten, um beispielsweise Eigennamen unverändert zu übermitteln.
 
-* Sollte Ihre SMS jedoch eine hohe Anzahl an Zeichen enthalten, die vom GSM-Standard nicht unterstützt werden, aktivieren Sie die Transliteration, um Ihre Versandkosten zu begrenzen.  Weiterführende Informationen finden Sie [in diesem Abschnitt](../send/sms/smpp-external-account.md#smpp-transliteration).
+* Sollte Ihre SMS jedoch eine hohe Anzahl an Zeichen enthalten, die vom GSM-Standard nicht unterstützt werden, aktivieren Sie die Transliteration, um Ihre Versandkosten zu begrenzen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../send/sms/smpp-external-account.md#smpp-transliteration).
 
-* Sie können eine SMS-Transliteration anwenden. Hierbei wird ein Zeichen einer SMS durch ein anderes ersetzt, wenn das erste Zeichen nicht vom GSM-Standard unterstützt wird. Beachten Sie, dass die Verwendung von Personalisierungsfeldern im SMS-Inhalt dazu führen kann, dass von der GSM-Kodierung nicht unterstützte Zeichen eingefügt werden. Als Campaign-Admin können Sie die Transliteration von Zeichen aktivieren, indem Sie das entsprechende Kästchen auf der Registerkarte „SMPP-Kanaleinstellungen“ des entsprechenden **[!UICONTROL externen Kontos]** markieren.  [Weitere Informationen](../send/sms/smpp-external-account.md#smpp-transliteration)
+* Sie können eine SMS-Transliteration anwenden. Hierbei wird ein Zeichen einer SMS durch ein anderes ersetzt, wenn das erste Zeichen nicht vom GSM-Standard unterstützt wird. Beachten Sie, dass die Verwendung von Personalisierungsfeldern im SMS-Inhalt dazu führen kann, dass von der GSM-Kodierung nicht unterstützte Zeichen eingefügt werden. Als Campaign-Admin können Sie die Transliteration von Zeichen aktivieren, indem Sie das entsprechende Kästchen auf der Registerkarte „SMPP-Kanaleinstellungen“ des entsprechenden **[!UICONTROL externen Kontos]** markieren. [Weitere Informationen](../send/sms/smpp-external-account.md#smpp-transliteration)
 
 +++
 
@@ -240,7 +240,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode.
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 -->
 
 ## Verwalten von Bildern {#manage-images}
@@ -249,11 +249,11 @@ Im Folgenden finden Sie einige spezifische Richtlinien für die Optimierung von 
 
 ### Verhindern der Bildblockierung {#image-blocking}
 
-Manche E-Mail-Clients blockieren Bilder standardmäßig. Einstellungen können aber auch von Benutzenden so konfiguriert werden, dass Bilder blockiert werden, um den Datenverbrauch zu reduzieren.   Wenn Bilder nicht heruntergeladen werden, kann daher die gesamte Nachricht verloren gehen.
+Manche E-Mail-Clients blockieren Bilder standardmäßig. Einstellungen können aber auch von Benutzenden so konfiguriert werden, dass Bilder blockiert werden, um den Datenverbrauch zu reduzieren.  Wenn keine Bilder heruntergeladen werden, kann die gesamte Nachricht verloren gehen.
 
 +++ Um dies zu vermeiden, können Sie diese Best Practices anwenden:
 
-* Vermeiden Sie vollständig bildbasierte E-Mails.  Achten Sie auf eine ausgewogene Mischung aus Bild und Text.
+* Vermeiden Sie vollständig bildbasierte E-Mails. Achten Sie auf eine ausgewogene Mischung aus Bild und Text.
 
 * Wenn in einem Bild Text enthalten sein muss, verwenden Sie „alt“ (formatierten Alternativtext) oder „title text“ (Titeltext), um die Botschaft richtig zu übermitteln. Gestalten Sie „alt“/„title text“, um sein Erscheinungsbild zu verbessern.
 
@@ -276,7 +276,7 @@ Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und ö
 
 Adobe empfiehlt eine Vorschau Ihrer Nachricht, um die Personalisierung zu überprüfen und festzustellen, wie Ihre Empfängerinnen und Empfänger den Versand sehen werden.
 
-Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** das Rendering der einzelnen Inhalte für eine Empfängerin oder einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt.  [Weitere Informationen](../send/preview-and-proof.md).
+Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** das Rendering der einzelnen Inhalte für eine Empfängerin oder einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt. [Weitere Informationen](../send/preview-and-proof.md).
 
 
 <!--
@@ -285,17 +285,17 @@ Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorsc
 
 ## Definieren der richtigen Zielgruppe {#define-the-right-audience}
 
-Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Listen sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients sowie auf den gängigsten Mobilgeräten und stellen Sie sicher, dass Ihre E-Mail-Listen aktuell sind (und keine unbekannten oder veralteten Adressen enthalten).  Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.  Weitere Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](../audiences/gs-audiences.md).
+Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Listen sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients sowie auf den gängigsten Mobilgeräten und stellen Sie sicher, dass Ihre E-Mail-Listen aktuell sind (und keine unbekannten oder veralteten Adressen enthalten). Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen. Weitere Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](../audiences/gs-audiences.md).
 
 ### Ansprechen der richtigen Zielgruppe {#target-the-right-audience}
 
 Wenn Ihr Inhalt fertiggestellt ist, müssen Sie sorgfältig auswählen, wer Ihre Nachricht erhalten soll.
 
-Um einen erfolgreichen Versand durchzuführen, müssen Sie möglichst relevanten personalisierten Inhalt an die richtigen Empfänger senden. Mit Adobe Campaign können Sie eine präzise Zielgruppe bestimmen, indem Sie die Empfänger nach Alter, Ort, Einkäufen, Klicks auf frühere Sendungen usw. auswählen. Sie können mit Adobe Campaign auch Testprofile und Kontrollgruppen definieren und Testsendungen durchführen, um sicherzustellen, dass Sie die richtige Zielgruppe erreichen.
+Um einen erfolgreichen Versand durchzuführen, müssen Sie möglichst relevanten personalisierten Inhalt an die richtigen Empfänger senden. Mit Adobe Campaign können Sie eine präzise Zielgruppe erstellen: Sie können Empfängerinnen und Empfänger anhand ihres Alters, ihrer Lokalisierung, ihrer gekauften Produkte, eines Links in einem früheren Versand usw. auswählen. Mit Adobe Campaign können Sie auch Testprofile, Kontrollgruppen und Testadressen definieren, um sicherzustellen, dass Ihre Zielgruppe korrekt ist.
 
 ### Zielgruppen-Mappings {#target-mappings}
 
-Standardmäßig werden in Campaign mit Versandvorlagen **Empfangende** angesprochen. Adobe Campaign ermöglicht aber auch andere Zielgruppen-Mappings für Ihre Sendungen, die Sie entsprechend Ihren Anforderungen anpassen können.  So können Sie beispielsweise Nachrichten an Benutzer senden, deren Profile Sie über soziale Netzwerke erfasst haben oder die einen Informationsdienst abonniert haben.
+Standardmäßig werden in Campaign mit Versandvorlagen **Empfangende** angesprochen. Adobe Campaign ermöglicht aber auch andere Zielgruppen-Mappings für Ihre Sendungen, die Sie entsprechend Ihren Anforderungen anpassen können. So können Sie beispielsweise Nachrichten an Benutzer senden, deren Profile Sie über soziale Netzwerke erfasst haben oder die einen Informationsdienst abonniert haben.
 
 Diese Zuordnungen (Mapping) werden [in diesem Abschnitt](../audiences/target-mappings.md) dargestellt.
 
@@ -334,7 +334,7 @@ Die Deduplizierung von Adressen schützt Ihre Reputation und gewährleistet eine
 
 ## Durchführen aller Prüfungen vor dem Senden {#perform-all-checks}
 
-Wenn Ihre Nachricht fertig ist, prüfen Sie, ob ihr Inhalt auf allen Geräten richtig dargestellt wird, und stellen Sie sicher, dass sie keine Fehler wie falsche Personalisierung oder defekte Links enthält.  Prüfen Sie vor dem Nachrichtenversand außerdem, ob die Parameter und die Konfiguration dem Versand entsprechen.
+Wenn Ihre Nachricht fertig ist, prüfen Sie, ob ihr Inhalt auf allen Geräten richtig dargestellt wird, und stellen Sie sicher, dass sie keine Fehler wie falsche Personalisierung oder defekte Links enthält. Prüfen Sie vor dem Nachrichtenversand außerdem, ob die Parameter und die Konfiguration dem Versand entsprechen.
 
 In [diesem Abschnitt](../send/preview-and-proof.md) werden die Schritte zur Validierung eines Versands vorgestellt.
 
@@ -423,17 +423,17 @@ Typologieregeln ermöglichen den kriterienbasierten Ausschluss eines Teils der Z
 
 ## Verfolgen und überwachen {#track-and-monitor}
 
-Sie haben auf die Schaltfläche **Senden** geklickt? Lassen Sie uns sehen, was dann passiert. Nach dem Versand der Nachrichten ermöglicht es Ihnen Adobe Campaign die gesendeten Nachrichten zu verfolgen und festzustellen, wie Ihre Empfänger darauf reagieren. Dadurch können Sie den zukünftigen Versand verbessern und Ihre nächsten Kampagnen optimieren.
+Sie haben auf die Schaltfläche **Senden** geklickt? Mal sehen, was passiert! Nach dem Versand der Nachrichten ermöglicht es Ihnen Adobe Campaign die gesendeten Nachrichten zu verfolgen und festzustellen, wie Ihre Empfänger darauf reagieren. Dadurch können Sie den zukünftigen Versand verbessern und Ihre nächsten Kampagnen optimieren.
 
 ## Überwachen von Sendungen {#monitoring-deliveries}
 
 Um Ihre Kampagnen steuern zu können, müssen Sie zunächst sichergehen, dass Ihre Nachricht bei Ihren Empfängerinnen und Empfängern tatsächlich angekommen ist.
 
-Prüfen Sie im Versand-Dashboard von Campaign die verarbeiteten Nachrichten und Versand-Auditlogs.  In den Versandlogs können Sie den Status der Nachrichten feststellen.
+Prüfen Sie im Versand-Dashboard von Campaign die verarbeiteten Nachrichten und Versand-Auditlogs. In den Versandlogs können Sie den Status der Nachrichten feststellen.
 
 ## Nachverfolgen von Verhaltensmustern {#track-behaviour}
 
-Um das Verhalten Ihrer Empfangenden besser kennenzulernen, können Sie ihre Reaktion auf einen Versand verfolgen: Empfang, Öffnung, Klicks auf Links, Abmeldungen usw. In Campaign werden diese Informationen auf der Registerkarte **Tracking** der Empfangenden, die der Versand anspricht, und auf der Registerkarte „Tracking“ des Versands angezeigt.
+Um das Verhalten Ihrer Empfänger besser kennenzulernen, können Sie ihre Reaktion auf einen Versand verfolgen: Empfang, Öffnung, Klicks auf Links, Abmeldungen usw. In Campaign werden diese Informationen auf der Registerkarte **Tracking** der Empfänger, auf die der Versand abzielt, und auf der Registerkarte Tracking des Versands angezeigt.
 
 Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versandassistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie die Nachverfolgung aktivieren möchten.
 

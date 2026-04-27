@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '868'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Der Ablauf der Workflow-Erstellung hängt von der Art des Workflows ab. Sie haben folgende Möglichkeiten:
 
-* Erstellen Sie [Zielgruppen-Workflows](#targeting-workflows) über den Knoten **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Zielgruppen-Workflows]** des Explorers oder über die Registerkarte **[!UICONTROL Profile und Zielgruppen]** der Startseite und die Unterregisterkarte **[!UICONTROL Zielgruppen-Workflows]**.
+* Erstellen Sie [Zielgruppen-Workflows](#targeting-workflows) über den Knoten **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Aufträge]** > **[!UICONTROL Zielgruppen-Workflows]** des Explorers oder über die Registerkarte **[!UICONTROL Profile und Zielgruppen]** der Startseite und die Unterregisterkarte **[!UICONTROL Zielgruppen-Workflows]**.
 
   ![](assets/create-targeting-wf.png)
 
@@ -27,7 +27,7 @@ Der Ablauf der Workflow-Erstellung hängt von der Art des Workflows ab. Sie habe
 
 * Erstellen Sie [Technische Workflows](#technical-workflows) über den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]** des Explorers. Es empfiehlt sich, einen speziellen Workflow-Ordner zu erstellen, um Ihre technischen Workflows zu speichern.
 
-Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Workflow-Liste.
+Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Workflow-Liste, um einen neuen Workflow zu erstellen.
 
 ![](assets/create_a_wf_icon.png)
 
@@ -35,7 +35,7 @@ Benennen Sie den Workflow und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Hinzufügen und Verknüpfen von Aktivitäten {#add-and-link-activities}
 
-In diesem Schritt werden die Aktivitäten im Diagramm positioniert, konfiguriert und miteinander in Beziehung gesetzt. Bisher zeigt das Workflow-Fenster nur den Titel und den Status des Workflows an (In Bearbeitung). Der untere Bereich des Fensters dient der Konzeption des Diagramms. Er enthält eine Symbolleiste, eine Palette mit den verfügbaren Aktivitäten (links) und das Diagramm selbst (rechts).
+Definieren Sie jetzt die verschiedenen Aktivitäten und verbinden Sie sie in einem Diagramm. In diesem Schritt der Konfiguration sehen wir die Diagrammbeschriftung und den Workflow-Status (Bearbeitung läuft). Der untere Bereich des Fensters dient nur zur Bearbeitung des Diagramms. Es enthält eine Symbolleiste, eine Palette von Aktivitäten (links) und das Diagramm selbst (rechts).
 
 ![](assets/new-workflow-2.png)
 
@@ -45,7 +45,7 @@ In diesem Schritt werden die Aktivitäten im Diagramm positioniert, konfiguriert
 
 Auf den einzelnen Registerkarten der Palette werden die Aktivitäten nach Kategorie geordnet angezeigt. Die verfügbaren Tabs und Aktivitäten sind je nach Workflow-Typ unterschiedlich (technischer, Zielgruppen- oder Kampagnen-Workflow).
 
-* Der erste Tab enthält Zielgruppen- und Datenmanipulationsaktivitäten. Diese Aktivitäten werden unter [Zielgruppenbestimmungsaktivitäten](targeting-activities.md) beschrieben.
+* Der erste Tab enthält Zielgruppenbestimmungs- und Datenmanipulationsaktivitäten. Diese Aktivitäten werden unter [Zielgruppenbestimmungsaktivitäten](targeting-activities.md) beschrieben.
 * Der zweite Tab enthält die Planungsaktivitäten, die in erster Linie der Koordination der anderen Aktivitäten dienen. Diese Aktivitäten werden unter [Steuerungsaktivitäten](flow-control-activities.md) beschrieben.
 * Der dritte Tab enthält Tools und Aktionen, die im Workflow verwendet werden können. Diese Aktivitäten werden unter [Aktionsaktivitäten](action-activities.md) beschrieben.
 * Der vierte Tab enthält die Aktivitäten, die von einem bestimmten Ereignis abhängen, beispielsweise vom Erhalt einer E-Mail oder dem Empfang einer Datei auf dem Server. Diese Aktivitäten werden unter [Ereignisaktivitäten](event-activities.md) beschrieben.
@@ -93,7 +93,7 @@ Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Element
 
   Um die Symbole der Aktivitäten auszurichten, markieren Sie diese und klicken Sie in der Symbolleiste auf **[!UICONTROL Vertikal ausrichten]** oder **[!UICONTROL Horizontal ausrichten]**.
 
-  Mithilfe der **STRG**-Taste können Sie mehrere Aktivitäten markieren, die im Diagramm nicht unmittelbar nebeneinander positioniert sind, oder die Markierung einzelner Aktivitäten entfernen. Durch Klick in den Diagrammhintergrund werden alle Markierungen entfernt.
+  Verwenden Sie die **STRG**-Taste, um mehrere verstreute Aktivitäten auszuwählen oder die Auswahl für eine oder mehrere Aktivitäten aufzuheben. Klicken Sie auf den Hintergrund des Diagramms, um die Auswahl aufzuheben.
 
 * **Hintergrundbild und Symbole**
 
@@ -107,7 +107,7 @@ Doppelklicken Sie auf eine Aktivität, um sie zu konfigurieren oder klicken Sie 
 >
 >Aktivitäten des Kampagnen-Workflows werden in [diesem Abschnitt](activities.md) erläutert.
 
-Die erste Registerkarte enthält die grundlegende Konfiguration. Der Tab **[!UICONTROL Erweitert]** enthält die zusätzlichen Parameter, die den Umgang mit Fehlern und die Ausführungsdauer der Aktivität bestimmen oder ein Initialisierungsskript erfassen können.
+Die erste Registerkarte enthält die grundlegende Konfiguration. Die Registerkarte **[!UICONTROL Erweitert]** enthält zusätzliche Parameter, die insbesondere für die Bestimmung des Verhaltens bei auftretenden Fehlern, die Angabe der Ausführungsdauer einer Aktivität und die Eingabe eines Initialisierungsskripts verwendet werden.
 
 Um die Aktivitäten besser zu verstehen und die Lesbarkeit des Workflows zu verbessern, können Sie in die Aktivitäten Kommentare einfügen.
 
@@ -120,7 +120,7 @@ Diese Kommentare werden automatisch angezeigt, wenn Benutzer über die Aktivitä
 
 ## Workflow-Vorlagen {#workflow-templates}
 
-Eine Workflow-Vorlage besteht aus einer Reihe von konfigurierten Eigenschaften und gegebenenfalls aus einem Diagramm mit verbundenen Aktivitäten. Auf Basis derartiger Vorlagen können neue Workflows erstellt werden, die die konfigurierten Parameter übernehmen.
+Workflow-Vorlagen enthalten die Gesamtkonfiguration von Eigenschaften und möglicherweise eine Reihe von Aktivitäten, die innerhalb eines Diagramms verkettet sind. Diese Konfiguration kann für die Erstellung neuer Workflows mit einer bestimmten Anzahl vorkonfigurierter Elemente wiederverwendet werden
 
 Die Konfiguration neuer Workflow-Vorlagen kann ausgehend von existierenden Vorlagen geschehen oder aber durch die Umwandlung eines existierenden Workflows in eine Vorlage.
 
@@ -142,5 +142,5 @@ Adobe empfiehlt, einen Workflow zu duplizieren, anstatt Aktivitäten zu kopieren
    ![](assets/duplicate-workflows.png)
 
 1. Ändern Sie den Workflow-Titel im Workflow-Fenster.
-1. Wählen Sie **Speichern** aus.
+1. Klicken Sie auf **Speichern**.
 

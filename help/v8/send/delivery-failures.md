@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 87%
+source-wordcount: '3496'
+ht-degree: 76%
 
 ---
 
@@ -49,7 +49,7 @@ Ein Nachrichtenversand kann sofort fehlschlagen. In diesem Fall wird dies als sy
 
 Diese Fehlertypen werden wie folgt verwaltet:
 
-* **Synchroner Fehler**: Der vom Adobe Campaign-Versand-Server angesprochene Remote-Server gibt sofort eine Fehlermeldung zurück. Die Nachricht kann nicht an den Server des Profils gesendet werden. Der Mail Transfer Agent (MTA) bestimmt den Bounce-Typ und qualifiziert den Fehler, bevor er diese Informationen an Campaign zurücksendet, um zu ermitteln, ob die betroffenen E-Mail-Adressen unter Quarantäne gestellt werden sollen. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
+* **Synchroner Fehler**: Der vom Adobe Campaign-Versand-Server angesprochene Remote-Server gibt sofort eine Fehlermeldung zurück. Der Versand darf nicht an den Server des Profils gesendet werden. Der Mail Transfer Agent (MTA) bestimmt den Bounce-Typ und qualifiziert den Fehler, bevor er diese Informationen an Campaign zurücksendet, um zu ermitteln, ob die betroffenen E-Mail-Adressen unter Quarantäne gestellt werden sollen. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
 
 * **Asynchroner Fehler**: Eine Bounce Message oder ein Statusbericht (SR) wird vom empfangenden Server verzögert zurückgesendet. Dieser Fehler wird mit einer mit dem Fehler verbundenen Bezeichnung qualifiziert. Asynchrone Fehler können bis zu eine Woche nach einem Versand auftreten.
 
@@ -116,7 +116,7 @@ Wenn der Gültigkeitszeitraum in Campaign beispielsweise auf den Standardwert vo
 
 Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht gesendet werden konnte, wird sie mit einem Timeout beendet, und ihr Status ändert sich von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** (in den Versandlogs).
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## E-Mail-Fehlertypen {#email-error-types}
@@ -137,7 +137,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Konto deaktiviert </td> 
    <td> Softbounce / Hardbounce </td> 
    <td> 4 </td> 
-   <td> Das mit der Adresse verknüpfte Konto ist nicht mehr aktiv. Wenn der Internetanbieter (IAP, Internet Access Provider) eine längere Inaktivität feststellt, kann er das Konto der Person schließen. Sendungen an die Adresse dieser Person sind dann nicht mehr möglich. Wenn das Konto aufgrund einer sechsmonatigen Inaktivität vorübergehend deaktiviert wurde und noch aktiviert werden kann, wird der Status „Mit Fehlern“ zugewiesen und der Zustellversuch wird wiederholt, bis der Fehlerzähler 5 erreicht. Wenn die Fehlermeldung besagt, dass das Konto permanent deaktiviert ist, wird es sofort unter Quarantäne gestellt.<br /> </td> 
+   <td> Das mit der Adresse verknüpfte Konto ist nicht mehr aktiv. Wenn der Internet Access Provider (IAP) einen längeren Zeitraum der Inaktivität erkennt, kann er das Konto des Benutzers schließen. Sendungen an die Adresse des Nutzers sind dann nicht möglich. Wenn das Konto aufgrund von sechs Monaten Inaktivität vorübergehend deaktiviert ist und dennoch aktiviert werden kann, wird der Status Mit Fehlern zugewiesen und das Konto wird erneut versucht, bis der Fehlerzähler 5 erreicht. Wenn die Fehlermeldung besagt, dass das Konto permanent deaktiviert ist, wird es sofort unter Quarantäne gestellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Adresse in Quarantäne </td> 
@@ -197,13 +197,13 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Ungültige Domain </td> 
    <td> Soft </td> 
    <td> 2 </td> 
-   <td> Die Domain der E-Mail-Adresse ist fehlerhaft oder existiert nicht mehr. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Eintrag in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> </td> 
+   <td> Die Domain der E-Mail-Adresse ist falsch oder nicht mehr vorhanden. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Eintrag in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Postfach voll </td> 
    <td> Soft </td> 
    <td> 5 </td> 
-   <td> Das Postfach dieses Benutzers ist voll und kann keine weiteren Nachrichten akzeptieren. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Datensatz in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> Dieser Fehlertyp wird von einem Bereinigungsprozess verwaltet. Die Adresse erhält nach 30 Tagen wieder einen gültigen Status.<br />Warnung: Damit die Adresse automatisch aus der Quarantäne genommen werden kann, muss der technische Workflow für die Datenbankbereinigung gestartet sein.<br /> </td> 
+   <td> Das Postfach dieses Benutzers ist voll und kann keine weiteren Nachrichten akzeptieren. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Eintrag in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> Diese Art von Fehler wird durch einen Bereinigungsprozess verwaltet, wobei die Adresse nach 30 Tagen auf einen gültigen Status gesetzt wird.<br /> Warnung: Damit die Adresse automatisch aus der Quarantäne genommen werden kann, muss der technische Workflow für die Datenbankbereinigung gestartet sein.<br /> </td> 
   </tr> 
   <tr> 
    <td> Nicht angemeldet </td> 
@@ -245,7 +245,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Unerreichbar </td> 
    <td> Softbounce / Hardbounce </td> 
    <td> 3 </td> 
-   <td> In der Versandkette der Nachricht ist ein Fehler aufgetreten. Es könnte sich um einen Vorfall auf dem SMTP-Relais, eine zeitweilig unerreichbare Domain o. a. handeln. Je nach Fehler wird die Adresse erneut versucht, bis der Fehlerzähler 5 erreicht, oder sie wird direkt unter Quarantäne gestellt.<br /> </td> 
+   <td> In der Versandkette ist ein Fehler aufgetreten. Es kann sich um einen Vorfall im SMTP-Relais, eine Domain, die vorübergehend nicht erreichbar ist, usw. handeln. Je nach Fehler wird die Adresse erneut versucht, bis der Fehlerzähler 5 erreicht, oder sie wird direkt unter Quarantäne gestellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Unbekannter Nutzer </td> 
@@ -321,7 +321,7 @@ Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
    <td> Nein<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problem mit Zertifikat (Passwort, Beschädigung etc.) und Fehler bei Testverbindung mit APNS<br /> </td> 
+   <td> Zertifikatsproblem (Passwort, Beschädigung usw.) und Testen der Verbindung zu APNs Problem<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Verschiedene Fehlernachrichten je nach Fehler<br /> </td> 
    <td> Soft<br /> </td> 
@@ -361,7 +361,7 @@ Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
 
 **Für Android V1**
 
-Für jede Benachrichtigung erhält Adobe Campaign die synchronen Fehler direkt vom FCM-Server. Adobe Campaign verarbeitet diese unmittelbar und erstellt Hard- und Softbounces entsprechend des Schweregrads des Fehlers. Es können weitere Zustellversuche unternommen werden:
+Für jede Benachrichtigung erhält Adobe Campaign die synchronen Fehler direkt vom FCM-Server. Adobe Campaign verarbeitet diese sofort und erzeugt Hard- oder Softbounces entsprechend des Schweregrads des Fehlers. Anschließend können weitere Zustellversuche unternommen werden:
 
 * Nutzdatenlänge überschritten, Verbindungsproblem, Problem mit Dienstverfügbarkeit: Neuversuch wird unternommen, Softbounce, Grund für den Fehler ist **[!UICONTROL Abgelehnt]**.
 * Gerätequote überschritten: kein Neuversuch, Softbounce, Grund für Fehler ist **[!UICONTROL Abgelehnt]**.
@@ -400,7 +400,7 @@ Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für 
   <tr> 
    <td> Nachrichtenerstellung/Analysephase: unzulässige Schlüsselwörter in den benutzerdefinierten Feldern verwendet<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Folgende Schlüsselwörter dürfen nicht benutzt werden: {1}<br /> </td> 
+   <td> Die folgenden Schlüsselwörter können nicht verwendet werden: {1}<br /> </td> 
    <td> Soft<br /> </td> 
    <td> </td> 
    <td> Nein<br /> </td> 
@@ -408,7 +408,7 @@ Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für 
   <tr> 
    <td> Nachrichtenerstellung/Analysephase: Nutzdaten zu groß<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Die Benachrichtigung ist zu groß: {1} Bit statt maximal {2}.<br /> </td> 
+   <td> Die Benachrichtigung ist zu umfangreich: {1} Bits, aber nur {2} autorisiert<br /> </td> 
    <td> Soft<br /> </td> 
    <td> Zurückgewiesen<br /> </td> 
    <td> Nein<br /> </td> 
@@ -416,7 +416,7 @@ Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für 
   <tr> 
    <td> Netzwerkverbindung während des Versands abgebrochen<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Keine Antwort von Firebase Cloud Messaging für die Adresse: {1}<br /> </td> 
+   <td> Keine Antwort vom Firebase Cloud Messaging-Dienst bei dieser Adresse: {1}<br /> </td> 
    <td> Soft<br /> </td> 
    <td> Unerreichbar<br /> </td> 
    <td> Ja<br /> </td> 
@@ -456,7 +456,7 @@ Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für 
   <tr> 
    <td> Zurückweisung von FCM-Nachricht: alle anderen Fehler<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Der Firebase Cloud Messaging Server hat einen unerwarteten Fehlercode ausgegeben: {1} </td> 
+   <td> Der Firebase Cloud Messaging-Server hat einen unerwarteten Fehler-Code zurückgegeben: {1} </td> 
    <td> </td> 
    <td> Zurückgewiesen<br /> </td> 
    <td> Nein<br /> </td> 
@@ -639,7 +639,7 @@ Die Besonderheiten für den SMS-Kanal sind unten aufgeführt.
   <tr> 
    <td> Ungültige MT-Quittierung<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Fehler '{1}' bei der Verarbeitung des Empfangsbestätigungs-Frames eines Sendeauftrags<br /> </td> 
+   <td> Fehler '{1}' bei der Verarbeitung des Bestätigungsrahmens für die Sendeabfrage<br /> </td> 
    <td> Soft<br /> </td> 
    <td> Unerreichbar<br /> </td> 
   </tr> 
@@ -678,7 +678,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 * Alle Fehlernachrichten beginnen mit **SR**, sodass SMS-Fehlercodes von E-Mail-Fehlercodes unterschieden werden können.
 * Der zweite Teil der Fehlernachricht (in diesem Beispiel **Allgemein**) bezieht sich auf den Namen der SMSC-Implementierung entsprechend der Definition im Feld **[!UICONTROL Name der SMSC-Implementierung]** des externen SMS-Kontos.
 
-  Da derselbe Fehlercode bei jedem Provider eine andere Bedeutung haben kann, sehen Sie in diesem Feld, welcher Provider den Fehlercode erstellt hat. Den Fehler können Sie dann in der entsprechenden Dokumentation des Providers einsehen.
+  Da derselbe Fehler-Code für jeden Provider eine andere Bedeutung haben kann, können Sie in diesem Feld wissen, welcher Provider den Fehler-Code generiert hat. Den Fehler finden Sie dann in der Dokumentation des jeweiligen Anbieters.
 
 * Der dritte Teil der Fehlernachricht (in diesem Beispiel **DELIVRD**) entspricht dem Statuscode, der von der Empfangsbestätigung unter Verwendung des – im externen SMS-Konto definierten – regulären Ausdruck zur Statusextraktion abgerufen wurde.
 
@@ -693,7 +693,7 @@ Standardmäßig erfolgt die Regex-Extraktion des **stat:**-Felds entsprechend de
 
 * Alles, was hinter dem senkrechten Strich (|) steht, wird nur in der Spalte **[!UICONTROL Erster Text]** der Tabelle **[!UICONTROL Versandlogqualifizierung]** angezeigt. Dieser Inhalt wird immer durch **#MESSAGE#** ersetzt, nachdem die Nachricht normalisiert wurde. Dadurch wird verhindert, dass mehrere Einträge für ähnliche Fehler vorliegen, und der Prozess ist mit dem für E-Mails identisch.
 
-Der Connector für erweitertes allgemeines SMPP wendet eine Heuristik an, um sinnvolle Standardwerte zu finden: Ein mit **DELIV** beginnender Status wird als erfolgreich bewertet, da dies den üblicherweise von Providern verwendeten Statuswerten **DELIVRD** oder **DELIVERED** entspricht. Alle anderen Statuswerte verursachen einen Hardbounce.
+Der Connector für erweitertes allgemeines SMPP wendet eine Heuristik an, um sinnvolle Standardwerte zu finden: Wenn der Status mit **DELIV** beginnt, wird er als erfolgreich betrachtet, da er mit den gängigen Status **DELIVRD** oder **DELIVERED** übereinstimmt, die von den meisten Anbietern verwendet werden. Jeder andere Status führt zu einem Hardbounce.
 
 ## Fehlerbehebung bei fehlgeschlagenen Sendungen {#troubleshooting}
 
@@ -715,7 +715,7 @@ Error while compiling script 'content htmlContent' line X: `[table]` is not defi
 
 **Lösung**: Überprüfen Sie den Workflow und den Versandinhalt, um genau zu bestimmen, welche Personalisierung versucht, die betreffende Tabelle aufzurufen. Entfernen Sie dann entweder den Aufruf dieser Tabelle im HTML oder korrigieren Sie die Zuordnung zum Versand.
 
-Weitere Informationen zur Personalisierung finden [&#x200B; in diesem Abschnitt &#x200B;](personalize.md).
+Weitere Informationen zur Personalisierung finden [ in diesem Abschnitt ](personalize.md).
 
 ### Fehler bei mehreren Personalisierungswerten {#multiple-values-error}
 

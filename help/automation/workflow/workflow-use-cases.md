@@ -6,8 +6,8 @@ feature: Workflows, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 6e899937-5ca0-4ca5-bb14-f914e41559ab
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '172'
+workflow-type: tm+mt
+source-wordcount: '178'
 ht-degree: 100%
 
 ---
@@ -20,13 +20,13 @@ Lernen Sie verschiedene Szenarien kennen, in denen Workflows verwendet werden k�
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
-* [Verwenden der lokalen Validierung](local-approval-activity.md)
+* [Verwenden der lokalen Validierungsaktivit채t](local-approval-activity.md)
 * [Senden einer Geburtstags-E-Mail](send-a-birthday-email.md)
 * [Laden des Versandinhalts](load-delivery-content.md)
 * [Workflow f체r einen kanal체bergreifenden Versand](cross-channel-delivery-workflow.md)
 * [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](email-enrichment-with-custom-date-fields.md)
 
-## Monitoring      {#monitoring}
+## Monitoring {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
@@ -52,12 +52,12 @@ Lernen Sie verschiedene Szenarien kennen, in denen Workflows verwendet werden k�
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
-* [Abfrage zur Empf채ngertabelle](querying-recipient-table.md)
-* [Informationen zum Abfrageversand](query-delivery-info.md)
+* [Abfrage der Empf채ngertabelle](querying-recipient-table.md)
+* [Abfragen von Informationen zum Versand](query-delivery-info.md)
 * [Durchf체hren der Aggregat-Berechnung](compute-aggregates.md)
 * [Abfrage mit Gruppierungsverwaltung](query-grouping-management.md)
 * [Abfrage mit einer n:n-Beziehung](query-many-to-many-relationship.md)
-* [Hinzuf체gen eines berechneten Auflistungsfelds](adding-enumeration-type-calculated-field.md)
+* [Hinzuf체gen eines berechneten Aufz채hlungsfelds](adding-enumeration-type-calculated-field.md)
 * [Erstellen von Filtern](create-a-filter.md)
 * [Filtern doppelter Empf채nger](filter-duplicated-recipients.md)
 * [Aufrufen von Instanzvariablen in Abfragen](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)

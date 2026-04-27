@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Orchestrieren Sie Ihre kanalübergreifenden Sendungen in Ihren Kampagnen: Optimieren Sie mit Adobe Campaign Ihre Kommunikation durch personalisierte E-Mails, SMS, Push-Benachrichtigungen und In-App-Nachrichten. Sie können Rich Media wie Videos, Emojis oder GIFs verwenden und direkt integrieren.
 
-Sendungen können über das Dashboard einer Kampagne, einen Kampagnen-Workflow oder direkt über die Versandübersicht erstellt werden. Wenn Sendungen in einer Kampagne erstellt werden, werden sie mit dieser Kampagne verknüpft und auf Kampagnenebene zusammengefasst.
+Sendungen können über das Dashboard einer Kampagne, einen Kampagnen-Workflow oder direkt über die Übersicht der Sendungen erstellt werden. Wenn Sendungen aus einer Kampagne erstellt werden, werden sie mit dieser Kampagne verknüpft und auf der Kampagnenebene konsolidiert.
 
 ## Erstellen von Sendungen {#create-deliveries}
 
@@ -70,7 +70,7 @@ Wenn der Extraktions-Workflow korrekt ausgeführt wurde, muss die Extrationsdate
 
 Gehen Sie wie folgt vor, um den Inhalt zu validieren und die Datei an den Provider zu senden:
 
-1. Nachdem die Extraktionsdatei validiert wurde, kann der Testversand der Benachrichtigungs-E-Mail an den Router erzeugt werden. Diese E-Mail wird auf der Grundlage einer Versandvorlage erstellt und muss validiert werden.
+1. Nachdem die Extraktionsdatei validiert wurde, können Sie den Testversand der Benachrichtigungs-E-Mail für den Router generieren. Diese E-Mail-Nachricht basiert auf einer Versandvorlage. Sie muss genehmigt werden.
 
    Dieser Schritt ist nur verfügbar, wenn die Option **[!UICONTROL Testversandvalidierung aktivieren aktivieren (Briefpost)]** auf der Registerkarte **[!UICONTROL Genehmigungen]** der erweiterten Kampagnenparameter aktiviert wurde.
 
@@ -98,7 +98,7 @@ Die Dateiextraktion startet zwei Prozesse: Budgetberechnung und Bestandsberechnu
 
   ![](assets/campaign-budget-tab.png)
 
-  Die tatsächlichen Kosten werden am Ende entsprechend der vom Router kommunizierten Informationen berechnet: Nur die tatsächlich versendeten Briefe werden fakturiert.
+  Die tatsächlichen Kosten werden letztendlich anhand der vom Router gelieferten Informationen berechnet. Nur tatsächlich gesendete Nachrichten werden fakturiert.
 
 * Die Lagerbestände werden im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Lager]** des Baums definiert.
 
@@ -108,7 +108,7 @@ Die Dateiextraktion startet zwei Prozesse: Budgetberechnung und Bestandsberechnu
 
   ![](assets/campaign-service-providers.png)
 
-  Lagerpositionen können im Lager-Bereich angezeigt werden. Öffnen Sie eine Lagerposition, um den Anfangsbestand festzulegen. Der Bestand verringert sich mit jedem Versand. Sie haben die Möglichkeit, eine Alarmstufe und Benachrichtigungen zu konfigurieren.
+  Lagerpositionen werden im Lagerteil angezeigt. Um den Anfangsbestand zu definieren, öffnen Sie eine Lagerposition. Der Bestand verringert sich mit jedem Versand. Sie können eine Warnstufe und Benachrichtigungen definieren.
 
 
   >[!NOTE]

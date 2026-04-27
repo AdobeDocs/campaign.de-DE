@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
 source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 95%
+source-wordcount: '1483'
+ht-degree: 81%
 
 ---
 
@@ -106,7 +106,7 @@ Im Inhalt der Web-Seite müssen Sie das folgende Skript hinzufügen, das währen
 
    Im vorliegenden Beispiel handelt es sich um einen zusammengesetzten Identifikationsschlüssel, da er sowohl auf die E-Mail-Adresse als auch auf den Namen des Kontakts Bezug nimmt.
 
-1. Wenn die Web-Seite aufgerufen wird, ermöglicht es die Auswertung des Skripts, die ID des Kontakts an das Angebotsmodul zu übergeben. Bei einer zusammengesetzten ID werden die Schlüssel in der gleichen Reihenfolge angezeigt wie in den erweiterten Parametern und durch | getrennt.
+1. Während der Anzeige der Web-Seite ermöglicht die Skriptauswertung die Weitergabe der Empfänger-ID an das Angebotsmodul. Wenn es sich um eine zusammengesetzte ID handelt, werden die Schlüssel in der gleichen Reihenfolge angezeigt wie in den erweiterten Einstellungen und durch ein | getrennt.
 
    In folgendem Beispiel-Code hat sich der Kontakt auf der Web-Seite angemeldet. Er wurde bei der Abfrage des Angebotsmoduls mithilfe seiner E-Mail-Adresse und seines Familiennamens identifiziert:
 
@@ -142,15 +142,15 @@ Die Angebotsmodul-Abfrage stellt sich wie folgt dar:
 
 * Der Parameter &quot;**env**&quot; erhält den internen Namen der Live-Umgebung.
 
-* Der optionale Parameter &quot;**cb**&quot; erhält den Namen der Funktion, die den vom Angebotsmodul zurückgegebenen XML-Knoten auswerten wird (Callback).
+* Der Parameter **cb** erhält den Namen der Funktion, die den XML-Knoten liest, der von der Engine mit den (Callback) Vorschlägen zurückgegeben wird. Dieser Parameter ist optional.
 
 * Der optionale Parameter „**t**“ erhält bei Interaktionen mit identifizierten Kontakten die Kennung des Kontakts. Der Parameter kann auch mit der Variablen **interactionTarget** übergeben werden. Dieser Parameter ist optional.
 
-* Der optionale Parameter &quot;**c**&quot; erhält die Liste der internen Kategorienamen.
+* Der Parameter &quot;**c**&quot; empfängt die Liste der internen Namen der Kategorien. Dieser Parameter ist optional.
 
-* Der optionale Parameter &quot;**th**&quot; erhält die Liste der Themen.
+* Der **.** empfängt die Liste der Designs. Dieser Parameter ist optional.
 
-* Der optionale Parameter &quot;**gctx**&quot; erhält die globalen Aufrufdaten (Kontext) der gesamten Seite.
+* Der Parameter **gctx** empfängt die Aufrufdaten global (context) für die gesamte Seite. Dieser Parameter ist optional.
 
 Der zurückgegebene XML-Knoten stellt sich wie folgt dar:
 
@@ -202,11 +202,11 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    >[!CAUTION]
    >
-   >Jedes Element muss zweimal definiert werden. CDATA-Elemente (&quot;_jst&quot;) können Personalisierungsfelder enthalten.
+   >Jedes Element muss zweimal definiert werden. Elemente vom Typ „CDATA“ („_jst„) können Personalisierungsfelder enthalten.
    >
    >Vergessen Sie nicht, die Datenbankstruktur zu aktualisieren.
 
-   Sie können das Angebotsschema erweitern, um neue Felder sowohl im Batch- als auch im Einzelmodus in jedem beliebigen Format (Text, HTML oder XML) hinzuzufügen.
+   Sie können das Angebotsschema erweitern, um neue Felder sowohl im Batch- als auch im Einzelmodus sowie in jedem beliebigen Format (Text, HTML und XML) hinzuzufügen.
 
 1. **Erweitern des Angebotsformulars zur Hinzufügung neuer Felder und Änderung eines existierenden Felds**
 
@@ -273,7 +273,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Der Parameter &quot;**env**&quot; nimmt als Wert den internen Namen der Live-Umgebung an.
 
-   Der Parameter &quot;**cb**&quot; nimmt als Wert den Namen der Funktion an, die den vom Angebotsmodul zurückgegebenen XML-Knoten auswerten soll. Im vorliegenden Beispiel öffnet die aufgerufene Funktion ein Modalfenster (alert()-Funktion).
+   Der Wert des Parameters &quot;**cb**&quot; ist der Name der Funktion, die den von der Engine zurückgegebenen XML-Knoten interpretieren muss. In unserem Beispiel öffnet die aufgerufene Funktion ein modales Fenster (alert()-Funktion).
 
    Der vom Angebotsmodul zurückgegebene XML-Knoten stellt sich wie folgt dar:
 
@@ -314,7 +314,7 @@ Es ist möglich, eine Angebotsunterbreitung mithilfe einer XML-Rendering-Funktio
 
 ## Einrichten einer SOAP-Integration
 
-Die für die Angebotsverwaltung verfügbaren SOAP-Webservices unterscheiden sich von den in Adobe Campaign gewöhnlich verwendeten. Sie sind über die im vorangehenden Kapitel beschriebene Interaction-URL zugänglich und ermöglichen es, ein Angebot für einen spezifischen Kontakt vorzuschlagen oder zu aktualisieren.
+Die für die Angebotsverwaltung bereitgestellten SOAP-Web-Services unterscheiden sich von den in Adobe Campaign üblicherweise verwendeten. Sie können über die im vorherigen Abschnitt beschriebene Interaktions-URL aufgerufen werden, über die Sie Angebote für einen bestimmten Kontakt unterbreiten oder aktualisieren können.
 
 ### Angebotsvorschläge {#offer-proposition}
 
@@ -331,7 +331,7 @@ Fügen Sie für einen Angebotsvorschlag über SOAP den Befehl **nms:proposition#
 
 >[!NOTE]
 >
->**targetId** und **maxCount** sind Pflichtparameter, die Angabe der anderen ist optional.
+>Die Einstellungen **targetId** und **maxCount** sind obligatorisch. Die anderen sind optional.
 
 Als Antwort auf die Abfrage gibt der SOAP-Dienst folgende Parameter zurück:
 

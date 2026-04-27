@@ -7,8 +7,8 @@ level: Experienced
 exl-id: ae1ef010-24d5-4be4-a30c-899e2b0040a4
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 100%
+source-wordcount: '151'
+ht-degree: 63%
 
 ---
 
@@ -43,34 +43,34 @@ Starting Campaign v8.6, the authentication process to Campaign v8 is being impro
     <td>
       <img src="../v8/assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Erste Schritte</strong><br/><a href="../v8/start/campaign-ui.md">Benutzeroberfläche</a> - <a href="../v8/start/ac-components.md">Komponenten und Prozesse</a> - <a href="../v8/start/v7-to-v8.md">Von Classic v7 zu v8</a> - <a href="../v8/start/campaign-faq.md">FAQs</a>
+      <strong>Erste Schritte</strong><br/><a href="../v8/start/campaign-ui.md">Benutzeroberfläche</a> - <a href="../v8/start/ac-components.md">Komponenten und Prozesse</a> - <a href="../v8/start/v7-to-v8.md">Von Classic v7 zu v8</a> - <a href="../v8/start/campaign-faq.md">FAQ</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Kundenerlebnis</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatisieren mit Workflows</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Kampagnenorchestrierung</a> - <a href="../v8/interaction/interaction.md">Entscheidungs-Management</a> - <a href="../v8/send/personalize.md">Personalisierung</a>
+      <strong>Kundenerlebnis</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">Automatisieren mit Workflows</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">Kampagnenorchestrierung</a> - <a href="../v8/interaction/interaction.md">Entscheidungs-Management</a> - <a href="../v8/send/personalize.md">Personalization</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Nachrichten senden</strong><br/><a href="../v8/start/create-message.md">Erste Schritte</a> - <a href="../v8/send/preview-and-proof.md">Vorschau und Testsendungen</a> - <a href="../v8/send/predictive.md">Sendezeitoptimierung</a> - <a href="../v8/reporting/gs-reporting.md">Berichte und Analysen</a>
+      <strong>Nachrichten senden</strong><br/><a href="../v8/start/create-message.md">Erste Schritte</a> - <a href="../v8/send/preview-and-proof.md">Vorschau und Testsendungen</a> - <a href="../v8/send/predictive.md">Sendezeitoptimierung</a> - <a href="../v8/reporting/gs-reporting.md">Reporting und Analysen</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="../v8/assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>Profile und Zielgruppen</strong><br/><a href="../v8/audiences/create-profiles.md">Profile hinzufügen</a> - <a href="../v8/audiences/create-audiences.md">Zielgruppen erstellen</a> - <a href="../v8/start/subscriptions.md">Abonnements verwalten</a> - <a href="../v8/start/privacy.md">Datenschutz</a>
+      <strong>Profile und Audiences</strong><br/><a href="../v8/audiences/create-profiles.md">Profile hinzufügen</a> - <a href="../v8/audiences/create-audiences.md">Audiences erstellen</a> - <a href="../v8/start/subscriptions.md">Abonnements verwalten</a> - <a href="../v8/start/privacy.md">Datenschutz</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-configure.svg" width="35px">
     <br/>
-      <strong>Architektur und Konfiguration</strong><br/><a href="../v8/architecture/architecture.md">Architektur</a> - <a href="../v8/start/implement.md">Implementierung von Campaign v8</a> - <a href="../v8/connect/integration.md">Verbinden mit anderen Lösungen</a> - <a href="../v8/start/gs-permissions.md">Benutzende und Berechtigungen</a>
+      <strong>Architektur und Konfiguration</strong><br/><a href="../v8/architecture/architecture.md">Architektur</a> - <a href="../v8/start/implement.md">Implementierung von Campaign v8</a> - <a href="../v8/connect/integration.md">Verbindung mit anderen Lösungen herstellen</a> - <a href="../v8/start/gs-permissions.md">Benutzer und Berechtigungen</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-dev.svg" width="35px">
     <br/>
-      <strong>Entwickler-Ressourcen</strong><br/><a href="../v8/dev/datamodel.md">Datenmodell von Campaign v8</a> - <a href="../v8/dev/schemas.md">Schemata</a> - <a href="../v8/dev/api.md">APIs</a>
+      <strong>Entwicklungsressourcen</strong><br/><a href="../v8/dev/datamodel.md">Campaign v8-</a> - <a href="../v8/dev/schemas.md">Schemata</a> - <a href="../v8/dev/api.md">APIs</a>
     </td>
   </tr>
 </table>

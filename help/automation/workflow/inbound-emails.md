@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cc2c415-1886-4f31-8020-dbaf97a3cc43
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 100%
+ht-degree: 66%
 
 ---
 
@@ -21,7 +21,7 @@ Die Aktivität **E-Mail-Empfang** ermöglicht den Abruf und die Verarbeitung von
 
 ![](assets/email_rec_edit_1.png)
 
-Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jeder Nachricht auszuführende Script an. Im zweiten Tab können Sie eine Planung für die Aktivität definieren und im dritten eine eventuelle Ablauffrist.
+Auf der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie die Parameter des POP3-Servers eingeben und das Skript eingeben, das bei Erhalt jeder Nachricht ausgeführt werden soll. Auf der zweiten Registerkarte können Sie der Aktivität einen Zeitplan zuweisen. Auf der dritten Registerkarte werden die Ablaufbedingungen für die Aktivität definiert.
 
 1. **[!UICONTROL E-Mail-Empfang]**
 
@@ -47,15 +47,15 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
 
       * **[!UICONTROL Port]**
 
-        Nummer des POP3-Verbindungsports. Standardmäßig ist dies der Port 110.
+        Port-Nummer der POP3-Verbindung. Der Standard-Port ist 110.
 
-   * **[!UICONTROL Beenden, sobald eine E-Mail verarbeitet wurde]**
+   * **[!UICONTROL Stoppen, sobald eine E-Mail verarbeitet wurde]**
 
-     Bei Auswahl dieser Option werden die E-Mails einzeln verarbeitet. Die Transition der Aktivität wird nur einmal aktiviert. Alle nicht verarbeiteten Nachrichten bleiben auf dem Server.
+     Mit dieser Option können Sie E-Mails einzeln verarbeiten. Die Aktivität aktiviert ihre Transition nur einmal und beendet dann die Verarbeitung, sodass nicht verarbeitete Nachrichten auf dem Server bleiben.
 
 1. **[!UICONTROL Script]**
 
-   Die Angabe eines Scripts ermöglicht die Verarbeitung der Nachricht und die Ausführung von verschiedenen Vorgängen, je nach Nachrichteninhalt. Das Script wird auf jede Nachricht angewendet und entscheidet, welcher Vorgang auszuführen ist (Nachricht in der Mailbox belassen oder löschen) und ob die ausgehende Transition zu aktivieren ist.
+   Mit dem Skript können Sie die Nachricht verarbeiten und verschiedene Vorgänge ausführen, die vom Inhalt der Nachricht abhängen. Das Script wird für jede Nachricht ausgeführt und kann den für die Nachricht auszuführenden Vorgang (Nachricht hinterlassen oder löschen) und die Aktivierung der ausgehenden Transition festlegen.
 
    Der Rückgabe-Code muss einem der folgenden Werte entsprechen:
 

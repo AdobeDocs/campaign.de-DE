@@ -7,12 +7,12 @@ level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1072'
 ht-degree: 100%
 
 ---
 
-# Aktualisieren von Adobe Experience Platform-Profilen über Adobe Campaign-Landingpages {#ac-aep-lp}
+# Aktualisieren von Adobe Experience Platform-Profilen über Adobe Campaign-Landingpages {#ac-aep-lp}
 
 Durch die Integration von Adobe Campaign mit Adobe Experience Platform können Sie Profildaten nahtlos zwischen Ihren Adobe Campaign-Landingpages und Adobe Experience Platform synchronisieren. Diese Integration ermöglicht Ihnen Folgendes:
 
@@ -123,7 +123,7 @@ Nachdem nun die Authentifizierungsoptionen in Campaign konfiguriert worden sind,
 
 ## Hinzufügen von Optionen bei der Workflow-Ausführung {#javascript}
 
-Um die Datensynchronisation zwischen Landingpages und Adobe Experience Platform zu ermöglichen, müssen benutzerdefinierte JavaScript-Codes zu Adobe Campaign hinzugefügt werden.  Führen Sie folgende Schritte aus:
+Um die Datensynchronisation zwischen Landingpages und Adobe Experience Platform zu ermöglichen, müssen benutzerdefinierte JavaScript-Codes zu Adobe Campaign hinzugefügt werden. Führen Sie folgende Schritte aus:
 
 1. Navigieren Sie zum Menü **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL JavaScript-Codes]**.
 1. Erstellen Sie neue JavaScript-Codes und fügen Sie die unten stehenden Snippets ein.

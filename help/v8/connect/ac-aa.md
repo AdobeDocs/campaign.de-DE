@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
 source-git-commit: e465b846b3144a2138bb912b4baa09238f8c5b4c
-workflow-type: ht
-source-wordcount: '1552'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1653'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Durch diese Integration können Adobe Campaign und Adobe Analytics über das Add
 
 >[!NOTE]
 >
->Als Benutzende von Managed Cloud Services müssen Sie [Adobe kontaktieren](../start/campaign-faq.md#support), wenn Sie Campaign mit Adobe Experience Cloud-Services und -Lösungen verbinden möchten. Das Add-on Web Analytics Connector muss über das dedizierte Paket in Ihrer Umgebung installiert werden.
+>Als Benutzende von Managed Cloud Services müssen Sie [Adobe kontaktieren](../start/campaign-faq.md#support), wenn Sie Campaign mit Adobe Experience Cloud-Services und -Lösungen verbinden möchten. Das Add-on „Web Analytics-Connector“ muss über das dedizierte Paket in Ihrer Umgebung installiert werden.
 
 Mit Adobe Analytics Connector kann Adobe Campaign die Internet-Zielgruppe (Web Analytics) messen. Die Web-Analyse-Tools von Adobe Campaign ermöglichen die Weiterleitung von Indikatoren und Kampagnenattributen an Analytics.
 
@@ -33,7 +33,7 @@ Die Anwendungsbereiche der einzelnen Tools sind folgende:
 
 >[!CAUTION]
 >
->Adobe Analytics Connector ist nicht kompatibel mit Transaktionsnachrichten (Message Center).
+>Der Adobe Analytics-Connector ist nicht kompatibel mit Transaktionsnachrichten (Message Center).
 
 Um die Verbindung zwischen Campaign und Analytics einzurichten, müssen Sie die folgenden Schritte vornehmen:
 
@@ -182,16 +182,16 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
    >[!IMPORTANT]
    >
-   >Diese Konfigurationsoption sollte erfahrenen Nutzern vorbehalten bleiben, da Fehler in der Formel dazu führen können, dass die Nachrichtensendungen blockiert wird.
+   >Diese Konfigurationsoption sollte erfahrenen Nutzern vorbehalten bleiben, da Fehler in der Formel dazu führen können, dass die Nachrichtensendungen gestoppt wird.
 
 1. Auf der Registerkarte **[!UICONTROL Erweitert]** können Sie fortgeschrittene Parameter ändern.
 
    * **[!UICONTROL Lebensdauer]**: Hier können Sie die Verzögerung (in Tagen) angeben, nach der die Web-Ereignisse in Adobe Campaign durch technische Workflows wiederhergestellt werden. Standardmäßig sind das 180 Tage.
-   * **[!UICONTROL Persistenz]**: Zeitraum (standardmäßig 7 Tage), während dem ein Webereignis (z. B. eine Bestellung) einer Remarketing-Kampagne zugeordnet werden kann.
+   * **[!UICONTROL Persistenz]**: Zeitraum (standardmäßig 7 Tage), während dem ein Webereignis (z. B. ein Kauf) einer Remarketing-Kampagne zugeordnet werden kann.
 
 >[!NOTE]
 >
->Bei Verwendung verschiedener Zielgruppe-Mess-Tools können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und dem anderen Messtool erwarteten Parameter hinzufügen.
+>Wenn Sie mehrere Tools zur Messung von Audiences verwenden, können Sie **[!UICONTROL Sonstige]** in der Dropdown-Liste **[!UICONTROL Partner]** beim Erstellen des externen Kontos auswählen. In den Versandeigenschaften darf nur ein einziges externes Konto referenziert werden. Daher ist eine Anpassung der Formel für die getrackten URLs notwendig, indem die von Adobe und allen anderen verwendeten Mess-Tools erwarteten Parameter hinzugefügt werden.
 
 ## Technische Workflows der Web-Analyse-Prozesse {#technical-workflows-of-web-analytics-processes}
 
@@ -235,7 +235,7 @@ Folgende Attribute werden übermittelt:
 
 ## Nachverfolgen von Sendungen {#tracking-deliveries-in-adobe-campaign}
 
-Damit die Adobe Experience Cloud nach Versand der Nachrichten durch Adobe Campaign die Aktivitäten auf den Webseiten verfolgen kann, muss der entsprechende Connector in den Versandeigenschaften angegeben werden. Gehen Sie wie folgt vor:
+Damit die Adobe Experience Cloud die Aktivitäten auf den Sites verfolgen kann, sobald der Versand von Adobe Campaign durchgeführt wurde, müssen Sie in den Versandeigenschaften auf den entsprechenden Connector verweisen. Gehen Sie hierzu wie folgt vor:
 
 1. Öffnen Sie den Versand der zu verfolgenden Kampagne.
 
@@ -251,7 +251,7 @@ Damit die Adobe Experience Cloud nach Versand der Nachrichten durch Adobe Campai
 
 ## Erstellen einer Remarketing-Kampagne {#create-a-re-marketing-campaign}
 
-Zur Vorbereitung von Remarketing-Kampagnen ist die Erstellung von spezifischen Versandvorlagen erforderlich. Anschließend ist die Remarketing-Kampagne zu konfigurieren und einem Segment zuzuweisen. Jedem Segment muss eine andere Remarketing-Kampagne entsprechen.
+Um Ihre Remarketing-Kampagne vorzubereiten, erstellen Sie einfach Versandvorlagen, die für Kampagnen des Typs Remarketing verwendet werden. Konfigurieren Sie dann Ihre Remarketing-Kampagne und verknüpfen Sie sie mit einem Segment. Jedes Segment muss über eine andere Remarketing-Kampagne verfügen.
 
 Remarketing-Kampagnen werden automatisch gestartet, sobald Adobe Campaign die Segmente wiederhergestellt hat, mit denen das Verhalten der Zielgruppe der ursprünglichen Kampagne analysiert wurde. Im Falle eines Warenkorbabbruchs oder eines Aufrufs eines Produkts ohne Kauf wird ein Versand an die betroffenen Empfängerinnen und Empfänger gesendet, damit sie ihren Einkauf auf der Website abschließen können.
 
@@ -266,7 +266,7 @@ Adobe Campaign stellt vorkonfigurierte Versandvorlagen zur Verfügung, die Sie v
 1. Wählen Sie die für diese Remarketing-Kampagne zu verwendende Versandvorlage aus und klicken Sie auf **[!UICONTROL Beenden]**, um das Konfigurationsfenster zu schließen.
 1. Klicken Sie nun auf **[!UICONTROL OK]**, um das Kampagnenfenster zu schließen.
 
-Der Bericht zur **[!UICONTROL Remarketing-Effizienz]** steht in der allgemeinen Berichtübersicht zur Verfügung. Er zeigt die Anzahl konvertierter Kontakte (d. h., die einen Kauf getätigt haben) in Bezug auf die Zahl der Transaktionsabbrüche im Anschluss an die mit Adobe Campaign durchgeführte Remarketing-Kampagne an. Die Konversionsrate wird über die letzten 7 oder 30 Tage bzw. ab der Synchronisation von Adobe Campaign und Adobe Analytics berechnet.
+Der **[!UICONTROL Remarketing-Effizienz]**-Bericht wird über die Seite Globale Berichte aufgerufen. Sie zeigt die Anzahl der Kontakte, die konvertiert wurden (d. h., die etwas gekauft haben), im Verhältnis zur Anzahl der Warenkorbabbrüche nach der Remarketing-Kampagne von Adobe Campaign an. Die Konversionsrate wird über die letzten 7 oder 30 Tage bzw. ab der Synchronisation von Adobe Campaign und Adobe Analytics berechnet.
 
 **Verwandte Themen**
 

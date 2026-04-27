@@ -7,8 +7,8 @@ description: Technotes zu Campaign
 breadcrumb-title: Technotes zu Campaign
 source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 46%
+source-wordcount: '85'
+ht-degree: 45%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 46%
 # Technotes zu Adobe Campaign {#technotes-ac}
 
 + [Technotes zu Campaign](technotes-home.md)
-+ Aktualisierungen{#tn-new}
++ Upgrades{#tn-new}
    + {hide-from-toc}[Änderungen am Push-Benachrichtigungskanal](upgrades/push-technote.md)
    + [Migrieren von Benutzenden zu IMS](upgrades/migrate-users-to-ims.md)
    + [Migration technischer Benutzender zur Developer Console](upgrades/ims-migration.md)
@@ -31,4 +31,4 @@ ht-degree: 46%
    + Sicherheit {#security}
       + {hide-from-toc}[Rotation der Kundenanmeldeinformationen](security/credential-rotation-guide.md)
       + {hide-from-toc}[Asymetrische Verschlüsselung](security/asymetric-encryption.md)
-+ [&lt; Zurück zur Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)
++ [&lt; Zurück zur Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)

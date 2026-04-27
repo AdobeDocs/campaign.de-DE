@@ -6,9 +6,9 @@ feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: ht
-source-wordcount: '1126'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ Das Modul **Verwalten sozialer Netzwerke (Social-Media-Marketing)** ermöglicht 
 
 * Nachrichten zu posten und DMs zu senden – Mit dem Social-Media-Marketing in Adobe Campaign können Sie Nachrichten auf X posten. Sie können auch Direktnachrichten an alle Ihre Follower senden.
 
-* Neue Kontakte zu sammeln – Mit Adobe Campaign Social-Media-Marketing können Sie auch einfach neue Kontakte über Facebook sammeln: Kontaktieren Sie die Benutzer und fragen Sie sie, ob sie ihre Profilinformationen weitergeben möchten. Wenn sie zustimmen, ruft Adobe Campaign die Daten automatisch ab, sodass Sie zielgerichtete Kampagnen durchführen und kanalübergreifende Strategien implementieren können.
+* Neue Kontakte zu sammeln – Mit Adobe Campaign Social-Media-Marketing können Sie auch einfach neue Kontakte über Facebook sammeln: Kontaktieren Sie die Benutzer und fragen Sie sie, ob sie ihre Profilinformationen weitergeben möchten. Wenn sie zustimmen, ruft Adobe Campaign die Daten automatisch ab, sodass Sie Zielgruppenbestimmungs-Kampagnen durchführen und kanalübergreifende Strategien implementieren können.
 
 
 >[!NOTE]
@@ -117,7 +117,7 @@ Sie werden standardmäßig angehalten: Sie müssen sie manuell starten, wenn Sie
 
 Der technische Workflow **[!UICONTROL Synchronisation von Twitter-Konten]** synchronisiert X-Konten in Adobe Campaign. Durch diesen Workflow wird die Liste der X-Follower abgerufen, sodass Sie ihnen Direktnachrichten senden können. [Weitere Informationen](../send/twitter.md#direct-tw-messages)
 
-Standardmäßig wird dieser Workflow jeden Donnerstag um 7.30 Uhr ausgelöst. Sie können die Option **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]** verwenden, um den Workflow bei der Implementierung dieser Integration jederzeit zu starten.  Sie können auch die Planung bearbeiten, um die Häufigkeit der Auslösung des Workflows zu ändern. Weitere Informationen finden Sie auf [dieser Seite](../../automation/workflow/scheduler.md).
+Standardmäßig wird dieser Workflow jeden Donnerstag um 7 Uhr :30AM ausgelöst. Sie können die Option **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]** verwenden, um den Workflow bei der Implementierung dieser Integration jederzeit zu starten.  Sie können auch die Planung bearbeiten, um die Häufigkeit der Auslösung des Workflows zu ändern. Weitere Informationen finden Sie auf [dieser Seite](../../automation/workflow/scheduler.md).
 
 >[!CAUTION]
 >

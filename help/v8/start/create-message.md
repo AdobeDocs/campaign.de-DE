@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 99%
+source-wordcount: '1653'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. Sie k
 
 Dies sind die wichtigsten Schritte beim Erstellen eines einmaligen Versands:
 
-1. **Einen neuen Versand erstellen**.  [mehr dazu](#create-the-delivery)
+1. **Einen neuen Versand erstellen**. [Weitere Informationen](#create-the-delivery)
 
 1. **Versandinhalt festlegen**. [Weitere Informationen](#content-of-the-delivery)
 
@@ -40,9 +40,9 @@ Gehen Sie wie folgt vor, um einen Versand zu erstellen:
 
    ![](../send/assets/select-the-new-template.png)
 
-   Es gibt für jeden installierten Kanal (E-Mail, Fax, Telefon, Mobile-Kanäle (Push, SMS), Briefpost, X (Twitter) usw.) eine integrierte Vorlage. Die in der Liste verfügbaren Kanäle hängen von Ihrer Lizenz ab.
+   Für jeden Kanal, den Sie installiert haben, wird eine integrierte Vorlage bereitgestellt: E-Mail, Telefon, mobile Kanäle (Push/SMS), Briefpost, X (Twitter) usw. Die in der Liste verfügbaren Kanäle hängen von Ihrer Lizenzvereinbarung ab.
 
-   Sie können neue Versandvorlagen erstellen, um bestimmte Parameter vorab an Ihre Anforderungen anzupassen. [Weitere Informationen](../send/create-templates.md).
+   Sie können neue Versandvorlagen erstellen, um bestimmte Parameter vorab an Ihre Anforderungen anzupassen.  [Weitere Informationen](../send/create-templates.md).
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den Versand ein.
 
@@ -85,7 +85,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    ![](../send/sms/assets/audience_to.png){zoomable="yes"}
 
-1. Wählen Sie das [Zielgruppen-Mapping](../audiences/target-mappings.md) in der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. 
+1. Wählen Sie das [Zielgruppen-Mapping](../audiences/target-mappings.md) in der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus.
 1. Wählen Sie zur Konfiguration von Einschränkungsfiltern die Schaltfläche **[!UICONTROL Hinzufügen]** aus.
 
    ![](assets/target-type.png){width="60%" align="left" zoomable="yes"}
@@ -114,17 +114,17 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
      >
      >Die Option **[!UICONTROL Unterordner einbeziehen]** dehnt den Kreis der Empfänger auf die in Unterordnern des ausgewählten Knotens enthaltenen Sendungen aus.
 
-   * **[!UICONTROL Abonnenten eines Informationsdienstes]**: Angabe des Newsletters, den die Empfängerinnen und Empfänger abonniert haben müssen, um in die Zielgruppe des Versands aufgenommen zu werden.
+   * **[!UICONTROL Abonnenten eines Informationsdienstes]**: Angabe des Newsletters, den die Empfänger abonniert haben müssen, um in die Zielgruppe des Versands aufgenommen zu werden.
 
      ![](assets/target-service.png)
 
-   * **[!UICONTROL Benutzerfilter]**: Mit dieser Option können Sie auf vorkonfigurierte Filter zugreifen, um sie als Filterkriterien für Profile in der Datenbank zu verwenden.  Weiterführende Informationen zu Benutzerfiltern finden Sie in [diesem Abschnitt](../audiences/create-filters.md#default-filters).
+   * **[!UICONTROL Benutzerfilter]**: Mit dieser Option können Sie auf vorkonfigurierte Filter zugreifen, um sie als Filterkriterien für Profile in der Datenbank zu verwenden. Weiterführende Informationen zu Benutzerfiltern finden Sie in [diesem Abschnitt](../audiences/create-filters.md#default-filters).
    * Mit der Option **[!UICONTROL Empfänger von diesem Segment ausschließen]** können Sie Empfängerinnen und Empfänger als Zielgruppe auswählen, die nicht den definierten Zielkriterien entsprechen. Um diese Option zu verwenden, aktivieren Sie das entsprechende Kontrollkästchen und wenden Sie dann die Zielgruppenbestimmung an (wie zuvor definiert), um die resultierenden Profile auszuschließen.
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für diese Zielgruppenbestimmung ein. Der Titel entspricht standardmäßig dem Titel der ersten Zielgruppenbestimmung. Bei der Kombination von Filterkriterien wird empfohlen, einen expliziten Namen zu verwenden.
 1. Klicken Sie auf **[!UICONTROL Beenden]**, um die Optionen der Zielgruppenbestimmung zu bestätigen.
 
-   Die derart festgelegten Targeting-Kriterien werden im mittleren Bereich des Hauptzielgruppe-Tabs zusammengefasst. Durch Klick auf ein Kriterium können Sie seinen Inhalt (Konfiguration und Vorschau) prüfen. Klicken Sie auf das rote Kreuz rechts, um das Kriterium zu löschen.
+   Die definierten Zielgruppenkriterien werden im zentralen Abschnitt der Hauptregisterkarte der Zielkonfiguration zusammengefasst. Klicken Sie auf ein Kriterium, um seinen Inhalt anzuzeigen (Konfiguration und Vorschau). Um ein Kriterium zu löschen, klicken Sie auf das Kreuz hinter seinem Titel.
 
    ![](assets/target-remove-criterion.png)
 
@@ -135,7 +135,7 @@ Sie können Nachrichten an Profile senden, die nicht in der Datenbank, sondern i
 1. Wählen Sie den Link **[!UICONTROL An]** aus, um die Empfänger Ihres Versands festzulegen.
 1. Wählen Sie die Option **[!UICONTROL In einer externen Datei definiert]** aus.
 1. Wählen Sie die Datei mit den Empfangenden aus.
-1. Wählen Sie beim Import der Empfangenden den Link **[!UICONTROL Dateiformat definieren...]** aus, um die externe Datei auszuwählen und zu konfigurieren.
+1. Wählen Sie beim Import der Empfänger den Link **[!UICONTROL Dateiformat definieren...]** aus, um die externe Datei auszuwählen und zu konfigurieren.
 
    Weitere Informationen zum Datenimport finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}.
 
@@ -147,13 +147,13 @@ Sie können Nachrichten an Profile senden, die nicht in der Datenbank, sondern i
 
 ### Ausschlussparameter {#define-exclusion-settings}
 
-Bei der Definition der [Zielgruppe eines Versands](#target-population) wird die Registerkarte **[!UICONTROL Ausschlüsse]** verwendet, um die Anzahl an Nachrichten zu begrenzen. Die Standardparameter werden empfohlen, Sie können die Einstellungen nach Bedarf anpassen. Diese Optionen sollten jedoch nur von Profis geändert werden, um Missbrauch und Fehler zu vermeiden.
+Bei der Definition der [Zielgruppe eines Versands](#target-population) wird die Registerkarte **[!UICONTROL Ausschlüsse]** verwendet, um die Anzahl an Nachrichten zu begrenzen. Standardparameter werden empfohlen. Sie können die Einstellungen jedoch an Ihre Anforderungen anpassen. Diese Optionen sollten jedoch nur von einem erfahrenen Benutzer geändert werden, um Missbrauch und Fehler zu vermeiden.
 
 >[!CAUTION]
 >
 >Erfahrene Benutzende können diese Einstellungen für bestimmte Anwendungsfälle ändern. Adobe empfiehlt jedoch, die Standardkonfiguration beizubehalten.
 
-Sie können Adressen, für die die maximal zulässige Anzahl von aufeinanderfolgenden Fehlern erreicht wurde oder deren Qualitätsindex unter der in diesem Fenster angegebenen Schwelle liegt, vom Versand ausschließen.  Das Gleiche gilt für nicht-qualifizierte Adressen, d. h. solche, für die keine Informationen vonseiten des Dienstleisters übermittelt wurden.
+Sie können Adressen, für die die maximal zulässige Anzahl von aufeinanderfolgenden Fehlern erreicht wurde oder deren Qualitätsindex unter der in diesem Fenster angegebenen Schwelle liegt, vom Versand ausschließen. Das Gleiche gilt für nicht-qualifizierte Adressen, d. h. solche, für die keine Informationen vonseiten des Dienstleisters übermittelt wurden.
 
 Um die Standardkonfiguration zu ändern, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]**.
 
@@ -161,15 +161,15 @@ Um die Standardkonfiguration zu ändern, klicken Sie auf den Link **[!UICONTROL 
 
 +++ Siehe die verfügbaren Optionen
 
-* **[!UICONTROL Doppelte Adressen vom Versand ausschließen]**: Diese Option ist standardmäßig aktiviert und entfernt doppelte E-Mail-Adressen während des Versands.  Die Vorgehensweise hängt dabei von der Art der Verwendung der Adobe Campaign-Software und den in der Datenbank enthaltenen Daten ab. Der Wert dieser Option kann für jede Versandvorlage konfiguriert werden.
-* **[!UICONTROL Schließen Sie Empfangende aus, die nicht mehr kontaktiert]** werden möchten, d. h. Empfangende, deren E-Mail-Adressen sich auf einer Blockierungsliste („Opt-out“) befinden. Diese Option muss ausgewählt bleiben, um die Berufsethik des E-Marketings einzuhalten.
-* **[!UICONTROL Adressen in Quarantäne ausschließen]**: Mit dieser Option können Sie alle Adressen von Profilen aus der Zielgruppe ausschließen, die sich in Quarantäne befinden.  Es wird dringend empfohlen, diese Option aktiviert zu lassen. Weitere Informationen zur Quarantäneverwaltung finden Sie in [diesem Abschnitt](../send/quarantines.md).
-* **[!UICONTROL Versand begrenzen]**: Die Begrenzung erfolgt auf eine bestimmte Anzahl an Nachrichten. Mit dieser Option können Sie die maximale Anzahl der zu versendenden Nachrichten eingeben. Wenn der Inhalt der Zielgruppe die angegebene Anzahl von Nachrichten überschreitet, wird eine Zufallsauswahl auf die Zielgruppe angewendet.  Behalten Sie den Wert „0“ bei, um alle Nachrichten zu senden.
+* **[!UICONTROL Doppelte Adressen vom Versand ausschließen]**: Diese Option ist standardmäßig aktiviert und entfernt doppelte E-Mail-Adressen während des Versands. Die Vorgehensweise hängt dabei von der Art der Verwendung der Adobe Campaign-Software und den in der Datenbank enthaltenen Daten ab. Der Wert dieser Option kann für jede Versandvorlage konfiguriert werden.
+* **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d. h. Empfänger, deren E-Mail-Adressen sich auf einer Blockierungsliste (&quot;Opt-out&quot;) befinden. Diese Option muss ausgewählt bleiben, um die Berufsethik des E-Marketings einzuhalten.
+* **[!UICONTROL Adressen in Quarantäne ausschließen]**: Mit dieser Option können Sie alle Adressen von Profilen aus der Zielgruppe ausschließen, die sich in Quarantäne befinden. Es wird dringend empfohlen, diese Option aktiviert zu lassen. Weitere Informationen zur Quarantäneverwaltung finden Sie in [diesem Abschnitt](../send/quarantines.md).
+* **[!UICONTROL Versand begrenzen]** auf eine bestimmte Anzahl von Nachrichten. Mit dieser Option können Sie die maximale Anzahl der zu sendenden Nachrichten eingeben. Wenn der Inhalt der Zielgruppe die angegebene Anzahl von Nachrichten überschreitet, wird eine Zufallsauswahl auf die Zielgruppe angewendet. Behalten Sie den Wert „0“ bei, um alle Nachrichten zu senden.
 * **[!UICONTROL In der Zielgruppe doppelt enthaltene Einträge (identische Kennung) beibehalten]**: Mit dieser Option können mehrere Sendungen an Empfangende gesendet werden, die verschiedene Zielgruppenbestimmungskriterien erfüllen.
 +++
 
 
-### Auswählen der Empfangenden von Testversandnachrichten {#select-the-proof-target}
+### Auswählen der Empfänger von Testversandnachrichten {#select-the-proof-target}
 
 Bei E-Mail-Sendungen können Sie Testsendungen durchführen, um Ihren Nachrichteninhalt zu überprüfen. Mit Testsendungen können Sie den Ausschluss-Link, die Mirrorseite und andere Links testen, die Nachricht validieren, die Anzeige von Bildern überprüfen und mögliche Fehler erkennen. Außerdem können Sie das Design und die Darstellung auf verschiedenen Geräten testen.
 
@@ -182,7 +182,7 @@ Weiterführende Informationen zu Testversand-Empfangenden und zum Testversand fi
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447008?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 
@@ -194,7 +194,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. **Versand analysieren** – hier erfolgt die Vorbereitung der zu sendenden Nachrichten. [Weitere Informationen](../send/delivery-analysis.md).
 
-1. **Testsendungen durchführen** – hier erfolgt die Überprüfung von Inhalt, URLs, Personalisierung usw. [Weitere Informationen](../send/preview-and-proof.md).
+1. **Testsendungen durchführen**: In diesem Schritt können Sie Inhalte, URLs, Personalisierung usw. steuern [Weitere Informationen](../send/preview-and-proof.md).
 
 >[!IMPORTANT]
 >
@@ -203,6 +203,6 @@ Gehen Sie dazu wie folgt vor:
 
 ## Konfigurieren und Durchführen des Versands {#configuring-and-sending-the-delivery}
 
-Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können eine Versandpriorität definieren, das Senden von Schüben einrichten, die Einstellungen für erneute Versuche konfigurieren und die Ausführung Ihres Versands testen. Nachdem diese Konfiguration abgeschlossen ist, können Sie das Senden bestätigen.  Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten Zeitplan gesendet.
+Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können eine Versandpriorität definieren, das Senden von Schüben einrichten, die Einstellungen für erneute Versuche konfigurieren und die Ausführung Ihres Versands testen. Nachdem diese Konfiguration abgeschlossen ist, können Sie das Senden bestätigen. Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten Zeitplan gesendet.
 
 Auf [dieser Seite](../send/configure-and-send.md) erfahren Sie, wie Sie die Versandeinstellungen konfigurieren.

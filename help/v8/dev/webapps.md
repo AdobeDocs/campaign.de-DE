@@ -7,8 +7,8 @@ level: Beginner
 exl-id: a460c1b4-4266-46ff-8cca-748050afd579
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 84%
+source-wordcount: '194'
+ht-degree: 64%
 
 ---
 
@@ -22,6 +22,6 @@ Wie Sie Web-Formulare erstellen und veröffentlichen, erfahren Sie in der Dokume
 
 Adobe Campaign ermöglicht es Ihnen, mit Daten aus der Datenbank dynamische und interaktive **Web-Anwendungen** zu erstellen und zu veröffentlichen, wobei die Inhalte auf die jeweiligen Benutzerrechte abgestimmt sind.
 
-Sie können Seiten erstellen (z. B. ein Bearbeitungsformular in einem Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. beinhalten). Mit dieser Funktion können Sie Webseiten entwerfen und posten, auf denen Benutzer Daten suchen oder eingeben können.
+Sie können Seiten erstellen, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. enthalten. Mit dieser Funktion können Sie Web-Seiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
 
 Wie Sie Web-Anwendungen erstellen und veröffentlichen, erfahren Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=de#designing-content){target="_blank"}

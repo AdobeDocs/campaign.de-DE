@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: ht
-source-wordcount: '1022'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ Sie können so viele Verbindungen wie erforderlich hinzufügen, um z. B. Verbind
 
 >[!NOTE]
 >
->Die Schaltfläche **[!UICONTROL Hinzufügen]** erlaubt die Erstellung von **[!UICONTROL Ordnern]**, in die Sie Ihre verschiedenen Verbindungen per Drag-and-Drop verschieben können.
+>Mit **[!UICONTROL Schaltfläche]** können Sie **[!UICONTROL Ordner]** erstellen, um alle Verbindungen zu organisieren. Ziehen Sie einfach jede Verbindung per Drag-and-Drop in einen Ordner.
 
 ## Bei Adobe Campaign anmelden {#logon-to-ac}
 

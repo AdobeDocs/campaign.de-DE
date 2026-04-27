@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
 source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 77%
+source-wordcount: '237'
+ht-degree: 71%
 
 ---
 
@@ -51,4 +51,4 @@ Die Spalte **[!UICONTROL Berücksichtigt wenn]** ermöglicht die Konfiguration v
 
 Hier ist **$(/tmp/@text)=&#39;Filiale&#39;**.
 
-Der Ausdruck **$(/tmp/@text)!** prüft jede Bedingung, wenn das Eingabefeld nicht leer ist.
+Der Ausdruck **$(/tmp/@text)!=&#39;&#39;** wendet jede Bedingung an, wenn das Eingabefeld nicht leer ist.

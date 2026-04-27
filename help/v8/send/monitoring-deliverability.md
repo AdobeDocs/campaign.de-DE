@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
 source-git-commit: 3dd4f6041ef193a0d7ea74a0b2c06183861c2797
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 56%
+source-wordcount: '582'
+ht-degree: 57%
 
 ---
 
@@ -79,7 +79,7 @@ Prüfen Sie regelmäßig, ob das [Bounce](delivery-failures.md#bounce-mail-quali
 
 ### Leistungsprüfungen beim Versand
 
-Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [&#x200B; Versand-Dashboard](delivery-dashboard.md) abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
+Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [ Versand-Dashboard](delivery-dashboard.md) abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
 
 ### Validierung des zeitlichen Verlaufs einer Welle
 

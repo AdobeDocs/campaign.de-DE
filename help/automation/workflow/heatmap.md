@@ -7,9 +7,9 @@ role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '1155'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1162'
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Jede Zeile stellt eine Stunde des Tages dar und jede Zelle entspricht 5 Minuten 
 
 Die Tabelle zeigt alle Workflows an, die für jeden dieser 5-Minuten-Zeiträume gleichzeitig ausgeführt werden.
 
-Im folgenden Beispiel werden zwischen 8:00 und 8:05 Uhr drei Workflows ausgeführt (unabhängig von ihrer individuellen Dauer):
+Im folgenden Beispiel werden zwischen 8:00 und :05am:00 Uhr drei Workflows ausgeführt (unabhängig von ihrer individuellen Dauer):
 
 ![](assets/wkf_monitoring_ex_8am.png)
 

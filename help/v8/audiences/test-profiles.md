@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
 source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1026'
+ht-degree: 86%
 
 ---
 
@@ -43,7 +43,7 @@ Adobe Campaign bietet auch die Möglichkeit, Testadressenvorlagen zu erstellen, 
 Gehen Sie wie folgt vor, um Testadressen zu erstellen:
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Testadressenliste.
-1. Füllen Sie im Tab **[!UICONTROL Empfänger]** die jeweiligen Felder aus. Die verfügbaren Felder entsprechen den Standardfeldern in den Profilen der Versandempfänger (nms:recipient table): Name, Vorname, E-Mail etc.
+1. Geben Sie die mit der Adresse verknüpften Daten in die entsprechenden Felder auf der Registerkarte **[!UICONTROL Empfänger]** ein. Die verfügbaren Felder entsprechen den Standardfeldern in den Profilen der Versandempfängerinnen bzw. -empfänger (Tabelle „nms:recipient“): Name, Vorname, E-Mail usw.
 
    >[!NOTE]
    >
@@ -51,7 +51,7 @@ Gehen Sie wie folgt vor, um Testadressen zu erstellen:
    >
    >Bei der Erstellung einer Testadresse müssen nicht alle Felder einer jeden Registerkarte ausgefüllt werden. Fehlende Personalisierungselemente werden bei der Versandanalyse nach dem Zufallsprinzip eingetragen.
 
-1. Geben Sie auf der Registerkarte **[!UICONTROL Adressfelder]** die Werte ein, die während der Analysephase in die Versandlogs in der Tabelle **[!UICONTROL nms:broadLog]** eingefügt werden sollen.
+1. Geben Sie auf **[!UICONTROL Registerkarte]** die Werte ein, die während der Analysephase in die Versandlogs in der Tabelle **[!UICONTROL nms:broadLog]** eingefügt werden sollen.
 
 1. Geben Sie im Tab **[!UICONTROL Zusätzliche Daten]** die Personalisierungsdaten an, die in mit Data Management-Workflows erstellten Sendungen verwendet werden und die durch einen spezifischen Wert ersetzt werden sollen.
 
@@ -65,7 +65,7 @@ Sie können Adressenvorlagen erstellen, die für jeden Versand importiert und ge
 
 Für die [Briefpost-Sendungen](../send/direct-mail.md) werden Testadressen während der Extraktion hinzugefügt und im Ausgabedokument unter die restlichen Informationen gemischt.
 
-Bei Briefsendungen muss das Format der Extraktionsdatei folgende Bedingungen erfüllen:
+Bei Briefpost-Sendungen muss das Format der Extraktionsdatei folgende Bedingungen erfüllen:
 
 * Keine Verwendung der Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]**.
 
@@ -77,17 +77,17 @@ Wählen Sie zum Hinzufügen spezifischer Testadressen für einen Versand den Lin
 
 Drei Einfügemodi stehen zur Verfügung:
 
-1. Eingabe einzelner Testadressen.  Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und füllen Sie die Adressfelder aus. Dies ist für jede zu erstellende Adresse zu wiederholen.
+1. Eingabe einzelner Testadressen.  Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und definieren Sie den Inhalt der Adressfelder. Für jede Adresse wiederholen.
 
 1. Importieren Sie [Vorlagen von Testadressen](#creating-seed-address-template) und passen Sie sie an Ihre Bedürfnisse an. Klicken Sie auf den Link **[!UICONTROL Testadressenvorlagen importieren...]** und wählen Sie den die Vorlagen enthaltenden Ordner.
 
    Bei Bedarf können Sie nun die Adressfelder anpassen, indem Sie entweder darauf doppelklicken oder **[!UICONTROL Details...]** auswählen.
 
-1. Erstellen Sie eine Bedingung zur dynamischen Auswahl der einzufügenden Testadressen. Klicken Sie auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** und geben Sie dann die Auswahlkriterien für die Testadressen an. Sie können beispielsweise alle in einem bestimmten Ordner enthaltenen Adressen oder die zu einer bestimmten Abteilung Ihres Unternehmens gehörigen Testadressen auswählen.
+1. Erstellen Sie eine Bedingung zur dynamischen Auswahl der einzufügenden Testadressen. Klicken Sie auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten…]** und geben Sie dann die Auswahlkriterien für die Testadressen an. Sie können beispielsweise alle in einem bestimmten Ordner enthaltenen Testadressen oder die zu einer bestimmten Abteilung Ihres Unternehmens gehörigen Testadressen auswählen.
 
    Ein Beispiel dafür finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html?lang=de){target="_blank"}.
 
-Bei Briefsendungen können Sie die Art der Adresseneinfügung in die Extraktionsdatei anpassen. Standardmäßig werden sie der Sortierreihenfolge der Ausgabedatei entsprechend eingeordnet. Sie haben jedoch die Möglichkeit, sie am Anfang oder am Ende der Datei bzw. zufällig inmitten der Empfänger der Hauptzielgruppe einzufügen.
+Bei Sendungen können Sie auch die Art und Weise anpassen, wie Adressen in die Extraktionsdatei eingefügt werden. Standardmäßig werden sie in der Sortierreihenfolge der Ausgabedatei eingefügt. Sie können sie jedoch auch am Ende oder am Anfang der Datei oder nach dem Zufallsprinzip zwischen den Empfängerinnen und Empfängern der Hauptzielgruppe einfügen.
 
 ## Hinzufügen von Testadressen in einer Kampagne {#seed-addresses-in-a-campaign}
 
@@ -97,7 +97,7 @@ Klicken Sie auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]** und a
 
 ## Testadressen und benutzerdefinierte Tabelle {#using-an-external-recipient-table}
 
-Wenn es sich bei der Versandtabelle um eine externe Tabelle handelt, müssen Sie zusätzliche Konfigurationen vornehmen. Das Schema **[!UICONTROL nms:seedmember]** muss erweitert werden. Es wird eine Registerkarte zu den Testadressen hinzugefügt, um die entsprechenden Felder zu definieren
+Wenn es sich bei der Versandtabelle um eine externe Tabelle handelt, müssen Sie zusätzliche Konfigurationen vornehmen. Das **[!UICONTROL nms:seedmember]**-Schema muss erweitert werden. Es wird eine Registerkarte zu den Testadressen hinzugefügt, um die entsprechenden Felder zu definieren
 
 Geben Sie in diesem Fall die Testadressen direkt in den jeweiligen Feldern der entsprechenden Registerkarte auf Ebene des Versands ein oder importieren Sie die Adressenvorlagen.
 

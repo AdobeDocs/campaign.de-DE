@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
 source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 91%
+source-wordcount: '933'
+ht-degree: 72%
 
 ---
 
@@ -19,13 +19,13 @@ Ein Briefpost-Versand erzeugt eine Extraktionsdatei, die die Daten der Zielpopul
 
 Die Schritte zum Generieren der Datei sind:
 
-1. [Versand erstellen](#creating-a-direct-mail-delivery)
-1. [Definieren der Zielgruppe](#defining-the-direct-mail-audience)
+1. [Erstellen des Versands](#creating-a-direct-mail-delivery)
+1. [Zielgruppe definieren](#defining-the-direct-mail-audience)
 1. [Dateiinhalt festlegen](#defining-the-direct-mail-content)
 1. [Versand validieren](#validating)
 1. [Versand starten](#start-delivery)
 
-## Versand erstellen{#creating-a-direct-mail-delivery}
+## Erstellen des Versands{#creating-a-direct-mail-delivery}
 
 Erstellen Sie anhand der Vorlage einen Briefpost-Versand. Sie können die integrierte Vorlage **[!UICONTROL Briefpost-Versand (Papier)]** duplizieren und konfigurieren.
 
@@ -35,13 +35,13 @@ Gehen Sie wie folgt vor, um einen neuen Briefpost-Versand zu erstellen:
 >
 >Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](../start/create-message.md).
 
-1. Erstellen Sie einen neuen Versand beispielsweise im Versand-Dashboard.
+1. Erstellen Sie einen neuen Versand, beispielsweise im Versand-Dashboard.
 1. Wählen Sie die Versandvorlage **Briefpost-Versand (Papier)** aus.
 
    ![](assets/direct_mail.png)
 
-1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../start/create-message.md#create-the-delivery).
-1. Klicken Sie auf **Fortfahren**, um die Eingaben zu bestätigen und in das Fenster der Nachrichtenkonfiguration zu gelangen.
+1. Geben Sie einen Titel, einen Code und eine Beschreibung für Ihren Versand ein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../start/create-message.md#create-the-delivery).
+1. Klicken Sie auf **Fortfahren**, um die Eingaben zu bestätigen und in das Fenster zur Nachrichtenkonfiguration zu gelangen.
 
 ## Zielgruppe definieren{#defining-the-direct-mail-audience}
 
@@ -57,7 +57,7 @@ Weiterführende Informationen finden Sie in [diesem Abschnitt](../start/create-m
 
 Definieren Sie mithilfe des Extraktionsassistenten die Informationen (Spalten), die in die Ausgabedatei exportiert werden sollen.
 
-Im Feld **[!UICONTROL Datei]** ist der Name der die extrahierten Daten enthaltenden Datei anzugeben. Die Schaltfläche rechts ermöglicht die Verwendung von Personalisierungsfeldern, um den Namen zu erstellen.
+Der Name der Datei, die die extrahierten Daten enthält, wird im Feld **[!UICONTROL Datei]** definiert. Über die Schaltfläche rechts neben dem Feld können Sie Personalisierungsfelder verwenden, um den Dateinamen zu erstellen.
 
 Standardmäßig wird die Extraktionsdatei erstellt und auf dem Server gespeichert. Sie können es auf Ihrem Computer speichern. Um dies zu tun, aktivieren Sie die Option **[!UICONTROL Nach dem Export erzeugte Datei herunterladen]**. In diesem Fall sind der Pfad zum lokalen Speicherverzeichnis und der Dateiname anzugeben.
 
@@ -71,13 +71,13 @@ Bei einem Briefpost-Versand wird der Extraktionsinhalt über den Link **[!UICONT
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weitere Informationen hierzu finden Sie in der Adobe Campaign Classic-[&#x200B; (Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html?lang=de){target="_blank"}.
+Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weitere Informationen hierzu finden Sie in der Adobe Campaign Classic-[ (Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"}.
 
 >[!NOTE]
 >
->Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [&#x200B; sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=de){target="_blank"}.
+>Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [ sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
 
-## Versand überprüfen{#validating}
+## Versand validieren{#validating}
 
 Überprüfen Sie das Ergebnis der Analyse und den Inhalt der Ausgabedatei.
 
@@ -89,11 +89,11 @@ Die Ausgabedatei eines Briefpost-Versands wird während der Versandanalyse gener
 
 >[!NOTE]
 >
->Die Analysephase wird in diesem [&#x200B; beschrieben](delivery-analysis.md).
+>Die Analysephase wird in diesem [ beschrieben](delivery-analysis.md).
 
-Bei der Erzeugung der Datei werden keine Empfängerinformationen (z. B. Versandlogs) aktualisiert. Der Vorgang kann daher problemlos unterbrochen werden.
+Während der Analysephase wird die Datei zwar generiert, die Empfängerinformationen (d. h. die Versandlogs) werden jedoch nicht aktualisiert. Sie können diesen Vorgang daher ohne Risiko abbrechen.
 
-Prüfen Sie jetzt das Ergebnis der Analyse und klicken Sie dann auf **[!UICONTROL Absendung bestätigen]**, um die Nachrichten an die gewählte Zielgruppe zu senden. Durch Bestätigung des Pop-ups wird der Versand gestartet.
+Überprüfen Sie das Ergebnis der Analyse und den Inhalt der Ausgabedatei, bevor Sie auf **[!UICONTROL Versand bestätigen]** klicken. Über eine Bestätigungsnachricht kann der Versand gestartet werden.
 
 Mit der Absendebestätigung wird die Extraktion der Daten in die angegebene Datei gestartet.
 
@@ -106,7 +106,7 @@ Sie können den Abrufmodus der Versandlogs auf der Registerkarte **[!UICONTROL A
 Dabei stehen zwei Modi zur Verfügung:
 
 * **[!UICONTROL Nachrichten werden nach Validierung als gesendet betrachtet]** (Standardmodus): In diesem Funktionsmodus werden alle Versandlogs aktualisiert, sobald der Benutzer den Versand bestätigt (ihr Status wechselt von &#39;Versand ausstehend&#39; zu &#39;Gesendet&#39;). Der Versand wechselt dann automatisch in den Status **[!UICONTROL Abgeschlossen]**.
-* **[!UICONTROL Ergebnisdatei listet gesendete und fehlgeschlagene Nachrichten]**: Dieser Modus ermöglicht eine Aktualisierung der Versandlogs mittels einer externen Datei vom Dienstleister. In diesem Fall ist die Erstellung eines Workflows zur Verarbeitung dieser Informationen notwendig, um den Status der Versandlogs zu aktualisieren.
+* **[!UICONTROL Eine Ergebnisdatei bestimmt die gesendeten und die fehlgeschlagenen Nachrichten]** : In diesem Modus können Sie die Broadlogs über eine externe Datei aktualisieren, die vom Dienstleister gesendet wird. In diesem Fall muss ein Workflow zur Verarbeitung dieser Informationen verwendet werden, um den Broadlog-Status zu aktualisieren.
 
   >[!NOTE]
   >

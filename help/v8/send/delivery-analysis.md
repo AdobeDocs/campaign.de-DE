@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 100%
+source-wordcount: '754'
+ht-degree: 96%
 
 ---
 
@@ -88,6 +88,6 @@ Folgende Optionen stehen zur Verfügung:
    * **[!UICONTROL Halbautomatisch]**: Die Nachrichten werden automatisch abgeschickt, wenn die Analysephase ohne Warnhinweise abschließt.
    * **[!UICONTROL Automatisch]**: Die Nachrichten werden unabhängig vom Ergebnis der Analysephase automatisch abgeschickt.
 
-* **[!UICONTROL Vorgang in einem separaten Prozess starten]**: Mit dieser Option können Sie die Versandanalyse in einem separaten Prozess durchführen. Standardmäßig verwendet die Analysefunktion den Prozess des Adobe Campaign-Anwendungs-Servers (nlserver web). Durch Ankreuzen dieser Option stellen Sie sicher, dass die Analyse selbst im Falle eines Problems mit dem Anwendungs-Server vollständig durchgeführt wird.
+* **[!UICONTROL Auftrag in einem separaten Prozess starten]**: Mit dieser Option können Sie die Versandanalyse in einem separaten Prozess durchführen. Standardmäßig verwendet die Analysefunktion den Prozess des Adobe Campaign-Anwendungs-Servers (nlserver web). Durch Ankreuzen dieser Option stellen Sie sicher, dass die Analyse selbst im Falle eines Problems mit dem Anwendungs-Server vollständig durchgeführt wird.
 * **[!UICONTROL Zielbestimmungs- und Personalisierungsabfragen im Protokoll speichern]**: Mit dieser Option werden in der Analysephase die SQL-Abfrage-Logs in das Versandprotokoll geschrieben.
-* **[!UICONTROL Personalisierungsscripts beim Versand ignorieren]**: Mit dieser Option werden im HTML-Inhalt enthaltene JavaScript-Anweisungen nicht interpretiert, sondern 1:1 im gesendeten Inhalten abgebildet. Diese Anweisungen werden mit dem Tag `<%=` eingeführt.
+* **[!UICONTROL Personalisierungsscripts beim Versand ignorieren]**: Mit dieser Option werden im HTML-Inhalt enthaltene JavaScript-Anweisungen nicht interpretiert. Sie werden so angezeigt, wie es in den bereitgestellten Inhalten ist. Diese Anweisungen werden mit dem Tag `<%=` eingeführt.

@@ -5,9 +5,9 @@ feature: Workflows, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '736'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '749'
+ht-degree: 77%
 
 ---
 
@@ -47,13 +47,13 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
   Informationen zum Verwenden des Analyse-Assistenten (deskriptiv) finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
 
-Die Zielgruppendaten werden bei Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie können den Workflow so konfigurieren, dass alle Arbeitstabellen zugänglich bleiben: Aktivieren Sie in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]**.
+Die Zielgruppendaten werden bei Ausführung des Workflows gelöscht. Nur die letzte Arbeitstabelle ist zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Aktivieren Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]**.
 
 ![](assets/wf-purge-data-option.png)
 
 >[!CAUTION]
 >
->Diese Option darf **nie** in einem **Produktions**-Workflow aktiviert werden. Diese Option wird zur Analyse der Ergebnisse verwendet und ist nur für Testzwecke konzipiert. Sie darf daher nur in Entwicklungs- oder Staging-Umgebungen verwendet werden.
+>Diese Option darf **nie** in einem **Produktions**-Workflow aktiviert werden. Diese Option wird zur Analyse der Ergebnisse verwendet und ist nur für Testzwecke konzipiert und darf daher nur in Entwicklungs- oder Staging-Umgebungen verwendet werden.
 
 
 ### Verwenden der Zieldaten {#target-data}
@@ -66,7 +66,7 @@ Auf diese Weise können Sie beispielsweise Daten verwenden, die über eine Liste
 %= targetData.FIELD %
 ```
 
-Personalisierungselemente vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) stehen in Zielgruppen-Workflows nicht zur Verfügung. Dies bedeutet, dass die Versandzielgruppe im Workflow bestimmt und in der eingehenden Transition des Versands spezifiziert werden muss.
+Personalisierungselemente vom **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) sind für Zielgruppen-Workflows nicht verfügbar. Die Versandzielgruppe muss im Workflow erstellt und in der eingehenden Transition des Versands spezifiziert werden.
 
 Im folgenden Beispiel sollen Kundeninformationen in einer Liste gesammelt und dann in einer personalisierten E-Mail verwendet werden. Gehen Sie wie folgt vor:
 
@@ -108,18 +108,18 @@ Im folgenden Beispiel sollen Kundeninformationen in einer Liste gesammelt und da
 
    ![](assets/wf-targetdata-sample-5.png)
 
-   Im vorliegenden Beispiel wird der bevorzugte Musikstil des Kunden und der bevorzugte Datenträger (CD oder DVD) - gemäß den Informationen der geladenen Datei - eingefügt.
+   Im vorliegenden Beispiel wird der bevorzugte Musikstil des Kunden und der bevorzugte Datenträger (CD oder DVD) - gemäß den Informationen der durch den Workflow geladenen Datei - eingefügt.
 
    Des Weiteren enthält der Versand ein Angebot für Kunden mit Kundenkarte, d. h. für Kunden, bei denen der Wert &#39;Kundenkarte&#39; gleich 1 ist.
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   Daten vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) werden wie andere Personalisierungsfelder auch in Sendungen eingefügt. D. h. sie können u. a. in Nachrichtenbetreffs, Linktiteln oder Links selbst verwendet werden.
+   **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) werden Daten mit denselben Eigenschaften wie bei allen Personalisierungsfeldern in Sendungen eingefügt. Sie können auch im Betreff, in Link-Kennzeichnungen oder in den Links selbst verwendet werden.
 
 
 ## Aktualisieren der Datenbank {#update-the-database}
 
-Alle in Workflows erfassten Daten können zur Aktualisierung der Datenbank oder in Sendungen verwendet werden, um beispielsweise die Möglichkeiten der Inhaltspersonalisierung zu ergänzen (Einfügung der Anzahl von Versicherungspolicen, des durchschnittlichen Warenkorbs im vergangenen Jahr etc.) oder die Zielpopulationsbestimmung zu verfeinern (eine Nachricht an die Mitversicherten adressieren, die 1.000 besten Kunden ansprechen etc.). Diese Daten können auch exportiert oder in einer Liste archiviert werden.
+Alle erfassten Daten können zur Aktualisierung der Datenbank oder in Sendungen verwendet werden. Sie können beispielsweise die Möglichkeiten der Personalisierung von Nachrichteninhalten anreichern (einschließlich der Anzahl der Verträge in der Nachricht, Angabe des durchschnittlichen Warenkorbs im letzten Jahr usw.) oder die Zielgruppenbestimmung detaillierter darstellen (eine Nachricht an die Mitversicherten senden, die 1.000 besten Abonnenten von Online-Diensten ansprechen usw.). Diese Daten können auch exportiert oder in einer Liste archiviert werden.
 
 ### Aktualisieren von Listen  {#list-updates}
 
@@ -127,7 +127,7 @@ Zur Aktualisierung der Adobe Campaign-Datenbank und von Listen stehen zwei dediz
 
 * Über die Aktivität **[!UICONTROL Listen-Update]** können Arbeitstabellen in einer Datenliste gespeichert werden.
 
-  Hierbei kann eine existierende Liste verwendet oder eine neue erstellt werden. In diesem Fall werden ihr Name und gegebenenfalls ihr Speicherverzeichnis berechnet.
+  Sie können eine vorhandene Liste auswählen oder erstellen. In diesem Fall werden der Name und ggf. der Datensatzordner berechnet.
 
   ![](assets/s_user_create_list.png)
 
@@ -137,6 +137,6 @@ Zur Aktualisierung der Adobe Campaign-Datenbank und von Listen stehen zwei dediz
 
   Weitere Informationen hierzu finden Sie im Abschnitt [Daten-Update](update-data.md).
 
-### Verwalten von Abonnements {#subscription-management}
+### Abonnements verwalten {#subscription-management}
 
-Die An- und Abmeldung von Empfängern für einen Informationsdienst im Rahmen eines Workflows wird im Abschnitt [Abonnements](subscription-services.md) beschrieben.
+Die An- und Abmeldung von Empfängern für einen Informationsdienst im Rahmen eines Workflows wird im Abschnitt [An-/Abmeldedienst](subscription-services.md) beschrieben.

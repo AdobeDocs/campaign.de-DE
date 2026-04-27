@@ -7,21 +7,21 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 13a7432e-6216-4a5c-84fc-bc374b5af5ee
 source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
-workflow-type: ht
-source-wordcount: '231'
+workflow-type: tm+mt
+source-wordcount: '236'
 ht-degree: 100%
 
 ---
 
 # Überwachen von Marketing-Kampagnen {#monitor-marketing-campaigns}
 
-## Nachverfolgen einer Kampagne {#tracking-a-campaign}
+## Verfolgen einer Kampagne {#tracking-a-campaign}
 
-Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Vorgänge und deren Status an.
+Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Aufträge und deren Status an.
 
 Über diese Unterregisterkarte kann auf folgende Informationen zugegriffen werden:
 
-* Die Unterregisterkarte **[!UICONTROL Audit]** zeigt das Aktivitätenprotokoll an. Es enthält die für die Kampagne ausgeführten Vorgänge: Erstellung oder Start eines Workflows, Validierung, Extraktion, Lagerverwaltung usw.
+* Die Unterregisterkarte **[!UICONTROL Audit]** zeigt das Aktivitätenprotokoll an. Es enthält die für die Kampagne ausgeführten Aufträge: Erstellung oder Start eines Workflows, Validierung, Extraktion, Lagerverwaltung usw.
 
   ![](assets/campaign-audit-tab.png)
 

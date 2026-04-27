@@ -6,9 +6,9 @@ feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 362b347b-f914-4ebf-84d7-9989aef28a82
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '650'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 95%
 
 ---
 
@@ -36,7 +36,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 ## &#x200B;1. Schritt: Erstellung des Monitoring-Workflows {#step-1--creating-the-monitoring-workflow}
 
-Der zu überwachende Workflow-Ordner ist **CustomWorkflows** im Knoten **Administration > Betreibung > Technische Workflows**. Dieser Ordner enthält diverse geschäftsrelevante Workflows.
+Der Workflow-Ordner, den wir überwachen werden, ist der Ordner **CustomWorkflows**, der im Knoten **Administration > Produktion > Technische Workflows** gespeichert ist. Dieser Ordner enthält eine Reihe von Geschäfts-Workflows.
 
 Der **Monitoring-Workflow** wird im Stammverzeichnis des Ordners der technischen Workflows gespeichert. Das verwendete Label ist **Monitoring**.
 

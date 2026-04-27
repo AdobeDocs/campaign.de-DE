@@ -6,9 +6,9 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
-workflow-type: ht
-source-wordcount: '2573'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2593'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Wenn Sie ein Schema erstellen oder erweitern, müssen Sie die zugehörigen Einga
 
 Mit einem Eingabeformular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten. Das Formular wird anhand seines Namens und seines Namespace identifiziert.
 
-Der Identifikationsschlüssel eines Formulars ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt, z. B. „cus:contact“.
+Der Identifizierungsschlüssel eines Formulars ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt (z. B. „cus:contact„).
 
 ## Bearbeiten von Eingabeformularen
 
@@ -36,7 +36,7 @@ Die Vorschau generiert eine Anzeige des Formulars:
 
 ## Formularstruktur
 
-Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas anwendet: **xtk:form**.
+Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas (**):form**.
 
 Das XML-Dokument eines Formulars muss das `<form>`-Stammelement mit den Attributen **name** und **namespace** zur Befüllung des Formularnamens und des Namespace enthalten.
 
@@ -46,7 +46,7 @@ Das XML-Dokument eines Formulars muss das `<form>`-Stammelement mit den Attribut
 </form>
 ```
 
-Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namespace aufweist. Um ein Formular mit einem anderen Namen zu verknüpfen, setzen Sie das Attribut **entity-schema** des Elements `<form>` auf den Namen des Schemaschlüssels. Um die Struktur eines Formulars zu veranschaulichen, beschreiben wir eine Schnittstelle mit dem Beispielschema &quot;cus:recipient&quot;:
+Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namespace aufweist. Um ein Formular mit einem anderen Namen zu verknüpfen, setzen Sie das Attribut **entity-schema** des Elements `<form>` auf den Namen des Schemaschlüssels. Um die Struktur eines Formulars zu veranschaulichen, beschreiben wir eine Schnittstelle mit dem Beispielschema „cus:recipient:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -208,7 +208,7 @@ Fügen Sie das Attribut **style=&quot;down&quot;** hinzu, um die vertikale Ausri
 
 `<container style="down" type="notebook">  ... </container>`
 
-### Symbole (iconbox) hinzufügen  {#icon-list}
+### Symbole (iconbox) hinzufügen {#icon-list}
 
 Verwenden Sie diesen Container, um eine vertikale Symbolleiste anzuzeigen, mit der Sie die anzuzeigenden Seiten auswählen können.
 
@@ -229,7 +229,7 @@ Verwenden Sie diesen Container, um eine vertikale Symbolleiste anzuzeigen, mit d
 
 Der Haupt-Container wird durch das Attribut **type=&quot;iconbox&quot;** definiert. Die mit den Symbolen verknüpften Seiten werden in den untergeordneten Containern deklariert. Die Beschriftung der Symbole wird aus dem Attribut **label** gefüllt.
 
-Das Seitensymbol wird aus dem Attribut `img="<image>"` gefüllt, wobei `<image>` der Bildname ist, der dem zugehörigen Bildschlüssel entspricht, der aus dem Namespace und dem Namen besteht (z. B. &quot;xtk:properties.png&quot;).
+Das Seitensymbol wird aus dem Attribut `img="<image>"` gefüllt, wobei `<image>` der Bildname ist, der dem zugehörigen Bildschlüssel entspricht, der aus dem Namespace und dem Namen besteht (z. B. „xtk:properties.png„).
 
 Die Bilder sind im Knoten **[!UICONTROL Administration > Konfiguration > Bilder]** verfügbar.
 
@@ -253,7 +253,7 @@ Ein Container für die Sichtbarkeit wird durch das Attribut **type=&quot;visible
 Beispiele für die Bedingungssyntax:
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: prüft Gleichheit bei Daten vom Typ Zeichenfolge. Der Vergleichswert muss in Anführungszeichen gesetzt werden.
-* **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;**: Bedingung für einen numerischen Wert.
+* **visibleIf=&quot;@gender >= 1 und @gender != 2“**: Bedingung für einen numerischen Wert.
 * **visibleIf=&quot;@boolean1=true oder @boolean2=false&quot;**: Testen von booleschen Feldern.
 
 ### Bedingte Anzeige (enabledGroup) {#enabling-container}
@@ -293,7 +293,7 @@ Eine Dropdown-Liste wird verwendet, um ein Zielelement aus der Liste der bereits
 
 Mit dem Symbol **[!UICONTROL Relation ändern]** (Ordner) wird ein Auswahlformular mit der Liste der Zielelemente und einem Filterbereich gestartet.
 
-Das Symbol **[!UICONTROL Relation bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig auf den Schlüssel des Zielschemas zurückgeführt. Mit dem Attribut **form** können Sie den Namen des Bearbeitungsformulars erzwingen (z. B. &quot;cus:company2&quot;).
+Das Symbol **[!UICONTROL Relation bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig auf den Schlüssel des Zielschemas zurückgeführt. Mit dem **form**-Attribut können Sie den Namen des Bearbeitungsformulars erzwingen (z. B. „cus:company2„).
 
 Es besteht außerdem die Möglichkeit, die Auswahl von Zielelementen durch Hinzufügen des Elements **`<sysfilter>`** aus der Definition der Relation in das Formular einzuschränken:
 
@@ -392,7 +392,7 @@ Beispiel einer Beziehungstabelle in einem Schema:
 </srcSchema>
 ```
 
-In unserem Beispiel beginnen wir mit dem Eingabeformular des Schemas „cus:recipient“. Die Liste muss die Verbindungen mit Abonnements von Services anzeigen und Sie müssen das Hinzufügen eines Abonnements durch Auswahl eines vorhandenen Services ermöglichen.
+In unserem Beispiel beginnen wir mit dem Eingabeformular des Schemas „cus:recipient. Die Liste muss die Verbindungen mit Abonnements von Services anzeigen und Sie müssen das Hinzufügen eines Abonnements durch Auswahl eines vorhandenen Services ermöglichen.
 
 ![](assets/do-not-localize/form_exemple12.png)
 
@@ -613,7 +613,7 @@ Das **`<check expr="<condition>" />`**-Tag in Kombination mit dem **`<error>`**-
 </leave>
 ```
 
-## Assistent  {#wizards}
+## Assistent {#wizards}
 
 Ein Assistent führt Sie in Form von Seiten durch eine Reihe von Schritten zur Dateneingabe. Die eingegebenen Daten werden bei der Validierung des Formulars gespeichert.
 

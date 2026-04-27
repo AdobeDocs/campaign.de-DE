@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '989'
+ht-degree: 88%
 
 ---
 
@@ -35,11 +35,11 @@ Gehen Sie wie folgt vor, um einen auf einem vorhandenen Cube basierenden Bericht
 
 1. Klicken Sie zur Bestätigung auf die Schaltfläche **[!UICONTROL Erstellen]**: Der Bildschirm zur Konfiguration und Ansicht des Berichts wird geöffnet.
 
-   Die ersten beiden verfügbaren Dimensionen werden standardmäßig in Spalten- und Zeilenform angezeigt, die Tabelle enthält jedoch keine Werte. Klicken Sie auf das zentrale Symbol, um sie zu erzeugen:
+   Standardmäßig werden die ersten beiden verfügbaren Dimensionen in Zeilen und Spalten angeboten, aber es wird kein Wert in der Tabelle angezeigt. Um die Tabelle zu generieren, klicken Sie auf das Hauptsymbol:
 
    ![](assets/cube-report-config.png)
 
-1. Sie können die Dimensionen von einer Achse in die andere verschieben, sie löschen, neue Kennzahlen hinzufügen etc. Verwenden Sie hierzu die entsprechenden Symbole.
+1. Sie können die Achsen der Dimension wechseln, löschen, neue Kennzahlen hinzufügen usw. Verwenden Sie dazu die entsprechenden Symbole.
 
    ![](assets/cube-switch-axis.png)
 
@@ -115,11 +115,11 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
    * Kombination von Kennzahlen: ermöglicht die Erstellung der neuen Kennzahl auf Basis von existierenden Kennzahlen.
 
-     Für diese Kennzahlen stehen folgende Funktionen zur Verfügung: Summe, Differenz, Produkt und Rate.
+     Für diese Kennzahlen stehen folgende Operatoren zur Verfügung: Summe, Differenz, Produkt und Rate.
 
-   * Anteil: ermöglicht die Berechnung der Anzahl an für eine gegebene Dimension gemessenen Datensätzen. Der Anteil kann in Bezug auf eine Dimension oder eine Unter-Dimension berechnet werden.
+   * Proportion : Mit dieser Kennzahl können Sie die Anzahl der für eine bestimmte Dimension gemessenen Datensätze berechnen. Sie können die Proportionalität anhand einer Dimension oder Unterdimension berechnen.
    * Abweichung: ermöglicht die Berechnung der Abweichungen der Werte einer Ebene.
-   * Abweichung vom Durchschnitt: ermöglicht die Berechnung der Abweichungen in jeder Gruppe von entsprechenden Zellen in Bezug auf den Wertedurschnitt. Sie können zum Beispiel die jeweilige Einkaufsmenge der existierenden Segmente vergleichen.
+   * Standardabweichung: Mit dieser Kennzahl können Sie Abweichungen innerhalb jeder Zellengruppe im Vergleich zum Durchschnitt der Werte berechnen. Sie können beispielsweise das Kaufvolumen für alle vorhandenen Segmente vergleichen.
 
    Sobald die Kennzahl erstellt ist, wird sie dem Bericht hinzugefügt.
 
@@ -131,7 +131,7 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
 ## Erstellen einer Zielpopulation {#build-a-target-population}
 
-Die basierend auf Cubes erstellten Berichte ermöglichen den Abruf von Daten aus der Datenbank und deren Speicherung in einer Liste.
+Die basierend auf Cubes erstellten Berichte ermöglichen den Abruf von Daten aus der Tabelle und deren Speicherung in einer Liste.
 
 Gehen Sie wie folgt vor, um eine Population in einer Liste zu gruppieren:
 

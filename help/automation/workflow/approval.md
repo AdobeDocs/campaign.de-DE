@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '570'
+ht-degree: 48%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 100%
 
 
 
-Eine **Validierung** erfordert das Eingreifen eines Benutzers. Validierungsaufgaben werden Benutzern zugewiesen, die per E-Mail, Web-Zugriff oder in der Client-Konsole darauf antworten.
+Eine **Genehmigungsaufgabe** erfordert die Beteiligung eines Benutzers. Dem Benutzer wird eine Aufgabe zugewiesen und er kann per E-Mail, über die in der E-Mail-Nachricht verlinkte Webseite oder über die Konsole darauf antworten.
 
 ## Aufgabenzuweisung {#task-assignment}
 
-Standardmäßig wird eine Validierung einer Benutzergruppe zugewiesen. Gruppen repräsentieren bestimmte Rollen, beispielsweise &#39;Verantwortliche Gruppe Newsletter-Inhalt&#39; oder &#39;Verantwortliche Gruppe Newsletter-Zielgruppe&#39;. Jeder Benutzer der Gruppe kann die Anfrage beantworten, aber nur die erste Antwort wird berücksichtigt (außer bei einer Mehrfach-Validierung).
+Standardmäßig wird die Genehmigung einer Benutzergruppe zugewiesen. Diese Gruppe stellt eine Rolle dar, z. B. „Newsletter-Inhaltsgruppe“ oder „Newsletter-Zielgruppe“. Jeder Benutzer in der Gruppe kann antworten, aber es wird nur die erste Antwort berücksichtigt (außer im Fall von Mehrfachgenehmigungen).
 
 Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung von Filtern mehreren Benutzern zugewiesen werden.
 
@@ -39,7 +39,7 @@ Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung v
 
 Im Fall einer einfachen Validierung, wird die der Wahl des Benutzers entsprechende Transition aktiviert und die Aufgabe abgeschlossen. Andere Benutzer können nun die Aufgabe nicht mehr validieren.
 
-Im Fall einer Mehrfach-Validierung wird für jede vorgenommene Validierung die entsprechende Transaktion aktiviert. Die Aufgabe wird abgeschlossen, sobald alle Benutzer der Gruppe geantwortet haben, oder wenn die Aufgabe abgelaufen ist.
+Bei Mehrfach-Validierungen werden die der Auswahl des jeweiligen Benutzers entsprechenden Übergänge aktiviert. Die Aufgabe ist beendet, wenn alle Benutzer der Gruppe geantwortet haben oder wenn die Aufgabe abgelaufen ist.
 
 Diese Aktivität betrifft nicht den gesamten Workflow, andere Aufgaben können parallel ausgeführt werden.
 
@@ -53,17 +53,17 @@ Auf **Validierungsaufgaben** kann im Knoten **[!UICONTROL Administration > Betre
 
 ## Eigenschaften {#properties}
 
-In den Benachrichtigungen, die an die für die Validierung ausgewählten Benutzer gesandt werden, können im Titel und im Nachrichten-Textkörper Personalisierungsvariablen verwendet werden.
+Anpassungsvariablen können in der Nachricht verwendet werden, die an Validierungsverantwortliche gesendet wird. Sie können in den Titel oder Text der Nachricht eingefügt werden.
 
 ![](assets/edit_validation.png)
 
-Das **[!UICONTROL Titel]**-Feld entspricht dem Betreff der Benachrichtigungs-E-Mail. Sowohl beim Titel als auch beim Body handelt es sich um JavaScript-Templates, die somit vom Workflow-Kontext ausgehend berechnete Werte enthalten können.
+Dieses **[!UICONTROL Titel]**-Feld enthält den Titel der Nachricht: Dies ist der Betreff der gesendeten E-Mail-Nachricht. Titel und Nachrichtentext sind JavaScript-Vorlagen und können daher Werte enthalten, die entsprechend dem Kontext des Workflows berechnet werden.
 
-Im unteren Bereich des Editors werden die möglichen Antworten definiert. Jeder Antwort entspricht eine aus der Aktivität ausgehende Transition. Der Name ist die interne Kennung und der Titel, der in der Auswahlliste angezeigte Text.
+Im unteren Bereich des Editors können Sie die Liste der möglichen Antworten definieren. Zu jeder Antwort gehört eine Transition. Der Name ist die interne Kennung und die Beschriftung ist der Text, der in der Auswahlliste angezeigt wird.
 
-Klicken Sie auf **[!UICONTROL Erweiterte Parameter...]**, um die für die Benutzerbenachrichtigungen zu verwendende Versandvorlage auszuwählen. Die Standardvorlage (mit internem Namen &#39;notifyAssignee&#39;) übernimmt den Titel und den Nachrichteninhalt sowie einen Link auf die Webseite mit dem Antwortformular.
+Klicken Sie auf **[!UICONTROL Link Erweiterte Parameter…]**, um die Versandvorlage auszuwählen, die zur Benachrichtigung der Benutzer verwendet werden soll. Die Standardvorlage (interner Name &#39;notifyAssignee&#39;) nimmt den Titel und die Nachricht auf und fügt einen Link zu der für die Antwort verwendeten Web-Seite hinzu.
 
-Die Vorlage kann angepasst werden. Es wird jedoch empfohlen, sie zu duplizieren und unter einem neuen Namen zu speichern. Der Zielgruppenmechanismus (externe Datei, Zielgruppen-Mapping) darf hingegen nicht geändert werden. Er ist für die korrekte Funktionsweise der Benachrichtigungen erforderlich.
+Diese Vorlage kann geändert werden, um das Nachrichten-Layout zu personalisieren, es ist jedoch besser, eine Kopie zu erstellen. Der Targeting-Mechanismus (externe Datei, Zielgruppen-Mapping) darf nicht geändert werden, da er für die ordnungsgemäße Funktionsweise von Benachrichtigungen erforderlich ist.
 
 Ein Validierungsbeispiel finden Sie im Abschnitt [Validierungen definieren](define-approvals.md).
 

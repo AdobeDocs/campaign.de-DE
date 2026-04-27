@@ -7,12 +7,12 @@ level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 98%
+source-wordcount: '900'
+ht-degree: 87%
 
 ---
 
-# Erstellen von Platzierungen{#creating-offer-spaces}
+# Platzierungen erstellen{#creating-offer-spaces}
 
 Der Content des Angebotskatalogs wird in Platzierungen konfiguriert. Standardmäßig kann der Content **[!UICONTROL die folgenden Felder enthalten: Titel]**, **[!UICONTROL Ziel-URL]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und **[!UICONTROL Textinhalt]**. Die Feldsequenz wird in der Angebotsplatzierung konfiguriert.
 
@@ -52,13 +52,13 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
 1. Klicken Sie auf **[!UICONTROL Funktionen bearbeiten...]**, um eine Rendering-Funktion zu erstellen.
 
-   Diese Funktionen dienen der Erzeugung von Angebotsdarstellungen auf einer Platzierung. Dabei sind folgende Formate möglich: HTML oder Text.
+   Diese Funktionen werden verwendet, um Angebotsdarstellungen in einer Platzierung zu generieren. Es gibt mehrere mögliche Formate: HTML oder Text.
 
    **Hinweis** – Das XML-Format ist auf eingehende Interaktionen beschränkt, die in dieser Produktversion nicht verfügbar sind. [Weitere Informationen](../start/v7-to-v8.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
-1. Gehen Sie auf die Registerkarte **[!UICONTROL HTML-Rendering]** und aktivieren Sie die Option **[!UICONTROL HTML-Rendering-Funktion überschreiben]**.
+1. Gehen Sie in den **[!UICONTROL HTML-Rendering]**-Tab und kreuzen Sie die Option **[!UICONTROL HTML-Rendering-Funktion überschreiben]** an.
 1. Geben Sie nun Ihre Rendering-Funktion ein.
 
    ![](assets/offer_space_create_007.png)
@@ -96,7 +96,7 @@ Konfigurieren Sie in der Umgebung **[!UICONTROL Design]** für jede Platzierung 
 
 Gehen Sie dazu wie folgt vor:
 
-1. Gehen Sie auf die Registerkarte **[!UICONTROL Speicherung]** der zu konfigurierenden Platzierung.
+1. Gehen Sie in den **[!UICONTROL Speicherung]**-Tab der zu konfigurierenden Platzierung.
 1. Wählen Sie den Status aus, der bei der Vorschlagserzeugung zugewiesen werden soll.
 
    ![](assets/offer_update_status_001.png)
@@ -107,7 +107,7 @@ Sobald ein Angebotsvorschlag **akzeptiert** wurde, konfigurieren Sie den neuen V
 
 Gehen Sie dazu wie folgt vor:
 
-1. Gehen Sie auf die Registerkarte **[!UICONTROL Speicherung]** der zu konfigurierenden Platzierung.
+1. Gehen Sie in den **[!UICONTROL Speicherung]**-Tab der zu konfigurierenden Platzierung.
 1. Wählen Sie den Status aus, den der Vorschlag erhalten soll, nachdem er akzeptiert wurde.
 
    ![](assets/offer_update_status_002.png)
@@ -115,19 +115,19 @@ Gehen Sie dazu wie folgt vor:
 
 **Eingehende Interaktionen**
 
-Über die Registerkarte **[!UICONTROL Speicherung]** können Sie nur die Status für **unterbreitete** und **akzeptierte** Angebotsvorschläge definieren. Für eingehende Interaktionen sollte der Status von Angebotsvorschlägen nicht über die Schnittstelle, sondern direkt in der URL definiert werden, über die das Angebotsmodul aufgerufen wird. Auf diese Weise können Sie festlegen, welche Status in anderen Szenarien angewendet werden (z. B. wenn ein Angebotsvorschlag abgelehnt wird).
+Auf der Registerkarte **[!UICONTROL Speicherung]** können Sie nur Status für **vorgeschlagene** und **akzeptierte** Angebotsvorschläge definieren. Für eingehende Interaktionen sollte der Status der Angebotsvorschläge direkt in der URL für den Aufruf des Angebotsmoduls angegeben werden und nicht über die Schnittstelle. Auf diese Weise können Sie festlegen, welcher Status in anderen Fällen angewendet werden soll, z. B. wenn ein Angebotsvorschlag abgelehnt wird.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-So enthält beispielsweise der auf der **Neobank**-Webseite angezeigte Vorschlag mit Kennung **40004** zum Abschluss einer **Hausratsversicherung** folgende URL:
+So enthält beispielsweise der auf der **Neobank**-Website angezeigte Vorschlag mit Kennung **40004** zum Abschluss einer **Hausratsversicherung** folgende URL:
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
-Wenn nun ein Besucher auf den Vorschlag und somit auf die URL klickt, wird dem Vorschlag der Status **[!UICONTROL Akzeptiert]** (entspricht dem Wert **3**) zugewiesen und der Besucher wird auf eine andere Seite der **Neobank**-Webseite weitergeleitet, um die Versicherung abzuschließen.
+Wenn nun ein Besucher auf den Vorschlag und somit auf die URL klickt, wird dem Vorschlag der Status **[!UICONTROL Akzeptiert]** (entspricht dem Wert **3**) zugewiesen und der Besucher wird auf eine andere Seite der **Neobank**-Website weitergeleitet, um die Versicherung abzuschließen.
 
 >[!NOTE]
 >
@@ -154,6 +154,6 @@ Sollte kein Angebot für einen Empfänger infrage kommen, ist dies in der Vorsch
 ![](assets/offer_space_overview_001.png)
 
 
-Die Vorschau berücksichtigt Kontexte möglicherweise nicht, wenn sie auf eine Platzierung beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema erweitert wurde, um Felder hinzuzufügen, auf die eine einen eingehenden Kanal verwendende Platzierung Bezug nimmt. 
+Die Vorschau kann Kontexte ignorieren, wenn diese auf eine Platzierung beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema erweitert wurde, um Felder hinzuzufügen, auf die in einem Bereich mithilfe eines eingehenden Kanals verwiesen wird.
 
 Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}.

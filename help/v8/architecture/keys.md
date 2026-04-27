@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
 source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '595'
+ht-degree: 97%
 
 ---
 
@@ -61,7 +61,7 @@ Campaign verfügt über eine Reihe neuer Schutzmaßnahmen, um das Einfügen eine
 
 >[!NOTE]
 >
->Diese Schutzmaßnahmen sind ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie in [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+>Diese Schutzmaßnahmen sind ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 ### Versandvorbereitung {#remove-duplicates-delivery-preparation}
 
@@ -69,7 +69,7 @@ Adobe Campaign entfernt während der Versandvorbereitung automatisch jede doppel
 
 ![](assets/exclusion-duplicates-log.png)
 
-### Aktualisieren von Daten in einem Workflow  {#duplicates-update-data}
+### Aktualisieren von Daten in einem Workflow {#duplicates-update-data}
 
 Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) können Sie keinen internen Schlüssel (UUID) als Feld auswählen, um Daten in einem Workflow zu aktualisieren.
 

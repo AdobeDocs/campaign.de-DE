@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 99%
+source-wordcount: '1607'
+ht-degree: 84%
 
 ---
 
@@ -32,7 +32,7 @@ To build the delivery target, you can define filtering criteria for the recipien
 Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und diese Liste als Zielgruppe eines Versands zu verwenden. Gehen Sie dazu wie folgt vor:
 
 1. Bearbeiten Sie hierzu den betreffenden Versand und klicken Sie auf den Link **[!UICONTROL An]**, um die Zielpopulation zu ändern.
-1. Markieren Sie im Tab **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL Über die Datenbank definiert]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um Empfänger auszuwählen.
+1. Markieren Sie im Tab **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL Von der Datenbank ausgehend bestimmt]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um Empfänger auszuwählen.
 
    ![](assets/select-main-target.png)
 
@@ -51,7 +51,7 @@ Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und die
 
 ## Erstellen der Zielgruppe in einem Campaign-Workflow {#build-the-main-target-in-a-workflow}
 
-Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow definiert werden: Die grafische Umgebung ermöglicht die Erstellung einer Zielgruppe mithilfe von Abfragen, Tests und Funktionen wie Vereinigungen, Deduplizierungen, Aufspaltungen usw.
+Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow definiert werden: Die grafische Umgebung ermöglicht die Erstellung einer Zielgruppe mithilfe von Abfragen, Tests und Operatoren wie Vereinigungen, Deduplizierungen, Aufspaltungen usw.
 
 >[!IMPORTANT]
 >
@@ -59,7 +59,7 @@ Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow defin
 
 ### Erstellen eines Workflows {#create-a-targeting-workflow}
 
-Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterbedingungen in einer grafischen Abfolge in einem Workflow erfolgen. Sie können Populationen und Unterpopulationen erstellen, die entsprechend Ihren Anforderungen angesprochen werden. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
+Die Zielgruppenbestimmung kann durch eine Kombination von Filterbedingungen erfolgen, die in einem Workflow grafisch verdeutlicht werden. Sie können Populationen und Unterpopulationen erstellen, die Ihren Anforderungen entsprechend ausgewählt werden. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
 
 ![](assets/targeting-and-wf-tab.png)
 
@@ -71,13 +71,13 @@ Wählen Sie die gewünschten Aktivitäten aus den links vom Arbeitsbereich liege
 
 ![](assets/campaign-wf.png)
 
-Verbinden Sie die zur Zielgruppenerstellung notwendigen Zielbestimmungs- und Steuerungsaktivitäten im Diagramm miteinander: Sie können die Zielgruppenbestimmung bereits während ihrer Erstellung ausführen, um die aus der Datenbank extrahierte Population zu überprüfen.
+Verknüpfen Sie im Diagramm die Zielgruppenbestimmungs- und Planungsabfragen, die für die Zielgruppenerstellung im Diagramm erforderlich sind. Sie können die Zielgruppenbestimmung bereits während der Erstellung durchführen, um die aus der Datenbank extrahierte Population zu überprüfen.
 
 >[!NOTE]
 >
 >Beispiele und Anleitungen zum Definieren von Abfragen finden Sie in [diesem Abschnitt](../workflow/query.md).
 
-Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, die Aktivitäten repräsentieren. Der erste Tab enthält Aktivitäten zur Zielgruppenbestimmung, der zweite Aktivitäten zur Steuerung. Letztere werden gelegentlich zur Koordinierung der Zielgruppenbestimmungs-Aktivitäten verwendet.
+Der linke Bereich des Editors enthält eine Bibliothek mit grafischen Objekten, die Aktivitäten darstellen. Die erste Registerkarte enthält die Zielgruppenbestimmungsaktivitäten, die zweite Registerkarte enthält die Flusssteuerungsaktivitäten, die gelegentlich zur Koordinierung von Zielgruppenbestimmungsaktivitäten verwendet werden.
 
 Über die Symbolleiste des Workflow-Editors besteht Zugriff auf Funktionen zur Formatierung und Ausführung des Zielgruppen-Workflows.
 
@@ -87,7 +87,7 @@ Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, 
 >
 >Die für die Erstellung des Diagramms verfügbaren Aktivitäten sowie alle Anzeige- und Layout-Funktionen werden in [diesem Abschnitt](../workflow/about-workflows.md) ausführlich beschrieben.
 
-Es besteht die Möglichkeit, mehrere Zielgruppen-Workflows für eine einzelne Kampagne zu erstellen. Gehen Sie wie folgt vor, um einen Workflow hinzuzufügen:
+Sie können mehrere Zielgruppen-Workflows für eine einzelne Kampagne erstellen. So fügen Sie einen Workflow hinzu:
 
 1. Positionieren Sie den Mauszeiger im linken oberen Abschnitt des Workflow-Editors, machen Sie einen Rechtsklick und wählen Sie **[!UICONTROL Hinzufügen]** aus. Sie können auch die Schaltfläche **[!UICONTROL Neu]** oberhalb dieses Bereichs nutzen.
 
@@ -102,13 +102,13 @@ Benutzer mit entsprechenden Berechtigungen können Zielgruppen-Workflows manuell
 
 Die Zielgruppenbestimmung kann so konfiguriert werden, dass sie entsprechend einer Planungsaktivität (Planungsassistent) oder abhängig von einem Ereignis (externes Signal, Dateiimport usw.) automatisch ausgeführt wird.
 
-Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) handelt es sich um **asynchrone** Prozesse: Der jeweilige Befehl wird gespeichert und wird ausgeführt, sobald der Server verfügbar ist.
+Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause usw.) sind **asynchrone** Prozesse: Der Befehl wird gespeichert und wird wirksam, sobald der Server für die Anwendung verfügbar ist.
 
 Über die Symbolleiste hingegen kann die Ausführung des Zielgruppen-Workflows unmittelbar gesteuert werden.
 
 * Starten oder neu starten
 
-   * Bei Klick auf das Symbol **[!UICONTROL Starten]** werden alle Aktivitäten des Zielgruppen-Workflows aktiviert, die über keine eingehende Verbindung verfügen (außer Sprünge vom Typ &quot;Ziel&quot;).
+   * Über **[!UICONTROL Symbol]** Starten“ können Sie den Zielgruppenbestimmungs-Workflow starten. Wenn Sie auf dieses Symbol klicken, werden alle Aktivitäten ohne Eingabeübergang aktiviert (mit Ausnahme von Endpunktsprüngen).
 
      ![](assets/start.png)
 
@@ -163,7 +163,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
   Wählen Sie im Explorer **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Kampagnen-Workflows]** aus, um auf einen beliebigen Campaign-Workflow zuzugreifen und diesen zu steuern.
 
-  Sie können Ihren Workflow stoppen, indem Sie das Symbol **[!UICONTROL Aktionen]** und danach **[!UICONTROL Unbedingter Stopp]** auswählen. Damit wird Ihr Kampagnen-Workflow sofort beendet.
+  Sie können Ihren Workflow bedingungslos stoppen, indem Sie auf das Symbol **[!UICONTROL Aktionen]** klicken und **[!UICONTROL Bedingungsloser]** Stopp auswählen. Mit dieser Aktion wird Ihr Kampagnen-Workflow beendet.
 
   ![](assets/stop_unconditional.png)
 
@@ -201,7 +201,7 @@ Das vollständige Verfahren wird in [diesem Abschnitt](#extract-the-control-grou
 
 Sie können eine Kontrollgruppe auf Versandebene erstellen: In letzterem Fall wird die erstellte Kontrollgruppe für alle Sendungen der betreffenden Kampagne angewandt.
 
-Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt standardmäßig für jeden Versand dieser Kampagne. Sie kann jedoch für einzelne Sendungen angepasst werden.
+Standardmäßig gilt die auf Kampagnenebene definierte Kontrollgruppenkonfiguration für jeden Versand dieser Kampagne. Sie können die Kontrollgruppe jedoch für einen einzelnen Versand anpassen.
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Diese Population kann aus einer Empfängerliste stammen oder über eine spezifis
 
 >[!NOTE]
 >
->Der Abfrageeditor von Adobe Campaign wird in [diesem Abschnitt](../../v8/start/query-editor.md) beschrieben.
+>Der Abfrage-Editor von Adobe Campaign wird in [diesem Abschnitt](../../v8/start/query-editor.md) beschrieben.
 
 ### Extrahieren der Kontrollgruppe aus der Hauptzielgruppe {#extract-the-control-group-from-the-main-target}
 
@@ -246,7 +246,7 @@ Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge 
 Diese Konfiguration entspricht der Aktivität **[!UICONTROL Aufspaltung]** im Workflow, mit der Sie die Zielgruppe in Teilmengen aufteilen können. Die Kontrollgruppe ist eine dieser Teilmengen.
 
 
-### Tutorial-Video {#create-email-video}
+### Anleitungsvideo {#create-email-video}
 
 In diesem Video wird beschrieben, wie Sie einer Kampagne eine Kontrollgruppe hinzufügen.
 

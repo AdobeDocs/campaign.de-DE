@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: c320054d-7f67-4b12-aaa7-785945bf0c18
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 96%
+source-wordcount: '483'
+ht-degree: 66%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 96%
 
 
 
-In diesem Beispiel werden die Empfänger gesucht, die innerhalb der letzten sieben Tage nicht kontaktiert wurden.
+In diesem Beispiel möchten wir Empfänger wiederherstellen, die in den letzten 7 Tagen nicht kontaktiert wurden. Diese Abfrage betrifft alle Sendungen.
 
-Außerdem wird die Konfiguration eines von einem Sammlungselement (orangefarbener Knoten) ausgehenden Filters gezeigt. Auf Sammlungselemente kann im Fenster **[!UICONTROL Feldauswahl]** zugegriffen werden.
+Dieses Beispiel zeigt auch, wie Sie einen Filter konfigurieren, der mit der Auswahl eines Sammlungselements (oder orangefarbenen Knotens) verbunden ist. Sammlungselemente stehen im Fenster **[!UICONTROL Feld zur Auswahl]** zur Verfügung.
 
 * Welche Tabelle soll ausgewählt werden?
 
@@ -45,13 +45,13 @@ Gehen Sie wie folgt vor:
    ![](assets/query_editor_nveau_34.png)
 
 1. Wählen Sie dann im **[!UICONTROL Datenfilter]**-Fenster die Option **[!UICONTROL Filterbedingungen]**.
-1. Anschließend wird im Fenster **[!UICONTROL Zielelement]** in zwei Schritten die gesuchte Filterbedingung erstellt. Es handelt sich bei dem auszuwählenden Kollektionselement um eine n:n-Relation.
+1. Im Fenster **[!UICONTROL Zielelement]** umfasst die Filterbedingung für die Extraktion von Profilen ohne Trackinglog für die letzten 7 Tage zwei Schritte. Bei dem Element, das Sie auswählen müssen, handelt es sich um einen n:n-Link.
 
    * Wählen Sie also im **[!UICONTROL Ausdruck]**-Feld das durch einen orangefarbenen Knoten symbolisierte Sammlungselement **[!UICONTROL Versandlogs der Empfänger (broadLog)]**.
 
      ![](assets/query_editor_nveau_67.png)
 
-     In diesem Fall ist der zu wählende Operator **[!UICONTROL nicht wie]** und es wird kein Wert angegeben.
+     Wählen Sie den Operator **[!UICONTROL existiert nicht als]**. Es ist nicht erforderlich, einen zweiten Wert in dieser Zeile auszuwählen.
 
    * Der Inhalt der zweiten Filterbedingung hängt von der ersten ab. Hier wird das Feld **[!UICONTROL Ereignisdatum]** aus der Tabelle **[!UICONTROL Versandlogs der Empfänger]** vorgeschlagen, da eine Relation mit dieser Tabelle besteht.
 
@@ -84,6 +84,6 @@ Gehen Sie wie folgt vor:
 
    Weiterführende Informationen zum Hinzufügen berechneter Felder finden Sie in diesem Abschnitt.
 
-1. Im Fenster **[!UICONTROL Datenvorschau]** können Sie das Ergebnis prüfen. Es werden die Empfänger angezeigt, die innerhalb der letzten sieben Tage vor dem aktuellen Tagesdatum nicht kontaktiert worden sind. Die Nachnamen sind in Großbuchstaben und alphabetisch geordnet. Eine weitere Spalte zeigt Vor- und Nachnamen in einem Feld an.
+1. Das Ergebnis wird im Fenster **[!UICONTROL Datenvorschau“]**. Empfänger, die in den letzten 7 Tagen nicht kontaktiert wurden, werden in alphabetischer Reihenfolge angezeigt. Namen werden in Großbuchstaben angezeigt und die Spalte mit Vor- und Nachnamen wurde erstellt.
 
    ![](assets/query_editor_nveau_41.png)

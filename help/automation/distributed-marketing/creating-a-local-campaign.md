@@ -6,9 +6,9 @@ feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
-workflow-type: ht
-source-wordcount: '1689'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1691'
+ht-degree: 81%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Lokale Kampagnen sind Kampagneninstanzen, die bei jeder Bestellung basierend auf einem **[!UICONTROL Kampagnenkit]** erstellt werden. Sie verfügen jeweils über eine **spezifische Ausführungsplanung**. Ziel ist es, lokalen Kommunikationsbedürfnissen entsprechen zu können, hierbei jedoch zentral festgelegten Standards zu folgen. Letzteres wird durch die von der Zentralstelle konfigurierten Kampagnenvorlagen sichergestellt.
+Eine lokale Kampagne ist eine Instanz, die aus einer Vorlage erstellt wird, auf die in der Liste der **[!UICONTROL Kampagnenkits]** mit einer **Ausführungsplanung verwiesen**. Ziel ist es, den lokalen Kommunikationsbedarf mithilfe einer Kampagnenvorlage zu decken, die von der Zentralstelle eingerichtet und konfiguriert wurde. Die wichtigsten Etappen für die Durchführung eines lokalen Vorhabens sind:
 
 **Zentralstellenseitig**
 
@@ -32,7 +32,7 @@ Lokale Kampagnen sind Kampagneninstanzen, die bei jeder Bestellung basierend auf
 
 ## Erstellen Sie eine Vorlage für eine lokale Kampagne {#creating-a-local-campaign-template}
 
-Um ein Kamapgnenkit zu erstellen, muss zunächst eine **Kamapgnenvorlage** im Navigationsknoten **[!UICONTROL Ressourcen > Vorlagen]** erstellt werden.
+Um ein Kampagnenkit zu erstellen, muss zunächst eine **Kamapgnenvorlage** im Navigationsknoten **[!UICONTROL Ressourcen > Vorlagen]** erstellt werden.
 
 Um eine neue Vorlage für eine lokale Kampagne zu erstellen, duplizieren Sie die Standard-Vorlage **[!UICONTROL Lokale Kampagne (opLocal)]**.
 
@@ -58,7 +58,7 @@ Wählen Sie den Web-Schnittstellentyp aus, der für die auf dieser Vorlage basie
 
 Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
-* **[!UICONTROL Briefing]**: Die Lokalstelle muss eine Beschreibung liefern, in der sie die Konfigurationen der Kampagne beschreibt. Sobald der Auftrag genehmigt ist, konfiguriert die Zentralstelle die Kampagne und führt sie als Ganzes durch.
+* **[!UICONTROL By Brief]**: Die Lokalstellen müssen eine Beschreibung der Kampagnenkonfigurationen bereitstellen. Nachdem die Bestellung genehmigt wurde, konfiguriert und führt die Zentralstelle die Kampagne als Ganzes aus.
 
   ![](assets/mkt_distr_6.png)
 
@@ -70,7 +70,7 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
   >[!NOTE]
   >
-  >Bei der hier verwendeten Webanwendung handelt es sich nur um ein Beispiel. Um ein Formular verwenden zu können, muss vorab eine spezifische Webanwendung erstellt werden.
+  >Die in diesem Beispiel verwendete Webanwendung ist ein Beispiel. Um ein Formular verwenden zu können, müssen Sie eine bestimmte Web-Anwendung erstellen.
 
   ![](assets/mkt_distr_7.png)
 
@@ -82,7 +82,7 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 ### Standardwerte {#default-values}
 
 
-Wählen Sie die **[!UICONTROL Standardwerte]** aus, die von den Lokalstellen angegeben werden sollen. Zum Beispiel:
+Wählen Sie die **[!UICONTROL Standardwerte]** die von den Lokalstellen vervollständigt werden sollen. Beispiel:
 
 * Kontakt- und Extraktionsdatum,
 * Zielgruppeneigenschaften (Altersgruppe etc.).
@@ -107,7 +107,7 @@ Wenn keine Angabe validierungsverantwortlicher Benutzer für die Kampagnen gewü
 
 ### Dokumente {#documents}
 
-Sie können Benutzenden von Lokalstellen erlauben, beim Erstellen der Bestellung Dokumente (Textdateien, Tabellen, Bilder, Kampagnenbeschreibungen etc.) mit der lokalen Kampagne zu verknüpfen. Über den Link **[!UICONTROL Erweiterte Kampagnenerfassungs-Parameter…]** können Sie die Anzahl der Dokumente einschränken. Geben Sie dazu einfach die maximal zulässige Anzahl in das Feld **[!UICONTROL Anzahl Dokumente]** ein.
+Sie können Lokalstellen erlauben, Dokumente (Textdateien, Tabellen, Bilder, Kampagnenbeschreibungen usw.) zu verknüpfen zur lokalen Kampagne bei der Erstellung der Bestellung hinzufügen. Über den Link **[!UICONTROL Erweiterte Kampagnenerfassungs-Parameter…]** können Sie die Anzahl der Dokumente einschränken. Geben Sie dazu einfach die maximal zulässige Anzahl in das Feld **[!UICONTROL Anzahl Dokumente]** ein.
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -161,7 +161,7 @@ Speichern Sie Ihre Kampagnenvorlage. Sie steht Ihnen nun in der Ansicht **[!UICO
 
 ## Kampagnenkit erstellen {#creating-the-campaign-package}
 
-Um die Kampagnenvorlage den Lokalstellen zur Verfügung zu stellen, muss sie der Liste hinzugefügt werden. Hierzu muss die Zentralstelle ein neues Kit erstellen.
+Damit die Kampagnenvorlage für Lokalstellen verfügbar wird, muss sie der Liste hinzugefügt werden. Dazu muss die Zentralbehörde ein neues Paket schnüren.
 
 Gehen Sie wie folgt vor:
 
@@ -176,7 +176,7 @@ Gehen Sie wie folgt vor:
 
 1. Bestimmen Sie Titel und Speicherort des Kampagnenkits und legen Sie die Ausführungsplanung fest.
 
-### Datum-Funktionen        {#dates}
+### Datum-Funktionen {#dates}
 
 Beginn- und Enddatum bestimmen die Dauer der Sichtbarkeit der Kampagne in der Kampagnenkit-Liste.
 
@@ -222,11 +222,11 @@ Wenn eine Kampagne verfügbar ist oder der Anmeldeschluss erreicht ist, erhalten
 
 ## Kampagne bestellen {#ordering-a-campaign}
 
-Kampagnenkits werden für Lokalstellen verfügbar, sobald sie validiert wurden und ihr Ausführungszeitraum begonnen hat. Lokale Akteure werden per E-Mail informiert, wenn ein neues Kampagnenkit verfügbar ist (sobald dessen Verfügbarkeitsdatum erreicht ist).
+Kampagnenkits stehen lokalen Entitäten zur Verfügung, sobald sie genehmigt wurden und ihr Implementierungszeitraum begonnen hat. Lokalstellen erhalten eine E-Mail, die sie darüber informiert, dass ein neues Kampagnenkit verfügbar ist (sobald das Verfügbarkeitsdatum erreicht ist).
 
 >[!NOTE]
 >
->Wenn bei der Erstellung des Kampagnenkits bestimmte Lokalstellen angegeben wurden, erhalten nur diese eine Benachrichtigung. Andernfalls werden alle Lokalstellen benachrichtigt.
+>Wenn bei der Erstellung des Kampagnenkits einige Lokalstellen angegeben wurden, erhalten nur diese eine Benachrichtigung. Wenn keine Lokalstelle angegeben wurde, erhalten alle Lokalstellen eine Benachrichtigung.
 
 ![](assets/mkg_dist_local_op_notification.png)
 
@@ -236,7 +236,7 @@ Gehen Sie wie folgt vor:
 
 1. Klicken Sie auf den Link **[!UICONTROL Kampagne bestellen]** in der Benachrichtigungs-E-Mail oder klicken Sie auf die entsprechende Schaltfläche in Ihrer Adobe Campaign-Konsole.
 
-   Geben Sie Ihre Kennung und Ihr Passwort ein, um die Bestellung vorzunehmen. Sie werden zu der Webanwendung weitergeleitet, die das von der Zentralstelle konfigurierte Formular enthält.
+   Geben Sie Ihre ID und Ihr Passwort ein, um die Kampagne zu bestellen. Die Benutzeroberfläche besteht aus einer Reihe von Seiten, die in einer Web-Anwendung definiert sind.
 
 1. Geben Sie auf der ersten Seite Informationen wie Bestelltitel und Kommentar ein und klicken Sie auf **[!UICONTROL Weiter]**.
 
@@ -248,7 +248,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/mkg_dist_subscribe_step3.png)
 
-1. Die Information wird zu Lokal- und Zentralstelle weitergeleitet. Während jede Lokalstelle nur ihre eigenen Bestellungen sieht, kann die Zentralstelle alle Bestellungen aller Lokalstellen einsehen, wie im folgenden Beispiel:
+1. Die Informationen werden an die lokalen und zentralen Entitäten zurückgegeben. Während Lokalstellen nur ihre eigenen Bestellungen anzeigen können, kann die Zentralstelle wie unten dargestellt alle Bestellungen einer Lokalstelle anzeigen:
 
    ![](assets/mkg_dist_subscribe_central_view.png)
 
@@ -326,7 +326,7 @@ Informationen werden auf der Seite mit der Liste der Kampagnenkits oder auf der 
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
-Der Kommentar kann im Tab **[!UICONTROL Bearbeiten > Verfolgung]** des Kits eingesehen werden.
+Der Kommentar kann auf der Registerkarte **[!UICONTROL Bearbeiten > Verfolgung]** des Kampagnenkits eingesehen werden.
 
 ![](assets/mkg_dist_do_not_valid_tab.png)
 

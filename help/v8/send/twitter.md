@@ -6,7 +6,7 @@ level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '860'
 ht-degree: 99%
 
 ---
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem X-Konto zu posten:
 
    ![](assets/tw-new-delivery.png)
 
-1. Wählen Sie die Hauptzielgruppe aus.      
+1. Wählen Sie die Hauptzielgruppe aus.
 
    Wählen Sie die Konten aus, an die Sie Beiträge senden möchten.
 
@@ -76,7 +76,7 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem X-Konto zu posten:
 
    ![](assets/tw-delivery-preview.png)
 
-   1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**.
+   1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
    1. Klicken Sie auf das Dropdown-Menü **[!UICONTROL Personalisierung testen]** und wählen Sie **[!UICONTROL Dienst]** aus.
    1. Wählen Sie im Feld **[!UICONTROL Ordner]** den Dienstordner aus, der Ihr X-Konto enthält.
 
@@ -126,13 +126,13 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
    Personalisierungsfelder können auf dieselbe Weise wie für E-Mail-Sendungen verwendet werden, um beispielsweise den Namen des Followers im Nachrichtentext hinzuzufügen. Weiterführende Informationen finden Sie in [diesem Abschnitt](../send/personalize.md).
 
-1. Sehen Sie sich Ihre Nachricht in der Vorschau an.
+1. Sehen Sie sich Ihre Nachricht in der Vorschau an
 
    Durchsuchen Sie die Registerkarte **[!UICONTROL Vorschau]**, um das Rendering Ihres Tweets zu überprüfen.
 
    ![](assets/tw-dm-preview.png)
 
-   1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**.
+   1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
    1. Klicken Sie auf das Dropdown-Menü **[!UICONTROL Personalisierung testen]** und wählen Sie **[!UICONTROL Besucherabonnement]**.
    1. Wählen Sie das X-Konto aus, mit dem Sie die Vorschau testen möchten.
 
@@ -149,7 +149,7 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
 >[!CAUTION]
 >
->Sie können pro Tag maximal 250 Direktnachrichten senden. Um eine Überschreitung dieses Grenzwerts zu vermeiden, können Sie in mehreren Schüben senden. Weitere Informationen hierzu finden Sie in diesem [Abschnitt](configure-and-send.md#sending-using-multiple-waves).
+>Sie können pro Tag maximal 250 Direktnachrichten senden. Um eine Überschreitung dieses Grenzwerts zu vermeiden, können Sie in mehreren Schüben senden. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](configure-and-send.md#sending-using-multiple-waves).
 
 
 ## Zugriff auf Tracking-Daten {#tw-tracking}

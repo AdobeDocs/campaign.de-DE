@@ -5,8 +5,8 @@ description: Erfahren Sie mehr über das Web Analytics-Package.
 feature: Workflows, Analytics Integration
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '172'
+workflow-type: tm+mt
+source-wordcount: '177'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Die folgenden Workflows werden standardmäßig mit dem Modul **Web-Analytics-Connectoren** installiert.
+Die folgenden Workflows werden standardmäßig mit dem Modul **Web Analytics-Connectoren** installiert.
 
 <table> 
  <tbody> 
@@ -38,7 +38,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Web-Analytics-Con
   <tr> 
    <td> <span class="uicontrol">Ereignislöschung</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsPurgeWebEvents</span> <br /> </td> 
-   <td> Löscht alle Ereignisse aus der Datenbank, deren <span class="uicontrol">Lebensdauer</span> abgelaufen ist. <br /> </td> 
+   <td> Dieser Workflow löscht alle Ereignisse aus der Datenbank, deren <span class="uicontrol">Lebensdauer</span> abgelaufen ist. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Abruf der Web-Ereignisse</span> <br /> </td> 

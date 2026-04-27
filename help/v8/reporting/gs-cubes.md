@@ -7,8 +7,8 @@ level: Beginner
 exl-id: f57f3074-981f-4bcf-9274-7908cd00a4a2
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 100%
+source-wordcount: '529'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ Dies ermöglicht es, die Kapazitäten zur Datenexploration und -analyse optimal 
 
 Cubes werden für die Erstellung bestimmter integrierter Berichte verwendet, einschließlich [Versandberichte](delivery-reports.md) (Versand-Tracking, Klicks, Öffnungen usw.).
 
-Nach ihrer Erstellung und Konfiguration werden die Cubes in den Abfrage-Aktivitäten der Berichte und Webanwendungen genutzt. Sie können außerdem in Pivot-Tabellen verwendet und verändert werden.
+Nachdem sie erstellt und konfiguriert wurden, werden Cubes in Berichtsabfragefeldern und Web-Anwendungen verwendet. Sie können in Pivot-Tabellen verwendet und bearbeitet werden.
 
 Verwenden Sie das Marketing Analytics-Modul von Campaign, um:
 
@@ -54,8 +54,8 @@ Unten finden Sie eine Liste der spezifischen Begriffe bei der Arbeit mit Cubes.
 
 * **Faktentabelle/-schema** – Die Faktentabelle (oder das Faktenschema) enthält die Roh- oder Elementardaten, auf denen die Analysen basieren. Hierbei handelt es sich hauptsächlich um Tabellen mit großen Volumen (möglicherweise mit verknüpften Tabellen) und potenziell langen Berechnungen. Die Broadlog- oder die Bestelltabelle sind Beispiele für Faktentabellen.
 
-* **Dimension** – Mit Dimensionen können Sie Daten in Gruppen unterteilen: Nach ihrer Erstellung dienen die Dimensionen als Analyseachsen. In den meisten Fällen werden für eine bestimmte Dimension mehrere Ebenen definiert. Für eine zeitliche Dimension beispielsweise sind die Ebenen Monate, Tage, Stunden, Minuten usw. Dieser Satz von Ebenen stellt die Dimensionshierarchie dar und ermöglicht verschiedene Ebenen der Datenanalyse.
+* **Dimension** – Mit Dimensionen können Sie Daten in Gruppen unterteilen: Nach ihrer Erstellung dienen die Dimensionen als Analyseachsen. In den meisten Fällen werden für eine bestimmte Dimension mehrere Ebenen definiert. Für eine zeitliche Dimension sind die Ebenen beispielsweise Monate, Tage, Stunden, Minuten usw. Dieser Satz von Ebenen stellt die Dimensionshierarchie dar und ermöglicht verschiedene Ebenen der Datenanalyse.
 
 * **Klassierung** – Für einige Felder können Sie eine Klassierung definieren, um Werte zu gruppieren und die Lesbarkeit der Informationen zu vereinfachen. Die Klassierung wird auf Ebenen angewendet. Es wird empfohlen, eine Klassierung zu definieren, wenn es viele verschiedene mögliche Werte gibt.
 
-* **Kennzahlen** – Gängige Kennzahlen sind Summe, Durchschnitt, Maximum, Minimum, Standardabweichung etc. Kennzahlen können berechnet werden: Zum Beispiel bezeichnet die Annahmerate eines Angebots das Verhältnis der Anzahl der unterbreiteten Angebote verglichen mit der Anzahl der angenommenen Angebote.
+* **Kennzahl** - Die häufigsten Kennzahlen sind Summe, Durchschnitt, Maximum, Minimum, Standardabweichung usw. Kennzahlen können berechnet werden: Zum Beispiel ist die Annahmerate eines Angebots das Verhältnis der Anzahl der unterbreiteten Angebote im Vergleich zur Anzahl der angenommenen Angebote.

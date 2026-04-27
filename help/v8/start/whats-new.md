@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 4b67d5f5427b1be8217f141a97c4de413f5e1f2e
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 69%
+source-wordcount: '1504'
+ht-degree: 70%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Campaign v8 bietet eine **neue Web-Benutzeroberfläche** neben der herköm
 
 Ab Campaign v8.6 ist die Web-Benutzeroberfläche von Campaign über Adobe Experience Cloud verfügbar, sodass nahtloser Zugriff auf alle Adobe-Lösungen möglich ist.
 
-[Erfahren Sie mehr über die Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}
+[Weitere Informationen zur Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}
 
 ### Zentrale Workflow-Verwaltung{#central-wf-mgt}
 

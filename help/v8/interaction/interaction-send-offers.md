@@ -7,8 +7,8 @@ level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 98%
+source-wordcount: '1354'
+ht-degree: 70%
 
 ---
 
@@ -30,7 +30,7 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in einen Versand einzufügen:
 
    ![](assets/offer_delivery_002.png)
 
-1. Wählen Sie die Kategorie aus, der die zu unterbreitenden Angebote angehören, oder ein oder mehrere Themen, um die vom Angebotsmodul getroffene Auswahl einzugrenzen. Es wird empfohlen, nur eins der beiden Felder zu verwenden, um die Auswahlmöglichkeiten nicht zu stark einzuschränken.
+1. Um die Angebotsauswahl des Moduls zu verfeinern, wählen Sie entweder die Kategorie, zu der die zu unterbreitenden Angebote gehören, oder ein/mehrere Themen aus. Es wird empfohlen, jeweils nur eines dieser Felder gleichzeitig zu verwenden, um eine Überlastung der Einschränkungen zu vermeiden.
 
    ![](assets/offer_delivery_003.png)
 
@@ -61,10 +61,10 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in einen Versand einzufügen:
 
 * **[!UICONTROL Platzierung]**: Zur Aktivierung des Angebotsmoduls ist die Angabe einer Platzierung aus der Angebotsumgebung zwingend erforderlich.
 * **[!UICONTROL Kategorie]**: spezifischer Ordner, in dem die Angebote sortiert werden. Wenn keine Kategorie angegeben wird, berücksichtigt das Angebotsmodul alle in der Umgebung enthaltenen Angebote, es sei denn, es wird ein Thema ausgewählt.
-* **[!UICONTROL Themen]**: zuvor auf Kategorieebene definierte Schlüsselwörter, die wie ein Filter agieren. Die zu unterbreitenden Angebote werden den Themen entsprechend aus einer Gruppe von Kategorien ausgewählt.
-* **[!UICONTROL Vorschlagsanzahl]**: Anzahl der von der Engine zurückgegebenen Angebote, die in den Textkörper des Versands eingeschlossen werden können. Wenn sie nicht in die Nachricht eingeschlossen werden, werden die Angebote immer noch erzeugt, aber nicht unterbreitet.
-* **[!UICONTROL Nicht infrage kommende Empfänger ausschließen]**: Diese Option erlaubt es, Empfängerinnen und Empfänger, für die nicht ausreichend geeignete Angebote vorhanden sind, vom Versand auszuschließen. Die Anzahl der geeigneten Angebote kann geringer sein als die angeforderte Anzahl der Angebote. Wenn dieses Kästchen aktiviert ist, werden Empfängerinnen und Empfänger, für die nicht genügend Angebote vorliegen, vom Versand ausgeschlossen. Wenn Sie diese Option nicht wählen, werden diese Personen zwar nicht ausgeschlossen, doch sie erhalten nicht die gewünschte Anzahl von Angeboten.
-* **[!UICONTROL Nichts anzeigen, wenn kein Angebot ausgewählt wurde]**: Mit dieser Option können Sie festlegen, wie die Nachricht verarbeitet werden soll, wenn eines der Angebote nicht vorhanden ist. Wenn dieses Kästchen markiert ist, wird die Darstellung des fehlenden Angebots nicht angezeigt und es erscheint kein Inhalt in der Nachricht für dieses Angebot. Ist das Kästchen nicht angekreuzt, wird die Nachricht selbst während des Versands abgebrochen und die Empfängerinnen und Empfänger erhalten keine Nachrichten mehr.
+* **[!UICONTROL Themes]**: Schlüsselwörter, die zuvor in den Kategorien definiert wurden. Diese dienen als Filter und ermöglichen es Ihnen, die Anzahl der zu unterbreitenden Angebote zu verfeinern, indem Sie sie in einer Reihe von Kategorien auswählen.
+* **[!UICONTROL Anzahl der]**: Anzahl der vom Modul zurückgegebenen Angebote, die in den Versandtext eingefügt werden können. Wenn sie nicht in die Nachricht eingefügt werden, werden die Angebote weiterhin generiert, aber nicht angezeigt.
+* **[!UICONTROL Nicht geeignete Empfänger ausschließen]**: Mit dieser Option können Sie den Ausschluss von Empfängern aktivieren oder deaktivieren, für die nicht genügend geeignete Angebote vorhanden sind. Die Anzahl der geeigneten Vorschläge kann kleiner sein als die angeforderte Anzahl von Vorschlägen. Wenn diese Option aktiviert ist, werden Empfänger, für die nicht genügend Vorschläge vorhanden sind, vom Versand ausgeschlossen. Wenn Sie diese Option nicht auswählen, werden diese Empfänger nicht ausgeschlossen, erhalten jedoch nicht die angeforderte Anzahl an Vorschlägen.
+* **[!UICONTROL Leere Darstellung anzeigen, wenn kein Angebot ausgewählt wurde]**: Mithilfe dieser Option wählen Sie den Umgang mit Nachrichten aus, für die ein einzufügender Vorschlag nicht (mehr) existiert. Wenn dieses Kontrollkästchen aktiviert ist, wird die Darstellung des fehlenden Vorschlags nicht angezeigt und es wird kein Inhalt in der Nachricht für diesen Vorschlag angezeigt. Wenn das Kontrollkästchen nicht aktiviert ist, wird die Nachricht selbst während des Versands abgebrochen und die Empfänger erhalten keine Nachrichten mehr.
 
 ## Senden von Angeboten in Workflows{#offer-via-wf}
 
@@ -98,7 +98,7 @@ Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritt
    ![](assets/int_enrichment_offer2.png)
 
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
-1. Konfigurieren Sie die Angebotsauswahl. Zwei Optionen stehen zur Auswahl:
+1. Geben Sie die Angebotsauswahl an. Hierfür gibt es zwei mögliche Optionen:
 
    * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Beim Ankreuzen dieser Option geben Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl der beizubehaltenden Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
 
@@ -122,11 +122,11 @@ Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie im Tab **[!UICONTROL Anreicherung]** der Aktivität auf den Link **[!UICONTROL Daten hinzufügen...]**.
 1. Wählen Sie im folgenden Fenster den Datentyp **[!UICONTROL Relation]** aus.
-1. Definieren Sie nun den Relationstyp und das Ziel der Relation. Im vorliegenden Beispiel handelt es sich beim Ziel um das Angebotsschema.
+1. Wählen Sie die Art des Links, den Sie erstellen möchten, sowie seine Zielgruppe aus. In diesem Fall ist das Angebotsschema die Zielgruppe.
 
    ![](assets/int_enrichment_link1.png)
 
-1. Definieren Sie die Art der Relation zwischen den Daten der Eingangstabelle der Aktivität &quot;Anreicherung&quot; (hier die Empfängertabelle) und der Angebotstabelle. Sie können beispielsweise einem Empfänger einen Angebots-Code zuordnen.
+1. Relation zwischen den Daten der Eingangstabelle der Aktivität Anreicherung (hier die Empfängertabelle) und der Angebotstabelle Sie können beispielsweise einen Angebots-Code mit einem Empfänger verknüpfen.
 
    ![](assets/int_enrichment_link2.png)
 
@@ -140,7 +140,6 @@ Gehen Sie dazu wie folgt vor:
 
 Standardmäßig werden Ranking und Gewichtung bei Verwendung der Aktivität **Anreicherung** nicht in der Vorschlagstabelle gespeichert.
 
-
 >[!NOTE]
 >
 >Die Aktivität **[!UICONTROL Angebotsmodul]** speichert diese Informationen standardmäßig.
@@ -153,7 +152,6 @@ Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten
    ![](assets/ita_enrichment_rankweight_1.png)
 
 1. Fügen Sie für das Ranking die Spalte **[!UICONTROL @rank]** und für die Gewichtung die Spalte **[!UICONTROL @weight]** hinzu.
-
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
@@ -174,7 +172,7 @@ Das Prinzip dieser Aktivität entspricht dem der **Anreicherung**. Auch hier wer
 Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritte aus:
 
 1. Fügen Sie eine **[!UICONTROL Angebotsmodul]**-Aktivität hinzu und öffnen Sie sie.
-1. Konfigurieren Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die den Parametern entsprechenden hinzuzufügenden Angebote.
+1. Füllen Sie die verschiedenen verfügbaren Felder aus, um die Parameter der Abfrage des Angebotsmoduls anzugeben (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen.
 
    >[!CAUTION]
    >
@@ -197,7 +195,7 @@ Gehen Sie dazu wie folgt vor:
 1. Definieren Sie nun auf der Registerkarte **[!UICONTROL Segmente]** über die Schaltfläche **[!UICONTROL Hinzufügen]** die verschiedenen Segmente:
 
    * Konfigurieren Sie anhand der verfügbaren Filter und Begrenzungen die Population des Segments.
-   * Wählen Sie dann das Angebot aus, das Sie dem Segment unterbreiten möchten. Es stehen die Angebote zur Verfügung, die der Konfiguration der zuvor ausgewählten Platzierung entsprechen.
+   * Wählen Sie dann das Angebot aus, das Sie der Untergruppe unterbreiten möchten. Die verfügbaren Angebote sind diejenigen, die in der im vorherigen Schritt ausgewählten Angebotsumgebung geeignet sind.
 
      ![](assets/int_offer_per_cell1.png)
 

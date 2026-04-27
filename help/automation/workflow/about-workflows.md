@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Über Workflows
-description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und Audiences, senden Sie Nachrichten und vieles mehr.
+description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und Zielgruppen, senden Sie Nachrichten und vieles mehr.
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 297aa4e3-b672-46b5-9016-5accee8568b8
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 100%
+ht-degree: 54%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 100%
 
 ## Über Workflows{#about-workflows}
 
-Adobe Campaign enthält ein Workflow-Modul, mit dem Sie die gesamte Bandbreite von Prozessen und Aufgaben über die verschiedenen Module des Anwendungs-Servers hinweg orchestrieren können. In dieser vielseitigen grafischen Umgebung können Sie Prozesse erstellen, wie etwa die Segmentierung, die Kampagnenausführung, die Dateiverarbeitung und den Eingriff durch Personen. Die Ausführung und Nachverfolgung dieser Prozesse erfolgt durch die Workflow-Engine.
+Adobe Campaign enthält ein Workflow-Modul, mit dem Sie die gesamte Bandbreite von Prozessen und Aufgaben über die verschiedenen Module des Anwendungs-Servers hinweg orchestrieren können. In dieser grafischen Umgebung können Sie Prozesse wie Segmentierung, Kampagnenausführung, Dateiverarbeitung, Beteiligung von Personen usw. entwerfen. Die Workflow-Engine führt diese Prozesse aus und verfolgt sie.
 
 So bieten Workflows beispielsweise die Möglichkeit, Dateien von einem Server herunterladen, sie zu entkomprimieren und die Datensätze in die Adobe Campaign-Datenbank zu importieren.
 
-Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge zu validieren oder an Abstimmungen teilzunehmen. Auf diese Weise können Versandaktionen erstellt und anderen Benutzern vor dem Nachrichtenversand Aufgaben wie die Gestaltung des Inhalts, die Bestimmung der Zielgruppe und die Validierung von Testsendungen zugewiesen werden.
+Ein Workflow kann auch die Benachrichtigung eines oder mehrerer Benutzer umfassen, die eine Auswahl treffen und Prozesse genehmigen können. Auf diese Weise ist es möglich, eine Versandaktion zu erstellen, einem oder mehreren Benutzern eine Aufgabe zuzuweisen, Inhalte zu bearbeiten, Zielgruppen festzulegen und Testsendungen zu validieren, bevor der Versand gestartet wird.
 
 In Adobe Campaign kommen Workflows in unterschiedlichsten Kontexten und zu verschiedenen Zeitpunkten innerhalb der Kampagnenprozesse zum Einsatz.
 
-Beispielhaft seien folgende Vorgänge genannt:
+Adobe Campaign verwendet Workflows für folgende Zwecke:
 
 * Entwerfen von Zielgruppen-Workflows. [Weitere Informationen](#targeting-workflows)
 * Orchestrieren von kanalübergreifenden Kampagnen. [Weitere Informationen](#campaign-workflows)
@@ -33,7 +33,7 @@ Beispielhaft seien folgende Vorgänge genannt:
 
 In einem Workflow wird der Ablauf eines Prozesses definiert, der in einem Workflow-Diagramm dargestellt wird. Ein Workflow ist auch eine Instanz dieses Prozesses, da in der Workflow-Instanz der tatsächliche Verlauf darstellt wird.
 
-Die Workflow-Vorlage beschreibt die verschiedenen auszuführenden Aufgaben und ihre Abfolge. Aufgabenvorlagen werden als Aktivitäten bezeichnet und durch Symbole dargestellt. Sie sind durch Transitionen miteinander verbunden.
+Die Workflow-Vorlage beschreibt die verschiedenen auszuführenden Aufgaben und ihre Verknüpfung. Die Aufgabenvorlagen werden als Aktivitäten bezeichnet und durch Symbole dargestellt. Sie sind durch Transitionen miteinander verbunden.
 
 ![](assets/example1.png)
 
@@ -51,19 +51,19 @@ Jeder Workflow besteht aus:
 
 * **[!UICONTROL Transitionen]**
 
-  Transitionen stellen die Verbindungen zwischen Aktivitäten her und bestimmen die Reihenfolge der Verarbeitung. Jede Transition verbindet eine Quellaktivität mit einer Zielaktivität. Je nach Quellaktivität existieren verschiedene Transitionstypen. Bestimmte Transitionen bieten die Möglichkeit, zusätzliche Eigenschaften wie z. B. eine Dauer, eine Bedingung oder einen Filter zu definieren.
+  Mit Transitionen können Sie Aktivitäten verknüpfen und ihre Reihenfolge festlegen. Eine Transition verknüpft eine Quellaktivität mit einer Zielaktivität. Es gibt verschiedene Arten von Übergängen, die von der Quellaktivität abhängen. Einige Transitionen verfügen über zusätzliche Parameter wie eine Dauer, eine Bedingung oder einen Filter.
 
   Transitionen, die nicht mit einer Zielaktivität verbunden sind, werden als schwebend bezeichnet. Schwebende Transitionen sind orangefarben mit einer Raute anstelle der Pfeilspitze.
 
   >[!NOTE]
   >
-  >Auch mit schwebenden Transitionen kann ein Workflow ausgeführt werden: Die Ausführung erzeugt einen Warnhinweis und wird bei Aktivierung einer derartigen Transition ausgesetzt. Es wird jedoch kein Fehler erzeugt. Auf diese Weise ist es möglich, einen Workflow zu starten, auch wenn seine Konzeption noch nicht vollständig abgeschlossen ist, und ihn nach und nach zu vervollständigen.
+  >Ein Workflow, der nicht beendete Transitionen enthält, kann weiterhin ausgeführt werden: Beim Erreichen der Transition wird eine Warnmeldung erzeugt und der Workflow wird angehalten, es wird jedoch kein Fehler ausgegeben. Auf diese Weise ist es möglich, einen Workflow zu starten, ohne dass er abgeschlossen ist, und ihn laufend hinzuzufügen.
 
   Weiterführende Informationen zur Erstellung eines Workflows finden Sie in [diesem Abschnitt](build-a-workflow.md).
 
 * **[!UICONTROL Arbeitstabellen]**
 
-  Arbeitstabellen enthalten alle von der Transition übertragenen Informationen. Dies bedeutet, dass jeder Workflow mehrere Arbeitstabellen beansprucht. Vorausgesetzt, dass sie nicht bereinigt werden, können die Daten der Arbeitstabellen während des ganzen Lebenszyklus eines Workflows verwendet werden. Tatsächlich werden unnütze Tabellen bei jeder Workflow-Passivierung und gegebenenfalls während der Ausführung eines Workflows bereinigt. Letzteres ist bei umfangreichen Arbeitstabellen der Fall, um die Server nicht zu überlasten.
+  Die Arbeitstabelle enthält alle von der Transition übermittelten Informationen. Jeder Workflow verwendet mehrere Arbeitstabellen. Die in diesen Tabellen übermittelten Daten können beschleunigt und während des gesamten Lebenszyklus des Workflows verwendet werden, sofern sie nicht bereinigt werden. Tatsächlich werden nicht benötigte Tabellen jedes Mal bereinigt, wenn der Workflow passiviert wird, und möglicherweise während der Ausführung der größten Workflows, um eine Überlastung des Servers zu vermeiden.
 
   Weiterführende Informationen zu Workflow-Daten und Tabellen finden Sie in [diesem Abschnitt](use-workflow-data.md).
 

@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: e2216dfd-1ef8-4747-b716-576fd6498fa6
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '160'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 80%
 
 ---
 
@@ -28,7 +28,7 @@ Gehen Sie dazu wie folgt vor:
 1. Definieren Sie nun auf der Registerkarte **[!UICONTROL Segmente]** über die Schaltfläche **[!UICONTROL Hinzufügen]** die verschiedenen Segmente:
 
    * Konfigurieren Sie anhand der verfügbaren Filter und Begrenzungen die Population des Segments.
-   * Wählen Sie dann das Angebot aus, das Sie dem Segment unterbreiten möchten. Es stehen die Angebote zur Verfügung, die der Konfiguration der zuvor ausgewählten Platzierung entsprechen.
+   * Wählen Sie als Nächstes das Angebot aus, das Sie der Untergruppe unterbreiten möchten. Die verfügbaren Angebote sind diejenigen, die für die Platzierung infrage kommen, die im vorherigen Schritt ausgewählt wurde.
 
      ![](assets/int_offer_per_cell1.png)
 

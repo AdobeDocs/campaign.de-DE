@@ -8,9 +8,9 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '1216'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1223'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Workflows werden grundsätzlich manuell gestartet, Nach dem Starten können sie jedoch inaktiv bleiben, je nachdem, welche Informationen über eine Planung (siehe [Planung](scheduler.md)) oder Aktivitätsplanung angegeben wurden.
 
-Die mit der Workflow-Ausführung in Zusammenhang stehenden Prozesse (starten, anhalten, aussetzen etc.) laufen **asynchron** ab, d. h. der jeweilige Befehl wird gespeichert und erst dann ausgeführt, wenn ein Server verfügbar ist.
+Aktionen zur Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause usw.) sind **asynchrone** Prozesse: Die Bestellung wird aufgezeichnet und wird wirksam, sobald der Server für die Anwendung verfügbar ist.
 
 Anhand der Schaltflächen der Symbolleiste kann die Ausführung des Workflows gesteuert und überwacht werden.
 
@@ -36,17 +36,17 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Starten]**
 
-  Dieser Befehl startet die Ausführung eines Workflows. Sein Status wechselt von **In Bearbeitung**, **Ausgesetzt** oder **Abgeschlossen** in **Gestartet**. Die Workflow-Engine übernimmt die Ausführung des Workflows. Bei zuvor ausgesetzten Workflows wird die Ausführung an der Stelle wieder aufgenommen, wo sie ausgesetzt wurde. In den anderen Fällen starten die Workflows jeweils mit der ersten Aktivität.
+  Mit dieser Aktion können Sie die Ausführung eines Workflows starten: Ein Workflow, der **Abgeschlossen**, **In Bearbeitung** oder **Paused** ist, ändert den Status in **Gestartet**. Die Workflow-Engine übernimmt dann die Ausführung dieses Workflows. Wenn der Workflow angehalten wurde, wird er fortgesetzt, andernfalls wird der Workflow von Anfang an gestartet und die ersten Aktivitäten werden aktiviert.
 
   Der Start eines Workflows ist ein asynchroner Prozess, d. h. der jeweilige Befehl wird gespeichert und erst dann ausgeführt, wenn ein Server verfügbar ist.
 
 * **[!UICONTROL Aussetzen]**
 
-  Dieser Befehl überführt den Workflow in den Status **Ausgesetzt**. Bis zur Wiederaufnahme werden keine weiteren Aktivitäten gestartet, laufende Aktionen werden jedoch nicht unterbrochen.
+  Diese Aktion setzt den Status des Workflows auf **Paused**. Bis zur Wiederaufnahme des Workflows werden keine Aktivitäten aktiviert. Die laufenden Vorgänge werden jedoch nicht angehalten.
 
 * **[!UICONTROL Anhalten]**
 
-  Dieser Befehl hält die Ausführung eines laufenden Workflows an. Der Status der Workflow-Instanz wechselt zu **Abgeschlossen**. Laufende Aktionen werden nach Möglichkeit unterbrochen. Gestartete Importe oder SQL-Abfragen werden sofort abgebrochen.
+  Dieser Befehl hält die Ausführung eines laufenden Workflows an. Der Status der Workflow-Instanz wechselt zu **Abgeschlossen**. Laufende Aktionen werden nach Möglichkeit gestoppt. Gestartete Importe oder SQL-Abfragen werden sofort abgebrochen.
 
   >[!IMPORTANT]
   >
@@ -54,7 +54,7 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Unbedingter Stopp]**
 
-  Bei Auswahl dieses Befehls wechselt der Workflow-Status zu **[!UICONTROL Abgeschlossen]**. Dieser Befehl darf nur als letztes Mittel eingesetzt werden, wenn das normale Anhalten auch nach mehreren Minuten keine Wirkung zeigt. Verwenden Sie den unbedingten Stopp nur, wenn Sie sicher sind, dass der Workflow keine reellen laufenden Prozesse aufweist.
+  Diese Option ändert den Workflow-Status in **[!UICONTROL Abgeschlossen]**. Diese Aktion sollte nur als letztes Mittel verwendet werden, wenn der normale Stopp-Vorgang nach einigen Minuten fehlschlägt. Verwenden Sie den bedingungslosen Stopp nur, wenn Sie sicher sind, dass keine aktuellen Workflow-Aufträge in Bearbeitung sind.
 
   >[!CAUTION]
   >
@@ -62,9 +62,9 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Neu starten]**
 
-  Dieser Befehl hält einen Workflow zunächst an und startet ihn dann erneut.In den meisten Fällen ermöglicht diese Vorgehensweise einen schnelleren Neustart als die separate Verwendung der Anhalten- und Starten-Schaltflächen. Dies ist insbesondere dann nützlich, wenn das Anhalten eines Workflows geraume Zeit in Anspruch nimmt, da der Befehl &quot;Starten&quot; erst wieder verfügbar ist, wenn der Workflow tatsächlich angehalten wurde.
+  Diese Aktion stoppt und startet den Workflow neu. In den meisten Fällen ist es möglich, schneller neu zu starten. Es ist auch nützlich, den Neustart zu automatisieren, wenn das Anhalten eine bestimmte Zeit dauert: Dies liegt daran, dass der Befehl „Stopp“ nicht verfügbar ist, wenn der Workflow angehalten wird.
 
-  Beachten Sie, dass die Aktion **Neu starten** nicht die Workflow-Instanzvariablen löscht, wie dies bei den Aktionen **Ausführung**, **Stoppen** und **Start** der Fall ist (das Löschen der Instanzvariablen erfolgt bei der Aktion „Start“). Beim Neustart eines Workflows sind Instanzvariablen weiterhin für die Verwendung mit beibehaltenen Werten verfügbar. Zum Löschen haben Sie folgende Möglichkeiten:
+  Beachten Sie, dass die Aktion **Neustart** die Workflow-Instanzvariablen im Vergleich zu den Aktionen **Ausführung**, **Anhalten** und **Starten** nicht löscht (das Löschen der Instanzvariablen erfolgt bei der Aktion „Starten“). Beim Neustart eines Workflows sind Instanzvariablen weiterhin für die Verwendung mit beibehaltenen Werten verfügbar. Zum Löschen haben Sie folgende Möglichkeiten:
    * Führen Sie die Aktionen **Anhalten** und **Starten** aus.
    * Fügen Sie am Ende der Workflow-Ausführung folgenden JavaScript-Code hinzu:
 
@@ -80,7 +80,7 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Im Simulationsmodus starten]**
 
-  Mithilfe dieses Befehls wird der Workflow im Simulationsmodus gestartet. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die eine Auswirkung haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.), sowie die Aktivitäten danach (in derselben Verzweigung) werden nicht ausgeführt.
+  Mithilfe dieses Befehls wird der Workflow im Simulationsmodus gestartet. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die eine Auswirkung haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.), sowie die nach ihnen (in derselben Verzweigung) werden nicht ausgeführt.
 
 * **[!UICONTROL Vorgezogene Ausführung der ausstehenden Aufgaben]**
 

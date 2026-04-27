@@ -1,25 +1,25 @@
 ---
 product: campaign
-title: Fluss-Steuerungsaktivitäten in Workflows
+title: Steuerungsaktivitäten in Workflows
 description: Liste der Fluss-Steuerungsaktivitäten
 feature: Workflows
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 904f2d94-bd3e-4c46-aeab-2ef77a7bdeee
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '174'
+workflow-type: tm+mt
+source-wordcount: '176'
 ht-degree: 100%
 
 ---
 
-# Fluss-Steuerungsaktivitäten in Workflows{#about-flow-control-activities}
+# Steuerungsaktivitäten in Workflows{#about-flow-control-activities}
 
 Bei den folgenden Aktivitäten handelt es sich um Datenbankaktivitäten, d. h. sie werden zur Koordinierung der Workflow-Aktivitäten verwendet.
 
 * **[Warnhinweis](alert.md)**: sendet eine Benachrichtigung an einen Benutzer oder eine Benutzergruppe.
 * **[AND-Join](and-join.md)**: wartet, bis alle parallel ablaufenden Aufgaben beendet sind, bevor mit der Ausführung des Workflows fortgefahren wird.
-* **[Validierung](approval.md)**: sendet eine E-Mail an einen Benutzer oder eine Benutzergruppe und wartet auf die Validierung, bevor die Ausführung fortgesetzt wird. 
+* **[Validierung](approval.md)**: sendet eine E-Mail an einen Benutzer oder eine Benutzergruppe und wartet auf die Validierung, bevor die Ausführung fortgesetzt wird.
 * **[Externes Signal](external-signal.md)**: aktiviert eine ausgehende Transition als Reaktion auf ein externes Signal.
 * **[Verzweigung](fork.md)**: ermöglicht es Ihnen, alle ausgehende Transitionen zu aktivieren.
 * **[Sprung (Start- und Zielpunkt)](jump-start-point-and-end-point.md)**: ermöglicht die Implementierung von Transitionen ohne Verknüpfungen.

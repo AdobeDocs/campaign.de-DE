@@ -6,8 +6,8 @@ level: Beginner, Intermediate
 exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
 source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 36%
+source-wordcount: '560'
+ht-degree: 37%
 
 ---
 
@@ -33,7 +33,7 @@ Zunächst müssen Sie das Schema konfigurieren, um den neuen Kanal zur Liste der
 
 1. Wählen Sie im Explorer von Campaign **Administration** > **Konfiguration** > **Datenschemata** aus.
 
-1. Erstellen Sie eine Schemaerweiterung, um die Auflistung **messageType** [&#x200B; mit &#x200B;](../config/enumerations.md) neuen Kanal zu erweitern.
+1. Erstellen Sie eine Schemaerweiterung, um die Auflistung **messageType** [ mit ](../config/enumerations.md) neuen Kanal zu erweitern.
 
    Beispiel:
 
@@ -46,7 +46,7 @@ Zunächst müssen Sie das Schema konfigurieren, um den neuen Kanal zur Liste der
 
    ![](assets/cus-schema.png){zoomable="yes"}
 
-## Erstellen eines neuen externen Kontos{#create-ext-account}
+## Neues externes Konto erstellen{#create-ext-account}
 
 Anschließend müssen Sie ein neues externes Routing-Konto erstellen.
 
@@ -90,7 +90,7 @@ Richten Sie in der Web-Benutzeroberfläche von Campaign die Definition des benut
 
    ![](assets/cus-schema2.png){zoomable="yes"}
 
-1. Wählen Sie die Registerkarte aus, die Ihrem Kanal entspricht, und definieren Sie, wie die Felder im Inhaltsbildschirm des Versands angezeigt werden. Weiterführende Informationen zur Bildschirmbearbeitung finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=de#fields){target="_blank"}.
+1. Wählen Sie die Registerkarte aus, die Ihrem Kanal entspricht, und definieren Sie, wie die Felder im Inhaltsbildschirm des Versands angezeigt werden. Weiterführende Informationen zur Bildschirmbearbeitung finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
 
    ![](assets/cus-schema3.png){zoomable="yes"}
 

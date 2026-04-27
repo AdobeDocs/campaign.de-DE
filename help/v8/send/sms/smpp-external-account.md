@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
 source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '3666'
-ht-degree: 99%
+source-wordcount: '3682'
+ht-degree: 94%
 
 ---
 
@@ -32,11 +32,11 @@ Die Netzwerkgeräte auf der Seite des SMS-Dienstleisters werden oft als SMSC bez
 
 Die folgenden Parameter samt Rollen sind zum Einrichten der Verbindung erforderlich:
 
-* **Name der SMSC-Implementierung**: Legt den Namen der SMSC-Implementierung fest. Sollte auf den Namen Ihres Providers festgelegt werden. Die Rolle dieses Felds wird im Abschnitt „Umgang mit SMPP-Fehlern“ beschrieben.
+* **Name der SMSC-Implementierung**: Legt den Namen der SMSC-Implementierung fest. Sollte auf den Namen Ihres Providers eingestellt werden. Die Rolle dieses Felds wird im Abschnitt „Umgang mit SMPP-Fehlern“ beschrieben.
 * **Server**: Der DNS-Name oder die IP-Adresse des Servers, zu dem eine Verbindung hergestellt werden soll.
 * **Port**: Der TCP-Port, zu dem eine Verbindung hergestellt werden soll.
 * **Konto**: Der Kontoname für die Verbindung. Wird im Feld „system_id“ der BIND-PDU übergeben.
-* **Passwort**: Das Passwort der SMPP-Verbindung. Wird im Passwortfeld der BIND-PDU übergeben.
+* **Passwort**: Das Passwort der SMPP-Verbindung. Im Passwortfeld der BIND PDU übergeben.
 * **Systemtyp**: Der Wert, der im Feld „system_type“ der BIND-PDU übergeben wird. Einige Provider benötigen hier einen bestimmten Wert.
 * **Anzahl simultaner untergeordneter MTA-Verbindungen**: Definiert, wie viele Verbindungen pro Versand-Thread geöffnet werden.
 Die Gesamtzahl der Verbindungen kann mithilfe der folgenden Formel berechnet werden:
@@ -53,21 +53,21 @@ Im Modus **Transceiver** ist dies die Gesamtzahl der Verbindungen.
 Im Modus **Transmitter + Receiver** wird dadurch die Anzahl der Transmitter-/Receiver-Paare definiert (ein Paar = ein Transmitter + ein Receiver).
 Es gibt keine Möglichkeit, das Gleichgewicht zwischen Transmittern und Receivern zu verändern.
 
-* **Nachrichten über einen speziellen Prozess senden**:
-Bei Adobe Campaign v8.7.2 und höher sollte diese Option immer aktiviert sein. Dies hat zahlreiche Auswirkungen auf die Verarbeitung von Nachrichten.
-* **SMPP-Verbindungsmodus**:
-Legt für die Verbindung den Modus „Transceiver“ oder den getrennten Modus „Transmitter + Receiver“ fest.
+* **Senden von Nachrichten über einen speziellen Prozess**:
+Für Adobe Campaign v8.7.2 und höher sollte diese Option immer aktiviert sein. Dies hat zahlreiche Auswirkungen auf die Verarbeitung von Nachrichten.
+* **SMPP-**:
+Stellen Sie die Verbindung im Transceiver-Modus oder im getrennten Modus Transmitter + Receiver ein.
    * Transmitter + Receiver (oder TX + RX): Es werden zwei separate TCP-Verbindungen zum Senden und Empfangen von Nachrichten verwendet.
    * Transceiver (oder TRX): Es wird eine einzelne TCP-Verbindung zum Senden und Empfangen von Nachrichten verwendet.
-* **Andere Parameter für den Receiver verwenden**:
-Nur im Modus „Transmitter + Receiver“ verfügbar.
+* **Verwenden Sie verschiedene Parameter für den Empfänger**:
+Nur im Modus Transmitter + Receiver verfügbar.
 Wenn das Kontrollkästchen deaktiviert ist, werden für Transmitter und Receiver dieselben Einstellungen verwendet. Wenn das Kontrollkästchen aktiviert ist, gelten die Standardeinstellungen nur für den Transmitter, während die Receiver-Einstellungen nur für den Receiver gelten.
 * **Receiver-Server, Port, Konto, Kennwort, Systemtyp**
-Diese Einstellungen gelten für den Receiver im Modus „Transmitter + Receiver“. Sie funktionieren wie im Transmitter-Modus. [Weitere Informationen](#smpp-connection-settings) finden Sie oben.
-* **Ausführliche SMPP-Protokolle in der Log-Datei aktivieren**
-Wenn diese Option aktiviert ist, werden zusätzliche Protokolle in die Log-Datei ausgegeben. Dies ist sehr nützlich für die Fehlerbehebung, sollte jedoch bei Instanzen mit hohem Durchsatz deaktiviert bleiben, wenn keine Fehlerbehebung erforderlich ist.
+Diese Einstellungen gelten für den Empfänger, wenn er sich im Modus Transmitter + Receiver befindet. Sie funktionieren wie im Transmitter-Modus. [Weitere Informationen](#smpp-connection-settings) finden Sie oben.
+* **Ausführliche SMPP-Verfolgung in der Protokolldatei aktivieren**
+Wenn diese Option aktiviert ist, werden zusätzliche Protokolle an die Protokolldatei ausgegeben. Dies ist sehr nützlich für die Fehlerbehebung, sollte jedoch bei Instanzen mit hohem Durchsatz deaktiviert bleiben, wenn keine Fehlerbehebung erforderlich ist.
 
-## Einstellungen des SMPP-Kanals {#smpp-channel-settings}
+## Parameter des SMPP-Kanals {#smpp-channel-settings}
 
 ![](assets/smpp_channel_settings.png){zoomable="yes"}
 
@@ -89,7 +89,7 @@ Damit wird die Funktion zum Überschreiben der Absenderadresse/oADC aktiviert.
 
 ### Anrufer-TON/NPI, Empfänger-TON/NPI
 
-TON (Type of Number = Nummerntyp) und NPI (Numbering Plan Indicator = Nummerierungsplanindikator) werden in Abschnitt 5.2.5 der Spezifikation von SMPP Version 3.4 (Seite 117) beschrieben. Diese Werte sollten entsprechend den Anforderungen des Providers festgelegt werden.
+TON (Type of Number = Nummerntyp) und NPI (Numbering Plan Indicator = Nummerierungsplanindikator) werden in Abschnitt 5.2.5 der Spezifikation von SMPP Version 3.4 (Seite 117) beschrieben. Diese Werte sollten entsprechend den Anforderungen des Providers eingestellt werden.
 
 Sie werden unverändert in den Feldern „source_addr_ton“, „source_addr_npi“, „dest_addr_ton“ und „dest_addr_npi“ der SUBMIT_SM-PDU übertragen.
 
@@ -129,7 +129,7 @@ Maximale Anzahl an MT pro Sekunde und pro Verbindung. Diese Einstellung wird gen
 
 Um die Gesamtdurchsatzgrenze zu ermitteln, multiplizieren Sie diese Zahl mit der Gesamtzahl der Verbindungen (siehe die obige Formel).
 
-0 bedeutet keine Begrenzung, der MTA sendet dann MT so schnell wie möglich.
+0 bedeutet keine Begrenzung, der MTA sendet MT so schnell wie möglich.
 
 Im Allgemeinen wird empfohlen, diese Einstellung unter 1.000 zu halten, da es unmöglich ist, einen genauen Durchsatz oberhalb dieser Zahl zu garantieren, es sei denn, es wurde mit der endgültigen Architektur ordnungsgemäß eine Benchmark durchgeführt. Wenn Sie einen Durchsatz von über 1.000 benötigen, kontaktieren Sie bitte Ihren Provider. Möglicherweise ist es besser, die Anzahl der Verbindungen auf über 1.000 MT/s zu erhöhen.
 
@@ -147,7 +147,7 @@ Timeout zwischen dem TCP-Verbindungsversuch und der BIND_*_RESP-Antwort. Nach Ab
 
 ### enquire_link-Zeitraum
 
-enquire_link ist eine spezielle Art von PDU, die gesendet wird, um die Verbindung aktiv zu halten. Dieser Zeitraum wird in Sekunden angegeben. Der Kampagnen-Connector führt nur einen enquire_link-Versand durch, wenn die Verbindung inaktiv ist, um Bandbreite zu sparen. Wenn nach der doppelten Dauer dieses Zeitraums keine RESP empfangen wird, wird die Verbindung als unterbrochen betrachtet und ein Wiederverbindungsprozess ausgelöst.
+enquire_link ist eine spezielle Art von PDU, die gesendet wird, um die Verbindung aktiv zu halten. Dieser Zeitraum wird in Sekunden angegeben. Der Kampagnen-Connector führt nur einen enquire_link-Versand durch, wenn die Verbindung inaktiv ist, um Bandbreite zu sparen. Wenn nach der doppelten Zeitdauer keine RESP empfangen wird, wird die Verbindung als unterbrochen betrachtet und ein Wiederverbindungsprozess ausgelöst.
 
 ## Codierungs-Zuordnung {#mapping-encodings}
 
@@ -194,7 +194,7 @@ Diese Funktion wirkt sich auch auf das Verhalten der Quarantänefunktion für au
 
 ### Bind TON/NPI
 
-TON (Type of Number = Nummerntyp) und NPI (Numbering Plan Indicator = Nummerierungsplanindikator) werden in Abschnitt 5.2.5 der Spezifikation von SMPP Version 3.4 (Seite 117) beschrieben. Diese Werte sollten entsprechend den Anforderungen des Providers festgelegt werden.
+TON (Type of Number = Nummerntyp) und NPI (Numbering Plan Indicator = Nummerierungsplanindikator) werden in Abschnitt 5.2.5 der Spezifikation von SMPP Version 3.4 (Seite 117) beschrieben. Diese Werte sollten entsprechend den Anforderungen des Providers eingestellt werden.
 
 Sie werden unverändert in den Feldern „addr_ton“ und „addr_npi“ der BIND-PDU übertragen.
 
@@ -219,7 +219,7 @@ Diese Funktion dient zum Leeren von SR-Puffern auf der Provider-Seite, wenn aufg
 
 Wenn dieses Feld auf 0 gesetzt wird, wird der Mechanismus deaktiviert, sodass „Nachrichten-ID ungültig“ immer zurückgegeben wird. Dies ist das normale Verhalten.
 
-Wenn Sie dieses Feld auf 1 setzen, antwortet der Connector immer mit „OK“, auch wenn die ID ungültig ist. Es sollte nur unter Aufsicht, zur Fehlerbehebung und für eine minimale Zeitdauer, z. B. zur Behebung eines Problems auf Provider-Seite, auf 1 gesetzt werden.
+Wenn Sie dieses Feld auf 1 setzen, antwortet der Connector immer mit &quot;OK&quot;, auch wenn die ID ungültig ist. Es sollte nur unter Aufsicht, zur Fehlerbehebung und für eine minimale Zeitdauer, z. B. zur Behebung eines Problems auf Provider-Seite, auf 1 gesetzt werden.
 
 ### Regex zur ID-Extraktion im SR
 
@@ -267,7 +267,7 @@ Dies zeigt das Format der ID an, die im Feld „message_id“ der SUBMIT_SM_RESP
 
 * **Nicht ändern**: Die ID wird unverändert als ASCII-kodierter Text wie in der Datenbank gespeichert. Es findet keine Vorverarbeitung oder Filterung statt.
 * **Dezimalzahl**: Die ID wird als Dezimalzahl in ASCII-Form erwartet. Führende und nachfolgende Leerzeichen und führende Nullen werden bei dieser Einstellung entfernt.
-* **Hexadezimalzahl**: Die ID wird als Hexadezimalzahl in ASCII-Form erwartet, ohne führendes 0x und nachgestelltes h. Die ID wird dann in eine Dezimalzahl umgewandelt, bevor sie in der Datenbank gespeichert wird.
+* **Hexadezimalzahl**: Es wird erwartet, dass die ID eine hexadezimale Zahl im ASCII-Format ist, ohne vorangestelltes 0x oder nachgestelltes h. Die ID wird dann in eine Dezimalzahl konvertiert, bevor sie in der Datenbank gespeichert wird.
 * **Hexadezimaler String**: Die ID muss ein ASCII-kodierter Text sein, der selbst eine Zeichenfolge ist, die als Hexadezimalwert kodiert wurde. In der PDU finden Sie beispielsweise 0x34 0x31 0x34 0x32 0x34 0x33, was zu ASCII „414243“ führt. Dieser String wird dann als hexadezimaler String von Bytes dekodiert und Sie erhalten „ABC“: Sie speichern die ID. Die ID „ABC“ wird in der Datenbank gespeichert.
 
 ### ID-Format im SR
@@ -276,7 +276,7 @@ Dies gibt das Format der ID an, die vom Extraktions-Regex der ID im SR erfasst w
 
 ### SR-Kennung oder Fehlercode in einem optionalen Feld speichern
 
-Wenn diese Option aktiviert ist, wird der Inhalt der optionalen Felder an den Text angehängt, der durch die oben genannten Regex verarbeitet wird. Der Text hat das Format „0xTAG:VALUE“, wobei 0xTAG der 4-stellige Hexadezimalwert des Tags in Großbuchstaben ist, (z. B. 0x002E).
+Wenn diese Option aktiviert ist, wird der Inhalt der optionalen Felder an den Text angehängt, der durch die oben genannten Regex verarbeitet wird. Der Text hat das Format &quot; 0xTAG:VALUE&quot;, wobei 0xTAG der 4-stellige Hexadezimalwert des Tags in Großbuchstaben ist (z. B. 0x002E).
 
 Sie können beispielsweise die ID im Feld „receipted_message_id“ erfassen. Aktivieren Sie dazu dieses Kontrollkästchen, und dem Status wird folgender Text hinzugefügt:
 
@@ -286,7 +286,7 @@ In diesem Beispiel ist 0x001E das Tag des optionalen Felds und die UUID der Wert
 
 Um diesen Wert zu erfassen, können Sie jetzt den folgenden Regex im Feld &quot;Regex zur ID-Extraktion im SR&quot; festlegen:
 
-\b0x001E:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\b
+\b0x001E:([0-9a-f][-[0-9a-f][-{4}0-9a-f]{4}-[0-9a-f]{4}-{8}0-9a-f]{12})\b
 
 >[!IMPORTANT]
 >
@@ -304,7 +304,7 @@ Ermöglicht das Hinzufügen eines benutzerdefinierten TLV. Dieses Feld legt das 
 
 Der Wert des benutzerdefinierten TLV muss im Versand im Feld „Dienst- oder Programm-ID“ in den erweiterten Parametern des Versands festgelegt werden. Der Wert wird als UTF-8-codierter Text gesendet.
 
-Diese Einstellung erlaubt nur das Hinzufügen einer einzigen TLV-Option pro Nachricht.
+Diese Einstellung erlaubt nur das Hinzufügen einer TLV-Option pro Nachricht.
 
 >[!NOTE]
 >
@@ -326,7 +326,7 @@ Wenn diese Option aktiviert ist, werden alle Verbindungen zum SMSC mit TLS versc
 
 ### Optionale SMPP-Parameter (TLV) in MO
 
-Campaign ermöglicht den Empfang von drei zusätzlichen Feldern in einer MO (nms:inSms table): Verknüpfte SMS, Alias und großes Konto. Beim SMPP-Connector können diese Felder mit Daten aus einem beliebigen optionalen SMPP-Parameter (TLV) in einem beliebigen gängigen Format ausgefüllt werden.
+Campaign ermöglicht den Empfang von drei zusätzlichen Feldern in MO (nms:inSms-Tabelle): verknüpfte SMS, Alias und großes Konto. Beim SMPP-Connector können diese Felder mit Daten aus einem beliebigen optionalen SMPP-Parameter (TLV) in einem beliebigen gängigen Format ausgefüllt werden.
 
 Sie können für jedes Feld das zugehörige Tag sowie dessen Format festlegen. Bitten Sie den SMPP-Provider um diese Informationen.
 
@@ -337,7 +337,7 @@ Sie können für jedes Feld das zugehörige Tag sowie dessen Format festlegen. B
 >
 >Wenn das Feld **Kundenkonto** leer gelassen wird, wird es durch die Kurzwahlnummer ersetzt.
 
-### Automatische Antwort auf MO          
+### Automatische Antwort auf MO
 
 Mit dieser Funktion können Sie schnell einen Antworttext auf eine MO senden und Blockierungslisten pro Kurzwahlnummer handhaben.
 
@@ -347,7 +347,7 @@ Die Einstellung *Schlüsselwort* ist außerdem ein Präfix. Wenn Sie beispielswe
 
 Die Spalte *Antwort* enthält den Antworttext. In diesem Feld ist keine Personalisierung verfügbar, der Antworttext ist immer derselbe. Wenn Sie dieses Feld leer lassen, wird keine Nachricht als Antwort gesendet, aber die zusätzliche Aktion wird trotzdem ausgelöst.
 
-Die Spalte *Zusätzliche Aktion* enthält eine zusätzliche Aktion, wenn sowohl Schlüsselwort als auch Kurzwahlnummer übereinstimmen. (Eine leere Kurzwahlnummer entspricht allen Kurzwahlnummern.) Derzeit können Sie Elemente unter Quarantäne stellen oder aus der Quarantäne entfernen. Wenn Sie eine zusätzliche Aktion angeben, aber das Feld „Antwort“ leer lassen, wird die Aktion ausgeführt, aber es wird keine Antwort gesendet. Quarantäne wird nur für die angegebene Kurzwahlnummer angewendet (oder für alle Kurzwahlnummern, wenn das Feld leer gelassen wird).
+Die Spalte *Zusätzliche Aktion* enthält eine zusätzliche Aktion, wenn sowohl Schlüsselwort als auch Kurzwahlnummer übereinstimmen. (Eine leere Kurzwahlnummer entspricht allen Kurzwahlnummern.) Derzeit können Sie Elemente unter Quarantäne stellen oder aus der Quarantäne entfernen. Wenn Sie eine zusätzliche Aktion angeben, aber das Feld „Antwort“ leer lassen, wird die Aktion ausgeführt, aber es wird keine Antwort gesendet. Quarantäne wird nur für die angegebene Kurzwahlnummer oder alle Kurzwahlnummern angewendet, wenn das Feld leer gelassen wird.
 
 Alle Einträge in der Tabelle werden in der angegebenen Reihenfolge verarbeitet, bis eine Regel übereinstimmt. Wenn mehrere Regeln mit einem MO übereinstimmen, wird nur die oberste Regel angewendet.
 

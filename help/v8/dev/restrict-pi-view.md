@@ -18,7 +18,7 @@ ht-degree: 94%
 
 Manche Kunden verlangen, dass Marketing-Benutzer auf Datensätze zugreifen können, ohne personenbezogene Daten (PI) zu sehen, wie zum Beispiel Vornamen, Nachnamen und E-Mail-Adresse. Wenden Sie die folgenden Richtlinien an, um Daten zu schützen und deren Missbrauch durch reguläre Campaign-Benutzer zu verhindern.
 
-## Umsetzung {#implementation}
+## Implementierung {#implementation}
 
 Zu den Schemata wurde ein spezifisches Attribut hinzugefügt, das auf beliebige Elemente oder Attribute angewendet werden kann. Es komplementiert das vorhandene Attribut **[!UICONTROL visibleIf]**. Dieses Attribut ist: **[!UICONTROL accessibleIf]**. Wenn ein XTK-Ausdruck im Zusammenhang mit dem aktuellen Benutzerkontext enthalten ist, kann z. B. **[!UICONTROL HasNamedRight]** oder **[!UICONTROL $(login)]** genutzt werden.
 
@@ -39,12 +39,12 @@ Nachfolgend finden Sie ein Beispiel für eine Erweiterung des Empfängerschemas,
 
 Die wichtigsten Eigenschaften sind:
 
-* **[!UICONTROL visibleIf]**: Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem [Ausdrucksgenerator“ aufgerufen werden &#x200B;](../../v8/start/filter-conditions.md#list-of-functions). Dadurch werden jedoch keine Daten ausgeblendet. Wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
+* **[!UICONTROL visibleIf]**: Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem [Ausdrucksgenerator“ aufgerufen werden ](../../v8/start/filter-conditions.md#list-of-functions). Dadurch werden jedoch keine Daten ausgeblendet. Wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
 * **[!UICONTROL accessibleIf]** : Blendet die Daten aus der resultierenden Abfrage aus (und ersetzt sie durch leere Werte). Wenn &quot;visibleIf&quot; leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]**.
 
 Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 
-* Die Daten werden mit dem generischen Abfrage-Tool nicht in der Konsole angezeigt.
+* Die Daten werden mit dem generischen Abfrage-Editor nicht in der Konsole angezeigt.
 * Die Daten sind in Übersichtslisten und der Liste der Einträge (Konsole) nicht sichtbar.
 * Die Daten werden in detaillierter Ansicht schreibgeschützt.
 * Die Daten sind nur innerhalb von Filtern verwendbar (was bedeutet, dass Sie bei einigen Dichotomie-Strategien immer noch Werte schätzen können).

@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 86%
+source-wordcount: '1291'
+ht-degree: 83%
 
 ---
 
@@ -108,7 +108,7 @@ Diese Tabelle fasst alle Einstellungen zusammen. Werte, die Min/Max beinhalten, 
 | batchUpdateSize | Größe der aktualisierten Mikro-Batches | 5000 | 100: Sehr niedrige Latenz | maxWaitingMessages/updateThreads: Das Überschreiten dieses Werts ist unnötig, da maxWaitingMessages die Pufferung ohnehin beschränkt. | 1: Deaktivieren der Mikro-Batching-Funktion, einzelnes Aktualisieren der Nachrichten. |
 | configRefreshMillis | Zeitraum für das Neuladen der Konfiguration in Millisekunden | 10000 | pollPeriodMillis: Geringe Latenz | 600000: Nicht zu schnell neu laden, um Ressourcen zu sparen | 500: Geringe Latenz ermöglicht schnelleres Ausprobieren neuer Einstellungen |
 | deliveryPartRetryCount | Maximale Anzahl von Wiederholungsversuchen oder Verschiebungen eines Versandkontingents. Achtung: Das Neustarten des Sendevorgangs zählt als Wiederholungsversuch. Abstürze können ebenfalls als Wiederholungsversuch zählen. | 20 | 1: Weitere Zustellversuche deaktivieren | 50: Nachrichten persistenter machen, um instabile Provider zu umgehen | 1: Deaktivieren weiterer Zustellversuche. 1000: Vermeiden des Sendens von fehlgeschlagenen Nachrichten. |
-| deliveryPartRetryDelaySeconds | Mindestverzögerung, bevor ein Versandkontingent erneut versucht wird. Dies ist Prozess- und Container-übergreifend. Die Verzögerung wird in Sekunden angegeben. | 60 | 0: Sofortige weitere Zustellversuche | 3600: Sehr langsame weitere Zustellversuche (1 Stunde zwischen jedem weiteren Zustellversuch) | 1: Erleichtert das Nachverfolgen von Wiederholungsversuchen in sehr dichten Protokollen. |
+| deliveryPartRetryDelaySeconds | Minimale Verzögerung vor einem erneuten Zustellversuch eines deliveryPart. Dies ist „Cross Process“ und „Cross Container“. Die Verzögerung ist in Sekunden. | 60 | 0: Sofortige weitere Zustellversuche | 3600: Sehr langsame weitere Zustellversuche (1 Stunde zwischen jedem weiteren Zustellversuch) | 1: Erleichtert das Nachverfolgen von Wiederholungsversuchen in sehr dichten Protokollen. |
 | logOutput | Sendet Monitoring- und Profilierungsdaten in der Hauptausgabe der Protokolle. | true | false: Kann den Durchsatz etwas erhöhen. Von dieser Einstellung wird abgeraten. | true: Aktivieren der Protokollierung. | true |
 | maxWaitingMessages | Maximale Anzahl an zu jedem Zeitpunkt verarbeiteten Nachrichten | 50000 | 256: Ausreichend für einen einzigen Versandteil | 200000: Begrenzt durch SQL-Abfragelänge (64k) | 1: Nachrichten einzeln verarbeiten |
 | pollPeriodMillis | Abrufhäufigkeit der Datenbank (in Millisekunden) für die Überprüfung auf neue Nachrichten | 2000 | 500: Sehr geringe Latenz | 10000: Größere Batches | 500: Geringe Latenz erleichtert das Debugging. |
@@ -116,7 +116,7 @@ Diese Tabelle fasst alle Einstellungen zusammen. Werte, die Min/Max beinhalten, 
 | profDeliveryStat | Protokollieren verschiedener aggregierter Statistiken über Interna von SMS-Prozessen | true | false: Kann den Durchsatz etwas erhöhen. Von dieser Einstellung wird abgeraten. | true: Protokoll mit geringer Ausführlichkeit | true |
 | profLogPerMessage | Protokollieren jedes Verarbeitungsschritts für jede Nachricht | false | false: Reduzierte Ausführlichkeit der Protokolle. | true: Protokoll mit sehr hoher Ausführlichkeit. **Nur verwenden, wenn unbedingt erforderlich**. Große Leistungseinbußen. **Deaktivieren Sie diese Einstellung, sobald genügend Daten gesammelt wurden**. | true |
 | providerIdScanPeriod | Zeitspanne in Sekunden zwischen den Suchvorgängen nach neuen Provider-IDs zum Abgleich. | 10 | 1: Geringe Latenz | 60: Größere Batches für mehr Durchsatz | 1: Geringe Latenz hilft beim Debugging der Nachrichtenverarbeitung. |
-| providerIdThreads | Anzahl der Threads für den Abgleich der Anbieter-ID. 1 Thread pro Instanz ist ausreichend. Auf 0 festlegen, um ihn in diesem Container zu deaktivieren. | 1 | 0: In diesem Container deaktivieren | 1 | 1 |
+| providerIdThreads | Anzahl der Threads für die Provider-ID-Abstimmung. 1 Thread pro Instanz ist ausreichend. Auf 0 gesetzt, um diesen Container zu deaktivieren. | 1 | 0: In diesem Container deaktivieren | 1 | 1 |
 | sendingThreads | Anzahl der Versand-Threads | 1 | 1: Single-Threaded | Anzahl der CPUs. Zu viele Threads beeinträchtigen normalerweise die Leistung. | 1: Single-Threaded generiert sauberere Protokolle. |
 | updateThreads | Anzahl der Threads für die Aktualisierung der Datenbank. | 1 | 1: Single-Threaded | Anzahl der CPUs. Jeder Thread erstellt eine eigene DB-Verbindung. | 1: Single-Threaded generiert sauberere Protokolle. |
 | verifyMode | Simuliert das Senden von Nachrichten. Es werden nicht wirklich Nachrichten gesendet. Nützlich für das Debugging | false | false | true | false: Das System wird normal ausgeführt. true: Es wird nur DB-Zugriff und Nachrichtenvorbereitung getestet. |

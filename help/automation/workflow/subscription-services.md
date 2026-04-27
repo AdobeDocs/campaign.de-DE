@@ -6,8 +6,8 @@ feature: Workflows, Targeting Activity, Subscription Services Activity
 version: Campaign v8, Campaign Classic v7
 exl-id: 919630ed-b39f-40e5-b893-f3a203713b15
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '421'
+workflow-type: tm+mt
+source-wordcount: '423'
 ht-degree: 100%
 
 ---
@@ -30,11 +30,11 @@ Die Konfiguration der Aktivität besteht in der Angabe eines Titels, die Auswahl
 1. Kreuzen Sie je nach Bedarf **[!UICONTROL Anmeldung]** oder **[!UICONTROL Abmeldung]** an.
 1. Aktivieren Sie die Option **[!UICONTROL Benachrichtigung versenden]**, um den Empfänger von seiner An- oder Abmeldung in Kenntnis zu setzen.
 
-   Der Inhalt dieser Nachricht wird in einer Versandvorlage für den Informationsdienst angegeben.
+   Der Benachrichtigungsinhalt wird in der Versandvorlage des entsprechenden Informationsdienstes definiert.
 
 ## Anwendungsbeispiel: Empfänger einer Liste für einen Newsletter anmelden {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
-Im folgenden Beispiel sollen Empfänger der Altersgruppe zwischen 18 und 60 Jahre, die in Berlin leben, für einen speziellen Newsletter angemeldet werden.
+Der folgende Workflow soll in einem einzigen Vorgang eine Liste der Empfänger erstellen, die für einen Newsletter in Frage kommen, der sich an in Paris lebende Berufstätige richtet, um sie zum Abonnieren zu bewegen.
 
 Dabei sollen die Profile, die den Newsletter bereits erhalten, ausgeschlossen werden.
 

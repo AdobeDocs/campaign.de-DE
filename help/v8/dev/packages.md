@@ -7,13 +7,13 @@ level: Intermediate, Experienced
 exl-id: bf1ae889-9c07-4acf-8fd0-55b57151bc47
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '2020'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2023'
+ht-degree: 93%
 
 ---
 
-# Arbeiten mit Daten-Packages {#data-packages}
+# Daten-Packages{#data-packages}
 
 ## Erste Schritte mit Daten-Packages {#gs-data-packages}
 
@@ -37,7 +37,7 @@ Sie können in Adobe Campaign mit drei Package-Typen arbeiten: Benutzer-Packages
 
 ## Datenstruktur {#data-structure}
 
-Die Beschreibung eines Daten-Packages ist ein strukturiertes XML-Dokument, das der Grammatik des **xrk:navtree**-Datenschemas entspricht, wie im folgenden Beispiel gezeigt:
+Die Beschreibung eines Datenpakets ist ein strukturiertes XML-Dokument, das der Grammatik des Datenschemas **xrk:navtree** entspricht, wie im folgenden Beispiel gezeigt:
 
 ```xml
 <package>
@@ -93,7 +93,7 @@ Gehen Sie wie folgt vor, um mehrere Objekte in ein Daten-Package zu exportieren:
 
    >[!CAUTION]
    >
-   >Beim Export eines Ordners vom Typ **[!UICONTROL Angebotskategorie]**, **[!UICONTROL Angebotsumgebung]**, **[!UICONTROL Programm]** oder **[!UICONTROL Plan]** darf unter keinen Umständen die Entität **xtk:folder** ausgewählt werden, da dies einen Datenverlust verursachen kann. Wählen Sie stattdessen die jeweils dem Ordner entsprechende Entität aus: **nms:offerCategory** für Angebotskategorien, **nms:offerEnv** für Angebotsumgebungen, **nms:program** für Programme und **nms:plan** für Pläne.
+   >Wenn Sie einen Ordner vom Typ **[!UICONTROL Angebotskategorie]**, **[!UICONTROL Angebotsumgebung]**, **[!UICONTROL Programm]** oder **[!UICONTROL Plan]** exportieren, wählen Sie niemals **xtk:folder**, da Sie dadurch Daten verlieren können. Wählen Sie die Entität aus, die dem Ordner entspricht: **nms:offerCategory** für Angebotskategorien, **nms:offerEnv** für Angebotsumgebungen, **nms:program** für Programme und **nms:plan** für Pläne.
 
    Der Abhängigkeitsmechanismus steuert die Exportsequenz der Entitäten. Weitere Informationen hierzu finden Sie unter [Abhängigkeitsverwaltung](#manage-dependencies).
 
@@ -101,7 +101,7 @@ Gehen Sie wie folgt vor, um mehrere Objekte in ein Daten-Package zu exportieren:
 
    >[!NOTE]
    >
-   >Der Abfrageeditor wird in [diesem Abschnitt](../../automation/workflow/query.md) beschrieben.
+   >Der Abfrage-Editor wird in [diesem Abschnitt](../../automation/workflow/query.md) beschrieben.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]** und legen Sie die Sortierreihenfolge für die exportierten Daten fest.
 
@@ -192,7 +192,7 @@ Schließlich können über das Attribut `@pkgStatus` die Exportregeln für diese
 
 ## Package-Definitionen verwalten {#manage-package-definitions}
 
-Mithilfe von Package-Definitionen können Sie eine Package-Struktur erstellen, in der Sie Entitäten hinzufügen, die später als einzelnes Package exportiert werden. Sie können dann dieses Package und alle hinzugefügten Entitäten in eine andere Campaign-Instanz importieren.
+Mit Paketdefinitionen können Sie eine Paketstruktur erstellen, in der Sie Entitäten hinzufügen, die später in einem einzigen Paket exportiert werden. Anschließend können Sie dieses Paket und alle hinzugefügten Entitäten in eine andere Campaign-Instanz importieren.
 
 ### Package-Definitionen erstellen {#create-a-package-definition}
 
@@ -216,7 +216,7 @@ Klicken Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Schaltfläche 
 
 ![](assets/packagedefinition_addentities.png)
 
-Entitäten können direkt über ihren Speicherort in der Instanz zu einer Package-Definition hinzugefügt werden. Gehen Sie dazu wie folgt vor:
+Entitäten können direkt von ihrem Speicherort in der -Instanz zu einer Paketdefinition hinzugefügt werden. Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie mit der rechten Maustaste auf die gewünschte Entität und wählen Sie dann **[!UICONTROL Aktionen > In ein Package exportieren]** aus.
 
@@ -315,7 +315,7 @@ Die erste Lösung bestünde darin, die gesamte Funktion erneut zu exportieren. U
 
 Daher empfehlen wir, ein „Aktualisierungs“-Package zu erstellen, das nur einen Entitätstyp der Funktion enthält.
 
-Eine Aktualisierung kann nicht nur aus einer Fehlerbehebung, sondern auch aus einem neuen Element Ihrer Entität/Funktion bzw. Ihres Kampagnen-Packages bestehen. Um eine Bereitstellung des gesamten Packages zu vermeiden, können Sie ein Aktualisierungs-Package exportieren.
+Eine Aktualisierung kann nicht nur aus einer Fehlerbehebung, sondern auch aus einem neuen Element Ihrer Entität/Funktion bzw. Ihres Kampagnenkits bestehen. Um eine Bereitstellung des gesamten Packages zu vermeiden, können Sie ein Aktualisierungs-Package exportieren.
 
 ### Namenskonventionen {#data-package-naming}
 
@@ -330,7 +330,7 @@ Sie können beispielsweise die folgende Konvention verwenden:
 
 #### Reihenfolge von Entitäts-Packages {#entity-packages-order}
 
-Um den Import zu erleichtern, sollten Entitäts-Packages beim Importieren geordnet werden. 
+Um den Import zu erleichtern, sollten Entitäts-Packages beim Importieren geordnet werden.
 
 Beispiel:
 

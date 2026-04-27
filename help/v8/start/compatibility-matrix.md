@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
 source-git-commit: 329130d716054e5054fc0a5989a77d950c546ec0
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: '468'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Für die Nutzung der Campaign-Client-Konsole sind die folgenden Betriebssysteme 
 
 ## CRM-Connectoren {#CRMconnectors}
 
-Die folgenden CRM-Systeme (Customer Relationship Management) sind mit Adobe Campaign kompatibel. Weitere Informationen zu CRM-Connectoren finden Sie [auf dieser Seite](../connect/crm.md).
+Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relationship Management). Weitere Informationen zu CRM-Connectoren finden Sie [auf dieser Seite](../connect/crm.md).
 
 * **Salesforce**-Connector-API, Version 49
 * **Microsoft Dynamic**-Connector, Web API: Dynamics 365 On-Premise und Online

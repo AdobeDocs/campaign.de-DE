@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 100%
+source-wordcount: '1177'
+ht-degree: 78%
 
 ---
 
@@ -22,21 +22,21 @@ In diesem Abschnitt werden Best Practices für die Verwaltung des **Interaction*
 
 * Wenn Sie **Interaktionen implementieren und konfigurieren**, müssen Sie die folgenden Empfehlungen beachten:
 
-   * Für das Batch-Modul (typischerweise in der ausgehenden Kommunikation wie E-Mails verwendet) ist der Durchsatz das Hauptproblem, da mehrere Kontakte gleichzeitig verarbeitet werden können. Der typische Engpass hier ist die Datenbank-Performance.
-   * Die Haupteinschränkung für das Einzel-Modul (die typischerweise in der eingehenden Kommunikation wie bei einem Banner auf einer Website verwendet wird) ist die Latenz, da eine Antwort erwartet wird. Der typische Engpass hier ist die CPU-Performance.
+   * Bei Batch-Modulen (die in der Regel in ausgehenden Kommunikationen wie E-Mails verwendet werden) ist der Durchsatz das Hauptproblem, da mehrere Kontakte gleichzeitig verarbeitet werden können. Der typische Engpass ist die Datenbankleistung.
+   * Die wichtigste Einschränkung für eine einheitliche Engine (wird normalerweise in eingehenden Kommunikationen wie einem Banner auf einer Website verwendet) ist Latenz, da jemand eine Antwort erwartet. Der typische Engpass ist die Leistung von CPU.
    * Das Design des Angebotskatalogs hat einen großen Einfluss auf die Performance von Adobe Campaign.
    * Bei der Arbeit mit vielen Angeboten empfiehlt es sich, diese in mehrere Angebotskataloge aufzuteilen.
 
 * Im Folgenden finden Sie einige Best Practices für die Arbeit mit **Eignungsregeln**:
 
-   * Vereinfachen Sie die Regeln. Die Komplexität von Regeln wirkt sich auf die Performance aus, da sie den Suchvorgang verlängert. Eine komplexe Regel ist jede Regel, die mehr als fünf Bedingungen enthält.
+   * Vereinfachung der Regeln. Die Komplexität von Regeln wirkt sich auf die Leistung aus, da sie die Suche erweitert. Eine komplexe Regel ist jede Regel mit mehr als fünf Bedingungen.
    * Um die Performance zu verbessern, können Regeln in verschiedene vordefinierte Filter zerlegt werden, die von mehreren Angeboten gemeinsam verwendet werden.
-   * Setzen Sie die restriktivsten Angebotskategorieregeln an die oberste Position im Baum. Auf diese Weise filtern sie zuerst die meisten Kontakte heraus, wodurch die Zielgruppe verkleinert wird, sodass die Kontakte nicht von weiteren Regeln verarbeitet werden.
-   * Setzen Sie die teuersten Regeln in Bezug auf Zeit oder Verarbeitung an die unterste Position im Baum. Auf diese Weise werden diese Regeln nur auf die verbleibende Zielgruppe angewendet.
+   * Platzieren Sie die restriktivsten Regeln für Angebotskategorien an der höchstmöglichen Position im Baum. Dadurch filtern sie zuerst die meisten Kontakte heraus, reduzieren die Anzahl der Zielkontakte und verhindern, dass sie von weiteren Regeln verarbeitet werden.
+   * Setzen Sie die teuersten Regeln in Bezug auf Zeit oder Verarbeitung am unteren Ende des Baums. Dadurch werden diese Regeln nur für die verbleibende Zielgruppe ausgeführt.
    * Beginnen Sie bei einer bestimmten Kategorie, um zu vermeiden, dass der gesamte Baum durchsucht wird.
-   * Um Verarbeitungszeit zu sparen, berechnen Sie Aggregate vor, anstatt komplexe Regeln mit Joins zu erstellen. Speichern Sie dazu Kundendaten in einer Referenztabelle, die anhand von Eignungsregeln durchsucht werden kann.
+   * Um Verarbeitungszeit zu sparen, berechnen Sie Aggregate vorab, anstatt komplexe Regeln mit Joins zu erstellen. Versuchen Sie dazu, Kundendaten in einer Referenztabelle zu speichern, die innerhalb der Eignungsregeln nachgeschlagen werden kann.
    * Verwenden Sie eine minimale Anzahl von Gewichtungen, um die Anzahl der Abfragen zu begrenzen.
-   * Es wird empfohlen, eine begrenzte Anzahl von Angeboten pro Angebotsplatzierung zu verwenden. Dies ermöglicht je nach Platz einen schnelleren Abruf von Angeboten.
+   * Es wird empfohlen, eine begrenzte Anzahl von Angeboten pro Platzierung zu haben. Dadurch wird ein schnellerer Abruf von Angeboten in beliebiger Platzierung gewährleistet.
    * Verwenden Sie Indizes, insbesondere für häufig verwendete Suchspalten.
 
 * Nachfolgend sind einige Best Practices bezüglich der **Vorschlagstabelle** aufgeführt:
@@ -44,7 +44,7 @@ In diesem Abschnitt werden Best Practices für die Verwaltung des **Interaction*
    * Verwenden Sie möglichst wenige Regeln, um die Verarbeitung so schnell wie möglich zu gestalten.
    * Beschränken Sie die Anzahl der Datensätze in der Vorschlagstabelle: Bewahren Sie nur die Datensätze auf, die zum Tracken der Statusaktualisierung und für die Regeln erforderlich sind, und archivieren Sie sie dann in einem anderen System.
    * Führen Sie eine intensive Datenbankwartung für die Vorschlagstabelle durch, wie z. B. eine Neuerstellung des Index oder der Tabelle.
-   * Begrenzen Sie die Anzahl der pro Zielgruppe abgefragten Vorschläge. Definieren Sie nicht mehr als die tatsächlich verwendete Anzahl.
+   * Anzahl der pro Zielgruppe abgefragten Vorschläge begrenzen Legen Sie nicht mehr fest, als Sie tatsächlich verwenden werden.
    * Vermeiden Sie möglichst Joins in den Regelbedingungen.
 
 ## Tipps zum Verwalten von Angeboten {#tips-managing-offers}
@@ -107,13 +107,13 @@ Sie können auch zusätzliche Metadaten direkt in der Vorschlagstabelle speicher
 
 Bei Verwendung einer ausgehenden Interaktion kann das Feld `@rank` hinzugefügt werden (wie im Beispiel oben); dessen Wert wird jedoch auf Basis der von Interaction zurückgegebenen Reihenfolge automatisch festgelegt. Wenn Sie beispielsweise mit Interaction drei Angebote auswählen, werden im Feld `@rank` die Werte 1, 2 und 3 zurückgegeben.
 
-Bei Verwendung von Interaction und manueller Auswahl von Angeboten können beide Ansätze kombiniert werden. Beispielsweise kann der Benutzer das Feld `@rank` für das manuell ausgewählte Angebot manuell auf &quot;1&quot; setzen und einen Ausdruck wie `"1 + @rank"` für die von Interaction zurückgegebenen Angebote verwenden. Wenn Interaction drei Angebote auswählt, werden die von beiden Ansätzen zurückgegebenen Angebote nach 1-4 geordnet:
+Bei Verwendung von Interaction und manueller Auswahl von Angeboten können beide Ansätze kombiniert werden. Beispielsweise kann der Benutzer das Feld `@rank` für das manuell ausgewählte Angebot manuell auf &quot;1&quot; setzen und einen Ausdruck wie `"1 + @rank"` für die von Interaction zurückgegebenen Angebote verwenden. Wenn Interaction drei Angebote auswählt, werden die von beiden Ansätzen zurückgegebenen Angebote nach 1-4 bewertet:
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
 ### Erweitern des nms:offer-Schemas {#extending-nms-offer-schema}
 
-Wenn Sie das nms:offer-Schema erweitern, stellen Sie sicher, dass Sie die bereits eingerichtete native Struktur befolgen:
+Achten Sie bei der Erweiterung :offer nms-Schemas darauf, dass Sie die bereits eingerichtete vordefinierte Struktur befolgen:
 * Definieren Sie ein neues Feld für die Inhaltsspeicherung unter `<element name="view">`.
 * Jedes neue Feld muss zweimal definiert werden: einmal als normales XML-Feld und einmal als CDATA-XML-Feld mit „_jst“ an den Namen angehängt. Beispiel:
 

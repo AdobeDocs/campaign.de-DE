@@ -7,9 +7,9 @@ role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: f5580401-3305-4915-88a2-3400a32aa7aa
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '174'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '175'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Die in Workflow-Diagrammen verwendeten Bilder können angepasst werden. Sie müssen jedoch gewisse Auflagen erfüllen. Gehen Sie wie folgt vor:
+Die in den Diagrammen der verschiedenen Workflows verwendeten Bilder können geändert werden. Sie müssen jedoch bestimmte Auflagen einhalten. Im Folgenden finden Sie die Implementierungsphasen:
 
 * Gehen Sie zur Wahl eines anderen Hintergrundbilds in den betroffenen Workflow und klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]**.
 

@@ -6,8 +6,8 @@ role: User, Developer
 level: Beginner
 exl-id: ad639a39-f011-4f0f-9db6-d06078f2e7a2
 source-git-commit: 465d5d4ba10596ad2c3ced1fe621a93327fc48ab
-workflow-type: ht
-source-wordcount: '294'
+workflow-type: tm+mt
+source-wordcount: '376'
 ht-degree: 100%
 
 ---
@@ -20,14 +20,14 @@ Navigieren Sie zum Erstellen von Landingpages zur [Web-Benutzeroberfläche](../s
 
 >[!AVAILABILITY]
 >
->* Die Campaign Web-Benutzeroberfläche steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Erfahren Sie mehr über das [Adobe Identitäts-Management-System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+>* Die Campaign Web-Benutzeroberfläche steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Erfahren Sie mehr über das [Identitäts-Management-System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} von Adobe.
 >
 >* Landingpages, die Sie in der Campaign Web-Benutzeroberfläche erstellen, können in der Campaign-Client-Konsole nicht angezeigt oder bearbeitet werden.
 >
 
 Mit Landingpages haben Sie folgende Möglichkeiten:
 
-* Schnelles Erstellen, Entwerfen und Freigeben von Landingpages mithilfe von einsatzbereiten vorausgefüllten Vorlagen, die verschiedenen Anwendungsszenarien entsprechen. 
+* Schnelles Erstellen, Entwerfen und Freigeben von Landingpages mithilfe von einsatzbereiten vorausgefüllten Vorlagen, die verschiedenen Anwendungsszenarien entsprechen.
 * Verwenden Sie Adobe Campaign-Funktionen zur Inhaltserstellung, um mühelos responsive Landingpages zu erstellen.
 * Richten Sie schnell und nahtlos Opt-in- und Opt-out-Flüsse ein.
 * Erstellen Sie Anmeldedienste, damit sich Benutzende für einen Dienst anmelden können. Weitere Informationen

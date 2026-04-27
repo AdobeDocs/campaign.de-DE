@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
 source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 98%
+source-wordcount: '1453'
+ht-degree: 95%
 
 ---
 
@@ -87,7 +87,7 @@ Mit dem zugehörigen Datenschema:
 
 ## Beschreibung {#description}
 
-Der Startpunkt des Schemas ist sein Hauptelement. Es ist leicht identifizierbar, da sein Name mit dem des Schemas identisch ist. Außerdem handelt es sich um das direkte untergeordnete Element der Wurzel. Ausgehend von diesem Element beginnt die Inhaltsbeschreibung.
+Der Einstiegspunkt für das Schema ist sein Hauptelement. Sie ist einfach zu identifizieren, da sie denselben Namen wie das Schema hat und dem Stammelement untergeordnet sein sollte. Die Beschreibung des Inhalts beginnt mit diesem Element.
 
 In unserem Beispiel wird das Hauptelement durch die folgende Zeile dargestellt:
 

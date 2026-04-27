@@ -10,7 +10,7 @@ exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
 source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 87%
+ht-degree: 66%
 
 ---
 
@@ -25,7 +25,7 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
 * Die Aktivität ist nur für Remote-Datenquellen verfügbar.
 * Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein.
 
-## Wichtige Hinweise        {#important-notes}
+## Wichtige Hinweise {#important-notes}
 
 Ab 8.9.1 wurden die Workflow-Aktivitäten **[!UICONTROL SQL-Code]** und **[!UICONTROL SQL-Daten-Management]** verbessert, um PostgreSQL-Datenbanken besser zu schützen und dafür zu sorgen, dass Ihre Workflows reibungslos ausgeführt werden, wenn benutzerdefinierte SQL von Campaign aus ausgeführt wird.
 
@@ -34,7 +34,7 @@ Bei Fehlern stehen zwei Lösungen zur Verfügung:
 * Lösung 1 — `XtkSecurity_FeatureFlag_SqlSensitive`
 * Lösung 2 — `XtkSecurity_SqlSensitive_Methods`
 
-Weitere Informationen [&#x200B; Best Practices finden &#x200B;](sql-code-and-javascript-code.md#important-notes) unter SQL-Code .
+Weitere Informationen [ Best Practices finden ](sql-code-and-javascript-code.md#important-notes) unter SQL-Code .
 
 ## SQL-Daten-Management-Aktivität konfigurieren {#configuring-the-sql-data-management-activity}
 
@@ -49,7 +49,7 @@ Weitere Informationen [&#x200B; Best Practices finden &#x200B;](sql-code-and-jav
 
    >[!CAUTION]
    >
-   >Der Codierer des SQL-Scripts ist dafür verantwortlich, dass das SQL-Script funktioniert und seine Verweise (Feldnamen etc.) dem Outbound-Schema entsprechen.
+   >Es liegt in der Verantwortung des SQL-Skriptverfassers, sicherzustellen, dass das SQL-Skript funktionsfähig ist und dass seine Referenzen (Feldnamen usw.) sind mit dem Outbound-Schema konform.
 
    Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die Option **[!UICONTROL Der SQL-Code ist in einer in der Datenbank gespeicherten Entität enthalten]** aus. SQL-Scripts müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** erstellt und gespeichert werden.
 
@@ -66,14 +66,14 @@ Weitere Informationen [&#x200B; Best Practices finden &#x200B;](sql-code-and-jav
      >
      >Der Wert (&#39;name&#39;) entspricht dem Feld **[!UICONTROL Name]** in den Transition-Eigenschaften.
 
-1. Wenn das SQL-Script bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, deselektieren Sie die Option **[!UICONTROL Arbeitstabelle automatisch erstellen]**. Andernfalls wird automatisch eine Arbeitstabelle erstellt, wenn der Workflow ausgeführt wird.
+1. Wenn das SQL-Script bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, deaktivieren Sie die Option **[!UICONTROL Arbeitstabelle automatisch erstellen]**. Andernfalls wird automatisch eine Arbeitstabelle erstellt, sobald der Workflow ausgeführt wird.
 1. Wählen Sie **[!UICONTROL Ok]** aus, um die Konfiguration der Aktivität zu bestätigen.
 
-Die Aktivität ist jetzt konfiguriert und kann im Workflow ausgeführt werden.
+Der Aktivität ist jetzt konfiguriert. Sie kann jetzt im Workflow ausgeführt werden.
 
 >[!CAUTION]
 >
->Nachdem die Aktivität ausgeführt wurde, ist die Anzahl der gezählten Datensätze in der ausgehenden Transition nur als Richtwert zu erachten. Dieser kann je nach Komplexität des SQL-Scripts variieren.
+>Nachdem die Aktivität ausgeführt wurde, ist die Anzahl der Datensätze in der ausgehenden Transition nur als Hinweis zu verstehen. Er kann je nach Komplexität des SQL-Scripts variieren.
 >  
 >Wenn die Aktivität neu gestartet wird, wird das gesamte Script unabhängig vom Ausführungsstatus von vorn ausgeführt.
 

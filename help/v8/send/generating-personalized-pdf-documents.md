@@ -5,10 +5,11 @@ description: Erfahren Sie, wie Sie personalisierte PDF-Dokumente erstellen
 feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+exl-id: f4a329e3-70d2-43cd-a04a-0bbd5e3ca390
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 97%
+ht-degree: 84%
 
 ---
 
@@ -22,7 +23,7 @@ Unterstützt werden die Formate &quot;.docx&quot;, &quot;.doc&quot; und &quot;.o
 
 Um die entsprechenden Dokumente zu personalisieren, stehen Ihnen die gleichen JavaScript-Funktionen zur Verfügung, die auch bei E-Mails Verwendung finden.
 
-Aktivieren Sie bei der Erstellung des E-Mail-Anhangs die Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt der Absendung für jede Nachricht personalisiert und in PDF konvertiert]**. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie in der [Dokumentation zu Campaign v8](attaching-files.md).
+Sie müssen die Option **[!UICONTROL Der Inhalt der Datei wird beim Versand jeder Nachricht personalisiert und in PDF konvertiert“]**. Diese Option ist verfügbar, wenn Sie die Datei an die Versand-E-Mail anhängen. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie in der [Dokumentation zu Campaign v8](attaching-files.md).
 
 Die Erzeugung dynamischer Tabellen und der Einschluss von Bildern über URLs wird nachfolgend dargestellt.
 
@@ -53,7 +54,7 @@ Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen 
 
 * Gehen Sie in das Menü **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]**.
 * Erstellen Sie einen neuen Baustein mit dem Titel &quot;Mein Logo&quot; und dem internen Namen &quot;Mein_Logo&quot;.
-* Öffnen Sie den Link **[!UICONTROL Erweiterte Parameter...]** ... und geben Sie an, dass der Baustein in einem Anhang enthalten ist. Mit Auswahl dieser Option wird die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopiert.**&#x200B;**
+* Klicken Sie auf **[!UICONTROL Link Erweiterte Parameter…]** und aktivieren Sie dann die Option **[!UICONTROL Der Inhalt des Bausteins ist in einem Anhang enthalten]**. Auf diese Weise können Sie die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopieren.
 
   ![](assets/s_ncs_pdf_bloc_option.png)
 

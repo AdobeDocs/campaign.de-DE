@@ -8,8 +8,8 @@ exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 04dff810f5a838b2468280519948c88e29acf221
 workflow-type: tm+mt
-source-wordcount: '2875'
-ht-degree: 67%
+source-wordcount: '2987'
+ht-degree: 66%
 
 ---
 
@@ -127,17 +127,17 @@ Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vert
 
 * Fordern Sie die Empfänger immer auf, dem Empfang von Nachrichten zuzustimmen. Dazu müssen Sie Opt-out-Anfragen so schnell wie möglich erfüllen und das Einverständnis durch einen Anmeldeprozess mit zweifacher Bestätigung überprüfen. Weitere Informationen hierzu finden Sie unter [Abonnement-Formular mit zweifacher Bestätigung erstellen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}.
 * Importieren Sie keine betrügerischen Listen und verwenden Sie Testadressen, um sicherzustellen, dass Ihre Client-Datei nicht betrügerisch verwendet wird. Weiterführende Informationen dazu finden Sie im Abschnitt [Über Testadressen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
-* Mithilfe von Einverständnisverwaltung und Berechtigungs-Management können Sie die Voreinstellungen Ihrer Empfänger verfolgen und festlegen, wer in Ihrem Unternehmen auf welche Daten zugreifen kann. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#consent).
+* Mithilfe von Einverständnisverwaltung und Berechtigungs-Management können Sie die Voreinstellungen Ihrer Empfänger erfassen und verwalten, wer in Ihrem Unternehmen auf welche Daten zugreifen kann. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#consent).
 * Erleichtern und verwalten Sie Datenschutzanfragen von Ihren Empfängern. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#privacy-requests).
 
 ## Datenschutzverwaltung {#privacy-management}
 
-Die Datenschutzverwaltung bezieht sich auf alle Prozesse und Tools, die Ihnen helfen, die Datenschutzbestimmungen (DSGVO, CCPA usw.) einzuhalten.
+Die Datenschutzverwaltung bezieht sich auf alle Prozesse und Tools, mit denen Sie die Datenschutzbestimmungen (DSGVO, CCPA usw.) einhalten können.
 
 Adobe Campaign bietet Ihnen verschiedene Funktionen zur Datenschutzverwaltung:
 * Einverständnisverwaltung, Datenbeibehaltung und Benutzerrollen. Siehe [diesen Abschnitt](#consent).
 * Datenschutzanfragen (Recht auf Zugriff und Recht auf Vergessenwerden). Siehe [diesen Abschnitt](#privacy-requests).
-* Abmeldung (Opt-out) vom Verkauf personenbezogener Daten (CCPA-spezifisch).
+* Abmeldung (Opt-out) vom Verkauf von personenbezogenen Daten (CCPA-spezifisch).
 
 Die wichtigsten Datenschutzfunktionen in Campaign und ein Beispiel der beteiligten Personas werden in [diesem Abschnitt](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow) vorgestellt.
 
@@ -145,7 +145,7 @@ Die wichtigsten Datenschutzfunktionen in Campaign und ein Beispiel der beteiligt
 
 Zunächst bietet Adobe Campaign wichtige Funktionen, die für den Datenschutz unerlässlich sind:
 
-* **Einverständnisverwaltung**: Mithilfe der Abonnementverwaltung können Sie die Voreinstellungen Ihrer Empfänger verwalten und nachverfolgen, welche Empfänger sich für welche Art von Abonnements entschieden haben. Weitere Informationen hierzu finden Sie im Abschnitt [Über Abonnements](../../automation/workflow/subscription-services.md).
+* **Einverständnisverwaltung**: Mithilfe der Abonnementverwaltung können Sie die Voreinstellungen Ihrer Empfänger verwalten und erfassen, welche Empfänger sich für welche Art von Abonnements entschieden haben. Weitere Informationen hierzu finden Sie im Abschnitt [Über Abonnements](../../automation/workflow/subscription-services.md).
 * **Datenbeibehaltung**: Alle integrierten standardmäßigen Protokolltabellen in Campaign verfügen über eine vordefinierte Beibehaltungsdauer, die üblicherweise auf maximal sechs Monate begrenzt ist. Mit Workflows können weitere Beibehaltungszeiträume eingerichtet werden. Weitere Informationen hierzu erhalten Sie von den Adobe-Beratern oder technischen Administratoren.
 * **Berechtigungs-Management**: Adobe Campaign bietet Ihnen die Möglichkeit, die den unterschiedlichen Campaign-Benutzern zugewiesenen Rechte mithilfe von vordefinierten oder benutzerdefinierten spezifischen Rollen zu verwalten. Damit können Sie festlegen, wer in Ihrem Unternehmen auf unterschiedliche Arten von Daten zugreifen, diese ändern und exportieren kann. Weitere Informationen hierzu finden Sie unter [Über die Zugriffsverwaltung](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}.
 
@@ -167,7 +167,7 @@ Die Implementierungsschritte zum Erstellen dieser Anfragen werden in [diesem Abs
 
 Dank der Tracking-Funktionen können Sie mit Adobe Campaign die Navigation Ihrer Versandempfänger mit drei Cookie-Typen verfolgen: mit einem Sitzungs-Cookie und zwei dauerhaften Cookies.
 
-* Ein **Sitzungs**-Cookie: Das **nlid**-Cookie enthält die Kennung der an den Kontakt gesendeten E-Mail (**broadlogId**) und die Kennung der Nachrichtenvorlage (**deliveryId**). Es wird gesetzt, sobald der Kontakt auf eine in einer mit Adobe Campaign gesendeten E-Mail enthaltene URL klickt, und ermöglicht, das Web-Verhalten des Kontakts zu verfolgen. Dieses Sitzungs-Cookie wird automatisch beim Schließen des Browsers gelöscht. Der Kontakt hat die Möglichkeit, das Setzen des Cookies zu verbieten, indem er seine Browser-Einstellungen dementsprechend ändert.
+* Ein **Sitzungs**-Cookie: Das **nlid**-Cookie enthält die Kennung der an den Kontakt gesendeten E-Mail (**broadlogId**) und die Kennung der Nachrichtenvorlage (**deliveryId**). Er wird gesetzt, sobald der Kontakt eine in einer mit Adobe Campaign gesendeten E-Mail enthaltene URL anklickt, und ermöglicht, das Webverhalten des Kontakts zu verfolgen. Dieses Sitzungs-Cookie wird automatisch beim Schließen des Browsers gelöscht. Der Kontakt hat die Möglichkeit, das Setzen des Cookies zu verbieten, indem er seine Browser-Einstellungen dementsprechend ändert.
 
 * Zwei **dauerhafte** Cookies:
    * Das **UUID**-Cookie (Universal Unique IDentifier) wird von verschiedenen Adobe Experience Cloud-Lösungen verwendet. Es wird einmal gesetzt, bis es beim Generieren eines neuen Werts aus dem Clientbrowser verschwindet. Dieses Cookie ermöglicht die Identifizierung eines Benutzers, der bei Website-Besuchen mit Experience Cloud-Lösungen interagiert. Es kann von einer Landingpage (um unbekannte Kundenaktivitäten einem Empfänger zuzuordnen) oder von einem Versand hinterlegt werden. Eine Beschreibung dieses Cookies finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=de#ec-cookies).
@@ -179,7 +179,7 @@ Vorschriften wie die EU-Datenschutz-Grundverordnung (DSGVO) besagen, dass Untern
 
 ### Nachrichten-Tracking {#message-tracking}
 
-Mit Adobe Campaign können Sie die gesendeten E-Mails sowie das Verhalten der Empfängerinnen und Empfänger Ihrer Sendungen verfolgen: Öffnen, Klicks auf Links, Abmeldungen usw. Weitere Informationen hierzu finden Sie im Abschnitt [Über Nachrichten](../start/gs-message.md).
+Mit Adobe Campaign können Sie die gesendeten E-Mails und das Verhalten Ihrer Versandempfänger verfolgen: Öffnungen, Klicks auf Links, Abmeldungen usw. Weitere Informationen hierzu finden Sie unter [Über Nachrichten](../start/gs-message.md).
 
 Fügen Sie zu diesem Zweck getrackte Links zu Ihren Nachrichten hinzu, um die Wirkung Ihres Versands und das Verhalten Ihrer Empfängerinnen und Empfänger auf der Registerkarte „Tracking“ des Versand-Dashboards zu messen. Tracking-Daten werden im Bericht zu Trackingindikatoren interpretiert. Weiterführende Informationen zum Tracking finden Sie auf [dieser Seite](../send/tracking.md).
 
@@ -202,7 +202,7 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 >
 >Adobe unterstützt Sie als Benutzerin bzw. Benutzer von Managed Cloud Services bei der Implementierung dieser Konfigurationen in Ihrer Umgebung.
 
-## Zugriffsverwaltung  {#access-management}
+## Zugriffsverwaltung {#access-management}
 
 Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements. Im Folgenden finden Sie die wichtigsten Best Practices:
 
@@ -227,7 +227,7 @@ Weiterführende Informationen zu Berechtigungen finden Sie in [diesem Abschnitt]
 
 Verwenden Sie als Produktadministrator von Campaign v8 das [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"}, um die Sicherheit auf Instanzebene zu verwalten:
 
-* **IP-**: Verwalten Sie die IP-Zulassungsliste auf die Zulassungsliste setzte für den Zugriff auf Instanzen, beschränken Sie sie auf bekannte Netzwerke (z. B. Office, VPN) und vermeiden Sie nach Möglichkeit zu große Bereiche.
+* **IP-**: Verwalten Sie die IP-Zulassungsliste für den Zugriff auf Instanzen, beschränken Sie sie auf bekannte Netzwerke (z. B. Office, VPN) und vermeiden Sie nach Möglichkeit zu große Bereiche.
 * **URL-Berechtigungen** - Beschränken Sie URL-Berechtigungen auf die Domains, die Ihre Instanz aufrufen muss (APIs, Tracking, externe Dienste), um das Risiko des Missbrauchs Server-seitiger Anfragen zu reduzieren.
 * **GPG-Schlüssel** - Wenn Sie Verschlüsselung für Dateiübertragungen oder andere Anwendungsfälle verwenden, verwalten Sie GPG-Schlüssel über das Control Panel und drehen Sie sie entsprechend Ihrer Sicherheitsrichtlinie.
 

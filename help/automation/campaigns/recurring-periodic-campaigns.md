@@ -7,17 +7,17 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 68c5b903-5043-4e74-b3f6-90a7f2fb3b9a
 source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
-workflow-type: ht
-source-wordcount: '849'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 70%
 
 ---
 
 # Wiederkehrende und periodische Kampagnen {#recurring-and-periodic-campaigns}
 
-Eine **wiederkehrende Kampagne** ist eine auf einer bestimmten Vorlage basierende Kampagne, deren Workflows so konfiguriert sind, dass sie entsprechend einem verknüpften Zeitplan ausgeführt werden. Die Zielgruppenbestimmung wird bei jeder Ausführung dupliziert, und die unterschiedlichen Prozesse und Zielpopulationen werden getrackt.  Nach der Konfiguration erstellen wiederkehrende Kampagnen automatisch einen neuen Workflow (durch Duplizieren der Workflow-Vorlage) und führen ihn aus. Wenn Sie beispielsweise monatliche Erinnerungen an ein Zielgruppen-Segment senden möchten, konfigurieren Sie eine wiederkehrende Kampagne so, dass zu Beginn jedes Jahres zwölf Workflows erstellt werden, einer pro Monat. [Weitere Informationen](#create-a-recurring-campaign)
+Eine **wiederkehrende Kampagne** ist eine auf einer bestimmten Vorlage basierende Kampagne, deren Workflows so konfiguriert sind, dass sie entsprechend einem verknüpften Zeitplan ausgeführt werden. Die Zielgruppenbestimmung wird bei jeder Ausführung dupliziert, und die verschiedenen Prozesse und Zielpopulationen werden verfolgt.  Nach der Konfiguration erstellen wiederkehrende Kampagnen automatisch einen neuen Workflow (durch Duplizieren der Workflow-Vorlage) und führen ihn aus. Wenn Sie beispielsweise monatliche Erinnerungen an ein Zielgruppen-Segment senden möchten, konfigurieren Sie eine wiederkehrende Kampagne so, dass zu Beginn jedes Jahres zwölf Workflows erstellt werden, einer pro Monat. [Weitere Informationen](#create-a-recurring-campaign)
 
-Eine **periodische Kampagne** ist eine auf einer bestimmten Vorlage basierende Kampagne, mit der Sie Kampagneninstanzen auf der Grundlage einer Ausführungsplanung erstellen können. Kampagneninstanzen werden automatisch auf Basis einer Vorlage für periodische Kampagnen und abhängig von der in der Vorlagenplanung definierten Häufigkeit erstellt. [Weitere Informationen](#create-a-periodic-campaign)
+Eine **periodische Kampagne** ist eine auf einer bestimmten Vorlage basierende Kampagne, mit der Sie Kampagneninstanzen auf der Grundlage einer Ausführungsplanung erstellen können. Kampagneninstanzen werden automatisch auf der Grundlage einer Vorlage für periodische Kampagnen und abhängig von der in der Vorlagenplanung definierten Häufigkeit erstellt. [Weitere Informationen](#create-a-periodic-campaign)
 
 ## Erstellen einer wiederkehrenden Kampagne {#create-a-recurring-campaign}
 
@@ -31,14 +31,14 @@ Gehen Sie wie folgt vor, um eine Vorlage für wiederkehrende Kampagnen zu erstel
 1. Duplizieren Sie die integrierte Vorlage **[!UICONTROL Wiederkehrende Kampagne]**.
    ![](assets/recurring-campaign-duplicate.png)
 1. Geben Sie den Titel der Vorlage sowie die Dauer der Kampagne an.
-1. Legen Sie in der für diesen Kampagnentyp vorgesehenen Registerkarte **[!UICONTROL Planung]** die Zeitpunkte der wiederholten Ausführungen fest. Definieren Sie auf dieser Registerkarte die Ausführungszeitpunkte der auf dieser Vorlage basierenden Kampagnen.
+1. Legen Sie im für diesen Kampagnentyp vorgesehenen Tab **[!UICONTROL Planung]** die Zeitpunkte der wiederholten Ausführungen fest. Definieren Sie auf dieser Registerkarte die Ausführungszeitpunkte der auf dieser Vorlage basierenden Kampagnen.
    ![](assets/recurring-campaign-schedule.png)
 
    Der Konfigurationsmodus der Ausführungsplanung entspricht dem Objekt **[!UICONTROL Planung]** des Workflows. [Weitere Informationen](../workflow/scheduler.md).
 
    >[!CAUTION]
    >
-   >Die Konfiguration der Ausführungsplanung muss sorgfältig erfolgen. Wiederkehrende Kampagnen duplizieren die Workflows ihrer Vorlage entsprechend dem festgelegten Zeitplan. Dieser Vorgang kann Ihre Datenbank überlasten.
+   >Die Konfiguration der Ausführungsplanung muss sorgfältig durchgeführt werden. Wiederkehrende Kampagnen duplizieren die Workflows ihrer Vorlage je nach angegebenem Zeitplan. Dieser Vorgang kann Ihre Datenbank überlasten.
 
 1. Geben Sie u. U. einen Wert im Feld **[!UICONTROL Im Voraus erstellen für]** an, um die entsprechenden Workflows für den angegebenen Zeitraum zu erstellen.
 1. Entwerfen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** die Workflow-Vorlage, die in den auf dieser Vorlage basierenden Kampagnen verwendet werden soll. Dieser Workflow enthält in der Regel die Zielgruppenbestimmungsparameter sowie mindestens einen Versand.
@@ -63,7 +63,7 @@ Um eine wiederkehrende Kampagne zu erstellen und ihre Workflows der festgelegten
 
    Das Feld **[!UICONTROL Im Voraus erstellen für]** ermöglicht es, alle Workflows für den angegebenen Zeitraum zu erstellen.
 
-   Bei Ausführung des **[!UICONTROL Kampagnenvorgänge]**-Workflows werden die dedizierten Workflows entsprechend der zuvor festgelegten Kampagnenplanung erstellt, d. h. ein Workflow für jedes Ausführungsdatum.
+   Bei der Ausführung des Workflows **[!UICONTROL Vorgänge bei Kampagnen]** werden die dedizierten Workflows auf der Grundlage der im Kampagnenkalender definierten Vorfälle erstellt. Somit wird für jedes Ausführungsdatum ein Workflow erstellt.
 
 1. Wiederkehrende Workflows werden automatisch über die Workflow-Vorlage in der Kampagne erstellt. Sie werden im Tab **[!UICONTROL Zielbestimmungen und Workflows]** der Kampagne angezeigt.
 
@@ -79,12 +79,12 @@ Um eine wiederkehrende Kampagne zu erstellen und ihre Workflows der festgelegten
 
    >[!NOTE]
    >
-   >Das Anfangsdatum der dem Workflow zugeordneten Planungszeile ist über eine Variable des Workflows mit der folgenden Syntax verfügbar:\
+   >Das Startdatum der dem Workflow zugeordneten Planungszeile ist über eine Variable des Workflows mit der folgenden Syntax verfügbar:\
    >`$date(instance/vars/@startPlanningDate)`
 
 ## Erstellen einer periodischen Kampagne {#create-a-periodic-campaign}
 
-Eine periodische Kampagne ist eine auf einer bestimmten Vorlage basierende Kampagne, mit der Sie Kampagneninstanzen auf der Grundlage einer Ausführungsplanung erstellen können. Kampagneninstanzen werden automatisch auf Basis einer Vorlage für periodische Kampagnen und abhängig von der in der Vorlagenplanung definierten Häufigkeit erstellt.
+Eine periodische Kampagne ist eine auf einer bestimmten Vorlage basierende Kampagne, mit der Sie Kampagneninstanzen auf der Grundlage einer Ausführungsplanung erstellen können. Kampagneninstanzen werden automatisch auf der Grundlage einer Vorlage für periodische Kampagnen und abhängig von der in der Vorlagenplanung definierten Häufigkeit erstellt.
 
 ### Erstellen der Kampagnenvorlage {#create-the-campaign-template-1}
 
@@ -100,16 +100,16 @@ Eine periodische Kampagne ist eine auf einer bestimmten Vorlage basierende Kampa
 
    >[!NOTE]
    >
-   >Es handelt sich hier um eine Workflow-Vorlage. Der eigentliche Workflow kann nicht von der Kampagnenvorlage aus gestartet werden.
+   >Dieser Workflow ist eine Workflow-Vorlage. Sie kann nicht über die Kampagnenvorlage ausgeführt werden.
 
-1. Gehen Sie zur Eingabe der Ausführungsplanung wie in der Vorlage für wiederkehrende Kampagnen vor: Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und bestimmen Sie Anfang und Ende oder ergänzen Sie die Ausführungsplanung über den entsprechenden Link.
+1. Gehen Sie zur Eingabe der Ausführungsplanung wie in der Vorlage für wiederkehrende Kampagnen vor: Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und bestimmen Sie Start- und Enddatum oder ergänzen Sie die Ausführungsplanung über den entsprechenden Link.
 
    >[!CAUTION]
    >
-   >Vorlagen für periodische Kampagnen erstellen neue Kampagnen entsprechend der zuvor festgelegten Planung. Die Konfiguration der Ausführungsplanung muss mit Vorsicht erfolgen, um die Adobe Campaign-Datenbank nicht zu überlasten.
+   >Vorlagen für periodische Kampagnen erstellen neue Kampagnen gemäß dem oben definierten Zeitplan. Sie muss daher sorgfältig ausgefüllt werden, um eine Überlastung der Adobe Campaign-Datenbank zu vermeiden.
 
-1. Mit Erreichen des Ausführungsbeginns wird die jeweilige Kampagne automatisch erstellt. Sie übernimmt alle in der Vorlage festgelegten Parameter.
+1. Nach Erreichen des Ausführungsstartdatums wird automatisch die passende Kampagne erstellt. Es übernimmt alle Eigenschaften seiner Vorlage.
 
    Jede Kampagne kann über die Ausführungsplanung in der Vorlage bearbeitet werden.
 
-   Jede periodische Kampagne enthält die gleichen Elemente und wird nach der Erstellung wie eine Standardkampagne verwaltet.
+   Jede periodische Kampagne enthält dieselben Elemente. Nach der Erstellung wird sie als Standardkampagne verwaltet.

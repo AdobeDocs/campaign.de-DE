@@ -7,8 +7,8 @@ level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '637'
+ht-degree: 89%
 
 ---
 
@@ -98,15 +98,15 @@ In der Kontrollinstanz müssen Sie für jedes externe Konto der **[!UICONTROL Me
 
 In der/den Ausführungsinstanz(en) müssen die folgenden technischen Workflows gestartet werden:
 
-* **[!UICONTROL Batch-Ereignisse verarbeiten]** (interner Name **[!UICONTROL batchEventsProcessing]** ): Mit diesem Workflow schlüsseln Sie Batch-Ereignisse in einer Warteschlange auf, bevor sie mit einer Nachrichtenvorlage verknüpft werden.
+* **[!UICONTROL Verarbeitung der Batch-Ereignisse]** (interner Name **[!UICONTROL batchEventsProcessing]**): dieser Workflow teilt die Batch-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
 * **[!UICONTROL Echtzeitereignisse verarbeiten]** (interner Name **[!UICONTROL rtEventsProcessing]**): Mit diesem Workflow schlüsseln Sie Echtzeitereignisse in einer Warteschlange auf, bevor sie mit einer Nachrichtenvorlage verknüpft werden.
-* **[!UICONTROL Ereignisstatus aktualisieren]**(interner Name: **[!UICONTROL updateEventStatus]**): Mit diesem Workflow weisen Sie dem Ereignis einen Status zu.
+* **[!UICONTROL Update des Ereignisstatus]** (interner Name **[!UICONTROL updateEventStatus]**): dieser Workflow ordnet jedem Ereignis einen Status zu.
 
   Mögliche Ereignisstatus sind:
 
-   * **[!UICONTROL Ausstehend]**: Das Ereignis befindet sich in der Warteschlange und wurde noch keiner Nachrichtenvorlage zugeteilt.
+   * **[!UICONTROL Ausstehend]**: Das Ereignis befindet sich in der Warteschlange. Es wurde noch keine Nachrichtenvorlage zugeordnet.
    * **[!UICONTROL Versand ausstehend]**: Das Ereignis befindet sich in der Warteschlange, wurde einer Nachrichtenvorlage zugeordnet und wird vom Versand verarbeitet.
-   * **[!UICONTROL Gesendet]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass die Nachricht gesendet wurde.
-   * **[!UICONTROL Vom Versand ignoriert]**: Der Versand konnte nicht erfolgen, z. B. aufgrund einer Quarantäne (Status wird den Versandlogs entnommen).
-   * **[!UICONTROL Versandfehler]**: Der Versand ist fehlgeschlagen (Status wird den Versandlogs entnommen).
-   * **[!UICONTROL Ereignis wurde nicht berücksichtigt]**: Das Ereignis konnte keiner Nachrichtenvorlage zugeordnet werden. Das Ereignis wird nicht erneut verarbeitet.
+   * **[!UICONTROL Gesendet]**: Dieser Status wird aus den Versandlogs kopiert. Dies bedeutet, dass der Versand durchgeführt wurde.
+   * **[!UICONTROL Vom Versand ignoriert]** Dieser Status wird aus den Versandlogs kopiert. Er bedeutet, dass kein Versand vorgenommen bzw. die Sendung ignoriert/nicht berücksichtigt wurde.
+   * **[!UICONTROL Versand fehlgeschlagen]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.
+   * **[!UICONTROL Ereignis wurde nicht berücksichtigt]**: Das Ereignis konnte keiner Nachrichtenvorlage zugeordnet werden. Das Ereignis wird nicht verarbeitet.

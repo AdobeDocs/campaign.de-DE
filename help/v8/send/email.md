@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '601'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +41,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
 1. **Auswählen der Vorlage**
 
-   Wählen Sie eine Versandvorlage aus und geben Sie Ihrem Versand eine Bezeichnung. Diese Bezeichnung ist nur für Benutzer der Adobe Campaign-Konsole sichtbar, nicht aber für die Empfänger. Diese Bezeichnung wird in der Liste der Sendungen angezeigt. Bestätigen Sie die Angaben mit der Schaltfläche **[!UICONTROL Fortfahren]**.
+   Wählen Sie eine Versandvorlage aus und benennen Sie Ihren Versand. Dieser Name ist nur für Benutzende der Adobe Campaign-Konsole sichtbar, nicht für Ihre Empfängerinnen und Empfänger. Diese Überschrift wird jedoch in Ihrer Versandliste angezeigt. Bestätigen Sie die Angaben mit der Schaltfläche **[!UICONTROL Fortfahren]**.
 
    ![](assets/dce_delivery_model.png)
 
@@ -77,7 +77,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
      ![](assets/add-a-link.png)
 
-   * Hinzufügen einer Mirrorseite
+   * Mirrorseite hinzufügen
 
      Um Empfangenden zu ermöglichen, Ihren Versandinhalt in einem Webbrowser zu sehen, können Sie einen Link zu einer [Mirrorseite](mirror-page.md) Ihrer Nachricht einfügen.
 
@@ -85,7 +85,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
      Weitere Informationen zur Verwaltung der Mirrorseite finden Sie in [diesem Abschnitt](mirror-page.md#link-to-mirror-page).
 
-1. Sie können zusätzliche Parameter für Ihre E-Mail definieren, z. B. das Senden einer Kopie Ihrer Nachrichten an eine BBC-Adresse, das Ändern des Nachrichtenformats, das Festlegen einer bestimmten Codierung usw. Weiterführende Informationen finden Sie in [diesem Abschnitt](email-parameters.md).
+1. Sie können zusätzliche Parameter für Ihre E-Mail definieren, z. B. das Senden einer Kopie Ihrer Nachrichten an eine BBC-Adresse, das Ändern des Nachrichtenformats, das Festlegen einer bestimmten Codierung usw. Weitere Informationen finden Sie [ (diesem Abschnitt](email-parameters.md).
 
 1. Wenn der Inhalt fertig ist, klicken Sie auf **Speichern**: Er wird nun in Ihrer Versandliste auf der Registerkarte **[!UICONTROL Kampagnen > Sendungen]** angezeigt.
 
@@ -100,7 +100,7 @@ In diesem [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/auto
 >* [Auswählen der Zielgruppe für Ihre E-Mail](../audiences/gs-audiences.md)
 >* [Validieren eines Versands und Durchführen von Testsendungen](preview-and-proof.md)
 >* [Konfigurieren und Durchführen des Versands](configure-and-send.md)
->* [Best Practices beim Versand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}
+>* [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"}
 
 ## Testen und Validieren von E-Mails
 

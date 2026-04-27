@@ -8,8 +8,8 @@ hide: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 100%
+source-wordcount: '1273'
+ht-degree: 88%
 
 ---
 
@@ -497,7 +497,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
    Bei Benachrichtigungsinhalten muss der Tracking-Empfang auf zwei Ebenen konfiguriert werden:
 
    * `onMessageReceived` (Anwendung nicht im Hintergrund): Die Implementierung wurde im vorherigen Abschnitt
-   * `onCreate` der Startaktivität vorgenommen (oder der Zielaktivität, wenn die Funktion `click_action` zum Einsatz kommt). (Anwendung nicht im Hintergrund). 
+   * `onCreate` der Startaktivität (oder der Zielaktivität, wenn `click_action`Funktion verwendet wird) (Anwendung nicht im Hintergrund).
 
    Dies muss zur selben Zeit wie das Öffnungs-/Klicktracking erfolgen.
 
@@ -593,7 +593,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
 1. **Tracking von stillen Benachrichtigungen**
 
-   Unter iOS können Sie stille Benachrichtigungen senden. Das sind Benachrichtigungen oder Daten, die direkt an eine mobile App gesendet werden, ohne Hinweise zu erzeugen. Adobe Campaign ermöglicht das Tracken dieser Benachrichtigungen.
+   Mit iOS können Sie stille Benachrichtigungen, eine Benachrichtigung oder Daten senden, die direkt an eine Mobile App gesendet werden, ohne sie anzuzeigen. Mit Adobe Campaign können Sie sie verfolgen.
 
    Um stille Benachrichtigungen zu tracken, gehen Sie analog zum folgenden Beispiel vor:
 
@@ -643,7 +643,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
    * **Status** ermöglicht festzustellen, ob eine Registrierung erfolgreich war oder ob ein Fehler aufgetreten ist.
 
-   * **ErrorReason** liefert zusätzliche Informationen zu den aufgetretenen Fehlern. Weiterführende Informationen zu möglichen Fehlern und deren Beschreibung finden Sie in der folgenden Tabelle.
+   * **ErrorReason** liefert weitere Informationen zu den aufgetretenen Fehlern. Weitere Informationen zu verfügbaren Fehlern und ihren Beschreibungen finden Sie in der folgenden Tabelle.
 
    | Status | Beschreibung | ErrorReason |
    | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
@@ -885,15 +885,15 @@ Gehen Sie hier folgendermaßen vor:
 
 * Ordnen Sie Ihre Inhaltserweiterung der von Adobe Campaign gesendeten Kategorie zu:
 
-  Wenn Ihre Mobile App ein Bild anzeigen soll, können Sie in Adobe Campaign als Kategoriewert &quot;image&quot; wählen und in Ihrer Mobile App eine Benachrichtigungserweiterung mit dem mit &quot;image&quot; festgelegten Parameter **UNNotificationExtensionCategory** erstellen. Wenn die Push-Benachrichtigung auf dem Gerät empfangen wird, wird die Erweiterung entsprechend dem definierten Kategoriewert abgerufen.
+  Wenn Ihre Mobile App ein Bild anzeigen soll, können Sie den Kategoriewert in Adobe Campaign auf „Bild“ setzen und in Ihrer Mobile App eine Benachrichtigungserweiterung erstellen, für die der Parameter **UNNotificationExtensionCategory** auf „Bild“ gesetzt ist. Wenn die Push-Benachrichtigung auf dem Gerät empfangen wird, wird die Erweiterung entsprechend dem definierten Kategoriewert aufgerufen.
 
 * Definieren Sie das Layout Ihrer Benachrichtigung.
 
-  Sie müssen ein Layout mit den entsprechenden Widgets definieren.  Für ein Bild trägt das Widget den Namen **UIImageView**.
+  Sie müssen ein Layout mit den entsprechenden Widgets definieren. Für ein Bild trägt das Widget den Namen **UIImageView**.
 
 * Stellen Sie Ihre Medien dar.
 
-  Sie müssen entsprechenden Code hinzufügen, um die Mediendaten an das Widget zu übertragen. Hier ist ein Beispiel für den Code eines Bildes:
+  Sie müssen Code hinzufügen, um die Mediendaten an das Widget weiterzuleiten. Im Folgenden finden Sie ein Beispiel für Code für ein Bild:
 
   ```sql
   #import "NotificationViewController.h"

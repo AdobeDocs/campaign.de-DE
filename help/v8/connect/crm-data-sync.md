@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
 source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 100%
+source-wordcount: '1410'
+ht-degree: 88%
 
 ---
 
@@ -39,7 +39,7 @@ Wählen Sie zunächst das externe Konto aus, das dem CRM-System entspricht, mit 
 
 ![](assets/crm-remote-obj.png)
 
-Die Konfiguration der Aktivität hängt von der gewählten Option ab und wird im Folgenden dargestellt:
+Die Konfiguration dieser Aktivität hängt von dem auszuführenden Prozess ab. Die verschiedenen Konfigurationen werden im Folgenden beschrieben.
 
 ## Import aus dem CRM {#importing-from-the-crm}
 
@@ -57,7 +57,7 @@ Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muste
 
    >[!CAUTION]
    >
-   >Um die Objekte aus dem CRM-System mit denen in der Adobe Campaign-Anwendung zu verknüpfen, wird die Kennung des CRM-Datensatzes benötigt. Diese wird automatisch bei Bestätigung des Dialogfensters hinzugefügt.
+   >Die Kennung des CRM-Datensatzes ist für die Verknüpfung von Objekten im CRM und in Adobe Campaign obligatorisch. Es wird automatisch hinzugefügt, wenn das Feld genehmigt wird.
    >
    >Außerdem ist das Datum der letzten CRM-seitigen Änderung erforderlich, um einen inkrementellen Datenimport zu ermöglichen.
 
@@ -85,7 +85,7 @@ Das Datum der letzten Synchronisation wird in einer im Konfigurationsfenster ang
 
 >[!NOTE]
 >
->Dieser Hinweis gilt nur für die allgemeine **[!UICONTROL CRM-Connector]**-Aktivität. Für andere CRM-Aktivitäten läuft der Prozess automatisch ab.
+>Dieser Hinweis gilt nur für die generische Aktivität **[!UICONTROL CRM-Connector]**. Für andere CRM-Aktivitäten erfolgt der Prozess automatisch.
 >
 >Diese Option muss manuell unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** erstellt und ausgefüllt werden. Es muss sich um eine Textoption handeln, deren Wert dem folgenden Format entspricht: **`yyyy/MM/dd hh:mm:ss`**.
 > 
@@ -98,7 +98,7 @@ Unten stehende Felder kommen (in der angegebenen Reihenfolge) zur Anwendung:
 * Bei Microsoft Dynamics: **modifiedon**,
 * Bei Salesforce.com: **LastModifiedDate**, **SystemModstamp**.
 
-Die Aktivierung der Option **[!UICONTROL Automatischer Index]** erzeugt drei Variablen, die im Synchronisations-Workflow über eine **[!UICONTROL JavaScript]**-Aktivität genutzt werden können. Diese Variablen sind:
+Durch Aktivieren der Option **[!UICONTROL Automatischer Index]** werden drei Variablen generiert, die im Synchronisations-Workflow über eine Aktivität vom Typ **[!UICONTROL JavaScript-]** verwendet werden können. Diese Aktivitäten sind:
 
 * **vars.crmOptionName**: Name der Option, die das Datum des letzten Imports enthält.
 * **vars.crmStartImport**: Startdatum (einschließlich) des letzten Datenimports.
@@ -114,10 +114,10 @@ Um eine effiziente Funktionsweise mit den diversen CRM-Systemen sicherzustellen,
 
 * Jedes Filterniveau darf nur einen Operatortyp verwenden.
 * Der AND-NOT-Operator wird nicht unterstützt.
-* Vergleiche dürfen sich nur auf Werte vom Typ &quot;ist leer&quot;/&quot;ist nicht leer&quot; oder auf Zahlen beziehen. Der Wert (rechte Spalte) wird ausgewertet und das Ergebnis muss eine Zahl sein. JOIN-Vergleiche werden nicht unterstützt.
+* Vergleiche dürfen nur Nullwerte (&#39;is empty&#39;/&#39;is not empty&#39; type) oder Zahlen betreffen. Das bedeutet, dass der Wert (rechte Spalte) bewertet wird und das Ergebnis dieser Bewertung eine Zahl sein muss. Vergleiche von JOIN-Typen werden daher nicht unterstützt.
 * Der in der rechten Spalte angegebene Wert wird in JavaScript ausgewertet.
 * Vergleiche vom Typ JOIN werden nicht unterstützt.
-* Der Ausdruck (linke Spalte) muss zwingend ein Feld sein. Er darf weder eine Kombination aus mehreren Ausdrücken, noch eine Ziffer usw. sein.
+* Der Ausdruck in der linken Spalte muss ein -Feld sein. Es kann sich nicht um eine Kombination aus mehreren Ausdrücken, einer Zahl usw. handeln.
 
 ### Sortierreihenfolge {#order-by}
 
@@ -147,7 +147,7 @@ Um Daten in Ihr CRM zu exportieren, erstellen Sie den folgenden Workflow-Typ:
 
 ![](assets/crm-export-diagram.png)
 
-1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Export in das CRM]** aus.
+1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Export in das CRM]**.
 1. Gehen Sie zur Dropdown-Liste **[!UICONTROL Remote-Objekt]** und wählen Sie das zu exportierende Objekt aus. Dieses Objekt entspricht einer der Tabellen, die bei der Connector-Konfiguration in Adobe Campaign erstellt wurden.
 
    >[!CAUTION]
@@ -182,7 +182,7 @@ Wählen Sie hierzu in der entsprechenden Spalte die anzuwendende Konvertierung a
 
 ![](assets/crm-task-import.png)
 
-Im **[!UICONTROL Standard]**-Modus entspricht die Konvertierung zumeist einem einfachen Kopieren/Einfügen der Daten. Die verschiedenen Zeitzonen werden in jedem Fall berücksichtigt.
+Der **[!UICONTROL Standard]**-Modus wendet die automatische Datenkonvertierung an, die in den meisten Fällen einer Kopie/Einfügung der Daten entspricht. Die Zeitzonenverwaltung wird jedoch angewendet.
 
 Darüber hinaus sind folgende Konvertierungen möglich:
 

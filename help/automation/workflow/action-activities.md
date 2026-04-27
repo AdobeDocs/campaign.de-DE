@@ -7,8 +7,8 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: feed4cc1-d654-45e7-a3b2-2bc46418a90b
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '198'
+workflow-type: tm+mt
+source-wordcount: '199'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 100%
 * **[Versand bearbeiten](delivery-control.md)**: erlaubt es, einen Versand zu starten, auszusetzen oder zu stoppen.
 * **[Extraktion (Datei)](extraction-file.md)**: erlaubt es, Daten aus einer Tabelle in einer Datei zu extrahieren.
 * **[Laden (SOAP)](loading-soap.md)**: dient dem Abruf von Daten über einen SOAP-Aufruf.
-* **[Lokale Validierung](local-approval.md)**: wird im dezentralen Marketing (optionales Modul) zur Konfiguration von Validierungen und Zielgruppen-Benachrichtigungen verwendet.
+* **[Lokale Validierung](local-approval.md)**: wird im dezentralen Marketing (optionales Modul) zur Konfiguration von Validierungen und Zielgruppenbestimmungs-Benachrichtigungen verwendet.
 * **[Nlserver-Modul](nlserver-module.md)**: startet ein nlserver-Modul mit seinen Argumenten.
 * **[Wiederkehrender Versand](recurring-delivery.md)**: dient der Konfiguration einer Versandvorlage im Rahmen einer Kampagne.
 * **[SQL-Code und JavaScript-Code](sql-code-and-javascript-code.md)**: führt das in der Aktivität angegebene Skript (SQL bzw. JavaScript) aus.

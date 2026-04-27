@@ -7,15 +7,15 @@ level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 94%
+source-wordcount: '801'
+ht-degree: 90%
 
 ---
 
 
 # Campaign-Add-on für verbesserte Sicherheit {#enhanced-security}
 
-Diese Seite ist Teil der [öffentlich verfügbaren empfohlenen sicheren Konfigurationsanleitung von Adobe &#x200B;](security.md#public-guidance) Campaign v8.
+Diese Seite ist Teil der [öffentlich verfügbaren empfohlenen sicheren Konfigurationsanleitung von Adobe ](security.md#public-guidance) Campaign v8.
 
 Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet [!DNL Adobe Campaign] ein neues Add-on für **verbesserte Sicherheit**.
 
@@ -55,7 +55,7 @@ Um die CMK-Integration in Campaign zu aktivieren, führen Sie die folgenden Schr
 
 1. Geben Sie Ihren [Amazon-Ressourcennamen (Schlüssel-ARN)](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} für [!DNL Adobe Campaign] frei. Wenden Sie sich dazu an den Adobe-Support. <!--or Adobe transition manager?-->
 
-1. Erstellen und testen Sie die Amazon EventBridge-Regeln, um die Überwachung Ihrer Schlüssel durch Adobe zu aktivieren. [Weitere Informationen](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
+1. Erstellen und testen Sie die Amazon EventBridge-Regeln, um die Überwachung Ihrer Schlüssel durch Adobe zu ermöglichen&#x200B; [Weitere Informationen](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}.
 
 
 ### Schutzmechanismen und Einschränkungen {#cmk-callouts}
@@ -66,7 +66,7 @@ Die folgenden Schutzmechanismen und Einschränkungen gelten für die CMK-Integra
 
 * Nur [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)-Schlüssel werden unterstützt. Es können keine Schlüssel verwendet werden, die von Kundinnen und Kunden außerhalb von KMS erzeugt wurden.&#x200B;
 
-* Bei der Ersteinrichtung ist mit Ausfallzeiten zu rechnen.Die Dauer der Ausfallzeit hängt von der Größe Ihrer Datenbank ab.
+* Bei der Ersteinrichtung ist mit Ausfallzeiten zu rechnen. &#x200B;Die Dauer der Ausfallzeit hängt von der Größe der Datenbank ab.
 
 * Als Kundin bzw. Kunde besitzen und verwalten Sie den Schlüssel. Bei jeder Änderung Ihres Schlüssels müssen Sie sich an Adobe wenden.
 

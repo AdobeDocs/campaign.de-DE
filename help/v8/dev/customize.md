@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 88%
+source-wordcount: '525'
+ht-degree: 79%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Campaign nutzt Datenschemata für folgende Aufgaben:
 * Definieren von Beziehungen zwischen den unterschiedlichen Datenobjekten in Campaign
 * Definieren und Beschreiben der einzelnen Felder eines jeden Objekts
 
-Um ein Feld etwa einer vorhandenen Tabelle namens &quot;Empfänger&quot; (nms:recipient) hinzuzufügen, müssen Sie dieses Schema erweitern.
+Um beispielsweise ein Feld zu einer vorhandenen Tabelle hinzuzufügen, z. B. der Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern.
 
 Es stehen zwei Modi zur Tabellenerweiterung zur Verfügung:
 
@@ -57,7 +57,7 @@ Näheres dazu, wie Sie ein vorhandenes Eingabeformular ändern oder ein neues Fo
 
 ## Anpassen von Dashboards{#gs-custom-dashboards}
 
-In der Benutzeroberfläche von Adobe Campaign werden zahlreiche Web-Anwendungen bereitgestellt, die es Ihnen ermöglichen, auf Empfänger, Sendungen, Kampagnen, gespeicherte Assets usw. zuzugreifen, sie zu verwalten und mit ihnen zu interagieren. In der Benutzeroberfläche erscheinen sie in Form von Dashboards, die aus einer einzigen Seite bestehen.
+Die Benutzeroberfläche von Adobe Campaign nutzt viele Web-Anwendungen für den Zugriff auf, die Verwaltung und die Interaktion mit Empfängern, Sendungen, Kampagnen, Lagern usw. Sie werden in der Benutzeroberfläche in Form von Dashboards mit nur einer Seite angezeigt.
 
 Die integrierten Web-Anwendungen werden im Ordner **Administration > Konfiguration > Web-Anwendungen** des Explorers gespeichert.
 

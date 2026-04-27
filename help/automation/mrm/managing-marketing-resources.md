@@ -6,9 +6,9 @@ feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
-workflow-type: ht
-source-wordcount: '1172'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1175'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ Gehen Sie wie folgt vor, um eine Marketing-Ressource hinzuzufügen:
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Marketing-Ressourcen]** aus.
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
+1. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus.
    ![](assets/add-a-mkt-resource.png)
 1. Ziehen Sie die Datei in das Fenster „Marketing-Ressource“, um sie zum Campaign-Server hochzuladen. Sie können auch den Link **[!UICONTROL Datei auf den Server laden...]** verwenden.
    ![](assets/mkt-resource-creation.png)
@@ -47,7 +47,7 @@ Sie können auch die Benutzer oder Benutzergruppen auswählen, die für die Ress
 
 Diese Benutzer werden per E-Mail benachrichtigt, wenn der Ressourcenvalidierungsprozess gestartet wird.
 
-Wenn kein Validierungsverantwortlicher ausgewählt wurde, kann die Ressource **[!UICONTROL nicht]** zur Validierung unterbreitet werden.
+Wenn kein validierungsverantwortlicher Benutzer ausgewählt wurde, **[!UICONTROL kann]** die Ressource nicht zur Validierung unterbreitet werden.
 
 Verwenden Sie die Registerkarte **[!UICONTROL Audit]**, um einen Testsendungs-Leser hinzuzufügen und ein Verfügbarkeitsdatum für die Ressource festzulegen. Nach diesem Datum wird sie mit dem Status **[!UICONTROL Überfällig]** angezeigt.
 
@@ -103,7 +103,7 @@ Um eine Ressource zu genehmigen, klicken Sie auf dem Dashboard auf **[!UICONTROL
 
 Autorisierte Benutzerinnen und Benutzer können dann die Validierung akzeptieren oder ablehnen. Diese Aktion kann über den Link in der E-Mail-Benachrichtigung oder über die Schaltfläche **[!UICONTROL Genehmigen]** in der Client-Konsole ausgeführt werden.
 
-Im Genehmigungsfenster kann ein Kommentar eingegeben werden.
+Im Validierungsfenster kann ein Kommentar eingegeben werden.
 
 ![](assets/mkt-resource-approval-confirmation.png)
 
@@ -111,11 +111,11 @@ Navigieren Sie zur Registerkarte **[!UICONTROL Tracking]**, um Genehmigungen zu 
 
 >[!NOTE]
 >
->Neben dem in jeder Marketing-Ressource bestimmten Validierungsverantwortlichen sind auch Benutzende mit Administrator-Berechtigungen sowie der Ressourcen-Verantwortliche befugt, die jeweilige Ressource zu genehmigen.
+>Neben dem in jeder Marketing-Ressource bestimmten Validierer sind auch Benutzer mit Administrator-Berechtigungen sowie der Ressourcen-Verantwortliche befugt, die jeweilige Ressource zu validieren.
 
 ### Veröffentlichen von Ressourcen {#publishing-a-resource}
 
-Nach bestätigter Validierung muss die Marketing-Ressource veröffentlicht werden. Der Veröffentlichungsprozess ist separat, den jeweiligen Nutzerbedürfnissen entsprechend zu implementieren. So können Ressourcen beispielsweise auf einem Extranet oder einem beliebigen anderen Server veröffentlicht, bzw. einem externen Dienstleister übermittelt werden usw.
+Nach der Genehmigung muss die Marketing-Ressource veröffentlicht werden. Der Publikationsprozess muss entsprechend den Anforderungen des Unternehmens spezifisch implementiert werden. Das bedeutet, dass Ressourcen in einem Extranet oder auf einem anderen Server veröffentlicht werden können, bestimmte Informationen an einen externen Dienstleister gesendet werden können usw.
 
 Geben Sie den Zugriff auf eine Ressource frei, indem Sie auf die Schaltfläche **[!UICONTROL Veröffentlichen]** in ihrem Dashboard klicken.
 
@@ -123,7 +123,7 @@ Geben Sie den Zugriff auf eine Ressource frei, indem Sie auf die Schaltfläche *
 
 Die Ressourcenveröffentlichung kann auch über einen Workflow automatisiert werden.
 
-Eine Ressource zu veröffentlichen bedeutet, sie verfügbar zu machen, zum Beispiel zur Verwendung in einer Aufgabe. Der eigentliche Vorgang der Veröffentlichung hängt von der Art der Ressource ab: Ein Flyer zum Beispiel kann zum Druck als Datei an einen Dienstleister geschickt oder aber auf einer Webseite online gestellt werden.
+Ressourcen veröffentlichen bedeutet, sie zur Verwendung bereitzustellen (z. B. durch eine andere Aufgabe). Die Veröffentlichung als solche hängt von der Art Ihrer Ressource ab: Für einen Flyer kann die Veröffentlichung bedeuten, dass die Datei an einen Drucker gesendet wird, für eine Web-Agentur, dass sie auf einer Website veröffentlicht wird usw.
 
 Damit Adobe Campaign eine Ressource veröffentlichen kann, müssen Sie einen geeigneten Workflow erstellen und ihn mit der Ressource verknüpfen. Öffnen Sie dazu das Dialogfeld **[!UICONTROL Erweiterte Einstellungen…]** der Ressource und wählen Sie dann den gewünschten Workflow im Feld **[!UICONTROL Anschlussvorgang]** aus.
 
@@ -131,7 +131,7 @@ Damit Adobe Campaign eine Ressource veröffentlichen kann, müssen Sie einen gee
 
 Der Workflow wird ausgeführt:
 
-* Wenn der Validierungsverantwortliche der Veröffentlichung (oder, falls dieser nicht definiert wurde, der Ressourcen-Verantwortliche) auf **[!UICONTROL Ressource veröffentlichen]** klickt.
+* der Validierer der Veröffentlichung (oder, wenn dieser nicht definiert wurde, der Ressourcen-Verantwortliche) auf **[!UICONTROL Ressource veröffentlichen]** klickt
 * Wenn die Ressource über eine Aufgabe zur Erstellung einer Marketing-Ressource verwaltet wird und die Aufgabe den Status **[!UICONTROL Abgeschlossen]** hat. Zudem muss die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** in der Aufgabe aktiviert worden sein. [Weitere Informationen](creating-and-managing-tasks.md#marketing-resource-creation-task))
 
 Wenn ein Workflow nicht sofort gestartet wird (beispielsweise wenn der Workflow gestoppt), ändert sich der Status der Ressource zu **[!UICONTROL Veröffentlichung ausstehend]**. Nach dem Start des Workflows ändert sich der Status der Ressource in **[!UICONTROL Veröffentlicht]**. Dieser Status berücksichtigt keine möglichen Fehler im Veröffentlichungsprozess. Überprüfen Sie den Status Ihres Workflows, um sicherzustellen, dass er ordnungsgemäß ausgeführt wurde.
@@ -146,7 +146,7 @@ Gehen Sie hierzu im Dashboard der Kampagne zur Registerkarte **[!UICONTROL Bearb
 
 ![](assets/link-a-mkt-resource-to-a-campaign.png)
 
-Sie können die Ressourcen nach Status, Art und Ressourcentyp filtern oder einen benutzerdefinierten Filter anwenden.
+Sie können die Ressourcen nach Status, Dokumentart und Ressourcentyp filtern oder einen benutzerdefinierten Filter anwenden.
 
 Verwenden Sie die Schaltfläche **[!UICONTROL Details]**, um die Ressource zu bearbeiten und in der Vorschau anzuzeigen.
 
@@ -180,6 +180,6 @@ Gehen Sie wie folgt vor, um eine Marketing-Ressource mit einem Lager zu verknüp
 
    Bei Bedarf können Sie die ausgewählte Ressource über das Symbol **[!UICONTROL Link bearbeiten]** rechts von der Ressource bearbeiten.
 
-1. Geben Sie den Anfangsbestand sowie den Warnbestand an und speichern Sie.
+1. Geben Sie den Anfangsbestand sowie den Meldebestand an und speichern Sie.
 
 Das Lager wird auf der Registerkarte **Lager** der Marketing-Ressource angezeigt.

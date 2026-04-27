@@ -8,13 +8,13 @@ exl-id: df494786-5950-4646-aa9c-4dde45845057
 source-git-commit: 5b23be4cb8f0896d2482e525e416713b1a6c4514
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 18%
+ht-degree: 11%
 
 ---
 
 # Zugriff auf Trackinglogs {#accessing-the-tracking-logs}
 
-Der technische Workflow **[!UICONTROL Tracking]** hat die Aufgabe, nach dem Versand und der Aktivierung des Trackings die Tracking-Informationen abzurufen. Standardmäßig wird er stündlich ausgeführt.
+Wenn der Versand ausgeführt und das Tracking aktiviert wurde, **[!UICONTROL der technische Workflow]** Tracking) für das Abrufen der Tracking-Daten zuständig. Sie wird standardmäßig stündlich ausgeführt.
 
 ## Tracking in Empfängerprofilen anzeigen {#recipient-tracking}
 

@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: ht
-source-wordcount: '2442'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2450'
+ht-degree: 91%
 
 ---
 
@@ -52,11 +52,11 @@ Für jeden Prozess, für den eine Validierung aktiviert wurde, werden Benachrich
 
 Diese Benachrichtigungen können für einzelne Kampagnenvorlagen, für einzelne Kampagnen oder für einen Versand aktiviert werden.
 
-Alle Vorgänge, für die eine Validierung erforderlich ist, werden in der Kampagnenvorlage über die Registerkarte **[!UICONTROL Eigenschaften]** > **[!UICONTROL Erweiterte Kampagnenparameter...]** > **[!UICONTROL Validierungen]** ausgewählt. Auf dieser Registerkarte werden Validierungsverantwortliche oder Gruppen von Validierungsverantwortlichen ausgewählt. Diese Personen erhalten Benachrichtigungen, es sei denn, diese Option ist nicht aktiviert. [Weitere Informationen](#approving-processes).
+Alle Aufträge, für die eine Validierung erforderlich ist, werden in der Kampagnenvorlage über die Registerkarte **[!UICONTROL Eigenschaften]** > **[!UICONTROL Erweiterte Kampagnenparameter...]** > **[!UICONTROL Validierungen]** ausgewählt. Auf dieser Registerkarte werden Validierungsverantwortliche oder Gruppen von Validierungsverantwortlichen ausgewählt. Diese Personen erhalten Benachrichtigungen, es sei denn, diese Option ist nicht aktiviert. [Weitere Informationen](#approving-processes).
 
 Diese Einstellungen können für jede mit dieser Vorlage erstellte Kampagne sowie für jeden Versand einzeln überschrieben werden. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Eigenschaften]** des Versands, dann auf die Registerkarte **[!UICONTROL Validierungen]**.
 
-Im nachfolgenden Beispiel erfordert der Inhalt des Briefpost-Versands keine Validierung:
+Im nachfolgenden Beispiel wird der Inhalt des Briefpost-Versands nicht zur Validierung unterbreitet:
 
 ![](assets/approval-not-enabled.png)
 
@@ -69,7 +69,7 @@ Der Validierungsprozess für Sendungen wird in [diesem Abschnitt](#review-and-ap
 
 ## Auswahl von Validierungsverantwortlichen {#select-reviewers}
 
-Für jeden Validierungstyp werden die für die Validierung verantwortlichen Benutzer oder Benutzergruppen aus der Dropdown-Liste im Versand ausgewählt. Weitere Benutzer können mit dem Link **[!UICONTROL Bearbeiten...]** hinzugefügt werden. In diesem Fenster können Sie auch die Validierungsfrist bearbeiten. Standardmäßig haben Validierungsverantwortliche ab dem Unterbreitungsdatum drei Tage Zeit, um einen Prozess zu validieren. Um eine automatische Erinnerung hinzuzufügen, können Sie den Link **[!UICONTROL Erinnerung hinzufügen]** verwenden.
+Für jeden Validierungstyp werden die für die Validierung verantwortlichen Benutzer oder Benutzergruppen aus der Dropdown-Liste im Versand ausgewählt. Weitere Benutzer können mit dem Link **[!UICONTROL Bearbeiten...]** hinzugefügt werden. In diesem Fenster können Sie auch die Validierungs-Deadline bearbeiten. Standardmäßig haben Validierungsverantwortliche ab dem Unterbreitungsdatum drei Tage Zeit, um einen Prozess zu validieren. Um eine automatische Erinnerung hinzuzufügen, können Sie den Link **[!UICONTROL Erinnerung hinzufügen]** verwenden.
 
 ![](assets/add-reviewers.png)
 
@@ -77,14 +77,14 @@ Wenn keine Validierungsverantwortlichen angegeben werden, ist der/die Kampagnenv
 
 ![](assets/campaign-owner.png)
 
-Alle anderen, die in Adobe Campaign über **[!UICONTROL Admin]**-Rechte verfügen, können ebenfalls Vorgänge validieren, erhalten jedoch keine Benachrichtigungen.
+Alle anderen, die in Adobe Campaign über **[!UICONTROL Admin]**-Rechte verfügen, können ebenfalls Aufträge validieren, erhalten jedoch keine Benachrichtigungen.
 
 >[!NOTE]
 >
 >Standardmäßig kann der/die Kampagnenverantwortliche keine Validierung durchführen und auch nicht den Versand starten, wenn Validierungsverantwortliche festgelegt wurden. Als Administrator von Adobe Campaign können Sie dieses Verhalten ändern und es den Kampagnenverantwortlichen ermöglichen, Sendungen zu validieren/zu starten, indem Sie die Option **NmsCampaign_Activate_OwnerConfirmation** erstellen und auf **1** setzen.
 
 
-Wenn eine Liste von Validierungsverantwortlichen definiert ist, ist ein Vorgang validiert, sobald ihn eine validierungsverantwortliche Person validiert hat. Der Validierungs-Link ist dann nicht mehr in den Kampagnen- und Versand-Dashboards verfügbar. Wenn das Senden von Benachrichtigungen aktiviert ist und ein anderer Validierungsverantwortlicher auf den Validierungs-Link in der Benachrichtigung klickt, wird ihm mitgeteilt, dass ein anderer Validierungsverantwortlicher den Vorgang bereits validiert hat.
+Wenn eine Liste von Validierungsverantwortlichen definiert ist, ist ein Auftrag validiert, sobald ihn eine validierungsverantwortliche Person validiert hat. Der Validierungs-Link ist dann nicht mehr in den Kampagnen- und Versand-Dashboards verfügbar. Wenn das Senden von Benachrichtigungen aktiviert ist und ein anderer Validierungsverantwortlicher auf den Validierungs-Link in der Benachrichtigung klickt, wird ihm mitgeteilt, dass ein anderer Validierungsverantwortlicher den Auftrag bereits validiert hat.
 
 ![](assets/delivery-target-already-approved.png)
 
@@ -110,7 +110,7 @@ Die Phasen, für die eine Validierung erforderlich ist, werden im Kampagnen-Dash
 
 Folgende Validierungsvorgänge stehen für Kampagnensendungen zur Verfügung:
 
-* **Validierung von Zielgruppe, Inhalt und Budget**
+* **Zielgruppenbestimmung, Inhalt und Budget**
 
   Wenn die Optionen **[!UICONTROL Zielgruppenvalidierung aktivieren]**, **[!UICONTROL Inhaltsvalidierung aktivieren]** oder **[!UICONTROL Budgetvalidierung aktivieren]** im Fenster der Validierungseinstellungen ausgewählt sind, werden die entsprechenden Links in den Kampagnen- und Versand-Dashboards angezeigt.
 
@@ -150,7 +150,7 @@ Folgende Validierungsvorgänge stehen für Kampagnensendungen zur Verfügung:
 
 >[!CAUTION]
 >
->Zur Validierung eines Inhalts ist ein Testversandzyklus obligatorisch. Mit Testsendungen können Sie die Anzeige von Informationen sowie Personalisierungsdaten validieren und die Funktionsfähigkeit von Links überprüfen.
+>Um einen Inhalt zu genehmigen, ist ein Testversandzyklus obligatorisch. Mit Testsendungen können Sie die Anzeige von Informationen und Personalisierungsdaten validieren und prüfen, ob Links funktionieren.
 >
 >Die im Folgenden beschriebenen Funktionen für die Inhaltsvalidierung beziehen sich auf den Testversand.
 
@@ -168,7 +168,7 @@ Es ist möglich, einen Validierungszyklus für Inhalte zu konfigurieren. Wählen
 
    * über die Client-Konsole oder die Web-Schnittstelle, in der Versandverfolgung oder dem Kampagnen- oder Versand-Dashboard. Im Kampagnen-Dashboard kann die Liste der durchgeführten Testsendungen durch Öffnen des Links **[!UICONTROL Inbox Rendering…]** angezeigt werden. Klicken Sie auf das Symbol **[!UICONTROL Details]** rechts von der Liste, um ihren Inhalt anzuzeigen.
 
-1. Die für die Kampagne verantwortliche Person wird per E-Mail darüber benachrichtigt, ob der Inhalt validiert wurde oder nicht. Die für die Kampagne verantwortliche Person kann zu jedem Zeitpunkt den Zyklus der Inhaltsvaldierung neu starten. Öffnen Sie hierzu den Link oberhalb der Zeile **[!UICONTROL Inhaltsstatus]** im Kampagnen-Dashboard (auf Ebene des Versands) und klicken Sie auf **[!UICONTROL Inhaltsvalidierung zurücksetzen, um sie erneut durchzuführen]**.
+1. Der Kampagnenverantwortliche wird per E-Mail benachrichtigt, ob der Inhalt validiert wurde oder nicht. Die für die Kampagne verantwortliche Person kann zu jedem Zeitpunkt den Zyklus der Inhaltsvaldierung neu starten. Öffnen Sie hierzu den Link oberhalb der Zeile **[!UICONTROL Inhaltsstatus]** im Kampagnen-Dashboard (auf Ebene des Versands) und klicken Sie auf **[!UICONTROL Inhaltsvalidierung zurücksetzen, um sie erneut durchzuführen]**.
 
 #### Zuweisen einer Inhaltsbearbeitung {#assign-content-editing}
 
@@ -195,7 +195,7 @@ Der Benutzer kann der Validierung einen Kommentar hinzufügen, bevor er den Inha
 
 #### Externe Inhaltsvalidierung {#external-content-approval}
 
-Mit dieser Option können Sie eine externe Person festlegen, die für die Genehmigung des Versand-Renderings zuständig ist, wie beispielsweise für die Konsistenz der Markenkommunikation, die Tarife, usw. Wenn die Option **[!UICONTROL Externe Inhaltsvalidierung]** im Fenster der Validierungseinstellungen aktiviert ist, werden zwischen der Inhaltsvalidierung durch die Inhaltsverantwortlichen und dem Benachrichtigungsversand an die Kampagnenverantwortlichen mehrere Validierungsetappen hinzugefügt:
+Mit dieser Option können Sie einen externen Benutzer definieren, der für die Validierung des Versand-Renderings zuständig ist, z. B. für die Markenkommunikation, die Konsistenz der Tarife usw. Wenn die Option **[!UICONTROL Externe Inhaltsvalidierung]** im Fenster der Validierungseinstellungen ausgewählt ist, werden mehrere Validierungsschritte zwischen der Inhaltsvalidierung und dem Versand der Benachrichtigung an den Kampagnenverantwortlichen hinzugefügt:
 
 1. Der externe Inhaltsverantwortliche wird per E-Mail benachrichtigt, sobald der Inhalt intern validiert wurde und die externe Validierung erfolgen muss.
 1. Die Benachrichtigungs-E-Mail enthält Links zu den Testsendungen, die der Überprüfung der Darstellung des Versandinhalts dienen, und eine Schaltfläche, über die der Versandinhalt validiert oder abgelehnt werden kann.
@@ -204,9 +204,9 @@ Diese Links sind nur verfügbar, wenn eine oder mehrere Testsendungen durchgefü
 
 ### Validieren einer Extraktionsdatei {#approve-an-extraction-file}
 
-Für Offline-Sendungen erzeugt Adobe Campaign eine Extraktionsdatei, die, je nach Konfiguration, dem Router übermittelt wird. Der Inhalt der Datei hängt von der verwendeten Exportvorlage ab.
+Für Offline-Sendungen generiert Adobe Campaign eine Extraktionsdatei, die je nach Einrichtung an den Router gesendet wird. Ihr Inhalt hängt von der verwendeten Exportvorlage ab.
 
-Sobald Inhalt, Zielgruppe und Budget validiert sind, erhält der Versand den Status **[!UICONTROL Extraktion ausstehend]**, bis der Extraktions-Workflow für Kampagnen gestartet wird.
+Sobald Inhalt, Zielgruppenbestimmung und Budget validiert sind, erhält der Versand den Status **[!UICONTROL Extraktion ausstehend]**, bis der Extraktions-Workflow für Kampagnen gestartet wird.
 
 Wenn das Datum der Extraktionsanfrage erreicht ist, wird die Extraktionsdatei erstellt und der Versandstatus wird zu **[!UICONTROL Datei zu validieren]**.
 
@@ -216,7 +216,7 @@ Nachdem die Datei validiert wurde, können Sie die Benachrichtigungs-E-Mail an d
 
 ## Validierungsmodi {#approval-modes}
 
-Vorgänge können im Kampagnen-Dashboard, in der Registerkarte zum Versand-Tracking, im Versand-Dashboard oder über die an die Validierungsverantwortlichen gesendete E-Mail-Benachrichtigung validiert werden.
+Aufträge können im Kampagnen-Dashboard, in der Registerkarte zum Versand-Tracking, im Versand-Dashboard oder über die an die Validierungsverantwortlichen gesendete E-Mail-Benachrichtigung validiert werden.
 
 ### Im Dashboard validieren {#approval-via-the-dashboard}
 
@@ -224,7 +224,7 @@ Um einen Auftrag über die Client-Console oder die Web-Schnittstelle zu genehmig
 
 Beispielsweise nach Ausführung der Versandanalyse:
 
-1. Wählen Sie **[!UICONTROL Zielgruppe validieren]**.
+1. Wählen Sie **[!UICONTROL Zielgruppenbestimmung validieren]**.
 
 ![](assets/target-validation-from-console.png)
 
@@ -244,12 +244,12 @@ Wenn ein Prozess abgelehnt wurde, werden die Informationen im Versand-Dashboard 
 
 ### Über eine Benachrichtigung validieren {#approval-via-notification-messages}
 
-So validieren Sie einen Vorgang über die [Benachrichtigung](#notifications):
+So validieren Sie einen Auftrag über die [Benachrichtigung](#notifications):
 
 1. Klicken Sie auf den Link in der Benachrichtigung.
 1. Melden Sie sich bei Adobe Campaign an.
 1. Überprüfen Sie die zu validierenden Informationen.
-1. Wählen Sie **[!UICONTROL Akzeptieren]** oder **[!UICONTROL Ablehnen]** und verfassen Sie gegebenenfalls einen Kommentar.
+1. Wählen Sie **[!UICONTROL Akzeptieren]** oder **[!UICONTROL Ablehnen]** und erfassen Sie gegebenenfalls einen Kommentar.
 1. Validieren Sie den Inhalt. Ihre Auswahl und Ihr Kommentar werden in den Validierungsprotokollen angezeigt.
 
 >[!NOTE]
@@ -278,11 +278,11 @@ In der Benutzeroberfläche sind Validierungsprotokolle verfügbar:
 
 >[!NOTE]
 >
->Nachdem ein Vorgang genehmigt oder abgelehnt wurde, können die anderen Validierungsverantwortlichen ihn nicht mehr ändern.
+>Nachdem ein Auftrag genehmigt oder abgelehnt wurde, können die anderen Validierungsverantwortlichen ihn nicht mehr ändern.
 
 ### Automatische/manuelle Validierungen {#automatic-and-manual-approval}
 
-Wenn bei der Erstellung eines Zielgruppen-Workflows die Validierung automatisch erfolgt (Standardmodus), zeigt Adobe Campaign den Validierungs-Link an oder sendet eine Benachrichtigung, sobald eine Validierung erforderlich ist.
+Wenn bei der Erstellung eines Zielgruppen-Workflows die Validierung automatisch erfolgt (Standardmodus), zeigt Adobe Campaign den Validierungslink an oder sendet eine Benachrichtigung, sobald eine Validierung erforderlich ist.
 
 Um den Validierungsmodus (manuell oder automatisch) auszuwählen, klicken Sie auf die Registerkarte **[!UICONTROL Bearbeiten > Eigenschaften]** der Kampagne oder der Kampagnenvorlage, dann auf **[!UICONTROL Erweiterte Kampagnenparameter...]** und schließlich auf die Registerkarte **[!UICONTROL Validierungen]**.
 par
@@ -292,23 +292,23 @@ par
 >
 >Der gewählte Validierungsmodus wird auf alle Sendungen der Kampagne angewandt.
 
-Bei der Erstellung eines Zielgruppen-Workflows vermeidet die manuelle Validierung die Erstellung von Validierungs-Links oder den automatischen Versand von Benachrichtigungen. Das Kampagnen-Dashboard bietet einen Link **[!UICONTROL Zielgruppe zur Genehmigung übermitteln]**, um den Genehmigungsprozess manuell zu starten.
+Bei der Erstellung eines Zielgruppen-Workflows vermeidet die manuelle Validierung die Erstellung von Validierungs-Links oder den automatischen Versand von Benachrichtigungen. Das Kampagnen-Dashboard bietet einen Link **[!UICONTROL Zielgruppenbestimmung zur Genehmigung übermitteln]**, um den Genehmigungsprozess manuell zu starten.
 
-Über eine Bestätigungsnachricht können die Validierungen der ausgewählten Prozesse für diesen Versand erlaubt werden.
+Über eine Bestätigungsnachricht können die Validierungen der ausgewählten Aufgräge für diesen Versand erlaubt werden.
 
-Daraufhin werden die Validierungsschaltflächen im Dashboard der Kampagne (für diesen Versand), im Dashboard des Versands sowie in der Versandverfolgung angezeigt. Wenn die Benachrichtigungen aktiviert wurden, werden diese parallel versendet.
+Die Validierungsschaltflächen werden dann im Kampagnen-Dashboard (für diesen Versand), im Versand-Dashboard und im Versand-Tracking angezeigt. Wenn Benachrichtigungen aktiviert sind, werden sie parallel gesendet.
 
-Diese Art der Validierungsaktivierung ermöglicht es, die Zielbestimmungsrecherchen zu bearbeiten, ohne die validierenden Benutzer fälschlicherweise zu benachrichtigen.
+Diese Art der Validierungsaktivierung ermöglicht es, die Zielgruppenbestimmungsrecherchen zu bearbeiten, ohne die validierenden Benutzer fälschlicherweise zu benachrichtigen.
 
 ## Benachrichtigungen {#notifications}
 
-Benachrichtigungen sind spezifische E-Mails, die den validierungsverantwortlichen Benutzern gesendet werden, um diese über Prozesse mit ausstehender Validierung zu informieren. Der in der Nachricht enthaltene Link führt zu einer Webschnittstelle, in der sich der Benutzer identifizieren muss. Nach der Anmeldung kann er die betreffenden Elemente einsehen, den Prozess validieren oder nicht und seine Entscheidung mit einem Kommentar begründen.
+Benachrichtigungen sind spezifische E-Mail-Nachrichten, die an Validierungsverantwortliche gesendet werden, um sie darüber zu informieren, dass eine Genehmigung für einen Prozess aussteht. Wenn der Benutzer auf den Link in der Nachricht klickt, wird eine Authentifizierungsseite angezeigt, und nach der Anmeldung kann der Benutzer die Informationen einsehen und den Auftrag genehmigen oder ablehnen. Im Genehmigungsfenster kann auch ein Kommentar eingegeben werden.
 
 Der Inhalt der E-Mail-Benachrichtigungen kann angepasst werden. Siehe [Inhalt der Benachrichtigungen](#notification-content).
 
 ### Aktivieren/Deaktivieren von Benachrichtigungen {#enabling-disabling-notification}
 
-Benachrichtigungs-E-Mails werden automatisch versendet, wenn die Validierung des entsprechenden Vorgangs in der Kampagnenvorlage, der Kampagne selbst oder im betreffenden Versand aktiviert wurde. Die Benachrichtigungen können jedoch auch deaktiviert werden, um nur Validierungen über die Client-Konsole zu erlauben.
+Benachrichtigungs-E-Mails werden automatisch versendet, wenn die Validierung des entsprechenden Auftrags in der Kampagnenvorlage, der Kampagne selbst oder im betreffenden Versand aktiviert wurde. Die Benachrichtigungen können jedoch auch deaktiviert werden, um nur Validierungen über die Client-Konsole zu erlauben.
 
 Öffnen Sie hierzu das Fenster der Validierungseinstellungen der Kampagne oder der betreffenden Kampagnenvorlage (Registerkarte **[!UICONTROL Bearbeiten > Eigenschaften]** > **[!UICONTROL Erweiterte Kampagnenparameter...]** > **[!UICONTROL Validierungen]**) und wählen Sie **[!UICONTROL Keine Benachrichtigungen senden]**.
 

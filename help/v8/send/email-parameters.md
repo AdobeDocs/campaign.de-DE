@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 70%
+source-wordcount: '987'
+ht-degree: 57%
 
 ---
 
@@ -31,11 +31,11 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
 * **[!UICONTROL Empfängerangaben berücksichtigen]** (Standardmodus)
 
-  Das Nachrichtenformat wird anhand der im Empfängerprofil im Feld **[!UICONTROL E-Mail-Format]** gespeicherten Informationen bestimmt. Wenn ein Empfänger ein bestimmtes Format angegeben hat, wird ihm die Nachricht in diesem Format zugestellt. Wenn das Feld leer ist, wird die Nachricht im Multipart-Alternative-Format versandt (siehe unten).
+  Das Nachrichtenformat wird anhand der im Empfängerprofil gespeicherten Daten definiert und standardmäßig im Feld **[!UICONTROL E-Mail-Format]** gespeichert (@emailFormat). Falls ein Empfänger Nachrichten in einem bestimmten Format erhalten möchte, werden sie in diesem Format gesendet. Wenn das Feld nicht ausgefüllt ist, wird eine Multipart-Alternative-Nachricht gesendet (siehe unten).
 
 * **[!UICONTROL E-Mail-Programm des Empfängers das beste Format wählen lassen]**
 
-  Die Nachricht enthält beide Formate: Text und HTML. Das beim Empfänger angezeigte Format hängt von der Konfiguration des E-Mail-Programms ab (Multipart-Alternative).
+  Die Nachricht enthält beide Formate: Text und HTML. Welches Format beim Empfang angezeigt wird, hängt von der Konfiguration des E-Mail-Programms der Empfängerin bzw. des Empfängers ab (Multipart-Alternative).
 
   >[!IMPORTANT]
   >
@@ -43,7 +43,7 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
 * **[!UICONTROL Alle Nachrichten im Textformat senden]**
 
-  Die Nachricht wird im Textformat gesendet. Das HTML-Format wird nicht gesendet, sondern nur für die Mirrorseite verwendet, auf die ein Empfänger gelangt, wenn er auf den entsprechenden Link in der Nachricht klickt.
+  Die Nachricht wird im Textformat gesendet. Das HTML-Format wird nicht gesendet, sondern nur für die Mirrorseite verwendet, wenn der Empfänger auf die Nachricht klickt.
 
 <!--
 >[!NOTE]
@@ -79,7 +79,7 @@ Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschn
 
 ## Abmelde-Liste mit einem Klick aktivieren {#one-click-list-unsubscribe}
 
-Die Abmelde-URL mit einem Klick ist ein Link oder eine Schaltfläche neben den E-Mail-Absenderinformationen, über den bzw. die Empfänger Ihre Mailing-Listen sofort mit einem einzigen Klick abmelden können. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=de#list-unsubscribe){target="_blank"}-->
+Die Abmelde-URL mit einem Klick ist ein Link oder eine Schaltfläche neben den E-Mail-Absenderinformationen, über den bzw. die Empfänger Ihre Mailing-Listen sofort mit einem einzigen Klick abmelden können. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Es wird als **Abmelden**-Link in den E-Mail-Schnittstellen der ISPs angezeigt. Beispiel:
 
@@ -119,7 +119,7 @@ Je nach E-Mail-Client und der Methode, die er zum Opt-out verwendet, kann das Kl
 
 >[!NOTE]
 >
->Sie können auch die Methoden [One-Click List-Unsubscribe](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} und [„mailto“ List-Unsubscribe](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuell festlegen. Die detaillierten Schritte werden im Experience Cloud [Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#list-unsubscribe){target="_blank"} beschrieben.
+>Sie können auch die Methoden [One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} und [„mailto“ List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuell festlegen. Die detaillierten Schritte werden im Experience Cloud [Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#list-unsubscribe){target="_blank"} beschrieben.
 
 
 ## Hinzufügen von SMTP-Headern {#adding-smtp-headers}
@@ -141,6 +141,6 @@ Werte werden bei Bedarf automatisch verschlüsselt.
 
 ## Generieren einer Mirrorseite {#generating-mirror-page}
 
-Eine Mirrorseite ist eine HTML-Seite, die über einen Webbrowser online abgerufen werden kann und deren Inhalt mit dem der E-Mail identisch ist. Dies kann nützlich sein, wenn bei Ihren Empfängerinnen und Empfängern Rendering-Probleme oder fehlerhafte Bilder auftreten, wenn sie versuchen, Ihre E-Mail in ihrem Posteingang anzuzeigen.
+Die Mirrorseite ist eine HTML-Seite, auf die online über einen Webbrowser zugegriffen werden kann. Ihr Inhalt ist identisch mit dem der E-Mail. Dies kann nützlich sein, wenn bei Ihren Empfängerinnen und Empfängern Rendering-Probleme oder fehlerhafte Bilder auftreten, wenn sie versuchen, Ihre E-Mail in ihrem Posteingang anzuzeigen.
 
 Weitere Informationen dazu, wie Sie einen Link zur Mirrorseite einfügen, finden Sie in [diesem Abschnitt](mirror-page.md).

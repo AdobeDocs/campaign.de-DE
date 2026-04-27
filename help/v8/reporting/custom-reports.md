@@ -6,14 +6,14 @@ role: User, Developer
 exl-id: 39ab5cd9-cc84-430b-a8b3-691e377851fa
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 81%
+source-wordcount: '321'
+ht-degree: 79%
 
 ---
 
 # Wichtige Schritte zum Erstellen eines benutzerdefinierten Berichts{#key-steps-to-create-a-report}
 
-Um Statistiken über Daten Ihrer Campaign-Datenbank zu erzeugen, können Sie Berichte erstellen und ihren Inhalt sowie ihre Darstellung nach Bedarf anpassen. Die Berichte können gegebenenfalls mit anderen Benutzern geteilt werden.
+Um Statistiken zu den Daten in Ihrer Campaign-Datenbank zu erstellen, können Sie Berichte erstellen und ihren Inhalt sowie ihr Layout Ihren Bedürfnissen entsprechend anpassen. Diese Berichte können für andere Benutzer freigegeben werden.
 
 >[!NOTE]
 >

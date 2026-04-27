@@ -4,9 +4,9 @@ description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 20
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 source-git-commit: b3ca222fb28c1a5d35190e41cfbbe463c5d1bcad
-workflow-type: ht
-source-wordcount: '1949'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 ## Version 8.4.2 {#release-8-4-2}
 
-_28. Oktober 2022_
+_Samstag, 28. Oktober 2022_
 
 **Fehlerbehebungen**
 
@@ -36,7 +36,7 @@ _28. Oktober 2022_
 
 ## Version 8.4.1 {#release-8-4-1}
 
-_30. September 2022_
+_Samstag, 30. September 2022_
 
 **Neue Funktionen**
 
@@ -52,7 +52,7 @@ _30. September 2022_
 <ul><li>Verwenden Sie den Ziel-Connector von Adobe Campaign Managed Cloud, um Experience Platform-Segmente zur Aktivierung an Adobe Campaign zu senden.</li>
 <li>Verwenden Sie den Quell-Connector von Adobe Campaign Managed Cloud, um die Versand- und Trackinglogs von Adobe Campaign an Adobe Experience Platform zu senden.</li>
 </ul>
-<p>Weitere Informationen finden Sie in der <a href="../connect/ac-aep.md">entsprechenden Dokumentation</a>.</p>
+<p>Weitere Informationen finden Sie im <a href="../connect/ac-aep.md">entsprechenden Handbuch</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -70,7 +70,7 @@ _30. September 2022_
 <ul> 
 <li><p>Nachrichten auf X (ehemals Twitter) senden: Mit Adobe Campaign können Sie Nachrichten direkt an Ihr X-Konto posten. Sie können auch Direktnachrichten an all Ihre Follower senden.
 </p></li>
-<li><p>Neue Kontakte erfassen: Adobe Campaign kann automatisch Profildaten erfassen, sodass Sie Zielgruppen-Kampagnen durchführen und Cross-Channel-Strategien umsetzen können.
+<li><p>Neue Kontakte erfassen: Adobe Campaign kann automatisch Profildaten erfassen, sodass Sie Zielgruppenbestimmungs-Kampagnen durchführen und Cross-Channel-Strategien umsetzen können.
 </p></li>
 </ul>
 <p>In der <a href="../connect/ac-tw.md">detaillierten Dokumentation</a> erfahren Sie, wie Sie Campaign und X miteinander verbinden.</p>
@@ -111,7 +111,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 * Es wurde ein Problem in Workflows behoben, das dazu führen konnte, dass Dateien auf dem Server nicht aktualisiert wurden, wenn die Aktivität **Laden (Datei)** verwendet wurde. Der Prozess wurde bei 100 % angehalten, aber nie beendet. (NEO-47269)
 * Fehlerkorrektur – Jetzt tritt kein Problem mehr während des Postupgrades in japanischen Umgebungen auf. (NEO-46640)
 * Es wurde ein Problem behoben, das auftreten konnte, wenn ein Versand während des MTA-Prozesses eine bestimmte Größe erreichte. (NEO-46097)
-* Fehlerkorrektur – Trackinglogs geben nun problemlos Daten über den Browser der Empfängerin bzw. des Empfängers zurück.  (NEO-46612)
+* Fehlerkorrektur – Trackinglogs geben nun problemlos Daten über den Browser der Empfängerin bzw. des Empfängers zurück. (NEO-46612)
 * Es wurde ein Problem behoben, das zu Personalisierungsproblemen beim Versand von SMS-Nachrichten über einen externen Versandmodus führte. (NEO-46415)
 * Es wurde ein Problem behoben, das zu Duplikaten in Trackinglogs führen konnte. (NEO-46409)
 * Es wurde ein Problem behoben, das verhinderte, dass der technische Workflow **[!UICONTROL Staging-Daten replizieren]** (ffdaReplicateStagingData) gestoppt wurde, selbst wenn während seiner Ausführung ein Fehler auftrat. (NEO-46280)
@@ -133,7 +133,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 >
 > Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../start/connect.md#download-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
-_7. Oktober 2022_
+_Samstag, 7. Oktober 2022_
 
 **Fehlerbehebungen**
 
@@ -150,7 +150,7 @@ _7. Oktober 2022_
 * Es wurde ein Performance-Problem bei der Verwendung von auf Kalendern basierenden Schüben behoben. (NEO-48451)
 * Fehlerkorrektur – Im Bildschirm der Versandliste wird jetzt nach der Erstellung eines neuen Zielgruppen-Mappings für ein benutzerdefiniertes Schema keine Fehlermeldung mehr angezeigt. (NEO-49237)
 * Fehlerkorrektur – Jetzt tritt kein Problem mehr auf, wenn ein Versand während des MTA-Prozesses eine bestimmte Größe erreicht. (NEO-46097)
-* Fehlerkorrektur – Trackinglogs geben nun problemlos Daten über den Browser der Empfängerin bzw. des Empfängers zurück.  (NEO-46612)
+* Fehlerkorrektur – Trackinglogs geben nun problemlos Daten über den Browser der Empfängerin bzw. des Empfängers zurück. (NEO-46612)
 * Fehlerkorrektur – Jetzt tritt kein Problem mehr während des Postupgrades in japanischen Umgebungen auf. (NEO-46640)
 * Fehlerkorrektur – Jetzt tritt kein Problem mehr bei der Verwendung der **Abfrage**-Aktivität und der Filterung einer Tabelle auf. Wenn ein Spaltenname das Wort „Update“ enthielt, kam es zu einem Kompilierungsfehler mit einer ungültigen Kennung und folgender Meldung: „Anzahl der Zeilen aktualisiert“. (NEO-46485)
 * Es wurde ein Problem behoben, das verhinderte, dass der technische Workflow **[!UICONTROL Staging-Daten replizieren]** (ffdaReplicateStagingData) gestoppt wurde, selbst wenn während seiner Ausführung ein Fehler auftrat. (NEO-46280)
@@ -159,7 +159,7 @@ _7. Oktober 2022_
 
 ## Version 8.3.8 {#release-8-3-8}
 
-_18. Mai 2022_
+_Donnerstag, 18. Mai 2022_
 
 **Neue Funktionen**
 
@@ -172,7 +172,7 @@ _18. Mai 2022_
 <tbody> 
 <tr> 
 <td> <p>In iOS 15 fügte Apple das Konzept der „Dringlichen Mitteilungen“ hinzu, das dem App-Entwickler die Möglichkeit gibt, den Fokusmodus zu umgehen, wenn eine Benachrichtigung als dringlich eingestuft wird und den Benutzer in Echtzeit erreichen muss.</p>
-<p>Weitere Informationen finden Sie in der <a href="../send/push.md#send-notifications-on-ios">entsprechenden Dokumentation</a>.</p>
+<p>Weitere Informationen finden Sie im <a href="../send/push.md#send-notifications-on-ios">entsprechenden Handbuch</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -187,7 +187,7 @@ _18. Mai 2022_
 <tbody> 
 <tr> 
 <td> <p>Campaign v8 ist jetzt mit dem Adobe Privacy Core Service integriert. Die von Privacy Core Service an alle Experience Cloud-Lösungen übertragenen Datenschutzanfragen werden von Campaign mithilfe eines speziellen Workflows automatisch verarbeitet.</p>
-<p>Weitere Informationen finden Sie in der <a href="privacy.md">entsprechenden Dokumentation</a>.</p>
+<p>Weitere Informationen finden Sie im <a href="privacy.md">entsprechenden Handbuch</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -203,7 +203,7 @@ _18. Mai 2022_
 <tr>
 <td>
 <p>Mit Campaign Response Management können Sie den Erfolg und den ROI Ihrer Marketing-Kampagnen oder Angebotsvorschläge über alle Kanäle hinweg messen: E-Mail, Mobile, Briefpost usw.</p>
-<p>Weitere Informationen finden Sie in der <a href="../start/campaigns.md#response-manager-add-on">entsprechenden Dokumentation</a>.</p>
+<p>Weitere Informationen finden Sie im <a href="../start/campaigns.md#response-manager-add-on">entsprechenden Handbuch</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -212,13 +212,13 @@ _18. Mai 2022_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Distributed Marketing</strong><br /> </th> 
+<th> <strong>Verteiltes Marketing</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Mit dem verteilten Marketing von Campaign können Sie Kooperationskampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Entitäten (Filialen, regionale Agenturen usw.) implementieren. Über einen freigegebenen Arbeitsbereich (Kampagnenkits) können Sie Kampagnenvorlagen erstellen und diese Ihren lokalen Entitäten vorschlagen.</p>
-<p>Weitere Informationen finden Sie in der <a href="../start/campaigns.md#distributed-marketing-add-on">entsprechenden Dokumentation</a>.</p>
+<td> <p>Dezentrales Marketing in Campaign ermöglicht die Implementierung kollaborativer Kampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Stellen (Verkaufsstellen, regionale Agenturen usw.). Über einen freigegebenen Arbeitsbereich (Kampagnenkits) können Sie Kampagnenvorlagen erstellen und diese Ihren lokalen Entitäten vorschlagen.</p>
+<p>Weitere Informationen finden Sie im <a href="../start/campaigns.md#distributed-marketing-add-on">entsprechenden Handbuch</a>.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -235,23 +235,23 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](c
 
 * Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3 wird jetzt in Campaign unterstützt. [Mehr dazu](../config/external-accounts.md#bounce-mails-external-account)
 * Es wurden kritische Fehlerbehebungen bei der Web-API des Microsoft Dynamics-Connectors vorgenommen.
-* Das neue Schreibrecht für Benutzer- und Gruppenschemas (operatorWrite) wurde hinzugefügt, um Benutzern das Einfügen, Aktualisieren und Löschen von Benutzer- (xtk:operator) und Benutzergruppen- (xtk:group)-Schemata zu ermöglichen.
+* Das neue Schreibrecht für Benutzer- und Gruppenschemas (operatorWrite) wurde hinzugefügt, um Benutzern das Einfügen, Aktualisieren und Löschen von Benutzer- (xtk:operator) und Benutzergruppen- (xtk:group)-Schemas zu ermöglichen.
   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
 * Mehrere aktive LINE-Konten können jetzt auf einer einzigen Mid-Sourcing-Lösung konfiguriert werden.
 * Die Anzahl der Standardverbindungen für den Webprozess wurde von 50 auf 150 erhöht.
-* Campaign verfügt über eine Reihe neuer Schutzmechanismen, um das Einfügen duplizierter Schlüssel in eine Snowflake-Datenbank zu verhindern. [Mehr dazu](../architecture/keys.md)
+* Campaign verfügt über eine Reihe neuer Schutzmechanismen, um das Einfügen duplizierter Schlüssel in eine Snowflake-Datenbank zu verhindern. [Weitere Informationen](../architecture/keys.md)
 
 **Fehlerbehebungen**
 
 * Fehlerkorrektur: Bei der Verwendung von Testadressen und Kontrollgruppen im selben wiederkehrenden Versand tritt jetzt kein Fehler mehr auf. (NEO-41197)
 * Fehlerkorrektur: Bei FFDA wird der E-Mail-Versand für alle Empfänger, die zum selben deliveryPart gehören, während des Sendevorgangs (bis zu 256) nicht mehr blockiert, wenn Personalisierungsblöcke eines der folgenden Zeichen enthalten: `' & < > "`. Diese Zeichen werden jetzt in Personalisierungsblöcken unterstützt (Beispiel: firstname=&quot;Brian O&#39;Neil&quot;). (NEO-43184)
-* Es wurde ein Problem behoben, das dazu führen konnte, dass der Tracking-Workflow bei der Verwendung eines benutzerdefinierten Schemas als Zielgruppe-Mapping fehlschlug. Beim Generieren des broadLog-Schemas über den Zielgruppen-Mapping-Assistenten stellen wir nun sicher, dass der Typ des Fremdlinks zu einem benutzerdefinierten Zielgruppenschema korrekt ist. (NEO-43506)
+* Es wurde ein Problem behoben, das dazu führen konnte, dass der Tracking-Workflow bei der Verwendung eines benutzerdefinierten Schemas als Zielgruppe-Mapping fehlschlug. Beim Generieren des broadLog-Schemas über den Zielgruppen-Mapping-Assistenten stellen wir nun sicher, dass der Typ des Fremdlinks zu einem benutzerdefinierten Zielgruppenbestimmungs-Schema korrekt ist. (NEO-43506)
 * Fehlerkorrektur: Die FFDA-Bereitstellungs-Workflows schlagen jetzt in anderen Sprachen als Englisch nicht mehr fehl. (NEO-44561)
 
 ## Version 8.2.10 {#release-8-2-10}
 
-_2. Februar 2022_
+_Donnerstag, 2. Februar 2022_
 
 **Fehlerbehebungen**
 
