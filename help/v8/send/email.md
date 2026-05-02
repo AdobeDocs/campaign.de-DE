@@ -85,7 +85,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen E-Mail-Versand in Adobe Campai
 
      Weitere Informationen zur Verwaltung der Mirrorseite finden Sie in [diesem Abschnitt](mirror-page.md#link-to-mirror-page).
 
-1. Sie können zusätzliche Parameter für Ihre E-Mail definieren, z. B. das Senden einer Kopie Ihrer Nachrichten an eine BBC-Adresse, das Ändern des Nachrichtenformats, das Festlegen einer bestimmten Codierung usw. Weitere Informationen finden Sie [ (diesem Abschnitt](email-parameters.md).
+1. Sie können zusätzliche Parameter für Ihre E-Mail definieren, z. B. das Senden einer Kopie Ihrer Nachrichten an eine BBC-Adresse, das Ändern des Nachrichtenformats, das Festlegen einer bestimmten Codierung usw. Weitere Informationen finden Sie [&#x200B; (diesem Abschnitt](email-parameters.md).
 
 1. Wenn der Inhalt fertig ist, klicken Sie auf **Speichern**: Er wird nun in Ihrer Versandliste auf der Registerkarte **[!UICONTROL Kampagnen > Sendungen]** angezeigt.
 
