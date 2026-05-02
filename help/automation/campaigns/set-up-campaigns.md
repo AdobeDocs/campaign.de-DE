@@ -61,4 +61,4 @@ Wenn diese Schritte abgeschlossen sind, können Sie [die Sendungen starten](mark
 
 In diesem Video werden die wichtigsten Konzepte von Marketing-Kampagnen vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326572?captions=ger&quality=12)
