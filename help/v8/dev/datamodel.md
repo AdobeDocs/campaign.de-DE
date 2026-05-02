@@ -72,5 +72,5 @@ Weitere Informationen zu Replikationsstrategien und -verfahren finden Sie in [di
 
 **Verwandte Themen**
 
-Erfahren Sie in [&#x200B; Abschnitt , wie Sie Profile importieren.](../start/import.md)
-Weitere Informationen zu Campaign-Audiences finden [&#x200B; in diesem Abschnitt](../start/audiences.md)
+Erfahren Sie in [ Abschnitt , wie Sie Profile importieren.](../start/import.md)
+Weitere Informationen zu Campaign-Audiences finden [ in diesem Abschnitt](../start/audiences.md)

@@ -69,7 +69,7 @@ Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muste
 
    >[!CAUTION]
    >
-   >Einschränkungen in Bezug auf Datenfiltermodi werden in [&#x200B; diesem Abschnitt](#filtering-data) beschrieben.
+   >Einschränkungen in Bezug auf Datenfiltermodi werden in [ diesem Abschnitt](#filtering-data) beschrieben.
 
 1. Wählen Sie die Option **[!UICONTROL Automatischen Index verwenden...]** aus, um die inkrementelle Synchronisation der Objekte zwischen dem CRM-System und Adobe Campaign in Abhängigkeit vom letzten Änderungsdatum automatisch zu verwalten.
 

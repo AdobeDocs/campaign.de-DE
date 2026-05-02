@@ -116,7 +116,7 @@ Für jede Kampagne stehen folgende Funktionen zur Verfügung:
 
 Für jede Kampagne werden Aufträge, Ressourcen und Sendungen in einem Dashboard zusammengefasst dargestellt. Auf dieser Benutzeroberfläche können Sie Marketing-Aktionen verwalten und koordinieren.
 
-Mit Adobe Campaign können Sie partizipative Prozesse für die Erstellung und Validierung der unterschiedlichen Etappen Ihrer Kampagnen einrichten: Budget-, Zielgruppen- und Inhaltsvalidierung usw. Diese Orchestrierung wird in [diesem Abschnitt) &#x200B;](marketing-campaign-approval.md).
+Mit Adobe Campaign können Sie partizipative Prozesse für die Erstellung und Validierung der unterschiedlichen Etappen Ihrer Kampagnen einrichten: Budget-, Zielgruppen- und Inhaltsvalidierung usw. Diese Orchestrierung wird in [diesem Abschnitt) ](marketing-campaign-approval.md).
 
 ![](assets/campaigns-dashboard-approval-tab.png)
 
@@ -208,4 +208,4 @@ Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden
 
 In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426473?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

@@ -34,7 +34,7 @@ Bei Fehlern stehen zwei Lösungen zur Verfügung:
 * Lösung 1 — `XtkSecurity_FeatureFlag_SqlSensitive`
 * Lösung 2 — `XtkSecurity_SqlSensitive_Methods`
 
-Weitere Informationen [&#x200B; Best Practices finden &#x200B;](sql-code-and-javascript-code.md#important-notes) unter SQL-Code .
+Weitere Informationen [ Best Practices finden ](sql-code-and-javascript-code.md#important-notes) unter SQL-Code .
 
 ## SQL-Daten-Management-Aktivität konfigurieren {#configuring-the-sql-data-management-activity}
 

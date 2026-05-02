@@ -66,7 +66,7 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
   ![](assets/mkt_distr_8.png)
 
-  Das angebotene Formular wird in einer Web-Anwendung definiert, die in der Vorlage unter dem Link **[!UICONTROL Erweiterte Kampagnenparameter...]** in der Dropdown-Liste des Felds **[!UICONTROL Web-Schnittstelle]** ausgewählt werden muss. Siehe [Lokale Kampagne erstellen (Standardformular)](examples.md#creating-a-local-campaign--by-form-).
+  Das angebotene Formular wird in einer Web-Anwendung definiert, die in der Vorlage unter dem Link **[!UICONTROL Erweiterte Kampagnenparameter...]** in der Dropdown-Liste des Felds **[!UICONTROL Web-Schnittstelle]** ausgewählt werden muss. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](examples.md#creating-a-local-campaign--by-form-).
 
   >[!NOTE]
   >
@@ -342,7 +342,7 @@ Für jede Lokalstelle werden Validierungsverantwortliche für die Kampagnenbeste
 
 ### Abbruch einer Bestellung {#canceling-an-order}
 
-Die Zentralstelle hat die Möglichkeit, eine Bestellung über die entsprechende Schaltfläche im Dashboard der Bestellung zu löschen und damit abzubrechen.**&#x200B;**
+Die Zentralstelle hat die Möglichkeit, eine Bestellung über die entsprechende Schaltfläche im Dashboard der Bestellung zu löschen und damit abzubrechen.****
 
 ![](assets/mkg_dist_local_op_cancel.png)
 

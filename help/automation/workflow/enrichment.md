@@ -215,7 +215,7 @@ Die Aktivität **[!UICONTROL Angebotsmodul]** speichert diese Informationen stan
 Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten:
 
 1. Erstellen Sie eine Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die nach einer Abfrage und vor einer Versandaktivität platziert wird.
-1. Klicken Sie auf der Registerkarte &quot;Anreicherung&quot; der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
+1. Klicken Sie im Anreicherung-Tab der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 

@@ -38,4 +38,4 @@ Allgemeine Importe werden über das Menü **[!UICONTROL Profile und Zielgruppen 
 
 ![](assets/new-import-job.png)
 
-Die Schritte zum Ausführen eines allgemeinen Imports werden in der [Dokumentation zu Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de#getting-started){target="_blank"}.
+Die Schritte zum Ausführen eines allgemeinen Imports werden in der [Dokumentation zu Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de#getting-started){target="_blank"}.

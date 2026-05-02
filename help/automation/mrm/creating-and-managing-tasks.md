@@ -36,7 +36,7 @@ Eine Liste der Aufgaben kann über den Tab **[!UICONTROL Kampagnen]** angezeigt 
 
 Hier werden alle Aufgaben des aktuellen Benutzers aufgeführt.
 
-Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschrittsstatus einer Aufgabe &#x200B;](#progress-status-of-a-task).
+Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschrittsstatus einer Aufgabe ](#progress-status-of-a-task).
 
 ### Aufgaben filtern {#filtering-tasks}
 
@@ -387,7 +387,7 @@ Sie können der Aufgabe und der Benachrichtigungs-E-Mail einen Anhang hinzufüge
 
 ### Relationen zwischen Aufgaben {#links-between-tasks}
 
-Mit der Schaltfläche **[!UICONTROL Eigenschaften]** in den Aufgaben können Sie die Verknüpfungen zwischen Aufgaben in einer Kampagne definieren. Sie können Aufgaben mithilfe einer Gruppenaufgabe in Unteraufgaben aufteilen (siehe [Gruppierung von Aufgaben &#x200B;](#linked-tasks)) oder Abhängigkeiten zwischen den Aufgaben definieren (siehe [Abhängigkeit von Aufgaben](#grouping-tasks)).
+Mit der Schaltfläche **[!UICONTROL Eigenschaften]** in den Aufgaben können Sie die Verknüpfungen zwischen Aufgaben in einer Kampagne definieren. Sie können Aufgaben mithilfe einer Gruppenaufgabe in Unteraufgaben aufteilen (siehe [Gruppierung von Aufgaben ](#linked-tasks)) oder Abhängigkeiten zwischen den Aufgaben definieren (siehe [Abhängigkeit von Aufgaben](#grouping-tasks)).
 
 #### Gruppierung von Aufgaben {#linked-tasks}
 
@@ -447,7 +447,7 @@ Zusätzlich zum Ausführungsstatus kann eine Aufgabe mit einem Fortschrittsstatu
 
 Sie können die Liste der Aufgaben nach Erfüllungs- oder Fortschrittstatus filtern.
 
-Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben &#x200B;](#accessing-tasks).
+Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben ](#accessing-tasks).
 
 ### Vollständiger Lebenszyklus einer Aufgabe {#complete-task-life-cycle}
 

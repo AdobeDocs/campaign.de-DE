@@ -36,7 +36,7 @@ Die wichtigsten Schritte zum Senden von Adobe Experience Platform-Zielgruppen an
 
       ![](assets/aep-destination.png){width="800" align="center"}
 
-  Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [&#128279;](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+  Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 
 * Verwenden Sie eine **Quellverbindung** von Adobe Campaign Managed Cloud Services, um die Versand- und Trackinglogs von Adobe Campaign an Adobe Experience Platform zu senden:
 
@@ -65,4 +65,4 @@ Die wichtigsten Schritte zum Synchronisieren von Adobe Experience Platform-Profi
 1. Konfigurieren Sie die Profilattribute, die Sie in Adobe Campaign aktualisieren möchten.
 1. Sobald der Ablauf konfiguriert wurde, werden die ausgewählten Profilattribute mit Adobe Campaign synchronisiert und für alle Profile aktualisiert, die auf die im Ziel konfigurierten Segmente ausgerichtet sind.
 
-Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [&#128279;](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}

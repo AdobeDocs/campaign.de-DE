@@ -74,7 +74,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 >[!TAB Einfach]
 
-1. Wählen Sie **[!UICONTROL Einfach]** aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Einfach]** aus.
 
    ![](assets/rich_push_basic.png)
 
@@ -119,7 +119,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 >[!TAB Karussell]
 
-1. Wählen Sie **[!UICONTROL Karussell]** aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Karussell]** aus.
 
    ![](assets/rich_push_carousel.png)
 
@@ -203,7 +203,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    ![](assets/rich_push_input_4.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Produktkatalog]
 
@@ -307,7 +307,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Rahmenlos]
 
@@ -329,7 +329,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!ENDTABS]
 
