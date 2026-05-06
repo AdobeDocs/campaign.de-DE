@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
 source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 100%
+source-wordcount: '1070'
+ht-degree: 95%
 
 ---
 
@@ -28,24 +28,24 @@ Eine Vorlage kann teilweise oder vollständige Konfigurationseinstellungen entha
 * Inhalt, Firmenlogo oder Signatur
 * Andere Versandeigenschaften, z. B. die Gültigkeit der Ressource, die Parameter für erneute Versuche oder die Quarantäneeinstellungen.
 
-![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#delivery-template-video)
+![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#delivery-template-video).
 
 Versandvorlagen werden im Ordner **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** des Explorers gespeichert. In Adobe Campaign können Sie zwei Arten von Vorlagen verwenden:
 
-1. In Adobe Campaign **integrierte** Versandvorlagen – Integrierte Vorlagen sind für jeden Kanal verfügbar. Sie dürfen NICHT geändert und NICHT gelöscht werden. Sie enthalten eine Basiskonfiguration für jeden Versandkanal. Als Admin können Sie Standardwerte festlegen oder bestimmte Funktionen für Endbenutzende beschränken, z. B. die Änderung von Tracking-Parametern und Absender-E-Mail-Adressen.  Integrierte Versandvorlagen werden in der Vorlagenliste fett gedruckt angezeigt.
+1. In Adobe Campaign **integrierte** Versandvorlagen – Integrierte Vorlagen sind für jeden Kanal verfügbar. Sie dürfen NICHT geändert und NICHT gelöscht werden. Sie enthalten eine Basiskonfiguration für jeden Versandkanal. Als Admin können Sie Standardwerte festlegen oder bestimmte Funktionen für Endbenutzende beschränken, z. B. die Änderung von Tracking-Parametern und Absender-E-Mail-Adressen. Integrierte Versandvorlagen werden in der Vorlagenliste fett gedruckt angezeigt.
 
 1. **Benutzerdefinierte** Versandvorlagen – Als Adobe Campaign-Admin können Sie neue Versandvorlagen erstellen. Es empfiehlt sich, eine integrierte Vorlage zu duplizieren und zu aktualisieren, anstatt eine Vorlage von Grund auf neu zu erstellen. Sie können beispielsweise eine E-Mail-Versandvorlage konfigurieren. Wenn Benutzende einen Versand aus dieser Vorlage erstellen, müssen sie dann nur noch den Text oder den HTML-Inhalt eingeben. Alle anderen Einstellungen sind bereits festgelegt.
 
 >[!NOTE]
 >
->Welche Vorlagen Ihnen zur Verfügung stehen, hängt von Ihren Benutzerrechten, der Konfiguration Ihrer Instanz und dem jeweiligen Anwendungskontext ab. Wenn Sie beispielsweise einen Informationsdienst erstellen, können Sie eine Vorlage zum Versand von Bestätigungsnachrichten verwenden. In diesem Kontext werden nur Vorlagen mit dem Zielgruppen-Mapping „Abonnements“ angezeigt. Andere Vorlagen sind in diesem Zusammenhang nicht sichtbar. Weitere Informationen hierzu finden Sie unter [Arbeiten mit Zielgruppen-Mappings](../audiences/target-mappings.md) und [Verwalten von Abonnements und Abmeldungen](../start/subscriptions.md).
+>Die verfügbaren Vorlagen hängen von Ihren Zugriffsrechten, Ihrer Instanzkonfiguration und dem Kontext ab. Wenn Sie beispielsweise einen Informations-Service erstellen, können Sie eine Versandvorlage für Bestätigungsnachrichten verknüpfen: Sie können dann nur auf die Vorlagen zugreifen, deren Zielgruppen-Mapping das Abonnement-Mapping ist. Andere Vorlagen sind in diesem Zusammenhang nicht sichtbar. Weitere Informationen hierzu finden Sie unter [Arbeiten mit Zielgruppen-Mappings](../audiences/target-mappings.md) und [Verwalten von Abonnements und Abmeldungen](../start/subscriptions.md).
 
 
 ## Erstellen einer Vorlage {#create-a-delivery-template}
 
-Um eine Versandvorlage zu erstellen, können Sie eine integrierte Vorlage duplizieren oder einen existierenden Versand in eine Vorlage konvertieren.  Sie können eine Versandvorlage auch von Grund auf neu erstellen. Dies wird jedoch nicht empfohlen. Diese Methoden werden nachfolgend beschrieben.
+Um eine Versandvorlage zu erstellen, können Sie eine integrierte Vorlage duplizieren oder einen existierenden Versand in eine Vorlage konvertieren. Sie können eine Versandvorlage auch von Grund auf neu erstellen. Dies wird jedoch nicht empfohlen. Diese Methoden werden nachfolgend beschrieben.
 
-### Duplizieren einer bestehenden Vorlage{#copy-an-existing-template}
+### Angebotsvorlagen duplizieren{#copy-an-existing-template}
 
 Campaign verfügt über eine Reihe integrierter Vorlagen für jeden Kanal: E-Mail, Push, SMS, Briefpost und mehr.
 
@@ -98,16 +98,16 @@ Gehen Sie wie folgt vor, um eine Versandvorlage von Grund auf zu konfigurieren:
 1. Passen Sie über die Schaltfläche **Eigenschaften** die Einstellungen an.
 1. Bestätigen Sie im Tab **Allgemein** die in den Dropdown-Menüs **Ausführungsordner**, **Ordner** und **Routing** ausgewählten Speicherorte oder ändern Sie sie.
 1. Tragen Sie der Kategorie **E-Mail-Parameter** den E-Mail-Betreff und die Zielpopulation ein.
-1. Fügen Sie Ihren **HTML-Inhalt** ein, um Ihre Vorlage zu personalisieren. Sie können auch einen Mirrorseite-Link und einen Abmelde-Link angeben.[](../send/mirror-page.md)
+1. Fügen Sie Ihren **HTML-Inhalt** ein, um Ihre Vorlage zu personalisieren. Sie können auch einen Mirrorseite-Link und einen Abmelde-Link angeben.[&#128279;](../send/mirror-page.md)
 1. Wählen Sie die Registerkarte **Vorschau**. Wählen Sie im Dropdown-Menü **Personalisierung testen** die Option **Empfänger** aus, um sich Ihre Vorlage in der Vorschau anzusehen.
 1. Klicken Sie auf **Speichern**. Ihre Vorlage kann jetzt in einem Versand verwendet werden.
 
 
-## Verwenden von Vorlagen {#use-a-delivery-template}
+## Vorlagen verwenden {#use-a-delivery-template}
 
 ### Erstellen eines Versands aus einer Vorlage {#create-a-delivery-from-a-template}
 
-Um einen Versand auf Basis einer existierenden Vorlage zu erstellen, wählen Sie diese aus der Liste der verfügbaren Versandvorlagen aus.
+Um einen Versand auf Basis einer existierenden Vorlage zu erstellen, wählen Sie diese aus der Liste der Versandvorlagen aus.
 
 ![](assets/select-the-new-template.png)
 
@@ -125,7 +125,7 @@ Sie können die Ausführung einer Vorlage direkt über die Vorlagenliste starten
 
 Gehen Sie wie folgt vor, um eine Vorlage manuell auszuführen:
 
-1. Wählen Sie die auszuführende Vorlage aus und klicken Sie mit der rechten Maustaste darauf.  Wählen Sie **[!UICONTROL Aktionen > Ausgewählte Versandvorlage ausführen...]** aus.
+1. Wählen Sie die auszuführende Vorlage aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Ausgewählte Versandvorlage ausführen...]** aus.
 
    Sie können auch das Menü **[!UICONTROL Datei > Aktionen > Ausgewählte Versandvorlage ausführen...]** verwenden.
 
@@ -141,18 +141,18 @@ Dadurch wird ein Versand im Ordner erzeugt, der mit der Vorlage verknüpft ist. 
 
 Das folgende Video zeigt, wie man eine Vorlage für einen Ad-hoc-Versand konfiguriert.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409820?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3409820?captions=ger&quality=12)
 
 ### Einrichten der Eigenschaften von Versandvorlagen
 
 Das folgende Video zeigt, wie die Eigenschaften der Versandvorlage festgelegt werden, und erklärt die einzelnen Eigenschaften im Detail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443410?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3443410?captions=ger&quality=12)
 
 ### Bereitstellen einer Ad-hoc-Versandvorlage
 
 In diesem Video wird erläutert, wie man eine Ad-hoc-E-Mail-Versandvorlage bereitstellt. Außerdem wird der Unterschied zwischen einem E-Mail-Versand- und einem Versand-Workflow erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444966?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3444966?captions=ger&quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.

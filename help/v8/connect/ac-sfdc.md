@@ -54,7 +54,7 @@ Sie können jetzt die Tabellen konfigurieren, die synchronisiert werden sollen.
 
 1. Klicken Sie auf **[!UICONTROL Konfigurationsassistent für Salesforce CRM...]**.
 1. Wählen Sie die zu synchronisierenden Tabellen aus und starten Sie den Prozess.
-1. Überprüfen Sie das in Adobe Campaign generierte Schema im Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]**.
+1. Prüfen Sie unter dem Knoten **[!UICONTROL Administration > Konfiguration > Datenschema]** das in Adobe Campaign erzeugte Schema.
 
    Beispiel eines in Campaign importierten **Salesforce**-Schemas:
 

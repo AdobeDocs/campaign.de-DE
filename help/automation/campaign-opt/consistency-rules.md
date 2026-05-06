@@ -6,16 +6,16 @@ feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
 source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 100%
+source-wordcount: '795'
+ht-degree: 71%
 
 ---
 
 # Kohärenzregeln{#consistency-rules}
 
-Adobe Campaign ermöglicht die Sicherstellung der Kohärenz Ihrer Marketing-Kommunikation mithilfe einer Reihe von in den Kampagnentypologien enthaltenen Regeln. Diese dienen dazu, die an die Empfänger übermittelten Sendungen in Bezug auf Volumen, Art, Relevanz etc. zu kontrollieren.
+Adobe Campaign garantiert konsistente Kommunikation dank einer Reihe von Regeln, die in Kampagnentypologien enthalten sind. Sie dienen der Kontrolle der an Empfängerinnen und Empfänger gesendeten Sendungen, z. B. Menge, Art, Relevanz usw.
 
-Mithilfe von **Kapazitätsregeln** kann etwa verhindert werden, dass die Plattform, die den Versand verarbeitet, überlastet wird. Zum Beispiel dürfen Sonderangebote mit einem Download-Link nicht an eine zu große Population gesendet werden, um den Server nicht zu überlasten, eine Telefonkampagne darf die Verarbeitungskapazität der Telefonzentrale nicht überschreiten usw.
+**Kapazitätsregeln** können beispielsweise verhindern, dass die vom Nachrichtenversand betroffene Plattform überlastet wird. Beispielsweise dürfen Sonderangebote mit einem Download-Link nicht an zu viele Personen gleichzeitig gesendet werden, um den Server nicht zu überlasten; Telefonkampagnen dürfen die Verarbeitungskapazität von Callcentern usw. nicht überschreiten.
 
 ## Kontrollieren der Kapazität {#control-capacity}
 
@@ -23,7 +23,7 @@ Stellen Sie vor dem Versand von Nachrichten sicher, dass Ihr Unternehmen über g
 
 Erstellen Sie hierfür Typologieregeln vom Typ **[!UICONTROL Kapazität]**.
 
-Im folgenden Beispiel erstellen wir eine Typologieregel für eine telefonische Treuekampagne. Wir beschränken die Anzahl der Nachrichten auf 20 pro Tag, was der täglichen Verarbeitungskapazität eines Callcenters entspricht.  Nachdem die Regel auf zwei Sendungen angewendet wurde, können wir den Verbrauch über Logs überwachen.
+Im folgenden Beispiel erstellen wir eine Typologieregel für eine telefonische Treuekampagne. Wir beschränken die Anzahl der Nachrichten auf 20 pro Tag, was der täglichen Verarbeitungskapazität eines Callcenters entspricht. Nachdem die Regel auf zwei Sendungen angewendet wurde, können wir den Verbrauch über Logs überwachen.
 
 Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
@@ -32,7 +32,7 @@ Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
    ![](assets/campaign_opt_create_capacity_01.png)
 
-1. Erstellen Sie im Tab **[!UICONTROL Kapazität]** die Verfügbarkeitszeilen. In unserem Beispiel wären dies Zeiträume, in denen Anrufe getätigt werden können. Wählen Sie einen Zeitraum von 24 Stunden aus und geben Sie als Ursprungsmenge 150 ein, was bedeutet, dass das Callcenter 150 Anrufe pro Tag verarbeiten kann.
+1. Erstellen Sie auf **[!UICONTROL Registerkarte]** Kapazität“ die Verfügbarkeitszeilen: In unserem Beispiel handelt es sich um Zeiträume, in denen Anrufe getätigt werden können. Wählen Sie einen Zeitraum von 24 Stunden aus und geben Sie 150 in die Anfangsmenge ein, was bedeutet, dass das Callcenter 150 Anrufe pro Tag verarbeiten kann.
 
    ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -55,7 +55,7 @@ Um die maximale Auslastung zu definieren, müssen Sie Verfügbarkeitszeilen fest
 
 ### Verfügbarkeitszeilen einzeln hinzufügen {#add-availability-lines-one-by-one}
 
-Um eine einzelne Verfügbarkeitszeile zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Option **[!UICONTROL Eine Verfügbarkeitszeile hinzufügen]** aus. Geben Sie den Verfügbarkeitszeitraum und die verfügbare Menge an.
+Um eine Verfügbarkeitszeile zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie **[!UICONTROL Verfügbarkeitszeile hinzufügen]** aus. Geben Sie den Verfügbarkeitszeitraum und die verfügbare Last ein.
 
 ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -63,13 +63,13 @@ Sie können die Ihrer Verarbeitungskapazität entsprechende Anzahl an Zeilen hin
 
 ### Mehrere Verfügbarkeitszeilen hinzufügen {#add-a-set-of-availability-lines}
 
-Um Verfügbarkeitszeiträume in einem gegebenen Zeitraum festzulegen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Option **[!UICONTROL Mehrere Verfügbarkeitszeilen hinzufügen]**. Geben Sie die Dauer jedes Zeitraums und die Anzahl der zu erstellenden Zeiträume an.
+Um Verfügbarkeitszeiträume für einen bestimmten Zeitraum festzulegen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Option **[!UICONTROL Mehrere Verfügbarkeitszeilen hinzufügen]** aus. Geben Sie eine Dauer für jeden Zeitraum und die Anzahl der zu erstellenden Zeiträume an.
 
 Um die Zeitraumerstellung zu automatisieren, klicken Sie auf die Schaltfläche **[!UICONTROL Ändern]** und legen Sie die Planung der Zeiträume fest.
 
 ![](assets/campaign_opt_create_capacity_07.png)
 
-Zur Erstellung von Verfügbarkeitszeiträumen an Werktagen zwischen 9 und 17 Uhr mit einer Kapazität von 10 Anrufen pro Stunde, folgen Sie den nachstehenden Schritten:
+Definieren wir beispielsweise einen Zeitplan, um Verfügbarkeitszeiträume für alle Arbeitstage mit einer Rate von 10 Aufrufen pro Stunde zwischen 9 Uhr und 17 Uhr zu erstellen. Gehen Sie hierzu wie folgt vor:
 
 1. Wählen Sie den Häufigkeitstyp und die Gültigkeitszeiträume aus:
 
@@ -89,7 +89,7 @@ Der Workflow **[!UICONTROL Planungen]** erstellt automatisch alle entsprechenden
 
 >[!NOTE]
 >
->Es wird empfohlen, Verfügbarkeitszeilen über einen Dateiimport zu erstellen. Im Kapazität-Tab können die Verfügbarkeitszeilen anschließend eingesehen und überprüft werden.
+>Wir empfehlen, Verfügbarkeitszeilen über Dateiimporte zu erstellen. Auf dieser Registerkarte können Sie Verbrauchszeilen anzeigen und überprüfen.
 
 ## Nachrichten bei Erreichen des Kapazitätslimits ausschließen {#exclude-messages-when-capacity-limit-reached}
 

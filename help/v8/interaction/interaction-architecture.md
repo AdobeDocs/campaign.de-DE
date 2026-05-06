@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 97%
+source-wordcount: '1340'
+ht-degree: 52%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 97%
 
 Für jede im Zusammenhang mit der Angebotsverwaltung verwendete Zielgruppendimension existiert ein Umgebungspaar:
 
-* Eine **Design**-Umgebung, in der der Angebotsverantwortliche sich darum kümmert, Angebote zu erstellen, zu ändern und zu kategorisieren sowie ihren Validierungsprozess auszulösen, damit sie zum Einsatz kommen können. In jeder Umgebung werden die für eine Kategorie geltenden Regeln, die Platzierungen, in denen die Angebote unterbreitet werden können, und die für die Eignungsprüfung zu verwendenden Filter definiert.
+* Eine **Design**-Umgebung, in der der Angebotsverantwortliche sich darum kümmert, Angebote zu erstellen und zu kategorisieren, zu bearbeiten und den Validierungsprozess zu starten, damit sie verwendet werden können. Die Regeln für jede Kategorie, die Platzierungen, in denen Angebote unterbreitet werden können, und die vordefinierten Filter, die zum Definieren der Eignung eines Angebots verwendet werden, werden ebenfalls in dieser Umgebung definiert.
 
-  Kategorien können auch manuell in der Online-Umgebung veröffentlicht werden.
+  Kategorien können automatisch durch die Validierung oder manuell in der Live-Umgebung veröffentlicht werden.
 
   Der Prozess zur Genehmigung von Angeboten wird [in diesem Abschnitt](interaction-offer.md#approve-offers) beschrieben.
 
-* Eine **Live**-Umgebung, in der die in der Design-Umgebung genehmigten Angebote sowie die verschiedenen Platzierungen, Filter, Kategorien und Regeln zur Verfügung stehen. Bei einer Abfrage des Angebotsmoduls greift dieses ausschließlich auf die Angebote der Live-Umgebung zu.
+* Eine **Live**-Umgebung, in der die in der Design-Umgebung genehmigten Angebote sowie die verschiedenen Platzierungen, Filter, Kategorien und Regeln zu finden sind. Bei einer Abfrage des Angebotsmoduls verwendet das Modul immer Angebote aus der Live-Umgebung.
 
-Ein Angebot wird nur für die bei der Genehmigung ausgewählten Platzierungen bereitgestellt. Dies bedeutet, dass ein Angebot u. U. live sein kann, aber trotzdem nicht in einer Platzierung verwendet werden kann, selbst wenn diese ebenfalls live ist.
+Ein Angebot wird nur für die Platzierungen bereitgestellt, die während des Genehmigungsprozesses ausgewählt wurden. Daher kann ein Angebot live sein, aber auf einer Platzierung, die ebenfalls live ist, nicht verwendet werden können.
 
 ## Eingehende und ausgehende Interaktionen {#interaction-types}
 
@@ -35,7 +35,7 @@ Das Adobe Campaign Interaction-Modul bietet zwei Arten von Interaktionen:
 * **eingehende** Interaktionen, initiiert durch einen Kontakt. [Weitere Informationen](interaction-present-offers.md)
 * **ausgehende** Interaktionen, die von einem versandverantwortlichen Benutzer für die Kampagne initiiert werden. [Weitere Informationen](interaction-send-offers.md)
 
-Diese beiden Interaktionstypen können entweder im **Einzelmodus** (Angebot wird für einen einzelnen Kontakt berechnet) oder im **Batch-Modus** (Angebot wird für eine Gruppe von Kontakten berechnet) durchgeführt werden. Im Allgemeinen werden eingehende Interaktionen im Einzelmodus durchgeführt und ausgehende Interaktionen im Batch-Modus. Es kann jedoch bestimmte Ausnahmen geben, beispielsweise bei [Transaktionsnachrichten](../send/transactional.md), bei denen die ausgehende Interaktion im Einzelmodus erfolgt.
+Diese beiden Interaktionstypen können entweder im **Einzelmodus** (das Angebot wird für einen einzelnen Kontakt berechnet) oder im **Batch-Modus** (das Angebot wird für eine Gruppe von Kontakten berechnet) ausgeführt werden. Im Allgemeinen werden eingehende Interaktionen im Einzelmodus und ausgehende Interaktionen im Batch-Modus ausgeführt. Es kann jedoch bestimmte Ausnahmen geben, beispielsweise bei [Transaktionsnachrichten](../send/transactional.md), bei denen die ausgehende Interaktion im Einzelmodus erfolgt.
 
 Wenn ein Angebot unterbreitet werden kann oder soll (je nach Konfiguration), spielt das Angebotsmodul eine zentrale Rolle: Es ermittelt automatisch aus einer Reihe von möglichen Angeboten das für den Kontakt am besten geeignete Angebot, indem es die für ihn vorliegenden Daten und die in der Anwendung definierten Regeln kombiniert und abgleicht.
 
@@ -50,11 +50,11 @@ Um die Skalierbarkeit zu unterstützen und rund um die Uhr Service für den eing
 
 ![](assets/interaction_powerbooster_schema.png)
 
-Kontrollinstanzen sind dem eingehenden Kanal vorbehalten und enthalten die Online-Version des Katalogs. Jede Ausführungsinstanz ist unabhängig und einem Kontaktsegment gewidmet (z. B. eine Ausführungsinstanz pro Land). Aufrufe des Angebotsmoduls müssen direkt an der Ausführung erfolgen (eine spezifische URL pro Ausführungsinstanz). Da die Synchronisation zwischen Instanzen nicht automatisch erfolgt, müssen Interaktionen desselben Kontakts über dieselbe Instanz gesendet werden.
+Kontrollinstanzen sind dem eingehenden Kanal vorbehalten und enthalten die Online-Version des Katalogs. Jede Ausführungsinstanz ist unabhängig und einem Kontaktsegment gewidmet (z. B. einer Ausführungsinstanz pro Land). Aufrufe des Angebotsmoduls müssen direkt an der Ausführung erfolgen (eine spezifische URL pro Ausführungsinstanz). Da die Synchronisation zwischen Instanzen nicht automatisch erfolgt, müssen Interaktionen desselben Kontakts über dieselbe Instanz gesendet werden.
 
 ### Synchronisation {#synchronization}
 
-Die Synchronisation von Vorschlägen erfolgt über Packages. In den Ausführungsinstanzen werden alle Katalogobjekte durch Voranstellung des Namens des externen Kontos gekennzeichnet. Dies ermöglicht die Unterstützung mehrerer Kontrollinstanzen (z. B. Entwicklungs- und Produktionsinstanz ) auf derselben Ausführungsinstanz.
+Die Angebotssynchronisierung erfolgt über Pakete. In Ausführungsinstanzen wird allen Katalogobjekten der externe Kontoname vorangestellt. Dies bedeutet, dass mehrere Kontrollinstanzen (z. B. Entwicklungs- und Produktionsinstanzen) auf derselben Ausführungsinstanz unterstützt werden können.
 
 >[!CAUTION]
 >
@@ -62,23 +62,23 @@ Die Synchronisation von Vorschlägen erfolgt über Packages. In den Ausführungs
 
 Die Bereitstellung und Veröffentlichung der Angebote in den Ausführungs- und Kontrollinstanzen erfolgt automatisch.
 
-In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deaktiviert. Obsolete Vorschläge und Angebote werden nach Ablauf der durch die Bereinigungsparameter im Bereitstellungassistenten aller Instanzen definierten Frist und des in den Typologieregeln definierten beweglichen Zeitraums automatisch gelöscht.
+In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deaktiviert. Veraltete Vorschläge und Angebote werden nach der Bereinigungsperiode (angegeben im Bereitstellungsassistenten jeder Instanz) und der Gleitperiode (angegeben in den Typologieregeln der eingehenden Vorschläge) automatisch in allen Instanzen gelöscht.
 
 ![](assets/interaction_powerbooster_schema2.png)
 
-Für jedes externe Konto und jede Umgebung wird ein Synchronisations-Workflow erstellt. Die Synchronisationshäufigkeit kann individuell angepasst werden.
+Für jede Umgebung und jedes externe Konto wird ein Workflow für die Vorschlagssynchronisierung erstellt. Die Synchronisierungsfrequenz kann für jede Umgebung und jedes externe Konto angepasst werden.
 
 Beachten Sie die folgenden Synchronisierungsmechanismen:
 
 * Wenn Sie die Funktion zum Wechsel von einer anonymen in eine identifizierte Umgebung (fall back) nutzen möchten, müssen sich die beiden betroffenen Umgebungen in derselben Ausführungsinstanz befinden.
-* Die Synchronisation von verschiedenen Ausführungsinstanzen erfolgt nicht in Echtzeit. Alle Interaktionen eines spezifischen Kontakts müssen immer an dieselbe Instanz gesendet werden. Die Kontrollinstanz ist dem ausgehenden Kanal vorbehalten (keine Echtzeit-Verarbeitung).
-* Die Marketing-Datenbank wird nicht automatisch synchronisiert. Aus diesem Grund müssen die im Zusammenhang mit den Eignungsregeln und Gewichtungen verwendeten Marketingdaten in die Ausführungsinstanzen dupliziert werden. Dieser Prozess ist im Verlauf der Integrationsphase zu entwickeln.
+* Die Synchronisierung zwischen mehreren Ausführungsinstanzen wird nicht in Echtzeit durchgeführt. Interaktionen desselben Kontakts müssen an dieselbe Instanz gesendet werden. Die Kontrollinstanz muss dem ausgehenden Kanal zugeordnet sein (keine Echtzeit).
+* Die Marketing-Datenbank wird nicht automatisch synchronisiert. Die in den Gewichtungs- und Eignungsregeln verwendeten Marketing-Daten müssen in Ausführungsinstanzen dupliziert werden. Dieser Prozess ist nicht standardmäßig, Sie müssen ihn während der Integrationsphase entwickeln.
 * Die Synchronisation von Vorschlägen erfolgt ausschließlich über FDA-Verbindung.
 * Falls Sie Interaction und Message Center auf derselben Instanz verwenden, erfolgt die Synchronisation in beiden Fällen über das FDA-Protokoll.
 
 ### Package-Konfiguration {#packages-configuration}
 
-Eventuelle Schemaerweiterungen in direktem Zusammenhang mit **Interaktion** (beispielsweise Angebots-, Vorschlags- oder Empfängerschema) sind auf den Ausführungsinstanzen bereitzustellen.
+Eventuelle Schemaerweiterungen in direktem Zusammenhang mit **Interaktion** (Angebote, Vorschläge, Empfänger usw.) Muss auf den Ausführungsinstanzen bereitgestellt werden.
 
 Das Package **Interaktion** wird auf allen Instanzen installiert (Kontrolle und Ausführung). Zwei weitere Packages sind verfügbar: ein Package für die Kontrollinstanzen und das andere für jede Ausführungsinstanz.
 
@@ -88,7 +88,7 @@ Das Package **Interaktion** wird auf allen Instanzen installiert (Kontrolle und 
 
 Die Aufbewahrungsdauer der Daten wird für jede Instanz konfiguriert (über die Variable **[!UICONTROL Datenbereinigung]** im Bereitstellungsassistenten). Bei Ausführungsinstanzen muss dieser Zeitraum der historischen Tiefe entsprechen, die für die Berechnung von Typologieregeln (beweglicher Zeitraum) und Eignungsregeln erforderlich ist.
 
-Bei den Kontrollinstanzen:
+Bei den Kontrollinstanzen müssen Sie darüber hinaus:
 
 1. Erstellen Sie pro Ausführungsinstanz ein externes Konto:
 
@@ -100,7 +100,7 @@ Bei den Kontrollinstanzen:
    * Geben Sie die Verbindungsparameter zur Ausführungsinstanz an.
    * Jeder Ausführungsinstanz muss eine Kennung zugeordnet werden. Dies geschieht durch Klick auf die Schaltfläche **[!UICONTROL Verbindung initialisieren]**.
    * Kreuzen Sie die verwendete Anwendung an: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** oder beide.
-   * Geben Sie das genutzte FDA-Konto an. Benutzer müssen in den Ausführungsinstanzen erstellt werden und über die folgenden Lese- und Schreibberechtigungen in den entsprechenden Instanzen verfügen:
+   * Geben Sie das verwendete FDA-Konto ein. Auf den Ausführungsinstanzen muss ein Benutzer erstellt werden, der über die folgenden Lese- und Schreibrechte für die Datenbank der betreffenden Instanz verfügt:
 
      ```
      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
@@ -120,9 +120,9 @@ Bei den Kontrollinstanzen:
 
      >[!NOTE]
      >
-     >Sollten Fehler auftreten, sind die technischen Workflows zur Vorschlagssynchronisation und Angebotsbenachrichtigung zu prüfen.
+     >Wenn ein Fehler auftritt, können Sie die Synchronisierungs-Workflows und Angebotsbenachrichtigungen einsehen. Diese sind in den technischen Workflows der Anwendung zu finden.
 
-Wenn aus Optimierungsgründen nur ein Teil der Marketing-Datenbank auf den Ausführungsinstanzen dupliziert wird, können Sie ein mit der Umgebung verknüpftes eingeschränktes Schema angeben, damit Benutzer nur die in den Ausführungsinstanzen verfügbaren Daten verwenden können. Sie können ein Angebot mit Daten erstellen, die in Ausführungsinstanzen nicht verfügbar sind. Dazu müssen Sie die Regel für die anderen Kanäle deaktivieren, indem Sie diese Regel auf den ausgehenden Kanal (**[!UICONTROL Wird berücksichtigt, wenn]** -Feld).
+Wenn aus Optimierungsgründen nur ein Teil der Marketing-Datenbank in den Ausführungsinstanzen dupliziert wird, können Sie ein eingeschränktes, mit der Umgebung verknüpftes Schema angeben, damit die Benutzer nur Daten verwenden können, die in den Ausführungsinstanzen verfügbar sind. Sie können ein Angebot mit Daten erstellen, die in Ausführungsinstanzen nicht verfügbar sind. Dazu müssen Sie die Regel für die anderen Kanäle deaktivieren, indem Sie diese Regel auf den ausgehenden Kanal (**[!UICONTROL Wird berücksichtigt, wenn]** -Feld).
 
 ![](assets/ita_filtering.png)
 
@@ -144,14 +144,14 @@ Die folgende Option steht für Ausführungsinstanzen zur Verfügung:
 
 ### Package-Installation {#packages-installation}
 
-Wenn Ihre Instanz zuvor nicht über das **Interaction**-Package verfügt hat, ist keine Migration erforderlich. Standardmäßig liegt die Vorschlagstabelle nach der Installation der Pakete in 64 Bit vor.
+Wenn Ihre Instanz zuvor nicht über das Package **Interaction** verfügte, ist keine Migration erforderlich. Standardmäßig liegt die Vorschlagstabelle nach der Installation der Pakete in 64 Bit vor.
 
 >[!CAUTION]
 >
 >Je nach Anzahl an existierenden Vorschlägen in Ihrer Instanz kann dieser Vorgang sehr zeitintensiv sein.
 
-* Wenn Ihre Instanz keine oder nur wenige Vorschläge enthält, ist kein manueller Eingriff in Bezug auf die Vorschlagstabelle erforderlich. Die Änderung erfolgt zum Zeitpunkt der Package-Installation.
-* Wenn Ihre Instanz eine große Anzahl an Vorschlägen enthält, wird empfohlen, die Struktur der Vorschlagstabelle vor Installation der Ausführungs- und Kontroll-Packages anzupassen. Die diesbezüglichen Abfragen sind vorzugsweise zu einem Zeitpunkt mit geringer Auslastung auszuführen.
+* Wenn Ihre Instanz nur über wenige oder gar keine Vorschläge verfügt, ist keine manuelle Änderung der Vorschlagstabelle erforderlich. Die Änderung wird vorgenommen, wenn Pakete installiert werden.
+* Wenn Ihre Instanz viele Vorschläge hat, ist es besser, die Struktur der Vorschlagstabelle zu ändern, bevor Sie die Steuerungspakete installieren und ausführen. Es wird empfohlen, die Abfragen während eines Zeitraums mit geringer Aktivität auszuführen.
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ CREATE INDEX nmspropositionrcp_recipientidid ON NmsPropositionRcp (irecipientid)
 ALTER TABLE nmspropositionrcp_tmp RENAME TO nmspropositionrcp;
 ```
 
-**Alternativtabelle**
+**Alter Table**
 
 ```
 ALTER TABLE nmspropositionrcp

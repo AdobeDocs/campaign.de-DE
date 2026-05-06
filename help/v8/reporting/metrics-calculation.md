@@ -6,8 +6,8 @@ role: Developer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '3074'
-ht-degree: 92%
+source-wordcount: '3139'
+ht-degree: 85%
 
 ---
 
@@ -723,7 +723,7 @@ Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
    <td> Klicks<br /> </td> 
    <td> @_click<br /> </td> 
    <td> Zählung aller @totalClicks mit URL-Primärschlüssel ungleich 1.<br /> </td> 
-   <td> count(Iif([@url-id] != 1, @totalClicks, 0))<br /> </td> 
+   <td> COUNT(IIF([@url-id] != 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Klicks (in %)<br /> </td> 
@@ -791,7 +791,7 @@ Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
 
 Dieser Bericht basiert auf den Tabellen Versand (nms:delivery) und **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats).
 
-Er zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentualen Klickanteil für jeden Link. Links in Gestaltungsbausteinen, der Abmelde-Link sowie der Mirrorseite-Link werden in der Gesamtklickzahl berücksichtigt, in diesem Bericht jedoch nicht angezeigt.
+Dieser Bericht zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentualen Anteil der Klicks auf Links für jeden Link. Abmelde-Links für Gestaltungsbausteine und Mirrorseiten-Links werden in der Gesamtklickzahl berücksichtigt, aber nicht im Bericht angezeigt.
 
 ## Tracking-Statistiken {#tracking-statistics-1}
 
@@ -920,7 +920,7 @@ Falls Sie bei bestimmten Indikatoren eine Desynchronisierung oder Inkonsistenz b
 
 ## Öffnungs-Tracking {#tracking-opens-}
 
-Damit Adobe Campaign die Öffnung einer Nachricht erkennen kann, muss der Empfänger die Bilder der E-Mail herunterladen. HTML- und Multipart/Alternative-E-Mails enthalten ein Bild mit 0 Pixeln, welches das Öffnungs-Tracking ermöglicht, sobald es angezeigt wird. Nachrichten im Textformat enthalten kein Bild, das Öffnungs-Tracking ist daher nicht möglich. In Bezug auf Öffnungen berechnete Werte sind immer nur Schätzungen. Dies hängt insbesondere mit der durch den Aufruf von Bildern bedingten Fehlerquote zusammen.
+Damit Adobe Campaign das Öffnen von Nachrichten erkennen kann, muss der Empfänger die Bilder in der E-Mail herunterladen. HTML und Multipart/Alternative-E-Mails enthalten ein Bild mit 0 Pixel, mit dem Sie geöffnete Nachrichten erkennen können. Da Nachrichten im Textformat keine Bilder enthalten, ist es unmöglich festzustellen, ob sie geöffnet wurden oder nicht. Bei Werten, die auf der Grundlage der Öffnungen von Nachrichten berechnet werden, handelt es sich aufgrund der mit der Bildanzeige verknüpften Fehlermarge immer um Schätzungen.
 
 ## Unterschied zwischen Personen und Zielgruppenempfängern {#targeted-persons---recipients}
 
@@ -928,6 +928,6 @@ Adobe Campaign unterscheidet in den Statistiken gewisser Berichte zwischen Perso
 
 Zielgruppenempfänger sind die Kontakte, an die der Versand ursprünglich gesendet wurde.
 
-Die Personenanzahl bezeichnet die Zielgruppenempfänger zuzüglich aller Personen, an die die E-Mail weitergeleitet wurde. Jedes Mal, wenn eine Öffnung oder ein Klick in einem neuen Browser erfolgt, d. h. in einem Browser, in dem die Nachricht noch nie geöffnet wurde, wird eine neue Person gezählt.
+Die Anzahl der Personen umfasst die Zielgruppenempfänger sowie alle Personen, an die die E-Mail weitergeleitet wurde. Jedes Mal, wenn ein neuer Browser geöffnet oder geklickt wird (in dem die Nachricht noch nicht geöffnet wurde), wird eine andere Person der Statistik hinzugefügt.
 
-Wenn Sie beispielsweise eine mit Adobe Campaign gesendete E-Mail erhalten, sie öffnen und darin klicken, werden Sie als Zielgruppenempfänger gezählt (d. h. Empfänger=1, Person=1). Wenn Sie nun die E-Mail an zwei Freunde weiterleiten und diese in die E-Mail klicken oder sie im Browser öffnen, bleibt die Zahl der Zielgruppenempfänger bei eins, die Zahl der Personen jedoch steigt auf drei. Der Wert 3 entspricht also jeder Öffnung/jedem Klick in einem anderen Browser.
+Wenn Sie beispielsweise eine E-Mail (von Adobe Campaign gesendet) am Arbeitsplatz erhalten und öffnen oder klicken, werden Sie als Zielgruppenempfänger gezählt (d. h. Empfänger=1, Person=1). Wenn Sie diese E-Mail an zwei Freunde weiterleiten, ist die Anzahl der Zielgruppenempfänger weiterhin gleich 1, während die Anzahl der Personen drei beträgt. Der Wert 3 entspricht jedem Öffnen/Klicken in einem neuen Browser.

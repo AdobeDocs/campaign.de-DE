@@ -4,10 +4,11 @@ description: Informationen zum Überwachen von Sendungen, Workflows und Ihrer Ca
 feature: Monitoring
 role: User
 level: Beginner
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 2ad585f2-19bc-4391-8a19-9e892dbe01a3
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 4%
+source-wordcount: '1141'
+ht-degree: 10%
 
 ---
 
@@ -19,9 +20,9 @@ Adobe Campaign bietet umfassende Funktionen zur Überwachung Ihrer Prozesse, Sen
 >
 >Als Campaign-Admin können Sie auch das [Campaign Control Panel](#control-panel) verwenden, um Ihre Instanzen zu überwachen, die Leistung zu verwalten und Einstellungen mit Self-Service-Funktionen zu konfigurieren.
 
-## Sendungen überwachen {#monitor-deliveries}
+## Überwachen von Sendungen {#monitor-deliveries}
 
-Die Überwachung Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen. Nach dem Versand eines Versands können Sie dessen Status überwachen und Schlüsselmetriken im Versand-Dashboard verfolgen. Das Dashboard bietet Zugriff auf Versandlogs, Ausschlusslogs, Trackinglogs und andere Überwachungsfunktionen, mit denen Sie die Versandleistung kanalübergreifend analysieren können.
+Das Monitoring Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen. Nach dem Versand eines Versands können Sie dessen Status überwachen und Schlüsselmetriken im Versand-Dashboard verfolgen. Das Dashboard bietet Zugriff auf Versandlogs, Ausschlusslogs, Trackinglogs und andere Überwachungsfunktionen, mit denen Sie die Versandleistung kanalübergreifend analysieren können.
 
 **E-Mail-**: Überwachen Sie den Status des E-Mail-Versands, verfolgen Sie Schlüsselmetriken und greifen Sie auf detaillierte Protokolle zu. Erfahren Sie mehr über [Überwachen von Sendungen in der Campaign](../send/delivery-dashboard.md)-Benutzeroberfläche, [Versandstatus](../send/delivery-statuses.md) und [Überwachen von E-Mail-Sendungen](../send/send.md#email-monitoring).
 
@@ -167,8 +168,7 @@ Weitere Informationen zu [globalen Berichten](../reporting/global-reports.md)
 
 ## Verwandte Themen {#related-topics}
 
-* [Best Practices beim Versand](delivery-best-practices.md)
+* [Best Practices für den Versand](delivery-best-practices.md)
 * [Quarantäneverwaltung](../send/quarantines.md)
 * [Sendungen konfigurieren und durchführen](../send/configure-and-send.md)
 * [Erste Schritte mit Berichten](../reporting/gs-reporting.md)
-

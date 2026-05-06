@@ -7,7 +7,7 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 636f9ad0-9576-421e-ad8b-62d6602ee26a
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 100%
 
@@ -31,8 +31,8 @@ Technische Workflows verfügen wiederum über die Registerkarte **Ereignisse**, 
 
 Alle Aktivitäten werden in den folgenden Abschnitten beschrieben:
 
-* [Zielgruppenaktivitäten](targeting-activities.md)
-* [Fluss-Steuerungsaktivitäten](flow-control-activities.md)
+* [Zielgruppenbestimmungsaktivitäten](targeting-activities.md)
+* [Flusssteuerungsaktivitäten](flow-control-activities.md)
 * [Aktionsaktivitäten](action-activities.md)
 * [Ereignisaktivitäten](event-activities.md)
 * [Für einen Kampagnen-Workflow spezifische Aktivitäten](../campaigns/marketing-campaign-deliveries.md)

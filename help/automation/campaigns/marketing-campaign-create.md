@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
-workflow-type: ht
-source-wordcount: '1319'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1309'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Komponenten für die Kampagnenorchestrierung finden Sie auf der Registerkarte **[!UICONTROL Kampagnen]**. Hier können Sie einen Überblick über die Marketing-Programme und -Kampagnen und die damit verbundenen Elemente erhalten.
 
-Ein Marketing-Programm besteht aus Kampagnen, die aus Sendungen, Ressourcen usw. zusammengesetzt sind. In der Kampagne werden alle Informationen zu Sendungen, Budgets, Validierungsverantwortlichen und verknüpften Dokumenten zusammengefasst.
+Ein Marketing-Programm besteht aus Kampagnen, die aus Sendungen, Ressourcen usw. bestehen. In der Kampagne werden alle Informationen zu Sendungen, Budgets, Validierungsverantwortlichen und verknüpften Dokumenten zusammengefasst.
 
 ![](assets/campaigns-create-from-home.png)
 
@@ -43,7 +43,7 @@ Bevor Sie mit der Erstellung Ihrer Kampagnen und Sendungen beginnen, konfigurier
 
    ![](assets/plan-properties.png)
 
-1. Wählen Sie **Speichern** aus.
+1. Klicken Sie auf **Speichern**.
 1. Klicken Sie mit der rechten Maustaste auf den neu erstellen Plan und wählen Sie **Programm-Ordner hinzufügen**.
 
    ![](assets/program-folder.png)
@@ -57,7 +57,7 @@ Zur Konfiguration und Bearbeitung eines Programms stehen die folgenden Registerk
 
 * In der Registerkarte **Planung** können Sie den Programmkalender nach Monat, Woche oder Tag anzeigen lassen, indem Sie auf den jeweiligen Tab klicken. Auf dieser Seite können Sie eine Kampagne, ein Programm oder eine Aufgabe erstellen. [Weitere Informationen](#campaign-calendar)
 
-* Über die Registerkarte **Bearbeiten** kann das Programm konfiguriert und verändert werden (Name, Beginn und Ende, Budget, verknüpfte Dokumente usw.).
+* Über die Registerkarte **Bearbeiten** kann das Programm konfiguriert und verändert werden (Name, Start- und Enddatum, Budget, verknüpfte Dokumente usw.).
 
   ![](assets/new-program-edit-tab.png)
 
@@ -67,7 +67,7 @@ Zur Konfiguration und Bearbeitung eines Programms stehen die folgenden Registerk
 
 Sie können eine Kampagne über die Kampagnenliste erstellen. Um diese Ansicht anzuzeigen, wählen Sie das Menü **[!UICONTROL Kampagnen]** im **[!UICONTROL Kampagnen]**-Dashboard und klicken Sie auf **[!UICONTROL Erstellen]**.
 
-Im Feld **[!UICONTROL Programm]** können Sie das Programm auswählen, dem die Kampagne zugeordnet werden soll. Diese Information muss angegeben werden.
+Im Feld **[!UICONTROL Programm]** können Sie das Programm auswählen, dem die Kampagne zugeordnet werden soll. Diese Informationen sind obligatorisch.
 
 ![](assets/new-campaign-settings.png)
 
@@ -98,13 +98,13 @@ In den folgenden Abschnitten erfahren Sie, wie Sie Ihre Kampagne konfigurieren:
 
 ### Bearbeiten von Kampagneneinstellungen {#campaign-settings}
 
-Kampagnen werden über Kampagnenvorlagen erstellt. Sie können wiederverwendbare Vorlagen verwenden, in denen einige Optionen ausgewählt werden können und andere Einstellungen bereits gespeichert sind.
+Kampagnen werden über Kampagnenvorlagen erstellt. Sie können wiederverwendbare Vorlagen konfigurieren, für die einige Optionen ausgewählt und andere Einstellungen bereits gespeichert wurden.
 
 Für jede Kampagne stehen folgende Funktionen zur Verfügung:
 
 * Referenzdokumente und -ressourcen: Sie können die Kampagne mit Dokumenten verknüpfen (Kurzbeschreibung, Bericht, Bilder etc.). Alle Dokumentenformate werden unterstützt. [Weitere Informationen](marketing-campaign-deliveries.md#manage-associated-documents).
-* Kosten definieren: Adobe Campaign ermöglicht es, für jede Kampagne Kosteneinträge und Kostenberechnungsstrukturen zu definieren, die bei der Erstellung der Marketing-Kampagne verwendet werden können. Beispiel: Druckkosten, Nutzung einer externen Agentur, Raummiete usw. [Weitere Informationen](providers-stocks-and-budgets.md#defining-cost-categories).
-* Definition von Zielen: Sie können quantifizierbare Ziele für eine Kampagne definieren, z. B. die Anzahl der Abonnenten, das Geschäftsvolumen etc. Diese Informationen werden später in Kampagnenberichten verwendet.
+* Kosten definieren: Adobe Campaign ermöglicht es, für jede Kampagne Kosteneinträge und Kostenberechnungsstrukturen zu definieren, die bei der Erstellung der Marketing-Kampagne verwendet werden können. Zum Beispiel: Druckkosten, Nutzung einer externen Agentur, Zimmervermietung usw. [Mehr erfahren](providers-stocks-and-budgets.md#defining-cost-categories).
+* Definieren von Zielen: Sie können quantifizierbare Ziele für eine Kampagne definieren, z. B. die Anzahl der Abonnenten, das Geschäftsvolumen usw. Diese Informationen werden später in Kampagnenberichten verwendet.
 * Verwalten Sie Testadressen und Kontrollgruppen. [Weitere Informationen](marketing-campaign-deliveries.md#defining-a-control-group).
 * Validierungsverwaltung: Sie können die zu validierenden Abwandlungen sowie bei Bedarf validierungsverantwortliche Benutzer oder Benutzergruppen auswählen. [Weitere Informationen](marketing-campaign-approval.md#checking-and-approving-deliveries).
 
@@ -114,9 +114,9 @@ Für jede Kampagne stehen folgende Funktionen zur Verfügung:
 
 ### Überwachen einer Kampagne {#monitor-a-campaign}
 
-Für jede Kampagne werden Vorgänge, Ressourcen und Sendungen in einem Dashboard zusammengefasst dargestellt. Auf dieser Benutzeroberfläche können Sie Marketing-Aktionen verwalten und koordinieren.
+Für jede Kampagne werden Aufträge, Ressourcen und Sendungen in einem Dashboard zusammengefasst dargestellt. Auf dieser Benutzeroberfläche können Sie Marketing-Aktionen verwalten und koordinieren.
 
-Adobe Campaign ermöglicht den Einsatz kollaborativer Prozesse zur Ausführung und Validierung der unterschiedlichen Etappen Ihrer Kampagnen, darunter die Budget-, Zielgruppen- und Inhaltsvalidierung. Diese Orchestrierung wird in [diesem Abschnitt](marketing-campaign-approval.md) genau beschrieben.
+Mit Adobe Campaign können Sie partizipative Prozesse für die Erstellung und Validierung der unterschiedlichen Etappen Ihrer Kampagnen einrichten: Budget-, Zielgruppen- und Inhaltsvalidierung usw. Diese Orchestrierung wird in [diesem Abschnitt) &#x200B;](marketing-campaign-approval.md).
 
 ![](assets/campaigns-dashboard-approval-tab.png)
 
@@ -161,7 +161,7 @@ Wenn Sie eine Kampagne über die Registerkarte **[!UICONTROL Planung]** eines Pr
 
 ## Verwenden der Web-Schnittstelle {#use-the-web-interface-}
 
-Sie können über einen Internet-Browser auf die Bildschirme der Adobe Campaign-Client-Konsole zugreifen, um alle Kampagnen und Sendungen sowie Berichte und Informationen zu den Profilen in Ihrer Datenbank anzuzeigen. Dieser Zugriff ermöglicht keine Erstellung von Datensätzen. Abhängig von den Benutzerrechten können Sie die Daten in der Datenbank anzeigen und/oder bearbeiten. Sie können beispielsweise Kampagneninhalte und Zielgruppenbestimmungen genehmigen, einen Versand neu starten oder stoppen, usw.
+Sie können über einen Internet-Browser auf die Bildschirme der Adobe Campaign-Client-Konsole zugreifen, um alle Kampagnen und Sendungen sowie Berichte und Informationen zu den Profilen in Ihrer Datenbank anzuzeigen. Dieser Zugriff ermöglicht keine Erstellung von Einträgen. Abhängig von den Benutzerrechten können Sie die Daten in der Datenbank anzeigen und/oder bearbeiten. Sie können beispielsweise Kampagneninhalte und Zielgruppenbestimmungen genehmigen, einen Versand neu starten oder stoppen, usw.
 
 1. Melden Sie sich wie gewohnt über https://`<your instance>:<port>/view/home` an.
 1. Über die unterschiedlichen Rubriken besteht Zugriff auf Listen und weitere Navigationselemente.
@@ -208,4 +208,4 @@ Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden
 
 In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426473?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3426473?captions=ger&quality=12)

@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 97%
+source-wordcount: '1218'
+ht-degree: 95%
 
 ---
 
@@ -80,7 +80,7 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folg
 
 1. **Verwenden von Vorlagen**
 
-   Kampagnen, Sendungen, Vorgänge oder Workflows basieren auf einer Vorlage, in der wichtige Einstellungen und Funktionen gespeichert sind. Für jede Komponente, für die keine spezifische Konfiguration definiert wurde, wird eine integrierte Vorlage bereitgestellt. Sie müssen die Vorlagen konfigurieren, an Ihre Anforderungen anpassen und für Endbenutzer verfügbar machen.
+   Kampagnen, Sendungen, Aufträge oder Workflows basieren auf einer Vorlage, in der wichtige Einstellungen und Funktionen gespeichert sind. Für jede Komponente, für die keine spezifische Konfiguration definiert wurde, wird eine integrierte Vorlage bereitgestellt. Sie müssen die Vorlagen konfigurieren, an Ihre Anforderungen anpassen und für Endbenutzer verfügbar machen.
 
 
    Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=de){target="_blank"} erfahren Sie, wie Sie mit Kampagnenvorlagen arbeiten.
@@ -112,7 +112,7 @@ Sie können viele verschiedene Bereiche und Funktionen in Campaign anpassen. Die
 
    In diesem Abschnitt erfahren Sie mehr über das [integrierte Datenmodell von Campaign](../dev/datamodel.md).
 
-   Sie können bestehende Schemata erweitern oder Schemata von Grund auf neu erstellen. Weiterführende Informationen finden Sie auf [dieser Seite](../dev/customize.md).
+   Sie können bestehende Schemata erweitern oder Schemata von Grund auf neu erstellen. Weitere Informationen finden Sie auf [dieser Seite](../dev/customize.md).
 
 1. **Dashboards und Listen**
 
@@ -128,7 +128,7 @@ Sie können viele verschiedene Bereiche und Funktionen in Campaign anpassen. Die
 
    Campaign bietet eine Reihe von integrierten Berichten zur Überwachung des Versands, zu URLs und Clickstreams, zur Nachverfolgung, zu Zustellbarkeitsindikatoren und mehr.
 
-   Abgesehen von den integrierten Berichten können Sie in Adobe Campaign auch benutzerdefinierte Berichte entsprechend dem jeweiligen Kontext und Ihren Anforderungen erstellen. In diesem Dokument werden die Grundsätze der Nutzung und die Implementierungsmodi erläutert.
+   Zusätzlich zu den integrierten Berichten können Sie mit Adobe Campaign Berichte in verschiedenen Kontexten und für unterschiedliche Anforderungen erstellen. Die Grundsätze der Verwendung und die Implementierungsmodi werden in diesem Dokument beschrieben.
 
    Auf [dieser Seite](../reporting/gs-reporting.md) erfahren Sie mehr über die Reporting-Funktionen in Campaign.
 

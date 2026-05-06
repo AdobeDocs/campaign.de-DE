@@ -5,10 +5,11 @@ feature: Monitoring, Deliverability
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 90f2b7b2-db9e-42aa-aef2-e90aee5d208e
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 71%
+source-wordcount: '561'
+ht-degree: 55%
 
 ---
 
@@ -46,7 +47,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
   </tr> 
   <tr> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Der Versand hat den Empfänger nicht erreicht, weil die Adresse ungültig oder der Posteingang voll war. Die Ursache kann auch ein Problem mit Gestaltungsbausteinen sein, da diese Fehler hervorrufen können, wenn die Schemata nicht mit dem Versand-Mapping übereinstimmen. Weitere Informationen finden Sie unter <a href="delivery-failures.md" target="_blank">Ursachen von fehlgeschlagenen Sendungen</a><br /> </td> 
+   <td> Der Versand konnte den Empfänger nicht erreichen, z. B. aufgrund einer ungültigen Adresse oder eines vollen Posteingangs. Dies kann auch mit einem Problem mit Gestaltungsbausteinen verknüpft werden, da diese Fehler verursachen können, wenn die Schemata nicht mit dem Versand-Mapping übereinstimmen. Weitere Informationen finden Sie unter <a href="delivery-failures.md" target="_blank">Ursachen von fehlgeschlagenen Sendungen</a><br /> </td> 
   </tr>
   <tr> 
    <td> Ausstehend<br /> </td> 
@@ -70,7 +71,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
   </tr>
   <tr> 
    <td> Dem Dienstleister übermittelt<br /> </td> 
-   <td> Der Versand wurde dem SMS-Dienstleister übermittelt, aber noch nicht von ihm empfangen.<br />
+   <td> Der Versand wurde an den SMS-Dienstleister gesendet, aber noch nicht empfangen.<br />
    </td> 
   </tr> 
   <tr> 
@@ -84,7 +85,7 @@ Weitere Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign 
 
 ## Status &quot;Ausstehend&quot; {#pending-status}
 
-Nach der Bestätigung des Versands ist dessen Status **[!UICONTROL Ausstehend]**. Das bedeutet, dass im Ausführungsprozess auf die Verfügbarkeit von Ressourcen gewartet wird.
+Nachdem Sie den Versand bestätigt haben, können Sie sehen, dass der Status Ihres Versands &quot;**[!UICONTROL &quot;]**. Dieser Status bedeutet, dass der Ausführungsprozess auf die Verfügbarkeit einiger Ressourcen wartet.
 
 Der Status **[!UICONTROL Ausstehend]** kann bedeuten, dass der Versand terminiert wurde und bis zum entsprechenden Datum in der Warteschlange bleibt. Weitere Informationen hierzu finden Sie im Abschnitt [Versand planen](configure-and-send.md#schedule-delivery-sending) .
 
@@ -109,4 +110,3 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 * [Senden und Überwachen Ihrer E-Mails](send.md#email-monitoring)
 * [Ursachen für das Fehlschlagen von Sendungen](delivery-failures.md)
 * [Campaign-Umgebung überwachen](../start/monitor.md#monitor-deliveries)
-

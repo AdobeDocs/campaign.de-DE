@@ -7,17 +7,17 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 04b7638d-55dd-4317-b605-5d618ef014ba
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 59%
 
 ---
 
 # Verwalten von Zeitzonen{#managing-time-zones}
 
-Adobe Campaign ist in der Lage, verschiedene Zeitzonen innerhalb einer Instanz zu verwalten. Die verwendeten Zeitzonen werden bei der Instanzerstellung konfiguriert.
+Mit Adobe Campaign können Sie Zeitverzögerungen zwischen verschiedenen Ländern verwalten, die von derselben Instanz betroffen sind. Die angewendete Konfiguration wird während der Instanzerstellung konfiguriert.
 
-In einem Workflow besteht nicht nur die Möglichkeit, die Ausführung einzelner Aktivitäten zu terminieren, sondern auch dem ganzen Workflow oder einzelnen Aktivitäten eine Zeitzone zuzuordnen. Dies kann insbesondere beim Dateiimport oder im Zuge der Versandauslösung von Nutzen sein.
+In einem Workflow können Sie die Ausführungspläne der Aktivitäten anpassen und eine bestimmte Zeitzone mit einer Aktivität oder dem gesamten Workflow verknüpfen. Diese Konfiguration kann beim Importieren der Datei oder im Rahmen der Versandplanung nützlich sein.
 
 ## Ausführung planen {#execution-scheduling}
 
@@ -49,4 +49,4 @@ Bei Auswahl der Option **[!UICONTROL Standard]** wird die Zeitzone des Workflows
 
 ## Aktivitäten eine Zeitzone zuweisen {#linking-a-time-zone-to-an-activity}
 
-Im Tab **[!UICONTROL Erweitert]** der Workflow-Aktivitäten besteht die Möglichkeit, die Zeitzone anzugeben. I. d. R. reicht es aus, dem gesamten Workflow eine Zeitzone zuzuweisen. Punktuell kann es jedoch interessant sein, sie für eine bestimmte Aktivität zu überschreiben, beispielsweise beim Datenimport, um den enthaltenen Datumsangaben die entsprechende Zeitzone zuzuordnen.
+Auf **[!UICONTROL Registerkarte]** Erweitert“ der Workflow-Aktivitäten können Sie die Zeitzone auswählen. Obwohl die Zeitzone des Workflows meistens ausreicht, kann es erforderlich sein, sie gelegentlich für eine bestimmte Aktivität zu überschreiben, z. B. beim Datenimport, um Datumsangaben mit der richtigen Zeitzone zu verknüpfen.

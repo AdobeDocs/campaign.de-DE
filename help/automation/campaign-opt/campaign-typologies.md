@@ -6,8 +6,8 @@ feature: Typology Rules
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 100%
+source-wordcount: '488'
+ht-degree: 86%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 100%
 
 **Campaign Optimization** ist das Adobe Campaign-Modul, mit dem Sie die Durchführung von Sendungen steuern, filtern und überwachen können. Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
 
-![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#typologies-video).
+![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#typologies-video).
 
 >[!NOTE]
 >
->Abhängig von Ihrem Abonnement ist die Kampagnenoptimierung entweder im Lieferumfang enthalten oder als Add-on verfügbar. Überprüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Je nach Angebot kann die Kampagnenoptimierung enthalten sein oder als Add-on hinzugefügt werden. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 ## Typologieregeln und Typologien {#typology-rules}
 
@@ -69,7 +69,7 @@ Ausführliche Schritte dazu finden Sie im folgenden Abschnitt:
 1. Konfigurieren Sie Ihren Versand so, dass er die von Ihnen erstellte Typologie verwendet. [Weitere Informationen](apply-rules.md#apply-a-typology-to-a-delivery).
 1. Testen und steuern Sie das Verhalten mithilfe von Kampagnensimulationen. [Weitere Informationen](campaign-simulations.md).
 
-Bei der Versandvorbereitung werden Empfänger ausgeschlossen, wenn ein bestimmtes Kriterium erfüllt ist. Sie können Protokolle überprüfen, um Ausschlüsse zu überwachen.
+Bei der Versandvorbereitung werden Empfänger ausgeschlossen, wenn das Kriterium erfüllt ist. In den Logs können Sie die Ausführung von Ausschlüssen überprüfen.
 
 Anwendungsbeispiele zu Drucktypologieregeln finden Sie auf [dieser Seite](pressure-rules.md#use-cases-on-pressure-rules).
 
@@ -79,11 +79,11 @@ Anwendungsbeispiele zu Drucktypologieregeln finden Sie auf [dieser Seite](pressu
 
 In diesem Video wird erläutert, wie die Ermüdungsverwaltung in Adobe Campaign mithilfe von Typologieregeln implementiert wird.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448340?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3448340?captions=ger&quality=12)
 
 ### Einrichten der Ermüdungsverwaltung mithilfe vordefinierter Filter
 
-Die Ermüdungsverwaltung steuert die Häufigkeit und Anzahl von Nachrichten, um eine Überforderung der Empfänger zu vermeiden. Wenn Sie das Modul zur Kampagnenoptimierung nicht in Ihrer Kampagneninstanz haben, können Sie einen vordefinierten Filter konfigurieren, der die Zielpopulation nach der Anzahl der empfangenen Nachrichten filtert.
+Die Ermüdungsverwaltung steuert die Häufigkeit und Anzahl von Nachrichten, um eine Überforderung der Empfänger zu vermeiden. Wenn Sie das Modul zur Kampagnenoptimierung nicht in Ihrer Kampagneninstanz haben, können Sie einen vordefinierten Filter konfigurieren, der die Zielpopulation nach der Anzahl der empfangenen Nachrichten filtert
 In diesem Video wird erläutert, wie Sie die Ermüdungsverwaltung in Adobe Campaign mithilfe von Filtern implementieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444609?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3444609?captions=ger&quality=12)

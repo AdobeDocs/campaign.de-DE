@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '258'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen Workflow erstellen, um eine E-
 
    ![](assets/cross_channel_delivery_1.png)
 
-1. Fügen Sie Ihrer Abfrage die Filterbedingungen hinzu. In unserem Fall wählen wir Empfänger aus, die eine Mobiltelefonnummer oder E-Mail-Adresse besitzen.
+1. Fügen Sie die Filterbedingungen zu Ihrer Abfrage hinzu. In diesem Fall wählen wir Empfänger aus, die eine Mobiltelefonnummer oder E-Mail-Adresse haben.
 
    ![](assets/cross_channel_delivery_2.png)
 

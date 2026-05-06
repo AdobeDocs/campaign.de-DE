@@ -7,7 +7,7 @@ role: User
 exl-id: c2336507-beea-4ddb-aa8c-1ec591eb5683
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '585'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Um auf das Forum eines Benutzers zuzugreifen, haben Sie folgende Möglichkeiten:
 * Navigieren Sie zum Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Benutzer]** des Campaign-Explorers, wählen Sie den Benutzer aus, um sein Dashboard zu öffnen, und klicken Sie auf den Link **[!UICONTROL Forum]** oben rechts.
 * Suchen Sie den Namen des Benutzers in der Benutzeroberfläche von Adobe Campaign (über eine von diesem Benutzer im Forum gepostete Nachricht oder eine ihm zugewiesene Aufgabe) und klicken Sie darauf, um auf sein Dashboard zuzugreifen.
 
-## Abonnieren eines Forums {#subscribing-to-a-forum}
+## Forum abonnieren {#subscribing-to-a-forum}
 
 Wenn Sie ein Forum abonnieren, können Sie alle Diskussionen verfolgen. Nach der Anmeldung erhalten Sie jedes Mal eine E-Mail-Benachrichtigung, wenn eine Nachricht im Forum gepostet wird.
 
@@ -71,8 +71,8 @@ Um eine Nachricht zu beantworten, klicken Sie auf den E-Mail-Text und melden Sie
 
 Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, empfehlen wir folgende Vorgehensweise:
 
-* Stellen Sie sicher, dass die Benutzer eine E-Mail-Adresse in ihrem Profil angegeben haben.
-* Navigieren Sie zum Ordner **[!UICONTROL Administration > Produktion > Technische Workflows > Campaign-Prozesse]** des Campaign-Explorers und überprüfen Sie, dass der Workflow **[!UICONTROL Vorgänge in Diskussionsforen]** ohne Fehler gestartet wird.
+* Stellen Sie sicher, dass die Benutzer eine E-Mail-Adresse in ihrem Profil angebeben haben.
+* Navigieren Sie zum Ordner **[!UICONTROL Administration > Produktion > Technische Workflows > Campaign-Prozesse]** des Campaign-Explorers und überprüfen Sie, dass der Workflow **[!UICONTROL Aufträge in Diskussionsforen]** ohne Fehler gestartet wird.
 * Überprüfen Sie die Versand-Logs:
 
    * Gehen Sie von der Adobe Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.

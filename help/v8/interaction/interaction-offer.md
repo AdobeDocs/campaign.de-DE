@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 98%
+source-wordcount: '977'
+ht-degree: 83%
 
 ---
 
@@ -56,11 +56,11 @@ Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der List
 
 ### Festlegen der Angebotsgewichtung {#offer-weight}
 
-Um dem Angebotsmodul die Möglichkeit zu geben, zwischen verschiedenen für eine Person geeigneten Angeboten zu wählen, ist es empfehlenswert, jedem Angebot eine Gewichtung zuzuweisen. Sie können darüber hinaus Filter auf die Zielgruppe anwenden oder die Platzierung, auf die sich das Gewicht beziehen soll, einschränken. Ein Angebot mit einer höheren Gewichtung wird demzufolge einem Angebot mit niedriger Gewichtung vorgezogen.
+Damit die Engine zwischen mehreren Angeboten wählen kann, für die die Zielgruppe geeignet ist, müssen Sie dem Angebot eine oder mehrere Gewichtungen zuweisen. Sie können bei Bedarf auch Filter auf die Zielgruppe anwenden oder die Platzierung einschränken, auf die die Gewichtung angewendet werden soll. Ein Angebot mit einer höheren Gewichtung wird gegenüber einem Angebot mit weniger Gewichtung bevorzugt.
 
 Es besteht weiterhin die Möglichkeit, für ein Angebot verschiedene Gewichtungen zu definieren, z. B. in Bezug auf einen Zeitraum, eine Zielgruppe oder auch eine Platzierung.
 
-Ein Angebot kann für Kontakte im Alter von 18 bis 25 Jahren eine Gewichtung A aufweisen und eine Gewichtung B für alle Kontakte über 25 Jahre. Einem Angebot, dessen Verwendungszeitraum auf die Sommermonate beschränkt ist, kann im Juli eine Gewichtung A und im August eine Gewichtung B zugewiesen werden.
+Beispielsweise kann ein Angebot für Kontakte im Alter von 18 bis 25 Jahren das Gewicht A und für Kontakte oberhalb dieses Bereichs das Gewicht B aufweisen. Wenn ein Angebot den ganzen Sommer über geeignet ist, kann es auch eine Gewichtung von A im Juli und eine Gewichtung von B im August haben.
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
    >[!NOTE]
    >
-   >Wenn ein bestimmtes Angebot mit verschiedenen Gewichtungen für einen Kontakt infrage kommt, wählt das Angebotsmodul die höchste Gewichtung aus. Das Angebotsmodul schlägt pro Abfrage einem Kontakt jedes Angebot maximal einmal vor.
+   >Wenn eine Zielgruppe für ein ausgewähltes Angebot mit mehreren Gewichtungen infrage kommt, behält die Engine die beste (höchste) Gewichtung. Beim Aufruf des Angebotsmoduls wird maximal einmal pro Kontakt ein Angebot ausgewählt.
 
 ### Übersicht der für ein Angebot konfigurierten Eignungsregeln {#a-summary-of-offer-eligibility-rules}
 

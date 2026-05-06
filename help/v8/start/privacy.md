@@ -8,8 +8,8 @@ exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 100%
+source-wordcount: '1131'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Mehr über das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** (Lös
 
 >[!NOTE]
 >
->Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie in [diesem Abschnitt](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+>Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 ## Definieren eines Namespace {#namespaces}
 
@@ -132,7 +132,7 @@ Die folgenden integrierten Tabellen werden bei der Durchführung von Datenschutz
 * Abonnements (subscription)
 * Angebotsvorschlag für einen Empfänger (propositionRcp)
 
-Wenn Sie benutzerdefinierte Tabellen erstellt haben, für die eine Relation zur Empfängertabelle (Typ &quot;own&quot;) besteht, werden auch diese berücksichtigt. Wenn Sie beispielsweise eine Transaktionen-Tabelle haben, für die eine Relation mit der Empfängertabelle vorhanden ist, und eine Transaktionendetails-Tabelle, für die eine Relation mit der Transaktionen-Tabelle besteht, werden beide berücksichtigt.
+Wenn Sie benutzerdefinierte Tabellen mit einer Relation zur Empfängertabelle (vom Typ „own„) erstellt haben, werden diese ebenfalls berücksichtigt. Wenn Sie beispielsweise eine mit der Empfängertabelle verknüpfte Transaktionstabelle und eine mit der Transaktionstabelle verknüpfte Transaktionsdetailtabelle haben, werden beide berücksichtigt.
 <!--
 >[!CAUTION]
 >
@@ -155,7 +155,7 @@ Unten finden Sie die verschiedenen Status von Datenschutzanfragen in Adobe Campa
 
 **Verwandte Themen in der Dokumentation zu Campaign Classic v7:**
 
-* [Datenschutz und Einverständnis](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target="_blank"}
+* [Datenschutz und Einverständniserklärung](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target="_blank"}
 
 * [Erste Schritte mit der Datenschutzverwaltung](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=de){target="_blank"}
 

@@ -7,13 +7,13 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '449'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 74%
 
 ---
 
-# Ändern der Dimension{#change-dimension}
+# Dimensionsänderung{#change-dimension}
 
 Verwenden Sie die Aktivität **[!UICONTROL Dimensionsänderung]**, um die Zielgruppendimension beim Erstellen einer Audience zu ändern. Diese Aktivität verschiebt die Achse je nach Datenvorlage und der eingegebenen Dimension. Sie wechseln beispielsweise von der Dimension &quot;Verträge&quot; zur Dimension &quot;Kunden&quot;.
 
@@ -21,7 +21,7 @@ Sie können diese Aktivität auch verwenden, um die zusätzlichen Spalten der ne
 
 >[!IMPORTANT]
 >
->Beachten Sie, dass die Aktivitäten **[!UICONTROL Dimension ändern]** und **[!UICONTROL Datenquelle ändern]** nicht in einer Zeile hinzugefügt werden sollten. Wenn Sie beide Aktivitäten nacheinander verwenden müssen, muss die Aktivität **[!UICONTROL Anreicherung]** zwischen ihnen enthalten sein. Dadurch wird eine ordnungsgemäße Ausführung sichergestellt und potenzielle Konflikte oder Fehler werden vermieden.
+>Beachten Sie, dass die Aktivitäten **[!UICONTROL Dimension ändern]** und **[!UICONTROL Datenquelle ändern]** nicht in einer Zeile hinzugefügt werden dürfen. Wenn Sie beide Aktivitäten nacheinander verwenden müssen, muss die Aktivität **[!UICONTROL Anreicherung]** zwischen ihnen enthalten sein. Dadurch wird eine ordnungsgemäße Ausführung sichergestellt und potenzielle Konflikte oder Fehler werden vermieden.
 
 Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen Sie die folgenden Schritte aus:
 
@@ -29,11 +29,11 @@ Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen
 
    ![](assets/s_user_change_dimension_param1.png)
 
-1. Sie können entscheiden, ob alle oder nur bestimmte Elemente in der ausgehenden Transition übermittelt werden sollen. Im vorliegenden Beispiel wird die Anzahl der möglichen Dubletten auf 2 begrenzt.
+1. Bei der Dimensionsänderung können Sie alle Elemente beibehalten oder diejenigen auswählen, die in der Ausgabe beibehalten werden sollen. Im folgenden Beispiel gilt für den Wert max. Anzahl der Duplikate ist auf 2 gesetzt.
 
    ![](assets/s_user_change_dimension_limit.png)
 
-   Wenn Sie nur einen Datensatz beibehalten wollen, erscheint im Arbeitsschema eine Sammlung, welche alle Datensätze, die nicht im Endergebnis enthalten sind, enthält. Anhand dieser Sammlung können Sie, wie bei anderen Sammlungen auch, Aggregate berechnen oder Informationen abrufen.
+   Wenn Sie sich dafür entscheiden, nur einen Datensatz zu behalten, wird im Arbeitsschema eine Sammlung angezeigt: Diese Sammlung stellt alle Datensätze dar, die im Endergebnis nicht angesprochen werden (da nur ein Datensatz beibehalten wird). Wie alle anderen Sammlungen können Sie mit dieser Sammlung Aggregate berechnen oder Informationen in Spalten abrufen.
 
    Wenn Sie beispielsweise von der Dimension **[!UICONTROL Kunden]** zur Dimension **[!UICONTROL Empfänger]** wechseln, können Sie die Kunden eines bestimmten Geschäfts unter Angabe der getätigten Käufe abrufen.
 
@@ -41,7 +41,7 @@ Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen
 
    ![](assets/s_user_change_dimension_param2.png)
 
-   Mithilfe der blauen Pfeile lässt sich die Reihenfolge der Dublettenverarbeitung bestimmen.
+   Mithilfe der blauen Pfeile lässt sich die Reihenfolge der Duplikatverarbeitung bestimmen.
 
    Im vorliegenden Beispiel erfolgt die Deduplizierung zunächst über die E-Mail-Adresse und bei Bedarf anschließend über die Kundennummer.
 
@@ -57,7 +57,7 @@ Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen
      >
      >Weitere Informationen zur Erstellung und Verwendung von Zusatzspalten finden Sie unter [Daten hinzufügen](query.md#add-data).
 
-   * Wählen Sie die ursprüngliche Zielgruppendimension aus (vor der Dimensionsänderung), markieren Sie die **[!UICONTROL Kundennummer]** und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]****[!UICONTROL .]**
+   * Wählen Sie die ursprüngliche Zielgruppendimension aus (vor der Dimensionsänderung), markieren Sie die **[!UICONTROL Kundennummer]** und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]**&#x200B;**[!UICONTROL .]**
 
      ![](assets/wf_change-dimension_sample_02.png)
 
@@ -73,7 +73,7 @@ Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen
 
      ![](assets/wf_change-dimension_sample_05.png)
 
-1. Starten Sie den Workflow, um das Ergebnis zu prüfen. Die folgenden Abbildungen zeigen die Tabellen vor und nach der Dimensionsänderung sowie die Struktur der Workflow-Tabellen:
+1. Führen Sie den Workflow aus, um das Ergebnis dieser Konfiguration anzuzeigen. Vergleichen Sie die Daten in den Tabellen vor und nach der Aktivität Dimensionsänderung und vergleichen Sie die Struktur der Workflow-Tabellen, wie in den folgenden Beispielen gezeigt:
 
    ![](assets/wf_change-dimension_sample_06.png)
 

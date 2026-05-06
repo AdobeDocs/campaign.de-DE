@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: e8ad021c-ce2e-4a74-b9bf-a989d8879fd1
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 100%
+source-wordcount: '401'
+ht-degree: 84%
 
 ---
 
@@ -42,7 +42,7 @@ Diese Filter werden auf der **Hauptelementebene** der Schemata eingegeben und k�
 
 * Schränken Sie die LESE- und SCHREIB-Berechtigungen ein:
 
-  Hier wird der Filter verwendet, um sowohl LESE- als auch SCHREIB-Berechtigungen für das Schema für alle Operatoren zu verbieten. Nur das **interne** Konto, dargestellt durch den Ausdruck &quot;$(loginId)!=0&quot;, hat diese Berechtigungen.
+  Hier wird der Filter verwendet, um sowohl LESE- als auch SCHREIB-Berechtigungen für das Schema für alle Operatoren zu verbieten. Nur das **interne** Konto, dargestellt durch den Ausdruck &quot;$(loginId)!=0“, verfügt über diese Berechtigungen.
 
   ```
   <sysFilter name="readAccess"> 
@@ -65,7 +65,7 @@ Diese Filter werden auf der **Hauptelementebene** der Schemata eingegeben und k�
 Standardmäßig sind integrierte Schemata nur mit SCHREIB-Berechtigungen für Benutzer mit ADMINISTRATOR-Rechten zugänglich:
 
 * ncm:publishing
-* nl:monitoring
+* NL:monitoring
 * nms:calendar
 * xtk:builder
 * xtk:connections
@@ -97,7 +97,7 @@ Standardmäßig sind integrierte Schemata nur mit SCHREIB-Berechtigungen für Be
 
 >[!CAUTION]
 >
->LESE- und SCHREIB-Berechtigungen für das Schema **xtk:sessionInfo** sind nur über das interne Konto einer Adobe Campaign-Instanz zugänglich.
+>LESE- und SCHREIB-Berechtigungen für das **xtk:sessionInfo**-Schema sind nur über das interne Konto einer Adobe Campaign-Instanz zugänglich.
 
 ## Systemfilter der integrierten Schemata ändern
 

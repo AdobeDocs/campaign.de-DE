@@ -9,8 +9,8 @@ level: Experienced
 exl-id: 7db25b8d-a6f1-4151-bf37-c47e9991ae48
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 98%
+source-wordcount: '762'
+ht-degree: 94%
 
 ---
 
@@ -193,7 +193,8 @@ Es ist möglich, mehrere Filter in einer einzigen Anfrage zu kombinieren:
   }
   ```
 
-* Beispielhafte GET-Anfrage zum Abrufen der &quot;Profil&quot;-Ressourcen, die in den Feldern &quot;E-Mail&quot; oder &quot;Nachname&quot; die Zeichenfolge &quot;Mustermann&quot; enthalten (der byText-Filter sucht sowohl in den Feldern &quot;E-Mail&quot; als auch &quot;Nachname&quot;).
+* Beispielhafte GET-Anfrage zum Abrufen der „Profil“-Ressourcen, die „Mustermann“ in enthalten
+die Felder „E-Mail“ oder „Nachname“ (der byText-Filter sucht sowohl in den Feldern „E-Mail“ als auch „Nachname„).
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=Doe \

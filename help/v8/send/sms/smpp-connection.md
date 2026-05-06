@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: eda6934a-e48a-4932-8c88-588f661005d6
 source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '4443'
-ht-degree: 100%
+source-wordcount: '4464'
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ Vergewissern Sie sich, dass Sie das Feld „*Name der SMSC-Implementierung*“ r
 
 Senden Sie ein paar SMS für alle automatischen Antwort-Keywords und prüfen Sie, ob die Antwort schnell erfolgt (nicht länger als ein paar Sekunden).
 
-Vergewissern Sie sich, dass die MOs in die Datenbank *nms:inSms* eingefügt wurden. Wenn Sie über benutzerdefinierte TLVs verfügen, stellen Sie sicher, dass diese ebenfalls korrekt eingefügt und ordnungsgemäß formatiert sind.
+Überprüfen Sie, ob MOs in die Datenbank *nms:inSms* eingefügt wurden. Wenn Sie über benutzerdefinierte TLVs verfügen, stellen Sie sicher, dass diese ebenfalls korrekt eingefügt und ordnungsgemäß formatiert sind.
 
 Prüfen Sie im Protokoll, ob Adobe Campaign mit einem erfolgreichen *DELIVER_SM_RESP (command_status=0)* antwortet.
 
@@ -109,7 +109,7 @@ Mit *SUBMIT_SM-PDU*:
 Mit *SUBMIT_SM_RESP-PDU*:
 
 * Vergewissern Sie sich, dass dies erfolgreich war (command_status = 0).
-* Vergewissern Sie sich, dass der Hauptteil eine ordnungsgemäß formatierte ID und anschließend ein Byte „0“ enthält.
+* Vergewissern Sie sich, dass der Hauptteil eine ordnungsgemäß formatierte ID und anschließend ein 0-Byte enthält.
 
 Mit *DELIVER_SM-PDU*:
 
@@ -170,11 +170,11 @@ In diesem Fall können Sie für jedes Konto andere Verfahren zur Fehlerbehebung 
 
 Es gibt einen Konflikt zwischen den Konten. Adobe Campaign behandelt die Konten einzeln, aber der Provider behandelt sie möglicherweise als ein einziges Konto.
 
-*Sie verwenden unterschiedliche Benutzernamen-/Passwortkombinationen für all Ihre Konten*
-Sie müssen sich an den Provider wenden, damit er mögliche Konflikte auf seiner Seite diagnostiziert.
+*Sie verwenden verschiedene Anmelde-/Kennwortkombinationen für alle Ihre Konten*
+Sie müssen sich an den Provider wenden, um mögliche Konflikte auf seiner Seite zu diagnostizieren.
 
-*Einige der externen Konten verwenden dieselbe Benutzernamen-/Passwortkombination*
-Der Provider kann nicht feststellen, von welchem externen Konto die BIND-PDU stammt. Daher werden alle Verbindungen von mehreren Konten als eine einzige behandelt, sodass wahrscheinlich MO und SR zufällig über die beiden Konten weitergeleitet wird, was zu scheinbar zufälligen Problemen führen kann.
+*Einige der externen Konten verwenden dieselbe Kombination aus Anmelde-/Kennwort*
+Der Anbieter kann nicht erkennen, von welchem externen Konto die BIND-PDU stammt, sodass er alle Verbindungen von mehreren Konten als ein einziges Konto behandelt, sodass er MO und SR wahrscheinlich zufällig über die zwei Konten leitet, was scheinbar zufällige Probleme verursacht.
 
 Wenn der Provider mehrere Kurzwahlnummern für dieselbe Benutzernamen-/Passwortkombination unterstützt, müssen Sie ihn fragen, wo diese Kurzwahlnummer in die BIND-PDU eingefügt werden soll. Beachten Sie, dass diese Information in die BIND-PDU und nicht in SUBMIT_SM eingefügt werden muss, da nur in der BIND-PDU eine korrekte Weiterleitung von MOs möglich ist.
 
@@ -231,12 +231,12 @@ Eine Verbindung wird als instabil angesehen, wenn eine der folgenden Situationen
 * Wenn der Provider die Verbindung schließt, nachdem er einen ordnungsgemäßen Fehler (wie DELIVER_SM_RESP mit einem Fehler-Code gesendet hat), muss er seinen Connector reparieren. Dieses Schließen verhindert nämlich, dass andere Arten von Nachrichten übertragen werden, und löst die MTA-Drosselung aus. Dies ist besonders im Transceiver-Modus wichtig, wo sich das Schließen der Verbindung sowohl auf MT als auch auf SR auswirkt.
 * Bei Timeouts (BIND-Timeouts, SUBMIT_SM-Timeouts) sendet Campaign möglicherweise zu schnell Nachrichten für diesen Provider. Versuchen Sie, die Einstellung für den *maximalen MT-Durchsatz* zu senken, und überprüfen Sie, ob das Problem sich dadurch beheben lässt.
 
-#### Problem beim Senden von MT (reguläre SMS an eine Endbenutzerin oder einen Endbenutzer)
+#### Problem beim Senden von MT (reguläre SMS an einen Endbenutzer)
 
 * Prüfen Sie, ob die Verbindung stabil ist: Eine SMPP-Verbindung sollte mindestens eine Stunde lang kontinuierlich aufrechterhalten bleiben. Weitere Informationen finden Sie im Abschnitt „Probleme mit instabilen Verbindungen“.
 * Wenn durch einen Neustart des SMS-Prozesses das Senden von MT für einen kurzen Zeitraum wieder funktioniert, besteht wahrscheinlich eine Drosselung aufgrund einer instabilen Verbindung. Weitere Informationen finden Sie im Abschnitt „Probleme mit instabilen Verbindungen“.
 * Überprüfen Sie, ob das Broadlog vorhanden ist und den richtigen Status mit den richtigen Daten aufweist. Ist dies nicht der Fall, handelt es sich nicht um ein SMS-Problem, sondern um ein Versandproblem oder ein Problem bei der Versandvorbereitung (dies liegt außerhalb des Rahmens dieses Dokuments).
-* Prüfen Sie, ob der SMS-Connector tatsächlich mit den Geräten des Providers verbunden ist. Bitten Sie den Provider um Rückmeldung, um sicherzustellen, dass alle Systeme richtig kommunizieren. Informationen zum Bindungsprozess finden Sie unter BIND_TRANSMITTER- und BIND_TRANSCEIVER-PDUs. Möglicherweise müssen Sie die SMPP-Verfolgung aktivieren, um eine ordnungsgemäße Fehlerbehebung zu ermöglichen.
+* Prüfen Sie, ob der SMS-Connector tatsächlich mit den Geräten des Providers verbunden ist. Bitten Sie den Provider um Rückmeldung, um sicherzustellen, dass alle Systeme richtig kommunizieren. Informationen zum Bindungsprozess finden Sie unter BIND_TRANSMITTER- und BIND_TRANSCEIVER-PDUs. Möglicherweise müssen Sie SMPP-Traces aktivieren, um eine ordnungsgemäße Fehlerbehebung zu ermöglichen.
 * Überprüfen Sie bei aktivierter SMPP-Verfolgung, ob die SUBMIT_SM-PDU die richtigen Informationen enthält (siehe die obige Dokumentation).
 * Stellen Sie sicher, dass der Provider mit einer SUBMIT_SM_RESP-PDU mit dem Wert „OK“ (Code 0) antwortet. Stellen Sie sicher, dass die PDU mit einer angemessenen Verzögerung eintrifft: Alles, was länger als 1 Sekunde dauert, ist verdächtig und muss mit dem Provider besprochen werden. Sie kommt normalerweise in weniger als 100 ms an.
 * Wenn alle diese Schritte funktionieren, können Sie sicher sein, dass das Problem auf der Seite des Providers liegt. Er muss dann die Fehlersuche auf seiner Plattform durchführen.
@@ -275,7 +275,7 @@ Wenn nur einige SR empfangen werden, aber nicht alle, stellen Sie sicher, dass k
 
 #### Problem bei der Verarbeitung von MO (und Quarantäne/automatische Antwort)
 
-* Aktivieren Sie die SMPP-Verfolgung während der Tests. Wenn Sie TLS nicht aktivieren, ist es immer besser, während der Fehlerbehebung bei MO eine Netzwerkaufzeichnung durchführen, um zu überprüfen, ob die PDUs die richtigen Informationen enthalten und ordnungsgemäß formatiert sind.
+* Aktivieren Sie SMPP-Traces während der Tests. Wenn Sie TLS nicht aktivieren, ist es immer besser, während der Fehlerbehebung bei MO eine Netzwerkaufzeichnung durchführen, um zu überprüfen, ob die PDUs die richtigen Informationen enthalten und ordnungsgemäß formatiert sind.
 * Wenn Sie Netzwerk-Traffic aufzeichnen oder SMPP-Protokolle analysieren, stellen Sie sicher, dass Sie die gesamte Konversation mit dem MO und seiner Antwort-MT erfassen (wenn eine Antwort konfiguriert ist).
 * Wenn MO (DELIVER_SM-PDU) nicht in den Protokollen angezeigt wird, können Sie sicher sein, dass das Problem auf der Seite des Providers liegt. Er muss dann die Fehlersuche auf seiner Plattform durchführen.
 * Wenn die DELIVER_SM-PDU angezeigt wird, überprüfen Sie, ob sie von Campaign mit einer erfolgreichen DELIVER_SM_RESP-PDU (Code 0) quittiert wird. Diese RESP garantiert, dass die gesamte Verarbeitungslogik von Campaign angewendet wurde (automatische Antwort und Quarantäne). Wenn dies nicht der Fall ist, überprüfen Sie die Logs des SMS-Prozesses auf eine Fehlermeldung.
@@ -284,10 +284,10 @@ Wenn nur einige SR empfangen werden, aber nicht alle, stellen Sie sicher, dass k
 
 #### Problem bei der Versandvorbereitung, die Empfänger unter Quarantäne nicht ausschließt (durch die automatische Antwortfunktion in Quarantäne gestellt)
 
-* Überprüfen Sie, ob die Telefonnummern in der Quarantänetabelle und im Versand-Log im exakt gleichen Format vorliegen. Ist dies nicht der Fall, sehen Sie sich oben die Informationen zur Einstellung „Vollständige Telefonnummer senden“ an, wenn Sie Probleme mit dem „+“-Präfix des internationalen Telefonnummernformats haben.
+* Überprüfen Sie, ob das Telefonnummernformat in der Quarantänetabelle und im Versandlog genau identisch sind. Ist dies nicht der Fall, sehen Sie sich oben die Informationen zur Einstellung „Vollständige Telefonnummer senden“ an, wenn Sie Probleme mit dem „+“-Präfix des internationalen Telefonnummernformats haben.
 * Überprüfen von Kurzwahlnummern: Es kann zu Ausschlüssen kommen, wenn die Kurzwahlnummer der Empfängerin bzw. des Empfängers entweder dieselbe ist, wie im externen Konto definiert, oder wenn sie leer ist (leer = beliebige Kurzwahlnummer). Falls nur eine Kurzwahlnummer für die gesamte Campaign-Instanz verwendet wird, ist es einfacher, alle Felder mit Kurzwahlnummern leer zu lassen.
 
-#### Codierungsprobleme  {#sms-encoding-issues}
+#### Kodierungsprobleme  {#sms-encoding-issues}
 
 Codierungsprobleme treten häufig in SMS auf. Im Folgenden finden Sie einige grundlegende Schritte:
 

@@ -6,9 +6,9 @@ feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '860'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 90%
 
 ---
 
@@ -46,11 +46,11 @@ Gehen Sie hierzu wie folgt vor:
    ![](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Wählen Sie die Option **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
-1. Wählen Sie aus der Funktionsliste über den Knoten **[!UICONTROL Datum]** mit einem Doppelklick die Funktion **[!UICONTROL Day]** aus. Diese Funktion gibt die Zahl aus, die dem Tag des als Parameter übergebenen Datums entspricht.
+1. Wählen Sie aus der Funktionsliste über den Knoten **[!UICONTROL Datum]** mit einem Doppelklick die Funktion **[!UICONTROL Day]** aus. Diese Funktion gibt die Zahl zurück, die den Tag darstellt, der dem als Parameter übergebenen Datum entspricht.
 
    ![](assets/s_ncs_user_create_exp_exple01.png)
 
-1. Wählen Sie in der Liste der verfügbaren Felder mit einem Doppelklick das **[!UICONTROL Geburtsdatum]** aus. Im oberen Abschnitt des Editors wird nun die folgende Formel angezeigt:
+1. Doppelklicken Sie in der Liste der verfügbaren Felder auf **[!UICONTROL Geburtsdatum]**. Im oberen Bereich des Editors wird dann die folgende Formel angezeigt:
 
    ```
    Day(@birthDate)
@@ -58,7 +58,7 @@ Gehen Sie hierzu wie folgt vor:
 
    Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
-1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]****[!UICONTROL gleich aus]**.
+1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]**&#x200B;**[!UICONTROL gleich aus]**.
 
    ![](assets/s_ncs_user_create_exp_exple02.png)
 
@@ -78,7 +78,7 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Wiederholen Sie diesen Vorgang, um den dem aktuellen Monat entsprechenden Geburtsmonat abzurufen. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte 3 bis 10 unter Ersetzung der Funktion **[!UICONTROL Day]** durch die Funktion **[!UICONTROL Month]**.
 
-   Die vollständige Formel lautet wie folgt:
+   Die vollständige Abfrage lautet wie folgt:
 
    ![](assets/s_ncs_user_create_exp_exple03.png)
 
@@ -98,7 +98,7 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
 
 
-Sollte es sich bei dem laufenden Jahr **nicht um ein Schaltjahr handeln**, müssen bei der Workflow-Ausführung am 1. März auch die Empfänger ausgewählt und zu der Empfängerliste hinzugefügt werden, deren Geburtstag am 29. Februar ist. In allen anderen Fällen ist keinerlei zusätzliche Maßnahme notwendig.
+Wenn das aktuelle Jahr **kein Schaltjahr ist** und der Workflow am 1. März ausgeführt wird, müssen wir alle Empfänger auswählen, die gestern (29. Februar) Geburtstag gehabt hätten, und sie zur Empfängerliste hinzufügen. In allen anderen Fällen sind keine zusätzlichen Maßnahmen erforderlich.
 
 ### &#x200B;1. Schritt: Wählen Sie die Empfänger aus {#step-1--selecting-the-recipients}
 

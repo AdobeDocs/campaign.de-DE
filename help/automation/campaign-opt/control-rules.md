@@ -6,8 +6,8 @@ feature: Typology Rules
 exl-id: 79e442ea-f856-41bf-b065-25cb2ad2c65b
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '389'
+ht-degree: 82%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Kontrollregeln dienen dazu, vor dem Versand die Gültigkeit und Qualität der Nachrichten (korrekte Anzeige aller Zeichen, SMS-Größe, Adressenformat etc.) sicherzustellen.
 
-Mehrere standardmäßige Regeln führen grundlegende Kontrollen durch. Es handelt sich um folgende, in der Benutzeroberfläche durch Fettschrift gekennzeichnete Regeln:
+Mit einer Reihe von vordefinierten Regeln können Sie die üblichen Prüfungen durchführen. Diese Prüfungen (in der Benutzeroberfläche fett gedruckt) sind:
 
 * **[!UICONTROL Betreffvalidierung]** (E-Mail): stellt sicher, dass Betreff und Absenderadresse keine Sonderzeichen enthalten, die bei gewissen E-Mail-Programmen Probleme bereiten könnten.
 * **[!UICONTROL Validierung der URL-Titel]** (E-Mail): stellt sicher, dass jede Tracking-URL über einen Titel verfügt.
@@ -32,7 +32,7 @@ Sie können entsprechend Ihren Bedürfnissen neue Kontrollregeln hinzufügen. Er
 
 **Beispiel:**
 
-Im folgenden Beispiel wird eine Regel erstellt, die den Versand eines Angebots auf 100 Empfänger begrenzt. Diese Regel wird in einer Kampagnentypologie referenziert, die in SMS-Sendungen mit dem entsprechenden Angebot verwendet wird.
+Im folgenden Beispiel wird eine Regel erstellt, um zu verhindern, dass ein SMS-Angebot an mehr als 100 Empfänger gesendet wird. Diese Regel wird mit einer Kampagnentypologie und dann mit den SMS-Sendungen verknüpft, für die das betreffende Angebot verfügbar ist.
 
 Gehen Sie wie folgt vor:
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/campaign_opt_create_control_02.png)
 
-   Das Script erzeugt nun eine Warnung, sobald die Zielgruppe des Versands 100 Empfänger übersteigt:
+   Das Skript erzeugt nun eine Warnung, sobald die Zielgruppe des Versands 100 Empfänger übersteigt:
 
    ```
    if( delivery.FCP == false && delivery.properties.toDeliver > 100 ) { logWarning("Significant number of SMS to deliver (" + delivery.properties.toDeliver + "). Please make sure the target is correct.") return false; } return true

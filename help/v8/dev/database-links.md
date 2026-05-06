@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: f7047c6e-f045-4534-b117-311dd90dd92b
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 100%
+source-wordcount: '921'
+ht-degree: 86%
 
 ---
 
@@ -69,7 +69,7 @@ Mögliche Werte:
    * **externalJoin** (optional): Erzwingt den äußeren Join.
    * **revExternalJoin** (optional): Erzwingt den äußeren Join am Umkehr-Link.
 
-* Eine Relation referenziert ein oder mehrere Felder aus der Quelltabelle mit der Zieltabelle. Die Felder, aus denen sich der Join zusammensetzt (`<join>`-Element), müssen nicht ausgefüllt werden, da sie standardmäßig aus dem internen Schlüssel des Zielschemas abgeleitet werden.
+* Eine Relation verweist auf ein oder mehrere Felder aus der Quelltabelle mit der Zieltabelle. Die Felder, aus denen sich der Join zusammensetzt (`<join>`-Element), müssen nicht ausgefüllt werden, da sie standardmäßig aus dem internen Schlüssel des Zielschemas abgeleitet werden.
 * Im erweiterten Schema wird dem Fremdschlüssel der Verknüpfung automatisch ein Index hinzugefügt.
 * Eine Relation setzt sich aus zwei Halb-Relationen zusammen, wobei die erste über das Quellschema deklariert und die zweite automatisch im erweiterten Schema des Zielschemas erstellt wird.
 * Ein Join kann ein äußerer Join sein, wenn das Attribut **externalJoin** mit dem Wert &quot;true&quot; hinzugefügt wird (unterstützt in PostgreSQL).
@@ -80,7 +80,7 @@ Mögliche Werte:
 
 ## Beispiel: Umkehrverknüpfung {#example-1}
 
-Im folgenden Beispiel deklarieren wir eine 1:n-Verknüpfung mit der Schematabelle „cus:company“:
+Im folgenden Beispiel deklarieren wir eine 1:N-Beziehung zur Schematabelle „cus:company:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -112,7 +112,7 @@ Die Definition der Relation wird ergänzt durch die Felder, aus denen sich die R
 
 Der Fremdschlüssel wird automatisch in einem Element hinzugefügt, das dieselben Eigenschaften wie das zugehörige Feld in der Zieltabelle verwendet. Die Benennungskonvention hierfür lautet wie folgt: Name des Zielschemas gefolgt vom Namen des zugehörigen Felds (in diesem Beispiel &quot;company-id&quot;).
 
-Erweitertes Zielgruppenschema (&quot;cus:company&quot;):
+Erweitertes Zielgruppenschema („cus:company):
 
 ```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
@@ -133,17 +133,17 @@ Erweitertes Zielgruppenschema (&quot;cus:company&quot;):
 </schema>
 ```
 
-Ein Umkehrlink zur Tabelle &quot;cus:recipient&quot; wurde mit folgenden Parametern hinzugefügt:
+Ein Umkehrlink zur Tabelle „cus:recipient&quot; wurde mit den folgenden Parametern hinzugefügt:
 
 * **name**: wird automatisch vom Namen des Quellschemas abgeleitet (kann mit dem Attribut &quot;revLink&quot; in der Definition der Relation im Quellschema erzwungen werden)
 * **revLink**: Name des Umkehr-Links
-* **target**: Schlüssel des verknüpften Schemas (Schema &quot;cus:recipient&quot;)
+* **target**: Schlüssel des verknüpften Schemas („cus:recipient&quot;-Schema)
 * **unbound**: Relation wird als Sammlungselement für eine 1-N-Kardinalität deklariert (standardmäßig)
 * **integrity**: Standardwert ist &quot;define&quot; (kann mit dem Attribut &quot;revIntegrity&quot; in der Definition der Relation im Quellschema erzwungen werden)
 
 ## Beispiel: einfache Verknüpfung {#example-2}
 
-In diesem Beispiel wird eine Verknüpfung mit der Schematabelle „nms:address“ deklariert. Der Join ist ein externer Join und wird explizit mit der E-Mail-Adresse des Empfängers oder der Empfängerin und dem Feld „@address“ der verknüpften Tabelle („nms:address“) ausgefüllt.
+In diesem Beispiel deklarieren wir eine Relation zur Schematabelle &quot;:address&quot;. Der Join ist ein äußerer Join und wird explizit mit der E-Mail-Adresse des Empfängers und dem Feld &quot;@address“ der verknüpften Tabelle („nms„) :address.
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -158,7 +158,7 @@ In diesem Beispiel wird eine Verknüpfung mit der Schematabelle „nms:address�
 
 ## Beispiel: eindeutige Kardinalität {#example-3}
 
-In diesem Beispiel erstellen wir eine 1:1-Verknüpfung mit der Schematabelle „cus:extension“:
+In diesem Beispiel erstellen wir eine 1-1-Beziehung zur Schematabelle „cus:extension:
 
 ```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
@@ -166,7 +166,7 @@ In diesem Beispiel erstellen wir eine 1:1-Verknüpfung mit der Schematabelle „
 
 ## Beispiel: Verknüpfung mit einem Ordner {#example-4}
 
-In diesem Beispiel deklarieren wir eine Verknüpfung mit einem Ordner (Schema „xtk:folder“):
+In diesem Beispiel wird eine Verknüpfung zu einem Ordner deklariert (Schema &quot;:folder„):
 
 ```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -176,7 +176,7 @@ Der Standardwert gibt die Kennung der ersten qualifizierten Parametertypdatei zu
 
 ## Beispiel: Erstellen eines Schlüssels für eine Verknüpfung {#example-5}
 
-In diesem Beispiel erstellen wir einen Schlüssel für eine Verknüpfung (zwischen Schema „company“ und Schema „cus:company“) mit dem Attribut **xlink** und einem Feld der Tabelle „email“:
+In diesem Beispiel erstellen wir einen Schlüssel für eine Relation (Schema „company“ zu Schema „cus:company„) mit dem Attribut **xlink** und einem Feld der Tabelle („email„):
 
 ```sql
 <srcSchema name="recipient" namespace="cus">

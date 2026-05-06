@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
 source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1816'
-ht-degree: 93%
+source-wordcount: '1851'
+ht-degree: 87%
 
 ---
 
@@ -107,7 +107,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
    >[!IMPORTANT]
    >
-   >Die **[!UICONTROL Administrator]**-Rolle gewährt Zugriff auf das Campaign Control Panel. Jedes Produktprofil in der Adobe Admin Console, das das Wort „admin“ im Namen enthält (z. B. „administrators“, „admin“, „admins“, „approval admin“ usw.), gewährt Zugriff auf das Control Panel. Weitere Informationen zum [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
+   >Die **[!UICONTROL Administrator]**-Rolle gewährt Zugriff auf das Campaign Control Panel. Jedes Produktprofil in der Adobe Admin Console, das das Wort „Admin“ im Namen enthält (z. B. „Administratoren“, „Admin“, „Admins“, „Genehmigungsadmin“ usw.) gewährt Zugriff auf das Control Panel. Weitere Informationen zum [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
 
 1. **[!UICONTROL Versandverantwortliche Benutzer]** (Versand)
 
@@ -120,7 +120,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
 1. **[!UICONTROL Kampagnenverantwortliche Benutzer]** (Vorgang)
 
-   Die Benutzenden in dieser Gruppe können Marketing-Kampagnen verwalten. Diese Berechtigung verleiht Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets etc.) im Framework von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
+   Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten: Über sie können Sie auf die mit Kampagnen verknüpften Objekte zugreifen (Pläne, Programme, Workflows, Budgets usw.) im Rahmen von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
 
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
@@ -141,7 +141,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
 1. **[!UICONTROL Workflow-Ausführung]** (Workflow)
 
-   Die Gruppe **[!UICONTROL Workflow-Ausführung]** ermöglicht es, die Ausführung und Genehmigung von Zielgruppen-Workflows zu steuern. Die spezifische Berechtigung WORKFLOW wird den Benutzenden dieser Gruppe zugeordnet. Sie ist für alle Aktionen in Workflows erforderlich, zusätzlich zu den Zugriffsrechten auf die Datendateien. Standardmäßig hat die Gruppe **[!UICONTROL Workflow-Ausführung]** schreibgeschützten Zugriff auf standardmäßige Zielgruppen-Workflow-Dateien und Workflow-Vorlagen. Benutzende in dieser Gruppe haben auch Lese- und Schreibzugriff auf die Datei der ausstehenden Validierungen.
+   Die Gruppe **[!UICONTROL Workflow-Ausführung]** ermöglicht die Steuerung der Ausführung und Validierung von Zielgruppen-Workflows: Die spezifische Berechtigung WORKFLOW wird den Benutzenden dieser Gruppe zugeordnet. Sie ist für alle Aktionen in Workflows erforderlich, zusätzlich zu den Zugriffsrechten auf die Datendateien. Standardmäßig hat die Gruppe **[!UICONTROL Workflow-Ausführung]** schreibgeschützten Zugriff auf standardmäßige Zielgruppen-Workflow-Dateien und Workflow-Vorlagen. Benutzende in dieser Gruppe haben auch Lese- und Schreibzugriff auf die Datei der ausstehenden Validierungen.
 
 1. **[!UICONTROL Workflow-Verwantwortliche]** (workflowSupervisor)
 
@@ -190,8 +190,8 @@ Adobe Campaign verfügt über eine Reihe von spezifischen Berechtigungen, mit de
 
 Spezifische Berechtigungen gewähren Berechtigungen für:
 
-* Vorgänge ausführen
-Zum Beispiel ist die Schaltfläche **Analysieren** im Versand-Editor für Mitglieder der Gruppe **Versandoperatoren** aktiviert, die die spezifische Berechtigung **Versand vorbereiten** besitzen.
+* Durchführen von Vorgängen
+Beispielsweise ist die Schaltfläche **Analysieren** im Versand-Editor für Mitglieder der Gruppe **Versandoperatoren** aktiviert, die über die spezifische Berechtigung **Versand vorbereiten** verfügen
 
 * Zugriff auf Ordner
 Mitglieder von Operatorgruppen können Zugriffsrechte auf Ordner gewähren oder einschränken, indem sie die Sicherheitseinstellungen von Ordnern ändern. [Weitere Informationen](folder-permissions.md#restrict-access-to-a-folder).
@@ -200,9 +200,9 @@ Mitglieder von Operatorgruppen können Zugriffsrechte auf Ordner gewähren oder 
 
 Standardmäßige spezifische Berechtigungen in Adobe Campaign sind:
 
-* **[!UICONTROL ADMINISTRATION]**: Benutzer mit **[!UICONTROL ADMINISTRATORRECHTEN]** haben vollen Zugriff auf die Instanz. Admin-Benutzer können jedes Objekt wie Workflow, Versand, Skripte usw. ausführen/erstellen/bearbeiten/löschen. **Hinweis** Produktprofile in der Adobe Admin Console, die das Wort „Admin“ enthalten, gewähren Zugriff auf das Campaign Control Panel.
+* **[!UICONTROL ADMINISTRATION]**: Benutzer mit **[!UICONTROL ADMINISTRATORRECHTEN]** haben vollen Zugriff auf die Instanz. Admin-Benutzer können beliebige Objekte wie Workflows, Sendungen, Skripte usw. ausführen/erstellen/bearbeiten/löschen. **Hinweis:** Produktprofile in der Adobe Admin Console, die das Wort „admin“ enthalten, gewähren Zugriff auf das Campaign Control Panel.
 
-* **[!UICONTROL VALIDIERUNGSADMINISTRATION]**: Sie können verschiedene Validierungsschritte innerhalb von Workflows und Sendungen festlegen, um sicherzustellen, dass der aktuelle Status durch einen zugewiesenen Benutzer oder eine zugewiesene Gruppe validiert wurde. Benutzer mit der Berechtigung **[!UICONTROL GENEHMIGUNGSADMINISTRATION]** können Genehmigungsschritte festlegen und außerdem einen Benutzer oder eine Benutzergruppe zuweisen, der bzw. die diese Schritte genehmigen soll. **Hinweis** Produktprofile, die das Wort „Admin“ enthalten (z. B. „Validierungs-Admin„), gewähren Zugriff auf das Campaign Control Panel.
+* **[!UICONTROL VALIDIERUNGSADMINISTRATION]**: Sie können verschiedene Validierungsschritte innerhalb von Workflows und Sendungen festlegen, um sicherzustellen, dass der aktuelle Status durch einen zugewiesenen Benutzer oder eine zugewiesene Gruppe validiert wurde. Benutzer mit der Berechtigung **[!UICONTROL VALIDIERUNGSADMINISTRATION]** können Validierungsschritte festlegen und auch einen Benutzer oder eine Benutzergruppe zuweisen, der bzw. die diese Schritte validieren soll. **Hinweis** Produktprofile, die das Wort „Admin“ enthalten (z. B. „Validierungs-Admin„), gewähren Zugriff auf das Campaign Control Panel.
 
 * **[!UICONTROL ZENTRAL]**: Berechtigt zur zentralen Verwaltung (Dezentrales Marketing).
 

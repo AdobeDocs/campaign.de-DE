@@ -7,15 +7,15 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1061'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
 # Erstellen einer zusammenfassenden Liste{#creating-a-summary-list}
 
-Das folgende Anwendungsbeispiel erläutert die Erstellung eines Workflows zum Abruf und zur Anreicherung von Dateien mit dem Ziel, eine zusammenfassende Liste zu erstellen. Die zu erstellende Liste enthält Kontakte, die Einkäufe in Geschäften getätigt haben.
+In diesem Anwendungsbeispiel wird die Erstellung eines Workflows beschrieben, mit dem Sie nach dem Erfassen von Dateien und mehreren Anreicherungen eine zusammenfassende Liste erstellen können. Das Beispiel basiert auf einer Liste von Kontakten, die in einem Geschäft Einkäufe getätigt haben.
 
 ![](assets/uc2_enrich_overview.png)
 
@@ -32,7 +32,7 @@ Sie ermöglicht Ihnen Folgendes:
 Gehen Sie wie folgt vor, um eine zusammenfassende Liste zu erstellen:
 
 1. Abruf und Ladung einer Verkaufsdatei in die Workflow-Arbeitstabelle.
-1. Anreicherung der importierten Daten durch Erstellung einer Relation zu einer Referenztabellle.
+1. Anreicherung der importierten Daten durch Erstellung einer Relation zu einer Referenztabelle.
 1. Aktualisierung der Verkaufsdatei mit den Anreicherungsdaten.
 1. Anreicherung der Kontaktdaten mit einem aus der Verkaufstabelle stammenden Aggregat.
 1. Erstellung einer zusammenfassenden Liste.
@@ -108,14 +108,14 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 ![](assets/uc2_enrich_population1.png)
 
-## Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Bestellungen&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
+## Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Käufe&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
 
-In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die Tabelle „Bestellungen“ geschrieben werden. Dafür müssen wir eine Aktivität vom Typ **Daten-Update** verwenden.
+In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die Tabelle „Käufe“ geschrieben werden. Dafür müssen wir eine Aktivität vom Typ **Daten-Update** verwenden.
 
-Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.****
+Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.**&#x200B;**
 
 1. Gehen Sie in den Tab **[!UICONTROL Abstimmung]** der Anreicherung.
-1. Wählen Sie die Zieldimension, im vorliegenden Beispiel also das Schema &#39;Verkauf&#39;, aus.
+1. Wählen Sie die Zielgruppendimension, im vorliegenden Beispiel also das Schema &#39;Verkauf&#39;, aus.
 1. Geben Sie einen Quellausdruck für die Daten der Workflow-Arbeitstabelle an (hier &quot;NameGeschäft&quot;).
 1. Geben Sie dann einen Zielausdruck für die Daten der Verkauf-Tabelle an (hier &quot;NameGeschäft&quot;).
 1. Aktivieren Sie die Option **[!UICONTROL Nicht abgestimmte Daten aus der Arbeitstabelle beibehalten]**.
@@ -127,13 +127,13 @@ Konfigurieren Sie die **Datenaktualisierung**-Aktivität wie folgt:
 1. Aktivieren Sie im Feld **[!UICONTROL Aktionstyp]** die Option **[!UICONTROL Hinzufügen oder aktualisieren]**, um zu vermeiden, dass bei jedem Datenabruf neue Datensätze erstellt werden.
 1. Geben Sie bei der Option **[!UICONTROL Datensatz-Identifizierung]** den Wert **[!UICONTROL Über die Zielgruppendimension]** an.
 1. Wählen Sie als **[!UICONTROL Dokumenttyp]** das Schema &quot;Verkauf&quot; aus.
-1. Geben Sie die Liste der zu aktualisierenden Felder an. In der Spalte **[!UICONTROL Ziel]** können Sie die Felder des Schemas „Bestellungen“ definieren. In der Spalte **[!UICONTROL Ausdruck]** können Sie die Felder der Arbeitstabelle auswählen, um eine Zuordnung vorzunehmen.
+1. Geben Sie die Liste der zu aktualisierenden Felder an. In der Spalte **[!UICONTROL Ziel]** können Sie die Felder des Schemas „Käufe“ definieren. In der Spalte **[!UICONTROL Ausdruck]** können Sie die Felder der Arbeitstabelle auswählen, um eine Zuordnung vorzunehmen.
 1. Aktivieren Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]**.
 
 
 ## Schritt 3: Anreicherung der &quot;Kontakt&quot;-Daten {#step-3--enriching--contact--data-}
 
-Das Schema &quot;Kontakte&quot; steht in Relation zum Schema &#39;Verkauf&#39;. Dies ermöglicht die Verwendung einer weiteren Option der Anreicherungsaktivität, nämlich die Hinzufügung von Daten in Relation mit der Filterdimension.
+Das Schema „Kontakte“ ist physisch mit dem Schema „Bestellungen“ verknüpft. Dies bedeutet, dass Sie eine andere Option der Option „Anreicherung“ verwenden können: Hinzufügen von Daten, die mit der Filterdimension verknüpft sind.
 
 Ziel dieser zweiten Anreicherung ist es, ein Aggregat von Verkaufsdaten zu erstellen, um den Gesamtumsatz pro identifiziertem Kontakt zu berechnen.
 
@@ -169,9 +169,9 @@ Für die zusammenfassende Liste werden Felder aus dem Verkaufsschema und aus der
 
 Im letzten Schritt werden die angereicherten Daten in eine Liste geschrieben.
 
-1. Platzieren Sie im Anschluss an die zweite Anreicherung ein **Listen-Update** im Workflow-Diagramm.
+1. Fügen Sie **Workflow die Aktivität** Listen-Update“ hinzu. Diese Aktivität muss mit der ausgehenden Transition der zweiten Anreicherungsaktivität verknüpft sein.
 1. Aktivieren Sie die Option **[!UICONTROL Wenn nötig Liste erstellen (Titel berechnet)]**.
-1. Wählen Sie einen Wert für den berechneten Titel aus. Im vorliegenden Beispiel wird das aktuelle Datum als Titel für die Liste verwendet: &lt;%= formatDate(new Date(), &quot;%2D.%2M.%2Y&quot;) %>.
+1. Wählen Sie einen Wert für den berechneten Namen. Für die Liste wurde das aktuelle Datum ausgewählt: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y„) %>.
 
 Nach Ausführung des Workflows enthält die Liste folgende Informationen:
 

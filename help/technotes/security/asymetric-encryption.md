@@ -6,8 +6,8 @@ hide: true
 exl-id: 6ee8b05b-2a46-4adf-a036-82fdd4809d0d
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 2%
+source-wordcount: '158'
+ht-degree: 12%
 
 ---
 
@@ -54,4 +54,4 @@ var decrypted = rsaPrivateDecrypt(
 **Zusätzliche Ressourcen**
 
 * [Erste Schritte mit  [!DNL Campaign] -APIs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/api){target="_blank"}
-* [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}
+* [Campaign - JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}

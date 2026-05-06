@@ -5,22 +5,23 @@ feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 56d5628312ea3dedf9335dd0933811e4bf66eb97
+exl-id: 071274f1-7c60-445d-ac07-f5f4f229a489
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 5%
+ht-degree: 82%
 
 ---
 
 # Campaign-Datenbank abfragen
 
-Das Abfrage-Tool ist auf verschiedenen Anwendungsebenen verfügbar und kann verwendet werden, um Zielgruppen zu definieren, Kunden zu segmentieren, Trackinglogs zu extrahieren und zu filtern, Filter zu erstellen und vieles mehr.
+Das Abfragetool ist auf verschiedenen Anwendungsebenen verfügbar und kann verwendet werden, um Zielgruppen zu definieren, Kundschaft zu segmentieren, Trackinglogs zu extrahieren und zu filtern, Filter zu erstellen und vieles mehr.
 
-Es bietet einen speziellen Assistenten - den generischen Abfrage-Editor -, auf den über das Menü **[!UICONTROL Tools > Generischer Abfrage-Editor…]** zugegriffen werden kann. Dieser Editor ermöglicht Datenbankabfragen zum Extrahieren, Organisieren, Gruppieren und Sortieren von Informationen. Sie kann beispielsweise Empfänger abrufen, die in einem bestimmten Zeitraum mehr als n Mal auf einen Newsletter-Link geklickt haben.
+Es bietet einen speziellen Assistenten – das generische Abfragetool –, das Sie im Menü **[!UICONTROL Tools > Generisches Abfragetool…]** aufrufen können. Dieses Tool ermöglicht Datenbankabfragen zum Extrahieren, Organisieren, Gruppieren und Sortieren von Informationen. Beispielsweise können Sie Empfangende abrufen, die in einem bestimmten Zeitraum mehr als n-mal auf einen Newsletter-Link geklickt haben.
 
-Der generische Abfrage-Editor zentralisiert alle Abfragefunktionen. Sie ermöglicht die Erstellung und Speicherung von Einschränkungsfiltern, die dann in anderen Kontexten wiederverwendet werden können, wie z. B. im Abfragefeld eines Zielgruppen-Workflows.
+Das generische Abfragetool zentralisiert alle Abfragefunktionen. Es ermöglicht die Erstellung und Speicherung von Einschränkungsfiltern, die dann in anderen Kontexten wiederverwendet werden können, z. B. im Abfragefeld eines Zielgruppen-Workflows.
 
-![Zugriff auf den Abfrage-Editor und Auswahl einer Tabelle](assets/query_editor_nveau_21.png)
+![Zugreifen auf das Abfragetool und Auswählen einer Tabelle](assets/query_editor_nveau_21.png)
 
 
 Die Schritte zum Erstellen einer Abfrage werden [auf dieser Seite) &#x200B;](design-queries.md).
@@ -40,7 +41,7 @@ Contexts to use the query editor iin Campaign are listed below:
 |**Build conditional content**: Make email content dynamic by creating conditions that define which content should be displayed to different recipients, ensuring personalized and relevant messaging. [Learn how to build conditional content](../personalization/conditions.md)|![Image showing how to create conditional content](assets/conditional-content.png){width="200" align="center" zoomable="yes"}|
 -->
 
-**Verwandte Themen** 
+**Verwandte Themen**
 
 * [Workflow-Abfrageaktivität](../../automation/workflow/query.md)
 * [Abfrage der Empfängertabelle](../../automation/workflow/querying-recipient-table.md)

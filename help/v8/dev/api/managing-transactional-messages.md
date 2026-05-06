@@ -9,8 +9,8 @@ level: Experienced
 exl-id: 00d39438-a232-49f1-ae5e-1e98c73397e3
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 77%
+source-wordcount: '744'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +35,7 @@ Das Transaktionsereignis wird über eine POST-Anfrage mit der folgenden URL-Stru
 POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 ```
 
-* **&lt;ORGANISATION>**: Ihre persönliche Organisationskennung. Siehe [diesen Abschnitt](must-read.md).
+* **&lt;ORGANISATION>**: Ihre persönliche Organisationskennung. Weitere Informationen finden Sie in [diesem Abschnitt](must-read.md).
 
 * **&lt;transactionalAPI>**: die Endpunkte der Transaktionsnachrichten-API.
 
@@ -62,7 +62,7 @@ Sie müssen einen Zeichensatz hinzufügen, z. B. **utf-8**. Beachten Sie, dass d
 
 ### POST-Anfrage-Hauptteil
 
-Die Ereignisdaten sind im JSON-POST-Hauptteil enthalten. Die Ereignisstruktur hängt von ihrer Definition ab.
+Die Ereignisdaten sind im JSON-POST-Hauptteil enthalten. Die Ereignisstruktur hängt von der entsprechenden Definition ab.
 
 Die folgenden optionalen Parameter können zum Ereignisinhalt hinzugefügt werden, um das Senden von mit dem Ereignis verknüpften Transaktionsnachrichten zu verwalten:
 
@@ -170,7 +170,7 @@ In der Antwort können Sie im Feld &quot;Status&quot; ermitteln, ob das Ereignis
 
 * **Ausstehend**: Das Ereignis steht aus – das Ereignis erhält diesen Status, wenn es gerade ausgelöst wurde.
 * **Verarbeitung läuft**: Das Ereignis muss noch versandt werden – es wird in eine Nachricht umgewandelt und die Nachricht wird gesendet.
-* **Angehalten**: Der Ereignisvorgang wurde angehalten. Sie wird nicht mehr verarbeitet, sondern in einer Warteschlange in der Adobe Campaign-Datenbank aufbewahrt.
+* **Angehalten**: Der Ereignisvorgang wurde angehalten. Das Ereignis wird nicht mehr verarbeitet, sondern in einer Warteschlange in der Adobe Campaign-Datenbank aufbewahrt.
 * **Verarbeitet**: Das Ereignis wurde verarbeitet und die Nachricht wurde erfolgreich gesendet.
 * **Ignoriert**: Das Ereignis wurde vom Versand ignoriert, normalerweise dann, wenn eine Adresse unter Quarantäne steht.
 * **Versand fehlgeschlagen**: Bei der Verarbeitung des Ereignisses ist ein Versandfehler aufgetreten.

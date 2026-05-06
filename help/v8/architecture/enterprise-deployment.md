@@ -6,9 +6,9 @@ role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
 source-git-commit: 3235701e0939466d4275b1e9202f82694ccdb352
-workflow-type: ht
-source-wordcount: '1053'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 95%
 
 ---
 
@@ -26,9 +26,9 @@ Campaign v8 Enterprise (FFDA) bietet eine End-to-End-Skalierung bei jedem Schrit
 
 Dies ist eine grundlegende Änderung der Software-Architektur. Die Daten sind jetzt remote und Campaign führt die gesamten Daten, einschließlich Profilen, zusammen. Die [!DNL Campaign]-Prozesse skalieren jetzt durchgängig, vom Targeting bis zur Ausführung der Nachricht: Datenaufnahme, Segmentierung, Zielgruppenbestimmung, Abfragen und Sendungen laufen jetzt typischerweise in Minuten ab. Diese neue Version löst die ganze Herausforderung der Skalierung und bewahrt dabei den gleichen Grad an Flexibilität und Erweiterbarkeit. Die Anzahl der Profile ist nahezu unbegrenzt, und die Datenspeicherung kann verlängert werden.
 
-Die Cloud-Datenspeicherung wird in **[!DNL Snowflake]** ausgeführt: Ein neues vorkonfiguriertes **externes Konto** stellt die Verbindung zur Cloud-Datenbank sicher. Das Konto wird von Adobe eingerichtet und darf nicht geändert werden. [Weitere Informationen](../config/external-accounts.md)
+Die Cloud-Datenspeicherung wird in **[!DNL Snowflake]** ausgeführt: Ein neues natives **externes Konto** stellt die Verbindung zur Cloud-Datenbank sicher. Das Konto wird von Adobe eingerichtet und darf nicht geändert werden. [Weitere Informationen](../config/external-accounts.md)
 
-Jedes integrierte Schema (bzw. Tabelle), das in die Cloud-Datenbank verschoben oder repliziert werden muss, verfügt unter dem **xxl**-Namespace über eine integrierte Schemaerweiterung. Diese Erweiterungen enthalten alle Änderungen, die erforderlich sind, um eingebaute Schemata von der lokalen [!DNL Campaign]-Datenbank in die [!DNL Snowflake]-Cloud-Datenbank zu verschieben und ihre Struktur entsprechend anzupassen: neue UUID, aktualisierte Links usw.
+Jedes integrierte Schema (bzw. Tabelle), das in die Cloud-Datenbank verschoben oder repliziert werden muss, verfügt unter dem **xxl**-Namespace über eine integrierte Schemaerweiterung. Diese Erweiterungen enthalten alle Änderungen, die erforderlich sind, um native Schemata von der lokalen [!DNL Campaign]-Datenbank in die [!DNL Snowflake]-Cloud-Datenbank zu verschieben und ihre Struktur entsprechend anzupassen: neue UUID, aktualisierte Links usw.
 
 >[!CAUTION]
 >
@@ -55,7 +55,7 @@ Die [!DNL Snowflake]-Datenbank auf Marketing-Seite wird verwendet, um:
 * Alle Kundendaten zu speichern: Profile, kundenspezifische Daten wie Transaktionen, Produkte, Standorte usw.
 * Alle Ereignisse und Verhaltensdaten, die von Campaign generiert oder gesammelt werden, zu speichern, z. B. Versandlogs, Trackinglogs, Push-Registrierungen usw.
 * Alle Datenaggregate der oben Genannten zu speichern.
-* Eine Kopie (h+1) von Referenztabellen (wie Sendungen, Auflistungen, Länder usw.) zu speichern, die in Workflows, Kampagnen und Berichten verwendet werden.
+* Eine Kopie (h+1) von Referenztabellen (wie Sendungen, Auflistungen, Länder usw.) die in Workflows, Kampagnen und Berichten verwendet werden.
 * Alle Batch-Prozesse und -Workflows auszuführen.
 
 
@@ -63,11 +63,11 @@ Die PostgreSQL-Datenbank in der Marketing-Instanz wird verwendet, um:
 
 * Bestimmte Workloads auszuführen, z. B. APIs mit geringem Volumen.
 * Alle Campaign-Daten zu speichern, einschließlich Versand- und Kampagneneinstellungen, Workflow- und Service-Definitionen.
-* Alle integrierten Referenztabellen (Auflistungen, Länder usw.) zu speichern, die nach [!DNL Snowflake] repliziert werden.
+* Alle integrierten Referenztabellen (Auflistungen, Länder usw.) die nach [!DNL Snowflake] repliziert werden.
 
   Folgendes können Sie jedoch nicht tun:
    * Anpassungen für Kundendaten erstellen, z. B. keine Haushaltstabelle in PostgreSQL erstellen, sondern nur in Snowflake.
-   * Versandlogs, Trackinglogs usw. in der FFDA-Zielgruppendimension speichern.
+   * Versandlogs, Trackinglogs usw. in der FFDA-Zielgruppendimension speichern
    * Große Datenmengen speichern.
 
 
@@ -98,7 +98,7 @@ Ein spezieller technischer Workflow behandelt die Replikation von Tabellen, die 
 >[!NOTE]
 >
 > Es wurden mehrere Replikationsrichtlinien erstellt, die auf der Größe der Tabelle basieren (XS, XL usw.).
-> > Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen aufweisen, andere werden eine vollständige Aktualisierung durchlaufen.
+> Einige Tabellen werden in Echtzeit repliziert, andere werden stündlich repliziert. Einige Tabellen werden inkrementelle Aktualisierungen aufweisen, andere werden eine vollständige Aktualisierung durchlaufen.
 >
 
 [Weitere Informationen zur Datenreplikation](replication.md)

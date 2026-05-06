@@ -7,21 +7,21 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '679'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 91%
 
 ---
 
 # Workflow für einen kanalübergreifenden Versand{#cross-channel-delivery-workflow}
 
-In diesem Anwendungsbeispiel wird ein Workflow zum kanalübergreifenden Versand beschrieben. Das allgemeine Konzept kanalübergreifender Sendungen finden Sie in [diesem Abschnitt](cross-channel-deliveries.md).
+Dieses Anwendungsbeispiel zeigt einen Workflow für einen kanalübergreifenden Versand. Das allgemeine Konzept von kanalübergreifenden Sendungen wird in [diesem Abschnitt) &#x200B;](cross-channel-deliveries.md).
 
-Das Ziel besteht darin, aus den Empfängern der Datenbank eine Audience auszuwählen und diese in gesonderte Gruppen zu unterteilen, um der einen Gruppe eine E-Mail und der anderen Gruppe eine SMS zukommen zu lassen.
+Das Ziel besteht darin, aus den Empfängern der Datenbank eine Zielgruppe auszuwählen und diese in gesonderte Gruppen zu unterteilen, um der einen Gruppe eine E-Mail und der anderen Gruppe eine SMS zukommen zu lassen.
 
 Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
-1. Erstellen der Aktivität **[!UICONTROL Abfrage]**, um eine Audience auszuwählen.
+1. Erstellen der Aktivität **[!UICONTROL Abfrage]**, um eine Zielgruppe auszuwählen.
 1. Erstellen der Aktivität **[!UICONTROL E-Mail-Versand]**, wobei die Nachricht einen Link zu einem Angebot enthalten soll.
 1. Verwenden der Aktivität **[!UICONTROL Aufspaltung]**, um:
 
@@ -37,8 +37,8 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
 1. Kampagne erstellen. Weitere Informationen finden Sie auf [dieser Seite](../campaigns/marketing-campaign-create.md).
 1. Fügen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](query.md).
-1. Definieren Sie die Empfänger, die Ihre Sendungen erhalten sollen. Wählen Sie beispielsweise Gold-Mitglieder als Zieldimension aus.
-1. Fügen Sie Filterbedingungen zu Ihrer Abfrage hinzu. Wählen Sie in diesem Beispiel Empfänger, die eine E-Mail-Adresse und eine Mobiltelefonnummer haben.
+1. Definieren Sie die Empfänger, die Ihre Sendungen erhalten sollen. Wählen Sie beispielsweise „Gold“-Elemente als Zieldimension aus.
+1. Fügen Sie Ihrer Abfrage Filterbedingungen hinzu. Wählen Sie in diesem Beispiel Empfänger mit einer E-Mail-Adresse und einer Mobiltelefonnummer aus.
 
    ![](assets/wkf_cross-channel_3.png)
 
@@ -109,7 +109,7 @@ Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie 
    * Fügen Sie die Aktivität **[!UICONTROL Mobiltelefon-Versand]** hinzu, um eine SMS an die zweite Teilmenge zu senden.
    * Fügen Sie die Aktivität **[!UICONTROL Listen-Update]** hinzu, um die entsprechenden Empfänger zur Datenbank hinzuzufügen.
 
-1. Durch Doppelklicken auf die Versandaktivitäten im Workflow lassen sich diese bearbeiten.
+1. Doppelklicken Sie auf die Versandaktivitäten in Ihrem Workflow, um sie zu bearbeiten.
 1. Doppelklicken Sie auf die Aktivität **[!UICONTROL Listen-Update]** und wählen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** aus.
 1. Verwenden Sie die Schaltfläche **Starten** in der Aktionsleiste, um den Workflow auszuführen.
 

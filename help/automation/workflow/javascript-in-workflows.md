@@ -7,9 +7,9 @@ role: Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '1690'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1819'
+ht-degree: 99%
 
 ---
 
@@ -614,9 +614,9 @@ In diesem Video wird ein Beispiel für die Verwendung einer nicht statischen API
 
 * [Beispiele für SOAP-Aufrufe](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de){target="_blank"}
 * Methoden:
-   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de){target="_blank"}
+   * [Erstellen](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de){target="_blank"}
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=de){target="_blank"}
    * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=de){target="_blank"}
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=de){target="_blank"}
-   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=de){target="_blank"}
+   * [Schreiben](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=de){target="_blank"}
 * [logInfo-Funktion](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de){target="_blank"}

@@ -7,9 +7,9 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: d77858e1-3cd5-4372-b1bc-ea4b518c958d
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '140'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 81%
 
 ---
 
@@ -24,7 +24,7 @@ Das Prinzip dieser Aktivität entspricht dem der Anreicherung. Auch hier werden 
 Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](query.md)). Gehen Sie dann wie folgt vor:
 
 1. Platzieren Sie im Anschluss an die Abfrage ein **[!UICONTROL Angebotsmodul]** und öffnen Sie es zur weiteren Bearbeitung.
-1. Konfigurieren Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die den Parametern entsprechenden Angebote.
+1. Füllen Sie die verschiedenen verfügbaren Felder aus, um die Parameter der Abfrage des Angebotsmoduls anzugeben (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen.
 
    >[!CAUTION]
    >

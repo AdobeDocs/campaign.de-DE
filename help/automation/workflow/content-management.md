@@ -7,19 +7,19 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '506'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 85%
 
 ---
 
 # Content-Management{#content-management}
 
-Mithilfe der Aktivität **Content Management** lassen sich Inhalte erstellen und bearbeiten sowie Inhaltsdateien erzeugen. Die Inhalte können dann im Ramen einer Versandaktivität genutzt werden.
+Eine **Content-Management**-Aktivität ermöglicht Ihnen das Erstellen und Bearbeiten eines Inhalts und das Generieren von Dateien basierend auf diesem Inhalt. Diese Inhalte können dann über eine Aktivität vom Typ „Versand“ bereitgestellt werden.
 
 >[!CAUTION]
 >
->Das Content Management ist ein optionales Modul von Adobe Campaign. Bitte prüfen Sie Ihren Lizenzvertrag.
+>Content-Management ist ein optionales Adobe Campaign-Modul. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
    * **[!UICONTROL Wird durch die Transition angegeben]**
 
-     Bei Auswahl dieser Option wird der durch die eingehende Transition übermittelte Inhalt verwendet. Dies bedeutet, dass das Ereignis, welches das Content Management aktiviert, eine **[!UICONTROL contentId]**-Variable enthalten muss. Diese kann durch eine vorangehende Content-Management-Aktivität oder durch ein beliebiges Script bestimmt worden sein.
+     Mit dieser Option können Sie den in der Transition angegebenen Inhalt verwenden, d. h. das Ereignis, das das Content-Management aktiviert, muss eine **[!UICONTROL contentId]**-Variable enthalten. Diese Variable kann durch ein vorheriges Content-Management oder ein beliebiges Skript festgelegt worden sein.
 
    * **[!UICONTROL Explizit]**
 

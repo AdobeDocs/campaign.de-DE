@@ -6,9 +6,9 @@ feature: Workflows, Data Management, Distributed Marketing
 role: User, Admin
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 100%
+ht-degree: 68%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Der folgende Workflow wird mit dem Modul **Dezentrales Marketing** installiert. Weiterführende Informationen zum Modul finden Sie in [diesem Abschnitt](../distributed-marketing/about-distributed-marketing.md).
+Der folgende Workflow wird standardmäßig mit dem Modul **Dezentrales Marketing** installiert. Weiterführende Informationen zu diesem Modul finden Sie [diesem Abschnitt](../distributed-marketing/about-distributed-marketing.md).
 
 <table> 
  <tbody> 

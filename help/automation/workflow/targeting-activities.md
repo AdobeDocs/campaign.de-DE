@@ -6,7 +6,7 @@ feature: Workflows, Audiences, Targeting Activity
 version: Campaign v8, Campaign Classic v7
 exl-id: e89c9f20-fc10-421f-9c14-2e33be562a8d
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Mit diesen Aktivitäten können Sie eine oder mehrere Zielgruppen erstellen, ind
 
 * **[Segmente](cells.md)**: liefert eine Übersicht über die verschiedenen Teilmengen in Form von Datenspalten (nützlich insbesondere bei Bearbeitung einer großen Anzahl an Teilmengen).
 * **[CRM-Connector](crm-connector.md)**: dient der Konfiguration einer Synchronisation zwischen Adobe Campaign und einem CRM.
-* **[Datenquelle ändern](change-data-source.md)**: ermöglicht es Ihnen, die Datenquelle einer Workflow-**[!UICONTROL Arbeitstabelle]** zu ändern. Dies bietet mehr Flexibilität bei der Verwaltung von Daten in verschiedenen Datenquellen wie FDA, FFDA und lokalen Datenbanken.
+* **[Datenquelle ändern](change-data-source.md)**: ermöglicht es Ihnen, die Datenquelle des Workflows **[!UICONTROL Arbeitstabelle]** zu ändern. Dies bietet mehr Flexibilität bei der Verwaltung von Daten in verschiedenen Datenquellen wie FDA, FFDA und lokalen Datenbanken.
 * **[Dimensionsänderung](change-dimension.md)**: ermöglicht den Wechsel der Zielgruppendimension im Verlauf der Workflow-Erstellung.
 * **[Deduplizierung](deduplication.md)**: dient dem Entfernen von Duplikaten aus eingehenden Aktivitäten.
 * **[Versandentwurf](delivery-outline.md)** (nur in Kampagnen-Workflows): dient dem Hinzufügen eines Versandentwurfs.

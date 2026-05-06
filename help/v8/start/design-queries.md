@@ -5,10 +5,11 @@ feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: edd495a377559007dad7158c9ab4a4917d89ae73
+exl-id: d34b6073-a7e7-443a-a6d8-e74ef10a67e8
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 28%
+source-wordcount: '959'
+ht-degree: 20%
 
 ---
 
@@ -60,10 +61,10 @@ Mit **[!UICONTROL Option „Doppelte Zeilen entfernen (DISTINCT)]** werden ident
 
 ## &#x200B;3. Schritt – Daten sortieren {#step-3---sort-data}
 
-Im Fenster **[!UICONTROL Sortierung]** können Sie die Reihenfolge der Datenanzeige bestimmen. Mithilfe der Pfeile lässt sich die Spaltenreihenfolge verändern:
+Mit **[!UICONTROL Fenster]** Sortieren“ können Sie Spalteninhalte sortieren. Verwenden Sie die Pfeile, um die Spaltenreihenfolge zu ändern:
 
 * Wenn Sie die Option **[!UICONTROL Sortierung]** ankreuzen, wird der Inhalt der jeweiligen Spalte von A bis Z sortiert (oder aufsteigend, wenn es sich um Zahlen handelt).
-* Für eine Ordnung von Z bis A (oder absteigend, wenn es sich um Zahlen handelt) muss zusätzlich die Option **[!UICONTROL Absteigende Sortierung]** angekreuzt werden. Eine absteigende Sortierung bietet sich z. B. bei der Anzeige von Verkaufszahlen an, wo die meistverkauften Artikel am Listenanfang angezeigt werden sollen.
+* Mit **[!UICONTROL Absteigende Sortierung]** wird der Inhalt von Z bis A und in absteigender Reihenfolge angeordnet. Dies ist beispielsweise für die Anzeige von Rekordumsätzen nützlich: Die höchsten Werte werden oben in der Liste angezeigt.
 
 Im folgenden Beispiel werden die Daten nach dem Alter der Empfänger, vom jüngsten bis zum ältesten, sortiert.
 
@@ -97,7 +98,7 @@ In unten stehendem Beispiel sollen nur deutschsprachige Empfänger ausgewählt w
 >
 >Sie können direkt auf eine Option zugreifen, indem Sie die folgende Formel in das Feld **Wert** eingeben: **$(options:OPTION_NAME)**.
 
-Durch Auswahl des Tabs **[!UICONTROL Vorschau]** können Sie das Ergebnis der Filterbedingung überprüfen. In unserem Beispiel werden alle deutschsprachigen Empfänger mit Nachname, Vorname und E-Mail-Adresse angezeigt.
+Klicken Sie auf **[!UICONTROL Vorschau]**, um das Ergebnis der Filterbedingung anzuzeigen. In diesem Fall werden alle englischsprachigen Empfänger mit ihrem Namen, Vornamen und ihrer E-Mail-Adresse angezeigt.
 
 ![](assets/query_editor_nveau_98.png)
 

@@ -6,9 +6,9 @@ feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: a9bcb214-5c87-4b26-804a-22b868905022
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 100%
+ht-degree: 59%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-In einer **Warten**-Aktivität kann eine Wartezeit von wenigen Sekunden bis hin zu mehreren Monaten definiert werden. Nach Ablauf der angegebenen Frist wird die ausgehende Transition aktiviert. Diese Aktivität betrifft nicht den gesamten Workflow, andere Aufgaben können parallel ausgeführt werden.
+Eine **Warten**-Aktivität aktiviert ihre Transition nach einer Zeitverzögerung von einigen Sekunden bis zu mehreren Monaten. Eine Warteaufgabe blockiert nicht die Ausführung anderer Aufgaben. Der Workflow kann Aufgaben parallel ausführen, während diese Aufgabe aussteht.
 
 Im Editor werden der Titel und die Wartezeit angegeben, wie unten abgebildet:
 
@@ -24,7 +24,7 @@ Im Editor werden der Titel und die Wartezeit angegeben, wie unten abgebildet:
 
 Im Feld **[!UICONTROL Dauer]** können, wenn in den regionalen Parametern des Benutzers nicht anders angegeben, folgende Einheiten verwendet werden:
 
-* **s** für Sekunden, **m** für Minuten, **h** für Stunden, **d** für Tage und **y** für Jahre. Sobald die Eingabe validiert wird, wird der Wert in die am besten lesbare Einheit umgewandelt.
+* Wenn keine regionalen Einstellungen angegeben sind: **s** für Sekunden, **m** für Minuten, **h** für Stunden, **d** für Tage, **y** für Jahre. Zum Zeitpunkt der Genehmigung wird der Wert automatisch in die am besten lesbare Einheit umgewandelt.
 
   Die Standardeinheit ist **T** für Tag.
 

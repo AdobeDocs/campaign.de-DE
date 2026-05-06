@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: e3ad6d92-8d53-4098-90fd-cfed29f2e56e
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '368'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 70%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Mit einer Aktion vom Typ **Versand (fortlaufend)** können Sie einem bestehenden Versand Empfänger hinzufügen. Dieser Versandtyp vermeidet, dass Sie jedes Mal einen neuen Versand erstellen müssen: Dieser Modus ist oft effizienter, insbesondere bei Warnungen und Benachrichtigungen mit geringen Volumen, die nach Bedarf gesendet werden.
+Mit **Aktion** fortlaufender Versand“ können Sie einem bestehenden Versand neue Empfänger hinzufügen. Durch diesen Versand müssen Sie nicht jedes Mal einen neuen Versand erstellen. Dieser Modus ist häufig effizienter, insbesondere bei Warnungen oder Benachrichtigungen mit geringem Volumen, die bei Bedarf gesendet werden.
 
 ![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#continuous-delivery-video).
 
@@ -25,7 +25,7 @@ Auf der Ebene der Versandvorlagen können Sie ein Script zur Berechnung der Besc
 
 ![](assets/edit_diffusion_fil.png)
 
-Dank der Option **[!UICONTROL Fehler verarbeiten]** erscheint eine spezifische Transition, wenn ein Fehler auftritt. In diesem Fall wird die Ausführung des Workflows nicht ausgesetzt, sondern fortgeführt.
+Die Option **[!UICONTROL Fehler verarbeiten]** zeigt eine bestimmte Transition an, die aktiviert wird, wenn ein Fehler erzeugt wird. In diesem Fall wechselt der Workflow nicht in den Fehlermodus und wird anschließend ausgeführt.
 
 Dies gilt für Fehler des Dateisystems (Datei kann nicht verschoben werden, Zugriff auf das Verzeichnis nicht möglich usw.).
 
@@ -46,7 +46,7 @@ Dies gilt nur, wenn die Option **[!UICONTROL Wird durch das Eingangsereignis ang
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch den unmittelbaren Versand ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
+Anhand der drei Werte lässt sich die durch den unmittelbaren Versand ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Zielkennungen speichert, **[!UICONTROL schema]** ist das Schema der Population (normalerweise nms:recipient) und **[!UICONTROL recCount]** die Anzahl der Elemente in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.
 
@@ -64,6 +64,6 @@ Bei einem fortlaufenden Versand wird EIN Versand erstellt. Versandlogs (Broadlog
 
 In diesem Video wird gezeigt, wie Sie einen fortlaufenden Versand mit einer inkrementellen Abfrage konfigurieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/30084?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/30084?captions=ger&quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.

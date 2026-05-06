@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 98%
+source-wordcount: '737'
+ht-degree: 92%
 
 ---
 
@@ -20,13 +20,13 @@ Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschrei
 
 * **Empfängertabelle**: Das Datenmodell basiert auf einer Haupttabelle, die standardmäßig die Empfängertabelle (**nmsRecipient**) ist. In dieser Tabelle werden alle Marketing-Profile gespeichert. Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](#ootb-profiles).
 
-* **Versandtabelle**: Diese Tabelle speichert einen Eintrag pro Versandaktion. Normalerweise handelt es sich dabei um die Versandtabelle (**NmsDelivery**). in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Es enthält alle zum Ausführen von Sendungen erforderlichen Parameter wie Zielgruppe, Inhalt usw. Jeder Eintrag wird wiederholt aktualisiert, um den Versandfortschritt widerzuspiegeln
+* **Versandtabelle**: Diese Tabelle speichert einen Eintrag pro Versandaktion. Normalerweise handelt es sich dabei um die Versandtabelle (**NmsDelivery**). in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Es enthält alle erforderlichen Parameter für die Durchführung von Sendungen wie Zielgruppe, Inhalt usw. Jeder Datensatz wird mehrmals aktualisiert, um den Versandfortschritt widerzuspiegeln
 
 * **Protokolltabelle**: In diesen Tabellen werden alle Protokolle gespeichert, die mit der Ausführung der Kampagnen verbunden sind.
 
    * Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle der Versandlogs (**NmsBroadLogRcp**) enthält die Versandlogs für alle Empfängerinnen und Empfänger.
    * Die Tabelle **nmsBroadlog** ist die größte Tabelle im System. Pro gesendeter Nachricht wird ein Eintrag gespeichert. Diese Einträge werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und gelöscht, wenn der Verlauf gelöscht wird.
-   * Die Haupttabelle der Trackinglogs (**NmsTrackingLogRcp**) speichert die Trackinglogs für alle Empfängerinnen und Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängerinnen und Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
+   * Die Haupttabelle der Trackinglogs (**NmsTrackingLogRcp**) speichert die Trackinglogs für alle Empfängerinnen und Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
 
   Versand-Logs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben und änderbar ist. Daher wird dringend empfohlen, die Logs regelmäßig zu exportieren.
 
@@ -70,7 +70,7 @@ Zum besseren Verständnis der Tabellenverwaltung in Campaign v8 ist zu beachten,
 
 Weitere Informationen zu Replikationsstrategien und -verfahren finden Sie in [diesem Abschnitt](../architecture/replication.md).
 
-**Verwandte Themen** 
+**Verwandte Themen**
 
-Erfahren Sie in [diesem Abschnitt](../start/import.md), wie Sie Profile importieren.
-Weitere Informationen zu Campaign-Zielgruppen finden Sie in [diesem Abschnitt](../start/audiences.md).
+Erfahren Sie in [&#x200B; Abschnitt , wie Sie Profile importieren.](../start/import.md)
+Weitere Informationen zu Campaign-Audiences finden [&#x200B; in diesem Abschnitt](../start/audiences.md)

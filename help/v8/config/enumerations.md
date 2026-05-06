@@ -5,18 +5,19 @@ feature: Configuration, Application Settings
 role: Developer
 version: Campaign v8, Campaign Classic v7
 level: Intermediate, Experienced
-source-git-commit: a1f479538a2d93a2ec13e35cb6813e09c8c4a5f8
+exl-id: 799978e7-025d-4ab0-b198-0e568e4f8ea9
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 79%
+source-wordcount: '859'
+ht-degree: 87%
 
 ---
 
 # Arbeiten mit Aufzählungen {#enumerations}
 
-Eine Auflistung (auch als Auflistungsliste bezeichnet) ist eine vordefinierte Liste von Werten, die Sie zum Ausfüllen bestimmter Felder verwenden können. Auflistungen helfen, Feldwerte zu standardisieren, die Dateneingabe konsistenter zu gestalten und Abfragen zu vereinfachen.
+Eine Aufzählung (auch als Aufzählungsliste bezeichnet) ist eine vordefinierte Liste von Werten, die Sie zum Ausfüllen bestimmter Felder verwenden können. Aufzählungen helfen dabei, Feldwerte zu standardisieren, sodass die Dateneingabe konsistenter wird und Abfragen vereinfacht werden.
 
-Wenn definiert, werden Werte in einer Dropdown-Liste angezeigt. Ein Wert kann direkt ausgewählt oder über eine prädiktive Eingabe eingegeben werden, die übereinstimmende Einträge vorschlägt und ausfüllt. Einige Felder enthalten vordefinierte Auflistungen, und bei Bedarf können zusätzliche Auflistungen erstellt werden.
+Wenn Werte definiert sind, werden sie in einer Dropdown-Liste angezeigt. Ein Wert kann direkt ausgewählt oder über eine prädiktive Eingabe eingegeben werden, bei der übereinstimmende Einträge vorgeschlagen und ausgefüllt werden. Einige Felder enthalten vordefinierte Aufzählungen. Bei Bedarf können zusätzliche Aufzählungen erstellt werden.
 
 ![](assets/enum_values.png)
 

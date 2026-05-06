@@ -8,8 +8,8 @@ exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 92%
+source-wordcount: '1058'
+ht-degree: 73%
 
 ---
 
@@ -40,7 +40,7 @@ Mit Campaign haben Sie folgende Möglichkeiten:
 
 Profile werden in einer funktionsstarken Cloud-Datenbank zentralisiert. Die Akquise von Profilen und die Datenbankerstellung können auf viele verschiedene Weisen erfolgen: Online-Sammlung über Web-Formulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie Marketing-Verlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PII-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
 
-In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen übermittelt werden (E-Mails, SMS usw.). Dank der in der Datenbank gespeicherten Empfängerdaten können Sie die Zielgruppe filtern, die eine bestimmte Sendung erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzufügen. In der Datenbank sind weitere Profiltypen vorhanden. Sie sind für andere Verwendungszwecke gedacht. Beispielsweise dienen Testprofile zum Testen von Sendungen, bevor sie tatsächlich an das endgültige Ziel übermittelt werden.
+In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) die Empfänger. Dank der Empfängerdaten, die in der Datenbank gespeichert sind, können Sie die Zielgruppe filtern, die einen bestimmten Versand erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzufügen. In der Datenbank gibt es noch andere Arten von Profilen. Sie sind für unterschiedliche Zwecke gedacht. So werden beispielsweise Testprofile erstellt, um Ihre Sendungen zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
 
 Die Grundlagen zur Verwaltung von Profilen werden in [diesem Abschnitt](audiences.md) erläutert.
 
@@ -50,19 +50,19 @@ Informationen zum Hinzufügen von Profilen in Campaign finden Sie in [diesem Abs
 
 Adobe Campaign enthält leistungsstarke Analyse- und Zielgruppenbestimmungsfunktionen, die es Ihnen ermöglichen, sehr spezifische, dem Kundenprofil entsprechende Angebote zu erstellen. Mit der deskriptiven Analysefunktion können Sie Informationen vor und nach Ihren Marketing-Kampagnen analysieren. Mit der [Filterverwaltung](../audiences/create-filters.md) und der grafischen [Abfrage-Editor](query-editor.md)-Funktion können Sie Ihre Abonnentenpopulation filtern und Stichproben erstellen oder Zielgruppen anhand einer unbegrenzten Anzahl von Kriterien erstellen.
 
-Fortschrittliche Funktionen für das Daten-Management erweitern die Datenverarbeitungskapazitäten. Sie vereinfachen und optimieren den Zielgruppenbestimmungsprozess, indem sie nicht modellierte Daten in den Datamart einschließen.
+Die erweiterte Datenverwaltungsfunktionalität erweitert die Datenverarbeitungsfunktionen. Dies vereinfacht und optimiert den Zielgruppenbestimmungsprozess, indem nicht modellierte Daten in den Datamart eingeschlossen werden.
 
 Weitere Informationen zur Segmentierung und Erstellung von Zielgruppen finden Sie in [diesem Abschnitt](audiences.md).
 
 ## Kanalübergreifende Orchestrierung einer Kampagne {#cross-channel-campaign-orchestration}
 
-Adobe Campaign unterstützt Sie bei der Konzeption und Orchestrierung von zielgerichteten und personalisierten Kampagnen auf verschiedenen Kanälen: E-Mail, Briefpost, SMS und Push-Benachrichtigung. Über nur eine Oberfläche können Sie all Ihre Kampagnen und Kommunikationen planen, orchestrieren, konfigurieren, personalisieren, automatisieren, ausführen und messen.
+Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen entwerfen und koordinieren: E-Mail, Briefpost, SMS, Push-Benachrichtigung. Eine einzige Oberfläche bietet alle Funktionen, die zum Planen, Orchestrieren, Konfigurieren, Personalisieren, Automatisieren, Ausführen und Messen all Ihrer Kampagnen und Kommunikationen erforderlich sind.
 
 Informationen zum Entwerfen, Planen und Ausführen einer Kampagne finden Sie in [diesem Abschnitt](campaigns.md).
 
 ## Workflows {#wf-gsv8}
 
-Adobe Campaign bietet eine umfassende grafische Oberfläche, die den Entwurf komplexer Arbeitsabläufe ermöglicht. Diese umfassen die Segmentierung von Zielgruppen, die Ausführung von Kampagnen, die Verarbeitung von Dateien usw. Erstellen Sie zum Beispiel einen Workflow, um eine Datei von einem Server herunterzuladen, sie zu entkomprimieren und die Datensätze in die Adobe Campaign-Datenbank zu importieren.
+Adobe Campaign bietet eine umfassende grafische Umgebung, mit der Sie komplexe Prozesse wie Segmentierung, Kampagnenausführung, Dateiverarbeitung usw. entwerfen können. Beispielsweise können Sie einen Workflow verwenden, um eine Datei von einem Server herunterzuladen, sie zu entkomprimieren und dann ihre Datensätze in die Adobe Campaign-Datenbank zu importieren.
 
 Ein Workflow kann auch Benutzerinnen und Benutzer einbeziehen, indem er ihnen Aufgaben zuweist oder sie ausgeführte Aufgaben genehmigen lässt. Auf diese Weise ist es möglich, anderen Benutzern Aufgaben wie Inhaltsgestaltung, Zielgruppenbestimmung und Validierung von Testsendungen zuzuweisen, bevor eine Nachricht an die Empfänger verschickt wird.
 
@@ -77,7 +77,7 @@ Informationen zum Entwerfen und Ausführen von Workflows finden Sie in [diesem A
 
 ## Reporting und Analysen {#analysis-and-reporting}
 
-Adobe Campaign ermöglicht es Ihnen, das Verhalten Ihrer Kunden zu verfolgen und besser zu verstehen, indem Sie Daten und Profile kontinuierlich anreichern. Dank der Reporting- und Analyse-Tools trägt jede neue Kampagne zur Optimierung Ihrer Datenbestände bei. Marketing-Maßnahmen können besser auf die jeweiligen Zielgruppen abgestimmt werden und Wirksamkeit sowie ROI werden gesteigert.
+Mit Adobe Campaign können Sie das Verhalten Ihrer Kunden überwachen und interpretieren, indem Sie ihre Daten und Profile schrittweise anreichern. Mit den Reporting- und Analyse-Tools können Sie jede neue Kampagne optimal nutzen, Ihre Marketing-Initiativen besser ausrichten und deren Wirkung sowie ROI optimieren.
 
 Adobe Campaign bietet nicht nur leistungsstarke native Reporting-Vorlagen, sondern ermöglicht auch die Erstellung benutzerdefinierter Berichte auf Versand-, Kampagnen-, Benutzer- oder Segmentebene. Führen Sie eine deskriptive Analyse durch, ermitteln Sie den Gesamt-ROI oder exportieren Sie Daten in Adobe Analytics und andere Lösungen, um eine weitere Datenvisualisierung und -analyse zu ermöglichen.
 

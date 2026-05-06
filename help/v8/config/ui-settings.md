@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
 source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 97%
+source-wordcount: '1094'
+ht-degree: 80%
 
 ---
 
@@ -37,7 +37,7 @@ Darüber hinaus können Sie Filter erstellen und speichern.  Weitere Information
 
 ### Anzahl der Einträge {#number-of-records}
 
-Standardmäßig lädt Adobe Campaign die 200 ersten Datensätze einer Liste in den Arbeitsspeicher. Dies bedeutet, dass eventuell nicht alle Datensätze einer Tabelle angezeigt werden. Sie haben die Möglichkeit, die Anzahl an Datensätzen einer Liste zu zählen und zusätzliche Datensätze in den Arbeitsspeicher zu laden.
+Standardmäßig lädt Adobe Campaign die ersten 200 Datensätze einer Liste. Das bedeutet, dass nicht unbedingt alle Datensätze der Tabelle angezeigt werden, die Sie gerade anzeigen. Sie können die Anzahl der Datensätze in der Liste zählen und weitere Datensätze laden.
 
 Im rechten unteren Bereich der Listenanzeige zeigt ein **Zähler** die Anzahl an geladenen Datensätzen sowie die Gesamt-Datensatzanzahl an (unter Berücksichtigung aller angewendeten Filter):
 
@@ -141,16 +141,16 @@ Um Daten aus einer Liste zu exportieren, müssen Sie einen Export-Assistenten ve
 
 ### Sortieren einer Liste {#sorting-a-list}
 
-Listen enthalten oft große Datenmengen, die sortiert und mit einfachen oder erweiterten Filtern eingeschränkt werden können. Während die Sortierung eine Anzeige aller Datensätze in steigender oder fallender Reihenfolge nach sich zieht, wird durch Anwendung von Filtern unter Kombination verschiedener Kriterien die Auswahl der anzuzeigenden Datensätze eingeschränkt.
+Listen können eine große Datenmenge enthalten. Sie können diese Daten sortieren oder einfache oder erweiterte Filter anwenden. Mit der Sortierung können Sie Daten in auf- oder absteigender Reihenfolge anzeigen. Mit Filtern können Sie Kriterien definieren und kombinieren, damit nur ausgewählte Daten angezeigt werden.
 
-Durch die Auswahl eines Spaltentitels werden die Daten aufsteigend oder absteigend sortiert oder die Sortierung aufgehoben. Ein blauer Pfeil vor dem Spaltentitel zeigt an, dass nach dieser Spalte sortiert wurde und ob es sich um eine auf- oder absteigende Sortierung handelt. Ein roter Unterstrich bedeutet, dass die Sortierung sich auf in der Datenbank indizierte Daten bezieht. Dieser Sortiermodus trägt zur Optimierung der Sortiervorgänge bei.
+Klicken Sie auf die Spaltenüberschrift, um eine aufsteigende oder absteigende Sortierung anzuwenden oder die Datensortierung abzubrechen. Der aktive Sortierstatus und die Sortierreihenfolge werden durch einen blauen Pfeil vor der Spaltenbeschriftung angezeigt. Ein roter Bindestrich vor der Spaltenbeschriftung bedeutet, dass die Sortierung auf Daten angewendet wird, die aus der Datenbank indiziert wurden. Diese Sortiermethode wird verwendet, um Sortieraufträge zu optimieren.
 
-Sie können die Sortierung konfigurieren oder Sortierkriterien kombinieren. Gehen Sie dazu folgendermaßen vor:
+Sie können auch eine Sortierung konfigurieren oder Sortierkriterien kombinieren. Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie rechts unten von der Liste **[!UICONTROL Liste konfigurieren]** aus.
 1. Wählen Sie im Listenkonfigurationsfenster den Tab **[!UICONTROL Sortierung]** aus.
 1. Wählen Sie die zu sortierenden Felder und die Sortierrichtung aus (auf- oder absteigend).
-1. Die Priorität der Sortierkriterien hängt von der Reihenfolge der Sortierungsspalten ab. Diese Reihenfolge kann mithilfe der Pfeile rechts in der Symbolleiste angepasst werden.
+1. Die Sortierpriorität wird durch die Reihenfolge der Sortierspalten definiert. Um die Priorität zu ändern, ändern Sie mithilfe der entsprechenden Symbole die Reihenfolge der Spalten.
 
    Die Anzeige der Spalten in der Liste ist unabhängig von der Priorität der Sortierkriterien.
 

@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: e0603a4d-cde1-4199-a164-bf0c992ba937
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Gehen Sie wie folgt vor, um die Zielgruppe für Ihren Versand auszuwählen:
 
    ![](assets/audience_to.png){zoomable="yes"}
 
-1. Wählen Sie in der Dropdown-Liste die Option **[!UICONTROL Zielgruppen-Mapping]** aus. Die Adobe Campaign-Standardeinstellung für Zielgruppen-Mapping ist „Empfänger“, basierend auf dem Schema **[!UICONTROL nms:recipient]**.
+1. Wählen Sie in der Dropdown-Liste die Option **[!UICONTROL Zielgruppen-Mapping]** aus. Das standardmäßige Zielgruppen-Mapping in Adobe Campaign ist „Empfänger“ und basiert auf **[!UICONTROL nms:recipient]**-Schema.
 
    Es sind weitere Zielgruppen-Zuordnungen verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Arbeiten mit Zielgruppen-Mappings](../../audiences/target-mappings.md).
 

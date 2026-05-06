@@ -7,8 +7,8 @@ level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 95%
+source-wordcount: '524'
+ht-degree: 93%
 
 ---
 
@@ -37,7 +37,7 @@ Folgende Optionen stehen zum Anmelden (Opt-in) eines Profils für einen Service 
   Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=de#deliveries-tab){target="_blank"}
 
 
-* Importieren Sie Empfängerinnen und Empfänger und abonnieren Sie für sie automatisch einen Informations-Service. Wählen Sie dazu im letzten Schritt des Importassistenten den betreffenden Service aus.
+* Importieren Sie Empfängerinnen und Empfänger und abonnieren Sie sie automatisch für einen Informationsdienst. Wählen Sie dazu im letzten Schritt des Importassistenten den betreffenden Service aus.
 
   Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=de#step-5---additional-step-when-importing-recipients){target="_blank"}.
 

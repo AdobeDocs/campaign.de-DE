@@ -8,14 +8,14 @@ exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 567ca1cd8fa6e4f03c8871488152710753ea02f1
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 98%
+source-wordcount: '727'
+ht-degree: 93%
 
 ---
 
 # Verwalten von Ordnern und Ansichten {#folders-and-views}
 
-Campaign-Ordner sind Knoten in der Explorer-Baumstruktur. Je nach Typ enthalten sie bestimmte Datentypen. 
+Campaign-Ordner sind Knoten in der Explorer-Baumstruktur. Je nach Typ enthalten sie bestimmte Datentypen.
 
 Eine Ansicht ist ein spezieller Ordner, der keine Daten enthält, aber Daten anzeigt, die physisch in anderen Ordnern desselben Typs gespeichert sind. Wenn Sie beispielsweise einen Versandordner in eine Ansicht umwandeln, werden in diesem Ordner alle Sendungen angezeigt. Diese Daten können dann gefiltert werden.
 
@@ -34,8 +34,8 @@ Beachten Sie, dass Sie Ordnern Berechtigungen zuweisen können, um den Zugriff a
 
 * **Definieren und verwenden Sie eine Namenskonvention**. Sie können beispielsweise die Workflows in alphabetischer Reihenfolge benennen, sodass sie in der Ausführungsreihenfolge sortiert werden, z. B.:
 
-  A1 – Empfänger importieren, beginnt um 10:00 Uhr;
-A2 – Tickets importieren, beginnt um 11:00 Uhr.
+  A1 - Empfänger importieren, beginnt um 10 :00;
+A2 - Tickets importieren, beginnt um 11:00.
 
 ## Erstellen von Ordnern{#create-a-folder}
 
@@ -76,11 +76,11 @@ Im folgenden Beispiel erstellen wir einen neuen Ordner, in dem nur US-Sendungen 
 
 1. Erstellen Sie einen **[!UICONTROL Versand]**-Ordner und benennen Sie ihn **US-Sendungen**.
 1. Klicken Sie mit der rechten Maustaste auf diesen Ordner und wählen Sie **[!UICONTROL Eigenschaften...]** aus.
-1. Wählen Sie im Tab **[!UICONTROL Einschränkung]** die Option **[!UICONTROL Dieser Ordner ist eine Ansicht]**: Nun werden alle Sendungen der Datenbank in diesem Ordner angezeigt.
+1. Wählen Sie auf **[!UICONTROL Registerkarte]** Einschränkung **[!UICONTROL die Option „Dieser Ordner ist eine Ansicht]** aus. Alle Sendungen in der Datenbank werden dann angezeigt.
 
    ![](assets/this-folder-is-a-view.png)
 
-1. Definieren Sie im mittleren Bereich des Fensters im Abfrage-Tool die Filterkriterien: Nur die dem Filter entsprechenden Sendungen werden im Ordner angezeigt.
+1. Definieren Sie im mittleren Bereich des Fensters im Abfrage-Editor die Filterkriterien: Nur die dem Filter entsprechenden Sendungen werden im Ordner angezeigt.
 
    ![](assets/filter-view.png)
 

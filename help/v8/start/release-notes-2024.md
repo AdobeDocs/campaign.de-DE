@@ -5,7 +5,7 @@ feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
 source-git-commit: b52308bcbe68a7c382918fe28f8166e3bfcb6cde
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1679'
 ht-degree: 97%
 
 ---
@@ -53,7 +53,7 @@ NEO-48232, NEO-56832, NEO-72504, NEO-74855, NEO-75898, NEO-76097, NEO-76958, NEO
 
 ## Version 8.7.1 {#release-8-7-1}
 
-_2. Mai 2024_
+_Freitag, 2. Mai 2024_
 
 >[!AVAILABILITY]
 >
@@ -69,13 +69,13 @@ _2. Mai 2024_
 
 * **Rest-APIs**: Wenn Sie von Campaign Standard migriert sind, können Sie REST-APIs verwenden, um Integrationen für Adobe Campaign zu erstellen und Ihr eigenes Ökosystem zu erstellen, indem Sie Adobe Campaign mit den von Ihnen verwendeten Technologien verbinden. [Weitere Informationen](../dev/api/get-started-apis.md)
 
-* **Dynamisches Reporting**: Wenn Sie von Campaign Standard migriert sind, können Sie auf das dynamische Reporting zugreifen, das vollständig anpassbare und in Echtzeit aktualisierte Berichte zum Messen der Wirkung Ihrer Marketing-Aktivitäten bietet. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Stadt und Alter sowie nach Daten von E-Mail-Kampagnen wie Öffnungen und Klicks ermöglicht. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=de){target="_blank"}
+* **Dynamisches Reporting**: Wenn Sie von Campaign Standard migriert sind, können Sie auf das dynamische Reporting zugreifen, das vollständig anpassbare und in Echtzeit aktualisierte Berichte zum Messen der Wirkung Ihrer Marketing-Aktivitäten bietet. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Ort und Alter ermöglicht, zusätzlich zur Analyse basierend auf Daten von E-Mail-Kampagnen wie Öffnungen und Klicks. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=de){target="_blank"}
 
 ### Kompatibilitätsaktualisierungen {#comp-8-7-1}
 
 Die folgenden FDA-Connectoren wurden hinzugefügt: Mehr dazu erfahren Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
 
-* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. 
+* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt.
 
 * Ein neuer Amazon Redshift FDA ODBC-Connector ist jetzt verfügbar. Er bietet verbesserte Konnektivität, einfachere Wartung und optimierte Kompatibilität. Diese neue Version bietet die folgenden Verbesserungen:
 
@@ -108,7 +108,7 @@ NEO-72648, NEO-71534, NEO-71473, NEO-70263, NEO-70195, NEO-69651, NEO-68704, NEO
 
 ## Version 8.6.3 {#release-8-6-3}
 
-_30. Juli 2024_
+_Mittwoch, 30. Juli 2024_
 
 ### Neue Funktionen {#new-8-6-3}
 
@@ -135,7 +135,7 @@ https://jira.corp.adobe.com/issues/?filter=585288&jql=fixVersion%20%3D%208.6.3%2
 
 Die folgende Änderung wurde im Mai veröffentlicht und steht jetzt Benutzenden von Campaign v8 zur Verfügung:
 
-* **Neues Add-on für verbesserte Sicherheit**: Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet Adobe Campaign ein neues Add-on für verbesserte Sicherheit an. Die darin enthaltenen Funktionen ermöglichen eine sichere CMK-Integration und sicheres VPN-Tunneling.  [Weitere Informationen](../config/enhanced-security.md)
+* **Neues Add-on für verbesserte Sicherheit**: Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet Adobe Campaign ein neues Add-on für verbesserte Sicherheit an. Die darin enthaltenen Funktionen ermöglichen eine sichere CMK-Integration und sicheres VPN-Tunneling. [Weitere Informationen](../config/enhanced-security.md)
 
 ## Version 8.6.2 {#release-8-6-2}
 
@@ -166,7 +166,7 @@ _14. Februar 2024_
 
 ### Allgemeine Verbesserungen {#improvements-8-6-1}
 
-* Campaign v8.6 verbessert den Durchsatz für **Tracking-Indikatoren des E-Mail-Versands**. Mit unseren optimierten Prozessen wird die Tracking-Erfassung und Rechenzeit verkürzt, und Sie können Ihre Versandschlüsselindikatoren viel schneller überprüfen.
+* Campaign v8.6 verbessert den Durchsatz für **Tracking-Indikatoren des E-Mail-Versands**. Mit unseren optimierten Prozessen wird die Tracking-Aufnahme und Rechenzeit verkürzt, und Sie können Ihre Versandschlüsselindikatoren viel schneller überprüfen.
 
 
 ### Aktualisierungen bei der Zustellbarkeit {#deliverability-8-6-1}
@@ -186,7 +186,7 @@ NEO-67892, NEO-67235, NEO-66797, NEO-66462, NEO-65091, NEO-65036, NEO-64984, NEO
 
 ## Version 8.5.3 {#release-8-5-3}
 
-_28. Mai 2024_
+_Mittwoch, 28. Mai 2024_
 
 ### Migration zu OAuth-Server-zu-Server-Anmeldedaten {#change-8-5-3}
 

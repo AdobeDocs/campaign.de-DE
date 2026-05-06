@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 02cca21f-b1ac-4ac2-9761-015f6c7f5567
 source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
-workflow-type: ht
-source-wordcount: '766'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '790'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## E-Mail-Formate für japanische Mobiltelefone {#email-formats-for-japanese-mobiles}
 
-Adobe Campaign unterstützt drei spezifische Formate für E-Mails auf japanischen Mobiltelefonen für den japanischen Markt: **Deco-mail** (DoCoMo Mobiltelefone), **Decore Mail** (Softbank Mobiltelefone) und **Decoration Mail** (KDDI AU Mobiltelefone). Diese Formate unterliegen verschiedenen Einschränkungen hinsichtlich Kodierung, Struktur und Größe. Weiterführende Informationen zu Einschränkungen und Empfehlungen finden Sie in [diesem Abschnitt](#limitations-and-recommendations).
+Adobe Campaign verwaltet drei spezifische japanische Formate für E-Mails auf Mobiltelefonen: **Deco-mail** (DoCoMo-Mobilgeräte), **Decore Mail** (Softbank-Mobilgeräte) und **Decoration Mail** (KDDI AU-Mobilgeräte). Diese Formate erzwingen besondere Einschränkungen hinsichtlich Codierung, Struktur und Größe. Weitere Informationen zu Einschränkungen und Empfehlungen finden [&#x200B; in diesem Abschnitt](#limitations-and-recommendations).
 
 Damit ein Empfänger, der eines dieser Formate verwendet, Nachrichten korrekt angezeigt bekommt, wird empfohlen, das entsprechende Format **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** oder **[!UICONTROL Decoration Mail (KDDI AU)]** im Empfängerprofil auszuwählen:
 
@@ -72,7 +72,7 @@ Mithilfe dieser Regel können Sie sich vergewissern, ob bei der Sendung die von 
 
 ### Durchführen eines Testversands {#sending-proofs}
 
-Sie können Testsendungen durchführen, um Ihren Versand zu testen. Wenn Sie dabei Ersatzadressen verwenden, geben Sie bitte die Adressen ein, die dem E-Mail-Format des verwendeten Profils entsprechen.
+Sie können Testsendungen durchführen, um Ihren Versand zu testen. Wenn Sie den Testversand durchführen und Ersatzadressen verwenden, geben Sie bitte die Adressen ein, die dem E-Mail-Format des verwendeten Profils entsprechen.
 
 Beispielsweise können Sie die Adresse eines Profils durch test@softbank.ne.jp ersetzen, wenn das E-Mail-Format für dieses Profil zuvor in **[!UICONTROL Decore Mail (Softbank)]** definiert wurde.
 

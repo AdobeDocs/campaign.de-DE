@@ -8,7 +8,7 @@ badge: label="Eingeschränkte Verfügbarkeit" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
 source-git-commit: 52ea7f0a7690ef656568cc75925b9982e1f475e9
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1552'
 ht-degree: 94%
 
 ---
@@ -149,7 +149,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
 1. Der **[!UICONTROL Integrationsschlüssel]** ist für jede Anwendung spezifisch. Er verknüpft die App mit Adobe Campaign und wird bei der Konfiguration der Campaign-Erweiterung verwendet.
 
-   Stellen Sie sicher, dass in Adobe Campaign und im Appcode über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
+   Stellen Sie sicher, dass in Adobe Campaign und im Appcode über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist
 
    Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
 
@@ -184,7 +184,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 
 1. Der Integrationsschlüssel ist für jede Anwendung spezifisch. Er verknüpft die App mit Adobe Campaign und wird bei der Konfiguration der Campaign-Erweiterung verwendet.
 
-   Stellen Sie sicher, dass in Adobe Campaign und im Appcode über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist 
+   Stellen Sie sicher, dass in Adobe Campaign und im Appcode über das SDK derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist
 
    Weitere Informationen finden Sie in der [Developer-Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}.
 

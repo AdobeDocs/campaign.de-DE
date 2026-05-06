@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: c7f139dd7f139ba421eb034f4d8911671b3b3332
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 99%
+source-wordcount: '875'
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ Weitere Informationen zu [Versandstatus](delivery-statuses.md).
 
 Der Mail Transfer Agent (MTA) von Campaign v8 bietet eine marktführende Versandinfrastruktur, die eine Verbesserungen bei Zustellbarkeit, Reputation, Durchsatz, Reporting, Handhabung von Bounces, IP-Anwärmphase und Verwaltung der Verbindungsparameter bietet.
 
-Er ist für alle Campaign v8-Kunden verfügbar und garantiert Skalierbarkeit und einen hohen Versanddurchsatz, was einen schnelleren Versand von mehr E-Mails ermöglicht. Erreicht wird dies durch neue adaptive Versandtechniken, die die Einstellungen für den E-Mail-Versand in Echtzeit auf der Grundlage von Rückmeldungen von ISPs (Internetanbietern) anpassen.
+Er ist für alle Campaign v8-Kunden verfügbar und garantiert Skalierbarkeit und einen hohen Versanddurchsatz, was einen schnelleren Versand von mehr E-Mails ermöglicht. Erreicht wird dies durch neue adaptive Versandtechniken, die die Einstellungen für den E-Mail-Versand in Echtzeit auf der Grundlage von Rückmeldungen von ISPs (Internetanbietern) ändern.
 
 ### Vorteile
 

@@ -6,8 +6,8 @@ feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '733'
+workflow-type: tm+mt
+source-wordcount: '739'
 ht-degree: 100%
 
 ---
@@ -22,14 +22,14 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
 * Erstellen Sie eine Empfängerliste für diesen Bericht. [Weitere Informationen](#step-1--create-the-recipient-list).
 * Erstellen Sie eine Versandvorlage, die bei jeder Ausführung des Workflows einen neuen Versand erstellt. [Weitere Informationen](#step-2--create-the-delivery-template).
-* Erstellen Sie einen Workflow, der den Bericht im PDF-Format erzeugt und an die Empfängerliste sendet. [Weitere Informationen](#step-3--create-the-workflow)).
+* Erstellen Sie einen Workflow, der den Bericht im PDF-Format erzeugt und an die Empfängerliste sendet. [Weitere Informationen](#step-3--create-the-workflow).
 
 ## &#x200B;1. Schritt: Erstellen der Empfängerliste {#step-1--create-the-recipient-list}
 
 Gehen Sie wie folgt vor, um eine Liste der gewünschten Empfänger zu erstellen:
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Profile und Zielgruppen]** und klicken Sie auf den Link **[!UICONTROL Listen]**.
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
+1. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus.
 1. Wählen Sie **[!UICONTROL Neue Liste]** aus und erstellen Sie eine neue Empfängerliste, an die der Bericht gesendet werden soll.
 
 Weiterführende Informationen zum Erstellen von Listen finden Sie in [diesem Abschnitt](../../v8/audiences/create-audiences.md).

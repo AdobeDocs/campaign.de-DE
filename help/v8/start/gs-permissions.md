@@ -7,15 +7,15 @@ level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '515'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 96%
 
 ---
 
 # Erste Schritte mit Berechtigungen{#gs-permissions}
 
-Mit Adobe Campaign können Sie die den Benutzern zugewiesenen Rechte definieren und verwalten. Diese sind ein Satz von Rechten und Einschränkungen, die Folgendes ermöglichen oder verweigern:
+Mit Adobe Campaign können Sie die den Benutzern zugewiesenen Rechte definieren und verwalten. Diese bestehen aus einem Satz von Rechten und Einschränkungen, die Folgendes erlauben bzw. verweigern:
 
 * Zugriff auf bestimmte Fähigkeiten
 * Zugriff auf bestimmte Daten
@@ -23,14 +23,14 @@ Mit Adobe Campaign können Sie die den Benutzern zugewiesenen Rechte definieren 
 
 Diese Berechtigungen werden durch die Kombination von Benutzergruppenberechtigungen, spezifischen Berechtigungen und Berechtigungen für Ordner definiert.
 
-In Adobe Campaign sind Anwender **Benutzer** und **Benutzergruppen** stehen für Benutzerrollen. Ein Benutzer ist in Adobe Campaign ein Anwender mit der Berechtigung, sich anzumelden und Aktionen durchzuführen. Benutzer werden in der Admin Console erstellt. Die Berechtigungen gelten für Benutzerprofile oder Benutzergruppen. Es gibt zwei Arten von Berechtigungen, die Sie gewähren können:
+In Adobe Campaign sind Anwender **Benutzer** und **Benutzergruppen** stehen für Benutzerrollen. Ein(e) Benutzende(r) hat in Adobe Campaign die Berechtigung, sich anzumelden und Aktionen durchzuführen. Benutzer werden in der Admin Console erstellt. Die Berechtigungen gelten für Benutzerprofile oder Benutzergruppen. Es gibt zwei Arten von Berechtigungen, die Sie gewähren können:
 
-* Sie können Benutzergruppen bestimmen, denen Sie Berechtigungen einräumen, und dann die Benutzer einer oder mehreren Gruppen zuweisen. Diese Vorgehensweise ermöglicht eine gemeinsame Nutzung der Rechte und eine Vereinheitlichung der Benutzerprofile. Außerdem wird die Verwaltung und Pflege von Benutzeprofilen erleichtert.
+* Sie können Benutzergruppen definieren, denen Sie Berechtigungen zuweisen, und dann die Benutzer einer oder mehreren Gruppen zuweisen. Auf diese Weise können Sie Berechtigungen wiederverwenden und die Konsistenz von Benutzerprofilen verbessern. Außerdem wird die Verwaltung und Pflege von Benutzeprofilen erleichtert.
 * Sie können den Benutzern direkt spezifische Berechtigungen einräumen, um gegebenenfalls die über Gruppen eingeräumten Berechtigungen zu überschreiben.
 
 ## Wichtige Schritte zum Gewähren von Berechtigungen{#key-steps-permissions}
 
-Als Produkt-Administrator können Sie den Benutzern Ihrer Organisation Berechtigungen erteilen. Berechtigungen werden über die Adobe Admin Console und die Client-Konsole in Campaign gewährt. Benutzer melden sich mit ihrer Adobe ID bei Adobe Campaign an. Erfahren Sie auf [dieser Seite](connect.md), wie Sie eine Verbindung zu Adobe Campaign herstellen können.
+Als Produkt-Administrator können Sie den Benutzern Ihrer Organisation Berechtigungen erteilen. Berechtigungen werden über die Adobe Admin Console und die Client-Konsole in Campaign gewährt. Benutzende melden sich mit ihrer Adobe ID bei Adobe Campaign an. Erfahren Sie auf [dieser Seite](connect.md), wie Sie eine Verbindung zu Adobe Campaign herstellen können.
 
 Die wichtigsten Schritte sind:
 

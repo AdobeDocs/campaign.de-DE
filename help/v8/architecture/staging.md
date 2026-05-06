@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
 source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um den Campaign-Staging-Mechanismus für eine bestimmte
 
    Weitere Informationen zur Erstellung benutzerdefinierter Schemata finden Sie auf [dieser Seite](../dev/create-schema.md).
 
-1. Speichern und aktualisieren Sie die Datenbankstruktur. [Weitere Informationen](../dev/update-database-structure.md)
+1. Speichern und aktualisieren Sie die Datenbankstruktur.  [Weitere Informationen](../dev/update-database-structure.md)
 
 1. Aktivieren Sie den Staging-Mechanismus in der Schemadefinition, indem Sie den Parameter **autoStg=&quot;true&quot;** hinzufügen.
 

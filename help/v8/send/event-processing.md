@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 100%
+source-wordcount: '697'
+ht-degree: 84%
 
 ---
 
@@ -84,17 +84,17 @@ Mögliche Status sind:
    * Ein ausstehendes Ereignis kann auch ein verarbeitetes Ereignis sein, dessen Bestätigung jedoch fehlerhaft ist. Die Spalte **[!UICONTROL Fehleranzahl]** zeigt einen Wert an, der nicht 0 ist. Um zu erfahren, wann dieses Ereignis erneut verarbeitet wird, konsultieren Sie die Spalte **[!UICONTROL Prozess angefordert am]**.
 
 * **Versand ausstehend**
-Das Ereignis wurde verarbeitet und die Versandvorlage ist verknüpft. Die E-Mail ist versandbereit und der Standard-Versandprozess wird angewendet. Details können direkt im Versand eingesehen werden.
+Das Ereignis wurde verarbeitet und die Versandvorlage ist verknüpft. Die E-Mail ist versandbereit und der klassische Versandprozess wird angewendet. Weitere Informationen finden Sie unter Öffnen des Versands .
 * **Gesendet**, **Ignoriert** und **Versandfehler**
 Diese Versandstatus werden über den Workflow **updateEventsStatus** wiederhergestellt. Für weitere Informationen können Sie den entsprechenden Versand öffnen.
 * **Ereignis wurde nicht berücksichtigt**
 Die Routing-Phase der Transaktionsnachricht ist fehlgeschlagen. Ein Beispiel hierfür wäre, dass Adobe Campaign die E-Mail, die als Vorlage für das Ereignis dient, nicht finden konnte.
 * **Ereignis ist abgelaufen**
-Die maximale Anzahl an Versandversuchen wurde erreicht. Das Ereignis wird als nichtig angesehen.
+Die maximale Anzahl an Versandversuchen wurde erreicht. Das Ereignis wird als null betrachtet.
 
 ## Ereignisse wiederverwenden {#event-recycling}
 
-Wenn der Versand einer Nachricht über einen bestimmten Kanal fehlschlägt, kann Adobe Campaign über einen anderen Kanal einen erneuten Versandversuch starten. Wenn beispielsweise der Versand einer Nachricht über den SMS-Kanal fehlschlägt, wird die Nachricht über den E-Mail-Kanal erneut versandt.
+Wenn der Versand einer Nachricht auf einem bestimmten Kanal fehlschlägt, kann Adobe Campaign die Nachricht auf einem anderen Kanal erneut senden. Wenn beispielsweise ein Versand auf dem SMS-Kanal fehlschlägt, wird die Nachricht mithilfe des E-Mail-Kanals erneut gesendet.
 
 Konfigurieren Sie hierzu einen Workflow, der alle Ereignisse mit **Versandfehler** neu erstellt und ihnen einen sich vom ersten Kanal unterscheidenden Kanal zuordnet.
 

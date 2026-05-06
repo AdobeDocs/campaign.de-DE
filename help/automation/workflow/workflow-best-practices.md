@@ -7,9 +7,9 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '1387'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1390'
+ht-degree: 77%
 
 ---
 
@@ -49,15 +49,15 @@ Durch Angabe dieser Informationen bei der Erstellung eines Workflows ist die Pri
 
 Diese Option beeinflusst nur Kampagnen-Workflows.
 
-Kampagnen-Workflows (Workflows, die als Teil einer Kampagne erstellt werden) mit höherer Prioritätsstufe werden vorgezogen, wenn die Kampagne mehrere Prozesse enthält, die gleichzeitig ausgeführt werden müssen. Standardmäßig können entsprechend der Option NmsOperation_LimitConcurrency maximal zehn Prozesse einer Kampagnen gleichzeitig ausgeführt werden. Wenn eine Kampagne beispielsweise aus 25 Workflows besteht, werden Workflows mit einer höheren Prioritätsstufe in der ersten Gruppe von zehn Prozessen ausgeführt.
+Kampagnen-Workflows (Workflows, die im Rahmen einer Kampagne/eines Vorgangs erstellt werden) mit einem höheren Schweregrad werden vorrangig ausgeführt, wenn die Kampagne über viele Prozesse verfügt, die gleichzeitig ausgeführt werden sollen. Gemäß der Option NmsOperation_LimitConcurrency können in einer Kampagne standardmäßig nur 10 Prozesse gleichzeitig ausgeführt werden. Wenn eine Kampagne beispielsweise 25 Workflows enthält, werden Workflows mit einem höheren Schweregrad im ersten Pool von 10 Prozessen ausgeführt.
 
 ## Überwachen von Workflows {#workflow-monitoring}
 
 Alle Ihre terminierten in Produktionsumgebungen ausgeführten Workflows sollten überwacht werden, damit Sie bei Auftreten eines Fehlers benachrichtigt werden.
 
-Wählen Sie dazu in den Workflow-Eigenschaften eine Gruppe von Verantwortlichen. Dies können entweder die standardmäßigen **[!UICONTROL Workflow-Verantwortlichen]** oder eine benutzerdefinierte Gruppe sein. Achten Sie darauf, dass zumindest ein Benutzer der Gruppe eine eingerichtete E-Mail-Adresse besitzt.
+Wählen Sie in den Workflow-Eigenschaften eine Gruppe von Verantwortlichen aus, entweder die standardmäßige Gruppe **[!UICONTROL Workflow-Verantwortliche]** oder eine benutzerdefinierte Gruppe. Stellen Sie sicher, dass mindestens ein Benutzer zu dieser Gruppe gehört und eine E-Mail eingerichtet ist.
 
-Bestimmen Sie zu Beginn der Workflow-Erstellung Workflow-Verantwortliche. Diese werden bei Fehlern per E-Mail informiert. Weitere Informationen hierzu finden Sie unter [Fehler beheben](monitor-workflow-execution.md#managing-errors).
+Bevor Sie mit dem Erstellen eines Workflows beginnen, denken Sie daran, Workflow-Supervisoren zu definieren. Im Fehlerfall werden sie per E-Mail benachrichtigt. Weitere Informationen hierzu finden Sie unter [Fehler beheben](monitor-workflow-execution.md#managing-errors).
 
 Überprüfen Sie regelmäßig den Tab **[!UICONTROL Monitoring]**, um den Gesamtstatus der aktiven Workflows anzuzeigen. Weitere Informationen hierzu finden Sie unter [Instanz-Monitoring](monitor-workflow-execution.md#instance-supervision).
 
@@ -67,22 +67,22 @@ Die Workflow-Heatmap ermöglicht den Administratoren der Adobe Campaign-Plattfor
 
 >[!CAUTION]
 >
->Sie können Aktivitäten innerhalb eines Workflows kopieren und einfügen. Wir raten jedoch davon ab, Aktivitäten über verschiedene Workflows hinweg zu kopieren und einzufügen. Einige Einstellungen, die Aktivitäten wie Sendungen und Planung betreffen, können zu Konflikten und Fehlern beim Ausführen des Ziel-Workflows führen. Stattdessen empfehlen wir, Workflows zu **duplizieren**. Weitere Informationen finden Sie unter [Workflows duplizieren ](build-a-workflow.md#duplicate-workflows).
+>Sie können Aktivitäten innerhalb eines Workflows kopieren und einfügen. Wir raten jedoch davon ab, Aktivitäten über verschiedene Workflows hinweg zu kopieren und einzufügen. Einige Einstellungen, die Aktivitäten wie Sendungen und Planung betreffen, können zu Konflikten und Fehlern beim Ausführen des Ziel-Workflows führen. Stattdessen empfehlen wir, Workflows zu **duplizieren**. Weitere Informationen finden Sie unter [Workflows duplizieren &#x200B;](build-a-workflow.md#duplicate-workflows).
 
 ### Name der Aktivität {#name-of-the-activity}
 
-Bei der Entwicklung Ihres Workflows erhalten alle Aktivitäten sowie alle Adobe Campaign-Objekte einen Namen. Diese Namen werden zwar vom Tool erstellt, wir empfehlen jedoch, sie bei der Konfiguration zu ändern. Geschieht dies erst zu einem späteren Zeitpunkt, besteht die Gefahr, dass der Workflow durch Aktivitäten mit Namen einer anderen früheren Aktivität unterbrochen wird. Deshalb wäre eine nachträgliche Aktualisierung der Namen eine schwierige Aufgabe.
+Bei der Entwicklung Ihres Workflows erhalten alle Aktivitäten sowie alle Adobe Campaign-Objekte einen Namen. Auch wenn der Name vom Tool generiert wird, empfehlen wir, ihn bei der Konfiguration mit einem expliziten Namen umzubenennen. Das Risiko besteht darin, dass der Workflow durch Aktivitäten unterbrochen wird, die zuvor den Namen einer anderen Aktivität verwendet haben. Es wäre daher schwierig, die Namen nachträglich zu aktualisieren.
 
 Der Aktivitätsname ist im Tab **[!UICONTROL Erweitert]** verfügbar. Behalten Sie nicht die simplen Namen **[!UICONTROL abfrage]**, **[!UICONTROL abfrage1]**, **[!UICONTROL abfrage11]** bei, sondern benennen Sie sie beispielsweise **[!UICONTROL abfrageAbonnenten]**. Dieser Name wird im Protokoll angezeigt und gegebenenfalls auch in den SQL-Logs, was Ihnen hilft, bei der Konfiguration des Workflows Fehler zu beheben.
 
 ### Erste und letzte Aktivitäten {#first-and-last-activities}
 
 * Beginnen Sie Ihren Workflow stets mit der Aktivität **[!UICONTROL Beginn]** oder **[!UICONTROL Planung]**. Bei Bedarf können Sie auch die Aktivität **[!UICONTROL Externes Signal]** hinzufügen.
-* Pro Workflow-Verzweigung darf nur eine einzige **** Planung verwendet werden. Wenn dieselbe Verzweigung eines Workflows mehrere Planungen enthält, die miteinander verknüpft sind, steigt die Anzahl der auszuführenden Aufgaben exponentiell an, wodurch die Datenbank überlastet würde. Diese Regel gilt auch für alle Aktivitäten mit einem Tab **[!UICONTROL Planung &amp; Verlauf]**. Weitere Informationen zur [Planung](scheduler.md).
+* Pro Workflow-Verzweigung darf nur eine einzige **&#x200B;**&#x200B;Planung verwendet werden. Wenn dieselbe Verzweigung eines Workflows mehrere Planungen enthält, die miteinander verknüpft sind, steigt die Anzahl der auszuführenden Aufgaben exponentiell an, wodurch die Datenbank überlastet würde. Diese Regel gilt auch für alle Aktivitäten mit einem Tab **[!UICONTROL Planung &amp; Verlauf]**. Weitere Informationen zur [Planung](scheduler.md).
 
   ![](assets/wf-scheduler.png)
 
-* Verwenden Sie in allen Workflows jeweils **[!UICONTROL Ende]**-Aktivitäten. Auf diese Weise wird temporärer Speicherplatz freigesetzt, der für Berechnungen in Workflows reserviert ist. Weitere Informationen finden Sie unter [Start und Ende](start-and-end.md).
+* Verwenden Sie **[!UICONTROL Ende]**-Aktivitäten für jeden Workflow. Dadurch kann Adobe Campaign temporären Speicherplatz freigeben, der für Berechnungen in Workflows verwendet wird. Weitere Informationen finden Sie unter [Start und Ende](start-and-end.md).
 
 ### JavaScript innerhalb einer Aktivität {#javascript-within-an-activity}
 
@@ -96,11 +96,11 @@ Meistens ist nicht bekannt, wo das Signal ausgelöst wurde. Um dies zu vermeiden
 
 ## Workflow-Aktualisierungen {#workflow-update}
 
-Ein Produktions-Workflow sollte nicht direkt aktualisiert werden. Prozesse sollten zuerst in einer Entwicklungsumgebung getestet werden, außer der Prozess besteht aus einer Kampagne mit Vorlagen-Workflows. Nach der Validierung kann der Workflow für die Produktion bereitgestellt werden.
+Ein Produktions-Workflow sollte nicht direkt aktualisiert werden. Sofern der Prozess nicht aus der Erstellung einer Kampagne mit Vorlagen-Workflows besteht, sollten Prozesse zunächst in einer Entwicklungsumgebung getestet werden. Nach dieser Validierung kann der Workflow in der Produktion bereitgestellt und gestartet werden.
 
 Führen Sie alle Tests in Entwicklungs- oder Staging-Umgebungen, nicht in Produktionsumgebungen durch. die Performance kann in einem solchen Fall nicht gewährleistet werden.
 
-Während Workflows in einem Archivordner auf Entwicklungs- oder Testplattformen aufbewahrt werden können, sollte die Produktionsumgebung möglichst sauber gehalten werden. Entfernen Sie deshalb alte, inaktive Workflows aus der Produktionsumgebung.
+Archivierte Workflows können auf Entwicklungs- oder Testplattformen in einem archivierten Ordner gespeichert werden, aber die Produktionsumgebung sollte so sauber wie möglich bleiben. Alte Workflows sollten aus der Produktionsumgebung entfernt werden, wenn sie inaktiv sind.
 
 ## Ausführung und Performance {#execution-and-performance}
 
@@ -118,7 +118,7 @@ Nur die Arbeitstabellen der letzten Ausführung des Workflows werden aufbewahrt.
 
 >[!CAUTION]
 >
->Diese Option darf **nie** in einem **Produktions**-Workflow aktiviert werden. Diese Option wird zur Analyse der Ergebnisse verwendet und ist nur für Testzwecke konzipiert. Sie darf daher nur in Entwicklungs- oder Staging-Umgebungen verwendet werden.
+>Diese Option darf **nie** in einem **Produktions**-Workflow aktiviert werden. Diese Option wird zur Analyse der Ergebnisse verwendet und ist nur für Testzwecke konzipiert und darf daher nur in Entwicklungs- oder Staging-Umgebungen verwendet werden.
 
 
 ### Protokollieren von SQL-Abfragen
@@ -134,7 +134,7 @@ Die folgenden Best Practices sollten zusätzlich bei der Planung der Ausführung
 
 * Achten Sie auf ein über den Tag verteiltes stabiles Aktivitätsniveau und vermeiden Sie Spitzen, um zu verhindern, dass die Instanz überlastet wird. Verteilen Sie dazu die Startzeiten des Workflows gleichmäßig über den Tag.
 * Planen Sie das Laden der Daten für die Nacht, um Ressourcenkonflikte zu reduzieren.
-* Lange Workflows können sich auf die Server- und Datenbankressourcen auswirken. Teilen Sie die längsten Workflows auf, um die Bearbeitungszeit zu verkürzen.
+* Lange Workflows können sich auf die Server- und Datenbankressourcen auswirken. Teilen Sie die längsten Workflows auf, um die Verarbeitungszeit zu reduzieren.
 * Um die Gesamtlaufzeit zu verkürzen, ersetzen Sie zeitaufwändige Aktivitäten durch einfachere und schnellere Aktivitäten.
 * Vermeiden Sie die gleichzeitige Ausführung von mehr als 20 Workflows. Wenn zu viele Workflows gleichzeitig ausgeführt werden, kann Ihre Plattform durch Überlastung instabil werden.
 

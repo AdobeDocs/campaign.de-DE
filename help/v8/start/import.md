@@ -8,8 +8,8 @@ exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
 source-git-commit: adea4eb54f3d519802119646bc501aae2ef5f831
 workflow-type: tm+mt
-source-wordcount: '4162'
-ht-degree: 97%
+source-wordcount: '4183'
+ht-degree: 63%
 
 ---
 
@@ -38,22 +38,22 @@ Der Import-Assistent wird nach der Erstellung eines neuen Importauftrags angezei
 
 ![](assets/new-import.png)
 
-Jede Zeile der Quelldatei entspricht einem Datensatz. Die einzelnen Daten innerhalb des Datensatzes werden durch Trennzeichen (Leerzeichen, Tabstopp oder andere Zeichen) voneinander abgegrenzt. Die Daten werden somit in Form von Spalten abgerufen und jede Spalte wird einem Datenbankfeld zugeordnet.
+In der Quelldatei entspricht jede Zeile einem Datensatz. Die Daten in Datensätzen werden durch Trennzeichen (Leerzeichen, Tabulatoren, Zeichen usw.) voneinander getrennt. Das bedeutet, dass die Daten in Form von Spalten abgerufen werden und jede Spalte mit einem Feld der Datenbank verknüpft ist.
 
 ### &#x200B;1. Schritt – Importvorlage auswählen {#step-1---choosing-the-import-template}
 
 Beim Start des Import-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Import von Empfangenden zu konfigurieren, die einen Newsletter erhalten haben, gehen Sie folgendermaßen vor:
 
-1. Gehen Sie zum Ordner **[!UICONTROL Profile und Zielgruppen > Vorgang > Allgemeine Importe und Exporte]**.
+1. Gehen Sie zum Ordner **[!UICONTROL Profile und Zielgruppen > Auftrag > Allgemeine Importe und Exporte]**.
 1. Wählen Sie **Neu** und danach **Importieren**, um die Importvorlage zu erstellen.
 
    ![](assets/s_ncs_user_import_wizard01_1.png)
 
 1. Klicken Sie zur Auswahl der gewünschten Vorlage rechts vom Feld **[!UICONTROL Importvorlage]** entweder auf den Pfeil oder auf **[!UICONTROL Verknüpftes Element auswählen]**, um den Navigationsbaum zu durchsuchen.
 
-   Die native Vorlage lautet **[!UICONTROL Neuer Textimport]**. Diese Vorlage darf nicht geändert werden. Sie können sie jedoch duplizieren, um entsprechend Ihren Anforderungen eine neue Vorlage zu konfigurieren. Standardmäßig werden Importvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Bearbeitungsvorlagen]** gespeichert.
+   Die native Vorlage lautet **[!UICONTROL Neuer Textimport]**. Diese Vorlage darf nicht geändert werden. Sie können sie jedoch duplizieren, um eine neue Vorlage entsprechend Ihren Anforderungen zu konfigurieren. Standardmäßig werden Importvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Bearbeitungsvorlagen]** gespeichert.
 
-1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für diesen Import ein und fügen Sie eventuell eine Beschreibung hinzu.
+1. Geben Sie im Feld **[!UICONTROL Titel“ einen Namen]** den Import ein. Sie können eine Beschreibung hinzufügen.
 1. Wählen Sie anschließend den Importtyp aus. Es gibt zwei mögliche Importtypen: **[!UICONTROL Einfacher Import]**, um nur eine Datei zu importieren, und **[!UICONTROL Mehrfacher Import]**, um mehrere Dateien in einer Ausführung zu importieren.
 
    Wählen Sie zum gleichzeitigen Importieren mehrerer Dateien im ersten Schritt des Import-Assistenten aus der Dropdown-Liste des Felds **[!UICONTROL Importtyp]** die Option **[!UICONTROL Multipler Import]** aus.
@@ -78,25 +78,25 @@ Standardmäßig ist die Option **[!UICONTROL Datei auf den Server laden]** angek
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
-Nach Auswahl der Datei können Sie die Daten im unteren Bereich des Fensters ansehen. Klicken Sie hierfür auf **[!UICONTROL Automatische Formaterkennung]**: Die ersten 200 Zeilen der Quelldatei werden angezeigt.
+Wenn die Datei angegeben wurde, können Sie deren Daten im unteren Bereich des Fensters anzeigen, indem Sie auf **[!UICONTROL Format automatisch erkennen]** klicken. In dieser Vorschau werden die ersten 200 Zeilen der Quelldatei angezeigt.
 
 ![](assets/s_ncs_user_import_wizard02_2.png)
 
-Verschiedene Optionen stehen zur Konfiguration des Imports zur Verfügung. Die hier festgelegten Parameter spiegeln sich in der Vorschau wieder.
+Verwenden Sie die oben in dieser Ansicht angebotenen Optionen, um den Import zu konfigurieren. Die über diese Optionen definierten Parameter werden in die Vorschau übertragen. Folgende Optionen stehen zur Verfügung:
 
 * Die Option **[!UICONTROL Zur Formatänderung hier klicken...]** erlaubt die Überprüfung des Formats und eventuell seine Anpassung.
 * **[!UICONTROL Auf dem Server aktualisieren...]** ermöglicht die Übertragung der lokalen Datei auf den Server. Diese Option ist nur verfügbar, wenn **[!UICONTROL Datei auf den Server hochladen]** ausgewählt ist.
 * Die Option **[!UICONTROL Herunterladen]** ist nur verfügbar, wenn die Datei auf den Server geladen wurde.
 * **[!UICONTROL Format automatisch erkennen]** wird verwendet, um das Format der Datenquelle neu zu initialisieren. Diese Option stellt das ursprüngliche Format von durch die Option **[!UICONTROL Zur Formatänderung hier klicken...]** formatierten Daten wieder her.
-* Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Filtermöglichkeiten der Quelldaten und weitere Optionen. So haben Sie beispielsweise die Möglichkeit, nur einen Teil einer Datei zu importieren oder nur bestimmte Kriterien erfüllende Datensätze (Empfänger vom Typ &#39;Interessent&#39; oder &#39;Kunde&#39;). Die Verwendung dieser Optionen ist in JavaScript bewanderten Benutzern vorbehalten.
+* Über **[!UICONTROL Link]** Erweiterte Parameter“ können Sie die Quelldaten filtern und auf erweiterte Optionen zugreifen. Auf diesem Bildschirm können Sie festlegen, dass nur ein Teil der Datei importiert werden soll. Sie können auch einen Filter definieren, um beispielsweise nur Benutzer vom Typ „Interessent“ oder „Kunde“ entsprechend dem Wert der entsprechenden Zeile zu importieren. Diese Optionen sollten nur von erfahrenen JavaScript-Benutzern verwendet werden.
 
 ### Dateiformat ändern {#changing-the-file-format}
 
-Mithilfe der Option **[!UICONTROL Zur Formatänderung hier klicken...]** können die Quelldaten formatiert sowie Spalten-Trennzeichen und der Datentyp für jedes Feld angegeben werden. Diese Konfigurationen werden in folgendem Fenster vorgenommen:
+Mit **[!UICONTROL Option Hier klicken, um das Dateiformat zu ändern…]** können Sie die Daten der Quelldatei formatieren, insbesondere das Spaltentrennzeichen und den Datentyp für jedes Feld angeben. Diese Konfiguration erfolgt über das folgende Fenster:
 
 ![](assets/s_ncs_user_import_wizard02_3.png)
 
-In diesem Schritt legen Sie fest, wie die Werte der Quellfelder zu interpretieren sind. So haben Sie z. B. die Möglichkeit, dem Datentyp &#39;Datum&#39; oder &#39;Datum + Uhrzeit&#39; ein Format (TT.MM.JJJJ, MM-TT-JJ usw.) zuzuordnen. Die nicht dem angegebenen Format entsprechenden Quelldaten werden beim Import zurückgewiesen.
+In diesem Schritt können Sie beschreiben, wie die Werte der Dateifelder gelesen werden sollen. Beispielsweise können bei einem Datum die Daten Datum oder Datum + Uhrzeit mit einem Format verknüpft werden (TT/MM/JJJJ, MM/TT/JJJ usw.). Wenn die Eingabedaten nicht dem erwarteten Format entsprechen, werden sie beim Import zurückgewiesen.
 
 Das Ergebnis der Konfigurationen wird im unteren Teil des Fensters angezeigt.
 
@@ -108,12 +108,12 @@ Wählen Sie nun das Zielschema aus und ordnen Sie die Quellfelder den Datenbankf
 
 ![](assets/s_ncs_user_import_wizard03_1.png)
 
-* Das Feld **[!UICONTROL Zielschema]** ermöglicht Ihnen die Auswahl des Schemas, in das die Daten importiert werden sollen. Diese Angabe ist obligatorisch. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um ein existierendes Schema auszuwählen. Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um die Struktur der zugrunde liegenden Tabelle anzusehen.
-* Im mittleren Bereich des Fensters werden alle in der Quelldatei enthaltenen Felder angezeigt. Kreuzen Sie die zu importierenden Felder an und ordnen Sie ihnen ein Zielfeld zu. Dies kann manuell oder automatisch geschehen.
+* Im Feld **[!UICONTROL Zielschema]** können Sie das Schema auswählen, in das die Daten importiert werden sollen. Diese Informationen sind obligatorisch. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um ein existierendes Schema auszuwählen. Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um die Struktur der zugrunde liegenden Tabelle anzusehen.
+* Die zentrale Tabelle zeigt alle in der Quelldatei definierten Felder an. Wählen Sie die zu importierenden Felder aus, um ihnen eine Zieldatei zuzuordnen. Diese Felder können manuell oder automatisch zugeordnet werden.
 
   Kreuzen Sie für eine manuelle Zuordnung das gewünschte Quellfeld an und klicken Sie dann in die zweite Spalte, um die zugehörige Zelle zu aktivieren. Klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]**, um alle verfügbaren Felder der Tabelle anzuzeigen. Wählen Sie das Zielfeld aus und bestätigen Sie die Zuordnung mit **[!UICONTROL OK]**.
 
-  Die Schaltfläche **[!UICONTROL Zielfelder automatisch zuordnen]** rechts im Fenster schlägt für jedes Quellfeld automatisch ein Zielfeld vor. Die getroffene Auswahl kann bei Bedarf geändert werden.
+  Um die Quellfelder und Zielfelder automatisch zu verknüpfen, klicken Sie auf **[!UICONTROL Erraten Sie die]**) rechts neben der Feldliste. Die vorgeschlagenen Felder können bei Bedarf geändert werden.
 
   >[!IMPORTANT]
   >
@@ -125,20 +125,20 @@ Wählen Sie nun das Zielschema aus und ordnen Sie die Quellfelder den Datenbankf
 
   >[!IMPORTANT]
   >
-  >Die Anpassung der Schreibweise wird beim Import vorgenommen. Wurden zuvor für die Zielfelder bestimmte Formatierungen festgelegt (wie in unserem Beispiel für das Feld @lastname), sind diese prioritär.
+  >Die Umwandlung wird zum Zeitpunkt des Imports angewendet. Wenn jedoch Begrenzungen für das Zielfeld definiert wurden (im obigen Beispiel für das @lastname), haben diese Begrenzungen Vorrang.
 
-* Bei Bedarf können Sie über die entsprechende Schaltfläche berechnete Felder hinzufügen. Letztere erlauben komplexe Umwandlungen, das Hinzufügen &quot;virtueller Spalten&quot; oder auch die Anzeige der Werte zweier Spalten in einer gemeinsamen Spalte. Im Folgenden werden die verschiedenen Optionen vorgestellt.
+* Sie können berechnete Felder mithilfe des entsprechenden Symbols rechts neben der zentralen Tabelle hinzufügen. Mit berechneten Feldern können Sie komplexe Umwandlungen durchführen, virtuelle Spalten hinzufügen oder die Daten mehrerer Spalten zusammenführen. Einzelheiten zu den verschiedenen Möglichkeiten finden Sie in den folgenden Abschnitten.
 
 #### Berechnete Felder {#calculated-fields}
 
-Berechnete Felder werden der Quelldatei in Form zusätzlicher Spalten hinzugefügt. Sie enthalten Werte, die ausgehend von anderen Spalten berechnet werden. Beim Import können die berechneten Felder Feldern der Datenbank zugeordnet werden. Es ist jedoch nicht möglich, die Datensätze über berechnete Felder abzustimmen.
+Berechnete Felder sind neue Spalten, die der Quelldatei hinzugefügt und aus anderen Spalten berechnet werden. Berechnete Felder können dann mit Feldern der Adobe Campaign-Datenbank verknüpft werden. Abstimmvorgänge sind jedoch für berechnete Felder nicht möglich.
 
 Vier verschiedene Feldtypen stehen zur Verfügung:
 
-* **[!UICONTROL Unveränderliche Zeichenfolge]**: Der Wert des berechneten Feldes ist derselbe für jede Zeile der Quelldatei. Damit können Sie den Wert eines Feldes der eingefügten oder aktualisierten Datensätze festlegen. Sie können beispielsweise für alle importierten Datensätze &quot;Ja&quot; festlegen.
+* **[!UICONTROL Feste Zeichenfolge]**: Der Wert des berechneten Felds ist für alle Zeilen der Quelldatei gleich. Ermöglicht das Festlegen des Werts eines Felds der eingefügten oder aktualisierten Datensätze. Sie können beispielsweise für alle importierten Datensätze eine Markierung auf „Ja“ setzen.
 * **[!UICONTROL Zeichenfolge mit JavaScript-Fusion]**: Das berechnete Feld kombiniert eine Zeichenfolge mit JavaScript-Direktiven.
-* **[!UICONTROL JavaScript-Ausdruck]**: Der Wert des berechneten Felds ist das Ergebnis der Auswertung einer JavaScript-Funktion. Der ausgegebene Wert kann einen bestimmten Typ aufweisen (Ziffer, Datum usw.).
-* **[!UICONTROL Aufzählungen]**: Der Wert des Felds wird in Abhängigkeit eines Werts der Quelldatei zugeordnet. Der Editor erlaubt die Angabe der Aufzählungswerte je Quellspalte, wie in folgendem Beispiel dargestellt:
+* **[!UICONTROL JavaScript-]**: Der Wert des berechneten Felds ist das Ergebnis der Auswertung einer JavaScript-Funktion. Der zurückgegebene Wert kann eine Zahl, ein Datum usw. sein.
+* **[!UICONTROL Auflistung]**: Der Wert des Felds wird anhand eines in der Quelldatei enthaltenen Werts zugewiesen. Mit dem Editor können Sie die Quellspalte angeben und die Liste der Auflistungswerte eingeben, wie im folgenden Beispiel:
 
   ![](assets/s_ncs_user_import_wizard03_3.png)
 
@@ -154,24 +154,24 @@ Der Import-Assistent bietet die Möglichkeit, durch die Angabe von Abstimmkriter
 
 Der mittlere Bereich des dargestellten Bildschirms zeigt die Felder und Tabellen der Adobe Campaign-Datenbank an, in die die Daten importiert werden.
 
-Für jeden Knoten (Tabelle oder Feld) stehen spezielle Optionen zur Verfügung. Wenn Sie auf den betreffenden Knoten in der Liste klicken, werden unten seine Parameter und eine kurze Beschreibung angezeigt. Für jedes Element werden in der Spalte **[!UICONTROL Verhalten]** die Auswirkungen der gewählten Optionen angegeben.
+Für jeden Knoten (Tabelle oder Feld) stehen spezielle Optionen zur Verfügung. Wenn Sie auf den betreffenden Knoten in der Liste klicken, werden seine Parameter und eine kurze Beschreibung unten angezeigt. Für jedes Element werden in der Spalte **[!UICONTROL Verhalten]** die Auswirkungen der gewählten Optionen angegeben.
 
 ![](assets/s_ncs_user_import_wizard04_2.png)
 
 #### Vorgangstypen {#types-of-operation}
 
-Für jede vom Import betroffene Tabelle ist anzugeben, was mit den Datensätzen geschehen soll. Für das Hauptelement der Datenbank bestehen folgende Möglichkeiten:
+Für jede vom Import betroffene Tabelle muss die Art des Vorgangs definiert werden. Die folgenden Vorgänge sind für das Hauptelement der Datenbank verfügbar:
 
 * **[!UICONTROL Aktualisieren oder einfügen]**: Aktualisiert Datensätze oder erstellt sie, falls sie noch nicht in der Datenbank existieren.
 * **[!UICONTROL Einfügen]**: Erstellt neue Datensätze in der Datenbank.
 * **[!UICONTROL Aktualisieren]**: Aktualisiert bestehende Datensätze, ignoriert alle anderen.
-* **[!UICONTROL Nur abstimmen]**: Sucht den Datensatz in der Datenbank, ohne ihn zu aktualisieren. Dies ermöglicht beispielsweise die Zuordnung des zu importierenden Empfängerordners in Abhängigkeit von einer Spalte der Datei, ohne die Daten des Ordners zu aktualisieren.
+* **[!UICONTROL Nur Abstimmung]**: sucht in der Datenbank nach dem Datensatz, führt jedoch keine Aktualisierung durch. Beispielsweise können Sie den zu importierenden Empfängerordner anhand einer Spalte der Datei verknüpfen, ohne die Daten in den Ordnern zu aktualisieren.
 * **[!UICONTROL Löschen]**: Löscht die Datensätze der Datenbank.
 
 Für die Felder der vom Import betroffenen Tabellen stehen folgende Optionen zur Verfügung:
 
-* **[!UICONTROL Aktualisieren (löschen), wenn der Quelldatensatz leer ist]**: Löscht den Wert des Datenbankfelds, wenn das Feld im Quelldokument leer ist. Ansonsten wird der Wert aus der Datenbank beibehalten.
-* **[!UICONTROL Nur aktualisieren, wenn das Zielfeld leer ist]**: Wenn das Datenbankfeld bereits einen Wert enthält, wird dieser beibehalten. Ansonsten wird der Wert der Quelldatei eingefügt.
+* **[!UICONTROL Aktualisieren (leer), wenn der Quellwert leer ist]**: Im Fall einer Aktualisierung entfernt der Wert im Feld den Datenbankwert, wenn das Feld in der Quelldatei leer ist. Andernfalls wird das Datenbankfeld beibehalten.
+* **[!UICONTROL Nur aktualisieren, wenn das Ziel leer ist]**: Der Wert in der Quelldatei überschreibt den Wert im Datenbankfeld nur, wenn das Datenbankfeld leer ist. In diesem Fall nimmt er den Wert der Quelldatei.
 * **[!UICONTROL Nur bei Einfügen des Datensatzes aktualisieren]**: Bei Aktualisierungs- oder Ergänzungsvorgängen werden nur die Datensätze der Quelldatei importiert, die neu in der Datenbank sind.
 
 >[!NOTE]
@@ -182,9 +182,9 @@ Für die Felder der vom Import betroffenen Tabellen stehen folgende Optionen zur
 
 Für die Deduplizierung ist die Angabe von mindestens einem Abstimmschlüssel erforderlich.
 
-Unter einem Abstimmschlüssel versteht man eine Kombination von Feldern, die die eindeutige Identifizierung eines Datensatzes ermöglicht. Beim Import von Empfängern können z. B. die Kundennummer, die E-Mail-Adresse oder eine Kombination aus Vor- und Nachname sowie Firma als Abstimmschlüssel verwendet werden.
+Ein Abstimmschlüssel ist ein Satz von Feldern, die zur Identifizierung eines Datensatzes verwendet werden. Um beispielsweise Empfänger zu importieren, kann der Abstimmschlüssel die Kontonummer, das Feld „E-Mail“ oder die Felder „Nachname, Vorname, Firma“ sein usw.
 
-Die Import-Engine vergleicht für jedes Feld des Abstimmschlüssels die Werte der Quelldatei mit denen der Datenbank, um bereits existierende Datensätze zu identifizieren. Je spezifischer die Felder für einen Datensatz sind, desto genauer lassen sich Quell- und Zieldaten vergleichen und desto besser kann die Integrität der Daten nach erfolgtem Import gewährleistet werden. Es besteht die Möglichkeit, einen zweiten Abstimmschlüssel für eine Tabelle anzugeben. Dieser kommt bei den Datensätzen zum Tragen, bei denen die Felder des ersten Schlüssels leer sind.
+In diesem Fall vergleicht die Import-Engine die Werte der Datei mit denen der Datenbank für alle Schlüssel-Felder, um herauszufinden, ob eine Zeile einer Datei mit einem vorhandenen Empfänger in der Datenbank übereinstimmt. Wenn Felder für einen Datensatz spezifisch sind, kann ein feiner Vergleich zwischen den Quell- und Zieldaten durchgeführt werden, um die Integrität der Daten nach dem Import zu gewährleisten. Für dieselbe Tabelle kann ein zweiter Abstimmschlüssel ausgefüllt werden. Er wird für die Zeilen verwendet, deren erster Schlüssel leer ist.
 
 Um die Erstellung doppelter Datensätze zu vermeiden, dürfen im Abstimmschlüssel keine Felder verwendet werden, die beim Import verändert werden könnten.
 
@@ -206,14 +206,14 @@ Um die Erstellung doppelter Datensätze zu vermeiden, dürfen im Abstimmschlüss
 
 Das Feld **[!UICONTROL Dublettenverwaltung]** dient der Konfiguration der Deduplizierung in Bezug auf Dubletten. Deduplizierung in Bezug auf Dubletten, d. h. Einträge, die wiederholt in der **Quelldatei** (oder den Quelldateien bei einem multiplen Import) vorkommen. Bei Dubletten sind die den Abstimmschlüssel bildenden Felder identisch.
 
-* Im Modus **[!UICONTROL Aktualisieren]** löst die Duplikatverwaltung keine Deduplizierung aus. Dies bedeutet, dass der neueste Datensatz Priorität vor älteren Datensätzen hat. Demzufolge werden Duplikate in diesem Modus nicht gezählt.
-* In den Modi **[!UICONTROL Ignorieren]** oder **[!UICONTROL Entität zurückweisen]** werden Duplikate beim Import durch die Duplikatverwaltung ausgeschlossen, d. h. keiner der wiederholt vorkommenden Datensätze wird importiert.
+* Die Duplikatverwaltung im **[!UICONTROL Update]**-Modus (Standardmodus) führt keine Deduplizierung durch. Der letzte Datensatz hat daher Priorität (da er die Daten der vorherigen Datensätze aktualisiert). In diesem Modus werden Duplikate nicht gezählt.
+* Die Duplikatverwaltung im **[!UICONTROL Ignorieren]**-Modus oder **[!UICONTROL Ablehnungsentität]** schließt Duplikate vom Import aus. In diesem Fall wird kein Datensatz importiert.
 * Im Modus **[!UICONTROL Entität zurückweisen]** werden die entsprechenden Datensätze nicht importiert und im Importprotokoll wird ein Fehler ausgewiesen.
-* Im Modus **[!UICONTROL Ignorieren]** werden die entsprechenden Datensätze ebenfalls nicht importiert, der Fehler wird jedoch nicht protokolliert. Dies optimiert die Performance der Anwendung.
+* Im **[!UICONTROL Ignorieren]**-Modus wird das Element nicht importiert, aber es wird keine Spur des Fehlers beibehalten. In diesem Modus können Sie die Leistung optimieren.
 
 >[!IMPORTANT]
 >
->Die Deduplizierung erfolgt nur im Speicher, was die Größe eines Imports mit Deduplizierung limitiert. Die Limitierung hängt von diversen Parametern ab (Kapazität des Anwendungs-Servers, Aktivität, Anzahl der Felder im Schlüssel usw.). Als Richtlinie kann man von einer maximalen Größe von 1.000.000 Zeilen für einen Import mit Deduplizierung ausgehen.
+>Die Deduplizierung erfolgt nur im Speicher. Der Umfang eines Imports mit Deduplizierung ist daher begrenzt. Die Beschränkung hängt von mehreren Parametern ab (Kapazität des Programm-Servers, Aktivität, Anzahl der Felder im Schlüssel usw.). Die maximale Größe für eine Deduplizierung liegt in der Größenordnung von 1.000.000 Zeilen.
 
 Deduplizierung bezieht sich auf einen Datensatz, der sowohl in der Quelldatei als auch in der Datenbank vorhanden ist. Es kommt nur bei Importen mit Datenaktualisierung zum Tragen (**[!UICONTROL Aktualisieren und einfügen]** oder **[!UICONTROL Aktualisieren]**). Die Option **[!UICONTROL Duplikataverwaltung]** ermöglicht es, einen Datensatz entweder zu aktualisieren oder zu ignorieren, wenn er sowohl in der Quelldatei als auch der Datenbank vorkommt. Die Option **[!UICONTROL Je nach Herkunft aktualisieren oder hinzufügen]** ist Teil eines optionalen Moduls, sie steht im Standardkontext nicht zur Verfügung.
 
@@ -221,7 +221,7 @@ Die Optionen **[!UICONTROL Zurückweisen]** und **[!UICONTROL Ignorieren]** arbe
 
 ### Beim Auftreten von Fehlern {#behavior-in-the-event-of-an-error}
 
-Beim Datentransfer treten häufig Fehler auf, die von verschiedener Natur sein können (inkohärentes Zeilenformat, ungültige E-Mail-Adresse usw.). Alle von der Import-Engine erzeugten Fehlermeldungen und Warnhinweise werden gespeichert und mit der Importinstanz verknüpft.
+Bei den meisten Datenübertragungsvorgängen treten verschiedene Fehlertypen auf (inkohärentes Zeilenformat, ungültige E-Mail-Adresse usw.). Alle von der Import-Engine erzeugten Fehler und Warnungen werden gespeichert und mit der Importinstanz verknüpft.
 
 ![](assets/s_ncs_user_import_general_tab.png)
 
@@ -231,14 +231,13 @@ Im Tab **[!UICONTROL Zurückweisungen]** können Details eingesehen werden.
 
 Zurückweisungen können zwei verschiedenen, in der Spalte **[!UICONTROL Connector]** angezeigten Typen zugeordnet werden:
 
-* Zurückweisungen des Text-Connectors beziehen sich auf Fehler, die bei der Verarbeitung einer Zeile auftreten (berechnetes Feld, Datumsanalyse usw.). In diesem Fall wird die gesamte Zeile zurückgewiesen.
-* Zurückweisungen des Datenbank-Connectors beziehen sich auf Fehler, die bei der Abstimmung oder beim Schreiben der Daten in die Datenbank auftreten. Bei Importen in mehrere Tabellen betrifft die Zurückweisung u. U. nur einen Teil des Datensatzes. So kann beispielsweise beim Import von Empfängern und zugeordneten Ereignissen ein Fehler die Aktualisierung eines Ereignisses verhindern, ohne jedoch den Empfänger zurückzuweisen.
+* Zurückweisungen des Text-Connectors betreffen Fehler, die während der Verarbeitung der Dateizeile auftreten (berechnetes Feld, Datenanalyse usw.). In diesem Fall wird bei einem Fehler immer die gesamte Zeile zurückgewiesen.
+* Zurückweisungen des Datenbank-Connectors beziehen sich auf Fehler, die beim Abgleich der Daten oder beim Schreiben in die Datenbank auftreten. Bei einem Import in mehrere Tabellen kann die Zurückweisung nur einen Teil des Datensatzes betreffen (bei einem Import von Empfängern und zugehörigen Ereignissen kann beispielsweise ein Fehler die Aktualisierung eines Ereignisses verhindern, ohne den Empfänger abzulehnen).
 
 Auf der Abstimmungsseite besteht die Möglichkeit, für jedes Feld und jede Tabelle gesondert den Umgang mit Fehlern festzulegen.
 
 * **[!UICONTROL Ignorieren aber einen Warnhinweis erzeugen]**: Es werden alle Felder in die Datenbank importiert, ausgenommen das Feld, das den Fehler erzeugt hat.
 * **[!UICONTROL Übergeordnetes Element zurückweisen]**: Die gesamte Zeile wird zurückgewiesen (nicht nur das den Fehler auslösende Feld).
-
 * **[!UICONTROL Alle Elemente zurückweisen]**: Der Import wird gestoppt und alle Elemente des Datensatzes werden zurückgewiesen.
 
   ![](assets/s_ncs_user_import_wizard04_4.png)
@@ -257,13 +256,13 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
 >[!NOTE]
 >
->Dieser Schritt wird nur beim Importieren von Empfängern und bei Verwendung der standardmäßigen Adobe Campaign-Empfängertabelle (**nms:recipient**) angezeigt.
+>Dieser Schritt wird nur im Falle eines Empfängerimports und bei Verwendung der Standardempfängertabelle (**nms:recipient**) von Adobe Campaign angezeigt.
 
 * Klicken Sie auf den **[!UICONTROL Bearbeiten]**-Link, um den Ordner, die Liste oder den Dienst auszuwählen, mit denen die Empfänger verknüpft werden sollen.
 
    1. In einem Ordner speichern
 
-      Der **[!UICONTROL Bearbeiten...]**-Link der Option **[!UICONTROL In einen Ordner importieren]** ermöglicht die Auswahl oder die Erstellung des Ordners, in den die Empfänger importiert werden sollen. Falls nicht anders angegeben, werden die Daten in den Standard-Ordner des Benutzers eingefügt.
+      Über den Link **[!UICONTROL Bearbeiten…]** des Abschnitts **[!UICONTROL In einen Ordner importieren]** können Sie den Ordner auswählen oder erstellen, in den die Empfänger importiert werden sollen. Wenn keine Partition definiert ist, werden die Daten standardmäßig in den Standardordner des Benutzers importiert.
 
       >[!NOTE]
       >
@@ -287,11 +286,11 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Sie können eine neue Liste für diese Empfängerinnen und Empfänger erstellen, indem Sie auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf **[!UICONTROL Erstellen]** klicken. 
+      Sie können eine neue Liste für diese Empfänger erstellen, indem Sie auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf **[!UICONTROL Erstellen]** klicken.
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
-      Es besteht die Möglichkeit, eine Liste um die neuen Empfänger zu ergänzen oder ihren Inhalt zu löschen und durch die importierten Daten zu ersetzen.
+      Sie können die Empfänger zu den bereits in einer Liste vorhandenen hinzufügen oder die Liste mit den neuen Empfängern neu erstellen. Wenn die Liste bereits Empfänger enthält, werden diese gelöscht und durch die importierten Empfänger ersetzt.
 
    1. Anmeldung für einen Dienst
 
@@ -301,7 +300,7 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
       Sie haben auch die Möglichkeit, einen neuen Informationsdienst für diese Empfängerinnen und Empfänger zu erstellen. Klicken Sie hierfür auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf das Symbol **[!UICONTROL Erstellen]**. Informationsdienste werden in [diesem Abschnitt](../start/subscriptions.md) näher erläutert.
 
-* Das Feld **[!UICONTROL Herkunft]** bietet die Möglichkeit, eine Information bezüglich der Empfängerherkunft im Profil zu hinterlegen. Dies ist insbesondere bei multiplen Importen empfehlenswert.
+* Verwenden Sie das Feld **[!UICONTROL Herkunft]**, um Informationen über die Herkunft von Empfängern zu ihren Profilen hinzuzufügen. Diese Informationen sind insbesondere im Rahmen eines Mehrfachimports nützlich.
 
 Klicken Sie auf **[!UICONTROL Weiter]**, um die in diesem Schritt vorgenommenen Konfigurationen zu bestätigen.
 
@@ -313,11 +312,11 @@ Im letzten Schritt des Assistenten wird der Datenimport ausgelöst. Klicken Sie 
 
 Anschließend können Sie die Ausführung des Importauftrages überwachen (siehe [Überwachen der Workflow-Ausführung](../../automation/workflow/monitor-workflow-execution.md)).
 
-## Exportieren von Daten
+## Daten exportieren
 
 Mit Exportaufträgen können Sie Daten aus der Datenbank aufrufen und extrahieren: Kontakte, Kundinnen und Kunden, Listen, Segmente usw.
 
-So kann es sinnvoll sein, Tracking-Daten von Kampagnen (Tracking-Verlauf usw.) in einer Tabelle zu verwenden. Die Ausgabedaten können in den Formaten *.txt, *.csv, *.tab oder *.xml vorliegen.
+Beispielsweise kann es nützlich sein, Tracking-Daten für Kampagnen zu verwenden (Tracking-Verlauf usw.) in einer Tabelle. Die Ausgabedaten können in den Formaten *.txt, *.csv, *.tab oder *.xml vorliegen.
 
 Mit dem Export-Assistenten können Sie einen Export konfigurieren, seine Optionen definieren und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Exports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
@@ -327,7 +326,7 @@ Der Export-Assistent wird nach dem Erstellen eines neuen Exportauftrags angezeig
 
 Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Export von Empfangenden zu konfigurieren, die sich kürzlich angemeldet haben, gehen Sie folgendermaßen vor:
 
-1. Gehen Sie zum Ordner **[!UICONTROL Profile und Zielgruppen > Vorgang > Allgemeine Importe und Exporte]**.
+1. Gehen Sie zum Ordner **[!UICONTROL Profile und Zielgruppen > Auftrag > Allgemeine Importe und Exporte]**.
 1. Wählen Sie **Neu** und danach **Exportieren** aus, um die Exportvorlage zu erstellen.
 
    ![](assets/s_ncs_user_export_wizard01.png)
@@ -336,7 +335,7 @@ Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden
 
    Die native Vorlage lautet **[!UICONTROL Neuer Textexport]**. Diese Vorlage darf nicht geändert werden. Sie können sie jedoch duplizieren, um eine neue Vorlage zu konfigurieren. Standardmäßig werden Exportvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Bearbeitungsvorlagen]** gespeichert.
 
-1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den Export ein und fügen Sie eventuell eine Beschreibung hinzu.
+1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den Export ein. Sie können eine Beschreibung hinzufügen.
 1. Wählen Sie den Exporttyp aus. Es gibt zwei mögliche Exporttypen: **[!UICONTROL Einfacher Export]**, um nur eine Datei zu exportieren, und **[!UICONTROL Mehrfacher Export]**, um mehrere Dateien in einer Ausführung zu exportieren, u. U. mit verschiedenen Quelldokumenttypen.
 
 ### &#x200B;2. Schritt – Dateityp zum exportieren auswählen {#step-2---type-of-file-to-export}
@@ -359,29 +358,29 @@ Bei einem vom Knoten **[!UICONTROL Vorgänge]** ausgehenden Export wird standard
 
   ![](assets/s_ncs_user_export_wizard02_b.png)
 
-  Hier ist die Angabe des Datums der letzten Änderung erforderlich. Dies geschieht durch Abruf aus einem Feld oder durch Berechnung.
+  Sie müssen das Datum der letzten Änderung eingeben. Sie kann aus einem Feld abgerufen oder berechnet werden.
 
 ### &#x200B;3. Schritt – Ausgabeformat bestimmen {#step-3---defining-the-output-format}
 
-Wählen Sie nun das Ausgabeformat der Exportdatei aus. Mögliche Formate sind Text, Text in festen Spalten, CSV und XML.
+Wählen Sie ein Ausgabeformat für die Exportdatei aus. Die folgenden Formate können verwendet werden: Text, Text mit festen Spalten, CSV und XML.
 
 ![](assets/s_ncs_user_export_wizard03.png)
 
 * Beim Format **[!UICONTROL Text]** sind die Spaltentrennzeichen (Tabstopp, Komma, Semikolon oder Sonstige) sowie die Zeichenfolgen-Qualifizierer (Ohne, Doppelte Anführungszeichen, Einfache Anführungszeichen) anzugeben.
 * Bei den Formaten **[!UICONTROL Text]** und **[!UICONTROL CSV]** besteht die Möglichkeit, die Option **[!UICONTROL Erste Zeile enthält die Spaltentitel]** anzukreuzen.
 * Geben Sie das Format von Datum und Zahl an. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Bearbeiten]** für das entsprechende Feld und verwenden Sie den Editor.
-* Bei Feldern, die Aufzählungswerte enthalten, können Sie **[!UICONTROL Titel anstelle der internen Werte der Auflistungen exportieren]** auswählen. Beispielsweise kann der Titel im Formular gespeichert werden **1 = Herr**, **2 = Fräulein**, **3 = Frau**. Wenn diese Option ausgewählt wird, werden **Mr.**, **Miss** und **Mrs.** exportiert.
+* Bei Feldern, die Aufzählungswerte enthalten, können Sie **[!UICONTROL Titel anstelle der internen Werte der Auflistungen exportieren]** auswählen. Beispielsweise kann der Titel in der Form gespeichert werden **1=Herr**, **2=**, **3=Frau**. Wenn diese Option ausgewählt ist **werden**, **Miss** und **Mrs.** exportiert.
 
 ### &#x200B;4. Schritt – Daten auswählen {#step-4---data-selection}
 
-Wählen Sie die zu exportierenden Felder aus. Gehen Sie dazu folgendermaßen vor:
+Auswahl der zu exportierenden Felder. Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie per Doppelklick die gewünschten Felder in der Liste **[!UICONTROL Verfügbare Felder]** aus, um sie zum Bereich **[!UICONTROL Ausgabespalten]** hinzuzufügen.
 1. Mit den Pfeilen rechts neben der Liste können Sie die Reihenfolge der Felder in der Ausgabedatei festlegen.
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um Funktionen aufzurufen. 
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um Funktionen aufzurufen.
 
 ### &#x200B;5. Schritt – Spalten sortieren {#step-5---sorting-columns}
 
@@ -391,7 +390,7 @@ An dieser Stelle kann die Sortierreihenfolge der einzelnen Spalten festgelegt we
 
 ### &#x200B;6. Schritt – Filterbedingungen {#step-6---filter-conditions-}
 
-Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedingungen zu konfigurieren. Die Vorgehensweise beim Filtern entspricht der Zielgruppenbestimmung im Versandassistenten. 
+Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedingungen zu konfigurieren. Die Vorgehensweise entspricht der Zielgruppenbestimmung im Versandassistenten.
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -400,8 +399,8 @@ Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedi
 An dieser Stelle können die Reihenfolge der Spalten in der Ausgabedatei und ihre Titel festgelegt sowie die Schreibweise der Quelldaten angepasst werden.
 
 * Die Reihenfolge der zu exportierenden Spalten lässt sich mithilfe der blauen Pfeile rechts von der Tabelle ändern.
-* Der Titel eines Felds lässt sich ändern, indem Sie in die Zelle der **[!UICONTROL Titel]**-Spalte klicken, die dem zu ändernden Feld entspricht. Nun können Sie den neuen Titel eingeben. Bestätigen Sie die Eingabe durch Enter.
-* In der Spalte **[!UICONTROL Schreibweise]** haben Sie die Möglichkeit, Groß- und Kleinschreibung zu verändern. Wählen Sie zwischen:
+* Um den Titel eines Felds zu ändern, klicken Sie in die Zelle der Spalte **[!UICONTROL Titel]**, die dem zu ändernden Feld entspricht, und geben Sie den neuen Titel ein. Drücken Sie zur Bestätigung die Eingabetaste auf der Tastatur.
+* Um eine Groß-/Kleinschreibung auf den Inhalt eines Felds anzuwenden, wählen Sie diese aus der Spalte **[!UICONTROL Umwandlung]** aus. Sie können Folgendes auswählen:
 
    * Alles in Großbuchstaben
    * Alles in Kleinbuchstaben
@@ -446,7 +445,7 @@ In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.co
 
 **Verwandte Themen**
 
-* [Erstellen von Zielgruppen](audiences.md)
+* [Zielgruppen erstellen](audiences.md)
 * [Profile deduplizieren](../../automation/workflow/deduplication-merge.md)
 * [Profildaten anreichern](../../automation/workflow/enrich-data.md)
 * Grundlegendes zum [Datenmodell](../dev/datamodel.md) von Campaign

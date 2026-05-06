@@ -8,18 +8,18 @@ exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
 source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
 workflow-type: tm+mt
-source-wordcount: '1983'
-ht-degree: 83%
+source-wordcount: '2044'
+ht-degree: 85%
 
 ---
 
 # Arbeiten mit Filtern{#create-filters}
 
-Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur die Datensätze enthält, die bestimmten Kriterien entsprechen. Diese Teilmenge kann dann für zielgerichtete Aktionen (wie Aktualisierungen oder Zielgruppenerstellung) oder für Analysen verwendet werden.
+Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur noch Einträge enthält, die bestimmten Kriterien entsprechen. Diese Teilmenge kann dann für zielgerichtete Aktionen (wie Aktualisierungen oder Zielgruppenerstellung) oder für Analysen verwendet werden.
 
-Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können integrierte Filter anwenden, um schnell auf eine definierte Teilmenge zuzugreifen, z. B. Adressen in Quarantäne, nicht kontaktierte Empfänger oder Datensätze innerhalb eines bestimmten Altersbereichs oder Erstellungsdatums.
+Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können integrierte Filter anwenden, um schnell auf eine definierte Teilmenge zuzugreifen, z. B. Adressen in Quarantäne, nicht kontaktierte Empfängerinnen und Empfänger oder Einträge, die in einem bestimmten Altersbereich liegen oder ein bestimmtes Erstellungsdatum haben.
 
-Darüber hinaus können Sie benutzerdefinierte Filter erstellen, sie für die zukünftige Verwendung speichern und für andere Campaign-Benutzer freigeben.
+Sie können auch benutzerdefinierte Filter erstellen, diese zur späteren Verwendung speichern und für andere Campaign-Benutzende freigeben.
 
 Filter werden **dynamisch** angewendet: Wenn sich die Daten ändern, werden die gefilterten Ergebnisse automatisch aktualisiert.
 
@@ -68,7 +68,7 @@ Sie können beispielsweise für Sendungen festlegen, dass nur abgeschlossene Sen
 
 >[!TAB Sortieren nach]
 
-Über die Dropdown-Liste rechts des Ordner-Filterfelds kann die Sortierreihenfolge der angezeigten Daten ausgewählt werden. Der Inhalt dieses Filters hängt vom Datentyp der aufgerufenen Seite ab.
+Die Sortierreihenfolge der auf den Seiten angebotenen Daten kann über die Dropdown-Liste rechts neben dem Filterfeld „pro Ordner“ ausgewählt werden. Der Inhalt dieses Felds hängt vom Datentyp auf der Seite ab.
 
 Sie können Aufgaben beispielsweise nach Priorität, Erstellungsdatum oder alphabetischer Reihenfolge sortieren.
 
@@ -312,7 +312,7 @@ Definieren Sie die Filterbedingungen. Im folgenden Beispiel filtern Sie nach Emp
 
    ![](assets/select-operator.png)
 
-1. Geben Sie dann in der Spalte **[!UICONTROL Wert]** den Vergleichswert an. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Um eine Filterbedingung hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Wählen Sie einen erwarteten Wert aus der Spalte **[!UICONTROL Wert]** aus. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Um eine Filterbedingung hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/add-an-exp.png)
 
@@ -380,7 +380,7 @@ Nach dem Speichern sind erweiterte Filter verfügbar, wenn Sie die Zielpopulatio
 
 ### Verwenden von Funktionen zum Erstellen erweiterter Filter{#use-functions-adv-filters}
 
-Verwenden Sie Funktionen zur Definition des Inhalts des Filters, um erweiterte Filterfunktionen auszuführen. Der Editor für erweiterte Filter nutzt alle Funktionen des Campaign-Abfragetools.
+Verwenden Sie Funktionen zur Definition des Inhalts des Filters, um erweiterte Filterfunktionen auszuführen. Der Editor für erweiterte Filter nutzt alle Funktionen des Campaign-Abfrage-Editors.
 
 In diesen Beispielen erfahren Sie, wie Sie erweiterte Abfragen erstellen:
 

@@ -5,8 +5,8 @@ feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 18%
+source-wordcount: '1219'
+ht-degree: 8%
 
 ---
 
@@ -64,7 +64,7 @@ Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benu
 * Fehlerkorrektur - Der Zugriff auf Workflow-Dateien erfolgt jetzt fehlerfrei, indem Vorgänge auf autorisierte Verzeichnisse beschränkt werden. Dadurch wird ein nicht autorisierter Zugriff und eine potenzielle Ausführung von Remote-Code verhindert. (NEO-88460)
 * Es wurden Steuerelemente zur FTP-URL-Zulassungsauflistung zu Workflow-JavaScript-Code-Aktivitäten hinzugefügt, wodurch ausgehende FTP-Verbindungen auf autorisierte Adressen beschränkt werden. (NEO-89083)
 
-### Sonstige Änderungen  {#changes-8-9-1}
+### Sonstige Änderungen {#changes-8-9-1}
 
 * Verbessertes Container-Speichermanagement durch Implementierung automatischer Workflow-Einschränkungen unter Bedingungen mit hohem Arbeitsspeicher sowie intelligente Workflow-Neustart-Funktionen und Speicher-Leitplanken für unkritische Prozesse. (NEO-89041)
 * Unterstützung für asymmetrische Verschlüsselungs- und Entschlüsselungsfunktionen in Campaign-Workflows hinzugefügt. (NEO-80257)

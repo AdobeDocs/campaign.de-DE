@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 100%
+source-wordcount: '418'
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    * **[!UICONTROL Bearbeiten Sie die Abfrage]**, um Filter auf die Angebots-Zielgruppe anzuwenden.
 
-   * Klicken Sie auf den Link **[!UICONTROL Planung und Eignungsregeln des Angebots]**, um die Zusammenfassung der Eignungsregeln anzuzeigen.
+   * Eine Zusammenfassung der Eignungsregeln.Um sie anzuzeigen, klicken Sie auf den Link **[!UICONTROL Zeitplan und Eignungsregeln des Angebots]**.
 
 ## Hinzufügen einer Ersatzkategorie
 

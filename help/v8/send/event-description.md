@@ -7,8 +7,8 @@ level: Intermediate
 exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
 source-git-commit: 6693bb8a62c0d126b871dc24a75b76de71b86f8d
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 92%
+source-wordcount: '751'
+ht-degree: 75%
 
 ---
 
@@ -34,7 +34,7 @@ Die WSDL-Zugriffspfade der zwei Methoden lauten:
 
 Beide Methoden enthalten ein **`<urn:sessiontoken>`**-Element zum Anmelden beim Modul für den Transaktionsnachrichtenversand. Wir empfehlen die Verwendung einer Authentifizierungsmethode über vertrauenswürdige IP-Adressen. Um das Sitzungstoken abzurufen, führen Sie einen SOAP-Aufruf zur Anmeldung und dann ein GET-Token gefolgt von einer Abmeldung durch. Verwenden Sie dasselbe Token für mehrere RT-Aufrufe. Die in diesem Abschnitt enthaltenen Beispiele verwenden die Sitzungstoken-Methode, wobei es sich um das empfohlene Verfahren handelt.
 
-Wenn Sie einen Lastverteilungsserver verwenden, können Sie die Benutzer-/Passwort-Authentifizierung (auf der Ebene der Echtzeitnachricht) verwenden. Beispiel:
+Falls Sie einen LoadBalancing-Server verwenden, können Sie die Benutzer-/Kennwortauthentifizierung verwenden (auf der Ebene der RT-Nachricht). Beispiel:
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">
@@ -116,9 +116,9 @@ Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchEvent>`*
 
 In diesem Beispiel sind mit der E-Mail-Adresse und der Mobiltelefonnummer zwei Kanäle angegeben. Das Feld **wishedChannel** ermöglicht die Bestimmung des Kanals, der bei der Reaktion auf ein Ereignis verwendet werden soll. Der Wert &quot;0&quot; entspricht dem E-Mail-Kanal, der Wert &quot;1&quot; dem Mobile-Kanal usw.
 
-Wenn Sie den Versand eines Ereignisses verschieben möchten, fügen Sie das Feld **[!UICONTROL geplant]** gefolgt von dem gewünschten Datum hinzu. Das Ereignis wird an diesem Datum in eine Nachricht umgewandelt.
+Wenn Sie einen Ereignisversand verschieben möchten, fügen Sie das Feld **[!UICONTROL Geplant]** hinzu, gefolgt vom bevorzugten Datum. Das Ereignis wird an diesem Datum in eine Nachricht umgewandelt.
 
-Es wird empfohlen, die Attribute @wishedChannel und @emailFormat in Form von numerischen Werten anzugeben. Die Mapping-Tabelle der numerischen Werte und der ihnen zugeordnete Titel finden sich in der Beschreibung der Datenschemata.
+Es wird empfohlen, die Attribute @wishedChannel und @emailFormat mit numerischen Werten auszufüllen. Die Funktionstabelle, die numerische Werte und Beschriftungen verknüpft, finden Sie in der Beschreibung des Datenschemas.
 
 >[!NOTE]
 >
@@ -153,11 +153,11 @@ Datenbeispiel:
 
 ## Vom SOAP-Aufruf zurückgegebene Informationen {#information-returned-by-the-soap-call}
 
-Beim Empfang eines Ereignisses erzeugt Adobe Campaign eine eindeutige Rückgabe-Kennung. Diese entspricht der Kennung der im Verlauf gespeicherten Ereignisversion.
+Wenn ein Ereignis eingeht, generiert Adobe Campaign eine eindeutige Rückgabe-ID. Dies ist die ID der archivierten Version des Ereignisses.
 
 >[!IMPORTANT]
 >
->Beim Empfang von SOAP-Anfragen verifiziert Adobe Campaign das Format der E-Mail-Adresse. Wenn die E-Mail-Adresse falsch formatiert ist, wird ein Fehler zurückgegeben.
+>Beim Empfang von SOAP-Aufrufen überprüft Adobe Campaign das Format der E-Mail-Adresse. Wenn eine E-Mail-Adresse falsch formatiert ist, wird ein Fehler zurückgegeben.
 
 * Beispiel einer von der Methode zurückgegebenen Kennung bei der erfolgreichen Verarbeitung eines Ereignisses:
 

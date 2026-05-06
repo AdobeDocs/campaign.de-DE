@@ -8,19 +8,19 @@ exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 100%
+ht-degree: 59%
 
 ---
 
 # Erste Schritte mit verteiltem Marketing{#about-distributed-marketing}
 
-Die Option **Distributed Marketing** von Adobe Campaign ermöglicht es, partizipative Kampagnen zwischen Zentralstellen (z. B. dem Unternehmenssitz, der Marketing-Abteilung etc.) und Lokalstellen (z. B. Verkaufsstellen, regionalen Zweigstellen etc.) einzurichten. Die Zusammenarbeit basiert auf einem kollaborativen Arbeitsbereich, der **[!UICONTROL Kampagnenkit-Liste]**, an dem Kampagnenmodelle und -instanzen, die von Zentralstellen erstellt wurden, Lokalstellen zur Verfügung gestellt werden.
+Adobe Campaign bietet eine **dezentrales Marketing**-Anwendung zur Implementierung von Kooperationskampagnen zwischen Zentralstellen (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Stellen (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch Kampagnenkit-**[!UICONTROL genannt,]** dem den lokalen Entitäten die zentral erstellten Kampagnenvorlagen und Instanzen angeboten werden.
 
-Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokale oder eine partizipative Nutzung ausgelegt sein können. Zur Teilnahme müssen die Lokalstellen die gewünschten Kampagne bestellen. Diese werden erst durch die Validierung der Bestellung seitens der Zentralstelle tatsächlich verfügbar.
+Die Zentralstelle stellt Kampagnen bereit, die Lokalstellen nutzen können. Kampagnen werden durch Pakete materialisiert, die entweder lokale oder partizipative Kampagnen darstellen. Um eine Kampagne verwenden zu können, muss sie von der Lokalstelle bestellt und anschließend genehmigt werden.
 
 >[!CAUTION]
 >
->Distributed Marketing ist eine Option von **Campaign**. Bitte überprüfen Sie Ihren Lizenzvertrag.
+>Das Modul Dezentrales Marketing ist eine Option **Kampagne**. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 ## Terminologie {#terminology}
 
@@ -31,7 +31,7 @@ Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokal
   Mithillfe des dezentralen Marketings können Zentralstellen:
 
    * Lokalstellen Kampagnenkits zur Verfügung stellen;
-   * Freiräume definieren, innerhalb derer Lokalstellen die Kommunikation mit Kunden und Interessenten in Bezug auf Zielgruppen und Inhalte bestimmen können;
+   * Freiräume definieren, innerhalb derer Lokalstellen die Kommunikation mit Kunden und Interessenten in Bezug auf Zielgruppenbestimmung und Inhalte bestimmen können;
    * Kosten verwalten und begrenzen;
    * die Durchführung von Kampagnen niederlassungsübergreifend koordinieren.
 
@@ -43,7 +43,7 @@ Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokal
 
 * **Lokale Anpassung**
 
-  Lokalstellen haben die Möglichkeit, ihnen zur Verfügung stehende Kampagnen an lokale Gegebenheiten anzupassen. Der Umfang der Anpassungsmöglichkeiten hängt vom Kampagnentyp ab und kann von der Zielgruppen- bis zur Inhaltsänderung reichen.
+  Lokalisierung bedeutet, dass eine Lokalstelle die Zielgruppe und den Inhalt einer Kampagne ändern kann. Der mögliche Umfang der Lokalisierung hängt von der Art der Kampagne und ihrer Implementierung ab.
 
 * **Kampagnenkit-Liste**
 
@@ -55,7 +55,7 @@ Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokal
 
 * **Lokale Kampagnen**
 
-  Eine lokale Kampagne ist eine über eine in der **[!UICONTROL Kampagnenkit]**-Liste verzeichnete Vorlage erstellte Kampagneninstanz mit einer **spezifischen Ausführungsplanung** bei jeder Bestellung der Lokalstelle. Lokale Kampagnen ermöglichen es, mit einer von der Zentralstelle formalisierten und konfigurierten Vorlage auf lokale Bedürfnisse zu antworten.
+  Eine lokale Kampagne ist eine Instanz, die aus einer Vorlage erstellt wird, auf die in der Liste der **[!UICONTROL Kampagnenkits]** mit einer **Ausführungsplanung verwiesen**. Ziel ist es, den lokalen Kommunikationsbedarf mithilfe einer Kampagnenvorlage zu decken, die von der Zentralstelle eingerichtet und konfiguriert wurde.
 
   Der Umfang der Anpassungsmöglichkeiten für die Lokalstelle ist abhängig von der gewählten Kampagnenart.
 
@@ -63,11 +63,11 @@ Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokal
 
 * **Partizipative Kampagnen**
 
-  Eine partizipative Kampagne ist eine Kampagne, deren **Ausführungsplanung von der Zentralstelle festgelegt** wird. Die Lokalstellen können frei entscheiden, ob sie teilnehmen oder nicht. Abhängig von der Konfiguration der Kampagne können Zielgruppe und Inhalt von der Lokalstelle angepasst werden. Es gibt verschiedene Arten partizipativer Kampagnen:
+  Eine partizipative Kampagne ist eine Kampagne **deren Ausführungsplanung von der Zentralstelle festgelegt**, die von der Lokalstelle genutzt werden kann. Der Inhalt bleibt für jede Lokalstelle gleich, die Kosten werden jedoch geteilt. Um sich zu beteiligen, können sich Lokalstellen für die partizipative Kampagne anmelden.
 
-   * **[!UICONTROL Partizipative Kampagne (Formular)]**: eignet sich für Kampagnen für bis zu 300 Lokalstellen. Die Lokalstelle kann vordefinierte Parameter zur Zielgruppe und Inhaltspersonalisierung in einem Web-Formular erfassen. Es kann sowohl ein Adobe Campaign-Formular als auch ein externes Formular (Kunden-Extranet) verwendet werden. Die Definition und Konfiguration des Formulars können von einem funktionellen Administrator auf Basis einer vom Systemintegrator definierten Formularvorlage erfolgen. Zur Bestellung der Kampagne benötigt die Lokalstelle in diesem Fall nur Web-Zugriff.
-   * **[!UICONTROL Partizipative Kampagne (Kampagnenzugriff)]**: wird für Kampagnen empfohlen, die auf Dutzende von Lokalstellen ausgerichtet sind. Dieser Kampagnentyp erstellt für jede Lokalstelle eine untergeordnete Kampagne. Wenn die Bestellung einer **[!UICONTROL Partizipativen Kampagne mit Kampagnenzugriff]** von der Zentralstelle validiert wurde, wird die Kampagne der Lokalstelle zur Verfügung gestellt und kann von dieser angepasst werden. Die Ausführung von über- und untergeordneten Kampagnen wird automatisch synchronisiert. Die Lokalstelle benötigt Zugriff zu einer Instanz, um die Kampagne zu bestellen und ausführen zu können.
-   * **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidierung)]**: eignet sich für Kampagnen für mehrere Tausend Lokalstellen. Die Lokalstellen erhalten eine von der Zentralstelle ausgewählte Kontaktliste. Sie haben dank eines Web-Formulars die Möglichkeit, je nach Inhalt der Kampagne Kontakte herauszustreichen. Die teilnehmenden Lokalstellen werden von der ausgewählten Kontaktliste abgeleitet. Die Lokalstelle benötigt lediglich einen Web-Zugriff, um an der Kampagne teilnehmen zu können.
+   * **[!UICONTROL Partizipative Kampagne (Formular)]** empfohlen für Kampagnen mit bis zu 300 lokalen Entitäten. Die Lokalstellen können vordefinierte Parameter für das Targeting und die Personalisierung von Inhalten in ein Web-Formular eingeben. Das Formular kann ein Adobe Campaign-Formular oder ein externes Formular (Extranet-Client) sein. Ein funktionaler Administrator kann das Formular basierend auf einer vom Integrator definierten Formularvorlage definieren und konfigurieren. Um die Kampagne zu bestellen, benötigt die Lokalstelle nur Web-Zugriff.
+   * **[!UICONTROL Partizipative Kampagne (mit Kampagnen)]** Wird für Kampagnen empfohlen, die sich an Dutzende von Lokalstellen richten. Dieser Kampagnentyp erstellt für jede Lokalstelle untergeordnete Kampagnen. Wenn die Bestellung einer **[!UICONTROL Partizipativen Kampagne mit Kampagnenzugriff]** von der Zentralstelle validiert wurde, wird die Kampagne der Lokalstelle zur Verfügung gestellt und kann von dieser angepasst werden. Die Ausführung von über- und untergeordneten Kampagnen wird automatisch synchronisiert. Die Lokalstelle benötigt Zugriff zu einer Instanz, um die Kampagne zu bestellen und ausführen zu können.
+   * **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidierung)]** Wird für Kampagnen empfohlen, die sich an mehrere Tausend Lokalstellen richten. Die Lokalstelle erhält eine Kontaktliste, die von der Zentralstelle vordefiniert wurde. Die Lokalstelle entscheidet anhand des Kampagneninhalts über ein Web-Formular, ob bestimmte Kontakte beibehalten werden. Lokalstellen werden aus der Liste der ausgewählten Kontakte abgeleitet. Um an der Kampagne teilnehmen zu können, benötigt die Lokalstelle lediglich den Web-Zugriff.
    * **[!UICONTROL Partizipative Kampagne ohne Konfiguration]**: Dieser Modus stellt die Kompatibilität mit dezentralen Kampagnen aus vorhergehenden Versionen sicher.
 
   Weitere Informationen finden Sie unter [Partizipative Kampagne erstellen](creating-a-collaborative-campaign.md).
@@ -76,7 +76,7 @@ Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokal
 
 Um an einer Kampagne teilnehmen zu können, bestellt die Lokalstelle den entsprechenden Kampagnenkit und gibt hierbei sämtliche für die lokale Anpassung erforderlichen Informationen an.
 
-## Arbeitsbereich      {#workspace}
+## Arbeitsbereich {#workspace}
 
 Die Kampagnenkit-Liste ist über den Tab **Kampagnen** zugänglich: Klicken Sie dort auf **[!UICONTROL Kampagnenkits]**.
 
@@ -98,7 +98,7 @@ Es müssen zentrale und lokale Benutzer erstellt werden.
 
 Die zentralen Benutzer müssen der Gruppe **[!UICONTROL Zentrale Verwaltung]** angehören oder über die Berechtigung **[!UICONTROL ZENTRAL]** verfügen.
 
-Lokale Benutzer müssen der Benutzergruppe **[!UICONTROL Lokale Verwaltung]** zugeordnet sein oder über die spezifische Berechtigung **[!UICONTROL LOKAL]** verfügen. Sie müssen zudem mit ihrer Lokalstelle verbunden sein.
+Lokale Benutzer müssen zur Benutzergruppe **[!UICONTROL Lokale Verwaltung]** gehören oder über die spezifische Berechtigung **[!UICONTROL LOCAL]** verfügen. Sie müssen auch mit ihrer Lokalstelle verbunden sein.
 
 ![](assets/s_advuser_mkg_dist_local_create.png)
 
@@ -108,11 +108,11 @@ Um eine Organisationseinheit zu erstellen, klicken Sie auf den Ordner **[!UICONT
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-Jede Organisationseinheit enthält Identifizierungsinformationen (Titel, interner Name, Kontaktinformationen usw.) und Gruppen, die am Bestellvalidierungsprozess beteiligt sind. Diese werden im Abschnitt **[!UICONTROL Benachrichtigungen und Validierungen]** der Registerkarte **[!UICONTROL Allgemein]** bestimmt.
+Jede Organisationseinheit enthält Identifizierungsinformationen (Titel, interner Name, Kontaktinformationen usw.) und Gruppen, die am Prozess der Bestellvalidierung beteiligt sind. Diese werden im Abschnitt **[!UICONTROL Benachrichtigungen und Validierungen]** der Registerkarte **[!UICONTROL Allgemein]** bestimmt.
 
 * Definieren Sie eine Benachrichtigungsgruppe, die bei Aktionen bezüglich der Kampagnenkits informiert wird: Alle Benutzer dieser Gruppe erhalten eine Benachrichtigung, wenn der Kampagnenkit-Liste ein neuer Kit hinzugefügt wird und wenn eine Kampagne verfügbar wird.
 * Wählen Sie anschließend die Benutzergruppe aus, die dafür verantwortlich ist, die Kampagnenbestellungen der Lokalstelle zu validieren.
-* Legen Sie schließlich fest, welche Benutzergruppe die lokale Kampagne (Zielgruppe, Inhalt, Budget etc.) validieren soll. Diese Gruppe kann bei der Bestellung einer Kampagne verändert werden, sofern die jeweilige Vorlage dies zulässt.
+* Wählen Sie abschließend die Gruppe der Validierungsverantwortlichen aus, die für die Validierung der lokalen Kampagne (Zielgruppe, Inhalt, Budget usw.) zuständig sind. Diese Gruppe kann bei der Bestellung einer Kampagne je nach Vorlage hinzugefügt werden.
 
 >[!NOTE]
 >
@@ -120,9 +120,9 @@ Jede Organisationseinheit enthält Identifizierungsinformationen (Titel, interne
 
 ## Umsetzung {#implementation}
 
-Dezentrale Marketing-Kampagnen werden von der Zentralstelle erstellt und veröffentlicht. Anschließend können sie je nach Bedarf von Zentral- und Lokalstellen genutzt werden.
+Verteilte Marketing-Kampagnen werden von der Zentralstelle erstellt und veröffentlicht. Sie können bei Bedarf sowohl von lokalen als auch von zentralen Stellen verwendet werden.
 
-Die Implementierungsetappen hängen vom gewählten Kittyp und dem Umfang der lokalen Verantwortung ab.
+Die Implementierungsetappen hängen vom gewählten Kampagnenkittyp und dem Umfang der lokalen Verantwortung ab.
 
 ### Aufgaben des Systemintegrators {#integrator-side}
 

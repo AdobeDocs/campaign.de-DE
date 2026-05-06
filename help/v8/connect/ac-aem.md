@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
-workflow-type: ht
-source-wordcount: '667'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '729'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ Mit dieser Integration kann beispielsweise ein Newsletter in Adobe Experience Ma
 
    ![](assets/aem_authoring_3.png)
 
-1. Bearbeiten Sie den E-Mail-Inhalt, indem Sie Komponenten hinzufügen, z. B. Personalisierungsfelder aus Adobe Campaign. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=de#editing-email-content){target="_blank"}.
+1. Passen Sie Ihren E-Mail-Inhalt an, indem Sie Komponenten hinzufügen, z. B. Personalisierungsfelder aus Adobe Campaign. Weitere Informationen finden Sie in der Dokumentation zu [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=de#editing-email-content){target="_blank"}.
 
 1. Wenn Ihre E-Mail fertig ist, navigieren Sie zum Menü **[!UICONTROL Seiteninformationen]** und klicken Sie auf **[!UICONTROL Workflow starten]**.
 
@@ -73,7 +73,7 @@ Ihr Newsletter ist jetzt fertig und in Adobe Campaign synchronisiert.
 
    ![](assets/aem_authoring_7.png)
 
-1. Fügen Sie zu Ihrem Versand einen **[!UICONTROL Titel]** hinzu und klicken Sie dann auf **[!UICONTROL Fortfahren]**.
+1. Fügen Sie zu Ihrem Versand einen **[!UICONTROL Titel]** hinzu und wählen Sie dann **[!UICONTROL Fortfahren]** aus.
 
 1. Klicken Sie auf **[!UICONTROL Synchronisieren]**, um auf Ihre AEM-Sendungen zuzugreifen.
 

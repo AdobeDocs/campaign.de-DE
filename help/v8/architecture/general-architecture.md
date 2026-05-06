@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1163'
 ht-degree: 89%
 
 ---
@@ -50,21 +50,21 @@ Dies sind die wichtigsten Prozesse:
 
 * **Anwendungs-Server** (nlserver web) – Dieser Prozess stellt das gesamte Spektrum an Adobe Campaign-Funktionen mittels Web-Services-APIs (SOAP/HTTP + XML) zur Verfügung. Darüber hinaus kann er dynamisch die Web-Seiten generieren, die für den HTML-basierten Zugriff verwendet werden (Berichte, Web-Formulare usw.). Um dies zu ermöglichen, umfasst der Prozess einen Apache Tomcat JSP-Server. Dies ist der Prozess, an den die Konsole angebunden ist.
 
-* **Workflow-Engine** (nlserver wfserver) – Durch diesen Prozess werden die in der Anwendung definierten Workflow-Prozesse ausgeführt. Außerdem werden durch ihn regelmäßig technische Workflows ausgeführt, darunter:
+* **Workflow-Engine** (nlserver wfserver) – Durch diesen Prozess werden die in der Anwendung definierten Workflow-Prozesse ausgeführt. Außerdem verarbeitet sie zeitweise ausgeführte technische Workflows, darunter:
 
    * **Tracking**: Stellt Trackinglogs wieder her und konsolidiert sie, sodass Sie die Protokolle vom Weiterleitungs-Server abrufen und die vom Berichtsmodul verwendeten aggregierten Indikatoren erstellen können.
    * **Bereinigung**: Bereinigt die Datenbank, löscht alte Einträge und verhindert, dass die Datenbank exponentiell wächst.
    * **Abrechnung**: Sendet einen Aktivitätsbericht für die Plattform (Größe der Datenbank, Anzahl der Marketing-Aktionen usw.).
 
-* **Versand-Server** (nlserver-mta): Adobe Campaign verfügt über eine native Funktion zum Senden von E-Mails. Dieser Prozess fungiert als SMTP Mail Transfer Agent (MTA). Er personalisiert Nachrichten individuell für den jeweiligen Empfänger und verarbeitet deren physischen Versand. Dies erfolgt mittels Versandvorgängen, wobei zudem auch nachgelagerte, weitere Zustellversuche automatisiert werden. Ist Tracking aktiviert, werden zusätzlich die URLs automatisch ersetzt, sodass sie auf den Weiterleitungs-Server verweisen. Über diesen Prozess ist die Anpassung sowie der automatische Versand an einen Dritt-Router für SMS, Fax und Briefpost möglich.
+* **Versand-Server** (nlserver-mta): Adobe Campaign verfügt über eine native Funktion zum Senden von E-Mails. Dieser Prozess fungiert als SMTP Mail Transfer Agent (MTA). Er personalisiert Nachrichten individuell für den jeweiligen Empfänger und verarbeitet deren physischen Versand. Dies erfolgt mittels Versandaufträgen, wobei zudem auch nachgelagerte, weitere Zustellversuche automatisiert werden. Ist zusätzlich noch Tracking aktiviert, werden die URLs automatisch ersetzt, sodass sie auf den Weiterleitungs-Server verweisen. Über diesen Prozess ist die Anpassung sowie der automatische Versand an einen Dritt-Router für SMS, Fax und Briefpost möglich.
 
 * **Weiterleitungs-Server** (nlserver webmdl) – Bei E-Mails übernimmt Adobe Campaign automatisch das Öffnungs- und Klick-Tracking (wobei das Tracking von Transaktionen auf Website-Ebene ebenfalls möglich ist). Hierfür werden die in den E-Mail-Nachrichten enthaltenen URLs so umgeschrieben, dass sie auf dieses Modul verweisen. Dieses wiederum registriert Internet-Benutzer, während diese an die Ziel-URL weitergeleitet werden.
 
-  Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht ist diese Funktion in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert und nur unter Windows verfügbar.
+  Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht ist diese Funktion in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert. und nur unter Windows verfügbar.
 
 Daneben sind auch noch weitere technische Prozesse verfügbar:
 
-* **Bounce Messages verwalten** (nlserver inMail) – Dieser Prozess ermöglicht den automatischen Abruf von E-Mails aus Postfächern, die für den Empfang von Nachrichten konfiguriert sind, die bei fehlgeschlagenem Versand als unzustellbar zurückgesendet werden. Diese Nachrichten werden dann regelbasiert verarbeitet, um die Gründe für die Unzustellbarkeit (z. B. Empfänger unbekannt, Nachrichtenkontingente ausgeschöpft) zu ermitteln und den Versandstatus in der Datenbank zu aktualisieren. Alle diese Operationen laufen vollkommen automatisch und sind vorkonfiguriert.
+* **Bounce Messages verwalten** (nlserver inMail) – Dieser Prozess ermöglicht den automatischen Abruf von E-Mails aus Postfächern, die für den Empfang von Nachrichten konfiguriert sind, die bei fehlgeschlagenem Versand als unzustellbar zurückgesendet werden. Diese Nachrichten werden dann regelbasiert verarbeitet, um die Gründe für die Unzustellbarkeit zu ermitteln (z. B. Empfänger unbekannt, Nachrichtenkontingente ausgeschöpft) und den Versandstatus in der Datenbank zu aktualisieren. Alle diese Operationen laufen vollkommen automatisch und sind vorkonfiguriert.
 
 * **Status des SMS-Versands** (nlserver sms) – Dieser Prozess fragt beim SMS-Router den Status des Versandfortschritts ab und aktualisiert diesen in der Datenbank.
 
@@ -74,14 +74,14 @@ Daneben sind auch noch weitere technische Prozesse verfügbar:
 
 * **Schreiben eingehender Ereignisse** (nlserver interaction): Dieser Prozess stellt sicher, dass eingehende Ereignisse im Rahmen von Interaction auf der Festplatte aufgezeichnet werden.
 
-* **Überwachungsmodule** (nlserver watchdog): Dieser technische Prozess fungiert als primärer Prozess, der die anderen hervorbringt. Zugleich überwacht er diese aber auch und startet sie beim Auftreten von Vorfällen automatisch neu, sodass die maximale Systemverfügbarkeit gewährleistet bleibt.
+* **Überwachungsmodule** (nlserver watchdog): Dieser technische Prozess fungiert als primärer Prozess, der die anderen hervorbringt. Zugleich überwacht er diese aber auch startet sie beim Auftreten von Vorfällen automatisch neu, sodass maximale Systemverfügbarkeit gewährleistet bleibt.
 
 * **Statistik-Server** (nlserver stat) – Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einzelnen Mailserver gesendeten Nachrichten und zu deren Einschränkungen (z. B. Maximalzahl gleichzeitiger Verbindungen, Nachrichten pro Stunde und/oder Verbindung usw.). Ebenfalls lassen sich über diesen Prozess Instanzen oder Computer zusammenführen, sofern diese dieselben öffentlichen IP-Adressen verwenden.
 
 
 ## Datenbank-Container {#db-containers}
 
-In ihrer [Enterprise (FFDA)-](enterprise-deployment.md) stützt sich die Adobe Campaign-Cloud-Datenbank auf [!DNL Snowflake], die die Funktionsdaten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versandvorgänge und -protokolle, Trackinglogs usw.) und die Arbeitsdaten (Käufe, Leads) für die Lösung enthält, und alle Adobe Campaign-Komponenten kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
+In ihrer [Enterprise (FFDA)-](enterprise-deployment.md) stützt sich die Adobe Campaign Cloud-Datenbank auf [!DNL Snowflake], die die funktionellen Daten (Profile, Abonnements, Inhalte usw.), die technischen Daten (Versandvorgänge und -protokolle, Trackinglogs usw.) enthält und die Arbeitsdaten (Bestellungen, Leads) für die Lösung. Alle Adobe Campaign-Komponenten kommunizieren mit der Datenbank, um ihre spezifischen Aufgaben auszuführen.
 
 Sie können Adobe Campaign unter Verwendung der vordefinierten Datenbank und Schemata bereitstellen und diese vordefinierte Umgebung bei Bedarf erweitern. Der Zugriff auf alle Daten im Datamart durch Adobe Campaign erfolgt über SQL-Aufrufe. Adobe Campaign bietet außerdem ein vollständiges Komplement der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels dessen Daten in das und aus dem System importiert und exportiert werden können.
 

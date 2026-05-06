@@ -5,8 +5,8 @@ user-guide-description: Handbuch zur Kampagnenautomatisierung
 feature: Overview
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 97%
+source-wordcount: '462'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
       + [Best Practices](workflow/workflow-best-practices.md)
       + [Verwenden von Workflow-Daten](workflow/use-workflow-data.md)
    + Ausführen eines Workflows {#executing-a-workflow}
-      + [Workflow starten](workflow/start-a-workflow.md)
+      + [Starten eines Workflows](workflow/start-a-workflow.md)
       + [Lebenszyklus eines Workflows](workflow/workflow-life-cycle.md)
       + [Einrichten von Validierungen](workflow/define-approvals.md)
    + Überwachen von Workflows {#monitoring-workflows}
@@ -37,12 +37,12 @@ ht-degree: 97%
       + Zielgruppenbestimmungsaktivitäten {#targeting-activities}
          + [Liste der Targeting-Aktivitäten](workflow/targeting-activities.md)
          + [Segmente](workflow/cells.md)
-         + [Ändern der Datenquelle](workflow/change-data-source.md)
-         + [Ändern der Dimension](workflow/change-dimension.md)
+         + [Datenquelle ändern](workflow/change-data-source.md)
+         + [Dimensionsänderung](workflow/change-dimension.md)
          + [CRM-Connector](workflow/crm-connector.md)
          + [Deduplizierung](workflow/deduplication.md)
          + [Versandentwurf](workflow/delivery-outline.md)
-         + [Bearbeiten von Schemas](workflow/edit-schema.md)
+         + [Schema-Bearbeitung](workflow/edit-schema.md)
          + [Anreicherung](workflow/enrichment.md)
          + [Ausschluss](workflow/exclusion.md)
          + [Inkrementelle Abfrage](workflow/incremental-query.md)
@@ -53,17 +53,17 @@ ht-degree: 97%
          + [Abfrage](workflow/query.md)
          + [Liste lesen](workflow/read-list.md)
          + [Aufspaltung](workflow/split.md)
-         + [Abonnements](workflow/subscription-services.md)
+         + [Anmeldedienste](workflow/subscription-services.md)
          + [Vereinigung](workflow/union.md)
          + [Daten-Update](workflow/update-data.md)
       + Flusssteuerungsaktivitäten {#flow-control-activities}
          + [Liste der Fluss-Steuerungsaktivitäten](workflow/flow-control-activities.md)
-         + [Warnhinweis](workflow/alert.md)
+         + [Warnung](workflow/alert.md)
          + [Und-Verknüpfung](workflow/and-join.md)
          + [Validierung](workflow/approval.md)
          + [Externes Signal](workflow/external-signal.md)
          + [Verzweigung](workflow/fork.md)
-         + [Sprung (Start und Ende)](workflow/jump-start-point-and-end-point.md)
+         + [Sprung (Start und Ziel)](workflow/jump-start-point-and-end-point.md)
          + [Start und Ende](workflow/start-and-end.md)
          + [Planung](workflow/scheduler.md)
          + [Unter-Workflow](workflow/sub-workflow.md)
@@ -75,7 +75,7 @@ ht-degree: 97%
          + [Content-Management](workflow/content-management.md)
          + [Versand (fortlaufend)](workflow/continuous-delivery.md)
          + [Kanalübergreifender Versand](workflow/cross-channel-deliveries.md)
-         + [Datenextraktion (Datei)](workflow/extraction-file.md)
+         + [Extraktion (Datei)](workflow/extraction-file.md)
          + [Laden (Datei)](workflow/data-loading-file.md)
          + [Laden (DBMS)](workflow/data-loading-rdbms.md)
          + [Versand](workflow/delivery.md)
@@ -97,12 +97,12 @@ ht-degree: 97%
    + Anwendungsfälle {#use-cases}
       + [Über Workflow-Anwendungsfälle](workflow/workflow-use-cases.md)
       + Sendungen {#deliveries}
-         + [Verwenden der lokalen Validierung](workflow/local-approval-activity.md)
+         + [Verwenden der lokalen Validierungsaktivität](workflow/local-approval-activity.md)
          + [Senden einer Geburtstags-E-Mail](workflow/send-a-birthday-email.md)
          + [Laden des Versandinhalts](workflow/load-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/email-enrichment-with-custom-date-fields.md)
-      + Monitoring      {#monitoring}
+      + Monitoring {#monitoring}
          + [Senden eines Berichts an eine Liste](workflow/send-a-report-to-a-list.md)
          + [Überwachen Ihrer Workflows](workflow/workflow-supervision.md)
          + [Senden personalisierter Warnungen an Benutzer](workflow/send-alerts-to-operators.md)
@@ -116,8 +116,8 @@ ht-degree: 97%
       + Entwerfen von Abfragen {#designing-queries}
          + [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](workflow/quarterly-list-update.md)
       + Abfrage und Filter {#designing-queries}
-         + [Abfrage zur Empfängertabelle](workflow/querying-recipient-table.md)
-         + [Informationen zum Abfrageversand](workflow/query-delivery-info.md)
+         + [Abfrage der Empfängertabelle](workflow/querying-recipient-table.md)
+         + [Abfragen von Informationen zum Versand](workflow/query-delivery-info.md)
          + [Berechnen von Aggregaten](workflow/compute-aggregates.md)
          + [Abfrage mit Gruppierungsverwaltung](workflow/query-grouping-management.md)
          + [Abfrage mit einer n:n-Beziehung](workflow/query-many-to-many-relationship.md)
@@ -151,7 +151,7 @@ ht-degree: 97%
    + [Druckregeln](campaign-opt/pressure-rules.md)
    + [Kohärenzregeln](campaign-opt/consistency-rules.md)
    + [Regeln anwenden](campaign-opt/apply-rules.md)
-   + [Kampagnensimulation](campaign-opt/campaign-simulations.md)
+   + [Campaign-Simulationen](campaign-opt/campaign-simulations.md)
 + Marketing Resource Management (Add-on){#mrm}
    + [Erste Schritte mit der Verwaltung von Marketing-Ressourcen](mrm/about-marketing-resource-management.md)
    + [Aufgaben erstellen und verwalten](mrm/creating-and-managing-tasks.md)
@@ -160,10 +160,10 @@ ht-degree: 97%
    + [Diskussionsforen](mrm/discussion-forums.md)
 + Verteiltes Marketing (Add-on) {#distributed-marketing}
    + [Erste Schritte mit verteiltem Marketing](distributed-marketing/about-distributed-marketing.md)
-   + [Lokale Kampagnen erstellen](distributed-marketing/creating-a-local-campaign.md)
-   + [Partizipative Kampagnen erstellen](distributed-marketing/creating-a-collaborative-campaign.md)
-   + [Kampagnenkit veröffentlichen](distributed-marketing/publishing-the-campaign-package.md)
-   + [Auf Kampagnen zugreifen](distributed-marketing/accessing-campaigns.md)
-   + [Verfolgen einer Kampagne](distributed-marketing/tracking-a-campaign.md)
+   + [Erstellen einer lokalen Kampagne](distributed-marketing/creating-a-local-campaign.md)
+   + [Erstellen einer partizipativen Kampagne](distributed-marketing/creating-a-collaborative-campaign.md)
+   + [Veröffentlichen des Kampagnenkits](distributed-marketing/publishing-the-campaign-package.md)
+   + [Zugriff auf Kampagnen](distributed-marketing/accessing-campaigns.md)
+   + [Nachverfolgen einer Kampagne](distributed-marketing/tracking-a-campaign.md)
    + [Anwendungsfälle](distributed-marketing/examples.md)
-+ [&lt; Zurück zur Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)
++ [&lt; Zurück zur Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)

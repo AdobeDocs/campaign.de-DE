@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 21c42a36-9a50-49b8-8a07-b041ba8b2026
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '243'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 64%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->Die Aktivität **Laden (SOAP)** erfordert die Installation des **FDA**-Moduls (Federated Data Access). Bitte prüfen Sie Ihren Lizenzvertrag.
+>Die Aktivität **Laden (SOAP** ist nur verfügbar, wenn das Modul **FDA (Federated Data Access)** installiert ist. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Im Allgemeinen wird die Aktivität **Laden (SOAP)** ergänzend zur Aktivität **Laden (DBMS)** eingesetzt, für den Fall, dass der direkte Datenabruf aus einer externen Datenbank über den FDA nicht möglich ist.
 
@@ -31,9 +31,9 @@ Gehen Sie wie folgt vor:
 
    ![](assets/load_soap_002.png)
 
-1. Wählen Sie im Fall des Beispiel-XMLs die gewünschte Beispieldatei aus. Die Datei wird analysiert, um ein Beispielergebnis zu erzeugen.
+1. Wählen Sie für ein XML-Beispiel eine Beispieldatei aus. Die Datei wird analysiert, um ein Ergebnisbeispiel zu erstellen.
 
-   Im Falle einer WSDL ist die entsprechende Zugriffs-URL anzugeben und das Code-Skelett zu erzeugen. Der ausgewählte Dienst und der ausgewählte Aufruf werden automatisch aktualisiert und angezeigt.
+   Geben Sie für eine WSDL die entsprechende Zugriffs-URL ein und generieren Sie dann den Code-Skelett. Der ausgewählte Service und Aufruf werden automatisch aktualisiert und angezeigt.
 
    ![](assets/soap_load_003.png)
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor:
 1. Geben Sie die erforderlichen Scripts in den entsprechenden Tabs ein:
 
    * **[!UICONTROL Initialisierung]**: Herstellung der SOAP-Verbindung.
-   * **[!UICONTROL Iteration]**: Aufruf des SOAP-Dienstes. Zurückgegeben werden muss ein XML-Objekt, dass mit der Beispielbeschreibung oder der WSDL kompatibel ist.
+   * **[!UICONTROL Iteration]**: Führt den Aufruf des SOAP-Service aus. Die Rückgabe für diese Funktion muss ein XML-Objekt sein, das mit der Beschreibung des Beispiels oder der WSDL kompatibel ist.
 
      Der Code dieses Tabs wird von Adobe Campaign so lange in einer Schleife aufgerufen, bis ein Null-XML-Element zurückgegeben wird.
 

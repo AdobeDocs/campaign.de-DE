@@ -7,8 +7,8 @@ role: Admin, User
 exl-id: 6fa4f4e3-c5a5-4d7f-8e71-826dee4e926a
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '369'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ Bei der Verwaltung von Marketing-Ressourcen in Adobe Campaign werden die folgend
 
 * **Aufgabe**
 
-  Eine Aufgabe ist eine im Zuge einer Marketingkampagne durchzuführende Aktion, die einem Benutzer oder einer Gruppe von Benutzern zugeteilt wird. Unterschiedliche Aufgaben können einander untergeordnet werden: Eine übergeordnete Aufgabe ist nur dann erfüllt, wenn alle ihr untergeordneten Aufgaben beendet sind. Bei einer Aufgabe kann es sich beispielsweise um die Referenzierung einer Internetseite, eine Budgetüberprüfung, ein Protokoll o. Ä. handeln.
+  Eine Aufgabe entspricht einer Aktion, die im Kontext einer Kampagne ausgeführt werden soll. Eine Aufgabe wird einer Gruppe oder Person zugewiesen. Eine untergeordnete Aufgabe kann von einer übergeordneten Aufgabe abhängig sein. Das bedeutet, dass die übergeordnete Aufgabe erst ausgeführt wird, wenn alle untergeordneten Aufgaben abgeschlossen sind. Beispiele für Aufgaben sind Verweise auf eine Website, eine Budgetprüfung, eine Zusammenfassung usw.
 
   Weitere Informationen finden Sie unter [Aufgaben erstellen und verwalten](creating-and-managing-tasks.md).
 

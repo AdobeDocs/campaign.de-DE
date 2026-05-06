@@ -8,8 +8,8 @@ hide: true
 exl-id: c2862f94-7d15-4a49-a74e-df90d0ea7bc9
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 2%
+source-wordcount: '1421'
+ht-degree: 4%
 
 ---
 
@@ -757,7 +757,7 @@ Beim Arbeiten mit den Methoden queryDef und NLWS:
 * **Verwenden von Workflows für große Datensätze** - QueryDef ist nicht für die Verarbeitung umfangreicher Daten konzipiert. Verwenden Sie für Datensätze mit mehr als 1.000 Datensätzen Workflows, die Millionen von Zeilen effizient verarbeiten können. Weitere Informationen finden Sie in der [&#x200B; zu Campaign SDK &#x200B;](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
 * **Parametrisierte Abfragen verwenden** - Gebundene Parameter (`$(sz)`, `$(l)`) immer mit `sqlExec` verwenden, um das Einschleusen von SQL zu verhindern
 * **Explizite Limits festlegen** - Verwenden Sie `lineCount`, um die Ergebnisgröße zu steuern. Die Standardbeschränkungen von Campaign variieren je nach Kontext (200-10.000 Datensätze)
-* **Verwenden von orderBy mit Paginierung** - Verwenden Sie bei der Verwendung von `orderBy` und `startLine` immer eine `lineCount`, um eine konsistente Paginierung sicherzustellen.
+* **Verwenden von orderBy mit Paginierung** - Verwenden Sie bei der Verwendung von `startLine` und `lineCount` immer eine `orderBy`, um eine konsistente Paginierung sicherzustellen.
 * **Use getIfExists** - Verwenden Sie `operation: "getIfExists"`, wenn möglicherweise keine Datensätze vorhanden sind, um Ausnahmen zu vermeiden.
 * **Analyse für Auflistungen verwenden** - `analyze: true` zur Auswahl von Knoten hinzufügen, um benutzerfreundliche Auflistungsnamen und Beschriftungen zu erhalten
 * **Abfragen optimieren** - Fügen Sie geeignete `where` hinzu, um Ergebnismengen zu begrenzen
@@ -901,6 +901,6 @@ Vollständige Struktur des `queryDef`:
 * [Erste Schritte mit Campaign-APIs](api.md)
 * [Campaign JavaScript SDK - Abfrage-API](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
 * [queryDef API-Referenz](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=de){target="_blank"}
-* [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}
+* [Campaign - JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}
 * [Arbeiten mit Schemata](schemas.md)
 * [Arbeiten mit dem Abfrage-Editor](../start/query-editor.md)

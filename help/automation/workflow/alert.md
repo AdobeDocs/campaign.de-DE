@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8fb36117-b126-470a-9c94-eb5c0a4aca1a
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '85'
-ht-degree: 100%
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Eine Aktivität **Warnhinweis** sendet eine Nachricht an eine Benutzergruppe. Die Funktionsweise entspricht der von Validierungen, mit dem Unterschied, dass keine Antwort erwartet wird.
+Eine **Warnhinweis**-Aktivität sendet eine Nachricht an eine Benutzergruppe. Dies funktioniert genauso wie eine Validierungsaktivität, aber in diesem Fall wird keine Antwort erwartet.
 
 ![](assets/edit_alerte.png)
 

@@ -7,14 +7,14 @@ role: User, Admin
 exl-id: d0137fa7-3d04-4205-b49c-46973e45a5b8
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 100%
+source-wordcount: '209'
+ht-degree: 70%
 
 ---
 
 # Unterbreiten des besten Angebots{#interaction-present-offers}
 
-Angebote können in verschiedenen Platzierungen über [eingehende oder ausgehende Kanäle](interaction-architecture.md#interaction-types) unterbreitet werden. Dieses Kapitel behandelt einige Besonderheiten von eingehenden Kanälen.
+Angebote können in verschiedenen Platzierungen über eingehende [&#x200B; ausgehende Kanäle unterbreitet &#x200B;](interaction-architecture.md#interaction-types). In diesem Kapitel werden einige spezifische Funktionen für eingehende Kanäle beschrieben.
 
 ![](assets/inbound-interactions.png)
 
@@ -24,7 +24,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](h
 
 Im Kontext eines eingehenden Kontakts kann der Benutzer, der die Seite durchsucht, von der Website identifiziert werden oder nicht. Das Angebotsmodul bietet für identifizierte Profile und für anonyme Profile verschiedene Angebote an.
 
-Um in eingehenden Kanälen Angebote vorschlagen zu können, muss die Abfrage an das Angebotsmodul an der Stelle konfiguriert werden, an der die Angebote unterbreitet werden sollen. Der gängigste Fall einer eingehenden Interaktion ist der Besuch einer Web-Seite.
+Um Angebote auf einem eingehenden Kanal unterbreiten zu können, müssen Sie die Abfrage des Angebotsmoduls so konfigurieren, dass die Angebote unterbreitet werden sollen. In den meisten Fällen für eingehende Interaktionen ist dies die Web-Seite.
 
 >[!NOTE]
 >

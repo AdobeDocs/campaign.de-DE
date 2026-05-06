@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: b5eb9eaa-0ca8-478c-9ed5-e5006e9b5609
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '650'
 ht-degree: 100%
 
 ---
@@ -99,7 +99,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Mobiltelefon]** aus der Dropdown-Liste **[!UICONTROL Connector]** die Option **[!UICONTROL Erweitertes allgemeines SMPP]** aus.
 
-   Das Feld **[!UICONTROL Nachrichten über einen speziellen Prozess senden]** ist standardmäßig aktiviert.
+   Das Kästchen **[!UICONTROL Nachrichten über einen speziellen Prozess senden]** ist standardmäßig aktiviert.
 
    ![](assets/sms_extaccount_connector.png){zoomable="yes"}
 

@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 2d650573-f630-4aba-bd40-2db88ef1c346
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 100%
+ht-degree: 63%
 
 ---
 
@@ -27,7 +27,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   Der im zugehörigen Feld eingetragene Name der Tabelle dient als Vorlage zum Abruf der Daten in der externen Datenbank. Der Name der Tabelle, die vom Workflow verarbeitet wird, kann berechnet oder von der eingehenden Transition der Datenladeaktivität übermittelt werden. Um die zu verwendende Tabelle auszuwählen, klicken Sie auf den Link **[!UICONTROL Erweitert…]** und wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** oder **[!UICONTROL Explizit]**.
+   Der Name der in das entsprechende Feld eingegebenen Tabelle wird als Vorlage für die Datenerfassung in der externen Datenbank verwendet. Der Name der vom Workflow verarbeiteten Tabelle kann durch die eingehende Transition der Aktivität Laden berechnet oder übermittelt werden. Um die zu verwendende Tabelle auszuwählen, klicken Sie auf den Link **[!UICONTROL Erweitert..]** und wählen Sie die Option **[!UICONTROL In der Transition angegeben]** oder **[!UICONTROL Explizit]** aus.
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 

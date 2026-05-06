@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 14a741dd-794e-4760-bfa3-bafbe993a3f7
 source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 100%
+source-wordcount: '338'
+ht-degree: 83%
 
 ---
 
@@ -52,16 +52,16 @@ Im folgenden Anwendungsbeispiel erfahren Sie, wie Sie den Betreff und Text einer
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen vorhandenen E-Mail-Versand.
 1. Navigieren Sie zum Link **[!UICONTROL Betreff]**, um den Betreff der Nachricht zu bearbeiten.
 1. Geben Sie z. B. den Text **Sonderangebot für** ein. Nutzen Sie nun die Schaltfläche in der Symbolleiste, um ein Personalisierungsfeld einzufügen. Wählen Sie **[!UICONTROL Empfängerinnen und Empfänger > Titel]**.
-1. Wiederholen Sie den Vorgang, um den Nachnamen der Empfänger einzufügen. Vergessen Sie die Leerzeichen zwischen den Personalisierungsfeldern nicht.
+1. Wiederholen Sie den Vorgang, um den Namen des Empfängers einzufügen. Fügen Sie Leerzeichen zwischen allen Personalisierungsfeldern ein.
 1. Wählen Sie zur Bestätigung **[!UICONTROL OK]** aus.
-1. Im nächsten Schritt wird der Nachrichten-Textkörper angepasst. Klicken Sie dazu in das Inhaltsfeld der Nachricht und danach auf die Schaltfläche zum Einfügen von Personalisierungsfeldern.
+1. Fügen Sie die Personalisierung in den Nachrichtentext ein. Klicken Sie dazu auf den Nachrichteninhalt und dann auf die Schaltfläche zum Einfügen des Felds.
 1. Wählen Sie **[!UICONTROL Empfänger > Sonstige...]**.
 1. Markieren Sie das Feld, das die gewünschte Information enthält, und klicken Sie auf **[!UICONTROL OK]**.
-1. Klicken Sie nun auf den **[!UICONTROL Vorschau]**-Tab und wählen Sie einen Empfänger aus, um sich das Ergebnis der Personalisierung anzusehen.
+1. Klicken Sie auf **[!UICONTROL Vorschau]**, um das Personalisierungsergebnis anzuzeigen. Sie müssen einen Empfänger auswählen, um die Nachricht dieses Empfängers anzuzeigen.
 
 
 
-## Tutorial-Video {#personalization-field-video}
+## Anleitungsvideo {#personalization-field-video}
 
 Im folgenden Video erfahren Sie, wie Sie der Betreffzeile und dem Inhalt eines E-Mail-Versands ein Personalisierungsfeld hinzufügen.
 

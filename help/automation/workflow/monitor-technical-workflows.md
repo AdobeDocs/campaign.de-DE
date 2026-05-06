@@ -7,9 +7,9 @@ role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '497'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Auf das Instanz-Monitoring-Dashboard können Sie über den Tab **[!UICONTROL Mon
 
 ![](assets/monitoring_technical_workflows1.png)
 
-Prüfen Sie unter &quot;System Indicators&quot; und &quot;core files&quot;, ob Indikatoren rot hervorgehoben sind. Gehen Sie in diesem Fall folgendermaßen vor:
+Stellen Sie unter Systemindikatoren und Kerndateien sicher, dass keine Indikatoren rot hervorgehoben sind. Wenn dies der Fall ist und es einige sind, sollten Sie:
 
 * Prüfen Sie, ob die erforderlichen Prozesse immer aktiv sind.
 * Vergewissern Sie sich, dass keiner der Prozesse veraltet ist.
@@ -75,13 +75,13 @@ Alle benutzerdefinierten technischen Workflows sollten in einem Arbeitsblatt mit
 * Zweck
 * Zeitplan und Abhängigkeiten
 * Verantwortlicher für die Überwachung
-* Maßnahmen beim Auftreten eines Problems
+* Maßnahmen beim Auftreten eines Fehlers
 
 ![](assets/monitoring_technical_workflows4.png)
 
 ## Planung und Automatisierung der Überwachung {#planning-and-automation-of-monitoring}
 
-Durch die Planung der Workflow-Überwachung kann die Überwachung effizienter gestaltet werden. Manche Aufgaben müssen täglich ausgeführt werden, während andere wöchentlich oder monatlich erfolgen.
+Die Planung der Workflow-Überwachung verbessert ihre Effizienz. Einige Aufgaben müssen täglich ausgeführt werden, während andere Aufgaben wöchentlich oder monatlich ausgeführt werden können.
 
 Die Überwachung kann möglichst effizient gestaltet werden, indem Workflows in Ordnern angeordnet werden, die nach der wiederkehrenden Aufgabe benannt und nach dem Ausführungszeitpunkt sortiert sind.
 
@@ -91,4 +91,4 @@ Sie können einen Monitoring-Workflow einrichten, der eine E-Mail sendet, wenn g
 
 Sie können eine Ansicht erstellen, in der alle Workflows eines funktionellen Bereichs oder im gesamten System überwacht werden können.
 
-Sie können auch die Vorgangs- oder Berichtsfunktion von Adobe Campaign verwenden, um nach Bedarf eine Dokumentation zu erstellen, die immer auf dem aktuellen Stand ist.
+Sie können auch die Auftrags- oder Berichtsfunktion von Adobe Campaign verwenden, um nach Bedarf eine Dokumentation zu erstellen, die immer auf dem aktuellen Stand ist.

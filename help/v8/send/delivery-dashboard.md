@@ -5,10 +5,11 @@ feature: Monitoring
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 254765d3-f664-4200-9a70-f8876f2b2933
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 70%
+source-wordcount: '1207'
+ht-degree: 63%
 
 ---
 
@@ -22,7 +23,7 @@ Auf die Liste aller Sendungen kann im Knoten **[!UICONTROL Kampagnenverwaltung >
 
 ![](assets/deliveries-list.png)
 
-Standardmäßig zeigt die Versandliste die Titel und Status aller im ausgewählten Knoten erstellten Sendungen sowie die Anzahl der zu versendenden, der verarbeiteten und der erfolgreich zugestellten Nachrichten an.
+Standardmäßig enthält die Liste der Sendungen die Namen und Status der Sendungen, die im ausgewählten Knoten erstellt wurden. Außerdem wird die Anzahl der zu sendenden, verarbeiteten und erfolgreich gesendeten Nachrichten angezeigt.
 
 * Die Angabe **[!UICONTROL Zu sendende Nachrichten]** entspricht der Anzahl der Empfänger in der Zielgruppe, nach der Analyse aber vor Absendung.
 * In der Spalte **[!UICONTROL Erfolg]** wird die Anzahl der erfolgreich zugestellten Nachrichten angezeigt.
@@ -30,7 +31,7 @@ Standardmäßig zeigt die Versandliste die Titel und Status aller im ausgewählt
 
 >[!NOTE]
 >
->Bei umfangreichen Sendungen können Sie diese Werte aktualisieren. Markieren Sie hierzu den betreffenden Versand und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktion > Versand- und Berichtindikatoren neu berechnen]** aus und folgen Sie dem Assistenten, um diese Informationen zu aktualisieren.
+>Bei großen Sendungen können Sie diese Werte aktualisieren. Wählen Sie dazu den betreffenden Versand aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktion > Versand- und Berichtindikatoren neu berechnen]** aus und folgen Sie dem Assistenten, um diese Informationen zu aktualisieren.
 
 ## Versand-Dashboard - Übersicht {#delivery-dashboard-overview}
 
@@ -53,7 +54,7 @@ Die folgenden Informationen können Sie mit den verschiedenen Tabs im Dashboard 
 
 * [Ursachen für das Fehlschlagen von Sendungen](delivery-failures.md)
 * [Quarantäneverwaltung](quarantines.md)
-* [Best Practices beim Versand](../start/delivery-best-practices.md)
+* [Best Practices für den Versand](../start/delivery-best-practices.md)
 * [Verwalten der Zustellbarkeit](about-deliverability.md)
 
 ## Versandzusammenfassung {#delivery-summary}
@@ -70,7 +71,7 @@ Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden
 
 ## Versandlogs, -verlauf und -ausschlüsse {#delivery-logs-and-history}
 
-Der **[!UICONTROL Versand]**-Tab zeigt die Versandlogs, d. h. die Liste der Zustellversuche, und zeigt für jeden Empfänger den Status des Versands sowie die entsprechenden Nachrichten an.
+Die Registerkarte **[!UICONTROL Versand]** enthält einen Verlauf der Vorfälle in diesem Versand. Sie enthält die Versandlogs, d. h. die Liste der gesendeten Nachrichten und deren Status sowie die zugehörigen Nachrichten.
 
 Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Verschiedene Status werden auf der Seite [Versandstatus“ &#x200B;](delivery-statuses.md).
 
@@ -96,7 +97,7 @@ Auf der Registerkarte **[!UICONTROL Tracking]** wird der Tracking-Verlauf für d
 
 Die Tracking-Konfiguration erfolgt im entsprechenden Schritt im Versandassistenten. Siehe [Getrackte Links konfigurieren](tracking.md).
 
-Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandberichten. Weitere Informationen finden Sie [in diesem Abschnitt](../reporting/delivery-reports.md).
+Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandberichten. Siehe [diesen Abschnitt](../reporting/delivery-reports.md).
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
@@ -133,7 +134,7 @@ Manche Indikatoren oder Status können falsch oder nicht aktuell sein. Gehen Sie
 
 * Wenn Ihr Versandzähler nicht die Anzahl Ihrer Sendungen anzeigt, lassen Sie die Indikatoren neu berechnen, indem Sie mit der rechten Maustaste im Adobe Campaign-Explorer den entsprechenden Versand und danach **[!UICONTROL Aktionen]** > **[!UICONTROL Sende- und Berichtindikatoren neu berechnen...]** auswählen, um eine neue Synchronisation durchzuführen. Weiterführende Informationen zu Tracking-Indikatoren finden Sie in diesem [Abschnitt](../reporting/delivery-reports.md#tracking-indicators).
 
-Sie können Ihre Sendungen auch mithilfe unterschiedlicher Berichte über das Versand-Dashboard nachverfolgen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../reporting/delivery-reports.md).
+Sie können Ihre Sendungen auch mithilfe unterschiedlicher Berichte über das Versand-Dashboard nachverfolgen. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../reporting/delivery-reports.md).
 
 >[!NOTE]
 >
@@ -164,4 +165,3 @@ Systemprobleme können verhindern, dass Server Sendungen effizient verarbeiten. 
 >[!NOTE]
 >
 >Als Campaign v8 Managed Cloud Services-Anwender wird die Überwachung der Serverinfrastruktur von Adobe verwaltet. Wenn beim Versand des Versands anhaltende Leistungsprobleme auftreten, wenden Sie sich mit Ihren Versandlogs an die Adobe-Kundenunterstützung.
-

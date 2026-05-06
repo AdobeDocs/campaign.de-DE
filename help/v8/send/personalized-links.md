@@ -7,8 +7,8 @@ level: Beginner
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
 source-git-commit: 6e465ec24f72d0b30c4fc287da5d4c4bcaeda05b
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 50%
+source-wordcount: '642'
+ht-degree: 51%
 
 ---
 
@@ -37,7 +37,7 @@ Diese Anweisung ruft den Wert des Felds `myField` aus dem `myObject` ab.
 
 Zur Tracking-Erkennung bettet Adobe Campaign [Tidy](https://www.html-tidy.org/) ein, um die HTML-Quelle zu analysieren und das Muster zu erkennen. Es werden alle URLs des Inhalts aufgelistet, damit sie einzeln verfolgt werden können. Adobe Campaign verwendet wiederum Tidy, um die URL (`http://myurl.com`) durch eine URL zu ersetzen, die auf den Weiterleitungs-Server von Adobe Campaign verweist.
 
-Zum Beispiel wird im ursprünglichen Inhalt `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` für einen bestimmten Empfänger durch `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName` ersetzt. 
+Zum Beispiel wird im ursprünglichen Inhalt `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` für einen bestimmten Empfänger durch `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName` ersetzt.
 
 Wobei:
 

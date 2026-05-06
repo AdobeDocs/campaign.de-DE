@@ -7,7 +7,7 @@ level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '176'
 ht-degree: 92%
 
 ---
@@ -18,8 +18,8 @@ Verwenden Sie Adobe Campaign, um Textnachrichten an die Mobilgeräte Ihrer Kundi
 
 Um SMS mit Adobe Campaign an Mobilgeräte zu senden, benötigen Sie Folgendes:
 
-* Ein externes Konto, das für den Kanal **[!UICONTROL Mobiltelefon (SMS)]** konfiguriert wurde. Erfahren Sie, wie Sie den SMS-Kanal in Ihrer [Mid-Sourcing-Infrastruktur](sms-mid-sourcing.md) konfigurieren.  Für diese Konfiguration müssen Sie die [Parameter des externen SMPP-Kontos](smpp-external-account.md) und die [Merkmale des SMS-Kanals](sms-channel.md) kennen.
-Überprüfen Sie nach dieser Einrichtung Ihre SMPP-Verbindung und informieren Sie sich, wie Sie bei Bedarf Fehler beheben können.  [Weitere Informationen](smpp-connection.md).
+* Ein externes Konto, das für den Kanal **[!UICONTROL Mobiltelefon (SMS)]** konfiguriert wurde. Erfahren Sie, wie Sie den SMS-Kanal in Ihrer [Mid-Sourcing-Infrastruktur](sms-mid-sourcing.md) konfigurieren. Für diese Konfiguration müssen Sie die [Parameter des externen SMPP-Kontos](smpp-external-account.md) und die [Merkmale des SMS-Kanals](sms-channel.md) kennen.
+Überprüfen Sie nach dieser Einrichtung Ihre SMPP-Verbindung und informieren Sie sich, wie Sie bei Bedarf Fehler beheben können. [Weitere Informationen](smpp-connection.md).
 
 * Eine SMS-Versandvorlage, die korrekt mit diesem externen Konto verknüpft ist.
 

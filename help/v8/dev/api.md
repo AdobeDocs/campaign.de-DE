@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
 source-git-commit: 75e0069ccd4e23dbf64b9052fd81817e438b333e
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 80%
+source-wordcount: '320'
+ht-degree: 82%
 
 ---
 
@@ -48,11 +48,11 @@ Vor der Arbeit mit [!DNL Adobe Campaign]-APIs sollten Sie sich mit den folgenden
 Um APIs verwenden und mit [!DNL Adobe Campaign] interagieren zu können, müssen Sie auch mit Ihrem Datenmodell vertraut sein.
 
 >[!NOTE]
->Sie können eine vollständige Beschreibung Ihres Datenmodells erzeugen. Weiterführende Informationen finden Sie auf [dieser Seite](datamodel.md).
+>Sie können eine vollständige Beschreibung Ihres Datenmodells erzeugen. Weitere Informationen finden Sie auf [dieser Seite](datamodel.md).
 
 
 **Verwandte Themen**
 
 <!-- * [Query the database with queryDef](query-api.md)-->
 * [Best Practices für Datenmodelle](datamodel-best-practices.md)
-* [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}
+* [Campaign - JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de){target="_blank"}

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
 source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 100%
+source-wordcount: '889'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Sie können eine Liste mithilfe der Aktivität **Liste aktualisieren** in einem 
 
 In diesem Video erfahren Sie mehr über die Verwaltung von Listen in Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426457?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3426457?captions=ger&quality=12)
 
 
 ## Erstellen einer Liste von Kontakten {#create-a-list-of-contacts}
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um eine Liste von Kontakten zu erstellen:
 
    Sie können ein neues Profil erstellen und es direkt aus diesem Fenster in die Liste einfügen, indem Sie das Symbol **[!UICONTROL Erstellen]** verwenden. Das Profil wird der Datenbank hinzugefügt.
 
-1. Verwenden Sie die Schaltfläche **[!UICONTROL Speichern]**. Die Liste ist nunmehr über die Listenübersicht zugänglich.
+1. Klicken Sie **[!UICONTROL Speichern]**, um die Liste zu speichern. Sie wird dann der Listenübersicht hinzugefügt.
 
 
 ## Konvertieren gefilterter Kontakte in Listen {#convert-data-to-a-list}
@@ -77,7 +77,7 @@ Sie können Profile auswählen und sie zu einer Liste hinzufügen. Gehen Sie daz
 
 Wählen Sie die Option **[!UICONTROL Liste neu erstellen]** aus, um die existierenden Inhalte aus der Liste zu löschen und die Listenerstellung zu optimieren (es ist keine Abfrage erforderlich, um zu überprüfen, ob die Profile bereits mit der Liste verknüpft sind).
 
-Wenn Sie die Option **[!UICONTROL Vorgang nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Vorgang betreffenden Protokollnachrichten gespeichert werden.
+Wenn Sie die Option **[!UICONTROL Auftrag nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Auftrag betreffenden Protokollnachrichten gespeichert werden.
 
 Im oberen Bereich des Fensters können Sie die Ausführung überwachen. Mit der Schaltfläche **[!UICONTROL Anhalten]** können Sie den Vorgang stoppen. Bereits verarbeitete Kontakte werden mit der Liste verknüpft.
 
@@ -114,7 +114,7 @@ Im folgenden Beispiel wird eine Liste aller Empfänger zwischen 25 und 40 erstel
 1. Wählen Sie die Option **[!UICONTROL Wenn nötig Liste erstellen (Titel berechnet)]**, damit die Liste beim ersten Ausführen des Workflows erstellt und bei späteren Ausführungen aktualisiert wird.
 1. Wählen Sie einen Ordner aus und geben Sie einen Titel für die Liste ein.
 1. Wählen Sie die **[!UICONTROL Datenbank der Zielgruppendimension]** aus, um die Tabelle zu speichern.
-1. Lassen Sie die Option **[!UICONTROL Wenn sie existiert, Liste leeren (andernfalls zur Liste hinzufügen)]** aktiv, damit die Empfänger, die nicht den Zielgruppenkriterien entsprechen, gelöscht und die neuen Empfänger eingefügt werden.
+1. Lassen Sie die Option **[!UICONTROL Wenn sie existiert, Liste leeren (andernfalls zur Liste hinzufügen)]** aktiv, damit die Empfänger, die nicht den Targeting-Kriterien entsprechen, gelöscht und die neuen Empfänger eingefügt werden.
 1. Lassen Sie die Option **[!UICONTROL Liste mit eigener Tabelle erstellen oder verwenden]** ebenfalls aktiv.
 1. Lassen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** deaktiviert.
 1. Klicken Sie auf **[!UICONTROL Ok]** und speichern Sie den Workflow.

@@ -7,8 +7,8 @@ description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
 source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 86%
+source-wordcount: '893'
+ht-degree: 87%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 86%
          + {hide-from-toc}[Eigenständige Instanz](send/sms/sms-standalone-instance.md)
          + [Mid-Sourcing-Infrastruktur](send/sms/sms-mid-sourcing.md)
          + [Beschreibung des SMPP-Connectors](send/sms/smpp-connector-delivery.md)
-   + Push-Benachrichtigungen  {#push}
+   + Push-Benachrichtigungen {#push}
       + [Erstellen und Versenden von Push-Benachrichtigungen](send/push.md)
       + Rich-Push {#rich-push}
          + [Entwerfen eines Rich-Push-Versands für Android](send/rich-push-android.md)
@@ -199,7 +199,7 @@ ht-degree: 86%
       + [Filterbedingungen definieren](start/filter-conditions.md)
    + [Datenimport](start/import.md)
    + [Workflow-Dokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
-+ Integrationen  {#connect}
++ Integrationen {#connect}
    + [Campaign mit anderen Lösungen verbinden](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}
       + [Freigeben und Synchronisieren von Zielgruppen und Profilattributen](connect/ac-aep.md)
@@ -212,7 +212,7 @@ ht-degree: 86%
    + [Campaign + Workfront](connect/ac-workfront.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + externe Datenbank](connect/fda.md)
-   + Campaign + Ihr CRM-System   {#ac-crm}
+   + Campaign + Ihr CRM-System {#ac-crm}
       + [Erste Schritte mit CRM-Connectoren](connect/crm.md)
       + [Arbeiten mit Campaign und SFDC](connect/ac-sfdc.md)
       + [Arbeiten mit Campaign und Microsoft Dynamics](connect/ac-ms-dyn.md)
@@ -232,7 +232,7 @@ ht-degree: 86%
       + [Implementierungsschritte](start/implement.md)
       + [Anpassen der Instanz](dev/customize.md)
       + [Best Practices für Datenmodelle](dev/datamodel-best-practices.md)
-   + Einstellungen        {#settings}
+   + Einstellungen {#settings}
       + [Einstellungen der Benutzeroberfläche](config/ui-settings.md)
       + [Verwalten von Ordnern und Ansichten](audiences/folders-and-views.md)
       + [Arbeiten mit Aufzählungen](config/enumerations.md)
@@ -254,7 +254,7 @@ ht-degree: 86%
       + [Verwenden einer benutzerdefinierten Empfängertabelle](dev/custom-recipient.md)
       + [Aktualisieren der Datenbank](dev/update-database-structure.md)
       + [Eingabeformulare](dev/forms.md)
-   + [Daten-Packages &#x200B;](dev/packages.md)
+   + [Daten-Packages](dev/packages.md)
    + [Campaign-APIs](dev/api.md)
    + {hide-from-toc}[Datenbank mit queryDef abfragen](dev/query-api.md)
    + REST APIs {#apis}
@@ -285,5 +285,5 @@ ht-degree: 86%
          + [Auslösen einer Signalaktivität](dev/api/triggering-a-signal-activity.md)
 + Zusätzliche Ressourcen {#resources}
    + [Technische Hinweise zu Campaign >](https://experienceleague.adobe.com/de/docs/campaign/technotes-ac/technotes-home)
-   + [Dokumentation zur Web-Benutzeroberfläche von Campaign >](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home)
+   + [Dokumentation zur Campaign-Web-Benutzeroberfläche >](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home)
 

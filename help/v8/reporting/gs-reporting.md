@@ -7,8 +7,8 @@ level: Beginner
 exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 85%
+source-wordcount: '411'
+ht-degree: 64%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
   ![](assets/create-a-report.png)
 
-  Je nach Komplexität der Abfragen und Berechnungen sowie der bewegten Datenmenge werden die in den Berichten zu analysierenden Daten über eine Abfrage gesammelt und in einer Liste (Workflow vom Typ „Daten-Management“) oder einem Cube (unter Verwendung der Option „Marketing-Analyse“) voraggregiert. Sie werden in Form einer Pivot-Tabelle oder einer Liste mit Gruppierung angezeigt.
+  Je nach Komplexität der Abfragen, Berechnungen und Volumina können die in diesen Berichten analysierten Daten über eine Abfrage gesammelt und in einer Liste (Workflow vom Typ „Daten-Management„) oder in einem Cube (unter Verwendung der Option „Marketing-Analyse„) voraggregiert werden. Sie wird in Form einer Pivot-Tabelle oder einer Gruppenliste angezeigt.
 
   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md).
 
@@ -44,7 +44,7 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
 * **Deskriptive Datenanalyse**
 
-  Adobe Campaign bietet ein visuelles Tool zur Erstellung von Statistiken zu den Daten in der Datenbank. Diese ermöglichen die Erstellung deskriptiver Analysen anhand eines speziellen Assistenten, deren Inhalt und Layout Sie nach Bedarf anpassen können.
+  Adobe Campaign bietet ein visuelles Tool zur Erstellung von Statistiken zu den Daten in der Datenbank. Mit einem speziellen Assistenten können Sie anschauliche Analyseberichte erstellen und deren Inhalt und Layout an Ihre Bedürfnisse anpassen.
 
   Verwenden Sie das Menü **[!UICONTROL Tools > Deskriptive Analyse...]**, um einen neuen Bericht zu erstellen.
 

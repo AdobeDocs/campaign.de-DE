@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '280'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Konfigurieren Sie die Versandvorlage.
 
-Die im Konfigurationsprozess dieser Aktivität zur Verfügung stehenden Optionen entsprechen denen einer Versandvorlage.
+Die zur Konfiguration dieser Aktivität verfügbaren Optionen entsprechen denen einer Versandvorlage.
 
 Ein Anwendungsbeispiel für diese Aktivität finden Sie in diesem [Abschnitt](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 

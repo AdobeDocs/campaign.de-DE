@@ -5,7 +5,7 @@ feature: Release Notes
 exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '3477'
+source-wordcount: '3613'
 ht-degree: 33%
 
 ---
@@ -35,7 +35,7 @@ _9. Okt. 2025_
 
 >[!AVAILABILITY]
 >
->Diese Version ist nur **eingeschränkt verfügbar**. 
+>Diese Version ist nur **eingeschränkt verfügbar**.
 
 ### Neue Funktionen {#features-8-8-2}
 
@@ -142,7 +142,7 @@ ACC - Dynamic Reporting - As a Campaign Standard migrated user, you can access D
   >
   >Diese Funktion ist **nicht** für [Campaign FFDA-Bereitstellungen](../architecture/enterprise-deployment.md) verfügbar.
 
-* **Liste mit einem Klick - Abmelden** - Bei wichtigen ISPs, bei denen Absender verlangen, dass Empfänger sich mit einem einzigen Klick sofort abmelden können, können Sie jetzt die Kopfzeile „Liste mit einem Klick - Abmelden“ in der Benutzeroberfläche direkt in der E-Mail-Vorlage oder in den Versandeigenschaften aktivieren. Diese Option ist standardmäßig aktiviert. [Weitere Informationen](../send/email-parameters.md#one-click-list-unsubscribe)
+* **Liste mit einem Klick - Abmelden** - Bei wichtigen ISPs, bei denen Absender verlangen, dass Empfänger sich mit einem einzigen Klick sofort abmelden können, können Sie jetzt die Kopfzeile „Liste mit einem Klick - Abmelden“ in der Benutzeroberfläche direkt in der E-Mail-Vorlage oder in den Versandeigenschaften aktivieren. Standardmäßig ist diese Option aktiviert. [Weitere Informationen](../send/email-parameters.md#one-click-list-unsubscribe)
 
 <!--
 ACC - Rest APIs - As a Campaign Standard migrated user, you can use Rest APIs to create integrations for Adobe Campaign and build your own ecosystem by interfacing Adobe Campaign with the panel of technologies that you use. Read more
@@ -154,7 +154,7 @@ ACC * **Transactional messaging REST APIs** - Event-based Transactional APIs are
 Zusätzlich zu den oben aufgeführten Funktionen bietet diese Version auch eine Reihe von Funktionen, die in der Web-Benutzeroberfläche von Campaign verfügbar sind:
 
 * [Erstellung eines mehrsprachigen Versands](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/edit-content.html?lang=de#multilingual-delivery){target="_blank"}
-* [Versandwarnungen](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/delivery-alerting/delivery-alerting.html?lang=de){target="_blank"}
+* [Versandwarnung](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/delivery-alerting/delivery-alerting.html?lang=de){target="_blank"}
 * [Verbesserungen bei Landingpages](https://experienceleague.adobe.com/docs/campaign-web/v8/landing-pages/get-started-lp.html?lang=de){target="_blank"}
 * [Dynamisches Reporting](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=de){target="_blank"} (bei Bedarf)
 * [Zentrales Branding](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=de){target="_blank"} (bei Bedarf, neue Implementierungen)
@@ -275,7 +275,7 @@ _Samstag, 25. April 2025_
 
 >[!AVAILABILITY]
 >
->Diese Version ist nur **eingeschränkt verfügbar**. 
+>Diese Version ist nur **eingeschränkt verfügbar**.
 
 ### Neue Funktionen {#features-8-6-5}
 
@@ -307,7 +307,7 @@ _Freitag, 10. April 2025_
 
 ### Neue Funktionen {#features-8-7-4}
 
-* **SMS REST API-Unterstützung**: Das REST-API für Transaktionsnachrichten ist nun für den SMS-Kanal verfügbar. Wenn sowohl „email“ als auch „mobilePhone“ in der Payload vorhanden sind, können Sie den Kanal über das Feld „wishedChannel“ angeben. Ohne Angabe wird standardmäßig „email“ verwendet, es sei denn, „wishedChannel“ fordert explizit SMS. 
+* **SMS REST API-Unterstützung**: Das REST-API für Transaktionsnachrichten ist nun für den SMS-Kanal verfügbar. Wenn sowohl „email“ als auch „mobilePhone“ in der Payload vorhanden sind, können Sie den Kanal über das Feld „wishedChannel“ angeben. Ohne Angabe wird standardmäßig „email“ verwendet, es sei denn, „wishedChannel“ fordert explizit SMS an.
 
 * **Mehrsprachige Sendungen**: Seit der Version der Campaign Web-Benutzeroberfläche vom April können Sie mehrere E-Mail-Sendungen in verschiedenen Sprachen senden und auf die zugehörigen dynamischen Berichte zugreifen. Diese Funktion wird erst ab Ende April in der Adobe Campaign Web-Benutzeroberfläche verfügbar sein und erfordert ein Server-Update auf Campaign v8.7.4.
 
@@ -366,7 +366,7 @@ Die Verbindung mit Adobe-Lösungen und -Anwendungen über das externe **[!UICONT
 
 Die folgenden FDA-Connectoren wurden hinzugefügt: Mehr dazu erfahren Sie auf [dieser Seite](compatibility-matrix.md#FederatedDataAccessFDA).
 
-* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. 
+* Databricks wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt.
 
 * Ein neuer Amazon Redshift FDA ODBC-Connector ist jetzt verfügbar. Er bietet verbesserte Konnektivität, einfachere Wartung und optimierte Kompatibilität. Diese neue Version bietet die folgenden Verbesserungen:
 

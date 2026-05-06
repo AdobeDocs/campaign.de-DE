@@ -7,8 +7,8 @@ level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: fce4f85386c18d0919a85e938d3c1f2cca8d79b9
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 43%
+source-wordcount: '2243'
+ht-degree: 40%
 
 ---
 
@@ -39,7 +39,7 @@ Die folgenden technischen Konten werden von Adobe Campaign verwendet, um bestimm
 
 >[!NOTE]
 >
->Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3-Funktionen ist ab Campaign v8.3 verfügbar. Informationen zu Ihrer Version finden Sie in [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+>Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3-Funktionen ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 >
 
 Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.

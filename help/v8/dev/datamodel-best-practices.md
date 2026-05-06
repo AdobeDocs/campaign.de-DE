@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '2745'
-ht-degree: 100%
+source-wordcount: '2782'
+ht-degree: 99%
 
 ---
 
@@ -89,7 +89,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 | Kennung | Beschreibung | Best Practices |
 |--- |--- |--- |
 | ID | <ul><li>Die ID ist der physische Primärschlüssel einer Adobe Campaign-Tabelle. Bei integrierten Tabellen handelt es sich um eine Universally Unique ID (UUID).</li><li>Diese Kennung muss eindeutig sein. </li><li>Eine UUID kann in einer Schemadefinition sichtbar sein.</li></ul> | <ul><li>Automatisch erstellte Kennungen sollten nicht als Referenz in einem Workflow oder in einer Package-Definition verwendet werden.</li><li>Die ID in einer Tabelle ist eine UUID. Dieser Typ sollte nicht geändert werden.</li></ul> |
-| Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Ändern Sie den von Adobe Campaign erstellten Namen, wenn Sie das Objekt von einer Umgebung aus in einer anderen bereitstellen möchten.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Bestimmte reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk* usw.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces).</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen „ “, Doppelpunkt „:“ oder Bindestrich „-“. Alle diese Zeichen würden durch einen Unterstrich „_“ (zulässiges Zeichen) ersetzt werden. Beispielsweise würden „abc-def“ und „abc:def“ als „abc_def“ gespeichert werden und sich gegenseitig überschreiben.</li></ul> |
+| Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Ändern Sie den von Adobe Campaign erstellten Namen, wenn Sie das Objekt von einer Umgebung aus in einer anderen bereitstellen möchten.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Bestimmte reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk* usw.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces).</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen „ “, Doppelpunkt „:“ oder Bindestrich „-“. Alle diese Zeichen würden durch einen Unterstrich „_“ (zulässiges Zeichen) ersetzt werden. Beispielsweise würden „abc-def“ und „abc:def&quot; als „abc_def“ gespeichert und einander überschreiben.</li></ul> |
 | Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
 Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist der Primärschlüssel von Adobe Campaign eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden. [Weitere Informationen](../architecture/keys.md)
@@ -103,7 +103,7 @@ Für jede in Adobe Campaign erstellte Tabelle sind Primärschlüssel erforderlic
 
 Die meisten Unternehmen importieren Datensätze aus externen Systemen. Während der physische Schlüssel der Empfängertabelle das &quot;id&quot;-Attribut ist, kann zusätzlich ein benutzerdefinierter Schlüssel festgelegt werden.
 
-Dieser benutzerdefinierte Schlüssel ist der eigentliche Hauptschlüssel des Datensatzes im externen System, das Daten für Adobe Campaign bereitstellt.
+Dieser benutzerdefinierte Schlüssel ist der eigentliche Primärschlüssel des Datensatzes im externen System, das Daten für Adobe Campaign bereitstellt.
 
 Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur Verfügung:
 * Kombination aus einem automatisch erstellten Schlüssel (ID) und einem internen Schlüssel (benutzerdefiniert). Diese Option ist interessant, wenn Ihr Systemschlüssel ein zusammengesetzter Schlüssel oder keine Ganzzahl ist. Mit Snowflake ermöglichen ganze Zahlen oder zeichenfolgenbasierte Schlüssel höhere Leistungen in großen Tabellen sowie in Verbindung mit anderen Tabellen.
@@ -189,7 +189,7 @@ Befolgen Sie die nachstehenden Best Practices, um eine bessere Performance siche
 * Wenn einer oder mehrere der täglichen Prozesse fehlschlagen und sie am selben Tag noch ausgeführt werden müssen, stellen Sie sicher, dass beim Starten des manuellen Prozesses keine Konflikte auftreten, da dies die System-Performance beeinträchtigen könnte.
 * Stellen Sie sicher, dass keine der täglichen Kampagnen während des Importvorgangs oder bei der Ausführung eines manuellen Prozesses ausgeführt wird.
 * Verwenden Sie eine oder mehrere Referenztabellen, anstatt ein Feld in jeder Zeile zu duplizieren. Bei Verwendung von Schlüssel/Wert-Paaren ist es empfehlenswert, einen numerischen Schlüssel zu wählen.
-* Eine kurze Zeichenfolge ist weiterhin zulässig. Falls Referenztabellen bereits in einem externen System vorhanden sind, erleichtert die Wiederverwendung derselben die Datenintegration mit Adobe Campaign.
+* Eine kurze Zeichenfolge ist weiterhin zulässig. Falls Verweistabellen bereits in einem externen System vorhanden sind, erleichtert die Wiederverwendung derselben die Datenintegration mit Adobe Campaign.
 
 ### 1-zu-n-Beziehungen {#one-to-many-relationships}
 

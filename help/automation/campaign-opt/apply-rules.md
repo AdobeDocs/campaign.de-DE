@@ -6,8 +6,8 @@ feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 96%
+source-wordcount: '1031'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,7 @@ Verwenden Sie dann den [Abfrage-Editor](../../v8/start/query-editor.md), um Filt
 
 ## Anpassen der Berechnungsfrequenz {#adjust-calculation-frequency}
 
-Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Workflow neu ausgeführt. Die Werte können jedoch über diesen Zeitraum hinaus gespeichert werden.
+Schlichtungen werden jede Nacht automatisch über den Datenbankbereinigungs-Workflow erneut ausgeführt. Werte können jedoch über diesen Zeitraum hinaus gespeichert werden.
 
 Einige Berechnungen verwenden nämlich Werte, die sich nicht täglich ändern. Es wäre daher überflüssig, die Daten täglich neu zu berechnen und die Datenbank unnötig zu überlasten. Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit der Tendenzauswertung und Kaufinformationen der Kundschaft anreichert, müssen die auf diesen Werten basierenden Daten nicht täglich neu berechnet werden.
 
@@ -115,7 +115,7 @@ Mögliche Werte:
 
 * **[!UICONTROL Zu Beginn der Personalisierung]**
 
-  Diese Phase wird ausgewählt, wenn die Kontrolle die Validierung der Nachrichtenpersonalisierung betrifft. Die Nachrichtenpersonalisierung wird während der Analysephase durchgeführt.
+  Diese Phase muss ausgewählt werden, wenn die Steuerung die Validierung der Nachrichtenpersonalisierung betrifft. Die Nachrichtenpersonalisierung erfolgt während der Analysephase.
 
 * **[!UICONTROL Am Ende der Analyse]**
 
@@ -125,7 +125,7 @@ Mögliche Werte:
 
 ### Ausgehenden SMTP-Traffic steuern {#control-outgoing-smtp-traffic}
 
-Über das Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** besteht die Möglichkeit, Sendungen mit dem Versandserver (MTA) zu verbinden, der die betreffende Affinität verwaltet. Auf diese Weise lässt sich die Zustellung der E-Mails für eine Auswahl von Sendungen auf bestimmte Systeme oder IP-Adressen begrenzen.
+Als Option können Sie das Feld **[!UICONTROL Verwalten von IP-Adressen]** verwenden, um Sendungen mit dem Versand-Server (MTA) in dieser Affinität zu verknüpfen. Damit können Sie die Zustellung von E-Mails auf bestimmte Geräte oder IP-Adressen begrenzen.
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 
@@ -139,7 +139,7 @@ Mögliche Werte:
 
 ### Kampagnenoptimierung und dezentrales Marketing {#campaign-optimization-and-distributed-marketing}
 
-Im Tab **[!UICONTROL Dezentrales Marketing]** erfolgt das erneute Mapping der Typologie, die bei der Bestellung einer partizipativen Kampagne angewendet wird. Die an dieser Stelle für eine Lokalstelle festgelegten Typologien/Regeln ersetzen die von der Zentralstelle definierten Typologien/Regeln. Das erneute Mapping ermöglicht die Anpassung der Regeln der Zentralstelle an die der Lokalstellen, die die Kampagne bestellt haben.
+Auf **[!UICONTROL Registerkarte]** Verteiltes Marketing“ können Sie die Neuzuordnung von Typologien und/oder Regeln definieren, die bei der Bestellung und/oder Reservierung einer freigegebenen Kampagne angewendet werden. Typologien/Regeln, die für eine Lokalstelle definiert wurden (und mit denen verknüpft sind, die für die Zentralstelle definiert wurden), ersetzen Regeln/Typologien, die mit der Zentralstelle verknüpft sind. Durch die Neuzuordnung können Sie die Regeln der zentralen Entitäten an die Lokalstellen anpassen, die die Kampagne bestellen.
 
 ![](assets/simu_campaign_opti_distrib_mkg.png)
 

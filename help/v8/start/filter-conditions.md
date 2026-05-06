@@ -5,17 +5,17 @@ feature: Query Editor
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 3a521f7006ca833af96f1ef5d5b369c2c0568635
+exl-id: 18e49a15-dbb5-42d6-9379-367e769f319a
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '3491'
-ht-degree: 99%
+source-wordcount: '3512'
+ht-degree: 90%
 
 ---
 
-
 # Filterbedingungen definieren{#filter-conditions}
 
-Um Ihre Abfrage zu entwerfen, müssen Sie die Filterbedingungen im Abfrage-Editor auswählen. Die verfügbaren Funktionen und Anwendungsfälle werden auf dieser Seite beschrieben.
+Zur Erstellung Ihrer Abfrage müssen Sie die Filterbedingungen im Abfragetool auswählen. Die verfügbaren Funktionen und Anwendungsfälle werden auf dieser Seite beschrieben.
 
 ## Operator auswählen {#choose-operator}
 
@@ -82,7 +82,7 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
   <tr> 
    <td> <span class="uicontrol">Enthält nicht</span> <br /> </td> 
    <td> Die ausgegebenen Daten enthalten den angegebenen Wert nicht.<br /> </td> 
-   <td> <strong>E-Mail-Domain (@domain) enthält nicht 'vo'</strong>. In diesem Fall werden Domain-Namen, die „vo“ enthalten, nicht zurückgegeben. Die Domain 'voila.fr' wird nicht in den Ergebnissen erscheinen.<br /> </td> 
+   <td> <strong>E-Mail-Domain (@domain) enthält nicht „vo“</strong>. In diesem Fall werden Domain-Namen, die „vo“ enthalten, nicht zurückgegeben. Die Domain 'voila.fr' wird nicht in den Ergebnissen erscheinen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ist wie</span> <br /> </td> 
@@ -91,7 +91,7 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ist nicht wie</span> <br /> </td> 
-   <td> Ist wie <span class="uicontrol">Like</span>. Hier dürfen die ausgegebenen Daten nicht dem angegebenen Wert ähneln. Auch in diesem Fall ist der Platzhalter <span class="uicontrol">%</span> zu verwenden.<br /> </td> 
+   <td> Ähnelt "<span class="uicontrol">Like</span> . Ermöglicht es nicht, den eingegebenen Wert wiederherzustellen. Auch in diesem Fall ist der Platzhalter <span class="uicontrol">%</span> zu verwenden.<br /> </td> 
    <td> <strong>Nachname (@lastName) ist nicht wie 'Schmi%t'</strong>. Hier werden die Empfängerinnen und Empfänger, deren Nachname „Schmi%t“ lautet, also etwa „Schmidt“ oder „Schmitt“, nicht zurückgegeben.<br /> </td> 
   </tr> 
   <tr> 
@@ -119,7 +119,7 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
 
 ## UND, ODER, AUSSER verwenden {#using-and--or--except}
 
-In Abfragen, die mehr als eine Bedingung enthalten, müssen die Bedingungen miteinander verknüpft werden. Mögliche Verknüpfungen sind:
+Für Abfragen mit mehreren Filterbedingungen müssen Sie Verknüpfungen zwischen den Bedingungen definieren. Es gibt drei mögliche Verknüpfungen:
 
 * **[!UICONTROL Und]** - beide Filterbedingungen müssen erfüllt werden;
 * **[!UICONTROL Oder]** - mindestens eine der Filterbedingungen muss erfüllt werden;
@@ -163,7 +163,7 @@ Platzieren Sie den Cursor auf der Filterbedingung **[!UICONTROL Geschlecht (@gen
 
 ![](assets/query_editor_nveau_32.png)
 
-Die Bedingung **[!UICONTROL Geschlecht (@gender) gleich Männlich]** wurde aus der Klammer entfernt. Sie befindet sich nun auf der gleichen Ebene wie die Bedingung „Ort gleich Hamburg“. Die entsprechenden Bedingungen sind jetzt durch **[!UICONTROL Und]** verknüpft.
+Die Bedingung **[!UICONTROL Geschlecht (@gender) ist gleich Mann]** wurde aus ihrer Klammer entfernt. Es hat sich auf die gleiche Ebene wie die „Stadt gleich London“ Bedingung. Die entsprechenden Bedingungen sind jetzt durch **[!UICONTROL Und]** verknüpft.
 
 ## Zu extrahierende Daten auswählen {#selecting-data-to-extract}
 
@@ -207,7 +207,7 @@ Feld-Kategorien:
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> Primärschlüssel. Dieses SQL-Feld dient der eindeutigen Identifikation eines Datensatzes.<br /> </td> 
+   <td> Primärschlüssel. Dieses SQL-Feld dient der eindeutigen Identifikation eines Eintrags in einer Tabelle.<br /> </td> 
    <td> Eine Benutzerkennung - von Natur aus "eindeutig" - ist ein Primärschlüssel.<br /> </td> 
   </tr> 
   <tr> 
@@ -246,12 +246,12 @@ Relationen zu einer Tabelle oder zu Sammlungselementen:
  <tbody> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_51.png" /> </td> 
-   <td> 1:1-Relationen zu einer bestimmten Tabelle. Einem Datensatz in der Quelltabelle entspricht höchstens ein Datensatz in der Zieltabelle. Eine Empfängerin bzw. ein Empfänger kann beispielsweise höchstens einem Land zugeordnet werden.<br /> </td> 
+   <td> Relationen zu einer bestimmten Tabelle. Diese fallen mit 1-1-Typenassoziationen zusammen. Ein Vorkommen der Quelltabelle kann nur mit einem Vorkommen der Zieltabelle übereinstimmen. Eine Empfängerin bzw. ein Empfänger kann beispielsweise höchstens einem Land zugeordnet werden.<br /> </td> 
    <td> Ordner, Zustand, Land usw. <br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
-   <td> Sammlungselemente bezogen auf eine bestimmte Tabelle. Es handelt sich um 1:N-Relationen. Einem Datensatz in der Quelltabelle können mehrere Datensätze in der Zieltabelle entsprechen, aber ein Datensatz der Zieltabelle entspricht genau einem Datensatz in der Quelltabelle. Ein Empfänger kann z. B. für 'n' Newsletter angemeldet sein.<br /> </td> 
+   <td> Sammlungselement einer bestimmten Tabelle. Diese entsprechen 1-N-Verknüpfungen. Eine Quelltabellenentität kann mit mehreren Vorkommen der Zieltabelle übereinstimmen, aber eine Vorkommnis der Zieltabelle kann nur mit einer Vorkommnis der Quelltabelle übereinstimmen. Ein Empfänger kann z. B. für 'n' Newsletter angemeldet sein.<br /> </td> 
    <td> Abonnements, Listen, Ausschlusslogs usw.<br /> </td> 
   </tr> 
  </tbody> 
@@ -266,7 +266,7 @@ Relationen zu einer Tabelle oder zu Sammlungselementen:
 
 ## Berechnete Felder erstellen {#creating-calculated-fields}
 
-Sie haben die Möglichkeit, im Schritt der Datenformatierung ein berechnetes Feld hinzuzufügen. Dieses wird bei der Datenvorschau in Form einer zusätzlichen Spalte angezeigt. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**.
+Fügen Sie bei Bedarf während der Datenformatierung eine Spalte hinzu. Ein berechnetes Feld fügt eine Spalte zum Datenvorschauabschnitt hinzu. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**.
 
 ![](assets/query_editor_nveau_43.png)
 
@@ -280,13 +280,13 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
   ![](assets/query_editor_nveau_61.png)
 
-* **[!UICONTROL JavaScript-Ausdruck]**: Der Wert des berechneten Felds ist das Ergebnis der Auswertung einer JavaScript-Funktion. Der ausgegebene Wert kann einen bestimmten Typ aufweisen (Ziffer, Datum usw.).
+* **[!UICONTROL JavaScript-]**: Der Wert des berechneten Felds ist das Ergebnis einer JavaScript-Funktionsauswertung. Der zurückgegebene Wert kann eingegeben werden (Zahl, Datum usw.).
 
   ![](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Aufzählungen]**: Dieser Feldtyp erlaubt die Verwendung/Umwandlung des Inhalts einer anderen Spalte.
 
-  Dem Quellwert einer Spalte kann ein Zielwert zugeordnet werden. Es ist der Zielwert, der in der neuen Ausgabespalte angezeigt wird.
+  Es ist möglich, den Quellwert einer Spalte zu verwenden und ihr einen Zielwert zu geben. Dieser Zielwert wird in der neuen Ausgabespalte angezeigt.
 
   Ein Beispiel zu berechneten **[!UICONTROL Aufzählungsfeldern]** können Sie [diesem Abschnitt](../../automation/workflow/adding-enumeration-type-calculated-field.md) entnehmen.
 
@@ -330,7 +330,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
 ![](assets/query_editor_nveau_05.png)
 
 1. **[!UICONTROL Einfaches Feld]**: führt zurück zum Fenster **[!UICONTROL Feldauswahl]**.
-1. **[!UICONTROL Aggregat (Aggregatfunktionen)]**. Nachfolgend einige Beispiele zur Verwendung von Aggregaten:
+1. **[!UICONTROL Aggregat (Prozess für eine Aggregatfunktion)]**. Im Folgenden finden Sie einige Beispiele für die Verwendung von Aggregaten:
 
    * **[!UICONTROL Zählung]**: ermöglicht die Zählung eines Primärschlüssels.
    * **[!UICONTROL Summe]**: berechnet beispielsweise die Gesamtheit aller Käufe eines Kunden.
@@ -338,9 +338,9 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
    * **[!UICONTROL Minimaler Wert]**: gibt beispielsweise die Kunden aus, die zuletzt ein Angebot angenommen haben.
    * **[!UICONTROL Durchschnitt]**. Mit dieser Funktion können Sie das durchschnittliche Alter der Empfänger und Empfängerinnen berechnen.
 
-     Das Feld **[!UICONTROL Unterschiedlich]** gibt die eindeutige Werte aus, die ungleich Null sind. Auf diese Weise lassen sich z. B. alle Trackinglogs für einen Empfänger abfragen und auf 1 setzen, da es sich um nur einen Empfänger handelt.
+     Mit **[!UICONTROL Feld &quot;]**&quot; können Sie eindeutige Werte und Werte, die nicht gleich null sind, einer Spalte wiederherstellen. Sie können beispielsweise alle Trackinglogs eines Empfängers abrufen. Diese Trackinglogs werden in den Wert „1“ geändert, da sie alle denselben Empfänger betreffen.
 
-1. **[!UICONTROL Ausdruck]**: öffnet das Fenster **[!UICONTROL Ausdruck bearbeiten]**. Ein Ausdruck kann beispielsweise Postleitzahlen mit mehr als 4 bzw. 5 Ziffern filtern, um eventuelle Eingabefehler zu korrigieren.
+1. **[!UICONTROL Ausdruck]** öffnet das Fenster **[!UICONTROL Ausdruck]**. Auf diese Weise können Sie Telefonnummern mit zu vielen Zahlen erkennen, bei denen es sich wahrscheinlich um Eingabefehler handelt.
 
    ![](assets/query_editor_nveau_71.png)
 
@@ -354,7 +354,7 @@ Der Ausdruckseditor gestaltet sich wie folgt:
 
 ![](assets/filter-define-expression.png)
 
-Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgenden fortgeschrittenen Funktionen:
+Damit können Sie Felder in den Datenbanktabellen auswählen und ihnen erweiterte Funktionen hinzufügen. Folgende Funktionen stehen zur Verfügung:
 
 **Aggregate**
 
@@ -1015,7 +1015,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>PartitionBy</strong><br /> </td> 
-   <td> Partitioniert das Ergebnis einer Abfrage<br /> </td> 
+   <td> Partitioniert das Ergebnis einer Abfrage in einer Tabelle<br /> </td> 
    <td> PartitionBy(&lt;Wert 1&gt;)<br /> </td>  
   </tr> 
   <tr> 

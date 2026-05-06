@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Manage
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
 source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1469'
 ht-degree: 86%
 
 ---
@@ -19,7 +19,7 @@ In diesem Artikel werden die Schritte beschrieben, die zum Migrieren einer techn
 
 ## Was hat sich geändert?{#move-to-ims-changes}
 
-Mit Campaign v8 sollten sich alle regulären Anwenderinnen und Anwender bereits mit ihrer Adobe ID über das Adobe Identity Management System (IMS) mit der Adobe Campaign Client-Konsole verbinden.  Bei einigen älteren Konfigurationen waren jedoch noch Verbindungen mit Benutzername/Kennwort verfügbar. **Dies ist ab Campaign v8.6 nicht mehr zulässig.**
+Mit Campaign v8 sollten sich alle regulären Anwenderinnen und Anwender bereits mit ihrer Adobe ID über das Adobe Identity Management System (IMS) mit der Adobe Campaign Client-Konsole verbinden. Bei einigen älteren Konfigurationen waren jedoch noch Verbindungen mit Benutzername/Kennwort verfügbar. **Dies ist ab Campaign v8.6 nicht mehr zulässig.**
 
 Darüber hinaus ruft die Adobe Campaign-Client-Anwendung zur Verbesserung der Sicherheit und des Authentifizierungsprozesses die Campaign-APIs jetzt direkt über das technische IMS-Konto-Token auf. Die Migration für technische Benutzende wird in einem speziellen Artikel beschrieben, der auf [dieser Seite](ims-migration.md) zu finden ist.
 
@@ -35,7 +35,7 @@ Die Migration auf das [Adobe Identity Management System (IMS](https://helpx.adob
 >
 >**Auswirkungen auf den Control Panel-Zugriff**
 >
->Wenn Sie Ihre Benutzerinnen und Benutzer zu IMS migriert haben, beachten Sie, dass jedes Produktprofil in der Adobe Admin Console, das das Wort „admin“ im Namen enthält (z. B. „Administratoren“, „Admin“, „Admins“, „Genehmigungsadmin“ usw.) automatisch Zugriff auf das Campaign Control Panel gewährt. Das Control Panel ist ein Self-Service-Tool, mit dem Sie wesentliche Änderungen an Campaign-Instanzen vornehmen können.
+>Nachdem Sie Ihre Benutzer zu IMS migriert haben, beachten Sie, dass jedes Produktprofil in der Adobe Admin Console, das das Wort „admin“ im Namen enthält (z. B. „Administrators“, „Admin“, „Admins“, „Approval Admin“ usw.) gewährt automatisch Zugriff auf das Campaign Control Panel. Das Control Panel ist ein Self-Service-Tool, mit dem Sie wesentliche Änderungen an Campaign-Instanzen vornehmen können.
 >
 >Überprüfen Sie die Benennungskonventionen für Produktprofile sorgfältig, um sicherzustellen, dass nur autorisierte Benutzer Zugriff auf das Control Panel haben. Weitere Informationen zur Verwaltung von Control Panel-Berechtigungen finden Sie in der [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
 
@@ -55,7 +55,7 @@ Die wichtigsten Schritte für diese Migration sind unten aufgeführt:
 1. Vereinbaren Sie mit Adobe einen Termin, an dem Adobe die automatisierte Migration für Ihre nicht-technischen Benutzenden und Produktprofile durchführen kann. Für diesen Schritt ist ein Zeitfenster von einer Stunde ohne Ausfallzeiten für Ihre Instanzen erforderlich.
 1. Ihre internen Campaign-Admins validieren diese Änderungen und geben sie frei. Nach dieser Migration dürfen Sie keinen weiteren Benutzenden mehr erstellen, die sich mit deren Login und Passwort authentifizieren.
 
-Sie können jetzt Ihre technischen Benutzenden zur Adobe Developer Console migrieren, wie in [dieser Technote](ims-migration.md) beschrieben.  Dieser Schritt ist bei der Verwendung von Campaign-APIs obligatorisch.
+Sie können jetzt Ihre technischen Benutzenden zur Adobe Developer Console migrieren, wie in [dieser Technote](ims-migration.md) beschrieben. Dieser Schritt ist bei der Verwendung von Campaign-APIs obligatorisch.
 
 Bestätigen Sie nach Abschluss der Migration diese Ihrem Adobe Transition Manager. Adobe markiert dann die Migration als abgeschlossen und blockiert die neue native Benutzererstellung und die native Benutzeranmeldung. Ihre Umgebung ist dann gesichert und standardisiert.
 
@@ -178,4 +178,4 @@ Sie können jetzt die Liste Ihrer **Benutzenden** und deren **Authentifizierungs
 * [Herstellen einer Verbindung zu Adobe Campaign v8](../../v8/start/connect.md)
 * [Zugriff und Berechtigungen in Adobe Campaign v8](../../v8/start/gs-permissions.md)
 * [Versionshinweise von Adobe Campaign v8](../../v8/start/release-notes.md)
-* [Was ist das Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}
+* [Was ist Adobe Identity Management System (IMS)?](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}

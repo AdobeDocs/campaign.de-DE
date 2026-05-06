@@ -6,8 +6,8 @@ role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 94%
+source-wordcount: '1602'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ Für andere Fälle wenden Sie sich an Ihre Adobe-Kontaktperson für Migrationen,
 
 Integrationen werden im Rahmen eines **Projekts** in der Adobe Developer Console erstellt. Weitere Informationen zu Projekten sind in der [Dokumentation zur Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"} zu finden.
 
-Sie können jedes zuvor von Ihnen erstellte Projekt verwenden oder ein neues Projekt erstellen. Die Schritte zum Erstellen eines Projekts werden in der [Dokumentation zu Adobe Developer Console &#x200B;](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}. Nachfolgend finden Sie die wichtigsten Schritte.
+Sie können jedes zuvor von Ihnen erstellte Projekt verwenden oder ein neues Projekt erstellen. Die Schritte zum Erstellen eines Projekts werden im Detail in der [Dokumentation zur Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"} beschrieben. Nachfolgend finden Sie die wichtigsten Schritte.
 
 <!--
 For this migration, you must add below APIs in your project: **I/O Management API** and **Adobe Campaign**.

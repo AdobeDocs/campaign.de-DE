@@ -7,9 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '825'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '829'
+ht-degree: 67%
 
 ---
 
@@ -31,11 +31,11 @@ Den in der Marketing-Datenbank enthaltenen Kontakten soll über eine Webapp ein 
 
 ![](assets/uc1_enrich_1.png)
 
-Ein in der **[!UICONTROL Empfängertabelle]** enthaltener Kontakt kann mehrere Einträge in der Tabelle der **[!UICONTROL Wettbewerbsergebnisse]** aufweisen. Die Relation zwischen beiden Tabellen ist somit vom Typ 1:n. Nachfolgend werden für einen Empfänger beispielhaft die Ergebnislogs dargestellt:
+Ein Kontakt in der Tabelle **[!UICONTROL Empfänger]** kann mit mehreren Zeilen in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** verknüpft werden. Die Beziehung zwischen diesen beiden Tabellen ist vom Typ 1-n. Im Folgenden finden Sie ein Beispiel für die Ergebnisprotokolle für einen Empfänger:
 
 ![](assets/uc1_enrich_2.png)
 
-Ziel des vorliegenden Beispiels ist es, den Teilnehmern des letzten Wettbewerbs eine je nach erreichtem Score personalisierte Nachricht zukommen zu lassen. Der Teilnehmer mit dem höchsten Score erhält den ersten Preis, der Teilnehmer mit dem zweithöchsten Score einen Trostpreis und alle anderen Teilnehmer werden aufgefordert, ihr Glück beim nächsten Wettbewerb erneut zu versuchen.
+In diesem Anwendungsbeispiel wird das Versenden personalisierter Sendungen an Personen bezweckt, die am letzten Wettbewerb teilgenommen haben, abhängig von den erzielten Punkten. Der Empfänger mit der höchsten Punktzahl erhält den ersten Preis, der Empfänger mit der zweithöchsten Punktzahl einen Trostpreis und alle anderen erhalten eine Nachricht, die ihnen beim nächsten Mal mehr Glück wünschen.
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
@@ -80,7 +80,7 @@ In diesem Beispiel erfahren Sie, wie Sie Sendungen entsprechend des Felds **[!UI
 
    ![](assets/uc1_enrich_9.png)
 
-1. Klicken Sie im Bildschirm **[!UICONTROL Sortierung]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie das Feld **[!UICONTROL Score]** aus und aktivieren Sie das Kästchen in der Spalte **[!UICONTROL Absteigend]**, um die Elemente der **[!UICONTROL Score]**-Felder in absteigender Reihenfolge zu sortieren. Für jede Empfängerin und jeden Empfänger fügt die Anreicherungsaktivität somit die Zeile ein, die dem höchsten Score für das letzte Spiel entspricht. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Gehen Sie zum Bildschirm **[!UICONTROL Sortieren]** und klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie das Feld **[!UICONTROL Score]** aus und aktivieren Sie das Kontrollkästchen in der Spalte **[!UICONTROL Absteigend]**, um Elemente der Felder **[!UICONTROL Score]** in absteigender Reihenfolge zu sortieren. Bei jeder Empfängerin bzw. jedem Empfänger wird durch die Aktivität Anreicherung eine Zeile hinzugefügt, die der höchsten Punktzahl für das letzte Spiel entspricht. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/uc1_enrich_10.png)
 
@@ -88,7 +88,7 @@ In diesem Beispiel erfahren Sie, wie Sie Sendungen entsprechend des Felds **[!UI
 
    ![](assets/uc1_enrich_11.png)
 
-Klicken Sie mit der rechten Maustaste auf die in die Anreicherungsaktivität eingehende Transition und wählen Sie die Option **[!UICONTROL Ergebnis anzeigen...]**. Die Arbeitstabelle enthält folgende Daten:
+Klicken Sie mit der rechten Maustaste auf die eingehende Transition der Anreicherungsaktivität und wählen Sie **[!UICONTROL Zielgruppe anzeigen]**. Die Arbeitstabelle enthält die folgenden Daten:
 
 ![](assets/uc1_enrich_13.png)
 
@@ -96,7 +96,7 @@ Das Schema der Arbeitstabelle stellt sich wie folgt dar:
 
 ![](assets/uc1_enrich_15.png)
 
-Wiederholen Sie den Vorgang für die ausgehende Transition der Anreicherungsaktivität. Sie können sehen, dass die Score-Daten der Empfänger hinzugefügt wurden. Für jeden Empfänger wurde der höchste Score abgerufen.
+Erneuern Sie diesen Vorgang für die ausgehende Transition der Anreicherungsaktivität. Wir können sehen, dass die mit den Empfängerbewertungen verknüpften Daten hinzugefügt wurden. Die höchste Punktzahl jedes Empfängers wurde wiederhergestellt.
 
 ![](assets/uc1_enrich_12.png)
 
@@ -110,11 +110,11 @@ Im Anschluss an die Anreicherung sorgt die **[!UICONTROL Aufspaltung]** für die
 
 ![](assets/uc1_enrich_18.png)
 
-1. Die erste Teilmenge (**Gewinner**) enthält den Empfänger mit dem höchsten Score. Definieren Sie hierzu eine Begrenzung der Datensatzanzahl, sortieren Sie die Scores in absteigender Reihenfolge und begrenzen Sie die Datensatzanzahl auf 1.
+1. Eine erste Teilmenge (**Gewinner**) wurde definiert, um den Empfänger mit der höchsten Punktzahl einzuschließen. Definieren Sie dazu eine Begrenzung der Anzahl der Datensätze, wenden Sie eine absteigende Sortierung auf die Punktzahl an und begrenzen Sie die Anzahl der Datensätze auf 1.
 
    ![](assets/uc1_enrich_16.png)
 
-1. Die zweite Teilmenge (**Trostpreis**) enthält den Empfänger mit dem zweithöchsten Score. Konfigurieren Sie die zweite Teilmenge analog zur ersten.
+1. Die zweite Teilmenge **Zweite**) enthält den Empfänger mit der zweithöchsten Punktzahl. Die Konfiguration entspricht der für die erste Teilmenge.
 
    ![](assets/uc1_enrich_17.png)
 

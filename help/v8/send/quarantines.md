@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
 source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 73%
+source-wordcount: '1427'
+ht-degree: 72%
 
 ---
 
@@ -29,7 +29,7 @@ Wenn die Adresse oder Telefonnummer von Empfängern in Quarantäne ist, werden d
 >
 >Wenn Empfängerinnen oder Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Schlüsselwort wie „STOP“ antworten, wird ihre Adresse oder Telefonnummer als **[!UICONTROL Auf die Blockierungsliste gesetzt]** unter Quarantäne gestellt. Die jeweiligen Profile werden entsprechend aktualisiert.
 
-Auf die Blockierungsliste setzen Profile können sich jedoch auch **{**} auf der **&#x200B;**-Seite befinden, wie etwa nach einer Abmeldung (Opt-out) für einen bestimmten Kanal: Dies bedeutet, dass sie nicht mehr in den Versand eingeschlossen sind. Hat ein Profil auf der Blockierungsliste für den E-Mail-Kanal zwei E-Mail-Adressen, werden folglich beide Adressen vom Versand ausgeschlossen. Im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** der Registerkarte **[!UICONTROL Allgemein]** des Profils können Sie überprüfen, ob sich ein Profil auf der Blockierungsliste für einen oder mehrere Kanäle befindet. [Weitere Informationen](../audiences/view-profiles.md)
+Profile können sich jedoch auch **{**} auf der **&#x200B;**-Seite befinden, wie etwa nach einer Abmeldung (Opt-out) für einen bestimmten Kanal: Dies bedeutet, dass sie nicht mehr in den Versand eingeschlossen sind. Hat ein Profil auf der Blockierungsliste für den E-Mail-Kanal zwei E-Mail-Adressen, werden folglich beide Adressen vom Versand ausgeschlossen. Im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** der Registerkarte **[!UICONTROL Allgemein]** des Profils können Sie überprüfen, ob sich ein Profil auf der Blockierungsliste für einen oder mehrere Kanäle befindet. [Weitere Informationen](../audiences/view-profiles.md)
 
 >[!NOTE]
 >

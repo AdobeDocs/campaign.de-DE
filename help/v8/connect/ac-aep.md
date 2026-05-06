@@ -7,19 +7,19 @@ level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '583'
 ht-degree: 93%
 
 ---
 
-# Freigeben und Synchronisieren von Zielgruppen mit Adobe Experience Platform {#gs-ac-aep}
+# Freigeben und Synchronisieren von Zielgruppen mit Adobe Experience Platform {#gs-ac-aep}
 
 Die Ziel- und Quell-Connectoren für Adobe Campaign Managed Cloud Service ermöglichen eine nahtlose Integration zwischen Adobe Campaign und Adobe Experience Platform. Diese Integration ermöglicht Ihnen Folgendes:
 
 * Senden von Adobe Experience Platform-Zielgruppen an Adobe Campaign und Zurücksenden von Versand- und Trackinglogs an Adobe Experience Platform zu Analysezwecken
 * Überführen von Adobe Experience Platform-Profilattributen in Adobe Campaign und Ausführen eines Synchronisierungsprozesses, damit sie regelmäßig aktualisiert werden können
 
-## Senden von Adobe Experience Platform-Zielgruppen an Campaign{#audiences}
+## Senden von Adobe Experience Platform-Zielgruppen an Campaign {#audiences}
 
 Die wichtigsten Schritte zum Senden von Adobe Experience Platform-Zielgruppen an Adobe Campaign und zum Zurücksenden von Versand- und Trackinglogs sind:
 

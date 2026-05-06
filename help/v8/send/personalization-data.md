@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 711256e2-ab77-404a-b052-6793a85da193
 source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 95%
+source-wordcount: '653'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,7 @@ Personalisierungsdaten können aus verschiedenen Datenquelle bezogen werden: aus
 
 ## Campaign-Datenbank als Datenquelle
 
-In den häufigsten Fällen werden Personalisierungsdaten in der Datenbank gespeichert. Beispielsweise sind „Empfänger-Personalisierungsfelder“ alle in der Empfängertabelle definierten Felder, Standardfelder (typischerweise: Nachname, Vorname, Adresse, Stadt, Geburtsdatum usw.) oder benutzerdefinierte Felder.
+In den häufigsten Fällen werden Personalisierungsdaten in der Datenbank gespeichert. Beispielsweise sind „Empfänger-Personalisierungsfelder“ alle in der Empfängertabelle definierten Felder, Standardfelder (normalerweise: Nachname, Vorname, Adresse, Stadt, Geburtsdatum usw.) oder benutzerdefinierte Felder.
 
 ![Personalisierungsfelder einer Kampagne in einer E-Mail](assets/perso-campaign-datasource.png)
 
@@ -55,7 +55,7 @@ Wenn Sie die Option aktivieren, kann sich die Performance der Versandanalyse bei
 
 Um diese Option zu verwenden, gehen Sie wie folgt vor:
 
-1. Erstellen Sie eine Kampagne.
+1. Kampagne erstellen.
 1. Fügen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** eine **Abfrage**-Aktivität zu Ihrem Workflow hinzu.
 1. Fügen Sie eine **[!UICONTROL E-Mail-Versand]**-Aktivität zum Workflow hinzu und öffnen Sie ihn.
 1. Gehen Sie zum Tab **[!UICONTROL Analyse]** der **[!UICONTROL Versandeigenschaften]** und wählen Sie die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** aus.
@@ -63,11 +63,11 @@ Um diese Option zu verwenden, gehen Sie wie folgt vor:
 
 Nach Abschluss der Analyse werden die Personalisierungsdaten mithilfe eines technischen Workflows, der während der Analyse eingerichtet wird, in einer temporären Tabelle gespeichert.
 
-Dieser Workflow ist nicht in der Adobe Campaign-Benutzeroberfläche sichtbar. Er ist lediglich ein technisches Hilfsmittel, um Personalisierungsdaten rasch zu speichern und zu handhaben.
+Dieser Workflow ist in der Benutzeroberfläche von Adobe Campaign nicht sichtbar. Es soll lediglich ein technisches Mittel zur schnellen Speicherung und Verarbeitung von Personalisierungsdaten sein.
 
-Gehen Sie nach dem Abschluss der Analyse zu den Workflow-**[!UICONTROL Eigenschaften]** und wählen Sie den Tab **[!UICONTROL Variablen]** aus. Dort wird der Name der temporären Tabelle angezeigt. Mit diesem Namen können Sie einen SQL-Aufruf durchführen, um die darin enthaltenen IDs anzuzeigen.
+Nachdem die Analyse abgeschlossen ist, wechseln Sie zum Workflow **[!UICONTROL Eigenschaften]** und wählen Sie die Registerkarte **[!UICONTROL Variablen]** aus. Dort sehen Sie den Namen der temporären Tabelle, mit der Sie einen SQL-Aufruf ausführen können, um die darin enthaltenen IDs anzuzeigen.
 
-## Personalisierungdaten in einem Workflow 
+## Personalisierungdaten in einem Workflow
 
 Wenn ein Versand im Kontext eines Workflows erstellt wird, können Sie die Daten aus der temporären Workflow-Tabelle verwenden. Die in der temporären Arbeitstabelle des Workflows gespeicherten Daten stehen für Personalisierungsaufgaben zur Verfügung. Daten können in Personalisierungsfeldern verwendet werden.
 

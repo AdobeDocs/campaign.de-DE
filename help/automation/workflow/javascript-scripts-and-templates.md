@@ -7,9 +7,9 @@ role: Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 14160de5-23d2-4f53-84c6-0f9e3b1dcf21
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '1268'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1272'
+ht-degree: 73%
 
 ---
 
@@ -21,10 +21,10 @@ Scripts dienen zur Berechnung von Werten, dem Austausch von Daten zwischen versc
 
 In einem Workflow-Diagramm sind Scripts allgegenwärtig:
 
-* Jede Aktivität verfügt über ein Initialisierungscript. Dieses wird bei Aktivierung der Aktivität ausgeführt. Es initialisiert die Variablen oder ändert die Eigenschaften der Aktivität.
+* Alle Aktivitäten verfügen über Initialisierungsskripte. Ein Initialisierungsskript wird ausgeführt, wenn die Aktivität aktiviert ist, und kann verwendet werden, um Variablen zu initialisieren und die Eigenschaften zu ändern.
 * Die &#39;JavaScript-Code&#39;-Aktivität dient einzig der Ausführung eines Scripts.
 * Die &#39;Test&#39;-Aktivität wertet JavaScript-Ausdrücke aus, um die richtige Transition zu aktivieren.
-* Die meisten Textfelder sind JavaScript-Templates: Sie können zwischen &lt;%= und %> JavaScript-Ausdrücke enthalten. Darüber hinaus besteht Zugriff auf eine Dropdown-Liste, die die Erstellung der Ausdrücke erleichtert.
+* Die meisten Textfelder sind JavaScript-Vorlagen: JavaScript-Ausdrücke können zwischen &lt;%= und %> eingefügt werden. Diese Felder enthalten eine Schaltfläche, über die eine Dropdown-Liste geöffnet werden kann, in die Sie Ausdrücke eingeben können.
 
   ![](assets/script-button.png)
 
@@ -32,10 +32,10 @@ In einem Workflow-Diagramm sind Scripts allgegenwärtig:
 
 Jedes im Rahmen des Workflows ausgeführte JavaScript greift auf eine Reihe von globalen Objekten zu.
 
-* **instance**: Stellt den Workflow dar, der ausgeführt wird. Das Schema dieses Objekts ist **xtk:workflow**.
-* **task**: Stellt die ausgeführten Aufgaben dar. Das Schema dieses Objekts ist **xtk:workflowTask**.
-* **event**: Stellt die Ereignisse dar, die die ausgeführte Aufgabe aktiviert haben. Das Schema dieses Objekts ist **xtk:workflowEvent**. Dieses Objekt wird nicht für Aktivitäten vom Typ **Und-Verknüpfung** initialisiert, die von mehreren Transitionen aktiviert wurden.
-* **events**: Stellt die Liste der Ereignisse dar, die die aktuelle Aufgabe aktiviert haben. Das Schema dieses Objekts ist **xtk:workflowEvent**. Diese Tabelle enthält in der Regel ein Element, kann jedoch mehrere Aktivitäten vom Typ **Und-Verknüpfung** enthalten, die anhand mehrerer Transitionen aktiviert wurden.
+* **instance**: Stellt den Workflow dar, der ausgeführt wird. Das Schema dieses Objekts lautet **xtk:workflow**.
+* **task**: Stellt die ausgeführten Aufgaben dar. Das Schema dieses Objekts lautet **xtk:workflowTask**.
+* **event**: Stellt die Ereignisse dar, die die ausgeführte Aufgabe aktiviert haben. Das Schema dieses Objekts lautet **xtk:workflowEvent**. Dieses Objekt wird nicht für Aktivitäten vom Typ **Und-Verknüpfung** initialisiert, die von mehreren Transitionen aktiviert wurden.
+* **events**: Stellt die Liste der Ereignisse dar, die die aktuelle Aufgabe aktiviert haben. Das Schema dieses Objekts lautet **xtk:workflowEvent**. Diese Tabelle enthält in der Regel ein Element, kann jedoch mehrere Aktivitäten vom Typ **Und-Verknüpfung** enthalten, die anhand mehrerer Transitionen aktiviert wurden.
 * **activity**: Stellt das Modell der ausgeführten Aufgabe dar. Das Schema dieses Objekts hängt vom Aktivitätstyp ab. Das Objekt kann vom Initialisierungs-Script geändert werden; in anderen Scripten werden Änderungen unbestimmbare Folgen haben.
 
 Die verfügbaren Eigenschaften dieser Objekte sind über die Dropdown-Liste rechts in der Symbolleiste des Scripts abrufbar.
@@ -44,7 +44,7 @@ Die verfügbaren Eigenschaften dieser Objekte sind über die Dropdown-Liste rech
 >
 >Die Objekteigenschaften sind schreibgeschützt mit Ausnahme der Unter-Eigenschaften der vars-Eigenschaft.
 >  
->Die meisten Eigenschaften werden erst nach Ausführung einer elementaren Aufgabe oder zum Zeitpunkt der Instanzpassivierung aktualisiert. Daher entsprechen die abgerufenen Werte nicht unbedingt dem aktuellen, sondern in der Regel dem vorangegangenen Status.
+>Die meisten dieser Eigenschaften werden erst aktualisiert, nachdem eine elementare Aufgabe ausgeführt oder die Instanz passiviert wurde. Die gelesenen Werte stimmen nicht unbedingt mit dem aktuellen Status überein, sondern mit dem vorherigen Status.
 
 **Beispiel**
 
@@ -61,7 +61,7 @@ logInfo("Start date: " + task.creationDate)
 
 Die Funktion **[!UICONTROL logInfo(message)]** erstellt einen Eintrag im Protokoll.
 
-Klicken Sie auf **[!UICONTROL OK]**, um den Assistenten zu schließen und starten Sie den Workflow mithilfe der Aktionsschaltflächen oben rechts der Workflow-Liste. Rufen Sie nach Ende der Ausführung das Protokoll auf. Bei korrekter Ausführung werden zwei dem Script entsprechende Nachrichten angezeigt: Ein Eintrag zeigt den Workflow-Titel, der zweite das Datum der Script-Aktivierung.
+Klicken Sie **[!UICONTROL OK]**, um den Erstellungsassistenten zu schließen, und starten Sie dann den Workflow mithilfe der Aktionsschaltflächen oben rechts in der Liste der Workflows. Rufen Sie am Ende der Ausführung das Protokoll auf. Bei korrekter Ausführung werden zwei dem Script entsprechende Nachrichten angezeigt: Ein Eintrag zeigt den Workflow-Titel, der zweite das Datum der Script-Aktivierung.
 
 ## Variablen {#variables}
 
@@ -69,23 +69,23 @@ Variablen sind freie Eigenschaften der Objekte **[!UICONTROL instance]**, **[!UI
 
 ### Instanzvariablen {#instance-variables}
 
-Instanzvariablen (**[!UICONTROL instance.vars.xxx]**) sind mit allgemeinen Variablen vergleichbar und gelten für alle Aktivitäten.
+Die Instanzvariablen (**[!UICONTROL instance.vars.xxx]**) sind mit globalen Variablen vergleichbar. Sie werden von allen Aktivitäten geteilt.
 
 ### Aufgabenvariablen {#task-variables}
 
-Aufgabenvariablen (**[!UICONTROL task.vars.xxx]**) sind mit lokalen Variablen vergleichbar. Nur die laufende Aufgabe kann auf sie zugreifen. Sie werden für persistente Aktivitäten verwendet, um Daten beizubehalten, und gegebenenfalls zum Austausch von Werten zwischen verschiedenen Scripts innerhalb einer Aktivität.
+Die Aufgabenvariablen (**[!UICONTROL task.vars.xxx]**) sind mit lokalen Variablen vergleichbar. Sie werden nur von der aktuellen Aufgabe verwendet. Diese Variablen werden von persistenten Aktivitäten verwendet, um Daten beizubehalten, und manchmal zum Austausch von Daten zwischen den verschiedenen Skripten einer Aktivität.
 
 ### Ereignisvariablen {#event-variables}
 
-Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Austausch von Daten zwischen elementaren Aufgaben eines Workflow-Prozesses. Sie werden von der Aufgabe übermittelt, die die laufende Aufgabe aktiviert hat. Es besteht die Möglichkeit, sie zu ändern oder neue Ereignisvariablen zu definieren, die dann an die anschließenden Aktivitäten übermittelt werden.
+Die Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Datenaustausch zwischen den elementaren Aufgaben eines Workflow-Prozesses. Diese Variablen werden von der Aufgabe übergeben, die die in Bearbeitung befindliche Aufgabe aktiviert hat. Es ist möglich, sie zu ändern und neue zu definieren. Sie werden dann an die folgenden Aktivitäten weitergeleitet.
 
 >[!CAUTION]
 >
->Bei Verwendung einer [UND-Verknüpfung](and-join.md) fusionieren die Variablen. Wenn eine Variable mehrmals definiert wurde entsteht ein Konflikt und es wird ein unbestimmter Wert ausgegeben.
+>Bei Verwendung einer [UND-Verknüpfung](and-join.md) werden die Variablen zusammengeführt. Wenn eine Variable mehrmals definiert wurde entsteht ein Konflikt und es wird ein unbestimmter Wert ausgegeben.
 
 Ereignisvariablen sind die am häufigsten verwendeten Variablen und sind Instanzvariablen vorzuziehen.
 
-Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Variablen vom Typ Zeichenfolge. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
+Bestimmte Ereignisvariablen werden durch die verschiedenen Aktivitäten geändert oder gelesen. Dies sind alles Variablen vom Typ Zeichenfolge. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
 
 ### Anwendungsfälle {#example}
 
@@ -169,7 +169,7 @@ Beispiel:
 
    ![](assets/wkf_js_activity_1.png)
 
-1. Erstellen Sie eine Abfrage mit den Empfängern als Zielgruppen- und als Filterdimension. Geben Sie in den Bedingungen an, alle Empfänger zu suchen, an die der von der Variablen bezeichnete Versand gerichtet war.
+1. Erstellen Sie eine Abfrage , deren Zielgruppen- und Filterdimensionen die Empfänger sind. Geben Sie in den Bedingungen an, dass Sie alle Empfänger finden möchten, die an den von der Variablen angegebenen Versand gesendet wurden.
 
    Hinweis: Diese Informationen werden in den Versandlogs gespeichert.
 
@@ -185,9 +185,9 @@ Neben den Standard-JavaScript-Funkionen stehen spezifische Funktionen zur Verfü
 
 ### Protokoll {#journal}
 
-**[!UICONTROL logInfo(message)]** wurde bereits weiter oben erläutert. Diese Funktion fügt einen Eintrag zum Protokoll hinzu.
+**[!UICONTROL logInfo(message)]** wurde in den obigen Beispielen beschrieben. Diese Funktion fügt dem Protokoll eine Informationsmeldung hinzu.
 
-**[!UICONTROL logError(message)]** fügt eine Fehlernachricht zum Protokoll hinzu. Die Ausführung des Scripts wird unterbrochen und der Workflow wechselt in den Fehlerstatus (standardmäßig wird die Instanz ausgesetzt).
+**[!UICONTROL logError(message)]** fügt dem Protokoll eine Fehlermeldung hinzu. Das Skript unterbricht seine Ausführung, und der Workflow wechselt in den Fehlerstatus (standardmäßig wird die Instanz angehalten).
 
 ## Initialisierungsskript {#initialization-script}
 
@@ -195,7 +195,7 @@ Eine Aktivitätseigenschaft kann unter bestimmten Bedingungen zum Zeitpunkt der 
 
 Die Mehrzahl der Aktivitätseigenschaften kann dynamisch berechnet werden, entweder unter Verwendung eines JavaScript-Templates oder weil die Workflow-Eigenschaften die Berechnung des Werts durch ein Script explizit erlauben.
 
-Für andere Eigenschaften müssen Sie jedoch das Initialisierungsskript verwenden. Dieses Skript wird ausgewertet, bevor die Aufgabe ausgeführt wird. Die Variable **[!UICONTROL activity]** referenziert die der Aufgabe entsprechende Aktivität. Die Eigenschaften dieses Objekts können geändert werden und betreffen nur diese Aufgabe.
+Für andere Eigenschaften müssen Sie jedoch das Initialisierungsskript verwenden. Dieses Skript wird vor Ausführung der Aufgabe ausgewertet. Die Variable **[!UICONTROL activity]** verweist auf die der Aufgabe entsprechende Aktivität. Die Eigenschaften dieses Objekts können geändert werden und betreffen nur diese Aufgabe.
 
 **Verwandte Themen**
 [Beispiele für JavaScript-Code in Workflows](javascript-in-workflows.md)

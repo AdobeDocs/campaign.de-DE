@@ -7,17 +7,17 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 3c06b329-b2d8-4ac8-ab9b-3ab3e525d109
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 100%
+ht-degree: 52%
 
 ---
 
 # Versandentwurf{#delivery-outline}
 
-Die Aktivität **Versandentwurf** ermöglicht die Verwendung von Entwürfen in Kampagnen-Workflows. Der Versandentwurf ist zuvor in der Kampagne zu konfigurieren.
+Mit **Versandentwurf** können Sie einen Versandentwurf in einem Kampagnen-Workflow verwenden. Der Versandentwurf muss zuvor in der Kampagne erstellt worden sein.
 
-Wählen Sie zur Konfiguration der Aktivität den gewünschten Versandentwurf aus und geben Sie das geplante Kontaktdatum an. Es besteht die Möglichkeit, Filterregeln zu definieren, indem Sie Typologien und Typologieregeln hinzufügen.
+Zur Konfiguration der Aktivität wählen Sie einfach den gewünschten Versandentwurf sowie das geplante Kontaktdatum aus. Sie können Filterregeln hinzufügen, indem Sie Typologien oder Typologieregeln hinzufügen.
 
 ## Anwendungsbeispiel: Einfügung eines Angebots mithilfe eines Versandentwurfs {#example--inserting-an-offer-via-a-delivery-outline}
 
@@ -32,12 +32,12 @@ Die in Kampagnen-Workflows zur Verfügung stehende Aktivität **Versandentwurf**
 1. Füllen Sie die verfügbaren Felder Ihrem Versand entsprechend aus.
 1. Sie haben zwei Möglichkeiten:
 
-   * Versand mit Abfrage an das Angebotsmodul: Kreuzen Sie in diesem Fall die Option **[!UICONTROL Anzahl der ausgewählten Vorschläge begrenzen]** an. Konfigurieren Sie die Platzierung und die Anzahl an zu unterbreitenden Angeboten.
+   * Wenn das Angebotsmodul aufgerufen werden soll, aktivieren Sie das Kontrollkästchen **[!UICONTROL Anzahl der ausgewählten Vorschläge]**. Geben Sie die Platzierung und die Anzahl der Vorschläge an, die im Versand unterbreitet werden sollen.
 
      Gewichtung und Eignungsregeln der Angebote werden vom Angebotsmodul berücksichtigt.
 
    * Versand ohne Abfrage an das Angebotsmodul: Alle im Versandentwurf enthaltenen Angebote werden unterbreitet.
 
-   Die Vorschau berücksichtigt die im Versand konfigurierte Anzahl an Angeboten. Bei Ausführung des Workflows hingegen wird die im Versandentwurf konfigurierte Anzahl verwendet.
+   Die Vorschau berücksichtigt die Anzahl der im Versand angegebenen Angebote. Beim Ausführen eines Workflows wird die im Versandentwurf angegebene Zahl berücksichtigt.
 
    ![](assets/int_compo_offre_wf1.png)

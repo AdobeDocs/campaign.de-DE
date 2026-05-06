@@ -9,7 +9,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 75a57ddb-558e-4dd2-a684-e63e51545554
 source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1284'
 ht-degree: 100%
 
 ---
@@ -92,7 +92,7 @@ Navigieren Sie durch die folgenden Registerkarten, um mehr über die Personalisi
 
    ![](assets/rich_push_ios_basic_3.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Karussell]
 
@@ -127,7 +127,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    ![](assets/rich_push_ios_carousel_3.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Timer]
 
@@ -161,7 +161,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    ![](assets/rich_push_ios_timer_3.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!ENDTABS]
 
@@ -183,9 +183,9 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 |---------|---------|
 | **[!UICONTROL Veränderlicher Inhalt]** | Aktivieren Sie diese Option, damit die Mobile App Medieninhalte herunterladen kann. |
 | **[!UICONTROL Thread-ID]** | Legen Sie die Kennung fest, die zur Gruppierung zusammengehöriger Meldungen verwendet wird. |
-| **[!UICONTROL Kategorie]** | Legen Sie den Namen Ihrer Kategorie-ID fest, über die Aktionsschaltflächen angezeigt werden. Diese Benachrichtigungen ermöglichen es Benutzerinnen und Benutzern, verschiedene Aufgaben als Reaktion auf eine Benachrichtigung schneller auszuführen, ohne die App öffnen oder darin navigieren zu müssen. |
+| **[!UICONTROL Kategorie]** | Legen Sie den Namen Ihrer Kategorie-ID fest, über die Aktionsschaltflächen angezeigt werden. Mit diesen Benachrichtigungen können Benutzer rascher unterschiedliche Aufgaben ausführen, ohne die Anwendung öffnen oder darin navigieren zu müssen. |
 | **[!UICONTROL ID des Zielinhalts]** | Legen Sie eine Kennung fest, die angibt, welches App-Fenster beim Öffnen der Benachrichtigung im Vordergrund erscheinen soll. |
-| **[!UICONTROL Startbild]** | Legen Sie den Dateinamen des anzuzeigenden Startbildes fest. Wenn die Benutzerinnen und Benutzer die App starten, wird anstelle des Startbildschirms der App das ausgewählte Bild angezeigt. |
+| **[!UICONTROL Startbild]** | Legen Sie den Dateinamen des anzuzeigenden Startbildes fest. Wenn der Benutzer Ihre Anwendung starten möchte, wird das ausgewählte Bild anstelle des Startbildschirms Ihrer Anwendung angezeigt. |
 | **[!UICONTROL Klick-Aktion]** | Legt die Aktion fest, die für das Klicken der Benutzenden auf Ihre Benachrichtigung zugewiesen ist. |
-| **[!UICONTROL Unterbrechungsgrad]** | <ul><li>Aktiv: Standardmäßig eingestellt, zeigt das System die Benachrichtigung sofort an, der Bildschirm leuchtet auf und es kann ein Ton abgespielt werden. Benachrichtigungen umgehen nicht die Fokusmodi.</li><li>Passiv: Das System fügt die Benachrichtigung der Benachrichtigungsliste hinzu, ohne dass der Bildschirm aufleuchtet oder ein Ton abgespielt wird. Benachrichtigungen umgehen nicht die Fokusmodi.</li><li> Zeitkritisch: Das System zeigt die Benachrichtigung sofort an, der Bildschirm leuchtet auf, es kann ein Ton abgespielt werden und Fokusmodi werden umgangen. Für diese Stufe ist keine spezielle Berechtigung von Apple erforderlich.</li><li>Kritisch: Das System zeigt die Benachrichtigung sofort an, der Bildschirm leuchtet auf und der Stummschalter oder die Focus-Modi werden umgangen. Beachten Sie, dass für diese Stufe eine spezielle Berechtigung von Apple erforderlich ist.</li></ul> |
+| **[!UICONTROL Unterbrechungsgrad]** | <ul><li>Aktiv: Standardmäßig eingestellt, zeigt das System die Benachrichtigung sofort an, der Bildschirm leuchtet auf und es kann ein Ton abgespielt werden. Benachrichtigungen umgehen nicht die Fokusmodi.</li><li>Passiv: Das System fügt die Benachrichtigung der Benachrichtigungsliste hinzu, ohne dass der Bildschirm aufleuchtet oder ein Ton abgespielt wird. Benachrichtigungen umgehen nicht den Fokusmodus.</li><li> Zeitkritisch: Das System zeigt die Benachrichtigung sofort an, der Bildschirm leuchtet auf, es kann ein Ton abgespielt werden und Fokusmodi werden umgangen. Für diese Stufe ist keine spezielle Berechtigung von Apple erforderlich.</li><li>Kritisch: Das System zeigt die Benachrichtigung sofort an, der Bildschirm leuchtet auf und der Stummschalter oder die Focus-Modi werden umgangen. Beachten Sie, dass für diese Stufe eine spezielle Berechtigung von Apple erforderlich ist.</li></ul> |
 | **[!UICONTROL Relevanzwert]** | Legen Sie einen Relevanzwert auf der Skala von 0 bis 100 fest. Das System verwendet diesen Wert, um die Benachrichtigungen in der Benachrichtigungszusammenfassung zu sortieren. |

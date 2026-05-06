@@ -29,7 +29,7 @@ Zum Steuern eines Workflows stehen vier Ausführungsbefehle zur Verfügung:
 * Starten
 * Aussetzen
 * Fortsetzen
-* Anhalten
+* Stoppen
 
 
 ***Beispielanfragen***

@@ -8,7 +8,7 @@ exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 hide: true
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '785'
 ht-degree: 96%
 
 ---
@@ -98,6 +98,6 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten. Sie können in der Adobe Admin Console mit dem Adobe-Support chatten, um Ihre Probleme zu lösen.
 
-   Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, müssen Sie sich mit [Adobe Admin Console](https://adminConsole.adobe.com/overview){target="_blank"} verbinden.
+   Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminConsole.adobe.com/overview){target="_blank"} her.
 
    Das System erfordert für jeden Benutzer ein individuelles Konto mit den entsprechenden Berechtigungen. Wenn Sie sich nicht mit Ihrer Adobe ID anmelden können, beantragen Sie den Zugang über die Experience League, und das Kundenunterstützungs-Team wird ihn so schnell wie möglich einrichten. [Weitere Informationen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}

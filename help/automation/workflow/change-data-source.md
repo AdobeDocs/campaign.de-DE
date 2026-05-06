@@ -8,7 +8,7 @@ exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
 source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Beachten Sie, dass Sie bei Verwendung der Aktivität **[!UICONTROL Datenquelle �
 
 >[!NOTE]
 >
->Die **Change Data Source**-Aktivität kann maximal eine Million Datensätze pro Ausführung verarbeiten. Wenden Sie sich an den Adobe-Support-Mitarbeiter, wenn Sie dieses Limit erhöhen möchten.
+>Die Aktivität **Datenquelle ändern** kann maximal eine Million Einträge pro Ausführung verarbeiten. Wenden Sie sich an den Adobe-Support, wenn Sie dieses Limit erhöhen möchten.
 
 So verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**:
 

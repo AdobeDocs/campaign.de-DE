@@ -9,8 +9,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
 source-git-commit: aa9413dc794cf1a3683b33ca064ce228c90107f7
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 69%
+source-wordcount: '423'
+ht-degree: 59%
 
 ---
 
@@ -18,19 +18,19 @@ ht-degree: 69%
 
 ## SQL-Code {#sql-code}
 
-Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Script in Form eines JST-Templates aus.
+Eine **[!UICONTROL SQL-Code]**-Aktivität führt ein SQL-Script aus. Das Skript ist eine JST-Vorlage.
 
 ![](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
-  Das Script wird in den zentralen Bereich des Editors eingefügt. Da es sich beim Script um ein JST-Template handelt, kann es dem Workflow-Kontext entsprechend konfiguriert werden.
+  Der zentrale Bereich des Editors enthält das auszuführende Script. Dieses Skript ist eine JST-Vorlage und kann daher entsprechend dem Workflow-Kontext konfiguriert werden.
 
 * **[!UICONTROL Fehler verarbeiten]**
 
   Siehe [Fehler verarbeiten](monitor-workflow-execution.md#processing-errors).
 
-### Wichtige Hinweise        {#important-notes}
+### Wichtige Hinweise {#important-notes}
 
 Ab 8.9.1 wurden die Workflow-Aktivitäten **[!UICONTROL SQL-Code]** und **[!UICONTROL SQL-Daten-Management]** verbessert, um PostgreSQL-Datenbanken besser zu schützen und dafür zu sorgen, dass Ihre Workflows reibungslos ausgeführt werden, wenn benutzerdefinierte SQL von Campaign aus ausgeführt wird. Im Folgenden finden Sie Best Practices für den Fall von Fehlern.
 

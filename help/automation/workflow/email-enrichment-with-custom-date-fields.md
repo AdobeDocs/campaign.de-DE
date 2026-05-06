@@ -7,9 +7,9 @@ role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
-workflow-type: ht
-source-wordcount: '631'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 78%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 100%
 
 
 
-In diesem Beispiel möchten wir Empfängern, die im aktuellen Monat Geburtstag feiern, eine E-Mail mit benutzerdefinierten Datumsfeldern senden. Die E-Mail soll einen Gutschein enthalten, der bis zu einer Woche vor und nach ihrem Geburtstag gültig ist.
+In diesem Beispiel möchten wir eine E-Mail mit benutzerdefinierten Datenfeldern an Empfängerinnen und Empfänger senden, die in diesem Monat Geburtstag feiern. Die E-Mail enthält einen Gutschein, der eine Woche vor und nach dem Geburtstag gültig ist.
 
-Zunächst müssen mithilfe der Aktivität **[!UICONTROL Aufspaltung]** aus einer Liste Empfänger ausgewählt werden, die im aktuellen Monat Geburtstag haben. Danach wird mit der Aktivität **[!UICONTROL Anreicherung]** das benutzerdefinierte Datumsfeld zur Angabe des Gültigkeitsdatums in der Angebots-E-Mail verwendet.
+Wir müssen Empfänger aus einer Liste ansprechen, die diesen Monat ihren Geburtstag mit einer „Aufspaltung“-**[!UICONTROL feiern]**. Bei Verwendung der Aktivität **[!UICONTROL Anreicherung]** dient das benutzerdefinierte Datenfeld als Gültigkeitsdatum in der E-Mail für das Sonderangebot des Kunden.
 
 ![](assets/uc_enrichment.png)
 
 Gehen Sie wie folgt vor:
 
-1. Fügen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** Ihrer Kampagne per Drag &amp; Drop die Aktivität **[!UICONTROL Liste lesen]** hinzu, um Ihre Empfängerliste auszuwählen.
+1. Fügen Sie im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne per Drag &amp; Drop die Aktivität **[!UICONTROL Liste lesen]** hinzu, um Ihre Empfängerliste auszuwählen.
 1. Die zu verarbeitende Liste kann explizit angegeben, von einem Script berechnet oder dynamisch abgerufen werden. Dies hängt von den hier aktivierten Optionen oder angegebenen Parametern ab.
 
    ![](assets/uc_enrichment_1.png)
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor:
 1. Wählen Sie in der Spalte **[!UICONTROL Operator]** die Option **[!UICONTROL gleich]** aus.
 1. Filtern Sie Ihre Bedingung weiter, indem Sie für den Monat den **[!UICONTROL Wert]** des aktuellen Datums hinzufügen: Month(GetDate()).
 
-   Dadurch werden Empfänger abgerufen, deren Geburtsmonat mit dem aktuellen Monat übereinstimmt.
+   Dadurch werden Empfänger abgefragt, deren Geburtsmonat mit dem aktuellen Monat übereinstimmt.
 
    ![](assets/uc_enrichment_4.png)
 
@@ -84,7 +84,7 @@ Konfigurieren Sie anschließend die Aktivität **[!UICONTROL Anreicherung]**:
 
 1. Klicken Sie auf **[!UICONTROL OK]**. Ihre Anreicherung ist nun fertig.
 
-Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinzufügen. In unserem Fall haben wir einen E-Mail-Versand hinzugefügt, mit dem Empfänger, die im aktuellen Monat Geburtstag feiern, ein spezielles Angebot mit Gültigkeitsdaten erhalten.
+Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinzufügen. In diesem Fall haben wir einen E-Mail-Versand hinzugefügt, um Empfängern ein Sonderangebot mit Gültigkeitsdaten zu senden, die in diesem Monat Geburtstag feiern.
 
 1. Fügen Sie die Aktivität **[!UICONTROL E-Mail-Versand]** per Drag &amp; Drop nach der Aktivität **[!UICONTROL Anreicherung]** ein.
 
@@ -102,7 +102,7 @@ Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinz
 Sie können jetzt Ihre E-Mail-Nachricht mit den benutzerdefinierten Feldern gestalten, die Sie in der Aktivität **[!UICONTROL Anreicherung]** erstellt haben.
 
 1. Doppelklicken Sie auf die Aktivität **[!UICONTROL E-Mail-Versand]**.
-1. Fügen Sie Ihre Zielgruppenerweiterungen zu Ihrer E-Mail hinzu. Diese sollte sich innerhalb des folgendes Ausdrucks befinden, damit Sie das Format der Gültigkeitsdaten konfigurieren können.
+1. Fügen Sie Ihre Target-Erweiterungen zu Ihrer E-Mail hinzu. Er sollte sich innerhalb des folgenden Ausdrucks befinden, um das Format Ihrer Gültigkeitsdaten zu konfigurieren:
 
    ```
    <%=

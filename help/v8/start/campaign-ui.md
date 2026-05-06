@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 69%
+source-wordcount: '1241'
+ht-degree: 70%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 69%
 
 Sie können über die Client-Konsole oder die Web-Benutzeroberfläche auf Adobe Campaign zugreifen. Sie können auch APIs verwenden, um Daten zu verwalten und Aufgaben in Ihrer Campaign-Plattform auszuführen.
 
-* **Client-Konsole**: Die Client-Konsole ist eine native Anwendung, die über Standard-Internet-Protokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert eine minimale Bandbreite, da sie auf einem lokalen Cache beruht. Die Campaign-Client-Konsole, die für eine einfache Bereitstellung entwickelt wurde, kann über einen Internet-Browser bereitgestellt werden sowie automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt. [Weitere Informationen](#ui-access)
+* **Client-Konsole**: Die Client-Konsole ist eine native Anwendung, die über Standard-Internet-Protokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert eine minimale Bandbreite, da sie auf einem lokalen Cache beruht. Die für einfache Bereitstellungen entwickelte Campaign-Client-Konsole kann über einen Internet-Browser bereitgestellt sowie automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie ausschließlich HTTP(S)-Traffic erzeugt. [Weitere Informationen](#ui-access)
 
   Weitere Informationen dazu, wie Sie die Campaign Client-Konsole installieren und konfigurieren können, finden Sie in [diesem Abschnitt](../start/connect.md).
 
-* **Web-Zugriff**: Mit den Web-basierten Adobe Campaign-Zugriffsfunktionen können Sie über eine HTML-Benutzeroberfläche mit einem Webbrowser auf eine Teilmenge von Campaign-Funktionen zugreifen. Verwenden Sie diese Web-Benutzeroberfläche, um auf Berichte zuzugreifen, Nachrichten zu steuern und zu validieren, auf Monitoring-Dashboards zuzugreifen und vieles mehr. Weitere Informationen zum Web-basierten Zugriff auf Campaign finden Sie [in diesem Abschnitt](../start/connect.md#web-access).
+* **Web-Zugriff**: Mit den Web-basierten Adobe Campaign-Zugriffsfunktionen können Sie über eine HTML-Benutzeroberfläche mit einem Webbrowser auf eine Teilmenge von Campaign-Funktionen zugreifen. Verwenden Sie diese Web-Benutzeroberfläche, um auf Berichte zuzugreifen, Nachrichten zu steuern und zu validieren, auf Monitoring-Dashboards zuzugreifen und vieles mehr.  Weitere Informationen zum Web-basierten Zugriff auf Campaign finden Sie [in diesem Abschnitt](../start/connect.md#web-access).
 
 * **APIs**: In bestimmten Fällen kann das System über die via SOAP-Protokoll bereitgestellten Web Services-APIs von einer externen Anwendung aus aufgerufen werden. Weitere Informationen zu Campaign-APIs finden Sie [auf dieser Seite](../dev/api.md).
 
@@ -38,7 +38,7 @@ Sie können über die Client-Konsole oder die Web-Benutzeroberfläche auf Adobe 
 
 ## Arbeiten mit der Client-Konsole {#ui-access}
 
-Die Campaign-Client-Konsole ist eine native Anwendung, die über Standard-Internet-Protokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert eine minimale Bandbreite, da sie auf einem lokalen Cache beruht. Die Campaign-Client-Konsole, die für eine einfache Bereitstellung entwickelt wurde, kann über einen Internet-Browser bereitgestellt werden sowie automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.  [Erfahren Sie mehr über die Campaign-Client-Konsole](../start/connect.md).
+Die Campaign-Client-Konsole ist eine native Anwendung, die über Standard-Internet-Protokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert eine minimale Bandbreite, da sie auf einem lokalen Cache beruht. Die für einfache Bereitstellungen entwickelte Campaign-Client-Konsole kann über einen Internet-Browser bereitgestellt sowie automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie ausschließlich HTTP(S)-Traffic erzeugt.  [Erfahren Sie mehr über die Campaign-Client-Konsole](../start/connect.md).
 
 
 

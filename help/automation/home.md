@@ -3,11 +3,11 @@ keywords: Campaign-Automatisierung;Startseite;beliebte Themen
 product: campaign
 title: Startseite zur Automatisierung von Adobe Campaign
 feature: Overview
-description: Überblick
+description: Übersicht
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
 source-git-commit: 143e90ef63fac4058008bc6864daf950c11ab2d1
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '195'
 ht-degree: 100%
 
 ---
@@ -77,7 +77,7 @@ In den nachstehenden Handbüchern erfahren Sie, wie Sie die Verwendung von Adobe
     </div>
     <br>
     <div>
-    <a href="mrm/about-marketing-resource-management.md">Marketing Resource Management (MRM)</a>
+    <a href="mrm/about-marketing-resource-management.md">Marketing-Ressourcen-Management (MRM)</a>
     </div>
     <br>
   </td>

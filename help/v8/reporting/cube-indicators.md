@@ -7,14 +7,14 @@ level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 97%
+source-wordcount: '797'
+ht-degree: 96%
 
 ---
 
 # Erstellen von Cubes{#create-a-cube}
 
-## Cube-Arbeitsbereich {#cube-workspace}
+## Arbeitsbereich Cube {#cube-workspace}
 
 Um auf Cubes zuzugreifen, navigieren Sie vom Campaign-Explorer aus zu **[!UICONTROL Administration > Konfiguration > Cubes]**.
 
@@ -57,9 +57,9 @@ Bevor Sie mit dem Aufbau eines Cube-Berichts beginnen, identifizieren Sie die re
 Ein Cube wird in folgenden Schritten erstellt:
 
 1. Wählen Sie die Arbeitstabelle aus. [Weitere Informationen](#select-the-work-table).
-1. Definieren Sie Dimensionen. [Weitere Informationen](#define-dimensions).
-1. Definieren Sie Kennzahlen. [Weitere Informationen](#build-indicators).
-1. Erstellen Sie Aggregate (optional). [Weitere Informationen](customize-cubes.md#calculate-and-use-aggregates).
+1. Definieren von Dimensionen. [Weitere Informationen](#define-dimensions).
+1. Definieren von Kennzahlen. [Weitere Informationen](#build-indicators).
+1. Erstellen von Aggregaten (optional). [Weitere Informationen](customize-cubes.md#calculate-and-use-aggregates).
 
 Das nachstehende Beispiel zeigt, wie ein einfacher Cube schnell in einem Bericht zum Kennzahlenexport erstellt wird.
 
@@ -93,7 +93,7 @@ Gehen Sie zur Erstellung von Dimensionen wie folgt vor:
 
 Kreuzen Sie hierzu die Option **[!UICONTROL Klassierung aktivieren]** an. [Weitere Informationen](customize-cubes.md#data-binning).
 
-1. Fügen Sie eine Dimension vom Typ **Datum** hinzu. Hier sollen die Erstellungsdaten der Empfängerprofile angezeigt werden. Klicken Sie hierzu auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL Erstellungsdatum]** in der Empfängertabelle aus.
+1. Fügen Sie **Dimension** Datum“ hinzu. Hier sollen die Erstellungsdaten der Empfängerprofile angezeigt werden. Klicken Sie hierzu auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL Erstellungsdatum]** in der Empfängertabelle aus.
 Sie können den Anzeigemodus für das Datum anpassen. Wählen Sie dazu die zu verwendende Hierarchie und die zu erzeugenden Ebenen aus:
 
 ![](assets/cube-date-dimension.png)
@@ -121,7 +121,7 @@ Erstellen Sie dazu die Indikatoren auf der Registerkarte **[!UICONTROL Kennzahle
 Um Indikatoren aufzubauen, gehen Sie wie folgt vor:
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Kennzahlen]** und klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
-1. Wählen Sie den Kennzahlentyp und die anzuwendende Formel aus. In diesem Beispiel zählen wir die Anzahl der Frauen unter den Empfängern. Die Kennzahl basiert auf dem Faktenschema und verwendet die Funktion **[!UICONTROL Zählung]**.
+1. Wählen Sie den Kennzahlentyp und die anzuwendende Formel aus. In diesem Beispiel zählen wir die Anzahl der Frauen unter den Empfängern. Die Kennzahl basiert auf dem Faktenschema und verwendet den Operator **[!UICONTROL Zählung]**.
 
    ![](assets/cube-new-measure.png)
 

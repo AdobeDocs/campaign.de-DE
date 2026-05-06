@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte zum Tracking von Nachrichten
+title: Erste Schritte mit dem Tracking von Nachrichten
 description: Weitere Informationen zu Tracking-Funktionen in Adobe Campaign
 feature: Monitoring, Email
 role: User
@@ -7,12 +7,12 @@ level: Beginner
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
 source-git-commit: 57e177dc6c30502f2ed3bb08b18586fa5399e89c
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '457'
 ht-degree: 73%
 
 ---
 
-# Erste Schritte zum Tracking von Nachrichten {#get-started-tracking}
+# Erste Schritte mit dem Tracking von Nachrichten {#get-started-tracking}
 
 Dank der Tracking-Funktionen können Sie mit Adobe Campaign die gesendeten Nachrichten verfolgen und das Empfängerverhalten überprüfen: Öffnungen, Klicks auf Links, Abmeldungen und mehr.
 

@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 97%
+source-wordcount: '643'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,7 @@ Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzuf�
 
    ![](assets/perso-content-block.png)
 
-1. Der Gestaltungsbaustein wird in Form eines Skripts eingefügt und in der Personalisierungsphase automatisch an das Empfängerprofil angepasst.
+1. Der Gestaltungsbaustein wird dann als Skript eingefügt. Er wird bei der Personalisierung automatisch an das Empfängerprofil angepasst.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Vorschau]** und wählen Sie eine Person aus, um den Inhalt dieses Bausteins für eine bestimmte Empfängerin oder einen bestimmten Empfänger anzuzeigen.
 
 Sie können den Quell-Code eines Gestaltungsbausteins in den Versandinhalt einfügen. Wählen Sie die Option **[!UICONTROL HTML-Quell-Code des Bausteins einfügen]** aus.
@@ -64,7 +64,7 @@ Gehen Sie wie folgt vor, um einen Gestaltungsbaustein zu erstellen:
 
    ![](assets/perso-new-block.png)
 
-1. Füllen Sie die Einstellungen des Gestaltungsbausteins aus:
+1. Konfigurieren Sie den Gestaltungsbaustein:
 
    ![](assets/perso-custom-block.png)
 
@@ -72,11 +72,11 @@ Gehen Sie wie folgt vor, um einen Gestaltungsbaustein zu erstellen:
    * Wählen Sie einen **Versand**-Inhaltstyp aus.
    * Aktivieren Sie die Option **[!UICONTROL Im Personalisierungsmenü anzeigen]**, um den Baustein über das Einfügen-Symbol der Personalisierungsfelder verfügbar zu machen.
    * Aktivieren Sie bei Bedarf die Option **[!UICONTROL Der Inhalt des Bausteins ist formatabhängig]**, um zwei verschiedene Bausteine für HTML- und Text-E-Mails zu definieren.
-   * Geben Sie den Inhalt (HTML, Text, JavaScript usw.) des Gestaltungsbausteins ein und klicken Sie auf **[!UICONTROL Speichern]**.
+   * Inhalt eingeben (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
 
 Nach der Speicherung ist der neue Gestaltungsbaustein im Versand-Editor verfügbar.
 
-## Tutorial-Video {#personalization-blocks-video}
+## Anleitungsvideo {#personalization-blocks-video}
 
 Im folgenden Video erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden können.
 

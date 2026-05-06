@@ -7,8 +7,8 @@ level: Beginner
 exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 94%
+source-wordcount: '291'
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ Um Ihre Campaign-Datenbank zu füllen, können Sie [Profile manuell hinzufügen]
 
 ## Importieren von Profilen mit einem Workflow {#import-profiles-with-a-wf}
 
-Workflows sind eine nützliche Methode, um Importverfahren zu automatisieren. Sie helfen Ihnen bei der Standardisierung Ihrer Datenverwaltungsaufgaben, egal ob Sie Daten von einer lokalen Datei oder von einem SFTP-Server importieren.
+Workflows können eine nützliche Methode sein, um einige Ihrer Importprozesse zu automatisieren. Unabhängig davon, ob Sie Daten aus einer lokalen Datei oder aus einem SFTP-Server importieren, können Sie Workflows verwenden, um Ihre Datenverwaltungsverfahren zu standardisieren.
 
 ### Daten aus einer Liste verwenden: Liste lesen {#data-from-read-list}
 
@@ -34,7 +34,7 @@ Nachdem die Daten erfasst wurden, können Sie sie in Ihren Workflows verwenden, 
 
 Adobe Campaign bietet eine allgemeine Importfunktion, mit der Sie beispielsweise eine Liste von Kunden oder potenziellen Kunden extrahieren können, die dann Teil einer Zielpopulation werden, oder Sie können Ihre Datenbank mit Daten aus externen Dateien versorgen.
 
-Allgemeine Importe werden über das Menü **[!UICONTROL Profile und Zielgruppen > Vorgänge]** auf der Adobe Campaign-Startseite verwaltet.
+Allgemeine Importe werden über das Menü **[!UICONTROL Profile und Zielgruppen > Aufträge]** auf der Adobe Campaign-Startseite verwaltet.
 
 ![](assets/new-import-job.png)
 
