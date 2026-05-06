@@ -286,7 +286,7 @@ In diesem Beispiel ist 0x001E das Tag des optionalen Felds und die UUID der Wert
 
 Um diesen Wert zu erfassen, können Sie jetzt den folgenden Regex im Feld &quot;Regex zur ID-Extraktion im SR&quot; festlegen:
 
-\b0x001E:([0-9a-f][-[0-9a-f][-{4}0-9a-f]{4}-[0-9a-f]{4}-{8}0-9a-f]{12})\b
+\b0x001E:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\b
 
 >[!IMPORTANT]
 >
