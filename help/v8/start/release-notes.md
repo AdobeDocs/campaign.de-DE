@@ -3,10 +3,10 @@ title: Versionshinweise zu Campaign v8
 description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
+source-git-commit: 4a3e6cf15b1877e6eb4e13fdee056356eab267c5
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 8%
+source-wordcount: '1754'
+ht-degree: 6%
 
 ---
 
@@ -16,11 +16,11 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 ## Version 8.9.2 {#release-8-9-2}
 
-_11. März 2026_
-
 >[!CAUTION]
 >
 > Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../start/connect.md#upgrade-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+
+_3. Mai 2026_
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-9-2}
 
@@ -28,11 +28,68 @@ _11. März 2026_
 
 ### Fehlerbehebungen {#fixes-8-9-2}
 
+>[!NOTE]
+>
+> Die unten aufgeführten Fehlerbehebungen wurden schrittweise in allen aufeinander folgenden 8.9.2-Builds implementiert. Navigieren Sie zu **[!UICONTROL Hilfe > Über…]** [Menü](upgrades.md#version), um zu überprüfen, ob Sie den neuesten 8.9.2 (11d1c68)-Build haben. Weitere Informationen erhalten Sie vom Adobe-Support.
+
 * Es wurde ein Problem behoben, bei dem Ereignisdaten in Transaktionsereignissen aufgrund eines Datentypkonvertierungsproblems falsch festgelegt wurden, was zu falschen Datumsangaben in dynamischen Berichten führte. (NEO-93923)
 * Fehlerkorrektur - Stille Push-Benachrichtigungen in Android und iOS funktionieren jetzt während der Versandvorbereitung, wenn die Titel- und Textfelder leer sind. (NEO-93739)
 * Fehlerkorrektur - Das Sprachfeld wird jetzt für Android-App-Registrierungs-Token erfasst, da die Abstimmschlüssel falsch sind. (NEO-93100)
 * Fehlerkorrektur - Die Versandvorbereitung schlägt jetzt nicht mehr fehl, wenn benutzerdefinierte Typologieregeln mit Druckregeln angewendet werden. (NEO-94457)
 * Es wurde ein Problem behoben, bei dem in der Client-Konsole Fehler bei der Verarbeitung von HTTP-Anfragen auftreten konnten. (NEO-94071)
+
+<!-- BUILD 8.9.2.9829.9669833 -->
+
+* Die FDA-Überwachung ist jetzt standardmäßig deaktiviert, um Fehler beim Einfügen des Verbindungsprotokolls zu vermeiden. (NEO-94841)
+* Es wurde ein Problem behoben, bei dem Interaction SOAP-Aufrufe, die für die Angebotseinlösung verwendet werden, mit einem Namespace-Auflösungsfehler fehlschlagen konnten. (NEO-94787)
+<!-- infra * Fixed an issue where Snowflake connections using private key authentication could fail on ARM64 architectures. (NEO-94350) -->
+* Es wurde ein Problem behoben, bei dem Zeichenfolgenfelder mit der Länge 1 zu SQL-Fehlern in temporären Workflow-Tabellen in PostgreSQL 17 führen konnten. (NEO-94487)
+<!-- linked to previous build * Fixed an issue where the server could fail to restart after a Debian 13 build upgrade due to a missing dependency. (NEO-94598) -->
+
+<!-- BUILD 8.9.2.9829.c90aa36 -->
+
+* Es wurde ein Problem behoben, bei **die Option „Mirrorseite anzeigen** in der Client-Konsole und der Web-Benutzeroberfläche den Fehler „Fehlerhafte Mirrorseite“ zurückgeben konnte. (NEO-93303)
+
+<!-- BUILD 8.9.2.9830.4a6f868 -->
+
+* Fehlerkorrektur - Der vorkonfigurierte technische Workflow **Tracking** schlägt nach der Installation eines Multivarianz-Pakets in FFDA-Bereitstellungen nicht mehr fehl. (NEO-94972)
+* Fehlerkorrektur - Bei der Versandvorbereitung können keine Empfänger zur Zielgruppe hinzugefügt werden, wenn die Versandvorlage eine Gewichtungsformel verwendet, die auf den aktuellen Versand verweist. (NEO-94892)
+<!-- hotfix -->
+* Fehlerkorrektur - Workflow-Anreicherungen mit Joins über zwei aufeinander folgende 1-N-Links hinweg schlagen nach einem Upgrade nicht mehr mit SQL-Fehlern fehl. (NEO-94893)
+
+<!-- BUILD 8.9.2.9831.f53d3d2 -->
+
+* Fehlerkorrektur - In der E-Mail-Pipeline wird jetzt nicht mehr viel Arbeitsspeicher belegt. (NEO-95088)
+* Es wurde ein Problem behoben, bei dem die E-Mail-Typologieregel in Konflikt stehende Empfänger fälschlicherweise von einer Versandzielgruppe ausschließen konnte, wenn Seed- oder Testversand-Adressen verwendet wurden. (NEO-95026)
+* Es wurde ein Problem behoben, bei dem der standardmäßige technische Workflow **Angebotsbenachrichtigung** nach einem Upgrade fehlschlug. (NEO-95064)
+* Der Multivarianz-Paketinstallationsprozess wurde verbessert, um Tracking-Workflow-Fehler während Build-Upgrades zu verhindern. (NEO-95018)
+
+<!-- BUILD 8.9.2.9831.11d1c68 -->
+
+* Fehlerkorrektur - Der Server stürzt jetzt nicht mehr wiederholt ab, was zu Instanzausfällen führen kann. (NEO-95304)
+* Es wurde ein Problem behoben, bei dem Tracking- und Mirrorseiten-Links Sendungen nicht laden konnten. (NEO-95239)
+* Fehlerkorrektur - Beim Anmelden bei Campaign-Web-Anwendungen, die durch das einmalige Anmelden von IMS geschützt sind, kommt es jetzt nicht mehr zu einer Umleitungsschleife. (NEO-95188)
+* Fehlerkorrektur - Nach dem Speichern des Versands fehlt jetzt das Erstellungsdatum des Versands in den Extraktionsdateien des Versands. (NEO-95010)
+* Es wurde ein Problem behoben, bei dem untergeordnete Workflows, die in großen Mengen erzeugt wurden, im Status **In Bearbeitung** bleiben konnten, wodurch die Kapazität des Transaktions-Workflows reduziert wurde. (NEO-95131)
+* Es wurde ein Problem behoben, bei dem die **Liste lesen**-Aktivität vordefinierte Listenvorlagen mit Workflow-generierten Listenstrukturen überschreiben konnte, was zu Fehlern in nachgelagerten Workflows führte. (NEO-95103)
+* Es wurde ein Problem behoben, bei dem die Verarbeitung von Feedback zu Push-Benachrichtigungen dazu führen konnte, dass der Server bei der Verarbeitung von Sendungen mit hohem Volumen abstürzte. (NEO-95150)
+* Es wurde ein Problem behoben, bei dem beim Öffnen **Registerkarte** Daten“ im `xtk:workflow` im Schema-Explorer eine Fehlermeldung Trigger werden konnte. (NEO-94923)
+<!-- hotfixes -->
+* Fehlerkorrektur - Die Aktivität **Anreicherung** kann jetzt keine Ausgabeattribute mehr aus Upstream-Aktivitäten **Unter-Workflows** abrufen, was dazu führt, dass Workflows fehlschlagen. (NEO-95151)
+* Fehlerkorrektur - Die Aufnahme von Tracking-Daten funktioniert jetzt problemlos, wenn der Versandstatus nicht mehr aktualisiert werden kann und die nachgelagerte Nachrichtenverarbeitung blockiert wird. (NEO-94666)
+* Es wurde ein Problem behoben, bei dem durch bestimmte Aktionen der Client-Konsole im Zusammenhang mit Angebotsvorschlägen lange laufende Abfragen in Snowflake-Datenbanken Trigger wurden, was zu Sperren und Langsamkeit führte. (NEO-92936)
+* Es wurde ein Problem behoben, bei dem benutzerdefinierte Optionen zum Speichern verschlüsselter Schlüssel nicht für externe Snowflake-Konten konfiguriert werden konnten. (NEO-93302)
+
+<!-- 
+Internal/non-customer-facing:
+* Internal test automation task added to cover NEO-94893. (NEO-94990) — autotest only
+Customer-specific hotfixes:
+* Fixed an issue affecting WhatsApp delivery preparation. (NEO-92480) — HeroMotoCorp only
+* Added a feature-flagged optimization to use dynamic shared memory in Customer Targeting Audience (CTA) processing. (NEO-93542) — DerTour only
+* Fixed an issue where the delivery alerting workflow could fire incorrect "long start pending" notifications even when deliveries were sent within the configured threshold. (NEO-93434) — non-ZDT hotfix, NORC only
+* Added a new parameter in the mobile SDK to allow identification of the source instance for push notifications. (NEO-94650) — ICICI only
+* Fixed an issue with the custom send time feature on the Web UI where deliveries waited until the contact date and time to execute instead of executing at the equivalent local time per recipient timezone, breaking parity with Campaign Standard behavior. (NEO-94762) — H&M only (in progress at time of writing)
+-->
 
 ## Version 8.9.1 {#release-8-9-1}
 
@@ -48,14 +105,14 @@ Der **neue SMS-**-Connector) ist jetzt für alle Kunden (GA) verfügbar. Weiterf
 
 Diese Version enthält eine Reihe von Funktionen, die in der Web-Benutzeroberfläche von Campaign verfügbar sind:
 
-* [Mehrsprachige Bereitstellungsfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=de){target="_blank"}
-* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=de){target="_blank"}
-* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=de){target="_blank"}
-* [Inhaltsexperimente - A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=de){target="_blank"}
-* [Kontinuierliche Versandaktivität](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=de){target="_blank"}
-* [Validierungsverwaltung für Kampagnen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=de){target="_blank"}
+* [Mehrsprachige Versandfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Inhaltsexperimente - A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Kontinuierliche Versandaktivität](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Validierungsverwaltung für Kampagnen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
+Weitere Informationen finden Sie in den Versionshinweisen zur [ Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-9-1}
 
