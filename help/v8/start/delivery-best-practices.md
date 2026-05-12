@@ -6,10 +6,25 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+TQID: https://experienceleague.adobe.com/20Kh0O94OY8Vpy5SmhVUUgVOCkWy7DNZiJko3EeOx-E
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '3188'
-ht-degree: 84%
+source-wordcount: 3188
+ht-degree: 92%
 
 ---
 
@@ -73,7 +88,7 @@ Die regelmäßige Wartung Ihrer Sendungen ist für eine optimale Plattformleistu
 
 ### Anmeldemöglichkeit mit doppelter Bestätigung (Double opt-in) {#double-opt-in}
 
-Um das Senden von Nachrichten an ungültige Adressen zu vermeiden, unsachgemäße Kommunikation zu begrenzen und die Reputation des Absenders zu verbessern, empfiehlt Adobe die Implementierung eines Mechanismus zum doppelten Opt-in für die Bestätigung nach dem Abonnement. Dadurch wird sichergestellt, dass sich ein Empfänger absichtlich angemeldet hat.
+Um das Senden von Nachrichten an ungültige Adressen zu vermeiden, unsachgemäße Kommunikation zu begrenzen und die Reputation des Absenders zu verbessern, empfiehlt Adobe die Implementierung eines Double-Opt-in-Mechanismus zur Bestätigung nach dem Abschluss eines Abonnements. Dadurch wird sichergestellt, dass ein Empfänger bzw. eine Empfängerin das Abonnement absichtlich abgeschlossen hat.
 
 ## Vorlagen verwenden {#use-templates}
 
@@ -81,7 +96,7 @@ Versandvorlagen ermöglichen eine effiziente Nutzung, da sie für die häufigste
 
 ### Subdomains und Branding {#subdomains-and-branding}
 
-Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Wenn eine Bank die Domain bluebank.com besitzt, können ihre Subdomains @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com usw. sein. Eine Versandvorlage pro Subdomain ermöglicht die Verwendung der richtigen vorkonfigurierten Parameter für jede Ihrer Marken, wodurch Fehler vermieden und Zeit gespart werden. Weitere Informationen zum Subdomain-Branding finden Sie in der [Dokumentation zum Control Panel von Campaign](https://experienceleague.adobe.com/de/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Wenn einer Bank die Domain „bluebank.com“ gehört, sind beispielsweise folgende Subdomains möglich: @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com. Mit einer Versandvorlage pro Subdomain können Sie stets die richtigen vorkonfigurierten Parameter für jede Marke verwenden, um Fehler zu verhindern und Zeit zu sparen. Weitere Informationen zum Subdomain-Branding finden Sie in der [Dokumentation zum Control Panel von Campaign](https://experienceleague.adobe.com/de/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Konfigurieren von Adressen {#configure-addresses}
 
@@ -89,8 +104,8 @@ Achten Sie darauf, die folgenden Richtlinien anzuwenden:
 
 * Die Angabe der Absenderadresse ist für den E-Mail-Versand zwingend erforderlich. Manche ISPs (Internet Service Provider) prüfen die Gültigkeit der Absenderadresse, bevor sie Nachrichten akzeptieren.
 * Eine schlecht formulierte Adresse könnte vom Empfangs-Server abgelehnt werden. Achten Sie darauf, dass eine korrekte Adresse angegeben ist.
-* Die Adresse muss den Absender explizit identifizieren. Die Domain muss im Besitz des Absenders und für ihn registriert sein.
-* Adobe empfiehlt, E-Mail-Konten zu erstellen, die den für Sendungen und Antworten angegebenen Adressen entsprechen. Wenden Sie sich an Ihren Messaging-Systemadministrator.
+* Die Adresse muss den Absender explizit identifizieren. Die Domain muss im Besitz des Absenders sein und auf dessen Namen registriert sein.
+* Adobe empfiehlt, E-Mail-Konten zu erstellen, die der für Sendungen und Antworten angegebenen Adresse entsprechen. Wenden Sie sich an den bzw. die Systemadmin für das Messaging-System.
 
 +++ **Schritte zum Konfigurieren von Adressen in der Campaign-Benutzeroberfläche**
 
@@ -116,7 +131,7 @@ Eine Typologie enthält Regeln, die in der Analysephase vor dem Versand einer Na
 
 In den Eigenschaften der Vorlage können Sie auf der Registerkarte **[!UICONTROL Typologie]** bei Bedarf eine benutzerdefinierte Typologie auswählen.
 
-Um beispielsweise den ausgehenden Traffic besser zu kontrollieren, können Sie festlegen, welche IP-Adressen verwendet werden können, indem Sie eine Affinität pro Subdomain definieren und eine Typologie pro Affinität erstellen. Die Affinitäten werden in der Konfigurationsdatei der Instanz definiert. Wenden Sie sich an Ihren Adobe Campaign-Administrator.
+Um beispielsweise den ausgehenden Traffic besser zu steuern, können Sie festlegen, welche IP-Adressen verwendet werden können, indem Sie für jede Subdomain eine Affinität definieren und für jede Affinität eine Typologie erstellen. Die Affinitäten werden in der Konfigurationsdatei der Instanz bestimmt. Wenden Sie sich an Ihre bzw. Ihren Adobe Campaign-Admin.
 
 Weiterführende Informationen zu Typologien finden Sie in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md).
 
@@ -184,7 +199,7 @@ Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position ist a
 
 ### Abmelde-Link {#unsub-link-check}
 
-Der Abmelde-Link ist wichtig. Sie muss sichtbar und gültig sein und das Formular muss funktionsfähig sein. Bei der Analyse einer Nachricht überprüft die [Typologieregel](../../automation/campaign-opt/control-rules.md) **[!UICONTROL Genehmigung des Abmelde-Links]** standardmäßig, ob ein Ausschluss-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt.
+Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig sein und das Formular muss funktionieren. Bei der Analyse einer Nachricht überprüft die [Typologieregel](../../automation/campaign-opt/control-rules.md) **[!UICONTROL Genehmigung des Abmelde-Links]** standardmäßig, ob ein Ausschluss-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt.
 
 [In diesem Abschnitt](../send/personalization-blocks.md) erfahren Sie, wie man einen Ausschluss-Link einfügt.
 
@@ -291,7 +306,7 @@ Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erste
 
 Wenn Ihr Inhalt fertiggestellt ist, müssen Sie sorgfältig auswählen, wer Ihre Nachricht erhalten soll.
 
-Um einen erfolgreichen Versand durchzuführen, müssen Sie möglichst relevanten personalisierten Inhalt an die richtigen Empfänger senden. Mit Adobe Campaign können Sie eine präzise Zielgruppe erstellen: Sie können Empfängerinnen und Empfänger anhand ihres Alters, ihrer Lokalisierung, ihrer gekauften Produkte, eines Links in einem früheren Versand usw. auswählen. Mit Adobe Campaign können Sie auch Testprofile, Kontrollgruppen und Testadressen definieren, um sicherzustellen, dass Ihre Zielgruppe korrekt ist.
+Um einen erfolgreichen Versand durchzuführen, müssen Sie möglichst relevanten personalisierten Inhalt an die richtigen Empfänger senden. Mit Adobe Campaign können Sie eine äußerst präzise Zielgruppe erstellen: Sie können die Empfängerinnen und Empfänger beispielsweise nach Alter, Ort, Kaufverhalten und Klicks auf Links in früheren Sendungen auswählen. Mit Adobe Campaign können Sie Testprofile, Kontrollgruppen und Testadressen definieren, um sicherzustellen, dass Ihre Zielgruppe korrekt ist.
 
 ### Zielgruppen-Mappings {#target-mappings}
 
@@ -423,7 +438,7 @@ Typologieregeln ermöglichen den kriterienbasierten Ausschluss eines Teils der Z
 
 ## Verfolgen und überwachen {#track-and-monitor}
 
-Sie haben auf die Schaltfläche **Senden** geklickt? Mal sehen, was passiert! Nach dem Versand der Nachrichten ermöglicht es Ihnen Adobe Campaign die gesendeten Nachrichten zu verfolgen und festzustellen, wie Ihre Empfänger darauf reagieren. Dadurch können Sie den zukünftigen Versand verbessern und Ihre nächsten Kampagnen optimieren.
+Sie haben auf die Schaltfläche **Senden** geklickt? Sehen wir uns an, was passiert. Nach dem Versand der Nachrichten ermöglicht es Ihnen Adobe Campaign die gesendeten Nachrichten zu verfolgen und festzustellen, wie Ihre Empfänger darauf reagieren. Dadurch können Sie den zukünftigen Versand verbessern und Ihre nächsten Kampagnen optimieren.
 
 ## Überwachen von Sendungen {#monitoring-deliveries}
 

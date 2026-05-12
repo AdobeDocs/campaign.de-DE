@@ -5,9 +5,33 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+TQID: https://experienceleague.adobe.com/DWjWISB-REvq9WPEHV8t4lwxoSIbtMRBHJIby6RTEJI
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2:
+  - id: a1681cd8-6b2e-4955-9113-33b5f7a22b8c
+  - id: af6750fd-3c1b-4ad2-9fe3-99e81510998d
+  - id: bec93d13-829e-414d-9c2b-71b3974944a0
+  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '2782'
+source-wordcount: 2782
 ht-degree: 99%
 
 ---
@@ -90,7 +114,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 |--- |--- |--- |
 | ID | <ul><li>Die ID ist der physische Primärschlüssel einer Adobe Campaign-Tabelle. Bei integrierten Tabellen handelt es sich um eine Universally Unique ID (UUID).</li><li>Diese Kennung muss eindeutig sein. </li><li>Eine UUID kann in einer Schemadefinition sichtbar sein.</li></ul> | <ul><li>Automatisch erstellte Kennungen sollten nicht als Referenz in einem Workflow oder in einer Package-Definition verwendet werden.</li><li>Die ID in einer Tabelle ist eine UUID. Dieser Typ sollte nicht geändert werden.</li></ul> |
 | Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Ändern Sie den von Adobe Campaign erstellten Namen, wenn Sie das Objekt von einer Umgebung aus in einer anderen bereitstellen möchten.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Bestimmte reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk* usw.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces).</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen „ “, Doppelpunkt „:“ oder Bindestrich „-“. Alle diese Zeichen würden durch einen Unterstrich „_“ (zulässiges Zeichen) ersetzt werden. Beispielsweise würden „abc-def“ und „abc:def&quot; als „abc_def“ gespeichert und einander überschreiben.</li></ul> |
-| Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
+| Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Eintrags in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Eintrags.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
 Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist der Primärschlüssel von Adobe Campaign eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden. [Weitere Informationen](../architecture/keys.md)
 
