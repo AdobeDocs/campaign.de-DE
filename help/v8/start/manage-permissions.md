@@ -130,7 +130,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
    >[!IMPORTANT]
    >
-   >Die **[!UICONTROL Administrator]**-Rolle gewährt Zugriff auf das Campaign Control Panel. Jedes Produktprofil in der Adobe Admin Console, das das Wort „Admin“ im Namen enthält (z. B. „Administratoren“, „Admin“, „Admins“, „Genehmigungsadmin“ usw.) gewährt Zugriff auf das Control Panel. Weitere Informationen zum [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+   >Die **[!UICONTROL Administrator]**-Rolle gewährt Zugriff auf das Campaign Control Panel. Jedes Produktprofil in der Adobe Admin Console, das das Wort „Admin“ im Namen enthält (z. B. „Administratoren“, „Admin“, „Admins“, „Genehmigungsadmin“ usw.) gewährt Zugriff auf das Control Panel. Weitere Informationen zum [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
 
 1. **[!UICONTROL Versandverantwortliche Benutzer]** (Versand)
 
