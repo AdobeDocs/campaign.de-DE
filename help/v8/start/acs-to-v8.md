@@ -6,10 +6,14 @@ role: User
 level: Beginner
 exl-id: 98613a0a-7a6d-41a5-9541-e045d4ca318f
 TQID: https://experienceleague.adobe.com/47AdBAmfUk8LOApirtY00zHx1cddAdH0xVoYUlqVctQ
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 206
@@ -25,7 +29,7 @@ Campaign v8-Benutzende haben jetzt Zugriff auf die neue Campaign Web-Benutzerob
 
 **Nützliche Links für den Beginn:**
 
-* Erfahren Sie in diesem [ wichtige Unterschiede und Anleitungen](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/home){target="_blank"}.
+* Erfahren Sie in diesem [&#x200B; wichtige Unterschiede und Anleitungen](https://experienceleague.adobe.com/de/docs/campaign-web/acs-to-ac/home){target="_blank"}.
 
 * Weitere Informationen zur neuen Web-Benutzeroberfläche von Campaign finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=de){target="_blank"}.
 
