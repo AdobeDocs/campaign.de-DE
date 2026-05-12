@@ -5,9 +5,14 @@ description: Erfahren Sie, wie Sie Kosten kontrollieren können
 feature: Campaigns, Resource Management
 role: User
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+TQID: https://experienceleague.adobe.com/OQtmoiTmvFeWbYfLNpjuk5FZLb2Si-mPBbMNMWnDGoo
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '2499'
+source-wordcount: 2499
 ht-degree: 59%
 
 ---
@@ -209,7 +214,7 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
 1. Erstellen Sie einen Dienstleister sowie eine Dienstleistungsvorlage mit Kostenstruktur über den Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister]**. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories).
 
-   Erstellen Sie für die Briefpost-Sendungen Kostenkategorien **[!UICONTROL Briefumschläge]** (Typen 114x229 und 162x229), **&#x200B;**&#x200B;und **[!UICONTROL Drucken]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
+   Erstellen Sie für die Briefpost-Sendungen Kostenkategorien **[!UICONTROL Briefumschläge]** (Typen 114x229 und 162x229), **** und **[!UICONTROL Drucken]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 

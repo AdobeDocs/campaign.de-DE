@@ -5,9 +5,12 @@ description: Erfahren Sie, wie Sie mit einem Workflow eine Geburtstags-E-Mail se
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+TQID: https://experienceleague.adobe.com/K6fvJssifUJoE7PYvXlHwmGU6oNQztCvCqAKUYNdomE
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: 866
 ht-degree: 90%
 
 ---
@@ -58,7 +61,7 @@ Gehen Sie hierzu wie folgt vor:
 
    Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
-1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]**&#x200B;**[!UICONTROL gleich aus]**.
+1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]****[!UICONTROL gleich aus]**.
 
    ![](assets/s_ncs_user_create_exp_exple02.png)
 

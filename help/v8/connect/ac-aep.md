@@ -5,9 +5,13 @@ feature: Experience Platform Integration
 role: Developer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+TQID: https://experienceleague.adobe.com/sQgS-ig3-OfCLseGyqsbismNI-qqy1E2io6P17HZsUU
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: 583
 ht-degree: 93%
 
 ---
@@ -36,7 +40,7 @@ Die wichtigsten Schritte zum Senden von Adobe Experience Platform-Zielgruppen an
 
       ![](assets/aep-destination.png){width="800" align="center"}
 
-  Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [&#128279;](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+  Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 
 * Verwenden Sie eine **Quellverbindung** von Adobe Campaign Managed Cloud Services, um die Versand- und Trackinglogs von Adobe Campaign an Adobe Experience Platform zu senden:
 
@@ -65,4 +69,4 @@ Die wichtigsten Schritte zum Synchronisieren von Adobe Experience Platform-Profi
 1. Konfigurieren Sie die Profilattribute, die Sie in Adobe Campaign aktualisieren möchten.
 1. Sobald der Ablauf konfiguriert wurde, werden die ausgewählten Profilattribute mit Adobe Campaign synchronisiert und für alle Profile aktualisiert, die auf die im Ziel konfigurierten Segmente ausgerichtet sind.
 
-Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [&#128279;](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}

@@ -5,9 +5,16 @@ feature: Reporting
 role: Developer
 level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+TQID: https://experienceleague.adobe.com/XLxFJOA5J9hP-CxI3JmYBHyvCBZyerwJYBrX1IkvrMY
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: 797
 ht-degree: 96%
 
 ---
@@ -102,7 +109,7 @@ Im Beispiel sollen nur Jahre, Monate und Tage angezeigt werden. Beachten Sie, da
 
 1. Erstellen Sie eine weitere Dimension, um Daten relativ zur Stadt des Empfängers zu analysieren. Fügen Sie hierzu eine neue Dimension hinzu und wählen Sie im Knoten **[!UICONTROL Geografische Lokalisierung]** des Empfängerschemas das Feld Ort aus.
 
-Sie können die Klassierung aktivieren, um das Lesen von Informationen zu vereinfachen, und die Werte mit einer [Auflistung“ &#x200B;](../config/enumerations.md).
+Sie können die Klassierung aktivieren, um das Lesen von Informationen zu vereinfachen, und die Werte mit einer [Auflistung“ ](../config/enumerations.md).
 
 Wählen Sie die Aufzählung in der Dropdown-Liste aus. Beachten Sie, dass diese Aufzählung als **[!UICONTROL Reserviert für Klassierung]** definiert werden muss.
 

@@ -6,9 +6,15 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 254765d3-f664-4200-9a70-f8876f2b2933
-source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
+TQID: https://experienceleague.adobe.com/pkDQp2NsMTR2iy9QsA3NjxJs-h-wud0pKdqOuE3foIs
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: 1207
 ht-degree: 63%
 
 ---
@@ -73,7 +79,7 @@ Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden
 
 Die Registerkarte **[!UICONTROL Versand]** enthält einen Verlauf der Vorfälle in diesem Versand. Sie enthält die Versandlogs, d. h. die Liste der gesendeten Nachrichten und deren Status sowie die zugehörigen Nachrichten.
 
-Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Verschiedene Status werden auf der Seite [Versandstatus“ &#x200B;](delivery-statuses.md).
+Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Verschiedene Status werden auf der Seite [Versandstatus“ ](delivery-statuses.md).
 
 >[!NOTE]
 >
@@ -146,7 +152,7 @@ Wenn Ihr Versand länger als üblich dauert, nachdem Sie auf die Schaltfläche *
 
 ### Probleme mit der IP-Adresse und der Reputation
 
-Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. Überprüfen Sie Ihre Versandlogs (Broadlogs) auf der Registerkarte **[!UICONTROL Versand]** auf Bounce-Nachrichten, die auf Reputationsprobleme hinweisen. Orientierungshilfen zur Reputationsverwaltung finden [&#x200B; im Abschnitt &#x200B;](monitoring-deliverability.md)Zustellbarkeits-Monitoring“.
+Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. Überprüfen Sie Ihre Versandlogs (Broadlogs) auf der Registerkarte **[!UICONTROL Versand]** auf Bounce-Nachrichten, die auf Reputationsprobleme hinweisen. Orientierungshilfen zur Reputationsverwaltung finden [ im Abschnitt ](monitoring-deliverability.md)Zustellbarkeits-Monitoring“.
 
 ### Versandgröße und -komplexität
 

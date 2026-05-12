@@ -6,9 +6,14 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
+TQID: https://experienceleague.adobe.com/MWKNwVM6bS0V5jpaXEXZMuhgEHOWwBelpRBKyAnkY1I
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: 1309
 ht-degree: 88%
 
 ---
@@ -116,7 +121,7 @@ Für jede Kampagne stehen folgende Funktionen zur Verfügung:
 
 Für jede Kampagne werden Aufträge, Ressourcen und Sendungen in einem Dashboard zusammengefasst dargestellt. Auf dieser Benutzeroberfläche können Sie Marketing-Aktionen verwalten und koordinieren.
 
-Mit Adobe Campaign können Sie partizipative Prozesse für die Erstellung und Validierung der unterschiedlichen Etappen Ihrer Kampagnen einrichten: Budget-, Zielgruppen- und Inhaltsvalidierung usw. Diese Orchestrierung wird in [diesem Abschnitt) &#x200B;](marketing-campaign-approval.md).
+Mit Adobe Campaign können Sie partizipative Prozesse für die Erstellung und Validierung der unterschiedlichen Etappen Ihrer Kampagnen einrichten: Budget-, Zielgruppen- und Inhaltsvalidierung usw. Diese Orchestrierung wird in [diesem Abschnitt) ](marketing-campaign-approval.md).
 
 ![](assets/campaigns-dashboard-approval-tab.png)
 
@@ -208,4 +213,4 @@ Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden
 
 In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426473?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

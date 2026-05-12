@@ -6,9 +6,14 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: d34b6073-a7e7-443a-a6d8-e74ef10a67e8
-source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
+TQID: https://experienceleague.adobe.com/-HhNQgwweCPn3ts3AAm6SjdFTxg-2zexCALMqS1Yjgc
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: 959
 ht-degree: 20%
 
 ---
@@ -78,7 +83,7 @@ Mit dem Abfrage-Editor können Sie Daten filtern, um Ihre Ergebnisse einzugrenze
 
 Nach Auswahl **[!UICONTROL Filterbedingungen]** wird der Abschnitt **[!UICONTROL Target-Elemente]** geöffnet. Hier können Sie die Regeln für das Filtern der zu erfassenden Daten definieren.
 
-* Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die zum Erstellen der Bedingung erforderlich sind. Sie können auch mehrere Bedingungen kombinieren, wie [auf dieser Seite) &#x200B;](filter-conditions.md).
+* Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die zum Erstellen der Bedingung erforderlich sind. Sie können auch mehrere Bedingungen kombinieren, wie [auf dieser Seite) ](filter-conditions.md).
 
 * Um einen vorhandenen Filter wiederzuverwenden, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie **[!UICONTROL Vordefinierter Filter]** und wählen Sie den gewünschten Filter aus.
 

@@ -6,9 +6,13 @@ feature: Workflows
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: eedc796a-865f-47a8-8807-5980546b8adf
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+TQID: https://experienceleague.adobe.com/0C-z3NZX9SMcI4Zl2dxUKwf4l3welUfwGQijq3H5K6A
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: 286
 ht-degree: 39%
 
 ---
@@ -33,6 +37,6 @@ Da diese Kampagnen zu Beginn jeder Saison gestartet werden, um relevante sportli
 1. Auf dem nächsten Bildschirm wählen Sie März, Juni, September und Dezember. Wählen Sie den 20. des Monats und dann die Uhrzeit aus, zu der Sie den Workflow starten möchten.
 1. Geben Sie abschließend den Gültigkeitszeitraum der Abfrage an. Im vorliegenden Beispiel wurde **[!UICONTROL Dauerhaft gültig]** ausgewählt.
 
-1. Konfigurieren Sie nun die Aktivität Listen-Update (wie im Abschnitt [&#128279;](list-update.md)Listen-Update beschrieben).
+1. Konfigurieren Sie nun die Aktivität Listen-Update (wie im Abschnitt ](list-update.md)Listen-Update[ beschrieben).
 
 Der Workflow wird daher automatisch kurz vor Beginn jeder Staffel gestartet. Die Liste wird mit neuen geeigneten Empfängern aktualisiert, um die Angebote zu erhalten.
