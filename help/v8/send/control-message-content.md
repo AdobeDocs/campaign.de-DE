@@ -9,7 +9,7 @@ exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -22,7 +22,7 @@ Befolgen Sie beim Entwerfen Ihrer Nachrichteninhalte die folgenden Grundsätze:
 * [Absenderadresse](#sender-address): Die Adresse muss den Absender explizit identifizieren. Die Domain muss im Besitz des Absenders und auf ihn registriert sein. Die Domain-Registrierung darf nicht privat erfolgen.
 * [Personalisierung](#personalization): Die Personalisierung von Inhalten und das Definieren einer Sendezeit pro Empfänger erhöhen die Wahrscheinlichkeit, dass Ihre Nachricht geöffnet wird.
 * Bilder und Text: Achten Sie auf ein angemessenes Verhältnis zwischen Text und Bildern (z. B. 60 % Text und 40 % Bilder).
-* [Abmelde-Link](#opt-out) und -Landingpage: Der Abmelde-Link ist unverzichtbar. Sie muss sichtbar und gültig sein und das Formular muss funktionsfähig sein.
+* [Abmelde-Link](#opt-out) und -Landingpage: Der Abmelde-Link ist unverzichtbar. Er muss gut sichtbar und gültig sein und das Formular muss funktionieren.
 * Vorschau: Verwenden Sie die von Adobe Campaign angebotenen Tools, um den Inhalt Ihrer E-Mails zu überprüfen und zu optimieren ([Inbox Rendering](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
 Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=de){target="_blank"}.
