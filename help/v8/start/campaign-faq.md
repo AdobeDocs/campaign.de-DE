@@ -7,9 +7,12 @@ level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 hide: true
 TQID: https://experienceleague.adobe.com/Cpc-97Lab93SQhsFloibdhpvCDFockj6afFSZUTgKoM
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 785
@@ -59,7 +62,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign? Lesen Sie die wichtigsten Frag
 
    Adobe Campaign ist mit einer Reihe von Dashboards und Tools zur Überwachung von E-Mail-Sendungen ausgestattet.
 
-   Erfahren Sie, wie [ Ihre Nachrichten verfolgen und überwachen können](../send/tracking.md) um sicherzustellen, dass Ihre Nachrichten gesendet werden, und wie Sie die Ausführung überwachen sowie Fehler beheben können.
+   Erfahren Sie, wie [&#x200B; Ihre Nachrichten verfolgen und überwachen können](../send/tracking.md) um sicherzustellen, dass Ihre Nachrichten gesendet werden, und wie Sie die Ausführung überwachen sowie Fehler beheben können.
 
 1. **Kann ich die Ausführung von Workflows überwachen?**
 
