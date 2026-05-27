@@ -140,7 +140,7 @@ In Campaign v8 wird die Zeitzone Benutzenden nur als Teil der REST-API **Aufrufe
 
 Die Campaign Standard Workflow GET-API gibt Parameternamen wie die Workflow-Instanzvariablen und deren Datentypen (boolesch, Zeichenfolge usw.) zurück. Dies wird verwendet, um beim Auslösen des Signals über einen POST-API-Aufruf einen entsprechend formatierten JSON-Anfragetext zu erstellen.
 
-Campaign v8 unterstützt keine Advertising Workflow-Instanzvariablen, erwartet jedoch, dass die Entwickler wissen, was diese sind. Daher müssen Parameterinformationen im POST-Anfrageinhalt nach der Migration erstellt werden, ohne dass Parameterinformationen in der GET-API-Antwort verfügbar sind.
+Campaign v8 unterstützt keine Advertising Workflow-Instanzvariablen, erwartet jedoch, dass die Entwickler wissen, was diese sind. Daher müssen nach der Migration Parameterinformationen im POST-Anfragetext ohne Verfügbarkeit von Parameterinformationen in der GET-API-Antwort erstellt werden.
 
 <!--
 ## Transactional messages
