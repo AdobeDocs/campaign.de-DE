@@ -7,16 +7,10 @@ role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
 TQID: https://experienceleague.adobe.com/bgnDExQAdWAsulXRjLGA46VthqPYWfNZRJ66C4ppF9M
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1070
@@ -109,7 +103,7 @@ Gehen Sie wie folgt vor, um eine Versandvorlage von Grund auf zu konfigurieren:
 1. Passen Sie über die Schaltfläche **Eigenschaften** die Einstellungen an.
 1. Bestätigen Sie im Tab **Allgemein** die in den Dropdown-Menüs **Ausführungsordner**, **Ordner** und **Routing** ausgewählten Speicherorte oder ändern Sie sie.
 1. Tragen Sie der Kategorie **E-Mail-Parameter** den E-Mail-Betreff und die Zielpopulation ein.
-1. Fügen Sie Ihren **HTML-Inhalt** ein, um Ihre Vorlage zu personalisieren. Sie können auch einen Mirrorseite-Link und einen Abmelde-Link angeben.[&#128279;](../send/mirror-page.md)
+1. Fügen Sie Ihren **HTML-Inhalt** ein, um Ihre Vorlage zu personalisieren. Sie können auch einen Mirrorseite-Link und einen Abmelde-Link angeben.[](../send/mirror-page.md)
 1. Wählen Sie die Registerkarte **Vorschau**. Wählen Sie im Dropdown-Menü **Personalisierung testen** die Option **Empfänger** aus, um sich Ihre Vorlage in der Vorschau anzusehen.
 1. Klicken Sie auf **Speichern**. Ihre Vorlage kann jetzt in einem Versand verwendet werden.
 
@@ -152,18 +146,18 @@ Dadurch wird ein Versand im Ordner erzeugt, der mit der Vorlage verknüpft ist. 
 
 Das folgende Video zeigt, wie man eine Vorlage für einen Ad-hoc-Versand konfiguriert.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409820?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
 
 ### Einrichten der Eigenschaften von Versandvorlagen
 
 Das folgende Video zeigt, wie die Eigenschaften der Versandvorlage festgelegt werden, und erklärt die einzelnen Eigenschaften im Detail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443410?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
 ### Bereitstellen einer Ad-hoc-Versandvorlage
 
 In diesem Video wird erläutert, wie man eine Ad-hoc-E-Mail-Versandvorlage bereitstellt. Außerdem wird der Unterschied zwischen einem E-Mail-Versand- und einem Versand-Workflow erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444966?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.
