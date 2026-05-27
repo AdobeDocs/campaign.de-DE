@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Campaign
+title: Kampagne
 description: Campaign
 feature: Workflows
 role: User, Admin
