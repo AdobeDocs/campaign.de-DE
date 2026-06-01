@@ -7,17 +7,11 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
 TQID: https://experienceleague.adobe.com/IhK-z4Uj1G3O90YyCAlqdy39qACE6jcMvpjv875OhLc
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 468
 ht-degree: 100%
@@ -34,7 +28,7 @@ Während die meisten E-Mail-Clients Bilder ohne Probleme rendern, können einige
 
 Die von Adobe Campaign erzeugte Mirrorseite enthält alle Personalisierungsdaten.
 
-![Beispiel für einen Mirrorlink](assets/mirror-page-link.png){width="600" align="left"}
+![Beispiel für einen Mirrorlink](assets/mirror-page-link.png){width="600"}
 
 ## Hinzufügen eines Links zur Mirrorseite {#link-to-mirror-page}
 
@@ -42,7 +36,7 @@ Es empfiehlt sich, einen Link zur Mirrorseite einzufügen. Dieser Link kann beis
 
 In Adobe Campaign können Sie einen Link zur Mirrorseite in den E-Mail-Inhalt einfügen, indem Sie den dedizierten **Gestaltungsbaustein** verwenden. Der integrierte Gestaltungsbaustein **Link zur Mirrorseite** fügt den folgenden Code in Ihren E-Mail-Inhalt ein: `<%@ include view='MirrorPage' %>`.
 
-![](assets/mirror-page-insert.png){width="800" align="left"}
+![](assets/mirror-page-insert.png){width="800"}
 
 
 Weitere Informationen zum Einfügen von Gestaltungsinhaltsbausteinen finden Sie unter [Gestaltungsbausteine](personalization-blocks.md).
@@ -56,7 +50,7 @@ Sie können den Erzeugungsmodus der E-Mail-Mirrorseite steuern. Optionen sind in
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Gültigkeit]** in den E-Mail-Eigenschaften.
 1. Überprüfen Sie im Abschnitt **Verwaltung der Mirrorseite** die Dropdown-Liste **[!UICONTROL Modus]**.
 
-![](assets/mirror-page-generation.png){width="800" align="left"}
+![](assets/mirror-page-generation.png){width="800"}
 
 Zusätzlich zum Standardmodus stehen die folgenden Optionen zur Verfügung:
 
@@ -74,6 +68,6 @@ So greifen Sie auf diese Mirrorseite zu:
 
 1. Wählen Sie eine Empfängerin oder einen Empfänger aus und klicken Sie auf die Schaltfläche **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]**
 
-   ![](assets/mirror-page-display.png){width="800" align="left"}
+   ![](assets/mirror-page-display.png){width="800"}
 
    Die Mirrorseite wird in einem eigenen Bildschirm mit Personalisierungsdaten für die ausgewählte Empfängerin bzw. den ausgewählten Empfänger angezeigt.

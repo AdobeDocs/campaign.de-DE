@@ -4,18 +4,13 @@ description: Liste der Funktionen und Verbesserungen in Campaign v8-Versionen 20
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
 TQID: https://experienceleague.adobe.com/PCye0NRsbFxzoRgD-2apCDpph-gvtX0eboiuzdmVQZE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 531670de4c2f740e4f0a4b96049b23eb8000e40d
 workflow-type: tm+mt
-source-wordcount: 1952
-ht-degree: 97%
+source-wordcount: 1942
+ht-degree: 96%
 
 ---
 
@@ -77,7 +72,7 @@ _Samstag, 30. September 2022_
 <tr> 
 <td> <p>Der <a href="../send/twitter.md">Social-Kanal „X“</a> ist jetzt in Campaign v8 verfügbar. Sie haben folgende Möglichkeiten:</p>
 <ul> 
-<li><p>Nachrichten auf X (ehemals Twitter) senden: Mit Adobe Campaign können Sie Nachrichten direkt an Ihr X-Konto posten. Sie können auch Direktnachrichten an all Ihre Follower senden.
+<li><p>Nachrichten auf X senden (früher als Twitter bezeichnet): Mit Adobe Campaign können Sie Nachrichten direkt an Ihr X-Konto senden. Sie können auch Direktnachrichten an alle Ihre Follower senden.
 </p></li>
 <li><p>Neue Kontakte erfassen: Adobe Campaign kann automatisch Profildaten erfassen, sodass Sie Zielgruppenbestimmungs-Kampagnen durchführen und Cross-Channel-Strategien umsetzen können.
 </p></li>
@@ -96,7 +91,9 @@ Um die Sicherheit zu optimieren, wurden Sicherheits-Token aus den von Campaign g
 * Diese Änderung gilt nur für GET-URLs. Andere Typen, einschließlich POST-URLs, sind davon nicht betroffen.
 * Wenn Sie benutzerdefinierten Code verwenden, werden keine Sicherheits-Token mehr aus dem GET-URL-Sicherheits-Token-Parameter abgerufen. Sie müssen ein neues Sicherheits-Token mit folgendem JSSP-Code generieren:
 
-  ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
+  ```
+  getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);
+  ```
 
   Sie können auch die Anmelde-API verwenden, um Sicherheits-Token abzurufen.
 * Bei der Verwaltung von Sitzungs-Tokens gibt es keine Änderungen.

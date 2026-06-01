@@ -6,15 +6,11 @@ role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
 TQID: https://experienceleague.adobe.com/uVVmB-6U7nTrC0ypEHAINNtp5tcE0gr8ambKwDK56ls
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 756
 ht-degree: 96%
@@ -61,11 +57,11 @@ Der Typ der Testversand-Zielgruppe wird aus der Dropdown-Liste **[!UICONTROL Zie
 
   Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie können jedoch eine bestimmte Empfängerin oder einen bestimmten Empfänger aus der Hauptzielgruppe über das **[!UICONTROL Detail]**-Symbol auswählen.
 
-  ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution-details.png){width="800"}
 
   Wählen Sie die Option **[!UICONTROL Profil auswählen (muss Teil der Zielgruppe sein)]** und wählen Sie eine Empfängerin oder einen Empfänger aus.
 
-  ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution.png){width="800"}
 
 
 * Verwenden Sie die Option **[!UICONTROL Testadressen]** zur Verwendung von Testadressen als Testversand-Zielgruppe. Diese Adressen können aus einer Datei importiert oder manuell eingegeben werden.
@@ -86,7 +82,7 @@ Gehen Sie wie folgt vor, um einen Testversand durchzuführen:
 1. Überprüfen Sie im Fenster **[!UICONTROL Testversand durchführen]** die Empfängerinnen und Empfänger des Testversands.
 1. Klicken Sie auf **[!UICONTROL Analysieren]**, um die Vorbereitung der Testversand-Nachricht zu starten.
 
-   ![](assets/send-proof-analyze.png){width="800" align="left"}
+   ![](assets/send-proof-analyze.png){width="800"}
 
 1. Sobald die Versandvorbereitung abgeschlossen ist, verwenden Sie die Option **[!UICONTROL Versand bestätigen]**, um mit dem Versand von Testversandnachrichten zu beginnen.
 
@@ -108,11 +104,11 @@ Die Eigenschaften des Testversands werden im Abschnitt **[!UICONTROL Erweitert]*
 
 Standardmäßig werden Testversandnachrichten durch die Variable `Proof #N` im Betreff identifiziert. Dabei ist `N` die Nummer des Testversands. Diese Nummer wird bei jeder Analyse des Testversands erhöht. Sie können das Präfix `proof` bei Bedarf ändern.
 
-![](assets/proof-parameters.png){width="800" align="left"}
+![](assets/proof-parameters.png){width="800"}
 
 
 ## Anleitungsvideo {#video-proof}
 
 Hier erfahren Sie, wie Sie einen E-Mail-Testversand durchführen und validieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447008?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)
