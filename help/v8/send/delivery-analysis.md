@@ -15,7 +15,7 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 754
 ht-degree: 96%
@@ -64,7 +64,7 @@ Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die
    * Ein gelbes Symbol steht für einen nicht kritischen Verarbeitungsfehler.
    * Ein rotes Symbol steht für einen kritischen Fehler, der die Durchführung des Versands verhindert.
 
-   ![](assets/delivery-analysis-results.png){width="800" align="left"}
+   ![](assets/delivery-analysis-results.png){width="800"}
 
 1. Klicken Sie auf **[!UICONTROL Schließen]**, um Fehler (falls vorhanden) zu korrigieren. Nachdem Sie die Änderungen vorgenommen haben, starten Sie die Analyse neu, indem Sie auf **[!UICONTROL Analysieren]** klicken.
 
@@ -80,7 +80,7 @@ Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die
 
 Navigieren Sie zur Registerkarte **[!UICONTROL Analyse]** in den Versandeigenschaften, um die Einstellungen für die Nachrichtenvorbereitung während der Analysephase zu definieren.
 
-![](assets/delivery-properties-analysis-tab.png){width="800" align="left"}
+![](assets/delivery-properties-analysis-tab.png){width="800"}
 
 Folgende Optionen stehen zur Verfügung:
 

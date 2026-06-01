@@ -15,7 +15,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 1653
 ht-degree: 90%
@@ -97,7 +97,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 1. Wählen Sie das [Zielgruppen-Mapping](../audiences/target-mappings.md) in der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus.
 1. Wählen Sie zur Konfiguration von Einschränkungsfiltern die Schaltfläche **[!UICONTROL Hinzufügen]** aus.
 
-   ![](assets/target-type.png){width="60%" align="left" zoomable="yes"}
+   ![](assets/target-type.png){width="60%" zoomable="yes"}
 
    Wählen Sie einen Filtertyp aus und klicken Sie auf **[!UICONTROL Weiter]**, um die Bedingungen zu definieren. Sie können die gefilterten Empfängerinnen und Empfänger über die Registerkarte **[!UICONTROL Vorschau]** anzeigen. Bei gewissen Zieltypen ermöglicht die Schaltfläche **[!UICONTROL Zielgruppe einschränken]** die Kombination verschiedener Zielgruppenbestimmungskriterien.
 
