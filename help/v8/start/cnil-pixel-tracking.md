@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 hide: true
-source-git-commit: 5c27d45ebac8ad300d35ef0ff858fbdaef6ec9fb
+source-git-commit: c56ec544361983d75851660e739d02aadeb65dcd
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '849'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Dieser Beitrag dient nur zu Informationszwecken. Es ist keine Rechtsberatung und
 
 ## Übersicht
 
-Am 14. April 2026 veröffentlichte die französische Datenschutzbehörde Commission nationale de l&#39;informatique et des libertés (CNIL) eine [Empfehlung zur Verwendung von Tracking-Pixeln in E-Mails](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf). In der Anleitung wird klargestellt, wann eine Zustimmung erforderlich ist, und die Bedeutung ordnungsgemäßer Zustimmungspraktiken für das E-Mail-Pixel-Tracking hervorgehoben. Diese Richtlinie könnte sich auf die Versandpraktiken von Entitäten auswirken, die E-Mails an Abonnenten mit Sitz in Frankreich versenden.
+Am 14. April 2026 veröffentlichte die _Commission nationale de l&#39;informatique et des libertés_ (CNIL), Frankreichs Datenschutzbehörde, eine [Empfehlung zur Verwendung von Tracking-Pixeln in E-Mails](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf). In der Anleitung wird klargestellt, wann eine Zustimmung erforderlich ist, und die Bedeutung ordnungsgemäßer Zustimmungspraktiken für das E-Mail-Pixel-Tracking hervorgehoben. Diese Richtlinie könnte sich auf die Versandpraktiken von Entitäten auswirken, die E-Mails an Abonnenten mit Sitz in Frankreich versenden.
 
 CNIL räumte Unternehmen ab dem Datum der Empfehlung einen Zeitraum von drei Monaten ein, um ihre E-Mail-Empfänger („Benutzer„) über das Vorhandensein der Tracking-Pixel, ihren Zweck und das Recht der Benutzer auf Opt-out zu informieren. Während dieser Übergangsphase wird von den Kunden erwartet, dass sie die Benutzer über das Pixel-Tracking informieren und ihnen bei Bedarf ein Opt-out anbieten. CNIL wird voraussichtlich nach dem 14. Juli 2026 mit Durchsetzungsmaßnahmen beginnen.
 
@@ -38,12 +38,12 @@ Kunden, die Unterstützung bei der Implementierung der oben beschriebenen Änder
 
 Kunden können die nativen Tracking-, Schema- und Personalisierungsmechanismen von Adobe Campaign verwenden, um bei der Konfiguration der Architektur bestimmte Aspekte zu berücksichtigen, die den CNIL-Richtlinien entsprechen:
 
-* **Klassifizierung des Versands.** Erweitern Sie nms:delivery mit einem emailType-Attribut (Authentifizierung, Nur Zustellbarkeit, Transaktion, Marketing, öffentlicher Dienst, B2B-Interessentengewinnung). Die Klassifizierung bestimmt, welche Pixel ohne Zustimmung zulässig sind.
-* **Einverständniserfassung.** Erweitern Sie nms:recipient mit einer zweckbezogenen Einverständnisstruktur, die die Formulierungsversion, den Zeitstempel, die Erfassungsquelle und den Ablauf enthält. Erweitern Sie Anmeldeformulare und Präferenzzentren, um Pixel-Einverständnis getrennt vom E-Mail-Opt-in zu erfassen.
-* **Pixelemission.** Definieren Sie eine NmsTracking_OpenFormula pro Pixelzweck (Authentifizierung, Zustellbarkeit, Leistung, Profilerstellung, Betrugserkennung). Eine Versandtypologieregel wählt basierend auf dem emailType und der zweckgebundenen Zustimmung des Empfängers aus, welche Formeln ausgegeben werden sollen. Gestaltungsbausteine kapseln die Logik, sodass sie nicht in einzelnen Kreativen vorhanden ist.
-* **Zurücknahme.** Fügen Sie jeder E-Mail-Fußzeile einen Link Tracker-Einstellungen verwalten hinzu, der sich vom Abmelde-Link unterscheidet. Der Link verweist auf eine nms:webApp-Landingpage, die über idTracking authentifiziert wurde. Der Empfänger widerruft die Einwilligung mit einem Klick, ohne seine E-Mail-Adresse erneut einzugeben. Ein zum Standard-Tracking-Workflow hinzugefügter Filterschritt verhindert, dass nach dem Widerruf erneut zugestellte E-Mails ausgenutzt werden.
-* **Einverständnisnachweis.** Erfassen Sie jedes Einverständnisereignis in einem Protokoll, das nur angehängt wird (z. B. ein :consentLog-Erweiterungs-Namespace), wobei die Formulierungsversion nach Änderungen des Wortlauts zur Abrufbarkeit separat gespeichert wird. Legen Sie das Protokoll über den Adobe Campaign-Explorer und als periodischen Export an.
-* **Governance durch erneute Anfragen.** Ein lastPixelRefusalDate-Feld und eine Filtertypologieregel verhindern eine erneute Abfrage für mindestens sechs Monate nach einer Ablehnung. Ein periodischer Workflow kann Ihnen bei der Verwaltung des Einverständnisablaufs helfen.
+* **Klassifizierung des Versands.** Erweitern Sie `nms:delivery` mit einem `emailType`-Attribut (Authentifizierung, Nur-Zustellbarkeit, Transaktion, Marketing, öffentlicher Dienst, B2B-Interessentengewinnung). Die Klassifizierung bestimmt, welche Pixel ohne Zustimmung zulässig sind.
+* **Einverständniserfassung.** Erweitern Sie `nms:recipient` mit einer zweckbezogenen Einverständnisstruktur, die die Formulierungsversion, den Zeitstempel, die Erfassungsquelle und den Ablauf enthält. Erweitern Sie Anmeldeformulare und Präferenzzentren, um Pixel-Einverständnis getrennt vom E-Mail-Opt-in zu erfassen.
+* **Pixelemission.** Definieren Sie einen `NmsTracking_OpenFormula` pro Pixel-Zweck (Authentifizierung, Zustellbarkeit, Leistung, Profilerstellung, Betrugserkennung). Eine Versandtypologieregel wählt basierend auf dem emailType und der zweckgebundenen Zustimmung des Empfängers aus, welche Formeln ausgegeben werden sollen. Gestaltungsbausteine kapseln die Logik, sodass sie nicht in einzelnen Kreativen vorhanden ist.
+* **Zurücknahme.** Fügen Sie jeder E **Mail-Fußzeile einen Link** Tracker-Einstellungen verwalten“ hinzu, der sich vom Abmelde-Link unterscheidet. Der Link verweist auf eine `nms:webApp` Landingpage, die über `idTracking` authentifiziert wurde. Der Empfänger widerruft die Zustimmung mit einem Klick, ohne seine E-Mail-Adresse erneut einzugeben. Ein Filterschritt, der zum standardmäßigen **Tracking**-Workflow hinzugefügt wurde, verhindert, dass zuvor gesendete E-Mails nach dem Widerruf erneut geöffnet werden.
+* **Einverständnisnachweis.** Erfassen Sie jedes Einverständnisereignis in einem Protokoll, das nur angehängt wird (z. B. einem Namespace der `pix:consentLog`-Erweiterung), wobei die Formulierungsversion nach Änderungen des Wortlauts separat gespeichert wird, um sie abzurufen. Legen Sie das Protokoll über den Adobe Campaign-Explorer und als periodischen Export an.
+* **Governance durch erneute Anfragen.** Ein `lastPixelRefusalDate` und eine Filtertypologieregel verhindern eine erneute Abfrage für mindestens sechs Monate nach einer Ablehnung. Ein periodischer Workflow kann Ihnen bei der Verwaltung des Einverständnisablaufs helfen.
 * **Berichterstellung.** Vorhandene Adobe Campaign-Berichte werden weiterhin für die neuen Felder (urlCategory, emailType, die Einverständnisflags) ohne Code-Änderungen ausgeführt.
 
 Weitere Informationen zum E-Mail-Tracking in Adobe-Programmen zur Ausführung von E-Mail-Marketing finden Sie in der Dokumentation hier:
