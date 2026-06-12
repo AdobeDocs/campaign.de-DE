@@ -12,7 +12,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
 source-wordcount: 282
 ht-degree: 100%
@@ -56,3 +56,4 @@ Es wurde ein Hinweis hinzugefügt, der angibt, wie Instanzvariablen beim Neustar
 
 * Es wurden Informationen darüber hinzugefügt, wie das Standardfeld „postalAddress“ für Direkt-Mail definiert wird und warum es wichtig ist sicherzustellen, dass die Adressen vollständig sind. [Weitere Informationen](../send/direct-mail.md)
 * Die Adobe Campaign v8-Startseite für die [Dokumentation](../campaign-home.md) wurde neu entworfen.
+
