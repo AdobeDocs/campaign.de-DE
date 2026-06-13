@@ -5,12 +5,13 @@ feature: Overview
 role: User
 level: Beginner
 hide: true
-source-git-commit: b285c321f3b905150b31621941ea99608d627739
+source-git-commit: 94d9f6725b0bfb458707c9900f5b6cb553d72daf
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 2%
 
 ---
+
 
 # Grundlegendes zur aktualisierten CNIL-Anleitung zu E-Mail-Tracking-Pixeln
 
@@ -39,11 +40,16 @@ Kunden, die Unterstützung bei der Implementierung der oben beschriebenen Änder
 Kunden können die nativen Tracking-, Schema- und Personalisierungsmechanismen von Adobe Campaign verwenden, um bei der Konfiguration der Architektur bestimmte Aspekte zu berücksichtigen, die den CNIL-Richtlinien entsprechen:
 
 * **Klassifizierung des Versands.** Erweitern Sie `nms:delivery` mit einem `emailType`-Attribut (Authentifizierung, Nur-Zustellbarkeit, Transaktion, Marketing, öffentlicher Dienst, B2B-Interessentengewinnung). Die Klassifizierung bestimmt, welche Pixel ohne Zustimmung zulässig sind.
+
 * **Einverständniserfassung.** Erweitern Sie `nms:recipient` mit einer zweckbezogenen Einverständnisstruktur, die die Formulierungsversion, den Zeitstempel, die Erfassungsquelle und den Ablauf enthält. Erweitern Sie Anmeldeformulare und Präferenzzentren, um Pixel-Einverständnis getrennt vom E-Mail-Opt-in zu erfassen.
+
 * **Pixelemission.** Definieren Sie einen `NmsTracking_OpenFormula` pro Pixel-Zweck (Authentifizierung, Zustellbarkeit, Leistung, Profilerstellung, Betrugserkennung). Eine Versandtypologieregel wählt basierend auf dem emailType und der zweckgebundenen Zustimmung des Empfängers aus, welche Formeln ausgegeben werden sollen. Gestaltungsbausteine kapseln die Logik, sodass sie nicht in einzelnen Kreativen vorhanden ist.
+
 * **Zurücknahme.** Fügen Sie jeder E **Mail-Fußzeile einen Link** Tracker-Einstellungen verwalten“ hinzu, der sich vom Abmelde-Link unterscheidet. Der Link verweist auf eine `nms:webApp` Landingpage, die über `idTracking` authentifiziert wurde. Der Empfänger widerruft die Zustimmung mit einem Klick, ohne seine E-Mail-Adresse erneut einzugeben. Ein Filterschritt, der zum standardmäßigen **Tracking**-Workflow hinzugefügt wurde, verhindert, dass zuvor gesendete E-Mails nach dem Widerruf erneut geöffnet werden.
+
 * **Einverständnisnachweis.** Erfassen Sie jedes Einverständnisereignis in einem Protokoll, das nur angehängt wird (z. B. einem Namespace der `pix:consentLog`-Erweiterung), wobei die Formulierungsversion nach Änderungen des Wortlauts separat gespeichert wird, um sie abzurufen. Legen Sie das Protokoll über den Adobe Campaign-Explorer und als periodischen Export an.
 * **Governance durch erneute Anfragen.** Ein `lastPixelRefusalDate` und eine Filtertypologieregel verhindern eine erneute Abfrage für mindestens sechs Monate nach einer Ablehnung. Ein periodischer Workflow kann Ihnen bei der Verwaltung des Einverständnisablaufs helfen.
+
 * **Berichterstellung.** Vorhandene Adobe Campaign-Berichte werden weiterhin für die neuen Felder (urlCategory, emailType, die Einverständnisflags) ohne Code-Änderungen ausgeführt.
 
 Weitere Informationen zum E-Mail-Tracking in Adobe-Programmen zur Ausführung von E-Mail-Marketing finden Sie in der Dokumentation hier:
@@ -56,4 +62,5 @@ Weitere Informationen zum E-Mail-Tracking in Adobe-Programmen zur Ausführung vo
 | Journey Optimizer | [Dokumentation zum Nachrichten-Tracking](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/channels/email/design-email/add-content/message-tracking){target="_blank"} |
 | Marketo Engage | [Deaktivieren des Trackings für einen E-Mail-Link](https://experienceleague.adobe.com/de/docs/marketo/using/product-docs/email-marketing/general/functions-in-the-editor/disable-tracking-for-an-email-link){target="_blank"} |
 | Journey Optimizer B2B | [Dokumentation zu E-Mail-Einstellungen](https://experienceleague.adobe.com/de/docs/journey-optimizer-b2b/user/journey-content/email-channel/add-email){target="_blank"} |
+
 
