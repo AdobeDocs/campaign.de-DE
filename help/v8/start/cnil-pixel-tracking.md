@@ -1,12 +1,9 @@
 ---
 title: Pixel für E-Mail-Tracking und CNIL-Anleitung
 description: Verstehen der aktualisierten CNIL-Anleitung zu E-Mail-Tracking-Pixeln und den Adobe Campaign-Funktionen, die Compliance-Bemühungen unterstützen können.
-feature: Overview
-role: User
-level: Beginner
 version: Campaign v8, Campaign Classic v7, Campaign Standard
 hide: true
-source-git-commit: d30c11b245b8ad7735a8e45efb2c5fdbe936a97b
+source-git-commit: fc92f46a1df96412cc86b9a8c0946132f79a2da8
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 2%
