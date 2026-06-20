@@ -131,7 +131,7 @@ Campaign v8 bietet verschiedene Überwachungsfunktionen, um die Leistung Ihrer I
 
 **Workflow-Überwachung** - Überwachen Sie den Ausführungsstatus des Workflows, um langwierige Workflows zu identifizieren und sicherzustellen, dass alle technischen Workflows ordnungsgemäß ausgeführt werden. [Erfahren Sie mehr über technische Workflows](#technical-workflows)
 
-**Versanddurchsatz und Latenz** - Verfolgen Sie den Versanddurchsatz (Nachrichten pro Stunde) und die Latenz für die Transaktionskommunikation über das Control Panel. [Erfahren Sie mehr über die Überwachung des Durchsatzes](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html){target="_blank"}
+**Versanddurchsatz und Latenz** - Verfolgen Sie den Versanddurchsatz (Nachrichten pro Stunde) und die Latenz für die Transaktionskommunikation über das Control Panel. [Erfahren Sie mehr über die Überwachung des Durchsatzes](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html?lang=de){target="_blank"}
 
 >[!NOTE]
 >
