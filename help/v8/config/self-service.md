@@ -6,20 +6,15 @@ role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 TQID: https://experienceleague.adobe.com/cAHOzLoUPZ4sRNzKa1MYQg8E5zaBB3XuBdTxrSTBlPU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 382f297c4763e56f65b6f1acb7ff209cf59b71c2
 workflow-type: tm+mt
-source-wordcount: 496
-ht-degree: 96%
+source-wordcount: 519
+ht-degree: 92%
 
 ---
 
@@ -68,6 +63,8 @@ Erfahren Sie, wie Sie Ihre Subdomains und deren Zertifikate überwachen.
 ## Überwachen der Performance
 
 Das Control Panel bietet verschiedene Funktionen, mit denen Sie Ihre Instanzen überwachen und eine optimale Performance sicherstellen können. [Hier klicken](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de){target="_blank"}
+
+Für Campaign v8 Managed Cloud Services überwacht Adobe auch Infrastruktur-, Plattform- und Softwareprozesse in Ihrem Namen. Weitere Informationen zum [Adobe-verwalteten Monitoring](../start/monitor.md#adobe-cloud-monitoring).
 
 
 ## Instanzeneinstellungen
