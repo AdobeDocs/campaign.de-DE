@@ -260,6 +260,6 @@ Diese Konfiguration entspricht der Aktivität **[!UICONTROL Aufspaltung]** im Wo
 
 In diesem Video wird beschrieben, wie Sie einer Kampagne eine Kontrollgruppe hinzufügen.
 
->[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3446927?captions=ger&quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.
