@@ -61,7 +61,7 @@ Weitere Informationen zum Verteilungs-Center [&#x200B; Sie auf dieser Seite](htt
 
 Sie müssen die Campaign-Client-Konsole herunterladen und installieren, um eine Verbindung zu Adobe Campaign herzustellen. [Weitere Informationen](connect.md).
 
-Ab Campaign v8.6 haben Sie Zugriff auf die **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist. Experience Cloud ist die integrierte Familie von Anwendungen, Produkten und Diensten von Adobe für das digitale Marketing.
+Ab Campaign Version 8.6 haben Sie Zugriff auf die **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist. Experience Cloud ist die integrierte Familie von Anwendungen, Produkten und Diensten von Adobe für das digitale Marketing.
 
 [Auf dieser Seite](campaign-ui.md#ac-web-ui) erfahren Sie, wie Sie eine Verbindung mit Adobe Experience Cloud herstellen und auf die Benutzeroberfläche von Adobe Campaign Web zugreifen. Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
@@ -89,7 +89,7 @@ Ja! Dank der Integration mit dem IMS (Adobe Identity Management System) können 
 
 Weitere Informationen [&#x200B; Grundlagen zur Benutzeroberfläche von &#x200B;](campaign-ui.md) finden Sie in diesem Abschnitt.
 
-Ab Campaign v8.6 haben Sie auch Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist.
+Ab Campaign Version 8.6 haben Sie auch Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist.
 
 [Weitere Informationen finden Sie in der Dokumentation zur Web-Benutzeroberfläche von Adobe Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
@@ -906,7 +906,7 @@ Erfahren Sie, wie Sie mithilfe von Workflows Prozesse automatisieren, Daten verw
 
 +++ Was ist ein Workflow?
 
-Adobe Campaign umfasst Workflows, mit denen die gesamte Bandbreite an Prozessen und Aufgaben über die verschiedenen Module des Anwendungsservers hinweg koordiniert wird. In dieser grafischen Umgebung können Sie Prozesse wie Segmentierung, Kampagnenausführung, Dateiverarbeitung, Beteiligung von Personen usw. entwerfen. Die Workflow-Engine führt diese Prozesse aus und verfolgt sie.
+Adobe Campaign umfasst Workflows, mit denen die gesamte Bandbreite an Prozessen und Aufgaben über die verschiedenen Module des Anwendungsservers hinweg koordiniert wird. In dieser vielseitigen grafischen Umgebung können Sie Prozesse erstellen, wie etwa die Segmentierung, die Kampagnenausführung, die Dateiverarbeitung und den Eingriff durch Personen. Die Ausführung und Nachverfolgung dieser Prozesse erfolgt durch das Workflow-Modul.
 
 So bieten Workflows beispielsweise die Möglichkeit, Dateien von einem Server herunterladen, sie zu entkomprimieren und die Datensätze in die Adobe Campaign-Datenbank zu importieren.
 
