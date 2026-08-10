@@ -53,7 +53,7 @@ Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download 
 
 Greifen Sie als Admin-Benutzerin bzw. -Benutzer auf Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} zu, um Adobe Campaign herunterzuladen.
 
-Weitere Informationen zum Verteilungs-Center [ Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
+Weitere Informationen zum Verteilungs-Center [&#x200B; Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
 
 +++
 
@@ -87,7 +87,7 @@ Ja! Dank der Integration mit dem IMS (Adobe Identity Management System) können 
 
 +++ Über welche Benutzeroberflächen-Konzepte von Campaign sollte ich Bescheid wissen?
 
-Weitere Informationen [ Grundlagen zur Benutzeroberfläche von ](campaign-ui.md) finden Sie in diesem Abschnitt.
+Weitere Informationen [&#x200B; Grundlagen zur Benutzeroberfläche von &#x200B;](campaign-ui.md) finden Sie in diesem Abschnitt.
 
 Ab Campaign Version 8.6 haben Sie auch Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist.
 
@@ -146,7 +146,7 @@ Die Erstellung Ihrer ersten E-Mail in Campaign v8 ist unkompliziert. Sie beginne
 
 **Verwandte Themen:**
 
-[E-Mail-Design und ](../send/email.md) | [Ersten Versand erstellen](create-message.md) | [Versandvorlagen](../send/create-templates.md) | [Inhalt personalisieren](../send/personalize.md)
+[E-Mail-Design und &#x200B;](../send/email.md) | [Ersten Versand erstellen](create-message.md) | [Versandvorlagen](../send/create-templates.md) | [Inhalt personalisieren](../send/personalize.md)
 
 +++
 
@@ -168,7 +168,7 @@ Alternativ können Sie der [Campaign-Community](https://experienceleaguecommunit
 
 +++ Mit welchen Systemen und Komponenten ist Campaign v8 kompatibel?
 
-Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign ](compatibility-matrix.md).
+Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign &#x200B;](compatibility-matrix.md).
 
 +++
 
@@ -215,7 +215,7 @@ Campaign v8 ist derzeit **nur** als Managed Cloud Service verfügbar und kann n
 
 Weitere Informationen zum Migrationsprozess erhalten Sie von Ihrer Adobe-Support-Kontaktperson.
 
-Weitere Informationen finden Sie im Abschnitt [Campaign v8 im Vergleich zu früheren ](#v7-differences)).
+Weitere Informationen finden Sie im Abschnitt [Campaign v8 im Vergleich zu früheren &#x200B;](#v7-differences)).
 
 +++
 
@@ -274,7 +274,7 @@ Adobe empfiehlt dringend, die neueste Version auszuführen. Als Kunde von Manage
 
 **Verwandte Themen:**
 
-[Campaign-Versionen und -](upgrades.md)[ | Neue Funktionen](whats-new.md) | [Kompatibilitätsmatrix](compatibility-matrix.md)
+[Campaign-Versionen und -](upgrades.md) [&#x200B; | Neue Funktionen](whats-new.md) | [Kompatibilitätsmatrix](compatibility-matrix.md)
 
 +++
 
@@ -368,7 +368,7 @@ Nein. Campaign v8 ist ausschließlich als **Managed Cloud Service** verfügbar u
 * Kein Infrastruktur-Management oder IT-Overhead
 * Integrierte Hochverfügbarkeit und Notfallwiederherstellung
 
-Erfahren Sie mehr über [ Architektur von Campaign v8 ](../architecture/architecture.md) die [Unterschiede zwischen Campaign v8 und Classic v7](../start/v7-to-v8.md).
+Erfahren Sie mehr über [&#x200B; Architektur von Campaign v8 &#x200B;](../architecture/architecture.md) die [Unterschiede zwischen Campaign v8 und Classic v7](../start/v7-to-v8.md).
 
 +++
 
@@ -1203,7 +1203,7 @@ Das Campaign Control Panel ist eine Web-basierte Verwaltungsoberfläche, mit der
 Adobe Campaign v8 bietet die Möglichkeit, alle aktuellen Einstellungen für administrative und privilegierte Konten der obersten Ebene mit empfohlenen sicheren Standardeinstellungen zu vergleichen.
 
 * **Aktuelle Einstellungen (volle Sichtbarkeit):** Alle Einstellungen für administrative und berechtigte Konten können unter **[!UICONTROL Administration]** > **[!UICONTROL Zugriffsverwaltung]** (Client-Konsole oder Campaign Web-Benutzeroberfläche) überprüft werden: **[!UICONTROL Benutzer]**, **[!UICONTROL Benutzergruppen]** **[!UICONTROL spezifische Berechtigungen]** (z. B. ADMINISTRATION, GENEHMIGUNGSADMINISTRATION) und Berechtigungen auf Ordnerebene. Produktadministratoren können auch Einstellungen auf Instanzebene im [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"} überprüfen (IP-Adresse, URL-Berechtigungen, Instanzdetails und mehr).
-* **Empfohlene sichere Standardwerte:** Die [Sicherheitsrichtlinien](../config/security.md) definieren die empfohlene sichere Baseline für administrative und berechtigte Konten, einschließlich: Erstellen ausreichender Sicherheitsgruppen, Zuweisen geeigneter Zugriffsrechte pro Benutzer und Beschränken der Verwendung des Admin-Benutzers und der Admin-Gruppe. Informationen zu Netzwerk- und Verschlüsselungs-Härtung finden Sie [ „Erweitertes Sicherheits](../config/enhanced-security.md)Add-on“.
+* **Empfohlene sichere Standardwerte:** Die [Sicherheitsrichtlinien](../config/security.md) definieren die empfohlene sichere Baseline für administrative und berechtigte Konten, einschließlich: Erstellen ausreichender Sicherheitsgruppen, Zuweisen geeigneter Zugriffsrechte pro Benutzer und Beschränken der Verwendung des Admin-Benutzers und der Admin-Gruppe. Informationen zu Netzwerk- und Verschlüsselungs-Härtung finden Sie [&#x200B; „Erweitertes Sicherheits](../config/enhanced-security.md)Add-on“.
 * **Vergleich:** Administratoren vergleichen ihre aktuelle Konfiguration mit diesen dokumentierten Empfehlungen, um Lücken zu identifizieren und sichere Standardeinstellungen zu gewährleisten.
 
 **Verwandte Themen:**
@@ -1465,7 +1465,7 @@ In der Client-Konsole haben Sie folgende Möglichkeiten:
 * Entwerfen bedingter Formatierung und dynamischer Inhalte
 * Zugriff auf das vollständige Campaign-Datenmodell und externe Datenbanken (FDA)
 
-Erfahren Sie, wie [ benutzerdefinierte Berichte erstellen (Client-Konsole)](../reporting/custom-reports.md)
+Erfahren Sie, wie [&#x200B; benutzerdefinierte Berichte erstellen (Client-Konsole)](../reporting/custom-reports.md)
 
 +++
 
