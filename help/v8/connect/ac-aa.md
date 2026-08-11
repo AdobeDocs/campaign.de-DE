@@ -18,10 +18,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
-source-wordcount: 1653
-ht-degree: 89%
+source-wordcount: 1836
+ht-degree: 79%
 
 ---
 
@@ -52,6 +52,7 @@ Um die Verbindung zwischen Campaign und Analytics einzurichten, müssen Sie die 
 
 1. [Report Suite in Adobe Analytics erstellen](#report-suite-analytics)
 1. [Konfigurieren von Konversionsvariablen und Erfolgsereignissen](#configure-conversion-success)
+1. [Erstellen eines Klassifizierungssatzes](#create-classification-set)
 1. [Externes Konto in Adobe Campaign konfigurieren](#external-account-ac)
 
 ## Erstellen Ihrer Analytics-Report Suite {#report-suite-analytics}
@@ -127,7 +128,30 @@ Im Anschluss an die Erstellung Ihrer **[!UICONTROL Report Suite]** müssen Sie *
 
 1. Klicken Sie abschließend auf **[!UICONTROL Speichern]**.
 
-Nachdem Sie Ihre Report Suite konfiguriert haben, müssen Sie die **[!UICONTROL externen Konten]** in Adobe Campaign konfigurieren.
+## Erstellen eines Klassifizierungssatzes {#create-classification-set}
+
+Seit der Migration zur Adobe Analytics 2.0-API müssen Sie auch in Adobe Analytics einen **[!UICONTROL Klassifizierungssatz]** erstellen, bevor Sie Ihr externes Konto in Campaign konfigurieren. Dieser Klassifizierungssatz verknüpft die soeben erstellte Konversionsvariable (Ihren internen Kampagnennamen) mit der Report Suite, sodass Campaign sie automatisch erkennen und verwenden kann, wenn Sie im nächsten Schritt das externe Konto konfigurieren.
+
+So erstellen Sie einen Klassifizierungssatz:
+
+1. Wählen Sie in der oberen [!DNL Adobe Analytics] Menüleiste die Option **[!UICONTROL Komponenten]** > **[!UICONTROL Klassifizierungssätze]** und klicken Sie dann auf **[!UICONTROL Neu]**.
+
+   ![](assets/analytics_connnector_16.png)
+
+1. Im Dialogfeld **[!UICONTROL Neuen Klassifizierungssatz hinzufügen]**:
+
+   ![](assets/analytics_connnector_17.png)
+
+   * Geben Sie **[!UICONTROL Klassifizierungssatz einen]** Namen“ ein.
+   * Legen Sie **[!UICONTROL Typ]** auf **[!UICONTROL Primär fest]**.
+   * Wählen **[!UICONTROL in &quot;]**&quot; aus, wer über Erfolg oder Misserfolg der Klassifizierungssatzaufträge benachrichtigt werden soll, und geben Sie die entsprechenden E-Mail-Adressen an.
+   * Wählen **[!UICONTROL in]** Ihre Report Suite und die Konversionsvariable aus, die Sie im vorherigen Schritt für den Namen der internen Kampagne erstellt haben.
+
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+Weitere Informationen zu Klassifizierungssätzen finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
+
+Wenn Ihre Report Suite, Konversionsvariablen, Erfolgsereignisse und der Klassifizierungssatz konfiguriert sind, müssen Sie die **[!UICONTROL externen Konten]** in Adobe Campaign konfigurieren.
 
 ## Konfigurieren Ihres externen Campaign-Kontos {#external-account-ac}
 
@@ -248,7 +272,7 @@ Folgende Attribute werden übermittelt:
 
 ## Nachverfolgen von Sendungen {#tracking-deliveries-in-adobe-campaign}
 
-Damit die Adobe Experience Cloud die Aktivitäten auf den Sites verfolgen kann, sobald der Versand von Adobe Campaign durchgeführt wurde, müssen Sie in den Versandeigenschaften auf den entsprechenden Connector verweisen. Gehen Sie hierzu wie folgt vor:
+Damit Adobe Experience Cloud die Aktivitäten auf den Sites verfolgen kann, sobald der Versand von Adobe Campaign durchgeführt wurde, müssen Sie in den Versandeigenschaften auf den entsprechenden Connector verweisen. Gehen Sie hierzu wie folgt vor:
 
 1. Öffnen Sie den Versand der zu verfolgenden Kampagne.
 
