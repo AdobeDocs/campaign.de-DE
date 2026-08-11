@@ -4,9 +4,15 @@ description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 TQID: https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: d5ef99fa-df0c-4153-bf94-105ad0724167
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
 source-wordcount: 1995
@@ -30,7 +36,7 @@ Diese Version umfasst mehrere Produktverbesserungen und Sicherheitskorrekturen, 
 
 ### Adobe Analytics-Connector auf Analytics 2.0-API aktualisiert {#analytics-2-0-8-9-3}
 
-Adobe Analytics 1.4-APIs [ das Ende der Lebensdauer erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"} Daher wurde der [Web Analytics Connector](../connect/ac-aa.md) - der Ihre Kampagnenindikatoren und Klassifizierungsdaten an Adobe Analytics sendet, den Remarketing-Ablauf unterstützt und zum Konfigurieren neuer Report Suites verwendet wird - im Rahmen dieser Version auf die Analytics 2.0-API aktualisiert. Als gehosteter Kunde übernimmt Adobe diese Migration für Sie - es ist keine Konfiguration auf Ihrer Seite erforderlich. Beim Upgrade werden die integrierten technischen Workflows, die den Connector unterstützen (**[!UICONTROL webAnalyticsSendMetrics]** und **[!UICONTROL webAnalyticsGetWebEvents]**), erneut importiert und die integrierten Analytics-JavaScript-Dateien aktualisiert. Wenn Sie also einen dieser Workflows oder benutzerdefinierte Workflows erstellt haben, die auf diese Dateien verweisen, wenden Sie diese Anpassung nach dem Upgrade erneut an und passen Sie sie an, da sie andernfalls überschrieben oder unterbrochen wird. Es empfiehlt sich, die integrierten Workflows nicht direkt zu ändern. Erstellen Sie stattdessen Ihre Anpassung in einem separaten benutzerdefinierten Workflow, damit sie bei zukünftigen Upgrades nicht überschrieben werden. Validieren Sie nach Abschluss des Upgrades die Adobe Analytics-Anwendungsfälle, auf die Sie sich verlassen (Metriken, Export von Klassifizierungen, ggf. Remarketing), um zu bestätigen, dass die Daten weiterhin wie erwartet fließen.
+Adobe Analytics 1.4-APIs [&#x200B; das Ende der Lebensdauer erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"} Daher wurde der [Web Analytics Connector](../connect/ac-aa.md) - der Ihre Kampagnenindikatoren und Klassifizierungsdaten an Adobe Analytics sendet, den Remarketing-Ablauf unterstützt und zum Konfigurieren neuer Report Suites verwendet wird - im Rahmen dieser Version auf die Analytics 2.0-API aktualisiert. Als gehosteter Kunde übernimmt Adobe diese Migration für Sie - es ist keine Konfiguration auf Ihrer Seite erforderlich. Beim Upgrade werden die integrierten technischen Workflows, die den Connector unterstützen (**[!UICONTROL webAnalyticsSendMetrics]** und **[!UICONTROL webAnalyticsGetWebEvents]**), erneut importiert und die integrierten Analytics-JavaScript-Dateien aktualisiert. Wenn Sie also einen dieser Workflows oder benutzerdefinierte Workflows erstellt haben, die auf diese Dateien verweisen, wenden Sie diese Anpassung nach dem Upgrade erneut an und passen Sie sie an, da sie andernfalls überschrieben oder unterbrochen wird. Es empfiehlt sich, die integrierten Workflows nicht direkt zu ändern. Erstellen Sie stattdessen Ihre Anpassung in einem separaten benutzerdefinierten Workflow, damit sie bei zukünftigen Upgrades nicht überschrieben werden. Validieren Sie nach Abschluss des Upgrades die Adobe Analytics-Anwendungsfälle, auf die Sie sich verlassen (Metriken, Export von Klassifizierungen, ggf. Remarketing), um zu bestätigen, dass die Daten weiterhin wie erwartet fließen.
 
 ## Version 8.9.2 {#release-8-9-2}
 
@@ -130,7 +136,7 @@ Diese Version enthält eine Reihe von Funktionen, die in der Web-Benutzeroberfl�
 * [Kontinuierliche Versandaktivität](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
 * [Validierungsverwaltung für Kampagnen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Weitere Informationen finden Sie in den Versionshinweisen zur [ Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
+Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-9-1}
 
