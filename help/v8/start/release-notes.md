@@ -4,18 +4,12 @@ description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 TQID: https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: ffeb9430b382b598af412555b1b0a6ff42bc68d0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: d5ef99fa-df0c-4153-bf94-105ad0724167
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
-source-wordcount: 1754
+source-wordcount: 1995
 ht-degree: 6%
 
 ---
@@ -23,6 +17,20 @@ ht-degree: 6%
 # Neueste Versionen {#latest-release}
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **neuesten Campaign v8-Versionen** (Konsole) aufgelistet. Weitere Informationen zu Campaign-Versionen und -Upgrades finden Sie auf [dieser Seite](upgrades.md). Weitere Versionen sind im Abschnitt „Frühere Versionen“ dieser Dokumentation aufgeführt.
+
+## Version 8.9.3 {#release-8-9-3}
+
+_11. August 2026_
+
+Diese Version umfasst mehrere Produktverbesserungen und Sicherheitskorrekturen, einschließlich der Aktualisierung des Adobe Analytics-Connectors auf die Analytics 2.0-API.
+
+>[!NOTE]
+>
+> Navigieren Sie zu **[!UICONTROL Hilfe > Über…]** [Menü](upgrades.md#version), um zu überprüfen, ob Sie Build 9835 oder höher haben.
+
+### Adobe Analytics-Connector auf Analytics 2.0-API aktualisiert {#analytics-2-0-8-9-3}
+
+Adobe Analytics 1.4-APIs [ das Ende der Lebensdauer erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"} Daher wurde der [Web Analytics Connector](../connect/ac-aa.md) - der Ihre Kampagnenindikatoren und Klassifizierungsdaten an Adobe Analytics sendet, den Remarketing-Ablauf unterstützt und zum Konfigurieren neuer Report Suites verwendet wird - im Rahmen dieser Version auf die Analytics 2.0-API aktualisiert. Als gehosteter Kunde übernimmt Adobe diese Migration für Sie - es ist keine Konfiguration auf Ihrer Seite erforderlich. Beim Upgrade werden die integrierten technischen Workflows, die den Connector unterstützen (**[!UICONTROL webAnalyticsSendMetrics]** und **[!UICONTROL webAnalyticsGetWebEvents]**), erneut importiert und die integrierten Analytics-JavaScript-Dateien aktualisiert. Wenn Sie also einen dieser Workflows oder benutzerdefinierte Workflows erstellt haben, die auf diese Dateien verweisen, wenden Sie diese Anpassung nach dem Upgrade erneut an und passen Sie sie an, da sie andernfalls überschrieben oder unterbrochen wird. Es empfiehlt sich, die integrierten Workflows nicht direkt zu ändern. Erstellen Sie stattdessen Ihre Anpassung in einem separaten benutzerdefinierten Workflow, damit sie bei zukünftigen Upgrades nicht überschrieben werden. Validieren Sie nach Abschluss des Upgrades die Adobe Analytics-Anwendungsfälle, auf die Sie sich verlassen (Metriken, Export von Klassifizierungen, ggf. Remarketing), um zu bestätigen, dass die Daten weiterhin wie erwartet fließen.
 
 ## Version 8.9.2 {#release-8-9-2}
 
@@ -40,7 +48,7 @@ _3. Mai 2026_
 
 >[!NOTE]
 >
-> Die unten aufgeführten Fehlerbehebungen wurden schrittweise in allen aufeinander folgenden 8.9.2-Builds implementiert. Navigieren Sie zu **[!UICONTROL Hilfe > Über…]** [Menü](upgrades.md#version), um zu überprüfen, ob Sie den neuesten 8.9.2 (11d1c68)-Build haben. Weitere Informationen erhalten Sie vom Adobe-Support.
+> Die unten aufgeführten Fehlerbehebungen wurden schrittweise in allen aufeinander folgenden 8.9.2-Builds implementiert. Navigieren Sie zu **[!UICONTROL Hilfe > Über…]** [Menü](upgrades.md#version), um zu überprüfen, ob Sie den neuesten 8.9.2 (11d1c68)-Build haben. Weitere Informationen erhalten Sie von Ihrer Adobe-Support-Kontaktperson.
 
 * Es wurde ein Problem behoben, bei dem Ereignisdaten in Transaktionsereignissen aufgrund eines Datentypkonvertierungsproblems falsch festgelegt wurden, was zu falschen Datumsangaben in dynamischen Berichten führte. (NEO-93923)
 * Fehlerkorrektur - Stille Push-Benachrichtigungen in Android und iOS funktionieren jetzt während der Versandvorbereitung, wenn die Titel- und Textfelder leer sind. (NEO-93739)
@@ -115,14 +123,14 @@ Der **neue SMS-**-Connector) ist jetzt für alle Kunden (GA) verfügbar. Weiterf
 
 Diese Version enthält eine Reihe von Funktionen, die in der Web-Benutzeroberfläche von Campaign verfügbar sind:
 
-* [Mehrsprachige Versandfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=de){target="_blank"}
-* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=de){target="_blank"}
-* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=de){target="_blank"}
-* [Inhaltsexperimente - A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=de){target="_blank"}
-* [Kontinuierliche Versandaktivität](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=de){target="_blank"}
-* [Validierungsverwaltung für Kampagnen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=de){target="_blank"}
+* [Mehrsprachige Versandfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Inhaltsexperimente - A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Kontinuierliche Versandaktivität](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Validierungsverwaltung für Kampagnen](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
+Weitere Informationen finden Sie in den Versionshinweisen zur [ Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-9-1}
 

@@ -6,19 +6,12 @@ role: User
 level: Beginner
 exl-id: 2ad585f2-19bc-4391-8a19-9e892dbe01a3
 TQID: https://experienceleague.adobe.com/PjU1EFX5x4iB3yRsShGBWoR0k1D2-EI90-ss0FTcexE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 6cf587ecc9cc1e4cf9b3de0d2067e0c4562afe01
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
 source-wordcount: 2206
 ht-degree: 6%
@@ -49,13 +42,13 @@ Das Monitoring Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um 
 >
 >**Neu bei Campaign?** Das Versand-Dashboard ist Ihr Hauptbildschirm im Alltag. Öffnen Sie einen gesendeten Versand, klicken Sie auf die Registerkarte **Protokolle** und Sie sehen, welche Empfänger die Nachricht erhalten haben, welche ausgeschlossen wurden und warum, und wer geklickt oder geöffnet hat.
 
-**E-Mail-**: Überwachen Sie den Status des E-Mail-Versands, verfolgen Sie Schlüsselmetriken und greifen Sie auf detaillierte Protokolle zu. Erfahren Sie mehr über [Überwachen von Sendungen in der Campaign](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard)-Benutzeroberfläche, [Versandstatus](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-statuses) und [Überwachen von E-Mail-Sendungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/send#email-monitoring).
+**E-Mail-**: Überwachen Sie den Status des E-Mail-Versands, verfolgen Sie Schlüsselmetriken und greifen Sie auf detaillierte Protokolle zu. Erfahren Sie mehr über [Überwachen von Sendungen in der Campaign](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard)-Benutzeroberfläche, [Versandstatus](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-statuses) und [Überwachen von E-Mail-Sendungen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/send#email-monitoring).
 
-**SMS-Sendungen** - Verfolgen Sie den Status des SMS-Versands und überwachen Sie Schlüsselmetriken im Dashboard des SMS-Versands. Weitere Informationen zu [SMS-Überwachung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms-monitor).
+**SMS-Sendungen** - Verfolgen Sie den Status des SMS-Versands und überwachen Sie Schlüsselmetriken im Dashboard des SMS-Versands. Weitere Informationen zu [SMS-Überwachung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms-monitor).
 
-**Push-Benachrichtigungen** - Überwachen Sie den Versand von Push-Benachrichtigungen, um sicherzustellen, dass sie die Benutzer Ihrer Mobile App effektiv erreichen. Weitere Informationen zur [Überwachung von Push-](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/push#push-test)&quot;
+**Push-Benachrichtigungen** - Überwachen Sie den Versand von Push-Benachrichtigungen, um sicherzustellen, dass sie die Benutzer Ihrer Mobile App effektiv erreichen. Weitere Informationen zur [Überwachung von Push-](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push#push-test)&quot;
 
-**Transaktionsnachrichten** - Überwachen Sie für Nachrichten, die durch Ereignisse ausgelöst werden, den Status der Ereignisverarbeitung, die Ausführung von Nachrichten und den Versandstatus. Weitere Informationen über [Überwachung von Transaktionsnachrichten](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/event/delivery-execution#monitor-messages).
+**Transaktionsnachrichten** - Überwachen Sie für Nachrichten, die durch Ereignisse ausgelöst werden, den Status der Ereignisverarbeitung, die Ausführung von Nachrichten und den Versandstatus. Weitere Informationen über [Überwachung von Transaktionsnachrichten](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution#monitor-messages).
 
 **Versandfehler** - Um eine saubere Datenbank zu verwalten und gute Zustellbarkeitsraten zu gewährleisten, ist es von entscheidender Bedeutung, die Gründe für fehlgeschlagene Sendungen zu verstehen. Fehlgeschlagene Sendungen werden in drei Typen unterteilt: Wenn Sie den Unterschied verstehen, können Sie entscheiden, welche Aktion Sie durchführen möchten:
 
@@ -75,7 +68,7 @@ Weitere Informationen zu [fehlgeschlagenen Sendungen und Quarantänen](https://e
 
 Die Zustellbarkeits-Überwachung hilft Ihnen sicherzustellen, dass Ihre Nachrichten die Posteingänge Ihrer Empfänger erreichen und Spam-Filter vermeiden. Adobe Campaign bietet mehrere integrierte Tools zur Überwachung und Verbesserung der Zustellbarkeit, einschließlich Versandberichte, Inbox Rendering, SpamAssassin-Tests und Broadcast-Statistiken. Die Befolgung von Best Practices für die Zustellbarkeit, wie die Pflege einer sauberen E-Mail-Liste, die Überwachung der Reputation des Absenders und die Authentifizierung von Versand-Domains, ist wichtig, um gute Zustellbarkeitsraten aufrechtzuerhalten.
 
-Erfahren Sie mehr über [Tools zur Zustellbarkeitsüberwachung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/deliverability-management/monitoring-deliverability) und [Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability).
+Erfahren Sie mehr über [Tools zur Zustellbarkeitsüberwachung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/monitoring-deliverability) und [Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability).
 
 ## Überwachen von Workflows {#monitor-workflows}
 
@@ -93,11 +86,11 @@ Workflows sind zur Automatisierung Ihrer Marketing-Kampagnen und Datenverarbeitu
 
 **Überwachen Sie die folgenden Workflow-Elemente:**
 
-**Workflow-Ausführungsstatus** - Verfolgen Sie, ob Workflows ausgeführt werden, angehalten, fehlgeschlagen oder abgeschlossen sind. [Erfahren Sie mehr über die Ausführung von Workflows](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#_blank)
+**Workflow-Ausführungsstatus** - Verfolgen Sie, ob Workflows ausgeführt werden, angehalten, fehlgeschlagen oder abgeschlossen sind. [Erfahren Sie mehr über die Ausführung von Workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#_blank)
 
 **Protokolle zur Aktivitätsausführung** - Greifen Sie auf detaillierte Protokolle für jede Workflow-Aktivität zu, um Probleme zu beheben und die Leistung zu optimieren.
 
-**Workflow-Heatmap** - Ein visueller Überblick über alle Workflows, die gleichzeitig in Ihrer Instanz ausgeführt werden. Ermitteln Sie Spitzenlastzeiten, erkennen Sie Workflows, die unverhältnismäßige Ressourcen verbrauchen, und planen Sie die Planung, um Ausführungskonflikte zu vermeiden. Nur für Campaign-Administratoren verfügbar. [Erfahren Sie mehr über Workflow-Heatmap](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/monitoring-workflows/heatmap#_blank)
+**Workflow-Heatmap** - Ein visueller Überblick über alle Workflows, die gleichzeitig in Ihrer Instanz ausgeführt werden. Ermitteln Sie Spitzenlastzeiten, erkennen Sie Workflows, die unverhältnismäßige Ressourcen verbrauchen, und planen Sie die Planung, um Ausführungskonflikte zu vermeiden. Nur für Campaign-Administratoren verfügbar. [Erfahren Sie mehr über Workflow-Heatmap](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/heatmap#_blank)
 
 **Workflow-Verlauf** - Verfolgen Sie alle Workflow-Ausführungen und -Änderungen im Laufe der Zeit, um das Verhalten und die Leistung von Workflows zu verstehen.
 
@@ -118,19 +111,19 @@ Mit der Instanzüberwachung können Sie den Zustand und die Leistung Ihrer Adobe
 
 Das Audit-Protokoll ist über die Campaign-Client-Konsole aufrufbar und enthält detaillierte Informationen zu den von den Benutzern durchgeführten Aktionen.
 
-Weitere Informationen zu [Audit-Protokoll](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/audit-trail)
+Weitere Informationen zu [Audit-Protokoll](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail)
 
 ### Überwachen der Performance {#performance-monitoring}
 
 Campaign v8 bietet verschiedene Überwachungsfunktionen, um die Leistung Ihrer Instanz zu verfolgen und einen optimalen Betrieb sicherzustellen:
 
-**Datenbanküberwachung** - Überwachen Sie die Datenbanknutzung und -kapazität über das Control Panel, um eine optimale Leistung und Speicherverwaltung sicherzustellen. [Erfahren Sie mehr über die Datenbanküberwachung](https://experienceleague.adobe.com/de/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring#_blank)
+**Datenbanküberwachung** - Überwachen Sie die Datenbanknutzung und -kapazität über das Control Panel, um eine optimale Leistung und Speicherverwaltung sicherzustellen. [Erfahren Sie mehr über die Datenbanküberwachung](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring#_blank)
 
-**Überwachen aktiver Profile** - Verfolgen Sie die aktive Profilnutzung anhand Ihrer vertraglichen Beschränkungen, um die Compliance aufrechtzuerhalten und die Ressourcenzuweisung zu optimieren. [Erfahren Sie mehr über aktive Profile](https://experienceleague.adobe.com/de/docs/control-panel/using/performance-monitoring/active-profiles-monitoring#_blank)
+**Überwachen aktiver Profile** - Verfolgen Sie die aktive Profilnutzung anhand Ihrer vertraglichen Beschränkungen, um die Compliance aufrechtzuerhalten und die Ressourcenzuweisung zu optimieren. [Erfahren Sie mehr über aktive Profile](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/active-profiles-monitoring#_blank)
 
 **Workflow-Überwachung** - Überwachen Sie den Ausführungsstatus des Workflows, um langwierige Workflows zu identifizieren und sicherzustellen, dass alle technischen Workflows ordnungsgemäß ausgeführt werden. [Erfahren Sie mehr über technische Workflows](#technical-workflows)
 
-**Versanddurchsatz und Latenz** - Verfolgen Sie den Versanddurchsatz (Nachrichten pro Stunde) und die Latenz für die Transaktionskommunikation über das Control Panel. [Erfahren Sie mehr über die Überwachung des Durchsatzes](https://experienceleague.adobe.com/de/docs/control-panel/using/performance-monitoring/throughputs-latencies#_blank)
+**Versanddurchsatz und Latenz** - Verfolgen Sie den Versanddurchsatz (Nachrichten pro Stunde) und die Latenz für die Transaktionskommunikation über das Control Panel. [Erfahren Sie mehr über die Überwachung des Durchsatzes](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/throughputs-latencies#_blank)
 
 >[!NOTE]
 >
@@ -150,7 +143,7 @@ Adobe überwacht rund um die Uhr alle wichtigen Netzwerkgeräte im Campaign-Netz
 >
 >Einige von Adobe durchgeführte Überwachungsaktionen werden in den Kampagnenprotokollen unter dem Benutzer **campaign-loginMonitor** angezeigt.
 
-Zusätzlich zur internen Überwachung von Adobe können Sie direkt über die Campaign-Client-Konsole oder das [Campaign Control Panel“ auf &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/self-service) Überwachungsfunktionen zugreifen. Mit dem Control Panel können Sie Echtzeitwarnungen zu Ihren Instanzen abonnieren und empfohlene Schritte zur Behebung identifizierter Vorfälle erhalten (z. B. SSL-Zertifikate, die bald ablaufen).
+Zusätzlich zur internen Überwachung von Adobe können Sie direkt über die Campaign-Client-Konsole oder das [Campaign Control Panel“ auf ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service) Überwachungsfunktionen zugreifen. Mit dem Control Panel können Sie Echtzeitwarnungen zu Ihren Instanzen abonnieren und empfohlene Schritte zur Behebung identifizierter Vorfälle erhalten (z. B. SSL-Zertifikate, die bald ablaufen).
 
 **Überwachen der Taxonomie**
 
@@ -198,7 +191,7 @@ Technische Workflows sind wichtige Prozesse, die im Hintergrund ausgeführt werd
 | **Zustellbarkeitsaktualisierung** | Aktualisiert Zustellbarkeitsregeln und Spam-Filtermuster | Regeln werden veraltet; die Filtergenauigkeit kann sich verschlechtern |
 | **Datenbankbereinigung** | Löscht alte Versand- und Trackinglogs | Die Protokollakkumulation verlangsamt Abfragen und Berichte im Zeitverlauf |
 
-Weitere Informationen zu [technischen Workflows](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows#_blank)
+Weitere Informationen zu [technischen Workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows#_blank)
 
 ### Campaign Control Panel {#control-panel}
 
@@ -210,7 +203,7 @@ Das Campaign Control Panel bietet Administratoren Self-Service-Funktionen zur Ü
 | **Infrastruktur** | Überwachen der SFTP-Speicherkapazität, Verfolgen der Subdomain-Konfiguration, Überwachen des SSL-Zertifikatablaufs, Verwalten der IP-Zulassungsauflistung |
 | **instance** | Anzeigen von Build-Version und installierten Paketen, Überwachen der Systemkonfiguration, Verwalten autorisierter externer Domains |
 
-Erfahren Sie mehr über [Control Panel](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/self-service) und [Leistungsüberwachung des Control Panels](https://experienceleague.adobe.com/de/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)
+Erfahren Sie mehr über [Control Panel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service) und [Leistungsüberwachung des Control Panels](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)
 
 >[!NOTE]
 >
@@ -238,7 +231,7 @@ Adobe Campaign bietet einen umfassenden Berichtssatz zur Analyse der Versandleis
 - **URLs und Clickstreams**: Die beliebtesten Links in Ihren Sendungen
 - **Klicks**: Visuelle Darstellung des Ortes, an dem Empfänger auf Ihre E-Mail geklickt haben
 
-Weitere Informationen zu [Versandberichten](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)
+Weitere Informationen zu [Versandberichten](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)
 
 ### Allgemeine Berichte {#global-reports}
 
@@ -248,11 +241,11 @@ Zugriff auf globale Berichte zur Leistungsanalyse über alle Kampagnen und Sendu
 - **Fehler und Bounces**: Analyse fehlgeschlagener Sendungen
 - **Benutzeraktivitäten**: Öffnungen, Klicks und Abmeldungen in allen Kampagnen
 
-Weitere Informationen zu [globalen Berichten](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)
+Weitere Informationen zu [globalen Berichten](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)
 
 ## Verwandte Themen {#related-topics}
 
 - [Best Practices für den Versand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices)
 - [Quarantäneverwaltung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines)
-- [Sendungen konfigurieren und durchführen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/validate/configure-and-send)
-- [Erste Schritte mit Reporting](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting)
+- [Sendungen konfigurieren und durchführen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/validate/configure-and-send)
+- [Erste Schritte mit Berichten](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting)
