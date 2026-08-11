@@ -149,7 +149,7 @@ So erstellen Sie einen Klassifizierungssatz:
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Weitere Informationen zu Klassifizierungssätzen finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
+Weitere Informationen zu Klassifizierungssätzen finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
 
 Wenn Ihre Report Suite, Konversionsvariablen, Erfolgsereignisse und der Klassifizierungssatz konfiguriert sind, müssen Sie die **[!UICONTROL externen Konten]** in Adobe Campaign konfigurieren.
 
