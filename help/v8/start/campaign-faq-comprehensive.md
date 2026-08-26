@@ -7,9 +7,9 @@ level: Beginner
 keywords: FAQ, Campaign v8, Fragen, Antworten, Hilfe, Support, Fehlerbehebung
 version: Campaign v8
 exl-id: 8b4f6343-5dc5-4401-ad6f-9c1ddbb23168
-source-git-commit: da2274cfd19bb067fcc1e990360093f161d5638a
+source-git-commit: d25c5a40af9ac0594301f46f09a4cc07a8e1945e
 workflow-type: tm+mt
-source-wordcount: '11689'
+source-wordcount: '11657'
 ht-degree: 17%
 
 ---
@@ -147,12 +147,6 @@ Die Erstellung Ihrer ersten E-Mail in Campaign v8 ist unkompliziert. Sie beginne
 **Verwandte Themen:**
 
 [E-Mail-Design und &#x200B;](../send/email.md) | [Ersten Versand erstellen](create-message.md) | [Versandvorlagen](../send/create-templates.md) | [Inhalt personalisieren](../send/personalize.md)
-
-+++
-
-+++ Wie übersetze ich eine Fehlermeldung?
-
-Eine Fehlermeldung wird in einer Fremdsprache angezeigt? Alle Fehlermeldungen und deren Übersetzung werden auf [dieser Seite](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de){target="_blank"} aufgelistet.
 
 +++
 
