@@ -100,7 +100,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
 
-In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"} sind alle Formularattribute aufgeführt.
+In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/tools/campaign-api){target="_blank"} sind alle Formularattribute aufgeführt.
 
 ## Formatierung {#formatting}
 

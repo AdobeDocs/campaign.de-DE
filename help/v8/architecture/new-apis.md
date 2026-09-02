@@ -221,4 +221,4 @@ Die Eingabe von An- und Abmeldedaten beruht auf dem [Staging-Mechanismus](stagin
 
 **Verwandte Themen**
 
-* [Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+* [Campaign JSAPI](https://experienceleague.adobe.com/de/tools/campaign-api){target="_blank"}

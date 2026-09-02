@@ -36,7 +36,7 @@ In [!DNL Adobe Campaign] stehen Ihnen eine Reihe von JavaScript-Funktionen zur V
 >
 >Je nach Bereitstellungsmodell können Sie REST-APIs auch mit Campaign v8 verwenden. [Weitere Informationen](../dev/api/get-started-apis.md).
 
-Sie können [Campaign JavaScript-APIs](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"} verwenden, um in der Cloud-Datenbank von Campaign zu schreiben oder aus ihr zu lesen:
+Sie können [Campaign JavaScript-APIs](https://experienceleague.adobe.com/de/tools/campaign-api){target="_blank"} verwenden, um in der Cloud-Datenbank von Campaign zu schreiben oder aus ihr zu lesen:
 
 * Geschäftsspezifische APIs, mit denen Sie auf jedes Objekt reagieren können: Sendungen, Workflows, Abonnements usw. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=de#configuring-campaign-classic){target="_blank"}.
 * Generische Datenzugriffs-APIs zum Abfragen der Datenmodelldaten mithilfe von `queryDef` und des `NLWS`. Weitere Informationen finden Sie unter [Datenbank mit queryDef abfragen](query-api.md).
@@ -68,4 +68,4 @@ Um APIs verwenden und mit [!DNL Adobe Campaign] interagieren zu können, müssen
 
 <!-- * [Query the database with queryDef](query-api.md)-->
 * [Best Practices für Datenmodelle](datamodel-best-practices.md)
-* [Campaign - JSAPI-Dokumentation](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+* [Campaign - JSAPI-Dokumentation](https://experienceleague.adobe.com/de/tools/campaign-api){target="_blank"}
