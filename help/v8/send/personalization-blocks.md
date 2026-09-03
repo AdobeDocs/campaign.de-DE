@@ -7,18 +7,14 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 TQID: https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 643
-ht-degree: 94%
+source-wordcount: 722
+ht-degree: 88%
 
 ---
 
@@ -39,7 +35,7 @@ Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzuf�
 
    ![](assets/perso-content-block.png)
 
-1. Der Gestaltungsbaustein wird dann als Skript eingefügt. Er wird bei der Personalisierung automatisch an das Empfängerprofil angepasst.
+1. Der Gestaltungsbaustein wird dann als Skript eingefügt. Er wird automatisch an das Profil der Empfängerin bzw. des Empfängers angepasst, wenn die Personalisierung generiert wird.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Vorschau]** und wählen Sie eine Person aus, um den Inhalt dieses Bausteins für eine bestimmte Empfängerin oder einen bestimmten Empfänger anzuzeigen.
 
 Sie können den Quell-Code eines Gestaltungsbausteins in den Versandinhalt einfügen. Wählen Sie die Option **[!UICONTROL HTML-Quell-Code des Bausteins einfügen]** aus.
@@ -64,6 +60,10 @@ Integrierte Gestaltungsbausteine sind:
 
 ## Erstellen von benutzerdefinierten Gestaltungsbausteinen {#create-custom-personalization-blocks}
 
+>[!IMPORTANT]
+>
+>Version 8.9.3 enthält eine Aktualisierung der externen URL-Zulassungsliste. Wenn ein benutzerdefinierter Gestaltungsbaustein auf eine externe URL verweist (z. B. auf ein extern gehostetes Bild), stellen Sie sicher, dass die Domain der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt wird, damit die Ressource ohne Unterbrechung weiter geladen wird. Verwenden Sie als Campaign-Admin das Control Panel, um URLs auf der Zulassungsliste hinzuzufügen und zu verwalten. Anweisungen finden [ unter „Hinzufügen ](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
+
 Über das Personalisierungssymbol können Sie neue, personalisierte Inhaltsbausteine definieren.
 
 Gehen Sie wie folgt vor, um einen Gestaltungsbaustein zu erstellen:
@@ -81,7 +81,7 @@ Gehen Sie wie folgt vor, um einen Gestaltungsbaustein zu erstellen:
    * Wählen Sie einen **Versand**-Inhaltstyp aus.
    * Aktivieren Sie die Option **[!UICONTROL Im Personalisierungsmenü anzeigen]**, um den Baustein über das Einfügen-Symbol der Personalisierungsfelder verfügbar zu machen.
    * Aktivieren Sie bei Bedarf die Option **[!UICONTROL Der Inhalt des Bausteins ist formatabhängig]**, um zwei verschiedene Bausteine für HTML- und Text-E-Mails zu definieren.
-   * Inhalt eingeben (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
+   * Geben Sie den Inhalt (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
 
 Nach der Speicherung ist der neue Gestaltungsbaustein im Versand-Editor verfügbar.
 
@@ -89,4 +89,4 @@ Nach der Speicherung ist der neue Gestaltungsbaustein im Versand-Editor verfügb
 
 Im folgenden Video erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449015?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

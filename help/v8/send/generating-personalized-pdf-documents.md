@@ -7,17 +7,13 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: f4a329e3-70d2-43cd-a04a-0bbd5e3ca390
 TQID: https://experienceleague.adobe.com/qfSKBHeQUkAYJb-PSeTxYMxGp-WicmITitT9qh8tHBs
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 468
-ht-degree: 84%
+source-wordcount: 538
+ht-degree: 86%
 
 ---
 
@@ -31,7 +27,7 @@ Unterstützt werden die Formate &quot;.docx&quot;, &quot;.doc&quot; und &quot;.o
 
 Um die entsprechenden Dokumente zu personalisieren, stehen Ihnen die gleichen JavaScript-Funktionen zur Verfügung, die auch bei E-Mails Verwendung finden.
 
-Sie müssen die Option **[!UICONTROL Der Inhalt der Datei wird beim Versand jeder Nachricht personalisiert und in PDF konvertiert“]**. Diese Option ist verfügbar, wenn Sie die Datei an die Versand-E-Mail anhängen. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie in der [Dokumentation zu Campaign v8](attaching-files.md).
+Sie müssen die Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt des Versand für jede Nachricht personalisiert und in PDF konvertiert]** aktivieren. Diese Option ist verfügbar, wenn Sie die Datei an den E-Mail-Versand anhängen. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie in der [Dokumentation zu Campaign v8](attaching-files.md).
 
 Die Erzeugung dynamischer Tabellen und der Einschluss von Bildern über URLs wird nachfolgend dargestellt.
 
@@ -46,6 +42,10 @@ Gehen Sie wie folgt vor, um eine dynamische Tabelle zu erzeugen:
 * Schließen Sie die Schleife in der dritten und letzten Zeile der Tabelle.
 
 ## Einfügen externer Bilder {#inserting-external-images}
+
+>[!IMPORTANT]
+>
+>Version 8.9.3 enthält eine Aktualisierung der externen URL-Zulassungsliste. Stellen Sie sicher, dass die Domains, die für externe Bilder in Ihren Anlagen verwendet werden, zur genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden, damit Ressourcen ohne Unterbrechung weiter geladen werden. Verwenden Sie als Campaign-Admin das Control Panel, um URLs auf der Zulassungsliste hinzuzufügen und zu verwalten. Anweisungen finden [ unter „Hinzufügen ](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
 
 Sie haben die Möglichkeit, ein Dokument mit Bildern zu personalisieren, deren URL in einem Feld des Empfängerprofils gespeichert ist.
 
@@ -62,14 +62,14 @@ Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen 
 
 * Gehen Sie in das Menü **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]**.
 * Erstellen Sie einen neuen Baustein mit dem Titel &quot;Mein Logo&quot; und dem internen Namen &quot;Mein_Logo&quot;.
-* Klicken Sie auf **[!UICONTROL Link Erweiterte Parameter…]** und aktivieren Sie dann die Option **[!UICONTROL Der Inhalt des Bausteins ist in einem Anhang enthalten]**. Auf diese Weise können Sie die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopieren.
+* Klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter…]** und aktivieren Sie die Option **[!UICONTROL Der Inhalt des Bausteins wird als Anhang angefügt]**. So können Sie die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopieren.
 
   ![](assets/s_ncs_pdf_bloc_option.png)
 
   Innerhalb des Gestaltungsbausteins sind zwei Deklarierungstypen zu unterscheiden:
 
-   * Der Adobe Campaign-Code der Personalisierungsfelder: Die Zeichen „Kleiner als“ und „Größer als“ müssen durch eine Escape-Sequenz ersetzt werden (`&lt;` und `&gt;`).
-   * Der OpenOffice-XML-Code wird vollständig in das OpenOffice-Dokument kopiert.
+  * Der Adobe Campaign-Code der Personalisierungsfelder: Die Zeichen „Kleiner als“ und „Größer als“ müssen durch eine Escape-Sequenz ersetzt werden (`&lt;` und `&gt;`).
+  * Der OpenOffice-XML-Code wird vollständig in das OpenOffice-Dokument kopiert.
 
 Im Beispiel weist der Gestaltungsbaustein folgendes Format auf:
 

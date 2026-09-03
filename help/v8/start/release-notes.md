@@ -4,18 +4,12 @@ description: Neueste Version von Campaign v8
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 TQID: https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7e14d410aba444e792a24c99a843f122a8fcedc6
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: d5ef99fa-df0c-4153-bf94-105ad0724167
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 2007
+source-wordcount: 2107
 ht-degree: 6%
 
 ---
@@ -26,7 +20,7 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 ## Version 8.9.3 {#release-8-9-3}
 
-_11. August 2026_
+_11. August 2026_
 
 <!-- CONFIRM: is a client console upgrade required for 8.9.3? If yes, add the >[!CAUTION] notice used in 8.9.2/8.9.1. If no, add an explicit one-line "no console upgrade required for this release" statement so the absence reads as intentional. -->
 
@@ -34,9 +28,15 @@ _11. August 2026_
 
 Diese Version enthält Sicherheitskorrekturen, die den Sicherheitszustand Ihrer Campaign-Umgebung insgesamt verbessern. Als gehosteter Kunde werden diese Fehlerbehebungen von Adobe im Rahmen des Upgrades angewendet, ohne dass Maßnahmen Ihrerseits erforderlich sind.
 
+### Aktualisierung der externen URL-Zulassungsliste {#url-allow-list-update-8-9-3}
+
+Diese Version enthält eine Aktualisierung der externen URL-Zulassungsliste, die für Versandinhalte und -anhänge verwendet wird. Stellen Sie sicher, dass alle Domains, auf die Sie derzeit verweisen, der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden.
+
+Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste externe URLs hinzuzufügen, die derzeit in Ihren Sendungen verwendet werden. Gehen Sie für alle neuen externen URLs in Zukunft genauso vor. Schließen Sie diese Aktivität bis zum 5. September 2026 ab, um Auswirkungen auf betroffene Sendungen zu vermeiden. Anweisungen finden [ unter „Hinzufügen ](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
+
 ### Adobe Analytics-Connector auf Analytics 2.0-API aktualisiert {#analytics-2-0-8-9-3}
 
-Adobe Analytics 1.4-APIs [&#x200B; das Ende des Lebenszyklus erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"} daher wurde der [Web Analytics-Connector](../connect/ac-aa.md) im Rahmen dieser Version auf die Analytics 2.0-API aktualisiert. Als gehosteter Kunde übernimmt Adobe diese Migration für Sie - es ist keine Konfiguration auf Ihrer Seite erforderlich.
+Adobe Analytics 1.4-APIs [ das Ende des Lebenszyklus erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"} daher wurde der [Web Analytics-Connector](../connect/ac-aa.md) im Rahmen dieser Version auf die Analytics 2.0-API aktualisiert. Als gehosteter Kunde übernimmt Adobe diese Migration für Sie - es ist keine Konfiguration auf Ihrer Seite erforderlich.
 
 +++ Weitere Informationen zum Upgrade auf Analytics 2.0
 
@@ -113,14 +113,14 @@ Der **neue SMS-**-Connector) ist jetzt für alle Kunden (GA) verfügbar. Weiterf
 
 Diese Version enthält eine Reihe von Funktionen, die in der Web-Benutzeroberfläche von Campaign verfügbar sind:
 
-* [Mehrsprachige Versandfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=de){target="_blank"}
-* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=de){target="_blank"}
-* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=de){target="_blank"}
-* [Inhaltsexperimente – A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=de){target="_blank"}
-* [Aktivität „Versand (fortlaufend)“](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=de){target="_blank"}
-* [Verwaltung der Kampagnenvalidierung](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=de){target="_blank"}
+* [Mehrsprachige Versandfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Inhaltsexperimente – A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Aktivität „Versand (fortlaufend)“](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Verwaltung der Kampagnenvalidierung](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
+Weitere Informationen finden Sie in den Versionshinweisen zur [ Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
 
 ### Sonstige Änderungen {#changes-8-9-1}
 
