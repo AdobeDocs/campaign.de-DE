@@ -13,9 +13,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7e14d410aba444e792a24c99a843f122a8fcedc6
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 2007
+source-wordcount: 2107
 ht-degree: 6%
 
 ---
@@ -26,13 +26,19 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 ## Version 8.9.3 {#release-8-9-3}
 
-_11. August 2026_
+_11. August 2026_
 
 <!-- CONFIRM: is a client console upgrade required for 8.9.3? If yes, add the >[!CAUTION] notice used in 8.9.2/8.9.1. If no, add an explicit one-line "no console upgrade required for this release" statement so the absence reads as intentional. -->
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-9-3}
 
 Diese Version enthält Sicherheitskorrekturen, die den Sicherheitszustand Ihrer Campaign-Umgebung insgesamt verbessern. Als gehosteter Kunde werden diese Fehlerbehebungen von Adobe im Rahmen des Upgrades angewendet, ohne dass Maßnahmen Ihrerseits erforderlich sind.
+
+### Aktualisierung der externen URL-Zulassungsliste {#url-allow-list-update-8-9-3}
+
+Diese Version enthält eine Aktualisierung der externen URL-Zulassungsliste, die für Versandinhalte und -anhänge verwendet wird. Stellen Sie sicher, dass alle Domains, auf die Sie derzeit verweisen, der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden.
+
+Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste externe URLs hinzuzufügen, die derzeit in Ihren Sendungen verwendet werden. Gehen Sie für alle neuen externen URLs in Zukunft genauso vor. Schließen Sie diese Aktivität bis zum 5. September 2026 ab, um Auswirkungen auf betroffene Sendungen zu vermeiden. Anweisungen finden [&#x200B; unter „Hinzufügen &#x200B;](https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
 
 ### Adobe Analytics-Connector auf Analytics 2.0-API aktualisiert {#analytics-2-0-8-9-3}
 
