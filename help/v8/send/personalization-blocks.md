@@ -66,7 +66,7 @@ Integrierte Gestaltungsbausteine sind:
 
 >[!IMPORTANT]
 >
->Version 8.9.3 enthält eine Aktualisierung der externen URL-Zulassungsliste. Wenn ein benutzerdefinierter Gestaltungsbaustein auf eine externe URL verweist (z. B. auf ein extern gehostetes Bild), stellen Sie sicher, dass die Domain der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt wird, damit die Ressource ohne Unterbrechung weiter geladen wird. Verwenden Sie als Campaign-Admin das Control Panel, um URLs auf der Zulassungsliste hinzuzufügen und zu verwalten. Anweisungen finden [&#x200B; unter „Hinzufügen &#x200B;](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
+>Version 8.9.3 enthält eine Aktualisierung der externen URL-Zulassungsliste. Wenn ein benutzerdefinierter Gestaltungsbaustein auf eine externe URL verweist (z. B. auf ein extern gehostetes Bild), stellen Sie sicher, dass die Domain der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt wird, damit die Ressource ohne Unterbrechung weiter geladen wird. Verwenden Sie als Campaign-Admin das Control Panel, um URLs auf der Zulassungsliste hinzuzufügen und zu verwalten. Anweisungen finden [&#x200B; unter „Hinzufügen &#x200B;](https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
 
 Über das Personalisierungssymbol können Sie neue, personalisierte Inhaltsbausteine definieren.
 
