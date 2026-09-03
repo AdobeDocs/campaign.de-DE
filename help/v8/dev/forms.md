@@ -18,10 +18,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
 workflow-type: tm+mt
-source-wordcount: 2593
-ht-degree: 95%
+source-wordcount: 2591
+ht-degree: 94%
 
 ---
 
@@ -100,7 +100,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
 
-In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=de){target="_blank"} sind alle Formularattribute aufgeführt.
+In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/tools/campaign-api){target="_blank"} sind alle Formularattribute aufgeführt.
 
 ## Formatierung {#formatting}
 
@@ -333,9 +333,9 @@ Mit dem Element **`<orderby>`** können Sie die Liste auch sortieren:
 * **noAutoComplete**: Deaktiviert &quot;type-ahead&quot; (mit dem Wert &quot;true&quot;)
 * **createMode**: erstellt die Relation im laufenden Betrieb, wenn sie noch nicht vorhanden ist. Mögliche Werte:
 
-   * **none**: Deaktiviert die Erstellung. Wenn die Relation nicht vorhanden ist, wird eine Fehlermeldung angezeigt.
-   * **inline**: Erstellt die Relation mit dem Inhalt im Bearbeitungsfeld.
-   * **edition**: Zeigt das Bearbeitungsformular für die Relation an. Beim Validieren des Formulars werden die Daten gespeichert (Standardmodus).
+  * **none**: Deaktiviert die Erstellung. Wenn die Relation nicht vorhanden ist, wird eine Fehlermeldung angezeigt.
+  * **inline**: Erstellt die Relation mit dem Inhalt im Bearbeitungsfeld.
+  * **edition**: Zeigt das Bearbeitungsformular für die Relation an. Beim Validieren des Formulars werden die Daten gespeichert (Standardmodus).
 
 * **noZoom**: Kein Bearbeitungsformular für die Relation (mit dem Wert &quot;true&quot;)
 * **form**: Überschreibt das Bearbeitungsformular des Zielelements
