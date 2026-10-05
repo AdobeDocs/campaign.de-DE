@@ -4,13 +4,16 @@ title: Technote – Adobe Campaign-System-Upgrades
 description: Adobe Campaign-System-Upgrade
 hide: true
 exl-id: cc64cce1-2473-4136-aadc-8b13e89ef7f9
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 100%
-
 ---
-
 # Umgebung-Upgrades für Adobe Campaign 2023 {#ac-system-upgrade}
 
 Die Campaign-Infrastruktur beruht auf Drittanbietersystemen, die regelmäßig mit den neuesten Versionen und Fehlerbehebungen aktualisiert werden müssen. Diese Aktualisierungen sind obligatorisch, um die Kontinuität des Service und den Schutz von Campaign-Umgebungen vor Sicherheitsgefahren zu gewährleisten. Außerdem ist ein Campaign-Upgrade erforderlich, um die Kompatibilität mit Systemänderungen von Drittanbietern sicherzustellen.

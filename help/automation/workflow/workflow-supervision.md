@@ -5,21 +5,30 @@ description: Erfahren Sie, wie Sie Campaign-Workflows überwachen.
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 362b347b-f914-4ebf-84d7-9989aef28a82
-TQID: https://experienceleague.adobe.com/eISWAIog62CXwFXxOo2C0dMghM4xe7cJ-x9hmnfkcqw
+TQID: 'https://experienceleague.adobe.com/eISWAIog62CXwFXxOo2C0dMghM4xe7cJ-x9hmnfkcqw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 654
-ht-degree: 95%
-
+source-wordcount: '654'
+ht-degree: 100%
 ---
-
 # Anwendungsfall: Überwachen Ihrer Workflows{#supervising-workflows}
 
 Dieses Anwendungsbeispiel zeigt die Erstellung eines Workflows zur Überwachung einer Reihe von Workflows. Abgefragt werden Workflows mit den Status &quot;ausgesetzt&quot;, &quot;angehalten&quot; und &quot;fehlgeschlagen&quot;.
@@ -44,7 +53,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 ## &#x200B;1. Schritt: Erstellung des Monitoring-Workflows {#step-1--creating-the-monitoring-workflow}
 
-Der Workflow-Ordner, den wir überwachen werden, ist der Ordner **CustomWorkflows**, der im Knoten **Administration > Produktion > Technische Workflows** gespeichert ist. Dieser Ordner enthält eine Reihe von Geschäfts-Workflows.
+Der zu überwachende Workflow-Ordner ist **„CustomWorkflows“** im Knoten **Administration > Betreibung > Technische Workflows**. Dieser Ordner enthält eine Reihe von Geschäfts-Workflows.
 
 Der **Monitoring-Workflow** wird im Stammverzeichnis des Ordners der technischen Workflows gespeichert. Das verwendete Label ist **Monitoring**.
 
@@ -124,7 +133,7 @@ vars.strWorkflowStop = strStop;
 
 ## &#x200B;3. Schritt: Erstellung der Testaktivität {#step-3--creating-the--test--activity}
 
-Die Testaktivität bestimmt, ob ein Versand oder ein neuer Workflow-Zyklus gestartet werden soll. In letzterem Fall wird die Warteaktivität aktiviert.
+Mit der Aktivität „Testen“ kann festgelegen werdden, ob ein Versand versendet werden muss oder ob der Überwachungs-Workflow auf der Grundlage der Aktivität „Warten“ einen weiteren Zyklus ausführen muss.
 
 Der Versand an die verantwortliche Person wird gestartet, **wenn wenigstens eine der drei Ereignisvariablen &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot;, &quot;vars.strWorkflowStop&quot; nicht null ist**.
 

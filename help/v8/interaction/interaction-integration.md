@@ -5,21 +5,30 @@ description: Erfahren Sie, wie Sie ein Angebot auf einer Web-Seite hinzufügen.
 feature: Interaction, Offers
 role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-TQID: https://experienceleague.adobe.com/KBMGNRM-vmeYoar4Bdr2uILvjiIBHA3KlkELyirtuvk
+TQID: 'https://experienceleague.adobe.com/KBMGNRM-vmeYoar4Bdr2uILvjiIBHA3KlkELyirtuvk'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1483
-ht-degree: 81%
-
+source-wordcount: '1483'
+ht-degree: 97%
 ---
-
 # Hinzufügen eines Angebots auf einer Web-Seite{#add-an-offer-in-web}
 
 Um das Angebotsmodul auf einer Web-Seite aufzurufen, fügen Sie einen JavaScript-Aufruf direkt in die Seite ein. Dieser Aufruf gibt den Angebotsinhalt in einem Zielelement zurück.
@@ -114,7 +123,7 @@ Im Inhalt der Web-Seite müssen Sie das folgende Skript hinzufügen, das währen
 
    Im vorliegenden Beispiel handelt es sich um einen zusammengesetzten Identifikationsschlüssel, da er sowohl auf die E-Mail-Adresse als auch auf den Namen des Kontakts Bezug nimmt.
 
-1. Während der Anzeige der Web-Seite ermöglicht die Skriptauswertung die Weitergabe der Empfänger-ID an das Angebotsmodul. Wenn es sich um eine zusammengesetzte ID handelt, werden die Schlüssel in der gleichen Reihenfolge angezeigt wie in den erweiterten Einstellungen und durch ein | getrennt.
+1. Während der Anzeige der Web-Seite ermöglicht die Skriptauswertung die Weitergabe der Empfänger-ID an das Angebotsmodul. Bei einer zusammengesetzten ID werden die Schlüssel in derselben Reihenfolge wie in den erweiterten Einstellungen angezeigt und durch | getrennt.
 
    In folgendem Beispiel-Code hat sich der Kontakt auf der Web-Seite angemeldet. Er wurde bei der Abfrage des Angebotsmoduls mithilfe seiner E-Mail-Adresse und seines Familiennamens identifiziert:
 
@@ -150,15 +159,15 @@ Die Angebotsmodul-Abfrage stellt sich wie folgt dar:
 
 * Der Parameter &quot;**env**&quot; erhält den internen Namen der Live-Umgebung.
 
-* Der Parameter **cb** erhält den Namen der Funktion, die den XML-Knoten liest, der von der Engine mit den (Callback) Vorschlägen zurückgegeben wird. Dieser Parameter ist optional.
+* Der Parameter „**cb**“ erhält den Namen der Funktion, die den vom Modul zurückgegebenen XML-Knoten mit den (Callback-)Vorschlägen liest. Dieser Parameter ist optional.
 
 * Der optionale Parameter „**t**“ erhält bei Interaktionen mit identifizierten Kontakten die Kennung des Kontakts. Der Parameter kann auch mit der Variablen **interactionTarget** übergeben werden. Dieser Parameter ist optional.
 
-* Der Parameter &quot;**c**&quot; empfängt die Liste der internen Namen der Kategorien. Dieser Parameter ist optional.
+* Der Parameter „**c**“ erhält die Liste interner Namen der Kategorien. Dieser Parameter ist optional.
 
-* Der **.** empfängt die Liste der Designs. Dieser Parameter ist optional.
+* Der Parameter „**th**“ erhält die Liste an Themen. Dieser Parameter ist optional.
 
-* Der Parameter **gctx** empfängt die Aufrufdaten global (context) für die gesamte Seite. Dieser Parameter ist optional.
+* Der Parameter „**gctx**“ erhält die globalen Abfragedaten (Kontext) der gesamten Seite. Dieser Parameter ist optional.
 
 Der zurückgegebene XML-Knoten stellt sich wie folgt dar:
 
@@ -183,7 +192,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Das Schema definiert die Felder Titel 2 und Preis.
 
-   Der Name des Schemas im Beispiel lautet **cus:offer**
+   Der Name des Schemas im Beispiel lautet **cus:offer**.
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -210,7 +219,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    >[!CAUTION]
    >
-   >Jedes Element muss zweimal definiert werden. Elemente vom Typ „CDATA“ („_jst„) können Personalisierungsfelder enthalten.
+   >Jedes Element muss zweimal definiert werden. Elemente vom Typ „CDATA“ („_jst“) können Personalisierungsfelder enthalten.
    >
    >Vergessen Sie nicht, die Datenbankstruktur zu aktualisieren.
 
@@ -281,7 +290,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Der Parameter &quot;**env**&quot; nimmt als Wert den internen Namen der Live-Umgebung an.
 
-   Der Wert des Parameters &quot;**cb**&quot; ist der Name der Funktion, die den von der Engine zurückgegebenen XML-Knoten interpretieren muss. In unserem Beispiel öffnet die aufgerufene Funktion ein modales Fenster (alert()-Funktion).
+   Der Wert des Parameters „**cb**“ ist der Name der Funktion, die den vom Modul zurückgegebenen XML-Knoten interpretieren muss. In unserem Beispiel öffnet die aufgerufene Funktion ein modales Fenster (alert()-Funktion).
 
    Der vom Angebotsmodul zurückgegebene XML-Knoten stellt sich wie folgt dar:
 
@@ -322,7 +331,7 @@ Es ist möglich, eine Angebotsunterbreitung mithilfe einer XML-Rendering-Funktio
 
 ## Einrichten einer SOAP-Integration
 
-Die für die Angebotsverwaltung bereitgestellten SOAP-Web-Services unterscheiden sich von den in Adobe Campaign üblicherweise verwendeten. Sie können über die im vorherigen Abschnitt beschriebene Interaktions-URL aufgerufen werden, über die Sie Angebote für einen bestimmten Kontakt unterbreiten oder aktualisieren können.
+Die für die Angebotsverwaltung bereitgestellten SOAP-Web-Dienste unterscheiden sich von den in Adobe Campaign üblicherweise verwendeten. Sie sind über die im vorangehenden Kapitel beschriebene Interaktions-URL zugänglich und ermöglichen es, ein Angebot für einen spezifischen Kontakt vorzuschlagen oder zu aktualisieren.
 
 ### Angebotsvorschläge {#offer-proposition}
 
@@ -330,7 +339,7 @@ Fügen Sie für einen Angebotsvorschlag über SOAP den Befehl **nms:proposition#
 
 * **targetId** – Primärschlüssel des Kontakts (es kann sich um einen zusammengesetzten Schlüssel handeln).
 * **maxCount** - gibt die Anzahl an Angebotsvorschlägen für den Kontakt an.
-* **context** - erlaubt das Einfügen von Kontextdaten in das Platzierungsschema. Wenn das verwendete Schema &quot;**&quot;:interaction**, sollte **`<empty>`** hinzugefügt werden.
+* **context** - erlaubt das Einfügen von Kontextdaten in das Platzierungsschema. Wenn das verwendete Schema **nms:interaction** ist, sollte **`<empty>`** hinzugefügt werden.
 * **categories** - bezeichnet die Kategorie, der die vorgeschlagenen Angebote angehören müssen.
 * **themes** - bezeichnet die Themen, denen die vorgeschlagenen Angebote entsprechen müssen.
 * **uuid** - Wert des permanenten Adobe Campaign-Cookies (&quot;uuid230&quot;).
@@ -339,7 +348,7 @@ Fügen Sie für einen Angebotsvorschlag über SOAP den Befehl **nms:proposition#
 
 >[!NOTE]
 >
->Die Einstellungen **targetId** und **maxCount** sind obligatorisch. Die anderen sind optional.
+>**targetId** und **maxCount** sind Pflichtparameter. Die übrigen sind optional.
 
 Als Antwort auf die Abfrage gibt der SOAP-Dienst folgende Parameter zurück:
 
@@ -348,11 +357,11 @@ Als Antwort auf die Abfrage gibt der SOAP-Dienst folgende Parameter zurück:
 
 ### Angebotsaktualisierung {#offer-update}
 
-Fügen Sie den **nms:interaction#UpdateStatus**-Befehl zur URL hinzu, gefolgt von diesen Parametern:
+Fügen Sie den Befehl **nms:interaction#UpdateStatus** zur URL hinzu, gefolgt von diesen Parametern:
 
 * **proposition** - die die vom Angebotsmodul ausgegebene Vorschlagskennung enthaltende Zeichenfolge. Siehe [Angebotsvorschläge](#offer-proposition).
 * **status** - Zeichenfolge, die den neuen Status des Angebots angibt. Die möglichen Werte werden im Schema **propositionStatus** [enumeration](../config/enumerations.md) im **nms:common** aufgeführt. Beispielsweise entspricht die Zahl 3 werksmäßig dem Status **Akzeptiert**.
-* **context** - XML-Element, mit dem Sie Kontextdaten zum Platzierungsschema hinzufügen können. Wenn das verwendete Schema &quot;**&quot;:interaction**, sollte **`<empty>`** hinzugefügt werden.
+* **context** - XML-Element, mit dem Sie Kontextdaten zum Platzierungsschema hinzufügen können. Wenn das verwendete Schema **nms:interaction** ist, sollte **`<empty>`** hinzugefügt werden.
 
 ### Anwendungsbeispiel eines SOAP-Aufrufs {#example-using-a-soap-call}
 

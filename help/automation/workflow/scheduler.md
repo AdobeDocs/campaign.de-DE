@@ -6,18 +6,26 @@ feature: Workflows
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
-TQID: https://experienceleague.adobe.com/QFp1owJ-ko4nfjjyAyc0pBWsWpMzSmjULhLziXQzWR0
+TQID: 'https://experienceleague.adobe.com/QFp1owJ-ko4nfjjyAyc0pBWsWpMzSmjULhLziXQzWR0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 403
-ht-degree: 77%
-
+source-wordcount: '403'
+ht-degree: 87%
 ---
-
 # Planung {#scheduler}
 
 
@@ -50,7 +58,7 @@ Mit einem Assistenten können Sie die Häufigkeit und den Gültigkeitszeitraum d
 
    ![](assets/s_user_segmentation_scheduler2.png)
 
-1. Geben Sie die Aktivierungszeiten und -tage an. Die Parameter für diesen Schritt hängen von der im vorherigen Schritt ausgewählten Häufigkeit ab. Wenn Sie die Aktivität mehrmals täglich starten möchten, stehen Ihnen folgende Konfigurationsoptionen zur Verfügung:
+1. Geben Sie die Aktivierungszeiten und -tage an. Die Parameter für diesen Schritt hängen von der im vorherigen Schritt ausgewählten Häufigkeit ab. Wenn Sie die Aktivität mehrmals täglich starten möchten, sind folgende Konfigurationsoptionen verfügbar:
 
    ![](assets/s_user_segmentation_scheduler3.png)
 

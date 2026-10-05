@@ -6,13 +6,20 @@ role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
-TQID: https://experienceleague.adobe.com/urm8-2koO46hRe8XeCDoKYVU-WDqxM7tq0TwqDC8Sc0
+TQID: 'https://experienceleague.adobe.com/urm8-2koO46hRe8XeCDoKYVU-WDqxM7tq0TwqDC8Sc0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: d9d413df-4e9e-4906-bbbc-28c06c2ccf59
+    internal-label: LINE App
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -26,7 +33,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 422d18b36d63bd04922adb3bb4e06a49ed7cdfd7
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 95%
@@ -35,7 +42,7 @@ ht-degree: 95%
 
 LINE ist ein Programm für kostenloses Instant Messaging, Sprach- und Videoanrufe, das für alle Mobilgeräte und für Desktop verfügbar ist. Sie können Adobe Campaign verwenden, um LINE-Nachrichten zu senden.
 
-Ebenfalls möglich ist die Kombination von [!DNL LINE] mit dem Transaktionsnachrichten-Modul. Dadurch können Echtzeitnachrichten über die auf Endbenutzergeräten installierte [!DNL LINE]-Mobile-App versendet werden. Weitere Informationen hierzu finden Sie auf dieser [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) Dokumentation zu Campaign Classic v7.
+Ebenfalls möglich ist die Kombination von [!DNL LINE] mit dem Transaktionsnachrichten-Modul. Dadurch können Echtzeitnachrichten über die auf Endbenutzergeräten installierte [!DNL LINE]-Mobile-App versendet werden. Weitere Informationen hierzu finden Sie auf dieser [ in ](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) Dokumentation zu Campaign Classic v7.
 
 ![](assets/line_message.png)
 

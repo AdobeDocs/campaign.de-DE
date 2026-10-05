@@ -3,21 +3,30 @@ title: Integrierte Versandberichte in Adobe Campaign
 description: Integrierte Versandberichte in Adobe Campaign
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-TQID: https://experienceleague.adobe.com/HbBY1Je7EhLl6pGWP83P2YM3sXauOHIS0-SYhCjrU14
+TQID: 'https://experienceleague.adobe.com/HbBY1Je7EhLl6pGWP83P2YM3sXauOHIS0-SYhCjrU14'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1172
-ht-degree: 68%
-
+source-wordcount: '1172'
+ht-degree: 87%
 ---
-
 # Versandberichte {#delivery-reports}
 
 Sie können die Ausführung von Sendungen in verschiedenen Berichten verfolgen, auf die über die Versandübersicht zugegriffen werden kann.
@@ -71,7 +80,7 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 * **[!UICONTROL Summe der Öffnungen in Bezug auf die erreichte Population]**: Schätzung der Gesamtzahl der Öffnungen durch die angesprochenen Empfängerinnen und Empfänger.
 * **[!UICONTROL Klicks auf den Ausschluss-Link]**: Anzahl der Klicks auf den Link zum Abmelden.
 * **[!UICONTROL Klicks auf den Mirrorseiten-Link]**: Anzahl der Klicks auf den Link [Mirrorseite](../send/mirror-page.md). Um berücksichtigt zu werden, muss der Link im Versand-Assistenten als solcher definiert worden sein (getrackte URLs).
-* **[!UICONTROL Schätzung der Weiterleitungen]**: Schätzung der Anzahl der E-Mails, die von den Zielgruppenempfängerinnen und -empfängern weitergeleitet werden. Dieser Wert wird berechnet, indem die Anzahl der einzelnen Personen und die Anzahl der einzelnen Empfänger, die auf die E-Mail geklickt haben, abgezogen werden.
+* **[!UICONTROL Schätzung der Weiterleitungen]**: Schätzung der Anzahl der E-Mails, die von den Zielgruppenempfängerinnen und -empfängern weitergeleitet werden. Dieser Wert wird berechnet, indem die unterschiedlichen Personen und die unterschiedlichen Empfangenden, die in die E-Mail geklickt haben, subtrahiert werden.
 
   >[!NOTE]
   >
@@ -79,12 +88,12 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 
 **[!UICONTROL 3. Öffnungs- und Klickrate]**
 
-Diese Wertetabelle zeigt die Aufschlüsselung der Sendungen, Öffnungen, Klicks und Brutto-Reaktionszeiten nach Internet-Domain. Folgende Indikatoren werden angezeigt:
+Die Tabelle zeigt Sendungen, Öffnungen, Klicks und Brutto-Reaktionsraten aufgeschlüsselt nach Internet-Domains. Folgende Indikatoren werden angezeigt:
 
 * **[!UICONTROL Gesendet]**: Gesamtzahl der auf dieser Domain gesendeten Nachrichten.
 * **[!UICONTROL Beschwerden]**: Anzahl der Nachrichten für diese Domain, die von der Empfängerin oder vom Empfänger als unerwünscht gemeldet wurden. Die Rate wird auf Basis der Gesamtzahl der an die Domain gesandten Nachrichten berechnet.
 * **[!UICONTROL Öffnungen]**: Anzahl der unterschiedlichen Zielgruppenempfängerinnen und -empfänger dieser Domain, die mindestens einmal eine Nachricht geöffnet haben. Die Rate wird auf Basis der Gesamtzahl der an die Domain gesandten Nachrichten berechnet.
-* **[!UICONTROL Klicks]**: Anzahl der unterschiedlichen Zielgruppenempfängerinnen und -empfänger, die mindestens einmal in einem Versand geklickt haben. Die Rate wird anhand der Gesamtzahl der in dieser Domain gesendeten Nachrichten berechnet
+* **[!UICONTROL Klicks]**: Anzahl der unterschiedlichen Zielgruppenempfängerinnen und -empfänger, die mindestens einmal in einem Versand geklickt haben. Die Rate wird auf Basis der Gesamtzahl der an die Domain gesandten Nachrichten berechnet.
 * **[!UICONTROL Brutto-Reaktionsrate]**: Prozentualer Anteil der Empfängerinnen und Empfänger, die mindestens einmal in einem Versand geklickt haben, im Vergleich zur Anzahl der Empfängerinnen und Empfänger, die mindestens einmal einen Versand geöffnet haben.
 
 >[!NOTE]
@@ -103,7 +112,7 @@ Diese Wertetabelle zeigt die Aufschlüsselung der Sendungen, Öffnungen, Klicks 
 * **[!UICONTROL Unique Clicks der erreichten Population]**: Anzahl der unterschiedlichen Personen, die mindestens einmal in einem Versand geklickt haben.
 * **[!UICONTROL Klicks insgesamt]**: Gesamtzahl der Klicks von angesprochenen Empfängerinnen und Empfängern, ausgenommen Abmelde-Links und Mirrorseiten.
 * **[!UICONTROL Empfänger-Klicks]**: Anzahl der unterschiedlichen angesprochenen Empfängerinnen und Empfänger, die mindestens einmal im selben Versand geklickt haben.
-* **[!UICONTROL Geschätzte Empfängerreaktivität]**: Verhältnis der Anzahl der Empfänger, die mindestens einmal in einem Versand geklickt haben, im Vergleich zur geschätzten Anzahl der Empfänger, die mindestens einmal einen Versand geöffnet haben. Klicks auf die Abmelde- und Mirrorseiten-Links werden nicht berücksichtigt.
+* **[!UICONTROL Geschätzte Empfängerreaktivität]**: Verhältnis der Anzahl der Empfänger, die mindestens einmal in einem Versand geklickt haben, im Vergleich zur geschätzten Anzahl der Empfänger, die mindestens einmal einen Versand geöffnet haben. Klicks auf Opt-out-Links und Mirrorseiten werden nicht berücksichtigt.
 <!--
 **[!UICONTROL 5. Web tracking]**
 
@@ -182,7 +191,7 @@ Dieser Bereich zeigt folgende Indikatoren:
 
 ## Klicks {#hot-clicks}
 
-Dieser Bericht zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentualen Anteil der Klicks auf Links für jeden Link. Abmelde-Links für Gestaltungsbausteine, Mirrorseiten-Links und Angebots-Links werden in der Gesamtklickzahl berücksichtigt, aber nicht im Bericht angezeigt.
+Dieser Bericht zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentualen Klickanteil für jeden Link. Gestaltungsbausteine, Abmelde-Links, Mirrorseiten-Links und Angebots-Links werden bei der Gesamtanzahl der Klicks berücksichtigt, jedoch nicht im Bericht angezeigt.
 
 >[!NOTE]
 >
@@ -193,9 +202,9 @@ Dieser Bericht zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentu
 
 Dieser Bericht zeigt Statistiken zu Öffnungen, Klicks und Transaktionen.
 
-Damit können Sie die Marketing-Wirkung des Versands verfolgen. Sie können konfigurieren, wie Werte angezeigt werden, indem Sie die Zeitskala ändern (1-Stunden-, 3-Stunden- oder 24-Stunden-Ansicht usw.). Klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
+Damit können Sie die Marketing-Wirkung des Versands verfolgen. Sie können konfigurieren, wie die Werte angezeigt werden, indem Sie die Zeitskala ändern (1-Stunden-, 3-Stunden- oder 24-Stunden-Ansicht usw.). Klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
 
-Dieser Bericht enthält eine Wertetabelle und ein Pareto-Diagramm, die die Zeit anzeigen, die der Versand benötigt, um die maximale Effizienz zu erreichen. Folgende Indikatoren werden angezeigt:
+Die Statistiken werden in Form einer Tabelle und eines Pareto-Diagramms dargestellt, das die Dauer angibt, die der Versand benötigt hat, um seine höchste Effizienz zu erreichen. Folgende Indikatoren werden angezeigt:
 
 * **[!UICONTROL Öffnungen]**: Geschätzte Dauer, um einen bestimmten Prozentsatz der Gesamtzahl der geöffneten Nachrichten zu erreichen. E-Mails im Textformat werden nicht berücksichtigt. [Weitere Informationen](metrics-calculation.md#tracking-opens-).
 * **[!UICONTROL Klicks]**: Geschätzte Dauer, um einen bestimmten Anteil an Klicks in Bezug auf die Gesamtzahl der aufgezeichneten Klicks zu erreichen. Klicks auf den Opt-out-Link und die Mirrorseite werden nicht berücksichtigt.
@@ -205,7 +214,7 @@ Dieser Bericht enthält eine Wertetabelle und ein Pareto-Diagramm, die die Zeit 
 
 ## Zusammenfassende Berichte {#cumulated-reports}
 
-Sie können kumulierte Berichte zu Sendungen anzeigen. Wählen Sie dazu die zu vergleichenden Sendungen aus, um die Liste der Berichte für diese Sendungen zu erhalten.
+Sie können kumulierte Berichte zu Sendungen anzeigen. Wählen Sie dazu die zu vergleichenden Sendungen aus, um eine Liste mit Berichten für diese Sendungen zu erhalten.
 
 Drücken Sie die Strg-Taste, um nicht direkt aufeinanderfolgende Sendungen zu markieren.
 

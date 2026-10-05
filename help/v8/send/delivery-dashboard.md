@@ -6,26 +6,38 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 254765d3-f664-4200-9a70-f8876f2b2933
-TQID: https://experienceleague.adobe.com/pkDQp2NsMTR2iy9QsA3NjxJs-h-wud0pKdqOuE3foIs
+TQID: 'https://experienceleague.adobe.com/pkDQp2NsMTR2iy9QsA3NjxJs-h-wud0pKdqOuE3foIs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1207
+source-wordcount: '1207'
 ht-degree: 63%
-
 ---
-
 # Überwachen von Sendungen in der Campaign-Benutzeroberfläche {#delivery-dashboard}
 
 Die Überwachung Ihrer Sendungen ist wichtig, um sicherzustellen, dass Ihre Kampagnen effizient sind und Ihre Kunden erreichen. Adobe Campaign bietet Tools, mit denen Sie auf Ihre Sendungen zugreifen und deren Leistung über die Versandliste und das Versand-Dashboard überwachen können.
@@ -86,7 +98,7 @@ Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden
 
 Die Registerkarte **[!UICONTROL Versand]** enthält einen Verlauf der Vorfälle in diesem Versand. Sie enthält die Versandlogs, d. h. die Liste der gesendeten Nachrichten und deren Status sowie die zugehörigen Nachrichten.
 
-Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Verschiedene Status werden auf der Seite [Versandstatus“ &#x200B;](delivery-statuses.md).
+Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Verschiedene Status werden auf der Seite [Versandstatus“ ](delivery-statuses.md).
 
 >[!NOTE]
 >
@@ -159,7 +171,7 @@ Wenn Ihr Versand länger als üblich dauert, nachdem Sie auf die Schaltfläche *
 
 ### Probleme mit der IP-Adresse und der Reputation
 
-Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. Überprüfen Sie Ihre Versandlogs (Broadlogs) auf der Registerkarte **[!UICONTROL Versand]** auf Bounce-Nachrichten, die auf Reputationsprobleme hinweisen. Orientierungshilfen zur Reputationsverwaltung finden [&#x200B; im Abschnitt &#x200B;](monitoring-deliverability.md)Zustellbarkeits-Monitoring“.
+Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. Überprüfen Sie Ihre Versandlogs (Broadlogs) auf der Registerkarte **[!UICONTROL Versand]** auf Bounce-Nachrichten, die auf Reputationsprobleme hinweisen. Orientierungshilfen zur Reputationsverwaltung finden [ im Abschnitt ](monitoring-deliverability.md)Zustellbarkeits-Monitoring“.
 
 ### Versandgröße und -komplexität
 

@@ -5,26 +5,38 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
-TQID: https://experienceleague.adobe.com/lF4AHDlqHrKUs5Vp5ycT8aCX-EzMzJG5mdULfZIl0ZY
+TQID: 'https://experienceleague.adobe.com/lF4AHDlqHrKUs5Vp5ycT8aCX-EzMzJG5mdULfZIl0ZY'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+    internal-label: Transactional messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 863
-ht-degree: 77%
-
+source-wordcount: '863'
+ht-degree: 90%
 ---
-
 # Senden und Überwachen von Transaktionsnachrichten {#delivery-execution}
 
 ## Senden von Nachrichten{#send-transactional-msg}
@@ -65,7 +77,7 @@ Der Zugriff auf diese Message Center-Berichte erfolgt über den Tab **[!UICONTRO
 
 Der **[!UICONTROL Ereignisverlauf des Message Centers]** zeigt einen Überblick über die Aktivität des Message-Center-Moduls an, d. h. die Anzahl der als Transaktionsnachrichten verarbeiteten und zugestellten Ereignisse.
 
-Wenn der Bericht geöffnet wird, entsprechen die standardmäßig angezeigten Informationen der Rate der erfolgreich gesendeten Transaktionsnachrichten. Um weitere Ebenen anzuzeigen, können Sie die verschiedenen Knoten öffnen und den Cursor auf der entsprechenden Ebene platzieren, um sie auszuwählen.
+Beim Öffnen des Berichts entsprechen die standardmäßig angezeigten Daten der Rate der erfolgreich gesendeten Transaktionsnachrichten. Sie können die unterschiedlichen Knoten aufklappen, um weitere Ebenen anzuzeigen. Wenn Sie mit dem Mauszeiger über eine Ebene fahren, wird sie ausgewählt.
 
 Sie haben zudem die Möglichkeit, für jeden Zeitraum die Daten jedes Ereignisses zu visualisieren. Die Spalte **[!UICONTROL Ereignisse]** entspricht der Anzahl von der Kontrollinstanz empfangenen Ereignisse. In der Spalte **[!UICONTROL Gesendet]** werden die als Reaktion auf die Ereignisse gesendeten personalisierten Transaktionsnachrichten berechnet.
 
@@ -81,8 +93,8 @@ Sie können globale Statistiken oder Statistiken anzeigen, die sich auf eine bes
 Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indikatoren werden für den ausgewählten Zeitraum berechnet:
 
 * **[!UICONTROL Durchschnittliche Verweildauer in der Warteschlange]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Dabei wird nur die Verarbeitungszeit berücksichtigt.
-* **[!UICONTROL Durchschnittliche Sendungsdauer(en)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Es wird nur die MTA-Versandzeit berücksichtigt.
-* **[!UICONTROL Durchschnittliche Verarbeitungszeit(en)]**: Durchschnittliche Zeit, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Die Berechnung berücksichtigt die Verarbeitungszeit und die MTA-Versandzeit.
+* **[!UICONTROL Durchschnittliche Sendungsdauer(en)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Nur die MTA-Versandzeit wird berücksichtigt.
+* **[!UICONTROL Durchschnittliche Verarbeitungszeit(en)]**: Durchschnittliche Zeit, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Die Berechnung berücksichtigt die Verarbeitungszeit und MTA-Versanddauer.
 * **[!UICONTROL Maximale Anzahl an Ereignissen in der Warteschlange]**: Maximale Anzahl der zum gleichen Zeitpunkt in der Message-Center-Warteschlange vorhandenen Ereignisse.
 * **[!UICONTROL Minimale Anzahl an Ereignissen in der Warteschlange]**: Minimale Anzahl der zum gleichen Zeitpunkt in der Message-Center-Warteschlange vorhandenen Ereignisse.
 * **[!UICONTROL Durchschnittliche Anzahl an Ereignissen in der Warteschlange]**: Durchschnittliche Anzahl der zum gleichen Zeitpunkt in der Message-Center-Warteschlange vorhandenen Ereignisse.
@@ -107,8 +119,8 @@ Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indika
 * **[!UICONTROL Eingehend (Ereignisanz.)]**: Anzahl der neuen Ereignisse in der Warteschlange.
 * **[!UICONTROL Ausgehend (Durchsatz/Std.)]**: Durschnittliche Anzahl der pro Stunde erfolgreich aus Message Center entlassenen Ereignisse (über einen Versand).
 * **[!UICONTROL Ausgehend (Nachrichtenanz.)]**: Anzahl der erfolgreich aus Message Center versandten Nachrichten (über einen Versand).
-* **[!UICONTROL Durchschnittliche Sendungsdauer (Sekunden)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Die Berechnung berücksichtigt die Verarbeitungszeit und die MTA-Versandzeit.
-* **[!UICONTROL Fehlerrate]**: Anzahl fehlerhafter Ereignisse im Vergleich zur Anzahl der Neuzugänge in der Message-Center-Warteschlange. Folgende Fehler werden berücksichtigt: Routing-Fehler, Ereignis ist abgelaufen (zu lange in der Warteschlange verbliebenes Ereignis), Versandfehler, vom Versand ignoriert (Quarantäne usw.).
+* **[!UICONTROL Durchschnittliche Sendungsdauer (Sekunden)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Die Berechnung berücksichtigt die Verarbeitungszeit und MTA-Versanddauer.
+* **[!UICONTROL Fehlerrate]**: Anzahl fehlerhafter Ereignisse im Vergleich zur Anzahl der Neuzugänge in der Message-Center-Warteschlange. Folgende Fehler werden berücksichtigt: Routing-Fehler, abgelaufene Ereignisse (Ereignis verbleibt zu lange in der Warteschlange), Versandfehler, vom Versand ignorierte Ereignisse (Quarantäne usw.).
 
 >[!NOTE]
 >

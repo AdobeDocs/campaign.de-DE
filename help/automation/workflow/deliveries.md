@@ -5,13 +5,27 @@ description: Erfahren Sie mehr über die standardmäßigen Workflows für Sendun
 feature: Workflows
 role: User, Admin
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 56%
-
+ht-degree: 89%
 ---
-
 
 # Sendungen{#deliveries}
 
@@ -44,7 +58,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Zustellbarkeit</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td> Mit diesem Workflow können Sie die Liste der Regeln für die Bounce-Message-Qualifizierung sowie die Liste der Domains und MXs in der Plattform erstellen. Dieser Workflow funktioniert nur, wenn der HTTPS-Port geöffnet ist. Wenn das Zustellbarkeitsmodul (Email Deliverability) nicht installiert ist, werden die Listen nicht aktualisiert.<br /> </td> 
+   <td> Dieser Workflow ermöglicht die Erstellung der Liste der Qualifizierungsregeln für Bounce-E-Mails sowie die Domain- und MX-Liste der Plattform. Der Workflow wird nur bei geöffnetem HTTPS-Port ausgeführt. Wenn das Zustellbarkeitsmodul (Email Deliverability) nicht installiert ist, werden die Listen nicht aktualisiert.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Datenbankbereinigung</span> <br /> </td> 
@@ -54,7 +68,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Bereinigung ausgesetzter Workflows</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>Dieser Workflow analysiert pausierte Workflows, deren Schweregrad auf „Normal“ eingestellt ist, sowie Trigger- und Benachrichtigungswarnungen, wenn diese zu lange pausiert wurden. Nach einem Monat werden pausierte technische Workflows bedingungslos angehalten. Standardmäßig wird sie jeden Montag um 5 Uhr morgens ausgelöst.</p> <p>Weitere Informationen finden Sie im Abschnitt zur Handhabung pausierter Workflows</a>.</p></td> 
+   <td> <p>Dieser Workflow analysiert pausierte Workflows, deren Schweregrad auf „normal“ gesetzt ist, und löst Warnungen und Benachrichtigungen aus, wenn sie zu lange pausiert sind. Nach einem Monat werden pausierte technische Workflows bedingungslos gestoppt. Standardmäßig wird er jeden Montag um 5 Uhr gestartet.</p> <p>Weitere Informationen finden Sie im Abschnitt zur Handhabung pausierter Workflows</a>.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Angebotsbenachrichtigungen</span> <br /> </td> 
@@ -69,7 +83,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Tracking</span> <br /> </td> 
    <td> <span class="uicontrol">tracking</span> <br /> </td> 
-   <td> Dieser Workflow ermöglicht die Wiederherstellung und Konsolidierung von Tracking-Informationen. Darüber hinaus wird die Neuberechnung von Tracking- und Versandstatistiken sichergestellt, insbesondere derjenigen, die von Archivierungs-Workflows für Message Center verwendet werden. Standardmäßig wird er einmal pro Stunde ausgelöst. <br /> </td> 
+   <td> Dieser Workflow führt die Wiederherstellung und Konsolidierung von Tracking-Informationen durch. Er aktualisiert außerdem die Berechnung der Tracking- und Versandstatistiken, insbesondere der Statistiken, die von den Archivierungs-Workflows des Message Centers verwendet werden. Standardmäßig wird er einmal pro Stunde ausgelöst. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

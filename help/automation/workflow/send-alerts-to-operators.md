@@ -5,23 +5,30 @@ description: Erfahren Sie, wie Sie personalisierte Warnungen an Benutzer senden
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 41a009f6-d1e9-40c9-8494-3bbb4bd3d134
-TQID: https://experienceleague.adobe.com/dNaZR5YIugp9CIju-jKPHqztQu75IurMvxJtbTILOTY
+TQID: 'https://experienceleague.adobe.com/dNaZR5YIugp9CIju-jKPHqztQu75IurMvxJtbTILOTY'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 374
-ht-degree: 78%
-
+source-wordcount: '374'
+ht-degree: 100%
 ---
-
 # Senden personalisierter Warnungen an Benutzer{#sending-personalized-alerts-to-operators}
 
 
 
 In diesem Beispiel möchten wir einem Benutzer eine Warnung senden, die den Namen der Profile enthält, die einen Newsletter geöffnet, aber nicht auf den darin enthaltenen Link geklickt haben.
 
-Die Felder „Vor- und Nachname“ der Profile sind mit der Zielgruppendimension **[!UICONTROL Empfänger]** verknüpft, während die Aktivität **[!UICONTROL Warnhinweis]** mit der Zielgruppendimension **[!UICONTROL Benutzer]** verknüpft ist. Daher steht zwischen den beiden Zielgruppendimensionen kein Feld zur Verfügung, um eine Abstimmung durchzuführen, die Vor- und Nachnamenfelder abzurufen und sie in der Aktivität Warnhinweis anzuzeigen.
+Die Felder für Vor- und Nachname der Profile sind mit der Zielgruppendimension **[!UICONTROL Empfänger]** verknüpft, während die Aktivität **[!UICONTROL Warnung]** mit der Zielgruppendimension **[!UICONTROL Operator]** verknüpft ist. Deshalb ist bei den beiden Zielgruppendimensionen kein Feld verfügbar, um eine Abstimmung vorzunehmen, die Felder für Vor- und Nachname abzurufen und in der Warnungsaktivität anzuzeigen.
 
 Deshalb muss der folgende Workflow erstellt werden:
 
@@ -98,7 +105,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->Mit dem Befehl **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** können Sie eines der Felder hinzufügen, die der Instanzvariablen über die Aktivität **[!UICONTROL JavaScript-Code&rbrace;]** wurden.\
+>Mit dem Befehl **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** können Sie eines der Felder hinzufügen, die mit der Aktivität **[!UICONTROL JavaScript-Code]** in der Instanzvariablen gespeichert wurden.\
 >Sie können beliebig viele Felder hinzufügen, vorausgesetzt diese wurden in den JavaScript-Code eingefügt.
 
 ![](assets/uc_operator_8.png)

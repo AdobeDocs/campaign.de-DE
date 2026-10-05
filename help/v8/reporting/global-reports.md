@@ -4,29 +4,44 @@ description: Erfahren Sie, wie Sie auf globale Berichte zugreifen und diese verw
 feature: Reporting, Monitoring
 role: User, Developer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-TQID: https://experienceleague.adobe.com/4BSV9uMb9AfI4Su-UcDOwcvT7LN0HDNsW4s9PC8Bx90
+TQID: 'https://experienceleague.adobe.com/4BSV9uMb9AfI4Su-UcDOwcvT7LN0HDNsW4s9PC8Bx90'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Security
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1914
-ht-degree: 78%
-
+source-wordcount: '1914'
+ht-degree: 99%
 ---
-
 # Allgemeine Berichte {#global-reports}
 
-Diese Berichte beziehen sich auf die Aktivität der Daten in der gesamten Datenbank. Um das Berichte-Dashboard anzuzeigen, gehen Sie zur Registerkarte **[!UICONTROL Berichte]** .
+Diese Berichte beziehen sich auf Aktivitäten im Zusammenhang mit Daten der gesamten Datenbank. Um das Berichts-Dashboard anzuzeigen, navigieren Sie zur Registerkarte **[!UICONTROL Berichte]**.
 
 ![](assets/reports-tab.png)
 
-Um Berichte anzuzeigen, klicken Sie auf ihre Namen. Die folgenden Berichte sind standardmäßig verfügbar:
+Um Berichte anzuzeigen, klicken Sie auf ihren Namen. Standardmäßig sind die folgenden Berichte verfügbar:
 
 ![](assets/report-global-list.png)
 
@@ -50,11 +65,11 @@ Um Berichte anzuzeigen, klicken Sie auf ihre Namen. Die folgenden Berichte sind 
 
 ## Versanddurchsatz {#delivery-throughput}
 
-Dieser Bericht enthält Informationen zum Versanddurchsatz der gesamten Plattform für einen bestimmten Zeitraum. Zur Messung der Versandgeschwindigkeit von Nachrichten werden als Kriterien die Anzahl der pro Stunde gesendeten Nachrichten und die Größe der Nachrichten (in Bit pro Sekunde) herangezogen. Im folgenden Beispiel zeigt das erste Diagramm die erfolgreichen Sendungen in Blau und die Anzahl der fehlerhaften Sendungen in Orange an.
+Dieser Bericht enthält Informationen zum Versanddurchsatz der gesamten Plattform für einen bestimmten Zeitraum. Die Kriterien zur Messung der Versandgeschwindigkeit von Nachrichten sind die Anzahl der pro Stunde gesendeten Nachrichten und die Größe der Nachrichten (in Bits pro Sekunde). Im folgenden Beispiel zeigt das erste Diagramm die erfolgreichen Sendungen in Blau und die Anzahl der fehlerhaften Sendungen in Orange an.
 
 ![](assets/report-toolbar.png)
 
-Sie können die angezeigten Werte konfigurieren, indem Sie die Zeitskala ändern: 1-Stunden-Ansicht, 3-Stunden-Ansicht, 24-Stunden-Ansicht usw. Klicken Sie **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
+Sie können die angezeigten Werte konfigurieren, indem Sie die Zeitskala ändern: 1-Stunden-Ansicht, 3-Stunden-Ansicht, 24-Stunden-Ansicht usw. Klicken Sie auf **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
 
 >[!NOTE]
 >
@@ -79,7 +94,7 @@ Folgende Optionen stehen zur Verfügung:
 
 Dieser Bericht zeigt die Aufschlüsselung der unzustellbaren Nachrichten nach Typ und nach Domain.
 
-Die **[!UICONTROL Anzahl verarbeiteter Nachrichten]** gibt die Gesamtzahl der vom Versand-Server verarbeiteten Nachrichten an. Dieser Wert ist kleiner als die Anzahl der Nachrichten, die versendet werden sollen, wenn einige Sendungen gestoppt oder angehalten wurden (bevor sie vom Server verarbeitet werden).
+Die **[!UICONTROL Anzahl verarbeiteter Nachrichten]** stellt die Gesamtzahl der vom Versand-Server verarbeiteten Nachrichten dar. Wenn einige Sendungen gestoppt oder pausiert wurden (bevor sie vom Server verarbeitet wurden), ist dieser Wert niedriger als die Anzahl der zu sendenden Nachrichten.
 
 **[!UICONTROL Aufschlüsselung der Fehler nach Typ]**
 
@@ -109,7 +124,7 @@ Folgende Indikatoren werden angezeigt:
   >
   >Dieser Indikator bezieht sich nur auf Sendungen auf [mobilen Kanälen](../send/send.md).
 
-  Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das `[+]` klicken. Für jeden Fehlertyp können Sie die Aufschlüsselung der Fehlermeldungen nach Domain anzeigen.
+  Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das Symbol `[+]` klicken. Damit kann für jeden Fehlertyp die Aufschlüsselung der fehlerhaften Nachrichten nach Domain angezeigt werden.
 
 **[!UICONTROL Aufschlüsselung der Fehler nach Domain]**
 
@@ -121,7 +136,7 @@ Zu jeder Domain erscheint:
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der verarbeiteten Nachrichten dieser Domain,
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der fehlerhaften Nachrichten.
 
-Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das Symbol [+] klicken. Sie können für jeden Domain-Typ die Aufschlüsselung der Fehlermeldungen nach Fehlertyp anzeigen.
+Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das Symbol [+] klicken. Damit kann für jeden Domain-Typ die Aufschlüsselung der fehlerhaften Nachrichten nach Fehlertyp angezeigt werden.
 
 ![](assets/errors-report-details.png)
 
@@ -157,7 +172,7 @@ In der Tabelle der allgemeinen Statistiken können Sie auf die Browser-Namen kli
 
 Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
-Die **[!UICONTROL Verlauf]**-Kurve stellt die Anwesenheitsrate dieses Browsers pro Tag dar. Die Rate ist das Verhältnis zwischen der Anzahl der Besucher pro Tag (in diesem Browser) und der Anzahl der Besucher, die an dem Tag mit der höchsten Anwesenheitsrate gemessen wird.
+Die Kurve **[!UICONTROL Verlauf]** stellt die Anwesenheitsrate dieses Browsers pro Tag dar. Bei der Rate handelt es sich um das Verhältnis der Anzahl an Besuchenden pro Tag (über diesen Browser) im Vergleich zur Anzahl an Besuchenden gemessen am Tag mit der höchsten Anwesenheitsrate.
 
 Die **[!UICONTROL Aufschlüsselung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für den gewählten Browser.
 
@@ -247,7 +262,7 @@ In der Tabelle der allgemeinen Statistiken können Sie auf die Namen der einzeln
 
 Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
-Die **[!UICONTROL Verlauf]**-Kurve stellt die Nutzungsrate dieses Betriebssystems pro Tag dar. Diese Rate ist das Verhältnis der Anzahl der Besucher pro Tag (auf diesem Betriebssystem) in Bezug auf die Anzahl der Besucher, die an dem Tag mit der höchsten Anwesenheitszahl gemessen werden.
+Die Kurve **[!UICONTROL Verlauf]** stellt die Nutzungsrate dieses Betriebssystems pro Tag dar. Bei der Rate handelt es sich um das Verhältnis der Anzahl an Besuchenden pro Tag (unter diesem Betriebssystem) im Vergleich zur Anzahl an Besuchenden gemessen am Tag mit der höchsten Anwesenheit.
 
 Die **[!UICONTROL Aufschlüsselung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für das gewählte Betriebssystem.
 
@@ -258,7 +273,7 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 
 ## Abonnement-Verfolgung {#subscription-tracking}
 
-Dieser Bericht ermöglicht die Überwachung von Abonnements für Informations-Services. Hier werden An- und Abmeldungen angezeigt.
+Mit diesem Bericht können Sie die Abonnements für Informationsdienste überwachen. Es werden An- und Abmeldungen angezeigt.
 
 ![](assets/service-report.png)
 
@@ -275,7 +290,7 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 * **[!UICONTROL Abonnenten]**: Anzahl der Abonnentinnen und Abonnenten insgesamt für den entsprechenden Zeitraum.
 * **[!UICONTROL Abonnements]**: Anzahl der Anmeldungen für den entsprechenden Zeitraum.
 * **[!UICONTROL Abmeldungen]**: Anzahl der Abmeldungen von Abonnements für den entsprechenden Zeitraum.
-* **[!UICONTROL Entwicklung]**: Anzahl der Abmeldungen abzüglich der Anzahl der Anmeldungen. Der Tarif wird anhand der Gesamtzahl der Abonnenten berechnet.
+* **[!UICONTROL Entwicklung]**: Anzahl der Abmeldungen abzüglich der Anzahl der Anmeldungen. Die Rate wird basierend auf der Gesamtzahl der Abonnentinnen und Abonnenten berechnet.
 * **[!UICONTROL Treue]**: Treuerate der Abonnentinnen und Abonnenten über den entsprechenden Zeitraum.
 
 **[!UICONTROL Kurven zur Anmeldeentwicklung]**
@@ -305,7 +320,7 @@ Folgende Indikatoren werden angezeigt:
 
 ## Aufschlüsselung der Öffnungen {#breakdown-of-opens}
 
-Dieser Bericht zeigt die Aufschlüsselung der Öffnungen nach Betriebssystem, Gerät und Browser im betreffenden Zeitraum. Für jede Kategorie werden zwei Diagramme verwendet. Das erste zeigt Statistiken zu Öffnungen auf Computern und Mobilgeräten. Die zweite zeigt Statistiken an, die sich nur auf Öffnungen auf Mobilgeräten beziehen.
+Dieser Bericht zeigt die Aufschlüsselung von Öffnungen nach Betriebssystem, Gerät und Browser für den entsprechenden Zeitraum an. Für jede Kategorie werden zwei Diagramme verwendet. Das erste zeigt Statistiken zu Öffnungen auf Computern und Mobilgeräten. Das zweite zeigt nur Statistiken zu Öffnungen auf Mobilgeräten an.
 
 Die Anzahl der Öffnungen entspricht der Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht gezählt. Weitere Informationen zum Tracking von Öffnungen finden Sie in [diesem Abschnitt](metrics-calculation.md#tracking-opens-).
 

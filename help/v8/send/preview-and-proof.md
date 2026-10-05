@@ -5,22 +5,29 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-TQID: https://experienceleague.adobe.com/uVVmB-6U7nTrC0ypEHAINNtp5tcE0gr8ambKwDK56ls
+TQID: 'https://experienceleague.adobe.com/uVVmB-6U7nTrC0ypEHAINNtp5tcE0gr8ambKwDK56ls'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: '756'
 ht-degree: 96%
-
 ---
-
 # Erstellen einer E-Mail-Vorschau und Testen einer E-Mail {#preview-test}
 
 Sobald der Nachrichteninhalt definiert worden ist, können Sie ihn mithilfe von Testprofilen in der Vorschau sehen und testen. Wenn Sie [personalisierte Inhalte](personalize.md) eingefügt haben, können Sie mithilfe von Testprofildaten überprüfen, wie diese Inhalte in der Nachricht angezeigt werden. Zusätzlich können Sie Testsendungen an Testprofile durchführen, um mögliche Fehler im Nachrichteninhalt oder in den Personalisierungseinstellungen zu erkennen. Bei jeder Änderung sollte ein Testversand durchgeführt werden, um den aktuellen Inhalt zu validieren.
@@ -115,4 +122,4 @@ Standardmäßig werden Testversandnachrichten durch die Variable `Proof #N` im B
 
 Hier erfahren Sie, wie Sie einen E-Mail-Testversand durchführen und validieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447008?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

@@ -5,19 +5,27 @@ description: Hier erfahren Sie, wie Sie anonymen Profilen Angebote unterbreiten
 feature: Interaction, Offers
 role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
-TQID: https://experienceleague.adobe.com/rl7SIcS-OkMmLnxvPiEfjs51xouGSSyLJV4in-vsoCE
+TQID: 'https://experienceleague.adobe.com/rl7SIcS-OkMmLnxvPiEfjs51xouGSSyLJV4in-vsoCE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Admin
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 435
-ht-degree: 82%
-
+source-wordcount: '435'
+ht-degree: 100%
 ---
-
 # Anonyme Interaktionen {#anonymous-interactions}
 
 ## Umgebung für anonyme Interaktionen {#environment-for-anonymous-interactions}
@@ -26,7 +34,7 @@ Das Campaign **Interaction**-Modul verfügt standardmäßig über eine integrier
 
 Bei der Erstellung einer anonymen Umgebung mithilfe des Assistenten ist im Tab **[!UICONTROL Allgemein]** das Feld **[!UICONTROL Für anonyme eingehende Interaktionen reservierte Umgebung]** bereits angekreuzt.
 
-Die **[!UICONTROL Zielgruppendimension]** wird automatisch abgeschlossen. Standardmäßig ist sie mit der Besuchertabelle verknüpft.
+Die **[!UICONTROL Zielgruppendimension]** wird ausgefüllt. Standardmäßig verweist sie auf die Besuchertabelle.
 
 Das Feld **[!UICONTROL Besucherordner]** erscheint. Es enthält bereits den Link zum Ordner **[!UICONTROL Besucher]**. In diesem Feld können Sie auswählen, wo Besucherprofile gespeichert werden sollen.
 
@@ -44,7 +52,7 @@ Die Erstellung von Kategorien und Platzierungen folgt dem gleichen Muster wie be
 
 ## Anonyme Besucher {#anonymous-visitors}
 
-Anonyme Besucher können einem Cookie-Identifizierungsprozess unterzogen werden, wenn sie eine Verbindung herstellen. Diese implizite Erkennung basiert auf dem Browser-Verlauf des Besuchers.
+Anonyme Besuchende können an einen Cookie-Identifizierungsprozess geleitet werden, wenn sie eine Verbindung herstellen. Diese implizite Erkennung basiert auf dem Browser-Verlauf der besuchenden Person.
 
 In diesem Schritt werden die von den Cookies abgerufenen Daten mit denen in Ihrer Datenbank verglichen. In einigen Fällen werden Besucher erkannt (sie werden dann implizit identifiziert), in anderen Fällen werden sie nicht erkannt (und bleiben daher anonym).
 
@@ -54,7 +62,7 @@ Kreuzen Sie in der Platzierung das Feld **[!UICONTROL Person implizit über den 
 
 ## Umgang mit anonymen, nicht identifizierten Besuchern {#processing-unidentified-anonymous-visitors}
 
-Wenn nach der Analyse kein anonymer Besucher identifiziert wird, können Sie seine Daten in einem bestimmten Bereich speichern. Auf diese Weise können Sie Angebote vorschlagen, die speziell für diesen Besuchertyp geeignet sind und den angegebenen Typologieregeln entsprechen.
+Wenn eine anonyme besuchende Person nach der Analyse nicht identifiziert werden kann, können Sie ihre Daten in einem bestimmten Bereich speichern. Auf diese Weise können Sie Angebote vorschlagen, die speziell für diesen Besuchertyp geeignet sind und den angegebenen Typologieregeln entsprechen.
 
 Für nicht identifizierte Kontakte oder solche, die zwar implizit identifiziert werden können, denen Sie aber keine für bekannte Kontakte erstellten Angebote unterbreiten möchten, haben Sie die Möglichkeit, in eine anonyme Umgebung wechseln.
 

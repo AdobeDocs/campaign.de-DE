@@ -6,25 +6,35 @@ feature: Workflows, Targeting Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8ea831e2-8e6e-4ef0-ac05-f27ebf89ccb9
-TQID: https://experienceleague.adobe.com/N3G0NbmUjk9fbgjKW957QneAHZ7Oy12seBK-AfO6puM
+TQID: 'https://experienceleague.adobe.com/N3G0NbmUjk9fbgjKW957QneAHZ7Oy12seBK-AfO6puM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
+    internal-label: Targeting Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 366
-ht-degree: 46%
-
+source-wordcount: '366'
+ht-degree: 100%
 ---
-
 # Ausschluss{#exclusion}
 
 
 
 Über eine Aktivität vom Typ **Ausschluss** lassen sich Populationen aus der Hauptzielgruppe extrahieren.
 
-Um diese Aktivität zu konfigurieren, geben Sie ihren Titel ein und wählen Sie die Hauptempfängergruppe aus: Mit der Population aus der Hauptgruppe können Sie das Ergebnis konstruieren. Profile, die von der Hauptgruppe und mindestens einer der Eintrittstätigkeiten freigegeben werden, werden ausgeschlossen.
+Geben Sie zum Konfigurieren dieser Aktivität den Titel ein und wählen Sie die Hauptmenge für den Empfang aus. Die Population der Hauptmenge bildet die Grundlage für das Ergebnis. Profile, die sowohl der Hauptmenge als auch mindestens einer Eintrittsaktivität zugeordnet sind, werden ausgeschlossen.
 
 ![](assets/s_user_segmentation_exclu.png)
 
@@ -32,7 +42,7 @@ Um diese Aktivität zu konfigurieren, geben Sie ihren Titel ein und wählen Sie 
 >
 >Weitere Informationen zum Konfigurieren und Verwenden der Ausschlussaktivität finden Sie unter [Populationen ausschließen (Ausschluss)](targeting-workflows.md#excluding-a-population--exclusion-).
 
-Aktivieren Sie die **[!UICONTROL Komplement erzeugen]**, wenn Sie die verbleibende Population nutzen möchten. Das Komplement besteht aus der Haupteinreisepopulation abzüglich der ausreisenden Population. Eine zusätzliche ausgehende Transition wird wie folgt zur Aktivität hinzugefügt:
+Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie auch die Restpopulation verwenden möchten. Das Komplement besteht aus der eingehenden Hauptpopulation abzüglich der ausgehenden Population. Dann wird der Aktivität eine zusätzliche ausgehende Transition hinzugefügt, und zwar wie folgt:
 
 ![](assets/s_user_segmentation_exclu_compl.png)
 
@@ -40,11 +50,11 @@ Aktivieren Sie die **[!UICONTROL Komplement erzeugen]**, wenn Sie die verbleiben
 
 Gesucht werden Empfänger zwischen 18 und 30 Jahre, die nicht in Berlin leben. Gehen Sie wie folgt vor:
 
-1. Fügen Sie eine Aktivität vom Typ **[!UICONTROL Ausschluss]** nach zwei Abfragen ein und öffnen Sie sie. Die erste Abfrage richtet sich an Empfängerinnen und Empfänger, die in Paris leben. Die zweite Abfrage bezieht sich auf Personen im Alter von 18 bis 30 Jahren.
+1. Fügen Sie eine Aktivität vom Typ **[!UICONTROL Ausschluss]** nach zwei Abfragen ein und öffnen Sie sie. Die erste Abfrage richtet sich an Empfängerinnen und Empfänger, die in Paris leben. Die zweite Abfrage richtet sich an Personen im Alter von 18 bis 30 Jahren.
 1. Geben Sie die Hauptmenge ein. Hier ist die Hauptmenge die Abfrage **18-30 Jahre**. Alle Empfangenden, die in der Ergebnismenge der zweiten Abfrage enthalten sind, werden auf diese Weise vom Endergebnis ausgeschlossen.
-1. Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie die Daten nutzen möchten, die nach dem Ausschluss verbleiben. In diesem Fall besteht das Komplement aus Empfängern im Alter von 18 bis 30 Jahren, die in Paris leben.
-1. Bestätigen Sie die Ausschlusskonfiguration und fügen Sie dann eine Aktivität Liste aktualisieren in das Ergebnis ein. Sie können bei Bedarf auch eine zusätzliche Listenaktualisierung zum Komplement einfügen.
-1. Führt den Workflow aus. In diesem Beispiel besteht das Ergebnis aus Empfängerinnen und Empfängern im Alter von 18 bis 30 Jahren, aber diejenigen, die in Paris leben, werden ausgeschlossen und an das Komplement gesendet.
+1. Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie die nach dem Ausschluss verbleibenden Daten verwenden möchten. In diesem Fall besteht das Komplement aus Empfängerinnen und Empfängern im Alter von 18 bis 30 Jahren, die in Paris leben.
+1. Bestätigen Sie die Ausschlusskonfiguration und fügen Sie dem Ergebnis dann eine Aktivität des Typs „Liste aktualisieren“ hinzu. Bei Bedarf können Sie außerdem eine zusätzliche Listenaktualisierung im Komplement einfügen.
+1. Führen Sie den Workflow aus. In diesem Beispiel besteht das Ergebnis aus Empfängerinnen und Empfängern im Alter von 18 bis 30 Jahren, allerdings werden die in Paris lebenden ausgeschlossen und an das Komplement gesendet.
 
    ![](assets/exclusion_example.png)
 

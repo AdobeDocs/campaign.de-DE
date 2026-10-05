@@ -7,25 +7,34 @@ topic-tags: campaign-standard-apis
 role: Developer
 level: Experienced
 exl-id: efbbd0cd-9c56-4ad0-8bcb-efba4b63c28b
-TQID: https://experienceleague.adobe.com/bplbMEDlQOL-EDthA4nuoWmFF-sB30MWKaG1f8F6P-A
+TQID: 'https://experienceleague.adobe.com/bplbMEDlQOL-EDthA4nuoWmFF-sB30MWKaG1f8F6P-A'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 subfeature_v2:
   - id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
+    internal-label: REST API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Troubleshooting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 448
+source-wordcount: '448'
 ht-degree: 97%
-
 ---
-
 # Einrichten von API-Zugriff {#setting-up-api-access}
 
 Der Zugriff auf Adobe Campaign Standard-APIs lässt sich mit den folgenden Schritten einrichten: Jeder dieser Schritte wird in der [Adobe Developer-Dokumentation](https://developer.adobe.com/developer-console/docs/guides/#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) beschrieben.
@@ -36,7 +45,7 @@ Der Zugriff auf Adobe Campaign Standard-APIs lässt sich mit den folgenden Schri
 
 1. **Überprüfen Sie, ob Sie ein digitales Zertifikat haben**, oder erstellen Sie bei Bedarf eines. Die mit dem Zertifikat bereitgestellten öffentlichen und privaten Schlüssel werden in den folgenden Schritten benötigt.
 1. **Erstellen Sie eine neue Integration mit Adobe Campaign Service** in [Adobe Developer](https://developer.adobe.com/) und konfigurieren Sie diese. Dann werden Ihre Anmeldedaten generiert (API-Schlüssel, Client-Geheimnis...).
-1. **Erstellen Sie eine OAuth-Server-zu-Server**-Berechtigung, indem Sie die [&#x200B; Implementierungsschritte ausführen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+1. **Erstellen Sie eine OAuth-Server-zu-Server**-Berechtigung, indem Sie die [ Implementierungsschritte ausführen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
 
    >[!IMPORTANT]
    >
@@ -57,8 +66,8 @@ Um eine sichere Service-to-Service-Adobe I/O-API-Sitzung herzustellen, muss jede
 
 * **&lt;ORGANIZATION>**: Dies ist Ihre persönliche Organisationskennung; von Adobe erhalten Sie für jede Ihrer Instanzen eine Organisationskennung:
 
-   * &lt;ORGANIZATION>: Ihre Produktionsinstanz,
-   * &lt;ORGANIZATION-mkt-stage>: Ihre Staging-Instanz.
+  * &lt;ORGANIZATION>: Ihre Produktionsinstanz,
+  * &lt;ORGANIZATION-mkt-stage>: Ihre Staging-Instanz.
 
   Um den Wert der ORGANISATIONS-ID zu erhalten, wenden Sie sich wahlweise an Ihre Administrierenden oder Ihre technische Kontaktperson bei Adobe. Sie können sie auch beim Erstellen einer neuen Integration in Adobe I/O abrufen, und zwar in der Lizenzliste (siehe <a href="https://developer.adobe.com/developer-console/docs/guides/authentication/">Adobe Developer-Dokumentation</a>).
 

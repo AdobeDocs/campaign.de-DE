@@ -6,22 +6,32 @@ feature: Reporting
 role: Developer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-TQID: https://experienceleague.adobe.com/-qDOwpBmI9ao2jCcHw4ex8Ft-qyIGnPggcQJuDdUAkQ
+TQID: 'https://experienceleague.adobe.com/-qDOwpBmI9ao2jCcHw4ex8Ft-qyIGnPggcQJuDdUAkQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Reporting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1530
-ht-degree: 76%
-
+source-wordcount: '1530'
+ht-degree: 96%
 ---
-
 # Anpassen von Cubes{#cube-custom}
 
 ## Daten klassieren {#data-binning}
@@ -30,15 +40,15 @@ Nutzen Sie die Datenklassierung, um die Anzeige der Daten zu vereinfachen, indem
 
 Insgesamt sind drei Klassierungstypen möglich:
 
-1. Verwenden manuell definierter Wertebereiche. B. Alter, durchschnittlicher Warenkorb, Anzahl der geöffneten Sendungen usw.). Weitere Informationen hierzu finden Sie unter [Klassen manuell definieren](#defining-each-bin).
+1. Verwenden manuell definierter Wertebereiche. Beispielweise Alter, durchschnittlicher Warenkorb, Anzahl der geöffneten Sendungen usw.) Weitere Informationen hierzu finden Sie unter [Klassen manuell definieren](#defining-each-bin).
 1. Dynamisch, abhängig von den Werten einer [Auflistung](../config/enumerations.md): Nur die in der Auflistung enthaltenen Werte anzeigen, alle anderen Werte werden in „Sonstige“ gruppiert. Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](#dynamically-managing-bins).
-1. Verwenden von Wertebereichen, wobei alle anderen gruppiert werden. Zum Beispiel bei 18- bis 25-Jährigen, 26- bis 59-Jährigen und anderen. Weitere Informationen hierzu finden Sie unter [Wertebereiche anzeigen](#creating-value-ranges).
+1. Verwenden von Wertebereichen, wobei alle anderen gruppiert werden. Beispielsweise 18- bis 25-Jährige, 26- bis 59-Jährige und andere. Weitere Informationen hierzu finden Sie unter [Wertebereiche anzeigen](#creating-value-ranges).
 
 Um die Klassierung zu aktivieren, kreuzen Sie die entsprechende Option bei der Erstellung der Dimension an.
 
 ![](assets/cube-class.png)
 
-Sie können Klassen entweder manuell erstellen oder sie mit einer vorhandenen [Auflistung“ &#x200B;](../config/enumerations.md).
+Sie können Klassen entweder manuell erstellen oder sie mit einer vorhandenen [Auflistung“ ](../config/enumerations.md).
 
 Adobe Campaign bietet zudem einen Assistenten, um die Klassen automatisch zu erzeugen: Die Werte können in n Klassen verteilt oder nach den am häufigsten in der Datenbank vertretenen Werten gruppiert werden.
 
@@ -62,7 +72,7 @@ Sie können eine SQL-Maske nutzen, um mehrere Werte nach einem Filter zu gruppie
 
 ### Dynamisches Verwalten der Klassen {#dynamically-manage-bins}
 
-Werte können über Auflistungen dynamisch verwaltet werden. Das bedeutet, dass nur die in der Auflistung enthaltenen Werte angezeigt werden. Wenn sich die Auflistungswerte ändern, wird der Inhalt des Cubes automatisch angepasst.
+Werte können über Auflistungen dynamisch verwaltet werden. Dies bedeutet, dass nur die in der Auflistung vorhandenen Werte angezeigt werden. Bei Änderung der Auflistungswerte wird der Cube-Inhalt automatisch angepasst.
 
 Gehen Sie wie folgt vor, um diesen Klassierungstyp zu erstellen:
 
@@ -101,7 +111,7 @@ In diesem Fall wird der im Faktenschema gewählte Filter ignoriert.
 
 ### Aufzählungen {#enumerations}
 
-Um die Relevanz und Lesbarkeit eines Berichts zu verbessern, können Sie mit Adobe Campaign bestimmte Auflistungen erstellen, um verschiedene Werte in derselben Klasse neu zu gruppieren. Auf diese für die Klassierung reservierten Auflistungen wird in den Cubes verwiesen, die dann in den Berichten angezeigt werden.
+Zur Erhöhung der Lesbarkeit und Relevanz von Berichten bietet Adobe Campaign die Möglichkeit, spezifische Auflistungen zu erstellen, um unterschiedliche Werte in ein und derselben Klasse zu gruppieren. Auf diese für die Klassierung reservierten Auflistungen wird in den Cubes verwiesen, die dann in den Berichten angezeigt werden.
 
 Auf diese Weise bietet Adobe Campaign eine Aufzählung von Domains, mithilfe derer sich die Liste der nach ISP gruppierten E-Mail-Domains von allen Datenbankkontakten wie im unten stehenden Beispiel anzeigen lässt:
 
@@ -119,7 +129,7 @@ Dabei genügt es, die Aufzählung abzuändern, um den entsprechenden Bericht zu 
 
 ![](assets/nmx_add_alias.png)
 
-Die Auflistung **[!UICONTROL Domains]** wird zum Generieren integrierter Berichte verwendet, die die Liste der Domains anzeigen. Um den Inhalt dieser Berichte anzupassen, können Sie diese Liste bearbeiten.
+Die Auflistung **[!UICONTROL Domains]** wird zur Erstellung nativer Berichte verwendet, in denen die Domain-Liste angezeigt wird. Um den Inhalt dieser Berichte anzupassen, können Sie diese Liste bearbeiten.
 
 Sie können weitere, der Klassierung vorbehaltene Aufzählungen erstellen und diese in anderen Cubes verwenden: Alle Alias-Werte werden in den im ersten Tab der Aufzählung definierten Klassen gruppiert.
 
@@ -129,7 +139,7 @@ Weitere Informationen über Aufzählungen finden Sie auf [dieser Seite](../../v8
 
 Cubes bieten die Möglichkeit, Daten vor der eigentlichen Verwendung zu aggregieren.
 
-Aggregate sind bei der Bearbeitung großer Datenmengen nützlich. Sie werden automatisch auf der Grundlage der im entsprechenden Workflow-Feld definierten Einstellungen aktualisiert, um die zuletzt erfassten Daten in die Indikatoren zu integrieren
+Aggregate sind bei der Bearbeitung großer Datenmengen nützlich. Sie werden automatisch entsprechend den im Workflow-Feld definierten Parametern aktualisiert, um die zuletzt abgerufenen Daten in die Indikatoren zu integrieren.
 
 Aggregate werden im entsprechenden Tab des Cubes definiert.
 
@@ -143,17 +153,17 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
 
 1. Gehen Sie in den Tab **[!UICONTROL Aggregate]** des Cubes und klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 1. Benennen Sie das Aggregat und fügen Sie die zu berechnenden Dimensionen hinzu.
-1. Dimension und Ebene auswählen. Wiederholen Sie diesen Vorgang für jede Dimension und jede Ebene.
+1. Wählen Sie eine Dimension und eine Ebene aus. Wiederholen Sie diesen Vorgang für alle zu berechnenden Dimensionen und Ebenen.
 1. Gehen Sie in den Tab **[!UICONTROL Workflow]**, um den Aggregations-Workflow zu erstellen.
 
    * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../automation/workflow/scheduler.md).
    * Über die Aktivität **[!UICONTROL Aggregat-Update]** wird der anzuwendende Aktualisierungsmodus ausgewählt: vollständig oder teilweise.
 
-     Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung durchgeführt. Um eine partielle Aktualisierung zu aktivieren, wählen Sie die entsprechende Option aus und definieren Sie die Aktualisierungsbedingungen.
+     Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung ausgeführt. Um eine partielle Aktualisierung zu aktivieren, wählen Sie die entsprechende Option aus und definieren Sie die Aktualisierungsbedingungen.
 
 ## Definieren von Kennzahlen {#define-measures}
 
-Die Kennzahlentypen werden auf der Registerkarte **[!UICONTROL Kennzahlen]** des Cubes definiert. Sie können Summen, Durchschnittswerte, Abweichungen usw. berechnen.
+Die zu berechnenden Kennzahlentypen werden in der Registerkarte **[!UICONTROL Kennzahlen]** des Cubes festgelegt. Sie können Summen, Durchschnittswerte, Abweichungen usw. berechnen.
 
 Es können so viele Kennzahlen wie nötig erstellt werden. Wählen Sie anschließend aus, welche Kennzahl Sie in der Tabelle anzeigen oder ausblenden möchten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#displaying-measures).
 
@@ -185,13 +195,13 @@ Die Anzeige der Kennzahlen in der Tabelle kann nach Bedarf konfiguriert werden. 
 
 Die im Cube berechneten Kennzahlen werden über die Schaltfläche **[!UICONTROL Kennzahlen]** konfiguriert.
 
-Verschieben Sie die Zeilen, um die Anzeigereihenfolge zu ändern. Im folgenden Beispiel werden französische Daten an den unteren Rand der Liste verschoben: Dies bedeutet, dass sie in der letzten Spalte angezeigt werden.
+Verschieben Sie die Zeilen, um die Anzeigereihenfolge zu ändern. Im nachstehenden Beispiel werden die auf Frankreich bezogenen Daten nach unten verschoben: Sie werden nun in der letzten Spalte angezeigt.
 
 ![](assets/cube-in-report-settings.png)
 
 ### Konfigurieren der Anzeige {#configuring-the-display}
 
-Die Konfiguration von Kennzahlen, Linien und Spalten kann für jede Kennzahl oder insgesamt individuell erfolgen. Mit einem speziellen Symbol können Sie auf das Auswahlfenster des Anzeigemodus zugreifen.
+Die Konfiguration der angezeigten Kennzahlen, Zeilen und Spalten kann für jede Kennzahl einzeln oder global durchgeführt werden. Mit einem speziellen Symbol können Sie auf das Fenster zur Auswahl des Anzeigemodus zugreifen.
 
 * Klicken Sie auf das Symbol **[!UICONTROL Konfiguration der Pivot-Tabelle bearbeiten]**, um auf das Konfigurationsfenster für alle Kennzahlen zuzugreifen.
 
@@ -249,7 +259,7 @@ Klicken Sie nach jeder Hinzufügung, Änderung oder Löschung von Filtern auf de
 
 Filter können auch basierend auf einer Auswahl erstellt werden. Wählen Sie hierzu die Quellzellen, -zeilen und -spalten und klicken Sie auf das Symbol **[!UICONTROL Filter hinzufügen]**.
 
-Um eine Zeile, Spalte oder Zelle auszuwählen, klicken Sie mit der linken Maustaste darauf. Um die Auswahl aufzuheben, klicken Sie erneut.
+Um eine Zeile, Spalte oder Zelle auszuwählen, klicken Sie darauf. Um die Auswahl aufzuheben, klicken Sie erneut.
 
 ![](assets/cube_create_filter_from_selection.png)
 

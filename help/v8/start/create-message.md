@@ -6,22 +6,40 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-TQID: https://experienceleague.adobe.com/CSbxLgXnmrLFiEVEHHNM4rYDBn870UTuhcr1w6FOuRQ
+TQID: 'https://experienceleague.adobe.com/CSbxLgXnmrLFiEVEHHNM4rYDBn870UTuhcr1w6FOuRQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+  - id: 237333ba-90fa-554c-bc8d-2047e6173477
+    internal-label: Cross Channel Orchestration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
+  - id: ede6e1ec-9279-415e-b828-a09735018d48
+    internal-label: Direct mail
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1653
-ht-degree: 90%
-
+source-wordcount: '1653'
+ht-degree: 96%
 ---
-
 # Erstellen Ihres ersten Versands {#create-a-msg}
 
 Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. Sie können für Ihre Anwendungsfälle weitere Versandtypen erstellen. Weitere Informationen zu den verschiedenen Versandtypen und deren Erstellung finden Sie auf [dieser Seite](gs-message.md).
@@ -133,7 +151,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für diese Zielgruppenbestimmung ein. Der Titel entspricht standardmäßig dem Titel der ersten Zielgruppenbestimmung. Bei der Kombination von Filterkriterien wird empfohlen, einen expliziten Namen zu verwenden.
 1. Klicken Sie auf **[!UICONTROL Beenden]**, um die Optionen der Zielgruppenbestimmung zu bestätigen.
 
-   Die definierten Zielgruppenkriterien werden im zentralen Abschnitt der Hauptregisterkarte der Zielkonfiguration zusammengefasst. Klicken Sie auf ein Kriterium, um seinen Inhalt anzuzeigen (Konfiguration und Vorschau). Um ein Kriterium zu löschen, klicken Sie auf das Kreuz hinter seinem Titel.
+   Die definierten Zielgruppenbestimmungskriterien werden im zentralen Abschnitt der Hauptregisterkarte der Zielkonfiguration zusammengefasst. Klicken Sie auf ein Kriterium, um seinen Inhalt anzuzeigen (Konfiguration und Vorschau). Um ein Kriterium zu löschen, klicken Sie auf das Kreuz hinter seinem Titel.
 
    ![](assets/target-remove-criterion.png)
 
@@ -156,7 +174,7 @@ Sie können Nachrichten an Profile senden, die nicht in der Datenbank, sondern i
 
 ### Ausschlussparameter {#define-exclusion-settings}
 
-Bei der Definition der [Zielgruppe eines Versands](#target-population) wird die Registerkarte **[!UICONTROL Ausschlüsse]** verwendet, um die Anzahl an Nachrichten zu begrenzen. Standardparameter werden empfohlen. Sie können die Einstellungen jedoch an Ihre Anforderungen anpassen. Diese Optionen sollten jedoch nur von einem erfahrenen Benutzer geändert werden, um Missbrauch und Fehler zu vermeiden.
+Bei der Definition der [Zielgruppe eines Versands](#target-population) wird die Registerkarte **[!UICONTROL Ausschlüsse]** verwendet, um die Anzahl an Nachrichten zu begrenzen. Standardparameter werden empfohlen. Sie können die Einstellungen jedoch an Ihre Anforderungen anpassen. Diese Optionen sollten jedoch nur von erfahrenen Benutzenden geändert werden, um Missbrauch und Fehler zu vermeiden.
 
 >[!CAUTION]
 >
@@ -173,7 +191,7 @@ Um die Standardkonfiguration zu ändern, klicken Sie auf den Link **[!UICONTROL 
 * **[!UICONTROL Doppelte Adressen vom Versand ausschließen]**: Diese Option ist standardmäßig aktiviert und entfernt doppelte E-Mail-Adressen während des Versands. Die Vorgehensweise hängt dabei von der Art der Verwendung der Adobe Campaign-Software und den in der Datenbank enthaltenen Daten ab. Der Wert dieser Option kann für jede Versandvorlage konfiguriert werden.
 * **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d. h. Empfänger, deren E-Mail-Adressen sich auf einer Blockierungsliste (&quot;Opt-out&quot;) befinden. Diese Option muss ausgewählt bleiben, um die Berufsethik des E-Marketings einzuhalten.
 * **[!UICONTROL Adressen in Quarantäne ausschließen]**: Mit dieser Option können Sie alle Adressen von Profilen aus der Zielgruppe ausschließen, die sich in Quarantäne befinden. Es wird dringend empfohlen, diese Option aktiviert zu lassen. Weitere Informationen zur Quarantäneverwaltung finden Sie in [diesem Abschnitt](../send/quarantines.md).
-* **[!UICONTROL Versand begrenzen]** auf eine bestimmte Anzahl von Nachrichten. Mit dieser Option können Sie die maximale Anzahl der zu sendenden Nachrichten eingeben. Wenn der Inhalt der Zielgruppe die angegebene Anzahl von Nachrichten überschreitet, wird eine Zufallsauswahl auf die Zielgruppe angewendet. Behalten Sie den Wert „0“ bei, um alle Nachrichten zu senden.
+* **[!UICONTROL Begrenzen Sie den Versand]** auf eine bestimmte Anzahl an Nachrichten. Bei dieser Option können Sie die maximale Anzahl der zu versendenden Nachrichten eingeben. Wenn der Inhalt der Zielgruppe die angegebene Anzahl von Nachrichten überschreitet, wird eine Zufallsauswahl auf die Zielgruppe angewendet. Behalten Sie den Wert „0“ bei, um alle Nachrichten zu senden.
 * **[!UICONTROL In der Zielgruppe doppelt enthaltene Einträge (identische Kennung) beibehalten]**: Mit dieser Option können mehrere Sendungen an Empfangende gesendet werden, die verschiedene Zielgruppenbestimmungskriterien erfüllen.
 +++
 
@@ -191,7 +209,7 @@ Weiterführende Informationen zu Testversand-Empfangenden und zum Testversand fi
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447008?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 

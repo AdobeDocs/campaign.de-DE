@@ -5,24 +5,40 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-TQID: https://experienceleague.adobe.com/15Nn-l031JWcYJAEooiP6ZN4btvuwd9r1soU3a77Jqk
+TQID: 'https://experienceleague.adobe.com/15Nn-l031JWcYJAEooiP6ZN4btvuwd9r1soU3a77Jqk'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: ca3c1dd6-bdd2-41a9-bc5a-e35f5cca9e63
+    internal-label: Application settings
+  - id: ebf2bfe1-e099-5c32-ac1e-1865f8050ffc
+    internal-label: External Account
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 2243
+source-wordcount: '2243'
 ht-degree: 40%
-
 ---
-
 # Externe Konten konfigurieren {#config-external-accounts}
 
 Adobe Campaign verfügt über eine Reihe vordefinierter externer Konten. Um Verbindungen mit externen Systemen einzurichten, können Sie neue externe Konten erstellen.
@@ -137,7 +153,7 @@ Die Web-Benutzeroberfläche von Campaign bietet eine umfassendere Liste von Anbi
 * **[Vertica Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#vertica-analytics){target="_blank"}** - Campaign mit OpenText Vertica-Analysedatenbanken verbinden.
 * **[Microsoft Fabric](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#fabric){target="_blank"}** - Campaign mit Microsoft Fabric SQL- und Speicher-Services verbinden.
 
-Weitere Informationen zur alten Client-Konsole und zusätzliche Verweise finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
+Weitere Informationen zur alten Client-Konsole und zusätzliche Verweise finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
 #### Externes Databricks-Konto {#databricks-external-accounts}
 
@@ -196,7 +212,7 @@ Ein externes **Twitter**-Konto wird verwendet, um Campaign mit Ihrem X-Konto zu 
 
 * **Web-Analyse** – Das externe **[!UICONTROL Web-Analyse (Adobe Analytics)]**-Konto wird verwendet, um die Datenübertragung von Adobe Analytics an Adobe Campaign zu konfigurieren. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Analytics finden Sie auf [dieser Seite](../connect/ac-aa.md).
 
-* **Adobe Experience Manager** – Mit dem externen **[!UICONTROL AEM]**-Konto können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Experience Manager finden [&#x200B; auf dieser Seite &#x200B;](../connect/ac-aem.md).
+* **Adobe Experience Manager** – Mit dem externen **[!UICONTROL AEM]**-Konto können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten. Weitere Informationen zur Integration von Adobe Campaign mit Adobe Experience Manager finden [ auf dieser Seite ](../connect/ac-aem.md).
 
 
 ## Externe CRM-Connector-Konten {#crm-external-accounts}
@@ -219,28 +235,28 @@ Diese externen Konten können mithilfe einer Workflow-Aktivität vom Typ **[!UIC
 
 * **Amazon Simple Storage Service (S3)** – Die **AWS S3**-Verbindung kann zum Importieren oder Exportieren von Daten in Adobe Campaign über die Workflow-Aktivität **[!UICONTROL Datei übertragen]** verwendet werden. Beim Einrichten dieses externen Kontos müssen Sie die folgenden Details angeben:
 
-   * **[!UICONTROL AWS S3-]**: URL Ihres Servers in der `<S3bucket name>.s3.amazonaws.com/<s3object path>`.
+  * **[!UICONTROL AWS S3-]**: URL Ihres Servers in der `<S3bucket name>.s3.amazonaws.com/<s3object path>`.
 
-   * **[!UICONTROL Kennung des AWS-Zugriffsschlüssels]**: In der [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"} erfahren Sie, wie Sie die Kennung Ihres AWS-Zugangsschlüssels finden.
+  * **[!UICONTROL Kennung des AWS-Zugriffsschlüssels]**: In der [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"} erfahren Sie, wie Sie die Kennung Ihres AWS-Zugangsschlüssels finden.
 
-   * **[!UICONTROL Geheimer AWS-Zugriffsschlüssel]**: Erfahren Sie in der [Amazon-Dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}, wie Sie Ihren geheimen Zugriffsschlüssel für AWS finden.
+  * **[!UICONTROL Geheimer AWS-Zugriffsschlüssel]**: Erfahren Sie in der [Amazon-Dokumentation](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}, wie Sie Ihren geheimen Zugriffsschlüssel für AWS finden.
 
-   * **[!UICONTROL AWS-Region]**: Weitere Informationen zu AWS-Regionen finden Sie in der [Amazon-Dokumentation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
+  * **[!UICONTROL AWS-Region]**: Weitere Informationen zu AWS-Regionen finden Sie in der [Amazon-Dokumentation](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
 
-   * Das **[!UICONTROL Server-seitige Verschlüsselung verwenden]** ermöglicht es Ihnen, Ihre Datei in S3 im verschlüsselten Modus zu speichern. Erfahren Sie in der [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}, wie Sie die Kennung des Zugriffsschlüssels und den geheimen Zugriffsschlüssel finden.
+  * Das **[!UICONTROL Server-seitige Verschlüsselung verwenden]** ermöglicht es Ihnen, Ihre Datei in S3 im verschlüsselten Modus zu speichern. Erfahren Sie in der [Amazon-Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}, wie Sie die Kennung des Zugriffsschlüssels und den geheimen Zugriffsschlüssel finden.
 
 * **Azure Blob Storage** – Das externe **Azure**-Konto kann mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** zum Importieren oder Exportieren von Daten in Adobe Campaign verwendet werden. Um das externe **Azure**-Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
-   * **[!UICONTROL Server]**: URL Ihres Azure Blob Storage-Servers
+  * **[!UICONTROL Server]**: URL Ihres Azure Blob Storage-Servers
 
-   * **[!UICONTROL Encryption]**: Verschlüsselungstyp: **[!UICONTROL None]** oder **[!UICONTROL SSL]**.
+  * **[!UICONTROL Encryption]**: Verschlüsselungstyp: **[!UICONTROL None]** oder **[!UICONTROL SSL]**.
 
-   * **[!UICONTROL Zugriffsschlüssel]**: Erfahren Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}, wie Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden.
+  * **[!UICONTROL Zugriffsschlüssel]**: Erfahren Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}, wie Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden.
 
 * **Microsoft Fabric** - Das externe **Microsoft Fabric**-Konto ermöglicht den Import und Export von Daten zwischen Microsoft Fabric und Adobe Campaign mithilfe der Workflow-Aktivität **[!UICONTROL Dateiübertragung]**. Um diese Integration zu konfigurieren, geben Sie die folgenden Details an:
 
-   * **[!UICONTROL Server]**: URL Ihres Microsoft Fabric-Speicher-Servers.
+  * **[!UICONTROL Server]**: URL Ihres Microsoft Fabric-Speicher-Servers.
 
-   * **[!UICONTROL Anwendungs-ID]**: Die eindeutige Kennung der Anwendung, die zum Authentifizieren und Zugreifen auf Microsoft Fabric-Ressourcen verwendet wird.
+  * **[!UICONTROL Anwendungs-ID]**: Die eindeutige Kennung der Anwendung, die zum Authentifizieren und Zugreifen auf Microsoft Fabric-Ressourcen verwendet wird.
 
-   * **[!UICONTROL Client-Geheimnis]**: Der mit der Anwendung verknüpfte Authentifizierungsschlüssel oder das Passwort, der bzw. das für die sichere Verbindung mit Microsoft Fabric erforderlich ist.
+  * **[!UICONTROL Client-Geheimnis]**: Der mit der Anwendung verknüpfte Authentifizierungsschlüssel oder das Passwort, der bzw. das für die sichere Verbindung mit Microsoft Fabric erforderlich ist.

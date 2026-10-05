@@ -3,13 +3,22 @@ title: Fehlerbehebung bei APIs
 description: Erfahren Sie mehr über häufige Probleme bei Campaign Standard-APIs
 role: Developer
 level: Experienced
-source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 100%
-
+source-wordcount: '353'
+ht-degree: 96%
 ---
-
 # Fehlerbehebung bei APIs {#troubleshooting}
 
 * **Wenn Sie zur Adobe.io-Konsole wechseln, erhalten Sie den folgenden Fehler: &quot;Die Adobe I/O-Konsole steht nur ausgewählten Mitgliedern von Unternehmenskonten zur Verfügung. Wenden Sie sich an Ihren Systemadministrator, wenn Sie meinen, Zugriff zu benötigen.&quot;**
@@ -72,7 +81,7 @@ In der Antwort muss der Wert ORGANISATION_ID mit dem in Ihrer ersten GET-Anfrage
 }
 ```
 
-* **Wenn Sie eine Anfrage an Adobe.io richten, erhalten Sie Folgendes: {&quot;code&quot;:500, &quot;message&quot;:&quot;Oh. Da ist etwas schiefgelaufen. Überprüfen Sie Ihren URI und versuchen Sie es erneut.&quot;}**
+* **Bei einer Anfrage an Adobe.io erhalten Sie {„code“:500, „message“:„Oops. Da ist etwas schiefgelaufen. Überprüfen Sie Ihren URI und versuchen Sie es erneut.&quot;}**
 
 Adobe.io deklariert Ihren ungültigen URI: Der von Ihnen angefragte URI ist höchstwahrscheinlich ungültig. Wenn Sie in Adobe.io den Campaign-Dienst wählen, erhalten Sie eine Auswahl mit einer Liste möglicher Organisationskennungen. Sie müssen dafür sorgen, dass die von Ihnen gewählte Option mit der Eingabe in Ihrer URL übereinstimmt.
 

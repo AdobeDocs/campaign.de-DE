@@ -7,26 +7,36 @@ level: Beginner
 role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-TQID: https://experienceleague.adobe.com/VHBQEKUthZcW2WrbNjmlIC7FzJFDqX0PykJg95sM-WI
+TQID: 'https://experienceleague.adobe.com/VHBQEKUthZcW2WrbNjmlIC7FzJFDqX0PykJg95sM-WI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1223
-ht-degree: 81%
-
+source-wordcount: '1223'
+ht-degree: 100%
 ---
-
 # Starten, Pausieren und Stoppen eines Workflows {#starting-a-workflow}
 
 Workflows werden grundsätzlich manuell gestartet, Nach dem Starten können sie jedoch inaktiv bleiben, je nachdem, welche Informationen über eine Planung (siehe [Planung](scheduler.md)) oder Aktivitätsplanung angegeben wurden.
 
-Aktionen zur Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause usw.) sind **asynchrone** Prozesse: Die Bestellung wird aufgezeichnet und wird wirksam, sobald der Server für die Anwendung verfügbar ist.
+Aktionen zur Ausführung des Zielgruppenbestimmungs-Workflows (Start, Stopp, Pause usw.) laufen **asynchron** ab, d. h. der jeweilige Befehl wird gespeichert und erst dann ausgeführt, wenn ein Server verfügbar ist.
 
 Anhand der Schaltflächen der Symbolleiste kann die Ausführung des Workflows gesteuert und überwacht werden.
 
@@ -44,13 +54,13 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Starten]**
 
-  Mit dieser Aktion können Sie die Ausführung eines Workflows starten: Ein Workflow, der **Abgeschlossen**, **In Bearbeitung** oder **Paused** ist, ändert den Status in **Gestartet**. Die Workflow-Engine übernimmt dann die Ausführung dieses Workflows. Wenn der Workflow angehalten wurde, wird er fortgesetzt, andernfalls wird der Workflow von Anfang an gestartet und die ersten Aktivitäten werden aktiviert.
+  Diese Aktion startet die Ausführung eines Workflows. Ein Workflow mit dem Status **Abgeschlossen**, **In Bearbeitung** oder **Ausgesetzt** wechselt in den Status **Gestartet**. Das Workflow-Modul übernimmt dann die Ausführung dieses Workflows. Wenn der Workflow zuvor ausgesetzt war, wird er fortgesetzt, ansonsten wird er neu begonnen und die ersten Aktivitäten werden aktiviert.
 
   Der Start eines Workflows ist ein asynchroner Prozess, d. h. der jeweilige Befehl wird gespeichert und erst dann ausgeführt, wenn ein Server verfügbar ist.
 
 * **[!UICONTROL Aussetzen]**
 
-  Diese Aktion setzt den Status des Workflows auf **Paused**. Bis zur Wiederaufnahme des Workflows werden keine Aktivitäten aktiviert. Die laufenden Vorgänge werden jedoch nicht angehalten.
+  Diese Aktion setzt den Status des Workflows auf **Ausgesetzt**. Bis zur Wiederaufnahme werden keine weiteren Aktivitäten gestartet, laufende Vorgänge werden jedoch nicht unterbrochen.
 
 * **[!UICONTROL Anhalten]**
 
@@ -62,7 +72,7 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Unbedingter Stopp]**
 
-  Diese Option ändert den Workflow-Status in **[!UICONTROL Abgeschlossen]**. Diese Aktion sollte nur als letztes Mittel verwendet werden, wenn der normale Stopp-Vorgang nach einigen Minuten fehlschlägt. Verwenden Sie den bedingungslosen Stopp nur, wenn Sie sicher sind, dass keine aktuellen Workflow-Aufträge in Bearbeitung sind.
+  Diese Option ändert den Workflow-Status in **[!UICONTROL Abgeschlossen]**. Diese Aktion sollte nur als letztes Mittel verwendet werden, wenn der normale Stopp-Vorgang nach einigen Minuten fehlschlägt. Verwenden Sie den unbedingten Stopp nur, wenn Sie sicher sind, dass keine aktuellen Workflow-Aufträge in Bearbeitung sind.
 
   >[!CAUTION]
   >
@@ -70,17 +80,17 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Neu starten]**
 
-  Diese Aktion stoppt und startet den Workflow neu. In den meisten Fällen ist es möglich, schneller neu zu starten. Es ist auch nützlich, den Neustart zu automatisieren, wenn das Anhalten eine bestimmte Zeit dauert: Dies liegt daran, dass der Befehl „Stopp“ nicht verfügbar ist, wenn der Workflow angehalten wird.
+  Diese Aktion stoppt den Workflow und startet ihn neu. In den meisten Fällen ist dadurch ein schnellerer Neustart möglich. Sie ist auch nützlich, um den Neustart zu automatisieren, wenn das Anhalten eines Workflows viel Zeit in Anspruch nimmt, da der Befehl „Stopp“ nicht verfügbar ist, während der Workflow angehalten wird.
 
   Beachten Sie, dass die Aktion **Neustart** die Workflow-Instanzvariablen im Vergleich zu den Aktionen **Ausführung**, **Anhalten** und **Starten** nicht löscht (das Löschen der Instanzvariablen erfolgt bei der Aktion „Starten“). Beim Neustart eines Workflows sind Instanzvariablen weiterhin für die Verwendung mit beibehaltenen Werten verfügbar. Zum Löschen haben Sie folgende Möglichkeiten:
-   * Führen Sie die Aktionen **Anhalten** und **Starten** aus.
-   * Fügen Sie am Ende der Workflow-Ausführung folgenden JavaScript-Code hinzu:
+  * Führen Sie die Aktionen **Anhalten** und **Starten** aus.
+  * Fügen Sie am Ende der Workflow-Ausführung folgenden JavaScript-Code hinzu:
 
-     ```
-     var wkf = xtk.workflow.load(instance.id)
-     wkf.variables='<variables/>'
-     wkf.save()
-     ```
+    ```
+    var wkf = xtk.workflow.load(instance.id)
+    wkf.variables='<variables/>'
+    wkf.save()
+    ```
 
 * **[!UICONTROL Verlaufsbereinigung]**
 
@@ -88,7 +98,7 @@ Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff a
 
 * **[!UICONTROL Im Simulationsmodus starten]**
 
-  Mithilfe dieses Befehls wird der Workflow im Simulationsmodus gestartet. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die eine Auswirkung haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.), sowie die nach ihnen (in derselben Verzweigung) werden nicht ausgeführt.
+  Mithilfe dieses Befehls wird der Workflow im Simulationsmodus gestartet. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die eine Auswirkung haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.), sowie die Aktivitäten danach (in derselben Verzweigung) werden nicht ausgeführt.
 
 * **[!UICONTROL Vorgezogene Ausführung der ausstehenden Aufgaben]**
 
@@ -110,9 +120,9 @@ Verbessern Sie die Stabilität Ihrer Instanz, indem Sie die folgenden Best Pract
 
   So vermeiden Sie, dass Workflows ausgesetzt werden:
 
-   * Prüfen Sie Ihre Workflows regelmäßig, um sicherzustellen, dass keine unerwarteten Fehler auftreten.
-   * Bauen Sie Ihre Workflows möglichst einfach auf, indem Sie beispielsweise große Workflows in mehrere kleine unterteilen. Mit der Aktivität **[!UICONTROL Externes Signal]** können Sie Workflows durch andere Workflows auslösen.
-   * Vermeiden Sie es, Aktivitäten mit Flüssen in Ihren Workflows zu deaktivieren, die Threads offen lassen und zu vielen temporären Tabellen führen, die viel Platz verbrauchen können. Behalten Sie in Ihren Workflows keine Aktivitäten im Status **[!UICONTROL Nicht aktivieren]** oder **[!UICONTROL Aktivieren, aber nicht ausführen]**.
+  * Prüfen Sie Ihre Workflows regelmäßig, um sicherzustellen, dass keine unerwarteten Fehler auftreten.
+  * Bauen Sie Ihre Workflows möglichst einfach auf, indem Sie beispielsweise große Workflows in mehrere kleine unterteilen. Mit der Aktivität **[!UICONTROL Externes Signal]** können Sie Workflows durch andere Workflows auslösen.
+  * Vermeiden Sie es, Aktivitäten mit Flüssen in Ihren Workflows zu deaktivieren, die Threads offen lassen und zu vielen temporären Tabellen führen, die viel Platz verbrauchen können. Behalten Sie in Ihren Workflows keine Aktivitäten im Status **[!UICONTROL Nicht aktivieren]** oder **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
 * **Stoppen von nicht verwendeten Workflows**. Workflows, die weiterhin ausgeführt werden, halten Verbindungen zur Datenbank aufrecht.
 

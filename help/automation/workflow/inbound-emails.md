@@ -6,18 +6,28 @@ feature: Workflows, Channels Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cc2c415-1886-4f31-8020-dbaf97a3cc43
-TQID: https://experienceleague.adobe.com/5Kmhzi-ZkvEhkzJr6LGk-wPo8EPWsbUOjHwPymcNGtA
+TQID: 'https://experienceleague.adobe.com/5Kmhzi-ZkvEhkzJr6LGk-wPo8EPWsbUOjHwPymcNGtA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: bce277d1-7efa-48d8-9a1b-b588bb45ba1c
+    internal-label: Channels Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 372
-ht-degree: 66%
-
+source-wordcount: '372'
+ht-degree: 100%
 ---
-
 # E-Mail-Empfang{#inbound-emails}
 
 
@@ -26,7 +36,7 @@ Die Aktivität **E-Mail-Empfang** ermöglicht den Abruf und die Verarbeitung von
 
 ![](assets/email_rec_edit_1.png)
 
-Auf der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie die Parameter des POP3-Servers eingeben und das Skript eingeben, das bei Erhalt jeder Nachricht ausgeführt werden soll. Auf der zweiten Registerkarte können Sie der Aktivität einen Zeitplan zuweisen. Auf der dritten Registerkarte werden die Ablaufbedingungen für die Aktivität definiert.
+In der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie die POP3-Parameter sowie das bei Empfang jeder Nachricht auszuführende Skript angeben. In der zweiten Registerkarte können Sie der Aktivität einen Zeitplan zuweisen und in der dritten Registerkarte die Ablaufbedingungen der Aktivität definieren.
 
 1. **[!UICONTROL E-Mail-Empfang]**
 
@@ -38,29 +48,29 @@ Auf der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie d
 
      ![](assets/email_rec_edit_1b.png)
 
-      * **[!UICONTROL POP3-Server]**
+     * **[!UICONTROL POP3-Server]**
 
-        Name des POP3-Servers.
+       Name des POP3-Servers.
 
-      * **[!UICONTROL POP3-Konto]**
+     * **[!UICONTROL POP3-Konto]**
 
-        Name des Benutzers.
+       Name des Benutzers.
 
-      * **[!UICONTROL Passwort]**
+     * **[!UICONTROL Passwort]**
 
-        Passwort des Benutzerkontos.
+       Passwort des Benutzerkontos.
 
-      * **[!UICONTROL Port]**
+     * **[!UICONTROL Port]**
 
-        Port-Nummer der POP3-Verbindung. Der Standard-Port ist 110.
+       Port-Nummer der POP3-Verbindung. Der Standard-Port ist 110.
 
    * **[!UICONTROL Stoppen, sobald eine E-Mail verarbeitet wurde]**
 
-     Mit dieser Option können Sie E-Mails einzeln verarbeiten. Die Aktivität aktiviert ihre Transition nur einmal und beendet dann die Verarbeitung, sodass nicht verarbeitete Nachrichten auf dem Server bleiben.
+     Mit dieser Option können Sie E-Mails einzeln verarbeiten. Die Transition der Aktivität wird nur einmal aktiviert. Alle nicht verarbeiteten Nachrichten bleiben auf dem Server.
 
 1. **[!UICONTROL Script]**
 
-   Mit dem Skript können Sie die Nachricht verarbeiten und verschiedene Vorgänge ausführen, die vom Inhalt der Nachricht abhängen. Das Script wird für jede Nachricht ausgeführt und kann den für die Nachricht auszuführenden Vorgang (Nachricht hinterlassen oder löschen) und die Aktivierung der ausgehenden Transition festlegen.
+   Die Angabe eines Skripts ermöglicht die Verarbeitung der Nachricht und die Ausführung von verschiedenen Vorgängen, je nach Nachrichteninhalt. Das Skript wird auf jede Nachricht angewendet und entscheidet, welcher Vorgang auszuführen ist (Nachricht in der Mailbox belassen oder löschen) und ob die ausgehende Transition zu aktivieren ist.
 
    Der Rückgabe-Code muss einem der folgenden Werte entsprechen:
 

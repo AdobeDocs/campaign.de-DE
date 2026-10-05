@@ -5,25 +5,35 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-TQID: https://experienceleague.adobe.com/RcdMeKFZIeitseKyZb72sz6O1y7lhtwajxwAr5V9vLo
+TQID: 'https://experienceleague.adobe.com/RcdMeKFZIeitseKyZb72sz6O1y7lhtwajxwAr5V9vLo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 977
-ht-degree: 83%
-
+source-wordcount: '977'
+ht-degree: 97%
 ---
-
 # Angebot erstellen
 
 Um ein Angebot zu erstellen, gehen Sie wie folgt vor:
@@ -68,11 +78,11 @@ Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der List
 
 ### Festlegen der Angebotsgewichtung {#offer-weight}
 
-Damit die Engine zwischen mehreren Angeboten wählen kann, für die die Zielgruppe geeignet ist, müssen Sie dem Angebot eine oder mehrere Gewichtungen zuweisen. Sie können bei Bedarf auch Filter auf die Zielgruppe anwenden oder die Platzierung einschränken, auf die die Gewichtung angewendet werden soll. Ein Angebot mit einer höheren Gewichtung wird gegenüber einem Angebot mit weniger Gewichtung bevorzugt.
+Damit das Modul zwischen mehreren Angeboten wählen kann, für die die Zielgruppe geeignet ist, müssen Sie dem Angebot eine oder mehrere Gewichtungen zuweisen. Sie können bei Bedarf auch Filter auf die Zielgruppe anwenden oder die Platzierung einschränken, auf die die Gewichtung angewendet werden soll. Ein Angebot mit einer höheren Gewichtung wird gegenüber einem Angebot mit niedrigerer Gewichtung bevorzugt.
 
 Es besteht weiterhin die Möglichkeit, für ein Angebot verschiedene Gewichtungen zu definieren, z. B. in Bezug auf einen Zeitraum, eine Zielgruppe oder auch eine Platzierung.
 
-Beispielsweise kann ein Angebot für Kontakte im Alter von 18 bis 25 Jahren das Gewicht A und für Kontakte oberhalb dieses Bereichs das Gewicht B aufweisen. Wenn ein Angebot den ganzen Sommer über geeignet ist, kann es auch eine Gewichtung von A im Juli und eine Gewichtung von B im August haben.
+Ein Angebot kann beispielsweise für Kontakte im Alter von 18 bis 25 Jahren die Gewichtung „A“ aufweisen und für Kontakte über 25 Jahren die Gewichtung „B“. Einem Angebot, dessen Verwendungszeitraum auf die Sommermonate beschränkt ist, kann im Juli die Gewichtung „A“ und im August die Gewichtung „B“ zugewiesen werden.
 
 >[!NOTE]
 >
@@ -110,7 +120,7 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
    >[!NOTE]
    >
-   >Wenn eine Zielgruppe für ein ausgewähltes Angebot mit mehreren Gewichtungen infrage kommt, behält die Engine die beste (höchste) Gewichtung. Beim Aufruf des Angebotsmoduls wird maximal einmal pro Kontakt ein Angebot ausgewählt.
+   >Wenn ein Kontakt bei einem ausgewählten Angebot für verschiedene Gewichtungen infrage kommt, wählt das Angebotsmodul die höchste Gewichtung aus. Beim Aufruf des Angebotsmoduls wird maximal einmal pro Kontakt ein Angebot ausgewählt.
 
 ### Übersicht der für ein Angebot konfigurierten Eignungsregeln {#a-summary-of-offer-eligibility-rules}
 

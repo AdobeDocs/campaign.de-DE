@@ -6,10 +6,18 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: d34b6073-a7e7-443a-a6d8-e74ef10a67e8
-TQID: https://experienceleague.adobe.com/-HhNQgwweCPn3ts3AAm6SjdFTxg-2zexCALMqS1Yjgc
+TQID: 'https://experienceleague.adobe.com/-HhNQgwweCPn3ts3AAm6SjdFTxg-2zexCALMqS1Yjgc'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -19,7 +27,7 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 422d18b36d63bd04922adb3bb4e06a49ed7cdfd7
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 20%
@@ -89,7 +97,7 @@ Mit dem Abfrage-Editor können Sie Daten filtern, um Ihre Ergebnisse einzugrenze
 
 Nach Auswahl **[!UICONTROL Filterbedingungen]** wird der Abschnitt **[!UICONTROL Target-Elemente]** geöffnet. Hier können Sie die Regeln für das Filtern der zu erfassenden Daten definieren.
 
-* Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die zum Erstellen der Bedingung erforderlich sind. Sie können auch mehrere Bedingungen kombinieren, wie [auf dieser Seite) &#x200B;](filter-conditions.md).
+* Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die zum Erstellen der Bedingung erforderlich sind. Sie können auch mehrere Bedingungen kombinieren, wie [auf dieser Seite) ](filter-conditions.md).
 
 * Um einen vorhandenen Filter wiederzuverwenden, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie **[!UICONTROL Vordefinierter Filter]** und wählen Sie den gewünschten Filter aus.
 

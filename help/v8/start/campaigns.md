@@ -5,30 +5,38 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-TQID: https://experienceleague.adobe.com/6Yc3zbm-RSMwE6T9kLrko6TcW54uUnLM5ItNYq-iohA
+TQID: 'https://experienceleague.adobe.com/6Yc3zbm-RSMwE6T9kLrko6TcW54uUnLM5ItNYq-iohA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+  - id: 237333ba-90fa-554c-bc8d-2047e6173477
+    internal-label: Cross Channel Orchestration
 subfeature_v2:
   - id: ede6e1ec-9279-415e-b828-a09735018d48
+    internal-label: Direct mail
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 856
-ht-degree: 70%
-
+source-wordcount: '856'
+ht-degree: 73%
 ---
-
 # Erste Schritte mit Kampagnen {#gs-ac-campaigns}
 
 Adobe Campaign umfasst mehrere Lösungen, mit denen Sie Kampagnen personalisieren und auf allen Online- und Offline-Kanälen versenden können. Sie können Marketing-Kampagnen erstellen, konfigurieren, ausführen und analysieren. Die Anwendung stellt somit ein einheitliches Kontrollzentrum dar, über das alle Marketing-Kampagnen verwaltet werden können. In diesem Abschnitt erfahren Sie, wie Sie Marketing-Kampagnen durchsuchen und erstellen können.
 
-Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Importieren oder Extrahieren von Dateien) sowie Ressourcen (Marketing-Dokumente, Versandentwürfe). Sie werden in Marketing-Kampagnen verwendet. Kampagnen sind Teil eines Programms und Programme Teil eines Kampagnenplans.
+Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Import oder Extraktion von Dateien) sowie Ressourcen (Marketing-Dokumente, Versandentwürfe). Sie werden in Marketing-Kampagnen verwendet. Kampagnen sind Teil eines Programms und Programme Teil eines Kampagnenplans.
 
 ## Kanalübergreifende Orchestrierung einer Kampagne{#cross-channel-orchestration}
 
@@ -58,7 +66,7 @@ Adobe Campaign ermöglicht die Erstellung, Konfiguration, Ausführung und Analys
 
 ![](assets/calendar.png)
 
-In diesem Abschnitt erfahren Sie, wie Sie auf Marketing[Kampagnen zugreifen und diese implementieren &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target="_blank"}.
+In diesem Abschnitt erfahren Sie, wie Sie auf Marketing[Kampagnen zugreifen und diese implementieren ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target="_blank"}.
 
 ## Wichtige Schritte zum Beginn{#gs-ac-start}
 
@@ -68,7 +76,7 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    Definieren Sie Hierarchie und Zeitplan, stellen Sie Budget ein, fügen Sie Ressourcen hinzu, wählen Sie Benutzer aus.
 
-   Auf [&#x200B; Seite erfahren Sie, wie Sie einen Marketing-Plan erstellen und Kampagnen konfigurieren &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de){target="_blank"}.
+   Auf [ Seite erfahren Sie, wie Sie einen Marketing-Plan erstellen und Kampagnen konfigurieren ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de){target="_blank"}.
 
    Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Haupteinstellungen und -funktionen gespeichert sind. Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen können, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
 
@@ -109,7 +117,7 @@ Adobe Campaign bietet ein **dezentrales Marketing**-Add-on zur Implementierung v
 >
 >Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-Auf [&#x200B; Seite erfahren Sie, wie Sie die Funktionen von Campaign für dezentrales Marketing konfigurieren und &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de){target="_blank"}.
+Auf [ Seite erfahren Sie, wie Sie die Funktionen von Campaign für dezentrales Marketing konfigurieren und ](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de){target="_blank"}.
 
 ## Add-on &quot;Reaktionsverwaltung&quot;{#response-manager-add-on}
 
@@ -119,4 +127,4 @@ Adobe Campaign bietet ein Add-on zur **Reaktionsverwaltung** (Response Manager),
 >
 >Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[&#128279;](../assets/do-not-localize/book.png) Erfahren Sie in der [Dokumentation zu Campaign Classic v7, wie Sie den Campaign Response Manager konfigurieren und &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=de){target="_blank"}.
+[](../assets/do-not-localize/book.png) Erfahren Sie in der [Dokumentation zu Campaign Classic v7, wie Sie den Campaign Response Manager konfigurieren und ](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=de){target="_blank"}.

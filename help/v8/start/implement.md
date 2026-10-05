@@ -5,31 +5,46 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-TQID: https://experienceleague.adobe.com/WZDkAoVSWL-S-3KwtItTTXxhiLkGZLzZLk4LVLymbFM
+TQID: 'https://experienceleague.adobe.com/WZDkAoVSWL-S-3KwtItTTXxhiLkGZLzZLk4LVLymbFM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
+  - id: e8d937ec-9046-41b5-834b-d22a624e0d37
+    internal-label: Campaign overview
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Privacy
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1218
-ht-degree: 95%
-
+source-wordcount: '1218'
+ht-degree: 96%
 ---
-
 # Leitlinien für die Implementierung von Campaign{#gs-implementation}
 
 In diesem Abschnitt erfahren Sie, wie Sie Adobe Campaign an die Anforderungen Ihrer Firma anpassen. Verwenden Sie die folgenden Richtlinien, um Ihre Implementierung zu strukturieren und zu organisieren.
@@ -60,7 +75,7 @@ Adobe Campaign verfügt über Prozesse und Einstellungen, die es Ihnen ermöglic
 
 * **Benutzerzustimmung und Datenspeicherung**: Sie müssen die Einwilligungen der jeweiligen Benutzenden einholen, Anmeldemechanismen mit Double-Opt-in einrichten, den Opt-out erleichtern und die Datenspeicherung konfigurieren.
 
-  Weitere Informationen finden Sie in der Dokumentation zum Datenschutz in Campaign Classic v7[&#128279;](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent){target="_blank"}
+  Weitere Informationen finden Sie in der Dokumentation zum Datenschutz in Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent){target="_blank"}[
 
 * **Datenschutzbestimmungen**: In [diesem Abschnitt](privacy.md) finden Sie Informationen über Datenschutzanforderungen und darüber, wie sich diese Bestimmungen auf Ihre Organisation und Adobe Campaign auswirken.
 
@@ -103,7 +118,7 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folg
 
    Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=de){target="_blank"} erfahren Sie, wie Sie mit Kampagnenvorlagen arbeiten.
 
-   Erfahren Sie auf [&#x200B; Seite , wie Sie eine Workflow-Vorlage &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"}.
+   Erfahren Sie auf [ Seite , wie Sie eine Workflow-Vorlage ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"}.
 
    Weitere Informationen zu E-Mail-Vorlagen finden Sie auf [Seite](../send/create-templates.md).
 
@@ -146,7 +161,7 @@ Sie können viele verschiedene Bereiche und Funktionen in Campaign anpassen. Die
 
    Campaign bietet eine Reihe von integrierten Berichten zur Überwachung des Versands, zu URLs und Clickstreams, zur Nachverfolgung, zu Zustellbarkeitsindikatoren und mehr.
 
-   Zusätzlich zu den integrierten Berichten können Sie mit Adobe Campaign Berichte in verschiedenen Kontexten und für unterschiedliche Anforderungen erstellen. Die Grundsätze der Verwendung und die Implementierungsmodi werden in diesem Dokument beschrieben.
+   Zusätzlich zu den integrierten Berichten können Sie mit Adobe Campaign Berichte in verschiedenen Kontexten und für unterschiedliche Anforderungen erstellen. In diesem Dokument werden die Grundsätze der Verwendung und die Implementierungsmodi beschrieben.
 
    Auf [dieser Seite](../reporting/gs-reporting.md) erfahren Sie mehr über die Reporting-Funktionen in Campaign.
 

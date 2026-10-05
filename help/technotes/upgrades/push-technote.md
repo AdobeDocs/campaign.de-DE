@@ -7,13 +7,28 @@ role: Admin
 level: Experienced
 hide: true
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 96%
-
 ---
-
 # Änderungen am Push-Benachrichtigungskanal {#push-upgrade}
 
 Sie können Campaign verwenden, um Push-Benachrichtigungen an Android- und iOS-Geräte zu senden. Dazu benötigt Campaign Anmeldedienste für Mobile Apps.
@@ -57,9 +72,9 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 
 * Über das externe Android-Routing-Konto:
 
-   * Überprüfen Sie, wenn Sie zur Gruppe der On-Premise- oder Hybrid-Benutzenden von Campaign Classic v7 gehören, ob Ihr externes Android-Routing-Konto mit `androidPushConnectorV2.js` konfiguriert ist. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
+  * Überprüfen Sie, wenn Sie zur Gruppe der On-Premise- oder Hybrid-Benutzenden von Campaign Classic v7 gehören, ob Ihr externes Android-Routing-Konto mit `androidPushConnectorV2.js` konfiguriert ist. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}.
 
-   * Bei hybriden, gehosteten und Managed Cloud Services-Bereitstellungen müssen Sie sich auch mit dem Team der Adobe-Kundenunterstützung in Verbindung setzen, um zu überprüfen, ob der Connector `androidPushConnectorV2.js (nms)` vom externen Android-Routing-Konto Ihres Mid-Sourcing-Servers ausgewählt wird.
+  * Bei hybriden, gehosteten und Managed Cloud Services-Bereitstellungen müssen Sie sich auch mit dem Team der Adobe-Kundenunterstützung in Verbindung setzen, um zu überprüfen, ob der Connector `androidPushConnectorV2.js (nms)` vom externen Android-Routing-Konto Ihres Mid-Sourcing-Servers ausgewählt wird.
 
 #### Migrationsverfahren {#fcm-transition-steps}
 
@@ -96,7 +111,7 @@ Befolgen Sie die folgenden Schritte, um Ihre Umgebung zu HTTP v1 zu migrieren:
 
 #### Aktualisieren vorhandener Vorlagen {#fcm-transition-update}
 
-Nach der Migration zu HTTP v1 müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen aktualisieren, um die Anzahl der Batch-Nachrichten zu erhöhen. Öffnen Sie zu diesem Zweck die Eigenschaften Ihrer Android-Versandvorlage und legen Sie auf der Registerkarte **Versand** für die Einstellung [&#x200B; Kontingentgröße](../../v8/send/configure-and-send.md#delivery-batch-quantity) den Wert **256** fest. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle vorhandenen Android-Sendungen.
+Nach der Migration zu HTTP v1 müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen aktualisieren, um die Anzahl der Batch-Nachrichten zu erhöhen. Öffnen Sie zu diesem Zweck die Eigenschaften Ihrer Android-Versandvorlage und legen Sie auf der Registerkarte **Versand** für die Einstellung [ Kontingentgröße](../../v8/send/configure-and-send.md#delivery-batch-quantity) den Wert **256** fest. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle vorhandenen Android-Sendungen.
 
 Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor dem Upgrade auf eine Version erstellt wurden, die HTTP v1 unterstützt. Durchführung:
 
@@ -115,45 +130,45 @@ Sie können auch vorhandene Sendungen und Versandvorlagen aktualisieren, die vor
 
   Gehen Sie wie folgt vor, um alle Sendungen und Versandvorlagen zu patchen, die vor dem Upgrade auf eine Version erstellt wurden, die HTTP v1 unterstützt:
 
-   1. Exportieren Sie Ihre vorhandenen Sendungen und Versandvorlagen in ein Paket, um sie im Falle eines unerwarteten Problems beim Patchen wiederherzustellen.
-   1. Führen Sie den folgenden Befehl in Posgresql aus:
+  1. Exportieren Sie Ihre vorhandenen Sendungen und Versandvorlagen in ein Paket, um sie im Falle eines unerwarteten Problems beim Patchen wiederherzustellen.
+  1. Führen Sie den folgenden Befehl in Posgresql aus:
 
-      ```sql
-      pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
-      ```
+     ```sql
+     pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
+     ```
 
-   1. Standardmäßig befindet sich das Skript im Modus `dryrun`. Sie können es in diesem Modus starten, um zu überprüfen, ob ein Versand gepatcht werden muss.
+  1. Standardmäßig befindet sich das Skript im Modus `dryrun`. Sie können es in diesem Modus starten, um zu überprüfen, ob ein Versand gepatcht werden muss.
 
-      Befehl
+     Befehl
 
-      ```sql
-      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
-      ```
+     ```sql
+     nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
+     ```
 
-      Ausgabe
+     Ausgabe
 
-      ```sql
-      ...
-      HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
-      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
-      HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
-      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
-      ...
-      HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
-      HH:MM:SS >>  - X had not patchable androidCheckParams formula!
-      HH:MM:SS >   - Y had androidCheckParams formula patched.
-      HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
-      ```
+     ```sql
+     ...
+     HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+     HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+     HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+     HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+     ...
+     HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
+     HH:MM:SS >>  - X had not patchable androidCheckParams formula!
+     HH:MM:SS >   - Y had androidCheckParams formula patched.
+     HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
+     ```
 
-      >[!NOTE]
-      >
-      >Sendungen der Kategorie `not patchable` müssen manuell aktualisiert werden. Ihre ID finden Sie im Protokoll.
+     >[!NOTE]
+     >
+     >Sendungen der Kategorie `not patchable` müssen manuell aktualisiert werden. Ihre ID finden Sie im Protokoll.
 
-   1. Führen Sie das Skript im Ausführungsmodus wie folgt aus, um Sendungen zu aktualisieren:
+  1. Führen Sie das Skript im Ausführungsmodus wie folgt aus, um Sendungen zu aktualisieren:
 
-      ```sql
-      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
-      ```
+     ```sql
+     nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
+     ```
 
   +++
 
@@ -211,7 +226,7 @@ Um zu überprüfen, ob Sie betroffen sind, können Sie Ihre **Dienste und Abonne
 
 #### Voraussetzungen {#ios-transition-prerequisites}
 
-* Für Campaign Classic v7 wurde die Unterstützung des Modus **Token-basierte Authentifizierung** in Version 20.2 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, ist eine Voraussetzung für diese Änderung, Ihre Umgebung auf den [neuesten Campaign Classic-Build) &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"}. Bei Campaign v8 wird die **Token-basierte Authentifizierung** in allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
+* Für Campaign Classic v7 wurde die Unterstützung des Modus **Token-basierte Authentifizierung** in Version 20.2 hinzugefügt. Wenn Ihre Umgebung auf einer älteren Version ausgeführt wird, ist eine Voraussetzung für diese Änderung, Ihre Umgebung auf den [neuesten Campaign Classic-Build) ](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=de){target="_blank"}. Bei Campaign v8 wird die **Token-basierte Authentifizierung** in allen Versionen unterstützt und es ist keine Aktualisierung erforderlich.
 
 * Sie benötigen einen Signierschlüssel für die APNs-Authentifizierungs-Token, um die Token zu erzeugen, die Ihr Server verwendet. Sie fordern diesen Schlüssel von Ihrem Apple-Entwicklerkonto an, wie in der [Apple-Entwicklerdokumentation](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"} beschrieben.
 

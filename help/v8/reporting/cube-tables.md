@@ -6,23 +6,34 @@ feature: Reporting
 role: User, Developer
 level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
-TQID: https://experienceleague.adobe.com/fVo8tGw-kPgGgB7djOQr8tv5MoRvrPr-MF2bzYYKDgI
+TQID: 'https://experienceleague.adobe.com/fVo8tGw-kPgGgB7djOQr8tv5MoRvrPr-MF2bzYYKDgI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Reporting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 989
-ht-degree: 88%
-
+source-wordcount: '989'
+ht-degree: 97%
 ---
-
 # Verwenden von Cubes zur Datenanalyse{#use-cubes-to-create-reports}
 
 Verwenden Sie Cubes, um Berichte zu erstellen und um Daten aus der Datenbank zu identifizieren und auszuwählen. Sie haben folgende Möglichkeiten:
@@ -45,7 +56,7 @@ Gehen Sie wie folgt vor, um einen auf einem vorhandenen Cube basierenden Bericht
 
 1. Klicken Sie zur Bestätigung auf die Schaltfläche **[!UICONTROL Erstellen]**: Der Bildschirm zur Konfiguration und Ansicht des Berichts wird geöffnet.
 
-   Standardmäßig werden die ersten beiden verfügbaren Dimensionen in Zeilen und Spalten angeboten, aber es wird kein Wert in der Tabelle angezeigt. Um die Tabelle zu generieren, klicken Sie auf das Hauptsymbol:
+   Die ersten beiden verfügbaren Dimensionen werden standardmäßig in Zeilen und Spalten angezeigt, die Tabelle enthält jedoch keine Werte. Um die Tabelle zu generieren, klicken Sie auf das Hauptsymbol:
 
    ![](assets/cube-report-config.png)
 
@@ -127,9 +138,9 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
      Für diese Kennzahlen stehen folgende Operatoren zur Verfügung: Summe, Differenz, Produkt und Rate.
 
-   * Proportion : Mit dieser Kennzahl können Sie die Anzahl der für eine bestimmte Dimension gemessenen Datensätze berechnen. Sie können die Proportionalität anhand einer Dimension oder Unterdimension berechnen.
+   * Anteil: ermöglicht die Berechnung der Anzahl der für eine bestimmte Dimension gemessenen Einträge. Sie können die Proportionalität anhand einer Dimension oder Unterdimension berechnen.
    * Abweichung: ermöglicht die Berechnung der Abweichungen der Werte einer Ebene.
-   * Standardabweichung: Mit dieser Kennzahl können Sie Abweichungen innerhalb jeder Zellengruppe im Vergleich zum Durchschnitt der Werte berechnen. Sie können beispielsweise das Kaufvolumen für alle vorhandenen Segmente vergleichen.
+   * Standardabweichung: ermöglicht die Berechnung der Abweichungen in jeder Gruppe von Zellen in Bezug auf den Durchschnitt der Werte. Sie können beispielsweise das Kaufvolumen für alle vorhandenen Segmente vergleichen.
 
    Sobald die Kennzahl erstellt ist, wird sie dem Bericht hinzugefügt.
 

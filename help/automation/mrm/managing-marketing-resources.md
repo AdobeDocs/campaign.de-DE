@@ -5,22 +5,28 @@ description: Erfahren Sie, wie Sie Marketing-Ressourcen verwalten.
 feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-TQID: https://experienceleague.adobe.com/YowEClSN-SSHkR3yXX57hKjwXY-6JUjakGlccGKS6V8
+TQID: 'https://experienceleague.adobe.com/YowEClSN-SSHkR3yXX57hKjwXY-6JUjakGlccGKS6V8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 8d5d4b17-44c6-5e7b-891c-b4277613013d
+    internal-label: Resource Management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Implementation
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1175
-ht-degree: 91%
-
+source-wordcount: '1175'
+ht-degree: 100%
 ---
-
 # Marketing-Ressourcen verwalten{#managing-marketing-resources}
 
 Verwenden Sie Adobe Campaign, um die am Lebenszyklus der Kampagne beteiligten Marketing-Ressourcen zu verwalten und zu verfolgen. Bei diesen Marketing-Ressourcen kann es sich um Whitepapers, Datendateien, Logos oder andere Assets handeln, die mit einer Kampagne in Verbindung stehen.
@@ -124,7 +130,7 @@ Navigieren Sie zur Registerkarte **[!UICONTROL Tracking]**, um Genehmigungen zu 
 
 ### Veröffentlichen von Ressourcen {#publishing-a-resource}
 
-Nach der Genehmigung muss die Marketing-Ressource veröffentlicht werden. Der Publikationsprozess muss entsprechend den Anforderungen des Unternehmens spezifisch implementiert werden. Das bedeutet, dass Ressourcen in einem Extranet oder auf einem anderen Server veröffentlicht werden können, bestimmte Informationen an einen externen Dienstleister gesendet werden können usw.
+Nach der Validierung muss die Marketing-Ressource veröffentlicht werden. Der Veröffentlichungsprozess muss entsprechend den Anforderungen des Unternehmens spezifisch implementiert werden. So können Ressourcen in einem Extranet oder auf einem beliebigen anderen Server veröffentlicht, bzw. an einen externen Dienstleister übermittelt werden usw.
 
 Geben Sie den Zugriff auf eine Ressource frei, indem Sie auf die Schaltfläche **[!UICONTROL Veröffentlichen]** in ihrem Dashboard klicken.
 
@@ -132,7 +138,7 @@ Geben Sie den Zugriff auf eine Ressource frei, indem Sie auf die Schaltfläche *
 
 Die Ressourcenveröffentlichung kann auch über einen Workflow automatisiert werden.
 
-Ressourcen veröffentlichen bedeutet, sie zur Verwendung bereitzustellen (z. B. durch eine andere Aufgabe). Die Veröffentlichung als solche hängt von der Art Ihrer Ressource ab: Für einen Flyer kann die Veröffentlichung bedeuten, dass die Datei an einen Drucker gesendet wird, für eine Web-Agentur, dass sie auf einer Website veröffentlicht wird usw.
+Das Veröffentlichen einer Ressource bedeutet, sie zur Verwendung bereitzustellen (z. B. durch eine andere Aufgabe). Der eigentliche Vorgang der Veröffentlichung hängt von der Art der Ressource ab: Ein Flyer zum Beispiel kann zum Druck als Datei an einen Dienstleister geschickt oder aber auf einer Website online gestellt werden.
 
 Damit Adobe Campaign eine Ressource veröffentlichen kann, müssen Sie einen geeigneten Workflow erstellen und ihn mit der Ressource verknüpfen. Öffnen Sie dazu das Dialogfeld **[!UICONTROL Erweiterte Einstellungen…]** der Ressource und wählen Sie dann den gewünschten Workflow im Feld **[!UICONTROL Anschlussvorgang]** aus.
 

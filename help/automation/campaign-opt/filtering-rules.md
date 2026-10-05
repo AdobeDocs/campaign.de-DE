@@ -4,26 +4,35 @@ title: Konfigurieren von Filterregeln
 description: Erfahren Sie, wie Sie Filterregeln konfigurieren
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
-TQID: https://experienceleague.adobe.com/4dOJKJq9bGT93592ugAfrbQU27OBBpUp25QRpzDqtW0
+TQID: 'https://experienceleague.adobe.com/4dOJKJq9bGT93592ugAfrbQU27OBBpUp25QRpzDqtW0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
+subfeature_v2:
+  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+    internal-label: Typology rules
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 550
-ht-degree: 86%
-
+source-wordcount: '550'
+ht-degree: 97%
 ---
-
 # Filterregeln{#filtering-rules}
 
 Verwenden Sie Filterregeln, um auszuschließende Nachrichten anhand von in einer Abfrage definierten Kriterien auszuwählen. Diese Regeln sind mit einer Zielgruppendimension verknüpft.
 
-Filterregeln können mit anderen Regeltypen (Kontrolle, Druck usw.) verknüpft werden in Typologien oder in einer eigenen Typologie **Filterung** zusammengefasst. [Weitere Informationen](#create-and-use-a-filtering-typology).
+Filterregeln können mit anderen Regeltypen (Kontrollregeln, Druckregeln usw.) in Typologien verknüpft oder in einer dedizierten **Filtertypologie** gruppiert werden. [Weitere Informationen](#create-and-use-a-filtering-typology).
 
 ## Erstellen einer Filterregel {#create-a-filtering-rule}
 
@@ -74,7 +83,7 @@ In diesem Fall wird die Regel nur auf die Sendungen angewandt, die den Kriterien
 
 ## Erstellen und Verwenden einer Filtertypologie {#create-and-use-a-filtering-typology}
 
-Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.**&#x200B;**
+Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.****
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
@@ -84,7 +93,7 @@ Diese **[!UICONTROL Filtertypologien]** können bei der Zielgruppenbestimmung ei
 
 Wählen Sie dann die Filtertypologie aus, die auf den Versand angewendet werden soll. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Typologien aus, die angewendet werden sollen.
 
-Sie können Filterregeln auch direkt über diese Registerkarte verknüpfen, ohne sie in einer Typologie zu gruppieren. Verwenden Sie dazu den unteren Bereich des Fensters.
+Sie können Filterregeln auch direkt über diese Registerkarte verknüpfen, ohne dass sie in eine Typologie gruppiert werden. Verwenden Sie dazu den unteren Abschnitt des Fensters.
 
 ![](assets/campaign_opt_select_typo_filtering.png)
 
@@ -97,7 +106,7 @@ Sie können Filterregeln auch direkt über diese Registerkarte verknüpfen, ohne
 
 ## Standardmäßige Ausschlussregeln für Zustellbarkeit {#default-deliverability-exclusion-rules}
 
-Standardmäßig sind zwei Filterregeln verfügbar: **[!UICONTROL Adressen ausschließen]** ( **[!UICONTROL addressExclusions]** ) und **[!UICONTROL Domains ausschließen]** ( **[!UICONTROL domainExclusions]** ). Während der E-Mail-Analyse vergleichen diese Regeln die E-Mail-Adressen der Empfänger mit den unzulässigen Adressen oder Domain-Namen aus einer verschlüsselten globalen Unterdrückungsliste, die in der Zustellbarkeitsinstanz verwaltet wird. Im Falle einer Übereinstimmung wird die Nachricht nicht an den jeweiligen Empfänger gesendet.
+Standardmäßig sind zwei Filterregeln verfügbar: **[!UICONTROL Adressen ausschließen]** (**[!UICONTROL addressExclusions]**) und **[!UICONTROL Domains ausschließen]** (**[!UICONTROL domainExclusions]**). Während der E-Mail-Analyse vergleichen diese Regeln die E-Mail-Adressen der Empfänger mit den unzulässigen Adressen oder Domain-Namen aus einer verschlüsselten globalen Unterdrückungsliste, die in der Zustellbarkeitsinstanz verwaltet wird. Im Falle einer Übereinstimmung wird die Nachricht nicht an den jeweiligen Empfänger gesendet.
 
 Auf diese Weise soll das Hinzufügen zur Blockierungsliste aufgrund von schädlichen Aktivitäten, insbesondere durch die Verwendung von Spamtraps, vermieden werden. Wenn beispielsweise für die Anmeldung über ein Web-Formular eine Spamtrap verwendet wird, wird automatisch eine Bestätigungs-E-Mail an diese Spamtrap gesendet. Als Folge davon wird Ihre Adresse automatisch auf die Blockierungsliste gesetzt.
 

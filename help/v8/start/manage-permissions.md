@@ -6,36 +6,52 @@ role: User, Admin
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-TQID: https://experienceleague.adobe.com/niDT5Lfk-5W5rbVB1CpLykFQFAx6bwxOzxKrsuRjCkE
+TQID: 'https://experienceleague.adobe.com/niDT5Lfk-5W5rbVB1CpLykFQFAx6bwxOzxKrsuRjCkE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ce296ecd-3d06-45ab-83c3-37214e8ce31c
+    internal-label: Approvals
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Privacy
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1851
-ht-degree: 87%
-
+source-wordcount: '1851'
+ht-degree: 92%
 ---
-
 # Verwalten von Benutzerberechtigungen{#manage-permissions}
 
 ## Benutzer hinzufügen {#add-users}
@@ -143,7 +159,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
 1. **[!UICONTROL Kampagnenverantwortliche Benutzer]** (Vorgang)
 
-   Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten: Über sie können Sie auf die mit Kampagnen verknüpften Objekte zugreifen (Pläne, Programme, Workflows, Budgets usw.) im Rahmen von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
+   Die Benutzenden in dieser Gruppe können Marketing-Kampagnen verwalten. Sie erhalten Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets usw.) im Rahmen von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
 
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
@@ -164,7 +180,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
 
 1. **[!UICONTROL Workflow-Ausführung]** (Workflow)
 
-   Die Gruppe **[!UICONTROL Workflow-Ausführung]** ermöglicht die Steuerung der Ausführung und Validierung von Zielgruppen-Workflows: Die spezifische Berechtigung WORKFLOW wird den Benutzenden dieser Gruppe zugeordnet. Sie ist für alle Aktionen in Workflows erforderlich, zusätzlich zu den Zugriffsrechten auf die Datendateien. Standardmäßig hat die Gruppe **[!UICONTROL Workflow-Ausführung]** schreibgeschützten Zugriff auf standardmäßige Zielgruppen-Workflow-Dateien und Workflow-Vorlagen. Benutzende in dieser Gruppe haben auch Lese- und Schreibzugriff auf die Datei der ausstehenden Validierungen.
+   Die Gruppe **[!UICONTROL Workflow-Ausführung]** ermöglicht es, die Ausführung und Validierung von Zielgruppenbestimmungs-Workflows zu steuern. Die Berechtigung WORKFLOW wird den Benutzenden dieser Gruppe zugeordnet. Sie ist für alle Aktionen in Workflows erforderlich, zusätzlich zu den Zugriffsrechten auf die Datendateien. Standardmäßig hat die Gruppe **[!UICONTROL Workflow-Ausführung]** schreibgeschützten Zugriff auf standardmäßige Zielgruppen-Workflow-Dateien und Workflow-Vorlagen. Benutzende in dieser Gruppe haben auch Lese- und Schreibzugriff auf die Datei der ausstehenden Validierungen.
 
 1. **[!UICONTROL Workflow-Verwantwortliche]** (workflowSupervisor)
 

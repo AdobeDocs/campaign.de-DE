@@ -3,13 +3,16 @@ title: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 description: Upgrade der E-Mail-Versandinfrastruktur in Campaign
 hide: true
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
-
 ---
-
 # Upgrade der E-Mail-Versandinfrastruktur in Campaign {#migrate-infra-to-aws}
 
 ## Was wird aktualisiert?{#aws-changes}
@@ -56,11 +59,11 @@ Die Upgrades der Produktionsumgebung begannen im **Januar 2024**.
 
 * **Welche Tests sind für die Kundinnen und Kunden erforderlich?**
 
-  Wir erwarten keine Tests durch Kundinnen und Kunden in Verbindung mit diesem Upgrade-Ereignis. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support){target="_blank"}.
+  Wir erwarten keine Tests durch Kundinnen und Kunden in Verbindung mit diesem Upgrade-Ereignis. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&lang=de#support){target="_blank"}.
 
 
 * **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
 
   Nein. Wir können keine Anfragen bezüglich Änderungen an der bestehenden Planung berücksichtigen, da dies wahrscheinlich das zugewiesene Upgrade-Ereignis für andere Kundinnen und Kunden stören würde.
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support){target="_blank"}.
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

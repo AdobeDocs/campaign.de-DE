@@ -6,20 +6,27 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
-TQID: https://experienceleague.adobe.com/lxE52O9cAoD8RwzYdi5l4lRfkWcM8kZQ-T-fMZVKxaM
+TQID: 'https://experienceleague.adobe.com/lxE52O9cAoD8RwzYdi5l4lRfkWcM8kZQ-T-fMZVKxaM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 237333ba-90fa-554c-bc8d-2047e6173477
+    internal-label: Cross Channel Orchestration
+  - id: 6641bfdc-d19c-56e4-9045-0f6d06e8a43b
+    internal-label: Programs
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 63%
-
+source-wordcount: '472'
+ht-degree: 70%
 ---
-
 # Erste Schritte mit Marketing-Kampagnen {#gs-marketing-campaigns}
 
 Mit Adobe Campaign können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. Adobe Campaign fungiert als einheitliches Auftrags- und Ausführungszentrum für Marketing-Strategien. Sie können mehrere Datenquellen verwalten, Zielgruppensegmente definieren und mehrstufige kanalübergreifende Kampagnen über eine visuelle Workflow-Oberfläche per Drag-and-Drop planen und ausführen.
@@ -36,7 +43,7 @@ In addition, the **Marketing Resource Management (MRM)** module lets you control
 
 ## Wichtige Schritte zum Entwerfen Ihrer Kampagnen {#key-steps-campaign}
 
-Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Importieren oder Extrahieren von Dateien) sowie Ressourcen (Marketing-Dokumente, Versandentwürfe). Sie werden in Marketing-Kampagnen verwendet. Kampagnen sind Teil eines Programms und Programme Teil eines Kampagnenplans.
+Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Import oder Extraktion von Dateien) sowie Ressourcen (Marketing-Dokumente, Versandentwürfe). Sie werden in Marketing-Kampagnen verwendet. Kampagnen sind Teil eines Programms und Programme Teil eines Kampagnenplans.
 
 Die wichtigsten Schritte zum Erstellen und Ausführen einer Marketing-Kampagne in Adobe Campaign sind unten aufgeführt:
 
@@ -68,4 +75,4 @@ Wenn diese Schritte abgeschlossen sind, können Sie [die Sendungen starten](mark
 
 In diesem Video werden die wichtigsten Konzepte von Marketing-Kampagnen vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/326572?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)

@@ -5,13 +5,25 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1299'
-ht-degree: 87%
-
+ht-degree: 97%
 ---
-
 # Konfigurieren und Durchführen des Versands {#configure-delivery}
 
 Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können für den Versand eine [Priorität](#delivery-priority) definieren, [Schübe](#sending-using-multiple-waves) einrichten und den Versand testen. Nach Abschluss dieser Konfiguration können Sie den Versand wie in [diesem Abschnitt](#confirm-delivery) beschrieben bestätigen. Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten [Zeitplan](#schedule-delivery-sending) gesendet.
@@ -46,7 +58,7 @@ Verwenden Sie die Option **[!UICONTROL SMTP-Versand testen]**, um den Versand pe
 
 ## Versenden in mehreren Schüben {#sending-using-multiple-waves}
 
-Um die Auslastung auszugleichen, können Sie Sendungen in mehrere Batches unterteilen. Konfigurieren Sie die Anzahl der Batches und ihre Größe in Bezug auf den gesamten Versand.
+Um die Auslastung auszugleichen, können Sie Sendungen in mehrere Teilsendungen aufteilen. Konfigurieren Sie die Anzahl der Schübe und ihre Größe in Bezug auf den gesamten Versand.
 
 ### Aktivieren von Schüben {#enable-waves}
 
@@ -61,7 +73,7 @@ Gehen Sie wie folgt vor, um Schübe zu definieren:
 
 >[!NOTE]
 >
->Sie können nur die Größe und die Verzögerung zwischen zwei aufeinander folgenden Schüben definieren. Die Empfängerauswahlkriterien für jede Welle können nicht konfiguriert werden.
+>Sie können nur die Größe und die Verzögerung zwischen zwei aufeinander folgenden Schüben definieren. Die Empfänger-Auswahlkriterien für jeden Schub können nicht angepasst werden.
 
 Sie können entweder die Größe der einzelnen Schübe definieren oder sie einem Kalender hinzufügen.
 
@@ -83,7 +95,7 @@ Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) st
 
 >[!IMPORTANT]
 >
->* Stellen Sie sicher, dass die letzten Schübe die Versandfrist nicht überschreiten, die auf der Registerkarte **[!UICONTROL Gültigkeit]** definiert ist. Andernfalls werden einige Nachrichten möglicherweise nicht gesendet. Weitere Informationen zum Gültigkeitszeitraum eines Versands finden Sie in [diesem Abschnitt](delivery-failures.md#valid-period).
+>* Achten Sie darauf, dass die letzten Schübe nicht die Versandgültigkeit überschreiten, die in der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt ist. Anderenfalls werden einige Nachrichten möglicherweise nicht gesendet. Weitere Informationen zum Gültigkeitszeitraum eines Versands finden Sie in [diesem Abschnitt](delivery-failures.md#valid-period).
 >
 >* Planen Sie beim Konfigurieren der letzten Schübe zudem genügend Zeit für weitere Zustellversuche ein. Nähere Informationen zu weiteren Zustellversuchen finden Sie in [diesem Abschnitt](delivery-failures.md#retries).
 
@@ -102,7 +114,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   Wenn E-Mails über eine neue Plattform versendet werden, sind ISPs normalerweise misstrauisch gegenüber den neuen IP-Adressen. Das plötzliche Versenden großer Mengen an E-Mails veranlasst ISPs oft dazu, sie als Spam zu qualifizieren.
 
-  Um zu vermeiden, dass Sie als Spam gekennzeichnet werden, können Sie die Anzahl der über Wellen gesendeten Nachrichten schrittweise erhöhen. Dies gewährleistet eine reibungslose Anlaufphase, da die Gesamtrate ungültiger Adressen verringert wird.
+  Um zu verhindern, dass Ihre Sendungen als Spam eingestuft werden, können Sie das gesendete Volumen schrittweise mithilfe von Schüben erhöhen. Dies gewährleistet eine reibungslose Anlaufphase, da die Gesamtrate ungültiger Adressen verringert wird.
 
   Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Wählen Sie beispielsweise für den ersten Schub 10 %, für den zweiten 15 % usw. aus.
 
@@ -141,7 +153,7 @@ Gehen Sie dazu wie folgt vor:
 
    Weitere Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-   * [Sendungen überwachen](send.md)
+   * [Versand überwachen](send.md)
    * [Ursachen von fehlgeschlagenen Sendungen](delivery-failures.md)
 
 <!--About message tracking-->
@@ -174,11 +186,11 @@ Dies bietet die Möglichkeit, den Versand auf einen späteren Zeitpunkt zu versc
 
 * Bei Wahl der Option **[!UICONTROL Versand planen (keine automatische Ausführung)]** können Sie zudem die Analyse des Versands terminieren.
 
-  Wenn diese Konfiguration gespeichert wird, ändert sich der Versand in den Status **[!UICONTROL Targeting ausstehend]**. Die Analyse wird am angegebenen Datum gestartet.
+  Beim Speichern dieser Konfiguration erhält der Versand den Status **[!UICONTROL Zielgruppenbestimmung ausstehend]**. Die Analyse wird am angegebenen Datum gestartet.
 
 * Bei Wahl der Option **[!UICONTROL Versand planen (automatische Ausführung am geplanten Datum)]** wird nur das Kontaktdatum angegeben.
 
-  Klicken Sie auf **[!UICONTROL Senden]** und wählen Sie **[!UICONTROL Versand]**, starten Sie dann die Analyse und bestätigen Sie den Versand. Wenn die Analyse abgeschlossen ist, ist die Versandzielgruppe bereit und die Nachrichten werden automatisch am angegebenen Datum gesendet.
+  Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]**, wählen Sie **[!UICONTROL Versand terminieren]**, starten Sie die Analyse und bestätigen Sie den Versand. Wenn die Analyse abgeschlossen ist, ist das Versandziel bereit und die Nachrichten werden zum angegebenen Termin automatisch versendet.
 
 Datum und Uhrzeit beziehen sich jeweils auf den aktuellen Benutzer. Die unter dem Eingabefeld des Kontaktdatums situierte Dropdown-Liste **[!UICONTROL Zeitzone]** ermöglicht es, die oberhalb eingegebene Uhrzeit der ausgewählten Zeitzone anzupassen.
 

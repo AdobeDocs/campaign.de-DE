@@ -4,24 +4,34 @@ title: Erste Schritte mit Kampagnentypologien
 description: Erfahren Sie, wie Sie Kampagnentypologien konfigurieren und implementieren
 feature: Typology Rules
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
-TQID: https://experienceleague.adobe.com/Pxzz3-z8BorlEgP1gGwLK--l6hEAGZ-DQhGuxsLk6oU
+TQID: 'https://experienceleague.adobe.com/Pxzz3-z8BorlEgP1gGwLK--l6hEAGZ-DQhGuxsLk6oU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
+  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+    internal-label: Typology rules
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 488
-ht-degree: 86%
-
+source-wordcount: '488'
+ht-degree: 88%
 ---
-
 # Erste Schritte mit Kampagnentypologien{#about-campaign-typologies}
 
 **Campaign Optimization** ist das Adobe Campaign-Modul, mit dem Sie die Durchführung von Sendungen steuern, filtern und überwachen können. Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
@@ -30,7 +40,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->Je nach Angebot kann die Kampagnenoptimierung enthalten sein oder als Add-on hinzugefügt werden. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Abhängig von Ihrem Abonnement ist die Kampagnenoptimierung entweder im Lieferumfang enthalten oder als Add-on verfügbar. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 ## Typologieregeln und Typologien {#typology-rules}
 
@@ -90,11 +100,11 @@ Anwendungsbeispiele zu Drucktypologieregeln finden Sie auf [dieser Seite](pressu
 
 In diesem Video wird erläutert, wie die Ermüdungsverwaltung in Adobe Campaign mithilfe von Typologieregeln implementiert wird.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448340?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
 
 ### Einrichten der Ermüdungsverwaltung mithilfe vordefinierter Filter
 
 Die Ermüdungsverwaltung steuert die Häufigkeit und Anzahl von Nachrichten, um eine Überforderung der Empfänger zu vermeiden. Wenn Sie das Modul zur Kampagnenoptimierung nicht in Ihrer Kampagneninstanz haben, können Sie einen vordefinierten Filter konfigurieren, der die Zielpopulation nach der Anzahl der empfangenen Nachrichten filtert
 In diesem Video wird erläutert, wie Sie die Ermüdungsverwaltung in Adobe Campaign mithilfe von Filtern implementieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444609?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

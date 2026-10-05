@@ -6,21 +6,28 @@ feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: f4a329e3-70d2-43cd-a04a-0bbd5e3ca390
-TQID: https://experienceleague.adobe.com/qfSKBHeQUkAYJb-PSeTxYMxGp-WicmITitT9qh8tHBs
+TQID: 'https://experienceleague.adobe.com/qfSKBHeQUkAYJb-PSeTxYMxGp-WicmITitT9qh8tHBs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 538
-ht-degree: 86%
-
+source-wordcount: '538'
+ht-degree: 97%
 ---
-
 # Erstellen von personalisierten PDF-Dokumenten{#generating-personalized-pdf-documents}
 
 ## Über variable PDF-Dateien {#about-variable-pdf-documents}
@@ -49,7 +56,7 @@ Gehen Sie wie folgt vor, um eine dynamische Tabelle zu erzeugen:
 
 >[!IMPORTANT]
 >
->Version 8.9.3 enthält eine Aktualisierung der externen URL-Zulassungsliste. Stellen Sie sicher, dass die Domains, die für externe Bilder in Ihren Anlagen verwendet werden, zur genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden, damit Ressourcen ohne Unterbrechung weiter geladen werden. Verwenden Sie als Campaign-Admin das Control Panel, um URLs auf der Zulassungsliste hinzuzufügen und zu verwalten. Anweisungen finden [&#x200B; unter „Hinzufügen &#x200B;](https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
+>Version 8.9.3 enthält eine Aktualisierung der externen URL-Zulassungsliste. Stellen Sie sicher, dass die für externe Bilder in den Anhängen verwendeten Domains der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden, damit Ressourcen weiterhin ohne Unterbrechung geladen werden. Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste URLs hinzuzufügen und diese zu verwalten. Entsprechende Schritte finden Sie unter [Hinzufügen von URL-Berechtigungen](https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 Sie haben die Möglichkeit, ein Dokument mit Bildern zu personalisieren, deren URL in einem Feld des Empfängerprofils gespeichert ist.
 

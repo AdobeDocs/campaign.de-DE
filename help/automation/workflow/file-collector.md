@@ -6,29 +6,38 @@ feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 614becf7-4cbf-40f9-a1b1-06efa054bfd9
-TQID: https://experienceleague.adobe.com/7fxaGcRPnb0Q3FqBkIA4da9ksKnGDDZ4ALVTGdGsKq0
+TQID: 'https://experienceleague.adobe.com/7fxaGcRPnb0Q3FqBkIA4da9ksKnGDDZ4ALVTGdGsKq0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Data management
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 565
-ht-degree: 56%
-
+source-wordcount: '565'
+ht-degree: 100%
 ---
-
 # Datei-Wächter{#file-collector}
 
 
 
-Der **Datei-Wächter** überwacht das Eintreffen einer oder mehrerer Dateien in einem Verzeichnis und aktiviert für jede empfangene Datei deren Transition. Für jedes Ereignis enthält **[!UICONTROL Variable &quot;]**&quot; den vollständigen Namen der empfangenen Datei. Die gesammelten Dateien werden zu Archivierungszwecken in ein anderes Verzeichnis verschoben, um sicherzustellen, dass sie nur einmal gezählt werden.
+Der **Datei-Wächter** überwacht ein Verzeichnis und aktiviert die Transition der Aktivität bei jedem neuen Eingang von Dateien. Für jedes Ereignis ist der vollständige Name der empfangenen Datei in einer **[!UICONTROL filename]**-Variablen angegeben. Die erfassten Dateien werden zu Archivierungszwecken in ein anderes Verzeichnis verschoben, um sicherzustellen, dass sie nur einmal gezählt werden.
 
 Standardmäßig ist der Datei-Wächter eine persistente Aufgabe, die zu den in der Planung definierten Zeitpunkten das Verzeichnis auf das Vorhandensein von Dateien prüft.
 
-Die Dateien müssen sich auf dem Server befinden, auf dem das für diesen Workflow verantwortliche wfserver-Modul ausgeführt wird. Wenn mehrere wfserver-Module auf einer einzigen Instanz bereitgestellt werden, muss entweder die Affinität der Aktivitäten, die diese Dateien verwenden, oder die Gesamtaffinität des Workflows angegeben werden.
+Die Dateien müssen sich auf dem Server befinden, auf dem das wfserver-Modul des betreffenden Workflows ausgeführt wird. Wenn verschiedene wfserver-Module auf derselben Instanz bereitgestellt werden, muss entweder die Affinität der die Dateien verwendenden Aktivitäten oder die des Workflows angegeben werden.
 
 ## Eigenschaften {#properties}
 
@@ -40,11 +49,11 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
    * **[!UICONTROL Verzeichnis]**
 
-     Ordner, der die herunterzuladenden Dateien enthält. Dieses Verzeichnis muss zuvor auf dem Server erstellt werden: Wenn es nicht existiert, wird ein Fehler ausgelöst.
+     Ordner, der die herunterzuladende(n) Datei(en) enthält. Das Verzeichnis muss zuvor auf dem Server erstellt worden sein. Wenn es nicht existiert, wird ein Fehler ausgelöst.
 
    * **[!UICONTROL Filter]**
 
-     Nur Dateien, die diesem Filter entsprechen, werden berücksichtigt. Die anderen Dateien im Verzeichnis werden ignoriert. Wenn der Filter leer ist, werden alle Dateien im Verzeichnis berücksichtigt. Filterbeispiele: **&#42;.zip**, **import-&#42;.txt**.
+     Nur Dateien, die diesem Filter entsprechen, werden berücksichtigt. Die anderen Dateien im Verzeichnis werden ignoriert. Wenn kein Filter definiert wurde, werden alle im Verzeichnis enthaltenen Dateien berücksichtigt. Filterbeispiele: **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Stoppen, sobald eine Datei bearbeitet wurde]**
 
@@ -68,7 +77,7 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
    * **[!UICONTROL Fehler verarbeiten]**
 
-     Mit dieser Option wird ein spezieller Übergang angezeigt, der aktiviert wird, wenn ein Fehler erzeugt wird. In diesem Fall ändert sich der Workflow nicht in den Fehlerstatus und wird weiter ausgeführt
+     Mit dieser Option wird eine spezielle Transition angezeigt, die aktiviert wird, wenn ein Fehler generiert wird. In diesem Fall ändert sich der Workflow nicht in den Fehlerstatus und wird weiter ausgeführt.
 
      Dies gilt für Fehler des Dateisystems (Datei kann nicht verschoben werden, Zugriff auf das Verzeichnis nicht möglich usw.).
 

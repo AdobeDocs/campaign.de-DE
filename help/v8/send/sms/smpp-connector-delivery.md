@@ -5,23 +5,34 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
-TQID: https://experienceleague.adobe.com/5LR9seZA5eFVn-ZKkO27EtqCZu6-9tKL2eyxZtwNHiU
+TQID: 'https://experienceleague.adobe.com/5LR9seZA5eFVn-ZKkO27EtqCZu6-9tKL2eyxZtwNHiU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: '1291'
 ht-degree: 83%
-
 ---
-
 # Beschreibung des SMPP-Connectors {#smpp-connector-desc}
 
 ## Datenfluss des SMS-Connectors {#sms-data-flow}
@@ -43,10 +54,10 @@ Der SMPP-Connector versucht für jedes aktive SMPP-Konto, Verbindungen immer akt
 ### Datenfluss beim Senden der Nachrichten {#sms-data-flow-sending-msg}
 
 * Der SMS-Prozess wählt aktive Sendungen durch Scannen von nms:delivery aus. Ein Versand ist in folgenden Fällen aktiv:
-   * Sein Status besagt, dass Nachrichten gesendet werden können.
-   * Der Gültigkeitszeitraum ist nicht abgelaufen.
-   * Es handelt sich um einen tatsächlichen Versand (es handelt sich beispielsweise nicht um eine Vorlage, er wurde nicht gelöscht)
-   * Der SMPP-Connector konnte mindestens eine Verbindung für das externe Konto öffnen, das mit dem Versand verknüpft ist.
+  * Sein Status besagt, dass Nachrichten gesendet werden können.
+  * Der Gültigkeitszeitraum ist nicht abgelaufen.
+  * Es handelt sich um einen tatsächlichen Versand (es handelt sich beispielsweise nicht um eine Vorlage, er wurde nicht gelöscht)
+  * Der SMPP-Connector konnte mindestens eine Verbindung für das externe Konto öffnen, das mit dem Versand verknüpft ist.
 * Der SMS-Prozess lädt für jeden Versand Versandteile. Wenn der Versandteil teilweise gesendet wurde, prüft der SMS-Prozess, welche Nachrichten bereits gesendet wurden, indem er das Broadlog überprüft.
 * Der SMS-Prozess erweitert die Vorlage mit Personalisierungsdaten aus dem Versandteil.
 * Der SMPP-Connector generiert ein MT (SUBMIT_SM-PDU), der dem Inhalt und anderen Einstellungen entspricht.

@@ -6,22 +6,32 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
-TQID: https://experienceleague.adobe.com/CDfK2RCVNzKde8WiEBdkq8ZB2JlPSjnFmP3cr9Nyox0
+TQID: 'https://experienceleague.adobe.com/CDfK2RCVNzKde8WiEBdkq8ZB2JlPSjnFmP3cr9Nyox0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: ede6e1ec-9279-415e-b828-a09735018d48
+    internal-label: Direct mail
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 933
-ht-degree: 72%
-
+source-wordcount: '933'
+ht-degree: 88%
 ---
-
 # Erstellen von Briefpost-Sendungen
 
 Ein Briefpost-Versand erzeugt eine Extraktionsdatei, die die Daten der Zielpopulation enthält. Sie können diese Datei dann für den Provider freigeben, der Nachrichten an die Zielpopulationen sendet.
@@ -66,9 +76,9 @@ Weiterführende Informationen finden Sie in [diesem Abschnitt](../start/create-m
 
 Definieren Sie mithilfe des Extraktionsassistenten die Informationen (Spalten), die in die Ausgabedatei exportiert werden sollen.
 
-Der Name der Datei, die die extrahierten Daten enthält, wird im Feld **[!UICONTROL Datei]** definiert. Über die Schaltfläche rechts neben dem Feld können Sie Personalisierungsfelder verwenden, um den Dateinamen zu erstellen.
+Im Feld **[!UICONTROL Datei]** wird der Name der die extrahierten Daten enthaltenden Datei definiert. Die Schaltfläche rechts daneben ermöglicht die Verwendung von Personalisierungsfeldern zur Erstellung des Dateinamens.
 
-Standardmäßig wird die Extraktionsdatei erstellt und auf dem Server gespeichert. Sie können es auf Ihrem Computer speichern. Um dies zu tun, aktivieren Sie die Option **[!UICONTROL Nach dem Export erzeugte Datei herunterladen]**. In diesem Fall sind der Pfad zum lokalen Speicherverzeichnis und der Dateiname anzugeben.
+Standardmäßig wird die Extraktionsdatei erstellt und auf dem Server gespeichert. Sie können sie auf Ihrem Computer speichern. Um dies zu tun, aktivieren Sie die Option **[!UICONTROL Nach dem Export erzeugte Datei herunterladen]**. In diesem Fall sind der Pfad zum lokalen Speicherverzeichnis und der Dateiname anzugeben.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
@@ -80,11 +90,11 @@ Bei einem Briefpost-Versand wird der Extraktionsinhalt über den Link **[!UICONT
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weitere Informationen hierzu finden Sie in der Adobe Campaign Classic-[&#x200B; (Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html?lang=de){target="_blank"}.
+Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weitere Informationen hierzu finden Sie in der Adobe Campaign Classic-[ (Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"}.
 
 >[!NOTE]
 >
->Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [&#x200B; sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=de){target="_blank"}.
+>Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [ sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
 
 ## Versand validieren{#validating}
 
@@ -98,11 +108,11 @@ Die Ausgabedatei eines Briefpost-Versands wird während der Versandanalyse gener
 
 >[!NOTE]
 >
->Die Analysephase wird in diesem [&#x200B; beschrieben](delivery-analysis.md).
+>Die Analysephase wird in diesem [ beschrieben](delivery-analysis.md).
 
-Während der Analysephase wird die Datei zwar generiert, die Empfängerinformationen (d. h. die Versandlogs) werden jedoch nicht aktualisiert. Sie können diesen Vorgang daher ohne Risiko abbrechen.
+Während der Analysephase wird die Datei generiert, es werden aber keine Empfängerinformationen (z. B. Versandlogs) aktualisiert. Sie können diesen Auftrag daher ohne Risiko abbrechen.
 
-Überprüfen Sie das Ergebnis der Analyse und den Inhalt der Ausgabedatei, bevor Sie auf **[!UICONTROL Versand bestätigen]** klicken. Über eine Bestätigungsnachricht kann der Versand gestartet werden.
+Prüfen Sie jetzt das Ergebnis der Analyse und den Inhalt der Ausgabedatei und klicken Sie dann auf **[!UICONTROL Absendung bestätigen]**. Über eine Bestätigungsnachricht kann der Versand gestartet werden.
 
 Mit der Absendebestätigung wird die Extraktion der Daten in die angegebene Datei gestartet.
 
@@ -115,7 +125,7 @@ Sie können den Abrufmodus der Versandlogs auf der Registerkarte **[!UICONTROL A
 Dabei stehen zwei Modi zur Verfügung:
 
 * **[!UICONTROL Nachrichten werden nach Validierung als gesendet betrachtet]** (Standardmodus): In diesem Funktionsmodus werden alle Versandlogs aktualisiert, sobald der Benutzer den Versand bestätigt (ihr Status wechselt von &#39;Versand ausstehend&#39; zu &#39;Gesendet&#39;). Der Versand wechselt dann automatisch in den Status **[!UICONTROL Abgeschlossen]**.
-* **[!UICONTROL Eine Ergebnisdatei bestimmt die gesendeten und die fehlgeschlagenen Nachrichten]** : In diesem Modus können Sie die Broadlogs über eine externe Datei aktualisieren, die vom Dienstleister gesendet wird. In diesem Fall muss ein Workflow zur Verarbeitung dieser Informationen verwendet werden, um den Broadlog-Status zu aktualisieren.
+* **[!UICONTROL Eine Ergebnisdatei listet gesendete und fehlgeschlagene Nachrichten auf]**: Dieser Modus ermöglicht eine Aktualisierung der Broadlogs mittels einer externen Datei vom Dienstleister. In diesem Fall muss ein Workflow zur Verarbeitung dieser Informationen verwendet werden, um den Broadlog-Status zu aktualisieren.
 
   >[!NOTE]
   >

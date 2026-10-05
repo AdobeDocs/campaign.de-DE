@@ -5,23 +5,30 @@ description: Erfahren Sie mehr über die Unter-Workflow-Aktivität.
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: c530fb4e-d21e-4059-88e1-77a8d33a7832
-TQID: https://experienceleague.adobe.com/XS5rd13a3naqU6284JA3zTwHzZuNx1Efql-C-Ud-oV8
+TQID: 'https://experienceleague.adobe.com/XS5rd13a3naqU6284JA3zTwHzZuNx1Efql-C-Ud-oV8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 460
-ht-degree: 90%
-
+source-wordcount: '460'
+ht-degree: 100%
 ---
-
 # Unter-Workflow{#sub-workflow}
 
 
 
-Die Aktivität **[!UICONTROL Unter-Workflow]** ermöglicht den Trigger der Ausführung eines anderen Workflows und die Wiederherstellung des Ergebnisses. Diese Aktivität ermöglicht die Verwendung komplexer Workflows in einer vereinfachten Benutzeroberfläche.
+Mit der Aktivität **[!UICONTROL Unter-Workflow]** kann die Ausführung eines anderen Workflows ausgelöst und dessen Ergebnis abgerufen werden. Diese Aktivität ermöglicht die Verwendung komplexer Workflows in einer vereinfachten Benutzeroberfläche.
 
-Sie können in einem Workflow mehrere Unter-Workflows aufrufen. Unter-Workflows werden synchron ausgeführt.
+Sie können in einem einzigen Workflow mehrere Unter-Workflows aufrufen. Unter-Workflows werden synchron ausgeführt.
 
 Im folgenden Beispiel ruft ein primärer Workflow einen Unter-Workflow mithilfe von Sprüngen auf. Weiterführende Informationen zu grafischen Objekten vom Typ &quot;Sprung&quot; finden Sie in [diesem Abschnitt](jump-start-point-and-end-point.md).
 

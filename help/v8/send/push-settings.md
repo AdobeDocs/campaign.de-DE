@@ -6,28 +6,42 @@ role: Admin, Developer
 level: Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-TQID: https://experienceleague.adobe.com/haoxtaIu58t0Ko15csnTpoUi49JWsQaIKPAtWTNiRx8
+TQID: 'https://experienceleague.adobe.com/haoxtaIu58t0Ko15csnTpoUi49JWsQaIKPAtWTNiRx8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
+    internal-label: Data collection
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1985
-ht-degree: 97%
-
+source-wordcount: '1985'
+ht-degree: 99%
 ---
-
 # Konfigurieren des Push-Benachrichtigungskanals {#push-notification-configuration}
 
 Um Push-Benachrichtigungen mit Adobe Campaign zu senden, müssen Sie zunächst Ihre Umgebung und App wie auf dieser Seite beschrieben konfigurieren. In Adobe Campaign ist der Kanal zum Senden von Push-Benachrichtigungen der Mobile-App-Kanal.
@@ -226,7 +240,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
 1. Wählen Sie den **[!UICONTROL Authentifizierungsmodus]** aus. Zwei Modi sind verfügbar:
 
-   * (Empfohlen) **[!UICONTROL Token-basierte Authentifizierung]**: Füllen Sie die APNs-Verbindungseinstellungen **[!UICONTROL Schlüssel-ID]**, **[!UICONTROL Team-ID]** und **[!UICONTROL Paket-ID]** aus und wählen Sie dann Ihr p8-Zertifikat, indem Sie auf **[!UICONTROL Privaten Schlüssel eingeben…]** klicken. Weitere Informationen zur **[!UICONTROL Token-basierten Authentifizierung]** finden Sie in der [Dokumentation zu Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * (Empfohlen) **[!UICONTROL Token-basierte Authentifizierung]**: Füllen Sie die APN-Verbindungseinstellungen **[!UICONTROL Schlüssel-ID]**, **[!UICONTROL Team-ID]** und **[!UICONTROL Paket-ID]** aus und wählen Sie dann Ihr p8-Zertifikat, indem Sie auf **[!UICONTROL Privaten Schlüssel eingeben...]** klicken. Weitere Informationen zur **[!UICONTROL Token-basierten Authentifizierung]** finden Sie in der [Apple-Dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
    * **[!UICONTROL Zertifikatbasierte Authentifizierung]**: Klicken Sie auf **[!UICONTROL Zertifikat eingeben…]**. Wählen Sie dann Ihren p12-Schlüssel und geben Sie das Passwort ein, das der Entwickler bzw. die Entwicklerin der Mobile App bereitgestellt hat. Beachten Sie, dass dieses Zertifikat ein Ablaufdatum besitzt und jährlich erneuert werden muss. Um eine Unterbrechung des Diensts für Ihre Benutzenden zu vermeiden, müssen Sie Ihre Zertifikate aktualisieren, bevor sie ablaufen. Zertifikate sind ein Jahr lang gültig und müssen aktualisiert werden, um weiterhin mit APNs kommunizieren zu können.
 

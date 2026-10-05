@@ -6,22 +6,29 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
-TQID: https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8
+TQID: 'https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 722
-ht-degree: 88%
-
+source-wordcount: '722'
+ht-degree: 97%
 ---
-
 # Verwenden von Gestaltungsbausteinen{#personalization-blocks}
 
 Gestaltungsbausteine sind dynamische Inhalte, die ein spezifisches Rendering enthalten, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußnachricht oder einen Link zur Mirrorseite hinzufügen.
@@ -66,7 +73,7 @@ Integrierte Gestaltungsbausteine sind:
 
 >[!IMPORTANT]
 >
->Version 8.9.3 enthält eine Aktualisierung der externen URL-Zulassungsliste. Wenn ein benutzerdefinierter Gestaltungsbaustein auf eine externe URL verweist (z. B. auf ein extern gehostetes Bild), stellen Sie sicher, dass die Domain der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt wird, damit die Ressource ohne Unterbrechung weiter geladen wird. Verwenden Sie als Campaign-Admin das Control Panel, um URLs auf der Zulassungsliste hinzuzufügen und zu verwalten. Anweisungen finden [&#x200B; unter „Hinzufügen &#x200B;](https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
+>Version 8.9.3 enthält eine Aktualisierung der externen URL-Zulassungsliste. Wenn ein benutzerdefinierter Gestaltungsbaustein auf eine externe URL verweist (beispielsweise auf ein extern gehostetes Bild), stellen Sie sicher, dass die Domain der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt wird, damit die Ressource weiterhin ohne Unterbrechung geladen wird. Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste URLs hinzuzufügen und diese zu verwalten. Entsprechende Schritte finden Sie unter [Hinzufügen von URL-Berechtigungen](https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
 
 Über das Personalisierungssymbol können Sie neue, personalisierte Inhaltsbausteine definieren.
 
@@ -93,4 +100,4 @@ Nach der Speicherung ist der neue Gestaltungsbaustein im Versand-Editor verfügb
 
 Im folgenden Video erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449015?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

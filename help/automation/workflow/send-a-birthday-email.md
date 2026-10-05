@@ -5,18 +5,26 @@ description: Erfahren Sie, wie Sie mit einem Workflow eine Geburtstags-E-Mail se
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
-TQID: https://experienceleague.adobe.com/K6fvJssifUJoE7PYvXlHwmGU6oNQztCvCqAKUYNdomE
+TQID: 'https://experienceleague.adobe.com/K6fvJssifUJoE7PYvXlHwmGU6oNQztCvCqAKUYNdomE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Implementation
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 866
-ht-degree: 90%
-
+source-wordcount: '866'
+ht-degree: 100%
 ---
-
 # Senden einer Geburtstags-E-Mail{#sending-a-birthday-email}
 
 Im folgenden Anwendungsbeispiel wird aufgezeigt, wie sich der wiederkehrende Versand einer E-Mail an Empfänger zu deren Geburtstag planen lässt.
@@ -51,11 +59,11 @@ Gehen Sie hierzu wie folgt vor:
    ![](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Wählen Sie die Option **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
-1. Wählen Sie aus der Funktionsliste über den Knoten **[!UICONTROL Datum]** mit einem Doppelklick die Funktion **[!UICONTROL Day]** aus. Diese Funktion gibt die Zahl zurück, die den Tag darstellt, der dem als Parameter übergebenen Datum entspricht.
+1. Wählen Sie aus der Funktionsliste über den Knoten **[!UICONTROL Datum]** mit einem Doppelklick die Funktion **[!UICONTROL Day]** aus. Diese Funktion gibt die Zahl aus, die dem Tag des als Parameter übergebenen Datums entspricht.
 
    ![](assets/s_ncs_user_create_exp_exple01.png)
 
-1. Doppelklicken Sie in der Liste der verfügbaren Felder auf **[!UICONTROL Geburtsdatum]**. Im oberen Bereich des Editors wird dann die folgende Formel angezeigt:
+1. Doppelklicken Sie in der Liste der verfügbaren Felder auf **[!UICONTROL Geburtsdatum]**. Im oberen Abschnitt des Editors wird nun folgende Formel angezeigt:
 
    ```
    Day(@birthDate)
@@ -63,7 +71,7 @@ Gehen Sie hierzu wie folgt vor:
 
    Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
-1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]**&#x200B;**[!UICONTROL gleich aus]**.
+1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]****[!UICONTROL gleich aus]**.
 
    ![](assets/s_ncs_user_create_exp_exple02.png)
 
@@ -103,7 +111,7 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
 
 
-Wenn das aktuelle Jahr **kein Schaltjahr ist** und der Workflow am 1. März ausgeführt wird, müssen wir alle Empfänger auswählen, die gestern (29. Februar) Geburtstag gehabt hätten, und sie zur Empfängerliste hinzufügen. In allen anderen Fällen sind keine zusätzlichen Maßnahmen erforderlich.
+Sollte es sich bei dem laufenden Jahr **nicht um ein Schaltjahr handeln**, müssen bei der Workflow-Ausführung am 1. März auch die Empfangenden ausgewählt und der Empfängerliste hinzugefügt werden, deren Geburtstag am 29. Februar ist. In allen anderen Fällen sind keine zusätzlichen Maßnahmen erforderlich.
 
 ### &#x200B;1. Schritt: Wählen Sie die Empfänger aus {#step-1--selecting-the-recipients}
 

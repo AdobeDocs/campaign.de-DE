@@ -6,34 +6,54 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-TQID: https://experienceleague.adobe.com/sAapnzXcpGvhnYG3J70n9Tq51KZCmvFlxMW4EfYh6Ck
+TQID: 'https://experienceleague.adobe.com/sAapnzXcpGvhnYG3J70n9Tq51KZCmvFlxMW4EfYh6Ck'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
+    internal-label: Troubleshooting
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
+  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3496
+source-wordcount: '3496'
 ht-degree: 76%
-
 ---
-
 # Ursachen für das Fehlschlagen von Sendungen {#delivery-failures}
 
 Bounces sind das Ergebnis eines Versandversuchs und -fehlers, bei dem der ISP Fehlermeldungen zurückgibt. Die Bounce-Verarbeitung ist ein wichtiger Bestandteil der Listenhygiene. Nach mehrmaligen Bounces einer E-Mail wird sie von diesem Prozess markiert und unterdrückt.
@@ -137,7 +157,7 @@ Wenn der Gültigkeitszeitraum in Campaign beispielsweise auf den Standardwert vo
 
 Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht gesendet werden konnte, wird sie mit einem Timeout beendet, und ihr Status ändert sich von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** (in den Versandlogs).
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## E-Mail-Fehlertypen {#email-error-types}
@@ -704,7 +724,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 * Der dritte Teil der Fehlernachricht (in diesem Beispiel **DELIVRD**) entspricht dem Statuscode, der von der Empfangsbestätigung unter Verwendung des – im externen SMS-Konto definierten – regulären Ausdruck zur Statusextraktion abgerufen wurde.
 
   Dieser reguläre Ausdruck ist im Tab **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos spezifiziert.
-Standardmäßig erfolgt die Regex-Extraktion des **stat:**-Felds entsprechend der Definition im Bereich **Appendix B** der **SMPP 3.4-Spezifikation**.
+  Standardmäßig erfolgt die Regex-Extraktion des **stat:**-Felds entsprechend der Definition im Bereich **Appendix B** der **SMPP 3.4-Spezifikation**.
 
 * Der vierte Teil der Fehlernachricht (in diesem Beispiel **000**) entspricht dem Fehlercode, der von der Empfangsbestätigung unter Verwendung des im externen SMS-Konto definierten regulären Ausdrucks zur Fehlercode-Extraktion extrahiert wurde.
 
@@ -736,7 +756,7 @@ Error while compiling script 'content htmlContent' line X: `[table]` is not defi
 
 **Lösung**: Überprüfen Sie den Workflow und den Versandinhalt, um genau zu bestimmen, welche Personalisierung versucht, die betreffende Tabelle aufzurufen. Entfernen Sie dann entweder den Aufruf dieser Tabelle im HTML oder korrigieren Sie die Zuordnung zum Versand.
 
-Weitere Informationen zur Personalisierung finden [&#x200B; in diesem Abschnitt &#x200B;](personalize.md).
+Weitere Informationen zur Personalisierung finden [ in diesem Abschnitt ](personalize.md).
 
 ### Fehler bei mehreren Personalisierungswerten {#multiple-values-error}
 

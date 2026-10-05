@@ -6,25 +6,33 @@ feature: Workflows
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 21c42a36-9a50-49b8-8a07-b041ba8b2026
-TQID: https://experienceleague.adobe.com/CBO5ddwOwsFclqdXq-ahz6ZMg0fXVc4L8vIruKz17j4
+TQID: 'https://experienceleague.adobe.com/CBO5ddwOwsFclqdXq-ahz6ZMg0fXVc4L8vIruKz17j4'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 244
-ht-degree: 64%
-
+source-wordcount: '244'
+ht-degree: 100%
 ---
-
 # Laden (SOAP){#loading-soap}
 
 
 
 >[!CAUTION]
 >
->Die Aktivität **Laden (SOAP** ist nur verfügbar, wenn das Modul **FDA (Federated Data Access)** installiert ist. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Die Aktivität **Laden (SOAP)** erfordert die Installation des **FDA**-Moduls (Federated Data Access). Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Im Allgemeinen wird die Aktivität **Laden (SOAP)** ergänzend zur Aktivität **Laden (DBMS)** eingesetzt, für den Fall, dass der direkte Datenabruf aus einer externen Datenbank über den FDA nicht möglich ist.
 
@@ -36,9 +44,9 @@ Gehen Sie wie folgt vor:
 
    ![](assets/load_soap_002.png)
 
-1. Wählen Sie für ein XML-Beispiel eine Beispieldatei aus. Die Datei wird analysiert, um ein Ergebnisbeispiel zu erstellen.
+1. Wählen Sie für ein XML-Beispiel eine Beispieldatei aus. Die Datei wird analysiert, um ein Beispielergebnis zu erzeugen.
 
-   Geben Sie für eine WSDL die entsprechende Zugriffs-URL ein und generieren Sie dann den Code-Skelett. Der ausgewählte Service und Aufruf werden automatisch aktualisiert und angezeigt.
+   Geben Sie für eine WSDL die entsprechende Zugriffs-URL ein und generieren Sie dann das Code-Skelett. Der ausgewählte Dienst und Aufruf werden automatisch aktualisiert und angezeigt.
 
    ![](assets/soap_load_003.png)
 
@@ -52,7 +60,7 @@ Gehen Sie wie folgt vor:
 1. Geben Sie die erforderlichen Scripts in den entsprechenden Tabs ein:
 
    * **[!UICONTROL Initialisierung]**: Herstellung der SOAP-Verbindung.
-   * **[!UICONTROL Iteration]**: Führt den Aufruf des SOAP-Service aus. Die Rückgabe für diese Funktion muss ein XML-Objekt sein, das mit der Beschreibung des Beispiels oder der WSDL kompatibel ist.
+   * **[!UICONTROL Iteration]**: Aufruf des SOAP-Dienstes. Zurückgegeben werden muss ein XML-Objekt, das mit der Beispielbeschreibung oder der WSDL kompatibel ist.
 
      Der Code dieses Tabs wird von Adobe Campaign so lange in einer Schleife aufgerufen, bis ein Null-XML-Element zurückgegeben wird.
 

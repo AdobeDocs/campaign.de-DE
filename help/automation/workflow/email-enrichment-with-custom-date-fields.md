@@ -6,26 +6,35 @@ feature: Workflows
 role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
-TQID: https://experienceleague.adobe.com/Mgo8JMtAXLW86GgkEsoVTtMSfUUKPsp-G9lL0p9JBg8
+TQID: 'https://experienceleague.adobe.com/Mgo8JMtAXLW86GgkEsoVTtMSfUUKPsp-G9lL0p9JBg8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Developer
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 633
-ht-degree: 78%
-
+source-wordcount: '633'
+ht-degree: 100%
 ---
-
 # E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern{#email-enrichment-with-custom-date-fields}
 
 
 
-In diesem Beispiel möchten wir eine E-Mail mit benutzerdefinierten Datenfeldern an Empfängerinnen und Empfänger senden, die in diesem Monat Geburtstag feiern. Die E-Mail enthält einen Gutschein, der eine Woche vor und nach dem Geburtstag gültig ist.
+In diesem Beispiel möchten wir Empfangenden, die im aktuellen Monat Geburtstag haben, eine E-Mail mit benutzerdefinierten Datenfeldern senden. Die E-Mail enthält einen Coupon, der eine Woche vor und nach dem Geburtstag gültig ist.
 
-Wir müssen Empfänger aus einer Liste ansprechen, die diesen Monat ihren Geburtstag mit einer „Aufspaltung“-**[!UICONTROL feiern]**. Bei Verwendung der Aktivität **[!UICONTROL Anreicherung]** dient das benutzerdefinierte Datenfeld als Gültigkeitsdatum in der E-Mail für das Sonderangebot des Kunden.
+Wir müssen mit einer Aktivität **[!UICONTROL Aufspaltung]** Empfangende aus einer Liste ansprechen, die diesen Monat Geburtstag haben. Danach wird mit der Aktivität **[!UICONTROL Anreicherung]** das benutzerdefinierte Datenfeld zur Angabe des Gültigkeitsdatums in der Angebots-E-Mail verwendet.
 
 ![](assets/uc_enrichment.png)
 
@@ -90,7 +99,7 @@ Konfigurieren Sie anschließend die Aktivität **[!UICONTROL Anreicherung]**:
 
 1. Klicken Sie auf **[!UICONTROL OK]**. Ihre Anreicherung ist nun fertig.
 
-Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinzufügen. In diesem Fall haben wir einen E-Mail-Versand hinzugefügt, um Empfängern ein Sonderangebot mit Gültigkeitsdaten zu senden, die in diesem Monat Geburtstag feiern.
+Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinzufügen. In unserem Fall haben wir einen E-Mail-Versand hinzugefügt, mit dem Empfangende, die im aktuellen Monat Geburtstag haben, ein spezielles Angebot mit Gültigkeitsdaten erhalten.
 
 1. Fügen Sie die Aktivität **[!UICONTROL E-Mail-Versand]** per Drag &amp; Drop nach der Aktivität **[!UICONTROL Anreicherung]** ein.
 
@@ -108,7 +117,7 @@ Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinz
 Sie können jetzt Ihre E-Mail-Nachricht mit den benutzerdefinierten Feldern gestalten, die Sie in der Aktivität **[!UICONTROL Anreicherung]** erstellt haben.
 
 1. Doppelklicken Sie auf die Aktivität **[!UICONTROL E-Mail-Versand]**.
-1. Fügen Sie Ihre Target-Erweiterungen zu Ihrer E-Mail hinzu. Er sollte sich innerhalb des folgenden Ausdrucks befinden, um das Format Ihrer Gültigkeitsdaten zu konfigurieren:
+1. Fügen Sie Ihrer E-Mail die Zielgruppenerweiterungen zu hinzu. Diese sollten sich innerhalb des folgenden Ausdrucks befinden, damit Sie das Format der Gültigkeitsdaten konfigurieren können.
 
    ```
    <%=

@@ -6,20 +6,29 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 18e49a15-dbb5-42d6-9379-367e769f319a
-TQID: https://experienceleague.adobe.com/MvYtphJPgDXOp9-CR3rhTYNazED3seRZxt89W29PJlI
+TQID: 'https://experienceleague.adobe.com/MvYtphJPgDXOp9-CR3rhTYNazED3seRZxt89W29PJlI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3512
-ht-degree: 90%
-
+source-wordcount: '3512'
+ht-degree: 99%
 ---
-
 # Filterbedingungen definieren{#filter-conditions}
 
 Zur Erstellung Ihrer Abfrage müssen Sie die Filterbedingungen im Abfragetool auswählen. Die verfügbaren Funktionen und Anwendungsfälle werden auf dieser Seite beschrieben.
@@ -98,7 +107,7 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ist nicht wie</span> <br /> </td> 
-   <td> Ähnelt "<span class="uicontrol">Like</span> . Ermöglicht es nicht, den eingegebenen Wert wiederherzustellen. Auch in diesem Fall ist der Platzhalter <span class="uicontrol">%</span> zu verwenden.<br /> </td> 
+   <td> Ist ähnlich wie <span class="uicontrol">Ist wie</span>. Der eingegebene Wert kann nicht abgerufen werden. Auch in diesem Fall ist der Platzhalter <span class="uicontrol">%</span> zu verwenden.<br /> </td> 
    <td> <strong>Nachname (@lastName) ist nicht wie 'Schmi%t'</strong>. Hier werden die Empfängerinnen und Empfänger, deren Nachname „Schmi%t“ lautet, also etwa „Schmidt“ oder „Schmitt“, nicht zurückgegeben.<br /> </td> 
   </tr> 
   <tr> 
@@ -126,7 +135,7 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
 
 ## UND, ODER, AUSSER verwenden {#using-and--or--except}
 
-Für Abfragen mit mehreren Filterbedingungen müssen Sie Verknüpfungen zwischen den Bedingungen definieren. Es gibt drei mögliche Verknüpfungen:
+In Abfragen mit mehr als einer Bedingung müssen die Bedingungen miteinander verknüpft werden. Es gibt drei mögliche Verknüpfungen:
 
 * **[!UICONTROL Und]** - beide Filterbedingungen müssen erfüllt werden;
 * **[!UICONTROL Oder]** - mindestens eine der Filterbedingungen muss erfüllt werden;
@@ -170,7 +179,7 @@ Platzieren Sie den Cursor auf der Filterbedingung **[!UICONTROL Geschlecht (@gen
 
 ![](assets/query_editor_nveau_32.png)
 
-Die Bedingung **[!UICONTROL Geschlecht (@gender) ist gleich Mann]** wurde aus ihrer Klammer entfernt. Es hat sich auf die gleiche Ebene wie die „Stadt gleich London“ Bedingung. Die entsprechenden Bedingungen sind jetzt durch **[!UICONTROL Und]** verknüpft.
+Die Klammern um die Bedingung **[!UICONTROL Geschlecht (@gender) gleich Männlich]** wurden entfernt. Sie befindet sich nun auf der gleichen Ebene wie die Bedingung „Ort gleich Hamburg“. Die entsprechenden Bedingungen sind jetzt durch **[!UICONTROL Und]** verknüpft.
 
 ## Zu extrahierende Daten auswählen {#selecting-data-to-extract}
 
@@ -253,12 +262,12 @@ Relationen zu einer Tabelle oder zu Sammlungselementen:
  <tbody> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_51.png" /> </td> 
-   <td> Relationen zu einer bestimmten Tabelle. Diese fallen mit 1-1-Typenassoziationen zusammen. Ein Vorkommen der Quelltabelle kann nur mit einem Vorkommen der Zieltabelle übereinstimmen. Eine Empfängerin bzw. ein Empfänger kann beispielsweise höchstens einem Land zugeordnet werden.<br /> </td> 
+   <td> Relationen zu einer bestimmten Tabelle. Diese entsprechen 1:1-Zuordnungen. Ein Vorkommen in der Quelltabelle kann nur einem Vorkommen in der Zieltabelle entsprechen. Eine Empfängerin bzw. ein Empfänger kann beispielsweise höchstens einem Land zugeordnet werden.<br /> </td> 
    <td> Ordner, Zustand, Land usw. <br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
-   <td> Sammlungselement einer bestimmten Tabelle. Diese entsprechen 1-N-Verknüpfungen. Eine Quelltabellenentität kann mit mehreren Vorkommen der Zieltabelle übereinstimmen, aber eine Vorkommnis der Zieltabelle kann nur mit einer Vorkommnis der Quelltabelle übereinstimmen. Ein Empfänger kann z. B. für 'n' Newsletter angemeldet sein.<br /> </td> 
+   <td> Sammlungselement einer bestimmten Tabelle. Diese entsprechen 1:N-Zuordnungen. Ein Vorkommen in der Quelltabelle kann mehreren Vorkommen in der Zieltabelle entsprechen, aber ein Vorkommen in der Zieltabelle kann nur einem Vorkommen in der Quelltabelle entsprechen. Ein Empfänger kann z. B. für 'n' Newsletter angemeldet sein.<br /> </td> 
    <td> Abonnements, Listen, Ausschlusslogs usw.<br /> </td> 
   </tr> 
  </tbody> 
@@ -273,7 +282,7 @@ Relationen zu einer Tabelle oder zu Sammlungselementen:
 
 ## Berechnete Felder erstellen {#creating-calculated-fields}
 
-Fügen Sie bei Bedarf während der Datenformatierung eine Spalte hinzu. Ein berechnetes Feld fügt eine Spalte zum Datenvorschauabschnitt hinzu. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**.
+Fügen Sie bei Bedarf während der Datenformatierung eine Spalte hinzu. Ein berechnetes Feld fügt der Datenvorschau in Form eine zusätzliche Spalte hinzu. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**.
 
 ![](assets/query_editor_nveau_43.png)
 
@@ -287,13 +296,13 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
   ![](assets/query_editor_nveau_61.png)
 
-* **[!UICONTROL JavaScript-]**: Der Wert des berechneten Felds ist das Ergebnis einer JavaScript-Funktionsauswertung. Der zurückgegebene Wert kann eingegeben werden (Zahl, Datum usw.).
+* **[!UICONTROL JavaScript-Ausdruck]**: Der Wert des berechneten Felds ist das Ergebnis der Auswertung einer JavaScript-Funktion. Der zurückgegebene Wert kann typisiert werden (Zahl, Datum usw.).
 
   ![](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Aufzählungen]**: Dieser Feldtyp erlaubt die Verwendung/Umwandlung des Inhalts einer anderen Spalte.
 
-  Es ist möglich, den Quellwert einer Spalte zu verwenden und ihr einen Zielwert zu geben. Dieser Zielwert wird in der neuen Ausgabespalte angezeigt.
+  Sie können den Quellwert einer Spalte verwenden und ihm einen Zielwert zuordnen. Dieser Zielwert wird in der neuen Ausgabespalte angezeigt.
 
   Ein Beispiel zu berechneten **[!UICONTROL Aufzählungsfeldern]** können Sie [diesem Abschnitt](../../automation/workflow/adding-enumeration-type-calculated-field.md) entnehmen.
 
@@ -301,10 +310,10 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
   Ein berechnetes Feld vom Typ **[!UICONTROL Aufzählungen]** kann vier Bedingungen enthalten:
 
-   * **[!UICONTROL Quellwert beibehalten]** gibt den Quellwert unverändert als Zielwert aus.
-   * **[!UICONTROL Folgenden Wert benutzen]** ermöglicht die Eingabe eines Standard-Zielwerts für fehlende Quellwerte.
-   * **[!UICONTROL Warnhinweis erzeugen und fortfahren]** weist den Benutzer darauf hin, dass der Quellwert nicht verändert werden kann.
-   * **[!UICONTROL Fehler erzeugen und Zeile zurückweisen]** verhindert die Berechnung und den Export der Zeile.
+  * **[!UICONTROL Quellwert beibehalten]** gibt den Quellwert unverändert als Zielwert aus.
+  * **[!UICONTROL Folgenden Wert benutzen]** ermöglicht die Eingabe eines Standard-Zielwerts für fehlende Quellwerte.
+  * **[!UICONTROL Warnhinweis erzeugen und fortfahren]** weist den Benutzer darauf hin, dass der Quellwert nicht verändert werden kann.
+  * **[!UICONTROL Fehler erzeugen und Zeile zurückweisen]** verhindert die Berechnung und den Export der Zeile.
 
 Eine detaillierte Ansicht des hinzugefügten Felds erhalten Sie durch Klick auf die Lupe (**[!UICONTROL Details des berechneten Felds]**).
 
@@ -337,7 +346,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
 ![](assets/query_editor_nveau_05.png)
 
 1. **[!UICONTROL Einfaches Feld]**: führt zurück zum Fenster **[!UICONTROL Feldauswahl]**.
-1. **[!UICONTROL Aggregat (Prozess für eine Aggregatfunktion)]**. Im Folgenden finden Sie einige Beispiele für die Verwendung von Aggregaten:
+1. **[!UICONTROL Aggregat (Prozess mit einer Aggregatfunktion)]**. Hier folgen einige Beispiele zur Verwendung von Aggregaten:
 
    * **[!UICONTROL Zählung]**: ermöglicht die Zählung eines Primärschlüssels.
    * **[!UICONTROL Summe]**: berechnet beispielsweise die Gesamtheit aller Käufe eines Kunden.
@@ -345,13 +354,13 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
    * **[!UICONTROL Minimaler Wert]**: gibt beispielsweise die Kunden aus, die zuletzt ein Angebot angenommen haben.
    * **[!UICONTROL Durchschnitt]**. Mit dieser Funktion können Sie das durchschnittliche Alter der Empfänger und Empfängerinnen berechnen.
 
-     Mit **[!UICONTROL Feld &quot;]**&quot; können Sie eindeutige Werte und Werte, die nicht gleich null sind, einer Spalte wiederherstellen. Sie können beispielsweise alle Trackinglogs eines Empfängers abrufen. Diese Trackinglogs werden in den Wert „1“ geändert, da sie alle denselben Empfänger betreffen.
+     Mit dem Feld **[!UICONTROL Unterschiedlich]** können Sie in einer Spalte Werte wiederherstellen, die eindeutig und nicht gleich null sind. Auf diese Weise lassen sich z. B. alle Trackinglogs für eine empfangende Person abfragen und auf 1 setzen, da es sich jeweils um dieselbe Person handelt.
 
-1. **[!UICONTROL Ausdruck]** öffnet das Fenster **[!UICONTROL Ausdruck]**. Auf diese Weise können Sie Telefonnummern mit zu vielen Zahlen erkennen, bei denen es sich wahrscheinlich um Eingabefehler handelt.
+1. **[!UICONTROL Ausdruck]** öffnet das Fenster **[!UICONTROL Ausdruck bearbeiten]**. Damit können Sie Telefonnummern finden, die zu viele Ziffern enthalten, um eventuelle Eingabefehler zu korrigieren.
 
    ![](assets/query_editor_nveau_71.png)
 
-   Im Abschnitt [&#128279;](#list-of-functions)Funktionsliste finden Sie eine vollständige Liste aller Funktionen.
+   Im Abschnitt ](#list-of-functions)Funktionsliste[ finden Sie eine vollständige Liste aller Funktionen.
 
 ## Funktionsliste {#list-of-functions}
 
@@ -361,7 +370,7 @@ Der Ausdruckseditor gestaltet sich wie folgt:
 
 ![](assets/filter-define-expression.png)
 
-Damit können Sie Felder in den Datenbanktabellen auswählen und ihnen erweiterte Funktionen hinzufügen. Folgende Funktionen stehen zur Verfügung:
+Er ermöglicht es Ihnen, Felder in den Datenbanktabellen auszuwählen und ihnen erweiterte Funktionen hinzuzufügen. Folgende Funktionen stehen zur Verfügung:
 
 **Aggregate**
 

@@ -4,23 +4,31 @@ title: Konfigurieren von Kontrollregeln
 description: Erfahren Sie, wie Sie Kontrollregeln konfigurieren
 feature: Typology Rules
 exl-id: 79e442ea-f856-41bf-b065-25cb2ad2c65b
-TQID: https://experienceleague.adobe.com/xluD-4nygREOMWZyFT6OrenJvfvFVWTVf7i6-ZoYfTI
+TQID: 'https://experienceleague.adobe.com/xluD-4nygREOMWZyFT6OrenJvfvFVWTVf7i6-ZoYfTI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
+subfeature_v2:
+  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+    internal-label: Typology rules
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Optimization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 389
-ht-degree: 82%
-
+source-wordcount: '389'
+ht-degree: 100%
 ---
-
 # Kontrollregeln{#control-rules}
 
 Kontrollregeln dienen dazu, vor dem Versand die Gültigkeit und Qualität der Nachrichten (korrekte Anzeige aller Zeichen, SMS-Größe, Adressenformat etc.) sicherzustellen.
 
-Mit einer Reihe von vordefinierten Regeln können Sie die üblichen Prüfungen durchführen. Diese Prüfungen (in der Benutzeroberfläche fett gedruckt) sind:
+Mit einer Reihe von vordefinierten Regeln können Sie die üblichen Prüfungen durchführen. Diese Prüfungen (in der Benutzeroberfläche in fetter Schrift) sind folgende:
 
 * **[!UICONTROL Betreffvalidierung]** (E-Mail): stellt sicher, dass Betreff und Absenderadresse keine Sonderzeichen enthalten, die bei gewissen E-Mail-Programmen Probleme bereiten könnten.
 * **[!UICONTROL Validierung der URL-Titel]** (E-Mail): stellt sicher, dass jede Tracking-URL über einen Titel verfügt.
@@ -37,7 +45,7 @@ Sie können entsprechend Ihren Bedürfnissen neue Kontrollregeln hinzufügen. Er
 
 **Beispiel:**
 
-Im folgenden Beispiel wird eine Regel erstellt, um zu verhindern, dass ein SMS-Angebot an mehr als 100 Empfänger gesendet wird. Diese Regel wird mit einer Kampagnentypologie und dann mit den SMS-Sendungen verknüpft, für die das betreffende Angebot verfügbar ist.
+Im folgenden Beispiel wird eine Regel erstellt, die den Versand eines SMS-Angebots auf 100 Empfangende begrenzt. Diese Regel wird mit einer Kampagnentypologie verknüpft und anschließend mit den SMS-Sendungen, für die das entsprechende Angebot gilt.
 
 Gehen Sie wie folgt vor:
 

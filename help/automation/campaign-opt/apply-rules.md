@@ -4,22 +4,32 @@ title: Anwenden von Typologieregeln
 description: Hier erfahren Sie, wie Sie Typologieregeln anwenden
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-TQID: https://experienceleague.adobe.com/CqL2-BL-DuUY2-tMG4WD-ih3YJw0u3BuIkcL4HavFlg
+TQID: 'https://experienceleague.adobe.com/CqL2-BL-DuUY2-tMG4WD-ih3YJw0u3BuIkcL4HavFlg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
+subfeature_v2:
+  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+    internal-label: Typology rules
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1031
-ht-degree: 84%
-
+source-wordcount: '1031'
+ht-degree: 99%
 ---
-
 # Anwenden von Typologieregeln{#applying-rules}
 
 ## Anwenden von Typologien auf Sendungen {#apply-a-typology-to-a-delivery}
@@ -55,7 +65,7 @@ Typologieregeln können demnach so konfiguriert werden, dass sie nur bestimmte S
 
 Um die Anwendungskriterien einer Regel zu bestimmen, klicken Sie auf den Link **[!UICONTROL Anwendungskriterien der Regel bearbeiten]** im Tab **[!UICONTROL Allgemein]**.
 
-Verwenden Sie dann den [Abfrage-Editor](../../v8/start/query-editor.md), um Filterbedingungen zu definieren. Im folgenden Beispiel betrifft die Kapazitätsregel nur Sendungen, die das Wort „Angebot“ in ihrer Bezeichnung enthalten, oder Sendungen, die vor dem 1. April 2013 erstellt wurden.
+Verwenden Sie dann den [Abfrage-Editor](../../v8/start/query-editor.md), um Filterbedingungen zu definieren. Im folgenden Beispiel betrifft die Kapazitätsregel nur Sendungen, die den Begriff „Angebot“ im Titel enthalten, und solche, die vor dem 1. April 2013 erstellt wurden.
 
 ![](assets/campaign_opt_create_capacity_criterion.png)
 
@@ -65,7 +75,7 @@ Verwenden Sie dann den [Abfrage-Editor](../../v8/start/query-editor.md), um Filt
 
 ## Anpassen der Berechnungsfrequenz {#adjust-calculation-frequency}
 
-Schlichtungen werden jede Nacht automatisch über den Datenbankbereinigungs-Workflow erneut ausgeführt. Werte können jedoch über diesen Zeitraum hinaus gespeichert werden.
+Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Workflow neu ausgeführt. Werte können jedoch über diesen Zeitraum hinaus gespeichert werden.
 
 Einige Berechnungen verwenden nämlich Werte, die sich nicht täglich ändern. Es wäre daher überflüssig, die Daten täglich neu zu berechnen und die Datenbank unnötig zu überlasten. Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit der Tendenzauswertung und Kaufinformationen der Kundschaft anreichert, müssen die auf diesen Werten basierenden Daten nicht täglich neu berechnet werden.
 
@@ -100,7 +110,7 @@ Im Standard-Ausführungsmodus werden die Regeln in der folgenden Reihenfolge aus
 >
 >Wenn Sie das Modul &quot;Interaction&quot; nutzen, werden die Eignungsregeln gleichzeitig mit den Filterregeln (für Angebote in Versandentwürfen) oder während der Personalisierungsphase beim Aufruf des Angebotsmoduls angewendet.
 
-Sie können die Anwendungsreihenfolge von Regeln mit demselben Typ mithilfe des entsprechenden Felds auf der Registerkarte **[!UICONTROL Allgemein]** der Regel anpassen. Dies ist insbesondere interessant, wenn in der gleichen Verarbeitungsphase der Nachrichten mehrere Regeln zur Anwendung kommen.**&#x200B;**
+Sie können die Anwendungsreihenfolge von Regeln mit demselben Typ mithilfe des entsprechenden Felds auf der Registerkarte **[!UICONTROL Allgemein]** der Regel anpassen. Dies ist insbesondere interessant, wenn in der gleichen Verarbeitungsphase der Nachrichten mehrere Regeln zur Anwendung kommen.****
 
 Beispielsweise wird eine Druckregel mit einer Anwendungsreihenfolge von 20 vor einer Druckregel mit einem Wert von 30 ausgeführt.
 
@@ -124,7 +134,7 @@ Mögliche Werte:
 
 * **[!UICONTROL Zu Beginn der Personalisierung]**
 
-  Diese Phase muss ausgewählt werden, wenn die Steuerung die Validierung der Nachrichtenpersonalisierung betrifft. Die Nachrichtenpersonalisierung erfolgt während der Analysephase.
+  Diese Phase muss ausgewählt werden, wenn die Kontrolle die Validierung der Nachrichtenpersonalisierung betrifft. Die Nachrichtenpersonalisierung erfolgt während der Analysephase.
 
 * **[!UICONTROL Am Ende der Analyse]**
 
@@ -134,7 +144,7 @@ Mögliche Werte:
 
 ### Ausgehenden SMTP-Traffic steuern {#control-outgoing-smtp-traffic}
 
-Als Option können Sie das Feld **[!UICONTROL Verwalten von IP-Adressen]** verwenden, um Sendungen mit dem Versand-Server (MTA) in dieser Affinität zu verknüpfen. Damit können Sie die Zustellung von E-Mails auf bestimmte Geräte oder IP-Adressen begrenzen.
+Optional können Sie mit dem Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** Sendungen mit dem Versand-Server (MTA) verknüpfen, der die betreffende Affinität verwaltet. Damit können Sie die Zustellung von E-Mails auf bestimmte Geräte oder IP-Adressen begrenzen.
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 
@@ -148,7 +158,7 @@ Als Option können Sie das Feld **[!UICONTROL Verwalten von IP-Adressen]** verwe
 
 ### Kampagnenoptimierung und dezentrales Marketing {#campaign-optimization-and-distributed-marketing}
 
-Auf **[!UICONTROL Registerkarte]** Verteiltes Marketing“ können Sie die Neuzuordnung von Typologien und/oder Regeln definieren, die bei der Bestellung und/oder Reservierung einer freigegebenen Kampagne angewendet werden. Typologien/Regeln, die für eine Lokalstelle definiert wurden (und mit denen verknüpft sind, die für die Zentralstelle definiert wurden), ersetzen Regeln/Typologien, die mit der Zentralstelle verknüpft sind. Durch die Neuzuordnung können Sie die Regeln der zentralen Entitäten an die Lokalstellen anpassen, die die Kampagne bestellen.
+In der Registerkarte **[!UICONTROL Dezentrales Marketing]** können Sie die Neuzuordnung von Typologien und/oder Regeln definieren, die bei der Bestellung und/oder Reservierung einer freigegebenen Kampagne angewendet werden. Typologien/Regeln, die für eine Lokalstelle definiert wurden (und mit denen verknüpft sind, die für die Zentralstelle definiert wurden), ersetzen Regeln/Typologien, die mit der Zentralstelle verknüpft sind. Durch die Neuzuordnung können Sie die Regeln der Zentralstelle an die Lokalstellen anpassen, die die Kampagne bestellen.
 
 ![](assets/simu_campaign_opti_distrib_mkg.png)
 

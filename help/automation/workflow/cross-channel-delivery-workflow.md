@@ -6,23 +6,34 @@ feature: Workflows, Channels Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
-TQID: https://experienceleague.adobe.com/pZMIH1ybEjeTJjrkSWK9Rch79y9MDFqK0Tjzl3g7hnQ
+TQID: 'https://experienceleague.adobe.com/pZMIH1ybEjeTJjrkSWK9Rch79y9MDFqK0Tjzl3g7hnQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: bce277d1-7efa-48d8-9a1b-b588bb45ba1c
+    internal-label: Channels Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Implementation
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 691
-ht-degree: 91%
-
+source-wordcount: '691'
+ht-degree: 100%
 ---
-
 # Workflow für einen kanalübergreifenden Versand{#cross-channel-delivery-workflow}
 
-Dieses Anwendungsbeispiel zeigt einen Workflow für einen kanalübergreifenden Versand. Das allgemeine Konzept von kanalübergreifenden Sendungen wird in [diesem Abschnitt) &#x200B;](cross-channel-deliveries.md).
+In diesem Anwendungsfall wird ein Beispiel eines Workflows eines Cross-Channel-Versands beschrieben. Das allgemeine Konzept von Cross-Channel-Sendungen wird in [diesem Abschnitt](cross-channel-deliveries.md) erläutert.
 
 Das Ziel besteht darin, aus den Empfängern der Datenbank eine Zielgruppe auszuwählen und diese in gesonderte Gruppen zu unterteilen, um der einen Gruppe eine E-Mail und der anderen Gruppe eine SMS zukommen zu lassen.
 
@@ -44,8 +55,8 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
 1. Kampagne erstellen. Weitere Informationen finden Sie auf [dieser Seite](../campaigns/marketing-campaign-create.md).
 1. Fügen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](query.md).
-1. Definieren Sie die Empfänger, die Ihre Sendungen erhalten sollen. Wählen Sie beispielsweise „Gold“-Elemente als Zieldimension aus.
-1. Fügen Sie Ihrer Abfrage Filterbedingungen hinzu. Wählen Sie in diesem Beispiel Empfänger mit einer E-Mail-Adresse und einer Mobiltelefonnummer aus.
+1. Definieren Sie die Empfängerinnen und Empfänger, die Ihre Sendungen erhalten sollen. Wählen Sie beispielsweise „Gold“-Mitglieder als Zieldimension aus.
+1. Fügen Sie Ihrer Abfrage Filterbedingungen hinzu. Wählen Sie in diesem Beispiel Empfängerinnen und Empfänger aus, die über eine E-Mail-Adresse und eine Mobiltelefonnummer verfügen.
 
    ![](assets/wkf_cross-channel_3.png)
 

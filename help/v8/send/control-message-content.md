@@ -6,13 +6,22 @@ feature: Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 76%
-
+ht-degree: 97%
 ---
-
 # Steuern der Nachrichteninhalte{#control-message-content}
 
 Um sicherzustellen, dass Ihre E-Mails Ihre Empfänger erreichen und um Ihre E-Mail-Zustellrate zu verbessern, müssen sie eine Reihe von Regeln beachten. Andernfalls kann der Inhalt bestimmter Nachrichten als Spam eingestuft werden. Adobe Campaign stellt Ihnen mehrere Tools zur Verfügung, die Ihnen ermöglichen, Ihre Inhalte entsprechend diesen Regeln zu erstellen.
@@ -22,7 +31,7 @@ Befolgen Sie beim Entwerfen Ihrer Nachrichteninhalte die folgenden Grundsätze:
 * [Absenderadresse](#sender-address): Die Adresse muss den Absender explizit identifizieren. Die Domain muss im Besitz des Absenders und auf ihn registriert sein. Die Domain-Registrierung darf nicht privat erfolgen.
 * [Personalisierung](#personalization): Die Personalisierung von Inhalten und das Definieren einer Sendezeit pro Empfänger erhöhen die Wahrscheinlichkeit, dass Ihre Nachricht geöffnet wird.
 * Bilder und Text: Achten Sie auf ein angemessenes Verhältnis zwischen Text und Bildern (z. B. 60 % Text und 40 % Bilder).
-* [Abmelde-Link](#opt-out) und -Landingpage: Der Abmelde-Link ist unverzichtbar. Er muss gut sichtbar und gültig sein und das Formular muss funktionieren.
+* [Abmeldelink](#opt-out) und Landingpage: Der Abmeldelink muss vorhanden sein. Er muss gut sichtbar und gültig sein und das Formular muss funktionieren.
 * Vorschau: Verwenden Sie die von Adobe Campaign angebotenen Tools, um den Inhalt Ihrer E-Mails zu überprüfen und zu optimieren ([Inbox Rendering](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
 Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=de){target="_blank"}.
@@ -33,9 +42,9 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 ## Absenderadresse {#sender-address}
 
-Bestimmte ISPs überprüfen die Gültigkeit der Absenderadresse (**[!UICONTROL From]**), bevor sie Nachrichten akzeptieren. Eine schlecht formulierte Adresse könnte vom Empfangs-Server abgelehnt werden.
+Bestimmte ISPs überprüfen die Gültigkeit der Absenderadresse (**[!UICONTROL Von]**), bevor sie Nachrichten annehmen. Eine schlecht formulierte Adresse könnte vom Empfangs-Server abgelehnt werden.
 
-Sie müssen sicherstellen, dass auf Instanzebene eine korrekte Adresse angegeben wird (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungsassistent…]**) oder in den am häufigsten verwendeten Szenarien.
+Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungsassistent…]**) oder in den am häufigsten verwendeten Szenarien eine korrekte Adresse angegeben ist.
 
 Weitere Informationen zur Bestimmung der Absenderadresse finden Sie auf dieser [Seite](defining-the-email-content.md#sender).
 
@@ -55,7 +64,7 @@ Sie müssen vor jedem Versand überprüfen, ob der Abmelde-Link korrekt funktion
 
 Wenn ein Abmeldeproblem erkannt wird, nachdem der Versand bereits begonnen hat, können Sie diejenigen, die auf den Ausschluss-Link klicken, manuell abmelden (z. B. über die gebündelte Aktualisierung), selbst wenn sie ihre Auswahl nicht bestätigen konnten.
 
-Generell sollten Sie nicht versuchen, Empfängerinnen und Empfängern, die sich abmelden möchten, in die Quere zu kommen, indem Sie von ihnen verlangen, Felder wie beispielsweise ihre E-Mail-Adresse oder ihren Namen auszufüllen. Das Formular sollte nur über eine einzige Validierungsschaltfläche verfügen und die Abstimmung sollte nur mit der verschlüsselten Kennung durchgeführt werden.
+In der Regel sollten Sie Empfängerinnen und Empfängern, die sich abmelden möchten, dies nicht erschweren, indem Sie sie etwa dazu verpflichten, Felder wie ihre E-Mail-Adresse oder ihren Namen auszufüllen. Das Formular sollte nur über eine einzige Validierungsschaltfläche verfügen und die Abstimmung sollte nur mit der verschlüsselten Kennung durchgeführt werden.
 
 Das Anfordern einer zusätzlichen Bestätigung ist keine zuverlässige Methode: Ein Benutzer kann zwei E-Mail-Adressen in dasselbe Postfach umgeleitet haben (z. B. Vorname.Nachname@club.com und Vorname.Nachname@internet-club.com). Wenn sich der Empfänger nur an die erste Adresse erinnert und sich über eine an die andere Adresse gesendete Nachricht abmelden möchte, würde das Formular dies ablehnen, da die verschlüsselte Kennung und die eingegebene E-Mail-Adresse nicht übereinstimmen.
 
@@ -69,8 +78,8 @@ Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](inb
 
 ## SpamAssassin {#spamassassin}
 
-Adobe Campaign kann so konfiguriert werden, dass es mit SpamAssassin funktioniert. Auf diese Weise können E-Mails bewertet werden, um festzustellen, ob eine Nachricht von den Anti-Spam-Tools, die beim Empfang verwendet werden, möglicherweise als Spam eingestuft wird.
+Adobe Campaign kann für die Nutzung von SpamAssassin konfiguriert werden. Dies ermöglicht die Bewertung von E-Mails zur Bestimmung, ob für eine Nachricht das Risiko besteht, bei Empfang von Anti-Spam-Tools als Spam eingeordnet zu werden.
 
-Vor Beginn eines Versands können Sie auf **[!UICONTROL Registerkarte]** Vorschau“ die Risiken bewerten. Eine Warnmeldung gibt das Ergebnis des Tests aus.
+Die Risiken können vor Versandstart in der Registerkarte **[!UICONTROL Vorschau]** evaluiert werden. Eine Warnmeldung gibt Auskunft über das Ergebnis des Tests.
 
 Weitere Informationen finden Sie in diesem [Abschnitt](spamassassin.md).

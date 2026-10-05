@@ -6,16 +6,27 @@ feature: Email, Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 54%
-
+ht-degree: 92%
 ---
-
 # SpamAssassin{#spamassassin}
 
-Adobe Campaign kann für die Verwendung mit [SpamAssassin](https://spamassassin.apache.org){target="_blank"} konfiguriert werden, einem Drittanbieterdienst, der zum Filtern von E-Mail-Spam verwendet wird. Auf diese Weise können Sie E-Mails bewerten, um festzustellen, ob bei einer Nachricht das Risiko besteht, dass sie von den Anti-Spam-Tools, die beim Empfang verwendet werden, als Spam eingestuft wird.
+Adobe Campaign kann für die Verwendung mit [SpamAssassin](https://spamassassin.apache.org){target="_blank"} konfiguriert werden, einem Drittanbieterdienst zum Filtern von E-Mail-Spam. Damit können Sie bei E-Mails bewerten, ob für eine Nachricht das Risiko besteht, dass sie von Anti-Spam-Tools der Empfangenden als Spam eingestuft wird.
 
 SpamAssassin nutzt eine Vielzahl von Spam-Erkennungs-Methoden, darunter:
 
@@ -47,7 +58,7 @@ Weiterführende Informationen zum Erstellen und Entwerfen eines Versands finden 
    >
    >Wenn Sie keinen Empfänger auswählen, kann die Anti-Spam-Prüfung nicht durchgeführt werden.
 
-1. Eine Warnmeldung gibt das Ergebnis des Tests aus. Wenn ein hohes Risiko festgestellt wird, wird die folgende Warnmeldung angezeigt:
+1. Eine Warnmeldung gibt Auskunft über das Ergebnis des Tests. Wenn ein hohes Risiko erkannt wird, wird die folgende Warnmeldung angezeigt:
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
@@ -59,4 +70,4 @@ Weiterführende Informationen zum Erstellen und Entwerfen eines Versands finden 
 
 >[!NOTE]
 >
->Jedes Mal, wenn Sie auf **[!UICONTROL Anti-Spam-Überprüfung]** klicken, wird der SpamAssassin-Dienst aufgerufen und die Nachricht wird erneut auf Anti-Spam-Erkennung analysiert. Stellen Sie sicher, dass Sie Ihren Inhalt geändert haben, bevor Sie die Anti-Spam-Analyse erneut ausführen.
+>Jedes Mal, wenn Sie **[!UICONTROL Anti-Spam-Prüfung]** auswählen, wird der SpamAssassin-Dienst aufgerufen und die Nachricht wird erneut analysiert. Stellen Sie sicher, dass Sie Ihren Inhalt geändert haben, bevor Sie die Anti-Spam-Analyse erneut ausführen.
