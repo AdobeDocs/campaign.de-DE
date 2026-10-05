@@ -162,7 +162,7 @@ Adobe überwacht rund um die Uhr alle wichtigen Netzwerkgeräte im Campaign-Netz
 >
 >Einige von Adobe durchgeführte Überwachungsaktionen werden in den Kampagnenprotokollen unter dem Benutzer **campaign-loginMonitor** angezeigt.
 
-Zusätzlich zur internen Überwachung von Adobe können Sie direkt über die Campaign-Client-Konsole oder das [Campaign Control Panel“ auf ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service) Überwachungsfunktionen zugreifen. Mit dem Control Panel können Sie Echtzeitwarnungen zu Ihren Instanzen abonnieren und empfohlene Schritte zur Behebung identifizierter Vorfälle erhalten (z. B. SSL-Zertifikate, die bald ablaufen).
+Zusätzlich zur internen Überwachung von Adobe können Sie direkt über die Campaign-Client-Konsole oder das [Campaign Control Panel“ auf &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service) Überwachungsfunktionen zugreifen. Mit dem Control Panel können Sie Echtzeitwarnungen zu Ihren Instanzen abonnieren und empfohlene Schritte zur Behebung identifizierter Vorfälle erhalten (z. B. SSL-Zertifikate, die bald ablaufen).
 
 **Überwachen der Taxonomie**
 
