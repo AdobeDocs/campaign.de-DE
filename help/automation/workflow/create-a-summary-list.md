@@ -6,23 +6,32 @@ feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
-TQID: https://experienceleague.adobe.com/-pe9wOpEgZGYZg-mC5EBSQ6sH-pxsLC1HvUEnVxVBPM
+TQID: 'https://experienceleague.adobe.com/-pe9wOpEgZGYZg-mC5EBSQ6sH-pxsLC1HvUEnVxVBPM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Data management
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1061
-ht-degree: 89%
-
+source-wordcount: '1061'
+ht-degree: 100%
 ---
-
 # Erstellen einer zusammenfassenden Liste{#creating-a-summary-list}
 
-In diesem Anwendungsbeispiel wird die Erstellung eines Workflows beschrieben, mit dem Sie nach dem Erfassen von Dateien und mehreren Anreicherungen eine zusammenfassende Liste erstellen können. Das Beispiel basiert auf einer Liste von Kontakten, die in einem Geschäft Einkäufe getätigt haben.
+Das folgende Anwendungsbeispiel erläutert die Erstellung eines Workflows zum Abruf und zur Anreicherung von Dateien mit dem Ziel, eine zusammenfassende Liste zu erstellen. Das Beispiel basiert auf einer Liste von Kontakten, die in einem Geschäft Einkäufe getätigt haben.
 
 ![](assets/uc2_enrich_overview.png)
 
@@ -119,7 +128,7 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die Tabelle „Käufe“ geschrieben werden. Dafür müssen wir eine Aktivität vom Typ **Daten-Update** verwenden.
 
-Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.**&#x200B;**
+Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.****
 
 1. Gehen Sie in den Tab **[!UICONTROL Abstimmung]** der Anreicherung.
 1. Wählen Sie die Zielgruppendimension, im vorliegenden Beispiel also das Schema &#39;Verkauf&#39;, aus.
@@ -140,7 +149,7 @@ Konfigurieren Sie die **Datenaktualisierung**-Aktivität wie folgt:
 
 ## Schritt 3: Anreicherung der &quot;Kontakt&quot;-Daten {#step-3--enriching--contact--data-}
 
-Das Schema „Kontakte“ ist physisch mit dem Schema „Bestellungen“ verknüpft. Dies bedeutet, dass Sie eine andere Option der Option „Anreicherung“ verwenden können: Hinzufügen von Daten, die mit der Filterdimension verknüpft sind.
+Das Schema „Kontakte“ ist physisch mit dem Schema „Käufe“ verknüpft. Dies ermöglicht die Verwendung einer weiteren Option der Anreicherungsaktivität, nämlich das Hinzufügen von mit der Filterdimension verbundenen Daten.
 
 Ziel dieser zweiten Anreicherung ist es, ein Aggregat von Verkaufsdaten zu erstellen, um den Gesamtumsatz pro identifiziertem Kontakt zu berechnen.
 
@@ -176,9 +185,9 @@ Für die zusammenfassende Liste werden Felder aus dem Verkaufsschema und aus der
 
 Im letzten Schritt werden die angereicherten Daten in eine Liste geschrieben.
 
-1. Fügen Sie **Workflow die Aktivität** Listen-Update“ hinzu. Diese Aktivität muss mit der ausgehenden Transition der zweiten Anreicherungsaktivität verknüpft sein.
+1. Fügen Sie dem Workflow eine Aktivität **Liste aktualisieren** hinzu. Diese Aktivität muss mit der ausgehenden Transition der zweiten Anreicherungsaktivität verknüpft werden.
 1. Aktivieren Sie die Option **[!UICONTROL Wenn nötig Liste erstellen (Titel berechnet)]**.
-1. Wählen Sie einen Wert für den berechneten Namen. Für die Liste wurde das aktuelle Datum ausgewählt: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y„) %>.
+1. Wählen Sie einen Wert für den berechneten Namen aus. Im vorliegenden Beispiel wird das aktuelle Datum als Titel für die Liste verwendet: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y&quot;) %>.
 
 Nach Ausführung des Workflows enthält die Liste folgende Informationen:
 

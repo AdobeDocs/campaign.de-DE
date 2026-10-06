@@ -5,22 +5,34 @@ feature: Salesforce Integration, Microsoft CRM Integration
 role: Admin
 level: Beginner
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
-TQID: https://experienceleague.adobe.com/VhceB0hYF1J8cXouqmY3wgqYLkmVoBRFBVaIwa1VNr8
+TQID: 'https://experienceleague.adobe.com/VhceB0hYF1J8cXouqmY3wgqYLkmVoBRFBVaIwa1VNr8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: f09afca2-2160-4624-bedb-639c4f4c236f
+    internal-label: Salesforce integration
+  - id: dd99420f-367d-4a14-bbc4-5140615992c2
+    internal-label: Microsoft CRM integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1410
-ht-degree: 88%
-
+source-wordcount: '1410'
+ht-degree: 100%
 ---
-
 # Daten zwischen Campaign und Ihrem CRM-System synchronisieren {#data-synchronization}
 
 Die Datensynchronisation zwischen Adobe Campaign und Ihrem CRM wird von der Workflow-Aktivität **CRM-Connector** verwaltet.
@@ -48,7 +60,7 @@ Wählen Sie zunächst das externe Konto aus, das dem CRM-System entspricht, mit 
 
 ![](assets/crm-remote-obj.png)
 
-Die Konfiguration dieser Aktivität hängt von dem auszuführenden Prozess ab. Die verschiedenen Konfigurationen werden im Folgenden beschrieben.
+Die Konfiguration dieser Aktivität hängt von dem auszuführenden Prozess ab. Die verschiedenen Konfigurationen werden nachfolgend beschrieben.
 
 ## Import aus dem CRM {#importing-from-the-crm}
 
@@ -66,7 +78,7 @@ Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muste
 
    >[!CAUTION]
    >
-   >Die Kennung des CRM-Datensatzes ist für die Verknüpfung von Objekten im CRM und in Adobe Campaign obligatorisch. Es wird automatisch hinzugefügt, wenn das Feld genehmigt wird.
+   >Die Kennung des Eintrags in CRM ist notwendig für das Verknüpfen von Objekten in CRM und in Adobe Campaign. Sie wird automatisch hinzugefügt, wenn das Feld validiert wird.
    >
    >Außerdem ist das Datum der letzten CRM-seitigen Änderung erforderlich, um einen inkrementellen Datenimport zu ermöglichen.
 
@@ -78,7 +90,7 @@ Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muste
 
    >[!CAUTION]
    >
-   >Einschränkungen in Bezug auf Datenfiltermodi werden in [&#x200B; diesem Abschnitt](#filtering-data) beschrieben.
+   >Einschränkungen in Bezug auf Datenfiltermodi werden in [ diesem Abschnitt](#filtering-data) beschrieben.
 
 1. Wählen Sie die Option **[!UICONTROL Automatischen Index verwenden...]** aus, um die inkrementelle Synchronisation der Objekte zwischen dem CRM-System und Adobe Campaign in Abhängigkeit vom letzten Änderungsdatum automatisch zu verwalten.
 
@@ -107,7 +119,7 @@ Unten stehende Felder kommen (in der angegebenen Reihenfolge) zur Anwendung:
 * Bei Microsoft Dynamics: **modifiedon**,
 * Bei Salesforce.com: **LastModifiedDate**, **SystemModstamp**.
 
-Durch Aktivieren der Option **[!UICONTROL Automatischer Index]** werden drei Variablen generiert, die im Synchronisations-Workflow über eine Aktivität vom Typ **[!UICONTROL JavaScript-]** verwendet werden können. Diese Aktivitäten sind:
+Durch die Aktivierung der Option **[!UICONTROL Automatischer Index]** werden drei Variablen generiert, die im Synchronisierungs-Workflow über eine Aktivität des Typs **[!UICONTROL JavaScript-Code]** verwendet werden können. Diese Aktivitäten sind:
 
 * **vars.crmOptionName**: Name der Option, die das Datum des letzten Imports enthält.
 * **vars.crmStartImport**: Startdatum (einschließlich) des letzten Datenimports.
@@ -123,10 +135,10 @@ Um eine effiziente Funktionsweise mit den diversen CRM-Systemen sicherzustellen,
 
 * Jedes Filterniveau darf nur einen Operatortyp verwenden.
 * Der AND-NOT-Operator wird nicht unterstützt.
-* Vergleiche dürfen nur Nullwerte (&#39;is empty&#39;/&#39;is not empty&#39; type) oder Zahlen betreffen. Das bedeutet, dass der Wert (rechte Spalte) bewertet wird und das Ergebnis dieser Bewertung eine Zahl sein muss. Vergleiche von JOIN-Typen werden daher nicht unterstützt.
+* Vergleiche dürfen nur Null-Werte (des Typs „ist leer“/„ist nicht leer“) oder Zahlen betreffen. Das bedeutet, dass der Wert (rechte Spalte) bewertet wird und das Ergebnis dieser Bewertung eine Zahl sein muss. Vergleiche vom Typ „JOIN“ werden also nicht unterstützt.
 * Der in der rechten Spalte angegebene Wert wird in JavaScript ausgewertet.
 * Vergleiche vom Typ JOIN werden nicht unterstützt.
-* Der Ausdruck in der linken Spalte muss ein -Feld sein. Es kann sich nicht um eine Kombination aus mehreren Ausdrücken, einer Zahl usw. handeln.
+* Der Ausdruck in der linken Spalte muss ein Feld sein. Er darf keine Kombination aus mehreren Ausdrücken, eine Zahl usw. sein.
 
 ### Sortierreihenfolge {#order-by}
 
@@ -191,7 +203,7 @@ Wählen Sie hierzu in der entsprechenden Spalte die anzuwendende Konvertierung a
 
 ![](assets/crm-task-import.png)
 
-Der **[!UICONTROL Standard]**-Modus wendet die automatische Datenkonvertierung an, die in den meisten Fällen einer Kopie/Einfügung der Daten entspricht. Die Zeitzonenverwaltung wird jedoch angewendet.
+Im Modus **[!UICONTROL Standard]** wird eine automatische Datenkonvertierung durchgeführt, die in den meisten Fällen einem Kopieren und Einfügen der Daten entspricht. Die Zeitzonenverwaltung wird jedoch angewendet.
 
 Darüber hinaus sind folgende Konvertierungen möglich:
 

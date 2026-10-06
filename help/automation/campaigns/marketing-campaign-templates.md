@@ -6,20 +6,25 @@ feature: Campaigns, Templates
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-TQID: https://experienceleague.adobe.com/qmz-Sd1EJmACFfgozVirCHCaeiQN-lGKuxd9-VAPMHs
+TQID: 'https://experienceleague.adobe.com/qmz-Sd1EJmACFfgozVirCHCaeiQN-lGKuxd9-VAPMHs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: baf8e746-117b-5e73-b179-0a83edc0295f
+    internal-label: Templates
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1029
-ht-degree: 79%
-
+source-wordcount: '1029'
+ht-degree: 96%
 ---
-
 # Erstellen und Konfigurieren von Kampagnenvorlagen {#campaign-templates}
 
 Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Hauptmerkmale und -funktionen gespeichert sind. Campaign verfügt über eine integrierte Vorlage zum Erstellen von Kampagnen. Für diese Vorlage sind alle Funktionen aktiviert: Dokumente, Testadressen, Validierungen, Versandentwürfe usw.
@@ -69,7 +74,7 @@ Die unterschiedlichen Registerkarten und Unterregisterkarten der Kampagnenvorlag
 
 Wenn keine Funktion ausgewählt ist, werden die den Prozess betreffenden Elemente (Menüs, Symbole, Optionen, Registerkarten, Unterregisterkarten usw.) nicht in der Benutzeroberfläche der Vorlage oder in den auf dieser Vorlage basierenden Kampagnen angezeigt. Die Registerkarten auf der linken Seite der Kampagnendetails und die verfügbaren Registerkarten entsprechen den in der Vorlage ausgewählten Funktionen. Wenn zum Beispiel die Funktion **Ausgaben und Ziele** nicht aktiviert ist, wird die entsprechende Registerkarte **[!UICONTROL Budget]** in Kampagnen, die auf dieser Vorlage basieren, nicht angezeigt.
 
-Darüber hinaus werden dem Kampagnen-Dashboard Verknüpfungen zu den Konfigurationsfenstern hinzugefügt. Wenn eine Funktion aktiviert ist, ermöglicht ein direkter Link den Zugriff darauf über das Kampagnen-Dashboard.
+Im Kampagnen-Dashboard werden zudem Verknüpfungen zu den Konfigurationsfenstern hinzugefügt. Wenn eine Funktionalität aktiviert ist, besteht über einen Link im Kampagnen-Dashboard direkter Zugriff darauf.
 
 ### Konfigurationsbeispiele
 
@@ -121,14 +126,14 @@ Darüber hinaus werden dem Kampagnen-Dashboard Verknüpfungen zu den Konfigurati
 
 * **Kontrollgruppe**
 
-  Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zu den erweiterten Einstellungen der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#defining-a-control-group).
+  Wenn dieses Modul ausgewählt wird, wird den erweiterten Einstellungen der Vorlage und den auf dieser Vorlage basierenden Kampagnen eine zusätzliche Registerkarte hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#defining-a-control-group).
 
   ![](assets/template-activate-1.png)
 
 
 * **Testadressen**
 
-  Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zu den erweiterten Einstellungen der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden.
+  Wenn dieses Modul ausgewählt wird, wird den erweiterten Einstellungen der Vorlage und den auf dieser Vorlage basierenden Kampagnen eine zusätzliche Registerkarte hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden.
 
   ![](assets/template-activate-2.png)
 
@@ -146,7 +151,7 @@ Darüber hinaus werden dem Kampagnen-Dashboard Verknüpfungen zu den Konfigurati
 
 * **Zielgruppenbestimmungen und Workflows**
 
-  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können basierend auf dieser Vorlage auch einzeln für jede Kampagne konfiguriert werden.Weitere Informationen zu Kampagnen-Workflows finden Sie [&#x200B; diesem Abschnitt](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können auch basierend auf dieser Vorlage einzeln für jede Kampagne konfiguriert werden.Weitere Informationen zu Kampagnen-Workflows finden Sie [in diesem Abschnitt](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
 
   ![](assets/template-activate-5.png)
 
@@ -178,8 +183,8 @@ Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen
 
   Auf [dieser Seite](../../v8/config/enumerations.md) erfahren Sie, wie Sie auf Ihre Aufzählungen zugreifen und sie konfigurieren können.
 
-* Wählen Sie den **Kampagnentyp** aus: eindeutig, wiederkehrend oder regelmäßig. Standardmäßig gelten Kampagnenvorlagen für eindeutige Kampagnen. Wiederkehrende und periodische Kampagnen werden in [diesem Abschnitt](recurring-periodic-campaigns.md) beschrieben.
-* Geben Sie die Dauer der Kampagne an, d. h. die Anzahl der Tage, über die die Kampagne stattfinden soll. Wenn Sie eine auf dieser Vorlage basierende Kampagne erstellen, werden das Start- und Enddatum der Kampagne automatisch ausgefüllt.
+* Wählen Sie den **Kampagnentyp** aus: einmalig, wiederkehrend oder periodisch. Standardmäßig gelten Kampagnenvorlagen für einmalige Kampagnen. Wiederkehrende und periodische Kampagnen werden in [diesem Abschnitt](recurring-periodic-campaigns.md) beschrieben.
+* Geben Sie die Dauer der Kampagne an. Dies ist der Zeitraum, über den sich die Kampagne erstrecken wird. Wenn Sie eine auf dieser Vorlage basierende Kampagne erstellen, werden das Start- und Enddatum der Kampagne automatisch ausgefüllt.
 
   Handelt es sich um eine wiederkehrende Kampagne, müssen Start- und Enddatum direkt in der Vorlage angegeben werden.
 

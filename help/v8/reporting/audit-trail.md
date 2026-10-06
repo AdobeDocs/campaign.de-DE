@@ -4,22 +4,38 @@ title: Audit-Protokoll
 description: Erfahren Sie, wie Sie Ihre Instanz mit dem Audit-Protokoll von Campaign überwachen.
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 6a937575-42d4-4dc5-8168-43c25bb2cde6
-TQID: https://experienceleague.adobe.com/0a5LrtW8EomSlw-mLwLTplBpEPovWLC-sXFdoSQYhV0
+TQID: 'https://experienceleague.adobe.com/0a5LrtW8EomSlw-mLwLTplBpEPovWLC-sXFdoSQYhV0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: cebd7cfa-b9fa-4d9f-a2ab-fce31f32c4a3
+    internal-label: Audit trail
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 664
+source-wordcount: '664'
 ht-degree: 100%
-
 ---
-
 # Audit-Protokoll{#audit-trail}
 
 Die Funktion **[!UICONTROL Audit-Protokoll]** in Adobe Campaign bietet eine detaillierte Aufzeichnung aller Änderungen, die an wichtigen Entitäten in Ihrer Instanz vorgenommen wurden. Dies sind typischerweise Änderungen, die den reibungslosen Betrieb der Instanz wesentlich beeinflussen. Es dient als Echtzeit-Protokoll und erfasst eine detaillierte Liste von Aktionen und Ereignissen, sobald sie auftreten.
@@ -37,18 +53,18 @@ Die Funktion **[!UICONTROL Audit-Protokoll]** in Adobe Campaign bietet eine deta
 
 * Das **Workflow-Audit-Protokoll** verfolgt alle Aktionen im Zusammenhang mit Ihren Workflows, einschließlich:
 
-   * Starten
-   * Aussetzen
-   * Stoppen
-   * Neu starten
-   * Bereinigen, was der Aktion „Verlauf bereinigen“ entspricht
-   * Simulieren, was der Aktion „Starten“ im Simulationsmodus entspricht
-   * Wecken, was der Aktion „Vorgezogene Ausführung der ausstehenden Aufgaben“ entspricht
-   * Unbedingter Stopp
+  * Starten
+  * Aussetzen
+  * Stoppen
+  * Neu starten
+  * Bereinigen, was der Aktion „Verlauf bereinigen“ entspricht
+  * Simulieren, was der Aktion „Starten“ im Simulationsmodus entspricht
+  * Wecken, was der Aktion „Vorgezogene Ausführung der ausstehenden Aufgaben“ entspricht
+  * Unbedingter Stopp
 
   Weiterführende Informationen zu Workflows finden Sie auf [dieser Seite](../../automation/workflow/about-workflows.md).
 
-  Weiterführende Informationen zur Überwachung Workflows finden Sie im [entsprechenden Abschnitt](../../automation/workflow/monitor-workflow-execution.md).
+  Weiterführende Informationen zur Überwachung von Workflows finden Sie im [entsprechenden Abschnitt](../../automation/workflow/monitor-workflow-execution.md).
 
 * Das **Audit-Protokoll für Optionen** ermöglicht Ihnen die Überprüfung der Aktivitäten und der letzten Änderungen an Ihren Optionen.
 

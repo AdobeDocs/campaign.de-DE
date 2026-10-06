@@ -6,31 +6,42 @@ feature: Workflows, Approvals
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
-TQID: https://experienceleague.adobe.com/wmqV-ZCTwYaGQHTxIZ3iZpv9cTR4TrGDtXuV-YfF1Io
+TQID: 'https://experienceleague.adobe.com/wmqV-ZCTwYaGQHTxIZ3iZpv9cTR4TrGDtXuV-YfF1Io'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: ce296ecd-3d06-45ab-83c3-37214e8ce31c
+    internal-label: Approvals
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 570
-ht-degree: 48%
-
+source-wordcount: '570'
+ht-degree: 100%
 ---
-
 # Validierung{#approval}
 
 
 
-Eine **Genehmigungsaufgabe** erfordert die Beteiligung eines Benutzers. Dem Benutzer wird eine Aufgabe zugewiesen und er kann per E-Mail, über die in der E-Mail-Nachricht verlinkte Webseite oder über die Konsole darauf antworten.
+Eine Aufgabe des Typs **Validierung** erfordert die Beteiligung einer Benutzerin bzw. eines Benutzers. Der Benutzerin bzw. dem Benutzer wird eine Aufgabe zugewiesen, auf die per E-Mail, über die in der E-Mail-Nachricht verknüpfte Web-Seite oder über die Konsole reagiert werden kann.
 
 ## Aufgabenzuweisung {#task-assignment}
 
-Standardmäßig wird die Genehmigung einer Benutzergruppe zugewiesen. Diese Gruppe stellt eine Rolle dar, z. B. „Newsletter-Inhaltsgruppe“ oder „Newsletter-Zielgruppe“. Jeder Benutzer in der Gruppe kann antworten, aber es wird nur die erste Antwort berücksichtigt (außer im Fall von Mehrfachgenehmigungen).
+Standardmäßig wird die Validierung einer Benutzergruppe zugewiesen. Diese Gruppe repräsentiert eine Rolle, z. B. „Gruppe für Newsletter-Inhalte“ oder „Zielgruppenbestimmungsgruppe für Newsletter“. Alle Benutzenden in der Gruppe können antworten, es wird jedoch nur die erste Antwort berücksichtigt (außer eine mehrfache Validierung ist erforderlich).
 
 Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung von Filtern mehreren Benutzern zugewiesen werden.
 
@@ -48,7 +59,7 @@ Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung v
 
 Im Fall einer einfachen Validierung, wird die der Wahl des Benutzers entsprechende Transition aktiviert und die Aufgabe abgeschlossen. Andere Benutzer können nun die Aufgabe nicht mehr validieren.
 
-Bei Mehrfach-Validierungen werden die der Auswahl des jeweiligen Benutzers entsprechenden Übergänge aktiviert. Die Aufgabe ist beendet, wenn alle Benutzer der Gruppe geantwortet haben oder wenn die Aufgabe abgelaufen ist.
+Im Fall einer mehrfachen Validierung werden Transitionen entsprechend der Auswahl jeder Benutzerin bzw. jedes Benutzers aktiviert. Die Aufgabe wird abgeschlossen, sobald alle Benutzenden der Gruppe reagiert haben, oder wenn die Aufgabe abgelaufen ist.
 
 Diese Aktivität betrifft nicht den gesamten Workflow, andere Aufgaben können parallel ausgeführt werden.
 
@@ -62,17 +73,17 @@ Auf **Validierungsaufgaben** kann im Knoten **[!UICONTROL Administration > Betre
 
 ## Eigenschaften {#properties}
 
-Anpassungsvariablen können in der Nachricht verwendet werden, die an Validierungsverantwortliche gesendet wird. Sie können in den Titel oder Text der Nachricht eingefügt werden.
+In der an die prüfenden Personen gesendeten Nachricht können Personalisierungsvariablen verwendet werden. Diese können entweder in den Nachrichtentitel oder den Textkörper eingefügt werden.
 
 ![](assets/edit_validation.png)
 
-Dieses **[!UICONTROL Titel]**-Feld enthält den Titel der Nachricht: Dies ist der Betreff der gesendeten E-Mail-Nachricht. Titel und Nachrichtentext sind JavaScript-Vorlagen und können daher Werte enthalten, die entsprechend dem Kontext des Workflows berechnet werden.
+Das Feld **[!UICONTROL Titel]** enthält den Titel der Nachricht und stellt den Betreff der gesendeten E-Mail-Nachricht dar. Sowohl beim Titel als auch beim Nachrichtentext handelt es sich um JavaScript-Vorlagen. Daher können sie Werte enthalten, die entsprechend dem Kontext des Workflows berechnet wurden.
 
-Im unteren Bereich des Editors können Sie die Liste der möglichen Antworten definieren. Zu jeder Antwort gehört eine Transition. Der Name ist die interne Kennung und die Beschriftung ist der Text, der in der Auswahlliste angezeigt wird.
+Im unteren Bereich des Editors können Sie die Liste der möglichen Antworten definieren. Zu jeder Antwort gehört eine Transition. Der Name ist die interne Kennung und der Titel ist der Text, der in der Auswahlliste angezeigt wird.
 
-Klicken Sie auf **[!UICONTROL Link Erweiterte Parameter…]**, um die Versandvorlage auszuwählen, die zur Benachrichtigung der Benutzer verwendet werden soll. Die Standardvorlage (interner Name &#39;notifyAssignee&#39;) nimmt den Titel und die Nachricht auf und fügt einen Link zu der für die Antwort verwendeten Web-Seite hinzu.
+Klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter…]**, um die Versandvorlage für die Benachrichtigung der Benutzenden auszuwählen. Die Standardvorlage (interner Name „notifyAssignee“) übernimmt den Titel und den Nachrichteninhalt und fügt einen Link zur Web-Seite hinzu, über die geantwortet werden kann.
 
-Diese Vorlage kann geändert werden, um das Nachrichten-Layout zu personalisieren, es ist jedoch besser, eine Kopie zu erstellen. Der Targeting-Mechanismus (externe Datei, Zielgruppen-Mapping) darf nicht geändert werden, da er für die ordnungsgemäße Funktionsweise von Benachrichtigungen erforderlich ist.
+Diese Vorlage kann angepasst werden, um das Nachrichten-Layout zu personalisieren, es wird jedoch empfohlen, sie zu kopieren. Der Zielgruppenbestimmungsmechanismus (externe Datei, Zielgruppen-Mapping) darf nicht geändert werden, da er für die ordnungsgemäße Funktionsweise von Benachrichtigungen erforderlich ist.
 
 Ein Validierungsbeispiel finden Sie im Abschnitt [Validierungen definieren](define-approvals.md).
 

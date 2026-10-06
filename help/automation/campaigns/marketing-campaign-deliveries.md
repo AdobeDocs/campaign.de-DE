@@ -6,23 +6,32 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-TQID: https://experienceleague.adobe.com/2qo8UUeTbMxMJse13-8HOB0dJXoSk0AKpNJamGTaqxs
+TQID: 'https://experienceleague.adobe.com/2qo8UUeTbMxMJse13-8HOB0dJXoSk0AKpNJamGTaqxs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: 8d5d4b17-44c6-5e7b-891c-b4277613013d
+    internal-label: Resource Management
+  - id: 237333ba-90fa-554c-bc8d-2047e6173477
+    internal-label: Cross Channel Orchestration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 755
-ht-degree: 88%
-
+source-wordcount: '755'
+ht-degree: 100%
 ---
-
 # Sendungen für eine Marketing-Kampagne {#marketing-campaign-deliveries}
 
 Orchestrieren Sie Ihre kanalübergreifenden Sendungen in Ihren Kampagnen: Optimieren Sie mit Adobe Campaign Ihre Kommunikation durch personalisierte E-Mails, SMS, Push-Benachrichtigungen und In-App-Nachrichten. Sie können Rich Media wie Videos, Emojis oder GIFs verwenden und direkt integrieren.
@@ -80,7 +89,7 @@ Wenn der Extraktions-Workflow korrekt ausgeführt wurde, muss die Extrationsdate
 
 Gehen Sie wie folgt vor, um den Inhalt zu validieren und die Datei an den Provider zu senden:
 
-1. Nachdem die Extraktionsdatei validiert wurde, können Sie den Testversand der Benachrichtigungs-E-Mail für den Router generieren. Diese E-Mail-Nachricht basiert auf einer Versandvorlage. Sie muss genehmigt werden.
+1. Nachdem die Extraktionsdatei validiert wurde, können Sie den Testversand der Router-Benachrichtigungs-E-Mail generieren. Diese E-Mail-Nachricht basiert auf einer Versandvorlage. Sie muss validiert werden.
 
    Dieser Schritt ist nur verfügbar, wenn die Option **[!UICONTROL Testversandvalidierung aktivieren aktivieren (Briefpost)]** auf der Registerkarte **[!UICONTROL Genehmigungen]** der erweiterten Kampagnenparameter aktiviert wurde.
 
@@ -108,7 +117,7 @@ Die Dateiextraktion startet zwei Prozesse: Budgetberechnung und Bestandsberechnu
 
   ![](assets/campaign-budget-tab.png)
 
-  Die tatsächlichen Kosten werden letztendlich anhand der vom Router gelieferten Informationen berechnet. Nur tatsächlich gesendete Nachrichten werden fakturiert.
+  Die tatsächlichen Kosten werden am Ende entsprechend der vom Router kommunizierten Informationen berechnet. Nur tatsächlich gesendete Nachrichten werden fakturiert.
 
 * Die Lagerbestände werden im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Lager]** des Baums definiert.
 
@@ -118,7 +127,7 @@ Die Dateiextraktion startet zwei Prozesse: Budgetberechnung und Bestandsberechnu
 
   ![](assets/campaign-service-providers.png)
 
-  Lagerpositionen werden im Lagerteil angezeigt. Um den Anfangsbestand zu definieren, öffnen Sie eine Lagerposition. Der Bestand verringert sich mit jedem Versand. Sie können eine Warnstufe und Benachrichtigungen definieren.
+  Lagerpositionen werden im Bestandsabschnitt angezeigt. Um den Anfangsbestand zu definieren, öffnen Sie eine Lagerposition. Der Bestand verringert sich mit jedem Versand. Sie können eine Warnstufe und Benachrichtigungen definieren.
 
 
   >[!NOTE]

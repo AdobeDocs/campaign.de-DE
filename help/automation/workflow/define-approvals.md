@@ -6,33 +6,42 @@ feature: Approvals
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
-TQID: https://experienceleague.adobe.com/D-Yo0xuEnL3MSX6VWZqAVKpF3XSIzdf--0qQlZbB5mg
+TQID: 'https://experienceleague.adobe.com/D-Yo0xuEnL3MSX6VWZqAVKpF3XSIzdf--0qQlZbB5mg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
+  - id: ce296ecd-3d06-45ab-83c3-37214e8ce31c
+    internal-label: Approvals
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 857
-ht-degree: 53%
-
+source-wordcount: '857'
+ht-degree: 98%
 ---
-
 # Definieren von Validierungen {#defining-approvals}
 
 
 
 Validierungen bieten Benutzern die Gelegenheit, an bestimmten Etappen des Workflows Entscheidungen zu treffen oder einen Vorgang zur Ausführung freizugeben.
 
-Eine Nachricht wird an eine Benutzergruppe gesendet und der Workflow wartet auf eine Antwort, bevor er fortgesetzt wird. Der Workflow wird nicht angehalten und andere Vorgänge können ausgeführt werden. Beispielsweise stehen möglicherweise mehrere gleichzeitige Genehmigungen aus.
+Eine Nachricht wird an eine Benutzergruppe gesendet und der Workflow wartet auf eine Antwort, bevor er fortgesetzt wird. Der Workflow wird nicht gestoppt und andere Vorgänge können ausgeführt werden. Beispielsweise stehen möglicherweise mehrere gleichzeitige Validierungen aus.
 
-Eine Validierung kann mehrere Optionen enthalten, die der Benutzer auswählen kann. Es ist jedoch möglich, die Anzahl der Auswahlmöglichkeiten auf eine zu beschränken, um eine Aufgabe an einen Benutzer zu senden, z. B. die Durchführung von Targeting. Der Benutzer kann dann nach Ausführung der Aufgabe reagieren (der Prozess wird dann fortgesetzt). Das folgende Beispiel veranschaulicht diese Arten von Genehmigungen:
+Eine Validierung kann mehrere Optionen zur Auswahl für die Benutzerin bzw. den Benutzer enthalten. Es ist jedoch möglich die Anzahl der Optionen auf eine einzuschränken, um eine Aufgabe zur Durchführung an eine Benutzerin bzw. einen Benutzer weiterzuleiten, wie beispielsweise das Durchführen einer Zielgruppenbestimmung. Die Benutzerin bzw. der Benutzer kann dann nach Durchführung der Aufgabe reagieren (der Prozess wird dann fortgesetzt). Das folgende Beispiel veranschaulicht diese Arten von Validierungen:
 
 ![](assets/validation-1.png)
 
@@ -48,7 +57,7 @@ Zur Validierung können Benutzer entweder den Webzugriff mithilfe des in der Ben
 
 ## Validierungen per E-Mail {#sending-emails}
 
-Es ist möglich, eine Validierungsnachricht mit einem Link zu einer Webseite zu erhalten, über die eine Antwort möglich ist. Damit der Zielgruppenbenutzer eine E-Mail zur Validierung erhält, muss die E-Mail-Adresse des Benutzers vollständig sein. Ist dies nicht der Fall, muss der Benutzer die Konsole als Antwort verwenden.
+Es ist möglich, eine Validierungsnachricht mit einem Link zu einer Web-Seite zu erhalten, über die reagiert werden kann. Damit die entsprechende Benutzerin bzw. der entsprechende Benutzer eine Validierungs-E-Mail erhält, muss die Benutzer-E-Mail-Adresse vollständig sein. Ist dies nicht der Fall, muss der Benutzer die Konsole als Antwort verwenden.
 
 Validierungs-E-Mails werden kontinuierlich gesendet. Die Standardvorlage heißt **[!UICONTROL notifyAssignee]** und ist im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** zugänglich. Es wird empfohlen, die Vorlage nicht zu ändern, sondern sie zu duplizieren und für jede Aktivität eine gesonderte Benachrichtigungsvorlage zu erstellen.
 
@@ -66,20 +75,20 @@ Bei technischen Workflows können Benutzer auf zu validierenden Aufgaben im Knot
 
 Validierungen können einem einzelnen Benutzer, einer Benutzergruppe oder verschiedenen, durch eine Filterbedingung ermittelten Benutzern zugewiesen werden.
 
-1. Für die einfachste Form der Validierung ist die Aufgabe abgeschlossen, sobald der Benutzer antwortet. Jeder andere Benutzer, der versucht zu antworten, wird benachrichtigt, dass jemand es bereits getan hat.
+1. Bei der einfachsten Form der Validierung ist die Aufgabe abgeschlossen, sobald eine Benutzerin bzw. ein Benutzer reagiert. Alle anderen Benutzenden, die reagieren möchten, werden benachrichtigt, dass dies schon von einer anderen Person erledigt wurde.
 1. Für mehrfache Validierungen siehe Abschnitt [Mehrfach-Validierungen](#multiple-approval).
 
-Die Benutzergruppen für Genehmigungen sollten als Rollen oder Funktionen und nicht als benannte Einzelpersonen gekennzeichnet sein. Beispielsweise ist eine Gruppe „Kampagnenbudget“ besser geeignet als „Harry-Gruppe“. Es wird empfohlen, mindestens zwei Personen in einer Gruppe zu haben, die eine Aufgabe genehmigen können. Auf diese Weise kann, wenn das eine fehlt, das andere reagieren.
+Die Benutzergruppen für Validierungen sollten als Rollen oder Funktionen und nicht als benannte Einzelpersonen designiert sein. Beispielsweise ist eine Gruppe namens „Kampagnenbudget“ besser geeignet als eine namens „Harry-Gruppe“. Es wird empfohlen, dass Gruppen mindestens zwei Personen enthalten, die eine Aufgabe validieren können. Auf diese Weise kann bei Abwesenheit einer Person die zweite reagieren.
 
 ## Gültigkeit {#expirations}
 
 Ein Ablauf ist eine spezifische Transition, die für verschiedene Aktivitätstypen (insbesondere Genehmigungen) verwendet wird. Über einen Ablauf können Sie bestimmen, dass nach dem Verstreichen einer bestimmen Zeit, in der keine Antwort eingeht, eine Aktion ausgelöst wird. So können sie mit seiner Hilfe beispielsweise auch den Workflow durchführen oder einer anderen Gruppe eine Genehmigung zuweisen.
 
-Auf der zweiten Registerkarte in den Eigenschaften der Aktivitätsvalidierung können Sie eine oder mehrere Gültigkeitsdauern definieren. Tatsächlich können Sie mehrere Gültigkeitsarten definieren.
+Auf der zweiten Registerkarte der Validierungseigenschaften der Aktivität können Sie eine oder mehrere Ablauffristen definieren. Tatsächlich können Sie mehrere Ablaufsarten definieren.
 
 ![](assets/expiration.png)
 
-Um eine neue Gültigkeit hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]**. Zu jeder der erstellten Gültigkeiten wird eine Transition hinzugefügt. Sie haben folgende Möglichkeiten:
+Um eine neue Ablauffrist hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]**. Jeder der erstellten Ablauffristen wird eine Transition hinzugefügt. Sie haben folgende Möglichkeiten:
 
 * die vorgeschlagenen Parameter direkt in der Liste zu ändern, indem Sie in die entsprechende Zelle klicken,
 * oder das Ablauffenster zu öffnen, indem Sie auf die Schaltfläche **[!UICONTROL Detail...]** klicken.
@@ -88,7 +97,7 @@ Um eine neue Gültigkeit hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufüge
 >
 >Es ist nicht notwendig, die Ablauffristen zu ordnen, sie werden automatisch in chronologischer Reihenfolge verarbeitet.
 
-Die Option **[!UICONTROL Aufgabe nicht beenden]** lässt die Genehmigung aktiv, wenn die Verzögerung überschritten wird. Dieser Modus ermöglicht die Verwaltung von Erinnerungen, während die Validierung aktiv bleibt: Benutzer können weiterhin antworten. Diese Option ist standardmäßig deaktiviert, was bedeutet, dass die Aufgabe nach Ablauf als abgeschlossen gilt und die Benutzer möglicherweise nicht mehr reagieren.
+Durch die Option **[!UICONTROL Aufgabe nicht beenden]** bleibt die Validierung aktiv, wenn die Verzögerung überzogen wird. Dieser Modus ermöglicht die Verwaltung von Erinnerungen, während die Validierung aktiv bleibt, d. h. Benutzende können weiterhin reagieren. Diese Option ist standardmäßig deaktiviert, was bedeutet, dass die Aufgabe nach Ablauf als abgeschlossen gilt und die Benutzenden möglicherweise nicht mehr reagieren.
 
 Vier verschiedene Arten der Berechnung der Ablauffrist stehen zur Auswahl:
 
@@ -109,9 +118,9 @@ Vier verschiedene Arten der Berechnung der Ablauffrist stehen zur Auswahl:
 
 ## Mehrfach-Validierungen {#multiple-approval}
 
-Die Mehrfachvalidierung ist ein Mechanismus, der es allen Validierungsbenutzern ermöglicht, zu reagieren. Für jede Antwort wird eine Transition aktiviert.
+Bei einer mehrfachen Validierung können alle Validierungsverantwortlichen antworten. Für jede Antwort wird eine Transition aktiviert.
 
-Mehrfache Validierungen sind für Abstimmungs- oder Umfragemechanismen nützlich. Sie können Antworten zählen und ihre Ergebnisse nach einem bestimmten Zeitraum verarbeiten, indem Sie eine Frist hinzufügen.
+Mehrfache Validierungen sind für Abstimmungs- oder Umfragemechanismen nützlich. Es besteht die Möglichkeit, die Antworten zu zählen und nach der definierten Ablauffrist das Ergebnis weiterzuverwenden.
 
 ## Erforderliche Berechtigungen {#required-rights}
 
@@ -120,4 +129,4 @@ Um auf eine Validierungsanfrage antworten zu können, müssen Benutzer mindesten
 * Lesen von Workflows,
 * Lesen und Schreiben im Ordner der zu validierenden Aufgaben.
 
-Die Gruppe „Workflow-Ausführung“ hat diese Rechte. Ein Benutzer, der dieser Gruppe hinzugefügt wurde, kann auf eine Genehmigungsanfrage antworten.
+Die Gruppe „Workflow-Ausführung“ hat diese Rechte. Damit eine Person Validierungen vornehmen kann, reicht es somit aus, sie dieser Gruppe hinzuzufügen.

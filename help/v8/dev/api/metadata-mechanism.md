@@ -7,22 +7,29 @@ topic-tags: campaign-standard-apis
 role: Developer
 level: Experienced
 exl-id: 58ec0999-b28a-4198-8d57-729b074c6a6d
-TQID: https://experienceleague.adobe.com/yi2PDkImYnF-UqGqklMAlvGAIHl9GE47VsCEGj6--yU
+TQID: 'https://experienceleague.adobe.com/yi2PDkImYnF-UqGqklMAlvGAIHl9GE47VsCEGj6--yU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Metadata
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 228
+source-wordcount: '228'
 ht-degree: 100%
-
 ---
-
 # Metadatenmechanismus {#metadata-mechanism}
 
 Sie können die Metadaten von Ressourcen mit **resourceType** in einer GET-Anfrage abrufen:
@@ -33,14 +40,14 @@ In der Antwort werden die Hauptmetadaten der Ressource zurückgegeben (alle ande
 
 * Der Knoten **Inhalt** gibt die Felder der Ressource zurück. Für jedes Feld im Knoten **Inhalt** können wir folgende Felder finden:
 
-   * &quot;apiName&quot;: Name des Attributs, das in den APIs verwendet wird.
-   * &quot;type&quot;: Dies ist die übergeordnete Typdefinition (Zeichenfolge, Zahl, Link, Sammlung, Aufzählung...).
-   * &quot;dataPolicy&quot;: Der Wert des Felds muss den angegebenen Regeln entsprechen. Wenn die Regel &quot;dataPolicy&quot; beispielsweise auf &quot;email&quot; gesetzt ist, muss der Wert eine gültige E-Mail-Adresse sein. Während eines PATCH- oder POST-Vorgangs kann &quot;dataPolicy&quot; den Wert überprüfen oder den umzuwandelnden Wert ändern (z. B. smartCase).
-   * &quot;category&quot;: Gibt die Kategorie des Felds im Abfrage-Editor an.
-   * &quot;resType&quot;: Dies ist der technische Typ.
+  * &quot;apiName&quot;: Name des Attributs, das in den APIs verwendet wird.
+  * &quot;type&quot;: Dies ist die übergeordnete Typdefinition (Zeichenfolge, Zahl, Link, Sammlung, Aufzählung...).
+  * &quot;dataPolicy&quot;: Der Wert des Felds muss den angegebenen Regeln entsprechen. Wenn die Regel &quot;dataPolicy&quot; beispielsweise auf &quot;email&quot; gesetzt ist, muss der Wert eine gültige E-Mail-Adresse sein. Während eines PATCH- oder POST-Vorgangs kann &quot;dataPolicy&quot; den Wert überprüfen oder den umzuwandelnden Wert ändern (z. B. smartCase).
+  * &quot;category&quot;: Gibt die Kategorie des Felds im Abfrage-Editor an.
+  * &quot;resType&quot;: Dies ist der technische Typ.
 
-     Wenn &quot;type&quot; mit dem Wert &quot;link&quot; oder &quot;collection&quot; ausgefüllt wird, ist der resTarget-Wert der Name der Ressource, auf die der Link abzielt.
-Wenn &quot;type&quot; mit dem Wert &quot;enumeration&quot; ausgefüllt wird, wird ein Feld &quot;values&quot; hinzugefügt und jeder Aufzählungswert im Knoten **Werte** detailliert beschrieben.
+    Wenn &quot;type&quot; mit dem Wert &quot;link&quot; oder &quot;collection&quot; ausgefüllt wird, ist der resTarget-Wert der Name der Ressource, auf die der Link abzielt.
+    Wenn &quot;type&quot; mit dem Wert &quot;enumeration&quot; ausgefüllt wird, wird ein Feld &quot;values&quot; hinzugefügt und jeder Aufzählungswert im Knoten **Werte** detailliert beschrieben.
 
 * Der Knoten **Filter** gibt die URL zum Abrufen der zugehörigen Filter zurück. Weiterführende Informationen zu Filtern finden Sie in [diesem Abschnitt](sorting.md#filtering).
 

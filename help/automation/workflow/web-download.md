@@ -5,37 +5,47 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "HTTP-Übertragung"
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 73bacf61-ac03-4a5c-b03b-6dfbe3fb9538
-TQID: https://experienceleague.adobe.com/o-kTHkx0LFrxyykvGSZW-fZJRMWDN2HFnRKlZ-LBDMk
+TQID: 'https://experienceleague.adobe.com/o-kTHkx0LFrxyykvGSZW-fZJRMWDN2HFnRKlZ-LBDMk'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
+    internal-label: Troubleshooting
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 546
-ht-degree: 62%
-
+source-wordcount: '546'
+ht-degree: 100%
 ---
-
 # HTTP-Übertragung{#web-download}
 
 
 
-Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes Konto oder eine Adobe Campaign-Instanz herunter. Das HTTP-Protokoll wird verwendet. Dabei kann es sich um einen GET- oder POST-Download handeln.
+Die Aktivität **Web-Download** startet den Download einer Datei über eine explizite URL, ein externes Konto oder eine Adobe Campaign-Instanz. Das HTTP-Protokoll wird verwendet. Dabei kann es sich um einen GET- oder POST-Download handeln.
 
 ## Eigenschaften {#properties}
 
 1. **Auswahl der Webdatei**
 
-   Um die herunterzuladende Datei anzugeben, können Sie die Datei-URL eingeben, das externe HTTP-Konto verwenden, in dem die Datei gespeichert ist, oder die Datei über eine Adobe Campaign-Instanz laden. Die verfügbaren Parameter werden nachfolgend beschrieben:
+   Zum Angeben der zu übertragenden Datei können Sie entweder eine explizite Datei-URL, ein externes HTTP-Konto, auf dem die Datei gespeichert ist, oder eine Adobe Campaign-Instanz eingeben. Die verfügbaren Parameter werden nachfolgend beschrieben:
 
-   * Um die URL der herunterzuladenden Datei direkt einzugeben, wählen Sie die Option **[!UICONTROL Explizite URL]** und geben Sie die URL in das entsprechende Feld ein. Diese URL kann mit Variablendaten erstellt werden.
+   * Um direkt die URL der herunterzuladenden Datei einzugeben, wählen Sie die Option **[!UICONTROL Explizite URL]** aus und geben Sie die URL in das entsprechende Feld ein. Diese URL kann mit Variablendaten erstellt werden.
 
      ![](assets/download_web_edit.png)
 
@@ -61,9 +71,9 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
    * **[!UICONTROL Anzahl Dateien]**: Geben Sie die Anzahl an Dateien an, die maximal im Speicherverzeichnis beibehalten werden soll.
    * **[!UICONTROL Maximale Größe (in MB)]**: Geben Sie die Größe an, die das Speicherverzeichnis nicht überschreiten darf (in Megabytes).
 
-   Jede Datei wird 24 Stunden lang aufbewahrt, bevor sie den definierten Bereinigungsregeln unterliegt. Die Bereinigung erfolgt unmittelbar vor Beginn der Aktivität und berücksichtigt daher nicht die laufende Workflow-Datei.
+   Jede Datei wird 24 Stunden lang aufbewahrt, bevor sie den definierten Bereinigungsregeln unterliegt. Die Bereinigung erfolgt zu Beginn der Aktivität und berücksichtigt daher nicht die gerade ausgeführte Workflow-Datei.
 
-   Dateien werden in Abhängigkeit ihres Alters (vom ältesten zum neuesten) gelöscht. Die ältesten Dateien werden bereinigt, bis beide Bereinigungsregeln überprüft wurden. Wenn also ein Limit von 100 Dateien definiert ist, bedeutet dies, dass das Speicherverzeichnis immer die 100 neuesten Dateien vor Beginn des Workflows sowie diejenigen enthält, die im laufenden Workflow verarbeitet werden.
+   Dateien werden in Abhängigkeit ihres Alters (vom ältesten zum neuesten) gelöscht. Die ältesten Dateien werden bereinigt, bis beide Bereinigungsregeln überprüft wurden. Wenn die maximale Anzahl beispielsweise auf 100 begrenzt wurde, enthält das Speicherverzeichnis vor Beginn des Workflows daher stets die 100 neuesten Dateien, zuzüglich der vom laufenden Workflow übertragenen Dateien.
 
    Wenn Sie für die Optionen **[!UICONTROL Anzahl Dateien]** und **[!UICONTROL Maximale Größe (in MB)]** keine Grenzwerte vorschreiben möchten, können Sie jeweils den Wert 0 angeben.
 

@@ -6,24 +6,35 @@ feature: Workflows, Targeting Activity
 role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 91c87f8f-bdd2-4ca1-94c2-ec9e7affc1a0
-TQID: https://experienceleague.adobe.com/J-3G1xfCNkBVkmO0WqjHtstOGq5LE8ymd2oa8f-VSSE
+TQID: 'https://experienceleague.adobe.com/J-3G1xfCNkBVkmO0WqjHtstOGq5LE8ymd2oa8f-VSSE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
+    internal-label: Targeting Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Developer
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 508
-ht-degree: 67%
-
+source-wordcount: '508'
+ht-degree: 100%
 ---
-
 # Liste lesen{#read-list}
 
 In Workflows genutzte Daten können aus Listen stammen, deren Daten zuvor aufbereitet und strukturiert wurden, beispielsweise in einer früheren Segmentierung oder im Zuge eines Datei-Ladevorgangs.
 
-Die Aktivität **[!UICONTROL Liste lesen]** ermöglicht das Kopieren der Daten aus einer Liste in der Workflow-Arbeitstabelle, z. B. von Daten aus einer Abfrage. Sie ist dann im gesamten Workflow verfügbar.
+Mit der Aktivität **[!UICONTROL Liste lesen]** können Sie Daten aus einer Liste in die Workflow-Arbeitstabelle kopieren, wie etwa Daten aus einer Abfrage. Sie sind dann im gesamten Workflow verfügbar.
 
 Die zu verarbeitende Liste kann explizit angegeben, von einem Script berechnet oder dynamisch abgerufen werden. Dies hängt von den in der Aktivität **[!UICONTROL Liste lesen]** aktivierten Optionen oder angegebenen Parametern ab.
 
@@ -49,7 +60,7 @@ Im folgenden Beispiel soll eine Datei mit Adressen importiert werden, die grunds
 
 ![](assets/s_advuser_list_read_sample_1.png)
 
-Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für einen Versand ausgewählt werden. Die aus der Zielgruppe auszuschließenden E-Mail-Adressen werden in einer externen Liste gespeichert. In unserem Beispiel sind nur die Informationen zu E-Mail-Adressen für den Ausschluss erforderlich.
+Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für eine Versandaktion ausgewählt werden. Die aus der Zielgruppe auszuschließenden E-Mail-Adressen werden in einer externen Liste gespeichert. In unserem Beispiel sind nur die Informationen zu E-Mail-Adressen für den Ausschluss erforderlich.
 
 1. Die zum Laden der im **Premiumkunden**-Ordner enthaltenen Empfänger erstellte Abfrage muss die E-Mail-Adressen der Empfänger ausgeben, um die Abstimmung mit der Ausschlussliste zu ermöglichen.
 
@@ -59,7 +70,7 @@ Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für 
 
    ![](assets/s_advuser_list_read_sample_2.png)
 
-1. Um die E-Mail-Adressen der externen Liste von der Hauptzielgruppe auszuschließen, müssen Sie die Ausschlussaktivität konfigurieren und angeben, dass der Ordner **Neue Kontakte** die beizubehaltenden Daten enthält. Die gemeinsamen Daten dieses Sets und aller anderen eingehenden Sets aus der Ausschlussaktivität werden aus der Zielgruppe gelöscht.
+1. Um E-Mail-Adressen der externen Liste von der Hauptzielgruppe auszuschließen, müssen Sie die Ausschlussaktivität konfigurieren und angeben, dass der Ordner **Neue Kontakte** die beizubehaltenden Daten enthält. Die zusammengeführten Daten dieser Menge und jeder anderen eingehenden Menge der Ausschlussaktivität werden aus der Zielgruppe gelöscht.
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
@@ -73,4 +84,4 @@ Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für 
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
-1. Wählen Sie dann das Feld aus, das der E-Mail-Adresse in den beiden Sätzen (Source und Destination) entspricht. Die Spalten werden dann verknüpft und die Empfänger, deren E-Mail-Adresse in der Liste der importierten Adressen enthalten ist, werden aus der Zielgruppe ausgeschlossen.
+1. Wählen Sie dann das Feld aus, dass der E-Mail-Adresse in zwei Mengen entspricht (Quelle und Ziel). Die Spalten werden anschließend verknüpft und die Empfangenden, deren E-Mail-Adressen in der Liste der importierten Adressen angezeigt werden, werden von der Zielgruppe ausgeschlossen.

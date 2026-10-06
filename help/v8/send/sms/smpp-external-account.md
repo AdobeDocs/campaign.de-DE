@@ -5,25 +5,38 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-TQID: https://experienceleague.adobe.com/9iAR7QuskmaBkt8AwYws3nzdL47xCgC9zsIonQBDeIg
+TQID: 'https://experienceleague.adobe.com/9iAR7QuskmaBkt8AwYws3nzdL47xCgC9zsIonQBDeIg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: ffeb9430b382b598af412555b1b0a6ff42bc68d0
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3659
-ht-degree: 95%
-
+source-wordcount: '3638'
+ht-degree: 96%
 ---
-
 # Einstellungen für externe SMPP-Konten {#smpp-external-account}
 
 Adobe Campaign verwendet das SMPP-Protokoll, um SMS an einen Dienstleister zu senden.
@@ -54,9 +67,9 @@ Die folgenden Parameter samt Rollen sind zum Einrichten der Verbindung erforderl
 Die Gesamtzahl der Verbindungen kann mithilfe der folgenden Formel berechnet werden:
   *Gesamtanzahl der Verbindungen = Anzahl der SMS-Prozesse × Anzahl der Versand-Threads × Anzahl simultaner untergeordneter MTA-Verbindungen*
 
-   * Die Anzahl der SMS-Prozesse ist normalerweise 1. Bei einigen sehr leistungsstarken Instanzen können mehrere SMS-Prozesse parallel gestartet werden.
-   * Die Anzahl der Versand-Threads wird in „serverConf“ festgelegt (sendingThreads-Einstellung). Der Standardwert ist 1.
-   * Die Anzahl der simultanen untergeordneten MTA-Verbindungen entspricht dieser Einstellung im externen Konto.
+  * Die Anzahl der SMS-Prozesse ist normalerweise 1. Bei einigen sehr leistungsstarken Instanzen können mehrere SMS-Prozesse parallel gestartet werden.
+  * Die Anzahl der Versand-Threads wird in „serverConf“ festgelegt (sendingThreads-Einstellung). Der Standardwert ist 1.
+  * Die Anzahl der simultanen untergeordneten MTA-Verbindungen entspricht dieser Einstellung im externen Konto.
 
   Bei Standardwerten legt diese Einstellung direkt die Anzahl der Verbindungen fest.
 
@@ -69,8 +82,8 @@ Es gibt keine Möglichkeit, das Gleichgewicht zwischen Transmittern und Receiver
 Für Adobe Campaign v8.7.2 und höher sollte diese Option immer aktiviert sein. Dies hat zahlreiche Auswirkungen auf die Verarbeitung von Nachrichten.
 * **SMPP-**:
 Stellen Sie die Verbindung im Transceiver-Modus oder im getrennten Modus Transmitter + Receiver ein.
-   * Transmitter + Receiver (oder TX + RX): Es werden zwei separate TCP-Verbindungen zum Senden und Empfangen von Nachrichten verwendet.
-   * Transceiver (oder TRX): Es wird eine einzelne TCP-Verbindung zum Senden und Empfangen von Nachrichten verwendet.
+  * Transmitter + Receiver (oder TX + RX): Es werden zwei separate TCP-Verbindungen zum Senden und Empfangen von Nachrichten verwendet.
+  * Transceiver (oder TRX): Es wird eine einzelne TCP-Verbindung zum Senden und Empfangen von Nachrichten verwendet.
 * **Verwenden Sie verschiedene Parameter für den Empfänger**:
 Nur im Modus Transmitter + Receiver verfügbar.
 Wenn das Kontrollkästchen deaktiviert ist, werden für Transmitter und Receiver dieselben Einstellungen verwendet. Wenn das Kontrollkästchen aktiviert ist, gelten die Standardeinstellungen nur für den Transmitter, während die Receiver-Einstellungen nur für den Receiver gelten.
@@ -279,7 +292,7 @@ Dies zeigt das Format der ID an, die im Feld „message_id“ der SUBMIT_SM_RESP
 
 * **Nicht ändern**: Die ID wird unverändert als ASCII-kodierter Text wie in der Datenbank gespeichert. Es findet keine Vorverarbeitung oder Filterung statt.
 * **Dezimalzahl**: Die ID wird als Dezimalzahl in ASCII-Form erwartet. Führende und nachfolgende Leerzeichen und führende Nullen werden bei dieser Einstellung entfernt.
-* **Hexadezimalzahl**: Es wird erwartet, dass die ID eine hexadezimale Zahl im ASCII-Format ist, ohne vorangestelltes 0x oder nachgestelltes h. Die ID wird dann in eine Dezimalzahl konvertiert, bevor sie in der Datenbank gespeichert wird.
+* **Hexadezimalzahl**: Die ID wird als Hexadezimalzahl in ASCII-Form erwartet, ohne führendes 0x und nachgestelltes h. Die ID wird dann in eine Dezimalzahl umgewandelt, bevor sie in der Datenbank gespeichert wird.
 * **Hexadezimaler String**: Die ID muss ein ASCII-kodierter Text sein, der selbst eine Zeichenfolge ist, die als Hexadezimalwert kodiert wurde. In der PDU finden Sie beispielsweise 0x34 0x31 0x34 0x32 0x34 0x33, was zu ASCII „414243“ führt. Dieser String wird dann als hexadezimaler String von Bytes dekodiert und Sie erhalten „ABC“: Sie speichern die ID. Die ID „ABC“ wird in der Datenbank gespeichert.
 
 ### ID-Format im SR

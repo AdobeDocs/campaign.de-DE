@@ -6,25 +6,35 @@ feature: Workflows, Targeting Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 3e9f92c3-080f-441b-a15a-2ec9d056d1f9
-TQID: https://experienceleague.adobe.com/tUbJMqAfHEEm-PBuyCiu4dclE-AsEUxY0nXMTJA1BBE
+TQID: 'https://experienceleague.adobe.com/tUbJMqAfHEEm-PBuyCiu4dclE-AsEUxY0nXMTJA1BBE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
+    internal-label: Targeting Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 379
-ht-degree: 61%
-
+source-wordcount: '379'
+ht-degree: 100%
 ---
-
 # Inkrementelle Abfrage{#incremental-query}
 
 
 
 Inkrementelle Abfragen ermöglichen die regelmäßig wiederkehrende Auswahl einer Zielgruppe nach bestimmten Kriterien unter Ausschluss der Population, die in früheren Durchgängen bereits aufgrund dieser Kriterien ausgewählt wurde.
 
-Die bereits ausgewählte Population wird sowohl nach Workflow-Instanz als auch nach Aktivität im Speicher gespeichert. Das bedeutet, dass zwei Workflows, die aus derselben Vorlage gestartet wurden, nicht dasselbe Protokoll verwenden. Zwei Aufgaben, die auf derselben inkrementellen Abfrage für dieselbe Workflow-Instanz basieren, verwenden hingegen dasselbe Protokoll.
+Die zuvor ausgewählte Population wird nach Workflow-Instanz und nach Aktivität gespeichert. Dies bedeutet, dass zwei von derselben Vorlage gestartete Workflows nicht dasselbe Protokoll verwenden. Zwei Aufgaben, die auf derselben inkrementellen Abfrage im selben Workflow basieren, verwenden jedoch dasselbe Protokoll.
 
 Die Konfiguration der Abfrage entspricht der von Standardabfragen, aber die Ausführung wird geplant.
 
@@ -35,11 +45,11 @@ Die Konfiguration der Abfrage entspricht der von Standardabfragen, aber die Ausf
 
 >[!CAUTION]
 >
->Wenn das Ergebnis einer inkrementellen Abfrage während einer ihrer Ausführungen **0** beträgt, wird der Workflow bis zur nächsten programmierten Ausführung der Abfrage angehalten. Die Übergänge und Aktivitäten, die der inkrementellen Abfrage folgen, werden daher nicht vor der folgenden Ausführung verarbeitet.
+>Wenn das Ergebnis einer inkrementellen Abfrage bei einer ihrer Ausführungen gleich **0** ist, wird der Workflow bis zur nächsten planmäßigen Ausführung der Abfrage ausgesetzt. Die auf die inkrementelle Abfrage folgenden Transitionen und Aktivitäten werden nicht vor der nachfolgenden Ausführung verarbeitet.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Wählen Sie auf **[!UICONTROL Registerkarte]** Planung und Verlauf **[!UICONTROL die Option Ausführung]**. Die Aufgabe bleibt nach ihrer Erstellung aktiv und wird nur zu den Zeiten ausgelöst, die im Zeitplan für die Ausführung der Abfrage festgelegt sind. Wenn die Option deaktiviert wurde, wird die Abfrage **einmalig und sofort** ausgeführt.
+1. Wählen Sie in der Registerkarte **[!UICONTROL Planung und Verlauf]** die Option **[!UICONTROL Ausführung planen]**. Nach Erstellung bleibt die Aufgabe aktiv, aber sie startet nur zu den in der Planung angegebenen Zeitpunkten, um die Abfrage auszuführen. Wenn die Option deaktiviert wurde, wird die Abfrage **einmalig und sofort** ausgeführt.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]**.
 
    Im sich öffnenden **[!UICONTROL Planungsassistent]**-Fenster können Sie den Ausführungsrhythmus und den Gültigkeitszeitraum definieren.
@@ -56,7 +66,7 @@ Gehen Sie dazu wie folgt vor:
 
    * **[!UICONTROL Verlaufsumfang (Tage)]**
 
-     Bereits ausgewählte Empfänger können eine maximale Anzahl von Tagen ab dem Tag protokolliert werden, an dem sie angesprochen wurden. Wenn dieser Wert null ist, werden die Empfangenden nie aus dem Protokoll gelöscht.
+     Die bereits angesprochenen Empfangenden können ab dem Tag, an dem sie angesprochen wurden, bis zu einer Höchstzahl von Tagen protokolliert werden. Wenn dieser Wert null ist, werden die Empfangenden nie aus dem Protokoll gelöscht.
 
    * **[!UICONTROL Verlauf beim Start beibehalten]**
 

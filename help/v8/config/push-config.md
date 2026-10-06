@@ -6,25 +6,38 @@ role: Admin, Developer
 level: Intermediate
 hide: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-TQID: https://experienceleague.adobe.com/P8-MVht-FT2EuZMz6C4YpLuzu3797L-f63XO--Ai7B4
+TQID: 'https://experienceleague.adobe.com/P8-MVht-FT2EuZMz6C4YpLuzu3797L-f63XO--Ai7B4'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: b285c321f3b905150b31621941ea99608d627739
+    internal-label: Data collection
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1273
-ht-degree: 88%
-
+source-wordcount: '1273'
+ht-degree: 98%
 ---
-
 # Campaign SDKs mit Ihrer Mobile App integrieren {#integrate-campaign-sdk}
 
 Sie können Campaign SDKs für iOS und Android verwenden, um die Integration Ihrer App in die Adobe Campaign-Plattform zu ermöglichen.
@@ -605,7 +618,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
 1. **Tracking von stillen Benachrichtigungen**
 
-   Mit iOS können Sie stille Benachrichtigungen, eine Benachrichtigung oder Daten senden, die direkt an eine Mobile App gesendet werden, ohne sie anzuzeigen. Mit Adobe Campaign können Sie sie verfolgen.
+   Unter iOS können Sie stille Benachrichtigungen senden. Das sind Benachrichtigungen oder Daten, die direkt an eine App gesendet werden, ohne sie anzuzeigen. Mit Adobe Campaign können Sie sie nachverfolgen.
 
    Um stille Benachrichtigungen zu tracken, gehen Sie analog zum folgenden Beispiel vor:
 
@@ -655,7 +668,7 @@ Erfahren Sie in der [Google-Dokumentation](https://firebase.google.com/docs/andr
 
    * **Status** ermöglicht festzustellen, ob eine Registrierung erfolgreich war oder ob ein Fehler aufgetreten ist.
 
-   * **ErrorReason** liefert weitere Informationen zu den aufgetretenen Fehlern. Weitere Informationen zu verfügbaren Fehlern und ihren Beschreibungen finden Sie in der folgenden Tabelle.
+   * **ErrorReason** liefert zusätzliche Informationen zu den aufgetretenen Fehlern. Weiterführende Informationen zu möglichen Fehlern und deren Beschreibung finden Sie in der Tabelle unten.
 
    | Status | Beschreibung | ErrorReason |
    | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
@@ -897,7 +910,7 @@ Gehen Sie hier folgendermaßen vor:
 
 * Ordnen Sie Ihre Inhaltserweiterung der von Adobe Campaign gesendeten Kategorie zu:
 
-  Wenn Ihre Mobile App ein Bild anzeigen soll, können Sie den Kategoriewert in Adobe Campaign auf „Bild“ setzen und in Ihrer Mobile App eine Benachrichtigungserweiterung erstellen, für die der Parameter **UNNotificationExtensionCategory** auf „Bild“ gesetzt ist. Wenn die Push-Benachrichtigung auf dem Gerät empfangen wird, wird die Erweiterung entsprechend dem definierten Kategoriewert aufgerufen.
+  Wenn Ihre App ein Bild anzeigen soll, können Sie in Adobe Campaign den Kategoriewert „image“ wählen und in der App eine Benachrichtigungserweiterung mit dem durch „image“ festgelegten Parameter **UNNotificationExtensionCategory** erstellen. Wenn die Push-Benachrichtigung auf dem Gerät empfangen wird, wird die Erweiterung entsprechend dem definierten Kategoriewert aufgerufen.
 
 * Definieren Sie das Layout Ihrer Benachrichtigung.
 
@@ -905,7 +918,7 @@ Gehen Sie hier folgendermaßen vor:
 
 * Stellen Sie Ihre Medien dar.
 
-  Sie müssen Code hinzufügen, um die Mediendaten an das Widget weiterzuleiten. Im Folgenden finden Sie ein Beispiel für Code für ein Bild:
+  Sie müssen entsprechenden Code hinzufügen, um die Mediendaten an das Widget zu übertragen. Hier folgt ein Beispiel-Code für ein Bild:
 
   ```sql
   #import "NotificationViewController.h"

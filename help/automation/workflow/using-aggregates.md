@@ -5,23 +5,30 @@ description: Machen Sie sich mit der Verwendung von Aggregaten vertraut
 feature: Workflows
 version: Campaign v8, Campaign Classic v7
 exl-id: 7522f449-341e-4aef-8c1e-c49e13809c08
-TQID: https://experienceleague.adobe.com/9ho0yPBr-YfejB9MfSSLcSFlbbUhw8vOhEKev3-NAxg
+TQID: 'https://experienceleague.adobe.com/9ho0yPBr-YfejB9MfSSLcSFlbbUhw8vOhEKev3-NAxg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 673
-ht-degree: 64%
-
+source-wordcount: '673'
+ht-degree: 100%
 ---
-
 # Verwenden von Aggregaten{#using-aggregates}
 
 
 
 Ziel des folgenden Anwendungsbeispiels ist es, die zuletzt zur Datenbank hinzugefügten Empfänger zu identifizieren.
 
-Mithilfe des folgenden Prozesses wird das Erstellungsdatum der Empfänger in der Datenbank mit dem letzten bekannten Datum verglichen, an dem ein Empfänger mithilfe eines Aggregats erstellt wurde. Alle am selben Tag erstellten Empfänger werden ebenfalls ausgewählt.
+Unter Verwendung des folgenden Prozesses wird das Erstellungsdatum von Empfangenden in der Datenbank mithilfe eines Aggregats mit dem letzten bekannten Datum verglichen, an dem eine Empfängerin bzw. ein Empfänger erstellt wurde. Alle am selben Tag erstellten Empfangenden werden ebenfalls ausgewählt.
 
 Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erstellungsdatum)** ist mithilfe des folgenden Workflows möglich:
 
@@ -34,16 +41,16 @@ Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erst
 
 ## &#x200B;1. Schritt: Berechnung des Aggregats {#step-1--calculating-the-aggregate-result}
 
-1. Erstellen Sie eine Abfrage. Hier besteht das Ziel darin, das letzte bekannte Erstellungsdatum aus allen Empfängern in der Datenbank zu berechnen. Die Abfrage enthält daher keinen Filter.
+1. Erstellen Sie eine Abfrage. Hier ist das Ziel die Berechnung des letzten bekannten Erstellungsdatums aller Empfangenden in der Datenbank. Die Abfrage enthält daher keinen Filter.
 1. Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]**.
 1. Wählen Sie in den aufeinanderfolgenden Fenstern die Optionen **[!UICONTROL Daten in Relation mit der Filterdimension]** und **[!UICONTROL Daten der Filterdimension]**.
 1. Definieren Sie im Fenster **[!UICONTROL Hinzuzufügende Daten]** eine neue Spalte zur Berechnung des maximalen Werts im Feld **Erstellungsdatum** der Empfängertabelle. Verwenden Sie hierzu den Ausdruckseditor oder geben Sie direkt **max(@created)** in der **[!UICONTROL Ausdruck]**-Spalte ein. Klicken Sie dann auf **[!UICONTROL Beenden]**.
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Klicken Sie **[!UICONTROL Zusätzliche Daten bearbeiten]** und dann **[!UICONTROL Erweiterte Parameter…]**. Aktivieren Sie **[!UICONTROL Option „Automatisches Hinzufügen der Primärschlüssel der Zielgruppendimension deaktivieren]**.
+1. Klicken Sie auf **[!UICONTROL Zusätzliche Daten bearbeiten]** und dann auf **[!UICONTROL Erweiterte Parameter…]**. Aktivieren Sie die Option **[!UICONTROL Automatisches Hinzufügen der Primärschlüssel der Zielgruppendimension deaktivieren]**.
 
-   Diese Option stellt sicher, dass nicht alle Empfänger angezeigt werden und dass explizit hinzugefügte Daten nicht beibehalten werden. In diesem Fall bezieht er sich auf das letzte Datum, an dem ein Empfänger erstellt wurde.
+   Diese Option stellt sicher, dass nicht alle Empfangenden als Ergebnis angezeigt werden und dass explizit hinzugefügte Daten nicht beibehalten werden. Dies bezieht sich hier auf das letzte Datum, an dem eine Empfängerin bzw. ein Empfänger erstellt wurde.
 
    Lassen Sie die Option **[!UICONTROL Duplikate löschen (DISTINCT)]** angekreuzt.
 
@@ -54,7 +61,7 @@ Verwenden Sie die Schema-Bearbeitung, um die auf Empfänger bezogene Abfrage mit
 1. Wählen Sie als Hauptmenge die Abfrage bezüglich der Empfänger aus.
 1. Fügen Sie im **[!UICONTROL Relationen]**-Tab eine neue Relation hinzu und konfigurieren Sie sie wie folgt:
 
-   * Wählen Sie das temporäre Schema für das Aggregat aus. Die Daten für dieses Schema werden den Mitgliedern der Hauptmenge hinzugefügt.
+   * Wählen Sie das temporäre Schema des Aggregats aus. Die Daten dieses Schemas werden zu den Mitgliedern der Hauptmenge hinzugefügt.
    * Aktivieren Sie die Option **[!UICONTROL Einfachen Join verwenden]**, um das Ergebnis des Aggregats zu jedem Empfänger der Hauptmenge zuzuordnen.
    * Geben Sie schließlich an, dass es sich bei der Relation um eine **[!UICONTROL 1:1-Relation]** handelt.
 
@@ -64,13 +71,13 @@ Auf diese Weise wird das Ergebnis des Aggregats mit jedem einzelnen der Empfäng
 
 ## &#x200B;3. Schritt: Filterung der Empfänger mithilfe des Aggregats {#step-3--filtering-recipients-using-the-aggregate-}
 
-Sobald die Relation hergestellt wurde, bilden das Aggregatergebnis und die Empfänger einen Teil desselben temporären Schemas. Es ist daher möglich, einen Filter für das Schema zu erstellen, um das Erstellungsdatum der Empfänger und das letzte bekannte Erstellungsdatum, dargestellt durch die Aggregationsfunktion, zu vergleichen. Dieser Filter wird mithilfe einer Aufspaltungsaktivität ausgeführt.
+Sobald die Relation hergestellt wurde, bilden das Aggregatergebnis und die Empfangenden einen Teil desselben temporären Schemas. Dadurch ist es möglich, einen Filter zum Vergleichen des Erstellungsdatums der Empfangenden und des letzten bekannten Erstellungsdatums (dargestellt durch die Aggregatsfunktion) auf das Schema anzuwenden. Dieser Filter wird mithilfe einer Aufspaltungsaktivität angewendet.
 
 1. Wählen Sie im **[!UICONTROL Allgemein]**-Tab **Empfänger** als Zielgruppendimension und **Schema-Bearbeitung** als Filterdimension aus (um das Schema der eingehenden Transition zu filtern).
 1. Gehen Sie in den **[!UICONTROL Teilmengen]**-Tab, kreuzen Sie die Option **[!UICONTROL Filterbedingung für die Eingangspopulation hinzufügen]** an und klicken Sie auf **[!UICONTROL Bearbeiten...]**.
 1. Setzen Sie im Ausdruckseditor das Erstellungsdatum der Empfänger mit dem vom Aggregat berechneten Datum gleich.
 
-   Die Datumsfelder in der Datenbank werden im Allgemeinen in der Millisekunde gespeichert. Sie müssen diese daher für den gesamten Tag verlängern, um zu vermeiden, dass nur die Empfänger abgerufen werden, die in derselben Millisekunde erstellt wurden.
+   Die Datumsfelder in der Datenbank werden in der Regel auf die Millisekunde genau gespeichert. Die Datumsangaben müssen daher auf den ganzen Tag ausgedehnt werden, um nicht nur die Empfangenden abzurufen, die in derselben Millisekunde erstellt wurden.
 
    Im Ausdruckseditor steht hierzu die Funktion **ToDate** zur Verfügung, die Datumsangaben mit Uhrzeit in einfache Daten konvertiert.
 

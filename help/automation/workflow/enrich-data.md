@@ -6,20 +6,31 @@ feature: Workflows, Enrichment Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
-TQID: https://experienceleague.adobe.com/QsJGsTwSeUjWCeXl8rWzlxFHdVl2HN29HA28matqZbs
+TQID: 'https://experienceleague.adobe.com/QsJGsTwSeUjWCeXl8rWzlxFHdVl2HN29HA28matqZbs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: a643fca8-db7d-5178-8513-7b8f51dfd239
+    internal-label: Enrichment Activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 829
-ht-degree: 67%
-
+source-wordcount: '829'
+ht-degree: 100%
 ---
-
 # Anreichern von Daten{#enriching-data}
 
 
@@ -38,11 +49,11 @@ Den in der Marketing-Datenbank enthaltenen Kontakten soll über eine Webapp ein 
 
 ![](assets/uc1_enrich_1.png)
 
-Ein Kontakt in der Tabelle **[!UICONTROL Empfänger]** kann mit mehreren Zeilen in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** verknüpft werden. Die Beziehung zwischen diesen beiden Tabellen ist vom Typ 1-n. Im Folgenden finden Sie ein Beispiel für die Ergebnisprotokolle für einen Empfänger:
+Ein in der **[!UICONTROL Empfängertabelle]** enthaltener Kontakt kann mit mehreren Zeilen in der Tabelle der **[!UICONTROL Wettbewerbsergebnisse]** verknüpft sein. Die Beziehung zwischen diesen beiden Tabellen ist vom Typ 1:n. Im Folgenden finden Sie ein Beispiel für die Ergebnisprotokolle für eine empfangende Person:
 
 ![](assets/uc1_enrich_2.png)
 
-In diesem Anwendungsbeispiel wird das Versenden personalisierter Sendungen an Personen bezweckt, die am letzten Wettbewerb teilgenommen haben, abhängig von den erzielten Punkten. Der Empfänger mit der höchsten Punktzahl erhält den ersten Preis, der Empfänger mit der zweithöchsten Punktzahl einen Trostpreis und alle anderen erhalten eine Nachricht, die ihnen beim nächsten Mal mehr Glück wünschen.
+In diesem Anwendungsbeispiel wird das Versenden personalisierter Sendungen an Personen bezweckt, die am letzten Wettbewerb teilgenommen haben, abhängig von den erzielten Punkten. Die Person mit der höchsten Punktzahl erhält den ersten Preis, die Person mit der zweithöchsten Punktzahl einen Trostpreis und alle anderen Personen werden aufgefordert, ihr Glück beim nächsten Wettbewerb erneut zu versuchen.
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
@@ -87,7 +98,7 @@ In diesem Beispiel erfahren Sie, wie Sie Sendungen entsprechend des Felds **[!UI
 
    ![](assets/uc1_enrich_9.png)
 
-1. Gehen Sie zum Bildschirm **[!UICONTROL Sortieren]** und klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie das Feld **[!UICONTROL Score]** aus und aktivieren Sie das Kontrollkästchen in der Spalte **[!UICONTROL Absteigend]**, um Elemente der Felder **[!UICONTROL Score]** in absteigender Reihenfolge zu sortieren. Bei jeder Empfängerin bzw. jedem Empfänger wird durch die Aktivität Anreicherung eine Zeile hinzugefügt, die der höchsten Punktzahl für das letzte Spiel entspricht. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Klicken Sie im Bildschirm **[!UICONTROL Sortierung]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie das Feld **[!UICONTROL Punktzahl]** aus und aktivieren Sie das Kontrollkästchen in der Spalte **[!UICONTROL Absteigend]**, um die Elemente der **[!UICONTROL Punktzahl]**-Felder in absteigender Reihenfolge zu sortieren. Bei jeder Empfängerin bzw. jedem Empfänger wird durch die Anreicherungsaktivität eine Zeile mit der höchsten Punktzahl für das letzte Spiel hinzugefügt. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/uc1_enrich_10.png)
 
@@ -95,7 +106,7 @@ In diesem Beispiel erfahren Sie, wie Sie Sendungen entsprechend des Felds **[!UI
 
    ![](assets/uc1_enrich_11.png)
 
-Klicken Sie mit der rechten Maustaste auf die eingehende Transition der Anreicherungsaktivität und wählen Sie **[!UICONTROL Zielgruppe anzeigen]**. Die Arbeitstabelle enthält die folgenden Daten:
+Klicken Sie mit der rechten Maustaste auf die eingehende Transition der Anreicherungsaktivität und wählen Sie die Option **[!UICONTROL Zielgruppe anzeigen…]** aus. Die Arbeitstabelle enthält die folgenden Daten:
 
 ![](assets/uc1_enrich_13.png)
 
@@ -103,7 +114,7 @@ Das Schema der Arbeitstabelle stellt sich wie folgt dar:
 
 ![](assets/uc1_enrich_15.png)
 
-Erneuern Sie diesen Vorgang für die ausgehende Transition der Anreicherungsaktivität. Wir können sehen, dass die mit den Empfängerbewertungen verknüpften Daten hinzugefügt wurden. Die höchste Punktzahl jedes Empfängers wurde wiederhergestellt.
+Erneuern Sie diesen Vorgang für die ausgehende Transition der Anreicherungsaktivität. Wir können sehen, dass die mit den Empfängerbewertungen verknüpften Daten hinzugefügt wurden. Die höchste Punktzahl jeder empfangenden Person wurde wiederhergestellt.
 
 ![](assets/uc1_enrich_12.png)
 
@@ -117,11 +128,11 @@ Im Anschluss an die Anreicherung sorgt die **[!UICONTROL Aufspaltung]** für die
 
 ![](assets/uc1_enrich_18.png)
 
-1. Eine erste Teilmenge (**Gewinner**) wurde definiert, um den Empfänger mit der höchsten Punktzahl einzuschließen. Definieren Sie dazu eine Begrenzung der Anzahl der Datensätze, wenden Sie eine absteigende Sortierung auf die Punktzahl an und begrenzen Sie die Anzahl der Datensätze auf 1.
+1. Eine erste Teilmenge (**Gewinner**) wurde definiert, um die Person mit der höchsten Punktzahl einzuschließen. Definieren Sie hierzu eine Begrenzung der Anzahl der Einträge, sortieren Sie die Punktzahlen in absteigender Reihenfolge und begrenzen Sie die Anzahl der Einträge auf 1.
 
    ![](assets/uc1_enrich_16.png)
 
-1. Die zweite Teilmenge **Zweite**) enthält den Empfänger mit der zweithöchsten Punktzahl. Die Konfiguration entspricht der für die erste Teilmenge.
+1. Die zweite Teilmenge (**Zweiter Platz**) enthält die Person mit der zweithöchsten Punktzahl. Die Konfiguration erfolgt analog zur ersten Teilmenge.
 
    ![](assets/uc1_enrich_17.png)
 

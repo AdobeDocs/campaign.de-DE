@@ -6,22 +6,30 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-TQID: https://experienceleague.adobe.com/MWKNwVM6bS0V5jpaXEXZMuhgEHOWwBelpRBKyAnkY1I
+TQID: 'https://experienceleague.adobe.com/MWKNwVM6bS0V5jpaXEXZMuhgEHOWwBelpRBKyAnkY1I'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 237333ba-90fa-554c-bc8d-2047e6173477
+    internal-label: Cross Channel Orchestration
+  - id: 6641bfdc-d19c-56e4-9045-0f6d06e8a43b
+    internal-label: Programs
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Reporting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1309
-ht-degree: 88%
-
+source-wordcount: '1309'
+ht-degree: 91%
 ---
-
 # Erstellen von Programmen und Kampagnen{#create-programs-and-campaigns}
 
 Komponenten für die Kampagnenorchestrierung finden Sie auf der Registerkarte **[!UICONTROL Kampagnen]**. Hier können Sie einen Überblick über die Marketing-Programme und -Kampagnen und die damit verbundenen Elemente erhalten.
@@ -107,7 +115,7 @@ In den folgenden Abschnitten erfahren Sie, wie Sie Ihre Kampagne konfigurieren:
 
 ### Bearbeiten von Kampagneneinstellungen {#campaign-settings}
 
-Kampagnen werden über Kampagnenvorlagen erstellt. Sie können wiederverwendbare Vorlagen konfigurieren, für die einige Optionen ausgewählt und andere Einstellungen bereits gespeichert wurden.
+Kampagnen werden über Kampagnenvorlagen erstellt. Sie können wiederverwendbare Vorlagen verwenden, in denen einige Optionen ausgewählt werden können und andere Einstellungen bereits gespeichert sind.
 
 Für jede Kampagne stehen folgende Funktionen zur Verfügung:
 

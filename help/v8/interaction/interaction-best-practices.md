@@ -5,21 +5,30 @@ description: Best Practices für die Verwaltung des Interaction-Moduls in Adobe 
 feature: Interaction, Offers
 role: User, Admin
 exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
-TQID: https://experienceleague.adobe.com/OUP5tiLtOXdnbtE-Q-Y673b2sinBqHj3071zUMc23bc
+TQID: 'https://experienceleague.adobe.com/OUP5tiLtOXdnbtE-Q-Y673b2sinBqHj3071zUMc23bc'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Metadata
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1177
-ht-degree: 78%
-
+source-wordcount: '1177'
+ht-degree: 99%
 ---
-
 # Best Practices für Interaction {#interaction-best-practices}
 
 ## Allgemeine Empfehlungen {#general-recommendations}
@@ -30,30 +39,30 @@ In diesem Abschnitt werden Best Practices für die Verwaltung des **Interaction*
 
 * Wenn Sie **Interaktionen implementieren und konfigurieren**, müssen Sie die folgenden Empfehlungen beachten:
 
-   * Bei Batch-Modulen (die in der Regel in ausgehenden Kommunikationen wie E-Mails verwendet werden) ist der Durchsatz das Hauptproblem, da mehrere Kontakte gleichzeitig verarbeitet werden können. Der typische Engpass ist die Datenbankleistung.
-   * Die wichtigste Einschränkung für eine einheitliche Engine (wird normalerweise in eingehenden Kommunikationen wie einem Banner auf einer Website verwendet) ist Latenz, da jemand eine Antwort erwartet. Der typische Engpass ist die Leistung von CPU.
-   * Das Design des Angebotskatalogs hat einen großen Einfluss auf die Performance von Adobe Campaign.
-   * Bei der Arbeit mit vielen Angeboten empfiehlt es sich, diese in mehrere Angebotskataloge aufzuteilen.
+  * Beim Batch-Modul (in der Regel für ausgehende Kommunikation wie E-Mails verwendet) muss vor allem der Durchsatz berücksichtigt werden, da mehrere Kontakte zur selben Zeit verarbeitet werden können. Der typische Engpass ist die Datenbankleistung.
+  * Die Haupteinschränkung des Einzel-Moduls (in der Regel für eingehende Kommunikation wie Banner auf einer Website verwendet) ist die Latenz, da eine Antwort erwartet wird. Der typische Engpass ist die CPU-Leistung.
+  * Das Design des Angebotskatalogs hat einen großen Einfluss auf die Performance von Adobe Campaign.
+  * Bei der Arbeit mit vielen Angeboten empfiehlt es sich, diese in mehrere Angebotskataloge aufzuteilen.
 
 * Im Folgenden finden Sie einige Best Practices für die Arbeit mit **Eignungsregeln**:
 
-   * Vereinfachung der Regeln. Die Komplexität von Regeln wirkt sich auf die Leistung aus, da sie die Suche erweitert. Eine komplexe Regel ist jede Regel mit mehr als fünf Bedingungen.
-   * Um die Performance zu verbessern, können Regeln in verschiedene vordefinierte Filter zerlegt werden, die von mehreren Angeboten gemeinsam verwendet werden.
-   * Platzieren Sie die restriktivsten Regeln für Angebotskategorien an der höchstmöglichen Position im Baum. Dadurch filtern sie zuerst die meisten Kontakte heraus, reduzieren die Anzahl der Zielkontakte und verhindern, dass sie von weiteren Regeln verarbeitet werden.
-   * Setzen Sie die teuersten Regeln in Bezug auf Zeit oder Verarbeitung am unteren Ende des Baums. Dadurch werden diese Regeln nur für die verbleibende Zielgruppe ausgeführt.
-   * Beginnen Sie bei einer bestimmten Kategorie, um zu vermeiden, dass der gesamte Baum durchsucht wird.
-   * Um Verarbeitungszeit zu sparen, berechnen Sie Aggregate vorab, anstatt komplexe Regeln mit Joins zu erstellen. Versuchen Sie dazu, Kundendaten in einer Referenztabelle zu speichern, die innerhalb der Eignungsregeln nachgeschlagen werden kann.
-   * Verwenden Sie eine minimale Anzahl von Gewichtungen, um die Anzahl der Abfragen zu begrenzen.
-   * Es wird empfohlen, eine begrenzte Anzahl von Angeboten pro Platzierung zu haben. Dadurch wird ein schnellerer Abruf von Angeboten in beliebiger Platzierung gewährleistet.
-   * Verwenden Sie Indizes, insbesondere für häufig verwendete Suchspalten.
+  * Vereinfachen Sie die Regeln. Die Komplexität von Regeln wirkt sich auf die Leistung aus, da dies die Suche erweitert. Als komplexe Regeln gelten alle Regeln, die mehr als fünf Bedingungen enthalten.
+  * Um die Performance zu verbessern, können Regeln in verschiedene vordefinierte Filter zerlegt werden, die von mehreren Angeboten gemeinsam verwendet werden.
+  * Platzieren Sie die restriktivsten Regeln für Angebotskategorien an der höchstmöglichen Position in der Struktur. Auf diese Weise filtern sie zuerst die meisten Kontakte heraus, wodurch die Zielgruppe verkleinert wird und diese Kontakte nicht mehr von den anderen Regeln verarbeitet werden müssen.
+  * Positionieren Sie die umfassendsten Regeln in Bezug auf Zeit oder Verarbeitung ganz unten in der Struktur. Auf diese Weise werden diese Regeln nur für die verbleibende Zielgruppe ausgeführt.
+  * Beginnen Sie bei einer bestimmten Kategorie, um zu vermeiden, dass der gesamte Baum durchsucht wird.
+  * Berechnen Sie zur Reduzierung der Verarbeitungszeit Aggregate vorab, anstatt komplexe Regeln mit Joins zu erstellen. Speichern Sie dazu Kundendaten in einer Referenztabelle, die anhand von Eignungsregeln durchsucht werden kann.
+  * Verwenden Sie eine minimale Anzahl von Gewichtungen, um die Anzahl der Abfragen zu begrenzen.
+  * Es wird empfohlen, eine begrenzte Anzahl von Angeboten pro Platzierung zu verwenden. Dadurch wird ein schnellerer Abruf von Angeboten in allen Platzierungen gewährleistet.
+  * Verwenden Sie Indizes, insbesondere für häufig verwendete Suchspalten.
 
 * Nachfolgend sind einige Best Practices bezüglich der **Vorschlagstabelle** aufgeführt:
 
-   * Verwenden Sie möglichst wenige Regeln, um die Verarbeitung so schnell wie möglich zu gestalten.
-   * Beschränken Sie die Anzahl der Datensätze in der Vorschlagstabelle: Bewahren Sie nur die Datensätze auf, die zum Tracken der Statusaktualisierung und für die Regeln erforderlich sind, und archivieren Sie sie dann in einem anderen System.
-   * Führen Sie eine intensive Datenbankwartung für die Vorschlagstabelle durch, wie z. B. eine Neuerstellung des Index oder der Tabelle.
-   * Anzahl der pro Zielgruppe abgefragten Vorschläge begrenzen Legen Sie nicht mehr fest, als Sie tatsächlich verwenden werden.
-   * Vermeiden Sie möglichst Joins in den Regelbedingungen.
+  * Verwenden Sie möglichst wenige Regeln, um die Verarbeitung so schnell wie möglich zu gestalten.
+  * Beschränken Sie die Anzahl der Datensätze in der Vorschlagstabelle: Bewahren Sie nur die Datensätze auf, die zum Tracken der Statusaktualisierung und für die Regeln erforderlich sind, und archivieren Sie sie dann in einem anderen System.
+  * Führen Sie eine intensive Datenbankwartung für die Vorschlagstabelle durch, wie z. B. eine Neuerstellung des Index oder der Tabelle.
+  * Begrenzen Sie die Anzahl an pro Zielgruppe abgefragten Vorschlägen. Legen Sie nicht mehr als die tatsächlich verwendete Anzahl fest.
+  * Vermeiden Sie möglichst Joins in den Regelbedingungen.
 
 ## Tipps zum Verwalten von Angeboten {#tips-managing-offers}
 
@@ -121,7 +130,7 @@ Bei Verwendung von Interaction und manueller Auswahl von Angeboten können beide
 
 ### Erweitern des nms:offer-Schemas {#extending-nms-offer-schema}
 
-Achten Sie bei der Erweiterung :offer nms-Schemas darauf, dass Sie die bereits eingerichtete vordefinierte Struktur befolgen:
+Achten Sie bei der Erweiterung des nms:offer-Schemas darauf, dass Sie die bereits eingerichtete vordefinierte Struktur befolgen:
 * Definieren Sie ein neues Feld für die Inhaltsspeicherung unter `<element name="view">`.
 * Jedes neue Feld muss zweimal definiert werden: einmal als normales XML-Feld und einmal als CDATA-XML-Feld mit „_jst“ an den Namen angehängt. Beispiel:
 

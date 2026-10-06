@@ -4,21 +4,31 @@ description: Berechnung integrierter Berichtsmetriken
 feature: Reporting
 role: Developer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
-TQID: https://experienceleague.adobe.com/YmXVTLb7YprsFybV4JXJQuFdqtS8LNKIbfIZOAabsWI
+TQID: 'https://experienceleague.adobe.com/YmXVTLb7YprsFybV4JXJQuFdqtS8LNKIbfIZOAabsWI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3139
-ht-degree: 85%
-
+source-wordcount: '3155'
+ht-degree: 100%
 ---
-
 # Berechnung integrierter Berichtsmetriken {#metrics-calculation}
 
 ## Nutzer-Aktivitäten {#user-activities-1}
@@ -54,13 +64,13 @@ ht-degree: 85%
  </tbody> 
 </table>
 
-Dieser Bericht basiert auf der **[!UICONTROL Konsolidierte]** (nms:trackingStats). Diese aggregierte Tabelle wird aus Leistungsgründen verwendet, wenn Berichte anstelle der Tabelle **[!UICONTROL Empfänger-Trackinglogs]** (nms) angezeigt werden:trackingLogRcp und wird nicht in Echtzeit berechnet. Sie wird nicht in Echtzeit berechnet, sondern wenige Minuten nach Abruf der Trackinglogs erzeugt. Wenn die Indikatoren aktuell sind, sind die Ergebnisse mit denen der Indikatoren im Bericht **Trackingindikatoren** identisch. Die Kennzahl @totalclicks entspricht der Summe der Klicks über einen Zeitraum von 5 Minuten.
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats). Diese Aggregattabelle wird aus Leistungsgründen bei der Anzeige von Berichten anstelle der Tabelle **[!UICONTROL Trackinglogs des Empfängers]** (nms:trackingLogRcp) verwendet und nicht in Echtzeit berechnet. Sie wird nicht in Echtzeit berechnet, sondern wenige Minuten nach Abruf der Trackinglogs erzeugt. Wenn die Indikatoren aktuell sind, sind die Ergebnisse mit denen der Indikatoren im Bericht **Trackingindikatoren** identisch. Die Kennzahl @totalclicks entspricht der Summe der Klicks über einen Zeitraum von 5 Minuten.
 
 ## Unzustellbare Nachrichten und Bounces {#non-deliverables-and-bounces-1}
 
 **Aufschlüsselung nach Fehlertyp**
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Tracking]** (nms:deliveryLogStats).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatistiken]** (nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -141,7 +151,7 @@ Der zweite Teil des Berichts zeigt die Aufschlüsselung der fehlgeschlagenen Nac
 
 ## Browser {#browsers-1}
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Internetbrowser-]** (nms:userAgentsStats).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Browser-Statistiken]** (nms:userAgentsStats).
 
 **Allgemeine Statistiken**
 
@@ -211,7 +221,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Internetbrowser-]** (nms:us
 
 ## Teilen über soziale Netzwerke {#sharing-to-social-networks-1}
 
-Dieser Bericht basiert auf den **[!UICONTROL Versand]** (nms:delivery), **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats) und **[!UICONTROL Webtracking]** (nms:webTrackingLog).
+Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand]** (nms:delivery), **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats) und **[!UICONTROL Webtracking]** (nms:webTrackingLog).
 
 <table> 
  <thead> 
@@ -348,7 +358,7 @@ Dieser Bericht basiert auf den **[!UICONTROL Versand]** (nms:delivery), **[!UICO
 
 ## Statistiken zu Teilungsaktivitäten {#statistics-on-sharing-activities-1}
 
-Dieser Bericht basiert auf den **[!UICONTROL Versand]** (nms:delivery), **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats) und **[!UICONTROL Webtracking]** (nms:webTrackingLog).
+Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand]** (nms:delivery), **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats) und **[!UICONTROL Webtracking]** (nms:webTrackingLog).
 
 <table> 
  <thead> 
@@ -383,7 +393,7 @@ Dieser Bericht basiert auf den **[!UICONTROL Versand]** (nms:delivery), **[!UICO
 
 ## Betriebssysteme {#operating-systems-1}
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Internetbrowser-]** (nms:userAgentsStats).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Browser-Statistiken]** (nms:userAgentsStats).
 
 **Allgemeine Statistiken**
 
@@ -453,7 +463,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Internetbrowser-]** (nms:us
 
 ## Abonnement-Verfolgung {#subscription-tracking-1}
 
-Dieser Bericht basiert auf der **[!UICONTROL Services]**-Tabelle (nms:service).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Dienste]** (nms:service).
 
 <table> 
  <thead> 
@@ -500,7 +510,7 @@ Dieser Bericht basiert auf der **[!UICONTROL Services]**-Tabelle (nms:service).
 
 ## Tracking-Indikatoren {#tracking-indicators-1}
 
-Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Tracking]** (nms:deliveryLogStats) und **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats).
+Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstatistiken]** (nms:deliveryLogStats) und **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats).
 
 <table> 
  <thead> 
@@ -697,7 +707,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Tracking]** (
 
 ## URLs und Clickstreams {#urls-and-click-streams-1}
 
-Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
 
 <table> 
  <thead> 
@@ -731,7 +741,7 @@ Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
    <td> Klicks<br /> </td> 
    <td> @_click<br /> </td> 
    <td> Zählung aller @totalClicks mit URL-Primärschlüssel ungleich 1.<br /> </td> 
-   <td> COUNT(IIF([@url-id] != 1, @totalClicks, 0))<br /> </td> 
+   <td> count(Iif([@url-id] != 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Klicks (in %)<br /> </td> 
@@ -744,7 +754,7 @@ Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
 
 ## Versandzusammenfassung {#delivery-summary-1}
 
-Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
 
 <table> 
  <thead> 
@@ -797,13 +807,13 @@ Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
 
 ## Klicks {#hot-clicks-1}
 
-Dieser Bericht basiert auf den Tabellen Versand (nms:delivery) und **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats).
+Dieser Bericht basiert auf den Tabellen „Versand“ (nms:delivery) und **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats).
 
-Dieser Bericht zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentualen Anteil der Klicks auf Links für jeden Link. Abmelde-Links für Gestaltungsbausteine und Mirrorseiten-Links werden in der Gesamtklickzahl berücksichtigt, aber nicht im Bericht angezeigt.
+Dieser Bericht zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentualen Klickanteil für jeden Link. Gestaltungsbausteine, Abmelde-Links und Mirrorseiten-Links werden bei der Gesamtanzahl der Klicks berücksichtigt, jedoch nicht im Bericht angezeigt.
 
 ## Tracking-Statistiken {#tracking-statistics-1}
 
-Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
 
 <table> 
  <thead> 
@@ -838,7 +848,7 @@ Dieser Bericht basiert auf der **[!UICONTROL delivery]**-Tabelle (nms:delivery).
 
 ## Versandstatistiken {#delivery-statistics-1}
 
-Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Tracking]** (nms:deliveryLogStats).
+Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatistiken]** (nms:deliveryLogStats).
 
 <table> 
  <thead> 
@@ -897,7 +907,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Tracking]** (n
 
 ## Aufschlüsselung der Öffnungen {#breakdown-of-opens-1}
 
-Dieser Bericht basiert auf den **Sendungen** (nms:delivery) und **Trackinglogs** (nms:trackingLogRcp).
+Dieser Bericht basiert auf den Tabellen **Sendungen** (nms:delivery) und **Trackinglogs** (nms:trackingLogRcp).
 
 <table> 
  <thead> 
@@ -920,7 +930,7 @@ Dieser Bericht basiert auf den **Sendungen** (nms:delivery) und **Trackinglogs**
 
 ## Andere Indikatoren {#other-indicators}
 
-Der **Gesendet**-Indikator (@sent), auf den über den Knoten **Sendungen (nms:delivery) > Indikatoren zugegriffen**, entspricht der Gesamtzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird ausschliesslich für SMS-Sendungen verwendet und darf nicht für andere Versandtypen genutzt werden. Er ist nicht zu verwechseln mit den Indikatoren **@success** und **@processed**.
+Der Indikator **Gesendet** (@sent), auf den über den Knoten **Sendungen (nms:delivery) > Indikatoren** zugegriffen wird, entspricht der Gesamtzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird ausschliesslich für SMS-Sendungen verwendet und darf nicht für andere Versandtypen genutzt werden. Er ist nicht zu verwechseln mit den Indikatoren **@success** und **@processed**.
 
 ## Indikatoren synchronisieren {#indicator-synchronization}
 
@@ -928,7 +938,7 @@ Falls Sie bei bestimmten Indikatoren eine Desynchronisierung oder Inkonsistenz b
 
 ## Öffnungs-Tracking {#tracking-opens-}
 
-Damit Adobe Campaign das Öffnen von Nachrichten erkennen kann, muss der Empfänger die Bilder in der E-Mail herunterladen. HTML und Multipart/Alternative-E-Mails enthalten ein Bild mit 0 Pixel, mit dem Sie geöffnete Nachrichten erkennen können. Da Nachrichten im Textformat keine Bilder enthalten, ist es unmöglich festzustellen, ob sie geöffnet wurden oder nicht. Bei Werten, die auf der Grundlage der Öffnungen von Nachrichten berechnet werden, handelt es sich aufgrund der mit der Bildanzeige verknüpften Fehlermarge immer um Schätzungen.
+Damit Adobe Campaign das Öffnen einer Nachricht erkennt, muss die Empfängerin bzw. der Empfänger die Bilder in der E-Mail herunterladen. HTML- und Multipart/Alternative-E-Mails enthalten ein 0-Pixel-Bild, mit dem Sie geöffnete Nachrichten erkennen können. Da Nachrichten im Textformat keine Bilder enthalten, ist es nicht möglich festzustellen, ob sie geöffnet wurden oder nicht. Bei den anhand der geöffneten Nachrichten berechneten Werten handelt es sich aufgrund der mit der Bildanzeige verbundenen Fehlerspanne immer um Schätzungen.
 
 ## Unterschied zwischen Personen und Zielgruppenempfängern {#targeted-persons---recipients}
 
@@ -936,6 +946,6 @@ Adobe Campaign unterscheidet in den Statistiken gewisser Berichte zwischen Perso
 
 Zielgruppenempfänger sind die Kontakte, an die der Versand ursprünglich gesendet wurde.
 
-Die Anzahl der Personen umfasst die Zielgruppenempfänger sowie alle Personen, an die die E-Mail weitergeleitet wurde. Jedes Mal, wenn ein neuer Browser geöffnet oder geklickt wird (in dem die Nachricht noch nicht geöffnet wurde), wird eine andere Person der Statistik hinzugefügt.
+Die Anzahl der Personen umfasst die Empfangenden aus der Zielgruppe sowie alle Personen, an die die E-Mail weitergeleitet wurde. Jedes Mal, wenn eine Öffnung oder ein Klick in einem neuen Browser erfolgt, d. h. in einem Browser, in dem die Nachricht noch nie geöffnet wurde, wird eine neue Person gezählt.
 
-Wenn Sie beispielsweise eine E-Mail (von Adobe Campaign gesendet) am Arbeitsplatz erhalten und öffnen oder klicken, werden Sie als Zielgruppenempfänger gezählt (d. h. Empfänger=1, Person=1). Wenn Sie diese E-Mail an zwei Freunde weiterleiten, ist die Anzahl der Zielgruppenempfänger weiterhin gleich 1, während die Anzahl der Personen drei beträgt. Der Wert 3 entspricht jedem Öffnen/Klicken in einem neuen Browser.
+Wenn Sie beispielsweise eine E-Mail (von Adobe Campaign gesendet) am Arbeitsplatz erhalten und öffnen oder darin klicken, werden Sie als Empfängerin bzw. Empfänger aus der Zielgruppe gezählt (d. h. Empfänger=1, Person=1). Wenn Sie diese E-Mail an zwei Freunde weiterleiten, ist die Anzahl der Empfangenden aus der Zielgruppe weiterhin gleich 1, während die Anzahl der Personen 3 beträgt. Der Wert 3 entspricht jedem Öffnen/Klicken in einem neuen Browser.

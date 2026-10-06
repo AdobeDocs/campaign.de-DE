@@ -6,24 +6,36 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-TQID: https://experienceleague.adobe.com/ZhEye69T-u--8tgV8ONBX9nRkdJFUSvx8RIKqq0bFsI
+TQID: 'https://experienceleague.adobe.com/ZhEye69T-u--8tgV8ONBX9nRkdJFUSvx8RIKqq0bFsI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
+subfeature_v2:
+  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
+  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 2044
-ht-degree: 85%
-
+source-wordcount: '2044'
+ht-degree: 88%
 ---
-
 # Arbeiten mit Filtern{#create-filters}
 
 Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur noch Einträge enthält, die bestimmten Kriterien entsprechen. Diese Teilmenge kann dann für zielgerichtete Aktionen (wie Aktualisierungen oder Zielgruppenerstellung) oder für Analysen verwendet werden.
@@ -52,7 +64,7 @@ Standardmäßig zeigt Adobe Campaign alle Datenbankdatensätze an, die der Benut
 
 ![](assets/filter_web_zone.png)
 
-Es gibt mehrere Möglichkeiten, die anzuzeigenden Daten zu filtern. Bei Bedarf können diese zusammen verwendet werden. Auf den folgenden Registerkarten erfahren Sie mehr über Filteroptionen.
+Es gibt unterschiedliche Möglichkeiten, die angezeigten Daten zu filtern und zu anzuzeigen. Bei Bedarf können diese zusammen verwendet werden. Auf den folgenden Registerkarten erfahren Sie mehr über Filteroptionen.
 
 
 >[!BEGINTABS]
@@ -71,7 +83,7 @@ Nur die Profile im Ordner werden angezeigt:
 
 >[!TAB Nach Status filtern]
 
-Je nach Typ der angezeigten Informationen können Sie einen Filter nach Status oder Status anwenden.
+Je nach Typ der angezeigten Informationen können Sie einen Filter nach Status oder Zustand anwenden.
 
 Sie können beispielsweise für Sendungen festlegen, dass nur abgeschlossene Sendungen angezeigt werden sollen, wie unten dargestellt:
 
@@ -79,7 +91,7 @@ Sie können beispielsweise für Sendungen festlegen, dass nur abgeschlossene Sen
 
 >[!TAB Sortieren nach]
 
-Die Sortierreihenfolge der auf den Seiten angebotenen Daten kann über die Dropdown-Liste rechts neben dem Filterfeld „pro Ordner“ ausgewählt werden. Der Inhalt dieses Felds hängt vom Datentyp auf der Seite ab.
+Über die Dropdown-Liste rechts neben dem Filterfeld „nach Ordner“ können Sie die Sortierreihenfolge der angezeigten Daten auswählen. Der Inhalt dieses Felds hängt vom Typ der Daten auf der Seite ab.
 
 Sie können Aufgaben beispielsweise nach Priorität, Erstellungsdatum oder alphabetischer Reihenfolge sortieren.
 
@@ -418,6 +430,6 @@ Für vordefinierte Filter sind erweiterte Parameter verfügbar. Um darauf zuzugr
 
 * Über den Link **[!UICONTROL Erweiterte Parameter]** können Sie zusätzliche Einstellungen definieren.
 
-   * Sie können eine SQL-Tabelle mit dem Filter verknüpfen, um ihn für alle Bearbeiter freizugeben, die die Tabelle gemeinsam nutzen.
-   * Um zu verhindern, dass Benutzer den Filter überschreiben, wählen Sie die Option **[!UICONTROL Filter nicht weiter einschränken]** aus. Diese Option ist beispielsweise für die Filter &quot;Versandempfänger&quot; und &quot;Empfänger von Sendungen eines bestimmten Ordners&quot; aktiv, die im Versand-Assistenten verfügbar sind. Diese Filter können nicht überschrieben werden.
+  * Sie können eine SQL-Tabelle mit dem Filter verknüpfen, um ihn für alle Bearbeiter freizugeben, die die Tabelle gemeinsam nutzen.
+  * Um zu verhindern, dass Benutzer den Filter überschreiben, wählen Sie die Option **[!UICONTROL Filter nicht weiter einschränken]** aus. Diese Option ist beispielsweise für die Filter &quot;Versandempfänger&quot; und &quot;Empfänger von Sendungen eines bestimmten Ordners&quot; aktiv, die im Versand-Assistenten verfügbar sind. Diese Filter können nicht überschrieben werden.
 

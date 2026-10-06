@@ -5,20 +5,29 @@ feature: Experience Platform Integration
 role: Developer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-TQID: https://experienceleague.adobe.com/sQgS-ig3-OfCLseGyqsbismNI-qqy1E2io6P17HZsUU
+TQID: 'https://experienceleague.adobe.com/sQgS-ig3-OfCLseGyqsbismNI-qqy1E2io6P17HZsUU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Experience Platform integration
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 583
+source-wordcount: '583'
 ht-degree: 93%
-
 ---
-
 # Freigeben und Synchronisieren von Zielgruppen mit Adobe Experience Platform {#gs-ac-aep}
 
 Die Ziel- und Quell-Connectoren für Adobe Campaign Managed Cloud Service ermöglichen eine nahtlose Integration zwischen Adobe Campaign und Adobe Experience Platform. Diese Integration ermöglicht Ihnen Folgendes:
@@ -32,16 +41,16 @@ Die wichtigsten Schritte zum Senden von Adobe Experience Platform-Zielgruppen an
 
 * Verwenden Sie eine **Zielverbindung** von Adobe Campaign Managed Cloud Services, um Experience Platform-Segmente an Adobe Campaign zu senden:
 
-   1. Greifen Sie auf den Adobe Experience Platform-Zielkatalog zu und erstellen Sie eine neue **[!UICONTROL Adobe Campaign Managed Cloud Services]**-Verbindung.
-   1. Geben Sie Details zur zu verwendenden Campaign-Instanz an und wählen Sie **[!UICONTROL Zielgruppen-Synchronisierung]** als Synchronisierungstyp.
+  1. Greifen Sie auf den Adobe Experience Platform-Zielkatalog zu und erstellen Sie eine neue **[!UICONTROL Adobe Campaign Managed Cloud Services]**-Verbindung.
+  1. Geben Sie Details zur zu verwendenden Campaign-Instanz an und wählen Sie **[!UICONTROL Zielgruppen-Synchronisierung]** als Synchronisierungstyp.
 
-      ![](assets/aep-audience-sync.png){width="800" align="center"}
+     ![](assets/aep-audience-sync.png){width="800" align="center"}
 
-   1. Wählen Sie die Segmente aus, die an Adobe Campaign gesendet werden sollen.
-   1. Konfigurieren Sie die Attribute, die Sie in die Zielgruppe exportieren möchten.
-   1. Sobald der Ablauf konfiguriert wurde, stehen die ausgewählten Zielgruppen zur Aktivierung in Adobe Campaign zur Verfügung.
+  1. Wählen Sie die Segmente aus, die an Adobe Campaign gesendet werden sollen.
+  1. Konfigurieren Sie die Attribute, die Sie in die Zielgruppe exportieren möchten.
+  1. Sobald der Ablauf konfiguriert wurde, stehen die ausgewählten Zielgruppen zur Aktivierung in Adobe Campaign zur Verfügung.
 
-      ![](assets/aep-destination.png){width="800" align="center"}
+     ![](assets/aep-destination.png){width="800" align="center"}
 
   Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [&#128279;](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 

@@ -3,19 +3,22 @@ title: Leitfaden zu E-Mail-Tracking-Pixel und CNIL
 description: Verstehen der aktualisierten CNIL-Anleitung zu E-Mail-Tracking-Pixeln und den Adobe Campaign-Funktionen, die Compliance-Bemühungen unterstützen können.
 version: Campaign v8, Campaign Classic v7
 hide: true
-source-git-commit: 124f23f384d0eb974a22e40eed3904ed43f8f9db
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 3%
-
 ---
-
 
 # Grundlegendes zur aktualisierten CNIL-Anleitung zu E-Mail-Tracking-Pixeln
 
 Dieser Beitrag dient nur zu Informationszwecken. Es ist keine Rechtsberatung und garantiert nicht, dass Sie das geltende Recht einhalten. Die unten beschriebenen Adobe Campaign-Produktfunktionen sind Bausteine, die eine konforme Implementierung unterstützen können, wenn sie entsprechend konfiguriert und betrieben werden. Jeder Kunde ist für die Feststellung und Erfüllung seiner Verpflichtungen nach geltendem Recht verantwortlich.
 
-## Überblick
+## Übersicht
 
 Am 14. April 2026 veröffentlichte die _Commission nationale de l&#39;informatique et des libertés_ (CNIL), Frankreichs Datenschutzbehörde, eine [Empfehlung zur Verwendung von Tracking-Pixeln in E-Mails](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf). In der Anleitung wird klargestellt, wann eine Zustimmung erforderlich ist, und die Bedeutung ordnungsgemäßer Zustimmungspraktiken für das E-Mail-Pixel-Tracking hervorgehoben. Diese Richtlinie könnte sich auf die Versandpraktiken von Entitäten auswirken, die E-Mails an Abonnenten mit Sitz in Frankreich versenden.
 

@@ -6,20 +6,29 @@ feature: Workflows
 role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-TQID: https://experienceleague.adobe.com/xGSqzmm1kxKvSViuqdN0a-AwIuDxnNjWBHwH1bwAXtU
+TQID: 'https://experienceleague.adobe.com/xGSqzmm1kxKvSViuqdN0a-AwIuDxnNjWBHwH1bwAXtU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 497
-ht-degree: 90%
-
+source-wordcount: '497'
+ht-degree: 100%
 ---
-
 # Überwachen technischer Workflows {#monitoring-technical-workflows}
 
 Technische Workflows müssen überwacht werden und bei einer Störung müssen Maßnahmen ergriffen werden.
@@ -30,7 +39,7 @@ Auf das Instanz-Monitoring-Dashboard können Sie über den Tab **[!UICONTROL Mon
 
 ![](assets/monitoring_technical_workflows1.png)
 
-Stellen Sie unter Systemindikatoren und Kerndateien sicher, dass keine Indikatoren rot hervorgehoben sind. Wenn dies der Fall ist und es einige sind, sollten Sie:
+Prüfen Sie unter „Systemindikator“ und „Core-Dateien“, ob Indikatoren rot hervorgehoben sind. Wenn dies der Fall ist, sollten Sie Folgendes tun:
 
 * Prüfen Sie, ob die erforderlichen Prozesse immer aktiv sind.
 * Vergewissern Sie sich, dass keiner der Prozesse veraltet ist.
@@ -88,7 +97,7 @@ Alle benutzerdefinierten technischen Workflows sollten in einem Arbeitsblatt mit
 
 ## Planung und Automatisierung der Überwachung {#planning-and-automation-of-monitoring}
 
-Die Planung der Workflow-Überwachung verbessert ihre Effizienz. Einige Aufgaben müssen täglich ausgeführt werden, während andere Aufgaben wöchentlich oder monatlich ausgeführt werden können.
+Die Planung der Workflow-Überwachung verbessert ihre Effizienz. Manche Aufgaben müssen täglich ausgeführt werden, während andere wöchentlich oder monatlich erfolgen.
 
 Die Überwachung kann möglichst effizient gestaltet werden, indem Workflows in Ordnern angeordnet werden, die nach der wiederkehrenden Aufgabe benannt und nach dem Ausführungszeitpunkt sortiert sind.
 
