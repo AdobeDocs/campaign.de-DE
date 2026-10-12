@@ -92,7 +92,7 @@ Die Benutzeroberfläche von Adobe Campaign nutzt viele Web-Anwendungen für den 
 
 Die integrierten Web-Anwendungen werden im Ordner **Administration > Konfiguration > Web-Anwendungen** des Explorers gespeichert.
 
-Wie Sie eine Übersichtsseite in Campaign erstellen, erfahren Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-applications/use-cases-creating-overviews#creating-a-single-page-web-application){target="_blank"}
+Wie Sie eine Übersichtsseite in Campaign erstellen, erfahren Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-applications/use-cases-creating-overviews#creating-a-single-page-web-application){target="_blank"}
 
 
 ## Anpassen von Listen und Erstellen von Filtern {#gs-lists-and-filters}
