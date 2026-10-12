@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 93%
+source-wordcount: '525'
+ht-degree: 88%
 ---
 # Verwaltung von Abonnements und Abmeldungen {#optin-optout}
 
@@ -67,7 +67,7 @@ Folgende Optionen stehen zum Anmelden (Opt-in) eines Profils für einen Service 
 
   ![](assets/web-app.png)
 
-  Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=de#create-a-subscription--form-with-double-opt-in){target="_blank"}.
+  Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"}.
 
 
 * Erstellen Sie einen Zielgruppen-Workflows und nutzen Sie die Aktivität **[!UICONTROL Anmeldedienst]**.
@@ -99,5 +99,5 @@ Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](h
 <!--
 You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages.
 
-For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=de#viral-marketing--forward-to-a-friend){target="_blank"}
+For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html#viral-marketing--forward-to-a-friend){target="_blank"}
 -->
