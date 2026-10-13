@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 100%
+source-wordcount: '1073'
+ht-degree: 98%
 ---
 # Aktualisieren von Adobe Experience Platform-Profilen über Adobe Campaign-Landingpages {#ac-aep-lp}
 
@@ -123,7 +123,7 @@ Auf den nachstehenden Registerkarten finden Sie die beiden Methoden:
 
 >[!TAB Hinzufügen von Optionen mithilfe einer JavaScript-Code-Aktivität]
 
-Um diese Optionen bei Ausführung des Landingpage-Workflows automatisch zu konfigurieren, fügen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität zu Ihrem Workflow mit dem unten stehenden Code hinzu. [Erfahren Sie, wie Sie eine JavaScript-Code-Aktivität konfigurieren](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=de#JavaScript-code){target="_blank"}.
+Um diese Optionen bei Ausführung des Landingpage-Workflows automatisch zu konfigurieren, fügen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität zu Ihrem Workflow mit dem unten stehenden Code hinzu. [Erfahren Sie, wie Sie eine JavaScript-Code-Aktivität konfigurieren](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
 
 Bei Ausführung des Workflows werden die Optionen automatisch in der Campaign-Konsole mit den angegebenen Werten erstellt.
 
