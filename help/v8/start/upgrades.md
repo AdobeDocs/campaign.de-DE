@@ -1,5 +1,5 @@
 ---
-title: Campaign-Versionen und -Upgrades
+title: Campaign-Versionen, Upgrades und Sicherheit
 description: Weitere Informationen über die Campaign-Versionen und -Upgrades
 feature: Release Notes
 role: User
@@ -28,12 +28,12 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: b5e9265db5409f3f0fada35c43cb08fafa1ec4e0
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 28%
+source-wordcount: '1621'
+ht-degree: 18%
 ---
-# Versionen und Upgrades {#upgrades}
+# Versionen, Upgrades und Sicherheit {#upgrades}
 
 Adobe Campaign v8 wird ausschließlich als **Managed Cloud Services**-Lösung angeboten. Adobe verwaltet und führt jedes Server-seitige Upgrade für Sie durch - es gibt keine lokale oder hybride Bereitstellung von v8 und kein Server-Upgrade, um es selbst zu planen oder durchzuführen.
 
@@ -51,7 +51,7 @@ Außerdem sollten Sie als Kundin bzw. Kunde sicherstellen, dass Sie die neuesten
 >
 >Adobe behält sich das Recht vor, jederzeit ohne vorherige Ankündigung kritische Sicherheits-Patches auf Ihre gehostete Umgebung anzuwenden, um Sicherheitslücken so schnell wie möglich zu beheben. Diese Patches werden ohne Service-Unterbrechung bereitgestellt. Die Behebung einer kritischen Sicherheitslücke hat Vorrang vor der Vorabbenachrichtigung.
 
-## Campaign-Versionen {#versions}
+## Campaign-Versionen und -Upgrades {#versions}
 
 Adobe Campaign veröffentlicht regelmäßig Produktversionen, die die Leistung, Sicherheit, Logik und Benutzerfreundlichkeit der Campaign-Infrastruktur verbessern.
 
@@ -61,11 +61,11 @@ Bei den Upgrades kann es sich um folgende Arten handeln:
 * **Geringfügige Upgrades** von einer Nebenversion zur anderen, z. B. von v8.5 zu v8.6. Diese Upgrades beinhalten Verbesserungen, Kompatibilitäts- und Sicherheitsaktualisierungen sowie Fehlerbehebungen.
 * **Patch-**: von einer Patch-Version auf eine andere, z. B. von v8.5.1 auf v8.5.2. Diese Upgrades beinhalten Sicherheitsaktualisierungen und -korrekturen.
 
-Detaillierte Informationen zu den einzelnen neuen Versionen finden Sie in den [Versionshinweisen](release-notes.md). Sicherheitsbezogene Fehlerbehebungen werden in den jeweiligen Versionshinweisen aufgeführt - siehe [Wie kann ich über die Veröffentlichung einer neuen Version informiert werden?](#upgrades-0) Unten.
+Detaillierte Informationen zu den einzelnen neuen Versionen finden Sie in den [Versionshinweisen](release-notes.md). Sicherheitsbezogene Fehlerbehebungen werden in den jeweiligen Versionshinweisen aufgeführt. Weitere Informationen zu Sicherheitsbenachrichtigungen finden Sie unter [Bleiben Sie informiert](#security-staying-informed).
 
 Um eine stabile Konfiguration sicherzustellen, empfiehlt Adobe, **genau dieselbe Version** auf allen Campaign-Servern zu installieren. Außerdem muss sich die Client-Konsole, sofern in den [Versionshinweisen](release-notes.md) nicht anders angegeben, auf **genau derselben Version** wie die Server-Instanz befinden. Weitere Informationen dazu, wie Sie die Client-Konsole aktualisieren, erhalten Sie auf [dieser Seite](../start/connect.md#upgrade-ac-console).
 
-## Halten Sie Ihre Client-Konsole auf dem neuesten Stand {#ac-upgrades}
+### Halten Sie Ihre Client-Konsole auf dem neuesten Stand {#ac-upgrades}
 
 Wenn Sie Campaign Managed Services-Kunde sind und eine neue Campaign-Version verfügbar ist, wird Ihre Serverinfrastruktur von Adobe aktualisiert, ohne dass Sie diesbezüglich weitere Maßnahmen ergreifen müssen.
 
@@ -76,11 +76,9 @@ Da das Server-Upgrade automatisch durchgeführt wird **kann an der** Client-Kons
 
 Um dies zu vermeiden, aktualisieren Sie Ihre Client-Konsole, sobald Sie über eine neue Version benachrichtigt werden. Erfahren Sie, wie Sie [Ihre Client-Konsole aktualisieren](../start/connect.md#upgrade-ac-console).
 
-Beachten Sie, dass Sie als Kunde bzw. Kundin auch sicherstellen müssen, dass Sie die neuesten unterstützten Versionen der in der (Kompatibilitätsmatrix[&#x200B; aufgelisteten Systeme &#x200B;](compatibility-matrix.md).
+Beachten Sie, dass Sie als Kunde bzw. Kundin auch sicherstellen müssen, dass Sie die neuesten unterstützten Versionen der in der (Kompatibilitätsmatrix[ aufgelisteten Systeme ](compatibility-matrix.md).
 
-## Häufig gestellte Fragen {#upgrades-faq}
-
-### So überprüfen Sie Ihre Campaign-Version {#version}
+### Überprüfen Sie Ihre Campaign-Version {#version}
 
 Öffnen Sie über die Client-Konsole das Menü **Hilfe > Über…**, um Ihre Campaign-Version zu überprüfen.
 
@@ -97,15 +95,15 @@ Sie erhalten folgende Informationen:
 >
 >Wenn die für Ihre Client-Konsole angezeigte Version nicht mit der für Ihren Anwendungs-Server angezeigten Version übereinstimmt, aktualisieren Sie Ihre Konsole wie unter [Halten Sie Ihre Client-Konsole auf dem neuesten Stand](#ac-upgrades) beschrieben.
 
-### So erhalten Sie Informationen zu Veröffentlichungen neuer Versionen {#upgrades-0}
+### Ankündigungen zu Produktversionen {#upgrades-0}
 
-Neue Versionen und die damit verbundenen Änderungen, einschließlich Sicherheitskorrekturen, sind in den [Versionshinweisen](release-notes.md) aufgeführt. Sobald eine neue Version verfügbar ist, setzt sich der Adobe-Support mit Ihnen in Verbindung und aktualisiert Ihre Serverumgebungen. Sie müssen die Client-Konsole separat aktualisieren (siehe [Halten Sie die Client-Konsole auf dem neuesten Stand](#ac-upgrades)).
+Neue Versionen und deren Änderungen werden in den [Versionshinweisen](release-notes.md) aufgeführt.
 
-Um über neue Versionen von Experience Cloud-Lösungen und deren Inhalt informiert zu werden, abonnieren Sie die Mitteilung [Adobe Priority Product Updates](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"}.
+Abonnieren Sie [Vorrangige Adobe-Produktaktualisierungen oder besuchen Sie ](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"}Campaign[Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}.
 
-Sie können auch die [Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=de&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"} besuchen, um über Versionsaktualisierungen informiert zu werden.
+Sicherheitsbenachrichtigungen und Anleitungen zur Vorbereitung Ihres Unternehmens auf Sicherheitsaktualisierungen finden Sie unter [Bleiben Sie informiert](#security-staying-informed).
 
-### Warum benötigt meine Organisation ein Upgrade? {#upgrades-1}
+### Vorteile eines Upgrades {#upgrades-1}
 
 Durch ein Upgrade wird sichergestellt, dass Ihr Konto vor Sicherheitslücken geschützt ist und die aktuelle Leistungstechnologie verwendet.
 
@@ -127,16 +125,57 @@ Normalerweise bietet ein Upgrade auf die neueste Version Folgendes:
 
   Die Client-Konsole kann nur zuverlässig mit einem Server kommunizieren, auf dem dieselbe Version ausgeführt wird. Diese Verbindung und die damit verbundenen Sicherheits- und Fehlerbehebungen bleiben intakt, indem die Konsole auf dem neuesten Stand gehalten wird - und zwar jedes Mal, wenn der Server aktualisiert wird.
 
-### Wie sieht das Verfahren und der Zeitplan für ein Upgrade aus? {#upgrades-2}
+### Upgrade-Prozess und -Zeitleiste {#upgrades-2}
 
 Als v8-Kunde verwaltet Adobe das Server-Upgrade durchgängig:
 
 1. Wenn eine neue Version verfügbar ist oder Ihr Konto als Benutzer identifiziert wird, der zu einer neuen Version wechseln muss, werden Sie von Ihrem Adobe-Support-Mitarbeiter benachrichtigt.
 1. Adobe aktualisiert Ihre Serverinfrastruktur. Für diesen Schritt ist keine Aktion erforderlich.
-1. Die einzige erforderliche Aktion besteht einerseits darin, die Client-Konsole entsprechend zu aktualisieren, und andererseits darin, zu bestätigen, dass die Systeme in Ihrer [Kompatibilitätsmatrix](compatibility-matrix.md) weiterhin unterstützt werden. Siehe [Halten Sie Ihre Client-Konsole auf dem neuesten &#x200B;](#ac-upgrades).
+1. Die einzige erforderliche Aktion besteht einerseits darin, die Client-Konsole entsprechend zu aktualisieren, und andererseits darin, zu bestätigen, dass die Systeme in Ihrer [Kompatibilitätsmatrix](compatibility-matrix.md) weiterhin unterstützt werden. Siehe [Halten Sie Ihre Client-Konsole auf dem neuesten ](#ac-upgrades).
 
 Ein Team aus engagierten Kundenbetreuern, Produkt-Managern, Ingenieuren, TechOps-Spezialisten und Produktberatern steht Ihnen zur Seite, um diesen Prozess möglichst reibungslos zu gestalten.
 
 >[!NOTE]
 >
 >Kritische Sicherheits-Patches können außerhalb dieses Benachrichtigungszyklus auf Ihre gehostete Umgebung angewendet werden - siehe den Hinweis oben auf dieser Seite.
+
+## Schnellerer Schutz von Adobe Campaign-Kunden: Wie Adobe mit der Sicherheit Schritt hält {#campaign-security}
+
+### Mehr finden, schneller {#finding-more-faster}
+
+Wie wir in [Kunden schneller schützen: Wie Adobe auf die KI-beschleunigte Erkennung von Schwachstellen reagiert](https://blog.adobe.com/security/protecting-customers-faster-how-adobe-is-responding-to-ai-accelerated-vulnerability-discovery) erläutert haben, verwenden Adobe-Sicherheitsteams KI-unterstützte Tools, um Schwachstellen schneller zu identifizieren und zu beheben. Wir wenden diesen Ansatz auf alle unsere Produkte an, einschließlich Adobe Campaign.
+
+In diesem Abschnitt wird erläutert, wie wir Sicherheitsprobleme bewerten und priorisieren, wie wir Fehlerbehebungen bereitstellen und was dies für Sie bedeutet.
+
+### Wie wir Sicherheitsprobleme bewerten und priorisieren {#assess-security-issues}
+
+Nicht jedes Sicherheitsproblem birgt dasselbe Risiko. Adobe qualifiziert jedes Problem nach Schweregrad. Dieser Schweregrad legt die Prioritätsstufe fest.
+
+Eine Zero-Day-Sicherheitslücke ist ein bisher unbekannter Fehler, den Angreifer ausnutzen könnten, bevor eine Fehlerbehebung verfügbar ist. Daher kann dringendes Handeln außerhalb unseres regulären Veröffentlichungszeitplans erforderlich sein. Die meisten anderen Sicherheitslücken beheben wir mit [Adobe Security Bulletins](https://www.adobe.com/trust/security/bulletins-and-advisories.html), die normalerweise am zweiten und vierten Dienstag jedes Monats veröffentlicht werden.
+
+Unsere Reaktionsziele folgen dieser Bewertung des Schweregrads. Bei schwerwiegenden Problemen schließen wir zuerst das Belichtungsfenster und teilen die unterstützenden Details so bald wie möglich danach mit. Deshalb erreichen Sie einige Fehlerbehebungen ohne oder mit nur geringer Ankündigung. Der Zeitpunkt hängt von der Schwere der Sicherheitslücke ab. Jedes Update, einschließlich dringender Updates, wird vor der Auslieferung einer Qualitätsüberprüfung unterzogen.
+
+### Wie wir Fehlerbehebungen bereitstellen {#deploy-security-fixes}
+
+Wir überprüfen Sicherheitsaktualisierungen vor der Veröffentlichung und wählen einen Bereitstellungsansatz, der auf dem Umfang der Änderung basiert. Unser Ziel ist es, Störungen zu minimieren.
+
+Je nach Umfang der Aktualisierung verwenden wir einen von zwei Bereitstellungsansätzen:
+
+* **Wartung des Sicherheits-Stacks**: Gezielte Aktualisierungen, die Ihre Build-Nummer nicht ändern und keine beabsichtigten Änderungen an der Produktfunktionalität einführen. Kunden mit Standardkonfigurationen müssen in der Regel keine Maßnahmen ergreifen.
+* **Sicherheitsgesteuerte Build-Upgrades**: Aktualisierungen, die Ihre Build-Nummer ändern und den standardmäßigen Benachrichtigungs-, Versionshinweis- und Rollout-Prozessen von Adobe folgen.
+
+Für standardmäßige, vorkonfigurierte Konfigurationen funktionieren Ihre Integrationen und laufenden Kampagnen wie bisher.
+
+Wir entwerfen Sicherheits-Updates, um die Kompatibilität mit standardmäßigen Adobe Campaign-Konfigurationen zu gewährleisten und Unterbrechungen des Kundenbetriebs zu minimieren. Wenn Ihre Umgebung benutzerdefinierte Integrationen, Skripte oder andere Änderungen enthält, befolgen Sie den Validierungsprozess Ihres Unternehmens nach einem Build-Upgrade. Wenn ein unerwartetes Verhalten auftritt, wenden Sie sich an den Kunden-Support von Adobe.
+
+### Informiert bleiben {#security-staying-informed}
+
+Sie müssen keine sofortigen Maßnahmen ergreifen. Mit diesen Schritten kann Ihr Unternehmen jedoch auf dem Laufenden bleiben und effizient reagieren:
+
+* Halten Sie Ihr Konto und Ihre technischen Ansprechpartner in Adobe Admin Console auf dem neuesten Stand, damit Benachrichtigungen die richtigen Personen erreichen.
+* Abonnieren Sie [Adobe-Sicherheitsbenachrichtigungen](https://www.adobe.com/subscription/adobesecuritynotifications.html) für neue Bulletins und Hinweise.
+* Überprüfen Sie den Änderungs-Management-Prozess Ihres Unternehmens, damit Sie Sicherheitsaktualisierungen sofort auswerten und darauf reagieren können.
+
+### Unser Engagement {#security-commitment}
+
+Adobe setzt sich für den Schutz Ihrer Adobe Campaign-Umgebung ein und reagiert schnell, wenn Sicherheitsprobleme auftreten. Wir werden unsere Sicherheitsprozesse weiter stärken und gleichzeitig daran arbeiten, Unterbrechungen in Ihrem Betrieb zu minimieren.
