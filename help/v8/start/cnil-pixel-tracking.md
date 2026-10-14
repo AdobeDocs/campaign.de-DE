@@ -1,6 +1,6 @@
 ---
-title: Leitfaden zu E-Mail-Tracking-Pixel und CNIL
-description: Verstehen der aktualisierten CNIL-Anleitung zu E-Mail-Tracking-Pixeln und den Adobe Campaign-Funktionen, die Compliance-Bemühungen unterstützen können.
+title: Anleitungen zu E-Mail-Tracking-Pixeln
+description: Machen Sie sich mit den behördlichen Richtlinien in Bezug auf E-Mail-Tracking-Pixel und die Adobe Campaign-Funktionen vertraut, die die Compliance unterstützen können.
 version: Campaign v8, Campaign Classic v7
 hide: true
 product_v2:
@@ -8,25 +8,23 @@ product_v2:
     internal-label: Campaign
   - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
     internal-label: Campaign v8
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 93335b46b1c706a9409f0816b2ced4ebc612d5fe
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 3%
+source-wordcount: '834'
+ht-degree: 2%
 ---
 
-# Grundlegendes zur aktualisierten CNIL-Anleitung zu E-Mail-Tracking-Pixeln
+# Anleitungen zu E-Mail-Tracking-Pixeln
 
 Dieser Beitrag dient nur zu Informationszwecken. Es ist keine Rechtsberatung und garantiert nicht, dass Sie das geltende Recht einhalten. Die unten beschriebenen Adobe Campaign-Produktfunktionen sind Bausteine, die eine konforme Implementierung unterstützen können, wenn sie entsprechend konfiguriert und betrieben werden. Jeder Kunde ist für die Feststellung und Erfüllung seiner Verpflichtungen nach geltendem Recht verantwortlich.
 
 ## Übersicht
 
-Am 14. April 2026 veröffentlichte die _Commission nationale de l&#39;informatique et des libertés_ (CNIL), Frankreichs Datenschutzbehörde, eine [Empfehlung zur Verwendung von Tracking-Pixeln in E-Mails](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf). In der Anleitung wird klargestellt, wann eine Zustimmung erforderlich ist, und die Bedeutung ordnungsgemäßer Zustimmungspraktiken für das E-Mail-Pixel-Tracking hervorgehoben. Diese Richtlinie könnte sich auf die Versandpraktiken von Entitäten auswirken, die E-Mails an Abonnenten mit Sitz in Frankreich versenden.
+Am 14. April 2026 veröffentlichte die _Commission nationale de l&#39;informatique et des libertés_ (CNIL), Frankreichs Datenschutzbehörde, eine [Empfehlung zur Verwendung von Tracking-Pixeln in E-Mails](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf). Kurz darauf veröffentlichte die unabhängige italienische Datenschutzbehörde („Garante„) die Bestimmung Nr. 284 (die „Garantiebestimmung„) vom 17. April 2026. Beide Leitfäden sind zwar nicht rechtsverbindlich, klären aber, wann eine Zustimmung erforderlich ist, und heben die Bedeutung ordnungsgemäßer Zustimmungsverfahren für das E-Mail-Pixel-Tracking hervor. Diese Richtlinie könnte sich auf die Versandpraktiken von Unternehmen auswirken, die E-Mails an Abonnenten gemäß dem geltenden EU-Datenschutzrecht versenden.
 
-CNIL räumte Unternehmen ab dem Datum der Empfehlung einen Zeitraum von drei Monaten ein, um ihre E-Mail-Empfänger („Benutzer„) über das Vorhandensein der Tracking-Pixel, ihren Zweck und das Recht der Benutzer auf Opt-out zu informieren. Während dieser Übergangsphase wird von den Kunden erwartet, dass sie die Benutzer über das Pixel-Tracking informieren und ihnen bei Bedarf ein Opt-out anbieten. CNIL wird voraussichtlich nach dem 14. Juli 2026 mit Durchsetzungsmaßnahmen beginnen.
+Die Regulierungsbehörden klären weiterhin die Anleitungen zum Tracking von Pixeln und zu damit zusammenhängenden Problemen. Adobe wird auch weiterhin Änderungen überwachen und Kunden über die technischen Funktionen von Adobe-Produkten informieren, die E-Mail-Marketing einschließlich Adobe Campaign unterstützen. Die Dokumentation von Adobe zu E-Mail-Tracking-Pixeln spiegelt die aktuellen rechtlichen Leitlinien wider. Adobe aktualisiert die Dokumentation bei Bedarf weiter, um relevante Änderungen widerzuspiegeln, die sich bei Weiterentwicklung der gesetzlichen Anforderungen auf die Verwendung der CXO-Produkte von Adobe auswirken können. Verzögerungen bei der Aktualisierung von Materialien stellen kein Fehlschlagen im Namen von Adobe dar.
 
-Während die CNIL und andere Regulierungsbehörden die Leitlinien zur Verfolgung von Pixeln und damit zusammenhängenden Problemen erläutern, wird Adobe weiterhin Aktualisierungen überwachen und Kunden über die technischen Funktionen von Adobe-Produkten informieren, die E-Mail-Marketing, einschließlich Adobe Campaign, unterstützen.
-
-Adobe-Programme zur Ausführung von E-Mail-Marketing, einschließlich Adobe Journey Optimizer, Journey Optimizer B2B, Adobe Campaign und Marketo Engage, bieten Steuerelemente, mit denen Kunden das Öffnungs-Tracking auf Versand- oder E-Mail-Ebene verwalten können. Kunden sind dafür verantwortlich, ihre eigenen Compliance-Verpflichtungen gemäß den geltenden CNIL-Richtlinien und anderen Gesetzen zu bestimmen, aber diese Funktionen können die Bemühungen um die Einhaltung von Kundenrichtlinien unterstützen.
+Adobe-Programme zur Ausführung von E-Mail-Marketing, einschließlich Adobe Journey Optimizer, Journey Optimizer B2B, Adobe Campaign und Marketo Engage, bieten Steuerelemente, mit denen Kunden das Öffnungs-Tracking auf Versand- oder E-Mail-Ebene verwalten können. Kundinnen und Kunden sind dafür verantwortlich, ihre eigenen Compliance-Verpflichtungen gemäß den geltenden Richtlinien und anderen Gesetzen zu bestimmen, aber diese Funktionen können die Bemühungen um die Einhaltung von Kundenrichtlinien unterstützen.
 
 ## Was ist ein E-Mail-Tracking-Pixel?
 
@@ -38,7 +36,7 @@ Kunden, die Unterstützung bei der Implementierung der oben beschriebenen Änder
 
 ## Adobe Campaign-Funktionen im Zusammenhang mit dem E-Mail-Tracking
 
-Kunden können die nativen Tracking-, Schema- und Personalisierungsmechanismen von Adobe Campaign verwenden, um bei der Konfiguration der Architektur bestimmte Aspekte zu berücksichtigen, die den CNIL-Richtlinien entsprechen:
+Kunden und Kundinnen können die nativen Tracking-, Schema- und Personalisierungsmechanismen von Adobe Campaign verwenden, um bei der Konfiguration der Architektur bestimmte Aspekte zu berücksichtigen, die sich an den Anleitungen zu E-Mail-Tracking-Pixeln orientieren:
 
 * **Klassifizierung des Versands.** Erweitern Sie `nms:delivery` mit einem `emailType`-Attribut (Authentifizierung, Nur-Zustellbarkeit, Transaktion, Marketing, öffentlicher Dienst, B2B-Interessentengewinnung). Die Klassifizierung bestimmt, welche Pixel ohne Zustimmung zulässig sind.
 
