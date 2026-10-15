@@ -26,20 +26,44 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7ae0ea8d334af5e3580b594d5ddc8b52b10fa5b6
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 11%
+source-wordcount: '2455'
+ht-degree: 10%
 ---
 # Neueste Versionen {#latest-release}
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **neuesten Campaign v8-Versionen** (Konsole) aufgelistet. Weitere Informationen zu Campaign-Versionen und -Upgrades finden Sie auf [dieser Seite](upgrades.md). Weitere Versionen sind im Abschnitt „Frühere Versionen“ dieser Dokumentation aufgeführt.
 
+## Version 8.9.4 {#release-8-9-4}
+
+_15. Oktober 2026_
+
+### Verbesserungen {#improvements-8-9-4}
+
+* Designs der Client-Konsolen-Benutzeroberfläche können jetzt gespeichert und für Benutzende freigegeben werden. (NEO-96823)
+
+### Fehlerbehebungen {#fixes-8-9-4}
+
+* Es wurde ein Problem behoben, bei dem bestimmte Bounce-Feedback-Nachrichten dazu führen konnten, dass die Aktualisierungen des Versandstatus verzögert wurden, sodass die betroffenen Sendungen im Status „Vom Dienstleister berücksichtigt“ blieben. (NEO-98183)
+* Fehlerkorrektur - Versandwarnungen für Sendungen, die in einem ausstehenden Langstartstatus stecken, werden jetzt aufgrund eines Schwellenwertberechnungsfehlers nicht mehr korrekt Trigger. (NEO-93434)
+* Es wurde ein Problem behoben, bei dem das Senden von Textinhalten dazu führen konnte, dass der Mid-Sourcing-Server-Prozess abstürzte. (NEO-95122)
+* Fehlerkorrektur - Die Workflow **Aktivität „Gruppe lesen** erzeugt jetzt für Felder mit berechneten Ausdrücken keine ungültige SQL mehr. (NEO-95233)
+* Fehlerkorrektur - Die für FFDA-Mid-Sourcing-Sendungen generierten Versandteil-IDs kollidieren jetzt. (NEO-95777)
+* Es wurde ein Problem behoben, bei dem bestimmte Zeichen in eingebetteten Browser-Navigations-URLs zum Absturz der Client-Konsole führen konnten. (NEO-96267)
+* Fehlerkorrektur - SMS-Sendungen werden in dynamischen Berichten jetzt zuverlässig gemeldet. (NEO-96401)
+* Fehlerkorrektur - Die Versandvorbereitung für Snowflake- oder FFDA-Ziele für externe Dateien, die keine Profilzuordnung verwenden, schlägt jetzt nicht mehr fehl. (NEO-96507)
+* Es wurde ein Problem behoben, bei dem Workflows, die mehrere Abfragen enthalten, die mit verschiedenen FDA-Quellen verknüpft sind, fehlschlagen konnten. (NEO-97249)
+* Fehlerkorrektur - Workflows mit der nahezu Echtzeitanreicherung schlagen jetzt nicht mehr mit SQL-Fehlern fehl, wenn die Verarbeitung von Ereignissen zeitnah ausgelöst wird. (NEO-97557)
+* Es wurde ein Problem behoben, bei dem ein interner Sperrmechanismus in eine Wiederholungsschleife eintreten und eine hohe CPU-Nutzung auf dem Server verursachen konnte. (NEO-94845)
+* Fehlerkorrektur - Die Versandvorbereitung schlägt jetzt nicht mehr mit einem SQL-Fehler fehl, wenn Testadressen zusammen mit einem benutzerdefinierten Zielgruppen-Mapping verwendet werden. (NEO-94966)
+* Fehlerkorrektur - FDA-Workflows schlagen beim Laden von Daten in Redshift nicht mehr mit einem Spaltenüberlauf-Fehler fehl. (NEO-96125)
+* Fehlerkorrektur - Das externe Analytics-Konto schlägt jetzt nicht mehr mit dem Fehler „Gone“ (410) fehl. (NEO-99019)
+* Es wurde ein Problem behoben, bei dem einige Sendungen im Status Personalisierung ausstehend bleiben konnten, obwohl die entsprechenden Nachrichten erfolgreich gesendet wurden. (NEO-94471)
+
 ## Version 8.9.3 {#release-8-9-3}
 
 _11. August 2026_
-
-<!-- CONFIRM: is a client console upgrade required for 8.9.3? If yes, add the >[!CAUTION] notice used in 8.9.2/8.9.1. If no, add an explicit one-line "no console upgrade required for this release" statement so the absence reads as intentional. -->
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-9-3}
 
@@ -53,7 +77,7 @@ Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste exter
 
 ### Adobe Analytics-Connector auf Analytics 2.0-API aktualisiert {#analytics-2-0-8-9-3}
 
-Adobe Analytics 1.4-APIs [&#x200B; das Ende des Lebenszyklus erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"} daher wurde der [Web Analytics-Connector](../connect/ac-aa.md) im Rahmen dieser Version auf die Analytics 2.0-API aktualisiert. Als gehosteter Kunde übernimmt Adobe diese Migration für Sie - es ist keine Konfiguration auf Ihrer Seite erforderlich.
+Adobe Analytics 1.4-APIs [ das Ende des Lebenszyklus erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"} daher wurde der [Web Analytics-Connector](../connect/ac-aa.md) im Rahmen dieser Version auf die Analytics 2.0-API aktualisiert. Als gehosteter Kunde übernimmt Adobe diese Migration für Sie - es ist keine Konfiguration auf Ihrer Seite erforderlich.
 
 +++ Weitere Informationen zum Upgrade auf Analytics 2.0
 
@@ -130,14 +154,14 @@ Der **neue SMS-**-Connector) ist jetzt für alle Kunden (GA) verfügbar. Weiterf
 
 Diese Version enthält eine Reihe von Funktionen, die in der Web-Benutzeroberfläche von Campaign verfügbar sind:
 
-* [Mehrsprachige Versandfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=de){target="_blank"}
-* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=de){target="_blank"}
-* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=de){target="_blank"}
-* [Inhaltsexperimente – A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=de){target="_blank"}
-* [Aktivität „Versand (fortlaufend)“](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=de){target="_blank"}
-* [Verwaltung der Kampagnenvalidierung](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=de){target="_blank"}
+* [Mehrsprachige Versandfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Inhaltsexperimente – A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Aktivität „Versand (fortlaufend)“](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Verwaltung der Kampagnenvalidierung](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
+Weitere Informationen finden Sie in den Versionshinweisen zur [ Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
 
 ### Sonstige Änderungen {#changes-8-9-1}
 
@@ -170,8 +194,8 @@ Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benu
 * Fehlerkorrektur - Beim Verketten eines „char“-Felds in PostgreSQL 15 tritt jetzt kein Fehler mehr auf. (NEO-88028)
 * Fehlerkorrektur - Beim Speichern oder Duplizieren der Vorlage ändert sich jetzt nicht mehr die Reihenfolge der Versandvorlagenvariablen. (NEO-87845)
 * Es wurde ein Problem behoben, bei dem das Erstellen eines neuen Datenbibliotheksschemas zum Absturz der Web-Schnittstelle führte. (NEO-87816)
-* Es wurde ein Problem behoben, bei dem in der Deduplizierungsaktivität mit Komplementsätzen verwendet wurde. (NEO-87711)
-* Es wurde eine Anfrage für ein Installationspaket ohne X11-Abhängigkeit behoben. (NEO-87471)
+* Es wurde ein Problem behoben, bei dem Segment-Codes für Komplement-Sets in der Deduplizierungsaktivität nicht korrekt funktionierten. (NEO-87711)
+* Es wurde eine Installationspaketoption hinzugefügt, für die die X11-Abhängigkeit nicht erforderlich ist. (NEO-87471)
 * Es wurde ein Problem behoben, bei dem Segment-Codes nicht in dynamischen Berichten verwendet werden konnten. (NEO-87276)
 * Es wurde ein Problem behoben, bei dem Workflows in der Aktivität Daten-Update hängen blieben. (NEO-87252)
 * Es wurde ein Problem behoben, bei dem BigQuery eine falsche Zeitzone verwendete. (NEO-86622)
@@ -183,7 +207,7 @@ Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benu
 * Es wurde ein Problem behoben, bei dem technische Versandvorlagen nach Änderungen an Optionen nicht aktualisiert wurden. (NEO-84149)
 * Fehlerkorrektur - Im vordefinierten Workflow Abrechnung tritt jetzt kein Fehler mehr auf. (NEO-83624)
 * Es wurde ein Problem behoben, bei dem Duplikate nur anhand des Primärschlüssels der Zieldatensätze ausgeschlossen wurden. (NEO-82910)
-* Es wurden Diskrepanzen in den Berichten der Web-Benutzeroberfläche von Campaign behoben, bei denen Tracking-Statistiken im Vergleich zur Konsole andere Werte angezeigt haben. (NEO-82339)
+* Es wurden Diskrepanzen in den Berichten der Web-Benutzeroberfläche von Campaign behoben, bei denen Tracking-Statistiken im Vergleich zur Client-Konsole andere Werte angezeigt haben. (NEO-82339)
 * Es wurde ein Problem behoben, bei dem sich das Datum der letzten Änderung auch dann änderte, wenn der Datensatz in der Aktivität Daten-Update nicht aktualisiert werden sollte. (NEO-82002)
 * Es wurde ein Problem behoben, bei dem das Hinzufügen neuer Attribute zu einer Liste dazu führte, dass Workflows, die die Liste lesen, fehlschlugen. (NEO-80258)
 * Es wurde ein Problem behoben, bei dem der Bericht Tracking-Indikatoren falsche Werte für einzelne Öffnungen anzeigte. (NEO-79466)
