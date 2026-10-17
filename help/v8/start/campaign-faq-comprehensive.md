@@ -925,7 +925,7 @@ Ein Workflow kann auch die Benachrichtigung eines oder mehrerer Benutzer umfasse
 
 **Verwandte Themen:**
 
-[Erste Schritte mit Workflows](../config/workflows.md) | [Erstellen des ersten Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Workflow-Anwendungsfälle](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Überwachen der Workflow-Ausführung](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}
+[Erste Schritte mit Workflows](../config/workflows.md) | [Erstellen des ersten Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Workflow-Anwendungsfälle](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html?lang=de){target="_blank"} | [Überwachen der Workflow-Ausführung](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}
 
 +++
 
@@ -956,7 +956,7 @@ Häufige Workflow-Muster: Datenimport, Zielgruppensegmentierung, Versand, Datena
 
 **Verwandte Themen:**
 
-[Workflow erstellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Workflow-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html){target="_blank"} | [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"} [Anwendungsfälle für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
+[Workflow erstellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Workflow-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html?lang=de){target="_blank"} | [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"} [Anwendungsfälle für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html?lang=de){target="_blank"}
 
 +++
 
@@ -984,7 +984,7 @@ Verwenden Sie Workflows mit der Aktivität **Planung**, um Kampagnen zu automati
 
 **Verwandte Themen:**
 
-[Planungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"} | [Wiederkehrende Sendungen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/sending-a-birthday-email.html){target="_blank"} | [Kampagnenautomatisierung](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"}
+[Planungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"} | [Wiederkehrende Sendungen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=de){target="_blank"} | [Kampagnenautomatisierung](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"}
 
 +++
 
@@ -1040,7 +1040,7 @@ Workflows automatisieren Marketing-Prozesse, darunter:
 
 **Verwandte Themen:**
 
-[Bibliothek mit Anwendungsfällen für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Workflow erstellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}
+[Bibliothek mit Anwendungsfällen für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html?lang=de){target="_blank"} | [Workflow erstellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}
 
 +++
 
@@ -1054,7 +1054,7 @@ Konfigurieren Sie Abstimmschlüssel für eine genaue Übereinstimmung und wähle
 
 **Verwandte Themen:**
 
-[Datenaktivität aktualisieren](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=de){target="_blank"} | [Datenverwaltungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
+[Datenaktivität aktualisieren](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=de){target="_blank"} | [Datenverwaltungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html?lang=de){target="_blank"}
 
 +++
 
@@ -1066,7 +1066,7 @@ Datenverwaltungsaktivitäten ermöglichen komplexe Operationen: Anreicherung (Hi
 
 **Verwandte Themen:**
 
-[Datenverwaltungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html){target="_blank"} | [Anreicherungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=de){target="_blank"}
+[Datenverwaltungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html?lang=de){target="_blank"} | [Anreicherungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=de){target="_blank"}
 
 +++
 
@@ -1090,7 +1090,7 @@ Verwenden Sie **[!UICONTROL Split]**-Aktivität, um Populationen aufzuteilen: Fi
 
 **Verwandte Themen:**
 
-[Aufspaltungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=de){target="_blank"} | [A/B-Test-Handbuch](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
+[Aufspaltungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=de){target="_blank"} | [A/B-Test-Handbuch](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html?lang=de){target="_blank"}
 
 +++
 
@@ -1439,7 +1439,7 @@ Campaign bietet je nach Bedarf und technischem Know-how verschiedene Reporting-O
 
 **Verwandte Themen:**
 
-[Erste Schritte mit Reporting](../reporting/gs-reporting.md) | [Berichte der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Erste Schritte mit Reporting](../reporting/gs-reporting.md) | [Berichte der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -1564,7 +1564,7 @@ Ja, Campaign unterstützt mehrere Exportformate für Berichte sowohl der Client-
 
 **Verwandte Themen:**
 
-[Benutzerdefinierte Berichte](../reporting/custom-reports.md) | [Berichte der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Benutzerdefinierte Berichte](../reporting/custom-reports.md) | [Berichte der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
