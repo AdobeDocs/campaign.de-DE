@@ -131,27 +131,27 @@ Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-En
 
 Informationen zur Web-Benutzeroberfläche von Campaign (v8) finden Sie unter:
 
-* [Externes Konto erstellen](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/create-external-account){target="_blank"}
-* [Externe Datenbankkonten](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database){target="_blank"}
+* [Externes Konto erstellen](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/create-external-account){target="_blank"}
+* [Externe Datenbankkonten](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database){target="_blank"}
 
 Die Web-Benutzeroberfläche von Campaign bietet eine umfassendere Liste von Anbietertypen **externe Datenbank** einschließlich:
 
-* **[Amazon Redshift](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#amazon-redshift){target="_blank"}** / **[Amazon Redshift (veraltet)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#amazon-redshift-legacy){target="_blank"}** - Campaign mit AWS Redshift Cloud Data Warehouse-Umgebungen verbinden.
-* **[Azure Synapse Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#azure-synapse-analytics){target="_blank"}** - Campaign mit dedizierten Microsoft Azure Synapse-SQL-Pools verbinden.
-* **[Databricks](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#databricks){target="_blank"}**: Verbinden von Campaign mit Databricks SQL- und Lakehouse-Workloads.
-* **[Google BigQuery](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#google-bigquery){target="_blank"}** - Campaign mit Google Cloud BigQuery Analytics-Datensätzen verbinden.
-* **[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#microsoft-sql-server){target="_blank"}** - Campaign mit lokalen oder gehosteten SQL Server-Datenbanken verbinden.
-* **[MySQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#mysql){target="_blank"}** - Campaign für Federated Abfragen und Workflows mit MySQL-Datenbanken verbinden.
-* **[Netezza](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#netezza){target="_blank"}** - Campaign mit IBM Netezza-/Performance-Server-Systemen verbinden.
-* **[ODBC (Sybase ASE, Sybase IQ)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#odbc-sybase-ase-sybase-iq){target="_blank"}** - Campaign über ODBC mit Sybase Database Engines verbinden.
-* **[HTTP-Weiterleitung auf Remote-Datenbank](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#http-relay-to-remote-database){target="_blank"}** - Herstellen einer Verbindung über einen HTTP-Weiterleitungsendpunkt zu einer Remote-Datenbank.
-* **[Oracle](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#oracle){target="_blank"}** - Campaign mit Oracle-Datenbanken für Anwendungsfälle mit Federated Access verbinden.
-* **[PostgreSQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#postgresql){target="_blank"}** - Campaign über externe FDA-Konten mit PostgreSQL-Datenbanken verbinden.
-* **[SAP HANA](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#sap-hana){target="_blank"}** - Campaign mit SAP HANA-In-Memory-Datenbankumgebungen verbinden.
-* **[Snowflake](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#snowflake){target="_blank"}** - Campaign mit Snowflake Cloud Data Platform-Umgebungen verbinden.
-* **[Teradata](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#teradata){target="_blank"}** - Campaign mit Teradata Enterprise Data Warehouse-Systemen verbinden.
-* **[Vertica Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#vertica-analytics){target="_blank"}** - Campaign mit OpenText Vertica-Analysedatenbanken verbinden.
-* **[Microsoft Fabric](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#fabric){target="_blank"}** - Campaign mit Microsoft Fabric SQL- und Speicher-Services verbinden.
+* **[Amazon Redshift](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#amazon-redshift){target="_blank"}** / **[Amazon Redshift (veraltet)](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#amazon-redshift-legacy){target="_blank"}** - Campaign mit AWS Redshift Cloud Data Warehouse-Umgebungen verbinden.
+* **[Azure Synapse Analytics](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#azure-synapse-analytics){target="_blank"}** - Campaign mit dedizierten Microsoft Azure Synapse-SQL-Pools verbinden.
+* **[Databricks](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#databricks){target="_blank"}**: Verbinden von Campaign mit Databricks SQL- und Lakehouse-Workloads.
+* **[Google BigQuery](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#google-bigquery){target="_blank"}** - Campaign mit Google Cloud BigQuery Analytics-Datensätzen verbinden.
+* **[Microsoft SQL Server](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#microsoft-sql-server){target="_blank"}** - Campaign mit lokalen oder gehosteten SQL Server-Datenbanken verbinden.
+* **[MySQL](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#mysql){target="_blank"}** - Campaign für Federated Abfragen und Workflows mit MySQL-Datenbanken verbinden.
+* **[Netezza](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#netezza){target="_blank"}** - Campaign mit IBM Netezza-/Performance-Server-Systemen verbinden.
+* **[ODBC (Sybase ASE, Sybase IQ)](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#odbc-sybase-ase-sybase-iq){target="_blank"}** - Campaign über ODBC mit Sybase Database Engines verbinden.
+* **[HTTP-Weiterleitung auf Remote-Datenbank](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#http-relay-to-remote-database){target="_blank"}** - Herstellen einer Verbindung über einen HTTP-Weiterleitungsendpunkt zu einer Remote-Datenbank.
+* **[Oracle](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#oracle){target="_blank"}** - Campaign mit Oracle-Datenbanken für Anwendungsfälle mit Federated Access verbinden.
+* **[PostgreSQL](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#postgresql){target="_blank"}** - Campaign über externe FDA-Konten mit PostgreSQL-Datenbanken verbinden.
+* **[SAP HANA](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#sap-hana){target="_blank"}** - Campaign mit SAP HANA-In-Memory-Datenbankumgebungen verbinden.
+* **[Snowflake](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#snowflake){target="_blank"}** - Campaign mit Snowflake Cloud Data Platform-Umgebungen verbinden.
+* **[Teradata](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#teradata){target="_blank"}** - Campaign mit Teradata Enterprise Data Warehouse-Systemen verbinden.
+* **[Vertica Analytics](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#vertica-analytics){target="_blank"}** - Campaign mit OpenText Vertica-Analysedatenbanken verbinden.
+* **[Microsoft Fabric](https://experienceleague.adobe.com/de/docs/campaign-web/v8/administration/external-account-database#fabric){target="_blank"}** - Campaign mit Microsoft Fabric SQL- und Speicher-Services verbinden.
 
 Weitere Informationen zur alten Client-Konsole und zusätzliche Verweise finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}.
 
