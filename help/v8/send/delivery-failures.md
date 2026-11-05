@@ -159,7 +159,7 @@ Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht g
 
 Eine Nachricht kann vor dem Ende ihres Gültigkeitszeitraums ablaufen, wenn der nächste erneute Versuch nach der Ablaufzeit fallen würde. Das Versandprotokoll zeigt dann den Fehler des letzten Versandversuchs an.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"}.-->
 
 
 ## E-Mail-Fehlertypen {#email-error-types}
