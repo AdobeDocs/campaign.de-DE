@@ -18,10 +18,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8a7bf8408d15e0bd9e1c3e72f7846bf9a79c6885
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 100%
+source-wordcount: '112'
+ht-degree: 41%
 ---
 
 # Mid-Sourcing-Plattform{#mid-sourcing-platform}
@@ -45,3 +45,6 @@ Der unten beschriebene Workflow wird standardmäßig mit dem Modul **Mid-Sourcin
  </tbody> 
 </table>
 
+>[!NOTE]
+>
+>Die Protokollaufbewahrungsdauer auf dem Mid-Sourcing-Server muss länger sein als die Gültigkeitsdauer des Versands plus der Wert **indicatorsDuration**. Andernfalls verringern sich die Versandindikatoren, wenn alte Protokolle gelöscht werden und die niedrigeren Werte mit der Marketing-Instanz synchronisiert werden. Legen Sie beispielsweise mit einem Gültigkeitszeitraum von 5 Tagen und einer **indicatorDuration** von 30 Tagen den Aufbewahrungszeitraum auf mindestens 36 Tage fest.

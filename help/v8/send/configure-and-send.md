@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 2d8aa27d6565e216cc0842ba22678c884479ff43
 workflow-type: tm+mt
-source-wordcount: '1299'
-ht-degree: 97%
+source-wordcount: '1334'
+ht-degree: 95%
 ---
 # Konfigurieren und Durchführen des Versands {#configure-delivery}
 
@@ -98,6 +98,8 @@ Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) st
 >* Achten Sie darauf, dass die letzten Schübe nicht die Versandgültigkeit überschreiten, die in der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt ist. Anderenfalls werden einige Nachrichten möglicherweise nicht gesendet. Weitere Informationen zum Gültigkeitszeitraum eines Versands finden Sie in [diesem Abschnitt](delivery-failures.md#valid-period).
 >
 >* Planen Sie beim Konfigurieren der letzten Schübe zudem genügend Zeit für weitere Zustellversuche ein. Nähere Informationen zu weiteren Zustellversuchen finden Sie in [diesem Abschnitt](delivery-failures.md#retries).
+>
+>* Die Schübe werden ab dem Kontaktdatum des Versands geplant. Wenn der Versand nach der geplanten Zeit einer oder mehrerer Schübe beginnt, werden diese überfälligen Schübe alle zusammen gesendet, anstatt mit Abständen angeordnet zu werden.
 
 ### Überwachen von Schüben {#monitor-waves}
 

@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: cb79282ed9b2b560201a001787c439a5da462ce1
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 88%
+source-wordcount: '977'
+ht-degree: 84%
 ---
 # Erstellen von Briefpost-Sendungen
 
@@ -138,3 +138,7 @@ Nachdem Sie die Extraktionsdatei validiert haben, klicken Sie auf **Absendung be
 Mit der Bestätigung wird die Extraktion der Daten in die angegebene Datei gestartet.
 
 Im Rahmen einer Marketing-Kampagne werden die Extraktionsdateien nach Erteilung aller Validierungen über einen speziellen Workflow erstellt, der in einer Standardkonfiguration automatisch gestartet wird, wenn bei einem Briefpostversand die Extraktion ausstehend ist. Weiterführende Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de){target="_blank"}.
+
+>[!NOTE]
+>
+>Wenn Sie eine **[!UICONTROL Briefpost]**-Aktivität in einem Workflow verwenden, wird bei der ausgehenden Transition die Zielpopulation und nicht die generierte Extraktionsdatei verwendet. Um die Datei an einen Server zu senden, fügen Sie **[!UICONTROL Aktivität]** Datenextraktion“ nach der Aktivität **[!UICONTROL Briefpost]** und dann eine Aktivität **[!UICONTROL Dateiübertragung]** hinzu.

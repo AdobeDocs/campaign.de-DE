@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f0e325102f748f6268a21a5397774a08a6994e51
 workflow-type: tm+mt
-source-wordcount: '3496'
-ht-degree: 76%
+source-wordcount: '3529'
+ht-degree: 75%
 ---
 # Ursachen für das Fehlschlagen von Sendungen {#delivery-failures}
 
@@ -156,6 +156,8 @@ Die Einstellung des Gültigkeitszeitraums in Ihren Campaign-Sendungen ist auf **
 Wenn der Gültigkeitszeitraum in Campaign beispielsweise auf den Standardwert von 5 Tagen eingestellt ist, werden Softbounce-Nachrichten in die Warteschlange für Wiederholungsversuche des MTA aufgenommen. Wiederholungsversuche werden dann nur bis zu 3,5 Tage ab dem Zeitpunkt, an dem die Nachricht beim MTA empfangen wurde, durchgeführt. In diesem Fall wird der in Campaign eingestellte Wert nicht verwendet.
 
 Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht gesendet werden konnte, wird sie mit einem Timeout beendet, und ihr Status ändert sich von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** (in den Versandlogs).
+
+Eine Nachricht kann vor dem Ende ihres Gültigkeitszeitraums ablaufen, wenn der nächste erneute Versuch nach der Ablaufzeit fallen würde. Das Versandprotokoll zeigt dann den Fehler des letzten Versandversuchs an.
 
 <!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"}.-->
 
