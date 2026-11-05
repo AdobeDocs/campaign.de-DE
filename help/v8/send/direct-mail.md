@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: cb79282ed9b2b560201a001787c439a5da462ce1
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 88%
+source-wordcount: '977'
+ht-degree: 84%
 ---
 # Erstellen von Briefpost-Sendungen
 
@@ -90,11 +90,11 @@ Bei einem Briefpost-Versand wird der Extraktionsinhalt über den Link **[!UICONT
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weitere Informationen hierzu finden Sie in der Adobe Campaign Classic-[&#x200B; (Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html?lang=de){target="_blank"}.
+Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weitere Informationen hierzu finden Sie in der Adobe Campaign Classic-[ (Dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"}.
 
 >[!NOTE]
 >
->Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [&#x200B; sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=de){target="_blank"}.
+>Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [ sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
 
 ## Versand validieren{#validating}
 
@@ -108,7 +108,7 @@ Die Ausgabedatei eines Briefpost-Versands wird während der Versandanalyse gener
 
 >[!NOTE]
 >
->Die Analysephase wird in diesem [&#x200B; beschrieben](delivery-analysis.md).
+>Die Analysephase wird in diesem [ beschrieben](delivery-analysis.md).
 
 Während der Analysephase wird die Datei generiert, es werden aber keine Empfängerinformationen (z. B. Versandlogs) aktualisiert. Sie können diesen Auftrag daher ohne Risiko abbrechen.
 
@@ -138,3 +138,7 @@ Nachdem Sie die Extraktionsdatei validiert haben, klicken Sie auf **Absendung be
 Mit der Bestätigung wird die Extraktion der Daten in die angegebene Datei gestartet.
 
 Im Rahmen einer Marketing-Kampagne werden die Extraktionsdateien nach Erteilung aller Validierungen über einen speziellen Workflow erstellt, der in einer Standardkonfiguration automatisch gestartet wird, wenn bei einem Briefpostversand die Extraktion ausstehend ist. Weiterführende Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de){target="_blank"}.
+
+>[!NOTE]
+>
+>Wenn Sie eine **[!UICONTROL Briefpost]**-Aktivität in einem Workflow verwenden, wird bei der ausgehenden Transition die Zielpopulation und nicht die generierte Extraktionsdatei verwendet. Um die Datei an einen Server zu senden, fügen Sie **[!UICONTROL Aktivität]** Datenextraktion“ nach der Aktivität **[!UICONTROL Briefpost]** und dann eine Aktivität **[!UICONTROL Dateiübertragung]** hinzu.
