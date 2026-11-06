@@ -71,7 +71,7 @@ Zum Schreiben in die Datenbank können Sie die statische `Write`-Methode mit dem
    1. Rufen Sie die `Write`-Methode mit dem `xtk:session`-Schema auf.
 
       >[!IMPORTANT]
-      > Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}
+      > Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}
 
    1. Übergeben Sie den XML-Code als Argument für die Schreibabfrage.
 
@@ -581,7 +581,7 @@ Sie können Datensätze einfügen, aktualisieren und löschen. Sie können die `
 * Der `delete`-Vorgang
 
 >[!IMPORTANT]
-> Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}
+> Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}
 
 #### Beispiel 1: Datensatz einfügen oder aktualisieren
 
