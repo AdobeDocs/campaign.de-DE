@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 97%
@@ -193,7 +193,7 @@ _Donnerstag, 18. Mai 2022_
 <tbody> 
 <tr> 
 <td> <p>In iOS 15 fügte Apple das Konzept der „Dringlichen Mitteilungen“ hinzu, das dem App-Entwickler die Möglichkeit gibt, den Fokusmodus zu umgehen, wenn eine Benachrichtigung als dringlich eingestuft wird und den Benutzer in Echtzeit erreichen muss.</p>
-<p>Weitere Informationen finden Sie im <a href="../send/push.md#send-notifications-on-ios">entsprechenden Handbuch</a>.</p>
+<p>Weitere Informationen finden Sie im <a href="../send/push.md">entsprechenden Handbuch</a>.</p>
 </td> 
 </tr> 
 </tbody> 

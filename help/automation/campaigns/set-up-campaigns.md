@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 70%
@@ -54,7 +54,7 @@ Ein Programm ist ein Satz von Marketing-Aktivitäten, die für einen Zeitraum de
 Eine Kampagne zentralisiert alle Elemente im Zusammenhang mit einer Marketing-Kampagne: Versand, Zielgruppenbestimmungs-Regeln, Kosten, Exportdateien, zugehörige Dokumente usw. Jede Kampagne ist mit einem Programm verbunden. In [diesem Abschnitt](marketing-campaign-create.md#create-a-campaign) erfahren Sie, wie Sie eine Kampagne erstellen.
 
 1. **Audience auswählen**
-Audiences können aus einer Liste importiert oder mithilfe von Abfragen in einen Kampagnen-Workflow integriert werden. Wie Sie die Zielgruppe einer Kampagne definieren, erfahren Sie in [diesem Abschnitt](marketing-campaign-target.md#select-the-target-population).
+Audiences können aus einer Liste importiert oder mithilfe von Abfragen in einen Kampagnen-Workflow integriert werden. Wie Sie die Zielgruppe einer Kampagne definieren, erfahren Sie in [diesem Abschnitt](marketing-campaign-target.md).
 
 1. **Sendungen erstellen**
 Orchestrieren Sie Ihre kanalübergreifenden Sendungen in Ihren Kampagnen. Optimieren Sie Ihre Kommunikation mithilfe von Adobe Campaign durch personalisierte E-Mails, SMS, Push-Benachrichtigungen und In-App-Nachrichten. Sie können auch Briefpost-Sendungen hinzufügen. In [diesem Abschnitt](marketing-campaign-deliveries.md) erfahren Sie, wie Sie Sendungen in Ihren Kampagnen erstellen, validieren und überwachen.
@@ -68,7 +68,7 @@ Verfolgen Sie Ihre Kampagnen über das Dashboard, überprüfen Sie die Versandst
 1. **Verfolgen Sie Budgets, Lager und zugehörige Kosten**.
 Verwenden Sie Adobe Campaign, um die Budgetzuweisung zu kontrollieren und Ihre Lieferanten, Lager und Kosten zu verwalten. [Weitere Informationen](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).
 
-Wenn diese Schritte abgeschlossen sind, können Sie [die Sendungen starten](marketing-campaign-deliveries.md#start-a-delivery), die Daten, Prozesse und Informationen zu den Sendungen überprüfen und, falls erforderlich, [die zugehörigen Dokumente verwalten](marketing-campaign-deliveries.md#manage-associated-documents). Sie können für Ihre Kampagnen und Sendungen auch [die Ausführung verfolgen und überwachen](marketing-campaign-monitoring.md).
+Wenn diese Schritte abgeschlossen sind, können Sie [die Sendungen starten](marketing-campaign-deliveries.md#start-a-delivery), die Daten, Prozesse und Informationen zu den Sendungen überprüfen und, falls erforderlich, [die zugehörigen Dokumente verwalten](marketing-campaign-deliveries.md). Sie können für Ihre Kampagnen und Sendungen auch [die Ausführung verfolgen und überwachen](marketing-campaign-monitoring.md).
 
 
 ## Wichtige Konzepte im Video {#key-concepts-video}

@@ -21,7 +21,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 95%
@@ -134,4 +134,4 @@ Im folgenden Beispiel werden der Titel, die Plankosten sowie die Beschreibung de
 
 ![](assets/campaign-export-template.png)
 
-Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versand zugeordnet sein. Siehe [diesen Abschnitt](providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versand zugeordnet sein. Siehe [diesen Abschnitt](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).

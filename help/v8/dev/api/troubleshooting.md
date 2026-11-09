@@ -14,10 +14,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 96%
+ht-degree: 100%
 ---
 # Fehlerbehebung bei APIs {#troubleshooting}
 
@@ -81,7 +81,7 @@ In der Antwort muss der Wert ORGANISATION_ID mit dem in Ihrer ersten GET-Anfrage
 }
 ```
 
-* **Bei einer Anfrage an Adobe.io erhalten Sie {„code“:500, „message“:„Oops. Da ist etwas schiefgelaufen. Überprüfen Sie Ihren URI und versuchen Sie es erneut.&quot;}**
+* **Wenn Sie eine Anfrage an Adobe.io richten, erhalten Sie {&quot;code&quot;:500, &quot;message&quot;:&quot;Oops. Da ist etwas schiefgelaufen. Überprüfen Sie Ihren URI und versuchen Sie es erneut.&quot;}**
 
 Adobe.io deklariert Ihren ungültigen URI: Der von Ihnen angefragte URI ist höchstwahrscheinlich ungültig. Wenn Sie in Adobe.io den Campaign-Dienst wählen, erhalten Sie eine Auswahl mit einer Liste möglicher Organisationskennungen. Sie müssen dafür sorgen, dass die von Ihnen gewählte Option mit der Eingabe in Ihrer URL übereinstimmt.
 

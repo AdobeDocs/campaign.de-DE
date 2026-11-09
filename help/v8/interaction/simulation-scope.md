@@ -1,0 +1,69 @@
+---
+product: campaign
+title: Simulationsperimeter
+description: Simulationsperimeter
+feature: Interaction, Offers
+version: Campaign v8, Campaign Classic v7
+audience: interaction
+content-type: reference
+topic-tags: simulating-offers
+exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
+TQID: 'https://experienceleague.adobe.com/mZ618bV3lzbXS09MXBXJxM5RizvMWl6lEgw0Bwb2bGI'
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 100%
+---
+# Simulationsumfang{#simulation-scope}
+
+
+
+## Perimeter konfigurieren {#definition-of-the-scope}
+
+Die Perimeterkonfiguration erfolgt im Tab **[!UICONTROL Perimeter]**.
+
+Folgende Felder müssen zwingend ausgefüllt werden:
+
+* Angebotsumgebung oder -kategorie
+* Platzierung
+* Kontaktdatum. Berücksichtigt werden nur Angebote, die zum Kontaktdatum infrage kommen
+* Zielpopulation.
+
+  Wenn kein Zielgruppenfilter angegeben wird, wird die gesamte Empfängertabelle in der Simulation berücksichtigt.
+
+* Anzahl an zu simulierenden Vorschlägen pro Kontakt.
+
+  Die empfangende Person erhält diese Anzahl von Vorschlägen. Wenn Sie z. B. 5 eingeben, erhält jede Zielperson maximal 5 Angebotsvorschläge.
+
+  ![](assets/offer_simulation_009.png)
+
+Zur weiteren Feinabstimmung der in der Simulation zu berücksichtigenden Angebote können Themen angegeben werden. Diese müssen zuvor auf Ebene der Kategorie definiert werden.
+
+Sie haben auch die Möglichkeit, die Simulation für alle Angebote durchzuführen oder sie auf die veröffentlichten Angebote zu beschränken. Mit einigen Filtern können Sie Ihre Auswahl bei Bedarf ändern.
+
+>[!NOTE]
+>
+>Die Angabe eines Kontaktdatums ist obligatorisch. Dies erlaubt dem Interaktionsmodul eine erste Sortierung in der ausgewählten Umgebung oder Kategorie. Wenn kein Datum konfiguriert ist, gibt die Simulation einen Fehler aus.
+
+## Berichtsachsen hinzufügen {#adding-reporting-axes}
+
+Im Tab **[!UICONTROL Berechnungen]** können Sie auf die Zielgruppe oder direkt auf die Angebote bezogene Berichtsachsen hinzufügen, um die Analyse der Simulation zu bereichern.
+
+Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die entsprechenden Felder aus. Zur Berechnung der Simulation werden Achsen verwendet und im Analysebericht angezeigt. Weitere Informationen hierzu finden Sie im Abschnitt [Simulationsverfolgung](simulation-tracking.md).
+
+![](assets/offer_simulation_011.png)

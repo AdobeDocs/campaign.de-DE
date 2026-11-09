@@ -27,16 +27,22 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 86%
+source-wordcount: '227'
+ht-degree: 66%
 ---
 # Erste Schritte mit Web-Anwendungen und Web-Formularen{#gs-ac-web}
 
+>[!NOTE]
+>
+>Für die meisten gängigen Anwendungsfälle sollten Sie Ihre Landingpages in der Web-Benutzeroberfläche von Campaign erstellen, wo Sie sie einfach entwerfen und veröffentlichen können. In der Client-Konsole erstellte Landingpages bieten, wie in diesem Abschnitt beschrieben, mehr Einstellungen und erweiterte Anwendungsfälle.
+>
+>[Erfahren Sie mehr über Landingpages in der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+
 Adobe Campaign verfügt über ein Grafikmodul zur Definition und Veröffentlichung von **Web-Formularen**, um Seiten mit Eingabe- und Auswahlfeldern zu erstellen, die Daten aus der Datenbank enthalten können. Auf diese Weise können Sie Web-Seiten entwerfen und posten, auf die Benutzer zugreifen können, um Informationen anzuzeigen oder einzugeben.
 
-Wie Sie Web-Formulare erstellen und veröffentlichen, erfahren Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de#designing-content){target="_blank"}
+In diesem Abschnitt erfahren Sie, wie Sie Web-Formulare erstellen [&#x200B; veröffentlichen](web/about-web-forms.md)
 
 ![](assets/sample.png)
 
@@ -44,4 +50,4 @@ Adobe Campaign ermöglicht es Ihnen, mit Daten aus der Datenbank dynamische und 
 
 Sie können Seiten erstellen, wie ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare mit Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. Diese Funktionalität ermöglicht Ihnen das Entwerfen und Posten von Web-Seiten, auf denen Benutzende Informationen suchen oder eingeben können.
 
-Wie Sie Web-Anwendungen erstellen und veröffentlichen, erfahren Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=de#designing-content){target="_blank"}
+In diesem Abschnitt erfahren Sie, wie Sie Web-Anwendungen [&#x200B; und veröffentlichen](web/about-web-applications.md)

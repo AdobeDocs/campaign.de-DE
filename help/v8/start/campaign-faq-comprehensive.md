@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
-source-wordcount: '11655'
+source-wordcount: '11649'
 ht-degree: 17%
 ---
 # Häufig gestellte Fragen {#faq}
@@ -169,7 +169,7 @@ Die Erstellung Ihrer ersten E-Mail in Campaign v8 ist unkompliziert. Sie beginne
 
 Um den Adobe-Support zu kontaktieren, verbinden Sie sich mit [Adobe Admin Console](https://adminconsole.adobe.com/overview){target="_blank"}, um einen Fall zu erstellen oder eine Chat-Sitzung zu starten.
 
-Erfordert individuelle Konten mit korrekten Berechtigungen. Wenn Sie sich nicht anmelden können, fordern Sie den Zugriff über Experience League an. [Weitere Informationen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
+Erfordert individuelle Konten mit korrekten Berechtigungen. Wenn Sie sich nicht anmelden können, fordern Sie den Zugriff über Experience League an. [Weitere Informationen](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html){target="_blank"}
 
 Alternativ können Sie der [Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"} beitreten, um nach Antworten zu suchen oder Experten zu fragen.
 
@@ -212,7 +212,7 @@ Diese Einschränkungen ändern sich mit der Erweiterung von Adobe v8. Den aktuel
 
 **Verwandte Themen:**
 
-[Migration von Campaign v7 zu v8](../start/v7-to-v8.md#limitations) | [FFDA-Architektur](../architecture/enterprise-deployment.md)
+[Migration von Campaign v7 zu v8](../start/v7-to-v8.md) | [FFDA-Architektur](../architecture/enterprise-deployment.md)
 
 +++
 
@@ -820,7 +820,7 @@ Ja. Campaign unterstützt statische Anhänge (dieselbe Datei für alle Empfänge
 
 Sichere Dateiformate verwenden (PDF, JPEG, PNG, DOCX) und Testadressen testen, bevor die Produktion gesendet wird.
 
-Weitere Informationen finden Sie im [Handbuch zu E-Mail-Anhängen](../send/email.md#attachments)
+Weitere Informationen finden Sie im [Handbuch zu E-Mail-Anhängen](../send/email.md)
 
 +++
 
@@ -1754,7 +1754,7 @@ Konsultieren Sie den Rechtsbeistand, um sicherzustellen, dass Ihre Implementieru
 
 **Verwandte Themen:**
 
-[Anmeldedienste](../start/subscriptions.md) | [Datenschutz und Einverständnis](../start/privacy.md#consent-retention-roles) | [Datenschutzverwaltung](../start/privacy.md)
+[Anmeldedienste](../start/subscriptions.md) | [Datenschutz und Einverständnis](../start/privacy.md) | [Datenschutzverwaltung](../start/privacy.md)
 
 +++
 
@@ -1819,7 +1819,7 @@ Du findest nicht, was du suchst? Im Folgenden finden Sie zusätzliche Ressourcen
 Tauschen Sie sich mit anderen Campaign-Benutzern und Adobe-Experten aus, um Informationen auszutauschen und Antworten zu erhalten.
 
 * **[Adobe Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"}** - Stellen Sie Fragen, teilen Sie Lösungen mit anderen und treten Sie in die Campaign-Community ein
-* **[Experience League-](https://experienceleaguecommunities.adobe.com/?profile.language=de&lang=de){target="_blank"}**: Durchsuchen Sie Diskussionen über alle Adobe-Produkte hinweg.
+* **[Experience League-](https://experienceleaguecommunities.adobe.com/?lang=de){target="_blank"}**: Durchsuchen Sie Diskussionen über alle Adobe-Produkte hinweg.
 * **[Campaign Community Office Hours](https://experienceleague.adobe.com/de){target="_blank"}** - Nehmen Sie an Live-Sessions mit Adobe-Experten teil.
 
 ### Dokumentation und Lernen
@@ -1839,12 +1839,12 @@ Hier finden Sie ausführliche technische Dokumentationen und Entwicklerressource
 * **[Kompatibilitätsmatrix](compatibility-matrix.md)** - Unterstützte Systeme und Versionen
 * **[Häufig gestellte Fragen zu Versionen und Upgrades](upgrades.md)** - Überprüfen Sie Ihre Version und erfahren Sie mehr über Upgrades
 
-### Support und Services
+### Support und Services {#support}
 
 Erhalten Sie Hilfe vom Support-Team von Adobe und verwalten Sie Ihre Instanz.
 
 * **[Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}** - Support-Fälle protokollieren und Benutzer verwalten
-* **[Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}** - Kontaktieren Sie das Support-Team
+* **[Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html){target="_blank"}** - Kontaktieren Sie das Support-Team
 * **[Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"}** - Einstellungen der Campaign-Instanz verwalten
 * **[Systemstatus](https://status.adobe.com/de-de/){target="_blank"}** - Überprüfen des Adobe Services-Status
 

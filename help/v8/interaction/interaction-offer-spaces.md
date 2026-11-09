@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '889'
 ht-degree: 92%
 ---
 # Platzierungen erstellen{#creating-offer-spaces}
@@ -173,4 +173,4 @@ Sollte kein Angebot für einen Empfänger infrage kommen, ist dies in der Vorsch
 
 Die Vorschau kann Kontexte ignorieren, wenn diese auf eine Platzierung beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema erweitert wurde, um Felder hinzuzufügen, auf die in einem Bereich mithilfe eines eingehenden Kanals verwiesen wird.
 
-Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}.
+Weitere Informationen hierzu finden Sie in diesem Beispiel in [diesem Abschnitt](extension-example.md).

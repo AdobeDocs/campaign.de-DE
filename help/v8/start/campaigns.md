@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 73%
@@ -115,7 +115,7 @@ Adobe Campaign bietet ein **dezentrales Marketing**-Add-on zur Implementierung v
 
 >[!NOTE]
 >
->Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](compatibility-matrix.md)
 
 Auf [&#x200B; Seite erfahren Sie, wie Sie die Funktionen von Campaign für dezentrales Marketing konfigurieren und &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de){target="_blank"}.
 
@@ -125,6 +125,6 @@ Adobe Campaign bietet ein Add-on zur **Reaktionsverwaltung** (Response Manager),
 
 >[!NOTE]
 >
->Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](compatibility-matrix.md)
 
 [&#128279;](../assets/do-not-localize/book.png) Erfahren Sie in der [Dokumentation zu Campaign Classic v7, wie Sie den Campaign Response Manager konfigurieren und &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=de){target="_blank"}.

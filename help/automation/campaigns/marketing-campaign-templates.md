@@ -20,7 +20,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 96%
@@ -126,7 +126,7 @@ Im Kampagnen-Dashboard werden zudem Verknüpfungen zu den Konfigurationsfenstern
 
 * **Kontrollgruppe**
 
-  Wenn dieses Modul ausgewählt wird, wird den erweiterten Einstellungen der Vorlage und den auf dieser Vorlage basierenden Kampagnen eine zusätzliche Registerkarte hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#defining-a-control-group).
+  Wenn dieses Modul ausgewählt wird, wird den erweiterten Einstellungen der Vorlage und den auf dieser Vorlage basierenden Kampagnen eine zusätzliche Registerkarte hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md).
 
   ![](assets/template-activate-1.png)
 
@@ -139,7 +139,7 @@ Im Kampagnen-Dashboard werden zudem Verknüpfungen zu den Konfigurationsfenstern
 
 * **Dokumente**
 
-  Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zur Registerkarte **[!UICONTROL Bearbeiten]** der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Anhänge können für jede Kampagne in der Vorlage oder einzeln hinzugefügt werden. Weitere Informationen zu Dokumenten finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md#manage-associated-documents).
+  Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zur Registerkarte **[!UICONTROL Bearbeiten]** der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Anhänge können für jede Kampagne in der Vorlage oder einzeln hinzugefügt werden. Weitere Informationen zu Dokumenten finden Sie in [diesem Abschnitt](marketing-campaign-deliveries.md).
 
   ![](assets/template-activate-3.png)
 
@@ -151,7 +151,7 @@ Im Kampagnen-Dashboard werden zudem Verknüpfungen zu den Konfigurationsfenstern
 
 * **Zielgruppenbestimmungen und Workflows**
 
-  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können auch basierend auf dieser Vorlage einzeln für jede Kampagne konfiguriert werden.Weitere Informationen zu Kampagnen-Workflows finden Sie [in diesem Abschnitt](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können auch basierend auf dieser Vorlage einzeln für jede Kampagne konfiguriert werden.Weitere Informationen zu Kampagnen-Workflows finden Sie [in diesem Abschnitt](marketing-campaign-deliveries.md).
 
   ![](assets/template-activate-5.png)
 

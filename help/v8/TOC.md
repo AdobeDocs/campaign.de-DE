@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: b5e9265db5409f3f0fada35c43cb08fafa1ec4e0
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 87%
+source-wordcount: '1084'
+ht-degree: 89%
 ---
 
 # Dokumentation zu Adobe Campaign v8 (Konsole) {#campaign-v8}
@@ -37,17 +37,8 @@ ht-degree: 87%
   + [Wechsel von Campaign Classic v7 zu v8](start/v7-to-v8.md)
   + [Wechsel von Campaign Standard zu v8](start/acs-to-v8.md)
   + [Häufig gestellte Fragen](start/campaign-faq-comprehensive.md)
-  + {hide-from-toc}[Häufig gestellte Fragen](start/campaign-faq.md)
   + {hide-from-toc}[E-Mail-Tracking-Pixel und CNIL-Anleitung](start/cnil-pixel-tracking.md)
-+ Administration und Berechtigungen {#permissions}
-  + [Erste Schritte mit Berechtigungen](start/gs-permissions.md)
-  + [Verwalten von Benutzerberechtigungen](start/manage-permissions.md)
-  + [Berechtigungen für Ordner hinzufügen](start/folder-permissions.md)
-  + [Control Panel](config/self-service.md)
-+ Kampagnen-Management {#campaigns}
-  + [Erste Schritte mit Kampagnen](start/campaigns.md)
-  + [Dokumentation zur Kampagnenorchestrierung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
-+ Nachrichten senden {#send}
++ Nachrichten {#send}
   + [Erste Schritte mit Nachrichten](start/gs-message.md)
   + [Erstellen Ihres ersten Versands](start/create-message.md)
   + [Arbeiten mit Versandvorlagen](send/create-templates.md)
@@ -139,17 +130,54 @@ ht-degree: 87%
     + {hide-from-toc}[Audiences mit Adobe-Lösungen freigeben](start/shared-audiences.md)
   + {hide-from-toc}[Best Practices](audiences/audiences-best-practices.md)
   + [Abonnements verwalten](start/subscriptions.md)
-+ Landingpages und Forms {#content}
++ Landingpages und Formulare {#content}
   + [Erstellen von Landingpages](dev/landing-pages.md)
   + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
+  + Web-Anwendungen {#web-applications}
+    + [Erste Schritte mit Web-Anwendungen](dev/web/about-web-applications.md)
+    + [Neue Web-Anwendung erstellen](dev/web/creating-a-new-web-application.md)
+    + [Web-Anwendung konzipieren](dev/web/designing-a-web-application.md)
+    + [Anwendungsfälle: Erstellen von Übersichten](dev/web/use-cases-creating-overviews.md)
+    + [Web-Anwendung übersetzen](dev/web/translating-a-web-application.md)
+    + [Besuche in einer Web-Anwendung tracken](dev/web/tracking-a-web-application.md)
+    + [Opt-out vom Web-Anwendungs-Tracking](dev/web/web-application-tracking-opt-out.md)
+  + Bearbeiten von HTML-Inhalten {#editing-html-content}
+    + [Erste Schritte mit dem HTML-Editor](dev/web/about-campaign-html-editor.md)
+    + [Vorlagenverwaltung](dev/web/template-management.md)
+    + [Benutzeroberfläche des Inhaltseditors](dev/web/content-editor-interface.md)
+    + [Inhalte bearbeiten](dev/web/editing-content.md)
+    + [Best Practices bei der Inhaltsbearbeitung](dev/web/content-editing-best-practices.md)
+    + [Landingpage erstellen](dev/web/creating-a-landing-page.md)
+    + [Anwendungsfall: Erstellen eines E-Mail-Versands](dev/web/use-case-creating-an-email-delivery.md)
+  + Web-Formulare {#web-forms}
+    + [Erste Schritte mit Web-Formularen](dev/web/about-web-forms.md)
+    + [Verwenden einer Web-Formularvorlage](dev/web/using-a-web-form-template.md)
+    + [Felder zu einem Web-Formular hinzufügen](dev/web/adding-fields-to-a-web-form.md)
+    + [Statische Elemente in einem Web-Formular](dev/web/static-elements-in-a-web-form.md)
+    + [Layout eines Web-Formulars definieren](dev/web/defining-web-forms-layout.md)
+    + [Formular-Rendering](dev/web/form-rendering.md)
+    + [Seitenreihenfolge definieren](dev/web/defining-web-forms-page-sequencing.md)
+    + [Web-Formularantworten speichern](dev/web/web-forms-answers.md)
+    + [Web-Formular veröffentlichen](dev/web/publishing-a-web-form.md)
+    + [Eigenschaften eines Web-Formulars definieren](dev/web/defining-web-forms-properties.md)
+    + [Web-Formular übersetzen](dev/web/translating-a-web-form.md)
+    + [Anwendungsfälle: Web-Formulare](dev/web/use-cases-web-forms.md)
+  + Umfragen {#surveys}
+    + [Erste Schritte mit Umfragen](dev/surveys/about-surveys.md)
+    + [Wichtige Schritte zum Erstellen einer Umfrage](dev/surveys/getting-started-with-surveys.md)
+    + [Umfrage entwerfen](dev/surveys/building-a-survey.md)
+    + [Antworten verwalten](dev/surveys/managing-answers.md)
+    + [Erfasste Daten veröffentlichen, tracken und verwenden](dev/surveys/publish-track-and-use-collected-data.md)
+    + [Umfragen konfigurieren](dev/surveys/configuring-surveys.md)
+    + [Anwendungsfall: Erstellen eines Empfehlungsformulars](dev/surveys/use-case-creating-a-refer-a-friend-form.md)
+    + [Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage](dev/surveys/use-case-displaying-report-on-answers-to-an-online-survey.md)
++ Kampagnen {#campaigns}
+  + [Erste Schritte mit Kampagnen](start/campaigns.md)
+  + [Dokumentation zur Kampagnenorchestrierung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
 + Workflows {#workflows}
   + [Erste Schritte mit Workflows](config/workflows.md)
   + [Workflow-Dokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
-+ Datenschutz und Sicherheit {#privacy}
-  + [Verwalten von Datenschutzanfragen](start/privacy.md)
-  + [Sicherheitsrichtlinien](config/security.md)
-  + [Add-on für verbesserte Sicherheit](config/enhanced-security.md)
-+ Angebotsverwaltung - Interaction {#offers}
++ Angebote und Interaktionen {#offers}
   + [Erste Schritte mit Echtzeit-Interaktionen](interaction/interaction.md)
   + [Umgebungen und Architektur](interaction/interaction-architecture.md)
   + [Best Practices](interaction/interaction-best-practices.md)
@@ -165,9 +193,31 @@ ht-degree: 87%
     + [Kontext](interaction/interaction-present-offers.md)
     + [Aufrufen eines Angebots auf einer Webseite](interaction/interaction-integration.md)
     + [Verwalten anonymer Interaktionen](interaction/anonymous-interactions.md)
+  + Verwalten eines Angebotskatalogs {#managing-an-offer-catalog}
+    + [Angebot genehmigen und aktivieren](interaction/approving-and-activating-an-offer.md)
+    + [Angebotsvorlagen verwalten](interaction/managing-offer-templates.md)
+    + [Angebotsunterbreitung verwalten](interaction/managing-offer-presentation.md)
+  + Angebotssimulation {#simulating-offers}
+    + [Über die Angebotssimulation](interaction/about-offers-simulation.md)
+    + [Ausführungsparameter](interaction/execution-settings.md)
+    + [Simulationsperimeter](interaction/simulation-scope.md)
+    + [Simulationsverfolgung](interaction/simulation-tracking.md)
   + [Berichte und Verlauf](interaction/interaction-tracking.md)
   + [Anwendungsfälle](interaction/interaction-use-cases.md)
-+ Tracking und Analysen {#analytics}
+  + Anwendungsbeispiele {#case-study}
+    + [Unterbreitungsregeln](interaction/presentation-rules.md)
+    + [Angebot auf einem Inbound-Kanal](interaction/offers-on-an-inbound-channel.md)
+    + [Angebot auf einem Outbound-Kanal](interaction/offers-on-an-outbound-channel.md)
+  + [Erweiterte Einstellungen](interaction/interaction-advanced-settings.md)
+  + Erweiterte Parameter {#advanced-parameters}
+    + [Beispiel einer Erweiterung](interaction/extension-example.md)
++ Abfrage und Daten {#data}
+  + Abfragen der Datenbank {#query}
+    + [Arbeiten mit dem Abfrage-Editor](start/query-editor.md)
+    + [Entwerfen von Abfragen](start/design-queries.md)
+    + [Filterbedingungen definieren](start/filter-conditions.md)
+  + [Datenimport](start/import.md)
++ Reporting und Tracking {#analytics}
   + Nachrichten-Tracking {#tracking}
     + [Erste Schritte mit dem Tracking](send/tracking.md)
     + [Konfigurieren getrackter Links](send/tracked-links.md)
@@ -190,13 +240,6 @@ ht-degree: 87%
       + [Versandberichte](reporting/delivery-reports.md)
       + [Berechnung integrierter Metriken](reporting/metrics-calculation.md)
     + [Benutzerdefinierte Berichte](reporting/custom-reports.md)
-+ Daten-Management {#data}
-  + Abfragen der Datenbank {#query}
-    + [Arbeiten mit dem Abfrage-Editor](start/query-editor.md)
-    + [Entwerfen von Abfragen](start/design-queries.md)
-    + [Filterbedingungen definieren](start/filter-conditions.md)
-  + [Datenimport](start/import.md)
-  + [Workflow-Dokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
 + Integrationen {#connect}
   + [Campaign mit anderen Lösungen verbinden](connect/integration.md)
   + Campaign + Experience Platform {#ac-aep}
@@ -215,6 +258,15 @@ ht-degree: 87%
     + [Arbeiten mit Campaign und SFDC](connect/ac-sfdc.md)
     + [Arbeiten mit Campaign und Microsoft Dynamics](connect/ac-ms-dyn.md)
     + [Daten synchronisieren](connect/crm-data-sync.md)
++ Administration und Berechtigungen {#permissions}
+  + [Erste Schritte mit Berechtigungen](start/gs-permissions.md)
+  + [Verwalten von Benutzerberechtigungen](start/manage-permissions.md)
+  + [Berechtigungen für Ordner hinzufügen](start/folder-permissions.md)
+  + [Control Panel](config/self-service.md)
++ Datenschutz und Sicherheit {#privacy}
+  + [Verwalten von Datenschutzanfragen](start/privacy.md)
+  + [Sicherheitsrichtlinien](config/security.md)
+  + [Add-on für verbesserte Sicherheit](config/enhanced-security.md)
 + Architektur {#architecture}
   + [Allgemeine Prinzipien](architecture/general-architecture.md)
   + [Architekturmodelle](architecture/architecture.md)

@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 88%
+source-wordcount: '125'
+ht-degree: 77%
 ---
 # Arbeiten mit Campaign und Adobe Journey Optimizer
 
@@ -43,7 +43,7 @@ Die wichtigsten Schritte sind die Erstellung einer Transaktionsnachrichtenvorlag
 ![](assets/ajo-integration.png)
 
 
-[&#x200B; Erfahren Sie mehr über diese Integration in diesem End-to-End-Beispiel](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/business-use-cases/ajo-ac){target="_blank"}.
+[&#x200B; Erfahren Sie mehr über diese Integration in diesem End-to-End-Beispiel](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}.
 
 
 [Weitere Informationen finden Sie in der Dokumentation zu Journey Optimizer](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.

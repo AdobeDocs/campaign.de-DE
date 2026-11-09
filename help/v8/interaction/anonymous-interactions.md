@@ -3,6 +3,7 @@ product: campaign
 title: Unterbreiten von Angeboten für anonyme Profile (eingehende Interaktion)
 description: Hier erfahren Sie, wie Sie anonymen Profilen Angebote unterbreiten
 feature: Interaction, Offers
+version: Campaign v8, Campaign Classic v7
 role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
 TQID: 'https://experienceleague.adobe.com/rl7SIcS-OkMmLnxvPiEfjs51xouGSSyLJV4in-vsoCE'
@@ -21,7 +22,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 100%
@@ -48,7 +49,7 @@ Das Feld **[!UICONTROL Besucherordner]** erscheint. Es enthält bereits den Link
 
 Genau wie die ausgehenden Interaktionen werden die eingehenden Interaktionen in einem Angebotskatalog organisiert, der aus Kategorien und Angeboten besteht.
 
-Die Erstellung von Kategorien und Platzierungen folgt dem gleichen Muster wie bei identifizierten Kontakten. Siehe [Angebotskategorie erstellen](interaction-offer-catalog.md#creating-offer-categories) und [Angebotsumgebung erstellen](interaction-env.md#creating-an-offer-environment)).
+Die Erstellung von Kategorien und Platzierungen folgt dem gleichen Muster wie bei identifizierten Kontakten. Siehe [Angebotskategorie erstellen](interaction-offer-catalog.md#creating-offer-categories) und [Angebotsumgebung erstellen](interaction-env.md#create-an-offer-environment)).
 
 ## Anonyme Besucher {#anonymous-visitors}
 

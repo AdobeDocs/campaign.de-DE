@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 97%
@@ -99,7 +99,7 @@ Sie können alle Werte einer Adobe Campaign-Aufzählung durch die des CRM-System
 
 1. Klicken Sie abschließend auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL Starten]**, um mit dem Import der Aufzählungen zu beginnen.
 
-1. Durchsuchen Sie den Knoten **[!UICONTROL Administration > Plattform > Aufzählungen]**, um die importierten Werte zu überprüfen. Weitere Informationen über Aufzählungen finden Sie auf [dieser Seite](../config/ui-settings.md#enumerations).
+1. Durchsuchen Sie den Knoten **[!UICONTROL Administration > Plattform > Aufzählungen]**, um die importierten Werte zu überprüfen. Weitere Informationen über Aufzählungen finden Sie auf [dieser Seite](../config/ui-settings.md).
 
 Adobe Campaign und Salesforce.com sind jetzt verbunden. Sie können eine Datensynchronisation zwischen den beiden Systemen einrichten.
 

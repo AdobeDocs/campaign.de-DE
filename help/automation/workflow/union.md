@@ -19,7 +19,7 @@ subfeature_v2:
     internal-label: Workflows
   - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
     internal-label: Targeting Activity
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 95%
@@ -32,7 +32,7 @@ Eine **[!UICONTROL Vereinigung]** gruppiert das Ergebnis mehrerer eingehender Ak
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren und Verwenden der Aktivität **[!UICONTROL Vereinigung]** finden Sie auf [dieser Seite](targeting-workflows.md#combining-several-targets--union-).
+>Weitere Informationen zum Konfigurieren und Verwenden der Aktivität **[!UICONTROL Vereinigung]** finden Sie auf [dieser Seite](targeting-workflows.md#combine-several-targets--union-).
 
 ## Anwendungsbeispiel für eine Vereinigung {#union-example}
 

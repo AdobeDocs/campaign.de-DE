@@ -38,7 +38,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 94%
@@ -221,7 +221,7 @@ In diesem Beispiel erstellen wir nicht anhand der Attribute **@autopk** oder **@
 >
 >Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselsequenz (@pkSequence) beibehalten.
 
-Weiterführende Informationen zu Schlüsseln finden Sie in [diesem Abschnitt](database-mapping.md#management-of-keys).
+Weiterführende Informationen zu Schlüsseln finden Sie in [diesem Abschnitt](database-mapping.md).
 
 ## Attribute (Felder) {#attributes--fields-}
 

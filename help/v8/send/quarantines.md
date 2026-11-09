@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 72%
@@ -88,7 +88,7 @@ Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, wird die Nachricht automati
 
 Im Gegensatz zu Hardbounces senden Softbounces eine Adresse nicht sofort in Quarantäne, sondern erhöhen stattdessen einen Fehlerzähler. Wenn der Fehlerzähler den Grenzwert erreicht, wird die Adresse unter Quarantäne gestellt. Weitere Informationen zu weiteren Zustellversuchen und Fehlertypen finden Sie unter [&#x200B; von fehlgeschlagenen Sendungen &#x200B;](delivery-failures.md).
 
-Der Fehlerzähler wird erneut initialisiert, wenn der letzte signifikante Fehler vor mehr als 10 Tagen aufgetreten ist. Der Status der Adresse wird auf **[!UICONTROL Gültig]** gesetzt und mithilfe des Workflows **[!UICONTROL Datenbankbereinigung]** wird die Adresse aus der Quarantäneliste gelöscht. [Weitere Informationen zu technischen Workflows](../config/workflows.md#technical-workflows).
+Der Fehlerzähler wird erneut initialisiert, wenn der letzte signifikante Fehler vor mehr als 10 Tagen aufgetreten ist. Der Status der Adresse wird auf **[!UICONTROL Gültig]** gesetzt und mithilfe des Workflows **[!UICONTROL Datenbankbereinigung]** wird die Adresse aus der Quarantäneliste gelöscht. [Weitere Informationen zu technischen Workflows](../config/workflows.md).
 
 ## Zugriff auf unter Quarantäne gestellte E-Mail-Adressen {#access-quarantined-addresses}
 

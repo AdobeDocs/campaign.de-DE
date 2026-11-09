@@ -20,7 +20,7 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 100%
@@ -56,7 +56,7 @@ Lernen Sie verschiedene Szenarien kennen, in denen Workflows verwendet werden k�
 * [Erstellen einer zusammenfassenden Liste](create-a-summary-list.md)
 * [Anreichern von Daten](enrich-data.md)
 * [Verwenden von Aggregaten](using-aggregates.md)
-* [Verschl체sseln und Exportieren von Daten mit einem im Control Panel installierten Schl체ssel](use-workflow-data.md#use-case-gpg-encrypt)
+* [Verschl체sseln und Exportieren von Daten mit einem im Control Panel installierten Schl체ssel](use-workflow-data.md)
 * [Viertelj채hrliches Listen-Update mithilfe einer inkrementellen Abfrage](quarterly-list-update.md)
 * [Verwenden der Zusammenf체hrungsfunktion der Deduplizierungsaktivit채t](deduplication-merge.md)
 * [Einrichten eines Workflows f체r den wiederkehrenden Import](recurring-import-workflow.md)

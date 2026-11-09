@@ -29,7 +29,7 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 97%
@@ -126,7 +126,7 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
    ![](assets/cube-pivot-table-config.png)
 
-   Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. [Weitere Informationen](customize-cubes.md#configure-the-display).
+   Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. [Weitere Informationen](customize-cubes.md#configuring-the-display).
 
 1. Sie können neue Kennzahlen auf Basis bestehender erstellen. Klicken Sie dazu auf **[!UICONTROL Kennzahl erstellen]** und konfigurieren Sie diese.
 

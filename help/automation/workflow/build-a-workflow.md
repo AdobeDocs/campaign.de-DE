@@ -10,19 +10,19 @@ TQID: https://experienceleague.adobe.com/EzHUErLy7-OcfF0lxH4UHXm1N1HYGt6kP9Io1LI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
-source-wordcount: 875
-ht-degree: 87%
-
+source-wordcount: '875'
+ht-degree: 100%
 ---
-
 # Erstellen eines Workflows {#build-a-workflow}
 
 ## Erstellen eines neuen Workflows {#create-a-new-workflow}
@@ -45,7 +45,7 @@ Benennen Sie den Workflow und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Hinzufügen und Verknüpfen von Aktivitäten {#add-and-link-activities}
 
-Definieren Sie jetzt die verschiedenen Aktivitäten und verbinden Sie sie in einem Diagramm. In diesem Schritt der Konfiguration sehen wir die Diagrammbeschriftung und den Workflow-Status (Bearbeitung läuft). Der untere Bereich des Fensters dient nur zur Bearbeitung des Diagramms. Es enthält eine Symbolleiste, eine Palette von Aktivitäten (links) und das Diagramm selbst (rechts).
+Definieren Sie jetzt die verschiedenen Aktivitäten und verbinden Sie sie in einem Diagramm. In diesem Schritt der Konfiguration sehen wir den Diagrammtitel und den Workflow-Status (Bearbeitung läuft). Der untere Bereich des Fensters dient nur zur Bearbeitung des Diagramms. Er enthält eine Symbolleiste, eine Palette von Aktivitäten (links) und das Diagramm selbst (rechts).
 
 ![](assets/new-workflow-2.png)
 
@@ -96,14 +96,14 @@ Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Element
 
   Die Symbole zur Anzeige des Fortschritts und der Protokolle werden in den folgenden Abschnitten beschrieben:
 
-   * [Anzeigen des Fortschritts](monitor-workflow-execution.md#displaying-progress)
-   * [Anzeigen der Protokolle](monitor-workflow-execution.md#displaying-logs)
+  * [Anzeigen des Fortschritts](monitor-workflow-execution.md#displaying-progress)
+  * [Anzeigen der Protokolle](monitor-workflow-execution.md#displaying-logs)
 
 * **Objektausrichtung**
 
   Um die Symbole der Aktivitäten auszurichten, markieren Sie diese und klicken Sie in der Symbolleiste auf **[!UICONTROL Vertikal ausrichten]** oder **[!UICONTROL Horizontal ausrichten]**.
 
-  Verwenden Sie die **STRG**-Taste, um mehrere verstreute Aktivitäten auszuwählen oder die Auswahl für eine oder mehrere Aktivitäten aufzuheben. Klicken Sie auf den Hintergrund des Diagramms, um die Auswahl aufzuheben.
+  Mit der **Strg**-Taste können Sie mehrere Aktivitäten auswählen, die im Diagramm nicht unmittelbar nebeneinander positioniert sind. Klicken Sie auf den Hintergrund des Diagramms, um die Auswahl aufzuheben.
 
 * **Hintergrundbild und Symbole**
 
@@ -130,7 +130,7 @@ Diese Kommentare werden automatisch angezeigt, wenn Benutzer über die Aktivitä
 
 ## Workflow-Vorlagen {#workflow-templates}
 
-Workflow-Vorlagen enthalten die Gesamtkonfiguration von Eigenschaften und möglicherweise eine Reihe von Aktivitäten, die innerhalb eines Diagramms verkettet sind. Diese Konfiguration kann für die Erstellung neuer Workflows mit einer bestimmten Anzahl vorkonfigurierter Elemente wiederverwendet werden
+Workflow-Vorlagen enthalten die allgemeine Konfiguration von Eigenschaften und gegebenenfalls eine Reihe von in einem Diagramm verketteten Aktivitäten. Diese Konfiguration kann für die Erstellung neuer Workflows mit einer bestimmten Anzahl vorkonfigurierter Elemente wiederverwendet werden.
 
 Die Konfiguration neuer Workflow-Vorlagen kann ausgehend von existierenden Vorlagen geschehen oder aber durch die Umwandlung eines existierenden Workflows in eine Vorlage.
 
