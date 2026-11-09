@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: b5e9265db5409f3f0fada35c43cb08fafa1ec4e0
+source-git-commit: 9b9c573de6120f4b3da0d5eee98192b56b4754df
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '882'
 ht-degree: 87%
 ---
 
@@ -39,15 +39,7 @@ ht-degree: 87%
   + [Häufig gestellte Fragen](start/campaign-faq-comprehensive.md)
   + {hide-from-toc}[Häufig gestellte Fragen](start/campaign-faq.md)
   + {hide-from-toc}[E-Mail-Tracking-Pixel und CNIL-Anleitung](start/cnil-pixel-tracking.md)
-+ Administration und Berechtigungen {#permissions}
-  + [Erste Schritte mit Berechtigungen](start/gs-permissions.md)
-  + [Verwalten von Benutzerberechtigungen](start/manage-permissions.md)
-  + [Berechtigungen für Ordner hinzufügen](start/folder-permissions.md)
-  + [Control Panel](config/self-service.md)
-+ Kampagnen-Management {#campaigns}
-  + [Erste Schritte mit Kampagnen](start/campaigns.md)
-  + [Dokumentation zur Kampagnenorchestrierung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
-+ Nachrichten senden {#send}
++ Nachrichten {#send}
   + [Erste Schritte mit Nachrichten](start/gs-message.md)
   + [Erstellen Ihres ersten Versands](start/create-message.md)
   + [Arbeiten mit Versandvorlagen](send/create-templates.md)
@@ -139,17 +131,16 @@ ht-degree: 87%
     + {hide-from-toc}[Audiences mit Adobe-Lösungen freigeben](start/shared-audiences.md)
   + {hide-from-toc}[Best Practices](audiences/audiences-best-practices.md)
   + [Abonnements verwalten](start/subscriptions.md)
-+ Landingpages und Forms {#content}
++ Landingpages und Formulare {#content}
   + [Erstellen von Landingpages](dev/landing-pages.md)
   + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
++ Kampagnen {#campaigns}
+  + [Erste Schritte mit Kampagnen](start/campaigns.md)
+  + [Dokumentation zur Kampagnenorchestrierung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
 + Workflows {#workflows}
   + [Erste Schritte mit Workflows](config/workflows.md)
   + [Workflow-Dokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
-+ Datenschutz und Sicherheit {#privacy}
-  + [Verwalten von Datenschutzanfragen](start/privacy.md)
-  + [Sicherheitsrichtlinien](config/security.md)
-  + [Add-on für verbesserte Sicherheit](config/enhanced-security.md)
-+ Angebotsverwaltung - Interaction {#offers}
++ Angebote und Interaktionen {#offers}
   + [Erste Schritte mit Echtzeit-Interaktionen](interaction/interaction.md)
   + [Umgebungen und Architektur](interaction/interaction-architecture.md)
   + [Best Practices](interaction/interaction-best-practices.md)
@@ -167,7 +158,13 @@ ht-degree: 87%
     + [Verwalten anonymer Interaktionen](interaction/anonymous-interactions.md)
   + [Berichte und Verlauf](interaction/interaction-tracking.md)
   + [Anwendungsfälle](interaction/interaction-use-cases.md)
-+ Tracking und Analysen {#analytics}
++ Abfrage und Daten {#data}
+  + Abfragen der Datenbank {#query}
+    + [Arbeiten mit dem Abfrage-Editor](start/query-editor.md)
+    + [Entwerfen von Abfragen](start/design-queries.md)
+    + [Filterbedingungen definieren](start/filter-conditions.md)
+  + [Datenimport](start/import.md)
++ Reporting und Tracking {#analytics}
   + Nachrichten-Tracking {#tracking}
     + [Erste Schritte mit dem Tracking](send/tracking.md)
     + [Konfigurieren getrackter Links](send/tracked-links.md)
@@ -190,13 +187,6 @@ ht-degree: 87%
       + [Versandberichte](reporting/delivery-reports.md)
       + [Berechnung integrierter Metriken](reporting/metrics-calculation.md)
     + [Benutzerdefinierte Berichte](reporting/custom-reports.md)
-+ Daten-Management {#data}
-  + Abfragen der Datenbank {#query}
-    + [Arbeiten mit dem Abfrage-Editor](start/query-editor.md)
-    + [Entwerfen von Abfragen](start/design-queries.md)
-    + [Filterbedingungen definieren](start/filter-conditions.md)
-  + [Datenimport](start/import.md)
-  + [Workflow-Dokumentation >](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de)
 + Integrationen {#connect}
   + [Campaign mit anderen Lösungen verbinden](connect/integration.md)
   + Campaign + Experience Platform {#ac-aep}
@@ -215,6 +205,15 @@ ht-degree: 87%
     + [Arbeiten mit Campaign und SFDC](connect/ac-sfdc.md)
     + [Arbeiten mit Campaign und Microsoft Dynamics](connect/ac-ms-dyn.md)
     + [Daten synchronisieren](connect/crm-data-sync.md)
++ Administration und Berechtigungen {#permissions}
+  + [Erste Schritte mit Berechtigungen](start/gs-permissions.md)
+  + [Verwalten von Benutzerberechtigungen](start/manage-permissions.md)
+  + [Berechtigungen für Ordner hinzufügen](start/folder-permissions.md)
+  + [Control Panel](config/self-service.md)
++ Datenschutz und Sicherheit {#privacy}
+  + [Verwalten von Datenschutzanfragen](start/privacy.md)
+  + [Sicherheitsrichtlinien](config/security.md)
+  + [Add-on für verbesserte Sicherheit](config/enhanced-security.md)
 + Architektur {#architecture}
   + [Allgemeine Prinzipien](architecture/general-architecture.md)
   + [Architekturmodelle](architecture/architecture.md)
