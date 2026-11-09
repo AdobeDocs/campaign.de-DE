@@ -39,7 +39,7 @@ ht-degree: 87%
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
 
 Adobe Campaign enthält ein Grafikmodul zum Definieren und Veröffentlichen von Web-Anwendungen. Damit werden Seiten erstellt, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. enthalten. Verwenden Sie diese Funktion, um Web-Seiten zu entwerfen und zu posten, auf denen Benutzende Informationen suchen oder eingeben können.
 
