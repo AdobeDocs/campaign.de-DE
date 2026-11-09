@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1084'
 ht-degree: 89%
 ---
 
@@ -193,9 +193,24 @@ ht-degree: 89%
     + [Kontext](interaction/interaction-present-offers.md)
     + [Aufrufen eines Angebots auf einer Webseite](interaction/interaction-integration.md)
     + [Verwalten anonymer Interaktionen](interaction/anonymous-interactions.md)
+  + Verwalten eines Angebotskatalogs {#managing-an-offer-catalog}
+    + [Angebot genehmigen und aktivieren](interaction/approving-and-activating-an-offer.md)
+    + [Angebotsvorlagen verwalten](interaction/managing-offer-templates.md)
+    + [Angebotsunterbreitung verwalten](interaction/managing-offer-presentation.md)
+  + Angebotssimulation {#simulating-offers}
+    + [Über die Angebotssimulation](interaction/about-offers-simulation.md)
+    + [Ausführungsparameter](interaction/execution-settings.md)
+    + [Simulationsperimeter](interaction/simulation-scope.md)
+    + [Simulationsverfolgung](interaction/simulation-tracking.md)
   + [Berichte und Verlauf](interaction/interaction-tracking.md)
   + [Anwendungsfälle](interaction/interaction-use-cases.md)
+  + Anwendungsbeispiele {#case-study}
+    + [Unterbreitungsregeln](interaction/presentation-rules.md)
+    + [Angebot auf einem Inbound-Kanal](interaction/offers-on-an-inbound-channel.md)
+    + [Angebot auf einem Outbound-Kanal](interaction/offers-on-an-outbound-channel.md)
   + [Erweiterte Einstellungen](interaction/interaction-advanced-settings.md)
+  + Erweiterte Parameter {#advanced-parameters}
+    + [Beispiel einer Erweiterung](interaction/extension-example.md)
 + Abfrage und Daten {#data}
   + Abfragen der Datenbank {#query}
     + [Arbeiten mit dem Abfrage-Editor](start/query-editor.md)

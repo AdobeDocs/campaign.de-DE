@@ -20,20 +20,20 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 60%
+source-wordcount: '119'
+ht-degree: 56%
 ---
 # Erweiterte Einstellungen des Interaction-Moduls
 
 Die Konfiguration des Campaign Interaction-Moduls ist erfahrenen Benutzern vorbehalten. Die erweiterten Einstellungen werden in der **Dokumentation zu Campaign Classic v7** erläutert:
 
-Erfahren Sie auf dieser Seite , wie Sie zusätzliche kontextuelle Daten [&#x200B; Angeboten &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html?lang=de){target="_blank"}.
+Erfahren Sie auf dieser Seite , wie Sie zusätzliche kontextuelle Daten [ Angeboten ](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html?lang=de){target="_blank"}.
 
-Erfahren Sie (auf dieser Seite), wie Sie [&#x200B; Eignungskriterien Ihrer Angebote &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=de){target="_blank"}.
+Erfahren Sie (auf dieser Seite), wie Sie [ Eignungskriterien Ihrer Angebote ](extension-example.md).
 
-Erfahren Sie auf dieser Seite mehr über [&#x200B; Erstellung einer Testumgebung](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html?lang=de){target="_blank"}.
+Erfahren Sie auf dieser Seite mehr über [ Erstellung einer Testumgebung](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html?lang=de){target="_blank"}.
 
-Erfahren Sie auf dieser Seite , wie Sie mithilfe von Erweiterungspunkten das Standardverhalten [&#x200B; Angebotsmoduls &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html?lang=de){target="_blank"}.
+Erfahren Sie auf dieser Seite , wie Sie mithilfe von Erweiterungspunkten das Standardverhalten [ Angebotsmoduls ](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html?lang=de){target="_blank"}.
 
