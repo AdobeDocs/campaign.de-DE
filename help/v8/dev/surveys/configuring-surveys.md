@@ -19,16 +19,16 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 84%
+source-wordcount: '130'
+ht-degree: 93%
 ---
 # Online-Umfragen konfigurieren{#configuring-surveys}
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
 
 
 
@@ -36,7 +36,7 @@ ht-degree: 84%
 
 Online-Umfragen können vollständig konfiguriert und an Ihre Anforderungen angepasst werden. Die Parameter müssen im Eigenschaftenfenster eingegeben werden.
 
-Die verfügbaren Parameter werden in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"} erläutert.
+Die verfügbaren Parameter werden in [diesem Dokument](../web/defining-web-forms-properties.md) erläutert.
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 

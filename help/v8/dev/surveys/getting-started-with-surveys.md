@@ -21,16 +21,16 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 97%
+source-wordcount: '992'
+ht-degree: 99%
 ---
 # Wichtige Schritte zum Erstellen einer Umfrage{#getting-started-with-surveys}
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
 
 
 
@@ -125,7 +125,7 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
   >[!NOTE]
   >
-  >Mit den Optionen im Tab **[!UICONTROL Erweitert]** können Sie für jedes Feld oder jede Frage das Seitenlayout nach Bedarf anpassen. Das Layout der Umfragefenster wird in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} näher beschrieben.
+  >Mit den Optionen im Tab **[!UICONTROL Erweitert]** können Sie für jedes Feld oder jede Frage das Seitenlayout nach Bedarf anpassen. Das Layout der Umfragefenster wird in [diesem Abschnitt](../web/about-web-forms.md) näher beschrieben.
 
   Wählen Sie im Detailfenster den Tab **[!UICONTROL Vorschau]** aus, um sich die Darstellung der soeben erstellten Umfrage anzusehen.
 

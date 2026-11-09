@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1058'
 ht-degree: 98%
 ---
 # Aktualisieren von Adobe Experience Platform-Profilen über Adobe Campaign-Landingpages {#ac-aep-lp}
@@ -123,7 +123,7 @@ Auf den nachstehenden Registerkarten finden Sie die beiden Methoden:
 
 >[!TAB Hinzufügen von Optionen mithilfe einer JavaScript-Code-Aktivität]
 
-Um diese Optionen bei Ausführung des Landingpage-Workflows automatisch zu konfigurieren, fügen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität zu Ihrem Workflow mit dem unten stehenden Code hinzu. [Erfahren Sie, wie Sie eine JavaScript-Code-Aktivität konfigurieren](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
+Um diese Optionen bei Ausführung des Landingpage-Workflows automatisch zu konfigurieren, fügen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität zu Ihrem Workflow mit dem unten stehenden Code hinzu. [Erfahren Sie, wie Sie eine JavaScript-Code-Aktivität konfigurieren](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
 
 Bei Ausführung des Workflows werden die Optionen automatisch in der Campaign-Konsole mit den angegebenen Werten erstellt.
 
@@ -369,5 +369,5 @@ Im Folgenden finden Sie ein Beispiel für eine Landingpage und eine JavaScript-C
 ### Weitere Informationen
 
 * [Konfigurieren einer JavaScript-Code-Aktivität](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [Landingpage erstellen](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=de){target="_blank"}
+* [Landingpage erstellen](../dev/web/creating-a-landing-page.md)
 * [Verwaltung von Abonnements und Abmeldungen](../start/subscriptions.md)

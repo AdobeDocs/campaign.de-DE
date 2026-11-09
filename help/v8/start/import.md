@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '4183'
+source-wordcount: '4168'
 ht-degree: 98%
 ---
 # Daten in Campaign importieren {#ootb-profiles}
@@ -462,7 +462,7 @@ Verwenden Sie Campaign, um Web-Formulare zu erstellen und Profilinformationen ei
 
 ![](assets/web-form-page.png)
 
-In der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=de){target="_blank"} erfahren Sie, wie Sie Web-Formulare erstellen.
+Erfahren Sie in ([ Abschnitt), wie Sie Web-Formulare ](../dev/web/about-web-forms.md).
 
 **Verwandte Themen**
 

@@ -30,16 +30,16 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 87%
+source-wordcount: '550'
+ht-degree: 98%
 ---
 # Erste Schritte mit Umfragen{#about-surveys}
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
 
 Adobe Campaign enthält ein Grafikmodul zum Definieren und Veröffentlichen von Web-Anwendungen. Damit werden Seiten erstellt, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. enthalten. Verwenden Sie diese Funktion, um Web-Seiten zu entwerfen und zu posten, auf denen Benutzende Informationen suchen oder eingeben können.
 
@@ -53,13 +53,13 @@ Auf [dieser Seite](getting-started-with-surveys.md) erfahren Sie, wie Sie Ihre e
 
 >[!NOTE]
 >
->* Die einzelnen Schritte für die Erstellung eines Standard-Web-Formulars werden in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} beschrieben.
+>* Die einzelnen Schritte für die Erstellung eines Standard-Web-Formulars werden in [diesem Dokument](../web/about-web-forms.md) beschrieben.
 >
->* Die Verwaltung von Web-Anwendungen wird in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-applications/about-web-applications){target="_blank"} beschrieben. Weitere Informationen finden Sie in diesem Kapitel.
+>* Die Verwaltung von Web-Anwendungen wird in [diesem Dokument](../web/about-web-applications.md) beschrieben. Weitere Informationen finden Sie in diesem Kapitel.
 
 ## Funktionsumfang {#campaign-surveys-scope}
 
-Verwenden Sie in Adobe Campaign [Web-Anwendungen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}, um:
+Verwenden Sie in Adobe Campaign [Web-Anwendungen](../web/about-web-forms.md), um:
 
 * mehrseitige Formulare zu erstellen,
 * mehrsprachige Formulare mit einem integrierten Übersetzungs-Tool zu verwalten,
@@ -90,7 +90,7 @@ Führen Sie die folgenden Schritte aus, um eine Umfrage zu erstellen und bereitz
 1. Veröffentlichen Sie die Umfrage und senden Sie sie dann an Empfänger (schließen Sie z. B. den Link in eine Sendung oder auf einer Website ein).
 1. Überwachen Sie die Antworten und prüfen Sie die entsprechenden Berichte.
 
-Weitere Informationen zum Konfigurieren und Festlegen der Abfolge dieser Schritte finden Sie in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}. In dem Kapitel werden nur die für Umfragen spezifischen Konfigurationen beschrieben.
+Weitere Informationen zum Konfigurieren und Festlegen der Abfolge dieser Schritte finden Sie in [diesem Dokument](../web/about-web-forms.md). In dem Kapitel werden nur die für Umfragen spezifischen Konfigurationen beschrieben.
 
 >[!CAUTION]
 >
@@ -107,4 +107,4 @@ Einstellungen werden in den folgenden Ordnern gespeichert:
 
 >[!NOTE]
 >
->Details zu Einstellungen finden Sie in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>Details zu Einstellungen finden Sie in [diesem Dokument](../web/about-web-forms.md).

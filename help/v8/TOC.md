@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 88%
+source-wordcount: '1039'
+ht-degree: 89%
 ---
 
 # Dokumentation zu Adobe Campaign v8 (Konsole) {#campaign-v8}
@@ -133,6 +133,35 @@ ht-degree: 88%
 + Landingpages und Formulare {#content}
   + [Erstellen von Landingpages](dev/landing-pages.md)
   + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
+  + Web-Anwendungen {#web-applications}
+    + [Erste Schritte mit Web-Anwendungen](dev/web/about-web-applications.md)
+    + [Neue Web-Anwendung erstellen](dev/web/creating-a-new-web-application.md)
+    + [Web-Anwendung konzipieren](dev/web/designing-a-web-application.md)
+    + [Anwendungsfälle: Erstellen von Übersichten](dev/web/use-cases-creating-overviews.md)
+    + [Web-Anwendung übersetzen](dev/web/translating-a-web-application.md)
+    + [Besuche in einer Web-Anwendung tracken](dev/web/tracking-a-web-application.md)
+    + [Opt-out vom Web-Anwendungs-Tracking](dev/web/web-application-tracking-opt-out.md)
+  + Bearbeiten von HTML-Inhalten {#editing-html-content}
+    + [Erste Schritte mit dem HTML-Editor](dev/web/about-campaign-html-editor.md)
+    + [Vorlagenverwaltung](dev/web/template-management.md)
+    + [Benutzeroberfläche des Inhaltseditors](dev/web/content-editor-interface.md)
+    + [Inhalte bearbeiten](dev/web/editing-content.md)
+    + [Best Practices bei der Inhaltsbearbeitung](dev/web/content-editing-best-practices.md)
+    + [Landingpage erstellen](dev/web/creating-a-landing-page.md)
+    + [Anwendungsfall: Erstellen eines E-Mail-Versands](dev/web/use-case-creating-an-email-delivery.md)
+  + Web-Formulare {#web-forms}
+    + [Erste Schritte mit Web-Formularen](dev/web/about-web-forms.md)
+    + [Verwenden einer Web-Formularvorlage](dev/web/using-a-web-form-template.md)
+    + [Felder zu einem Web-Formular hinzufügen](dev/web/adding-fields-to-a-web-form.md)
+    + [Statische Elemente in einem Web-Formular](dev/web/static-elements-in-a-web-form.md)
+    + [Layout eines Web-Formulars definieren](dev/web/defining-web-forms-layout.md)
+    + [Formular-Rendering](dev/web/form-rendering.md)
+    + [Seitenreihenfolge definieren](dev/web/defining-web-forms-page-sequencing.md)
+    + [Web-Formularantworten speichern](dev/web/web-forms-answers.md)
+    + [Web-Formular veröffentlichen](dev/web/publishing-a-web-form.md)
+    + [Eigenschaften eines Web-Formulars definieren](dev/web/defining-web-forms-properties.md)
+    + [Web-Formular übersetzen](dev/web/translating-a-web-form.md)
+    + [Anwendungsfälle: Web-Formulare](dev/web/use-cases-web-forms.md)
   + Umfragen {#surveys}
     + [Erste Schritte mit Umfragen](dev/surveys/about-surveys.md)
     + [Wichtige Schritte zum Erstellen einer Umfrage](dev/surveys/getting-started-with-surveys.md)

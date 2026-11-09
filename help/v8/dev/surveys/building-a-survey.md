@@ -15,16 +15,16 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 92%
+source-wordcount: '835'
+ht-degree: 99%
 ---
 # Umfrage entwerfen{#building-a-survey}
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
 
 
 
@@ -42,7 +42,7 @@ Die Seiten des Formulars werden mit einem speziellen Editor erstellt, der die De
 
 >[!NOTE]
 >
->Weiterführende Informationen zur Definition von Inhalten und zur Erstellung von Bildschirm-Layouts für ein Web-Formular finden Sie in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>Weiterführende Informationen zur Definition von Inhalten und zur Erstellung von Bildschirm-Layouts für ein Web-Formular finden Sie in [diesem Dokument](../web/about-web-forms.md).
 
 ## Felder hinzufügen {#adding-fields}
 
@@ -71,7 +71,7 @@ Die Art des hinzuzufügenden Felds (Dropdown-Liste, Textfeld, Kontrollkästchen�
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-Die unterschiedlichen Typen verfügbarer Felder werden in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} beschrieben.
+Die unterschiedlichen Typen verfügbarer Felder werden in [diesem Abschnitt](../web/about-web-forms.md) beschrieben.
 
 ## Elemente einer Umfrage {#survey-specific-elements}
 
@@ -106,7 +106,7 @@ Zusätzlich muss der Speicherort für dieses Eingabefeld ein **archiviertes Feld
 
 ### Fragen hinzufügen {#adding-questions}
 
-Es gibt zwei Container-Typen: Standard und Frage. Container des Typs „Standard“ werden zum Konfigurieren des Seiten-Layouts und zur bedingten Anzeige auf einer Seite verwendet. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+Es gibt zwei Container-Typen: Standard und Frage. Container des Typs „Standard“ werden zum Konfigurieren des Seiten-Layouts und zur bedingten Anzeige auf einer Seite verwendet. [Weitere Informationen](../web/about-web-forms.md).
 
 Verwenden Sie einen Container des Typs **Frage**, um der Seite eine Frage hinzuzufügen und die möglichen Antworten nachfolgend in der Hierarchie einzufügen. Benutzerantworten auf Fragen, die in diesem Container-Typ platziert werden, können in Berichten analysiert werden.
 
@@ -120,7 +120,7 @@ Der Titel der Frage wird im Titelfeld eingegeben. In diesem Fall wird der Stil d
 
 >[!NOTE]
 >
->Weiterführende Informationen zur Verwendung des HTML-Editors finden Sie in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>Weiterführende Informationen zur Verwendung des HTML-Editors finden Sie in [diesem Dokument](../web/about-web-forms.md).
 
 Beispiel:
 
