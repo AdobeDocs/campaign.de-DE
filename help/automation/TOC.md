@@ -3,10 +3,10 @@ audience: user
 user-guide-title: Handbuch zur Kampagnenautomatisierung
 user-guide-description: Handbuch zur Kampagnenautomatisierung
 feature: Overview
-source-git-commit: 7e18801756113db5273f0108447c20d6b3ef85a3
+source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 95%
+source-wordcount: '477'
+ht-degree: 94%
 ---
 
 # Handbücher zur Kampagnenautomatisierung {#automation}
@@ -164,4 +164,10 @@ ht-degree: 95%
   + [Kosten kontrollieren](mrm/controlling-costs.md)
   + [Marketing-Ressourcen verwalten](mrm/managing-marketing-resources.md)
   + [Diskussionsforen](mrm/discussion-forums.md)
++ Response Manager (Add-on) {#response-manager}
+  + [Erste Schritte mit dem Response Manager](response/about-response-manager.md)
+  + [Konfigurieren von Response Manager](response/configure-response-manager.md)
+  + [Hypothesenvorlagen](response/hypothesis-templates.md)
+  + [Erstellen von Hypothesen](response/creating-hypotheses.md)
+  + [Hypothesenverfolgung](response/hypothesis-tracking.md)
 + [&lt; Zurück zur Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home)
