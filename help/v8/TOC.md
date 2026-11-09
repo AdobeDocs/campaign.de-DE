@@ -5,10 +5,10 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: a4655bbf4566da21f097ae1106212c55965ef1bd
+source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 87%
+source-wordcount: '921'
+ht-degree: 88%
 ---
 
 # Dokumentation zu Adobe Campaign v8 (Konsole) {#campaign-v8}
@@ -133,6 +133,15 @@ ht-degree: 87%
 + Landingpages und Formulare {#content}
   + [Erstellen von Landingpages](dev/landing-pages.md)
   + [Entwerfen von Web-Anwendungen und Formularen](dev/webapps.md)
+  + Umfragen {#surveys}
+    + [Erste Schritte mit Umfragen](dev/surveys/about-surveys.md)
+    + [Wichtige Schritte zum Erstellen einer Umfrage](dev/surveys/getting-started-with-surveys.md)
+    + [Umfrage entwerfen](dev/surveys/building-a-survey.md)
+    + [Antworten verwalten](dev/surveys/managing-answers.md)
+    + [Erfasste Daten veröffentlichen, tracken und verwenden](dev/surveys/publish-track-and-use-collected-data.md)
+    + [Umfragen konfigurieren](dev/surveys/configuring-surveys.md)
+    + [Anwendungsfall: Erstellen eines Empfehlungsformulars](dev/surveys/use-case-creating-a-refer-a-friend-form.md)
+    + [Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage](dev/surveys/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Kampagnen {#campaigns}
   + [Erste Schritte mit Kampagnen](start/campaigns.md)
   + [Dokumentation zur Kampagnenorchestrierung >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de)
