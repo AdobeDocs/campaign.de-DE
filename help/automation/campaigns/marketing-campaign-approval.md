@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 99%
@@ -121,7 +121,7 @@ Für jede Kampagne können Sie die Zielgruppe eines Versands, [die Inhalte des V
 
 Bei Briefpost-Versand können Adobe Campaign-Benutzer die Extraktionsdatei vor der Übermittlung an den Router einsehen. Bei Bedarf haben sie die Möglichkeit, das Format zu verändern und die Extraktion erneut zu starten. [Weitere Informationen](#approve-an-extraction-file).
 
-Sobald diese Validierungsphasen beendet sind, kann der Versand gestartet werden. [Weitere Informationen](marketing-campaign-deliveries.md#starting-a-delivery).
+Sobald diese Validierungsphasen beendet sind, kann der Versand gestartet werden. [Weitere Informationen](marketing-campaign-deliveries.md#start-a-delivery).
 
 >[!NOTE]
 >

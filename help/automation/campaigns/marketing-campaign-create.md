@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1309'
 ht-degree: 91%
@@ -119,11 +119,11 @@ Kampagnen werden über Kampagnenvorlagen erstellt. Sie können wiederverwendbare
 
 Für jede Kampagne stehen folgende Funktionen zur Verfügung:
 
-* Referenzdokumente und -ressourcen: Sie können die Kampagne mit Dokumenten verknüpfen (Kurzbeschreibung, Bericht, Bilder etc.). Alle Dokumentenformate werden unterstützt. [Weitere Informationen](marketing-campaign-deliveries.md#manage-associated-documents).
-* Kosten definieren: Adobe Campaign ermöglicht es, für jede Kampagne Kosteneinträge und Kostenberechnungsstrukturen zu definieren, die bei der Erstellung der Marketing-Kampagne verwendet werden können. Zum Beispiel: Druckkosten, Nutzung einer externen Agentur, Zimmervermietung usw. [Mehr erfahren](providers-stocks-and-budgets.md#defining-cost-categories).
+* Referenzdokumente und -ressourcen: Sie können die Kampagne mit Dokumenten verknüpfen (Kurzbeschreibung, Bericht, Bilder etc.). Alle Dokumentenformate werden unterstützt. [Weitere Informationen](marketing-campaign-deliveries.md).
+* Kosten definieren: Adobe Campaign ermöglicht es, für jede Kampagne Kosteneinträge und Kostenberechnungsstrukturen zu definieren, die bei der Erstellung der Marketing-Kampagne verwendet werden können. Zum Beispiel: Druckkosten, Nutzung einer externen Agentur, Zimmervermietung usw. [Mehr erfahren](providers-stocks-and-budgets.md#define-cost-categories).
 * Definieren von Zielen: Sie können quantifizierbare Ziele für eine Kampagne definieren, z. B. die Anzahl der Abonnenten, das Geschäftsvolumen usw. Diese Informationen werden später in Kampagnenberichten verwendet.
-* Verwalten Sie Testadressen und Kontrollgruppen. [Weitere Informationen](marketing-campaign-deliveries.md#defining-a-control-group).
-* Validierungsverwaltung: Sie können die zu validierenden Abwandlungen sowie bei Bedarf validierungsverantwortliche Benutzer oder Benutzergruppen auswählen. [Weitere Informationen](marketing-campaign-approval.md#checking-and-approving-deliveries).
+* Verwalten Sie Testadressen und Kontrollgruppen. [Weitere Informationen](marketing-campaign-deliveries.md).
+* Validierungsverwaltung: Sie können die zu validierenden Abwandlungen sowie bei Bedarf validierungsverantwortliche Benutzer oder Benutzergruppen auswählen. [Weitere Informationen](marketing-campaign-approval.md#review-and-approve-deliveries).
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Für jede Kampagne stehen folgende Funktionen zur Verfügung:
 
 Für jede Kampagne werden Aufträge, Ressourcen und Sendungen in einem Dashboard zusammengefasst dargestellt. Auf dieser Benutzeroberfläche können Sie Marketing-Aktionen verwalten und koordinieren.
 
-Mit Adobe Campaign können Sie partizipative Prozesse für die Erstellung und Validierung der unterschiedlichen Etappen Ihrer Kampagnen einrichten: Budget-, Zielgruppen- und Inhaltsvalidierung usw. Diese Orchestrierung wird in [diesem Abschnitt) &#x200B;](marketing-campaign-approval.md).
+Mit Adobe Campaign können Sie partizipative Prozesse für die Erstellung und Validierung der unterschiedlichen Etappen Ihrer Kampagnen einrichten: Budget-, Zielgruppen- und Inhaltsvalidierung usw. Diese Orchestrierung wird in [diesem Abschnitt) ](marketing-campaign-approval.md).
 
 ![](assets/campaigns-dashboard-approval-tab.png)
 
@@ -218,11 +218,11 @@ Validierungen einer Zielgruppe oder des Inhalts eines Versands können über den
 
 ![](assets/web-access-approval.png)
 
-Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](marketing-campaign-approval.md#checking-and-approving-deliveries).
+Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](marketing-campaign-approval.md#review-and-approve-deliveries).
 
 
 ## Anleitungsvideo {#video}
 
 In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426473?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

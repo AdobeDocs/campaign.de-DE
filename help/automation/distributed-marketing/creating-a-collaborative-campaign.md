@@ -3,12 +3,15 @@ product: campaign
 title: Erstellen einer partizipativen Kampagne
 description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen
 feature: Distributed Marketing
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 TQID: https://experienceleague.adobe.com/UrdZY0sxtcDwZZd5sfgOcsyCKn1lQ8tIs8UlS8rHV4Y
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -20,18 +23,16 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
-source-wordcount: 990
-ht-degree: 67%
-
+source-wordcount: '990'
+ht-degree: 100%
 ---
-
 # Erstellen einer partizipativen Kampagne{#creating-a-collaborative-campaign-intro}
 
 
 
-Partizipative Kampagnen werden von der Zentralstelle auf Basis der Kampagnenvorlagen **Verteiltes Marketing** erstellt. Mehr dazu erfahren Sie auf [dieser Seite](about-distributed-marketing.md#collaborative-campaign).
+Die Zentralstelle erstellt partizipative Kampagnen basierend auf Kampagnenvorlagen des **verteilten Marketings**. Mehr dazu erfahren Sie auf [dieser Seite](about-distributed-marketing.md).
 
 ## Erstellen einer partizipativen Kampagne {#creating-a-collaborative-campaign}
 
@@ -41,7 +42,7 @@ Um eine partizipative Kampagne zu erstellen, klicken Sie auf den Ordner **[!UICO
 >
 >Mit Ausnahme der **[!UICONTROL partizipativen Kampagnen mit Kampagnenzugriff]** können die Kampagnen über eine Webschnittstelle konfiguriert und ausgeführt werden.
 
-Der Konfigurationsprozess für eine partizipative Kampagnendatenbank entspricht dem einer lokalen Kampagnenvorlage. Die Spezifikationen der verschiedenen Arten von partizipativen Kampagnen werden nachfolgend beschrieben.
+Der Konfigurationsprozess für eine Datenbank einer partizipativen Kampagne ähnelt jenem für eine lokale Kampagnenvorlage. Die Spezifikationen der verschiedenen Arten von partizipativen Kampagnen werden nachfolgend beschrieben.
 
 ### Partizipative Kampagne (Formular) {#by-form}
 
@@ -51,7 +52,7 @@ Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Formular) (opColla
 
 Klicken Sie auf der Registerkarte **[!UICONTROL Bearbeiten]** auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**, um die Registerkarte **Verteiltes Marketing** aufzurufen.
 
-Wählen Sie die Web **Benutzeroberfläche &quot;** Formular“. Auf diese Weise können Sie Personalisierungsfelder erstellen, die von Lokalstellen bei der Kampagnenbestellung verwendet werden. Siehe [Lokale Kampagne erstellen (Standardformular)](examples.md#creating-a-local-campaign--by-form-).
+Wählen Sie die Web-Oberfläche **Standardformular** aus. Dieser Schnittstellentyp ermöglicht Ihnen das Erstellen von Personalisierungsfeldern, die von Lokalstellen beim Bestellen einer Kampagne verwendet werden. Siehe [Lokale Kampagne erstellen (Standardformular)](examples.md#creating-a-local-campaign--by-form-).
 
 Speichern Sie Ihre Kampagne. Sie steht Ihnen nun in der Ansicht **Kampagnenkits** im Tab **Kampagnen** zur Verfügung, indem Sie auf die Schaltfläche **[!UICONTROL Erstellen]** klicken.
 
@@ -67,7 +68,7 @@ Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Kampagnenzugriff) 
 
 Die Lokalstelle kann bei der Kampagnenbestellung die von der Zentralstelle festgelegten Kriterien erfassen und die Kampagne vor der Bestellung auswerten.
 
-Sobald eine Bestellung für eine **Partizipative Kampagne (nach Kampagne)** von der Zentralstelle genehmigt wurde, wird eine untergeordnete Kampagne für die Lokalstelle erstellt. Sobald sie ihnen zur Verfügung stehen, kann die Lokalstelle Folgendes ändern:
+Sobald eine Bestellung für eine **Partizipative Kampagne (Kampagnenzugriff)** von der Zentralstelle validiert wurde, wird eine untergeordnete Kampagne für die Lokalstelle erstellt. Sobald sie zur Verfügung steht, kann die Lokalstelle Folgendes ändern:
 
 * Kampagnenworkflow,
 * Typologieregeln,
@@ -89,13 +90,13 @@ Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidie
 >
 >In diesem Modus muss die Zentralstelle keine Lokalstellen angeben.
 
-Der Kampagnen-Workflow muss die Aktivität **Lokale Validierung** enthalten. Die Aktivitätsparameter lauten wie folgt:
+Der Kampagnen-Workflow muss die Aktivität **Lokale Validierung** beinhalten. Die Aktivitätsparameter lauten wie folgt:
 
 * **[!UICONTROL Auszuführende Aktion]**: Benachrichtigung zur Zielgruppenvalidierung.
 * **[!UICONTROL Verteilungskontext]**: Explizit.
 * **[!UICONTROL Datenverteilung]**: Lokalstellen-Datenverteilung.
 
-**Datenverteilung vom** „Lokalstellen-Verteilung“ muss erstellt werden. Mit der Datenverteilungsvorlage können Sie die Anzahl der Datensätze aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie unter **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**, um eine neue **[!UICONTROL Datenverteilung]** zu erstellen. Für weitere Informationen zur Datenverteilung,
+Eine Datenverteilung des Typs **Lokalstellenverteilung** muss erstellt werden. Mit der Datenverteilungsvorlage können Sie die Anzahl der Einträge aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie unter **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**, um eine neue **[!UICONTROL Datenverteilung]** zu erstellen. Für weitere Informationen zur Datenverteilung,
 
 ![](assets/mkg_dist_data_distribution.png)
 
@@ -139,7 +140,7 @@ Für **partizipative Kampagnen** muss die Zentralstelle einen Anmeldeschluss und
 
 >[!NOTE]
 >
->Mit der Frist **[!UICONTROL Personalization]** kann die Zentralstelle eine Frist festlegen, bis zu der die Lokalstellen die für die Kampagnenkonfiguration zu verwendenden Dokumente (Kalkulationstabellen, Bilder) bereitgestellt haben müssen. Dies ist keine obligatorische Option. Wird dieses Datum ausgelagert, hat dies keine Auswirkungen auf die Kampagnenimplementierung.
+>Mit der Option **[!UICONTROL Übergabe-Deadline]** kann die Zentralstelle eine Deadline auswählen, bis zu der die Lokalstellen die für die Konfiguration der Kampagne verwendeten Dokumente (Tabellen, Bilder) bereitstellen muss. Dies ist keine obligatorische Option. Das Versäumen dieses Datums hat keine Auswirkungen auf die Kampagnenimplementierung.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
@@ -161,7 +162,7 @@ In **partizipativen Kampagnen** kann der Validierungsmodus für Bestellungen aus
 
 Im manuellen Modus muss sich die Lokalstelle für die Kampagne anmelden, um teilnehmen zu können.
 
-Im automatischen Modus hat die Lokalstelle die Kampagne im Voraus abonniert. Es kann das Kampagnenabonnement kündigen oder seine Parameter ändern, ohne die Genehmigung der Zentralstelle zu benötigen.
+Im automatischen Modus wird die Lokalstelle im Voraus für die Kampagne angemeldet. Sie kann sich von der Kampagne abmelden oder die Parameter ändern, ohne dass Validierung von der Zentralstelle notwendig ist.
 
 ![](assets/mkg_dist_edit_kit2.png)
 
@@ -171,11 +172,11 @@ Die Konfiguration der Benachrichtigungen entspricht der für lokale Kampagnen. W
 
 ## Bestellen einer Kampagne {#ordering-a-campaign}
 
-Wenn eine partizipative Kampagne zur Kampagnenkit-Liste hinzugefügt wird, werden die Lokalstellen der von der Zentralstelle definierten Audience benachrichtigt (die **partizipativen Kampagnen (mit Zielgruppenvalidierung)** verfügen über keine vordefinierte Audience). Die gesendete Nachricht enthält einen Link, über den Sie sich für die Kampagne registrieren können, wie unten dargestellt:
+Wenn der Kampagnenkit-Liste eine partizipative Kampagne hinzugefügt wird, werden die Lokalstellen in der von der Zentralstelle definierten Zielgruppe hiervon benachrichtigt (**partizipative Kampagnen (Zielgruppenvalidierung)** haben keine vordefinierte Zielgruppe). Die gesendete Nachricht enthält einen Link, über den Sie sich für die Kampagne registrieren können, wie unten dargestellt:
 
 ![](assets/mkg_dist_mutual_op_notification.png)
 
-Diese Nachricht ermöglicht auch Lokalstellen die Anzeige der vom Zentralbenutzer, der das Package erstellt hat, eingegebenen Beschreibung sowie der mit der Kampagne verknüpften Dokumente. Diese gehören nicht zur Kampagne selbst, stellen jedoch zusätzliche Informationen dazu bereit.
+Diese Nachricht ermöglicht Lokalstellen auch die Anzeige der Beschreibung von der zentralen Benutzerin bzw. dem zentralen Benutzer, die bzw. der das Kit erstellt hat, sowie der mit der Kampagne verknüpften Dokumente. Diese gehören nicht zur Kampagne selbst, stellen jedoch zusätzliche Informationen dazu bereit.
 
 Durch Zugriff auf die Webschnittstelle kann die Lokalstelle Informationen über gewünschte Anpassungen der partizipativen Kampagne geben, die sie bestellen möchte:
 

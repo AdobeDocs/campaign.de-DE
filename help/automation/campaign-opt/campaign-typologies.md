@@ -3,6 +3,7 @@ product: campaign
 title: Erste Schritte mit Kampagnentypologien
 description: Erfahren Sie, wie Sie Kampagnentypologien konfigurieren und implementieren
 feature: Typology Rules
+version: Campaign v8, Campaign Classic v7
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 TQID: 'https://experienceleague.adobe.com/Pxzz3-z8BorlEgP1gGwLK--l6hEAGZ-DQhGuxsLk6oU'
 product_v2:
@@ -27,7 +28,7 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 88%
@@ -67,7 +68,7 @@ Campaign verfügt über einen Satz von Standardregeln für **Filterung** und **K
 Das Add-on zur Kampagnenoptimierung bietet zwei zusätzliche Typen von **Typologieregeln**:
 
 * **Druckregeln** erlauben es, die Marketing-Müdigkeit zu kontrollieren. [Weitere Informationen](pressure-rules.md).
-* **Kapazitätsregeln** erlauben es, die Auslastung zu begrenzen, um optimale Verarbeitungsbedingungen zu gewährleisten. [Weitere Informationen](consistency-rules.md#controlling-capacity).
+* **Kapazitätsregeln** erlauben es, die Auslastung zu begrenzen, um optimale Verarbeitungsbedingungen zu gewährleisten. [Weitere Informationen](consistency-rules.md#control-capacity).
 
 
 >[!NOTE]
@@ -100,11 +101,11 @@ Anwendungsbeispiele zu Drucktypologieregeln finden Sie auf [dieser Seite](pressu
 
 In diesem Video wird erläutert, wie die Ermüdungsverwaltung in Adobe Campaign mithilfe von Typologieregeln implementiert wird.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448340?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
 
 ### Einrichten der Ermüdungsverwaltung mithilfe vordefinierter Filter
 
 Die Ermüdungsverwaltung steuert die Häufigkeit und Anzahl von Nachrichten, um eine Überforderung der Empfänger zu vermeiden. Wenn Sie das Modul zur Kampagnenoptimierung nicht in Ihrer Kampagneninstanz haben, können Sie einen vordefinierten Filter konfigurieren, der die Zielpopulation nach der Anzahl der empfangenen Nachrichten filtert
 In diesem Video wird erläutert, wie Sie die Ermüdungsverwaltung in Adobe Campaign mithilfe von Filtern implementieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444609?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

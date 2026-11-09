@@ -28,7 +28,7 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 Eine Landingpage ist eine dedizierte Web-Seite, die mit einem bestimmten Marketing-Ziel entwickelt wurde. Besuchende gelangen normalerweise zu einer Landingpage, nachdem sie auf einen Link in einer E-Mail, einem Social Media-Post oder einem Suchmaschinenergebnis geklickt haben. Im Gegensatz zu allgemeinen Seiten einer Website konzentrieren sich Landingpages auf die Steuerung einer einzelnen, klar definierten Aktion, z. B. das Tätigen eines Kaufs, das Abonnieren/Abmelden eines Dienstes oder das Herunterladen einer Ressource. Erstellen Sie mit Adobe Campaign Landingpages, um Benutzende zu Online-Formularen zu leiten, auf denen sie ihre Daten aktualisieren, sich für den Erhalt Ihrer Nachrichten anmelden bzw. davon abmelden oder einen bestimmten Dienst wie etwa einen Newsletter abonnieren können.
 
-Navigieren Sie zum Erstellen von Landingpages zur [Web-Benutzeroberfläche](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui). Adobe Campaign verfügt über ein überarbeitetes Anwendererlebnis für Landingpages, das nur in der Web-Benutzeroberfläche verfügbar ist.
+Navigieren Sie zum Erstellen von Landingpages zur [Web-Benutzeroberfläche](../start/campaign-ui.md#ac-web-ui). Adobe Campaign verfügt über ein überarbeitetes Anwendererlebnis für Landingpages, das nur in der Web-Benutzeroberfläche verfügbar ist.
 
 >[!AVAILABILITY]
 >

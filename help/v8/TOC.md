@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 9b9c573de6120f4b3da0d5eee98192b56b4754df
+source-git-commit: a4655bbf4566da21f097ae1106212c55965ef1bd
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 87%
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 87%
   + [Wechsel von Campaign Classic v7 zu v8](start/v7-to-v8.md)
   + [Wechsel von Campaign Standard zu v8](start/acs-to-v8.md)
   + [Häufig gestellte Fragen](start/campaign-faq-comprehensive.md)
-  + {hide-from-toc}[Häufig gestellte Fragen](start/campaign-faq.md)
   + {hide-from-toc}[E-Mail-Tracking-Pixel und CNIL-Anleitung](start/cnil-pixel-tracking.md)
 + Nachrichten {#send}
   + [Erste Schritte mit Nachrichten](start/gs-message.md)
@@ -158,6 +157,7 @@ ht-degree: 87%
     + [Verwalten anonymer Interaktionen](interaction/anonymous-interactions.md)
   + [Berichte und Verlauf](interaction/interaction-tracking.md)
   + [Anwendungsfälle](interaction/interaction-use-cases.md)
+  + [Erweiterte Einstellungen](interaction/interaction-advanced-settings.md)
 + Abfrage und Daten {#data}
   + Abfragen der Datenbank {#query}
     + [Arbeiten mit dem Abfrage-Editor](start/query-editor.md)

@@ -23,7 +23,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
@@ -40,7 +40,7 @@ Geben Sie zum Konfigurieren dieser Aktivität den Titel ein und wählen Sie die 
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren und Verwenden der Ausschlussaktivität finden Sie unter [Populationen ausschließen (Ausschluss)](targeting-workflows.md#excluding-a-population--exclusion-).
+>Weitere Informationen zum Konfigurieren und Verwenden der Ausschlussaktivität finden Sie unter [Populationen ausschließen (Ausschluss)](targeting-workflows.md#exclude-a-population--exclusion-).
 
 Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie auch die Restpopulation verwenden möchten. Das Komplement besteht aus der eingehenden Hauptpopulation abzüglich der ausgehenden Population. Dann wird der Aktivität eine zusätzliche ausgehende Transition hinzugefügt, und zwar wie folgt:
 

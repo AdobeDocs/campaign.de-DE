@@ -25,7 +25,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 96%
@@ -36,7 +36,7 @@ Verwenden Sie Campaign-Listen, um Zielgruppen zu erstellen und zu ordnen.
 
 Eine Liste ist ein statischer Satz von Kontakten, die in Versandaktionen als Zielkontakte dienen oder beim Importieren bzw. bei einer Workflow-Ausführung aktualisiert werden können. So kann beispielsweise eine Population, die über eine Abfrage aus der Datenbank extrahiert wurde, als Liste gespeichert werden.
 
-Listen werden über den Link **[!UICONTROL Listen]** im Tab **[!UICONTROL Profile und Zielgruppen]** erstellt und verwaltet. Diese Listen basieren auf der standardmäßigen Adobe Campaign-Profiltabelle (nms:recipient). [Weitere Informationen](../dev/datamodel.md#ootb-profiles.md)
+Listen werden über den Link **[!UICONTROL Listen]** im Tab **[!UICONTROL Profile und Zielgruppen]** erstellt und verwaltet. Diese Listen basieren auf der standardmäßigen Adobe Campaign-Profiltabelle (nms:recipient). [Weitere Informationen](../dev/datamodel.md#ootb-profiles)
 
 ![](assets/list-dashboard.png)
 
@@ -44,7 +44,7 @@ Sie können eine Liste mithilfe der Aktivität **Liste aktualisieren** in einem 
 
 In diesem Video erfahren Sie mehr über die Verwaltung von Listen in Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426457?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
 ## Erstellen einer Liste von Kontakten {#create-a-list-of-contacts}

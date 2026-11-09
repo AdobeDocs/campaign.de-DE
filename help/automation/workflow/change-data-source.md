@@ -25,14 +25,14 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 100%
 ---
 # Datenquelle ändern {#change-data-source}
 
-Verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**, um die Datenquelle einer [Workflow-Arbeitstabelle](use-workflow-data.md#workflow-temporary-work-table) zu ändern. Diese Aktivität bietet mehr Flexibilität bei der Verwaltung von Daten aus verschiedenen Datenquellen, z. B. Federated Data Access (FDA), Campaign-Cloud-Datenbank (FFDA) und lokale Campaign-Datenbank.
+Verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**, um die Datenquelle einer [Workflow-Arbeitstabelle](use-workflow-data.md#work-table) zu ändern. Diese Aktivität bietet mehr Flexibilität bei der Verwaltung von Daten aus verschiedenen Datenquellen, z. B. Federated Data Access (FDA), Campaign-Cloud-Datenbank (FFDA) und lokale Campaign-Datenbank.
 
 Die **[!UICONTROL Workflow-Arbeitstabelle]** wird verwendet, um Daten mit den Workflow-Aktivitäten zu verarbeiten und freizugeben.
 
@@ -57,7 +57,7 @@ So verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**:
 
 1. Fragen Sie Ihre ausgewählten Empfänger mit einer **[!UICONTROL Abfrage]**-Aktivität ab.
 
-   Weitere Informationen zur Aktivität **[!UICONTROL Abfrage]** erhalten Sie auf dieser [Seite](query.md#create-a-query).
+   Weitere Informationen zur Aktivität **[!UICONTROL Abfrage]** erhalten Sie auf dieser [Seite](query.md#creating-a-query).
 
 1. Fügen Sie die Aktivität **[!UICONTROL Datenquelle ändern]** hinzu.
 

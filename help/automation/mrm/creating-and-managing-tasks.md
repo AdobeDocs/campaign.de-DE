@@ -3,6 +3,7 @@ product: campaign
 title: Verwaltung von Aufgaben
 description: Verwaltung von Aufgaben
 feature: Campaigns, Resource Management
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
 TQID: 'https://experienceleague.adobe.com/LggpejZ5h1fYPh3efYx2f7x3DEhqVlvPndjgNkNUUCs'
@@ -22,7 +23,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '3936'
 ht-degree: 99%
@@ -51,7 +52,7 @@ Eine Liste der Aufgaben kann über den Tab **[!UICONTROL Kampagnen]** angezeigt 
 
 Hier werden alle Aufgaben des aktuellen Benutzers aufgeführt.
 
-Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschrittsstatus einer Aufgabe &#x200B;](#progress-status-of-a-task).
+Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschrittsstatus einer Aufgabe ](#progress-status-of-a-task).
 
 ### Aufgaben filtern {#filtering-tasks}
 
@@ -205,7 +206,7 @@ Standardmäßig entspricht das belastete Budget dem Budget der Kampagne, der die
 
 >[!NOTE]
 >
->Weitere Informationen zu Ausgaben und Budgets finden Sie in [diesem Abschnitt](../campaigns/providers-stocks-and-budgets.md#cost-commitment--calculation-and-charging).
+>Weitere Informationen zu Ausgaben und Budgets finden Sie in [diesem Abschnitt](../campaigns/providers-stocks-and-budgets.md).
 
 In diesem Fenster können Sie auch die zu erreichenden Ziele definieren. Ziele werden in Form von prognostizierten Umsätzen für die Aufgabe ausgedrückt.
 
@@ -402,7 +403,7 @@ Sie können der Aufgabe und der Benachrichtigungs-E-Mail einen Anhang hinzufüge
 
 ### Relationen zwischen Aufgaben {#links-between-tasks}
 
-Mit der Schaltfläche **[!UICONTROL Eigenschaften]** in den Aufgaben können Sie die Verknüpfungen zwischen Aufgaben in einer Kampagne definieren. Sie können Aufgaben mithilfe einer Gruppenaufgabe in Unteraufgaben aufteilen (siehe [Gruppierung von Aufgaben &#x200B;](#linked-tasks)) oder Abhängigkeiten zwischen den Aufgaben definieren (siehe [Abhängigkeit von Aufgaben](#grouping-tasks)).
+Mit der Schaltfläche **[!UICONTROL Eigenschaften]** in den Aufgaben können Sie die Verknüpfungen zwischen Aufgaben in einer Kampagne definieren. Sie können Aufgaben mithilfe einer Gruppenaufgabe in Unteraufgaben aufteilen (siehe [Gruppierung von Aufgaben ](#linked-tasks)) oder Abhängigkeiten zwischen den Aufgaben definieren (siehe [Abhängigkeit von Aufgaben](#grouping-tasks)).
 
 #### Gruppierung von Aufgaben {#linked-tasks}
 
@@ -462,7 +463,7 @@ Zusätzlich zum Ausführungsstatus weist die Aufgabe einen Fortschrittsstatus au
 
 Sie können die Liste der Aufgaben nach Erfüllungs- oder Fortschrittstatus filtern.
 
-Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben &#x200B;](#accessing-tasks).
+Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben ](#accessing-tasks).
 
 ### Vollständiger Lebenszyklus einer Aufgabe {#complete-task-life-cycle}
 

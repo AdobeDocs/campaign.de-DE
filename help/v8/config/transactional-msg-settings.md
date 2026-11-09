@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 94%
@@ -38,7 +38,7 @@ Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwal
 
 >[!NOTE]
 >
->Als Benutzerin bzw. Benutzer von Managed Cloud Services müssen Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
+>Als Benutzerin bzw. Benutzer von Managed Cloud Services müssen Sie [Adobe kontaktieren](../start/campaign-faq-comprehensive.md#support), um Campaign-Transaktionsnachrichten in Ihrer Umgebung zu installieren und zu konfigurieren.
 
 ## Definieren von Berechtigungen {#mc-permissions}
 
@@ -82,7 +82,7 @@ Nachfolgend finden Sie ein Beispiel für eine Ereigniskonfiguration zum Senden v
                 <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
-                    <url>http://www.adobe.com/de</url>
+                    <url>http://www.adobe.com</url>
                 </ctx>
               </rtEvent>
 

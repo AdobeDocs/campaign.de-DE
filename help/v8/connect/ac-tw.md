@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 99%
@@ -54,7 +54,7 @@ Das Modul **Verwalten sozialer Netzwerke (Social-Media-Marketing)** ermöglicht 
 
 >[!NOTE]
 >
->Als Benutzerin bzw. Benutzer von Managed Cloud Service müssen Sie [Adobe kontaktieren](../start/campaign-faq.md#support), um Campaign mit X zu verbinden. Das Add-on zum **Verwalten sozialer Netzwerke (Social-Media-Marketing)** muss in Ihrer Umgebung über das dedizierte Paket installiert sein und das externe Twitter-Konto muss konfiguriert sein.
+>Als Benutzerin bzw. Benutzer von Managed Cloud Service müssen Sie [Adobe kontaktieren](../start/campaign-faq-comprehensive.md#support), um Campaign mit X zu verbinden. Das Add-on zum **Verwalten sozialer Netzwerke (Social-Media-Marketing)** muss in Ihrer Umgebung über das dedizierte Paket installiert sein und das externe Twitter-Konto muss konfiguriert sein.
 
 
 Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren X-Konten veröffentlicht werden, delegieren Sie den Schreibzugriff für diese Konten an Adobe Campaign. Gehen Sie dazu folgendermaßen vor:
@@ -169,7 +169,7 @@ Sobald diese Konfiguration abgeschlossen ist, können Sie Tweets auf Ihren X-Kon
 
 ## Erstellen eines Testkontos auf X {#tw-test-account}
 
-Erstellen Sie zusätzlich zum X-Konto ein privates X-Konto, das zum Senden von [Tweet-Testsendungen](../send/twitter.md#send-tw-proofs) verwendet werden kann. Gehen Sie dazu wie folgt vor:
+Erstellen Sie zusätzlich zum X-Konto ein privates X-Konto, das zum Senden von [Tweet-Testsendungen](../send/twitter.md) verwendet werden kann. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie ein neues X-Konto.
 1. Öffnen Sie die **Einstellungen** des Kontos.
