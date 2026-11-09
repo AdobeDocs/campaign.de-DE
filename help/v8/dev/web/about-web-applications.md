@@ -99,7 +99,7 @@ Gegenüber Webanwendungen verfügen Umfragen über eine vereinfachte grafische B
 
 >[!NOTE]
 >
->Umfragen werden in [ Abschnitt beschrieben (](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} Dokumentation zu Campaign v8).
+>Umfragen werden in [&#x200B; Abschnitt beschrieben (](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} Dokumentation zu Campaign v8).
 >
 >Die allgemeinen Funktionen von Webformularen in Adobe Campaign werden in [diesem Abschnitt](about-web-forms.md) beschrieben.
 

@@ -94,7 +94,7 @@ Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weiterf�
 
 >[!NOTE]
 >
->Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [ sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
+>Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [&#x200B; sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}.
 
 ## Versand validieren{#validating}
 
@@ -108,7 +108,7 @@ Die Ausgabedatei eines Briefpost-Versands wird während der Versandanalyse gener
 
 >[!NOTE]
 >
->Die Analysephase wird in diesem [ beschrieben](delivery-analysis.md).
+>Die Analysephase wird in diesem [&#x200B; beschrieben](delivery-analysis.md).
 
 Während der Analysephase wird die Datei generiert, es werden aber keine Empfängerinformationen (z. B. Versandlogs) aktualisiert. Sie können diesen Auftrag daher ohne Risiko abbrechen.
 
