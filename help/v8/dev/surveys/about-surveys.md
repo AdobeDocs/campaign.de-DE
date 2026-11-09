@@ -53,13 +53,13 @@ Auf [dieser Seite](getting-started-with-surveys.md) erfahren Sie, wie Sie Ihre e
 
 >[!NOTE]
 >
->* Die einzelnen Schritte für die Erstellung eines Standard-Web-Formulars werden in [diesem Dokument](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} beschrieben.
+>* Die einzelnen Schritte für die Erstellung eines Standard-Web-Formulars werden in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} beschrieben.
 >
->* Die Verwaltung von Web-Anwendungen wird in [diesem Dokument](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-applications/about-web-applications){target="_blank"} beschrieben. Weitere Informationen finden Sie in diesem Kapitel.
+>* Die Verwaltung von Web-Anwendungen wird in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-applications/about-web-applications){target="_blank"} beschrieben. Weitere Informationen finden Sie in diesem Kapitel.
 
 ## Funktionsumfang {#campaign-surveys-scope}
 
-Verwenden Sie in Adobe Campaign [Web-Anwendungen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}, um:
+Verwenden Sie in Adobe Campaign [Web-Anwendungen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}, um:
 
 * mehrseitige Formulare zu erstellen,
 * mehrsprachige Formulare mit einem integrierten Übersetzungs-Tool zu verwalten,
@@ -90,7 +90,7 @@ Führen Sie die folgenden Schritte aus, um eine Umfrage zu erstellen und bereitz
 1. Veröffentlichen Sie die Umfrage und senden Sie sie dann an Empfänger (schließen Sie z. B. den Link in eine Sendung oder auf einer Website ein).
 1. Überwachen Sie die Antworten und prüfen Sie die entsprechenden Berichte.
 
-Weitere Informationen zum Konfigurieren und Festlegen der Abfolge dieser Schritte finden Sie in [diesem Dokument](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}. In dem Kapitel werden nur die für Umfragen spezifischen Konfigurationen beschrieben.
+Weitere Informationen zum Konfigurieren und Festlegen der Abfolge dieser Schritte finden Sie in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}. In dem Kapitel werden nur die für Umfragen spezifischen Konfigurationen beschrieben.
 
 >[!CAUTION]
 >
@@ -107,4 +107,4 @@ Einstellungen werden in den folgenden Ordnern gespeichert:
 
 >[!NOTE]
 >
->Details zu Einstellungen finden Sie in [diesem Dokument](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>Details zu Einstellungen finden Sie in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.

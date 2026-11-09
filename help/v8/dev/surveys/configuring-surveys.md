@@ -36,7 +36,7 @@ ht-degree: 84%
 
 Online-Umfragen können vollständig konfiguriert und an Ihre Anforderungen angepasst werden. Die Parameter müssen im Eigenschaftenfenster eingegeben werden.
 
-Die verfügbaren Parameter werden in [diesem Dokument](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"} erläutert.
+Die verfügbaren Parameter werden in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"} erläutert.
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 

@@ -42,7 +42,7 @@ Die Seiten des Formulars werden mit einem speziellen Editor erstellt, der die De
 
 >[!NOTE]
 >
->Weiterführende Informationen zur Definition von Inhalten und zur Erstellung von Bildschirm-Layouts für ein Web-Formular finden Sie in [diesem Dokument](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>Weiterführende Informationen zur Definition von Inhalten und zur Erstellung von Bildschirm-Layouts für ein Web-Formular finden Sie in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 
 ## Felder hinzufügen {#adding-fields}
 
@@ -71,7 +71,7 @@ Die Art des hinzuzufügenden Felds (Dropdown-Liste, Textfeld, Kontrollkästchen�
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-Die unterschiedlichen Typen verfügbarer Felder werden in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} beschrieben.
+Die unterschiedlichen Typen verfügbarer Felder werden in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} beschrieben.
 
 ## Elemente einer Umfrage {#survey-specific-elements}
 
@@ -106,7 +106,7 @@ Zusätzlich muss der Speicherort für dieses Eingabefeld ein **archiviertes Feld
 
 ### Fragen hinzufügen {#adding-questions}
 
-Es gibt zwei Container-Typen: Standard und Frage. Container des Typs „Standard“ werden zum Konfigurieren des Seiten-Layouts und zur bedingten Anzeige auf einer Seite verwendet. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+Es gibt zwei Container-Typen: Standard und Frage. Container des Typs „Standard“ werden zum Konfigurieren des Seiten-Layouts und zur bedingten Anzeige auf einer Seite verwendet. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 
 Verwenden Sie einen Container des Typs **Frage**, um der Seite eine Frage hinzuzufügen und die möglichen Antworten nachfolgend in der Hierarchie einzufügen. Benutzerantworten auf Fragen, die in diesem Container-Typ platziert werden, können in Berichten analysiert werden.
 
@@ -120,7 +120,7 @@ Der Titel der Frage wird im Titelfeld eingegeben. In diesem Fall wird der Stil d
 
 >[!NOTE]
 >
->Weiterführende Informationen zur Verwendung des HTML-Editors finden Sie in [diesem Dokument](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
+>Weiterführende Informationen zur Verwendung des HTML-Editors finden Sie in [diesem Dokument](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}.
 
 Beispiel:
 

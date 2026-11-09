@@ -125,7 +125,7 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
   >[!NOTE]
   >
-  >Mit den Optionen im Tab **[!UICONTROL Erweitert]** können Sie für jedes Feld oder jede Frage das Seitenlayout nach Bedarf anpassen. Das Layout der Umfragefenster wird in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} näher beschrieben.
+  >Mit den Optionen im Tab **[!UICONTROL Erweitert]** können Sie für jedes Feld oder jede Frage das Seitenlayout nach Bedarf anpassen. Das Layout der Umfragefenster wird in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"} näher beschrieben.
 
   Wählen Sie im Detailfenster den Tab **[!UICONTROL Vorschau]** aus, um sich die Darstellung der soeben erstellten Umfrage anzusehen.
 
