@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 66d00cbaf20d714f56ab02bba593cff4a0d23571
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 80%
+source-wordcount: '1081'
+ht-degree: 78%
 ---
 # Erste Schritte mit der Campaign-Architektur{#gs-ac-archi}
 
@@ -82,7 +82,7 @@ Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FF
 
 >[!AVAILABILITY]
 >
->Diese Funktion ist nur für Kundinnen und Kunden mit mehreren Mid-Sourcing(MID)-Instanzkonfigurationen verfügbar.
+>Diese Funktion ist nur in eingeschränkter Verfügbarkeit (LA) verfügbar und steht nur Kunden mit mehreren Mid-Sourcing (MID)-Instanzkonfigurationen zur Verfügung.
 
 Je nach Campaign v8-Package verfügen Sie über eine bestimmte Anzahl von Mid-Sourcing-Instanzen, welche für die Durchführung von Sendungen zuständig sind.
 
