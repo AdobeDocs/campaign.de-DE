@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 96%
+source-wordcount: '2253'
+ht-degree: 94%
 ---
 # Technische Workflows{#about-technical-workflows}
 
@@ -90,11 +90,11 @@ Die auf dieser Seite beschriebenen Workflows werden mit den verschiedenen in Ado
 | **Vorgänge in Diskussionsforen** (newsgroupMgt) | Marketing-Ressourcen (MRM) | Sendet Benachrichtigungen in Diskussionsforen. Sie wird ausgelöst, wenn ein Validierungssignal empfangen wird. |
 | **Bearbeitungsvorgänge des verteilten Marketings** (centralLocalMgt) | Zentrales/lokales Marketing (verteiltes Marketing) | Führt die Vorgänge im Zusammenhang mit dem Distributed-Marketing-Modul aus. Es wird mit der Erstellung von lokalen Kampagnen gestartet und es werden Benachrichtigungen im Zusammenhang mit Bestellungen und der Verfügbarkeit von Kampagnenkits verwaltet. |
 | **Bereinigen von Ereignissen** (webAnalyticsPurgeWebEvents) | Web Analytics-Connectoren | Mit diesem Workflow können Sie jedes Ereignis aus dem Datenbankfeld entsprechend dem im Feld &quot;Lebensdauer&quot; konfigurierten Zeitraum löschen. |
-| **Exportieren von Zielgruppen zu Adobe Experience Cloud** (exportSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow exportiert freigegebene Zielgruppen. Diese Zielgruppen können dann in den anderen von Ihnen verwendeten Adobe Experience Cloud-Lösungen genutzt werden. |
+| **Exportieren von Zielgruppen zu Adobe Experience Cloud** (exportSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow exportiert freigegebene Zielgruppen. Diese Zielgruppen können in den verschiedenen Adobe CX Enterprise-Lösungen verwendet werden, die Sie verwenden. |
 | **Prognosen** (forecasting) | Standardmäßig installiert | Analysiert die im Planungskalender verzeichneten Sendungen (Erstellung von Planungslogs). Er wird standardmäßig täglich um 1 Uhr gestartet. |
 | **Berechnung des vollständigen Aggregats (propositionrcp-Cube)** (agg_nmspropositionrcp_full) | Angebotsmodul (interaction) | Dieser Workflow aktualisiert das vollständige Aggregat für den Angebotsvorschlags-Cube. Er wird standardmäßig täglich um 1 Uhr gestartet. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Versand, Marketing-Angebot und Datum. Der Cube „Angebotsvorschlag“ wird dann zur Erstellung von angebotsbasierten Berichten verwendet. Weitere Informationen zu Cubes finden Sie in [diesem Abschnitt](../../v8/reporting/gs-cubes.md). |
 | **Identifizierung der konvertierten Kontakte** (webAnalyticsFindConverted) | Web Analytics-Connectoren | Dieser Workflow indexiert die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Die durch diesen Workflow wiederhergestellten Daten können im Bericht zur Remarketing-Effizienz abgerufen werden (siehe diese Seite). |
-| **Importieren von Zielgruppen aus Adobe Experience Cloud** (importSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow ermöglicht den Import von Zielgruppen/Segmenten aus den unterschiedlichen Adobe Experience Cloud-Lösungen in Adobe Campaign. |
+| **Importieren von Zielgruppen aus Adobe Experience Cloud** (importSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow ermöglicht den Import von Audiences/Segmenten aus verschiedenen CX Enterprise-Lösungen in Adobe Campaign. |
 | **Bearbeitungsaufträge bezüglich Kampagnensendungen** (deliveryMgt) | Standardmäßig installiert | Dieser Workflow startet den Versand der validierten Sendungen und die Anschlussvorgänge des Dienstleisters bei externem Versand. Außerdem werden Validierungsbenachrichtigungen und Erinnerungen gesendet. |
 | **Bearbeitungsaufträge bezüglich der Dienstleister** (supplierMgt) | Standardmäßig installiert | Dieser Workflow startet Provider-Vorgänge nach erfolgter Versandvalidierung (E-Mail an den Router und Anschlussvorgang). |
 | **Update des LINE V2-Zugriffs-Tokens** (updateLineV2AccessToken) | LINE-Kanal | Dieser Workflow aktualisiert das Zugriffs-Token auf LINE V2. |
@@ -120,7 +120,7 @@ Die auf dieser Seite beschriebenen Workflows werden mit den verschiedenen in Ado
 | **Referenztabellen replizieren** (ffdaReplicateReferenceTables) | Standardmäßig nur bei [Campaign Enterprise-Bereitstellungen (FFDA)](../../v8/architecture/enterprise-deployment.md) installiert | Sorgt für die automatische Replikation von integrierten Tabellen, die in der lokalen Campaign-Datenbank (PostgreSQL) und in der Cloud-Datenbank ([!DNL Snowflake]) vorhanden sein müssen. Sie ist so geplant, dass sie Tag für Tag einmal stündlich ausgeführt wird. Wenn das Feld **lastModified** vorhanden ist, erfolgt die Replikation inkrementell, ansonsten wird die gesamte Tabelle repliziert. [Weitere Informationen zur Datenreplikation](../../v8/architecture/replication.md) |
 | **Staging-Daten replizieren** (ffdaReplicateStagingData) | Standardmäßig nur bei [Campaign Enterprise-Bereitstellungen (FFDA)](../../v8/architecture/enterprise-deployment.md) installiert | Repliziert Staging-Daten für einheitliche Aufrufe. Sie ist so geplant, dass sie Tag für Tag einmal stündlich ausgeführt wird. [Weitere Informationen zur Datenreplikation](../../v8/architecture/replication.md) |
 | **Berichtsaggregate** (reportingAggregates) | Versand | Aktualisiert die in Berichten verwendeten Aggregate. Er wird standardmäßig täglich um 2 Uhr gestartet. |
-| **Übermittlung von Indikatoren und Kampagnenattributen** (webAnalyticsSendMetrics) | Web Analytics-Connectoren | Dieser Workflow ermöglicht es Ihnen, Indikatoren für E-Mail-Kampagnen aus Adobe Campaign über Adobe® Analytics Connector an Adobe Experience Cloud Suite zu senden. Dies betrifft die folgenden Indikatoren: Gesendet (iSent), Öffnungen insgesamt (iTotalRecipientOpen), Gesamtzahl der Empfänger, die geklickt haben (iTotalRecipientClick), Fehler (iError), Abmeldung (Opt-out) (iOptOut). |
+| **Übermittlung von Indikatoren und Kampagnenattributen** (webAnalyticsSendMetrics) | Web Analytics-Connectoren | Dieser Workflow ermöglicht es, über den Adobe® Analytics-Connector Indikatoren zu E-Mail-Kampagnen von Adobe Campaign an CX Enterprise zu senden. Dies betrifft die folgenden Indikatoren: Gesendet (iSent), Öffnungen insgesamt (iTotalRecipientOpen), Gesamtzahl der Empfänger, die geklickt haben (iTotalRecipientClick), Fehler (iError), Abmeldung (Opt-out) (iOptOut). |
 | **Lager: Bestellungen und Warnhinweise** (stockMgt) | Standardmäßig installiert | Dieser Workflow startet die Berechnung der Lagerbestände in den Bestellzeilen und verwaltet Warnschwellen. |
 | **Synchronisieren von Apps mit der Datenerfassung von Adobe Experience Platform** (syncWithLaunch) | Standardmäßig installiert, ab Version 8.5 | Mit diesem Workflow werden Mobile-Eigenschaften aus der Datenerfassung automatisch mit Adobe Campaign synchronisiert. |
 | **Synchronisation von Twitter-Seiten** (syncTwitter) | Social-Media-Marketing | Dieser Workflow importiert täglich um 7 Uhr morgens X-Follower in Adobe Campaign. |

@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '2146'
-ht-degree: 98%
+source-wordcount: '2185'
+ht-degree: 97%
 ---
 # Definieren des E-Mail-Inhalts {#defining-the-email-content}
 
@@ -85,6 +85,10 @@ Mit dem Popup-Fenster **[!UICONTROL Emoticon einfügen]** können Sie auch Emoti
 >[!IMPORTANT]
 >
 >Version 8.9.3 enthält eine Aktualisierung der externen URL-Zulassungsliste. Stellen Sie sicher, dass die im Nachrichteninhalt verwendeten Domains der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden, damit Ressourcen weiterhin ohne Unterbrechung geladen werden. Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste URLs hinzuzufügen und diese zu verwalten. Entsprechende Schritte finden Sie unter [Hinzufügen von URL-Berechtigungen](https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+
+>[!IMPORTANT]
+>
+>Verwenden Sie das HTML `<base>`-Tag nicht in Ihrem E-Mail-Inhalt. Aus Sicherheitsgründen wird dieses Tag nicht unterstützt und kann verhindern, dass Ihre Inhalte im Inhaltseditor geladen werden. Verwenden Sie stattdessen absolute URLs für Ihre Links und externen Ressourcen.
 
 Der eigentliche Nachrichteninhalt wird im unteren Bereich des Versandkonfigurationsfensters erfasst.
 

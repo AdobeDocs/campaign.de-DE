@@ -24,12 +24,12 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 95%
+source-wordcount: '258'
+ht-degree: 82%
 ---
-# Zielgruppen für Adobe Experience Cloud-Lösungen freigeben{#shared-audiences}
+# Audiences für [!DNL Adobe CX Enterprise] Lösungen freigeben{#shared-audiences}
 
 
 Option 1: AEP-Quellen und -Ziele
@@ -38,9 +38,9 @@ Option 2: Adobe Personen/AAM
 
 Sie können **Adobe Campaign** mit **People Core Service** oder Adobe Audience Manager integrieren. Anschließend können Sie:
 
-* Importen Sie Zielgruppen/Segmente aus den verschiedenen Adobe Experience Cloud-Lösungen in Adobe Campaign. Zielgruppen können über Listen in Adobe Campaign importiert werden.
+* Importieren Sie freigegebene Audiences/Segmente aus verschiedenen [!DNL CX Enterprise]-Lösungen in Adobe Campaign. Zielgruppen können über Listen in Adobe Campaign importiert werden.
 
-* Exportieren Sie Listen in Form von freigegebenen Adobe Experience Cloud-Zielgruppen. Diese Zielgruppen können dann in den anderen von Ihnen verwendeten Adobe Experience Cloud-Lösungen genutzt werden. Der Export von Zielgruppen erfolgt innerhalb eines Workflows im Anschluss an eine Zielgruppenbestimmung mithilfe der dedizierten Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppen]**.
+* Exportieren Sie Listen in Form [!DNL CX Enterprise] freigegebenen Audiences. Diese Zielgruppen können in den verschiedenen [!DNL CX Enterprise]-Lösungen verwendet werden, die Sie verwenden. Der Export von Zielgruppen erfolgt innerhalb eines Workflows im Anschluss an eine Zielgruppenbestimmung mithilfe der dedizierten Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppen]**.
 
 Diese Integration unterstützt zwei Arten von Adobe Experience Cloud-IDs:
 

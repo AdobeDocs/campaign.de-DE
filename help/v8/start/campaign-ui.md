@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 70%
+source-wordcount: '1233'
+ht-degree: 67%
 ---
 # Erkunden der Benutzeroberfläche {#ui-client-console}
 
@@ -48,7 +48,7 @@ Sie können über die Client-Konsole oder die Web-Benutzeroberfläche auf Adobe 
 
 * **APIs**: In bestimmten Fällen kann das System über die via SOAP-Protokoll bereitgestellten Web Services-APIs von einer externen Anwendung aus aufgerufen werden. Weitere Informationen zu Campaign-APIs finden Sie [auf dieser Seite](../dev/api.md).
 
-* **Web-Benutzeroberfläche**: Als Benutzerin oder Benutzer von Campaign v8 haben Sie jetzt ab v8.6.1 Zugriff auf eine Web-Umgebung, die über die zentrale Benutzeroberfläche von Adobe Experience Cloud verfügbar ist. Sie können dann über einen Webbrowser eine Verbindung zu Adobe Campaign herstellen. Auf dieser neuen Benutzeroberfläche können Sie wichtige Marketing-Aktionen erstellen, verwalten und ausführen. Es sind jedoch nicht alle Campaign-Funktionen verfügbar. [Weitere Informationen](#ac-web-ui).
+* **Web-Benutzeroberfläche** - Als Campaign v8-Benutzer haben Sie ab Version 8.6.1 jetzt Zugriff auf eine Web-Umgebung, die über die zentrale [!DNL Adobe CX Enterprise]-Benutzeroberfläche verfügbar ist. Sie können dann über einen Webbrowser eine Verbindung zu Adobe Campaign herstellen. Auf dieser neuen Benutzeroberfläche können Sie wichtige Marketing-Aktionen erstellen, verwalten und ausführen. Es sind jedoch nicht alle Campaign-Funktionen verfügbar. [Weitere Informationen](#ac-web-ui).
 
   >[!AVAILABILITY]
   >
@@ -75,7 +75,7 @@ Sobald Sie mit Campaign verbunden sind, rufen Sie die Startseite von Adobe Campa
 
 >[!NOTE]
 >
->Wenn die Karte Web-Benutzeroberfläche nicht angezeigt wird, stellen Sie sicher, dass die folgenden Felder in Ihrem externen A[Adobe Experience Cloud-Konto nicht leer gelassen werden](../config/external-accounts.md): **Server**, **Mandant**, **Callback-Server** und **Zuordnungszeichen**.
+>Wenn die Karte Web-Benutzeroberfläche nicht angezeigt wird, stellen Sie sicher, dass die folgenden Felder in Ihrem [externen Adobe Experience Cloud-Konto](../config/external-accounts.md) nicht leer bleiben: **Server**, **Mandant**, **Callback-Server** und **Zuordnungszeichen**.
 
 Sie können auch von der Startseite aus auf [Campaign Control Panel](../config/self-service.md) zugreifen.
 
@@ -144,7 +144,7 @@ In diesem Arbeitsbereich können Sie auf die Explorer-Baumstruktur zugreifen, um
 
 ## Campaign Web-Benutzeroberfläche {#ac-web-ui}
 
-Als Campaign v8-Benutzer haben Sie ab Version 8.6.1 Zugriff auf eine Web-Umgebung, die über die zentrale Benutzeroberfläche von Adobe Experience Cloud verfügbar ist. Experience Cloud ist die integrierte Familie von Anwendungen, Produkten und Diensten von Adobe für das digitale Marketing. Über die intuitive Benutzeroberfläche können Sie schnell auf Ihre Cloud-Anwendungen, Produktfunktionen und Dienste zugreifen.
+Als Campaign v8-Benutzer haben Sie ab Version 8.6.1 Zugriff auf eine Web-Umgebung, die über die zentrale [!DNL CX Enterprise]-Benutzeroberfläche verfügbar ist. [!DNL CX Enterprise] ist die integrierte Produktfamilie von Adobe mit Programmen, Produkten und Services für Digital Marketing. Über die intuitive Benutzeroberfläche können Sie schnell auf Ihre Cloud-Anwendungen, Produktfunktionen und Dienste zugreifen.
 
 ![Startseite der Adobe Campaign Web-Benutzeroberfläche](assets/ac-web-home.png)
 
@@ -175,7 +175,7 @@ Die unterstützten Sprachen hängen von der Benutzeroberfläche ab.
   >
   >Die Sprache wird während des Installationsprozesses ausgewählt und **kann später nicht mehr geändert**.
 
-* Informationen zu den von der Campaign-Web-Benutzeroberfläche unterstützten Sprachen [&#x200B; Sie in der Dokumentation zur Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
+* Informationen zu den von der Campaign-Web-Benutzeroberfläche unterstützten Sprachen [ Sie in der Dokumentation zur Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
 
 ## Formate
 

@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 92%
+source-wordcount: '516'
+ht-degree: 90%
 ---
 # Campaign Control Panel {#ac-control-panel}
 
@@ -51,7 +51,7 @@ Weitere Informationen finden Sie in [Dokumentation zum Campaign Control Panel](h
 
 ## Zugriff auf das Control Panel {#ac-control-panel-access}
 
-Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung.
+Das Control Panel ist direkt über [!DNL Adobe CX Enterprise] verfügbar. Es steht nur Administratoren zur Verfügung.
 
 >[!IMPORTANT]
 >

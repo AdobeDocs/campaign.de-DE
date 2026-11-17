@@ -1,18 +1,18 @@
 ---
-title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS)
-description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
+title: Migrieren von Campaign-Benutzenden zum Adobe-Identitäts-Management-System (IMS)
+description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe-Identitäts-Management-System (IMS) migrieren
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
   - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
     internal-label: Campaign v8
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 95%
+source-wordcount: '1466'
+ht-degree: 93%
 ---
-# Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS) {#migrate-users-to-ims}
+# Migrieren von Campaign-Benutzenden zum Adobe-Identitäts-Management-System (IMS) {#migrate-users-to-ims}
 
 Ab Campaign v8.6 wird der Authentifizierungsprozess für Campaign v8 verbessert. Alle Benutzer verwenden [Adobe Identity Management System (IMS](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} **only** für die Verbindung mit Campaign. Die Verbindung mit Benutzername/Kennwort (auch als native Authentifizierung bezeichnet) ist nicht mehr zulässig. Adobe empfiehlt, diese Migration in Campaign v8.5.2 durchzuführen, um eine reibungslose Migration zu Campaign v8.6 zu ermöglichen.
 
@@ -22,7 +22,7 @@ In diesem Artikel werden die Schritte beschrieben, die zum Migrieren einer techn
 
 ## Was hat sich geändert?{#move-to-ims-changes}
 
-Mit Campaign v8 sollten sich alle regulären Anwenderinnen und Anwender bereits mit ihrer Adobe ID über das Adobe Identity Management System (IMS) mit der Adobe Campaign Client-Konsole verbinden. Bei einigen älteren Konfigurationen waren jedoch noch Verbindungen mit Benutzername/Kennwort verfügbar. **Dies ist ab Campaign v8.6 nicht mehr zulässig.**
+Mit Campaign v8 sollten sich alle regulären Anwenderinnen und Anwender bereits mit ihrer Adobe ID über das Adobe-Identitäts-Management-System (IMS) mit der Adobe Campaign Client-Konsole verbinden. Bei einigen älteren Konfigurationen waren jedoch noch Verbindungen mit Benutzername/Kennwort verfügbar. **Dies ist ab Campaign v8.6 nicht mehr zulässig.**
 
 Darüber hinaus ruft die Adobe Campaign-Client-Anwendung zur Verbesserung der Sicherheit und des Authentifizierungsprozesses die Campaign-APIs jetzt direkt über das technische IMS-Konto-Token auf. Die Migration für technische Benutzende wird in einem speziellen Artikel beschrieben, der auf [dieser Seite](ims-migration.md) zu finden ist.
 
@@ -32,7 +32,7 @@ Diese Änderung gilt seit Campaign v8.5.2 und ist ab Campaign v8.6 **obligatoris
 
 Wenn Benutzende Ihrer Organisation über ihr Login/Passwort eine Verbindung zur Campaign-Client-Konsole herstellen (auch bekannt als native Authentifizierung), sind Sie betroffen und müssen diese Benutzenden wie unten beschrieben zu Adobe IMS migrieren.
 
-Die Migration zum [Identitäts-Management-System (IMS) von Adobe](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} ist eine Sicherheitsanforderung, um Ihre Umgebungen sicher und standardisiert zu gestalten, da die meisten anderen Adobe Experience Cloud-Lösungen und -Anwendungen bereits auf IMS installiert sind.
+Die Migration auf das [Adobe Identity Management System (IMS](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} ist eine Sicherheitsanforderung, um Ihre Umgebungen sicher und standardisiert zu gestalten, da die meisten anderen [!DNL Adobe CX Enterprise]-Lösungen und -Apps bereits auf IMS installiert sind.
 
 >[!IMPORTANT]
 >
@@ -46,7 +46,7 @@ Die Migration zum [Identitäts-Management-System (IMS) von Adobe](https://helpx.
 
 ### Voraussetzungen{#ims-migration-prerequisites}
 
-Bevor Sie mit dem Migrationsprozess beginnen, müssen Sie sich an Ihren Adobe-Kontakt (Transition Manager) wenden, damit die technischen Teams von Adobe Ihre bestehenden Benutzergruppen und spezifischen Berechtigungen zum Adobe Identity Management System (IMS) migrieren können.
+Bevor Sie mit dem Migrationsprozess beginnen, müssen Sie sich an Ihren Adobe-Kontakt (Transition Manager) wenden, damit die technischen Teams von Adobe Ihre bestehenden Benutzergruppen und spezifischen Berechtigungen zum Adobe-Identitäts-Management-System (IMS) migrieren können.
 
 ### Die wichtigsten Schritte {#ims-migration-steps}
 
@@ -72,13 +72,13 @@ Sie können die IMS-Migration in Ihrer Staging-Umgebung starten, sobald sie auf 
 
 ### Was passiert nach einem Build-Upgrade auf Campaign v8.5.2? {#ims-migration-after-upgrade}
 
-Nachdem Ihre Umgebungen auf Campaign v8.5.2 aktualisiert wurden, können Sie den Wechsel zum [Adobe Identity Management System (IMS) &#x200B;](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+Nachdem Ihre Umgebungen auf Campaign v8.5.2 aktualisiert wurden, können Sie den Wechsel zum [Adobe Identity Management System (IMS) ](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
 
 Eine neue native Benutzererstellung ist weiterhin zulässig, bis die IMS-Migration abgeschlossen ist.
 
 ### Wann ist die Migration abgeschlossen? {#ims-migration-end}
 
-Sobald die Migration der Endbenutzenden und die Migration der technischen Benutzenden auf das Adobe Identity Management System (IMS) abgeschlossen sind, müssen Sie sich an Ihren Adobe Transition Manager wenden, damit Adobe Ihre Migration als abgeschlossen kennzeichnen, die Benutzererstellung über die Client-Konsole blockieren und die native Benutzeranmeldung deaktivieren kann.
+Sobald die Migration der Endbenutzenden und die Migration der technischen Benutzenden auf das Adobe-Identitäts-Management-System (IMS) abgeschlossen sind, müssen Sie sich an Ihren Adobe Transition Manager wenden, damit Adobe Ihre Migration als abgeschlossen kennzeichnen, die Benutzererstellung über die Client-Konsole blockieren und die native Benutzeranmeldung deaktivieren kann.
 
 
 ### Wie werden nach der Migration Benutzende erstellt? {#ims-migration-native}

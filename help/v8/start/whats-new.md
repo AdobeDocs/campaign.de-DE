@@ -62,9 +62,9 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1501'
 ht-degree: 70%
 ---
 # Wichtige Funktionen von Adobe Campaign v8 {#ac-gs-what-is-new}
@@ -89,7 +89,7 @@ Adobe Campaign v8 bietet eine **neue Web-Benutzeroberfläche** neben der herköm
 * **Schnelleres Onboarding** - Minimale Lernkurve für neue Benutzer
 * **Einheitliches Erlebnis** - Gemeinsamkeiten mit Campaign Standard für einen einfachen Übergang
 
-Ab Campaign v8.6 ist die Web-Benutzeroberfläche von Campaign über Adobe Experience Cloud verfügbar, sodass nahtloser Zugriff auf alle Adobe-Lösungen möglich ist.
+Ab Campaign v8.6 ist die Web-Benutzeroberfläche von Campaign über [!DNL Adobe CX Enterprise] verfügbar, sodass nahtloser Zugriff auf alle Adobe-Lösungen möglich ist.
 
 [Weitere Informationen zur Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}
 

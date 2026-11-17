@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 84%
+source-wordcount: '1831'
+ht-degree: 82%
 ---
 # Arbeiten mit Campaign und Adobe Analytics {#ac-aa}
 
@@ -49,7 +49,7 @@ Durch diese Integration können Adobe Campaign und Adobe Analytics über das Add
 
 >[!NOTE]
 >
->Als Benutzende von Managed Cloud Services müssen Sie [Adobe kontaktieren](../start/campaign-faq-comprehensive.md#support), wenn Sie Campaign mit Adobe Experience Cloud-Services und -Lösungen verbinden möchten. Das Add-on „Web Analytics-Connector“ muss über das dedizierte Paket in Ihrer Umgebung installiert werden.
+>Als Managed Cloud Services-Anwender können Sie [Adobe kontaktieren](../start/campaign-faq-comprehensive.md#support) um Campaign mit [!DNL Adobe CX Enterprise]-Services und -Lösungen zu verbinden. Das Add-on „Web Analytics-Connector“ muss über das dedizierte Paket in Ihrer Umgebung installiert werden.
 
 Mit Adobe Analytics Connector kann Adobe Campaign die Internet-Zielgruppe (Web Analytics) messen. Die Web-Analyse-Tools von Adobe Campaign ermöglichen die Weiterleitung von Indikatoren und Kampagnenattributen an Analytics.
 
@@ -85,7 +85,7 @@ Gehen Sie wie folgt vor, um Ihre **[!UICONTROL Report Suite]** in [!DNL Adobe An
 
 1. Klicken Sie auf der Seite **[!UICONTROL Report Suite-Manager]** auf **[!UICONTROL Neu erstellen]** und anschließend auf **[!UICONTROL Report Suite]**.
 
-   Eine detaillierte Anleitung zur Erstellung von **[!UICONTROL Report Suites]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}.
+   Eine detaillierte Anleitung zur Erstellung von **[!UICONTROL Report Suites]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -254,7 +254,7 @@ Dieser Workflow ist im Campaign Explorer-Navigationsbaum im Ordner **[!UICONTROL
 
 ![](assets/webanalytics_workflows.png)
 
-Der Workflow **[!UICONTROL Übermittlung der Kampagnen-Indikatoren und -Attribute]** sendet die in Adobe Campaign enthaltenen Indikatoren aus E-Mail-Kampagnen über den Adobe Analytics-Connector an Adobe Experience Cloud. Dieser Workflow wird jeden Tag um 4 Uhr ausgelöst. Es kann 24 Stunden dauern, bis die Daten an Analytics gesendet werden.
+Der **[!UICONTROL Übermittlung der Kampagnen-Indikatoren und -Attribute]** ermöglicht es, über den Adobe Analytics-Connector Indikatoren zu E-Mail-Kampagnen über Adobe Campaign an die [!DNL CX Enterprise] zu senden. Dieser Workflow wird jeden Tag um 4 Uhr ausgelöst. Es kann 24 Stunden dauern, bis die Daten an Analytics gesendet werden.
 
 Bitte beachten Sie, dass dieser Workflow nicht neu gestartet werden sollte, da sonst alle vorherigen Daten erneut gesendet werden, was die Analyseergebnisse verfälschen könnte.
 
@@ -288,7 +288,7 @@ Folgende Attribute werden übermittelt:
 
 ## Nachverfolgen von Sendungen {#tracking-deliveries-in-adobe-campaign}
 
-Damit Adobe Experience Cloud die Aktivitäten auf den Sites verfolgen kann, sobald der Versand von Adobe Campaign durchgeführt wurde, müssen Sie in den Versandeigenschaften auf den entsprechenden Connector verweisen. Gehen Sie hierzu wie folgt vor:
+Damit die [!DNL CX Enterprise] die Aktivitäten auf den Sites verfolgen kann, sobald der Versand von Adobe Campaign durchgeführt wurde, müssen Sie in den Versandeigenschaften auf den entsprechenden Connector verweisen. Gehen Sie hierzu wie folgt vor:
 
 1. Öffnen Sie den Versand der zu verfolgenden Kampagne.
 
