@@ -85,7 +85,7 @@ Gehen Sie wie folgt vor, um Ihre **[!UICONTROL Report Suite]** in [!DNL Adobe An
 
 1. Klicken Sie auf der Seite **[!UICONTROL Report Suite-Manager]** auf **[!UICONTROL Neu erstellen]** und anschließend auf **[!UICONTROL Report Suite]**.
 
-   Eine detaillierte Anleitung zur Erstellung von **[!UICONTROL Report Suites]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}.
+   Eine detaillierte Anleitung zur Erstellung von **[!UICONTROL Report Suites]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
