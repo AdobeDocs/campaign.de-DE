@@ -188,7 +188,7 @@ _14. Februar 2024_
 
 ### Neue Funktionen {#new-8-6-1}
 
-* Ab dieser Version haben Sie Zugriff auf die neue **Web-Benutzeroberfläche von Campaign**, die über die zentrale [!DNL Adobe CX Enterprise] verfügbar ist. [!DNL CX Enterprise] ist die integrierte Produktfamilie von Adobe mit Programmen, Produkten und Services für Digital Marketing. Über die intuitive Benutzeroberfläche können Sie schnell auf Ihre Cloud-Anwendungen, Produktfunktionen und Dienste zugreifen. Erfahren Sie auf dieser Seite , wie Sie eine Verbindung zu [!DNL CX Enterprise] herstellen und auf [ Adobe Campaign-Web-Benutzeroberfläche ](campaign-ui.md#ac-web-ui).
+* Ab dieser Version haben Sie Zugriff auf die neue **Web-Benutzeroberfläche von Campaign**, die über die zentrale [!DNL Adobe CX Enterprise] verfügbar ist. [!DNL CX Enterprise] ist die integrierte Produktfamilie von Adobe mit Programmen, Produkten und Services für Digital Marketing. Über die intuitive Benutzeroberfläche können Sie schnell auf Ihre Cloud-Anwendungen, Produktfunktionen und Dienste zugreifen. Erfahren Sie auf dieser Seite , wie Sie eine Verbindung zu [!DNL CX Enterprise] herstellen und auf [&#x200B; Adobe Campaign-Web-Benutzeroberfläche &#x200B;](campaign-ui.md#ac-web-ui).
 
   >[!AVAILABILITY]
   >
