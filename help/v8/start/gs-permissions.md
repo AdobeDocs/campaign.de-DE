@@ -26,10 +26,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 96%
+source-wordcount: '513'
+ht-degree: 90%
 ---
 # Erste Schritte mit Berechtigungen{#gs-permissions}
 
@@ -69,9 +69,9 @@ Erfahren Sie auf [dieser Seite](manage-permissions.md#add-users), wie Sie Benutz
 
 ## Über Produktprofile{#ootb-product-profiles}
 
-Produktprofile sind Gruppen von Produkten und Services, die Sie Benutzern zuweisen können. In Adobe Experience Cloud basieren die Berechtigungen auf dem Profil eines Produkts und nicht auf der Benutzerin bzw. dem Benutzer. Sie können jedoch Administratorrechte an bestimmte Benutzende delegieren.
+Produktprofile sind Gruppen von Produkten und Services, die Sie Benutzern zuweisen können. [!DNL Adobe CX Enterprise] basieren die Berechtigungen auf dem Produktprofil und nicht auf dem Benutzer. Sie können jedoch Administratorrechte an bestimmte Benutzende delegieren.
 
-In der Admin Console wird jedes **Produktprofil** von Adobe Experience Cloud für Campaign mit einer **Benutzergruppe** in der Client-Konsole von Campaign verknüpft.
+In der Admin Console wird jedes [!DNL CX Enterprise] **Produktprofil** für Campaign mit einer **Benutzergruppe** in der Client-Konsole von Campaign verknüpft.
 
 Erfahren Sie auf [dieser Seite](manage-permissions.md#create-product-profile), wie Sie Produktprofile erstellen und zuweisen.
 

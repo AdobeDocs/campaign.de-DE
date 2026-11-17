@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 98%
+source-wordcount: '1128'
+ht-degree: 96%
 ---
 # Verwalten von Datenschutzanfragen in Campaign {#privacy}
 
@@ -45,7 +45,7 @@ Je nach Art Ihres Unternehmens und der Gerichtsbarkeit, der es unterliegt, könn
 Adobe bietet Datenverantwortlichen Tools zum Erstellen und Verarbeiten von Datenschutzanfragen für in Campaign gespeicherte Daten. Als Datenverantwortlicher sind Sie außerdem verpflichtet, die Identität der betroffenen Person zu überprüfen, die die Anfrage stellt, und sicherzustellen, dass die dem Anfragenden übermittelten Daten zur betroffenen Person gehören. Weitere Informationen zu personenbezogenen Daten und zu den verschiedenen Entitäten, die Daten verwalten, finden Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#personal-data){target="_blank"}.
 
 
-Um Datenschutzanfragen in Campaign zu verwalten, müssen Sie zunächst [einen Namespace definieren](#namespaces). Anschließend können Sie Datenschutzanfragen erstellen und verwalten. Verwenden Sie zum Ausführen von Datenschutzanfragen die Integration **Adobe Privacy Service**. Die vom Privacy Service an alle Adobe Experience Cloud-Lösungen gesendeten Datenschutzanfragen werden von Campaign mithilfe eines speziellen Workflows automatisch verarbeitet. [Weitere Informationen](#create-privacy-request)
+Um Datenschutzanfragen in Campaign zu verwalten, müssen Sie zunächst [einen Namespace definieren](#namespaces). Anschließend können Sie Datenschutzanfragen erstellen und verwalten. Verwenden Sie zum Ausführen von Datenschutzanfragen die Integration **Adobe Privacy Service**. Datenschutzanfragen, die von Privacy Service an alle [!DNL Adobe CX Enterprise]-Lösungen gesendet werden, werden von Campaign automatisch über einen speziellen Workflow verarbeitet. [Weitere Informationen](#create-privacy-request)
 
 Mehr über das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** (Löschanfrage) erfahren Sie in der [Dokumentation zu Adobe Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=de#right-access-forgotten){target="_blank"}.
 

@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 94%
+source-wordcount: '1549'
+ht-degree: 93%
 ---
 # Überarbeitete Konfiguration für Push-Benachrichtigungen {#push-notifications-config}
 
@@ -267,7 +267,7 @@ Ihre Mobile-Eigenschaft wird jetzt automatisch mit dem technischen Workflow der 
 
 ## Hinzufügen von Campaign Classic zur App {#campaign-mobile-app}
 
-Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen.
+Mit der Adobe Experience Platform Mobile SDK können Sie [!DNL Adobe CX Enterprise]-Lösungen und -Services in Mobile Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen.
 
 [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 

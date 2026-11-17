@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1055'
 ht-degree: 78%
 ---
 # Erste Schritte mit Adobe Campaign{#gs-ac-v8}
@@ -129,7 +129,7 @@ Die Berichtsfunktion für Kampagnen vereinfacht die Erstellung von dynamischen B
 
 Weitere Informationen zu den Reporting- und Tracking-Funktionen finden Sie in [diesem Abschnitt](../reporting/gs-reporting.md).
 
-## Integration mit Adobe Experience Cloud {#adobe-experience-cloud-integrations}
+## [!DNL Adobe CX Enterprise] Integrationen {#adobe-experience-cloud-integrations}
 
 Sie können die Funktionen für Versand und erweiterte Kampagnenverwaltung von Adobe Campaign mit einer Reihe von Lösungen kombinieren, anhand derer Sie das Benutzererlebnis personalisieren können, darunter z. B. Adobe Experience Manager, Adobe Analytics, Adobe Target oder Adobe Experience Cloud Triggers.
 

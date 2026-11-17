@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 100%
+source-wordcount: '466'
+ht-degree: 96%
 ---
 # Kompatibilitätsmatrix für Campaign v8 {#compat-matrix}
 
@@ -112,4 +112,4 @@ Die folgenden Browser sind mit der Campaign Web-Benutzeroberfläche kompatibel. 
 * [Installieren der Campaign-Client-Konsole](connect.md)
 * [Control Panel-Versionen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de){target="_blank"}
 
-Abonnieren Sie das [Prioritätsprodukt-Update von Adobe](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"}, um über neue Versionen der Experience Cloud-Lösungen informiert zu werden.
+Abonnieren Sie das [Adobe Priority Product Update](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"}, um über neue Versionen von [!DNL Adobe CX Enterprise]-Lösungen informiert zu werden.

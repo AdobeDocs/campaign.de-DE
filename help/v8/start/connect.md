@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 96%
+source-wordcount: '1125'
+ht-degree: 93%
 ---
 # Herstellen einer Verbindung mit Adobe Campaign v8{#gs-ac-connect}
 
@@ -87,7 +87,7 @@ Sie können so viele Verbindungen wie erforderlich hinzufügen, um z. B. Verbind
 
 ## Bei Adobe Campaign anmelden {#logon-to-ac}
 
-Campaign-Anwender stellen über das Adobe Identity Management System (IMS) mit ihrer Adobe ID eine Verbindung zur Adobe Campaign-Konsole her. Sie können für alle Adobe-Lösungen dieselbe ID verwenden. Die Verbindung wird bei Verwendung von Adobe Campaign mit anderen Lösungen gespeichert. Weitere Informationen zu Adobe IMS finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+Campaign-Anwender stellen über das Adobe-Identitäts-Management-System (IMS) mit ihrer Adobe ID eine Verbindung zur Adobe Campaign-Konsole her. Sie können für alle Adobe-Lösungen dieselbe ID verwenden. Die Verbindung wird bei Verwendung von Adobe Campaign mit anderen Lösungen gespeichert. Weitere Informationen zu Adobe IMS finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
 
 Um sich bei einer Instanz anzumelden, gehen Sie wie folgt vor:
 
@@ -146,14 +146,14 @@ Weitere Informationen zu Anwendern und zum Definieren ihrer Berechtigungen finde
 
 ### Web-Benutzeroberfläche {#connect-web-ui}
 
-Ab der Campaign-Version v8.6 haben Sie Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale Adobe Experience Cloud-Umgebung verfügbar ist. Experience Cloud ist die integrierte Familie von Anwendungen, Produkten und Diensten von Adobe für das digitale Marketing. Über die intuitive Benutzeroberfläche können Sie schnell auf Ihre Cloud-Anwendungen, Produktfunktionen und Dienste zugreifen.
+Ab Campaign Version 8.6 haben Sie Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale [!DNL Adobe CX Enterprise] verfügbar ist. [!DNL CX Enterprise] ist die integrierte Produktfamilie von Adobe mit Programmen, Produkten und Services für Digital Marketing. Über die intuitive Benutzeroberfläche können Sie schnell auf Ihre Cloud-Anwendungen, Produktfunktionen und Dienste zugreifen.
 
 >[!AVAILABILITY]
 >
 >Die Campaign Web-Benutzeroberfläche steht nur Benutzenden zur Verfügung, die über ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Erfahren Sie mehr über das [Identitäts-Management-System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} von Adobe.
 >
 
-[Auf dieser Seite](campaign-ui.md#ac-web-ui) erfahren Sie, wie Sie eine Verbindung mit Adobe Experience Cloud herstellen und auf die Benutzeroberfläche von Adobe Campaign Web zugreifen.
+Erfahren Sie auf dieser Seite , wie Sie eine Verbindung zu [!DNL CX Enterprise] herstellen und auf [&#x200B; Adobe Campaign-Web-Benutzeroberfläche &#x200B;](campaign-ui.md#ac-web-ui).
 
 Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
