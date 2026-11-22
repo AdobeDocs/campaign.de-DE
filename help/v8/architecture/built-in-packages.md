@@ -26,10 +26,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: b37128ff4180befd5655c0c16b9ff0834235a84a
+source-git-commit: 9f70a309a882347a0df658d00c47127f31d28eb9
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 17%
+source-wordcount: '826'
+ht-degree: 16%
 ---
 # Integrierte Packages {#built-in-packages}
 
@@ -65,7 +65,7 @@ In der folgenden Tabelle sind die integrierten Packages aufgeführt. Die Verfüg
 | Kontrolle und Ausführung von Transaktionsnachrichten (Message Center) | Verwaltet Trigger-Nachrichten, die von Ereignissen in Informationssystemen generiert wurden, mit höherer Verfügbarkeit und besserem Lastmanagement. [Weitere Informationen](../send/transactional.md) |
 | LINE-Kanal | Sendet Sendungen über den LINE-Kanal. [Weitere Informationen](../send/line/line.md) |
 | Direkt-Mail-Kanal | Sendet Sendungen über den Briefpostkanal. [Weitere Informationen](../send/direct-mail.md) |
-| Mobile-Kanal (SMS) | Sendet Sendungen über den mobilen Kanal (SMS). [Weitere Informationen](../send/sms/sms.md) |
+| Mobile-Kanal (SMS) | Sendet Sendungen über den mobilen Kanal (SMS), einschließlich SMS-Connector v2 (allgemein verfügbar seit 8.9.1). [Weitere Informationen](../send/sms/sms.md) |
 | Mobile-App-Kanal | Sendet personalisierte Benachrichtigungen über Apps an iOS- und Android-Geräte. [Weitere Informationen](../send/push.md) |
 | Inhaltsverwaltung | Erstellt wiederkehrende Newsletter oder Websites und validiert und veröffentlicht Ihre Nachrichten. [Weitere Informationen](../../automation/workflow/content-management.md) |
 | Online-Umfragen (Survey Manager) | Erstellt und verwaltet Online-Formulare zum Hinzufügen oder Ändern von Profilinformationen, zum Abonnieren, Abmelden oder Eintreten in einen Wettbewerb. [Weitere Informationen](../dev/surveys/about-surveys.md) |
