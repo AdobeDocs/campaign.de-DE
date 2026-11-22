@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: b37128ff4180befd5655c0c16b9ff0834235a84a
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1087'
 ht-degree: 89%
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 89%
   + {hide-from-toc}[Bekannte Probleme](start/known-issues.md)
   + [Kompatibilitätsmatrix](start/compatibility-matrix.md)
   + {hide-from-toc}[Aktualisierungen der Dokumentation](start/documentation-updates.md)
-+ Erste Schritte {#new}
++ Jetzt loslegen {#new}
   + [Erste Schritte mit Adobe Campaign](start/get-started.md)
   + [Wichtigste Funktionen](start/whats-new.md)
   + [Erkunden der Benutzeroberfläche](start/campaign-ui.md)
@@ -270,6 +270,7 @@ ht-degree: 89%
 + Architektur {#architecture}
   + [Allgemeine Prinzipien](architecture/general-architecture.md)
   + [Architekturmodelle](architecture/architecture.md)
+  + {hide-from-toc}[Integrierte Pakete](architecture/built-in-packages.md)
   + [Campaign FDA-Bereitstellung](architecture/fda-deployment.md)
   + Bereitstellung in Unternehmen (FFDA) {#ffda}
     + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
