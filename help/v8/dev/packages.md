@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 30b0f5eda9c80b72af5c8574e01cec6965b05564
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 93%
+source-wordcount: '2028'
+ht-degree: 91%
 ---
 # Daten-Packages{#data-packages}
 
@@ -59,6 +59,8 @@ ht-degree: 93%
 Sie können Daten-Packages verwenden, um benutzerdefinierte Plattformeinstellungen und -daten zu exportieren und zu importieren. Daten-Packages können verschiedene Arten von Konfigurationen und Komponenten enthalten, gefiltert oder ungefiltert.
 
 In Campaign-Daten-Packages werden Entitäten der Adobe Campaign-Datenbank in XML-Dateien angezeigt. In einem Daten-Package wird jede Entität mit allen Daten dargestellt.
+
+Auf dieser Seite werden **benutzerdefinierte** Datenpakete beschrieben, die Sie erstellen und verwalten. Die Pakete, die die Campaign-Funktionen bereitstellen **sind integrierte Pakete** die von Adobe installiert und verwaltet werden. Weitere Informationen finden [ unter „Integrierte Pakete](../architecture/built-in-packages.md).
 
 Das Prinzip der **Daten-Packages** besteht darin, eine Datenkonfiguration zu exportieren und in eine andere Adobe Campaign-Umgebung zu integrieren. In diesem [Abschnitt](#data-package-best-practices) erfahren Sie, wie Sie einen konsistenten Satz von Daten-Packages aufrechterhalten.
 
@@ -302,11 +304,9 @@ Der Inhalt des zu importierenden Packages wird daraufhin im mittleren Bereich de
 
 Klicken Sie auf **[!UICONTROL Weiter]** und **[!UICONTROL Starten]**, um den Import zu beginnen.
 
-### Native Packages installieren {#install-a-standard-package}
+### Integrierte Packages {#install-a-standard-package}
 
-Native Packages (auch bezeichnet als Standard-Packages) werden bei der Konfiguration von Adobe Campaign installiert. Abhängig von Ihren Berechtigungen, Ihrem Bereitstellungsmodell und Ihrem Produktangebot können Sie neue Standard-Packages importieren.
-
-Welche Packages Sie installieren können, steht in Ihrem Lizenzvertrag.
+Adobe installiert und verwaltet die integrierten Packages in Campaign v8. Weitere Informationen finden [ unter „Integrierte Pakete](../architecture/built-in-packages.md).
 
 ## Best Practices für Daten-Packages {#data-package-best-practices}
 
