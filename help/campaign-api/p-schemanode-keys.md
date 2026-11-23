@@ -6,7 +6,7 @@ ht-degree: 45%
 ---
 # Schlüssel
 
-Gibt eine Tabelle mit Definitionen der Schlüssel „SchemaKey[ des aktuellen Knotens ](c-schemakey.md).
+Gibt eine Tabelle mit Definitionen der Schlüssel „SchemaKey[&#x200B; des aktuellen Knotens &#x200B;](c-schemakey.md).
 
 ```text
 keys

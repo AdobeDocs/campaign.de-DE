@@ -24,10 +24,10 @@ Die Zeichenfolge nach der Konvertierung.
 
 Die Funktion wandelt die Zeichen &amp;, &lt;, > und \\&quot; in die entsprechenden Escape-Sequenzen um:
 
-* &amp;Amp;
+* &Amp;
 * &lt; &lt;
-* > >
-* &quot; &amp;quot;
+* &#x200B;> >
+* &quot; &quot;
 
 ## Funktionen
 

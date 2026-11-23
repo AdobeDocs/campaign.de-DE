@@ -6,7 +6,7 @@ ht-degree: 40%
 ---
 # Auflistungen
 
-Gibt die Tabelle zurück, die die Liste der in [ Schema ](c-enumeration.md) Auflistungen enthält.
+Gibt die Tabelle zurück, die die Liste der in [&#x200B; Schema &#x200B;](c-enumeration.md) Auflistungen enthält.
 
 ```text
 enumerations

@@ -17,7 +17,7 @@ Ein ist ein Zwischenobjekt zum Bearbeiten von Daten in eine und aus einer Datei.
 | [dispose](m-memorybuffer-dispose.md) | Gibt die vom -Objekt verwendeten Ressourcen frei. |
 | [LOAD](m-memorybuffer-load.md) | Lädt den Inhalt einer Datei in den Puffer. |
 | [Speichern](m-memorybuffer-save.md) | Speichert den Inhalt des Puffers in eine Datei. |
-| [toXML](m-memorybuffer-toxml.md) | Gibt ein XML-JavaScript-Objekt zurück, das aus dem Inhalt von [MemoryBuffer“ abgerufen ](c-memorybuffer.md). Diese Funktion ist veraltet. Verwenden Sie [toDocument()](m-memorybuffer-todocument.md) |
+| [toXML](m-memorybuffer-toxml.md) | Gibt ein XML-JavaScript-Objekt zurück, das aus dem Inhalt von [MemoryBuffer“ abgerufen &#x200B;](c-memorybuffer.md). Diese Funktion ist veraltet. Verwenden Sie [toDocument()](m-memorybuffer-todocument.md) |
 | [toDocument](m-memorybuffer-todocument.md) | Gibt ein XML-Dokument aus dem Textinhalt dieses Puffers zurück. |
 | [toString](m-memorybuffer-tostring.md) | Gibt den Inhalt des [MemoryBuffer](c-memorybuffer.md) in Form einer Zeichenfolge zurück. |
 | [fromString](m-memorybuffer-fromstring.md) | Lädt den Inhalt einer Zeichenfolge in den Puffer. |

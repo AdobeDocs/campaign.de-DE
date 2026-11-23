@@ -29,13 +29,13 @@ Stellt das Element eines Schemas dar
 | [folderModel](p-schemanode-foldermodel.md) | Gibt nur auf dem Stammknoten eine Zeichenfolge zurück, die die Ordnervorlage(n) enthält. Auf den anderen Knoten wird „undefined“ zurückgegeben. |
 | [Bild](p-schemanode-image.md) | Gibt den Namen des Bildes in Form einer Zeichenfolge zurück. |
 | [integrity](p-schemanode-integrity.md) | Gibt den Integritätstyp der Relation zurück. |
-| [keys](p-schemanode-keys.md) | Gibt eine Tabelle mit Definitionen der Schlüssel „SchemaKey[ des aktuellen Knotens ](c-schemakey.md). |
+| [keys](p-schemanode-keys.md) | Gibt eine Tabelle mit Definitionen der Schlüssel „SchemaKey[&#x200B; des aktuellen Knotens &#x200B;](c-schemakey.md). |
 | [hasEnumeration](p-schemanode-hasenumeration.md) | Gibt einen booleschen Wert zurück, der angibt, ob der Wert des aktuellen Knotens mit einer Auflistung verknüpft ist. |
 | [childrenCount](p-schemanode-childrencount.md) | Gibt eine Zahl zurück, die die Anzahl der untergeordneten Knoten angibt. |
 | [hasSQLTable](p-schemanode-hassqltable.md) | Gibt einen booleschen Wert zurück, der angibt, ob der aktuelle Knoten mit einer SQL-Tabelle verknüpft ist. |
 | [hasUserEnumeration](p-schemanode-hasuserenumeration.md) | Gibt einen booleschen Wert zurück, der angibt, ob der Wert des aktuellen Knotens mit einer Benutzeraufzählung verknüpft ist. |
 | [Hilfe](p-schemanode-help.md) | Gibt die Hilfe-Zeichenfolge zurück. |
-| [schema](p-schemanode-schema.md) | Gibt die Instanz des übergeordneten Objekts (Schema) [ Knotens ](c-schema.md). |
+| [schema](p-schemanode-schema.md) | Gibt die Instanz des übergeordneten Objekts (Schema) [&#x200B; Knotens &#x200B;](c-schema.md). |
 | [isAdvanced](p-schemanode-isadvanced.md) | Gibt einen booleschen Wert zurück, der angibt, ob der aktuelle Knoten erweitert ist oder nicht. |
 | [isAnyType](p-schemanode-isanytype.md) | Gibt einen booleschen Wert zurück, der angibt, ob der aktuelle Knoten normal ist. |
 | [isAttribute](p-schemanode-isattribute.md) | Gibt einen booleschen Wert zurück, der angibt, ob der aktuelle Knoten ein Attribut ist. |

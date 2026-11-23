@@ -6,7 +6,7 @@ ht-degree: 45%
 ---
 # Schema
 
-Gibt die Instanz des übergeordneten Objekts (Schema) [ Knotens ](c-schema.md).
+Gibt die Instanz des übergeordneten Objekts (Schema) [&#x200B; Knotens &#x200B;](c-schema.md).
 
 ```text
 schema

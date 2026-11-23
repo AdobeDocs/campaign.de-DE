@@ -14,7 +14,7 @@ operator
 
 ## Bemerkungen
 
-Weitere Informationen zu [ finden Sie ](c-currentoperator.md) der Klasse „CurrentOperator“.
+Weitere Informationen zu [&#x200B; finden Sie &#x200B;](c-currentoperator.md) der Klasse „CurrentOperator“.
 
 ## Funktionen
 

@@ -22,7 +22,7 @@ Keine.
 
 ## Bemerkungen
 
-Eine Transaktion muss zuvor mit der Methode &quot;[&quot; ](m-dbengine-begin.md) worden sein.
+Eine Transaktion muss zuvor mit der Methode &quot;[&quot; &#x200B;](m-dbengine-begin.md) worden sein.
 
 ## Funktionen
 

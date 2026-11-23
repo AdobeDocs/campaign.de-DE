@@ -6,7 +6,7 @@ ht-degree: 23%
 ---
 # toXML
 
-Gibt ein XML-JavaScript-Objekt zurück, das aus dem Inhalt von „MemoryBuffer[ abgerufen ](c-memorybuffer.md). Diese Funktion ist veraltet. Verwenden Sie [toDocument()](m-memorybuffer-todocument.md)
+Gibt ein XML-JavaScript-Objekt zurück, das aus dem Inhalt von „MemoryBuffer[&#x200B; abgerufen &#x200B;](c-memorybuffer.md). Diese Funktion ist veraltet. Verwenden Sie [toDocument()](m-memorybuffer-todocument.md)
 
 ```text
 toXML ( [codePage ])

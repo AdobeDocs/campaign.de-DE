@@ -6,7 +6,7 @@ ht-degree: 32%
 ---
 # nicht verschleiern
 
-Hebt die Verschleierung der zuvor verschleierten Ganzzahl dank &quot;[&quot; ](f-obfuscate.md).
+Hebt die Verschleierung der zuvor verschleierten Ganzzahl dank &quot;[&quot; &#x200B;](f-obfuscate.md).
 
 ```text
 unobfuscate (value [, version ])
@@ -20,7 +20,7 @@ unobfuscate (value [, version ])
 
 ## Rückgabewert
 
-Die Ganzzahl, die zuvor durch &quot;[&quot; verschleiert ](f-obfuscate.md).
+Die Ganzzahl, die zuvor durch &quot;[&quot; verschleiert &#x200B;](f-obfuscate.md).
 
 ## Funktionen
 

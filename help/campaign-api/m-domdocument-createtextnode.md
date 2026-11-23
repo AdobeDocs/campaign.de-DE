@@ -18,7 +18,7 @@ createTextNode (data)
 
 ## Rückgabewert
 
-[ Knoten vom Typ ](c-domcharacterdata.md)DOMCharacterData“ erstellt.
+[&#x200B; Knoten vom Typ &#x200B;](c-domcharacterdata.md)DOMCharacterData“ erstellt.
 
 ## Funktionen
 

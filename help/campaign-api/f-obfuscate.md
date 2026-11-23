@@ -6,7 +6,7 @@ ht-degree: 20%
 ---
 # verschleiern
 
-Verschleiert eine Ganzzahl in einer Zeichenfolge. Der ursprüngliche Wert kann durch Aufrufen von &quot;[&quot; wiederhergestellt ](f-unobfuscate.md).
+Verschleiert eine Ganzzahl in einer Zeichenfolge. Der ursprüngliche Wert kann durch Aufrufen von &quot;[&quot; wiederhergestellt &#x200B;](f-unobfuscate.md).
 
 ```text
 obfuscate (value [, size ] [, version ])

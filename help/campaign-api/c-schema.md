@@ -20,7 +20,7 @@ Ein Schema wird durch Aufrufen der -Methode der globalen `application`-Variablen
 
 | Eigenschaft | Beschreibung |
 | --- | --- |
-| [Auflistungen](p-schema-enumerations.md) | Gibt die Tabelle zurück, die die Liste der in [ Schema ](c-enumeration.md) Auflistungen enthält. |
+| [Auflistungen](p-schema-enumerations.md) | Gibt die Tabelle zurück, die die Liste der in [&#x200B; Schema &#x200B;](c-enumeration.md) Auflistungen enthält. |
 | [id](p-schema-id.md) | Die Schemakennung in Form einer Zeichenfolge. |
 | [isLibrary](p-schema-islibrary.md) | Gibt einen booleschen Wert zurück, der angibt, ob das Schema eine Komponentenbibliothek ist. |
 | [labelSingular](p-schema-labelsingular.md) | Der Singulärname des Schemas in Form einer Zeichenfolge. |
