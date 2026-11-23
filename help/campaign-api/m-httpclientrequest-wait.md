@@ -27,7 +27,7 @@ Keine.
 Die Funktion gilt nicht für eine Abfrage, sondern ist eine Funktion des HttpClientRequest-Bin. Beispiel:
 
 ```javascript
-var req = new HttpClientRequest("http://www.adobe.com/")
+var req = new HttpClientRequest("http://www.adobe.com/de/")
 req.complete = function(req, context, status) { logInfo(status) }
 req.execute(false, true)
 

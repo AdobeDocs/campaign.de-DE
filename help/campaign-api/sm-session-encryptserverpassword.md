@@ -8,7 +8,7 @@ ht-degree: 26%
 
 > Warnung:
 >
-> Diese Funktion ist vollständig veraltet. Weitere Informationen finden Sie auf dieser [Seite](https://experienceleague.adobe.com/en/docs/campaign-classic/using/technotes/gcm-functions#deprecated-functions-headding-anchor-depracated-functions).
+> Diese Funktion ist vollständig veraltet. Weitere Informationen finden Sie auf dieser [Seite](https://experienceleague.adobe.com/de/docs/campaign-classic/using/technotes/gcm-functions#deprecated-functions-headding-anchor-depracated-functions).
 
 Verschlüsselt den String mit dem Serverschlüssel.
 

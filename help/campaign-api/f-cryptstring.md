@@ -8,7 +8,7 @@ ht-degree: 38%
 
 > Warnung:
 >
-> Diese Funktion ist vollständig veraltet. Weitere Informationen finden Sie auf dieser [Seite](https://experienceleague.adobe.com/en/docs/campaign-classic/using/technotes/gcm-functions#deprecated-functions-headding-anchor-depracated-functions).
+> Diese Funktion ist vollständig veraltet. Weitere Informationen finden Sie auf dieser [Seite](https://experienceleague.adobe.com/de/docs/campaign-classic/using/technotes/gcm-functions#deprecated-functions-headding-anchor-depracated-functions).
 
 Verschlüsselt einen String mit dem Schlüssel der Instanz oder einem anderen Schlüssel.
 

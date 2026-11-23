@@ -8,7 +8,7 @@ ht-degree: 46%
 
 > Warnung:
 >
-> Diese Dokumentation wurde aktualisiert. Weitere Informationen finden Sie auf dieser [Seite](https://experienceleague.adobe.com/en/docs/campaign-classic/using/technotes/gcm-functions#decryptpassword-headding-anchor-decryptpassword-javascript).
+> Diese Dokumentation wurde aktualisiert. Weitere Informationen finden Sie auf dieser [Seite](https://experienceleague.adobe.com/de/docs/campaign-classic/using/technotes/gcm-functions#decryptpassword-headding-anchor-decryptpassword-javascript).
 
 Entschlüsselt ein in einem externen Konto gespeichertes Passwort.
 

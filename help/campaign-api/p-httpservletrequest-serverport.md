@@ -17,7 +17,7 @@ serverPort
 Beispiel: Der serverPort der folgenden URL:
 
 ```javascript
-http://adobe.com:8080/nms/test.jst
+http://adobe.com/de:8080/nms/test.jst
 ```
 
 Gibt die folgende Zeichenfolge zurück:
