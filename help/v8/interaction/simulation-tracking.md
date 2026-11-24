@@ -44,12 +44,12 @@ Das Simulationsergebnis zeigt die Aufschlüsselung der Vorschläge nach Rang und
 
 Sie haben die Möglichkeit, die Ergebnisse zu speichern und sie in Form einer deskriptiven Analyse zu exportieren. Klicken Sie hierzu auf den entsprechenden Link im Ergebnisfenster.
 
-Weitere Informationen zur deskriptiven Analyse finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"}.
+Weitere Informationen zur deskriptiven Analyse finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"}.
 
 ![](assets/offer_simulation_012.png)
 
 Eine Pivot-Tabelle bietet eine schnelle Ansicht der Angebotsaufschlüsselungen pro Ranking. Wie alle Berichte in Adobe Campaign kann auch dieser exportiert, gedruckt, archiviert oder in einem Webbrowser angezeigt werden.
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
+Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
 
 ![](assets/offer_simulation_013.png)

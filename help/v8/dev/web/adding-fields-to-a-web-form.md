@@ -332,7 +332,7 @@ Definieren Sie den Titel für die Checkbox und wählen Sie den entsprechenden In
 
 >[!NOTE]
 >
->Informationsdienste werden auf [dieser Seite](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions){target="_blank"} beschrieben.
+>Informationsdienste werden auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions){target="_blank"} beschrieben.
 
 Der Benutzer meldet sich zu diesem Dienst an, indem er die entsprechende Option markiert.
 

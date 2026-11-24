@@ -103,7 +103,7 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
 
    Um Berichtsdaten zu exportieren, wählen Sie die Schaltfläche **[!UICONTROL Exportieren]** und danach das Exportformat aus.
 
-   Weiterführende Informationen zum Exportieren von Berichtdaten finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
+   Weiterführende Informationen zum Exportieren von Berichtdaten finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
 
 1. Antworten exportieren
 
