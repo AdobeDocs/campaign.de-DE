@@ -336,7 +336,7 @@ ht-degree: 88%
       + [Steuern eines Workflows](dev/api/controlling-a-workflow.md)
       + [Auslösen einer Signalaktivität](dev/api/triggering-a-signal-activity.md)
 + API-Dokumentation {#api-documentation}
-  + [Campaign-API-Dokumentation >](https://experienceleague.adobe.com/en/docs/campaign/campaign-api/home)
+  + [Campaign-API-Dokumentation >](https://experienceleague.adobe.com/de/docs/campaign/campaign-api/home)
 + Zusätzliche Ressourcen {#resources}
   + [Technische Hinweise zu Campaign >](https://experienceleague.adobe.com/de/docs/campaign/technotes-ac/technotes-home)
   + [Dokumentation zur Campaign-Web-Benutzeroberfläche >](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home)
