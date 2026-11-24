@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1639'
-ht-degree: 96%
+ht-degree: 93%
 ---
 # Verwalten von Echtzeit-Interaktionen
 
@@ -107,9 +107,9 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
   * **Design-Umgebung**: Umgebung, in der Angebote erstellt und/oder Typologieregeln definiert werden (Regeln, die bestimmen, welche Angebote einer Zielperson unterbreitet werden sollen oder nicht). Die Tabelle der Einzelanwender, an die sich die Angebote richten sollen, und die Tabelle zum Speichern aller Angebotsvorschläge werden ebenfalls darin definiert. Der Knoten **[!UICONTROL Design-Umgebung]** enthält Platzierungs-Unterordner, vordefinierte Filter und Angebotskategorien. Für jede **[!UICONTROL Design-Umgebung]** besteht eine entsprechende schreibgeschützte **[!UICONTROL Live-Umgebung]**, die aus derselben **[!UICONTROL Design-Umgebung]** erzeugt wird.
   * **Live-Umgebung**: Eine Live-Umgebung ist mit einer **[!UICONTROL Design-Umgebung]** verknüpft. Sie enthält schreibgeschützte Angebote, deren Inhalte und Eignung in der **[!UICONTROL Design-Umgebung]** genehmigt wurden. Sie können auf einer Website angezeigt oder in eine Nachricht eingefügt werden.
 
-* **Platzierung**: Ordner, der festlegt, wo das Angebot gezeigt wird. Bei der Definition einer Platzierung haben Sie folgende Möglichkeiten:
+* **Platzierung**: Ordner, der festlegt, wo das Angebot gezeigt wird. Beim Definieren einer Platzierung haben Sie folgende Möglichkeiten:
   * Kanal auswählen
-  * wählen, dass sie im Einzelmodus verwendet werden kann (standardmäßig: nur im Batch-Modus)
+  * Auswählen, ob sie im Einzelmodus verwendet werden kann (standardmäßig: nur im Batch-Modus)
   * den Angebotsinhalt mithilfe von Rendering-Funktionen erstellen
   * die zu unterbreitenden Angebote angeben
 
@@ -117,7 +117,7 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
 
   >[!CAUTION]
   >
-  >Eine Platzierung ist kein Kommunikationskanal, sondern entspricht einer bestimmten Position im Kanal. Beispielsweise können auf einer Website angezeigte Angebote zwei Platzierungen auf derselben Seite belegen. In diesem Fall haben Sie zwei Platzierungen für denselben Kanal.
+  >Eine Platzierung ist kein Kommunikationskanal, sondern entspricht einer bestimmten Position auf dem Kanal. Beispielsweise können auf einer Website angezeigte Angebote zwei Platzierungen auf derselben Seite belegen. In diesem Fall haben Sie zwei Platzierungen für denselben Kanal.
   >
   >Die Platzierungen werden zu Beginn eines Projekts festgelegt und können im späteren Verlauf nicht mehr geändert werden.
 
@@ -154,7 +154,7 @@ Bevor Sie beginnen, erfahren Sie mehr über angebotsspezifische Begriffe und ent
 * **Identifizierungsmodus**: bezieht sich auf den Status eines Kontakts:
 
   * **[!UICONTROL explizit]**: Kontakte werden durch ihre Anmeldung bei der Kanalschnittstelle identifiziert.
-  * **[!UICONTROL implizit]** : Kontakte werden durch ein Cookie (permanent oder Sitzung) identifiziert. Sie können als anonymer oder identifizierter Kontakt verarbeitet werden.
+  * **[!UICONTROL implizit]**: Kontakte werden durch ein Cookie (permanent oder Sitzungsinstanz) identifiziert. Sie können als anonymer oder identifizierter Kontakt verarbeitet werden.
   * **[!UICONTROL anonym]**: Kontakte können nicht identifiziert werden.
 
 * **Geeignetes Angebot**: Angebot, das bestimmten, zuvor definierten Bedingungen entspricht und somit einer Zielgruppe auf mit ihrer Markenerfahrung kohärente Weise unterbreitet werden kann.

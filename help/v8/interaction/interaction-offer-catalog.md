@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 98%
+ht-degree: 81%
 ---
 # Erstellen eines Angebotskatalogs
 
@@ -37,13 +37,13 @@ Vor der Angebotserstellung ist die übergeordnete [Umgebung](interaction-env.md)
 
 ## Angebotskategorien erstellen{#creating-offer-categories}
 
-Das Angebot ist in Kategorien/Unterkategorien unterteilt. Kategorien werden in der **[!UICONTROL Design]**-Umgebung erstellt und automatisch in der **[!UICONTROL Live]**-Umgebung bereitgestellt, sobald die darin enthaltenen Angebote validiert wurden. Die **[!UICONTROL Design]**-Umgebung enthält eine Standardkategorie für den Empfang aller Angebote. Unterkategorien können erstellt werden, um den Katalogangeboten eine Hierarchie hinzuzufügen.
+Angebote sind in Kategorien/Unterkategorien unterteilt. Kategorien werden in der **[!UICONTROL Design]**-Umgebung erstellt und automatisch in der **[!UICONTROL Live]**-Umgebung bereitgestellt, sobald die darin enthaltenen Angebote validiert wurden. Die **[!UICONTROL Design]**-Umgebung enthält eine Standardkategorie für den Empfang aller Angebote. Unterkategorien können erstellt werden, um den Katalogangeboten eine Hierarchie hinzuzufügen.
 
 Für jede Kategorie können Sie eine **Gültigkeit** definieren. Dies ist der Zeitraum, in dem die in der Kategorie enthaltenen Angebote ihrer Zielgruppe unterbreitet werden können. Sie können außerdem die Gewichtung einer Kategorie anpassen, um der Angebotsunterbreitung Priorität einzuräumen.
 
 Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
-1. Navigieren Sie im Navigationsbaum zum Ordner **[!UICONTROL Angebotskatalog]**.
+1. Navigieren Sie zum Ordner **[!UICONTROL Angebotskatalog]**.
 
    ![](assets/offer_cat_create_001.png)
 
@@ -67,13 +67,13 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    * **[!UICONTROL Bearbeiten Sie die Abfrage]**, um Filter auf die Angebots-Zielgruppe anzuwenden.
 
-   * Eine Zusammenfassung der Eignungsregeln.Um sie anzuzeigen, klicken Sie auf den Link **[!UICONTROL Zeitplan und Eignungsregeln des Angebots]**.
+   * Eine Zusammenfassung der Eignungsregeln. Um sie anzuzeigen, klicken Sie auf den Link **[!UICONTROL Zeitplan und Eignungsregeln des Angebots]**.
 
 ## Hinzufügen einer Ersatzkategorie
 
 Um sicherzustellen, dass alle Empfänger einen Angebotsvorschlag erhalten, können in den Empfehlungen systematisch eine oder mehrere Angebotskategorien hinzugefügt werden.
 
-Diese Fallback-Angebote müssen eine niedrige Gewichtung (aber nicht null) aufweisen, sodass sie nur dann berücksichtigt werden, wenn keine Angebote mit höherer Gewichtung infrage kommen.
+Diese Fallback-Angebote müssen eine niedrige Gewichtung (aber nicht null) aufweisen, sodass sie nur berücksichtigt werden, wenn kein Angebot mit höherer Gewichtung infrage kommt.
 
 Darüber hinaus darf auf diese Angebote keine Unterbreitungsregel angewendet werden, um sicherzustellen, dass sie immer in die Empfehlungen aufgenommen werden. Wenn also für einen Vorschlag kein Angebot mit höherer Gewichtung verfügbar ist, erhält der Empfänger mindestens ein Angebot aus dieser Kategorie.
 

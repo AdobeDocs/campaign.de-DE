@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 96%
+source-wordcount: '790'
+ht-degree: 94%
 ---
 # Erstellen von Cubes{#create-a-cube}
 
@@ -77,7 +77,7 @@ Cubes ermöglichen Ihnen Folgendes:
 
 ## Aufbauen eines Cubes{#cube-create}
 
-Bevor Sie mit dem Aufbau eines Cube-Berichts beginnen, identifizieren Sie die relevanten Dimensionen und Kennzahlen und erstellen Sie diese im Cube.
+Bevor Sie einen Cube-Bericht erstellen, identifizieren Sie die relevanten Dimensionen und Kennzahlen und erstellen Sie diese im Cube.
 
 Ein Cube wird in folgenden Schritten erstellt:
 

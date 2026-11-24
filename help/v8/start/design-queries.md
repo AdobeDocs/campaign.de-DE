@@ -27,9 +27,9 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '957'
 ht-degree: 20%
 ---
 # Campaign-Datenbank abfragen
@@ -155,7 +155,7 @@ Im vorliegenden Beispiel wurden die Daten nach dem Alter der ausgewählten Empf�
 
 >[!NOTE]
 >
->Wie bei allen in der Konsole verfügbaren Listen werden standardmäßig nur die ersten 200 Zeilen im Fenster **[!UICONTROL Datenvorschau“]**. Geben Sie eine Zahl in das Feld **[!UICONTROL Anzuzeigende Zeilen“ ein]** klicken Sie auf **[!UICONTROL Vorschau der Daten starten]**. [Weitere Informationen](../config/ui-settings.md#customize-lists)
+>Wie bei allen in der Konsole verfügbaren Listen werden standardmäßig nur die ersten 200 Zeilen im Fenster **[!UICONTROL Datenvorschau]** angezeigt. Geben Sie eine Zahl in das Feld **[!UICONTROL Anzuzeigende Zeilen“ ein]** klicken Sie auf **[!UICONTROL Vorschau der Daten starten]**. [Weitere Informationen](../config/ui-settings.md#customize-lists)
 
 
 

@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 85%
+source-wordcount: '1341'
+ht-degree: 82%
 ---
 # Umgebungen und Architektur von Campaign Interaction
 
@@ -64,7 +64,7 @@ Wenn ein Angebot unterbreitet werden kann oder soll (je nach Konfiguration), spi
 Um die Skalierbarkeit zu unterstützen und rund um die Uhr Service für den eingehenden Kanal zu bieten, wird das **Interaction**-Modul in einer verteilten Architektur implementiert. Diese Art von Architektur wird bereits mit [Message Center](../architecture/architecture.md#transac-msg-archi) verwendet und besteht aus mehreren Instanzen:
 
 * einer oder mehrerer Kontrollinstanzen für den ausgehenden Kanal, welche die Marketing-Datenbank und die Design-Umgebung beherbergen;
-* einer oder mehrerer Ausführungsinstanzen für den eingehenden Kanal.
+* Eine oder mehrere Ausführungsinstanzen für den eingehenden Kanal
 
 ![](assets/interaction_powerbooster_schema.png)
 
@@ -90,7 +90,7 @@ Beachten Sie die folgenden Synchronisierungsmechanismen:
 
 * Wenn Sie die Funktion zum Wechsel von einer anonymen in eine identifizierte Umgebung (fall back) nutzen möchten, müssen sich die beiden betroffenen Umgebungen in derselben Ausführungsinstanz befinden.
 * Die Synchronisierung zwischen mehreren Ausführungsinstanzen wird nicht in Echtzeit durchgeführt. Interaktionen desselben Kontakts müssen an dieselbe Instanz gesendet werden. Die Kontrollinstanz muss dem ausgehenden Kanal zugeordnet sein (keine Echtzeit).
-* Die Marketing-Datenbank wird nicht automatisch synchronisiert. Die in den Gewichtungs- und Eignungsregeln verwendeten Marketing-Daten müssen in Ausführungsinstanzen dupliziert werden. Dieser Prozess ist nicht standardmäßig, Sie müssen ihn während der Integrationsphase entwickeln.
+* Die Marketing-Datenbank wird nicht automatisch synchronisiert. Die in den Gewichtungs- und Eignungsregeln verwendeten Marketing-Daten müssen in Ausführungsinstanzen dupliziert werden. Dieser Prozess ist kein Standardprozess, sondern muss während der Integrationsphase weiterentwickelt werden.
 * Die Synchronisation von Vorschlägen erfolgt ausschließlich über FDA-Verbindung.
 * Falls Sie Interaction und Message Center auf derselben Instanz verwenden, erfolgt die Synchronisation in beiden Fällen über das FDA-Protokoll.
 
@@ -168,7 +168,7 @@ Wenn Ihre Instanz zuvor nicht über das Package **Interaction** verfügte, ist k
 >
 >Je nach Anzahl an existierenden Vorschlägen in Ihrer Instanz kann dieser Vorgang sehr zeitintensiv sein.
 
-* Wenn Ihre Instanz keine oder nur wenige Vorschläge enthält, ist kein manueller Eingriff bezüglich der Vorschlagstabelle erforderlich. Die Änderung wird vorgenommen, wenn Pakete installiert werden.
+* Wenn Ihre Instanz nur wenige oder keine Vorschläge hat, ist keine manuelle Änderung der Vorschlagstabelle erforderlich. Die Änderung wird vorgenommen, wenn Pakete installiert werden.
 * Wenn Ihre Instanz eine große Anzahl von Vorschlägen enthält, wird empfohlen, die Struktur der Vorschlagstabelle vor Installation und Ausführung der Kontroll-Pakete anzupassen. Es wird empfohlen, die Abfragen während eines Zeitraums mit geringer Aktivität auszuführen.
 
 >[!NOTE]

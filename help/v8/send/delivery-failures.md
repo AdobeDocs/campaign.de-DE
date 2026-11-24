@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f0e325102f748f6268a21a5397774a08a6994e51
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3529'
-ht-degree: 75%
+source-wordcount: '3530'
+ht-degree: 73%
 ---
 # Ursachen für das Fehlschlagen von Sendungen {#delivery-failures}
 
@@ -228,7 +228,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Ausgeschlossen nach Schlichtung </td> 
    <td> Ignoriert </td> 
    <td> 12 </td> 
-   <td> Der Empfänger wurde durch Anwendung einer Typologieregel vom Typ 'Schlichtung' ausgeschlossen.<br /> </td> 
+   <td> Der Empfänger wurde durch eine Kampagnentypologieregel vom Typ „Schlichtung“ ausgeschlossen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Von einer SQL-Regel ausgeschlossen </td> 
@@ -258,7 +258,7 @@ Für den E-Mail-Kanal sind im Folgenden mögliche Ursachen für einen fehlgeschl
    <td> Unbestimmt </td> 
    <td> Unbestimmt </td> 
    <td> 0 </td> 
-   <td> Die Adresse wird noch qualifiziert, da der Fehler noch nicht inkrementiert wurde. Dieser Fehlertyp tritt auf, wenn der Server eine bis dahin unbekannte Fehlermeldung sendet: Hierbei kann es sich um einen einmaligen Fehler handeln. Sollte er sich jedoch wiederholen, wird der Fehlerzähler erhöht, was die zuständigen technischen Mitarbeiter auf das Problem aufmerksam macht. Sie können dann über den Knoten <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Unzustellbarkeitsverwaltung</span> in der Baumstruktur eine Nachrichtenanalyse durchführen und diesen Fehler qualifizieren.<br /> </td> 
+   <td> Die Adresse wird qualifiziert, da der Fehler noch nicht inkrementiert wurde. Dieser Fehlertyp tritt auf, wenn der Server eine bis dahin unbekannte Fehlermeldung sendet: Hierbei kann es sich um einen einmaligen Fehler handeln. Sollte er sich jedoch wiederholen, wird der Fehlerzähler erhöht, was die zuständigen technischen Mitarbeiter auf das Problem aufmerksam macht. Sie können dann über den Knoten <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Unzustellbarkeitsverwaltung</span> in der Baumstruktur eine Nachrichtenanalyse durchführen und diesen Fehler qualifizieren.<br /> </td> 
   </tr> 
   <tr> 
    <td> Kommt nicht für die Angebote infrage </td> 
@@ -309,7 +309,7 @@ Für den Mobile-App-Kanal sind unten mögliche Ursachen für einen fehlgeschlage
 
 Das HTTP/V2-Protokoll ermöglicht für jeden Push-Versand ein direktes Feedback zu dessen Status. Bei Verwendung des Connectors für das HTTP/V2-Protokoll wird der Feedback-Dienst des Workflows **[!UICONTROL mobileAppOptOutMgt]** nicht mehr aufgerufen. Ein Token gilt als abgemeldet, wenn eine Mobile App deinstalliert oder neu installiert wird.
 
-Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt, wird der Ziel-Token direkt unter Quarantäne gestellt.
+Wenn die APNs synchron den Status „Nicht registriert“ für eine Nachricht zurückgeben, wird das Ziel-Token sofort unter Quarantäne gestellt.
 
 +++ Klicken, um iOS-Quarantäneszenarien anzuzeigen
 
@@ -497,7 +497,7 @@ Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für 
    <td> Nein<br /> </td> 
   </tr> 
   <tr> 
-   <td> Zurückweisung von FCM-Nachricht: alle anderen Fehler<br /> </td> 
+   <td> FCM-Nachrichtenablehnung: Alle anderen Fehler<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Der Firebase Cloud Messaging-Server hat einen unerwarteten Fehler-Code zurückgegeben: {1} </td> 
    <td> </td> 

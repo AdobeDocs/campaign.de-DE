@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 52%
+source-wordcount: '594'
+ht-degree: 51%
 ---
 # Konfigurieren getrackter Links {#how-to-configure-tracked-links}
 
@@ -76,7 +76,7 @@ Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Gehen Sie wie f
    * **[!UICONTROL Immer aktiviert]** Das Tracking dieser URL wird immer aktiviert. Diese Informationen werden gespeichert, sodass das Tracking der URL automatisch aktiviert wird, wenn sie das nächste Mal in einem zukünftigen Nachrichteninhalt erneut angezeigt wird.
    * **[!UICONTROL Nie verfolgt]**: Das Tracking dieser URL wird nie aktiviert. Diese Informationen werden gespeichert, sodass das Tracking der URL automatisch deaktiviert wird, wenn sie in einer zukünftigen Nachricht erneut angezeigt wird.
    * **[!UICONTROL Opt-out]**: Diese URL wird als Opt-out-URL behandelt.
-   * **[!UICONTROL Mirrorseite]**: Diese URL wird als Mirrorseite behandelt.
+   * **[!UICONTROL Mirrorseite]**: Diese URL wird als URL der Mirrorseite behandelt.
 
 1. Zusätzlich können Sie für jede getrackte URL in der Dropdown-Liste der Spalte **[!UICONTROL Kategorie]** eine Kategorie auswählen. Diese Kategorien können in Berichten angezeigt werden, wie z. B. im Bericht **[!UICONTROL URLs und Clickstreams]** (siehe [diesen Abschnitt](../reporting/delivery-reports.md#urls-and-click-streams)). Kategorien werden in einer bestimmten Auflistung definiert: **[!UICONTROL urlCategory]**. Weitere Informationen zum Arbeiten mit Auflistungen finden Sie in [&#x200B; Abschnitt &#x200B;](../config/enumerations.md).
 

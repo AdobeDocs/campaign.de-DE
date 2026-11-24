@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 100%
+source-wordcount: '652'
+ht-degree: 91%
 ---
 # SMS in einer Mid-Sourcing-Infrastruktur {#sms-mid}
 
@@ -50,12 +50,12 @@ Für SMS-Sendungen mit einer Mid-Sourcing-Infrastruktur ist Folgendes erforderli
 
 Sie müssen zunächst eine SMS-Benutzerin oder einen SMS-Benutzer auf dem Mid-Server erstellen, die bzw. der vom externen SMS-Konto auf dem Marketing-Server verwendet wird.
 
-Um einen eine neue SMS-Benutzerin oder einen neuen SMS-Benutzer zu erstellen, gehen Sie wie folgt vor:
+Gehen Sie wie folgt vor, um Ihren SMS-Benutzer zu erstellen:
 
 1. Klicken Sie unter **[!UICONTROL Administration]** > **[!UICONTROL Zugriffsverwaltung]** > **[!UICONTROL Benutzer]** auf **[!UICONTROL Neu]** und füllen Sie das Formular im neu geöffneten Fenster aus.
 
    * **[!UICONTROL Name (Login)]** und **[!UICONTROL Titel]** sind obligatorisch.
-   * Das Kennwort ist nicht obligatorisch, wird aber aus Gründen der Sicherheit dringend empfohlen.
+   * Passwort ist nicht obligatorisch, wird aber aus Sicherheitsgründen dringend empfohlen.
 
    Beachten Sie, dass „Name (Login)“ später verwendet wird, um Ihr externes SMPP-Konto auf dem Mid-Server zu benennen.
 
@@ -78,7 +78,7 @@ Sie können sie bzw. ihn jetzt in der Benutzerliste sehen.
 
 ## Erstellen eines externen SMS-Kontos auf dem Marketing-Server {#sms-external-account}
 
-In einer Mid-Infrastruktur müssen Sie wie unten gezeigt ein externes SMS-Konto auf dem Marketing-Server erstellen
+In einer Mid-Sourcing-Infrastruktur müssen Sie wie unten beschrieben ein externes SMS-Konto auf dem Marketing-Server erstellen
 
 >[!IMPORTANT]
 >
@@ -132,7 +132,7 @@ Gehen Sie dazu wie folgt vor:
 
 ## Konfigurieren der Versandvorlage {#sms-delivery-template}
 
-Um die Erstellung Ihres SMS-Versands zu erleichtern, erstellen Sie eine SMS-Versandvorlage, in der auf alle Ihre Einstellungen verwiesen wird.
+Um die Erstellung Ihres SMS-Versands zu erleichtern, erstellen Sie eine SMS-Versandvorlage, in der alle Ihre Einstellungen referenziert werden.
 
 Klicken Sie auf dem Marketing-Server unter **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Versandvorlagen]** mit der rechten Maustaste auf die vorhandene Mobile-Versandvorlage und wählen Sie **[!UICONTROL Duplizieren]** aus.
 

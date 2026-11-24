@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '972'
 ht-degree: 98%
 ---
 # Personalisierte Gutscheine{#personalized-coupons}
@@ -58,7 +58,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
    ![](assets/deliv_coup_01.png)
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]**.
-1. Geben Sie im **[!UICONTROL Titelfeld]** den Namen des Gutscheins ein. In das Feld **[!UICONTROL Couponcode]** wurde automatisch ein eindeutiger Code eingefügt. Sie können den Code beibehalten oder einen neuen eingeben.
+1. Geben Sie den Namen des Coupons im Feld **[!UICONTROL Titel]** ein. In das Feld **[!UICONTROL Couponcode]** wurde automatisch ein eindeutiger Code eingefügt. Sie können den Code beibehalten oder einen neuen eingeben.
 
    ![](assets/deliv_coup_02.png)
 
@@ -94,7 +94,7 @@ Die Werte für **[!UICONTROL Status]**, **[!UICONTROL Kanal]** und **[!UICONTROL
 
 ## Einfügen eines Gutscheins in einen E-Mail-Versand {#inserting-a-coupon-into-an-email-delivery}
 
-Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Detaillierte Anweisungen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](email.md)
+Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterführende Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](email.md).
 1. Gehen Sie zu **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Sendungen]** aus.
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 

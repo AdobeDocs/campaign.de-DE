@@ -18,10 +18,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 95%
+ht-degree: 71%
 ---
 # Ergebnisse zählen
 
@@ -31,7 +31,7 @@ Die Adobe Campaign REST-API kann die Anzahl der Datensätze in einer Anfrage zä
 
 ***Beispielanfrage***
 
-Um alle Dienste zu zählen, deren **messageType**-Wert &quot;sms&quot; ist, führen Sie eine GET-Anfrage mit dem Filter **byChannel** aus.
+Um alle Services zu zählen, die einen **messageType**-Wert gleich „sms“ haben, führen Sie eine GET-Anfrage mit dem **byChannel**-Filter durch.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \

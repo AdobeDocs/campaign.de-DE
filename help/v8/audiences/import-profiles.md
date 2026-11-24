@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 90%
+ht-degree: 82%
 ---
 # Importieren von Profilen aus einer Datei{#create-profiles}
 
@@ -43,7 +43,7 @@ Um Ihre Campaign-Datenbank zu füllen, können Sie [Profile manuell hinzufügen]
 
 ## Importieren von Profilen mit einem Workflow {#import-profiles-with-a-wf}
 
-Workflows können eine nützliche Möglichkeit darstellen, einige Ihrer Importprozesse zu automatisieren. Sie können Workflows zum Standardisieren ihrer Daten-Management-Prozesse verwenden, egal ob Sie Daten aus einer lokalen Datei oder von SFTP importieren.
+Workflows können eine nützliche Möglichkeit darstellen, einige Ihrer Importprozesse zu automatisieren. Unabhängig davon, ob Sie Daten aus einer lokalen Datei oder aus einem SFTP-Server importieren, können Sie Workflows verwenden, um Ihre Datenverwaltungsverfahren zu standardisieren.
 
 ### Daten aus einer Liste verwenden: Liste lesen {#data-from-read-list}
 

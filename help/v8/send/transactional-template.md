@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 98%
+source-wordcount: '1264'
+ht-degree: 94%
 ---
 # Erstellen und Veröffentlichen einer Vorlagen für Transaktionsnachrichten{#template-transactional-messages}
 
@@ -76,7 +76,7 @@ Die Definition des Inhalts der Transaktionsnachricht entspricht der für alle Se
 >Die in der Nachricht enthaltenen Bilder müssen öffentlich zugänglich sein. Adobe Campaign verfügt über keinen Mechanismus zum Hochladen von Bildern für Transaktionsnachrichten.\
 >Im Gegensatz zu JSSP oder webApp bietet `<%=` keine standardmäßige Escape-Funktion.
 >
->In diesem Fall müssen Sie alle Daten, die aus dem Ereignis stammen, ordnungsgemäß maskieren. Dieses Escape-Sequenz hängt davon ab, wie dieses Feld verwendet wird. Verwenden Sie beispielsweise innerhalb einer URL encodeURIComponent. Für eine Anzeige im HTML-Code, können Sie escapeXMLString verwenden.
+>Sie müssen alle Daten, die aus dem Ereignis stammen, ordnungsgemäß maskieren. Dieses Escape-Sequenz hängt davon ab, wie dieses Feld verwendet wird. Verwenden Sie beispielsweise innerhalb einer URL encodeURIComponent. Für eine Anzeige im HTML-Code, können Sie escapeXMLString verwenden.
 
 Nachdem Sie Ihren Nachrichteninhalt definiert haben, können Sie Ereignisinformationen in den Nachrichtentext integrieren und ihn personalisieren. Ereignisinformationen werden mithilfe von Personalisierungs-Tags in den Text eingefügt.
 
@@ -262,4 +262,4 @@ Nach Abschluss der Aufhebung der Veröffentlichung:
 
 * Nachdem die Veröffentlichung einer Vorlage aufgehoben wurde, können Sie sie löschen<!-- from the control instance-->.
 
-  Wählen Sie dazu die gewünschte Vorlage aus der Liste aus und klicken Sie oben rechts im Bildschirm auf die Schaltfläche **[!UICONTROL Löschen]**.
+  Wählen Sie dazu die gewünschte Vorlage aus der Liste aus und klicken **[!UICONTROL oben rechts]** Bildschirm auf die Schaltfläche „Löschen“.

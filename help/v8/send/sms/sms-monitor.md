@@ -28,20 +28,20 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 71%
 ---
-# Überwachen und Verfolgen von SMS
+# Überwachen und Verfolgen einer SMS
 
-Es ist wichtig, den Versand Ihrer SMS zu überwachen, um die Effizienz Ihrer Marketing-Kampagnen sicherzustellen.
+Es ist wichtig, den SMS-Versand zu überwachen, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind.
 
-Hier sind die Möglichkeiten, wie Sie wissen können, was nach dem Versand geschieht.
+Im Folgenden finden Sie die Möglichkeiten, die Sie wissen müssen, was nach dem Versand Ihres Versands geschieht
 
-## Verstehen des SMS-Versand-Dashboards
+## Das Dashboard des SMS-Versands
 
-Das Versand-Dashboard bietet Ihnen zahlreiche Informationen zu Ihrer SMS.
+Im Versand-Dashboard erhalten Sie viele Informationen zu Ihrer SMS.
 
 Doppelklicken Sie in der Versandliste auf Ihren Versand, um auf das Dashboard zuzugreifen.
 
@@ -59,7 +59,7 @@ Auf der Registerkarte **[!UICONTROL Ausschlüsse]** finden Sie Details dazu, war
 
 ![](assets/sms_exclusions.png){zoomable="yes"}
 
-Auf der Registerkarte **[!UICONTROL Tracking]** finden Sie Informationen zum Tracking. Nachfolgend finden Sie ein Beispiel für eine verfolgte URL im SMS-Inhalt.
+Auf der Registerkarte **[!UICONTROL Tracking]** finden Sie Informationen zum Tracking. Nachfolgend finden Sie ein Beispiel für eine im SMS-Inhalt getrackte URL.
 
 ![](assets/sms_trackinglogs.png){zoomable="yes"}
 

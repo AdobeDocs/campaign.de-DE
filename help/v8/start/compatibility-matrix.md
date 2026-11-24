@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 96%
+ht-degree: 92%
 ---
 # Kompatibilitätsmatrix für Campaign v8 {#compat-matrix}
 
@@ -85,7 +85,7 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign Federated Data Ac
 
 
 >[!AVAILABILITY]
->Darüber hinaus können Sie mit dem [Add-on für verbesserte Sicherheit](../config/enhanced-security.md#secure-vpn-tunneling) über das sichere VPN-Tunneling auf Ihre lokalen Datenbanken zugreifen. [Weitere Informationen](../config/enhanced-security.md)
+>Darüber hinaus können Sie mit dem [Enhanced Security Add-on](../config/enhanced-security.md#secure-vpn-tunneling) über das sichere VPN-Tunneling auf Ihre On-Premise-Datenbanken zugreifen. [Weitere Informationen](../config/enhanced-security.md)
 
 ## Mobile SDK {#MobileSDK}
 

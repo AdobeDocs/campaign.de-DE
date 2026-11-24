@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 97%
+source-wordcount: '943'
+ht-degree: 95%
 ---
 # Erfasste Daten veröffentlichen, tracken und verwenden{#publish-track-and-use-collected-data}
 
@@ -35,7 +35,7 @@ ht-degree: 97%
 
 
 
-Nachdem das Formular erstellt, konfiguriert und veröffentlicht wurde, können Sie den Link mit Ihrer Zielgruppe teilen und die Antworten tracken.
+Nachdem das Formular erstellt, konfiguriert und veröffentlicht wurde, können Sie den Link für Ihre Audience freigeben und die Antworten verfolgen.
 
 >[!NOTE]
 >

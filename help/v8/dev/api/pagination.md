@@ -18,10 +18,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 100%
+source-wordcount: '161'
+ht-degree: 88%
 ---
 # Paginierung
 
@@ -70,7 +70,7 @@ Antwort auf die Anfrage, wobei der Knoten **Nächste** die Paginierung ausführt
 }
 ```
 
-Standardmäßig ist der Knoten **Nächste** nicht verfügbar, wenn Tabellen mit einer großen Datenmenge verarbeitet werden. Um die Paginierung auszuführen, müssen Sie den Parameter **_forcePagination=true** zu Ihrer Aufruf-URL hinzufügen.
+Standardmäßig ist der Knoten **next** bei der Interaktion mit Tabellen mit einer großen Datenmenge nicht verfügbar. Um die Paginierung auszuführen, müssen Sie den Parameter **_forcePagination=true** zu Ihrer Aufruf-URL hinzufügen.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_forcePagination=true \

@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 96%
+ht-degree: 92%
 ---
 # Senden und Überwachen Ihrer E-Mails  {#send-and-monitor-emails}
 
@@ -92,11 +92,11 @@ Domain Keys Identified Mail (DKIM) ist eine Authentifizierungsmethode, mit der g
 
 In Adobe Campaign wird die DKIM-E-Mail-Authentifizierungssignatur vom MTA durchgeführt.
 
-Im [Handbuch von Adobe zu Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication){target="_blank"} erfahren Sie mehr über DKIM.
+Weitere Informationen zu DKIM finden Sie im [Handbuch von Adobe mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication){target="_blank"}.
 
 ## E-Mail-Feedback-Service {#email-feedback-service}
 
-Der E-Mail-Feedback-Service (EFS) von Campaign meldet den Status jedes mit Adobe Campaign gesendeten E-Mail-Versands.
+Der Campaign Email Feedback Service (EFS) zeigt den Status jedes mit Adobe Campaign gesendeten E-Mail-Versands an.
 
 Nachdem der Versand gestartet wurde, ändert sich der **[!UICONTROL Erfolgsprozentsatz]** nicht, wenn die Nachricht erfolgreich von Campaign an den MTA weitergeleitet wurde. Die Versandlogs zeigen für jede Zieladresse den Status **[!UICONTROL Vom Dienstleister berücksichtigt]** an.
 
@@ -123,5 +123,5 @@ Die nachstehende Tabelle zeigt, wie die Status der KPIs und Versandlogs bei jede
 | Nachricht wird erfolgreich von Campaign an den MTA weitergeleitet | **[!UICONTROL Erfolgsprozentsatz]** wird nicht angezeigt (beginnt bei 0 %) | Vom Dienstleister berücksichtigt |
 | Hardbounces werden vom MTA zurückgemeldet. | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Fehlgeschlagen |
 | Softbounces werden vom MTA zurückgemeldet. | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Vom Dienstleister berücksichtigt |
-| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend erhöht | Gesendet |
+| Softbounce-Nachrichtenwiederholungen sind erfolgreich | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend erhöht | Gesendet |
 | Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, schlagen fehl | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Fehlgeschlagen |

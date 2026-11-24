@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2497'
-ht-degree: 99%
+ht-degree: 96%
 ---
 # Hinzufügen von Feldern zu einem Web-Formular{#adding-fields-to-a-web-form}
 
@@ -88,11 +88,11 @@ Um ein Eingabefeld hinzuzufügen, wählen Sie die Schaltfläche **[!UICONTROL Ei
 
 Auf einer Formularseite können fünf Typen von Textfeldern eingefügt werden:
 
-* **Text**: ermöglicht dem Benutzer die Texteingabe in einer einzigen Zeile.
+* **Text**: ermöglicht die Eingabe von Text in einer Zeile.
 
   ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Zahl**: ermöglicht dem Benutzer die Zahleneingabe in einer einzigen Zeile. Weitere Informationen hierzu finden Sie im Abschnitt [Zahlen hinzufügen](#adding-numbers).
+* **Zahl**: ermöglicht dem Benutzer die Zahleneingabe in einer einzigen Zeile. Weitere Informationen hierzu finden Sie unter [&#x200B; von Zahlen](#adding-numbers).
 
   Bei der Validierung der Seite wird der Feldinhalt geprüft, um sicherzugehen, dass der eingegebene Wert mit dem Feld kompatibel ist. Weiterführende Informationen finden Sie unter [Kontrolleinstellungen definieren](form-rendering.md#defining-control-settings).
 
@@ -233,7 +233,7 @@ Um Radiobuttons über eine Liste hinzuzufügen, gehen Sie in der Symbolleiste de
 
 ![](assets/s_ncs_admin_survey_radio_button_sample2.png)
 
-Fügen Sie so viele Optionsfelder wie Titel hinzu. Der Vorteil dieser Funktion liegt darin, dass Sie Werte aus einem vorhandenen Feld importieren können (im Fall eines Auflistungsfelds) und Benutzende aus diesen eine Option auswählen können. Das Layout der Felder ist jedoch weniger flexibel.
+Fügen Sie so viele Optionsfelder wie Titel hinzu. Der Vorteil dieser Funktion besteht darin, dass Sie Werte aus einem vorhandenen Feld importieren können (bei Einzelfeldern) und es dem Benutzer ermöglichen, eine Option auszuwählen. Das Layout der Felder ist jedoch weniger flexibel.
 
 >[!NOTE]
 >
@@ -350,7 +350,7 @@ Mit **Captcha**-Tests können Sie verhindern, dass Ihre Webformulare missbräuch
 >
 >Wenn Ihr Formular mehrere Seiten umfasst, muss das Captcha immer auf der letzten Seite unmittelbar vor der Komponente &quot;Speicherung&quot; platziert werden, um eine Umgehung der Sicherheitsmaßnahmen zu verhindern.
 
-Um ein Captcha in ein Formular einzufügen, wählen Sie in der Symbolleiste die erste Schaltfläche und danach **[!UICONTROL Erweiterte Steuerelemente > Captcha]** aus.
+Um ein Captcha in ein Formular einzufügen, klicken Sie auf die erste Schaltfläche in der Symbolleiste und wählen Sie **[!UICONTROL Erweiterte Einstellungen > Captcha]** aus.
 
 ![](assets/s_ncs_admin_survey_add_captcha.png)
 

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 99%
+source-wordcount: '763'
+ht-degree: 90%
 ---
 # Zusätzliche Vorgänge {#additional-operations}
 
@@ -108,7 +108,7 @@ Um die Metadaten eines Filters und die jeweilige Verwendungsweise zu ermitteln, 
 
 ***Beispielanfrage***
 
-Die folgenden beispielhaften Payloads zeigen, wie die &quot;byText&quot;-Filtermetadaten für die &quot;Profil&quot;-Ressource abgerufen werden. Führen Sie zuerst eine GET-Anfrage für die Metadaten der Ressource &quot;Profil&quot; durch.
+Die folgenden beispielhaften Payloads zeigen, wie die &quot;byText&quot;-Filtermetadaten für die &quot;Profil&quot;-Ressource abgerufen werden. Führen Sie zunächst eine GET-Anfrage zu den Ressourcenmetadaten „Profil“ aus.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
@@ -243,7 +243,7 @@ in den Feldern „E-Mail“ oder „Nachname“ enthalten (der Filter „byText�
   }
   ```
 
-* Beispielhafte GET-Anfrage zum Abrufen der &quot;Dienst&quot;-Ressourcen mit dem Typ &quot;email&quot; und dem Titel &quot;sport&quot;.
+* Beispielhafte GET-Anfrage zum Abrufen der Service-Ressourcen mit dem Typ „email“ und der Bezeichnung „sport“.
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/byText?channel=email&text=sport \
@@ -354,7 +354,7 @@ Die Adobe Campaign REST-API kann die Anzahl der Datensätze in einer Anfrage zä
 
 ***Beispielanfrage***
 
-Um alle Dienste zu zählen, deren **messageType**-Wert &quot;sms&quot; ist, führen Sie eine GET-Anfrage mit dem Filter **byChannel** aus.
+Um alle Services zu zählen, die einen **messageType**-Wert gleich „sms“ haben, führen Sie eine GET-Anfrage mit dem **byChannel**-Filter durch.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \
@@ -450,7 +450,7 @@ Antwort auf die Anfrage, wobei der Knoten **Nächste** die Paginierung ausführt
 }
 ```
 
-Standardmäßig ist der Knoten **Nächste** nicht verfügbar, wenn Tabellen mit einer großen Datenmenge verarbeitet werden. Um die Paginierung auszuführen, müssen Sie den Parameter **_forcePagination=true** zu Ihrer Aufruf-URL hinzufügen.
+Standardmäßig ist der Knoten **next** bei der Interaktion mit Tabellen mit einer großen Datenmenge nicht verfügbar. Um die Paginierung auszuführen, müssen Sie den Parameter **_forcePagination=true** zu Ihrer Aufruf-URL hinzufügen.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_forcePagination=true \

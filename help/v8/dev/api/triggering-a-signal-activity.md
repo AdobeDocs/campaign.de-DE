@@ -22,20 +22,20 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 84%
 ---
 # Auslösen einer Signalaktivität {#triggering-a-signal-activity}
 
 In einem Adobe Campaign Standard-Workflow kann es eine oder mehrere **externe Signalaktivitäten** geben. Bei diesen Aktivitäten handelt es sich um &quot;Listener&quot;, die auf ihre Auslösung warten.
 
-Mit Campaign Standard-APIs können Sie eine **externe Signalaktivität** auslösen, um einen Workflow aufzurufen. Der API-Aufruf kann Parameter enthalten, die in die Ereignisvariablen des Workflows aufgenommen werden (Name der auszuwählenden Zielgruppe, zu importierender Dateiname, Teil des Nachrichteninhalts usw.). Auf diese Weise lassen sich Ihre automatisch durchgeführten Campaign-Prozesse einfach mit einem externen Datensystem integrieren.
+Mit Campaign Standard-APIs können Sie eine **externe Signalaktivität** auslösen, um einen Workflow aufzurufen. Der API-Aufruf kann Parameter enthalten, die in die Ereignisvariablen des Workflows aufgenommen werden (einen Zielgruppennamen, einen zu importierenden Dateinamen, einen Teil des Nachrichteninhalts usw.). Auf diese Weise lassen sich Ihre automatisch durchgeführten Campaign-Prozesse einfach mit einem externen Datensystem integrieren.
 
 >[!NOTE]
 >
->Externe Signalaktivitäten können nicht öfter als alle zehn Minuten ausgelöst werden und der Ziel-Workflow muss bereits ausgeführt werden.
+>Externe Signalaktivitäten können nicht öfter als alle 10 Minuten ausgelöst werden, und der Ziel-Workflow muss bereits ausgeführt werden.
 
 Gehen Sie zur Auslösung eines Workflows wie folgt vor:
 

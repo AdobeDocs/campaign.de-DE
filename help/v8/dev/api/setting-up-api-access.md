@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 97%
+ht-degree: 89%
 ---
 # Einrichten von API-Zugriff {#setting-up-api-access}
 
@@ -49,7 +49,7 @@ Der Zugriff auf Adobe Campaign Standard-APIs lässt sich mit den folgenden Schri
 
    >[!IMPORTANT]
    >
-   >JWT (JSON Web Tokens) wird gerade eingestellt und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise in den kommenden Campaign-Versionen. Die Anmeldedaten für das Service-Konto (JWT) wurden als veraltet gekennzeichnet, funktionieren jedoch weiterhin bis zum 27. Januar 2025. Daher müssen Sie Ihre Anwendung oder Integration migrieren, um die neuen OAuth-Server-zu-Server-Anmeldedaten vor dem 27. Januar 2025 zu verwenden. Die OAuth-Authentifizierung wird bevorzugt. Auf diesen Seiten finden Sie alle Elemente, um von der JWT-Authentifizierung zur OAuth-Authentifizierung zu migrieren:
+   >JWT (JSON Web Token) wird derzeit nicht mehr unterstützt und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise in den kommenden Campaign-Versionen. Die Anmeldeinformationen für das Service-Konto (JWT) wurden als veraltet gekennzeichnet. Sie funktionieren weiterhin bis zum 27. Januar 2025. Daher müssen Sie Ihre Anwendung oder Integration migrieren, um die neuen OAuth-Server-zu-Server-Anmeldedaten vor dem 27. Januar 2025 zu verwenden. Die OAuth-Authentifizierung wird bevorzugt. Auf diesen Seiten finden Sie alle Elemente, um von der JWT-Authentifizierung zur OAuth-Authentifizierung zu migrieren:
    >* [Migration](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
    >* [Umsetzung](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
    >* [Häufig gestellte Fragen zur Einstellung von JWT](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)

@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 56%
+source-wordcount: '120'
+ht-degree: 55%
 ---
 # Erweiterte Einstellungen des Interaction-Moduls
 
@@ -33,7 +33,7 @@ Erfahren Sie auf dieser Seite , wie Sie zusätzliche kontextuelle Daten [&#x200B
 
 Erfahren Sie (auf dieser Seite), wie Sie [&#x200B; Eignungskriterien Ihrer Angebote &#x200B;](extension-example.md).
 
-Erfahren Sie auf dieser Seite mehr über [&#x200B; Erstellung einer Testumgebung](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html?lang=de){target="_blank"}.
+Erfahren Sie auf dieser Seite mehr über [&#x200B; Erstellen einer Testumgebung](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html?lang=de){target="_blank"}.
 
 Erfahren Sie auf dieser Seite , wie Sie mithilfe von Erweiterungspunkten das Standardverhalten [&#x200B; Angebotsmoduls &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html?lang=de){target="_blank"}.
 

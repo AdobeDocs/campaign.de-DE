@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 84%
+source-wordcount: '351'
+ht-degree: 78%
 ---
 # Erste Schritte mit dem Campaign-HTML-Editor{#about-campaign-html-editor}
 
@@ -68,7 +68,7 @@ Allgemein gilt:
 Um eine einfache **Web-Anwendung** zu erstellen, müssen Sie folgende Schritte ausführen:
 
 1. Web-Anwendung erstellen – [Weitere Informationen](creating-a-landing-page.md)
-1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer Standardvorlage – [Weitere Informationen](template-management.md).
+1. Auswählen vorhandener Inhalte oder Erstellen von Inhalten aus einer Standardvorlage - [Weitere Informationen](template-management.md)
 1. Inhalt bearbeiten und konfigurieren – [Weitere Informationen](editing-content.md)
 1. Web-Anwendung veröffentlichen – [Weitere Informationen](creating-a-landing-page.md#step-3---publishing-content)
 
@@ -79,7 +79,7 @@ Um eine einfache **Web-Anwendung** zu erstellen, müssen Sie folgende Schritte a
 Um einen **E-Mail-Versand** zu erstellen, müssen Sie folgende Schritte ausführen:
 
 1. Versand aus einer DCE-Vorlage erstellen – [Weitere Informationen](use-case-creating-an-email-delivery.md)
-1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer [Standardvorlage](template-management.md).
+1. Auswählen vorhandener Inhalte oder Erstellen von Inhalten aus einer [Standardvorlage](template-management.md)
 1. Bearbeiten und konfigurieren Sie den Online-Inhalt.
 1. Führen Sie den Versand durch. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}
 

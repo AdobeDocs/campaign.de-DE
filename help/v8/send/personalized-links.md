@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 51%
+ht-degree: 48%
 ---
 # Nachverfolgen von personalisierten Links {#tracking-personalized-links}
 
@@ -36,7 +36,7 @@ Die Links in E-Mail-Inhalten, die eine Personalisierung enthalten, benötigen ei
 
 Durch die Verwendung von JavaScript in E-Mail-Inhalten (HTML oder Text) können Sie dynamische Inhalte mit zwei Einschränkungen generieren und an die Empfänger senden:
 
-* Das Script kann nicht direkt auf die Datenbank zugreifen (SQL-Funktion und API-Funktionen sind nicht verfügbar),
+* Das Skript kann nicht direkt auf die Datenbank zugreifen (SQL-Funktionen und API-Funktionen sind nicht verfügbar),
 * Adobe Campaign muss in der Lage sein, URLs zu erkennen, damit Links verfolgt werden können.
 
 ## Anweisungen zur Vorab-Bearbeitung {#pre-processing-instructions}

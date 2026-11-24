@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3510'
-ht-degree: 99%
+source-wordcount: '3509'
+ht-degree: 98%
 ---
 # Filterbedingungen definieren{#filter-conditions}
 
@@ -78,7 +78,7 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
   <tr> 
    <td> <span class="uicontrol">Ungleich</span> <br /> </td> 
    <td> Die ausgegebenen Daten unterscheiden sich vom angegebenen Wert.<br /> </td> 
-   <td> <strong>Sprache (@language) ungleich 'Englisch'</strong>.<br /> </td> 
+   <td> <strong>Sprache (@language) ist nicht gleich 'Englisch'</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Beginnt mit</span> <br /> </td> 
@@ -185,7 +185,7 @@ Die Klammern um die Bedingung **[!UICONTROL Geschlecht (@gender) gleich Männlic
 
 Je nach Tabelle stehen verschiedene Felder zur Verfügung. Alle Felder sind in einem **[!UICONTROL Hauptelement]** genannten Knoten gespeichert. Die Felder in unten stehendem Beispiel stammen aus der Empfängertabelle (nms:recipient). Die Anzeige erfolgt jeweils in alphabetischer Reihenfolge.
 
-Unten im Fenster werden weitere Details zum ausgewählten Feld angezeigt. So handelt es sich beispielsweise beim Feld **[!UICONTROL E-Mail-Domain]** um ein **[!UICONTROL Berechnetes SQL-Feld]** mit der Erweiterung **[!UICONTROL (@domain)]**.
+Die Details des ausgewählten Felds werden unten im Fenster angezeigt. So handelt es sich beispielsweise beim Feld **[!UICONTROL E-Mail-Domain]** um ein **[!UICONTROL Berechnetes SQL-Feld]** mit der Erweiterung **[!UICONTROL (@domain)]**.
 
 ![](assets/query_editor_nveau_59.png)
 
@@ -323,7 +323,7 @@ Klicken Sie zum Entfernen des Felds auf das rote Kreuz (**[!UICONTROL Berechnete
 
 ## Ausdrücke erstellen {#building-expressions}
 
-Der Ausdruckseditor dient der Berechnung von Aggregaten, der Erstellung von Funktionen oder der Bearbeitung von Formeln von einem Ausdruck ausgehend.
+Mit dem Ausdrucksbearbeitungs-Tool können Sie Aggregate berechnen, Funktionen generieren oder eine Formel mithilfe eines Ausdrucks bearbeiten.
 
 Folgendes Beispiel zeigt die Erstellung eines Ausdrucks zum Zählen eines Primärschlüssels.
 
@@ -510,7 +510,7 @@ Er ermöglicht es Ihnen, Felder in den Datenbanktabellen auszuwählen und ihnen 
   </tr> 
   <tr> 
    <td> <strong>Md5Digest</strong><br /> </td> 
-   <td> Gibt eine hexadezimale Darstellung des MD5-Schlüssels eines Strings aus<br /> </td> 
+   <td> Gibt eine hexadezimale Darstellung des MD5-Schlüssels einer Zeichenfolge zurück<br /> </td> 
    <td> Md5Digest(&lt;String&gt;)<br /></td> 
   </tr> 
   <tr> 

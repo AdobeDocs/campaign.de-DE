@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 82%
+source-wordcount: '489'
+ht-degree: 74%
 ---
 # Wozu dienen Campaign Standard-APIs {#why-using-campaign-standard-apis}
 
@@ -48,7 +48,7 @@ Diese werden mit folgenden Elementen erstellt:
 
    ![Alternativtext](assets/apis_uc1.png)
 
-1. Benutzerdefinierte Aktionen, die je nach Kontrollkästchen ausgeführt werden. Wenn ein Kunde „E-Mail-Sonderangebote“ auswählt, wird ihm eine andere benutzerdefinierte E-Mail mit einem Geschenkgutschein als bei der normalen Registrierung gesendet.
+1. Benutzerdefinierte Aktionen, die je nach Kontrollkästchen ausgeführt werden. Wenn ein Kunde „E-Mail-Sonderangebote“ auswählt, wird ihm im Vergleich zum normalen Registrierungsprozess eine andere benutzerdefinierte E-Mail mit einem Geschenkgutschein gesendet.
 
    ![Alternativtext](assets/apis_uc2.png)
 
@@ -58,7 +58,7 @@ Diese werden mit folgenden Elementen erstellt:
 
 Es stehen verschiedene Anfragen zur Verfügung, die Ihnen dabei helfen, sich mit den Anfragen der Campaign Standard-APIs vertraut zu machen. Diese Sammlung im JSON-Format besteht aus vordefinierten API-Anfragen, die gängige Anwendungsfälle repräsentieren.
 
-Im folgenden Anwendungsbeispiel werden die Schritte zum Importieren und Verwenden der Sammlung zur Erstellung eines Profils in der Campaign Standard-Datenbank beschrieben.
+In den folgenden Schritten wird ein Anwendungsfall schrittweise beschrieben, in dem Sie die Sammlung importieren und zum Erstellen eines Profils in der Campaign Standard-Datenbank verwenden.
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Im folgenden Anwendungsbeispiel werden die Schritte zum Importieren und Verwende
 
    ![Alternativtext](assets/postman_uc2.png)
 
-1. Nach dem Erstellen eines Objekts wird diesem ein Primärschlüssel (Pkey) zugeordnet. Er wird in der Antwort auf die Anfrage sowie in anderen Attributen angezeigt.
+1. Nachdem ein Objekt erstellt wurde, wird ihm ein Primärschlüssel (PKey) zugeordnet. Er wird in der Antwort auf die Anfrage sowie in anderen Attributen angezeigt.
 
    ![Alternativtext](assets/postman_uc3.png)
 

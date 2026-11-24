@@ -26,10 +26,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 94%
+ht-degree: 88%
 ---
 # Federated Data Access (FDA){#gs-fda}
 
@@ -62,7 +62,7 @@ Beachten Sie außerdem die folgenden Einschränkungen und Best Practices:
 
   >[!CAUTION]
   >
-  >Diese Option verbessert die Performance beim Ausführen des Personalisierungsschritts erheblich.
+  >Diese Option verbessert die Leistung beim Ausführen des Personalisierungsschritts erheblich.
 
 
 ## Verwenden von externen Daten in einem Workflow
@@ -81,7 +81,7 @@ Sie können aus allen oben aufgeführten Workflow-Aktivitäten auch direkt eine 
 
 >[!CAUTION]
 >
->Diese Art der Konfiguration darf nur temporär zur Sammlung von Daten verwendet werden. Die Konfiguration externer Konten sollte für jede andere Verwendung bevorzugt werden.
+>Diese Art der Konfiguration darf nur vorübergehend verwendet werden, um Daten zu erfassen. Die Konfiguration externer Konten sollte für jede andere Verwendung bevorzugt werden.
 
 Beispielsweise können Sie in der Aktivität **[!UICONTROL Abfrage]** eine temporäre Verbindung zu einer externen Datenbank wie folgt definieren:
 
@@ -92,5 +92,5 @@ Beispielsweise können Sie in der Aktivität **[!UICONTROL Abfrage]** eine tempo
 1. Wählen Sie die Tabelle aus, in der die Daten gespeichert sind. Sie können den Namen der Tabelle direkt in das entsprechende Feld eingeben oder auf das Bearbeiten-Symbol klicken, um eine Liste mit Datenbanktabellen zu öffnen.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um ein oder mehrere Abstimmungsfelder zwischen den Daten der externen Datenbank und den Daten in der Adobe Campaign-Datenbank zu definieren. Über die Symbole **[!UICONTROL Ausdruck bearbeiten]** der Option **[!UICONTROL Remote-Feld]** und **[!UICONTROL Lokales Feld]** erhalten Sie Zugriff auf die Liste mit den Feldern einer jeden Tabelle.
 1. Spezifizieren Sie nötigenfalls eine Filterbedingung und den Datensortierungsmodus.
-1. Wählen Sie zusätzlich in der externen Datenbank zu sammelnden Daten aus. Doppelklicken Sie dazu auf die Felder, die Sie hinzufügen möchten, damit sie in den **[!UICONTROL Ausgabespalten]** angezeigt werden.
+1. Wählen Sie zusätzlich in der externen Datenbank zu sammelnden Daten aus. Doppelklicken Sie dazu auf die Felder, die Sie hinzufügen möchten, um sie in den „Ausgabespalten **[!UICONTROL anzuzeigen]**.
 1. Klicken Sie zur Bestätigung der Konfiguration auf **[!UICONTROL Beenden]**.

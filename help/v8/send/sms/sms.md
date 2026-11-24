@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 92%
+source-wordcount: '188'
+ht-degree: 84%
 ---
 # Erste Schritte mit SMS {#gs-sms-channel}
 
@@ -40,7 +40,7 @@ Verwenden Sie Adobe Campaign, um Textnachrichten an die Mobilgeräte Ihrer Kundi
 Um SMS mit Adobe Campaign an Mobilgeräte zu senden, benötigen Sie Folgendes:
 
 * Ein externes Konto, das für den Kanal **[!UICONTROL Mobiltelefon (SMS)]** konfiguriert wurde. Erfahren Sie, wie Sie den SMS-Kanal in Ihrer [Mid-Sourcing-Infrastruktur](sms-mid-sourcing.md) konfigurieren. Für diese Konfiguration müssen Sie die [Parameter des externen SMPP-Kontos](smpp-external-account.md) und die [Merkmale des SMS-Kanals](sms-channel.md) kennen.
-Überprüfen Sie nach dieser Einrichtung Ihre SMPP-Verbindung und informieren Sie sich, wie Sie bei Bedarf Fehler beheben können. [Weitere Informationen](smpp-connection.md).
+Überprüfen Sie nach dieser Einrichtung Ihre SMPP-Verbindung und erfahren Sie, wie Sie bei Bedarf Fehler beheben können. [Weitere Informationen](smpp-connection.md).
 
 * Eine SMS-Versandvorlage, die korrekt mit diesem externen Konto verknüpft ist.
 
@@ -55,7 +55,7 @@ Adobe Campaign unterstützt zwei SMS-Connectoren, die zum Senden von SMS-Nachric
 <a href="create-sms.md">
 <img alt="SMS erstellen" src="../../assets/do-not-localize/sms-sending.jpg">
 </a>
-<div><a href="create-sms.md"><strong>SMS-Versand erstellen</strong>
+<div><a href="create-sms.md"><strong>Erstellen eines SMS-Versands</strong>
 </div>
 <p>
 </td>

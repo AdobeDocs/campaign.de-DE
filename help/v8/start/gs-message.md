@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 91%
+ht-degree: 90%
 ---
 # Erste Schritte mit Nachrichten {#gs-ac-msg}
 
@@ -123,7 +123,7 @@ Wiederkehrende Sendungen werden über Workflows mit der Aktivität [&#128279;](.
 
 Ein **fortlaufender Versand** ist im Kontext eines Workflows verfügbar. Mit diesem Versandtyp können Sie einem bestehenden Versand neue Empfangende hinzufügen, sodass Sie nicht jedes Mal einen neuen Versand erstellen müssen.
 
-Wenn sich eine Information im Versand ändert (Inhalt, Name usw.), wird bei der Versandausführung ein neues Versandobjekt erstellt. Wenn keine Informationen geändert wurden, wird dasselbe Versandobjekt wiederverwendet und die Versand- und Trackinglogs werden in demselben Objekt hinzugefügt.
+Wenn sich Informationen im Versand ändern (Inhalt, Name usw.), wird bei der Versandausführung ein neues Versandobjekt erstellt. Wenn keine Informationen geändert wurden, wird dasselbe Versandobjekt wiederverwendet und die Versand- und Trackinglogs werden in demselben Objekt hinzugefügt.
 
 Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das eine einzige Sendung im Jahr (vorausgesetzt Sie haben am Versand keine Änderung vorgenommen).
 
@@ -142,6 +142,6 @@ Sie haben folgende Möglichkeiten:
 
 ## Tracking und Monitoring {#gs-tracking-logs}
 
-Die Überwachung Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen. Sie können nach dem Versand überwachen sowie nachvollziehen, wie Zustellungsfehler und Quarantänen gehandhabt werden.
+Das Monitoring Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen. Sie können nach dem Versand überwachen sowie nachvollziehen, wie Zustellungsfehler und Quarantänen gehandhabt werden.
 
 Erfahren Sie, wie [&#x200B; Sendungen verfolgen und überwachen](../send/tracking.md)

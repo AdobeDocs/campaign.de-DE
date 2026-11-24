@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 97%
+ht-degree: 93%
 ---
 # Verwenden von Cubes zur Datenanalyse{#use-cubes-to-create-reports}
 
@@ -114,7 +114,7 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
    ![](assets/cube-measure-button.png)
 
-1. Wählen Sie mit der Schaltfläche **[!UICONTROL Kennzahl verwenden]** eine der vorhandenen Kennzahlen aus.
+1. Wählen Sie mit **[!UICONTROL Schaltfläche Kennzahl verwenden]** eine der vorhandenen Kennzahlen aus.
 
    ![](assets/cube-add-measure.png)
 
@@ -152,7 +152,7 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
 ## Erstellen einer Zielpopulation {#build-a-target-population}
 
-Die basierend auf Cubes erstellten Berichte ermöglichen den Abruf von Daten aus der Tabelle und deren Speicherung in einer Liste.
+Mithilfe von Cubes erstellte Berichte ermöglichen es Ihnen, Daten aus der Tabelle zu erfassen und in einer Liste zu speichern.
 
 Gehen Sie wie folgt vor, um eine Population in einer Liste zu gruppieren:
 
@@ -160,7 +160,7 @@ Gehen Sie wie folgt vor, um eine Population in einer Liste zu gruppieren:
 
    ![](assets/cube-add-to-cart.png)
 
-   Wiederholen Sie diesen Vorgang so oft wie nötig, um die unterschiedlichen Profile zu sammeln.
+   Wiederholen Sie diesen Vorgang so oft wie nötig, um verschiedene Profile zu erfassen.
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Warenkorb anzeigen]**, um den Inhalt einzusehen, bevor er exportiert wird.
 

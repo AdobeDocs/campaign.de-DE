@@ -40,23 +40,23 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 97%
+source-wordcount: '600'
+ht-degree: 64%
 ---
 # Schlüsselverwaltung und Eindeutigkeit {#key-management}
 
 Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ist der Primärschlüssel ein Universally Unique IDentifier (UUID), d. h. eine Zeichenfolge. Um diese UUID zu erstellen, muss das Hauptelement des Schemas die Attribute **autouid** und **autopk** enthalten, die auf **true** gesetzt sind.
 
-Adobe Campaign v8 verwendet [!DNL Snowflake] als Hauptdatenbank. Die verteilte Architektur der [!DNL Snowflake]-Datenbank bietet keine Mechanismen zur Gewährleistung der Eindeutigkeit eines Schlüssels in einer Tabelle. Die Endbenutzer sind dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen.
+Adobe Campaign v8 verwendet [!DNL Snowflake] als Hauptdatenbank. Die verteilte Architektur der [!DNL Snowflake] bietet keine Mechanismen zur Gewährleistung der Eindeutigkeit eines Schlüssels in einer Tabelle. Die Endbenutzer sind dafür verantwortlich, die Konsistenz der Schlüssel in der Adobe Campaign-Datenbank sicherzustellen.
 
-Die Vermeidung von Duplikaten bei Schlüsseln, insbesondere bei Primärschlüsseln, ist zur Wahrung der relationalen Datenbankkonsistenz unverzichtbar. Duplikate bei Primärschlüsseln führen zu Problemen mit Workflow-Aktivitäten für die Datenverwaltung, wie der **Abfrage**, der **Abstimmung**, dem **Daten-Update** und anderen. Dies ist entscheidend für die Definition geeigneter Abstimmbedingungen bei der Aktualisierung von [!DNL Snowflake]-Tabellen.
+Die Vermeidung von Duplikaten bei Schlüsseln, insbesondere bei Primärschlüsseln, ist zur Wahrung der relationalen Datenbankkonsistenz unverzichtbar. Duplikate bei Primärschlüsseln führen zu Problemen mit Workflow-Aktivitäten für die Datenverwaltung, wie der **Abfrage**, der **Abstimmung**, dem **Daten-Update** und anderen. Dies ist entscheidend für die Definition geeigneter Abstimmkriterien bei der Aktualisierung [!DNL Snowflake] Tabellen.
 
 
 >[!CAUTION]
 >
->Duplizierte Schlüssel sind nicht auf UUIDs beschränkt. Duplikate können bei IDs auftreten, einschließlich benutzerdefinierter Schlüssel, die in benutzerdefinierten Tabellen erstellt werden.
+>Duplizierte Schlüssel sind nicht auf UUIDs beschränkt. Dies kann mit IDs passieren, einschließlich benutzerdefinierter Schlüssel, die in benutzerdefinierten Tabellen erstellt werden.
 
 
 ## Unicity Service{#unicity-service}
@@ -90,7 +90,7 @@ Wenn doppelte Schlüssel erkannt werden, wird eine bestimmte Benachrichtigung an
 
 ## Zusätzliche Schutzmaßnahmen {#duplicates-guardrails}
 
-Campaign verfügt über eine Reihe neuer Schutzmaßnahmen, um das Einfügen eines doppelten Schlüssels in die [!DNL Snowflake]-Datenbank zu verhindern.
+Campaign verfügt über eine Reihe neuer Schutzmaßnahmen, um das Einfügen doppelter Schlüssel in die [!DNL Snowflake]-Datenbank zu verhindern.
 
 >[!NOTE]
 >
@@ -98,19 +98,19 @@ Campaign verfügt über eine Reihe neuer Schutzmaßnahmen, um das Einfügen eine
 
 ### Versandvorbereitung {#remove-duplicates-delivery-preparation}
 
-Adobe Campaign entfernt während der Versandvorbereitung automatisch jede doppelte UUID aus einer Zielgruppe. Dieser Mechanismus verhindert, dass bei der Vorbereitung eines Versands ein Fehler auftritt. Als Endbenutzer können Sie diese Informationen in den Versandlogs überprüfen. Manche Empfänger können wegen eines doppelten Schlüssels aus der Hauptzielgruppe ausgeschlossen werden. In diesem Fall wird folgender Warnhinweis angezeigt: `Exclusion of duplicates (based on the primary key or targeted records)`.
+Adobe Campaign entfernt während der Versandvorbereitung automatisch jede doppelte UUID aus einer Zielgruppe. Dieser Mechanismus verhindert, dass bei der Vorbereitung eines Versands ein Fehler auftritt. Als Endbenutzer können Sie diese Informationen in den Versandlogs überprüfen: Einige Empfänger können aufgrund doppelter Schlüssel aus der Hauptzielgruppe ausgeschlossen werden. In diesem Fall wird folgender Warnhinweis angezeigt: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
 ![](assets/exclusion-duplicates-log.png)
 
 ### Aktualisieren von Daten in einem Workflow {#duplicates-update-data}
 
-Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) können Sie keinen internen Schlüssel (UUID) als Feld auswählen, um Daten in einem Workflow zu aktualisieren.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung &#x200B;](enterprise-deployment.md) Sie keinen internen Schlüssel (UUID) als Feld auswählen, um Daten in einem Workflow zu aktualisieren.
 
 ![](assets/update-data-no-internal-key.png)
 
 ### Abfrage eines Schemas mit Duplikaten {#query-with-duplicates}
 
-Wenn ein Workflow eine Abfrage zu einem Schema startet, prüft Adobe Campaign, ob ein doppelter Eintrag in der Tabelle [Audit Unicity](#unicity-wf) gefunden wird. In diesem Fall protokolliert der Workflow eine Warnung, da der nachfolgende Vorgang mit den doppelten Daten möglicherweise das Workflow-Ergebnis beeinflusst.
+Wenn ein Workflow mit der Ausführung einer Abfrage eines Schemas beginnt, prüft Adobe Campaign, ob ein doppelter Eintrag in der [Audit-Unicity-Tabelle) &#x200B;](#unicity-wf). In diesem Fall protokolliert der Workflow eine Warnung, da der nachfolgende Vorgang mit den duplizierten Daten möglicherweise das Workflow-Ergebnis beeinflusst.
 
 ![](assets/query-with-duplicates.png)
 
@@ -123,4 +123,4 @@ Diese Prüfung wird in den folgenden Workflow-Aktivitäten durchgeführt:
 
 >[!NOTE]
 >
->Wenn Sie von einer anderen Campaign-Version wechseln, ist es unbedingt erforderlich, Duplikate zu entfernen, Probleme zu beheben und Daten zu bereinigen, um Beeinträchtigungen bei diesem Wechsel zu vermeiden.
+>Wenn Sie von einer anderen Campaign-Version wechseln, müssen Sie unbedingt Duplikate entfernen, Fehler beheben und Daten bereinigen, um eine Beeinträchtigung Ihrer Umstellung zu vermeiden.

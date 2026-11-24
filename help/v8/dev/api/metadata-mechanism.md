@@ -25,14 +25,14 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 100%
+ht-degree: 78%
 ---
 # Metadatenmechanismus {#metadata-mechanism}
 
-Sie können die Metadaten von Ressourcen mit **resourceType** in einer GET-Anfrage abrufen:
+Sie können die Ressourcenmetadaten mit „resourceType **in** GET-Anfrage abrufen:
 
 `GET /profileAndServices/resourceType/<resourceName>`
 
@@ -44,12 +44,12 @@ In der Antwort werden die Hauptmetadaten der Ressource zurückgegeben (alle ande
   * &quot;type&quot;: Dies ist die übergeordnete Typdefinition (Zeichenfolge, Zahl, Link, Sammlung, Aufzählung...).
   * &quot;dataPolicy&quot;: Der Wert des Felds muss den angegebenen Regeln entsprechen. Wenn die Regel &quot;dataPolicy&quot; beispielsweise auf &quot;email&quot; gesetzt ist, muss der Wert eine gültige E-Mail-Adresse sein. Während eines PATCH- oder POST-Vorgangs kann &quot;dataPolicy&quot; den Wert überprüfen oder den umzuwandelnden Wert ändern (z. B. smartCase).
   * &quot;category&quot;: Gibt die Kategorie des Felds im Abfrage-Editor an.
-  * &quot;resType&quot;: Dies ist der technische Typ.
+  * „resType“: Dies ist der technische Typ.
 
     Wenn &quot;type&quot; mit dem Wert &quot;link&quot; oder &quot;collection&quot; ausgefüllt wird, ist der resTarget-Wert der Name der Ressource, auf die der Link abzielt.
-    Wenn &quot;type&quot; mit dem Wert &quot;enumeration&quot; ausgefüllt wird, wird ein Feld &quot;values&quot; hinzugefügt und jeder Aufzählungswert im Knoten **Werte** detailliert beschrieben.
+    Wenn „type“ mit dem Wert „enumeration“ ausgefüllt wird, wird ein Feld „values“ hinzugefügt und jeder Auflistungswert wird im Knoten **values** detailliert beschrieben.
 
-* Der Knoten **Filter** gibt die URL zum Abrufen der zugehörigen Filter zurück. Weiterführende Informationen zu Filtern finden Sie in [diesem Abschnitt](sorting.md#filtering).
+* Der Knoten **Filter** gibt die URL zum Abrufen der zugehörigen Filter zurück. Weiterführende Informationen zu Filtern finden Sie [diesem Abschnitt](sorting.md#filtering).
 
 <!-- créer une section au même niveau sur les liens -->
 <!--

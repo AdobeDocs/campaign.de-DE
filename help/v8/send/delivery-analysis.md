@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '754'
-ht-degree: 97%
+ht-degree: 93%
 ---
 # Versandanalyse {#analyze-delivery}
 
@@ -36,7 +36,7 @@ Die Analyse ist der Versandvorbereitungsschritt. Sie kann gestartet werden, soba
 
 ## Starten der Analyse {#start-the-analysis}
 
-Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die Zielgruppe definiert worden sind, und gehen Sie wie folgt vor:
+Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die Zielgruppe definiert wurden, und führen Sie dann die folgenden Schritte aus:
 
 1. Klicken Sie im Versandfenster auf die Schaltfläche **[!UICONTROL Senden]**.
 1. Wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]** aus, um die Zielgruppe-Berechnung und Inhaltsvorbereitung für einen sofortigen Versand durchzuführen. Sie können den Versand auch auf einen späteren Zeitpunkt verschieben oder eine Schätzung der Population abrufen, ohne den Inhalt vorzubereiten.
@@ -45,7 +45,7 @@ Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die
 
 1. Klicken Sie auf **[!UICONTROL Analysieren]**, um die Analyse manuell zu starten. Die Fortschrittsleiste zeigt den Fortschritt der Analyse an.
 
-   Bei der Versandanalyse wird eine Reihe von Regeln zur Überprüfung angewendet. Diese Regeln werden in einer **Typologie** definiert, die auf der Registerkarte **[!UICONTROL Typologie]** in den Versandeigenschaften ausgewählt wird. Weitere Informationen zu Typologien finden Sie in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md).
+   Bei der Versandanalyse wird ein Satz von Kontrollregeln angewendet. Diese Regeln werden in einer **Typologie** definiert, die auf der Registerkarte **[!UICONTROL Typologie]** in den Versandeigenschaften ausgewählt wird. Weitere Informationen zu Typologien finden Sie in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md).
 
    Standardmäßig umfasst die Analyse für E-Mails die folgenden Punkte:
 

@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 99%
+source-wordcount: '1466'
+ht-degree: 96%
 ---
 # Arbeiten mit Campaign und Microsoft Dynamics 365{#crm-ms-dynamics}
 
@@ -145,7 +145,7 @@ Der Anwendungsbenutzer ist derjenige Benutzer, den die oben registrierte Anwendu
 **Schritt 1**: Einen nicht interaktiven Benutzer in Azure Active Directory erstellen
 
 1. Klicken Sie auf **Azure Active Directory > Benutzer** und dann auf **Neuer Benutzer**.
-1. Geben Sie einen geeigneten Namen ein, den Sie verwenden möchten; der Benutzername sollte im E-Mail-Format vorliegen.
+1. Geben Sie einen Eigennamen an, den Sie verwenden möchten, und der Benutzername sollte ein E-Mail-Format sein.
 1. Wählen Sie **Dynamics 365-Administrator** in der **Verzeichnisrolle**.
 
 **Schritt 2**: Dem erstellten Benutzer eine ordnungsgemäße Lizenz zuweisen
@@ -158,7 +158,7 @@ Der Anwendungsbenutzer ist derjenige Benutzer, den die oben registrierte Anwendu
 **Schritt 3**: Anwendungsbenutzer in Dynamics CRM erstellen
 
 1. Navigieren Sie von [Microsoft Azure](https://portal.azure.com) zu **Einstellungen > Sicherheit > Benutzer**.
-1. Klicken Sie auf die Dropdown-Liste, wählen Sie dann **Anwender** und klicken Sie auf **Neu**.
+1. Klicken Sie auf die Dropdown-Liste, wählen Sie **Anwendungsbenutzer** und klicken Sie auf **Neu**.
 1. Verwenden Sie denselben Benutzernamen wie für den Benutzer, der oben in Active Directory erstellt wurde.
 1. Weisen Sie die **Anwendungs-ID** für [die zuvor erstellte Anwendung zu](#get-client-id-microsoft).
 1. Klicken Sie auf **Rollen verwalten** und wählen Sie den Benutzer die Rolle **Systemadministrator** für aus.

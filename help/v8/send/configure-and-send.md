@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2d8aa27d6565e216cc0842ba22678c884479ff43
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1334'
-ht-degree: 95%
+ht-degree: 93%
 ---
 # Konfigurieren und Durchführen des Versands {#configure-delivery}
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um Schübe zu definieren:
 >
 >Sie können nur die Größe und die Verzögerung zwischen zwei aufeinander folgenden Schüben definieren. Die Empfänger-Auswahlkriterien für jeden Schub können nicht angepasst werden.
 
-Sie können entweder die Größe der einzelnen Schübe definieren oder sie einem Kalender hinzufügen.
+Sie können entweder die Größe jeder Welle definieren oder sie zu einem Kalender hinzufügen.
 
 * **Definieren Sie die Größe jedes Schubs**. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
 

@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 87%
+source-wordcount: '961'
+ht-degree: 86%
 ---
 # Erstellen von Briefpost-Sendungen
 
@@ -94,7 +94,7 @@ Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weiterf�
 
 >[!NOTE]
 >
->Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [&#x200B; sind](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=de){target="_blank"}.
+>Dieser Assistent enthält die Schritte des Exportassistenten, die in der Adobe Campaign Classic-Dokumentation [&#x200B; werden](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=de){target="_blank"}.
 
 ## Versand validieren{#validating}
 

@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3638'
-ht-degree: 96%
+source-wordcount: '3642'
+ht-degree: 92%
 ---
 # Einstellungen für externe SMPP-Konten {#smpp-external-account}
 
@@ -178,11 +178,11 @@ enquire_link ist eine spezielle Art von PDU, die gesendet wird, um die Verbindun
 
 Weitere Informationen zur Textcodierung finden Sie im Abschnitt [Codierung von SMS-Texten](sms-channel.md#sms-text-encoding).
 
-Mit dieser Einstellung können Sie eine benutzerdefinierte Codierungs-Zuordnung definieren, die von der Spezifikation abweicht. Sie können eine Liste von Codierungen zusammen mit ihrem data_coding-Wert deklarieren. Der MTA versucht, die Codierung mit der ersten Codierung in der Liste durchzuführen. Wenn dies fehlschlägt, versucht er, die nächste Codierung in der Liste zu verwenden usw. Wenn keine Codierung zum Codieren der Nachricht verwendet werden kann, tritt ein Fehler auf. Sobald die Codierung gefunden wurde, erstellt der MTA die SUBMIT_SM-PDU mit dem codierten Text und dem Feld „data_coding“ mit dem in der Tabelle angegebenen Wert.
+Mit dieser Einstellung können Sie ein benutzerdefiniertes Kodierungs-Mapping definieren, das von der Spezifikation abweicht. Sie können eine Liste von Codierungen zusammen mit ihrem data_coding-Wert deklarieren. Der MTA versucht, die Codierung mit der ersten Codierung in der Liste durchzuführen. Wenn dies fehlschlägt, versucht er, die nächste Codierung in der Liste zu verwenden usw. Wenn keine Codierung zum Codieren der Nachricht verwendet werden kann, tritt ein Fehler auf. Sobald die Codierung gefunden wurde, erstellt der MTA die SUBMIT_SM-PDU mit dem codierten Text und dem Feld „data_coding“ mit dem in der Tabelle angegebenen Wert.
 
 Die Reihenfolge der Elemente in der Tabelle ist wichtig: Codierungen werden von oben nach unten ausprobiert. Sie sollten die günstigste oder am meisten empfohlene Codierung ganz oben auf die Liste setzen, gefolgt von immer teureren (oder weniger wünschenswerten) Codierungen.
 
-Beachten Sie, dass UCS-2 niemals fehlschlägt, da damit alle in Campaign unterstützten Zeichen codiert werden können. Die maximale Länge einer UCS-2-SMS ist deutlich kleiner (nur 70 Zeichen).
+Beachten Sie, dass UCS-2 niemals fehlschlägt, da damit alle in Campaign unterstützten Zeichen codiert werden können. Beachten Sie, dass die maximale Länge einer UCS-2-SMS viel kleiner ist (nur 70 Zeichen).
 
 Sie können diese Einstellung auch verwenden, um zu erzwingen, dass eine bestimmte Kodierung immer verwendet wird, indem Sie in der Mapping-Tabelle nur eine Zeile deklarieren.
 
@@ -229,7 +229,7 @@ Wird im Feld address_range der BIND PDU unverändert gesendet. Dieser Wert sollt
 
 ### Anzahl ungültiger ID-Quittierungen
 
-Begrenzt die DELIVER_SM_RESP-Anzahl mit ungültiger Nachrichten-ID, die für einen einzelnen SR gesendet werden können. **Dies sollte nur zur Fehlerbehebung als Problemumgehung verwendet** und unter normalen Bedingungen auf 0 gesetzt werden.
+Begrenzt die DELIVER_SM_RESP-Anzahl mit ungültiger Nachrichten-ID, die für einen einzelnen SR gesendet werden können. **Dies sollte nur zur Fehlerbehebung verwendet werden, um dieses Problem zu umgehen** und unter normalen Bedingungen auf 0 gesetzt werden.
 
 Ausführliche Erklärung: Angenommen, Sie legen diese Einstellung auf den Wert „2“ fest:
 
@@ -244,7 +244,7 @@ Diese Funktion dient zum Leeren von SR-Puffern auf der Provider-Seite, wenn aufg
 
 Wenn dieses Feld auf 0 gesetzt wird, wird der Mechanismus deaktiviert, sodass „Nachrichten-ID ungültig“ immer zurückgegeben wird. Dies ist das normale Verhalten.
 
-Wenn Sie dieses Feld auf 1 setzen, antwortet der Connector immer mit &quot;OK&quot;, auch wenn die ID ungültig ist. Es sollte nur unter Aufsicht, zur Fehlerbehebung und für eine minimale Zeitdauer, z. B. zur Behebung eines Problems auf Provider-Seite, auf 1 gesetzt werden.
+Wenn Sie dieses Feld auf 1 setzen, antwortet der Connector immer mit &quot;OK&quot;, auch wenn die ID ungültig ist. Dieser sollte auf 1 gesetzt und nur unter Aufsicht zur Fehlerbehebung und für einen Mindestzeitraum verwendet werden, z. B. zur Behebung eines anbieterseitigen Problems.
 
 ### Regex zur ID-Extraktion im SR
 
@@ -252,7 +252,7 @@ Das SR-Format wird von der SMPP-Protokollspezifikation nicht strikt durchgesetzt
 
 Standardmäßig werden bis zu 10 alphanumerische Zeichen nach „ID:“ erfasst.
 
-Der Regex muss über genau eine Erfassungsgruppe verfügen (ein Teil, der in Klammern steht). Klammern müssen den Teil umschließen, der der ID entspricht. Das Regex-Format ist PCRE.
+Der Regex muss über genau eine Erfassungsgruppe verfügen (ein Teil, der in Klammern steht). Der Teil, der der ID entspricht, muss in Klammern eingeschlossen sein. Das Regex-Format ist PCRE.
 
 Achten Sie beim Anpassen dieser Einstellung darauf, so viel Kontext wie möglich einzubeziehen, um Fehlauslösungen zu vermeiden. Wenn bestimmte Präfixe vorhanden sind (wie „id:“ im standardisierten Präfix), müssen Sie sie in den Regex aufnehmen. Verwenden Sie außerdem so weit wie möglich Worttrennzeichen (\b), um zu vermeiden, dass Text in der Mitte eines Wortes erfasst wird.
 
@@ -264,7 +264,7 @@ Dieser Regex erfasst den Status aus dem Textfeld der SR-Nachrichten.
 
 Standardmäßig werden 5 bis 15 Zeichen nach „stat:“ erfasst.
 
-Der Regex muss über **genau eine Erfassungsgruppe** verfügen (einen Teil, der in Klammern steht). Klammern müssen den Teil umschließen, der dem Status entspricht. Das Regex-Format ist PCRE.
+Der Regex muss über **genau eine Erfassungsgruppe** verfügen (einen Teil, der in Klammern steht). Der Teil, der dem Status entspricht, muss in Klammern eingeschlossen sein. Das Regex-Format ist PCRE.
 
 ### Regex angewendet, um Erfolgsstatus zu ermitteln
 
@@ -325,7 +325,7 @@ Durch Aktivierung dieser Option kann es zu einer sehr kleinen Sicherheitslücke 
 
 ### Tag der Dienstkennung
 
-Ermöglicht das Hinzufügen eines benutzerdefinierten TLV. Dieses Feld legt das Tag fest, das als Hexadezimalwert im Format **0x1234** übergeben wird.
+Ermöglicht das Hinzufügen einer benutzerdefinierten TLV. Dieses Feld legt das Tag fest, das als Hexadezimalwert im Format **0x1234** übergeben wird.
 
 Der Wert des benutzerdefinierten TLV muss im Versand im Feld „Dienst- oder Programm-ID“ in den erweiterten Parametern des Versands festgelegt werden. Der Wert wird als UTF-8-codierter Text gesendet.
 
@@ -364,7 +364,7 @@ Sie können für jedes Feld das zugehörige Tag sowie dessen Format festlegen. B
 
 ### Automatische Antwort auf MO
 
-Mit dieser Funktion können Sie schnell einen Antworttext auf eine MO senden und Blockierungslisten pro Kurzwahlnummer handhaben.
+Mit dieser Funktion können Sie schnell mit Text auf MO antworten und per-Shortcode-Blacklists verarbeiten.
 
 Die Spalten *Schlüsselwort* und *Kurzwahlnummer* definieren Bedingungen, um die automatische Antwort auszulösen: Wenn beide Felder übereinstimmen, wird die MO gesendet und die zusätzliche Aktion ausgelöst. Um einen Platzhalter festzulegen, können Sie das Feld einfach leer lassen. Das Schlüsselwort wird mit dem ersten alphanumerischen Wort im MO-Text abgeglichen, wobei Interpunktion und führende Leerzeichen ignoriert werden. Das bedeutet, dass das Feld „Schlüsselwort“ keine Leerzeichen enthalten darf und ein einziges Wort sein muss.
 
@@ -382,8 +382,8 @@ Alle Einträge in der Tabelle werden in der angegebenen Reihenfolge verarbeitet,
 
 >[!NOTE]
 >
->In Mid-Sourcing-Architekturen sind auf Mid-Operator-Seite Schreibrechte für den externen Kontoordner erforderlich, wenn für den SMPP-Connector automatische Antworten eingerichtet werden sollen.
+>In einer Mid-Sourcing-Architektur erfordert das Anwenden der automatischen Antwort für den erweiterten SMPP-Connector das Hinzufügen eines Schreibzugriffs für den Mid-Operator auf den Ordner des externen Kontos.
 
 >[!IMPORTANT]
 >
->Seien Sie bei automatischen Antworten vorsichtig mit Codierungen, insbesondere beim Kopieren und Einfügen. Textverarbeitungs-Software neigt dazu, zusätzliche Formatierungen hinzuzufügen, z. B. geschützte Leerzeichen zu verwenden oder Anführungszeichen in Apostrophe zu ändern.
+>Seien Sie bei automatischen Antworten vorsichtig mit Codierungen, insbesondere beim Kopieren und Einfügen. Textverarbeitungssoftware neigt dazu, zusätzliche Formatierungen hinzuzufügen, z. B. das Hinzufügen von Leerzeichen ohne Umbruch oder das Ändern von Anführungszeichen zu Apostrophen.

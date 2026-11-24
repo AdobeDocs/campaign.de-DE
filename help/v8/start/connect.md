@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1125'
-ht-degree: 93%
+ht-degree: 85%
 ---
 # Herstellen einer Verbindung mit Adobe Campaign v8{#gs-ac-connect}
 
@@ -57,7 +57,7 @@ Es gibt zwei Möglichkeiten, die Client-Konsole herunterzuladen:
 
 1. Als Campaign-Admin verbinden Sie sich mit der [Adobe-Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"}.
 
-1. Für Endbenutzende stellen Campaign-Administrierende die Client-Konsole bereit und machen sie über eine spezielle URL verfügbar.
+1. Als Endbenutzer stellt Ihr Campaign-Administrator die Client-Konsole für Sie bereit und stellt sie über eine dedizierte URL zur Verfügung.
 
 Sobald Sie das Installationsprogramm für die Client-Konsole heruntergeladen haben, installieren Sie es auf Ihrem lokalen Rechner.
 
@@ -171,6 +171,6 @@ Beim Web-Zugriff ermöglichen die Optionen vor allem die Anzeige von:
 
 ![](assets/campaign-from-web.png)
 
-Der Web-Zugriff wird auch für den Validierungsprozess verwendet: Benutzer können auf die E-Mail mit der Validierungsanfrage klicken und über ihren Webbrowser eine Verbindung zu Campaign herstellen, um Versandinhalte oder -budgets zu validieren oder abzulehnen.
+Der Web-Zugriff wird auch im Validierungsprozess verwendet: Benutzende können auf die E-Mail mit der Validierungsanfrage klicken und über ihren Webbrowser eine Verbindung zu Campaign herstellen, um Versandinhalte oder -budgets zu validieren oder abzulehnen.
 
-Um über das Web auf Ihre Campaign-Instanz zuzugreifen, lautet die URL: `https://<your adobe campaign server>:<port number>/view/home`.
+Für den Web-Zugriff auf Ihre Campaign-Instanz lautet die URL: `https://<your adobe campaign server>:<port number>/view/home`.

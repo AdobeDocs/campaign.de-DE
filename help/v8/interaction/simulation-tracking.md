@@ -29,16 +29,16 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 84%
+source-wordcount: '170'
+ht-degree: 64%
 ---
 # Simulationsverfolgung{#simulation-tracking}
 
 
 
-Nach Abschluss der Simulation wird automatisch ein **[!UICONTROL Ergebnis]**-Tab hinzugefügt, der Ihnen eine genaue Analyse ermöglicht. Im Berichte-Tab des Dashboard wird der Bericht **[!UICONTROL Angebotsaufschlüsselung nach Rang]** angezeigt.
+Sobald die Simulation abgeschlossen ist, können Sie das Ergebnis über die Registerkarte **[!UICONTROL Ergebnisse]** analysieren, die zum Simulationsfenster hinzugefügt wird, und den Bericht **[!UICONTROL Aufschlüsselung der Angebote nach Rang]** , der über das Simulations-Dashboard verfügbar ist.
 
 Das Simulationsergebnis zeigt die Aufschlüsselung der Vorschläge nach Rang und Zielgruppe. Berichtsachsen werden ebenfalls berücksichtigt und in dieser Registerkarte angezeigt.
 

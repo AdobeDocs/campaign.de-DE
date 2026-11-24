@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 99%
+source-wordcount: '1136'
+ht-degree: 87%
 ---
 # Arbeiten mit Campaign und X (Twitter) {#tw-ac-ovv}
 
@@ -59,27 +59,27 @@ Das Modul **Verwalten sozialer Netzwerke (Social-Media-Marketing)** ermöglicht 
 
 Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren X-Konten veröffentlicht werden, delegieren Sie den Schreibzugriff für diese Konten an Adobe Campaign. Gehen Sie dazu folgendermaßen vor:
 
-1. Erstellen Sie ein X-Konto und registrieren Sie sich für ein Entwicklerkonto. [Weitere Informationen](#dev-account)
+1. Erstellen Sie ein X-Konto und melden Sie sich für ein Entwicklerkonto an. [Weitere Informationen](#dev-account)
 1. (Optional) Erstellen Sie ein X-Testkonto für den Testversand. [Weitere Informationen](#tw-test-account)
-1. Erstellen Sie eine X-Anwendung (eine Anwendung pro X-Konto). [Weitere Informationen](#create-an-app-on-twitter)
+1. Erstellen Sie eine X-Anwendung (eine App pro X-Konto). [Weitere Informationen](#create-an-app-on-twitter)
 1. Erstellen Sie einen neuen Service für **[!UICONTROL Twitter]** (ein Service pro X-Konto). [Weitere Informationen](#create-tw-service)
 1. Synchronisieren Sie Ihr X-Konto mit Campaign. [Weitere Informationen](#synchro-tw-accounts)
 
 ## X-Entwicklerkonto {#dev-account}
 
-Um mit dieser Integration zu beginnen, müssen Sie sich für ein [X-Entwicklerkonto](https://developer.twitter.com){target="_blank"} registrieren.
+Um mit dieser Integration zu beginnen, müssen Sie sich in einem [X-Entwicklerkonto &#x200B;](https://developer.twitter.com){target="_blank"}.
 
 Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. [Auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated){target="_blank"} erfahren Sie mehr über den erweiterten Zugriff auf X.
 
 ## Erstellen einer Anwendung auf X {#create-an-app-on-twitter}
 
-Nachdem Sie den erweiterten Zugriff erhalten haben, erstellen Sie eine X-Anwendung, damit Adobe Campaign Tweets auf Ihrem X-Konto posten kann. Gehen Sie dazu wie folgt vor:
+Nachdem Sie den erweiterten Zugriff erhalten haben, erstellen Sie eine X-Anwendung, damit Adobe Campaign Beiträge in Ihrem X-Konto erstellen kann. Gehen Sie dazu wie folgt vor:
 
 1. Melden Sie sich bei Ihrem X-Konto an.
 1. Stellen Sie eine Verbindung mit dem [X-Entwicklerportal](https://developer.twitter.com/en/apps){target="_blank"} her.
 1. Wählen Sie **App erstellen** aus.
 1. Der X-Assistent führt Sie durch den Prozess.
-1. Um Adobe Campaign zu erlauben, Tweets auf Ihrem Konto zu posten, bearbeiten Sie die **App-Berechtigungen** im Abschnitt „Benutzerauthentifizierung einrichten“ Ihrer App. Wählen Sie **Lesen, Schreiben und Direktnachrichten**.
+1. Damit Adobe Campaign Beiträge in Ihrem Konto erstellen kann, bearbeiten Sie die **App-Berechtigungen** im Abschnitt „Benutzerauthentifizierung einrichten“ Ihrer App. Wählen Sie **Lesen, Schreiben und Direktnachrichten**.
 
    ![](assets/tw-permissions.png)
 
@@ -108,7 +108,7 @@ Um Ihre Campaign-Instanz mit Ihrem X-Konto zu verknüpfen, erstellen Sie einen *
 >Jeder **Twitter**-Service muss ebenfalls von Adobe auf Ihrer Mid-Sourcing(MID)-Instanz erstellt werden. Wenden Sie sich an den Adobe-Support, um Ihre Umgebung konfigurieren zu lassen.
 >
 
-Um Einstellungen vorzunehmen, müssen Sie sowohl auf Ihre Adobe Campaign-Client-Konsole als auch auf die Berechtigungen Ihrer X-App zugreifen.
+Um Einstellungen vorzunehmen, müssen Sie sowohl auf Ihre Adobe Campaign-Client-Konsole als auch auf Ihre X-App-Berechtigungen zugreifen.
 
 1. Gehen Sie in **Adobe Campaign** zur Registerkarte **[!UICONTROL Profile und Zielgruppen]** und klicken Sie auf den Link **[!UICONTROL Services und Abonnements]**.
 1. Erstellen Sie einen neuen Service.
@@ -169,7 +169,7 @@ Sobald diese Konfiguration abgeschlossen ist, können Sie Tweets auf Ihren X-Kon
 
 ## Erstellen eines Testkontos auf X {#tw-test-account}
 
-Erstellen Sie zusätzlich zum X-Konto ein privates X-Konto, das zum Senden von [Tweet-Testsendungen](../send/twitter.md) verwendet werden kann. Gehen Sie dazu wie folgt vor:
+Erstellen Sie zusätzlich zu einem X-Konto ein privates X-Konto, das zum Senden von [Tweet-Testsendungen“ verwendet &#x200B;](../send/twitter.md) kann. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie ein neues X-Konto.
 1. Öffnen Sie die **Einstellungen** des Kontos.

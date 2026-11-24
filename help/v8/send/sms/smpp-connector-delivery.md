@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 83%
+ht-degree: 82%
 ---
 # Beschreibung des SMPP-Connectors {#smpp-connector-desc}
 
@@ -120,7 +120,7 @@ Affinitäten werden vom dedizierten Prozess-Connector ignoriert. Er wird nur inn
 
 ## serverConf-Optionen {#sms-serverconf-options}
 
-Einige Einstellungen können in serverConf.xml angepasst werden. Wie alle anderen Einstellungen in dieser Datei sollte dies in der Datei config-instance.xml angegeben werden. Alle Einstellungen befinden sich im Element &lt; mta2 > .
+Einige Einstellungen können in serverConf.xml angepasst werden. Wie alle anderen Einstellungen in dieser Datei sollten sie in der Datei config-instance.xml angegeben werden. Alle Einstellungen befinden sich im Element &lt; mta2 > .
 
 Diese Tabelle fasst alle Einstellungen zusammen. Werte, die Min/Max beinhalten, geben eine grobe Vorstellung von dem Bereich, den Sie in den meisten Fällen berücksichtigen sollten. Der Debugging-Wert ist der Wert, den Sie bei der Suche nach Problemen wählen müssen, die nicht mit der Leistung in Zusammenhang stehen.
 

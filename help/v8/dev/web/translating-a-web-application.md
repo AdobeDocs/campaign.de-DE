@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 100%
+source-wordcount: '376'
+ht-degree: 93%
 ---
 # Übersetzen eines Web-Programms{#translating-a-web-application}
 
@@ -55,7 +55,7 @@ So kennzeichnen Sie die zu übersetzenden Strings:
 
    Es gibt drei Fälle:
 
-   * Wenn der ausgewählte Baustein mehrere Strings/Bausteine enthält, wird er als ein einzelner zu übersetzender String gekennzeichnet. Der String enthält dann den HTML-Code der Elemente innerhalb dieses Bausteins.
+   * Wenn der ausgewählte Baustein mehrere Strings/Bausteine enthält, wird er als ein einzelner zu übersetzender String gekennzeichnet. Die Zeichenfolge enthält dann den HTML-Code der Elemente innerhalb dieses Blocks.
    * Wenn Sie einen Baustein kennzeichnen möchten, der mehrere Strings enthält und mindestens einer dieser Strings bereits gekennzeichnet ist, wird ein Warnhinweis angezeigt. Dann können Sie das Flag aus dem isolierten String entfernen und den gesamten Baustein hinzufügen.
 
      ![](assets/dce_translation_4.png)
@@ -69,7 +69,7 @@ So kennzeichnen Sie die zu übersetzenden Strings:
 
    >[!NOTE]
    >
-   >Nach dem Erfassen der Strings werden diese auch dann nicht aus der Liste entfernt, wenn Sie das Übersetzungs-Flag im DCE entfernen. Auf diese Weise können sie in der Translation Memory gespeichert werden.
+   >Nach dem Erfassen der Strings werden diese auch dann nicht aus der Liste entfernt, wenn Sie das Übersetzungs-Flag im DCE entfernen. Auf diese Weise können Sie sie im Translation Memory speichern.
 
 1. Übersetzen und validieren Sie die Strings.
 

@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 100%
+ht-degree: 96%
 ---
 # Definieren des Layouts eines Web-Formulars{#defining-web-forms-layout}
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## Container erstellen {#creating-containers}
 
-Mit Containern können Sie die Felder einer Seite zusammenfassen und ihr Layout konfigurieren, um die Elemente der Seite anzuordnen.
+Mit Containern können Sie die Felder einer Seite kombinieren, ihr Layout konfigurieren und die Elemente auf der Seite organisieren.
 
 Sie können für jede Seite des Formulars Container mit der Schaltfläche **[!UICONTROL Container]** in der Symbolleiste erstellen.
 

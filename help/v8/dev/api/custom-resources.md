@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 100%
+ht-degree: 86%
 ---
 # Benutzerdefinierte Ressourcen {#custom-resources}
 
@@ -42,7 +42,7 @@ Benutzerdefinierte Ressourcen können über APIs mit dem Endpunkt **/profileAndS
 >
 >Verwenden Sie bei Ressourcen, die nicht vordefiniert sind, immer das Präfix <b>&quot;cus&quot;</b> vor dem Namen der Ressource.
 
-Sie können beliebige Aktionen mit benutzerdefinierten Ressourcen ausführen, solange diese mit der Profiltabelle verknüpft sind. Betrachten wir zum Beispiel die folgende Tabellenstruktur:
+Sie können beliebige Aktionen mit benutzerdefinierten Ressourcen ausführen, solange diese mit der Profiltabelle verknüpft sind. Betrachten wir beispielsweise die folgende Tabellenstruktur:
 
 ![Alternativtext](assets/cusresources.png)
 
@@ -62,7 +62,7 @@ Beispielhafte GET-Anfrage zum Aufrufen der erweiterten Ressource profileAndServi
 -H 'X-Api-Key: <API_KEY>' \
 ```
 
-Es wird eine Liste aller verknüpften benutzerdefinierten Ressourcen zurückgegeben. Anschließend können Sie die Ressourcen-URLs verwenden, um beliebige in dieser Dokumentation beschriebenen API-Aufgaben zu erledigen.
+Es wird eine Liste aller verknüpften benutzerdefinierten Ressourcen zurückgegeben. Anschließend können Sie die Ressourcen-URLs verwenden, um alle in dieser Dokumentation beschriebenen API-Aufgaben auszuführen.
 
 ```
 {

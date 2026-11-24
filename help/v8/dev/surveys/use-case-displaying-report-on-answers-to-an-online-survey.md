@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 96%
+ht-degree: 94%
 ---
 # Anwendungsfall: Bericht zu Antworten auf eine Online-Umfrage anzeigen{#use-case-displaying-report-on-answers-to-an-online-survey}
 
@@ -69,7 +69,7 @@ Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
    ![](assets/reporting_usecase_1_01.png)
 
-1. Wählen Sie die zu extrahierenden Spalten aus (hier: Alle archivierten Felder). Dies sind die Felder, die die Antworten enthalten.
+1. Zu extrahierende Spalten auswählen (in diesem Fall alle archivierten Felder auswählen). Dies sind die Felder, die die Antworten enthalten.
 
    ![](assets/reporting_usecase_1_02.png)
 

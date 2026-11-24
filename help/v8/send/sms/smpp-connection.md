@@ -30,14 +30,14 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '4464'
-ht-degree: 97%
+ht-degree: 89%
 ---
 # Validieren einer SMPP-Verbindung {#validate-smpp-connection}
 
-Im Folgenden finden Sie einige Möglichkeiten, um zu überprüfen, ob Ihre SMPP-Verbindung in Ordnung ist.
+Im Folgenden finden Sie einige Prüfungen, um sicherzustellen, dass Ihre SMPP-Verbindung in Ordnung ist.
 
 ## Vor der Live-Schaltung zu überprüfende Punkte {#check-go-live}
 
@@ -49,13 +49,13 @@ Stellen Sie anhand der folgenden Prüfpunkte vor der Live-Schaltung sicher, dass
 
 >[!NOTE]
 >
->Aktivieren Sie ausführliche SMPP-Protokolle während der Prüfungen. Dies hilft Ihnen und dem Support, die Fehlerbehebungen zu verstehen.
+>Aktivieren der ausführlichen SMPP-Verfolgung während der Prüfungen, damit Sie und das Support-Team die Fehlerbehebung verstehen können.
 
 ### Prüfen auf Konflikte mit externen Konten {#sms-external-accounts-check}
 
 Vergewissern Sie sich, dass Sie keine übrig gebliebenen externen SMS-Konten haben. Löschen Sie die Testkonten, um potenzielle Konflikte zu vermeiden.
 
-Vergewissern Sie sich, dass keine andere Instanz eine Verbindung zu dem externen Konto herstellt. Achten Sie insbesondere darauf, dass die Preprod-Umgebung keine Verbindung zum externen Konto herstellt.
+Stellen Sie sicher, dass keine andere Instanz eine Verbindung zum externen Konto herstellt. Achten Sie insbesondere darauf, dass die Preprod-Umgebung keine Verbindung zum externen Konto herstellt.
 
 Wenn Sie mehrere Konten in derselben Campaign-Instanz haben müssen, die eine Verbindung zu demselben Provider herstellen, wenden Sie sich an den Provider, um sicherzustellen, dass tatsächlich zwischen den Verbindungen dieser Konten unterschieden wird. Für mehrere Konten mit denselben Anmeldedaten ist eine zusätzliche Konfiguration erforderlich.
 
@@ -67,7 +67,7 @@ Versuchen Sie, einige SMS an verschiedene Mobiltelefone zu senden.
 
 **Senden von SMS mit allen möglichen Zeichen**
 
-Wenn Sie eine SMS mit Nicht-GSM- oder Nicht-ASCII-Zeichen senden müssen, versuchen Sie, einige Nachrichten mit möglichst vielen verschiedenen Zeichen zu senden. Wenn Sie eine benutzerdefinierte Zeichen-Mapping-Tabelle einrichten, senden Sie mindestens eine SMS für alle möglichen data_coding-Werte.
+Wenn Sie SMS mit Nicht-GSM- oder Nicht-ASCII-Zeichen senden müssen, versuchen Sie, einige Nachrichten mit den unterschiedlichsten Zeichen zu senden. Wenn Sie eine benutzerdefinierte Zeichen-Mapping-Tabelle einrichten, senden Sie mindestens eine SMS für alle möglichen data_coding-Werte.
 
 **Überprüfen, ob SR ordnungsgemäß verarbeitet werden**
 
@@ -96,7 +96,7 @@ Die Mindestanzahl an zu sendenden Nachrichten kann wie folgt berechnet werden:
 Überprüfen Sie nach Abschluss des Versands die folgenden Punkte:
 
 * Überprüfen Sie, ob alle Nachrichten gesendet (nicht unbedingt empfangen) wurden.
-* Es darf absolut keine PDU geben, deren command_status nicht 0x00000000 ist, es sei denn, dies wird vom Provider ausdrücklich als normaler Vorgang angegeben.
+* Es muss eine PDU absolut Null mit command_status nicht 0x00000000 vorhanden sein, es sei denn, dies wird vom Provider ausdrücklich als normaler Betrieb angegeben
 * Verbindungen müssen während des gesamten Versandvorgangs absolut stabil bleiben (keine BIND-PDU).
 * Überprüfen Sie, ob alle Nachrichten einen SR aufweisen und ob dieser korrekt verarbeitet wurde (siehe [Überprüfen, ob der SR ordnungsgemäß verarbeitet wurde](#real-test)). Wenn ein kleiner Prozentsatz Fehler aufweist, überprüfen Sie, ob es sich um tatsächliche SR-Rückgabefehler handelt und nicht um Fehler beim Versand oder bei der Verarbeitung auf der Campaign-Seite.
 * Wenn Sie sich bezüglich der Leistung nicht sicher sind, stellen Sie sicher, dass die Latenzen angemessen sind, insbesondere zwischen einer PDU und der zugehörigen RESP. Eine Latenz von mehr als 500 ms kann ein Problem für einen hohen Durchsatz darstellen. Verwenden Sie diese Latenz, um die Formel für das Übertragungsfenster zu überprüfen (weitere Informationen finden Sie in der Einstellung für das Übertragungsfenster).
@@ -209,8 +209,8 @@ Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern in demselb
 
 Im Allgemeinen sind SMPP-Verbindungen im Laufe der Zeit tendenziell sehr stabil. Wenn sie einmal korrekt konfiguriert sind, sollten sie auch zukünftig weiter funktionieren.
 
-* Untersuchen Sie, ob und von wem der Connector kürzlich geändert wurde (überprüfen Sie die externen Konten als Gruppe).
-* Untersuchen Sie, ob und wann das System aktualisiert wurde.
+* Untersuchen Sie, ob der Connector kürzlich geändert wurde und von wem (überprüfen Sie die externen Konten als Gruppe).
+* Prüfen Sie, ob und wann das System aktualisiert wurde.
 * Untersuchen Sie, ob Pakete, die sich auf SMS auswirken, kürzlich aktualisiert wurden.
 
 Wenn keine dieser Prüfungen zu einer Grundursache führt, wenden Sie sich an den Provider. Wenn Provider ihre Plattformen aktualisieren, verhalten sich ihre Connectoren geringfügig anders. Dies kann die Feineinstellungen beeinträchtigen und Regressionsprobleme nach sich ziehen.
@@ -220,7 +220,7 @@ Es wird empfohlen, mit dem Provider in Kontakt zu bleiben, denn häufig werden w
 #### Problem mit Mid-Sourcing (gehostet)  {#sms-issue-hosted}
 
 * Wenn das Problem in einer Mid-Sourcing-Umgebung auftritt, stellen Sie sicher, dass die Versand- und Broadlogs ordnungsgemäß auf dem Mid-Sourcing-Server erstellt und aktualisiert werden. Wenn das nicht der Fall ist, liegt kein SMS-Problem vor.
-* Achten Sie darauf, dass der Mid-Operator-Name ausschließlich Kleinbuchstaben umfasst. Andernfalls bleibt der Versand im Status „Ausstehend“.
+* Vergewissern Sie sich, dass der Name des MID-Benutzers in Kleinbuchstaben angegeben wird, da der Versand sonst im Status Ausstehend verbleibt.
 * Wenn auf dem Mid-Sourcing-Server alles funktioniert und SMS ordnungsgemäß gesendet werden, die Marketing-Instanz jedoch nicht ordnungsgemäß aktualisiert wird, liegt ein Problem mit der Mid-Synchronisation vor.
 
 #### Problem beim Herstellen einer Verbindung zum Provider {#sms-issue-connection}
@@ -246,7 +246,7 @@ Eine Verbindung wird als instabil angesehen, wenn eine der folgenden Situationen
 
 **Beheben von Problemen mit der Verbindungsstabilität:**
 
-* Instabile Verbindungen sind selten die eigentliche Ursache. Sie sind häufig das Ergebnis eines anderen Problems, das einen Verbindungsabbruch in irgendeiner Form auslöst. Die Suche nach der eigentlichen Ursache hat Priorität.
+* Instabile Verbindungen sind selten die Grundursache, es ist oft das Ergebnis eines anderen Problems, das eine Unterbrechung auf die eine oder andere Weise auslöst. Die Suche nach der eigentlichen Ursache hat Priorität.
 * Aktivieren Sie die ausführliche SMPP-Verfolgung. Sie benötigen diese, um zu sehen, was passiert, wenn die Verbindung neu gestartet wird.
 * Wenn der Provider UNBIND-PDUs sendet, macht er wahrscheinlich etwas falsch. Fragen Sie ihn, warum er UNBIND sendet. Dies wird wahrscheinlich zur eigentlichen Ursache führen.
 * Eine Netzwerkaufzeichnung ist manchmal die einzige Möglichkeit, um zu sehen, wie die Verbindung geschlossen wird.
@@ -254,11 +254,11 @@ Eine Verbindung wird als instabil angesehen, wenn eine der folgenden Situationen
 * Wenn der Provider die Verbindung schließt, nachdem er einen ordnungsgemäßen Fehler (wie DELIVER_SM_RESP mit einem Fehler-Code gesendet hat), muss er seinen Connector reparieren. Dieses Schließen verhindert nämlich, dass andere Arten von Nachrichten übertragen werden, und löst die MTA-Drosselung aus. Dies ist besonders im Transceiver-Modus wichtig, wo sich das Schließen der Verbindung sowohl auf MT als auch auf SR auswirkt.
 * Bei Timeouts (BIND-Timeouts, SUBMIT_SM-Timeouts) sendet Campaign möglicherweise zu schnell Nachrichten für diesen Provider. Versuchen Sie, die Einstellung für den *maximalen MT-Durchsatz* zu senken, und überprüfen Sie, ob das Problem sich dadurch beheben lässt.
 
-#### Problem beim Senden von MT (reguläre SMS an einen Endbenutzer)
+#### Problem beim Senden eines MT (reguläre SMS an einen Endbenutzer)
 
-* Prüfen Sie, ob die Verbindung stabil ist: Eine SMPP-Verbindung sollte mindestens eine Stunde lang kontinuierlich aufrechterhalten bleiben. Weitere Informationen finden Sie im Abschnitt „Probleme mit instabilen Verbindungen“.
+* Überprüfen Sie, ob die Verbindung stabil ist: Eine SMPP-Verbindung sollte kontinuierlich mindestens 1 Stunde lang aktiv bleiben. Weitere Informationen finden Sie im Abschnitt „Probleme mit instabilen Verbindungen“.
 * Wenn durch einen Neustart des SMS-Prozesses das Senden von MT für einen kurzen Zeitraum wieder funktioniert, besteht wahrscheinlich eine Drosselung aufgrund einer instabilen Verbindung. Weitere Informationen finden Sie im Abschnitt „Probleme mit instabilen Verbindungen“.
-* Überprüfen Sie, ob das Broadlog vorhanden ist und den richtigen Status mit den richtigen Daten aufweist. Ist dies nicht der Fall, handelt es sich nicht um ein SMS-Problem, sondern um ein Versandproblem oder ein Problem bei der Versandvorbereitung (dies liegt außerhalb des Rahmens dieses Dokuments).
+* Überprüfen Sie, ob das Broadlog vorhanden ist und den richtigen Status mit den richtigen Daten aufweist. Ist dies nicht der Fall, handelt es sich nicht um ein SMS-Problem, sondern um ein Versandproblem oder ein Problem mit der Versandvorbereitung (das liegt außerhalb des Rahmens dieses Dokuments).
 * Prüfen Sie, ob der SMS-Connector tatsächlich mit den Geräten des Providers verbunden ist. Bitten Sie den Provider um Rückmeldung, um sicherzustellen, dass alle Systeme richtig kommunizieren. Informationen zum Bindungsprozess finden Sie unter BIND_TRANSMITTER- und BIND_TRANSCEIVER-PDUs. Möglicherweise müssen Sie SMPP-Traces aktivieren, um eine ordnungsgemäße Fehlerbehebung zu ermöglichen.
 * Überprüfen Sie bei aktivierter SMPP-Verfolgung, ob die SUBMIT_SM-PDU die richtigen Informationen enthält (siehe die obige Dokumentation).
 * Stellen Sie sicher, dass der Provider mit einer SUBMIT_SM_RESP-PDU mit dem Wert „OK“ (Code 0) antwortet. Stellen Sie sicher, dass die PDU mit einer angemessenen Verzögerung eintrifft: Alles, was länger als 1 Sekunde dauert, ist verdächtig und muss mit dem Provider besprochen werden. Sie kommt normalerweise in weniger als 100 ms an.
@@ -281,12 +281,12 @@ Minimierung der Anzahl von Duplikaten bei einer Wiederholung:
 
 * Sie müssen die SMPP-Verfolgung aktivieren, um jegliche Art von SR-Fehlerbehebung durchzuführen.
 * Überprüfen Sie, ob die DELIVER_SM-PDU vom Provider kommt und korrekt formuliert ist.
-* Überprüfen Sie, ob Campaign rechtzeitig mit einer erfolgreichen DELIVER_SM_RESP-PDU antwortet. Diese gewährleistet, dass der SR in die Tabelle „providerMsgStatus“ eingefügt wurde, um die verzögerte Verarbeitung durch den SMS-Prozess zu ermöglichen.
+* Überprüfen Sie, ob Campaign rechtzeitig mit einer erfolgreichen DELIVER_SM_RESP-PDU antwortet. Dadurch wird sichergestellt, dass das SR zur verzögerten Verarbeitung durch den SMS-Prozess in die ProviderMsgStatus-Tabelle eingefügt wurde.
 
 Wenn die DELIVER_SM-PDU nicht erfolgreich quittiert wurde, müssen Sie einige Punkte überprüfen:
 
 * Überprüfen Sie den Regex für die ID-Extraktion und die Fehlerverarbeitung im externen Konto. Möglicherweise müssen Sie diese anhand des Inhalts der DELIVER_SM-PDU validieren.
-* Überprüfen Sie, ob die Fehler ordnungsgemäß in der Tabelle „broadLogMsg“ bereitgestellt wurden (in der Dokumentation zu Campaign wird dies im Detail erläutert).
+* Überprüfen Sie, ob die Fehler in der Tabelle broadLogMsg ordnungsgemäß bereitgestellt wurden (in der Campaign-Dokumentation wird dies ausführlich erläutert).
 
 Wenn die DELIVER_SM-PDU vom erweiterten SMPP-Connector in ACC quittiert wurde, das broadLog jedoch nicht ordnungsgemäß aktualisiert wird, überprüfen Sie den im Abschnitt „Abgleichen von MT-, SR- und broadLog-Einträgen“ beschriebenen Prozess zur ID-Abstimmung.
 
@@ -294,7 +294,7 @@ Wenn Sie alle Probleme behoben haben, die Puffer des Providers jedoch noch einig
 
 Wenn die SR-Verarbeitung langsam ist, versuchen Sie, die häufigsten Statusmeldungen in der Tabelle „BroadLogMsg“ zu qualifizieren.
 
-Wenn nur einige SR empfangen werden, aber nicht alle, stellen Sie sicher, dass kein anderes System eine Verbindung zum Konto Ihres Providers herstellt, z. B. ein Testsystem. SR können bei jeder Verbindung weitergeleitet werden, sodass einige von ihnen an dieses andere System weitergeleitet werden. Der Provider kann Ihnen dabei helfen, herauszufinden, wo sich dieses andere System befindet, das eine Verbindung zu dem Konto herstellt.
+Wenn nur einige SR empfangen werden, aber nicht alle, stellen Sie sicher, dass kein anderes System eine Verbindung zum Konto Ihres Anbieters herstellt, z. B. ein Testsystem. SR können bei jeder Verbindung weitergeleitet werden, sodass einige von ihnen an dieses andere System weitergeleitet werden. Der Provider kann Ihnen dabei helfen, herauszufinden, wo sich dieses andere System befindet, das eine Verbindung zu dem Konto herstellt.
 
 #### Problem bei der Verarbeitung von MO (und Quarantäne/automatische Antwort)
 
@@ -326,7 +326,7 @@ Die häufigste Ursache für Probleme ist das Kopieren und Einfügen aus einem Te
 
 Kopieren Sie Ihre Nachricht beim Testen nicht, sondern geben Sie sie immer direkt in die Benutzeroberfläche ein.
 
-**Lassen Sie sich nicht durch hexadezimale Werte verunsichern**. Hexadezimale Werte sehen ungewohnt und unnatürlich aus, haben jedoch den Vorteil, dass Sie den Unterschied zwischen ähnlichen Zeichen erkennen können. Ein kleines L, ein großes I, O, 0, alle verschiedenen Arten von Anführungszeichen, nicht-lateinische Codierungen oder sogar verschiedene Arten von Leerzeichen können jeweils gleich aussehen (oder gar nicht sichtbar sein). Hexadezimale Werte zeigen alles und helfen beim Vergleichen von Dingen.
+**Lassen Sie sich nicht durch hexadezimale Werte verunsichern**. Hexadezimale Werte sehen ungewohnt und unnatürlich aus, haben jedoch den Vorteil, dass Sie den Unterschied zwischen ähnlichen Zeichen erkennen können. Ein L in Kleinbuchstaben, I in Großbuchstaben, O, 0, alle verschiedenen Anführungszeichen, nicht lateinische Kodierungen oder sogar verschiedene Leerzeichen können alle gleich aussehen (oder sogar überhaupt nicht angezeigt werden). Hexadezimale Werte zeigen alles und helfen beim Vergleichen von Dingen.
 
 Um Unicode in hexadezimale Werte zu konvertieren, können Sie Online-Tools verwenden.
 
@@ -363,9 +363,9 @@ Wenn der Provider von einer Pufferüberlastung berichtet, liegt dies möglicherw
 * Vergewissern Sie sich, dass die Instanzdatenbank nicht überlastet ist. Die SR-Verarbeitung hängt in hohem Maße von der Leistung der Datenbank ab.
 * Bitten Sie den Provider, das Sendefenster für DELIVER_SM auf seiner Seite zu vergrößern. Idealerweise sollte es so groß sein wie die Einstellung *batchUpdateSize* in serverConf.
 
-### Elemente, die bei der Kommunikation über ein SMS-Problem berücksichtigt werden müssen
+### Bei der Kommunikation über ein SMS-Problem einzuschließende Elemente
 
-Wann immer Sie um Unterstützung bei einem SMS-Problem bitten (sei es durch das Eröffnen eines Support-Tickets bei Adobe Campaign, beim SMS-Provider oder bei jeder Art von Kommunikation im Zusammenhang mit dem Problem), müssen Sie zumindest die folgenden Informationen angeben, damit das Problem richtig eingeordnet werden kann. Die korrekte Einordnung von Problemen ist entscheidend für eine schnelle Problemlösung. Sich also etwas mehr Zeit zu nehmen, um die Situation zu verstehen und aussagekräftige Informationen bereitzustellen, ist mit einer enormen Effizienzsteigerung verbunden.
+Wenn Sie Hilfe zu einem SMS-Problem benötigen (sei es das Öffnen eines Support-Tickets für Adobe Campaign, den SMS-Anbieter oder eine Kommunikation zu dem Problem), müssen Sie mindestens die folgenden Informationen angeben, um sicherzustellen, dass es ordnungsgemäß qualifiziert ist. Die korrekte Einordnung von Problemen ist entscheidend für eine schnelle Problemlösung. Sich also etwas mehr Zeit zu nehmen, um die Situation zu verstehen und aussagekräftige Informationen bereitzustellen, ist mit einer enormen Effizienzsteigerung verbunden.
 
 * Aktivieren Sie ausführliche SMPP-Nachrichten, wenn das Problem auftritt. Die meisten SMS-Probleme lassen sich praktisch nur damit lösen.
 * Wenn das Problem mit dem SMS-Traffic zusammenhängt, wenden Sie sich zuerst an den Provider. Dieser weiß in diesem Fall am besten Bescheid, und die Plattform des Providers ist in der Regel auf eine effiziente Diagnose von SMS-Traffic-Problemen in Echtzeit ausgelegt.
@@ -376,7 +376,7 @@ Wann immer Sie um Unterstützung bei einem SMS-Problem bitten (sei es durch das 
 * Wenn Sie Logs, Traces oder Aufzeichnungen beifügen, geben Sie genau an, wo das Problem in der Datei auftritt und auch wo sich ggf. ein funktionierendes Beispiel befindet. Aufzeichnungen oder Traces können umfangreich und ihre Durchsicht entsprechend mühsam sein. Daher ist alles, was dabei hilft, darin Informationen zu finden, nützlich.
 * Wenn Sie auf Nachrichten, PDUs oder Logs verweisen, geben Sie deren Zeitstempel an, damit sie von anderen Personen leichter zu finden sind.
 * Versuchen Sie, das Problem in einer Testumgebung zu reproduzieren. Wenn Sie sich bei einer Einstellung nicht sicher sind, versuchen Sie sie in der Testumgebung und überprüfen Sie das Ergebnis mit SMPP-Traces. In der Regel ist es besser, in Testumgebungen replizierte Probleme zu melden, als Probleme in Produktionsumgebungen direkt zu melden.
-* Schließen Sie alle Änderungen oder Optimierungen ein, die auf der Plattform vorgenommen wurden: Selbst eine kleine Änderung kann enorme Auswirkungen haben. Schließen Sie auch alle Änderungen ein, die der Provider möglicherweise auf seiner Seite vorgenommen hat.
+* Nehmen Sie alle Änderungen oder Modifikationen an der Plattform vor: Selbst eine kleine Änderung kann enorme Auswirkungen haben. Schließen Sie auch alle Änderungen ein, die der Provider möglicherweise auf seiner Seite vorgenommen hat.
 
 #### Wann ist eine Netzwerkaufzeichnung nützlich?
 

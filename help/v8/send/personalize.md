@@ -24,14 +24,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 100%
+source-wordcount: '483'
+ht-degree: 82%
 ---
 # Erste Schritte bei der Personalisierung {#personalize-content}
 
-Um jede Marketing-Kampagne optimal zu nutzen, bietet Ihnen Adobe Campaign eine Möglichkeit, benutzerdefinierte Inhalte bereitzustellen, die Kundinnen und Kunden auf ihrer Ebene ansprechen. Basierend auf den Profildaten sind Personalisierungsfunktionen zum Erstellen eines benutzerdefinierten Erlebnisses für verschiedene Gruppen und Einzelpersonen verfügbar: Sie können Ihre Nachrichten an jede Empfängerin und jeden Empfänger einzeln anpassen, indem Sie die vorhandenen Daten und Informationen nutzen. Dies können Vornamen, Interessen, Wohnorte, bisherige Käufe und vieles mehr sein.
+Um jede Marketing-Kampagne optimal zu nutzen, bietet Ihnen Adobe Campaign eine Möglichkeit, benutzerdefinierte Inhalte bereitzustellen, die Kundinnen und Kunden auf ihrer Ebene ansprechen. Basierend auf Profildaten können Sie mit Personalisierungsfunktionen ein benutzerdefiniertes Erlebnis für verschiedene Gruppen und Einzelpersonen erstellen: Sie können Ihre Nachrichten an jede einzelne Empfängerin und jeden einzelnen Empfänger anpassen, indem Sie die vorhandenen Daten und Informationen nutzen. Dies können Vornamen, Interessen, Wohnorte, bisherige Käufe und vieles mehr sein.
 
 Adobe Campaign vereinfacht die Personalisierung: Sie können mit einer einzigen [Nachrichtenvorlage](create-templates.md) verschiedene Arten von Inhalten anzeigen, die für jede Empfängerin und jeden Empfänger angepasst werden. Nehmen Sie in Ihre Transaktionsnachrichten, wie z. B. E-Mails zur Kaufbestätigung oder zum Warenkorbabbruch, Produktlisteninformationen für jeden Kontakt in eine E-Mail-Vorlage auf.
 
@@ -54,7 +54,7 @@ Sie können den Nachrichteninhalt wie folgt personalisieren:
 
 * Erstellen **bedingter Inhalte**
 
-  Konfigurieren Sie bedingte Inhalte, um beispielsweise eine dynamische Personalisierung basierend auf dem Empfängerprofil hinzuzufügen. Textblöcke und/oder Bilder werden eingefügt, wenn eine bestimmte Bedingung erfüllt ist. [Weitere Informationen](conditions.md).
+  Konfigurieren Sie bedingte Inhalte, um eine dynamische Personalisierung basierend auf dem Empfängerprofil hinzuzufügen, z. B. . Textblöcke und/oder Bilder werden eingefügt, wenn eine bestimmte Bedingung erfüllt ist. [Weitere Informationen](conditions.md).
 
 <!--
 * Add **personalized offers**
@@ -85,7 +85,7 @@ Bei den folgenden Variablen handelt es sich um interne Variablen, die im Rahmen 
 
 ## Anleitungsvideo {#personalization-video}
 
-Machen Sie sich mit den verschiedenen Arten von dynamischem Content vertraut und erfahren Sie, wie Sie Gestaltungsbausteine und bedingte Anweisungen erstellen und auf einen Versand anwenden.
+Machen Sie sich mit den verschiedenen Arten dynamischer Inhalte vertraut und erfahren Sie, wie Sie Gestaltungsbausteine und bedingte Anweisungen erstellen und auf einen Versand anwenden.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452877?captions=ger&quality=12)

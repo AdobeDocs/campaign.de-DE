@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 99%
+source-wordcount: '459'
+ht-degree: 87%
 ---
 # Erste Schritte mit Transaktionsnachrichten{#send-transactional-messages}
 
@@ -68,7 +68,7 @@ Die wichtigsten Schritte für die Einrichtung sind nachfolgend beschrieben:
 1. [Testen Sie die Nachricht](transactional-template.md#test-message-template).
 1. [Veröffentlichen Sie die Nachrichtenvorlage](transactional-template.md#publish-message-template).
 
-Wenn nach der Erstellung und Veröffentlichung der Transaktionsnachrichtenvorlage ein entsprechendes Ereignis ausgelöst wird, werden die relevanten Daten über die [SOAP-Methoden](../send/event-description.md) PushEvent und PushEvents an Campaign gesendet. Danach erfolgt der Versand an die ausgewählte Zielgruppe.
+Wenn nach der Erstellung und Veröffentlichung der Transaktionsnachrichtenvorlage ein entsprechendes Ereignis ausgelöst wird, werden die relevanten Daten über die Methoden PushEvent und PushEvents [SOAP an Campaign gesendet](../send/event-description.md) und der Versand wird an die ausgewählte Zielgruppe gesendet.
 
 ## Ereignistypen erstellen {#create-event-types}
 
@@ -98,4 +98,4 @@ Gehen Sie wie folgt vor, um Ereignistypen für die Verarbeitung in Adobe Campaig
 >
 >Weitere Informationen über [Auflistungen](../config/enumerations.md).
 
-Im nächsten Schritt erfahren Sie, wie Sie [Ihre Vorlage für Transaktionsnachrichten erstellen und veröffentlichen](transactional-template.md).
+Im nächsten Schritt erfahren Sie, wie Sie [Vorlage für Transaktionsnachrichten erstellen und &#x200B;](transactional-template.md).

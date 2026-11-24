@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1218'
-ht-degree: 96%
+ht-degree: 91%
 ---
 # Leitlinien für die Implementierung von Campaign{#gs-implementation}
 
@@ -57,7 +57,7 @@ In diesem Abschnitt erfahren Sie, wie Sie Adobe Campaign an die Anforderungen Ih
 
 >[!CAUTION]
 >
->Mit **Campaign Managed Cloud Services** wird Ihre Umgebung und die anfängliche Konfiguration von Adobe gemäß den Bedingungen Ihrer Lizenzvereinbarung festgelegt. Sie dürfen keine installierten integrierten Packages, integrierten Schemata oder Berichte ändern.
+>Mit **Campaign Managed Cloud Services** werden Ihre Umgebung und die Erstkonfiguration von Adobe gemäß den Bedingungen Ihrer Lizenzvereinbarung festgelegt. Sie dürfen keine installierten integrierten Packages, integrierten Schemata oder Berichte ändern.
 >
 >Wenn Sie ein Campaign-Add-on oder eine spezifische Funktion verwenden müssen, das bzw. die Ihnen nicht zur Verfügung gestellt wurde, wenden Sie sich an Ihren **Adobe Transition Manager**.
 
@@ -195,7 +195,7 @@ Wenn Sie andere Adobe-Lösungen einsetzen, können Sie diese mit Ihrer Campaign-
 
 Sie können nur Single Sign-on (SSO) verwenden, um eine Verbindung zu Campaign herzustellen. Weitere Informationen finden Sie auf [dieser Seite](connect.md).
 
-Auf [dieser Seite](../connect/integration.md) finden Sie die vollständige Liste der Adobe-Lösungen, die mit Adobe Campaign integriert werden können.
+Die vollständige Liste der Adobe-Lösungen, die mit Adobe Campaign integriert werden können, finden Sie [auf dieser Seite](../connect/integration.md).
 
 ### Connectoren{#implementation-connectors}
 

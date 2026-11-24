@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 96%
+source-wordcount: '728'
+ht-degree: 91%
 ---
 # Verwalten von Ordnern und Ansichten {#folders-and-views}
 
@@ -72,7 +72,7 @@ Beachten Sie, dass Sie Ordnern Berechtigungen zuweisen können, um den Zugriff a
 
 Klicken Sie zum Erstellen eines Ordners mit der rechten Maustaste auf einen vorhandenen Ordner und verwenden Sie das Kontextmenü.
 
-Um denselben Ordnertyp wie den von Ihnen ausgewählten zu erstellen, wählen Sie die erste Option im Kontextmenü aus. Wählen Sie beispielsweise im Ordner &quot;Empfänger&quot; die Option **[!UICONTROL Neuen Ordner &#39;Empfänger&#39; erstellen]**.
+Um denselben Ordnertyp wie den ausgewählten zu erstellen, wählen Sie die erste Option im Kontextmenü aus. Wählen Sie beispielsweise im Ordner &quot;Empfänger&quot; die Option **[!UICONTROL Neuen Ordner &#39;Empfänger&#39; erstellen]**.
 
 ![](assets/create-recipient-folder.png)
 
@@ -137,7 +137,7 @@ Sie können die Ordner mit den Pfeilen auf der rechten Seite verschieben oder di
 
 ## Filtern von Daten in einem Ordner{#filter-data-in-a-folder}
 
-Um in einem Ordner gespeicherte Daten zu filtern, greifen Sie auf die Dateieigenschaften zu und wählen Sie die Registerkarte &quot;Einschränkung&quot; aus.
+Um in einem Ordner gespeicherte Daten zu filtern, greifen Sie auf die Ordnereigenschaften zu und wählen Sie die Registerkarte Einschränkung aus.
 
 Der folgende Ordner enthält beispielsweise nur Kontakte mit einer E-Mail-Adresse, deren Ursprung nicht als &quot;extern&quot; gekennzeichnet oder leer ist.
 

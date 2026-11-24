@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '3196'
-ht-degree: 92%
+ht-degree: 89%
 ---
 # Best Practices für den Versand {#delivery-best-practices}
 
@@ -60,7 +60,7 @@ Bevor Sie mit dem Erstellen von Sendungen beginnen, können Sie mehrere Maßnahm
 
 Mehrere Faktoren können die Server-Leistung direkt beeinflussen und die Campaign-Plattform verlangsamen:
 
-* Anzahl und Art der [Personalisierungselemente](../send/personalize.md): Durch Personalisierung in E-Mails werden Daten für jede Empfängerin bzw. jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen ist die für die Versandvorbereitung benötigte Datenmenge größer. Dies kann Ihre Plattform verlangsamen. Weiterführende Informationen zu Schutzmechanismen für die Personalisierung finden Sie in [diesem Abschnitt](../send/personalize.md#perso-guardrails).
+* Anzahl und Art der [Personalisierungselemente](../send/personalize.md): Durch Personalisierung in E-Mails werden Daten für jede Empfängerin bzw. jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen ist die Datenmenge, die zur Vorbereitung des Versands benötigt wird, höher. Dies kann Ihre Plattform verlangsamen. Weiterführende Informationen zu Schutzmechanismen für die Personalisierung finden Sie in [diesem Abschnitt](../send/personalize.md#perso-guardrails).
 
 * Auslastung des Servers: Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Performance verlangsamt werden. Der Marketing-Server muss alle eingehenden und ausgehenden Daten für alle Sendungen koordinieren, um sicherzustellen, dass die Daten korrekt sind und rechtzeitig gesendet werden.
 Um dies zu vermeiden, koordinieren Sie die zeitliche Durchführung von Sendungen mit anderen Team-Mitgliedern, sodass eine optimale Leistung gewährleistet ist.
@@ -116,7 +116,7 @@ Versandvorlagen ermöglichen eine effiziente Nutzung, da sie für die häufigste
 
 ### Subdomains und Branding {#subdomains-and-branding}
 
-Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Wenn einer Bank die Domain „bluebank.com“ gehört, sind beispielsweise folgende Subdomains möglich: @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com. Mit einer Versandvorlage pro Subdomain können Sie stets die richtigen vorkonfigurierten Parameter für jede Marke verwenden, um Fehler zu verhindern und Zeit zu sparen. Weitere Informationen zum Subdomain-Branding finden Sie in der [Dokumentation zum Control Panel von Campaign](https://experienceleague.adobe.com/de/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
+Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Wenn eine Bank die Domain bluebank.com besitzt, können ihre Subdomains @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com usw. sein. Eine Versandvorlage pro Subdomain ermöglicht es Ihnen, immer die richtigen vorkonfigurierten Parameter für jede Ihrer Marken zu verwenden, wodurch Fehler vermieden und Zeit gespart werden. Weitere Informationen zum Subdomain-Branding finden Sie in der [Dokumentation zum Control Panel von Campaign](https://experienceleague.adobe.com/de/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}.
 
 ### Konfigurieren von Adressen {#configure-addresses}
 
@@ -143,7 +143,7 @@ Gehen Sie wie folgt vor, um Adressen in der Campaign-Benutzeroberfläche zu konf
 
 ### Einrichten einer Kontrollgruppe {#set-up-control-group}
 
-Sobald der Versand durchgeführt wurde, können Sie das Verhalten der ausgeschlossenen Empfänger mit den Empfängern vergleichen, die den Versand erhalten haben. Anschließend können Sie die Effizienz Ihrer Kampagnen messen. Weiterführende Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
+Sobald der Versand durchgeführt wurde, können Sie das Verhalten der ausgeschlossenen Empfänger mit den Empfängern vergleichen, die den Versand erhalten haben. Anschließend können Sie die Effizienz Ihrer Kampagnen messen. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
 ### Verwenden von Typologien, um Filter und Kontrollregeln anzuwenden {#create-typologies}
 
@@ -171,9 +171,9 @@ Um Ihre Nachrichten zu personalisieren, können Sie die Empfängerdaten verwende
   %>
   &grave;&grave;
 
-  Weitere Informationen zu Gestaltungsbausteinen finden Sie in [diesem Abschnitt](../send/personalization-blocks.md).
+  Weiterführende Informationen zu Gestaltungsbausteinen finden Sie [diesem Abschnitt](../send/personalization-blocks.md).
 
-* Bereiten Sie Personalisierungsdaten vor – Sie können die Personalisierungsdaten in einem Workflow vorbereiten, um die Analyse der Versandvorbereitung zu verbessern. Dies sollte insbesondere dann verwendet werden, wenn die Personalisierungsdaten über Federated Data Access (FDA) aus einer externen Tabelle stammen. Diese Option wird in diesem [Abschnitt beschrieben](../send/personalization-data.md#optimize-personalization).
+* Bereiten Sie Personalisierungsdaten vor – Sie können die Personalisierungsdaten in einem Workflow vorbereiten, um die Analyse der Versandvorbereitung zu verbessern. Dies sollte insbesondere verwendet werden, wenn die Personalisierungsdaten aus einer externen Tabelle über Federated Data Access (FDA) stammen. Diese Option wird in ([&#x200B; Abschnitt) &#x200B;](../send/personalization-data.md#optimize-personalization)
 +++
 
 ### Erstellen optimierter Inhalte {#build-optimized-content}
@@ -215,7 +215,7 @@ Achten Sie besonders auf den [Betreff](../send/personalization-fields.md#persona
 
 ### Mirrorseite {#mirror-page-check}
 
-Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position ist am Anfang der E-Mail – Weitere Informationen zur Mirrorseite finden Sie auf [dieser Seite](../send/mirror-page.md).
+Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position befindet sich oben in der E-Mail. Weitere Informationen zur Mirrorseite finden Sie auf [dieser Seite](../send/mirror-page.md).
 
 ### Abmelde-Link {#unsub-link-check}
 

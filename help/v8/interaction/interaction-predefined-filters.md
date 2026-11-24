@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 100%
+ht-degree: 87%
 ---
 # Erstellen vordefinierter Filter{#creating-pre-defined-filters}
 
@@ -38,7 +38,7 @@ Erstellen Sie vordefinierte Filter, um Eignungsregeln für die Zielpopulation zu
 
 >[!NOTE]
 >
->Die Adobe Campaign Web-Benutzeroberfläche bietet Ihnen eine benutzerfreundliche Oberfläche zur mühelosen Verwaltung und Anpassung vordefinierter Filter an Ihre spezifischen Anforderungen. Sie können Filter einmal erstellen und für die zukünftige Verwendung speichern. Weitere Informationen zu vordefinierten Filtern für die Web-Benutzeroberfläche finden Sie in der [Dokumentation zur Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
+>Die Web-Benutzeroberfläche von Adobe Campaign bietet eine benutzerfreundliche Oberfläche, mit der Sie vordefinierte Filter mühelos verwalten und an Ihre spezifischen Anforderungen anpassen können. Sie können Filter einmal erstellen und für die zukünftige Verwendung speichern. Weitere Informationen zu vordefinierten Filtern für die Web-Benutzeroberfläche finden Sie in der [Dokumentation zur Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/predefined-filters){target=_blank}.
 
 
 Gehen Sie wie folgt vor, um einen Filter zu erstellen:

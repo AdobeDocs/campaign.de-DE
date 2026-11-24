@@ -22,10 +22,10 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 100%
+ht-degree: 89%
 ---
 # Löschen von Abonnements mit APIs {#mdeleting-subscriptions-api}
 
@@ -109,7 +109,7 @@ Führen Sie eine DELETE-Anfrage für die gewünschte Dienst-URL aus.
 Dies ist ein dreistufiges Verfahren.
 
 1. Rufen Sie den gewünschten Dienst und dessen Anmeldungs-URL ab.
-1. Führen Sie eine GET-Anfrage für die Anmeldungs-URL durch, um alle Profilanmeldungen abzurufen.
+1. Führen Sie eine GET-Anfrage für die Abonnement-URL durch, um alle Profilabonnements abzurufen.
 1. Führen Sie eine DELETE-Anfrage für die gewünschte Profilanmeldungs-URL aus.
 
 Ist die Löschanfrage erfolgreich, lautet der Antwortstatus &quot;204 Kein Inhalt&quot;.

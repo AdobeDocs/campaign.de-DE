@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 30b0f5eda9c80b72af5c8574e01cec6965b05564
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2028'
-ht-degree: 91%
+ht-degree: 85%
 ---
 # Daten-Packages{#data-packages}
 
@@ -58,7 +58,7 @@ ht-degree: 91%
 
 Sie können Daten-Packages verwenden, um benutzerdefinierte Plattformeinstellungen und -daten zu exportieren und zu importieren. Daten-Packages können verschiedene Arten von Konfigurationen und Komponenten enthalten, gefiltert oder ungefiltert.
 
-In Campaign-Daten-Packages werden Entitäten der Adobe Campaign-Datenbank in XML-Dateien angezeigt. In einem Daten-Package wird jede Entität mit allen Daten dargestellt.
+In Campaign-Datenpaketen werden Entitäten der Adobe Campaign-Datenbank in XML-Dateien angezeigt. In einem Daten-Package wird jede Entität mit allen Daten dargestellt.
 
 Auf dieser Seite werden **benutzerdefinierte** Datenpakete beschrieben, die Sie erstellen und verwalten. Die Pakete, die die Campaign-Funktionen bereitstellen **sind integrierte Pakete** die von Adobe installiert und verwaltet werden. Weitere Informationen finden [&#x200B; unter „Integrierte Pakete](../architecture/built-in-packages.md).
 
@@ -119,7 +119,7 @@ Es gibt drei Möglichkeiten, um Packages zu exportieren:
 * Um ein **einzelnes Objekt** zu exportieren, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Aktionen > In ein Package exportieren]** aus.
 * Verwenden Sie die **Package-Definitionen**, um eine Package-Struktur zu erstellen, in der Sie Objekte hinzufügen, die später in ein Package exportiert werden sollen. [Weitere Informationen](#manage-package-definitions)
 
-Nachdem ein Package exportiert wurde, können Sie das Package und alle hinzugefügten Entitäten in eine andere Campaign-Instanz importieren.
+Nachdem ein Paket exportiert wurde, können Sie es und alle hinzugefügten Entitäten in eine andere Campaign-Instanz importieren.
 
 ### Exportieren mehrerer Objekte in ein Package {#export-a-set-of-objects-in-a-package}
 
@@ -253,7 +253,7 @@ Anschließend können Sie Entitäten zur Package-Definition hinzufügen und dies
 
 ### Entitäten zu einer Package-Definition hinzufügen {#add-entities-to-a-package-definition}
 
-Klicken Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die Entitäten auszuwählen, die mit dem Package exportiert werden sollen. Best Practices bei der Auswahl von Entitäten werden in [diesem Abschnitt](#export-a-set-of-objects-in-a-package) vorgestellt.
+Klicken Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die Entitäten auszuwählen, die mit dem Package exportiert werden sollen. Best Practices für die Auswahl von Entitäten finden Sie in [diesem Abschnitt](#export-a-set-of-objects-in-a-package).
 
 ![](assets/packagedefinition_addentities.png)
 
@@ -297,7 +297,7 @@ Der Package-Import-Assistent wird im Hauptmenü der Client-Konsole über **[!UIC
 
 Gehen Sie wie folgt vor, um ein vorhandenes Daten-Package zu importieren:
 
-1. Rufen Sie den Import-Assistenten im Hauptmenü der Client-Konsole über **[!UICONTROL Werkzeuge > Erweitert > Package importieren]** auf.
+1. Greifen Sie über das Hauptmenü der Client **[!UICONTROL Konsole (Tools > Erweitert > Package importieren]** auf den Import-Assistenten zu.
 1. Wählen Sie die XML-Datei aus und klicken Sie auf **[!UICONTROL Öffnen]**.
 
 Der Inhalt des zu importierenden Packages wird daraufhin im mittleren Bereich des Assistenten angezeigt.
@@ -344,7 +344,7 @@ Dieser Package-Typ:
 
 **Kampagnen**
 
-Dieses Package ist nicht obligatorisch. Manchmal ist es sinnvoll, einen bestimmten Typ für alle Kampagnen zu erstellen, selbst wenn eine Kampagne als Funktion betrachtet werden kann.
+Dieses Package ist nicht obligatorisch. Manchmal ist es nützlich, einen bestimmten Typ für alle Kampagnen zu erstellen, auch wenn eine Kampagne als Funktion angesehen werden kann.
 
 **Aktualisierungen**
 
@@ -358,7 +358,7 @@ Eine Aktualisierung kann nicht nur aus einer Fehlerbehebung, sondern auch aus ei
 
 ### Namenskonventionen {#data-package-naming}
 
-Da die Typen jetzt definiert sind, sollte nun eine Namenskonvention festgelegt werden. Adobe Campaign erlaubt keine Erstellung von Unterordnern für Package-Spezifikationen, d. h. Zahlen sind die beste Lösung, um eine übersichtliche Struktur beizubehalten. Zahlen werden Package-Namen als Präfix vorangestellt.
+Da die Typen jetzt definiert sind, sollte nun eine Namenskonvention festgelegt werden. Adobe Campaign erlaubt es nicht, Unterordner für Paketspezifikationen zu erstellen, was bedeutet, dass Zahlen die beste Lösung sind, um organisiert zu bleiben. Zahlen werden Package-Namen als Präfix vorangestellt.
 
 Sie können beispielsweise die folgende Konvention verwenden:
 
@@ -369,7 +369,7 @@ Sie können beispielsweise die folgende Konvention verwenden:
 
 #### Reihenfolge von Entitäts-Packages {#entity-packages-order}
 
-Um den Import zu erleichtern, sollten Entitäts-Packages beim Importieren geordnet werden.
+Um den Import zu erleichtern, sollten Entitätspakete so bestellt werden, wie sie importiert werden sollten.
 
 Beispiel:
 

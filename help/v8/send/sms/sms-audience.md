@@ -26,16 +26,16 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 97%
+source-wordcount: '534'
+ht-degree: 83%
 ---
 # Auswählen der Zielgruppe für den SMS-Versand {#sms-audience}
 
 Bevor Sie Ihre Zielgruppe auswählen, können Sie [hier](../../audiences/gs-audiences.md) mehr über Zielgruppen erfahren.
 
-Meistens wird die Hauptzielgruppe eines Versands aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Die Zielgruppe kann aber auch in einer externen Datei gespeichert sein. [Weitere Informationen finden Sie in diesem Abschnitt](#external-audience).
+In den meisten Fällen wird die Hauptzielgruppe eines Versands aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Die Zielgruppe kann aber auch in einer externen Datei gespeichert sein. [Weitere Informationen finden Sie in diesem Abschnitt](#external-audience).
 
 ## Zielgruppe in Adobe Campaign
 
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um die Zielgruppe für Ihren Versand auszuwählen:
 
 1. Klicken Sie im Versandeditor auf den Link **[!UICONTROL An]**. Daraufhin wird das Fenster **[!UICONTROL Auswahl der Zielgruppe]** geöffnet:
 
-1. Da die Zielgruppe in der Adobe Campaign-Datenbank gespeichert ist, wählen Sie auf der Registerkarte **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL Von der Datenbank ausgehend definiert]** aus.
+1. Da die Zielgruppe in der Adobe Campaign-Datenbank gespeichert ist, wählen Sie auf der Registerkarte **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL In der Datenbank definiert]** aus.
 
    ![](assets/audience_to.png){zoomable="yes"}
 
@@ -76,11 +76,11 @@ Gehen Sie wie folgt vor, um die Zielgruppe für Ihren Versand auszuwählen:
 
    ![](assets/audience_finish.png){zoomable="yes"}
 
-   Sie können die erforderlichen Zielpopulationen durch erneutes Klicken auf die Schaltfläche **[!UICONTROL Hinzufügen]** hinzufügen. Sie können auch welche löschen, indem Sie auf das X nach dem Titel klicken.
+   Sie können beliebig viele Zielpopulationen hinzufügen, indem Sie erneut auf die Schaltfläche **[!UICONTROL Hinzufügen]** klicken. Sie können auch welche löschen, indem Sie auf das X nach dem Titel klicken.
 
 ## Zielgruppe in einer externen Datei {#external-audience}
 
-Sie können Adobe Campaign verwenden, um einen Versand an eine Zielgruppe durchzuführen, die nicht in der Datenbank, sondern in einer externen Datei vorhanden ist.
+Sie können Adobe Campaign verwenden, um einen Versand an eine Zielgruppe zu senden, die sich nicht in der Datenbank, sondern in einer externen Datei befindet.
 
 Gehen Sie dazu wie folgt vor:
 

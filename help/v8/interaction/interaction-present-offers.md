@@ -21,10 +21,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 78%
+source-wordcount: '185'
+ht-degree: 66%
 ---
 # Unterbreiten des besten Angebots{#interaction-present-offers}
 

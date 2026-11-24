@@ -35,10 +35,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 55%
+source-wordcount: '562'
+ht-degree: 53%
 ---
 # Versandstatus {#delivery-statuses}
 
@@ -70,7 +70,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
   </tr> 
   <tr> 
    <td> Ignoriert<br /> </td> 
-   <td> Der Versand wurde aufgrund eines Fehlers in der Adresse des Empfängers nicht an diesen geschickt. Die Adresse war entweder auf einer Blockierungsliste, unter Quarantäne gestellt, nicht angegeben oder ein Duplikat. <br /> </td> 
+   <td> Der Versand wurde aufgrund eines Fehlers in der Adresse des Empfängers nicht an diesen geschickt. Sie war entweder auf der Blockierungsliste, unter Quarantäne gestellt, nicht angegeben oder ein Duplikat. <br /> </td> 
   </tr> 
   <tr> 
    <td> Fehlgeschlagen<br /> </td> 

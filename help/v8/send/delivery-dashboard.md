@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1207'
-ht-degree: 63%
+ht-degree: 62%
 ---
 # Überwachen von Sendungen in der Campaign-Benutzeroberfläche {#delivery-dashboard}
 
@@ -64,7 +64,7 @@ Im **Versand-Dashboard** können Sie Sendungen beobachten und etwaige Probleme b
 
 Sie können Informationen zu einem Versand abrufen und bei Bedarf bearbeiten. Beachten Sie, dass nach Abschluss des Versands der Inhalt der einzelnen Tabs nicht mehr verändert werden kann und nur zur Ansicht zur Verfügung steht.
 
-Die folgenden Informationen können Sie mit den verschiedenen Tabs im Dashboard überwachen:
+Im Folgenden finden Sie die Informationen, die Sie über die verschiedenen Registerkarten im Dashboard überwachen können:
 
 * [Versandzusammenfassung](#delivery-summary)
 * [Versandberichte](#delivery-reports)

@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 82%
+source-wordcount: '1833'
+ht-degree: 76%
 ---
 # Arbeiten mit Campaign und Adobe Analytics {#ac-aa}
 
@@ -199,7 +199,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
    >[!NOTE]
    >
-   >Die Felder Kampagnenkennung und Broadlog-ID werden über JavaScript auf der Landingpage oder durch Verarbeitungsregeln erfasst. [Weitere Informationen zu Verarbeitungsregeln](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Die Felder Kampagnen-ID und Broadlog-ID werden über JavaScript auf der Landingpage oder durch Verarbeitungsregeln erfasst. [Weitere Informationen zu Verarbeitungsregeln](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 
@@ -240,7 +240,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 1. Auf der Registerkarte **[!UICONTROL Erweitert]** können Sie fortgeschrittene Parameter ändern.
 
    * **[!UICONTROL Lebensdauer]**: Hier können Sie die Verzögerung (in Tagen) angeben, nach der die Web-Ereignisse in Adobe Campaign durch technische Workflows wiederhergestellt werden. Standardmäßig sind das 180 Tage.
-   * **[!UICONTROL Persistenz]**: Zeitraum (standardmäßig 7 Tage), während dem ein Webereignis (z. B. ein Kauf) einer Remarketing-Kampagne zugeordnet werden kann.
+   * **[!UICONTROL Persistenz]**: Hier können Sie den Zeitraum angeben, über den jedes Web-Ereignis (z. B. eine Bestellung) einer Remarketing-Kampagne zugeordnet werden kann. Standard: 7 Tage.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Folgende Indikatoren werden übermittelt:
 
 >[!NOTE]
 >
->Die gesendete Daten sind die Differenz zur letzten Übermittlung, was zu einem negativen Wert in den Metrikdaten führen kann.
+>Gesendete Daten sind das Delta, das auf der letzten Momentaufnahme basiert, was zu negativen Werten in den Metrikdaten führen kann.
 
 Folgende Attribute werden übermittelt:
 
@@ -308,7 +308,7 @@ Um Ihre Remarketing-Kampagne vorzubereiten, erstellen Sie einfach Versandvorlage
 
 Remarketing-Kampagnen werden automatisch gestartet, sobald Adobe Campaign die Segmente wiederhergestellt hat, mit denen das Verhalten der Zielgruppe der ursprünglichen Kampagne analysiert wurde. Im Falle eines Warenkorbabbruchs oder eines Aufrufs eines Produkts ohne Kauf wird ein Versand an die betroffenen Empfängerinnen und Empfänger gesendet, damit sie ihren Einkauf auf der Website abschließen können.
 
-Adobe Campaign stellt vorkonfigurierte Versandvorlagen zur Verfügung, die Sie verwenden oder als Anregung für Ihre Kampagnen nutzen können.
+Adobe Campaign bietet personalisierte Versandvorlagen, die Sie zur Kampagnenvorbereitung verwenden oder auf denen Sie basieren können.
 
 1. Rufen Sie vom **[!UICONTROL Explorer]** aus den Ordner **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Versandvorlagen]** im Navigationsbaum von Adobe Campaign auf.
 1. Duplizieren Sie die Vorlage **[!UICONTROL E-Mail-Versand (Remarketing)]** oder die von Adobe Campaign vorgeschlagenen Remarketing-Vorlagenbeispiele.

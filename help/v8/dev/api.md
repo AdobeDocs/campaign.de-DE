@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 82%
+source-wordcount: '315'
+ht-degree: 74%
 ---
 # Erste Schritte mit [!DNL Campaign] APIs {#gs-ac-api}
 
@@ -53,14 +53,14 @@ Es ist zu beachten, dass Campaign in seiner [Enterprise (FFDA)-Bereitstellung](.
 
 >[!CAUTION]
 >
->* Ab Campaign v8.5.1 hat sich der Authentifizierungsprozess für Campaign v8 geändert. Technische Benutzerinnen bzw. Benutzer müssen Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
+>* Ab Campaign v8.5.1 wurde der Authentifizierungsprozess in Campaign v8 geändert. Technische Benutzerinnen bzw. Benutzer müssen das Adobe-Identitäts-Management-System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/upgrades/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
 >
 >* [!DNL Adobe Campaign] v8 enthält eine Begrenzung des Durchsatzes (TPS) auf API-Ebene. Das Aufheben dieser Begrenzung führt zu einem standardmäßigen HTTP-Fehler (429). Als Benutzer von Managed Cloud Services können Sie sich an Adobe wenden, um die Begrenzung für jede API anzupassen.
 > 
 
 ## Voraussetzungen {#ac-api-prerequisites}
 
-Vor der Arbeit mit [!DNL Adobe Campaign]-APIs sollten Sie sich mit den folgenden Themen vertraut machen:
+Bevor Sie [!DNL Adobe Campaign] APIs verwenden, müssen Sie mit den folgenden Themen vertraut sein:
 
 * JavaScript
 * SOAP-Protokoll

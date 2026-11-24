@@ -26,14 +26,14 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1473'
-ht-degree: 100%
+ht-degree: 92%
 ---
 # Definieren interaktiver Inhalte{#defining-interactive-content}
 
-Mit Adobe Campaign können Sie das interaktive Format [AMP für E-Mail](https://amp.dev/de/about/email/) nutzen, das unter bestimmten Bedingungen das Senden dynamischer E-Mails ermöglicht.
+Mit Adobe Campaign können Sie das interaktive Format [AMP für E-Mail](https://amp.dev/de/about/email/) verwenden, mit dem Sie unter bestimmten Bedingungen dynamische E-Mails senden können.
 
 Mit AMP für E-Mail können Sie Folgendes tun:
 * Testen Sie den Versand von AMP-E-Mails nur an bestimmte, entsprechend konfigurierte Adressen.
@@ -41,11 +41,11 @@ Mit AMP für E-Mail können Sie Folgendes tun:
 
 Weitere Informationen zum Testen und Senden von AMP-E-Mails finden Sie in [diesem Abschnitt](#targeting-amp-email).
 
-Diese Funktion ist über ein dediziertes Paket in Adobe Campaign verfügbar. Je nach Ihren Berechtigungen und Ihrem Bereitstellungsmodell können Sie dieses Paket selbst installieren oder Adobe bitten, es für Sie zu installieren.
+Diese Funktion ist über ein dediziertes Paket in Adobe Campaign verfügbar. Je nach Ihren Berechtigungen und Ihrem Bereitstellungsmodell können Sie dieses Paket installieren oder sich an Adobe wenden, um es für Sie zu installieren.
 
 ## Informationen zu AMP für E-Mail {#about-amp-for-email}
 
-Verwenden Sie das neue Format von **AMP für E-Mail**, um AMP-Komponenten in Ihre Nachrichten einzuschließen und das E-Mail-Erlebnis mit komplexen und verwertbaren Inhalten zu verbessern. Über moderne App-Funktionen, die direkt in E-Mails verfügbar sind, können Empfänger dynamisch mit Inhalten in der Nachricht selbst interagieren.
+Verwenden Sie das neue Format **AMP für E**, um AMP-Komponenten in Ihre Nachrichten einzuschließen und das E-Mail-Erlebnis mit komplexen und verwertbaren Inhalten zu verbessern. Über moderne App-Funktionen, die direkt in E-Mails verfügbar sind, können Empfänger dynamisch mit Inhalten in der Nachricht selbst interagieren.
 
 Beispiel:
 * Mit AMP geschriebene E-Mails können interaktive Elemente wie Bilderkarussells enthalten.
@@ -67,7 +67,7 @@ Gehen Sie wie folgt vor, um mit Adobe Campaign erfolgreich eine AMP-E-Mail zu te
 
    >[!NOTE]
    >
-   >Derzeit können Sie AMP-E-Mails nur an [bestimmte E-Mail-Adressen](#testing-amp-delivery-for-selected-addresses) (zu Testzwecken) oder nach einer [Registrierung](#delivering-amp-emails-by-registering) mit den unterstützten E-Mail-Clients senden.
+   >Derzeit können Sie AMP-E-Mails nur an [bestimmte E-Mail-Adressen](#testing-amp-delivery-for-selected-addresses) (zu Testzwecken) oder nach [Registrierung](#delivering-amp-emails-by-registering) mit den unterstützten E-Mail-Clients senden.
 
 1. Senden Sie Ihre E-Mail wie gewohnt. Siehe [Senden einer AMP-E-Mail](#sending-amp-email).
 

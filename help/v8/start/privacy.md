@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 96%
+ht-degree: 89%
 ---
 # Verwalten von Datenschutzanfragen in Campaign {#privacy}
 
@@ -75,7 +75,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Erstellen Sie einen Namespace im [Identity-Namespace-Service](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
 
-1. Bei der [Auflistung der Identity-Namespaces](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"}, die für Ihre Organisation verfügbar sind, erhalten Sie zum Beispiel die folgenden Details zum Namespace:
+1. Bei der [Auflistung der Identity](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"}Namespaces), die für Ihre Organisation verfügbar sind, erhalten Sie beispielsweise folgende Namespace-Details:
 
    ```
    {
@@ -157,7 +157,7 @@ Die folgenden integrierten Tabellen werden bei der Durchführung von Datenschutz
 * Abonnements (subscription)
 * Angebotsvorschlag für einen Empfänger (propositionRcp)
 
-Wenn Sie benutzerdefinierte Tabellen erstellt haben, die über einen Link zur Empfängertabelle (eigener Typ) verfügen, werden diese ebenfalls berücksichtigt. Wenn Sie beispielsweise eine Transaktionstabelle haben, die mit der Empfängertabelle verknüpft ist, und eine Transaktionsdetails-Tabelle, die mit der Transaktionstabelle verknüpft ist, werden beide berücksichtigt.
+Wenn Sie benutzerdefinierte Tabellen erstellt haben, die über einen Link zur Empfängertabelle (eigener Typ) verfügen, werden diese ebenfalls berücksichtigt. Wenn Sie beispielsweise eine mit der Empfängertabelle verknüpfte Transaktionstabelle und eine mit der Transaktionstabelle verknüpfte Transaktionsdetailtabelle haben, werden beide berücksichtigt.
 <!--
 >[!CAUTION]
 >

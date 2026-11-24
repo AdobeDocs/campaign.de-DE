@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3614'
-ht-degree: 33%
+source-wordcount: '3613'
+ht-degree: 32%
 ---
 # Versionshinweise 2025 {#2025-rn}
 
@@ -294,7 +294,7 @@ Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benu
 * Behebung von Diskrepanzen bei Ereignisdaten und Kontaktdaten für die Bounce-Verwaltung. Die Logik zur Zeitzonenbehandlung wurde verbessert. (NEO-72277)
 * Verbesserte Handhabung von falsch konvertierten UTF-8-Zeichen in Briefpost-Sendungen. Ausgeblendete Zeichen werden jetzt korrekt verarbeitet, um Versandfehler zu vermeiden. (NEO-72148)
 * Fehlerkorrektur - In der Aktivität „SMS-Empfang“ treten jetzt keine Fehler mehr auf, bei denen Filter zu Speicherproblemen führten. Der Workflow wird jetzt korrekt gespeichert, ohne Fehler zu erzeugen. (NEO-70427)
-* Die SQL-Abfragegenerierung für gruppierte Eignungskriterien in Platzierungen wurde korrigiert. Es wurden fehlende Klammern in SQL-Bedingungen hinzugefügt, um eine ordnungsgemäße Filterung sicherzustellen. (NEO-70425)
+* Die SQL-Abfragegenerierung für gruppierte Eignungskriterien in Platzierungen wurde korrigiert. Fehlende Klammern in SQL-Bedingungen wurden hinzugefügt, um eine ordnungsgemäße Filterung sicherzustellen. (NEO-70425)
 
 <!--
 * Updated the public documentation link in the `ffdaUnicity` workflow email template to point to the correct page for key management in v8. (NEO-67996)
@@ -312,7 +312,7 @@ _Samstag, 25. April 2025_
 
 ### Neue Funktionen {#features-8-6-5}
 
-**Neuer SMS-Versand-Connector**: Der SMS-Versand-Connector wurde modernisiert und verbessert, um SMPP-Verbindungen im Transceiver-Modus zu aktivieren, persistente SMPP-Verbindungen zu ermöglichen und eine bessere Kompatibilität für Umgebungen sicherzustellen, die von Adobe Campaign Standard aus umgestellt werden. Für alle neuen SMS-Implementierungen ist jetzt ein neues externes SMS-Konto verfügbar. Die vorhandene Implementierung wird weiterhin unterstützt. Es wird jedoch empfohlen, zu diesem neuen, modernen und erweiterten Connector zu wechseln. [Weitere Informationen](../send/sms/sms.md)
+**Neuer SMS-Versand-Connector**: Der SMS-Versand-Connector wurde modernisiert und verbessert, um SMPP-Verbindungen im Transceiver-Modus zu aktivieren, persistente SMPP-Verbindungen zu ermöglichen und eine bessere Kompatibilität für Umgebungen sicherzustellen, die von Adobe Campaign Standard aus umgestellt werden. Für alle neuen SMS-Implementierungen ist jetzt ein neues externes SMS-Konto verfügbar. Bestehende Implementierungen werden weiterhin unterstützt, es wird jedoch empfohlen, zu diesem neuen, modernen und erweiterten Connector zu wechseln. [Weitere Informationen](../send/sms/sms.md)
 
 ### Allgemeine Verbesserungen {#improvements-8-6-5}
 
@@ -362,7 +362,7 @@ _14. Februar 2025_
 
 ### Neue Funktionen {#features-8-7-3}
 
-* **Dynamische Berichte für Transaktionsnachrichten**: Sie können jetzt Ihre Transaktionsnachrichten in der Benutzeroberfläche der dynamischen Berichte überwachen. Diese Berichte ermöglichen es Marketing-Fachleuten, alle Berichtsmetriken und Dimensionen von Transaktionsnachrichten sowie die Aufschlüsselung der über eine Vorlage gesendeten Sendungen in Echtzeit anzuzeigen. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=de){target="_blank"}
+* **Dynamische Berichte für Transaktionsnachrichten**: Sie können jetzt Ihre Transaktionsnachrichten in der Benutzeroberfläche der dynamischen Berichte überwachen. Diese Berichte bieten Marketing-Experten die Möglichkeit, alle Berichtsmetriken und Dimensionen von Transaktionsnachrichten sowie die Aufschlüsselung der über eine Vorlage gesendeten Sendungen in Echtzeit anzuzeigen. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=de){target="_blank"}
 
 * **REST-APIs für Transaktionsnachrichten**: Ereignisbasierte Transaktions-APIs sind jetzt für E-Mails verfügbar. [Weitere Informationen](../dev/api/get-started-apis.md)
 

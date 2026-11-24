@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '877'
-ht-degree: 79%
+ht-degree: 77%
 ---
 # Erste Schritte mit Web-Anwendungen{#about-web-applications}
 
@@ -116,7 +116,7 @@ Gehen Sie wie folgt vor, um eine Webanwendung zu erstellen und zu veröffentlich
 
 ## Erstkonfiguration von Web-Anwendungen {#web-application-initial-configuration}
 
-Die Erstellung von Webanwendungen erfolgt über den Link **[!UICONTROL Webanwendungen]** in den Tabs **[!UICONTROL Kampagnen]** und **[!UICONTROL Profile und Zielgruppen]**.
+Web-Anwendungen werden über den Link **[!UICONTROL Web-Anwendungen]** auf den Registerkarten **[!UICONTROL Kampagnen]** und **[!UICONTROL Profile und Zielgruppen]** erstellt.
 
 Web-Anwendungen werden im Knoten **[!UICONTROL Ressourcen > Online > Web-Anwendungen]** der Adobe Campaign-Struktur gespeichert. Konfigurationen sind in die folgenden Ordner unterteilt:
 

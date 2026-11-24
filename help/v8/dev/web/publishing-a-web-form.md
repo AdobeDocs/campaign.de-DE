@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1370'
-ht-degree: 100%
+ht-degree: 95%
 ---
 # Veröffentlichen eines Web-Formulars{#publishing-a-web-form}
 
@@ -119,7 +119,7 @@ Der Lebenszyklus eines Formulars besteht aus drei Phasen:
 
    Nach Abschluss der Konzeptionsphase kann das Formular versendet werden.
 
-   Wenn ein Formular den Status **[!UICONTROL In Bearbeitung]** oder **[!UICONTROL Veröffentlichung ausstehend]** aufweist, muss es [veröffentlicht](#publishing-a-form) werden, damit es online ist und über die URL des Web-Formulars in einem Browser aufgerufen werden kann.
+   Wenn ein Formular den Status **[!UICONTROL In Bearbeitung]** oder **[!UICONTROL Veröffentlichung]** aufweist, muss es [veröffentlicht](#publishing-a-form) sein, damit es online und über die Web-Formular-URL in einem Browser zugänglich ist.
 
    Nach der Veröffentlichung ist das Formular so lange live, bis seine Gültigkeit erlischt.
 
@@ -203,7 +203,7 @@ Weitere Informationen zu den verschiedenen Status eines Web-Formulars finden Sie
 
   * Wenn das Web-Formular bereits in der neuen Instanz vorhanden ist, wird es durch die neue Version des Formulars ersetzt und nimmt den Status **[!UICONTROL Veröffentlichung ausstehend]** an, auch wenn die alte Version des Formulars den Status **[!UICONTROL Online]** hatte.
 
-  * Unabhängig davon, ob das Formular vorhanden ist oder nicht, muss das Formular [veröffentlicht](#publishing-a-form) werden, damit es mit dem Status **[!UICONTROL Online]** auf der neuen Instanz angezeigt wird und über die URL des Web-Formulars in einem Browser zugänglich ist.
+  * Unabhängig davon, ob das Formular vorhanden ist oder nicht, muss das Formular [veröffentlicht](#publishing-a-form) sein, damit es in der neuen Instanz **[!UICONTROL Online]** wird und über die Web-Formular-URL in einem Browser zugänglich ist.
 
 * Wenn der Status des Web-Formulars beim Export **[!UICONTROL In Bearbeitung]** war:
 

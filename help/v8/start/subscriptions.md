@@ -25,16 +25,16 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 92%
+ht-degree: 90%
 ---
 # Verwaltung von Abonnements und Abmeldungen {#optin-optout}
 
 Mit Adobe Campaign können Sie Informations-Services wie Newsletter erstellen und überwachen und die Abonnements/Abmeldungen für diese verwalten. Dabei können mehrere Services parallel definiert werden, z. B. spezialisierte Newsletter für bestimmte Kategorien, Themen oder Bereiche einer Website, Abonnements zu verschiedenen Arten von Warnmeldungen und Echtzeitbenachrichtigungen.
 
-In der Dokumentation zu [Campaign Classic v7 erfahren Sie, wie Sie einen Informations-Service erstellen, Newsletter versenden und Opt-in- und Opt-out-Anfragen verwalten können](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=de){target="_blank"}
+In der Dokumentation zu [Campaign Classic v7 erfahren Sie, wie Sie einen Informations-Service erstellen, Newsletter versenden und Opt-in- und Opt-out-Anfragen verwalten](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=de){target="_blank"}
 
 Folgende Optionen stehen zum Anmelden (Opt-in) eines Profils für einen Service zur Verfügung:
 
@@ -70,7 +70,7 @@ Folgende Optionen stehen zum Anmelden (Opt-in) eines Profils für einen Service 
   Weiterführende Informationen finden Sie in diesem [Abschnitt](../dev/web/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 
-* Erstellen Sie einen Zielgruppen-Workflows und nutzen Sie die Aktivität **[!UICONTROL Anmeldedienst]**.
+* Erstellen Sie einen Zielgruppen-Workflow und verwenden Sie eine **[!UICONTROL Abonnement-]**).
 
   ![](assets/wf-subscription.png)
 

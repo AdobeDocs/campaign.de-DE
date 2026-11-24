@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 83%
 ---
 # Wichtige Informationen {#must-read}
 
@@ -33,17 +33,17 @@ ht-degree: 100%
 
 * Adobe Campaign-APIs dürfen nur von Server zu Server verwendet werden.
 * Fragen Sie bitte stets Ihren technischen Ansprechpartner bei Adobe, ob der Anwendungsfall, den Sie implementieren möchten, mit dem Funktionsbereich von Adobe Campaign-APIs übereinstimmt.
-* Für das Einrichten eines Adobe I/O-Zugriffs sind spezifische Berechtigungen erforderlich. Wenden Sie sich bei Problemen an den Adobe-Support.
+* Für die Einrichtung eines Adobe I/O-Zugriffs sind spezifische Berechtigungen erforderlich. Wenden Sie sich bei Problemen an den Adobe-Support.
 
 ## Berechtigungen und Zugriff
 
 * Standardmäßig verwenden Adobe Campaign-APIs den Administratorkontext und daher gelten die Organisationseinheiten und Rollen nicht.
 * Die Adobe Campaign-APIs sind vom Rollenkontext ausgeschlossen.
-* Wenn Sie die APIs mit einer Organisationseinheit oder Rollen konfigurieren möchten, wenden Sie sich zuerst an Ihren technischen Ansprechpartner bei Adobe.
+* Wenn Sie die APIs mit einer oder mehreren Organisationseinheiten konfigurieren möchten, wenden Sie sich bitte zuerst an Ihren technischen Adobe-Ansprechpartner.
 
 ## Ressourcendarstellung
 
-Alle API-Ressourcen sind in **JSON** mit einer URL-Erweiterung oder in einer HTTP-Accept-Kopfzeile verfügbar:
+Alle API-Ressourcen sind in **JSON** mit einer URL-Erweiterung oder in einem HTTP Accept-Header verfügbar:
 
 `GET /profileAndServices/<resourceName>.json`
 
@@ -65,7 +65,7 @@ Alle API-Ressourcen sind in **JSON** mit einer URL-Erweiterung oder in einer HTT
 
 ## Primärschlüssel und URLs
 
-* Versuchen Sie nicht, selbst eine URL einzurichten. Alle URLs werden von der API zurückgegeben. Es ist jedoch möglich, eine URL basierend auf dem Top-Level-Ressourcennamen zu erstellen.
+* Versuchen Sie nicht, selbst eine URL zu erstellen. Alle URLs werden von der API zurückgegeben. Es ist jedoch möglich, eine URL basierend auf dem Top-Level-Ressourcennamen zu erstellen.
 
 * Die Werte des automatischen Primärschlüssels (PKey), die zur Veranschaulichung der Beispiele verwendet werden, funktionieren in keiner anderen Bereitstellung. Sie werden von der Adobe Campaign-API erzeugt.
 

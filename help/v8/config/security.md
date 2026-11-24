@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2957'
-ht-degree: 64%
+ht-degree: 62%
 ---
 # Best Practices für die Campaign-Sicherheit {#ac-security}
 
@@ -101,9 +101,9 @@ Adobe Campaign ist Teil der Adobe Experience Cloud-Lösungen. Die Art und Weise,
   * Adobe Experience Cloud-Lösungen verwenden Cookies und ähnliche Technologien, wie Webbeacons (auch als Tags oder Pixel bezeichnet), um die Erfassung von Informationen zu ermöglichen. Weitere Informationen zu Cookies und Tracking-Funktionen mit Adobe Campaign finden Sie in [diesem Abschnitt](#tracking-capabilities).
   * Sie können Adobe Experience Cloud-Technologien auch in Ihren mobilen Apps verwenden. Weitere Informationen zu mobilen Sendungen mit Campaign finden Sie unter [SMS-Kanal](../send/sms/sms-channel.md) und „Mobile-App-Kanal“.
 
-* **Datenschutzoptionen Ihrer Benutzer bezüglich Ihrer Verwendung von Adobe Experience Cloud**
+* **Die Datenschutzentscheidungen Ihrer Benutzer bezüglich Ihrer Verwendung von Adobe Experience Cloud**
 
-  Adobe fordert Sie auf, Ihren Kunden Datenschutzrichtlinien bereitzustellen, in denen Folgendes beschrieben wird:
+  Adobe bittet Sie, die Datenschutzrichtlinien Ihrer Kundinnen und Kunden bereitzustellen, in denen Folgendes beschrieben wird:
 
   * Ihre Datenschutzpraktiken in Verbindung mit Adobe Experience Cloud
   * Die Art und Weise, auf die Benutzer ihre Voreinstellungen für die Erfassung oder Verwendung ihrer Informationen in Verbindung mit Adobe Experience Cloud festlegen können
@@ -165,7 +165,7 @@ Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vert
 
 ## Datenschutzverwaltung {#privacy-management}
 
-Die Datenschutzverwaltung bezieht sich auf alle Prozesse und Tools, mit denen Sie die Datenschutzbestimmungen (DSGVO, CCPA usw.) einhalten können.
+Die Datenschutzverwaltung bezieht sich auf alle Prozesse und Tools, die Ihnen bei der Einhaltung von Datenschutzbestimmungen (DSGVO, CCPA usw.) helfen.
 
 Adobe Campaign bietet Ihnen verschiedene Funktionen zur Datenschutzverwaltung:
 * Einverständnisverwaltung, Datenbeibehaltung und Benutzerrollen. Siehe [diesen Abschnitt](#consent).

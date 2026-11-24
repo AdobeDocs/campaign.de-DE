@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 96%
+ht-degree: 94%
 ---
 # Erstellen einer E-Mail-Vorschau und Testen einer E-Mail {#preview-test}
 
@@ -107,7 +107,7 @@ Es wird empfohlen, nach jeder Änderung am Nachrichteninhalt Testsendungen durch
 
 ### Eigenschaften des Testversands {#proofs-properties}
 
-Die Eigenschaften des Testversands werden im Abschnitt **[!UICONTROL Erweitert]** im Fenster der Versandeigenschaften festgelegt. Klicken Sie auf den Link **[!UICONTROL Testversandeigenschaften...]**, um die Parameter und den Titel der Testsendungen zu definieren. Sie können wählen, Folgendes beizubehalten:
+Die Eigenschaften des Testversands werden im **[!UICONTROL der Versandeigenschaften auf]** Registerkarte Erweitert festgelegt. Klicken Sie auf den Link **[!UICONTROL Testversandeigenschaften...]**, um die Parameter und den Titel der Testsendungen zu definieren. Sie können wählen, Folgendes beizubehalten:
 
 * Doppelte Adressen im Testversand
 * Adressen auf der Blockierungsliste im Testversand

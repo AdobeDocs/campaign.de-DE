@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 82%
+source-wordcount: '453'
+ht-degree: 83%
 ---
 # Verbinden von Campaign mit Ihren Lösungen{#gs-ac-connectors}
 
@@ -47,7 +47,7 @@ Kombinieren Sie [!DNL CX Enterprise] Lösungen zur Modernisierung Ihrer Implemen
 
 Campaign v8 kann eine Verbindung zu den folgenden Adobe-Lösungen herstellen. Gehen Sie die Links durch, um mehr über Anwendungsfälle, die Konfiguration und Richtlinien zu erfahren:
 
-* Adobe Analytics.[Weitere Informationen](../connect/ac-aa.md)
+* Adobe Analytics. [Weitere Informationen](../connect/ac-aa.md)
 * Adobe Experience Cloud-Trigger. [Weitere Informationen](../connect/ac-triggers.md)
 * Adobe Experience Manager: [Weitere Informationen](../connect/ac-aem.md)
 * Adobe Experience Platform. [Weitere Informationen](../connect/ac-aep.md)
