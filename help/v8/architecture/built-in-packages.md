@@ -26,9 +26,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 9f70a309a882347a0df658d00c47127f31d28eb9
+source-git-commit: a2ca220e4be9dfb4a90465b69dd08a3552040a07
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '827'
 ht-degree: 16%
 ---
 # Integrierte Packages {#built-in-packages}
@@ -57,7 +57,7 @@ In der folgenden Tabelle sind die integrierten Packages aufgeführt. Die Verfüg
 
 | Package | Beschreibung |
 |---|---|
-| Versand | Überwacht Sendungen und Probleme beim Versand von Nachrichten. [Weitere Informationen](../start/monitor.md) |
+| Versand | Obligatorisches Kernpaket von Adobe Campaign. Sie ermöglicht den Versand von Nachrichten. [Weitere Informationen](../start/gs-message.md) |
 | Marketing-Kampagnen (Campaign) | Definiert, optimiert, führt aus und analysiert Kommunikations- und Marketing-Kampagnen. [Weitere Informationen](../start/campaigns.md) |
 | Marketing-Ressourcen (MRM) | Steuert Marketing-Aktionen im kollaborativen Modus mit Verwaltung und Verfolgung von Aufgaben, Budgets und Marketing-Ressourcen. [Weitere Informationen](../../automation/mrm/about-marketing-resource-management.md) |
 | Angebotsmodul (interaction) | Reagiert in Echtzeit während einer Interaktion mit einem Kontakt, indem ein oder mehrere angepasste Angebote gemacht werden. [Weitere Informationen](../interaction/interaction.md) |
