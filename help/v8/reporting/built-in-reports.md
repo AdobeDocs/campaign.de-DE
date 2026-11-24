@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 100%
+source-wordcount: '1114'
+ht-degree: 99%
 ---
 # Integrierte Berichte in Adobe Campaign {#ootb-reports}
 
@@ -292,7 +292,7 @@ Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelis
   </tr> 
   <tr> 
    <td> Kumulierte Entwicklung des Budgets (budgetCumulativeEvolution)<br /> </td> 
-   <td> Entwicklung der kumulierten Budgetbeträge, verteilt nach Verbindlichkeitsniveau<br /> </td> 
+   <td> Entwicklung der kumulierten Haushaltskosten, aufgeschlüsselt nach Mittelbindungen. </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 

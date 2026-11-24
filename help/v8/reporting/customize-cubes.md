@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 96%
+source-wordcount: '1531'
+ht-degree: 95%
 ---
 # Anpassen von Cubes{#cube-custom}
 
@@ -48,7 +48,7 @@ Um die Klassierung zu aktivieren, kreuzen Sie die entsprechende Option bei der E
 
 ![](assets/cube-class.png)
 
-Sie können Klassen entweder manuell erstellen oder sie mit einer vorhandenen [Auflistung“ &#x200B;](../config/enumerations.md).
+Sie können Klassen entweder manuell erstellen oder sie mit einer vorhandenen [Auflistung“ ](../config/enumerations.md).
 
 Adobe Campaign bietet zudem einen Assistenten, um die Klassen automatisch zu erzeugen: Die Werte können in n Klassen verteilt oder nach den am häufigsten in der Datenbank vertretenen Werten gruppiert werden.
 
@@ -117,7 +117,7 @@ Auf diese Weise bietet Adobe Campaign eine Aufzählung von Domains, mithilfe der
 
 ![](assets/nmx_report_sample.png)
 
-Diese Auflistung ist nach folgendem Modell gestaltet:
+Es wird anhand der folgenden Vorlage erstellt:
 
 ![](assets/nmx_enum_domain.png)
 
@@ -255,7 +255,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/cube_multiple_filters.png)
 
-Klicken Sie nach jeder Hinzufügung, Änderung oder Löschung von Filtern auf den Pfeil, um die Berechnung neu zu starten.
+Bei jeder Änderung (Hinzufügen, Entfernen, Ändern) eines Filters muss der Bericht neu berechnet werden.
 
 Filter können auch basierend auf einer Auswahl erstellt werden. Wählen Sie hierzu die Quellzellen, -zeilen und -spalten und klicken Sie auf das Symbol **[!UICONTROL Filter hinzufügen]**.
 

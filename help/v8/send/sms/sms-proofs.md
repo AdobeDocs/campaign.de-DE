@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 97%
+source-wordcount: '281'
+ht-degree: 93%
 ---
 # Durchführen eines SMS-Testversands {#sms-proof}
 
@@ -46,7 +46,7 @@ Sie können einen Testversand für Ihren SMS-Versand durchführen, um ihn zu val
    * **[!UICONTROL Bestimmung einer speziellen Testversand-Zielgruppe]**: Ermöglicht Abfragen, die die Adressen in der Datenbank als Testversand-Zielgruppe filtern.
    * **[!UICONTROL Adressersetzung]**: Ermöglicht die Eingabe von Testadressen und Validierung des Inhalts mithilfe der Zielgruppen-Empfängerdaten. Die Ersatzadressen können manuell eingegeben oder aus der Dropdown-Liste ausgewählt werden. Die zugehörige [Auflistung](../../config/enumerations.md) ist **[!UICONTROL Substitutionsadresse (rcpAddress)]**.
      Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie können jedoch über das **[!UICONTROL Detail]**-Symbol eine bestimmte Empfängerin oder einen bestimmten Empfänger aus der Hauptzielgruppe auswählen.
-   * **[!UICONTROL Testadressen]**: Ermöglicht den Zugriff auf Testadressen als Testversand-Zielgruppe. Diese Adressen können aus einer Datei importiert oder manuell eingegeben werden.
+   * **[!UICONTROL Testadressen]**: dient dem Zugriff auf Testadressen als Testversand-Zielgruppe. Diese Adressen können aus einer Datei importiert oder manuell eingegeben werden.
    * **[!UICONTROL Spezifische Zielgruppe und Testadressen]**: Ermöglicht die Kombination von Testadressen und Adressen von Empfängerinnen und Empfängern.
 
 1. Fügen Sie nach Auswahl des gewünschten **[!UICONTROL Zielgruppenbestimmungsmodus]** Ihre Testadressen entsprechend hinzu.

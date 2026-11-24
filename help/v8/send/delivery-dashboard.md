@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1207'
-ht-degree: 63%
+ht-degree: 62%
 ---
 # Überwachen von Sendungen in der Campaign-Benutzeroberfläche {#delivery-dashboard}
 
@@ -64,7 +64,7 @@ Im **Versand-Dashboard** können Sie Sendungen beobachten und etwaige Probleme b
 
 Sie können Informationen zu einem Versand abrufen und bei Bedarf bearbeiten. Beachten Sie, dass nach Abschluss des Versands der Inhalt der einzelnen Tabs nicht mehr verändert werden kann und nur zur Ansicht zur Verfügung steht.
 
-Die folgenden Informationen können Sie mit den verschiedenen Tabs im Dashboard überwachen:
+Im Folgenden finden Sie die Informationen, die Sie über die verschiedenen Registerkarten im Dashboard überwachen können:
 
 * [Versandzusammenfassung](#delivery-summary)
 * [Versandberichte](#delivery-reports)
@@ -98,7 +98,7 @@ Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden
 
 Die Registerkarte **[!UICONTROL Versand]** enthält einen Verlauf der Vorfälle in diesem Versand. Sie enthält die Versandlogs, d. h. die Liste der gesendeten Nachrichten und deren Status sowie die zugehörigen Nachrichten.
 
-Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Verschiedene Status werden auf der Seite [Versandstatus“ &#x200B;](delivery-statuses.md).
+Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Verschiedene Status werden auf der Seite [Versandstatus“ ](delivery-statuses.md).
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Wenn Ihr Versand länger als üblich dauert, nachdem Sie auf die Schaltfläche *
 
 ### Probleme mit der IP-Adresse und der Reputation
 
-Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. Überprüfen Sie Ihre Versandlogs (Broadlogs) auf der Registerkarte **[!UICONTROL Versand]** auf Bounce-Nachrichten, die auf Reputationsprobleme hinweisen. Orientierungshilfen zur Reputationsverwaltung finden [&#x200B; im Abschnitt &#x200B;](monitoring-deliverability.md)Zustellbarkeits-Monitoring“.
+Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. Überprüfen Sie Ihre Versandlogs (Broadlogs) auf der Registerkarte **[!UICONTROL Versand]** auf Bounce-Nachrichten, die auf Reputationsprobleme hinweisen. Orientierungshilfen zur Reputationsverwaltung finden [ im Abschnitt ](monitoring-deliverability.md)Zustellbarkeits-Monitoring“.
 
 ### Versandgröße und -komplexität
 

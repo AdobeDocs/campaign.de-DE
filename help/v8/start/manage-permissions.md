@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1851'
-ht-degree: 92%
+source-wordcount: '1850'
+ht-degree: 90%
 ---
 # Verwalten von Benutzerberechtigungen{#manage-permissions}
 
@@ -221,7 +221,7 @@ Sie können die Admin Console verwenden, um Benutzergruppen zu erstellen und ihn
 
 Eine Benutzergruppe ist eine Sammlung verschiedener Benutzender, denen ein gemeinsamer Berechtigungssatz erteilt werden muss. In [diesem Abschnitt](https://helpx.adobe.com/de/enterprise/using/user-groups.html){target="_blank"} erfahren Sie, wie Sie Benutzergruppen erstellen.
 
-Sie können Produktprofile an Benutzergruppen zuweisen. Alle Benutzenden in dieser Gruppe erhalten also denselben Satz von Produktberechtigungen.
+Sie können Produktprofile an Benutzergruppen zuweisen. Alle Benutzer in dieser Gruppe erhalten also denselben Satz von Produktberechtigungen.
 
 ## Spezifische Berechtigungen{#use-named-rights}
 
@@ -259,7 +259,7 @@ Standardmäßige spezifische Berechtigungen in Adobe Campaign sind:
 
 * **[!UICONTROL LOKAL]**: Berechtigt zur lokalen Verwaltung (Dezentrales Marketing).
 
-* **[!UICONTROL ZUSAMMENFÜHRUNG]**: Berechtigt zum Zusammenführen der ausgewählten Datensätze zu einem Datensatz. Wenn Empfänger als Duplikate vorhanden sind, kann der Benutzer mit der Berechtigung **[!UICONTROL ZUSAMMENFÜHRUNG]** die Duplikate auswählen und zu einem primären Empfänger vereinen.
+* **[!UICONTROL ZUSAMMENFÜHRUNG]**: Berechtigt zum Zusammenführen der ausgewählten Datensätze zu einem Datensatz. Wenn Empfänger als Duplikate vorhanden sind, können **[!UICONTROL Benutzer mit der]** ZUSAMMENFÜHREN“ die Duplikate auswählen und sie zu einem primären Empfänger zusammenführen.
 
 * **[!UICONTROL SENDUNGEN VORBEREITEN]**: Berechtigung zum Erstellen, Bearbeiten und Speichern einer Sendung. Benutzer mit der Berechtigung **[!UICONTROL SENDUNGEN VORBEREITEN]** können auch den Prozess der Versandanalyse starten.
 

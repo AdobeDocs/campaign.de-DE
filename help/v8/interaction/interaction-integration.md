@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1483'
-ht-degree: 97%
+ht-degree: 96%
 ---
 # Hinzufügen eines Angebots auf einer Web-Seite{#add-an-offer-in-web}
 
@@ -107,7 +107,7 @@ Der Inhalt der Angebotsdarstellung wird durch das Angebotsmodul an die HTML-Seit
 
 ### Angebot für einen identifizierten Kontakt {#presenting-an-identified-offer}
 
-Um einem identifizierten Kontakt ein Angebot zu unterbreiten, läuft der Prozess ähnlich ab, wie [in diesem Abschnitt](#presenting-an-anonymous-offer) beschrieben.
+Um einem identifizierten Kontakt ein Angebot zu unterbreiten, läuft der Prozess ähnlich ab, wie in [ Abschnitt beschrieben](#presenting-an-anonymous-offer).
 
 Im Inhalt der Web-Seite müssen Sie das folgende Skript hinzufügen, das während des Aufrufs an das Modul den Kontakt identifiziert:
 
@@ -227,7 +227,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
 1. **Erweitern des Angebotsformulars zur Hinzufügung neuer Felder und Änderung eines existierenden Felds**
 
-   Öffnen Sie das Formular **Angebot (nms)**.
+   Bearbeiten Sie das **Angebot (nms)** Eingabeformular.
 
    Fügen Sie im Abschnitt &quot;Views&quot; die zwei neuen Felder mit folgendem Inhalt ein:
 

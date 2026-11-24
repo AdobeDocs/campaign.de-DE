@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '563'
+ht-degree: 93%
 ---
 # Best Practices bei der Inhaltsbearbeitung{#content-editing-best-practices}
 
@@ -55,7 +55,7 @@ Bitte beachten Sie folgende Hinweise, um eine optimale Funktionsweise des Editor
 
   Die offizielle Liste der „type“-Attribute ist [auf dieser Website](https://www.w3schools.com/tags/att_input_type.asp) verfügbar.
 
-* Schritte zur Simulation einer Endseite mit dem DCE:
+* Schritte zum Simulieren einer Endseite mit dem DCE:
 
   ![](assets/dce_enchainement.png)
 
@@ -105,7 +105,7 @@ Im oberen Bereich des Editors werden Nachrichten zum Status des Inhalts angezeig
 * Webanwendung wurde nicht veröffentlicht. Es besteht kein Online-Zugriff.
 * Die Webanwendung ist online. Änderungen werden nur durch eine erneute Veröffentlichung übernommen.
 * Der Inhalt der Seite ist nicht funktionsfähig. Es muss ein HTML-Formular vorhanden (`<form>`) sein
-* Noch n Eingabefelder oder Schaltflächen zu konfigurieren.
+* Es gibt keine zu konfigurierenden Eingabebereiche oder Schaltflächen.
 * Um das Weiterblättern zu ermöglichen, ist die Verbindung der Aktion &quot;Folgende Seite&quot; mit einer Schaltfläche oder einem Link der aktuellen Seite erforderlich.
 
 ### Liste der Nachrichten beim Bearbeiten eines Versands {#list-of-messages-when-editing-a-delivery}

@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '11618'
 ht-degree: 16%
@@ -37,7 +37,7 @@ Erhalten Sie schnelle Antworten auf die häufigsten Fragen zu Adobe Campaign v8.
 **Benötigen Sie Hilfe zu Versionen?** Überprüfen Sie [Upgrades](#upgrades) auf Versionsinformationen und Upgrade-Prozesse.\
 **Migration von v7 oder Standard?** Siehe [Campaign v8 und frühere Versionen](#v7-differences) für Unterschiede und Übergangsanleitungen.\
 **Benötigen Sie technische Hilfe?** Überprüfen Sie [Entwickler](#developers) und [Kampagneneinstellungen](#settings).\
-**Finden Sie Ihre Antwort nicht?** Besuchen Sie unsere [Community-Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"} oder [Support kontaktieren](#get-help).
+**Finden Sie Ihre Antwort nicht?** Besuchen Sie unsere [Community-Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"} oder [Support kontaktieren](#get-help).
 
 **Tipp** Verwenden Sie Strg+F (Befehl+F auf Mac), um auf dieser Seite nach bestimmten Keywords zu suchen. Klicken Sie auf eine Frage, um die Antwort zu erweitern.
 
@@ -68,7 +68,7 @@ Sie können das Installationsprogramm und die Client-Konsole vom Adobe Download 
 
 Greifen Sie als Admin-Benutzerin bzw. -Benutzer auf Adobe [Software-Verteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html){target="_blank"} zu, um Adobe Campaign herunterzuladen.
 
-Weitere Informationen zum Verteilungs-Center [&#x200B; Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
+Weitere Informationen zum Verteilungs-Center [ Sie auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){target="_blank"}.
 
 +++
 
@@ -78,7 +78,7 @@ Sie müssen die Campaign-Client-Konsole herunterladen und installieren, um eine 
 
 Ab Campaign Version 8.6 haben Sie Zugriff auf die **Campaign Web-Benutzeroberfläche**, die über die zentrale [!DNL CX Enterprise] verfügbar ist. [!DNL CX Enterprise] ist die integrierte Produktfamilie von Adobe mit Programmen, Produkten und Services für Digital Marketing.
 
-Erfahren Sie auf dieser Seite , wie Sie eine Verbindung zu [!DNL CX Enterprise] herstellen und auf [&#x200B; Adobe Campaign-Web-Benutzeroberfläche &#x200B;](campaign-ui.md#ac-web-ui). Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
+Erfahren Sie auf dieser Seite , wie Sie eine Verbindung zu [!DNL CX Enterprise] herstellen und auf [ Adobe Campaign-Web-Benutzeroberfläche ](campaign-ui.md#ac-web-ui). Weitere Informationen finden Sie in der [Dokumentation zur Adobe Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
 
 **Verwandte Themen:**
@@ -102,7 +102,7 @@ Ja! Dank der Integration mit dem IMS (Adobe Identity Management System) können 
 
 +++ Über welche Benutzeroberflächen-Konzepte von Campaign sollte ich Bescheid wissen?
 
-Weitere Informationen [&#x200B; Grundlagen zur Benutzeroberfläche von &#x200B;](campaign-ui.md) finden Sie in diesem Abschnitt.
+Weitere Informationen [ Grundlagen zur Benutzeroberfläche von ](campaign-ui.md) finden Sie in diesem Abschnitt.
 
 Ab Campaign v8.6 haben Sie auch Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale [!DNL CX Enterprise] verfügbar ist.
 
@@ -161,7 +161,7 @@ Die Erstellung Ihrer ersten E-Mail in Campaign v8 ist unkompliziert. Sie beginne
 
 **Verwandte Themen:**
 
-[E-Mail-Design und &#x200B;](../send/email.md) | [Ersten Versand erstellen](create-message.md) | [Versandvorlagen](../send/create-templates.md) | [Inhalt personalisieren](../send/personalize.md)
+[E-Mail-Design und ](../send/email.md) | [Ersten Versand erstellen](create-message.md) | [Versandvorlagen](../send/create-templates.md) | [Inhalt personalisieren](../send/personalize.md)
 
 +++
 
@@ -171,13 +171,13 @@ Um den Adobe-Support zu kontaktieren, verbinden Sie sich mit [Adobe Admin Consol
 
 Erfordert individuelle Konten mit korrekten Berechtigungen. Wenn Sie sich nicht anmelden können, fordern Sie den Zugriff über Experience League an. [Weitere Informationen](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html){target="_blank"}
 
-Alternativ können Sie der [Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"} beitreten, um nach Antworten zu suchen oder Experten zu fragen.
+Alternativ können Sie der [Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"} beitreten, um nach Antworten zu suchen oder Experten zu fragen.
 
 +++
 
 +++ Mit welchen Systemen und Komponenten ist Campaign v8 kompatibel?
 
-Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign &#x200B;](compatibility-matrix.md).
+Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign ](compatibility-matrix.md).
 
 +++
 
@@ -220,11 +220,11 @@ Diese Einschränkungen ändern sich mit der Erweiterung von Adobe v8. Den aktuel
 
 Die automatische Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht verfügbar.
 
-Campaign v8 ist derzeit **nur** als Managed Cloud Service verfügbar und kann nicht in On-Premise- oder Hybrid-Umgebungen bereitgestellt werden.
+Campaign v8 ist **nur** als Managed Cloud Service verfügbar und kann nicht in einer On-Premise- oder Hybridumgebung bereitgestellt werden.
 
 Weitere Informationen zum Migrationsprozess erhalten Sie von Ihrer Adobe-Support-Kontaktperson.
 
-Weitere Informationen finden Sie im Abschnitt [Campaign v8 im Vergleich zu früheren &#x200B;](#v7-differences)).
+Weitere Informationen finden Sie im Abschnitt [Campaign v8 im Vergleich zu früheren ](#v7-differences)).
 
 +++
 
@@ -258,7 +258,7 @@ Bleiben Sie über diese Kanäle über neue Campaign-Versionen auf dem Laufenden:
 * **Adobe-Support** - Kontaktiert Sie direkt, wenn eine neue Version verfügbar ist
 * **Versionshinweise** - Alle Versionen und Änderungen, die in den [Versionshinweisen zu Campaign dokumentiert sind](release-notes.md)
 * **Adobe Priority Product Updates** - [Abonnieren](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"} für E-Mail-Benachrichtigungen
-* **Campaign-Community** - Nehmen Sie an [Diskussionen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"} teil, um frühzeitig Updates zu erhalten
+* **Campaign-Community** - Nehmen Sie an [Diskussionen](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"} teil, um frühzeitig Updates zu erhalten
 
 Als Managed Cloud Services-Anwender erledigt Adobe Upgrades und koordiniert die zeitliche Abstimmung mit Ihnen.
 
@@ -283,7 +283,7 @@ Adobe empfiehlt dringend, die neueste Version auszuführen. Als Kunde von Manage
 
 **Verwandte Themen:**
 
-[Campaign-Versionen und -](upgrades.md) [&#x200B; | Neue Funktionen](whats-new.md) | [Kompatibilitätsmatrix](compatibility-matrix.md)
+[Campaign-Versionen und -](upgrades.md)[ | Neue Funktionen](whats-new.md) | [Kompatibilitätsmatrix](compatibility-matrix.md)
 
 +++
 
@@ -337,7 +337,7 @@ Campaign v8 basiert auf einer modernen Cloud-nativen Architektur mit erheblichen
 
 **Verwandte Themen:**
 
-[Schlüsselfunktionen von Campaign v8](whats-new.md) | [Architektur von Campaign v8](../architecture/architecture.md) | [Funktionsmatrix](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [Leitplanken und Einschränkungen](ac-guardrails.md)
+[Schlüsselfunktionen von Campaign v8](whats-new.md) | [Architektur von Campaign v8](../architecture/architecture.md) | [Funktionsmatrix](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [Leitplanken und Einschränkungen](ac-guardrails.md)
 
 +++
 
@@ -361,7 +361,7 @@ Campaign v8 ist die Adobe-Plattform, die sich ideal für Unternehmen eignet, die
 
 **Verwandte Themen:**
 
-[Von Campaign Classic v7 zu v8](v7-to-v8.md) | [Handbuch zur Campaign Standard-Umstellung](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Funktionsmatrix](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+[Von Campaign Classic v7 zu v8](v7-to-v8.md) | [Handbuch zur Campaign Standard-Umstellung](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Funktionsmatrix](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 
 +++
 
@@ -377,7 +377,7 @@ Nein. Campaign v8 ist ausschließlich als **Managed Cloud Service** verfügbar u
 * Kein Infrastruktur-Management oder IT-Overhead
 * Integrierte Hochverfügbarkeit und Notfallwiederherstellung
 
-Erfahren Sie mehr über [&#x200B; Architektur von Campaign v8 &#x200B;](../architecture/architecture.md) die [Unterschiede zwischen Campaign v8 und Classic v7](../start/v7-to-v8.md).
+Erfahren Sie mehr über [ Architektur von Campaign v8 ](../architecture/architecture.md) die [Unterschiede zwischen Campaign v8 und Classic v7](../start/v7-to-v8.md).
 
 +++
 
@@ -394,7 +394,7 @@ Die Migration zu Adobe Managed Services bietet einen strategischen Weg von On-Pr
 
 **Erste Schritte:** Wenden Sie sich an Ihre Adobe-Support-Fachkraft, die Ihre Umgebung bewertet und einen detaillierten Migrationsplan mit Adobe Professional Services erstellt.
 
-Erfahren Sie mehr über [Migration zu Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=de){target="_blank"} einschließlich Herausforderungen, Best Practices und einer detaillierten Migrationsstrategie.
+Erfahren Sie mehr über [Migration zu Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"} einschließlich Herausforderungen, Best Practices und einer detaillierten Migrationsstrategie.
 
 +++
 
@@ -424,7 +424,7 @@ Campaign v8 bietet die meisten v7/Standard-Funktionen mit Verbesserungen, wobei 
 
 **Verwandte Themen:**
 
-[Funktionsmatrix](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | Umstellungshandbuch [v7 zu v8](v7-to-v8.md) | [Wechsel von Campaign Standard zu v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"}
+[Funktionsmatrix](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | Umstellungshandbuch [v7 zu v8](v7-to-v8.md) | [Wechsel von Campaign Standard zu v8](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 
 +++
 
@@ -489,7 +489,7 @@ Eine Liste ist eine statische Gruppe von Empfängern, die Sie in Sendungen ausw�
 
 **Verwandte Themen:**
 
-[Zielgruppen erstellen](../audiences/create-audiences.md) | [Aktivität „Listen-Update“](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html?lang=de){target="_blank"}
+[Zielgruppen erstellen](../audiences/create-audiences.md) | [Aktivität „Listen-Update“](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html){target="_blank"}
 
 +++
 
@@ -523,7 +523,7 @@ Campaign verfolgt den Verlauf von An-/Abmeldungen und verwaltet die An-/Abmeldun
 
 Verwenden Sie die **[!UICONTROL Ausschluss]**-Aktivität in einem Workflow, um unerwünschte Profile aus Ihrer Zielgruppe zu entfernen. Platzieren Sie sie nach Ihren Zielgruppenbestimmungsaktivitäten und definieren Sie, welche Population ausgeschlossen werden soll.
 
-Weitere Informationen zur [Ausschlussaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html?lang=de){target="_blank"}
+Weitere Informationen zur [Ausschlussaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html){target="_blank"}
 
 +++
 
@@ -616,7 +616,7 @@ Die Client-Konsole unterstützt auch mehrsprachige Inhalte mit bedingten Inhalte
 
 **Verwandte Themen:**
 
-[Mehrsprachige Sendungen (Web-Benutzeroberfläche)](https://experienceleague.adobe.com/de/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Bedingte Inhalte (Client-Konsole)](../send/conditions.md)
+[Mehrsprachige Sendungen (Web-Benutzeroberfläche)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [Bedingte Inhalte (Client-Konsole)](../send/conditions.md)
 
 +++
 
@@ -644,7 +644,7 @@ Ja, aber **nur über die Campaign Web-Benutzeroberfläche**. Der KI-Assistent un
 
 **Verwandte Themen:**
 
-[KI-Assistent - Übersicht](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [Anwendungsfälle des KI-Assistenten](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Markenausrichtung](https://experienceleague.adobe.com/de/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
+[KI-Assistent - Übersicht](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [Anwendungsfälle des KI-Assistenten](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [Markenausrichtung](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
 
 +++
 
@@ -711,7 +711,7 @@ Testadressen sind spezielle Empfängerinnen und Empfänger, die automatisch zu j
 
 Testadressen verwalten in **[!UICONTROL Ressourcen > Kampagnen-Management > Testadressen]**. Halten Sie Listen klein, um eine Beeinträchtigung der Versandmetriken zu vermeiden.
 
-Weitere Informationen finden Sie im [Handbuch zu Testadressen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html?lang=de){target="_blank"}
+Weitere Informationen finden Sie im [Handbuch zu Testadressen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html){target="_blank"}
 
 +++
 
@@ -925,7 +925,7 @@ Ein Workflow kann auch die Benachrichtigung eines oder mehrerer Benutzer umfasse
 
 **Verwandte Themen:**
 
-[Erste Schritte mit Workflows](../config/workflows.md) | [Erstellen des ersten Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Workflow-Anwendungsfälle](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html?lang=de){target="_blank"} | [Überwachen der Workflow-Ausführung](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}
+[Erste Schritte mit Workflows](../config/workflows.md) | [Erstellen des ersten Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Workflow-Anwendungsfälle](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Überwachen der Workflow-Ausführung](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}
 
 +++
 
@@ -937,7 +937,7 @@ Ja. Campaign bietet mehrere Überwachungs-Tools: Workflow-Dashboard (Echtzeitsta
 
 **Verwandte Themen:**
 
-[Überwachen der Workflow-Ausführung](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"} | [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}
+[Überwachen der Workflow-Ausführung](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"} | [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}
 
 +++
 
@@ -956,7 +956,7 @@ Häufige Workflow-Muster: Datenimport, Zielgruppensegmentierung, Versand, Datena
 
 **Verwandte Themen:**
 
-[Workflow erstellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Workflow-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html?lang=de){target="_blank"} | [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"} [Anwendungsfälle für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html?lang=de){target="_blank"}
+[Workflow erstellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Workflow-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html){target="_blank"} | [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"} [Anwendungsfälle für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
 
 +++
 
@@ -984,7 +984,7 @@ Verwenden Sie Workflows mit der Aktivität **Planung**, um Kampagnen zu automati
 
 **Verwandte Themen:**
 
-[Planungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"} | [Wiederkehrende Sendungen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=de){target="_blank"} | [Kampagnenautomatisierung](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"}
+[Planungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"} | [Wiederkehrende Sendungen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/sending-a-birthday-email.html){target="_blank"} | [Kampagnenautomatisierung](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=de){target="_blank"}
 
 +++
 
@@ -1040,7 +1040,7 @@ Workflows automatisieren Marketing-Prozesse, darunter:
 
 **Verwandte Themen:**
 
-[Bibliothek mit Anwendungsfällen für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html?lang=de){target="_blank"} | [Workflow erstellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}
+[Bibliothek mit Anwendungsfällen für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [Workflow erstellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"} | [Best Practices für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}
 
 +++
 
@@ -1054,7 +1054,7 @@ Konfigurieren Sie Abstimmschlüssel für eine genaue Übereinstimmung und wähle
 
 **Verwandte Themen:**
 
-[Datenaktivität aktualisieren](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=de){target="_blank"} | [Datenverwaltungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html?lang=de){target="_blank"}
+[Datenaktivität aktualisieren](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=de){target="_blank"} | [Datenverwaltungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
 
 +++
 
@@ -1066,7 +1066,7 @@ Datenverwaltungsaktivitäten ermöglichen komplexe Operationen: Anreicherung (Hi
 
 **Verwandte Themen:**
 
-[Datenverwaltungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html?lang=de){target="_blank"} | [Anreicherungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=de){target="_blank"}
+[Datenverwaltungsaktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html){target="_blank"} | [Anreicherungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=de){target="_blank"}
 
 +++
 
@@ -1090,7 +1090,7 @@ Verwenden Sie **[!UICONTROL Split]**-Aktivität, um Populationen aufzuteilen: Fi
 
 **Verwandte Themen:**
 
-[Aufspaltungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=de){target="_blank"} | [A/B-Test-Handbuch](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html?lang=de){target="_blank"}
+[Aufspaltungsaktivität](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=de){target="_blank"} | [A/B-Test-Handbuch](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
 
 +++
 
@@ -1177,7 +1177,7 @@ Es hängt davon ab, welche Benutzeroberfläche Sie verwenden. Die Sprache **Clie
 
 **Verwandte Themen:**
 
-[Sprache in der Web-Benutzeroberfläche von Campaign ändern](https://experienceleague.adobe.com/de/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Erste Schritte mit der Campaign-Client-Konsole](connect.md)
+[Sprache in der Web-Benutzeroberfläche von Campaign ändern](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [Erste Schritte mit der Campaign-Client-Konsole](connect.md)
 
 +++
 
@@ -1212,7 +1212,7 @@ Das Campaign Control Panel ist eine Web-basierte Verwaltungsoberfläche, mit der
 Adobe Campaign v8 bietet die Möglichkeit, alle aktuellen Einstellungen für administrative und privilegierte Konten der obersten Ebene mit empfohlenen sicheren Standardeinstellungen zu vergleichen.
 
 * **Aktuelle Einstellungen (volle Sichtbarkeit):** Alle Einstellungen für administrative und berechtigte Konten können unter **[!UICONTROL Administration]** > **[!UICONTROL Zugriffsverwaltung]** (Client-Konsole oder Campaign Web-Benutzeroberfläche) überprüft werden: **[!UICONTROL Benutzer]**, **[!UICONTROL Benutzergruppen]** **[!UICONTROL spezifische Berechtigungen]** (z. B. ADMINISTRATION, GENEHMIGUNGSADMINISTRATION) und Berechtigungen auf Ordnerebene. Produktadministratoren können auch Einstellungen auf Instanzebene im [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"} überprüfen (IP-Adresse, URL-Berechtigungen, Instanzdetails und mehr).
-* **Empfohlene sichere Standardwerte:** Die [Sicherheitsrichtlinien](../config/security.md) definieren die empfohlene sichere Baseline für administrative und berechtigte Konten, einschließlich: Erstellen ausreichender Sicherheitsgruppen, Zuweisen geeigneter Zugriffsrechte pro Benutzer und Beschränken der Verwendung des Admin-Benutzers und der Admin-Gruppe. Informationen zu Netzwerk- und Verschlüsselungs-Härtung finden Sie [&#x200B; „Erweitertes Sicherheits](../config/enhanced-security.md)Add-on“.
+* **Empfohlene sichere Standardwerte:** Die [Sicherheitsrichtlinien](../config/security.md) definieren die empfohlene sichere Baseline für administrative und berechtigte Konten, einschließlich: Erstellen ausreichender Sicherheitsgruppen, Zuweisen geeigneter Zugriffsrechte pro Benutzer und Beschränken der Verwendung des Admin-Benutzers und der Admin-Gruppe. Informationen zu Netzwerk- und Verschlüsselungs-Härtung finden Sie [ „Erweitertes Sicherheits](../config/enhanced-security.md)Add-on“.
 * **Vergleich:** Administratoren vergleichen ihre aktuelle Konfiguration mit diesen dokumentierten Empfehlungen, um Lücken zu identifizieren und sichere Standardeinstellungen zu gewährleisten.
 
 **Verwandte Themen:**
@@ -1316,7 +1316,7 @@ Verwenden Sie den CRM-Connector-Assistenten von Campaign, um Felder zuzuordnen, 
 
 **Verwandte Themen:**
 
-[CRM-Connector-Konfiguration](../connect/crm.md) | [Workflow-CRM-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html?lang=de){target="_blank"}
+[CRM-Connector-Konfiguration](../connect/crm.md) | [Workflow-CRM-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html){target="_blank"}
 
 +++
 
@@ -1439,7 +1439,7 @@ Campaign bietet je nach Bedarf und technischem Know-how verschiedene Reporting-O
 
 **Verwandte Themen:**
 
-[Erste Schritte mit Reporting](../reporting/gs-reporting.md) | [Berichte der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Erste Schritte mit Reporting](../reporting/gs-reporting.md) | [Berichte der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -1474,7 +1474,7 @@ In der Client-Konsole haben Sie folgende Möglichkeiten:
 * Entwerfen bedingter Formatierung und dynamischer Inhalte
 * Zugriff auf das vollständige Campaign-Datenmodell und externe Datenbanken (FDA)
 
-Erfahren Sie, wie [&#x200B; benutzerdefinierte Berichte erstellen (Client-Konsole)](../reporting/custom-reports.md)
+Erfahren Sie, wie [ benutzerdefinierte Berichte erstellen (Client-Konsole)](../reporting/custom-reports.md)
 
 +++
 
@@ -1515,7 +1515,7 @@ Ja! Campaign enthält ein Umfragemodul, mit dem Sie Online-Fragebögen erstellen
 
 **Verwandte Themen:**
 
-[Erste Schritte mit Umfragen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [Umfrageberichte](https://experienceleague.adobe.com/de/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
+[Erste Schritte mit Umfragen](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [Umfrageberichte](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
 
 +++
 
@@ -1564,7 +1564,7 @@ Ja, Campaign unterstützt mehrere Exportformate für Berichte sowohl der Client-
 
 **Verwandte Themen:**
 
-[Benutzerdefinierte Berichte](../reporting/custom-reports.md) | [Berichte der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/de/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
+[Benutzerdefinierte Berichte](../reporting/custom-reports.md) | [Berichte der Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/en/docs/campaign-web/v8/reports/gs-reports){target="_blank"}
 
 +++
 
@@ -1818,9 +1818,9 @@ Du findest nicht, was du suchst? Im Folgenden finden Sie zusätzliche Ressourcen
 
 Tauschen Sie sich mit anderen Campaign-Benutzern und Adobe-Experten aus, um Informationen auszutauschen und Antworten zu erhalten.
 
-* **[Adobe Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"}** - Stellen Sie Fragen, teilen Sie Lösungen mit anderen und treten Sie in die Campaign-Community ein
-* **[Experience League-](https://experienceleaguecommunities.adobe.com/?lang=de){target="_blank"}**: Durchsuchen Sie Diskussionen über alle Adobe-Produkte hinweg.
-* **[Campaign Community Office Hours](https://experienceleague.adobe.com/de){target="_blank"}** - Nehmen Sie an Live-Sessions mit Adobe-Experten teil.
+* **[Adobe Campaign-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}** - Stellen Sie Fragen, teilen Sie Lösungen mit anderen und treten Sie in die Campaign-Community ein
+* **[Experience League-](https://experienceleaguecommunities.adobe.com/){target="_blank"}**: Durchsuchen Sie Diskussionen über alle Adobe-Produkte hinweg.
+* **[Campaign Community Office Hours](https://experienceleague.adobe.com/){target="_blank"}** - Nehmen Sie an Live-Sessions mit Adobe-Experten teil.
 
 ### Dokumentation und Lernen
 
@@ -1846,16 +1846,16 @@ Erhalten Sie Hilfe vom Support-Team von Adobe und verwalten Sie Ihre Instanz.
 * **[Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}** - Support-Fälle protokollieren und Benutzer verwalten
 * **[Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html){target="_blank"}** - Kontaktieren Sie das Support-Team
 * **[Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"}** - Einstellungen der Campaign-Instanz verwalten
-* **[Systemstatus](https://status.adobe.com/de-de/){target="_blank"}** - Überprüfen des Adobe Services-Status
+* **[Systemstatus](https://status.adobe.com/){target="_blank"}** - Überprüfen des Adobe Services-Status
 
 ### Schulung und Zertifizierung
 
 Erweitern Sie Ihre Kenntnisse mit offiziellen Adobe-Schulungs- und Zertifizierungsprogrammen.
 
-* **[Experience League-Hilfe](https://experienceleague.adobe.com/de/browse/campaign/campaign-v8){target="_blank"}** - Hilferessourcen für Campaign v8 (Web-Benutzeroberfläche und Client-Konsole)
+* **[Experience League-Hilfe](https://experienceleague.adobe.com/en/browse/campaign/campaign-v8){target="_blank"}** - Hilferessourcen für Campaign v8 (Web-Benutzeroberfläche und Client-Konsole)
 * **[Adobe Digital Learning Services](https://learning.adobe.com/){target="_blank"}** - Offizielle, von Kursleitern geführte Kurse und Kurse zum Selbststudium
-* **[Adobe Campaign-Zertifizierung](https://experienceleague.adobe.com/docs/certification/program/overview.html?lang=de){target="_blank"}** - Validieren Sie Ihr Fachwissen mit einer professionellen Zertifizierung.
-* **[Experience League-Lernpfade](https://experienceleague.adobe.com/de?lang=de#dashboard/learning){target="_blank"}** - Geführte Journey
+* **[Adobe Campaign-Zertifizierung](https://experienceleague.adobe.com/docs/certification/program/overview.html){target="_blank"}** - Validieren Sie Ihr Fachwissen mit einer professionellen Zertifizierung.
+* **[Experience League-Lernpfade](https://experienceleague.adobe.com/?lang=de#dashboard/learning){target="_blank"}** - Geführte Journey
 
 ### Weitere hilfreiche Ressourcen
 

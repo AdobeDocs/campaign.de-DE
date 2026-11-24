@@ -38,7 +38,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 94%
@@ -65,7 +65,7 @@ Mit Schemata können Sie eine Entität in der Datenbank definieren. Es gibt ein 
 
 Adobe Campaign verwendet Datenschemata zum:
 
-* Definieren der Relation zwischen den Datenobjekten im Programm mit den zugrunde liegenden Datenbanktabellen
+* Definieren der Verknüpfung zwischen den Datenobjekten in der Anwendung mit den zugrunde liegenden Datenbanktabellen
 * Definieren von Beziehungen zwischen den unterschiedlichen Datenobjekten in der Campaign-Anwendung
 * Definieren und Beschreiben der einzelnen Felder eines jeden Objekts
 

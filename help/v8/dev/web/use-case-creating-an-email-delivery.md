@@ -34,16 +34,16 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 98%
+source-wordcount: '806'
+ht-degree: 89%
 ---
 # Anwendungsfall: Erstellen eines E-Mail-Versands{#use-case-creating-an-email-delivery}
 
 
 
-In diesem Anwendungsbeispiel lernen Sie die Schritte zum Erstellen eines E-Mail-Versands mit Adobe Campaign Digital Content Editor (DCE) kennen.
+In diesem Anwendungsbeispiel erfahren Sie, wie Sie einen E-Mail-Versand mit dem Adobe Campaign Digital Content Editor (DCE) erstellen.
 
 Ein Versand soll mit einer personalisierten Vorlage erstellt werden, die Folgendes enthält:
 
@@ -60,17 +60,17 @@ Ein Versand soll mit einer personalisierten Vorlage erstellt werden, die Folgend
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Um einen neuen Versand zu erstellen, platzieren Sie den Cursor auf dem Tab **Kampagnen** und klicken Sie auf **Sendungen**. Klicken Sie dann über der Liste der vorhandenen Sendungen auf die Schaltfläche **Erstellen**. Weiterführende Informationen zur Erstellung eines Versands finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
+Um einen neuen Versand zu erstellen, platzieren Sie den Cursor auf dem Tab **Kampagnen** und klicken Sie auf **Sendungen**. Klicken Sie dann über der Liste der vorhandenen Sendungen auf die Schaltfläche **Erstellen**. Weiterführende Informationen zur Erstellung eines Versands finden Sie auf [dieser Seite](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
 
 ![](assets/delivery_step_1.png)
 
 ## Schritt 2: Auswählen einer Vorlage {#step-2---selecting-a-template}
 
-Wählen Sie eine Versandvorlage aus und benennen Sie Ihren Versand. Dieser Name ist nur für Benutzende der Adobe Campaign-Konsole sichtbar, nicht aber für die Empfangenden. Die Bezeichnung wird aber in der Liste der Sendungen angezeigt. Bestätigen Sie die Angaben mit der Schaltfläche **[!UICONTROL Fortfahren]**.
+Wählen Sie eine Versandvorlage aus und benennen Sie Ihren Versand. Dieser Name ist nur für Benutzende der Adobe Campaign-Konsole sichtbar, nicht für Ihre Empfängerinnen und Empfänger. Diese Überschrift wird jedoch in Ihrer Versandliste angezeigt. Bestätigen Sie die Angaben mit der Schaltfläche **[!UICONTROL Fortfahren]**.
 
 ![](assets/dce_delivery_model.png)
 
-## Schritt 3: Auswählen eines Inhalts {#step-3---selecting-a-content}
+## Schritt 3: Auswählen von Inhalten {#step-3---selecting-a-content}
 
 Der Digital Content Editor verfügt über verschiedene native Vorlagen mit unterschiedlichen Strukturen (Spalten, Textbereiche etc.).
 
@@ -78,7 +78,7 @@ Wählen Sie die Inhaltsvorlage aus, das Sie verwenden möchten, und verwenden Si
 
 ![](assets/dce_select_model.png)
 
-Darüber hinaus besteht die Möglichkeit, außerhalb von Adobe Campaign erstellte HTML-Inhalte zu importieren, indem Sie die Option **[!UICONTROL Aus einer Datei]** auswählen.
+Sie können auch HTML-Inhalte importieren, die außerhalb von Adobe Campaign erstellt wurden, indem Sie **[!UICONTROL Aus Datei]** auswählen.
 
 ![](assets/dce_select_from_file_template.png)
 

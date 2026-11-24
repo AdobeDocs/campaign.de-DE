@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2365'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Erstellen eines Rich-Push-Versands in Android {#rich-push}
 
@@ -211,7 +211,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für den **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
-1. Geben Sie im Menü **[!UICONTROL Eingabefeldoptionen]** die folgende Option ein:
+1. Füllen Sie **[!UICONTROL Menü „Optionen]** Eingabefeld“ die folgenden Optionen aus:
 
    * **[!UICONTROL Namen der Empfängerin bzw. des Empfängers eingeben]**: Geben Sie den Namen oder die Kennung für die Empfängerin bzw. den Empfänger der Eingabe ein.
    * **[!UICONTROL Eingabetext]**: Geben Sie den Text für das **Eingabefeld** ein.

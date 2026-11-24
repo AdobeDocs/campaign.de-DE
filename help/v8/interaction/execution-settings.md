@@ -21,10 +21,10 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '162'
-ht-degree: 100%
+ht-degree: 82%
 ---
 # Ausführungsparameter{#execution-settings}
 
@@ -36,6 +36,6 @@ Eine Änderung dieser Parameter ist im späteren Verlauf im Tab **[!UICONTROL Al
 
 ![](assets/offer_simulation_008.png)
 
-* **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]**: plant den Simulationsstart in Abhängigkeit von der angegebenen Priorität (Niedrig, Mittel, Hoch) mit dem Ziel, die Performance von Adobe Campaign zu optimieren.
+* **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Aktivität planen]** : dient der Planung der Simulation auf der Grundlage der ausgewählten Priorität (niedrig, Durchschnitt oder hoch), um die Leistung von Adobe Campaign zu optimieren.
 * **[!UICONTROL Priorität]**: auf die Simulation angewendete Dringlichkeit, die den Ausführungsbeginn entsprechend verschiebt. Wenn die Option **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]** aktiviert wurde, wählt der Workflow der Kampagnenvorgänge einen Zeitpunkt mit geringer Aktivität, um die Simulation zu starten.
 * **[!UICONTROL SQL-Abfragen im Protokoll speichern]**: Diese Funktion ist erfahrenen Benutzenden vorbehalten. Bei Aktivierung wird dem Protokoll eine Registerkarte hinzugefügt, in der die SQL-Abfragen angezeigt werden. Dies erleichtert die Fehlerbehebung, wenn die Simulation fehlschlägt.

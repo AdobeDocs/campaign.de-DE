@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 95%
+ht-degree: 92%
 ---
 # Wechsel von [!DNL Campaign Classic] v7 zu [!DNL Campaign] v8{#gs-matrix}
 
@@ -45,7 +45,7 @@ Als früherer [!DNL Campaign Classic] v7-Benutzer sollten Sie bei der Interaktio
 
 >[!AVAILABILITY]
 >
->* Derzeit ist Campaign v8 **nur** als Managed Cloud Service verfügbar und kann nicht in On-Premise- oder Hybridumgebungen bereitgestellt werden. [Weitere Informationen](#cloud-services)
+>* Derzeit ist Campaign v8 **nur** als Managed Cloud Service verfügbar und kann nicht in einer On-Premise- oder Hybridumgebung bereitgestellt werden. [Weitere Informationen](#cloud-services)
 >
 >* Die automatische Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht verfügbar.
 

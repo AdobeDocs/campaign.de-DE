@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 95%
+source-wordcount: '800'
+ht-degree: 90%
 ---
 # Sendezeitoptimierung und prädiktive Interaktionsbewertung{#optimize-message-delivery}
 
@@ -65,7 +65,7 @@ Innerhalb des prädiktiven Sendezeit-Optimierungsmodells gibt es zwei Untermodel
 
 Ausgabedetails:
 
-* Berechnen Sie die beste Tageszeit für den Versand einer E-Mail an den sieben Wochentagen in Intervallen von einer Stunde (z. B.: 9:00 Uhr, 10:00 Uhr, 11:00 Uhr)
+* Berechnen Sie die beste Tageszeit für den Versand einer E-Mail für die 7 Wochentage in Intervallen von 1 Stunde (z. B.: 9:00 Uhr, 10:00 Uhr, 11:00 Uhr)
 * Das Modell zeigt den besten Tag der Woche und die beste Stunde an diesem Tag an.
 * Jede optimale Zeit wird zweimal berechnet: einmal zur Maximierung der Öffnungsrate und einmal zur Maximierung der Klickrate.
 * Es werden 16 Felder angegeben (14 für die Wochentage und 2 für die ganze Woche):
@@ -103,9 +103,9 @@ Mit der prädiktiven Interaktionsbewertung können Sie Folgendes:
 Dieses Modell verwendet mehrere Bewertungen, um Folgendes anzugeben:
 
 * **Interaktionsbewertung für Öffnungen/Interaktionsbewertung für Klicks**: Dieser Wert entspricht der Wahrscheinlichkeit, mit der sich ein Abonnent mit einer bestimmte Nachricht beschäftigt (Öffnung oder Klick). Die Werte liegen zwischen 0,0 und 1,0.
-* **Abmeldewahrscheinlichkeit**: Dieser Wert entspricht der Wahrscheinlichkeit, dass der Empfänger ein E-Mail-Kanal-Abo beendet, nachdem er eine E-Mail geöffnet hat. Die Werte liegen zwischen 0,0 und 1,0.
+* **Abmeldewahrscheinlichkeit**: Dieser Wert entspricht der Wahrscheinlichkeit, dass ein Empfänger ein E-Mail-Kanal-Abo beendet, nachdem er eine E-Mail geöffnet hat. Die Werte liegen zwischen 0,0 und 1,0.
 * **Bindungsgrad**: Dieser Wert unterteilt Benutzer in drei Stufen: niedrig, mittel und hoch. Dabei bedeutet &quot;hoch&quot;, dass sie höchstwahrscheinlich bei der Marke bleiben, und &quot;niedrig&quot;, dass sie sich wahrscheinlich abmelden.
-* **Perzentilrang der Bindung**: Rang des Profils in Bezug auf die Abmeldewahrscheinlichkeit. Die Werte liegen zwischen 0,0 und 1,0. Wenn der Perzentilrang der Bindung beispielsweise 0,953 beträgt, bleibt dieser Empfänger bzw. diese Empfängerin mit größerer Wahrscheinlichkeit bei der Marke und hat eine geringere Wahrscheinlichkeit das Abo zu beenden als 95,3 % aller Empfänger bzw. Empfängerinnen.
+* **Perzentilrang der Bindung**: Rang des Profils in Bezug auf die Abmeldewahrscheinlichkeit. Die Werte liegen zwischen 0,0 und 1,0. Wenn der Perzentilrang der Bindung beispielsweise 0,953 beträgt, bleibt dieser Empfänger mit höherer Wahrscheinlichkeit bei der Marke und hat eine geringere Wahrscheinlichkeit, das Abonnement zu kündigen als 95,3 % aller Empfänger.
 
 >[!NOTE]
 >

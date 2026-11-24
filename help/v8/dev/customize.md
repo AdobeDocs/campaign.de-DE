@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 78%
+source-wordcount: '501'
+ht-degree: 69%
 ---
 # Anpassen der Instanz {#gs-ac-custom}
 
@@ -82,7 +82,7 @@ Anwendungsfall: Verknüpfen eines Felds mit einer vorhandenen Referenztabelle in
 
 ## Eingabefelder ändern
 
-Campaign-Eingabeformulare sind an Ihre Implementierung anpassbar. Sie können Formularfelder hinzufügen oder entfernen, indem Sie den XML-Inhalt ändern.
+Campaign-Eingabeformulare können an Ihre Implementierung angepasst werden. Sie können Formularfelder hinzufügen oder entfernen, indem Sie den XML-Inhalt ändern.
 
 Näheres dazu, wie Sie ein vorhandenes Eingabeformular ändern oder ein neues Formular erstellen, finden Sie in [diesem Abschnitt](../dev/forms.md).
 
@@ -92,17 +92,17 @@ Die Benutzeroberfläche von Adobe Campaign nutzt viele Web-Anwendungen für den 
 
 Die integrierten Web-Anwendungen werden im Ordner **Administration > Konfiguration > Web-Anwendungen** des Explorers gespeichert.
 
-Wie Sie eine Übersichtsseite in Campaign erstellen, erfahren Sie [&#x200B; diesem Abschnitt](web/use-cases-creating-overviews.md#creating-a-single-page-web-application)
+Wie Sie eine Übersichtsseite in Campaign erstellen, erfahren Sie [ diesem Abschnitt](web/use-cases-creating-overviews.md#creating-a-single-page-web-application)
 
 
 ## Anpassen von Listen und Erstellen von Filtern {#gs-lists-and-filters}
 
-Die in Campaign verfügbaren Listen beinhalten vordefinierte Filter, um die Navigation und Datenvisualisierung zu erleichtern.
+Campaign-Listen enthalten vordefinierte Filter, um die Navigation und Datenvisualisierung zu erleichtern.
 
 Beim Navigieren in der Explorer-Struktur von Adobe Campaign werden die in der Datenbank enthaltenen Daten in Listen angezeigt. Sie können diese Listen filtern, Suchvorgänge durchführen und Informationen hinzufügen sowie Daten filtern und sortieren.
 
 Weitere Informationen, wie Sie Listen konfigurieren und Listenkonfigurationen speichern können, finden Sie auf [dieser Seite](../start/campaign-ui.md).
 
-Sie können Filter auf diese Listen anwenden, um nur die vom Operator benötigten Daten anzuzeigen. Dann können Aktionen für die gefilterten Daten ausgeführt werden. Mit der Filterkonfiguration können Sie Daten aus einer Liste dynamisch auswählen. Beim Ändern der Daten werden die gefilterten Daten aktualisiert.
+Sie können Filter auf diese Listen anwenden, um nur die vom Operator benötigten Daten anzuzeigen. Anschließend können Aktionen für die gefilterten Daten ausgeführt werden. Mit der Filterkonfiguration können Sie Daten aus einer Liste dynamisch auswählen. Beim Ändern der Daten werden die gefilterten Daten aktualisiert.
 
 Weitere Informationen zu Filteroptionen finden Sie auf [dieser Seite](../audiences/create-filters.md).

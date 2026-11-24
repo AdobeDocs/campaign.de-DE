@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 66%
+source-wordcount: '988'
+ht-degree: 64%
 ---
 # E-Mail-Parameter {#email-parameters}
 
@@ -81,7 +81,7 @@ Auf der Registerkarte **[!UICONTROL SMTP]** der Versandeigenschaften lässt sich
 
 * **[!UICONTROL Fehler-an-Adresse]**: Standardmäßig gehen Bounce Messages im Standard-Fehlerpostfach der Plattform ein. Es besteht jedoch die Möglichkeit, für einen Versand durch Abwählen der Standardoption eine spezifische Fehleradresse anzugeben.
 
-* **[!UICONTROL Bounce-Adresse]**: Sie können auch eine andere Adresse definieren, an die die nicht verarbeiteten Bounce Messages weitergeleitet werden. Diese Adresse ermöglicht es, die Gründe für das Bounce-Verhalten zu untersuchen, wenn E-Mails von der Anwendung nicht automatisch qualifiziert werden konnten.
+* **[!UICONTROL Bounce-Adresse]**: Sie können auch eine andere Adresse definieren, an die die nicht verarbeiteten Bounce Messages weitergeleitet werden. Mit dieser Adresse können Sie die Gründe für das Bounce-Verhalten untersuchen, wenn E-Mails von der Anwendung nicht automatisch qualifiziert werden konnten.
 
 Jedes dieser Felder kann mithilfe des dedizierten Symbols personalisiert werden. In [diesem Abschnitt](personalization-fields.md) erfahren Sie mehr über Personalisierungsfelder.
 
@@ -91,7 +91,7 @@ Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschn
 
 ## Abmelde-Liste mit einem Klick aktivieren {#one-click-list-unsubscribe}
 
-Die Abmelde-URL mit einem Klick ist ein Link oder eine Schaltfläche neben den E-Mail-Absenderinformationen, über den bzw. die Empfänger Ihre Mailing-Listen sofort mit einem einzigen Klick abmelden können. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=de#list-unsubscribe){target="_blank"}-->
+Die Abmelde-URL mit einem Klick ist ein Link oder eine Schaltfläche neben den E-Mail-Absenderinformationen, über den bzw. die Empfänger Ihre Mailing-Listen sofort mit einem einzigen Klick abmelden können. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Es wird als **Abmelden**-Link in den E-Mail-Schnittstellen der ISPs angezeigt. Beispiel:
 
@@ -131,7 +131,7 @@ Je nach E-Mail-Client und der Methode, die er zum Opt-out verwendet, kann das Kl
 
 >[!NOTE]
 >
->Sie können auch die Methoden [One-Click List-Unsubscribe](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} und [„mailto“ List-Unsubscribe](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuell festlegen. Die detaillierten Schritte werden im Experience Cloud-Handbuch [&#x200B; Best Practices für die Zustellbarkeit &#x200B;](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#list-unsubscribe){target="_blank"}.
+>Sie können auch die Methoden [One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} und [„mailto“ List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuell festlegen. Die detaillierten Schritte werden im Experience Cloud-Handbuch [ Best Practices für die Zustellbarkeit ](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#list-unsubscribe){target="_blank"}.
 
 
 ## Hinzufügen von SMTP-Headern {#adding-smtp-headers}

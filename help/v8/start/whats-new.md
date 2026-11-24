@@ -62,16 +62,16 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1501'
-ht-degree: 70%
+ht-degree: 63%
 ---
 # Wichtige Funktionen von Adobe Campaign v8 {#ac-gs-what-is-new}
 
-Adobe Campaign v8 wurde für Marketer entwickelt, die eine branchenführende Cloud-Lösung für das kanalübergreifende Kampagnen-Management für das gesamte Unternehmen benötigen. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Adobe Campaign v8 ist außerdem mit einem skalierbaren Echtzeit-Messaging-Server verbunden, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einer umfassenden Payload von jedem IT-System für Dinge wie Passwortzurücksetzung, Bestellbestätigungen, E-Quittungen und vieles mehr zu senden.
+Adobe Campaign v8 wurde für Marketer entwickelt, die eine branchenführende Cloud-Lösung für das kanalübergreifende Kampagnen-Management für das gesamte Unternehmen benötigen. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Sie ist außerdem mit einem skalierbaren Echtzeit-Messaging-Server verbunden, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einer umfassenden Payload von jedem IT-System für Dinge wie Passwortrücksetzung, Bestellbestätigung, E-Quittungen und vieles mehr zu senden.
 
-Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Zustellbarkeit und Überwachung. Es ist als **Managed Cloud Services** verfügbar, das Dienste mit einer proaktiven Überwachung und zeitnahen Bearbeitung verbindet. Weitere Informationen zum Campaign Managed Cloud Services finden Sie [in diesem Abschnitt](#acms-desc).
+Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Zustellbarkeit und Überwachung. Sie ist als **Managed Cloud Service&quot; verfügbar,** Services mit proaktiver Überwachung und rechtzeitigen Warnmeldungen kombiniert. Weitere Informationen zum Campaign Managed Cloud Services finden Sie [in diesem Abschnitt](#acms-desc).
 
 ![](assets/home-page.png)
 
@@ -117,7 +117,7 @@ Mit Adobe Campaign können Sie Kundenprofile aus Daten erstellen, die über alle
 
 [Weitere Informationen zum Kundendaten-Management](audiences.md)
 
-### Erstklassige Kampagnenverwaltung {#best-in-campaign-mgt}
+### Erstklassiges Kampagnen-Management {#best-in-campaign-mgt}
 
 Adobe Campaign v8 bietet Marketern erstklassige Funktionen zum kanalübergreifenden Planen, Launchen und Messen von Kampagnen.
 
@@ -150,7 +150,7 @@ Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kost
 
 >[!AVAILABILITY]
 >
->* Campaign v8 ist derzeit **nur** als Managed Cloud Service verfügbar und kann nicht in On-Premise- oder Hybrid-Umgebungen bereitgestellt werden.
+>* Campaign v8 ist **nur** als Managed Cloud Service verfügbar und kann nicht in einer On-Premise- oder Hybridumgebung bereitgestellt werden.
 >
 >* Die automatische Migration aus einer bestehenden Campaign Classic v7-Umgebung ist noch nicht verfügbar.
 
@@ -223,7 +223,7 @@ Dadurch wird sichergestellt, dass Ihre Campaign-Instanz immer sicher und optimie
 
 ## Self-Service-Admin-Benutzeroberfläche{#self-service-admin}
 
-Als Produkt-Administrator können Sie mithilfe des **Campaign Control Panels** die Einstellungen jeder Ihrer Campaign v8-Instanzen verwalten und ihre Nutzung nachverfolgen.
+Als Produkt-Administrator können Sie mit dem Campaign Control Panel die Einstellungen jeder Ihrer Campaign v8-Instanzen verwalten **deren Nutzung**.
 
 Über eine intuitive Benutzeroberfläche können Administratoren die Nutzung wichtiger Assets überwachen, erweiterte Aufgaben wie die Zulassungsauflistung von IP-Adressen, die Überwachung der SFTP-Datenspeicherung, die Schlüsselverwaltung und mehr durchführen. Diese Self-Service-Benutzeroberfläche bietet Ihnen mehr Flexibilität und hilft Ihnen bei Folgendem:
 

@@ -34,24 +34,24 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 78%
 ---
 # Campaign-API-Staging-Mechanismus
 
-Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ist es im Hinblick auf die Performance (Latenz und Gleichzeitigkeit) nicht empfehlenswert, einzelne Abfragen zu starten. Außer wenn Sie extrem geringe Menge senden, **muss** der Batch-Vorgang verwendet werden. Um die Performance zu verbessern, werden Aufnahme-APIs an die lokale Datenbank weitergeleitet.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ist es im Hinblick auf die Performance (Latenz und Gleichzeitigkeit) nicht empfehlenswert, einzelne Abfragen zu starten. Batch-Vorgänge **müssen) verwendet werden, es sei denn** Sie senden extrem geringe Mengen. Um die Performance zu verbessern, werden Aufnahme-APIs an die lokale Datenbank weitergeleitet.
 
 Die Staging-Funktion von Campaign ist in einigen nativen Schemata standardmäßig aktiviert. Sie kann auch für jedes benutzerdefinierte Schema aktiviert werden. Staging-Verfahren in Kürze:
 
 * Die Struktur des Datenschemas wird in die lokale Staging-Tabelle dupliziert.
 * Neue APIs zur Datenaufnahme befüllen direkt die lokale Staging-Tabelle. [Weitere Informationen](new-apis.md)
-* Ein geplanter Workflow wird stündlich ausgeführt und die Daten werden zurück in die Cloud-Datenbank synchronisiert. [Weitere Informationen](replication.md)
+* Ein geplanter Workflow wird stündlich Trigger und synchronisiert die Daten zurück in die Cloud-Datenbank. [Weitere Informationen](replication.md)
 
 Einige integrierte Schemata werden standardmäßig beim Staging verwendet, etwa nmsSubscriptionRcp, nmsAppSubscriptionRcp und nmsRecipient.
 
-Campaign Classic v7-APIs sind weiterhin verfügbar, profitieren jedoch nicht von dem neuen Staging-Mechanismus: API-Aufrufe fließen direkt in die Cloud-Datenbank. Adobe empfiehlt, wann immer möglich den neuen Staging-Mechanismus zu verwenden, um die Gesamtauslastung und die Latenz der Campaign Cloud-Datenbank zu reduzieren.
+Campaign Classic v7-APIs sind weiterhin verfügbar, profitieren jedoch nicht von diesem neuen Staging-Mechanismus: API-Aufrufe fließen direkt in die Cloud-Datenbank. Adobe empfiehlt, den neuen Staging-Mechanismus so weit wie möglich zu verwenden, um den Gesamtdruck und die Latenz der Campaign Cloud-Datenbank zu reduzieren.
 
 >[!CAUTION]
 >

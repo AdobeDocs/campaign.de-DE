@@ -29,27 +29,27 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 84%
+source-wordcount: '170'
+ht-degree: 64%
 ---
 # Simulationsverfolgung{#simulation-tracking}
 
 
 
-Nach Abschluss der Simulation wird automatisch ein **[!UICONTROL Ergebnis]**-Tab hinzugefügt, der Ihnen eine genaue Analyse ermöglicht. Im Berichte-Tab des Dashboard wird der Bericht **[!UICONTROL Angebotsaufschlüsselung nach Rang]** angezeigt.
+Sobald die Simulation abgeschlossen ist, können Sie das Ergebnis über die Registerkarte **[!UICONTROL Ergebnisse]** analysieren, die zum Simulationsfenster hinzugefügt wird, und den Bericht **[!UICONTROL Aufschlüsselung der Angebote nach Rang]** , der über das Simulations-Dashboard verfügbar ist.
 
 Das Simulationsergebnis zeigt die Aufschlüsselung der Vorschläge nach Rang und Zielgruppe. Berichtsachsen werden ebenfalls berücksichtigt und in dieser Registerkarte angezeigt.
 
 Sie haben die Möglichkeit, die Ergebnisse zu speichern und sie in Form einer deskriptiven Analyse zu exportieren. Klicken Sie hierzu auf den entsprechenden Link im Ergebnisfenster.
 
-Weitere Informationen zur deskriptiven Analyse finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"}.
+Weitere Informationen zur deskriptiven Analyse finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"}.
 
 ![](assets/offer_simulation_012.png)
 
 Eine Pivot-Tabelle bietet eine schnelle Ansicht der Angebotsaufschlüsselungen pro Ranking. Wie alle Berichte in Adobe Campaign kann auch dieser exportiert, gedruckt, archiviert oder in einem Webbrowser angezeigt werden.
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
+Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
 
 ![](assets/offer_simulation_013.png)

@@ -21,16 +21,16 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 99%
+source-wordcount: '991'
+ht-degree: 96%
 ---
 # Wichtige Schritte zum Erstellen einer Umfrage{#getting-started-with-surveys}
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
 
 
 
@@ -109,7 +109,7 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
   ![](assets/s_ncs_admin_survey_add_qu.png)
 
-  Geben Sie den Titel der Frage ein und fügen Sie die Antwortfelder als Unterverzweigung der Frage ein. Beim Erstellen des Antwortfeldes muss der mit der Frage verknüpfte Knoten ausgewählt sein. Fügen Sie eine **[!UICONTROL Dropdown-Liste]** mithilfe des Symbols **[!UICONTROL Auswahldialog]** oder durch Rechtsklicken wie unten gezeigt hinzu:
+  Geben Sie den Titel der Frage ein und fügen Sie die Antwortfelder als Unterverzweigung der Frage ein. Beim Erstellen des Antwortfeldes muss der mit der Frage verknüpfte Knoten ausgewählt sein. Fügen Sie eine **[!UICONTROL Dropdown-Liste]** mithilfe des Symbols **[!UICONTROL Auswahl-Steuerelemente]** oder durch Rechtsklick hinzu, wie unten dargestellt:
 
   ![](assets/s_ncs_admin_survey_add_list.png)
 
@@ -125,7 +125,7 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
   >[!NOTE]
   >
-  >Mit den Optionen im Tab **[!UICONTROL Erweitert]** können Sie für jedes Feld oder jede Frage das Seitenlayout nach Bedarf anpassen. Das Layout der Umfragefenster wird in [diesem Abschnitt](../web/about-web-forms.md) näher beschrieben.
+  >Mit den Optionen im Tab **[!UICONTROL Erweitert]** können Sie für jedes Feld oder jede Frage das Seitenlayout nach Bedarf anpassen. Das Layout der Umfragebildschirme wird in [diesem Abschnitt) ](../web/about-web-forms.md).
 
   Wählen Sie im Detailfenster den Tab **[!UICONTROL Vorschau]** aus, um sich die Darstellung der soeben erstellten Umfrage anzusehen.
 

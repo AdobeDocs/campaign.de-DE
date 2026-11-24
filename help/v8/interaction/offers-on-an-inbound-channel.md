@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '2212'
-ht-degree: 100%
+source-wordcount: '2210'
+ht-degree: 96%
 ---
 # Angebot auf einem Inbound-Kanal{#offers-on-an-inbound-channel}
 
@@ -147,7 +147,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
 ### Konfiguration der Angebotsplatzierung auf der Website {#configure-the-web-offer-space-on-the-website}
 
-Damit die soeben konfigurierten Angebote auf der Website sichtbar sind, fügen Sie einen JavaScript-Code in die HTML-Seite Ihrer Site ein, der die Interaction-Engine aufruft (weitere Informationen siehe [Über Inbound-Kanäle](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (Dokumentation zu Campaign v8)).
+Um die soeben konfigurierten Angebote auf der Website sichtbar zu machen, fügen Sie JavaScript-Code in die HTML-Seite Ihrer Website ein, um die Interaction-Engine aufzurufen (weitere Informationen finden Sie unter [Über eingehende Kanäle](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (Campaign v8-Dokumentation)).
 
 1. Fügen Sie in der HTML-Seite ein @id-Attribut ein, dessen Wert dem internen Namen der zuvor erstellten anonymen Platzierung entspricht (siehe [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces)), mit einem vorangestellten **i_**.
 
@@ -340,7 +340,7 @@ Im vorliegenden Beispiel soll der Kontakt über seine E-Mail-Adresse in der Adob
 Erstellen Sie zwei Angebotskategorien: **Premium** und **Partner**. Jede Kategorie soll zwei personalisierte Angebote enthalten.
 
 1. Markieren Sie hierfür in der identifizierten Umgebung den Knoten **[!UICONTROL Angebotskatalog]**.
-1. Fügen Sie wie zuvor für die anonyme Umgebung zwei Ordner vom Typ **[!UICONTROL Angebotskategorie]** hinzu. Nennen Sie sie **Premium** und **Partner**.
+1. Fügen Sie wie in der anonymen Umgebung zwei Ordner **[!UICONTROL Angebotskategorie]** mit **Bestes Angebot** und **Partner** als Kennzeichnungen hinzu.
 
    ![](assets/offer_inbound_fallback_example_009.png)
 
@@ -417,7 +417,7 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
    Die URL enthält den internen Namen (**liveRcp**) der identifizierten Umgebung.
 
-Wenn Sie die Web-Seite öffnen, löst das Skript die Abfrage des Interaktionsmoduls aus, damit der Angebotsinhalt in den hierfür vorgesehenen Platzierungen angezeigt wird. Mit nur einer Abfrage des Adobe Campaign-Servers erkennt das Modul die auszuwählende Umgebung, Platzierung und Angebotskategorie.
+Wenn Sie die Web-Seite öffnen, können Sie mit dem Skript die Interaction-Engine aufrufen, um den Inhalt von Angeboten in den relevanten Bereichen der Web-Seite anzuzeigen. Mit nur einer Abfrage des Adobe Campaign-Servers erkennt das Modul die auszuwählende Umgebung, Platzierung und Angebotskategorie.
 
 In diesem Beispiel erkennt die Engine die identifizierte Umgebung (**EnvNeobankIdnRecip**). Sie identifiziert die Platzierung (**OSWebBestOfferIdentified**) und die **Premium**-Kategorie (**CatBestOffer**) für die erste und zweite Platzierung der Web-Seite sowie die Platzierung (**OSWebPartnerIdentified**) und die **Partner**-Kategorie (**CatPartner**) für die dritte Platzierung der Web-Seite.
 

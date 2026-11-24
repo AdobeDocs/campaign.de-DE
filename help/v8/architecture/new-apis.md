@@ -24,14 +24,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 99%
+source-wordcount: '441'
+ht-degree: 72%
 ---
 # Spezifische FFDA-Kampagnen-APIs{#gs-new-api}
 
-Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) verfügt Campaign v8 über zwei konkrete APIs zum Verwalten von Daten zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank. Voraussetzungen für ihre Verwendung ist die Aktivierung des Staging-Mechanismus im Schema. [Weitere Informationen](staging.md)
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) verfügt Campaign v8 über zwei konkrete APIs zum Verwalten von Daten zwischen der lokalen Campaign-Datenbank und der Cloud-Datenbank. Voraussetzungen für ihre Verwendung sind die Aktivierung des Staging-Mechanismus im Schema. [Weitere Informationen](staging.md)
 
 * Aufnahme-API: **xtk.session.ingest**
 
@@ -88,7 +88,7 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befül
    </soapenv:Envelope>
    ```
 
-1. UUID wird an die SOAP-Antwort zurückgesendet:
+1. Die UUID wird in der SOAP-Antwort zurückgesendet:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -100,7 +100,7 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befül
    </SOAP-ENV:Envelope>
    ```
 
-Als Ergebnis wird die Staging-Tabelle erwartungsgemäß befüllt.
+Daher wird die Staging-Tabelle erwartungsgemäß befüllt.
 
 ![](assets/no-reconciliation.png)
 
@@ -160,11 +160,11 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befül
    </SOAP-ENV:Envelope>
    ```
 
-Als Ergebnis wird die Staging-Tabelle erwartungsgemäß befüllt.
+Daher wird die Staging-Tabelle erwartungsgemäß befüllt.
 
 ## Aktualisieren oder Löschen von Daten{#data-update-api}
 
-Die API **xtk.session.IngestExt** wurde für die Aktualisierung/Löschung von Daten optimiert. Zum Einfügen verwenden Sie **xtk.session.ingest**. Das Einfügen funktioniert auch dann, wenn der Datensatz-Schlüssel nicht in der Staging-Tabelle enthalten ist.
+Die **xtk.session.IngestExt**-API ist für die Aktualisierung/Löschung von Daten optimiert. Zum Einfügen verwenden Sie **xtk.session.ingest**. Das Einfügen funktioniert, wenn sich der Datensatzschlüssel nicht in der Staging-Tabelle befindet.
 
 ### Einfügen/Aktualisieren
 
@@ -224,7 +224,7 @@ Als Ergebnis wird die Staging-Tabelle erwartungsgemäß aktualisiert.
 
 Die Abonnementverwaltung in Campaign wird auf [dieser Seite](../start/subscriptions.md) beschrieben.
 
-Die Eingabe von An- und Abmeldedaten beruht auf dem [Staging-Mechanismus](staging.md) in der lokalen Campaign-Datenbank. Abonnenteninformationen werden temporär in Staging-Tabellen in der lokalen Datenbank gespeichert. Der Synchronisations-Workflow sendet diese Daten aus der lokalen Datenbank an die Cloud-Datenbank. Aus diesem Grund sind die An- und Abmeldevorgänge **asynchron**. Opt-in- und Opt-out-Anfragen werden stündlich über einen bestimmten technischen Workflow verarbeitet. [Weitere Informationen](replication.md#workflows)
+Die Eingabe von An- und Abmeldedaten beruht auf dem [Staging-Mechanismus](staging.md) in der lokalen Campaign-Datenbank. Abonnenteninformationen werden vorübergehend in Staging-Tabellen in der lokalen Datenbank gespeichert, und der Synchronisations-Workflow sendet diese Daten von der lokalen Datenbank an die Cloud-Datenbank. Aus diesem Grund sind die An- und Abmeldevorgänge **asynchron**. Opt-in- und Opt-out-Anfragen werden stündlich über einen bestimmten technischen Workflow verarbeitet. [Weitere Informationen](replication.md#workflows)
 
 
 **Verwandte Themen**

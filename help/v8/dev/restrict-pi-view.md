@@ -41,16 +41,16 @@ topic_v2:
     internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 94%
+ht-degree: 76%
 ---
 # Einschränken der Anzeige von personenbezogenen Daten{#restricting-pii-view}
 
 ## Übersicht {#overview}
 
-Manche Kunden verlangen, dass Marketing-Benutzer auf Datensätze zugreifen können, ohne personenbezogene Daten (PI) zu sehen, wie zum Beispiel Vornamen, Nachnamen und E-Mail-Adresse. Wenden Sie die folgenden Richtlinien an, um Daten zu schützen und deren Missbrauch durch reguläre Campaign-Benutzer zu verhindern.
+Wenn Sie möchten, dass Marketing-Benutzer auf Datensätze zugreifen können, aber nicht möchten, dass sie personenbezogene Daten (PI) des Empfängers sehen, wie z. B. Vorname, Nachname oder E-Mail-Adresse, wenden Sie die folgenden Richtlinien an, um die Privatsphäre zu schützen und zu verhindern, dass Daten von regulären Campaign-Benutzern missbraucht werden.
 
 ## Implementierung {#implementation}
 
@@ -73,8 +73,8 @@ Nachfolgend finden Sie ein Beispiel für eine Erweiterung des Empfängerschemas,
 
 Die wichtigsten Eigenschaften sind:
 
-* **[!UICONTROL visibleIf]**: Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem [Ausdrucksgenerator“ aufgerufen werden &#x200B;](../../v8/start/filter-conditions.md#list-of-functions). Dadurch werden jedoch keine Daten ausgeblendet. Wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
-* **[!UICONTROL accessibleIf]** : Blendet die Daten aus der resultierenden Abfrage aus (und ersetzt sie durch leere Werte). Wenn &quot;visibleIf&quot; leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]**.
+* **[!UICONTROL visibleIf]**: Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem [Ausdrucksgenerator“ aufgerufen werden ](../../v8/start/filter-conditions.md#list-of-functions). Dadurch werden jedoch keine Daten ausgeblendet. Wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
+* **[!UICONTROL accessibleIf]** : Blendet die Daten aus der resultierenden Abfrage aus (und ersetzt sie durch leere Werte). Wenn „visibleIf“ leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]**.
 
 Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 
@@ -126,4 +126,4 @@ Nachfolgend finden Sie ein Beispiel für die Erweiterung der Protokolltabelle, u
 
 >[!CAUTION]
 >
->Diese Einschränkung gilt nur für nicht-technische Benutzer und isoliert die Daten nicht. Ein technischer Benutzer mit den entsprechenden Berechtigungen kann die Daten abrufen.
+>Diese Einschränkung gilt nur für nicht-technische Benutzer und isoliert die Daten nicht: Ein technischer Benutzer mit den entsprechenden Berechtigungen kann Daten abrufen.

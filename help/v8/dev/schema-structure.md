@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1453'
-ht-degree: 98%
+source-wordcount: '1454'
+ht-degree: 96%
 ---
 # Schemastruktur{#schema-structure}
 
@@ -196,7 +196,7 @@ Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 
 ## Eigenschaften {#properties}
 
-Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mit verschiedenen Eigenschaften angereichert werden. Sie können ein Label ausfüllen, um das aktuelle Element zu beschreiben.
+Die **`<elements>`**- und **`<attributes>`** des Datenschemas können mit verschiedenen Eigenschaften angereichert werden. Sie können ein Label ausfüllen, um das aktuelle Element zu beschreiben.
 
 ### Labels und Beschreibungen {#labels-and-descriptions}
 

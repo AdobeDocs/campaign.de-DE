@@ -26,10 +26,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 93%
+source-wordcount: '264'
+ht-degree: 84%
 ---
 # Produkt-Schutzmechanismen{#guardrails}
 
@@ -47,4 +47,4 @@ Schutzmechanismen und Einschränkungen betreffen Funktionen, Architekturen oder 
 * Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) sind Mechanismen zur Anmeldung (Opt-in-) und zur Abmeldung (Opt-out) sowie die Mobile-Registrierung asynchrone Prozesse. Anfragen werden stündlich über einen speziellen technischen Workflow verarbeitet. [Weitere Informationen](../architecture/replication.md#workflows)
 * Im Kontext einer [Enterprise-Bereitstellung (FFDA)](../architecture/enterprise-deployment.md) müssen Duplikate von Endbenutzerinnen und -benutzern manuell verarbeitet werden. [Weitere Informationen](../architecture/keys.md)
 * Adobe Campaign v8 unterstützt keinen erweiterten Durchsatz in API- und Web-Anwendungen. Wenden Sie sich bei besonderen Anforderungen an Adobe, um Beratung zu erhalten.
-* Im Kontext einer [Enterprise-Bereitstellung (FFDA)](../architecture/enterprise-deployment.md) berücksichtigt das Adobe Campaign Campaign Optimization-Modul geplante Sendungen nicht in Drucktypologieregeln. Weitere Informationen auf [dieser Seite](../../automation/campaign-opt/pressure-rules.md)
+* Im Kontext einer [Enterprise (FFDA)-Bereitstellung ](../architecture/enterprise-deployment.md) das Adobe Campaign Optimization-Modul geplante Sendungen in Drucktypologieregeln nicht berücksichtigt. Weitere Informationen auf [dieser Seite](../../automation/campaign-opt/pressure-rules.md)

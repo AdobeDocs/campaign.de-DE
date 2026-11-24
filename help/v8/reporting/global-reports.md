@@ -31,10 +31,10 @@ topic_v2:
     internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 99%
+source-wordcount: '1913'
+ht-degree: 95%
 ---
 # Allgemeine Berichte {#global-reports}
 
@@ -118,7 +118,7 @@ Folgende Indikatoren werden angezeigt:
 * **[!UICONTROL Postfach voll]**: Fehlertyp, der nach fünf fehlgeschlagenen Versandversuchen erzeugt wird, wenn das Postfach der Empfängerin bzw. des Empfängers zu viele Nachrichten enthält.
 * **[!UICONTROL Account deaktiviert]**: Fehlertyp, der beim Senden eines Versands erzeugt wird, um anzuzeigen, dass die Adresse nicht mehr existiert.
 * **[!UICONTROL Abgelehnt]**: Fehler, wenn eine Adresse von einem ISP (Internet Service Provider) z. B. infolge der Anwendung einer Sicherheitsregel (Anti-Spam-Software) zurückgewiesen wird.
-* **[!UICONTROL Unerreichbar]**: Fehlertyp, der in der Nachrichtenverteilungs-Zeichenfolge auftritt: Vorfall im SMTP-Relais, Domain vorübergehend unerreichbar usw.
+* **[!UICONTROL Unerreichbar]**: Fehlertyp, der in der Verteilungskette der Nachricht auftritt: Vorfall im SMTP-Relais, Domain vorübergehend unerreichbar, usw.
 * **[!UICONTROL Nicht angemeldet]**: Fehlertyp, wenn das Mobiltelefon der Empfängerin bzw. des Empfängers zum Zeitpunkt des Versands ausgeschaltet war oder über keinen Netzempfang verfügte.
 
   >[!NOTE]
@@ -143,7 +143,7 @@ Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das Symbol [+] kl
 
 >[!NOTE]
 >
->Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie den Cube **[!UICONTROL Versandlogs (broadlogrcp)]**. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md). Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die nicht zu einer bestimmten Klasse gehören.
+>Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie den **[!UICONTROL Versand-Logs (broadlogrcp)]** Cube. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md). Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die nicht zu einer bestimmten Klasse gehören.
 
 ## Browser {#browsers}
 
@@ -263,7 +263,7 @@ In der Tabelle der allgemeinen Statistiken können Sie auf die Namen der einzeln
 
 Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
-Die Kurve **[!UICONTROL Verlauf]** stellt die Nutzungsrate dieses Betriebssystems pro Tag dar. Bei der Rate handelt es sich um das Verhältnis der Anzahl an Besuchenden pro Tag (unter diesem Betriebssystem) im Vergleich zur Anzahl an Besuchenden gemessen am Tag mit der höchsten Anwesenheit.
+Die Kurve **[!UICONTROL Verlauf]** stellt die Nutzungsrate dieses Betriebssystems pro Tag dar. Diese Rate ist das Verhältnis zwischen der Anzahl der Besucher pro Tag (auf diesem Betriebssystem) und der Anzahl der Besucher, die an dem Tag mit der höchsten Anwesenheit gemessen werden.
 
 Die **[!UICONTROL Aufschlüsselung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für das gewählte Betriebssystem.
 
@@ -329,4 +329,4 @@ Die Anzahl der Öffnungen entspricht der Gesamtzahl der geöffneten Nachrichten.
 
 >[!NOTE]
 >
->Browser- und Betriebssystemnamen stellen einen Teil der Informationen dar, die vom Benutzeragent des Browsers gesendet werden, für den die Nachricht geöffnet wurde. Adobe Campaign leitet den Gerätetyp anhand der Geräteinformationen ab.
+>Browser- und Betriebssystemnamen stellen einen Teil der Informationen dar, die vom Benutzeragent des Browsers gesendet werden, für den die Nachricht geöffnet wurde. Adobe Campaign ermittelt den Gerätetyp anhand der Geräteinformationen.

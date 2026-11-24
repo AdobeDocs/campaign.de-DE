@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 95%
 ---
 # Audit-Protokoll{#audit-trail}
 
@@ -50,7 +50,7 @@ Die Funktion **[!UICONTROL Audit-Protokoll]** in Adobe Campaign bietet eine deta
 
 * **Schema-Audit-Protokoll**: ermöglicht es Ihnen, die Änderungen an Ihren Schemata zu untersuchen und zu identifizieren, wer diese Änderungen vorgenommen hat und wann sie vorgenommen wurden.
 
-  Detaillierte Informationen zu Schemata finden Sie auf [Seite](../dev/schemas.md).
+  Ausführliche Informationen zu Schemata finden Sie auf dieser [Seite](../dev/schemas.md).
 
 * Das **Workflow-Audit-Protokoll** verfolgt alle Aktionen im Zusammenhang mit Ihren Workflows, einschließlich:
 
@@ -77,7 +77,7 @@ Die Funktion **[!UICONTROL Audit-Protokoll]** in Adobe Campaign bietet eine deta
 
 * **Externes Konto** ermöglicht Ihnen die Überprüfung von Änderungen an externen Konten, die von technischen Prozessen wie technischen Workflows oder Kampagnen-Workflows verwendet werden.
 
-  Weiterführende Informationen zu „Externes Konto“ finden Sie auf [dieser Seite](../config/external-accounts.md).
+  Weitere Informationen zu externen Konten finden Sie auf dieser [Seite](../config/external-accounts.md).
 
 * **Versand-Mapping** ermöglicht es Ihnen, Aktivitäten und kürzlich an Ihren Versand-Mappings vorgenommene Änderungen zu überwachen.
 
@@ -85,11 +85,11 @@ Die Funktion **[!UICONTROL Audit-Protokoll]** in Adobe Campaign bietet eine deta
 
 * **Web-Anwendung** ermöglicht Ihnen das Überprüfen von Änderungen an Web-Formularen in Campaign V8, die zum Erstellen von Seiten mit Eingabe- und Auswahlfeldern verwendet werden und die Daten aus der Datenbank enthalten können.
 
-  Weiterführende Informationen zu „Web-Anwendung“ finden Sie auf [dieser Seite](../dev/webapps.md).
+  Weitere Informationen zu Web-Anwendungen finden Sie auf dieser [Seite](../dev/webapps.md).
 
 * **Angebot** ermöglicht es Ihnen, die Aktivitäten und letzten Änderungen an Ihren Angeboten zu überprüfen.
 
-  Weiterführende Informationen zu „Angebot“ finden Sie auf [dieser Seite](../interaction/interaction.md).
+  Weiterführende Informationen zu Angeboten finden Sie auf [dieser Seite](../interaction/interaction.md).
 
 * **Operator** ermöglicht es Ihnen, Aktivitäten und Änderungen zu überwachen, die vor Kurzem an Ihren Operatoren vorgenommen wurden.
 
@@ -123,7 +123,7 @@ So greifen auf das **[!UICONTROL Audit-Protokoll]** Ihrer Instanz zu:
 
 >[!NOTE]
 >
->Die Aufbewahrungsfrist für **[!UICONTROL Auditlogs]** ist standardmäßig auf 180 Tage festgelegt. Dieser Wert kann im Bereitstellungsassistenten geändert werden.
+>Standardmäßig ist der Aufbewahrungszeitraum für (Audit **[!UICONTROL Protokolle) auf 180 Tage]**. Dieser Wert kann im Bereitstellungsassistenten geändert werden.
 
 ## Aktivieren/Deaktivieren des Audit-Protokolls {#enable-disable-audit-trail}
 

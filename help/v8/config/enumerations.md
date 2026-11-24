@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 87%
+source-wordcount: '858'
+ht-degree: 86%
 ---
 # Arbeiten mit Aufzählungen {#enumerations}
 
@@ -57,7 +57,7 @@ Eine Auflistung kann Folgendes sein: **Open**, **System**, **Emoticon** oder **C
 * Eine Aufzählung des Typs **Offen** ermöglicht es Benutzerinnen und Benutzern, neue Werte direkt in die auf dieser Aufzählung basierenden Felder einzufügen.
 * Ein Aufzählung des Typs **Geschlossen** verfügt über eine feste Liste von Werten, die nur über den Ordner **[!UICONTROL Administration > Plattform > Aufzählungen]** des Explorers geändert werden kann.
 * Eine Aufzählung des Typs **Emoticon** wird verwendet, um die Emoticon-Liste zu aktualisieren. Weitere Informationen
-* Eine Aufzählung des Typs **System** ist mit Systemfeldern verknüpft und enthält einen internen Namen.
+* Eine Auflistung **System** ist mit Systemfeldern verknüpft und enthält einen internen Namen.
 
 Für Aufzählungen des Typs **Offen** und **Geschlossen** sind spezifische Optionen verfügbar:
 

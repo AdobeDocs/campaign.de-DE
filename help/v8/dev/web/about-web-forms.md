@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # Erste Schritte mit Web-Formularen{#about-web-forms}
 
@@ -85,7 +85,7 @@ Um das Webformular zu definieren und zu konfigurieren, gehen Sie folgendermaßen
 
 ## Über die Erstellung von Web-Formularen {#about-web-forms-designing}
 
-Die Seiten des Formulars werden mit einem bestimmten Editor erstellt, mit dem Sie Eingabebereiche (Text), Auswahlfelder (Listen, Kontrollkästchen usw.) und statische Elemente (Bilder, HTML-Inhalte usw.) definieren und konfigurieren können. Diese können in Containern gruppiert und ihr Layout an Ihren Bedarf angepasst werden (weitere Informationen finden Sie unter [Container erstellen](defining-web-forms-layout.md#creating-containers)).
+Die Seiten des Formulars werden mit einem bestimmten Editor erstellt, mit dem Sie Eingabebereiche (Text), Auswahlfelder (Listen, Kontrollkästchen usw.) und statischen Elementen (Bildern, HTML-Inhalten usw.). Diese können in Containern gruppiert und ihr Layout an Ihren Bedarf angepasst werden (weitere Informationen finden Sie unter [Container erstellen](defining-web-forms-layout.md#creating-containers)).
 
 In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout von Formularen definieren.
 

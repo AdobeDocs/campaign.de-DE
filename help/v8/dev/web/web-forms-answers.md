@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 98%
+ht-degree: 96%
 ---
 # Antworten in Webformularen{#web-forms-answers}
 
@@ -39,7 +39,7 @@ Für jedes Eingabefeld in einem Formular sind die folgenden Speicheroptionen ver
 
 * **[!UICONTROL Empfänger bearbeiten]**
 
-  Sie können ein Feld der Datenbank auswählen: Die Antworten der Benutzer werden in diesem Feld gespeichert. Für jeden Benutzer wird nur der zuletzt eingegebene Wert gespeichert: Es wird seinem Profil hinzugefügt: Siehe [Speichern von Daten in der Datenbank](#storing-data-in-the-database).
+  Sie können ein Feld der Datenbank auswählen: Die Antworten der Benutzer werden in diesem Feld gespeichert. Für jeden Benutzer wird nur der zuletzt eingegebene Wert gespeichert und seinem Profil hinzugefügt. Siehe &quot;[ in der Datenbank](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
@@ -153,4 +153,4 @@ Sie können einen Suchordner für die Abstimmung und den Erstellungsordner für 
 >
 >Die möglichen Vorgänge sind: **[!UICONTROL einfache Abstimmung]**, **[!UICONTROL Aktualisieren oder Einfügen]**, **[!UICONTROL Einfügen]**, **[!UICONTROL Aktualisieren]**, **[!UICONTROL Löschen]**.\
 >Der Standardordner des Operators entspricht dem ersten Ordner, für den er Schreibzugriff hat.\
->Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+>Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.

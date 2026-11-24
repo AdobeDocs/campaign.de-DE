@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 100%
+ht-degree: 92%
 ---
 # Erste Schritte mit Profilen und Zielgruppen{#gs-profiles-and-audiences}
 
@@ -44,7 +44,7 @@ Ein Profil ist ein Datensatz in der Tabelle **nmsRecipient** oder einer externen
 
 In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) die **Empfänger**.
 
-Mit den in der Datenbank gespeicherten Empfängerdaten können Sie die Zielgruppe filtern, die einen bestimmten Versand erhalten soll, und Personalisierungsdaten in den Versandinhalt einfügen. In der Datenbank gibt es noch andere Arten von Profilen. Sie sind für unterschiedliche Zwecke gedacht. So werden beispielsweise Testprofile erstellt, um Ihre Sendungen zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
+Die in der Datenbank gespeicherten Empfängerdaten ermöglichen es Ihnen, die Zielgruppe zu filtern, die einen bestimmten Versand erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzuzufügen. In der Datenbank gibt es noch andere Arten von Profilen. Sie sind für unterschiedliche Zwecke gedacht. So werden beispielsweise Testprofile erstellt, um Ihre Sendungen zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
 
 Um Profildaten zu Adobe Campaign hinzuzufügen, haben Sie folgende Möglichkeiten:
 

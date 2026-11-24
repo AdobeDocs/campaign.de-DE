@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 100%
+ht-degree: 97%
 ---
 # Senden von E-Mails auf japanischen Mobiltelefonen {#sending-emails-on-japanese-mobiles}
 
@@ -114,7 +114,7 @@ Verwenden Sie hierfür eine **[!UICONTROL Aufspaltung]**-Aktivität in Ihrem Wor
 
 Wenn Adobe Campaign die Formate dynamisch in Abhängigkeit von der Domain verwaltet (Profile mit E-Mail-Format **[!UICONTROL Unbekannt]**, **[!UICONTROL HTML]** oder **[!UICONTROL Text]**), können Sie für alle Empfänger denselben Versand verwenden.
 
-Der Nachrichteninhalt wird sowohl für Empfänger mit japanischen Mobiltelefonen als auch für Standardempfänger korrekt angezeigt.
+Der Nachrichteninhalt wird für die Benutzer auf japanischen Mobiltelefonen korrekt angezeigt, genau wie für die Standard-Empfänger.
 
 >[!IMPORTANT]
 >

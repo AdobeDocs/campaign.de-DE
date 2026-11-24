@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 96%
+ht-degree: 81%
 ---
 # Senden einer Kopie Ihrer Nachrichten an eine BCC-Adresse {#bcc}
 
@@ -39,7 +39,7 @@ ht-degree: 96%
 
 ## Über BCC für E-Mails {#gs-bcc}
 
-Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird. Mit dieser Option können Sie Nachrichten an eine bestimmte BCC-E-Mail-Adresse (Blind Carbon Copy) senden, wo sie mithilfe eines externen Systems verarbeitet und archiviert werden.
+Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird. Mit dieser Option können Sie Nachrichten an eine dedizierte BCC-E-Mail-Adresse (Blind Carbon Copy) senden, von der aus sie mithilfe eines externen Systems verarbeitet und archiviert werden können.
 
 >[!CAUTION]
 >
@@ -78,6 +78,6 @@ Bei der Verwendung von E-Mail-BCC mit Adobe Campaign gelten die folgenden Leitli
 
 * E-Mail-BCC <!--with Enhanced MTA--> sendet die Nachrichten an die BCC-E-Mail-Adresse, bevor sie an die Empfänger gesendet werden. Dies kann dazu führen, dass BCC-Nachrichten gesendet werden, auch wenn die Original-Sendungen möglicherweise einen Bounce erzeugt haben. Weitere Informationen zu Bounces finden Sie unter [Fehlgeschlagene Sendungen](delivery-failures.md).
 
-* E-Mails, die an die BCC-Adresse gesendet werden, sollten nicht geöffnet und angeklickt werden, da diese Aktivitäten im Abschnitt **[!UICONTROL Öffnungen gesamt]** und **[!UICONTROL Klicks]** aus der Versandanalyse zu falschen Berechnungen führen können.
+* E-Mails, die an eine BCC-Adresse gesendet werden, sollten nicht geöffnet und angeklickt werden, da diese Aktivitäten in der Versandanalyse in **[!UICONTROL Öffnungen insgesamt]** berücksichtigt werden und **[!UICONTROL Klicks]** zu falschen Berechnungen führen können.
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->

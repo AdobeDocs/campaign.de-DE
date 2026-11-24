@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 96%
+source-wordcount: '498'
+ht-degree: 91%
 ---
 # Personalisieren der Emoticon-Liste {#customize-emoticons}
 
@@ -45,11 +45,11 @@ Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfü
 
 >[!CAUTION]
 >
->Die Emoticon-Liste kann maximal 81 Einträge enthalten.
+>Die Emoticon-Liste kann nicht mehr als 81 Einträge anzeigen.
 
 1. Wählen Sie ein neues Emoticon, das Sie hinzufügen möchten, von dieser [Seite](https://unicode.org/emoji/charts/full-emoji-list.html) aus. Beachten Sie, dass es mit den verschiedenen Plattformen wie Browser und Betriebssystem kompatibel sein muss.
 
-1. Wählen Sie im **[!UICONTROL Explorer]**&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Aufzählungen]** und klicken Sie auf die native Aufzählung **[!UICONTROL Emoticon-Liste]**.
+1. Wählen Sie im **[!UICONTROL Explorer]****[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Aufzählungen]** und klicken Sie auf die native Aufzählung **[!UICONTROL Emoticon-Liste]**.
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfü
 1. Füllen Sie die Felder aus:
 
    * **[!UICONTROL U+]**: Code Ihres neuen Emoticons. Die Liste der Codes von Emoticons finden Sie auf dieser [Seite](https://unicode.org/emoji/charts/full-emoji-list.html).
-     Zur Vermeidung von Kompatibilitätsproblemen empfehlen wir Ihnen, Emoticons auszuwählen, die in allen Browsern und Betriebssystemen unterstützt werden.
+     Um Kompatibilitätsprobleme zu vermeiden, empfehlen wir Ihnen, Emoticons auszuwählen, die auf Browsern und auf jedem Betriebssystem unterstützt werden.
 
    * **[!UICONTROL Titel]**: Bezeichnung für Ihr neues Emoticon.
 

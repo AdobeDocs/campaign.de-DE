@@ -27,7 +27,7 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 82%
@@ -43,10 +43,10 @@ Das generische Abfragetool zentralisiert alle Abfragefunktionen. Es ermöglicht 
 ![Zugreifen auf das Abfragetool und Auswählen einer Tabelle](assets/query_editor_nveau_21.png)
 
 
-Die Schritte zum Erstellen einer Abfrage werden [auf dieser Seite) &#x200B;](design-queries.md).
+Die Schritte zum Erstellen einer Abfrage werden [auf dieser Seite) ](design-queries.md).
 
 <!--
-Contexts to use the query editor iin Campaign are listed below:
+Contexts to use the query editor in Campaign are listed below:
 
 |Usage|Example|
 |  ---  |  ---  |

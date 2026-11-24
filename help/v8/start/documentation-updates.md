@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 100%
+ht-degree: 94%
 ---
 # Aktualisierungen der Dokumentation {#latest-updates}
 
@@ -55,7 +55,7 @@ Es wurde ein Hinweis hinzugefügt, der angibt, wie Instanzvariablen beim Neustar
 
 ## Mai 2024 {#may-2024}
 
-* Die Liste der Kanäle und Versandtypen finden Sie nun auf [dieser Seite](create-message.md).
+* Die Liste der Kanäle und Versandtypen ist jetzt auf [dieser Seite](create-message.md) aufgeführt.
 * Die Abschnitte zu den Versandeinstellungen und zum Verwalten von Schüben wurden umstrukturiert und verbessert. [Weitere Informationen](../send/configure-and-send.md)
 * Es wurde ein Hinweis dazu ergänzt, dass die Aktivitäten **[!UICONTROL Dimension ändern]** und **[!UICONTROL Datenquelle ändern]** nicht in einer Zeile hinzugefügt werden dürfen und die Aktivität **[!UICONTROL Anreicherung]** zwischen ihnen benötigt wird. Weitere Informationen finden Sie in den Abschnitten [Dimension ändern](../../automation/workflow/change-dimension.md) und [Datenquelle ändern](../../automation/workflow/change-data-source.md).
 

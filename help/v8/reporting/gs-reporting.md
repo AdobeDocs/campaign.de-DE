@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 68%
+ht-degree: 64%
 ---
 # Erste Schritte mit Reporting{#gs-ac-reports}
 
@@ -43,13 +43,13 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
 * **Dynamische Berichterstellung**
 
-  Die dynamische Berichterstellung ist über die Web-Benutzeroberfläche von Campaign verfügbar und bietet vollständig anpassbare Echtzeitberichte zur Messung der Wirkung Ihrer Marketing-Aktivitäten. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Ort und Alter ermöglicht, zusätzlich zur Analyse basierend auf Daten von E-Mail-Kampagnen wie Öffnungen und Klicks. Weitere Informationen finden Sie in der [Dokumentation zur Web-Benutzeroberfläche v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=de){target="_blank"}.
+  Die dynamische Berichterstellung ist über die Web-Benutzeroberfläche von Campaign verfügbar und bietet vollständig anpassbare Echtzeitberichte zur Messung der Wirkung Ihrer Marketing-Aktivitäten. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Ort und Alter ermöglicht, zusätzlich zur Analyse basierend auf Daten von E-Mail-Kampagnen wie Öffnungen und Klicks. Weitere Informationen finden Sie in der [Dokumentation zur Web-Benutzeroberfläche v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}.
 
 * **Cubes**
 
   Adobe Campaign verfügt über ein intuitives Tool zur Daten-Exploration, um dynamische Berichte zu erstellen.
 
-  Verwenden Sie das Marketing-Analyse-Modul, um Daten zu analysieren und zu messen, Statistiken zu berechnen und die Berichterstellung und Berechnung zu vereinfachen und zu optimieren. Sie können Berichte erstellen, Zielgruppen-Populationen aufbauen und in Listen speichern, die in Adobe Campaign für Zielgruppenbestimmungs- oder Segmentierungsaufgaben verwendet werden können.
+  Verwenden Sie Marketing-Analysefunktionen, um Daten zu analysieren und zu messen, Statistiken zu berechnen und die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Sie können Berichte erstellen, Zielgruppen-Populationen aufbauen und in Listen speichern, die in Adobe Campaign für Zielgruppenbestimmungs- oder Segmentierungsaufgaben verwendet werden können.
 
   ![](assets/create-a-report.png)
 
@@ -75,10 +75,10 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
   ![](assets/desc-analysis-report.png)
 
-  Die Berichte zur deskriptiven Analyse von Campaign werden in der Dokumentation zu [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
+  Die Berichte zur deskriptiven Analyse von Campaign werden in der Dokumentation zu [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
 
 * **Benutzerdefinierte Berichte**
 
   Verwenden Sie Adobe Campaign, um Berichte zu den Daten in der Datenbank zu erstellen. Sobald diese erstellt wurden, machen Sie sie in den entsprechenden Kontexten zugänglich.
 
-  Die Schritte zum Erstellen eines Berichts werden in der [Dokumentation zu Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=de){target="_blank"}. Die Erstellung personalisierter Berichte ist erfahrenen Benutzerinnen und Benutzern vorbehalten.
+  Die Schritte zum Erstellen eines Berichts werden in der [Dokumentation zu Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=de){target="_blank"}. Die Erstellung personalisierter Berichte ist erfahrenen Benutzerinnen und Benutzern vorbehalten.

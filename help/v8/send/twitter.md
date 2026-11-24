@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 99%
+source-wordcount: '861'
+ht-degree: 94%
 ---
 # Posten von Nachrichten auf X (Twitter) mit Adobe Campaign {#post-tw-messages}
 
@@ -114,7 +114,7 @@ Der technische Workflow **[!UICONTROL Twitter-Konten synchronisieren]** erfasst 
 
 Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
-1. Erstellen Sie einen X-Versand unter Verwendung der integrierten Versandvorlage **[!UICONTROL Twittern (Direktnachricht)]**.
+1. Erstellen Sie einen Versand vom Typ X basierend **[!UICONTROL der integrierten Versandvorlage]** Twittern (Direct Message).
 
 1. Wählen Sie die Hauptzielgruppe aus.
 
@@ -151,7 +151,7 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
    1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
    1. Klicken Sie auf das Dropdown-Menü **[!UICONTROL Personalisierung testen]** und wählen Sie **[!UICONTROL Besucherabonnement]**.
-   1. Wählen Sie das X-Konto aus, mit dem Sie die Vorschau testen möchten.
+   1. Wählen Sie ein X-Konto aus, mit dem Sie die Vorschau testen möchten.
 
 1. Durchführen eines Testversands
 

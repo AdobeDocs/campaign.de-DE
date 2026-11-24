@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 92%
+source-wordcount: '655'
+ht-degree: 89%
 ---
 # Erste Schritte mit Workflows{#gs-with-workflows}
 
@@ -52,7 +52,7 @@ Sie können Folgendes einrichten:
 
 >[!NOTE]
 >
->Die Web-Benutzeroberfläche von Adobe Campaign enthält eine überarbeitete Arbeitsfläche für Workflows, mit der dynamischere und personalisiertere Kunden-Journey erstellt werden können. Weitere Informationen zu Workflows für die Web-Benutzeroberfläche finden Sie in der [Dokumentation zur Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
+>Die Web-Benutzeroberfläche von Adobe Campaign enthält eine überarbeitete Arbeitsfläche für Workflows, mit der Sie dynamischere und personalisiertere Kunden-Journey erstellen können. Weitere Informationen zu Workflows für die Web-Benutzeroberfläche finden Sie in der [Dokumentation zur Campaign Web-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign-web/v8/wf/gs-workflows){target=_blank}.
 
 
 ## Entwerfen und Verwenden von Workflows {#gs-ac-wf}
@@ -101,7 +101,7 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 1. Query your targeted recipients with a **[!UICONTROL Query]** activity.
 
-    For more information on the **[!UICONTROL Query]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
+    For more information on the **[!UICONTROL Query]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 1. From the **[!UICONTROL Targeting]** tab, add a **[!UICONTROL Change data source]** activity and double-click it to select **[!UICONTROL Default data source]**.
 
@@ -109,7 +109,7 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 1. From the **[!UICONTROL Actions]** tab, drag and drop a **[!UICONTROL JavaScript code]** activity to perform unitary operations on the working table.
 
-    For more information on the **[!UICONTROL JavaScript code]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html?lang=de){target="_blank"}.
+    For more information on the **[!UICONTROL JavaScript code]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html){target="_blank"}.
 
 1. Add another **[!UICONTROL Change data source]** activity to switch back to the Cloud database.
 
@@ -142,7 +142,7 @@ Je nach Zweck Ihres Workflows können Sie in der Dropdown-Liste **[!UICONTROL Wa
 
 ## Einrichten wiederkehrender Kampagnen
 
-Entwerfen Sie einen wiederkehrenden Workflow und erstellen Sie bei jeder Workflow-Ausführung eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, führt dies nach einem Jahr zu 52 Sendungen. Das bedeutet auch, dass die Protokolle für jede Versandinstanz getrennt erstellt werden.
+Entwerfen Sie einen wiederkehrenden Workflow und erstellen Sie bei jeder Ausführung des Workflows eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, führt dies nach einem Jahr zu 52 Sendungen. Das bedeutet auch, dass die Protokolle für jede Versandinstanz getrennt erstellt werden.
 
 Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine wiederkehrende Kampagne erstellen.
 
@@ -151,7 +151,7 @@ Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/c
 
 Verwenden Sie Transaktionsnachrichten in Campaign, um Nachrichten zu automatisieren, die von durch Informationssysteme ausgelösten Ereignissen generiert werden. Diese Transaktionsnachrichten können z. B. Rechnungen, Auftragsbestätigungen, Versandbestätigungen, Passwortänderungen, Benachrichtigungen über die Nichtverfügbarkeit von Produkten, Kontoauszüge oder die Erstellung von Website-Konten sein. Diese Nachrichten können einzeln oder in Batches per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
-Weitere Informationen zu den Funktionen von Transaktionsnachrichten finden Sie in [diesem Abschnitt](../send/transactional.md).
+Weitere Informationen zu den Funktionen von Transaktionsnachrichten finden Sie [ (diesem Abschnitt](../send/transactional.md).
 
 Verbinden Sie Adobe Campaign und Adobe Analytics, um Benutzeraktionen abzurufen und nahezu in Echtzeit personalisierte Nachrichten zu versenden.
 

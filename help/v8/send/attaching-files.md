@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1113'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Anhängen von Dateien an eine E-Mail{#attaching-files}
 
@@ -34,7 +34,7 @@ Sie können an einen E-Mail-Versand eine oder mehrere Dateien anhängen.
 
 >[!NOTE]
 >
->Zur Vermeidung von Performance-Problemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über die Liste der Campaign-Optionen konfiguriert werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options#delivery).
+>Zur Vermeidung von Leistungsproblemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über die Liste der Campaign-Optionen konfiguriert werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options#delivery).
 
 Sie haben zwei Möglichkeiten:
 
@@ -59,7 +59,7 @@ Gehen Sie wie folgt vor, um eine lokale Datei an einen Versand anzuhängen.
 
 >[!NOTE]
 >
->Sie können auch mehrere Dateien an einen Versand anhängen. Die Anhänge können in jedem beliebigen Format vorliegen, darunter auch im Zip-Format.
+>Sie können auch mehrere Dateien an einen Versand anhängen. Anlagen können in jedem Format, einschließlich ZIP-Format, vorliegen.
 
 1. Wählen Sie den Link **[!UICONTROL Anhänge]**.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.

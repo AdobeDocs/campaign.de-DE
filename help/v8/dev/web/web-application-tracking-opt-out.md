@@ -32,18 +32,18 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 100%
+ht-degree: 86%
 ---
 # Opt-out vom Web-Anwendungs-Tracking{#web-application-tracking-opt-out}
 
 
 
-In Adobe Campaign können Sie das Tracking des Web-Verhaltens von Endbenutzenden anhalten, die sich vom Verhaltens-Tracking über Cookies oder Web Beacons abmelden. Die Funktion bietet auch die Möglichkeit, Endbenutzenden ein Banner mit dieser Option anzuzeigen. Diese Banner können zu Web-Anwendungen oder Landingpages hinzugefügt werden.
+Mit Adobe Campaign können Sie das Tracking des Webverhaltens von Endbenutzern stoppen, die das Verhaltens-Tracking über Cookies oder Web-Beacons deaktivieren. Die Funktion bietet auch die Möglichkeit, Endbenutzenden ein Banner mit dieser Option anzuzeigen. Diese Banner können zu Web-Anwendungen oder Landingpages hinzugefügt werden.
 
-Wenn sich eine Person vom Verhaltens-Tracking über Cookies oder Web Beacons abmeldet, werden diese Informationen mit JavaScript-APIs an den Adobe Campaign-Tracking-Server übertragen. Beachten Sie, dass in manchen Ländern gesetzlich vorgeschrieben ist, dass den Endbenutzenden eine Anmeldemöglichkeit bereitgestellt werden muss, bevor eine Abmeldemöglichkeit angeboten wird, (bzw. andere gesetzliche Anforderungen bestehen) und dass es in der Verantwortung der Kundschaft liegt, diese Gesetze einzuhalten.
+Wenn sich ein Endbenutzer vom Verhalten-Tracking über Cookies oder Web-Beacons abmeldet, werden diese Informationen mit JavaScript-APIs an den Adobe Campaign-Tracking-Server übermittelt. Beachten Sie, dass in manchen Ländern gesetzlich vorgeschrieben ist, dass den Endbenutzenden eine Anmeldemöglichkeit bereitgestellt werden muss, bevor eine Abmeldemöglichkeit angeboten wird, (bzw. andere gesetzliche Anforderungen bestehen) und dass es in der Verantwortung der Kundschaft liegt, diese Gesetze einzuhalten.
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ Das Banner wird mit einer bestimmten CSS-Datei bereitgestellt. Sie können die S
 
 ## Opt-out-Cookie mit einer API einrichten {#setting-the-opt-out-cookie-using-api}
 
-Adobe Campaign beinhaltet APIs, mit denen Sie den Cookie-Wert verwalten und Benutzereinstellungen abrufen können.
+Adobe Campaign wird mit APIs bereitgestellt, mit denen Sie den Cookie-Wert verwalten und Benutzereinstellungen abrufen können.
 
 Der Cookie-Name ist **acoptout**. Die üblichen Werte sind folgende:
 
@@ -106,7 +106,7 @@ Die verfügbaren clientseitigen APIs zur individuellen Anpassung des Banners sin
 
 * **NL.ClientWebTracking.allow()**: Stellt den Wert des Opt-out-Cookies so ein, dass Webtracking erlaubt ist. Webtracking ist standardmäßig erlaubt.
 * **NL.ClientWebTracking.forbid()**: Stellt den Wert des Opt-out-Cookies so ein, dass Webtracking nicht erlaubt ist. Um Webtracking zu verbieten, muss eine Benutzereingabe erfolgen.
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Schließt das Opt-out-Cookie-Banner, nachdem die Person auf die Schaltfläche „Annehmen“ oder „Ablehnen“ geklickt hat. (Während der Bubbling-Phase des Klickereignisses)
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Schließt das Opt-out-Cookie-Banner, nachdem auf die Schaltfläche Akzeptieren oder Ablehnen geklickt wurde (während der Bubbling-Phase des Klickereignisses).
 
   bannerDomElt {DOMElement} ist das Stamm-DOM-Element des Cookie-Banners, das entfernt werden muss
 

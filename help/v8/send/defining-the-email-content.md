@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2185'
-ht-degree: 97%
+ht-degree: 93%
 ---
 # Definieren des E-Mail-Inhalts {#defining-the-email-content}
 
@@ -94,7 +94,7 @@ Der eigentliche Nachrichteninhalt wird im unteren Bereich des Versandkonfigurati
 
 Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Voreinstellung der Empfängerin bzw. des Empfängers. Wir empfehlen Inhalte in beiden Formaten zu erstellen, damit Nachrichten in jedem E-Mail-System korrekt angezeigt werden können. Weitere Informationen hierzu finden Sie unter [Wahl des Nachrichtenformats](email-parameters.md#selecting-message-formats).
 
-* Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quell-Code direkt in die Unterregisterkarte **[!UICONTROL Quelle]** einzufügen.
+* Um HTML-Inhalte zu importieren, verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**. Sie haben auch die Möglichkeit, den Quell-Code direkt in die Unterregisterkarte **[!UICONTROL Quelle]** einzufügen.
 
   Wenn Sie den Digital Content Editor (DCE) verwenden, lesen Sie [diesen Abschnitt](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
@@ -132,14 +132,14 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Vo
 
   ![](assets/s_ncs_user_wizard_email01_141.png)
 
-  Der Tab **[!UICONTROL Vorschau]** am unteren Seitenrand ermöglicht die Anzeige des Renderings der Nachricht beim Empfänger inklusive Personalisierung.
+  Klicken Sie für das HTML-Format **[!UICONTROL unten auf]** Registerkarte „Vorschau“, um das Rendering der Nachricht mit ihrer Personalisierung anzuzeigen.
 
   ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Definieren interaktiver Inhalte {#amp-for-email-format}
 
-Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](https://amp.dev/de/about/email/) testen, das unter bestimmten Bedingungen das Senden dynamischer E-Mails ermöglicht.
+Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](https://amp.dev/de/about/email/) ausprobieren, mit dem Sie unter bestimmten Bedingungen dynamische E-Mails senden können.
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](defining-interactive-content.md).
 
@@ -302,7 +302,7 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
      ![](assets/barcode_insert_12.png)
 
 1. Geben Sie die gewünschte Größe des Barcodes an. Durch Angabe eines Faktors von x1 bis x10 kann die Größe angepasst werden.
-1. Im Feld **[!UICONTROL Wert]** können Sie den Wert des Barcodes definieren. Dieser kann einem Sonderangebot entsprechen und die Funktion von Kriterien übernehmen. Es kann sich um einen Wert eines mit den Kundinnen und Kunden verknüpften Datenbankfelds handeln.
+1. Im Feld **[!UICONTROL Wert]** können Sie den Wert des Barcodes definieren. Ein Wert kann mit einem Sonderangebot übereinstimmen und die Funktion eines Kriteriums sein. Er kann der Wert eines mit den Kunden verknüpften Datenbankfelds sein.
 
    Unten stehendes Beispiel zeigt einen EAN-8-Barcode, in dem die Kundennummer eines Empfängers enthalten ist. Klicken Sie auf die Personalisierungsschaltfläche rechts vom Feld **[!UICONTROL Wert]** und wählen Sie die Option **[!UICONTROL Empfänger > Kundennummer]**.
 

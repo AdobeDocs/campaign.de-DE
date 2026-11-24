@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 97%
+source-wordcount: '922'
+ht-degree: 90%
 ---
 # Angebot erstellen
 
@@ -80,7 +80,7 @@ Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der List
 
 Damit das Modul zwischen mehreren Angeboten wählen kann, für die die Zielgruppe geeignet ist, müssen Sie dem Angebot eine oder mehrere Gewichtungen zuweisen. Sie können bei Bedarf auch Filter auf die Zielgruppe anwenden oder die Platzierung einschränken, auf die die Gewichtung angewendet werden soll. Ein Angebot mit einer höheren Gewichtung wird gegenüber einem Angebot mit niedrigerer Gewichtung bevorzugt.
 
-Es besteht weiterhin die Möglichkeit, für ein Angebot verschiedene Gewichtungen zu definieren, z. B. in Bezug auf einen Zeitraum, eine Zielgruppe oder auch eine Platzierung.
+Sie können mehrere Gewichtungen für dasselbe Angebot konfigurieren, z. B. um Unterperioden, bestimmte Zielgruppen oder sogar eine Platzierung zu unterscheiden.
 
 Ein Angebot kann beispielsweise für Kontakte im Alter von 18 bis 25 Jahren die Gewichtung „A“ aufweisen und für Kontakte über 25 Jahren die Gewichtung „B“. Einem Angebot, dessen Verwendungszeitraum auf die Sommermonate beschränkt ist, kann im Juli die Gewichtung „A“ und im August die Gewichtung „B“ zugewiesen werden.
 
@@ -141,7 +141,7 @@ Definieren Sie auf der Registerkarte **[!UICONTROL Inhalt]** den Angebotsinhalt.
    * **[!UICONTROL Titel]**: Geben Sie den Titel an, der in Ihrem Angebot angezeigt werden soll. Warnung: Hierbei handelt es sich nicht um den Titel des Angebots, der in der Registerkarte **[!UICONTROL Allgemein]** definiert ist.
    * **[!UICONTROL Ziel-URL]**: Geben Sie die URL Ihres Angebots an. Sie muss mit „http://“ oder „https://“ beginnen.
    * **[!UICONTROL Bild-URL]**: Geben Sie die URL oder einen Zugangspfad für das Bild Ihres Angebots an.
-   * **[!UICONTROL HTML-Inhalt]**/**[!UICONTROL Textinhalt]**: Geben Sie den Textkörper Ihres Angebots auf der Registerkarte Ihrer Wahl ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise erzeugt ein `<table>`-Element auf der HTML-Seite Folgendes:
+   * **[!UICONTROL HTML-Inhalt]**/**[!UICONTROL Textinhalt]**: Geben Sie den Textkörper Ihres Angebots auf der Registerkarte Ihrer Wahl ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise lautet das Ergebnis eines `<table>`-Elements auf der HTML-Seite wie folgt:
 
    ```
       <div> 

@@ -51,18 +51,18 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1055'
-ht-degree: 78%
+ht-degree: 72%
 ---
 # Erste Schritte mit Adobe Campaign{#gs-ac-v8}
 
 Adobe Campaign bietet eine Plattform für die Gestaltung kanalübergreifender Kundenerlebnisse und eine Umgebung für die visuelle Orchestrierung von Kampagnen, die Verwaltung von Interaktionen in Echtzeit und die kanalübergreifende Ausführung.
 
-Adobe Campaign v8 ist das Kampagnenwerkzeug der nächsten Generation und wurde für verschiedene Marketingkanäle wie E-Mail, Push-Benachrichtigungen, SMS und Direkt-Mail entwickelt. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Darüber hinaus ist es mit einem skalierbaren Echtzeit-Messaging-Server gekoppelt, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einem umfassenden Payload von jedem IT-System aus zu versenden, beispielsweise für das Zurücksetzen von Passwörtern, Bestellbestätigungen, elektronische Empfangsbestätigungen und vieles mehr.
+Adobe Campaign v8 ist das Kampagnenwerkzeug der nächsten Generation und wurde für verschiedene Marketingkanäle wie E-Mail, Push-Benachrichtigungen, SMS und Direkt-Mail entwickelt. Adobe Campaign v8 bietet zuverlässige ETL- und Daten-Management-Funktionen, mit denen Sie die perfekte Kampagne erstellen und kuratieren können. Die Orchestrierungs-Engine bietet umfassende Marketing-Programme für unterschiedliche Kontaktpunkte mit einem Schwerpunkt auf Batch-basierten Journeys. Darüber hinaus ist sie mit einem skalierbaren Echtzeit-Messaging-Server verbunden, der es Marketing-Teams ermöglicht, vordefinierte Nachrichten basierend auf einer umfassenden Payload von jedem IT-System für Kommunikationen wie Passwortrücksetzung, Bestellbestätigung, E-Quittungen und vieles mehr zu senden.
 
-Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Zustellbarkeit und Überwachung. Es ist als **Managed Cloud Services** verfügbar, das Dienste mit einer proaktiven Überwachung und zeitnahen Bearbeitung verbindet. Weitere Informationen zu Campaign Managed Cloud Services finden Sie auf [dieser Seite](whats-new.md#acms-desc).
+Adobe Campaign v8 bietet erhebliche Verbesserungen in den Bereichen Infrastruktur, Sicherheit, Zustellbarkeit und Überwachung. Sie ist als **Managed Cloud Service&quot; verfügbar,** Services mit proaktiver Überwachung und rechtzeitigen Warnmeldungen kombiniert. Weitere Informationen zu Campaign Managed Cloud Services finden Sie auf [dieser Seite](whats-new.md#acms-desc).
 
 Mit Campaign haben Sie folgende Möglichkeiten:
 

@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 100%
+source-wordcount: '234'
+ht-degree: 92%
 ---
 # Abrufen von Profilen mit APIs {#retrieving-profiles}
 
@@ -101,7 +101,7 @@ Mit dem Parameter **[!UICONTROL filterType]** können Sie Profile anhand eines d
 
 >[!NOTE]
 >
->Bei der Suche wird zwischen Groß- und Kleinschreibung unterschieden, und es wird nur nach Präfixen gesucht. Sie können beispielsweise nicht anhand der letzten Buchstaben des Nachnamens nach einem Profil suchen.
+>Bei der Suche wird zwischen Groß- und Kleinschreibung unterschieden, und es wird nur nach Präfixen gesucht. Sie können beispielsweise kein Profil anhand der Nachnamen seiner Nachnamen suchen.
 
 ***Beispielanfragen***
 

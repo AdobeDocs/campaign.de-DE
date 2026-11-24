@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1446'
-ht-degree: 99%
+ht-degree: 96%
 ---
 # Definieren der Eigenschaften von Web-Formularen{#defining-web-forms-properties}
 
@@ -107,7 +107,7 @@ Das jeweilige Rendering wird im unteren Teil des Eigenschaftenfensters angezeigt
 
 Sie können das im Formular verwendete Logo durch Ihr eigenes Logo ersetzen.
 
-Klicken Sie in Ihrer Web-App unter **[!UICONTROL Eigenschaften]** auf der Registerkarte **[!UICONTROL Rendering]** auf das Lupensymbol für Ihre Vorlage:
+Klicken Sie auf **[!UICONTROL Registerkarte]** Rendering“ in **[!UICONTROL Eigenschaften]** Ihrer Web-Anwendung auf das Glassymbol Ihrer Vorlage:
 
 ![](assets/logo_glass.png)
 
@@ -115,7 +115,7 @@ Klicken Sie im neuen Fenster auf den Link **[!UICONTROL Seitenlayout]**:
 
 ![](assets/logo_pagelayout.png)
 
-Sie können den Pfad des Logobilds hier ändern:
+Sie haben hier die Möglichkeit, den Pfad des Logobilds zu ändern:
 
 ![](assets/logo_path.png)
 
@@ -159,7 +159,7 @@ Beim Zugriff auf die Seite erscheint das folgende Authentifizierungsformular:
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-Der Benutzername und das Passwort entspricht denen der Adobe Campaign-Operatoren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+Der Benutzername und das Passwort entspricht denen der Adobe Campaign-Operatoren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
 
 Mit der Option **[!UICONTROL Spezifisches Konto nutzen]** können Sie die Lese- oder Schreibrechte der Person einschränken, die auf das Formular zugreift. Wählen Sie in der Dropdown-Liste eine Person oder eine Benutzergruppe aus, die für die Vergabe dieser Berechtigungen zuständig sein soll.
 

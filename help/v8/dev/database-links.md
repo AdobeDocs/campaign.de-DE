@@ -30,10 +30,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 86%
+ht-degree: 84%
 ---
 # Verknüpfungs-Management {#links--relation-between-tables}
 
@@ -45,7 +45,7 @@ Die Verbindungstypen, auch Kardinalitäten genannt, sind im Folgenden aufgeführ
 * 1-N-Kardinalität: Eine Entität in der Quelltabelle kann mit mehreren Entitäten in der Zieltabelle in Beziehung stehen, aber eine Entität in der Zieltabelle kann nur maximal mit einer Entität in der Quelltabelle in Beziehung stehen.
 * N-N-Kardinalität: Eine Entität in der Quelltabelle kann mit mehreren Entitäten in der Zieltabelle in Beziehung stehen und umgekehrt.
 
-In der Benutzeroberfläche werden Kardinalitäten mit einem bestimmten Symbol dargestellt.
+In der -Benutzeroberfläche werden Kardinalitäten mit einem bestimmten Symbol dargestellt.
 
 Für Join-Beziehungen mit einer Kampagnen-Tabelle/-Datenbank:
 

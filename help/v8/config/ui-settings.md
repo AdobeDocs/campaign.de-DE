@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1094'
-ht-degree: 80%
+ht-degree: 79%
 ---
 # Einstellungen der Campaign-Benutzeroberfläche {#ui-settings}
 
@@ -145,7 +145,7 @@ Gehen Sie folgendermaßen vor, um eine Listenkonfiguration zu speichern, damit s
 1. Wählen Sie **[!UICONTROL Erweiterte Parameter]** aus und geben Sie im Feld **[!UICONTROL Konfiguration]** einen Namen ein.
 1. Wählen Sie **[!UICONTROL OK]** und danach **[!UICONTROL Speichern]** aus.
 
-Sie können diese Konfiguration dann auf jeden anderen Ordner desselben Typs anwenden. Weitere Informationen über Ordner finden Sie auf [dieser Seite](../audiences/folders-and-views.md).
+Sie können diese Konfiguration dann auf einen anderen Ordner desselben Typs anwenden. Weitere Informationen über Ordner finden Sie auf [dieser Seite](../audiences/folders-and-views.md).
 
 ### Exportieren einer Liste {#exporting-a-list}
 

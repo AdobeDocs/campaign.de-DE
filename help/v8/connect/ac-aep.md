@@ -23,16 +23,16 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 93%
+ht-degree: 86%
 ---
 # Freigeben und Synchronisieren von Zielgruppen mit Adobe Experience Platform {#gs-ac-aep}
 
 Die Ziel- und Quell-Connectoren für Adobe Campaign Managed Cloud Service ermöglichen eine nahtlose Integration zwischen Adobe Campaign und Adobe Experience Platform. Diese Integration ermöglicht Ihnen Folgendes:
 
-* Senden von Adobe Experience Platform-Zielgruppen an Adobe Campaign und Zurücksenden von Versand- und Trackinglogs an Adobe Experience Platform zu Analysezwecken
+* Senden Sie Adobe Experience Platform-Zielgruppen an Adobe Campaign und senden Sie Versand- und Trackinglogs zu Analysezwecken zurück an Adobe Experience Platform.
 * Überführen von Adobe Experience Platform-Profilattributen in Adobe Campaign und Ausführen eines Synchronisierungsprozesses, damit sie regelmäßig aktualisiert werden können
 
 ## Senden von Adobe Experience Platform-Zielgruppen an Campaign {#audiences}
@@ -52,11 +52,11 @@ Die wichtigsten Schritte zum Senden von Adobe Experience Platform-Zielgruppen an
 
      ![](assets/aep-destination.png){width="800" align="center"}
 
-  Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [&#128279;](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+  Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 
 * Verwenden Sie eine **Quellverbindung** von Adobe Campaign Managed Cloud Services, um die Versand- und Trackinglogs von Adobe Campaign an Adobe Experience Platform zu senden:
 
-  Konfigurieren Sie eine neue **Quellverbindung** für Adobe Campaign Managed Cloud Services, um Campaign-Ereignisse in Adobe Experience Platform aufzunehmen. Geben Sie Details zur Campaign-Instanz und zu dem zu verwendenden Schema an, wählen Sie einen Datensatz aus, in den Daten aufgenommen werden sollen, und konfigurieren Sie die abzurufenden Felder. [Erfahren Sie, wie Sie eine Quellverbindung für Adobe Campaign Managed Cloud Services erstellen](https://www.adobe.com/go/sources-campaign-ui-en)
+  Konfigurieren Sie dazu eine neue Adobe Campaign Managed Cloud Services **Source-Verbindung** um Campaign-Ereignisse in Adobe Experience Platform aufzunehmen. Geben Sie Details zur Campaign-Instanz und zu dem zu verwendenden Schema an, wählen Sie einen Datensatz aus, in den Daten aufgenommen werden sollen, und konfigurieren Sie die abzurufenden Felder. [Erfahren Sie, wie Sie eine Quellverbindung für Adobe Campaign Managed Cloud Services erstellen](https://www.adobe.com/go/sources-campaign-ui-en)
 
   ![](assets/aep-logs.png){width="800" align="center"}
 
@@ -81,4 +81,4 @@ Die wichtigsten Schritte zum Synchronisieren von Adobe Experience Platform-Profi
 1. Konfigurieren Sie die Profilattribute, die Sie in Adobe Campaign aktualisieren möchten.
 1. Sobald der Ablauf konfiguriert wurde, werden die ausgewählten Profilattribute mit Adobe Campaign synchronisiert und für alle Profile aktualisiert, die auf die im Ziel konfigurierten Segmente ausgerichtet sind.
 
-Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [&#128279;](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+Detaillierte Informationen zum Konfigurieren des Ziels finden Sie in der Dokumentation zur Adobe Campaign Managed Cloud Services-Verbindung [](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}

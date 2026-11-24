@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 79%
+source-wordcount: '538'
+ht-degree: 71%
 ---
 # Arbeiten mit Zielgruppen in Campaign{#gs-ac-audiences}
 
@@ -56,12 +56,12 @@ Informationen zum Erstellen und Verwalten von Filtern finden Sie auf [dieser Sei
 
 Zielgruppenbestimmung kann über eine Kombination von Abfragen in einer grafischen Abfolge in einem Workflow erstellt werden. Sie können Zielgruppen erstellen und deren Targeting entsprechend Ihren Anforderungen anpassen. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
 
-Auf dieser Seite erfahren Sie, wie Sie eine Audience in einem Kampagnen[Workflow &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de){target="_blank"}.
+Auf dieser Seite erfahren Sie, wie Sie eine Audience in einem Kampagnen[Workflow ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de){target="_blank"}.
 
 
 ## Aktive Profile {#active-profiles}
 
-Ein aktives Profil ist ein Profil, mit dem die Kundin oder der Kunde in den letzten 12 Monaten über einen beliebigen Kanal versucht hat, zu kommunizieren.
+Ein aktives Profil ist ein Profil, mit dem ein Kunde in den letzten 12 Monaten über einen beliebigen Kanal kommunizieren wollte.
 
 Gemäß Ihrem Vertrag erhalten alle Ihre Campaign-Instanzen eine bestimmte Anzahl aktiver Profile, die zu Abrechnungszwecken gezählt werden. Informationen zur Anzahl der gekauften aktiven Profile finden Sie in Ihrem aktuellen Vertrag. Weitere Informationen finden Sie in der [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
@@ -76,7 +76,7 @@ Es gelten die folgenden Schutzmechanismen und Einschränkungen:
 
 ## Datenschutz und Einverständniserklärung{#privacy-and-consent}
 
-Adobe Campaign ist ein leistungsstarkes Tool zur Erfassung und Verarbeitung von großen Datenmengen, einschließlich personenbezogener Daten und vertraulicher Informationen. Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vertraulicher Daten, erfassen. Es ist daher unerlässlich, dass Sie das Einverständnis Ihrer Empfänger erhalten und überwachen.
+Adobe Campaign ist ein leistungsstarkes Tool zur Erfassung und Verarbeitung großer Datenmengen, einschließlich personenbezogener Daten und vertraulicher Informationen. Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vertraulicher Daten, erfassen. Es ist daher unerlässlich, dass Sie das Einverständnis Ihrer Empfänger erhalten und überwachen.
 
-Erfahren Sie in der Dokumentation zu [Adobe Campaign Classic v7, wie Sie Datenschutz und Einverständnis &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target="_blank"}.
+Erfahren Sie in der Dokumentation zu [Adobe Campaign Classic v7, wie Sie Datenschutz und Einverständnis ](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de){target="_blank"}.
 

@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '2782'
-ht-degree: 99%
+source-wordcount: '2781'
+ht-degree: 95%
 ---
 # Best Practices für Datenmodelle {#data-model-best-practices}
 
@@ -101,7 +101,7 @@ Wenn ein Attribut nicht in eine dieser Kategorien fällt, benötigen Sie es wahr
 
 Um eine gute Architektur und System-Performance sicherzustellen, befolgen Sie die folgenden Best Practices, wenn Sie Daten in Adobe Campaign einrichten.
 
-* Innerhalb einer großen Tabelle können Sie zeichenfolgenbasierte oder numerische Felder einfügen und Links zu Referenztabellen hinzufügen (beim Arbeiten mit einer Werteliste).
+* Innerhalb großer Tabellen können Sie zeichenfolgenbasierte oder numerische Felder einfügen und Links zu Referenztabellen hinzufügen (beim Arbeiten mit einer Werteliste).
 * Mit dem Attribut **expr** können Sie ein Schema-Attribut in einer Tabelle als berechnetes Feld definieren (anstelle eines physischen definierten Werts). Dadurch wird Zugriff auf die Daten in einem anderen Format (z. B. Alter und Geburtsdatum) möglich, ohne dass beide Werte gespeichert werden müssen. So lässt sich verhindern, dass Felder dupliziert werden. Die Empfängertabelle nutzt beispielsweise einen Ausdruck für die Domain, der bereits im E-Mail-Feld vorhanden ist.
 * Wenn die Berechnung des Ausdrucks jedoch komplex ist, wird eine Verwendung des Attributs **expr** nicht empfohlen, da eine Ad-hoc-Berechnung Auswirkungen auf die Performance Ihrer Abfragen haben kann.
 * Der Typ **XML** hilft dabei, eine Erstellung von zu vielen Feldern zu verhindern. Er benötigt jedoch Speicherplatz, da er eine CLOB-Spalte in der Datenbank verwendet. Außerdem können komplexe SQL-Abfragen entstehen, die die Performance beeinträchtigen.
@@ -116,7 +116,7 @@ Felder müssen in einer Tabelle gespeichert werden, wenn sie Zielgruppenbestimmu
 
 Zusätzlich zu dem in den meisten Tabellen standardmäßig definierten Schlüsseln **autouid** und **autopk** sollten Sie gegebenenfalls einige logische oder geschäftliche Schlüssel (Kundennummer usw.) hinzufügen. Diese können später für Importe, Abstimmungen oder Daten-Packages verwendet werden. Weitere Informationen hierzu finden Sie unter [Kennungen](#identifiers).
 
-Effiziente Schlüssel sind unverzichtbar für hohe Performance. Mit Snowflake können Sie numerische oder zeichenfolgenbasierte Datentypen als Schlüssel für Tabellen einfügen.
+Effiziente Schlüssel sind unverzichtbar für hohe Performance. Mit Snowflake können Sie numerische oder zeichenfolgenbasierte Datentypen als Tabellenschlüssel einfügen.
 
 >[!NOTE]
 >
@@ -126,12 +126,12 @@ Effiziente Schlüssel sind unverzichtbar für hohe Performance. Mit Snowflake k�
 
 Adobe Campaign-Ressourcen verfügen über drei Kennungen (IDs). Sie können auch eine zusätzliche Kennung hinzuzufügen.
 
-Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
+In der folgenden Tabelle sind diese Kennungen und ihr Zweck beschrieben.
 
 | Kennung | Beschreibung | Best Practices |
 |--- |--- |--- |
 | ID | <ul><li>Die ID ist der physische Primärschlüssel einer Adobe Campaign-Tabelle. Bei integrierten Tabellen handelt es sich um eine Universally Unique ID (UUID).</li><li>Diese Kennung muss eindeutig sein. </li><li>Eine UUID kann in einer Schemadefinition sichtbar sein.</li></ul> | <ul><li>Automatisch erstellte Kennungen sollten nicht als Referenz in einem Workflow oder in einer Package-Definition verwendet werden.</li><li>Die ID in einer Tabelle ist eine UUID. Dieser Typ sollte nicht geändert werden.</li></ul> |
-| Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Ändern Sie den von Adobe Campaign erstellten Namen, wenn Sie das Objekt von einer Umgebung aus in einer anderen bereitstellen möchten.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Bestimmte reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk* usw.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces).</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen „ “, Doppelpunkt „:“ oder Bindestrich „-“. Alle diese Zeichen würden durch einen Unterstrich „_“ (zulässiges Zeichen) ersetzt werden. Beispielsweise würden „abc-def“ und „abc:def&quot; als „abc_def“ gespeichert und einander überschreiben.</li></ul> |
+| Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Benennen Sie den von Adobe Campaign generierten Datensatznamen um, wenn das Objekt von einer Umgebung in einer anderen bereitgestellt werden soll.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Bestimmte reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk* usw.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces).</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen &quot;&quot;, Semikolon &quot;:“ oder Bindestrich &quot;-&quot;. Alle diese Zeichen würden durch einen Unterstrich „_“ (zulässiges Zeichen) ersetzt werden. Beispielsweise würden „abc-def“ und „abc:def&quot; als „abc_def“ gespeichert und einander überschreiben.</li></ul> |
 | Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
 Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist der Primärschlüssel von Adobe Campaign eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden. [Weitere Informationen](../architecture/keys.md)
@@ -249,7 +249,7 @@ Im Folgenden finden Sie einige verbreitete Best Practices, die beim Entwerfen Ih
 * Reduzieren Sie die Anzahl der Spalten, indem Sie beispielsweise die nicht verwendeten Spalten ermitteln.
 * Optimieren Sie die Datenmodellrelationen, indem Sie komplexe Joins vermeiden, wie z. B. Joins mit mehreren Bedingungen und/oder mit mehreren Spalten.
 * Bei Join-Schlüsseln können Sie numerische oder zeichenfolgenbasierte Werte verwenden.
-* Reduzieren Sie die Tiefe der Protokollaufbewahrung so weit wie möglich. Wenn Sie einen tieferen Verlauf benötigen, können Sie Berechnungen aggregieren und/oder benutzerdefinierte Protokolltabellen bearbeiten, um einen größeren Verlauf zu speichern.
+* Reduzieren Sie die Tiefe der Protokollaufbewahrung so weit wie möglich. Wenn Sie einen tieferen Verlauf benötigen, können Sie Berechnungen aggregieren und/oder benutzerdefinierte Protokolltabellen verarbeiten, um einen größeren Verlauf zu speichern.
 
 ### Größe von Tabellen {#size-of-tables}
 

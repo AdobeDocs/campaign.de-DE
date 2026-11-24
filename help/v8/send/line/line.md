@@ -33,16 +33,16 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 95%
+source-wordcount: '1366'
+ht-degree: 89%
 ---
 # Erstellen eines LINE-Versands
 
 LINE ist ein Programm für kostenloses Instant Messaging, Sprach- und Videoanrufe, das für alle Mobilgeräte und für Desktop verfügbar ist. Sie können Adobe Campaign verwenden, um LINE-Nachrichten zu senden.
 
-Ebenfalls möglich ist die Kombination von [!DNL LINE] mit dem Transaktionsnachrichten-Modul. Dadurch können Echtzeitnachrichten über die auf Endbenutzergeräten installierte [!DNL LINE]-Mobile-App versendet werden. Weitere Informationen hierzu finden Sie auf dieser [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) Dokumentation zu Campaign Classic v7.
+Ebenfalls möglich ist die Kombination von [!DNL LINE] mit dem Transaktionsnachrichten-Modul. Dadurch können Echtzeitnachrichten über die auf Endbenutzergeräten installierte [!DNL LINE]-Mobile-App versendet werden. Weitere Informationen hierzu finden Sie auf dieser [ in ](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) Dokumentation zu Campaign Classic v7.
 
 ![](assets/line_message.png)
 
@@ -144,7 +144,7 @@ Gehen Sie wie folgt vor, um einen [!DNL LINE]-Versand zu erstellen:
 
    ![](assets/line_message_10.png)
 
-1. Wählen Sie im Versand-Editor **[!UICONTROL Hinzufügen]**, um eine oder mehrere Nachrichten hinzuzufügen und den **[!UICONTROL Inhaltstyp]** festzulegen.
+1. Klicken Sie im Versand-Editor auf **[!UICONTROL Hinzufügen]**, um eine oder mehrere Nachrichten hinzuzufügen und den **[!UICONTROL Inhaltstyp]** auszuwählen.
 
    Weiterführende Informationen zu den verschiedenen verfügbaren **[!UICONTROL Inhaltstypen]** finden Sie unter [Festlegen des Inhaltstyps](#defining-the-content).
 
@@ -160,7 +160,7 @@ Gehen Sie wie folgt vor, um einen [!DNL LINE]-Versand zu erstellen:
 
 ## Festlegen des Inhaltstyps {#defining-the-content}
 
-Um den Inhalt eines [!DNL LINE]-Versands festzulegen, müssen Sie Ihrem Versand zunächst einen Nachrichtentyp hinzufügen. Ein [!DNL LINE]-Versand kann bis zu fünf Nachrichten enthalten.
+Um den Inhalt eines [!DNL LINE] Versands festzulegen, müssen Sie Ihrem Versand zunächst einen Nachrichtentyp hinzufügen. Ein [!DNL LINE]-Versand kann bis zu fünf Nachrichten enthalten.
 
 Es stehen drei Nachrichtentypen zur Auswahl:
 
@@ -198,7 +198,7 @@ Dabei können folgende Elemente verwendet werden:
 
   ![](assets/line_message_03.png)
 
-  Über die Option **[!UICONTROL Bilder nach Bildschirmgröße des Geräts definieren]** stehen verschiedene Bildauflösungen zur Verfügung, anhand derer Sie die Darstellung des Versands auf Mobilgeräten optimieren können. Es werden nur Bilder unterstützt, die die gleiche Höhe und Breite aufweisen.
+  Über die Option **[!UICONTROL Bilder nach Bildschirmgröße des Geräts definieren]** stehen verschiedene Bildauflösungen zur Verfügung, anhand derer Sie die Darstellung des Versands auf Mobilgeräten optimieren können. Es werden nur Bilder mit derselben Höhe und Breite unterstützt.
 
   Bilder können entsprechend der Bildschirmgröße definiert werden:
 
@@ -222,7 +222,7 @@ Dabei können folgende Elemente verwendet werden:
 
 ### Konfigurieren eines Videonachrichten-Versands {#configuring-a-video-message-delivery}
 
-Beim [!DNL LINE]-Versand vom Typ **[!UICONTROL Video-Nachricht]** handelt es sich um eine Nachricht, die an Empfänger in Form eines Videos gesendet wird, das eine URL enthalten kann.
+Ein **[!UICONTROL Videoversand]** ist [!DNL LINE] Nachricht, die an Empfänger in Form eines Videos gesendet wird, das eine URL enthalten kann.
 
 Im Feld **[!UICONTROL URL des Vorschaubilds]** können Sie die URL eines Vorschaubilds hinzufügen. Für diese besteht eine Zeichenbeschränkung von 1.000. Es werden die Formate JPEG und PNG unterstützt, wobei eine Beschränkung der Dateigröße von 1 MB besteht.
 
@@ -282,7 +282,7 @@ In diesem Beispiel wird aufgezeigt, wie Sie eine Textnachricht und ein Bild, die
 
 1. Wählen Sie im Bereich **[!UICONTROL Links]** das Layout aus, gemäß dem Ihr Bild in mehrere anklickbare Bereiche unterteilt wird.
 
-1. Weisen Sie jedem Bereich des Bildes eine URL zu.
+1. Weisen Sie jeder Region Ihres Bildes eine URL zu.
 
    ![](assets/line_usecase_08.png)
 

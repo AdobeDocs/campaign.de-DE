@@ -24,14 +24,14 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 90%
+source-wordcount: '1356'
+ht-degree: 88%
 ---
 # Senden eines Angebots{#send}
 
-Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor genehmigt und für eine **Live**-Umgebung freigegeben worden sein. [Weitere Informationen](interaction-offer.md#approve-offers)
+Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor validiert und für eine Live **Umgebung** worden sein. [Weitere Informationen](interaction-offer.md#approve-offers)
 
 Die Angebotsunterbreitung über einen ausgehenden Kommunikationskanal erfolgt per Briefpost, E-Mail oder Mobile-Versand. Außerdem können Sie auch den Einzelmodus mit Transaktionsnachrichten (Message Center) verwenden.
 
@@ -189,7 +189,7 @@ Das Prinzip dieser Aktivität entspricht dem der **Anreicherung**. Auch hier wer
 Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritte aus:
 
 1. Fügen Sie eine **[!UICONTROL Angebotsmodul]**-Aktivität hinzu und öffnen Sie sie.
-1. Füllen Sie die verschiedenen verfügbaren Felder aus, um die Parameter der Abfrage des Angebotsmoduls anzugeben (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen.
+1. Füllen Sie die verschiedenen verfügbaren Felder aus, um die Abfrage der Parameter des Angebotsmoduls anzugeben (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen.
 
    >[!CAUTION]
    >

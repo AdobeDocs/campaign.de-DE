@@ -18,10 +18,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 100%
+ht-degree: 94%
 ---
 # Filter {#filtering}
 
@@ -35,7 +35,7 @@ Um die Metadaten eines Filters und die jeweilige Verwendungsweise zu ermitteln, 
 
 ***Beispielanfrage***
 
-Die folgenden beispielhaften Payloads zeigen, wie die &quot;byText&quot;-Filtermetadaten für die &quot;Profil&quot;-Ressource abgerufen werden. Führen Sie zuerst eine GET-Anfrage für die Metadaten der Ressource &quot;Profil&quot; durch.
+Die folgenden beispielhaften Payloads zeigen, wie die &quot;byText&quot;-Filtermetadaten für die &quot;Profil&quot;-Ressource abgerufen werden. Führen Sie zunächst eine GET-Anfrage zu den Ressourcenmetadaten „Profil“ aus.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
@@ -170,7 +170,7 @@ in den Feldern „E-Mail“ oder „Nachname“ enthalten (der Filter „byText�
   }
   ```
 
-* Beispielhafte GET-Anfrage zum Abrufen der &quot;Dienst&quot;-Ressourcen mit dem Typ &quot;email&quot; und dem Titel &quot;sport&quot;.
+* Beispielhafte GET-Anfrage zum Abrufen der Service-Ressourcen mit dem Typ „email“ und der Bezeichnung „sport“.
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/byText?channel=email&text=sport \

@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 67%
+source-wordcount: '1231'
+ht-degree: 62%
 ---
 # Erkunden der Benutzeroberfläche {#ui-client-console}
 
@@ -44,7 +44,7 @@ Sie können über die Client-Konsole oder die Web-Benutzeroberfläche auf Adobe 
 
   Weitere Informationen dazu, wie Sie die Campaign Client-Konsole installieren und konfigurieren können, finden Sie in [diesem Abschnitt](../start/connect.md).
 
-* **Web-Zugriff**: Mit den Web-basierten Adobe Campaign-Zugriffsfunktionen können Sie über eine HTML-Benutzeroberfläche mit einem Webbrowser auf eine Teilmenge von Campaign-Funktionen zugreifen. Verwenden Sie diese Web-Benutzeroberfläche, um auf Berichte zuzugreifen, Nachrichten zu steuern und zu validieren, auf Monitoring-Dashboards zuzugreifen und vieles mehr.  Weitere Informationen zum Web-basierten Zugriff auf Campaign finden Sie [in diesem Abschnitt](../start/connect.md#web-access).
+* **Web-Zugriff** - Mit den Web-Zugriffsfunktionen von Adobe Campaign können Sie über eine HTML-Benutzeroberfläche mit einem Webbrowser auf eine Untergruppe von Campaign-Funktionen zugreifen. Verwenden Sie diese Web-Benutzeroberfläche, um auf Berichte zuzugreifen, Nachrichten zu steuern und zu validieren, auf Monitoring-Dashboards zuzugreifen und vieles mehr.  Weitere Informationen zum Web-basierten Zugriff auf Campaign finden Sie [in diesem Abschnitt](../start/connect.md#web-access).
 
 * **APIs**: In bestimmten Fällen kann das System über die via SOAP-Protokoll bereitgestellten Web Services-APIs von einer externen Anwendung aus aufgerufen werden. Weitere Informationen zu Campaign-APIs finden Sie [auf dieser Seite](../dev/api.md).
 
@@ -103,7 +103,7 @@ Sobald Sie mit der Campaign-Client-Konsole verbunden sind, durchsuchen Sie die R
 
 Im Abschnitt **[!UICONTROL Browsen]** können Sie für jede Funktion auf die wichtigsten Optionen zugreifen. Der Link **[!UICONTROL Mehr]** ermöglicht den Zugriff auf alle anderen Komponenten.
 
-Wenn Sie beispielsweise zur Registerkarte **[!UICONTROL Profile und Zielgruppen]** gehen, können Sie auf die Empfängerlisten, Abonnements, existierende Zielgruppen-Workflows und die Verknüpfungen zur Erstellung dieser Komponenten zugreifen.
+Wenn Sie beispielsweise zur Registerkarte **[!UICONTROL Profile und Zielgruppen]** gehen, können Sie auf die Empfängerlisten, Abonnements, vorhandene Zielgruppen-Workflows und die Verknüpfungen zur Erstellung dieser Komponenten zugreifen.
 
 ![Benutzeroberfläche der Campaign-Konsole, über die der Zugriff auf die Listen über die Registerkarte Profile und Zielgruppe erfolgt](assets/overview-list.png)
 
@@ -120,7 +120,7 @@ Verwenden Sie im Abschnitt **[!UICONTROL Erstellen]** auf der linken Bildschirms
 <!--
 ## Use a web browser {#web-browser}
 
-You can also access a subset of Campaign capabilities through the a web browser.
+You can also access a subset of Campaign capabilities through a web browser.
 
 The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns.
 
@@ -175,7 +175,7 @@ Die unterstützten Sprachen hängen von der Benutzeroberfläche ab.
   >
   >Die Sprache wird während des Installationsprozesses ausgewählt und **kann später nicht mehr geändert**.
 
-* Informationen zu den von der Campaign-Web-Benutzeroberfläche unterstützten Sprachen [&#x200B; Sie in der Dokumentation zur Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
+* Informationen zu den von der Campaign-Web-Benutzeroberfläche unterstützten Sprachen [ Sie in der Dokumentation zur Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
 
 ## Formate
 

@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 92%
+source-wordcount: '739'
+ht-degree: 90%
 ---
 # Erste Schritte mit dem Campaign-Datenmodell {#gs-ac-datamodel}
 
@@ -47,7 +47,7 @@ Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschrei
 
 * **Empfängertabelle**: Das Datenmodell basiert auf einer Haupttabelle, die standardmäßig die Empfängertabelle (**nmsRecipient**) ist. In dieser Tabelle werden alle Marketing-Profile gespeichert. Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](#ootb-profiles).
 
-* **Versandtabelle**: Diese Tabelle speichert einen Eintrag pro Versandaktion. Normalerweise handelt es sich dabei um die Versandtabelle (**NmsDelivery**). in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Es enthält alle erforderlichen Parameter für die Durchführung von Sendungen wie Zielgruppe, Inhalt usw. Jeder Datensatz wird mehrmals aktualisiert, um den Versandfortschritt widerzuspiegeln
+* **Versandtabelle**: Diese Tabelle speichert einen Eintrag pro Versandaktion. Normalerweise handelt es sich dabei um die Versandtabelle (**NmsDelivery**). Ein Datensatz in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Es enthält alle erforderlichen Parameter für die Durchführung von Sendungen wie Zielgruppe, Inhalt usw. Jeder Datensatz wird mehrmals aktualisiert, um den Versandfortschritt widerzuspiegeln
 
 * **Protokolltabelle**: In diesen Tabellen werden alle Protokolle gespeichert, die mit der Ausführung der Kampagnen verbunden sind.
 
@@ -99,5 +99,5 @@ Weitere Informationen zu Replikationsstrategien und -verfahren finden Sie in [di
 
 **Verwandte Themen**
 
-Erfahren Sie in [&#x200B; Abschnitt , wie Sie Profile importieren.](../start/import.md)
-Weitere Informationen zu Campaign-Audiences finden [&#x200B; in diesem Abschnitt](../start/audiences.md)
+Erfahren Sie in [ Abschnitt , wie Sie Profile importieren.](../start/import.md)
+Weitere Informationen zu Campaign-Audiences finden [ in diesem Abschnitt](../start/audiences.md)

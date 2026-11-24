@@ -28,14 +28,14 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '801'
-ht-degree: 91%
+ht-degree: 89%
 ---
 # Campaign-Add-on für verbesserte Sicherheit {#enhanced-security}
 
-Diese Seite ist Teil der [öffentlich verfügbaren empfohlenen sicheren Konfigurationsanleitung von Adobe &#x200B;](security.md#public-guidance) Campaign v8.
+Diese Seite ist Teil der [öffentlich verfügbaren empfohlenen sicheren Konfigurationsanleitung von Adobe ](security.md#public-guidance) Campaign v8.
 
 Um die Netzwerkverbindung sicherer zu machen und die Sicherheit Ihrer Ressourcen zu verbessern, bietet [!DNL Adobe Campaign] ein neues Add-on für **verbesserte Sicherheit**.
 
@@ -53,7 +53,7 @@ Nach der Implementierung dieser Funktionen überwacht Adobe Folgendes:
 
 * die Verfügbarkeit Ihrer Instanz und sendet eine Warnmeldung, wenn der Schlüssel nicht verfügbar ist.
 
-* die VPN-Tunnel und sendet eine Warnmeldung, falls ein Problem auftritt.
+* Die VPN-Tunnel und fahren Sie mit der Warnmeldung fort, falls Probleme auftreten.
 
 ## Sichere Customer Managed Key-Integration {#secure-cmk-integration}
 

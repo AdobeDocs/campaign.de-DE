@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 98%
+ht-degree: 91%
 ---
 # Aktualisieren von Adobe Experience Platform-Profilen über Adobe Campaign-Landingpages {#ac-aep-lp}
 
@@ -71,7 +71,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/ac-lp-oauth.png){width="70%"}
 
-Nachdem Sie Ihre Oauth-Verbindung konfiguriert haben, erstellen und konfigurieren Sie eine neue **[!UICONTROL HTTP-API]**-Quellverbindung zur Verknüpfung von Adobe Campaign mit Adobe Experience Platform.
+Nachdem Sie Ihre OAuth-Verbindung konfiguriert haben, erstellen und konfigurieren Sie eine neue **[!UICONTROL HTTP-API]** Source-Verbindung, um Adobe Campaign mit Adobe Experience Platform zu verknüpfen.
 
 ## Erstellen einer HTTP-API-Quellverbindung {#source}
 
@@ -83,7 +83,7 @@ Mit der vorhandenen OAuth-Verbindung besteht der nächste Schritt darin, eine **
 
 1. Konfigurieren Sie die Verbindung entsprechend Ihren Anforderungen. Detaillierte Informationen zum Konfigurieren einer HTTP-API-Verbindung finden Sie in der [Dokumentation zu Adobe Experience Platform-Quellen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=de){target="_blank"}.
 
-   Aktivieren Sie im Schritt **[!UICONTROL Authentifizierung]** die Option **[!UICONTROL Authentifizierung aktivieren]**, um sich mit dem zuvor über die OAuth-Integration generierten Zugriffstoken zu authentifizieren.
+   Schalten **[!UICONTROL im Schritt]** Authentifizierung“ die Option **[!UICONTROL Authentifizierung aktivieren]** ein, um sich mit dem zuvor über die OAuth-Integration generierten Zugriffstoken zu authentifizieren.
 
    ![](assets/ac-lp-source-authentication.png){width="70%"}
 
@@ -99,7 +99,7 @@ Nachdem jetzt die HTTP-API-Quellverbindung eingerichtet worden ist, müssen Sie 
 
 ## Hinzufügen von Authentifizierungsoptionen in Adobe Campaign {#xtk}
 
-Nachdem die HTTP-API-Quellverbindung konfiguriert worden ist, müssen Sie bestimmte Optionen zu Adobe Campaign hinzufügen, um die Verbindung mit Adobe Experience Platform zu aktivieren. Dies kann entweder im Menü „Kampagnen-Administration“ oder bei der Ausführung des Landingpage-Workflows durch Hinzufügen einer spezifischen **[!UICONTROL JavaScript-Code]**-Aktivität erfolgen.
+Nachdem die HTTP-API-Quellverbindung konfiguriert worden ist, müssen Sie bestimmte Optionen zu Adobe Campaign hinzufügen, um die Verbindung mit Adobe Experience Platform zu aktivieren. Dies kann entweder im Menü Administration von Campaign oder beim Ausführen des Landingpage-Workflows erfolgen, indem eine bestimmte **[!UICONTROL JavaScript-Code]**-Aktivität hinzugefügt wird.
 
 Auf den nachstehenden Registerkarten finden Sie die beiden Methoden:
 
@@ -123,7 +123,7 @@ Auf den nachstehenden Registerkarten finden Sie die beiden Methoden:
 
 >[!TAB Hinzufügen von Optionen mithilfe einer JavaScript-Code-Aktivität]
 
-Um diese Optionen bei Ausführung des Landingpage-Workflows automatisch zu konfigurieren, fügen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität zu Ihrem Workflow mit dem unten stehenden Code hinzu. [Erfahren Sie, wie Sie eine JavaScript-Code-Aktivität konfigurieren](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
+Um diese Optionen bei Ausführung des Landingpage-Workflows automatisch zu konfigurieren, fügen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität zu Ihrem Workflow mit dem unten stehenden Code hinzu. [Erfahren Sie, wie Sie eine JavaScript-Code-Aktivität konfigurieren](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}.
 
 Bei Ausführung des Workflows werden die Optionen automatisch in der Campaign-Konsole mit den angegebenen Werten erstellt.
 

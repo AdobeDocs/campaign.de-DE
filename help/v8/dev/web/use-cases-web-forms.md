@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 98%
+source-wordcount: '1023'
+ht-degree: 89%
 ---
 # Anwendungsbeispiele: Web-Formulare{#use-cases-web-forms}
 
@@ -45,7 +45,7 @@ Es wird von folgendem Szenario ausgegangen:
 
 ### Schritt 1: Erstellen von Informationsdiensten {#step-1---creating-information-services}
 
-1. Erstellen Sie den Dienst für die Newsletter-Anmeldung für Ihre Empfangenden. Weitere Informationen zur Erstellung eines Newsletters finden Sie [in diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
+1. Erstellen Sie den Dienst für die Newsletter-Anmeldung für Ihre Empfangenden. Weitere Informationen zur Erstellung eines Newsletters finden Sie [in diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -63,7 +63,7 @@ Bestätigungsnachrichten werden über eine spezielle Versandvorlage gesendet, di
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Da die Empfänger dieses Versands ihre Zustimmung nicht bestätigt haben, befinden sie sich immer noch auf der Blockierungsliste der Datenbank. Damit sie diese Mitteilung erhalten, müssen Sie Sendungen anhand dieser Vorlage für die gewünschten Empfänger autorisieren, die sich auf der Blockierungsliste befinden.
+1. Da die Empfänger dieses Versands ihre Zustimmung nicht bestätigt haben, befinden sie sich immer noch auf der Blockierungsliste der Datenbank. Damit sie diese Nachricht erhalten, müssen Sie Sendungen autorisieren, die auf dieser Vorlage basieren, um Empfänger auf der Blockierungsliste anzusprechen.
 
    Verwenden Sie dazu den Tab **[!UICONTROL Ausschlüsse]**.
 
@@ -121,7 +121,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   Die erste **[!UICONTROL Script]**-Aktivität setzt Empfänger auf die Blockierungsliste, bis diese ihr Abonnement des Newsletters bestätigt haben. Der Inhalt muss wie folgt aussehen:
+   Die erste **[!UICONTROL Script]**-Aktivität fügt Empfänger auf der Blockierungsliste hinzu, bis sie ihr Abonnement für den Newsletter bestätigt haben. Der Inhalt muss wie folgt aussehen:
 
    ```
    ctx.recipient.@blackList=1
@@ -129,7 +129,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   Mit der zweiten Aktivität **[!UICONTROL Skript]** werden Sendungen an die Benutzenden genehmigt und die Anmeldung beim Newsletter wird ermöglicht. Die letzten beiden Zeilen des Skripts ermöglichen Ihnen den Transfer Ihrer Empfangenden aus dem temporären Ordner in einen anderen Ordner und die Abstimmung mit vorhandenen Profilen, sobald die Anmeldung bestätigt wurde.
+   Mit der zweiten **[!UICONTROL Script]**-Aktivität werden Sendungen an die Benutzer genehmigt. Außerdem werden diese zum Newsletter angemeldet. Die letzten beiden Zeilen des Skripts ermöglichen es Ihnen, Ihre Empfänger vom temporären Ordner in einen anderen Ordner zu übertragen und mit vorhandenen Profilen abzustimmen, sobald sie das Abonnement bestätigt haben.
 
    ```
    ctx.recipient.@blackList=0

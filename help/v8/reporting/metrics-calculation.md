@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: e633414f053265108e33aa63d7b7504d307e05c3
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '3181'
-ht-degree: 99%
+ht-degree: 97%
 ---
 # Berechnung integrierter Berichtsmetriken {#metrics-calculation}
 
@@ -416,7 +416,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Browser-Statistiken]** (nms
   <tr> 
    <td> Angesehene Seiten<br /> </td> 
    <td> @totalPages / @days<br /> </td> 
-   <td> Durchschnittliche tägliche Anzahl von Klicks auf Links in Sendungen nach Betriebssystem, bezogen auf alle Sendungen.<br /> </td> 
+   <td> Täglicher Durchschnitt der Gesamtzahl der Klicks auf die Versand-Links pro Betriebssystem für alle Sendungen.<br /> </td> 
    <td> Sum(@pages)<br /> </td> 
   </tr> 
   <tr> 
@@ -809,7 +809,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
 
 Dieser Bericht basiert auf den Tabellen „Versand“ (nms:delivery) und **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats).
 
-Dieser Bericht zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentualen Klickanteil für jeden Link. Gestaltungsbausteine, Abmelde-Links und Mirrorseiten-Links werden bei der Gesamtanzahl der Klicks berücksichtigt, jedoch nicht im Bericht angezeigt.
+Dieser Bericht zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentualen Klickanteil für jeden Link. Gestaltungsbausteine, Abmelde-Links und Mirrorseiten-Links werden in der Gesamtklickzahl berücksichtigt, aber nicht im Bericht angezeigt.
 
 ## Tracking-Statistiken {#tracking-statistics-1}
 
@@ -940,7 +940,7 @@ Falls Sie bei bestimmten Indikatoren eine Desynchronisierung oder Inkonsistenz b
 
 ## Öffnungs-Tracking {#tracking-opens-}
 
-Damit Adobe Campaign das Öffnen einer Nachricht erkennt, muss die Empfängerin bzw. der Empfänger die Bilder in der E-Mail herunterladen. HTML- und Multipart/Alternative-E-Mails enthalten ein 0-Pixel-Bild, mit dem Sie geöffnete Nachrichten erkennen können. Da Nachrichten im Textformat keine Bilder enthalten, ist es nicht möglich festzustellen, ob sie geöffnet wurden oder nicht. Bei den anhand der geöffneten Nachrichten berechneten Werten handelt es sich aufgrund der mit der Bildanzeige verbundenen Fehlerspanne immer um Schätzungen.
+Damit Adobe Campaign das Öffnen einer Nachricht erkennt, muss die Empfängerin bzw. der Empfänger die Bilder in der E-Mail herunterladen. HTML und Multipart/Alternative-E-Mails enthalten ein Bild mit 0 Pixeln, mit dem Sie geöffnete Nachrichten erkennen können. Da Nachrichten im Textformat keine Bilder enthalten, ist es nicht möglich festzustellen, ob sie geöffnet wurden oder nicht. Bei den anhand der geöffneten Nachrichten berechneten Werten handelt es sich aufgrund der mit der Bildanzeige verbundenen Fehlerspanne immer um Schätzungen.
 
 ## Unterschied zwischen Personen und Zielgruppenempfängern {#targeted-persons---recipients}
 

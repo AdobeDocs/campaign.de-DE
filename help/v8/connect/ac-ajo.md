@@ -28,14 +28,14 @@ level_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 77%
+source-wordcount: '126'
+ht-degree: 52%
 ---
 # Arbeiten mit Campaign und Adobe Journey Optimizer
 
-Durch die Integration von Adobe Campaign mit Adobe Journey Optimizer können Sie in Adobe Journey Optimizer Customer Journeys orchestrieren und mithilfe der Transaktionsnachrichten-Funktionen von Adobe Campaign E-Mails, Push-Benachrichtigungen und/oder SMS versenden.
+Durch die Integration von Adobe Campaign mit Adobe Journey Optimizer können Sie die Journey-Kontakte von Kunden in Adobe Journey Optimizer koordinieren und E-Mails, Push-Benachrichtigungen und/oder SMS mit der Transaktionsnachrichten-Funktion von Adobe Campaign versenden.
 
 Die wichtigsten Schritte sind die Erstellung einer Transaktionsnachrichtenvorlage in Campaign und die Erstellung des Ereignisses, der Aktion und des Designs der Journey in Adobe Journey Optimizer.
 
@@ -43,7 +43,7 @@ Die wichtigsten Schritte sind die Erstellung einer Transaktionsnachrichtenvorlag
 ![](assets/ajo-integration.png)
 
 
-[&#x200B; Erfahren Sie mehr über diese Integration in diesem End-to-End-Beispiel](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}.
+[ Erfahren Sie mehr über diese Integration in diesem End-to-End-Beispiel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}.
 
 
 [Weitere Informationen finden Sie in der Dokumentation zu Journey Optimizer](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}.

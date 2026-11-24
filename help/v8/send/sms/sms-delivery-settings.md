@@ -30,25 +30,25 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 97%
+source-wordcount: '798'
+ht-degree: 92%
 ---
 # SMS-Versandeinstellungen {#sms-settings}
 
-Die folgenden technischen Einstellungen werden für einen SMS-Versand benötigt:
+Die für einen SMS-Versand erforderlichen technischen Einstellungen sind:
 
 * Das externe SMPP-Konto für das Nachrichten-Routing. [Weitere Informationen](smpp-external-account.md#smpp-connection-settings)
 * Das Konfigurieren der Registerkarte „SMS“. [Weitere Informationen](#sms-tab)
 
-Sie können all diese Einrichtungen in einer Versandvorlage vornehmen, sodass Sie die Einstellungen nicht für jede SMS-Versanderstellung festlegen müssen.
+Sie können alle diese Optionen in einer Versandvorlage einrichten, um zu vermeiden, dass Sie die Einstellungen für jede SMS-Versanderstellung vornehmen müssen.
 
 ## Konfigurieren der Registerkarte „SMS“ {#sms-tab}
 
 ![](assets/send_settings.png){zoomable="yes"}
 
-Hier finden Sie die Informationen, die Sie zum Ausfüllen dieses Formulars benötigen. Jedes Feld wird nachfolgend erläutert:
+Im Folgenden finden Sie die Informationen, die Sie zum Ausfüllen dieses Formulars benötigen. Jedes Feld wird nachfolgend erläutert:
 
 * **[!UICONTROL Absenderadresse]**
 

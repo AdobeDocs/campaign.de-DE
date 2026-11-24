@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 100%
+source-wordcount: '442'
+ht-degree: 95%
 ---
 # Bedingte Inhalte erstellen{#conditional-content}
 
@@ -93,10 +93,10 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
 
    >[!NOTE]
    >
-   >Da Sie für den E-Mail-Inhalt keine andere Version definiert haben, müssen Sie die Zielpopulation vor dem Versand der E-Mail filtern.
+   >Da im E-Mail-Inhalt keine alternative Version definiert wurde, sollten Sie die Zielpopulation filtern, bevor Sie die E-Mail versenden.
 
 ## Anleitungsvideo {#conditionnal-content-video}
 
 Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446720?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)

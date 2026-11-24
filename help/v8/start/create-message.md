@@ -35,10 +35,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1653'
-ht-degree: 96%
+ht-degree: 92%
 ---
 # Erstellen Ihres ersten Versands {#create-a-msg}
 
@@ -129,7 +129,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
      ![](assets/target-recipient-delivery.png)
 
-   * **[!UICONTROL Empfänger von Sendungen eines bestimmten Ordners]**: Verwenden Sie diese Option, um die Zielgruppe aus den in einem bestimmten Ordner enthaltenen Empfänger-Sendungen zu erstellen.
+   * **[!UICONTROL Versandempfänger, die einem Ordner angehören]**: Verwenden Sie diese Option, um die Zielgruppe aus den Empfängern der in einem bestimmten Ordner enthaltenen Sendungen zu erstellen.
 
      ![](assets/target-delivery-folder.png)
 
@@ -146,7 +146,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
      ![](assets/target-service.png)
 
    * **[!UICONTROL Benutzerfilter]**: Mit dieser Option können Sie auf vorkonfigurierte Filter zugreifen, um sie als Filterkriterien für Profile in der Datenbank zu verwenden. Weiterführende Informationen zu Benutzerfiltern finden Sie in [diesem Abschnitt](../audiences/create-filters.md#default-filters).
-   * Mit der Option **[!UICONTROL Empfänger von diesem Segment ausschließen]** können Sie Empfängerinnen und Empfänger als Zielgruppe auswählen, die nicht den definierten Zielkriterien entsprechen. Um diese Option zu verwenden, aktivieren Sie das entsprechende Kontrollkästchen und wenden Sie dann die Zielgruppenbestimmung an (wie zuvor definiert), um die resultierenden Profile auszuschließen.
+   * Mit **[!UICONTROL Option Empfänger von diesem Segment]** können Sie Empfänger auswählen, die die definierten Zielgruppenkriterien nicht erfüllen. Um diese Option zu verwenden, aktivieren Sie das entsprechende Kontrollkästchen und wenden Sie dann die Zielgruppenbestimmung an (wie zuvor definiert), um die resultierenden Profile auszuschließen.
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für diese Zielgruppenbestimmung ein. Der Titel entspricht standardmäßig dem Titel der ersten Zielgruppenbestimmung. Bei der Kombination von Filterkriterien wird empfohlen, einen expliziten Namen zu verwenden.
 1. Klicken Sie auf **[!UICONTROL Beenden]**, um die Optionen der Zielgruppenbestimmung zu bestätigen.
@@ -209,7 +209,7 @@ Weiterführende Informationen zu Testversand-Empfangenden und zum Testversand fi
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447008?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 
@@ -230,6 +230,6 @@ Gehen Sie dazu wie folgt vor:
 
 ## Konfigurieren und Durchführen des Versands {#configuring-and-sending-the-delivery}
 
-Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können eine Versandpriorität definieren, das Senden von Schüben einrichten, die Einstellungen für erneute Versuche konfigurieren und die Ausführung Ihres Versands testen. Nachdem diese Konfiguration abgeschlossen ist, können Sie das Senden bestätigen. Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten Zeitplan gesendet.
+Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können die Versandpriorität definieren, Versandschübe einrichten, die Einstellungen für weitere Zustellversuche konfigurieren und Ihren Versand testen. Nachdem diese Konfiguration abgeschlossen ist, können Sie das Senden bestätigen. Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten Zeitplan gesendet.
 
 Auf [dieser Seite](../send/configure-and-send.md) erfahren Sie, wie Sie die Versandeinstellungen konfigurieren.

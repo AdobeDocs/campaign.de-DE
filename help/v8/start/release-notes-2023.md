@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1520'
-ht-degree: 95%
+ht-degree: 93%
 ---
 # Versionshinweise 2023 {#2023-rn}
 
@@ -195,5 +195,5 @@ _Samstag, 27. Januar 2023_
 * Die verbleibenden Verweise auf die log4j-Bibliothek wurden aus der Campaign-Installation unter Windows entfernt. (NEO-44851)
 * Fehlerkorrektur: Beim Hinzufügen des Indikators **Empfänger, die geöffnet haben** (estimatedRecipientOpen) zu den Zusatzdaten einer **Abfrage**-Workflow-Aktivität tritt kein Fehler mehr auf. (NEO-46665)
 * Fehlerkorrektur: Die Verwaltung von Tracking-URLs wurde in Workflows mit mehreren Sendungen verbessert, um die Performance zu verbessern. (NEO-50894) <!--OKKKK-->
-* Fehlerkorrektur: Es wurde ein Problem behoben, das zum Scheitern der Replikation von Schemata führen konnte, die Xtkfolder verwenden. (NEO-46787) <!--OKKKK-->
-* Fehlerkorrektur: Es wurde ein Problem behoben, dass dazu führen konnte, dass die benutzerdefinierte Spalte &quot;lastModified&quot; in der NmsSubscription-Tabelle gelöscht wurde. (NEO-48402)
+* Fehlerkorrektur - Die Replikation von Schemata, die Xtkfolder verwenden, schlägt jetzt nicht mehr fehl. (NEO-46787) <!--OKKKK-->
+* Es wurde ein Problem behoben, das dazu führen konnte, dass die benutzerdefinierte Spalte „lastModified“ in der NmsSubscription-Tabelle gelöscht wurde. (NEO-48402)

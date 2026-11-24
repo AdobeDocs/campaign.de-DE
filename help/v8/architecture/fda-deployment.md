@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 84%
+ht-degree: 80%
 ---
 # [!DNL Campaign] FDA-Bereitstellung{#gs-fda}
 
@@ -55,7 +55,7 @@ In einer FDA-Bereitstellung (Standard) von Campaign ist [!DNL Adobe Campaign] v8
 Dieses Bereitstellungsmodell bietet die folgenden Vorteile:
 
 * **Speicher und Leistung**
-Sie können Ihre historischen Daten nach [!DNL Snowflake] verschieben und dann die Abhängigkeiten auf den Grenzwert für Adobe Campaign IDs reduzieren. Diese Architektur reduziert auch Ihre Abhängigkeit vom PostgreSQL-Speicher und von Performance-Beschränkungen. Da weniger Daten in der Campaign-Datenbank gespeichert werden, ist die Performance besser und Wartungsaufgaben werden schneller ausgeführt.
+Sie können Ihre historischen Daten nach [!DNL Snowflake] verschieben und dann die Abhängigkeiten auf den Grenzwert für Adobe Campaign IDs reduzieren. Diese Architektur reduziert auch Ihre Abhängigkeit vom PostgreSQL-Speicher und von Leistungsbeschränkungen. Da weniger Daten in der Campaign-Datenbank gespeichert werden, ist die Performance besser und Wartungsaufgaben werden schneller ausgeführt.
 
 * **Datenmodellerweiterung und Daten-Management**
 Sie können in [!DNL Snowflake] Tabellen erstellen und diese mit Adobe Campaign verknüpfen, um beispielsweise archivierte Daten während der Aufbewahrungsfrist zu verwenden oder Segmentierungsprozesse mit hervorragender Performance durchzuführen.

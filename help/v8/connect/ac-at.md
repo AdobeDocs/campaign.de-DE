@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 98%
+source-wordcount: '1047'
+ht-degree: 95%
 ---
 # Campaign und Adobe Target verwenden
 
@@ -54,7 +54,7 @@ Mit Adobe Target können folgende Datentypen zum Einsatz kommen:
 * Mit der Besucher-ID in Adobe Target gruppierte Segmente, wenn die verwendeten Daten keinen rechtlichen Beschränkungen unterliegen
 * Daten aus Adobe Target (Benutzeragent, IP-Adresse, Daten bezüglich der Geolokalisierung).
 
-## Einfügen eines dynamischen Inhalts
+## Dynamischen Inhalt einfügen
 
 Im folgenden Beispiel erfahren Sie, wie Sie **ein dynamisches Angebot** aus Adobe Target in eine Adobe Campaign-E-Mail integrieren können.
 
@@ -68,7 +68,7 @@ Wir möchten, dass eines der Bilder in dieser E-Mail entsprechend den folgenden 
 
 ![](assets/target_4.png)
 
-In Adobe Campaign und Adobe Target müssen folgende Schritte vorgenommen werden:
+In Adobe Campaign und Adobe Target müssen folgende Schritte durchgeführt werden:
 
 1. [Einfügen eines dynamischen Angebots in eine E-Mail](#inserting-dynamic-offer)
 1. [Erstellen von Umleitungsangeboten](#create-redirect-offers)
@@ -159,7 +159,7 @@ Zuerst müssen Sie die Zielgruppe definieren:
 
 1. Erstellen Sie ein weiteres Erlebnis durch Klicken auf **[!UICONTROL Experience Targeting hinzufügen]**.
 
-Fügen Sie dann für jede Zielgruppe Inhalt hinzu:
+Fügen Sie dann Inhalt für jede Audience hinzu:
 
 1. Wählen Sie den Namen des Speicherorts, den Sie beim Einfügen des dynamischen Angebots in Adobe Campaign festgelegt haben.
 

@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 96%
+source-wordcount: '473'
+ht-degree: 84%
 ---
 # Anzeige vorhandener Profile {#view-profiles}
 
@@ -66,7 +66,7 @@ Für einen typischen integrierten Empfänger können Sie auf die folgenden Tabs 
 
 * **[!UICONTROL Allgemein]**: für alle allgemeinen Profildaten. Insbesondere enthält dieser Tab den Nachnamen, Vornamen, die E-Mail-Adresse, das E-Mail-Format usw.
 
-  Auf diese Tab wird auch die **Opt-out**-Kennzeichnung für das Profil gespeichert. Wenn die Option **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** aktiviert ist, befindet sich das Profil auf der Blockierungsliste. Diese Informationen werden den Kontaktdaten hinzugefügt, wenn der Empfänger beispielsweise auf einen Abmelde-Link in einem Newsletter geklickt hat. Solch ein Empfänger wird auf keinem Kanal (E-Mail, Briefpost usw.) mehr ausgewählt. Weitere Informationen hierzu finden Sie auf [dieser Seite](../send/quarantines.md).
+  Auf dieser Registerkarte wird auch die **Opt-out**-Kennzeichnung für das Profil gespeichert. Wenn die Option **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** aktiviert ist, befindet sich das Profil auf der -Blockierungsliste. Diese Informationen werden den Kontaktdaten hinzugefügt, wenn der Empfänger beispielsweise auf einen Abmelde-Link in einem Newsletter geklickt hat. Ein solcher Empfänger ist auf keinem Kanal (E-Mail, Briefpost usw.) mehr ausgewählt. Weitere Informationen hierzu finden Sie auf [dieser Seite](../send/quarantines.md).
 
 * **Postanschrift**, die die Briefpost-Adresse des ausgewählten Profils enthält.
 
@@ -92,7 +92,7 @@ Für einen typischen integrierten Empfänger können Sie auf die folgenden Tabs 
   >
 
 
-* **Abonnements**: für alle aktiven Abonnements von Services. Verwenden Sie den Tab **Verlauf**, um auf die Details der An- und Abmeldungen für diesen Kontakt zuzugreifen.
+* **Abonnements**: für alle aktiven Abonnements von Services. Verwenden Sie die **Verlauf**, um auf die Details der An- und Abmeldungen für diesen Kontakt zuzugreifen.
 
   ![](assets/subscription-tab.png)
 

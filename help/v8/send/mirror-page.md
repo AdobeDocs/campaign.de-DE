@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 90%
 ---
 # Verlinken auf die Mirrorseite {#mirror-page}
 
@@ -71,7 +71,7 @@ Zusätzlich zum Standardmodus stehen die folgenden Optionen zur Verfügung:
 
 * **[!UICONTROL Mirrorseitenerzeugung forcieren]**: Verwenden Sie diesen Modus, um die Mirrorseite selbst dann zu erzeugen, wenn im Versand kein Link zur Mirrorseite eingefügt wurde.
 * **[!UICONTROL Keine Mirrorseite erzeugen]**: Verwenden Sie diesen Modus, um das Erzeugen einer Mirrorseite zu vermeiden, selbst wenn der Link im Versand vorhanden ist.
-* **[!UICONTROL Von der Nachrichtenkennung aus zugängliche Mirrorseite erzeugen]**: Wenn der Mirrorseiten-Link im E-Mail-Inhalt nicht vorhanden ist, verwenden Sie diese Option, um den Zugriff auf den Inhalt der Mirrorseite im Versandprotokoll-Fenster zu ermöglichen (siehe unten).
+* **[!UICONTROL Von der Nachrichtenkennung aus zugängliche Mirrorseite erzeugen]**: Wenn der Mirrorseiten-Link nicht im E-Mail-Inhalt vorhanden ist, verwenden Sie diese Option, um den Zugriff auf den Inhalt der Mirrorseite im Versandlog-Fenster zu ermöglichen (siehe unten).
 
 ## Überprüfen der Mirrorseite für eine Empfängerin oder einen Empfänger {#mirror-page-access}
 

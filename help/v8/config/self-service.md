@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 90%
+source-wordcount: '517'
+ht-degree: 83%
 ---
 # Campaign Control Panel {#ac-control-panel}
 
@@ -45,7 +45,7 @@ Wichtigste Vorteile:
 * Konfigurieren Sie zu unterschiedlichen Zeiten die Einstellungen entsprechend Ihren Unternehmensanforderungen.
 * Erhöhen Sie die Sicherheit, indem Sie die Zugriffseinstellungen nach Bedarf steuern.
 
-Sie können das Campaign Control Panel auch zum Konfigurieren Ihrer Instanzeinstellungen (z. B. IP-Zulassungsliste und URL-Berechtigungen) oder Abrufen von Informationen über Ihre Instanz nutzen.
+Sie können das Control Panel von Campaign auch verwenden, um Instanzeinstellungen wie IP-Zulassungsliste und URL-Berechtigungen zu konfigurieren und Informationen über Ihre Instanz abzurufen.
 
 Weitere Informationen finden Sie in [Dokumentation zum Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"}.
 

@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # Übersetzen eines Web-Formulars{#translating-a-web-form}
 
@@ -85,7 +85,7 @@ Immer wenn ein String übersetzt wurde, wird die Übersetzung zum Übersetzungsw
 
 Wenn beim Abrufen festgestellt wird, dass eine Übersetzung bereits vorhanden ist, wird diese Übersetzung in der Spalte **[!UICONTROL Text]** des Strings angezeigt. Der Status des Strings ändert sich in **[!UICONTROL Übersetzt]**.
 
-Bei noch nicht übersetzten Zeichenfolgen ist das Feld **[!UICONTROL Text]** leer und der Status lautet **[!UICONTROL Zu übersetzen]**.
+Bei Zeichenfolgen, die noch nie übersetzt wurden, ist das Feld **[!UICONTROL Text]** leer und der Status lautet **[!UICONTROL To translate]**.
 
 ### Strings filtern {#filtering-strings}
 
@@ -143,7 +143,7 @@ Zeichenfolgen können exportiert und dann wieder importiert werden, um sie mit e
      >
      >Dieser Exporttyp ist nicht für XLIFF-Exporte verfügbar.
 
-1. Wählen Sie dann den **[!UICONTROL Zielordner]**, in dem die Dateien gespeichert werden sollen.
+1. Wählen Sie dann den **[!UICONTROL Zielordner]**, in dem Dateien aufgezeichnet werden.
 1. Wählen Sie das Dateiformat (**[!UICONTROL CSV]** oder **[!UICONTROL XLIFF]**) und danach **[!UICONTROL Start]** aus.
 
 ![](assets/s_ncs_admin_survey_trad_export_start.png)

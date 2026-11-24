@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1953'
-ht-degree: 96%
+ht-degree: 93%
 ---
 # Versionshinweise 2022{#2022-rn}
 
@@ -89,7 +89,7 @@ _Samstag, 30. September 2022_
 <ul> 
 <li><p>Nachrichten auf X (ehemals Twitter) senden: Mit Adobe Campaign können Sie Nachrichten direkt an Ihr X-Konto posten. Sie können auch Direktnachrichten an all Ihre Follower senden.
 </p></li>
-<li><p>Neue Kontakte erfassen: Adobe Campaign kann automatisch Profildaten erfassen, sodass Sie Zielgruppenbestimmungs-Kampagnen durchführen und Cross-Channel-Strategien umsetzen können.
+<li><p>Neue Kontakte erfassen: Adobe Campaign kann die Profildaten automatisch abrufen, sodass Sie Zielgruppenkampagnen durchführen und kanalübergreifende Strategien implementieren können.
 </p></li>
 </ul>
 <p>In der <a href="../connect/ac-tw.md">detaillierten Dokumentation</a> erfahren Sie, wie Sie Campaign und X miteinander verbinden.</p>

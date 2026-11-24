@@ -14,10 +14,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 100%
+ht-degree: 74%
 ---
 # Fehlerbehebung bei APIs {#troubleshooting}
 
@@ -29,7 +29,7 @@ API-Schlüssel können Sie nur für die Organisationen erstellen, deren Administ
 
 Das heißt, dass es ein Problem mit der IMS-Bereitstellung Ihres Campaign-Produkts gibt; sie muss vom IMS-Team repariert werden.
 
-Um mehr zu erfahren, können Sie mit Ihrem Token die IMS-API aufrufen und sich Ihr IMS-Profil ansehen: Sie müssen über einen prodCtx-Wert verfügen, bei dem die Organisationskennung mit der übereinstimmt, die Sie in die URL eingegeben haben, damit Adobe.io Ihre Anfrage weiterleiten kann.
+Um weitere Details zu erhalten, können Sie die IMS-API mit Ihrem Token aufrufen, um zu sehen, wie Ihr IMS-Profil aussieht: Sie benötigen einen prodCtx, bei dem die „organization_id“ mit der in Ihrer URL für Adobe.io übereinstimmt, um Ihre Anfrage weiterleiten zu können.
 Wenn die IMS-Bereitstellung fehlt, muss dies behoben werden.
 
 ```
@@ -83,7 +83,7 @@ In der Antwort muss der Wert ORGANISATION_ID mit dem in Ihrer ersten GET-Anfrage
 
 * **Wenn Sie eine Anfrage an Adobe.io richten, erhalten Sie {&quot;code&quot;:500, &quot;message&quot;:&quot;Oops. Da ist etwas schiefgelaufen. Überprüfen Sie Ihren URI und versuchen Sie es erneut.&quot;}**
 
-Adobe.io deklariert Ihren ungültigen URI: Der von Ihnen angefragte URI ist höchstwahrscheinlich ungültig. Wenn Sie in Adobe.io den Campaign-Dienst wählen, erhalten Sie eine Auswahl mit einer Liste möglicher Organisationskennungen. Sie müssen dafür sorgen, dass die von Ihnen gewählte Option mit der Eingabe in Ihrer URL übereinstimmt.
+Adobe.io deklariert Ihren URI als ungültig: Der von Ihnen angeforderte URI ist höchstwahrscheinlich ungültig. Wenn Sie in Adobe.io den Campaign-Dienst wählen, erhalten Sie eine Auswahl mit einer Liste möglicher Organisationskennungen. Sie müssen dafür sorgen, dass die von Ihnen gewählte Option mit der Eingabe in Ihrer URL übereinstimmt.
 
 * **Bei einer Anfrage an Adobe.io erhalten Sie {&quot;error_code&quot;:&quot;401013&quot;,&quot;message&quot;:&quot;Oauth-Token ist ungültig&quot;}**
 

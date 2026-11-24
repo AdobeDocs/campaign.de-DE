@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 97%
+source-wordcount: '1354'
+ht-degree: 90%
 ---
 # Merkmale des SMS-Kanals {#sms-channel}
 
@@ -43,13 +43,13 @@ Beim Senden von SMS über einen SMS-Provider kommen drei verschiedene Arten von 
 * **SMS MO (Mobile Originated)**: Hierbei handelt es sich um eine SMS, die von einem Mobilgerät über den SMPP-Provider an Adobe Campaign gesendet wird.
 * **SMS SR (Status Report) oder DR bzw. DLR (Delivery Receipt)**: Hierbei handelt es sich um eine vom Mobilgerät über den SMPP-Provider an Adobe Campaign gesendete Rückbestätigung, die angibt, dass die SMS erfolgreich empfangen wurde. Adobe Campaign erhält möglicherweise auch einen SR, der angibt, dass die Nachricht nicht zugestellt werden konnte, oft mit einer Fehlerbeschreibung.
 
-Sie müssen zwischen Quittierungen (RESP-PDU, Teil des SMPP-Protokolls) und SR unterscheiden. Ein SR ist eine Art SMS, die über das Netzwerk gesendet wird, während eine Quittierung nur bestätigt, dass eine Übertragung erfolgreich gewesen ist.
+Sie müssen zwischen Quittierungen (RESP-PDU, Teil des SMPP-Protokolls) und SR unterscheiden. Ein SR ist eine Art SMS, die durchgängig über das Netzwerk gesendet wird, während eine Bestätigung nur eine Bestätigung ist, dass eine Übertragung erfolgreich war.
 
 Sowohl Quittierungen als auch SR können Fehler auslösen, wobei es bei der Fehlerbehebung hilft, zwischen den beiden zu unterscheiden.
 
 ### Von einer SMS übertragene Informationen  {#sms-info}
 
-Eine SMS enthält mehr Informationen als Text. Hier ist eine Liste der Informationen, die Sie in einer SMS erwarten können:
+Eine SMS enthält mehr Informationen als Text. Im Folgenden finden Sie eine Liste der Funktionen, die Sie in einer SMS erwarten können:
 
 * Der Text, der auf 140 Byte begrenzt ist, was je nach Kodierung zwischen 70 und 160 Zeichen bedeutet. Details und Einschränkungen finden Sie unter [SMS-Textkodierung](#sms-text-encoding) weiter unten.
 * Eine Empfängeradresse, auch als ADC oder MSISDN bezeichnet (der technische Name für „Telefonnummer“). Das ist die Nummer des Mobiltelefons, das die SMS erhält.
@@ -65,7 +65,7 @@ Eine SMS enthält mehr Informationen als Text. Hier ist eine Liste der Informati
 >
 >Die Codierung von SMS ist ein riesiges, komplexes Themengebiet mit vielen Fallen und nicht konformen Implementierungen.
 
-Die wichtigste Regel: **Wenden Sie sich bei Codierungsproblemen immer an den SMPP-Provider**. Nur dieser verfügt über genaue Kenntnisse der jeweils unterstützten Codierung und über spezielle Regeln, die aufgrund von Einschränkungen in der technischen Plattform des Providers gelten können. Lassen Sie den Provider prüfen, was zwischen Ihnen und dem Provider verschickt wird. Nur so ist eine erfolgreiche und stabile Verbindung möglich.
+Die wichtigste Regel: **Wenden Sie sich bei Codierungsproblemen immer an den SMPP-Provider**. Nur sie verfügen über genaue Kenntnisse der unterstützten Kodierung und spezielle Regeln, die aufgrund von Einschränkungen in ihrer technischen Plattform gelten können. Lassen Sie den Provider prüfen, was zwischen Ihnen und dem Provider verschickt wird. Nur so ist eine erfolgreiche und stabile Verbindung möglich.
 
 SMS-Nachrichten verwenden eine spezielle 7-Bit-Codierung, die häufig als GSM7-Kodierung bezeichnet wird.  Auf Wikipedia gibt es [einen guten Artikel dazu (GSM 03.38)](https://de.wikipedia.org/wiki/GSM_03.38).
 
@@ -78,7 +78,7 @@ Bei Kodierungsproblemen sollten Sie Folgendes überprüfen:
 * Latein-1 wird nicht immer unterstützt. Überprüfen Sie die Kompatibilität mit Ihrem SMPP-Provider, bevor Sie versuchen, Latin-1 zu verwenden.
 * Nationale Sprachverschiebungstabellen werden vom Adobe Campaign-Connector nicht unterstützt. Sie müssen stattdessen UCS-2 oder ein anderes data_coding verwenden.
 * UCS-2 und UTF-16 werden oft per Telefon gemischt. Dies ist ein Problem, wenn Emojis und andere selten verwendete Zeichen versendet werden, die nicht in UCS-2 vorhanden sind.
-* Einige ältere Telefone haben nicht für alle UCS-2-Zeichen Schriftzeichen. Die neuesten Smartphones können seltene Zeichen in der Regel recht einfach anzeigen, ältere Smartphones haben aber häufig keine Emojis, und sehr alte Feature-Phones haben in der Regel nur eine begrenzte Unterstützung für die Zeichen, die in der Muttersprache des Landes, in dem sie gekauft wurden, nützlich sind. Wenn Sie Emoji- oder ASCII-Grafiken irgendeiner Art verwenden möchten, testen Sie sie vor dem Versand auf einer Vielzahl von Telefonen. Die Campaign-Vorschau simuliert keine fehlenden Glyphen und zeigt alle Symbole an, die im Webbrowser verfügbar sind, der die Vorschau anzeigt.
+* Einige ältere Handys haben keine Schriftzeichen für alle UCS-2-Zeichen. Die neuesten Smartphones können seltene Zeichen in der Regel recht einfach anzeigen, ältere Smartphones haben aber häufig keine Emojis, und sehr alte Feature-Phones haben in der Regel nur eine begrenzte Unterstützung für die Zeichen, die in der Muttersprache des Landes, in dem sie gekauft wurden, nützlich sind. Wenn Sie Emoji- oder ASCII-Grafiken irgendeiner Art verwenden möchten, testen Sie sie vor dem Versand auf einer Vielzahl von Telefonen. Die Campaign-Vorschau simuliert keine fehlenden Glyphen und zeigt alle Symbole an, die im Webbrowser verfügbar sind, der die Vorschau anzeigt.
 
 Das Feld *data_coding* gibt an, welche Codierung verwendet wird. Ein Hauptproblem besteht darin, dass der Wert 0 die *standardmäßige SMSC-Codierung* in der Spezifikation bedeutet. Dies bedeutet im Allgemeinen GSM7, aber das ist nicht immer der Fall. Erkundigen Sie sich beim SMPP-Provider, welche Kodierung mit data_coding = 0 verknüpft ist. Andere data_coding-Werte folgen in der Regel der Spezifikation. Sie müssen dies aber vom SMPP-Provider bestätigen lassen.
 
@@ -96,7 +96,7 @@ Mehrteilige SMS (häufig als lange SMS bezeichnet) sind SMS, die in mehreren Tei
 
 Jeder Teil einer langen Nachricht ist eine individuelle SMS. Diese Teile bewegen sich unabhängig voneinander durch das Netzwerk und werden vom empfangenden Mobiltelefon zusammengesetzt. Um weitere Zustellversuche und Verbindungsprobleme ordnungsgemäß zu handhaben, sendet Campaign Teile in umgekehrter Reihenfolge und fragt nur für den ersten Teil der Nachricht (der zuletzt gesendet wird) nach einem SR. Da das Mobiltelefon nur eine Nachricht anzeigt, wenn es den ersten Teil empfangen hat, führen erneute Zustellversuche für weitere Teile nicht zu Duplikaten auf dem Mobiltelefon.
 
-Die maximale Anzahl an SMS pro Nachricht kann pro Versand mithilfe der Einstellung „Maximale Anzahl an SMS pro Nachricht“ in der Versandvorlage eingestellt werden. Nachrichten, die diesen Grenzwert überschreiten, schlagen beim Versand mit der Fehlermeldung &quot;SMS zu lang&quot; fehl.
+Die maximale Anzahl an SMS pro Nachricht kann pro Versand mithilfe der Einstellung „Maximale Anzahl an SMS pro Nachricht“ in der Versandvorlage eingestellt werden. Nachrichten, die dieses Limit überschreiten, schlagen beim Versand mit einer SMS mit zu langer Fehlerursache fehl.
 
 Es gibt zwei Möglichkeiten, lange SMS zu senden:
 

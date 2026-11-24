@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1037'
-ht-degree: 100%
+ht-degree: 97%
 ---
 # Anwendungsbeispiele: Übersichten erstellen{#use-cases-creating-overviews}
 
@@ -56,7 +56,7 @@ Im folgenden Beispiel erstellen wir einen Überblick der Web-Anwendungen, um all
 
    ![](assets/s_ncs_configuration_webapp_create.png)
 
-1. Ändern Sie den Seitentitel.
+1. Ändern des Seitentitels.
 
    Dieser Titel wird im Header der Webanwendungs-Übersicht angezeigt.
 
@@ -103,7 +103,7 @@ In einem Überblick haben Sie die Möglichkeit, auf Daten basierend auf deren Po
 
    >[!NOTE]
    >
-   >In dieser Phase befindet sich die Webanwendung nicht in ihrem Anwendungskontext. Der Filter kann daher nicht am Ordner getestet werden.
+   >Zu diesem Zeitpunkt befindet sich die Web-Anwendung nicht im Anwendungskontext. Der Filter kann daher nicht für den Ordner getestet werden.
 
 ## Schaltfläche hinzufügen, um eine neue Web-Anwendung zu konfigurieren {#adding-a-button-to-configure-a-new-web-application}
 

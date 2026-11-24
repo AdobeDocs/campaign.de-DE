@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 93%
+source-wordcount: '1550'
+ht-degree: 85%
 ---
 # Überarbeitete Konfiguration für Push-Benachrichtigungen {#push-notifications-config}
 
@@ -44,7 +44,7 @@ Führen Sie im Kontext dieser aktualisierten Implementierung die folgenden Schri
 
 1. [Erstellen und Konfigurieren einer Mobile-Eigenschaft in der Adobe Experience Platform-Datenerfassung](#create-mobile-property)
 
-1. [Adobe Adobe Experience Platform Assurance-Erweiterung hinzufügen](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(empfohlen)
+1. [Adobe Experience Platform Assurance-Erweiterung hinzufügen](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}(empfohlen)
 
 1. [Hinzufügen von Campaign Classic zur App](#campaign-mobile-ap)
 
@@ -68,7 +68,7 @@ Die Registrierung der Push-Anmeldedaten für Apps ist erforderlich, damit Adobe 
 
 1. Geben Sie einen **[!UICONTROL Namen]** für die Konfiguration ein.
 
-1. Wählen Sie unter **[!UICONTROL App-Konfiguration]** das Betriebssystem:
+1. Wählen **[!UICONTROL unter „Mobile-App]** Konfiguration“ das Betriebssystem:
 
 >[!BEGINTABS]
 
@@ -112,7 +112,7 @@ Die Registrierung der Push-Anmeldedaten für Apps ist erforderlich, damit Adobe 
 
 ### Erstellen eines Dienstes {#create-service}
 
-Bevor Sie Push-Benachrichtigungen senden, müssen Sie Ihre Einstellungen für iOS- und Android-Apps in Adobe Campaign definieren.
+Bevor Sie Push-Benachrichtigungen senden, müssen Sie Ihre Mobile App-Einstellungen für iOS und Android in Adobe Campaign definieren.
 
 Push-Benachrichtigungen werden über einen dedizierten Dienst an die Benutzerinnen und Benutzer Ihrer App gesendet. Wenn Benutzerinnen und Benutzer Ihre Anwendung installieren, abonnieren sie diesen Dienst: Adobe Campaign greift auf diesen Dienst zurück, um nur die Abonnentinnen und Abonnenten Ihrer App anzusprechen. In diesem Dienst müssen Sie Ihre iOS- und Android-Apps hinzufügen, um etwas auf iOS- und Android-Geräten zu senden.
 
@@ -152,7 +152,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
 1. (Optional) Sie können den Inhalt einer Push-Nachricht mit einigen **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar und Teil der an das mobile Gerät gesendeten Nachrichten-Payload.
 
-   Im folgenden Beispiel werden die Variablen **mediaURl** und **mediaExt** hinzugefügt, um eine Rich-Push-Benachrichtigung zu erstellen. Danach wird der App das Bild bereitgestellt, das in der Benachrichtigung angezeigt werden soll.
+   Im folgenden Beispiel werden die Variablen **mediaURl** und **mediaExt** hinzugefügt, um Rich-Push-Benachrichtigungen zu erstellen. Danach wird der Anwendung das Bild bereitgestellt, das in der Benachrichtigung angezeigt werden soll.
 
    ![](assets/push-config-8.png)
 
@@ -177,7 +177,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
    ![](assets/push-config-9.png)
 
-1. Wählen Sie im Feld **[!UICONTROL Anwendungssymbol]** das Symbol aus, um die Mobile App in Ihrem Dienst zu personalisieren.
+1. Wählen Sie das Symbol aus dem Feld **[!UICONTROL Anwendungssymbol]**, um die Mobile App in Ihrem Dienst zu personalisieren.
 
 1. Nun können Sie die Produktions-App konfigurieren, indem Sie auf **[!UICONTROL Weiter]** klicken und nach dem gleichen Verfahren wie oben beschrieben vorgehen. Sie können nicht denselben **[!UICONTROL Integrationsschlüssel]** sowohl für die Entwicklungsversion (Sandbox) als auch für die Produktionsversion der App verwenden.
 
@@ -263,7 +263,7 @@ Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachric
 
 1. Sie müssen die Konfiguration jetzt über das Menü **[!UICONTROL Veröffentlichungsfluss]** veröffentlichen. [Weitere Informationen](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration)
 
-Ihre Mobile-Eigenschaft wird jetzt automatisch mit dem technischen Workflow der **[!UICONTROL Adobe Experience Platform-Datenerfassung]** synchronisiert. [Weitere Informationen](../../automation/workflow/technical-workflows.md#list-technical-workflows)
+Ihre Mobile-Eigenschaft wird jetzt automatisch mit dem technischen Workflow **[!UICONTROL Adobe Experience Platform-]** synchronisiert. [Weitere Informationen](../../automation/workflow/technical-workflows.md#list-technical-workflows)
 
 ## Hinzufügen von Campaign Classic zur App {#campaign-mobile-app}
 

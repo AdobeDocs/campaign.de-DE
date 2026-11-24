@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '2044'
-ht-degree: 88%
+source-wordcount: '2045'
+ht-degree: 85%
 ---
 # Arbeiten mit Filtern{#create-filters}
 
@@ -248,7 +248,7 @@ In den Feldern oberhalb jeder Liste können Sie den **vordefinierten Standardfil
 
 >[!NOTE]
 >
->Das Zeichen **%** ersetzt alle Zeichenfolgen. Geben Sie beispielsweise `%@gmail.com` im E-Mail-Feld ein, um alle Profile mit einer Gmail-Adresse anzuzeigen. Geben Sie `%@L` im Nachnamenfeld ein, um alle Profile mit &quot;L&quot; im Nachnamen anzuzeigen.
+>Das Zeichen **%** ersetzt alle Zeichenfolgen. Geben Sie beispielsweise `%@gmail.com` im E-Mail-Feld ein, um alle Profile mit einer Gmail-Adresse anzuzeigen. Geben Sie `%@L` im Nachnamenfeld ein, um alle Profile mit „L“ im Nachnamen anzuzeigen.
 
 Um den Standardfilter für eine Empfängerliste zu ändern, gehen Sie zum Knoten **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]**.
 
@@ -294,7 +294,7 @@ Gehen Sie wie **vor, um einen** Schnellfilter“ zu erstellen:
    ![](assets/add-filter-above-the-list.png)
 
 
-Wenn Sie nach einem Feld filtern müssen, das nicht im Formular, sondern in den Spalten verfügbar ist, und nach dieser Spalte filtern müssen. Gehen Sie dazu wie folgt vor,
+Wenn Sie nach einem Feld filtern müssen, das im Formular nicht verfügbar ist, sich aber in den Spalten befindet, filtern Sie nach dieser Spalte. Gehen Sie dazu wie folgt vor,
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Liste konfigurieren]**.
 
@@ -409,7 +409,7 @@ In diesen Beispielen erfahren Sie, wie Sie erweiterte Abfragen erstellen:
 
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"} erfahren Sie, wie Sie einfache Empfängerattribute für Ihr Targeting verwenden können.
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de){target="_blank"} erfahren Sie, wie Sie nach Empfängern filtern können, die in den letzten 7 Tagen nicht kontaktiert wurden.
-* Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine Liste der Benutzer abrufen können, die nach aktiven Konten gefiltert werden können.
+* Auf [ Seite erfahren Sie, wie Sie eine Liste der Benutzer abrufen können, die nach aktiven Konten gefiltert werden ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"}.
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine Zielgruppe für Geburtstags-E-Mails erstellen können.
 
 
@@ -419,7 +419,7 @@ Für vordefinierte Filter sind erweiterte Parameter verfügbar. Um darauf zuzugr
 
 * Um den Filter standardmäßig für alle Listen anzuzeigen, die auf diesem Dokumenttyp basieren, wählen Sie die Option **[!UICONTROL Standardfilter für diesen Dokumenttyp]** aus.
 
-  Beispielsweise wird der Filter **[!UICONTROL Nach Name oder Login]** auf Benutzer angewendet. Die Option &quot;Standardfilter für diesen Dokumenttyp&quot; ist angekreuzt, der Filter wird daher systematisch für alle Benutzerlisten vorgeschlagen.
+  Beispielsweise wird der Filter **[!UICONTROL Nach Name oder Login]** auf Benutzende angewendet. Diese Option ist ausgewählt, sodass der Filter immer für alle Benutzerlisten angezeigt wird.
 
 * Um einen Filter für alle Campaign-Benutzer verfügbar zu machen, wählen Sie die  Option **[!UICONTROL Mit anderen Benutzern geteilter Filter]** aus.
 

@@ -50,10 +50,10 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 89%
+source-wordcount: '1165'
+ht-degree: 81%
 ---
 # Allgemeine Architektur{#general-architecture}
 
@@ -96,14 +96,14 @@ Dies sind die wichtigsten Prozesse:
 * **Workflow-Engine** (nlserver wfserver) – Durch diesen Prozess werden die in der Anwendung definierten Workflow-Prozesse ausgeführt. Außerdem verarbeitet sie zeitweise ausgeführte technische Workflows, darunter:
 
   * **Tracking**: Stellt Trackinglogs wieder her und konsolidiert sie, sodass Sie die Protokolle vom Weiterleitungs-Server abrufen und die vom Berichtsmodul verwendeten aggregierten Indikatoren erstellen können.
-  * **Bereinigung**: Bereinigt die Datenbank, löscht alte Einträge und verhindert, dass die Datenbank exponentiell wächst.
+  * **Bereinigung**: Bereinigt die Datenbank, löscht alte Datensätze und verhindert, dass die Datenbank exponentiell wächst.
   * **Abrechnung**: Sendet einen Aktivitätsbericht für die Plattform (Größe der Datenbank, Anzahl der Marketing-Aktionen usw.).
 
 * **Versand-Server** (nlserver-mta): Adobe Campaign verfügt über eine native Funktion zum Senden von E-Mails. Dieser Prozess fungiert als SMTP Mail Transfer Agent (MTA). Er personalisiert Nachrichten individuell für den jeweiligen Empfänger und verarbeitet deren physischen Versand. Dies erfolgt mittels Versandaufträgen, wobei zudem auch nachgelagerte, weitere Zustellversuche automatisiert werden. Ist zusätzlich noch Tracking aktiviert, werden die URLs automatisch ersetzt, sodass sie auf den Weiterleitungs-Server verweisen. Über diesen Prozess ist die Anpassung sowie der automatische Versand an einen Dritt-Router für SMS, Fax und Briefpost möglich.
 
 * **Weiterleitungs-Server** (nlserver webmdl) – Bei E-Mails übernimmt Adobe Campaign automatisch das Öffnungs- und Klick-Tracking (wobei das Tracking von Transaktionen auf Website-Ebene ebenfalls möglich ist). Hierfür werden die in den E-Mail-Nachrichten enthaltenen URLs so umgeschrieben, dass sie auf dieses Modul verweisen. Dieses wiederum registriert Internet-Benutzer, während diese an die Ziel-URL weitergeleitet werden.
 
-  Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht ist diese Funktion in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert. und nur unter Windows verfügbar.
+  Um höchste Verfügbarkeit zu gewährleisten, ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Serverprozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTP(S) und XML). Aus technischer Sicht ist diese Funktion in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert. und nur unter Windows verfügbar.
 
 Daneben sind auch noch weitere technische Prozesse verfügbar:
 
@@ -119,7 +119,7 @@ Daneben sind auch noch weitere technische Prozesse verfügbar:
 
 * **Überwachungsmodule** (nlserver watchdog): Dieser technische Prozess fungiert als primärer Prozess, der die anderen hervorbringt. Zugleich überwacht er diese aber auch startet sie beim Auftreten von Vorfällen automatisch neu, sodass maximale Systemverfügbarkeit gewährleistet bleibt.
 
-* **Statistik-Server** (nlserver stat) – Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einzelnen Mailserver gesendeten Nachrichten und zu deren Einschränkungen (z. B. Maximalzahl gleichzeitiger Verbindungen, Nachrichten pro Stunde und/oder Verbindung usw.). Ebenfalls lassen sich über diesen Prozess Instanzen oder Computer zusammenführen, sofern diese dieselben öffentlichen IP-Adressen verwenden.
+* **Statistics Server** (nlserver stat): Dieser Prozess verwaltet Statistiken über die Anzahl von Verbindungen, die für jeden E-Mail-Server gesendeten Nachrichten, an die Nachrichten gesendet werden, sowie über deren Einschränkungen (höchste Anzahl gleichzeitiger Verbindungen, Nachrichten pro Stunde und/oder pro Verbindung). Ebenfalls lassen sich über diesen Prozess Instanzen oder Computer zusammenführen, sofern diese dieselben öffentlichen IP-Adressen verwenden.
 
 
 ## Datenbank-Container {#db-containers}
@@ -141,4 +141,4 @@ Sie können Adobe Campaign unter Verwendung der vordefinierten Datenbank und Sch
 
 Die Gesamtspeichermenge wird auf die Hauptdatenbank und (optional) die sekundäre Datenbank von Snowflake aufgeteilt. Wo die Daten gespeichert werden, sollte zum Zeitpunkt der Implementierung oder des Upgrades festgelegt werden, je nach den kundenspezifischen Anwendungsfällen.
 
-Erfahren Sie in der Dokumentation zum Campaign Control [, wie Sie die Datenbanknutzung &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=de){target="_blank"}.
+Erfahren Sie in der Dokumentation zum Campaign Control [, wie Sie die Datenbanknutzung ](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=de){target="_blank"}.

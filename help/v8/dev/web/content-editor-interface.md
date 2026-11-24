@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
     internal-label: Email design
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '541'
+ht-degree: 95%
 ---
 # Benutzeroberfläche des Inhaltseditors{#content-editor-interface}
 
@@ -40,7 +40,7 @@ Das DCE-Bearbeitungsfenster ist in drei verschiedene Abschnitte unterteilt. Dort
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. Der **obere** Abschnitt ist ein Anzeigebereich für Nachrichten an die benutzende Person. Dies sind Hinweise zum Status der Web-Anwendung oder zum gerade erstellten Versand sowie Warnhinweise und Fehlermeldungen in Verbindung mit dem Inhalt. Weitere Informationen hierzu finden Sie unter [HTML-Inhaltsstatus](content-editing-best-practices.md#html-content-statuses).
+1. Der **obere** Abschnitt ist ein Anzeigebereich für Nachrichten an die benutzende Person. Diese Meldungen geben den Status der Web-Anwendung oder des erstellten Versands sowie Warnungen und Fehlermeldungen im Zusammenhang mit dem Inhalt an. Weitere Informationen hierzu finden Sie unter [HTML-Inhaltsstatus](content-editing-best-practices.md#html-content-statuses).
 1. Der Abschnitt **links** im Fenster ist der Bereich für die Bearbeitung von Inhalten. Hier kann die benutzende Person direkt über die Popup-Symbolleiste einen Link in ein Bild einfügen, die Schriftart ändern, ein Feld löschen etc. Weitere Informationen finden Sie unter [Bearbeiten von Formularen](editing-content.md#editing-forms).
 1. Der Abschnitt **rechts** im Fenster ist der Control Panel-Bereich. Hier werden die Optionen des Editors gruppiert dargestellt, vor allem jene zur Konfiguration der Seitenüberschrift und allgemeine Optionen für Bausteine. Sie können einen Rand hinzufügen, ein Datenbankfeld mit einem Eingabefeld verknüpfen, auf die Eigenschaften einer Web-Seite zugreifen etc. Weitere Informationen finden Sie in den Abschnitten [Globale Optionen](#global-options) und [Bearbeiten von Inhalten](editing-content.md).
 

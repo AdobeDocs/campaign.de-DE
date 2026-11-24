@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 52%
+source-wordcount: '594'
+ht-degree: 51%
 ---
 # Konfigurieren getrackter Links {#how-to-configure-tracked-links}
 
@@ -39,7 +39,7 @@ Für jeden Versand können Sie den Empfang von Nachrichten und die Aktivierung d
 
 >[!NOTE]
 >
->Die Links in E-Mail-Inhalten, die eine Personalisierung enthalten, benötigen eine bestimmte Syntax, um nachverfolgt zu werden. Weitere Informationen dazu, wie Sie Links in personalisierbaren E-Mails hinzufügen, die das Tracking unterstützen, finden [&#x200B; in diesem Abschnitt](personalized-links.md).
+>Die Links in E-Mail-Inhalten, die eine Personalisierung enthalten, benötigen eine bestimmte Syntax, um nachverfolgt zu werden. Weitere Informationen dazu, wie Sie Links in personalisierbaren E-Mails hinzufügen, die das Tracking unterstützen, finden [ in diesem Abschnitt](personalized-links.md).
 
 Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Gehen Sie wie folgt vor, um das Tracking von URLs zu personalisieren:
 
@@ -76,9 +76,9 @@ Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Gehen Sie wie f
    * **[!UICONTROL Immer aktiviert]** Das Tracking dieser URL wird immer aktiviert. Diese Informationen werden gespeichert, sodass das Tracking der URL automatisch aktiviert wird, wenn sie das nächste Mal in einem zukünftigen Nachrichteninhalt erneut angezeigt wird.
    * **[!UICONTROL Nie verfolgt]**: Das Tracking dieser URL wird nie aktiviert. Diese Informationen werden gespeichert, sodass das Tracking der URL automatisch deaktiviert wird, wenn sie in einer zukünftigen Nachricht erneut angezeigt wird.
    * **[!UICONTROL Opt-out]**: Diese URL wird als Opt-out-URL behandelt.
-   * **[!UICONTROL Mirrorseite]**: Diese URL wird als Mirrorseite behandelt.
+   * **[!UICONTROL Mirrorseite]**: Diese URL wird als URL der Mirrorseite behandelt.
 
-1. Zusätzlich können Sie für jede getrackte URL in der Dropdown-Liste der Spalte **[!UICONTROL Kategorie]** eine Kategorie auswählen. Diese Kategorien können in Berichten angezeigt werden, wie z. B. im Bericht **[!UICONTROL URLs und Clickstreams]** (siehe [diesen Abschnitt](../reporting/delivery-reports.md#urls-and-click-streams)). Kategorien werden in einer bestimmten Auflistung definiert: **[!UICONTROL urlCategory]**. Weitere Informationen zum Arbeiten mit Auflistungen finden Sie in [&#x200B; Abschnitt &#x200B;](../config/enumerations.md).
+1. Zusätzlich können Sie für jede getrackte URL in der Dropdown-Liste der Spalte **[!UICONTROL Kategorie]** eine Kategorie auswählen. Diese Kategorien können in Berichten angezeigt werden, wie z. B. im Bericht **[!UICONTROL URLs und Clickstreams]** (siehe [diesen Abschnitt](../reporting/delivery-reports.md#urls-and-click-streams)). Kategorien werden in einer bestimmten Auflistung definiert: **[!UICONTROL urlCategory]**. Weitere Informationen zum Arbeiten mit Auflistungen finden Sie in [ Abschnitt ](../config/enumerations.md).
 
 ## Best Practices für URL-Trennzeichen {#url-delimiters}
 
@@ -88,8 +88,8 @@ Es wird dringend empfohlen, URLs auf der Registerkarte **[!UICONTROL Textinhalt]
 * Eckige Klammern [ ]
 * Geschweifte Klammern { }
 
-In diesem Beispiel folgt auf die URL https://www.adobe.com/de ein Semikolon. Das Semikolon kann von E-Mail-Clients der Empfänger als Teil der URL interpretiert werden. Daher kann der Link beschädigt sein. Um dieses Problem zu vermeiden, können Sie die URL auf eine der folgenden Arten in Trennzeichen einschließen:
+In diesem Beispiel folgt auf die URL https://www.adobe.com ein Semikolon. Das Semikolon kann von E-Mail-Clients der Empfänger als Teil der URL interpretiert werden. Daher kann der Link beschädigt sein. Um dieses Problem zu vermeiden, können Sie die URL auf eine der folgenden Arten in Trennzeichen einschließen:
 
-* (https://www.adobe.com/de);
-* [https://www.adobe.com/de];
-* {https://www.adobe.com/de};
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};
