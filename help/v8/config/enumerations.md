@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 86%
+source-wordcount: '859'
+ht-degree: 85%
 ---
 # Arbeiten mit Aufzählungen {#enumerations}
 
@@ -83,7 +83,7 @@ Wenn ein Wert eingegeben wird, der nicht in der Aufzählung einer Alias-Verwaltu
 
 Gehen Sie wie folgt vor, um einen Alias zu erstellen:
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Alias]** die Schaltfläche **[!UICONTROL Hinzufügen]**.
+1. Klicken Sie auf **[!UICONTROL Schaltfläche]** Hinzufügen“ der Registerkarte **[!UICONTROL Alias]** .
 1. Geben Sie den Alias an, der konvertiert werden soll, und wählen Sie in der Dropdown-Liste den anzuwendenden Wert aus.
 
    ![Erstellen eines neuen Alias](assets/new-alias.png)

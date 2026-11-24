@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 89%
+ht-degree: 88%
 ---
 # Verwalten von Datenschutzanfragen in Campaign {#privacy}
 
@@ -144,7 +144,7 @@ Der Dateiname setzt sich folgendermaßen zusammen: `<InstanceName>-<NamespaceId>
 
 Bei der Durchführung einer Lösch- oder Zugriffsanfrage durchsucht Adobe Campaign alle Daten der betroffenen Person auf der Basis des **[!UICONTROL Abstimmwerts]**. Gesucht wird in allen Tabellen, in denen eine Relation mit der Tabelle des Empfängers besteht (vom Typ &quot;own&quot;).
 
-Die folgenden integrierten Tabellen werden bei der Durchführung von Datenschutzanfragen berücksichtigt:
+Die Liste der integrierten Tabellen, die bei der Durchführung von Datenschutzanfragen berücksichtigt werden, lautet:
 
 * Empfänger (recipient)
 * Versandlog eines Empfängers (broadLogRcp)

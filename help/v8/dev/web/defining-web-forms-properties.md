@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1446'
 ht-degree: 96%
@@ -159,7 +159,7 @@ Beim Zugriff auf die Seite erscheint das folgende Authentifizierungsformular:
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-Der Benutzername und das Passwort entspricht denen der Adobe Campaign-Operatoren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+Der Benutzername und das Passwort entspricht denen der Adobe Campaign-Operatoren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
 
 Mit der Option **[!UICONTROL Spezifisches Konto nutzen]** können Sie die Lese- oder Schreibrechte der Person einschränken, die auf das Formular zugreift. Wählen Sie in der Dropdown-Liste eine Person oder eine Benutzergruppe aus, die für die Vergabe dieser Berechtigungen zuständig sein soll.
 

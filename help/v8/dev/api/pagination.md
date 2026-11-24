@@ -18,10 +18,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 88%
+source-wordcount: '162'
+ht-degree: 76%
 ---
 # Paginierung
 
@@ -82,4 +82,4 @@ Standardmäßig ist der Knoten **next** bei der Interaktion mit Tabellen mit ein
 
 >[!NOTE]
 >
->Die Anzahl der Datensätze, ab der eine Tabelle als groß angesehen wird, wird in der Campaign Standard-Option **XtkBigTableThreshold** definiert. Der Standardwert ist 100.000 Datensätze.
+>Die Anzahl der Datensätze, oberhalb derer eine Tabelle als groß gilt, wird in der Option Campaign Standard **XtkBigTableThreshold** definiert. Der Standardwert ist 100.000 Datensätze.

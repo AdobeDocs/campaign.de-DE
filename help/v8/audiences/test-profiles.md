@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 85%
+ht-degree: 84%
 ---
 # Erstellen und Verwalten von Testprofilen {#create-test-profiles}
 
@@ -55,7 +55,7 @@ Testprofile werden als Testadressen erstellt. Sie werden verwendet, um Empfänge
 
 Die Testadressen bieten die folgenden Vorteile:
 
-* Ersetzen von Feldern durch Daten aus Empfängerprofilen nach dem Zufallsprinzip: Damit können Sie nur die E-Mail-Adresse eingeben, z. B. im Testadressenbereich, und Campaign kann die anderen Felder des Profils automatisch ausfüllen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}.
+* Ersetzen von Feldern durch Daten aus Empfängerprofilen nach dem Zufallsprinzip: Damit können Sie nur die E-Mail-Adresse eingeben, z. B. im Testadressenbereich, und Campaign kann die anderen Felder des Profils automatisch ausfüllen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}.
 * Bei Workflows mit Datamanagement-Funktionen können die im Versand genutzten zusätzlichen Daten auf Ebene der Testadressen angegeben werden, um den entsprechenden Wert zu erzwingen. Auf diese Weise umgeht man die zufällige Wertersetzung.
 * Testadressen werden in den folgenden Versandstatistikberichten grundsätzlich nicht berücksichtigt: **[!UICONTROL Klicks]**, **[!UICONTROL Öffnungen]**, **[!UICONTROL Abmeldungen]**.
 
@@ -65,7 +65,7 @@ Testadressen werden entweder durch Importieren zur Versandzielgruppe hinzugefüg
 >
 >Testadressen werden nicht in der Empfängertabelle, sondern in einer separaten Tabelle erstellt. Wenn Sie die Empfängertabelle um neue Daten erweitern, müssen Sie die Testadressen-Tabelle ebenfalls um die gleichen Daten erweitern. Andernfalls werden die erweiterten Felder für Testadressen nicht berücksichtigt.
 >
->Ein Beispiel für die Erweiterung der Testadressen-Tabelle finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}.
+>Ein Beispiel für die Erweiterung der Testadressen-Tabelle finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}.
 
 ## Erstellen von Testadressen
 
@@ -120,7 +120,7 @@ Drei Einfügemodi stehen zur Verfügung:
 
 1. Erstellen Sie eine Bedingung zur dynamischen Auswahl der einzufügenden Testadressen. Klicken Sie auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten…]** und geben Sie dann die Auswahlkriterien für die Testadressen an. Sie können beispielsweise alle in einem bestimmten Ordner enthaltenen Adressen oder die zu einer bestimmten Abteilung Ihres Unternehmens gehörigen Testadressen auswählen.
 
-   Ein Beispiel dafür finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}.
+   Ein Beispiel dafür finden Sie in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}.
 
 Bei Sendungen können Sie auch die Art und Weise anpassen, wie Adressen in die Extraktionsdatei eingefügt werden. Standardmäßig werden sie in die Sortierreihenfolge der Ausgabedatei eingefügt. Sie können jedoch auch angeben, dass sie am Anfang oder Ende der Datei eingefügt oder zufällig zwischen den Empfangenden der Hauptzielgruppe eingefügt werden.
 
@@ -132,7 +132,7 @@ Klicken Sie auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]** und a
 
 ## Testadressen und benutzerdefinierte Tabelle {#using-an-external-recipient-table}
 
-Wenn es sich bei der Versandtabelle um eine externe Tabelle handelt, müssen Sie zusätzliche Konfigurationen vornehmen. Das **[!UICONTROL nms:seedmember]**-Schema muss erweitert werden. Es wird eine Registerkarte zu den Testadressen hinzugefügt, um die entsprechenden Felder zu definieren
+Wenn es sich bei der Versandtabelle um eine externe Tabelle handelt, müssen Sie zusätzliche Konfigurationen vornehmen. Das **[!UICONTROL nms:seedmember]**-Schema muss erweitert werden. Den Testadressen wird eine Registerkarte hinzugefügt, auf der die entsprechenden Felder definiert werden.
 
 Geben Sie in diesem Fall die Testadressen direkt in den jeweiligen Feldern der entsprechenden Registerkarte auf Ebene des Versands ein oder importieren Sie die Adressenvorlagen.
 

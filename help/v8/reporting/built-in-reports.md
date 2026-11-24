@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 99%
+ht-degree: 97%
 ---
 # Integrierte Berichte in Adobe Campaign {#ootb-reports}
 
@@ -65,7 +65,7 @@ Zugriff auf native Campaign-Berichte:
 
    ![](assets/edit-a-report.png)
 
-1. Klicken Sie oben im Bildschirm auf den Link **[!UICONTROL Zurück]**, der wieder zur Berichtsliste zurückführt.
+1. Klicken Sie auf **[!UICONTROL Zurück]** oben im Bildschirm, um zur Liste der Berichte zurückzukehren.
 
    ![](assets/back-button.png)
 

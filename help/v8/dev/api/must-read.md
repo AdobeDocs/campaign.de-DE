@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 83%
+ht-degree: 79%
 ---
 # Wichtige Informationen {#must-read}
 
@@ -69,7 +69,7 @@ Alle API-Ressourcen sind in **JSON** mit einer URL-Erweiterung oder in einem HTT
 
 * Die Werte des automatischen Primärschlüssels (PKey), die zur Veranschaulichung der Beispiele verwendet werden, funktionieren in keiner anderen Bereitstellung. Sie werden von der Adobe Campaign-API erzeugt.
 
-* Die von Adobe Campaign generierten Werte des automatischen Primärschlüssels dürfen niemals in einer externen Datenbank oder Website gespeichert werden. Sie müssen bestimmte Schlüsselfelder in Ihrer Datenbankdefinition generieren und diese bei der Entwicklung verwenden.
+* Die von Adobe Campaign generierten Werte des automatischen Primärschlüssels dürfen niemals in einer externen Datenbank oder Website gespeichert werden. Sie müssen bestimmte Schlüsselfelder in Ihrer Datenbankdefinition generieren und sie während Ihrer Entwicklungen verwenden.
 
 ## Benutzerdefinierte Schlüssel {#custom-keys}
 

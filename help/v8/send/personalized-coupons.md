@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '972'
-ht-degree: 98%
+ht-degree: 97%
 ---
 # Personalisierte Gutscheine{#personalized-coupons}
 
@@ -155,7 +155,7 @@ Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterf�
 
 >[!NOTE]
 >
->Eine Anleitung zur Vorgehensweise, wenn nicht gen체gend Coupons f체r einen Versand vorhanden sind, finden Sie unter [Verwalten bei unzureichender Anzahl von Gutscheinen](#managing-insufficient-coupons).
+>Anweisungen zur Vorgehensweise, wenn nicht gen체gend Coupons f체r einen Versand vorhanden sind, finden Sie unter [Verwalten bei unzureichender Anzahl von Gutscheinen](#managing-insufficient-coupons).
 
 So pr체fen Sie, ob der Versand erfolgreich war:
 

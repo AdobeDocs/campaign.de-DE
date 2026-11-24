@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '4464'
-ht-degree: 89%
+ht-degree: 88%
 ---
 # Validieren einer SMPP-Verbindung {#validate-smpp-connection}
 
@@ -229,7 +229,7 @@ Es wird empfohlen, mit dem Provider in Kontakt zu bleiben, denn häufig werden w
 * Überprüfen Sie, ob das Netzwerk ordnungsgemäß konfiguriert ist, damit die TCP-Verbindung zum Provider hergestellt werden kann.
 * Bitten Sie den Provider, zu überprüfen, ob die IP-Adressen der Adobe Campaign-Instanz ordnungsgemäß zugelassen wurden (bei den meisten Providern erforderlich).
 * Überprüfen Sie die Einstellungen für externe Konten. Fragen Sie den Provider, falls Sie beim Wert bestimmter Felder unsicher sind.
-* Wenn die Verbindung erfolgreich, aber instabil ist, finden Sie nachstehend unter [Probleme mit instabilen Verbindungen](#unstable-connections) weitere Informationen.
+* Wenn die Verbindung erfolgreich, aber instabil ist, lesen Sie den Abschnitt [Probleme mit instabilen Verbindungen](#unstable-connections) unten.
 * Wenn Verbindungsprobleme schwer zu diagnostizieren sind, liefert Ihnen eine Netzwerkaufzeichnung viele Informationen. Achten Sie darauf, dass die Netzwerkaufzeichnung während des Auftretens des Problems durchgeführt wird, damit es effizient analysiert werden kann. Sie sollten auch den genauen Zeitpunkt notieren, zu dem das Problem auftritt, damit das Problem einfacher in der Netzwerkaufzeichnung gefunden werden kann.
 
 #### Probleme mit instabilen Verbindungen {#unstable-connections}
@@ -261,7 +261,7 @@ Eine Verbindung wird als instabil angesehen, wenn eine der folgenden Situationen
 * Überprüfen Sie, ob das Broadlog vorhanden ist und den richtigen Status mit den richtigen Daten aufweist. Ist dies nicht der Fall, handelt es sich nicht um ein SMS-Problem, sondern um ein Versandproblem oder ein Problem mit der Versandvorbereitung (das liegt außerhalb des Rahmens dieses Dokuments).
 * Prüfen Sie, ob der SMS-Connector tatsächlich mit den Geräten des Providers verbunden ist. Bitten Sie den Provider um Rückmeldung, um sicherzustellen, dass alle Systeme richtig kommunizieren. Informationen zum Bindungsprozess finden Sie unter BIND_TRANSMITTER- und BIND_TRANSCEIVER-PDUs. Möglicherweise müssen Sie SMPP-Traces aktivieren, um eine ordnungsgemäße Fehlerbehebung zu ermöglichen.
 * Überprüfen Sie bei aktivierter SMPP-Verfolgung, ob die SUBMIT_SM-PDU die richtigen Informationen enthält (siehe die obige Dokumentation).
-* Stellen Sie sicher, dass der Provider mit einer SUBMIT_SM_RESP-PDU mit dem Wert „OK“ (Code 0) antwortet. Stellen Sie sicher, dass die PDU mit einer angemessenen Verzögerung eintrifft: Alles, was länger als 1 Sekunde dauert, ist verdächtig und muss mit dem Provider besprochen werden. Sie kommt normalerweise in weniger als 100 ms an.
+* Prüfen, ob der Provider mit einer SUBMIT_SM_RESP PDU mit einem „OK“-Wert antwortet (Code 0). Stellen Sie sicher, dass die PDU mit einer angemessenen Verzögerung eintrifft: Alles, was länger als 1 Sekunde dauert, ist verdächtig und muss mit dem Provider besprochen werden. Sie kommt normalerweise in weniger als 100 ms an.
 * Wenn alle diese Schritte funktionieren, können Sie sicher sein, dass das Problem auf der Seite des Providers liegt. Er muss dann die Fehlersuche auf seiner Plattform durchführen.
 * Wenn es funktioniert, der Durchsatz jedoch inkonsistent ist, versuchen Sie, das Übertragungsfenster anzupassen und den MT-Durchsatz zu verringern. Für diese Anpassung müssen Sie mit dem Provider zusammenarbeiten. Campaign kann Nachrichten sehr schnell senden, sodass Leistungsprobleme auf den Geräten des Providers auftreten können.
 

@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '877'
-ht-degree: 77%
+ht-degree: 75%
 ---
 # Erste Schritte mit Web-Anwendungen{#about-web-applications}
 
@@ -82,24 +82,24 @@ Web-Anwendungen in Adobe Campaign bieten folgende Funktionen:
 * Grafische Benutzeroberfläche zur Seitenverwaltung, mehrspaltiges Seiten-Layout. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](designing-a-web-application.md).
 * Personalisierte Darstellung und Feldposition. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](editing-content.md#adding-personalization-content).
 * Anzeige von Umfragefeldern entsprechend den Antworten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](form-rendering.md#defining-fields-conditional-display).
-* Zufällige Anzeige von Fragen. Weitere Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/building-a-survey#adding-questions){target="_blank"} (Dokumentation zu Campaign v8).
+* Zufällige Anzeige von Fragen. Weitere Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/building-a-survey#adding-questions){target="_blank"} (Dokumentation zu Campaign v8).
 * Bedingte Anzeige von Seiten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-page-sequencing.md#conditional-page-display).
 * Informationsüberprüfung vor der Validierung abhängig vom erwarteten Datentyp (Zahl, E-Mail-Adresse, Datum usw.) und von den Pflichtfeldern. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](form-rendering.md#defining-control-settings).
 * Einladungen oder Benachrichtigungen per E-Mail. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personalisierung von Fehler- und Beendigungsnachrichten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-properties.md#setting-up-an-error-page).
 * Verwendung von Bildern, Videos, Hypertext-Links, Captcha usw. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](editing-content.md).
-* Überwachung der Antworten in Echtzeit Weitere Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#response-tracking){target="_blank"} (Dokumentation zu Campaign v8).
+* Überwachung der Antworten in Echtzeit Weitere Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#response-tracking){target="_blank"} (Dokumentation zu Campaign v8).
 
 Das optionale Modul zur Umfrageerstellung (**Umfrage**) bietet die folgenden zusätzlichen Funktionen:
 
-* Dynamische Erweiterung der Datenbank: Erstellung von Antworten, die nicht in der ursprünglichen Datenvorlage enthalten sind. Weitere Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/managing-answers#storing-collected-answers){target="_blank"} (Dokumentation zu Campaign v8).
-* Erstellung spezieller Berichte Weitere Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"} (Dokumentation zu Campaign v8).
+* Dynamische Erweiterung der Datenbank: Erstellung von Antworten, die nicht in der ursprünglichen Datenvorlage enthalten sind. Weitere Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/managing-answers#storing-collected-answers){target="_blank"} (Dokumentation zu Campaign v8).
+* Erstellung spezieller Berichte Weitere Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"} (Dokumentation zu Campaign v8).
 
 Gegenüber Webanwendungen verfügen Umfragen über eine vereinfachte grafische Benutzeroberfläche mit weniger Steuerelementen zur Bearbeitung.
 
 >[!NOTE]
 >
->Umfragen werden in [&#x200B; Abschnitt beschrieben (](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} Dokumentation zu Campaign v8).
+>Umfragen werden in [ Abschnitt beschrieben (](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} Dokumentation zu Campaign v8).
 >
 >Die allgemeinen Funktionen von Webformularen in Adobe Campaign werden in [diesem Abschnitt](about-web-forms.md) beschrieben.
 
@@ -112,7 +112,7 @@ Gehen Sie wie folgt vor, um eine Webanwendung zu erstellen und zu veröffentlich
    Sehen Sie sich dazu auch den Abschnitt zu den Feldern an, die für Formulare zur Verfügung stehen. Alle diese Felder sind auch für Web-Anwendungen verfügbar. Diese Informationen finden Sie auf [dieser Seite](adding-fields-to-a-web-form.md).
 
 1. Sie können nach Bedarf die Schritte zum Vorausfüllen, Testen und Speichern hinzufügen und das Zugriffskontrollsystem konfigurieren (hauptsächlich für Extranet-Veröffentlichungen).
-1. Veröffentlichen Sie die Webanwendung, um sie im Extranet oder in Adobe Campaign verfügbar zu machen.
+1. Veröffentlichen Sie die Web-Anwendung, um sie in einem Extranet oder in Adobe Campaign verfügbar zu machen.
 
 ## Erstkonfiguration von Web-Anwendungen {#web-application-initial-configuration}
 

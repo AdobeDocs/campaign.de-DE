@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1354'
-ht-degree: 90%
+ht-degree: 87%
 ---
 # Merkmale des SMS-Kanals {#sms-channel}
 
@@ -92,7 +92,7 @@ Die maximale Größe einer Nachricht hängt von ihrer Kodierung ab. In dieser Ta
 
 ## Mehrteilige SMS (lange SMS) {#multipart-sms}
 
-Mehrteilige SMS (häufig als lange SMS bezeichnet) sind SMS, die in mehreren Teilen gesendet werden. Aufgrund technischer Einschränkungen im Mobilfunknetzprotokoll kann eine SMS nicht größer als 140 Byte sein (die Anzahl der Zeichen, die in eine SMS passen, finden Sie im Abschnitt „Codierung von SMS-Texten“ unten). Daher müssen längere Nachrichten aufgeteilt werden.
+Mehrteilige SMS (häufig als lange SMS bezeichnet) sind SMS, die in mehreren Teilen gesendet werden. Aufgrund technischer Einschränkungen im Mobilnetzprotokoll kann eine SMS nicht größer als 140 Byte sein (die Anzahl der Zeichen, die in eine SMS passen können, finden Sie im Abschnitt SMS-Textkodierung unten), sodass längere Nachrichten aufgeteilt werden müssen.
 
 Jeder Teil einer langen Nachricht ist eine individuelle SMS. Diese Teile bewegen sich unabhängig voneinander durch das Netzwerk und werden vom empfangenden Mobiltelefon zusammengesetzt. Um weitere Zustellversuche und Verbindungsprobleme ordnungsgemäß zu handhaben, sendet Campaign Teile in umgekehrter Reihenfolge und fragt nur für den ersten Teil der Nachricht (der zuletzt gesendet wird) nach einem SR. Da das Mobiltelefon nur eine Nachricht anzeigt, wenn es den ersten Teil empfangen hat, führen erneute Zustellversuche für weitere Teile nicht zu Duplikaten auf dem Mobiltelefon.
 

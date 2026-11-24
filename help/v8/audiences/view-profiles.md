@@ -31,16 +31,16 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 84%
+source-wordcount: '474'
+ht-degree: 81%
 ---
 # Anzeige vorhandener Profile {#view-profiles}
 
 Gehen Sie zu **[!UICONTROL Profile und Zielgruppen]**, um auf in der Adobe Campaign-Datenbank gespeicherte Empfänger zuzugreifen.
 
-Auf dieser Seite können Sie einen [Neuen Empfänger erstellen](create-profiles.md), einen vorhandenen Empfänger bearbeiten und auf seine Profildetails zugreifen.
+Auf dieser Seite können Sie [neuen Empfänger erstellen](create-profiles.md) einen vorhandenen Empfänger bearbeiten und auf seine Profildetails zugreifen.
 
 ![](assets/profiles-and-targets.png)
 

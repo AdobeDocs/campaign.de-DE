@@ -21,10 +21,10 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '664'
+ht-degree: 98%
 ---
 # Genehmigen und Aktivieren eines Angebots{#approving-and-activating-an-offer}
 
@@ -50,7 +50,7 @@ Sie haben daher die Möglichkeit, den Inhalt eines Angebots für gewisse Platzie
 
 Gehen Sie wie folgt vor, um den Inhalt eines Angebots zu validieren:
 
-1. Klicken Sie im Angebots-Dashboard auf die Schaltfläche **[!UICONTROL Validierung]** und wählen Sie im Kontextmenü die Option **[!UICONTROL Inhalt validieren]** aus.
+1. Klicken Sie auf **[!UICONTROL Genehmigung]** und wählen Sie **[!UICONTROL Popup]** Inhalt genehmigen“ aus.
 
    ![](assets/offer_validate_002.png)
 

@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 100%
+source-wordcount: '178'
+ht-degree: 84%
 ---
 # Erstellen des ersten SMS-Versands {#sms-delivery}
 
@@ -48,7 +48,7 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 
 1. Benennen Sie Ihren Versand im Feld **[!UICONTROL Titel]** um und fügen Sie Informationen im Feld **[!UICONTROL Versandcode]** und in der Liste **[!UICONTROL Art]** hinzu, falls dies für das Tracking erforderlich ist. Sie können auch eine **[!UICONTROL Beschreibung]** zu Ihrem Versand hinzufügen.
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]** . Jetzt haben Sie alle Einstellungen Ihrer Vorlage in Ihrem Versand.
+1. Klicken Sie auf **[!UICONTROL Weiter]**. Jetzt haben Sie alle Einstellungen Ihrer Vorlage in Ihrem Versand.
 
 1. Sie können über die Schaltfläche **[!UICONTROL Eigenschaften]** prüfen, ob alles nach Bedarf eingerichtet ist. [Weitere Informationen zur Registerkarte „SMS“](sms-delivery-settings.md#sms-tab)
 

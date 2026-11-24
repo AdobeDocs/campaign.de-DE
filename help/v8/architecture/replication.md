@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 99%
+ht-degree: 96%
 ---
 # Datenreplikation {#wf-data-replication}
 
@@ -87,7 +87,7 @@ Folgende technische Workflows stellen sicher, dass die Datenreplikation durchgef
 
 Bei Bedarf können Sie die Datensynchronisation manuell starten. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität **Planung** und wählen Sie **Aufgabe(n) jetzt bearbeiten**.
 
-Zusätzlich zum integrierten technischen Workflow **Referenztabellen replizieren** können Sie mit einer dieser Methoden die Datenreplikation in Ihren Workflows erzwingen.
+Zusätzlich zum integrierten technischen Workflow **Referenztabellen replizieren** können Sie die Datenreplikation in Ihren Workflows mit einer der folgenden Methoden erzwingen:
 
 +++So erzwingen Sie die Datenreplikation
 

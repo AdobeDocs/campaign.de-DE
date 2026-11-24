@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 79%
+source-wordcount: '1096'
+ht-degree: 76%
 ---
 # Einstellungen der Campaign-Benutzeroberfläche {#ui-settings}
 
@@ -86,7 +86,7 @@ Die Spalte wird rechts von den bereits angezeigten Spalten hinzugefügt.
 
 Sie können auch den Listenkonfigurationsbildschirm verwenden, um Spalten hinzuzufügen und zu entfernen:
 
-1. Klicken Sie in einer Eintragsliste auf das Symbol **[!UICONTROL Liste konfigurieren]** unten rechts.
+1. Klicken Sie in einer Datensatzliste auf das Symbol **[!UICONTROL Liste konfigurieren]** im rechten unteren Bereich.
 1. Doppelklicken Sie auf die Felder, die der Liste **[!UICONTROL Verfügbare Felder]** hinzugefügt werden sollen, und sie werden zur Liste **[!UICONTROL Ausgabespalten]** hinzugefügt.
 
    ![Listenkonfigurationsbildschirm](assets/list-config-screen.png)
@@ -116,7 +116,7 @@ Sie können neue Spalten erstellen, um zusätzliche Felder in der Liste anzuzeig
 
 Gehen Sie wie folgt vor, um eine Spalte zu erstellen:
 
-1. Klicken Sie in einer Eintragsliste auf das Symbol **[!UICONTROL Liste konfigurieren]** unten rechts.
+1. Klicken Sie in einer Datensatzliste auf das Symbol **[!UICONTROL Liste konfigurieren]** im rechten unteren Bereich.
 1. Klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]**, um ein neues Feld in der Liste anzuzeigen.
 1. Konfigurieren Sie Feld, das in der Spalte hinzugefügt werden soll.
 

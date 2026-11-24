@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 90%
+ht-degree: 89%
 ---
 # Verwalten von Benutzerberechtigungen{#manage-permissions}
 
@@ -239,7 +239,7 @@ Mitglieder von Operatorgruppen können Zugriffsrechte auf Ordner gewähren oder 
 
 Standardmäßige spezifische Berechtigungen in Adobe Campaign sind:
 
-* **[!UICONTROL ADMINISTRATION]**: Benutzer mit **[!UICONTROL ADMINISTRATORRECHTEN]** haben vollen Zugriff auf die Instanz. Admin-Benutzer können beliebige Objekte wie Workflows, Sendungen, Skripte usw. ausführen/erstellen/bearbeiten/löschen. **Hinweis:** Produktprofile in der Adobe Admin Console, die das Wort „admin“ enthalten, gewähren Zugriff auf das Campaign Control Panel.
+* **[!UICONTROL ADMINISTRATION]**: Benutzende mit der **[!UICONTROL ADMINISTRATION]**-Berechtigung haben vollen Zugriff auf die Instanz. Admin-Benutzer können beliebige Objekte wie Workflows, Sendungen, Skripte usw. ausführen/erstellen/bearbeiten/löschen. **Hinweis:** Produktprofile in der Adobe Admin Console, die das Wort „admin“ enthalten, gewähren Zugriff auf das Campaign Control Panel.
 
 * **[!UICONTROL VALIDIERUNGSADMINISTRATION]**: Sie können verschiedene Validierungsschritte innerhalb von Workflows und Sendungen festlegen, um sicherzustellen, dass der aktuelle Status durch einen zugewiesenen Benutzer oder eine zugewiesene Gruppe validiert wurde. Benutzer mit der Berechtigung **[!UICONTROL VALIDIERUNGSADMINISTRATION]** können Validierungsschritte festlegen und auch einen Benutzer oder eine Benutzergruppe zuweisen, der bzw. die diese Schritte validieren soll. **Hinweis** Produktprofile, die das Wort „Admin“ enthalten (z. B. „Validierungs-Admin„), gewähren Zugriff auf das Campaign Control Panel.
 

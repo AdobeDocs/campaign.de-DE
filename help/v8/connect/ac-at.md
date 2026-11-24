@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1047'
-ht-degree: 95%
+ht-degree: 93%
 ---
 # Campaign und Adobe Target verwenden
 
@@ -97,7 +97,7 @@ Anschließend können Sie die Bildparameter definieren:
 * Die URL des **[!UICONTROL Standardbilds]** ist das Bild, das angezeigt wird, wenn keine der Bedingungen erfüllt ist. Sie können auch ein Bild aus Ihrer Assets-Bibliothek verwenden.
 * Der **[!UICONTROL Zielspeicherort]** ist der Name des Speicherorts Ihres dynamischen Angebots. Sie müssen diesen Speicherort später in Ihrer Adobe Target-Aktivität auswählen.
 * Mit der **[!UICONTROL Landingpage]** können Sie das Standardbild zu einer standardmäßigen Landingpage umleiten. Diese URL gilt nur, wenn in der letzten E-Mail das Standardbild angezeigt wird. Das ist optional.
-* Im Bereich **[!UICONTROL Zusätzliche Entscheidungsparameter]** wird das Mapping zwischen den in den Adobe Target-Segmenten definierten Feldern und den Feldern in Adobe Campaign hergestellt. Die in Adobe Campaign verwendeten Felder müssen zuvor in der Rawbox angegeben werden. In unserem Beispiel haben wir das Feld &quot;Country&quot; (Land) hinzugefügt.
+* Die **[!UICONTROL Zusätzliche Entscheidungsparameter]** definieren die Zuordnung zwischen den in den Adobe Target-Segmenten definierten Feldern und den Feldern in Adobe Campaign. Die in Adobe Campaign verwendeten Felder müssen zuvor in der Rawbox angegeben werden. In unserem Beispiel haben wir das Feld &quot;Country&quot; (Land) hinzugefügt.
 
 Wenn Sie in Ihren Einstellungen in Adobe Target Berechtigungen auf Unternehmensebene verwenden, fügen Sie in diesem Feld die entsprechende Eigenschaft hinzu. Weitere Informationen zu Target Enterprise-Berechtigungen finden Sie in der Dokumentation zu [Adobe Target](https://experienceleague.adobe.com/de/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
