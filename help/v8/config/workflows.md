@@ -151,7 +151,7 @@ Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/c
 
 Verwenden Sie Transaktionsnachrichten in Campaign, um Nachrichten zu automatisieren, die von durch Informationssysteme ausgelösten Ereignissen generiert werden. Diese Transaktionsnachrichten können z. B. Rechnungen, Auftragsbestätigungen, Versandbestätigungen, Passwortänderungen, Benachrichtigungen über die Nichtverfügbarkeit von Produkten, Kontoauszüge oder die Erstellung von Website-Konten sein. Diese Nachrichten können einzeln oder in Batches per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
-Weitere Informationen zu den Funktionen von Transaktionsnachrichten finden Sie [ (diesem Abschnitt](../send/transactional.md).
+Weitere Informationen zu den Funktionen von Transaktionsnachrichten finden Sie [&#x200B; (diesem Abschnitt](../send/transactional.md).
 
 Verbinden Sie Adobe Campaign und Adobe Analytics, um Benutzeraktionen abzurufen und nahezu in Echtzeit personalisierte Nachrichten zu versenden.
 

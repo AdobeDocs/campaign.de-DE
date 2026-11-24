@@ -91,7 +91,7 @@ Im rechten Bereich des Editors befinden sich die wichtigsten Optionen zum Bearbe
 Sie haben folgende Möglichkeiten:
 
 * Anzeige für einen oder mehrere Blöcke festlegen, siehe [Sichtbarkeitsbedingung definieren](editing-content.md#defining-a-visibility-condition),
-* Ränder und Rahmen angeben, siehe [Rahmen und Hintergründe hinzufügen ](editing-content.md#adding-a-border-and-background),
+* Ränder und Rahmen angeben, siehe [Rahmen und Hintergründe hinzufügen &#x200B;](editing-content.md#adding-a-border-and-background),
 * Bildattribute (Größe, Beschriftung) festlegen, siehe [Bildeigenschaften bearbeiten](editing-content.md#editing-image-properties),
 * Datenbank mit einem Formularelement (Eingabefeld, Checkbox) verknüpfen, siehe [Dateneigenschaften für ein Formular ändern](editing-content.md#changing-the-data-properties-for-a-form),
 * Einen Teil eines Formulars obligatorisch machen, siehe [Dateneigenschaften für ein Formular ändern](editing-content.md#changing-the-data-properties-for-a-form),

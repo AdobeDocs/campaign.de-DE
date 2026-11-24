@@ -98,4 +98,4 @@ Gehen Sie wie folgt vor, um Ereignistypen für die Verarbeitung in Adobe Campaig
 >
 >Weitere Informationen über [Auflistungen](../config/enumerations.md).
 
-Im nächsten Schritt erfahren Sie, wie Sie [Vorlage für Transaktionsnachrichten erstellen und ](transactional-template.md).
+Im nächsten Schritt erfahren Sie, wie Sie [Vorlage für Transaktionsnachrichten erstellen und &#x200B;](transactional-template.md).

@@ -462,7 +462,7 @@ Verwenden Sie Campaign, um Web-Formulare zu erstellen und Profilinformationen ei
 
 ![](assets/web-form-page.png)
 
-Erfahren Sie in ([ Abschnitt), wie Sie Web-Formulare ](../dev/web/about-web-forms.md).
+Erfahren Sie in ([&#x200B; Abschnitt), wie Sie Web-Formulare &#x200B;](../dev/web/about-web-forms.md).
 
 **Verwandte Themen**
 

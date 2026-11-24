@@ -62,7 +62,7 @@ Dagegen können **Profile** auf der **Blockierungsliste** wie nach einer Abmeldu
 
 >[!NOTE]
 >
->Abgemeldete Empfänger über die [ „mailto“ List-Unsubscribe-Methode ](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} nicht unter Quarantäne gestellt. Sie haben das Abonnement für den [Service](../start/subscriptions.md), der mit dem Versand verknüpft ist, oder werden an die Blockierungsliste gesendet (sichtbar im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** des Profils), wenn für den Versand kein Service definiert wurde.
+>Abgemeldete Empfänger über die [&#x200B; „mailto“ List-Unsubscribe-Methode &#x200B;](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"} nicht unter Quarantäne gestellt. Sie haben das Abonnement für den [Service](../start/subscriptions.md), der mit dem Versand verknüpft ist, oder werden an die Blockierungsliste gesendet (sichtbar im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** des Profils), wenn für den Versand kein Service definiert wurde.
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -86,7 +86,7 @@ Wenn ein Benutzer eine E-Mail als Spam kennzeichnet, wird die Nachricht automati
 
 ## Verwaltung von Softbounces {#soft-error-management}
 
-Im Gegensatz zu Hardbounces senden Softbounces eine Adresse nicht sofort in Quarantäne, sondern erhöhen stattdessen einen Fehlerzähler. Wenn der Fehlerzähler den Grenzwert erreicht, wird die Adresse unter Quarantäne gestellt. Weitere Informationen zu weiteren Zustellversuchen und Fehlertypen finden Sie unter [ von fehlgeschlagenen Sendungen ](delivery-failures.md).
+Im Gegensatz zu Hardbounces senden Softbounces eine Adresse nicht sofort in Quarantäne, sondern erhöhen stattdessen einen Fehlerzähler. Wenn der Fehlerzähler den Grenzwert erreicht, wird die Adresse unter Quarantäne gestellt. Weitere Informationen zu weiteren Zustellversuchen und Fehlertypen finden Sie unter [&#x200B; von fehlgeschlagenen Sendungen &#x200B;](delivery-failures.md).
 
 Der Fehlerzähler wird erneut initialisiert, wenn der letzte signifikante Fehler vor mehr als 10 Tagen aufgetreten ist. Der Status der Adresse wird auf **[!UICONTROL Gültig]** gesetzt und mithilfe des Workflows **[!UICONTROL Datenbankbereinigung]** wird die Adresse aus der Quarantäneliste gelöscht. [Weitere Informationen zu technischen Workflows](../config/workflows.md).
 

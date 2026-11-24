@@ -67,7 +67,7 @@ Um Adobe Campaign so zu konfigurieren, dass Tweets in Ihren X-Konten veröffentl
 
 ## X-Entwicklerkonto {#dev-account}
 
-Um mit dieser Integration zu beginnen, müssen Sie sich in einem [X-Entwicklerkonto ](https://developer.twitter.com){target="_blank"}.
+Um mit dieser Integration zu beginnen, müssen Sie sich in einem [X-Entwicklerkonto &#x200B;](https://developer.twitter.com){target="_blank"}.
 
 Campaign verwendet die X-API-Version 1.1. Um sie verwenden zu können, müssen Sie über das Entwicklerportal einen erweiterten Zugriff beantragen. [Auf dieser Seite](https://developer.twitter.com/en/portal/products/elevated){target="_blank"} erfahren Sie mehr über den erweiterten Zugriff auf X.
 
@@ -169,7 +169,7 @@ Sobald diese Konfiguration abgeschlossen ist, können Sie Tweets auf Ihren X-Kon
 
 ## Erstellen eines Testkontos auf X {#tw-test-account}
 
-Erstellen Sie zusätzlich zu einem X-Konto ein privates X-Konto, das zum Senden von [Tweet-Testsendungen“ verwendet ](../send/twitter.md) kann. Gehen Sie dazu wie folgt vor:
+Erstellen Sie zusätzlich zu einem X-Konto ein privates X-Konto, das zum Senden von [Tweet-Testsendungen“ verwendet &#x200B;](../send/twitter.md) kann. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie ein neues X-Konto.
 1. Öffnen Sie die **Einstellungen** des Kontos.

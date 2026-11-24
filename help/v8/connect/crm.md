@@ -61,7 +61,7 @@ Die wichtigsten Vorteile sind:
 
 ## Kompatible Systeme {#compatible-crm-systems-and-limitations}
 
-Unterstützte CRMs und Versionen werden in der Kompatibilitätsmatrix [ Campaign ](../start/compatibility-matrix.md).
+Unterstützte CRMs und Versionen werden in der Kompatibilitätsmatrix [&#x200B; Campaign &#x200B;](../start/compatibility-matrix.md).
 
 >[!CAUTION]
 >

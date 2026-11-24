@@ -107,7 +107,7 @@ Der Inhalt der Angebotsdarstellung wird durch das Angebotsmodul an die HTML-Seit
 
 ### Angebot für einen identifizierten Kontakt {#presenting-an-identified-offer}
 
-Um einem identifizierten Kontakt ein Angebot zu unterbreiten, läuft der Prozess ähnlich ab, wie in [ Abschnitt beschrieben](#presenting-an-anonymous-offer).
+Um einem identifizierten Kontakt ein Angebot zu unterbreiten, läuft der Prozess ähnlich ab, wie in [&#x200B; Abschnitt beschrieben](#presenting-an-anonymous-offer).
 
 Im Inhalt der Web-Seite müssen Sie das folgende Skript hinzufügen, das während des Aufrufs an das Modul den Kontakt identifiziert:
 

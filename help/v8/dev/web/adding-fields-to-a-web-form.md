@@ -47,7 +47,7 @@ Folgende Feldtypen sind verfügbar:
 
 * Text-/Zahleneingabe. Siehe [Eingabefelder hinzufügen](#adding-input-fields).
 * Auswahl per Dropdown-Liste. Siehe [Dropdown-Listen hinzufügen](#adding-drop-down-lists).
-* Multiple Choice über Checkboxes. Siehe [Checkboxes hinzufügen ](#adding-checkboxes).
+* Multiple Choice über Checkboxes. Siehe [Checkboxes hinzufügen &#x200B;](#adding-checkboxes).
 * Auswahl über Radiobuttons. Siehe [Radiobuttons hinzufügen](#adding-radio-buttons).
 * Abstimmungsoptionen in einer Tabelle. Siehe [Tabellen hinzufügen](#adding-grids).
 * Zahlen und Daten. Siehe [Datum und Zahlen hinzufügen](#adding-dates-and-numbers).
@@ -92,7 +92,7 @@ Auf einer Formularseite können fünf Typen von Textfeldern eingefügt werden:
 
   ![](assets/s_ncs_admin_survey_txt_ex.png)
 
-* **Zahl**: ermöglicht dem Benutzer die Zahleneingabe in einer einzigen Zeile. Weitere Informationen hierzu finden Sie unter [ von Zahlen](#adding-numbers).
+* **Zahl**: ermöglicht dem Benutzer die Zahleneingabe in einer einzigen Zeile. Weitere Informationen hierzu finden Sie unter [&#x200B; von Zahlen](#adding-numbers).
 
   Bei der Validierung der Seite wird der Feldinhalt geprüft, um sicherzugehen, dass der eingegebene Wert mit dem Feld kompatibel ist. Weiterführende Informationen finden Sie unter [Kontrolleinstellungen definieren](form-rendering.md#defining-control-settings).
 
