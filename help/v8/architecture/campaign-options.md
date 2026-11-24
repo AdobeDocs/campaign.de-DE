@@ -30,7 +30,7 @@ ht-degree: 3%
 ---
 # Kampagnenoptionen {#campaign-options}
 
-Optionen sind Parameter, die steuern, wie sich Ihre Campaign-Instanz verhält, z. B. die Standardgrößenbeschränkung von Bildern in E-Mails, die Anzahl der gleichzeitig ausgeführten Workflows oder der standardmäßige Routing-Anbieter von Versandvorlagen. Einige Optionen sind integriert und andere werden bei Bedarf erstellt. Die verfügbaren Optionen hängen von den auf Ihrer Instanz installierten Paketen ab. Weitere Informationen finden [ unter „Integrierte Pakete](built-in-packages.md).
+Optionen sind Parameter, die steuern, wie sich Ihre Campaign-Instanz verhält, z. B. die Standardgrößenbeschränkung von Bildern in E-Mails, die Anzahl der gleichzeitig ausgeführten Workflows oder der standardmäßige Routing-Anbieter von Versandvorlagen. Einige Optionen sind integriert und andere werden bei Bedarf erstellt. Die verfügbaren Optionen hängen von den auf Ihrer Instanz installierten Paketen ab. Weitere Informationen finden [&#x200B; unter „Integrierte Pakete](built-in-packages.md).
 
 >[!CAUTION]
 >
@@ -56,7 +56,7 @@ Sie können Optionswerte aus JavaScript-Code, Personalisierung und Abfragen lese
 
 * **JavaScript-**, z. B. eine Workflow-Aktivität vom Typ JavaScript-Code: `getOption('OptionName')` gibt den Wert einer Option zurück und legt ihn `setOption('OptionName', value, 'description')` fest. Beispiel: `getOption('IMS_ORG_ID')`. Weitere Informationen finden Sie unter [getOption](../../campaign-api/f-getoption.md) und [setOption](../../campaign-api/f-setoption.md).
 * **Versandpersonalisierung**: `<%@ include option='OptionName' %>` fügt den Wert einer Option ein. Beispielsweise enthält `<%@ include option='NmsServer_URL' %>` die Server-URL in einem Link zu einer Web-Anwendung in einer LINE-Nachricht. Weitere Informationen finden Sie unter [Senden von LINE-Direktnachrichten mit Adobe Campaign](../send/line/line.md).
-* **Abfrage-Editor**: Geben Sie `$(options:OPTION_NAME)` in das Feld **Wert** ein, um den Wert einer Option zu verwenden. Weitere Informationen finden Sie unter [ von Abfragen](../start/design-queries.md).
+* **Abfrage-Editor**: Geben Sie `$(options:OPTION_NAME)` in das Feld **Wert** ein, um den Wert einer Option zu verwenden. Weitere Informationen finden Sie unter [&#x200B; von Abfragen](../start/design-queries.md).
 
 ## Verfügbare Optionen {#available-options}
 
@@ -64,7 +64,7 @@ In den folgenden Tabellen sind die in Campaign v8 verfügbaren Optionen nach Ber
 
 ### Sendungen {#delivery-options}
 
-Diese Optionen steuern, wie Sendungen vorbereitet und gesendet werden. Es geht dabei um Bild- und Anlagenbeschränkungen, den Standard-Routing-Provider, den Mid-Sourcing-Split-Schwellenwert, das Open-Tracking-Skript, die URL des öffentlichen Servers, die Versandgültigkeit, die Handhabung von Duplikaten und verzögerten Sendungen sowie Barcodes. Weitere Informationen finden Sie unter [Anhängen von ](../send/attaching-files.md), [E-Mail-Parameter](../send/email-parameters.md), [Best Practices für den Versand](../start/delivery-best-practices.md), [Erste Schritte mit der Campaign-Architektur](architecture.md#split) [Anleitungen zu E-Mail-Tracking-Pixeln](../start/cnil-pixel-tracking.md) und [Senden von direkten LINE-Nachrichten](../send/line/line.md).
+Diese Optionen steuern, wie Sendungen vorbereitet und gesendet werden. Es geht dabei um Bild- und Anlagenbeschränkungen, den Standard-Routing-Provider, den Mid-Sourcing-Split-Schwellenwert, das Open-Tracking-Skript, die URL des öffentlichen Servers, die Versandgültigkeit, die Handhabung von Duplikaten und verzögerten Sendungen sowie Barcodes. Weitere Informationen finden Sie unter [Anhängen von &#x200B;](../send/attaching-files.md), [E-Mail-Parameter](../send/email-parameters.md), [Best Practices für den Versand](../start/delivery-best-practices.md), [Erste Schritte mit der Campaign-Architektur](architecture.md#split) [Anleitungen zu E-Mail-Tracking-Pixeln](../start/cnil-pixel-tracking.md) und [Senden von direkten LINE-Nachrichten](../send/line/line.md).
 
 | Option | Beschreibung |
 |---|---|
@@ -161,7 +161,7 @@ Diese Optionen definieren die Schwellenwerte, die eine Warnung oder einen Warnhi
 
 ### Datenaufbewahrung und -datenbank {#database-options}
 
-Der Bereinigungs-Workflow löscht alte Datensätze, um ein Wachstum der Datenbank zu verhindern. Diese Optionen legen fest, wie lange Campaign die einzelnen Datentypen speichert. Wenn Sie die Verzögerung in der Benutzeroberfläche ändern, wird automatisch eine Option „Bereinigungsverzögerung“ erstellt. Wenn Sie ihn über die Optionsliste bearbeiten, drücken Sie den Wert in Sekunden aus. Weitere Informationen finden Sie unter [Allgemeine ](general-architecture.md) und [Sicherheitsrichtlinien](../config/security.md#consent).
+Der Bereinigungs-Workflow löscht alte Datensätze, um ein Wachstum der Datenbank zu verhindern. Diese Optionen legen fest, wie lange Campaign die einzelnen Datentypen speichert. Wenn Sie die Verzögerung in der Benutzeroberfläche ändern, wird automatisch eine Option „Bereinigungsverzögerung“ erstellt. Wenn Sie ihn über die Optionsliste bearbeiten, drücken Sie den Wert in Sekunden aus. Weitere Informationen finden Sie unter [Allgemeine &#x200B;](general-architecture.md) und [Sicherheitsrichtlinien](../config/security.md#consent).
 
 Nur Administratoren können die Optionen für die Bereinigungsverzögerung ändern. Die entsprechenden Werte hängen von Ihrer Umgebung ab. Überprüfen Sie daher den aktuellen Wert in Ihrer Instanz und gehen Sie nicht von einem universellen Standardwert aus.
 
@@ -196,7 +196,7 @@ Mit diesen Optionen können Sie anpassen, wie Campaign Echtzeit- und Batch-Ereig
 
 ### Interaction (Angebotsverwaltung) {#interaction-options}
 
-Diese Optionen gelten für Campaign Interaction, das Modul Angebotsverwaltung . Sie steuern, wie Vorschläge geschrieben werden und wie die Kontroll- und Ausführungsinstanzen synchronisiert werden. Weitere Informationen finden [ unter „Campaign Interaction - Angebotsverwaltung](../interaction/interaction.md) und in den [Wartungsoptionen](../interaction/interaction-architecture.md#maintenance-options) der Interaction-Architektur.
+Diese Optionen gelten für Campaign Interaction, das Modul Angebotsverwaltung . Sie steuern, wie Vorschläge geschrieben werden und wie die Kontroll- und Ausführungsinstanzen synchronisiert werden. Weitere Informationen finden [&#x200B; unter „Campaign Interaction - Angebotsverwaltung](../interaction/interaction.md) und in den [Wartungsoptionen](../interaction/interaction-architecture.md#maintenance-options) der Interaction-Architektur.
 
 | Option | Beschreibung |
 |---|---|
@@ -222,7 +222,7 @@ Die folgenden Optionen gelten für Gutscheine, die in Enterprise (FFDA)-Bereitst
 
 ### Datenschutzanfragen {#privacy-options}
 
-Diese Optionen steuern, wie Campaign Datenschutzanfragen verarbeitet, z. B. die Löschbestätigung, die Anzahl der zulässigen Fehler und wie lange Anfragedaten aufbewahrt werden. Weitere Informationen finden [ unter „Verwalten von Datenschutzanfragen in Campaign](../start/privacy.md).
+Diese Optionen steuern, wie Campaign Datenschutzanfragen verarbeitet, z. B. die Löschbestätigung, die Anzahl der zulässigen Fehler und wie lange Anfragedaten aufbewahrt werden. Weitere Informationen finden [&#x200B; unter „Verwalten von Datenschutzanfragen in Campaign](../start/privacy.md).
 
 | Option | Beschreibung |
 |---|---|
@@ -234,7 +234,7 @@ Diese Optionen steuern, wie Campaign Datenschutzanfragen verarbeitet, z. B. die 
 
 ### Audit-Protokoll {#audit-trail-options}
 
-Das Audit-Protokoll zeichnet die Änderungen auf, die an Campaign-Entitäten vorgenommen wurden. Verwenden Sie diese Optionen, um sie für eine Entität zu aktivieren oder zu deaktivieren, z. B. um Speicherplatz in der Datenbank zu sparen. Legen Sie den Wert auf 1 fest, um das Audit-Protokoll zu aktivieren, und auf 0, um es zu deaktivieren. Weitere Informationen finden Sie [ „Audit-Protokoll](../reporting/audit-trail.md#enable-disable-audit-trail).
+Das Audit-Protokoll zeichnet die Änderungen auf, die an Campaign-Entitäten vorgenommen wurden. Verwenden Sie diese Optionen, um sie für eine Entität zu aktivieren oder zu deaktivieren, z. B. um Speicherplatz in der Datenbank zu sparen. Legen Sie den Wert auf 1 fest, um das Audit-Protokoll zu aktivieren, und auf 0, um es zu deaktivieren. Weitere Informationen finden Sie [&#x200B; „Audit-Protokoll](../reporting/audit-trail.md#enable-disable-audit-trail).
 
 | Option | Geprüfte Entität |
 |---|---|
