@@ -159,7 +159,7 @@ Beim Zugriff auf die Seite erscheint das folgende Authentifizierungsformular:
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-Der Benutzername und das Passwort entspricht denen der Adobe Campaign-Operatoren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+Der Benutzername und das Passwort entspricht denen der Adobe Campaign-Operatoren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
 
 Mit der Option **[!UICONTROL Spezifisches Konto nutzen]** können Sie die Lese- oder Schreibrechte der Person einschränken, die auf das Formular zugreift. Wählen Sie in der Dropdown-Liste eine Person oder eine Benutzergruppe aus, die für die Vergabe dieser Berechtigungen zuständig sein soll.
 
