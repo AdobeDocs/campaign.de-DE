@@ -5,9 +5,9 @@ user-guide-description: Produktdokumentation zu Adobe Campaign v8 (Client-Konsol
 title: Dokumentation zu Adobe Campaign v8
 description: Dokumentation zu Campaign v8
 breadcrumb-title: Dokumentation zu Campaign v8
-source-git-commit: ffa29306eb4402ed20c7d04bdbbaffd4dde5bfe4
+source-git-commit: 2da6239843538ec459e7d3dfe0514a56e4a941be
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1102'
 ht-degree: 88%
 ---
 
@@ -271,6 +271,7 @@ ht-degree: 88%
   + [Allgemeine Prinzipien](architecture/general-architecture.md)
   + [Architekturmodelle](architecture/architecture.md)
   + {hide-from-toc}[Integrierte Pakete](architecture/built-in-packages.md)
+  + {hide-from-toc}[Kampagnenoptionen](architecture/campaign-options.md)
   + [Campaign FDA-Bereitstellung](architecture/fda-deployment.md)
   + Bereitstellung in Unternehmen (FFDA) {#ffda}
     + [Was ist Campaign FFDA?](architecture/enterprise-deployment.md)
@@ -335,7 +336,7 @@ ht-degree: 88%
       + [Steuern eines Workflows](dev/api/controlling-a-workflow.md)
       + [Auslösen einer Signalaktivität](dev/api/triggering-a-signal-activity.md)
 + API-Dokumentation {#api-documentation}
-  + [Campaign-API-Dokumentation >](https://experienceleague.adobe.com/en/docs/campaign/campaign-api/home)
+  + [Campaign-API-Dokumentation >](https://experienceleague.adobe.com/de/docs/campaign/campaign-api/home)
 + Zusätzliche Ressourcen {#resources}
   + [Technische Hinweise zu Campaign >](https://experienceleague.adobe.com/de/docs/campaign/technotes-ac/technotes-home)
   + [Dokumentation zur Campaign-Web-Benutzeroberfläche >](https://experienceleague.adobe.com/de/docs/campaign-web/v8/campaign-web-home)
