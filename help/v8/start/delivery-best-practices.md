@@ -165,15 +165,15 @@ Um Ihre Nachrichten zu personalisieren, können Sie die Empfängerdaten verwende
 
 * Überprüfen Sie Ihre Personalisierungseinstellungen – Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um Fehler zu vermeiden, die oft bei der Personalisierung auftreten. Ein Personalisierungs-Tag in Adobe Campaign präsentiert sich stets in folgender Form: `<%=table.field%>`. Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise wie folgt verwendet werden:
 
-  ``
+  &grave;&grave;
   <%
   var brand = "xxx"
   %>
-  ``
+  &grave;&grave;
 
   Weiterführende Informationen zu Gestaltungsbausteinen finden Sie [diesem Abschnitt](../send/personalization-blocks.md).
 
-* Bereiten Sie Personalisierungsdaten vor – Sie können die Personalisierungsdaten in einem Workflow vorbereiten, um die Analyse der Versandvorbereitung zu verbessern. Dies sollte insbesondere verwendet werden, wenn die Personalisierungsdaten aus einer externen Tabelle über Federated Data Access (FDA) stammen. Diese Option wird in ([ Abschnitt) ](../send/personalization-data.md#optimize-personalization)
+* Bereiten Sie Personalisierungsdaten vor – Sie können die Personalisierungsdaten in einem Workflow vorbereiten, um die Analyse der Versandvorbereitung zu verbessern. Dies sollte insbesondere verwendet werden, wenn die Personalisierungsdaten aus einer externen Tabelle über Federated Data Access (FDA) stammen. Diese Option wird in ([&#x200B; Abschnitt) &#x200B;](../send/personalization-data.md#optimize-personalization)
 +++
 
 ### Erstellen optimierter Inhalte {#build-optimized-content}
