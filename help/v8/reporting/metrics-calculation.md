@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e633414f053265108e33aa63d7b7504d307e05c3
 workflow-type: tm+mt
-source-wordcount: '3155'
-ht-degree: 100%
+source-wordcount: '3181'
+ht-degree: 99%
 ---
 # Berechnung integrierter Berichtsmetriken {#metrics-calculation}
 
@@ -933,6 +933,8 @@ Dieser Bericht basiert auf den Tabellen **Sendungen** (nms:delivery) und **Track
 Der Indikator **Gesendet** (@sent), auf den über den Knoten **Sendungen (nms:delivery) > Indikatoren** zugegriffen wird, entspricht der Gesamtzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird ausschliesslich für SMS-Sendungen verwendet und darf nicht für andere Versandtypen genutzt werden. Er ist nicht zu verwechseln mit den Indikatoren **@success** und **@processed**.
 
 ## Indikatoren synchronisieren {#indicator-synchronization}
+
+Der Indikator **Verarbeitet** kann die Anzahl der zu sendenden Nachrichten vorübergehend überschreiten, während die Indikatoren aktualisiert werden, z. B. für Sendungen mit Wiederholungsversuchen oder verknüpften Sendungen.
 
 Falls Sie bei bestimmten Indikatoren eine Desynchronisierung oder Inkonsistenz bemerken, wählen Sie im Adobe Campaign-Explorer den entsprechenden Versand aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie die Option **[!UICONTROL Aktionen > Sende- und Tracking-Indikatoren neu berechnen]**. Klicken Sie auf **[!UICONTROL Weiter]** und schließlich auf **[!UICONTROL Beenden]**.
 
