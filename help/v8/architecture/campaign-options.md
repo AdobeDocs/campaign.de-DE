@@ -30,7 +30,7 @@ ht-degree: 5%
 ---
 # Kampagnenoptionen {#campaign-options}
 
-Optionen sind Parameter, die steuern, wie sich Ihre Campaign-Instanz verhält, z. B. die Standardgrößenbeschränkung von Bildern in E-Mails, die Anzahl der gleichzeitig ausgeführten Workflows oder der standardmäßige Routing-Anbieter von Versandvorlagen. Einige Optionen sind integriert und andere werden bei Bedarf erstellt. Die verfügbaren Optionen hängen von den auf Ihrer Instanz installierten Paketen ab. Weitere Informationen finden [ unter „Integrierte Pakete](built-in-packages.md).
+Optionen sind Parameter, die steuern, wie sich Ihre Campaign-Instanz verhält, z. B. die Standardgrößenbeschränkung von Bildern in E-Mails, die Anzahl der gleichzeitig ausgeführten Workflows oder der standardmäßige Routing-Anbieter von Versandvorlagen. Einige Optionen sind integriert und andere werden bei Bedarf erstellt. Die verfügbaren Optionen hängen von den auf Ihrer Instanz installierten Paketen ab. Weitere Informationen finden [&#x200B; unter „Integrierte Pakete](built-in-packages.md).
 
 >[!CAUTION]
 >
@@ -125,11 +125,11 @@ Jede Echtzeit-Ereignismetrik hat einen Warnschwellenwert und einen Warnschwellen
 | Privacy_Request_MaxErrorAllowed | Maximal zulässige Anzahl von Fehlern bei der Verarbeitung oder Löschung einer Datenschutzanfrage. |
 | Datenschutz_Request_PurgeDelay | Intervall zwischen der Erstellung einer Anfrage in der Warteschlange und dem Löschen der zugehörigen Daten |
 
-Weitere Informationen zu Datenschutzanfragen finden Sie unter [Verwalten von ](../start/privacy.md)).
+Weitere Informationen zu Datenschutzanfragen finden Sie unter [Verwalten von &#x200B;](../start/privacy.md)).
 
 ### Audit-Protokoll {#audit-trail-options}
 
-Legen Sie eine Audit-Protokoll-Option auf 1 fest, um das Audit-Protokoll für eine Entität zu aktivieren, oder auf 0, um sie zu deaktivieren: XtkAudit_Workflows, XtkAudit_DataSchema, XtkAudit_Option, XtkAudit_Delivery, XtkAudit_ExtAccount, XtkAudit_DeliveryMapping, XtkAudit_WebApp, XtkAudit_Offer, XtkAudit_Operator. Verwenden Sie XtkAudit_Enable_All für jede Entität. Weitere Informationen finden Sie [ „Audit-Protokoll](../reporting/audit-trail.md#enable-disable-audit-trail).
+Legen Sie eine Audit-Protokoll-Option auf 1 fest, um das Audit-Protokoll für eine Entität zu aktivieren, oder auf 0, um sie zu deaktivieren: XtkAudit_Workflows, XtkAudit_DataSchema, XtkAudit_Option, XtkAudit_Delivery, XtkAudit_ExtAccount, XtkAudit_DeliveryMapping, XtkAudit_WebApp, XtkAudit_Offer, XtkAudit_Operator. Verwenden Sie XtkAudit_Enable_All für jede Entität. Weitere Informationen finden Sie [&#x200B; „Audit-Protokoll](../reporting/audit-trail.md#enable-disable-audit-trail).
 
 ### Integrationen und Umfragen {#integration-options}
 
