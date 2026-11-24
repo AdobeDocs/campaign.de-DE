@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1111'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # Verwalten der Angebotsunterbreitung{#managing-offer-presentation}
 
@@ -65,7 +65,7 @@ Interaction ermöglicht die Steuerung des Flusses der Angebotsvorschläge anhand
 
 ### Anwendungskriterien {#application-criteria-}
 
-Mit den Anwendungskriterien in der Registerkarte **[!UICONTROL Allgemein]** können Sie die Angebote angeben, für die die Unterbreitungsregel gelten soll. Dazu müssen Sie wie unten beschrieben eine Abfrage erstellen und die betroffenen Angebote auswählen.
+Über die in der Registerkarte **[!UICONTROL Allgemein]** verfügbaren Anwendungskriterien können Sie die Angebote angeben, für die die Unterbreitungsregel gilt. Dazu müssen Sie wie unten beschrieben eine Abfrage erstellen und die betroffenen Angebote auswählen.
 
 1. Klicken Sie auf den Link **[!UICONTROL Anwendungskriterien der Regel bearbeiten...]**.
 

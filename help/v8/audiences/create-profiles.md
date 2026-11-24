@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 100%
+source-wordcount: '107'
+ht-degree: 88%
 ---
 # Manuelles Erstellen von Profilen{#create-profiles-manual}
 
@@ -36,7 +36,7 @@ Um Ihre Campaign-Datenbank zu füllen, können Sie [Profile importieren](import-
 
 Gehen Sie wie folgt vor, um einen Empfänger manuell zu erstellen:
 
-1. Gehen Sie zur Registerkarte **[!UICONTROL Profile und Zielgruppen]** und wählen Sie die Kategorie **[!UICONTROL Empfänger]** aus.
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Profile und Zielgruppen]** und wählen Sie die Kategorie **[!UICONTROL Empfänger]** aus.
 
    ![](assets/profiles-and-targets.png)
 

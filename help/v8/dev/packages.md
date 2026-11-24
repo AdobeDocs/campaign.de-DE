@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '2028'
-ht-degree: 85%
+ht-degree: 84%
 ---
 # Daten-Packages{#data-packages}
 
@@ -263,7 +263,7 @@ Entitäten können direkt von ihrem Speicherort in der -Instanz zu einer Paketde
 
 1. Wählen Sie **[!UICONTROL Einer Package-Definition hinzufügen]** und anschließend die Package-Definition, zu der Sie die Entität hinzufügen möchten.
 
-1. Die Entität wird zur Package-Definition hinzugefügt und mit dem Package exportiert (siehe [diesen Abschnitt](#export-packages-from-a-package-definition)).
+1. Die Entität wird der Paketdefinition hinzugefügt und mit dem Paket exportiert (siehe [diesen Abschnitt](#export-packages-from-a-package-definition)).
 
 ### Erzeugung von Package-Definitionen konfigurieren {#configure-package-definitions-generation}
 

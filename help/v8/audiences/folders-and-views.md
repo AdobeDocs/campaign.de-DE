@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 91%
+ht-degree: 89%
 ---
 # Verwalten von Ordnern und Ansichten {#folders-and-views}
 
@@ -128,7 +128,7 @@ Im folgenden Beispiel erstellen wir einen neuen Ordner, in dem nur US-Sendungen 
 
 Standardmäßig wird ein neuer Ordner oben in der Hierarchie hinzugefügt.
 
-Durchsuchen Sie die Registerkarte **Unterordner** in den Dateieigenschaften, um die Unterordner zu organisieren.
+Durchsuchen Sie die **Unterordner** der Ordnereigenschaften, um die Unterordner zu organisieren.
 
 Sie können die Ordner mit den Pfeilen auf der rechten Seite verschieben oder die Option **[!UICONTROL Sortieren der Unterordner in alphabetischer Reihenfolge]** auswählen, um sie automatisch zu sortieren.
 

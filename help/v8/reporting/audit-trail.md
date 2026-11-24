@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 95%
+source-wordcount: '662'
+ht-degree: 91%
 ---
 # Audit-Protokoll{#audit-trail}
 
@@ -58,9 +58,9 @@ Die Funktion **[!UICONTROL Audit-Protokoll]** in Adobe Campaign bietet eine deta
   * Aussetzen
   * Stoppen
   * Neu starten
-  * Bereinigen, was der Aktion „Verlauf bereinigen“ entspricht
-  * Simulieren, was der Aktion „Starten“ im Simulationsmodus entspricht
-  * Wecken, was der Aktion „Vorgezogene Ausführung der ausstehenden Aufgaben“ entspricht
+  * Bereinigung, die der Aktion Löschverlauf entspricht
+  * Simulieren, was der Aktion entspricht Starten im Simulationsmodus
+  * Wake up entspricht der Aktion Ausstehende Aufgaben jetzt ausführen
   * Unbedingter Stopp
 
   Weiterführende Informationen zu Workflows finden Sie auf [dieser Seite](../../automation/workflow/about-workflows.md).

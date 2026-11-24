@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
 workflow-type: tm+mt
 source-wordcount: '1639'
-ht-degree: 93%
+ht-degree: 91%
 ---
 # Verwalten von Echtzeit-Interaktionen
 
@@ -44,7 +44,7 @@ Interaction ermöglicht Ihnen die Erstellung und Verwaltung eines Angebotskatalo
 
 ![](assets/interaction-cycle.png)
 
-Zuerst erfolgt ein Kontakt zwischen einem Kunden und einem Unternehmen über einen Kommunikationskanal. Dabei kann es sich um eine Website (ausgehende Interaktion) oder eine E-Mail, SMS, Push-Benachrichtigung (eingehende Interaktionen) handeln. [Weitere Informationen](#interaction-types)
+Zunächst erfolgt ein Kontakt zwischen einem Kunden und einem Unternehmen über einen Kommunikationskanal: Es kann sich um eine Website (eingehende Interaktion), eine E-Mail, SMS, Push-Benachrichtigung (ausgehende Interaktionen) handeln. [Weitere Informationen](#interaction-types)
 
 Dieser Kontakt führt zu einem Aufruf des Angebotsmoduls. (1)
 

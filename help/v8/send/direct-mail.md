@@ -27,7 +27,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 86%
@@ -133,7 +133,7 @@ Dabei stehen zwei Modi zur Verfügung:
 
 ## Versand starten{#start-delivery}
 
-Nachdem Sie die Extraktionsdatei validiert haben, klicken Sie auf **Absendung bestätigen**. Über eine Bestätigungsnachricht können Sie den Versand starten.
+Nachdem Sie die Extraktionsdatei validiert haben, klicken Sie auf **Versand bestätigen**. Über eine Bestätigungsnachricht kann der Versand gestartet werden.
 
 Mit der Bestätigung wird die Extraktion der Daten in die angegebene Datei gestartet.
 

@@ -21,10 +21,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 96%
+ht-degree: 95%
 ---
 # Wichtige Schritte zum Erstellen einer Umfrage{#getting-started-with-surveys}
 
@@ -141,7 +141,7 @@ Im nachfolgenden Beispiel wird das Profil aktualisiert, wenn beim Speichern (Bes
 
 ![](assets/s_ncs_admin_survey_save_edit.png)
 
-Wählen Sie zum Bestätigen **[!UICONTROL OK]** und danach **[!UICONTROL Speichern]** aus, um die Umfrage zu speichern.
+Klicken Sie **[!UICONTROL Bestätigung]** OK und anschließend auf **[!UICONTROL Speichern]**, um die Umfrage zu speichern.
 
 ## Schritt 6: Veröffentlichen der Seiten {#step-6---publishing-the-pages}
 

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 83%
+ht-degree: 79%
 ---
 # Verbinden von Campaign mit Ihren Lösungen{#gs-ac-connectors}
 
@@ -73,7 +73,7 @@ Sie können Ihre Adobe Campaign-Plattform mit Ihren **CRM-Systemen von Drittanbi
 Aktivieren Sie Ihre CRM-Daten für kanalübergreifende Kommunikation: Erfahren Sie, wie Sie Kontakte von Ihrem CRM-System an Adobe Campaign weitergeben und wiederum Kampagnendaten von Adobe Campaign mit Ihrem CRM-System teilen können.
 CRM-Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adobe Campaign bietet einen dedizierten Assistenten zur Erfassung und Auswahl aus den im CRM verfügbaren Tabellen. Damit ist eine bidirektionale Synchronisation gewährleistet, die sicherstellt, dass die Daten in den Systemen jederzeit aktuell sind.
 
-Auf [dieser Seite](crm.md) erfahren Sie, wie Sie Campaign mit Microsoft Dynamics 365 und Salesforce.com integrieren können.
+Erfahren Sie auf [&#x200B; Seite , wie Sie Campaign mit Microsoft Dynamics 365 und Salesforce.com &#x200B;](crm.md).
 
 ## Verbinden von Drittanbietern mit Federated Data Access{#gs-fda}
 

@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1531'
-ht-degree: 95%
+ht-degree: 92%
 ---
 # Anpassen von Cubes{#cube-custom}
 
@@ -40,7 +40,7 @@ Nutzen Sie die Datenklassierung, um die Anzeige der Daten zu vereinfachen, indem
 
 Insgesamt sind drei Klassierungstypen möglich:
 
-1. Verwenden manuell definierter Wertebereiche. Beispielweise Alter, durchschnittlicher Warenkorb, Anzahl der geöffneten Sendungen usw.) Weitere Informationen hierzu finden Sie unter [Klassen manuell definieren](#defining-each-bin).
+1. Verwenden manuell definierter Wertebereiche. Beispielsweise Alter, durchschnittlicher Warenkorb, Anzahl der geöffneten Sendungen usw. Weiterführende Informationen hierzu finden Sie unter [Klassen definieren](#defining-each-bin).
 1. Dynamisch, abhängig von den Werten einer [Auflistung](../config/enumerations.md): Nur die in der Auflistung enthaltenen Werte anzeigen, alle anderen Werte werden in „Sonstige“ gruppiert. Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](#dynamically-managing-bins).
 1. Verwenden von Wertebereichen, wobei alle anderen gruppiert werden. Beispielsweise 18- bis 25-Jährige, 26- bis 59-Jährige und andere. Weitere Informationen hierzu finden Sie unter [Wertebereiche anzeigen](#creating-value-ranges).
 
@@ -139,7 +139,7 @@ Weitere Informationen über Aufzählungen finden Sie auf [dieser Seite](../../v8
 
 Cubes bieten die Möglichkeit, Daten vor der eigentlichen Verwendung zu aggregieren.
 
-Aggregate sind bei der Bearbeitung großer Datenmengen nützlich. Sie werden automatisch entsprechend den im Workflow-Feld definierten Parametern aktualisiert, um die zuletzt abgerufenen Daten in die Indikatoren zu integrieren.
+Aggregate sind bei der Bearbeitung großer Datenmengen nützlich. Sie werden automatisch auf der Grundlage der im entsprechenden Workflow-Feld definierten Einstellungen aktualisiert, um die zuletzt erfassten Daten in die Indikatoren zu integrieren
 
 Aggregate werden im entsprechenden Tab des Cubes definiert.
 

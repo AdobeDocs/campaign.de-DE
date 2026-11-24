@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 85%
+ht-degree: 84%
 ---
 # Erstellen und Verwalten von Testprofilen {#create-test-profiles}
 
@@ -132,7 +132,7 @@ Klicken Sie auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]** und a
 
 ## Testadressen und benutzerdefinierte Tabelle {#using-an-external-recipient-table}
 
-Wenn es sich bei der Versandtabelle um eine externe Tabelle handelt, müssen Sie zusätzliche Konfigurationen vornehmen. Das **[!UICONTROL nms:seedmember]**-Schema muss erweitert werden. Es wird eine Registerkarte zu den Testadressen hinzugefügt, um die entsprechenden Felder zu definieren
+Wenn es sich bei der Versandtabelle um eine externe Tabelle handelt, müssen Sie zusätzliche Konfigurationen vornehmen. Das **[!UICONTROL nms:seedmember]**-Schema muss erweitert werden. Den Testadressen wird eine Registerkarte hinzugefügt, auf der die entsprechenden Felder definiert werden.
 
 Geben Sie in diesem Fall die Testadressen direkt in den jeweiligen Feldern der entsprechenden Registerkarte auf Ebene des Versands ein oder importieren Sie die Adressenvorlagen.
 

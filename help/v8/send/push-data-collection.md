@@ -23,10 +23,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 85%
+source-wordcount: '1553'
+ht-degree: 83%
 ---
 # Überarbeitete Konfiguration für Push-Benachrichtigungen {#push-notifications-config}
 
@@ -100,7 +100,7 @@ Die Registrierung der Push-Anmeldedaten für Apps ist erforderlich, damit Adobe 
 
 1. Stellen Sie die **[!UICONTROL App-ID (Android-Paketname)]** bereit. Normalerweise ist der Paketname die App-ID in Ihrer `build.gradle`-Datei.
 
-1. Wechseln Sie zu **[!UICONTROL Push-Anmeldedaten]**, um Ihre Anmeldedaten hinzuzufügen.
+1. Schalten Sie **[!UICONTROL Push-Anmeldedaten]** ein, um Ihre Anmeldedaten hinzuzufügen.
 
 1. Ziehen Sie die FCM-Push-Anmeldedaten per Drag-und-Drop in den Arbeitsbereich. Weitere Informationen zum Abrufen der Push-Anmeldeinformationen finden Sie in der [Dokumentation zu Google](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
@@ -158,7 +158,7 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Abonnementparameter]**, um die Zuordnung mit einer Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** definieren.
 
-1. Navigieren Sie zur Registerkarte **[!UICONTROL Töne]**, um einen Ton festzulegen, der wiedergegeben werden soll. Klicken Sie auf **[!UICONTROL Hinzufügen]** und füllen Sie das Feld **[!UICONTROL Interner Name]** aus, das den Namen der in die Anwendung eingebetteten Datei oder den Namen des Systemtons enthalten muss.
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Töne]**, um einen Ton festzulegen, der wiedergegeben werden soll. Klicken Sie **[!UICONTROL Hinzufügen]** und füllen Sie das Feld **[!UICONTROL Interner Name]** aus, das den Namen der in die Anwendung eingebetteten Datei oder den Namen des Systemtons enthalten muss.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**, um mit dem Konfigurieren der Entwicklungsanwendung zu beginnen.
 

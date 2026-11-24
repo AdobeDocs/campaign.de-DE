@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
 workflow-type: tm+mt
 source-wordcount: '2210'
-ht-degree: 96%
+ht-degree: 95%
 ---
 # Angebot auf einem Inbound-Kanal{#offers-on-an-inbound-channel}
 
@@ -415,7 +415,7 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
    ![](assets/offer_inbound_fallback_example_049.png)
 
-   Die URL enthält den internen Namen (**liveRcp**) der identifizierten Umgebung.
+   Die URL enthält **EnvNeobankIdnRecip**, den internen Namen der identifizierten Umgebung.
 
 Wenn Sie die Web-Seite öffnen, können Sie mit dem Skript die Interaction-Engine aufrufen, um den Inhalt von Angeboten in den relevanten Bereichen der Web-Seite anzuzeigen. Mit nur einer Abfrage des Adobe Campaign-Servers erkennt das Modul die auszuwählende Umgebung, Platzierung und Angebotskategorie.
 

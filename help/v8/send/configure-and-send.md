@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 93%
@@ -103,7 +103,7 @@ Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) st
 
 ### Überwachen von Schüben {#monitor-waves}
 
-Öffnen Sie die Versand-Logs, um Ihre Sendungen zu überwachen. Siehe [diese Seite](send.md).
+Öffnen Sie die Versand-Logs, um Ihre Sendungen zu überwachen. Weitere Informationen finden Sie auf [dieser Seite](send.md).
 
 Die Versandlogs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
 

@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 83%
+ht-degree: 78%
 ---
 # Auswählen der Zielgruppe für den SMS-Versand {#sms-audience}
 
@@ -41,7 +41,7 @@ In den meisten Fällen wird die Hauptzielgruppe eines Versands aus der Adobe Cam
 
 Gehen Sie wie folgt vor, um die Zielgruppe für Ihren Versand auszuwählen:
 
-1. Klicken Sie im Versandeditor auf den Link **[!UICONTROL An]**. Daraufhin wird das Fenster **[!UICONTROL Auswahl der Zielgruppe]** geöffnet:
+1. Klicken Sie im Versand-Editor auf den Link **[!UICONTROL An]**. Daraufhin wird das Fenster **[!UICONTROL Auswahl der Zielgruppe]** geöffnet:
 
 1. Da die Zielgruppe in der Adobe Campaign-Datenbank gespeichert ist, wählen Sie auf der Registerkarte **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL In der Datenbank definiert]** aus.
 
@@ -72,7 +72,7 @@ Gehen Sie wie folgt vor, um die Zielgruppe für Ihren Versand auszuwählen:
 
    Mit der Option **[!UICONTROL Empfänger von diesem Segment ausschließen]** können Sie Empfängerinnen und Empfänger als Zielgruppe auswählen, die nicht den definierten Zielkriterien entsprechen. Um diese Option zu verwenden, aktivieren Sie das entsprechende Kontrollkästchen und wenden Sie dann die Zielgruppenbestimmung an (wie zuvor definiert), um die resultierenden Profile auszuschließen.
 
-1. Geben Sie den Namen Ihrer Zielgruppe in das Feld „Titel“ ein und klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]**, um Ihre Zielgruppe zu validieren.
+1. Geben Sie den Namen Ihrer Audience im Feld Titel ein und klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]**, um Ihre Audience zu validieren.
 
    ![](assets/audience_finish.png){zoomable="yes"}
 

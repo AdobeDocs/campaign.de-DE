@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '2365'
-ht-degree: 99%
+source-wordcount: '2368'
+ht-degree: 97%
 ---
 # Erstellen eines Rich-Push-Versands in Android {#rich-push}
 
@@ -159,7 +159,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
    * **[!UICONTROL Automatisch]**: Die Bilder werden automatisch in vordefinierten Intervallen als Folien wiedergegeben.
    * **[!UICONTROL Manuell]**: Benutzende können manuell zwischen den Folien streichen, um durch die Bilder zu navigieren.
 
-1. Aktivieren Sie die Option **[!UICONTROL Filmstreifen]** aus der Dropdown-Liste **[!UICONTROL Layout]**, um die Vorschau der vorherigen und der nächsten Bilder neben der Hauptfolie einzuschließen.
+1. Wählen Sie aus **[!UICONTROL Dropdown]** Layout die Option **[!UICONTROL Filmstreifen]** aus, um neben der Hauptfolie eine Vorschau des vorherigen und nächsten Bildes anzuzeigen.
 
 1. Klicken Sie auf **[!UICONTROL Bild hinzufügen]** und geben Sie Ihre Bild-URL, Ihren Text und Ihre Aktions-URL ein.
 
@@ -240,7 +240,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
-1. Geben Sie im Menü **[!UICONTROL Produktkatalogoptionen]** die folgenden Optionen ein:
+1. Füllen **[!UICONTROL im Menü]** Produktkatalogoptionen“ die folgenden Optionen aus:
 
    * **[!UICONTROL Text der Aktionsschaltfläche]**: Text, der auf der Schaltfläche angezeigt wird.
    * **[!UICONTROL Textfarbe der Aktionsschaltfläche]**: Farbe des Textes der Aktionsschaltfläche.
@@ -284,7 +284,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    ![](assets/rich_push_rating_3.png)
 
-1. Klicken Sie im Menü **[!UICONTROL Produktbewertungselemente]** auf **[!UICONTROL Hinzufügen]**, geben Sie Ihre **[!UICONTROL Link-URL]** ein und wählen Sie Ihren **[!UICONTROL Link-Typ]** aus.
+1. Klicken Sie im Menü **[!UICONTROL Produktbewertungselemente]** auf **[!UICONTROL Hinzufügen]** und geben Sie Ihren **[!UICONTROL Link-URI]** ein und wählen Sie Ihren **[!UICONTROL Link-Typ]**.
 
    * **[!UICONTROL Web-URL]**: Web-URLs leiten Benutzende zu Online-Inhalten weiter. Beim Anklicken öffnen sie den Standard-Webbrowser des Geräts und navigieren zu der angegebenen URL.
 

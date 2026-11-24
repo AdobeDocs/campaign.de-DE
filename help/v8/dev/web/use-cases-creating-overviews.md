@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1037'
-ht-degree: 97%
+ht-degree: 95%
 ---
 # Anwendungsbeispiele: Übersichten erstellen{#use-cases-creating-overviews}
 
@@ -140,7 +140,7 @@ Wenn Sie in der Übersicht eine Liste konfigurieren, können Sie für jeden Eint
 
    ![](assets/s_ncs_configuration_webapp_detail.png)
 
-1. Fügen Sie im Tab **[!UICONTROL Daten]** die Optionen **[!UICONTROL Primärschlüssel]**, **[!UICONTROL interner Name]** und **[!UICONTROL Beschreibung]** hinzu und wählen Sie für jede dieser Optionen **[!UICONTROL Ausgeblendetes Feld]** aus.
+1. Fügen Sie auf der Registerkarte **[!UICONTROL Daten]** die Spalten **[!UICONTROL Primärer Schlüssel]** , **[!UICONTROL Interner Name]** und **[!UICONTROL Beschreibung]** hinzu und wählen Sie die Option **[!UICONTROL Ausgeblendetes Feld]** für jede Spalte aus.
 
    ![](assets/s_ncs_configuration_webapp_detail002.png)
 

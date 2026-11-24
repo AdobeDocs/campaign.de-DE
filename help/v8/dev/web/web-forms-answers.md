@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 96%
+source-wordcount: '907'
+ht-degree: 93%
 ---
 # Antworten in Webformularen{#web-forms-answers}
 
@@ -99,19 +99,19 @@ Wenn der Benutzer ein Nutzfahrzeug auswählt, bietet das Webformular folgende Op
 
 Die bereitgestellten Antworten für jedes Formular können in Feldern oder Titeln wiederverwendet werden. Die folgenden Syntaxen müssen verwendet werden:
 
-* Für Inhalte, die in einem Datenbankfeld gespeichert werden:
+* Für Inhalte, die in einem Feld der Datenbank gespeichert sind:
 
   ```
   <%=ctx.recipient.@field name%
   ```
 
-* Für Inhalte, die in einer lokalen Variablen gespeichert werden:
+* Für Inhalte, die in einer lokalen Variablen gespeichert sind:
 
   ```
   <%= ctx.vars.variable name %
   ```
 
-* Für Inhalte, die in einem HTML-Textfeld gespeichert werden:
+* Für Inhalte, die in einem HTML-Textfeld gespeichert sind:
 
   ```
   <%== HTML field name %
