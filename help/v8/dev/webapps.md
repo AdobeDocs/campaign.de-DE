@@ -42,7 +42,7 @@ ht-degree: 59%
 
 Adobe Campaign verfügt über ein Grafikmodul zur Definition und Veröffentlichung von **Web-Formularen**, um Seiten mit Eingabe- und Auswahlfeldern zu erstellen, die Daten aus der Datenbank enthalten können. Auf diese Weise können Sie Web-Seiten entwerfen und posten, auf die Benutzer zugreifen können, um Informationen anzuzeigen oder einzugeben.
 
-Erfahren Sie, wie Sie Web-Formulare in erstellen [ veröffentlichen (Erste Schritte mit Web-Formularen](web/about-web-forms.md).
+Erfahren Sie, wie Sie Web-Formulare in erstellen [&#x200B; veröffentlichen (Erste Schritte mit Web-Formularen](web/about-web-forms.md).
 
 ![Beispiel eines Web-Formulars für ein E-Mail-Newsletter-Abonnement mit Feldern für E-Mail, Name und Land und der Schaltfläche Abonnieren.](assets/sample.png)
 
@@ -50,4 +50,4 @@ Adobe Campaign ermöglicht es Ihnen, mit Daten aus der Datenbank dynamische und 
 
 Sie können Seiten erstellen, wie ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare mit Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. Diese Funktionalität ermöglicht Ihnen das Entwerfen und Posten von Web-Seiten, auf denen Benutzende Informationen suchen oder eingeben können.
 
-Erfahren Sie, wie Sie Web-Anwendungen in erstellen [ veröffentlichen (Erste Schritte mit Web-Anwendungen](web/about-web-applications.md).
+Erfahren Sie, wie Sie Web-Anwendungen in erstellen [&#x200B; veröffentlichen (Erste Schritte mit Web-Anwendungen](web/about-web-applications.md).

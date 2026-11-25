@@ -39,7 +39,7 @@ Für jedes Eingabefeld in einem Formular sind die folgenden Speicheroptionen ver
 
 * **[!UICONTROL Empfänger bearbeiten]**
 
-  Sie können ein Feld der Datenbank auswählen: Die Antworten der Benutzer werden in diesem Feld gespeichert. Für jeden Benutzer wird nur der zuletzt eingegebene Wert gespeichert und seinem Profil hinzugefügt. Siehe &quot;[ in der Datenbank](#storing-data-in-the-database).
+  Sie können ein Feld der Datenbank auswählen: Die Antworten der Benutzer werden in diesem Feld gespeichert. Für jeden Benutzer wird nur der zuletzt eingegebene Wert gespeichert und seinem Profil hinzugefügt. Siehe &quot;[&#x200B; in der Datenbank](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 

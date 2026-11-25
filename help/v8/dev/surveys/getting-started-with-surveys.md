@@ -30,7 +30,7 @@ ht-degree: 73%
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
 
 
 
@@ -107,7 +107,7 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
   Um eine Frage zu erstellen, rechtsklicken Sie auf das letzte Element im Baum und wählen Sie **[!UICONTROL Container > Frage]** aus oder klicken Sie auf das Symbol **[!UICONTROL Container]** und wählen Sie danach **[!UICONTROL Frage]** aus.
 
-  ![Seiteneditor mit geöffnetem Menü „Container“ und ausgewählter Frage unterhalb der Felder Name, Kontonummer und E-Mail ](assets/s_ncs_admin_survey_add_qu.png)
+  ![Seiteneditor mit geöffnetem Menü „Container“ und ausgewählter Frage unterhalb der Felder Name, Kontonummer und E-Mail &#x200B;](assets/s_ncs_admin_survey_add_qu.png)
 
   Geben Sie den Titel der Frage ein und fügen Sie die Antwortfelder als Unterverzweigung der Frage ein. Beim Erstellen des Antwortfeldes muss der mit der Frage verknüpfte Knoten ausgewählt sein. Fügen Sie eine **[!UICONTROL Dropdown-Liste]** mithilfe des Symbols **[!UICONTROL Auswahl-Steuerelemente]** oder durch Rechtsklick hinzu, wie unten dargestellt:
 

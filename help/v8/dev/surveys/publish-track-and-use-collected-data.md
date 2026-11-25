@@ -31,7 +31,7 @@ ht-degree: 71%
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
 
 
 
@@ -175,7 +175,7 @@ Bearbeiten Sie die Aufspaltungsbox, um sie zu konfigurieren:
 
 * Wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus und beschränken Sie die Anzahl der Datensätze auf fünf.
 
-  ![Schritt zur Begrenzung der Datensatzanzahl mit der Einstellung Maximale Größe auf 5 und der Schaltfläche Beenden ](assets/s_ncs_admin_survey_responses_wf_box_9.png)
+  ![Schritt zur Begrenzung der Datensatzanzahl mit der Einstellung Maximale Größe auf 5 und der Schaltfläche Beenden &#x200B;](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
 * Wählen Sie **[!UICONTROL Beenden]** aus und starten Sie dann den Workflow neu, um die Zielgruppenbestimmung zu validieren.
 

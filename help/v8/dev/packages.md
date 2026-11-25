@@ -60,7 +60,7 @@ Sie können Daten-Packages verwenden, um benutzerdefinierte Plattformeinstellung
 
 In Campaign-Datenpaketen werden Entitäten der Adobe Campaign-Datenbank in XML-Dateien angezeigt. In einem Daten-Package wird jede Entität mit allen Daten dargestellt.
 
-Auf dieser Seite werden **benutzerdefinierte** Datenpakete beschrieben, die Sie erstellen und verwalten. Die Pakete, die die Campaign-Funktionen bereitstellen **sind integrierte Pakete** die von Adobe installiert und verwaltet werden. Weitere Informationen finden [ unter „Integrierte Pakete](../architecture/built-in-packages.md).
+Auf dieser Seite werden **benutzerdefinierte** Datenpakete beschrieben, die Sie erstellen und verwalten. Die Pakete, die die Campaign-Funktionen bereitstellen **sind integrierte Pakete** die von Adobe installiert und verwaltet werden. Weitere Informationen finden [&#x200B; unter „Integrierte Pakete](../architecture/built-in-packages.md).
 
 Das Prinzip der **Daten-Packages** besteht darin, eine Datenkonfiguration zu exportieren und in eine andere Adobe Campaign-Umgebung zu integrieren. In diesem [Abschnitt](#data-package-best-practices) erfahren Sie, wie Sie einen konsistenten Satz von Daten-Packages aufrechterhalten.
 
@@ -142,7 +142,7 @@ Gehen Sie wie folgt vor, um mehrere Objekte in ein Daten-Package zu exportieren:
 
    >[!NOTE]
    >
-   >Der Abfrage-Editor wird unter &quot;[ einer Abfrage“ ](../../automation/workflow/query.md#creating-a-query).
+   >Der Abfrage-Editor wird unter &quot;[&#x200B; einer Abfrage“ &#x200B;](../../automation/workflow/query.md#creating-a-query).
 
 1. Klicken Sie auf **[!UICONTROL Weiter]** und legen Sie die Sortierreihenfolge für die exportierten Daten fest.
 
@@ -306,7 +306,7 @@ Klicken Sie auf **[!UICONTROL Weiter]** und **[!UICONTROL Starten]**, um den Imp
 
 ### Integrierte Packages {#install-a-standard-package}
 
-Adobe installiert und verwaltet die integrierten Packages in Campaign v8. Weitere Informationen finden [ unter „Integrierte Pakete](../architecture/built-in-packages.md).
+Adobe installiert und verwaltet die integrierten Packages in Campaign v8. Weitere Informationen finden [&#x200B; unter „Integrierte Pakete](../architecture/built-in-packages.md).
 
 ## Best Practices für Daten-Packages {#data-package-best-practices}
 
