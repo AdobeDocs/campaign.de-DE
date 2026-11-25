@@ -191,7 +191,7 @@ Anschließend werden wir die von der Vorlage geerbte Abfrage verfeinern, um eine
 
    ![Abfragefenster bearbeiten, das die Hypothese nach dem Produktnamen filtert, der Bekleidung entspricht](assets/response_hypothesis_delivery_example_006.png)
 
-   Über den Tab **[!UICONTROL Bearbeiten > Messung > Messhypothesen]** der Kampagne können Sie sicherstellen, dass die Hypothese dem Versand zugeordnet wurde.****
+   Über den Tab **[!UICONTROL Bearbeiten > Messung > Messhypothesen]** der Kampagne können Sie sicherstellen, dass die Hypothese dem Versand zugeordnet wurde.**&#x200B;**
 
    ![Abschnitt „Kampagnenmessung“, Registerkarte „Messhypothesen“, auf der die Hypothesen zu Käufen für einen Versand aufgelistet sind](assets/response_hypothesis_delivery_example_008.png)
 

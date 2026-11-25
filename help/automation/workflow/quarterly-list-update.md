@@ -48,6 +48,6 @@ Da diese Kampagnen zu Beginn jeder Saison gestartet werden, um relevante sportli
 1. Wählen Sie im nächsten Bildschirm die Monate März, Juni, September und Dezember aus. Wählen Sie als Tag den 20. des Monats und geben Sie die Uhrzeit an, an der der Workflow gestartet werden soll.
 1. Geben Sie abschließend den Gültigkeitszeitraum der Abfrage an. Im vorliegenden Beispiel wurde **[!UICONTROL Dauerhaft gültig]** ausgewählt.
 
-1. Konfigurieren Sie nun die Aktivität Listen-Update (wie im Abschnitt ](list-update.md)Listen-Update[ beschrieben).
+1. Konfigurieren Sie nun die Aktivität Listen-Update (wie im Abschnitt [&#128279;](list-update.md)Listen-Update beschrieben).
 
 Der Workflow startet automatisch kurz vor Saisonbeginn. Die Liste wird jeweils mit den neuen Angebotsempfangenden aktualisiert.

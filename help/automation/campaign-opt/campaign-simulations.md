@@ -140,7 +140,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 1. Die Unterregisterkarte **[!UICONTROL Warnungen]** enthält alle Warnhinweise, die während der Simulation generiert wurden. Warnhinweise können bei Überschreitung der Kapazität gesendet werden (wenn beispielsweise die Zielgruppe mehr Empfangende enthält, als die festgelegte Kapazität zulässt).
 1. In der Unterregisterkarte **[!UICONTROL Ausschlussanalyse]** können Sie eine Tabelle zur Analyse der Ergebnisse erstellen. Benutzende müssen Variablen auf der x-/y-Achse angeben.
 
-   Ein Beispiel für die Erstellung einer Analysetabelle finden Sie am Ende von [Ergebnisse ](#explore-results).
+   Ein Beispiel für die Erstellung einer Analysetabelle finden Sie am Ende von [Ergebnisse &#x200B;](#explore-results).
 
 ### Anzeigen von Ergebnissen {#view-results}
 

@@ -104,7 +104,7 @@ Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert 
 
 >[!NOTE]
 >
->Weitere Anwendungsfälle für Workflows sind unter &quot;[-Anwendungsfälle“ ](workflow-use-cases.md).
+>Weitere Anwendungsfälle für Workflows sind unter &quot;[-Anwendungsfälle“ &#x200B;](workflow-use-cases.md).
 
 **Beispiel 1**
 

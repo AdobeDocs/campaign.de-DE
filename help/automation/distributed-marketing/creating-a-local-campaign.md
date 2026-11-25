@@ -60,7 +60,7 @@ Benennen Sie die Kampagnenvorlage und erfassen Sie die verfügbaren Felder.
 
 Klicken Sie im Kampagnenfenster auf die Registerkarte **[!UICONTROL Bearbeiten]** und dann auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**.
 
-![Registerkarte Kampagnenbearbeitung mit dem Link Erweiterte Kampagnenparameter im Abschnitt Eigenschaften ](assets/mkt_distr_4.png)
+![Registerkarte Kampagnenbearbeitung mit dem Link Erweiterte Kampagnenparameter im Abschnitt Eigenschaften &#x200B;](assets/mkt_distr_4.png)
 
 ### Web-Schnittstelle {#web-interface}
 
@@ -358,7 +358,7 @@ Für jede Lokalstelle werden Validierungsverantwortliche für die Kampagnenbeste
 
 ### Abbruch einer Bestellung {#canceling-an-order}
 
-Die Zentralstelle hat die Möglichkeit, eine Bestellung über die entsprechende Schaltfläche im Dashboard der Bestellung zu löschen und damit abzubrechen.****
+Die Zentralstelle hat die Möglichkeit, eine Bestellung über die entsprechende Schaltfläche im Dashboard der Bestellung zu löschen und damit abzubrechen.**&#x200B;**
 
 ![Dashboard des Kampagnenkits mit hervorgehobenem Menü „Aktionen“ für eine Bestellung und hervorgehobener Option „Löschen“](assets/mkg_dist_local_op_cancel.png)
 

@@ -288,11 +288,11 @@ In der Benutzeroberfläche sind Validierungsprotokolle verfügbar:
 
 * Im Validierungsprotokoll der Kampagne, Unterregisterkarte **[!UICONTROL Validierungen]** der Registerkarte **[!UICONTROL Bearbeiten > Audit]**:
 
-  ![ Unterregisterkarte Kampagne bearbeiten > Audit > Validierungen , in der das Validierungsprotokoll mit Versand, Aktion, Typ und Genehmiger aufgeführt ist.](assets/approval-tracking-from-campaign.png)
+  ![&#x200B; Unterregisterkarte Kampagne bearbeiten > Audit > Validierungen , in der das Validierungsprotokoll mit Versand, Aktion, Typ und Genehmiger aufgeführt ist.](assets/approval-tracking-from-campaign.png)
 
 * Im Versandprotokoll der Kampagne, Unterregisterkarte **[!UICONTROL Sendungen]** der Registerkarte **[!UICONTROL Bearbeiten > Audit]**:
 
-  ![ Unterregisterkarte Kampagne bearbeiten > Audit > Sendungen , auf der jeder Versand mit seinem Zielgruppenbestimmungs- und Inhaltsstatus aufgelistet ist.](assets/approval-tracking-from-campaign-deliveries.png)
+  ![&#x200B; Unterregisterkarte Kampagne bearbeiten > Audit > Sendungen , auf der jeder Versand mit seinem Zielgruppenbestimmungs- und Inhaltsstatus aufgelistet ist.](assets/approval-tracking-from-campaign-deliveries.png)
 
 * Der Validierungsstatus jedes Versands kann durch Klicken auf die Option **[!UICONTROL Protokolle ausblenden/anzeigen]** auf der Registerkarte **[!UICONTROL Zusammenfassung]** angezeigt werden.
 

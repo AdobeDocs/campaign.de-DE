@@ -79,7 +79,7 @@ Um diese Begrenzung zu ignorieren, müssen Sie den Wert auf **0** setzen.
 
 ### JavaScript-Code {#js-code-desc}
 
-![Dialogfeld für JavaScript-Code-Aktivität mit der Option Bezeichnung, Ausführung nach und Skript anhalten und Fehler verarbeiten ](assets/javascript_code.png)
+![Dialogfeld für JavaScript-Code-Aktivität mit der Option Bezeichnung, Ausführung nach und Skript anhalten und Fehler verarbeiten &#x200B;](assets/javascript_code.png)
 
 * **[!UICONTROL Script]**: Das auszuführende Script wird in den zentralen Bereich des Editors eingefügt.
 

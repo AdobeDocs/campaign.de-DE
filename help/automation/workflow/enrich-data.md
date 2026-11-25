@@ -39,7 +39,7 @@ ht-degree: 70%
 
 In diesem Anwendungsbeispiel werden mögliche Verwendungen der Aktivität **[!UICONTROL Anreicherung]** in einem Zielgruppen-Workflow beschrieben. Weitere Informationen zur Verwendung der Aktivität **[!UICONTROL Anreicherung]** finden Sie unter [Anreicherung](enrichment.md).
 
-Ein Anwendungsfall zum Anreichern eines E-Mail-Versands mit benutzerdefinierten Datumsangaben ist auch unter [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern“ ](email-enrichment-with-custom-date-fields.md).
+Ein Anwendungsfall zum Anreichern eines E-Mail-Versands mit benutzerdefinierten Datumsangaben ist auch unter [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern“ &#x200B;](email-enrichment-with-custom-date-fields.md).
 
 Den in der Marketing-Datenbank enthaltenen Kontakten soll über eine Webapp ein Preisausschreiben angeboten werden. Die Ergebnisse des Wettbewerbs werden in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** gespeichert. Diese Tabelle steht in Relation mit der Tabelle der Kontakte (**[!UICONTROL Empfänger]**). Die Tabelle **[!UICONTROL Wettbewerbsergebnisse]** enthält folgende Spalten:
 

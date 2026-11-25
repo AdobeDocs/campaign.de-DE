@@ -73,7 +73,7 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
    Der **Datei-Wächter** sammelt Dateien und sendet sie auf den Adobe Campaign-Server.
 
-   Die Aktivität **Laden (Datei)** lädt die gesammelten Daten in die Arbeitstabelle des Workflows. Weitere Informationen zu dieser Aktivität finden Sie unter [ (Datei)](data-loading-file.md).
+   Die Aktivität **Laden (Datei)** lädt die gesammelten Daten in die Arbeitstabelle des Workflows. Weitere Informationen zu dieser Aktivität finden Sie unter [&#x200B; (Datei)](data-loading-file.md).
 
 1. Konfigurieren Sie die Aktivität **Datei-Wächter** so, dass Textdateien (&#42;.txt) aus dem ausgewählten Verzeichnis gesammelt werden.
 
@@ -95,7 +95,7 @@ Ziehen Sie die Aktivität „Anreicherung“ in das Diagramm und konfigurieren S
 
 1. Definieren Sie als Hauptmenge die aus der Aktivität **Laden (Datei)** stammenden Daten.
 
-   ![Anreicherungsaktivität mit Laden (Datei) als Primärem Satz sowie den Links Daten hinzufügen und Zusätzliche Daten bearbeiten ](assets/uc2_enrich_enrich1.png)
+   ![Anreicherungsaktivität mit Laden (Datei) als Primärem Satz sowie den Links Daten hinzufügen und Zusätzliche Daten bearbeiten &#x200B;](assets/uc2_enrich_enrich1.png)
 
 1. Klicken Sie auf **[!UICONTROL Daten hinzufügen]** und wählen Sie die Option **[!UICONTROL Relation]** aus.
 
@@ -128,7 +128,7 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die Tabelle „Käufe“ geschrieben werden. Dafür müssen wir eine Aktivität vom Typ **Daten-Update** verwenden.
 
-Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.****
+Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.**&#x200B;**
 
 1. Gehen Sie in den Tab **[!UICONTROL Abstimmung]** der Anreicherung.
 1. Wählen Sie die Zielgruppendimension, im vorliegenden Beispiel also das Schema &#39;Verkauf&#39;, aus.

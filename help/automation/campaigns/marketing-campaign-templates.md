@@ -56,7 +56,7 @@ Sie können die integrierte Vorlage auch **duplizieren**, um ihre Konfiguration 
 
    ![Registerkarte „Neue Kampagnenvorlage bearbeiten“ mit hervorgehobenem Link „Erweiterte Kampagnenparameter“.](assets/campaign-template-parameters.png)
 
-1. Ändern Sie den Wert für **Zielgruppenbestimmungen und Workflows** auf **Ja** und bestätigen Sie diesen. Erfahren Sie, wie Sie in [Typologie von Modulen“ Funktionen ](#typology-of-enabled-modules).
+1. Ändern Sie den Wert für **Zielgruppenbestimmungen und Workflows** auf **Ja** und bestätigen Sie diesen. Erfahren Sie, wie Sie in [Typologie von Modulen“ Funktionen &#x200B;](#typology-of-enabled-modules).
 1. Die Registerkarte **Zielgruppenbestimmungen und Workflows** wird zur Vorlage hinzugefügt. Klicken Sie auf **Workflow hinzufügen...**, geben Sie einen **Titel** ein und klicken Sie auf **OK**.
 1. Erstellen Sie Ihren Workflow entsprechend Ihren Anforderungen.
 
@@ -181,9 +181,9 @@ Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen
 * Geben Sie den **Titel** der Vorlage ein: Der Titel ist obligatorisch und wird als Standardbtitel für alle auf dieser Vorlage basierenden Kampagnen verwendet.
 * Wählen Sie die **Kampagnenart** aus der Dropdown-Liste aus. Die in der Dropdown-Liste angebotenen Werte entsprechen den in der Aufzählung **[!UICONTROL natureOp]** gespeicherten Werten.
 
-  Erfahren Sie, wie Sie in Auflistungen verwalten auf [ Auflistungen zugreifen ](../../v8/config/enumerations.md) sie konfigurieren können.
+  Erfahren Sie, wie Sie in Auflistungen verwalten auf [&#x200B; Auflistungen zugreifen &#x200B;](../../v8/config/enumerations.md) sie konfigurieren können.
 
-* Wählen Sie den **Kampagnentyp** aus: einmalig, wiederkehrend oder periodisch. Standardmäßig gelten Kampagnenvorlagen für einmalige Kampagnen. Wiederkehrende und periodische Kampagnen werden im Abschnitt [Erstellen wiederkehrender und periodischer Kampagnen“ ](recurring-periodic-campaigns.md).
+* Wählen Sie den **Kampagnentyp** aus: einmalig, wiederkehrend oder periodisch. Standardmäßig gelten Kampagnenvorlagen für einmalige Kampagnen. Wiederkehrende und periodische Kampagnen werden im Abschnitt [Erstellen wiederkehrender und periodischer Kampagnen“ &#x200B;](recurring-periodic-campaigns.md).
 * Geben Sie die Dauer der Kampagne an. Dies ist der Zeitraum, über den sich die Kampagne erstrecken wird. Wenn Sie eine auf dieser Vorlage basierende Kampagne erstellen, werden das Start- und Enddatum der Kampagne automatisch ausgefüllt.
 
   Handelt es sich um eine wiederkehrende Kampagne, müssen Start- und Enddatum direkt in der Vorlage angegeben werden.

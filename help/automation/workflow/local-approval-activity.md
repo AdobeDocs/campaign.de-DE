@@ -225,4 +225,4 @@ Folgende Informationen stehen zur Verfügung:
 
 In der Registerkarte **[!UICONTROL Zielgruppe]** des Validierungslogs wird die Liste der potenziellen Empfangenden und ihr Validierungsstatus angezeigt. Sie können diesen Status bei Bedarf ändern.
 
-![Registerkarte „Genehmigungsprotokoll - Zielgruppe“ mit Zielgruppenempfängerinnen und -empfängern mit einem bearbeitbaren Kontrollkästchen für „Ja“ oder „Nein“ ](assets/local_validation_admin_6.png)
+![Registerkarte „Genehmigungsprotokoll - Zielgruppe“ mit Zielgruppenempfängerinnen und -empfängern mit einem bearbeitbaren Kontrollkästchen für „Ja“ oder „Nein“ &#x200B;](assets/local_validation_admin_6.png)

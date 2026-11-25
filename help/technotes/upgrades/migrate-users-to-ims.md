@@ -24,7 +24,7 @@ In diesem Artikel werden die Schritte beschrieben, die zum Migrieren einer techn
 
 Mit Campaign v8 sollten sich alle regulären Anwenderinnen und Anwender bereits mit ihrer Adobe ID über das Adobe-Identitäts-Management-System (IMS) mit der Adobe Campaign Client-Konsole verbinden. Bei einigen älteren Konfigurationen waren jedoch noch Verbindungen mit Benutzername/Kennwort verfügbar. **Dies ist ab Campaign v8.6 nicht mehr zulässig.**
 
-Darüber hinaus ruft die Adobe Campaign-Client-Anwendung zur Verbesserung der Sicherheit und des Authentifizierungsprozesses die Campaign-APIs jetzt direkt über das technische IMS-Konto-Token auf. Die Migration für technische Benutzende wird in einem speziellen Artikel unter [Migration technischer Benutzender zur Adobe Developer-Konsole“ ](ims-migration.md).
+Darüber hinaus ruft die Adobe Campaign-Client-Anwendung zur Verbesserung der Sicherheit und des Authentifizierungsprozesses die Campaign-APIs jetzt direkt über das technische IMS-Konto-Token auf. Die Migration für technische Benutzende wird in einem speziellen Artikel unter [Migration technischer Benutzender zur Adobe Developer-Konsole“ &#x200B;](ims-migration.md).
 
 Diese Änderung gilt seit Campaign v8.5.2 und ist ab Campaign v8.6 **obligatorisch**.
 
@@ -72,7 +72,7 @@ Sie können die IMS-Migration in Ihrer Staging-Umgebung starten, sobald sie auf 
 
 ### Was passiert nach einem Build-Upgrade auf Campaign v8.5.2? {#ims-migration-after-upgrade}
 
-Nachdem Ihre Umgebungen auf Campaign v8.5.2 aktualisiert wurden, können Sie den Wechsel zum [Adobe Identity Management System (IMS) ](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+Nachdem Ihre Umgebungen auf Campaign v8.5.2 aktualisiert wurden, können Sie den Wechsel zum [Adobe Identity Management System (IMS) &#x200B;](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
 
 Eine neue native Benutzererstellung ist weiterhin zulässig, bis die IMS-Migration abgeschlossen ist.
 

@@ -55,11 +55,11 @@ Mit einer Aktivität des Typs **Versand** können Sie eine Versandaktion erstell
 
      ![Workflow, bei dem eine Aktivität Versand erstellen eine zweite Versandaktivität mit dem in der Transition angegebenen Wert befüllt](assets/specified_transition_option_exemple.png)
 
-   * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.****
+   * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.**&#x200B;**
 
      Standardmäßig enthält die Liste die im Ordner **Sendungen** gespeicherten Kommunikationen, die noch nicht abgeschlossen sind. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um auf andere Ordner zugreifen zu können.
 
-     ![Versandabschnitt mit der Option Explizit und dem Symbol Link auswählen neben dem Feld Versand ](assets/diffusion_edit_1.png)
+     ![Versandabschnitt mit der Option Explizit und dem Symbol Link auswählen neben dem Feld Versand &#x200B;](assets/diffusion_edit_1.png)
 
      Wählen Sie im Feld **[!UICONTROL Ordner]** den gewünschten Ordner aus oder klicken Sie auf **[!UICONTROL Unterordner anzeigen]**, um alle in den Unterordnern enthaltenen Sendungen anzuzeigen:
 
@@ -71,7 +71,7 @@ Mit einer Aktivität des Typs **Versand** können Sie eine Versandaktion erstell
 
      ![Wird durch eine Skriptoption mit dem Fenster Skript bearbeiten berechnet, das den Ausdruck vars.deliveryId anzeigt](assets/diffusion_edit_3.png)
 
-   * Erstellen Sie einen neuen Versand. Wählen Sie die gewünschte Versandvorlage aus.****
+   * Erstellen Sie einen neuen Versand. Wählen Sie die gewünschte Versandvorlage aus.**&#x200B;**
 
      ![Neu, basierend auf einer Vorlage erstellt mit einer ausgewählten Versandvorlage und dem Symbol Link bearbeiten](assets/diffusion_edit_4.png)
 

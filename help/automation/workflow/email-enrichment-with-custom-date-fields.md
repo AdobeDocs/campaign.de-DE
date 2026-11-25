@@ -124,7 +124,7 @@ Sie können jetzt Ihre E-Mail-Nachricht mit den benutzerdefinierten Feldern gest
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Klicken Sie auf die Schaltfläche der Personalization-Symbolleiste mit einem Dropdown-Pfeil.](assets/uc_enrichment_16.png). Wählen Sie **[!UICONTROL Erweiterung des Zieldatensatzes]** und danach die zuvor erstellten benutzerdefinierten Gültigkeitsdaten mit der Aktivität **[!UICONTROL Anreicherung]** aus, um Ihre Erweiterung zum formatDate-Ausdruck hinzuzufügen.![
+1. Klicken Sie auf die Schaltfläche der Personalization-Symbolleiste mit einem Dropdown-Pfeil.![&#128279;](assets/uc_enrichment_16.png). Wählen Sie **[!UICONTROL Erweiterung des Zieldatensatzes]** und danach die zuvor erstellten benutzerdefinierten Gültigkeitsdaten mit der Aktivität **[!UICONTROL Anreicherung]** aus, um Ihre Erweiterung zum formatDate-Ausdruck hinzuzufügen.
 
    ![Untermenü-Erweiterung der Personalization-Menüs: Gültigkeitsstartdatum und Gültigkeitsenddatum der Liste.](assets/uc_enrichment_19.png)
 

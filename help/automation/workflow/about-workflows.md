@@ -74,7 +74,7 @@ Jeder Workflow besteht aus:
   >
   >Ein Workflow, der nicht beendete Transitionen enthält, kann weiterhin ausgeführt werden: Beim Erreichen der Transition wird eine Warnmeldung erzeugt und der Workflow wird angehalten, es wird jedoch kein Fehler ausgegeben. Auf diese Weise ist es möglich, einen Workflow zu starten, ohne dass er abgeschlossen ist, und ihn laufend hinzuzufügen.
 
-  Weitere Informationen zum Erstellen eines Workflows finden Sie unter [ eines Workflows](build-a-workflow.md).
+  Weitere Informationen zum Erstellen eines Workflows finden Sie unter [&#x200B; eines Workflows](build-a-workflow.md).
 
 * **[!UICONTROL Arbeitstabellen]**
 

@@ -88,7 +88,7 @@ Für **Besuchende** dagegen enthält die Liste die folgenden Filterdimensionen:
 
 Mit einer **[!UICONTROL Abfrageaktivität]** können Sie grundlegende Daten zum Aufbau der Zielpopulation auswählen. Weitere Informationen hierzu finden Sie unter [Erstellen einer Abfrage](query.md#creating-a-query).
 
-Sie können auch mithilfe der folgenden Aktivitäten Daten aus der Datenbank abfragen und weiter filtern: [Inkrementelle Abfrage ](incremental-query.md), [Liste lesen](read-list.md).
+Sie können auch mithilfe der folgenden Aktivitäten Daten aus der Datenbank abfragen und weiter filtern: [Inkrementelle Abfrage &#x200B;](incremental-query.md), [Liste lesen](read-list.md).
 
 Es ist möglich, zusätzliche Daten zu sammeln, die während des gesamten Lebenszyklus des Workflows weitergeleitet und verarbeitet werden. Weitere Informationen hierzu finden Sie unter [Hinzufügen von Daten](query.md#adding-data) und [Bearbeiten von zusätzlichen Daten](#edit-additional-data).
 
@@ -147,7 +147,7 @@ Mit der Aktivität **[!UICONTROL Aufspaltung]** können Sie Teilmengen aus Krite
 
 Sie können eine Zielgruppe in mehrere Teilmengen unterteilen, indem Sie als Filterbedingungen nur zusätzliche Daten oder aber diese zusätzlich zu den Zielgruppendaten verwenden. Sie können auch externe Daten nutzen, wenn Sie die Option **Federated Data Access** besitzen.
 
-Weitere Informationen hierzu finden Sie unter [ von Teilmengen mithilfe der Aufspaltungsaktivität](#create-subsets-using-the-split-activity).
+Weitere Informationen hierzu finden Sie unter [&#x200B; von Teilmengen mithilfe der Aufspaltungsaktivität](#create-subsets-using-the-split-activity).
 
 ## Segmentieren von Daten {#segment-data}
 

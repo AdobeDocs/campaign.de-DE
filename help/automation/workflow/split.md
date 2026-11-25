@@ -38,7 +38,7 @@ Diese Aktivität löst keine Vereinigung der eingehenden Populationen aus. Wenn 
 >Aufspaltungsvorgänge können nicht für Tabellen mit unterschiedlichen Quellen durchgeführt werden. Zu diesem Zweck müssen Sie eine **Anreicherungsaktivität** vor der **Aufspaltungsaktivität** hinzufügen.
 
 * Ein Beispiel für die verwendete Aufspaltungsaktivität finden Sie unter [Erstellen von Teilmengen mithilfe der Aufspaltungsaktivität](targeting-workflows.md#create-subsets-using-the-split-activity).
-* Im Abschnitt „Workflow für den kanalübergreifenden Versand“ wird ein Beispiel beschrieben, das veranschaulicht, wie die Aufspaltungsaktivität verwendet wird[ um die Zielgruppe mithilfe von Filterbedingungen in verschiedene Populationen ](cross-channel-delivery-workflow.md).
+* Im Abschnitt „Workflow für den kanalübergreifenden Versand“ wird ein Beispiel beschrieben, das veranschaulicht, wie die Aufspaltungsaktivität verwendet wird[&#x200B; um die Zielgruppe mithilfe von Filterbedingungen in verschiedene Populationen &#x200B;](cross-channel-delivery-workflow.md).
 * Ein Beispiel für die Verwendung einer Instanzvariablen in einer Split-Aktivität finden Sie in [JavaScript-Skripten und -Vorlagen](javascript-scripts-and-templates.md).
 
 Konfigurieren Sie die Aktivität, indem Sie im Tab **[!UICONTROL Teilmengen]** jeweils einen Titel und die Auswahlkriterien der Teilmengen angeben. Geben Sie im Tab **[!UICONTROL Allgemein]** die Zielgruppendimension an.
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor:
 
    Wählen Sie nun den Filtertyp aus.
 
-   Die Vorgehensweise ist mit der der Abfrageaktivität identisch.****
+   Die Vorgehensweise ist mit der der Abfrageaktivität identisch.**&#x200B;**
 
    >[!NOTE]
    >
@@ -64,7 +64,7 @@ Gehen Sie wie folgt vor:
 
    ![Registerkarte Untergruppen mit Untergruppe 1, Begrenzung der ausgewählten Datensätze und des Links Bearbeiten , der den Assistenten zur Einschränkung öffnet](assets/s_user_segmentation_partage4.png)
 
-1. **** Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** können Sie weitere Teilmengen definieren.
+1. **&#x200B;**&#x200B;Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** können Sie weitere Teilmengen definieren.
 
    ![Registerkarte „Untergruppen“ mit der Schaltfläche „Hinzufügen“ und den Registerkarten „Untergruppe 1“, „Untergruppe 2“ und „Untergruppe 3“ unten](assets/s_user_segmentation_partage_add.png)
 

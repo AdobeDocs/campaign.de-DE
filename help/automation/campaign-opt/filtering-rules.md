@@ -84,7 +84,7 @@ In diesem Fall wird die Regel nur auf die Sendungen angewandt, die den Kriterien
 
 ## Erstellen und Verwenden einer Filtertypologie {#create-and-use-a-filtering-typology}
 
-Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.****
+Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.**&#x200B;**
 
 ![Typologie, bei der die Typenliste auf Filtern und die Registerkarte Regeln eingestellt ist, auf der die anzuwendenden Filterregeln aufgeführt sind.](assets/campaign_opt_create_typo_filtering.png)
 

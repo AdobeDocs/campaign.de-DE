@@ -39,7 +39,7 @@ ht-degree: 78%
 ## Erstellen einer Abfrage {#creating-a-query}
 
 Mit einer Abfrage können Sie eine Zielgruppe anhand von Kriterien auswählen. Sie können dem Abfrageergebnis einen Segment-Code zuordnen und zusätzliche Daten darin einfügen.
-Erfahren Sie anhand von Anwendungsfällen in „Abfrage [ Empfängertabelle“, wie Sie Abfragen ](querying-recipient-table.md). Siehe auch den Abschnitt über den [Abfrage-Editor](../../v8/start/query-editor.md).
+Erfahren Sie anhand von Anwendungsfällen in „Abfrage [&#x200B; Empfängertabelle“, wie Sie Abfragen &#x200B;](querying-recipient-table.md). Siehe auch den Abschnitt über den [Abfrage-Editor](../../v8/start/query-editor.md).
 
 ![Dialogfeld „Abfrageaktivität“ mit den Feldern „Abfrage bearbeiten“, „Daten hinzufügen“, „Zusätzliche Daten und Ergebnisse bearbeiten“ und „Segment-Code“.](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 

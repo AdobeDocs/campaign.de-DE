@@ -218,7 +218,7 @@ Validierungen einer Zielgruppe oder des Inhalts eines Versands können über den
 
 ![Aktion im Versanddialogfeld in der Web-Benutzeroberfläche mit den Optionen Akzeptieren und Ablehnen und einem Kommentarfeld](assets/web-access-approval.png)
 
-Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden. Weitere Informationen hierzu finden Sie unter [ und Validieren von Sendungen ](marketing-campaign-approval.md#review-and-approve-deliveries).
+Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden. Weitere Informationen hierzu finden Sie unter [&#x200B; und Validieren von Sendungen &#x200B;](marketing-campaign-approval.md#review-and-approve-deliveries).
 
 
 ## Anleitungsvideo {#video}

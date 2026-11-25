@@ -190,4 +190,4 @@ Weitere Informationen hierzu finden Sie im Abschnitt [Validierungsprozess](creat
 
 ## Validieren einer Bestellung {#approving-an-order}
 
-Die Validierung der Bestellung eines partizipativen Kampagnen-Kits entspricht der von lokalen Kampagnen. Siehe &quot;[ einer Bestellung](creating-a-local-campaign.md#approving-an-order).
+Die Validierung der Bestellung eines partizipativen Kampagnen-Kits entspricht der von lokalen Kampagnen. Siehe &quot;[&#x200B; einer Bestellung](creating-a-local-campaign.md#approving-an-order).

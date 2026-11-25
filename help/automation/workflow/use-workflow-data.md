@@ -32,7 +32,7 @@ ht-degree: 79%
 
 Sie können Workflow-Aktivitäten zur Durchführung unterschiedlicher Aufgaben verwenden. Im Folgenden finden Sie Beispiele zur Aktualisierung der Datenbank durch die Erstellung von Listen, die Verwaltung von Abonnements, den Versand von Nachrichten über einen Workflow oder die Anreicherung von Sendungen und ihren Zielgruppen.
 
-Eine Reihe von Workflow-Anwendungsfällen ist unter [Workflow-Anwendungsfälle“ ](workflow-use-cases.md).
+Eine Reihe von Workflow-Anwendungsfällen ist unter [Workflow-Anwendungsfälle“ &#x200B;](workflow-use-cases.md).
 
 ## Lebenszyklus der Arbeitsdaten {#data-life-cycle}
 

@@ -50,7 +50,7 @@ F체r jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Auftr�
 
 ## Nachverfolgen von Sendungen {#delivery-tracking}
 
-Eine Liste der Sendungen ist 체ber die gleichnamige Schaltfl채che in der Kampagnen-Rubrik verf체gbar.****
+Eine Liste der Sendungen ist 체ber die gleichnamige Schaltfl채che in der Kampagnen-Rubrik verf체gbar.**&#x200B;**
 
 ![Versandliste auf der Startseite mit der Dropdown-Liste Status-Filter , die bearbeitet wird, In Bearbeitung und Abgeschlossen](assets/filter-deliveries-from-homepage.png)
 

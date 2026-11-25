@@ -37,7 +37,7 @@ ht-degree: 80%
 
 **Campaign Optimization** ist das Adobe Campaign-Modul, mit dem Sie die Durchführung von Sendungen steuern, filtern und überwachen können. Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
 
-![Wiedergabe-Schaltflächensymbol für das ](assets/do-not-localize/how-to-video.png)-Video[Entdecken Sie diese Funktion im Video](#typologies-video)
+![Wiedergabe-Schaltflächensymbol für das &#x200B;](assets/do-not-localize/how-to-video.png)-Video[Entdecken Sie diese Funktion im Video](#typologies-video)
 
 >[!NOTE]
 >

@@ -72,7 +72,7 @@ Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen
      >
      >Weitere Informationen zur Erstellung und Verwendung von Zusatzspalten finden Sie unter [Daten hinzufügen](query.md#adding-data).
 
-   * Wählen Sie die ursprüngliche Zielgruppendimension aus (vor der Dimensionsänderung), markieren Sie die **[!UICONTROL Kundennummer]** und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]****[!UICONTROL .]**
+   * Wählen Sie die ursprüngliche Zielgruppendimension aus (vor der Dimensionsänderung), markieren Sie die **[!UICONTROL Kundennummer]** und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]**&#x200B;**[!UICONTROL .]**
 
      ![Assistent für zusätzliche Daten mit Postleitzahl aus der Unterstruktur „Standort“, die als Ausgabespalte und Bearbeitungsausdruck hinzugefügt wurde](assets/wf_change-dimension_sample_02.png)
 
