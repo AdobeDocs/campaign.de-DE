@@ -172,7 +172,7 @@ Adobe Campaign bietet Ihnen verschiedene Funktionen zur Datenschutzverwaltung:
 * Datenschutzanfragen (Recht auf Zugriff und Recht auf Vergessenwerden). Siehe [Datenschutzanfragen](#privacy-requests).
 * Abmeldung (Opt-out) vom Verkauf von personenbezogenen Daten (CCPA-spezifisch).
 
-Die wichtigsten Datenschutzfunktionen in Campaign und ein Beispiel der beteiligten Personas werden unter &quot;[ und Personas“ ](#personal-data).
+Die wichtigsten Datenschutzfunktionen in Campaign und ein Beispiel der beteiligten Personas werden unter &quot;[&#x200B; und Personas“ &#x200B;](#personal-data).
 
 ### Einverständnis, Datenbeibehaltung und Benutzerrollen {#consent}
 
@@ -192,7 +192,7 @@ Adobe Campaign bietet zusätzliche Funktionen, mit denen Sie sich als Datenveran
 
 Die Anfragen **Zugriff** und **Löschen** werden unter [Verwalten von Datenschutzanfragen in Campaign](../start/privacy.md) aufgeführt.
 
-Die Implementierungsschritte zum Erstellen dieser Anfragen werden unter [Verwalten von Datenschutzanfragen in Campaign“ ](../start/privacy.md).
+Die Implementierungsschritte zum Erstellen dieser Anfragen werden unter [Verwalten von Datenschutzanfragen in Campaign“ &#x200B;](../start/privacy.md).
 
 ## Tracking-Funktionen {#tracking-capabilities}
 
@@ -292,7 +292,7 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 
 Sie müssen sicherstellen, dass keine authentifizierten Benutzer mit unzureichender Berechtigung auf die verschlüsselten Passwörter zugreifen können. Dazu können Sie den Zugriff entweder auf Passwortfelder oder auf die gesamte Entität einschränken.
 
-Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. Weitere Informationen finden Sie unter [Anzeige von personenbezogenen Daten ](../dev/restrict-pi-view.md).
+Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. Weitere Informationen finden Sie unter [Anzeige von personenbezogenen Daten &#x200B;](../dev/restrict-pi-view.md).
 
 1. Gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL Konfigurieren]** > **[!UICONTROL Datenschemata]**.
 

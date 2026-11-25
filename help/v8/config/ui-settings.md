@@ -45,7 +45,7 @@ In Adobe Campaign können Werte für Felder, die eine Dauer angeben (z. B. Gült
 
 Sie können Ordner zu Campaign Explorer hinzufügen, Ansichten erstellen und Berechtigungen zuweisen.
 
-Erfahren Sie, wie Sie Ordner und Ansichten in [Ordner und Ansichten“ ](../audiences/folders-and-views.md)
+Erfahren Sie, wie Sie Ordner und Ansichten in [Ordner und Ansichten“ &#x200B;](../audiences/folders-and-views.md)
 
 ## Verwalten und Anpassen von Listen {#customize-lists}
 
