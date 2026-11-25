@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 58%
+source-wordcount: '670'
+ht-degree: 40%
 ---
 # Erste Schritte mit Workflows{#gs-workflows}
 
@@ -50,7 +50,7 @@ In einem Workflow wird der Ablauf eines Prozesses definiert, der in einem Workfl
 
 Die Workflow-Vorlage beschreibt die verschiedenen auszuführenden Aufgaben und ihre Verknüpfung. Die Aufgabenvorlagen werden als Aktivitäten bezeichnet und durch Symbole dargestellt. Sie sind durch Transitionen miteinander verbunden.
 
-![](assets/example1.png)
+![Workflow-Diagramm aus zwei Ordnerabfragen über Vereinigung, Anreicherung, Versand und Genehmigung zum Aktualisieren von Daten oder Ende](assets/example1.png)
 
 ## Grundsätze
 
@@ -62,7 +62,7 @@ Jeder Workflow besteht aus:
 
   In einem Workflow-Diagramm kann eine einzelne Aktivität verschiedene Aufgaben auslösen. Dies ist insbesondere der Fall bei Schleifen oder (periodisch) wiederkehrenden Aktionen.
 
-  Alle Workflow-Aktivitäten einschließlich Anwendungsbeispiele finden Sie in [diesem Abschnitt](activities.md).
+  Alle Workflow-Aktivitäten werden unter [Über Workflow-Aktivitäten](activities.md) aufgeführt, einschließlich Anwendungsfällen und Beispielen.
 
 * **[!UICONTROL Transitionen]**
 
@@ -74,22 +74,22 @@ Jeder Workflow besteht aus:
   >
   >Ein Workflow, der nicht beendete Transitionen enthält, kann weiterhin ausgeführt werden: Beim Erreichen der Transition wird eine Warnmeldung erzeugt und der Workflow wird angehalten, es wird jedoch kein Fehler ausgegeben. Auf diese Weise ist es möglich, einen Workflow zu starten, ohne dass er abgeschlossen ist, und ihn laufend hinzuzufügen.
 
-  Weiterführende Informationen zur Erstellung eines Workflows finden Sie in [diesem Abschnitt](build-a-workflow.md).
+  Weitere Informationen zum Erstellen eines Workflows finden Sie unter [&#x200B; eines Workflows](build-a-workflow.md).
 
 * **[!UICONTROL Arbeitstabellen]**
 
   Die Arbeitstabelle enthält alle von der Transition übermittelten Informationen. Jeder Workflow verwendet mehrere Arbeitstabellen. Die in diesen Tabellen übermittelten Daten können beschleunigt und während des gesamten Lebenszyklus des Workflows verwendet werden, sofern sie nicht bereinigt werden. Tatsächlich werden nicht benötigte Tabellen jedes Mal bereinigt, wenn der Workflow passiviert wird, und möglicherweise während der Ausführung der größten Workflows, um eine Überlastung des Servers zu vermeiden.
 
-  Weiterführende Informationen zu Workflow-Daten und Tabellen finden Sie in [diesem Abschnitt](use-workflow-data.md).
+  Weitere Informationen zu Workflow-Daten und -Tabellen finden Sie unter [Verwenden von Workflow-Daten](use-workflow-data.md).
 
 ## Verwandte Abschnitte
 
 In den folgenden Abschnitten finden Sie Anleitungen und Best Practices zur Automatisierung von Prozessen mit Workflows:
 
-* Weiterführende Informationen zu Workflow-Aktivitäten finden Sie auf [dieser Seite](use-workflow-data.md).
-* Informationen zum Erstellen eines Workflows finden Sie in [diesem Abschnitt](build-a-workflow.md).
-* In [diesem Abschnitt](campaign-workflows.md) erfahren Sie, wie Sie Daten mithilfe von Workflows in Campaign importieren.
-* Die Best Practices bei Workflows werden auf [dieser Seite](workflow-best-practices.md) beschrieben.
-* Hinweise zur Workflow-Ausführung finden Sie in [diesem Abschnitt](start-a-workflow.md).
-* Informationen zum Überwachen von Workflows finden Sie auf [dieser Seite](monitor-workflow-execution.md).
-* Erfahren Sie auf [dieser Seite](managing-rights.md), wie Sie Benutzern Zugriff auf Workflows gewähren.
+* Weitere Informationen zu Workflow-Aktivitäten finden Sie unter [Verwenden von Workflow-Daten](use-workflow-data.md).
+* Erfahren Sie, wie Sie einen Workflow in [Workflow erstellen](build-a-workflow.md) erstellen.
+* Erfahren Sie, wie Sie in Campaign mit Workflows Daten importieren können [Workflows-Typ](campaign-workflows.md).
+* Best Practices für Workflows finden Sie unter [Best Practices für Workflows](workflow-best-practices.md).
+* Hinweise zur Workflow-Ausführung finden Sie unter [Workflow starten](start-a-workflow.md).
+* Erfahren Sie, wie Sie Workflows in überwachen [Workflow-Ausführung](monitor-workflow-execution.md).
+* Erfahren Sie, wie Sie Benutzern Zugriff auf die Verwendung von Workflows in [Workflow-Berechtigungen verwalten](managing-rights.md) gewähren.

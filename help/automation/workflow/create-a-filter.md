@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 77%
+source-wordcount: '314'
+ht-degree: 58%
 ---
 # Erstellen von Filtern {#creating-a-filter}
 
@@ -41,19 +41,19 @@ Der Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]*
 
 Beispielsweise kann die Benutzerliste nach **[!UICONTROL Aktiven Konten]** gefiltert werden:
 
-![](assets/query_editor_filter_sample_1.png)
+![Benutzerliste mit geöffnetem Menü „Filter“ und ausgewähltem Filter „Aktive Konten“](assets/query_editor_filter_sample_1.png)
 
 Der entsprechende Filter enthält die Abfrage bezüglich des Werts **[!UICONTROL Gesperrtes Konto]** des **[!UICONTROL Benutzer]**-Schemas:
 
-![](assets/query_editor_filter_sample_2.png)
+![Liste vordefinierter Filter mit ausgewähltem Nach Anmelde- oder Beschriftungsfilter, der Titel, internen Namen und Dokumenttyp anzeigt](assets/query_editor_filter_sample_2.png)
 
 Dieselbe Liste kann mit dem Filter **[!UICONTROL Nach Login oder Titel]** nach dem im Eingabefeld erfassten Wert durchsucht werden:
 
-![](assets/query_editor_filter_sample_3.png)
+![Die Benutzerliste, gefiltert nach der Agentur, die in das Feld Anmelden oder Titel enthält eingegeben wurde, gibt einen Benutzer zurück](assets/query_editor_filter_sample_3.png)
 
 Dieser Filter wird wie folgt konfiguriert:
 
-![](assets/query_editor_filter_sample_4.png)
+![Nach Anmeldung oder Filterdefinition mit drei Filterbedingungen für Bezeichnung, Name und Beschreibung](assets/query_editor_filter_sample_4.png)
 
 Um dem Filter zu entsprechen, muss das Benutzerkonto eine der folgenden Bedingungen erfüllen:
 
@@ -67,7 +67,7 @@ Um dem Filter zu entsprechen, muss das Benutzerkonto eine der folgenden Bedingun
 
 Die Spalte **[!UICONTROL Berücksichtigt wenn]** ermöglicht die Konfiguration von Voraussetzungen dafür, dass die Filterbedingungen zum Tragen kommen. Die Zeichen **$(/tmp/@text)** entsprechen dem Inhalt des dem Filter zugeordneten Eingabefelds:
 
-![](assets/query_editor_filter_sample_5.png)
+![Die Benutzerliste mit der Agentur, die im Feld Anmelden oder Titel eingegeben wurde, enthält das Feld „Wiederkehrende Londoner Agentur“](assets/query_editor_filter_sample_5.png)
 
 Hier ist **$(/tmp/@text)=&#39;Filiale&#39;**.
 

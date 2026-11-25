@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 100%
+source-wordcount: '302'
+ht-degree: 94%
 ---
 # Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage {#quarterly-list-update}
 
@@ -36,7 +36,7 @@ Im folgenden Beispiel wird eine [inkrementelle Abfrage](incremental-query.md) ve
 
 Da diese Kampagnen zu Beginn jeder Saison gestartet werden, um relevante sportliche Aktivitäten anzubieten, werden diese Listen jedes Quartal aktualisiert. Eine empfangende Person darf von dieser Kampagne jedoch nur einmal alle 9 Monate angesprochen werden. So können Sie die Eignungshäufigkeit der empfangenden Person strecken und Aktivitäten für verschiedene Jahreszeiten im Laufe der Jahre anbieten.
 
-![](assets/incremental_query_example.png)
+![Workflow mit einer inkrementellen Abfrageaktivität, die durch die Ergebnisübergabe mit einer Listenaktualisierungsaktivität verknüpft ist](assets/incremental_query_example.png)
 
 1. Erstellen Sie einen neuen Workflow und positionieren Sie eine inkrementelle Abfrage mit anschließendem Listen-Update im Diagramm.
 1. Konfigurieren Sie in der Aktivität die Registerkarte **[!UICONTROL Inkrementelle Abfrage]** (wie im Abschnitt [Erstellen einer Abfrage](query.md#creating-a-query) beschrieben).
@@ -48,6 +48,6 @@ Da diese Kampagnen zu Beginn jeder Saison gestartet werden, um relevante sportli
 1. Wählen Sie im nächsten Bildschirm die Monate März, Juni, September und Dezember aus. Wählen Sie als Tag den 20. des Monats und geben Sie die Uhrzeit an, an der der Workflow gestartet werden soll.
 1. Geben Sie abschließend den Gültigkeitszeitraum der Abfrage an. Im vorliegenden Beispiel wurde **[!UICONTROL Dauerhaft gültig]** ausgewählt.
 
-1. Konfigurieren Sie nun die Aktivität Listen-Update (wie im Abschnitt ](list-update.md)Listen-Update[ beschrieben).
+1. Konfigurieren Sie nun die Aktivität Listen-Update (wie im Abschnitt [&#128279;](list-update.md)Listen-Update beschrieben).
 
 Der Workflow startet automatisch kurz vor Saisonbeginn. Die Liste wird jeweils mit den neuen Angebotsempfangenden aktualisiert.

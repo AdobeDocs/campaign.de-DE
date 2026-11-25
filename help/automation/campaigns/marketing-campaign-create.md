@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 91%
+source-wordcount: '1550'
+ht-degree: 76%
 ---
 # Erstellen von Programmen und Kampagnen{#create-programs-and-campaigns}
 
@@ -36,9 +36,9 @@ Komponenten für die Kampagnenorchestrierung finden Sie auf der Registerkarte **
 
 Ein Marketing-Programm besteht aus Kampagnen, die aus Sendungen, Ressourcen usw. bestehen. In der Kampagne werden alle Informationen zu Sendungen, Budgets, Validierungsverantwortlichen und verknüpften Dokumenten zusammengefasst.
 
-![](assets/campaigns-create-from-home.png)
+![Startseite von Kampagnen mit der Liste Marketing-Kampagnen, der Schaltfläche Erstellen und dem Menü Kampagnenkalender](assets/campaigns-create-from-home.png)
 
-![](assets/do-not-localize/how-to-video.png) [Entdecken Sie Programme und Kampagnen im Video](#video)
+![Wiedergabesymbol für das Video über Programme und Kampagnen](assets/do-not-localize/how-to-video.png) [Entdecken Sie Programme und Kampagnen im Video](#video)
 
 ## Arbeiten mit Programmen und Plänen{#work-with-plan-and-program}
 
@@ -52,18 +52,18 @@ Bevor Sie mit der Erstellung Ihrer Kampagnen und Sendungen beginnen, konfigurier
 1. Klicken Sie mit der rechten Maustaste auf den Ordner, in dem Sie Ihren Plan erstellen möchten.
 1. Wählen Sie **Ordner hinzufügen > Kampagnenverwaltung > Plan** aus.
 
-   ![](assets/create-new-plan-folder.png)
+   ![Menü „Neuen Ordner hinzufügen“ im Explorer, mit ausgewähltem Kampagnenverwaltung > Plan](assets/create-new-plan-folder.png)
 
 1. Benennen Sie den Plan.
 1. Klicken Sie mit der rechten Maustaste auf den neu erstellen Plan und wählen Sie **Eigenschaften...**.
 1. Passen Sie im Tab **Allgemein** die Option **Interner Name** an, um bei Package-Exporten Duplikate zu vermeiden.
 
-   ![](assets/plan-properties.png)
+   ![Dialogfeld „Ordnereigenschaften“, Registerkarte „Allgemein“, mit den Feldern „Bezeichnung“ und „Interner Name“ und der Schaltfläche „Speichern“](assets/plan-properties.png)
 
 1. Klicken Sie auf **Speichern**.
 1. Klicken Sie mit der rechten Maustaste auf den neu erstellen Plan und wählen Sie **Programm-Ordner hinzufügen**.
 
-   ![](assets/program-folder.png)
+   ![Klicken Sie mit der rechten Maustaste auf das Menü im Ordner „Plan“ und wählen Sie „Neuen Ordner &#39;Programm&#39; erstellen“](assets/program-folder.png)
 
 1. Wiederholen Sie die obigen Schritte, um Ihren neuen Programmordner und seinen internen Namen umzubenennen.
 
@@ -76,7 +76,7 @@ Zur Konfiguration und Bearbeitung eines Programms stehen die folgenden Registerk
 
 * Über die Registerkarte **Bearbeiten** kann das Programm konfiguriert und verändert werden (Name, Start- und Enddatum, Budget, verknüpfte Dokumente usw.).
 
-  ![](assets/new-program-edit-tab.png)
+  ![Registerkarte „Programm bearbeiten“ mit Titel, internem Namen, Zeitplandaten, zugehörigem Budget und Zielen](assets/new-program-edit-tab.png)
 
 ## Arbeiten mit Kampagnen{#work-with-campaigns}
 
@@ -86,7 +86,7 @@ Sie können eine Kampagne über die Kampagnenliste erstellen. Um diese Ansicht a
 
 Im Feld **[!UICONTROL Programm]** können Sie das Programm auswählen, dem die Kampagne zugeordnet werden soll. Diese Informationen sind obligatorisch.
 
-![](assets/new-campaign-settings.png)
+![Dialogfeld „Neue Marketing-Kampagne“ mit den Feldern „Vorlage“, „Titel“ und „Programm“ sowie der Schaltfläche „OK“](assets/new-campaign-settings.png)
 
 Kampagnen können auch über den Kampagnen- oder Programmkalender erstellt werden. [Weitere Informationen](#campaign-calendar)
 
@@ -102,7 +102,7 @@ Sie können anschließend die soeben erstellte Kampagne bearbeiten und ihre Para
 
 Mit all diesen Aktionen gelangen Sie jeweils zum Kampagnen-Dashboard.
 
-![](assets/campaigns-dashboard-approve.png)
+![Kampagnen-Dashboard mit dem Menü „Validierung“ auf einem Versand, der die Validierung von Inhalten und die Validierung der Zielgruppe anbietet](assets/campaigns-dashboard-approve.png)
 
 In den folgenden Abschnitten erfahren Sie, wie Sie Ihre Kampagne konfigurieren:
 
@@ -133,17 +133,17 @@ Für jede Kampagne stehen folgende Funktionen zur Verfügung:
 
 Für jede Kampagne werden Aufträge, Ressourcen und Sendungen in einem Dashboard zusammengefasst dargestellt. Auf dieser Benutzeroberfläche können Sie Marketing-Aktionen verwalten und koordinieren.
 
-Mit Adobe Campaign können Sie partizipative Prozesse für die Erstellung und Validierung der unterschiedlichen Etappen Ihrer Kampagnen einrichten: Budget-, Zielgruppen- und Inhaltsvalidierung usw. Diese Orchestrierung wird in [diesem Abschnitt) &#x200B;](marketing-campaign-approval.md).
+Mit Adobe Campaign können Sie partizipative Prozesse für die Erstellung und Validierung der unterschiedlichen Etappen Ihrer Kampagnen einrichten: Budget-, Zielgruppen- und Inhaltsvalidierung usw. Diese Orchestrierung wird unter [Einrichten und Verwalten des Genehmigungsprozesses](marketing-campaign-approval.md) beschrieben.
 
-![](assets/campaigns-dashboard-approval-tab.png)
+![Versandfenster des Kampagnen-Dashboards mit dem Menü „Validierung“, dem Inhalt und dem Zielgruppenbestimmungsstatus](assets/campaigns-dashboard-approval-tab.png)
 
 >[!NOTE]
 >
->Welche Komponenten in einer Kampagne verfügbar sind, hängt von ihrer Vorlage ab. Die Konfiguration von Kampagnenvorlagen wird in [diesem Abschnitt](marketing-campaign-templates.md#campaign-templates) erläutert.
+>Welche Komponenten in einer Kampagne verfügbar sind, hängt von ihrer Vorlage ab. Die Konfiguration von Kampagnenvorlagen wird unter [Erstellen und Konfigurieren von Kampagnenvorlagen](marketing-campaign-templates.md#campaign-templates) beschrieben.
 
 Sobald die Kampagne abgeschlossen ist, können Sie über den Link **[!UICONTROL Berichte]** auf die Kampagnenberichte zugreifen.
 
-![](assets/campaigns-reports-dashboard.png)
+![Registerkarte „Berichte“ im Kampagnen-Dashboard mit Kampagnenberichten wie Kampagnenausgaben und Versandzusammenfassung](assets/campaigns-reports-dashboard.png)
 
 ## Kampagnenkalender {#campaign-calendar}
 
@@ -151,11 +151,11 @@ Der Kampagnenkalender zeigt alle Programme, Pläne, Kampagnen und Sendungen an.
 
 Um einen Plan, ein Programm, eine Kampagne oder einen Versand zu bearbeiten, navigieren Sie im Kalender zu dem entsprechenden Namen und verwenden Sie dann den Link **[!UICONTROL Öffnen]**. Es öffnet sich eine neue Registerkarte, die folgendermaßen aussieht:
 
-![](assets/campaign-calendar.png)
+![Kampagnenkalender mit einem Popup für eine Kampagne, in dem der Link „Öffnen“, der Zeitplan und der Status angezeigt werden](assets/campaign-calendar.png)
 
 Sie können die im Kampagnenkalender angezeigten Informationen filtern. Klicken Sie hierzu auf den Link **[!UICONTROL Filter]** und wählen Sie die Filterkriterien aus.
 
-![](assets/campaign_planning_filter.png)
+![Link Kampagnenkalender-Filter zum Erweitern der Filteroptionen für Kampagnen, Sendungen, Aufgaben und Programme](assets/campaign_planning_filter.png)
 
 >[!NOTE]
 >
@@ -167,11 +167,11 @@ Die den Elementen zugeordneten Symbole geben Auskunft über ihren jeweiligen Sta
 
 Um nur bestimmte Kampagnen anzuzeigen, klicken Sie auf **[!UICONTROL Filtern]** und wählen Sie den Status der gesuchten Kampagnen aus.
 
-![](assets/calendar-filter-options.png)
+![Kampagnenkalender-Filter mit der Dropdown-Liste Aufgaben, in der Status wie „In Bearbeitung“, „Gestartet“ und „Abgeschlossen“ aufgeführt sind](assets/calendar-filter-options.png)
 
 Beim Durchsuchen des Kalenders können Sie auch ein Programm oder eine Kampagne erstellen.
 
-![](assets/campaign-create-from-calendar.png)
+![Registerkarte „Programmplan“ mit dem Menüangebot „Hinzufügen“, „Programm hinzufügen“ und „Kampagne hinzufügen“](assets/campaign-create-from-calendar.png)
 
 Wenn Sie eine Kampagne über die Registerkarte **[!UICONTROL Planung]** eines Programms erstellen, wird die Kampagne dem jeweiligen Programm automatisch hinzugefügt. Das Feld **[!UICONTROL Programm]** wird in diesem Fall ausgeblendet.
 
@@ -183,7 +183,7 @@ Sie können über einen Internet-Browser auf die Bildschirme der Adobe Campaign-
 1. Melden Sie sich wie gewohnt über https://`<your instance>:<port>/view/home` an.
 1. Über die unterschiedlichen Rubriken besteht Zugriff auf Listen und weitere Navigationselemente.
 
-   ![](assets/web-access-campaigns.png)
+   ![Liste der Marketing-Kampagnen in der -Web-Benutzeroberfläche mit dem Kampagnenstatus und dem Menü Aktionen](assets/web-access-campaigns.png)
 
 Neben dem Navigieren durch und Ansehen von Kampagnen können Sie auch die folgenden Aufgaben ausführen:
 
@@ -216,9 +216,9 @@ Diese Tabelle fasst die Aktionen zusammen, die Sie über einen Browser für Kamp
 
 Validierungen einer Zielgruppe oder des Inhalts eines Versands können über den Web-Zugriff erfolgen.
 
-![](assets/web-access-approval.png)
+![Aktion im Versanddialogfeld in der Web-Benutzeroberfläche mit den Optionen Akzeptieren und Ablehnen und einem Kommentarfeld](assets/web-access-approval.png)
 
-Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](marketing-campaign-approval.md#review-and-approve-deliveries).
+Sie können auch den in den Benachrichtigungsinhalten enthaltenen Link verwenden. Weitere Informationen hierzu finden Sie unter [&#x200B; und Validieren von Sendungen &#x200B;](marketing-campaign-approval.md#review-and-approve-deliveries).
 
 
 ## Anleitungsvideo {#video}

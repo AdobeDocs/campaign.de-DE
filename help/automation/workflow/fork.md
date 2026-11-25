@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 100%
+source-wordcount: '388'
+ht-degree: 95%
 ---
 # Verzweigung{#fork}
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor, um eine Aktivität **[!UICONTROL Verzweigung]** und die
 
 1. Öffnen Sie die Aktivität **[!UICONTROL Verzweigung]** und definieren Sie den Namen und den Titel der ausgehenden Transitionen.
 
-   ![](assets/s_user_segmentation_fork.png)
+   ![Aktivität Verzweigung mit vier Transitionen und dem Fenster Transition zum Bearbeiten des Namens und der Beschriftung der Transition 4.](assets/s_user_segmentation_fork.png)
 
 1. Öffnen Sie jede ausgehende Transition und konfigurieren Sie sie.
 1. Um ausgehende Transitionen miteinander zu verbinden, fügen Sie optional eine UND-Verknüpfung hinzu. [Weitere Informationen](and-join.md).

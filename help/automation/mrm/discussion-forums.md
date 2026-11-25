@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '626'
+ht-degree: 93%
 ---
 # Diskussionsforen{#discussion-forums}
 
@@ -43,13 +43,13 @@ Benutzer können Foren abonnieren, um per E-Mail über jede gepostete Nachricht 
 
 Um auf ein Forum zuzugreifen, navigieren Sie zu einem Dashboard und klicken Sie auf die Schaltfläche **[!UICONTROL Forum]** links oben rechts.
 
-![](assets/mrm-forum-icon.png)
+![Kampagnen-Dashboard mit einem Pfeil, der auf den Link Forum und die Liste der Diskussionen verweist.](assets/mrm-forum-icon.png)
 
 Nachrichten und Antworten darauf werden chronologisch angezeigt, von neu nach alt.
 
 Um einen neuen Thread zu starten, klicken Sie auf die Schaltfläche **[!UICONTROL Diskussion hinzufügen]** in der oberen rechten Ecke. Das Feld **[!UICONTROL Diskussionsforum]** wird angezeigt (siehe unten).
 
-![](assets/mrm-forum-new-thread.png)
+![Dialogfeld „Diskussionsforum“ mit Betreff, Nachricht, Benutzer zum Benachrichtigen, Anfügen eines Dokuments und Erstellen der Nachricht.](assets/mrm-forum-new-thread.png)
 
 
 Geben Sie den gewünschten Text im Feld **[!UICONTROL Nachricht]** und gegebenenfalls einen Diskussionstitel im Feld **[!UICONTROL Thema]** ein.
@@ -85,7 +85,7 @@ Um eine Nachricht zu beantworten, klicken Sie auf den E-Mail-Text und melden Sie
 
 * In Ihrem persönlichen Dashboard werden die von Ihnen abonnierten Foren aufgelistet. Klicken Sie auf den Link **[!UICONTROL Forum-Abonnements]**, um die Liste anzuzeigen, und anschließend auf das Forum, auf das Sie zugreifen möchten.
 
-  ![](assets/forum-subscribed.png)
+  ![Benutzer-Dashboard mit hervorgehobener Liste „Abonnements für Diskussionsforen“.](assets/forum-subscribed.png)
 
 
 ## Fehlerbehebung beim Benachrichtigungsversand {#checking-notification-delivery}

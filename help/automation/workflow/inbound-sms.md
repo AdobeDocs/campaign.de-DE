@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 100%
+source-wordcount: '158'
+ht-degree: 75%
 ---
 # SMS-Empfang{#inbound-sms}
 
@@ -41,7 +41,7 @@ Die Aktivität **SMS-Empfang** ermöglicht den Abruf und die Verarbeitung von SM
 
 ## Eigenschaften {#properties}
 
-![](assets/sms_rec_edit.png)
+![Eingehende SMS-Aktivität mit dem Feld Externes Konto , das den Link Zu verarbeitende Nachrichten filtert und den Bereich Skript ..](assets/sms_rec_edit.png)
 
 Auf der ersten Registerkarte der Aktivität **SMS-Empfang** können Sie die Routing-Parameter für SMS-Nachrichten sowie das für jede empfangene Nachricht auszuführende Skript eingeben. Auf der zweiten Registerkarte können Sie der Aktivität einen Zeitplan zuweisen und auf der dritten Registerkarte die Ablaufbedingungen der Aktivität definieren.
 
@@ -49,7 +49,7 @@ Auf der ersten Registerkarte der Aktivität **SMS-Empfang** können Sie die Rout
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Planung]**
 
-   ![](assets/sms_rec_edit_2.png)
+   ![Registerkarte „Zeitplan für eingehende SMS“ mit aktivierter Option „Ausführung planen“ und Zeitplan stoppen , sobald eine SMS empfangen wurde, aktiviert.](assets/sms_rec_edit_2.png)
 
 1. **[!UICONTROL Ablauf]**
 

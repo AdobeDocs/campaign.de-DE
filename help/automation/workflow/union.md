@@ -19,20 +19,20 @@ subfeature_v2:
     internal-label: Workflows
   - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
     internal-label: Targeting Activity
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 95%
+source-wordcount: '347'
+ht-degree: 82%
 ---
 # Vereinigung{#union}
 
 Eine **[!UICONTROL Vereinigung]** gruppiert das Ergebnis mehrerer eingehender Aktivitäten in einer einzigen Zielgruppe. Die Zielgruppe wird aus allen eingehenden Ergebnissen erstellt. Das heißt, dass alle vorgeschalteten Aktivitäten beendet sein müssen, bevor die Vereinigung ausgeführt werden kann.
 
-![](assets/s_user_segmentation_union.png)
+![Aktivität Vereinigung mit Abstimmoptionen, Kontrollkästchen Größe der Population begrenzen und Ergebnisbezeichnung](assets/s_user_segmentation_union.png)
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren und Verwenden der Aktivität **[!UICONTROL Vereinigung]** finden Sie auf [dieser Seite](targeting-workflows.md#combine-several-targets--union-).
+>Weitere Informationen zur Konfiguration und Verwendung der Aktivität **[!UICONTROL Vereinigung]** finden Sie unter [Kombinieren mehrerer Ziele (Vereinigung)](targeting-workflows.md#combine-several-targets--union-).
 
 ## Anwendungsbeispiel für eine Vereinigung {#union-example}
 
@@ -49,7 +49,7 @@ Im folgenden Beispiel wurden die Ergebnisse zweier Abfragen kombiniert, um die L
 1. Bestätigen Sie die Aktivität **[!UICONTROL Vereinigung]** und konfigurieren Sie dann die Aktivität [Listen-Update](list-update.md).
 1. Starten Sie den Workflow. Die Anzahl der Ergebnisse wird angezeigt und die in der Aktualisierungsaktivität definierte Liste wird erstellt oder aktualisiert. Letztere enthält nun alle Empfangenden aus den beiden Abfragen bzw. die im vorangehenden Schritt definierte Anzahl.
 
-   ![](assets/union_example.png)
+   ![Workflow, bei dem zwei Abfragen eine Vereinigungsaktivität generieren, die fünf Ergebnisse an eine Listenaktualisierungsaktivität ausgibt](assets/union_example.png)
 
 ## Eingabeparameter {#input-parameters}
 

@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Measurement
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 91%
 ---
 # Campaign Response Manager konfigurieren{#configuration}
 
@@ -78,7 +78,7 @@ Es wird zudem dringend empfohlen, ein Ereignisdatum hinzuzufügen.
 
 Das folgende Schema stellt die Relationen der unterschiedlichen Tabellen nach erfolgter Konfiguration dar:
 
-![](assets/response_data_model.png)
+![Datenmodell der Antworttabellen: Sendungen, Versandlogs, Messhypothesen und mit Reaktionen verknüpfte Empfänger](assets/response_data_model.png)
 
 ### Reaktionsverwaltung und Empfänger {#response-management-with-adobe-campaign-recipients}
 
@@ -89,17 +89,17 @@ Die Tabelle mit Reaktionsprotokollen bei **[!UICONTROL nms:remaMatchRcp]**-Empfa
 1. Gehen Sie im Adobe Campaign-Explorer in den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Zielgruppen-Mappings]**.
 1. Machen Sie einen Rechtsklick auf **Empfänger** und wählen Sie **[!UICONTROL Aktionen]** und **[!UICONTROL Optionen der Zielgruppendimension ändern...]** aus.
 
-   ![](assets/delivery_mapping1.png)
+   ![Liste der Zielgruppen-Mappings mit dem Menü Aktionen öffnen und ändern Sie die Optionen der ausgewählten Zielgruppendimension](assets/delivery_mapping1.png)
 
 1. Passen Sie gegebenenfalls in dem sich öffnenden Fenster den **[!UICONTROL Erweiterungs-Namespace]** an und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/delivery_mapping2.png)
+   ![Speicherschritt der Optionen der Zielgruppendimension mit dem Erweiterungs-Namespace und Suffix der Erweiterungsschemafelder](assets/delivery_mapping2.png)
 
 1. Stellen Sie sicher, dass in der Kategorie **[!UICONTROL Reaktionsverwaltung]** die Option **[!UICONTROL Speicherschema für Reaktionen erzeugen]** aktiviert ist.
 
    Klicken Sie dann auf **[!UICONTROL Zusätzliche Felder definieren…]**, um die zugehörigen Transaktionstabellen auszuwählen und die gewünschten Felder zur Erweiterung des nms:remaMatchRcp-Schemas hinzuzufügen.
 
-   ![](assets/delivery_mapping3.png)
+   ![Schritt „Erweiterungen“ mit aktiviertem Dialogfeld „Speicherschema für Reaktionen generieren“ und „Erweiterung des Reaktionsschemas“](assets/delivery_mapping3.png)
 
 Folgendes Schema wird daraufhin erstellt:
 

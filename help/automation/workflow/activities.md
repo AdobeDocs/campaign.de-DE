@@ -26,26 +26,26 @@ topic_v2:
     internal-label: Implementation
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 100%
+source-wordcount: '141'
+ht-degree: 67%
 ---
 # Workflow-Aktivitäten{#wf-activities}
 
 Workflow-Aktivitäten werden nach Kategorie in vier verschiedenen Registerkarten gruppiert.
 
-![](assets/wf-activity-tabs.png)
+![Aktivitätspalette mit vier hervorgehobenen Kategorieschaltflächen und aufgelisteten Zielgruppenbestimmungsaktivitäten.](assets/wf-activity-tabs.png)
 
 Je nach Ihren Berechtigungen, Ihrer Implementierung und dem Kontext, in dem der Workflow erstellt wird, können die verfügbaren Aktivitäten unterschiedlich sein.
 
 Die in einer Kampagne erstellten Workflows weisen beispielsweise für alle Kanäle die Registerkarte **Sendungen** auf. Diese Registerkarte ist in einem [technischen Workflow](technical-workflows.md) nicht verfügbar.
 
-![](assets/campaign-wf-activities.png)
+![Registerkarte Sendungen eines Kampagnen-Workflows: E-Mail, Briefpost, Mobil, iOS, Android, Sonstiger und wiederkehrender Versand.](assets/campaign-wf-activities.png)
 
 Technische Workflows verfügen wiederum über die Registerkarte **Ereignisse**, die in [Kampagnen-Workflows](campaign-workflows.md) nicht verfügbar ist.
 
-![](assets/tech-wf-activities.png)
+![Registerkarte „Ereignisse“ eines technischen Workflows: Datei-Wächter, Dateiübertragung, HTTP-Übertragung, eingehende E-Mails und eingehende SMS.](assets/tech-wf-activities.png)
 
 Alle Aktivitäten werden in den folgenden Abschnitten beschrieben:
 

@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 97%
+source-wordcount: '648'
+ht-degree: 78%
 ---
 # Hinzufügen eines berechneten Felds vom Typ &quot;Aufzählung&quot; {#adding-an-enumeration-type-calculated-field}
 
@@ -50,23 +50,23 @@ Gehen Sie wie folgt vor:
 1. Öffnen Sie den [generischen Abfrage-Editor](../../v8/start/query-editor.md) und wählen Sie die Empfängertabelle (**[!UICONTROL nms:recipient]**) aus.
 1. Wählen Sie im Fenster **[!UICONTROL Zu extrahierende Daten]** die Felder **[!UICONTROL Nachname]**, **[!UICONTROL Vorname]** und **[!UICONTROL Geschlecht]**.
 
-   ![](assets/query_editor_nveau_73.png)
+   ![Daten zum Extrahieren des Fensters mit Nachname, Vorname und Geschlecht in der Liste der Ausgabespalten.](assets/query_editor_nveau_73.png)
 
 1. In diesem Beispiel ist keine **[!UICONTROL Sortierung]** erforderlich. Sie können somit direkt auf **[!UICONTROL Weiter]** klicken.
 1. Wählen Sie dann im **[!UICONTROL Datenfilter]**-Fenster die Option **[!UICONTROL Filterbedingungen]**.
 1. Konfigurieren Sie im Fenster **[!UICONTROL Zielelement]** eine Bedingung, die als Ergebnis alle deutschsprachigen Empfänger ausgibt.
 
-   ![](assets/query_editor_nveau_74.png)
+   ![Fenster des Zielelements mit der Filterbedingung Sprache (@language) gleich EN.](assets/query_editor_nveau_74.png)
 
 1. Klicken Sie dann im Fenster **[!UICONTROL Datenformatierung]** auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**.
 
-   ![](assets/query_editor_nveau_75.png)
+   ![Datenformatierungsfenster mit hervorgehobener Schaltfläche „Berechnetes Feld hinzufügen“.](assets/query_editor_nveau_75.png)
 
 1. Wählen Sie im Feld **[!UICONTROL Typ]** des Fensters **[!UICONTROL Definition eines berechneten Export-Feldes]** die Option **[!UICONTROL Aufzählungen]** aus.
 
    Definieren Sie die Spalte, auf die sich das neue berechnete Feld beziehen soll. Wählen Sie hierzu aus der Dropdown-Liste des Felds **[!UICONTROL Quellspalte]** die Spalte **[!UICONTROL Geschlecht]** aus. Die Zielwerte beziehen sich auf diese Spalte **[!UICONTROL Geschlecht]**.
 
-   ![](assets/query_editor_nveau_76.png)
+   ![Berechnete Felddefinition, bei der für den Typ „Auflistungen“ und für die Source-Spalte „Geschlecht“ festgelegt ist.](assets/query_editor_nveau_76.png)
 
    Definieren Sie **Quellwert** und **Zielwert**. Der Zielwert erleichtert die Lesbarkeit des Abfrageergebnisses. Diese Abfrage sollte das Empfängergeschlecht zurückgeben. Das Ergebnis ist entweder 0, 1 oder 2.
 
@@ -79,7 +79,7 @@ Gehen Sie wie folgt vor:
 
    klicken Sie auf **[!UICONTROL OK]**, um die Konfiguration des berechneten Felds abzuschließen.
 
-   ![](assets/query_editor_nveau_77.png)
+   ![Auflistungswerte, die die Quelle 0, 1 und 2 mit „Nicht angegeben“, „Männlich“ und „Weiblich“ zuordnen. Quellwert bleibt ausgewählt.](assets/query_editor_nveau_77.png)
 
 1. Klicken Sie im Fenster **[!UICONTROL Datenformatierung]** auf **[!UICONTROL Weiter]**.
 1. Nun können Sie die **[!UICONTROL Datenvorschau starten]**.
@@ -90,12 +90,12 @@ Gehen Sie wie folgt vor:
    * 1 für &quot;Männlich&quot;
    * 2 für &quot;Weiblich&quot;
 
-   ![](assets/query_editor_nveau_78.png)
+   ![Datenvorschau mit Spalten mit Geschlecht- und Geschlechtsspezifikationen, z. B. 1 mit Männlich und 0 mit Nicht angegeben.](assets/query_editor_nveau_78.png)
 
    Wenn Sie beispielsweise in der **[!UICONTROL Liste der Auflistungswerte]** Geschlecht „2“ nicht eingeben und die Funktion **[!UICONTROL Warnhinweis erzeugen und fortfahren]** des Felds **[!UICONTROL Andernfalls]** ausgewählt ist, erhalten Sie ein Warnprotokoll. Dieses Protokoll gibt an, dass Geschlecht „2“ (Weiblich) nicht eingegeben wurde. Dieser Hinweis wird im Bereich **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters angezeigt.
 
-   ![](assets/query_editor_nveau_79.png)
+   ![Datenvorschau mit einer gekennzeichneten Zeile für Geschlecht 2 und dem Auflistungswert 2 des Protokolls existiert für Spalte @gender nicht.](assets/query_editor_nveau_79.png)
 
    Nehmen wir ein anderes Beispiel und gehen wir davon aus, dass der Aufzählungswert „2“ nicht eingegeben wurde. Wählen Sie die Funktion **[!UICONTROL Fehler erzeugen und Zeile zurückweisen]** aus: Alle Empfangenden mit Geschlecht „2“ werden als Anomalien ausgegeben und die anderen Informationen in der Zeile (Vor- und Nachname usw.) werden nicht exportiert. Im Feld **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters wird eine entsprechende Fehlernachricht ausgegeben. Dieses Protokoll zeigt an, dass der Aufzählungswert „2“ nicht eingegeben wurde.
 
-   ![](assets/query_editor_nveau_80.png)
+   ![Datenvorschau mit Fehlersymbolen in zurückgewiesenen Gender-2-Zeilen und der Log-Auflistungswert 2 ist nicht vorhanden.](assets/query_editor_nveau_80.png)

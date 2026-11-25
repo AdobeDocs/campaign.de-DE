@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 100%
+source-wordcount: '296'
+ht-degree: 82%
 ---
 # Laden (SOAP){#loading-soap}
 
@@ -42,17 +42,17 @@ Gehen Sie wie folgt vor:
 
    Das im Folgenden dargestellte Beispiel stammt aus einem technischen Workflow des Message-Center-Moduls.
 
-   ![](assets/load_soap_002.png)
+   ![Aktivität „Laden (SOAP)“ mit ausgewählter Beispiel-XML, Ergebnisbeispiel und Initialisierungsskript verwenden.](assets/load_soap_002.png)
 
 1. Wählen Sie für ein XML-Beispiel eine Beispieldatei aus. Die Datei wird analysiert, um ein Beispielergebnis zu erzeugen.
 
    Geben Sie für eine WSDL die entsprechende Zugriffs-URL ein und generieren Sie dann das Code-Skelett. Der ausgewählte Dienst und Aufruf werden automatisch aktualisiert und angezeigt.
 
-   ![](assets/soap_load_003.png)
+   ![Ergebnisformat mit ausgewählter Option „WSDL verwenden“, einem Feld „Zugriffs-URL“ und dem Link „Skelett-Code generieren“.](assets/soap_load_003.png)
 
 1. Klicken Sie auf den Link **[!UICONTROL Zur Ansicht und Änderung des Analyseergebnisses hier klicken...]**, um die identifizierten Spalten zu definieren.
 
-   ![](assets/soap_load_001.png)
+   ![Dateiformatfenster mit einer Liste identifizierter Spalten mit Titel, Datentyp und internem Namen der ausgewählten Spalte.](assets/soap_load_001.png)
 
    Durch Klick auf **[!UICONTROL Beispiel erneut analysieren]**, können Sie das Beispiel aktualisieren.
 

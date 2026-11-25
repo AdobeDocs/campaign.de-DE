@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Measurement
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1439'
+ht-degree: 75%
 ---
 # Erstellen von Hypothesen{#creating-hypotheses}
 
@@ -55,11 +55,11 @@ Um eine Hypothese für einen bestehenden Versand zu erstellen, gehen Sie wie fol
 1. Positionieren Sie sich im Knoten **[!UICONTROL Kampagnenverwaltung > Messhypothesen]** im Adobe Campaign-Navigationsbaum.
 1. Klicken Sie auf die Schaltlfäche **[!UICONTROL Neu]** oder machen Sie einen Rechtsklick in der Liste der Hypothesen und wählen Sie im Kontextmenü **[!UICONTROL Neu]** aus.
 
-   ![](assets/response_hypothesis_instance_creation_002.png)
+   ![Liste der Messhypothesen mit der Schaltfläche Neu und dem Dialogfeld Neue Hypothese zur Auswahl einer Vorlage](assets/response_hypothesis_instance_creation_002.png)
 
 1. Wählen Sie im Hypothesenfenster eine zuvor erstellte Vorlage aus. [Weitere Informationen](hypothesis-templates.md)
 
-   ![](assets/response_hypothesis_instance_creation_003.png)
+   ![Dialogfeld „Neue Hypothese“ mit der Dropdown-Liste „Hypothesenvorlage“, in der die verfügbaren Vorlagen aufgeführt sind](assets/response_hypothesis_instance_creation_003.png)
 
    Der in der ausgewählten Vorlage festgelegte Hypothesenkontext wird im Fenster angezeigt.
 
@@ -67,11 +67,11 @@ Um eine Hypothese für einen bestehenden Versand zu erstellen, gehen Sie wie fol
    >
    >Auch die in dieser Etappe nicht sichtbaren Parameter, die in der Vorlage bestimmt wurden, werden von der Hypothese übernommen.
 
-   ![](assets/response_hypothesis_instance_creation_004.png)
+   ![Dialogfeld „Neue Hypothese“ mit der von der ausgewählten Vorlage übernommenen Abfrage und dem Feld Versand](assets/response_hypothesis_instance_creation_004.png)
 
 1. Wählen Sie den Versand aus, dem die Hypothese hinzugefügt werden soll.
 
-   ![](assets/response_hypothesis_instance_creation_005.png)
+   ![Dialogfeld „Neue Hypothese“ mit der Dropdown-Liste Versand , in der die auszuwählenden Sendungen aufgelistet sind](assets/response_hypothesis_instance_creation_005.png)
 
 1. Sie können Ihre Hypothese personalisieren, indem Sie die Tabs **[!UICONTROL Allgemein]**, **[!UICONTROL Transaktionen]** und **[!UICONTROL Perimeter]** bearbeiten. [Weitere Informationen](hypothesis-templates.md#creating-a-hypothesis-model)
 1. Klicken Sie auf **[!UICONTROL Starten]**, um die Hypothesen auszuführen.
@@ -87,11 +87,11 @@ Um eine Hypothese für einen bestehenden Versand zu erstellen, gehen Sie wie fol
    >
    >Denken Sie daran, den Workflow nach seiner Ausführung zu löschen, wenn Sie diese Option aktiviert haben.
 
-   ![](assets/response_hypothesis_instance_creation_006.png)
+   ![Start-Schaltfläche der Liste Messhypothesen und die Bestätigungsaufforderung für den Start der Hypothese](assets/response_hypothesis_instance_creation_006.png)
 
    Nach Abschluss der Berechnung werden die Messindikatoren automatisch aktualisiert.
 
-   ![](assets/response_hypothesis_instance_creation_007.png)
+   ![Registerkarte „Allgemein“ der Hypothese mit den von der Hypothese berechneten Indikatoren wie Reaktionsrate und Reaktionen](assets/response_hypothesis_instance_creation_007.png)
 
 1. Ändern Sie bei Bedarf die Parameter und starten Sie die Hypothese erneut.
 
@@ -99,14 +99,14 @@ Um eine Hypothese für einen bestehenden Versand zu erstellen, gehen Sie wie fol
 
 Sie können eine Hypothese in einer Marketing-Kampagne referenzieren, bevor sie gestartet wird. Die Hypothese wird in diesem Fall entsprechend den in der Hypothesenvorlage festgelegten Ausführungsparametern automatisch nach dem Versand gestartet. Um eine Hypothese in einem Versand zu erstellen, gehen Sie wie folgt vor:
 
-1. Erstellen Sie je nach Bedarf eine oder mehrere Vorlagen vom Typ **[!UICONTROL Versand]** nach der in [diesem Abschnitt](hypothesis-templates.md#creating-a-hypothesis-model) beschriebenen Vorgehensweise.
+1. Je nach Bedarf können Sie eine oder mehrere Vorlagen vom Typ **[!UICONTROL Versand]** erstellen, wie in [Hypothesenmodell erstellen](hypothesis-templates.md#creating-a-hypothesis-model)
 1. Erstellen Sie Ihre Marketing-Kampagne und die entsprechenden Zielgruppen-Workflows.
 1. Klicken Sie im Versandfenster auf das Symbol **[!UICONTROL Versandmessung]**.
 1. Wählen Sie die Hypothesenvorlage aus. Die in der Vorlage konfigurierte Abfrage wird im Hypothesenfenster angezeigt.
 
    Die Hypothese wird automatisch entsprechend den in der Vorlage konfigurierten Daten berechnet, sobald die Kampagne abgeschlossen ist. [Weitere Informationen](hypothesis-templates.md#hypothesis-template-execution-settings)
 
-   ![](assets/response_hypothesis_instance_creation_008.png)
+   ![Messfenster des Versands mit der Schaltfläche Hinzufügen zum Referenzieren einer Hypothesenvorlage in einem Versand](assets/response_hypothesis_instance_creation_008.png)
 
 ## Hinzufügen einer Standardhypothese zu Sendungen einer Kampagne {#adding-a-default-hypothesis-to-deliveries-for-a-campaign}
 
@@ -115,15 +115,15 @@ Sie können direkt auf eine Hypothese auf Kampagnenebene verweisen. Die Hypothes
 1. Klicken Sie auf den Tab **[!UICONTROL Bearbeiten]** der Kampagne.
 1. Gehen Sie im Messungsbereich in den Tab **[!UICONTROL Standardhypothesen]**.
 
-   ![](assets/response_hypothesis_instance_creation_010.png)
+   ![Registerkarte „Kampagnenbearbeitung“, Abschnitt „Messung“, mit hervorgehobener Registerkarte „Standardhypothesen“](assets/response_hypothesis_instance_creation_010.png)
 
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie eine Hypothesenvorlage aus.
 
-   ![](assets/response_hypothesis_instance_creation_011.png)
+   ![Fügen Sie auf der Registerkarte Standardhypothesen einer Kampagne ein Dialogfeld mit der Dropdown-Liste Vorlage hinzu](assets/response_hypothesis_instance_creation_011.png)
 
    Eine auf dieser Vorlage basierende Hypothese wird von nun an standardmäßig in jedem neuen Versand der Kampagne referenziert.
 
-   ![](assets/response_hypothesis_instance_creation_012.png)
+   ![Fenster „Versandmessung“ in einem Zielgruppen-Workflow, in dem die Hypothese der Käufe aufgelistet wird](assets/response_hypothesis_instance_creation_012.png)
 
 Sie können die Ergebnisse der Berechnung in den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Reaktionen]** der Hypothese einsehen. [Weitere Informationen](hypothesis-tracking.md)
 
@@ -133,19 +133,19 @@ Weitere Informationen finden Sie in [diesem Beispiel](#example--creating-a-hypot
 
 Die Erstellung einer Hypothese zu einem Angebotsvorschlag ähnelt der Erstellung einer Hypothese für einen spontanen Versand. Die Hypothese kann ausgeführt werden, solange das Angebot aktiv ist. Der Berechnungszeitraum basiert auf dem Datum des Angebotsvorschlags. Wenn die Hypothese es Ihnen ermöglicht, eine empfangende Person mit einem Kauf zu verknüpfen, kann der Status des wahrscheinlich akzeptierten Angebotsvorschlags automatisch geändert werden. [Weitere Informationen](hypothesis-templates.md#transactions)
 
-1. Erstellen Sie wie in [diesem Abschnitt](hypothesis-templates.md#creating-a-hypothesis-model) beschrieben eine oder mehrere Vorlagen vom Typ **[!UICONTROL Angebot]**.
+1. Erstellen Sie ein oder **[!UICONTROL Modelle vom Typ]** Angebot“, wie in [Hypothesenmodell erstellen](hypothesis-templates.md#creating-a-hypothesis-model) beschrieben.
 1. Gehen Sie in den Knoten **[!UICONTROL Kampagnenverwaltung > Messhypothesen]**.
 1. Erstellen Sie eine Hypothese vom Typ **[!UICONTROL Angebote]**, indem Sie die zuvor erstellte Vorlage auswählen.
 
-   ![](assets/response_hypothesis_instance_offer_001.png)
+   ![Dialogfeld „Neue Hypothese“ mit der Dropdown-Liste „Vorlage“ mit Angebotsvorlagen wie „Neue Angebotshypothese“](assets/response_hypothesis_instance_offer_001.png)
 
    Die in der Vorlage erstellte Abfrage erscheint im Fenster.
 
-   ![](assets/response_hypothesis_instance_offer_003.png)
+   ![Dialogfeld „Neue Hypothese“ mit der Angebotshypothesenvorlage und dem Abfragetyp „Element“](assets/response_hypothesis_instance_offer_003.png)
 
 1. Wählen Sie ein Angebot aus, auf das sich die Hypothese beziehen soll.
 
-   ![](assets/response_hypothesis_instance_offer_004.png)
+   ![Dialogfeld „Neue Hypothese“ mit der Dropdown-Liste „Angebote“, z. B. „Reise nach Paris“](assets/response_hypothesis_instance_offer_004.png)
 
 1. Schränken Sie die Abfrage bei Bedarf ein.
 1. Klicken Sie auf **[!UICONTROL Starten]**, um die Hypothese auszuführen.
@@ -153,7 +153,7 @@ Die Erstellung einer Hypothese zu einem Angebotsvorschlag ähnelt der Erstellung
 
    Ausgeführte Hypothesen werden im Tab **[!UICONTROL Messung]** des jeweiligen Angebots referenziert.
 
-   ![](assets/response_hypothesis_instance_offer_007.png)
+   ![Registerkarte Angebotskennzahl mit der Liste der mit dem Angebot verknüpften Hypothesen unter Berechnung des effektiven ROI](assets/response_hypothesis_instance_offer_007.png)
 
    Wenn die Option **[!UICONTROL Vorschlagsstatus aktualisieren]** in der Hypothesenvorlage aktiviert wurde, wird der Status des Angebotsvorschlags automatisch geändert und informiert über die Auswirkungen der Kampagnen (siehe diesbezüglich [Transaktionen](hypothesis-templates.md#transactions)).
 
@@ -169,7 +169,7 @@ Anschließend werden wir die von der Vorlage geerbte Abfrage verfeinern, um eine
 
 1. Konfigurieren Sie eine Kontrolladresse: Die zuvor erstellte Hypothesenvorlage wurde so konfiguriert, dass eine Kontrollgruppe in den Reaktionsergebnissen berücksichtigt wird.
 
-   ![](assets/response_hypothesis_delivery_example_007.png)
+   ![Erweiterte Einstellungen von Campaign, Registerkarte „Kontrollpopulation“ mit aktivierter Kontrollgruppenkonfiguration](assets/response_hypothesis_delivery_example_007.png)
 
    >[!NOTE]
    >
@@ -177,28 +177,28 @@ Anschließend werden wir die von der Vorlage geerbte Abfrage verfeinern, um eine
 
 1. Öffnen Sie den zuvor erstellten **[!UICONTROL Briefpost-Versand]** Ihrer Kampagne, klicken Sie auf das Symbol **[!UICONTROL Versandmessung]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/response_hypothesis_delivery_example_002.png)
+   ![Messfenster eines Briefpost-Versands mit der Schaltfläche Hinzufügen für Hypothesen](assets/response_hypothesis_delivery_example_002.png)
 
 1. Wählen Sie die zuvor erstellte Hypothesenvorlage mithilfe der Dropdown-Liste aus.
 
-   ![](assets/response_hypothesis_delivery_example_004.png)
+   ![Hinzufügen eines Hypothesendialogfelds mit der Dropdown-Liste „Vorlage“ zum Auflisten von Kaufhypothesen (HYP4)](assets/response_hypothesis_delivery_example_004.png)
 
    Die in der Vorlage erstellte Abfrage wird angezeigt.
 
-   ![](assets/response_hypothesis_delivery_example_005.png)
+   ![Dialogfeld „Neue Hypothese“ mit der Hypothese nach Ticket-Zeilenvorlage und der zugehörigen Abfragefilterung nach Produkt](assets/response_hypothesis_delivery_example_005.png)
 
 1. Klicken Sie auf **[!UICONTROL Abfrage bearbeiten]** und schränken Sie unter Angabe des Produkts, auf das sich die Hypothese beziehen soll, die Abfrage ein.
 
-   ![](assets/response_hypothesis_delivery_example_006.png)
+   ![Abfragefenster bearbeiten, das die Hypothese nach dem Produktnamen filtert, der Bekleidung entspricht](assets/response_hypothesis_delivery_example_006.png)
 
-   Über den Tab **[!UICONTROL Bearbeiten > Messung > Messhypothesen]** der Kampagne können Sie sicherstellen, dass die Hypothese dem Versand zugeordnet wurde.****
+   Über den Tab **[!UICONTROL Bearbeiten > Messung > Messhypothesen]** der Kampagne können Sie sicherstellen, dass die Hypothese dem Versand zugeordnet wurde.**&#x200B;**
 
-   ![](assets/response_hypothesis_delivery_example_008.png)
+   ![Abschnitt „Kampagnenmessung“, Registerkarte „Messhypothesen“, auf der die Hypothesen zu Käufen für einen Versand aufgelistet sind](assets/response_hypothesis_delivery_example_008.png)
 
 1. Starten Sie Ihren Zielgruppen-Workflow und führen Sie die erforderlichen Prüfungen durch, bis die Kampagne abgeschlossen ist. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de#start-a-delivery){target=_blank}.
 
-   ![](assets/response_hypothesis_delivery_example_009.png)
+   ![Kampagnen-Dashboard mit einem laufenden Briefpost-Versand und seinem Status, seiner Zielpopulation und seinen Testsendungen](assets/response_hypothesis_delivery_example_009.png)
 
 1. Gehen Sie zum Knoten **[!UICONTROL Kampagnenverwaltung > Messhypothesen]** des Adobe Campaign-Navigationsbaums, um die von der Hypothese berechneten Indikatoren zu überprüfen.
 
-   ![](assets/response_hypothesis_delivery_example_010.png)
+   ![Liste der Messhypothesen und Registerkarte „Allgemein“ mit den berechneten Indikatoren, z. B. Reaktionsrate kontaktierter Kontakte](assets/response_hypothesis_delivery_example_010.png)

@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 98%
+source-wordcount: '1356'
+ht-degree: 84%
 ---
 # Workflow-Heatmap {#workflow-heatmap}
 
@@ -64,7 +64,7 @@ Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgend
 
 1. Gehen Sie zu **[!UICONTROL Monitoring]** und klicken Sie auf den Link **[!UICONTROL Workflow-Heatmap]**, um die Seite **[!UICONTROL Campaign Workflow-Heatmap]** anzuzeigen.
 
-   ![](assets/wkf_monitoring_path.png)
+   ![Registerkarte „Monitoring“ mit ausgewähltem Workflow-Heatmap-Link, wodurch das Heatmap-Raster des Campaign-Workflows geöffnet wird.](assets/wkf_monitoring_path.png)
 
 1. Klicken Sie auf den Kalender, um einen Tag auszuwählen.
 
@@ -76,15 +76,15 @@ Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgend
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Filter]**.
 
-   ![](assets/wkf_monitoring_filters.png)
+   ![Campaign Workflow-Heatmap-Seite mit hervorgehobener Schaltfläche „Filter“ neben „Hilfe und Daten laden“.](assets/wkf_monitoring_filters.png)
 
 1. Verwenden Sie den Regler, um die Mindestdauer von 0 Sekunden bis 1 Stunde festzulegen. Auf diese Weise können Sie nur nach Workflows suchen, die länger als eine bestimmte Anzahl von Sekunden oder Minuten ausgeführt werden.
 
-   ![](assets/wkf_monitoring_filters_duration.png)
+   ![Das Bedienfeld „Heatmap-Filter“ mit dem Schieberegler Mindestdauer auf 30 Minuten eingestellt, über den Feldern „Workflows“ und „Workflow-Typ“.](assets/wkf_monitoring_filters_duration.png)
 
 1. Sie können auch einen bestimmten Workflow aus der Dropdown-Liste **[!UICONTROL Workflows]** auswählen.
 
-   ![](assets/wkf_monitoring_filters_workflows.png)
+   ![Dropdown-Liste „Workflows“ in den Heatmap-Filtern, in der alle Workflows, Datenbankbereinigung, Prognosen und andere Workflows angezeigt werden.](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ Die Campaign Workflow-Heatmap ist eine Tabelle, die von oben links nach unten r
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Hilfe]**, um zu erfahren, wie der Farbcode angewendet wird und wie Sie in der HeatMap navigieren.
 
-![](assets/wkf_monitoring_legend.png)
+![Heatmap-Hilfebereich mit Tastatursteuerelementen und der Farblegende von Grün für 1 Workflow bis Rot für 50.](assets/wkf_monitoring_legend.png)
 
 Jede Zeile stellt eine Stunde des Tages dar und jede Zelle entspricht 5 Minuten dieser Stunde.
 
@@ -116,11 +116,11 @@ Die Tabelle zeigt alle Workflows an, die für jeden dieser 5-Minuten-Zeiträume 
 
 Im folgenden Beispiel werden zwischen 8:00 und 8:05 Uhr drei Workflows ausgeführt (unabhängig von ihrer individuellen Dauer):
 
-![](assets/wkf_monitoring_ex_8am.png)
+![Heatmap-Raster mit hervorgehobener Zeile 08.00 Uhr, Spaltenzelle 00.00 Uhr, in der drei Workflows zwischen 8.05 Uhr und 8.05 Uhr ausgeführt werden.](assets/wkf_monitoring_ex_8am.png)
 
 1. Klicken Sie auf eine farbige Zelle, um die Details aller gleichzeitigen Workflows anzuzeigen, die während dieses Zeitraums ausgeführt werden.
 
-   ![](assets/wkf_monitoring_details.png)
+   ![Heatmap mit ausgewählter 08-Stunden-Zelle und einer Tabelle mit den drei gleichzeitigen Workflows mit Aktivität und Dauer.](assets/wkf_monitoring_details.png)
 
    Für jeden Workflow werden alle darin enthaltenen Aktivitäten mit ihrer Dauer aufgelistet.
 
@@ -139,7 +139,7 @@ Als Campaign-Administrator kann Ihnen die Workflow-HeatMap dabei helfen, die Aus
 1. Legen Sie die Dauer auf ein paar Sekunden oder ein paar Minuten fest.
 1. Schließen Sie die kürzesten nicht relevanten Workflows aus, indem Sie den Dauerfilter erhöhen.
 
-   ![](assets/wkf_monitoring_short_duration.png)
+   ![Heatmap-Filter mit einem Schieberegler für die Mindestdauer von 3 Minuten (189 Sekunden), um die kürzesten Workflows auszuschließen.](assets/wkf_monitoring_short_duration.png)
 
 1. Untersuchen Sie die Ergebnisse, um die Auslastung der Instanz zu verstehen und geeignete Maßnahmen zu ergreifen:
 
@@ -153,7 +153,7 @@ Als Campaign-Administrator hilft Ihnen die Workflow-HeatMap dabei, die längsten
 1. Klicken Sie in der Ansicht **[!UICONTROL Campaign Workflow-Heatmap]** auf die Schaltfläche **[!UICONTROL Filter]**.
 1. Legen Sie die Dauer auf 1 Stunde fest.
 
-   ![](assets/wkf_monitoring_long_duration.png)
+   ![HeatMap-Filter mit Schieberegler für Mindestdauer auf maximal 1 Stunde (3.600 Sekunden) eingestellt.](assets/wkf_monitoring_long_duration.png)
 
 1. Fügen Sie weitere Ergebnisse hinzu, indem Sie den Filter **[!UICONTROL Mindestdauer]** verringern.
 1. Untersuchen Sie die Ergebnisse, um die längsten Workflows zu finden, die möglicherweise größere Auswirkungen auf die Server- und Datenbankressourcen (CPU, RAM, Netzwerk, IOPS usw.) haben können.
@@ -173,7 +173,7 @@ In diesem Fall beschweren sich viele Benutzer über die Workflow-Performance. Si
 1. Setzen Sie den Filter **[!UICONTROL Workflow-Typ]** auf **[!UICONTROL Marketing]**.
 1. Beachten Sie Folgendes in der HeatMap-Tabelle:
 
-   ![](assets/wkf_monitoring_without.png)
+   ![Heatmap-Raster ohne den Filter „Dauer“, mit einer Spitze von 50 Workflows in der 10-Stunden-Zeile und wenigen Zellen nach 14 Stunden.](assets/wkf_monitoring_without.png)
 
    * Fünfzig langwierige (über 5 Minuten) Kampagnen-Workflows werden um 10 Uhr ausgeführt.
    * Die meisten von ihnen haben den Status „Ausstehend“ (standardmäßig ist der Grenzwert für gleichzeitig laufende Workflows auf 20 festgelegt).
@@ -184,7 +184,7 @@ In diesem Fall beschweren sich viele Benutzer über die Workflow-Performance. Si
 1. Gehen Sie zurück zur Seite **[!UICONTROL Campaign Workflow-Heatmap]** und klicken Sie auf die Schaltfläche **[!UICONTROL Daten neu laden]**.
 1. Beachten Sie jetzt Folgendes:
 
-   ![](assets/wkf_monitoring_with.png)
+   ![Heatmap-Raster mit angewendetem Dauerfilter, das eine andere Verteilung zeigt, wobei die Spitze auf 18 Workflows reduziert wird.](assets/wkf_monitoring_with.png)
 
    * Um 10 Uhr morgens laufen nur noch achtzehn langwierige Kampagnen-Workflows.
    * Es befinden sich keine Workflows mehr im Status „Ausstehend“ (der Grenzwert für gleichzeitig laufende Workflows ist weiterhin auf 20 festgelegt).

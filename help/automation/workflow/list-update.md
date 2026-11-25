@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 100%
+source-wordcount: '609'
+ht-degree: 88%
 ---
 # Listen-Update{#list-update}
 
@@ -36,13 +36,13 @@ ht-degree: 100%
 
 Das **Listen-Update** speichert die Ergebnisse der eingehenden Aktivitäten in einer Liste.
 
-![](assets/s_user_segmentation_update_group.png)
+![Listen-Update-Aktivitätseditor mit explizit ausgewähltem „Angegeben“, dem Listenordner und Speichertypoptionen.](assets/s_user_segmentation_update_group.png)
 
 Die Liste kann bereits existieren.
 
 Sie kann auch mit den Optionen **[!UICONTROL Wenn nötig, Liste erstellen (Name berechnet)]** und **[!UICONTROL Wenn nötig, Liste erstellen (Ordner und Name berechnet)]** erstellt werden. Mit diesen Optionen können Sie den Titel Ihrer Wahl auswählen, um eine Liste und später den Ordner, in dem sie gespeichert werden soll, zu erstellen. Der Titel kann auch automatisch durch Einfügen dynamischer Felder oder eines Skripts generiert werden. Die verschiedenen dynamischen Felder sind im Popup-Menü rechts neben dem Titel verfügbar.
 
-![](assets/s_user_segmentation_update_list_calc.png)
+![Aktivität „Listen-Update“ mit ausgewählter Option „Liste erstellen, falls erforderlich (berechneter Name)“ und einem Skript für berechnete Kennzeichnungen.](assets/s_user_segmentation_update_list_calc.png)
 
 Wenn die Liste bereits existiert, werden Empfangende zum bestehenden Inhalt hinzugefügt, es sei denn, Sie aktivieren die Option **[!UICONTROL Wenn sie existiert, Liste leeren und erneut verwenden (nicht vervollständigen)]**. In diesem Fall wird der Inhalt der Liste vor der Aktualisierung gelöscht.
 
@@ -52,7 +52,7 @@ In diesem Fall müssen die entsprechenden Tabellen zuvor in der Adobe Campaign-I
 
 Im Allgemeinen stellt die Speicherung einer Zielgruppe in einer Liste das Ende eines Workflows dar. Standardmäßig bietet die **[!UICONTROL Listen-Update]**-Aktivität daher keine ausgehende Transition. Dies kann durch Ankreuzen der Option **[!UICONTROL Ausgehende Transition erzeugen]** umgangen werden.
 
-![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie vom Explorer aus eine Liste von Empfängern erstellen](#video)
+![Wiedergabe-Schaltflächensymbol für den Video-Link.](assets/do-not-localize/how-to-video.png) [Im Video erfahren Sie, wie Sie vom Explorer aus eine Empfängerliste erstellen](#video)
 
 ## Anwendungsbeispiel Listen-Update {#example--list-update}
 
@@ -71,7 +71,7 @@ Im folgenden Beispiel folgt die Aktivität „Listen-Update“ einer Abfrage, di
 1. Lassen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** deaktiviert.
 1. Klicken Sie auf **[!UICONTROL OK]** und starten Sie den Workflow.
 
-   ![](assets/s_user_segmentation_update_list_calc_example.png)
+   ![Die Aktivität „Listen-Update“ wurde festgelegt, um die Liste M_WestUS_18-30 im Ordner „Listen“ zu erstellen, wobei Bereinigung und Wiederverwendung aktiviert waren.](assets/s_user_segmentation_update_list_calc_example.png)
 
    Die Empfängerliste wird erstellt und bei erneuter Ausführung des Workflows aktualisiert.
 

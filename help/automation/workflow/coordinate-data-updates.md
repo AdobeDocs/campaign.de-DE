@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 100%
+source-wordcount: '363'
+ht-degree: 83%
 ---
 # Koordinieren von Datenaktualisierungen{#coordinating-data-updates}
 
@@ -37,7 +37,7 @@ Das folgende Anwendungsbeispiel erläutert die Erstellung eines Workflows, mit d
 
 Dadurch soll überprüft werden, ob der Aktualisierungsprozess beendet wurde, bevor ein weiterer Aktualisierungsvorgang ausgeführt wird. Wir werden zu diesem Zweck eine Instanzvariable erstellen und im Workflow testen, ob die Instanz ausgeführt wird, um zu entscheiden, ob die Ausführung des Workflows fortgesetzt und die Aktualisierung durchgeführt werden soll.
 
-![](assets/uc_dataupdate_wkf.png)
+![Workflow: Planung, wird ausgeführt? Test, der am Ende auf Ja endet, oder Abfrage, Daten aktualisieren und am Ende auf Nein.](assets/uc_dataupdate_wkf.png)
 
 Der vorliegende Workflow besteht aus folgenden Aktivitäten:
 
@@ -55,19 +55,19 @@ Gehen Sie zur Erstellung des Workflows wie folgt vor:
    >
    >„isRunning“ ist die für dieses Beispiel ausgewählte Instanzvariable. Dies ist keine integrierte Variable.
 
-   ![](assets/uc_dataupdate_test.png)
+   ![Wird ausgeführt? Testaktivität mit der Bedingung „Ja“ instance.vars.isRunning und der Standardverzweigung no.](assets/uc_dataupdate_test.png)
 
 1. Fügen Sie eine Aktivität **Ende** zur **Nein**-Verzweigung hinzu. Dadurch erfolgt keine Ausführung, falls der Workflow bereits ausgeführt wird.
 1. Fügen Sie die gewünschten Aktivitäten zur **Ja**-Verzweigung hinzu. Für unser Beispiel sind dies die Aktivitäten **Abfrage** und **Daten-Update**.
 1. Öffnen Sie die erste Aktivität und fügen Sie den Befehl **instance.vars.isRunning = true** auf dem Tab **[!UICONTROL Erweitert]** hinzu. Auf diese Weise wird die Instanzvariable auf „wird ausgeführt“ gesetzt.
 
-   ![](assets/uc_dataupdate_query.png)
+   ![Registerkarte Erweitert der Aktivität Abfrage mit der Instanz des Initialisierungsskripts .vars.isRunning = true.](assets/uc_dataupdate_query.png)
 
 1. Fügen Sie am Ende der **[!UICONTROL Ja]**-Verzweigung eine **Ende**-Aktivität an und geben Sie danach den Befehl **instance.vars.isRunning = false** im Tab **[!UICONTROL Erweitert]** ein.
 
    Dadurch wird keine Aktion aufgeführt, solange der Workflow ausgeführt wird.
 
-   ![](assets/uc_dataupdate_end.png)
+   ![Registerkarte Erweitert der Aktivität Ende 2 mit der Instanz des Initialisierungsskripts „instance.vars.isRunning = false.](assets/uc_dataupdate_end.png)
 
 **Verwandte Themen:**
 

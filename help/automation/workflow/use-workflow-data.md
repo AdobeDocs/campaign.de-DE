@@ -23,16 +23,16 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 100%
+source-wordcount: '929'
+ht-degree: 79%
 ---
 # Verwenden von Workflow-Daten{#how-to-use-workflow-data}
 
 Sie können Workflow-Aktivitäten zur Durchführung unterschiedlicher Aufgaben verwenden. Im Folgenden finden Sie Beispiele zur Aktualisierung der Datenbank durch die Erstellung von Listen, die Verwaltung von Abonnements, den Versand von Nachrichten über einen Workflow oder die Anreicherung von Sendungen und ihren Zielgruppen.
 
-Mehrere Anwendungsfälle für Workflows finden Sie in [diesem Abschnitt](workflow-use-cases.md).
+Eine Reihe von Workflow-Anwendungsfällen ist unter [Workflow-Anwendungsfälle“ &#x200B;](workflow-use-cases.md).
 
 ## Lebenszyklus der Arbeitsdaten {#data-life-cycle}
 
@@ -42,7 +42,7 @@ In einem Workflow werden die von einer Aktivität zur anderen übertragenen Date
 
 Die Daten können durch Rechtsklick auf die entsprechende Transition angezeigt und analysiert werden.
 
-![](assets/wf-right-click-analyze.png)
+![Workflow mit einem Kontextmenü auf einer Transition, das die Optionen Zielgruppe anzeigen und Zielgruppe analysieren anzeigt.](assets/wf-right-click-analyze.png)
 
 Wählen Sie im Kontextmenü die entsprechende Option aus:
 
@@ -50,13 +50,13 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
   In diesem Menü werden die verfügbaren Daten der Zielpopulation angezeigt.
 
-  ![](assets/wf-right-click-display.png)
+  ![Populationsfenster anzeigen, Registerkarte „Daten“, auf der die Datensätze der Zielgruppe mit ihren Feldern aufgeführt sind.](assets/wf-right-click-display.png)
 
   Sie können auf die Struktur der Arbeitstabelle in der Registerkarte **[!UICONTROL Schema]** zugreifen.
 
-  ![](assets/wf-right-click-schema.png)
+  ![Populationsfenster anzeigen, Registerkarte Schema , auf der die Struktur der temporären Arbeitstabelle :enrich ihrer Felder angezeigt wird.](assets/wf-right-click-schema.png)
 
-  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](monitor-workflow-execution.md#worktables-and-workflow-schema).
+  Weitere Informationen finden Sie unter [Arbeitstabellen und Workflow-Schemata](monitor-workflow-execution.md#worktables-and-workflow-schema).
 
 * **[!UICONTROL Zielgruppe analysieren…]**
 
@@ -66,7 +66,7 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
 Die Zielgruppendaten werden bei Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Aktivieren Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]**.
 
-![](assets/wf-purge-data-option.png)
+![Workflow-Eigenschaften mit der Option Zwischen zwei Ausführungen die ermittelte Population festhalten aktiviert.](assets/wf-purge-data-option.png)
 
 >[!CAUTION]
 >
@@ -89,7 +89,7 @@ Im folgenden Beispiel sollen Kundeninformationen in einer Liste gesammelt und da
 
 1. Erstellen Sie einen Workflow, um die Informationen zu sammeln, sie mit der Datenbank abzustimmen und den Versand zu starten.
 
-   ![](assets/wf-targetdata-sample-1.png)
+   ![Workflows, bei denen die Aktivitäten Laden (Datei), Anreichern und Versand nacheinander verbunden sind.](assets/wf-targetdata-sample-1.png)
 
 1. Im vorliegenden Beispiel enthält die Datei folgende Informationen:
 
@@ -105,15 +105,15 @@ Im folgenden Beispiel sollen Kundeninformationen in einer Liste gesammelt und da
 
    Um die Datei zu laden, konfigurieren Sie die Aktivität **[!UICONTROL Laden (Datei)]** wie folgt:
 
-   ![](assets/wf-targetdata-sample-2.png)
+   ![Aktivität „Laden (Datei)“ mit einer CSV-Beispieldatei, einer Vorschau der Spalten und dem Hochladen einer Datei vom lokalen Computer.](assets/wf-targetdata-sample-2.png)
 
 1. Konfigurieren Sie nun eine Aktivität vom Typ **[!UICONTROL Anreicherung]**, um die geladenen Daten mit denen, die sich schon in der Adobe Campaign-Datenbank befinden, abzustimmen. Hier dient die Kundennummer als Abstimmschlüssel:
 
-   ![](assets/wf-targetdata-sample-3.png)
+   ![Anreicherungsaktivität, Registerkarte Abstimmung , wobei das Quellausdruckskonto mit dem @account abgeglichen wird.](assets/wf-targetdata-sample-3.png)
 
 1. Konfigurieren Sie dann die **[!UICONTROL Versandaktivität]**. Sie wird basierend auf einer Vorlage erstellt und die Empfänger werden durch die eingehende Transition bestimmt.
 
-   ![](assets/wf-targetdata-sample-4.png)
+   ![Versandaktivität basierend auf einer Vorlage erstellt, wobei die Empfängerinnen und Empfänger durch die eingehenden Ereignisse und die Vorbereitungsaktion angegeben werden.](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
@@ -123,13 +123,13 @@ Im folgenden Beispiel sollen Kundeninformationen in einer Liste gesammelt und da
 
    Fügen Sie hierfür Personalisierungsfelder vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** ein.
 
-   ![](assets/wf-targetdata-sample-5.png)
+   ![Personalisierungsmenü des Versand-Editors mit geöffneter Target-Erweiterung, in der Felder wie Musik, Konto und Karte aufgelistet sind.](assets/wf-targetdata-sample-5.png)
 
    Im vorliegenden Beispiel wird der bevorzugte Musikstil des Kunden und der bevorzugte Datenträger (CD oder DVD) - gemäß den Informationen der durch den Workflow geladenen Datei - eingefügt.
 
    Des Weiteren enthält der Versand ein Angebot für Kunden mit Kundenkarte, d. h. für Kunden, bei denen der Wert &#39;Kundenkarte&#39; gleich 1 ist.
 
-   ![](assets/wf-targetdata-sample-6.png)
+   ![Versandinhalt mit einem Skript, das 10 % Rabatt bietet, wenn targetData.card gleich 1 ist, und targetData.Music-Personalisierung.](assets/wf-targetdata-sample-6.png)
 
    Daten des Typs **[!UICONTROL Zielgruppenerweiterung]** (targetData) werden mit denselben Eigenschaften wie alle anderen Personalisierungsfelder in Sendungen eingefügt. Sie können auch im Betreff, in Link-Titeln oder in den Links selbst verwendet werden.
 
@@ -146,7 +146,7 @@ Zur Aktualisierung der Adobe Campaign-Datenbank und von Listen stehen zwei dediz
 
   Sie können eine vorhandene Liste auswählen oder eine Liste erstellen. In diesem Fall werden ihr Name und gegebenenfalls ihr Eintragsordner berechnet.
 
-  ![](assets/s_user_create_list.png)
+  ![Aktivität „Listen-Update“ mit einer explizit angegebenen Liste, die in der Datenbank der Zielgruppendimension mit einer eigenen Tabelle gespeichert wird.](assets/s_user_create_list.png)
 
   Siehe [Listen-Update](list-update.md).
 

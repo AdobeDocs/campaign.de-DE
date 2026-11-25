@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1924'
-ht-degree: 100%
+source-wordcount: '2262'
+ht-degree: 85%
 ---
 # Dienstleister, Lager und Budgets{#providers-stocks-and-budgets}
 
@@ -66,7 +66,7 @@ Sie können so viele Dienstleister erstellen, wie für Ihre Sendungen notwendig 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Liste der Dienstleister.
 1. Geben Sie im unteren Abschnitt des Fensters Namen und Kontaktdaten des Dienstleisters an.
 
-   ![](assets/add-a-supplier.png)
+   ![Liste der Dienstleister im Explorer und ein neues Formular für Dienstleister mit den Feldern Titel, Interner Name und Kommentar](assets/add-a-supplier.png)
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um ihn der Liste hinzuzufügen.
 
@@ -80,11 +80,11 @@ Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen
 
 1. Klicken Sie auf der Registerkarte **[!UICONTROL Services]** des Dienstleisters auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie den Namen der Dienstleistungsvorlage ein.
 
-   ![](assets/supplier-new-template.png)
+   ![Dialogfeld „Service“ für eine neue Service-Vorlage, Registerkarte „Allgemein“ mit Feldern „Bezeichnung“, „Interner Name“ und „Kommentar“](assets/supplier-new-template.png)
 
 1. Erstellen Sie die Kostenkategorien für jeden Prozesstyp (Versand durch Direkt-Mail/E-Mail/etc. oder Aufgabe). Klicken Sie dazu auf die Registerkarte **[!UICONTROL Kostenkategorien]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie die Parameter jeder Kostenkategorie an.
 
-   ![](assets/add-cost-categories.png)
+   ![Registerkarte „Kostenkategorien“ mit der Schaltfläche „Hinzufügen“ und dem Dialogfeld „Kostenkategorie“ für eine Briefpostkategorie und ihre Kostentypen](assets/add-cost-categories.png)
 
    * Geben Sie eine Bezeichnung für diese Kostenkategorie ein und wählen Sie den betreffenden Vorgangstyp aus: **[!UICONTROL Briefpost]**, **[!UICONTROL E-Mail]**, **[!UICONTROL Mobilgerät]** usw.
    * Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die mit dieser Kostenkategorie verbunden Kostentypen zu bestimmen.
@@ -96,7 +96,7 @@ Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen
 
 1. Sie können einen Wert für diese Kostenstelle vorab auswählen. Dieser wird dann der Standardwert in den Kostenstellen des Dienstleisters (anstelle eines leeren Werts). Aktivieren Sie dazu in der Spalte **[!UICONTROL Ausgewählt]** für den betreffende Kategorietyp die Option **Ja**:
 
-   ![](assets/default-cost-type.png)
+   ![Dialogfeld Kostenkategorie mit aktivierter Option „Ja“ in der Spalte „Ausgewählt“ für den Kostentyp „Brief“](assets/default-cost-type.png)
 
    Auf Versandebene wird der Wert standardmäßig vorgeschlagen.
 
@@ -106,7 +106,7 @@ Eine Kostenstruktur spezifiziert für jede Kostenkategorie die anzuwendenden Ber
 
 Klicken Sie auf die Registerkarte **[!UICONTROL Kostenstruktur]**, um die Kostenberechnung für jede Kostenkategorie und jeden Kostentyp zu konfigurieren. Klicken Sie auf **[!UICONTROL Hinzufügen]** und geben Sie die Kostenstruktur ein.
 
-![](assets/add-cost-structure.png)
+![Registerkarte Kostenstruktur mit der Schaltfläche Hinzufügen und dem Dialogfeld für die Definition der Kostenstruktur: Kanal, Kostenkategorie, Berechnung](assets/add-cost-structure.png)
 
 * Um die Kostenstruktur zu erstellen, wählen Sie in den Dropdown-Listen den Nachrichtentyp, die betreffende Kostenkategorie sowie den Kostentyp aus, auf den die Berechnungsregel angewendet werden soll. Der Inhalt dieser Dropdown-Listen stammt aus den Informationen, die über die Registerkarte **[!UICONTROL Kostenkategorien]** eingetragen wurden.
 
@@ -126,7 +126,7 @@ Wenn es sich unabhängig von der Gesamtzahl von Nachrichten immer um den gleiche
 
 Wenn der Betrag auf eine bestimmte Anzahl an Nachrichten angewandt wird, geben Sie diese im Feld **[!UICONTROL für]** an.
 
-![](assets/supplier_cost_structure_calc.png)
+![Dialog Kostenstruktur mit Pro Nachricht und Linear ausgewählt, ein Betrag von 4,00 für 5 Einheiten](assets/supplier_cost_structure_calc.png)
 
 
 #### Lineare Struktur mit Schwellen {#linear-structure-by-threshold}
@@ -135,7 +135,7 @@ Wenn der Betrag nach Schwellenwert für jede Nachricht gilt, müssen Sie eine Be
 
 Die entsprechende Konfiguration sieht wie folgt aus:
 
-![](assets/supplier-cost-structure-linear.png)
+![Dialogfeld „Kostenstruktur“ mit dem Wert Linear nach Schwellenwerttyp, einer Liste von Schwellenwerten mit Beträgen und einem Wert „Darüber hinaus“](assets/supplier-cost-structure-linear.png)
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** rechts von der Liste, um einen neuen Schwellenwert zu definieren.
 
@@ -143,13 +143,13 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** rechts von der Li
 
 Schließlich können Sie eine Kostenberechnung entsprechend der Gesamtzahl der Nachrichten konfigurieren. Wählen Sie dazu die Berechnungsstruktur **[!UICONTROL Pauschal mit Schwellen]**. Beispielsweise werden die Kosten für 1 bis 100 Nachrichten auf einen festen Betrag von 12,00 gesetzt, für einen Versand von 101 bis 1000 Nachrichten auf 100,00 und für jeden Versand von über 1000 Nachrichten auf 500,00, unabhängig von der Gesamtzahl.
 
-![](assets/supplier-cost-structure-constant.png)
+![Dialogfeld „Kostenstruktur“ mit dem Wert „Konstante nach Schwellenwerttyp“, einer Liste mit Schwellenwerten mit festen Beträgen und einem „Jenseits“-Wert](assets/supplier-cost-structure-constant.png)
 
 ### Konfigurieren von mit einem Service verknüpften Aufträgen {#configure-processes-associated-with-a-service}
 
 Über die Registerkarte **[!UICONTROL Aufträge]** können Sie Informationen über die mit dem Dienstleister verbundenen Prozesse zuordnen. In diesem Bereich können Sie den Informationsversand an den Router konfigurieren.
 
-![](assets/cost-supplier-jobs.png)
+![Registerkarte „Vorgänge“ eines Services mit den Einstellungen für Dateiextraktion, Benachrichtigungs-E-Mail und Nachbearbeitungs-Workflow-Vorlagen](assets/cost-supplier-jobs.png)
 
 * Der Abschnitt **[!UICONTROL Dateiextraktion]** gibt die Exportvorlage an, die bei Auswahl dieses Dienstes für den Versand verwendet wird. Sie können den Namen der Ausgabedatei im Feld **[!UICONTROL Extraktionsdatei]** angeben. Die rechts vom Feld gelegene Schaltfläche ermöglicht das Einfügen von Variablen.
 
@@ -171,18 +171,18 @@ Wenn ein Dienst ausgewählt wird, werden die Kostenkategorien entsprechend dem V
 
 * Beim Briefpost-Versand können Sie den Dienst über das Konfigurationsfenster auswählen.
 
-  ![](assets/supplier-mail-delivery-select.png)
+  ![Briefpost-Versand mit hervorgehobenem Abschnitt „Dienstleister“: Feld „Dienstleistung“ und Liste der Kostenkategorien](assets/supplier-mail-delivery-select.png)
 
 * Beim Versand über mobile Kanäle werden Dienste auf die gleiche Weise wie beim Briefpost-Versand ausgewählt.
 * In E-Mail-Sendungen werden Dienstleistungen über den Tab **[!UICONTROL Erweitert]** der Eigenschaften des jeweiligen Versands ausgewählt, wie im folgenden Beispiel:
 
-  ![](assets/supplier-email-delivery-select.png)
+  ![Versandeigenschaften, Registerkarte Erweitert mit dem Abschnitt Dienstleister , in dem das Feld „Dienstleistung“ und die Liste der Kostenkategorien angezeigt werden](assets/supplier-email-delivery-select.png)
 
 Über die Spalte **[!UICONTROL Zu belastender Betrag]** können Kosten für diese Stelle im Kontext des betreffenden Versands oder der Aufgabe hinzugefügt werden.
 
 Bei der Bestimmung der Kostenstellen eines Versands können Sie eine obligatorische Auswahl eines Kostentyps definieren. Wählen Sie dazu **[!UICONTROL Auswahl eines Werts aus der Kostentypliste erforderlich]**.
 
-![](assets/cost-type-must-be-selected.png)
+![Der Dialog Kostenkategorie mit der Option A Kostentyp muss ausgewählt sein muss über der Liste der Kostentypen aktiviert sein](assets/cost-type-must-be-selected.png)
 
 ## Verwaltung von Lagern und Lagerergänzungen {#stock-and-order-management}
 
@@ -202,7 +202,7 @@ Um die Verwaltung von Lagern und Lagerergänzungen in Adobe Campaign einzusetzen
 
 Adobe Campaign kann eine Benutzergruppe benachrichtigen, wenn das Lager leer ist oder einen Mindestbestand erreicht hat. Auf die Lagerbestände kann über den Link **[!UICONTROL Lager]** im Tab **[!UICONTROL Kampagnen]** über den Link **[!UICONTROL Andere Auswahlmöglichkeiten]** des Navigationsbereichs zugegriffen werden.
 
-![](assets/stock-dashboard.png)
+![Adobe Campaign-Startseite, Registerkarte „Kampagnen“, auf der die Liste „Lager“ die verfügbaren Lager anzeigt](assets/stock-dashboard.png)
 
 #### Erstellen eines Lagers {#creating-a-stock}
 
@@ -217,17 +217,17 @@ Ein Lager umfasst verschiedene Lagerpositionen. Eine Lagerposition enthält eine
 
 Klicken Sie bei der Erstellung eines Lagers auf den Tab **[!UICONTROL Lagerpositionen]**, um neue Positionen hinzuzufügen.
 
-![](assets/stock-new-lines.png)
+![Bildschirm „Lagerbearbeitung“, Registerkarte „Lagerpositionen“, Auflisten von Lagerpositionen mit den Spalten „Anfangsbestand“, „Verbrauch“, „Lagerbestand“ und „Meldebestand“](assets/stock-new-lines.png)
 
 Nachdem das Lager erstellt wurde, können Sie sein Dashboard verwenden, um Lagerpositionen zu erstellen und zu überwachen.
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**, um neue Lagerpositionen hinzuzufügen.
 
-![](assets/add-stock-lines.png)
+![Lager-Dashboard mit der Schaltfläche Erstellen über einer Liste von Lagerpositionen, die die anfänglichen, verbrauchten und Lagerbestände anzeigen](assets/add-stock-lines.png)
 
 * Geben Sie die Anfangsmenge des Lagerbestands im Feld **[!UICONTROL Anfangsbestand]** an. Die Felder **[!UICONTROL Entnommen]** und **[!UICONTROL Restbestand]** werden automatisch berechnet und entsprechend dem Fortschritt der Kampagnen aktualisiert.
 
-  ![](assets/create-new-stock-line.png)
+  ![Dialogfeld „Lagerposition“, Registerkarte „Allgemein“ mit den Mengen für Anfangsbestand, Verbrauchswerte und Lagerbestände und dem Feld „Meldestufe“](assets/create-new-stock-line.png)
 
 * Geben Sie im Feld **[!UICONTROL Meldebestand]** den Schwellenwert an, bei dem die Benutzenden über eine notwendige Lagerergänzung benachrichtigt werden sollen. Beim Erreichen des Meldebestands wird im Validierungsfenster der Sendungen, die auf dieses Lager zugreifen, ein Warnhinweis angezeigt.
 
@@ -235,7 +235,7 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**, um neue Lagerposit
 
 Folgendes Beispiel zeigt, wie Lagerpositionen in Dienstleistungen über die Kostenkategorien zugeordnet werden können:
 
-![](assets/select-stock-line-supplier.png)
+![Dialogfeld Kostenkategorie mit einer Lagerposition, die aus der Dropdown-Liste „Lagerposition“ eines Kostentyps ausgewählt wurde](assets/select-stock-line-supplier.png)
 
 ### Lagerverfolgung {#stock-tracking}
 
@@ -243,7 +243,7 @@ Folgendes Beispiel zeigt, wie Lagerpositionen in Dienstleistungen über die Kost
 
 Bei einem Versand, der auf eine Lagerposition mit unzureichendem Bestand zugreift, wird ein Warnhinweis angezeigt. Das unten stehende Beispiel zeigt die Meldung, die bei Validierung einer Extraktionsdatei erscheint:
 
-![](assets/stock-alert.png)
+![Aktion im Versanddialogfeld, die vor der Dateivalidierung einen unzureichenden Bestand-Warnhinweis mit den Optionen Akzeptieren und Ablehnen anzeigt](assets/stock-alert.png)
 
 #### Lagerergänzungen {#orders}
 
@@ -251,7 +251,7 @@ Im Untertab **[!UICONTROL Lagerergänzungen]** werden die laufenden Bestellungen
 
 Um eine neue Ergänzung zu speichern, öffnen Sie die entsprechende Lagerposition, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie das Lieferdatum sowie die bestellte Menge an.
 
-![](assets/order-stocks.png)
+![Registerkarte „Lagerpositionen-Bestellungen“ mit der Schaltfläche „Hinzufügen“ und einem Dialogfeld „Lagerbestellungen“ mit den Feldern „Lieferdatum“ und „Volumen auf Bestellung“](assets/order-stocks.png)
 
 >[!NOTE]
 >

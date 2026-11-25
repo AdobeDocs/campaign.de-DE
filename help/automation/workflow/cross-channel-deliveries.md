@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 100%
+source-wordcount: '346'
+ht-degree: 76%
 ---
 # Kanalübergreifender Versand{#cross-channel-deliveries}
 
@@ -46,26 +46,26 @@ Im folgenden Beispiel erfahren Sie, wie Sie einen Workflow erstellen, um eine E-
    >
    >Verwenden Sie für Push-Benachrichtigungen die Zieldimension **Abonnierte Anwendungen**.
 
-   ![](assets/cross_channel_delivery_1.png)
+   ![Abfrageaktivität mit dem Schema Abonnierte Anwendungen , das als zu filterndes Dokument ausgewählt wurde.](assets/cross_channel_delivery_1.png)
 
 1. Fügen Sie Ihrer Abfrage die Filterbedingungen hinzu. In diesem Fall wählen wir Empfängerinnen und Empfänger aus, die über eine Mobiltelefonnummer oder E-Mail-Adresse verfügen.
 
-   ![](assets/cross_channel_delivery_2.png)
+   ![Abfragefilter mit Mobile ist nicht leer und eine OR-Bedingung für E-Mail ist nicht leer.](assets/cross_channel_delivery_2.png)
 
 1. Fügen Sie Ihrem Workflow eine **[!UICONTROL Aufspaltung]** hinzu, um Empfänger in Besitzer einer Mobiltelefonnummer und in Besitzer einer E-Mail-Adresse zu unterteilen.
 1. Wählen Sie im Tab **[!UICONTROL Versand]** für jeden Zieldatensatz einen Versand.
 
    Erstellen Sie Ihren Versand auf dieselbe Weise wie mit dem klassischen Versand-Assistenten, indem Sie die Versandaktivität in Ihrem Workflow per Doppelklick auswählen.
 
-   ![](assets/cross_channel_delivery_3.png)
+   ![Kampagnen-Workflow mit einer Abfrage und einer Aufspaltung, die zu einem Mobile- und einem E-Mail-Versand führt.](assets/cross_channel_delivery_3.png)
 
 1. Fügen Sie eine **[!UICONTROL Warten]**-Aktivität hinzu und konfigurieren Sie sie, damit die Empfänger nicht zu viele Sendungen gleichzeitig erhalten.
 1. Fügen Sie eine **[!UICONTROL Aufspaltung]** hinzu, um Abonnenten in Anwender von iOS- und Android-Apps zu unterteilen.
 
    Wählen Sie für jedes Betriebssystem einen Dienst aus.
 
-   ![](assets/cross_channel_delivery_4.png)
+   ![Dialogfeld „Abfrage“ mit Abonnentenanwendungen als Zielgruppendimension und ausgewählten Abonnenten einer Android-Mobile-App.](assets/cross_channel_delivery_4.png)
 
 1. Wählen Sie für jedes Betriebssystem einen Mobile-App-Versand aus und konfigurieren Sie ihn.
 
-   ![](assets/cross_channel_delivery_5.png)
+   ![Workflow mit E-Mail- und SMS-Sendungen, die einer Warteaktivität beitreten, dann eine Aufspaltung, um iOS- und Push-Android-Sendungen zu pushen.](assets/cross_channel_delivery_5.png)

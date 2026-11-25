@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 97%
+source-wordcount: '687'
+ht-degree: 78%
 ---
 # Filterregeln{#filtering-rules}
 
@@ -44,27 +44,27 @@ Gehen Sie wie folgt vor:
 1. Navigieren Sie zum Ordner **[!UICONTROL Administration > Kampagnenverwaltung > Typologieverwaltung > Typologieregeln]** des Campaign-Explorers und klicken Sie auf das Symbol **Neu**, um eine Typologieregel zu erstellen.
 1. Erstellen Sie eine Typologieregel **[!UICONTROL Filterung]**, die für alle Kanäle gilt.
 
-   ![](assets/campaign_opt_create_filter_01.png)
+   ![Neue Typologieregel mit Filterung als Regeltyp und der in der Kanalliste ausgewählten Option „Alle Kanäle“.](assets/campaign_opt_create_filter_01.png)
 
 1. Ändern Sie auf der **Filter**-Registerkarte die Standard-Zieldimension auf **Abonnements** (**nms:subscription**).
 
-   ![](assets/campaign_opt_create_filter_02.png)
+   ![Registerkarte „Filter“ mit dem Schema „Abonnements (nms)“ als Zielgruppendimension ausgewählt.](assets/campaign_opt_create_filter_02.png)
 
 1. Erstellen Sie den Filter über den Link **[!UICONTROL Abfrage von der Zielgruppendimension ausgehend bearbeiten]**.
 
-   ![](assets/campaign_opt_create_filter_03.png)
+   ![Dialogfeld „Filterabfrage bearbeiten“, Schritt Zieltyp mit ausgewählten Filterbedingungen.](assets/campaign_opt_create_filter_03.png)
 
 1. Filtern Sie nach Alter der Empfänger und speichern Sie die Filterbedingung.
 
-   ![](assets/campaign_opt_create_filter_03b.png)
+   ![Dialogfeld „Filterabfrage bearbeiten“ mit der Bedingung Alter (Empfänger/@age) größer als 18.](assets/campaign_opt_create_filter_03b.png)
 
 1. Verknüpfen Sie auf der Registerkarte **Typologien** diese Regel mit einer Kampagnentypologie und speichern Sie sie.
 
-   ![](assets/campaign_opt_create_filter_04.png)
+   ![Registerkarte Typologien der Filterregel mit dem Dialogfeld Typologien hinzufügen und der ausgewählten Newsletter-Typologie.](assets/campaign_opt_create_filter_04.png)
 
 Wenn diese Regel in einem Versand verwendet wird, werden minderjährige Abonnenten automatisch ausgeschlossen. Eine spezifische Nachricht gibt an, wann die Regel angewendet wird:
 
-![](assets/campaign_opt_create_filter_05.png)
+![Versandanalyseprotokoll mit einem Pfeil an den Zeilen, auf die die Regeln „Adressen ausschließen“ und „Domains ausschließen“ angewendet werden.](assets/campaign_opt_create_filter_05.png)
 
 ## Erstellen von Bedingungen für eine Filterregel {#condition-a-filtering-rule}
 
@@ -86,17 +86,17 @@ In diesem Fall wird die Regel nur auf die Sendungen angewandt, die den Kriterien
 
 Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.**&#x200B;**
 
-![](assets/campaign_opt_create_typo_filtering.png)
+![Typologie, bei der die Typenliste auf Filtern und die Registerkarte Regeln eingestellt ist, auf der die anzuwendenden Filterregeln aufgeführt sind.](assets/campaign_opt_create_typo_filtering.png)
 
 Diese **[!UICONTROL Filtertypologien]** können bei der Zielgruppenbestimmung einem Versand zugeordnet werden: Klicken Sie im Versandassistent auf den Link **[!UICONTROL An]**, dann auf den Tab .
 
-![](assets/campaign_opt_apply_typo_filtering.png)
+![Wählen Sie das Dialogfeld Ziel auswählen, Registerkarte Ausschlüsse mit dem Link Filterregel hinzufügen unter Filterregeln.](assets/campaign_opt_apply_typo_filtering.png)
 
 Wählen Sie dann die Filtertypologie aus, die auf den Versand angewendet werden soll. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Typologien aus, die angewendet werden sollen.
 
 Sie können Filterregeln auch direkt über diese Registerkarte verknüpfen, ohne dass sie in eine Typologie gruppiert werden. Verwenden Sie dazu den unteren Abschnitt des Fensters.
 
-![](assets/campaign_opt_select_typo_filtering.png)
+![Registerkarte „Ausschlüsse“ mit einer Filtertypologie und einer über die beiden Schaltflächen „Hinzufügen“ hinzugefügten Filterregel.](assets/campaign_opt_select_typo_filtering.png)
 
 >[!NOTE]
 >

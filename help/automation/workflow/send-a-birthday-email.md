@@ -20,10 +20,10 @@ subfeature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 100%
+source-wordcount: '1088'
+ht-degree: 79%
 ---
 # Senden einer Geburtstags-E-Mail{#sending-a-birthday-email}
 
@@ -31,7 +31,7 @@ Im folgenden Anwendungsbeispiel wird aufgezeigt, wie sich der wiederkehrende Ver
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
-![](assets/birthday-workflow_usecase_1.png)
+![Geburtstags-Workflow: Planung, Abfrage, 1. März, Verzweigung mit Schaltjahrabfrage, Vereinigung, dann Versand.](assets/birthday-workflow_usecase_1.png)
 
 In diesem täglich ausgeführten Workflow werden alle Empfänger ausgewählt, deren Geburtstag dem aktuellen Datum entspricht.
 
@@ -48,20 +48,20 @@ Gehen Sie hierzu wie folgt vor:
 1. Ziehen Sie eine **[!UICONTROL Abfrage]** in den Workflow-Arbeitsbereich und öffnen Sie sie per Doppelklick.
 1. Klicken Sie auf den Link **Abfrage bearbeiten** und wählen Sie **[!UICONTROL Filterbedingungen]** aus.
 
-   ![](assets/s_ncs_user_create_exp_exple00.png)
+   ![Fenster der Zielgruppen- und Filterdimension mit ausgewählten Empfängern und hervorgehobenen Filterbedingungen.](assets/s_ncs_user_create_exp_exple00.png)
 
 1. Klicken Sie in die erste Zelle der Spalte **[!UICONTROL Ausdruck]** und anschließend auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**, um den Ausdruckseditor zu öffnen.
 
-   ![](assets/s_ncs_user_create_exp_exple.png)
+   ![Editor für Filterbedingungen mit einer leeren Ausdruckszelle und angezeigter Schaltfläche „Ausdruck bearbeiten“](assets/s_ncs_user_create_exp_exple.png)
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Erweiterte Auswahl]**, um den Filtermodus auszuwählen.
 
-   ![](assets/s_ncs_user_create_exp_exple_a.png)
+   ![Feld zur Auswahl der Felder für die Fensterliste der Empfänger mit hervorgehobener Schaltfläche für die erweiterte Auswahl.](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Wählen Sie die Option **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
 1. Wählen Sie aus der Funktionsliste über den Knoten **[!UICONTROL Datum]** mit einem Doppelklick die Funktion **[!UICONTROL Day]** aus. Diese Funktion gibt die Zahl aus, die dem Tag des als Parameter übergebenen Datums entspricht.
 
-   ![](assets/s_ncs_user_create_exp_exple01.png)
+   ![Bearbeiten Sie das Ausdrucksfenster mit Day() in der Bearbeitungszone und der in der Funktionsliste ausgewählten Day-Funktion.](assets/s_ncs_user_create_exp_exple01.png)
 
 1. Doppelklicken Sie in der Liste der verfügbaren Felder auf **[!UICONTROL Geburtsdatum]**. Im oberen Abschnitt des Editors wird nun folgende Formel angezeigt:
 
@@ -71,15 +71,15 @@ Gehen Sie hierzu wie folgt vor:
 
    Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
-1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]****[!UICONTROL gleich aus]**.
+1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]**&#x200B;**[!UICONTROL gleich aus]**.
 
-   ![](assets/s_ncs_user_create_exp_exple02.png)
+   ![Filterbedingungen mit Geburtsdatum als Ausdruck und geöffneter Dropdown-Liste „Operator“ mit „Ausgewählt“.](assets/s_ncs_user_create_exp_exple02.png)
 
 1. Klicken Sie anschließend in die erste Zelle der Spalte **[!UICONTROL Werte]** und auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**, um den Ausdruckseditor zu öffnen.
 1. Wählen Sie aus der Funktionsliste über den Knoten **[!UICONTROL Datum]** mit einem Doppelklick die Funktion **[!UICONTROL Day]** aus.
 1. Wählen Sie anschließend mit einem Doppelklick die Funktion **[!UICONTROL GetDate]** aus, um das aktuelle Datum abzurufen.
 
-   ![](assets/s_ncs_user_create_exp_exple04.png)
+   ![Bearbeiten Sie das Ausdrucksfenster, in dem Day(GetDate()) mit den in der Funktionsliste hervorgehobenen Day- und GetDate-Funktionen angezeigt wird.](assets/s_ncs_user_create_exp_exple04.png)
 
    Im oberen Abschnitt des Ausdruckseditors wird nun folgende Formel angezeigt:
 
@@ -93,7 +93,7 @@ Gehen Sie hierzu wie folgt vor:
 
    Die vollständige Abfrage lautet wie folgt:
 
-   ![](assets/s_ncs_user_create_exp_exple03.png)
+   ![Vollständige Abfrage: Geburtsdatum ist gleich dem aktuellen Datum und Geburtsmonat ist gleich dem aktuellen Datum.](assets/s_ncs_user_create_exp_exple03.png)
 
 Schließen Sie nun am Ergebnis der **[!UICONTROL Abfrage]**-Aktivität einen **[!UICONTROL E-Mail-Versand]** an, damit alle in Ihrer Liste enthaltenen Empfänger eine E-Mail zum Geburtstag erhalten.
 
@@ -121,7 +121,7 @@ Konfigurieren Sie zunächst die **[!UICONTROL Planung]** für eine tägliche Aus
 >
 >Sollte es sich bei dem laufenden Jahr um ein Schaltjahr handeln, werden alle Empfänger, deren Geburtstag auf den 29. Februar fällt, automatisch mit eingeschlossen.
 
-![](assets/birthday-workflow_usecase_2.png)
+![Filter der Abfrageaktivität mit dem Namen Geburtsmonat+Geburtsdatum ist gleich dem aktuellen Datum und entspricht dem aktuellen Geburtsdatum von Monat und Tag.](assets/birthday-workflow_usecase_2.png)
 
 Die Auswahl der Empfänger, deren Geburtstag dem aktuellen Datum entspricht, wird im Abschnitt [Identifizieren von Empfängern, die Geburtstag haben](#identifying-recipients-whose-birthday-it-is) beschrieben.
 
@@ -175,7 +175,7 @@ vars.firstOfMarch = 1;
 }
 ```
 
-![](assets/birthday-workflow_usecase_3.png)
+![Registerkarte Erweitert der Testaktivität mit einem Initialisierungsskript, das die isLeapYear-Funktion definiert.](assets/birthday-workflow_usecase_3.png)
 
 Fügen Sie im Bereich **[!UICONTROL Bedingte Verzweigung]** die folgende Bedingung hinzu:
 
@@ -183,7 +183,7 @@ Fügen Sie im Bereich **[!UICONTROL Bedingte Verzweigung]** die folgende Bedingu
 vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 ```
 
-![](assets/birthday-workflow_usecase_4.png)
+![Registerkarte Test, 1. März und KEIN Schaltjahr, mit True condition vars.currentIsALeapYear == 0 &amp;&amp; vars.firstOfMarch == 1.](assets/birthday-workflow_usecase_4.png)
 
 ### &#x200B;3. Schritt: Auswahl der Empfänger, die am 29. Februar Geburtstag haben {#step-3--select-any-recipients-born-on-february-29th}
 
@@ -191,7 +191,7 @@ Ziehen Sie eine **[!UICONTROL Verzweigung]** in das Diagramm und schließen Sie 
 
 Wählen Sie in dieser Abfrage alle Empfänger aus, die am 29. Februar Geburtstag haben.
 
-![](assets/birthday-workflow_usecase_5.png)
+![Abfrage zur Auswahl von Empfängern, die am 29. Februar geboren wurden: Geburtsmonat gleich 2 und Geburtsdatum gleich 29.](assets/birthday-workflow_usecase_5.png)
 
 Kombinieren Sie die Ergebnisse mithilfe einer **[!UICONTROL Vereinigung]**.
 
@@ -207,4 +207,4 @@ Fügen Sie für die gewünschte Geburtstags-E-Mail-Vorlage einen **wiederkehrend
 >
 >Wenn die Validierungsschritte für die Kampagne aktiviert sind, werden die Sendungen erst ausgeführt, nachdem diese Schritte bestätigt wurden. Weiterführende Informationen hierzu finden Sie in diesem Abschnitt.
 
-![](assets/birthday-workflow_usecase_1.png)
+![Geburtstags-Workflow: Planung, Abfrage, 1. März, Verzweigung mit Schaltjahrabfrage, Vereinigung, dann Versand.](assets/birthday-workflow_usecase_1.png)

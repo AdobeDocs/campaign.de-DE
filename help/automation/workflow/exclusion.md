@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 88%
 ---
 # Ausschluss{#exclusion}
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 Geben Sie zum Konfigurieren dieser Aktivität den Titel ein und wählen Sie die Hauptmenge für den Empfang aus. Die Population der Hauptmenge bildet die Grundlage für das Ergebnis. Profile, die sowohl der Hauptmenge als auch mindestens einer Eintrittsaktivität zugeordnet sind, werden ausgeschlossen.
 
-![](assets/s_user_segmentation_exclu.png)
+![Ausschlussaktivität mit dem Primären Satz, Ausschlussregeln, Ergebnisbezeichnung und Option „Komplement erzeugen“.](assets/s_user_segmentation_exclu.png)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Geben Sie zum Konfigurieren dieser Aktivität den Titel ein und wählen Sie die 
 
 Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie auch die Restpopulation verwenden möchten. Das Komplement besteht aus der eingehenden Hauptpopulation abzüglich der ausgehenden Population. Dann wird der Aktivität eine zusätzliche ausgehende Transition hinzugefügt, und zwar wie folgt:
 
-![](assets/s_user_segmentation_exclu_compl.png)
+![Ausschlussaktivität mit zwei ausgehenden Transitionen mit der Bezeichnung Ergebnis und Komplement.](assets/s_user_segmentation_exclu_compl.png)
 
 ## Anwendungsbeispiele für Ausschlüsse {#exclusion-examples}
 
@@ -56,7 +56,7 @@ Gesucht werden Empfänger zwischen 18 und 30 Jahre, die nicht in Berlin leben. G
 1. Bestätigen Sie die Ausschlusskonfiguration und fügen Sie dem Ergebnis dann eine Aktivität des Typs „Liste aktualisieren“ hinzu. Bei Bedarf können Sie außerdem eine zusätzliche Listenaktualisierung im Komplement einfügen.
 1. Führen Sie den Workflow aus. In diesem Beispiel besteht das Ergebnis aus Empfängerinnen und Empfängern im Alter von 18 bis 30 Jahren, allerdings werden die in Paris lebenden ausgeschlossen und an das Komplement gesendet.
 
-   ![](assets/exclusion_example.png)
+   ![Workflow, bei dem die Abfragen vom 18. bis 30. Lebensjahr in Paris ausgeführt werden und einen Ausschluss mit Ergebnis erzeugen und jedes zu einem Listen-Update ergänzen.](assets/exclusion_example.png)
 
 ## Eingabeparameter {#input-parameters}
 

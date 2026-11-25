@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '600'
+ht-degree: 94%
 ---
 # Datei-Wächter{#file-collector}
 
@@ -43,7 +43,7 @@ Die Dateien müssen sich auf dem Server befinden, auf dem das wfserver-Modul des
 
 Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie den Quellordner auswählen und die erfassten Dateien bei Bedarf filtern. Die anderen Tabs werden unter [E-Mail-Empfang](inbound-emails.md) (auf den Tabs **[!UICONTROL Planung]** und **[!UICONTROL Ablauf]**) ausführlich beschrieben.
 
-![](assets/file_collect_edit.png)
+![Registerkarte „Datei-Wächter-Verzeichnis“ mit den Optionen „Verzeichnis“, „Filtern“ und „Anhalten“, sobald eine Datei verarbeitet wurde](assets/file_collect_edit.png)
 
 1. **Abruf der Dateien**
 
@@ -89,7 +89,7 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
 Die Reihenfolge der Dateiverarbeitung kann nicht beeinflusst werden. Um eine Reihe von Dateien schrittweise zu verarbeiten, kann die Option **[!UICONTROL Stoppen, sobald eine Datei bearbeitet wurde]** in Verbindung mit einer Schlaufe verwendet werden. In diesem Fall werden die Dateien in alphabetischer Reihenfolge verarbeitet. Die Option **[!UICONTROL Fehlen von Dateien bearbeiten]** beendet die Schlaufe.
 
-![](assets/file_collect_loop.png)
+![Workflow-Schleife vom Import zurück zum Datei-Wächter mit einer Warnaktivität für die Transition „Keine Datei“](assets/file_collect_loop.png)
 
 ## Ausgabeparameter {#output-parameters}
 

@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: 011875268793bca1a000d745818dbd6c69461227
 workflow-type: tm+mt
-source-wordcount: '11620'
+source-wordcount: '11624'
 ht-degree: 16%
 ---
 # Häufig gestellte Fragen {#faq}
@@ -534,7 +534,7 @@ Erfahren Sie, wie Sie in Campaign v8 effektive Marketing-Nachrichten entwerfen, 
 
 +++ Was sind die Best Practices für die Gestaltung von E-Mails in Campaign?
 
-Wichtige Richtlinien: Sicherstellen eines responsiven Designs für Mobilgeräte, Verwenden von HTML 4.0/XHTML-kompatiblem Code mit Inline-CSS, Optimieren von Bildern (unter 100 KB) mit Alt-Text, Verwenden von Personalisierungszusammenführungsfeldern, Testen über E-Mail-Clients hinweg vor dem Versand und Einschließen einer Nur-Text-Version. Für optimale Zustellbarkeit wird eine E-Mail-Gesamtgröße von unter 500 KB angestrebt.
+Wichtige Richtlinien: Stellen Sie ein responsives Design für Mobilgeräte sicher und verwenden Sie HTML 4.0/XHTML-kompatiblen Code mit Inline-CSS. Optimieren Sie Bilder (unter 100 KB) mit Alternativtext, verwenden Sie Personalisierungszusammenführungsfelder, testen Sie E-Mail-Clients übergreifend vor dem Versand und nehmen Sie eine Nur-Text-Version vor. Für optimale Zustellbarkeit wird eine E-Mail-Gesamtgröße von unter 500 KB angestrebt.
 
 **Verwandte Themen:**
 
@@ -1212,7 +1212,7 @@ Das Campaign Control Panel ist eine Web-basierte Verwaltungsoberfläche, mit der
 Adobe Campaign v8 bietet die Möglichkeit, alle aktuellen Einstellungen für administrative und privilegierte Konten der obersten Ebene mit empfohlenen sicheren Standardeinstellungen zu vergleichen.
 
 * **Aktuelle Einstellungen (volle Sichtbarkeit):** Alle Einstellungen für administrative und berechtigte Konten können unter **[!UICONTROL Administration]** > **[!UICONTROL Zugriffsverwaltung]** (Client-Konsole oder Campaign Web-Benutzeroberfläche) überprüft werden: **[!UICONTROL Benutzer]**, **[!UICONTROL Benutzergruppen]** **[!UICONTROL spezifische Berechtigungen]** (z. B. ADMINISTRATION, GENEHMIGUNGSADMINISTRATION) und Berechtigungen auf Ordnerebene. Produktadministratoren können auch Einstellungen auf Instanzebene im [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"} überprüfen (IP-Adresse, URL-Berechtigungen, Instanzdetails und mehr).
-* **Empfohlene sichere Standardwerte:** Die [Sicherheitsrichtlinien](../config/security.md) definieren die empfohlene sichere Baseline für administrative und berechtigte Konten, einschließlich: Erstellen ausreichender Sicherheitsgruppen, Zuweisen geeigneter Zugriffsrechte pro Benutzer und Beschränken der Verwendung des Admin-Benutzers und der Admin-Gruppe. Informationen zu Netzwerk- und Verschlüsselungs-Härtung finden Sie [&#x200B; „Erweitertes Sicherheits](../config/enhanced-security.md)Add-on“.
+* **Empfohlene sichere Standardwerte:** Die [Sicherheitsrichtlinien](../config/security.md) definieren die empfohlene sichere Baseline für administrative und berechtigte Konten. Es wird empfohlen, ausreichende Sicherheitsgruppen zu erstellen, geeignete Zugriffsrechte pro Benutzer zuzuweisen und die Verwendung des Admin-Benutzers und der Admin-Gruppe zu beschränken. Informationen zu Netzwerk- und Verschlüsselungs-Härtung finden Sie [&#x200B; „Erweitertes Sicherheits](../config/enhanced-security.md)Add-on“.
 * **Vergleich:** Administratoren vergleichen ihre aktuelle Konfiguration mit diesen dokumentierten Empfehlungen, um Lücken zu identifizieren und sichere Standardeinstellungen zu gewährleisten.
 
 **Verwandte Themen:**

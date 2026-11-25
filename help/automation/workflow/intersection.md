@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 100%
+source-wordcount: '451'
+ht-degree: 91%
 ---
 # Schnittmenge{#intersection}
 
@@ -36,13 +36,13 @@ Die Aktivität **Schnittmenge** erzeugt ausgehend von den eingehenden Aktivität
 
 Über eine Schnittmenge lassen sich nur die Populationen extrahieren, die in allen eingehenden Aktivitätsergebnissen enthalten sind. Die Zielgruppe wird mit allen eingehenden Ergebnissen erstellt. Alle vorherigen Aktivitäten müssen daher abgeschlossen sein, bevor die Schnittmenge ausgeführt werden kann. Um diese Aktivität zu konfigurieren, müssen Sie einen Titel für sie sowie die Optionen für das Ergebnis eingeben.
 
-![](assets/s_user_segmentation_inter.png)
+![Schnittmenge mit der Einstellung „Abstimmung“ auf „Nur Schlüssel“, einer Ergebnisbezeichnung und der Option „Komplement erzeugen“](assets/s_user_segmentation_inter.png)
 
 Weitere Informationen zur Konfiguration und Verwendung der Schnittmengenaktivität finden Sie unter [Gemeinsame Daten aus Populationen extrahieren (Schnittmenge)](targeting-workflows.md#extract-joint-data--intersection-).
 
 Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie auch die nicht in der Schnittmenge enthaltene Population verwenden möchten. Das Komplement enthält die Vereinigung der Ergebnisse aller eingehenden Aktivitäten abzüglich der Schnittmenge. Die Aktivität weist somit, wie unten abgebildet, eine zusätzliche ausgehende Transition auf:
 
-![](assets/s_user_segmentation_inter_compl.png)
+![Schnittmenge mit zwei ausgehenden Transitionen, Ergebnis und Komplement](assets/s_user_segmentation_inter_compl.png)
 
 ## Anwendungsbeispiel für eine Schnittmenge {#intersection-example}
 
@@ -60,7 +60,7 @@ Im vorliegenden Beispiel werden drei Abfragen erstellt. Gesucht werden die in je
 
    Das Ergebnis der Schnittmenge wird an das erste Listen-Update gesendet. Wenn Sie sich für die Verwendung des Komplements entschieden haben, wird es auch an das zweite Listen-Update gesendet.
 
-   ![](assets/intersection_example.png)
+   ![Drei Abfragen, die eine Schnittmenge speisen, deren Ergebnis und Komplement zu zwei Listen-Update-Aktivitäten führen](assets/intersection_example.png)
 
 ## Eingabeparameter {#input-parameters}
 

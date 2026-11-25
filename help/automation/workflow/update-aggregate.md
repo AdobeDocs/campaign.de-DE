@@ -30,25 +30,25 @@ topic_v2:
     internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 100%
+source-wordcount: '147'
+ht-degree: 70%
 ---
 # Aggregat-Update{#update-aggregate}
 
 Die in [Cubes](../../v8/reporting/gs-cubes.md) für Berichtszwecke definierten Aggregate können mit einer bestimmten Aktivität aktualisiert werden. Bei der Konfiguration des Aggregats ist ein **[!UICONTROL Workflow]** verfügbar.
 
-Erfahren Sie mehr über Cubes und Aggregate in [diesem Abschnitt](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates).
+Weitere Informationen zu Cubes und Aggregaten finden Sie unter [Aggregate in Cubes](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates).
 
 Um ein Aggregat zu aktualisieren, bearbeiten Sie die Aktivität **[!UICONTROL Aggregat aktualisieren]** und wählen Sie den zu aktualisierenden Cube und das Aggregat aus.
 
 Sie können eine **vollständige Aktualisierung** oder eine **partielle Aktualisierung** durchführen.
 
-![](assets/update-aggregate-details.png)
+![Aggregat-Aktivität mit den Feldern Cube und Aggregat sowie den Optionen Vollständige Aktualisierung oder Teilaktualisierung aktualisieren.](assets/update-aggregate-details.png)
 
 Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung ausgeführt. Um eine partielle Aktualisierung zu aktivieren, wählen Sie die entsprechende Option aus und definieren Sie die Aktualisierungsbedingungen.
 
-![](assets/update-aggregate-partial.png)
+![Bearbeiten des Fensters Aktualisierungsbedingung mit einem Filter für das Erstellungsdatum nach dem aktuellen Datum abzüglich 1 Monat.](assets/update-aggregate-partial.png)
 
 Es empfiehlt sich, eine **[!UICONTROL Planungsaktivität]** hinzuzufügen, um die Aktualisierungshäufigkeit der Berechnungen festzulegen.

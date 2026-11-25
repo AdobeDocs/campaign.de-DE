@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 9548dde346f10c57350f21e5946690f2f988b939
 workflow-type: tm+mt
-source-wordcount: '4821'
-ht-degree: 84%
+source-wordcount: '4826'
+ht-degree: 80%
 ---
 # Daten in Campaign importieren {#ootb-profiles}
 
@@ -169,7 +169,7 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
 ### &#x200B;4. Schritt – Datensätze abstimmen {#step-4---reconciliation}
 
-Der Import-Assistent bietet die Möglichkeit, durch die Angabe von Abstimmkriterien die Art der Zusammenführung von importierten und existierenden Daten sowie Prioritätsregeln zu definieren. Das Konfigurationsfenster sieht wie folgt aus:
+Mit dem Abstimmschritt des Importassistenten können Sie festlegen, wie die Daten aus der Datei mit den vorhandenen Daten in der Datenbank abgeglichen werden. Außerdem können Sie die Prioritätsregeln zwischen den Dateidaten und den Datenbankdaten festlegen. Das Konfigurationsfenster sieht wie folgt aus:
 
 ![Abstimmbildschirm mit der Feldstruktur, wobei der Vorname als Teil des Abstimmschlüssels 1 festgelegt wird.](assets/s_ncs_user_import_wizard04_1.png)
 
@@ -205,7 +205,7 @@ Für die Deduplizierung ist die Angabe von mindestens einem Abstimmschlüssel er
 
 Ein Abstimmschlüssel ist ein Satz von Feldern, die zur Identifizierung eines Eintrags verwendet werden. Für das Importieren von Empfängerinnen und Empfängern kann der Abstimmschlüssel beispielsweise die Kontonummer, das Feld „E-Mail“ oder die Felder „Nachname“, „Vorname“, „Unternehmen“ usw. sein.
 
-In diesem Fall vergleicht die Import-Engine die Werte der Datei mit jenen der Datenbank für alle Felder des Schlüssels, um herauszufinden, ob eine Zeile einer Datei einer vorhandenen Empfängerin bzw. einem vorhandenen Empfänger in der Datenbank entspricht. Wenn Felder für einen Eintrag spezifisch sind, kann ein genauer Vergleich zwischen den Quell- und Zieldaten durchgeführt werden, um die Integrität der Daten nach dem Import zu gewährleisten. Für dieselbe Tabelle kann ein zweiter Abstimmschlüssel ausgefüllt werden. Er wird für die Zeilen verwendet, deren erster Schlüssel leer ist.
+In diesem Fall vergleicht die Import-Engine die Werte der Datei mit denen der Datenbank für alle Schlüssel-Felder. So wird festgestellt, ob eine Zeile der Datei mit einem vorhandenen Empfänger in der Datenbank übereinstimmt. Wenn Felder für einen Eintrag spezifisch sind, kann ein genauer Vergleich zwischen den Quell- und Zieldaten durchgeführt werden, um die Integrität der Daten nach dem Import zu gewährleisten. Für dieselbe Tabelle kann ein zweiter Abstimmschlüssel ausgefüllt werden. Er wird für die Zeilen verwendet, deren erster Schlüssel leer ist.
 
 Um die Erstellung doppelter Datensätze zu vermeiden, dürfen im Abstimmschlüssel keine Felder verwendet werden, die beim Import verändert werden könnten.
 
@@ -253,7 +253,7 @@ Im Tab **[!UICONTROL Zurückweisungen]** können Details eingesehen werden.
 Zurückweisungen können zwei verschiedenen, in der Spalte **[!UICONTROL Connector]** angezeigten Typen zugeordnet werden:
 
 * Zurückweisungen des Text-Connectors stehen mit Fehlern im Zusammenhang, die bei der Verarbeitung einer Zeile auftreten (berechnetes Feld, Datenanalyse usw.). In diesem Fall wird bei einem Fehler immer die gesamte Zeile zurückgewiesen.
-* Zurückweisungen des Datenbank-Connectors stehen mit Fehlern im Zusammenhang, die bei der Datenabstimmung oder beim Schreiben in die Datenbank auftreten. Im Fall von Importen in mehrere Tabellen betrifft die Zurückweisung womöglich nur einen Teil des Eintrags (bei einem Import von Empfangenden und verknüpften Ereignissen kann ein Fehler das Aktualisieren des Ereignisses beispielsweise verhindern, ohne die Empfangenden zurückzuweisen).
+* Zurückweisungen des Datenbank-Connectors stehen mit Fehlern im Zusammenhang, die bei der Datenabstimmung oder beim Schreiben in die Datenbank auftreten. Im Falle eines Imports in mehrere Tabellen kann die Zurückweisung nur einen Teil des Datensatzes betreffen. Bei einem Import von Empfängern und zugehörigen Ereignissen kann ein Fehler beispielsweise verhindern, dass ein Ereignis aktualisiert wird, ohne dass der Empfänger abgelehnt wird.
 
 Auf der Abstimmungsseite besteht die Möglichkeit, für jedes Feld und jede Tabelle gesondert den Umgang mit Fehlern festzulegen.
 
@@ -271,7 +271,7 @@ Der Navigationsbaum im Zurückweisungsbildschirm einer Importinstanz zeigt die z
 
 ### Schritt 5 – Zusätzlicher Schritt beim Import von Empfängern {#step-5---additional-step-when-importing-recipients}
 
-Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellung eines Importordners, die automatische Zuordnung der importierten Empfangenden zu einer neuen oder existierenden Liste und ihre Anmeldung für Informationsdienste.
+Im nächsten Schritt des Importassistenten können Sie den Ordner auswählen oder erstellen, in den Daten importiert werden sollen. Sie können importierte Empfänger auch automatisch einer (neuen oder vorhandenen) Liste zuordnen und Empfänger für einen Service anmelden.
 
 ![Bildschirm „Empfänger importieren“ mit Links „Bearbeiten“ für Ordner, Liste und Service sowie dem Feld „Herkunft“.](assets/s_ncs_user_import_wizard05_1.png)
 
@@ -315,7 +315,7 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
   1. Anmeldung für einen Dienst
 
-     Um alle importierten Empfänger für einen Informationsdienst anzumelden, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]** der Option **[!UICONTROL Empfänger für einen Dienst anmelden]**, um den Informationsdienst auszuwählen oder zu erstellen, für den die Empfänger angemeldet werden sollen. Aktivieren Sie **[!UICONTROL Benachrichtigung versenden]**, wenn die Empfänger von der Anmeldung in Kenntnis gesetzt werden sollen. Der Benachrichtigungsinhalt wird in den die An- und Abmeldungen betreffenden Versandvorlagen bestimmt.
+     Um alle importierten Empfänger für einen Informationsdienst zu abonnieren, klicken Sie auf den Link **[!UICONTROL Bearbeiten…]** im Abschnitt **[!UICONTROL Abonnieren von Empfängern für einen Dienst]** . Wählen oder erstellen Sie dann den Informationsdienst, den die Empfänger abonnieren sollen. Aktivieren Sie **[!UICONTROL Benachrichtigung versenden]**, wenn die Empfänger von der Anmeldung in Kenntnis gesetzt werden sollen. Der Benachrichtigungsinhalt wird in den die An- und Abmeldungen betreffenden Versandvorlagen bestimmt.
 
      ![Empfänger für einen Dienst anmelden, bei dem ein bestehender Dienst ausgewählt ist, und Bestätigungsnachricht senden aktiviert.](assets/s_ncs_user_import_wizard05_7.png)
 

@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Targeting Activity
   - id: 2454f09c-f028-5647-8fef-1e986ec2d4e5
     internal-label: Subscription Services Activity
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 100%
+source-wordcount: '450'
+ht-degree: 94%
 ---
 # Anmeldedienste{#subscription-services}
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 Die Konfiguration der Aktivität besteht in der Angabe eines Titels, die Auswahl von Anmeldung oder Abmeldung sowie des betroffenen Informationsdienstes, wie unten abgebildet:
 
-![](assets/edit_service_inscription.png)
+![Abonnement-Aktivität mit der Option Registrierung oder Abmeldung, Bestätigungsnachricht und Serviceliste](assets/edit_service_inscription.png)
 
 1. Benennen Sie die Aktivität.
 1. Kreuzen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen an]**, wenn sich weitere Aktivitäten anschließen.
@@ -56,7 +56,7 @@ Dabei sollen die Profile, die den Newsletter bereits erhalten, ausgeschlossen we
 >
 >Bevor Sie Empfänger manuell für einen Dienst anmelden, ist sicherzustellen, dass Letztere mit dem Erhalt von Nachrichten Ihrerseits einverstanden sind.
 
-![](assets/subscription_services_example.png)
+![Drei Abfragen liefern eine Schnittmenge, dann eine Listen-Update- und eine Abonnement-Aktivität](assets/subscription_services_example.png)
 
 1. Erstellen Sie drei Abfragen:
 

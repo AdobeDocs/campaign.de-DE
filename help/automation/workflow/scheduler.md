@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 87%
+source-wordcount: '480'
+ht-degree: 73%
 ---
 # Planung {#scheduler}
 
@@ -50,22 +50,22 @@ Eine **[!UICONTROL Planung]** entspricht einem programmierten Start, daher sind 
 
 Die Planung definiert die Aktivierungsplanung der Transition. Doppelklicken Sie zur Konfiguration auf das grafische Objekt und klicken Sie auf **[!UICONTROL Ändern...]**
 
-![](assets/s_user_segmentation_scheduler.png)
+![Das Dialogfeld Planungsaktivität mit der Schaltfläche Ändern wird verwendet, um die Ausführungsfrequenz zu definieren](assets/s_user_segmentation_scheduler.png)
 
 Mit einem Assistenten können Sie die Häufigkeit und den Gültigkeitszeitraum der Aktivität definieren. Die Konfiguration stellt sich wie folgt dar:
 
 1. Kreuzen Sie die gewünschte Häufigkeit an und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/s_user_segmentation_scheduler2.png)
+   ![Planen Sie die Bearbeitung im Assistenten, wählen Sie den Häufigkeitstyp: Mehrmals täglich, Täglich, Wöchentlich, Monatlich, Einmal](assets/s_user_segmentation_scheduler2.png)
 
 1. Geben Sie die Aktivierungszeiten und -tage an. Die Parameter für diesen Schritt hängen von der im vorherigen Schritt ausgewählten Häufigkeit ab. Wenn Sie die Aktivität mehrmals täglich starten möchten, sind folgende Konfigurationsoptionen verfügbar:
 
-   ![](assets/s_user_segmentation_scheduler3.png)
+   ![Planen des Bearbeitungsassistenten, Viele Male am Tag: Stundenauswahl an ausgewählten Stunden und Tagesauswahl an Wochentagen](assets/s_user_segmentation_scheduler3.png)
 
 1. Definieren Sie im nächsten Schritt die Gültigkeit der Planung oder die maximale Anzahl an Ausführungen.
 
-   ![](assets/s_user_segmentation_scheduler4.png)
+   ![Assistent zur Zeitplanbearbeitung, Gültigkeitszeitraum: Dauerhafte Gültigkeit, Ab- und Bis-Datum oder Maximale Anzahl von Iterationen](assets/s_user_segmentation_scheduler4.png)
 
 1. Prüfen Sie im letzten Schritt die Konfiguration und klicken Sie auf **[!UICONTROL Beenden]**, um sie zu speichern.
 
-   ![](assets/s_user_segmentation_scheduler5.png)
+   ![Assistent zur Zeitplanbearbeitung, Zusammenfassung: Zeitplanbeschreibung und Liste der nächsten Startzeiten mit der Schaltfläche Beenden](assets/s_user_segmentation_scheduler5.png)

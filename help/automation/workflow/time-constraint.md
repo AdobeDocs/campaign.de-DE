@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 65%
+source-wordcount: '125'
+ht-degree: 56%
 ---
 # Zeitliche Beschränkung{#time-constraint}
 
@@ -30,4 +30,4 @@ Geben Sie einen Titel für die Aktivität an und geben Sie den Zeitrahmen an, in
 
 Wenn die Option **[!UICONTROL Erneut versuchen, wenn außerhalb der Ausführungsperiode]** ausgewählt ist, können Sie die Aufgabe außerhalb des Zeitrahmens für die Ausführung erneut starten. Wenn Sie möchten, dass die Workflow-Aktion nach dem Aussetzen endgültig eingestellt wird, deaktivieren Sie diese Option.
 
-![](assets/s_user_scheduled_wait.png)
+![Aktivität „Zeitbeschränkung“ mit Start- und Endzeiten und später erneut versuchen, wenn diese Option außerhalb des Ausführungszeitraums aktiviert ist.](assets/s_user_scheduled_wait.png)

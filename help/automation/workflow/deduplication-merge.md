@@ -23,10 +23,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 100%
+source-wordcount: '765'
+ht-degree: 78%
 ---
 # Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität {#deduplication-merge}
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 In diesem Anwendungsfall wird beschrieben, wie Sie die Funktion **[!UICONTROL Zusammenführen]** in der Aktivität **[!UICONTROL Deduplizierung]** verwenden.
 
-Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](deduplication.md#merging-fields-into-single-record).
+Weitere Informationen zu dieser Funktion finden Sie unter [Zusammenführen von Feldern zu einem einzelnen Datensatz](deduplication.md#merging-fields-into-single-record).
 
 Die Aktivität **[!UICONTROL Deduplizierung]** wird zum Entfernen von Duplikat-Zeilen aus einem Datensatz verwendet. In diesem Anwendungsfall werden die unten angezeigten Daten anhand des E-Mail-Felds dupliziert.
 
@@ -57,11 +57,11 @@ Um die Zusammenführungsfunktion zu aktivieren, müssen Sie zunächst die Aktivi
 
 1. Wählen Sie das für das Deduplizierung zu verwendende Abstimmungsfeld aus und klicken Sie dann auf **[!UICONTROL Weiter]**. In diesem Beispiel möchten wir die Duplizierung basierend auf dem E-Mail-Feld deduplizieren.
 
-   ![](assets/uc_merge_edit.png)
+   ![Fenster der Zielgruppendimension „Deduplizierung“, in dem die Empfänger und das Feld für die E-Mail-Abstimmung ausgewählt sind.](assets/uc_merge_edit.png)
 
 1. Klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter]** und aktivieren Sie dann die Optionen **[!UICONTROL Datensätze zusammenführen]** und **[!UICONTROL Mehrere Kriterien zum Zusammenführen von Datensätzen verwenden]**.
 
-   ![](assets/uc_merge_advanced_parameters.png)
+   ![Dialogfeld „Deduplizierungsparameter“ mit aktivierten Optionen Datensätze zusammenführen und Mehrere Datensätze verwenden](assets/uc_merge_advanced_parameters.png)
 
 1. Die Registerkarte **[!UICONTROL Zusammenführen]** wird dem Konfigurationsbildschirm **[!UICONTROL Deduplizierung]** hinzugefügt. Auf dieser Registerkarte können Sie die Daten angeben, die beim Ausführen der Deduplizierung zusammengeführt werden sollen.
 
@@ -78,31 +78,31 @@ Gehen Sie wie folgt vor, um diese Regeln zu konfigurieren:
 
 1. Öffnen Sie die Registerkarte **[!UICONTROL Zusammenführen]** und klicken Sie dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/uc_merge_add.png)
+   ![Registerkarte „Zusammenführen“ der Aktivität „Deduplizierung“ mit der Schaltfläche Hinzufügen oberhalb einer leeren Liste zusammengeführter Daten.](assets/uc_merge_add.png)
 
 1. Geben Sie die Kennung und die Bezeichnung der Gruppe von Feldern an, die zusammengeführt werden sollen.
 
-   ![](assets/uc_merge_identifier.png)
+   ![Schritt Kennung und Bezeichnung des Assistenten Zusammenzuführende Daten auswählen mit dem Kennungsnamen und dem eingegebenen Kennungsnamen.](assets/uc_merge_identifier.png)
 
 1. Geben Sie die Bedingungen für die Auswahl der zu berücksichtigenden Datensätze an.
 
-   ![](assets/uc_merge_filter.png)
+   ![Filterschritt mit Bedingungen Vorname ist nicht leer und Nachname ist nicht leer, um die zusammenzuführenden Datensätze auszuwählen.](assets/uc_merge_filter.png)
 
 1. Sortieren Sie nach dem Datum der letzten Änderung, um den neuesten Namen auszuwählen.
 
-   ![](assets/uc_merge_sort.png)
+   ![Schritt mit Änderungsdatum in absteigender Reihenfolge sortieren, um den letzten Datensatz auszuwählen.](assets/uc_merge_sort.png)
 
 1. Wählen Sie die zusammenzuführenden Felder aus. In diesem Beispiel möchten wir die Felder für Vor- und Nachnamen beibehalten.
 
-   ![](assets/uc_merge_keep.png)
+   ![Beizubehaltende Felder, wobei Vorname und Nachname als Ausgabespalten ausgewählt sind.](assets/uc_merge_keep.png)
 
 1. Die Felder werden dem Datensatz hinzugefügt, der zusammengeführt werden soll, und dem Workflow-Schema wird ein neues Element hinzugefügt.
 
    Wiederholen Sie diese Schritte, um die Felder für Mobil- und Festnetztelefonnummern zu konfigurieren.
 
-   ![](assets/dedup8.png)
+   ![Registerkarte Zusammenführen mit dem Namen, dem Mobilgerät und dem Telefon der zusammengeführten Gruppen sowie ihren Aliassen und aktivierten Wenn-Bedingungen.](assets/dedup8.png)
 
-   ![](assets/dedup9.png)
+   ![Registerkarte „Schema“ mit der generierten Datenstruktur der Deduplizierung mit den Knoten „Mobile“, „Name“ und „Telefon“.](assets/dedup9.png)
 
 ## Ergebnisse {#results}
 

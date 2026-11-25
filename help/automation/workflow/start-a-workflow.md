@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 100%
+source-wordcount: '1260'
+ht-degree: 97%
 ---
 # Starten, Pausieren und Stoppen eines Workflows {#starting-a-workflow}
 
@@ -50,7 +50,7 @@ Die im Menü **[!UICONTROL Aktionen]** und im Kontextmenü verfügbaren Befehle 
 
 Die Schaltfläche **[!UICONTROL Aktionen]** in der Symbolleiste bietet Zugriff auf zusätzliche Ausführungsoptionen in ausgewählten Workflows. Sie können auch das Menü **[!UICONTROL Datei > Aktionen]** verwenden oder mit der rechten Maustaste auf einen Workflow klicken und dann **[!UICONTROL Aktionen]** auswählen.
 
-![](assets/purge_historique.png)
+![Workflow-Liste mit dem Aktionsmenü „Öffnen“ und „Verlauf bereinigen“, das unter den Optionen „Starten“, „Pause“, „Stoppen“ und „Neustart“ hervorgehoben ist.](assets/purge_historique.png)
 
 * **[!UICONTROL Starten]**
 
@@ -134,7 +134,7 @@ Verbessern Sie die Stabilität Ihrer Instanz, indem Sie die folgenden Best Pract
 
 Durch Markierung und Rechtsklick auf eine oder mehrere Aktivitäten eines Workflows können Sie speziell auf diese einwirken.
 
-![](assets/contextual_menu.png)
+![Kontextmenü einer Workflow-Aktivität mit hervorgehobenen Optionen „Protokolle anzeigen“, „Öffnen“, „Ausschneiden“, „Kopieren“, „Löschen“ und „Speichern“.](assets/contextual_menu.png)
 
 Im Kontextmenü stehen folgende Optionen zur Verfügung:
 

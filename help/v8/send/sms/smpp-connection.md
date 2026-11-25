@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 9548dde346f10c57350f21e5946690f2f988b939
 workflow-type: tm+mt
-source-wordcount: '4464'
-ht-degree: 88%
+source-wordcount: '4454'
+ht-degree: 83%
 ---
 # Validieren einer SMPP-Verbindung {#validate-smpp-connection}
 
@@ -197,11 +197,11 @@ Es gibt einen Konflikt zwischen den Konten. Adobe Campaign behandelt die Konten 
 Sie müssen sich an den Provider wenden, um mögliche Konflikte auf seiner Seite zu diagnostizieren.
 
 *Einige der externen Konten verwenden dieselbe Kombination aus Anmelde-/Kennwort*
-Der Anbieter kann nicht erkennen, von welchem externen Konto die BIND-PDU stammt, sodass er alle Verbindungen von mehreren Konten als ein einziges Konto behandelt, sodass er MO und SR wahrscheinlich zufällig über die zwei Konten leitet, was scheinbar zufällige Probleme verursacht.
+Der Anbieter kann nicht erkennen, von welchem externen Konto eine BIND-PDU stammt. Sie behandeln alle Verbindungen aus mehreren Konten als eine einzige, sodass sie MO und SR wahrscheinlich zufällig über die zwei Konten leiten. Dies verursacht scheinbar zufällige Probleme.
 
 Wenn der Provider mehrere Kurzwahlnummern für dieselbe Benutzernamen-/Passwortkombination unterstützt, müssen Sie ihn fragen, wo diese Kurzwahlnummer in die BIND-PDU eingefügt werden soll. Beachten Sie, dass diese Information in die BIND-PDU und nicht in SUBMIT_SM eingefügt werden muss, da nur in der BIND-PDU eine korrekte Weiterleitung von MOs möglich ist.
 
-Weiter oben unter [Informationen in den verschiedenen PDU-Arten](#pdu) erfahren Sie, welche Felder in der BIND-PDU verfügbar sind. Normalerweise fügen Sie die Kurzwahlnummer in *address_range* hinzu. Dies erfordert jedoch besondere Unterstützung durch den Provider. Wenden Sie sich an diesen, um zu erfahren, wie er mehrere Kurzwahlnummern unabhängig voneinander weiterleiten wird.
+Die in der [-PDU verfügbaren Felder finden Sie &#x200B;](#pdu) Abschnitt „Informationen in jeder PDU-Art weiter oben. Im Allgemeinen würden Sie den Kurzwahlcode in *address_range* einfügen, dies erfordert jedoch spezielle Unterstützung vom Anbieter. Kontaktieren Sie sie, um herauszufinden, wie sie mehrere Kurzwahlnummern unabhängig voneinander weiterleiten möchten.
 
 Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern in demselben externen Konto, sodass es häufig problemlos funktioniert, nur ein einziges Konto für den gesamten Traffic zu verwenden.
 
@@ -251,7 +251,7 @@ Eine Verbindung wird als instabil angesehen, wenn eine der folgenden Situationen
 * Wenn der Provider UNBIND-PDUs sendet, macht er wahrscheinlich etwas falsch. Fragen Sie ihn, warum er UNBIND sendet. Dies wird wahrscheinlich zur eigentlichen Ursache führen.
 * Eine Netzwerkaufzeichnung ist manchmal die einzige Möglichkeit, um zu sehen, wie die Verbindung geschlossen wird.
 * Wenn der Provider die Verbindungen schließt (indem er entweder ein TCP FIN- oder ein TCP RST-Paket sendet), fragen Sie ihn nach dem Grund dafür. Hierdurch sollten Sie die Ursache des Problems erfahren.
-* Wenn der Provider die Verbindung schließt, nachdem er einen ordnungsgemäßen Fehler (wie DELIVER_SM_RESP mit einem Fehler-Code gesendet hat), muss er seinen Connector reparieren. Dieses Schließen verhindert nämlich, dass andere Arten von Nachrichten übertragen werden, und löst die MTA-Drosselung aus. Dies ist besonders im Transceiver-Modus wichtig, wo sich das Schließen der Verbindung sowohl auf MT als auch auf SR auswirkt.
+* Wenn der Provider die Verbindung nach dem Senden eines leeren Fehlers schließt (z. B. DELIVER_SM_RESP mit einem Fehlercode), muss er seinen Connector reparieren. Das Schließen der Verbindung verhindert, dass andere Arten von Nachrichten übertragen werden, und führt zu einer Trigger-MTA-Drosselung. Dies ist besonders im Transceiver-Modus wichtig, bei dem das Schließen der Verbindung sowohl MT als auch SR betrifft.
 * Bei Timeouts (BIND-Timeouts, SUBMIT_SM-Timeouts) sendet Campaign möglicherweise zu schnell Nachrichten für diesen Provider. Versuchen Sie, die Einstellung für den *maximalen MT-Durchsatz* zu senken, und überprüfen Sie, ob das Problem sich dadurch beheben lässt.
 
 #### Problem beim Senden eines MT (reguläre SMS an einen Endbenutzer)
@@ -288,7 +288,7 @@ Wenn die DELIVER_SM-PDU nicht erfolgreich quittiert wurde, müssen Sie einige Pu
 * Überprüfen Sie den Regex für die ID-Extraktion und die Fehlerverarbeitung im externen Konto. Möglicherweise müssen Sie diese anhand des Inhalts der DELIVER_SM-PDU validieren.
 * Überprüfen Sie, ob die Fehler in der Tabelle broadLogMsg ordnungsgemäß bereitgestellt wurden (in der Campaign-Dokumentation wird dies ausführlich erläutert).
 
-Wenn die DELIVER_SM-PDU vom erweiterten SMPP-Connector in ACC quittiert wurde, das broadLog jedoch nicht ordnungsgemäß aktualisiert wird, überprüfen Sie den im Abschnitt „Abgleichen von MT-, SR- und broadLog-Einträgen“ beschriebenen Prozess zur ID-Abstimmung.
+Wenn der ACC Extended SMPP-Connector die DELIVER_SM-PDU quittiert hat, das broadLog jedoch nicht ordnungsgemäß aktualisiert wurde, überprüfen Sie den ID-Abstimmprozess. Dies wird im Abschnitt Abgleichen von MT-, SR- und Broadlog-Einträgen weiter oben beschrieben.
 
 Wenn Sie alle Probleme behoben haben, die Puffer des Providers jedoch noch einige ungültige SR enthalten, können Sie diese mit der Option &quot;Zählung der &#39;ungültige ID&#39; Antworten&quot; überspringen. Dies sollte mit Vorsicht verwendet und so schnell wie möglich auf 0 zurückgesetzt werden, nachdem die Puffer bereinigt wurden.
 
@@ -303,7 +303,7 @@ Wenn nur einige SR empfangen werden, aber nicht alle, stellen Sie sicher, dass k
 * Wenn MO (DELIVER_SM-PDU) nicht in den Protokollen angezeigt wird, können Sie sicher sein, dass das Problem auf der Seite des Providers liegt. Er muss dann die Fehlersuche auf seiner Plattform durchführen.
 * Wenn die DELIVER_SM-PDU angezeigt wird, überprüfen Sie, ob sie von Campaign mit einer erfolgreichen DELIVER_SM_RESP-PDU (Code 0) quittiert wird. Diese RESP garantiert, dass die gesamte Verarbeitungslogik von Campaign angewendet wurde (automatische Antwort und Quarantäne). Wenn dies nicht der Fall ist, überprüfen Sie die Logs des SMS-Prozesses auf eine Fehlermeldung.
 * Wenn automatische Antworten aktiviert sind, überprüfen Sie, ob SUBMIT_SM an den Provider gesendet wurde. Ist das nicht der Fall, können Sie davon ausgehen, dass die Logs des SMS-Prozesses eine Fehlermeldung enthalten.
-* Wenn die SUBMIT_SM MT PDU, die die Antwort enthält, in den Protokollen gefunden wird, die SMS aber nicht auf dem Mobiltelefon ankommt, müssen Sie sich an den Provider wenden, um Unterstützung bei der Fehlerbehebung zu erhalten, da das Problem wahrscheinlich auf seiner Seite liegt.
+* Wenn die SUBMIT_SM-MT-PDU, die die Antwort enthält, in Traces gefunden wird, die SMS jedoch nicht auf das Mobiltelefon gelangt, wenden Sie sich an den Provider, um Unterstützung bei der Fehlerbehebung zu erhalten. Das Problem liegt wahrscheinlich auf ihrer Seite.
 
 #### Problem bei der Versandvorbereitung, die Empfänger unter Quarantäne nicht ausschließt (durch die automatische Antwortfunktion in Quarantäne gestellt)
 
@@ -322,7 +322,7 @@ Der Provider ist der Experte, der weiß, wie SMS funktioniert. Nehmen Sie Kontak
 
 Sie müssen den Inhalt Ihrer Nachricht kennen. Dieser Satz mag leicht klingen, aber das ist es nicht. Unicode erlaubt mehrere Varianten für ähnlich aussehende Zeichen, und Campaign kann nicht alle verarbeiten.
 
-Die häufigste Ursache für Probleme ist das Kopieren und Einfügen aus einem Textverarbeitungsprogramm, bei dem übliche Zeichen in typografisch korrekte Versionen geändert werden: Leerzeichen in geschützte Leerzeichen, doppelte Anführungszeichen in öffnende und schließende Anführungszeichen oder Minuszeichen in verschiedene Arten von Bindestrichen.
+Die häufigste Ursache von Problemen ist das Kopieren und Einfügen aus einem Textverarbeitungsprogramm. Übliche Zeichen werden in typografisch korrekte Versionen geändert: Leerzeichen werden in nicht umbrechende Leerzeichen geändert, doppelte Anführungszeichen werden in öffnende und schließende Anführungszeichen geändert, Minuszeichen werden in verschiedene Arten von Bindestrichen geändert …
 
 Kopieren Sie Ihre Nachricht beim Testen nicht, sondern geben Sie sie immer direkt in die Benutzeroberfläche ein.
 
@@ -365,7 +365,7 @@ Wenn der Provider von einer Pufferüberlastung berichtet, liegt dies möglicherw
 
 ### Bei der Kommunikation über ein SMS-Problem einzuschließende Elemente
 
-Wenn Sie Hilfe zu einem SMS-Problem benötigen (sei es das Öffnen eines Support-Tickets für Adobe Campaign, den SMS-Anbieter oder eine Kommunikation zu dem Problem), müssen Sie mindestens die folgenden Informationen angeben, um sicherzustellen, dass es ordnungsgemäß qualifiziert ist. Die korrekte Einordnung von Problemen ist entscheidend für eine schnelle Problemlösung. Sich also etwas mehr Zeit zu nehmen, um die Situation zu verstehen und aussagekräftige Informationen bereitzustellen, ist mit einer enormen Effizienzsteigerung verbunden.
+Wenn Sie Unterstützung bei einem SMS-Problem benötigen, geben Sie mindestens die folgenden Informationen an, damit das Problem ordnungsgemäß qualifiziert werden kann. Dies gilt unabhängig davon, ob Sie ein Support-Ticket bei Adobe Campaign oder beim SMS-Anbieter öffnen oder auf andere Weise über das Problem informieren. Die korrekte Einordnung von Problemen ist entscheidend für eine schnelle Problemlösung. Sich also etwas mehr Zeit zu nehmen, um die Situation zu verstehen und aussagekräftige Informationen bereitzustellen, ist mit einer enormen Effizienzsteigerung verbunden.
 
 * Aktivieren Sie ausführliche SMPP-Nachrichten, wenn das Problem auftritt. Die meisten SMS-Probleme lassen sich praktisch nur damit lösen.
 * Wenn das Problem mit dem SMS-Traffic zusammenhängt, wenden Sie sich zuerst an den Provider. Dieser weiß in diesem Fall am besten Bescheid, und die Plattform des Providers ist in der Regel auf eine effiziente Diagnose von SMS-Traffic-Problemen in Echtzeit ausgelegt.

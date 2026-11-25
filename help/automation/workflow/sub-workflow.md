@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 100%
+source-wordcount: '531'
+ht-degree: 84%
 ---
 # Unter-Workflow{#sub-workflow}
 
@@ -30,13 +30,13 @@ Mit der Aktivität **[!UICONTROL Unter-Workflow]** kann die Ausführung eines an
 
 Sie können in einem einzigen Workflow mehrere Unter-Workflows aufrufen. Unter-Workflows werden synchron ausgeführt.
 
-Im folgenden Beispiel ruft ein primärer Workflow einen Unter-Workflow mithilfe von Sprüngen auf. Weiterführende Informationen zu grafischen Objekten vom Typ &quot;Sprung&quot; finden Sie in [diesem Abschnitt](jump-start-point-and-end-point.md).
+Im folgenden Beispiel ruft ein primärer Workflow einen Unter-Workflow mithilfe von Sprüngen auf. Weitere Informationen zu grafischen Objekten vom Typ Sprung finden Sie unter [Sprung (Start- und Endpunkt)](jump-start-point-and-end-point.md).
 
 1. Erstellen Sie einen Workflow, den Sie als Unter-Workflow in einem anderen Workflow verwenden möchten.
 1. Fügen Sie am Anfang des Workflows eine Aktivität vom Typ **[!UICONTROL Sprung (Ziel)]** mit der Priorität 1 ein. Wenn mehrere &quot;Ziel&quot;-Sprünge vorhanden sind, verwendet Adobe Campaign den &quot;Ziel&quot;-Sprung mit der niedrigsten Nummer.
 1. Fügen Sie am Ende des Workflows eine Aktivität vom Typ **[!UICONTROL Sprung (Start)]** mit der Priorität 2 ein. Wenn mehrere &quot;Start&quot;-Sprünge vorhanden sind, verwendet Adobe Campaign den &quot;Start&quot;-Sprung mit der höchsten Nummer.
 
-   ![](assets/subworkflow_jumps.png)
+   ![Unter-Workflow-Diagramm, das mit dem Sprung (Endpunkt) 1 beginnt und mit dem Sprung (Startpunkt) 2 um Abfragen und eine Vereinigung endet.](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
@@ -49,12 +49,12 @@ Im folgenden Beispiel ruft ein primärer Workflow einen Unter-Workflow mithilfe 
 1. Fügen Sie die Aktivität **[!UICONTROL Unter-Workflow]** ein und öffnen Sie sie.
 1. Wählen Sie in der Dropdown-Liste der **[!UICONTROL Workflow-Vorlagen]** den gewünschten Workflow aus.
 
-   ![](assets/subworkflow_selection.png)
+   ![Aktivität Unter-Workflow mit der Dropdown-Liste „Workflow-Vorlage“, die die verfügbaren Workflows auflistet, Unterworkflow (WKF55) ausgewählt.](assets/subworkflow_selection.png)
 
 1. Es besteht auch die Möglichkeit, ein Konfigurationsscript hinzuzufügen, um die Funktionsweise des referenzierten Workflows anzupassen.
 1. Klicken Sie auf **[!UICONTROL OK]**. Dadurch wird automatisch eine ausgehende Transition mit dem Titel der Aktivität **[!UICONTROL Sprung (Start)]** aus dem ausgewählten Workflow erstellt.
 
-   ![](assets/subworkflow_outbound.png)
+   ![Primärer Workflow mit Aufruf-Unter-Workflow und einer ausgehenden Transition mit der Bezeichnung Sprung (Startpunkt) 2.](assets/subworkflow_outbound.png)
 
 1. Führen Sie den Workflow aus.
 
@@ -64,7 +64,7 @@ Nach der Ausführung befindet sich der Workflow, der als Unter-Workflow gestarte
 * Es kann kein Zwischenergebnis der Populationsgröße angezeigt werden.
 * Die Logs des Unter-Workflows werden im primären Workflow angezeigt.
 
-  ![](assets/subworkflow_logs.png)
+  ![Registerkarte „Audit“ des primären Workflows mit Sub-Workflow-Protokollmeldungen für die Ergebnisabfrage.](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >

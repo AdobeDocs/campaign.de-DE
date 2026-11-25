@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 95%
+source-wordcount: '1012'
+ht-degree: 72%
 ---
 # Kohärenzregeln{#consistency-rules}
 
@@ -50,22 +50,22 @@ Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 1. Klicken Sie im Ordner **[!UICONTROL Administration > Kampagnen-Verwaltung > Typologieverwaltung > Typologieregeln]** auf **[!UICONTROL Neu]**.
 1. Wählen Sie eine Regel vom Typ **[!UICONTROL Kapazität]** aus.
 
-   ![](assets/campaign_opt_create_capacity_01.png)
+   ![Bildschirm zur Erstellung von Typologieregeln mit ausgewählter Option „Kapazität“ in der Dropdown-Liste „Regeltyp“.](assets/campaign_opt_create_capacity_01.png)
 
 1. Erstellen Sie in der Registerkarte **[!UICONTROL Kapazität]** die Verfügbarkeitszeilen. In unserem Beispiel sind dies Zeiträume, in denen Anrufe getätigt werden können. Wählen Sie einen Zeitraum von 24 Stunden aus und geben Sie als anfängliche Menge 150 ein, was bedeutet, dass das Callcenter 150 Anrufe pro Tag verarbeiten kann.
 
-   ![](assets/campaign_opt_create_capacity_02.png)
+   ![Registerkarte „Kapazität“ mit dem Dialogfeld „Verfügbarkeitszeile bearbeiten“ zur Eingabe von Start-, End- und Anfangsmenge.](assets/campaign_opt_create_capacity_02.png)
 
    >[!NOTE]
    >
-   >Die Verfügbarkeitszeilen dienen nur als Richtwerte. Sie können bei Bedarf jedoch auch festlegen, dass bei Erreichen der Kapazitätsbegrenzung Nachrichten ausgeschlossen werden. Näheres hierzu finden Sie in [diesem Abschnitt](#exclude-messages-when-capacity-limit-reached).
+   >Die Verfügbarkeitszeilen dienen nur als Richtwerte. Wenn Sie Nachrichten ausschließen müssen, wenn die Kapazitätsgrenze erreicht ist, lesen Sie [Ausschließen von Nachrichten, wenn die Kapazitätsgrenze erreicht ist](#exclude-messages-when-capacity-limit-reached).
 
-1. Weisen Sie diese Regel einer Typologie zu und referenzieren Sie die Typologie in Ihrer Sendung, damit die Kapazitätsregel von dieser angewendet wird. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](apply-rules.md#apply-a-typology-to-a-delivery).
+1. Weisen Sie diese Regel einer Typologie zu und referenzieren Sie die Typologie in Ihrer Sendung, damit die Kapazitätsregel von dieser angewendet wird. Weitere Informationen hierzu finden Sie unter [Anwenden einer Typologie auf einen Versand](apply-rules.md#apply-a-typology-to-a-delivery).
 1. Über die Tabs **[!UICONTROL Entnahmen]** und **[!UICONTROL Kapazität]** für diese Regel können Sie die Auslastung der Kapazitäten überwachen.
 
    Wenn eine Regel in einem Versand verwendet wird, zeigen die Spalten **[!UICONTROL Entnommen]** und **[!UICONTROL Verbleibend]** die verbrauchte Menge an, wie im unten stehenden Beispiel:
 
-   ![](assets/campaign_opt_create_capacity_03.png)
+   ![Registerkarte „Kapazität“ mit einer Verfügbarkeitszeile mit 150 anfänglichen Mengen, 200 verbrauchten und -50 verbleibenden Mengen.](assets/campaign_opt_create_capacity_03.png)
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#monitor-consumption).
 
@@ -77,7 +77,7 @@ Um die maximale Auslastung zu definieren, müssen Sie Verfügbarkeitszeilen fest
 
 Um eine einzelne Verfügbarkeitszeile zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Option **[!UICONTROL Eine Verfügbarkeitszeile hinzufügen]** aus. Geben Sie den Verfügbarkeitszeitraum und die mögliche Belastung ein.
 
-![](assets/campaign_opt_create_capacity_02.png)
+![Das Dialogfeld „Verfügbarkeitszeile bearbeiten“ wurde über die Schaltfläche „Hinzufügen“ geöffnet und enthält die Felder „Beginn“, „Ende“ und „Anfangsmenge“.](assets/campaign_opt_create_capacity_02.png)
 
 Sie können die Ihrer Verarbeitungskapazität entsprechende Anzahl an Zeilen hinzufügen.
 
@@ -87,25 +87,25 @@ Um Verfügbarkeitszeiträume für einen bestimmten Zeitraum zu definieren, klick
 
 Um die Zeitraumerstellung zu automatisieren, klicken Sie auf die Schaltfläche **[!UICONTROL Ändern]** und legen Sie die Planung der Zeiträume fest.
 
-![](assets/campaign_opt_create_capacity_07.png)
+![Das Dialogfeld „Verfügbarkeitszeile bearbeiten“ mit der Auswahl „Verfügbarkeitszeilen hinzufügen“ und der Schaltfläche „Ändern“ für die Planung.](assets/campaign_opt_create_capacity_07.png)
 
 Definieren wir beispielsweise einen Zeitplan zur Erstellung von Verfügbarkeitszeiträumen für alle Werktage mit einer Kapazität von 10 Anrufen pro Stunde zwischen 9 und 17 Uhr. Gehen Sie hierzu wie folgt vor:
 
 1. Wählen Sie den Häufigkeitstyp und die Gültigkeitszeiträume aus:
 
-   ![](assets/campaign_opt_create_capacity_08.png)
+   ![Seite „Gültigkeitszeitraum“ des Assistenten für die Zeitplanbearbeitung mit den Datumsangaben „Gültig von“ und „Bis“, die aus einem Kalender ausgewählt wurden.](assets/campaign_opt_create_capacity_08.png)
 
 1. Geben Sie die Gültigkeitsdaten an:
 
-   ![](assets/campaign_opt_create_capacity_09.png)
+   ![Seite „Gültigkeitszeitraum“ des Assistenten für die Zeitplanbearbeitung, auf der das Endgültigkeitsdatum aus einem Kalender ausgewählt wird.](assets/campaign_opt_create_capacity_09.png)
 
 1. Überprüfen Sie die Konfiguration, bevor Sie sie beenden:
 
-   ![](assets/campaign_opt_create_capacity_10.png)
+   ![Seite mit der Zusammenfassung des Assistenten zur Zeitplanbearbeitung mit der Zeitplanbeschreibung und der Liste der Startzeiten vor dem Ende.](assets/campaign_opt_create_capacity_10.png)
 
 Der Workflow **[!UICONTROL Planungen]** erstellt automatisch alle entsprechenden Zeilen.
 
-![](assets/campaign_opt_create_capacity_12.png)
+![Registerkarte „Kapazität“ der Callcenter-Regel, in der die vom Zeitplan automatisch erstellten Verfügbarkeitszeilen aufgelistet sind.](assets/campaign_opt_create_capacity_12.png)
 
 >[!NOTE]
 >
@@ -115,17 +115,17 @@ Der Workflow **[!UICONTROL Planungen]** erstellt automatisch alle entsprechenden
 
 Die Verfügbarkeitszeilen dienen nur als Richtwerte. Um überschüssige Nachrichten auszuschließen, aktivieren Sie die Option **[!UICONTROL Die die Kapazität übersteigenden Nachrichten aus der Zielgruppe ausschließen]**. Die Kapazität kann so nicht überschritten werden. Für dieselbe Population wie im vorherigen Beispiel dürfen Verbrauch und verbleibende Kapazität die ursprüngliche Menge nicht übersteigen:
 
-![](assets/campaign_opt_create_capacity_04.png)
+![Registerkarte „Kapazität“ mit „Aus der Zielgruppe ausschließen“-Nachrichten, die die ausgewählte Kapazität überschreiten: 100 belegt, 50 verbleibend.](assets/campaign_opt_create_capacity_04.png)
 
 Die maximale Anzahl von Nachrichten, die verarbeitet werden können, ist gleichmäßig über den definierten Verfügbarkeitsbereich verteilt. Dies ist besonders für Callcenter von Bedeutung, da die Anzahl der Anrufe pro Tag begrenzt ist. Im Fall von E-Mail-Sendungen können Sie mit der Option **[!UICONTROL Sofortige Versandkapazität nicht begrenzen]** diesen Verfügbarkeitsbereich ignorieren und gleichzeitig Ihre E-Mails senden.
 
-![](assets/campaign_opt_create_capacity_05.png)
+![Registerkarte „Kapazität“ mit der Option „Sofortige Bereitstellungskapazität nicht begrenzen“ ausgewählt, zeigt 150 konsumierte und 0 verbleibende.](assets/campaign_opt_create_capacity_05.png)
 
 >[!NOTE]
 >
 >Bei Überlastung werden die beizubehaltenden Nachrichten nach einer in den Versandeigenschaften bestimmten Formel ausgewählt.
 
-![](assets/campaign_opt_create_capacity_06.png)
+![Registerkarte „Typologie“ der Versandeigenschaften mit Kapazitätseinstellungen: Callcenter-Kanal-Kapazität und Wichtigkeitsformel.](assets/campaign_opt_create_capacity_06.png)
 
 ## Überwachen des Verbrauchs {#monitoring-consumption}
 
@@ -133,6 +133,6 @@ Kapazitätsregeln dienen standardmäßig lediglich Informationszwecken. Wählen 
 
 Im Tab **[!UICONTROL Kapazität]** der Typologieregel haben Sie die Möglichkeit, in der **[!UICONTROL Verbraucht]**-Spalte die Inanspruchnahme der vorhandenen Ressourcen zu verfolgen.
 
-![](assets/campaign_opt_create_capacity_04.png)
+![Registerkarte „Kapazität“ mit ausgewählter Ausschlussoption, auf der 100 verbrauchte und 50 verbleibende von 150 ursprünglichen Mengen angezeigt werden.](assets/campaign_opt_create_capacity_04.png)
 
 Klicken Sie zur Ansicht der Verbrauchszeilen auf den Tab **[!UICONTROL Verbrauch]** der Regel.

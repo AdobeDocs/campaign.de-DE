@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 95%
+source-wordcount: '908'
+ht-degree: 75%
 ---
 # Verwalten von Assets und Dokumenten {#manage-assets-documents}
 
@@ -54,19 +54,19 @@ Für eine Kampagne enthält die Registerkarte **[!UICONTROL Dokumente]**:
 
 Die Dokumente werden über den Tab **[!UICONTROL Bearbeiten > Dokumente]** einem Programm oder einer Kampagne zugeordnet.
 
-![](assets/op_add_document.png)
+![Registerkarte „Bearbeiten“ in Campaign, Unterregisterkarte „Dokumente“: Liste der angehängten Dokumente mit den Schaltflächen „Hinzufügen“, „Löschen“ und „Details“.](assets/op_add_document.png)
 
 Es besteht darüber hinaus die Möglichkeit, Dokumente über den entsprechenden Link im Dashboard zu einer Kampagne hinzuzufügen.
 
-![](assets/add_a_document_in_op.png)
+![Kampagnen-Dashboard mit dem Link Dokument hinzufügen und dem Dialogfeld Marketing-Dokument zum Hochladen einer Datei.](assets/add_a_document_in_op.png)
 
 Klicken Sie auf das Symbol **[!UICONTROL Detail...]**, um den Inhalt einer Datei anzusehen und ergänzende Informationen hinzuzufügen.
 
-![](assets/add_document_details.png)
+![Dokument-Dialogfeld geöffnet ab Detail: Bezeichnung, Version, Art, hochgeladener Datei-Link und Beschreibung.](assets/add_document_details.png)
 
 Im Abschnitt **[!UICONTROL Dokument(e)]** des Kampagnen-Dashboards werden alle der Kampagne zugeordneten Dokumente aufgelistet, wie im folgenden Beispiel:
 
-![](assets/edit_documents.png)
+![Kampagnen-Dashboard mit dem Abschnitt „Dokument(e)“, in dem die an die Kampagne angehängten Dokumente hervorgehoben sind.](assets/edit_documents.png)
 
 Über die Links können die Dokumente geöffnet und bearbeitet werden.
 
@@ -86,7 +86,7 @@ Versandentwürfe ermöglichen es, für eine Kampagne externe Elemente zu struktu
 
 Um einen Versandentwurf zu erstellen, klicken Sie auf die Unterregisterkarte **[!UICONTROL Versandentwürfe]** auf der Registerkarte **[!UICONTROL Bearbeiten > Dokumente]** der betreffenden Kampagne.
 
-![](assets/add-a-delivery-outline.png)
+![Registerkarte „Bearbeiten“ in Campaign, Dokumente, Unterregisterkarte „Versandentwürfe“ mit dem Link Versandentwurf hinzufügen.](assets/add-a-delivery-outline.png)
 
 
 >[!NOTE]
@@ -98,33 +98,33 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 1. Machen Sie einen Rechtsklick auf den Wurzelknoten und wählen Sie **[!UICONTROL Neu > Versandentwürfe]** aus, um einen neuen Versandentwurf hinzuzufügen.
 1. Machen Sie einen Rechtsklick auf den soeben erstellten Versandentwurf und wählen Sie beispielsweise **[!UICONTROL Neu > Artikel]** oder **[!UICONTROL Neu > Personalisierungsfelder]** aus.
 
-![](assets/del-outline-add-new-item.png)
+![Versandentwurf im Kontextmenü: Neu > Element, Personalisierungsfelder oder Angebot.](assets/del-outline-add-new-item.png)
 
 Ein Versandentwurf kann Artikel, Personalisierungsfelder und Angebote enthalten:
 
 * Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
 * Personalisierungsfelder ermöglichen es Ihnen, Personalisierungselemente zu erstellen, die sich auf Sendungen und nicht auf Empfangende beziehen. Daher ist das Erstellen von Werten möglich, die in Sendungen für eine bestimmte Zielgruppe (Willkommensangebot, Rabatt usw.) verwendet werden können. Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Entwurf importiert.
 
-  ![](assets/del-outline-perso-field.png)
+  ![Wählen Sie das Dialogfeld Personalisierungsfelder mit den Optionen Pack, Gold und Premium aus, das über Personalisierungsfelder importieren geöffnet wurde.](assets/del-outline-perso-field.png)
 
   Über das Symbol **[!UICONTROL Hinzufügen]** rechts vom Bereich der Liste können in dem Entwurf auch direkt Personalisierungselemente erstellt werden.
 
-  ![](assets/add-del-outline-button.png)
+  ![Personalisierungsfelder werden in einem Versandentwurf mit eingegebenen Werten und dem Symbol Hinzufügen rechts von der Liste aufgeführt.](assets/add-del-outline-button.png)
 
 
 ### Auswählen eines Versandentwurfs {#select-an-outline}
 
 Sie können für jeden Versand über den Bereich der Extraktionskonfiguration einen Entwurf auswählen, wie im folgenden Beispiel:
 
-![](assets/select-delivery-outline.png)
+![Registerkarte „Briefpost“ eines Versands mit dem Dialogfeld „Versandentwurf auswählen“, in dem die Einheiten B, C und A aufgeführt sind.](assets/select-delivery-outline.png)
 
 Der ausgewählte Entwurf wird dann im unteren Abschnitt des Fensters angezeigt. Er kann über das Symbol rechts im Fenster oder mithilfe der Dropdown-Liste bearbeitet werden:
 
-![](assets/delivery-outline-selected.png)
+![Registerkarte „Briefpost“ eines Versands mit hervorgehobenem Feld „Versandentwurf“, auf der Einheit C angezeigt wird.](assets/delivery-outline-selected.png)
 
 Diese Information wird ebenfalls im Tab **[!UICONTROL Zusammenfassung]** des Versands angezeigt:
 
-![](assets/delivery-outline-in-dashboard.png)
+![Registerkarte Versandzusammenfassung mit einem Pfeil, der auf den Wert des Versandentwurfs, Einheit C, verweist](assets/delivery-outline-in-dashboard.png)
 
 ### Extraktionsergebnis {#extraction-result}
 
@@ -132,6 +132,6 @@ In der extrahierten und an den Dienstleister gesendeten Datei werden dem Inhalt 
 
 Im folgenden Beispiel werden der Titel, die Plankosten sowie die Beschreibung des dem Versand zugeordneten Entwurfs der Extraktionsdatei hinzugefügt.
 
-![](assets/campaign-export-template.png)
+![Schritt „Zu extrahierende Daten“ der Exportvorlage mit hervorgehobener Ausgabespalte „Bezeichnung“ (Versand/Versandentwurf).](assets/campaign-export-template.png)
 
 Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versand zugeordnet sein. Siehe [diesen Abschnitt](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures).

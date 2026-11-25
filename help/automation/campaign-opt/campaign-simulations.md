@@ -21,10 +21,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 100%
+source-wordcount: '1636'
+ht-degree: 82%
 ---
 # Campaign-Simulationen{#campaign-simulations}
 
@@ -43,7 +43,7 @@ Das bedeutet, dass die Druck- und Kapazitätsregeln nur auf Sendungen im Modus *
 
 Der Versandmodus wird in den Eigenschaften des jeweiligen Versands im Tab **[!UICONTROL Typologie]** ausgewählt.
 
-![](assets/simu_campaign_select_delivery_mode.png)
+![Registerkarte Versandeigenschaften Typologie mit der Dropdown-Liste Versandmodus , in der drei Modi aufgelistet sind.](assets/simu_campaign_select_delivery_mode.png)
 
 
 ### Erstellen einer Simulation {#create-a-simulation}
@@ -52,19 +52,19 @@ Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
 1. Öffnen Sie den Tab **[!UICONTROL Kampagnen]**, klicken Sie im Abschnitt **[!UICONTROL Erstellen]** auf den Link **[!UICONTROL Andere Optionen]** und wählen Sie **[!UICONTROL Simulation]** aus.
 
-   ![](assets/simu_campaign_opti_01.png)
+   ![Startseite des Kampagnenkalenders mit hervorgehobenem Menü „Mehr“ unter „Erstellen und öffnen“ und „Simulation“.](assets/simu_campaign_opti_01.png)
 
 1. Wählen Sie eine Simulationsvorlage aus und geben Sie einen Titel an. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Simulation zu erstellen.
 
-   ![](assets/simu_campaign_opti_02.png)
+   ![Dialogfeld „Simulationserstellung“ mit hervorgehobenen Feldern „Simulationsvorlage“ und „Beschriftung“ und der Schaltfläche „Speichern“.](assets/simu_campaign_opti_02.png)
 
 1. Klicken Sie auf den Tab **[!UICONTROL Bearbeiten]**, um sie zu konfigurieren.
 
-   ![](assets/simu_campaign_opti_edit.png)
+   ![Registerkarte Bearbeiten der Simulation mit den Abschnitten Allgemein, Umfang, Berechnungen und Audit sowie den Ausführungseinstellungen.](assets/simu_campaign_opti_edit.png)
 
 1. Geben Sie im Tab **[!UICONTROL Perimeter]** die für diese Simulation zu berücksichtigenden Sendungen an. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie den gewünschten Modus aus.
 
-   ![](assets/simu_campaign_opti_edit_scope.png)
+   ![Bereich Umfang mit der Schaltfläche Hinzufügen und dem Dialogfeld Simulationselement zur Auswahl der Versandart.](assets/simu_campaign_opti_edit_scope.png)
 
    Sie können entweder jeden Versand einzeln oder alle zu einer bestimmten Kampagne, einem Programm oder einem Plan gehörenden Sendungen auswählen.
 
@@ -74,17 +74,17 @@ Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
    >  
    >Andernfalls werden nur die zum Zeitpunkt der Simulationserstellung im Plan, Programm oder in der Kampagne vorhandenen Sendungen berücksichtigt: Später hinzugefügte Sendungen werden nicht beachtet.
 
-   ![](assets/simu_campaign_opti_edit_scope_update.png)
+   ![Das Dialogfeld „Simulationselement“ mit aktivierter Option „Alle Sendungen eines oder mehrerer Programme aktualisieren“.](assets/simu_campaign_opti_edit_scope_update.png)
 
 1. Wählen Sie die im Simulationsumfang einzuschließenden Elemente aus. Bei Bedarf können Sie mithilfe der Umschalt- und Strg-Taste mehrere Elemente auswählen.
 
-   ![](assets/simu_campaign_opti_edit_scope_select.png)
+   ![Dialogfeld zur Auswahl von Sendungen mit mehreren hervorgehobenen Sendungen und der Schaltfläche „Beenden“.](assets/simu_campaign_opti_edit_scope_select.png)
 
    Klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]**, um die Auswahl zu bestätigen.
 
    Es besteht die Möglichkeit, manuell ausgewählte Sendungen mit solchen aus verschiedenen Plänen, Programmen oder Kampagnen zu kombinieren.
 
-   ![](assets/simu_campaign_opti_edit_scope_save.png)
+   ![Scope list mixing programs, campaigns and a plan, with the button Save and the Edit the dynamic condition link.](assets/simu_campaign_opti_edit_scope_save.png)
 
    Über den Link **[!UICONTROL Dynamische Bedingung bearbeiten…]** können Sie eine dynamische Bedingung verwenden.
 
@@ -96,11 +96,11 @@ Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
 1. Wählen Sie im **[!UICONTROL Berechnungen]**-Tab eine Analysedimension, beispielsweise das Empfängerschema aus.
 
-   ![](assets/simu_campaign_opti_dimension.png)
+   ![Abschnitt „Berechnungen“, in dem das Dialogfeld „Schemaauswahl“ geöffnet und Empfänger (nms) als Analysedimension ausgewählt sind.](assets/simu_campaign_opti_dimension.png)
 
 1. Im Anschluss können Sie Ausdrücke hinzufügen.
 
-   ![](assets/simu_campaign_opti_dimension_02.png)
+   ![Abschnitt Berechnungen mit Empfängern (nms) als Analysedimension und aufgelisteten Konto- und Statusberichtsachsen.](assets/simu_campaign_opti_dimension_02.png)
 
 ### Ausführungsparameter {#execution-settings}
 
@@ -118,11 +118,11 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
 Öffnen Sie das Simulations-Dashboard und klicken Sie auf die Schaltfläche **[!UICONTROL Simulation starten]**.
 
-![](assets/simu_campaign_opti_start.png)
+![Simulations-Dashboard mit der Schaltfläche Simulation starten.](assets/simu_campaign_opti_start.png)
 
 Öffnen Sie nach der Ausführung die Simulation und klicken Sie auf den Tab **[!UICONTROL Ergebnisse]**, um die für die Sendungen berechneten Zielgruppen anzuzeigen.
 
-![](assets/simu_campaign_opti_results.png)
+![Registerkarte Ergebnisse, Unterregisterkarte Sendungen , auf der jeder Versand mit seiner Anfangsanzahl und Endanzahl aufgelistet ist.](assets/simu_campaign_opti_results.png)
 
 1. In der Unterregisterkarte **[!UICONTROL Sendungen]** werden alle von der Simulation berücksichtigten Sendungen aufgelistet. Es werden zwei Auflistungen angezeigt:
 
@@ -135,12 +135,12 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
 1. Die **[!UICONTROL Ausschlüsse]** werden nach Sendungen aufgestaffelt dargestellt.
 
-   ![](assets/simu_campaign_opti_14.png)
+   ![Registerkarte „Ergebnisse“, Unterregisterkarte „Ausschlüsse“ mit der Anzahl der Ausschlüsse pro Versand und Regel.](assets/simu_campaign_opti_14.png)
 
 1. Die Unterregisterkarte **[!UICONTROL Warnungen]** enthält alle Warnhinweise, die während der Simulation generiert wurden. Warnhinweise können bei Überschreitung der Kapazität gesendet werden (wenn beispielsweise die Zielgruppe mehr Empfangende enthält, als die festgelegte Kapazität zulässt).
 1. In der Unterregisterkarte **[!UICONTROL Ausschlussanalyse]** können Sie eine Tabelle zur Analyse der Ergebnisse erstellen. Benutzende müssen Variablen auf der x-/y-Achse angeben.
 
-   Ein Beispiel für die Erstellung einer Analysetabelle finden Sie am Ende [dieses Abschnitts](#explore-results).
+   Ein Beispiel für die Erstellung einer Analysetabelle finden Sie am Ende von [Ergebnisse &#x200B;](#explore-results).
 
 ### Anzeigen von Ergebnissen {#view-results}
 
@@ -148,7 +148,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
 Die Registerkarte **[!UICONTROL Audit]** ermöglicht die Überwachung der Simulation. Die Unterregisterkarte **[!UICONTROL SQL-Logs]** ist insbesondere für erfahrene Benutzer hilfreich. Es werden Ausführungslogs im SQL-Format aufgelistet. Damit die SQL-Logs angezeigt werden, muss vor Ausführung der Simulation auf der Registerkarte **[!UICONTROL Allgemein]** die Option **[!UICONTROL SQL-Abfragen im Protokoll speichern]** aktiviert werden.
 
-![](assets/simu_campaign_opti_11.png)
+![Audit-Abschnitt mit den Unterregisterkarten Journal und SQL-Protokolle, wobei die SQL-Protokolle Ausführungsabfragen anzeigen.](assets/simu_campaign_opti_11.png)
 
 #### Analysieren von Ergebnissen {#explore-results}
 
@@ -180,7 +180,7 @@ Standardmäßig werden folgende Berichte angeboten:
 
 Um Berichte zu öffnen, klicken Sie auf den für die jeweilige Simulation im Dashboard verfügbaren **[!UICONTROL Berichte]**-Link.
 
-![](assets/campaign_opt_reporting_edit_from_board.png)
+![Berichte im Simulations-Dashboard zeigen Berichtkacheln an, wie zum Beispiel Details zu Simulationsausschlüssen.](assets/campaign_opt_reporting_edit_from_board.png)
 
 Klicken Sie auf den Link **[!UICONTROL Berichte]** auf dem Dashboard der entsprechenden Simulation, um auf die Berichte zuzugreifen.
 
@@ -196,12 +196,12 @@ Zum Vergleichen der Ergebnisse müssen Sie Berichte verwenden. Mit Adobe Campaig
 1. Öffnen Sie im Tab **[!UICONTROL Berichte]** einen der verfügbaren Berichte, zum Beispiel **[!UICONTROL Detail der simulationsbedingten Ausschlüsse]**.
 1. Klicken Sie oben rechts auf das Symbol zur Erstellung eines neuen Verlaufs.
 
-   ![](assets/campaign_opt_reporting_create_hist.png)
+   ![Detail des Berichts zu Simulationsausschlüssen mit hervorgehobenem Symbol „Neuer Verlauf“ in der Symbolleiste.](assets/campaign_opt_reporting_create_hist.png)
 
 1. Schließen Sie diese Simulation und ändern Sie die Konfiguration der Typologie **A**.
 1. Führen Sie die Simulation erneut aus und vergleichen Sie das Ergebnis mit dem in dem Bericht angezeigten Ergebnis, in dem zuvor ein Verlauf erstellt wurde.
 
-   ![](assets/campaign_opt_reporting_edit_hist.png)
+   ![Detail des Berichts zu Simulationsausschlüssen im Vergleich zu einem gespeicherten Verlauf, der über das Symbol Verfügbarer Verlauf geöffnet wurde.](assets/campaign_opt_reporting_edit_hist.png)
 
    Es können beliebig viele Berichtsverläufe gespeichert werden.
 
@@ -221,7 +221,7 @@ Es soll eine zusätzliche Berichtsachse über den Empfängerstatus (&quot;Kunde&
 1. Um eine Berichtsachse zu definieren, wählen Sie die Tabelle mit den zu verarbeitenden Informationen im Feld **[!UICONTROL Analysedimension]** aus. Diese Informationen sind obligatorisch.
 1. An dieser Stelle wird das entsprechende Feld der Empfängertabelle ausgewählt.
 
-   ![](assets/simu_campaign_opti_09.png)
+   ![Abschnitt Berechnungen mit Empfängern (nms) als Analysedimension und einer Statusberichtsachse basierend auf @status.](assets/simu_campaign_opti_09.png)
 
 1. Folgende Optionen stehen zur Verfügung:
 
@@ -241,7 +241,7 @@ Bei der Anzeige der Simulationsergebnisse werden Informationen bezüglich des au
 
 Die Überschneidungen geben die Empfänger an, die in mindestens zwei verschiedenen Sendungen einer Simulation den Zielgruppen angehören.
 
-![](assets/simu_campaign_opti_13.png)
+![Registerkarte „Ergebnisse“, Unterregisterkarte Überschneidungen mit einer Auflistung jedes Versands, seines gleichzeitigen Versands und der Überschneidungsanzahl.](assets/simu_campaign_opti_13.png)
 
 >[!NOTE]
 >

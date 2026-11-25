@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 72%
 ---
 # Dimensionsänderung{#change-dimension}
 
@@ -42,11 +42,11 @@ Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen
 
 1. Wählen Sie im Feld **[!UICONTROL Dimensionsänderung]** die neue Zielgruppendimension aus.
 
-   ![](assets/s_user_change_dimension_param1.png)
+   ![Dimensionsfeld der Aktivität ändern, wobei der Feldselektor geöffnet und Abonnements als neue Dimension ausgewählt sind](assets/s_user_change_dimension_param1.png)
 
 1. Bei der Dimensionsänderung können Sie alle Elemente beibehalten oder die in der Ausgabe beizubehalten Elemente auswählen. Im folgenden Beispiel ist der Wert für „Max. Anzahl der Duplikate“ auf 2 gesetzt.
 
-   ![](assets/s_user_change_dimension_limit.png)
+   ![Option Anzahl der Elemente im neuen Dokument in der Zielgruppenbestimmung begrenzen, wobei das Feld Limit auf 2 gesetzt ist](assets/s_user_change_dimension_limit.png)
 
    Wenn Sie nur einen Eintrag beibehalten möchten, wird im Arbeitsschema eine Sammlung angezeigt, die alle Einträge enthält, die nicht im Endergebnis enthalten sind (da nur Eintrag beibehalten wird). Wie alle anderen Sammlungen können Sie mit dieser Sammlung Aggregate berechnen oder Informationen in Spalten abrufen.
 
@@ -54,7 +54,7 @@ Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen
 
 1. Wenn Sie nicht alle Datensätze beibehalten, können Sie die Deduplizierungsparameter bestimmen.
 
-   ![](assets/s_user_change_dimension_param2.png)
+   ![Deduplizierungsdialogfeld, in dem die Felder E-Mail und Kontonummer mit den Pfeilen aufgelistet sind, die ihre Priorität festlegen](assets/s_user_change_dimension_param2.png)
 
    Mithilfe der blauen Pfeile lässt sich die Reihenfolge der Duplikatverarbeitung bestimmen.
 
@@ -66,30 +66,30 @@ Um die Aktivität **[!UICONTROL Dimensionsänderung]** zu konfigurieren, führen
 
    * Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]** und kreuzen Sie die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** an.
 
-     ![](assets/wf_change-dimension_sample_01.png)
+     ![Registerkarte Ergebnis Datenlink hinzufügen, die den Assistenten Zusätzliche Daten mit Daten öffnet, die mit der ausgewählten Filterdimension verknüpft sind](assets/wf_change-dimension_sample_01.png)
 
      >[!NOTE]
      >
      >Weitere Informationen zur Erstellung und Verwendung von Zusatzspalten finden Sie unter [Daten hinzufügen](query.md#adding-data).
 
-   * Wählen Sie die ursprüngliche Zielgruppendimension aus (vor der Dimensionsänderung), markieren Sie die **[!UICONTROL Kundennummer]** und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]****[!UICONTROL .]**
+   * Wählen Sie die ursprüngliche Zielgruppendimension aus (vor der Dimensionsänderung), markieren Sie die **[!UICONTROL Kundennummer]** und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]**&#x200B;**[!UICONTROL .]**
 
-     ![](assets/wf_change-dimension_sample_02.png)
+     ![Assistent für zusätzliche Daten mit Postleitzahl aus der Unterstruktur „Standort“, die als Ausgabespalte und Bearbeitungsausdruck hinzugefügt wurde](assets/wf_change-dimension_sample_02.png)
 
    * Klicken Sie auf die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** und kreuzen Sie die Option **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** an.
 
-     ![](assets/wf_change-dimension_sample_03.png)
+     ![Schaltfläche „Erweiterte Auswahl“ öffnet den Formeltyp mit der ausgewählten Option „Formel mit einem Ausdruck bearbeiten“](assets/wf_change-dimension_sample_03.png)
 
    * Verwenden Sie die Funktionsliste, um die Formel zu erstellen.
 
-     ![](assets/wf_change-dimension_sample_04.png)
+     ![Ausdruckseditor mit der Formel Teilzeichenfolge der Postleitzahl aus dem Zeichen 1 mit der Länge 2 und der Liste der Funktionen](assets/wf_change-dimension_sample_04.png)
 
    * Geben Sie abschließend einen Titel für die neu erstellte Spalte an.
 
-     ![](assets/wf_change-dimension_sample_05.png)
+     ![Ausgabespalten mit der Bezeichnung County und dem Ausdruck Substring(zip/postcode, 1, 2)](assets/wf_change-dimension_sample_05.png)
 
 1. Führen Sie den Workflow aus, um das Ergebnis dieser Konfiguration anzuzeigen. Die folgenden Abbildungen zeigen die Tabellen vor und nach der Dimensionsänderung sowie die Struktur der Workflow-Tabellen:
 
-   ![](assets/wf_change-dimension_sample_06.png)
+   ![Zeigt die Zieloption auf der Dimension Transition vor Änderung mit ihren Daten und ihrem Schema in der Population anzeigen an](assets/wf_change-dimension_sample_06.png)
 
-   ![](assets/wf_change-dimension_sample_07.png)
+   ![Zeigt die Zieloption nach der Dimensionsänderung an, wobei die Daten mit der Spalte „Land“ und dem neuen Schema angezeigt werden](assets/wf_change-dimension_sample_07.png)

@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1431'
-ht-degree: 100%
+source-wordcount: '1859'
+ht-degree: 76%
 ---
 # Anreicherung{#enrichment}
 
@@ -36,24 +36,24 @@ ht-degree: 100%
 
 Mit einer Aktivität **[!UICONTROL Anreicherung]** können Sie einer Profilliste Daten hinzufügen und eine vorhandene Tabelle mit Links ergänzen (neuen Join erstellen). Außerdem können Sie Abstimmkriterien für Profile in der Datenbank definieren.
 
-![](assets/enrichment_design.png)
+![Workflow-Diagramm mit Anreicherungsaktivitäten, z. B. 3 Newsletter und Label-Service, der eine Top-1000-Aktivität befüllt.](assets/enrichment_design.png)
 
 ## Definitionen {#definitions}
 
 Die Anreicherungsaktivität bietet verschiedene Optionen zur Hinzufügung von Daten:
 
-![](assets/enrichment_edit.png)
+![Aktivität „Anreicherung“ Datenlink hinzufügen, mit dem der Assistent „Zusätzliche Daten“ mit den fünf hinzuzufügenden Datentypen geöffnet wird.](assets/enrichment_edit.png)
 
 Die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** bietet Zugriff auf:
 
 * Daten der Filterdimension: entspricht den Daten der Arbeitstabelle;
 * Daten in Relation mit der Filterdimension: entspricht den Daten in Relation mit der Arbeitstabelle.
 
-![](assets/wf_enrich_linkoptions.png)
+![Wählen Sie Felder aus, um eine Seite mit Daten der Filterdimension und mit den Optionen für die Filterdimension verknüpften Daten hinzuzufügen.](assets/wf_enrich_linkoptions.png)
 
 Die Option **[!UICONTROL Relation]** ermöglicht die Erstellung eines Joins mit jeder der in der Datenbank enthaltenen Tabellen.
 
-![](assets/wf_enrich_linkstype.png)
+![Seite „Link-Definition“ mit den vier Link-Typen, der Auswahl „Sammlung definieren“ und dem Abschnitt „Link-Ziel“.](assets/wf_enrich_linkstype.png)
 
 Vier Relationstypen stehen zur Auswahl:
 
@@ -83,27 +83,27 @@ Wählen Sie im Feld **[!UICONTROL Hauptmenge]** die eingehende Transition aus, d
 
 Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen]** und wählen Sie den Typ der hinzuzufügenden Daten aus. Die Liste der angebotenen Datentypen hängt von den auf Ihrer Plattform installierten Modulen und Optionen ab. In einer minimalen Konfiguration können Sie immer Daten hinzufügen, die mit der Filterdimension und einem Link verknüpft sind.
 
-![](assets/enrichment_edit.png)
+![Aktivität „Anreicherung“ Datenlink hinzufügen, mit dem der Assistent „Zusätzliche Daten“ mit den fünf hinzuzufügenden Datentypen geöffnet wird.](assets/enrichment_edit.png)
 
 Im folgenden Beispiel wird die Arbeitstabelle mit Informationen zum Alter der Zielpopulation angereichert.
 
-![](assets/enrichment_add_data.png)
+![Daten zum Hinzufügen einer Seite, wobei das Feld Alter unter der Zielgruppendimension ausgewählt und in den Ausgabespalten aufgeführt ist.](assets/enrichment_add_data.png)
 
 Klicken Sie mit der rechten Maustaste auf die eingehende Transition der Anreicherungsaktivität, um die Daten vor der Anreicherung anzusehen.
 
-![](assets/enrichment_content_before.png)
+![Kontextmenü auf der Transition nach Vereinigung 2 mit hervorgehobener Option „Zielgruppe anzeigen“.](assets/enrichment_content_before.png)
 
 Die Arbeitstabelle enthält das zugeordnete Schema und folgende Daten:
 
-![](assets/enrichment_content_before_a.png)
+![Zeigen Sie die Population mit den Arbeitstabellendaten vor der Anreicherung und ihr Schema mit dem Primären Schlüssel und der Zielgruppendimension an.](assets/enrichment_content_before_a.png)
 
 Sehen Sie sich nun die Daten nach der Anreicherung an, indem Sie mit der rechten Maustaste auf die ausgehende Transition klicken.
 
-![](assets/enrichment_content_after.png)
+![Kontextmenü auf der Transition nach der Aktivität Anreicherung 3 mit hervorgehobener Option „Zielgruppe anzeigen“.](assets/enrichment_content_after.png)
 
 Sie stellen fest, dass das Alter hinzugefügt wurde:
 
-![](assets/enrichment_content_after_a.png)
+![Zeigen Sie die Population mit der hinzugefügten Altersspalte und das angereicherte Schema mit Alter, Primärem Schlüssel und Zielgruppendimension an.](assets/enrichment_content_after_a.png)
 
 Auch das Schema wurde entsprechend angereichert.
 
@@ -111,11 +111,11 @@ Auch das Schema wurde entsprechend angereichert.
 
 Deaktivieren Sie die Option **[!UICONTROL Alle Zusatzdaten der Hauptmenge beibehalten]**, wenn Sie die zuvor definierten zusätzlichen Daten nicht beibehalten möchten. In diesem Fall werden nur die in der Anreicherungsaktivität ausgewählten zusätzlichen Spalten zur ausgehenden Arbeitstabelle hinzugefügt. Die zusätzlichen Informationen, die den vorgelagerten Aktivitäten hinzugefügt werden, werden nicht gespeichert.
 
-![](assets/enrichment_edit_without_additional.png)
+![Registerkarte Anreicherung mit Alle zusätzlichen Daten aus der Hauptmenge beibehalten und nur Alter (Zielgruppendimension) aufgelistet.](assets/enrichment_edit_without_additional.png)
 
 Die Daten und das Schema der ausgehenden Arbeitstabelle nach Durchführung der Anreicherung stellen sich dann wie folgt dar:
 
-![](assets/enrichment_content_after_without_additional.png)
+![Populationsfenster mit der Spalte Alter und dem Schema nach der Anreicherung ohne den Hauptsatz an zusätzlichen Daten anzeigen.](assets/enrichment_content_after_without_additional.png)
 
 ## Relation erzeugen {#creating-a-link}
 
@@ -140,19 +140,19 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Öffnen Sie die Anreicherungsaktivität und klicken Sie auf den Link **Daten hinzufügen...**, um eine Relation zur Ländertabelle herzustellen.
 
-   ![](assets/enrichment_edit_after_file_box.png)
+   ![Workflow mit dem Datei-Wächter, Laden (Datei) und Anreicherung, mit dem Link Daten hinzufügen der Aktivität Anreicherung.](assets/enrichment_edit_after_file_box.png)
 
 1. Wählen Sie die Option **[!UICONTROL Link definieren]** aus und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**. Geben Sie den Typ des zu erstellenden Links an. In diesem Beispiel soll das Land der die eingehende Datei empfangenden Person mit einem Land aus der entsprechenden Datenbanktabelle abgestimmt werden. Wählen Sie daher die Option **[!UICONTROL Relation durch Suche nach einer Referenz aus mehreren möglichen definieren]**. Wählen Sie im Feld **[!UICONTROL Zielschema]** die Ländertabelle an.
 
-   ![](assets/enrichment_add_a_link_select_option4.png)
+   ![Relationsdefinition mit Relation durch Suche nach einem Verweis zwischen mehreren Optionen und dem Ziel „Land (nms)“ definieren.](assets/enrichment_add_a_link_select_option4.png)
 
 1. Definieren Sie schließlich das oder die Felder, die die Zuordnung der Werte der Quelldatei zu denen der Datenbank ermöglichen.
 
-   ![](assets/enrichment_add_a_link_select_join.png)
+   ![Verknüpfungsdefinition Join-Bedingungen, die das Quellland dem englischen Titelfeld des Länderschemas zuordnen.](assets/enrichment_add_a_link_select_join.png)
 
 Nach Ausführung der Anreicherungsaktivität enthält das temporäre Schema wie zuvor konfiguriert die Relation zur Ländertabelle:
 
-![](assets/enrichment_external_link_schema.png)
+![Registerkarte „Ergebnisfenster-Schema“ mit der generierten Struktur mit dem Fremdschlüssel und dem Länder-Link und seinen Feldern.](assets/enrichment_external_link_schema.png)
 
 ## Datenabstimmung {#data-reconciliation}
 
@@ -162,7 +162,7 @@ Kreuzen Sie die Option **[!UICONTROL Dokument zur Zielgruppenbestimmung aufgrund
 
 Es können mehrere Abstimmkriterien definiert werden.
 
-![](assets/enrichment_reconciliations_tab_01.png)
+![Registerkarte Abstimmung mit Dokument aus den Arbeitsdaten und Quell- und Zielausdrücken identifizieren.](assets/enrichment_reconciliations_tab_01.png)
 
 Bei mehreren Abstimmkriterien müssen ALLE erfüllt sein, damit die Relation hergestellt werden kann.
 
@@ -174,7 +174,7 @@ Nähere Informationen zur Anreicherungsaktivität erhalten Sie in [diesem Abschn
 
 Sie können beispielsweise aus einer Abfrage stammende Empfängerdaten vor Durchführung eines Versands anreichern.
 
-![](assets/int_enrichment_offer1.png)
+![Workflow mit einer Abfrage -Aktivität, einer Anreicherung -Aktivität und einer Briefpost-Versandaktivität, die nacheinander verbunden sind.](assets/int_enrichment_offer1.png)
 
 Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](query.md)). Gehen Sie dann wie folgt vor:
 
@@ -182,18 +182,18 @@ Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](qu
 1. Wählen Sie **[!UICONTROL Daten hinzufügen]** im Tab **[!UICONTROL Anreicherung]**.
 1. Wählen Sie **[!UICONTROL Angebotsvorschlag]** als hinzuzufügenden Datentyp aus.
 
-   ![](assets/int_enrichment_offer2.png)
+   ![Wählen Sie den Datentyp aus, dem die Seite mit einem ausgewählten Angebotsvorschlag hinzugefügt werden soll.](assets/int_enrichment_offer2.png)
 
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
 1. Geben Sie die Angebotsauswahl an. Dafür stehen zwei Optionen zur Verfügung:
 
    * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Aktivieren Sie diese Option und geben Sie die Parameter für Aufrufe des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl der beizubehaltenden Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
 
-     ![](assets/int_enrichment_offer3.png)
+     ![Seite mit Angebotsvorschlägen mit Feldern für Kennung, Titel, Platzierung, Angebotskategorie und Kontaktdatum für die beste Angebotssuche.](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL Vordefiniertes Angebot]**: Bei Ankreuzen dieser Option können Sie ohne Abfrage des Angebotsmoduls direkt das einzufügende Angebot konfigurieren (Platzierung, Kontaktdatum).
 
-     ![](assets/int_enrichment_offer4.png)
+     ![Seite mit Angebotsvorschlägen mit Kennung, Titel, Platzierung, einem bestimmten Angebot und Kontaktdatum für ein vordefiniertes Angebot.](assets/int_enrichment_offer4.png)
 
 1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Siehe [Kanalübergreifender Versand](cross-channel-deliveries.md).
 
@@ -211,11 +211,11 @@ Gehen Sie dazu wie folgt vor:
 1. Wählen Sie im folgenden Fenster den Datentyp **[!UICONTROL Relation]** aus.
 1. Definieren Sie den Typ und das Ziel der einzurichtenden Relation. In diesem Fall ist das Angebotsschema die Zielgruppe.
 
-   ![](assets/int_enrichment_link1.png)
+   ![Verknüpfungsdefinitionsseite mit einem Link, dessen Ziel immer verfügbar ist, und Marketing-Angebote (nms) als Zielschema.](assets/int_enrichment_link1.png)
 
 1. Definieren Sie die Art der Relation zwischen den Daten der Eingangstabelle der Aktivität „Anreicherung“ (hier die Empfängertabelle) und der Angebotstabelle. Sie können beispielsweise einen Angebots-Code mit einer Empfängerin bzw. einem Empfänger verknüpfen.
 
-   ![](assets/int_enrichment_link2.png)
+   ![Verknüpfungsdefinition Join-Bedingungen, die die cryptedId der Quelle mit dem Angebotscode verknüpfen, mit Angebotskennung.](assets/int_enrichment_link2.png)
 
 1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Siehe [Kanalübergreifender Versand](cross-channel-deliveries.md).
 
@@ -234,11 +234,11 @@ Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten
 1. Erstellen Sie eine Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die nach einer Abfrage und vor einer Versandaktivität platziert wird.
 1. Klicken Sie auf der Registerkarte &quot;Anreicherung&quot; der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
 
-   ![](assets/ita_enrichment_rankweight_1.png)
+   ![Registerkarte „Anreicherung“ mit hervorgehobenen Spalten mit dem Angebotsvorschlag und dem Link „Zusätzliche Daten bearbeiten“.](assets/ita_enrichment_rankweight_1.png)
 
 1. Fügen Sie für das Ranking die Spalte **[!UICONTROL @rank]** und für die Gewichtung die Spalte **[!UICONTROL @weight]** hinzu.
 
-   ![](assets/ita_enrichment_rankweight_2.png)
+   ![Fenster „Zusätzliche Spalten auswählen“ mit Gewichtung und Rangfolge der Spalten, die dem Vorschlag mithilfe von „Unterelement hinzufügen“ hinzugefügt wurden.](assets/ita_enrichment_rankweight_2.png)
 
 1. Bestätigen Sie Ihre Wahl und speichern Sie den Workflow.
 

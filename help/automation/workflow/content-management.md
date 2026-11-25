@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '612'
+ht-degree: 84%
 ---
 # Content-Management{#content-management}
 
@@ -47,7 +47,7 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 * **Inhalt aktualisieren**: Die Aufgabe kann den Betreff des Inhalts ändern oder den gesamten XML-Inhalt importieren.
 * **Auszuführende Aktion**: Der Inhalt kann gespeichert oder erzeugt werden.
 
-  ![](assets/content_mgmt_edit.png)
+  ![Content-Management-Aktivität mit Inhalten, Inhalt aktualisieren und Aktion, um Abschnitte und eine ausgehende Transition durchzuführen](assets/content_mgmt_edit.png)
 
 1. **Content**
 
@@ -59,19 +59,19 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
      Wählen Sie diese Option, wenn ein zuvor erstellter Inhalt verwendet werden soll. Geben Sie diesen im Feld **[!UICONTROL Inhalt]** an. Das Feld erscheint nur, wenn die Option **[!UICONTROL Explizit]** angekreuzt wurde.
 
-     ![](assets/content_mgmt_explicit.png)
+     ![Abschnitt „Inhalt“, in dem die Option „Explizit“ ausgewählt und ein Inhaltsfeld auf einen vorhandenen Inhalt festgelegt ist](assets/content_mgmt_explicit.png)
 
    * **[!UICONTROL Wird durch ein Script erstellt]**
 
      Die Kennung des Inhalts wird über ein Script erstellt. Im Feld **[!UICONTROL Script]** wird das JavaScript-Template berechnet, welches die Kennung (den Primärschlüssel) des Inhalts auswertet. Das Feld erscheint nur, wenn die Option **[!UICONTROL Wird durch ein Script erstellt]** aktiviert wurde.
 
-     ![](assets/content_mgmt_script.png)
+     ![Abschnitt „Inhalt“, in dem „Von einem Skript berechnet“ ausgewählt und das Feld „Skript“ angezeigt wird](assets/content_mgmt_script.png)
 
    * **[!UICONTROL Neu, basierend auf einer Veröffentlichungsvorlage erstellt]**
 
      Erstellt ausgehend von einer Veröffentlichungsvorlage einen neuen Inhalt. Der neue Inhalt wird im Ordner gespeichert, der im Feld **[!UICONTROL String]** angegeben ist. Das Feld **[!UICONTROL Vorlage]** gibt die zu verwendende Veröffentlichungsvorlage an.
 
-     ![](assets/content_mgmt_new.png)
+     ![Inhaltsabschnitt mit der Option Neu, erstellt aus einer ausgewählten Veröffentlichungsvorlage und den Feldern Vorlage und Kanal](assets/content_mgmt_new.png)
 
 1. **Bereich Inhalt aktualisieren**
 
@@ -83,7 +83,7 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
      Mit dieser Option können Sie den Inhalt aus einem XML-Dokument erstellen, das über ein XSL-Stylesheet heruntergeladen wurde. Wenn diese Option ausgewählt ist, wird die **[!UICONTROL URL]** gibt das XML-Inhalts-Download-URL an. Das Feld **[!UICONTROL XSL-Stylesheet]** gibt das für die Umwandlung zu nutzende Stylesheet an. Letzteres ist optional.
 
-     ![](assets/content_mgmt_xmlcontent.png)
+     ![Abschnitt „Inhalt aktualisieren“ mit aktiviertem Zugriff auf Daten aus einem XML-Feed, der die Felder URL und XSL-Stylesheet anzeigt](assets/content_mgmt_xmlcontent.png)
 
 1. **Auszuführende Aktion**
 
@@ -97,7 +97,7 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
      Der Inhalt wird gespeichert und die Ausgabedateien für alle Umwandlungsvorlagen mit dem Veröffentlichungstyp &#39;Datei&#39; werden erzeugt.
 
-     ![](assets/content_mgmt_generate.png)
+     ![Aktion, die mit der ausgewählten Option „Generieren“ und dem angezeigten Feld „Veröffentlichungsordner“ ausgeführt werden soll](assets/content_mgmt_generate.png)
 
      In diesem Fall wird die ausgehende Transition für jede erzeugte Datei aktiviert. In der Variable **[!UICONTROL contentId]** wird die Kennung des Inhalts und in der Variable **[!UICONTROL filename]** der Name der Datei gespeichert.
 

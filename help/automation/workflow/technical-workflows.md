@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 94%
+source-wordcount: '2287'
+ht-degree: 92%
 ---
 # Technische Workflows{#about-technical-workflows}
 
@@ -51,17 +51,17 @@ Adobe Campaign verfügt über eine Reihe integrierter technischer Workflows. Die
 
 Standardmäßig sind technische Workflows in einem Unterordner des folgenden Knotens verfügbar: **[!UICONTROL Administration]** > **[!UICONTROL Betreibung]** > **[!UICONTROL Technische Workflows]**.
 
-![](assets/navtree.png){width="50%" zoomable="yes"}
+![Explorer-Struktur mit Administration > Produktion wird erweitert und der Ordner Technische Workflows wird ausgewählt.](assets/navtree.png){width="50%" zoomable="yes"}
 
 >[!NOTE]
 >
->* Die Liste mit den verschiedenen Modulen gelieferten technischen Workflows werden in [diesem Abschnitt](#list-technical-workflows) beschrieben.
+>* Die Liste der mit jedem Modul installierten technischen Workflows ist in einem [integrierten technischen Workflows“ &#x200B;](#list-technical-workflows).
 >
 >* Technische Workflows, die sich auf das Add-on Message Center beziehen, werden standardmäßig im Knoten **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technische Workflows]** gespeichert.
 
 Der Unterordner **[!UICONTROL Kampagnenprozesse]** enthält die für die Ausführung wichtiger Kampagnenvorgänge (Benachrichtigungen zu Aufgaben, Lagerverwaltung, Kostenberechnungen etc.) notwendigen Workflows.
 
-![](assets/campaign-processes-wf.png)
+![Der Prozessordner von Campaign wird in der Struktur Technische Workflows mit der Liste Workflows und dem Diagramm ausgewählt.](assets/campaign-processes-wf.png)
 
 ## Verwalten und Erstellen technischer Workflows {#manage-tech-workflows}
 
@@ -92,7 +92,7 @@ Die auf dieser Seite beschriebenen Workflows werden mit den verschiedenen in Ado
 | **Bereinigen von Ereignissen** (webAnalyticsPurgeWebEvents) | Web Analytics-Connectoren | Mit diesem Workflow können Sie jedes Ereignis aus dem Datenbankfeld entsprechend dem im Feld &quot;Lebensdauer&quot; konfigurierten Zeitraum löschen. |
 | **Exportieren von Zielgruppen zu Adobe Experience Cloud** (exportSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow exportiert freigegebene Zielgruppen. Diese Zielgruppen können in den verschiedenen Adobe CX Enterprise-Lösungen verwendet werden, die Sie verwenden. |
 | **Prognosen** (forecasting) | Standardmäßig installiert | Analysiert die im Planungskalender verzeichneten Sendungen (Erstellung von Planungslogs). Er wird standardmäßig täglich um 1 Uhr gestartet. |
-| **Berechnung des vollständigen Aggregats (propositionrcp-Cube)** (agg_nmspropositionrcp_full) | Angebotsmodul (interaction) | Dieser Workflow aktualisiert das vollständige Aggregat für den Angebotsvorschlags-Cube. Er wird standardmäßig täglich um 1 Uhr gestartet. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Versand, Marketing-Angebot und Datum. Der Cube „Angebotsvorschlag“ wird dann zur Erstellung von angebotsbasierten Berichten verwendet. Weitere Informationen zu Cubes finden Sie in [diesem Abschnitt](../../v8/reporting/gs-cubes.md). |
+| **Berechnung des vollständigen Aggregats (propositionrcp-Cube)** (agg_nmspropositionrcp_full) | Angebotsmodul (interaction) | Dieser Workflow aktualisiert das vollständige Aggregat für den Angebotsvorschlags-Cube. Er wird standardmäßig täglich um 1 Uhr gestartet. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Versand, Marketing-Angebot und Datum. Der Cube „Angebotsvorschlag“ wird dann zur Erstellung von angebotsbasierten Berichten verwendet. Weitere Informationen zu Cubes finden Sie unter [Erste Schritte mit Adobe Campaign-Analyseberichten](../../v8/reporting/gs-cubes.md). |
 | **Identifizierung der konvertierten Kontakte** (webAnalyticsFindConverted) | Web Analytics-Connectoren | Dieser Workflow indexiert die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Die durch diesen Workflow wiederhergestellten Daten können im Bericht zur Remarketing-Effizienz abgerufen werden (siehe diese Seite). |
 | **Importieren von Zielgruppen aus Adobe Experience Cloud** (importSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow ermöglicht den Import von Audiences/Segmenten aus verschiedenen CX Enterprise-Lösungen in Adobe Campaign. |
 | **Bearbeitungsaufträge bezüglich Kampagnensendungen** (deliveryMgt) | Standardmäßig installiert | Dieser Workflow startet den Versand der validierten Sendungen und die Anschlussvorgänge des Dienstleisters bei externem Versand. Außerdem werden Validierungsbenachrichtigungen und Erinnerungen gesendet. |

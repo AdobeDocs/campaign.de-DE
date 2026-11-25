@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 100%
+source-wordcount: '1425'
+ht-degree: 97%
 ---
 # Best Practices bei Workflows{#workflow-best-practices}
 
@@ -82,7 +82,7 @@ Die Workflow-Heatmap ermöglicht den Administratoren der Adobe Campaign-Plattfor
 
 >[!CAUTION]
 >
->Sie können Aktivitäten innerhalb eines Workflows kopieren und einfügen. Wir raten jedoch davon ab, Aktivitäten über verschiedene Workflows hinweg zu kopieren und einzufügen. Einige Einstellungen, die Aktivitäten wie Sendungen und Planung betreffen, können zu Konflikten und Fehlern beim Ausführen des Ziel-Workflows führen. Stattdessen empfehlen wir, Workflows zu **duplizieren**. Weitere Informationen finden Sie unter [Workflows duplizieren ](build-a-workflow.md#duplicate-workflows).
+>Sie können Aktivitäten innerhalb eines Workflows kopieren und einfügen. Wir raten jedoch davon ab, Aktivitäten über verschiedene Workflows hinweg zu kopieren und einzufügen. Einige Einstellungen, die Aktivitäten wie Sendungen und Planung betreffen, können zu Konflikten und Fehlern beim Ausführen des Ziel-Workflows führen. Stattdessen empfehlen wir, Workflows zu **duplizieren**. Weitere Informationen finden Sie unter [Workflows duplizieren &#x200B;](build-a-workflow.md#duplicate-workflows).
 
 ### Name der Aktivität {#name-of-the-activity}
 
@@ -93,9 +93,9 @@ Der Aktivitätsname ist im Tab **[!UICONTROL Erweitert]** verfügbar. Behalten S
 ### Erste und letzte Aktivitäten {#first-and-last-activities}
 
 * Beginnen Sie Ihren Workflow stets mit der Aktivität **[!UICONTROL Beginn]** oder **[!UICONTROL Planung]**. Bei Bedarf können Sie auch die Aktivität **[!UICONTROL Externes Signal]** hinzufügen.
-* Pro Workflow-Verzweigung darf nur eine einzige **** Planung verwendet werden. Wenn dieselbe Verzweigung eines Workflows mehrere Planungen enthält, die miteinander verknüpft sind, steigt die Anzahl der auszuführenden Aufgaben exponentiell an, wodurch die Datenbank überlastet würde. Diese Regel gilt auch für alle Aktivitäten mit einem Tab **[!UICONTROL Planung &amp; Verlauf]**. Weitere Informationen zur [Planung](scheduler.md).
+* Pro Workflow-Verzweigung darf nur eine einzige **&#x200B;**&#x200B;Planung verwendet werden. Wenn dieselbe Verzweigung eines Workflows mehrere Planungen enthält, die miteinander verknüpft sind, steigt die Anzahl der auszuführenden Aufgaben exponentiell an, wodurch die Datenbank überlastet würde. Diese Regel gilt auch für alle Aktivitäten mit einem Tab **[!UICONTROL Planung &amp; Verlauf]**. Weitere Informationen zur [Planung](scheduler.md).
 
-  ![](assets/wf-scheduler.png)
+  ![Korrektes Layout mit einer Planung pro Verzweigung, im Vergleich zu zwei Planungen in einer Verzweigung, die als nicht zulässig markiert sind.](assets/wf-scheduler.png)
 
 * Verwenden Sie Aktivitäten des Typs **[!UICONTROL Ende]** für jeden Workflow. Auf diese Weise wird temporärer Speicherplatz in Adobe Campaign freigesetzt, der für Berechnungen in Workflows verwendet wird. Weitere Informationen finden Sie unter [Start und Ende](start-and-end.md).
 
@@ -158,4 +158,4 @@ Die folgenden Best Practices sollten zusätzlich bei der Planung der Ausführung
 
 Vermeiden Sie in einer Produktionsumgebung die Ausführung von Workflows in der Engine. Wenn die Option **[!UICONTROL In der Engine ausführen]** in den **[!UICONTROL Workflow-Eigenschaften]** aktiviert ist, hat dieser Workflow Priorität und alle anderen Workflows werden von der Workflow-Engine angehalten, bis dieser beendet ist.
 
-![](assets/wf-execute-in-engine.png)
+![Registerkarte „Ausführung“ der Workflow-Eigenschaften mit der Option „In der Engine ausführen“ (nicht in der Produktion verwenden).](assets/wf-execute-in-engine.png)

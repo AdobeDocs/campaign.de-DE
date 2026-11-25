@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 71%
+source-wordcount: '1248'
+ht-degree: 67%
 ---
 # Erste Schritte mit verteiltem Marketing{#about-distributed-marketing}
 
@@ -103,7 +103,7 @@ Um an einer Kampagne teilnehmen zu können, bestellt die Lokalstelle den entspre
 
 Die Kampagnenkit-Liste ist über den Tab **Kampagnen** zugänglich: Klicken Sie dort auf **[!UICONTROL Kampagnenkits]**.
 
-![](assets/mkg_dist_home_local_op.png)
+![Registerkarte Kampagnen: Durch Klicken auf Kampagnenkits im Menü Durchsuchen wird die Liste der Kampagnenkits geöffnet.](assets/mkg_dist_home_local_op.png)
 
 Dieses Fenster ermöglicht jedem lokalen Benutzer, die für seine Agentur verfügbaren Kampagnen einzusehen.
 
@@ -113,7 +113,7 @@ Für zentrale Agenturen besteht hier Zugriff auf alle verfügbaren Kampagnenkits
 
 Bestimmen Sie zunächst die Akteure der Zentral- und Lokalstellen im Ordner **[!UICONTROL Zugriffsverwaltung]**.
 
-![](assets/s_advuser_mkg_dist_tree.png)
+![Explorer-Struktur mit Administration > Zugriffsverwaltung erweitert, in der Benutzer und Organisationseinheiten angezeigt werden.](assets/s_advuser_mkg_dist_tree.png)
 
 ### Benutzer {#operators}
 
@@ -123,13 +123,13 @@ Die zentralen Benutzer müssen der Gruppe **[!UICONTROL Zentrale Verwaltung]** a
 
 Lokale Benutzer müssen zur Benutzergruppe **[!UICONTROL Lokale Verwaltung]** gehören oder über die spezifische Berechtigung **[!UICONTROL LOCAL]** verfügen. Sie müssen auch mit ihrer Lokalstelle verbunden sein.
 
-![](assets/s_advuser_mkg_dist_local_create.png)
+![Registerkarte „Benutzerzugriffsrechte“ mit den Sicherheitsgruppen für die lokale Verwaltung und die zentrale Verwaltung.](assets/s_advuser_mkg_dist_local_create.png)
 
 ### Organisationseinheiten {#organizational-entities}
 
 Um eine Organisationseinheit zu erstellen, klicken Sie auf den Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Organisationseinheiten]** und dann auf das Symbol **[!UICONTROL Neu]** oberhalb der Liste der Einheiten.
 
-![](assets/s_advuser_mkg_dist_local_list.png)
+![Ordner der Organisationseinheiten mit hervorgehobenem Symbol „Neu“ über der Liste der Entitäten.](assets/s_advuser_mkg_dist_local_list.png)
 
 Jede Organisationseinheit enthält Identifizierungsinformationen (Titel, interner Name, Kontaktinformationen usw.) und Gruppen, die am Prozess der Bestellvalidierung beteiligt sind. Diese werden im Abschnitt **[!UICONTROL Benachrichtigungen und Validierungen]** der Registerkarte **[!UICONTROL Allgemein]** bestimmt.
 
@@ -152,7 +152,7 @@ Die Implementierungsetappen hängen vom gewählten Kampagnenkittyp und dem Umfan
 1. Erstellen Sie die Lokalstellen.
 1. Ordnen Sie die Empfänger den für die jeweiligen Lokalstellen verantwortlichen Benutzern zu.
 
-   ![](assets/mkg_dist_local_entity_association.png)
+   ![Empfängerformular mit hervorgehobenem Feld „Herkunft“, das den Empfänger mit einer Lokalstelle verknüpft.](assets/mkg_dist_local_entity_association.png)
 
 1. Legen Sie Berechtigungen und Navigationsregeln für die Lokalstellen fest.
 1. Geben Sie die Felder an, die zur lokalen Anpassung der Kampagnen notwendig sind:

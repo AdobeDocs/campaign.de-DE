@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '433'
+ht-degree: 78%
 ---
 # Extraktion (Datei){#extraction-file}
 
@@ -46,29 +46,29 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 1. Benennen Sie die zu extrahierende Datei. Der Name kann Variablen enthalten, die über die Personalisierungsschaltfläche rechts des entsprechenden Felds eingefügt werden können.
 1. Klicken Sie auf den Link **[!UICONTROL Dateiformat bearbeiten...]**, um die zu extrahierenden Daten auszuwählen.
 
-   ![](assets/s_advuser_extract_file_param.png)
+   ![Aktivität „Datenextraktion (Datei)“, wobei das Fenster „Dateiformat extrahieren“ über den Link Dateiformat bearbeiten geöffnet ist.](assets/s_advuser_extract_file_param.png)
 
    Die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** fügt eine weitere Etappe hinzu, die die Filterung des Aggregats ermöglicht (z. B. nach einer bestimmten Art von Bestellung, nach Kunden mit mehr als zehn Bestellungen etc.).
 
 1. Bei Bedarf können Sie der Ausgabedatei zusätzliche Spalten hinzufügen, zum Beispiel die Ergebnisse von Auswertungen oder Verarbeitungen. Wählen Sie hierzu das Symbol **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/s_advuser_extract_file_add_col.png)
+   ![Fenster „Format der Extraktionsdatei“ mit hervorgehobenem Symbol „Hinzufügen“ rechts neben der Liste „Ausgabespalten“.](assets/s_advuser_extract_file_add_col.png)
 
    Klicken Sie dann auf das Symbol **[!UICONTROL Ausdruck bearbeiten]**, um den Inhalt der neuen Spalte zu definieren.
 
-   ![](assets/s_advuser_extract_file_add_exp.png)
+   ![Liste der Ausgabespalten mit dem Symbol Ausdruck bearbeiten in der Spalte Erstellungsdatum.](assets/s_advuser_extract_file_add_exp.png)
 
    Sie greifen dann auf das Auswahlfenster zu. Klicken Sie auf **[!UICONTROL Erweiterte Auswahl]**, um den auf die Daten anzuwendenden Prozess auszuwählen.
 
-   ![](assets/s_advuser_extract_file_advanced_selection.png)
+   ![Feld zur Auswahl der Empfängerfelder in einer Fensterliste mit hervorgehobener Schaltfläche „Erweiterte Auswahl“.](assets/s_advuser_extract_file_advanced_selection.png)
 
    Kreuzen Sie die gewünschte Formel an.
 
-   ![](assets/s_advuser_extract_file_agregate_values.png)
+   ![Fenster „Formelart“ mit aktivierter Option „Prozess für eine Aggregatfunktion“ und aktivierter Option „Maximalwert“.](assets/s_advuser_extract_file_agregate_values.png)
 
 Sie können eine Nachbearbeitung definieren, die während der Datenextraktion ausgeführt werden soll, damit die Dateien komprimiert oder verschlüsselt werden. Dazu muss der gewünschte Befehl auf dem Tab **[!UICONTROL Script]** der Aktivität hinzugefügt werden.
 
-![](assets/postprocessing_dataextraction.png)
+![Aktivität „Datenextraktion (Datei)“ mit hervorgehobener Registerkarte „Skript“ zum Hinzufügen eines Nachbearbeitungs-Befehls.](assets/postprocessing_dataextraction.png)
 
 ## Aggregat-Funktionen {#list-of-aggregate-functions}
 

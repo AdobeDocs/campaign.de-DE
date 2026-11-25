@@ -23,10 +23,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '3936'
-ht-degree: 99%
+source-wordcount: '4732'
+ht-degree: 82%
 ---
 # Aufgaben erstellen und verwalten{#creating-and-managing-tasks}
 
@@ -40,7 +40,7 @@ Alle Aufgaben sind in einer Liste gruppiert, auf die über den Tab **Kampagnen**
 
 Sie können auch im Kalender des Programms, dem sie angehören, angezeigt werden.
 
-![](assets/campaign-calendar.png)
+![Zeitleiste des Kampagnenkalenders mit der Winterkampagne und der Marketing-Kampagne mit Aufgabe 1, Aufgabe 2 und Aufgabe 3.](assets/campaign-calendar.png)
 
 ## Zugriff auf Aufgaben {#accessing-tasks}
 
@@ -48,7 +48,7 @@ Sie können auch im Kalender des Programms, dem sie angehören, angezeigt werden
 
 Eine Liste der Aufgaben kann über den Tab **[!UICONTROL Kampagnen]** angezeigt werden.
 
-![](assets/campaign-task-dashboard.png)
+![Aufgabenliste unter Kampagnen mit der Schaltfläche Erstellen, Filtern und drei Aufgaben mit Status und Fortschritt.](assets/campaign-task-dashboard.png)
 
 Hier werden alle Aufgaben des aktuellen Benutzers aufgeführt.
 
@@ -62,7 +62,7 @@ Wenn Sie diese Ansicht anzeigen, wird sie automatisch gefiltert, um nur die **ak
 
 Klicken Sie auf eine Aufgabe, um sie zu bearbeiten.
 
-![](assets/edit-a-task.png)
+![Fenster „Aufgabenzusammenfassung“ für Aufgabe 3 mit Status, Priorität, Zeitplan, Bevollmächtigtem und Kampagne sowie einer Schaltfläche „Abbrechen“.](assets/edit-a-task.png)
 
 ## Neue Aufgabe erstellen {#creating-a-new-task}
 
@@ -70,17 +70,17 @@ Gehen Sie wie folgt vor, um eine Aufgabe zu erstellen:
 
 1. Navigieren Sie zum Link **[!UICONTROL Aufgaben]** in der Registerkarte **[!UICONTROL Kampagnen]** und klicken Sie auf **[!UICONTROL Erstellen]**.
 
-   ![](assets/create-a-task-from-dashboard.png)
+   ![Aufgabenliste mit einem Pfeil, der auf die Schaltfläche „Erstellen“ zeigt, die zum Hinzufügen einer neuen Aufgabe verwendet wird.](assets/create-a-task-from-dashboard.png)
 
 1. Geben Sie den Namen der Aufgabe ein und wählen Sie die Kampagne aus, mit der sie verknüpft ist.
 1. Legen Sie das Start- und Enddatum fest.
 1. Klicken Sie anschließend auf **[!UICONTROL Speichern]**, um die Aufgabe zu erstellen.
 
-   ![](assets/new-task-edit.png)
+   ![Neues Aufgabenformular mit Vorlage, Titel, Bevollmächtigtem, Kampagne, Start- und Enddatum, Workload und Beschreibung sowie Speichern.](assets/new-task-edit.png)
 
 Aufgaben können zudem über das Dashboard einer Kampagne erstellt werden: In diesem Fall werden sie automatisch der Kampagne zugeordnet, über die sie erstellt wurden.
 
-![](assets/add-a-task-in-a-campaign.png)
+![Kampagnen-Dashboard mit einem Pfeil, der auf den Link Aufgabe hinzufügen oberhalb der Kampagnenaufgabenliste verweist.](assets/add-a-task-in-a-campaign.png)
 
 Nachdem eine Aufgabe erstellt wurde, wird sie zum Kampagnenkalender, zum Kampagnen-Dashboard und zur Aufgabenliste hinzugefügt. Um eine Aufgabe zu bearbeiten, klicken Sie in der Aufgabenliste auf ihren Namen oder wählen Sie sie im Zeitplan- oder Kampagnen-Dashboard aus und klicken Sie auf **[!UICONTROL Öffnen]**.
 
@@ -92,7 +92,7 @@ Nach der Erstellung können Sie die Aufgabe konfigurieren, indem Sie Folgendes d
 
 Sie können auch [Validierungsverantwortliche](#reviewers) und [Referenzdokumente](#documents-referenced) hinzufügen.
 
-Der Lebenszyklus einer Aufgabe wird in [diesem Abschnitt](#life-cycle) vorgestellt.
+Der Lebenszyklus einer Aufgabe wird im Abschnitt [Lebenszyklus](#life-cycle) beschrieben.
 
 ### Verantwortlicher und Teilnehmer {#manager-and-participants}
 
@@ -100,11 +100,11 @@ Die Aufgabe wird standardmäßig dem Benutzer zugewiesen, der sie erstellt hat. 
 
 Sie können einen anderen Benutzer aus der Dropdown-Liste **[!UICONTROL Zugewiesen an]** auswählen.
 
-![](assets/task-assigned-to.png)
+![Registerkarte Allgemein der Aufgabe mit geöffneter Dropdown-Liste Zugewiesen an zur Auswahl eines anderen Benutzers.](assets/task-assigned-to.png)
 
 >[!NOTE]
 >
->Die Benutzerverwaltung wird in [diesem Abschnitt](../../v8/start/gs-permissions.md) beschrieben.
+>Die Benutzerverwaltung wird unter [Erste Schritte mit Berechtigungen in Campaign v8) &#x200B;](../../v8/start/gs-permissions.md).
 >
 >Der für eine Aufgabe verantwortliche Benutzer ist als Einziger dazu berechtigt, die Aufgabe zu schließen.
 
@@ -114,12 +114,12 @@ Gehen Sie wie folgt vor, um Aufgabenbenutzer hinzuzufügen:
 
 1. Klicken Sie auf **[!UICONTROL Ressourcen]** in der Aufgabensymbolleiste.
 
-   ![](assets/add-task-resources.png)
+   ![Registerkarte „Allgemein“ der Aufgabe mit einem Pfeil, der auf das Symbol „Ressourcen“ in der Symbolleiste verweist.](assets/add-task-resources.png)
 
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die betroffenen Benutzer aus.
 1. Geben Sie die Nutzungsrate ein: Dies entspricht dem Arbeitsaufwand, der dem Benutzer für die Dauer der Aufgabenausführung zugewiesen wurde. Dieser Satz ist nur ein Hinweis und wird in Prozent ausgedrückt.
 
-   ![](assets/define-operator-task-workload.png)
+   ![Fenster Ressourcen mit Benutzerinnen und Benutzern, die die Nutzungsrate, die geplante Arbeitslast und die ausgeführte Arbeitslast auflisten.](assets/define-operator-task-workload.png)
 
    Beispiel: Für eine Aufgabe wird eine Erfüllungsplanung von 10 Tagen festgelegt und einem Benutzer eine Auslastung von 50 % zugewiesen. Der Benutzer wird demnach für eine Dauer von 10 Tagen während der Hälfte seiner Arbeitszeit für die Aufgabenerfüllung eingesetzt.
 
@@ -127,7 +127,7 @@ Gehen Sie wie folgt vor, um Aufgabenbenutzer hinzuzufügen:
 
 1. Sie können eine Erinnerung über den Link **[!UICONTROL Erinnerung hinzufügen...]** konfigurieren. Vor dem Enddatum der Aufgabe wird eine E-Mail-Benachrichtigung an alle an der Aufgabe beteiligten Benutzer gesendet.
 
-   ![](assets/task-op-add-a-reminder.png)
+   ![Fenster „Ressourcen“ mit der Liste „Erinnerungen“ und einer Dropdown-Liste mit dem Angebot „Verzögerung ab Validierungstermin“ oder „Vorgegebenes Datum“.](assets/task-op-add-a-reminder.png)
 
 1. Sie können auch eine Benachrichtigung senden, bevor die Aufgabe gestartet wird. Um dies einzurichten, wählen Sie das Datum im Feld **[!UICONTROL Erstbenachrichtigung]** aus.
 1. Wenn das Enddatum erreicht ist und die Aufgabe nicht geschlossen wird, kann eine Benachrichtigung an den Bevollmächtigten oder die Gruppe von Bevollmächtigten gesendet werden, die in der Dropdown-Liste **[!UICONTROL Zugewiesene Benutzer]** ausgewählt sind.
@@ -135,7 +135,7 @@ Gehen Sie wie folgt vor, um Aufgabenbenutzer hinzuzufügen:
 
 Über das Benutzer-Dashboard kann dessen Arbeitslast, d.h. seine anderen Aufgaben, eingesehen werden.
 
-![](assets/operator-dashboard.png)
+![Benutzer-Dashboard mit der Liste der der Benutzer zugewiesenen Aufgaben, in dem jede Aufgabe und ihr Status angezeigt werden.](assets/operator-dashboard.png)
 
 ### Aufgabenvalidierung {#reviewers}
 
@@ -145,7 +145,7 @@ Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Aufgabenvalidierung aktivie
 
 Um eine Benutzerliste zu erstellen, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]** rechts von dem Feld, in dem der erste Validierungsverantwortliche angegeben wird. Fügen Sie nun so viele zusätzliche Benutzer wie nötig hinzu, wie im folgenden Beispiel:
 
-![](assets/enable-task-approval.png)
+![Fenster „Ressourcen“ mit ausgewählter Option „Aufgabenvalidierung aktivieren“ und im Dialogfeld „Validierungsverantwortliche bearbeiten“ werden zusätzliche Validierungsverantwortliche aufgelistet.](assets/enable-task-approval.png)
 
 Im unteren Bereich des Konfigurationsfensters können Sie einen Validierungsplan für die Aufgabe definieren. Standardmäßig haben Validierungsverantwortliche ab dem Unterbreitungsdatum drei Tage Zeit, um die Aufgabe zu genehmigen. Sie können auch eine Erinnerung hinzufügen, die den betroffenen Benutzern automatisch vor Ablauf der Validierungsfrist zugeschickt wird.
 
@@ -159,14 +159,14 @@ Um dies durchzuführen:
 
 1. Öffnen Sie die Aufgabe und klicken Sie in der Aufgabensymbolleiste auf das Symbol **[!UICONTROL Dokumente]**.
 
-   ![](assets/add-documents-to-a-task.png)
+   ![Registerkarte „Allgemein“ der Aufgabe mit einem Pfeil, der auf das Symbol Dokumente in der Symbolleiste verweist.](assets/add-documents-to-a-task.png)
 
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie das Dokument aus, das Sie Ihrer Aufgabe hinzufügen möchten. Wenden Sie denselben Prozess für Marketing-Ressourcen an.
 
 
 Referenzierte Dokumente werden den Benachrichtigungen hinzugefügt, die an die an der Aufgabe beteiligten Benutzer gesendet werden. Sie werden auch zum Aufgaben-Dashboard hinzugefügt.
 
-![](assets/s_ncs_user_task_notification_documents.png)
+![Aufgaben-Dashboard mit den referenzierten Dokumenten „Brief.pdf“ und „Central Agency.pdf“, die in der Zeile „Dokument(e)“ hervorgehoben sind.](assets/s_ncs_user_task_notification_documents.png)
 
 ### Planung {#execution-schedule}
 
@@ -178,17 +178,17 @@ Der Gültigkeitszeitraum einer Aufgabe wird in den Feldern **[!UICONTROL Start]*
 
 Im Feld **[!UICONTROL Bereits aufgewendete Zeit]** kann der Fortschritt der Arbeitslast im Vergleich zum geplanten Zeitaufwand manuell aktualisiert werden. Die Angabe erfolgt ebenfalls in Stunden oder Tagen.
 
-![](assets/s_ncs_user_task_percentage_done_enter.png)
+![Registerkarte „Allgemein“ der Aufgabe mit einem Pfeil, der auf das Feld „Fortschritt (in %)“ verweist und auf 35.](assets/s_ncs_user_task_percentage_done_enter.png) eingestellt ist
 
 Der in Prozent ausgedrückte **[!UICONTROL Fortschrittsstatus]** der Aufgabe wird automatisch entsprechend den von den beteiligten Benutzenden ausgeführten Aufgaben aktualisiert. Er kann manuell eingegeben werden.
 
 Der Fortschritt wird im Aufgaben-Dashboard angezeigt.
 
-![](assets/s_ncs_user_task_percentage_done_from_dashboard.png)
+![Aufgaben-Dashboard mit einem Pfeil, der auf den Fortschrittswert von 35 Prozent verweist.](assets/s_ncs_user_task_percentage_done_from_dashboard.png)
 
 Die gleiche Information ist auch dem Kampagnen-Dashboard zu entnehmen.
 
-![](assets/s_ncs_user_task_percentage_done_from_op.png)
+![Aufgabenliste in Campaign mit einem Pfeil, der auf die Fortschrittsleiste von 35 % einer Aufgabe verweist.](assets/s_ncs_user_task_percentage_done_from_op.png)
 
 Wenn das Enddatum der Erfüllungsplanung erreicht und die Aufgabe nicht beendet ist, ist die Aufgabe **[!UICONTROL Überfällig]**. Außerdem wird eine Warnmeldung angezeigt, die die Benutzenden informiert.
 
@@ -200,13 +200,13 @@ Für jede Aufgabe können Sie zugehörige Ausgaben und prognostizierten Umsatz d
 
 Klicken Sie zur Angabe dieser Informationen auf das Symbol **[!UICONTROL Ausgaben und Einnahmen]** in der Menüleiste der Aufgabe.
 
-![](assets/s_ncs_user_task_edit_costs.png)
+![Von der Symbolleiste aus geöffnetes Fenster „Ausgaben und Einnahmen“ mit Angabe von Kosten, Verbindlichkeitsniveau, Kosten und Ziel hinzufügen.](assets/s_ncs_user_task_edit_costs.png)
 
 Standardmäßig entspricht das belastete Budget dem Budget der Kampagne, der die Aufgabe zugeordnet ist. Es wird in den Aufgabendetails angezeigt.
 
 >[!NOTE]
 >
->Weitere Informationen zu Ausgaben und Budgets finden Sie in [diesem Abschnitt](../campaigns/providers-stocks-and-budgets.md).
+>Weitere Informationen zu Ausgaben und Budgets finden Sie unter [, Lager und Budgets](../campaigns/providers-stocks-and-budgets.md).
 
 In diesem Fenster können Sie auch die zu erreichenden Ziele definieren. Ziele werden in Form von prognostizierten Umsätzen für die Aufgabe ausgedrückt.
 
@@ -218,7 +218,7 @@ Auch die Beteiligung externer Dienstleister an der Aufgabenverwaltung kann verze
 
 Wählen Sie die im Zusammenhang mit der Aufgabe anfallenden Kostenkategorien aus. Geben Sie hierzu den Kostentyp an und fügen Sie gegebenenfalls einen zu belastenden Betrag hinzu.
 
-![](assets/s_ncs_user_task_edit_simple_costs_tab.png)
+![Fenster „Aufgabeneigenschaften“ mit dem Feld „Dienstleister“ und den Kostenkategorien, in denen ein zu belastender Betrag aufgeführt ist.](assets/s_ncs_user_task_edit_simple_costs_tab.png)
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Wählen Sie die im Zusammenhang mit der Aufgabe anfallenden Kostenkategorien aus
 
 Jeder ausgewählte Dienstleister wird im Aufgaben-Dashboard angezeigt.
 
-![](assets/s_ncs_user_task_supplier_view.png)
+![Aufgaben-Dashboard mit einem Pfeil, der auf die Zeile „Dienstleister“ zeigt, die den ausgewählten Dienst anzeigt.](assets/s_ncs_user_task_supplier_view.png)
 
 ### Überfällige Aufgaben {#late-tasks}
 
@@ -234,19 +234,19 @@ Eine Aufgabe ist überfällig, wenn sie ihr Enddatum erreicht hat, ohne dass sic
 
 Wählen Sie im Bereich **[!UICONTROL Ressourcen]** die gewünschte Person im Feld **[!UICONTROL Zuweisung]** aus. Um mehrere Personen zu benachrichtigen, wählen Sie eine Benutzergruppe aus.
 
-![](assets/mrm_task_alert_if_late.png)
+![Fenster „Ressourcen“ mit hervorgehobenem Feld „Empfänger“ unter „Benachrichtigung“, falls das Enddatum der Aufgabe überschritten wird.](assets/mrm_task_alert_if_late.png)
 
 ### Erstbenachrichtigungen {#initial-notifications}
 
 Wenn Sie eine Aufgabe erstellen oder verändern, deren Beginn in der Zukunft liegt, bietet Adobe Campaign die Möglichkeit, den Verantwortlichen der Aufgabe zum gegebenen Zeitpunkt per E-Mail zu informieren.
 
-![](assets/mrm_task_first_notif.png)
+![Eingabeaufforderung mit der Frage, ob eine erste Benachrichtigung für die geplante Aufgabe mit den Schaltflächen „Ja“ und „Nein“ gesendet werden soll.](assets/mrm_task_first_notif.png)
 
 Wenn die Aufgabe, die Sie erstellen, zeitlich weit entfernt liegt, kann der Versand der Benachrichtigungs-E-Mail für einen Zeitpunkt kurz vor dem Beginn der Aufgabe terminiert werden. Wenn die Aufgabe zum Beispiel erst in einem Monat beginnt, können Sie die verantwortliche Person für die Aufgabe eine Woche vor dem Beginn benachrichtigen.
 
 Verwenden Sie zur Programmierung dieser E-Mail das Feld **[!UICONTROL Erstbenachrichtigung]** im **[!UICONTROL Ressourcen]**-Fenster.
 
-![](assets/mrm_task_alert_before.png)
+![Fenster „Ressourcen“ mit hervorgehobenem Feld „Erstbenachrichtigung“ im Abschnitt „Startdatum der Aufgabe“.](assets/mrm_task_alert_before.png)
 
 * Für Aufgaben in Kampagnen sind Datum und Uhrzeit genau festzulegen.
 * Für Aufgaben in Kampagnenvorlagen wird der Benachrichtigungszeitpunkt in Form des zeitlichen Abstands vom Startdatum der Aufgabe angegeben (wenn Sie beispielsweise 2T im Feld **[!UICONTROL Erstbenachrichtigung]** eingeben, wird die E-Mail 2 Tage vor Beginn der Aufgabe gesendet).
@@ -264,19 +264,19 @@ Um eine direkt mit einem Programm verknüpfte Aufgabe zu erstellen, gehen Sie wi
 1. Klicken Sie in diesem Fenster auf **[!UICONTROL Öffnen]**. Die Programmplanung wird geöffnet.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** rechts über dem Kalender und wählen Sie **[!UICONTROL Aufgabe hinzufügen]** aus.
 
-![](assets/mrm_task_create_from_prg.png)
+![Programmplanung mit geöffnetem Menü „Hinzufügen“ und ausgewählter Option „Aufgabe hinzufügen“.](assets/mrm_task_create_from_prg.png)
 
 ### Verfügbarkeit der Benutzer {#operator-availability}
 
 Im Aufgaben-Dashboard zeigt ein Symbol neben dem Namen des Benutzers an, dass er während des von der Aufgabe abgedeckten Zeitraums bereits an einer anderen Aufgabe oder einem anderen Ereignis arbeitet. Die Aufgabe, für die der Benutzer verantwortlich ist oder an der er beteiligt ist, wird im Feld **[!UICONTROL Zugeordneter Benutzer]** oder im Feld **[!UICONTROL Ressourcen]** der Aufgabe angezeigt.
 
-![](assets/mrm_task_alert_operator_busy.png)
+![Aufgaben-Dashboard mit einem Pfeil, der auf den Benutzer in der Zeile Zugewiesen an verweist.](assets/mrm_task_alert_operator_busy.png)
 
 ### Aufgabe in einem Workflow {#task-in-a-workflow}
 
 Die Nutzung einer **[!UICONTROL Aufgabe]** in einem Kampagnenworkflow ermöglicht zwei unterschiedliche Szenarien, abhängig davon, ob die Aufgabe validiert wurde oder nicht.
 
-![](assets/mrm_task_in_workflow.png)
+![Workflow, bei dem eine Aufgabenaktivität zu einem Briefpost-Versand führt, wenn er abgeschlossen ist, oder zu Warten und zurück, wenn er nicht abgeschlossen ist.](assets/mrm_task_in_workflow.png)
 
 Die **[!UICONTROL Aufgabe]**-Aktivität befindet sich im Tab **[!UICONTROL Steuerung]** der Kampagnenworkflows.
 
@@ -284,7 +284,7 @@ Die **[!UICONTROL Aufgabe]**-Aktivität befindet sich im Tab **[!UICONTROL Steue
 
 Bei der Aufgabenerstellung über eine Kampagne können Sie spezifische Aufgaben erstellen. Der Aufgabentyp wird in der ausgewählten Vorlage definiert.
 
-![](assets/s_ncs_user_task_select_template.png)
+![Aufgabenvorlagenliste mit Kontrolle, Gruppierung, Erstellung von Marketing-Ressourcen, Benachrichtigung und Standardaufgabenvorlagen.](assets/s_ncs_user_task_select_template.png)
 
 Folgende Arten von Aufgaben können geplant werden:
 
@@ -302,11 +302,11 @@ Folgende Arten von Aufgaben können geplant werden:
 
 **[!UICONTROL Kontrollaufgaben]** sind mit der Validierung eines Versands verbunden. Diese beinhaltet die Targeting-, Inhalts-, Extraktionsdatei-, Budget- und BAT-Validierung.
 
-![](assets/s_ncs_user_task_new_control.png)
+![Kontrollieren Sie das Aufgabenformular mit der Liste Validierungstyp , in der Zielgruppe, Inhalt, Budget, Extraktionsdatei und Validierung des Korrekturabzugs angezeigt werden.](assets/s_ncs_user_task_new_control.png)
 
 Die erstellte Aufgabe wird dem Kampagnen-Dashboard hinzugefügt.
 
-![](assets/s_ncs_user_task_edit_from_board.png)
+![Kampagnen-Dashboard mit einem Pfeil, der auf die neue Kontrollaufgabe in der Aufgabenliste zeigt, und mit „Öffnen“, „Genehmigen“ und „Ablehnen“.](assets/s_ncs_user_task_edit_from_board.png)
 
 Von hier aus kann die Aufgabe konfiguriert und bearbeitet werden.
 
@@ -337,7 +337,7 @@ Die Aufgabe zur Erstellung von Marketing-Ressourcen interagiert mit der zugeordn
 
 Die Prüfung der Aufgabe und die des Inhalts der Ressource müssen nicht durch die gleiche Person erfolgen. Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** aktiviert wurde (siehe unten), ist die Prüferin bzw. der Prüfer der Aufgabe berechtigt, den Inhalt der Ressource zu validieren, da beim Abschluss der Aufgabe die Ressource automatisch validiert wird. Wenn keine Prüferin und kein Prüfer bestimmt ist, fällt die Validierung der verantwortlichen Person der Aufgabe zu.
 
-![](assets/mrm_task_asset_creation.png)
+![Aufgabe zur Erstellung einer Marketing-Ressource mit dem Feld Marketing-Ressource und ausgewählter Marketing-Ressource veröffentlichen.](assets/mrm_task_asset_creation.png)
 
 Definieren Sie im Feld **[!UICONTROL Marketing-Ressource]** die Ressource, die Sie über diese Aufgabe verwalten möchten. Sie haben folgende Möglichkeiten:
 
@@ -348,7 +348,7 @@ Die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** ermöglicht die
 
 Die Schaltfläche **[!UICONTROL Ressource veröffentlichen]** ist verfügbar und der Validierer für die Veröffentlichung der Ressource erhält eine Benachrichtigungs-E-Mail, die ihn darüber informiert, dass die Ressource zur Veröffentlichung bereit ist. Auf der Registerkarte **[!UICONTROL Bearbeiten > Tracking]** werden die Überprüfung und Veröffentlichung durch den Aufgabenvalidierer angezeigt. Wenn ein Nachbearbeitungs-Workflow für Ressourcen definiert wurde, wird er jetzt ausgeführt.
 
-![](assets/mrm_resource_audit_tab.png)
+![Registerkarte „Prüfung der Marketing-Ressource“ mit dem Journal „Genehmigungen und Veröffentlichungen“ und den Einträgen „Genehmigung und Veröffentlichung“.](assets/mrm_resource_audit_tab.png)
 
 ### Gruppenaufgabe {#grouping-task}
 
@@ -362,11 +362,11 @@ Gruppierungsaufgaben verfügen über einen Link, der die Erstellung von enthalte
 
 Um innerhalb einer Gruppierungsaufgabe direkt weitere Aufgaben zu erstellen, klicken Sie im Kampagnen-Dashboard auf die Schaltfläche **[!UICONTROL Aufgabe hinzufügen]**.
 
-![](assets/mrm_task_grouped_create.png)
+![Dashboard der Kampagne mit erweiterter Gruppierungsaufgabe und einem Pfeil, der auf den Link Aufgabe hinzufügen verweist.](assets/mrm_task_grouped_create.png)
 
 Eine bereits erstellte Aufgabe kann einer Gruppierungsaufgabe über das Feld **[!UICONTROL Gruppiert mit]** im Fenster **[!UICONTROL Eigenschaften]** der zu gruppierenden Aufgabe zugeordnet werden.
 
-![](assets/s_ncs_user_task_group_with.png)
+![Fenster „Aufgabeneigenschaften“ mit dem Feld „Verknüpft mit“, das auf eine andere Aufgabe unter „Verknüpfungen zwischen Aufgaben definieren“ festgelegt ist.](assets/s_ncs_user_task_group_with.png)
 
 ### Benachrichtigungsaufgaben {#notification-task}
 
@@ -376,7 +376,7 @@ Mit Benachrichtigungsaufgaben können Sie den Versand von E-Mails (an Benutzende
 
 Benachrichtigungsaufgaben erfordern keine Validierung. Ihr Lebenszyklus ist daher einfacher als der einer Standardaufgabe:
 
-![](assets/mrm_task_notif_lifecycle.png)
+![Lebenszyklus einer Benachrichtigungsaufgabe: Geplant bis zum Startdatum, an dem die E-Mail gesendet wird, in Bearbeitung und dann am Enddatum abgeschlossen.](assets/mrm_task_notif_lifecycle.png)
 
 Eine Benachrichtigungsaufgabe kann folgende Status haben:
 
@@ -386,7 +386,7 @@ Eine Benachrichtigungsaufgabe kann folgende Status haben:
 
 #### Konfiguration {#configuration}
 
-![](assets/mrm_task_notif_dashboard.png)
+![Benachrichtigungsaufgabenformular mit Vorlage, Titel, Zugewiesen an, Start- und Enddatum und der Aufgabenbeschreibung.](assets/mrm_task_notif_dashboard.png)
 
 Bei der Erstellung müssen folgende Elemente der Aufgabe eingegeben werden:
 
@@ -395,7 +395,7 @@ Bei der Erstellung müssen folgende Elemente der Aufgabe eingegeben werden:
 * **Enddatum der Aufgabe**: Datum, an dem der Aufgabenstatus zu **[!UICONTROL Abgeschlossen]** geändert wird. Standardmäßig entspricht das Enddatum dem Startdatum. Allerdings können Sie der Aufgabe bei Bedarf eine Dauer zuweisen und so die Zeit angeben, über die die Benutzerin bzw. der Benutzer für die Ausführung innerhalb des Zeitplans verfügt.
 * **[!UICONTROL Beschreibung]**: Der hier eingegebene Text erscheint im Hauptteil der Benachrichtigungs-E-Mail.
 
-  ![](assets/mrm_task_notif_dashboard_msg.png)
+  ![Zusammenfassung der Benachrichtigungsaufgabe mit dem Status Geplant , dem Benachrichtigungstyp, dem Bevollmächtigten, der Kampagne und dem Beschreibungstext.](assets/mrm_task_notif_dashboard_msg.png)
 
 Sie können der Aufgabe und der Benachrichtigungs-E-Mail einen Anhang hinzufügen. Klicken Sie hierzu auf das Symbol **[!UICONTROL Dokumente]** in der Symbolleiste in der rechten oberen Ecke.
 
@@ -411,21 +411,21 @@ Verwenden Sie das Feld **[!UICONTROL Verknüpfte Aufgabe]**, um Aufgaben einer G
 
 Im folgenden Beispiel wird die Validierung der Zielgruppenbestimmung in vier Unteraufgaben aufgeteilt.
 
-![](assets/s_ncs_user_task_linked_tasks.png)
+![Campaign-Aufgabenliste mit der Aufgabe „Stile aktualisieren“, einer Aufgabe zur Zielgruppenvalidierung und vier verknüpften Unteraufgaben.](assets/s_ncs_user_task_linked_tasks.png)
 
 Jede Unteraufgabe ist eine Standardaufgabe, die mit der Hauptaufgabe verknüpft ist.
 
-![](assets/s_ncs_user_task_depends_on.png)
+![Aufgabenformular mit einem Pfeil, der auf das Feld Abhängig von verweist, das auf die übergeordnete Zielvalidierungsaufgabe festgelegt ist.](assets/s_ncs_user_task_depends_on.png)
 
 #### Gruppenaufgaben {#grouping-tasks}
 
 Verwenden Sie das Feld **[!UICONTROL Abhängig von]**, um die Erfüllung einer Aufgabe von der einer anderen abhängig zu machen.
 
-![](assets/s_ncs_user_task_group_with.png)
+![Fenster „Aufgabeneigenschaften“ mit dem Feld „Verknüpft mit“, das auf eine andere Aufgabe unter „Verknüpfungen zwischen Aufgaben definieren“ festgelegt ist.](assets/s_ncs_user_task_group_with.png)
 
 Die Abhängigkeit zwischen den Aufgaben wird mithilfe von Pfeilen im Kampagnen-Dashboard dargestellt.
 
-![](assets/s_ncs_user_task_dependencies_from_board.png)
+![Liste der Kampagnenaufgaben mit Pfeilen, die zwei untergeordnete Aufgaben anzeigen, die von der Zielgruppenvalidierungsaufgabe abhängen.](assets/s_ncs_user_task_dependencies_from_board.png)
 
 Bei gruppierten Aufgaben weist Adobe Campaign der untergeordneten Aufgabe automatisch das Enddatum der übergeordneten Aufgabe als Startdatum zu. Wenn beispielsweise eine Aufgabe **Einladung erstellen** am 15. Oktober um 15:30 Uhr endet, beginnt die untergeordnete Aufgabe **Einladungs-E-Mail senden** am 15. Oktober um 15:30 Uhr.
 
@@ -437,7 +437,7 @@ Eine übergeordnete Aufgabe, deren Ende für den 9. Oktober um 17 Uhr geplant is
 
 Verschieben wir nun die übergeordnete Aufgabe, sodass sie am 11. Oktober um 13 Uhr endet. Dadurch wird nur der Beginn von Aufgabe A auf den 11. Oktober um 13 Uhr verschoben.
 
-![](assets/mrm_task_parent_postpones_child.png)
+![Vor und nach Ansicht einer übergeordneten Aufgabe verschoben, wodurch der Beginn von untergeordneter Aufgabe A verschoben wird, nicht jedoch von untergeordneter Aufgabe B.](assets/mrm_task_parent_postpones_child.png)
 
 ### Ausführungsstatus einer Aufgabe {#execution-status-of-a-task}
 
@@ -473,7 +473,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
    Bei Erstellung und Änderung einer **in der Zukunft geplanten** Aufgabe (das Startdatum der Aufgabe darf noch nicht erreicht sein) können der Verantwortliche sowie alle Beteiligten per E-Mail über die Planung einer neuen Aufgabe informiert werden.
 
-   ![](assets/s_ncs_user_task_planed_send_message.png)
+   ![Eingabeaufforderung mit der Frage, ob eine erste Benachrichtigung für die geplante Aufgabe gesendet werden soll, wobei ein Pfeil auf „Nein“ zeigt](assets/s_ncs_user_task_planed_send_message.png)
 
    Um diese erste Benachrichtigung zu senden, klicken Sie auf **[!UICONTROL Ja]**. Diese Benachrichtigung enthält Details über die nächste Aufgabe, ihren Inhalt sowie die Anzahl der bis zur Deadline verbleibenden Tage.
 
@@ -485,21 +485,21 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
    * über die Benachrichtigungs-E-Mail;
    * im Dashboard der Aufgabe über die Client-Konsole oder die Web-Schnittstelle.
 
-     ![](assets/s_ncs_user_task_start_rea.png)
+     ![Aufgabenzusammenfassung mit den Schaltflächen Aufgabe ausführen und Ablehnen , damit ein Teilnehmer die Aufgabe genehmigen kann.](assets/s_ncs_user_task_start_rea.png)
 
 1. Nach jeder neuen Validierung wird der Fortschritt der Aufgabe automatisch aktualisiert.
 
-   ![](assets/s_ncs_user_task_percentage_done_op.png)
+   ![Aktion im Aufgabendialogfeld mit einem Kommentar und Ausführen der Aufgabenschaltfläche, gefolgt von einer Aktualisierung des Fortschritts auf 34 Prozent.](assets/s_ncs_user_task_percentage_done_op.png)
 
 1. Der validierende Benutzer wird jedes Mal per E-Mail benachrichtigt, wenn ein Benutzer einen dem validierenden Benutzer zugewiesenen Abschnitt fertigstellt.
 
    Er kann den Fortschritt der Aufgabe im Aufgaben-Dashboard verfolgen.
 
-   ![](assets/s_ncs_user_task_follow_from_dashboard.png)
+   ![Aufgaben-Dashboard mit 34 % Fortschritt und einem Pfeil, der auf die bereits von einem Teilnehmer erteilte Genehmigung verweist.](assets/s_ncs_user_task_follow_from_dashboard.png)
 
 1. Wenn der Verantwortliche die Aufgabe als abgeschlossen erachtet, kann er sie entweder über die Benachrichtigungs-E-Mail, die er zu Beginn der Aufgabe erhalten hat, über die Client-Konsole oder über die Web-Schnittstelle schließen.
 
-   ![](assets/s_ncs_user_task_console_ressource_validation.png)
+   ![Schaltfläche zum Beenden der Aufgabenzusammenfassung führt zur Aktion im Aufgabendialogfeld mit einem Kommentar und zur Schaltfläche „Aufgabe beenden“.](assets/s_ncs_user_task_console_ressource_validation.png)
 
    >[!NOTE]
    >
@@ -511,11 +511,11 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
    Er kann das Kampagnen-Dashboard zur Validierung nutzen:
 
-   ![](assets/s_ncs_user_task_console_validation.png)
+   ![Kampagnen-Dashboard mit ausgewählter Aufgabe mit ausstehender Genehmigung und einem Pfeil, der auf die Schaltfläche Genehmigen verweist.](assets/s_ncs_user_task_console_validation.png)
 
    Er kann die Aufgabe auch direkt über deren Validierungsschaltfläche validieren:
 
-   ![](assets/s_ncs_user_task__validation.png)
+   ![Aufgabenzusammenfassung mit Status „Ausstehend“, 100 % Fortschritt und Schaltfläche „Aufgabe genehmigen“.](assets/s_ncs_user_task__validation.png)
 
    >[!NOTE]
    >

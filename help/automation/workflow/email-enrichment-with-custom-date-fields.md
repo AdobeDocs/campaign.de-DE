@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 69%
 ---
 # E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern{#email-enrichment-with-custom-date-fields}
 
@@ -36,23 +36,23 @@ In diesem Beispiel möchten wir Empfangenden, die im aktuellen Monat Geburtstag 
 
 Wir müssen mit einer Aktivität **[!UICONTROL Aufspaltung]** Empfangende aus einer Liste ansprechen, die diesen Monat Geburtstag haben. Danach wird mit der Aktivität **[!UICONTROL Anreicherung]** das benutzerdefinierte Datenfeld zur Angabe des Gültigkeitsdatums in der Angebots-E-Mail verwendet.
 
-![](assets/uc_enrichment.png)
+![Workflow: Lesen der Liste, Aufspaltung in Teilmenge durch Anreicherung, dann E-Mail-Versand, und Ergänzung zum Ende.](assets/uc_enrichment.png)
 
 Gehen Sie wie folgt vor:
 
 1. Fügen Sie im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne per Drag &amp; Drop die Aktivität **[!UICONTROL Liste lesen]** hinzu, um Ihre Empfängerliste auszuwählen.
 1. Die zu verarbeitende Liste kann explizit angegeben, von einem Script berechnet oder dynamisch abgerufen werden. Dies hängt von den hier aktivierten Optionen oder angegebenen Parametern ab.
 
-   ![](assets/uc_enrichment_1.png)
+   ![Aktivität „Liste lesen“ mit der explizit angegebenen Liste und dem Abschnitt &quot;Source-Filterung“.](assets/uc_enrichment_1.png)
 
 1. Fügen Sie die Aktivität **[!UICONTROL Aufspaltung]** hinzu, um die Empfänger, die im aktuellen Monat Geburtstag haben, von den restlichen Empfängern zu trennen.
 1. Um Ihre Liste aufzuspalten, wählen Sie in der Kategorie **[!UICONTROL Filterung der Datensätze]** die Option **[!UICONTROL Filterbedingung für die Eingangspopulation hinzufügen]** aus. Klicken Sie danach auf **[!UICONTROL Bearbeiten]**.
 
-   ![](assets/uc_enrichment_2.png)
+   ![Registerkarte „Teilmengen aufteilen“ mit hervorgehobener Filterbedingung für die eingehende Population hinzufügen und Link bearbeiten.](assets/uc_enrichment_2.png)
 
 1. Wählen Sie **[!UICONTROL Filterbedingungen]** aus und danach die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**, um nach dem Geburtstagsmonat zu filtern.
 
-   ![](assets/uc_enrichment_3.png)
+   ![Fenster des Zielelements mit hervorgehobener Schaltfläche „Ausdruck bearbeiten“ neben dem Feld „Ausdruck“.](assets/uc_enrichment_3.png)
 
 1. Wählen Sie **[!UICONTROL Erweiterte Auswahl]** und danach **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** aus und fügen Sie den folgenden Ausdruck hinzu: Month(@birthDate).
 1. Wählen Sie in der Spalte **[!UICONTROL Operator]** die Option **[!UICONTROL gleich]** aus.
@@ -60,42 +60,42 @@ Gehen Sie wie folgt vor:
 
    Dadurch werden Empfänger abgefragt, deren Geburtsmonat mit dem aktuellen Monat übereinstimmt.
 
-   ![](assets/uc_enrichment_4.png)
+   ![Bedingung des Zielelements: Geburtsmonat gleich dem aktuellen Datum plus 14 Tage.](assets/uc_enrichment_4.png)
 
 1. Klicken Sie auf **[!UICONTROL Beenden]**. Wählen Sie dann im Tab **[!UICONTROL Allgemein]** der Aktivität **[!UICONTROL Aufspaltung]** in der Kategorie **[!UICONTROL Ergebnisse]** die Option **[!UICONTROL Komplement erzeugen]** aus.
 
    Mit dem Ergebnis von **[!UICONTROL Komplement]** können Sie eine Versandaktivität hinzufügen oder eine Liste aktualisieren. In unserem Beispiel haben wir einfach die Aktivität **[!UICONTROL Ende]** hinzugefügt.
 
-   ![](assets/uc_enrichment_6.png)
+   ![Registerkarte „Allgemein“ mit aktivierter Option „Komplement erzeugen“ im Abschnitt Ergebnisse aufteilen.](assets/uc_enrichment_6.png)
 
 Konfigurieren Sie anschließend die Aktivität **[!UICONTROL Anreicherung]**:
 
 1. Fügen Sie die Aktivität **[!UICONTROL Anreicherung]** nach Ihrer Teilmenge ein, um Ihre benutzerdefinierten Datumsfelder hinzuzufügen.
 
-   ![](assets/uc_enrichment_7.png)
+   ![Workflow mit der Aktivität Anreicherung , die der Transition der Teilmenge der Aufspaltungsaktivität hinzugefügt wurde.](assets/uc_enrichment_7.png)
 
 1. Öffnen Sie die Aktivität **[!UICONTROL Anreicherung]**. Wählen Sie in der Kategorie **[!UICONTROL Zusatzinformationen]** die Option **[!UICONTROL Daten hinzufügen]** aus.
 
-   ![](assets/uc_enrichment_8.png)
+   ![Aktivität „Anreicherung“ mit hervorgehobenem Link „Daten hinzufügen“ im Abschnitt „Ergänzende Informationen“.](assets/uc_enrichment_8.png)
 
 1. Wählen Sie zuerst **[!UICONTROL Daten in Relation mit der Filterdimension]** und danach **[!UICONTROL Daten der Filterdimension]** aus.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/uc_enrichment_9.png)
+   ![Daten zum Hinzufügen eines Fensters mit hervorgehobener Schaltfläche „Hinzufügen“ neben der Liste „Ausgabespalten“.](assets/uc_enrichment_9.png)
 
 1. Fügen Sie einen **[!UICONTROL Titel]** hinzu. Wählen Sie dann in der Spalte **[!UICONTROL Ausdruck]** die Option **[!UICONTROL Ausdruck bearbeiten]** aus.
 
-   ![](assets/uc_enrichment_10.png)
+   ![Ausgabespalten, wobei die Beschriftung „Geburtsdatum“ und die Schaltfläche „Ausdruck bearbeiten“ in der Spalte „Ausdruck“ hervorgehoben sind.](assets/uc_enrichment_10.png)
 
 1. Zuerst muss die Woche vor dem Geburtstag als das **Gültigkeitsstartdatum** mit dem folgenden **[!UICONTROL Ausdruck]** ausgewählt werden: `SubDays([target/@birthDate], 7)`.
 
-   ![](assets/uc_enrichment_11.png)
+   ![Ausgabespalten mit der Beschriftung Geburtsdatum und dem Ausdruck Geburtsdatum (Ziel/@birthDate).](assets/uc_enrichment_11.png)
 
 1. Um danach das benutzerdefinierte Datumsfeld **Gültigkeitsenddatum** zu erstellen, mit dem die Woche nach dem Geburtstag ausgewählt wird, muss dieser **[!UICONTROL Ausdruck]** hinzugefügt werden: `AddDays([target/@birthDate], 7)`.
 
    Sie können Ihren Ausdruck mit einem Titel kennzeichnen.
 
-   ![](assets/uc_enrichment_12.png)
+   ![Ausgabespalten, in denen das Geburtsdatum und die Spalte für das Gültigkeitsstartdatum mit Ausdruck und Alias aufgelistet sind.](assets/uc_enrichment_12.png)
 
 1. Klicken Sie auf **[!UICONTROL OK]**. Ihre Anreicherung ist nun fertig.
 
@@ -103,7 +103,7 @@ Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinz
 
 1. Fügen Sie die Aktivität **[!UICONTROL E-Mail-Versand]** per Drag &amp; Drop nach der Aktivität **[!UICONTROL Anreicherung]** ein.
 
-   ![](assets/uc_enrichment_15.png)
+   ![Workflow mit einer E-Mail-Versandaktivität wurde nach der Anreicherungsaktivität hinzugefügt.](assets/uc_enrichment_15.png)
 
 1. Doppelklicken Sie auf die Aktivität **[!UICONTROL E-Mail-Versand]**, um Ihren Versand zu personalisieren.
 1. Fügen Sie zu Ihrem Versand einen **[!UICONTROL Titel]** hinzu und wählen Sie dann **[!UICONTROL Fortfahren]** aus.
@@ -112,7 +112,7 @@ Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinz
 
    Starten Sie dann den Workflow, um Ihre ausgehende Transition mit den ausgewählten Daten anzureichern.
 
-   ![](assets/uc_enrichment_18.png)
+   ![Registerkarte Validierungen der Versandeigenschaften mit aktivierter Option Versand vor Versand bestätigen .](assets/uc_enrichment_18.png)
 
 Sie können jetzt Ihre E-Mail-Nachricht mit den benutzerdefinierten Feldern gestalten, die Sie in der Aktivität **[!UICONTROL Anreicherung]** erstellt haben.
 
@@ -124,16 +124,16 @@ Sie können jetzt Ihre E-Mail-Nachricht mit den benutzerdefinierten Feldern gest
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Klicken Sie auf ![](assets/uc_enrichment_16.png). Wählen Sie **[!UICONTROL Erweiterung des Zieldatensatzes]** aus und wählen Sie danach mit der Aktivität **[!UICONTROL Anreicherung]** die zuvor erstellten benutzerdefinierten Gültigkeitsdaten aus, um Ihre Erweiterung zum formatDate-Ausdruck hinzuzufügen.
+1. Klicken Sie auf die Schaltfläche der Personalization-Symbolleiste mit einem Dropdown-Pfeil.![&#128279;](assets/uc_enrichment_16.png). Wählen Sie **[!UICONTROL Erweiterung des Zieldatensatzes]** und danach die zuvor erstellten benutzerdefinierten Gültigkeitsdaten mit der Aktivität **[!UICONTROL Anreicherung]** aus, um Ihre Erweiterung zum formatDate-Ausdruck hinzuzufügen.
 
-   ![](assets/uc_enrichment_19.png)
+   ![Untermenü-Erweiterung der Personalization-Menüs: Gültigkeitsstartdatum und Gültigkeitsenddatum der Liste.](assets/uc_enrichment_19.png)
 
 1. Konfigurieren Sie Ihren E-Mail-Inhalt nach Bedarf.
 
-   ![](assets/uc_enrichment_17.png)
+   ![Versenden Sie E-Mail an HTML-Inhalte mit formatDate-Ausdrücken mithilfe der targetData-Felder für die Gültigkeitsdaten.](assets/uc_enrichment_17.png)
 
 1. Sehen Sie sich Ihre E-Mail in der Vorschau an, um zu überprüfen, ob die benutzerdefinierten Datumsfelder korrekt konfiguriert wurden.
 
-   ![](assets/uc_enrichment_20.png)
+   ![Registerkarte E-Mail-Vorschau mit ausgefüllter Geburtstagsnachricht mit den Gültigkeitsdaten 12/20 bis 01/03.](assets/uc_enrichment_20.png)
 
 Ihre E-Mail ist jetzt bereit. Sie können mit dem Ausführen Ihrer Testsendungen beginnen und den Versand Ihrer Geburtstags-E-Mails bestätigen.

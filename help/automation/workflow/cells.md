@@ -30,24 +30,24 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 100%
+source-wordcount: '174'
+ht-degree: 71%
 ---
 # Segmente{#cells}
 
 Die Aktivität **[!UICONTROL Segmente]** bietet eine Ansicht der verschiedenen Teilmengen in Form von Datenspalten. Dies erleichtert die Bearbeitung von Teilmengen und ermöglicht die Nutzung von Personalisierungsfunktionen.
 
-![](assets/wf_split_cells.png)
+![Registerkarte „Zellen“ der Aktivität „Zellen“, in der die Teilmengen 1 bis 3 mit den Spalten „Filter“, „Einschränkung“, „Ausschluss“ und „Segment-Code“ aufgelistet sind.](assets/wf_split_cells.png)
 
 Diese Aktivität kann so konfiguriert werden, dass bestimmte Parameter entsprechend den Benutzeranforderungen eingegeben werden. Standardmäßig werden die Details der einzelnen Teilmengen in einem eigenen Fenster über die Registerkarten **[!UICONTROL Segmente]** und **[!UICONTROL Erweitert]** angezeigt.
 
-![](assets/wf_split_cells_with_customization.png)
+![Registerkarte „Zellen“ mit hervorgehobener Schaltfläche „Detail“, um die Details der ausgewählten Teilmenge zu öffnen.](assets/wf_split_cells_with_customization.png)
 
 Im folgenden Beispiel wurde das Eingabeformular geändert: Es wurde die Registerkarte **[!UICONTROL Daten]** hinzugefügt, um für jede Teilmenge die Zuordnung eines Angebots und einer Prioritätsstufe zu ermöglichen.
 
-![](assets/cells-activity-sample.png)
+![Details einer Teilmenge mit einer benutzerdefinierten Daten-Registerkarte, die die Felder Segmentcode, Priorität, Zellkennung und Angebote enthält.](assets/cells-activity-sample.png)
 
 Für diese Konfiguration wurden im Knoten **[!UICONTROL Administration > Konfigurationen > Eingabeformulare]** des Explorers von Adobe Campaign die folgenden Informationen zum Workflow-Formular hinzugefügt:
 

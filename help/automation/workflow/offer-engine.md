@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 100%
+source-wordcount: '174'
+ht-degree: 81%
 ---
 # Angebotsmodul{#offer-engine}
 
@@ -36,7 +36,7 @@ Die Aktivität **[!UICONTROL Angebotsmodul]** ermöglicht den Aufruf des Interac
 
 Das Prinzip dieser Aktivität entspricht dem der Anreicherung. Auch hier werden die Daten der Eingangspopulation mit einem vom Modul berechneten Angebot angereichert, bevor die eigentliche Versandaktivität startet.
 
-![](assets/int_offerengine_activity2.png)
+![Workflow-Diagramm mit der Aktivität Angebotsmodul, die zwischen einer Abfrage und einem Briefpost-Versand platziert wird.](assets/int_offerengine_activity2.png)
 
 Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](query.md)). Gehen Sie dann wie folgt vor:
 
@@ -47,6 +47,6 @@ Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](qu
    >
    >Wenn Sie diese Aktivität nutzen, werden nur die im Versand verwendeten Vorschläge gespeichert.
 
-   ![](assets/int_offerengine_activity1.png)
+   ![Angebotsmodul-Aktivität mit Platzierung, Angebotskategorie, Themen, Anzahl der zu berechnenden Vorschläge und Kontaktdatum.](assets/int_offerengine_activity1.png)
 
 1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Siehe [Kanalübergreifender Versand](cross-channel-deliveries.md).

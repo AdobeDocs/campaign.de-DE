@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
+source-git-commit: 011875268793bca1a000d745818dbd6c69461227
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 85%
+source-wordcount: '2046'
+ht-degree: 83%
 ---
 # Konfigurieren des Push-Benachrichtigungskanals {#push-notification-configuration}
 
@@ -71,7 +71,7 @@ Bevor Sie eine Mobile App erstellen, müssen Sie zunächst sicherstellen, dass S
 
 >[!CAUTION]
 >
->Die Push-Konfiguration muss von einer erfahrenen Person durchgeführt werden. Abhängig von Ihrem Implementierungsmodell und den an dieser Implementierung beteiligten Rollen müssen Sie möglicherweise den gesamten Berechtigungssatz einem einzelnen Produktprofil zuweisen oder Berechtigungen zwischen der Person, die die App entwickelt, und den **Adobe Campaign**-Admins teilen.
+>Die Push-Konfiguration muss von einer erfahrenen Person durchgeführt werden. Je nach Implementierungsmodell und den beteiligten Rollen müssen Sie möglicherweise den gesamten Berechtigungssatz einem einzelnen Produktprofil zuweisen. Alternativ können Sie die Berechtigungen zwischen dem App-Entwickler und dem **Adobe Campaign**-Administrator freigeben.
 
 Gehen Sie wie folgt vor, um Rechte für **Eigenschaft** und **Firma** zuzuweisen.
 
@@ -182,7 +182,7 @@ Weitere Informationen über [!DNL Adobe Experience Platform Data Collection]-Tag
 
 ## Konfigurieren Ihrer Mobile Services in Campaign {#push-service}
 
-Nachdem Ihre Mobile App in [!DNL Adobe Experience Platform Data Collection] eingerichtet wurde, müssen Sie zwei Services erstellen (einen für iOS-Geräte, einen für Android-Geräte), um Push-Benachrichtigungen von **[!DNL Adobe Campaign]** senden zu können.
+Nachdem Ihre Mobile App in [!DNL Adobe Experience Platform Data Collection] eingerichtet wurde, erstellen Sie zwei Services: einen für iOS-Geräte und einen für Android-Geräte. Mit diesen Services können Sie Push-Benachrichtigungen von **[!DNL Adobe Campaign]** senden.
 
 Push-Benachrichtigungen werden über einen dedizierten Dienst an die Benutzerinnen und Benutzer Ihrer App gesendet. Wenn Benutzerinnen und Benutzer Ihre Anwendung installieren, abonnieren sie diesen Dienst: Adobe Campaign greift auf diesen Dienst zurück, um nur die Abonnentinnen und Abonnenten Ihrer App anzusprechen. In diesem Dienst müssen Sie Ihre iOS- und Android-Apps hinzufügen, um etwas auf iOS- und Android-Geräten zu senden.
 

@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 82%
 ---
 # Überwachen von Marketing-Kampagnen {#monitor-marketing-campaigns}
 
@@ -38,11 +38,11 @@ Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Auftr�
 
 * Die Unterregisterkarte **[!UICONTROL Audit]** zeigt das Aktivitätenprotokoll an. Es enthält die für die Kampagne ausgeführten Aufträge: Erstellung oder Start eines Workflows, Validierung, Extraktion, Lagerverwaltung usw.
 
-  ![](assets/campaign-audit-tab.png)
+  ![Registerkarte „Bearbeiten“ in Campaign, Abschnitt „Audit“, Unterregisterkarte „Journal“ mit den Aktivitätsprotokollnachrichten und -protokolltypen](assets/campaign-audit-tab.png)
 
 * Die Unterregisterkarte **[!UICONTROL Sendungen]** enthält alle Sendungen der Kampagne. Sie können in dieser Ansicht bearbeitet werden. Wählen Sie dazu einen Versand aus und klicken Sie auf das Symbol **[!UICONTROL Details]**.
 
-  ![](assets/campaign-delivery-tab.png)
+  ![Abschnitt „Kampagnen-Audit“, Unterregisterkarte „Sendungen“ mit Kanal, Status, Zielgruppenbestimmungsstatus und Inhaltsstatus](assets/campaign-delivery-tab.png)
 
 * Die Unterregisterkarte **[!UICONTROL Validierungen]** enthält den gesamten Validierungsprozess für die Kampagne. Sie können Details und Kommentare überprüfen.
 
@@ -50,9 +50,9 @@ Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Auftr�
 
 ## Nachverfolgen von Sendungen {#delivery-tracking}
 
-Eine Liste der Sendungen ist über die gleichnamige Schaltfläche in der Kampagnen-Rubrik verfügbar.****
+Eine Liste der Sendungen ist über die gleichnamige Schaltfläche in der Kampagnen-Rubrik verfügbar.**&#x200B;**
 
-![](assets/filter-deliveries-from-homepage.png)
+![Versandliste auf der Startseite mit der Dropdown-Liste Status-Filter , die bearbeitet wird, In Bearbeitung und Abgeschlossen](assets/filter-deliveries-from-homepage.png)
 
 In dieser Liste werden die Schlüsselindikatoren jedes Versands angezeigt: Status, Zielkontakte, übergeordnete Kampagne usw.
 

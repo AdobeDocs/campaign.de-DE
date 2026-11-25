@@ -23,10 +23,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 100%
+source-wordcount: '1401'
+ht-degree: 82%
 ---
 # Marketing-Ressourcen verwalten{#managing-marketing-resources}
 
@@ -43,9 +43,9 @@ Gehen Sie wie folgt vor, um eine Marketing-Ressource hinzuzufügen:
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Marketing-Ressourcen]** aus.
 
 1. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus.
-   ![](assets/add-a-mkt-resource.png)
+   ![Liste der Marketing-Ressourcen auf der Registerkarte „Kampagnen“ mit hervorgehobener Schaltfläche „Erstellen“.](assets/add-a-mkt-resource.png)
 1. Ziehen Sie die Datei in das Fenster „Marketing-Ressource“, um sie zum Campaign-Server hochzuladen. Sie können auch den Link **[!UICONTROL Datei auf den Server laden...]** verwenden.
-   ![](assets/mkt-resource-creation.png)
+   ![Fenster zur Erstellung von Marketing-Ressourcen mit dem Link Datei auf den Server hochladen , um die Datei hinzuzufügen.](assets/mkt-resource-creation.png)
 
 Nach Abschluss des Hochladens wird die Ressource der Liste der verfügbaren Ressourcen hinzugefügt.
 
@@ -53,11 +53,11 @@ Nach Abschluss des Hochladens wird die Ressource der Liste der verfügbaren Ress
 
 Nach dem Hochladen ist die Marketing-Ressource für alle Adobe Campaign-Benutzer verfügbar. Sie können sie anzeigen, eine Kopie erstellen, um sie zu ändern, oder die Datei auf dem Server aktualisieren.
 
-![](assets/open-a-marketing-resource.png)
+![Dashboard der Marketing-Ressource mit Dashboard, Registerkarten „Bearbeiten“ und „Vorschau“, Status, Datei und zugewiesenem Benutzer.](assets/open-a-marketing-resource.png)
 
 Verwenden Sie die Dropdown-Liste **[!UICONTROL Zugewiesen an]** auf der Registerkarte **[!UICONTROL Bearbeiten]**, um den Benutzer auszuwählen, der für die Ressource verantwortlich ist.
 
-![](assets/assign-a-mkt-resource.png)
+![Registerkarte „Bearbeiten“ einer Marketing-Ressource mit geöffneter Dropdown-Liste der Benutzer „Zugewiesen an“.](assets/assign-a-mkt-resource.png)
 
 Sie können auch die Benutzer oder Benutzergruppen auswählen, die für die Ressourcenvalidierung und die Ressourcenveröffentlichung zuständig sind. Um auf diese Optionen zuzugreifen, klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter]**.
 
@@ -83,18 +83,18 @@ Eine Marketing-Ressource kann nur gesperrt werden, wenn sie nicht genehmigt wurd
 
 Um eine Ressource zu sperren, klicken Sie auf die Ressource und anschließend auf die Schaltfläche **[!UICONTROL Sperren]** im Ressourcen-Dashboard.
 
-![](assets/lock-a-resource.png)
+![Dashboard der Marketing-Ressource mit einem Pfeil, der auf die Schaltfläche „Sperren“ verweist.](assets/lock-a-resource.png)
 
 
 Wenn die Ressource aktualisiert wurde, klicken Sie auf die Schaltfläche **[!UICONTROL Sperren]** im Ressourcen-Dashboard, um sie allen Benutzern wieder verfügbar zu machen.
 
 Folgende Nachricht informiert Benutzer, die auf eine reservierte Ressource zugreifen möchten:
 
-![](assets/mkt-resource-locked.png)
+![Meldung auf der Registerkarte Bearbeiten, dass sich die Datei auf dem Server befindet und von einem anderen Benutzer bearbeitet wird.](assets/mkt-resource-locked.png)
 
 Die Registerkarte **[!UICONTROL Tracking]** gibt den Namen des Benutzers an, der die Ressource gesperrt hat.
 
-![](assets/mkt-resource-audit-tab.png)
+![Registerkarte „Audit“ einer Marketing-Ressource mit Testsendungs-Leser, Verfügbarkeitsdatum, Besitzer und Sperreintrag im Protokoll.](assets/mkt-resource-audit-tab.png)
 
 
 >[!NOTE]
@@ -105,7 +105,7 @@ Die Registerkarte **[!UICONTROL Tracking]** gibt den Namen des Benutzers an, der
 
 An einer Ressource beteiligte Benutzer haben auf der Registerkarte **[!UICONTROL Forum]** die Möglichkeit, Informationen austauschen.
 
-![](assets/mkt-resource-forum.png)
+![Dialogfeld eines Diskussionsforums zu einer Marketing-Ressource mit Betreff, Nachricht und Benutzer, um Felder zu benachrichtigen.](assets/mkt-resource-forum.png)
 
 Weitere Informationen finden Sie im Abschnitt [Diskussionsforen](discussion-forums.md).
 
@@ -115,13 +115,13 @@ Das erwartete Verfügbarkeitsdatum wird in den Ressourcendetails angezeigt, wenn
 
 Um eine Ressource zu genehmigen, klicken Sie auf dem Dashboard auf **[!UICONTROL Ressource validieren]**.
 
-![](assets/mkt-resouce-approve.png)
+![Dashboard der Marketing-Ressource mit einem Pfeil, der auf die Schaltfläche Ressource genehmigen verweist.](assets/mkt-resouce-approve.png)
 
 Autorisierte Benutzerinnen und Benutzer können dann die Validierung akzeptieren oder ablehnen. Diese Aktion kann über den Link in der E-Mail-Benachrichtigung oder über die Schaltfläche **[!UICONTROL Genehmigen]** in der Client-Konsole ausgeführt werden.
 
 Im Validierungsfenster kann ein Kommentar eingegeben werden.
 
-![](assets/mkt-resource-approval-confirmation.png)
+![Aktion im Dialogfeld „Ressource“ mit den Optionen „Akzeptieren“ und „Ablehnen“, einem Kommentarfeld und der Schaltfläche „Genehmigung“.](assets/mkt-resource-approval-confirmation.png)
 
 Navigieren Sie zur Registerkarte **[!UICONTROL Tracking]**, um Genehmigungen zu überprüfen.
 
@@ -135,7 +135,7 @@ Nach der Validierung muss die Marketing-Ressource veröffentlicht werden. Der Ve
 
 Geben Sie den Zugriff auf eine Ressource frei, indem Sie auf die Schaltfläche **[!UICONTROL Veröffentlichen]** in ihrem Dashboard klicken.
 
-![](assets/mkt-resource-publish.png)
+![Dashboard der genehmigten Marketing-Ressource mit einem Pfeil, der auf die Schaltfläche „Veröffentlichen“ verweist.](assets/mkt-resource-publish.png)
 
 Die Ressourcenveröffentlichung kann auch über einen Workflow automatisiert werden.
 
@@ -143,7 +143,7 @@ Das Veröffentlichen einer Ressource bedeutet, sie zur Verwendung bereitzustelle
 
 Damit Adobe Campaign eine Ressource veröffentlichen kann, müssen Sie einen geeigneten Workflow erstellen und ihn mit der Ressource verknüpfen. Öffnen Sie dazu das Dialogfeld **[!UICONTROL Erweiterte Einstellungen…]** der Ressource und wählen Sie dann den gewünschten Workflow im Feld **[!UICONTROL Anschlussvorgang]** aus.
 
-![](assets/mkt-resource-post-processing-wf.png)
+![Dialogfeld „Erweiterte Parameter“ mit dem Feld Nachbearbeitungs-Workflow unter „Ressourcenveröffentlichung“](assets/mkt-resource-post-processing-wf.png)
 
 Der Workflow wird ausgeführt:
 
@@ -160,7 +160,7 @@ Marketing-Ressourcen können mit Kampagnen verknüpft werden, sofern dieses Feat
 
 Gehen Sie hierzu im Dashboard der Kampagne zur Registerkarte **[!UICONTROL Bearbeiten > Dokumente > Ressourcen]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine Ressource auszuwählen.
 
-![](assets/link-a-mkt-resource-to-a-campaign.png)
+![Registerkarte „Ressourcen“ einer Kampagne mit der Schaltfläche „Hinzufügen“ und dem Dialogfeld für die Marketing-Ressourcenauswahl.](assets/link-a-mkt-resource-to-a-campaign.png)
 
 Sie können die Ressourcen nach Status, Dokumentart und Ressourcentyp filtern oder einen benutzerdefinierten Filter anwenden.
 
@@ -170,15 +170,15 @@ Verwenden Sie die Schaltfläche **[!UICONTROL Details]**, um die Ressource zu be
 
 Marketing-Ressourcen können über Versandentwürfe mit Sendungen verknüpft werden.
 
-Weitere Informationen zu Versandentwürfen finden Sie in [diesem Abschnitt](../campaigns/marketing-campaign-deliveries.md).
+Weitere Informationen zu Versandentwürfen finden Sie unter [Sendungen von Marketing-Kampagnen](../campaigns/marketing-campaign-deliveries.md).
 
 Klicken Sie dazu mit der rechten Maustaste auf einen Versandentwurf und wählen Sie **Neu > Ressource** aus.
 
-![](assets/mkt-resource-add-in-del-outline.png)
+![Das Kontextmenü des Versands mit der Option Neu und Ressource wird ausgewählt.](assets/mkt-resource-add-in-del-outline.png)
 
 Geben Sie den Namen des Assets ein und wählen Sie es aus der Dropdown-Liste **Marketing-Ressource** aus.
 
-![](assets/mkt-resource-select-in-del-outline.png)
+![Dropdown-Liste der Marketing-Ressourcen des Versandentwurfs mit den auszuwählenden verfügbaren Ressourcen.](assets/mkt-resource-select-in-del-outline.png)
 
 
 ## Lagerverwaltung {#stock-management}
@@ -188,11 +188,11 @@ Sie können eine Marketing-Ressource mit einem oder mehreren Lagern verknüpfen,
 
 Gehen Sie wie folgt vor, um eine Marketing-Ressource mit einem Lager zu verknüpfen:
 
-1. Bearbeiten Sie ein Lager oder erstellen Sie ein neues Lager. Weitere Informationen zu Lagern finden Sie in [diesem Abschnitt](../campaigns/providers-stocks-and-budgets.md#stock-management).
+1. Bearbeiten Sie ein Lager oder erstellen Sie ein neues Lager. Erfahren Sie mehr über Lager in [Lagerverwaltung](../campaigns/providers-stocks-and-budgets.md#stock-management).
 
 1. Fügen Sie eine Lagerposition hinzu und wählen Sie die entsprechende Marketing-Ressource aus.
 
-   ![](assets/mkt-resource-in-a-stock-line.png)
+   ![Dialogfeld „Lagerposition“ mit dem Feld „Marketing-Ressource“, Anfangsbestand und Warnstufe.](assets/mkt-resource-in-a-stock-line.png)
 
    Bei Bedarf können Sie die ausgewählte Ressource über das Symbol **[!UICONTROL Link bearbeiten]** rechts von der Ressource bearbeiten.
 

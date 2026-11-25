@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 100%
+source-wordcount: '433'
+ht-degree: 87%
 ---
 # Inkrementelle Abfrage{#incremental-query}
 
@@ -54,15 +54,15 @@ Gehen Sie dazu wie folgt vor:
 
    Im sich öffnenden **[!UICONTROL Planungsassistent]**-Fenster können Sie den Ausführungsrhythmus und den Gültigkeitszeitraum definieren.
 
-   ![](assets/s_user_segmentation_wizard_11.png)
+   ![Assistent zur Zeitplanbearbeitung: Wöchentliches Intervall, ausgewählter Donnerstag und ein Gültigkeitszeitraum mit den Datumsangaben „Gültig von“ und „Bis“.](assets/s_user_segmentation_wizard_11.png)
 
 1. Klicken Sie zur Bestätigung Ihrer Eingaben auf **[!UICONTROL Beenden]**.
 
-   ![](assets/s_user_segmentation_wizard_valid.png)
+   ![Seite mit der Zusammenfassung des Assistenten zur Zeitplanbearbeitung mit der Zeitplanbeschreibung, der Liste der Startzeiten und der Schaltfläche Beenden.](assets/s_user_segmentation_wizard_valid.png)
 
 1. Im unteren Bereich des Tabs **[!UICONTROL Planung &amp; Verlauf]** können Sie nähere Angaben zum Verlauf machen.
 
-   ![](assets/edit_request_inc.png)
+   ![Registerkarte „Planung und Verlauf“ der inkrementellen Abfrage mit ausgewählter Ausführung des Plans und dem Feld „Verlauf in Tagen“ auf 10.](assets/edit_request_inc.png)
 
    * **[!UICONTROL Verlaufsumfang (Tage)]**
 

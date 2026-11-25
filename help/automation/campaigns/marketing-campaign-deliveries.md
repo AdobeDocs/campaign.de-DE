@@ -27,10 +27,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 100%
+source-wordcount: '910'
+ht-degree: 80%
 ---
 # Sendungen für eine Marketing-Kampagne {#marketing-campaign-deliveries}
 
@@ -44,13 +44,13 @@ Sie haben zwei Möglichkeiten, Sendungen zu Ihren Marketing-Kampagnen hinzuzufü
 
 * Über den Link **[!UICONTROL Versand hinzufügen]** im Kampagnen-Dashboard.
 
-  ![](assets/campaign_op_add_delivery.png)
+  ![Kampagnen-Dashboard mit dem Link Versand hinzufügen und dem neuen Versandfenster zur Auswahl einer Vorlage und eines Titels.](assets/campaign_op_add_delivery.png)
 
   Nach der Speicherung wird der Versand zum Kampagnen-Dashboard hinzugefügt.
 
 * Über einen Kampagnen-Workflow auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** durch Hinzufügen des Versands.
 
-  ![](assets/campaign-wf-delivery.png)
+  ![Registerkarte Zielgruppenbestimmungen und Workflows mit der Palette Sendungen und einem Workflow, der auf eine Versandaktivität endet.](assets/campaign-wf-delivery.png)
 
   Nach dem Start des Workflows wird der Versand zum Kampagnen-Dashboard hinzugefügt.
 
@@ -60,23 +60,23 @@ Informationen darüber, wie Sie die Versandvalidierung einrichten und ausführen
 
 Ein Versand kann durchgeführt werden, sobald alle Validierungen erteilt wurden. Der Ausführungsprozess des Versands hängt vom Kanal ab.
 
-* Informationen zu Sendungen per E-Mail oder über einen mobilen Kanal finden Sie in [diesem Abschnitt](#start-an-online-delivery)
+* Informationen zu Sendungen per E-Mail oder über einen mobilen Kanal finden Sie unter [E-Mail- oder Mobilversand starten](#start-an-online-delivery)
 
-* Informationen zu Briefpost-Sendungen finden Sie in [diesem Abschnitt](#start-an-offline-delivery).
+* Informationen zu Briefpost-Sendungen finden Sie unter [Briefpost-Versand starten](#start-an-offline-delivery)
 
 ### Starten eines E-Mail- oder Mobile-Versands {#start-an-online-delivery}
 
 Sobald alle Validierungsanfragen bestätigt wurden, erhält der Versand den Status **[!UICONTROL Bestätigung ausstehend]** und kann gestartet werden. Validierungsverantwortliche, die den Versand starten können, werden darüber informiert, dass ein Versand startbereit ist.
 
-![](assets/confirm-delivery.png)
+![Versandzusammenfassung mit der Schaltfläche Versand bestätigen , die angezeigt wird, sobald alle Validierungen erteilt wurden und der Status „Ausstehend“ lautet.](assets/confirm-delivery.png)
 
 Die Informationen werden auch auf dem Kampagnen-Dashboard angezeigt. Der Link **[!UICONTROL Absendung bestätigen]** ermöglicht es, den Versand zu beginnen.
 
-![](assets/confirm-delivery-from-dashboard.png)
+![Kampagnen-Dashboard mit dem Link Versand bestätigen für einen Versand, der noch nicht bestätigt wurde.](assets/confirm-delivery-from-dashboard.png)
 
 Die Validierung des Versands ist auf Administratoren sowie auf Benutzende oder Benutzergruppen beschränkt, die in den Versand- oder Kampagneneigenschaften ausdrücklich genannt werden. Wenn keine Benutzenden erstellt wurden, können Administratoren und der Kampagnenverantwortliche die Validierung vornehmen.
 
-![](assets/select-delivery-reviewers.png)
+![Registerkarte „Validierungen“ der Versandeigenschaften mit den Validierern für jede Validierung und für den Versandstart.](assets/select-delivery-reviewers.png)
 
 Sie können jedoch auch zulassen, dass der/die Kampagnenverantwortliche den Versand bestätigt, selbst wenn in den Versand- oder Kampagneneigenschaften spezifische Validierungsverantwortliche definiert wurden. Erstellen Sie dazu als Administrator die Option **NmsCampaign_Activate_OwnerConfirmation** und legen Sie sie auf **1** fest. Die Verwaltung der Optionen erfolgt über den Ordner **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** im Campaign-Explorer.
 
@@ -93,7 +93,7 @@ Gehen Sie wie folgt vor, um den Inhalt zu validieren und die Datei an den Provid
 
    Dieser Schritt ist nur verfügbar, wenn die Option **[!UICONTROL Testversandvalidierung aktivieren aktivieren (Briefpost)]** auf der Registerkarte **[!UICONTROL Genehmigungen]** der erweiterten Kampagnenparameter aktiviert wurde.
 
-   ![](assets/enable-proof-validation.png)
+   ![Fenster für die Testversandvalidierung mit der Option Testversandvalidierung aktivieren aktivieren (Briefpost) und einer Testversandgruppe.](assets/enable-proof-validation.png)
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Testversand]**, um Testsendungen zu erstellen.
 
@@ -115,17 +115,17 @@ Die Dateiextraktion startet zwei Prozesse: Budgetberechnung und Bestandsberechnu
 
 * Die Registerkarte **[!UICONTROL Budget]** ermöglicht die Budgetverwaltung der Kampagne. Die Summe der Kosteneinträge wird im Feld **[!UICONTROL Berechnete Kosten]** der Hauptregisterkarte der Kampagne und des Programms, zu dem sie gehört, angezeigt. Die Beträge werden auch im Kampagnenbudget angezeigt.
 
-  ![](assets/campaign-budget-tab.png)
+  ![Registerkarte „Kampagnenbudget“ mit dem zugehörigen Budget, den berechneten Kosten und der Liste der Kostenzeilen pro Versand.](assets/campaign-budget-tab.png)
 
   Die tatsächlichen Kosten werden am Ende entsprechend der vom Router kommunizierten Informationen berechnet. Nur tatsächlich gesendete Nachrichten werden fakturiert.
 
 * Die Lagerbestände werden im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Lager]** des Baums definiert.
 
-  ![](assets/campaign-stocks.png)
+  ![Knoten „Lager“ im Campaign-Explorer mit dem Dashboard „Verkaufsflyer-Lager“ und den zugehörigen Lagerpositionen.](assets/campaign-stocks.png)
 
   Kostenstrukturen im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Dienstleister]**.
 
-  ![](assets/campaign-service-providers.png)
+  ![Knoten „Dienstleister“ im Campaign-Explorer mit dem Blueprint-Dienstleister und seiner Liste von Dienstleistungen.](assets/campaign-service-providers.png)
 
   Lagerpositionen werden im Bestandsabschnitt angezeigt. Um den Anfangsbestand zu definieren, öffnen Sie eine Lagerposition. Der Bestand verringert sich mit jedem Versand. Sie können eine Warnstufe und Benachrichtigungen definieren.
 

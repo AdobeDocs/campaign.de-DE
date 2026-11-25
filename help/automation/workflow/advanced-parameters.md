@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 100%
+source-wordcount: '567'
+ht-degree: 94%
 ---
 # Erweiterte Parameter{#advanced-parameters}
 
@@ -39,11 +39,11 @@ Der Bildschirm mit den Eigenschaften der Aktivität enthält eine Registerkarte 
 
 * vereinfacht für die Aktivität **[!UICONTROL Start]** und **[!UICONTROL Ende]**;
 
-  ![](assets/wf-advanced-basic.png)
+  ![Vereinfachte Registerkarte Erweitert einer Startaktivität mit den Feldern Name, Bild, Initialisierungsskript und Kommentar.](assets/wf-advanced-basic.png)
 
 * detailliert für die **[!UICONTROL Abfrageaktivität]**.
 
-  ![](assets/wf-advanced-full.png)
+  ![Detaillierte Registerkarte Erweitert einer Abfrageaktivität mit den Feldern Ausführung, Affinität, Verhalten, Zeitzone und Fehlermanagement.](assets/wf-advanced-full.png)
 
 Im Folgenden werden die im **[!UICONTROL Erweitert]**-Tab jeweils auszufüllenden Felder beschrieben.
 
@@ -99,4 +99,4 @@ In diesem Feld können Sie Variablen initialisieren oder Aktivitätseigenschafte
 
 ## Kommentar {#comment}
 
-Hier kann eine Beschreibung eingegeben werden. Es handelt sich um ein freies Textfeld.****
+Hier kann eine Beschreibung eingegeben werden. Es handelt sich um ein freies Textfeld.**&#x200B;**
