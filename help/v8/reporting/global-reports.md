@@ -143,7 +143,7 @@ Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das Symbol [+] kl
 
 >[!NOTE]
 >
->Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie den **[!UICONTROL Versand-Logs (broadlogrcp)]** Cube. Weitere Informationen hierzu finden Sie unter [ mit Adobe Campaign-Analyseberichten](gs-cubes.md). Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die nicht zu einer bestimmten Klasse gehören.
+>Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie den **[!UICONTROL Versand-Logs (broadlogrcp)]** Cube. Weitere Informationen hierzu finden Sie unter [&#x200B; mit Adobe Campaign-Analyseberichten](gs-cubes.md). Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die nicht zu einer bestimmten Klasse gehören.
 
 ## Browser {#browsers}
 

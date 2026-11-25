@@ -101,7 +101,7 @@ Die Tabelle zeigt Sendungen, Öffnungen, Klicks und Brutto-Reaktionsraten aufges
 >
 >Die in diesem Bericht dargestellten Domain-Namen werden in der auf Cube-Niveau verwendeten Auflistung definiert. Um Standard-Domains zu ändern, hinzuzufügen oder zu entfernen, bearbeiten Sie die **[!UICONTROL Domains]**-Auflistung und passen Sie die Werte und Aliase an. Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die keinem Auflistungswert entsprechen.
 >
->Erfahren Sie, wie Sie in Auflistungen verwalten auf [ Auflistungen zugreifen ](../config/enumerations.md) sie konfigurieren können.
+>Erfahren Sie, wie Sie in Auflistungen verwalten auf [&#x200B; Auflistungen zugreifen &#x200B;](../config/enumerations.md) sie konfigurieren können.
 
 
 **[!UICONTROL 4. Erzeugte Clickstreams]**
@@ -168,7 +168,7 @@ This chart shows the breakdown of cumulated clicks per day.
 
 Dieser Bericht zeigt die wichtigsten Informationen zu einem Versand.
 
-![Zusammenfassung des Versandberichts mit der ursprünglichen Zielpopulation, den Abschnitten Ausschlussgründe und Versandstatistiken ](assets/user-report-summary.png)
+![Zusammenfassung des Versandberichts mit der ursprünglichen Zielpopulation, den Abschnitten Ausschlussgründe und Versandstatistiken &#x200B;](assets/user-report-summary.png)
 
 **[!UICONTROL Zielpopulation]**
 

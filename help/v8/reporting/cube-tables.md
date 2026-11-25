@@ -120,7 +120,7 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
    Wählen Sie die anzuzeigenden Informationen und die Formatierungsoptionen aus. Die Liste der Optionen hängt vom Typ der Kennzahl ab.
 
-   ![Konfigurieren Sie den Dialog Kennzahlen mit den Formatierungsoptionen Zahl und Prozentsatz und bearbeiten Sie die Schaltfläche Dynamische Kennzahl ](assets/cube-measure-options.png)
+   ![Konfigurieren Sie den Dialog Kennzahlen mit den Formatierungsoptionen Zahl und Prozentsatz und bearbeiten Sie die Schaltfläche Dynamische Kennzahl &#x200B;](assets/cube-measure-options.png)
 
    Eine übergreifende Konfiguration der Kennzahlen ist über das Symbol **[!UICONTROL Konfiguration der Pivot-Tabelle bearbeiten]** möglich.
 
