@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 76%
+source-wordcount: '2074'
+ht-degree: 67%
 ---
 # Arbeiten mit Campaign und Adobe Analytics {#ac-aa}
 
@@ -77,17 +77,17 @@ Gehen Sie wie folgt vor, um Ihre **[!UICONTROL Report Suite]** in [!DNL Adobe An
 
 1. Wählen Sie in [!DNL Adobe Analytics] die Registerkarte **[!UICONTROL Admin]** und klicken Sie dann auf **[!UICONTROL Alle Admin]**.
 
-   ![](assets/analytics_connnector_1.png)
+   ![Adobe Analytics Admin-Menü mit hervorgehobener Option „Alle Administratoren“](assets/analytics_connnector_1.png)
 
 1. Klicken Sie auf **[!UICONTROL Report Suites]**.
 
-   ![](assets/analytics_connnector_2.png)
+   ![Admin-Seite in Adobe Analytics mit hervorgehobenem Link zu Report Suites](assets/analytics_connnector_2.png)
 
 1. Klicken Sie auf der Seite **[!UICONTROL Report Suite-Manager]** auf **[!UICONTROL Neu erstellen]** und anschließend auf **[!UICONTROL Report Suite]**.
 
-   Eine detaillierte Anleitung zur Erstellung von **[!UICONTROL Report Suites]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}.
+   Eine detaillierte Anleitung zur Erstellung von **[!UICONTROL Report Suites]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}.
 
-   ![](assets/analytics_connnector_3.png)
+   ![Report Suite Manager mit der Option „Neues Menü erstellen“ und „Report Suite öffnen“](assets/analytics_connnector_3.png)
 
 1. Wählen Sie eine Vorlage aus.
 
@@ -99,7 +99,7 @@ Gehen Sie wie folgt vor, um Ihre **[!UICONTROL Report Suite]** in [!DNL Adobe An
    * **[!UICONTROL Aufschaltdatum]**
    * **[!UICONTROL Geschätzte Seitenansichten pro Tag]**
 
-   ![](assets/analytics_connnector_4.png)
+   ![Konfigurieren Sie Ihr neues Report Suite-Formular mit ID, Site-Titel, Zeitzone, Aufschaltdatum und Seitenansichten](assets/analytics_connnector_4.png)
 
 1. Klicken Sie nach Abschluss der Konfiguration auf **[!UICONTROL Report Suite erstellen]**.
 
@@ -111,19 +111,19 @@ Im Anschluss an die Erstellung Ihrer **[!UICONTROL Report Suite]** müssen Sie *
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Einstellungen bearbeiten]** und wählen Sie **[!UICONTROL Konversion]** > **[!UICONTROL Konversionsvariablen]** aus.
 
-   ![](assets/analytics_connnector_5.png)
+   ![Menü „Einstellungen bearbeiten“ mit hervorgehobener Option „Konversion“ > „Konversionsvariablen“](assets/analytics_connnector_5.png)
 
 1. Klicken Sie auf **[!UICONTROL Neu hinzufügen]**, um die für die Messung der Effektivität der E-Mail-Kampagne erforderlichen Kennungen zu erstellen, also den internen Kampagnennamen (cid) und die ID der iNmsBroadlog-Tabelle (bid).
 
    Weiterführende Informationen zur Bearbeitung von **[!UICONTROL Konversionsvariablen]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=de#admin-tools){target="_blank"}.
 
-   ![](assets/analytics_connnector_6.png)
+   ![Liste der Konversionsvariablen mit eVar 5 namens Campaign ID und eVar 6 namens Broadlog ID](assets/analytics_connnector_6.png)
 
 1. Klicken Sie abschließend auf **[!UICONTROL Speichern]**.
 
 1. Um **[!UICONTROL Erfolgsereignisse]** zu erstellen, wählen Sie **[!UICONTROL Konversion]** > **[!UICONTROL Erfolgsereignisse]** über die Schaltfläche **[!UICONTROL Einstellungen bearbeiten]** aus.
 
-   ![](assets/analytics_connnector_7.png)
+   ![Menü „Einstellungen bearbeiten“ mit hervorgehobener Option „Konversion“ > „Erfolgsereignisse“](assets/analytics_connnector_7.png)
 
 1. Klicken Sie auf **[!UICONTROL Neu hinzufügen]**, um die folgenden **[!UICONTROL Erfolgsereignisse]** zu konfigurieren:
 
@@ -140,7 +140,7 @@ Im Anschluss an die Erstellung Ihrer **[!UICONTROL Report Suite]** müssen Sie *
 
    Weitere Informationen zum Konfigurieren von **[!UICONTROL Erfolgsereignissen]** finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html?lang=de)
 
-   ![](assets/analytics_connnector_8.png)
+   ![Benutzerdefinierte Liste der Erfolgsereignisse mit aktivierten Ereignissen 7 bis 16: angeklickt, geöffnet, gesendet, abgemeldet](assets/analytics_connnector_8.png)
 
 1. Klicken Sie abschließend auf **[!UICONTROL Speichern]**.
 
@@ -152,11 +152,11 @@ So erstellen Sie einen Klassifizierungssatz:
 
 1. Wählen Sie in der oberen Menüleiste von [!DNL Adobe Analytics] **[!UICONTROL Komponenten]** > **[!UICONTROL Klassifizierungssätze]** aus und klicken Sie dann auf **[!UICONTROL Neu]**.
 
-   ![](assets/analytics_connnector_16.png)
+   ![Adobe Analytics-Komponentenmenü mit hervorgehobenen Klassifizierungssätzen](assets/analytics_connnector_16.png)
 
 1. Führen Sie im Dialogfeld **[!UICONTROL Neuen Klassifizierungssatz hinzufügen]** Folgendes aus:
 
-   ![](assets/analytics_connnector_17.png)
+   ![Dialogfeld „Neuen Klassifizierungssatz hinzufügen“ mit Namen, Primärem Typ, Benachrichtigungen und Report Suite-Abonnement](assets/analytics_connnector_17.png)
 
    * Geben Sie einen **[!UICONTROL Namen]** für den Klassifizierungssatz ein.
    * Legen Sie den **[!UICONTROL Typ]** auf **[!UICONTROL Primär]** fest.
@@ -179,11 +179,11 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
 1. Navigieren Sie im Navigationsbaum von Adobe Campaign zum Ordner **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]** und klicken Sie auf **[!UICONTROL Neu]**.
 
-   ![](assets/analytics_connnector_9.png)
+   ![Liste der externen Konten im Campaign Explorer mit der angegebenen Schaltfläche Neu](assets/analytics_connnector_9.png)
 
 1. Wählen Sie in der Dropdown-Liste &quot;Typ&quot; **[!UICONTROL Web Analytics]** und in der Dropdown-Liste **[!UICONTROL Integration]** **[!UICONTROL Adobe Analytics]** aus.
 
-   ![](assets/analytics_connnector_10.png)
+   ![Neues externes Konto mit dem Typ Web Analytics und der Adobe Analytics-Integration, Link konfigurieren](assets/analytics_connnector_10.png)
 
 1. Klicken Sie auf den Link **[!UICONTROL Konfigurieren]**, der sich neben der Dropdown-Liste **[!UICONTROL Integration]** befindet.
 
@@ -201,7 +201,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
    >
    >Die Felder Kampagnen-ID und Broadlog-ID werden über JavaScript auf der Landingpage oder durch Verarbeitungsregeln erfasst. [Weitere Informationen zu Verarbeitungsregeln](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
-   ![](assets/analytics_connnector_11.png)
+   ![Konfigurieren der Integration mit der Adobe Analytics-Tab-Zuordnung für Report Suite, eVars und Erfolgsereignisse](assets/analytics_connnector_11.png)
 
 1. Ordnen Sie unter der Kategorie **[!UICONTROL Ereignisse]** die zehn **[!UICONTROL Erfolgsereignisse]** zu, die in [!DNL Adobe Analytics] konfiguriert sind.
 
@@ -213,7 +213,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
    Durch Klicken auf die Schaltfläche **[!UICONTROL Synchronisieren]** synchronisiert [!DNL Adobe Campaign] die Namensänderungen, die in [!DNL Adobe Analytics] vorgenommen wurden. Wenn die Komponente in [!DNL Adobe Analytics] gelöscht wird, wird die Komponente in [!DNL Adobe Campaign] durchgestrichen oder es wird für sie die Meldung **Nicht gefunden** angezeigt.
 
-   ![](assets/analytics_connnector_12.png)
+   ![Registerkarte Dateneinstellungen mit der Schaltfläche „Synchronisieren“, auf der die eVars, Ereignisse und Klassifizierungen der Integration aufgelistet sind](assets/analytics_connnector_12.png)
 
    >[!NOTE]
    >
@@ -221,15 +221,15 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
 1. Klicken Sie in Ihrem **[!UICONTROL externen Konto]** auf den Link **[!UICONTROL Formel anreichern]**. Damit können Sie die Formel zur URL-Berechnung ändern, anhand derer die Informationen zur Web Analytics-Tool-Integration (d. h. die Kampagnenkennungen) sowie die Domains der Websites spezifiziert werden, deren Aktivität getrackt werden soll.
 
-   ![](assets/analytics_connnector_13.png)
+   ![Externes Konto mit hervorgehobenem Link „Formel anreichern“](assets/analytics_connnector_13.png)
 
 1. Geben Sie den oder die Namen der betroffenen Webseitendomains ein.
 
-   ![](assets/analytics_connnector_14.png)
+   ![Anreicherung der Berechnungsformel für das Dialogfeld „Getrackte URLs“ mit dem Feld „Domain(s)“](assets/analytics_connnector_14.png)
 
 1. Klicken Sie auf **[!UICONTROL Weiter]** und stellen Sie sicher, dass die Domainnamen tatsächlich gespeichert wurden.
 
-   ![](assets/analytics_connnector_15.png)
+   ![Formel-Editor mit der Option Formel überschreiben und Tracking-Script](assets/analytics_connnector_15.png)
 
 1. Bei Bedarf können Sie die Berechnungsformel überschreiben. Aktivieren Sie dazu das Kontrollkästchen und bearbeiten Sie die Formel direkt im Fenster.
 
@@ -252,7 +252,7 @@ Der Datenaustausch zwischen Adobe Campaign und Adobe Analytics wird durch einen 
 
 Dieser Workflow ist im Campaign Explorer-Navigationsbaum im Ordner **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]** > **[!UICONTROL Web-Analytics-Prozess]** verfügbar.
 
-![](assets/webanalytics_workflows.png)
+![Technischer Workflow des Web Analytics-Prozesses mit Schritten zur Signal-, Delta-Berechnung und zum Senden von Indikatoren](assets/webanalytics_workflows.png)
 
 Der **[!UICONTROL Übermittlung der Kampagnen-Indikatoren und -Attribute]** ermöglicht es, über den Adobe Analytics-Connector Indikatoren zu E-Mail-Kampagnen über Adobe Campaign an die [!DNL CX Enterprise] zu senden. Dieser Workflow wird jeden Tag um 4 Uhr ausgelöst. Es kann 24 Stunden dauern, bis die Daten an Analytics gesendet werden.
 
@@ -292,12 +292,12 @@ Damit die [!DNL CX Enterprise] die Aktivitäten auf den Sites verfolgen kann, so
 
 1. Öffnen Sie den Versand der zu verfolgenden Kampagne.
 
-   ![](assets/webanalytics_delivery_properties_003.png)
+   ![E-Mail-Versand in einem Kampagnen-Workflow mit einem Pfeil auf die Schaltfläche Versandeigenschaften](assets/webanalytics_delivery_properties_003.png)
 
 1. Öffnen Sie die Versandeigenschaften.
 1. Wählen Sie im Tab **[!UICONTROL Web Analytics]** das zuvor erstellte externe Konto aus. Siehe [Konfigurieren Ihres externen Kontos in Adobe Campaign](#external-account-ac).
 
-   ![](assets/webanalytics_delivery_properties_002.png)
+   ![Registerkarte „Versandeigenschaften“ Web Analytics mit der Liste der Web Analytics-Konten mit der Adobe Analytics-Integration](assets/webanalytics_delivery_properties_002.png)
 
 1. Sie können jetzt Ihren Versand durchführen und Ihren Bericht dazu in Adobe Analytics abrufen.
 

@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 93%
+source-wordcount: '1299'
+ht-degree: 75%
 ---
 # Campaign und Adobe Target verwenden
 
@@ -66,7 +66,7 @@ Wir möchten, dass eines der Bilder in dieser E-Mail entsprechend den folgenden 
 * Die E-Mail wird in den USA geöffnet.
 * Wenn keine dieser Bedingungen zutrifft, wird ein Standardbild angezeigt.
 
-![](assets/target_4.png)
+![E-Mail-Varianten nach Zielgruppe: Standardmäßig wird ein Flugzeug gezeigt, der französische Eiffelturm, die amerikanische Freiheitsstatue](assets/target_4.png)
 
 In Adobe Campaign und Adobe Target müssen folgende Schritte durchgeführt werden:
 
@@ -86,11 +86,11 @@ In Adobe Campaign gibt es zwei Möglichkeiten, ein dynamisches Bild von Target i
 
 * Wenn Sie den Digital Content Editor verwenden, wählen Sie ein vorhandenes Bild und dann aus der Symbolleiste **[!UICONTROL Einfügen]** > **[!UICONTROL Dynamisches Bild von Adobe Target]**.
 
-  ![](assets/target_5.png)
+  ![Digital Content Editor mit Auswahl von Dynamisches Bild, das von Adobe Target bereitgestellt wird im Menü der Bildsymbolleiste](assets/target_5.png)
 
 * Wenn Sie den Standardeditor verwenden, platzieren Sie den Cursor an die Stelle, an der das Bild eingefügt werden soll, und wählen Sie aus dem Dropdown-Menü &quot;Personalisierung&quot; **[!UICONTROL Einfügen]** > **[!UICONTROL Dynamisches Bild von Adobe Target...]**.
 
-  ![](assets/target_12.png)
+  ![Standardeditor mit Einschließen und dann Dynamisches Bild von Adobe Target im Personalisierungsmenü](assets/target_12.png)
 
 Anschließend können Sie die Bildparameter definieren:
 
@@ -101,7 +101,7 @@ Anschließend können Sie die Bildparameter definieren:
 
 Wenn Sie in Ihren Einstellungen in Adobe Target Berechtigungen auf Unternehmensebene verwenden, fügen Sie in diesem Feld die entsprechende Eigenschaft hinzu. Weitere Informationen zu Target Enterprise-Berechtigungen finden Sie in der Dokumentation zu [Adobe Target](https://experienceleague.adobe.com/de/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
-![](assets/target_13.png)
+![Fügen Sie ein vom Adobe Target-Dialogfeld bereitgestelltes Bild mit Standardbild, Zielspeicherort, Landingpage und Entscheidungsparametern ein](assets/target_13.png)
 
 ### Erstellen von Umleitungsangeboten {#create-redirect-offers}
 
@@ -113,11 +113,11 @@ In unserem Fall benötigen wir zwei Umleitungsangebote. Das dritte (das Standard
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]** und dann auf **[!UICONTROL Umleitungsangebot]**.
 
-   ![](assets/target_9.png)
+   ![Registerkarte &quot;Adobe Target-Angebote“, Code-Angebote, mit hervorgehobener Option „Angebot erstellen“ und „Umleitungsangebot“](assets/target_9.png)
 
 1. Geben Sie einen Namen für das Angebot und die URL Ihres Bildes ein.
 
-   ![](assets/target_6.png)
+   ![Adobe Target erstellt ein Umleitungsangebotsformular, wobei das Feld „Name“ auf „Französische Zielgruppe“ und das Feld „Umleitungs-URL“ eingestellt ist](assets/target_6.png)
 
 1. Führen Sie dieselben Schritte für das andere Umleitungsangebot durch. Weitere Informationen hierzu finden Sie in dieser [Dokumentation zu Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=de#experiences){target="_blank"}.
 
@@ -127,11 +127,11 @@ Erstellen Sie in Adobe Target die zwei Zielgruppen, in die die Besucher Ihres An
 
 1. Um in Target eine neue Audience zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Zielgruppen]** auf **[!UICONTROL Zielgruppe erstellen]**.
 
-   ![](assets/audiences_1.png)
+   ![Registerkarte &quot;Adobe Target-Zielgruppen“ mit hervorgehobener Schaltfläche „Zielgruppe erstellen“](assets/audiences_1.png)
 
 1. Fügen Sie Ihrer Zielgruppe einen Namen hinzu.
 
-   ![](assets/audiences_2.png)
+   ![Dialogfeld „Neue Adobe Target-Zielgruppe“ mit dem Feld „Zielgruppenname“ und der Schaltfläche „Regel hinzufügen“](assets/audiences_2.png)
 
 1. Klicken Sie auf **[!UICONTROL Regel hinzufügen]** und wählen Sie eine Kategorie aus. Die Regel verwendet bestimmte Kriterien, um die Besuchenden anzusprechen. Sie können die Regeln verfeinern, indem Sie Bedingungen hinzufügen oder neue Regeln in anderen Kategorien erstellen.
 
@@ -145,17 +145,17 @@ Zuerst müssen Sie die Zielgruppe definieren:
 
 1. Um eine Experience Targeting-Aktivität zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Aktivitäten]** auf **[!UICONTROL Aktivität erstellen]** und dann auf **[!UICONTROL Experience Targeting]**.
 
-   ![](assets/target_10.png)
+   Registerkarte ![Adobe Target-Aktivitäten mit hervorgehobenem Menü „Aktivität erstellen“ und hervorgehobenem Experience Targeting](assets/target_10.png)
 
 1. Wählen Sie **[!UICONTROL Formular]** als **[!UICONTROL Experience Composer]**.
 
 1. Wählen Sie eine Audience aus, indem Sie auf die Schaltfläche **[!UICONTROL Zielgruppe ändern]** klicken.
 
-   ![](assets/target_10_2.png)
+   ![Schritt „Neue Aktivitätserlebnisse“ mit ausgewählter Option „Zielgruppe ändern“ im Menü „Zielgruppe aller Besucher“](assets/target_10_2.png)
 
 1. Wählen Sie die Zielgruppe aus, die in den vorherigen Schritten erstellt wurde.
 
-   ![](assets/target_10_3.png)
+   ![Dialogfeld „Zielgruppe auswählen“ mit der Zielgruppenbibliothek mit „Alle Besucher“ und „Andere Zielgruppen“](assets/target_10_3.png)
 
 1. Erstellen Sie ein weiteres Erlebnis durch Klicken auf **[!UICONTROL Experience Targeting hinzufügen]**.
 
@@ -163,27 +163,27 @@ Fügen Sie dann Inhalt für jede Audience hinzu:
 
 1. Wählen Sie den Namen des Speicherorts, den Sie beim Einfügen des dynamischen Angebots in Adobe Campaign festgelegt haben.
 
-   ![](assets/target_15.png)
+   ![Erlebnis-Targeting-Aktivität mit dem in der Liste „Speicherort auswählen“ ausgewählten v_rawbox-Speicherort](assets/target_15.png)
 
 1. Klicken Sie auf die Dropdown-Schaltfläche und wählen Sie **[!UICONTROL Umleitungsangebot ändern]** aus.
 
-   ![](assets/target_content.png)
+   ![Menü „Inhalt“ der Aktivität mit hervorgehobener Option „Umleitungsangebot ändern“](assets/target_content.png)
 
 1. Wählen Sie das zuvor erstellte Umleitungsangebot aus.
 
-   ![](assets/target_content_2.png)
+   ![Dialogfeld „Umleitungsangebot auswählen“ mit ausgewähltem französischem Zielgruppenangebot und der Schaltfläche „Speichern“](assets/target_content_2.png)
 
 1. Führen Sie dieselben Schritte für das zweite Erlebnis aus.
 
 Im Fenster **[!UICONTROL Ziel]** finden Sie einen Überblick über Ihre Aktivität. Bei Bedarf können Sie weitere Erlebnisse hinzufügen.
 
-![](assets/target_experience.png)
+![Target-Schritt mit der Auflistung der französischen Zielgruppe als Erlebnis A und der amerikanischen Zielgruppe als Erlebnis B mit Erlebnis hinzufügen](assets/target_experience.png)
 
 Im Fenster **[!UICONTROL Ziele und Einstellungen]** können Sie Ihre Aktivität personalisieren, indem Sie eine Priorität, ein Ziel oder eine Dauer festlegen.
 
 Im Abschnitt **[!UICONTROL Einstellungen für die Berichterstellung]** können Sie eine Aktion auswählen und die Parameter bearbeiten, anhand derer bestimmt wird, wann die Zielvorgabe erreicht ist.
 
-![](assets/target_experience_2.png)
+![Schritt „Ziel und Einstellungen“ mit der Zielmetrik „Konversion“ und „Angezeigte Mbox für v6_rawbox“](assets/target_experience_2.png)
 
 ## Vorschau anzeigen und Nachricht senden {#preview-send-email}
 
@@ -193,4 +193,4 @@ Sie werden bemerken, dass sich das Bild entsprechend den unterschiedlichen Erleb
 
 Jetzt können Sie Ihre E-Mail einschließlich eines dynamischen Angebots von Target versenden.
 
-![](assets/target_20.png)
+![E-Mail-Vorschau für Marie Dupont mit dem Eiffelturmbild von Adobe Target für das französische Publikum](assets/target_20.png)

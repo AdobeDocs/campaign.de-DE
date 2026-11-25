@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 98%
+source-wordcount: '928'
+ht-degree: 77%
 ---
 # Arbeiten mit Campaign und Adobe Experience Manager {#ac-aem}
 
@@ -56,35 +56,35 @@ Mit dieser Integration kann beispielsweise ein Newsletter in Adobe Experience Ma
 
 1. Navigieren Sie zu Ihrer [!DNL Adobe Experience Manager]-Autoreninstanz und klicken Sie oben links auf der Seite auf „Adobe Experience“. Wählen Sie **[!UICONTROL Sites]** im Menü.
 
-   ![](assets/aem_authoring_1.png)
+   ![Adobe Experience Manager-Navigationsmenü mit hervorgehobener Sites-Option](assets/aem_authoring_1.png)
 
 1. Navigieren Sie zu **[!UICONTROL Kampagnen > Name Ihres Unternehmens (hier we.Shopping) > Hauptbereich > E-Mail]**.
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Seite]** im Dropdown-Menü aus.
 
-   ![](assets/aem_authoring_2.png)
+   ![AEM Sites-E-Mail-Ordner mit geöffnetem Menü „Erstellen“ und ausgewählter Seite](assets/aem_authoring_2.png)
 
 1. Wählen Sie die Vorlage **[!UICONTROL Adobe Campaign-E-Mail]** aus und benennen Sie Ihren Newsletter.
 
 1. Öffnen Sie nach der Erstellung Ihrer Seite das Menü **[!UICONTROL Seiteninformationen]** und klicken Sie auf **[!UICONTROL Eigenschaften öffnen]**.
 
-   ![](assets/aem_authoring_3.png)
+   ![Newsletter-Seiteneditor mit hervorgehobenem Menü „Seiteninformationen“ und hervorgehobener Option „Eigenschaften öffnen“](assets/aem_authoring_3.png)
 
 1. Passen Sie den E-Mail-Inhalt an, indem Sie Komponenten hinzufügen, z. B. Personalisierungsfelder aus Adobe Campaign. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=de#editing-email-content){target="_blank"}.
 
 1. Wenn Ihre E-Mail fertig ist, navigieren Sie zum Menü **[!UICONTROL Seiteninformationen]** und klicken Sie auf **[!UICONTROL Workflow starten]**.
 
-   ![](assets/aem_authoring_4.png)
+   ![Newsletter-Seiteneditor mit hervorgehobenem Menü „Seiteninformationen“ und hervorgehobenem Punkt „Workflow starten“](assets/aem_authoring_4.png)
 
 1. Wählen Sie in der ersten Dropdown-Liste als Workflow-Modell **[!UICONTROL Adobe Campaign genehmigen]** aus und klicken Sie auf **[!UICONTROL Workflow starten]**.
 
-   ![](assets/aem_authoring_5.png)
+   ![Das Dialogfeld „Workflow starten“ mit der Option „Für Adobe Campaign genehmigen“ als Workflow-Modell](assets/aem_authoring_5.png)
 
 1. Oben auf Ihrer Seite erscheint ein Haftungsausschluss mit folgendem Inhalt: `This page is subject to the workflow Approve for Adobe Campaign`. Klicken Sie neben dem Haftungsausschluss auf **[!UICONTROL Fertig]**, um die Überprüfung zu bestätigen, und klicken Sie dann auf **[!UICONTROL Ok]**.
 
 1. Klicken Sie erneut auf **[!UICONTROL Fertig]** und wählen Sie danach **[!UICONTROL Newsletter-Genehmigung]** in der Dropdown-Liste **[!UICONTROL Nächster Schritt]**.
 
-   ![](assets/aem_authoring_6.png)
+   ![Das Dialogfeld „Arbeitselement abschließen“ mit der in der Liste Nächster Schritt ausgewählten Newsletter-Genehmigung und der Schaltfläche „OK“](assets/aem_authoring_6.png)
 
 Ihr Newsletter ist jetzt fertig und in Adobe Campaign synchronisiert.
 
@@ -94,7 +94,7 @@ Ihr Newsletter ist jetzt fertig und in Adobe Campaign synchronisiert.
 
 1. Wählen Sie die Vorlage **[!UICONTROL E-Mail-Versand mit AEM-Inhalt (mailAEMContent)]** aus dem Dropdown-Menü **[!UICONTROL Versandvorlagen]**.
 
-   ![](assets/aem_authoring_7.png)
+   ![Liste der Kampagnenversandvorlagen mit ausgewähltem E-Mail-Versand mit AEM-Inhalt (mailAEMContent)](assets/aem_authoring_7.png)
 
 1. Fügen Sie zu Ihrem Versand einen **[!UICONTROL Titel]** hinzu und wählen Sie dann **[!UICONTROL Fortfahren]** aus.
 
@@ -102,15 +102,15 @@ Ihr Newsletter ist jetzt fertig und in Adobe Campaign synchronisiert.
 
    Wenn die Schaltfläche in der Benutzeroberfläche nicht sichtbar ist, navigieren Sie zur Schaltfläche **[!UICONTROL Eigenschaften]** und greifen Sie darüber auf die Registerkarte **[!UICONTROL Erweitert]** zu. Stellen Sie sicher, dass das Feld **[!UICONTROL Inhaltsbearbeitungsmodus]** auf **[!UICONTROL AEM]** eingestellt ist, und geben Sie Ihre AEM-Instanzdetails in das Feld **[!UICONTROL AEM Konto]** ein.
 
-   ![](assets/aem_authoring_8.png)
+   ![Symbolleiste des E-Mail-Versands in Campaign mit hervorgehobener Schaltfläche „Synchronisieren“](assets/aem_authoring_8.png)
 
 1. Wählen Sie den zuvor in [!DNL Adobe Experience Manager] erstellten Versand aus und bestätigen Sie durch Klicken auf **[!UICONTROL OK]**.
 
-   ![](assets/aem_authoring_11.png)
+   ![Mit AEM-Inhalt synchronisieren Dialogfeld mit der Liste genehmigter AEM-E-Mails mit ausgewählter Newsletter-Zeile](assets/aem_authoring_11.png)
 
 1. Stellen Sie sicher, dass Sie immer dann auf die Schaltfläche **[!UICONTROL Inhalt aktualisieren]** klicken, wenn Änderungen an Ihrem AEM-Versand vorgenommen werden.
 
-   ![](assets/aem_authoring_12.png)
+   ![Synchronisierter E-Mail-Versand mit hervorgehobener Schaltfläche „Inhalt aktualisieren“ und der Schaltfläche „Synchronisierung aufheben“](assets/aem_authoring_12.png)
 
 1. Um die Verknüpfung zwischen Experience Manager und Campaign zu entfernen, klicken Sie auf **[!UICONTROL Synchronisierung aufheben]**.
 
@@ -124,11 +124,11 @@ Sie können Assets auch direkt aus Ihrer [!DNL Adobe Experience Manager Assets L
 
 1. Navigieren Sie zu Ihrer [!DNL Adobe Experience Manager]-Autoreninstanz und klicken Sie oben links auf der Seite auf „Adobe Experience“. Wählen Sie im Menü **[!UICONTROL Assets]** `>` **[!UICONTROL Dateien]**.
 
-   ![](assets/aem_assets_1.png)
+   ![AEM Assets-Navigationsmenü mit hervorgehobener Option „Dateien“](assets/aem_assets_1.png)
 
 1. Klicken Sie auf **Erstellen** und dann auf **Dateien**, um das Asset in Ihre **Adobe Experience Manager Assets-Bibliothek** zu importieren. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=de#uploading-assets){target="_blank"}.
 
-   ![](assets/aem_assets_2.png)
+   ![Ansicht &quot;AEM Assets-Dateien“ mit geöffnetem Menü „Erstellen“ und ausgewählten Dateien zum Hochladen eines Assets](assets/aem_assets_2.png)
 
 1. Benennen Sie Ihr Asset bei Bedarf um und klicken Sie auf **Hochladen**.
 
@@ -138,7 +138,7 @@ Ihr Asset wurde jetzt in Ihre **Adobe Experience Manager Assets-Bibliothek** hoc
 
 1. Um einen neuen Versand zu erstellen, gehen Sie in Adobe Campaign zur Registerkarte **Kampagnen**, klicken Sie auf **Sendungen** und anschließend oberhalb der Liste der vorhandenen Sendungen auf die Schaltfläche **Erstellen**.
 
-   ![](assets/aem_assets_3.png)
+   ![Liste der Sendungen in Campaign auf der Registerkarte Kampagnen mit hervorgehobener Schaltfläche „Erstellen“](assets/aem_assets_3.png)
 
 1. Wählen Sie eine **Versandvorlage** aus und benennen Sie Ihren Versand.
 
@@ -148,14 +148,14 @@ Ihr Asset wurde jetzt in Ihre **Adobe Experience Manager Assets-Bibliothek** hoc
 
    Wählen Sie Ihr **AEM-Konto** und aktivieren Sie die Option **[!UICONTROL obige AEM-Instanz als freigegebene Asset-Bibliothek verwenden]**.
 
-   ![](assets/aem_authoring_9.png)
+   ![Registerkarte „Erweitert“ der Versandeigenschaften mit AEM-Kontosatz und aktivierter Option „Freigegebene Asset-Bibliothek“](assets/aem_authoring_9.png)
 
 1. Navigieren Sie über das **Bild**-Symbol zum Menü **[!UICONTROL Ein freigegebenes Asset auswählen]**.
 
-   ![](assets/aem_assets_4.png)
+   ![Bildmenü des Campaign-E-Mail-Editors mit hervorgehobener Option „Freigegebenes Asset auswählen“](assets/aem_assets_4.png)
 
 1. Wählen Sie im Auswahlfenster ein Bild aus Ihrer **Adobe Experience Manager Assets-Bibliothek** und klicken Sie auf **Auswählen**.
 
-   ![](assets/aem_assets_5.png)
+   ![Wählen Sie ein Fenster mit freigegebenen Assets, in dem AEM Assets-Bibliotheksdateien mit der Option „jogging-newsletter.jpg“ aufgelistet werden](assets/aem_assets_5.png)
 
 Ihr Asset wird jetzt in Ihren E-Mail-Versand hochgeladen. Jetzt können Sie die Zielgruppe festlegen, den Versand bestätigen und mit dem Senden fortfahren.
