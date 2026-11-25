@@ -72,7 +72,7 @@ In den folgenden Schritten wird ein Anwendungsfall schrittweise beschrieben, in 
 
    ![Alternativtext](assets/postman_collection.png)
 
-1. Wählen Sie die Anfrage **Profil erstellen** und aktualisieren Sie dann die POST-Anfrage sowie den Tab **Kopfzeilen** mit Ihren eigenen Daten (&lt;ORGANISATION>, &lt;API_KEY>, &lt;ACCESS_TOKEN>). Weitere Informationen hierzu finden Sie unter [ des API-Zugriffs](setting-up-api-access.md).
+1. Wählen Sie die Anfrage **Profil erstellen** und aktualisieren Sie dann die POST-Anfrage sowie den Tab **Kopfzeilen** mit Ihren eigenen Daten (&lt;ORGANISATION>, &lt;API_KEY>, &lt;ACCESS_TOKEN>). Weitere Informationen hierzu finden Sie unter [&#x200B; des API-Zugriffs](setting-up-api-access.md).
 
    ![Alternativtext](assets/postman_uc1.png)
 

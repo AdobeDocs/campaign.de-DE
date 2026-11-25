@@ -91,6 +91,6 @@ Sie haben folgende Möglichkeiten:
 * Posten auf Ihrem X-Konto
 * Neue Kontakte sammeln
 
-Erfahren Sie, wie Sie die X-Integration in [Arbeiten mit Campaign und X (Twitter) einrichten und ](../connect/ac-tw.md).
+Erfahren Sie, wie Sie die X-Integration in [Arbeiten mit Campaign und X (Twitter) einrichten und &#x200B;](../connect/ac-tw.md).
 
 Erfahren Sie in [Nachrichten auf X (Twitter) mit Adobe Campaign](../send/twitter.md), wie Sie X-Posts erstellen und Direktnachrichten an Ihre Follower senden.

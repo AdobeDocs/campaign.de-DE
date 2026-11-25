@@ -65,7 +65,7 @@ Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschrei
 
 Wenn Sie mit Adobe Campaign beginnen, müssen Sie das Standarddatenmodell evaluieren, um zu prüfen, welche Tabelle am besten zur Speicherung Ihrer Marketing-Daten geeignet ist.
 
-Sie können die standardmäßige Empfängertabelle mit den vordefinierten Feldern verwenden, wie unter [Integrierte Profiltabelle) ](#ootb-profiles). Bei Bedarf können Sie sie mit zwei Verfahren erweitern:
+Sie können die standardmäßige Empfängertabelle mit den vordefinierten Feldern verwenden, wie unter [Integrierte Profiltabelle) &#x200B;](#ootb-profiles). Bei Bedarf können Sie sie mit zwei Verfahren erweitern:
 
 * [Erweitern einer vorhandenen Tabelle](extend-schema.md) mit neuen Feldern. Sie können der Empfängertabelle beispielsweise ein neues Feld „Treue“ hinzufügen.
 * [Erstellen Sie eine neue Tabelle](create-schema.md), z. B. eine Tabelle „Einkauf“, in der alle von den einzelnen Profilen der Datenbank getätigten Käufe aufgelistet sind, und verknüpfen Sie sie mit der Empfängertabelle.
@@ -85,7 +85,7 @@ Die Verwendung der standardmäßigen Empfängertabelle bietet folgende Vorteile:
 
 Es ist möglich, die Empfängertabelle zu erweitern. Die Anzahl der Empfänger oder Relationen in der Tabelle lässt sich aber nicht verringern.
 
-Erfahren Sie in „Campaign-Schemata erweitern[, wie Sie ein vorhandenes Schema ](extend-schema.md).
+Erfahren Sie in „Campaign-Schemata erweitern[, wie Sie ein vorhandenes Schema &#x200B;](extend-schema.md).
 
 Beispiele für integrierte Empfängertabellen-Erweiterungen finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table){target="_blank"}
 

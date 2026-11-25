@@ -62,7 +62,7 @@ Das neue Angebot kombiniert erstklassige Dienstleistungen mit proaktiver Aufsich
 * **Service-Erlebnis** – proaktive Verfügbarkeit, Kapazität und Überwachen der Performance und Reaktion darauf, um Unterbrechungen zu verhindern, Störungen schneller zu beheben und den Service regelmäßig zu überprüfen, und so kontinuierliche Verbesserungen zu gewährleisten.
 * **Profundes Expertenwissen zu Campaign** – hochaffiner Service von erfahrenen Customer-Engineering-Teams, um funktionale, technische oder Zustellbarkeitserfordernisse zu erfüllen, das Bereitstellungsrisiko zu reduzieren und das Änderungsmanagement zu verbessern.
 
-Als früherer [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die unter „Nicht [ Funktionen“ ](#gs-removed) sind.
+Als früherer [!DNL Campaign Classic]-Benutzer sollten Sie beachten, dass die meisten Funktionen von [!DNL Campaign Classic] v7 auch in [!DNL Campaign] v8 verfügbar sind, mit Ausnahme einiger weniger, die unter „Nicht [&#x200B; Funktionen“ &#x200B;](#gs-removed) sind.
 
 >Die neue Cloud-Architektur ermöglicht es Campaign, Prozesse zu optimieren, Kosten zu reduzieren, Risiken zu verwalten und die Datensicherheit zu verbessern. Die Campaign v8-Umgebung verfügt über eine dedizierte Virtual Private Cloud (VPC), die schon vorkonfiguriert ist.
 
@@ -93,7 +93,7 @@ Erfahren Sie mehr über die Architektur von [!DNL Campaign] v8 in [Erste Schritt
 
 Campaign-Benutzende stellen über ihre Adobe ID eine Verbindung her. Dieselbe Adobe ID wird verwendet, um alle Ihre Adobe-Pläne und -Produkte für alle [!DNL Adobe CX Enterprise]-Lösungen mit einem einzigen Account zu verknüpfen.
 
-Erfahren Sie in [!DNL Campaign]Verbindung zu Campaign v8 herstellen[, wie Sie eine Verbindung ](connect.md).
+Erfahren Sie in [!DNL Campaign]Verbindung zu Campaign v8 herstellen[, wie Sie eine Verbindung &#x200B;](connect.md).
 
 ## Analysieren von Daten mit Cubes{#adobe-reporting}
 

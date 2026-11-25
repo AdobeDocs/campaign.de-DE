@@ -67,7 +67,7 @@ Es stehen zwei Modi zur Tabellenerweiterung zur Verfügung:
 
   Wie Sie ein neues Feld schnell in Campaign hinzufügen, erfahren Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=de#configuring-campaign-classic){target="_blank"}
 
-* Programmgesteuert durch Erweiterung des Schemas. Erfahren Sie in „Campaign-Schemata erweitern[, wie Sie ein vorhandenes Schema ](../dev/extend-schema.md).
+* Programmgesteuert durch Erweiterung des Schemas. Erfahren Sie in „Campaign-Schemata erweitern[, wie Sie ein vorhandenes Schema &#x200B;](../dev/extend-schema.md).
 
 Sie können auch neue Tabellen in der Campaign-Datenbank erstellen und das integrierte Datenmodell erweitern.
 
@@ -92,7 +92,7 @@ Die Benutzeroberfläche von Adobe Campaign nutzt viele Web-Anwendungen für den 
 
 Die integrierten Web-Anwendungen werden im Ordner **Administration > Konfiguration > Web-Anwendungen** des Explorers gespeichert.
 
-Erfahren Sie, wie Sie in Campaign eine Übersichtsseite erstellen ([ einer einseitigen Web-Anwendung](web/use-cases-creating-overviews.md#creating-a-single-page-web-application)
+Erfahren Sie, wie Sie in Campaign eine Übersichtsseite erstellen ([&#x200B; einer einseitigen Web-Anwendung](web/use-cases-creating-overviews.md#creating-a-single-page-web-application)
 
 
 ## Anpassen von Listen und Erstellen von Filtern {#gs-lists-and-filters}
@@ -101,7 +101,7 @@ Campaign-Listen enthalten vordefinierte Filter, um die Navigation und Datenvisua
 
 Beim Navigieren in der Explorer-Struktur von Adobe Campaign werden die in der Datenbank enthaltenen Daten in Listen angezeigt. Sie können diese Listen filtern, Suchvorgänge durchführen und Informationen hinzufügen sowie Daten filtern und sortieren.
 
-Erfahren Sie, wie Sie in der Benutzeroberfläche von Campaign Listen konfigurieren [ Listenkonfigurationen speichern ](../start/campaign-ui.md).
+Erfahren Sie, wie Sie in der Benutzeroberfläche von Campaign Listen konfigurieren [&#x200B; Listenkonfigurationen speichern &#x200B;](../start/campaign-ui.md).
 
 Sie können Filter auf diese Listen anwenden, um nur die vom Operator benötigten Daten anzuzeigen. Anschließend können Aktionen für die gefilterten Daten ausgeführt werden. Mit der Filterkonfiguration können Sie Daten aus einer Liste dynamisch auswählen. Beim Ändern der Daten werden die gefilterten Daten aktualisiert.
 

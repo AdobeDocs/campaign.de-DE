@@ -45,7 +45,7 @@ ht-degree: 92%
 ---
 # Versionshinweise 2023 {#2023-rn}
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen 2023** aufgelistet. Die neueste Version finden Sie in den [ zu Campaign v8 ](release-notes.md).
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen 2023** aufgelistet. Die neueste Version finden Sie in den [&#x200B; zu Campaign v8 &#x200B;](release-notes.md).
 
 Installieren Sie für jede neue Implementierung oder jedes Upgrade auf eine vorhandene Umgebung [die neueste Version](release-notes.md).
 

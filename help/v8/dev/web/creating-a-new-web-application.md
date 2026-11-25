@@ -57,7 +57,7 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
 1. Web-Anwendungen
 
-   Mit Adobe Campaign können Sie Web-Anwendungen erstellen, die beispielsweise auf einer Web-Plattform oder in einem Extranet bereitgestellt werden. Auf diese Weise können Sie Daten bearbeiten und Informationen in Adobe Campaign aufzeichnen. In diesem Fall können Sie den Zugriff der Benutzenden auf authentifizierte Benutzende (über die Zugriffssteuerung) beschränken und das Vorabladen von Daten auf Basis verschiedener Kriterien einrichten. Weitere Informationen hierzu finden Sie unter [ mit Web-Anwendungen](about-web-applications.md).
+   Mit Adobe Campaign können Sie Web-Anwendungen erstellen, die beispielsweise auf einer Web-Plattform oder in einem Extranet bereitgestellt werden. Auf diese Weise können Sie Daten bearbeiten und Informationen in Adobe Campaign aufzeichnen. In diesem Fall können Sie den Zugriff der Benutzenden auf authentifizierte Benutzende (über die Zugriffssteuerung) beschränken und das Vorabladen von Daten auf Basis verschiedener Kriterien einrichten. Weitere Informationen hierzu finden Sie unter [&#x200B; mit Web-Anwendungen](about-web-applications.md).
 
 1. Landingpages
 
@@ -79,4 +79,4 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
    >
    >**Social Marketing** ist ein optionales Modul von Adobe Campaign. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
-Der Seitenkonfigurationsmodus und verfügbare Konfigurationen können für mehrere Typen von Webanwendungen identisch sein. Weitere Informationen hierzu finden Sie unter [ mit Web-Formularen](about-web-forms.md).
+Der Seitenkonfigurationsmodus und verfügbare Konfigurationen können für mehrere Typen von Webanwendungen identisch sein. Weitere Informationen hierzu finden Sie unter [&#x200B; mit Web-Formularen](about-web-forms.md).

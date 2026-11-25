@@ -75,9 +75,9 @@ Adobe Campaign verfügt über Prozesse und Einstellungen, die es Ihnen ermöglic
 
 * **Benutzerzustimmung und Datenspeicherung**: Sie müssen die Einwilligungen der jeweiligen Benutzenden einholen, Anmeldemechanismen mit Double-Opt-in einrichten, den Opt-out erleichtern und die Datenspeicherung konfigurieren.
 
-  Weitere Informationen finden Sie in der Dokumentation zum Datenschutz in Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent){target="_blank"}[
+  Weitere Informationen finden Sie in der Dokumentation zum Datenschutz in Campaign Classic v7[&#128279;](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=de#consent){target="_blank"}
 
-* **Datenschutzbestimmungen** Informationen zu Datenschutzanforderungen und deren Auswirkungen auf Ihr Unternehmen [ Adobe Campaign finden Sie unter Verwalten von Datenschutzanfragen in ](privacy.md)).
+* **Datenschutzbestimmungen** Informationen zu Datenschutzanforderungen und deren Auswirkungen auf Ihr Unternehmen [&#x200B; Adobe Campaign finden Sie unter Verwalten von Datenschutzanfragen in &#x200B;](privacy.md)).
 
 ### Sicherheit
 
@@ -118,7 +118,7 @@ Bevor Sie Nachrichten senden und Marketing-Kampagnen erstellen, müssen Sie Folg
 
    Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=de){target="_blank"} erfahren Sie, wie Sie mit Kampagnenvorlagen arbeiten.
 
-   Erfahren Sie auf [ Seite , wie Sie eine Workflow-Vorlage ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"}.
+   Erfahren Sie auf [&#x200B; Seite , wie Sie eine Workflow-Vorlage &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"}.
 
    Weitere Informationen zu E-Mail-Vorlagen finden Sie auf [Seite](../send/create-templates.md).
 
@@ -151,7 +151,7 @@ Sie können viele verschiedene Bereiche und Funktionen in Campaign anpassen. Die
 
    Sie können auf einfache Weise Listen konfigurieren, Felder hinzufügen und entfernen und Spalten anpassen.
 
-   Erfahren Sie in „Listen anpassen und Filter erstellen“, wie Sie [ Campaign Filter und Listen ](../dev/customize.md#gs-lists-and-filters).
+   Erfahren Sie in „Listen anpassen und Filter erstellen“, wie Sie [&#x200B; Campaign Filter und Listen &#x200B;](../dev/customize.md#gs-lists-and-filters).
 
    Sie können auch neue Dashboards erstellen, um Campaign-Daten je nach Bedarf anzuzeigen.
 

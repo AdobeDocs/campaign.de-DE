@@ -39,8 +39,8 @@ Die verfügbaren Endpunkte für die Adobe Campaign-REST-API:
 
 * **/profileAndServices**: zur Interaktion mit vordefinierten Feldern. Erweiterte Felder können bei diesem Endpunkt nicht aufgerufen werden.
 * **/profileAndServicesExt**: zur Interaktion mit benutzerdefinierten Feldern, die bei der benutzerdefinierten Ressourcenerweiterung von Profil oder Dienste hinzugefügt werden. Weitere Informationen zu benutzerdefinierten Ressourcen finden Sie unter [Benutzerdefinierte Ressourcen](custom-resources.md).
-* **/&lt;transactionalAPI>**: zur Interaktion mit der API für Transaktionsnachrichten (der Name des API-Endpunkts für Transaktionsnachrichten hängt von der Konfiguration Ihrer Instanz ab). Weitere Informationen hierzu finden Sie unter [ von Transaktionsnachrichten](managing-transactional-messages.md).
-* **/workflow/execute**: zur Interaktion mit Workflows. Weitere Informationen hierzu finden Sie unter [ eines Workflows](controlling-a-workflow.md).
+* **/&lt;transactionalAPI>**: zur Interaktion mit der API für Transaktionsnachrichten (der Name des API-Endpunkts für Transaktionsnachrichten hängt von der Konfiguration Ihrer Instanz ab). Weitere Informationen hierzu finden Sie unter [&#x200B; von Transaktionsnachrichten](managing-transactional-messages.md).
+* **/workflow/execute**: zur Interaktion mit Workflows. Weitere Informationen hierzu finden Sie unter [&#x200B; eines Workflows](controlling-a-workflow.md).
 
 Standardmäßig stehen für die APIs **profileAndServices** und **profileAndServicesExt** folgende Hauptressourcen zur Verfügung:
 

@@ -24,7 +24,7 @@ ht-degree: 95%
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
 
 
 
@@ -65,13 +65,13 @@ Wenn Sie einer Umfrage ein Feld hinzufügen, müssen Sie den Typ auswählen. Fol
 
    >[!NOTE]
    >
-   >Speichermodi und Feldimporte werden unter &quot;[ Antworten speichern“ ](managing-answers.md#storing-collected-answers).
+   >Speichermodi und Feldimporte werden unter &quot;[&#x200B; Antworten speichern“ &#x200B;](managing-answers.md#storing-collected-answers).
 
 Die Art des hinzuzufügenden Felds (Dropdown-Liste, Textfeld, Kontrollkästchen usw.) hängt vom ausgewählten Speichermodus ab. Der Feldtyp kann im Feld **[!UICONTROL Typ]** auf der Registerkarte **[!UICONTROL Allgemein]** geändert werden. Achten Sie dabei aber darauf, dass der Feldtyp zum Datentyp passt.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-Die verschiedenen verfügbaren Feldtypen werden unter „Erste [ mit Web-Formularen“ ](../web/about-web-forms.md).
+Die verschiedenen verfügbaren Feldtypen werden unter „Erste [&#x200B; mit Web-Formularen“ &#x200B;](../web/about-web-forms.md).
 
 ## Elemente einer Umfrage {#survey-specific-elements}
 

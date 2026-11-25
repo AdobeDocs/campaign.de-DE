@@ -53,7 +53,7 @@ Als Produkt-Administrator können Sie den Benutzern Ihrer Organisation Berechtig
 Die wichtigsten Schritte sind:
 
 * **Schritt 1**: Definieren Sie Ihre Benutzergruppen und weisen Sie ihnen Berechtigungen in der Client-Konsole in Campaign zu. [Weitere Informationen](manage-permissions.md#create-product-profile).
-Beachten Sie, dass Sie zu Beginn auch integrierte Benutzergruppen verwenden können. Diese Standardgruppen und ihre Berechtigungen werden unter [Standardproduktprofile und Benutzergruppen“ ](manage-permissions.md#ootb-productprofiles).
+Beachten Sie, dass Sie zu Beginn auch integrierte Benutzergruppen verwenden können. Diese Standardgruppen und ihre Berechtigungen werden unter [Standardproduktprofile und Benutzergruppen“ &#x200B;](manage-permissions.md#ootb-productprofiles).
 * **Schritt 2**: Erstellen Sie Produktprofile in der Adobe Admin Console, die mit diesen Gruppen übereinstimmen. [Weitere Informationen](manage-permissions.md#create-product-profile).
 Sie können zu Beginn integrierte Produktprofile verwenden. [Weitere Informationen](manage-permissions.md#ootb-productprofiles).
 * **Schritt 3**: Erstellen Sie Benutzende in der Adobe Admin Console und weisen Sie sie einem Produktprofil zu. [Weitere Informationen](manage-permissions.md#add-users).
