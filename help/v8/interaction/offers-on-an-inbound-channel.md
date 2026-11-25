@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
+source-git-commit: 011875268793bca1a000d745818dbd6c69461227
 workflow-type: tm+mt
-source-wordcount: '3052'
-ht-degree: 69%
+source-wordcount: '3055'
+ht-degree: 65%
 ---
 # Angebot auf einem Inbound-Kanal{#offers-on-an-inbound-channel}
 
@@ -101,7 +101,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 ### Erstellung einer Angebotskategorie und eines Themas {#creating-an-offer-category-and-a-theme}
 
 1. Markieren Sie in der zuvor erstellten Umgebung den Knoten **[!UICONTROL Angebotskatalog]**.
-1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]**&#x200B;**[!UICONTROL aus]**.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]****[!UICONTROL aus]**.
 
    Nennen Sie die neue Kategorie, beispielsweise **Finanzprodukte**.
 
@@ -130,7 +130,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
    ![Registerkarte Angebotseignung mit Angebotsgewichten und dem Dialogfeld Gewichtung, das auf die anonyme Platzierung beschränkt ist](assets/offer_inbound_anonymous_example_016.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
 ### Konfiguration der Angebotsplatzierung auf der Website {#configure-the-web-offer-space-on-the-website}
 
-Um die soeben konfigurierten Angebote auf der Website sichtbar zu machen, fügen Sie JavaScript-Code in die HTML-Seite Ihrer Website ein, um die Interaction-Engine aufzurufen (weitere Informationen finden Sie unter [Über eingehende Kanäle](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (Campaign v8-Dokumentation)).
+Um die soeben konfigurierten Angebote auf der Website anzuzeigen, fügen Sie JavaScript-Code in die HTML-Seite Ihrer Website ein. Dieser Code ruft die Interaction-Engine auf. Weitere Informationen hierzu finden Sie unter [ über eingehende Kanäle ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"}Dokumentation zu Campaign v8).
 
 1. Fügen Sie in der HTML-Seite ein @id-Attribut ein, dessen Wert dem internen Namen der zuvor erstellten anonymen Platzierung entspricht (siehe [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces)), mit einem vorangestellten **i_**.
 
@@ -157,7 +157,7 @@ Um die soeben konfigurierten Angebote auf der Website sichtbar zu machen, fügen
 
    ![HTML-Skriptaufruf an interaction.js mit hervorgehobenen Parametern „env=liveVisitor“ und „th=finance“](assets/offer_inbound_anonymous_example_020.png)
 
-   Die blauen URL-Felder oben entsprechen dem Instanznamen, dem internen Namen der Umgebung (siehe [Erstellung einer anonymen Umgebung](#creating-an-anonymous-environment)) und dem Thema, das mit der Kategorie verknüpft ist ([Erstellunge einer Angebotskategorie und eines Themas](#creating-an-offer-category-and-a-theme)). Das Thema ist optional.
+   Die blauen URL-Felder oben entsprechen dem Instanznamen, dem internen Namen der Umgebung und dem mit der Kategorie verknüpften Design. Weitere Informationen hierzu finden Sie unter [Erstellen einer anonymen ](#creating-an-anonymous-environment) und [Erstellen einer Angebotskategorie und eines Designs](#creating-an-offer-category-and-a-theme). Das Design ist optional.
 
 Wenn ein Besucher auf die Startseite der Webpräsenz zugreift, werden die Angebote des Themas **Finanzierungen** wie zuvor konfiguriert angezeigt.
 
@@ -267,7 +267,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
 
    ![Registerkarte Eignung des besten Angebots #1 anonymes Angebot mit Gewichtungen für die Startseite und die Speicherseite](assets/offer_inbound_fallback_example_030.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![Registerkarte „Inhalt“ eines anonymen besten Angebots mit dem Titel Neobank-Bankkonto und HTML-Inhalt](assets/offer_inbound_fallback_example_032.png)
 
@@ -276,7 +276,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
    ![Registerkarte „Inhalt“ des zweitbesten Angebots mit dem Titel „Neobank Home Insurance“ und HTML-Inhalt](assets/offer_inbound_fallback_example_031.png)
 
 1. Markieren Sie die Kategorie **Partner** und erstellen Sie das erste anonyme Angebot der Kategorie.
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![Registerkarte „Inhalt“ des anonymen Partnerangebots mit dem Titel &quot;Neo Weekly“ und &quot;HTML content“](assets/offer_inbound_fallback_example_033.png)
 
@@ -356,7 +356,7 @@ Erstellen Sie nun in jeder Kategorie zwei Angebote, d. h. vier Angebote insgesam
 
    ![Registerkarte „Eignung“ des ersten identifizierten besten Angebots mit Gewichtung für die Neobank-Homepage und -Bankseite](assets/offer_inbound_fallback_example_012.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![Registerkarte „Inhalt“ des personalisierten besten Angebots mit dem Titel Neobank-Bankkonto und einem Angebot für Neobank-Kunden](assets/offer_inbound_fallback_example_013.png)
 
@@ -409,7 +409,7 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
    ![Die Variable „interactionTarget“ wird im Seitenskript auf die E-Mail-Adresse der Person festgelegt, die sich anmeldet](assets/offer_inbound_fallback_example_043.png)
 
-   Die Identifizierung der Person kann anhand eines Browser-Cookies, eines Leseparameters in der URL, der E-Mail-Adresse oder der Kennung der Person erfolgen. Wenn ein Feld der Empfängertabelle verwendet wird, bei dem es sich nicht um den Primärschlüssel handelt, muss es in den erweiterten Parametern der Platzierung definiert werden (siehe [Definition der erweiterten Parameter der identifizierten Umgebung](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
+   Die Identifizierung der Person kann anhand eines Browser-Cookies, eines Leseparameters in der URL, der E-Mail-Adresse oder der Kennung der Person erfolgen. Wenn Sie ein anderes Feld der Empfängertabelle als den Primärschlüssel verwenden, definieren Sie es in den erweiterten Parametern der Platzierung. Weitere Informationen hierzu finden Sie unter [ der erweiterten Einstellungen der identifizierten Platzierungen](#specifying-the-advanced-settings-of-the-identified-offer-spaces).
 
 1. Fügen Sie die Abfrage-URL ein.
 
@@ -419,6 +419,6 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
 Wenn Sie die Web-Seite öffnen, können Sie mit dem Skript die Interaction-Engine aufrufen, um den Inhalt von Angeboten in den relevanten Bereichen der Web-Seite anzuzeigen. Mit nur einer Abfrage des Adobe Campaign-Servers erkennt das Modul die auszuwählende Umgebung, Platzierung und Angebotskategorie.
 
-In diesem Beispiel erkennt die Engine die identifizierte Umgebung (**EnvNeobankIdnRecip**). Sie identifiziert die Platzierung (**OSWebBestOfferIdentified**) und die **Premium**-Kategorie (**CatBestOffer**) für die erste und zweite Platzierung der Web-Seite sowie die Platzierung (**OSWebPartnerIdentified**) und die **Partner**-Kategorie (**CatPartner**) für die dritte Platzierung der Web-Seite.
+In diesem Beispiel erkennt die Engine die identifizierte Umgebung (**EnvNeobankIdnRecip**). Sie identifiziert die Platzierung (**OSWebBestOfferIdentified**) und die **Best**-Kategorie (**CatBestOffer**) für die erste und zweite Platzierung auf der Web-Seite. Für die dritte Platzierung werden die Platzierung (**OSWebPartnerIdentified**) und die Kategorie **Partner** (**CatPartner**) identifiziert.
 
 Wenn das Modul den Besucher nicht identifizieren kann, wechselt es zu den anonymen Platzierungen, die in den identifizierten Platzierungen referenziert wurden, und zu den anonymen Kategorien (**OC12** bzw. **OC13**), wie im Script angegeben.
