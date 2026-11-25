@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 80%
+source-wordcount: '348'
+ht-degree: 76%
 ---
 # [!DNL Campaign] FDA-Bereitstellung{#gs-fda}
 
@@ -69,6 +69,6 @@ Mit diesem Bereitstellungsmodell können Adobe Campaign-Benutzer ihre Daten nach
 
 Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem folgenden Schema:
 
-![](assets/fda-architecture.png)
+![FDA-Datenfluss: Campaign-Marketing-Server, Snowflake, PgSQL, Message Center und Mid-Sourcing-Server, nummerierte Schritte 1 bis 5](assets/fda-architecture.png)
 
 PostgreSQL ist die primäre Datenbank und Snowflake kann als sekundäre Datenbank verwendet werden. Sie können Ihr Datenmodell erweitern und Ihre Daten in Snowflake speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und hervorragende Performance erzielen.

@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Reporting
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 87%
+source-wordcount: '1093'
+ht-degree: 84%
 ---
 # [!DNL Campaign] FFDA-Bereitstellung {#gs-ac-ffda}
 
@@ -76,11 +76,11 @@ In einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deploymen
 
 Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank.
 
-Für die Verwaltung von Daten zwischen der lokalen und der Cloud-Datenbank stehen spezifische APIs zur Verfügung. Erfahren Sie auf [dieser Seite](new-apis.md), wie diese neuen APIs funktionieren und wie Sie sie verwenden können.
+Für die Verwaltung von Daten zwischen der lokalen und der Cloud-Datenbank stehen spezifische APIs zur Verfügung. Erfahren Sie, wie diese neuen APIs funktionieren und wie Sie sie in [neuen Campaign v8-APIs](new-apis.md) verwenden.
 
 Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem folgenden Schema:
 
-![](assets/architecture.png)
+![Marketing-Instanz mit Snowflake und PgSQL, Message Center- und Mid-Sourcing-Instanzen, Verbraucher, Tracking, Schritte 1 bis 4](assets/architecture.png)
 
 * Die Ausführungs- und Bounce-Management-Module sind in der Instanz deaktiviert.
 * Das Programm ist so konfiguriert, dass Nachrichten auf einem entfernten &quot;Mid-Sourced&quot;-Server ausgeführt werden, der über SOAP-Aufrufe (über HTTP oder HTTPS) gesteuert wird.

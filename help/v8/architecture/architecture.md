@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 71%
+source-wordcount: '1176'
+ht-degree: 63%
 ---
 # Erste Schritte mit der Campaign-Architektur{#gs-ac-archi}
 
@@ -62,7 +62,7 @@ Es sind zwei Bereitstellungsmodelle verfügbar: **Campaign FDA-Bereitstellung** 
 In der [FDA-Bereitstellung](fda-deployment.md) ist [!DNL Adobe Campaign] v8 zwecks Datenzugriff über die Federated Data Access-Funktion mit [!DNL Snowflake] verbunden: Sie können auf externe Daten und Informationen, die in Ihrer [!DNL Snowflake]-Datenbank gespeichert sind, zugreifen und diese verarbeiten, ohne die Datenstruktur in Adobe Campaign ändern zu müssen. PostgreSQL ist die primäre Datenbank, und Sie können Snowflake als sekundäre Datenbank verwenden, um Ihr Datenmodell zu erweitern und Ihre Daten in Snowflake zu speichern. Anschließend können Sie ETL, Segmentierung und Berichte für einen großen Datensatz ausführen und eine hervorragende Performance erzielen.
 
 
-![](assets/P1-P3-architecture.png){zoomable="yes"}
+![Campaign v8 FDA-Architektur: Anwendungs-Server, Postgres- und Snowflake-Datenbanken, Echtzeit- und Batch-Bereitstellungs-Server](assets/P1-P3-architecture.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Im Kontext einer [Enterprise (FFDA)-Bereitstellung](enterprise-deployment.md) ka
 
 Campaign v8 Enterprise bietet das Konzept des **Full Federated Data Access** (FFDA): Alle Daten befinden sich nun entfernt in der Cloud-Datenbank. Mit dieser neuen Architektur vereinfacht die Campaign v8 Enterprise (FFDA)-Bereitstellung die Datenverwaltung: Es wird kein Index in der Cloud-Datenbank benötigt. Sie müssen nur die Tabellen erstellen, die Daten kopieren und schon können Sie loslegen. Die Cloud-Datenbanktechnologie erfordert keine spezielle Wartung für eine garantierte Performance.
 
-![](assets/P4-architecture.png){zoomable="yes"}
+![Campaign v8 FFDA-Architektur: Anwendungsserver, Cloud-Datenbank mit Snowflake, Postgres-Replikation, Versand-Server](assets/P4-architecture.png){zoomable="yes"}
 
 
 ## Aufspaltung der Versandausführung {#split}
@@ -97,7 +97,7 @@ Dazu werden zusätzliche externe Konten mit dem **[!UICONTROL Aufspaltungs]**-Ro
 * Aufspaltung Versand – iOS (splitDeliveryIOS)
 * Aufspaltung Versand – Android (splitDeliveryAndroid)
 
-![](assets/splitted-delivery.png)
+![Aufspaltung des externen Kontos - E-Mail-Versand: Routing-Typ, E-Mail-Kanal, Mid-Sourcing-Versandmodus, Name splitDeliveryEmail](assets/splitted-delivery.png)
 
 >[!IMPORTANT]
 >
@@ -109,11 +109,11 @@ Um aufgespaltete externe Konten als Standardkonto für den Versand von Sendungen
 
 1. Navigieren Sie zum Ordner **[!UICONTROL Ressourcen]** / **[!UICONTROL Vorlagen]** / **[!UICONTROL Versandvorlagen]** und öffnen Sie die gewünschte Versandvorlage. In diesem Beispiel möchten wir die E-Mail-Versandvorlage bearbeiten.
 
-   ![](assets/split-default-list.png)
+   ![Liste der Versandvorlagen in Ressourcen, Vorlagen, bei ausgewählter E-Mail-Versandvorlage (E-Mail)](assets/split-default-list.png)
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]** und ändern Sie den Routing-Provider auf das entsprechende externe Aufspaltungs-Versand-Konto.
 
-   ![](assets/split-default-delivery.png)
+   ![Dialogfeld „Versandeigenschaften“ mit dem Routing-Feld und der externen Kontoliste, die SplitEmail anzeigt](assets/split-default-delivery.png)
 
 1. Speichern Sie Ihre Änderungen. Alle mit der Vorlage verschickten Sendungen verwenden nun standardmäßig den Aufspaltungs-Routing-Modus.
 
@@ -127,7 +127,7 @@ In addition, you can select split external accounts as the default routing provi
 
 Das Campaign-Modul &quot;Transaktionsnachricht (Message Center)&quot; wurde zum Verwalten von Trigger-Nachrichten entwickelt.
 
-In [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Transaktionsnachrichten senden können.
+Erfahren Sie, wie Sie Transaktionsnachrichten in [Campaign-Transaktionsnachrichten) ](../send/transactional.md).
 
 Als Reaktion auf eine Kundenaktion auf einer Website wird über eine REST-API ein Ereignis an Campaign gesendet. Die Nachrichtenvorlage wird mit den Informationen oder Daten gefüllt, die über den API-Aufruf bereitgestellt werden, und eine Transaktionsnachricht wird in Echtzeit an den Kunden gesendet. Diese Nachrichten können einzeln oder in Batches per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
@@ -135,7 +135,7 @@ In dieser spezifischen Architektur ist die Ausführungszelle von der Kontrollins
 
 * Die **Kontrollinstanz** (oder die Marketing-Instanz) wird von Marketing-Experten und IT-Teams zum Erstellen, Konfigurieren und Veröffentlichen von Nachrichtenvorlagen verwendet. Diese Instanz zentralisiert auch die Ereignisüberwachung und den Verlauf.
 
-  In [diesem Abschnitt](../send/transactional.md) erfahren Sie, wie Sie Nachrichtenvorlagen erstellen und veröffentlichen.
+  Erfahren Sie, wie Sie in Campaign [Transaktionsnachrichten“ Nachrichtenvorlagen erstellen und ](../send/transactional.md).
 
 * Die **Ausführungsinstanz** ruft eingehende Ereignisse (z. B. Passwortrücksetzung oder Bestellungen von einer Website) ab und versendet personalisierte Nachrichten. Es kann mehr als eine Ausführungsinstanz geben, um Nachrichten über den Load-Balancer zu verarbeiten und die Anzahl der zu verarbeitenden Ereignisse für maximale Verfügbarkeit zu skalieren.
 
@@ -143,7 +143,7 @@ In dieser spezifischen Architektur ist die Ausführungszelle von der Kontrollins
 >
 >Die Kontrollinstanz und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können nicht dieselbe Campaign-Instanz verwenden.
 
-![](assets/messagecenter_diagram.png)
+![Message Center: Website-Ereignisse erreichen die Kontrollinstanz P und die Ausführungsinstanzen E1 bis EN, die Nachrichten senden](assets/messagecenter_diagram.png)
 
 ### Authentifizierung
 
@@ -156,4 +156,4 @@ Dann kann die externe Anwendung mit dem von der Ausführungsinstanz als Antwort 
 * Mehrere Ausführungsinstanzen
 In einer mehrzelligen Ausführungsarchitektur mit mehreren Ausführungsinstanzen hinter einem Load-Balancer durchläuft die von der externen Anwendung aufgerufene Anmeldemethode den Load-Balancer: Aus diesem Grund kann keine Token-basierte Authentifizierung verwendet werden. Eine Benutzer-/Passwortbasierte Authentifizierung ist erforderlich.
 
-Erfahren Sie auf [dieser Seite](../send/event-processing.md) mehr über Ereignisse von Transaktionsnachrichten.
+Erfahren Sie mehr über Transaktionsnachrichtenereignisse in [Erfassen und Verarbeiten von Ereignissen](../send/event-processing.md).

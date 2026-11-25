@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 72%
+source-wordcount: '492'
+ht-degree: 63%
 ---
 # Spezifische FFDA-Kampagnen-APIs{#gs-new-api}
 
@@ -53,7 +53,7 @@ Die API **xtk.session.ingest** ist nur für die Dateneinfügung vorgesehen. Kein
 
 Verwenden Sie den folgenden Code in einer **JavaScript-Code**-Aktivität, um Daten ohne Abstimmung in die Cloud-Datenbank einzufügen:
 
-```
+```javascript
 var xmlStagingSampleTable = <sampleTableStg
                                 testcol1="testValue1"
                                 testcol2="testValue2"
@@ -70,7 +70,7 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befül
 1. Fordern Sie den Authentifizierungs-Token an.
 1. Lösen Sie die API aus. Die Payload ist:
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -90,7 +90,7 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befül
 
 1. Die UUID wird in der SOAP-Antwort zurückgesendet:
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default">
@@ -102,7 +102,7 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befül
 
 Daher wird die Staging-Tabelle erwartungsgemäß befüllt.
 
-![](assets/no-reconciliation.png)
+![Inhalt der Staging-Schema-Beispieltabelle (Staging) mit vier Datensätzen mit den Werten „Testspalte 1“ und „Testspalte 2“](assets/no-reconciliation.png)
 
 ### Einfügen mit Abstimmung
 
@@ -110,7 +110,7 @@ Daher wird die Staging-Tabelle erwartungsgemäß befüllt.
 
 Verwenden Sie den folgenden Code in einer **JavaScript-Code**-Aktivität, um Daten mit Abstimmung in die Cloud-Datenbank einzufügen:
 
-```
+```javascript
 var xmlStagingSampleTable = <sampleTableStg  _key="@id" id="ABC12345"
                               testcol1="testValue1"
                               testcol2="testValue2"
@@ -122,7 +122,7 @@ logInfo(strUuid);
 
 Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befüllt.
 
-![](assets/with-reconciliation.png)
+![Inhalt der Staging-Schema-Beispieltabelle (Staging) listet jetzt sechs Datensätze auf, einschließlich ABC12345 und ABDCD321](assets/with-reconciliation.png)
 
 
 **Von einem SOAP-Aufruf**
@@ -130,7 +130,7 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befül
 1. Fordern Sie den Authentifizierungs-Token an.
 1. Lösen Sie die API aus. Die Payload ist:
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -150,7 +150,7 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß befül
 
 1. In diesem Fall wird die UUID nicht an die Antwort zurückgegeben, da sie in der Payload bereitgestellt wurde. Die Antwort lautet:
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default">
@@ -172,7 +172,7 @@ Die **xtk.session.IngestExt**-API ist für die Aktualisierung/Löschung von Date
 
 Verwenden Sie den folgenden Code in einer **JavaScript-Code**-Aktivität, um Daten in der Cloud-Datenbank zu aktualisieren:
 
-```
+```javascript
 var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
                               testcol1="testValue A (updated)"
                               testcol2="testValue B (updated)"
@@ -183,14 +183,14 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß aktualisiert.
 
-![](assets/updated-data.png)
+![Staging-Tabelleninhalte, bei denen der Datensatz ABC12345 jetzt testValue A (aktualisiert) und testValue B (aktualisiert) anzeigt](assets/updated-data.png)
 
 **Von einem SOAP-Aufruf**
 
 1. Fordern Sie den Authentifizierungs-Token an.
 1. Lösen Sie die API aus. Die Payload ist:
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -210,7 +210,7 @@ Nach Ausführung des Workflows wird die Staging-Tabelle erwartungsgemäß aktual
 
 1. Die SOAP-Antwort lautet:
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestExtResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default"/>
@@ -222,7 +222,7 @@ Als Ergebnis wird die Staging-Tabelle erwartungsgemäß aktualisiert.
 
 ## Abonnementverwaltung {#sub-apis}
 
-Die Abonnementverwaltung in Campaign wird auf [dieser Seite](../start/subscriptions.md) beschrieben.
+Die Abonnementverwaltung in Campaign wird unter [Verwalten von Abonnements und Abmeldungen in Campaign](../start/subscriptions.md) beschrieben.
 
 Die Eingabe von An- und Abmeldedaten beruht auf dem [Staging-Mechanismus](staging.md) in der lokalen Campaign-Datenbank. Abonnenteninformationen werden vorübergehend in Staging-Tabellen in der lokalen Datenbank gespeichert, und der Synchronisations-Workflow sendet diese Daten von der lokalen Datenbank an die Cloud-Datenbank. Aus diesem Grund sind die An- und Abmeldevorgänge **asynchron**. Opt-in- und Opt-out-Anfragen werden stündlich über einen bestimmten technischen Workflow verarbeitet. [Weitere Informationen](replication.md#workflows)
 

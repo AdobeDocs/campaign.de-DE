@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 96%
+source-wordcount: '869'
+ht-degree: 94%
 ---
 # Datenreplikation {#wf-data-replication}
 
@@ -97,7 +97,7 @@ Zusätzlich zum integrierten technischen Workflow **Referenztabellen replizieren
   nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
   ```
 
-  ![](assets/jscode.png)
+  ![JavaScript-Code-Aktivität mit dem Skript nms.replicationStrategy.StartReplicateStagingData für dem:sampleTable](assets/jscode.png)
 
 * Fügen Sie eine bestimmte Aktivität vom Typ **nlmodule** mit dem folgenden Befehl hinzu:
 
@@ -105,7 +105,7 @@ Zusätzlich zum integrierten technischen Workflow **Referenztabellen replizieren
   nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
   ```
 
-  ![](assets/nlmodule.png)
+  ![nlserver-Modulaktivität mit dem Parameter ffdaReplicateStaging -stagingSchema -instance:acc1](assets/nlmodule.png)
 
 +++
 
