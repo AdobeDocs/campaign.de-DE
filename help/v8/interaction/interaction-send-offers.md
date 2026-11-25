@@ -59,7 +59,7 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in einen Versand einzufügen:
 
 1. Wählen Sie bei Bedarf die Option **[!UICONTROL Nicht infrage kommende Empfänger ausschließen]** aus. [Weitere Informationen](#parameters-for-calling-offer-engine)
 
-   ![Dialogfeld Angebotsverwaltung mit ausgewählter Option Nicht infrage kommende Empfänger ausschließen ](assets/offer_delivery_006.png)
+   ![Dialogfeld Angebotsverwaltung mit ausgewählter Option Nicht infrage kommende Empfänger ausschließen &#x200B;](assets/offer_delivery_006.png)
 
 1. Wählen Sie die Option **[!UICONTROL Leere Darstellung anzeigen, wenn kein Angebot ausgewählt wurde]** aus. [Weitere Informationen](#parameters-for-calling-offer-engine)
 

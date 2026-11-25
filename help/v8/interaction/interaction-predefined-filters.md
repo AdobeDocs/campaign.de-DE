@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor, um einen Filter zu erstellen:
 
 1. Markieren Sie im Ordner **[!UICONTROL Administration]** der jeweiligen Umgebung den Knoten **[!UICONTROL Vordefinierte Angebotsfilter]**.
 
-   ![Angebote - Design-Baumstruktur mit dem Knoten Vordefinierte Angebotsfilter unter „Administration“ ](assets/offer_filter_create_005.png)
+   ![Angebote - Design-Baumstruktur mit dem Knoten Vordefinierte Angebotsfilter unter „Administration“ &#x200B;](assets/offer_filter_create_005.png)
 
 1. Klicken Sie auf **[!UICONTROL Neu]**.
 

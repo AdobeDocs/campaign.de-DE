@@ -117,7 +117,7 @@ Zusätzliche Felder können hinzugefügt werden, z. B. ein Feld `@rank`:
 
 Da sich in der Vorschlagstabelle ein Feld namens `@rank` befindet, wird der Wert in der temporären Workflow-Tabelle kopiert.
 
-Weitere Informationen zum Speichern von zusätzlichen Feldern in der Vorschlagstabelle finden Sie unter [Speichern von Ranking und Gewichtung ](interaction-send-offers.md#storing-offer-rankings-and-weights).
+Weitere Informationen zum Speichern von zusätzlichen Feldern in der Vorschlagstabelle finden Sie unter [Speichern von Ranking und Gewichtung &#x200B;](interaction-send-offers.md#storing-offer-rankings-and-weights).
 
 Bei ausgehenden Angeboten mit Interaction ist dies nützlich, wenn mehrere Angebote ausgewählt sind und Sie ermitteln möchten, in welcher Reihenfolge sie in einer E-Mail angezeigt werden sollen.
 

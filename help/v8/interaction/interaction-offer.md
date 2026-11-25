@@ -158,7 +158,7 @@ Definieren Sie auf der Registerkarte **[!UICONTROL Inhalt]** den Angebotsinhalt.
       </div>
    ```
 
-   Erfahren Sie, wie Sie die Annahme-URL unter [Angebotsstatus bei Annahme des Vorschlags“ ](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
+   Erfahren Sie, wie Sie die Annahme-URL unter [Angebotsstatus bei Annahme des Vorschlags“ &#x200B;](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
 
    ![Registerkarte „Inhalt“ mit Titel, Ziel-URL und Bild-URL sowie dem Link für Inhaltsdefinitionen ausgefüllt.](assets/offer_content_create_002.png)
 
@@ -202,13 +202,13 @@ Creating hypotheses is detailed in [this page](../../automation/response/about-r
 
 Nun können Sie das Angebot genehmigen und aktivieren, um es in der **Live**-Umgebung bereitzustellen.
 
-Weitere Informationen hierzu finden Sie unter [ von Angebotsinhalten](approving-and-activating-an-offer.md#approving-offer-content).
+Weitere Informationen hierzu finden Sie unter [&#x200B; von Angebotsinhalten](approving-and-activating-an-offer.md#approving-offer-content).
 
 ## Angebotsunterbreitung verwalten{#offer-presentation}
 
 Campaign ermöglicht die Steuerung des Flusses der Angebotsvorschläge anhand von Unterbreitungsregeln. Diese Regeln, die speziell für Campaign Interaction gelten, heißen **Typologieregeln**. Sie ermöglichen den Ausschluss von Angeboten, die auf dem Verlauf der einem bestimmten Empfänger zuvor unterbreiteten Vorschläge basieren. Diese werden in der Umgebung referenziert.
 
-Weitere Informationen hierzu finden Sie unter [ der Angebotsunterbreitung ](managing-offer-presentation.md).
+Weitere Informationen hierzu finden Sie unter [&#x200B; der Angebotsunterbreitung &#x200B;](managing-offer-presentation.md).
 
 ## Angebotssimulation
 

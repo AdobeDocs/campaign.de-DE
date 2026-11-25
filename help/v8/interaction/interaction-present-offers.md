@@ -28,13 +28,13 @@ ht-degree: 51%
 ---
 # Unterbreiten des besten Angebots{#interaction-present-offers}
 
-Angebote können in verschiedenen Platzierungen über eingehende [ ausgehende Kanäle unterbreitet ](interaction-architecture.md#interaction-types). In diesem Kapitel werden einige spezifische Funktionen für eingehende Kanäle beschrieben.
+Angebote können in verschiedenen Platzierungen über eingehende [&#x200B; ausgehende Kanäle unterbreitet &#x200B;](interaction-architecture.md#interaction-types). In diesem Kapitel werden einige spezifische Funktionen für eingehende Kanäle beschrieben.
 
 ![Eingehender Fluss: Durchsuchen Sie eine Website, identifizieren Sie den Besucher durch Cookie oder Anmeldung. Das Angebotsmodul wählt das beste Angebot aus dem Katalog aus](assets/inbound-interactions.png)
 
 Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor genehmigt worden sein und in einer Live-Umgebung verfügbar sein.
 
-Weitere Informationen hierzu finden Sie unter [ von Angebotsinhalten](approving-and-activating-an-offer.md#approving-offer-content).
+Weitere Informationen hierzu finden Sie unter [&#x200B; von Angebotsinhalten](approving-and-activating-an-offer.md#approving-offer-content).
 
 Im Kontext eines eingehenden Kontakts kann der Benutzer, der die Seite durchsucht, von der Website identifiziert werden oder nicht. Das Angebotsmodul bietet für identifizierte Profile und für anonyme Profile verschiedene Angebote an.
 

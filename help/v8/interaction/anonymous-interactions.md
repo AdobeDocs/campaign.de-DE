@@ -59,7 +59,7 @@ In diesem Schritt werden die von den Cookies abgerufenen Daten mit denen in Ihre
 
 Kreuzen Sie in der Platzierung das Feld **[!UICONTROL Person implizit über den Navigationsverlauf identifizieren]** an, wenn Sie diese Möglichkeit nutzen wollen.
 
-![Platzierung mit der Option Person implizit über den Navigationsverlauf identifizieren ](assets/identification_anonymous_visitors.png)
+![Platzierung mit der Option Person implizit über den Navigationsverlauf identifizieren &#x200B;](assets/identification_anonymous_visitors.png)
 
 ## Umgang mit anonymen, nicht identifizierten Besuchern {#processing-unidentified-anonymous-visitors}
 
