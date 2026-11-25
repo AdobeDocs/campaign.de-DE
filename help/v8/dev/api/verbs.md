@@ -25,7 +25,7 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%
@@ -48,7 +48,7 @@ Folgende Verben stehen zur Ausführung von Operationen auf die Ressourcen zur Ve
 * Beispielhafte GET-Anfrage für die Profilsammlung.
 
 
-  ```
+  ```bash
   $curl  
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
   -H 'Content-Type: application/json' \
@@ -60,7 +60,7 @@ Folgende Verben stehen zur Ausführung von Operationen auf die Ressourcen zur Ve
   Es wird eine Tabelle mit Profilen zurückgegeben.
 
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -84,7 +84,7 @@ Folgende Verben stehen zur Ausführung von Operationen auf die Ressourcen zur Ve
 * Beispielhafte GET-Anfrage für ein bestimmtes Profil.
 
 
-  ```
+  ```bash
   $curl  
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
   -H 'Content-Type: application/json' \
@@ -96,7 +96,7 @@ Folgende Verben stehen zur Ausführung von Operationen auf die Ressourcen zur Ve
   Es wird das angeforderte Profil zurückgegeben.
 
 
-  ```
+  ```json
   {
       "PKey": "<PKEY>",
       "firstName": "John",
@@ -110,7 +110,7 @@ Folgende Verben stehen zur Ausführung von Operationen auf die Ressourcen zur Ve
 * Beispielhafte POST-Anfrage zum Erstellen eines Profils.
 
 
-  ```
+  ```bash
   -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -121,7 +121,7 @@ Folgende Verben stehen zur Ausführung von Operationen auf die Ressourcen zur Ve
 
   Es wird das Profil mit den Standardfeldern zurückgegeben.
 
-  ```
+  ```json
   {
       "PKey": "<PKEY>",
       "firstName": "John",
@@ -133,7 +133,7 @@ Folgende Verben stehen zur Ausführung von Operationen auf die Ressourcen zur Ve
 
 * Beispielhafte PATCH-Anfrage zum Aktualisieren eines Profils.
 
-  ```
+  ```bash
   -X PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -144,7 +144,7 @@ Folgende Verben stehen zur Ausführung von Operationen auf die Ressourcen zur Ve
 
   Es werden der PKEY und die URL zurückgegeben, um das aktualisierte Profil abzurufen.
 
-  ```
+  ```json
   {
       "PKey": "<PKEY>",
       "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>"
@@ -153,7 +153,7 @@ Folgende Verben stehen zur Ausführung von Operationen auf die Ressourcen zur Ve
 
 * Beispielhafte DELETE-Anfrage zum Löschen eines Profils.
 
-  ```
+  ```bash
   -X DELETE https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \

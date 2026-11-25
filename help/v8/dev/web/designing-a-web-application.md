@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 83%
 ---
 # Entwerfen eines Web-Programms{#designing-a-web-application}
 
@@ -47,21 +47,21 @@ Web-Anwendungen werden nach dem gleichen Prinzip wie [Web-Formulare](about-web-f
 
 Sie können Diagramme in Web-Anwendungen einbeziehen. Wählen Sie hierzu den einzufügenden Diagrammtyp aus der Dropdown-Liste der Diagramme in der Symbolleiste aus.
 
-![](assets/s_ncs_admin_webapps_bar_graph.png)
+![Dropdown-Liste des Seiteneditor-Symbolleistendiagramms mit Histogramm, Torte, Radar, Flächen, Kurven und Funnel.](assets/s_ncs_admin_webapps_bar_graph.png)
 
 Sie können auch das Menü **[!UICONTROL Grafik hinzufügen]** verwenden.
 
-![](assets/s_ncs_admin_webapps_graph.png)
+![Kontextmenü der Seite mit Untermenü „Diagramm hinzufügen“ mit Histogramm, Torte, Radar, Flächen, Kurven und Funnel.](assets/s_ncs_admin_webapps_graph.png)
 
 ## Tabellen in eine Web-Anwendung einfügen {#inserting-tables-in-a-web-application}
 
 Wenn Sie eine Tabelle hinzufügen möchten, verwenden Sie die Tabellen-Dropdown-Liste in der Symbolleiste und wählen Sie den Typ der einzufügenden Tabelle aus.
 
-![](assets/s_ncs_admin_webapps_bar_table.png)
+![Dropdown-Liste der Symbolleistentabellen im Seiteneditor mit Pivot-Tabelle, Liste mit Gruppe und Verteilung.](assets/s_ncs_admin_webapps_bar_table.png)
 
 Sie können den Tabellentyp auch im Dropdown-Menü auswählen.
 
-![](assets/s_ncs_admin_webapps_table.png)
+![Seiten-Kontextmenü mit Untermenü Tabelle hinzufügen, in dem Pivot-Tabelle, Liste mit Gruppe und Verteilung aufgelistet sind.](assets/s_ncs_admin_webapps_table.png)
 
 ## Web-Anwendungen vom Typ &quot;Übersicht&quot; {#overview-type-web-applications}
 

@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 93%
+source-wordcount: '809'
+ht-degree: 86%
 ---
 # Versandanalyse {#analyze-delivery}
 
@@ -41,11 +41,11 @@ Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die
 1. Klicken Sie im Versandfenster auf die Schaltfläche **[!UICONTROL Senden]**.
 1. Wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]** aus, um die Zielgruppe-Berechnung und Inhaltsvorbereitung für einen sofortigen Versand durchzuführen. Sie können den Versand auch auf einen späteren Zeitpunkt verschieben oder eine Schätzung der Population abrufen, ohne den Inhalt vorzubereiten.
 
-   ![](assets/delivery-analysis-start.png)
+   ![Senden an die Hauptzielgruppe des Versands, Auswahl von „Versand so bald wie möglich“ und Schaltfläche „Analysieren“](assets/delivery-analysis-start.png)
 
 1. Klicken Sie auf **[!UICONTROL Analysieren]**, um die Analyse manuell zu starten. Die Fortschrittsleiste zeigt den Fortschritt der Analyse an.
 
-   Bei der Versandanalyse wird ein Satz von Kontrollregeln angewendet. Diese Regeln werden in einer **Typologie** definiert, die auf der Registerkarte **[!UICONTROL Typologie]** in den Versandeigenschaften ausgewählt wird. Weitere Informationen zu Typologien finden Sie in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md).
+   Bei der Versandanalyse wird ein Satz von Kontrollregeln angewendet. Diese Regeln werden in einer **Typologie** definiert, die auf der Registerkarte **[!UICONTROL Typologie]** in den Versandeigenschaften ausgewählt wird. Weitere Informationen zu Typologien finden Sie unter [Erste Schritte mit Kampagnentypologien](../../automation/campaign-opt/campaign-typologies.md).
 
    Standardmäßig umfasst die Analyse für E-Mails die folgenden Punkte:
 
@@ -72,7 +72,7 @@ Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die
    * Ein gelbes Symbol steht für einen nicht kritischen Verarbeitungsfehler.
    * Ein rotes Symbol steht für einen kritischen Fehler, der die Durchführung des Versands verhindert.
 
-   ![](assets/delivery-analysis-results.png){width="800"}
+   ![Analyseergebnisse: Vorbereitung abgeschlossen, 22 zu sendende Nachrichten, Protokoll mit Warnung und die Schaltfläche Versand bestätigen](assets/delivery-analysis-results.png){width="800"}
 
 1. Klicken Sie auf **[!UICONTROL Schließen]**, um Fehler (falls vorhanden) zu korrigieren. Nachdem Sie die Änderungen vorgenommen haben, starten Sie die Analyse neu, indem Sie auf **[!UICONTROL Analysieren]** klicken.
 
@@ -88,7 +88,7 @@ Stellen Sie zur Vorbereitung des Versands sicher, dass der Versandinhalt und die
 
 Navigieren Sie zur Registerkarte **[!UICONTROL Analyse]** in den Versandeigenschaften, um die Einstellungen für die Nachrichtenvorbereitung während der Analysephase zu definieren.
 
-![](assets/delivery-properties-analysis-tab.png){width="800"}
+![Registerkarte „Analyse“ der Versandeigenschaften mit Beschriftungs- und Code-Optionen, Validierungsmodus auf „Manuell“ und FFDA-Einstellungen](assets/delivery-properties-analysis-tab.png){width="800"}
 
 Folgende Optionen stehen zur Verfügung:
 

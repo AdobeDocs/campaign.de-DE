@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 100%
+source-wordcount: '239'
+ht-degree: 60%
 ---
 # Echtzeitverlauf und -berichte zu Interaktionen
 
@@ -44,15 +44,15 @@ Nach der Unterbreitung von Angeboten haben Sie die Möglichkeit, den Verlauf der
 
 * Ausgehend vom Angebot: Klicken Sie im Tab **[!UICONTROL Bearbeiten]** des Angebots auf **[!UICONTROL Vorschläge]**.
 
-  ![](assets/offer_followup_006.png)
+  ![Registerkarte „Vorschläge“ eines Angebots mit Vorschlägen, die für das Angebot mit Ereignisdatum, Platzierung und Status gemacht wurden](assets/offer_followup_006.png)
 
 * Ausgehend vom Empfänger: Klicken Sie auf den Tab **[!UICONTROL Vorschläge]**.
 
-  ![](assets/offer_followup_002.png)
+  ![Registerkarte „Vorschläge“ eines Empfängerprofils mit Angeboten zu Ereignisdatum, Status, Platzierung und Versand](assets/offer_followup_002.png)
 
 * Ausgehend von einer Platzierung: Klicken Sie auf den Tab **[!UICONTROL Vorschläge]**.
 
-  ![](assets/offer_space_prop_001_b.png)
+  ![Registerkarte „Vorschläge“ einer Platzierung, auf der Vorschläge mit Ranking, Gewichtung und Status aufgelistet sind](assets/offer_space_prop_001_b.png)
 
 ## Angebotsanalyse-Bericht{#offer-analysis-report}
 
@@ -62,14 +62,14 @@ Die Statistiken gliedern sich nach drei Merkmalen:
 
 * Nach Datum:
 
-  ![](assets/offer_report_perdate.png)
+  ![Bericht Angebotsanalyse, Statistiken nach Datum mit Vorschlagsanzahl, akzeptierten und abgelehnten Tarifen und Diagramm](assets/offer_report_perdate.png)
 
 * Nach Platzierung:
 
-  ![](assets/offer_report_perspaces.png)
+  ![Bericht zur Angebotsanalyse, Statistiken pro Platzierung mit akzeptierten und abgelehnten Tarifen nach Kanal und Balkendiagramm](assets/offer_report_perspaces.png)
 
 * Nach Sendungen:
 
-  ![](assets/offer_report_perdeliveries.png)
+  ![Bericht zur Angebotsanalyse, Versandstatistiken mit Vorschlägen, Anzahl der akzeptierten und abgelehnten Angebote](assets/offer_report_perdeliveries.png)
 
 Im Berichtskopf können Sie die angezeigten Daten mithilfe bestimmter Kriterien einschränken. Wählen Sie z. B. einen Zeitraum aus und klicken Sie abschließend auf **[!UICONTROL Aktualisieren]**, um die Filter auf den Bericht anzuwenden.

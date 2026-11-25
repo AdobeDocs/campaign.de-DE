@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 100%
+source-wordcount: '1407'
+ht-degree: 76%
 ---
 # Statische Elemente in einem Webformular{#static-elements-in-a-web-form}
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 Sie können Elemente, mit denen der Benutzer keine Interaktion hat, in die Seiten des Formulars einfügen; dies sind statische Elemente wie Bilder, HTML-Inhalte, eine horizontale Leiste oder ein Hypertext-Link. Diese Elemente werden über die erste Schaltfläche in der Symbolleiste erstellt, indem Sie **[!UICONTROL Statische Elemente]** auswählen.
 
-![](assets/s_ncs_admin_survey_add_static_element.png)
+![Seitensymbolleiste für statische Elemente: Wert, Link, HTML, Bild, Horizontalleiste, Tracking-Tag und Script](assets/s_ncs_admin_survey_add_static_element.png)
 
 Folgende Feldtypen sind verfügbar:
 
@@ -58,11 +58,11 @@ Mit dem HTML-Editor können Sie den Inhalt eingeben, der in die Formularseite ei
 
 Sie können Inhalte direkt eingeben und formatieren oder das Fenster mit dem Quell-Code öffnen, um externen Code einzufügen. Um in den Modus „Quell-Code“ zu wechseln, klicken Sie auf das erste Symbol in der Symbolleiste:
 
-![](assets/s_ncs_admin_survey_html_editor.png)
+![HTML-Editor einer Seite, wobei die Schaltfläche „Quellcode anzeigen“ hervorgehoben und die HTML-Quelle angezeigt wird](assets/s_ncs_admin_survey_html_editor.png)
 
 Um ein Datenbankfeld einzufügen, verwenden Sie die Personalisierungs-Schaltfläche.
 
-![](assets/webapp_perso_button_in_html.png)
+![Personalisierungsmenü des HTML-Editors, das Empfängerfelder wie Vorname, Nachname und Primärer Schlüssel anbietet](assets/webapp_perso_button_in_html.png)
 
 >[!NOTE]
 >
@@ -74,14 +74,14 @@ Füllen Sie im Bearbeitungsfenster die Felder wie im folgenden Beispiel gezeigt 
 
 Um einen Hypertext-Link hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Elemente]** > **[!UICONTROL Link]**.
 
-![](assets/s_ncs_admin_survey_add_link.png)
+![Link-Eigenschaften: Titel, Aktion auf URL gesetzt, Mailto-URL, Fenster, QuickInfo und Anzeigeeinstellungen](assets/s_ncs_admin_survey_add_link.png)
 
 * Im **[!UICONTROL Titel]** wird der Inhalt des Hypertext-Links so dargestellt, wie er auf der Formularseite erscheinen wird.
 * Die **[!UICONTROL URL]** ist die gewünschte Adresse, z. B.: [https://www.adobe.com/de](https://www.adobe.com/de) für eine Website oder [info@adobe.com](mailto:info@adobe.com), um eine Nachricht zu senden.
 * Im Feld **[!UICONTROL Fenster]** können Sie im Fall einer Website einen Anzeigemodus für den Link auswählen. Sie können den Link in einem neuen Fenster, dem aktuellen Fenster oder einem anderen Fenster öffnen.
 * Sie können eine QuickInfo wie unten gezeigt hinzufügen:
 
-  ![](assets/s_ncs_admin_survey_send_an_email.png)
+  ![Gesendet Senden Sie einen Nachrichten-Link mit der QuickInfo Hier klicken, um uns eine E-Mail zu senden](assets/s_ncs_admin_survey_send_an_email.png)
 
 * Der Link kann als Schaltfläche oder Bild dargestellt werden. Wählen Sie dazu im Feld **[!UICONTROL Typ]** den Typ der Anzeige aus.
 
@@ -89,7 +89,7 @@ Um einen Hypertext-Link hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Elem
 
 Standardmäßig sind Links mit einer Aktion vom Typ &quot;URL&quot; verknüpft, sodass eine URL-Zieladresse im URL-Feld eingegeben werden kann.
 
-![](assets/s_ncs_admin_survey_link_url.png)
+![Verknüpfen Sie Eigenschaften mit einer mailto-URL, dem Fensterfeld zum Erstellen eines neuen Fensters und einer QuickInfo](assets/s_ncs_admin_survey_link_url.png)
 
 Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer durch Anklicken des Links folgende Aktionen ausführen kann:
 
@@ -97,33 +97,33 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
   Wählen Sie dazu im Dropdown-Fenster des Felds **[!UICONTROL Aktion]** die Option **[!UICONTROL Seite aktualisieren]** aus.
 
-  ![](assets/s_ncs_admin_survey_link_refresh.png)
+  ![Dropdown-Liste „Aktion“ mit den Optionen „Keine“, „URL“, „Ansicht“, „Seite aktualisieren“, „Nächste Seite“ und „Transition aktivieren“, mit ausgewählter Option „Seite aktualisieren“](assets/s_ncs_admin_survey_link_refresh.png)
 
 * Die nächste/vorherige Seite anzeigen
 
   Wählen Sie dazu im Dropdown-Fenster des Felds **[!UICONTROL Aktion]** die Option **[!UICONTROL Nächste Seite]** oder **[!UICONTROL Vorherige Seite]** aus.
 
-  ![](assets/s_ncs_admin_survey_link_next.png)
+  ![Dropdown-Liste „Aktion verknüpfen“ mit der Option „Nächste Seite“ für einen Link mit der Bezeichnung „Nächste Seite“](assets/s_ncs_admin_survey_link_next.png)
 
   Sie können die Schaltflächen **[!UICONTROL Weiter]** und/oder **[!UICONTROL Zurück]** verbergen, wenn diese durch einen Link ersetzt werden sollen. Mehr dazu erfahren Sie auf [dieser Seite](defining-web-forms-page-sequencing.md).
 
   Der Link ersetzt die standardmäßig verwendete Schaltfläche **[!UICONTROL Weiter]**.
 
-  ![](assets/s_ncs_admin_survey_link_next_ex.png)
+  ![Formularseite mit den Feldern Vorname, Nachname und Kennwort und einem Link Weiter mit einer Validierungs-QuickInfo](assets/s_ncs_admin_survey_link_next_ex.png)
 
 * Eine weitere Seite anzeigen
 
   Mit der Option **[!UICONTROL Transition aktivieren]** können Sie eine bestimmte Seite anzeigen, die mit der im Feld **[!UICONTROL Transition]** ausgewählten ausgehenden Transition verknüpft ist.
 
-  ![](assets/s_ncs_admin_survey_link_viral.png)
+  ![Link mit der Aktion festgelegt, um eine Transition zu aktivieren, und der Transition-Liste, die als Nächstes anbietet und an einen Freund gesendet wird](assets/s_ncs_admin_survey_link_viral.png)
 
   Standardmäßig hat eine Seite nur eine ausgehende Transition. Um neue Transitionen zu erstellen, wählen Sie wie unten gezeigt die Seite und klicken Sie danach im Bereich **[!UICONTROL Ausgehende Transitionen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**:
 
-  ![](assets/s_ncs_admin_survey_add_transition.png)
+  ![Eigenschaften der Begrüßungsseite mit aktivierten ausgehenden Transitionen, Liste der nächsten und viralen Transitionen (an einen Freund gesendet) und Schaltfläche „Hinzufügen“](assets/s_ncs_admin_survey_add_transition.png)
 
   Im Diagramm sieht dies so aus:
 
-  ![](assets/s_ncs_admin_survey_add_transition_graph.png)
+  ![Web-Formular-Fluss, bei dem Ihre Verträge zu Ihrem Konto führen, oder über an einen Freund zum Sponsor gesendet, dann Speicherung und Ende](assets/s_ncs_admin_survey_add_transition_graph.png)
 
   >[!NOTE]
   >
@@ -133,7 +133,7 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
 Sie können den HTML-Inhalt einer Formularseite mit Daten personalisieren, die auf einer vorherigen Seite aufgezeichnet wurden. So können Sie beispielsweise ein Web-Formular für eine Kfz-Versicherung erstellen, auf dessen erster Seite Sie die Möglichkeit haben, Kontaktinformationen und die Automarke einzugeben.
 
-![](assets/s_ncs_admin_survey_tag_ctx_1.png)
+![Formular Seite 1 von 2, auf der nach Titel, Name, E-Mail, Kennung und Automarke gefragt wird, mit einer Schaltfläche Weiter](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
 Mit Personalisierungsfeldern können Sie den Benutzernamen und die ausgewählte Marke nochmals auf der nächsten Seite einfügen. Die zu verwendende Syntax hängt vom Informationsspeichermodus ab. Weitere Informationen hierzu finden Sie unter [Erfasste Informationen verwenden](web-forms-answers.md#using-collected-information).
 
@@ -143,16 +143,16 @@ Mit Personalisierungsfeldern können Sie den Benutzernamen und die ausgewählte 
 
 In unserem Beispiel werden der Vor- und Nachname der empfangenden Person in einem Feld der Datenbank gespeichert, während das Automodell in einer Variablen gespeichert wird. Die Syntax der auf Seite 2 personalisierten Nachricht sieht wie folgt aus:
 
-![](assets/webapp_perso_vars_include.png)
+![Personalisierte Nachricht HTML mit Vorname, Nachname und einer Automarken-Variablen des Empfängers, eingefügt mithilfe der Tag-Syntax](assets/webapp_perso_vars_include.png)
 
-```
+```xml
 <P>Welcome <%= ctx.recipient.@firstName %> <%= ctx.recipient.@lastName %>,</P>
 <P>To start your customized study, please select your car <%=ctx.vars.marque%> and its year of purchase.</P>
 ```
 
 Das Ergebnis sieht folgendermaßen aus:
 
-![](assets/s_ncs_admin_survey_tag_ctx_2.png)
+![Formular Seite 2 von 2 Begrüßung des Empfängers nach Name und Marke, mit Wählen Sie Ihr Modell und Jahr Ihres Autos Listen](assets/s_ncs_admin_survey_tag_ctx_2.png)
 
 ### Textvariablen verwenden {#using-text-variables}
 
@@ -167,19 +167,19 @@ Sie können beispielsweise das Feld **Kontakt** erstellen. Damit haben Sie die M
 1. Geben Sie in der Spalte **[!UICONTROL Kennung]** den Namen der Variablen ein.
 1. Geben Sie in der Spalte **[!UICONTROL Text]** den Standardwert ein.
 
-   ![](assets/s_ncs_admin_survey_html_text.png)
+   ![Registerkarte mit den HTML-Elementtexten, auf der die Kennungen „Country“ und „DateFormat“ mit ihren Textwerten aufgeführt sind](assets/s_ncs_admin_survey_html_text.png)
 
 1. Geben Sie im HTML-Inhalt diese Textvariable mithilfe der Syntax **&lt;%= $(Contact) %>** ein.
 
-   ![](assets/s_ncs_admin_survey_html_content.png)
+   ![HTML-Inhaltseditor, bei dem die Kontakttextkennung neben dem Feld „Datum der letzten Änderung“ eingefügt wurde](assets/s_ncs_admin_survey_html_content.png)
 
    >[!CAUTION]
    >
-   >Wenn Sie diese Zeichen in den HTML-Editor eingeben, werden die Felder **&lt;** und **** durch deren Maskierungszeichen ersetzt. In diesem Fall müssen Sie den Quellcode korrigieren, indem Sie auf das Symbol **[!UICONTROL Quellcode anzeigen]** des HTML-Texteditors klicken.
+   >Wenn Sie diese Zeichen in den HTML-Editor eingeben, werden die Felder **&lt;** und **&#x200B;**&#x200B;durch deren Maskierungszeichen ersetzt. In diesem Fall müssen Sie den Quellcode korrigieren, indem Sie auf das Symbol **[!UICONTROL Quellcode anzeigen]** des HTML-Texteditors klicken.
 
 1. Öffnen Sie den Titel **[!UICONTROL Vorschau]** des Formulars, um den in HTML eingegebenen Wert anzuzeigen:
 
-   ![](assets/s_ncs_admin_survey_html_content_preview.png)
+   ![Formularseite 2 von 2, auf der das Datum des letzten Kontakts mit der übersetzten Textkennung angezeigt wird](assets/s_ncs_admin_survey_html_content_preview.png)
 
 Mit diesem Verfahren können Sie den Text von Web-Formularen nur einmal festlegen und Übersetzungen mit dem integrierten Übersetzungs-Tool verwalten. Weitere Informationen finden Sie unter [Web-Formular übersetzen](translating-a-web-form.md).
 
@@ -191,7 +191,7 @@ Wählen Sie das Menü **[!UICONTROL Statische Elemente]** > **[!UICONTROL Bild]*
 
 Wählen Sie die Quelle des Bildes aus, das eingefügt werden soll: Es kann in einer öffentlichen Ressourcen-Bibliothek oder auf einem externen, von außen zugreifbaren Server gespeichert sein.
 
-![](assets/s_ncs_admin_survey_add_img.png)
+![Bildelementeigenschaften für ein Logo, wobei die Bildquellenliste eine Bibliothek und externe Elemente anbietet](assets/s_ncs_admin_survey_add_img.png)
 
 Wenn das Bild aus einer Bibliothek stammt, wählen Sie es in der Dropdown-Liste des Felds aus. Wenn es in einer externen Datei gespeichert ist, geben Sie den Zugriffspfad ein. Der Titel wird angezeigt, wenn Sie den Cursor über das Bild bewegen (entspricht einem ALT-Feld in HTML) oder wenn das Bild nicht dargestellt wird.
 

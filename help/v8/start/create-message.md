@@ -35,22 +35,22 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 92%
+source-wordcount: '1798'
+ht-degree: 81%
 ---
 # Erstellen Ihres ersten Versands {#create-a-msg}
 
-Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. Sie können für Ihre Anwendungsfälle weitere Versandtypen erstellen. Weitere Informationen zu den verschiedenen Versandtypen und deren Erstellung finden Sie auf [dieser Seite](gs-message.md).
+Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. Sie können für Ihre Anwendungsfälle weitere Versandtypen erstellen. Erfahren Sie mehr über die verschiedenen Versandtypen und deren Erstellung in [Erste Schritte mit Nachrichten](gs-message.md).
 
 Dies sind die wichtigsten Schritte beim Erstellen eines einmaligen Versands:
 
-1. **Einen neuen Versand erstellen**. [Weitere Informationen](#create-the-delivery)
+1. **Einen neuen Versand erstellen**. [Erstellen eines Versands](#create-the-delivery)
 
-1. **Versandinhalt festlegen**. [Weitere Informationen](#content-of-the-delivery)
+1. **Versandinhalt festlegen**. [Definieren des Versandinhalts](#content-of-the-delivery)
 
-1. **Zielpopulation bestimmen**. [Weitere Informationen](#target-population)
+1. **Zielpopulation bestimmen**. [Definieren Sie die Zielgruppe](#target-population)
 
 Anschließend können Sie Ihre Nachrichten mit Adobe Campaign vorbereiten, testen, senden und überwachen.
 
@@ -65,7 +65,7 @@ Gehen Sie wie folgt vor, um einen Versand zu erstellen:
 1. Navigieren Sie zur Versandliste und klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie den Versandkanal aus. Wählen Sie dazu die entsprechende Versandvorlage aus der Dropdown-Liste aus.
 
-   ![](../send/assets/select-the-new-template.png)
+   ![Dropdown-Liste „Versandvorlage“ mit E-Mail, SMS, Tweet und anderen Versandvorlagen zur Auswahl](../send/assets/select-the-new-template.png)
 
    Für jeden Kanal, den Sie installiert haben, wird eine integrierte Vorlage bereitgestellt: E-Mail, Telefon, mobile Kanäle (Push/SMS), Briefpost, X (Twitter) usw. Die in der Liste verfügbaren Kanäle hängen von Ihrer Lizenzvereinbarung ab.
 
@@ -110,32 +110,32 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 1. Wählen Sie im Versand-Editor **[!UICONTROL An]** aus.
 1. Wählen Sie die erste Option, wenn Ihre Empfänger in der Datenbank gespeichert sind.
 
-   ![](../send/sms/assets/audience_to.png){zoomable="yes"}
+   ![Das Dialogfeld „Ziel auswählen“ mit der ausgewählten Option „An“ und „In der Datenbank definiert“](../send/sms/assets/audience_to.png){zoomable="yes"}
 
 1. Wählen Sie das [Zielgruppen-Mapping](../audiences/target-mappings.md) in der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus.
 1. Wählen Sie zur Konfiguration von Einschränkungsfiltern die Schaltfläche **[!UICONTROL Hinzufügen]** aus.
 
-   ![](assets/target-type.png){width="60%" zoomable="yes"}
+   ![Dialogfeld „Zieltyp“ mit Einschränkungsfiltern wie in einem Ordner enthaltene Empfänger](assets/target-type.png){width="60%" zoomable="yes"}
 
    Wählen Sie einen Filtertyp aus und klicken Sie auf **[!UICONTROL Weiter]**, um die Bedingungen zu definieren. Sie können die gefilterten Empfängerinnen und Empfänger über die Registerkarte **[!UICONTROL Vorschau]** anzeigen. Bei gewissen Zieltypen ermöglicht die Schaltfläche **[!UICONTROL Zielgruppe einschränken]** die Kombination verschiedener Zielgruppenbestimmungskriterien.
 
    Folgende Zieltypen stehen zur Verfügung:
 
-   * **[!UICONTROL Filterbedingungen]**: Verwenden Sie diese Option, um eine benutzerdefinierte Abfrage zum Abrufen der Empfänger zu definieren. Informationen zum Erstellen einer Abfrage finden Sie in [diesem Abschnitt](../start/query-editor.md).
-   * **[!UICONTROL Empfängerliste]**: Verwenden Sie diese Option, um eine Profilliste auszuwählen. Weitere Informationen zu Listen finden Sie in [diesem Abschnitt](../audiences/create-audiences.md).
+   * **[!UICONTROL Filterbedingungen]**: Verwenden Sie diese Option, um eine benutzerdefinierte Abfrage zum Abrufen der Empfänger zu definieren. Erfahren Sie, wie Sie eine Abfrage in [Arbeiten mit dem Abfrage-Editor](../start/query-editor.md) erstellen.
+   * **[!UICONTROL Empfängerliste]**: Verwenden Sie diese Option, um eine Profilliste auszuwählen. Weitere Informationen zu Listen finden Sie unter [Erstellen von Profil-Audiences in Campaign](../audiences/create-audiences.md).
    * **[!UICONTROL Empfänger]**: Verwenden Sie diese Option, um ein bestimmtes Profil in der Datenbank auszuwählen.
    * **[!UICONTROL Empfänger aus einem Ordner]**: Verwenden Sie diese Option, um alle Profile in einem bestimmten Ordner auszuwählen.
    * **[!UICONTROL Versandempfänger]**: Verwenden Sie diese Option, um die Zielgruppe anhand der Empfängerinnen und Empfängern eines Versands zu erstellen. Sie müssen dann den Versand in der Liste auswählen:
 
-     ![](assets/target-recipient-delivery.png)
+     ![Dialogfeld Zielgruppenelement zur Auswahl eines Versands, auf dessen Empfänger die Zielgruppe ausgerichtet ist, mit einem Filter Verhalten](assets/target-recipient-delivery.png)
 
    * **[!UICONTROL Versandempfänger, die einem Ordner angehören]**: Verwenden Sie diese Option, um die Zielgruppe aus den Empfängern der in einem bestimmten Ordner enthaltenen Sendungen zu erstellen.
 
-     ![](assets/target-delivery-folder.png)
+     ![Dialogfeld „Zielelement“ für die Auswahl eines Versandordners mit den Optionen Verhalten und Unterordner einschließen](assets/target-delivery-folder.png)
 
      Sie können außerdem die Liste der Empfänger nach deren Verhalten beim Empfang früherer E-Mails einschränken:
 
-     ![](assets/target-filter-behavior.png)
+     ![Verhalten: Dropdown-Liste mit Empfängerfiltern wie „Geöffnet“ oder „Angeklickt“, „Nicht geöffnet“ und „Fehlgeschlagen“](assets/target-filter-behavior.png)
 
      >[!NOTE]
      >
@@ -143,9 +143,9 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    * **[!UICONTROL Abonnenten eines Informationsdienstes]**: Angabe des Newsletters, den die Empfänger abonniert haben müssen, um in die Zielgruppe des Versands aufgenommen zu werden.
 
-     ![](assets/target-service.png)
+     ![Dialogfeld „Target-Element“, in dem Informationen zu Services wie Newsletter für Abonnenten aufgelistet werden](assets/target-service.png)
 
-   * **[!UICONTROL Benutzerfilter]**: Mit dieser Option können Sie auf vorkonfigurierte Filter zugreifen, um sie als Filterkriterien für Profile in der Datenbank zu verwenden. Weiterführende Informationen zu Benutzerfiltern finden Sie in [diesem Abschnitt](../audiences/create-filters.md#default-filters).
+   * **[!UICONTROL Benutzerfilter]**: Mit dieser Option können Sie auf vorkonfigurierte Filter zugreifen, um sie als Filterkriterien für Profile in der Datenbank zu verwenden. Vorkonfigurierte Filter werden unter [Standardfilter“ &#x200B;](../audiences/create-filters.md#default-filters).
    * Mit **[!UICONTROL Option Empfänger von diesem Segment]** können Sie Empfänger auswählen, die die definierten Zielgruppenkriterien nicht erfüllen. Um diese Option zu verwenden, aktivieren Sie das entsprechende Kontrollkästchen und wenden Sie dann die Zielgruppenbestimmung an (wie zuvor definiert), um die resultierenden Profile auszuschließen.
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für diese Zielgruppenbestimmung ein. Der Titel entspricht standardmäßig dem Titel der ersten Zielgruppenbestimmung. Bei der Kombination von Filterkriterien wird empfohlen, einen expliziten Namen zu verwenden.
@@ -153,7 +153,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    Die definierten Zielgruppenbestimmungskriterien werden im zentralen Abschnitt der Hauptregisterkarte der Zielkonfiguration zusammengefasst. Klicken Sie auf ein Kriterium, um seinen Inhalt anzuzeigen (Konfiguration und Vorschau). Um ein Kriterium zu löschen, klicken Sie auf das Kreuz hinter seinem Titel.
 
-   ![](assets/target-remove-criterion.png)
+   ![Registerkarte Hauptzielgruppe mit dem Kreuz Löschen nach einem Zielgruppenkriterium in der Zielpopulation](assets/target-remove-criterion.png)
 
 ### Auswahl externer Empfänger {#selecting-external-recipients}
 
@@ -184,13 +184,13 @@ Sie können Adressen, für die die maximal zulässige Anzahl von aufeinanderfolg
 
 Um die Standardkonfiguration zu ändern, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]**.
 
-![](assets/target-exclusion-settings.png)
+![Optionen für Ausschlusseinstellungen, einschließlich des Ausschließens von auf die Blockierungsliste gesetzt und in Quarantäne befindlichen Empfängern und des Beibehaltens von Duplikaten](assets/target-exclusion-settings.png)
 
 +++ Siehe die verfügbaren Optionen
 
 * **[!UICONTROL Doppelte Adressen vom Versand ausschließen]**: Diese Option ist standardmäßig aktiviert und entfernt doppelte E-Mail-Adressen während des Versands. Die Vorgehensweise hängt dabei von der Art der Verwendung der Adobe Campaign-Software und den in der Datenbank enthaltenen Daten ab. Der Wert dieser Option kann für jede Versandvorlage konfiguriert werden.
 * **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d. h. Empfänger, deren E-Mail-Adressen sich auf einer Blockierungsliste (&quot;Opt-out&quot;) befinden. Diese Option muss ausgewählt bleiben, um die Berufsethik des E-Marketings einzuhalten.
-* **[!UICONTROL Adressen in Quarantäne ausschließen]**: Mit dieser Option können Sie alle Adressen von Profilen aus der Zielgruppe ausschließen, die sich in Quarantäne befinden. Es wird dringend empfohlen, diese Option aktiviert zu lassen. Weitere Informationen zur Quarantäneverwaltung finden Sie in [diesem Abschnitt](../send/quarantines.md).
+* **[!UICONTROL Adressen in Quarantäne ausschließen]**: Mit dieser Option können Sie alle Adressen von Profilen aus der Zielgruppe ausschließen, die sich in Quarantäne befinden. Es wird dringend empfohlen, diese Option aktiviert zu lassen. Weitere Informationen zur Quarantäneverwaltung finden Sie unter [Quarantäneverwaltung in Campaign](../send/quarantines.md).
 * **[!UICONTROL Begrenzen Sie den Versand]** auf eine bestimmte Anzahl an Nachrichten. Bei dieser Option können Sie die maximale Anzahl der zu versendenden Nachrichten eingeben. Wenn der Inhalt der Zielgruppe die angegebene Anzahl von Nachrichten überschreitet, wird eine Zufallsauswahl auf die Zielgruppe angewendet. Behalten Sie den Wert „0“ bei, um alle Nachrichten zu senden.
 * **[!UICONTROL In der Zielgruppe doppelt enthaltene Einträge (identische Kennung) beibehalten]**: Mit dieser Option können mehrere Sendungen an Empfangende gesendet werden, die verschiedene Zielgruppenbestimmungskriterien erfüllen.
 +++
@@ -202,7 +202,7 @@ Bei E-Mail-Sendungen können Sie Testsendungen durchführen, um Ihren Nachrichte
 
 Ein Testversand dient der Validierung einer Nachricht, bevor sie an die Haupt-Zielgruppe gesendet wird. Die Empfängerinnen und Empfänger des Testversands sind für die Validierung der Nachricht verantwortlich: Rendering, Inhalt, Personalisierungseinstellungen, Konfiguration.
 
-Weiterführende Informationen zu Testversand-Empfangenden und zum Testversand finden Sie in [diesem Abschnitt](../send/preview-and-proof.md#send-proofs).
+Weitere Informationen zu Testversand-Empfängern und zum Versand finden Sie unter [Testsendungen durchführen](../send/preview-and-proof.md#send-proofs).
 
 
 #### Anleitungsvideo {#seeds-and-proofs-video}
@@ -232,4 +232,4 @@ Gehen Sie dazu wie folgt vor:
 
 Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können die Versandpriorität definieren, Versandschübe einrichten, die Einstellungen für weitere Zustellversuche konfigurieren und Ihren Versand testen. Nachdem diese Konfiguration abgeschlossen ist, können Sie das Senden bestätigen. Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten Zeitplan gesendet.
 
-Auf [dieser Seite](../send/configure-and-send.md) erfahren Sie, wie Sie die Versandeinstellungen konfigurieren.
+Erfahren Sie in [Konfigurieren von E-Mails mit Adobe Campaign](../send/configure-and-send.md), wie Sie Ihre Versandeinstellungen konfigurieren.

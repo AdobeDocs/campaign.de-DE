@@ -38,14 +38,14 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3613'
-ht-degree: 32%
+source-wordcount: '3637'
+ht-degree: 31%
 ---
 # Versionshinweise 2025 {#2025-rn}
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen 2025** aufgelistet. Die neueste Version finden Sie auf [dieser Seite](release-notes.md).
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **Campaign v8-Versionen 2025** aufgelistet. Die neueste Version finden Sie in den [&#x200B; zu Campaign v8 &#x200B;](release-notes.md).
 
 Installieren Sie für jede neue Implementierung oder jedes Upgrade auf eine vorhandene Umgebung [die neueste Version](release-notes.md).
 
@@ -112,7 +112,7 @@ _Donnerstag, 9. Juli 2025_
 
 Die zuvor für einige wenige Kunden veröffentlichte Funktion ist jetzt für alle Campaign FDA-Umgebungen verfügbar:
 
-* **Neuer SMS-Versand-Connector** - Der SMS-Versand-Connector wurde modernisiert und verbessert, um SMPP-Verbindungen im Transceiver-Modus zu ermöglichen, persistente SMPP-Verbindungen zu aktivieren und eine bessere Kompatibilität sicherzustellen. Für alle neuen SMS-Implementierungen ist jetzt ein neues externes SMS-Konto verfügbar. Bestehende Implementierungen werden weiterhin unterstützt, es wird jedoch empfohlen, zu diesem neuen, modernen und erweiterten Connector zu wechseln. Wenden Sie sich an Adobe, wenn Sie zum neuen Connector wechseln möchten. [Weitere Informationen](../send/sms/sms.md)
+* **Neuer SMS-Versand-Connector** - Der SMS-Versand-Connector wurde modernisiert und verbessert, um SMPP-Verbindungen im Transceiver-Modus zu ermöglichen, persistente SMPP-Verbindungen zu aktivieren und eine bessere Kompatibilität sicherzustellen. Für alle neuen SMS-Implementierungen ist jetzt ein neues externes SMS-Konto verfügbar. Bestehende Implementierungen werden weiterhin unterstützt, es wird jedoch empfohlen, zu diesem neuen, modernen und erweiterten Connector zu wechseln. Wenden Sie sich an Adobe, wenn Sie zum neuen Connector wechseln möchten. [SMS mit Adobe Campaign senden](../send/sms/sms.md)
 
   >[!NOTE]
   >
@@ -169,13 +169,13 @@ ACC - Dynamic Reporting - As a Campaign Standard migrated user, you can access D
 * **Dynamic Reporting for Multilingual** - Dynamic reporting is now available for multilingual email deliveries. For more information, refer to the [detailed documentation](../reporting/global-reports.md).
 -->
 
-* **REST-APIs** - Sie können jetzt REST-APIs verwenden, um Integrationen für Adobe Campaign zu erstellen und Ihr eigenes Ökosystem zu erstellen, indem Sie Adobe Campaign mit dem von Ihnen verwendeten Technologiebereich verbinden. Die Transaktionsnachrichten-REST-API ist auch für den SMS-Kanal verfügbar. Wenn sowohl „email“ als auch „mobilePhone“ in der Payload vorhanden sind, können Sie den Kanal über das Feld „wishedChannel“ angeben. Ohne Angabe wird standardmäßig „email“ verwendet, es sei denn, „wishedChannel“ fordert explizit SMS an. Ereignisbasierte Transaktions-APIs sind auch für E-Mails verfügbar. [Weitere Informationen](../dev/api/get-started-apis.md)
+* **REST-APIs** - Sie können jetzt REST-APIs verwenden, um Integrationen für Adobe Campaign zu erstellen und Ihr eigenes Ökosystem zu erstellen, indem Sie Adobe Campaign mit dem von Ihnen verwendeten Technologiebereich verbinden. Die Transaktionsnachrichten-REST-API ist auch für den SMS-Kanal verfügbar. Wenn sowohl „email“ als auch „mobilePhone“ in der Payload vorhanden sind, können Sie den Kanal über das Feld „wishedChannel“ angeben. Ohne Angabe wird standardmäßig „email“ verwendet, es sei denn, „wishedChannel“ fordert explizit SMS an. Ereignisbasierte Transaktions-APIs sind auch für E-Mails verfügbar. [Erste Schritte mit Campaign REST-APIs](../dev/api/get-started-apis.md)
 
   >[!NOTE]
   >
   >Diese Funktion ist **nicht** für [Campaign FFDA-Bereitstellungen](../architecture/enterprise-deployment.md) verfügbar.
 
-* **Liste mit einem Klick - Abmelden** - Bei wichtigen ISPs, bei denen Absender verlangen, dass Empfänger sich mit einem einzigen Klick sofort abmelden können, können Sie jetzt die Kopfzeile „Liste mit einem Klick - Abmelden“ in der Benutzeroberfläche direkt in der E-Mail-Vorlage oder in den Versandeigenschaften aktivieren. Standardmäßig ist diese Option aktiviert. [Weitere Informationen](../send/email-parameters.md#one-click-list-unsubscribe)
+* **Liste mit einem Klick - Abmelden** - Bei wichtigen ISPs, bei denen Absender verlangen, dass Empfänger sich mit einem einzigen Klick sofort abmelden können, können Sie jetzt die Kopfzeile „Liste mit einem Klick - Abmelden“ in der Benutzeroberfläche direkt in der E-Mail-Vorlage oder in den Versandeigenschaften aktivieren. Standardmäßig ist diese Option aktiviert. [1-Klick-Liste-Abo aktivieren](../send/email-parameters.md#one-click-list-unsubscribe)
 
 <!--
 ACC - Rest APIs - As a Campaign Standard migrated user, you can use Rest APIs to create integrations for Adobe Campaign and build your own ecosystem by interfacing Adobe Campaign with the panel of technologies that you use. Read more
@@ -196,11 +196,11 @@ Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benu
 
 ### Allgemeine Verbesserungen {#improvements-8-8-1}
 
-* Microsoft Fabrics wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. [Weitere Informationen](../config/external-accounts.md#transfer-data-external-accounts)
-* Campaign v8 unterstützt jetzt Android 15 und iOS 18 für Push-Benachrichtigungen. [Weitere Informationen](../start/compatibility-matrix.md#MobileSDK)
-* Cloud-Datenbanken werden jetzt zusätzlich zu den On-Premise-Datenbanken für das Secure Virtual Private Network-Tunneling unterstützt. [Weitere Informationen](../config/enhanced-security.md#vpn-databases)
-* Im Abschnitt „Eingehender Traffic“ des SMS 2.0-Connectors wurde ein neuer Satz von Feldern „Provider-ID“ hinzugefügt. [Weitere Informationen](../send/sms/smpp-external-account.md#incoming-traffic)
-* Abgemeldete Empfänger über die „mailto“-Abmeldemethode werden nicht mehr unter Quarantäne gestellt. Sie werden entweder vom mit dem Versand verbundenen Service abgemeldet oder an die Blockierungsliste gesendet (Abschnitt „Nicht mehr kontaktieren“ des Profils), wenn für den Versand kein Service definiert wurde. [Weitere Informationen](../send/quarantines.md)
+* Microsoft Fabrics wird jetzt als externe Datenbank mit Adobe Campaign Federated Data Access (FDA) unterstützt. [Übertragen von Daten über externe Konten](../config/external-accounts.md#transfer-data-external-accounts)
+* Campaign v8 unterstützt jetzt Android 15 und iOS 18 für Push-Benachrichtigungen. [Mobile SDK](../start/compatibility-matrix.md#MobileSDK)
+* Cloud-Datenbanken werden jetzt zusätzlich zu den On-Premise-Datenbanken für das Secure Virtual Private Network-Tunneling unterstützt. [Unterstützte Datenbanken und Geräte](../config/enhanced-security.md#vpn-databases)
+* Im Abschnitt „Eingehender Traffic“ des SMS 2.0-Connectors wurde ein neuer Satz von Feldern „Provider-ID“ hinzugefügt. [Eingehender Traffic](../send/sms/smpp-external-account.md#incoming-traffic)
+* Abgemeldete Empfänger über die „mailto“-Abmeldemethode werden nicht mehr unter Quarantäne gestellt. Sie werden entweder vom mit dem Versand verbundenen Service abgemeldet oder an die Blockierungsliste gesendet (Abschnitt „Nicht mehr kontaktieren“ des Profils), wenn für den Versand kein Service definiert wurde. [Quarantäneverwaltung in Campaign](../send/quarantines.md)
 * Eine überarbeitete Version des Inbox Rendering-Berichts ist jetzt in der Adobe Campaign-Client-Konsole verfügbar.
 * Die `setup-client.exe`-Datei wurde durch eine `ac-client.msi`-Datei ersetzt, was eine einfachere Methode für Administratoren bietet, um Massenaktualisierungen durchzuführen, ohne dass der Benutzer eingreifen muss.
 
@@ -312,7 +312,7 @@ _Samstag, 25. April 2025_
 
 ### Neue Funktionen {#features-8-6-5}
 
-**Neuer SMS-Versand-Connector**: Der SMS-Versand-Connector wurde modernisiert und verbessert, um SMPP-Verbindungen im Transceiver-Modus zu aktivieren, persistente SMPP-Verbindungen zu ermöglichen und eine bessere Kompatibilität für Umgebungen sicherzustellen, die von Adobe Campaign Standard aus umgestellt werden. Für alle neuen SMS-Implementierungen ist jetzt ein neues externes SMS-Konto verfügbar. Bestehende Implementierungen werden weiterhin unterstützt, es wird jedoch empfohlen, zu diesem neuen, modernen und erweiterten Connector zu wechseln. [Weitere Informationen](../send/sms/sms.md)
+**Neuer SMS-Versand-Connector**: Der SMS-Versand-Connector wurde modernisiert und verbessert, um SMPP-Verbindungen im Transceiver-Modus zu aktivieren, persistente SMPP-Verbindungen zu ermöglichen und eine bessere Kompatibilität für Umgebungen sicherzustellen, die von Adobe Campaign Standard aus umgestellt werden. Für alle neuen SMS-Implementierungen ist jetzt ein neues externes SMS-Konto verfügbar. Bestehende Implementierungen werden weiterhin unterstützt, es wird jedoch empfohlen, zu diesem neuen, modernen und erweiterten Connector zu wechseln. [Senden von SMS mit Adobe Campaign](../send/sms/sms.md).
 
 ### Allgemeine Verbesserungen {#improvements-8-6-5}
 
@@ -364,7 +364,7 @@ _14. Februar 2025_
 
 * **Dynamische Berichte für Transaktionsnachrichten**: Sie können jetzt Ihre Transaktionsnachrichten in der Benutzeroberfläche der dynamischen Berichte überwachen. Diese Berichte bieten Marketing-Experten die Möglichkeit, alle Berichtsmetriken und Dimensionen von Transaktionsnachrichten sowie die Aufschlüsselung der über eine Vorlage gesendeten Sendungen in Echtzeit anzuzeigen. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=de){target="_blank"}
 
-* **REST-APIs für Transaktionsnachrichten**: Ereignisbasierte Transaktions-APIs sind jetzt für E-Mails verfügbar. [Weitere Informationen](../dev/api/get-started-apis.md)
+* **REST-APIs für Transaktionsnachrichten**: Ereignisbasierte Transaktions-APIs sind jetzt für E-Mails verfügbar. [Erste Schritte mit Campaign REST-APIs](../dev/api/get-started-apis.md)
 
 ### Fehlerbehebungen {#fixes-8-7-3}
 
@@ -380,8 +380,8 @@ _15. Januar 2025_
 
 * Die Stabilität der Campaign-Anwendung wurde bei der Versandanalyse im Kontext einer [Enterprise-Bereitstellung (FFDA)](../../v8/architecture/enterprise-deployment.md) optimiert.
 * Diese Version enthält verbesserte und verstärkte FFDA-Architekturmechanismen, einschließlich Schlüsselverwaltung, Staging und Datenreplikation.
-* Für die [Enterprise-Bereitstellung (FFDA)](../../v8/architecture/enterprise-deployment.md) wurden neue technische Workflows eingeführt. Diese Workflows replizieren den Versand und zugehörige Daten, indem sie parallele Replikationsanfragen für die entsprechenden Tabellen zentralisieren. Diese Workflows beginnen mit `Replicate nms`. [Weitere Informationen](../architecture/replication.md)
-* Eine neue Option **Watchdog-Supervisor darf den Workflow dauerhaft laufen lassen** ist jetzt in den Workflow-Eigenschaften verfügbar. Wenn diese Option aktiviert ist, werden Workflows nach einem Fehler automatisch neu gestartet. Der Neustart erfolgt standardmäßig alle 30 Sekunden, wenn der Workflow noch immer einen Fehler aufweist. Um dieses Intervall anzupassen, können Sie eine neue Option `XtkWorkflow_WatchdogRestartTimerTimeout` erstellen und einen Datentyp als Ganzzahl festlegen, um die neue Verzögerung anzugeben. Diese Option sollte nur in technischen Workflows aktiviert werden. [Weitere Informationen](../../automation/workflow/workflow-properties.md#execution)
+* Für die [Enterprise-Bereitstellung (FFDA)](../../v8/architecture/enterprise-deployment.md) wurden neue technische Workflows eingeführt. Diese Workflows replizieren den Versand und zugehörige Daten, indem sie parallele Replikationsanfragen für die entsprechenden Tabellen zentralisieren. Diese Workflows beginnen mit `Replicate nms`. [Datenreplikation](../architecture/replication.md)
+* Eine neue Option **Watchdog-Supervisor darf den Workflow dauerhaft laufen lassen** ist jetzt in den Workflow-Eigenschaften verfügbar. Wenn diese Option aktiviert ist, werden Workflows nach einem Fehler automatisch neu gestartet. Der Neustart erfolgt standardmäßig alle 30 Sekunden, wenn der Workflow noch immer einen Fehler aufweist. Um dieses Intervall anzupassen, können Sie eine neue Option `XtkWorkflow_WatchdogRestartTimerTimeout` erstellen und einen Datentyp als Ganzzahl festlegen, um die neue Verzögerung anzugeben. Diese Option sollte nur in technischen Workflows aktiviert werden. [Ausführung](../../automation/workflow/workflow-properties.md#execution)
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-6-4}
 

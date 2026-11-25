@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 97%
+source-wordcount: '1241'
+ht-degree: 74%
 ---
 # Personalisierte Gutscheine{#personalized-coupons}
 
@@ -55,12 +55,12 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
 
 1. Wählen Sie im Campaign-Navigationsbaum **[!UICONTROL Ressourcen > Kampagnenverwaltung > Coupons]**.
 
-   ![](assets/deliv_coup_01.png)
+   ![Kampagnenstruktur mit Ressourcen, erweiterte Kampagnenverwaltung und ausgewähltem Couponknoten](assets/deliv_coup_01.png)
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]**.
 1. Geben Sie den Namen des Coupons im Feld **[!UICONTROL Titel]** ein. In das Feld **[!UICONTROL Couponcode]** wurde automatisch ein eindeutiger Code eingefügt. Sie können den Code beibehalten oder einen neuen eingeben.
 
-   ![](assets/deliv_coup_02.png)
+   ![Gutscheinliste und Registerkarte Allgemein eines Gutscheins mit den Feldern Titel, Gutscheincode, Gutscheintyp, Startdatum und Enddatum](assets/deliv_coup_02.png)
 
 1. Wählen Sie das **[!UICONTROL Startdatum]** und das **[!UICONTROL Enddatum]**, um den Gültigkeitszeitraum des Gutscheins festzulegen.
 1. Wählen Sie in **[!UICONTROL Coupontyp]** zwischen einem anonymen und einem individuellen Gutschein.
@@ -77,11 +77,11 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
 
    >[!NOTE]
    >
-   >Individuelle Gutscheine können gesammelt importiert werden. Weiterführende Informationen zum Importieren und Exportieren finden Sie in [diesem Abschnitt](../start/import.md).
+   >Individuelle Gutscheine können gesammelt importiert werden. Weitere Informationen zum Importieren und Exportieren finden Sie unter [Erste Schritte mit Profilen](../start/import.md).
 
 ### Konfigurieren von individuellen Gutscheinen {#configuring-individual-coupons}
 
-![](assets/deliv_coup_03.png)
+![Registerkarte „Gutscheine“ eines Gutscheins, auf der einzelne Gutscheincodes mit jeweils dem Status „Verfügbar“ aufgeführt sind](assets/deliv_coup_03.png)
 
 Die Registerkarte „Coupons“ ist nur für individuelle Coupons verfügbar. Nachdem ein Coupon mit einem Versand verknüpft wurde, werden in der Registerkarte „Coupons“ folgende Details angezeigt:
 
@@ -94,64 +94,64 @@ Die Werte für **[!UICONTROL Status]**, **[!UICONTROL Kanal]** und **[!UICONTROL
 
 ## Einfügen eines Gutscheins in einen E-Mail-Versand {#inserting-a-coupon-into-an-email-delivery}
 
-Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterführende Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](email.md).
+Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Detaillierte Anweisungen zum Erstellen eines Versands finden Sie unter [Senden von E-Mails mit Adobe Campaign](email.md).
 1. Gehen Sie zu **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Sendungen]** aus.
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
-   ![](assets/deliv_coup_04.png)
+   ![Versandliste auf der Registerkarte „Kampagnen“ mit hervorgehobener Schaltfläche „Erstellen“](assets/deliv_coup_04.png)
 
 1. Geben Sie im **[!UICONTROL Titelfeld]** einen Namen ein und wählen Sie **[!UICONTROL Fortfahren]** aus.
 1. Wählen Sie **[!UICONTROL An]** aus, um Empfänger hinzuzufügen.
 1. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um Empfänger für den Versand auszuwählen. Wählen Sie nach der Auswahl der Empfänger **[!UICONTROL OK]**, um zum Versand zurückzukehren.
 
-   ![](assets/deliv_coup_05.png)
+   ![Das Dialogfeld „Ziel auswählen“ auf der Registerkarte „Hauptzielgruppe“ mit der hervorgehobenen Schaltfläche „Hinzufügen“](assets/deliv_coup_05.png)
 
 1. Geben Sie einen Betreff ein und fügen Sie der Nachricht einen Inhalt hinzu.
 
-   ![](assets/deliv_coup_06.png)
+   ![Versand-Editor mit Betreff und HTML-Inhalt für die Gutschein-E-Mail](assets/deliv_coup_06.png)
 
 1. Wählen Sie in der Symbolleiste **[!UICONTROL Eigenschaften]** und danach den Tab **[!UICONTROL Erweitert]** aus.
 1. Wählen Sie das Ordnersymbol für **[!UICONTROL Couponverwaltung]** aus.
 
-   ![](assets/deliv_coup_07.png)
+   ![Registerkarte „Erweiterte Versandeigenschaften“ mit dem Ordnersymbol neben dem Couponfeld in der Couponverwaltung hervorgehoben](assets/deliv_coup_07.png)
 
 1. Wählen Sie den Gutschein und danach **[!UICONTROL OK]** aus. Wählen Sie erneut **[!UICONTROL OK]** aus.
 
-   ![](assets/deliv_coup_08.png)
+   ![Dialogfeld „Couponauswahl“, in dem Coupondokumente mit ausgewählten Fußball-Coupons aufgelistet werden](assets/deliv_coup_08.png)
 
 1. Klicken Sie auf die Nachricht, um zu kennzeichnen, wo Sie den Gutschein platzieren möchten.
 
-   ![](assets/deliv_coup_09.png)
+   ![HTML-Inhaltseditor mit platziertem Cursor an der Stelle, an der der Couponcode eingefügt werden soll](assets/deliv_coup_09.png)
 
 1. Wählen Sie das Personalisierungssymbol aus, um je nach Gutscheintyp die folgende Auswahl zu treffen:
 
    * Anonymer Gutschein: **[!UICONTROL Coupon > Couponcode]**
 
-     ![](assets/deliv_coup_10.png)
+     ![Personalization-Menü mit Coupon und anschließend Couponcode für einen anonymen Coupon](assets/deliv_coup_10.png)
 
    * Individueller Gutschein: **[!UICONTROL Couponwert > Couponcode]**
 
-     ![](assets/deliv_coup_11.png)
+     ![Personalization-Menü mit Couponwert und ausgewähltem Couponcode für einen individuellen Coupon](assets/deliv_coup_11.png)
 
      Der Coupon wird nicht über den von Ihnen zugewiesenen Namen in die Nachricht eingefügt, sondern in Form von Code. Der Code wird im vorkonfigurierten Datenmodell von Campaign verwendet.
 
-   ![](assets/deliv_coup_12.png)
+   ![E-Mail-Inhalt mit dem eingefügten Coupon-Code-Skript, couponValue.couponCode, hervorgehoben](assets/deliv_coup_12.png)
 
 1. Führen Sie einen Test durch, um den von Ihnen dem Gutschein zugewiesenen Namen zu überprüfen. Klicken Sie dazu auf der Registerkarte **[!UICONTROL Vorschau]** auf **[!UICONTROL Personalisierung testen]**. Wählen Sie eine Empfängerin bzw. einen Empfänger für den Test aus.
 
-   ![](assets/deliv_coup_13.png)
+   ![Registerkarte „Vorschau“ mit geöffnetem Personalisierungsmenü „Test“ und hervorgehobener Option „Empfänger“](assets/deliv_coup_13.png)
 
    Nach dem Test sollte auf dem Gutschein der zugewiesene Name anstatt des Codes angezeigt werden.
 
-   ![](assets/deliv_coup_14.png)
+   ![Vorschau der E-Mail mit dem Couponcode Trynow im Nachrichtentext angezeigt](assets/deliv_coup_14.png)
 
 1. Klicken Sie in der Symbolleiste links oben auf **[!UICONTROL Senden]** und wählen Sie aus, wie Sie die Nachricht senden möchten.
 
-   ![](assets/deliv_coup_15.png)
+   ![Senden Sie mit der Option So bald wie möglich versenden und der Schaltfläche Analysieren an die Hauptzielgruppe des Versands](assets/deliv_coup_15.png)
 
 1. Klicken Sie auf **[!UICONTROL Analysieren]**. Wenn im Analyseprotokoll bestätigt wird, dass für alle Empfänger genügend Gutscheine vorhanden sind, versenden Sie die Nachrichten durch die Auswahl von **[!UICONTROL Absendung bestätigen]**.
 
-   ![](assets/deliv_coup_16.png)
+   ![Versandanalyseprotokoll mit 2 recycelten Coupons und der Schaltfläche „Versand bestätigen“ verfügbar](assets/deliv_coup_16.png)
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ So prüfen Sie, ob der Versand erfolgreich war:
 1. Gehen Sie zu **[!UICONTROL Explorer > Ressourcen > Kampagnenverwaltung > Coupons]**.
 1. Wählen Sie den Tab **[!UICONTROL Sendungen]**.
 
-   ![](assets/deliv_coup_17.png)
+   ![Registerkarte Sendungen eines Coupons, auf der die Sendungen aufgelistet sind, die ihn verwenden, einschließlich ihrer Status- und Nachrichtenanzahl](assets/deliv_coup_17.png)
 
    Eine erfolgreiche Sendung ist im Status als **[!UICONTROL Abgeschlossen]** gekennzeichnet.
 
@@ -180,12 +180,12 @@ Die Versandanalyse wird angehalten, wenn weniger Coupons als Nachrichten vorhand
 1. Wählen Sie **[!UICONTROL An]**.
 1. Gehen Sie unter **[!UICONTROL Auswahl der Zielgruppe]** zum Tab **[!UICONTROL Ausschlüsse]**.
 
-   ![](assets/deliv_coup_18.png)
+   ![Das Dialogfeld „Ziel auswählen“ mit hervorgehobener Registerkarte „Ausschlüsse“ und dem hervorgehobenen Link „Bearbeiten“ für die Ausschlusseinstellungen](assets/deliv_coup_18.png)
 
 1. Wählen Sie im Bereich für die Einstellungen der Ausschlüsse **[!UICONTROL Bearbeiten]** aus.
 1. Geben Sie die Anzahl der zu sendenden Nachrichten in **[!UICONTROL Versand begrenzen auf … Nachrichten]** ein und klicken Sie auf **[!UICONTROL OK]**. Sie können den Versand jetzt durchführen.
 
-   ![](assets/deliv_coup_19.png)
+   ![Dialogfeld „Ausschlusseinstellungen“ mit hervorgehobenem Feld Versand auf 20 Nachrichten beschränken](assets/deliv_coup_19.png)
 
 >[!NOTE]
 >

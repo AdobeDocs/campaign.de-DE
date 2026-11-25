@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 90%
+source-wordcount: '754'
+ht-degree: 78%
 ---
 # Erste Schritte mit dem Campaign-Datenmodell {#gs-ac-datamodel}
 
@@ -45,7 +45,7 @@ Adobe Campaign enthält ein vordefiniertes Datenmodell. Dieser Abschnitt enthäl
 
 Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschreiben:
 
-* **Empfängertabelle**: Das Datenmodell basiert auf einer Haupttabelle, die standardmäßig die Empfängertabelle (**nmsRecipient**) ist. In dieser Tabelle werden alle Marketing-Profile gespeichert. Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](#ootb-profiles).
+* **Empfängertabelle**: Das Datenmodell basiert auf einer Haupttabelle, die standardmäßig die Empfängertabelle (**nmsRecipient**) ist. In dieser Tabelle werden alle Marketing-Profile gespeichert. Weitere Informationen zur Empfängertabelle finden Sie in [Integrierte Profiltabelle](#ootb-profiles).
 
 * **Versandtabelle**: Diese Tabelle speichert einen Eintrag pro Versandaktion. Normalerweise handelt es sich dabei um die Versandtabelle (**NmsDelivery**). Ein Datensatz in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Es enthält alle erforderlichen Parameter für die Durchführung von Sendungen wie Zielgruppe, Inhalt usw. Jeder Datensatz wird mehrmals aktualisiert, um den Versandfortschritt widerzuspiegeln.
 
@@ -65,12 +65,12 @@ Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschrei
 
 Wenn Sie mit Adobe Campaign beginnen, müssen Sie das Standarddatenmodell evaluieren, um zu prüfen, welche Tabelle am besten zur Speicherung Ihrer Marketing-Daten geeignet ist.
 
-Sie können die standardmäßige Empfängertabelle mit den vordefinierten Feldern verwenden, wie in [diesem Abschnitt](#ootb-profiles) beschrieben. Bei Bedarf können Sie sie mit zwei Verfahren erweitern:
+Sie können die standardmäßige Empfängertabelle mit den vordefinierten Feldern verwenden, wie unter [Integrierte Profiltabelle) &#x200B;](#ootb-profiles). Bei Bedarf können Sie sie mit zwei Verfahren erweitern:
 
 * [Erweitern einer vorhandenen Tabelle](extend-schema.md) mit neuen Feldern. Sie können der Empfängertabelle beispielsweise ein neues Feld „Treue“ hinzufügen.
 * [Erstellen Sie eine neue Tabelle](create-schema.md), z. B. eine Tabelle „Einkauf“, in der alle von den einzelnen Profilen der Datenbank getätigten Käufe aufgelistet sind, und verknüpfen Sie sie mit der Empfängertabelle.
 
-Best Practices zum Arbeiten mit dem Campaign-Datenmodell finden Sie in [diesem Abschnitt](datamodel-best-practices.md).
+Erfahren Sie mehr über Best Practices beim Arbeiten mit dem Campaign-Datenmodell in [Best Practices für Datenmodelle](datamodel-best-practices.md).
 
 ## Native Profiltabelle {#ootb-profiles}
 
@@ -85,19 +85,19 @@ Die Verwendung der standardmäßigen Empfängertabelle bietet folgende Vorteile:
 
 Es ist möglich, die Empfängertabelle zu erweitern. Die Anzahl der Empfänger oder Relationen in der Tabelle lässt sich aber nicht verringern.
 
-Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie in [diesem Abschnitt](extend-schema.md).
+Erfahren Sie in „Campaign-Schemata erweitern[, wie Sie ein vorhandenes Schema &#x200B;](extend-schema.md).
 
 Beispiele für integrierte Empfängertabellen-Erweiterungen finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=de#extending-a-table){target="_blank"}
 
-Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre geschäftlichen oder funktionalen Anforderungen zugeschnitten ist. Diese Methode weist Einschränkungen auf und wird in [diesem Abschnitt](custom-recipient.md) beschrieben.
+Sie können auch eine andere Empfängertabelle nutzen, die besser auf Ihre geschäftlichen oder funktionalen Anforderungen zugeschnitten ist. Diese Methode weist Einschränkungen auf und wird unter [Ändern der standardmäßigen Empfängertabelle](custom-recipient.md) beschrieben.
 
 ## Campaign-Tabellen und Cloud-Datenbank
 
 Zum besseren Verständnis der Tabellenverwaltung in Campaign v8 ist zu beachten, dass im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) die Tabellen zwischen Campaign und der Snowflake Cloud-Datenbank repliziert werden.
 
-Weitere Informationen zu Replikationsstrategien und -verfahren finden Sie in [diesem Abschnitt](../architecture/replication.md).
+Erfahren Sie mehr über Replikationsstrategien und -verfahren in [Datenreplikation](../architecture/replication.md).
 
 **Verwandte Themen**
 
-Erfahren Sie in [&#x200B; Abschnitt , wie Sie Profile importieren.](../start/import.md)
-Weitere Informationen zu Campaign-Audiences finden [&#x200B; in diesem Abschnitt](../start/audiences.md)
+Informationen zum Importieren von Profilen in [Erste Schritte mit Profilen](../start/import.md)
+Weitere Informationen zu Campaign-Audiences finden Sie unter [Arbeiten mit Audiences in Campaign](../start/audiences.md)

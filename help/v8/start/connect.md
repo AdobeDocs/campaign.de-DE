@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 85%
+source-wordcount: '1186'
+ht-degree: 80%
 ---
 # Herstellen einer Verbindung mit Adobe Campaign v8{#gs-ac-connect}
 
@@ -93,7 +93,7 @@ Um sich bei einer Instanz anzumelden, gehen Sie wie folgt vor:
 
 1. Starten Sie die Konsole und durchsuchen Sie den Link in der rechten Ecke, um den Bildschirm für die Verbindungskonfiguration aufzurufen.
 
-   ![](assets/connectToCampaign.png)
+   ![Das Dialogfeld „Verbindungen“ wird über den Anmeldebildschirm geöffnet, wobei die Option Mit Adobe ID verbinden ausgewählt ist](assets/connectToCampaign.png)
 
 1. Wählen Sie die Campaign-Instanz aus, bei der Sie sich anmelden möchten.
 
@@ -101,7 +101,7 @@ Um sich bei einer Instanz anzumelden, gehen Sie wie folgt vor:
 
 Sie können sich dann mit Ihrer Adobe ID bei Campaign anmelden.
 
-![](assets/adobeID.png)
+![Adobe ID-Anmeldebildschirm der Campaign-Client-Konsole mit E-Mail-Feld und Schaltfläche „Weiter“](assets/adobeID.png)
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Mit Adobe Campaign können Sie die den verschiedenen Benutzenden zugewiesenen Re
 
 Als Campaign-Administrator sind Sie dafür verantwortlich, die Benutzenden zu erstellen und ihre Anmeldedaten mit den Anwendern zu teilen.
 
-Weitere Informationen zu Anwendern und zum Definieren ihrer Berechtigungen finden Sie in [diesem Abschnitt](gs-permissions.md).
+Erfahren Sie mehr über Benutzer und die Definition ihrer Berechtigungen in [Erste Schritte mit Berechtigungen in Campaign v8](gs-permissions.md).
 
 
 ## Zugreifen auf Campaign über einen Webbrowser {#connect-web-ac}
@@ -165,11 +165,11 @@ Der Web-Zugriff bietet eine der Client-Konsole ähnliche Bedieneroberfläche mit
 
 So wird z. B. für einen Benutzer eine Kampagne in der Client-Konsole mit folgenden Optionen angezeigt:
 
-![](assets/campaign-from-console.png)
+![Kampagnen-Dashboard in der Client-Konsole mit vollständigen Bearbeitungsregisterkarten und Aktionen](assets/campaign-from-console.png)
 
 Beim Web-Zugriff ermöglichen die Optionen vor allem die Anzeige von:
 
-![](assets/campaign-from-web.png)
+![Kampagnen-Dashboard im Web-Zugriff, mit hauptsächlich Anzeigeoptionen](assets/campaign-from-web.png)
 
 Der Web-Zugriff wird auch im Validierungsprozess verwendet: Benutzende können auf die E-Mail mit der Validierungsanfrage klicken und über ihren Webbrowser eine Verbindung zu Campaign herstellen, um Versandinhalte oder -budgets zu validieren oder abzulehnen.
 

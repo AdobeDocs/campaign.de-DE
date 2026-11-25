@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 90%
+source-wordcount: '1151'
+ht-degree: 70%
 ---
 # Angebot erstellen
 
@@ -60,7 +60,7 @@ Sie können jetzt die Registerkarte **[!UICONTROL Eignung]** verwenden, um Folge
 
 Definieren Sie auf der Registerkarte **[!UICONTROL Eignung]** des Angebots die Gültigkeitsdauer des Angebots. Wählen Sie mithilfe der Dropdown-Listen im Kalender ein Start- und ein Enddatum aus.
 
-![](assets/offer_eligibility_create_002.png)
+![Registerkarte Eignung mit dem Dropdown-Kalender für das Start- und Enddatum für den Eignungszeitraum des Angebots.](assets/offer_eligibility_create_002.png)
 
 Außerhalb dieses Zeitraums wird das Angebot nicht ausgewählt. Falls Sie auch für die Angebotskategorie einen Eignungszeitraum definiert haben, gilt der restriktivste Zeitraum.
 
@@ -70,11 +70,11 @@ Wenden Sie auf der Registerkarte **[!UICONTROL Eignung]** des Angebots Filter au
 
 Klicken Sie hierzu auf den Link **[!UICONTROL Abfrage bearbeiten]** und definieren Sie den anzuwendenden Filter.
 
-![](assets/offer_eligibility_create_003.png)
+![Der Assistent Filterbedingungen für Zielgruppen auswählen wurde über den Link Abfrage bearbeiten auf der Registerkarte Eignung geöffnet.](assets/offer_eligibility_create_003.png)
 
 Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der Liste der benutzerdefinierten Filter auswählen. [Weitere Informationen](interaction-predefined-filters.md)
 
-![](assets/offer_eligibility_create_004.png)
+![Benutzerfilterliste im Targeting-Assistenten, auf die der ausgewählte Filter angewendet wurde und die eine Vorschau der übereinstimmenden Empfänger enthält.](assets/offer_eligibility_create_004.png)
 
 ### Festlegen der Angebotsgewichtung {#offer-weight}
 
@@ -92,11 +92,11 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
 1. Klicken Sie auf der Registerkarte **[!UICONTROL Eignung]** des Angebots auf **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/offer_weight_create_001.png)
+   ![Registerkarte Eignung mit der Schaltfläche Hinzufügen zum Öffnen des Dialogfelds Gewichtung, um eine Angebotsgewichtung zu erstellen.](assets/offer_weight_create_001.png)
 
 1. Ändern Sie die Bezeichnung und weisen Sie eine Gewichtung zu. Der Standardwert ist 1.
 
-   ![](assets/offer_weight_create_006.png)
+   ![Dialogfeld „Gewichtung“ mit dem Feld „Bezeichnung“ und dem Wert „Gewichtung“ im Abschnitt „Schlichtung“.](assets/offer_weight_create_006.png)
 
    >[!CAUTION]
    >
@@ -104,19 +104,19 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
 1. Geben Sie gegebenenfalls ein Start- und ein Enddatum ein.
 
-   ![](assets/offer_weight_create_002.png)
+   ![Dialogfeld „Gewichtung“ mit Start- und Enddatum im Abschnitt Eignungsdaten festgelegt.](assets/offer_weight_create_002.png)
 
 1. Beschränken Sie bei Bedarf die Anwendung der Gewichtung auf eine bestimmte Platzierung.
 
-   ![](assets/offer_weight_create_003.png)
+   ![Dialogfeld „Gewichtung“ mit der Dropdown-Liste „Platzierung“, in der die Platzierungen aufgeführt sind, auf die die Gewichtung beschränkt werden kann.](assets/offer_weight_create_003.png)
 
 1. Konfigurieren Sie einen Zielgruppenfilter.
 
-   ![](assets/offer_weight_create_004.png)
+   ![Dialogfeld „Gewichtung“ mit hervorgehobenem Link „Abfrage bearbeiten“ in „Filter für die Zielgruppe“.](assets/offer_weight_create_004.png)
 
 1. Klicken Sie zum Abschluss auf **[!UICONTROL OK]**.
 
-   ![](assets/offer_weight_create_005.png)
+   ![Tabelle mit den Gewichtungen der Registerkarte „Eignung“, in der das neue Premium-Gewicht mit seinen Datumsangaben und seinem Filter aufgeführt ist.](assets/offer_weight_create_005.png)
 
    >[!NOTE]
    >
@@ -128,13 +128,13 @@ Im Dashboard des Angebots können Sie auf eine Zusammenfassung der Eignungsregel
 
 Klicken Sie hierfür auf den Link **[!UICONTROL Planung und Eignungsregeln des Angebots]**.
 
-![](assets/offer_eligibility_create_005.png)
+![Angebot-Dashboard mit hervorgehobenem Link zu Zeitplan und Eignungsregeln.](assets/offer_eligibility_create_005.png)
 
 ## Erstellen von Angebotsinhalten {#creating-the-offer-content}
 
 Definieren Sie auf der Registerkarte **[!UICONTROL Inhalt]** den Angebotsinhalt.
 
-![](assets/offer_content_create_001.png)
+![Registerkarte „Inhalt“ des Angebots mit den Feldern „Titel“, „Ziel-URL“, „Bild-URL“ und dem HTML-Inhaltseditor.](assets/offer_content_create_001.png)
 
 1. Legen Sie die verschiedenen Parameter für den Angebotsinhalt fest:
 
@@ -143,7 +143,7 @@ Definieren Sie auf der Registerkarte **[!UICONTROL Inhalt]** den Angebotsinhalt.
    * **[!UICONTROL Bild-URL]**: Geben Sie die URL oder einen Zugangspfad für das Bild Ihres Angebots an.
    * **[!UICONTROL HTML-Inhalt]**/**[!UICONTROL Textinhalt]**: Geben Sie den Textkörper Ihres Angebots auf der Registerkarte Ihrer Wahl ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise lautet das Ergebnis eines `<table>`-Elements auf der HTML-Seite wie folgt:
 
-   ```
+   ```xml
       <div> 
        <table>
         <tr>
@@ -158,13 +158,13 @@ Definieren Sie auf der Registerkarte **[!UICONTROL Inhalt]** den Angebotsinhalt.
       </div>
    ```
 
-   Erfahren Sie in [diesem Abschnitt](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted), wie Sie die Annahme-URL definieren.
+   Erfahren Sie, wie Sie die Annahme-URL unter [Angebotsstatus bei Annahme des Vorschlags“ &#x200B;](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
 
-   ![](assets/offer_content_create_002.png)
+   ![Registerkarte „Inhalt“ mit Titel, Ziel-URL und Bild-URL sowie dem Link für Inhaltsdefinitionen ausgefüllt.](assets/offer_content_create_002.png)
 
    Durch Klick auf den Link **[!UICONTROL Inhaltsdefinition]** können Sie prüfen, welche Felder in der Platzierungskonfiguration als Pflichtfelder definiert wurden. [Weitere Informationen](interaction-offer-spaces.md)
 
-   ![](assets/offer_content_create_003.png)
+   ![Das Dialogfeld „Inhaltsdefinitionen“ listet für jede Platzierung die erforderlichen Inhaltsfelder auf.](assets/offer_content_create_003.png)
 
    In unserem Beispiel muss das Angebot mindestens einen Titel, ein Bild, einen HTML-Inhalt und eine Ziel-URL aufweisen.
 
@@ -176,11 +176,11 @@ Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
 
-   ![](assets/offer_preview_create_001.png)
+   ![Registerkarte Vorschau des Angebots mit den für jede Platzierung in der Vorschau anzuzeigenden Darstellungen.](assets/offer_preview_create_001.png)
 
 1. Wählen Sie die Darstellung aus, die Sie prüfen möchten.
 
-   ![](assets/offer_preview_create_002.png)
+   ![Registerkarte „Vorschau“ mit erweiterter Darstellung „E-Mail /Clients“, um den gerenderten Angebotsinhalt anzuzeigen.](assets/offer_preview_create_002.png)
 
 1. Wenn Sie den Inhalt des Angebots personalisiert haben, ist die Auswahl eines Empfängers erforderlich, um die Personalisierung prüfen zu können.
 
@@ -202,13 +202,13 @@ Creating hypotheses is detailed in [this page](../../automation/response/about-r
 
 Nun können Sie das Angebot genehmigen und aktivieren, um es in der **Live**-Umgebung bereitzustellen.
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](approving-and-activating-an-offer.md#approving-offer-content).
+Weitere Informationen hierzu finden Sie unter [&#x200B; von Angebotsinhalten](approving-and-activating-an-offer.md#approving-offer-content).
 
 ## Angebotsunterbreitung verwalten{#offer-presentation}
 
 Campaign ermöglicht die Steuerung des Flusses der Angebotsvorschläge anhand von Unterbreitungsregeln. Diese Regeln, die speziell für Campaign Interaction gelten, heißen **Typologieregeln**. Sie ermöglichen den Ausschluss von Angeboten, die auf dem Verlauf der einem bestimmten Empfänger zuvor unterbreiteten Vorschläge basieren. Diese werden in der Umgebung referenziert.
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](managing-offer-presentation.md).
+Weitere Informationen hierzu finden Sie unter [&#x200B; der Angebotsunterbreitung &#x200B;](managing-offer-presentation.md).
 
 ## Angebotssimulation
 
@@ -216,4 +216,4 @@ Mithilfe von **Simulationen** können Sie die Verteilung der Angebote einer Kate
 
 Bei der Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die bisher für Angebote und deren Unterbreitungsregeln galten. Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
 
-Weiterführende Informationen zur Angebotssimulation finden Sie [diesem Abschnitt](about-offers-simulation.md).
+Weitere Informationen zur Angebotssimulation finden Sie unter [Über die Angebotssimulation](about-offers-simulation.md).

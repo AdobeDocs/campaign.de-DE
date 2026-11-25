@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 97%
+source-wordcount: '2806'
+ht-degree: 82%
 ---
 # Erstellen eines Rich-Push-Versands in Android {#rich-push}
 
@@ -79,31 +79,31 @@ Navigieren Sie durch die folgenden Registerkarten, um mehr über die Personalisi
 
 1. Wählen Sie **[!UICONTROL Standard]** aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]**.
 
-   ![](assets/rich_push_default.png)
+   ![Liste „Benachrichtigungstyp“ mit der Auswahl „Standard“ auf der Registerkarte &quot;Android-Inhalt“](assets/rich_push_default.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]** und **[!UICONTROL Nachricht]** ein.
 
-   ![](assets/rich_push_default_2.png)
+   ![Standardbenachrichtigung mit Feldern für Titel und Nachricht, die in ein Angebot mit Promo-Code eingetragen sind](assets/rich_push_default_2.png)
 
 1. Verwenden Sie dynamische Personalisierungsfelder, um Inhalte zu definieren, Daten zu personalisieren und dynamische Inhalte hinzuzufügen. [Weitere Informationen](../send/personalize.md)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-   ![](assets/rich_push_default_3.png)
+   ![Benachrichtigungsoptionen und HTTPv1-zusätzliche Optionen für eine Standardbenachrichtigung ausgefüllt](assets/rich_push_default_3.png)
 
 Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Einfach]
 
-1. Wählen Sie **[!UICONTROL Einfach]** aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Einfach]** aus.
 
-   ![](assets/rich_push_basic.png)
+   ![Liste „Benachrichtigungstyp“ mit auf der Registerkarte &quot;Android-Inhalt“ ausgewähltem Standard](assets/rich_push_basic.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Erweiterte Nachricht]** ein.
 
    Der Text der **[!UICONTROL Nachricht]** wird in der ausgeblendeten Ansicht angezeigt, während die **[!UICONTROL Erweiterte Nachricht]** angezeigt wird, wenn die Benachrichtigung erweitert wird.
 
-   ![](assets/rich_push_basic_2.png)
+   ![Grundlegende Benachrichtigung mit ausgefüllten Feldern „Titel“, „Nachricht“ und „Erweiterte Nachricht“](assets/rich_push_basic_2.png)
 
 1. Verwenden Sie dynamische Personalisierungsfelder, um Inhalte zu definieren, Daten zu personalisieren und dynamische Inhalte hinzuzufügen. [Weitere Informationen](../send/personalize.md)
 
@@ -130,25 +130,25 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    Weitere Informationen über die Handhabung von Android-App-Links finden Sie in der [Entwicklerdokumentation zu Android](https://developer.android.com/training/app-links).
 
-   ![](assets/rich_push_basic_3.png)
+   ![Grundlegende Tabelle mit Benachrichtigungsschaltflächen mit einer Web-URL-Schaltfläche mit der Bezeichnung Jetzt kaufen! Erinnern und später eingegebene Felder](assets/rich_push_basic_3.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-   ![](assets/rich_push_basic_4.png)
+   ![Benachrichtigungsoptionen und HTTPv1-zusätzliche Optionen für eine einfache Benachrichtigung ausgefüllt](assets/rich_push_basic_4.png)
 
 Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Karussell]
 
-1. Wählen Sie **[!UICONTROL Karussell]** aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Karussell]** aus.
 
-   ![](assets/rich_push_carousel.png)
+   ![Liste „Benachrichtigungstyp“ mit ausgewähltem Karussell auf der Registerkarte &quot;Android-Inhalt“](assets/rich_push_carousel.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Erweiterte Nachricht]** ein.
 
    Der Text der **[!UICONTROL Nachricht]** wird in der ausgeblendeten Ansicht angezeigt, während die **[!UICONTROL Erweiterte Nachricht]** angezeigt wird, wenn die Benachrichtigung erweitert wird.
 
-   ![](assets/rich_push_carousel_1.png)
+   ![Karussellbenachrichtigung mit ausgefüllten Feldern „Titel“, „Nachricht“ und „Erweiterte Nachricht“](assets/rich_push_carousel_1.png)
 
 1. Verwenden Sie den Ausdruckseditor, um Inhalte zu definieren, Daten zu personalisieren und dynamische Inhalte hinzuzufügen. [Weitere Informationen](../send/personalize.md)
 
@@ -165,11 +165,11 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    Stellen Sie sicher, dass Sie mindestens drei und maximal fünf Bilder einfügen.
 
-   ![](assets/rich_push_carousel_2.png)
+   ![Karusselloptionen sind auf Manuell mit Filmstreifen-Layout und drei Bildern mit Aktions-URIs in der Bildtabelle festgelegt](assets/rich_push_carousel_2.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-   ![](assets/rich_push_carousel_3.png)
+   ![Benachrichtigungsoptionen und HTTPv1-Zusatzoptionen für eine Karussellbenachrichtigung](assets/rich_push_carousel_3.png)
 
 Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
@@ -177,11 +177,11 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Symbolschaltflächen]** aus.
 
-   ![](assets/rich_push_icon.png)
+   ![Liste „Benachrichtigungstyp“ mit ausgewählten Symbolschaltflächen auf der Registerkarte &quot;Android-Inhalt“](assets/rich_push_icon.png)
 
 1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Hintergrund]** ein.
 
-   ![](assets/rich_push_icon_2.png)
+   ![Benachrichtigung mit Symbolschaltflächen mit einem Hexadezimalwert, der in der Hintergrundfarbe eingegeben wurde](assets/rich_push_icon_2.png)
 
 1. Geben Sie die URL für das **[!UICONTROL Bild der Schaltfläche „Abbrechen“]** an.
 
@@ -189,11 +189,11 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    Stellen Sie sicher, dass Sie mindestens drei Bilder und maximal fünf Schaltflächen einfügen.
 
-   ![](assets/rich_push_icon_3.png)
+   ![Tabelle mit Bild-URL der Schaltfläche „Abbrechen“ und Bild-Schaltflächen-Symbol mit drei Web-URL-Schaltflächen](assets/rich_push_icon_3.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-   ![](assets/rich_push_icon_5.png)
+   ![Benachrichtigungsoptionen und zusätzliche HTTPv1-Optionen für eine Benachrichtigung über Icon-Schaltflächen ausgefüllt](assets/rich_push_icon_5.png)
 
 Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
@@ -201,13 +201,13 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Eingabefeld]** aus.
 
-   ![](assets/rich_push_input.png)
+   ![Liste „Benachrichtigungstyp“ mit ausgewähltem Eingabefeld auf der Registerkarte &quot;Android-Inhalt“](assets/rich_push_input.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Erweiterte Nachricht]** ein.
 
    Der Text der **[!UICONTROL Nachricht]** wird in der ausgeblendeten Ansicht angezeigt, während die **[!UICONTROL Erweiterte Nachricht]** angezeigt wird, wenn die Benachrichtigung erweitert wird.
 
-   ![](assets/rich_push_input_2.png)
+   ![Benachrichtigung im Eingabefeld mit ausgefüllten Feldern „Titel“, „Nachricht“ und „Erweiterte Nachricht“](assets/rich_push_input_2.png)
 
 1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für den **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
@@ -218,25 +218,25 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
    * **[!UICONTROL Feedback-Text]**: Geben Sie den Text ein, der nach einer Antwort angezeigt werden soll.
    * **[!UICONTROL Feedback-Bild]**: Fügen Sie die URL für das Bild hinzu, das nach einer Antwort angezeigt wird.
 
-   ![](assets/rich_push_input_3.png)
+   ![Optionen im Eingabefeld: Name des Eingabeempfängers, Eingabetext, Feedbacktext und Feedbackbild ausgefüllt](assets/rich_push_input_3.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-   ![](assets/rich_push_input_4.png)
+   ![Benachrichtigungsoptionen und HTTPv1-zusätzliche Optionen für eine Benachrichtigung im Eingabefeld ausgefüllt](assets/rich_push_input_4.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Produktkatalog]
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Produktkatalog]** aus.
 
-   ![](assets/rich_push_catalog.png)
+   ![Liste „Benachrichtigungstyp“ mit ausgewähltem Produktkatalog auf der Registerkarte &quot;Android-Inhalt“](assets/rich_push_catalog.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Erweiterte Nachricht]** ein.
 
    Der Text der **[!UICONTROL Nachricht]** wird in der ausgeblendeten Ansicht angezeigt, während die **[!UICONTROL Erweiterte Nachricht]** angezeigt wird, wenn die Benachrichtigung erweitert wird.
 
-   ![](assets/rich_push_catalog_2.png)
+   ![Benachrichtigung zum Produktkatalog mit ausgefüllten Feldern „Titel“ und „Nachricht“](assets/rich_push_catalog_2.png)
 
 1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
@@ -248,7 +248,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
    * **[!UICONTROL Aktionsschaltflächen-URI]**: Geben Sie den URI an, der beim Klicken auf die Schaltfläche ausgeführt werden soll.
    * **[!UICONTROL Anzeigetyp]**: Wählen Sie zwischen vertikaler oder horizontaler Anzeige.
 
-   ![](assets/rich_push_catalog_3.png)
+   ![Produktkatalogoptionen: Text der Aktionsschaltfläche, Farbe der Aktionsschaltfläche, URI der Aktionsschaltfläche und Anzeigetyp](assets/rich_push_catalog_3.png)
 
 1. Klicken Sie im Menü **[!UICONTROL Produktkatalogelemente]** auf **[!UICONTROL Hinzufügen]** und geben Sie die folgenden Details für jedes Element ein:
 
@@ -260,7 +260,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    Stellen Sie sicher, dass Sie maximal drei Elemente einfügen.
 
-   ![](assets/rich_push_catalog_4.png)
+   ![Produktkatalogartikel-Tabelle mit drei Elementen, die Titel, Bild, Preis und URI anzeigen](assets/rich_push_catalog_4.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
@@ -270,19 +270,19 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Produktbewertung]** aus.
 
-   ![](assets/rich_push_rating.png)
+   ![Benachrichtigungstypliste mit ausgewählter Produktbewertung auf der Registerkarte &quot;Android-Inhalt“](assets/rich_push_rating.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Erweiterte Nachricht]** ein.
 
    Der Text der **[!UICONTROL Nachricht]** wird in der ausgeblendeten Ansicht angezeigt, während die **[!UICONTROL Erweiterte Nachricht]** angezeigt wird, wenn die Benachrichtigung erweitert wird.
 
-   ![](assets/rich_push_rating_2.png)
+   ![Benachrichtigung über Produktbewertung mit ausgefüllten Feldern „Titel“ und „Nachricht“](assets/rich_push_rating_2.png)
 
 1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
 1. Geben Sie im Menü **[!UICONTROL Produktbewertungsoptionen]** die URLs für das **[!UICONTROL Bewertungssymbol im nicht ausgewählten Zustand]** und das **[!UICONTROL Bewertungssymbol im ausgewählten Zustand]** ein.
 
-   ![](assets/rich_push_rating_3.png)
+   ![Produktbewertungsoptionen mit Bild-URLs für das Bewertungssymbol im nicht ausgewählten Status und im ausgewählten Status](assets/rich_push_rating_3.png)
 
 1. Klicken Sie im Menü **[!UICONTROL Produktbewertungselemente]** auf **[!UICONTROL Hinzufügen]** und geben Sie Ihren **[!UICONTROL Link-URI]** ein und wählen Sie Ihren **[!UICONTROL Link-Typ]**.
 
@@ -296,11 +296,11 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    Stellen Sie sicher, dass Sie mindestens drei und maximal fünf Werte einfügen.
 
-   ![](assets/rich_push_rating_4.png)
+   ![Tabelle mit Produktbewertungselementen mit drei Link-URI-Einträgen vom Typ Web-URL](assets/rich_push_rating_4.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
-   ![](assets/rich_push_carousel_3.png)
+   ![Benachrichtigungsoptionen und HTTPv1-Zusatzoptionen für eine Karussellbenachrichtigung](assets/rich_push_carousel_3.png)
 
 Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
@@ -308,23 +308,23 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Timer]** aus.
 
-   ![](assets/rich_push_timer.png)
+   ![Liste „Benachrichtigungstyp“ mit ausgewähltem Zeitgeber auf der Registerkarte &quot;Android-Inhalt“](assets/rich_push_timer.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Erweiterte Nachricht]** ein.
 
    Der Text der **[!UICONTROL Nachricht]** wird in der ausgeblendeten Ansicht angezeigt, während die **[!UICONTROL Erweiterte Nachricht]** angezeigt wird, wenn die Benachrichtigung erweitert wird.
 
-   ![](assets/rich_push_timer_2.png)
+   ![Timer-Benachrichtigung mit ausgefüllten Feldern für Titel und Nachricht sowie den Feldern für die alternative Nachricht](assets/rich_push_timer_2.png)
 
 1. Geben Sie den Text, der nach Ablauf des Timers angezeigt werden soll, in die Felder **[!UICONTROL Alternativer Titel]**, **[!UICONTROL Alternative Nachricht]** und **[!UICONTROL Alternative erweiterte Nachricht]** ein.
 
 1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]**, den **[!UICONTROL Hintergrund]** und den **[!UICONTROL Timer]** ein.
 
-   ![](assets/rich_push_timer_3.png)
+   ![Farboptionen der Timer-Benachrichtigung: Titelfarbe, Nachrichtenfarbe, Hintergrundfarbe und Timerfarbe](assets/rich_push_timer_3.png)
 
 1. Legen Sie die **[!UICONTROL Dauer des Timers]** in Sekunden oder den **[!UICONTROL Zeitstempel für Timer-Ende]** auf einen bestimmten Epoch-Zeitstempel fest und fügen Sie die URL für **[!UICONTROL Alternatives Bild]** ein, das nach Ablauf des Timers angezeigt wird.
 
-   ![](assets/rich_push_timer_4.png)
+   ![Timer-Optionen mit einer Timer-Dauer von 3600 und einer alternativen Bild-URL](assets/rich_push_timer_4.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 
@@ -334,19 +334,19 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Rahmenlos]** aus.
 
-   ![](assets/rich_push_bezel.png)
+   ![Benachrichtigungstypliste mit ausgewählter Blende null auf der Registerkarte Android-Inhalt &#x200B;](assets/rich_push_bezel.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Erweiterte Nachricht]** ein.
 
    Der Text der **[!UICONTROL Nachricht]** wird in der ausgeblendeten Ansicht angezeigt, während die **[!UICONTROL Erweiterte Nachricht]** angezeigt wird, wenn die Benachrichtigung erweitert wird.
 
-   ![](assets/rich_push_zero_2.png)
+   ![Blendenbenachrichtigung auf Null setzen, wobei die Felder „Titel“ und „Nachricht“ ausgefüllt sind](assets/rich_push_zero_2.png)
 
 1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
 1. Fügen Sie im Menü **[!UICONTROL Optionen für rahmenlose Displays]** Ihre Bild-URL im Feld **[!UICONTROL Ausgeblendeter Benachrichtigungsstil]** hinzu.
 
-   ![](assets/rich_push_zero_3.png)
+   ![Blendenoptionen auf null mit einer Bild-URL im Stil „Ausgeblendete Benachrichtigung“](assets/rich_push_zero_3.png)
 
 1. Um Ihre Push-Benachrichtigung weiter zu personalisieren, konfigurieren Sie die **[!UICONTROL Benachrichtigungsoptionen]** und die **[!UICONTROL zusätzlichen HTTPv1-Optionen]** Ihrer Push-Benachrichtigung. [Weitere Informationen](#push-advanced)
 

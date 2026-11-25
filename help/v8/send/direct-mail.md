@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 86%
+source-wordcount: '1041'
+ht-degree: 75%
 ---
 # Erstellen von Briefpost-Sendungen
 
@@ -52,14 +52,14 @@ Gehen Sie wie folgt vor, um einen neuen Briefpost-Versand zu erstellen:
 
 >[!NOTE]
 >
->Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](../start/create-message.md).
+>Allgemeine Konzepte zur Versanderstellung finden Sie unter [Erstellen des ersten Versands](../start/create-message.md).
 
 1. Erstellen Sie einen neuen Versand, beispielsweise im Versand-Dashboard.
 1. Wählen Sie die Versandvorlage **Briefpost-Versand (Papier)** aus.
 
-   ![](assets/direct_mail.png)
+   ![Dialogfeld „Neuer Versand“ mit der in der Liste ausgewählten Vorlage „Per Briefpost (Papier) versenden“](assets/direct_mail.png)
 
-1. Geben Sie einen Titel, einen Code und eine Beschreibung für Ihren Versand ein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../start/create-message.md#create-the-delivery).
+1. Geben Sie einen Titel, einen Code und eine Beschreibung für Ihren Versand ein. Weitere Informationen hierzu finden Sie unter [Versand erstellen](../start/create-message.md#create-the-delivery).
 1. Klicken Sie auf **Fortfahren**, um die Eingaben zu bestätigen und in das Fenster zur Nachrichtenkonfiguration zu gelangen.
 
 ## Zielgruppe definieren{#defining-the-direct-mail-audience}
@@ -70,7 +70,7 @@ Postanschriften sind berechnete Felder. Standardmäßig kann eine Anschrift bis 
 
 Eine Anschrift gilt als vollständig angegeben, wenn die Felder Name, Postleitzahl und Ort nicht leer sind. Empfängerinnen und Empfänger mit unvollständigen Adressen werden von Direkt-Mail-Sendungen ausgeschlossen.
 
-Weiterführende Informationen finden Sie in [diesem Abschnitt](../start/create-message.md#target-population).
+Weitere Informationen finden Sie unter [Definieren der Zielgruppe](../start/create-message.md#target-population).
 
 ## Dateiinhalt festlegen{#defining-the-direct-mail-content}
 
@@ -80,17 +80,17 @@ Im Feld **[!UICONTROL Datei]** wird der Name der die extrahierten Daten enthalte
 
 Standardmäßig wird die Extraktionsdatei erstellt und auf dem Server gespeichert. Sie können sie auf Ihrem Computer speichern. Um dies zu tun, aktivieren Sie die Option **[!UICONTROL Nach dem Export erzeugte Datei herunterladen]**. In diesem Fall sind der Pfad zum lokalen Speicherverzeichnis und der Dateiname anzugeben.
 
-![](assets/s_ncs_user_mail_delivery_local_file.png)
+![Registerkarte „Extraktion“ mit aktivierter Option „Generierte Datei herunterladen“ und Angabe eines lokalen Dateipfads](assets/s_ncs_user_mail_delivery_local_file.png)
 
 Bei einem Briefpost-Versand wird der Extraktionsinhalt über den Link **[!UICONTROL Extraktionsdateiformat bearbeiten...]** konfiguriert.
 
-![](assets/s_ncs_user_mail_delivery_format_link.png)
+![Registerkarte „Extraktion“ mit hervorgehobenem Link „Format der Extraktionsdatei bearbeiten“](assets/s_ncs_user_mail_delivery_format_link.png)
 
 Über diesen Link gelangen Sie in den Extraktions-Assistenten, mit dessen Hilfe die zu exportierenden Daten (Spalten) festgelegt werden.
 
-![](assets/s_ncs_user_mail_delivery_format_wz.png)
+![Daten zum Extrahieren des Assistenten mit Feldern, die aus verfügbaren Feldern in die Ausgabespalten gezogen wurden](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../dev/web/publishing-a-web-form.md).
+Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weitere Informationen hierzu finden Sie unter [Web-Formular veröffentlichen](../dev/web/publishing-a-web-form.md).
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weiterf�
 
 Im Rahmen einer Marketing-Kampagne wird die Extraktionsdatei am Extraktionsdatum erstellt. Sie können den Inhalt der extrahierten Datei anzeigen, validieren oder das Format ändern und die Extraktion bei Bedarf neu starten. Nachdem die Datei validiert wurde, können Sie die Benachrichtigungs-E-Mail an den Router senden. Weitere Informationen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=de){target="_blank"}.
 
-In [diesem Abschnitt](../start/create-message.md#validate-the-delivery) werden globale Konzepte zur Validierung eines Versands vorgestellt.
+Allgemeine Konzepte zum Validieren eines Versands finden Sie unter [Vorbereiten und Validieren des Versands](../start/create-message.md#validate-the-delivery).
 
 Die Ausgabedatei eines Briefpost-Versands wird während der Versandanalyse generiert. Der Inhalt der Datei hängt von den ausgewählten Ausgabespalten ab (siehe diesen [Datei](#defining-the-direct-mail-content)).
 
@@ -116,7 +116,7 @@ Prüfen Sie jetzt das Ergebnis der Analyse und den Inhalt der Ausgabedatei und k
 
 Mit der Absendebestätigung wird die Extraktion der Daten in die angegebene Datei gestartet.
 
-![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
+![Starten Sie das Dialogfeld zur Versandbestätigung mit OK und brechen Sie den Versand für Briefpost im Status Ausstehend ab](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
 Nun können Sie den Assistenten schließen und die Versand-Logs auf der Registerkarte **[!UICONTROL Versand]** ansehen, auf die Sie über die Detailansicht des Versands zugreifen können.
 

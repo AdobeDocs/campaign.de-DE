@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 89%
+source-wordcount: '675'
+ht-degree: 85%
 ---
 # Erste Schritte mit Workflows{#gs-with-workflows}
 
@@ -126,7 +126,7 @@ Weitere Informationen über **Workflow-Eigenschaften** finden Sie auf [dieser Se
 
 Auf der Registerkarte **[!UICONTROL Ausführung]** in den **[!UICONTROL Eigenschaften]** Ihres Workflows können Sie Ihren Workflow mit verschiedenen Warehouses verknüpfen und die Verwaltung Ihres Arbeitsaufkommens optimieren. Lesen Sie für weiterführende Informationen über **Warehouses** die [Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
 
-![](assets/warehouse.png)
+![Registerkarte „Ausführung“ der Workflow-Eigenschaften mit geöffneter Dropdown-Liste „Warehouse“: Standard, Kampagne, Import/Export und Kampagnen-Burst](assets/warehouse.png)
 
 Je nach Zweck Ihres Workflows können Sie in der Dropdown-Liste **[!UICONTROL Warehouse]** zwischen den folgenden drei Warehouses wählen:
 
@@ -151,11 +151,11 @@ Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/c
 
 Verwenden Sie Transaktionsnachrichten in Campaign, um Nachrichten zu automatisieren, die von durch Informationssysteme ausgelösten Ereignissen generiert werden. Diese Transaktionsnachrichten können z. B. Rechnungen, Auftragsbestätigungen, Versandbestätigungen, Passwortänderungen, Benachrichtigungen über die Nichtverfügbarkeit von Produkten, Kontoauszüge oder die Erstellung von Website-Konten sein. Diese Nachrichten können einzeln oder in Batches per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
-Weitere Informationen zu den Funktionen von Transaktionsnachrichten finden Sie [&#x200B; (diesem Abschnitt](../send/transactional.md).
+Erfahren Sie mehr über die Funktionen von Transaktionsnachrichten in [Campaign-Transaktionsnachrichten](../send/transactional.md).
 
 Verbinden Sie Adobe Campaign und Adobe Analytics, um Benutzeraktionen abzurufen und nahezu in Echtzeit personalisierte Nachrichten zu versenden.
 
-In [diesem Abschnitt](../start/connect.md) erfahren Sie, wie Sie Campaign mit anderen Lösungen integrieren.
+Erfahren Sie, wie Sie Campaign mit anderen Lösungen in [Verbindung mit Campaign v8 herstellen](../start/connect.md)
 
 
 ## End-to-End-Anwendungsfälle von Workflows{#end-to-end-uc}

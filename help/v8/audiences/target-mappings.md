@@ -36,10 +36,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
+source-wordcount: '456'
+ht-degree: 82%
 ---
 # Arbeiten mit Zielgruppen-Mappings{#gs-target-mappings}
 
@@ -71,7 +71,7 @@ Sie können auch selbst ein Zielgruppen-Mapping erstellen. Sie benötigen beispi
 * eine benutzerdefinierte Empfängertabelle verwendet wird,
 * eine Filterdimension konfiguriert wird, die sich von der integrierten Zielgruppendimension auf dem Zielgruppen-Mapping-Bildschirm unterscheidet.
 
-Weitere Informationen über benutzerdefinierte Empfängertabellen finden sich auf [dieser Seite](../dev/custom-recipient.md).
+Weitere Informationen zu benutzerdefinierten Empfängertabellen finden Sie unter [Ändern der standardmäßigen Empfängertabelle](../dev/custom-recipient.md).
 
 Der Adobe Campaign-Assistent zur Erstellung von Zielgruppen-Mappings hilft Ihnen bei der Erstellung aller Schemata, die zur Verwendung Ihres benutzerdefinierten Zielgruppen-Mappings erforderlich sind.
 
@@ -79,16 +79,16 @@ Der Adobe Campaign-Assistent zur Erstellung von Zielgruppen-Mappings hilft Ihnen
 
 1. Erstellen Sie ein neues Zielgruppen-Mapping und wählen Sie Ihr benutzerdefiniertes Schema als Zielgruppendimension aus.
 
-   ![](assets/new-target-mapping.png)
+   ![Schritt Zielgruppendimension auswählen des neuen Zielgruppen-Mapping-Assistenten mit der Bezeichnung Clients und der Zielgruppendimension Verträge.](assets/new-target-mapping.png)
 
 
 1. Geben Sie die Felder an, in denen die Profilinformationen gespeichert sind: Nachname, Vorname, E-Mail, Adresse etc.
 
-   ![](assets/wf_new_mapping_define_join.png)
+   ![Schritt „Adressformulare bearbeiten“, in dem jedes Feld der Versandadresse, z. B. E-Mail, mit einem Feld der neuen Dimension verknüpft ist.](assets/wf_new_mapping_define_join.png)
 
 1. Geben Sie die Parameter für die Speicherung der Informationen an, einschließlich des Suffix der Erweiterungsschemata, damit diese leicht identifiziert werden können.
 
-   ![](assets/wf_new_mapping_define_names.png)
+   ![Speicherschritt mit Namespace, Suffix der Erweiterungsschemata und Ausschlussoptionen zum Speichern von Ausschlüssen und Nachrichten.](assets/wf_new_mapping_define_names.png)
 
    Wählen Sie aus, ob Ausschlüsse (**excludelog**) mit Nachrichten (**broadlog**) oder in einer separaten Tabelle gespeichert werden sollen.
 
@@ -96,6 +96,6 @@ Der Adobe Campaign-Assistent zur Erstellung von Zielgruppen-Mappings hilft Ihnen
 
 1. Wählen Sie dann die entsprechenden Erweiterungen aus. Der Erweiterungstyp hängt von Ihren Campaign-Einstellungen und Add-ons ab.
 
-   ![](assets/wf_new_mapping_define_extensions.png)
+   ![Schritt Erweiterungen mit der Option Speicherschema für Vorschläge generieren , die unter Angebotsmodul ausgewählt wurde.](assets/wf_new_mapping_define_extensions.png)
 
    Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Erstellung des Versand-Mappings zu beginnen: Alle verknüpften Tabellen werden automatisch auf der Basis der ausgewählten Parameter erstellt.

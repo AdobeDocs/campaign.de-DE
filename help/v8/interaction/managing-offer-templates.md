@@ -23,10 +23,10 @@ feature_v2:
     internal-label: Offers
   - id: baf8e746-117b-5e73-b179-0a83edc0295f
     internal-label: Templates
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 93%
+source-wordcount: '211'
+ht-degree: 76%
 ---
 # Angebotsvorlagen{#managing-offer-templates}
 
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um eine Angebotsvorlage zu erstellen:
 1. Gehen Sie in den Knoten **Ressourcen** > **Vorlagen** > **Angebotsvorlagen**.
 1. Klicken Sie auf **Neu**.
 
-   ![](assets/offer_model_001.png)
+   ![Ordner „Angebotsvorlagen“ im Explorer, mit hervorgehobener Schaltfläche „Neu“ und der neuen Registerkarte „Allgemein“ des Angebots](assets/offer_model_001.png)
 
 1. Konfigurieren Sie die Vorlage auf die gleiche Weise wie ein Angebot und bestätigen Sie die Konfiguration durch Klick auf die Schaltfläche **Speichern**.
 
@@ -52,10 +52,10 @@ Gehen Sie wie folgt vor, um eine Angebotsvorlage (nativ oder benutzerdefiniert) 
 1. Gehen Sie in den Knoten **Ressourcen > Vorlagen > Angebotsvorlagen**.
 1. Klicken Sie mit der rechten Maustaste auf die Vorlage, die Sie duplizieren möchten, und wählen Sie die Option **Duplizieren** aus dem Kontextmenü aus.
 
-   ![](assets/offer_model_002.png)
+   ![Kontextmenü der Angebotsvorlagen mit hervorgehobenem Befehl „Duplizieren“](assets/offer_model_002.png)
 
 1. Ändern Sie gegebenenfalls diverse Parameter und schließen Sie den Vorgang ab, indem Sie auf **Speichern** klicken.
 
 Die Vorlage wird zukünftig bei der Angebotserstellung vorgeschlagen.
 
-![](assets/offer_modelcreated_001.png)
+![Dialogfeld zur Auswahl von Marketing-Angeboten im Ordner Angebotsvorlagen, in dem zwei Angebotsvorlagen aufgelistet sind](assets/offer_modelcreated_001.png)

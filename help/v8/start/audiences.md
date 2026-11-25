@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 71%
+source-wordcount: '545'
+ht-degree: 67%
 ---
 # Arbeiten mit Zielgruppen in Campaign{#gs-ac-audiences}
 
@@ -44,13 +44,13 @@ Profile stellen die Kontakte dar, die in Ihrer Adobe Campaign-Datenbank gespeich
 
 Eine Liste ist ein statischer Satz von Kontakten, die in Versandaktionen als Zielkontakte dienen oder beim Importieren bzw. bei einer Workflow-Ausführung aktualisiert werden können. So kann beispielsweise eine Population, die über eine Abfrage aus der Datenbank extrahiert wurde, als Liste gespeichert werden.
 
-Informationen zum Erstellen und Verwalten von Listen finden Sie auf [dieser Seite](../audiences/create-audiences.md).
+Erfahren Sie, wie Sie in Listen erstellen und verwalten [Profil-Audiences in Campaign erstellen](../audiences/create-audiences.md).
 
 ## Filtern der Datenbank{#filter-the-database}
 
 Die Filterkonfiguration ermöglicht die **[!UICONTROL dynamische]** Auswahl von Daten aus einer Liste. Bei Änderung der Daten werden die gefilterten Daten aktualisiert. Sie können eigene Filter erstellen oder die integrierten Filter verwenden, um eine Zielgruppe zu definieren.
 
-Informationen zum Erstellen und Verwalten von Filtern finden Sie auf [dieser Seite](../audiences/create-filters.md).
+Erfahren Sie, wie Sie in Filter erstellen und verwalten [Arbeiten mit Filtern in Adobe Campaign](../audiences/create-filters.md).
 
 ## Eine Zielgruppe in einem Workflow erstellen
 

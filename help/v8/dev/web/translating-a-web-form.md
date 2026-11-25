@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1680'
-ht-degree: 98%
+source-wordcount: '1920'
+ht-degree: 85%
 ---
 # Übersetzen eines Web-Formulars{#translating-a-web-form}
 
@@ -57,7 +57,7 @@ Um eine oder mehr Zielsprachen zu definieren, wählen Sie in der Webanwendung di
 >
 >In diesem Fenster können Sie auch die Standardsprache und die Bearbeitungssprache ändern.
 
-![](assets/s_ncs_admin_survey_add_lang.png)
+![Registerkarte „Lokalisierung der Webanwendung“ mit Design und Standardsprache sowie anderen Sprachen Französisch und Spanisch](assets/s_ncs_admin_survey_add_lang.png)
 
 Wenn Sie zu einer Webanwendung Zielsprachen hinzufügen (oder wenn die Standardsprache oder die Bearbeitungssprache unterschiedlich sind), erscheint im Tab **[!UICONTROL Bearbeiten]** der Untertab **[!UICONTROL Übersetzungen]**, über den Übersetzungen verwaltet werden können.
 
@@ -73,7 +73,7 @@ Wenn Sie diesen Tab das erste Mal öffnen, sind keine Daten vorhanden. Wählen S
 
 Adobe Campaign ruft Titel von Feldern und Strings ab, die in den Registerkarten **[!UICONTROL Texte]** aller statischen Elemente definiert wurden: HTML-Bausteine, JavaScript usw. Weitere Informationen zu statischen Elementen finden Sie unter [Statische Elemente in einem Web-Formular](static-elements-in-a-web-form.md).
 
-![](assets/s_ncs_admin_survey_trad_tab.png)
+![Registerkarte „Übersetzungen“ einer Web-Anwendung mit dem Link „Abrufen der zu übersetzenden Zeichenfolgen“ und den zu übersetzenden Zeichenfolgen“](assets/s_ncs_admin_survey_trad_tab.png)
 
 >[!CAUTION]
 >
@@ -91,7 +91,7 @@ Bei Zeichenfolgen, die noch nie übersetzt wurden, ist das Feld **[!UICONTROL Te
 
 Standardmäßig wird jede Übersetzungssprache der Web-Anwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Wählen Sie die Schaltfläche **[!UICONTROL Filter]** und dann die Option **[!UICONTROL Nach Sprache oder Status]** aus, um die jeweiligen Dropdown-Listen anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weitere Informationen zu Filtern finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
-![](assets/s_ncs_admin_survey_trad_tab_en.png)
+![Registerkarte Übersetzungen Filter des Menüs Nach Sprache oder Status, wobei französische Zeichenfolgen mit dem Status Zu übersetzen gefiltert werden](assets/s_ncs_admin_survey_trad_tab_en.png)
 
 Gehen Sie zur Dropdown-Liste **[!UICONTROL Sprache]**, um die Übersetzungssprache auszuwählen.
 
@@ -101,7 +101,7 @@ Wenn Sie nur unübersetzte Strings anzeigen möchten, wählen Sie in der Dropdow
 
 1. Um ein Wort zu übersetzen, führen Sie einen Doppelklick auf die entsprechende Zeile in der Liste der Strings aus.
 
-   ![](assets/s_ncs_admin_survey_trad_tab_add_term.png)
+   ![Dialogfeld „Übersetzung“ mit der Quellzeichenfolge, der französischen Übersetzung, der Option „Übersetzung genehmigt“ und „Speichern“](assets/s_ncs_admin_survey_trad_tab_add_term.png)
 
    Im oberen Bereich des Fensters wird der Quellstring angezeigt.
 
@@ -125,7 +125,7 @@ Zeichenfolgen können exportiert und dann wieder importiert werden, um sie mit e
 
 1. Wählen Sie die Web-Anwendung(en) aus, deren Strings Sie exportieren möchten. Führen Sie dann einen Rechtsklick darauf aus und wählen Sie **[!UICONTROL Aktionen > Strings zur Übersetzung exportieren...]** aus.
 
-   ![](assets/s_ncs_admin_survey_trad_export.png)
+   ![Kontextmenü der Liste der Webanwendungen mit Rechtsklick und hervorgehobener Option „Zeichenfolgen zur Übersetzung exportieren“](assets/s_ncs_admin_survey_trad_export.png)
 
 1. Wählen Sie eine **[!UICONTROL Exportstrategie]** aus :
 
@@ -146,7 +146,7 @@ Zeichenfolgen können exportiert und dann wieder importiert werden, um sie mit e
 1. Wählen Sie dann den **[!UICONTROL Zielordner]**, in dem Dateien aufgezeichnet werden.
 1. Wählen Sie das Dateiformat (**[!UICONTROL CSV]** oder **[!UICONTROL XLIFF]**) und danach **[!UICONTROL Start]** aus.
 
-![](assets/s_ncs_admin_survey_trad_export_start.png)
+![Exportieren von Zeichenfolgen für den Übersetzungs-Assistenten mit einer Datei pro Sprache, einem Zielordner, CSV- oder XLIFF-Format und Start](assets/s_ncs_admin_survey_trad_export_start.png)
 
 >[!NOTE]
 >
@@ -164,11 +164,11 @@ Nach dem Abschluss der externen Übersetzung können Sie die übersetzten Dateie
    >
    >Es ist nicht erforderlich, die von der Übersetzung betroffenen Webanwendungen auszuwählen. Platzieren Sie den Cursor an einer beliebigen Stelle in der Liste der Webanwendungen.
 
-   ![](assets/s_ncs_admin_survey_trad_import.png)
+   ![Kontextmenü der Liste der Webanwendungen mit Rechtsklick und hervorgehobener Option „Übersetzte Zeichenfolgen importieren“](assets/s_ncs_admin_survey_trad_import.png)
 
 1. Wählen Sie die zu importierende Datei und dann **[!UICONTROL Upload]** aus.
 
-   ![](assets/s_ncs_admin_survey_trad_import_start.png)
+   ![Assistent zum Importieren übersetzter Zeichenfolgen, wobei eine lokale CSV-Datei zum Importieren und die Schaltfläche Hochladen ausgewählt ist](assets/s_ncs_admin_survey_trad_import_start.png)
 
 >[!NOTE]
 >
@@ -178,13 +178,13 @@ Nach dem Abschluss der externen Übersetzung können Sie die übersetzten Dateie
 
 Webformulare werden in der Standardsprache angezeigt, die auf der Registerkarte **[!UICONTROL Lokalisierung]** in den Eigenschaften der Web-Anwendung angegeben ist. Um Sprachen zu ändern, müssen Sie die folgenden Zeichen am Ende der URL hinzufügen (wobei **xx** das Symbol der Sprache ist):
 
-```
+```text
 ?lang=xx
 ```
 
 wenn die Sprache der erste oder einzige Parameter der URL ist. Beispiel: **https://myserver/webApp/APP34**
 
-```
+```text
 &lang=xx
 ```
 
@@ -434,7 +434,7 @@ Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind u
 
 Das folgende Webformular ist in vier Sprachen verfügbar: Deutsch, Englisch, Französisch und Spanisch. Die Zeichenfolgen wurden alle über den Tab **[!UICONTROL Übersetzung]** des Webformulars übersetzt. Da die Standardsprache Englisch ist, verwenden Sie bei der Veröffentlichung der Umfrage die Standard-URL, um den Inhalt auf Englisch anzuzeigen.
 
-![](assets/s_ncs_admin_survey_trad_sample_fr.png)
+![Web-Formular-Begrüßungsseite in englischer Sprache mit Feldern für Titel, Name, E-Mail, Telefon und Adresse sowie der Schaltfläche Weiter](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
 Fügen Sie **?lang=fr** an das Ende der URL hinzu, um den Inhalt auf Französisch anzuzeigen:
 
@@ -442,7 +442,7 @@ Fügen Sie **?lang=fr** an das Ende der URL hinzu, um den Inhalt auf Französisc
 >
 >Die Liste der Symbole für jede Sprache finden Sie in [Anzeigesprache in Formularen ändern](#changing-forms-display-language).
 
-![](assets/s_ncs_admin_survey_trad_sample_en.png)
+![Nach dem Hinzufügen von lang=fr zur URL wird dieselbe Begrüßungsseite auf Französisch angezeigt, wobei der lang-Parameter hervorgehoben ist](assets/s_ncs_admin_survey_trad_sample_en.png)
 
 Fügen Sie **?lang=es** oder **?lang=de** hinzu, um den Inhalt auf Spanisch oder Deutsch anzuzeigen.
 
@@ -463,18 +463,18 @@ System-Strings sind native Strings, die von allen Web-Anwendungen verwendet werd
 
 Wenn Sie Ihre Webanwendung in eine Sprache übersetzen, für die es kein System-Wörterbuch gibt, erscheint ein Warnhinweis, der Ihnen mitteilt, dass manche Übersetzungen fehlen.
 
-![](assets/s_ncs_admin_survey_trad_error.png)
+![Warnung auf der Registerkarte Übersetzungen: 27 fehlende Übersetzungen für Sprachen es und fr im Systemwörterbuch](assets/s_ncs_admin_survey_trad_error.png)
 
 Gehen Sie wie folgt vor, um eine Sprache hinzuzufügen:
 
 1. Gehen Sie zum Adobe Campaign-Baum und wählen Sie **[!UICONTROL Administration > Konfiguration > Allgemeines Wörterbuch > System-Wörterbuch]** aus .
 1. Wählen Sie im oberen Bereich des Fensters den zu übersetzenden Systemstring und danach im unteren Bereich die Option **[!UICONTROL Hinzufügen]** aus.
 
-   ![](assets/s_ncs_admin_survey_trad_system_translation.png)
+   ![Systemwörterbuch unter „Globales Wörterbuch“ mit einer Zeichenfolge wie „buttonPrevious“ ausgewählt und die Schaltfläche „Hinzufügen“ hervorgehoben](assets/s_ncs_admin_survey_trad_system_translation.png)
 
 1. Wählen Sie die Übersetzungssprache aus und geben Sie eine Übersetzung für die Zeichenfolge ein. Sie können die Übersetzung genehmigen, indem Sie die Option **[!UICONTROL Übersetzung genehmigt]** aktivieren.
 
-   ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
+   ![Übersetzungsdialog für buttonPrevious mit ausgewählter Option für übersetzten Text und genehmigte Übersetzung](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
    >[!NOTE]
    >
@@ -490,8 +490,8 @@ Um Web-Anwendungen in andere Sprachen als die Standardsprachen zu übersetzen (s
 
 1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Plattform > Aufzählungen]** der Adobe Campaign-Baumstruktur und wählen Sie **[!UICONTROL Für die Übersetzung verfügbare Sprachen]** aus der Liste aus. Die Liste der verfügbaren Übersetzungen wird im unteren Bereich des Fensters angezeigt.
 
-   ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
+   ![Auflistungen mit ausgewählten Sprachen für die Übersetzung (dictionaryLocale) und hervorgehobener Schaltfläche „Hinzufügen“](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie dann den **[!UICONTROL internen Namen]**, den **[!UICONTROL Titel]** und die Kennung des Bildes (Flag) ein. Wenden Sie sich an Ihre Administration, um ein neues Bild hinzuzufügen.
 
-   ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)
+   ![Dialogfeld „Auflistungswert“ für eine neue Sprache mit den Feldern „Interner Name“, „Walisisch beschriften“ und „Bild“](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)

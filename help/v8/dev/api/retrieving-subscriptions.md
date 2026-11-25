@@ -22,7 +22,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 94%
@@ -46,7 +46,7 @@ Dies ist ein zweistufiges Verfahren.
 
 Führen Sie eine GET-Anfrage aus, um den Dienst abzurufen.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -56,7 +56,7 @@ Führen Sie eine GET-Anfrage aus, um den Dienst abzurufen.
 
 Es wird die Anmeldungs-URL für den Dienst zurückgegeben.
 
-```
+```json
   {
     ...
     "messageType": "email",
@@ -70,7 +70,7 @@ Es wird die Anmeldungs-URL für den Dienst zurückgegeben.
 
 Führen Sie eine GET-Anfrage für die Anmeldungs-URL aus.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -80,7 +80,7 @@ Führen Sie eine GET-Anfrage für die Anmeldungs-URL aus.
 
 Eine Liste der Anmeldungen für den Dienst mit jedem zugehörigen Profil wird angezeigt.
 
-```
+```json
   {
     ...
     "service": ...,
@@ -108,7 +108,7 @@ Dies ist ein zweistufiges Verfahren.
 
 Führen Sie eine GET-Anfrage aus, um das Profil abzurufen.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -118,7 +118,7 @@ Führen Sie eine GET-Anfrage aus, um das Profil abzurufen.
 
 Gibt die Anmeldungs-URL für das Profil zurück.
 
-```
+```json
   {
     ...
     "postalAddress":...,
@@ -132,7 +132,7 @@ Gibt die Anmeldungs-URL für das Profil zurück.
 
 Führen Sie eine GET-Anfrage für die Anmeldungs-URL aus.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -142,7 +142,7 @@ Führen Sie eine GET-Anfrage für die Anmeldungs-URL aus.
 
 Es wird eine Liste der Dienste zurückgegeben, die das Profil abonniert hat.
 
-```
+```json
   {
     ...
     "PKey": "<PKEY>",

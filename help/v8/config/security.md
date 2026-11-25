@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '2957'
-ht-degree: 62%
+source-wordcount: '3000'
+ht-degree: 58%
 ---
 # Best Practices für die Campaign-Sicherheit {#ac-security}
 
@@ -82,7 +82,7 @@ Adobe Campaign bietet derzeit keine empfohlenen sicheren Konfigurationsanleitung
 
 ## Datenschutz
 
-Um den Datenschutz korrekt zu handhaben und personenbezogene Daten korrekt zu verwalten, müssen Sie die für die Region(en) geltenden Gesetze einhalten, in denen Sie tätig sind. Die Funktionen von Adobe Campaign unterstützen Sie bei der Einhaltung der auf [dieser Seite](../start/privacy.md) aufgeführten Vorschriften.
+Um den Datenschutz korrekt zu handhaben und personenbezogene Daten korrekt zu verwalten, müssen Sie die für die Region(en) geltenden Gesetze einhalten, in denen Sie tätig sind. Die Funktionen von Adobe Campaign helfen Ihnen bei der Einhaltung der unter [Verwalten von Datenschutzanfragen in Campaign](../start/privacy.md) aufgeführten Vorschriften
 
 ### Adobe Experience Cloud – Datenschutz {#experience-cloud-privacy}
 
@@ -98,7 +98,7 @@ Adobe Campaign ist Teil der Adobe Experience Cloud-Lösungen. Die Art und Weise,
 
 * **Verwendung von Adobe Experience Cloud zur Erfassung von Informationen**
 
-  * Adobe Experience Cloud-Lösungen verwenden Cookies und ähnliche Technologien, wie Webbeacons (auch als Tags oder Pixel bezeichnet), um die Erfassung von Informationen zu ermöglichen. Weitere Informationen zu Cookies und Tracking-Funktionen mit Adobe Campaign finden Sie in [diesem Abschnitt](#tracking-capabilities).
+  * Adobe Experience Cloud-Lösungen verwenden Cookies und ähnliche Technologien, wie Webbeacons (auch als Tags oder Pixel bezeichnet), um die Erfassung von Informationen zu ermöglichen. Weitere Informationen zu Cookies und Tracking-Funktionen mit Adobe Campaign finden Sie unter [Tracking-Funktionen](#tracking-capabilities).
   * Sie können Adobe Experience Cloud-Technologien auch in Ihren mobilen Apps verwenden. Weitere Informationen zu mobilen Sendungen mit Campaign finden Sie unter [SMS-Kanal](../send/sms/sms-channel.md) und „Mobile-App-Kanal“.
 
 * **Die Datenschutzentscheidungen Ihrer Benutzer bezüglich Ihrer Verwendung von Adobe Experience Cloud**
@@ -142,7 +142,7 @@ Die Personas in unserem Beispiel haben folgende Rollen:
 
 * **Adobe Campaign** ist der **Auftragsverarbeiter**.
 
-![](assets/privacy-gdpr-flow.png)
+![Ablauf der Datenschutzanfrage: Laura sendet eine Anfrage, Anne fragt Adobe Campaign ab, die Ergebnisse werden zurückgegeben, und Anne antwortet auf Laura](assets/privacy-gdpr-flow.png)
 
 Dies ist das übliche Verfahren für ein derartiges Szenario:
 
@@ -160,19 +160,19 @@ Mit Adobe Campaign können Sie Daten, einschließlich personenbezogener und vert
 
 * Fordern Sie die Empfänger immer auf, dem Empfang von Nachrichten zuzustimmen. Dazu müssen Sie Opt-out-Anfragen so schnell wie möglich erfüllen und das Einverständnis durch einen Anmeldeprozess mit zweifacher Bestätigung überprüfen. Weitere Informationen hierzu finden Sie unter [Abonnement-Formular mit zweifacher Bestätigung erstellen](../dev/web/use-cases-web-forms.md).
 * Importieren Sie keine betrügerischen Listen und verwenden Sie Testadressen, um sicherzustellen, dass Ihre Client-Datei nicht betrügerisch verwendet wird. Weiterführende Informationen dazu finden Sie im Abschnitt [Über Testadressen](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}.
-* Mithilfe von Einverständnisverwaltung und Berechtigungs-Management können Sie die Voreinstellungen Ihrer Empfänger erfassen und verwalten, wer in Ihrem Unternehmen auf welche Daten zugreifen kann. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#consent).
-* Erleichtern und verwalten Sie Datenschutzanfragen von Ihren Empfängern. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#privacy-requests).
+* Mithilfe von Einverständnisverwaltung und Berechtigungs-Management können Sie die Voreinstellungen Ihrer Empfänger erfassen und verwalten, wer in Ihrem Unternehmen auf welche Daten zugreifen kann. Weitere Informationen hierzu finden Sie unter [Einverständnis, Datenbeibehaltung und Benutzerrollen](#consent).
+* Erleichtern und verwalten Sie Datenschutzanfragen von Ihren Empfängern. Weitere Informationen hierzu finden Sie unter [Datenschutzanfragen](#privacy-requests).
 
 ## Datenschutzverwaltung {#privacy-management}
 
 Die Datenschutzverwaltung bezieht sich auf alle Prozesse und Tools, die Ihnen bei der Einhaltung von Datenschutzbestimmungen (DSGVO, CCPA usw.) helfen.
 
 Adobe Campaign bietet Ihnen verschiedene Funktionen zur Datenschutzverwaltung:
-* Einverständnisverwaltung, Datenbeibehaltung und Benutzerrollen. Siehe [diesen Abschnitt](#consent).
-* Datenschutzanfragen (Recht auf Zugriff und Recht auf Vergessenwerden). Siehe [diesen Abschnitt](#privacy-requests).
+* Einverständnisverwaltung, Datenbeibehaltung und Benutzerrollen. Siehe [Einverständnis, Datenbeibehaltung und Rollen](#consent).
+* Datenschutzanfragen (Recht auf Zugriff und Recht auf Vergessenwerden). Siehe [Datenschutzanfragen](#privacy-requests).
 * Abmeldung (Opt-out) vom Verkauf von personenbezogenen Daten (CCPA-spezifisch).
 
-Die wichtigsten Datenschutzfunktionen in Campaign und ein Beispiel der beteiligten Personas werden in [diesem Abschnitt](#personal-data) vorgestellt.
+Die wichtigsten Datenschutzfunktionen in Campaign und ein Beispiel der beteiligten Personas werden unter &quot;[&#x200B; und Personas“ &#x200B;](#personal-data).
 
 ### Einverständnis, Datenbeibehaltung und Benutzerrollen {#consent}
 
@@ -190,9 +190,9 @@ Adobe Campaign bietet zusätzliche Funktionen, mit denen Sie sich als Datenveran
 
 * Das **Recht auf Vergessenwerden** (Löschanfrage) berechtigt die betroffene Person dazu, vom Datenverantwortlichen die Löschung ihrer personenbezogenen Daten zu verlangen.
 
-Näheres zu Anfragen zum **Zugriff** und zur **Löschung** finden Sie in [diesem Abschnitt](../start/privacy.md).
+Die Anfragen **Zugriff** und **Löschen** werden unter [Verwalten von Datenschutzanfragen in Campaign](../start/privacy.md) aufgeführt.
 
-Die Implementierungsschritte zum Erstellen dieser Anfragen werden in [diesem Abschnitt](../start/privacy.md) beschrieben.
+Die Implementierungsschritte zum Erstellen dieser Anfragen werden unter [Verwalten von Datenschutzanfragen in Campaign“ &#x200B;](../start/privacy.md).
 
 ## Tracking-Funktionen {#tracking-capabilities}
 
@@ -214,13 +214,13 @@ Vorschriften wie die EU-Datenschutz-Grundverordnung (DSGVO) besagen, dass Untern
 
 Mit Adobe Campaign können Sie die gesendeten E-Mails und das Verhalten Ihrer Versandempfänger verfolgen: Öffnungen, Klicks auf Links, Abmeldungen usw. Weitere Informationen hierzu finden Sie unter [Über Nachrichten](../start/gs-message.md).
 
-Fügen Sie zu diesem Zweck getrackte Links zu Ihren Nachrichten hinzu, um die Wirkung Ihres Versands und das Verhalten Ihrer Empfängerinnen und Empfänger auf der Registerkarte „Tracking“ des Versand-Dashboards zu messen. Tracking-Daten werden im Bericht zu Trackingindikatoren interpretiert. Weiterführende Informationen zum Tracking finden Sie auf [dieser Seite](../send/tracking.md).
+Fügen Sie zu diesem Zweck getrackte Links zu Ihren Nachrichten hinzu, um die Wirkung Ihres Versands und das Verhalten Ihrer Empfängerinnen und Empfänger auf der Registerkarte „Tracking“ des Versand-Dashboards zu messen. Tracking-Daten werden im Bericht zu Trackingindikatoren interpretiert. Weitere Informationen zum Tracking finden Sie unter [Erste Schritte mit dem Nachrichten-Tracking](../send/tracking.md).
 
 ### Webtracking {#web-tracking}
 
 >[!AVAILABILITY]
 >
->Webtracking ist in Campaign v8 nicht verfügbar. Weitere Informationen zu nicht verfügbaren Funktionen finden Sie auf [dieser Seite](../start/v7-to-v8.md#gs-unavailable-features).
+>Webtracking ist in Campaign v8 nicht verfügbar. Weitere Informationen zu nicht verfügbaren Funktionen finden Sie unter [Nicht verfügbare Funktionen](../start/v7-to-v8.md#gs-unavailable-features).
 
 ## Daten- und Datenschutz {#data-and-pii-protection}
 
@@ -248,7 +248,7 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements
 * **Produktprofile konsistent verwenden** - Weisen Sie in Admin Console vorzugsweise Benutzende Produktprofilen (Benutzergruppen) zu. Achten Sie auf eine konsistente Benennung (z. B. `campaign - <instance> - <group>`). Siehe [Erste Schritte mit Berechtigungen](../start/gs-permissions.md).
 * **Zugriff auf das Control**: In Campaign v8 können Produktprofile oder spezifische Berechtigungen, deren Name „Admin“ enthält, Zugriff auf das Campaign Control Panel gewähren. Verwenden Sie „admin“ nicht in Profil- oder Gruppennamen, es sei denn, diese Benutzer sollten Zugriff auf das Control Panel haben.
 
-Weiterführende Informationen zu Berechtigungen finden Sie in [diesem Abschnitt](../start/gs-permissions.md).
+Weitere Informationen zu Berechtigungen finden Sie unter [Erste Schritte mit Berechtigungen in Campaign v8](../start/gs-permissions.md).
 
 ## Authentifizierung und Sitzung {#authentication-and-session}
 
@@ -292,7 +292,7 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 
 Sie müssen sicherstellen, dass keine authentifizierten Benutzer mit unzureichender Berechtigung auf die verschlüsselten Passwörter zugreifen können. Dazu können Sie den Zugriff entweder auf Passwortfelder oder auf die gesamte Entität einschränken.
 
-Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. Weitere Informationen finden Sie auf [dieser Seite](../dev/restrict-pi-view.md).
+Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. Weitere Informationen finden Sie unter [Anzeige von personenbezogenen Daten &#x200B;](../dev/restrict-pi-view.md).
 
 1. Gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL Konfigurieren]** > **[!UICONTROL Datenschemata]**.
 
@@ -304,7 +304,7 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Kont
 
    Das Hauptelement (`<element name="extAccount" ... >`) können Sie ersetzen durch:
 
-   ```
+   ```xml
    <element name="extAccount">
        <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
        <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
@@ -325,7 +325,7 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Kont
 
    Ihr erweitertes srcSchema sieht dann folgendermaßen aus:
 
-   ```
+   ```xml
    <...>
        <element name="extAccount">
            <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>

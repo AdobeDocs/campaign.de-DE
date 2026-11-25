@@ -15,10 +15,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 98%
+source-wordcount: '1034'
+ht-degree: 77%
 ---
 # Umfrage entwerfen{#building-a-survey}
 
@@ -36,7 +36,7 @@ Der Zugriff auf Webformulare erfolgt über den Knoten **[!UICONTROL Ressourcen >
 
 Wählen Sie die Umfragenvorlage (standardmäßig **[!UICONTROL newSurvey]**) aus.
 
-![](assets/s_ncs_admin_survey_select_template.png)
+![Dialogfeld „Neue Web-Anwendung“ mit der Vorlagenliste, das zur Auswahl einer Umfrage oder Web-Formularvorlage geöffnet ist.](assets/s_ncs_admin_survey_select_template.png)
 
 Die Seiten des Formulars werden mit einem speziellen Editor erstellt, der die Definition und Konfiguration von Eingabefeldern (Text), Auswahlfeldern (Listen, Kontrollkästchen usw.) und statischen Elementen (Bildern, HTML-Inhalten usw.) ermöglicht. Sie können in „Containern“ gesammelt und nach Bedarf angelegt werden. [Weitere Informationen](#adding-questions).
 
@@ -48,7 +48,7 @@ Die Seiten des Formulars werden mit einem speziellen Editor erstellt, der die De
 
 Über Formularfelder können Benutzer Informationen eingeben und Optionen auswählen. Diese Felder werden für jede Formularseite mit der ersten Schaltfläche der Symbolleiste im Menü **[!UICONTROL Mithilfe des Assistenten hinzufügen]** erstellt.
 
-![](assets/s_ncs_admin_survey_add_field_menu.png)
+![Der Assistent zur Felderstellung wurde im Assistenten über Hinzufügen geöffnet. Es stehen vier Feldoptionen zur Verfügung, mit denen Sie eine zu importierende Frage beantworten können.](assets/s_ncs_admin_survey_add_field_menu.png)
 
 >[!NOTE]
 >
@@ -65,13 +65,13 @@ Wenn Sie einer Umfrage ein Feld hinzufügen, müssen Sie den Typ auswählen. Fol
 
    >[!NOTE]
    >
-   >Speichermodi und Feldimporte werden in [diesem Abschnitt](managing-answers.md#storing-collected-answers) beschrieben.
+   >Speichermodi und Feldimporte werden unter &quot;[&#x200B; Antworten speichern“ &#x200B;](managing-answers.md#storing-collected-answers).
 
 Die Art des hinzuzufügenden Felds (Dropdown-Liste, Textfeld, Kontrollkästchen usw.) hängt vom ausgewählten Speichermodus ab. Der Feldtyp kann im Feld **[!UICONTROL Typ]** auf der Registerkarte **[!UICONTROL Allgemein]** geändert werden. Achten Sie dabei aber darauf, dass der Feldtyp zum Datentyp passt.
 
-![](assets/s_ncs_admin_survey_change_type.png)
+![Registerkarte „Allgemein“ des Seiteneditors mit geöffneter Typenliste, auf der Multiple Choice, das Kombinationsfeld und andere Feldtypen angezeigt werden.](assets/s_ncs_admin_survey_change_type.png)
 
-Die unterschiedlichen Typen verfügbarer Felder werden in [diesem Abschnitt](../web/about-web-forms.md) beschrieben.
+Die verschiedenen verfügbaren Feldtypen werden unter „Erste [&#x200B; mit Web-Formularen“ &#x200B;](../web/about-web-forms.md).
 
 ## Elemente einer Umfrage {#survey-specific-elements}
 
@@ -81,11 +81,11 @@ Online-Umfragen basieren auf den Funktionen von Web-Anwendungen. Im Folgenden we
 
 Für Steuerelemente des Typs **[!UICONTROL Multiple Choice]** können Sie eine Mindest- und Höchstanzahl von Auswahlmöglichkeiten definieren. Beispielsweise können Sie mit dieser Option die Auswahl auf mindestens **2** Werte und höchstens **4** Werte aus den verfügbaren Optionen erzwingen:
 
-![](assets/s_ncs_admin_survey_multichoice_ex1.png)
+![Umfrageseite Bitte wählen Sie Ihre Interessen mit Kontrollkästchen aus, drei bis vier Optionen sind ausgewählt.](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
 Wenn die Anzahl der ausgewählten Optionen zu groß oder zu klein ist, wird eine entsprechende Nachricht angezeigt.
 
-![](assets/s_ncs_admin_survey_multichoice_ex2.png)
+![Interessensbefragungsseite mit der Fehlermeldung Bitte wählen Sie nicht mehr als vier Interessen.](assets/s_ncs_admin_survey_multichoice_ex2.png)
 
 >[!NOTE]
 >
@@ -93,11 +93,11 @@ Wenn die Anzahl der ausgewählten Optionen zu groß oder zu klein ist, wird eine
 
 Die entsprechende Konfiguration sieht folgendermaßen aus:
 
-![](assets/s_ncs_admin_survey_multichoice_ex3.png)
+![Feld für Mehrfachauswahl, das mehrere Auswahlmöglichkeiten zulässt, wobei 2 Auswahlmöglichkeiten erforderlich und 4 zulässig sind.](assets/s_ncs_admin_survey_multichoice_ex3.png)
 
 Zusätzlich muss der Speicherort für dieses Eingabefeld ein **archiviertes Feld** vom Typ **[!UICONTROL Mehrfachwerte]** sein:
 
-![](assets/s_ncs_admin_survey_multiple_values_field.png)
+![Dialogfeld „Neues archiviertes Feld erstellen“ mit aktivierter Option „Mehrere Werte“ für das Feld „Interessen“.](assets/s_ncs_admin_survey_multiple_values_field.png)
 
 >[!CAUTION]
 >
@@ -114,7 +114,7 @@ Verwenden Sie einen Container des Typs **Frage**, um der Seite eine Frage hinzuz
 >
 >Fügen Sie niemals einen **Frage-** Container unterhalb eines anderen **Frage**-Containers in der Hierarchie ein.
 
-![](assets/s_ncs_admin_question_label.png)
+![Registerkarte „Fragencontainer - Allgemein“, auf der die Option Titel im HTML-Format eingeben aktiviert ist und der HTML-Editor angezeigt wird.](assets/s_ncs_admin_question_label.png)
 
 Der Titel der Frage wird im Titelfeld eingegeben. In diesem Fall wird der Stil des Stylesheets des Formulars angewendet. Wählen Sie die Option **[!UICONTROL Titel im HTML-Format angeben]** aus, um die Frage zu personalisieren. Dadurch erhalten Sie Zugriff auf den HTML-Editor.
 
@@ -124,11 +124,11 @@ Der Titel der Frage wird im Titelfeld eingegeben. In diesem Fall wird der Stil d
 
 Beispiel:
 
-![](assets/s_ncs_admin_survey_containers_qu_arbo.png)
+![Seitenstruktur mit Fragen-Containern für E-Mail-Format und Verträge und den Registerkarten-Einstellungen der Seite „Allgemein“.](assets/s_ncs_admin_survey_containers_qu_arbo.png)
 
 Im obigen Beispiel wird das Rendering wie folgt ausgeführt:
 
-![](assets/s_ncs_admin_survey_containers_qu_ex.png)
+![Gerenderte Umfrageseite mit Feldern, einem Dropdown-Menü für das E-Mail-Format und einer Frage zum Kontrollkästchen für Verträge.](assets/s_ncs_admin_survey_containers_qu_ex.png)
 
 >[!NOTE]
 >
@@ -136,11 +136,11 @@ Im obigen Beispiel wird das Rendering wie folgt ausgeführt:
 
 Sie können die Zufallsziehung von Fragen durch Adobe Campaign aktivieren. Dabei können Sie im Feld unten im Konfigurationsfenster die auf der Seite anzuzeigende Anzahl an Fragen angeben.
 
-![](assets/s_ncs_admin_survey_containers_qu_display.png)
+![Registerkarte „Allgemein“ der Seite mit zufällig ausgewählter Anzeige und der Anzahl der anzuzeigenden Fragen ist auf 1 gesetzt.](assets/s_ncs_admin_survey_containers_qu_display.png)
 
 Die Grafik stellt sich folgendermaßen dar:
 
-![](assets/s_ncs_admin_survey_containers_qu_display_rendering.png)
+![Gerenderte Seite mit nur zwei zufällig ausgewählten Fragen, Frage 2 und Frage 3, mit der Schaltfläche Weiter.](assets/s_ncs_admin_survey_containers_qu_display_rendering.png)
 
 Wenn die Seite aktualisiert wird, ändert sich die Anzeige der Fragen.
 

@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 84%
+source-wordcount: '2105'
+ht-degree: 80%
 ---
 # Daten-Packages{#data-packages}
 
@@ -128,7 +128,7 @@ Gehen Sie wie folgt vor, um mehrere Objekte in ein Daten-Package zu exportieren:
 1. Navigieren Sie über den Explorer-Menübefehl **[!UICONTROL Werkzeuge > Erweitert > Package-Export]** zum Package-Export-Assistenten.
 1. Wählen Sie den [Package-Typ](#types-of-packages) aus.
 
-   ![](assets/package_type.png)
+   ![Package Export Wizard with User package, Platform package and Admin package options, User package selected](assets/package_type.png)
 
 1. Klicken Sie auf die Schaltfläche **Hinzufügen**, um die Entitäten auszuwählen, die als Package exportiert werden sollen.
 
@@ -142,7 +142,7 @@ Gehen Sie wie folgt vor, um mehrere Objekte in ein Daten-Package zu exportieren:
 
    >[!NOTE]
    >
-   >Der Abfrage-Editor wird in [diesem Abschnitt](../../automation/workflow/query.md) beschrieben.
+   >Der Abfrage-Editor wird unter &quot;[&#x200B; einer Abfrage“ &#x200B;](../../automation/workflow/query.md#creating-a-query).
 
 1. Klicken Sie auf **[!UICONTROL Weiter]** und legen Sie die Sortierreihenfolge für die exportierten Daten fest.
 
@@ -159,7 +159,7 @@ Der Exportvorgang verfolgt die Relationen zwischen den verschiedenen exportierte
 
 >[!NOTE]
 >
->Mit Schemaelementen verknüpfte Integritätstypen werden auf [dieser Seite](database-links.md) definiert.
+>Integritätstypen, die mit Schemaelementen verknüpft sind, werden unter [Verknüpfungsverwaltung in Campaign-Schemata](database-links.md) definiert.
 
 #### Exportieren von Kampagnen {#export-a-campaign}
 
@@ -241,7 +241,7 @@ Auf Package-Definitionen können Sie über das Menü **[!UICONTROL Administratio
 
 Um eine Package-Definition zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** und geben Sie die allgemeinen Informationen für die Package-Definition ein.
 
-![](assets/packagedefinition_create.png)
+![Ordner mit Paketdefinitionen mit der Schaltfläche Neu und den Feldern der Registerkarte Allgemein, Beschriftung, Name und Verteiler](assets/packagedefinition_create.png)
 
 Anschließend können Sie Entitäten zur Package-Definition hinzufügen und diese in ein XML-Datei-Package exportieren.
 
@@ -253,9 +253,9 @@ Anschließend können Sie Entitäten zur Package-Definition hinzufügen und dies
 
 ### Entitäten zu einer Package-Definition hinzufügen {#add-entities-to-a-package-definition}
 
-Klicken Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die Entitäten auszuwählen, die mit dem Package exportiert werden sollen. Best Practices für die Auswahl von Entitäten finden Sie in [diesem Abschnitt](#export-a-set-of-objects-in-a-package).
+Klicken Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die Entitäten auszuwählen, die mit dem Package exportiert werden sollen. Best Practices für die Auswahl von Entitäten finden Sie unter [Exportieren eines Satzes von Objekten in einem Paket](#export-a-set-of-objects-in-a-package).
 
-![](assets/packagedefinition_addentities.png)
+![Registerkarte „Inhalt“ einer Paketdefinition mit der Schaltfläche Hinzufügen , über die das Dialogfeld „Entitäten exportieren“ mit Schemata geöffnet wird](assets/packagedefinition_addentities.png)
 
 Entitäten können direkt von ihrem Speicherort in der -Instanz zu einer Paketdefinition hinzugefügt werden. Gehen Sie dazu wie folgt vor:
 
@@ -263,13 +263,13 @@ Entitäten können direkt von ihrem Speicherort in der -Instanz zu einer Paketde
 
 1. Wählen Sie **[!UICONTROL Einer Package-Definition hinzufügen]** und anschließend die Package-Definition, zu der Sie die Entität hinzufügen möchten.
 
-1. Die Entität wird der Paketdefinition hinzugefügt und mit dem Paket exportiert (siehe [diesen Abschnitt](#export-packages-from-a-package-definition)).
+1. Die Entität wird der Paketdefinition hinzugefügt und mit dem Paket exportiert (siehe [Exportieren von Paketen aus einer Paketdefinition](#export-packages-from-a-package-definition))
 
 ### Erzeugung von Package-Definitionen konfigurieren {#configure-package-definitions-generation}
 
 Die Package-Erzeugung kann über den Tab **[!UICONTROL Inhalt]** der Package-Definition konfiguriert werden. Klicken Sie dazu auf den Link **[!UICONTROL Erzeugungsparameter]**.
 
-![](assets/packagedefinition_generationparameters.png)
+![Dialogfeld „Erzeugungsparameter“ mit Definition einschließen, Installationsskript einschließen und Standardwerte einschließen](assets/packagedefinition_generationparameters.png)
 
 * Verwenden Sie die Option **[!UICONTROL Definition einschließen]**, um die aktuell verwendete Definition in die Package-Definition einzuschließen.
 * Verwenden Sie die Option **[!UICONTROL Installationsscript einschließen]**, um ein JavaScript-Skript hinzuzufügen, das beim Package-Import ausgeführt werden soll. Bei Auswahl dieser Option wird die Registerkarte **[!UICONTROL Script]** auf dem Bildschirm mit der Package-Definition hinzugefügt.

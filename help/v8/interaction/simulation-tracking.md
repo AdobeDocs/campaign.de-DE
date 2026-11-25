@@ -29,10 +29,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 64%
+source-wordcount: '204'
+ht-degree: 53%
 ---
 # Simulationsverfolgung{#simulation-tracking}
 
@@ -46,10 +46,10 @@ Sie haben die Möglichkeit, die Ergebnisse zu speichern und sie in Form einer de
 
 Weitere Informationen zur deskriptiven Analyse finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"}.
 
-![](assets/offer_simulation_012.png)
+![Registerkarte „Simulationsergebnisse“ mit der Aufschlüsselung der Vorschläge nach Angeboten und dem Link „Deskriptive Analyse der Ergebnisse“](assets/offer_simulation_012.png)
 
 Eine Pivot-Tabelle bietet eine schnelle Ansicht der Angebotsaufschlüsselungen pro Ranking. Wie alle Berichte in Adobe Campaign kann auch dieser exportiert, gedruckt, archiviert oder in einem Webbrowser angezeigt werden.
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}.
 
-![](assets/offer_simulation_013.png)
+![Simulations-Dashboard, Bericht zur Aufschlüsselung der Angebote nach Ranking, mit Ranking-Tabelle der Angebote, Tortendiagramm und Export-Symbolleiste](assets/offer_simulation_013.png)

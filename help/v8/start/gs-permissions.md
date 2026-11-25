@@ -26,10 +26,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 90%
+source-wordcount: '517'
+ht-degree: 79%
 ---
 # Erste Schritte mit Berechtigungen{#gs-permissions}
 
@@ -48,12 +48,12 @@ In Adobe Campaign sind Anwender **Benutzer** und **Benutzergruppen** stehen für
 
 ## Wichtige Schritte zum Gewähren von Berechtigungen{#key-steps-permissions}
 
-Als Produkt-Administrator können Sie den Benutzern Ihrer Organisation Berechtigungen erteilen. Berechtigungen werden über die Adobe Admin Console und die Client-Konsole in Campaign gewährt. Benutzende melden sich mit ihrer Adobe ID bei Adobe Campaign an. Erfahren Sie auf [dieser Seite](connect.md), wie Sie eine Verbindung zu Adobe Campaign herstellen können.
+Als Produkt-Administrator können Sie den Benutzern Ihrer Organisation Berechtigungen erteilen. Berechtigungen werden über die Adobe Admin Console und die Client-Konsole in Campaign gewährt. Benutzende melden sich mit ihrer Adobe ID bei Adobe Campaign an. Erfahren Sie in [Verbindung zu Campaign v8 herstellen](connect.md), wie Sie eine Verbindung zu Adobe Campaign herstellen.
 
 Die wichtigsten Schritte sind:
 
 * **Schritt 1**: Definieren Sie Ihre Benutzergruppen und weisen Sie ihnen Berechtigungen in der Client-Konsole in Campaign zu. [Weitere Informationen](manage-permissions.md#create-product-profile).
-Beachten Sie, dass Sie zu Beginn auch integrierte Benutzergruppen verwenden können. Diese Standardgruppen und ihre Berechtigungen werden in [diesem Abschnitt](manage-permissions.md#ootb-productprofiles) aufgeführt.
+Beachten Sie, dass Sie zu Beginn auch integrierte Benutzergruppen verwenden können. Diese Standardgruppen und ihre Berechtigungen werden unter [Standardproduktprofile und Benutzergruppen“ &#x200B;](manage-permissions.md#ootb-productprofiles).
 * **Schritt 2**: Erstellen Sie Produktprofile in der Adobe Admin Console, die mit diesen Gruppen übereinstimmen. [Weitere Informationen](manage-permissions.md#create-product-profile).
 Sie können zu Beginn integrierte Produktprofile verwenden. [Weitere Informationen](manage-permissions.md#ootb-productprofiles).
 * **Schritt 3**: Erstellen Sie Benutzende in der Adobe Admin Console und weisen Sie sie einem Produktprofil zu. [Weitere Informationen](manage-permissions.md#add-users).
@@ -65,7 +65,7 @@ Die Adobe Admin Console ist ein zentraler Ort für die Verwaltung der Berechtigu
 
 Verwenden Sie die Admin Console, um Benutzer hinzuzufügen und Produktprofile zu erstellen und zuzuweisen (d. h. Gruppen von Benutzerrollen).
 
-Erfahren Sie auf [dieser Seite](manage-permissions.md#add-users), wie Sie Benutzer hinzufügen.
+Erfahren Sie, wie Sie in [Benutzer hinzufügen](manage-permissions.md#add-users) Benutzer hinzufügen.
 
 ## Über Produktprofile{#ootb-product-profiles}
 
@@ -73,10 +73,10 @@ Produktprofile sind Gruppen von Produkten und Services, die Sie Benutzern zuweis
 
 In der Admin Console wird jedes [!DNL CX Enterprise] **Produktprofil** für Campaign mit einer **Benutzergruppe** in der Client-Konsole von Campaign verknüpft.
 
-Erfahren Sie auf [dieser Seite](manage-permissions.md#create-product-profile), wie Sie Produktprofile erstellen und zuweisen.
+Erfahren Sie, wie Sie in Produktprofile erstellen und zuweisen [Produktprofil erstellen](manage-permissions.md#create-product-profile).
 
 ## Spezifische Berechtigungen für Campaign{#named-rights}
 
 Als Mitglied eines Produktprofils (d. h. einer Benutzergruppe) hat ein Benutzer die Berechtigungen zum Ausführen von Vorgängen (die als „spezifische Berechtigungen“ bezeichnet werden) und hat Lese- und/oder Schreibzugriff auf Daten. Ein Benutzer kann Mitglied in mehreren Benutzergruppen sein: Rechte und Zugriffsberechtigungen sind additiv.
 
-Weitere Informationen zu spezifischen Berechtigungen finden Sie in [diesem Abschnitt](manage-permissions.md#use-named-rights).
+Weitere Informationen zu spezifischen Berechtigungen finden Sie unter [Spezifische Berechtigungen](manage-permissions.md#use-named-rights).

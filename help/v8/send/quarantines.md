@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 67%
+source-wordcount: '1481'
+ht-degree: 64%
 ---
 # Quarantäne {#quarantine-management}
 
@@ -103,13 +103,13 @@ Die **[!UICONTROL Versandzusammenfassung]** gibt Aufschluss über die Anzahl der
 * die Adressen, die bei der Versandanalyse ausgeschlossen wurden,
 * die Adressen, die infolge des Versands neu unter Quarantäne gestellt wurden.
 
-Weitere Informationen zu Versandberichten finden Sie in [diesem Abschnitt](../reporting/gs-reporting.md).
+Weitere Informationen zu Versandberichten finden Sie unter [Erste Schritte mit den Reporting-Tools von Adobe Campaign](../reporting/gs-reporting.md).
 
 ### Nicht zustellbare und Bounce-Adressen{#non-deliverable-bounces}
 
 Um die Liste der in Quarantäne befindlichen Adressen **für die gesamte Plattform** anzuzeigen, können Campaign-Administratoren zu **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** gehen. In diesem Abschnitt werden unter Quarantäne gestellte Elemente für die Kanäle **E-Mail**, **SMS** und **Push-Benachrichtigungen** aufgeführt.
 
-![](assets/tech-quarantine.png)
+![Adresse in Quarantäne mit Status, Fehlerursache, Fehlertext und Versandaktion](assets/tech-quarantine.png)
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Wählen Sie dazu das Empfängerprofil aus und klicken Sie auf die Registerkarte 
 
 Sie können für jeden Ordner mit dem integrierten Filter **[!UICONTROL E-Mail-Adresse in Quarantäne]** nur die Empfänger anzeigen, deren E-Mail-Adresse unter Quarantäne steht (siehe unten):
 
-![](assets/quarantine-filter.png)
+![Menü „Filter der Empfängerliste“ mit hervorgehobenem Filter „E-Mail-Adresse in Quarantäne“](assets/quarantine-filter.png)
 
 
 ## Entfernen einer Adresse aus der Quarantäne {#remove-a-quarantined-address}
@@ -143,7 +143,7 @@ Adressen, die bestimmte Bedingungen erfüllen, werden durch den integrierten Wor
 In den folgenden Fällen werden die Adressen automatisch aus der Quarantäneliste entfernt:
 
 * Adressen mit dem Status **[!UICONTROL Fehlerhaft]** werden nach einem erfolgreichen Versand aus der Quarantäneliste entfernt.
-* Adressen mit dem Status **[!UICONTROL Fehlerhaft]** werden aus der Quarantäneliste entfernt, wenn der letzte Softbounce mehr als 10 Tage zurückliegt. Weitere Informationen zum Umgang mit Softbounces finden Sie in [diesem Abschnitt](#soft-error-management).
+* Adressen mit dem Status **[!UICONTROL Fehlerhaft]** werden aus der Quarantäneliste entfernt, wenn der letzte Softbounce mehr als 10 Tage zurückliegt. Weitere Informationen zum Fehler-Management finden Sie unter [Verwaltung von Softbounces](#soft-error-management).
 * Adressen mit dem Status **[!UICONTROL Fehlerhaft]**, die mit dem Fehler **[!UICONTROL Postfach voll]** zurückkommen, werden nach 30 Tagen aus der Quarantäneliste entfernt.
 
 Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
@@ -156,7 +156,7 @@ Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 Bei Bedarf können Sie eine Adresse auch manuell aus der Quarantäneliste entfernen. Um eine Adresse manuell aus der Quarantäne zu entfernen, können Sie im Knoten **[!UICONTROL Administration > Kampagnen-Management > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** ihren Status in **[!UICONTROL Gültig]** ändern.
 
-![](assets/tech-quarantine-status.png)
+![Adresseneintrag mit geöffneter Dropdown-Liste „Status“ und ausgewähltem Status, um ihn aus der Quarantäne zu entfernen](assets/tech-quarantine-status.png)
 
 ### Massenaktualisierungen {#unquarantine-bulk}
 

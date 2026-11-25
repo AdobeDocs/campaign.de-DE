@@ -38,10 +38,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 94%
+source-wordcount: '1383'
+ht-degree: 86%
 ---
 # Arbeiten mit Schemata{#gs-ac-schemas}
 
@@ -69,7 +69,7 @@ Adobe Campaign verwendet Datenschemata zum:
 * Definieren von Beziehungen zwischen den unterschiedlichen Datenobjekten in der Campaign-Anwendung
 * Definieren und Beschreiben der einzelnen Felder eines jeden Objekts
 
-Nähere Erläuterungen zu den in Campaign integrierten Tabellen und ihrer Interaktion finden Sie in [diesem Abschnitt](datamodel.md).
+Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie unter [Erste Schritte mit dem Campaign-Datenmodell](datamodel.md).
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Das Stammelement des Schemas ist **`<srcschema>`**. Es enthält die Unterelement
 
 Das erste **`<element>`**-Unterelement fällt mit dem Stammelement der Entität zusammen.
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">  
     <attribute name="lastName"/>
@@ -97,7 +97,7 @@ Das erste **`<element>`**-Unterelement fällt mit dem Stammelement der Entität 
 >
 >Das Stammelement der Entität hat denselben Namen wie das Schema.
 
-![](assets/schema_and_entity.png)
+![Ein Schema definiert die XML-Struktur der Empfängerdaten. Eine Entität ist ein bestimmter Datensatz, der darauf folgt.](assets/schema_and_entity.png)
 
 Die **`<element>`**-Tags definieren die Namen von Entitätselementen. **`<attribute>`**-Tags des Schemas definieren die Namen der Attribute in den **`<element>`**-Tags, mit denen sie verknüpft wurden.
 
@@ -137,7 +137,7 @@ Um einen völlig neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht vorha
 
 Weiterführende Informationen hierzu finden Sie unter [Erstellen eines neuen Schemas](create-schema.md).
 
-![](assets/schemaextension_1.png)
+![Assistent zur Erstellung von Datenschemata, Schritt Schematyp mit hervorgehobener Option „Neue Tabelle“ und „Erweiterung eines Schemas“.](assets/schemaextension_1.png)
 
 
 Im Anschluss an die Erstellung oder Erweiterung eines Schemas für Ihre Arbeit sollten Sie dessen XML-Inhaltselemente in der im Folgenden aufgeführten Reihenfolge definieren.
@@ -221,13 +221,13 @@ In diesem Beispiel erstellen wir nicht anhand der Attribute **@autopk** oder **@
 >
 >Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselsequenz (@pkSequence) beibehalten.
 
-Weiterführende Informationen zu Schlüsseln finden Sie in [diesem Abschnitt](database-mapping.md).
+Weitere Informationen zu Schlüsseln finden Sie unter [Campaign-Datenbankzuordnung](database-mapping.md).
 
 ## Attribute (Felder) {#attributes--fields-}
 
-Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt besteht. Klicken Sie in der Symbolleiste zur Schemabearbeitung auf **[!UICONTROL Einfügen]**, um leere Attributvorlagen an der Stelle in Ihrer XML abzulegen, an der sich Ihr Cursor befindet. Weiterführende Informationen finden Sie in [diesem Abschnitt](create-schema.md).
+Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt besteht. Klicken Sie in der Symbolleiste zur Schemabearbeitung auf **[!UICONTROL Einfügen]**, um leere Attributvorlagen an der Stelle in Ihrer XML abzulegen, an der sich Ihr Cursor befindet. Weitere Informationen finden Sie unter [Erstellen eines neuen Schemas in Campaign](create-schema.md).
 
-![](assets/schemaextension_2.png)
+![Bearbeiten Sie den Schemaschritt, während das Menü Einfügen geöffnet ist, um ein Attribut wie Zeichenfolge, Boolesch, Ganzzahl oder Datum hinzuzufügen.](assets/schemaextension_2.png)
 
 Eine vollständige Liste der Attribute finden Sie im Abschnitt `<attribute>`-Element in der [Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=de#content-model){target="_blank"}. Im Folgenden finden Sie einige der gebräuchlichsten Attribute: **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
@@ -311,9 +311,9 @@ Gehen Sie wie im nachfolgenden Beispiel vor, um Felder mit Bezug auf das Erstell
 
 Sobald Ihre Änderungen abgeschlossen und gespeichert sind, müssen alle Änderungen, die sich auf die SQL-Struktur auswirken können, auf die Datenbank angewendet werden. Verwenden Sie dazu den Assistenten für das Datenbank-Update.
 
-![](assets/schemaextension_3.png)
+![Tools, Menü „Erweitert“ in der Konsole mit ausgewählter Option „Datenbankstruktur aktualisieren“ zum Anwenden von Schemaänderungen.](assets/schemaextension_3.png)
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](update-database-structure.md).
+Weitere Informationen hierzu finden Sie unter [Datenbankstruktur aktualisieren](update-database-structure.md).
 
 >[!NOTE]
 >

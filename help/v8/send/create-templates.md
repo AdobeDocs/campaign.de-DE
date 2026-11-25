@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 94%
+source-wordcount: '1190'
+ht-degree: 84%
 ---
 # Arbeiten mit Versandvorlagen {#work-with-delivery-template}
 
@@ -59,7 +59,7 @@ Eine Vorlage kann teilweise oder vollständige Konfigurationseinstellungen entha
 * Inhalt, Firmenlogo oder Signatur
 * Andere Versandeigenschaften, z. B. die Gültigkeit der Ressource, die Parameter für erneute Versuche oder die Quarantäneeinstellungen.
 
-![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#delivery-template-video).
+![Wiedergabesymbol für den Video-Link](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#delivery-template-video)
 
 Versandvorlagen werden im Ordner **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** des Explorers gespeichert. In Adobe Campaign können Sie zwei Arten von Vorlagen verwenden:
 
@@ -88,15 +88,15 @@ Gehen Sie wie folgt vor, um eine Versandvorlage zu duplizieren:
 1. Wählen Sie eine integrierte Versandvorlage aus. Integrierte Vorlagen sind in der Liste fett hervorgehoben.
 1. Klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Duplizieren]**.
 
-   ![](assets/duplicate-built-in-template.png)
+   ![Liste der Versandvorlagen mit dem Kontextmenü, das über eine integrierte Vorlage geöffnet und dupliziert wurde](assets/duplicate-built-in-template.png)
 
 1. Definieren Sie die Vorlageneinstellungen und speichern Sie die neue Vorlage.
 
-   ![](assets/delivery-template-new.png)
+   ![Eigenschaften einer duplizierten E-Mail-Vorlage mit Titel, Absenderadresse, Betreff und HTML-Inhalt](assets/delivery-template-new.png)
 
 Die Vorlage wird der Liste der Versandvorlagen hinzugefügt. Sie können sie jetzt bei der Erstellung eines neuen Versands auswählen.
 
-![](assets/select-the-new-template.png)
+![Dropdown-Liste „Versandvorlage“ mit integrierten Vorlagen und der neuen benutzerdefinierten E-Mail-Ankündigungsvorlage](assets/select-the-new-template.png)
 
 ### Konvertieren eines bestehenden Versands in eine Vorlage {#convert-an-existing-delivery}
 
@@ -108,11 +108,11 @@ Gehen Sie wie folgt vor, um einen Versand in eine Vorlage zu konvertieren:
 
 1. Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern...]**.
 
-   ![](assets/save-as-template.png)
+   ![Kontextmenü der Versandliste mit Aktionen und Als Vorlage speichern](assets/save-as-template.png)
 
 1. Bearbeiten Sie die Versandeigenschaften und wählen Sie (im Feld **[!UICONTROL Ordner]**) den Ordner aus, in dem die neue Vorlage gespeichert werden soll, sowie den Ordner, in dem die auf dieser Vorlage basierenden Sendungen erstellt werden sollen (im Feld **[!UICONTROL Ausführungsordner]**).
 
-   ![](assets/template-select-folders.png)
+   ![Versandeigenschaften mit den Feldern Ausführungsordner, Ordner und Routing für die neue Vorlage](assets/template-select-folders.png)
 
 ### Erstellen einer neuen Vorlage {#create-a-new-template}
 
@@ -140,11 +140,11 @@ Gehen Sie wie folgt vor, um eine Versandvorlage von Grund auf zu konfigurieren:
 
 Um einen Versand auf Basis einer existierenden Vorlage zu erstellen, wählen Sie diese aus der Liste der Versandvorlagen aus.
 
-![](assets/select-the-new-template.png)
+![Dropdown-Liste „Versandvorlage“ mit integrierten Vorlagen und der neuen benutzerdefinierten E-Mail-Ankündigungsvorlage](assets/select-the-new-template.png)
 
 Wenn Ihre Vorlage nicht angezeigt wird, klicken Sie auf den Ordner **[!UICONTROL Link auswählen]** rechts neben dem Feld, um Campaign-Ordner zu durchsuchen.
 
-![](assets/browse-templates.png)
+![Dialogfeld zur Ordnerauswahl mit Versandvorlagen, über das Feld Versandvorlage geöffnet](assets/browse-templates.png)
 
 Wählen Sie im Feld **[!UICONTROL Ordner]** das gesuchte Verzeichnis aus oder klicken Sie auf das Symbol **[!UICONTROL Unterordner anzeigen]**.
 
@@ -160,7 +160,7 @@ Gehen Sie wie folgt vor, um eine Vorlage manuell auszuführen:
 
    Sie können auch das Menü **[!UICONTROL Datei > Aktionen > Ausgewählte Versandvorlage ausführen...]** verwenden.
 
-   ![](assets/execute-delivery-template.png)
+   ![Liste der Versandvorlagen mit ausgewählter Menüoption Versandvorlage ausführen](assets/execute-delivery-template.png)
 
 1. Geben Sie die Versandparameter an und klicken Sie auf **[!UICONTROL Senden]**.
 

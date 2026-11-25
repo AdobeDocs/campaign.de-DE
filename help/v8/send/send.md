@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 92%
+source-wordcount: '875'
+ht-degree: 88%
 ---
 # Senden und Überwachen Ihrer E-Mails  {#send-and-monitor-emails}
 
@@ -77,7 +77,7 @@ Der MTA qualifiziert den SMTP-Bounce und sendet diese Qualifizierung zurück an 
 >
 >Derzeit werden **asynchrone** Bounces durch den inMail-Prozess über die Regeln für **[!UICONTROL eingehende E-Mails]** als solche qualifiziert.
 
-In [diesem Abschnitt](delivery-failures.md) erfahren Sie mehr über fehlgeschlagene Sendungen.
+Weitere Informationen zu fehlgeschlagenen Sendungen in [fehlgeschlagene Sendungen in Campaign](delivery-failures.md).
 
 
 ### Spezifische MX-Regeln
@@ -112,9 +112,9 @@ Wenn Softbounces vom MTA zurückgemeldet werden, bleibt ihr Log-Status unveränd
 
 >[!NOTE]
 >
->Weitere Informationen zu Hard- und Softbounces finden Sie in [diesem Abschnitt](delivery-failures.md#delivery-failure-reasons).
+>Weitere Informationen zu Hard- und Softbounces finden Sie unter [Warum ist der Nachrichtenversand fehlgeschlagen](delivery-failures.md#delivery-failure-reasons).
 >
->Weitere Informationen zu zusätzlichen Zustellversuchen nach einem vorübergehend fehlgeschlagenen Versand finden Sie in [diesem Abschnitt](delivery-failures.md#retries).
+>Weitere Informationen zu weiteren Zustellversuchen nach einem vorübergehend fehlgeschlagenen Versand finden Sie unter [Verwaltung weiterer Zustellversuche](delivery-failures.md#retries).
 
 Die nachstehende Tabelle zeigt, wie die Status der KPIs und Versandlogs bei jedem Schritt des Versandvorgangs aktualisiert werden.
 

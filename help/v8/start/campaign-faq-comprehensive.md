@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '11618'
+source-wordcount: '11620'
 ht-degree: 16%
 ---
 # Häufig gestellte Fragen {#faq}
@@ -102,7 +102,7 @@ Ja! Dank der Integration mit dem IMS (Adobe Identity Management System) können 
 
 +++ Über welche Benutzeroberflächen-Konzepte von Campaign sollte ich Bescheid wissen?
 
-Weitere Informationen [&#x200B; Grundlagen zur Benutzeroberfläche von &#x200B;](campaign-ui.md) finden Sie in diesem Abschnitt.
+Weitere Informationen [&#x200B; Grundlagen zur Benutzeroberfläche von Adobe Campaign finden &#x200B;](campaign-ui.md) unter „Erkunden Campaign-Benutzeroberfläche“.
 
 Ab Campaign v8.6 haben Sie auch Zugriff auf die neue **Campaign Web-Benutzeroberfläche**, die über die zentrale [!DNL CX Enterprise] verfügbar ist.
 

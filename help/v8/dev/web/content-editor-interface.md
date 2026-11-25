@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
     internal-label: Email design
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 95%
+source-wordcount: '665'
+ht-degree: 77%
 ---
 # Benutzeroberfläche des Inhaltseditors{#content-editor-interface}
 
@@ -38,7 +38,7 @@ ht-degree: 95%
 
 Das DCE-Bearbeitungsfenster ist in drei verschiedene Abschnitte unterteilt. Dort können Sie den Inhalt anzeigen, ändern und seinen Status prüfen.
 
-![](assets/dce_decoupe_window_nb.png)
+![DCE-Bearbeitungsfenster mit drei nummerierten Bereichen: Statusmeldung, Inhaltsbereich und rechtes Optionsfeld](assets/dce_decoupe_window_nb.png)
 
 1. Der **obere** Abschnitt ist ein Anzeigebereich für Nachrichten an die benutzende Person. Diese Meldungen geben den Status der Web-Anwendung oder des erstellten Versands sowie Warnungen und Fehlermeldungen im Zusammenhang mit dem Inhalt an. Weitere Informationen hierzu finden Sie unter [HTML-Inhaltsstatus](content-editing-best-practices.md#html-content-statuses).
 1. Der Abschnitt **links** im Fenster ist der Bereich für die Bearbeitung von Inhalten. Hier kann die benutzende Person direkt über die Popup-Symbolleiste einen Link in ein Bild einfügen, die Schriftart ändern, ein Feld löschen etc. Weitere Informationen finden Sie unter [Bearbeiten von Formularen](editing-content.md#editing-forms).
@@ -48,17 +48,17 @@ Das DCE-Bearbeitungsfenster ist in drei verschiedene Abschnitte unterteilt. Dort
 
 Über den rechten oberen Bereich des Editors können Sie auf die globalen Optionen für den aktuell erstellten Inhalt zugreifen.
 
-![](assets/dce_global_options.png)
+![Oben rechts im Editor mit vier globalen Optionssymbolen über dem Bedienfeld mit den Blockoptionen](assets/dce_global_options.png)
 
 Dort finden Sie vier Symbole:
 
-![](assets/dce_icons_sidebar.png)
+![Globale Optionssymbole: Blöcke anzeigen/ausblenden, anderen Inhalt auswählen, als Vorlage speichern und Eigenschaften der Seite](assets/dce_icons_sidebar.png)
 
 * Mit dem Symbol **Bausteine anzeigen/ausblenden** können Sie Inhaltsbausteine mit blauen Rahmen versehen (entspricht dem HTML-Tag `<div>`).
 
 * Über das Symbol **Anderen Inhalt wählen** können Sie neuen Inhalt aus einer (bereits erstellten oder nativen) Vorlage laden.
 
-  ![](assets/dce_popup_templatechoice.png)
+  ![Wählen Sie ein Inhaltsdialogfeld mit Aus einer Datei und verfügbaren Vorlagen wie Kontakt und Clickthrough aus](assets/dce_popup_templatechoice.png)
 
   >[!CAUTION]
   >
@@ -66,15 +66,15 @@ Dort finden Sie vier Symbole:
 
 * Mit dem Symbol **Als Vorlage speichern** können Sie den aktuellen Inhalt als Vorlage speichern. Geben Sie den Titel und den internen Namen der Vorlage ein. Vorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Inhaltsvorlagen]** gespeichert.
 
-  ![](assets/dce_popup_savetemplate.png)
+  ![Als Vorlagendialog speichern mit den Feldern Titel, Interner Name und Ordner](assets/dce_popup_savetemplate.png)
 
   Nach dem Speichern ist die Vorlage verfügbar und kann für neuen Inhalt wieder ausgewählt werden.
 
-  ![](assets/dce_create_fromtemplate.png)
+  ![Registerkarte „E-Mail-Versand HTML-Inhalt“ mit der gespeicherten Vorlage für Musik und Kunst , die in den Inhaltsvorlagen verfügbar ist](assets/dce_create_fromtemplate.png)
 
 * Mit dem Symbol **Seiteneigenschaften** können Sie Informationen zum Inhalt am oberen Rand der HTML-Seite auswählen.
 
-  ![](assets/dce_popup_headerhtml.png)
+  ![Eigenschaften des Seitendialogfelds mit den Feldern „Titel“, „Schlüsselwörter“ und „Beschreibung“ für die HTML-Seitenkopfzeile](assets/dce_popup_headerhtml.png)
 
   >[!NOTE]
   >
@@ -86,7 +86,7 @@ Dort finden Sie vier Symbole:
 
 Im rechten Bereich des Editors befinden sich die wichtigsten Optionen zum Bearbeiten des Inhalts. Diese Optionen werden nur angezeigt, wenn ein Baustein ausgewählt wird. Die Art der Optionen hängt vom ausgewählten Baustein ab.
 
-![](assets/dce_right_section.png)
+![Rechter Abschnitt des Editors mit den Blockoptionen: Sichtbarkeitsbedingung, Rahmen und Hintergrundfarbe](assets/dce_right_section.png)
 
 Sie haben folgende Möglichkeiten:
 

@@ -22,7 +22,7 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 89%
@@ -47,7 +47,7 @@ Ist die Löschanfrage erfolgreich, lautet der Antwortstatus &quot;204 Kein Inhal
 
 Die folgenden beispielhaften Payloads zeigen, wie Sie ein Profil von einem Service abmelden können. Führen Sie zuerst eine GET-Anfrage aus, um das Profil abzurufen.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -57,7 +57,7 @@ Die folgenden beispielhaften Payloads zeigen, wie Sie ein Profil von einem Servi
 
 Gibt die Anmeldungs-URL für das Profil zurück.
 
-```
+```json
   {
     ...
     "postalAddress":...,
@@ -70,7 +70,7 @@ Gibt die Anmeldungs-URL für das Profil zurück.
 
 Führen Sie eine GET-Anfrage für die Anmeldungs-URL aus.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -80,7 +80,7 @@ Führen Sie eine GET-Anfrage für die Anmeldungs-URL aus.
 
 Es wird eine Liste der Anmeldungen für das ausgewählte Profil mit einer URL für jeden abonnierten Dienst zurückgegeben.
 
-```
+```json
 ...
 "service": {
   "PKey": "<PKEY>",
@@ -94,7 +94,7 @@ Es wird eine Liste der Anmeldungen für das ausgewählte Profil mit einer URL f�
 
 Führen Sie eine DELETE-Anfrage für die gewünschte Dienst-URL aus.
 
-```
+```bash
 -X DELETE https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -120,7 +120,7 @@ Ist die Löschanfrage erfolgreich, lautet der Antwortstatus &quot;204 Kein Inhal
 
 Rufen Sie den Dienstdatensatz ab.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -130,7 +130,7 @@ Rufen Sie den Dienstdatensatz ab.
 
 Es wird die Anmeldungs-URL für den Dienst zurückgegeben.
 
-```
+```json
 {
   ...
   "messageType": "email",
@@ -147,7 +147,7 @@ Es wird die Anmeldungs-URL für den Dienst zurückgegeben.
 
 Führen Sie eine GET-Anfrage für die Anmeldungs-URL aus.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -157,7 +157,7 @@ Führen Sie eine GET-Anfrage für die Anmeldungs-URL aus.
 
 Für den ausgewählten Dienst wird die Liste aller Anmeldungen zurückgegeben, wobei für jede Profilanmeldung eine URL (href) angegeben ist.
 
-```
+```json
 {
   "PKey": "<PKEY>",
   "created": "2019-03-26 08:58:04.764Z",
@@ -174,7 +174,7 @@ Für den ausgewählten Dienst wird die Liste aller Anmeldungen zurückgegeben, w
 
 Führen Sie eine DELETE-Anfrage für die gewünschte Profilanmeldungs-URL aus.
 
-```
+```bash
 -X DELETE https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \

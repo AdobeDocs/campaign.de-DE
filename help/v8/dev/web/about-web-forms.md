@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 98%
+source-wordcount: '637'
+ht-degree: 79%
 ---
 # Erste Schritte mit Web-Formularen{#about-web-forms}
 
@@ -55,19 +55,19 @@ Der Zugriff auf Webformulare erfolgt über das Menü „Webanwendungen“ auf de
 
 Um ein Webformular zu erstellen, klicken Sie oberhalb der Webanwendungen-Liste auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
-![](assets/webapp_create_new.png)
+![Liste der Web-Anwendungen unter Kampagnen mit hervorgehobener Schaltfläche „Erstellen“ zum Starten eines neuen Web-Formulars.](assets/webapp_create_new.png)
 
 Wählen Sie die Webformularvorlage aus (standardmäßig **[!UICONTROL newWebForm]**).
 
-![](assets/s_ncs_admin_survey_select_template.png)
+![Dialogfeld „Neue Web-Anwendung“ mit der in der Vorlagenliste ausgewählten Vorlage „Neues Web-Formular (newWebForm)“.](assets/s_ncs_admin_survey_select_template.png)
 
 Damit gelangen Sie zum Dashboard des Formulars.
 
-![](assets/webapp_empty_dashboard.png)
+![Registerkarte „Dashboard“ eines neuen Web-Formulars mit Status, Schema, Ordner, öffentlicher URL und der Schaltfläche „Veröffentlichen“.](assets/webapp_empty_dashboard.png)
 
 Im Tab **[!UICONTROL Bearbeiten]** können Sie den Inhalt erstellen.
 
-![](assets/webapp_edit_tab.png)
+![Registerkarte „Bearbeiten“ eines Web-Formulars mit dem Diagramm der Aktivitäten (Start, Seite, Test, Speicherung, Ende) und der Aktivitätspalette.](assets/webapp_edit_tab.png)
 
 Um das Webformular zu definieren und zu konfigurieren, gehen Sie folgendermaßen vor:
 
@@ -104,12 +104,12 @@ In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout
 
 Sie können ein Eingabefeld auch mithilfe der Symbole in der Symbolleiste oder eines Rechtsklicks einfügen.
 
-![](assets/s_ncs_admin_webform_add_selection.png)
+![Symbolleistenmenü des Seiteneditors zum Hinzufügen eines Eingabefelds: Kombinationsfeld, Kontrollkästchen, Optionsfeld, Mehrfachauswahl, Datum, Raster.](assets/s_ncs_admin_webform_add_selection.png)
 
 Wählen Sie in diesem Fall den Typ des hinzuzufügenden Feldes und den Antwort-Speichermodus aus.
 
-![](assets/s_ncs_admin_webform_select_storage.png)
+![Speicherdialogfeld: Wählen Sie „Empfänger oder Variable bearbeiten“ und wählen Sie dann das Datenbankfeld mit „Ausdruck bearbeiten“ aus.](assets/s_ncs_admin_webform_select_storage.png)
 
 Klicken Sie auf **[!UICONTROL OK]**, um die Auswahl zu bestätigen.
 
-![](assets/s_ncs_admin_webform_confirm_storage.png)
+![Wenn Sie das Feld Anrede in Ausdruck auswählen auswählen, wird das Datenbankfeld im Speicherdialogfeld ausgefüllt. Klicken Sie auf „OK“.](assets/s_ncs_admin_webform_confirm_storage.png)

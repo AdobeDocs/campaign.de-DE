@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 98%
+source-wordcount: '554'
+ht-degree: 96%
 ---
 # Erste Schritte mit Umfragen{#about-surveys}
 
@@ -49,7 +49,7 @@ Mit dem optionalen **Umfrage**-Add-on können Sie eine neue Art von Web-Anwendun
 
 In diesem Kapitel wird beschrieben, wie Sie **Umfragen**, Feld- und Seitenverwaltung, Speichermodi und Einträge erstellen und verwalten.
 
-Auf [dieser Seite](getting-started-with-surveys.md) erfahren Sie, wie Sie Ihre erste Umfrage erstellen.
+Wie Sie Ihre erste Umfrage erstellen, erfahren Sie in [Die wichtigsten Schritte zur Erstellung einer Umfrage](getting-started-with-surveys.md).
 
 >[!NOTE]
 >

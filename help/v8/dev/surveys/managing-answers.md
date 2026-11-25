@@ -19,10 +19,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 99%
+source-wordcount: '1224'
+ht-degree: 74%
 ---
 # Antworten verwalten{#managing-answers}
 
@@ -44,7 +44,7 @@ Zusätzlich zu den Standard-Speichermodi, die für alle Webformulare in Adobe Ca
 
 Es ist einfach, die Datenvorlage zu erweitern, indem neue Speicherorte hinzugefügt werden, um die in Umfragen bereitgestellten Antworten zu speichern. Wählen Sie dazu bei der Erstellung des Eingabefelds die Option **[!UICONTROL Antworten auf eine Frage speichern]** aus. Klicken Sie auf **[!UICONTROL Neues Feld...]** und geben Sie seine Eigenschaften an:
 
-![](assets/s_ncs_admin_survey_new_space.png)
+![Dialogfeld „Speicherung“ mit „Antworten auf eine Frage speichern“ und dem Dialogfeld „Neues archiviertes Feld erstellen“ für ein Vertragsfeld ausgewählt.](assets/s_ncs_admin_survey_new_space.png)
 
 Geben Sie den Titel und den Namen des Felds ein und wählen Sie den Typ des Felds aus: Text, boolesch, ganze Zahl oder Dezimalzahl, Datum etc.
 
@@ -62,15 +62,15 @@ Wenn dieses Feld in einer Liste verwendet wird, können die Werte der Aufzählun
 
 Sie können beispielsweise eine Dropdown-Liste erstellen, aus der der Benutzer seine Muttersprache auswählen kann. Das entsprechende archivierte Feld kann mit der Aufzählung **Sprache** verknüpft werden, die eine Liste von Sprachen enthält:
 
-![](assets/s_ncs_admin_survey_database_values_2b.png)
+![Dialogfeld „Neues archiviertes Feld erstellen“ mit ausgewählter Sprachaufzählung und hervorgehobenem Symbol „Link bearbeiten“.](assets/s_ncs_admin_survey_database_values_2b.png)
 
 Mit dem Symbol **[!UICONTROL Link bearbeiten]** rechts neben dem Feld können Sie den Inhalt dieser Aufzählung bearbeiten:
 
-![](assets/s_ncs_admin_survey_database_values_2c.png)
+![Auflistungssprachen-Editor (Sprache) mit den Werten Englisch, Französisch und Deutsch.](assets/s_ncs_admin_survey_database_values_2c.png)
 
 Im Tab **[!UICONTROL Allgemein]** des Felds können Sie über den Link **[!UICONTROL Werteliste aus der Datenbank übernehmen]** automatisch die angebotene Liste der Titel eingeben.
 
-![](assets/s_ncs_admin_survey_database_values_2.png)
+![Dropdown-Feld Registerkarte Allgemein , Initialisieren Sie die Liste der Werte aus dem Datenbank-Link, der die Sprachkennzeichnungen ausfüllt.](assets/s_ncs_admin_survey_database_values_2.png)
 
 **Beispiel**: Die Verträge eines Empfängers sollen gemeinsam in einem Feld gespeichert werden.
 
@@ -78,35 +78,35 @@ Um verschiedene Arten von Verträgen gemeinsam in einem Feld zu speichern, erste
 
 Klicken Sie auf **[!UICONTROL Neues Feld...]** und geben Sie die Feldeigenschaften ein. Wählen Sie die Option **[!UICONTROL Mehrfachwerte]** aus, um die Speicherung mehrerer Werte zu ermöglichen.
 
-![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
+![Dialogfeld „Neues archiviertes Feld für Verträge erstellen“ mit ausgewählter Option „Mehrere Werte“.](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
 Erstellen Sie für die anderen Verträge Eingabefelder und speichern Sie die Daten im selben archivierten Feld.
 
-![](assets/s_ncs_admin_survey_storage_multi_ex2.png)
+![Speicherdialogfeld und Feldauswahl, die ein Eingabefeld mit dem archivierten Feld „Verträge“ verknüpfen.](assets/s_ncs_admin_survey_storage_multi_ex2.png)
 
 Wenn Benutzer die Umfrage validieren, werden ihre Antworten im Feld **[!UICONTROL Verträge]** gespeichert.
 
 In unserem Beispiel betrifft das die folgenden Antworten:
 
-![](assets/s_ncs_admin_survey_storage_multi_ex3.png)
+![Vertragsbefragungsseite mit vier Vertragsfeldern ausgefüllt mit den Werten M, L, T und V.](assets/s_ncs_admin_survey_storage_multi_ex3.png)
 
 Die vier eingegebenen Verträge werden im Profil des Benutzers gespeichert.
 
 Die Verträge können im Tab **[!UICONTROL Antworten]** der Umfrage aufgerufen werden, indem die entsprechenden Spalten angezeigt werden.
 
-![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
+![Registerkarte „Antworten“ mit Antworten mit den Spalten „Contrat_1“ bis „Contrat_4“, in denen die Werte von Antworten mit mehreren Werten angezeigt werden.](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
 Sie können Empfänger auch auf der Basis ihrer Antworten filtern, sodass nur die für Sie interessanten Benutzer angezeigt werden. Erstellen Sie dazu einen Zielgruppen-Workflow unter Verwendung der Box **[!UICONTROL Umfrageantworten]**.
 
-![](assets/s_ncs_admin_survey_read_responses_wf.png)
+![Zielgruppenbestimmungs-Workflow mit der Aktivität Umfrageantworten , die aus der Zielgruppenbestimmungspalette in das Diagramm gezogen wurde.](assets/s_ncs_admin_survey_read_responses_wf.png)
 
 Erstellen Sie Ihre Abfrage basierend auf den Profilen, die Sie abrufen möchten. Im folgenden Beispiel können Sie Profile mit mindestens zwei Verträgen einschließlich eines Vetrags des Typs A für die Abfrage auswählen.
 
-![](assets/s_ncs_admin_survey_read_responses_edit.png)
+![Aktivität „Umfrageantworten“ und ihr Abfrage-Dialogfeld, das nach Contract_1 gleich E und Contract_2 gleich R filtert](assets/s_ncs_admin_survey_read_responses_edit.png)
 
 Die bereitgestellten Antworten für jedes Formular können in Feldern oder Titeln verwendet werden. Verwenden Sie die folgende Syntax für Inhalte, die in einem archivierten Feld gespeichert sind:
 
-```
+```html
 <%= ctx.webAppLogRcpData.name of the archived field %
 ```
 
@@ -127,17 +127,17 @@ Gehen Sie dazu wie folgt vor:
 * Öffnen Sie die Umfrageeigenschaften über die Schaltfläche **[!UICONTROL Eigenschaften]** im Tab **[!UICONTROL Bearbeiten]**.
 * Wählen Sie den Link **[!UICONTROL Erweiterte Parameter]** aus und aktivieren Sie die Option **[!UICONTROL Kopie der Originalantworten speichern]**.
 
-![](assets/s_ncs_admin_survey_xml_archive_option.png)
+![Dialogfeld „Erweiterte Parameter der Web-Anwendung“ mit ausgewählter Option Kopie der unbearbeiteten Antworten speichern.](assets/s_ncs_admin_survey_xml_archive_option.png)
 
 Sie können sie standardmäßig für alle Umfragen aktivieren (diese Option wird bei der Veröffentlichung der Umfrage angewendet). Erstellen Sie dazu die Option **[!UICONTROL NmsWebApp_XmlBackup]** und weisen Sie den Wert **[!UICONTROL 1]** zu, wie unten gezeigt:
 
-![](assets/s_ncs_admin_survey_xml_global_option.png)
+![Optionsknoten in Administration, Platform mit der Option „NmsWebApp_XmlBackup“, erstellt mit dem Wert 1.](assets/s_ncs_admin_survey_xml_global_option.png)
 
 ## Verwaltung der Punktzahl {#score-management}
 
 Sie können den auf den Formularseiten bereitgestellten Optionen eine Punktzahl zuweisen. Punktzahlen können nur mit geschlossenen Fragen verknüpft werden: Kontrollkästchen, Wert aus einer Dropdown-Liste, Abonnement usw.
 
-![](assets/s_ncs_admin_survey_score_create.png)
+![Kombinationsfeld Registerkarte „Allgemein“ mit Werten auf der Treuekarte „Standard“ für VIP mit einer Bewertungsspalte von 2,00 bis 10,00.](assets/s_ncs_admin_survey_score_create.png)
 
 Die Punkte werden kumuliert und auf dem Server gespeichert, wenn die Seite bestätigt wird, d. h. wenn der Benutzer auf die Schaltfläche **[!UICONTROL Weiter]** oder **[!UICONTROL Beenden]** klickt.
 
@@ -153,7 +153,7 @@ Die Punktzahl kann in Tests oder Scripts verwendet werden.
 
 * Um Punkte in Tests einzubeziehen, verwenden Sie in der Test-Berechnungsformel wie unten gezeigt das Feld **[!UICONTROL Punktzahl]**:
 
-  ![](assets/s_ncs_admin_survey_score_in_a_test.png)
+  ![Testen Sie die Aktivität mit einer Bedingung für einen Wert größer als 6, indem Sie das Feld Score im Kontextdokument auswählen.](assets/s_ncs_admin_survey_score_in_a_test.png)
 
 * Sie können die Punktzahl in einem Script verwenden.
 
@@ -161,18 +161,18 @@ Die Punktzahl kann in Tests oder Scripts verwendet werden.
 
 * In einer Umfrage können Sie Benutzern mithilfe der Auswahl für die nächste Seite unterschiedliche Punktzahlen entsprechend dem in der Dropdown-Liste ausgewählten Wert zuweisen.
 
-  ![](assets/s_ncs_admin_survey_score_exa.png)
+  ![Dropdown-Feld der Klassenstufen, Vorschule bis College, mit Werten von 2,00 bis 7,00.](assets/s_ncs_admin_survey_score_exa.png)
 
 * Diese Punktzahl kann abhängig von der ausgewählten Option mit einem zweiten Wert kombiniert werden:
 
-  ![](assets/s_ncs_admin_survey_score_exb.png)
+  ![Multiple-Choice-Feld Sie sind… mit einem Elternteil von 7,00 und einem Schüler von 2,00,](assets/s_ncs_admin_survey_score_exb.png)
 
 * Wenn der Benutzer die Schaltfläche **[!UICONTROL Weiter]** auswählt, werden die beiden Werte addiert.
 
-  ![](assets/s_ncs_admin_survey_score_exe.png)
+  ![Begrüßungsseite mit Junior High in der Level-Liste ausgewählt und der Parent-Option unter Status ausgewählt.](assets/s_ncs_admin_survey_score_exe.png)
 
 * Auf die anzuzeigende Seite können entsprechend der Punktzahl Bedingungen angewendet werden. Dies wird wie folgt konfiguriert:
 
-  ![](assets/s_ncs_admin_survey_score_exd.png)
+  ![Testaktivität mit der Bedingung „Verzweigung bearbeiten“: Score größer als 7,00.](assets/s_ncs_admin_survey_score_exd.png)
 
-  ![](assets/s_ncs_admin_survey_score_exg.png)
+  ![Die Testaktivität wird zu Stufe 1 weitergeleitet, wenn der Score unter 7 liegt, zu Stufe 2, wenn er gleich 7 ist, und zu Stufe 3 über 7.](assets/s_ncs_admin_survey_score_exg.png)

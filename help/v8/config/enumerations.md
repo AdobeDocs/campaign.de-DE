@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 85%
+source-wordcount: '877'
+ht-degree: 83%
 ---
 # Arbeiten mit Aufzählungen {#enumerations}
 
@@ -42,7 +42,7 @@ Eine Aufzählung (auch als Aufzählungsliste bezeichnet) ist eine vordefinierte 
 
 Wenn Werte definiert sind, werden sie in einer Dropdown-Liste angezeigt. Ein Wert kann direkt ausgewählt oder über eine prädiktive Eingabe eingegeben werden, bei der übereinstimmende Einträge vorgeschlagen und ausgefüllt werden. Einige Felder enthalten vordefinierte Aufzählungen. Bei Bedarf können zusätzliche Aufzählungen erstellt werden.
 
-![](assets/enum_values.png)
+![Empfängerformular mit geöffneter Dropdown-Liste Sprache, in der die Auflistungswerte Englisch, Französisch, Italienisch, Russisch und Spanisch aufgelistet sind](assets/enum_values.png)
 
 
 ## Aufzählungstypen {#types-of-enum}

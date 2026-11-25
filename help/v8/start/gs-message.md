@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 90%
+source-wordcount: '1057'
+ht-degree: 81%
 ---
 # Erste Schritte mit Nachrichten {#gs-ac-msg}
 
@@ -60,21 +60,21 @@ Um Nachrichten zu senden, müssen Sie einen Versand erstellen. Der Modus der Ver
 
 >[!NOTE]
 >
->Beim Erstellen eines Versands müssen Sie eine Vorlage auswählen. Es stehen Standardvorlagen für jeden Kanal zur Verfügung. Weiterführende Informationen zu Versandvorlagen finden Sie auf [dieser Seite](../send/create-templates.md).
+>Beim Erstellen eines Versands müssen Sie eine Vorlage auswählen. Es stehen Standardvorlagen für jeden Kanal zur Verfügung. Weitere Informationen zu Versandvorlagen finden Sie unter [Arbeiten mit Versandvorlagen](../send/create-templates.md).
 
-1. **Einmalige Nachrichten**: Sie können einmalige Nachrichten an eine Zielgruppe senden. In [diesem Abschnitt](create-message.md) erfahren Sie, wie Sie Ihre erste Nachricht senden.
+1. **Einmalige Nachrichten**: Sie können einmalige Nachrichten an eine Zielgruppe senden. Erfahren Sie, wie Sie Ihre erste Nachricht in [Erstellen Ihres ersten Versands](create-message.md) senden.
 
-   ![](assets/send-email.png)
+   ![E-Mail-Versand-Editor mit den Feldern „Von“, „An“ und „Betreff“, HTML-Inhalt und der Schaltfläche „Senden“](assets/send-email.png)
 
-1. **Nachrichten in einer Marketing-Kampagne**: Sie können Nachrichten im Kontext einer [Marketing-Kampagne](campaigns.md) senden, einen Validierungsprozess definieren und sie in einem konsolidierten Dashboard senden und verfolgen. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../automation/campaigns/marketing-campaign-deliveries.md).
+1. **Nachrichten in einer Marketing-Kampagne**: Sie können Nachrichten im Kontext einer [Marketing-Kampagne](campaigns.md) senden, einen Validierungsprozess definieren und sie in einem konsolidierten Dashboard senden und verfolgen. Weitere Informationen hierzu finden Sie unter [Sendungen von Marketing-Kampagnen](../../automation/campaigns/marketing-campaign-deliveries.md).
 
-   ![](assets/deliveries-in-a-campaign.png)
+   ![Kampagnen-Dashboard, das die Sendungen mit ihren Genehmigungsstatus wie Zu validieren und Zu übermitteln auflistet](assets/deliveries-in-a-campaign.png)
 
-1. **Nachrichten in einem Workflow**: Sie können Nachrichten über einen [Workflow](../config/workflows.md) senden und Ihre Sendungen automatisieren. Weitere Informationen dazu finden Sie auf [dieser Seite](../../automation/workflow/delivery.md).
+1. **Nachrichten in einem Workflow**: Sie können Nachrichten über einen [Workflow](../config/workflows.md) senden und Ihre Sendungen automatisieren. Weitere Informationen finden Sie unter [Versand](../../automation/workflow/delivery.md).
 
-   ![](assets/send-in-a-wf.png)
+   ![Kampagnen-Workflow mit Abfrage- und Leseliste, die einen Versand im Sommer, eine Wartezeit und einen Mobile-Versand speist](assets/send-in-a-wf.png)
 
-1. **Ausgelöste Nachrichten**: Sie können [Trigger-Nachrichten](../send/transactional.md) über ein Ereignis auslösen. Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwalten von Trigger-Nachrichten entwickelt. Die Schritte zum Konfigurieren und Senden von Transaktionsnachrichten werden auf [dieser Seite](../send/transactional.md) ausführlich beschrieben.
+1. **Ausgelöste Nachrichten**: Sie können [Trigger-Nachrichten](../send/transactional.md) über ein Ereignis auslösen. Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwalten von Trigger-Nachrichten entwickelt. Die Schritte zum Konfigurieren und Senden von Transaktionsnachrichten werden im Abschnitt [Campaign-Transaktionsnachrichten“ &#x200B;](../send/transactional.md)
 
 ## Kommunikationskanäle {#gs-channel}
 
@@ -111,7 +111,7 @@ Ein **delivery** ist ein eigenständiges Versandobjekt, das einmal ausgeführt w
 
 Sendungen können entweder in der Versandliste oder innerhalb eines Workflows über die Aktivität [Versand](../../automation/workflow/delivery.md) erstellt werden.
 
-Workflows bieten abhängig vom zu verwendeten Kanal auch spezifische Versandaktivitäten. Weiterführende Informationen zu diesen Aktivitäten erhalten Sie in [diesem Abschnitt](../../automation/workflow/cross-channel-deliveries.md).
+Workflows bieten abhängig vom zu verwendeten Kanal auch spezifische Versandaktivitäten. Weitere Informationen zu diesen Aktivitäten finden Sie unter [Kanalübergreifende Sendungen](../../automation/workflow/cross-channel-deliveries.md).
 
 ### Wiederkehrender Versand {#recurring-delivery}
 

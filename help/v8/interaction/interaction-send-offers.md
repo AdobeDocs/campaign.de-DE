@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 88%
+source-wordcount: '1643'
+ht-degree: 73%
 ---
 # Senden eines Angebots{#send}
 
@@ -41,37 +41,37 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in einen Versand einzufügen:
 
 1. Klicken Sie im Versandfenster auf das Symbol **Angebote**.
 
-   ![](assets/offer_delivery_001.png)
+   ![E-Mail-Versand mit der Schaltfläche Angebote, der das Dialogfeld Angebotsverwaltung mit einem leeren Feld Platzierung öffnet](assets/offer_delivery_001.png)
 
 1. Wählen Sie die Ihrer Angebotsumgebung entsprechende Platzierung aus.
 
-   ![](assets/offer_delivery_002.png)
+   ![Dropdown-Liste „Platzierung“ im Dialogfeld „Angebotsverwaltung“, in der die verfügbaren E-Mail-Platzierungen aufgeführt sind](assets/offer_delivery_002.png)
 
 1. Wählen Sie zum Eingrenzen der Angebotsauswahl des Moduls entweder die Kategorie der zu unterbreitenden Angebote oder ein Thema/mehrere Themen aus. Es wird empfohlen, jeweils nur eines dieser Felder gleichzeitig zu verwenden, um eine Überlastung der Einschränkungen zu vermeiden.
 
-   ![](assets/offer_delivery_003.png)
+   ![Dialogfeld Angebotsverwaltung mit der Dropdown-Liste Kategorie , in der die Angebotskatalogkategorien aufgelistet sind](assets/offer_delivery_003.png)
 
-   ![](assets/offer_delivery_004.png)
+   ![Dialogfeld „Angebotsverwaltung“ mit ausgefülltem Feld „Designs“](assets/offer_delivery_004.png)
 
 1. Geben Sie die Anzahl an Angeboten an, die im Nachrichten-Textkörper erscheinen sollen.
 
-   ![](assets/offer_delivery_005.png)
+   ![Dialogfeld Angebotsverwaltung, in dem die Anzahl der Vorschläge pro Nachrichtenfeld auf 2 gesetzt ist](assets/offer_delivery_005.png)
 
 1. Wählen Sie bei Bedarf die Option **[!UICONTROL Nicht infrage kommende Empfänger ausschließen]** aus. [Weitere Informationen](#parameters-for-calling-offer-engine)
 
-   ![](assets/offer_delivery_006.png)
+   ![Dialogfeld Angebotsverwaltung mit ausgewählter Option Nicht infrage kommende Empfänger ausschließen &#x200B;](assets/offer_delivery_006.png)
 
 1. Wählen Sie die Option **[!UICONTROL Leere Darstellung anzeigen, wenn kein Angebot ausgewählt wurde]** aus. [Weitere Informationen](#parameters-for-calling-offer-engine)
 
-   ![](assets/offer_delivery_007.png)
+   ![Das Dialogfeld Angebotsverwaltung mit der Option Leere Darstellung anzeigen, wenn kein Angebot ausgewählt wurde](assets/offer_delivery_007.png)
 
 1. Fügen Sie die Eigenschaften mithilfe der Zusammenführungsfelder in den Versandinhalt ein. Die Anzahl der verfügbaren Vorschläge hängt von der Konfiguration des Angebotsmodul-Aufrufs ab und ihre Reihenfolge hängt von der Priorität der Angebote ab.
 
-   ![](assets/offer_delivery_008.png)
+   ![Pfad des Versandinhalts: Vorschläge, Vorschläge 2, Rendering-Funktion, HTML-Rendering](assets/offer_delivery_008.png)
 
 1. Schließen Sie den Inhalt ab, testen Sie Ihren Versand und führen Sie ihn aus.
 
-   ![](assets/offer_delivery_010.png)
+   ![Inhalt des E-Mail-Versands mit zwei Vorschlagsskripten und hervorgehobener Schaltfläche „Senden“](assets/offer_delivery_010.png)
 
 
 ### Parameter des Angebotsmoduls {#parameters-for-calling-offer-engine}
@@ -97,7 +97,7 @@ Die Aktivität **Anreicherung** ermöglicht das Hinzufügen von Angeboten oder L
 
 Sie können beispielsweise aus einer Abfrage stammende Empfängerdaten vor Durchführung eines Versands anreichern.
 
-![](assets/int_enrichment_offer1.png)
+![Workflow mit einer Abfrage, einer Anreicherung und einer Briefpost-Versandaktivität, die durch Ergebnisübergänge verknüpft sind](assets/int_enrichment_offer1.png)
 
 Zwei Methoden ermöglichen in diesem Fall die Auswahl der Angebotsvorschläge:
 
@@ -112,18 +112,18 @@ Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritt
 1. Wählen Sie **[!UICONTROL Daten hinzufügen]** im Tab **[!UICONTROL Anreicherung]**.
 1. Wählen Sie **[!UICONTROL Angebotsvorschlag]** als hinzuzufügenden Datentyp aus.
 
-   ![](assets/int_enrichment_offer2.png)
+   ![Assistent für zusätzliche Daten mit ausgewählter Option „Angebotsvorschlag“](assets/int_enrichment_offer2.png)
 
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
 1. Geben Sie die Angebotsauswahl an. Dafür stehen zwei Optionen zur Verfügung:
 
    * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Beim Ankreuzen dieser Option geben Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl der beizubehaltenden Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
 
-     ![](assets/int_enrichment_offer3.png)
+     ![Der Schritt Angebotsvorschläge wurde festgelegt, um nach dem besten Angebot in einer Kategorie zu suchen, wobei Platz, Kategorie und Angebote beibehalten werden sollten](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL Vordefiniertes Angebot]**: Beim Ankreuzen dieser Option können Sie ohne Abfrage des Angebotsmoduls direkt das einzufügende Angebot konfigurieren (Platzierung, ein bestimmtes Angebot und ein Kontaktdatum).
 
-     ![](assets/int_enrichment_offer4.png)
+     ![Der Schritt Angebotsvorschläge wird in den Feldern Platzierung und Angebot auf ein vordefiniertes Angebot festgelegt](assets/int_enrichment_offer4.png)
 
 1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Weitere Informationen](#offer-into-a-delivery)
 
@@ -141,11 +141,11 @@ Gehen Sie dazu wie folgt vor:
 1. Wählen Sie im folgenden Fenster den Datentyp **[!UICONTROL Relation]** aus.
 1. Definieren Sie den Typ und das Ziel der einzurichtenden Relation. In diesem Fall ist das Angebotsschema die Zielgruppe.
 
-   ![](assets/int_enrichment_link1.png)
+   ![Schritt zur Link-Definition mit einer Relation, deren Ziel immer verfügbar ist und deren Marketing-Angebotsschema als Ziel dient](assets/int_enrichment_link1.png)
 
 1. Definieren Sie die Art der Relation zwischen den Daten der Eingangstabelle der Aktivität „Anreicherung“ (hier die Empfängertabelle) und der Angebotstabelle. Sie können beispielsweise einen Angebots-Code mit einer Empfängerin bzw. einem Empfänger verknüpfen.
 
-   ![](assets/int_enrichment_link2.png)
+   ![Verknüpfungsdefinitionsverknüpfungsbedingungen, die dem Quellfeld cryptedId mit dem Zielcodefeld übereinstimmen](assets/int_enrichment_link2.png)
 
 1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Weitere Informationen](#offer-into-a-delivery)
 
@@ -166,11 +166,11 @@ Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten
 1. Erstellen Sie eine Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die nach einer Abfrage und vor einer Versandaktivität platziert wird. [Weitere Informationen](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. Klicken Sie im Anreicherung-Tab der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
 
-   ![](assets/ita_enrichment_rankweight_1.png)
+   ![Anreicherungsaktivität mit hervorgehobenem Link „Zusätzliche Daten bearbeiten“, in der die Vorschlagsdaten aufgelistet sind](assets/ita_enrichment_rankweight_1.png)
 
 1. Fügen Sie für das Ranking die Spalte **[!UICONTROL @rank]** und für die Gewichtung die Spalte **[!UICONTROL @weight]** hinzu.
 
-   ![](assets/ita_enrichment_rankweight_2.png)
+   ![Dialogfeld „Zusätzliche Spalten auswählen“ mit den Ausgabespalten „Gewichtung“ und „Rangfolge“ wird unter dem Vorschlag hinzugefügt](assets/ita_enrichment_rankweight_2.png)
 
 1. Bestätigen Sie Ihre Wahl und speichern Sie den Workflow.
 
@@ -184,7 +184,7 @@ Weitere Informationen zur Aktivität **Angebotsmodul** finden Sie auf [dieser Se
 
 Das Prinzip dieser Aktivität entspricht dem der **Anreicherung**. Auch hier werden die Daten der Eingangspopulation mit einem vom Modul berechneten Angebot angereichert, bevor die eigentliche Versandaktivität startet.
 
-![](assets/int_offerengine_activity2.png)
+![Workflow mit einer Abfrage, einem Angebotsmodul und einer Briefpost-Versandaktivität, die durch Ergebnisübergänge verknüpft sind](assets/int_offerengine_activity2.png)
 
 Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritte aus:
 
@@ -195,7 +195,7 @@ Nach der Konfiguration Ihrer Aktivität **Abfrage** führen Sie folgende Schritt
    >
    >Wenn Sie diese Aktivität nutzen, werden nur die im Versand verwendeten Vorschläge gespeichert.
 
-   ![](assets/int_offerengine_activity1.png)
+   ![Angebotsmodul-Aktivität mit Platzierung, Angebotskategorie und Anzahl der zu berechnenden Vorschläge](assets/int_offerengine_activity1.png)
 
 1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. [Weitere Informationen](#inserting-an-offer-proposition-into-a-delivery)
 
@@ -214,7 +214,7 @@ Gehen Sie dazu wie folgt vor:
    * Konfigurieren Sie anhand der verfügbaren Filter und Begrenzungen die Population des Segments.
    * Wählen Sie dann das Angebot aus, das Sie der Teilmenge unterbreiten möchten. Es stehen die Angebote zur Verfügung, die für die im vorherigen Schritt ausgewählte Angebotsplatzierung qualifiziert sind.
 
-     ![](assets/int_offer_per_cell1.png)
+     ![Aktivität „Untergruppe“ mit einer E-Mail-Platzierung und der Dropdown-Liste „Angebot“ mit den verfügbaren Angeboten](assets/int_offer_per_cell1.png)
 
 1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht.
 

@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 64%
+source-wordcount: '701'
+ht-degree: 55%
 ---
 # Schlüsselverwaltung und Eindeutigkeit {#key-management}
 
@@ -73,11 +73,11 @@ Dieser technische Workflow ist im Knoten **[!UICONTROL Administration > Produkti
 
 Dieser Workflow überprüft alle benutzerdefinierten und integrierten Schemata, um duplizierte Zeilen zu erkennen.
 
-![](assets/unicity-alerting-wf.png)
+![Workflow Warnhinweise für Eindeutigkeit (ffdaUnicity): Schemaprüfungen, doppelte Zeilen erkannt, Test-, Warnhinweis-, End- und Bereinigungsaktivitäten](assets/unicity-alerting-wf.png)
 
 Wenn der Workflow **[!UICONTROL Warnhinweise für Eindeutigkeit]** (ffdaUnicity) doppelte Schlüssel entdeckt, werden diese zu einer bestimmten **Audit-Unicity**-Tabelle hinzugefügt, die den Namen des Schemas, den Typ des Schlüssels, die Anzahl der betroffenen Zeilen und das Datum enthält. Über den Knoten **[!UICONTROL Administration > Audit > Schlüsseleindeutigkeit]** können Sie auf doppelte Schlüssel zugreifen.
 
-![](assets/unicity-table.png)
+![Eindeutigkeitsliste für Schlüssel mit Schema-ID, Schlüsseldefinition, Schlüsseltyp, doppeltem Wert, doppelter Anzahl, Erstellungsdatum](assets/unicity-table.png)
 
 Als Datenbankadministrator können Sie eine SQL-Aktivität verwenden, um die Duplikate zu entfernen, oder sich an die Kundenunterstützung von Adobe wenden, um weitere Anleitungen zu erhalten.
 
@@ -85,7 +85,7 @@ Als Datenbankadministrator können Sie eine SQL-Aktivität verwenden, um die Dup
 
 Wenn doppelte Schlüssel erkannt werden, wird eine bestimmte Benachrichtigung an die Benutzergruppe **[!UICONTROL Workflow-Verantwortliche]** gesendet. Inhalt und Zielgruppe dieses Warnhinweises können in der Aktivität **Warnhinweis** des Workflows **[!UICONTROL Warnhinweise für Eindeutigkeit]** geändert werden.
 
-![](assets/wf-alert-activity.png)
+![Warnaktivität in Warnhinweisen für Eindeutigkeit, die der Gruppe der Workflow-Verantwortlichen mit den doppelten Schlüsseln zugewiesen ist](assets/wf-alert-activity.png)
 
 
 ## Zusätzliche Schutzmaßnahmen {#duplicates-guardrails}
@@ -94,25 +94,25 @@ Campaign verfügt über eine Reihe neuer Schutzmaßnahmen, um das Einfügen dopp
 
 >[!NOTE]
 >
->Diese Schutzmaßnahmen sind ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](../start/compatibility-matrix.md)
+>Diese Schutzmaßnahmen sind ab Campaign v8.3 verfügbar. Informationen zum Überprüfen Ihrer Version finden Sie in [&#x200B; Kompatibilitätsmatrix für Campaign v8](../start/compatibility-matrix.md)
 
 ### Versandvorbereitung {#remove-duplicates-delivery-preparation}
 
 Adobe Campaign entfernt während der Versandvorbereitung automatisch jede doppelte UUID aus einer Zielgruppe. Dieser Mechanismus verhindert, dass bei der Vorbereitung eines Versands ein Fehler auftritt. Als Endbenutzer können Sie diese Informationen in den Versandlogs überprüfen: Einige Empfänger können aufgrund doppelter Schlüssel aus der Hauptzielgruppe ausgeschlossen werden. In diesem Fall wird folgender Warnhinweis angezeigt: `Exclusion of duplicates (based on the primary key or targeted records)`.
 
-![](assets/exclusion-duplicates-log.png)
+![Versandlog mit der Zeile Ausschluss von Duplikaten (basierend auf dem Primärschlüssel der Zieldatensätze), hervorgehoben durch einen Pfeil](assets/exclusion-duplicates-log.png)
 
 ### Aktualisieren von Daten in einem Workflow {#duplicates-update-data}
 
 Im Kontext einer [Enterprise (FFDA)-Bereitstellung &#x200B;](enterprise-deployment.md) Sie keinen internen Schlüssel (UUID) als Feld auswählen, um Daten in einem Workflow zu aktualisieren.
 
-![](assets/update-data-no-internal-key.png)
+![Datenaktivität mit der Feldauswahl für Empfänger (nms) aktualisieren:recipient wobei kein internes Schlüsselfeld ausgewählt werden kann](assets/update-data-no-internal-key.png)
 
 ### Abfrage eines Schemas mit Duplikaten {#query-with-duplicates}
 
 Wenn ein Workflow mit der Ausführung einer Abfrage eines Schemas beginnt, prüft Adobe Campaign, ob ein doppelter Eintrag in der [Audit-Unicity-Tabelle) &#x200B;](#unicity-wf). In diesem Fall protokolliert der Workflow eine Warnung, da der nachfolgende Vorgang mit den duplizierten Daten möglicherweise das Workflow-Ergebnis beeinflusst.
 
-![](assets/query-with-duplicates.png)
+![Workflow-Protokoll mit der Warnung Eindeutigkeitsbeschränkung verletzt. Duplizierte Daten auf Schema-Nms gefunden:recipient](assets/query-with-duplicates.png)
 
 Diese Prüfung wird in den folgenden Workflow-Aktivitäten durchgeführt:
 

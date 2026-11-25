@@ -26,12 +26,12 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 98%
+source-wordcount: '802'
+ht-degree: 83%
 ---
-# Rendern des Posteingangs{#inbox-rendering}
+# Rendering im Posteingang{#inbox-rendering}
 
 ## Über Inbox Rendering {#about-inbox-rendering}
 
@@ -72,7 +72,7 @@ Jedes Mal, wenn Sie in einem Versand die Funktion **[!UICONTROL Inbox Rendering]
 
 Die Anzahl der restlichen verfügbaren Token wird im [Inbox-Rendering-Bericht](#inbox-rendering-report) angezeigt.
 
-![](assets/s_tn_inbox_rendering_tokens.png)
+![Bericht zu Rendering-Ergebnissen für den Posteingang mit hervorgehobener Anzahl der aus dem monatlichen Paket verwendeten Token](assets/s_tn_inbox_rendering_tokens.png)
 
 Normalerweise wird die Funktion zum Rendern des Posteingangs verwendet, um das HTML-Framework einer neu entworfenen E-Mail zu testen. Für jedes Rendering sind etwa 70 Token erforderlich (je nach der Anzahl der Umgebungen, in denen üblicherweise getestet wird). In einigen Fällen benötigen Sie jedoch möglicherweise mehrere Berichte über das Rendering des Posteingangs, um Ihren Versand vollständig zu testen. Daher könnten mehr Token erforderlich sein, um mehrere Prüfungen durchzuführen.
 
@@ -87,17 +87,17 @@ Weiterführende Informationen zur Erstellung, Planung und Zielgruppenbestimmung 
 
 1. Wählen Sie **[!UICONTROL Analysieren]** aus, um den Aufnahmeprozess zu starten.
 
-   ![](assets/s_tn_inbox_rendering_button.png)
+   ![Schaltfläche „Inbox Rendering“ in der Versand-Symbolleiste und Schaltfläche „Analysieren“ im Dialogfeld „Inbox Rendering“](assets/s_tn_inbox_rendering_button.png)
 
-   Ein Testversand wird durchgeführt. Die Rendering-Miniaturansichten können wenige Minuten nach dem Versand der E-Mails in diesem Testversand aufgerufen werden. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](preview-and-proof.md#send-proofs).
+   Ein Testversand wird durchgeführt. Die Rendering-Miniaturansichten können wenige Minuten nach dem Versand der E-Mails in diesem Testversand aufgerufen werden. Weitere Informationen zum Testversand finden Sie unter [Testsendungen durchführen](preview-and-proof.md#send-proofs).
 
 1. Nach dem Absenden erscheint der Testversand in der Versandliste. Doppelklicken Sie darauf.
 
-   ![](assets/s_tn_inbox_rendering_delivery_list.png)
+   ![Versandliste mit dem Testversand des E-Mail-Versands, der nach dem Versand ausgewählt wurde](assets/s_tn_inbox_rendering_delivery_list.png)
 
 1. Gehen Sie zum Tab **Inbox Rendering** des Testversands.
 
-   ![](assets/s_tn_inbox_rendering_tab.png)
+   ![Registerkarte „Inbox Rendering“ des Korrekturabzugs mit hervorgehobener Option mit dem Berichtzusammenfassungs- und dem Abschnitt für Mobilgeräte](assets/s_tn_inbox_rendering_tab.png)
 
    Der Inbox-Rendering-Bericht wird angezeigt.
 
@@ -107,14 +107,14 @@ Dieser Bericht zeigt das Rendering des Posteingangs an, so wie es für die Empf�
 
 Im oberen Bereich wird in einer grafischen, farbcodierten Darstellung die Aufteilung der Anzahl der empfangenen, unerwünschten (Spam) und nicht empfangenen Nachrichten angezeigt und die Anzahl der Nachrichten, deren Empfang aussteht.
 
-![](assets/s_tn_inbox_rendering_summary.png){width="40%"}
+![Tortendiagramm für Posteingang, Spam, Nicht empfangen und Warten auf Empfang, mit Nicht empfangen und Warten ausgeblendet](assets/s_tn_inbox_rendering_summary.png){width="40%"}
 
 Bewegen Sie den Mauszeiger über das Diagramm, um Informationen zu jeder Farbe aufzurufen. Klicken Sie auf ein Element in der Liste, um die entsprechende Kategorie im Diagramm auszublenden oder anzuzeigen.
 
 Der Hauptteil des Berichts ist in drei Teile unterteilt: **[!UICONTROL Mobilgerät]**, **[!UICONTROL Desktop]** und **[!UICONTROL Webmails]**. Scrollen Sie im Bericht nach unten, um alle in diese drei Kategorien eingeteilten Renderings anzusehen.
 
-![](assets/s_tn_inbox_rendering_report.png)
+![Webmails-Abschnitt des Inbox Rendering-Berichts mit einer Karte für jede Webmail- und Browser-Kombination](assets/s_tn_inbox_rendering_report.png)
 
 Klicken Sie auf eine der Karten, um das entsprechende Rendering im Detail anzusehen. Das Rendering wird für das jeweils ausgewählte Empfangsmedium angezeigt.
 
-![](assets/s_tn_inbox_rendering_example.png)
+![Detailliertes Rendern der E-Mail in Gmail auf Chrome, von der Karte aus im Bericht geöffnet](assets/s_tn_inbox_rendering_example.png)

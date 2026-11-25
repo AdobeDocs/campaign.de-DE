@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 91%
+source-wordcount: '1195'
+ht-degree: 81%
 ---
 # Aktualisieren von Adobe Experience Platform-Profilen über Adobe Campaign-Landingpages {#ac-aep-lp}
 
@@ -69,7 +69,7 @@ Gehen Sie dazu wie folgt vor:
    * `CLIENT SECRET`
    * `ORGANIZATION ID`
 
-   ![](assets/ac-lp-oauth.png){width="70%"}
+   ![Adobe Developer Console-Projekt mit Experience Platform-API und OAuth-Server-zu-Server-Anmeldeinformationen](assets/ac-lp-oauth.png){width="70%"}
 
 Nachdem Sie Ihre OAuth-Verbindung konfiguriert haben, erstellen und konfigurieren Sie eine neue **[!UICONTROL HTTP-API]** Source-Verbindung, um Adobe Campaign mit Adobe Experience Platform zu verknüpfen.
 
@@ -79,21 +79,21 @@ Mit der vorhandenen OAuth-Verbindung besteht der nächste Schritt darin, eine **
 
 1. Navigieren Sie zu Adobe Experience Platform-**[!UICONTROL Quellen]**, suchen Sie nach der **[!UICONTROL HTTP-API]**-Quelle und klicken Sie dann auf **[!UICONTROL Daten hinzufügen]**.
 
-   ![](assets/ac-lp-source.png){width="70%"}
+   ![Katalog mit Experience Platform-Quellen, der nach HTTP durchsucht wurde, mit der Schaltfläche „Daten hinzufügen“ für die HTTP-API-Quelle](assets/ac-lp-source.png){width="70%"}
 
 1. Konfigurieren Sie die Verbindung entsprechend Ihren Anforderungen. Detaillierte Informationen zum Konfigurieren einer HTTP-API-Verbindung finden Sie in der [Dokumentation zu Adobe Experience Platform-Quellen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=de){target="_blank"}.
 
    Schalten **[!UICONTROL im Schritt]** Authentifizierung“ die Option **[!UICONTROL Authentifizierung aktivieren]** ein, um sich mit dem zuvor über die OAuth-Integration generierten Zugriffstoken zu authentifizieren.
 
-   ![](assets/ac-lp-source-authentication.png){width="70%"}
+   ![Schritt „HTTP-API-Konto verbinden“ mit aktiviertem Umschalter „Authentifizierung aktivieren“](assets/ac-lp-source-authentication.png){width="70%"}
 
 1. Sobald die Quellverbindung konfiguriert ist, wird der Streaming-Endpunkt angezeigt. Dieser Endpunkt ist erforderlich, um Daten in Adobe Experience Platform aufzunehmen.
 
-   ![](assets/ac-lp-endpoint.png){width="70%"}
+   ![Seite mit Details zur HTTP-API-Quelle mit hervorgehobenem Feld für den Streaming-Endpunkt](assets/ac-lp-endpoint.png){width="70%"}
 
    Sie können auch auf ein Beispiel des in Adobe Experience Platform erfassten Datenformats zugreifen, indem Sie den neu erstellten Datenfluss über die Registerkarte **[!UICONTROL Datenflüsse]** aufrufen.
 
-   ![](assets/ac-lp-schema.png){width="70%"}
+   ![Seite „HTTP-API-Datenfluss“ mit hervorgehobener Option „Payload-Schema kopieren“](assets/ac-lp-schema.png){width="70%"}
 
 Nachdem jetzt die HTTP-API-Quellverbindung eingerichtet worden ist, müssen Sie bestimmte Optionen zu Adobe Campaign hinzufügen, um die Verbindung zu Adobe Experience Platform zu aktivieren.
 
@@ -115,7 +115,7 @@ Auf den nachstehenden Registerkarten finden Sie die beiden Methoden:
    * IMS_ORG_ID = ORGANIZATION ID
    * IMS_CLIENT_API_KEY = cryptString(CLIENT ID)
 
-   ![](assets/ac-lp-xtk.png){width="70%"}
+   ![Liste der Kampagnenoptionen, wobei IMS_CLIENT_API_KEY, IMS_CLIENT_ID, IMS_CLIENT_SECRET und IMS_ORG_ID ausgewählt sind](assets/ac-lp-xtk.png){width="70%"}
 
    >[!NOTE]
    >
@@ -157,7 +157,7 @@ Um die Datensynchronisation zwischen Landingpages und Adobe Experience Platform 
    >
    >Zugriffstoken und Authentifizierungsdaten werden automatisch aus den zuvor eingerichteten Optionen abgerufen.
 
-   ![](assets/ac-lp-script.png){width="70%"}
+   ![Campaign JavaScript-Code-Liste mit dem benutzerdefinierten AEP-API-Code, der ein Profil in AEP aktualisiert](assets/ac-lp-script.png){width="70%"}
 
    +++  Skript 1: Laden von Profilattributen von Experience Platform
 
@@ -358,13 +358,13 @@ Mit den zu Adobe Campaign hinzugefügten JavaScript-Codes können Sie diese mit 
 
 Hier ist ein Beispiel für einen Workflow, der die JavaScript-Code-Aktivitäten vor und nach einer Landingpage verwendet:
 
-![](assets/ac-lp-wkf.png){width="70%"}
+![Landingpage-Workflow: Vorausfüllen, Laden von Profildetails aus AEP, Opt-out-/Opt-in-Web-Seite, Aktualisieren von Profilen, Ende](assets/ac-lp-wkf.png){width="70%"}
 
 Im Folgenden finden Sie ein Beispiel für eine Landingpage und eine JavaScript-Code-Aktivität, die zur Aktualisierung von Profilattributen in Adobe Experience Platform konfiguriert wurde:
 
-![](assets/ac-lp-example.png){width="70%"}
+![Landingpage-Vorschau mit den Kontrollkästchen Opt-out von E-Mail, SMS und Push sowie einer Schaltfläche Senden &#x200B;](assets/ac-lp-example.png){width="70%"}
 
-![](assets/ac-lp-code.png){width="70%" zoomable="yes"}
+![Aktualisieren der Profilskriptaktivität mit Code, der die Profilabmeldewerte an Experience Platform sendet](assets/ac-lp-code.png){width="70%" zoomable="yes"}
 
 ### Weitere Informationen
 

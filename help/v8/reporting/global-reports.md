@@ -31,20 +31,20 @@ topic_v2:
     internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 95%
+source-wordcount: '2115'
+ht-degree: 84%
 ---
 # Allgemeine Berichte {#global-reports}
 
 Diese Berichte beziehen sich auf Aktivitäten im Zusammenhang mit Daten der gesamten Datenbank. Um das Berichts-Dashboard anzuzeigen, navigieren Sie zur Registerkarte **[!UICONTROL Berichte]**.
 
-![](assets/reports-tab.png)
+![Registerkarte „Berichte“ auf der Adobe Campaign-Startseite, auf der das Dashboard Globale Berichte mit Berichtskacheln angezeigt wird](assets/reports-tab.png)
 
 Um Berichte anzuzeigen, klicken Sie auf ihren Namen. Standardmäßig sind die folgenden Berichte verfügbar:
 
-![](assets/report-global-list.png)
+![Liste globaler Berichte mit den Standardberichten, z. B. Benutzeraktivitäten, Versanddurchsatz und Browser](assets/report-global-list.png)
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Um Berichte anzuzeigen, klicken Sie auf ihren Namen. Standardmäßig sind die fo
 
 Dieser Bericht enthält Informationen zum Versanddurchsatz der gesamten Plattform für einen bestimmten Zeitraum. Die Kriterien zur Messung der Versandgeschwindigkeit von Nachrichten sind die Anzahl der pro Stunde gesendeten Nachrichten und die Größe der Nachrichten (in Bits pro Sekunde). Im folgenden Beispiel zeigt das erste Diagramm die erfolgreichen Sendungen in Blau und die Anzahl der fehlerhaften Sendungen in Orange an.
 
-![](assets/report-toolbar.png)
+![Bericht zum Versanddurchsatz mit dem Zeitbereich „Parameter“, dem Link „Aktualisieren“ und Diagrammen mit Erfolgen und Fehlern pro Stunde](assets/report-toolbar.png)
 
 Sie können die angezeigten Werte konfigurieren, indem Sie die Zeitskala ändern: 1-Stunden-Ansicht, 3-Stunden-Ansicht, 24-Stunden-Ansicht usw. Klicken Sie auf **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
 
@@ -139,11 +139,11 @@ Zu jeder Domain erscheint:
 
 Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das Symbol [+] klicken. Damit kann für jeden Domain-Typ die Aufschlüsselung der fehlerhaften Nachrichten nach Fehlertyp angezeigt werden.
 
-![](assets/errors-report-details.png)
+![Aufschlüsselung der Fehler nach Domain-Tabelle, wobei erweiterbare Domain-Zeilen Fehlerzählungen nach Fehlertyp anzeigen](assets/errors-report-details.png)
 
 >[!NOTE]
 >
->Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie den **[!UICONTROL Versand-Logs (broadlogrcp)]** Cube. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md). Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die nicht zu einer bestimmten Klasse gehören.
+>Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie den **[!UICONTROL Versand-Logs (broadlogrcp)]** Cube. Weitere Informationen hierzu finden Sie unter [&#x200B; mit Adobe Campaign-Analyseberichten](gs-cubes.md). Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die nicht zu einer bestimmten Klasse gehören.
 
 ## Browser {#browsers}
 
@@ -157,7 +157,7 @@ Dieser Bericht enthält die Aufschlüsselung der Browser, die von den Versandemp
 
 Die allgemeinen Statistiken zur Browserverwendung werden als Tabelle und Diagramm dargestellt.
 
-![](assets/browser-report.png)
+![Bericht zu Internet-Browsern mit einer Tabelle der Besucher, der aufgerufenen Seiten und der Nutzungsrate pro Browser sowie einem Ringdiagramm](assets/browser-report.png)
 
 Folgende Indikatoren werden angezeigt:
 
@@ -169,7 +169,7 @@ Folgende Indikatoren werden angezeigt:
 
 In der Tabelle der allgemeinen Statistiken können Sie auf die Browser-Namen klicken, um für jeden Browser die Verwendungsstatistiken anzuzeigen.
 
-![](assets/browser-report-info.png)
+![Statistiken für einen Browser mit Verlaufskurve, Aufschlüsselung nach Versionen, Diagramm und globaler Rate und relativer Rate](assets/browser-report-info.png)
 
 Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
@@ -247,7 +247,7 @@ Dieser Bericht enthält die Aufschlüsselung der Betriebssysteme, die von den Ve
 
 Die allgemeinen Statistiken bezüglich der verwendeten Betriebssysteme werden in Form von Diagrammen und Tabellen dargestellt.
 
-![](assets/os-report.png)
+![Bericht zu Betriebssystemen mit einer Tabelle der Besucher, der aufgerufenen Seiten und der Nutzungsrate pro System sowie einem Ringdiagramm](assets/os-report.png)
 
 Folgende Indikatoren werden angezeigt:
 
@@ -259,7 +259,7 @@ Folgende Indikatoren werden angezeigt:
 
 In der Tabelle der allgemeinen Statistiken können Sie auf die Namen der einzelnen Betriebssysteme klicken, um die jeweiligen Verwendungsstatistiken anzuzeigen.
 
-![](assets/os-report-details.png)
+![Windows-Statistikseite mit der Verlaufskurve, Aufschlüsselung nach Versionsdiagramm und globaler Rate und relativer Rate pro Version](assets/os-report-details.png)
 
 Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
@@ -276,11 +276,11 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 
 Mit diesem Bericht können Sie die Abonnements für Informationsdienste überwachen. Es werden An- und Abmeldungen angezeigt.
 
-![](assets/service-report.png)
+![Abonnement-Tracking-Bericht mit der Gesamtentwicklung der Abonnementtabelle und den Abonnement-Entwicklungskurven](assets/service-report.png)
 
 Er kann für ein Abonnement angezeigt werden, indem Sie auf den Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** der Homepage oder des Explorers klicken. Wählen Sie das gewünschte Abonnement aus und klicken Sie dann auf die Registerkarte **[!UICONTROL Berichte]**. Der Bericht **[!UICONTROL Abonnement-Tracking]** ist standardmäßig verfügbar. Sie können damit die An- und Abmelde-Trends und die Treuerate über einen Zeitraum hinweg sehen. Die Darstellung dieser Daten kann über die Dropdown-Liste konfiguriert werden. Klicken Sie auf **[!UICONTROL Aktualisieren]**, um die ausgewählte Konfiguration zu validieren.
 
-Weiterführende Informationen dazu finden Sie auf [dieser Seite](../start/subscriptions.md).
+Weitere Informationen finden Sie unter [Verwalten von Abonnements und Abmeldungen in Campaign](../start/subscriptions.md).
 
 Die Zeile **[!UICONTROL Anzahl Anmeldungen bis heute]** gibt die Gesamtzahl aller Abonnenten zum aktuellen Zeitpunkt an.
 
@@ -302,7 +302,7 @@ Das Diagramm veranschaulicht die Abonnemententwicklung über den ausgewählten Z
 
 Dieser Bericht enthält die Anzahl verarbeiteter E-Mails sowie den prozentualen Anteil an zugestellten Nachrichten, Hard- und Softbounces, Öffnungen, Klicks und Abmeldungen nach Domains.
 
-![](assets/broadcast-report.png)
+![Bericht zu Versandstatistiken mit verarbeiteten E-Mails, zugestellten Nachrichten, Bounces, Öffnungen, Klicks und Abmeldungen pro E-Mail-Domain](assets/broadcast-report.png)
 
 Folgende Indikatoren werden angezeigt:
 
@@ -313,7 +313,7 @@ Folgende Indikatoren werden angezeigt:
 
   >[!NOTE]
   >
-  >Weiterführende Informationen zu Hard- und Softbounces finden Sie auf [dieser Seite](../send/quarantines.md).
+  >Weiterführende Informationen zu Hard- und Softbounces finden Sie unter [Quarantäneverwaltung in Campaign](../send/quarantines.md).
 
 * **[!UICONTROL Öffnungen]**: Prozentualer Anteil der angesprochenen Empfängerinnen und Empfänger, die mindestens einmal eine Nachricht geöffnet haben, im Vergleich zur Gesamtzahl der erfolgreich verarbeiteten Nachrichten.
 * **[!UICONTROL Klicks]**: Prozentualer Anteil der angesprochenen Empfängerinnen und Empfänger, die mindestens einmal in einem Versand geklickt haben, im Vergleich zur Anzahl der erfolgreich verarbeiteten Nachrichten.
@@ -323,9 +323,9 @@ Folgende Indikatoren werden angezeigt:
 
 Dieser Bericht zeigt die Aufschlüsselung von Öffnungen nach Betriebssystem, Gerät und Browser für den entsprechenden Zeitraum an. Für jede Kategorie werden zwei Diagramme verwendet. Das erste zeigt Statistiken zu Öffnungen auf Computern und Mobilgeräten. Das zweite zeigt nur Statistiken zu Öffnungen auf Mobilgeräten an.
 
-Die Anzahl der Öffnungen entspricht der Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht gezählt. Weitere Informationen zum Tracking von Öffnungen finden Sie in [diesem Abschnitt](metrics-calculation.md#tracking-opens-).
+Die Anzahl der Öffnungen entspricht der Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht gezählt. Weitere Informationen zum Tracking von Öffnungen finden Sie unter [Tracking von Öffnungen](metrics-calculation.md#tracking-opens-).
 
-![](assets/user-agent-report.png)
+![Bericht zur Aufschlüsselung der Öffnungen mit Tortendiagrammen der Betriebssysteme, Geräte und Browser für alle Öffnungen und nur für Mobilgeräte](assets/user-agent-report.png)
 
 >[!NOTE]
 >

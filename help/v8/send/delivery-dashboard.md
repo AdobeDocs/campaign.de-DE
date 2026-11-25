@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 62%
+source-wordcount: '1329'
+ht-degree: 53%
 ---
 # Überwachen von Sendungen in der Campaign-Benutzeroberfläche {#delivery-dashboard}
 
@@ -46,7 +46,7 @@ Die Überwachung Ihrer Sendungen ist wichtig, um sicherzustellen, dass Ihre Kamp
 
 Auf die Liste aller Sendungen kann im Knoten **[!UICONTROL Kampagnenverwaltung > Sendungen]** zugegriffen werden.
 
-![](assets/deliveries-list.png)
+![Versandliste unter Kampagnenverwaltung mit Status- und Nachrichtenanzahl und dem unten ausgewählten Versand-Dashboard](assets/deliveries-list.png)
 
 Standardmäßig enthält die Liste der Sendungen die Namen und Status der Sendungen, die im ausgewählten Knoten erstellt wurden. Außerdem wird die Anzahl der zu sendenden, verarbeiteten und erfolgreich gesendeten Nachrichten angezeigt.
 
@@ -73,7 +73,7 @@ Im Folgenden finden Sie die Informationen, die Sie über die verschiedenen Regis
 * [Versand-Rendering](#delivery-rendering)
 * [Versandverfolgung](#delivery-audit-)
 
-![](assets/s_ncs_user_del_details.png)
+![Registerkarte „Versanddashboard-Zusammenfassung“ mit zum Senden, Verarbeiten und Erfolgen, Status und E-Mail-Konfiguration](assets/s_ncs_user_del_details.png)
 
 **Verwandte Themen:**
 
@@ -90,9 +90,9 @@ Die Registerkarte **[!UICONTROL Zusammenfassung]** enthält die Merkmale des Ver
 
 Über den Link **[!UICONTROL Berichte]**, auf den Sie über den Tab **[!UICONTROL Zusammenfassung]** zugreifen können, können Sie eine Berichtserie zur Versandaktion anzeigen: allgemeiner Versandbericht, detaillierter Bericht, Versandbericht, Verteilung von fehlgeschlagenen Nachrichten, Öffnungsrate, Klicks und Transaktionen usw.
 
-Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden. Weitere Informationen zu Versandberichten finden Sie in [diesem Abschnitt](../reporting/delivery-reports.md).
+Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden. Weiterführende Informationen zu Versandberichten finden Sie unter [Integrierte Adobe Campaign-Versandberichte](../reporting/delivery-reports.md).
 
-![](assets/delivery-report.png)
+![Berichtsansicht der Registerkarte Versandzusammenfassung mit den verfügbaren Versandberichten](assets/delivery-report.png)
 
 ## Versandlogs, -verlauf und -ausschlüsse {#delivery-logs-and-history}
 
@@ -102,15 +102,15 @@ Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche a
 
 >[!NOTE]
 >
->Die Liste mit den Versandlogs kann wie jede andere Liste in Campaign angepasst werden. Sie können beispielsweise eine Spalte hinzufügen, um zu erfahren, welche IP-Adresse die einzelnen E-Mails in einem Versand gesendet hat. Weiterführende Informationen zur Listenanzeige finden Sie in [diesem Abschnitt](../config/ui-settings.md#customize-lists).
+>Die Liste mit den Versandlogs kann wie jede andere Liste in Campaign angepasst werden. Sie können beispielsweise eine Spalte hinzufügen, um zu erfahren, welche IP-Adresse die einzelnen E-Mails in einem Versand gesendet hat. Weitere Informationen zum Konfigurieren der Listenanzeige finden Sie unter [Listen verwalten und anpassen](../config/ui-settings.md#customize-lists).
 
-![](assets/s_ncs_user_delivery_delivery_tab.png)
+![Registerkarte Versandlogs mit der Dropdown-Liste Statusfilter , auf der die Status der Versandlogs aufgeführt sind](assets/s_ncs_user_delivery_delivery_tab.png)
 
 Mit dem Link **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** können Sie die Mirrorseite für den Inhalt des aus der Liste ausgewählten Versands in einem neuen Fenster anzeigen.
 
 Die Mirrorseite steht nur für Sendungen zur Verfügung, für die HTML-Inhalte definiert wurden. Weitere Informationen hierzu finden Sie unter [Link zur Mirrorseite](mirror-page.md).
 
-![](assets/s_ncs_user_wizard_miror_page_link.png)
+![Liste der Versandlogs mit hervorgehobenem Link Mirrorseite für diese Nachricht anzeigen](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## Versand-Trackinglogs und -Verlauf {#tracking-logs}
 
@@ -122,9 +122,9 @@ Auf der Registerkarte **[!UICONTROL Tracking]** wird der Tracking-Verlauf für d
 
 Die Tracking-Konfiguration erfolgt im entsprechenden Schritt im Versandassistenten. Siehe [Getrackte Links konfigurieren](tracking.md).
 
-Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandberichten. Siehe [diesen Abschnitt](../reporting/delivery-reports.md).
+Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandberichten. Siehe [Integrierte Adobe Campaign-Versandberichte](../reporting/delivery-reports.md).
 
-![](assets/s_ncs_user_delivery_tracking_tab.png)
+![Registerkarte „Trackinglogs“ mit der Liste der verfolgten Öffnungen und Klicks mit Datum, Titel, Typ und Empfänger](assets/s_ncs_user_delivery_tracking_tab.png)
 
 ## Rendern des Posteingangs {#delivery-rendering}
 
@@ -132,7 +132,7 @@ Der Tab **[!UICONTROL Inbox Rendering]** ermöglicht es Ihnen, eine Vorschau der
 
 So können Sie sicherstellen, dass Ihre Nachricht den Empfängern in unterschiedlichen Webclients, Webmails und Geräten optimal dargestellt wird.
 
-Weitere Informationen zum Inbox Rendering finden Sie auf [dieser Seite](inbox-rendering.md).
+Weitere Informationen zum Inbox Rendering finden Sie unter [Inbox Rendering in Campaign](inbox-rendering.md)
 
 
 ## Versandverfolgung {#delivery-audit-}
@@ -145,9 +145,9 @@ Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgeho
 
 Eine Unter-Registerkarte listet die durchgeführten **[!UICONTROL Testsendungen]** auf.
 
-![](assets/s_ncs_user_delivery_log_tab.png)
+![Registerkarte Testsendungen - Unterregisterkarte mit den Testsendungen für den Versand, einschließlich zu sendender, verarbeiteter und erfolgreicher Nachrichten](assets/s_ncs_user_delivery_log_tab.png)
 
-Sie können die Anzeige in diesem Fenster (wie auch in den Registerkarten **[!UICONTROL Versand]** bzw. **[!UICONTROL Tracking]**) anpassen und die Spalten auswählen, die angezeigt werden sollen. Klicken Sie hierfür auf das Symbol **[!UICONTROL Liste konfigurieren]** in der rechten unteren Ecke des Bildschirms. Weiterführende Informationen zur Listenanzeige finden Sie in [diesem Abschnitt](../config/ui-settings.md#customize-lists).
+Sie können die Anzeige in diesem Fenster (wie auch in den Registerkarten **[!UICONTROL Versand]** bzw. **[!UICONTROL Tracking]**) anpassen und die Spalten auswählen, die angezeigt werden sollen. Klicken Sie hierfür auf das Symbol **[!UICONTROL Liste konfigurieren]** in der rechten unteren Ecke des Bildschirms. Weitere Informationen zum Konfigurieren der Listenanzeige finden Sie unter [Listen verwalten und anpassen](../config/ui-settings.md#customize-lists).
 
 ## Synchronisation des Versand-Dashboards {#delivery-dashboard-synchronization}
 

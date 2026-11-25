@@ -21,10 +21,10 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 82%
+source-wordcount: '178'
+ht-degree: 74%
 ---
 # Ausführungsparameter{#execution-settings}
 
@@ -34,7 +34,7 @@ Beim Erstellen einer Simulation können Sie bei Bedarf Ausführungseinstellungen
 
 Eine Änderung dieser Parameter ist im späteren Verlauf im Tab **[!UICONTROL Allgemein]** des Simulationsfensters möglich.
 
-![](assets/offer_simulation_008.png)
+![Registerkarte „Allgemein“ einer Simulation mit Ausführungseinstellungen: Planung niedriger Aktivitäten, SQL-Protokollierung und Prioritätenliste.](assets/offer_simulation_008.png)
 
 * **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Aktivität planen]** : dient der Planung der Simulation auf der Grundlage der ausgewählten Priorität (niedrig, Durchschnitt oder hoch), um die Leistung von Adobe Campaign zu optimieren.
 * **[!UICONTROL Priorität]**: auf die Simulation angewendete Dringlichkeit, die den Ausführungsbeginn entsprechend verschiebt. Wenn die Option **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]** aktiviert wurde, wählt der Workflow der Kampagnenvorgänge einen Zeitpunkt mit geringer Aktivität, um die Simulation zu starten.

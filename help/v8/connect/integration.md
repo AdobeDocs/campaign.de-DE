@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 79%
+source-wordcount: '472'
+ht-degree: 69%
 ---
 # Verbinden von Campaign mit Ihren Lösungen{#gs-ac-connectors}
 
@@ -73,13 +73,13 @@ Sie können Ihre Adobe Campaign-Plattform mit Ihren **CRM-Systemen von Drittanbi
 Aktivieren Sie Ihre CRM-Daten für kanalübergreifende Kommunikation: Erfahren Sie, wie Sie Kontakte von Ihrem CRM-System an Adobe Campaign weitergeben und wiederum Kampagnendaten von Adobe Campaign mit Ihrem CRM-System teilen können.
 CRM-Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adobe Campaign bietet einen dedizierten Assistenten zur Erfassung und Auswahl aus den im CRM verfügbaren Tabellen. Damit ist eine bidirektionale Synchronisation gewährleistet, die sicherstellt, dass die Daten in den Systemen jederzeit aktuell sind.
 
-Erfahren Sie auf [&#x200B; Seite , wie Sie Campaign mit Microsoft Dynamics 365 und Salesforce.com &#x200B;](crm.md).
+Erfahren Sie, wie Sie Campaign mit Microsoft Dynamics 365 und Salesforce.com in [Arbeiten mit Campaign und Ihrem CRM-System](crm.md) integrieren.
 
 ## Verbinden von Drittanbietern mit Federated Data Access{#gs-fda}
 
 Verwenden Sie den FDA-Connector (Federated Data Access), um Campaign mit einer oder mehreren **externen Datenbanken** zu verbinden und darin gespeicherte Informationen zu verarbeiten, ohne die Daten in Ihrer Campaign Cloud-Datenbank zu beeinflussen.
 
-Weitere Informationen finden Sie auf [dieser Seite](fda.md).
+Weitere Informationen finden Sie unter [Arbeiten mit Campaign und externen Datenbanken (FDA)](fda.md).
 
 ## Arbeiten mit Social Media{#gs-social}
 
@@ -91,6 +91,6 @@ Sie haben folgende Möglichkeiten:
 * Posten auf Ihrem X-Konto
 * Neue Kontakte sammeln
 
-Auf [dieser Seite](../connect/ac-tw.md) erfahren Sie, wie Sie die X-Integration einrichten und verwenden können.
+Erfahren Sie, wie Sie die X-Integration in [Arbeiten mit Campaign und X (Twitter) einrichten und &#x200B;](../connect/ac-tw.md).
 
-Auf [dieser Seite](../send/twitter.md) erfahren Sie, wie Sie X-Beiträge erstellen und Direktnachrichten an Ihre Follower senden können.
+Erfahren Sie in [Nachrichten auf X (Twitter) mit Adobe Campaign](../send/twitter.md), wie Sie X-Posts erstellen und Direktnachrichten an Ihre Follower senden.

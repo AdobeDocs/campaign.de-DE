@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 90%
+source-wordcount: '904'
+ht-degree: 86%
 ---
 # Senden und Überwachen von Transaktionsnachrichten {#delivery-execution}
 
@@ -71,7 +71,7 @@ Adobe Campaign bietet verschiedene Berichte, mit deren Hilfe Sie die Aktivitäte
 
 Der Zugriff auf diese Message Center-Berichte erfolgt über den Tab **[!UICONTROL Berichte]** der **Kontrollinstanz**.
 
-![](assets/mc-reports.png)
+![Seite „Globale Berichte“ auf der Registerkarte „Berichte“ mit hervorgehobenen drei Message-Center-Berichten](assets/mc-reports.png)
 
 ### Message Center-Ereignisverlauf {#history-events}
 
@@ -86,7 +86,7 @@ Sie haben zudem die Möglichkeit, für jeden Zeitraum die Daten jedes Ereignisse
 
 Die **[!UICONTROL Verarbeitungszeit des Message Centers]** zeigt die wichtigsten Indikatoren im Zusammenhang mit der Echtzeit-Warteschlange an. Auf diesen Bericht kann auch über die Registerkarte **[!UICONTROL Überwachung]** der Kontrollinstanz zugegriffen werden.
 
-![](assets/mc-processing-time-report.png)
+![Message Center-Verarbeitungszeitbericht mit Kanal-, Instanz- und Periodenfiltern, Indikatoren und Diagramm](assets/mc-processing-time-report.png)
 
 Sie können globale Statistiken oder Statistiken anzeigen, die sich auf eine bestimmte Ausführungsinstanz beziehen. Sie können die Daten auch nach Kanal und nach einem bestimmten Zeitraum filtern.
 
@@ -135,4 +135,4 @@ Gehen Sie dazu wie folgt vor:
 1. Öffnen Sie den Bereitstellungsassistenten auf der **Ausführungsinstanz** und navigieren Sie zur Seite **[!UICONTROL Message Center]**.
 1. Verwenden Sie die Pfeile, um die Schwellenwerte zu ändern.
 
-   ![](assets/mc-thresholds.png)
+   ![Konfigurationsassistent für Message Center mit den Einstellungen der Ausführungsinstanz sowie Warn- und Warnschwellen](assets/mc-thresholds.png)

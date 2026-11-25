@@ -50,10 +50,10 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 81%
+source-wordcount: '1180'
+ht-degree: 80%
 ---
 # Allgemeine Architektur{#general-architecture}
 
@@ -128,7 +128,7 @@ In ihrer [Enterprise (FFDA)-](enterprise-deployment.md) stützt sich die Adobe C
 
 Sie können Adobe Campaign unter Verwendung der vordefinierten Datenbank und Schemata bereitstellen und diese vordefinierte Umgebung bei Bedarf erweitern. Der Zugriff auf alle Daten im Datamart durch Adobe Campaign erfolgt über SQL-Aufrufe. Adobe Campaign bietet außerdem ein vollständiges Komplement der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels dessen Daten in das und aus dem System importiert und exportiert werden können.
 
-![](assets/data-flow-diagram.png)
+![Traffic zwischen Clientcomputern, Frontservern mit Tracking und MTA, Anwendungsserver, Datenbank, Bounce-Postfach](assets/data-flow-diagram.png)
 
 
 >[!CAUTION]

@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 81%
+source-wordcount: '494'
+ht-degree: 68%
 ---
 # Erstellen eines Angebotskatalogs
 
@@ -45,15 +45,15 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
 1. Navigieren Sie zum Ordner **[!UICONTROL Angebotskatalog]**.
 
-   ![](assets/offer_cat_create_001.png)
+   ![Explorer-Baumstruktur mit dem Angebotskatalogordner, der unter Angebote - Design und Umgebung - Empfänger ausgewählt ist](assets/offer_cat_create_001.png)
 
 1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Neuen Angebotskategorie-Ordner erstellen]** aus.
 
-   ![](assets/offer_cat_create_002.png)
+   ![Kontextmenü im Angebotskatalog mit hervorgehobener Option „Neuen Angebotskategorieordner erstellen“](assets/offer_cat_create_002.png)
 
 1. Benennen Sie die Kategorie. Der Titel kann später auch über den **[!UICONTROL Allgemein]**-Tab der Kategorie geändert werden.
 
-   ![](assets/offer_cat_create_003.png)
+   ![Neuer Kategorieordner mit dem Namen Neobank - Persönliches Banking in der Angebotskatalogstruktur, bereit zum Umbenennen](assets/offer_cat_create_003.png)
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    * im Tab **[!UICONTROL Eignung]** Daten für die Verwendung zuzuweisen.
 
-     ![](assets/offer_cat_create_004.png)
+     ![Registerkarte Eignung mit den Feldern Startdatum und Enddatum, öffnen Sie einen Kalender und klicken Sie auf den Link Abfrage bearbeiten für Zielfilter](assets/offer_cat_create_004.png)
 
    * **[!UICONTROL Bearbeiten Sie die Abfrage]**, um Filter auf die Angebots-Zielgruppe anzuwenden.
 
@@ -83,4 +83,4 @@ Gehen Sie wie folgt vor, um eine Ersatzkategorie in die Empfehlungen aufzunehmen
 1. Klicken Sie auf der Registerkarte **[!UICONTROL Eignung]** auf **[!UICONTROL Diese Kategorie immer in die Empfehlungen einschließen]**.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-   ![](assets/offer_cat_default_001.png)
+   ![Registerkarte „Kategorieeignung“ mit „Diese Kategorie immer in die ausgewählten Empfehlungen einschließen“](assets/offer_cat_default_001.png)

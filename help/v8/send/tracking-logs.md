@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 11%
+source-wordcount: '392'
+ht-degree: 10%
 ---
 # Zugriff auf Trackinglogs {#accessing-the-tracking-logs}
 
@@ -45,7 +45,7 @@ Wenn der Versand ausgeführt und das Tracking aktiviert wurde, **[!UICONTROL der
 
 Die derart gesammelten Informationen reichern die im **[!UICONTROL Tracking]**-Tab der Versandempfänger angezeigten Daten an:
 
-![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
+![Registerkarte „Tracking“ eines Empfängerprofils, in dem verfolgte Klicks aufgelistet und mit Datum, Titel, Typ und Versand geöffnet werden](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
 Auf dieser Registerkarte werden alle vom Empfänger getrackten und angeklickten URLs angezeigt, darunter:
 
@@ -60,7 +60,7 @@ Sie können diese Informationen filtern und sortieren, um das Empfängerverhalte
 
 Tracking-Informationen sind auch über die Registerkarte **[!UICONTROL Tracking]** des Versands zugänglich.
 
-![](assets/s_ncs_user_select_tracking_tab_from_del.png)
+![Registerkarte „Tracking“ eines Versands mit Trackinglogs mit Datum, Titel, Typ und Empfänger](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 Auf dieser Registerkarte können Sie Folgendes anzeigen:
 
@@ -73,7 +73,7 @@ Auf dieser Registerkarte können Sie Folgendes anzeigen:
 
 >[!NOTE]
 >
->Wenn die Registerkarte **[!UICONTROL Tracking]** eines Versands nicht sichtbar ist, bedeutet dies, dass das Tracking nicht aktiviert wurde. Siehe [diesen Abschnitt](tracked-links.md), um zu erfahren, wie Sie Tracking konfigurieren.
+>Wenn die Registerkarte **[!UICONTROL Tracking]** eines Versands nicht sichtbar ist, bedeutet dies, dass das Tracking nicht aktiviert wurde. Unter [Konfigurieren getrackter Links](tracked-links.md) erfahren Sie, wie Sie das Tracking konfigurieren.
 
 ### Überprüfen des technischen Workflows Tracking {#check-tracking-workflow}
 

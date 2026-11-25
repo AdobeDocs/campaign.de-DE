@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 74%
+source-wordcount: '491'
+ht-degree: 72%
 ---
 # Wozu dienen Campaign Standard-APIs {#why-using-campaign-standard-apis}
 
@@ -72,7 +72,7 @@ In den folgenden Schritten wird ein Anwendungsfall schrittweise beschrieben, in 
 
    ![Alternativtext](assets/postman_collection.png)
 
-1. Wählen Sie die Anfrage **Profil erstellen** und aktualisieren Sie dann die POST-Anfrage sowie den Tab **Kopfzeilen** mit Ihren eigenen Daten (&lt;ORGANISATION>, &lt;API_KEY>, &lt;ACCESS_TOKEN>). Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](setting-up-api-access.md).
+1. Wählen Sie die Anfrage **Profil erstellen** und aktualisieren Sie dann die POST-Anfrage sowie den Tab **Kopfzeilen** mit Ihren eigenen Daten (&lt;ORGANISATION>, &lt;API_KEY>, &lt;ACCESS_TOKEN>). Weitere Informationen hierzu finden Sie unter [&#x200B; des API-Zugriffs](setting-up-api-access.md).
 
    ![Alternativtext](assets/postman_uc1.png)
 

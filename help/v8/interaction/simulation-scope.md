@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 100%
+source-wordcount: '274'
+ht-degree: 87%
 ---
 # Simulationsumfang{#simulation-scope}
 
@@ -50,7 +50,7 @@ Folgende Felder müssen zwingend ausgefüllt werden:
 
   Die empfangende Person erhält diese Anzahl von Vorschlägen. Wenn Sie z. B. 5 eingeben, erhält jede Zielperson maximal 5 Angebotsvorschläge.
 
-  ![](assets/offer_simulation_009.png)
+  ![Registerkarte „Simulationsumfang“ mit Kontaktdatum, Anzahl der Vorschläge und der Zielabfrage „Großartige Reisende“ des Ordners](assets/offer_simulation_009.png)
 
 Zur weiteren Feinabstimmung der in der Simulation zu berücksichtigenden Angebote können Themen angegeben werden. Diese müssen zuvor auf Ebene der Kategorie definiert werden.
 
@@ -66,4 +66,4 @@ Im Tab **[!UICONTROL Berechnungen]** können Sie auf die Zielgruppe oder direkt 
 
 Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die entsprechenden Felder aus. Zur Berechnung der Simulation werden Achsen verwendet und im Analysebericht angezeigt. Weitere Informationen hierzu finden Sie im Abschnitt [Simulationsverfolgung](simulation-tracking.md).
 
-![](assets/offer_simulation_011.png)
+![Registerkarte Berechnungen mit dem Dialogfeld Ausdruck auswählen , das Enddatum auswählt, um eine Berichtsachse für Angebote hinzuzufügen](assets/offer_simulation_011.png)

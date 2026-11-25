@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 97%
+source-wordcount: '432'
+ht-degree: 86%
 ---
 # Arbeiten mit Campaign und SFDC{#crm-sfdc}
 
@@ -59,7 +59,7 @@ Zunächst müssen Sie das externe Salesforce-Konto erstellen.
 1. Wählen Sie im Abschnitt **Typ** das externe Konto **[!UICONTROL Salesforce.com]** aus.
 1. Geben Sie Einstellungen zum Aktivieren der Verbindung ein.
 
-   ![](assets/sfdc-external-account.png)
+   ![Externes Salesforce CRM-Konto mit den Feldern Konto, Passwort, Sicherheits-Token und API-Version](assets/sfdc-external-account.png)
 
    Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
@@ -85,7 +85,7 @@ Sie können jetzt die Tabellen konfigurieren, die synchronisiert werden sollen.
 
    Beispiel eines in Campaign importierten **Salesforce**-Schemas:
 
-   ![](assets/sfdc-schemas.png)
+   ![Liste der Datenschemata, gefiltert in Salesforce, mit dem importierten Salesforce CRM-Quellschema](assets/sfdc-schemas.png)
 
 ## Synchronisation der Aufzählungen{#sfdc-enum-sync}
 
@@ -95,11 +95,11 @@ Sobald das Schema erstellt ist, können Sie Aufzählungen in Salesforce automati
 1. Wählen Sie die Adobe Campaign-Aufzählung aus, die der Salesforce-Aufzählung entspricht.
 Sie können alle Werte einer Adobe Campaign-Aufzählung durch die des CRM-Systems ersetzen: Wählen Sie hierzu in der Spalte **[!UICONTROL Ersetzen]** die Option **[!UICONTROL Ja]**.
 
-   ![](assets/sfdc-enum.png)
+   ![Synchronisieren von Auflistungen, Dialogfeld-Mapping CRM-Auflistungen mit Campaign-Auflistungen mit der Spalte Ersetzen](assets/sfdc-enum.png)
 
 1. Klicken Sie abschließend auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL Starten]**, um mit dem Import der Aufzählungen zu beginnen.
 
-1. Durchsuchen Sie den Knoten **[!UICONTROL Administration > Plattform > Aufzählungen]**, um die importierten Werte zu überprüfen. Weitere Informationen über Aufzählungen finden Sie auf [dieser Seite](../config/ui-settings.md).
+1. Durchsuchen Sie den Knoten **[!UICONTROL Administration > Plattform > Aufzählungen]**, um die importierten Werte zu überprüfen. Weitere Informationen zu Auflistungen finden Sie unter [Einstellungen der Campaign-Benutzeroberfläche](../config/ui-settings.md).
 
 Adobe Campaign und Salesforce.com sind jetzt verbunden. Sie können eine Datensynchronisation zwischen den beiden Systemen einrichten.
 

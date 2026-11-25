@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 86%
+source-wordcount: '740'
+ht-degree: 82%
 ---
 # Opt-out vom Web-Anwendungs-Tracking{#web-application-tracking-opt-out}
 
@@ -66,11 +66,11 @@ Wenn Webtracking aktiviert ist, haben Sie folgende Möglichkeiten:
 * Kein Banner
 * Banner manuell in jeder Seite konfigurieren: Aktivieren Sie diese Option und wählen Sie das Banner in den Seiteneigenschaften auf jeder Seite aus.
 
-  ![](assets/pageproperties.png)
+  ![Dialogfeld „Seiteneigenschaften“ mit aktivierter Option Ausgehende Transitionen aktivieren.](assets/pageproperties.png)
 
 * Banner automatisch in jede Seite einfügen: Wählen Sie das Banner direkt in den Eigenschaften der Webanwendung aus.
 
-  ![](assets/optoutconfig.png)
+  ![Registerkarte „Allgemeine Eigenschaften“ der Webanwendung mit den Optionen für das Opt-out-Banner: Kein Banner, Handbuch pro Seite oder automatisch.](assets/optoutconfig.png)
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Wenn Webtracking aktiviert ist, haben Sie folgende Möglichkeiten:
 
 Das Standardbanner hat folgende Struktur:
 
-```
+```xml
 <div onClick="NL.ClientWebTracking.closeOptOutBanner(this);" id="defaultOptOutBanner">
   <p>Please insert your message here
    <a onClick="NL.ClientWebTracking.allow();" class="optout-accept">Accept</a>
@@ -90,7 +90,7 @@ Das Standardbanner hat folgende Struktur:
 
 Ersetzen Sie **Fügen Sie Ihren Text hier ein** durch den Baustein, der Ihre Tracking-Information enthält. Diese Ersetzung sollte in Ihrem neuen Gestaltungsbaustein im Zusammenhang mit dem Abmeldebanner ausgeführt werden.
 
-Das Banner wird mit einer bestimmten CSS-Datei bereitgestellt. Sie können die Stile aber überschreiben, wenn Sie eine Web-Seite erstellen und konfigurieren. Mehr dazu erfahren Sie auf [dieser Seite](content-editor-interface.md).
+Das Banner wird mit einer bestimmten CSS-Datei bereitgestellt. Sie können die Stile aber überschreiben, wenn Sie eine Web-Seite erstellen und konfigurieren. Siehe [Benutzeroberfläche des Inhaltseditors](content-editor-interface.md).
 
 ## Opt-out-Cookie mit einer API einrichten {#setting-the-opt-out-cookie-using-api}
 
@@ -137,7 +137,7 @@ Zum Schreiben einer JSSP (JavaScript Server Page) stehen serverseitige APIs zur 
 
 Beispiel für eine JSSP:
 
-```
+```html
 <%@ page import="/nl/core/shared/nl.js" %>
 <!doctype html>
 <%

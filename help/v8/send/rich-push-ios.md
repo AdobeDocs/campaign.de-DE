@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1287'
-ht-degree: 93%
+source-wordcount: '1506'
+ht-degree: 79%
 ---
 # Erstellen eines Rich-Push-Versands für iOS {#rich-push}
 
@@ -56,7 +56,7 @@ Navigieren Sie durch die folgenden Registerkarten, um mehr über die Personalisi
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Standard]** aus.
 
-   ![](assets/rich_push_ios_default_1.png)
+   ![Registerkarte Allgemein mit der Dropdown-Liste Benachrichtigungstyp - Standard, Einfach, Karussell und Timer](assets/rich_push_ios_default_1.png)
 
 1. Geben Sie in das Feld **[!UICONTROL Titel]** die Bezeichnung ein, die in der Liste der im Benachrichtigungscenter verfügbaren Benachrichtigungen erscheinen soll.
 
@@ -66,17 +66,17 @@ Navigieren Sie durch die folgenden Registerkarten, um mehr über die Personalisi
 
 1. Geben Sie den Inhalt der Nachricht im Abschnitt **[!UICONTROL Nachrichteninhalt]** des Assistenten ein.
 
-   ![](assets/rich_push_ios_default_2.png)
+   ![Registerkarte „Allgemein“ mit ausgefülltem Standard-Benachrichtigungstyp, Titel und Nachrichteninhalt](assets/rich_push_ios_default_2.png)
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Ton und Badge]**, um zusätzliche Einstellungen wie Ton- und Badge-Optionen für Ihre Benachrichtigungen anzupassen. [Weitere Informationen](#sound-badge)
 
-   ![](assets/rich_push_ios_default_3.png)
+   ![Registerkarte „Ton und Badge“ mit aktiviertem Badge entfernen, Einstellungen für kritischen Alarmmodus und Soundname](assets/rich_push_ios_default_3.png)
 
 1. Ihre **[!UICONTROL Anwendungsvariablen]** werden automatisch von der Registerkarte **[!UICONTROL Anwendungsvariablen]** hinzugefügt. Damit können Sie beispielsweise das Benachrichtigungsverhalten definieren. So können Sie einen speziellen Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
 
 1. Weitere Anpassungen finden Sie in den **[!UICONTROL erweiterten Optionen]**, die für Ihre Push-Benachrichtigungen zur Verfügung stehen. [Weitere Informationen](#push-advanced)
 
-   ![](assets/rich_push_ios_default_4.png)
+   ![Registerkarte „Erweitert“ mit den Feldern „Thread-ID“, „Kategorie“, „Zielinhalts-ID“, „Startbild“ und „Relevanzwert“](assets/rich_push_ios_default_4.png)
 
 1. Sobald die Benachrichtigung konfiguriert ist, klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**, um eine Vorschau der Benachrichtigung anzuzeigen.
 
@@ -86,13 +86,13 @@ Navigieren Sie durch die folgenden Registerkarten, um mehr über die Personalisi
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Einfach]** aus.
 
-   ![](assets/rich_push_ios_basic_1.png)
+   ![Dropdown-Liste „Benachrichtigungstyp“ mit ausgewähltem Standard und hinzugefügten Feldern für erweiterten Titel und erweiterte Nachrichten](assets/rich_push_ios_basic_1.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Erweiterte Nachricht]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Erweiterte Nachricht]** ein.
 
    Der Text der **[!UICONTROL Nachricht]** wird in der ausgeblendeten Ansicht angezeigt, während die **[!UICONTROL Erweiterte Nachricht]** angezeigt wird, wenn die Benachrichtigung erweitert wird.
 
-   ![](assets/rich_push_ios_basic_2.png)
+   ![Grundlegende Benachrichtigung mit ausgefüllten Feldern „Titel“, „Erweiterter Titel“, „Nachricht“ und „Erweiterte Nachricht“](assets/rich_push_ios_basic_2.png)
 
 1. Fügen Sie optional einen **[!UICONTROL Untertitel]** hinzu, der dem Parameter **subtitle** der iOS-Benachrichtigungs-Payload entspricht.
 
@@ -102,13 +102,13 @@ Navigieren Sie durch die folgenden Registerkarten, um mehr über die Personalisi
 
 1. Weitere Anpassungen finden Sie in den **[!UICONTROL erweiterten Optionen]**, die für Ihre Push-Benachrichtigungen zur Verfügung stehen. [Weitere Informationen](#push-advanced)
 
-   ![](assets/rich_push_ios_default_4.png)
+   ![Registerkarte „Erweitert“ mit den Feldern „Thread-ID“, „Kategorie“, „Zielinhalts-ID“, „Startbild“ und „Relevanzwert“](assets/rich_push_ios_default_4.png)
 
 1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
-   ![](assets/rich_push_ios_basic_3.png)
+   ![Registerkarte „Farboptionen“ mit den Feldern „Titelfarbe“, „Nachrichtenfarbe“ und „Hintergrundfarbe“](assets/rich_push_ios_basic_3.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Karussell]
 
@@ -116,17 +116,17 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Karussell]** aus.
 
-   ![](assets/rich_push_ios_carousel_1.png)
+   ![Dropdown-Liste „Benachrichtigungstyp“ mit ausgewähltem Karussell, Hinzufügen von Farboptionen und Registerkarten „Karusselloptionen“](assets/rich_push_ios_carousel_1.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Erweiterter Titel]** und **[!UICONTROL Nachricht]** ein.
 
-   ![](assets/rich_push_ios_carousel_2.png)
+   ![Karussellbenachrichtigung mit ausgefüllten Feldern „Titel“, „Erweiterter Titel“ und „Nachricht“](assets/rich_push_ios_carousel_2.png)
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Ton und Badge]**, um zusätzliche Einstellungen wie Ton- und Badge-Optionen für Ihre Benachrichtigungen anzupassen. [Weitere Informationen](#sound-badge)
 
 1. Ihre **[!UICONTROL Anwendungsvariablen]** werden automatisch von der Registerkarte **[!UICONTROL Anwendungsvariablen]** hinzugefügt. Damit können Sie beispielsweise das Benachrichtigungsverhalten definieren. So können Sie einen speziellen Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
 
-   ![](assets/rich_push_ios_carousel_4.png)
+   ![Registerkarte „Erweitert“ einer Karussellbenachrichtigung mit den Feldern „Thread-ID“, „Zielinhalt-ID“ und „Klick-Aktion“](assets/rich_push_ios_carousel_4.png)
 
 1. Weitere Anpassungen finden Sie in den **[!UICONTROL erweiterten Optionen]**, die für Ihre Push-Benachrichtigungen zur Verfügung stehen. [Weitere Informationen](#push-advanced)
 
@@ -141,9 +141,9 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
    Stellen Sie sicher, dass Sie mindestens drei und maximal fünf Bilder einfügen.
 
-   ![](assets/rich_push_ios_carousel_3.png)
+   ![Registerkarte „Karusselloptionen“ mit manuellem Betriebsmodus und einer Liste von Bildern mit Aktions-URIs](assets/rich_push_ios_carousel_3.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!TAB Timer]
 
@@ -151,13 +151,13 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Timer]** aus.
 
-   ![](assets/rich_push_ios_timer_1.png)
+   ![Dropdown-Liste „Benachrichtigungstyp“ mit ausgewähltem Zeitgeber und Registerkarten „Farboptionen“ und „Zeitgeberoptionen“](assets/rich_push_ios_timer_1.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Erweiterter Titel]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Erweiterte Nachricht]** ein.
 
    Der Text der **[!UICONTROL Nachricht]** wird in der ausgeblendeten Ansicht angezeigt, während die **[!UICONTROL Erweiterte Nachricht]** angezeigt wird, wenn die Benachrichtigung erweitert wird.
 
-   ![](assets/rich_push_ios_timer_2.png)
+   ![Timer-Benachrichtigung mit ausgefüllten Feldern „Titel“, „Erweiterter Titel“ und „Nachricht“](assets/rich_push_ios_timer_2.png)
 
 1. Fügen Sie optional einen **[!UICONTROL Untertitel]** hinzu, der dem Parameter **subtitle** der iOS-Benachrichtigungs-Payload entspricht.
 
@@ -169,15 +169,15 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Geben Sie im Menü **[!UICONTROL Farboptionen]** die hexadezimalen Farb-Codes für Ihren **[!UICONTROL Titel]**, die **[!UICONTROL Nachricht]** und den **[!UICONTROL Hintergrund]** ein.
 
-   ![](assets/rich_push_ios_timer_4.png)
+   ![Registerkarte „Farboptionen“ mit den Feldern „Titelfarbe“, „Nachrichtenfarbe“, „Hintergrundfarbe“ und „Timerfarbe“](assets/rich_push_ios_timer_4.png)
 
 1. Legen Sie auf der Registerkarte **[!UICONTROL Timer]** die **[!UICONTROL Dauer des Timers]** in Sekunden oder den **[!UICONTROL Zeitstempel für Timer-Ende]** auf einen bestimmten Epoch-Zeitstempel fest.
 
 1. Geben Sie den Text und das Bild, die nach Ablauf des Timers angezeigt werden sollen, in die Felder **[!UICONTROL Alternativer Titel]**, **[!UICONTROL Alternative Nachricht]** und **[!UICONTROL Alternatives Bild]** ein.
 
-   ![](assets/rich_push_ios_timer_3.png)
+   ![Registerkarte „Timer-Optionen“ mit den Feldern „Alternativer Titel“, „Timer-Dauer“, „Alternatives Bild“ und „Alternative Nachricht“](assets/rich_push_ios_timer_3.png)
 
-Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten einsetzen, um die Nachricht in einer Vorschau anzuzeigen und zu testen.
+Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnentinnen und -abonnenten verwenden, um die Nachricht in der Vorschau anzuzeigen und zu testen.
 
 >[!ENDTABS]
 

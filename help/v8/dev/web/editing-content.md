@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 100%
+source-wordcount: '1606'
+ht-degree: 79%
 ---
 # Bearbeiten von Inhalten{#editing-content}
 
@@ -43,13 +43,13 @@ Sie können für ein Webseitenelement eine Sichtbarkeitsbedingung festlegen. Die
 
 Markieren Sie den gewünschten Baustein und geben Sie mit dem Ausdrucks-Editor im Feld **[!UICONTROL Sichtbarkeitsbedingung]** die zu erfüllende Bedingung an.
 
-![](assets/dce_add_condition.png)
+![Inhaltseditor mit hervorgehobenem Feld für die Sichtbarkeitsbedingung und Bearbeitungssymbol im Optionsfeld „Block rechts“](assets/dce_add_condition.png)
 
 >[!NOTE]
 >
 >Die erweiterte Bearbeitung von Ausdrücken wird auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (Dokumentation zu Campaign v8) beschrieben.
 
-![](assets/dce_popup_visibilitycondition.png)
+![Dialogfeld „Ausdruckseditor“ mit der Liste Verfügbare Felder, der Liste der Funktionen und der Schaltfläche „Einfügen“](assets/dce_popup_visibilitycondition.png)
 
 Diese Bedingungen übernehmen die XTK-Ausdruckssyntax (z. B. **ctx.recipient.@email != &quot;&quot;** oder **ctx.recipient.@status==&quot;0&quot;**). Standardmäßig werden alle Felder angezeigt.
 
@@ -61,11 +61,11 @@ Diese Bedingungen übernehmen die XTK-Ausdruckssyntax (z. B. **ctx.recipient.@e
 
 Sie können einen ausgewählten Block mit einem **Rahmen** versehen. Die Rahmen werden über drei Optionen definiert: Stil, Größe und Farbe.
 
-![](assets/dce_popup_border.png)
+![Rahmendialogfeld mit Stil, Größe, einem Farbwähler und einer Vorschau mit transparenten, hellen und dunklen Hintergründen](assets/dce_popup_border.png)
 
 Es besteht auch die Möglichkeit, verschiedene **Hintergrundfarben** aus der Farbpalette für die einzelnen Bausteine auszuwählen.
 
-![](assets/dce_popup_background.png)
+![Zurück-Dialogfeld mit Farbauswahl, Deckkraftregler und Vorschau mit den Optionen Transparent, Hell und Dunkel](assets/dce_popup_background.png)
 
 ## Formulare bearbeiten {#editing-forms}
 
@@ -73,7 +73,7 @@ Es besteht auch die Möglichkeit, verschiedene **Hintergrundfarben** aus der Far
 
 Es besteht die Möglichkeit, Bausteinen wie Eingabe- oder Auswahlfeldern Datenbankfelder zuzuordnen.
 
-![](assets/dce_sidebar_field.png)
+![Optionen für den Eingabebereich (Text) mit dem Abschnitt „Formulardaten“, Feld auf „Keine Daten“ und dem obligatorischen Umschalter „Ja/Nein“](assets/dce_sidebar_field.png)
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Im Eingabefeld **Feld** können Sie das Datenbankfeld auswählen, das dem Formul
 
 Standardmäßig werden die in der Tabelle **nms:recipient** verfügbaren Felder zur Auswahl angeboten.
 
-![](assets/dce_field_selection.png)
+![Feld des Empfängerdialogfelds mit nms:recipient-Feldern wie E-Mail, Vorname und Nachname](assets/dce_field_selection.png)
 
 Bei einem **Pflichtfeld** können Sie die Validierung einer Seite nur dann autorisieren, wenn die Benutzerin bzw. der Benutzer das Feld ausgefüllt hat. Wenn ein Pflichtfeld nicht ausgefüllt ist, wird eine Fehlermeldung angezeigt.
 
@@ -95,11 +95,11 @@ Gehen Sie dazu wie folgt vor:
 
 * Verwenden Sie das Symbol **[!UICONTROL Bearbeiten]**.
 
-  ![](assets/dce_sidebar_options.png)
+  ![Kontrollkästchen-Optionen mit hervorgehobenem Abschnitt „Formulardaten“ und dessen Bearbeitungssymbol über den Einstellungen „Typ“, „Feld“ und „Obligatorisch“](assets/dce_sidebar_options.png)
 
 * Geben Sie einen Wert der Liste (je nach ausgewähltem Feld anders) in das Feld **[!UICONTROL Wert]** ein.
 
-  ![](assets/dce_sidebar_completeoptionradio.png)
+  ![Dialogfeld „Formulardaten“ mit hervorgehobenen Feldern „Wert, wenn aktiviert“ und „Wert, wenn nicht aktiviert“](assets/dce_sidebar_completeoptionradio.png)
 
 ### Formularfelder ändern {#modifying-form-fields}
 
@@ -111,13 +111,13 @@ Folgende Optionen stehen zur Auswahl:
 * Duplizieren Sie das ausgewählte Feld durch die Erstellung eines neuen Bausteins mithilfe des Symbols **[!UICONTROL Duplizieren]**.
 * Bearbeiten Sie das Feld **[!UICONTROL Formulardaten]** mithilfe des Symbols **[!UICONTROL Bearbeiten]**, um ein Datenbankfeld mit einem Formularbereich zu verknüpfen.
 
-  ![](assets/dce_toolbar_formblock_edition.png)
+  ![Dialogfeld „Formulardaten“ mit der auf „Keine Daten“ gesetzten Feldauswahl und dem obligatorischen Umschalter „Ja/Nein“](assets/dce_toolbar_formblock_edition.png)
 
 ## Eine Aktion zu einer Schaltfläche hinzufügen {#adding-an-action-to-a-button}
 
 Sie können eine Aktion definieren, die mit dem Klick einer Benutzerin bzw. eines Benutzers auf eine Schaltfläche verknüpft ist. Wählen Sie dazu die auszuführende Aktion aus der Dropdown-Liste aus.
 
-![](assets/dce_sidebar_button.png)
+![Hypertext-Link-Optionen mit der Dropdown-Liste „Aktion“ zum Definieren von „Keine“, „Aktualisieren“, „Nächste Seite“ und „Vorheriger Schritt“](assets/dce_sidebar_button.png)
 
 Folgende Aktionen sind möglich:
 
@@ -137,11 +137,11 @@ Alle Elemente einer Seite können mit Links belegt werden: Bilder, Wörter, Wort
 
 Markieren Sie zum Einfügen eines Links das gewünschte Element und verwenden Sie das erste Symbol im Pop-up-Menü.
 
-![](assets/dce_insertlink_icon.png)
+![Blocksymbolleiste mit hervorgehobenem Symbol „Einfügen“, mit dem das Menü „Link“ geöffnet wird](assets/dce_insertlink_icon.png)
 
 Über dieses Symbol können Sie auf alle verfügbaren Arten von Links zugreifen.
 
-![](assets/dce_insertlink_menu.png)
+![Menü „Einfügen“ mit Personalization-Feld, Personalization-Block und Link-Typen: externe URL, Aktion, Web-Anwendung](assets/dce_insertlink_menu.png)
 
 Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot; eingefügt werden.
 
@@ -163,7 +163,7 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 
 Mit der Option **Link auf eine externe URL** können Sie festlegen, dass eine URL am Ursprung des Inhalts geöffnet wird.
 
-![](assets/dce_toolbar_imgblock_externallink.png)
+![Link-Dialogfeld für eine externe URL mit den Feldern URL und Ziel einfügen](assets/dce_toolbar_imgblock_externallink.png)
 
 Geben Sie die betreffende Link-Adresse in das Feld **URL** ein. Das URL-Feld sollte wie folgt eingegeben werden: **https://www.myURL.com**.
 
@@ -171,7 +171,7 @@ Geben Sie die betreffende Link-Adresse in das Feld **URL** ein. Das URL-Feld sol
 
 Mit der Option **Link auf eine Webanwendung** können Sie auf eine Webanwendung in Adobe Campaign zugreifen.
 
-![](assets/dce_toolbar_imgblock_appweb.png)
+![Dialogfeld „Link für eine Webanwendung einfügen“ mit den Feldern „Webanwendung“ und „Ziel“](assets/dce_toolbar_imgblock_appweb.png)
 
 Wählen Sie im entsprechenden Feld die Webanwendung aus.
 
@@ -181,7 +181,7 @@ Die Liste der Webanwendungen entspricht den verfügbaren Anwendungen im Knoten *
 
 Mit der Option **Eine Aktion definierender Link** können Sie eine Aktion konfigurieren, die ausgeführt wird, wenn auf ein Quellelement geklickt wird.
 
-![](assets/dce_toolbar_imgblock_action.png)
+![Link-Dialogfeld für eine Aktion mit den Feldern „Aktion“ und „Ziel“ einfügen](assets/dce_toolbar_imgblock_action.png)
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ Nachdem ein Link eingefügt wurde, bietet die Symbolleiste zwei neue Symbole zur
 
 Bei der Auswahl eines Textelements können Sie die Attribute der Schriftart ändern (Stil, Format).
 
-![](assets/dce_toolbar_txt.png)
+![Schaltflächen der Text-Symbolleiste: Schriftart vergrößern oder verkleinern, fett, kursiv, unterstreichen, Ausrichtung, Hintergrundfarbe und Schriftfarbe](assets/dce_toolbar_txt.png)
 
 Folgende Optionen sind verfügbar:
 
@@ -235,11 +235,11 @@ Mit dem Digital Content Editor können Sie **alle Arten von Bildern** bearbeiten
 
 Um ein Bild einzufügen, wählen Sie einen Baustein vom Typ &quot;Bild&quot; aus und danach das Symbol **Bild**.
 
-![](assets/dce_insert_image.png)
+![Bildblock-Symbolleiste mit hervorgehobenem Bildsymbol zum Einfügen eines Bildes](assets/dce_insert_image.png)
 
 Wählen Sie eine lokal gespeicherte Bilddatei aus.
 
-![](assets/dce_popup_imgupload.png)
+![Bildauswahl-Dialogfeld mit der Schaltfläche Durchsuchen zum Auswählen einer lokalen Bilddatei](assets/dce_popup_imgupload.png)
 
 Mit dem Symbol **Löschen** wird das Tag, das das Bild enthält, gelöscht.
 
@@ -256,7 +256,7 @@ Wenn Sie einen Baustein auswählen, der ein Bild enthält, greifen Sie auf die f
 * **Alternativtext** fügt dem Bild einen Text hinzu, der z. B. dann angezeigt wird, wenn das Bild nicht geladen werden kann (entspricht dem **alt**-Tag im HTML-Code).
 * **Abmessungen** ermöglicht die Angabe der Bildgröße in Pixel.
 
-  ![](assets/dce_popup_imgsize.png)
+  ![Dialogfeld „Dimensionen“ mit Feldern „Breite“ und „Höhe“ in Pixeln, beide auf 96 gesetzt](assets/dce_popup_imgsize.png)
 
 ## Personalisierungsinhalte hinzufügen {#adding-personalization-content}
 
@@ -264,7 +264,7 @@ Wenn Sie einen Baustein auswählen, der ein Bild enthält, greifen Sie auf die f
 
 Über die Option **Personalisierungsfeld** für das Symbol „Einfügen“ können Sie dem Inhalt ein Datenbankfeld hinzufügen, wie etwa den Namen der Empfängerin bzw. des Empfängers. Diese Option ist nur für Textbausteine verfügbar.
 
-![](assets/dce_toolbar_textblock_persofield.png)
+![Fügen Sie ein Dialogfeld ein, in dem Empfängerfelder wie E-Mail, Vorname und Nachname aufgelistet sind](assets/dce_toolbar_textblock_persofield.png)
 
 Standardmäßig werden die Felder in der Tabelle **[!UICONTROL Empfänger]** zur Auswahl angeboten. Bei Bedarf können Sie die Eigenschaften der Web-Anwendung bearbeiten, um eine andere Tabelle auszuwählen.
 
@@ -276,7 +276,7 @@ Ein Beispiel wird im Abschnitt [Personalisierungsfeld einfügen](creating-a-land
 
 Mit der Option **Gestaltungsbaustein** können Sie dynamische und personalisierte Bausteine in den Inhalt einfügen. Sie können zum Beispiel ein Logo oder eine Grußnachricht hinzufügen. Dies ist nicht für Textbausteine verfügbar.
 
-![](assets/dce_toolbar_textblock_persoblock.png)
+![Dialogfeld „Element einfügen“, in dem Gestaltungsbausteine wie Grußformeln, Logo einfügen und Abmelde-Link aufgeführt sind](assets/dce_toolbar_textblock_persoblock.png)
 
 Nach dem Einfügen wird der Name des Gestaltungsbausteins gelb hervorgehoben im Editor angezeigt. Er wird automatisch an das Profil der Empfängerin bzw. des Empfängers angepasst, wenn die Personalisierung generiert wird.
 

@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 95%
+source-wordcount: '1346'
+ht-degree: 72%
 ---
 # Anwendungsbeispiele: Übersichten erstellen{#use-cases-creating-overviews}
 
@@ -48,13 +48,13 @@ Im folgenden Beispiel erstellen wir einen Überblick der Web-Anwendungen, um all
 * Ein Filter pro Tool zur Bearbeitung von Links (siehe [Filter mit einem Link-Editor erstellen](#creating-a-filter-using-a-link-editor)),
 * Einen Link zum Aktualisieren (siehe [Aktualisierungslink erstellen](#creating-a-refresh-link)).
 
-![](assets/s_ncs_configuration_webapp_overview.png)
+![Web-Anwendungsübersichtsseite mit Kennzeichnungen: Ordnerfilter, Neue Schaltfläche, Link-Editor-Filter, Link aktualisieren, Liste, Detail.](assets/s_ncs_configuration_webapp_overview.png)
 
 ## Einseitige Web-Anwendung erstellen {#creating-a-single-page-web-application}
 
 1. Erstellen Sie eine **[!UICONTROL einseitige Webanwendung]** und deaktivieren Sie ausgehende Transitionen und Transitionen zur nächsten Seite.
 
-   ![](assets/s_ncs_configuration_webapp_create.png)
+   ![Seiteneigenschaften, Registerkarte „Allgemein“, mit ausgewählter Option „Nächste Seite deaktivieren“ und deaktivierter „Ausgehende Transitionen aktivieren“](assets/s_ncs_configuration_webapp_create.png)
 
 1. Ändern des Seitentitels.
 
@@ -62,19 +62,19 @@ Im folgenden Beispiel erstellen wir einen Überblick der Web-Anwendungen, um all
 
 1. Ändern Sie in den Eigenschaften der Webanwendung das Rendering der Anwendung, indem Sie die Vorlage **[!UICONTROL Einseitige Webanwendung]** auswählen.
 
-   ![](assets/s_ncs_configuration_webapp_rendering.png)
+   ![Dialogfeld „Eigenschaften“, Registerkarte „Rendering“, auf der die Vorlage Einseitige Webanwendung in der Vorlagenliste ausgewählt ist.](assets/s_ncs_configuration_webapp_rendering.png)
 
 1. Öffnen Sie die Aktivität **[!UICONTROL Seite]** Ihrer Webanwendung und danach eine Liste (**[!UICONTROL Statische Elemente > Liste]**).
 1. Wählen Sie in der Liste im Tab **[!UICONTROL Daten]** den Typ der **[!UICONTROL Webanwendung]** sowie den **[!UICONTROL Titel]**, das **[!UICONTROL Erstellungsdatum]** und die Ausgabespalten des **[!UICONTROL Anwendungstyps]** aus.
 1. Erstellen Sie im Untertab **[!UICONTROL Filter]** (wie unten dargestellt) den folgenden Filter, sodass nur Webanwendungen angezeigt und Vorlagen verborgen werden.
 
-   ![](assets/s_ncs_configuration_webapp_filter.png)
+   ![Registerkarte „Listendaten“, Unterregisterkarte „Filter“, mit der Bedingungsvorlage „Nein“ und dem Primären Schlüssel „ungleich 0“.](assets/s_ncs_configuration_webapp_filter.png)
 
 1. Schließen Sie das Konfigurationsfenster der Seite und wählen Sie **[!UICONTROL Vorschau]** aus.
 
    Daraufhin wird die Liste der in Ihrer Datenbank verfügbaren Webanwendungen angezeigt.
 
-   ![](assets/s_ncs_configuration_webapp_preview.png)
+   ![Registerkarte „Vorschau“ der Web-Anwendung mit der Liste der Web-Anwendungen nach Label.](assets/s_ncs_configuration_webapp_preview.png)
 
 ## Ordner-Filter hinzufügen {#adding-a-filter-on-a-folder}
 
@@ -91,15 +91,15 @@ In einem Überblick haben Sie die Möglichkeit, auf Daten basierend auf deren Po
 
 1. Wählen Sie für die Variable den Typ **[!UICONTROL XML]**.
 
-   ![](assets/s_ncs_configuration_webapp_variable_xml.png)
+   ![Wählen Sie Ordnereingabe aus, wenn Speicher bearbeiten geöffnet ist, und bearbeiten Sie Verzweigungen, die die Ordnervariable vom Typ XML anzeigen.](assets/s_ncs_configuration_webapp_variable_xml.png)
 
 1. Wählen Sie die Interaktion **[!UICONTROL Seite aktualisieren]** aus.
 
-   ![](assets/s_ncs_configuration_webapp_variable.png)
+   ![Ordnereingabe mit der Aktion Seite aktualisieren , die bei der Auswahl eines Ordners ausgeführt werden soll.](assets/s_ncs_configuration_webapp_variable.png)
 
 1. Platzieren Sie den Cursor in Ihrer Liste und verweisen Sie im Tab **[!UICONTROL Erweitert]** auf die Variable, die Sie zuvor im Tab **[!UICONTROL XPath des Ordnerfilters]** der Liste erstellt haben. Sie müssen den Namen des vom Ordner-Link betroffenen Elements verwenden, d. h. den **Ordner**.
 
-   ![](assets/s_ncs_configuration_webapp_variable002.png)
+   ![Registerkarte Erweitert auflisten mit dem XPath-Feld Ordnerfilter auf Ordner in Speicher/Filterung eingestellt.](assets/s_ncs_configuration_webapp_variable002.png)
 
    >[!NOTE]
    >
@@ -129,7 +129,7 @@ In einem Überblick haben Sie die Möglichkeit, auf Daten basierend auf deren Po
 
    Dieser Stil ist in der zuvor ausgewählten Vorlage **[!UICONTROL Einseitige Webanwendung]** definiert.
 
-   ![](assets/s_ncs_configuration_webapp_link.png)
+   ![Neues Verknüpfungselement mit der URL, die das neue Web-Anwendungsformular öffnet, und dem Feld Stil , das auf Schaltfläche gesetzt ist.](assets/s_ncs_configuration_webapp_link.png)
 
 ## Detail zu einer Liste hinzufügen {#adding-detail-to-a-list}
 
@@ -138,17 +138,17 @@ Wenn Sie in der Übersicht eine Liste konfigurieren, können Sie für jeden Eint
 1. Platzieren Sie den Cursor auf das zuvor erstellte Listenelement.
 1. Wählen Sie im Tab **[!UICONTROL Allgemein]** in der Dropdown-Liste den Anzeigemodus **[!UICONTROL Spalten und zusätzliche Details]** aus.
 
-   ![](assets/s_ncs_configuration_webapp_detail.png)
+   ![Registerkarte „Allgemein auflisten“ mit der auf Spalten und zusätzliche Details gesetzten Option „Ansicht“.](assets/s_ncs_configuration_webapp_detail.png)
 
 1. Fügen Sie auf der Registerkarte **[!UICONTROL Daten]** die Spalten **[!UICONTROL Primärer Schlüssel]** , **[!UICONTROL Interner Name]** und **[!UICONTROL Beschreibung]** hinzu und wählen Sie die Option **[!UICONTROL Ausgeblendetes Feld]** für jede Spalte aus.
 
-   ![](assets/s_ncs_configuration_webapp_detail002.png)
+   ![Registerkarte „Listendaten“ mit dem Primären Schlüssel, den Ausgabespalten „Interner Name“ und „Beschreibung“, die als ausgeblendetes Feld markiert sind.](assets/s_ncs_configuration_webapp_detail002.png)
 
    Diese Informationen werden in der Folge nur in der Detailansicht eines jeden Eintrags sichtbar sein.
 
 1. Fügen Sie im Tab **[!UICONTROL Zusätzliches Detail]** den folgenden Code hinzu:
 
-   ```
+   ```html
    <div class="detailBox">
      <div class="actionBox">
        <span class="action"><img src="/xtk/img/fileEdit.png"/><a title="Open" class="linkAction" href="xtk://open/?schema=nms:webApp&form=nms:webApp&pk=
@@ -192,22 +192,22 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
 1. Platzieren Sie den Cursor auf das Element **[!UICONTROL Seite]** und wählen Sie **[!UICONTROL Container > Standard]** aus.
 1. Wählen Sie für die Anzahl der Spalten &quot;**2**&quot;, sodass der Link-Editor und der Link nebeneinander platziert werden.
 
-   ![](assets/s_ncs_configuration_webapp_container.png)
+   ![Filter-Container mit dem Feld Erscheinungsbild-Stil auf dottedFilter und zwei Spalten festgelegt.](assets/s_ncs_configuration_webapp_container.png)
 
-   Weiterführende Informationen zum Layout von Elementen erfahren Sie in [diesem Abschnitt](about-web-forms.md).
+   Informationen zum Element-Layout finden Sie unter [Erste Schritte mit Web-Formularen](about-web-forms.md).
 
 1. Wenden Sie **dottedFilter** an.
 
    Dieser Stil ist in der zuvor ausgewählten Vorlage **[!UICONTROL Einseitige Webanwendung]** definiert.
 
-   ![](assets/s_ncs_configuration_webapp_container002.png)
+   ![Registerkarte „Allgemein“ des Filter-Containers mit dem Feld Erscheinungsbildstil auf dottedFilter festgelegt.](assets/s_ncs_configuration_webapp_container002.png)
 
 ### Filter mit einem Link-Editor erstellen {#creating-a-filter-using-a-link-editor}
 
 1. Platzieren Sie den Cursor auf den im vorherigen Schritt erstellten Container und fügen Sie mithilfe des Menüs **[!UICONTROL Erweiterte Steuerelemente]** einen Link-Editor ein.
 1. Wählen Sie im sich automatisch öffnenden Speicherfenster die Option **[!UICONTROL Variablen]** und danach den Link **[!UICONTROL Variablen bearbeiten...]** aus und erstellen Sie eine XML-Variable zum Filtern von Daten.
 
-   ![](assets/s_ncs_configuration_webapp_variable003.png)
+   ![Link-Editor-Eingabe: Speichern bearbeiten, Variablen bearbeiten und das Dialogfeld „Variable“, wodurch die XML-Variable var2 erstellt wird.](assets/s_ncs_configuration_webapp_variable003.png)
 
 1. Passen Sie den Titel an.
 
@@ -215,7 +215,7 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
 
 1. Wählen Sie die Benutzer-Tabelle als Anwendungsschema aus.
 
-   ![](assets/s_ncs_configuration_webapp_linkeditor.png)
+   ![Link-Editor mit der Beschriftung Erstellt von, speichert in Variable var2, mit ausgewähltem Anwendungsschema des Benutzers.](assets/s_ncs_configuration_webapp_linkeditor.png)
 
 1. Platzieren Sie den Cursor auf das Listenelement und erstellen Sie im Tab **[!UICONTROL Daten > Filter]** einen Filter:
 
@@ -224,7 +224,7 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
    * **Wert:** Variablen (variables)
    * **Berücksichtigt wenn:** &#39;$(var2/@id)&#39;!=&#39;&#39;
 
-   ![](assets/s_ncs_configuration_webapp_filter002.png)
+   ![Listenfilterbedingungen, einschließlich des Schlüssels „Erstellt von“, der Variablen entspricht, werden nur angewendet, wenn die var2-ID festgelegt ist.](assets/s_ncs_configuration_webapp_filter002.png)
 
 >[!CAUTION]
 >
@@ -237,13 +237,13 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
 1. Wählen Sie **[!UICONTROL Listendaten aktualisieren]** aus.
 1. Fügen Sie die zuvor erstellte Liste hinzu.
 
-   ![](assets/s_ncs_configuration_webapp_refreshlink.png)
+   ![Link mit den Daten in einer Listenaktion aktualisieren und Liste 1 unter „Zu aktualisierende Listen“ auswählen.](assets/s_ncs_configuration_webapp_refreshlink.png)
 
 1. Fügen Sie das Aktualisierungssymbol im Feld **[!UICONTROL Bild]** hinzu: **/xtk/img/refresh.png**.
 1. Ordnen Sie mithilfe der Sortierpfeile die unterschiedlichen Elemente der Webanwendung wie unten dargestellt neu.
 
-   ![](assets/s_ncs_configuration_webapp_orderelements.png)
+   ![Struktur der Seitenelemente mit den hervorgehobenen Pfeilen zur Sortierreihenfolge, um Liste 1 unter das Filterelement zu verschieben.](assets/s_ncs_configuration_webapp_orderelements.png)
 
 Die Webanwendung ist jetzt konfiguriert. Wählen Sie den Tab **[!UICONTROL Vorschau]** aus, um sie in der Vorschau anzuzeigen.
 
-![](assets/s_ncs_configuration_webapp_result.png)
+![Vorschau der fertigen Webanwendung: Ordnerfilter, Neuer Link, Erstellt nach Filter, Link aktualisieren und Liste.](assets/s_ncs_configuration_webapp_result.png)

@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 75%
+source-wordcount: '914'
+ht-degree: 69%
 ---
 # Erste Schritte mit Web-Anwendungen{#about-web-applications}
 
@@ -61,7 +61,7 @@ Sie können Seiten erstellen, wie ein Bearbeitungsformular für ein Extranet ode
 
 Dabei kann es sich um ein Anmeldeformular handeln, dessen Felder wie unten dargestellt mit Daten aus der Adobe Campaign-Datenbank vorausgefüllt wurden:
 
-![](assets/webapp_form_sample.png)
+![Abonnementformular, mit einer E-Mail-Adresse, einem Namen und einem Land vorausgefüllt, mit einer Schaltfläche „Abonnieren“.](assets/webapp_form_sample.png)
 
 Dieses Kapitel bietet einen Überblick über die Verwaltung von Webanwendungen.
 
@@ -101,7 +101,7 @@ Gegenüber Webanwendungen verfügen Umfragen über eine vereinfachte grafische B
 >
 >Umfragen werden in [&#x200B; Abschnitt beschrieben (](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} Dokumentation zu Campaign v8).
 >
->Die allgemeinen Funktionen von Webformularen in Adobe Campaign werden in [diesem Abschnitt](about-web-forms.md) beschrieben.
+>Die allgemeinen Funktionen von Web-Formularen in Adobe Campaign werden unter [Erste Schritte mit Web-Formularen](about-web-forms.md) beschrieben.
 
 ## Implementierung von Web-Anwendungen {#web-application-implementation}
 
@@ -109,7 +109,7 @@ Gehen Sie wie folgt vor, um eine Webanwendung zu erstellen und zu veröffentlich
 
 1. Erstellen Sie den Inhalt (Felder, Listen, Tabellen, Diagramme etc.).
 
-   Sehen Sie sich dazu auch den Abschnitt zu den Feldern an, die für Formulare zur Verfügung stehen. Alle diese Felder sind auch für Web-Anwendungen verfügbar. Diese Informationen finden Sie auf [dieser Seite](adding-fields-to-a-web-form.md).
+   Sehen Sie sich dazu auch den Abschnitt zu den Feldern an, die für Formulare zur Verfügung stehen. Alle diese Felder sind auch für Web-Anwendungen verfügbar. Diese Informationen finden Sie unter [Hinzufügen von Feldern zu einem Web-Formular](adding-fields-to-a-web-form.md).
 
 1. Sie können nach Bedarf die Schritte zum Vorausfüllen, Testen und Speichern hinzufügen und das Zugriffskontrollsystem konfigurieren (hauptsächlich für Extranet-Veröffentlichungen).
 1. Veröffentlichen Sie die Web-Anwendung, um sie in einem Extranet oder in Adobe Campaign verfügbar zu machen.
@@ -120,7 +120,7 @@ Web-Anwendungen werden über den Link **[!UICONTROL Web-Anwendungen]** auf den R
 
 Web-Anwendungen werden im Knoten **[!UICONTROL Ressourcen > Online > Web-Anwendungen]** der Adobe Campaign-Struktur gespeichert. Konfigurationen sind in die folgenden Ordner unterteilt:
 
-* **[!UICONTROL Administration > Konfiguration > Formular-Renderings]**: Enthält die Rendering-Vorlagen für die Darstellung von Web-Formularen (Anwendungen und Umfragen). Mit der Vorlage können Sie das Formular generieren. Außerdem wird ein CSS-Stylesheet verwendet. Dieses Stylesheet kann auf Vorlagenebene überladen werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Administration > Konfiguration > Formular-Renderings]**: Enthält die Rendering-Vorlagen für die Darstellung von Web-Formularen (Anwendungen und Umfragen). Mit der Vorlage können Sie das Formular generieren. Außerdem wird ein CSS-Stylesheet verwendet. Dieses Stylesheet kann auf Vorlagenebene überladen werden. Weitere Informationen hierzu finden Sie unter [Auswählen der Formular-Rendering-Vorlage](form-rendering.md#selecting-the-form-rendering-template).
 * **[!UICONTROL Ressourcen > Vorlagen > Web-Anwendungsvorlagen]**: Enthält Formularvorlagen. Ein Formular oder eine Web-Anwendung muss auf Grundlage einer Vorlage erstellt werden.
 
 ## Web-Anwendungsvorlagen {#web-application-templates}
@@ -135,7 +135,7 @@ Sie können neue Vorlagen über den Knoten **[!UICONTROL Ressourcen > Vorlagen >
 
 Im Erstellungsassistenten können Sie wie unten dargestellt die zu aktivierenden Optionen auswählen.
 
-![](assets/webapp_create_template.png)
+![Dialogfeld „Neue Web-Anwendung“ mit den Optionen Umfrage und Erweiterte Website (Extranet) zum Aktivieren.](assets/webapp_create_template.png)
 
 >[!CAUTION]
 >

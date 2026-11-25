@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 91%
+source-wordcount: '834'
+ht-degree: 71%
 ---
 # SMS in einer Mid-Sourcing-Infrastruktur {#sms-mid}
 
@@ -59,22 +59,22 @@ Gehen Sie wie folgt vor, um Ihren SMS-Benutzer zu erstellen:
 
    Beachten Sie, dass „Name (Login)“ später verwendet wird, um Ihr externes SMPP-Konto auf dem Mid-Server zu benennen.
 
-   ![](assets/smsoperator_mid.png){zoomable="yes"}
+   ![Neues SMS-Benutzerformular auf dem Mid-Server mit Name (Anmeldung), Kennwort und Titel und der Schaltfläche „Hinzufügen“ für Berechtigungen](assets/smsoperator_mid.png){zoomable="yes"}
 
 1. Klicken Sie im Teil **[!UICONTROL Gruppen und spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 Wählen Sie im sich öffnenden neuen Fenster in der Liste **[!UICONTROL Ordner]** die Option **[!UICONTROL Spezifische Berechtigungen]** und dann in der rechten Liste **[!UICONTROL ADMINISTRATION]** aus.
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL OK]**.
 
-   ![](assets/smsoperator_rights.png){zoomable="yes"}
+   ![Dialogfeld „Gruppen oder spezifische Berechtigungen hinzufügen“ mit ausgewählter benannter Berechtigung „ADMINISTRATION“](assets/smsoperator_rights.png){zoomable="yes"}
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Erstellung der SMS-Benutzerin bzw. des SMS-Benutzers abzuschließen.
 
-   ![](assets/smsoperator_save.png){zoomable="yes"}
+   ![SMS-Benutzerformular mit hinzugefügter Berechtigung ADMINISTRATION und hervorgehobener Schaltfläche „Speichern“](assets/smsoperator_save.png){zoomable="yes"}
 
 Sie können sie bzw. ihn jetzt in der Benutzerliste sehen.
 
-![](assets/smsoperator_list.png){zoomable="yes"}
+![Benutzerliste mit dem neuen Mid-SMS-Benutzer (smsOperator)](assets/smsoperator_list.png){zoomable="yes"}
 
 ## Erstellen eines externen SMS-Kontos auf dem Marketing-Server {#sms-external-account}
 
@@ -86,17 +86,17 @@ In einer Mid-Sourcing-Infrastruktur müssen Sie wie unten beschrieben ein extern
 
 1. Klicken Sie unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]** auf das Symbol **[!UICONTROL Neu]**.
 
-   ![](assets/sms_extaccount.png){zoomable="yes"}
+   ![Liste der externen Konten unter Administration > Plattform mit hervorgehobenem Symbol „Neu“](assets/sms_extaccount.png){zoomable="yes"}
 
 1. Legen Sie den **[!UICONTROL Titel]** und den **[!UICONTROL internen Namen]** Ihres externen Kontos fest. Definieren Sie den Kontotyp als **[!UICONTROL Routing]**, aktivieren Sie das Feld **[!UICONTROL Aktiviert]** und wählen Sie **[!UICONTROL Mobiltelefon (SMS)]** als Kanal sowie **[!UICONTROL Mid-Sourcing]** als Versandmodus aus.
 
-   ![](assets/mid_smsextaccount.png){zoomable="yes"}
+   ![Registerkarte Allgemein des externen Kontos: Routing-Typ, Aktiviert, Mobile-Kanal (SMS) und Mid-Sourcing-Versandmodus](assets/mid_smsextaccount.png){zoomable="yes"}
 
 1. Füllen Sie auf der Registerkarte **[!UICONTROL Mid-Sourcing]** das Formular mit der URL des Mid-Sourcing-Servers und der bzw. dem zuvor auf dem Mid-Sourcing-Server erstellten SMS-Benutzerin bzw. SMS-Benutzer aus.
 
    Bestätigen Sie die Verbindung, indem Sie auf die Schaltfläche **[!UICONTROL Verbindung testen]** klicken.
 
-   ![](assets/midtab_smsextaccount.png){zoomable="yes"}
+   ![Registerkarte „Mid-Sourcing“ mit Server-URL, SMS-Benutzerkonto, Kennwort und Schaltfläche „Verbindung testen“](assets/midtab_smsextaccount.png){zoomable="yes"}
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -120,13 +120,13 @@ Gehen Sie dazu wie folgt vor:
    >
 
    Definieren Sie den Kontotyp als **[!UICONTROL Routing]**, aktivieren Sie das Feld **[!UICONTROL Aktiviert]** und wählen Sie **[!UICONTROL Mobiltelefon (SMS)]** als Kanal sowie **[!UICONTROL Gebündelter Versand]** als Versandmodus aus.
-   ![](assets/mid_extaccount.png){zoomable="yes"}
+   ![Registerkarte Allgemeines des externen Mid-Server-Kontos: Routing-Typ, Aktiviert, Mobile-Kanal (SMS) und Massenversand-Modus](assets/mid_extaccount.png){zoomable="yes"}
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Mobiltelefon]** aus der Dropdown-Liste **[!UICONTROL Connector]** die Option **[!UICONTROL Erweitertes allgemeines SMPP]** aus.
 
-   Das Feld **[!UICONTROL Nachrichten über einen speziellen Prozess senden]** ist standardmäßig aktiviert.
+   Das Kästchen **[!UICONTROL Nachrichten über einen speziellen Prozess senden]** ist standardmäßig aktiviert.
 
-   ![](assets/sms_extaccount_connector.png){zoomable="yes"}
+   ![Registerkarte „Mobil“ mit dem erweiterten allgemeinen SMPP-Connector und „Nachrichten über einen dedizierten Prozess senden“ aktiviert](assets/sms_extaccount_connector.png){zoomable="yes"}
 
    Um die Verbindung einzurichten, müssen Sie die Registerkarten dieses Formulars ausfüllen. Weitere Informationen über das externe SMPP-Konto finden Sie [hier](smpp-external-account.md#smpp-connection-settings).
 
@@ -136,18 +136,18 @@ Um die Erstellung Ihres SMS-Versands zu erleichtern, erstellen Sie eine SMS-Vers
 
 Klicken Sie auf dem Marketing-Server unter **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Versandvorlagen]** mit der rechten Maustaste auf die vorhandene Mobile-Versandvorlage und wählen Sie **[!UICONTROL Duplizieren]** aus.
 
-![](assets/sms_template_duplicate.png){zoomable="yes"}
+![Liste der Versandvorlagen, deren Duplikat im Kontextmenü der Mobile-Vorlage (SMS) ausgewählt wurde](assets/sms_template_duplicate.png){zoomable="yes"}
 
 Ändern Sie den **[!UICONTROL Titel]** und den **[!UICONTROL internen Namen]** Ihrer Vorlage, um sie leicht zu erkennen, und klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]**.
 
-![](assets/sms_template_name.png){zoomable="yes"}
+![Duplizierte Versandvorlage mit hervorgehobenen Feldern für Titel und internen Namen und der Schaltfläche „Eigenschaften“](assets/sms_template_name.png){zoomable="yes"}
 
 Wählen Sie auf der Registerkarte **[!UICONTROL Allgemein]** unter **[!UICONTROL Routing]** Ihr externes SMPP-Konto aus.
 
-![](assets/mid_template.png){zoomable="yes"}
+![Registerkarte „Allgemein“ der Versandeigenschaften mit dem Feld Routing , das auf das externe SMPP-Konto festgelegt ist](assets/mid_template.png){zoomable="yes"}
 
 Auf der Registerkarte **[!UICONTROL SMS]** können Sie optionale Parameter zu Ihrer Vorlage hinzufügen.
 
-![](assets/sms_template_properties.png){zoomable="yes"}
+![Registerkarte „SMS“ der Versandeigenschaften mit allgemeinen Parametern und optionalen SMPP-Parametern (TLV)](assets/sms_template_properties.png){zoomable="yes"}
 
 [Erfahren Sie mehr über die Konfiguration dieser SMS-Registerkarte](sms-delivery-settings.md).

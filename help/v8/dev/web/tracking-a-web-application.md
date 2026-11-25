@@ -32,10 +32,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 76%
 ---
 # Nachverfolgen von Besuchen in einem Web-Programm{#tracking-a-web-application}
 
@@ -50,11 +50,11 @@ Die wichtigsten Verbesserungen in dieser Version sind:
 * Möglichkeit, mehrere Trackingtags auf derselben Seite einzufügen, um die Definition des Navigationspfads zu vereinfachen (z. B. Kauf, Abonnement, Rückgabe)
 * Ansicht der Navigationspfade und Trackingtags auf den unterschiedlichen Seiten im Webanwendungs-Dashboard.
 
-  ![](assets/trackers_1.png)
+  ![Webanwendungs-Dashboard mit Tracking-Tags-Abschnitt, in dem die Konversionspfade und die Tracking-Tag-Phase auf jeder Seite aufgelistet sind](assets/trackers_1.png)
 
 * Erstellen eines vollständigen Tracking-Berichts
 
-  ![](assets/trackers_5.png)
+  ![Analysebericht zu Tracking-Tags mit Besuchen insgesamt, Unique Visitors, Konversionsrate, Absprungrate und einem Besuchsdiagramm](assets/trackers_5.png)
 
   Die wichtigsten Indikatoren sind:
 
@@ -71,7 +71,7 @@ Es können zwei verschiedene Modi verwendet werden, um festzustellen, woher der 
 1. Senden einer speziellen Nachricht, in der Sie ihm Zugriff auf die Webanwendungsseiten gewähren: In diesem Fall ist die Traffic-Herkunft dieser Versand.
 1. Verknüpfen der Webanwendung mit einer bestimmten Traffic-Herkunft: In diesem Fall muss es sich um eine externe „Traffic-Herkunft“ handeln. Sie kann aus den Eigenschaften der Webanwendung oder dem Zielgruppen-Mapping ausgewählt werden.
 
-   ![](assets/trackers_6.png)
+   ![Dialogfeld „Erweiterte Parameter“ in den Eigenschaften der Web-Anwendung, wobei das Feld Traffic-Quelle auf einen Web-Versand eingestellt ist](assets/trackers_6.png)
 
 Um die Traffic-Herkunft in einer Webanwendung festzustellen, sucht Adobe Campaign nach den folgenden Informationen:
 
@@ -85,14 +85,14 @@ Um die Traffic-Herkunft in einer Webanwendung festzustellen, sucht Adobe Campaig
 
 ## Mit dem Digital Content Editor (DCE) erstellte Web-Anwendungen {#web-applications-designed-with-digital-content-editor--dce-}
 
-Wenn eine Webanwendung mit dem HTML-Contenteditor – dem **Digital Content Editor (DCE)** – erstellt wird, werden Trackingtags über den Tab **[!UICONTROL Eigenschaften]** des Editors eingefügt. Weiterführende Informationen zum Digital Content Editor (DCE) finden Sie in [diesem Abschnitt](about-campaign-html-editor.md).
+Wenn eine Webanwendung mit dem HTML-Contenteditor – dem **Digital Content Editor (DCE)** – erstellt wird, werden Trackingtags über den Tab **[!UICONTROL Eigenschaften]** des Editors eingefügt. Weitere Informationen zum Digital Content Editor (DCE) finden Sie unter [Erste Schritte mit dem Campaign HTML-Editor](about-campaign-html-editor.md).
 
-![](assets/trackers_2.png)
+![Registerkarte „DCE-Seiteneigenschaften“, auf der einem Tracking-Tag ein Ziel wie Abonnement, Konversion oder Update zugewiesen ist](assets/trackers_2.png)
 
 Bei der Verwendung der Webschnittstelle werden Trackingtags über die Seiteneigenschaften eingefügt.
 
-![](assets/trackers_3.png)
+![Eigenschaften des Seitendialogfelds, Registerkarte „Tracking-Tags“, auf der jedes Tag mit seiner Staging- und Zielaktion aufgelistet ist](assets/trackers_3.png)
 
 Mit dem Symbol **[!UICONTROL Bausteine anzeigen]** können Sie die Anzahl der für die Seite definierten Trackingtags anzeigen.
 
-![](assets/trackers_4.png)
+![Blocksymbol im Web-Editor mit einer QuickInfo, die zwei Tracking-Tags auf der Seite anzeigt](assets/trackers_4.png)

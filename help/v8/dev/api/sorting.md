@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '764'
-ht-degree: 87%
+ht-degree: 85%
 ---
 # Zusätzliche Vorgänge {#additional-operations}
 
@@ -41,7 +41,7 @@ ht-degree: 87%
 
 Die Sortierung ist standardmäßig in aufsteigender Reihenfolge verfügbar. Um in absteigender Reihenfolge zu sortieren, hängen Sie **%20desc** an den Wert des Parameters **_order** an.
 
-Um zu erfahren, ob sich ein Feld sortieren lässt, prüfen Sie den Parameter &quot;sortable&quot; in den Metadaten der Ressource. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](metadata-mechanism.md).
+Um zu erfahren, ob sich ein Feld sortieren lässt, prüfen Sie den Parameter &quot;sortable&quot; in den Metadaten der Ressource. Weitere Informationen hierzu finden Sie unter [Metadatenmechanismus](metadata-mechanism.md).
 
 <br/>
 
@@ -49,7 +49,7 @@ Um zu erfahren, ob sich ein Feld sortieren lässt, prüfen Sie den Parameter &qu
 
 * Beispielhafte GET-Anfrage zum Abrufen von E-Mails in der Datenbank in alphabetischer Reihenfolge.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_order=email \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -59,7 +59,7 @@ Um zu erfahren, ob sich ein Feld sortieren lässt, prüfen Sie den Parameter &qu
 
   Antwort auf die Anfrage
 
-  ```
+  ```json
   {
   "content": [
       "adam@email.com",
@@ -74,7 +74,7 @@ Um zu erfahren, ob sich ein Feld sortieren lässt, prüfen Sie den Parameter &qu
 
 * Beispielhafte GET-Anfrage zum Abrufen der E-Mails in der Datenbank in absteigender alphabetischer Reihenfolge.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_order=email%20desc \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -84,7 +84,7 @@ Um zu erfahren, ob sich ein Feld sortieren lässt, prüfen Sie den Parameter &qu
 
   Antwort auf die Anfrage
 
-  ```
+  ```json
   {
   "content": [
       "tombinder@example.com",
@@ -100,7 +100,7 @@ Um zu erfahren, ob sich ein Feld sortieren lässt, prüfen Sie den Parameter &qu
 
 ### Abrufen von Filtermetadaten
 
-Für jede Ressource stehen Filter zur Verfügung. Um die mit einer Ressource verknüpften Filter zu ermitteln, müssen Sie eine GET-Anfrage für die Metadaten der Ressource durchführen. Die Anfrage gibt die URL zurück, unter der alle Filter für eine bestimmte Ressource definiert sind. Weiterführende Informationen zu Metadaten finden Sie in [diesem Abschnitt](metadata-mechanism.md).
+Für jede Ressource stehen Filter zur Verfügung. Um die mit einer Ressource verknüpften Filter zu ermitteln, müssen Sie eine GET-Anfrage für die Metadaten der Ressource durchführen. Die Anfrage gibt die URL zurück, unter der alle Filter für eine bestimmte Ressource definiert sind. Weitere Informationen zu Metadaten finden Sie unter [Metadatenmechanismus](metadata-mechanism.md).
 
 Um die Metadaten eines Filters und die jeweilige Verwendungsweise zu ermitteln, müssen Sie eine GET-Anfrage für die zuvor zurückgegebene URL durchführen.
 
@@ -110,7 +110,7 @@ Um die Metadaten eines Filters und die jeweilige Verwendungsweise zu ermitteln, 
 
 Die folgenden beispielhaften Payloads zeigen, wie die &quot;byText&quot;-Filtermetadaten für die &quot;Profil&quot;-Ressource abgerufen werden. Führen Sie zunächst eine GET-Anfrage zu den Ressourcenmetadaten „Profil“ aus.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -120,7 +120,7 @@ Die folgenden beispielhaften Payloads zeigen, wie die &quot;byText&quot;-Filterm
 
 Diese gibt die URL zurück, unter der die Filter beschrieben werden.
 
-```
+```json
 {
 "filters": {
         "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/<PKEY>/filters/"
@@ -130,7 +130,7 @@ Diese gibt die URL zurück, unter der die Filter beschrieben werden.
 
 Führen Sie eine GET-Anfrage für die URL aus. Sie erhalten eine Liste der Filter für die Ressource &quot;Profil&quot; mit den jedem Filter zugeordneten Metadaten.
 
-```
+```json
 {
 "birthday": {
         "PKey": "@FL-CbDFXbnHbXcVpeCGWL46VXJLn1LqxLMPagt2vz8sCxQ52lvB15KiUaxXkxJYQw-tZXYrgUWG6K8QcB4gxVY9RKoba5bRFY3294YFshDmorRr8",
@@ -156,7 +156,7 @@ Jeder Filter weist dieselbe Metadatenstruktur auf:
 
 Beispiel für die Metadatenstruktur:
 
-```
+```json
 "byText": {
         "PKey": "...",
         "category": "99_none",
@@ -184,7 +184,7 @@ Es ist möglich, mehrere Filter in einer einzigen Anfrage zu kombinieren:
 
 * Beispielhafte GET-Anfrage zum Abrufen der &quot;Dienst&quot;-Ressourcen mit dem Typ &quot;email&quot;.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=email \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -194,7 +194,7 @@ Es ist möglich, mehrere Filter in einer einzigen Anfrage zu kombinieren:
 
   Antwort auf die Anfrage.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -217,7 +217,7 @@ Es ist möglich, mehrere Filter in einer einzigen Anfrage zu kombinieren:
 * Beispiel einer GET-Anfrage zum Abrufen der „Profil“-Ressourcen, die „Mustermann“
 in den Feldern „E-Mail“ oder „Nachname“ enthalten (der Filter „byText“ sucht sowohl im Feld „E-Mail“ als auch im Feld „Nachname“).
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=Doe \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -227,7 +227,7 @@ in den Feldern „E-Mail“ oder „Nachname“ enthalten (der Filter „byText�
 
   Antwort auf die Anfrage.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -245,7 +245,7 @@ in den Feldern „E-Mail“ oder „Nachname“ enthalten (der Filter „byText�
 
 * Beispielhafte GET-Anfrage zum Abrufen der Service-Ressourcen mit dem Typ „email“ und der Bezeichnung „sport“.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/byText?channel=email&text=sport \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -255,7 +255,7 @@ in den Feldern „E-Mail“ oder „Nachname“ enthalten (der Filter „byText�
 
   Antwort auf die Anfrage.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -292,7 +292,7 @@ Weiterführende Informationen finden Sie in der Campaign Standard-Dokumentation
 
 Beispielhafte GET-Anfrage zum Abrufen der &quot;Profil&quot;-Ressourcen mit Transaktionsbeträgen von 100 $ oder mehr. Beachten Sie, dass der Filter &quot;byAmount&quot; zunächst in der Benutzeroberfläche von Adobe Campaign Standard definiert und mit der benutzerdefinierten Tabelle &quot;Transaction&quot; verknüpft wurde.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/byAmount?amount_parameter=100 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -356,7 +356,7 @@ Die Adobe Campaign REST-API kann die Anzahl der Datensätze in einer Anfrage zä
 
 Um alle Services zu zählen, die einen **messageType**-Wert gleich „sms“ haben, führen Sie eine GET-Anfrage mit dem **byChannel**-Filter durch.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -366,7 +366,7 @@ Um alle Services zu zählen, die einen **messageType**-Wert gleich „sms“ hab
 
 Es werden die Dienste zurückgegeben, die dem Filter entsprechen.
 
-```
+```json
 {
     "content": [
         {
@@ -387,7 +387,7 @@ Es werden die Dienste zurückgegeben, die dem Filter entsprechen.
 
 Führen Sie eine GET-Anfrage für die URL des Knotens **Zählung** aus, um die Anzahl der Ergebnisse abzurufen.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/_count?channel=sms&_lineStart=@iKTZ2q3IiSEDqZ5Nw1vdoGnQCqF-8DAUJRaVwR9obqqTxhMy \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -397,7 +397,7 @@ Führen Sie eine GET-Anfrage für die URL des Knotens **Zählung** aus, um die A
 
 Es wird die Anzahl der Datensätze zurückgegeben.
 
-```
+```json
 {
     "count": 26
 }
@@ -421,7 +421,7 @@ Mit dem Parameter **_lineCount** können Sie die Zahl der in der Antwort aufgeli
 
 Beispielhafte GET-Anfrage zum Anzeigen eines Datensatzes der Profilressource
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_lineCount=1 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -431,7 +431,7 @@ Beispielhafte GET-Anfrage zum Anzeigen eines Datensatzes der Profilressource
 
 Antwort auf die Anfrage, wobei der Knoten **Nächste** die Paginierung ausführt.
 
-```
+```json
 {
     "content": [
         {
@@ -452,7 +452,7 @@ Antwort auf die Anfrage, wobei der Knoten **Nächste** die Paginierung ausführt
 
 Standardmäßig ist der Knoten **next** bei der Interaktion mit Tabellen mit einer großen Datenmenge nicht verfügbar. Um die Paginierung auszuführen, müssen Sie den Parameter **_forcePagination=true** zu Ihrer Aufruf-URL hinzufügen.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_forcePagination=true \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \

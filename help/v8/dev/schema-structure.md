@@ -39,16 +39,16 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 96%
+source-wordcount: '1530'
+ht-degree: 91%
 ---
 # Schemastruktur{#schema-structure}
 
 Die Grundstruktur eines `<srcschema>` sieht wie folgt aus:
 
-```
+```xml
 <srcSchema>
     <enumeration>
         ...          //definition of enumerations
@@ -88,7 +88,7 @@ Die Grundstruktur eines `<srcschema>` sieht wie folgt aus:
 
 Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den Attributen **name** und **namespace** zur Angabe des Schemanamens und des Namespace enthalten.
 
-```
+```xml
 <srcSchema name="schema_name" namespace="namespace">
 ...
 </srcSchema>
@@ -96,7 +96,7 @@ Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den At
 
 Verwenden wir den folgenden XML-Inhalt, um die Struktur eines Schemas zu illustrieren:
 
-```
+```xml
 <recipient email="John.doe@aol.com" created="AAAA/DD/MM" gender="1"> 
   <location city="London"/>
 </recipient>
@@ -104,7 +104,7 @@ Verwenden wir den folgenden XML-Inhalt, um die Struktur eines Schemas zu illustr
 
 Mit dem zugehörigen Datenschema:
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email"/>
@@ -123,7 +123,7 @@ Der Einstiegspunkt für das Schema ist sein Hauptelement. Es ist leicht identifi
 
 In unserem Beispiel wird das Hauptelement durch die folgende Zeile dargestellt:
 
-```
+```xml
 <element name="recipient">
 ```
 
@@ -131,7 +131,7 @@ Die Elemente **`<attribute>`** und **`<element>`**, die dem Hauptelement folgen,
 
 In unserem Beispielschema sind dies:
 
-```
+```xml
 <attribute name="email"/>
 <attribute name="created"/>
 <attribute name="gender"/>
@@ -181,7 +181,7 @@ Die folgenden Datentypen werden in Schemata unterstützt:
 
 Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email" type="string" length="80"/>
@@ -208,13 +208,13 @@ Die **`<elements>`**- und **`<attributes>`** des Datenschemas können mit versch
 
   **Beispiel**:
 
-  ```
+  ```xml
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
   Das Label wird im Eingabeformular der Adobe Campaign-Client-Konsole angezeigt:
 
-  ![](assets/schema_label.png)
+  ![E-Mail-Eingabefeld in der Konsole mit der Bezeichnung E-Mail mit einer eingegebenen E-Mail-Adresse.](assets/schema_label.png)
 
 * Mit der Eigenschaft **desc** können Sie eine lange Beschreibung eingeben.
 
@@ -226,7 +226,7 @@ Die **`<elements>`**- und **`<attributes>`** des Datenschemas können mit versch
 
   **Beispiel**:
 
-  ```
+  ```xml
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
   ```
 
@@ -234,7 +234,7 @@ Die **`<elements>`**- und **`<attributes>`** des Datenschemas können mit versch
 
 Mit der Eigenschaft **default** können Sie einen Ausdruck definieren, der bei der Inhaltserstellung einen Standardwert zurückgibt.
 
-Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#reference-with-xpath).
+Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Informationen hierzu finden Sie unter [Referenz mit XPath](#reference-with-xpath).
 
 **Beispiel**:
 
@@ -267,7 +267,7 @@ Der Name der Aufzählung kann frei gewählt und für andere Felder freigegeben w
 
 Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 
-![](assets/schema_user_enum.png)
+![Feld „Stadt“ im Formular, das eine Dropdown-Liste mit Werten aus einer Benutzeraufzählung anzeigt.](assets/schema_user_enum.png)
 
 >[!NOTE]
 >
@@ -281,11 +281,11 @@ Das Attribut **enum** bezieht sich auf die Definition einer Aufzählungsklasse, 
 
 Aufzählungen ermöglichen es dem Benutzer, einen Wert aus einer Dropdown-Liste auszuwählen, anstatt ihn in ein reguläres Eingabefeld einzugeben:
 
-![](assets/schema_enum.png)
+![Dropdown-Liste „Geschlecht“ mit den Werten „Keine Angabe“, „Männlich“ und „Weiblich“.](assets/schema_enum.png)
 
 Beispiel für eine Deklaration einer Aufzählung im Datenschema:
 
-```
+```xml
 <enumeration name="gender" basetype="byte" default="0">    
   <value name="unknown" label="Not specified" value="0"/>    
   <value name="male" label="male" value="1"/>   
@@ -317,13 +317,13 @@ Die Werte für die Aufzählung werden im Element **`<value>`** mit den folgenden
 
   Diese Aufzählung dient beispielsweise zur Angabe der Art von Kampagnen.
 
-  ![](assets/schema_dbenum.png)
+  ![Das Dialogfeld „Neue Marketing-Kampagne“ mit der Dropdown-Liste „Art“ wird geöffnet und zeigt „Keine angegeben“ und „Remarketing“ an.](assets/schema_dbenum.png)
 
 ### Beispiel {#example}
 
 Beispiel des um diese Eigenschaften ergänzten Schemas:
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -350,7 +350,7 @@ Mithilfe des Attributs **unbound** mit dem Wert &quot;true&quot; können Sie ein
 
 **Beispiel**: Definition des Sammlungselements **`<group>`** im Schema.
 
-```
+```xml
 <element name="group" unbound="true" label="List of groups">
   <attribute name="label" type="string" label="Label"/>
 </element>
@@ -358,7 +358,7 @@ Mithilfe des Attributs **unbound** mit dem Wert &quot;true&quot; können Sie ein
 
 Mit Projektion des XML-Inhalts:
 
-```
+```xml
 <group label="Group1"/>
 <group label="Group2"/>
 ```
@@ -396,7 +396,7 @@ Die Ausdrücke wurden um Funktionen auf hoher Ebene erweitert, um das Potenzial 
 
 In der Adobe Campaign-Client-Konsole können Sie über einen beliebigen Ausdruckseditor auf die Liste der verfügbaren Funktionen zugreifen:
 
-![](assets/schema_function.png)
+![Funktionsbaum des Ausdruckseditors mit Aggregat-, String-, Datums- und numerischen Gruppen wie ABS, CEIL und ROUND.](assets/schema_function.png)
 
 **Beispiel**:
 
@@ -412,7 +412,7 @@ Der **Compute string** wird über das Element **`<compute-string>`** unter dem H
 
 **Beispiel**: Compute string der Empfänger-Tabelle.
 
-```
+```xml
 <srcSchema name="recipient" namespace="nms">  
   <element name="recipient">
     <compute-string expr="@lastName + ' ' + @firstName +' (' + @email + ')' "/>

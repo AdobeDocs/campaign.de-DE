@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 37%
+source-wordcount: '647'
+ht-degree: 28%
 ---
 # Erste Schritte mit benutzerdefinierten Kanälen {#gs-custom-channel}
 
@@ -40,11 +40,11 @@ Informationen zum Erstellen und Senden eines Versands auf der Grundlage eines be
 
 Im Folgenden finden Sie die Schritte zum Konfigurieren eines neuen benutzerdefinierten Kanals in der Client-Konsole. Diese Schritte gelten für benutzerdefinierte externe Kanäle und API-Kanäle:
 
-1. Konfigurieren des Schemas, [weitere Informationen](#configure-schema)
-1. Erstellen eines neuen externen Kontos, [weitere Informationen](#create-ext-account)
-1. Erstellen einer neuen Versandvorlage, [weitere Informationen](#create-template)
+1. Konfigurieren Sie das Schema [Konfigurieren Sie das Schema](#configure-schema)
+1. Erstellen Sie ein neues externes Konto, [Erstellen Sie ein neues externes Konto](#create-ext-account)
+1. Erstellen Sie eine neue Versandvorlage [Erstellen einer neuen Versandvorlage](#create-template)
 
-Benutzerdefinierte API-Kanäle erfordern eine zusätzliche Konfiguration. [Weitere Informationen](#api-additional)
+Benutzerdefinierte API-Kanäle erfordern eine zusätzliche Konfiguration. [Zusätzliche Konfiguration für benutzerdefinierte API](#api-additional)
 
 ## Konfigurieren des Schemas{#configure-schema}
 
@@ -56,14 +56,14 @@ Zunächst müssen Sie das Schema konfigurieren, um den neuen Kanal zur Liste der
 
    Beispiel:
 
-   ```
+   ```xml
    <enumeration basetype="byte" default="mail" label="Channel" name="messageType">
    <value desc="My Webpush" img="ncm:channels.png" label="My Webpush" name="webpush"
           value="122"/>
    </enumeration>
    ```
 
-   ![](assets/cus-schema.png){zoomable="yes"}
+   ![Quellschema Sendungen (cus) mit hervorgehobener MessageType-Auflistung für den benutzerdefinierten Kanal](assets/cus-schema.png){zoomable="yes"}
 
 ## Neues externes Konto erstellen{#create-ext-account}
 
@@ -75,7 +75,7 @@ Anschließend müssen Sie ein neues externes Routing-Konto erstellen.
 
 1. Wählen Sie den Kanal aus und ändern Sie den Versandmodus. Wählen Sie **Extern** für benutzerdefinierte externe Kanäle und **Bulk** für benutzerdefinierte API-Kanäle aus.
 
-   ![](assets/cus-ext-account.png){zoomable="yes"}
+   ![Externes Konto vom Typ Routing mit ausgewähltem benutzerdefiniertem Kanal und dem auf „Extern“ gesetzten Versandmodus](assets/cus-ext-account.png){zoomable="yes"}
 
 ## Erstellen einer neuen Versandvorlage{#create-template}
 
@@ -87,7 +87,7 @@ Erstellen wir nun die neue Vorlage, die mit dem neuen Kanal verknüpft ist.
 
 1. Klicken Sie auf **Eigenschaften** und wählen Sie den richtigen Ordner sowie das richtige Routing aus.
 
-   ![](assets/cus-template.png){zoomable="yes"}
+   ![Eigenschaften der Versandvorlage, Registerkarte Allgemein , wobei die Felder Ordner und Routing auf das externe Konto des benutzerdefinierten Kanals festgelegt sind](assets/cus-template.png){zoomable="yes"}
 
 Der neue Kanal ist jetzt verfügbar. Sie können Sendungen auf Grundlage dieses Kanals erstellen und ausführen.
 
@@ -107,13 +107,13 @@ Richten Sie in der Web-Benutzeroberfläche von Campaign die Definition des benut
 
 1. Öffnen Sie das **Versand**-Schema und klicken Sie auf **Bildschirmbearbeitung**.
 
-   ![](assets/cus-schema2.png){zoomable="yes"}
+   ![Schema-Seite „Sendungen (nms)“ mit der Schaltfläche Bildschirmbearbeitung oben rechts](assets/cus-schema2.png){zoomable="yes"}
 
 1. Wählen Sie die Registerkarte aus, die Ihrem Kanal entspricht, und definieren Sie, wie die Felder im Inhaltsbildschirm des Versands angezeigt werden. Weiterführende Informationen zur Bildschirmbearbeitung finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=de#fields){target="_blank"}.
 
-   ![](assets/cus-schema3.png){zoomable="yes"}
+   ![Dialogfeld für die Bildschirmdefinition, Registerkarte „Benutzerdefinierter Kanal“, auf der benutzerdefinierte Felder mit Beschriftung, Attribut, Typ und obligatorischer Option aufgelistet sind](assets/cus-schema3.png){zoomable="yes"}
 
-1. Wählen **im Abschnitt „Vorschau für simulierten**&quot; das dedizierte JSPP aus. Dies ist optional. Dadurch wird die Vorschau im Bildschirm zur Versandsimulation aktiviert. [Weitere Informationen](#api-additional-preview)
+1. Wählen **im Abschnitt „Vorschau für simulierten**&quot; das dedizierte JSPP aus. Dies ist optional. Dadurch wird die Vorschau im Bildschirm zur Versandsimulation aktiviert. [Konfigurieren der Vorschau](#api-additional-preview)
 
 ### Konfigurieren der Vorschau{#api-additional-preview}
 
@@ -128,7 +128,7 @@ Wenn Sie auf **Vorschau öffnen** im Bildschirm zur Versandsimulation in der Web
 
 Wählen Sie in der Client-Konsole **Administration** > **Konfiguration** > **Dynamische JavaScript-Seiten** und erstellen Sie ein neues JSSP. Im Folgenden finden Sie ein Beispiel mit den Parametern, die abgerufen werden müssen.
 
-```
+```html
 <%@ page import="xtk:shared/nl.js"
 %><%
   NL.require("/nl/core/shared/core.js")

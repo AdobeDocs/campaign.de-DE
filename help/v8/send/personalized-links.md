@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 48%
@@ -45,7 +45,7 @@ Sie können spezifische Anweisungen zur Vorab-Bearbeitung hinzufügen, um die UR
 
 Beispiel:
 
-```
+```html
 <%@ value object="myObject" xpath="@myField" %>
 ```
 
@@ -71,7 +71,7 @@ Wobei:
 
 Wenn die herunterzuladende Seite für alle Empfängerinnen und Empfänger identisch ist, empfiehlt es sich, Folgendes zu verwenden:
 
-```
+```html
 <%@ include url="http://mynewsletter.com" %>
 ```
 
@@ -81,7 +81,7 @@ In diesem Fall wird die Seite während der Analyse vor der Tracking-Erkennung he
 
 Nach der Verarbeitung `<%@` Anweisungen sollte die zu trackende URL die folgende Syntax aufweisen:
 
-```
+```xml
 <a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">
 ```
 
@@ -95,7 +95,7 @@ Um sicherzustellen, dass personalisierte URLs korrekt getrackt werden, müssen S
 
 **Beispiel:**
 
-```
+```xml
 <a href="http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>">Click here</a>
 ```
 
@@ -107,7 +107,7 @@ Mit der `<%@ foreach %>` können Sie Arrays von Objekten durchlaufen, die im Ver
 
 ### Syntax
 
-```
+```html
 <%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %>
   <!-- Content to repeat -->
 <%@ end %>
@@ -126,7 +126,7 @@ Laden Sie in den Versandeigenschaften/der Versandpersonalisierung ein Array von 
 
 Sie können Links zu diesen Artikeln mit individuellem Tracking anzeigen:
 
-```
+```html
 <%@ foreach object="articleList" item="article" %>
   <a href="http://example.com/article.jsp?id=<%@ value object="article" xpath="@id" %>">
     <%@ value object="article" xpath="@title" %>

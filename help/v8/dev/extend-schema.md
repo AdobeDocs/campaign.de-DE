@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '368'
+ht-degree: 67%
 ---
 # Schema erweitern{#extend-schemas}
 
@@ -54,32 +54,32 @@ Die wichtigsten Schritte zum Anpassen des Campaign-Datenmodells sind:
 >[!CAUTION]
 >Das integrierte Schema darf nicht direkt geändert werden. Wenn Sie ein integriertes Schema anpassen möchten, müssen Sie es erweitern.
 
-Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie auf [dieser Seite](datamodel.md). Siehe auch Empfehlungen zum Erstellen eines neuen Schemas auf [dieser Seite](create-schema.md).
+Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie unter [Erste Schritte mit dem Campaign-Datenmodell](datamodel.md). Siehe auch Empfehlungen zum Erstellen eines neuen Schemas in [Neues Schema in Campaign erstellen](create-schema.md).
 
 Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
 1. Navigieren Sie im Explorer zum Ordner **[!UICONTROL Administration > Konfiguration > Datenschemata]**.
 1. Klicken Sie auf die Schaltfläche **Neu** und wählen Sie **[!UICONTROL Daten in einer Tabelle mit einem Erweiterungsschema erweitern]**.
 
-   ![](assets/extend-schema-option.png)
+   ![Schritt vom Typ Schema mit der Option Daten in der Tabelle mit einem Erweiterungsschema erweitern](assets/extend-schema-option.png)
 
 1. Identifizieren Sie das integrierte Schema, um es zu erweitern und auszuwählen.
 
-   ![](assets/extend-schema-select.png)
+   ![Dialogfeld zur Source-Schemaauswahl nach Empfänger gefiltert, mit ausgewählten Empfängern (nms)](assets/extend-schema-select.png)
 
    Benennen Sie das Erweiterungsschema standardmäßig genauso wie das integrierte Schema und verwenden Sie einen benutzerdefinierten Namespace.  Beachten Sie, dass einige Namespaces nur zur internen Verwendung verfügbar sind. [Weitere Informationen](schemas.md#reserved-namespaces)
 
-   ![](assets/extend-schema-validate.png)
+   ![Schritt „Schemaparameter“ für das Erweiterungsschema mit Namespace cus, Name recipient und Titel Recipients](assets/extend-schema-validate.png)
 
 1. Fügen Sie im Schema-Editor über das Kontextmenü die benötigten Elemente hinzu und speichern Sie sie.
 
-   ![](assets/extend-schema-edit.png)
+   ![Schema-Editor mit geöffnetem Menü „Einfügen“ für Attribute, mit Auflistung von String, Boolean, Integer, Date und anderen Typen](assets/extend-schema-edit.png)
 
    Im untenstehenden Beispiel fügen wir das Attribut **MembershipYear** hinzu, legen eine Längenbegrenzung für den Nachnamen fest (dieser Grenzwert überschreibt den Standardwert) und entfernen das Geburtsdatum aus dem integrierten Schema.
 
-   ![](assets/extend-schema-sample.png)
+   ![Erweiterungsschema-XML mit MembershipYear, einer Länge von 50 Zeichen LastName und Löschen von BirthDate](assets/extend-schema-sample.png)
 
-   ```
+   ```xml
    <srcSchema created="YYYY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
            img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YYYY-MM-DD"
            mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">
@@ -93,7 +93,7 @@ Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
 1. Trennen Sie die Verbindung zu Campaign und stellen Sie sie wieder her, um die Aktualisierung der Schemastruktur auf der Registerkarte **[!UICONTROL Struktur]** zu überprüfen.
 
-   ![](assets/extend-schema-structure.png)
+   ![Registerkarte Struktur des Schemas cus:recipient, in dem die Felder einschließlich des Felds „Neues Mitglied seit“ aufgelistet sind](assets/extend-schema-structure.png)
 
 1. Aktualisieren Sie die Datenbankstruktur, um Ihre Änderungen anzuwenden. [Weitere Informationen](update-database-structure.md)
 

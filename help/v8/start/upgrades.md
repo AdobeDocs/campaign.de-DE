@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 24%
+source-wordcount: '1796'
+ht-degree: 23%
 ---
 # Versionen, Upgrades und Sicherheit {#upgrades}
 
@@ -43,7 +43,7 @@ Benutzer von Managed Cloud Services:
 
 * Ihre Campaign-Server-Instanz wird von Adobe mit jeder neuen Version automatisch und ohne Aktion Ihrerseits aktualisiert.
 * Ihr Adobe-Support-Mitarbeiter setzt sich vor einem Upgrade, das sich auf Ihre Umgebung auswirkt, mit Ihnen in Verbindung.
-* **Die Client-Konsole ist die Komponente, für die Sie verantwortlich sind.** Sie muss auf dieselbe Version aktualisiert werden wie Ihr Campaign-Server. Auf [dieser Seite](../start/connect.md#upgrade-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+* **Die Client-Konsole ist die Komponente, für die Sie verantwortlich sind.** Sie muss auf dieselbe Version aktualisiert werden wie Ihr Campaign-Server. Erfahren Sie, wie Sie Ihre Client-Konsole in aktualisieren [Aktualisieren Sie Ihre Client-Konsole](../start/connect.md#upgrade-ac-console).
 
 Außerdem sollten Sie als Kundin bzw. Kunde sicherstellen, dass Sie die neuesten unterstützten Versionen der in der [Kompatibilitätsmatrix](compatibility-matrix.md) aufgeführten Systeme verwenden.
 
@@ -92,7 +92,7 @@ Beachten Sie, dass Sie als Kunde bzw. Kundin auch sicherstellen müssen, dass Si
 
 Öffnen Sie über die Client-Konsole das Menü **Hilfe > Über…**, um Ihre Campaign-Version zu überprüfen.
 
-![](assets/ac-version.png)
+![Über das Dialogfeld der Client-Konsole mit den Versionen der Client-Konsole und des Anwendungs-Servers](assets/ac-version.png)
 
 Sie erhalten folgende Informationen:
 

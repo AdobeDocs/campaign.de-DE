@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 90%
+source-wordcount: '686'
+ht-degree: 68%
 ---
 # Anwendungsfall: Bericht zu Antworten auf eine Online-Umfrage anzeigen{#use-case-displaying-report-on-answers-to-an-online-survey}
 
@@ -63,27 +63,27 @@ Voraussetzung für die Durchführung dieses Anwendungsbeispiels sind ein Fragebo
 
 Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
-1. Erstellen Sie einen Workflow mit der Aktivität **[!UICONTROL Umfrageantworten]**. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](publish-track-and-use-collected-data.md#using-the-collected-data).
+1. Erstellen Sie einen Workflow mit der Aktivität **[!UICONTROL Umfrageantworten]**. Weitere Informationen zur Verwendung dieser Aktivität finden Sie unter [Verwenden der erfassten Daten](publish-track-and-use-collected-data.md#using-the-collected-data).
 1. Öffnen Sie die Aktivität und wählen Sie die Umfrage aus, deren Antworten analysiert werden sollen.
 1. Aktivieren Sie die Option **[!UICONTROL Alle Antwortdaten auswählen]**, um alle verfügbaren Informationen abzurufen.
 
-   ![](assets/reporting_usecase_1_01.png)
+   ![Aktivität „Umfrageantworten“ im Workflow „Online-Umfrage“ mit ausgewählter Umfrage und aktivierter Option „Alle Antwortdaten auswählen“](assets/reporting_usecase_1_01.png)
 
 1. Zu extrahierende Spalten auswählen (in diesem Fall alle archivierten Felder auswählen). Dies sind die Felder, die die Antworten enthalten.
 
-   ![](assets/reporting_usecase_1_02.png)
+   ![Dialogfeld „Zusätzliche Spalten auswählen“ zur Auswahl der archivierten Felder, die den Ausgabespalten hinzugefügt werden sollen.](assets/reporting_usecase_1_02.png)
 
 1. Fügen Sie nach der Konfiguration des Antwortenabrufs eine Aktivität vom Typ **[!UICONTROL Listen-Update]** hinzu, um die abgerufenen Daten zu speichern.
 
-   ![](assets/reporting_usecase_1_04.png)
+   ![Workflow mit einer Aktivität vom Typ „Umfrageantworten“, die durch eine Ergebnisübergabe mit einer Aktivität vom Typ „Listen-Update“ verknüpft ist.](assets/reporting_usecase_1_04.png)
 
    Geben Sie in dieser Aktivität die zu aktualisierende Liste an und deaktivieren Sie die Option **[!UICONTROL Wenn sie existiert, Liste leeren und erneut verwenden (nicht vervollständigen)]**: Die Antworten werden so der vorhandenen Tabelle hinzugefügt. Mit dieser Option können Sie auf die Liste in einem Cube verweisen. Das mit der Liste verknüpfte Schema wird nicht bei jeder Aktualisierung neu generiert. Dadurch wird die Integrität des Cubes garantiert, der diese Liste verwendet.
 
-   ![](assets/reporting_usecase_1_03.png)
+   ![Das Dialogfeld „Listen-Update“ mit der Option „Löschen“ und „Wenn vorhanden, Liste wiederverwenden“ ist deaktiviert, sodass Antworten zur Liste hinzugefügt werden.](assets/reporting_usecase_1_03.png)
 
 1. Speichern und starten Sie den Workflow, um die Konfiguration zu beenden.
 
-   ![](assets/reporting_usecase_1_05.png)
+   ![Online-Umfrage-Workflow-Diagramm mit Umfrageantworten, die mit der Listen-Aktualisierung verbunden sind, startbereit.](assets/reporting_usecase_1_05.png)
 
    Die angegebene Liste wird daraufhin erstellt und mit dem Schema der Umfrageantworten ergänzt.
 
@@ -97,11 +97,11 @@ Erstellen Sie anschließend den Cube und konfigurieren Sie seine Kennzahlen: Sie
 
 Im vorliegenden Beispiel basiert der Cube auf den Daten der Liste, die im zuvor erstellten Workflow angereichert wird.
 
-![](assets/reporting_usecase_2_01.png)
+![Cube-Dialog Antwortet auf eine Online-Umfrage mit ausgewählter Liste Verwenden und der WEB-REP-Liste als Faktenliste.](assets/reporting_usecase_2_01.png)
 
 Definieren Sie die im Bericht anzuzeigenden Dimensionen und Kennzahlen. Im Beispiel werden das Vertragsdatum und das Land des Antwortenden angezeigt.
 
-![](assets/reporting_usecase_2_02.png)
+![Registerkarte Cube-Dimensionen mit Land und Abteilung und Registerkarte Kennzahlen mit Beantwortet, Vertrag von 2016 und Vertrag von 2017.](assets/reporting_usecase_2_02.png)
 
 Im **[!UICONTROL Vorschau]**-Tab können Sie die Anzeige des Berichts überprüfen.
 
@@ -109,8 +109,8 @@ Im **[!UICONTROL Vorschau]**-Tab können Sie die Anzeige des Berichts überprüf
 
 Erstellen Sie anschließend einen auf dem Cube basierenden Bericht, um dessen Informationen zu nutzen.
 
-![](assets/reporting_usecase_3_01.png)
+![Erstellen einer neuen Berichtsseite mit ausgewählter Vorlage „Antworten Online-Umfrage-Cube“ und der Schaltfläche „Erstellen“.](assets/reporting_usecase_3_01.png)
 
 Passen Sie die anzuzeigenden Informationen entsprechend Ihren Bedürfnissen an.
 
-![](assets/reporting_usecase_3_02.png)
+![Tabelle mit Online-Umfrageberichten zu den Vertragszahlen der Jahre 2016 und 2017 nach Ländern, mit der Dimension „Land“ in den Zeilen.](assets/reporting_usecase_3_02.png)

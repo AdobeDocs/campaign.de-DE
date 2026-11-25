@@ -26,10 +26,10 @@ feature_v2:
 subfeature_v2:
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 85%
 ---
 # Beispiel einer Erweiterung{#extension-example}
 
@@ -41,12 +41,12 @@ Im Fall eines eingehenden Kontakts (Callcenter oder Webseite) bestimmt das Angeb
 
   Im folgenden Beispiel wurden der Ländercode und die zuletzt besuchte Webseite hinzugefügt:
 
-  ![](assets/s_ncs_configuration_offer_schemas.png)
+  ![Schema für Interaktionsdaten mit Ländercode und Attributen für zuletzt besuchte Seiten hinzugefügt.](assets/s_ncs_configuration_offer_schemas.png)
 
 * Im Anschluss an die Erweiterung können Sie die neuen Attribute in der Definition der Eignungsregeln verwenden.
 
   Im vorliegenden Beispiel werden Eignungskriterien erstellt, die das Land und die zuletzt besuchte Seite des Kontakts berücksichtigen.
 
-  ![](assets/s_ncs_configuration_offer_context.png)
+  ![Eignungsabfrage-Editor mit den Feldern „Länder-Code“ und „Zuletzt besuchte Seiten-Interaktion“, die als Kriterien auswählbar sind.](assets/s_ncs_configuration_offer_context.png)
 
 * Fügen Sie bei der Konfiguration der SOAP-Aufrufe das XML-Element **context** ein, um die kontextbezogenen Informationen, um die Sie zuvor das Interaction-Schema erweitert haben, zu referenzieren. Weitere Informationen hierzu finden Sie unter [Integration mittels SOAP (Server-seitig)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"} (Dokumentation zu Campaign v8).

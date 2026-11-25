@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 91%
+source-wordcount: '1655'
+ht-degree: 90%
 ---
 # Verwalten von Echtzeit-Interaktionen
 
@@ -42,7 +42,7 @@ Sie können einen Angebotskatalog erstellen, der mit Ihren ausgehenden Kanälen 
 
 Interaction ermöglicht Ihnen die Erstellung und Verwaltung eines Angebotskatalogs sowie die Konfiguration der Eignungsregeln und der mit ihnen verknüpften Anwendungsthemen. Je nach ausgewähltem Kanal kann der Angebotsinhalt mithilfe verschiedener Rendering-Funktionen personalisiert werden. Schließlich können Sie das Simulationsmodul verwenden, um die Wirkung einer Angebotsunterbreitung zu berechnen.
 
-![](assets/interaction-cycle.png)
+![Angebotsmodul-Zyklus: Engine-Aufruf, Katalogaufruf, Auswahl und Personalisierung, Verlauf, Angebotsunterbreitung](assets/interaction-cycle.png)
 
 Zunächst erfolgt ein Kontakt zwischen einem Kunden und einem Unternehmen über einen Kommunikationskanal: Es kann sich um eine Website (eingehende Interaktion), eine E-Mail, SMS, Push-Benachrichtigung (ausgehende Interaktionen) handeln. [Weitere Informationen](#interaction-types)
 
@@ -76,7 +76,7 @@ Wenn eine Platzierung in einem Einzelmodus-Kanal als identifiziert definiert wur
 
 1. Konfigurieren Sie das Angebotsmodul für eingehende Interaktionen, um ein oder mehrere Angebote zu unterbreiten und zu aktualisieren.
 
-   Die verschiedenen Integrationsmodi werden in [diesem Abschnitt](interaction-present-offers.md) behandelt.
+   Die verschiedenen Integrationsmodi werden unter [Angebot unterbreiten (eingehende Interaktion) beschrieben](interaction-present-offers.md).
 
    >[!NOTE]
    >

@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 66%
+source-wordcount: '251'
+ht-degree: 59%
 ---
 # Erste Schritte mit Web-Anwendungen und Web-Formularen{#gs-ac-web}
 
@@ -42,12 +42,12 @@ ht-degree: 66%
 
 Adobe Campaign verfügt über ein Grafikmodul zur Definition und Veröffentlichung von **Web-Formularen**, um Seiten mit Eingabe- und Auswahlfeldern zu erstellen, die Daten aus der Datenbank enthalten können. Auf diese Weise können Sie Web-Seiten entwerfen und posten, auf die Benutzer zugreifen können, um Informationen anzuzeigen oder einzugeben.
 
-In (diesem Abschnitt) erfahren Sie[&#x200B; wie Sie Web-Formulare erstellen &#x200B;](web/about-web-forms.md) veröffentlichen.
+Erfahren Sie, wie Sie Web-Formulare in erstellen [&#x200B; veröffentlichen (Erste Schritte mit Web-Formularen](web/about-web-forms.md).
 
-![](assets/sample.png)
+![Beispiel eines Web-Formulars für ein E-Mail-Newsletter-Abonnement mit Feldern für E-Mail, Name und Land und der Schaltfläche Abonnieren.](assets/sample.png)
 
 Adobe Campaign ermöglicht es Ihnen, mit Daten aus der Datenbank dynamische und interaktive **Web-Anwendungen** zu erstellen und zu veröffentlichen, wobei die Inhalte auf die jeweiligen Benutzerrechte abgestimmt sind.
 
 Sie können Seiten erstellen, wie ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare mit Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. Diese Funktionalität ermöglicht Ihnen das Entwerfen und Posten von Web-Seiten, auf denen Benutzende Informationen suchen oder eingeben können.
 
-Erfahren Sie in (diesem Abschnitt[, wie Sie Web-Anwendungen erstellen und &#x200B;](web/about-web-applications.md).
+Erfahren Sie, wie Sie Web-Anwendungen in erstellen [&#x200B; veröffentlichen (Erste Schritte mit Web-Anwendungen](web/about-web-applications.md).

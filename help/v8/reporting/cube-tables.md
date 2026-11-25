@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 82ae202007873dab2324bfa4b13a6014efd19887
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 93%
+source-wordcount: '1315'
+ht-degree: 70%
 ---
 # Verwenden von Cubes zur Datenanalyse{#use-cubes-to-create-reports}
 
@@ -52,17 +52,17 @@ Gehen Sie wie folgt vor, um einen auf einem vorhandenen Cube basierenden Bericht
 
 1. Klicken Sie im Tab **[!UICONTROL Berichte]** auf die Schaltfläche **[!UICONTROL Erstellen]** und wählen Sie den zuvor erstellten Cube aus.
 
-   ![](assets/new-report-based-on-cube.png)
+   ![Erstellen einer neuen Berichtsseite mit ausgewählter Vorlage „Neuer Clientprofil-Cube“ und der Schaltfläche „Erstellen“](assets/new-report-based-on-cube.png)
 
 1. Klicken Sie zur Bestätigung auf die Schaltfläche **[!UICONTROL Erstellen]**: Der Bildschirm zur Konfiguration und Ansicht des Berichts wird geöffnet.
 
    Die ersten beiden verfügbaren Dimensionen werden standardmäßig in Zeilen und Spalten angezeigt, die Tabelle enthält jedoch keine Werte. Um die Tabelle zu generieren, klicken Sie auf das Hauptsymbol:
 
-   ![](assets/cube-report-config.png)
+   ![Neuer Client-Profilbericht mit Alter- und Erstellungsdatumsachsen und dem Symbol zur Anzeige der Pivot-Tabelle](assets/cube-report-config.png)
 
 1. Sie können die Achsen der Dimension wechseln, löschen, neue Kennzahlen hinzufügen usw. Verwenden Sie dazu die entsprechenden Symbole.
 
-   ![](assets/cube-switch-axis.png)
+   ![Dimension Erstellungsdatum von der linken Achse auf die obere Achse neben Alter im Bericht Neues Kundenprofil gezogen](assets/cube-switch-axis.png)
 
    Diese Vorgänge werden nachfolgend beschrieben.
 
@@ -72,15 +72,15 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
 Über die oberhalb der jeweiligen Achse gelegenen **[!UICONTROL Hinzufügen]**-Schaltflächen können weitere Dimensionen hinzugefügt werden.
 
-![](assets/cube-switch.png)
+![Schaltfläche „Hinzufügen“ auf der Zeilenachse des Berichts „Neues Kundenprofil“ zum Hinzufügen einer Dimension](assets/cube-switch.png)
 
 1. Wählen Sie die Dimensionen aus, die in den Zeilen und Spalten der Tabelle angezeigt werden sollen. Verwenden Sie dazu Drag-and-Drop für die verfügbaren Dimensionen.
 1. Wählen Sie die der Tabelle hinzuzufügende Dimension aus den verfügbaren Dimensionen aus:
-   ![](assets/cube-select-dimension.png)
+   ![Fügen Sie eine Dimension zum Spalten-Dialogfeld hinzu, in dem Stadt, Land, Datum des letzten Kaufs und Kaufbetrag aufgeführt sind](assets/cube-select-dimension.png)
 
 1. Legen Sie die Parameter dieser Dimension fest.
 
-   ![](assets/cube-dimension-param.png)
+   ![Dimension-Einstellungen für Stadt: Beschriftung, beim Laden erweitern, Daten sortieren, Reihenfolge und Anzahl der angezeigten Zeilen](assets/cube-dimension-param.png)
 
    Diese Parameter hängen vom Datentyp der ausgewählten Dimension ab.
 
@@ -88,7 +88,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
    In diesem Fall sind die folgenden Optionen verfügbar:
 
-   ![](assets/cube-config.png)
+   ![Einstellungen für Datumsdimensionen pro Ebene, Jahr und Monat, einschließlich Format „Lang“ oder „Kurz“](assets/cube-config.png)
 
    Sie können
 
@@ -102,7 +102,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
    Das gelbe Banner oberhalb der Tabelle zeigt an, dass Sie Änderungen vorgenommen haben. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, wenn diese berücksichtigt werden sollen.
 
-   ![](assets/cube-in-report.png)
+   ![Stadt wurde zur Linienachse hinzugefügt, wobei das gelbe Banner Sie auffordert, die Berichtsänderungen zu speichern](assets/cube-in-report.png)
 
 ### Schritt 3: Konfiguration der anzuzeigenden Kennzahlen {#step-3---configure-the-measures-to-display}
 
@@ -112,25 +112,25 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Kennzahlen]**.
 
-   ![](assets/cube-measure-button.png)
+   ![Schaltfläche Kennzahlen zum Öffnen des Dialogfelds Kennzahlen konfigurieren mit Beschriftungs-, Formatierungs- und Einheitenoptionen](assets/cube-measure-button.png)
 
 1. Wählen Sie mit **[!UICONTROL Schaltfläche Kennzahl verwenden]** eine der vorhandenen Kennzahlen aus.
 
-   ![](assets/cube-add-measure.png)
+   ![Fügen Sie eine vorhandene Kennzahl in das Dialogfeld Pivot-Tabelle ein, in dem Französisch, Deutsch, Männer und Frauen aufgelistet sind](assets/cube-add-measure.png)
 
    Wählen Sie die anzuzeigenden Informationen und die Formatierungsoptionen aus. Die Liste der Optionen hängt vom Typ der Kennzahl ab.
 
-   ![](assets/cube-measure-options.png)
+   ![Konfigurieren Sie den Dialog Kennzahlen mit den Formatierungsoptionen Zahl und Prozentsatz und bearbeiten Sie die Schaltfläche Dynamische Kennzahl &#x200B;](assets/cube-measure-options.png)
 
    Eine übergreifende Konfiguration der Kennzahlen ist über das Symbol **[!UICONTROL Konfiguration der Pivot-Tabelle bearbeiten]** möglich.
 
-   ![](assets/cube-pivot-table-config.png)
+   ![Bearbeiten Sie das Symbol Pivot-Tabellenkonfiguration in der Berichtssymbolleiste](assets/cube-pivot-table-config.png)
 
    Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. [Weitere Informationen](customize-cubes.md#configuring-the-display).
 
 1. Sie können neue Kennzahlen auf Basis bestehender erstellen. Klicken Sie dazu auf **[!UICONTROL Kennzahl erstellen]** und konfigurieren Sie diese.
 
-   ![](assets/cube-create-new-measure.png)
+   ![Erstellen eines dynamischen Kennzahldialogfelds mit der Kombination aus Kennzahlentyp, Operator und zwei Kennzahlen](assets/cube-create-new-measure.png)
 
    Folgende Kennzahltypen sind möglich:
 
@@ -144,7 +144,7 @@ Gehen Sie wie folgt vor, um Kennzahlen hinzuzufügen und zu konfigurieren:
 
    Sobald die Kennzahl erstellt ist, wird sie dem Bericht hinzugefügt.
 
-   ![](assets/cube-display-new-measure.png)
+   ![Pivot-Tabelle, die die neue Kennzahl Deutsch &amp; Englisch neben Männer und Frauen zeigt, nach Unternehmen](assets/cube-display-new-measure.png)
 
    Sobald Sie eine Kennzahl erstellt haben, können Sie sie bearbeiten und ihre Konfiguration ändern. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Kennzahlen]** und navigieren Sie zur Registerkarte der zu bearbeitenden Kennzahl.
 
@@ -158,31 +158,31 @@ Gehen Sie wie folgt vor, um eine Population in einer Liste zu gruppieren:
 
 1. Markieren Sie durch Klick die Zellen, die die abzurufenden Populationen enthalten, und klicken Sie auf das Symbol **[!UICONTROL Zum Warenkorb hinzufügen]**.
 
-   ![](assets/cube-add-to-cart.png)
+   ![Symbol „Zum Warenkorb hinzufügen“ in der Symbolleiste der Pivot-Tabelle CLIENTS mit ausgewählten Zellen](assets/cube-add-to-cart.png)
 
    Wiederholen Sie diesen Vorgang so oft wie nötig, um verschiedene Profile zu erfassen.
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Warenkorb anzeigen]**, um den Inhalt einzusehen, bevor er exportiert wird.
 
-   ![](assets/cube-show-cart.png)
+   ![Schaltfläche „Warenkorb anzeigen“, die das Dialogfeld „Warenkorbdetails“ mit den Warenkorbartikeln und der Schaltfläche „Exportieren“ öffnet](assets/cube-show-cart.png)
 
 1. Verwenden Sie die Schaltfläche **[!UICONTROL Exportieren]**, um die Artikel im Warenkorb in einer Liste zu gruppieren.
 
    Geben Sie den Namen der Liste an und wählen Sie den gewünschten Exporttyp aus.
 
-   ![](assets/cube-export-report.png)
+   ![Dialogfeld „Warenkorb 1/2 exportieren“ mit „In neue Liste exportieren“, „Beschriftung“, „Ordner und Exporttyp“ und „Start“-Schaltfläche](assets/cube-export-report.png)
 
    Klicken Sie auf **[!UICONTROL Starten]**, um mit dem Export zu beginnen.
 
 1. Nach Abschluss des Exports bestätigt eine Nachricht seine korrekte Ausführung und die Anzahl der verarbeiteten Datensätze.
 
-   ![](assets/cube-export-confirm.png)
+   ![Dialogfeld „Warenkorb 2/2 exportieren“, das den Abschluss des Exports mit der Anzahl der Datensätze bestätigt, und die Schaltflächen „Schließen“](assets/cube-export-confirm.png)
 
    Sie können den Inhalt des Warenkorbs beibehalten oder löschen.
 
    Die neue Liste ist über die Registerkarte **[!UICONTROL Profile und Ziele]** verfügbar.
 
-   ![](assets/cube-list-available.png)
+   ![Listenseite unter Profile und Zielgruppen mit der neuen GOLD-Empfängerliste](assets/cube-list-available.png)
 
 ## Einfügen von Pivot-Tabellen in Berichte {#insert-a-pivot-table-into-a-report}
 
@@ -190,10 +190,10 @@ Um eine Tabelle zu erstellen und die Daten in einem Cube zu erkunden, gehen Sie 
 
 1. Erstellen Sie einen neuen Bericht mit einer einzigen Seite und fügen Sie eine Pivot-Tabelle ein.
 
-   ![](assets/cube-insert-in-report.png)
+   ![Berichtseditor mit der Aktivität Seite und der Option Pivot-Tabelle im Symbolleistenmenü](assets/cube-insert-in-report.png)
 
 1. Im Tab **[!UICONTROL Daten]** haben Sie die Möglichkeit, einen existierenden Cube auszuwählen. Auf diese Weise werden automatisch die Dimensionen und Kennzahlen angezeigt, die zuvor konfiguriert wurden.
 
-   ![](assets/cube-selected-in-report.png)
+   ![Registerkarte „Daten“ der Pivot-Tabelle mit dem im Feld Cube ausgewählten Cube „Neues Kundenprofil“](assets/cube-selected-in-report.png)
 
    Auf diese Weise können Sie den anzuzeigenden Bericht erstellen. Weitere Informationen finden Sie unter [Schritt 2: Auswahl der Zeilen und Spalten](#step-2---select-lines-and-columns).

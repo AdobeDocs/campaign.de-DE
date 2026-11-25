@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 94%
+source-wordcount: '878'
+ht-degree: 80%
 ---
 # Erstellen einer E-Mail-Vorschau und Testen einer E-Mail {#preview-test}
 
@@ -41,11 +41,11 @@ Gehen Sie wie folgt vor, um eine Vorschau des Nachrichteninhalts anzuzeigen:
 1. Navigieren Sie zur Registerkarte **Vorschau** des Versands.
 1. Klicken Sie auf **[!UICONTROL Personalisierung testen]**, um ein Profil zum Ausfüllen der Personalisierungsdaten auszuwählen. Sie können eine bestimmte Empfängerin bzw. einen Empfänger in der Datenbank oder eine Testadresse auswählen oder ein Profil aus der Zielpopulation auswählen, sofern diese bereits definiert worden ist. Sie können den Inhalt auch ohne Personalisierung überprüfen.
 
-   ![](assets/test-personalization.png)
+   ![Personalisierungsmenü testen auf der Registerkarte „Vorschau“: Empfänger, Testadresse, Zielgruppe des Versands, keine Personalisierung](assets/test-personalization.png)
 
 1. Die Vorschau wird erzeugt, damit Sie das Rendern der Nachricht überprüfen können. In der Nachrichtenvorschau werden personalisierte Elemente durch die ausgewählten Testprofildaten ersetzt.
 
-   ![](assets/test-personalization-with-a-recipient.png)
+   ![E-Mail-Vorschau mit Betreff und Überschrift, die mit dem Vornamen des ausgewählten Testprofils personalisiert wurde](assets/test-personalization-with-a-recipient.png)
 
 1. Wählen Sie weitere Testprofile aus, um das E-Mail-Rendering für jede Variante Ihrer Nachricht in der Vorschau anzuzeigen.
 
@@ -59,7 +59,7 @@ Ein Testversand dient der Validierung einer Nachricht, bevor sie an die Haupt-Zi
 
 Die Testversand-Zielgruppe kann in der Versandvorlage oder versandspezifisch definiert werden. Navigieren Sie in beiden Fällen über den Link **[!UICONTROL An]** zum Bildschirm der Zielgruppenbestimmung und wählen Sie die Registerkarte **[!UICONTROL Testversand-Zielgruppe]** aus.
 
-![](assets/target-of-proofs.png)
+![Wählen Sie das Zielgruppen-Dialogfeld, die Registerkarte Testversand-Zielgruppe , mit der Dropdown-Liste Zielgruppenbestimmungsmodus und der Schaltfläche Hinzufügen &#x200B;](assets/target-of-proofs.png)
 
 Der Typ der Testversand-Zielgruppe wird aus der Dropdown-Liste **[!UICONTROL Zielgruppenbestimmungsmodus]** ausgewählt.
 
@@ -68,11 +68,11 @@ Der Typ der Testversand-Zielgruppe wird aus der Dropdown-Liste **[!UICONTROL Zie
 
   Standardmäßig wird die Ersetzung nach dem Zufallsprinzip durchgeführt. Sie können jedoch eine bestimmte Empfängerin oder einen bestimmten Empfänger aus der Hauptzielgruppe über das **[!UICONTROL Detail]**-Symbol auswählen.
 
-  ![](assets/target-of-proofs-substitution-details.png){width="800"}
+  ![Adressenmodus mit den Testversand-Adressen durch das Detailsymbol zur Auswahl eines bestimmten Profils ersetzen](assets/target-of-proofs-substitution-details.png){width="800"}
 
   Wählen Sie die Option **[!UICONTROL Profil auswählen (muss Teil der Zielgruppe sein)]** und wählen Sie eine Empfängerin oder einen Empfänger aus.
 
-  ![](assets/target-of-proofs-substitution.png){width="800"}
+  ![Dialogfeld „Standby-Testversand-Empfänger“ mit der Option Profil auswählen und einem aus der Liste ausgewählten Empfänger](assets/target-of-proofs-substitution.png){width="800"}
 
 
 * Verwenden Sie die Option **[!UICONTROL Testadressen]** zur Verwendung von Testadressen als Testversand-Zielgruppe. Diese Adressen können aus einer Datei importiert oder manuell eingegeben werden.
@@ -81,7 +81,7 @@ Der Typ der Testversand-Zielgruppe wird aus der Dropdown-Liste **[!UICONTROL Zie
   >
   >Testadressen gehören nicht zur Standard-Empfängertabelle (nms), :recipient werden in einer separaten Tabelle erstellt. Wenn Sie die Empfängertabelle um neue Daten erweitern, müssen Sie die Testadressen-Tabelle ebenfalls um die gleichen Daten erweitern.
 
-  Weitere Informationen zu Testadressen finden Sie in [diesem Abschnitt](../audiences/test-profiles.md).
+  Weitere Informationen zu Testadressen finden Sie unter [Erstellen von Testprofilen in Campaign](../audiences/test-profiles.md).
 
 * Verwenden Sie die Option **[!UICONTROL Spezifische Zielgruppen und Testadressen]** zur Kombination von Testadressen und spezifischen E-Mail-Adressen. Die entsprechenden Konfigurationen werden dann in zwei separaten Unterregisterkarten definiert.
 
@@ -93,7 +93,7 @@ Gehen Sie wie folgt vor, um einen Testversand durchzuführen:
 1. Überprüfen Sie im Fenster **[!UICONTROL Testversand durchführen]** die Empfängerinnen und Empfänger des Testversands.
 1. Klicken Sie auf **[!UICONTROL Analysieren]**, um die Vorbereitung der Testversand-Nachricht zu starten.
 
-   ![](assets/send-proof-analyze.png){width="800"}
+   ![Testversand-Fenster mit Ersatzadressen durchführen und das Versandanalyseprotokoll nach dem Klick auf „Analysieren“ ausführen](assets/send-proof-analyze.png){width="800"}
 
 1. Sobald die Versandvorbereitung abgeschlossen ist, verwenden Sie die Option **[!UICONTROL Versand bestätigen]**, um mit dem Versand von Testversandnachrichten zu beginnen.
 
@@ -115,7 +115,7 @@ Die Eigenschaften des Testversands werden im **[!UICONTROL der Versandeigenschaf
 
 Standardmäßig werden Testversandnachrichten durch die Variable `Proof #N` im Betreff identifiziert. Dabei ist `N` die Nummer des Testversands. Diese Nummer wird bei jeder Analyse des Testversands erhöht. Sie können das Präfix `proof` bei Bedarf ändern.
 
-![](assets/proof-parameters.png){width="800"}
+![Das Dialogfeld „Eigenschaften von Korrekturabzug“ auf der Registerkarte „Erweitert“ mit Korrekturabzugsoptionen und dem Feld „Titelpräfix“, das auf „Korrekturabzug“ festgelegt ist](assets/proof-parameters.png){width="800"}
 
 
 ## Anleitungsvideo {#video-proof}

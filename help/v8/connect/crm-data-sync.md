@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 100%
+source-wordcount: '1623'
+ht-degree: 85%
 ---
 # Daten zwischen Campaign und Ihrem CRM-System synchronisieren {#data-synchronization}
 
@@ -40,13 +40,13 @@ Die Datensynchronisation zwischen Adobe Campaign und Ihrem CRM wird von der Work
 
 Erstellen Sie zum Importieren der Daten aus Microsoft Dynamics in Adobe Campaign beispielsweise folgenden Workflow:
 
-![](assets/ms-dyn-wf.png)
+![MS Dynamics-Workflow importieren: CRM-Connector, Anreicherung, Deduplizierung und Datenaktualisierungsaktivitäten in Folge](assets/ms-dyn-wf.png)
 
 Dieser Workflow importiert die Kontakte über Microsoft Dynamics, synchronisiert sie mit den in Adobe Campaign vorhandenen Daten, löscht doppelte Kontakte und aktualisiert die Adobe Campaign-Datenbank.
 
 Die Aktivität **[!UICONTROL CRM-Connector]** muss für die Synchronisation der Daten konfiguriert werden.
 
-![](assets/crm-connector-ms-dyn.png)
+![Die Aktivität „CRM-Connector“ wurde auf den Import aus CRM mit Microsoft Dynamics CRM-, Kontaktobjekt- und Remote-Feldern festgelegt](assets/crm-connector-ms-dyn.png)
 
 Mit dieser Aktivität können Sie:
 
@@ -55,11 +55,11 @@ Mit dieser Aktivität können Sie:
 * Objekte importieren, die im CRM gelöscht wurden – [Weitere Informationen](#importing-objects-deleted-in-the-crm)
 * Objekte im CRM löschen – [Weitere Informationen](#deleting-objects-in-the-crm)
 
-![](assets/crm-remote-op.png)
+![CRM-Connector-Typ-Liste mit Import aus CRM, Export in CRM, Import von im CRM gelöschten Objekten und Löschen von Objekten](assets/crm-remote-op.png)
 
 Wählen Sie zunächst das externe Konto aus, das dem CRM-System entspricht, mit dem Sie eine Synchronisation konfigurieren möchten, und anschließend das zu synchronisierende Objekt: Konto, Opportunities, Leads, Kontakte usw.
 
-![](assets/crm-remote-obj.png)
+![CRM-Connector-Remote-Objektliste für Salesforce CRM mit ausgewähltem Kontakt](assets/crm-remote-obj.png)
 
 Die Konfiguration dieser Aktivität hängt von dem auszuführenden Prozess ab. Die verschiedenen Konfigurationen werden nachfolgend beschrieben.
 
@@ -67,7 +67,7 @@ Die Konfiguration dieser Aktivität hängt von dem auszuführenden Prozess ab. D
 
 Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muster zu erstellen:
 
-![](assets/crm-wf-import.png)
+![Import-Workflow mit einem Benutzer-CRM-Connector, Auswahl des Ordners, Benutzeraktualisierung und Speicherung der letzten Benutzeraktualisierungsaktivitäten](assets/crm-wf-import.png)
 
 1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Import aus CRM]**.
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Remote-Objekt]** das zu importierende Objekt aus. Dieses Objekt entspricht einer der Tabellen, die bei der Connector-Konfiguration in Adobe Campaign erstellt wurden.
@@ -75,7 +75,7 @@ Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muste
 
    Um ein Feld hinzuzufügen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** in der Symbolleiste und anschließend auf **[!UICONTROL Ausdruck bearbeiten]**.
 
-   Falls nötig, kann das Datenformat über die Dropdown-Liste der Spalte **[!UICONTROL Konvertierung]** geändert werden. Mögliche Konvertierungstypen werden in [diesem Abschnitt](#data-format) beschrieben.
+   Falls nötig, kann das Datenformat über die Dropdown-Liste der Spalte **[!UICONTROL Konvertierung]** geändert werden. Mögliche Konvertierungen werden im Abschnitt [Datenformat](#data-format) beschrieben.
 
    >[!CAUTION]
    >
@@ -87,21 +87,21 @@ Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muste
 
    Im folgenden Beispiel importiert Adobe Campaign nur Kontakte, die nach dem 1. November 2021 aktiv waren.
 
-   ![](assets/crm-task-import-filter.png)
+   ![Dialog „Filter bearbeiten“ mit der Bedingung Letzte Aktivität nach 12/01/2021 für den Import des CRM-Connectors](assets/crm-task-import-filter.png)
 
    >[!CAUTION]
    >
-   >Einschränkungen in Bezug auf Datenfiltermodi werden in [ diesem Abschnitt](#filtering-data) beschrieben.
+   >Einschränkungen in Bezug auf Datenfiltermodi werden unter [Filterdaten“ &#x200B;](#filtering-data).
 
 1. Wählen Sie die Option **[!UICONTROL Automatischen Index verwenden...]** aus, um die inkrementelle Synchronisation der Objekte zwischen dem CRM-System und Adobe Campaign in Abhängigkeit vom letzten Änderungsdatum automatisch zu verwalten.
 
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#variable-management).
+   Weitere Informationen hierzu finden Sie unter [Variablen verwalten](#variable-management).
 
 ### Variablen verwalten {#variable-management}
 
 Aktivieren Sie die Option **[!UICONTROL Automatischer Index]**, um nur die seit dem letzten Import geänderten Objekte abzurufen.
 
-![](assets/use-auto-index.png)
+![Verwenden Sie das Dialogfeld „Automatischer Index“ mit der Option „Automatischer Index“, dem Optionsnamen und dem Indexfeld „LastReferencesDate“](assets/use-auto-index.png)
 
 Das Datum der letzten Synchronisation wird in einer im Konfigurationsfenster angezeigten Option gespeichert. Standardmäßig ist dies: **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**.
 
@@ -149,7 +149,7 @@ Klicken Sie hierfür auf **[!UICONTROL Sortierreihenfolge]** und fügen Sie die 
 
 Die Spaltenreihenfolge der Liste zeigt die Sortierreihenfolge an:
 
-![](assets/crm-import-order.png)
+![Sortieren Sie im Dialog nach Stufe__c in absteigender Reihenfolge und dann nach MailingCity](assets/crm-import-order.png)
 
 ### Datensatz-Identifizierung {#record-identification}
 
@@ -159,7 +159,7 @@ Kreuzen Sie hierfür die Option **[!UICONTROL Die zuvor berechnete Population ve
 
 Wählen Sie anschließend die aus der Eingangspopulation zu importierenden Felder wie in unten stehendem Beispiel aus:
 
-![](assets/use-population-calc-upstream.png)
+![CRM-Connector mit Verwenden der zuvor berechneten Population und der zuvor ausgewählten Remote-Felder AccountId und Id](assets/use-population-calc-upstream.png)
 
 ## Export in das CRM {#exporting-to-the-crm}
 
@@ -167,7 +167,7 @@ Exportieren Sie Adobe Campaign-Daten in Ihr CRM-System, um die gesamten Inhalte 
 
 Um Daten in Ihr CRM zu exportieren, erstellen Sie den folgenden Workflow-Typ:
 
-![](assets/crm-export-diagram.png)
+![CRM-Export-Workflow: Planung, Abfrage zu Leads zum Export, Export von Lead-MScrm-Connector und Update-Leads](assets/crm-export-diagram.png)
 
 1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Export in das CRM]**.
 1. Gehen Sie zur Dropdown-Liste **[!UICONTROL Remote-Objekt]** und wählen Sie das zu exportierende Objekt aus. Dieses Objekt entspricht einer der Tabellen, die bei der Connector-Konfiguration in Adobe Campaign erstellt wurden.
@@ -178,7 +178,7 @@ Um Daten in Ihr CRM zu exportieren, erstellen Sie den folgenden Workflow-Typ:
 
 1. Wenn Sie schnellere Exporte durchführen müssen, markieren Sie die Option **[!UICONTROL In Batches exportieren]**.
 
-   ![](assets/crm-export-batch.png)
+   ![CRM-Connector auf „In CRM exportieren“ eingestellt, wobei die Option „In Batches exportieren“ ausgewählt ist](assets/crm-export-batch.png)
 
 1. Klicken Sie im Abschnitt **[!UICONTROL Mapping]** auf **[!UICONTROL Neu]**, um die zu exportierenden Felder und ihre Zuordnung im CRM anzugeben.
 
@@ -188,7 +188,7 @@ Um Daten in Ihr CRM zu exportieren, erstellen Sie den folgenden Workflow-Typ:
    >
    >Wenn für ein Feld keine Übereinstimmung definiert ist, können die Werte nicht aktualisiert werden: sie werden direkt in das CRM-System eingefügt.
 
-   Falls nötig, kann das Datenformat über die Dropdown-Liste der Spalte **[!UICONTROL Konvertierung]** geändert werden. Mögliche Konvertierungstypen werden in [diesem Abschnitt](#data-format) beschrieben.
+   Falls nötig, kann das Datenformat über die Dropdown-Liste der Spalte **[!UICONTROL Konvertierung]** geändert werden. Mögliche Konvertierungen werden im Abschnitt [Datenformat](#data-format) beschrieben.
 
    >[!NOTE]
    >
@@ -202,7 +202,7 @@ Es besteht die Möglichkeit, das Datenformat beim Import aus dem oder beim Expor
 
 Wählen Sie hierzu in der entsprechenden Spalte die anzuwendende Konvertierung aus.
 
-![](assets/crm-task-import.png)
+![Remote-Feld CreatedDate mit Konvertierungsliste: Standard, Nur Datum, Ohne Zeitversatz, Kopieren/Einfügen](assets/crm-task-import.png)
 
 Im Modus **[!UICONTROL Standard]** wird eine automatische Datenkonvertierung durchgeführt, die in den meisten Fällen einem Kopieren und Einfügen der Daten entspricht. Die Zeitzonenverwaltung wird jedoch angewendet.
 
@@ -216,11 +216,11 @@ Darüber hinaus sind folgende Konvertierungen möglich:
 
 Im Rahmen von Datenimporten oder -exporten können Sie einen spezifischen Prozess auf Fehler und Zurückweisungen anwenden. Wählen Sie dazu die Optionen **[!UICONTROL Zurückweisungen in einer Datei speichern]** und **[!UICONTROL Fehler verarbeiten]** in der Registerkarte **[!UICONTROL Verhalten]** aus.
 
-![](assets/crm-export-options.png)
+![Registerkarte „Verhalten des CRM-Connectors“ mit der Option Zurückweisungen in einer Datei speichern und Fehler verarbeiten &#x200B;](assets/crm-export-options.png)
 
 Mit diesen Optionen werden die entsprechenden ausgehenden Transitionen hinzugefügt.
 
-![](assets/crm-export-transitions.png)
+![CRM-Connector-Aktivität in einem Workflow mit den ausgehenden Transitionen Fehler, OK, Ablehnen und Weiter](assets/crm-export-transitions.png)
 
 Fügen Sie dann die relevanten Aktivitäten ein, um Daten zu verarbeiten. Fügen Sie beispielsweise die Aktivität **Warten** ein und erstellen Sie einen Zeitplan für weitere Versuche aufgrund von Fehlern.
 

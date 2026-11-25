@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 97%
+source-wordcount: '1192'
+ht-degree: 90%
 ---
 # Integrierte Berichte in Adobe Campaign {#ootb-reports}
 
@@ -57,32 +57,32 @@ Zugriff auf native Campaign-Berichte:
 
 1. Wählen Sie in der Benutzeroberfläche von Adobe Campaign den Tab **[!UICONTROL Berichte]** aus.
 
-   ![](assets/reporting-access-from-home.png)
+   ![Registerkarte „Berichte“ auf der Campaign-Startseite hervorgehoben, wo die Liste Globale Berichte mit den integrierten Berichten angezeigt wird.](assets/reporting-access-from-home.png)
 
 1. Mithilfe des Suchfelds können die angezeigten Berichte gefiltert werden.
 
 1. Durch Klick auf einen Bericht wird dieser geöffnet.
 
-   ![](assets/edit-a-report.png)
+   ![Globale Berichtsliste, die mit dem Suchfeld nach Budget gefiltert wurde und die übereinstimmenden Berichte anzeigt, die geöffnet werden sollen.](assets/edit-a-report.png)
 
 1. Klicken Sie auf **[!UICONTROL Zurück]** oben im Bildschirm, um zur Liste der Berichte zurückzukehren.
 
-   ![](assets/back-button.png)
+   ![Kostenanalysebericht mit hervorgehobener Schaltfläche „Zurück“ oben rechts, um zur Berichtsliste zurückzukehren.](assets/back-button.png)
 
 Kampagnen- oder versandspezifische Berichte können über die jeweiligen Dashboards eingesehen werden.
 
-![](assets/reporting-on-delivery.png)
+![Versand-Dashboard mit hervorgehobenem Link „Berichte“, in dem die Versandberichte aufgeführt sind.](assets/reporting-on-delivery.png)
 
 Der Zugriff auf Berichte über Listen, Dienste, Angebote etc. erfolgt auf die gleiche Weise:
 
-![](assets/reporting-on-offer.png)
+![Listen-Dashboard mit hervorgehobenem Link „Berichte“, um auf die Listenberichte zuzugreifen.](assets/reporting-on-offer.png)
 
 
 ## Versandberichte {#reports-on-deliveries}
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
-Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschnitt](delivery-reports.md).
+Weitere Informationen zum Inhalt dieser Berichte finden Sie unter [Integrierte Adobe Campaign-Versandberichte](delivery-reports.md).
 
 <table> 
  <tbody> 

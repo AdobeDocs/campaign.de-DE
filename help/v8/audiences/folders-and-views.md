@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 89%
+source-wordcount: '825'
+ht-degree: 76%
 ---
 # Verwalten von Ordnern und Ansichten {#folders-and-views}
 
@@ -74,13 +74,13 @@ Klicken Sie zum Erstellen eines Ordners mit der rechten Maustaste auf einen vorh
 
 Um denselben Ordnertyp wie den ausgewählten zu erstellen, wählen Sie die erste Option im Kontextmenü aus. Wählen Sie beispielsweise im Ordner &quot;Empfänger&quot; die Option **[!UICONTROL Neuen Ordner &#39;Empfänger&#39; erstellen]**.
 
-![](assets/create-recipient-folder.png)
+![Kontextmenü des Ordners „Empfänger“ mit hervorgehobener Option „Neuen Ordner „Empfänger“ erstellen“](assets/create-recipient-folder.png)
 
 Sie können den neuen Ordner per Drag-and-drop verschieben, um die Campaign Explorer-Baumstruktur nach Bedarf zu ordnen.
 
 Um einen anderen Ordnertyp zu erstellen, klicken Sie mit der rechten Maustaste auf einen vorhandenen Ordner und wählen Sie **[!UICONTROL Neuen Ordner hinzufügen]**. Je nach den zu speichernden Daten können Sie alle Ordnertypen erstellen.
 
-![](assets/add-new-folder.png)
+![Menü „Neuen Ordner hinzufügen“ mit ausgewähltem Ordnertyp „Listen“](assets/add-new-folder.png)
 
 >[!CAUTION]
 >
@@ -109,15 +109,15 @@ Im folgenden Beispiel erstellen wir einen neuen Ordner, in dem nur US-Sendungen 
 1. Klicken Sie mit der rechten Maustaste auf diesen Ordner und wählen Sie **[!UICONTROL Eigenschaften...]** aus.
 1. Wählen Sie in der Registerkarte **[!UICONTROL Einschränkung]** die Option **[!UICONTROL Dieser Ordner ist eine Ansicht]** aus. Daraufhin werden alle Sendungen in der Datenbank angezeigt.
 
-   ![](assets/this-folder-is-a-view.png)
+   ![Ordnereigenschaften von US-Sendungen mit diesem Ordner sind eine Ansichtsoption, die auf der Registerkarte Einschränkung ausgewählt wurde](assets/this-folder-is-a-view.png)
 
 1. Definieren Sie im mittleren Bereich des Fensters im Abfrage-Editor die Filterkriterien: Nur die dem Filter entsprechenden Sendungen werden im Ordner angezeigt.
 
-   ![](assets/filter-view.png)
+   ![Filterbedingungen auf der Registerkarte „Einschränkung“, die die Ansicht als internen Namen definieren, beginnt mit „US“](assets/filter-view.png)
 
    >[!NOTE]
    >
-   >Auf [dieser Seite](create-filters.md#advanced-filters) erfahren Sie, wie Sie Abfragen erstellen
+   >Erfahren Sie, wie Sie Abfragen in [Erweiterte Filter](create-filters.md#advanced-filters)
 
 
 >[!CAUTION]
@@ -132,7 +132,7 @@ Durchsuchen Sie die **Unterordner** der Ordnereigenschaften, um die Unterordner 
 
 Sie können die Ordner mit den Pfeilen auf der rechten Seite verschieben oder die Option **[!UICONTROL Sortieren der Unterordner in alphabetischer Reihenfolge]** auswählen, um sie automatisch zu sortieren.
 
-![](assets/sort-folders.png)
+![Registerkarte „Unterordner“ der Ordnereigenschaften mit dem Pfeil nach unten und der Option „Alphabetisch sortieren“](assets/sort-folders.png)
 
 
 ## Filtern von Daten in einem Ordner{#filter-data-in-a-folder}
@@ -141,9 +141,9 @@ Um in einem Ordner gespeicherte Daten zu filtern, greifen Sie auf die Ordnereige
 
 Der folgende Ordner enthält beispielsweise nur Kontakte mit einer E-Mail-Adresse, deren Ursprung nicht als &quot;extern&quot; gekennzeichnet oder leer ist.
 
-![](assets/add-a-filter-to-a-folder.png)
+![Registerkarte „Einschränkung“ der Eigenschaften des Ordners „US-Sendungen“, gefiltert nach dem internen Namen, beginnt mit „US“](assets/add-a-filter-to-a-folder.png)
 
 
 ## Beschränken des Zugriffs auf einen Ordner{#restrict-access-to-a-folder}
 
-Verwenden Sie Berechtigungen für Ordner, um den Zugriff auf Campaign-Daten zu organisieren und zu steuern. Weiterführende Informationen zu Berechtigungen finden Sie in [diesem Abschnitt](../start/folder-permissions.md).
+Verwenden Sie Berechtigungen für Ordner, um den Zugriff auf Campaign-Daten zu organisieren und zu steuern. Weitere Informationen zu Berechtigungen für Ordner finden Sie unter [Berechtigungen für Campaign-Ordner erteilen und &#x200B;](../start/folder-permissions.md)).

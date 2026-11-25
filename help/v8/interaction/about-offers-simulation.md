@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 74%
 ---
 # Über die Angebotssimulation{#about-offers-simulation}
 
@@ -38,7 +38,7 @@ Bei einer Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die
 
 Um zu erfahren, wie Sie ein Angebot simulieren können, lesen Sie die folgenden Schritte.
 
-![](assets/how-to-video.png) Außerdem können Sie sich dieses [Video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com) ansehen.
+![Video abspielen](assets/how-to-video.png) Sie können sich auch dieses [Video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com) ansehen.
 
 ## Simulationen erstellen {#main-steps-for-creating-a-simulation}
 
@@ -46,14 +46,14 @@ Gehen Sie wie folgt vor, um eine Angebotssimulation zu erstellen:
 
 1. Klicken Sie im Tab **[!UICONTROL Profile und Zielgruppen]** auf die Schaltfläche **[!UICONTROL Simulationen]** und anschließend auf **[!UICONTROL Erstellen]**.
 
-   ![](assets/offer_simulation_001.png)
+   ![Simulationsliste mit der Schaltfläche Erstellen, die das Dialogfeld „Neue Angebotssimulation“ mit Vorlage, Titel und Ordner öffnet](assets/offer_simulation_001.png)
 
 1. Wählen Sie eine Vorlage aus, benennen Sie die Simulation und speichern Sie sie.
 1. Gehen Sie nun in den Tab **[!UICONTROL Bearbeiten]** und konfigurieren Sie die Ausführungsparameter.
 
    Weiterführende Informationen hierzu finden Sie unter [Ausführungsparameter](execution-settings.md).
 
-   ![](assets/offer_simulation_003.png)
+   ![Registerkarte „Allgemein“ der Simulation, Ausführungseinstellungen: Planung niedriger Aktivitäten, SQL-Protokollierung und Prioritätenliste](assets/offer_simulation_003.png)
 
    >[!NOTE]
    >
@@ -63,21 +63,21 @@ Gehen Sie wie folgt vor, um eine Angebotssimulation zu erstellen:
 
    Weitere Informationen hierzu finden Sie unter [Perimeter konfigurieren](simulation-scope.md#definition-of-the-scope).
 
-   ![](assets/offer_simulation_004.png)
+   ![Registerkarte „Simulationsumfang“ mit Umgebung, Platzierung, Kontaktdatum, Vorschlägen und dem Ordner, auf den sich die großen Reisenden beziehen](assets/offer_simulation_004.png)
 
 1. Fügen Sie gegebenenfalls Berichtsachsen hinzu, um den Bericht **[!UICONTROL Angebotsverteilung nach Ranking]** anzureichern (optional).
 
    Weitere Informationen hierzu finden Sie unter [Berichtsachsen hinzufügen](simulation-scope.md#adding-reporting-axes).
 
-   ![](assets/offer_simulation_005.png)
+   ![Registerkarte Simulationsberechnungen mit Berichtsachsen zur Zielgruppe und zu den Angeboten sowie Schaltfläche Hinzufügen](assets/offer_simulation_005.png)
 
 1. Klicken Sie zum Aufzeichnen der Simulationseinstellungen auf **[!UICONTROL Speichern]**.
 1. Gehen Sie in das Dashboard, um die Simulation zu starten.
 
-   ![](assets/offer_simulation_006.png)
+   ![Simulations-Dashboard mit hervorgehobener Schaltfläche „Simulation starten“](assets/offer_simulation_006.png)
 
 1. Sobald die Simulation abgeschlossen ist, können Sie das Ergebnis und den Bericht zur Simulation anzeigen.
 
    Weitere Informationen hierzu finden Sie im Abschnitt [Simulationsverfolgung](simulation-tracking.md).
 
-   ![](assets/offer_simulation_007.png)
+   ![Registerkarte „Ergebnisse“ und Bericht „Aufschlüsselung der Angebote nach Ranking“ mit Ranking-Tabelle und Tortendiagramm](assets/offer_simulation_007.png)

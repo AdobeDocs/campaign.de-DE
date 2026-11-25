@@ -29,15 +29,15 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 88%
+source-wordcount: '100'
+ht-degree: 69%
 ---
 # Erfassen und Aktualisieren von Profilen mit Web-Formularen
 
 Verwenden Sie Campaign, um Web-Formulare zu erstellen und Profilinformationen einfach und effizient zu erfassen und zu verwalten. Sie können diese Formulare auf Ihrer Website freigeben, sodass Ihre Kontakte ihre Informationen einfach bereitstellen können. Die Daten werden an Campaign gesendet, um deren Profil zu erstellen oder zu aktualisieren.
 
-![](assets/web-form-page.png)
+![Seitenaktivität eines Web-Anwendungs-Workflows, der das Luma-Newsletter-Formular mit einem E-Mail-Feld und der Schaltfläche Senden anzeigt.](assets/web-form-page.png)
 
-Erfahren Sie in ([&#x200B; Abschnitt), wie Sie Web-Formulare &#x200B;](../dev/web/about-web-forms.md).
+Erfahren Sie, wie Sie Web-Formulare in erstellen [Erste Schritte mit Web-Formularen](../dev/web/about-web-forms.md).

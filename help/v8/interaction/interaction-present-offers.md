@@ -21,20 +21,20 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 66%
+source-wordcount: '209'
+ht-degree: 51%
 ---
 # Unterbreiten des besten Angebots{#interaction-present-offers}
 
 Angebote können in verschiedenen Platzierungen über eingehende [&#x200B; ausgehende Kanäle unterbreitet &#x200B;](interaction-architecture.md#interaction-types). In diesem Kapitel werden einige spezifische Funktionen für eingehende Kanäle beschrieben.
 
-![](assets/inbound-interactions.png)
+![Eingehender Fluss: Durchsuchen Sie eine Website, identifizieren Sie den Besucher durch Cookie oder Anmeldung. Das Angebotsmodul wählt das beste Angebot aus dem Katalog aus](assets/inbound-interactions.png)
 
 Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor genehmigt worden sein und in einer Live-Umgebung verfügbar sein.
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](approving-and-activating-an-offer.md#approving-offer-content).
+Weitere Informationen hierzu finden Sie unter [&#x200B; von Angebotsinhalten](approving-and-activating-an-offer.md#approving-offer-content).
 
 Im Kontext eines eingehenden Kontakts kann der Benutzer, der die Seite durchsucht, von der Website identifiziert werden oder nicht. Das Angebotsmodul bietet für identifizierte Profile und für anonyme Profile verschiedene Angebote an.
 
@@ -44,4 +44,4 @@ Um Angebote auf einem eingehenden Kanal unterbreiten zu können, müssen Sie die
 >
 >Im Falle von eingehenden Interaktionen muss das Angebotsmodul dahingehend konfiguriert werden, ein oder mehrere Angebote zu aktualisieren und vorzuschlagen.
 >
->Außerdem müssen Sie für Ihre Platzierungen den Einzelmodus zulassen. Weitere Informationen hierzu finden Sie auf [dieser Seite](interaction-offer-spaces.md).
+>Außerdem müssen Sie für Ihre Platzierungen den Einzelmodus zulassen. Weitere Informationen hierzu finden Sie unter [Platzierungen in Campaign Interaction](interaction-offer-spaces.md).

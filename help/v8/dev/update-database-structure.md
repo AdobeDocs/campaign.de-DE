@@ -25,24 +25,24 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 100%
+source-wordcount: '158'
+ht-degree: 61%
 ---
 # Datenbankstruktur aktualisieren {#updating-the-database-structure}
 
 Um die an den Schemata vorgenommenen Änderungen anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistenten kann über **[!UICONTROL Tools > Erweitert > Datenbankstruktur aktualisieren]** zugegriffen werden. Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Scripts aus.
 
-![](assets/schema_update.png)
+![Der Assistent zum Aktualisieren von Datenbanken aktualisiert die Seite Parameter mit der Schaltfläche Weiter , um den automatischen Erkennungsprozess zu starten](assets/schema_update.png)
 
 Die Module in der Datenbank werden automatisch ausgefüllt und aktiviert.
 
-![](assets/schema_update_select2.png)
+![Datenbankaktualisierungs-Assistent Tabellen bearbeiten Seitenlistentabellen bearbeiten, wobei die CusContracts-Tabelle auf „Synchronisieren“ gesetzt ist](assets/schema_update_select2.png)
 
 Führen Sie die Schritte aus und sehen Sie sich das SQL-Script für Datenbank-Update an:
 
-![](assets/schema_update2.png)
+![Aktualisierungsassistent für Datenbankaktualisierungen Seite mit dem SQL CREATE TABLE-Skript für CusContracts](assets/schema_update2.png)
 
 >[!NOTE]
 >
@@ -50,4 +50,4 @@ Führen Sie die Schritte aus und sehen Sie sich das SQL-Script für Datenbank-Up
 
 Starten Sie anschließend das Datenbank-Update:
 
-![](assets/schema_update3.png)
+![Datenbankaktualisierungs-Assistent : Starten Sie die Seite für die Datenbankaktualisierung, wobei das Protokoll den Abschluss der Aktualisierung bei 100 % anzeigt](assets/schema_update3.png)

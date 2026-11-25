@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 87%
+source-wordcount: '1228'
+ht-degree: 80%
 ---
 # Arbeiten mit Campaign und X (Twitter) {#tw-ac-ovv}
 
@@ -81,15 +81,15 @@ Nachdem Sie den erweiterten Zugriff erhalten haben, erstellen Sie eine X-Anwendu
 1. Der X-Assistent führt Sie durch den Prozess.
 1. Damit Adobe Campaign Beiträge in Ihrem Konto erstellen kann, bearbeiten Sie die **App-Berechtigungen** im Abschnitt „Benutzerauthentifizierung einrichten“ Ihrer App. Wählen Sie **Lesen, Schreiben und Direktnachrichten**.
 
-   ![](assets/tw-permissions.png)
+   ![App-Berechtigungen mit aktivierten Optionen „Lesen und Schreiben“ und „Direktnachricht“](assets/tw-permissions.png)
 
 1. Wählen Sie im Bereich **Anwendungstyp** **Web-Anwendung, automatisierte Anwendung oder Bot**. Sie können das Feld **Callback-URL** leer lassen und Ihre Konfiguration speichern.
 
-   ![](assets/tw-app-type.png)
+   ![Anwendungstyp mit Web-Anwendung, automatisierter Anwendung oder Bot als vertraulicher Client ausgewählt](assets/tw-app-type.png)
 
 1. Gehen Sie zurück zu Ihrem Anwendungs-Dashboard, wählen Sie Ihre Anwendung aus und wechseln Sie zur Registerkarte **Schlüssel und Token**. Wenn unter **Zugriffs-Token und Geheimnis** die Berechtigung **Lesen, Schreiben und Direktnachrichten** nicht aufgeführt wird, müssen Sie das Token und das Geheimnis Ihrer Anwendung neu generieren. Beachten Sie, dass alle Schlüssel und Token bei der Erstellung gespeichert werden müssen. Sie benötigen sie, um Ihren Campaign-Twitter-Service zu konfigurieren.
 
-   ![](assets/tw-permissions-check.png)
+   ![Authentifizierungs-Token mit Zugriffs-Token und Geheimnis, erstellt mit Lese-, Schreib- und Direktnachrichten-Berechtigungen](assets/tw-permissions-check.png)
 
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Um Einstellungen vorzunehmen, müssen Sie sowohl auf Ihre Adobe Campaign-Client-
 
 1. Standardmäßig werden Follower im Ordner **[!UICONTROL Besucher]** gespeichert. Sie können über das Feld **[!UICONTROL Besucherordner]** eine andere Position auswählen. [Weitere Informationen](../send/twitter.md#direct-tw-messages)
 
-   ![](assets/tw-service-in-ac.png)
+   ![Formular „Neue verfügbare Angebote für Service“ mit Beschriftung, E-Mail-Typ, Besucherordner und den Feldern OAuth-Verbraucher und Zugriffstoken](assets/tw-service-in-ac.png)
 
    >[!NOTE]
    >
@@ -138,7 +138,7 @@ Um Ihre Einstellungen zu überprüfen, gehen Sie folgendermaßen vor:
 
 * Bearbeiten Sie den **Twitter**-Service, den Sie gerade erstellt haben.
 * Öffnen Sie die Registerkarte **[!UICONTROL Twitter-Seite]**: Ihr Twitter-Konto sollte angezeigt werden.
-  ![](assets/tw-page.png)
+  ![Registerkarte „Twitter-Seite“ des Dienstes in der Adobe Campaign-Konsole mit dem verknüpften Jane Marge-Konto](assets/tw-page.png)
 
 ## Synchronisieren Ihres X-Kontos {#synchro-tw-accounts}
 
@@ -148,7 +148,7 @@ Sie werden standardmäßig angehalten: Sie müssen sie manuell starten, wenn Sie
 
 Der technische Workflow **[!UICONTROL Synchronisation von Twitter-Konten]** synchronisiert X-Konten in Adobe Campaign. Durch diesen Workflow wird die Liste der X-Follower abgerufen, sodass Sie ihnen Direktnachrichten senden können. [Weitere Informationen](../send/twitter.md#direct-tw-messages)
 
-Standardmäßig wird dieser Workflow jeden Donnerstag um 7.30 Uhr ausgelöst. Sie können die Option **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]** verwenden, um den Workflow bei der Implementierung dieser Integration jederzeit zu starten.  Sie können auch die Planung bearbeiten, um die Häufigkeit der Auslösung des Workflows zu ändern. Weitere Informationen finden Sie auf [dieser Seite](../../automation/workflow/scheduler.md).
+Standardmäßig wird dieser Workflow jeden Donnerstag um 7.30 Uhr ausgelöst. Sie können die Option **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]** verwenden, um den Workflow bei der Implementierung dieser Integration jederzeit zu starten.  Sie können auch die Planung bearbeiten, um die Häufigkeit der Auslösung des Workflows zu ändern. Weitere Informationen finden Sie unter [Konfigurieren der Planungsaktivität](../../automation/workflow/scheduler.md#configuring-scheduler-activity).
 
 >[!CAUTION]
 >
@@ -175,6 +175,6 @@ Erstellen Sie zusätzlich zu einem X-Konto ein privates X-Konto, das zum Senden 
 1. Öffnen Sie die **Einstellungen** des Kontos.
 1. Gehen Sie zu **Datenschutz und Sicherheit** und **Zielgruppe und Markieren** und setzen Sie ein Häkchen neben der Option **Meine Tweets schützen**. Ihre Beiträge und andere Kontoinformationen sind dann nur für Personen sichtbar, die Ihnen folgen.
 
-![](assets/do-not-localize/social_tw_test_page.png)
+![X-Einstellungen Zielgruppe, Medien und Tagging-Seite mit ausgewählter Option „Schütze deine Beiträge“](assets/do-not-localize/social_tw_test_page.png)
 
 Konfigurieren Sie Ihre X-App und Ihren Campaign-Service, um dieses Testkonto wie oben beschrieben zu verwenden.

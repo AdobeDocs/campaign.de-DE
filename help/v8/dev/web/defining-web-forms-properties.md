@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 96%
+source-wordcount: '1774'
+ht-degree: 78%
 ---
 # Definieren der Eigenschaften von Web-Formularen{#defining-web-forms-properties}
 
@@ -39,13 +39,13 @@ Sie können Web-Formulare vollständig Ihren Anforderungen entsprechend konfigur
 
 Auf das Eigenschaftenfenster können Sie über die Schaltfläche **[!UICONTROL Eigenschaften]** in der Symbolleiste des Web-Formulars zugreifen. In diesem Fenster können Sie auf eine Reihe von Einstellungen zugreifen, die für das Web-Formular spezifisch sind. Einige Einstellungen stammen möglicherweise aus der Vorlagenkonfiguration.
 
-![](assets/s_ncs_admin_survey_properties_general.png)
+![Webanwendungseditor mit der Schaltfläche „Eigenschaften“, über die das Fenster „Formulareigenschaften“ geöffnet und in der Symbolleiste hervorgehoben wird](assets/s_ncs_admin_survey_properties_general.png)
 
 ## Allgemeine Formulareigenschaften {#overall-form-properties}
 
 Im Tab **[!UICONTROL Allgemein]** des Eigenschaftenfensters können Sie den **Titel** des Formulars ändern. Es wird dringend davon abgeraten, den **internen Namen** zu ändern.
 
-![](assets/s_ncs_admin_survey_properties_general_tab.png)
+![Registerkarte „Allgemein“ des Fensters „Formulareigenschaften“ mit Titel, internem Namen, Art, Status, Start- und Enddatum, Zugriffssteuerung](assets/s_ncs_admin_survey_properties_general_tab.png)
 
 Die Formularvorlage wird bei der Formularerstellung ausgewählt. Sie kann später nicht mehr geändert werden. Weitere Informationen zum Erstellen und Verwalten von Formularvorlagen finden Sie unter [Webformularvorlage verwenden](using-a-web-form-template.md).
 
@@ -63,11 +63,11 @@ Eine Fehlerseite wird im entsprechenden Tab des Fensters mit den Formulareigensc
 
 Standardmäßig enthält sie die folgenden Informationen:
 
-![](assets/s_ncs_admin_survey_default_error_page.png)
+![Browser-Seite mit der Standardfehlermeldung: Es ist ein Fehler aufgetreten. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren Administrator](assets/s_ncs_admin_survey_default_error_page.png)
 
 Der Inhalt der angezeigten Strings wird auf der Registerkarte **[!UICONTROL Fehlerseite]** des Eigenschaftenfensters definiert. Auf der Registerkarte **[!UICONTROL HTML]** wird das Rendering dargestellt und auf der Registerkarte **[!UICONTROL Texte]** können Sie die Text-Strings ändern und Text nach Bedarf hinzufügen:
 
-![](assets/s_ncs_admin_survey_error_page.png)
+![Registerkarte „Fehlerseite“ der Eigenschaften, auf der Registerkarte „Texte“ sind die Zeichenfolgen line1 und line2 der Fehlermeldung aufgeführt](assets/s_ncs_admin_survey_error_page.png)
 
 ## Lokalisierung eines Formulars {#form-localization}
 
@@ -81,7 +81,7 @@ Im Tab **[!UICONTROL Rendering]** können Sie definieren, wie die Navigation zwi
 
 Sie können zwischen der Navigation per Link oder Schaltfläche wählen.
 
-![](assets/s_ncs_admin_survey_wz_02_navig_type.png)
+![Navigationsoptionen: eine Schaltfläche Weiter und ein Link Weiter , die beiden Möglichkeiten, zwischen Formularseiten zu wechseln](assets/s_ncs_admin_survey_wz_02_navig_type.png)
 
 Schaltflächen sind standardmäßig die Navigationselemente. Sie ermöglichen Ihnen die folgenden Aktionen:
 
@@ -101,7 +101,7 @@ Themen werden im Knoten **[!UICONTROL Administration > Konfiguration > Formular-
 
 Das jeweilige Rendering wird im unteren Teil des Eigenschaftenfensters angezeigt. Über das Symbol **[!UICONTROL Link bearbeiten]** kann die Konfiguration für das ausgewählte Thema aufgerufen werden.
 
-![](assets/s_ncs_admin_survey_properties_render.png)
+![Registerkarte „Rendering“ der Eigenschaften mit den Schaltflächen „Verwenden“ oder „Links verwenden“, „Titelposition“ und einer Vorlagenvorschau mit dem Symbol „Link bearbeiten“](assets/s_ncs_admin_survey_properties_render.png)
 
 ## Logos im Formular {#logo-in-the-form}
 
@@ -109,15 +109,15 @@ Sie können das im Formular verwendete Logo durch Ihr eigenes Logo ersetzen.
 
 Klicken Sie auf **[!UICONTROL Registerkarte]** Rendering“ in **[!UICONTROL Eigenschaften]** Ihrer Web-Anwendung auf das Glassymbol Ihrer Vorlage:
 
-![](assets/logo_glass.png)
+![Registerkarte „Rendering“ der Eigenschaften mit hervorgehobenem Vergrößerungssymbol neben dem Vorlagenfeld, um die Vorlage zu öffnen](assets/logo_glass.png)
 
 Klicken Sie im neuen Fenster auf den Link **[!UICONTROL Seitenlayout]**:
 
-![](assets/logo_pagelayout.png)
+![Fenster zur Formulargenerierung mit hervorgehobenem Seitenlayout-Link](assets/logo_pagelayout.png)
 
 Sie haben hier die Möglichkeit, den Pfad des Logobilds zu ändern:
 
-![](assets/logo_path.png)
+![Seiten-Layout-Fenster mit hervorgehobenem Feld „Bild“ unter „Logo“, wobei der Pfad des Logo-Bildes beibehalten wird](assets/logo_path.png)
 
 Die verfügbaren Bilder finden Sie unter **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Bilder]**. Sie können Ihr Logo hier hinzufügen.
 
@@ -141,7 +141,7 @@ Ein Webformular ist für Benutzer verfügbar, wenn es **[!UICONTROL online]** is
 
 Der Gültigkeitszeitraum erstreckt sich vom **[!UICONTROL Startdatum]** bis zum **[!UICONTROL Enddatum]**. Wenn in diesen Feldern keine Daten angegeben sind, hat das Formular permanente Gültigkeit.
 
-![](assets/s_ncs_admin_survey_properties_date.png)
+![Registerkarte „Allgemein“ der Eigenschaften mit geöffnetem Enddatumskalender zur Auswahl des Datums, an dem das Formular nicht mehr gültig ist](assets/s_ncs_admin_survey_properties_date.png)
 
 >[!NOTE]
 >
@@ -153,17 +153,17 @@ Standardmäßig kann der Zugriff auf Webformulare anonym erfolgen: Allen Operato
 
 Sie können die Zugriffskontrolle für die Anzeige des Formulars aktivieren, um Besucher zu authentifizieren, wenn Sie beispielsweise ein Formular auf einer Intranet-Seite bereitstellen. Rufen Sie dazu für das entsprechende Formular das Fenster **[!UICONTROL Eigenschaften]** auf und wählen Sie die Option **[!UICONTROL Zugriffskontrolle aktivieren]** wie unten gezeigt aus:
 
-![](assets/s_ncs_admin_survey_access_ctrl.png)
+![Registerkarte „Allgemein“ der Eigenschaften mit der unter „Zugriffssteuerung“ ausgewählten Option „Zugriffssteuerung aktivieren“](assets/s_ncs_admin_survey_access_ctrl.png)
 
 Beim Zugriff auf die Seite erscheint das folgende Authentifizierungsformular:
 
-![](assets/s_ncs_admin_survey_access_login.png)
+![Authentifizierungsformular mit den Feldern „Anmelden“ und „Kennwort“ sowie einer Schaltfläche „Anmelden“, die angezeigt wird, wenn die Zugriffssteuerung aktiviert ist](assets/s_ncs_admin_survey_access_login.png)
 
 Der Benutzername und das Passwort entspricht denen der Adobe Campaign-Operatoren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
 
 Mit der Option **[!UICONTROL Spezifisches Konto nutzen]** können Sie die Lese- oder Schreibrechte der Person einschränken, die auf das Formular zugreift. Wählen Sie in der Dropdown-Liste eine Person oder eine Benutzergruppe aus, die für die Vergabe dieser Berechtigungen zuständig sein soll.
 
-![](assets/s_ncs_admin_survey_access_op_select.png)
+![Verwenden Sie eine bestimmte Kontooption, die mit der Dropdown-Liste „Benutzer“ ausgewählt wurde](assets/s_ncs_admin_survey_access_op_select.png)
 
 ## Parameter der Formular-URL {#form-url-parameters}
 
@@ -194,7 +194,7 @@ Standardmäßig sind die folgenden Parameter verfügbar:
 
 Parameter können im Eigenschaftenfenster des Formulars über die Registerkarte **[!UICONTROL Parameter…]** hinzugefügt werden. Sie können wie unten dargestellt obligatorisch gemacht werden:
 
-![](assets/s_ncs_admin_survey_properties_param.png)
+![Registerkarte „Parameter“ mit Unternehmen, Geschlecht und Status, wobei die Option „Erforderlicher Parameter“ für den Status aktiviert ist](assets/s_ncs_admin_survey_properties_param.png)
 
 Spezifizieren Sie einen Speicherort, von dem der Parameterwert abgerufen wird. Wählen Sie dazu eine der Speicheroptionen aus und öffnen Sie danach den Tab **[!UICONTROL Speicherung]**, um das entsprechende Feld oder die entsprechende Variable auszuwählen. Die Speicheroptionen werden in den [Speicherfeldern für Antworten](web-forms-answers.md#response-storage-fields) ausführlich beschrieben.
 
@@ -202,20 +202,20 @@ Der Status der reagierenden Kontakte (0, 1 oder ein beliebiger anderer Wert) kan
 
 1. Startseite für Kunden (**Status = 1**):
 
-   ![](assets/s_ncs_admin_survey_test_client.png)
+   ![Client-Startseite des Formulars, geöffnet mit dem URL-Parameter status=1 und einem ID-Feld](assets/s_ncs_admin_survey_test_client.png)
 
 1. Startseite für Interessenten (**Status = 0**):
 
-   ![](assets/s_ncs_admin_survey_test_prospect.png)
+   ![Interessenten-Startseite des Formulars, geöffnet mit den URL-Parametern Status=0 und den Feldern Name, E-Mail und CAPTCHA](assets/s_ncs_admin_survey_test_prospect.png)
 
 1. Startseite für andere Profile (z. B. **Status = 12**):
 
-   ![](assets/s_ncs_admin_survey_test_other.png)
+   ![Kontakt-Startseite des Formulars, geöffnet mit URL-Parameter-Status=12 und den Feldern Name, E-Mail und Nachricht](assets/s_ncs_admin_survey_test_other.png)
 
 Erstellen Sie zur Konfiguration dieses Formulars eine Test-Komponente und platzieren Sie sie wie unten gezeigt an den Anfang des Diagramms:
 
-![](assets/s_ncs_admin_survey_test.png)
+![Formulardiagramm, in dem ein Testfeld für Kunden/Interessenten/Kontakte zu den Homepage für Interessenten, Kunden und Kontakte verzweigt](assets/s_ncs_admin_survey_test.png)
 
 Über die Test-Komponente können Sie die Bedingungen der Seitenreihenfolge konfigurieren:
 
-![](assets/s_ncs_admin_survey_test_box.png)
+![Testdialogfeld mit durch den Status definierten Verzweigungen, wobei die Statusvariable aus den Kontextfeldern ausgewählt wird](assets/s_ncs_admin_survey_test_box.png)

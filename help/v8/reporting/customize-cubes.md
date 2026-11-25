@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 92%
+source-wordcount: '1873'
+ht-degree: 74%
 ---
 # Anpassen von Cubes{#cube-custom}
 
@@ -46,7 +46,7 @@ Insgesamt sind drei Klassierungstypen möglich:
 
 Um die Klassierung zu aktivieren, kreuzen Sie die entsprechende Option bei der Erstellung der Dimension an.
 
-![](assets/cube-class.png)
+![Dialogfeld für die Dimension-Erstellung mit aktivierter Option „Klassierung aktivieren“ unter „Klassierung konfigurieren“.](assets/cube-class.png)
 
 Sie können Klassen entweder manuell erstellen oder sie mit einer vorhandenen [Auflistung“ &#x200B;](../config/enumerations.md).
 
@@ -56,15 +56,15 @@ Adobe Campaign bietet zudem einen Assistenten, um die Klassen automatisch zu erz
 
 Um jede Klasse einzeln zu erstellen, aktivieren Sie die Option **[!UICONTROL Klassen manuell definieren]** und nutzen Sie die Tabelle, um die verschiedenen Klassen zu bestimmen.
 
-![](assets/cube-binning.png)
+![Einstellungen für die Klassierung in Dimension, wobei die Option „Jede Klassierung definieren“ ausgewählt wurde und eine leere Klassierungstabelle vorhanden ist.](assets/cube-binning.png)
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Klasse zu erstellen, und listen Sie die in der Klasse zusammenzufassenden Werte auf.
 
-![](assets/cube-add-new-bin.png)
+![Das Dialogfeld „Neuer Container“ mit einer Liste von Werten (Französisch und Italienisch) und die Schaltfläche Hinzufügen , um weitere Werte aufzulisten.](assets/cube-add-new-bin.png)
 
 Im unten stehenden Beispiel werden Sprachen in drei Gruppen verteilt: Englisch-Deutsch-Niederländisch, Französisch-Italienisch-Spanisch und Sonstige.
 
-![](assets/cube-add-new-bin-2.png)
+![Sprachdimension mit zwei Klassen: Französisch, Italienisch, Spanisch und Englisch, Deutsch, Niederländisch; andere Werte mit der Beschriftung Sonstige.](assets/cube-add-new-bin-2.png)
 
 Sie können eine SQL-Maske nutzen, um mehrere Werte nach einem Filter zu gruppieren. Aktivieren Sie hierzu die Option **[!UICONTROL Ja]** in der Spalte **[!UICONTROL SQL-Maske benutzen]** und geben Sie den anzuwendenden SQL-Filter in der Spalte **[!UICONTROL Werte oder Ausdruck]** an.
 
@@ -79,11 +79,11 @@ Gehen Sie wie folgt vor, um diesen Klassierungstyp zu erstellen:
 1. Erstellen Sie eine neue Dimension und aktivieren Sie die Klassierung.
 1. Aktivieren Sie die Option **[!UICONTROL Klassen aus einer Aufzählung ableiten (dynamisch)]** und wählen Sie die entsprechende Aufzählung aus.
 
-   ![](assets/cube-link-to-enum.png)
+   ![Werte dynamisch mit einer ausgewählten Auflistungsoption verknüpfen, wobei die Liste der verfügbaren Auflistungen geöffnet ist.](assets/cube-link-to-enum.png)
 
    Bei Aktualisierung der Aufzählungswerte werden die Klassen automatisch angepasst, ohne benutzerseitige Intervention.
 
-   Weitere Informationen über Aufzählungen finden Sie auf [dieser Seite](../config/enumerations.md).
+   Weitere Informationen zu Auflistungen finden Sie unter [Verwalten von Auflistungen](../config/enumerations.md).
 
 ### Erstellen von Wertebereichen {#create-value-ranges}
 
@@ -115,11 +115,11 @@ Zur Erhöhung der Lesbarkeit und Relevanz von Berichten bietet Adobe Campaign di
 
 Auf diese Weise bietet Adobe Campaign eine Aufzählung von Domains, mithilfe derer sich die Liste der nach ISP gruppierten E-Mail-Domains von allen Datenbankkontakten wie im unten stehenden Beispiel anzeigen lässt:
 
-![](assets/nmx_report_sample.png)
+![Bericht zu Client-Herkunft und E-Mail-Domain mit E-Mail-Domains, nach ISP gruppiert (AOL, Free, Gmail, Microsoft, Yahoo, andere).](assets/nmx_report_sample.png)
 
 Es wird anhand der folgenden Vorlage erstellt:
 
-![](assets/nmx_enum_domain.png)
+![Domains-Auflistung auf Reserviert bei Klassierung eingestellt, mit ihren Werten (AOL, Free, Gmail, Microsoft, Yahoo) und Domain-Aliassen.](assets/nmx_enum_domain.png)
 
 Um einen diese Auflistung verwendenden Bericht zu erstellen, müssen Sie zunächst einen die Dimension **[!UICONTROL E-Mail-Domain]** verwendenden Cube erstellen. Wählen Sie die Option **[!UICONTROL Klassierung aktivieren]** und dann **[!UICONTROL Klassen aus einer Aufzählung ableiten (dynamisch)]**. Wählen Sie anschließend die oben dargestellte Aufzählung **Domains (domain)** aus. Alle Werte, für die kein Alias definiert worden ist, werden unter dem Titel **Sonstige** gruppiert.
 
@@ -127,13 +127,13 @@ Erstellen Sie anschließend einen auf diesem Cube basierenden Bericht, um die We
 
 Dabei genügt es, die Aufzählung abzuändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise den Wert **Adobe** und fügen Sie auf Aufzählungsniveau den Alias **adobe.com** hinzu: Der Bericht wird automatisch mit dem Wert „Adobe“ aktualisiert.
 
-![](assets/nmx_add_alias.png)
+![Hinzufügen des Alias neolane.com zur Auflistung Domains, wodurch dem Bericht eine Zeile „Neolane“ hinzugefügt wird.](assets/nmx_add_alias.png)
 
 Die Auflistung **[!UICONTROL Domains]** wird zur Erstellung nativer Berichte verwendet, in denen die Domain-Liste angezeigt wird. Um den Inhalt dieser Berichte anzupassen, können Sie diese Liste bearbeiten.
 
 Sie können weitere, der Klassierung vorbehaltene Aufzählungen erstellen und diese in anderen Cubes verwenden: Alle Alias-Werte werden in den im ersten Tab der Aufzählung definierten Klassen gruppiert.
 
-Weitere Informationen über Aufzählungen finden Sie auf [dieser Seite](../../v8/config/ui-settings.md).
+Weitere Informationen zu Auflistungen finden Sie unter [Einstellungen der Campaign-Benutzeroberfläche](../../v8/config/ui-settings.md).
 
 ## Aggregate in Cubes {#calculate-and-use-aggregates}
 
@@ -143,7 +143,7 @@ Aggregate sind bei der Bearbeitung großer Datenmengen nützlich. Sie werden aut
 
 Aggregate werden im entsprechenden Tab des Cubes definiert.
 
-![](assets/cube-agregate.png)
+![Registerkarte „Aggregate“ eines Cubes im Explorer, auf der die Cube-Aggregate mit der Schaltfläche Hinzufügen aufgelistet sind.](assets/cube-agregate.png)
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
 1. Wählen Sie eine Dimension und eine Ebene aus. Wiederholen Sie diesen Vorgang für alle zu berechnenden Dimensionen und Ebenen.
 1. Gehen Sie in den Tab **[!UICONTROL Workflow]**, um den Aggregations-Workflow zu erstellen.
 
-   * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../automation/workflow/scheduler.md).
+   * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Der Planer wird im Abschnitt [Konfigurieren der Planungsaktivität](../../automation/workflow/scheduler.md#configuring-scheduler-activity) beschrieben.
    * Über die Aktivität **[!UICONTROL Aggregat-Update]** wird der anzuwendende Aktualisierungsmodus ausgewählt: vollständig oder teilweise.
 
      Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung ausgeführt. Um eine partielle Aktualisierung zu aktivieren, wählen Sie die entsprechende Option aus und definieren Sie die Aktualisierungsbedingungen.
@@ -171,15 +171,15 @@ Gehen Sie wie folgt vor, um eine neue Kennzahl zu definieren:
 
 1. Klicken Sie auf die oberhalb der Kennzahlenliste gelegene Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie den Kennzahlentyp und die Formel zur Berechnung der Kennzahl aus.
 
-   ![](assets/cube-create-a-measure.png)
+   ![Dialog zur Erstellung von Kennzahlen mit geöffneter Benutzerliste: Anzahl, Summe, Minimum, Maximum, Durchschnitt und andere.](assets/cube-create-a-measure.png)
 
 1. Wählen Sie je nach gewählter Funktion den Operator aus, auf den sich die Berechnung bezieht.
 
-   Über die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** können komplexe Formeln erstellt werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../automation/workflow/query.md).
+   Über die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** können komplexe Formeln erstellt werden. Weitere Informationen hierzu finden Sie unter [Abfrage](../../automation/workflow/query.md).
 
 1. Der Link **[!UICONTROL Kennzahldaten filtern...]** ermöglicht es, das Berechnungsfeld auf bestimmte Daten zu beschränken.
 
-   ![](assets/cube-create-measure-2.png)
+   ![Filterbedingungen einer Kennzahl, wobei die Operatorliste im BasketMusic-Ausdruck geöffnet ist.](assets/cube-create-measure-2.png)
 
 1. Geben Sie den Titel der Kennzahl an und fügen Sie eine Beschreibung hinzu. Klicken Sie dann auf **[!UICONTROL Beenden]**, um die Erstellung abzuschließen.
 
@@ -197,7 +197,7 @@ Die im Cube berechneten Kennzahlen werden über die Schaltfläche **[!UICONTROL 
 
 Verschieben Sie die Zeilen, um die Anzeigereihenfolge zu ändern. Im nachstehenden Beispiel werden die auf Frankreich bezogenen Daten nach unten verschoben: Sie werden nun in der letzten Spalte angezeigt.
 
-![](assets/cube-in-report-settings.png)
+![Konfigurieren Sie das Fenster Kennzahlen , in dem beim Ziehen der französischen Kennzahl an das Ende ihre letzte Spalte im Bericht verschoben wird.](assets/cube-in-report-settings.png)
 
 ### Konfigurieren der Anzeige {#configuring-the-display}
 
@@ -207,17 +207,17 @@ Die Konfiguration der angezeigten Kennzahlen, Zeilen und Spalten kann für jede 
 
   Sie können bestimmen, ob die Kennzahlen in Zeilen oder Spalten angezeigt und ob ihre Titel ein- oder ausgeblendet werden sollen.
 
-![](assets/cube-pivot-table-config-details.png)
+![Dialogfeld für die Konfiguration der Pivot-Tabelle mit den Optionen Orientierungsliste (In Zeilen, In Spalten), Beschriftungen, Ausrichtung und Beschriftung](assets/cube-pivot-table-config-details.png)
 
 Mithilfe der Farbwahl können die wichtigsten Werte visuell hervorgehoben werden, um die Lesbarkeit der Daten zu verbessern.
 
-![](assets/cube-pivot-table-color.png)
+![Pivot-Tabellenkonfiguration mit dem Abschnitt „Färbung“: Aktivieren, Verwendete Kennzahl, Untergrenze, Obergrenze und Farbskala.](assets/cube-pivot-table-color.png)
 
 ### Ändern des angezeigten Kennzahlentyps {#changing-the-type-of-measure-displayed}
 
 Sie können für jede Kennzahl die anzuwendende Einheit und Formatierung festlegen.
 
-![](assets/cube-pivot-table-config-units.png)
+![Konfigurieren des Fensters „Kennzahlen“ mit Titel, Formatierung, Anzahl der Dezimalstellen, Einheiten- und Einheitenplatzierung für eine Kennzahl.](assets/cube-pivot-table-config-units.png)
 
 ## Freigeben des Berichts {#share-a-report}
 
@@ -225,7 +225,7 @@ Nach der Konfiguration des Berichts können Sie diesen beibehalten und gegebenen
 
 Klicken Sie hierzu auf das Symbol **[!UICONTROL Berichteigenschaften anzeigen]** und aktivieren Sie die Option **[!UICONTROL Bericht freigeben]**.
 
-![](assets/cube_share_option.png)
+![Dialogfeld „Berichteigenschaften“ mit der Option „Bericht freigeben“ auf „Ja“, plus Kategorie- und Relevanzfelder.](assets/cube_share_option.png)
 
 Geben Sie die Kategorie, zu der der Bericht gehört, sowie seine Relevanz an. <!--For more on this, refer in [this page](../../reporting/using/configuring-access-to-the-report.md#report-display-context) to the **Display sequence** and **Defining the filtering options** sections.-->
 
@@ -239,13 +239,13 @@ Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Filter hinzufügen]**.
 
-   ![](assets/cube_add_filter.png)
+   ![Berichtssymbolleiste mit dem hervorgehobenen Symbol Filter hinzufügen über der Pivot-Tabelle „Clients pro Unternehmen“.](assets/cube_add_filter.png)
 
 1. Wählen Sie die Dimension, auf die sich der Filter bezieht.
 
 1. Wählen Sie den anzuwendenden Filtertyp und geben Sie seine Genauigkeit an.
 
-   ![](assets/cube_ceate_filter.png)
+   ![Fügen Sie ein Filterdialogfeld mit Kontrollkästchen hinzu, um die beizubehaltenden Wertebereiche auszuwählen, z. B. Altersbereiche.](assets/cube_ceate_filter.png)
 
 1. Nach seiner Erstellung steht der Filter oberhalb des Berichts zur Verfügung.
 
@@ -253,7 +253,7 @@ Gehen Sie dazu wie folgt vor:
 
    Alle Filter werden nebeneinander angezeigt. Ihre Anzahl ist unbegrenzt.
 
-   ![](assets/cube_multiple_filters.png)
+   ![Filterbereich über dem Bericht mit drei kombinierten Filtern: Stadt, Unternehmen und Alter.](assets/cube_multiple_filters.png)
 
 Bei jeder Änderung (Hinzufügen, Entfernen, Ändern) eines Filters muss der Bericht neu berechnet werden.
 
@@ -261,8 +261,8 @@ Filter können auch basierend auf einer Auswahl erstellt werden. Wählen Sie hie
 
 Um eine Zeile, Spalte oder Zelle auszuwählen, klicken Sie darauf. Um die Auswahl aufzuheben, klicken Sie erneut.
 
-![](assets/cube_create_filter_from_selection.png)
+![Bericht „Meine KUNDEN“ mit ausgewählter LONDON-Zeile und hervorgehobenem Filter auf dem Auswahlsymbol.](assets/cube_create_filter_from_selection.png)
 
 Der Filter wird automatisch angewendet und in der Filterzone oberhalb des Berichts hinzugefügt.
 
-![](assets/cube_create_filter_display.png)
+![Bericht wurde nach London gefiltert, wobei der Filter City = London im Filterbereich über dem Bericht angezeigt wurde.](assets/cube_create_filter_display.png)

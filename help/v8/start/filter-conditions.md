@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '3509'
-ht-degree: 98%
+source-wordcount: '3872'
+ht-degree: 88%
 ---
 # Filterbedingungen definieren{#filter-conditions}
 
@@ -37,7 +37,7 @@ Zur Erstellung Ihrer Abfrage müssen Sie die Filterbedingungen im Abfragetool au
 
 In einer Filterbedingung werden zwei Werte durch einen Operator zueinander in Beziehung gesetzt.
 
-![](assets/query_editor_nveau_96.png)
+![Target-Elementschritt mit geöffneter Dropdown-Liste „Operator“, in der Operatoren gleich, größer als, kleiner als und andere Operatoren aufgelistet werden.](assets/query_editor_nveau_96.png)
 
 Die folgende Liste beschreibt alle verfügbaren Operatoren:
 
@@ -143,24 +143,24 @@ In Abfragen mit mehr als einer Bedingung müssen die Bedingungen miteinander ver
 
 Standardmäßig wird die Verknüpfung **[!UICONTROL Und]** vorgeschlagen. Anhand der Dropdown-Liste besteht jedoch die Möglichkeit, eine andere Verknüpfung auszuwählen.
 
-![](assets/query_condition_modif_01.png)
+![Und, Oder und Außer-Link-Optionen in einer Dropdown-Liste unter der Bedingung E-Mail-Domain orange.co.uk.](assets/query_condition_modif_01.png)
 
 * **[!UICONTROL Und]** fügt eine weitere Filterbedingung hinzu und schränkt die Ergebnisse weiter ein.
 * **[!UICONTROL Oder]** berücksichtigt mindestens eine der angegebenen Bedingungen.
 
   Im unten stehenden Beispiel werden die Empfänger ausgegeben, deren E-Mail-Domain &quot;web.de&quot; enthält ODER deren Postleitzahl mit &quot;20&quot; beginnt.
 
-  ![](assets/query_condition_modif_02.png)
+  ![Zwei Bedingungen verknüpft durch Oder: E-Mail-Domain gleich orange.co.uk oder Postleitzahl beginnt mit NW.](assets/query_condition_modif_02.png)
 
 * **[!UICONTROL Außer]** ermöglicht die Konfiguration einer Ausnahme, wenn die erste Filterbedingung keine Ergebnisse zulässt.
 
   Im unten stehenden Beispiel werden die Empfänger ausgegeben, deren E-Mail-Domain &quot;web.de&quot; enthält, AUSSER wenn der Familienname &quot;Schmidt&quot; lautet.
 
-  ![](assets/query_condition_modif_03.png)
+  ![Zwei Bedingungen verknüpft durch Ausgenommen: E-Mail-Domain gleich orange.co.uk mit Ausnahme des Nachnamens gleich Smith.](assets/query_condition_modif_03.png)
 
 Folgendes Beispiel zeigt einen Filter zur Anzeige aller Empfänger spanischer Sprache ODER aller Frauen, deren Mobiltelefonnummer angegeben ist, ODER aller Empfänger, deren Kundennummer nicht angegeben ist und deren Firma mit &quot;N&quot; anfängt.
 
-![](assets/query_editor_nveau_31.png)
+![Filter, der die Sprache Spanisch, Weiblich mit einer Mobiltelefonnummer und keine Kontonummer mit einer Firma, die mit N beginnt, kombiniert](assets/query_editor_nveau_31.png)
 
 ## Bedingungen priorisieren {#prioritizing-conditions}
 
@@ -169,7 +169,7 @@ In diesem Kapitel wird erläutert, wie anhand der blauen Pfeile in der Symbollei
 * Der Rechtspfeil fügt eine Klammerebene hinzu.
 * Der Linkspfeil entfernt eine Klammerebene.
 
-  ![](assets/query_condition_modif_04.png)
+  ![Abfrage-Editor-Symbolleiste mit den Pfeilen in der linken und rechten Klammer und den Pfeilen nach oben und unten.](assets/query_condition_modif_04.png)
 
 * Die nach oben und unten gerichteten Pfeile ermöglichen das Verschieben einer Bedingung und somit die Reihenfolge der Filterung.
 
@@ -177,7 +177,7 @@ Das folgende Beispiel verdeutlicht die Funktionsweise des Linkspfeils. Beginnen 
 
 Platzieren Sie den Cursor auf der Filterbedingung **[!UICONTROL Geschlecht (@gender) gleich Männlich]** und klicken Sie auf den Pfeil **[!UICONTROL Eine Klammerebene entfernen]**.
 
-![](assets/query_editor_nveau_32.png)
+![Vor und nach dem Entfernen einer Klammerebene: Geschlecht gleich Mann wechselt auf dieselbe Ebene wie Stadt gleich London.](assets/query_editor_nveau_32.png)
 
 Die Klammern um die Bedingung **[!UICONTROL Geschlecht (@gender) gleich Männlich]** wurden entfernt. Sie befindet sich nun auf der gleichen Ebene wie die Bedingung „Ort gleich Hamburg“. Die entsprechenden Bedingungen sind jetzt durch **[!UICONTROL Und]** verknüpft.
 
@@ -187,7 +187,7 @@ Je nach Tabelle stehen verschiedene Felder zur Verfügung. Alle Felder sind in e
 
 Die Details des ausgewählten Felds werden unten im Fenster angezeigt. So handelt es sich beispielsweise beim Feld **[!UICONTROL E-Mail-Domain]** um ein **[!UICONTROL Berechnetes SQL-Feld]** mit der Erweiterung **[!UICONTROL (@domain)]**.
 
-![](assets/query_editor_nveau_59.png)
+![Daten zum Extrahieren des Schritts mit ausgewählter E-Mail-Domain. Im folgenden Detail wird SQL-berechnetes Feld (@domain) angezeigt.](assets/query_editor_nveau_59.png)
 
 >[!NOTE]
 >
@@ -195,7 +195,7 @@ Die Details des ausgewählten Felds werden unten im Fenster angezeigt. So handel
 
 Doppelklicken Sie auf ein Feld, um es zu den Ausgabespalten hinzuzufügen. Jedes ausgewählte Feld entspricht einer Spalte in der **[!UICONTROL Datenvorschau]** am Ende der Abfrage.
 
-![](assets/query_editor_nveau_01.png)
+![Daten zum Extrahieren von Schritt mit Alter, Primärem Schlüssel, E-Mail-Domain und Ort wurden zur Liste der Ausgabespalten hinzugefügt.](assets/query_editor_nveau_01.png)
 
 Standardmäßig werden erweiterte Felder nicht angezeigt. Dies können Sie ändern, indem Sie auf **[!UICONTROL Erweiterte Felder anzeigen]** im rechten unteren Winkel der verfügbaren Felder klicken. Dann wird auch der vollständige Name der Felder angezeigt.
 
@@ -203,7 +203,7 @@ In der Empfängertabelle beispielsweise gelten folgende Felder als erweitert: **
 
 In unten stehendem Beispiel wurden alle erweiterten Felder der Empfängertabelle markiert.
 
-![](assets/query_editor_nveau_53.png)
+![Liste der verfügbaren Felder mit hervorgehobenen erweiterten Feldern und der Schaltfläche „Erweiterte Felder anzeigen“ unten rechts.](assets/query_editor_nveau_53.png)
 
 Feld-Kategorien:
 
@@ -275,7 +275,7 @@ Relationen zu einer Tabelle oder zu Sammlungselementen:
 
 >[!NOTE]
 >
->* Verwenden Sie die Schaltfläche **[!UICONTROL Hinzufügen]** (über der Seitensymbolleiste), um eine Ausgabespalte hinzuzufügen, in der Sie den Ausdruck bearbeiten möchten. Weitere Informationen zum Bearbeiten eines Ausdrucks finden Sie in [diesem Abschnitt](#building-expressions).
+>* Verwenden Sie die Schaltfläche **[!UICONTROL Hinzufügen]** (über der Seitensymbolleiste), um eine Ausgabespalte hinzuzufügen, in der Sie den Ausdruck bearbeiten möchten. Weitere Informationen zum Bearbeiten eines Ausdrucks finden Sie unter [Ausdrücke erstellen](#building-expressions).
 >* Klicken Sie auf das rote Kreuz **Löschen**, um eine Ausgabespalte zu entfernen.
 >* Ändern Sie die Reihenfolge der Ausgabespalten anhand der Pfeile.
 >* Verwenden Sie die Schaltfläche **[!UICONTROL Werteverteilung]**, um die im ausgewählten Feld enthaltenen Werte anzuzeigen (z. B. das anteilige Vorkommen von Städten oder Sprachen).
@@ -284,29 +284,29 @@ Relationen zu einer Tabelle oder zu Sammlungselementen:
 
 Fügen Sie bei Bedarf während der Datenformatierung eine Spalte hinzu. Ein berechnetes Feld fügt der Datenvorschau in Form eine zusätzliche Spalte hinzu. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**.
 
-![](assets/query_editor_nveau_43.png)
+![Schritt zur Datenformatierung mit der Schaltfläche Berechnetes Feld hinzufügen und dem Dialogfeld für die Definition des berechneten Felds wird beim Typ geöffnet.](assets/query_editor_nveau_43.png)
 
 Vier verschiedene Feldtypen stehen zur Verfügung:
 
 * **[!UICONTROL Unveränderliche Zeichenfolge]**: Fügt eine Zeichenfolge hinzu.
 
-  ![](assets/query_editor_nveau_60.png)
+  ![Exportieren Sie das Dialogfeld für die Definition des berechneten Feldes mit dem festen Zeichenfolgentyp und dem eingegebenen Text Meine Zeichenfolge.](assets/query_editor_nveau_60.png)
 
 * **[!UICONTROL Zeichenfolge mit JavaScript-Fusion]**: Das berechnete Feld kombiniert eine Zeichenfolge mit JavaScript-Direktiven.
 
-  ![](assets/query_editor_nveau_61.png)
+  ![Exportieren Sie das Dialogfeld für die berechnete Felddefinition mit dem Typ Zeichenfolge mit JavaScript-Tags und Skript-Tags im Editor.](assets/query_editor_nveau_61.png)
 
 * **[!UICONTROL JavaScript-Ausdruck]**: Der Wert des berechneten Felds ist das Ergebnis der Auswertung einer JavaScript-Funktion. Der zurückgegebene Wert kann typisiert werden (Zahl, Datum usw.).
 
-  ![](assets/query_editor_nveau_62.png)
+  ![Exportieren des Definitionsdialogfelds für berechnete Felder vom Typ &quot;JavaScript-Ausdruck“ und einem „If-Else“-Skript, das „A“ oder „B“ zurückgibt](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Aufzählungen]**: Dieser Feldtyp erlaubt die Verwendung/Umwandlung des Inhalts einer anderen Spalte.
 
   Sie können den Quellwert einer Spalte verwenden und ihm einen Zielwert zuordnen. Dieser Zielwert wird in der neuen Ausgabespalte angezeigt.
 
-  Ein Beispiel zu berechneten **[!UICONTROL Aufzählungsfeldern]** können Sie [diesem Abschnitt](../../automation/workflow/adding-enumeration-type-calculated-field.md) entnehmen.
+  Ein Beispiel für das Hinzufügen des berechneten Feldtyps **[!UICONTROL Auflistungen]** finden Sie unter [Hinzufügen eines berechneten Auflistungsfelds](../../automation/workflow/adding-enumeration-type-calculated-field.md).
 
-  ![](assets/query_editor_nveau_63.png)
+  ![Dialogfeld für berechnete Auflistungsfelder mit einer Source-Spaltenliste und den vier Optionen für die anderen Fälle.](assets/query_editor_nveau_63.png)
 
   Ein berechnetes Feld vom Typ **[!UICONTROL Aufzählungen]** kann vier Bedingungen enthalten:
 
@@ -319,7 +319,7 @@ Eine detaillierte Ansicht des hinzugefügten Felds erhalten Sie durch Klick auf 
 
 Klicken Sie zum Entfernen des Felds auf das rote Kreuz (**[!UICONTROL Berechnetes Feld entfernen]**).
 
-![](assets/query_editor_nveau_58.png)
+![Datenformatierungsschritt mit dem ausgewählten berechneten Feld „Neu“ und der hervorgehobenen Schaltfläche „Detail des berechneten Felds“.](assets/query_editor_nveau_58.png)
 
 ## Ausdrücke erstellen {#building-expressions}
 
@@ -335,15 +335,15 @@ Gehen Sie wie folgt vor:
 
    Wählen Sie die Option **[!UICONTROL Aggregatfunktionen]** und **[!UICONTROL Zählung]**. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/query_editor_nveau_54.png)
+   ![Zu extrahierende Daten: Durch Hinzufügen wird ein Ausdrucksfeld geöffnet, wobei die Schaltfläche Ausdruck bearbeiten hervorgehoben ist.](assets/query_editor_nveau_54.png)
 
 1. Die Zählung der Primärschlüssel wurde konfiguriert.
 
-   ![](assets/query_editor_nveau_88.png)
+   ![Liste der Ausgabespalten mit einem Ausdruck für „count“ (Primärschlüssel) hinzugefügt und hervorgehoben.](assets/query_editor_nveau_88.png)
 
 Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
 
-![](assets/query_editor_nveau_05.png)
+![Fenster „Formelart“ mit ausgewählter Option „Prozess“ für eine Aggregatfunktion und ausgewählter Option „Zählung“.](assets/query_editor_nveau_05.png)
 
 1. **[!UICONTROL Einfaches Feld]**: führt zurück zum Fenster **[!UICONTROL Feldauswahl]**.
 1. **[!UICONTROL Aggregat (Prozess mit einer Aggregatfunktion)]**. Hier folgen einige Beispiele zur Verwendung von Aggregaten:
@@ -358,7 +358,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
 
 1. **[!UICONTROL Ausdruck]** öffnet das Fenster **[!UICONTROL Ausdruck bearbeiten]**. Damit können Sie Telefonnummern finden, die zu viele Ziffern enthalten, um eventuelle Eingabefehler zu korrigieren.
 
-   ![](assets/query_editor_nveau_71.png)
+   ![Bearbeiten Sie das Ausdrucksfenster mit einem Telefonlängenausdruck und dem resultierenden Filter Telefon größer als 10.](assets/query_editor_nveau_71.png)
 
    Im Abschnitt [&#128279;](#list-of-functions)Funktionsliste finden Sie eine vollständige Liste aller Funktionen.
 
@@ -368,7 +368,7 @@ Mit der Option **[!UICONTROL Ausdruck]** gelangen Sie zum Fenster &quot;Ausdruck
 
 Der Ausdruckseditor gestaltet sich wie folgt:
 
-![](assets/filter-define-expression.png)
+![Bearbeiten Sie das Ausdrucksfenster mit den verfügbaren Feldern und einer Liste von Funktionen mit Kategorien wie Aggregaten und Zeichenfolge.](assets/filter-define-expression.png)
 
 Er ermöglicht es Ihnen, Felder in den Datenbanktabellen auszuwählen und ihnen erweiterte Funktionen hinzuzufügen. Folgende Funktionen stehen zur Verfügung:
 

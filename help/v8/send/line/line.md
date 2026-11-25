@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 89%
+source-wordcount: '1746'
+ht-degree: 69%
 ---
 # Erstellen eines LINE-Versands
 
@@ -44,7 +44,7 @@ LINE ist ein Programm für kostenloses Instant Messaging, Sprach- und Videoanruf
 
 Ebenfalls möglich ist die Kombination von [!DNL LINE] mit dem Transaktionsnachrichten-Modul. Dadurch können Echtzeitnachrichten über die auf Endbenutzergeräten installierte [!DNL LINE]-Mobile-App versendet werden. Weitere Informationen hierzu finden Sie auf dieser [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line) Dokumentation zu Campaign Classic v7.
 
-![](assets/line_message.png)
+![LINE-App-Konversation mit einer Textnachricht, die von einem Shop-Konto empfangen wurde](assets/line_message.png)
 
 Die Schritte zur Verwendung des [!DNL LINE]-Kanals lauten wie folgt:
 
@@ -69,13 +69,13 @@ So erstellen Sie einen [!DNL LINE]-Dienst:
 
 1. Wählen Sie im Menü auf der linken Seite **[!UICONTROL Dienste und Abonnements]** und danach **[!UICONTROL Erstellen]** aus.
 
-   ![](assets/line_service_1.png)
+   ![Liste der Services und Abonnements mit hervorgehobener Schaltfläche „Erstellen“](assets/line_service_1.png)
 
 1. Geben Sie für Ihren neuen Dienst einen **[!UICONTROL Titel]** und einen **[!UICONTROL internen Namen]** an.
 
 1. Wählen Sie **[!UICONTROL LINE]** aus der Dropdown-Liste **[!UICONTROL Typ]** aus.
 
-   ![](assets/line_service_2.png)
+   ![Dialogfeld „Service-Erstellung“ mit ausgewählter LINE in der Dropdown-Liste „Typ“](assets/line_service_2.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -89,11 +89,11 @@ Nachdem Sie den Dienst [!DNL LINE] erstellt haben, müssen Sie das externe Konto
 
 1. Wählen Sie das native externe Konto **[!UICONTROL LINE V2-Routing]** aus.
 
-   ![](assets/line_config.png)
+   ![Liste der externen Konten mit dem ausgewählten integrierten LINE V2-Routing-Konto](assets/line_config.png)
 
 1. Wählen Sie in Ihrem externen Konto den Tab **[!UICONTROL LINE]** aus, um mit der Konfiguration Ihres externen Kontos zu beginnen. Füllen Sie die folgenden Felder aus:
 
-   ![](assets/line_config_2.png)
+   ![Registerkarte „LINE“ des externen Kontos mit den Feldern „Kanal-ID“, „Geheimschlüssel“, „Zugriffstoken“ und „LINE-Abonnement-Service“](assets/line_config_2.png)
 
    * **[!UICONTROL Alias des Kanals]**: In Ihrem [!DNL LINE]-Konto finden Sie diesen unter **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]**.
    * **[!UICONTROL Kennung des Kanals]**: In Ihrem [!DNL LINE]-Konto finden Sie diese unter **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]**.
@@ -118,37 +118,37 @@ Gehen Sie wie folgt vor, um einen [!DNL LINE]-Versand zu erstellen:
 
 1. Verwenden Sie im Tab **[!UICONTROL Kampagnen]** **[!UICONTROL Sendungen]** und danach die Schaltfläche **[!UICONTROL Erstellen]**.
 
-   ![](assets/line_message_07.png)
+   ![Versandliste auf der Registerkarte „Kampagnen“ mit hervorgehobener Schaltfläche „Erstellen“](assets/line_message_07.png)
 
 1. Wählen Sie die Versandvorlage **[!UICONTROL LINE V2-Versand]** aus.
 
-   ![](assets/line_message_01.png)
+   ![Dialogfeld „Neuer Versand“ mit ausgewählter LINE V2-Versandvorlage](assets/line_message_01.png)
 
-1. Geben Sie für Ihren Versand einen **[!UICONTROL Titel]**, einen **[!UICONTROL Versand-Code]** und eine **[!UICONTROL Beschreibung]** ein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../start/create-message.md#create-the-delivery).
+1. Geben Sie für Ihren Versand einen **[!UICONTROL Titel]**, einen **[!UICONTROL Versand-Code]** und eine **[!UICONTROL Beschreibung]** ein. Weitere Informationen hierzu finden Sie unter [Versand erstellen](../../start/create-message.md#create-the-delivery).
 
 1. Bestätigen Sie durch Verwendung der Schaltfläche **[!UICONTROL Fortfahren]** die Versanderstellung.
 
 1. Wählen Sie im Versand-Editor **[!UICONTROL An]** aus, um die Empfänger Ihres [!DNL LINE]-Versands auszuwählen. Die Zielgruppenbestimmung erfolgt auf Basis **[!UICONTROL Besucherabonnements (nms:visitorSub)]**.
 
-   Weitere Informationen dazu finden Sie auf [dieser Seite](../../audiences/target-mappings.md).
+   Weitere Informationen finden Sie unter [Arbeiten mit Zielgruppen-Mappings](../../audiences/target-mappings.md).
 
-   ![](assets/line_message_08.png)
+   ![LINE-V2-Versand mit hervorgehobenem Link „An“ und einer leeren Liste von LINE-Nachrichten](assets/line_message_08.png)
 
 1. Wählen Sie mit **[!UICONTROL Hinzufügen]** die **[!UICONTROL Zielpopulation des Versands]** aus.
 
-   ![](assets/line_message_09.png)
+   ![Wählen Sie das Zielgruppen-Dialogfeld, Registerkarte Hauptzielgruppe mit der Schaltfläche Hinzufügen für die Zielgruppen-Population des Versands](assets/line_message_09.png)
 
 1. Wählen Sie aus, ob [!DNL LINE]-Abonnenten direkt als Zielgruppe adressiert oder Benutzer abhängig von ihrem [!DNL LINE]-Abonnement adressiert werden sollen, und wählen Sie **[!UICONTROL Weiter]**. In diesem Beispiel haben wir **[!UICONTROL Nach LINE-V2-Abonnement]** ausgewählt.
 
 1. Wählen Sie **[!UICONTROL Line-V2]** in der Dropdown-Liste **[!UICONTROL Ordner]** und dann Ihren [!DNL LINE]-Dienst aus. Wählen Sie **[!UICONTROL Beenden]** und anschließend **[!UICONTROL OK]**, um mit der Personalisierung Ihres Versands zu beginnen.
 
-   ![](assets/line_message_10.png)
+   ![Dialogfeld „Target-Element“ mit ausgewähltem LINE-V2-Ordner und LINESVC-Dienst](assets/line_message_10.png)
 
 1. Klicken Sie im Versand-Editor auf **[!UICONTROL Hinzufügen]**, um eine oder mehrere Nachrichten hinzuzufügen und den **[!UICONTROL Inhaltstyp]** auszuwählen.
 
    Weiterführende Informationen zu den verschiedenen verfügbaren **[!UICONTROL Inhaltstypen]** finden Sie unter [Festlegen des Inhaltstyps](#defining-the-content).
 
-   ![](assets/line_message_11.png)
+   ![LINE-V2-Versand an die Service-Abonnenten mit hervorgehobener Schaltfläche „Hinzufügen“ im Abschnitt „LINE-Nachricht“](assets/line_message_11.png)
 
 1. Nach Abschluss der Konfiguration Ihres Versands können Sie ihn an die zuvor bestimmte Zielgruppe senden.
 
@@ -176,7 +176,7 @@ Es stehen drei Nachrichtentypen zur Auswahl:
 
 Bei einem [!DNL LINE]-Versand vom Typ **[!UICONTROL Textnachrichten]** handelt es sich um eine Nachricht, die in Textform an die Empfänger gesendet wird.
 
-![](assets/line_message_02.png)
+![LINE-Nachrichteneditor mit Textnachrichtentyp und einem Drei-Absätze-Werbetext auf der Registerkarte „Inhalt“](assets/line_message_02.png)
 
 Die Konfiguration dieses Nachrichtentyps ähnelt der Konfiguration des **[!UICONTROL Text]**-Formats in einer E-Mail. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../defining-the-email-content.md#message-content).
 
@@ -192,11 +192,11 @@ Dabei können folgende Elemente verwendet werden:
   >
   >Über die Variable **%SIZE%** lässt sich die Anzeige entsprechend der Bildschirmgröße der Mobilgeräte der Nachrichtenempfänger optimieren.
 
-  ![](assets/line_message_04.png)
+  ![Bild- und Link-Nachricht mit ausgewähltem personalisiertem Bild, Bild-URL und hervorgehobenen Feldern für alternativen Text](assets/line_message_04.png)
 
 * **[!UICONTROL Bild-URL]** nach Bildschirmgröße des Geräts
 
-  ![](assets/line_message_03.png)
+  ![Bild- und Link-Nachricht mit ausgewählter Bildschirmgröße Bilder pro Gerät definieren und vier Bild-URL-Feldern mit Auflösung](assets/line_message_03.png)
 
   Über die Option **[!UICONTROL Bilder nach Bildschirmgröße des Geräts definieren]** stehen verschiedene Bildauflösungen zur Verfügung, anhand derer Sie die Darstellung des Versands auf Mobilgeräten optimieren können. Es werden nur Bilder mit derselben Höhe und Breite unterstützt.
 
@@ -218,7 +218,7 @@ Dabei können folgende Elemente verwendet werden:
 
   Im Bereich **[!UICONTROL Links]** können Sie verschiedene Layouts auswählen, entsprechend denen Ihr Bild in mehrere anklickbare Bereiche unterteilt wird. Anschließend können Sie jedem von ihnen eine spezifische **[!UICONTROL Link-URL]** zuweisen.
 
-  ![](assets/line_message_05.png)
+  ![Link-Abschnitt mit einem ausgewählten Layout mit drei Regionen und einem Feld Link-URL für jede der Regionen A, B und C](assets/line_message_05.png)
 
 ### Konfigurieren eines Videonachrichten-Versands {#configuring-a-video-message-delivery}
 
@@ -230,7 +230,7 @@ Im Feld **[!UICONTROL URL des Videobilds]** können Sie die URL Ihrer Videodatei
 
 Beachten Sie, dass abhängig von der Breite und Höhe des Videos dessen Ränder bei der Wiedergabe auf einigen Geräten u. U. abgeschnitten sind.
 
-![](assets/line_message_06.png)
+![Inhalt von Videonachrichten mit den Feldern Vorschaubild-URL und Videobild-URL](assets/line_message_06.png)
 
 ## Zugriff auf Berichte {#accessing-reports}
 
@@ -240,11 +240,11 @@ Im Anschluss an den Versand können Sie Ihre [!DNL LINE]-Berichte über das Men�
 >
 >Die Tracking-Berichte liefern eine Auswertung der Klickrate. Die Öffnungsrate wird bei [!DNL LINE] nicht berücksichtigt.
 
-![](assets/line_reports_01.png)
+![LINE-Versandzusammenfassung mit hervorgehobener Registerkarte „Berichte“ neben „Allgemein“](assets/line_reports_01.png)
 
 Rufen Sie für Berichte zum [!DNL LINE]-Dienst das Menü **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Dienste und Abonnements]** > **[!UICONTROL LINE V2]** im Tab **[!UICONTROL Explorer]** auf. Wählen Sie anschließend das Symbol **[!UICONTROL Berichte]** im [!DNL LINE]-Dienst aus.
 
-![](assets/line_reports.png)
+![LINESVC-Dienst-Dashboard mit hervorgehobener Registerkarte „Berichte“ neben „Allgemein“](assets/line_reports.png)
 
 ## Beispiel: Erstellung und Versand einer personalisierten LINE-Nachricht {#example--create-and-send-a-personalized-line-message}
 
@@ -252,43 +252,43 @@ In diesem Beispiel wird aufgezeigt, wie Sie eine Textnachricht und ein Bild, die
 
 1. Erstellen Sie Ihren [!DNL LINE]-Versand, indem Sie die Schaltfläche **[!UICONTROL Erstellen]** im Tab **[!UICONTROL Kampagnen]** auswählen.
 
-   ![](assets/line_usecase.png)
+   ![Versandliste auf der Registerkarte „Kampagnen“ mit hervorgehobener Schaltfläche „Erstellen“](assets/line_usecase.png)
 
 1. Wählen Sie die LINE-Versandvorlage **[!UICONTROL LINE V2-Bereitstellung]** aus und benennen Sie Ihren Versand.
 
-   ![](assets/line_usecase_01.png)
+   ![Dialogfeld „Neuer Versand“ mit der in der Dropdown-Liste ausgewählten Versandvorlage LINE V2](assets/line_usecase_01.png)
 
 1. Wählen Sie im Konfigurationsfenster Ihres Versands Ihre Zielpopulation aus.
 
    Weiterführende Informationen hierzu finden Sie unter [Zielpopulationen identifizieren](../../start/create-message.md#target-population).
 
-   ![](assets/line_usecase_02.png)
+   ![Versand mit dem Link An und dem Dialogfeld Ziel auswählen , das die Schaltfläche Hinzufügen zum Definieren der Zielpopulation anzeigt](assets/line_usecase_02.png)
 
 1. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um Ihre Nachricht zu erstellen, und wählen Sie danach den **[!UICONTROL Inhaltstyp]** aus.
 
    Hier möchten wir zunächst eine **[!UICONTROL Textnachricht]** erstellen.
 
-   ![](assets/line_usecase_03.png)
+   ![LINE-Nachrichteneditor mit dem Nachrichtentyp „Textnachricht“ und einem Begrüßungstext mit einem Promo-Code](assets/line_usecase_03.png)
 
 1. Platzieren Sie den Cursor an der Position, an der der personalisierte Text eingefügt werden soll, wählen Sie das Symbol für die Dropdown-Liste und danach **[!UICONTROL Besucher]** > **[!UICONTROL Vorname]** aus.
 
-   ![](assets/line_usecase_05.png)
+   ![Personalization-Menü mit ausgewähltem „Besucher“ und anschließend „Vorname“, um den Vornamen in den Text einzufügen](assets/line_usecase_05.png)
 
 1. Gehen Sie ebenso vor, um ein Bild hinzuzufügen, indem Sie **[!UICONTROL Bild und Link]** in der Dropdown-Liste **[!UICONTROL Nachrichtentyp]** auswählen.
 
    Fügen Sie Ihre **[!UICONTROL Bild-URL]** hinzu.
 
-   ![](assets/line_usecase_07.png)
+   ![Bild- und Verknüpfungsnachricht mit ausgefülltem Nachrichtentyp, Bild-URL und Alternativtext 20% Rabatt](assets/line_usecase_07.png)
 
 1. Wählen Sie im Bereich **[!UICONTROL Links]** das Layout aus, gemäß dem Ihr Bild in mehrere anklickbare Bereiche unterteilt wird.
 
 1. Weisen Sie jeder Region Ihres Bildes eine URL zu.
 
-   ![](assets/line_usecase_08.png)
+   ![Bild- und Link-Nachricht mit zwei Regionen, A und B, jeweils mit hervorgehobener eigener Link-URL](assets/line_usecase_08.png)
 
 1. Speichern Sie Ihren Versand und verwenden Sie die Schaltfläche **[!UICONTROL Senden]**, um den Versand zu analysieren und ihn anschließend an die Zielgruppe zu senden.
 
    Der Versand wird an die Zielgruppe gesendet:
 
-   ![](assets/line_usecase_06.png)
+   ![Es wurde eine LINE-Nachricht mit einer personalisierten Begrüßung, einem Promo-Code-Text und einem 20 % Rabatt auf das Schuhbild empfangen](assets/line_usecase_06.png)
 

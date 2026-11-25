@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 93%
+source-wordcount: '1101'
+ht-degree: 77%
 ---
 # Antworten in Webformularen{#web-forms-answers}
 
@@ -35,7 +35,7 @@ Antworten in Formularen können in einem Feld der Datenbank oder temporär in ei
 
 Für jedes Eingabefeld in einem Formular sind die folgenden Speicheroptionen verfügbar:
 
-![](assets/s_ncs_admin_survey_select_storage.png)
+![Eingabefeld „Nachname“ mit dem Link „Speicher bearbeiten“ und dem Dialogfeld „Speicher“, das die Optionen „Empfänger und Variable bearbeiten“ anzeigt.](assets/s_ncs_admin_survey_select_storage.png)
 
 * **[!UICONTROL Empfänger bearbeiten]**
 
@@ -49,7 +49,7 @@ Für jedes Eingabefeld in einem Formular sind die folgenden Speicheroptionen ver
 
 Um Daten in einem vorhandenen Datenbankfeld zu speichern, wählen Sie das Symbol **[!UICONTROL Ausdruck bearbeiten]** und danach das Feld aus der Liste der verfügbaren Felder aus.
 
-![](assets/s_ncs_admin_survey_storage_type1.png)
+![Speicherdialogfeld mit Ausdruck bearbeiten, der die Feldauswahl öffnet, wobei Nachname (@lastName) ausgewählt ist.](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
@@ -61,15 +61,15 @@ Durch die Verwendung lokaler Variablen können Daten auf derselben oder einer an
 
 Das bedeutet, dass Sie den Wert eines nicht gespeicherten Felds verwenden können, um die Anzeige einer Gruppe von Optionen auf der Seite zu autorisieren. Auf der folgenden Seite wird der Fahrzeugtyp nicht in der Datenbank gespeichert:
 
-![](assets/s_ncs_admin_survey_no_storage_variable.png)
+![Kombinationsfeld „Typ des Autos“ mit auf den VariablentypV festgelegtem Speicher und dem Link „Speicher bearbeiten“.](assets/s_ncs_admin_survey_no_storage_variable.png)
 
 Er ist in einer Variablen gespeichert, die bei der Erstellung der Dropdown-Liste oder über den Link **[!UICONTROL Speicherinformationen bearbeiten...]** ausgewählt werden muss.
 
-![](assets/s_ncs_admin_survey_no_storage_variable2.png)
+![Speicherdialog mit der Option Variable und einer Dropdown-Liste Typ des Autos, Fahrender LKW und Persönlicher Wagen.](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
 Über den Link **[!UICONTROL Variablen bearbeiten...]** können Sie vorhandene Variablen anzeigen und neue erstellen. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Variable zu erstellen.
 
-![](assets/s_ncs_admin_survey_add_a_variable.png)
+![Bearbeiten der Variablenliste und des Variablendialogfelds mit der Beschriftung und dem Namen der Autoenergie, geben Sie Text ein, um eine Variable hinzuzufügen.](assets/s_ncs_admin_survey_add_a_variable.png)
 
 Die hinzugefügte Variable wird in der Liste lokaler Variablen verfügbar sein, wenn die Eingabefelder der Seite erstellt werden.
 
@@ -81,19 +81,19 @@ Die hinzugefügte Variable wird in der Liste lokaler Variablen verfügbar sein, 
 
 Im obigen Beispiel wird der Container mit Daten zu Personenfahrzeugen nur angezeigt, wenn die Option **[!UICONTROL Personen]** (wie in der Sichtbarkeitsbedingung dargestellt) aus der Dropdown-Liste ausgewählt wird:
 
-![](assets/s_ncs_admin_survey_add_a_condition.png)
+![Sichtbarkeitsbedingung des persönlichen Fahrzeugbehälters: Fahrzeugtyp ist gleich Persönlich.](assets/s_ncs_admin_survey_add_a_condition.png)
 
 Wenn der Benutzer ein Personenfahrzeug auswählt, bietet das Webformular folgende Optionen an:
 
-![](assets/s_ncs_admin_survey_no_storage_conda.png)
+![Seite mit dem Reservierungsformular für Fahrzeuge, auf der die Dropdown-Liste „Fahrzeugtyp“ mit den Optionen „Auswählen“, „Kompakt“, „Mittel“ und „Standard“ angezeigt wird.](assets/s_ncs_admin_survey_no_storage_conda.png)
 
 Der Container mit Daten zu Nutzfahrzeugen wird dann angezeigt, wenn die Nutzfahrzeugoption (wie in der Sichtbarkeitsbedingung dargestellt) ausgewählt wird:
 
-![](assets/s_ncs_admin_survey_view_a_condition.png)
+![Sichtbarkeitsbedingung des LKW/Transporter: Herkunft ist gleich LKW.](assets/s_ncs_admin_survey_view_a_condition.png)
 
 Wenn der Benutzer ein Nutzfahrzeug auswählt, bietet das Webformular folgende Optionen an:
 
-![](assets/s_ncs_admin_survey_no_storage_condb.png)
+![Reservierungsformular für ein Fahrzeug mit ausgewähltem Umzugswagen und einer Dropdown-Liste für die Klasse Minibus, Pick-up, Cargo Van und 20 Truck.](assets/s_ncs_admin_survey_no_storage_condb.png)
 
 ## Erfasste Informationen verwenden {#using-collected-information}
 
@@ -101,19 +101,19 @@ Die bereitgestellten Antworten für jedes Formular können in Feldern oder Titel
 
 * Für Inhalte, die in einem Feld der Datenbank gespeichert sind:
 
-  ```
+  ```html
   <%=ctx.recipient.@field name%
   ```
 
 * Für Inhalte, die in einer lokalen Variablen gespeichert sind:
 
-  ```
+  ```html
   <%= ctx.vars.variable name %
   ```
 
 * Für Inhalte, die in einem HTML-Textfeld gespeichert sind:
 
-  ```
+  ```html
   <%== HTML field name %
   ```
 
@@ -125,7 +125,7 @@ Die bereitgestellten Antworten für jedes Formular können in Feldern oder Titel
 
 Um die in Formularseiten erfassten Informationen zu speichern, müssen Sie in das Diagramm die Komponente &quot;Speicherung&quot; einfügen.
 
-![](assets/s_ncs_admin_survey_save_box.png)
+![Web-Formular-Diagramm mit den Aktivitäten „Begrüßungsseite“, „Abonnieren“, „Speichern“ und „Beenden“, hervorgehobenes Feld „Speicherung“.](assets/s_ncs_admin_survey_save_box.png)
 
 Sie haben zwei Möglichkeiten, diese Komponente zu verwenden:
 
@@ -139,13 +139,13 @@ Sie haben zwei Möglichkeiten, diese Komponente zu verwenden:
 
 * Um Daten von Empfängerinnen und Empfängern in der Datenbank anzureichern, bearbeiten Sie das Speicherfeld und wählen Sie den Abstimmschlüssel aus. Für die interne Verwendung (normalerweise ein Intranet-System) oder für ein Formular zum Erstellen neuer Profile können Sie die Abstimmfelder auswählen. Das Feld enthält alle Felder der Datenbank, die auf den verschiedenen Seiten der Web-Anwendung verwendet werden:
 
-  ![](assets/s_ncs_admin_survey_save_box_edit.png)
+  ![Dialogfeld „Speicheraktivität“ mit der Baumstruktur der Abstimmoptionen der Empfängerfelder und des Felds „Suchordner“.](assets/s_ncs_admin_survey_save_box_edit.png)
 
 Standardmäßig werden Daten über einen Vorgang des Typs **[!UICONTROL Aktualisieren oder Einfügen]** in die Datenbank importiert. Wenn ein Element in der Datenbank vorhanden ist, wird es aktualisiert (z. B. der auswählte Newsletter oder die eingegebene E-Mail-Adresse). Wenn die Informationen nicht vorhanden sind, werden sie hinzugefügt.
 
 Sie können dieses Verhalten jedoch ändern. Wählen Sie dazu die Wurzel des Elements und danach den auszuführenden Vorgang aus der Dropdown-Liste aus.
 
-![](assets/s_ncs_admin_survey_save_operation.png)
+![Vorgangsliste der Speicheraktivität: Nur Abstimmung, Aktualisieren oder Einfügen, Einfügen, Aktualisieren und Löschen.](assets/s_ncs_admin_survey_save_operation.png)
 
 Sie können einen Suchordner für die Abstimmung und den Erstellungsordner für neue Profile auswählen. Wenn diese Felder leer sind, wird nach den Profilen gesucht und sie werden im Standardordner der Benutzerin bzw. des Benutzers erstellt.
 
