@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 76%
+source-wordcount: '1120'
+ht-degree: 72%
 ---
 # Einstellungen der Campaign-Benutzeroberfläche {#ui-settings}
 
@@ -45,13 +45,13 @@ In Adobe Campaign können Werte für Felder, die eine Dauer angeben (z. B. Gült
 
 Sie können Ordner zu Campaign Explorer hinzufügen, Ansichten erstellen und Berechtigungen zuweisen.
 
-Auf [dieser Seite](../audiences/folders-and-views.md) erfahren Sie, wie Sie Ordner und Ansichten verwalten.
+Erfahren Sie, wie Sie Ordner und Ansichten in [Ordner und Ansichten“ ](../audiences/folders-and-views.md)
 
 ## Verwalten und Anpassen von Listen {#customize-lists}
 
 In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Einträge zählen und Ihre Einstellungen speichern und freigeben.
 
-Darüber hinaus können Sie Filter erstellen und speichern.  Weitere Informationen über Filter finden Sie auf [dieser Seite](../audiences/create-filters.md).
+Darüber hinaus können Sie Filter erstellen und speichern.  Weitere Informationen zu Filtern finden Sie unter [Arbeiten mit Filtern in Adobe Campaign](../audiences/create-filters.md).
 
 ### Anzahl der Einträge {#number-of-records}
 
@@ -107,7 +107,7 @@ Wenn Sie eine Spalte entfernen möchten, wählen Sie sie aus und klicken Sie auf
 
 Sie können das Symbol **[!UICONTROL Werteverteilung]** verwenden, um die Aufteilung der Werte für das ausgewählte Feld im aktuellen Ordner anzeigen.
 
-![](assets/value-distribution.png)
+![Dialogfeld „Verteilung der Werte“, in dem jeder Typ mit seiner Anzahl und seinem Prozentsatz für den Ordner „Services und Abonnements“ aufgeführt ist](assets/value-distribution.png)
 
 
 ### Erstellen einer neuen Spalte {#create-a-new-column}
@@ -145,7 +145,7 @@ Gehen Sie folgendermaßen vor, um eine Listenkonfiguration zu speichern, damit s
 1. Wählen Sie **[!UICONTROL Erweiterte Parameter]** aus und geben Sie im Feld **[!UICONTROL Konfiguration]** einen Namen ein.
 1. Wählen Sie **[!UICONTROL OK]** und danach **[!UICONTROL Speichern]** aus.
 
-Sie können diese Konfiguration dann auf einen anderen Ordner desselben Typs anwenden. Weitere Informationen über Ordner finden Sie auf [dieser Seite](../audiences/folders-and-views.md).
+Sie können diese Konfiguration dann auf einen anderen Ordner desselben Typs anwenden. Weitere Informationen zu Ordnern finden Sie unter [Ordner und Ansichten](../audiences/folders-and-views.md).
 
 ### Exportieren einer Liste {#exporting-a-list}
 
