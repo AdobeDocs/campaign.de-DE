@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '2045'
-ht-degree: 85%
+source-wordcount: '2493'
+ht-degree: 69%
 ---
 # Arbeiten mit Filtern{#create-filters}
 
@@ -62,7 +62,7 @@ Die folgenden Filtertypen sind in Adobe Campaign verfügbar:
 
 Standardmäßig zeigt Adobe Campaign alle Datenbankdatensätze an, die der Benutzer lesen darf. Sie können diese Daten mithilfe der Optionen filtern, die im oberen Abschnitt des Browser-Fensters verfügbar sind.
 
-![](assets/filter_web_zone.png)
+![Empfänger-Dashboard mit hervorgehobenem Filterbereich: Ordnersymbol, Schnellsuchfeld und Sortierliste](assets/filter_web_zone.png)
 
 Es gibt unterschiedliche Möglichkeiten, die angezeigten Daten zu filtern und zu anzuzeigen. Bei Bedarf können diese zusammen verwendet werden. Auf den folgenden Registerkarten erfahren Sie mehr über Filteroptionen.
 
@@ -73,11 +73,11 @@ Es gibt unterschiedliche Möglichkeiten, die angezeigten Daten zu filtern und zu
 
 Um Daten nach ihrem Ordner zu filtern, klicken Sie auf das Symbol **[!UICONTROL Ordner]** und wählen Sie den Ordner aus, der die anzuzeigenden Daten enthält.
 
-![](assets/filter_web_select_folder.png)
+![Ordnermenü wurde von Profilen und Zielgruppen zu Empfängern, Clients und Neu erweitert](assets/filter_web_select_folder.png)
 
 Nur die Profile im Ordner werden angezeigt:
 
-![](assets/filter_web_folder_display.png)
+![Empfängerliste nach Profil und Zielgruppe gefiltert > Empfänger > Clients > Neuer Ordner](assets/filter_web_folder_display.png)
 
 Über das rechts von der Zeile der Ordnerauswahl gelegene Kreuz kann der Standard-Anzeigemodus wieder aktiviert werden.
 
@@ -87,7 +87,7 @@ Je nach Typ der angezeigten Informationen können Sie einen Filter nach Status o
 
 Sie können beispielsweise für Sendungen festlegen, dass nur abgeschlossene Sendungen angezeigt werden sollen, wie unten dargestellt:
 
-![](assets/filter_delivery.png)
+![Dropdown-Liste Status des Versand-Dashboards mit den Status „Alle“, „In Bearbeitung“, „Abgeschlossen“ und anderen Status](assets/filter_delivery.png)
 
 >[!TAB Sortieren nach]
 
@@ -95,13 +95,13 @@ Sie können beispielsweise für Sendungen festlegen, dass nur abgeschlossene Sen
 
 Sie können Aufgaben beispielsweise nach Priorität, Erstellungsdatum oder alphabetischer Reihenfolge sortieren.
 
-![](assets/order_data_sample.png)
+![Aufgaben-Dashboard Sortieren Sie die Dropdown-Liste mit der Bezeichnung von A bis Z, Neueste zuerst, Älteste zuerst und Nach Priorität](assets/order_data_sample.png)
 
 >[!TAB Schnellsuche]
 
 Verwenden Sie das Suchfeld, um schnell auf ein bestimmtes Element zuzugreifen: Geben Sie im Titel oder im internen Namen des Elements enthaltene Zeichen ein und bestätigen Sie die Eingabe, um die Daten auf der Seite automatisch zu filtern.
 
-![](assets/filter_search.png)
+![Das Versand-Dashboard wird durch die Eingabe von Nachrichten in das Suchfeld gefiltert](assets/filter_search.png)
 
 Klicken Sie auf das Kreuz, um den Inhalt des Suchfelds zu löschen und erneut alle vorhandenen Elemente anzuzeigen.
 
@@ -113,7 +113,7 @@ Vordefinierte Filter sind über den Button **Filter** oberhalb jeder Liste verf�
 
 Für die Profile sind beispielsweise die folgenden integrierten Filter verfügbar:
 
-![](assets/built-in-filters.png)
+![Dropdown-Liste „Filter“ der Empfängerliste mit integrierten Filtern wie Geöffnet, aber nicht angeklickt](assets/built-in-filters.png)
 
 Sie können im Knoten **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]** des Explorers auf die Filterdetails zugreifen.
 
@@ -123,11 +123,11 @@ Sie können im Knoten **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filt
 
 Wählen Sie einen Filter aus, um dessen Definition anzuzeigen.
 
-![](assets/predefined-filter-list.png)
+![Knoten „Vordefinierte Filter“ im Explorer, wenn der Filter „Geöffnet“ ausgewählt und seine Filterbedingungen angezeigt werden](assets/predefined-filter-list.png)
 
 Verwenden Sie die letzte Registerkarte, um die gefilterten Daten in der Vorschau anzuzeigen.
 
-![](assets/built-in-filter-preview.png)
+![Registerkarte „Vorschau“ des vordefinierten Filters „Nach Altersbereich“ mit Mindestalter 25 und Höchstalter 45 sowie übereinstimmenden Empfängern](assets/built-in-filter-preview.png)
 
 
 +++  Integrierte vordefinierte Filter für Profile
@@ -243,7 +243,7 @@ Verwenden Sie die letzte Registerkarte, um die gefilterten Daten in der Vorschau
 
 In den Feldern oberhalb jeder Liste können Sie den **vordefinierten Standardfilter** für diese Liste verwenden. Für die Empfängerliste können Sie standardmäßig nach dem Namen und der E-Mail-Adresse filtern.
 
-![](assets/filter-recipient-name.png)
+![Empfängerliste, die mit Lucas im Feld „Standardnachname“ gefiltert wurde und zwei Profile zurückgibt](assets/filter-recipient-name.png)
 
 
 >[!NOTE]
@@ -259,12 +259,12 @@ Gehen Sie wie folgt vor:
 1. Wählen Sie den Filter aus, der als Standardfilter dienen soll.
 1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und kreuzen Sie die Option **[!UICONTROL Standardfilter für den verbundenen Dokumenttyp]** an.
 
-   ![](assets/change-default-filter.png)
+   ![Registerkarte „Parameter“ eines vordefinierten Filters mit ausgewähltem Standardfilter für den verknüpften Dokumenttyp](assets/change-default-filter.png)
 
 1. Deaktivieren Sie diese Option für den aktuellen vordefinierten Filter.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um den Filter anzuwenden.
 1. Gehen Sie zum Ordner &quot;Empfänger&quot; und klicken Sie auf den Button **[!UICONTROL Diesen Filter entfernen]** rechts neben dem aktuellen Filter: Der neue Standardfilter ist verfügbar.
-   ![](assets/updated-default-filter.png)
+   ![Empfängerliste mit dem Standardfilter für Abonnements und der Dropdown-Liste „Service“](assets/updated-default-filter.png)
 
 
 ## Schnellfilter{#quick-filters}
@@ -281,36 +281,36 @@ Gehen Sie wie **vor, um einen** Schnellfilter“ zu erstellen:
 
 1. Klicken Sie mit der rechten Maustaste auf das Feld, nach dem Sie die Daten filtern möchten, und wählen Sie die Option **[!UICONTROL Nach diesem Feld filtern]** aus.
 
-   ![](assets/quick-filter-on-this-field.png)
+   ![Rechtsklick-Menü im Feld Sprache mit hervorgehobenem Filter für dieses Feld](assets/quick-filter-on-this-field.png)
 
    Die Standard-Filterfelder werden oberhalb der Liste angezeigt.
 
-   ![](assets/quick-filter-above-list.png)
+   ![Der Filter Empfängerliste mit einer Sprache gleich Englisch wurde über der Liste hinzugefügt](assets/quick-filter-above-list.png)
 
 1. Wählen Sie die Filteroptionen aus.
 1. Verwenden Sie bei Bedarf das graue Symbol rechts neben einem Filter, um ihn zu entfernen.
 1. Sie können Filter kombinieren, um Ihre Suche weiter einzuengen.
 
-   ![](assets/add-filter-above-the-list.png)
+   ![Schnellfilter Sprache und E-Mail über der Liste kombiniert, mit geöffneter Dropdown-Liste „E-Mail-Operator“](assets/add-filter-above-the-list.png)
 
 
 Wenn Sie nach einem Feld filtern müssen, das im Formular nicht verfügbar ist, sich aber in den Spalten befindet, filtern Sie nach dieser Spalte. Gehen Sie dazu wie folgt vor,
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Liste konfigurieren]**.
 
-   ![](assets/configure-list.png)
+   ![Empfängerliste mit dem Symbol Liste konfigurieren unten rechts in der Liste](assets/configure-list.png)
 
 1. Wählen Sie die anzuzeigende Spalte aus, z. B. das Alter der Empfänger, und klicken Sie auf **Ok**.
 
-   ![](assets/add-age-column.png)
+   ![Dialogfeld „Listenkonfiguration“ mit dem Feld „Alter“, das zu den Ausgabespalten hinzugefügt wurde](assets/add-age-column.png)
 
 1. Klicken Sie anschließend mit der rechten Maustaste in der Empfängerliste auf die Spalte **Alter** und wählen Sie **[!UICONTROL Nach dieser Spalte filtern]** aus.
 
-   ![](assets/age-filter-on-this-column.png)
+   ![Rechtsklick-Menü in der Empfängerliste mit hervorgehobenem Filter auf diese Spalte, angezeigte Spalte „Alter“](assets/age-filter-on-this-column.png)
 
    Nun können Sie die Filteroptionen bezüglich des Alters auswählen. Fügen Sie einen weiteren Altersfilter hinzu, um einen Bereich zu definieren.
 
-   ![](assets/filter-on-age.png)
+   ![Zwei Altersfilter, größer als 20 und kleiner als 30, geben vier Empfänger zurück](assets/filter-on-age.png)
 
 ## Erweiterte Filter{#advanced-filters}
 
@@ -320,7 +320,7 @@ Kombinieren Sie komplexe Kriterien in benutzerdefinierten **erweiterten Filtern*
 
 Um einen **erweiterten Filter** zu erstellen, klicken Sie auf den Button **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Erweiterte Filter...]** aus.
 
-![](assets/adv-filter.png)
+![Dropdown-Liste „Filter“ der Empfängerliste mit hervorgehobenem „Erweiterter Filter…“ am unteren Rand](assets/adv-filter.png)
 
 Alternativ können Sie mit der rechten Maustaste in die Liste der zu filternden Daten klicken und **[!UICONTROL Erweiterte Filter...]** auswählen.
 
@@ -328,16 +328,16 @@ Definieren Sie die Filterbedingungen. Im folgenden Beispiel filtern Sie nach Emp
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Ausdruck bearbeiten]** der Spalte **[!UICONTROL Ausdruck]**.
 
-   ![](assets/edit-exp.png)
+   ![Dialogfeld „Erweiterter Filter“ mit dem Symbol Ausdruck bearbeiten in der Spalte Ausdruck](assets/edit-exp.png)
 
 1. Wählen Sie das Feld aus, nach dem gefiltert werden soll.
 1. Wählen Sie in der Dropdown-Liste den anzuwendenden Operator aus.
 
-   ![](assets/select-operator.png)
+   ![Dialogfeld „Erweiterter Filter“ mit dem Ausdruck „Konto #&quot; und geöffneter Dropdown-Liste „Operator“](assets/select-operator.png)
 
 1. Wählen Sie einen erwarteten Wert aus der Spalte **[!UICONTROL Wert]** aus. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Um eine Filterbedingung hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/add-an-exp.png)
+   ![Das Dialogfeld für den erweiterten Filter mit der Kontonummer beginnt mit NL und der neuen Zeile Und wurde hinzugefügt](assets/add-an-exp.png)
 
    >[!NOTE]
    >
@@ -345,13 +345,13 @@ Definieren Sie die Filterbedingungen. Im folgenden Beispiel filtern Sie nach Emp
 
 1. Es stehen drei Operatoren zur Kombination von Ausdrücken zur Verfügung: **Und**, **Oder**, **Außer**. Klicken Sie auf den Pfeil, um zu **Oder** zu wechseln.
 
-   ![](assets/select-or-operator.png)
+   ![Dialogfeld „Erweiterter Filter“ mit den Operatoren „Und“, „Oder“ und „Außer“ wird bei der zweiten Bedingung „Stadt“ geöffnet](assets/select-or-operator.png)
 
 1. Klicken Sie auf **[!UICONTROL OK]**, um den Filter zu erstellen und ihn auf die aktuelle Liste anzuwenden.
 
 Der angewendete Filter wird oberhalb der Liste angezeigt.
 
-![](assets/adv-filter-link.png)
+![Empfängerliste mit angewendetem erweiterten Filter, der als blauer Link über der Liste angezeigt wird](assets/adv-filter-link.png)
 
 Um diesen Filter zu bearbeiten oder zu ändern, klicken Sie oberhalb der Liste auf den Link mit der Beschreibung in Blau.
 
@@ -365,15 +365,15 @@ Gehen Sie wie folgt vor, um einen erweiterten Filter zu speichern:
 1. Klicken Sie auf die Beschreibung des Filters, um ihn zu bearbeiten.
 1. Klicken Sie auf **[!UICONTROL Als Filter speichern]** rechts oben im Fenster.
 
-   ![](assets/save-as-filter.png)
+   ![Dialogfeld „Erweiterte Filter“ mit dem Symbol Als Filter speichern oben rechts](assets/save-as-filter.png)
 
 1. Geben Sie einen Namen für diesen Filter ein und speichern Sie ihn.
 
-   ![](assets/application-filter-save.png)
+   ![Dialog Anwendungsfilter mit der Bezeichnung Paris - LA New Users und den Filterbedingungen](assets/application-filter-save.png)
 
 Der Filter wird zu den [vordefinierten Filtern](#predefined-filters) hinzugefügt. Er kann von diesem Knoten aus aktualisiert werden.
 
-![](assets/added-to-predefined-filters.png)
+![Knoten mit vordefinierten Filtern, der den neuen Filter Paris - LA Neue Benutzer mit seiner Definition auflistet](assets/added-to-predefined-filters.png)
 
 >[!NOTE]
 >
@@ -383,7 +383,7 @@ Der Filter wird zu den [vordefinierten Filtern](#predefined-filters) hinzugefüg
 
 Dieser Filter ist auch in den vordefinierten Filtern der Empfängerliste verfügbar.
 
-![](assets/access-to-new-predefined-filter.png)
+![Dropdown-Liste „Filter“ der Empfängerliste mit hervorgehobenem neuen Filter „Paris - LA Neue Benutzer“](assets/access-to-new-predefined-filter.png)
 
 
 
@@ -393,7 +393,7 @@ Sie können Filter verwenden und kombinieren, um ein Segment der Zielpopulation 
 
 Nach dem Speichern sind erweiterte Filter verfügbar, wenn Sie die Zielpopulation einer Nachricht im Abschnitt **[!UICONTROL Benutzerfilter]** auswählen.
 
-![](assets/adv-filter-target-type.png)
+![Der Dialog „Zieltyp“ mit dem gespeicherten Filter „Paris - LA New Users“ wurde unter „Benutzerfilter“ ausgewählt](assets/adv-filter-target-type.png)
 
 
 >[!NOTE]
@@ -409,7 +409,7 @@ In diesen Beispielen erfahren Sie, wie Sie erweiterte Abfragen erstellen:
 
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"} erfahren Sie, wie Sie einfache Empfängerattribute für Ihr Targeting verwenden können.
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de){target="_blank"} erfahren Sie, wie Sie nach Empfängern filtern können, die in den letzten 7 Tagen nicht kontaktiert wurden.
-* Auf [&#x200B; Seite erfahren Sie, wie Sie eine Liste der Benutzer abrufen können, die nach aktiven Konten gefiltert werden &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"}.
+* Auf [ Seite erfahren Sie, wie Sie eine Liste der Benutzer abrufen können, die nach aktiven Konten gefiltert werden ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"}.
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine Zielgruppe für Geburtstags-E-Mails erstellen können.
 
 
@@ -425,7 +425,7 @@ Für vordefinierte Filter sind erweiterte Parameter verfügbar. Um darauf zuzugr
 
 * Um ein Formular zur Auswahl der Filterkriterien zu definieren, wählen Sie die Option **[!UICONTROL Nutzung eines Formulars zur Parametereingabe]** aus. Dieses Formular muss in der Registerkarte **[!UICONTROL Formular]** im XML-Format eingegeben werden. Zum Beispiel zeigt der integrierte vordefinierte Filter **[!UICONTROL Empfänger, die geöffnet haben]**, der in der Empfängerliste verfügbar ist, ein Filterfeld an, mit dem Sie den Versand auswählen können, für den der Filter gilt.
 
-![](assets/predefined-filters-parameters.png)
+![Registerkarte „Parameter“ eines vordefinierten Filters und des Dialogfelds „Erweiterte Parameter“ mit der Option Filter nicht einschränken](assets/predefined-filters-parameters.png)
 
 
 * Über den Link **[!UICONTROL Erweiterte Parameter]** können Sie zusätzliche Einstellungen definieren.

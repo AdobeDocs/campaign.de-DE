@@ -29,18 +29,18 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 92%
+source-wordcount: '383'
+ht-degree: 80%
 ---
 # Erste Schritte mit Profilen und Zielgruppen{#gs-profiles-and-audiences}
 
 Profile sind in der Campaign-Datenbank gespeicherte Kontakte, z. B. Kunden, Abonnenten eines Services oder potenzielle Kunden. Die Akquise von Profilen und die Datenbankerstellung können auf viele verschiedene Weisen erfolgen: Online-Akquise über Web-Formulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie Marketing-Verlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PI-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen. Profile enthalten alle Informationen, die für Zielgruppenbestimmung, Qualifizierung und Tracking von Personen erforderlich sind.
 
-Ein Profil ist ein Datensatz in der Tabelle **nmsRecipient** oder einer externen Tabelle, in der alle Profilattribute wie Vorname, Nachname, E-Mail-Adresse, Cookie-ID, Kunden-ID, Mobilgerät-Kennung oder andere für einen bestimmten Kanal relevante Informationen gespeichert werden. Andere mit der Empfängertabelle verknüpfte Tabellen enthalten profilbezogene Daten, z. B. die Tabelle &quot;Versand-Logs&quot;, die die Datensätze aller an Empfänger gesendeten Sendungen enthält. Weitere Informationen zu den in Campaign integrierten Profil- und Empfängertabellen finden Sie in [diesem Abschnitt](../dev/datamodel.md#ootb-profiles).
+Ein Profil ist ein Datensatz in der Tabelle **nmsRecipient** oder einer externen Tabelle, in der alle Profilattribute wie Vorname, Nachname, E-Mail-Adresse, Cookie-ID, Kunden-ID, Mobilgerät-Kennung oder andere für einen bestimmten Kanal relevante Informationen gespeichert werden. Andere mit der Empfängertabelle verknüpfte Tabellen enthalten profilbezogene Daten, z. B. die Tabelle &quot;Versand-Logs&quot;, die die Datensätze aller an Empfänger gesendeten Sendungen enthält. Weitere Informationen über integrierte Profile und Empfängertabellen finden Sie unter [Integrierte Profiltabelle](../dev/datamodel.md#ootb-profiles).
 
-![](assets/recipients-in-explorer.png)
+![Explorer-Struktur mit ausgewähltem Knoten „Empfänger“, in der Profile und Details des ausgewählten Empfängers aufgelistet sind.](assets/recipients-in-explorer.png)
 
 In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) die **Empfänger**.
 
@@ -53,6 +53,6 @@ Um Profildaten zu Adobe Campaign hinzuzufügen, haben Sie folgende Möglichkeite
 * [Zuordnen zu einer externen Datenbank](../connect/fda.md), in der Profile gespeichert werden
 * Manuelles Eingeben von Profilen über die Client-Konsole, wie unten beschrieben:
 
-![](assets/create-profile.png)
+![Dialogfeld „Neuer Empfänger“ von Erstellen auf der Seite „Empfänger“ mit allgemeinen Feldern wie Vorname und E-Mail geöffnet.](assets/create-profile.png)
 
 Nach dem Import können Sie Zielgruppen erstellen, um Ihre Nachrichten zu versenden. [In diesem Abschnitt](create-audiences.md) erfahren Sie, wie Sie Zielgruppen erstellen.

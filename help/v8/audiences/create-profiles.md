@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 88%
+source-wordcount: '145'
+ht-degree: 57%
 ---
 # Manuelles Erstellen von Profilen{#create-profiles-manual}
 
@@ -38,15 +38,15 @@ Gehen Sie wie folgt vor, um einen Empfänger manuell zu erstellen:
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Profile und Zielgruppen]** und wählen Sie die Kategorie **[!UICONTROL Empfänger]** aus.
 
-   ![](assets/profiles-and-targets.png)
+   ![Die Registerkarte Profile und Zielgruppen wurde auf der Startseite ausgewählt, mit der Empfängerliste und der Schaltfläche Erstellen.](assets/profiles-and-targets.png)
 
    Standardmäßig werden Empfänger in der Baumstruktur im Knoten **[!UICONTROL Profile und Zielgruppen > Empfänger]** gespeichert. Sie können Empfänger auch in dieser Ansicht erstellen.
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
 1. Machen Sie die erforderlichen Angaben zum Profil.
 
-   ![](assets/new-recipient.png)
+   ![Empfängerformular mit der ausgefüllten Registerkarte Allgemein: Vorname, Nachname, E-Mail, Status und Herkunft sowie Speichern und Abbrechen.](assets/new-recipient.png)
 
-   Auf [dieser Seite](view-profiles.md#edit-a-profiles) erfahren Sie mehr über das integrierte Empfängerformular.
+   Erfahren Sie mehr über das integrierte Empfängerformular in [Bearbeiten eines Profils](view-profiles.md#edit-a-profiles).
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**: Das Profil wird zum Standard-Empfängerordner in Campaign hinzugefügt.

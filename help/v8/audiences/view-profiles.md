@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 81%
+source-wordcount: '599'
+ht-degree: 62%
 ---
 # Anzeige vorhandener Profile {#view-profiles}
 
@@ -42,11 +42,11 @@ Gehen Sie zu **[!UICONTROL Profile und Zielgruppen]**, um auf in der Adobe Campa
 
 Auf dieser Seite können Sie [neuen Empfänger erstellen](create-profiles.md) einen vorhandenen Empfänger bearbeiten und auf seine Profildetails zugreifen.
 
-![](assets/profiles-and-targets.png)
+![Registerkarte Profile und Zielgruppen der Campaign-Startseite, auf der die Empfängerliste mit der Schaltfläche Erstellen angezeigt wird](assets/profiles-and-targets.png)
 
 Erweiterte Möglichkeiten zur Bearbeitung von Profilen erhalten Sie, wenn Sie über den Link **[!UICONTROL Explorer]** auf der Adobe Campaign-Startseite auf die Campaign-Baumstruktur zugreifen.
 
-![](assets/recipients-in-explorer.png)
+![Explorer-Struktur mit ausgewähltem Ordner „Empfänger“, der Empfängerliste und den Details des ausgewählten Empfängers](assets/recipients-in-explorer.png)
 
 
 >[!CAUTION]
@@ -58,7 +58,7 @@ Erweiterte Möglichkeiten zur Bearbeitung von Profilen erhalten Sie, wenn Sie ü
 
 Wählen Sie ein Profil aus, um auf einem neuen Tab Details anzuzeigen.
 
-![](assets/edit-a-profile.png)
+![Registerkarte „Empfängerprofil“ mit den Abschnitten „Allgemein“, „Kontaktinformationen“, „Sonstige“, „Abonnements“, „Sendungen“ und „Tracking“](assets/edit-a-profile.png)
 
 Die Informationen zu einem Profil werden nach Themen geordnet in verschiedenen Tabs angezeigt. Diese Tabs und ihr Inhalt variieren je nach Ihrer Konfiguration und den installierten Packages.
 
@@ -66,7 +66,7 @@ Für einen typischen integrierten Empfänger können Sie auf die folgenden Tabs 
 
 * **[!UICONTROL Allgemein]**: für alle allgemeinen Profildaten. Insbesondere enthält dieser Tab den Nachnamen, Vornamen, die E-Mail-Adresse, das E-Mail-Format usw.
 
-  Auf dieser Registerkarte wird auch die **Opt-out**-Kennzeichnung für das Profil gespeichert. Wenn die Option **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** aktiviert ist, befindet sich das Profil auf der -Blockierungsliste. Diese Informationen werden den Kontaktdaten hinzugefügt, wenn der Empfänger beispielsweise auf einen Abmelde-Link in einem Newsletter geklickt hat. Ein solcher Empfänger ist auf keinem Kanal (E-Mail, Briefpost usw.) mehr ausgewählt. Weitere Informationen hierzu finden Sie auf [dieser Seite](../send/quarantines.md).
+  Auf dieser Registerkarte wird auch die **Opt-out**-Kennzeichnung für das Profil gespeichert. Wenn die Option **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** aktiviert ist, befindet sich das Profil auf der -Blockierungsliste. Diese Informationen werden den Kontaktdaten hinzugefügt, wenn der Empfänger beispielsweise auf einen Abmelde-Link in einem Newsletter geklickt hat. Ein solcher Empfänger ist auf keinem Kanal (E-Mail, Briefpost usw.) mehr ausgewählt. Weitere Informationen hierzu finden Sie unter [Quarantäneverwaltung in Campaign](../send/quarantines.md).
 
 * **Postanschrift**, die die Briefpost-Adresse des ausgewählten Profils enthält.
 
@@ -76,15 +76,15 @@ Für einen typischen integrierten Empfänger können Sie auf die folgenden Tabs 
 
   Verwenden Sie das Kontextmenü **[!UICONTROL Feldeigenschaften...]**, um die Namen der Felder zu ändern und ihr Format zu definieren.
 
-  ![](assets/other-tab-field-properties.png)
+  ![Registerkarte „Sonstige“ eines Empfängers, auf der die Option Feldeigenschaften im Kontextmenü des Felds „Boolesch 1“ ausgewählt ist](assets/other-tab-field-properties.png)
 
   Geben Sie die neuen Einstellungen wie folgt ein:
 
-  ![](assets/change-field-properties.png)
+  ![Dialogfeld „Feldeigenschaften“, wobei das Feld „Bezeichnung“ auf „Luma Gold-Programm“ und das Feld „Beschreibung“ ausgefüllt ist](assets/change-field-properties.png)
 
   Überprüfen Sie die Aktualisierung in der Benutzeroberfläche:
 
-  ![](assets/other-tab-updated.png)
+  ![Andere Registerkarte eines Empfängers, auf der das boolesche Feld 1 jetzt als Luma Gold-Programm mit dem Wert Ja oder Nein angezeigt wird](assets/other-tab-updated.png)
 
 
   >[!CAUTION]
@@ -94,7 +94,7 @@ Für einen typischen integrierten Empfänger können Sie auf die folgenden Tabs 
 
 * **Abonnements**: für alle aktiven Abonnements von Services. Verwenden Sie die **Verlauf**, um auf die Details der An- und Abmeldungen für diesen Kontakt zuzugreifen.
 
-  ![](assets/subscription-tab.png)
+  ![Registerkarte Abonnements eines Empfängers, auf der aktive Abonnements mit den Registerkarten Aktive Abonnements und Verlauf aufgelistet sind](assets/subscription-tab.png)
 
   Weitere Informationen zu Abonnements finden Sie in [diesem Abschnitt](../start/subscriptions.md).
 

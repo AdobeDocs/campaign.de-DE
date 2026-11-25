@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 82%
+source-wordcount: '308'
+ht-degree: 78%
 ---
 # Importieren von Profilen aus einer Datei{#create-profiles}
 
@@ -51,7 +51,7 @@ Bereiten Sie Ihre Daten in einer Datei vor und strukturieren Sie sie, um sie mit
 
 ### Daten aus einer Datei laden {#data-from-a-file}
 
-Die im Workflow verarbeiteten Daten können aus einer strukturierten Datei extrahiert werden, sodass sie in Adobe Campaign importiert werden können. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file){target="_blank"}.
+Die im Workflow verarbeiteten Daten können aus einer strukturierten Datei extrahiert werden, sodass sie in Adobe Campaign importiert werden können. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file){target="_blank"}.
 
 Nachdem die Daten erfasst wurden, können Sie sie in Ihren Workflows verwenden, um beispielsweise einen Versand anzureichern oder die Datenbank zu aktualisieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=de){target="_blank"}.
 
@@ -61,6 +61,6 @@ Adobe Campaign bietet eine allgemeine Importfunktion, mit der Sie beispielsweise
 
 Allgemeine Importe werden über das Menü **[!UICONTROL Profile und Zielgruppen > Aufträge]** auf der Adobe Campaign-Startseite verwaltet.
 
-![](assets/new-import-job.png)
+![Auftragsliste unter Profile und Zielgruppen mit dem Menü Erstellen, das für „Neuer Import“ und „Neuer Export“ geöffnet ist.](assets/new-import-job.png)
 
-Die Schritte zum Ausführen eines allgemeinen Imports werden in der [Dokumentation zu Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de#getting-started){target="_blank"}.
+Die Schritte zum Ausführen eines allgemeinen Imports werden in der [Dokumentation zu Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=de#getting-started){target="_blank"}.
