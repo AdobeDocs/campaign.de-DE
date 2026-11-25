@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 96%
+source-wordcount: '1591'
+ht-degree: 87%
 ---
 # Hinzufügen eines Angebots auf einer Web-Seite{#add-an-offer-in-web}
 
@@ -35,7 +35,7 @@ Um das Angebotsmodul auf einer Web-Seite aufzurufen, fügen Sie einen JavaScript
 
 Die URL des Aufruf-Scripts stellt sich wie folgt dar:
 
-```
+```xml
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
@@ -61,13 +61,13 @@ Die HTML-Seite muss ein Element mit einem &quot;@id&quot;-Attribut mit dem Wert 
 
 Im vorliegenden Beispiel nimmt das Attribut @id den Wert &quot;i_SPC12&quot; an, wobei &quot;SPC12&quot; der interne Name der zuvor erstellten Platzierung ist:
 
-```
+```xml
 <div id="i_SPC12"></div>
 ```
 
 Im vorliegenden Beispiel stellt sich die URL des Script-Aufrufs wie folgt dar (&quot;OE3&quot; ist der interne Name der Live-Umgebung):
 
-```
+```xml
 <script id="interactionProposalScript" src="https://instance.adobe.org:8080/nl/interactionProposal.js?env=OE3" type="text/javascript"></script>
 ```
 
@@ -83,7 +83,7 @@ Dies ermöglicht es, verschiedene Platzierungen innerhalb einer Seite mit einer 
 
 Der Inhalt der Angebotsdarstellung wird durch das Angebotsmodul an die HTML-Seite zurückgegeben:
 
-```
+```xml
 <div id="banner_header">
  <div id="i_SPC12">
    <table>
@@ -107,11 +107,11 @@ Der Inhalt der Angebotsdarstellung wird durch das Angebotsmodul an die HTML-Seit
 
 ### Angebot für einen identifizierten Kontakt {#presenting-an-identified-offer}
 
-Um einem identifizierten Kontakt ein Angebot zu unterbreiten, läuft der Prozess ähnlich ab, wie in [&#x200B; Abschnitt beschrieben](#presenting-an-anonymous-offer).
+Um einem identifizierten Kontakt ein Angebot zu unterbreiten, läuft der Prozess ähnlich ab, wie in [ Abschnitt beschrieben](#presenting-an-anonymous-offer).
 
 Im Inhalt der Web-Seite müssen Sie das folgende Skript hinzufügen, das während des Aufrufs an das Modul den Kontakt identifiziert:
 
-```
+```xml
 <script type="text/javascript">
   interactionTarget = <contact_identifier>;
 </script>
@@ -119,7 +119,7 @@ Im Inhalt der Web-Seite müssen Sie das folgende Skript hinzufügen, das währen
 
 1. Klicken Sie in der Platzierung, die von der Webseite aus aufgerufen werden soll, auf **[!UICONTROL Erweiterte Parameter]** und fügen Sie mindestens einen Identifikationsschlüssel hinzu.
 
-   ![](assets/interaction_htmlmode_001.png)
+   ![Erweiterte Parameter Registerkarte Zielidentifizierung mit Schlüsselpfad-@email und dem Feld Nachname , das als zweiter Schlüssel hinzugefügt wird](assets/interaction_htmlmode_001.png)
 
    Im vorliegenden Beispiel handelt es sich um einen zusammengesetzten Identifikationsschlüssel, da er sowohl auf die E-Mail-Adresse als auch auf den Namen des Kontakts Bezug nimmt.
 
@@ -127,7 +127,7 @@ Im Inhalt der Web-Seite müssen Sie das folgende Skript hinzufügen, das währen
 
    In folgendem Beispiel-Code hat sich der Kontakt auf der Web-Seite angemeldet. Er wurde bei der Abfrage des Angebotsmoduls mithilfe seiner E-Mail-Adresse und seines Familiennamens identifiziert:
 
-   ```
+   ```xml
    <script type="text/javascript">
      interactionTarget = myEmail|myName;
    </script>
@@ -141,7 +141,7 @@ Die Verwendung einer HTML-Rendering-Funktion bietet den Vorteil, das die HTML-Da
 1. Kreuzen Sie die Option **[!UICONTROL HTML-Rendering-Funktion überschreiben]** an.
 1. Geben Sie dann im Tab **[!UICONTROL HTML-Rendering]** die den in der Platzierung für den Angebotsinhalt definierten Feldern entsprechenden Variablen ein.
 
-   ![](assets/interaction_htmlmode_002.png)
+   ![Dialogfeld „Platzierungsfunktionen bearbeiten“ auf der Registerkarte &quot;HTML-Rendering“ mit der Option &quot;HTML-Rendering-Funktion überschreiben“ und dem Skript](assets/interaction_htmlmode_002.png)
 
    Im vorliegenden Beispiel wird das Angebot in Form eines Webseitenbanners unterbreitet. Es besteht aus einem anklickbaren Bild mit Untertitel, entsprechend den im Angebotsinhalt definierten Feldern.
 
@@ -153,7 +153,7 @@ Mit dem Campaign **Interaction**-Modul können Sie einen XML-Knoten an die HTML-
 
 Die Angebotsmodul-Abfrage stellt sich wie folgt dar:
 
-```
+```xml
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
@@ -171,7 +171,7 @@ Die Angebotsmodul-Abfrage stellt sich wie folgt dar:
 
 Der zurückgegebene XML-Knoten stellt sich wie folgt dar:
 
-```
+```xml
 <propositions>
  <proposition id="" offer-id="" weight="" rank="" space="" div=""> //proposition identifiers
    ...XML content defined in Adobe Campaign...
@@ -184,9 +184,9 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
 1. **Erstellen einer Umgebung und einer Platzierung**
 
-   Weiterführende Informationen zur Erstellung einer Umgebung finden Sie auf [dieser Seite](interaction-env.md).
+   Weitere Informationen zum Erstellen einer Umgebung finden Sie unter [Arbeiten mit Campaign Interaction-Umgebungen](interaction-env.md).
 
-   Die Erstellung von Platzierungen wird auf [dieser Seite](interaction-offer-spaces.md) genauer erläutert.
+   Weitere Informationen zur Erstellung von Platzierungen finden Sie unter [Campaign Interaction-Platzierungen](interaction-offer-spaces.md).
 
 1. **Erweitern des Angebotsschemas zur Hinzufügung neuer Felder**
 
@@ -194,7 +194,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Der Name des Schemas im Beispiel lautet **cus:offer**.
 
-   ```
+   ```xml
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
               desc="" entitySchema="xtk:srcSchema" extendedSchema="nms:offer" img="nms:offer.png"
               label="Marketing offers" labelSingular="Marketing offers" lastModified="2013-01-18 15:20:18.373Z"
@@ -231,7 +231,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Fügen Sie im Abschnitt &quot;Views&quot; die zwei neuen Felder mit folgendem Inhalt ein:
 
-   ```
+   ```xml
    <input label="Title 2" margin-right="5" prebuildSubForm="false" type="subFormLink" xpath="title2_jst">
         <form label="Edit title 2" name="editForm" nothingToSave="true">
             <input nolabel="true" toolbarAlign="horizontal" type="jstEdit" xpath="." xpathInsert="/ignored/customizeTitle2">
@@ -256,7 +256,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Kommentieren Sie das Ziel-URL-Feld:
 
-   ![](assets/interaction_xmlmode_form_001.png)
+   ![Angebotsdarstellungsformular-XML mit auskommentiertem Ziel-URL-Eingabeblock](assets/interaction_xmlmode_form_001.png)
 
    >[!CAUTION]
    >
@@ -264,17 +264,17 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Im Formular der Angebotsdarstellungen schlagen sich die Änderungen wie folgt nieder:
 
-   ![](assets/interaction_xmlmode_form.png)
+   ![Registerkarte „Angebotsinhalt“ mit leeren Feldern für Titel, Ziel-URL und Bild-URL oberhalb des HTML-Inhaltseditors](assets/interaction_xmlmode_form.png)
 
    Die Felder **[!UICONTROL Titel 2]** und **[!UICONTROL Preis]** wurden eingefügt und das Feld **[!UICONTROL Ziel-URL]** wird nicht mehr angezeigt.
 
 1. **Erstellen eines Angebots**
 
-   Weiterführende Informationen zum Erstellen von Angeboten finden Sie auf [dieser Seite](interaction-offer.md).
+   Weitere Informationen zum Erstellen von Angeboten finden Sie unter [Campaign Interaction-](interaction-offer.md).
 
    Im vorliegenden Anwendungsbeispiel wird das Angebot wie folgt konfiguriert:
 
-   ![](assets/interaction_xmlmode_offer.png)
+   ![Registerkarte „Angebotsinhalt“ mit ausgefülltem Titel, Ziel-URL und Bild-URL und HTML-Inhalt mit recipient.firstName](assets/interaction_xmlmode_offer.png)
 
 1. **Genehmigen des Angebots**
 
@@ -284,7 +284,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Die Abfrage des Angebotsmoduls in der HTML-Seite stellt sich wie folgt dar:
 
-   ```
+   ```xml
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
@@ -294,7 +294,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Der vom Angebotsmodul zurückgegebene XML-Knoten stellt sich wie folgt dar:
 
-   ```
+   ```xml
    <propositions>
     <proposition id="a28002" offer-id="10322005" weight="1" rank="1" space="SPC14" div="i_SPC14">
      <xmlOfferView>
@@ -320,14 +320,14 @@ Es ist möglich, eine Angebotsunterbreitung mithilfe einer XML-Rendering-Funktio
 
    Die Funktion kann folgendem Beispiel entsprechen:
 
-   ```
+   ```javascript
    function (proposition) {
      delete proposition.@id;
      proposition.@newAttribute = "newValue";
    } 
    ```
 
-![](assets/interaction_xmlmode_001.png)
+![Dialogfeld „Funktionen bearbeiten“ der Registerkarte „XML-Rendering“ mit der Option „XML-Rendering-Funktion überschreiben“ und dem Skript](assets/interaction_xmlmode_001.png)
 
 ## Einrichten einer SOAP-Integration
 
@@ -367,7 +367,7 @@ Fügen Sie den Befehl **nms:interaction#UpdateStatus** zur URL hinzu, gefolgt vo
 
 Unten stehend ein Beispiel-Code eines SOAP-Aufrufs:
 
-```
+```html
 <%
   var space = request.parameters.sp
   var cnx = new HttpSoapConnection(

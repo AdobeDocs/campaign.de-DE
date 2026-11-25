@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 89%
+source-wordcount: '1067'
+ht-degree: 73%
 ---
 # Platzierungen erstellen{#creating-offer-spaces}
 
@@ -37,27 +37,27 @@ Als **technischer Administrator** können Sie in der Design-Umgebung Angebotspla
 
 Das HTML-Rendering wird über eine Rendering-Funktion erstellt. Die Reihenfolge der in der Rendering-Funktion definierten Felder muss mit der im Content konfigurierten Sequenz übereinstimmen.
 
-![](assets/offer_space_create_009.png)
+![Platzierungseigenschaften mit den erforderlichen Feldern Bild-URL, Ziel-URL, Titel und eine entsprechende HTML-Rendering-Funktion](assets/offer_space_create_009.png)
 
 Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
 1. Klicken Sie in der Liste der Platzierungen auf **[!UICONTROL Neu]**.
 
-   ![](assets/offer_space_create_001.png)
+   ![Platzierungsliste mit hervorgehobener Schaltfläche „Neu“ und ausgewählter E-Mail-Platzierung](assets/offer_space_create_001.png)
 
 1. Benennen Sie die Platzierung und wählen Sie aus der Dropdown-Liste den E-Mail-Kanal aus.
 
-   ![](assets/offer_space_create_002.png)
+   ![Registerkarte „Eigenschaften“ der Platzierung mit der Bezeichnung E-Mail / Clients und dem Kanal E-Mail](assets/offer_space_create_002.png)
 
 1. Markieren Sie die **[!UICONTROL Einzelmodus aktivieren]**.
 
 1. Klicken Sie dann im Bereich **[!UICONTROL Felder des Angebotsinhalts]** auf **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/offer_space_create_003.png)
+   ![Platzierungseigenschaften mit der Schaltfläche Hinzufügen neben der Liste der Felder mit Angebotsinhalten](assets/offer_space_create_003.png)
 
 1. Wählen Sie aus dem **[!UICONTROL Inhalt]**-Knoten unter Berücksichtigung der Reihenfolge folgende Felder aus: **[!UICONTROL Titel]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und schließlich **[!UICONTROL Ziel-URL]**.
 
-   ![](assets/offer_space_create_004.png)
+   ![Wählen Sie ein Ausdrucksdialogfeld aus, in dem die Inhaltsfelder, wie Bild-URL, Textinhalt und Titel, aufgelistet sind](assets/offer_space_create_004.png)
 
 1. Machen Sie jedes Feld zum **[!UICONTROL Pflichtfeld]**.
 
@@ -65,7 +65,7 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
    >
    >Diese Option wird in der Vorschau verwendet und macht die Platzierungen bei der Veröffentlichung ungültig, wenn eines der Pflichtfelder im Angebot fehlt. Wenn jedoch ein Angebot bereits auf einer Platzierung live ist, werden diese Kriterien nicht berücksichtigt.
 
-   ![](assets/offer_space_create_005.png)
+   ![Liste der Inhaltsfelder des Angebots mit Titel, Bild-URL, HTML-Inhalt und Ziel-URL, alle erforderlich](assets/offer_space_create_005.png)
 
 1. Klicken Sie auf **[!UICONTROL Funktionen bearbeiten...]**, um eine Rendering-Funktion zu erstellen.
 
@@ -73,12 +73,12 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    **Hinweis** – Das XML-Format ist auf eingehende Interaktionen beschränkt, die in dieser Produktversion nicht verfügbar sind. [Weitere Informationen](../start/v7-to-v8.md#gs-unavailable-features)
 
-   ![](assets/offer_space_create_006.png)_
+   ![Platzierungseigenschaften mit hervorgehobenem Link „Funktionen bearbeiten“ unter „Rendering-Funktionen](assets/offer_space_create_006.png)_
 
 1. Gehen Sie in den **[!UICONTROL HTML-Rendering]**-Tab und kreuzen Sie die Option **[!UICONTROL HTML-Rendering-Funktion überschreiben]** an.
 1. Geben Sie nun Ihre Rendering-Funktion ein.
 
-   ![](assets/offer_space_create_007.png)
+   ![Registerkarte &quot;HTML-Rendering“ mit der Option &quot;HTML-Rendering-Funktion überschreiben“ und einer Beispielfunktion](assets/offer_space_create_007.png)
 
 ## Vorschlagsstatus {#offer-proposition-statuses}
 
@@ -116,7 +116,7 @@ Gehen Sie dazu wie folgt vor:
 1. Gehen Sie in den **[!UICONTROL Speicherung]**-Tab der zu konfigurierenden Platzierung.
 1. Wählen Sie den Status aus, der bei der Vorschlagserzeugung zugewiesen werden soll.
 
-   ![](assets/offer_update_status_001.png)
+   ![Registerkarte Speicherung, auf der die Liste Vorschlagsstatus geöffnet und der angezeigte Status ausgewählt ist](assets/offer_update_status_001.png)
 
 ### Angebotsstatus bei Akzeptanz des Vorschlags {#configuring-the-status-when-the-proposition-is-accepted}
 
@@ -127,20 +127,20 @@ Gehen Sie dazu wie folgt vor:
 1. Gehen Sie in den **[!UICONTROL Speicherung]**-Tab der zu konfigurierenden Platzierung.
 1. Wählen Sie den Status aus, den der Vorschlag erhalten soll, nachdem er akzeptiert wurde.
 
-   ![](assets/offer_update_status_002.png)
+   ![Registerkarte „Speicherung“ mit geöffneter Liste „Bei Akzeptanzstatus“ und ausgewähltem Status „Akzeptiert“](assets/offer_update_status_002.png)
 
 
 **Eingehende Interaktionen**
 
 In der Registerkarte **[!UICONTROL Speicherung]** können Sie nur Status für **vorgeschlagene** und **akzeptierte** Angebotsvorschläge definieren. Für eingehende Interaktionen sollte der Status der Angebotsvorschläge direkt in der URL für den Aufruf des Angebotsmoduls angegeben werden und nicht über die Schnittstelle. Auf diese Weise können Sie festlegen, welcher Status in anderen Fällen angewendet werden soll, z. B. wenn ein Angebotsvorschlag abgelehnt wird.
 
-```
+```xml
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
 So enthält beispielsweise der auf der **Neobank**-Website angezeigte Vorschlag mit Kennung **40004** zum Abschluss einer **Hausratsversicherung** folgende URL:
 
-```
+```xml
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
@@ -150,13 +150,13 @@ Wenn nun ein Besucher auf den Vorschlag und somit auf die URL klickt, wird dem V
 >
 >Wenn Sie in der URL einen anderen Status festlegen möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den dem gewünschten Status entsprechenden Wert. Beispiel: **[!UICONTROL Abgelehnt]** = &quot;5&quot;, **[!UICONTROL Unterbreitet]** = &quot;1&quot; usw.
 >
->Status und die ihnen zugehörigen Werte können aus dem Datenschema **[!UICONTROL Angebotsvorschläge (nms)]** abgerufen werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../dev/create-schema.md).
+>Status und die ihnen zugehörigen Werte können aus dem Datenschema **[!UICONTROL Angebotsvorschläge (nms)]** abgerufen werden. Weitere Informationen hierzu finden Sie unter [Erstellen eines neuen Schemas in Campaign](../dev/create-schema.md).
 
 **Ausgehende Interaktion**
 
 Sie können den Status **[!UICONTROL Interessant]** automatisch auf einen Angebotsvorschlag anwenden, falls der Versand einen Link enthält. Fügen Sie einfach den Wert **_urlType=&quot;11&quot;** zum Link hinzu:
 
-```
+```xml
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
 ```
 
@@ -164,13 +164,13 @@ Sie können den Status **[!UICONTROL Interessant]** automatisch auf einen Angebo
 
 Auf der Registerkarte **[!UICONTROL Vorschau]** können Sie die Angebote anzeigen, die basierend auf einer zuvor ausgewählten Methode für den Empfänger infrage kommen. Beim folgenden Beispiel kommt der Empfänger für drei Angebote per Briefpost infrage.
 
-![](assets/offer_space_overview_002.png)
+![Registerkarte „Platzierungsvorschau“ mit drei geeigneten Angeboten, die nach Gewichtung und gerendertem Angebotsinhalt sortiert sind](assets/offer_space_overview_002.png)
 
 Sollte kein Angebot für einen Empfänger infrage kommen, ist dies in der Vorschau leicht erkennbar.
 
-![](assets/offer_space_overview_001.png)
+![Registerkarte „Platzierungsvorschau“ mit der Meldung „Kein Angebot geeignet“](assets/offer_space_overview_001.png)
 
 
 Die Vorschau kann Kontexte ignorieren, wenn diese auf eine Platzierung beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema erweitert wurde, um Felder hinzuzufügen, auf die in einem Bereich mithilfe eines eingehenden Kanals verwiesen wird.
 
-Weitere Informationen hierzu finden Sie in diesem Beispiel in [diesem Abschnitt](extension-example.md).
+Weitere Informationen hierzu finden Sie in diesem Beispiel unter [Erweiterungsbeispiel](extension-example.md).

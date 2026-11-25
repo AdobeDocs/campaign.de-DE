@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 87%
+source-wordcount: '251'
+ht-degree: 60%
 ---
 # Erstellen vordefinierter Filter{#creating-pre-defined-filters}
 
@@ -45,24 +45,24 @@ Gehen Sie wie folgt vor, um einen Filter zu erstellen:
 
 1. Markieren Sie im Ordner **[!UICONTROL Administration]** der jeweiligen Umgebung den Knoten **[!UICONTROL Vordefinierte Angebotsfilter]**.
 
-   ![](assets/offer_filter_create_005.png)
+   ![Angebote - Design-Baumstruktur mit dem Knoten Vordefinierte Angebotsfilter unter „Administration“ ](assets/offer_filter_create_005.png)
 
 1. Klicken Sie auf **[!UICONTROL Neu]**.
 
-   ![](assets/offer_filter_create_001.png)
+   ![Liste der vordefinierten Angebotsfilter mit hervorgehobener Schaltfläche „Neu“ und aufgelistetem Altersfilter](assets/offer_filter_create_001.png)
 
 1. Benennen Sie den Filter.
 
-   ![](assets/offer_filter_create_002.png)
+   ![Dialogfeld „Anwendungsfilter“ mit dem auf „E-Mail-Kanal“ gesetzten Feld „Bezeichnung“](assets/offer_filter_create_002.png)
 
 1. Wählen Sie nun das Feld aus, auf das sich die Filterbedingung beziehen soll.
 
-   ![](assets/offer_filter_create_003.png)
+   ![Wählen Sie ein Ausdrucksdialogfeld mit dem aus den Empfängerfeldern ausgewählten E-Mail-Feld aus](assets/offer_filter_create_003.png)
 
 1. Geben Sie den Operator und gegebenenfalls einen Wert an und speichern Sie die Abfrage.
 
-   ![](assets/offer_filter_create_004.png)
+   ![Filterbedingung im E-Mail-Ausdruck, für den der Operator auf gesetzt ist, ist nicht leer](assets/offer_filter_create_004.png)
 
 1. Durch Klick auf die Registerkarte **[!UICONTROL Vorschau]** können Sie das Ergebnis des Filters prüfen.
 
-   ![](assets/offer_filter_create_006.png)
+   ![Registerkarte Vorschau des E-Mail-Kanal-Filters, in der die Empfänger aufgelistet sind, die dem Filter entsprechen](assets/offer_filter_create_006.png)

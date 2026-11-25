@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 98%
+source-wordcount: '1289'
+ht-degree: 84%
 ---
 # Verwalten der Angebotsunterbreitung{#managing-offer-presentation}
 
@@ -42,24 +42,24 @@ Interaction ermöglicht die Steuerung des Flusses der Angebotsvorschläge anhand
 1. Gehen Sie in den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Typologieverwaltung]** > **[!UICONTROL Typologieregeln]**.
 1. Erstellen Sie eine neue Typologieregel und wählen Sie den Typ **[!UICONTROL Angebotsunterbreitung]**.
 
-   ![](assets/offer_typology_001.png)
+   ![Knoten „Typologieregeln“ mit einem neuen Regelformular und der Liste „Regeltyp“, die die Angebotsunterbreitung anzeigt](assets/offer_typology_001.png)
 
 1. Geben Sie gegebenenfalls den Kanal an, auf den die Regel angewendet werden soll.
 
-   ![](assets/offer_typology_002.png)
+   ![Kanalliste der Typologieregel mit hervorgehobener Option „Alle Kanäle“](assets/offer_typology_002.png)
 
 1. Konfigurieren Sie die Anwendungskriterien der Regel. Weitere Informationen hierzu finden Sie unter [Parameter der Unterbreitungsregeln](#presentation-rule-settings).
 1. Gehen Sie in den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Typologieverwaltung]** > **[!UICONTROL Typologien]** und erstellen Sie eine Typologie, um alle Regeln des Typs **[!UICONTROL Angebotsunterbreitung]** zusammenzufassen.
 
-   ![](assets/offer_typology_003.png)
+   ![Knoten Typologien, auf dem die Typologie Angebote ausgewählt und die Registerkarte Allgemein angezeigt wird](assets/offer_typology_003.png)
 
 1. Kehren Sie nun zurück zu den Regeln und ordnen Sie sie der zuvor erstellten Typologie zu.
 
-   ![](assets/offer_typology_004.png)
+   ![Registerkarte Typologien der Regel mit dem Dialogfeld Typologien hinzufügen, in dem die ausgewählte Typologie Angebote aufgeführt ist](assets/offer_typology_004.png)
 
 1. Weisen Sie abschließend auf Ebene der Angebotsumgebung die Typologie zu.
 
-   ![](assets/offer_typology_005.png)
+   ![Registerkarte Eignung der Umgebung - Angebotsumgebung für Besucher, Typologieliste der Angebotsunterbreitung mit Angeboten](assets/offer_typology_005.png)
 
 ## Parameter der Unterbreitungsregeln {#presentation-rule-settings}
 
@@ -69,13 +69,13 @@ Interaction ermöglicht die Steuerung des Flusses der Angebotsvorschläge anhand
 
 1. Klicken Sie auf den Link **[!UICONTROL Anwendungskriterien der Regel bearbeiten...]**.
 
-   ![](assets/offer_typology_006.png)
+   ![Registerkarte „Allgemein“ einer Typologieregel mit hervorgehobenem Link „Bedingungen für die Regelanwendung bearbeiten“](assets/offer_typology_006.png)
 
 1. Konfigurieren Sie im Abfragefenster den Filter, dem die von der Typologieregel betroffenen Angebote entsprechen müssen.
 
    Dieser kann beispielsweise eine Angebotskategorie betreffen.
 
-   ![](assets/offer_typology_008.png)
+   ![Abfrage einer Kategorie, die einer ausgewählten Angebotskategorie in der Angebotsstruktur entspricht](assets/offer_typology_008.png)
 
 ### Angebotsdimensionen {#offer-dimensions}
 
@@ -83,7 +83,7 @@ Die im Tab **[!UICONTROL Angebotsunterbreitung]** konfigurierten Dimensionen fü
 
 Die **[!UICONTROL Zielgruppendimension]** entspricht der Tabelle (standardmäßig: `nms:recipients`) mit den Empfängern , die die Angebotsvorschläge erhalten. Die **[!UICONTROL Speicherdimension]** entspricht der Tabelle (standardmäßig: `nms:propositionRcp`), die den mit der Zielgruppendimension verknüpften Vorschlagsverlauf enthält.
 
-![](assets/offer_typology_009.png)
+![Registerkarte „Angebotsunterbreitung“ mit hervorgehobenen Feldern der Zielgruppendimension und Speicherdimension](assets/offer_typology_009.png)
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Der Zeitraum beginnt **X** Tage vor und endet **X** Tage nach der Unterbreitung,
 
 Verwenden Sie die Pfeile des Felds, um die Anzahl an Tagen zu ändern, oder geben Sie direkt die gewünschte Dauer ein (z. B. &quot;2T 6h&quot;).
 
-![](assets/offer_typology_010.png)
+![Registerkarte „Angebotsunterbreitung“ mit hervorgehobenem Feld „Gleitender Zeitraum“ und „Betroffener Zeitraum“](assets/offer_typology_010.png)
 
 ### Anzahl der Vorschläge {#number-of-propositions}
 
@@ -108,7 +108,7 @@ An dieser Stelle können Sie angeben, wie oft die Angebote maximal vorgeschlagen
 
 Verwenden Sie die Pfeile des Felds, um die Anzahl zu ändern, oder geben Sie direkt die gewünschte Zahl ein.
 
-![](assets/offer_typology_011.png)
+![Registerkarte „Angebotsunterbreitung“ mit hervorgehobener Option „Maximale Vorschlagsanzahl“ und Feld „Menge“](assets/offer_typology_011.png)
 
 ## Vorschläge und Empfänger konfigurieren {#defining-propositions-and-recipients}
 
@@ -118,7 +118,7 @@ Im Bereich **[!UICONTROL Zu zählende Vorschläge]** können Sie die Angebote un
 
 Standardmäßig kann nach Kanal, betroffenen Angeboten und Vorschlagstatus gefiltert werden.
 
-![](assets/offer_typology_014.png)
+![Zu zählende Vorschläge (Abschnitt nur auf demselben Kanal, hervorgehobene Filter für Angebote und Vorschlagsstatus](assets/offer_typology_014.png)
 
 Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln. Wenn Sie andere Kriterien verwenden möchten, haben Sie die Möglichkeit, mithilfe des Links **[!UICONTROL Vorschläge begrenzen...]** eine Abfrage zu konfigurieren. Lesen Sie diesbezüglich auch den Abschnitt [Abfrage bezüglich der Vorschläge erstellen](#creating-a-query-on-propositions).
 
@@ -164,7 +164,7 @@ Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln
 
 Klicken Sie auf den Link **[!UICONTROL Abfrage von der Zielgruppendimension ausgehend bearbeiten...]** und wählen Sie die von der Regel betroffenen Empfänger aus.
 
-![](assets/offer_typology_012.png)
+![Assistent zum Bearbeiten von Filterabfragen mit der Auswahl von in einem Ordner enthaltenen Empfängern als Zielgruppenbestimmungsabfrage](assets/offer_typology_012.png)
 
 ### Abfrage bezüglich der Vorschläge erstellen {#creating-a-query-on-propositions}
 
@@ -172,4 +172,4 @@ Um die zu zählenden Vorschläge über eine Abfrage zu definieren, klicken Sie a
 
 In unten stehendem Beispiel werden ab der zweiten Unterbreitung die Angebote der Kategorie **Spezialangebote** in der Platzierung **Callcenter** mit einer Gewichtung von unter **20** gezählt.
 
-![](assets/offer_typology_013.png)
+![Angebotsabfrage zur Gewichtung, Platzierung und Gewichtung unter 20 für die zu zählenden Vorschläge begrenzen](assets/offer_typology_013.png)

@@ -21,10 +21,10 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 98%
+source-wordcount: '887'
+ht-degree: 73%
 ---
 # Genehmigen und Aktivieren eines Angebots{#approving-and-activating-an-offer}
 
@@ -34,7 +34,7 @@ Nach Erstellung des Angebotsinhalts müssen Sie ihn validieren, damit er in die 
 
 Ein Banner im Dashboard zeigt den Validierungsstatus an.
 
-![](assets/offer_validate_001.png)
+![Dashboard-Banner des Angebots, das angibt, dass die Genehmigung für das Angebot aussteht, mit der Schaltfläche Genehmigung.](assets/offer_validate_001.png)
 
 ## Angebotsinhalte validieren {#approving-offer-content}
 
@@ -52,15 +52,15 @@ Gehen Sie wie folgt vor, um den Inhalt eines Angebots zu validieren:
 
 1. Klicken Sie auf **[!UICONTROL Genehmigung]** und wählen Sie **[!UICONTROL Popup]** Inhalt genehmigen“ aus.
 
-   ![](assets/offer_validate_002.png)
+   ![Menü „Genehmigung“ mit ausgewähltem „Inhalt genehmigen“, über das die Aktion im Angebotsdialogfeld geöffnet wird.](assets/offer_validate_002.png)
 
 1. Geben Sie für jede Angebotsdarstellung mithilfe der Dropdown-Liste an, ob sie in der Live-Umgebung veröffentlicht oder in der Design-Umgebung in Bearbeitung gelassen werden soll. Bestätigen Sie Ihre Wahl durch Klick auf die Schaltfläche **[!UICONTROL Inhaltsvalidierung]**.
 
-   ![](assets/offer_validate_003.png)
+   ![Aktion im Angebotsdialogfeld: Wählen Sie „Bearbeitung fortsetzen“ oder „Aktivieren“, fügen Sie einen Kommentar hinzu und klicken Sie auf „Inhaltsvalidierung“.](assets/offer_validate_003.png)
 
    Nach erfolgter Validierung werden die Informationen im Angebots-Dashboard aktualisiert.
 
-   ![](assets/offer_validate_004.png)
+   ![Angebot-Dashboard nach der Genehmigung: Darstellungsform zeigt Aktiviert und der Abschnitt Genehmigungen zeigt Inhalte genehmigt an.](assets/offer_validate_004.png)
 
    >[!NOTE]
    >
@@ -76,33 +76,33 @@ Die Eignungsvalidierung umfasst die Prüfung der Gewichtung sowie der im Angebot
 
 * Um eine Übersicht aller konfigurierten Regeln zu erhalten, klicken Sie auf **[!UICONTROL Planung und Eignungsregeln des Angebots]**.
 
-  ![](assets/offer_validate_005.png)
+  ![Liste der Zeitplan- und Eignungsregeln mit Gewichtungen und Datumsbereichen, geöffnet über das Genehmigungsdialogfeld.](assets/offer_validate_005.png)
 
 * Falls Sie die Eignungsregeln ändern möchten, müssen Sie die Eignung zunächst **[!UICONTROL Ablehnen]**. Bestätigen Sie Ihre Wahl durch Klick auf die Schaltfläche **[!UICONTROL Eignungsvalidierung]**.
 
-  ![](assets/offer_validate_007.png)
+  ![Dialogfeld für die Eignungsvalidierung mit ausgewählter Option „Ablehnen“, einem Kommentar und der Schaltfläche für die Eignungsvalidierung.](assets/offer_validate_007.png)
 
   Die diversen Status werden im Angebots-Dashboard aktualisiert.
 
-  ![](assets/offer_validate_006.png)
+  ![Dashboard nach Ablehnung: Eignungsvalidierung wurde abgelehnt Banner, Schaltfläche „Berechtigung übermitteln“, Eignungsvalidierung abgelehnt.](assets/offer_validate_006.png)
 
 * Um die Eignung eines Angebots zu akzeptieren, klicken Sie auf die Schaltfläche **[!UICONTROL Eignung validieren]**.
 
-  ![](assets/offer_validate_008.png)
+  ![Schaltfläche „Berechtigung übermitteln“, die die Aktion im Angebotsdialogfeld mit den Optionen „Genehmigen“ und „Ablehnen“ öffnet.](assets/offer_validate_008.png)
 
   Kreuzen Sie die Option Akzeptieren an, geben Sie gegebenenfalls einen Kommentar ein und klicken Sie zur Bestätigung auf **[!UICONTROL Eignungsvalidierung]**.
 
-  ![](assets/offer_validate_009.png)
+  ![Dialogfeld für die Eignungsvalidierung mit ausgewählter Option „Genehmigen“, eingegebenem Kommentar und Schaltfläche für die Eignungsvalidierung.](assets/offer_validate_009.png)
 
   Die diversen Status werden im Angebots-Dashboard aktualisiert.
 
-  ![](assets/offer_validate_010.png)
+  ![Dashboard, das die Bereitstellung des Angebots in der Live-Umgebung anzeigt, mit genehmigter Eignung und genehmigtem Inhalt.](assets/offer_validate_010.png)
 
 ## Validierungs-Tracking {#approval-tracking}
 
 Der Validierungsverlauf kann im Dashboard nachvollzogen werden. Klicken Sie hierfür auf den Link **[!UICONTROL Protokoll anzeigen/ausblenden]**.
 
-![](assets/offer_validate_012.png)
+![Angebots-Dashboard mit den angezeigten Validierungsprotokollen nach dem Klicken auf Protokolle ausblenden/anzeigen, Listenaktion, Typ und genehmigende Person.](assets/offer_validate_012.png)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Nach der Veröffentlichung des Angebots kann es erneut veröffentlicht werden. G
 1. Markieren Sie im sich öffnenden **[!UICONTROL Bearbeiten]**-Fenster die Validierung, die rückgängig gemacht werden soll, und klicken Sie auf den Link **[!UICONTROL Validierung zurücksetzen, um sie erneut durchzuführen]**.
 1. Klicken Sie zur Bestätigung der Zurücksetzung auf **[!UICONTROL OK]**.
 
-![](assets/offer_validate_013.png)
+![Validierungsjournal im Bearbeitungsfenster mit dem Link Genehmigung erneut initialisieren, um sie erneut zu senden.](assets/offer_validate_013.png)
 
 ## Angebote veröffentlichen {#publishing-the-offer}
 
@@ -124,11 +124,11 @@ Sobald Inhalt und Eignung eines Angebots validiert wurden, wird das Angebot durc
 
 Das Angebots-Dashboard in der Design-Umgebung enthält alle Informationen bezüglich seiner Veröffentlichung in der Live-Umgebung, insbesondere den dortigen Angebotstitel.
 
-![](assets/offer_golive_001.png)
+![Design-Angebots-Dashboard: Bereitstellungsdatum, Banner für Online-Angebote mit dem Status „Veröffentlicht“, Live-Darstellung online.](assets/offer_golive_001.png)
 
 Bei freigegebenen Angeboten werden Sie durch Klick auf den Angebotstitel in die Live-Umgebung weitergeleitet. Das dort angezeigte Dashboard enthält alle relevanten Informationen.
 
-![](assets/offer_golive_002.png)
+![Link zum Dashboard des Live-Angebots, das den Online-Status, die Umgebung sowie den Zeitplan und die Eignungsregeln anzeigt.](assets/offer_golive_002.png)
 
 ## Angebote deaktivieren {#disabling-an-offer}
 
@@ -142,4 +142,4 @@ Sie können darüber hinaus auch ganze Angebotskategorien deaktivieren. Gehen Si
 >
 >Wenn Sie ein freigegebenes Angebot löschen, wird es in der verknüpften Live-Umgebung automatisch deaktiviert. Nach Ablauf der Aufbewahrungsdauer für Vorschläge werden die deaktivierten Angebote aus der Live-Umgebung gelöscht.
 
-![](assets/offer_preview_deactivate.png)
+![Bereitstellung des Angebots-Dashboards steht aus, wobei die Schaltfläche Angebot deaktivieren zum Deaktivieren des Angebots verwendet wird.](assets/offer_preview_deactivate.png)

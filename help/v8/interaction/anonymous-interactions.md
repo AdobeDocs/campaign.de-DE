@@ -22,10 +22,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 87%
+source-wordcount: '484'
+ht-degree: 79%
 ---
 # Anonyme Interaktionen {#anonymous-interactions}
 
@@ -39,7 +39,7 @@ Die **[!UICONTROL Zielgruppendimension]** wird ausgefüllt. Standardmäßig verw
 
 Das Feld **[!UICONTROL Besucherordner]** erscheint. Es enthält bereits den Link zum Ordner **[!UICONTROL Besucher]**. In diesem Feld können Sie auswählen, wo Besucherprofile gespeichert werden sollen.
 
-![](assets/anonymous_environment_option.png)
+![Angebotsumgebung mit einer Umgebung für eingehende anonyme Interaktionen und ausgewählten Besucherordnerfeldern](assets/anonymous_environment_option.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ In diesem Schritt werden die von den Cookies abgerufenen Daten mit denen in Ihre
 
 Kreuzen Sie in der Platzierung das Feld **[!UICONTROL Person implizit über den Navigationsverlauf identifizieren]** an, wenn Sie diese Möglichkeit nutzen wollen.
 
-![](assets/identification_anonymous_visitors.png)
+![Platzierung mit der Option Person implizit über den Navigationsverlauf identifizieren ](assets/identification_anonymous_visitors.png)
 
 ## Umgang mit anonymen, nicht identifizierten Besuchern {#processing-unidentified-anonymous-visitors}
 
@@ -69,4 +69,4 @@ Für nicht identifizierte Kontakte oder solche, die zwar implizit identifiziert 
 
 Kreuzen Sie hierfür das Feld **[!UICONTROL Zu einer anonymen Platzierung wechseln, wenn keine Zielperson identifiziert wurde]** an und geben Sie im Feld **[!UICONTROL Zugeordnete anonyme Platzierung]** die den nicht identifizierten Besuchern vorbehaltene Umgebung an.
 
-![](assets/anonymous_to_anonymous_environment.png)
+![Platzierung mit aktivierter Option „Auf eine anonyme Umgebung zurückgreifen“ und einem Feld „Anonyme Platzierung verknüpfen“](assets/anonymous_to_anonymous_environment.png)

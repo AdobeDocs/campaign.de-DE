@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 92%
+source-wordcount: '519'
+ht-degree: 79%
 ---
 # Arbeiten mit Umgebungen{#work-with-environments}
 
@@ -41,7 +41,7 @@ Interaction arbeitet mit zwei Angebotsumgebungstypen:
 * **[!UICONTROL Design]**-Angebotsumgebungen, in denen Angebote bearbeitet werden und verändert werden können. Diese Angebote haben den Validierungszyklus nicht durchlaufen und werden nicht an Kontakte gesendet.
 * **[!UICONTROL Live]**-Angebotsumgebungen, in denen validierte Angebote so zur Verfügung stehen, wie sie Kontakten unterbreitet werden. Die Angebote in dieser Umgebung sind schreibgeschützt.
 
-![](assets/offer_environments_overview_001.png)
+![Explorer-Baumstruktur mit Design- und Live-Angebotsumgebungen, jeweils mit Angebotsplatzierungen und Administrationsordnern.](assets/offer_environments_overview_001.png)
 
 Jede **[!UICONTROL Design]**-Umgebung ist mit einer **[!UICONTROL Live]**-Umgebung verknüpft. Nach Erstellung eines Angebots durchlaufen sein Inhalt und seine Eignungsregeln einen Validierungszyklus. Das Angebot wird automatisch für die **[!UICONTROL Live-Umgebung]** bereitgestellt. Ab diesem Zeitpunkt ist es für den Versand verfügbar.
 
@@ -51,7 +51,7 @@ Standardmäßig verfügt Campaign über eine **[!UICONTROL Design]**-Umgebung un
 >
 >Um die Empfängertabelle auszuwählen, müssen Sie den Zielgruppen-Mapping-Assistenten zur Erstellung der Umgebungen verwenden. [Weitere Informationen](#creating-an-offer-environment).
 
-![](assets/offer_environments_overview_002.png)
+![Registerkarte „Design-Umgebung - Allgemein“ mit hervorgehobenem Design-Typ und dem zugehörigen Feld Verknüpfte Live-Umgebung .](assets/offer_environments_overview_002.png)
 
 Versandverantwortliche können nur die **[!UICONTROL Live]**-Umgebung anzeigen und Angebote bereitstellen. Angebotsverantwortliche können die **[!UICONTROL Design]**-Umgebung anzeigen und nutzen und die **[!UICONTROL Live]**-Umgebung anzeigen. [Weitere Informationen](interaction-operators.md)
 
@@ -63,11 +63,11 @@ Gehen Sie wie folgt vor:
 
 1. Navigieren Sie zu **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Zielgruppen-Mappings]**, klicken Sie mit der rechten Maustaste auf das gewünschte Zielgruppen-Mapping und wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Optionen der Zielgruppendimension ändern]** aus.
 
-   ![](assets/offer_env_anonymous_001.png)
+   ![Zielgruppen-Mappings werden mit dem Menü Aktionen aufgelistet und die Optionen der ausgewählten Zielgruppendimension werden geändert.](assets/offer_env_anonymous_001.png)
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**, wählen Sie die Option **[!UICONTROL Speicherschema für Vorschläge erzeugen]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
-   ![](assets/offer_env_anonymous_002.png)
+   ![Schritt Erweiterungen des Assistenten mit ausgewähltem Schritt Speicherschema für Vorschläge generieren](assets/offer_env_anonymous_002.png)
 
    >[!NOTE]
    >
@@ -81,7 +81,7 @@ Mit dieser Option können Sie anonyme, für Interaktionen spezifische Funktionen
 
 Sie können beispielsweise eine Platzierung der Empfängerumgebung (identifizierter Kontakt) mit einer Platzierung verknüpfen, die einer Besucherumgebung (nicht identifizierter Kontakt) entspricht. Auf diese Weise werden dem Kontakt verschiedene Angebote unterbreitet, je nachdem, ob er identifiziert wurde oder nicht. Weitere Informationen hierzu finden Sie unter [Angebotsplatzierungen](interaction-offer-spaces.md).
 
-![](assets/offer_env_anonymous_003.png)
+![Design- und Live-Umgebungen der Besucher, wobei die Option für eingehende anonyme Interaktionen aktiviert ist.](assets/offer_env_anonymous_003.png)
 
 >[!NOTE]
 >

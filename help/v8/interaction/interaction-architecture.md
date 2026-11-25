@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 81%
+source-wordcount: '1431'
+ht-degree: 76%
 ---
 # Umgebungen und Architektur von Campaign Interaction
 
@@ -57,7 +57,7 @@ Diese beiden Interaktionstypen können entweder im **Einzelmodus** (das Angebot 
 
 Wenn ein Angebot unterbreitet werden kann oder soll (je nach Konfiguration), spielt das Angebotsmodul eine zentrale Rolle: Es ermittelt automatisch aus einer Reihe von möglichen Angeboten das für den Kontakt am besten geeignete Angebot, indem es die für ihn vorliegenden Daten und die in der Anwendung definierten Regeln kombiniert und abgleicht.
 
-![](assets/architecture_interaction2.png)
+![Angebotsmodul-Flüsse: ausgehende Batch-Sendungen, identifizierte unitäre und anonyme unitäre Interaktionen mit ihren Katalogen](assets/architecture_interaction2.png)
 
 ## Verteilte Architektur
 
@@ -66,7 +66,7 @@ Um die Skalierbarkeit zu unterstützen und rund um die Uhr Service für den eing
 * einer oder mehrerer Kontrollinstanzen für den ausgehenden Kanal, welche die Marketing-Datenbank und die Design-Umgebung beherbergen;
 * Eine oder mehrere Ausführungsinstanzen für den eingehenden Kanal
 
-![](assets/interaction_powerbooster_schema.png)
+![Die Kontrollinstanz stellt Live-Design-Angebote bereit und sendet Pakete an Ausführungsinstanzen, die auf Websites veröffentlichen](assets/interaction_powerbooster_schema.png)
 
 Ausführungsinstanzen sind dem eingehenden Kanal vorbehalten und enthalten die Online-Version des Katalogs. Jede Ausführungsinstanz ist unabhängig und einem Kontaktsegment gewidmet (z. B. eine Ausführungsinstanz pro Land). Aufrufe des Angebotsmoduls müssen direkt an der Ausführung erfolgen (eine spezifische URL pro Ausführungsinstanz). Da die Synchronisation zwischen Instanzen nicht automatisch erfolgt, müssen Interaktionen desselben Kontakts über dieselbe Instanz gesendet werden.
 
@@ -82,7 +82,7 @@ Die Bereitstellung und Veröffentlichung der Angebote in den Ausführungs- und K
 
 In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deaktiviert. Veraltete Vorschläge und Angebote werden nach der Bereinigungsperiode (angegeben im Bereitstellungsassistenten jeder Instanz) und der Gleitperiode (angegeben in den Typologieregeln der eingehenden Vorschläge) automatisch in allen Instanzen gelöscht.
 
-![](assets/interaction_powerbooster_schema2.png)
+![Angebotsvorschläge werden zwischen der Kontrollinstanz und jeder Ausführungsinstanz in beide Richtungen synchronisiert](assets/interaction_powerbooster_schema2.png)
 
 Für jedes externe Konto und jede Umgebung wird ein Workflow zur Vorschlagssynchronisierung erstellt. Die Synchronisationshäufigkeit kann für jedes externe Konto und jede Umgebung angepasst werden.
 
@@ -102,7 +102,7 @@ Das Package **Interaktion** wird auf allen Instanzen installiert (Kontrolle und 
 
 >[!NOTE]
 >
->Wenn Sie das Paket installieren, werden die Felder des Typs **long** der Tabelle **nms:proposition**, z. B. die Vorschlagskennung, zu Feldern des Typs **int64**. Dieser Datentyp wird in der Dokumentation zu [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=de#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
+>Wenn Sie das Paket installieren, werden die Felder des Typs **long** der Tabelle **nms:proposition**, z. B. die Vorschlagskennung, zu Feldern des Typs **int64**. Dieser Datentyp wird in der Dokumentation zu [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=de#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
 Die Aufbewahrungsdauer der Daten wird für jede Instanz konfiguriert (über die Variable **[!UICONTROL Datenbereinigung]** im Bereitstellungsassistenten). Bei Ausführungsinstanzen muss dieser Zeitraum der historischen Tiefe entsprechen, die für die Berechnung von Typologieregeln (beweglicher Zeitraum) und Eignungsregeln erforderlich ist.
 
@@ -110,7 +110,7 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
 
 1. Erstellen Sie pro Ausführungsinstanz ein externes Konto:
 
-   ![](assets/interaction_powerbooster1.png)
+   ![Formular für ein externes Konto für eine Ausführungsinstanz mit den Optionen Aktiviert, Verbindung, Message Center und Interaction](assets/interaction_powerbooster1.png)
 
    * Geben Sie einen Titel sowie einen kurzen und expliziten internen Namen an.
    * Wählen Sie den Typ **[!UICONTROL Ausführungsinstanz]** aus.
@@ -131,7 +131,7 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
 
 1. Die Umgebung konfigurieren:
 
-   ![](assets/interaction_powerbooster2.png)
+   ![Registerkarte „Umgebung - Allgemein“ mit Ausführungsinstanzen mit Aktualisierungshäufigkeit und Vorschlagsfilterung nach Land](assets/interaction_powerbooster2.png)
 
    * Geben Sie alle Ausführungsinstanzen an.
    * Definieren Sie für jede Instanz den Aktualisierungsrhythmus und die Vorschlagsfilter (z. B. nach Land).
@@ -142,7 +142,7 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
 
 Wenn aus Optimierungsgründen nur ein Teil der Marketing-Datenbank in den Ausführungsinstanzen dupliziert wird, können Sie ein mit der Umgebung verknüpftes eingeschränktes Schema angeben, damit Benutzende nur die in den Ausführungsinstanzen verfügbaren Daten verwenden können. Sie können ein Angebot mit Daten erstellen, die in Ausführungsinstanzen nicht verfügbar sind. Dazu müssen Sie die Regel für die anderen Kanäle deaktivieren, indem Sie diese Regel auf den ausgehenden Kanal (**[!UICONTROL Wird berücksichtigt, wenn]** -Feld).
 
-![](assets/ita_filtering.png)
+![Populationselement-Filter für Land mit dem Feld Berücksichtigt von für Kanal](assets/ita_filtering.png)
 
 ### Wartungsoptionen {#maintenance-options}
 

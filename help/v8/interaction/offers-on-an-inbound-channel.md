@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 95%
+source-wordcount: '3052'
+ht-degree: 69%
 ---
 # Angebot auf einem Inbound-Kanal{#offers-on-an-inbound-channel}
 
@@ -51,14 +51,14 @@ Folgen Sie dem in [Erstellen einer Angebotsumgebung](https://experienceleague.ad
 
 Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
-![](assets/offer_env_anonymous_003.png)
+![Angebotsentwurfsbaum und Umgebung - Besuchereigenschaften, eine Umgebung für eingehende anonyme Interaktionen](assets/offer_env_anonymous_003.png)
 
 ### Erstellung von anonymen Platzierungen {#creating-anonymous-offer-spaces}
 
 1. Markieren Sie im Navigationszweig Ihrer anonymen Umgebung (**Besucher**) den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Platzierungen]**.
 1. Klicken Sie auf **[!UICONTROL Neu]**, um eine Platzierung zu erstellen.
 
-   ![](assets/offer_inbound_anonymous_example_010.png)
+   ![Schaltfläche Neu in der Liste Platzierungen, über die das Dialogfeld Neue Platzierung mit der Registerkarte Eigenschaften geöffnet wird](assets/offer_inbound_anonymous_example_010.png)
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
 1. Benennen Sie die Platzierung und wählen Sie den Kanal **[!UICONTROL Web (eingehend)]**. Aktivieren Sie darüber hinaus auch die Option **[!UICONTROL Einzelmodus zulassen]**.
 
-   ![](assets/offer_inbound_anonymous_example_006.png)
+   ![Dialogfeld „Platzierung“ mit dem Titel Anonymes Web Premium-Angebot und ausgewähltem Kanal für eingehende Web](assets/offer_inbound_anonymous_example_006.png)
 
 1. Wählen Sie die für den Angebotsinhalt in dieser Platzierung verwendeten Felder aus und kennzeichnen Sie sie als Pflichtfelder.
 
@@ -77,7 +77,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
    * Bild-URL,
    * Ziel-URL
 
-   ![](assets/offer_inbound_anonymous_example_030.png)
+   ![Wählen Sie ein Ausdrucksdialogfeld aus, wobei das Feld „Titel“ als Inhaltsfeld der Platzierung ausgewählt wird](assets/offer_inbound_anonymous_example_030.png)
 
 1. Geben Sie die HTML-Rendering-Funktion an. Sie kann beispielsweise folgende Form annehmen:
 
@@ -94,53 +94,53 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
    >
    >Damit die Angebote korrekt angezeigt werden, muss die Rendering-Funktion die in der Platzierung verwendeten Felder in der gleichen Reihenfolge aufrufen, in der sie zuvor ausgewählt wurden.
 
-   ![](assets/offer_inbound_anonymous_example_031.png)
+   ![Link „Funktionen bearbeiten“, der die Registerkarte &quot;HTML Rendering“ der Platzierung öffnet, um die Rendering-Funktion zu überschreiben](assets/offer_inbound_anonymous_example_031.png)
 
 1. Speichern Sie die Platzierung.
 
 ### Erstellung einer Angebotskategorie und eines Themas {#creating-an-offer-category-and-a-theme}
 
 1. Markieren Sie in der zuvor erstellten Umgebung den Knoten **[!UICONTROL Angebotskatalog]**.
-1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]**&#x200B;**[!UICONTROL aus]**.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]****[!UICONTROL aus]**.
 
    Nennen Sie die neue Kategorie, beispielsweise **Finanzprodukte**.
 
 1. Geben Sie im Tab **[!UICONTROL Eignung]** der Kategorie das Thema **Finanzierungen** ein und speichern Sie die Änderungen ab.
 
-   ![](assets/offer_inbound_anonymous_example_023.png)
+   ![Registerkarte „Angebotskategorie-Eignung“ mit dem Feld „Themen“ auf „Finanzierung“](assets/offer_inbound_anonymous_example_023.png)
 
 ### Erstellung anonymer Angebote {#creating-anonymous-offers}
 
 1. Markieren Sie die soeben erstellte Kategorie.
 1. Klicken Sie auf **[!UICONTROL Neu]**.
 
-   ![](assets/offer_inbound_anonymous_example_013.png)
+   ![Schaltfläche Neu in der Liste Angebote der Kategorie Finanzprodukte, über die das Dialogfeld Neues Angebot geöffnet wird](assets/offer_inbound_anonymous_example_013.png)
 
 1. Wählen Sie die native Vorlage für anonyme Angebote oder eine zuvor von Ihnen konfigurierte Vorlage aus.
 
-   ![](assets/offer_inbound_anonymous_example_014.png)
+   ![Liste der Angebotsvorlagen mit neuem anonymen Angebot (emptyAnonOffer) und neuem Angebot (emptyOfferVisitor)](assets/offer_inbound_anonymous_example_014.png)
 
 1. Benennen und speichern Sie das Angebot.
 
-   ![](assets/offer_inbound_anonymous_example_015.png)
+   ![Dialogfeld „Neues anonymes Angebot“ mit der Bezeichnung Anonymes Premium-Angebot #1 vor dem Speichern](assets/offer_inbound_anonymous_example_015.png)
 
 1. Definieren Sie im Tab **[!UICONTROL Eignung]** die Gewichtung des Angebots in Abhängigkeit von den diversen Anwendungskontexten.
 
    Im vorliegenden Beispiel soll das Angebot bis zum Jahresende auf der Startseite der Webpräsenz mit Priorität erscheinen.
 
-   ![](assets/offer_inbound_anonymous_example_016.png)
+   ![Registerkarte Angebotseignung mit Angebotsgewichten und dem Dialogfeld Gewichtung, das auf die anonyme Platzierung beschränkt ist](assets/offer_inbound_anonymous_example_016.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    >[!NOTE]
    >
    >Um die für eine Web-Platzierung erforderlichen Elemente anzuzeigen, können Sie auf **[!UICONTROL Inhaltsdefinition]** klicken.
 
-   ![](assets/offer_inbound_anonymous_example_017.png)
+   ![Registerkarte „Angebotsinhalt“ mit Titel, Ziel-URL, Bild-URL und HTML-Inhalt für das erste anonyme Angebot](assets/offer_inbound_anonymous_example_017.png)
 
 1. Erstellen Sie ein zweites Angebot.
 
-   ![](assets/offer_inbound_anonymous_example_018.png)
+   ![Registerkarte „Inhalt“ des zweiten anonymen Angebots mit Titel, Ziel-URL und HTML-Inhalt](assets/offer_inbound_anonymous_example_018.png)
 
 1. Definieren Sie im Tab **[!UICONTROL Eignung]** die gleiche Gewichtung wie für das erste Angebot.
 1. Lassen Sie beide Angebote den Validierungszyklus durchlaufen, um sie und ihre Platzierungen in der Live-Umgebung verfügbar zu machen.
@@ -151,17 +151,17 @@ Um die soeben konfigurierten Angebote auf der Website sichtbar zu machen, fügen
 
 1. Fügen Sie in der HTML-Seite ein @id-Attribut ein, dessen Wert dem internen Namen der zuvor erstellten anonymen Platzierung entspricht (siehe [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces)), mit einem vorangestellten **i_**.
 
-   ![](assets/offer_inbound_anonymous_example_019.png)
+   ![HTML-Seitenquelle mit einem div, dessen ID i_SPC3 lautet, dem internen Namen der Platzierung, dem i_](assets/offer_inbound_anonymous_example_019.png) vorangestellt ist
 
 1. Fügen Sie die Abfrage-URL ein.
 
-   ![](assets/offer_inbound_anonymous_example_020.png)
+   ![HTML-Skriptaufruf an interaction.js mit hervorgehobenen Parametern „env=liveVisitor“ und „th=finance“](assets/offer_inbound_anonymous_example_020.png)
 
    Die blauen URL-Felder oben entsprechen dem Instanznamen, dem internen Namen der Umgebung (siehe [Erstellung einer anonymen Umgebung](#creating-an-anonymous-environment)) und dem Thema, das mit der Kategorie verknüpft ist ([Erstellunge einer Angebotskategorie und eines Themas](#creating-an-offer-category-and-a-theme)). Das Thema ist optional.
 
 Wenn ein Besucher auf die Startseite der Webpräsenz zugreift, werden die Angebote des Themas **Finanzierungen** wie zuvor konfiguriert angezeigt.
 
-![](assets/offer_inbound_anonymous_example_022.png)
+![Neobank-Startseite mit dem Block „Sonderangebote“ mit einem anonymen Angebot in der Seitenleiste](assets/offer_inbound_anonymous_example_022.png)
 
 Besucht er wiederholt die Startseite, wird ihm alternativ das eine oder das andere Angebot der Kategorie angezeigt, da sie die gleiche Gewichtung aufweisen.
 
@@ -173,19 +173,19 @@ Es wird von folgendem Szenario ausgegangen:
 
 1. Eine Person besucht die Neobank-Webseite, ohne sich anzumelden.
 
-   ![](assets/offer_inbound_fallback_example_050.png)
+   ![Neobank-Startseite mit dem Anmeldebereich, der einem Besucher angezeigt wird, der nicht angemeldet ist](assets/offer_inbound_fallback_example_050.png)
 
    Drei anonyme Angebote werden angezeigt: zwei **Premium**-Angebote, die Neobank-Produkte bewerben, und ein Angebot eines Neobank-Partners.
 
-   ![](assets/offer_inbound_fallback_example_051.png)
+   ![Neobank-Seite mit drei anonymen Angeboten: zwei Best-Offer-Angebote und ein Partner-Angebot](assets/offer_inbound_fallback_example_051.png)
 
 1. Da es sich bei dem Besucher um einen Neobank-Kunden handelt, meldet er sich mit seinen Anmeldedaten an.
 
-   ![](assets/offer_inbound_fallback_example_052.png)
+   ![Neobank-Anmeldebereich mit Anmeldeinformationen, die eingegeben wurden, bevor sich der Benutzer anmeldet](assets/offer_inbound_fallback_example_052.png)
 
    Nun werden drei für ihn personalisierte Angebote angezeigt.
 
-   ![](assets/offer_inbound_fallback_example_053.png)
+   ![Neobank-Seite nach der Anmeldung mit drei personalisierten Angeboten, die im Bereich „Sonderangebote“ hervorgehoben sind](assets/offer_inbound_fallback_example_053.png)
 
 Um diese Fallstudie zu implementieren, benötigen Sie zwei Angebotsumgebungen: eine für anonyme Interaktionen und eine mit speziell für identifizierte Kontakte konfigurierten Angeboten. Die Umgebung für identifizierte Kontakte wird dahingehend konfiguriert, dass sie automatisch zur Umgebung für anonyme Kontakte wechselt, wenn die besuchende Person sich nicht anmeldet, also nicht identifiziert werden kann.
 
@@ -213,7 +213,7 @@ Gehen Sie wie folgt vor:
 
 1. Erstellen Sie mit dem Versand-Zuordnungsassistenten (**Besucher**-Mapping) eine Angebotsumgebung für anonyme eingehende Interaktionen. Weitere Informationen dazu finden Sie unter [Erstellen einer Angebotsumgebung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} (Dokumentation zu Campaign v8).
 
-   ![](assets/offer_env_anonymous_003.png)
+   ![Angebotsentwurfsbaum und Umgebung - Besuchereigenschaften, eine Umgebung für eingehende anonyme Interaktionen](assets/offer_env_anonymous_003.png)
 
 ### Konfiguration der Platzierungen für die anonyme Umgebung {#configuring-offer-spaces-for-the-anonymous-environment}
 
@@ -223,16 +223,16 @@ Gehen Sie wie folgt vor, um die Platzierung der Kategorie **Premium** zu erstell
 
 1. Gehen Sie in die anonyme Design-Umgebung und fügen Sie eine Platzierung hinzu.
 
-   ![](assets/offer_inbound_fallback_example_023.png)
+   ![Liste der Platzierungen in der Umgebung - Design-Umgebung der Besucher, mit hervorgehobener Schaltfläche „Neu“](assets/offer_inbound_fallback_example_023.png)
 
 1. Wählen Sie den Kanal **[!UICONTROL Web (eingehend)]**.
 
-   ![](assets/offer_inbound_fallback_example_024.png)
+   ![Dropdown-Liste „Neuer Platzierungskanal“ mit ausgewähltem Web (Inbound Web)](assets/offer_inbound_fallback_example_024.png)
 
 1. Benennen Sie die Platzierung, z. B. **Premiumangebote - Web Anonym**.
 1. Konfigurieren Sie die Inhaltsfelder und die Rendering-Funktionen.
 
-   ![](assets/offer_inbound_fallback_example_025.png)
+   ![Platzierung Web Bestes anonymes Angebot mit eingehendem Web-Kanal, Inhaltsfeldern und HTML-Rendering-Funktion](assets/offer_inbound_fallback_example_025.png)
 
    >[!IMPORTANT]
    >
@@ -240,7 +240,7 @@ Gehen Sie wie folgt vor, um die Platzierung der Kategorie **Premium** zu erstell
 
 1. Erstellen Sie auf die gleiche Weise die Platzierung für die Angebote der Kategorie **Partner**.
 
-   ![](assets/offer_inbound_fallback_example_026.png)
+   ![Platzierung Web-Partner Anonym mit eingehenden Web-Kanälen, HTML-Inhalten und Bild-URL-Feldern](assets/offer_inbound_fallback_example_026.png)
 
 ### Erstellung der Angebotskategorien in der anonymen Umgebung {#creating-offer-categories-in-an-anonymous-environment}
 
@@ -249,11 +249,11 @@ Erstellen Sie zwei Angebotskategorien: **Bestes Angebot** und **Partner**. Jede 
 1. Markieren Sie hierfür in der anonymen Umgebung, die Sie zuvor erstellt haben, den Knoten **[!UICONTROL Angebotskatalog]**.
 1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]** aus. Nennen Sie die Kategorie **Premium**.
 
-   ![](assets/offer_inbound_fallback_example_027.png)
+   ![Ordner der Angebotskategorie mit der Bezeichnung „Bestes Angebot“ unter „Umgebung - Besucher in der Design-Baumstruktur“](assets/offer_inbound_fallback_example_027.png)
 
 1. Wiederholen Sie den Vorgang und nennen Sie die zweite Kategorie **Partner**.
 
-   ![](assets/offer_inbound_fallback_example_028.png)
+   ![Partner der Angebotskategorie neben Bestes Angebot unter Umgebung erstellt - Besucher](assets/offer_inbound_fallback_example_028.png)
 
 ### Erstellung der Angebote für anonyme Besucher {#creating-offers-for-anonymous-visitors}
 
@@ -261,36 +261,36 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
 
 1. Markieren Sie hierfür die Kategorie **Premium** und erstellen Sie ein erstes anonymes Angebot.
 
-   ![](assets/offer_inbound_fallback_example_029.png)
+   ![Dialogfeld „Neues anonymes Angebot“ in der Kategorie „Best Offer“ mit der Bezeichnung „Best Offer #1“](assets/offer_inbound_fallback_example_029.png)
 
 1. Definieren Sie im Tab **[!UICONTROL Eignung]** die Gewichtung des Angebots in Abhängigkeit von den diversen Anwendungskontexten.
 
-   ![](assets/offer_inbound_fallback_example_030.png)
+   ![Registerkarte Eignung des besten Angebots #1 anonymes Angebot mit Gewichtungen für die Startseite und die Speicherseite](assets/offer_inbound_fallback_example_030.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
-   ![](assets/offer_inbound_fallback_example_032.png)
+   ![Registerkarte „Inhalt“ eines anonymen besten Angebots mit dem Titel Neobank-Bankkonto und HTML-Inhalt](assets/offer_inbound_fallback_example_032.png)
 
 1. Wiederholen Sie den Vorgang für das zweite Angebot der Kategorie **Premium**.
 
-   ![](assets/offer_inbound_fallback_example_031.png)
+   ![Registerkarte „Inhalt“ des zweitbesten Angebots mit dem Titel „Neobank Home Insurance“ und HTML-Inhalt](assets/offer_inbound_fallback_example_031.png)
 
 1. Markieren Sie die Kategorie **Partner** und erstellen Sie das erste anonyme Angebot der Kategorie.
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
-   ![](assets/offer_inbound_fallback_example_033.png)
+   ![Registerkarte „Inhalt“ des anonymen Partnerangebots mit dem Titel &quot;Neo Weekly“ und &quot;HTML content“](assets/offer_inbound_fallback_example_033.png)
 
 1. Definieren Sie im Tab **[!UICONTROL Eignung]** die Gewichtung des Angebots in Abhängigkeit von den diversen Anwendungskontexten.
 
-   ![](assets/offer_inbound_fallback_example_034.png)
+   ![Registerkarte „Eignung“ des Angebots für anonyme Partnermedien mit einer Gewichtung von 3 für die Homepage](assets/offer_inbound_fallback_example_034.png)
 
 1. Erstellen Sie analog das zweite Angebot der Kategorie **Partner**.
 
-   ![](assets/offer_inbound_fallback_example_035.png)
+   ![Registerkarte „Inhalt“ des zweiten anonymen Partnerangebots mit dem Titel „Exkursion“ und HTML-Inhalten](assets/offer_inbound_fallback_example_035.png)
 
 1. Definieren Sie im Tab **[!UICONTROL Eignung]** die gleiche Gewichtung wie für das erste Angebot dieser Kategorie, damit die Angebote abwechselnd auf der Webseite angezeigt werden.
 
-   ![](assets/offer_inbound_fallback_example_036.png)
+   ![Registerkarte „Eignung“ des zweiten Partnerangebots mit einer Gewichtung von 3 für die Startseite, gleich der ersten](assets/offer_inbound_fallback_example_036.png)
 
 1. Lassen Sie alle Angebote den Validierungszyklus durchlaufen, um sie in der Live-Umgebung verfügbar zu machen. Stellen Sie sicher, dass im Zuge der Inhaltsvalidierung je nach Angebot entweder die Platzierung **Partner** oder die Platzierung **Premium** aktiviert wird.
 
@@ -303,15 +303,15 @@ Erstellen Sie die beiden Platzierungen auf die gleiche Weise wie die anonymen Pl
 1. Gehen Sie in die identifizierte Design-Umgebung und fügen Sie die Platzierungen **Premium** und **Partner** hinzu.
 1. Wenden Sie das unter [Konfiguration der Platzierungen für die anonyme Umgebung](#configuring-offer-spaces-for-the-anonymous-environment) beschriebene Verfahren an.
 
-   ![](assets/offer_inbound_fallback_example_005.png)
+   ![Liste der Platzierungen der Umgebung - Design-Umgebung der Empfänger, wobei die vom Webpartner identifizierte Platzierung offen ist](assets/offer_inbound_fallback_example_005.png)
 
 1. Kreuzen Sie die Option **[!UICONTROL Zu einer anonymen Platzierung wechseln, wenn keine Zielperson identifiziert wurde]** an.
 
-   ![](assets/offer_inbound_fallback_example_006.png)
+   ![Fallback auf eine anonyme Umgebung, wenn keine Einzelpersonen identifiziert wurden Option in der Platzierung ausgewählt](assets/offer_inbound_fallback_example_006.png)
 
 1. Wählen Sie mithilfe der Dropdown-Liste die zuvor erstellte anonyme Web-Platzierung aus (siehe [Konfiguration der Platzierungen für die anonyme Umgebung](#configuring-offer-spaces-for-the-anonymous-environment)).
 
-   ![](assets/offer_inbound_fallback_example_007.png)
+   ![Dropdown-Liste der anonymen Platzierungen für die verknüpfte anonyme Platzierung, wobei der anonyme Webpartner ausgewählt ist](assets/offer_inbound_fallback_example_007.png)
 
 ### Definition der erweiterten Parameter der identifizierten Umgebung {#specifying-the-advanced-settings-of-the-identified-offer-spaces}
 
@@ -320,20 +320,20 @@ Im vorliegenden Beispiel soll der Kontakt über seine E-Mail-Adresse in der Adob
 1. Gehen Sie in der identifizierten Umgebung in den Platzierungsknoten.
 1. Wählen Sie die Platzierung **Premium** aus und klicken Sie auf **[!UICONTROL Erweiterte Parameter...]**.
 
-   ![](assets/offer_inbound_fallback_example_044.png)
+   ![Über das Web identifizierte Platzierung mit dem Link „Erweiterte Parameter“ auf der Registerkarte „Zielgruppenidentifizierung“](assets/offer_inbound_fallback_example_044.png)
 
 1. Klicken Sie im Tab **[!UICONTROL Zielgruppenidentifizierung]** auf **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/offer_inbound_fallback_example_046.png)
+   ![Erweiterte Parameter Registerkarte Zielidentifizierung mit der Schaltfläche Hinzufügen für einen Schlüsselpfad](assets/offer_inbound_fallback_example_046.png)
 
 1. Klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]** und wählen Sie das Feld **[!UICONTROL E-Mail]** aus der Empfängertabelle aus.
 
-   ![](assets/offer_inbound_fallback_example_047.png)
+   ![Auswahl des Ausdrucksfelds bearbeiten in der Empfängertabelle mit ausgewähltem E-Mail-Feld](assets/offer_inbound_fallback_example_047.png)
 
 1. Klicken Sie dann auf **[!UICONTROL OK]**, um das Fenster **[!UICONTROL Erweiterte Parameter]** zu verlassen und die Konfiguration der **Premium**-Platzierung abzuschließen.
 1. Wiederholen Sie den Vorgang für die **Partner**-Platzierung.
 
-   ![](assets/offer_inbound_fallback_example_048.png)
+   ![Vom Webpartner identifizierte Platzierung mit dem @email Schlüsselpfad, der auf der Registerkarte „Erweiterte Parameter - Zielgruppenidentifizierung“ festgelegt ist](assets/offer_inbound_fallback_example_048.png)
 
 ### Erstellung der Angebotskategorien in der identifizierten Umgebung {#creating-offer-categories-in-an-identified-environment}
 
@@ -342,7 +342,7 @@ Erstellen Sie zwei Angebotskategorien: **Premium** und **Partner**. Jede Kategor
 1. Markieren Sie hierfür in der identifizierten Umgebung den Knoten **[!UICONTROL Angebotskatalog]**.
 1. Fügen Sie wie in der anonymen Umgebung zwei Ordner **[!UICONTROL Angebotskategorie]** mit **Bestes Angebot** und **Partner** als Kennzeichnungen hinzu.
 
-   ![](assets/offer_inbound_fallback_example_009.png)
+   ![Umgebung - Empfänger-Design-Baumstruktur mit den Kategorien „Best Offer“ und „Partner“, die die Besucherumgebung widerspiegelt](assets/offer_inbound_fallback_example_009.png)
 
 ### Erstellung personalisierter Angebote {#creating-personalized-offers}
 
@@ -350,31 +350,31 @@ Erstellen Sie nun in jeder Kategorie zwei Angebote, d. h. vier Angebote insgesam
 
 1. Markieren Sie die Kategorie **Premium** und erstellen Sie ein erstes personalisiertes Angebot.
 
-   ![](assets/offer_inbound_fallback_example_011.png)
+   ![Dialogfeld „Neues Angebot“ in der identifizierten Kategorie „Best Offer“ unter Verwendung der Vorlage „Neues Angebot (emptyOffer)“, Bezeichnung „Best Offer #1“](assets/offer_inbound_fallback_example_011.png)
 
 1. Definieren Sie im Tab **[!UICONTROL Eignung]** die Gewichtung des Angebots in Abhängigkeit von den diversen Anwendungskontexten.
 
-   ![](assets/offer_inbound_fallback_example_012.png)
+   ![Registerkarte „Eignung“ des ersten identifizierten besten Angebots mit Gewichtung für die Neobank-Homepage und -Bankseite](assets/offer_inbound_fallback_example_012.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
-   ![](assets/offer_inbound_fallback_example_013.png)
+   ![Registerkarte „Inhalt“ des personalisierten besten Angebots mit dem Titel Neobank-Bankkonto und einem Angebot für Neobank-Kunden](assets/offer_inbound_fallback_example_013.png)
 
 1. Wiederholen Sie den Vorgang für das zweite Angebot der Kategorie **Premium**.
 
-   ![](assets/offer_inbound_fallback_example_014.png)
+   ![Registerkarte „Inhalt“ des zweiten personalisierten besten Angebots, Neobank Home Insurance, mit einer Rückerstattung für bestehende Kunden](assets/offer_inbound_fallback_example_014.png)
 
 1. Markieren Sie jetzt die Kategorie **Partner** und erstellen Sie auch hier ein erstes personalisiertes Angebot.
 
-   ![](assets/offer_inbound_fallback_example_015.png)
+   ![Registerkarte „Inhalt“ des personalisierten Partnerangebots mit dem Titel „Exkursion“ und einem Rabatt von 20 % für Neobank-Kunden](assets/offer_inbound_fallback_example_015.png)
 
 1. Definieren Sie im Tab **[!UICONTROL Eignung]** die Gewichtung des Angebots in Abhängigkeit von den diversen Anwendungskontexten.
 
-   ![](assets/offer_inbound_fallback_example_016.png)
+   ![Eignungsregisterkarte des Partner-Reiseangebots mit einem Gewicht von 5 für die Neobank-Homepage](assets/offer_inbound_fallback_example_016.png)
 
 1. Erstellen Sie analog das zweite Angebot der Kategorie **Partner**.
 
-   ![](assets/offer_inbound_fallback_example_017.png)
+   ![Registerkarte „Inhalt“ des zweiten Partnerangebots, Neo Weekly, mit einem Rabatt von 50 % für Neobank-Kunden](assets/offer_inbound_fallback_example_017.png)
 
 1. Definieren Sie im Tab **[!UICONTROL Eignung]** die gleiche Gewichtung wie für das erste Angebot dieser Kategorie, damit die Angebote abwechselnd auf der Webseite angezeigt werden.
 1. Lassen Sie alle Angebote den Validierungszyklus durchlaufen, um sie in der Live-Umgebung verfügbar zu machen. Stellen Sie sicher, dass im Zuge der Inhaltsvalidierung je nach Angebot entweder die Platzierung **Partner** oder die Platzierung **Premium** aktiviert wird.
@@ -383,7 +383,7 @@ Erstellen Sie nun in jeder Kategorie zwei Angebote, d. h. vier Angebote insgesam
 
 Die Neobank-Webseite verfügt über drei Platzierungen zur Anzeige von Angeboten: zwei für Angebote der Kategorie **Premium** und eine für Angebote der Kategorie **Partner**.
 
-![](assets/offer_inbound_fallback_example_038.png)
+![Neobank-Homepage für einen angemeldeten Benutzer mit zwei Best-Offer-Frames und einem Partner-Offer-Frame in Sonderangeboten](assets/offer_inbound_fallback_example_038.png)
 
 Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der Webpräsenz zu konfigurieren:
 
@@ -391,29 +391,29 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
    Elemente mit einem @id-Attribut ein, dessen Wert es uns ermöglicht, die Angebote in den verschiedenen Platzierungen der Web-Seite aufzurufen.
 
-   ![](assets/offer_inbound_fallback_example_039.png)
+   ![HTML-Seitenquelle mit den divs ContBO1, ContBO2 und ContPtn, die die drei Platzierungen definieren](assets/offer_inbound_fallback_example_039.png)
 
 1. Im Anschluss daran ist das Script anzugeben, das die Attributwerte definiert.
 
-   ![](assets/offer_inbound_fallback_example_040.png)
+   ![Script zur Definition der InteractionDivs für ContBO1, ContBO2 und ContPtn mit ihren Leerzeichen und Kategorien](assets/offer_inbound_fallback_example_040.png)
 
    Im vorliegenden Beispiel nehmen **ContBO1** und **ContBO2** den Wert **SPC24** an, d. h. den internen Namen der zuvor in der identifizierten Umgebung erstellten **Premium**-Platzierung. Die Werte **CatBestOffer** bzw. **CatBestOfferAnonym** entsprechen den internen Namen der **Premium**-Kategorie der anonymen bzw. identifizierten Umgebung.
 
-   ![](assets/offer_inbound_fallback_example_041.png)
+   ![Beste Platzierung OSWebBestOfferIdentified und die besten Angebotskategorien der identifizierten und anonymen Umgebungen](assets/offer_inbound_fallback_example_041.png)
 
    Des Weiteren nimmt **ContPtn** den Wert **OSWebPartnerIdentified** an, was dem internen Namen der in der identifizierten Umgebung erstellten **Partner**-Platzierung entspricht. **CatPartner** bzw. **CatPartnerAnonym** entsprechen den internen Namen der **Partner**-Kategorie der anonymen bzw. identifizierten Umgebung.
 
-   ![](assets/offer_inbound_fallback_example_042.png)
+   ![Partnerbereich OSWebPartnerIdentified und die Kategoriewerte „CatPartner“ und „CatPartnerAnonym“ im Skript](assets/offer_inbound_fallback_example_042.png)
 
 1. Ordnen Sie der Variable **interactionTarget** die Informationen zu, die die Identifizierung des Besuchers ermöglichen, der sich auf der Neobank-Website anmeldet.
 
-   ![](assets/offer_inbound_fallback_example_043.png)
+   ![Die Variable „interactionTarget“ wird im Seitenskript auf die E-Mail-Adresse der Person festgelegt, die sich anmeldet](assets/offer_inbound_fallback_example_043.png)
 
    Die Identifizierung der Person kann anhand eines Browser-Cookies, eines Leseparameters in der URL, der E-Mail-Adresse oder der Kennung der Person erfolgen. Wenn ein Feld der Empfängertabelle verwendet wird, bei dem es sich nicht um den Primärschlüssel handelt, muss es in den erweiterten Parametern der Platzierung definiert werden (siehe [Definition der erweiterten Parameter der identifizierten Umgebung](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
 
 1. Fügen Sie die Abfrage-URL ein.
 
-   ![](assets/offer_inbound_fallback_example_049.png)
+   ![Skript-Aufruf an interaction.js mit env=EnvNeobankIdnRecip, dem identifizierten internen Umgebungsnamen](assets/offer_inbound_fallback_example_049.png)
 
    Die URL enthält **EnvNeobankIdnRecip**, den internen Namen der identifizierten Umgebung.
 

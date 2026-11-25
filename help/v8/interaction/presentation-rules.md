@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 94%
+source-wordcount: '730'
+ht-degree: 63%
 ---
 # Unterbreitungsregeln{#presentation-rules}
 
@@ -42,57 +42,57 @@ Die zu erstellende Regel muss somit sicherstellen, dass Reisen nach Kanada jedem
 1. Markieren Sie im Adobe Campaign-Navigationsbaum den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Typologieverwaltung]** > **[!UICONTROL Typologieregeln]**.
 1. Erstellen Sie eine neue Regel vom Typ **[!UICONTROL Angebotsunterbreitung]**.
 
-   ![](assets/offer_typology_example_001.png)
+   ![Formular zur Erstellung von Typologieregeln mit geöffneter Regeltypliste und ausgewählter Angebotsunterbreitung](assets/offer_typology_example_001.png)
 
 1. Benennen Sie die Regel und geben Sie gegebenenfalls eine Beschreibung ein.
 
-   ![](assets/offer_typology_example_002.png)
+   ![Registerkarte „Allgemein“ der Typologieregel mit Titel, Unterbreitungstyp des Angebots, E-Mail-Kanal und eingegebener Beschreibung](assets/offer_typology_example_002.png)
 
 1. Wählen Sie die Option **[!UICONTROL Alle Kanäle]** aus, damit die Regel universell gültig ist.
 
-   ![](assets/offer_typology_example_003.png)
+   ![Kanalliste der Typologieregel mit allen ausgewählten Kanälen](assets/offer_typology_example_003.png)
 
 1. Klicken Sie auf den Link **[!UICONTROL Anwendungskriterien der Regel bearbeiten...]** und wählen Sie den Knoten **[!UICONTROL Kategorie]** als Ausdruck.
 
-   ![](assets/offer_typology_example_004.png)
+   ![Das Abfragefenster mit dem Dialogfeld Ausdruck auswählen wird geöffnet, um das Feld Kategorie auszuwählen](assets/offer_typology_example_004.png)
 
 1. Wählen Sie als Wert aus dem Angebotskatalog die Kategorie Kanada aus und klicken Sie auf **[!UICONTROL OK]**, um das Abfragefenster zu schließen.
 
-   ![](assets/offer_typology_example_005.png)
+   ![Abfrage zur Kategorie ist gleich Kanada, wobei der Ordner „Kanada“ in der Kategoriestruktur der Reiseangebote ausgewählt ist](assets/offer_typology_example_005.png)
 
 1. Wählen Sie dann im Tab **[!UICONTROL Angebotsunterbreitung]** die Dimensionen aus, die Sie auch auf Umgebungsebene konfiguriert haben.
 
-   ![](assets/offer_typology_example_006.png)
+   ![Registerkarte „Angebotsunterbreitung“ mit den Zielgruppendimensionen und Speicherdimensionen, die mit der Umgebung übereinstimmen](assets/offer_typology_example_006.png)
 
 1. Geben Sie den Zeitraum an, in dem die Regel angewendet werden soll.
 
-   ![](assets/offer_typology_example_007.png)
+   ![Registerkarte Angebotsunterbreitung mit dem Feld Gleitzeitraum, Betroffener Zeitraum auf 10d gesetzt](assets/offer_typology_example_007.png)
 
 1. Begrenzen Sie die maximale Vorschlagsanzahl auf einen Vorschlag, damit die Empfänger, die bereits eine Kanadareise abgelehnt haben, nicht erneut ein ähnliches Angebot erhalten.
 
-   ![](assets/offer_typology_example_008.png)
+   ![Registerkarte Angebotsunterbreitung mit dem Feld Maximale Anzahl von Vorschlägen auf 1 gesetzt](assets/offer_typology_example_008.png)
 
 1. Wählen Sie aus der Dropdown-Liste den Filter **[!UICONTROL Angebote derselben Kategorie]** aus, um alle Angebote der Kategorie **Kanada** von der Unterbreitung auszuschließen.
 
-   ![](assets/offer_typology_example_020.png)
+   ![Dropdown-Liste Angebote in Vorschlägen, die mit Angeboten derselben Kategorie gezählt werden sollen](assets/offer_typology_example_020.png)
 
 1. Wählen Sie den Vorschlagsstatus **[!UICONTROL Abgelehnte Vorschläge]**, damit nur die Vorschläge berücksichtigt werden, die der Empfänger nicht angenommen hat.
 
-   ![](assets/offer_typology_example_021.png)
+   ![Dropdown-Liste „Vorschlagsstatus“ in den Vorschlägen, die mit abgelehnten Vorschlägen gezählt werden sollen](assets/offer_typology_example_021.png)
 
 1. Wählen Sie nun die von der Regel betroffenen Empfänger aus.
 
    Im vorliegenden Beispiel handelt es sich um **Vielreisende**.
 
-   ![](assets/offer_typology_example_009.png)
+   ![Assistent zum Bearbeiten von Filterabfragen, mit dem der Ordner der Empfänger von Vielreisenden als Regelziel ausgewählt wird](assets/offer_typology_example_009.png)
 
 1. Referenzieren Sie die Regel in einer Angeboten vorbehaltenen Typologie.
 
-   ![](assets/offer_typology_example_013.png)
+   ![Registerkarte Typologien der Regel mit dem Dialogfeld Typologien hinzufügen, in dem die ausgewählte Typologie Angebote aufgeführt ist](assets/offer_typology_example_013.png)
 
 1. Gehen Sie zum Abschluss in Ihre Angebotsumgebung, hier **Umgebung - Empfänger**, und referenzieren Sie im Tab **[!UICONTROL Eignung]** die Typologie, die auf die zuvor erstellte Regel verweist.
 
-   ![](assets/offer_typology_example_014.png)
+   ![Registerkarte Eignung der Angebotsumgebung mit der Typologieliste der Angebotsunterbreitung, in der Angebote angezeigt werden](assets/offer_typology_example_014.png)
 
 ## Unterbreitungsregeln anwenden {#applying-the-presentation-rule}
 
@@ -104,14 +104,14 @@ Wir möchten einen ersten Angebotsvorschlag der Kategorie „Kanada“ versenden
 
    Im vorliegenden Beispiel kommt **Peter Urlaubsreif** für ein Angebot aus der Kategorie **Kanada** infrage.
 
-   ![](assets/offer_typology_example_015.png)
+   ![Registerkarte „Empfängervorschläge“, Unterregisterkarte „Vorschau“, auf der das geeignete Angebot für die Kategorie „Nord- und Südamerika“ aufgeführt ist](assets/offer_typology_example_015.png)
 
 1. Erstellen Sie einen ersten E-Mail-Versand mit Angeboten an die Zielgruppe **Vielreisende**.
 1. Wählen Sie die Parameter der Angebotsmodul-Abfrage aus.
 
    Im vorliegenden Beispiel wird die Kategorie **Amerika** gewählt. Sie enthält die Unterkategorien **USA** und **Kanada**.
 
-   ![](assets/offer_typology_example_016.png)
+   ![Dialogfeld Angebotsverwaltung eines E-Mail-Versands mit der Kategorie „Nord- und Südamerika“ und 2 Vorschlägen pro Nachricht](assets/offer_typology_example_016.png)
 
 1. Fügen Sie Ihre Angebote in den Text der Nachricht ein und versenden Sie die Nachricht. Weitere Informationen hierzu finden Sie unter [Informationen zu Outbound-Kanälen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (Dokumentation zu Campaign v8).
 
@@ -119,10 +119,10 @@ Wir möchten einen ersten Angebotsvorschlag der Kategorie „Kanada“ versenden
 
 1. Aus dem Vorschlagsverlauf ist ersichtlich, dass der Empfänger das Angebot abgelehnt hat.
 
-   ![](assets/offer_typology_example_018.png)
+   ![Vorschlagsverlauf des Empfängers mit dem Snowmobile-Angebot Kanada im Status „Abgelehnt“](assets/offer_typology_example_018.png)
 
 1. Prüfen Sie, für welche Angebote er nun infrage kommt.
 
    Es zeigt sich, dass kein Angebot zu Kanada ausgewählt wurde.
 
-   ![](assets/offer_typology_example_019.png)
+   ![Registerkarte „Empfängervorschau“ mit geeigneten Angeboten für New York und Grand Canyon, ohne Kanada-Angebot](assets/offer_typology_example_019.png)

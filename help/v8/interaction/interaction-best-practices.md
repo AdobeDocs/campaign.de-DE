@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 90%
+source-wordcount: '1273'
+ht-degree: 82%
 ---
 # Best Practices für Interaction {#interaction-best-practices}
 
@@ -77,13 +77,13 @@ Bei der Auswahl von Angeboten in einer Aktivität **Anreicherung** können Sie f
 
 Im folgenden Beispiel lautet die im Versand ausgewählte Platzierung **[!UICONTROL E-Mail (Umgebung - Empfänger)]**:
 
-![](assets/Interaction-best-practices-offer-space-selected.png)
+![Abschnitt „Angebotsauswahl“ eines Versands, bei dem das Feld Platzierung auf E-Mail gesetzt ist (Umgebung - Empfänger).](assets/Interaction-best-practices-offer-space-selected.png)
 
 Wenn für die Platzierung, die Sie im Versand auswählen, keine HTML-Rendering-Funktion eingerichtet ist, wird sie nicht im Versandmenü angezeigt und kann nicht ausgewählt werden. Dies ist unabhängig von der Platzierung, die in der Aktivität **Anreicherung** ausgewählt wurde.
 
 Im folgenden Beispiel ist die HTML-Rendering-Funktion in der Dropdown-Liste verfügbar, da die im Versand ausgewählte Platzierung eine Rendering-Funktion hat:
 
-![](assets/Interaction-best-practices-HTML-rendering.png)
+![Personalization-Feldmenü mit hervorgehobenen Vorschlägen, Vorschlägen und der HTML-Rendering-Option.](assets/Interaction-best-practices-HTML-rendering.png)
 
 Diese Funktion fügt Code wie folgt ein: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
@@ -99,7 +99,7 @@ Um Probleme zu vermeiden, wird daher empfohlen, für alle Platzierungen eine HTM
 
 Platzierungen können Daten in der Vorschlagstabelle speichern, wenn Vorschläge generiert oder akzeptiert werden:
 
-![](assets/Interaction-best-practices-offer-space-storage.png)
+![Registerkarte Speicherung einer Platzierung mit Ausdrücken für den Status „Ein Vorschlag“, „Bei Annahme“ und den Speicherpfad.](assets/Interaction-best-practices-offer-space-storage.png)
 
 Dies gilt jedoch nur für eingehende Interaktionen.
 
@@ -109,15 +109,15 @@ Jedes Feld aus der temporären Workflow-Tabelle, dessen Name mit einem Feldnamen
 
 Wenn zum Beispiel in einer Workflow-Aktivität **Anreicherung** ein Angebot manuell (ohne Interaction) ausgewählt wird, sind die standardmäßigen Felder wie folgt definiert:
 
-![](assets/Interaction-best-practices-manual-offer-std-fields.png)
+![Ausgabespalten einer Anreicherungsaktivität mit den Standardfeldern für ein manuell ausgewähltes Angebot.](assets/Interaction-best-practices-manual-offer-std-fields.png)
 
 Zusätzliche Felder können hinzugefügt werden, z. B. ein Feld `@rank`:
 
-![](assets/Interaction-best-practices-manual-offer-add-fields.png)
+![Gibt Spalten einer Anreicherungsaktivität mit einem hinzugefügten Ranking-Feld für den Vorschlag aus.](assets/Interaction-best-practices-manual-offer-add-fields.png)
 
 Da sich in der Vorschlagstabelle ein Feld namens `@rank` befindet, wird der Wert in der temporären Workflow-Tabelle kopiert.
 
-Weitere Informationen zum Speichern von zusätzlichen Feldern in der Vorschlagstabelle finden Sie in [diesem Abschnitt](interaction-send-offers.md#storing-offer-rankings-and-weights).
+Weitere Informationen zum Speichern von zusätzlichen Feldern in der Vorschlagstabelle finden Sie unter [Speichern von Ranking und Gewichtung ](interaction-send-offers.md#storing-offer-rankings-and-weights).
 
 Bei ausgehenden Angeboten mit Interaction ist dies nützlich, wenn mehrere Angebote ausgewählt sind und Sie ermitteln möchten, in welcher Reihenfolge sie in einer E-Mail angezeigt werden sollen.
 
@@ -127,7 +127,7 @@ Bei Verwendung einer ausgehenden Interaktion kann das Feld `@rank` hinzugefügt 
 
 Bei Verwendung von Interaction und manueller Auswahl von Angeboten können beide Ansätze kombiniert werden. Beispielsweise kann der Benutzer das Feld `@rank` für das manuell ausgewählte Angebot manuell auf &quot;1&quot; setzen und einen Ausdruck wie `"1 + @rank"` für die von Interaction zurückgegebenen Angebote verwenden. Wenn Interaction drei Angebote auswählt, werden die von beiden Ansätzen zurückgegebenen Angebote nach 1-4 bewertet:
 
-![](assets/Interaction-best-practices-manual-offer-combined.png)
+![Ausgabespalten, die Angebotsinteraktion mit einem Ausdruck für 1 + Rangfolge kombinieren, um den Rang manuell festzulegen.](assets/Interaction-best-practices-manual-offer-combined.png)
 
 ### Erweitern des nms:offer-Schemas {#extending-nms-offer-schema}
 
@@ -135,7 +135,7 @@ Achten Sie bei der Erweiterung :offer nms-Schemas darauf, dass Sie die bereits e
 * Definieren Sie ein neues Feld für die Inhaltsspeicherung unter `<element name="view">`.
 * Jedes neue Feld muss zweimal definiert werden: einmal als normales XML-Feld und einmal als CDATA-XML-Feld mit „_jst“ an den Namen angehängt. Beispiel:
 
-  ```
+  ```xml
   <element label="Price" name="price" type="long" xml="true"/>
   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
   ```
