@@ -145,7 +145,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
      ![Dialogfeld „Target-Element“, in dem Informationen zu Services wie Newsletter für Abonnenten aufgelistet werden](assets/target-service.png)
 
-   * **[!UICONTROL Benutzerfilter]**: Mit dieser Option können Sie auf vorkonfigurierte Filter zugreifen, um sie als Filterkriterien für Profile in der Datenbank zu verwenden. Vorkonfigurierte Filter werden unter [Standardfilter“ ](../audiences/create-filters.md#default-filters).
+   * **[!UICONTROL Benutzerfilter]**: Mit dieser Option können Sie auf vorkonfigurierte Filter zugreifen, um sie als Filterkriterien für Profile in der Datenbank zu verwenden. Vorkonfigurierte Filter werden unter [Standardfilter“ &#x200B;](../audiences/create-filters.md#default-filters).
    * Mit **[!UICONTROL Option Empfänger von diesem Segment]** können Sie Empfänger auswählen, die die definierten Zielgruppenkriterien nicht erfüllen. Um diese Option zu verwenden, aktivieren Sie das entsprechende Kontrollkästchen und wenden Sie dann die Zielgruppenbestimmung an (wie zuvor definiert), um die resultierenden Profile auszuschließen.
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für diese Zielgruppenbestimmung ein. Der Titel entspricht standardmäßig dem Titel der ersten Zielgruppenbestimmung. Bei der Kombination von Filterkriterien wird empfohlen, einen expliziten Namen zu verwenden.

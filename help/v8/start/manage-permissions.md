@@ -69,7 +69,7 @@ Gehen Sie wie folgt vor, um einen Benutzer hinzuzufügen:
 
    ![Formular „Benutzer hinzufügen“ mit der Adobe Campaign-Produktprofilliste zur Auswahl für den Benutzer](assets/add-a-product-profile.png)
 
-   Die in Campaign integrierten Produktprofile werden unter [Standardproduktprofile und Benutzergruppen“ ](#ootb-productprofiles).
+   Die in Campaign integrierten Produktprofile werden unter [Standardproduktprofile und Benutzergruppen“ &#x200B;](#ootb-productprofiles).
 
    Erfahren Sie, wie Sie in Benutzergruppen [Arbeiten mit Benutzergruppen](#user-groups)
 
@@ -110,7 +110,7 @@ Gehen Sie wie folgt vor, um beispielsweise ein Produktprofil „Validierungsvera
 1. Stellen Sie eine Verbindung zu Campaign her, öffnen Sie den Explorer und navigieren Sie zu **[!UICONTROL Administration > Zugriffsverwaltung > Benutzergruppen]**.
 1. Klicken Sie auf **[!UICONTROL Neu]** und legen Sie den Namen der Benutzergruppe sowie deren internen Namen („Validierungsverantwortliche“) fest.
    ![Benutzergruppenliste im Explorer mit einer neuen Benutzergruppe für Reviewer wird erstellt](assets/new-op-group.png)
-1. Definieren Sie die zugehörigen Berechtigungen durch Auswahl von spezifischen Berechtigungen. Die spezifischen Berechtigungen werden im Abschnitt [Spezifische Berechtigungen“ ](#use-named-rights)
+1. Definieren Sie die zugehörigen Berechtigungen durch Auswahl von spezifischen Berechtigungen. Die spezifischen Berechtigungen werden im Abschnitt [Spezifische Berechtigungen“ &#x200B;](#use-named-rights)
 1. Speichern Sie die neue Benutzergruppe.
 
 #### Erstellen des Produktprofils in der Admin Console{#create-profile-in-admin-console}

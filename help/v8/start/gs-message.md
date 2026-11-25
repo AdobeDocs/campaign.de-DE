@@ -74,7 +74,7 @@ Um Nachrichten zu senden, müssen Sie einen Versand erstellen. Der Modus der Ver
 
    ![Kampagnen-Workflow mit Abfrage- und Leseliste, die einen Versand im Sommer, eine Wartezeit und einen Mobile-Versand speist](assets/send-in-a-wf.png)
 
-1. **Ausgelöste Nachrichten**: Sie können [Trigger-Nachrichten](../send/transactional.md) über ein Ereignis auslösen. Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwalten von Trigger-Nachrichten entwickelt. Die Schritte zum Konfigurieren und Senden von Transaktionsnachrichten werden im Abschnitt [Campaign-Transaktionsnachrichten“ ](../send/transactional.md)
+1. **Ausgelöste Nachrichten**: Sie können [Trigger-Nachrichten](../send/transactional.md) über ein Ereignis auslösen. Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwalten von Trigger-Nachrichten entwickelt. Die Schritte zum Konfigurieren und Senden von Transaktionsnachrichten werden im Abschnitt [Campaign-Transaktionsnachrichten“ &#x200B;](../send/transactional.md)
 
 ## Kommunikationskanäle {#gs-channel}
 
@@ -117,7 +117,7 @@ Workflows bieten abhängig vom zu verwendeten Kanal auch spezifische Versandakti
 
 Ein **wiederkehrender Versand** ist im Kontext eines Workflows verfügbar. Mit diesem Versandtyp können Sie jedes Mal, wenn die Aktivität ausgeführt wird, einen neuen Versand erstellen. Dadurch müssen Sie für sich wiederholende Aufgaben nicht jedes Mal erneut einen Versand erstellen. Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das im Jahr 12 Sendungen.
 
-Wiederkehrende Sendungen werden über Workflows mit der Aktivität [](../../automation/workflow/recurring-delivery.md)Wiederkehrender Versand erstellt. Ein Beispiel für diese Aktivität finden Sie im Abschnitt [Erstellen eines wiederkehrenden Versands in einem Zielgruppen-Workflow](../../automation/workflow/send-a-birthday-email.md).
+Wiederkehrende Sendungen werden über Workflows mit der Aktivität [&#128279;](../../automation/workflow/recurring-delivery.md)Wiederkehrender Versand erstellt. Ein Beispiel für diese Aktivität finden Sie im Abschnitt [Erstellen eines wiederkehrenden Versands in einem Zielgruppen-Workflow](../../automation/workflow/send-a-birthday-email.md).
 
 ### Versand (fortlaufend) {#continuous-delivery}
 
@@ -144,4 +144,4 @@ Sie haben folgende Möglichkeiten:
 
 Das Monitoring Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen. Sie können nach dem Versand überwachen sowie nachvollziehen, wie Zustellungsfehler und Quarantänen gehandhabt werden.
 
-Erfahren Sie, wie [ Sendungen verfolgen und überwachen](../send/tracking.md)
+Erfahren Sie, wie [&#x200B; Sendungen verfolgen und überwachen](../send/tracking.md)

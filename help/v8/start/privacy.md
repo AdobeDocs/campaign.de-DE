@@ -52,7 +52,7 @@ Mehr über das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** (Lös
 
 >[!NOTE]
 >
->Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zum Überprüfen Ihrer Version finden Sie in [ Kompatibilitätsmatrix für Campaign v8](compatibility-matrix.md)
+>Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zum Überprüfen Ihrer Version finden Sie in [&#x200B; Kompatibilitätsmatrix für Campaign v8](compatibility-matrix.md)
 
 ## Definieren eines Namespace {#namespaces}
 
