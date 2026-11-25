@@ -88,8 +88,8 @@ Es wird dringend empfohlen, URLs auf der Registerkarte **[!UICONTROL Textinhalt]
 * Eckige Klammern [ ]
 * Geschweifte Klammern { }
 
-In diesem Beispiel folgt auf die URL https://www.adobe.com ein Semikolon. Das Semikolon kann von E-Mail-Clients der Empfänger als Teil der URL interpretiert werden. Daher kann der Link beschädigt sein. Um dieses Problem zu vermeiden, können Sie die URL auf eine der folgenden Arten in Trennzeichen einschließen:
+In diesem Beispiel folgt auf die URL https://www.adobe.com/de ein Semikolon. Das Semikolon kann von E-Mail-Clients der Empfänger als Teil der URL interpretiert werden. Daher kann der Link beschädigt sein. Um dieses Problem zu vermeiden, können Sie die URL auf eine der folgenden Arten in Trennzeichen einschließen:
 
-* (https://www.adobe.com);
-* [https://www.adobe.com];
-* {https://www.adobe.com};
+* (https://www.adobe.com/de);
+* [https://www.adobe.com/de];
+* {https://www.adobe.com/de};

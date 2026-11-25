@@ -109,7 +109,7 @@ Richten Sie in der Web-Benutzeroberfläche von Campaign die Definition des benut
 
    ![Schema-Seite „Sendungen (nms)“ mit der Schaltfläche Bildschirmbearbeitung oben rechts](assets/cus-schema2.png){zoomable="yes"}
 
-1. Wählen Sie die Registerkarte aus, die Ihrem Kanal entspricht, und definieren Sie, wie die Felder im Inhaltsbildschirm des Versands angezeigt werden. Weiterführende Informationen zur Bildschirmbearbeitung finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}.
+1. Wählen Sie die Registerkarte aus, die Ihrem Kanal entspricht, und definieren Sie, wie die Felder im Inhaltsbildschirm des Versands angezeigt werden. Weiterführende Informationen zur Bildschirmbearbeitung finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=de#fields){target="_blank"}.
 
    ![Dialogfeld für die Bildschirmdefinition, Registerkarte „Benutzerdefinierter Kanal“, auf der benutzerdefinierte Felder mit Beschriftung, Attribut, Typ und obligatorischer Option aufgelistet sind](assets/cus-schema3.png){zoomable="yes"}
 

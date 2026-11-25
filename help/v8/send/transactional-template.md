@@ -113,7 +113,7 @@ Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen 
 
    ![Dialogfeld Testadresse mit ausgefüllten Feldern Titel, E-Mail und Externe Kennung](assets/messagecenter_create_seed_2.png)
 
-1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}.
+1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}.
 
    ![Dialogfeld mit Testdaten im Abschnitt Inhalt, als XML für den Ereigniskontext geschrieben](assets/messagecenter_create_custo_3.png)
 
