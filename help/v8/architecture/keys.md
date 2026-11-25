@@ -94,7 +94,7 @@ Campaign verfügt über eine Reihe neuer Schutzmaßnahmen, um das Einfügen dopp
 
 >[!NOTE]
 >
->Diese Schutzmaßnahmen sind ab Campaign v8.3 verfügbar. Informationen zum Überprüfen Ihrer Version finden Sie in [ Kompatibilitätsmatrix für Campaign v8](../start/compatibility-matrix.md)
+>Diese Schutzmaßnahmen sind ab Campaign v8.3 verfügbar. Informationen zum Überprüfen Ihrer Version finden Sie in [&#x200B; Kompatibilitätsmatrix für Campaign v8](../start/compatibility-matrix.md)
 
 ### Versandvorbereitung {#remove-duplicates-delivery-preparation}
 
@@ -104,13 +104,13 @@ Adobe Campaign entfernt während der Versandvorbereitung automatisch jede doppel
 
 ### Aktualisieren von Daten in einem Workflow {#duplicates-update-data}
 
-Im Kontext einer [Enterprise (FFDA)-Bereitstellung ](enterprise-deployment.md) Sie keinen internen Schlüssel (UUID) als Feld auswählen, um Daten in einem Workflow zu aktualisieren.
+Im Kontext einer [Enterprise (FFDA)-Bereitstellung &#x200B;](enterprise-deployment.md) Sie keinen internen Schlüssel (UUID) als Feld auswählen, um Daten in einem Workflow zu aktualisieren.
 
 ![Datenaktivität mit der Feldauswahl für Empfänger (nms) aktualisieren:recipient wobei kein internes Schlüsselfeld ausgewählt werden kann](assets/update-data-no-internal-key.png)
 
 ### Abfrage eines Schemas mit Duplikaten {#query-with-duplicates}
 
-Wenn ein Workflow mit der Ausführung einer Abfrage eines Schemas beginnt, prüft Adobe Campaign, ob ein doppelter Eintrag in der [Audit-Unicity-Tabelle) ](#unicity-wf). In diesem Fall protokolliert der Workflow eine Warnung, da der nachfolgende Vorgang mit den duplizierten Daten möglicherweise das Workflow-Ergebnis beeinflusst.
+Wenn ein Workflow mit der Ausführung einer Abfrage eines Schemas beginnt, prüft Adobe Campaign, ob ein doppelter Eintrag in der [Audit-Unicity-Tabelle) &#x200B;](#unicity-wf). In diesem Fall protokolliert der Workflow eine Warnung, da der nachfolgende Vorgang mit den duplizierten Daten möglicherweise das Workflow-Ergebnis beeinflusst.
 
 ![Workflow-Protokoll mit der Warnung Eindeutigkeitsbeschränkung verletzt. Duplizierte Daten auf Schema-Nms gefunden:recipient](assets/query-with-duplicates.png)
 
