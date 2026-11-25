@@ -201,7 +201,7 @@ Der Anbieter kann nicht erkennen, von welchem externen Konto eine BIND-PDU stamm
 
 Wenn der Provider mehrere Kurzwahlnummern für dieselbe Benutzernamen-/Passwortkombination unterstützt, müssen Sie ihn fragen, wo diese Kurzwahlnummer in die BIND-PDU eingefügt werden soll. Beachten Sie, dass diese Information in die BIND-PDU und nicht in SUBMIT_SM eingefügt werden muss, da nur in der BIND-PDU eine korrekte Weiterleitung von MOs möglich ist.
 
-Die in der [-PDU verfügbaren Felder finden Sie ](#pdu) Abschnitt „Informationen in jeder PDU-Art weiter oben. Im Allgemeinen würden Sie den Kurzwahlcode in *address_range* einfügen, dies erfordert jedoch spezielle Unterstützung vom Anbieter. Kontaktieren Sie sie, um herauszufinden, wie sie mehrere Kurzwahlnummern unabhängig voneinander weiterleiten möchten.
+Die in der [-PDU verfügbaren Felder finden Sie &#x200B;](#pdu) Abschnitt „Informationen in jeder PDU-Art weiter oben. Im Allgemeinen würden Sie den Kurzwahlcode in *address_range* einfügen, dies erfordert jedoch spezielle Unterstützung vom Anbieter. Kontaktieren Sie sie, um herauszufinden, wie sie mehrere Kurzwahlnummern unabhängig voneinander weiterleiten möchten.
 
 Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern in demselben externen Konto, sodass es häufig problemlos funktioniert, nur ein einziges Konto für den gesamten Traffic zu verwenden.
 
