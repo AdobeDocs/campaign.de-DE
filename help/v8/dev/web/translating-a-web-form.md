@@ -26,7 +26,7 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1680'
 ht-degree: 98%
@@ -178,17 +178,17 @@ Nach dem Abschluss der externen Übersetzung können Sie die übersetzten Dateie
 
 Webformulare werden in der Standardsprache angezeigt, die auf der Registerkarte **[!UICONTROL Lokalisierung]** in den Eigenschaften der Web-Anwendung angegeben ist. Um Sprachen zu ändern, müssen Sie die folgenden Zeichen am Ende der URL hinzufügen (wobei **xx** das Symbol der Sprache ist):
 
-```
+```text
 ?lang=xx
 ```
 
 wenn die Sprache der erste oder einzige Parameter der URL ist. Beispiel: **https://myserver/webApp/APP34**
 
-```
+```text
 &lang=xx
 ```
 
-wenn es in der URL vor der Sprache noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&lang=en**
+wenn es in der URL vor der Sprache noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind unten aufgeführt.
 
@@ -449,7 +449,7 @@ Fügen Sie **?lang=es** oder **?lang=de** hinzu, um den Inhalt auf Spanisch oder
 >[!NOTE]
 >
 >Wenn für diese Webanwendung bereits andere Parameter verwendet werden, fügen Sie **&amp;lang=** hinzu.\
->Beispiel: **https://myserver/webApp/APP34?status=1&lang=en**
+>Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Erweiterte Übersetzungskonfiguration {#advanced-translation-configuration}
 

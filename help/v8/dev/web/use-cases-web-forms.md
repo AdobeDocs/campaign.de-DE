@@ -25,7 +25,7 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 89%
@@ -45,7 +45,7 @@ Es wird von folgendem Szenario ausgegangen:
 
 ### Schritt 1: Erstellen von Informationsdiensten {#step-1---creating-information-services}
 
-1. Erstellen Sie den Dienst für die Newsletter-Anmeldung für Ihre Empfangenden. Weitere Informationen zur Erstellung eines Newsletters finden Sie [in diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
+1. Erstellen Sie den Dienst für die Newsletter-Anmeldung für Ihre Empfangenden. Weitere Informationen zur Erstellung eines Newsletters finden Sie [in diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -123,7 +123,7 @@ Gehen Sie dazu wie folgt vor:
 
    Die erste **[!UICONTROL Script]**-Aktivität fügt Empfänger auf der Blockierungsliste hinzu, bis sie ihr Abonnement für den Newsletter bestätigt haben. Der Inhalt muss wie folgt aussehen:
 
-   ```
+   ```javascript
    ctx.recipient.@blackList=1
    ```
 
@@ -131,7 +131,7 @@ Gehen Sie dazu wie folgt vor:
 
    Mit der zweiten **[!UICONTROL Script]**-Aktivität werden Sendungen an die Benutzer genehmigt. Außerdem werden diese zum Newsletter angemeldet. Die letzten beiden Zeilen des Skripts ermöglichen es Ihnen, Ihre Empfänger vom temporären Ordner in einen anderen Ordner zu übertragen und mit vorhandenen Profilen abzustimmen, sobald sie das Abonnement bestätigt haben.
 
-   ```
+   ```javascript
    ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>

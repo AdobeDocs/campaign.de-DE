@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 96%
@@ -93,7 +93,7 @@ Zusätzlich zum integrierten technischen Workflow **Referenztabellen replizieren
 
 * Fügen Sie eine bestimmte Aktivität vom Typ **JavaScript-Code** mit dem folgenden Code hinzu:
 
-  ```
+  ```javascript
   nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
   ```
 
@@ -101,7 +101,7 @@ Zusätzlich zum integrierten technischen Workflow **Referenztabellen replizieren
 
 * Fügen Sie eine bestimmte Aktivität vom Typ **nlmodule** mit dem folgenden Befehl hinzu:
 
-  ```
+  ```bash
   nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
   ```
 
@@ -121,7 +121,7 @@ APIs ermöglichen die Replikation von benutzerdefinierten und vorkonfigurierten 
 
 Beispiel:
 
-```
+```javascript
 var dataSource = "nms:extAccount:ffda";
 var xml = xtk.builder.CopyXxlData(
     <params dataSource={dataSource} policy="xs">

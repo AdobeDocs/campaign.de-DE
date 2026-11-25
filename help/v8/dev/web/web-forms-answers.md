@@ -21,7 +21,7 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 93%
@@ -39,7 +39,7 @@ Für jedes Eingabefeld in einem Formular sind die folgenden Speicheroptionen ver
 
 * **[!UICONTROL Empfänger bearbeiten]**
 
-  Sie können ein Feld der Datenbank auswählen: Die Antworten der Benutzer werden in diesem Feld gespeichert. Für jeden Benutzer wird nur der zuletzt eingegebene Wert gespeichert und seinem Profil hinzugefügt. Siehe &quot;[&#x200B; in der Datenbank](#storing-data-in-the-database).
+  Sie können ein Feld der Datenbank auswählen: Die Antworten der Benutzer werden in diesem Feld gespeichert. Für jeden Benutzer wird nur der zuletzt eingegebene Wert gespeichert und seinem Profil hinzugefügt. Siehe &quot;[ in der Datenbank](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
@@ -101,19 +101,19 @@ Die bereitgestellten Antworten für jedes Formular können in Feldern oder Titel
 
 * Für Inhalte, die in einem Feld der Datenbank gespeichert sind:
 
-  ```
+  ```html
   <%=ctx.recipient.@field name%
   ```
 
 * Für Inhalte, die in einer lokalen Variablen gespeichert sind:
 
-  ```
+  ```html
   <%= ctx.vars.variable name %
   ```
 
 * Für Inhalte, die in einem HTML-Textfeld gespeichert sind:
 
-  ```
+  ```html
   <%== HTML field name %
   ```
 
@@ -153,4 +153,4 @@ Sie können einen Suchordner für die Abstimmung und den Erstellungsordner für 
 >
 >Die möglichen Vorgänge sind: **[!UICONTROL einfache Abstimmung]**, **[!UICONTROL Aktualisieren oder Einfügen]**, **[!UICONTROL Einfügen]**, **[!UICONTROL Aktualisieren]**, **[!UICONTROL Löschen]**.\
 >Der Standardordner des Operators entspricht dem ersten Ordner, für den er Schreibzugriff hat.\
->Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.
+>Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}.

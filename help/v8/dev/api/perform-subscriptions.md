@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 100%
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 Führen Sie eine GET-Anfrage aus, um das Profil abzurufen.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -40,7 +40,7 @@ Führen Sie eine GET-Anfrage aus, um das Profil abzurufen.
 
 Gibt die Anmeldungs-URL für das Profil zurück.
 
-```
+```json
   {
     ...
     "postalAddress":...,
@@ -54,7 +54,7 @@ Gibt die Anmeldungs-URL für das Profil zurück.
 
 Führen Sie eine POST-Anfrage für die Anmeldungs-URL mit dem gewünschten Primärschlüssel des Diensts in der Payload aus.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -66,7 +66,7 @@ Führen Sie eine POST-Anfrage für die Anmeldungs-URL mit dem gewünschten Prim�
 
 Es wird das aktualisierte Profil mit dem abgeschlossenen Dienstknoten zurückgegeben.
 
-```
+```json
 {
   ...
   "service": {
@@ -83,7 +83,7 @@ Es wird das aktualisierte Profil mit dem abgeschlossenen Dienstknoten zurückgeg
 
 Führen Sie eine GET-Anfrage aus, um den Dienst abzurufen.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -93,7 +93,7 @@ Führen Sie eine GET-Anfrage aus, um den Dienst abzurufen.
 
 Es wird die Anmeldungs-URL für den Dienst zurückgegeben.
 
-```
+```json
   {
     ...
     "messageType": "email",
@@ -107,7 +107,7 @@ Es wird die Anmeldungs-URL für den Dienst zurückgegeben.
 
 Führen Sie eine POST-Anfrage für die Anmeldungs-URL mit dem gewünschten Primärschlüssel des Profils in der Payload aus.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign//profileAndServices/service/<PKEY>/subscriptions/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -119,7 +119,7 @@ Führen Sie eine POST-Anfrage für die Anmeldungs-URL mit dem gewünschten Prim�
 
 Es wird der aktualisierte Dienst mit dem abgeschlossenen Abonnentenknoten zurückgegeben.
 
-```
+```json
 {
   ...
   "service": ...,

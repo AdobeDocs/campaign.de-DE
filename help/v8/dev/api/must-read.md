@@ -22,7 +22,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 79%
@@ -55,7 +55,7 @@ Alle API-Ressourcen sind in **JSON** mit einer URL-Erweiterung oder in einem HTT
 
 ***Beispielanfrage***
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile.json \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -87,7 +87,7 @@ Verwenden Sie einen benutzerdefinierten Schlüssel nur für **Top-Level-Profilre
 
 Um die Anmeldungen für ein Profil mit einem benutzerdefinierten Schlüssel abzurufen, führen Sie eine GET-Operation für den benutzerdefinierten Schlüssel aus.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<customKey> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -97,7 +97,7 @@ Um die Anmeldungen für ein Profil mit einem benutzerdefinierten Schlüssel abzu
 
 Führen Sie eine GET-Anfrage für die zurückgegebene Anmelde-URL aus.
 
-```
+```bash
 -X GET <SUBSCRIPTION_URL> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -107,7 +107,7 @@ Führen Sie eine GET-Anfrage für die zurückgegebene Anmelde-URL aus.
 
 Es wird eine Liste der Anmeldungen für das Profil zurückgegeben.
 
-```
+```json
 "service": {
 "PKey": "<PKEY>",
 "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>",

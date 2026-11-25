@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 100%
@@ -77,7 +77,7 @@ Um einen Hypertext-Link hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Elem
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * Im **[!UICONTROL Titel]** wird der Inhalt des Hypertext-Links so dargestellt, wie er auf der Formularseite erscheinen wird.
-* Die **[!UICONTROL URL]** ist die gewünschte Adresse, z. B.: [https://www.adobe.com/de](https://www.adobe.com/de) für eine Website oder [info@adobe.com](mailto:info@adobe.com), um eine Nachricht zu senden.
+* Die **[!UICONTROL URL]** ist die gewünschte Adresse, z. B.: [https://www.adobe.com](https://www.adobe.com) für eine Website oder [info@adobe.com](mailto:info@adobe.com), um eine Nachricht zu senden.
 * Im Feld **[!UICONTROL Fenster]** können Sie im Fall einer Website einen Anzeigemodus für den Link auswählen. Sie können den Link in einem neuen Fenster, dem aktuellen Fenster oder einem anderen Fenster öffnen.
 * Sie können eine QuickInfo wie unten gezeigt hinzufügen:
 
@@ -145,7 +145,7 @@ In unserem Beispiel werden der Vor- und Nachname der empfangenden Person in eine
 
 ![](assets/webapp_perso_vars_include.png)
 
-```
+```xml
 <P>Welcome <%= ctx.recipient.@firstName %> <%= ctx.recipient.@lastName %>,</P>
 <P>To start your customized study, please select your car <%=ctx.vars.marque%> and its year of purchase.</P>
 ```

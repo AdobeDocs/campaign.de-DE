@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 76%
@@ -58,7 +58,7 @@ Zu den Schemata wurde ein spezifisches Attribut hinzugefügt, das auf beliebige 
 
 Nachfolgend finden Sie ein Beispiel für eine Erweiterung des Empfängerschemas, das diese Nutzung zeigt:
 
-```
+```xml
 <srcSchema desc="Recipient table (profiles" entitySchema="xtk:srcSchema" extendedSchema="xxl:nmsRecipientXl"
            img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
            name="recipient" namespace="sec" xtkschema="xtk:srcSchema">
@@ -73,7 +73,7 @@ Nachfolgend finden Sie ein Beispiel für eine Erweiterung des Empfängerschemas,
 
 Die wichtigsten Eigenschaften sind:
 
-* **[!UICONTROL visibleIf]**: Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem [Ausdrucksgenerator“ aufgerufen werden &#x200B;](../../v8/start/filter-conditions.md#list-of-functions). Dadurch werden jedoch keine Daten ausgeblendet. Wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
+* **[!UICONTROL visibleIf]**: Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem [Ausdrucksgenerator“ aufgerufen werden ](../../v8/start/filter-conditions.md#list-of-functions). Dadurch werden jedoch keine Daten ausgeblendet. Wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
 * **[!UICONTROL accessibleIf]** : Blendet die Daten aus der resultierenden Abfrage aus (und ersetzt sie durch leere Werte). Wenn „visibleIf“ leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]**.
 
 Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
@@ -97,7 +97,7 @@ Bei jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL broadLog]
 
 Nachfolgend finden Sie ein Beispiel für die Erweiterung der Protokolltabelle, um Folgendes zu implementieren:
 
-```
+```xml
 <srcSchema entitySchema="xtk:srcSchema" extendedSchema="nms:broadLogRcp" img="nms:broadLog.png"
            label="Recipient delivery logs" labelSingular="Recipient delivery log"
            name="broadLogRcp" namespace="sec" xtkschema="xtk:srcSchema">

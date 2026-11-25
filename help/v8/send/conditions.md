@@ -20,7 +20,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 95%
@@ -70,7 +70,7 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
 1. Erstellen Sie eine E-Mail und wählen Sie die Zielpopulation aus. In diesem Beispiel basiert die Bedingung für die Darstellung einer bestimmten Version auf dem Wert **Sprache** des Empfängerprofils. Diese Werte sind festgelegt auf **EN**, **FR**, **ES**.
 1. Klicken Sie im HTML-Inhalt der E-Mail auf den Tab **[!UICONTROL Quelle]** und fügen Sie folgenden Code ein:
 
-   ```
+   ```html
    <% if (language == "EN" ) { %>
    <DIV id=en-version>Hello <%= recipient.firstName %>,</DIV>
    <DIV>Discover your new offers!</DIV>
@@ -99,4 +99,4 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
 
 Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446720?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)

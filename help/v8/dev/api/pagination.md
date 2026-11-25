@@ -18,7 +18,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 76%
@@ -41,7 +41,7 @@ Mit dem Parameter **_lineCount** können Sie die Zahl der in der Antwort aufgeli
 
 Beispielhafte GET-Anfrage zum Anzeigen eines Datensatzes der Profilressource
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_lineCount=1 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -51,7 +51,7 @@ Beispielhafte GET-Anfrage zum Anzeigen eines Datensatzes der Profilressource
 
 Antwort auf die Anfrage, wobei der Knoten **Nächste** die Paginierung ausführt.
 
-```
+```json
 {
     "content": [
         {
@@ -72,7 +72,7 @@ Antwort auf die Anfrage, wobei der Knoten **Nächste** die Paginierung ausführt
 
 Standardmäßig ist der Knoten **next** bei der Interaktion mit Tabellen mit einer großen Datenmenge nicht verfügbar. Um die Paginierung auszuführen, müssen Sie den Parameter **_forcePagination=true** zu Ihrer Aufruf-URL hinzufügen.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_forcePagination=true \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
