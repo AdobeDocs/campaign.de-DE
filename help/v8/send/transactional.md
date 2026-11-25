@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 87%
+source-wordcount: '476'
+ht-degree: 81%
 ---
 # Erste Schritte mit Transaktionsnachrichten{#send-transactional-messages}
 
@@ -49,9 +49,9 @@ Transaktionsnachrichten dienen zum Senden von:
 * einer individuellen Echtzeit-Antwort auf eine Kundenaktion
 * Inhalten, die keine Werbung sind
 
-Die Einstellungen für Transaktionsnachrichten sind in [diesem Abschnitt](../config/transactional-msg-settings.md) beschrieben.
+Die Einstellungen für Transaktionsnachrichten sind unter [Einstellungen für Transaktionsnachrichten in Campaign](../config/transactional-msg-settings.md) beschrieben.
 
-[Diese Seite](../architecture/architecture.md#transac-msg-archi) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
+Grundlegendes zur Transaktionsnachrichten-Architektur in [Message Center-Architektur](../architecture/architecture.md#transac-msg-archi).
 
 ## Funktionsweise von Transaktionsnachrichten {#transactional-messaging-operating-principle}
 
@@ -86,7 +86,7 @@ Gehen Sie wie folgt vor, um Ereignistypen für die Verarbeitung in Adobe Campaig
 1. Wählen Sie die Aufzählung **[!UICONTROL Ereignistyp]** aus der Liste.
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um einen Aufzählungswert zu erstellen. Hierbei kann es sich um eine Bestellbestätigung, eine Passwortänderung, eine Änderung des Bestellversands usw. handeln.
 
-   ![](assets/messagecenter_eventtype_enum_001.png)
+   ![Auflistung Ereignistyp unter Administration > Plattform > Auflistungen mit dem Dialogfeld Hinzufügen und dem Auflistungswert](assets/messagecenter_eventtype_enum_001.png)
 
    >[!CAUTION]
    >
@@ -98,4 +98,4 @@ Gehen Sie wie folgt vor, um Ereignistypen für die Verarbeitung in Adobe Campaig
 >
 >Weitere Informationen über [Auflistungen](../config/enumerations.md).
 
-Im nächsten Schritt erfahren Sie, wie Sie [Vorlage für Transaktionsnachrichten erstellen und &#x200B;](transactional-template.md).
+Im nächsten Schritt erfahren Sie, wie Sie [Vorlage für Transaktionsnachrichten erstellen und ](transactional-template.md).

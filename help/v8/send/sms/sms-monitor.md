@@ -28,10 +28,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 71%
+source-wordcount: '317'
+ht-degree: 52%
 ---
 # Überwachen und Verfolgen einer SMS
 
@@ -47,25 +47,25 @@ Doppelklicken Sie in der Versandliste auf Ihren Versand, um auf das Dashboard zu
 
 Auf der Registerkarte **[!UICONTROL Zusammenfassung]** befinden sich die Hauptdaten wie die Anzahl der verarbeiteten Nachrichten und die Erfolgsanzahl.
 
-![](assets/sms_summary.png){zoomable="yes"}
+![Registerkarte „Zusammenfassung“ des SMS-Versand-Dashboards mit zu sendenden Nachrichten, verarbeiteten und Erfolgsraten sowie dem Versandstatus](assets/sms_summary.png){zoomable="yes"}
 
 Nach dem Versand der SMS ist die Registerkarte **[!UICONTROL SMS]**, die sich auf den Inhalt des Versands bezieht, nicht mehr für Änderungen zugänglich.
 
 Auf der Registerkarte **[!UICONTROL Versand]** finden Sie Informationen zu den Versandlogs. Sie können für jede kontaktierte Adresse sehen, ob die SMS gesendet wurde oder nicht.
 
-![](assets/sms_deliverylogs.png){zoomable="yes"}
+![Versandregisterkarte Protokollliste, die für jede kontaktierte Adresse anzeigt, ob die SMS mit Status und Grund gesendet wurde](assets/sms_deliverylogs.png){zoomable="yes"}
 
 Auf der Registerkarte **[!UICONTROL Ausschlüsse]** finden Sie Details dazu, warum einige Adressen aus der Zielgruppe ausgeschlossen wurden.
 
-![](assets/sms_exclusions.png){zoomable="yes"}
+![Registerkarte „Versandausschlüsse“ mit den ignorierten Adressen und dem Grund, z. B. Auf die Blockierungsliste gesetzt Adresse oder Dublette](assets/sms_exclusions.png){zoomable="yes"}
 
 Auf der Registerkarte **[!UICONTROL Tracking]** finden Sie Informationen zum Tracking. Nachfolgend finden Sie ein Beispiel für eine im SMS-Inhalt getrackte URL.
 
-![](assets/sms_trackinglogs.png){zoomable="yes"}
+![Liste der Tracking-Registerkarte-URLs mit einer verfolgten URL aus dem SMS-Inhalt mit seiner Kennzeichnung, seinem Typ und seiner Quell-URL](assets/sms_trackinglogs.png){zoomable="yes"}
 
 Und abschließend die Registerkarte **[!UICONTROL Audit]** mit allen Details während des Starts des Versands:
 
-![](assets/sms_audit.png){zoomable="yes"}
+![Registerkarte „Audit“ - Protokoll, in dem die beim Start des Versands aufgezeichneten Nachrichten mit Spalten für Datum und Nachricht aufgelistet sind](assets/sms_audit.png){zoomable="yes"}
 
 ## Verstehen von SMS-Fehlschlägen
 

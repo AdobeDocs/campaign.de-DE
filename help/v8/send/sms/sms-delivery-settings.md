@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 92%
+source-wordcount: '814'
+ht-degree: 90%
 ---
 # SMS-Versandeinstellungen {#sms-settings}
 
@@ -46,7 +46,7 @@ Sie können alle diese Optionen in einer Versandvorlage einrichten, um zu vermei
 
 ## Konfigurieren der Registerkarte „SMS“ {#sms-tab}
 
-![](assets/send_settings.png){zoomable="yes"}
+![Registerkarte „SMS“ der Versandeigenschaften mit allgemeinen Parametern und der Tabelle Optionale SMPP-Parameter (TLV)](assets/send_settings.png){zoomable="yes"}
 
 Im Folgenden finden Sie die Informationen, die Sie zum Ausfüllen dieses Formulars benötigen. Jedes Feld wird nachfolgend erläutert:
 

@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 84%
+source-wordcount: '215'
+ht-degree: 61%
 ---
 # Erstellen des ersten SMS-Versands {#sms-delivery}
 
@@ -37,9 +37,9 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 
 1. Erstellen Sie einen neuen Versand und wählen Sie die [SMS-Versandvorlage](sms-mid-sourcing.md#sms-delivery-template) aus, die Sie für Ihre SMS-Sendungen erstellt haben.
 
-   ![](assets/sms_create.png){zoomable="yes"}
+   ![Versandvorlagenliste für einen neuen Versand, wobei die SMS-Vorlage „An Mobilgeräte senden“ (SMPP) hervorgehoben ist](assets/sms_create.png){zoomable="yes"}
 
-   Ausführliche Informationen zu den Schritten der Versanderstellung finden Sie auf [dieser Seite](../../start/create-message.md).
+   Die Schritte zur Versanderstellung werden im Abschnitt [Erstellen des ersten Versands](../../start/create-message.md) beschrieben.
 
 <!--
  * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
@@ -52,13 +52,13 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 
 1. Sie können über die Schaltfläche **[!UICONTROL Eigenschaften]** prüfen, ob alles nach Bedarf eingerichtet ist. [Weitere Informationen zur Registerkarte „SMS“](sms-delivery-settings.md#sms-tab)
 
-   ![](assets/sms_settings.png){zoomable="yes"}
+   ![Versandeigenschaften des SMS-Versands mit hervorgehobener Registerkarte „Allgemein“, hervorgehobenem Feld „Routing“ und hervorgehobener Registerkarte „SMS“](assets/sms_settings.png){zoomable="yes"}
 
 1. [Definieren Sie den Inhalt](sms-content.md) Ihres Versands.
 
 1. [Wählen Sie die Zielgruppe aus](sms-audience.md)
 
-Die Schritte zum Definieren einer Zielgruppe finden Sie auf [dieser Seite](../../audiences/create-audiences.md).
+Die Schritte zum Definieren einer Audience finden Sie unter [Erstellen von Profil-Audiences in Campaign](../../audiences/create-audiences.md).
 
 ## Validieren und Senden von SMS {#sms-validate}
 

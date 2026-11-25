@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '3642'
-ht-degree: 92%
+source-wordcount: '3734'
+ht-degree: 89%
 ---
 # Einstellungen für externe SMPP-Konten {#smpp-external-account}
 
@@ -53,7 +53,7 @@ Die Netzwerkgeräte auf der Seite des SMS-Dienstleisters werden oft als SMSC bez
 
 ## Verbindungsparameter {#smpp-connection-settings}
 
-![](assets/smpp_connection_settings.png){zoomable="yes"}
+![Registerkarte „Verbindungseinstellungen“ des externen SMPP-Kontos: Server, Port, Konto, Kennwort und Verbindungsmodus](assets/smpp_connection_settings.png){zoomable="yes"}
 
 Die folgenden Parameter samt Rollen sind zum Einrichten der Verbindung erforderlich:
 
@@ -94,7 +94,7 @@ Wenn diese Option aktiviert ist, werden zusätzliche Protokolle an die Protokoll
 
 ## Parameter des SMPP-Kanals {#smpp-channel-settings}
 
-![](assets/smpp_channel_settings.png){zoomable="yes"}
+![Registerkarte „SMPP-Kanaleinstellungen“: Transliterationsoption, Quellnummer, Quell- und Ziel-TON/NPI, Servicetyp](assets/smpp_channel_settings.png){zoomable="yes"}
 
 ### Transliteration der Zeichen zulassen {#smpp-transliteration}
 
@@ -124,7 +124,7 @@ Dieses Feld wird unverändert im Feld „service_type“ der SUBMIT_SM-PDU über
 
 ## Durchsatz und Verzögerungen {#smpp-delays}
 
-![](assets/smpp_throughput.png){zoomable="yes"}
+![Registerkarte „Durchsatz und Verzögerungen“: Übertragungsfenster, maximaler MT-Durchsatz, erneute Verbindung, Ablauf, Bindungs-Timeout, enquire_link](assets/smpp_throughput.png){zoomable="yes"}
 
 Diese Einstellungen steuern alle Zeitaspekte des SMPP-Kanals. Einige Provider erfordern eine sehr genaue Kontrolle der Nachrichtenrate, des Fensters und der Wiederholungszeiten. Diese Einstellungen sollten daher auf Werte gesetzt werden, die der Kapazität des Providers und den in seinem Vertrag angegebenen Bedingungen entsprechen.
 
@@ -134,7 +134,7 @@ Das Fenster entspricht der Anzahl der SUBMIT_SM-PDUs, die gesendet werden könne
 
 Beispiel einer Übertragung mit einem maximalen Fenster von 4:
 
-![](assets/sms_sending_window.png){zoomable="yes"}
+![Sequenz zwischen Campaign und SMSC: SUBMIT_SM-Anfragen und SUBMIT_SM_RESP-Antworten mit einem Fenster von 4](assets/sms_sending_window.png){zoomable="yes"}
 
 Das Fenster hilft, den Durchsatz zu erhöhen, wenn die Netzwerkverbindung eine hohe Latenz aufweist. Der Wert des Fensters muss mindestens der Anzahl der SMS/Sek. entsprechen, multipliziert mit der Latenz des Links (in Sekunden), damit der Connector nie auf eine SUBMIT_SM_RESP wartet, bevor die nächste Nachricht gesendet wird.
 
@@ -199,7 +199,7 @@ Wenn die Nachricht nicht in GSM codiert werden kann, wird sie in UCS-2 codiert u
 
 ## SMSC-Besonderheiten {#smsc-specificities}
 
-![](assets/smsc_specificities.png){zoomable="yes"}
+![Registerkarte SMSC-Besonderheiten mit message_payload, bind-TON/NPI, Status-Regexe, ID-Formaten und TLS-Optionen](assets/smsc_specificities.png){zoomable="yes"}
 
 ### message_payload aktivieren
 
@@ -347,7 +347,7 @@ Wenn diese Option aktiviert ist, werden alle Verbindungen zum SMSC mit TLS versc
 
 ## Eingehender Traffic {#incoming-traffic}
 
-![](assets/incoming_traffic.png){zoomable="yes"}
+![Registerkarte „Eingehender Traffic“: Optionale SMPP-Parameter (TLV) in MO und automatische Antworttabelle für den MO](assets/incoming_traffic.png){zoomable="yes"}
 
 ### Optionale SMPP-Parameter (TLV) in MO
 

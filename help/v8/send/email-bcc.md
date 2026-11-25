@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 81%
+source-wordcount: '398'
+ht-degree: 78%
 ---
 # Senden einer Kopie Ihrer Nachrichten an eine BCC-Adresse {#bcc}
 
@@ -62,7 +62,7 @@ Gehen Sie wie folgt vor, um BCC für eine bestimmte [Versandvorlage](create-temp
 1. Wählen Sie die **[!UICONTROL Eigenschaften]**-Schaltfläche aus.
 1. Aktivieren Sie auf der **[!UICONTROL Versand]** die Option **[!UICONTROL E-Mail-BCC mit erweitertem MTA]**.
 
-   ![](assets/email-bcc.png)
+   ![Versandeigenschaften Registerkarte „Versand“ mit hervorgehobener Option „E-Mail-BCC mit erweitertem Momentum“](assets/email-bcc.png)
 
 1. Klicken Sie zum Bestätigen auf **[!UICONTROL OK]**.
 

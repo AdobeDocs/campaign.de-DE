@@ -24,16 +24,16 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 87%
+source-wordcount: '773'
+ht-degree: 80%
 ---
 # Verwenden von Gestaltungsbausteinen{#personalization-blocks}
 
 Gestaltungsbausteine sind dynamische Inhalte, die ein spezifisches Rendering enthalten, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußnachricht oder einen Link zur Mirrorseite hinzufügen.
 
-Um auf personalisierte Inhaltsbausteine zuzugreifen, navigieren Sie zum Knoten **[!UICONTROL Ressourcen > Kampagnen-Management > Gestaltungsbausteine]** des Explorers. Integrierte Gestaltungsbausteine werden in [diesem Abschnitt](#ootb-personalization-blocks) aufgelistet.
+Um auf personalisierte Inhaltsbausteine zuzugreifen, navigieren Sie zum Knoten **[!UICONTROL Ressourcen > Kampagnen-Management > Gestaltungsbausteine]** des Explorers. Integrierte Gestaltungsbausteine werden unter [Integrierte Gestaltungsbausteine“ ](#ootb-personalization-blocks).
 
 Sie können auch neue Bausteine definieren, um die Personalisierung Ihrer Sendungen zu optimieren. [Weitere Informationen](#create-custom-personalization-blocks).
 
@@ -44,7 +44,7 @@ Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzuf�
 1. Klicken Sie im Inhaltseditor des Versand-Assistenten auf das Personalisierungssymbol und wählen Sie danach das Menü **[!UICONTROL Einfügen]** aus.
 1. Wählen Sie einen Gestaltungsbaustein aus der Liste aus oder klicken Sie auf das Menü **[!UICONTROL Sonstige...]**, um auf die vollständige Liste zuzugreifen.
 
-   ![](assets/perso-content-block.png)
+   ![Untermenü in das Personalisierungsmenü einbeziehen, in dem Bausteine wie „Link zur Mirrorseite“ aufgelistet werden, mit „Sonstige…“ am Ende](assets/perso-content-block.png)
 
 1. Der Gestaltungsbaustein wird dann als Skript eingefügt. Er wird automatisch an das Profil der Empfängerin bzw. des Empfängers angepasst, wenn die Personalisierung generiert wird.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Vorschau]** und wählen Sie eine Person aus, um den Inhalt dieses Bausteins für eine bestimmte Empfängerin oder einen bestimmten Empfänger anzuzeigen.
@@ -82,11 +82,11 @@ Gehen Sie wie folgt vor, um einen Gestaltungsbaustein zu erstellen:
 1. Navigieren Sie zum Ordner **[!UICONTROL Ressourcen > Kampagnen-Management > Gestaltungsbausteine]** des Campaign-Explorers.
 1. Klicken Sie über der Liste der integrierten Bausteine auf **[!UICONTROL Neu]**.
 
-   ![](assets/perso-new-block.png)
+   ![Liste der Gestaltungsbausteine in Campaign Explorer mit einem Pfeil auf der Schaltfläche Neu](assets/perso-new-block.png)
 
 1. Konfigurieren Sie den Gestaltungsbaustein:
 
-   ![](assets/perso-custom-block.png)
+   ![Neues Gestaltungsbaustein-Formular mit Titel, internem Namen, Inhaltstyp und Skript-Inhalt für einen Ausschluss-Link](assets/perso-custom-block.png)
 
    * Geben Sie den Titel des Bausteins ein. Dieser Titel wird im Einfügefenster des Personalisierungsfelds angezeigt.
    * Wählen Sie einen **Versand**-Inhaltstyp aus.
@@ -100,4 +100,4 @@ Nach der Speicherung ist der neue Gestaltungsbaustein im Versand-Editor verfügb
 
 Im folgenden Video erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449015?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

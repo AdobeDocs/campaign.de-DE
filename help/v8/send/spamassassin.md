@@ -19,10 +19,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 92%
+source-wordcount: '326'
+ht-degree: 78%
 ---
 # SpamAssassin{#spamassassin}
 
@@ -52,7 +52,7 @@ Weiterführende Informationen zum Erstellen und Entwerfen eines Versands finden 
 1. Gehen Sie zum Tab **[!UICONTROL Vorschau]**.
 1. Wählen Sie einen Empfänger aus, um Ihren Versand in der Vorschau zu betrachten.
 
-   ![](assets/s_tn_del_preview_spamassassin_recipient.png)
+   ![Registerkarte Versandvorschau mit geöffneter Empfängerliste zur Auswahl eines Empfängers für die Anti-Spam-Prüfung](assets/s_tn_del_preview_spamassassin_recipient.png)
 
    >[!NOTE]
    >
@@ -60,13 +60,13 @@ Weiterführende Informationen zum Erstellen und Entwerfen eines Versands finden 
 
 1. Eine Warnmeldung gibt Auskunft über das Ergebnis des Tests. Wenn ein hohes Risiko erkannt wird, wird die folgende Warnmeldung angezeigt:
 
-   ![](assets/s_tn_del_preview_spamassassin_ko.png)
+   ![Warnung auf der Registerkarte „Vorschau“: Die Anti-Spam-Überprüfung hat mit dem Link Mehr ein hohes Risiko für diese E-Mail erkannt](assets/s_tn_del_preview_spamassassin_ko.png)
 
 1. Wählen Sie den Link **[!UICONTROL Details...]** neben dem Warnhinweis aus.
 1. Wählen Sie den Tab **[!UICONTROL Anti-Spam-Prüfung]** aus.
 1. Gehen Sie zum Bereich **[!UICONTROL Punktzahl/Regel/Beschreibung]**, um sich die Gründe für das Risiko anzusehen.
 
-   ![](assets/s_tn_del_msg_spamassassin_ko.png)
+   ![Registerkarte „Anti-Spam-Überprüfung“ mit Spam-Punktzahl, maximal zulässiger Punktzahl und der Liste Punkte / Regel / Beschreibung](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >

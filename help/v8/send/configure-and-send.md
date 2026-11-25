@@ -19,20 +19,20 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 93%
+source-wordcount: '1530'
+ht-degree: 77%
 ---
 # Konfigurieren und Durchführen des Versands {#configure-delivery}
 
-Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können für den Versand eine [Priorität](#delivery-priority) definieren, [Schübe](#sending-using-multiple-waves) einrichten und den Versand testen. Nach Abschluss dieser Konfiguration können Sie den Versand wie in [diesem Abschnitt](#confirm-delivery) beschrieben bestätigen. Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten [Zeitplan](#schedule-delivery-sending) gesendet.
+Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können für den Versand eine [Priorität](#delivery-priority) definieren, [Schübe](#sending-using-multiple-waves) einrichten und den Versand testen. Sobald diese Konfiguration abgeschlossen ist, können Sie den Versand wie in [Versand bestätigen) ](#confirm-delivery). Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten [Zeitplan](#schedule-delivery-sending) gesendet.
 
 ## Festlegen zusätzlicher Parameter {#delivery-additional-parameters}
 
 Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** die Parameter der Versandeigenschaften definieren.
 
-![](assets/delivery-properties-delivery.png)
+![Versandeigenschaften Registerkarte „Versand“ mit Einstellungen für Priorität, Schübe, Wiederholungen, Personalisierung und E-Mail-Format](assets/delivery-properties-delivery.png)
 
 ### Versandpriorität {#delivery-priority}
 
@@ -67,7 +67,7 @@ Gehen Sie wie folgt vor, um Schübe zu definieren:
 1. Öffnen Sie die Versandeigenschaften und navigieren Sie zur Registerkarte **[!UICONTROL Versand]**.
 1. Aktivieren Sie die Option **[!UICONTROL In mehreren Schüben versenden]** und klicken Sie auf den Link **[!UICONTROL Definition der Schübe]**.
 
-   ![](assets/delivery-define-waves.png)
+   ![Registerkarte „Versand“ mit der Option „In mehreren Schüben versenden“ und dem hervorgehobenen Link „Schübe definieren“](assets/delivery-define-waves.png)
 
 ### Konfigurieren von Schüben {#config-waves}
 
@@ -81,29 +81,29 @@ Sie können entweder die Größe jeder Welle definieren oder sie zu einem Kalend
 
   Geben Sie im Feld **[!UICONTROL Zeitraum]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
 
-  ![](assets/delivery-waves-size.png)
+  ![Dialogfeld für die Wellendefinition mit gleich großen Wellen, die auf 30 % eingestellt sind, und einem 2D-Zeitraum zwischen den Wellen](assets/delivery-waves-size.png)
 
 * **Definieren Sie einen Kalendereintrag für den Versand jedes Schubs**.  Beispielsweise beinhaltet der erste Schub 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten und beginnt sofort. Die beiden nächsten Schübe vervollständigen den Versand und starten in Sechs-Stunden-Intervallen.
 
   Geben Sie in der Spalte **[!UICONTROL Start]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Geben Sie in der Spalte **[!UICONTROL Größe]** eine feste Zahl oder einen Prozentsatz ein.
 
-  ![](assets/delivery-waves-calendar.png)
+  ![Dialogfeld für die Wellendefinition mit einem Kalender mit drei Wellen: 25 % bei 0s, 50 % bei 6h und 25 % bei 6h](assets/delivery-waves-calendar.png)
 
 ### Prüfung der Schub-Planung {#check-waves}
 
-Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) stellt sicher, dass der letzte Schub vor der Versand-Deadline eingeplant ist. Kampagnentypologien und ihre Regeln, die auf der Registerkarte **[!UICONTROL Typologie]** der Versandeigenschaften konfiguriert sind, werden in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC--> vorgestellt.
+Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) stellt sicher, dass der letzte Schub vor der Versand-Deadline eingeplant ist. Kampagnentypologien und ihre Regeln, die auf der Registerkarte **[!UICONTROL Typologie]** der Versandeigenschaften konfiguriert sind, werden unter „Typologieregeln [ Typologien“ ](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
 >[!IMPORTANT]
 >
->* Achten Sie darauf, dass die letzten Schübe nicht die Versandgültigkeit überschreiten, die in der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt ist. Anderenfalls werden einige Nachrichten möglicherweise nicht gesendet. Weitere Informationen zum Gültigkeitszeitraum eines Versands finden Sie in [diesem Abschnitt](delivery-failures.md#valid-period).
+>* Achten Sie darauf, dass die letzten Schübe nicht die Versandgültigkeit überschreiten, die in der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt ist. Anderenfalls werden einige Nachrichten möglicherweise nicht gesendet. Erfahren Sie mehr über den Gültigkeitszeitraum eines Versands in [Gültigkeitszeitraum](delivery-failures.md#valid-period).
 >
->* Planen Sie beim Konfigurieren der letzten Schübe zudem genügend Zeit für weitere Zustellversuche ein. Nähere Informationen zu weiteren Zustellversuchen finden Sie in [diesem Abschnitt](delivery-failures.md#retries).
+>* Planen Sie beim Konfigurieren der letzten Schübe zudem genügend Zeit für weitere Zustellversuche ein. Weitere Informationen zu weiteren Zustellversuchen finden Sie unter [Verwaltung ](delivery-failures.md#retries) Zustellversuche).
 >
 >* Die Schübe werden ab dem Kontaktdatum des Versands geplant. Wenn der Versand nach der geplanten Zeit einer oder mehrerer Schübe beginnt, werden diese überfälligen Schübe alle zusammen gesendet, anstatt mit Abständen angeordnet zu werden.
 
 ### Überwachen von Schüben {#monitor-waves}
 
-Öffnen Sie die Versand-Logs, um Ihre Sendungen zu überwachen. Weitere Informationen finden Sie auf [dieser Seite](send.md).
+Öffnen Sie die Versand-Logs, um Ihre Sendungen zu überwachen. Siehe [Senden und Überwachen von E-Mails](send.md).
 
 Die Versandlogs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
 
@@ -120,7 +120,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Wählen Sie beispielsweise für den ersten Schub 10 %, für den zweiten 15 % usw. aus.
 
-  ![](assets/delivery-waves-ex-ramp-up.png)
+  ![Schub-Definitionskalender mit fünf Schüben zunehmender Größe, von 10% bis 30%, 12h Abstand](assets/delivery-waves-ex-ramp-up.png)
 
 * **Kampagnen mit Callcentern**
 
@@ -130,7 +130,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   Wählen Sie dazu die Option **[!UICONTROL Mehrere Schübe derselben Größe planen]**. Geben Sie **[!UICONTROL 20]** als Schubgröße und **[!UICONTROL 1d]** im Feld **[!UICONTROL Zeitraum]** ein.
 
-  ![](assets/delivery-waves-ex-call-center.png)
+  ![Dialogfeld für die Wellendefinition mit gleich großen Wellen von 20 Nachrichten und einem 1D-Zeitraum](assets/delivery-waves-ex-call-center.png)
 
 ## Bestätigen des Versands {#confirm-delivery}
 
@@ -143,13 +143,13 @@ Gehen Sie dazu wie folgt vor:
    * Um den Versand sofort durchzuführen, wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]**.
    * Um den Versand für einen späteren Zeitpunkt zu planen, wählen Sie **[!UICONTROL Versand terminieren]**. [Weitere Informationen](#schedule-delivery-sending)
 
-1. Klicken Sie auf **[!UICONTROL Analysieren]**. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](delivery-analysis.md).
+1. Klicken Sie auf **[!UICONTROL Analysieren]**. Weitere Informationen hierzu finden Sie unter [Versandanalyse](delivery-analysis.md).
 
-   ![](assets/delivery-send-analyze.png)
+   ![Senden an Hauptzielgruppe des Versands, wobei die Schaltfläche „Analysieren“ und die Option „Sendungen schnellstmöglich abschicken“ hervorgehoben sind](assets/delivery-send-analyze.png)
 
 1. Klicken Sie abschließend auf **[!UICONTROL Versand bestätigen]**, um den Versand der Nachrichten zu starten.
 
-   ![](assets/delivery-send-confirm.png)
+   ![Senden an die Hauptzielgruppe des Versands nach der Analyse, mit hervorgehobener Schaltfläche „Versand bestätigen“](assets/delivery-send-confirm.png)
 
 1. Nun können Sie den Versand-Assistenten schließen und die Durchführung des Versands auf der Registerkarte **[!UICONTROL Versand]** verfolgen (entweder in der Detailansicht des Versands oder in der Versandliste).
 
@@ -168,7 +168,7 @@ Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben
 
 1. Geben Sie im Feld **[!UICONTROL Kontaktdatum]** das gewünschte Startdatum an.
 
-   ![](assets/delivery-send-postpone.png)
+   ![Senden an die Hauptzielgruppe des Versands mit ausgewähltem Versand verschieben und eingegebenem Kontaktdatum](assets/delivery-send-postpone.png)
 
 1. Starten Sie die Versandanalyse und bestätigen Sie den Versand. Der Versand beginnt jedoch erst nach dem im Feld **[!UICONTROL Kontaktdatum]** angegebenen Datum.
 
@@ -176,13 +176,13 @@ Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben
    >
    >Sobald Sie die Analyse gestartet haben, wird das von Ihnen definierte Kontaktdatum fixiert. Wenn Sie dieses Datum ändern, müssen Sie die Analyse neu starten, damit Ihre Änderungen berücksichtigt werden.
 
-   ![](assets/delivery-send-scheduled.png)
+   ![Nachricht Versandvorbereitung abgeschlossen mit Angabe des geplanten Versands für das Datum und der Schaltfläche Versand bestätigen](assets/delivery-send-scheduled.png)
 
 In der Versandliste erscheint der Versand mit dem Status **[!UICONTROL Ausstehend]**.
 
 Die Terminierung kann auch vorab über die Schaltfläche **[!UICONTROL Planung]** erfolgen.
 
-![](assets/delivery-scheduling-button.png)
+![Über die Schaltfläche Planung wird ein Dialogfeld Planung geöffnet, wobei die Option Versand planen (keine automatische Ausführung) ausgewählt ist](assets/delivery-scheduling-button.png)
 
 Dies bietet die Möglichkeit, den Versand auf einen späteren Zeitpunkt zu verschieben und ihn im Planungskalender zu verzeichnen.
 
@@ -198,7 +198,7 @@ Datum und Uhrzeit beziehen sich jeweils auf den aktuellen Benutzer. Die unter de
 
 Wenn Sie also beispielsweise einen Versand für 8 Uhr Brüsseler Zeit terminieren, wird die Uhrzeit automatisch in die ausgewählte Zeitzone konvertiert:
 
-![](assets/delivery-schedule-time-zone.png)
+![Das Dialogfeld Planung mit der Dropdown-Liste Zeitzone wird geöffnet, um das Kontaktdatum in eine andere Zeitzone zu konvertieren](assets/delivery-schedule-time-zone.png)
 
 <!--
 ## Adjust delivery failure management {#delivery-failure-management}

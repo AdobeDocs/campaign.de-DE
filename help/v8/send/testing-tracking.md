@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 7%
+source-wordcount: '727'
+ht-degree: 6%
 ---
 # Testen des Nachrichten-Trackings {#testing-tracking}
 
@@ -59,7 +59,7 @@ Gehen Sie wie folgt vor, um das Tracking auf Mirrorseiten, E-Mail-Protokollen un
 1. Gestalten Sie Ihren E-Mail-Inhalt mit Links, die Sie verfolgen möchten. [Erfahren Sie mehr über das Design von E-Mail-Inhalten](defining-the-email-content.md)
 1. Fügen Sie dem E-Mail-Inhalt einen Gestaltungsbaustein für die Mirrorseite hinzu. [Erfahren Sie mehr über Gestaltungsbausteine](personalization-blocks.md)
 
-   ![](assets/mirror-page-insert.png)
+   ![Personalization-Menü mit im E-Mail-Inhaltseditor ausgewählter Option „Einschließen“ und „Link zur Mirrorseite“](assets/mirror-page-insert.png)
 
 1. Geben Sie den Empfänger der E-Mail an. Da dieser Benutzer die E-Mail öffnen und auf die darin enthaltenen Links klicken muss, müssen Sie sicherstellen, dass Sie eine Testempfängeradresse auswählen, die Sie steuern. [Erfahren Sie mehr über Testprofile](../audiences/test-profiles.md)
 
@@ -71,7 +71,7 @@ Gehen Sie wie folgt vor, um das Tracking auf Mirrorseiten, E-Mail-Protokollen un
    * Stellen Sie sicher **[!UICONTROL dass „Tracking aktivieren]** aktiviert ist
    * Stellen Sie sicher **[!UICONTROL dass „Öffnungs-]**&quot; aktiviert ist, wenn Sie Öffnungen verfolgen möchten
 
-   ![](assets/s_ncs_user_email_del_tracking_param.png)
+   ![Tracking- und Bilddialog mit aktiviertem Tracking und Öffnungs-Tracking und angekreuzter Liste der getrackten URLs](assets/s_ncs_user_email_del_tracking_param.png)
 
    [Weitere Informationen zu URL-Tracking-Optionen](url-tracking.md)
 
@@ -92,7 +92,7 @@ Gehen Sie wie folgt vor, um das Tracking auf Mirrorseiten, E-Mail-Protokollen un
    * Wählen Sie die Registerkarte **[!UICONTROL Tracking]** aus
    * Überprüfen Sie, ob die Liste der Trackinglogs mit den angeklickten URLs und anderen Trackingereignissen angezeigt wird.
 
-   ![](assets/s_ncs_user_delivery_tracking_tab.png)
+   ![Registerkarte „Versand-Tracking“ mit einer Liste von Trackinglogs, in denen Kennzeichnungen, Klick- und Öffnungstypen sowie Empfänger angezeigt werden](assets/s_ncs_user_delivery_tracking_tab.png)
 
 ## Schritt 4: Registerkarte „Empfängerverfolgung“ überprüfen {#check-recipient-tracking}
 
@@ -101,7 +101,7 @@ Gehen Sie wie folgt vor, um das Tracking auf Mirrorseiten, E-Mail-Protokollen un
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Tracking]** aus. [Erfahren Sie mehr über Trackinglogs](tracking-logs.md)
 
-   ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
+   ![Registerkarte „Empfängerprofil-Tracking“ mit Trackinglogs mit Datum, Titel, Typ und Versand](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
 1. Vergewissern Sie sich, dass Tracking-Datensätze angezeigt werden mit:
    * Der Wert **[!UICONTROL Mirrorseite]** in der Spalte **[!UICONTROL Typ]**

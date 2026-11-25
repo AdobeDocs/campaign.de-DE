@@ -35,18 +35,18 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 53%
+source-wordcount: '580'
+ht-degree: 48%
 ---
 # Versandstatus {#delivery-statuses}
 
 Nachdem ein Versand ausgeführt wurde, zeigt das Versand-Dashboard einen Status an, mit dem Sie überwachen können, ob der Versand erfolgreich war. Die möglichen Status werden im folgenden Abschnitt beschrieben.
 
-![](assets/delivery-status.png)
+![Zusammenfassung des Versand-Dashboards mit hervorgehobenem Feld „Status“, in dem das Feld „Abgeschlossen“ und das Enddatum angezeigt werden](assets/delivery-status.png)
 
-Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren Behebung finden Sie unter [&#x200B; zu fehlgeschlagenen Sendungen &#x200B;](delivery-failures.md).
+Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren Behebung finden Sie unter [ zu fehlgeschlagenen Sendungen ](delivery-failures.md).
 
 **Verwandte Themen:**
 
@@ -108,7 +108,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
  </tbody> 
 </table>
 
-Weitere Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie in [diesem Abschnitt](about-deliverability.md). Weitere Informationen zur Zustellbarkeit finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
+Informationen zum Optimieren der Zustellbarkeit Ihrer Adobe Campaign-E-Mails finden Sie unter [Erste Schritte mit der Zustellbarkeit in Campaign](about-deliverability.md). Weitere Informationen zur Zustellbarkeit finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 ## Status &quot;Ausstehend&quot; {#pending-status}
 
@@ -122,7 +122,7 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 
   Der Grenzwert gleichzeitiger Kampagnen wird in der Option **[!UICONTROL NmsOperation_LimitConcurrency]** definiert. Der Standardwert ist 10.
 
-  Als Managed Cloud Services-Anwender können Sie mit Adobe zusammenarbeiten, um dieses Limit bei Bedarf anzupassen. Weitere Informationen zu Optionen finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=de){target="_blank"}.
+  Als Managed Cloud Services-Anwender können Sie mit Adobe zusammenarbeiten, um dieses Limit bei Bedarf anzupassen. Weitere Informationen zu Optionen finden Sie in der Dokumentation zu [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}.
 
 * **Probleme mit der Ressourcenverfügbarkeit**
 

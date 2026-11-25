@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 91%
+source-wordcount: '568'
+ht-degree: 79%
 ---
 # Personalisieren der Emoticon-Liste {#customize-emoticons}
 
@@ -49,13 +49,13 @@ Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfü
 
 1. Wählen Sie ein neues Emoticon, das Sie hinzufügen möchten, von dieser [Seite](https://unicode.org/emoji/charts/full-emoji-list.html) aus. Beachten Sie, dass es mit den verschiedenen Plattformen wie Browser und Betriebssystem kompatibel sein muss.
 
-1. Wählen Sie im **[!UICONTROL Explorer]**&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Aufzählungen]** und klicken Sie auf die native Aufzählung **[!UICONTROL Emoticon-Liste]**.
+1. Wählen Sie im **[!UICONTROL Explorer]****[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Aufzählungen]** und klicken Sie auf die native Aufzählung **[!UICONTROL Emoticon-Liste]**.
 
    >[!NOTE]
    >
    >Native Aufzählungen können nur von einem Administrator Ihrer Adobe Campaign Classic Console verwaltet werden.
 
-   ![](assets/emoticon_1.png)
+   ![Explorer mit der Auswahl Administration, Plattform und Auflistungen und der hervorgehobenen Auflistung der Emoticon-Liste](assets/emoticon_1.png)
 
 1. Wählen Sie **[!UICONTROL Hinzufügen]** aus.
 
@@ -66,7 +66,7 @@ Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfü
 
    * **[!UICONTROL Titel]**: Bezeichnung für Ihr neues Emoticon.
 
-   ![](assets/emoticon_5.png)
+   ![Dialogfeld „Auflistungswert“ mit den Feldern „U+-Code“ und „Bezeichnung“ für ein neues Emoticon](assets/emoticon_5.png)
 
 1. Klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]**, wenn Sie die Konfiguration abgeschlossen haben.
 Ihr neues Emoticon wird automatisch im Speicher abgelegt.
@@ -77,7 +77,7 @@ Ihr neues Emoticon wird automatisch im Speicher abgelegt.
 
    <br>In diesem Beispiel haben wir die Anzeigeposition Nr. 61 gewählt. Das bedeutet, dass ein vorhandener Eintrag an diesem Platz automatisch in den Speicher verschoben wird und unser neuer Eintrag dessen Position in der Aufzählung einnimmt.
 
-   ![](assets/emoticon_2.png)
+   ![Dialogfeld „Auflistungswert“ mit U+-Code, Bezeichnung und dem Feld Anzeigereihenfolge auf 61 gesetzt](assets/emoticon_2.png)
 
 1. Ihr neues Emoticon wurde der nativen Aufzählung **[!UICONTROL Emoticon einfügen]** hinzugefügt. Sie können seine **[!UICONTROL Anzeigeposition]** jederzeit ändern oder das Emoticon in den Speicher verschieben, wenn Sie es nicht mehr benötigen.
 
@@ -85,8 +85,8 @@ Ihr neues Emoticon wird automatisch im Speicher abgelegt.
 
 1. Ihr neues Emoticon finden Sie in Ihren Sendungen jetzt im Popup-Fenster **[!UICONTROL Emoticon einfügen]** an der 61. Position (wie in den vorherigen Schritten konfiguriert). Weiterführende Informationen zur Verwendung von Emoticons in Sendungen finden Sie in diesem [Abschnitt](defining-the-email-content.md#inserting-emoticons).
 
-   ![](assets/emoticon_4.png)
+   ![Popup-Fenster Emoticon einfügen, wobei das neue Emoticon an der letzten Position hinzugefügt wurde](assets/emoticon_4.png)
 
 1. Wenn die folgenden Emoticons im Popup-Fenster **[!UICONTROL Emoticon einfügen]** angezeigt werden, heißt das, dass sie nicht richtig konfiguriert wurden. Überprüfen Sie, ob Ihr **[!UICONTROL U+]**-Code oder die **[!UICONTROL Anzeigeposition]** in der **[!UICONTROL Emoticon-Liste]** korrekt sind.
 
-   ![](assets/emoticon_6.png)
+   ![Popup-Fenster Emoticon einfügen mit zwei roten Kreuz-Symbolen, die falsch konfigurierte Emoticons markieren](assets/emoticon_6.png)

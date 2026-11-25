@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 78%
+source-wordcount: '598'
+ht-degree: 69%
 ---
 # Auswählen der Zielgruppe für den SMS-Versand {#sms-audience}
 
@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor, um die Zielgruppe für Ihren Versand auszuwählen:
 
 1. Da die Zielgruppe in der Adobe Campaign-Datenbank gespeichert ist, wählen Sie auf der Registerkarte **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL In der Datenbank definiert]** aus.
 
-   ![](assets/audience_to.png){zoomable="yes"}
+   ![Das Dialogfeld „Ziel auswählen“ mit der ausgewählten Option In der Datenbank definiert, die über den Link „An“ geöffnet wurde](assets/audience_to.png){zoomable="yes"}
 
 1. Wählen Sie in der Dropdown-Liste die Option **[!UICONTROL Zielgruppen-Mapping]** aus. Das standardmäßige Zielgruppen-Mapping in Adobe Campaign ist „Empfänger“ und basiert auf **[!UICONTROL nms:recipient]**-Schema.
 
@@ -55,7 +55,7 @@ Gehen Sie wie folgt vor, um die Zielgruppe für Ihren Versand auszuwählen:
 
    Sie haben die Wahl zwischen verschiedenen Filtertypen:
 
-   ![](assets/audience_filters.png){zoomable="yes"}
+   ![Dialogfeld „Zielelement auswählen“ mit einer Liste der Zieltypen und Benutzerfilter zur Auswahl](assets/audience_filters.png){zoomable="yes"}
 
    Wählen Sie den gewünschten Zieltyp aus und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
 
@@ -74,7 +74,7 @@ Gehen Sie wie folgt vor, um die Zielgruppe für Ihren Versand auszuwählen:
 
 1. Geben Sie den Namen Ihrer Audience im Feld Titel ein und klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]**, um Ihre Audience zu validieren.
 
-   ![](assets/audience_finish.png){zoomable="yes"}
+   ![Zielelementdefinition mit der Bezeichnung „Mobile“ ist nicht leer, ein Filter für „Mobile“ und „Beenden“ sind hervorgehoben](assets/audience_finish.png){zoomable="yes"}
 
    Sie können beliebig viele Zielpopulationen hinzufügen, indem Sie erneut auf die Schaltfläche **[!UICONTROL Hinzufügen]** klicken. Sie können auch welche löschen, indem Sie auf das X nach dem Titel klicken.
 
@@ -88,7 +88,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie die Option **[!UICONTROL In einer externen Datei definiert]** aus.
 
-   ![](assets/audience_externalfile.png){zoomable="yes"}
+   ![Das Dialogfeld „Ziel auswählen“ mit der ausgewählten Option In einer externen Datei definiert und dem Link zur Dateiformatdefinition](assets/audience_externalfile.png){zoomable="yes"}
 
 1. Standardmäßig werden Empfängerinnen und Empfänger in die Datenbank importiert. In diesem Fall müssen Sie die Option **[!UICONTROL Zielgruppen-Mapping]** auswählen. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Arbeiten mit Zielgruppen-Mappings](../../audiences/target-mappings.md).
 

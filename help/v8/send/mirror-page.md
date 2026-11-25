@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 90%
+source-wordcount: '515'
+ht-degree: 82%
 ---
 # Verlinken auf die Mirrorseite {#mirror-page}
 
@@ -51,7 +51,7 @@ Es empfiehlt sich, einen Link zur Mirrorseite einzufügen. Dieser Link kann beis
 
 In Adobe Campaign können Sie einen Link zur Mirrorseite in den E-Mail-Inhalt einfügen, indem Sie den dedizierten **Gestaltungsbaustein** verwenden. Der integrierte Gestaltungsbaustein **Link zur Mirrorseite** fügt den folgenden Code in Ihren E-Mail-Inhalt ein: `<%@ include view='MirrorPage' %>`.
 
-![](assets/mirror-page-insert.png){width="800"}
+![Personalisierungsmenü des E-Mail-Editors mit der Option Einfügen und dann Link zur Mirrorseite ausgewählt](assets/mirror-page-insert.png){width="800"}
 
 
 Weitere Informationen zum Einfügen von Gestaltungsinhaltsbausteinen finden Sie unter [Gestaltungsbausteine](personalization-blocks.md).
@@ -65,7 +65,7 @@ Sie können den Erzeugungsmodus der E-Mail-Mirrorseite steuern. Optionen sind in
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Gültigkeit]** in den E-Mail-Eigenschaften.
 1. Überprüfen Sie im Abschnitt **Verwaltung der Mirrorseite** die Dropdown-Liste **[!UICONTROL Modus]**.
 
-![](assets/mirror-page-generation.png){width="800"}
+![Registerkarte „Gültigkeit“ mit der Dropdown-Liste „Verwaltungsmodus der Mirrorseite“ mit vier Generierungsoptionen](assets/mirror-page-generation.png){width="800"}
 
 Zusätzlich zum Standardmodus stehen die folgenden Optionen zur Verfügung:
 
@@ -83,6 +83,6 @@ So greifen Sie auf diese Mirrorseite zu:
 
 1. Wählen Sie eine Empfängerin oder einen Empfänger aus und klicken Sie auf die Schaltfläche **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]**
 
-   ![](assets/mirror-page-display.png){width="800"}
+   ![Versandlogs mit einem ausgewählten Protokoll und dem Link Mirrorseite für diese Nachricht anzeigen unten links](assets/mirror-page-display.png){width="800"}
 
    Die Mirrorseite wird in einem eigenen Bildschirm mit Personalisierungsdaten für die ausgewählte Empfängerin bzw. den ausgewählten Empfänger angezeigt.

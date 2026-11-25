@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 95%
+source-wordcount: '555'
+ht-degree: 92%
 ---
 # Erstellen von personalisierten PDF-Dokumenten{#generating-personalized-pdf-documents}
 
@@ -75,7 +75,7 @@ Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen 
 * Erstellen Sie einen neuen Baustein mit dem Titel &quot;Mein Logo&quot; und dem internen Namen &quot;Mein_Logo&quot;.
 * Klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter…]** und aktivieren Sie die Option **[!UICONTROL Der Inhalt des Bausteins wird als Anhang angefügt]**. So können Sie die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopieren.
 
-  ![](assets/s_ncs_pdf_bloc_option.png)
+  ![Mein Logo-Gestaltungsbaustein mit seinem Inhaltstyp und der OpenOffice XML-Definition im Editor](assets/s_ncs_pdf_bloc_option.png)
 
   Innerhalb des Gestaltungsbausteins sind zwei Deklarierungstypen zu unterscheiden:
 

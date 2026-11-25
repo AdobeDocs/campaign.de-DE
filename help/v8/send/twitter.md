@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 94%
+source-wordcount: '972'
+ht-degree: 80%
 ---
 # Posten von Nachrichten auf X (Twitter) mit Adobe Campaign {#post-tw-messages}
 
@@ -40,7 +40,7 @@ Nach der Konfiguration der Integration haben Sie folgende Möglichkeiten:
 * Sammeln Sie neue Kontakte, indem Sie die Profildaten abrufen, um auf der Basis dieser Daten Zielgruppenbestimmungs-Kampagnen durchzuführen und Cross-Channel-Strategien anzuwenden. Diese Aktion erfordert die Benutzerzustimmung.
 
 
-Die Konfigurationsschritte zur Integration Ihres X-Kontos mit Adobe Campaign werden auf [dieser Seite](../connect/ac-tw.md) beschrieben.
+Die Konfigurationsschritte zur Integration Ihres X-Kontos mit Adobe Campaign werden unter [Arbeiten mit Campaign und X (Twitter) beschrieben](../connect/ac-tw.md).
 
 ## Erstellen und Veröffentlichen eines X-Beitrags {#publish-on-tw}
 
@@ -50,13 +50,13 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem X-Konto zu posten:
 
    Erstellen Sie einen neuen Versand anhand der Versandvorlage **[!UICONTROL Tweet (Twitter)]**.
 
-   ![](assets/tw-new-delivery.png)
+   ![Dialogfeld „Neuer Versand“ mit der in der Vorlagenliste ausgewählten Versandvorlage Tweet (Twitter)](assets/tw-new-delivery.png)
 
 1. Wählen Sie die Hauptzielgruppe aus.
 
    Wählen Sie die Konten aus, an die Sie Beiträge senden möchten.
 
-   ![](assets/tw-define-target.png)
+   ![Das Dialogfeld „Ziel auswählen“ auf der Registerkarte „Hauptzielgruppe“ mit dem hervorgehobenen Twitter-Konto-Ziel und der hervorgehobenen Schaltfläche „Hinzufügen“](assets/tw-define-target.png)
 
    1. Wählen Sie den Link **[!UICONTROL An]** aus.
    1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
@@ -77,7 +77,7 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem X-Konto zu posten:
 
    Geben Sie den Inhalt Ihres Tweets auf der Registerkarte **[!UICONTROL Inhalt]** ein.
 
-   ![](assets/tw-delivery-content.png)
+   ![Registerkarte „Inhalt“ eines Tweet-Versands mit dem Beitragstext und einem eingegebenen Personalisierungsfeld](assets/tw-delivery-content.png)
 
    >[!CAUTION]
    >
@@ -91,7 +91,7 @@ Gehen Sie wie folgt vor, um eine Nachricht auf Ihrem X-Konto zu posten:
 
    Durchsuchen Sie die Registerkarte **[!UICONTROL Vorschau]**, um das Rendering Ihres Tweets zu überprüfen.
 
-   ![](assets/tw-delivery-preview.png)
+   ![Registerkarte „Vorschau“ eines Tweet-Versands, auf der der gerenderte Post-Text mit dem Service-Namen angezeigt wird](assets/tw-delivery-preview.png)
 
    1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
    1. Klicken Sie auf das Dropdown-Menü **[!UICONTROL Personalisierung testen]** und wählen Sie **[!UICONTROL Dienst]** aus.
@@ -118,7 +118,7 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
 1. Wählen Sie die Hauptzielgruppe aus.
 
-   ![](assets/tw-dm-define-target.png)
+   ![Das Dialogfeld „Ziel auswählen“ mit Hervorhebung der Zuordnung von Besucherabonnements und der Schaltfläche „Hinzufügen“ für eine Direktnachricht](assets/tw-dm-define-target.png)
 
    1. Klicken Sie auf den Link **[!UICONTROL An]** und anschließend auf den Button **[!UICONTROL Hinzufügen]**.
 
@@ -126,7 +126,7 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
       * Wählen Sie **[!UICONTROL Twitter-Abonnenten]** aus, um eine Direktnachricht an alle Ihre Follower zu senden.
 
-      * Wählen Sie **[!UICONTROL Filterbedingungen]** aus, um eine Abfrage zu definieren und deren Ergebnis anzuzeigen. Erfahren Sie in [diesem Abschnitt](../audiences/create-filters.md#advanced-filters), wie Sie einen Filter erstellen können.
+      * Wählen Sie **[!UICONTROL Filterbedingungen]** aus, um eine Abfrage zu definieren und deren Ergebnis anzuzeigen. Erfahren Sie unter „Erweiterte Filter[, wie Sie einen Filter ](../audiences/create-filters.md#advanced-filters).
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Testversand-Zielgruppe]** die Zielgruppe für den Testversand aus: Dieses Konto wird den Testversand Ihrer Direktnachricht erhalten.
 
@@ -139,15 +139,15 @@ Gehen Sie wie folgt vor, um Direktnachrichten an Ihre Follower zu senden:
 
 1. Geben Sie in der Registerkarte **[!UICONTROL Inhalt]** den Inhalt der Nachricht ein.
 
-   ![](assets/tw-dm-content.png)
+   ![Registerkarte „Inhalt“ eines Twitter-Direktnachrichten-Versands mit personalisiertem Nachrichtentext](assets/tw-dm-content.png)
 
-   Personalisierungsfelder können auf dieselbe Weise wie für E-Mail-Sendungen verwendet werden, um beispielsweise den Namen des Followers im Nachrichtentext hinzuzufügen. Weiterführende Informationen finden Sie in [diesem Abschnitt](../send/personalize.md).
+   Personalisierungsfelder können auf dieselbe Weise wie für E-Mail-Sendungen verwendet werden, um beispielsweise den Namen des Followers im Nachrichtentext hinzuzufügen. Weitere Informationen finden Sie unter [Erste Schritte mit der Personalisierung](../send/personalize.md).
 
 1. Sehen Sie sich Ihre Nachricht in der Vorschau an
 
    Durchsuchen Sie die Registerkarte **[!UICONTROL Vorschau]**, um das Rendering Ihres Tweets zu überprüfen.
 
-   ![](assets/tw-dm-preview.png)
+   ![Registerkarte „Vorschau“ einer Twitter-Direktnachricht, auf der der personalisierte Text für einen ausgewählten Abonnenten angezeigt wird](assets/tw-dm-preview.png)
 
    1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
    1. Klicken Sie auf das Dropdown-Menü **[!UICONTROL Personalisierung testen]** und wählen Sie **[!UICONTROL Besucherabonnement]**.

@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1291'
-ht-degree: 82%
+source-wordcount: '1322'
+ht-degree: 80%
 ---
 # Beschreibung des SMPP-Connectors {#smpp-connector-desc}
 
@@ -41,7 +41,7 @@ In diesem Abschnitt wird beschrieben, wie der SMS-Prozess Daten handhabt.
 
 Im Folgenden finden Sie ein allgemeines Blockdiagramm, in dem zusammengefasst wird, wie der SMS-Prozess mit seiner Umgebung interagiert.
 
-![](assets/smsv2_highlevel.png){zoomable="yes"}
+![SMS-Prozess mit SMPP-Connector und SR-Abstimmung, verknüpft mit der Campaign-Datenbank und dem SMPP-Provider](assets/smsv2_highlevel.png){zoomable="yes"}
 
 Der SMS-Prozess umfasst zwei wichtige Komponenten: den SMPP-Connector selbst, der die Kommunikation mit dem SMPP-Provider verarbeitet, und eine Hintergrundaufgabe für die SR-Abstimmung.
 
@@ -91,7 +91,7 @@ Der SMPP-Connector versucht für jedes aktive SMPP-Konto, Verbindungen immer akt
 
 Im Folgenden finden Sie ein Diagramm, das den gesamten Prozess beschreibt:
 
-![](assets/message_processing.png){zoomable="yes"}
+![Sequenzdiagramm von drei Phasen zwischen Broadlog, providerMsgId, providerMsgStatus, SMPP-Connector und Provider](assets/message_processing.png){zoomable="yes"}
 
 **Phase 1**
 

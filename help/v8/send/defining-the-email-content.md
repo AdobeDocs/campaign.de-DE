@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 93%
+source-wordcount: '2602'
+ht-degree: 76%
 ---
 # Definieren des E-Mail-Inhalts {#defining-the-email-content}
 
@@ -39,11 +39,11 @@ ht-degree: 93%
 
 Klicken Sie auf **[!UICONTROL Von]**, um den Namen und die Adresse des Absenders zu konfigurieren.
 
-![](assets/s_ncs_user_wizard_email02.png)
+![Das Dialogfeld „E-Mail-Kopfzeilenparameter“ wurde über den Link „Von“ geöffnet, mit dem Personalisierungsmenü im Feld „Von“](assets/s_ncs_user_wizard_email02.png)
 
 In diesem Fenster können Sie alle Informationen eingeben, die für das Erstellen von E-Mail-Nachrichten-Headern erforderlich sind. Diese Informationen können personalisiert werden. Verwenden Sie dazu die Schaltflächen rechts neben den Eingabefeldern, um Personalisierungsfelder einzufügen.
 
-Die Verwendung von Personalisierungsfeldern wird in [diesem Abschnitt](personalize.md) beschrieben.
+Informationen zum Einfügen und Verwenden von Personalisierungsfeldern finden Sie unter [Erste Schritte mit der Personalisierung](personalize.md).
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Der Betreff der Nachricht wird im gleichnamigen Feld konfiguriert. Sie können i
 >
 >Die Angabe des Betreffs der Nachricht ist zwingend erforderlich.
 
-![](assets/s_ncs_user_wizard_email_object.png)
+![Das Dialogfeld „Nachrichtenbetreff bearbeiten“ mit dem Personalisierungsmenü, das beim Empfänger geöffnet wird, um den Vornamen einzufügen](assets/s_ncs_user_wizard_email_object.png)
 
 Der Inhalt von Personalisierungsfeldern wird beim Versand der Nachrichten durch die im Empfängerprofil gespeicherten Werte ersetzt.
 
@@ -72,7 +72,7 @@ In oben stehender Nachricht wurde beispielsweise der Betreff der Nachricht für 
 
 >[!NOTE]
 >
->Die Verwendung von Personalisierungsfeldern wird in [diesem Abschnitt](personalize.md) beschrieben.
+>Die Verwendung von Personalisierungsfeldern wird unter [Erste Schritte mit der Personalisierung](personalize.md) beschrieben.
 
 Mit dem Popup-Fenster **[!UICONTROL Emoticon einfügen]** können Sie auch Emoticons zu Ihrer Betreffzeile hinzufügen.
 
@@ -96,7 +96,7 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Vo
 
 * Um HTML-Inhalte zu importieren, verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**. Sie haben auch die Möglichkeit, den Quell-Code direkt in die Unterregisterkarte **[!UICONTROL Quelle]** einzufügen.
 
-  Wenn Sie den Digital Content Editor (DCE) verwenden, lesen Sie [diesen Abschnitt](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
+  Wenn Sie den Digital Content Editor (DCE) verwenden, lesen Sie [Schritt 3 - Auswählen von Inhalten](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -106,11 +106,11 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Vo
 
   Über die verschiedenen Schaltflächen der Symbolleiste haben Sie Zugriff auf die Standard-Parameter für die Seitenaufmachung im HTML-Format.
 
-  ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![Registerkarte &quot;HTML-Inhalte“ mit hervorgehobener Formatierungssymbolleiste und hervorgehobener Schaltfläche „Hypertext-Link einfügen“](assets/s_ncs_user_wizard_email01_138.png)
 
   Sie können Bilder aus einer lokalen Datei oder aus einer Bildbibliothek in Adobe Campaign in Nachrichten einfügen. Klicken Sie dazu auf das Symbol **[!UICONTROL Bild]** und wählen Sie die entsprechende Option aus.
 
-  ![](assets/s_ncs_user_wizard_email01_18.png)
+  ![Menü der Bildschaltfläche in der HTML-Symbolleiste mit den Optionen Von einer lokalen Datei und Von der Bibliothek ](assets/s_ncs_user_wizard_email01_18.png)
 
   Zugriff auf die Bilder aus der Bibliothek besteht über den Ordner **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Ordnerbaums. Siehe auch [Bilder hinzufügen](#adding-images).
 
@@ -118,40 +118,40 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Vo
 
   >[!NOTE]
   >
-  >Die Verwendung von Personalisierungsfeldern wird in [diesem Abschnitt](personalize.md) beschrieben.
+  >Die Verwendung von Personalisierungsfeldern wird unter [Erste Schritte mit der Personalisierung](personalize.md) beschrieben.
 
   In den Registerkarten am unteren Seitenrand können Sie den HTML-Code der zu erstellenden Seite anzeigen und das Rendering der Nachricht mit ihrer Personalisierung anzeigen. Klicken Sie hierfür auf die Registerkarte **[!UICONTROL Vorschau]** und wählen Sie über die Symbolleisten-Schaltfläche **[!UICONTROL Personalisierung testen...]** eine Empfängerin bzw. einen Empfänger aus. Sie können eine Empfängerin bzw. einen Empfänger aus der/den definierten Zielgruppe(n) auswählen oder eine andere Empfängerin bzw. einen anderen Empfänger auswählen.
 
-  ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![Vorschau auf der HTML-Registerkarte „Inhalt“: Personalisierungsmenü zur Auswahl eines Empfängers, einer Testadresse oder einer Zielpopulation](assets/s_ncs_user_wizard_email01_139.png)
 
   Sie können die HTML-Nachricht valdieren. Sie können auch den Inhalt des E-Mail-Headers anzeigen.
 
-  ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![HTML-Vorschau für eine ausgewählte Empfängerin oder einen ausgewählten Empfänger mit personalisiertem Betreff und Inhalt sowie den Kopfzeilen „Von“, „Betreff“ und „Größe“](assets/s_ncs_user_wizard_email01_140.png)
 
 * Verwenden Sie zum Importieren von Textinhalten die Schaltfläche **[!UICONTROL Öffnen]** oder die Registerkarte **[!UICONTROL Textinhalt]**, um den Inhalt einer im Textformat angezeigten Nachricht einzugeben. Verwenden Sie die Schaltflächen der Symbolleiste, um auf Aktionen im Inhalt zuzugreifen. Mit der letzten Schaltfläche können Sie Personalisierungsfelder einfügen.
 
-  ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![Registerkarte „Textinhalt“ mit den Feldern „Textnachrichtenquelle“ und „Personalisierung“](assets/s_ncs_user_wizard_email01_141.png)
 
   Klicken Sie für das HTML-Format **[!UICONTROL unten auf]** Registerkarte „Vorschau“, um das Rendering der Nachricht mit ihrer Personalisierung anzuzeigen.
 
-  ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![Vorschau des Textinhalts für eine ausgewählte Empfängerin oder einen ausgewählten Empfänger mit personalisiertem Text und den Blöcken der Mirrorseite und der Abmeldung](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Definieren interaktiver Inhalte {#amp-for-email-format}
 
 Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](https://amp.dev/de/about/email/) ausprobieren, mit dem Sie unter bestimmten Bedingungen dynamische E-Mails senden können.
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](defining-interactive-content.md).
+Weitere Informationen hierzu finden Sie unter [Definieren interaktiver Inhalte in Adobe Campaign](defining-interactive-content.md).
 
 ## Verwenden von Content-Management {#using-content-management}
 
 Sie können den Inhalt des Versands mithilfe der Content-Management-Formulare direkt im Versandassistenten definieren. Die zu verwendende Veröffentlichungsvorlage für den Inhalt muss in den Versandeigenschaften auf der Registerkarte **[!UICONTROL Erweitert]** angegeben werden.
 
-![](assets/s_ncs_content_in_delivery.png)
+![Registerkarte Erweitert der Versandeigenschaften mit einer im Feld Vorlage ausgewählten Veröffentlichungsvorlage](assets/s_ncs_content_in_delivery.png)
 
 Eine zusätzliche Registerkarte erlaubt nun die Erstellung von Inhalten, die automatisch entsprechend den Regeln des Content-Managements formatiert und integriert werden.
 
-![](assets/s_ncs_content_in_delivery_edition_tab.png)
+![Versand mit einer Inhaltsvorlage, wobei die Registerkarte Bearbeiten mit den auszufüllenden Inhaltsfeldern angezeigt wird](assets/s_ncs_content_in_delivery_edition_tab.png)
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Sie können Emoticons in Ihren E-Mail-Inhalt einfügen.
 1. Klicken Sie auf das Symbol **[!UICONTROL Emoticon einfügen]**.
 1. Wählen Sie im Popup-Fenster ein Emoticon aus.
 
-   ![](assets/emoticon_4.png)
+   ![Popup-Fenster Emoticon einfügen, in dem die verfügbaren Emoticons aufgelistet werden, wobei eines für den HTML-Inhalt ausgewählt ist](assets/emoticon_4.png)
 
 1. Klicken Sie danach auf die Schaltfläche **[!UICONTROL Schließen]**.
 
@@ -196,7 +196,7 @@ Diese Bilder können:
 
 Der Versandassistent bietet die Möglichkeit, lokale oder in der Bibliothek enthaltene Bilder in den Inhalt der Nachrichten einzuschließen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
 
-![](assets/s_ncs_user_image_from_library.png)
+![Menü der Bildschaltfläche in der HTML-Symbolleiste mit ausgewählter Option Aus Bibliothek ](assets/s_ncs_user_image_from_library.png)
 
 >[!IMPORTANT]
 >
@@ -205,18 +205,18 @@ Der Versandassistent bietet die Möglichkeit, lokale oder in der Bibliothek enth
 So verwalten Sie Bilder über den Versandassistenten:
 
 1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Tracking &amp; Bilder]**.
-   ![](assets/s_ncs_user_email_del_img_param.png)
+   ![Schaltfläche „Tracking und Bilder“ in der Versandsymbolleiste hervorgehoben](assets/s_ncs_user_email_del_img_param.png)
 
 1. Wählen Sie die Option **[!UICONTROL Bilder hochladen]** auf dem Tab **[!UICONTROL Bilder]**.
 1. Dann können Sie festlegen, ob die Bilder in die E-Mail-Nachricht eingeschlossen werden sollen.
-   ![](assets/s_ncs_user_email_del_img_upload.png)
+   ![Registerkarte „Bilder“ mit ausgewählten Bildern hochladen und der Liste der erkannten Bilder mit dem Status Noch nicht online ](assets/s_ncs_user_email_del_img_upload.png)
 
 * Sie können Bilder manuell hochladen, ohne die Versandanalyse abwarten zu müssen. Klicken Sie dazu auf den Link **[!UICONTROL Bilder sofort online stellen...]**.
 * Sie können einen anderen Pfad für Zugriff auf die Bilder auf dem Tracking-Server angeben. Geben Sie dazu einen Pfad in das Feld **[!UICONTROL URL der Bilder]** ein. Dieser Wert setzt den in den Parametern des Installationsassistenten definierten Wert außer Kraft.
 
 Wenn Sie im Versandassistenten HTML-Inhalte mit eingebundenen Bildern öffnen, erhalten Sie eine Nachricht, die Ihnen die Möglichkeit gibt, die Bilder gemäß den Versandparametern sofort hochzuladen.
 
-![](assets/s_ncs_user_email_del_img_local.png)
+![Eingabeaufforderung mit der Frage, ob die relativen Bilder der geöffneten HTML-Datei jetzt mit den Schaltflächen Ja und Nein veröffentlicht werden sollen](assets/s_ncs_user_email_del_img_local.png)
 
 >[!IMPORTANT]
 >
@@ -227,11 +227,11 @@ Wenn Sie im Versandassistenten HTML-Inhalte mit eingebundenen Bildern öffnen, e
 
 Hier ist ein Beispiel für einen Versand mit vier Bildern zu sehen:
 
-![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
+![HTML-Inhalt eines Versands, dessen vier Bilder mit Pfeilen gekennzeichnet sind](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
 Die Bilder stammen aus einem lokalen Verzeichnis oder von einer Website, wie Sie im **[!UICONTROL Quelle]**-Tab feststellen können.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
+![Registerkarte &quot;Source&quot; des Versands, auf der die Bildpfade eines lokalen Verzeichnisses oder einer lokalen Website angezeigt werden, markiert mit Pfeilen](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 
 Wählen Sie das Symbol **[!UICONTROL Tracking &amp; Bilder]** und dann den Tab **[!UICONTROL Bilder]** aus, um die Erkennung der in der Nachricht enthaltenen Bilder zu starten.
 
@@ -249,7 +249,7 @@ Bilder werden im Zuge der Nachrichtenanalyse auf den Server geladen, um von auß
 
 Sie können Arbeit im Voraus erledigen und Bilder hochladen, sodass sie von anderen Adobe Campaign-Benutzenden angezeigt werden können. Dies kann bei der Zusammenarbeit nützlich sein. Wählen Sie hierfür die Option **[!UICONTROL Bilder sofort online stellen…]** und klicken Sie auf den Link, um den Upload der Bilder auf den Server zu starten.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
+![Registerkarte „Bilder“ mit lokalen Bildpfaden mit dem Status „Noch nicht online“ und dem Link Bilder sofort hochladen ](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
 >[!NOTE]
 >
@@ -257,11 +257,11 @@ Sie können Arbeit im Voraus erledigen und Bilder hochladen, sodass sie von ande
 
 Sobald die Bilder online sind, können Sie die Namens- und Pfadänderungen im **[!UICONTROL Quelle]**-Tab der Nachricht prüfen.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_4.png)
+![Registerkarte &quot;Source&quot; nach dem Hochladen, auf der die Bild-URLs durch neue, mit Pfeilen markierte Pfade ersetzt wurden](assets/s_ncs_user_images_in_delivery_wiz_4.png)
 
 Durch Ankreuzen der Option **[!UICONTROL Bilder in die E-Mail einschließen (multipart related)]** haben Sie die Möglichkeit, in der entsprechenden Spalte für jedes Bild anzugeben, ob es in die E-Mail eingeschlossen werden soll oder nicht.
 
-![](assets/s_ncs_user_images_in_delivery_wiz_5.png)
+![Registerkarte „Bilder“ mit der Option „Bilder in die ausgewählte E-Mail einschließen“ und „In die E-Mail einbetten“ für ein Bild](assets/s_ncs_user_images_in_delivery_wiz_5.png)
 
 >[!NOTE]
 >
@@ -275,7 +275,7 @@ Es ist möglich, einen Barcode dynamisch als Bitmap unter Verwendung eines Werts
 
 Positionieren Sie den Cursor im Inhalt an der Stelle, an der der Barcode eingefügt werden soll, und klicken Sie auf die Personalisierungsschaltfläche. Wählen Sie **[!UICONTROL Einfügen > Barcode...]**.
 
-![](assets/barcode_insert_14.png)
+![Personalization-Menü im HTML-Editor mit aktivierter Option „Einschließen“ und „Barcode“](assets/barcode_insert_14.png)
 
 Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
 
@@ -285,28 +285,28 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
 
      Beispiel eines 1D-Barcodes:
 
-     ![](assets/barcode_insert_08.png)
+     ![Beispiel eines 1D-Barcodes mit der unten stehenden Nummer](assets/barcode_insert_08.png)
 
    * Die Typen DataMatrix und PDF417 betreffen das 2D-Format.
 
      Beispiel eines 2D-Barcodes:
 
-     ![](assets/barcode_insert_09.png)
+     ![Beispiel für einen 2D DataMatrix-Barcode](assets/barcode_insert_09.png)
 
    * Wählen Sie zum Einfügen eines QR-Codes seinen Typ aus und geben Sie die anzuwendende Fehlerkorrekturrate an. Diese Rate definiert die Menge der wiederholten Informationen und die Toleranz bei Verschlechterung.
 
-     ![](assets/barcode_insert_06.png)
+     ![Barcode-Einstellungen mit QR-Code-Typ, ein Wert mit einem Personalisierungsfeld und 30% Fehlerkorrektur](assets/barcode_insert_06.png)
 
      Beispiel eines QR-Codes:
 
-     ![](assets/barcode_insert_12.png)
+     ![Beispiel eines QR-Codes](assets/barcode_insert_12.png)
 
 1. Geben Sie die gewünschte Größe des Barcodes an. Durch Angabe eines Faktors von x1 bis x10 kann die Größe angepasst werden.
 1. Im Feld **[!UICONTROL Wert]** können Sie den Wert des Barcodes definieren. Ein Wert kann mit einem Sonderangebot übereinstimmen und die Funktion eines Kriteriums sein. Er kann der Wert eines mit den Kunden verknüpften Datenbankfelds sein.
 
    Unten stehendes Beispiel zeigt einen EAN-8-Barcode, in dem die Kundennummer eines Empfängers enthalten ist. Klicken Sie auf die Personalisierungsschaltfläche rechts vom Feld **[!UICONTROL Wert]** und wählen Sie die Option **[!UICONTROL Empfänger > Kundennummer]**.
 
-   ![](assets/barcode_insert_15.png)
+   ![Personalisierungsmenü „Barcodewert“ mit ausgewählter Empfänger- und Kontonummer](assets/barcode_insert_15.png)
 
 1. Im Feld **[!UICONTROL Höhe]** können Sie die Höhe des Barcodes anpassen, ohne die Breite und somit die Abstände zwischen den Balken zu verändern.
 
@@ -322,10 +322,10 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
 
 Nachdem diese Elemente konfiguriert wurden, können Sie Ihre E-Mail abschließen und senden. Um Fehler zu vermeiden, sollten Sie vor dem Versand stets sicherstellen, dass Ihr Inhalt korrekt angezeigt wird. Klicken Sie hierzu auf die Registerkarte **[!UICONTROL Vorschau]**.
 
-![](assets/barcode_insert_10.png)
+![Versandvorschau mit einem QR-Code, der am Ende des personalisierten Nachrichteninhalts eingefügt wird](assets/barcode_insert_10.png)
 
 >[!NOTE]
 >
 >Sollte ein Barcode-Wert sich als ungültig erweisen, erscheint das entsprechende Bild in der Vorschau rot durchkreuzt.
 
-![](assets/barcode_insert_11.png)
+![Vorschau einer E-Mail, in der ein ungültiger Barcodewert den Strichcode rot durchgestrichen anzeigt](assets/barcode_insert_11.png)

@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 99%
+source-wordcount: '1397'
+ht-degree: 79%
 ---
 # Anhängen von Dateien an eine E-Mail{#attaching-files}
 
@@ -65,21 +65,21 @@ Gehen Sie wie folgt vor, um eine lokale Datei an einen Versand anzuhängen.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 1. Klicken Sie auf **[!UICONTROL Datei...]**, um die Datei auszuwählen, die an den Versand angehängt werden soll.
 
-   ![](assets/s_ncs_user_wizard_email_attachement.png)
+   ![Der Dialog Angehängte Dateien bearbeiten mit dem Menü Hinzufügen und Datei öffnen… ausgewählt, um eine Datei an einen E-Mail-Versand anzuhängen](assets/s_ncs_user_wizard_email_attachement.png)
 
 Sie können die Datei auch per Drag-and-Drop direkt in das Versandfeld **[!UICONTROL Anhänge]** ziehen oder das Symbol für **[!UICONTROL Datei anfügen]** in der Symbolleiste des Versandassistenten verwenden.
 
-![](assets/s_ncs_user_wizard_add_file_ico.png)
+![Symbol Anhängen in der Symbolleiste des Versandassistenten, neben dem Abschnitt E-Mail-Parameter ](assets/s_ncs_user_wizard_add_file_ico.png)
 
 Sobald Sie die Datei ausgewählt haben, wird sie auf den Server geladen, um zum Zeitpunkt des Versandstarts zur Verfügung zu stehen. Sie wird im Feld **[!UICONTROL Anhänge]** aufgeführt.
 
-![](assets/s_ncs_user_wizard_email_attachement_e.png)
+![E-Mail-Parameter mit der hochgeladenen Datei im Feld „Anhänge“](assets/s_ncs_user_wizard_email_attachement_e.png)
 
 ## Berechneten Anhang erstellen {#creating-a-calculated-attachment}
 
 Wenn Sie einen berechneten Anhang erstellen, kann der Name des Anhangs während der Analyse oder des Versands jeder Nachricht berechnet werden. Er hängt von der Empfängerin bzw. dem Empfänger ab. Es kann auch personalisiert und in PDF konvertiert werden.
 
-![](assets/s_ncs_user_wizard_attachment.png)
+![Der Dialog „Angehängte Dateien bearbeiten“ mit dem Menü „Hinzufügen“ geöffnet und Berechneter Anhang… ausgewählt](assets/s_ncs_user_wizard_attachment.png)
 
 Gehen Sie wie folgt vor, um einen personalisierten Anhang zu erstellen:
 
@@ -87,7 +87,7 @@ Gehen Sie wie folgt vor, um einen personalisierten Anhang zu erstellen:
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie **[!UICONTROL Berechneter Anhang]**.
 1. Wählen Sie in der Dropdown-Liste des **[!UICONTROL Typ]**-Felds eine der folgenden Berechnungsmodi aus:
 
-![](assets/s_ncs_user_wizard_email01_136.png)
+![Dialogfeld Anlagendefinition mit der Dropdown-Liste Typ mit den vier berechneten Anlagenoptionen](assets/s_ncs_user_wizard_email01_136.png)
 
 Folgende Optionen stehen zur Verfügung:
 
@@ -103,11 +103,11 @@ Wenn der Anhang eine lokale Datei ist, wählen Sie die Option **[!UICONTROL Date
 1. Geben Sie im Feld **[!UICONTROL Lokale Datei]** den gewünschten Anhang an.
 1. Vergeben Sie gegebenenfalls einen Titel. Der Titel ersetzt den Dateinamen, wenn er in Messaging-Systemen angezeigt wird. Wenn nichts angegeben ist, wird standardmäßig der Dateiname verwendet.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
+   ![Registerkarte „Allgemein“ der Anlagendefinition mit den Feldern „Typ“, „Bezeichnung“ und „Lokale Datei“ sowie der Option „Datei auf den Server hochladen“](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
 
 1. Wählen Sie, wenn nötig, die Option **[!UICONTROL Datei auf den Server laden]** und klicken Sie auf den Link **[!UICONTROL Auf dem Server aktualisieren...]**, um den Vorgang zu starten.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
+   ![Upload-Fortschrittsfenster, in dem die Protokollmeldungen und die Dateiübertragung auf den Server mit 100 % angezeigt werden](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
 Nun kann die Datei als Anhang der auf dieser Vorlage beruhenden Sendungen verwendet werden.
 
@@ -115,7 +115,7 @@ Nun kann die Datei als Anhang der auf dieser Vorlage beruhenden Sendungen verwen
 
 Mit der Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt der Absendung für jede Nachricht personalisiert und in PDF konvertiert]** können Sie eine Datei mit Personalisierungsfeldern (z. B. für den Vor- und Nachnamen des Empfängers) auswählen.
 
-![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
+![Textverarbeitungsdokument, das die Personalisierungsfelder Vorname und Nachname des Empfängers für einen PDF-Anhang enthält](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
 Gehen Sie wie folgt vor, um diese Art von Anhang zu konfigurieren:
 
@@ -124,13 +124,13 @@ Gehen Sie wie folgt vor, um diese Art von Anhang zu konfigurieren:
 1. Wählen Sie die Option **[!UICONTROL Datei auf den Server laden]**, klicken Sie auf den Link **[!UICONTROL Auf dem Server aktualisieren]** und starten Sie den Upload in dem sich öffnenden Fenster.
 1. Sie können eine Vorschau anzeigen. Wählen Sie dazu eine Empfängerin bzw. einen Empfänger aus.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
+   ![Dialogfeld für die Anlagendefinition, in dem die personalisierte PDF für eine aus der Liste „Vorschau“ ausgewählte Empfängerin oder einen ausgewählten Empfänger in der Vorschau angezeigt wird](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
 
 1. Analysieren und starten Sie den Versand.
 
    Jeder Empfänger enthält eine personalisierte PDF-Datei im E-Mail-Anhang.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
+   ![Erhaltene E-Mail mit einem personalisierten PDF-Anhang, der geöffnet wird, um den Empfängernamen in der Begrüßung anzuzeigen](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
 
 
@@ -149,13 +149,13 @@ Sie können den Namen des Anhangs während der Versandvorbereitung berechnen las
    >
    >Die Datei muss sich auf dem Server befinden.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_04.png)
+   ![Anlagendefinition mit einem Skript zur Berechnung von Dateipfad und -name, einschließlich des Datums, während der Versandanalyse](assets/s_ncs_user_wizard_email_calc_attachement_04.png)
 
 1. Analysieren und starten Sie den Versand.
 
    Im Analyseprotokoll können Sie die Berechnung des Dateinamens nachvollziehen.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
+   ![Versandanalyseprotokoll mit hervorgehobener Zeile mit dem Ergebnis „Berechneter Dateiname des Anhangs“](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 
 ### Personalisierte Datei anhängen {#attach-a-personalized-file}
 
@@ -168,7 +168,7 @@ Bei der Auswahl eines Anhangs können Sie die Option **[!UICONTROL Der Dateiname
 1. Geben Sie den Titel an, der für den Anhang verwendet werden soll.
 1. Geben Sie den Pfad und den genauen Namen der Datei im Eingabefenster an. Wenn der Dateiname personalisiert ist, können Sie die Personalisierungsfelder für die relevanten Werte verwenden.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
+   ![Anlagendefinition unter Verwendung des Nachnamens des Empfängers im Dateipfad, um für jeden Empfänger eine andere Datei auszuwählen](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
    >[!IMPORTANT]
    >
@@ -178,21 +178,21 @@ Bei der Auswahl eines Anhangs können Sie die Option **[!UICONTROL Der Dateiname
 
    In unten stehendem Beispiel wurde die angehängte Datei über den mithilfe der Zusammenführungsfelder konfigurierten Namen gewählt.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
+   ![Erhaltene E-Mail mit einer angehängten Datei, deren Name aus dem Nachnamen des Empfängers erstellt wurde](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
 
 ### Einstellungen für den Anhang {#attachment-settings}
 
 Für die ersten beiden Optionen können Sie **[!UICONTROL Datei auf den Server hochladen]** durch Auswahl der entsprechenden Option wählen. Über den Link **[!UICONTROL Datei auf dem Server aktualisieren]** können Sie mit dem Hochladen beginnen.
 
-![](assets/s_ncs_user_wizard_email01_137.png)
+![Registerkarte „Allgemein“ der Anlagendefinition mit ausgewählter Option „Datei auf dem Server hochladen“ und dem Link „Auf dem Server aktualisieren“](assets/s_ncs_user_wizard_email01_137.png)
 
 Eine Nachricht bestätigt, dass die Datei erfolgreich hochgeladen wurde:
 
-![](assets/s_ncs_user_wizard_email01_1371.png)
+![Anlagendefinition, die anzeigt, dass die Datei bereits auf dem Server existiert](assets/s_ncs_user_wizard_email01_1371.png)
 
 Ein Warnhinweis erscheint, wenn die Datei geändert wurde:
 
-![](assets/s_ncs_user_wizard_email01_1372.png)
+![Anlagendefinition, die den Warnhinweis anzeigt, dass die lokale Datei nicht mit der Datei auf dem Server übereinstimmt](assets/s_ncs_user_wizard_email01_1372.png)
 
 Im **[!UICONTROL Erweitert]**-Tab können Sie für Anhänge die folgenden Optionen konfigurieren:
 
@@ -201,4 +201,4 @@ Im **[!UICONTROL Erweitert]**-Tab können Sie für Anhänge die folgenden Option
 
   Geben Sie Ihren Text im Fenster ein und verwenden Sie die in der Dropdown-Liste verfügbaren Personalisierungsfelder. Im folgenden Beispiel ist der Dateiname personalisiert und enthält das heutige Datum und den Namen der empfangenden Person.
 
-  ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
+  ![Registerkarte Erweitert mit einem Skript, das den Dateinamen des Anhangs und die E-Mail mit dem resultierenden Namen personalisiert](assets/s_ncs_user_wizard_email_calc_attachement_09.png)

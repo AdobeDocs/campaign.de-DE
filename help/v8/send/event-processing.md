@@ -26,14 +26,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 90%
+source-wordcount: '760'
+ht-degree: 80%
 ---
 # Ereignisverarbeitung {#event-processing}
 
-Im Zusammenhang mit dem Transaktionsnachrichtenversand wird von einem externen Informationssystem ein Ereignis generiert und über die Methoden **[!UICONTROL PushEvent]** und **[!UICONTROL PushEvents]** an Adobe Campaign gesendet. Diese Methoden werden in [diesem Abschnitt](event-description.md) beschrieben.
+Im Zusammenhang mit dem Transaktionsnachrichtenversand wird von einem externen Informationssystem ein Ereignis generiert und über die Methoden **[!UICONTROL PushEvent]** und **[!UICONTROL PushEvents]** an Adobe Campaign gesendet. Diese Methoden werden unter &quot;[ der Ereignisbeschreibung“ ](event-description.md).
 
 Dieses Ereignis enthält Daten, die mit dem Ereignis verknüpft sind, z. B.:
 
@@ -43,7 +43,7 @@ Dieses Ereignis enthält Daten, die mit dem Ereignis verknüpft sind, z. B.:
 
 Beispiel für Ereignisdaten:
 
-![](assets/mc-event-request.png)
+![Beispiel-Ereignis-XML: Ereignisdatenattribute (Typ, E-Mail, Herkunft) und personalisierte Ereignisdaten im ctx-Element](assets/mc-event-request.png)
 
 Um Transaktionsnachrichten-Ereignisse zu verarbeiten, werden die folgenden Schritte auf der/den Ausführungsinstanz(en) ausgeführt:
 
@@ -65,11 +65,11 @@ Die vom Informationssystem erzeugten Ereignisse können auf zwei Weisen abgerufe
 
 Wenn sie erfasst sind, werden die Ereignisse von technischen Workflows auf die Echtzeit- und Batch-Warteschlangen der Ausführungsinstanzen verteilt, bis sie mit einer [Nachrichtenvorlage](transactional-template.md) verknüpft werden.
 
-![](assets/mc-event-queues.png)
+![Message Center-Ordner auf der Ausführungsinstanz: Echtzeit-Ereignisse und Batch-Ereignisse im Standardordner](assets/mc-event-queues.png)
 
 >[!NOTE]
 >
->Auf den Ausführungsinstanzen dürfen die Ordner **[!UICONTROL Echtzeit-Ereignisse]** oder **[!UICONTROL Batch-Ereignisse]** nicht als Ansichten festgelegt werden, da dies zu Problemen mit Zugriffsrechten führen könnte. Weitere Informationen zum Festlegen eines Ordners als Ansicht finden Sie in [diesem Abschnitt](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
+>Auf den Ausführungsinstanzen dürfen die Ordner **[!UICONTROL Echtzeit-Ereignisse]** oder **[!UICONTROL Batch-Ereignisse]** nicht als Ansichten festgelegt werden, da dies zu Problemen mit Zugriffsrechten führen könnte. Weitere Informationen zum Festlegen eines Ordners als Ansicht finden Sie unter [Umwandeln eines Ordners in eine Ansicht](../audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
 ## Übertragen eines Ereignisses an eine Vorlage {#event-to-template}
 
@@ -79,11 +79,11 @@ Beim Routing-Schritt wird ein Ereignis mit der entsprechenden Nachrichtenvorlage
 
 * dem in den Eigenschaften des Ereignisses angegebenen Ereignistyp:
 
-  ![](assets/event-type-sample.png)
+  ![Batch-Ereignis-XML mit dem Ereignistyp-Attribut auf „purchase_order“ gesetzt](assets/event-type-sample.png)
 
 * dem in den Eigenschaften der Nachrichtenvorlage angegebenen Ereignistyp:
 
-  ![](assets/event-type-select.png)
+  ![Assistent für Nachrichtenvorlagen mit der Liste „Ereignistyp“ mit „Kauf“ und „Purchase_def“](assets/event-type-select.png)
 
 Standardmäßig erfolgt das Routing auf Basis folgender Informationen:
 

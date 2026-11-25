@@ -33,10 +33,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 92%
+source-wordcount: '1237'
+ht-degree: 76%
 ---
 # Erstellen und Versenden von Push-Benachrichtigungen{#push-notifications-create}
 
@@ -59,7 +59,7 @@ In diesem Abschnitt werden die Elemente beschrieben, die für den Versand von iO
 
 Um einen neuen Versand zu erstellen, gehen Sie zur Registerkarte **[!UICONTROL Kampagnen]**, klicken Sie auf **[!UICONTROL Sendungen]** und anschließend auf die Schaltfläche **[!UICONTROL Erstellen]** oberhalb der Liste der vorhandenen Sendungen.
 
-![](assets/delivery_step_1.png)
+![Versandliste auf der Registerkarte Kampagnen mit dem hervorgehobenen Link Sendungen und einem Pfeil auf der Schaltfläche Erstellen](assets/delivery_step_1.png)
 
 
 Standardmäßig enthält Adobe Campaign zwei Versandvorlagen: eine für iOS und eine für Android. Sie können sie duplizieren, um Ihre eigenen Einstellungen zu definieren. Die Schritte zum Konfigurieren eines Push-Versands auf der Basis dieser Vorlagen werden nachfolgend beschrieben.
@@ -72,19 +72,19 @@ Gehen Sie wie folgt vor, um Benachrichtigungen auf iOS-Geräten zu senden:
 
 1. Wählen Sie die Versandvorlage **[!UICONTROL iOS-Versand]**.
 
-   ![](assets/push_ios_1.png)
+   ![Liste der Versandvorlagen mit ausgewähltem Versand auf iOS (iOS), bevor Sie auf Weiter klicken](assets/push_ios_1.png)
 
 1. Klicken Sie zur Bestimmung der Zielgruppe der Benachrichtigung auf den Link **[!UICONTROL An]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/push_ios_2.png)
+   ![Wählen Sie das Zieldialogfeld mit der Zuordnung Abonnierte Anwendungen und der Schaltfläche Hinzufügen in der Zielpopulation des Versands aus](assets/push_ios_2.png)
 
 1. Wählen Sie **[!UICONTROL Abonnenten einer iOS-Mobile-App (iPhone, iPad)]**, dann den Ihrer Mobile App entsprechenden Dienst und anschließend die iOS-Version der Mobile App.
 
-   ![](assets/push_ios_3.png)
+   ![Target-Typ-Schritt mit ausgewählten Abonnenten einer iOS-Mobile-App (iPhone, iPad)](assets/push_ios_3.png)
 
 1. Wählen Sie Ihre **[!UICONTROL Art der Benachrichtigung]** aus **[!UICONTROL Allgemeine Benachrichtigung (Warnung, Ton, Badge)]** oder **[!UICONTROL Stille Benachrichtigung]**.
 
-   ![](assets/push_ios_4.png)
+   ![Registerkarte „Allgemein“ mit Benachrichtigungstyp: Allgemeine Benachrichtigung (Warnung, Ton, Badge) oder Stille Benachrichtigung](assets/push_ios_4.png)
 
    >[!NOTE]
    >
@@ -112,10 +112,10 @@ Gehen Sie wie folgt vor, um Benachrichtigungen auf iOS-Geräten zu senden:
 
      >[!NOTE]
      > 
-     >Töne müssen in die App integriert und zum Zeitpunkt der Erstellung des entsprechenden Service konfiguriert werden.
+     >Töne müssen in die App integriert und zum Zeitpunkt der Erstellung des entsprechenden Dienstes konfiguriert werden.
      >
 
-   ![](assets/push_ios_5.png)
+   ![Registerkarte „Ton und Badge“ mit Badge-Wert, Badge entfernen, kritischem Alarmmodus und Sound-Namenseinstellungen](assets/push_ios_5.png)
 
 1. Ihre **[!UICONTROL Anwendungsvariablen]** werden automatisch von der Registerkarte **[!UICONTROL Anwendungsvariablen]** hinzugefügt. Damit können Sie beispielsweise das Benachrichtigungsverhalten definieren. So können Sie einen speziellen Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
 
@@ -127,7 +127,7 @@ Gehen Sie wie folgt vor, um Benachrichtigungen auf iOS-Geräten zu senden:
 
    * **[!UICONTROL Kategorie]**: Name Ihrer Kategorie-ID, über die Aktionsschaltflächen angezeigt werden. Mit diesen Benachrichtigungen können Benutzer rascher unterschiedliche Aufgaben ausführen, ohne die Anwendung öffnen oder darin navigieren zu müssen.
 
-   ![](assets/push_ios_6.png)
+   ![Registerkarte „Erweitert“ mit hervorgehobenen Feldern „Veränderlicher Inhalt“, „Thread-ID“ und „Kategorie“](assets/push_ios_6.png)
 
 1. Für zeitabhängige Benachrichtigungen können Sie die folgenden Optionen spezifizieren:
 
@@ -147,11 +147,11 @@ Gehen Sie wie folgt vor, um Benachrichtigungen auf iOS-Geräten zu senden:
 
    * **[!UICONTROL Relevanzwert]**: Legen Sie einen Relevanzwert auf der Skala von 0 bis 100 fest. Das System verwendet diesen Wert, um die Benachrichtigungen in der Benachrichtigungszusammenfassung zu sortieren.
 
-   ![](assets/push_ios_7.png)
+   ![Registerkarte „Erweitert“ mit ausgefüllter Ziel-Inhalts-ID, Startbild, Unterbrechungsgrad und Relevanzwert](assets/push_ios_7.png)
 
 1. Sobald die Benachrichtigung konfiguriert ist, klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**, um eine Vorschau der Benachrichtigung anzuzeigen.
 
-   ![](assets/push-ios-preview.png)
+   ![Registerkarte „Vorschau“ mit dem Titel und der Nachricht der iOS-Push-Benachrichtigung in einem Telefonmockup](assets/push-ios-preview.png)
 
 
 >[!TAB Android]
@@ -160,24 +160,24 @@ Gehen Sie wie folgt vor, um Benachrichtigungen auf Android-Geräten zu senden:
 
 1. Wählen Sie die Versandvorlage **[!UICONTROL Android-Versand (Android)]**.
 
-   ![](assets/push-template-android.png)
+   ![Liste der Versandvorlagen mit ausgewähltem Versand auf Android (Android), bevor Sie auf Weiter klicken](assets/push-template-android.png)
 
    >[!NOTE]
    > 
-   >Bei den aktuellen FCM-APIs (HTTP v1) müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen aktualisieren, um die Anzahl der Batch-Nachrichten zu erhöhen. Öffnen Sie zu diesem Zweck die Eigenschaften Ihrer Android-Versandvorlage und legen Sie auf der Registerkarte **Versand** für die Einstellung [&#x200B; Kontingentgröße](../../v8/send/configure-and-send.md#delivery-batch-quantity) den Wert **256** fest. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle vorhandenen Android-Sendungen.
+   >Bei den aktuellen FCM-APIs (HTTP v1) müssen Sie Ihre **Versandvorlagen** für Android-Push-Benachrichtigungen aktualisieren, um die Anzahl der Batch-Nachrichten zu erhöhen. Öffnen Sie zu diesem Zweck die Eigenschaften Ihrer Android-Versandvorlage und legen Sie auf der Registerkarte **Versand** für die Einstellung [ Kontingentgröße](../../v8/send/configure-and-send.md#delivery-batch-quantity) den Wert **256** fest. Wenden Sie diese Änderung auf alle Versandvorlagen an, die für Ihre Android-Sendungen verwendet werden, sowie auf alle vorhandenen Android-Sendungen.
 
 
 1. Klicken Sie zur Bestimmung der Zielgruppe der Benachrichtigung auf den Link **[!UICONTROL An]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/push-android-select-target.png)
+   ![Wählen Sie das Zieldialogfeld mit der Zuordnung Abonnierte Anwendungen und der Schaltfläche Hinzufügen für den Android-Versand](assets/push-android-select-target.png)
 
 1. Wählen Sie **[!UICONTROL Abonnenten einer Android-Mobile-App]**, dann den Ihrer Mobile App entsprechenden Dienst (hier Neotrips) und schließlich die Android-Version der App.
 
-   ![](assets/push-android-subscribers.png)
+   ![Target-Typ-Schritt mit ausgewählten Abonnentinnen und Abonnenten einer Android-Mobile-App](assets/push-android-subscribers.png)
 
 1. Erfassen Sie den Inhalt der Benachrichtigung.
 
-   ![](assets/push-android-content.png)
+   ![Registerkarte für Android-Versandinhalt mit Optionen für Nachrichtentyp, Nachrichtentext und Anwendungsvariablen](assets/push-android-content.png)
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Emoticon einfügen]**, um Ihrer Push-Benachrichtigung Emoticons hinzuzufügen.
 
@@ -194,9 +194,9 @@ Gehen Sie wie folgt vor, um Benachrichtigungen auf Android-Geräten zu senden:
 
 Testsendungen und der endgültige Versand werden analog zu anderen Versandmethoden durchgeführt.
 
-Wie Sie einen Versand validieren, erfahren Sie auf [dieser Seite](preview-and-proof.md).
+Erfahren Sie, wie Sie einen Versand in validieren [Vorschau anzeigen und Ihre E-Mail testen](preview-and-proof.md).
 
-Wie Sie den Versand bestätigen und durchführen können, können Sie auf [dieser Seite](send.md) erfahren.
+Erfahren Sie, wie Sie den Versand in bestätigen und senden [E-Mails senden und überwachen](send.md)
 
-Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Weitere Informationen zu den Ursachen für den fehlgeschlagenen Versand von Push-Benachrichtigungen finden Sie auf [dieser Seite](delivery-failures.md#push-error-types).
+Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Weitere Informationen zu den Ursachen für den fehlgeschlagenen Versand von Push[Benachrichtigungen finden Sie unter Fehlertypen bei Push-Benachrichtigungen ](delivery-failures.md#push-error-types).
 

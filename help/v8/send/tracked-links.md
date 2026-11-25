@@ -28,10 +28,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 51%
+source-wordcount: '643'
+ht-degree: 47%
 ---
 # Konfigurieren getrackter Links {#how-to-configure-tracked-links}
 
@@ -39,17 +39,17 @@ Für jeden Versand können Sie den Empfang von Nachrichten und die Aktivierung d
 
 >[!NOTE]
 >
->Die Links in E-Mail-Inhalten, die eine Personalisierung enthalten, benötigen eine bestimmte Syntax, um nachverfolgt zu werden. Weitere Informationen dazu, wie Sie Links in personalisierbaren E-Mails hinzufügen, die das Tracking unterstützen, finden [&#x200B; in diesem Abschnitt](personalized-links.md).
+>Die Links in E-Mail-Inhalten, die eine Personalisierung enthalten, benötigen eine bestimmte Syntax, um nachverfolgt zu werden. Erfahren Sie mehr darüber, wie Sie Links in E-Mails hinzufügen, die personalisiert werden können und das Tracking in [Personalisierte Links verfolgen](personalized-links.md) unterstützen.
 
 Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Gehen Sie wie folgt vor, um das Tracking von URLs zu personalisieren:
 
 1. Wählen Sie die Option **[!UICONTROL URLs anzeigen]** im unteren Bereich des Versandassistenten unter dem Nachrichtentext aus.
 
-   ![](assets/s_ncs_user_email_del_display_urls.png)
+   ![HTML-Inhalt mit der Option „URLs anzeigen“ unter dem Inhalt bereitstellen, noch nicht ausgewählt](assets/s_ncs_user_email_del_display_urls.png)
 
    Sobald Sie eine URL in der Liste der getrackten URLs markieren, wird sie im Versandinhalt optisch hervorgehoben. (Dies gilt nicht für den Mirrorseite-Link und den Abmelde-Link, die zum Standard-Package der Anwendung gehören.)
 
-   ![](assets/s_ncs_user_email_del_show_urls.png)
+   ![Liste der getrackten URLs mit einer ausgewählten URL und dem entsprechenden Link, der im Versandinhalt hervorgehoben ist](assets/s_ncs_user_email_del_show_urls.png)
 
 1. Aktivieren oder deaktivieren Sie das Tracking für jede in der Nachricht enthaltene URL.
 
@@ -67,7 +67,7 @@ Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Gehen Sie wie f
 
 1. Sie können den gewünschten Tracking-Modus in der Spalte **[!UICONTROL Tracking]** ändern. Wählen Sie dazu einen neuen Modus wie unten dargestellt aus.
 
-   ![](assets/s_ncs_user_select_tracking_mode.png)
+   ![Dropdown-Liste „Tracking-Spalte“ mit den Tracking-Modi für eine URL von Aktiviert bis Mirror-Seite](assets/s_ncs_user_select_tracking_mode.png)
 
    Für jede einzelne URL können Sie den Tracking-Modus auf einen dieser Werte festlegen.
 
@@ -78,7 +78,7 @@ Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Gehen Sie wie f
    * **[!UICONTROL Opt-out]**: Diese URL wird als Opt-out-URL behandelt.
    * **[!UICONTROL Mirrorseite]**: Diese URL wird als URL der Mirrorseite behandelt.
 
-1. Zusätzlich können Sie für jede getrackte URL in der Dropdown-Liste der Spalte **[!UICONTROL Kategorie]** eine Kategorie auswählen. Diese Kategorien können in Berichten angezeigt werden, wie z. B. im Bericht **[!UICONTROL URLs und Clickstreams]** (siehe [diesen Abschnitt](../reporting/delivery-reports.md#urls-and-click-streams)). Kategorien werden in einer bestimmten Auflistung definiert: **[!UICONTROL urlCategory]**. Weitere Informationen zum Arbeiten mit Auflistungen finden Sie in [&#x200B; Abschnitt &#x200B;](../config/enumerations.md).
+1. Zusätzlich können Sie für jede getrackte URL in der Dropdown-Liste der Spalte **[!UICONTROL Kategorie]** eine Kategorie auswählen. Diese Kategorien können in Berichten angezeigt werden, wie z. B. im Bericht **[!UICONTROL URLs und Clickstreams]** (siehe [URLs und Clickstreams](../reporting/delivery-reports.md#urls-and-click-streams)). Kategorien werden in einer bestimmten Auflistung definiert: **[!UICONTROL urlCategory]**. Weitere Informationen zum Arbeiten mit Auflistungen finden Sie unter [Verwalten von Auflistungen](../config/enumerations.md).
 
 ## Best Practices für URL-Trennzeichen {#url-delimiters}
 
@@ -88,8 +88,8 @@ Es wird dringend empfohlen, URLs auf der Registerkarte **[!UICONTROL Textinhalt]
 * Eckige Klammern [ ]
 * Geschweifte Klammern { }
 
-In diesem Beispiel folgt auf die URL https://www.adobe.com/de ein Semikolon. Das Semikolon kann von E-Mail-Clients der Empfänger als Teil der URL interpretiert werden. Daher kann der Link beschädigt sein. Um dieses Problem zu vermeiden, können Sie die URL auf eine der folgenden Arten in Trennzeichen einschließen:
+In diesem Beispiel folgt auf die URL https://www.adobe.com ein Semikolon. Das Semikolon kann von E-Mail-Clients der Empfänger als Teil der URL interpretiert werden. Daher kann der Link beschädigt sein. Um dieses Problem zu vermeiden, können Sie die URL auf eine der folgenden Arten in Trennzeichen einschließen:
 
-* (https://www.adobe.com/de);
-* [https://www.adobe.com/de];
-* {https://www.adobe.com/de};
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};

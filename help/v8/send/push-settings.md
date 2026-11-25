@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 88%
+source-wordcount: '2049'
+ht-degree: 85%
 ---
 # Konfigurieren des Push-Benachrichtigungskanals {#push-notification-configuration}
 
@@ -190,13 +190,13 @@ Gehen Sie wie folgt vor, um einen Dienst zum Senden von Push-Benachrichtigungen 
 
 1. Navigieren Sie zu **[!UICONTROL Profile und Zielgruppen > Services und Abonnements]** und klicken Sie auf **[!UICONTROL Erstellen]**.
 
-   ![](assets/new-service-push.png){width="800"}
+   ![Dialogfeld „Neuer Service“ mit dem Typ der Mobile App und dem Zielgruppen-Mapping der abonnierten Anwendungen](assets/new-service-push.png){width="800"}
 
 1. Geben Sie einen **[!UICONTROL Titel]** und einen **[!UICONTROL internen Namen]** ein und wählen Sie den Typ **[!UICONTROL Mobile App]** aus.
 
    >[!NOTE]
    >
-   >Das standardmäßige Zielgruppen-Mapping für **[!UICONTROL abonnierte Anwendungen (nms:appSubscriptionRcp)]** ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weitere Informationen über Zielgruppen-Mapping finden Sie auf [dieser Seite](../audiences/target-mappings.md).
+   >Das standardmäßige Zielgruppen-Mapping für **[!UICONTROL abonnierte Anwendungen (nms:appSubscriptionRcp)]** ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Arbeiten mit Zielgruppen-Mappings](../audiences/target-mappings.md).
 
 1. Klicken Sie dann auf das Symbol **[!UICONTROL Hinzufügen]** oben rechts, um die Mobile Apps zu definieren, die diesen Dienst verwenden.
 
@@ -208,14 +208,14 @@ Gehen Sie wie folgt vor, um eine App für iOS-Geräte zu erstellen:
 
 1. Wählen Sie **[!UICONTROL iOS-Anwendung erstellen]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/new-ios-app.png){width="600"}
+   ![Assistent zum Erstellen von Mobile Apps mit der Auswahl von iOS-App erstellen und der Schaltfläche Weiter](assets/new-ios-app.png){width="600"}
 
 1. Geben Sie den Namen Ihrer App im Feld **[!UICONTROL Titel]** ein.
 1. (Optional) Sie können den Inhalt einer Push-Nachricht mit einigen **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar und Teil der an das mobile Gerät gesendeten Nachrichten-Payload.
 
    Im folgenden Beispiel werden die Variablen **mediaURl** und **mediaExt** hinzugefügt, um Rich-Push-Benachrichtigungen zu erstellen. Danach wird der Anwendung das Bild bereitgestellt, das in der Benachrichtigung angezeigt werden soll.
 
-   ![](assets/ios-app-parameters.png){width="600"}
+   ![Schritt „Allgemeine Parameter“ des iOS-App-Assistenten, in dem mediaURL und mediaExt als Anwendungsvariablen aufgeführt sind](assets/ios-app-parameters.png){width="600"}
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Abonnementparameter]**, um die Zuordnung mit einer Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** definieren.
 
@@ -258,7 +258,7 @@ Gehen Sie wie folgt vor, um eine App für Android-Geräte zu erstellen:
 
 1. Wählen Sie **[!UICONTROL Android-Anwendung erstellen]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/new-android-app.png){width="600"}
+   ![Assistent zum Erstellen von Mobile Apps mit der Auswahl von Android-App erstellen und der Schaltfläche Weiter](assets/new-android-app.png){width="600"}
 
 1. Geben Sie den Namen Ihrer App im Feld **[!UICONTROL Titel]** ein.
 1. Der Integrationsschlüssel ist für jede Anwendung spezifisch. Dadurch wird die Mobile App mit Adobe Campaign verknüpft.

@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 94%
+source-wordcount: '1552'
+ht-degree: 76%
 ---
 # Erstellen und Veröffentlichen einer Vorlagen für Transaktionsnachrichten{#template-transactional-messages}
 
@@ -50,16 +50,16 @@ Gehen Sie wie folgt vor, um eine Nachrichtenvorlage zu erstellen:
 1. Wechseln Sie zum Knoten **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]** im Adobe Campaign-Navigationsbaum.
 1. Klicken Sie mit der rechten Maustaste in die Liste der Vorlagen und wählen Sie **[!UICONTROL Neu]** im Kontextmenü aus oder klicken Sie direkt auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Liste.
 
-   ![](assets/messagecenter_create_model_001.png)
+   ![Schaltfläche „Neu“ in der Liste der Transaktionsnachrichten-Vorlagen, mit der eine Nachrichtenvorlage erstellt wird](assets/messagecenter_create_model_001.png)
 
 1. Wählen Sie im Versand-Assistenten die Versandvorlage aus, die dem gewünschten Kommunikationskanal entspricht.
 
-   ![](assets/messagecenter_create_model_002.png)
+   ![Versandvorlagenliste mit Android-, Briefpost-, E-Mail-, iOS- und mobilen Transaktionsnachrichtenvorlagen](assets/messagecenter_create_model_002.png)
 
 1. Ändern Sie bei Bedarf den Titel.
 1. Wählen Sie den Ereignistyp aus, der der zu sendenden Nachricht entspricht. Ereignistypen, die zur Verarbeitung durch Adobe Campaign bestimmt sind, müssen zuvor erstellt werden. [Weitere Informationen](../send/transactional.md#create-event-types)
 
-   ![](assets/messagecenter_create_model_003.png)
+   ![Dropdown-Liste „Ereignistyp“ im neuen Fenster „Transaktionsnachrichten-Versand“ mit den Ereignistypen „Kauf“ und „Befehl“](assets/messagecenter_create_model_003.png)
 
    >[!CAUTION]
    >
@@ -80,7 +80,7 @@ Die Definition des Inhalts der Transaktionsnachricht entspricht der für alle Se
 
 Nachdem Sie Ihren Nachrichteninhalt definiert haben, können Sie Ereignisinformationen in den Nachrichtentext integrieren und ihn personalisieren. Ereignisinformationen werden mithilfe von Personalisierungs-Tags in den Text eingefügt.
 
-![](assets/messagecenter_create_content.png)
+![HTML-Inhaltseditor, bei dem das Menü Nachricht geöffnet ist, um Personalisierungsfelder in eine Transaktionsnachricht einzufügen](assets/messagecenter_create_content.png)
 
 * Alle Personalisierungsfelder stammen aus der Payload.
 * Es ist möglich, in einer Transaktionsnachricht auf einen oder mehrere Gestaltungsbausteine zu verweisen. <!--The block content will be added to the delivery content during the publication to the execution instance.-->
@@ -91,11 +91,11 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 1. Verfassen Sie den Inhalt der Nachricht.
 1. Fügen Sie das Personalisierungsfeld mithilfe des Menüs **[!UICONTROL Echtzeit-Ereignisse > Ereignis-XML]** ein.
 
-   ![](assets/messagecenter_create_custo_1.png)
+   ![Menü „Echtzeit-Ereignisse“ mit ausgewählter Ereignis-XML zum Einfügen eines Ereignis-Personalisierungs-Tags in den HTML-Inhalt](assets/messagecenter_create_custo_1.png)
 
 1. Geben Sie den Tag unter Verwendung der folgenden Syntax ein: **element name**.@**attribute name**, wie unten gezeigt.
 
-   ![](assets/messagecenter_create_custo_2.png)
+   ![Ereignispersonalisierungs-Tags im HTML-Inhalt unter Verwendung des Elementnamens und der Attributsyntax, wobei ein Tag unterstrichen ist](assets/messagecenter_create_custo_2.png)
 
 ## Testen der Transaktionsnachrichtenvorlage {#test-message-template}
 
@@ -105,23 +105,23 @@ Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen 
 
 1. Klicken Sie in der Transaktionsnachrichten-Vorlage auf die Registerkarte **[!UICONTROL Testadressen]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/messagecenter_create_seed_1.png)
+   ![Registerkarte „Testadressen“ der Vorlage mit hervorgehobener Schaltfläche „Hinzufügen“](assets/messagecenter_create_seed_1.png)
 
 1. Weisen Sie eine Bezeichnung zur einfachen späteren Auswahl zu und geben Sie dann die Testadresse ein (E-Mail oder Mobiltelefon je nach Kommunikationskanal).
 
 1. Externe Kennung eingeben: In diesem optionalen Feld können Sie einen Geschäftsschlüssel eingeben (eindeutige Kennung, Name und E-Mail usw.), den alle Anwendungen auf Ihrer Website gemeinsam verwenden und zur Identifikation von Profilen nutzen. Wenn dieses Feld auch in der Adobe Campaign-Marketing-Datenbank vorhanden ist, können Sie ein Ereignis mit einem Profil in der Datenbank abstimmen.
 
-   ![](assets/messagecenter_create_seed_2.png)
+   ![Dialogfeld Testadresse mit ausgefüllten Feldern Titel, E-Mail und Externe Kennung](assets/messagecenter_create_seed_2.png)
 
-1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/de/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}.
+1. Fügen Sie Testdaten ein. [Weitere Informationen zu Personalisierungsdaten finden Sie in der Dokumentation zu Campaign Classic v7](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}.
 
-   ![](assets/messagecenter_create_custo_3.png)
+   ![Dialogfeld mit Testdaten im Abschnitt Inhalt, als XML für den Ereigniskontext geschrieben](assets/messagecenter_create_custo_3.png)
 
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Erstellung der Testadresse zu bestätigen.
 
 1. Wiederholen Sie diesen Vorgang, um beliebig viele weitere Testadressen zu erstellen.
 
-   ![](assets/messagecenter_create_seed_6.png)
+   ![Registerkarte „Testadressen“ mit drei für die Vorlage „Kaufversand“ erstellten Testadressen](assets/messagecenter_create_seed_6.png)
 
 Sobald die Adressen erstellt wurden, können Sie eine Vorschau der Nachricht und ihrer Personalisierung erzeugen.
 
@@ -150,11 +150,11 @@ Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalt
 
 1. Klicken Sie in der Nachrichtenvorlage auf die Registerkarte **[!UICONTROL Vorschau]** und wählen Sie dann in der Dropdown-Liste eine **[!UICONTROL Testadresse]** aus.
 
-   ![](assets/messagecenter_preview_1.png)
+   ![Registerkarte Vorschau mit geöffnetem Menü Personalisierung testen und ausgewählter Testadresse](assets/messagecenter_preview_1.png)
 
 1. Wählen Sie eine der vorab erstellten Testadressen aus, um die personalisierte Nachrichtenvorschau zu erzeugen.
 
-   ![](assets/messagecenter_create_seed_7.png)
+   ![Auswahldialogfeld für Testadressen und Vorschau mit personalisiertem Nachrichteninhalt](assets/messagecenter_create_seed_7.png)
 
 ### Durchführen eines Testversands {#send-proof}
 
@@ -162,7 +162,7 @@ Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versa
 
 Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei jedem Versand.
 
-Weitere Informationen zu Testsendungen finden Sie in [diesem Abschnitt](../send/preview-and-proof.md#proofs-send).
+Weitere Informationen zu Testsendungen finden Sie unter [Durchführen eines Testversands](../send/preview-and-proof.md#proofs-send).
 
 Um jedoch einen Testversand einer Transaktionsnachricht zu senden, müssen Sie die folgenden Vorgänge ausführen:
 
@@ -175,15 +175,15 @@ Gehen Sie zur Durchführung des Testversands wie folgt vor:
 1. Analysieren Sie den Versand.
 1. Korrigieren Sie eventuelle Fehler und bestätigen Sie den Versand.
 
-   ![](assets/messagecenter_send_proof_001.png)
+   ![Das Dialogfeld „Testversand durchführen“ mit der Schaltfläche „Versandvorbereitung abgeschlossen“ und den zu sendenden Nachrichten bestätigen](assets/messagecenter_send_proof_001.png)
 
 1. Stellen Sie sicher, dass die Nachricht an die Testadresse geschickt wurde und der Inhalt Ihren Konfigurationen entspricht.
 
-   ![](assets/messagecenter_send_proof_002.png)
+   ![Erhaltene Korrekturabzugs-E-Mail mit Personalisierungswerten aus den Testadressdaten unterstrichen](assets/messagecenter_send_proof_002.png)
 
 Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage eingesehen werden.
 
-![](assets/messagecenter_send_proof_003.png)
+![Registerkarte Audit der Vorlage, auf der die gesendeten Testsendungen mit den zu sendenden Nachrichten, verarbeiteten Nachrichten und Erfolgszahlen aufgelistet sind](assets/messagecenter_send_proof_003.png)
 
 #### Wechsel von [!DNL Campaign Classic] v7 {#transition-from-v7}
 
@@ -193,7 +193,7 @@ Bei der Erstellung einer Transaktionsnachrichtenvorlage ist jedoch das Routing, 
 
 Um einen Testversand für Ihre Transaktionsnachrichtenvorlage durchzuführen, müssen Sie daher das Routing vom internen E-Mail-Versand zum **Mid-Sourcing-Routing-Konto** ändern.
 
-![](assets/messagecenter_send_proof_004.png)
+![Registerkarte „Allgemein“ der Versandeigenschaften mit ausgewähltem Routing-Feld und E-Mail-Routing mit Mid-Sourcing-Konto](assets/messagecenter_send_proof_004.png)
 
 Nach dem Versand der Testsendungen müssen Sie das Routing zurück zum internen E-Mail-Versand ändern, bevor Sie die Transaktionsnachrichtenvorlage veröffentlichen.
 
@@ -217,11 +217,11 @@ Publication lets you automatically create two message templates on the execution
 1. Wählen Sie die Vorlage aus, die Sie veröffentlichen möchten<!--on your execution instances-->.
 1. Klicken Sie auf **[!UICONTROL Veröffentlichen]**.
 
-   ![](assets/messagecenter_publish_template.png)
+   ![Veröffentlichen des Vorlagendialogfelds mit Prozess abgeschlossen und Protokoll der Veröffentlichung, nachdem auf Veröffentlichen geklickt wurde](assets/messagecenter_publish_template.png)
 
 Nach Abschluss der Veröffentlichung werden die beiden Nachrichtenvorlagen, die auf die Echtzeit- und Batch-Ereignisse angewendet werden, im Ordner **[!UICONTROL Administration > Produktion > Message Center-Ausführung > Standard > Transaktionsnachrichten-Vorlagen]** erstellt.
 
-![](assets/messagecenter_deployed_model.png)
+![Veröffentlichte Vorlage in der Liste und die beiden bereitgestellten Vorlagen im Ausführungsordner des Message Centers](assets/messagecenter_deployed_model.png)
 
 Sobald eine Vorlage veröffentlicht wurde und das entsprechende Ereignis ausgelöst wird, erhält Adobe Campaign<!--execution instance--> das Ereignis, verknüpft es mit der Transaktionsvorlage und sendet die entsprechende Transaktionsnachricht an jeden Empfänger.
 
@@ -250,7 +250,7 @@ Gehen Sie wie folgt vor, um die Veröffentlichung einer Transaktionsnachrichten-
 1. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**.
 1. Klicken Sie auf **[!UICONTROL Starten]**.
 
-![](assets/message-center-unpublish.png)
+![Rückgängigmachen der Veröffentlichung des Vorlagendialogfelds mit der Schaltfläche „Start“, geöffnet über die Schaltfläche „Veröffentlichung rückgängig machen“ einer veröffentlichten Vorlage](assets/message-center-unpublish.png)
 
 Der Status der Transaktionsnachrichten-Vorlage ändert sich von **[!UICONTROL Veröffentlicht]** in **[!UICONTROL In Bearbeitung]**.
 

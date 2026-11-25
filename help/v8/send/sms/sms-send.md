@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 100%
+source-wordcount: '156'
+ht-degree: 79%
 ---
 # Durchführen eines SMS-Versands an die Zielgruppe {#sms-send-audience}
 
@@ -40,10 +40,10 @@ Wählen Sie im daraufhin geöffneten Fenster die für Sie geeignete Aktion aus.
 
    Im folgenden Beispiel wird durch Auswahl von **[!UICONTROL Sendungen schnellstmöglich abschicken]** die Schaltfläche **[!UICONTROL Analysieren]** angezeigt. Klicken Sie auf die Schaltfläche **[!UICONTROL Analysieren]**.
 
-   ![](assets/send_action.png){zoomable="yes"}
+   ![Senden an Hauptzielgruppe des Versands, wobei die Option Versand so bald wie möglich ausgewählt und Analyse hervorgehoben ist](assets/send_action.png){zoomable="yes"}
 
    Adobe Campaign führt die gesamte Kontrolle aus, bevor der Testversand validiert wird. Es wird dabei der tatsächliche Umfang der Zielgruppe angezeigt. Am Ende der Analyse kann auf die Schaltfläche **[!UICONTROL Absendung bestätigen]** geklickt werden.
 
-   ![](assets/send_analyze.png){zoomable="yes"}
+   ![Abgeschlossene Versandanalyse mit der Anzahl der zu sendenden Nachrichten und der Schaltfläche Versand bestätigen](assets/send_analyze.png){zoomable="yes"}
 
 1. Um den SMS-Versand an die Zielgruppe durchzuführen, klicken Sie auf die Schaltfläche **[!UICONTROL Absendung bestätigen]**.

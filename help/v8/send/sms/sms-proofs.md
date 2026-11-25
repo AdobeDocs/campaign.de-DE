@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 93%
+source-wordcount: '337'
+ht-degree: 78%
 ---
 # Durchführen eines SMS-Testversands {#sms-proof}
 
@@ -39,7 +39,7 @@ Sie können einen Testversand für Ihren SMS-Versand durchführen, um ihn zu val
 
 1. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Testversand erzeugen]**. Daraufhin wird das folgende Fenster geöffnet:
 
-   ![](assets/proof_targeting.png){zoomable="yes"}
+   ![Senden eines Testversand-Dialogfelds mit der Liste Zielgruppenbestimmungsmodus: spezifische Testversand-Zielgruppe, Adressersetzung, Testadressen oder beides](assets/proof_targeting.png){zoomable="yes"}
 
    Es stehen mehrere Modi für einen Testversand zur Verfügung:
 
@@ -53,12 +53,12 @@ Sie können einen Testversand für Ihren SMS-Versand durchführen, um ihn zu val
 
    Im folgenden Beispiel wird **[!UICONTROL Bestimmung einer speziellen Testversand-Zielgruppe]** ausgewählt und eine Empfängerin bzw. ein Empfänger hinzugefügt:
 
-   ![](assets/proof_recipient.png){zoomable="yes"}
+   ![Senden eines Testversands im Modus Definition einer bestimmten Testversand-Zielgruppe mit einem hinzugefügten Empfänger und der Schaltfläche Analysieren](assets/proof_recipient.png){zoomable="yes"}
 
 1. Wählen Sie die Schaltfläche **[!UICONTROL Analysieren]** aus.
 Adobe Campaign führt die gesamte Kontrolle aus, bevor der Testversand validiert wird. Am Ende der Analyse kann auf die Schaltfläche **[!UICONTROL Absendung bestätigen]** geklickt werden.
 
-   ![](assets/proof_analyze.png){zoomable="yes"}
+   ![Testversand-Dialogfeld nach Analyse senden: Vorbereitung abgeschlossen, 1 zu sendende Nachricht, Analyseprotokoll und Schaltfläche Versand bestätigen](assets/proof_analyze.png){zoomable="yes"}
 
 1. Um den SMS-Testversand durchzuführen, klicken Sie auf die Schaltfläche **[!UICONTROL Absendung bestätigen]**.
 

@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 94%
+source-wordcount: '219'
+ht-degree: 72%
 ---
 # Konfigurieren von URL-Tracking-Optionen {#personalizing-url-tracking}
 
@@ -45,7 +45,7 @@ Erweiterte Einstellungen für das Tracking von Nachrichten sind über das Symbol
 >
 >Die Verwaltung von Bildern in E-Mails wird ebenfalls in diesem Fenster konfiguriert. Siehe [Hinzufügen von Bildern](defining-the-email-content.md#adding-images).
 
-![](assets/s_ncs_user_email_del_tracking_ico.png)
+![E-Mail-Versand mit hervorgehobenem Symbol „Tracking und Bilder“ in der Symbolleiste](assets/s_ncs_user_email_del_tracking_ico.png)
 
 Sie haben folgende Möglichkeiten:
 
@@ -57,15 +57,15 @@ Sie haben folgende Möglichkeiten:
 
 * Aktivierung/Deaktivierung des Trackings bei Öffnung der Nachricht.
 
-![](assets/s_ncs_user_email_del_tracking_param.png)
+![Fenster „Tracking und Bilder“, Registerkarte „Tracking“ mit den Optionen „Tracking aktivieren“ und „Tracking öffnen“ sowie der Baumstruktur der getrackten URLs](assets/s_ncs_user_email_del_tracking_param.png)
 
 Die getrackten URLs werden im mittleren Bereich des Fensters in Form einer Baumstruktur angezeigt.
 
-Sie können für jede URL separat das Tracking aktivieren oder deaktivieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](tracked-links.md).
+Sie können für jede URL separat das Tracking aktivieren oder deaktivieren. Weiterführende Informationen hierzu finden Sie unter [Konfigurieren getrackter Links](tracked-links.md).
 
 Im **[!UICONTROL Erweitert]**-Tab haben Sie die Möglichkeit, die Formeln zur Berechnung der getrackten URLs und der Öffnungs-URL zu personalisieren.
 
-![](assets/s_ncs_user_email_del_tracking_param_adv.png)
+![Fenster „Tracking und Bilder“, Registerkarte „Erweitert“ mit den Berechnungsformeln „Tracking-URL“ und „URL öffnen“](assets/s_ncs_user_email_del_tracking_param_adv.png)
 
 >[!CAUTION]
 >

@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 64%
+source-wordcount: '1095'
+ht-degree: 55%
 ---
 # E-Mail-Parameter {#email-parameters}
 
@@ -31,13 +31,13 @@ In diesem Abschnitt werden die in den Versandeigenschaften verfügbaren Optionen
 
 ## Verwenden von E-Mail BCC {#email-bcc}
 
-Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird. Die Option wird auf [dieser Seite](email-bcc.md) detailliert beschrieben.
+Sie können Adobe Campaign so konfigurieren, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird. Diese Option wird unter [Senden einer Kopie Ihrer Nachrichten an eine BCC-Adresse](email-bcc.md) beschrieben.
 
 ## Auswählen von Nachrichtenformaten {#selecting-message-formats}
 
 Sie können das Format der gesendeten E-Mail-Nachrichten ändern. Bearbeiten Sie hierzu die Versandeigenschaften und klicken Sie auf die Registerkarte **[!UICONTROL Versand]**.
 
-![](assets/email-message-format.png)
+![Registerkarte „Versand“ der Versandeigenschaften mit hervorgehobenem Abschnitt „E-Mail-Formate“ und drei Formatoptionen](assets/email-message-format.png)
 
 Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
@@ -73,7 +73,7 @@ Gehen wir davon aus, dass Sie eine E-Mail mit japanischen Zeichen versenden möc
 
 Wählen Sie dazu die Option **[!UICONTROL Nachrichtenkodierung erzwingen (Codepage)]** im Abschnitt **[!UICONTROL Zeichenkodierung]** und wählen Sie eine Kodierung aus der angezeigten Dropdown-Liste.
 
-![](assets/email-smtp-encoding.png)
+![Registerkarte SMTP mit der Option Für Nachrichten verwendete Kodierung erzwingen und geöffneter Dropdown-Liste Kodierung](assets/email-smtp-encoding.png)
 
 ## Verwalten von Bounce Messages {#managing-bounce-emails}
 
@@ -83,19 +83,19 @@ Auf der Registerkarte **[!UICONTROL SMTP]** der Versandeigenschaften lässt sich
 
 * **[!UICONTROL Bounce-Adresse]**: Sie können auch eine andere Adresse definieren, an die die nicht verarbeiteten Bounce Messages weitergeleitet werden. Mit dieser Adresse können Sie die Gründe für das Bounce-Verhalten untersuchen, wenn E-Mails von der Anwendung nicht automatisch qualifiziert werden konnten.
 
-Jedes dieser Felder kann mithilfe des dedizierten Symbols personalisiert werden. In [diesem Abschnitt](personalization-fields.md) erfahren Sie mehr über Personalisierungsfelder.
+Jedes dieser Felder kann mithilfe des dedizierten Symbols personalisiert werden. Weitere Informationen zu Personalisierungsfeldern finden Sie unter [Personalisierungsfelder hinzufügen](personalization-fields.md).
 
-![](assets/email-smtp-bounce.png)
+![Registerkarte „SMTP“ mit hervorgehobenem Abschnitt „Bounce Messages“: Felder für Fehler-an-Adresse und Bounce-Adresse](assets/email-smtp-bounce.png)
 
-Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschnitt](delivery-failures.md#bounce-mail-qualification).
+Weitere Informationen zur Bounce-Message-Verwaltung finden Sie unter [Bounce-Message-Qualifizierung](delivery-failures.md#bounce-mail-qualification).
 
 ## Abmelde-Liste mit einem Klick aktivieren {#one-click-list-unsubscribe}
 
-Die Abmelde-URL mit einem Klick ist ein Link oder eine Schaltfläche neben den E-Mail-Absenderinformationen, über den bzw. die Empfänger Ihre Mailing-Listen sofort mit einem einzigen Klick abmelden können. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=de#list-unsubscribe){target="_blank"}-->
+Die Abmelde-URL mit einem Klick ist ein Link oder eine Schaltfläche neben den E-Mail-Absenderinformationen, über den bzw. die Empfänger Ihre Mailing-Listen sofort mit einem einzigen Klick abmelden können. <!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 Es wird als **Abmelden**-Link in den E-Mail-Schnittstellen der ISPs angezeigt. Beispiel:
 
-![](assets/email-list-unsubscribe-example.png)
+![Die E-Mail-Client-Absenderzeile mit dem Abmelde-Link wird neben der Absenderadresse angezeigt](assets/email-list-unsubscribe-example.png)
 
 Das Hinzufügen eines SMTP-Headers namens List-Unsubscribe ist obligatorisch, um eine optimale Zustellbarkeitsverwaltung zu gewährleisten, und kann als Alternative zum Symbol „Als SPAM melden“ verwendet werden. Die Verwendung dieser Funktion senkt die Beschwerderate und trägt zum Schutz Ihrer Reputation bei.
 
@@ -109,7 +109,7 @@ Um diese Funktion zu aktivieren, wählen Sie die Option **[!UICONTROL Hinzufüge
 >
 >Standardmäßig ist diese Option aktiviert.
 
-![](assets/email-smtp-list-unsubscribe.png)
+![Registerkarte SMTP mit dem Abschnitt One-Click List-Unsubscribe und der standardmäßig ausgewählten Header-Option](assets/email-smtp-list-unsubscribe.png)
 
 <!--
 >[!WARNING]
@@ -131,7 +131,7 @@ Je nach E-Mail-Client und der Methode, die er zum Opt-out verwendet, kann das Kl
 
 >[!NOTE]
 >
->Sie können auch die Methoden [One-Click List-Unsubscribe](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} und [„mailto“ List-Unsubscribe](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuell festlegen. Die detaillierten Schritte werden im Experience Cloud-Handbuch [&#x200B; Best Practices für die Zustellbarkeit &#x200B;](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#list-unsubscribe){target="_blank"}.
+>Sie können auch die Methoden [One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"} und [„mailto“ List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"} manuell festlegen. Die detaillierten Schritte werden im Experience Cloud-Handbuch [ Best Practices für die Zustellbarkeit ](https://experienceleague.adobe.com/de/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#list-unsubscribe){target="_blank"}.
 
 
 ## Hinzufügen von SMTP-Headern {#adding-smtp-headers}
@@ -148,11 +148,11 @@ Werte werden bei Bedarf automatisch verschlüsselt.
 >
 >Die Syntax des Scripts muss die Anforderungen für diesen Inhaltstyp (keine überflüssigen Leerzeichen, keine Leerzeilen usw.) erfüllen.
 
-![](assets/email-smtp-headers.png)
+![Registerkarte „SMTP“ mit hervorgehobenem Bereich „Zusätzliche SMTP-Kopfzeilen“ unter Verwendung des Namens:valueFormats](assets/email-smtp-headers.png)
 
 
 ## Generieren einer Mirrorseite {#generating-mirror-page}
 
 Bei der Mirrorseite handelt es sich um eine HTML-Seite, auf die online über einen Webbrowser zugegriffen werden kann. Sie hat den gleichen Inhalt wie die E-Mail. Dies kann nützlich sein, wenn bei Ihren Empfängerinnen und Empfängern Rendering-Probleme oder fehlerhafte Bilder auftreten, wenn sie versuchen, Ihre E-Mail in ihrem Posteingang anzuzeigen.
 
-Weitere Informationen dazu, wie Sie einen Link zur Mirrorseite einfügen, finden Sie in [diesem Abschnitt](mirror-page.md).
+Erfahren Sie, wie Sie in einen Link zur Mirrorseite einfügen [einen Link zur Mirrorseite hinzufügen](mirror-page.md)
