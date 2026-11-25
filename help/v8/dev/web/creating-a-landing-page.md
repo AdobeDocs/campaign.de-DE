@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 91%
+source-wordcount: '1087'
+ht-degree: 71%
 ---
 # Erstellen einer Landingpage{#creating-a-landing-page}
 
@@ -56,20 +56,20 @@ Um eine neue Webanwendung vom Typ &quot;Landingpage&quot; zu erstellen, gehen Si
 1. Gehen Sie zum Tab **[!UICONTROL Kampagnen]** und wählen Sie den Link **[!UICONTROL Webanwendung]** und danach die Schaltfläche **[!UICONTROL Erstellen]** aus.
 1. Wählen Sie die Vorlage **[!UICONTROL Neue Landingpage]** aus, geben Sie einen Titel ein und wählen Sie danach **[!UICONTROL Speichern]** aus.
 
-   ![](assets/dce_uc1_newlandingpage.png)
+   ![Dialogfeld „Neue Webanwendung“ mit der neuen Landingpage-Vorlage, einer Kennzeichnung und dem Ordner „Webanwendungen“](assets/dce_uc1_newlandingpage.png)
 
 1. Wählen Sie den Tab **[!UICONTROL Bearbeiten]** aus.
 1. Löschen Sie die **Ende**-Aktivität.
 1. Fügen Sie im Anschluss an die Aktivität **[!UICONTROL Speicherung]** die Aktivität **[!UICONTROL Seite]** hinzu.
 1. Bearbeiten Sie die Aktivität **Seite 2** und deaktivieren Sie dann die Option **[!UICONTROL Ausgehende Transitionen aktivieren]** im Tab **[!UICONTROL Eigenschaften]**.
 
-   ![](assets/dce_uc1_transition.png)
+   ![Registerkarte „Eigenschaften der Seitenaktivität“ mit dem Namen „Seite 2“ und deaktivierter Option „Ausgehende Transitionen aktivieren“](assets/dce_uc1_transition.png)
 
 1. Speichern Sie Ihre Änderungen.
 
 Sie erhalten dann die folgende Sequenzierung:
 
-![](assets/dce_uc1_edition_activity.png)
+![Ablauf von Web-Anwendungen: Vorausfüllen, Seite, Speicherung und Seite 2-Aktivitäten werden nacheinander verbunden](assets/dce_uc1_edition_activity.png)
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Gehen Sie wie folgt vor, um die Vorlage auf die erste Seite zu laden:
 1. Öffnen Sie die Aktivität **[!UICONTROL Erste Seite]** der Webanwendung.
 1. Wählen Sie **[!UICONTROL Von einer Datei ausgehend]** aus, um Ihre Inhaltsvorlage zu laden.
 
-   ![](assets/dce_uc1_selectmodel.png)
+   ![Wählen Sie ein Inhaltsdialogfeld, das Vorlagen auflistet: Von einer Datei, einem Kontakt, detailliertem Clickthrough, Clickthrough und Akquise](assets/dce_uc1_selectmodel.png)
 
 1. Wählen Sie die gewünschte HTML-Datei aus.
 1. Wählen Sie **Öffnen**, um den Import zu starten.
@@ -99,7 +99,7 @@ Gehen Sie wie folgt vor, um die Vorlage auf die erste Seite zu laden:
 
    Wählen Sie die Schaltfläche **[!UICONTROL Schließen]** aus, wenn der Import abgeschlossen ist.
 
-   ![](assets/dce_uc1_import.png)
+   ![Protokoll der Veröffentlichungsressourcen hochgeladener CSS-, Bild- und Skriptdateien, das mit einer Erfolgsmeldung von 100 Prozent endet](assets/dce_uc1_import.png)
 
    >[!CAUTION]
    >
@@ -108,7 +108,7 @@ Gehen Sie wie folgt vor, um die Vorlage auf die erste Seite zu laden:
 1. Gehen Sie in den Tab **[!UICONTROL Eigenschaften]**.
 1. Geben Sie für jede Seite einen **Titel** ein (z. B.: Seite 1=Datenerfassung, Seite 2=Dankeseite).
 
-   ![](assets/dce_uc1_pagelabel.png)
+   ![Registerkarte „Eigenschaften der Seitenaktivität“ mit den Kennzeichnungen „Sammlung“ und „Ausgehende Transitionen aktivieren“ ausgewählt](assets/dce_uc1_pagelabel.png)
 
 Wiederholen Sie diese Schritte für jede Seite der Webanwendung.
 
@@ -120,7 +120,7 @@ Wiederholen Sie diese Schritte für jede Seite der Webanwendung.
 
 In diesem Abschnitt wird importierter Inhalt angepasst und die Datenbankfelder werden mit dem Web-Seitenformular verknüpft. Die zuvor erstellte Web-Anwendung ist:
 
-![](assets/dce_uc1_lp_enchainement.png)
+![Ablauf von Web-Anwendungen mit sequenzieller Verbindung von Vorabladen, Erfassen, Speichern und Danksagungsaktivitäten](assets/dce_uc1_lp_enchainement.png)
 
 ### Inhalt ändern {#modifying-content}
 
@@ -132,11 +132,11 @@ Zunächst sollen die Farben der Seite geändert werden. Gehen Sie dazu wie folgt
 1. Wählen Sie eine neue Hintergrundfarbe aus.
 1. Klicken Sie zur Bestätigung auf **OK**.
 
-   ![](assets/dce_uc1_changecolor.png)
+   ![Seiteneditor mit einem Dialogfeld zur Farbauswahl, mit dem die Hintergrundfarbe der ausgewählten Hypertext-Link-Schaltfläche geändert wird](assets/dce_uc1_changecolor.png)
 
 1. Gehen Sie zur Änderung der Schaltflächenfarbe analog vor.
 
-   ![](assets/dce_uc1_finalcolor.png)
+   ![Die daraus resultierende Registrierungsformularseite mit den Feldern Vorname, E-Mail, Telefon und Adresse sowie einer farbigen Schaltfläche SENDEN SIE ES](assets/dce_uc1_finalcolor.png)
 
 ### Formularfelder verknüpfen {#linking-form-fields}
 
@@ -146,13 +146,13 @@ Die Felder auf der Seite sollen mit jenen der Datenbank verknüpft werden, damit
 1. Bearbeiten Sie auf der rechten Seite des Editors den Bereich **[!UICONTROL Feld]**.
 1. Wählen Sie das Datenbankfeld aus, das mit dem ausgewählten Feld verknüpft werden soll.
 
-   ![](assets/dce_uc1_mapping.png)
+   ![Feld des Empfängerdialogfelds mit ausgewähltem Vornamen, um die Eingabezone einem Datenbankfeld zuzuordnen](assets/dce_uc1_mapping.png)
 
 1. Wiederholen Sie diesen Vorgang für jedes Feld der Seite.
 
 Sie können Felder nach Bedarf zu Pflichtfeldern machen: Beispielsweise können Sie auf das Feld **[!UICONTROL E-Mail]** klicken und danach die Option **Obligatorisch** aktivieren.
 
-![](assets/dce_uc1_fieldmandatory.png)
+![Einstellungen für die Eingabezone des Seiteneditors, wobei die Option Obligatorisch im Abschnitt Formulardaten auf Ja gesetzt ist](assets/dce_uc1_fieldmandatory.png)
 
 ### Link zur nächsten Seite erstellen {#creating-a-link-to-the-next-page}
 
@@ -162,7 +162,7 @@ Dieser Schritt ist unbedingt erforderlich, da die Webanwendung damit die Reihenf
 1. Öffnen Sie die Dropdown-Liste **[!UICONTROL Aktion]**.
 1. Wählen Sie die Aktion **[!UICONTROL Nächste Seite]** aus.
 
-   ![](assets/dce_uc1_actionbouton.png)
+   ![Hypertext-Link-Einstellungen mit geöffneter Dropdown-Liste „Aktion“ und ausgewählter nächster Seite](assets/dce_uc1_actionbouton.png)
 
 ### Personalisierungsfeld einfügen {#inserting-a-personalization-field}
 
@@ -173,21 +173,21 @@ in diesem Schritt kann die Dankeseite personalisiert werden. Gehen Sie dazu wie 
 1. Wählen Sie in der Symbolleiste im Menü **[!UICONTROL Einfügen]** die Option **[!UICONTROL Personalisierungsfeld]** aus.
 1. Wählen Sie den Vornamen aus.
 
-   ![](assets/dce_uc1_persochamp.png)
+   ![Menü „Einfügen“ mit ausgewähltem Personalization-Feld und dem im Dialogfeld „Element einfügen“ ausgewählten Feld „Vorname“](assets/dce_uc1_persochamp.png)
 
 Das Personalisierungsfeld ist im Editor durch einen gelben Hintergrund gekennzeichnet.
 
-![](assets/dce_uc1_edit_champperso.png)
+![Überschrift der Dankeseite mit dem gelb hervorgehobenen Feld Vorname und Personalisierung](assets/dce_uc1_edit_champperso.png)
 
 ## Schritt 3: Veröffentlichen des Inhalts {#step-3---publishing-content}
 
 Inhalte werden über das Dashboard der Webanwendung veröffentlicht. Klicken Sie auf die Schaltfläche **[!UICONTROL Veröffentlichen]**, um sie auszuführen.
 
-![](assets/dce_uc1_pub_dashboard.png)
+![Dashboard der Webanwendung mit der Schaltfläche Veröffentlichen und einer Meldung, dass die Anwendung veröffentlicht werden muss](assets/dce_uc1_pub_dashboard.png)
 
 Während der Veröffentlichung wird ein Protokoll angezeigt. Das Veröffentlichungssystem analysiert den gesamten Inhalt in der Web-Anwendung.
 
-![](assets/dce_uc1_pub_dashboard_journal.png)
+![Veröffentlichungsprotokoll der Web-Anwendung, das mit „Prozess abgeschlossen“ (mit Warnungen) und der Schaltfläche „Schließen“ endet](assets/dce_uc1_pub_dashboard_journal.png)
 
 >[!NOTE]
 >

@@ -34,10 +34,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 97%
+source-wordcount: '540'
+ht-degree: 79%
 ---
 # Erstellen eines neuen Schemas {#create-new-schema}
 
@@ -47,11 +47,11 @@ Um Schemata zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie in der
 >
 >Native Schemata können nur von einem Administrator Ihrer Adobe Campaign-Konsole gelöscht werden.
 
-![](assets/schema_navtree.png)
+![Explorer-Baumstruktur mit hervorgehobenem Knoten „Administration“, „Konfiguration“ und „Datenschemata“.](assets/schema_navtree.png)
 
 Auf der Registerkarte **[!UICONTROL Bearbeiten]** wird der XML-Inhalt eines Schemas angezeigt:
 
-![](assets/schema_edition.png)
+![Source-Schema-Editor, Registerkarte „Bearbeiten“, auf der die Felder „Name“ und „Beschriftung“ sowie der XML-Schemainhalt angezeigt werden.](assets/schema_edition.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Auf der Registerkarte **[!UICONTROL Bearbeiten]** wird der XML-Inhalt eines Sche
 
 Die Registerkarte **[!UICONTROL Vorschau]** generiert automatisch das erweiterte Schema:
 
-![](assets/schema_edition2.png)
+![Source-Schema-Editor, Registerkarte „Vorschau“, auf der die generierte XML des erweiterten Schemas angezeigt wird.](assets/schema_edition2.png)
 
 >[!NOTE]
 >
@@ -76,11 +76,11 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
 1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]**.
 1. Wählen Sie die Option **[!UICONTROL Neue Tabelle im Datenmodell der Datenbank erstellen]** und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/create_new_schema.png)
+   ![Seite Schematyp des Datenschema-Assistenten mit der Option Neue Tabelle in Datenvorlage erstellen .](assets/create_new_schema.png)
 
 1. Geben Sie einen Tabellennamen und einen Namespace an.
 
-   ![](assets/create_new_param.png)
+   ![Seite mit Schemaparametern mit Namespace cus, Name Contracts, Label, Label (Singular) und Beschreibung ausgefüllt.](assets/create_new_param.png)
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
 
 1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den dedizierten Assistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf **[!UICONTROL Einfügen]** und wählen Sie die Art der Einstellung, die hinzugefügt werden soll.
 
-   ![](assets/create_new_content.png)
+   ![Bearbeiten Sie die Schemaseite, während das Menü Einfügen geöffnet ist und die Attributtypen wie Zeichenfolge und Ganzzahl angezeigt werden.](assets/create_new_content.png)
 
 1. Legen Sie die Einstellungen für die Tabelle mit den Verträgen fest.
 
@@ -138,6 +138,6 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
 
 1. Speichern Sie das Schema und klicken Sie auf die Registerkarte **[!UICONTROL Struktur]**, um die Struktur zu erstellen:
 
-   ![](assets/configuration_structure.png)
+   ![Registerkarte „Struktur“ der Attribute „Inhaber des Vertragsschemas“, „Mitinhaber“, „Vertragsnummer“ und „Abonnementdatum“.](assets/configuration_structure.png)
 
 1. Aktualisieren Sie die Datenbankstruktur, um die Tabelle zu erstellen, mit der das Schema verknüpft werden soll. Weitere Informationen hierzu finden Sie unter [Datenbankstruktur aktualisieren](update-database-structure.md).

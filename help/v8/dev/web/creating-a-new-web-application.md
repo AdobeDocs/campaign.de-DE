@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 85%
+source-wordcount: '421'
+ht-degree: 81%
 ---
 # Neue Web-Anwendung erstellen{#creating-a-new-web-application}
 
@@ -43,7 +43,7 @@ Die Auswahl des Typs der Webanwendung erfolgt während der Erstellung.
 
 Gehen Sie zum Tab **Kampagnen** und wählen Sie das Menü **[!UICONTROL Webanwendungen]** aus. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus. Wählen Sie die gewünschte Webanwendungsvorlage aus:
 
-![](assets/webapp_create_from_campaign.png)
+![Liste der Webanwendungen mit der Schaltfläche Erstellen und der Vorlagenliste, einschließlich der neuen Landingpage und des neuen Web-Formulars](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
 1. Web-Anwendungen
 
-   Mit Adobe Campaign können Sie Web-Anwendungen erstellen, die beispielsweise auf einer Web-Plattform oder in einem Extranet bereitgestellt werden. Auf diese Weise können Sie Daten bearbeiten und Informationen in Adobe Campaign aufzeichnen. In diesem Fall können Sie den Zugriff der Benutzenden auf authentifizierte Benutzende (über die Zugriffssteuerung) beschränken und das Vorabladen von Daten auf Basis verschiedener Kriterien einrichten. Weitere Informationen hierzu finden Sie unter [&#x200B; mit Web-Anwendungen](about-web-applications.md).
+   Mit Adobe Campaign können Sie Web-Anwendungen erstellen, die beispielsweise auf einer Web-Plattform oder in einem Extranet bereitgestellt werden. Auf diese Weise können Sie Daten bearbeiten und Informationen in Adobe Campaign aufzeichnen. In diesem Fall können Sie den Zugriff der Benutzenden auf authentifizierte Benutzende (über die Zugriffssteuerung) beschränken und das Vorabladen von Daten auf Basis verschiedener Kriterien einrichten. Weitere Informationen hierzu finden Sie unter [ mit Web-Anwendungen](about-web-applications.md).
 
 1. Landingpages
 
@@ -65,7 +65,7 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
 1. Umfragen
 
-   Adobe Campaign ermöglicht es Ihnen über die Option **Survey Manager**, Online-Umfragen zusammenzustellen und zu verwalten sowie deren Ergebnisse zu verarbeiten. Die verfügbaren Funktionen sind dynamische Felderstellung, Punktzahl-Verwaltung, der Export von Antworten und spezielle Berichte. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (Dokumentation zu Campaign v8).
+   Adobe Campaign ermöglicht es Ihnen über die Option **Survey Manager**, Online-Umfragen zusammenzustellen und zu verwalten sowie deren Ergebnisse zu verarbeiten. Die verfügbaren Funktionen sind dynamische Felderstellung, Punktzahl-Verwaltung, der Export von Antworten und spezielle Berichte. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (Dokumentation zu Campaign v8).
 
    >[!CAUTION]
    >
@@ -73,10 +73,10 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
 1. Facebook-Anwendungen
 
-   Dank der Option **Social Marketing** können Sie mit Adobe Campaign personalisierte Inhalte in einer Facebook-Anwendung veröffentlichen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
+   Dank der Option **Social Marketing** können Sie mit Adobe Campaign personalisierte Inhalte in einer Facebook-Anwendung veröffentlichen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
 
    >[!CAUTION]
    >
    >**Social Marketing** ist ein optionales Modul von Adobe Campaign. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
-Der Seitenkonfigurationsmodus und verfügbare Konfigurationen können für mehrere Typen von Webanwendungen identisch sein. Weitere Informationen hierzu finden Sie unter [&#x200B; mit Web-Formularen](about-web-forms.md).
+Der Seitenkonfigurationsmodus und verfügbare Konfigurationen können für mehrere Typen von Webanwendungen identisch sein. Weitere Informationen hierzu finden Sie unter [ mit Web-Formularen](about-web-forms.md).

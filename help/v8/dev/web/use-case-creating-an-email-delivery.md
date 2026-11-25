@@ -34,10 +34,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 89%
+source-wordcount: '915'
+ht-degree: 79%
 ---
 # Anwendungsfall: Erstellen eines E-Mail-Versands{#use-case-creating-an-email-delivery}
 
@@ -60,15 +60,15 @@ Ein Versand soll mit einer personalisierten Vorlage erstellt werden, die Folgend
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Um einen neuen Versand zu erstellen, platzieren Sie den Cursor auf dem Tab **Kampagnen** und klicken Sie auf **Sendungen**. Klicken Sie dann über der Liste der vorhandenen Sendungen auf die Schaltfläche **Erstellen**. Weiterführende Informationen zur Erstellung eines Versands finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
+Um einen neuen Versand zu erstellen, platzieren Sie den Cursor auf dem Tab **Kampagnen** und klicken Sie auf **Sendungen**. Klicken Sie dann über der Liste der vorhandenen Sendungen auf die Schaltfläche **Erstellen**. Weiterführende Informationen zur Erstellung eines Versands finden Sie auf [dieser Seite](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}.
 
-![](assets/delivery_step_1.png)
+![Versandliste auf der Registerkarte Kampagnen mit der Schaltfläche Erstellen , die zum Starten eines neuen Versands verwendet wird.](assets/delivery_step_1.png)
 
 ## Schritt 2: Auswählen einer Vorlage {#step-2---selecting-a-template}
 
 Wählen Sie eine Versandvorlage aus und benennen Sie Ihren Versand. Dieser Name ist nur für Benutzende der Adobe Campaign-Konsole sichtbar, nicht für Ihre Empfängerinnen und Empfänger. Diese Überschrift wird jedoch in Ihrer Versandliste angezeigt. Bestätigen Sie die Angaben mit der Schaltfläche **[!UICONTROL Fortfahren]**.
 
-![](assets/dce_delivery_model.png)
+![Dialogfeld für die Versanderstellung mit der E-Mail-Versandvorlage, einem Beschriftungsfeld und der Schaltfläche „Weiter“.](assets/dce_delivery_model.png)
 
 ## Schritt 3: Auswählen von Inhalten {#step-3---selecting-a-content}
 
@@ -76,11 +76,11 @@ Der Digital Content Editor verfügt über verschiedene native Vorlagen mit unter
 
 Wählen Sie die Inhaltsvorlage aus, das Sie verwenden möchten, und verwenden Sie dann die Schaltfläche **[!UICONTROL Mit dem ausgewählten Inhalt beginnen]**, um die Vorlage im erstellten Versand anzuzeigen.
 
-![](assets/dce_select_model.png)
+![Inhaltsschritt des Versands, in dem die Inhaltsvorlagen mit der Schaltfläche Mit ausgewähltem Inhalt beginnen aufgelistet werden.](assets/dce_select_model.png)
 
 Sie können auch HTML-Inhalte importieren, die außerhalb von Adobe Campaign erstellt wurden, indem Sie **[!UICONTROL Aus Datei]** auswählen.
 
-![](assets/dce_select_from_file_template.png)
+![Verfügbare Inhaltsvorlagen mit hervorgehobener Option „Aus einer Datei“.](assets/dce_select_from_file_template.png)
 
 Sie können diesen Inhalt zur künftigen Verwendung als Vorlage speichern. Nachdem eine personalisierte Inhaltsvorlage erstellt wurde, können Sie sich eine Vorschau in der Liste der Vorlagen ansehen. Konsultieren Sie diesbezüglich die [Vorlagenverwaltung](template-management.md).
 
@@ -94,13 +94,13 @@ Sie können diesen Inhalt zur künftigen Verwendung als Vorlage speichern. Nachd
 
   Um den Vor- und Nachnamen der Empfänger in ein Textfeld Ihres Versands einzufügen, klicken Sie auf das gewünschte Textfeld und platzieren Sie den Cursor an die Stelle, wo der Name angezeigt werden soll. Klicken Sie auf das erste Symbol in der Pop-up-Symbolleiste und danach auf **[!UICONTROL Gestaltungsbaustein]**. Wählen Sie **[!UICONTROL Grußformeln]** und danach **[!UICONTROL OK]** aus.
 
-  ![](assets/dce_personalizationblock_greetings.png)
+  ![Fügen Sie ein Dialogfeld zum Einfügen eines Elements ein, wobei der Gestaltungsbaustein Grußformeln ausgewählt und im Symbolleistenmenü geöffnet ist.](assets/dce_personalizationblock_greetings.png)
 
 * Link in ein Bild einfügen
 
   Um Empfänger eines Versands über ein Bild zu einer externen Adresse weiterzuleiten, klicken Sie auf das jeweilige Bild, um die Symbolleiste zu öffnen, platzieren Sie den Cursor auf das erste Symbol und wählen Sie dann **[!UICONTROL Link auf eine externe URL]** aus. Weitere Informationen finden Sie unter [Link hinzufügen](editing-content.md#adding-a-link).
 
-  ![](assets/dce_externalpage.png)
+  ![Symbolleistenmenü „Bild“ mit ausgewählter Option „Link zu einer externen URL“](assets/dce_externalpage.png)
 
   Geben Sie die URL für den Link im Feld **URL** im Format **https://www.myURL.com** ein und bestätigen Sie dann Ihre Eingabe.
 
@@ -122,7 +122,7 @@ Sie können diesen Inhalt zur künftigen Verwendung als Vorlage speichern. Nachd
 
   Klicken Sie auf das Textfeld, in dem der Link erscheinen soll. Klicken Sie auf das erste Symbol in der Pop-up-Symbolleiste und wählen Sie **[!UICONTROL Gestaltungsbaustein]** und danach **[!UICONTROL Mirrorseiten-Link (MirrorPage)]** aus. Klicken Sie zur Bestätigung auf **[!UICONTROL Speichern]**.
 
-  ![](assets/dce_mirrorpage.png)
+  ![Symbolleistenmenü im Texteditor mit ausgewählter Option &quot;Personalization-Block“.](assets/dce_mirrorpage.png)
 
   >[!CAUTION]
   >
@@ -134,7 +134,7 @@ Sie können diesen Inhalt zur künftigen Verwendung als Vorlage speichern. Nachd
 
   Wählen Sie ein Textfeld für Ihren Link auf eine Webanwendung aus und klicken Sie dann auf das erste Symbol. Wählen Sie **[!UICONTROL Link auf eine Webanwendung]** und danach die gewünschte Anwendung aus, indem Sie auf das Symbol am Ende des Feldes **Webanwendung** klicken.
 
-  ![](assets/dce_webapp.png)
+  ![Fügen Sie ein Dialogfeld „Link“ mit Feldern „Bezeichnung“ und „Webanwendung“ sowie einer Schaltfläche „OK“ ein.](assets/dce_webapp.png)
 
   Klicken Sie zur Bestätigung auf **Speichern**.
 

@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 87%
+source-wordcount: '148'
+ht-degree: 68%
 ---
 # Vorlagenverwaltung{#template-management}
 
@@ -38,7 +38,7 @@ Der Digital Content Editor bietet **Standardvorlagen** für Webanwendungen und S
 
 Bei der Erstellung einer Web-Anwendung des Typs „Landingpage“ können Sie eine dieser Vorlagen auswählen. Sie können auch eine HTML-Vorlage importieren, die außerhalb von Adobe Campaign erstellt wurde.
 
-![](assets/dce_popup_templatechoice.png)
+![Wählen Sie ein Inhaltsdialogfeld aus, in dem die verfügbaren Inhaltsvorlagen wie „Aus einer Datei“, „Kontakt“ und „Clickthrough“ aufgelistet werden](assets/dce_popup_templatechoice.png)
 
 Weiterführende Informationen zum Hinzufügen einer Vorlage finden Sie im Abschnitt [Globale Optionen](content-editor-interface.md#global-options).
 
@@ -48,6 +48,6 @@ Nach der Konfiguration eines Versands können Sie diesen als Vorlage für künft
 
 Öffnen Sie im Tab **Kampagnen** den ausgewählten Versand. Klicken Sie auf die Schaltfläche **Als Vorlage speichern**, geben Sie der Vorlage einen Namen und speichern Sie sie.
 
-![](assets/dce_save_model.png)
+![HTML-Inhaltseditor mit hervorgehobenem Symbol „Als Vorlage speichern“ in der rechten Symbolleiste](assets/dce_save_model.png)
 
 Die neue Vorlage wird im Explorer unter dem Knoten **Ressourcen > Vorlagen > Inhaltsvorlagen** gespeichert.

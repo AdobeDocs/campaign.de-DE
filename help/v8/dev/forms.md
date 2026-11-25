@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 94%
+source-wordcount: '2842'
+ht-degree: 85%
 ---
 # Erste Schritte mit Formularen {#gs-ac-forms}
 
@@ -51,15 +51,15 @@ Der Identifizierungsschlüssel eines Formulars ist eine Zeichenfolge, die den Na
 
 Erstellen und konfigurieren Sie Eingabeformulare im Ordner **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Eingabeformulare]** der Client-Konsole:
 
-![](assets/form_arbo.png)
+![Explorer-Baumstruktur unter „Konfiguration“ mit ausgewähltem Ordner für Eingabeformulare](assets/form_arbo.png)
 
 Der XML-Code des Formulars wird im Editor erfasst:
 
-![](assets/form_edit.png)
+![Registerkarte „Bearbeiten“ im Eingabeformular, auf der die XML des Empfängerformulars (cus) mit den Eingaben für Geburtsdatum, Geschlecht und E-Mail angezeigt wird](assets/form_edit.png)
 
 Die Vorschau generiert eine Anzeige des Formulars:
 
-![](assets/form_preview.png)
+![Registerkarte „Vorschau“ des Empfängerformulars (cus) mit den Feldern „Geburtsdatum“, „Geschlecht“ und „E-Mail“](assets/form_preview.png)
 
 ## Formularstruktur
 
@@ -93,7 +93,7 @@ Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben N
 
 Das Formular basiert auf dem Beispielschema:
 
-![](assets/do-not-localize/form_exemple1.png)
+![Darstellung von Geschlecht, Geburtsdatum und E-Mail als drei gestapelte Felder](assets/do-not-localize/form_exemple1.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -122,7 +122,7 @@ Das Layout der Eingabefelder ähnelt dem in HTML-Tabellen verwendeten Layout, mi
 
 So zeigen Sie die Eingabefelder des obigen Beispiels in zwei Spalten an:
 
-![](assets/do-not-localize/form_exemple2.png)
+![Eingabeformular mit Geschlecht und Geburtsdatum nebeneinander in zwei Spalten und E-Mail unten](assets/do-not-localize/form_exemple2.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -138,7 +138,7 @@ Mithilfe des Elements **`<container>`** mit dem Attribut **colcount** können Si
 
 Das Attribut **colspan** eines Eingabefelds erweitert das Eingabefeld um die Anzahl der Spalten, die in seinem Wert eingegeben wurden:
 
-![](assets/do-not-localize/form_exemple3.png)
+![Zweispaltiges Eingabeformular mit dem Feld „E-Mail“, das auf beide Spalten erweitert wurde](assets/do-not-localize/form_exemple3.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -152,7 +152,7 @@ Das Attribut **colspan** eines Eingabefelds erweitert das Eingabefeld um die Anz
 
 Durch das Ausfüllen des Attributs **type=&quot;frame&quot;** fügt der Container einen Rahmen um die untergeordneten Eingabefelder mit der im Attribut **label** enthaltenen Beschriftung hinzu:
 
-![](assets/do-not-localize/form_exemple4.png)
+![Zweispaltiges Eingabeformular mit Geschlecht, Geburtsdatum und einem E-Mail-Feld mit voller Breite, ohne sichtbaren Rahmen](assets/do-not-localize/form_exemple4.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -166,7 +166,7 @@ Durch das Ausfüllen des Attributs **type=&quot;frame&quot;** fügt der Containe
 
 Ein **`<static>`**-Element kann zum Formatieren des Formulars verwendet werden:
 
-![](assets/do-not-localize/form_exemple5.png)
+![Eingabeformular mit den Feldern „Geschlecht“, „Datum“ und „E-Mail“ sowie einer statischen Hilfetext-Zeile darunter](assets/do-not-localize/form_exemple5.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -212,7 +212,7 @@ Container werden verwendet, um komplexe Eingabefelder mithilfe eines Satzes von 
 
 Verwenden Sie den Container **Notebook**, um Daten auf Seiten zu formatieren, auf die über Registerkarten zugegriffen werden kann.
 
-![](assets/do-not-localize/form_exemple6.png)
+![Eingabeformular mit den Registerkarten „Allgemein“ und „Standort“ oberhalb der Felder „Geschlecht“, „Datum“ und „E-Mail“](assets/do-not-localize/form_exemple6.png)
 
 ```xml
 <container type="notebook">
@@ -231,7 +231,7 @@ Der Haupt-Container wird durch das Attribut **type=&quot;Notebook&quot;** defini
 
 Fügen Sie das Attribut **style=&quot;down&quot;** hinzu, um die vertikale Ausrichtung der Registerkartenbeschriftungen unter dem Eingabefeld zu erzwingen. Dieses Attribut ist optional. Der Standardwert ist **&quot;up&quot;**.
 
-![](assets/do-not-localize/form_exemple7.png)
+![Eingabeformular mit den Registerkartenbeschriftungen „Allgemein“ und „Standort“, die unter den Feldern „Geschlecht“, „Datum“ und „E-Mail“ platziert sind](assets/do-not-localize/form_exemple7.png)
 
 `<container style="down" type="notebook">  ... </container>`
 
@@ -239,7 +239,7 @@ Fügen Sie das Attribut **style=&quot;down&quot;** hinzu, um die vertikale Ausri
 
 Verwenden Sie diesen Container, um eine vertikale Symbolleiste anzuzeigen, mit der Sie die anzuzeigenden Seiten auswählen können.
 
-![](assets/do-not-localize/form_exemple8.png)
+![Eingabeformular mit einer vertikalen Symbolleiste mit den Seiten „Allgemein“ und „Standort“ neben den Feldern „Geschlecht“, „Datum“ und „E-Mail“](assets/do-not-localize/form_exemple8.png)
 
 ```xml
 <container type="iconbox">
@@ -308,7 +308,7 @@ Eine Inhaltsrelation wird auf folgende Weise im Datenschema deklariert:
 
 Die Bearbeitungssteuerung der Relation in ihrem Formular sieht folgendermaßen aus:
 
-![](assets/do-not-localize/form_exemple9.png)
+![Unternehmensfeld, das ein Dropdown-Bearbeitungssteuerelement für einen Link mit ausgewähltem Adobe anzeigt](assets/do-not-localize/form_exemple9.png)
 
 ```xml
 <input xpath="company"/>
@@ -421,7 +421,7 @@ Beispiel einer Beziehungstabelle in einem Schema:
 
 In unserem Beispiel beginnen wir mit dem Eingabeformular des Schemas „cus:recipient. Die Liste muss die Verbindungen mit Abonnements von Services anzeigen und Sie müssen das Hinzufügen eines Abonnements durch Auswahl eines vorhandenen Services ermöglichen.
 
-![](assets/do-not-localize/form_exemple12.png)
+![Wählen Sie das Dialogfeld „Dienste“ mit der schwarzen Liste, MobApp, Newsletter und anderen Diensten aus, um ein Abonnement hinzuzufügen](assets/do-not-localize/form_exemple12.png)
 
 ```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
@@ -522,7 +522,7 @@ Um ein Feld anzuzeigen und zu verhindern, dass es bearbeitet wird, verwenden Sie
 
 Beispiel für das Feld &quot;Geschlecht&quot;:
 
-![](assets/do-not-localize/form_exemple16.png)
+![Das Feld „Geschlecht“ wird als Dropdown-Liste mit dem Wert „Männlich“ angezeigt](assets/do-not-localize/form_exemple16.png)
 
 ```xml
 <value value="@gender"/>
@@ -541,7 +541,7 @@ Beispiel für das Feld &quot;Geschlecht&quot;:
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
 ```
 
-![](assets/do-not-localize/form_exemple17.png)
+![Das Feld „Geschlecht“ wird als Optionsschaltfläche „Auswahl 1“, „Auswahl 2“ und „Auswahl 3“ angezeigt, wobei „Auswahl 1“ ausgewählt ist](assets/do-not-localize/form_exemple17.png)
 
 ## Hinzufügen einer Checkbox {#checkbox}
 
@@ -552,7 +552,7 @@ Eine Checkbox gibt den booleschen Status an (ausgewählt oder nicht). Standardm�
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
 
-![](assets/do-not-localize/form_exemple20.png)
+![Zwei Kontrollkästchen mit der Bezeichnung Boolesch1 und Feld1 sind deaktiviert](assets/do-not-localize/form_exemple20.png)
 
 ## Navigationsbaum bearbeiten {#navigation-hierarchy-edit}
 
@@ -573,7 +573,7 @@ Die zu bearbeitenden Eingabefelder sind in einem **`<container>`** gruppiert, da
 </input>
 ```
 
-![](assets/do-not-localize/form_exemple18.png)
+![Baumstruktur-Eingabefeld mit Textfeldern und booleschen Feldergruppen, mit Text1 bis Text3 und Boolesch1 bis Boolesch3](assets/do-not-localize/form_exemple18.png)
 
 ## Ausdrucksfeld hinzufügen {#expression-field}
 

@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 93%
+source-wordcount: '599'
+ht-degree: 87%
 ---
 # Best Practices bei der Inhaltsbearbeitung{#content-editing-best-practices}
 
@@ -51,13 +51,13 @@ Bitte beachten Sie folgende Hinweise, um eine optimale Funktionsweise des Editor
 
   Das Attribut **type** ist in der Benutzeroberfläche in der folgenden Form sichtbar:
 
-  ![](assets/dce_sidebar_inputtypechanges.png)
+  ![Seitenleistenbereich „Eingabebereich (E-Mail)“ mit dem Abschnitt „Formulardaten“, einer Feldauswahl und dem obligatorischen Umschalter „Ja“ oder „Nein“](assets/dce_sidebar_inputtypechanges.png)
 
   Die offizielle Liste der „type“-Attribute ist [auf dieser Website](https://www.w3schools.com/tags/att_input_type.asp) verfügbar.
 
 * Schritte zum Simulieren einer Endseite mit dem DCE:
 
-  ![](assets/dce_enchainement.png)
+  ![Formulardiagramm mit den Feldern „Vorausfüllen“, „Seite“, „Speicherung“ und „Seite 2“ in Folge, um eine Endseite zu simulieren](assets/dce_enchainement.png)
 
 * Achten Sie darauf, dass `<body> </body>` auf der Seite nur einmal vorkommt.
 * Beim Hochladen einer CSS- oder JS-Datei werden die in der ZIP-Datei enthaltenen Bilder nicht hochgeladen. Die Verweise auf diese Bilder im CSS werden daher nicht aktualisiert.

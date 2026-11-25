@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 86%
+source-wordcount: '740'
+ht-degree: 82%
 ---
 # Opt-out vom Web-Anwendungs-Tracking{#web-application-tracking-opt-out}
 
@@ -66,11 +66,11 @@ Wenn Webtracking aktiviert ist, haben Sie folgende Möglichkeiten:
 * Kein Banner
 * Banner manuell in jeder Seite konfigurieren: Aktivieren Sie diese Option und wählen Sie das Banner in den Seiteneigenschaften auf jeder Seite aus.
 
-  ![](assets/pageproperties.png)
+  ![Dialogfeld „Seiteneigenschaften“ mit aktivierter Option Ausgehende Transitionen aktivieren.](assets/pageproperties.png)
 
 * Banner automatisch in jede Seite einfügen: Wählen Sie das Banner direkt in den Eigenschaften der Webanwendung aus.
 
-  ![](assets/optoutconfig.png)
+  ![Registerkarte „Allgemeine Eigenschaften“ der Webanwendung mit den Optionen für das Opt-out-Banner: Kein Banner, Handbuch pro Seite oder automatisch.](assets/optoutconfig.png)
 
 >[!NOTE]
 >

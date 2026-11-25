@@ -39,10 +39,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 96%
+source-wordcount: '1530'
+ht-degree: 91%
 ---
 # Schemastruktur{#schema-structure}
 
@@ -214,7 +214,7 @@ Die **`<elements>`**- und **`<attributes>`** des Datenschemas können mit versch
 
   Das Label wird im Eingabeformular der Adobe Campaign-Client-Konsole angezeigt:
 
-  ![](assets/schema_label.png)
+  ![E-Mail-Eingabefeld in der Konsole mit der Bezeichnung E-Mail mit einer eingegebenen E-Mail-Adresse.](assets/schema_label.png)
 
 * Mit der Eigenschaft **desc** können Sie eine lange Beschreibung eingeben.
 
@@ -267,7 +267,7 @@ Der Name der Aufzählung kann frei gewählt und für andere Felder freigegeben w
 
 Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 
-![](assets/schema_user_enum.png)
+![Feld „Stadt“ im Formular, das eine Dropdown-Liste mit Werten aus einer Benutzeraufzählung anzeigt.](assets/schema_user_enum.png)
 
 >[!NOTE]
 >
@@ -281,7 +281,7 @@ Das Attribut **enum** bezieht sich auf die Definition einer Aufzählungsklasse, 
 
 Aufzählungen ermöglichen es dem Benutzer, einen Wert aus einer Dropdown-Liste auszuwählen, anstatt ihn in ein reguläres Eingabefeld einzugeben:
 
-![](assets/schema_enum.png)
+![Dropdown-Liste „Geschlecht“ mit den Werten „Keine Angabe“, „Männlich“ und „Weiblich“.](assets/schema_enum.png)
 
 Beispiel für eine Deklaration einer Aufzählung im Datenschema:
 
@@ -317,7 +317,7 @@ Die Werte für die Aufzählung werden im Element **`<value>`** mit den folgenden
 
   Diese Aufzählung dient beispielsweise zur Angabe der Art von Kampagnen.
 
-  ![](assets/schema_dbenum.png)
+  ![Das Dialogfeld „Neue Marketing-Kampagne“ mit der Dropdown-Liste „Art“ wird geöffnet und zeigt „Keine angegeben“ und „Remarketing“ an.](assets/schema_dbenum.png)
 
 ### Beispiel {#example}
 
@@ -396,7 +396,7 @@ Die Ausdrücke wurden um Funktionen auf hoher Ebene erweitert, um das Potenzial 
 
 In der Adobe Campaign-Client-Konsole können Sie über einen beliebigen Ausdruckseditor auf die Liste der verfügbaren Funktionen zugreifen:
 
-![](assets/schema_function.png)
+![Funktionsbaum des Ausdruckseditors mit Aggregat-, String-, Datums- und numerischen Gruppen wie ABS, CEIL und ROUND.](assets/schema_function.png)
 
 **Beispiel**:
 

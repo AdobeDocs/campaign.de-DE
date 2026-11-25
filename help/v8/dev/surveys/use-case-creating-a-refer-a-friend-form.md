@@ -30,22 +30,22 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 95%
+source-wordcount: '825'
+ht-degree: 74%
 ---
 # Anwendungsfall: Erstellen eines Empfehlungsformulars{#use-case-creating-a-refer-a-friend-form}
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
 
 
 
 In diesem Beispiel möchten wir den Empfangenden in der Datenbank einen Wettbewerb anbieten. Das Web-Formular soll einen Abschnitt zur Eingabe der Antworten enthalten und einen anderen zur Eingabe der E-Mail-Adresse eines Freundes.
 
-![](assets/s_ncs_admin_survey_viral_sample_0.png)
+![Wettbewerbsformular mit einem Identifikationsbereich, einem Quizbereich mit zufälligen Fragen und einem Einladungsbereich, um einen Freund zu verweisen](assets/s_ncs_admin_survey_viral_sample_0.png)
 
 Die Identifizierungs- und Gewinnspiel-Bereiche werden durch die zuvor beschriebenen Prozesse erstellt.
 
@@ -53,7 +53,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
 1. Erstellen Sie ein Gewinnspiel-Webformular mit Fragen und einem Eingabefeld für die Kontaktinformationen des Angeworbenen wie unten dargestellt:
 
-   ![](assets/s_ncs_admin_survey_viral_sample_2.png)
+   ![Wettbewerbsformularstruktur mit einer Identifikation, einem Spiel und einem Empfehlungsabschnitt mit Feldern für Freunde-Kontakte](assets/s_ncs_admin_survey_viral_sample_2.png)
 
    Im Feld **Ihre Nachricht** können Sie eine Nachricht für die angeworbene Person eingeben. Die werbende Person muss auch ihren **Nachnamen**, **Vornamen** und ihre **E-Mail-Adresse** eingeben.
 
@@ -65,7 +65,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
    >
    >In diesem Beispiel möchten wir Empfangende dazu bewegen, an dem von ihren Werbenden empfohlenen Wettbewerb teilzunehmen. In dieser Nachricht möchten wir ihnen jedoch auch ein Abonnement für einen unserer Informationsdienste anbieten. Wenn sie sich anmelden, können sie in der Datenbank gespeichert werden.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_5.png)
+   ![Formularstruktur mit dem Feld „Nachname“ im Abschnitt „Freund referenzieren“ ausgewählt](assets/s_ncs_admin_survey_viral_sample_5.png)
 
    Der Inhalt der Felder für die Angeworbenen wird im Skript zur Profilerstellung und in der an sie gesendeten Nachricht verwendet.
 
@@ -73,7 +73,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    Es enthält die folgenden Anweisungen:
 
-   ![](assets/s_ncs_admin_survey_viral_sample_4.png)
+   ![Formulardiagramm mit geöffnetem Feld „Referrer-Informationsskript“, in dem die Felder „Besucher-ID“, „Weiterleitungs-URL“ und „Referrer“ festgelegt sind](assets/s_ncs_admin_survey_viral_sample_4.png)
 
    ```javascript
    ctx.recipient.visitor.@id = xtk.session.GetNewIds(1)
@@ -89,23 +89,23 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
 1. Mithilfe der Speicherungsbox können Sie Informationen erfassen und in der Datenbank speichern.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
+   ![Dialogfeld „Speicherung“ mit ausgewähltem Besucherelement in den Abstimmoptionen zum Speichern des Schiedsrichters](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
 1. Erstellen Sie dann die Versandvorlage, die mit dem in Schritt 1 erstellten Informationsdienst verknüpft ist. Sie wird im Feld **[!UICONTROL Choose scenario]** des Informationsdienstes ausgewählt.
 
    Die Versandvorlage zur Erstellung der Freunde-Werben-Nachricht enthält die folgenden Informationen:
 
-   ![](assets/s_ncs_admin_survey_viral_sample_7.png)
+   ![Laden Sie eine Versandvorlage mit einem Betreff und HTML-Inhalten ein, die Personalisierungsfelder verwenden](assets/s_ncs_admin_survey_viral_sample_7.png)
 
    Diese Vorlage hat die folgenden Eigenschaften:
 
    * Wählen Sie die Besuchertabelle als Zielgruppen-Mapping aus.
 
-     ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
+     ![Zieldialog auswählen, in dem Besucher (:visitor) als Zielgruppen-Mapping des Versands ausgewählt sind](assets/s_ncs_admin_survey_viral_sample_7b.png)
 
    * Die Kontaktinformationen der angeworbenen Person sowie die Informationen der werbenden Person werden der Besuchertabelle entnommen. Sie werden mithilfe der Schaltfläche „Personalisierung“ eingefügt.
 
-     ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
+     ![Personalization-Menü im Versandinhalt, im Untermenü „Besucher“ mit den Feldern „Nachname“, „Vorname“, „E-Mail“ und „Referrer“](assets/s_ncs_admin_survey_viral_sample_7a.png)
 
    * Diese Vorlage enthält einen Link zum Gewinnspielformular und den Abonnementlink, über den der Angeworbene einen Newsletter abonnieren kann.
 
@@ -119,7 +119,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
 1. Erstellen Sie das zweite Skript zur Bereitstellung der Abonnement-Nachrichten.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_7c.png)
+   ![Script-Feld Referee-Speicherung und Nachrichtenversand, mit Code, der die E-Mail-Benachrichtigung für die Empfehlung an den Referee in die Warteschlange stellt](assets/s_ncs_admin_survey_viral_sample_7c.png)
 
    ```javascript
    // Updtate visitor to have a link to the referrer recipient
@@ -146,10 +146,10 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
 1. Veröffentlichen Sie das Gewinnspielformular und senden Sie den Kontakten der ursprünglichen Zielgruppe eine Einladung. Wenn einer davon einen Freund einlädt, wird ein Versand auf der Basis der **Freunde-Werben**-Vorlage erstellt.
 
-   ![](assets/s_ncs_admin_survey_viral_sample_8.png)
+   ![Abgeschlossene Quizseite mit dem Abschnitt „Freund einladen“ und der Versandliste, in der dieser Versand ausgeführt wird](assets/s_ncs_admin_survey_viral_sample_8.png)
 
    Der Angeworbene wird zum Besucherordner im Knoten **[!UICONTROL Administration > Besucher]** hinzugefügt:
 
-   ![](assets/s_ncs_admin_survey_viral_sample_9.png)
+   ![Ordner „Besucher“, in dem der Schiedsrichter aufgeführt ist. Auf der Registerkarte „Allgemein“ des Besuchers werden Name, E-Mail-Adresse und Referrer angezeigt](assets/s_ncs_admin_survey_viral_sample_9.png)
 
    Das Profil enthält die Informationen, die von der werbenden Person eingegeben wurden. Es wird basierend auf den im Formularskript eingegebenen Konfigurationen gespeichert. Wenn sich die angeworbene Person für ein Abonnement des Newsletters entscheidet, wird sie in der Empfängertabelle gespeichert.

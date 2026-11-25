@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 100%
+source-wordcount: '975'
+ht-degree: 76%
 ---
 # Definieren der Seitenreihenfolge von Web-Formularen{#defining-web-forms-page-sequencing}
 
@@ -36,7 +36,7 @@ Das Formular kann eine oder mehrere Seiten enthalten. Es wird mithilfe eines Dia
 
 Für jede Seite können Sie die Schaltflächen **[!UICONTROL Weiter]** oder **[!UICONTROL Zurück]** löschen. Wählen Sie hierzu die entsprechende Seite und danach die Option **[!UICONTROL Weiter zur nächsten Seite deaktivieren]** oder **[!UICONTROL Rückkehr zur vorhergehenden Seite nicht zulassen]** aus.
 
-![](assets/s_ncs_admin_survey_no_next_page.png)
+![Seiteneigenschaften, Registerkarte „Allgemein“, wobei die Option „Nächste Seite deaktivieren“ im Abschnitt „Navigation“ ausgewählt ist.](assets/s_ncs_admin_survey_no_next_page.png)
 
 Sie können diese Schaltflächen auch durch Links ersetzen. Siehe [HTML-Inhalt einfügen](static-elements-in-a-web-form.md#inserting-html-content).
 
@@ -48,19 +48,19 @@ Folgende Zielorte sind möglich:
 
 * Eine andere Seite des Formulars. Wählen Sie dazu **[!UICONTROL Interne Aktivität]** aus und spezifizieren Sie dann die gewünschte Seite wie unten dargestellt:
 
-  ![](assets/s_ncs_admin_jump_param1.png)
+  ![Sprungdialogfeld mit ausgewählter interner Aktivität und der Aktivitätsliste mit den Formularseiten, zu denen gesprungen werden soll.](assets/s_ncs_admin_jump_param1.png)
 
 * Ein anderes Formular. Wählen Sie dazu die Option **[!UICONTROL Explizit]** aus und spezifizieren Sie das Zielformular.
 
-  ![](assets/s_ncs_admin_jump_param2.png)
+  ![Sprungdialogfeld mit ausgewähltem „Explizit“ und einem im Feld „Ziel-Web-Anwendung“ ausgewählten Zielformular.](assets/s_ncs_admin_jump_param2.png)
 
 * Das Ziel kann in einer Variablen gespeichert werden. Wählen Sie es in diesem Fall aus der Dropdown-Liste wie unten gezeigt aus.
 
-  ![](assets/s_ncs_admin_jump_param3.png)
+  ![Sprungdialogfeld mit Gespeicherter in einer Variablen ausgewählt und die Dropdown-Liste „Lokale Variable“ geöffnet.](assets/s_ncs_admin_jump_param3.png)
 
 * Im Tab **[!UICONTROL Kommentar]** können Sie Informationen eingeben, die für den Operator sichtbar sind, wenn er das Objekt im Diagramm auswählt.
 
-  ![](assets/s_ncs_admin_survey_jump_comment.png)
+  ![Registerkarte „Kommentar“ des Dialogfelds „Springen“; der Text wird als QuickInfo für das Objekt „Springen“ im Formulardiagramm angezeigt.](assets/s_ncs_admin_survey_jump_comment.png)
 
 ## Beispiel: Zugriff auf ein anderes Formular entsprechend einem URL-Parameter {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
@@ -68,15 +68,15 @@ Im folgenden Beispiel soll ein Web-Formular konfiguriert werden, das nach der Va
 
 1. Fügen Sie am Ende eines Formulars einen Sprung ein. Dieser ersetzt die **[!UICONTROL Ende]**-Komponente.
 
-   ![](assets/s_ncs_admin_survey_jump_sample1.png)
+   ![Formulardiagramm mit einem Sprungobjekt, das nach dem Speichern am Ende des Formulars eingefügt wird und das Feld Ende ersetzt.](assets/s_ncs_admin_survey_jump_sample1.png)
 
 1. Fügen Sie in den Formulareigenschaften einen Parameter (**next**) hinzu, der in einer lokalen Variablen (**next**) gespeichert ist. Lokale Variablen werden unter [Daten in einer lokalen Variablen speichern](web-forms-answers.md#storing-data-in-a-local-variable) beschrieben.
 
-   ![](assets/s_ncs_admin_survey_jump_sample2.png)
+   ![Registerkarte „Formulareigenschaften Parameter“ wird der nächste Parameter hinzugefügt, der in der lokalen Variablen „next“ gespeichert ist.](assets/s_ncs_admin_survey_jump_sample2.png)
 
 1. Bearbeiten Sie das Objekt **[!UICONTROL Sprung]**, wählen Sie die Option **[!UICONTROL In einer Variablen gespeichert]** und danach die Variable **Weiter** in der Dropdown-Liste aus.
 
-   ![](assets/s_ncs_admin_survey_jump_sample3.png)
+   ![Sprungdialogfeld mit Gespeicherter Variable in einer ausgewählten Variablen und der nächsten ausgewählten Variablen in der Liste Lokale Variable.](assets/s_ncs_admin_survey_jump_sample3.png)
 
 1. Die Versand-URL muss den internen Namen des Zielformulars enthalten, z. B.:
 
@@ -98,7 +98,7 @@ Mit dem Feld **[!UICONTROL Test]** können Sie die Sequenzierung von Seiten in e
 
 Beispielsweise können Sie Kunden, die zuvor eine Online-Bestellung aufgegeben haben, eine andere Seite anzeigen wie jenen, die über zehn Bestellungen aufgegeben haben. Fügen Sie dazu auf der ersten Formularseite ein Eingabefeld vom Typ **[!UICONTROL Zahl]** ein, in dem der Benutzer angeben kann, wie viele Bestellungen er bereits aufgegeben hat.
 
-![](assets/s_ncs_admin_survey_test_ex0.png)
+![Formularseite Ihre Details und Bestellungen mit Titel, Name, E-Mail-Feldern und einer Wie oft bestellen Sie im Web-Frage.](assets/s_ncs_admin_survey_test_ex0.png)
 
 Diese Informationen können entweder in einem Datenbankfeld oder einer lokalen Variablen gespeichert werden.
 
@@ -108,17 +108,17 @@ Diese Informationen können entweder in einem Datenbankfeld oder einer lokalen V
 
 In unserem Beispiel soll eine Variable verwendet werden:
 
-![](assets/s_ncs_admin_survey_test_ex1.png)
+![Feld „Bestellanzahl“ der Seite, wobei der Speicher auf die Option „Variable“ gesetzt und die Variable „Bestellungen“ ausgewählt ist.](assets/s_ncs_admin_survey_test_ex1.png)
 
 Fügen Sie im Diagramm des Formulars eine Test-Komponente ein, um die Bedingungen zu definieren. Für jede Bedingung wird am Ausgang der Test-Komponente eine neue Abzweigung hinzugefügt.
 
-![](assets/s_ncs_admin_survey_test_ex2.png)
+![Testet den Dialog mit den Zweigen Orders +10 und Orders 1—>9 und den Dialog Zweig bearbeiten, die ihre Bedingungen definieren.](assets/s_ncs_admin_survey_test_ex2.png)
 
 Wählen Sie die Option **[!UICONTROL Standard-Verzweigung aktivieren]** aus, um eine Transition für Fälle hinzuzufügen, bei denen keine der Bedingungen wahr ist. Diese Option ist nicht erforderlich, wenn alle möglichen Fälle von den definierten Bedingungen abgedeckt werden.
 
 Definieren Sie dann die Seitenreihenfolge, wenn eine der Bedingungen wahr ist, zum Beispiel:
 
-![](assets/s_ncs_admin_survey_test_ex3.png)
+![Formulardiagramm: die Bestellungen? Tests führen zu neuen, standardmäßigen oder Gold-Seiten, die alle zu Speicher und Ende führen.](assets/s_ncs_admin_survey_test_ex3.png)
 
 ### Anzeige anhand von Parametern {#display-based-on-parameters}
 
@@ -134,7 +134,7 @@ Am Ende des Diagramms muss eine Endseite platziert werden. Diese wird angezeigt,
 
 Um diese Seite anzupassen, führen Sie einen Doppelklick auf die **[!UICONTROL Ende]**-Komponente aus und geben Sie in den mittig angeordneten Editor den Seiteninhalt ein.
 
-![](assets/s_ncs_admin_survey_end_page_edit.png)
+![Beenden Sie das Dialogfeld mit dem Titel der Endseite und dem Inhaltseditor, in dem eine Dankesnachricht für das Ausfüllen der Umfrage angezeigt wird.](assets/s_ncs_admin_survey_end_page_edit.png)
 
 * Sie können vorhandenen HTML-Inhalt kopieren und einfügen. Wählen Sie dazu **[!UICONTROL Quellcode anzeigen]** aus und geben Sie den HTML-Code ein.
 * Sie können eine externe URL verwenden. Wählen Sie dazu die entsprechende Option aus und geben Sie die URL der anzuzeigenden Seite ein.

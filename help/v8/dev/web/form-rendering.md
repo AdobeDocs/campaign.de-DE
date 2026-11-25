@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 100%
+source-wordcount: '1354'
+ht-degree: 77%
 ---
 # Formular-Rendering{#form-rendering}
 
@@ -39,17 +39,17 @@ ht-degree: 100%
 
 Mit den Formulareinstellungen können Sie die Vorlage auswählen, die zum Generieren der Seiten verwendet wird. Um darauf zuzugreifen, klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]** in der Symbolleiste mit den Formulardetails und wählen Sie die Registerkarte **[!UICONTROL Rendering]** aus. Standardmäßig stehen verschiedene Vorlagen (Stylesheets) zur Verfügung.
 
-![](assets/s_ncs_admin_survey_rendering_select.png)
+![Registerkarte „Rendering“ der Formulareigenschaften mit geöffneter Vorlagenliste, auf der Standardformular und Design 1 zu Design 7 angezeigt werden.](assets/s_ncs_admin_survey_rendering_select.png)
 
 Im unteren Bereich des Editors können Sie sich das Rendering der ausgewählten Vorlage ansehen.
 
 Mit der Zoom-Funktion können Sie die ausgewählte Vorlage bearbeiten.
 
-![](assets/s_ncs_admin_survey_render_edit.png)
+![Dialogfeld „Formulargenerierungsvorlage Design 5“ mit dem Seitenlayout-Link und den CSS-Einstellungen.](assets/s_ncs_admin_survey_render_edit.png)
 
 Sie können diese Vorlagen ändern oder überschreiben. Wählen Sie dazu den Link **[!UICONTROL Seitenlayout...]** aus und passen Sie die Einstellungen an.
 
-![](assets/s_ncs_admin_survey_render_edit_param.png)
+![Dialogfeld „Seitenlayout“, Registerkarte „Eigenschaften“ mit Logobild, Breite und Höhe sowie dem Pfad des Vorschaubilds.](assets/s_ncs_admin_survey_render_edit_param.png)
 
 Sie haben folgende Möglichkeiten:
 
@@ -58,19 +58,19 @@ Sie haben folgende Möglichkeiten:
 
 Mit dem Tab **[!UICONTROL Headers/Footers]** können Sie die Informationen ändern, die in der Kopf- und Fußzeile jeder Formularseite steht, die auf dieser Vorlage basiert.
 
-![](assets/s_ncs_admin_survey_render_edit_header.png)
+![Dialogfeld „Seitenlayout“, Registerkarte „Kopfzeilen/Fußzeilen“ mit Seitenkopfzeilen und Seitenfußzeilen sowie Positionsfeldern.](assets/s_ncs_admin_survey_render_edit_header.png)
 
 Jede Zeile des Bereichs **[!UICONTROL Seitenkopf]** und **[!UICONTROL Seitenfuß]** entspricht einer Zeile auf der HTML-Seite. Wählen Sie **[!UICONTROL Hinzufügen]**, um eine neue Zeile zu erstellen.
 
 Wählen Sie eine vorhandene Zeile und danach die Schaltfläche **[!UICONTROL Detail]** aus, um sie zu bearbeiten.
 
-![](assets/s_ncs_admin_survey_render_edit_header_detail.png)
+![Dialogfeld „Seitenkopfzeilen“ mit Seitenlayout, Rahmen und Registerkarten „Schriftart“ sowie Inhalt des linken und rechten Bereichs.](assets/s_ncs_admin_survey_render_edit_header_detail.png)
 
 Verwenden Sie die jeweiligen Tabs, um den Inhalt der Zeile zu ändern, Rahmen hinzuzufügen und die Schriftart-Attribute anzupassen. Bestätigen Sie diese Änderungen mit **[!UICONTROL OK]**.
 
 Mit den Feldern **[!UICONTROL Position]** können Sie die Position der Elemente im Seiten-Header und -Footer definieren.
 
-![](assets/s_ncs_admin_survey_render_edit_header_position.png)
+![Registerkarte „Kopf- und Fußzeilen“ mit den Positionslisten für Kopf- und Fußzeilen mit dem Angebot „Ausgeblendet“, „Außerhalb der Seite“, „In der Seite“](assets/s_ncs_admin_survey_render_edit_header_position.png)
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Sie können das Stylesheet für jedes Element des Formulars überschreiben (Eing
 
 Verwenden Sie dazu den Tab **[!UICONTROL Erweitert]**.
 
-![](assets/s_ncs_admin_survey_advanced_tab.png)
+![Registerkarte Erweitert eines Formularelements mit Anzeigeeinstellungen wie Anzahl der Zellen und Vertikale Ausrichtung.](assets/s_ncs_admin_survey_advanced_tab.png)
 
 Damit können Sie die folgenden Eigenschaften definieren:
 
@@ -98,7 +98,7 @@ Damit können Sie die folgenden Eigenschaften definieren:
 * **[!UICONTROL Zeilen]**: Anzahl der Zeilen für einen Bereich vom Typ **[!UICONTROL Mehrzeiliger Text]**,
 * **[!UICONTROL Inline-Stil]**: ermöglicht es Ihnen, das CSS-Stylesheet mit zusätzlichen Einstellungen zu überschreiben. Diese werden durch **;**-Zeichen getrennt, wie im folgenden Beispiel gezeigt:
 
-  ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
+  ![Registerkarte „Erweitert“ mit dem Inline-Wert „Stil“ auf „font-size:16pt“ eingestellt; Hintergrund: blau.](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
 ### Header und Footer definieren {#defining-headers-and-footers}
 
@@ -106,7 +106,7 @@ Die Felder sind in einer Baumstruktur angeordnet, deren Stamm denselben Namen ha
 
 Der Titel des Fensters muss im Fenster mit den Formulareigenschaften in der Registerkarte **[!UICONTROL Seite]** eingegeben werden. Sie können dem Header oder Footer auch einen festen Inhalt hinzufügen (diese Informationen werden auf jeder Seite angezeigt). Dieser Inhalt wird wie unten gezeigt in den jeweiligen Bereich des Tabs **[!UICONTROL Texte]** eingegeben:
 
-![](assets/s_ncs_admin_survey_titles_config.png)
+![Registerkarte „Seiteneigenschaften“ des Formulars mit Fenstertitel, Seitenkopf und Seitenfußzeileninhalt.](assets/s_ncs_admin_survey_titles_config.png)
 
 ### Elemente zum HTML-Header hinzufügen {#adding-elements-to-html-header}
 
@@ -114,7 +114,7 @@ Sie können zusätzliche Elemente zum HTML-Header einer Formularseite hinzufüge
 
 Damit können Sie beispielsweise ein Symbol referenzieren, das in der Symbolleiste der Seite angezeigt werden soll.
 
-![](assets/webform_header_page_tab.png)
+![Registerkarte „Seitenkopfzeile“ mit einem Link-Element für ein Verknüpfungssymbol, das zur HTML-Kopfzeile hinzugefügt wurde.](assets/webform_header_page_tab.png)
 
 ## Kontrolleinstellungen definieren {#defining-control-settings}
 
@@ -124,19 +124,19 @@ Wenn der Benutzer das Formular ausfüllt, wird in bestimmten Feldern je nach For
 
 Wenn Sie bestimmte Felder als Pflichtfelder festlegen möchten, wählen Sie bei der Erstellung des Felds diese Option aus.
 
-![](assets/s_ncs_admin_survey_required_field.png)
+![Registerkarte „Allgemein“ des Feldes, auf der die Option Pflichtfeld für das Feld Nachname aktiviert ist.](assets/s_ncs_admin_survey_required_field.png)
 
 Sollte ein Benutzer diese Seite validieren, ohne das Feld ausgefüllt zu haben, wird ihm die folgende Meldung angezeigt:
 
-![](assets/s_ncs_admin_survey_required_default_msg.png)
+![Die Formularseite mit der standardmäßigen Fehlermeldung „Nachname“ ist obligatorisch, wobei das leere Feld hervorgehoben ist.](assets/s_ncs_admin_survey_required_default_msg.png)
 
 Sie können diese Mitteilung anpassen, indem Sie den Link **[!UICONTROL Nachricht personalisieren, die bei geschlossenem Formular angezeigt wird...]** auswählen.
 
-![](assets/s_ncs_admin_survey_required_custom_msg.png)
+![Personalisierungsdialog der Nachricht geöffnet über Nachricht personalisieren mit benutzerdefiniertem Text für ein leeres Pflichtfeld.](assets/s_ncs_admin_survey_required_custom_msg.png)
 
 Sollte ein Benutzer diese Seite validieren, ohne das Feld ausgefüllt zu haben, wird ihm die folgende Meldung angezeigt:
 
-![](assets/s_ncs_admin_survey_required_custom_msg2.png)
+![Formularseite, auf der die Meldung „Benutzerdefiniertes PFLICHTFELD“ über dem hervorgehobenen leeren Feld angezeigt wird.](assets/s_ncs_admin_survey_required_custom_msg2.png)
 
 ### Datenformat überprüfen {#checking-data-format}
 
@@ -146,7 +146,7 @@ Für Formularprüfungen, bei denen die Werte in einer Variablen gespeichert sind
 
 Sie können beispielsweise die Prüfung einer **[!UICONTROL Zahl]** einrichten, um wie unten gezeigt die Kundennummer zu speichern:
 
-![](assets/s_ncs_admin_survey_choose_format.png)
+![Feld vom Typ Zahl, dessen Wert in einer Client-Variablen gespeichert wird, wobei die Dialogfelder „Speicherung“ und „Verzweigungen bearbeiten“ den ganzzahligen Typ anzeigen.](assets/s_ncs_admin_survey_choose_format.png)
 
 Der Benutzer muss in diesem Fall eine ganze Zahl im Formularfeld eingeben.
 
@@ -156,13 +156,13 @@ Sie können konfigurieren, dass die Felder auf der Seite basierend auf den benut
 
 Sie können für jedes Element der Seite die Anzeigebedingungen im Bereich **[!UICONTROL Sichtbarkeit]** definieren.
 
-![](assets/s_ncs_admin_survey_condition_edit.png)
+![Registerkarte „Container-Allgemein“ mit dem Link „Sichtbarkeitsbearbeitung“, der das Dialogfeld „Sichtbarkeitsbedingung“ öffnet.](assets/s_ncs_admin_survey_condition_edit.png)
 
 Bedingungen können für die Werte in Datenbankfeldern oder Variablen festgelegt werden.
 
 Im Feldauswahl-Fenster können Sie aus folgenden Daten auswählen:
 
-![](assets/s_ncs_admin_survey_condition_select.png)
+![Wählen Sie ein Dialogfeld aus, das die Kontextstruktur mit Kennung, Sprache, Herkunft, Empfängern und Variablen anzeigt.](assets/s_ncs_admin_survey_condition_select.png)
 
 * Der Hauptbaum enthält die Parameter des Formularkontexts. Die Standardparameter sind Kennung (entspricht der verschlüsselten Kennung der Empfängerin bzw. des Empfängers), Sprache und Herkunft.
 
@@ -186,11 +186,11 @@ Gehen Sie wie folgt vor, um ein Element in ein Formular zu importieren:
 
 1. Bearbeiten Sie die Seite, in die Sie ein oder mehrere Elemente einfügen möchten und wählen Sie dann in der Symbolleiste **[!UICONTROL Existierenden Baustein importieren]** aus.
 
-   ![](assets/s_ncs_admin_survey_import_block.png)
+   ![Symbolleiste des Seiteneditors mit der hervorgehobenen Schaltfläche „Vorhandenen Block importieren“.](assets/s_ncs_admin_survey_import_block.png)
 
 1. Wählen Sie das Webformular aus, das die zu importierenden Felder enthält, und wählen Sie die Container und Felder aus, die importiert werden sollen.
 
-   ![](assets/s_ncs_admin_survey_import_block_selection.png)
+   ![Importieren Sie ein vorhandenes Blockdialogfeld mit einer Quell-Webanwendung, und aktivieren Sie die zu importierenden Blöcke.](assets/s_ncs_admin_survey_import_block_selection.png)
 
    >[!NOTE]
    >
@@ -198,4 +198,4 @@ Gehen Sie wie folgt vor, um ein Element in ein Formular zu importieren:
 
 1. Wählen Sie **[!UICONTROL OK]** aus, um das Einfügen des Elements zu bestätigen.
 
-   ![](assets/s_ncs_admin_survey_import_block_rendering.png)
+   ![Seitenstruktur nach dem Import, die jetzt die Felder Nachname, Land, Kontonummer und E-Mail enthält.](assets/s_ncs_admin_survey_import_block_rendering.png)

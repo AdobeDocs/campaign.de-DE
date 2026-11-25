@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 89%
+source-wordcount: '1486'
+ht-degree: 61%
 ---
 # Anwendungsbeispiele: Web-Formulare{#use-cases-web-forms}
 
@@ -45,13 +45,13 @@ Es wird von folgendem Szenario ausgegangen:
 
 ### Schritt 1: Erstellen von Informationsdiensten {#step-1---creating-information-services}
 
-1. Erstellen Sie den Dienst für die Newsletter-Anmeldung für Ihre Empfangenden. Weitere Informationen zur Erstellung eines Newsletters finden Sie [in diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
+1. Erstellen Sie den Dienst für die Newsletter-Anmeldung für Ihre Empfangenden. Weitere Informationen zur Erstellung eines Newsletters finden Sie [in diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
+   ![Dialogfeld „Service“ für den wöchentlichen Newsletter-Service mit den Feldern „Titel“, „Interner Name“, „E-Mail-Typ“ und „Newsletter-Modus“.](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
 1. Erstellen Sie einen zweiten Informationsdienst, einen temporären Dienst, der mit einer Versandvorlage verknüpft ist, um Nachrichten zur Anmeldebestätigung zu versenden.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
+   ![Dashboard des temporären Dienstes (temp_service) mit E-Mail-Typ, Newsletter-Modus und Ordner.](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
 ### Schritt 2: Erstellen von Bestätigungsnachrichten {#step-2---creating-confirmation-messages}
 
@@ -61,7 +61,7 @@ Bestätigungsnachrichten werden über eine spezielle Versandvorlage gesendet, di
 1. Erstellen Sie eine Versandvorlage zum Senden der Anmeldebestätigung.
 1. Wählen Sie in den **[!UICONTROL E-Mail-Parametern]** die Schaltfläche **[!UICONTROL An]** aus, um die Versandvorlage mit dem Abonnement-Zielgruppen-Mapping anstelle der Empfänger zu verbinden.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
+   ![Wählen Sie das Dialogfeld Ziel in der Versandvorlage aus, wobei das Zielgruppen-Mapping Abonnements :subscriptionnms) ausgewählt ist.](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. Da die Empfänger dieses Versands ihre Zustimmung nicht bestätigt haben, befinden sie sich immer noch auf der Blockierungsliste der Datenbank. Damit sie diese Nachricht erhalten, müssen Sie Sendungen autorisieren, die auf dieser Vorlage basieren, um Empfänger auf der Blockierungsliste anzusprechen.
 
@@ -77,15 +77,15 @@ Bestätigungsnachrichten werden über eine spezielle Versandvorlage gesendet, di
 
 1. Passen Sie Ihren Versand an und fügen Sie den Bestätigungs-Link in den Nachrichteninhalt ein. Über diesen Link können Sie auf das Web-Formular zugreifen, um Anmeldebestätigungen aufzuzeichnen.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1b.png)
+   ![Bestätigungs-E-Mail im Versand-Editor mit einem Personalisierungsfeld Vorname und einem Link Hier klicken](assets/s_ncs_admin_survey_double-opt-in_sample_1b.png)
 
 1. Verknüpfen Sie mithilfe des DCE Ihre URL mit dem Web-Formular. Da das Web-Formular noch nicht erstellt wurde, ersetzen Sie den entsprechenden Wert unmittelbar bei seiner Erstellung.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
+   ![Hypertextverknüpfungsbereich mit dem Feld Web-Anwendung, noch leer, für den Link Hier klicken in der Bestätigungs-E-Mail.](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
 
 1. Verbinden Sie abschließend diese Vorlage mit dem zuvor erstellten temporären Dienst.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
+   ![Registerkarte „Bearbeitung“ des temporären Services, auf der der Bestätigungsversand im Feld Abonnement ausgewählt ist.](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
 ### &#x200B;3. Schritt: Erstellung des Anmeldeformulars {#step-3---creating-the-subscription-form}
 
@@ -93,33 +93,33 @@ Das Webformular ermöglicht sowohl die Anmeldung der Empfänger als auch die Anm
 
 Der Webformular-Workflow umfasst die folgenden Aktivitäten:
 
-![](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
+![Web-Formular-Workflow: Vorausfüllen, Testen und dann Leere E-Mail führt zu Skript-Blockierungsliste, Abonnement, Speicherung, Ende.](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
 
 Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie ein Webformular und wählen Sie die Vorlage **[!UICONTROL Newsletter-Anmeldung (subNewsletter)]** aus.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
+   ![Dialogfeld „Neue Web-Anwendung“ mit ausgewählter Vorlage „Newsletter-Abonnement (Unter-Newsletter)“.](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
 1. Im Tab **[!UICONTROL Bearbeiten]** muss der vorhandene Workflow konfiguriert werden, da eine Bestätigungsnachricht an die Empfänger, die sich anmelden möchten, hinzugefügt werden soll.
 
    Doppelklicken Sie dazu auf die Aktivität **[!UICONTROL Vorausfüllen]** und konfigurieren Sie sie wie folgt.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
+   ![Dialogfeld „Aktivität vorausfüllen“ mit im Formular referenzierten Daten automatisch laden und „Vorausfüllen überspringen“, wenn keine ID ausgewählt ist.](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
    Wenn die Benutzerin bzw. der Benutzer über den Link in der Bestätigungsnachricht auf dieses Formular zugreift, werden die Profilinformationen geladen. Wenn der Zugriff auf das Web-Formular über eine Seite der Website erfolgt, werden keine Informationen geladen.
 
 1. Fügen Sie eine **[!UICONTROL Test]**-Aktivität zu Ihrem Workflow hinzu.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
+   ![Web-Formular-Workflow mit einer Test -Aktivität, die in einer E-Mail verzweigt, die leer zu Abonnement, Speicherung und Ende ist.](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
    Die Aktivität **[!UICONTROL Test]** kann sich auf die Empfänger-E-Mail beziehen. Konfigurieren Sie sie in diesem Fall wie folgt:
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
+   ![Testen Sie den Aktivitätszweig-Editor mit der Bedingung, @email nicht leer ist.](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
 1. Fügen Sie zwei **[!UICONTROL Script]**-Aktivitäten zu Ihrem Workflow hinzu.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
+   ![Web-Formular-Workflow mit einer Script-Aktivität in jedem Zweig der Testaktivität.](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
    Die erste **[!UICONTROL Script]**-Aktivität fügt Empfänger auf der Blockierungsliste hinzu, bis sie ihr Abonnement für den Newsletter bestätigt haben. Der Inhalt muss wie folgt aussehen:
 
@@ -127,7 +127,7 @@ Gehen Sie dazu wie folgt vor:
    ctx.recipient.@blackList=1
    ```
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
+   ![Script zur Blockierungsliste des Scripts ctx.recipient.@blackList=1.](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
    Mit der zweiten **[!UICONTROL Script]**-Aktivität werden Sendungen an die Benutzer genehmigt. Außerdem werden diese zum Newsletter angemeldet. Die letzten beiden Zeilen des Skripts ermöglichen es Ihnen, Ihre Empfänger vom temporären Ordner in einen anderen Ordner zu übertragen und mit vorhandenen Profilen abzustimmen, sobald sie das Abonnement bestätigt haben.
 
@@ -142,17 +142,17 @@ Gehen Sie dazu wie folgt vor:
    >
    >Die Partition **[!UICONTROL Temp]** kann auch regelmäßig mit einem Workflow bereinigt werden.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
+   ![Zweite Script-Aktivität mit den Skript-Zeilen „unblocklist“, „subscribe“, „folder“ und „unsubscribe“.](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
 1. Doppelklicken Sie auf die **[!UICONTROL Abonnement]**-Aktivität, um das Anmeldeformular anzupassen und eine Checkbox mit dem zuvor erstellten temporären Dienst zu verbinden.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
+   ![Seiteneditor mit dem Kontrollkästchen „Einverständnis“, das mit dem temporären Dienst im Feld Dienst verknüpft ist.](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
 1. Konfigurieren Sie die Aktivität **[!UICONTROL Speicherung]**, um die auf der Formularseite eingegebenen Informationen zu speichern.
 
    Mit dieser Aktivität können Sie Empfängerprofile in einem speziellen temporären Ordner erstellen. Damit können Sie sie von den Profilen in der Datenbank trennen, denen Nachrichten gesendet werden können.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
+   ![Dialogfeld „Speicheraktivität“ mit als Erstellungsordner festgelegtem temporären Ordner.](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
    >[!NOTE]
    >
@@ -162,75 +162,75 @@ Gehen Sie dazu wie folgt vor:
 
    Die zweite **[!UICONTROL Ende]**-Aktivität enthält die Bestätigungsnachricht, sobald die Anmeldung abgeschlossen ist.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
+   ![Der Dialog „Aktivität beenden“ mit der Meldung „Ihr Abonnement ist abgeschlossen“. In Kürze erhalten Sie unseren Newsletter.](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
 1. Nachdem das Webformular erstellt und konfiguriert wurde, können Sie es in der Versandvorlage referenzieren, um Bestätigungsnachrichten zu senden.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
+   ![Bestätigungsversand mit dem Link Hier klicken , der auf die Anmeldung zum Newsletter mit Double-Opt-in-Webanwendung verweist.](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 
 ### Schritt 4: Veröffentlichung und Testen des Formulars {#step-4---publishing-and-testing-the-form}
 
 Sie können jetzt das Formular veröffentlichen, damit die Benutzer darauf zugreifen können.
 
-![](assets/s_ncs_admin_survey_double-opt-in_sample_8b.png)
+![Dashboard der Webanwendung mit der Schaltfläche Veröffentlichen und der Meldung, dass die Anwendung veröffentlicht werden muss, damit der Zugriff online möglich ist.](assets/s_ncs_admin_survey_double-opt-in_sample_8b.png)
 
 Die Anmeldung zum Newsletter beinhaltet die folgenden Schritte:
 
 1. Der Benutzer der Website loggt sich in der Anmeldeseite ein und validiert das Formular.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8c.png)
+   ![Newsletter-Anmeldeformular in einem Browser mit ausgefülltem Namen und ausgefüllter E-Mail, aktiviertem Einverständnisfeld und der Schaltfläche „Abonnieren“.](assets/s_ncs_admin_survey_double-opt-in_sample_8c.png)
 
    Eine Nachricht in seinem Browser informiert ihn, dass seine Anfrage eingegangen ist.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
+   ![Browser-Endseite, auf der angegeben wird, dass die Anfrage registriert wurde und eine Meldung folgt.](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
    Der Benutzer wird zum **[!UICONTROL Temp]**-Ordner der Adobe Campaign-Datenbank hinzugefügt; sein Profil wird auf die Blockierungsliste gesetzt, bis er seine Anmeldung über die E-Mail bestätigt.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
+   ![Ordner der temporären Empfänger mit dem ausgewählten neuen Profil und der Option Nicht mehr kontaktieren (alle Kanäle).](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
 1. Er erhält eine Bestätigungsnachricht mit einem Link zur Abonnement-Bestätigung.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8e.png)
+   ![Bestätigungs-E-Mail für die Anmeldung mit einem Link Hier klicken, um die Newsletter-Anmeldung zu bestätigen.](assets/s_ncs_admin_survey_double-opt-in_sample_8e.png)
 
 1. Wenn er auf diesen Link klickt, wird in seinem Browser die Bestätigungsseite angezeigt.
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
+   ![Browser-Seite mit dem Titel Glückwunsch! Bestätigung, dass das Abonnement jetzt aktiv ist.](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
 
    Das Benutzerprofil wird in Adobe Campaign aktualisiert:
 
    * Es befindet sich nicht mehr auf der Blockierungsliste
    * und wurde zum Informationsdienst angemeldet.
 
-     ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
+     ![Empfängerprofil wurde aktualisiert, und der Kontakt wurde nicht mehr gelöscht und das Newsletter-Filmabonnement wurde aufgelistet.](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
 
 ## Je nach den ausgewählten Werten unterschiedliche Optionen anzeigen {#displaying-different-options-depending-on-the-selected-values}
 
 Im folgenden Beispiel wird die Person aufgefordert, einen Fahrzeugtyp auszuwählen. Je nach ausgewähltem Typ können die verfügbaren Fahrzeugkategorien angezeigt werden. Das bedeutet, dass die in der rechten Spalte angezeigten Elemente von der Auswahl der Person abhängen:
 
-![](assets/s_ncs_admin_survey_condition_sample0.png)
+![Seite zur Fahrzeugauswahl mit der Dropdown-Liste „Fahrzeugtyp“ auf „Auswählen“.](assets/s_ncs_admin_survey_condition_sample0.png)
 
 * Wenn der Benutzer &quot;Personenfahrzeug&quot; auswählt, werden die Kategorien &quot;Kompakt&quot; und &quot;Minivan&quot; angezeigt.
 
-  ![](assets/s_ncs_admin_survey_condition_sample2.png)
+  ![Seite zur Fahrzeugauswahl mit ausgewähltem Personenkraftwagen, auf der die Optionen „Standard“ und „Kompakt“ angezeigt werden.](assets/s_ncs_admin_survey_condition_sample2.png)
 
 * Wenn der Benutzer &quot;Nutzfahrzeug&quot; auswählt, wird in einer Dropdown-Liste eine Auswahl angeboten.
 
-  ![](assets/s_ncs_admin_survey_condition_sample1.png)
+  ![Seite zur Fahrzeugauswahl mit ausgewähltem fahrendem LKW und einer Dropdown-Liste von Fahrzeugtypen.](assets/s_ncs_admin_survey_condition_sample1.png)
 
 In diesem Beispiel wird der Fahrzeugtyp nicht in der Datenbank gespeichert. Die Dropdown-Liste ist wie folgt konfiguriert:
 
-![](assets/s_ncs_admin_survey_condition_config1.png)
+![Typ des Autos Kombinationsfeld Eigenschaften mit den Werten Auswählen, Persönliches Auto und Beweglicher LKW.](assets/s_ncs_admin_survey_condition_config1.png)
 
 Diese Information wird in einer lokalen Variable gespeichert.
 
 Die bedingte Anzeige in der rechten Spalte wird in Containern konfiguriert:
 
-![](assets/s_ncs_admin_survey_condition_config1bis.png)
+![Dialogfeld „Speicherung“ mit ausgewählter Option „Variable“ für das Feld „Fahrzeugtyp“](assets/s_ncs_admin_survey_condition_config1bis.png)
 
 * Bedingte Sichtbarkeit der Felder für ein Personenfahrzeug:
 
-  ![](assets/s_ncs_admin_survey_condition_config2.png)
+  ![Sichtbedingung auf dem Personal-Car-Container: Art des Autos entspricht dem Personal-Car.](assets/s_ncs_admin_survey_condition_config2.png)
 
 * Bedingte Sichtbarkeit der Felder für ein Nutzfahrzeug:
 
-  ![](assets/s_ncs_admin_survey_condition_config3.png)
+  ![Sichtbedingung am LKW-/Transporter-Container: Fahrzeugtyp entspricht dem fahrenden LKW.](assets/s_ncs_admin_survey_condition_config3.png)

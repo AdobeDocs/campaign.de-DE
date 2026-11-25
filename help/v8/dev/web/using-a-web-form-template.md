@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '277'
+ht-degree: 83%
 ---
 # Verwenden einer Web-Formularvorlage{#using-a-web-form-template}
 
@@ -38,7 +38,7 @@ Hier können Sie entweder neue Vorlagen erstellen oder ein bestehendes Formular 
 
 Ein Formular kann in eine Vorlage umgewandelt und seine Konfiguration wiederverwendet werden. Wählen Sie dazu das Formular aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern...]**.
 
-![](assets/s_ncs_admin_survey_saveastemplate.png)
+![Liste der Web-Anwendungen mit dem Kontextmenü „Aktionen“ öffnen und als Vorlage speichern hervorgehoben](assets/s_ncs_admin_survey_saveastemplate.png)
 
 Diese Aktion öffnet das Fenster zum Erstellen von Web-Anwendungen. Dort können Sie den Namen und die Beschreibung der Vorlage eingeben und den Ordner auswählen, in dem sie gespeichert werden soll.
 
@@ -46,11 +46,11 @@ Diese Aktion öffnet das Fenster zum Erstellen von Web-Anwendungen. Dort können
 
 Um eine Web-Formularvorlage zu erstellen, klicken Sie mit der rechten Maustaste auf die Liste der Web-Anwendungsvorlagen und wählen Sie **[!UICONTROL Neu]**. Sie können auch die Schaltfläche **[!UICONTROL Neu]** oberhalb der Vorlagenliste verwenden.
 
-![](assets/s_ncs_admin_survey_createtemplate.png)
+![Ordner „Webanwendungsvorlagen“ im Explorer, mit der Schaltfläche Neu , die zum Erstellen einer Vorlage verwendet wird](assets/s_ncs_admin_survey_createtemplate.png)
 
 Geben Sie den Namen der Vorlage ein. Wählen Sie im Feld **[!UICONTROL Instanzordner]** den Ordner aus, in dem die auf dieser Vorlage basierenden Webformulare gespeichert werden sollen. Über das Feld **[!UICONTROL Art]** können Sie eine Beschreibung zur Sortierung und/oder Filterung der unterschiedlichen Webanwendungsvorlagen hinzufügen.
 
-![](assets/s_ncs_admin_survey_createtemplate_details.png)
+![Dialogfeld „Neue Web-Anwendung“ mit den Ordnerfeldern „Bezeichnung“, „Umfrage“ und „Erweiterte Website-Optionen“, „Art“ und „Instanzen“](assets/s_ncs_admin_survey_createtemplate_details.png)
 
 Wählen Sie die Schaltfläche **[!UICONTROL Speichern]** aus, um die Vorlage zu erstellen. Definieren Sie dann den Inhalt dieser Vorlage und deren Parameter.
 

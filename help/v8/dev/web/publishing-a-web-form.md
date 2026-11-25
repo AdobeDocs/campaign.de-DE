@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 94%
+source-wordcount: '1571'
+ht-degree: 82%
 ---
 # Veröffentlichen eines Web-Formulars{#publishing-a-web-form}
 
@@ -49,7 +49,7 @@ Folgende Identifizierungsmöglichkeiten gibt es:
 
 * **[!UICONTROL DES-Verschlüsselung]**
 
-  ![](assets/s_ncs_admin_survey_preload_methods_001.png)
+  ![Abschnitt Vorabladen der Identifizierung mit der auf DES-Verschlüsselung gesetzten Methode, einem DES-Schlüsselfeld, und Vorausfüllen überspringen, wenn keine ID vorhanden ist](assets/s_ncs_admin_survey_preload_methods_001.png)
 
   Diese Verschlüsselungsmethode verwendet eine extern bereitgestellte Kennung (ID), die mit einem Schlüssel verknüpft ist, der von Adobe Campaign und dem externen Anbieter gemeinsam verwendet wird. Dieser Schlüssel wird im Feld **[!UICONTROL DES-Schlüssel]** eingegeben.
 
@@ -57,7 +57,7 @@ Folgende Identifizierungsmöglichkeiten gibt es:
 
   Mit dieser Option können Sie aus den im aktuellen Kontext des Formulars bereitgestellten Feldern auswählen. Anhand dieser Felder wird das entsprechende Profil in der Datenbank gesucht.
 
-  ![](assets/s_ncs_admin_survey_preload_methods_002.png)
+  ![Abschnitt „Identifizierung vorausfüllen“ mit der Methode „Liste der Felder“ und dem als Kennung ausgewählten E-Mail-Feld](assets/s_ncs_admin_survey_preload_methods_002.png)
 
   Felder können den Formulareigenschaften über den Tab **[!UICONTROL Parameter]** hinzugefügt werden (siehe [Parameter hinzufügen](defining-web-forms-properties.md#adding-parameters)). Sie werden in der Formular-URL oder den Eingabefeldern platziert.
 
@@ -69,11 +69,11 @@ Folgende Identifizierungsmöglichkeiten gibt es:
 
   In der URL kann die unverschlüsselte E-Mail-Adresse enthalten sein. In diesem Fall haben Benutzer direkten Zugriff auf Seiten.
 
-  ![](assets/s_ncs_admin_survey_preload_methods_003.png)
+  ![Web-Formular-URL mit der E-Mail-Adresse, durch direktes Öffnen des vorausgefüllten Formulars für Client-Informationen](assets/s_ncs_admin_survey_preload_methods_003.png)
 
   Ansonsten werden sie nach ihrem Passwort gefragt.
 
-  ![](assets/s_ncs_admin_survey_preload_methods_004.png)
+  ![Web-Formular-URL ohne E-Mail, Öffnen einer Seite zur Kennworteingabe, auf der Sie nach dem Kennwort gefragt werden](assets/s_ncs_admin_survey_preload_methods_004.png)
 
   >[!CAUTION]
   >
@@ -89,7 +89,7 @@ Mit der Option **[!UICONTROL Ladung zusätzlicher Daten]** können Sie Felder mi
 
 So können Sie beispielsweise das Geschlecht des Empfängers vorausfüllen und ihn über eine Testkomponente automatisch zur entsprechenden Seite weiterleiten.
 
-![](assets/s_ncs_admin_survey_preload_ex.png)
+![Feld wird vorab geladen, das Feld „Geschlecht“ wird geladen, gefolgt von einem Testfeld, das Empfänger zur entsprechenden Seite sendet](assets/s_ncs_admin_survey_preload_ex.png)
 
 ## Versand und Tracking von Web-Formularen verwalten {#managing-web-forms-delivery-and-tracking}
 
@@ -137,13 +137,13 @@ Der Lebenszyklus eines Formulars besteht aus drei Phasen:
 
 Der Veröffentlichungsstatus eines Formulars wird in der Formularliste angezeigt.
 
-![](assets/s_ncs_admin_survey_status.png)
+![Liste der Web-Anwendungen mit dem Veröffentlichungsstatus jedes Formulars, z. B. „Online“ und „In Bearbeitung“](assets/s_ncs_admin_survey_status.png)
 
 ### Formular veröffentlichen {#publishing-a-form}
 
 Um den Status eines Formulars zu ändern, müssen Sie es veröffentlichen. Klicken Sie dazu oberhalb der Liste der Web-Formulare auf die Schaltfläche **[!UICONTROL Veröffentlichung]** und wählen Sie in der Dropdown-Liste den Status aus.
 
-![](assets/webapp_publish_webform.png)
+![Web-Formular-Dashboard mit der Schaltfläche Veröffentlichen , das zum Dialogfeld Veröffentlichung der Web-Anwendung mit der Schaltfläche Starten führt](assets/webapp_publish_webform.png)
 
 ### Formular online verfügbar machen {#making-a-form-available-online}
 
@@ -151,7 +151,7 @@ Damit Benutzer auf das Formular zugreifen können, muss es sich in Produktion be
 
 * Geben Sie im Bereich **[!UICONTROL Projekt]** über die entsprechenden Felder das Start- und Enddatum für das Formular ein.
 
-  ![](assets/webapp_availability_date.png)
+  ![Registerkarte „Allgemein“ der Eigenschaften mit den Feldern „Start- und Enddatum“ im Projektabschnitt und geöffnetem Kalender „Enddatum“](assets/webapp_availability_date.png)
 
 * Wählen Sie den Link **[!UICONTROL Nachricht personalisieren, die bei geschlossenem Formular angezeigt wird...]** aus, um eine Fehlernachricht zu definieren. Diese wird angezeigt, wenn ein Benutzer versucht, auf das Formular zuzugreifen, das nicht gültig ist;
 
@@ -169,21 +169,21 @@ In diesem Fall muss der Abstimmschlüssel für die Datenspeicherung die verschl�
 
 In diesem Fall müssen Sie im Datensatzfeld die Option **[!UICONTROL Vorausgefüllten Datensatz aktualisieren]** aktivieren. Weiterführende Informationen finden Sie unter [Antworten in Webformularen speichern](web-forms-answers.md#saving-web-forms-answers).
 
-![](assets/s_ncs_admin_survey_save_box_option.png)
+![Dialogfeld „Speicherung“ mit aktivierter Option „Vorgeladenen Datensatz aktualisieren“](assets/s_ncs_admin_survey_save_box_option.png)
 
 ### Antworten protokollieren {#log-responses}
 
 Das Tracking der Antworten kann auf einer speziellen Registerkarte aktiviert werden, um die Wirkung Ihres Web-Formulars zu überwachen. Wählen Sie dazu im Fenster mit den Formulareigenschaften den Link **[!UICONTROL Erweiterte Parameter...]** und dann die Option **[!UICONTROL Antworten protokollieren]** aus.
 
-![](assets/s_ncs_admin_survey_trace.png)
+![Dialogfeld „Erweiterte Parameter“ mit aktivierter Option „Antworten protokollieren“, geöffnet über die Formulareigenschaften](assets/s_ncs_admin_survey_trace.png)
 
 Im Tab **[!UICONTROL Antworten]** sehen Sie die Identität der reagierenden Kontakte.
 
-![](assets/s_ncs_admin_survey_trace_tab.png)
+![Registerkarte Antworten des Web-Formulars mit Datum und Empfänger jeder Formularantwort](assets/s_ncs_admin_survey_trace_tab.png)
 
 Selektieren Sie einen Empfänger und wählen Sie dann die Schaltfläche **[!UICONTROL Details...]** aus, um die Antworten aufzurufen.
 
-![](assets/s_ncs_admin_survey_trace_edit.png)
+![Schaltfläche Details auf der Registerkarte Antworten zum Öffnen eines Fensters Formularantworten mit den von einem Empfänger eingegebenen Antworten](assets/s_ncs_admin_survey_trace_edit.png)
 
 Sie können die Antwortprotokolle zu den Fragen verwenden, um beispielsweise Erinnerungen nur an Kontakte zu senden, die nicht geantwortet haben, oder um reagierenden Kontakten spezielle Nachrichten zukommen zu lassen.
 

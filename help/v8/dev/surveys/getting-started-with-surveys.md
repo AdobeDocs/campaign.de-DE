@@ -21,22 +21,22 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 95%
+source-wordcount: '1292'
+ht-degree: 73%
 ---
 # Wichtige Schritte zum Erstellen einer Umfrage{#getting-started-with-surveys}
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
 
 
 
 Hier finden Sie einen kurzen Überblick über die wichtigsten Schritte zur Erstellung einer einfachen Umfrage unter Verwendung der folgenden nativen Vorlage:
 
-![](assets/s_ncs_admin_survey_result.png)
+![Umfrageseite Ihre Details mit Nachnamen, Kontonummer und E-Mail-Feldern, einer E-Mail-Formatliste und einer Schaltfläche „Validieren“](assets/s_ncs_admin_survey_result.png)
 
 Die einzelnen Schritte sind:
 
@@ -52,13 +52,13 @@ Die einzelnen Schritte sind:
 
 Um eine neue Umfrage zu erstellen, rufen Sie die Registerkarte **[!UICONTROL Kampagnen]** oder **[!UICONTROL Profile und Zielgruppen]** auf und klicken Sie auf das Menü **[!UICONTROL Webanwendungen]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]** oberhalb der Formularliste.
 
-![](assets/s_ncs_admin_survey_create.png)
+![Liste der Web-Anwendungen auf der Registerkarte „Kampagnen“ mit der Schaltfläche „Erstellen“ oberhalb der Formularliste](assets/s_ncs_admin_survey_create.png)
 
 ## Schritt 2: Auswählen der Vorlage {#step-2---selecting-the-template}
 
 Wählen Sie eine Umfragevorlage aus und benennen Sie die Umfrage. Dieser Name ist für die Endbenutzenden unsichtbar, er dient lediglich zur Identifikation der Umfrage innerhalb von Adobe Campaign. Wählen Sie **[!UICONTROL Speichern]**, um die Umfrage zur Liste der Web-Anwendungen hinzuzufügen.
 
-![](assets/s_ncs_admin_survey_wz_00.png)
+![Dialogfeld „Neue Web-Anwendung“ mit ausgewählter neuer Umfragevorlage, Titel, Ordner und Schaltfläche „Speichern“](assets/s_ncs_admin_survey_wz_00.png)
 
 ## Schritt 3: Zusammenstellen der Umfrage {#step-3---building-the-survey}
 
@@ -70,34 +70,34 @@ Eine Umfrage muss **zumindest** die folgenden drei Komponenten enthalten: eine S
 
 * Um eine Seite zu erstellen, wählen Sie im linken Bereich des Editors das Objekt **[!UICONTROL Seite]** aus und legen Sie es wie unten gezeigt in der Mitte ab:
 
-  ![](assets/s_ncs_admin_survey_new_page.png)
+  ![Umfrage-Editor mit dem Seitenobjekt, das aus der allgemeinen Liste in den Diagrammbereich gezogen wird](assets/s_ncs_admin_survey_new_page.png)
 
 * Wählen Sie danach das Objekt **[!UICONTROL Speicherung]** aus und platzieren Sie es auf der ausgehenden Transition der Seite.
 * Wählen Sie abschließend das Objekt **[!UICONTROL Ende]** aus und platzieren Sie es am Ende der ausgehenden Transition der Speicherungsbox. Sie erhalten somit die folgende Grafik:
 
-  ![](assets/s_ncs_admin_survey_end.png)
+  ![Vermessungsdiagramm mit einer Seite, einem Speicherfeld und einem Endobjekt, die durch Transitionen verknüpft sind](assets/s_ncs_admin_survey_end.png)
 
 ## Schritt 4: Erstellen des Seiteninhalts {#step-4---creating-the-page-content}
 
 Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibilität)]** verwendet. Der Zugriff auf diesen Seitentyp erfolgt über das erweiterte Menü auf der Registerkarte **[!UICONTROL Bearbeiten]**.
 
-![](assets/s_ncs_admin_survey_pagev5.png)
+![Erweiterte Liste der Registerkarte Bearbeiten mit dem ausgewählten Objekt Seite (V5-Kompatibilität) in einem Diagramm Seite, Speicher, Ende](assets/s_ncs_admin_survey_pagev5.png)
 
 * **Eingabefelder hinzufügen**
 
   Um den Inhalt der Seite zu erstellen, müssen Sie sie bearbeiten: Doppelklicken Sie dazu auf das Objekt **[!UICONTROL Seite]**. Klicken Sie auf das erste Symbol in der Symbolleiste, um den Assistenten zur Felderstellung zu öffnen. Um ein Eingabefeld für den Benutzernamen zu erstellen, der im entsprechenden Feld des Empfängerprofils gespeichert werden soll, wählen Sie **[!UICONTROL Empfänger bearbeiten]**.
 
-  ![](assets/s_ncs_admin_survey_add_field_menu.png)
+  ![Assistent zur Felderstellung mit der ausgewählten Option Empfänger bearbeiten , um ein Formularfeld hinzuzufügen](assets/s_ncs_admin_survey_add_field_menu.png)
 
   Klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**, um das Feld für die Datenspeicherung in der Datenbank festzulegen. In diesem Fall das Feld „Nachname“.
 
-  ![](assets/s_ncs_admin_survey_choose_field.png)
+  ![Assistent zur Felderstellung mit den Empfängerfeldern, wobei Nachname als einzugebendes Feld ausgewählt ist](assets/s_ncs_admin_survey_choose_field.png)
 
   Wählen Sie zur Bestätigung der Felderstellung die Option **[!UICONTROL Beenden]**.
 
   Wenn die Informationen in einem bereits in der Datenbank vorhandenen Feld gespeichert werden, nimmt das Feld standardmäßig den Namen des ausgewählten Felds an, in diesem Beispiel also „Nachname“. Sie können diesen Titel wie unten gezeigt ändern:
 
-  ![](assets/s_ncs_admin_survey_change_label.png)
+  ![Seiteneditor, in dem die Feldbezeichnung Nachname in Ihr Name geändert wird, gespeichert in der @lastName Datenbankfeld](assets/s_ncs_admin_survey_change_label.png)
 
   Erstellen Sie nun ein Eingabefeld für die Kundenummer. Wiederholen Sie den Vorgang und wählen Sie das Feld „Kundennummer“ aus.
 
@@ -107,19 +107,19 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
   Um eine Frage zu erstellen, rechtsklicken Sie auf das letzte Element im Baum und wählen Sie **[!UICONTROL Container > Frage]** aus oder klicken Sie auf das Symbol **[!UICONTROL Container]** und wählen Sie danach **[!UICONTROL Frage]** aus.
 
-  ![](assets/s_ncs_admin_survey_add_qu.png)
+  ![Seiteneditor mit geöffnetem Menü „Container“ und ausgewählter Frage unterhalb der Felder Name, Kontonummer und E-Mail ](assets/s_ncs_admin_survey_add_qu.png)
 
   Geben Sie den Titel der Frage ein und fügen Sie die Antwortfelder als Unterverzweigung der Frage ein. Beim Erstellen des Antwortfeldes muss der mit der Frage verknüpfte Knoten ausgewählt sein. Fügen Sie eine **[!UICONTROL Dropdown-Liste]** mithilfe des Symbols **[!UICONTROL Auswahl-Steuerelemente]** oder durch Rechtsklick hinzu, wie unten dargestellt:
 
-  ![](assets/s_ncs_admin_survey_add_list.png)
+  ![Rechtsklick auf das Menü in der Frage mit hervorgehobenen Auswahlsteuerelementen und hervorgehobenem Kombinationsfeld](assets/s_ncs_admin_survey_add_list.png)
 
   Wählen Sie einen Speicherort aus: Wählen Sie ein Aufzählungsfeld aus, um die Werte automatisch abzurufen (in diesem Fall das E-Mail-Format).
 
-  ![](assets/s_ncs_admin_survey_add_itz_list.png)
+  ![Speicherdialogfeld mit ausgewähltem „Empfänger bearbeiten“ und dem Datenbankfeld „E-Mail-Format (@emailFormat)](assets/s_ncs_admin_survey_add_itz_list.png)
 
   Wählen Sie im Tab **[!UICONTROL Allgemein]** den Link **[!UICONTROL Werteliste aus der Datenbank übernehmen]** aus. Die Wertetabelle wird daraufhin automatisch eingetragen.
 
-  ![](assets/s_ncs_admin_survey_add_value.png)
+  ![Registerkarte Allgemein des Kombinationsfelds mit der Option Initialisieren der Werteliste des Datenbank-Links und der ausgefüllten Werteliste](assets/s_ncs_admin_survey_add_value.png)
 
   Wählen Sie **[!UICONTROL OK]** aus, um den Editor zu schließen, und **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
@@ -129,7 +129,7 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
   Wählen Sie im Detailfenster den Tab **[!UICONTROL Vorschau]** aus, um sich die Darstellung der soeben erstellten Umfrage anzusehen.
 
-  ![](assets/s_ncs_admin_survey_preview.png)
+  ![Registerkarte „Vorschau“ mit der Umfrageseite mit den Feldern „Name“, „Kontonummer“, „E-Mail- und E-Mail-Format“ und der Schaltfläche „Validieren“](assets/s_ncs_admin_survey_preview.png)
 
 ## Schritt 5: Speichern der Umfragedaten {#step-5---storing-the-survey-data-}
 
@@ -139,7 +139,7 @@ Bearbeiten Sie dazu die Box und wählen Sie das Feld aus, das bei der Datenspeic
 
 Im nachfolgenden Beispiel wird das Profil aktualisiert, wenn beim Speichern (Bestätigen) ein Profil in der Datenbank gespeichert wird, dessen Kontonummer der Eingabe im Formular entspricht. Wenn das Profil nicht vorhanden ist, wird es erstellt.
 
-![](assets/s_ncs_admin_survey_save_edit.png)
+![Dialogfeld „Speicherung“ mit aktiviertem Feld „Kontonummer“ als Abstimmschlüssel unter „Empfänger“](assets/s_ncs_admin_survey_save_edit.png)
 
 Klicken Sie **[!UICONTROL Bestätigung]** OK und anschließend auf **[!UICONTROL Speichern]**, um die Umfrage zu speichern.
 
@@ -150,17 +150,17 @@ Damit Benutzende auf die HTML-Seiten zugreifen können, muss die Anwendung verf�
 * Klicken Sie auf die Schaltfläche **[!UICONTROL Veröffentlichen]** oberhalb des Umfrage-Dashboards.
 * Klicken Sie auf **[!UICONTROL Start]**, um die Veröffentlichung zu starten und den Assistenten zu schließen.
 
-  ![](assets/s_ncs_admin_survey_start_publ.png)
+  ![Schaltfläche „Dashboard veröffentlichen“, die zum Dialogfeld „Veröffentlichung der Web-Anwendung“ mit der Schaltfläche Starten führt](assets/s_ncs_admin_survey_start_publ.png)
 
   Der Status der Umfrage wechselt zu: **Online**.
 
-  ![](assets/survey_published.png)
+  ![Umfrage-Dashboard mit dem Status „Online“ geändert und dem Veröffentlichungsdatum und der öffentlichen URL angezeigt](assets/survey_published.png)
 
 ## Schritt 7: Freigeben Ihrer Online-Umfrage {#step-7---sharing-your-online-survey}
 
 Sobald eine Umfrage in der Produktion veröffentlicht wurde, kann sie am Server aufgerufen und von Ihnen bereitgestellt werden. Die URL für den Zugriff auf die Umfrage wird im Dashboard angezeigt.
 
-![](assets/survey_url_from_dashboard.png)
+![Umfrage-Dashboard mit einem Pfeil, der auf das Feld Öffentliche URL der Online-Umfrage verweist](assets/survey_url_from_dashboard.png)
 
 Um die Umfrage bereitzustellen, können Sie beispielsweise eine Nachricht mit einem Zugangslink an die Zielpopulation senden oder die Zugriffs-URL auf eine Webseite stellen.
 

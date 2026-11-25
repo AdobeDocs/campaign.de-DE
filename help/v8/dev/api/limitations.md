@@ -35,9 +35,9 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1077'
 ht-degree: 1%
 ---
 # Empfehlungen und Einschränkungen {#limitations}
@@ -81,7 +81,7 @@ Vorerst sind die unten aufgeführten REST-APIs zur Verwendung verfügbar:
 
 * Um Ihre Filter in den REST-API-Payloads zu verwenden, müssen Sie sie in Campaign v8 bearbeiten und einen Namen angeben, der in Ihren Payloads verwendet werden soll. Rufen Sie dazu die zusätzlichen Parameter des Filters über die Registerkarte **[!UICONTROL Parameter]** auf und geben Sie den gewünschten Namen im Feld **[!UICONTROL Filtername in REST-API]** an.
 
-  ![](assets/api-filtering.png)
+  ![Dialogfeld „Erweiterte Parameter“ eines vordefinierten Filters, dessen Filtername im REST-API-Feld auf „byEmailNotEmpty“ festgelegt ist](assets/api-filtering.png)
 
 
 * Das Präfix „by“, das für die Verwendung benutzerdefinierter Filter erforderlich ist, wird nicht mehr benötigt. Der Filtername sollte in Ihren Anfragen unverändert verwendet werden.

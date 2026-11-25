@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f89b58e9c7a87b6526dbbf491db67109418f2006
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 82%
+source-wordcount: '2105'
+ht-degree: 80%
 ---
 # Daten-Packages{#data-packages}
 
@@ -60,7 +60,7 @@ Sie können Daten-Packages verwenden, um benutzerdefinierte Plattformeinstellung
 
 In Campaign-Datenpaketen werden Entitäten der Adobe Campaign-Datenbank in XML-Dateien angezeigt. In einem Daten-Package wird jede Entität mit allen Daten dargestellt.
 
-Auf dieser Seite werden **benutzerdefinierte** Datenpakete beschrieben, die Sie erstellen und verwalten. Die Pakete, die die Campaign-Funktionen bereitstellen **sind integrierte Pakete** die von Adobe installiert und verwaltet werden. Weitere Informationen finden [&#x200B; unter „Integrierte Pakete](../architecture/built-in-packages.md).
+Auf dieser Seite werden **benutzerdefinierte** Datenpakete beschrieben, die Sie erstellen und verwalten. Die Pakete, die die Campaign-Funktionen bereitstellen **sind integrierte Pakete** die von Adobe installiert und verwaltet werden. Weitere Informationen finden [ unter „Integrierte Pakete](../architecture/built-in-packages.md).
 
 Das Prinzip der **Daten-Packages** besteht darin, eine Datenkonfiguration zu exportieren und in eine andere Adobe Campaign-Umgebung zu integrieren. In diesem [Abschnitt](#data-package-best-practices) erfahren Sie, wie Sie einen konsistenten Satz von Daten-Packages aufrechterhalten.
 
@@ -128,7 +128,7 @@ Gehen Sie wie folgt vor, um mehrere Objekte in ein Daten-Package zu exportieren:
 1. Navigieren Sie über den Explorer-Menübefehl **[!UICONTROL Werkzeuge > Erweitert > Package-Export]** zum Package-Export-Assistenten.
 1. Wählen Sie den [Package-Typ](#types-of-packages) aus.
 
-   ![](assets/package_type.png)
+   ![Package Export Wizard with User package, Platform package and Admin package options, User package selected](assets/package_type.png)
 
 1. Klicken Sie auf die Schaltfläche **Hinzufügen**, um die Entitäten auszuwählen, die als Package exportiert werden sollen.
 
@@ -142,7 +142,7 @@ Gehen Sie wie folgt vor, um mehrere Objekte in ein Daten-Package zu exportieren:
 
    >[!NOTE]
    >
-   >Der Abfrage-Editor wird unter &quot;[&#x200B; einer Abfrage“ &#x200B;](../../automation/workflow/query.md#creating-a-query).
+   >Der Abfrage-Editor wird unter &quot;[ einer Abfrage“ ](../../automation/workflow/query.md#creating-a-query).
 
 1. Klicken Sie auf **[!UICONTROL Weiter]** und legen Sie die Sortierreihenfolge für die exportierten Daten fest.
 
@@ -241,7 +241,7 @@ Auf Package-Definitionen können Sie über das Menü **[!UICONTROL Administratio
 
 Um eine Package-Definition zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** und geben Sie die allgemeinen Informationen für die Package-Definition ein.
 
-![](assets/packagedefinition_create.png)
+![Ordner mit Paketdefinitionen mit der Schaltfläche Neu und den Feldern der Registerkarte Allgemein, Beschriftung, Name und Verteiler](assets/packagedefinition_create.png)
 
 Anschließend können Sie Entitäten zur Package-Definition hinzufügen und diese in ein XML-Datei-Package exportieren.
 
@@ -255,7 +255,7 @@ Anschließend können Sie Entitäten zur Package-Definition hinzufügen und dies
 
 Klicken Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die Entitäten auszuwählen, die mit dem Package exportiert werden sollen. Best Practices für die Auswahl von Entitäten finden Sie unter [Exportieren eines Satzes von Objekten in einem Paket](#export-a-set-of-objects-in-a-package).
 
-![](assets/packagedefinition_addentities.png)
+![Registerkarte „Inhalt“ einer Paketdefinition mit der Schaltfläche Hinzufügen , über die das Dialogfeld „Entitäten exportieren“ mit Schemata geöffnet wird](assets/packagedefinition_addentities.png)
 
 Entitäten können direkt von ihrem Speicherort in der -Instanz zu einer Paketdefinition hinzugefügt werden. Gehen Sie dazu wie folgt vor:
 
@@ -269,7 +269,7 @@ Entitäten können direkt von ihrem Speicherort in der -Instanz zu einer Paketde
 
 Die Package-Erzeugung kann über den Tab **[!UICONTROL Inhalt]** der Package-Definition konfiguriert werden. Klicken Sie dazu auf den Link **[!UICONTROL Erzeugungsparameter]**.
 
-![](assets/packagedefinition_generationparameters.png)
+![Dialogfeld „Erzeugungsparameter“ mit Definition einschließen, Installationsskript einschließen und Standardwerte einschließen](assets/packagedefinition_generationparameters.png)
 
 * Verwenden Sie die Option **[!UICONTROL Definition einschließen]**, um die aktuell verwendete Definition in die Package-Definition einzuschließen.
 * Verwenden Sie die Option **[!UICONTROL Installationsscript einschließen]**, um ein JavaScript-Skript hinzuzufügen, das beim Package-Import ausgeführt werden soll. Bei Auswahl dieser Option wird die Registerkarte **[!UICONTROL Script]** auf dem Bildschirm mit der Package-Definition hinzugefügt.
@@ -306,7 +306,7 @@ Klicken Sie auf **[!UICONTROL Weiter]** und **[!UICONTROL Starten]**, um den Imp
 
 ### Integrierte Packages {#install-a-standard-package}
 
-Adobe installiert und verwaltet die integrierten Packages in Campaign v8. Weitere Informationen finden [&#x200B; unter „Integrierte Pakete](../architecture/built-in-packages.md).
+Adobe installiert und verwaltet die integrierten Packages in Campaign v8. Weitere Informationen finden [ unter „Integrierte Pakete](../architecture/built-in-packages.md).
 
 ## Best Practices für Daten-Packages {#data-package-best-practices}
 
