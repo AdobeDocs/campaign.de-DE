@@ -26,18 +26,18 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7ae0ea8d334af5e3580b594d5ddc8b52b10fa5b6
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '2455'
-ht-degree: 10%
+source-wordcount: '2460'
+ht-degree: 12%
 ---
 # Neueste Versionen {#latest-release}
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **neuesten Campaign v8-Versionen** (Konsole) aufgelistet. Weitere Informationen zu Campaign-Versionen und -Upgrades finden Sie auf [dieser Seite](upgrades.md). Weitere Versionen sind im Abschnitt „Frühere Versionen“ dieser Dokumentation aufgeführt.
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **neuesten Campaign v8-Versionen** (Konsole) aufgelistet. Erfahren Sie mehr über Campaign-Versionen, -Versionen und -Upgrades in [Campaign-Versionen, -Upgrades und -Sicherheit](upgrades.md). Weitere Versionen sind im Abschnitt „Frühere Versionen“ dieser Dokumentation aufgeführt.
 
 ## Version 8.9.4 {#release-8-9-4}
 
-_15. Oktober 2026_
+_15. Oktober 2026_
 
 ### Verbesserungen {#improvements-8-9-4}
 
@@ -55,17 +55,17 @@ _15. Oktober 2026_
 * Fehlerkorrektur - Die Versandvorbereitung für Snowflake- oder FFDA-Ziele für externe Dateien, die keine Profilzuordnung verwenden, schlägt jetzt nicht mehr fehl. (NEO-96507)
 * Es wurde ein Problem behoben, bei dem Workflows, die mehrere Abfragen enthalten, die mit verschiedenen FDA-Quellen verknüpft sind, fehlschlagen konnten. (NEO-97249)
 * Fehlerkorrektur - Workflows mit der nahezu Echtzeitanreicherung schlagen jetzt nicht mehr mit SQL-Fehlern fehl, wenn die Verarbeitung von Ereignissen zeitnah ausgelöst wird. (NEO-97557)
-* Es wurde ein Problem behoben, bei dem ein interner Sperrmechanismus in eine Wiederholungsschleife eintreten und eine hohe CPU-Nutzung auf dem Server verursachen konnte. (NEO-94845)
+* Es wurde ein Problem behoben, bei dem ein interner Sperrmechanismus eine Wiederholungsschleife starten und eine hohe CPU-Auslastung auf dem Server verursachen konnte. (NEO-94845)
 * Fehlerkorrektur - Die Versandvorbereitung schlägt jetzt nicht mehr mit einem SQL-Fehler fehl, wenn Testadressen zusammen mit einem benutzerdefinierten Zielgruppen-Mapping verwendet werden. (NEO-94966)
 * Fehlerkorrektur - FDA-Workflows schlagen beim Laden von Daten in Redshift nicht mehr mit einem Spaltenüberlauf-Fehler fehl. (NEO-96125)
-* Fehlerkorrektur - Das externe Analytics-Konto schlägt jetzt nicht mehr mit dem Fehler „Gone“ (410) fehl. (NEO-99019)
-* Es wurde ein Problem behoben, bei dem einige Sendungen im Status Personalisierung ausstehend bleiben konnten, obwohl die entsprechenden Nachrichten erfolgreich gesendet wurden. (NEO-94471)
+* Es wurde ein Problem behoben, bei dem das externe Analytics-Konto möglicherweise mit dem Fehler „Entfernt“ (410) fehlschlug. (NEO-99019)
+* Es wurde ein Problem behoben, bei dem einige Sendungen im Status „Personalisierung ausstehend“ möglicherweise hängen blieben, obwohl die entsprechenden Nachrichten erfolgreich gesendet wurden. (NEO-94471)
 
 ## Version 8.9.3 {#release-8-9-3}
 
 _11. August 2026_
 
-### Verbesserungen bezüglich der Sicherheit {#security-8-9-3}
+### Sicherheitsverbesserungen {#security-8-9-3}
 
 Diese Version enthält Sicherheitskorrekturen, die den Sicherheitszustand Ihrer Campaign-Umgebung insgesamt verbessern. Als gehosteter Kunde werden diese Fehlerbehebungen von Adobe im Rahmen des Upgrades angewendet, ohne dass Maßnahmen Ihrerseits erforderlich sind.
 
@@ -77,7 +77,7 @@ Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste exter
 
 ### Adobe Analytics-Connector auf Analytics 2.0-API aktualisiert {#analytics-2-0-8-9-3}
 
-Adobe Analytics 1.4-APIs [&#x200B; das Ende des Lebenszyklus erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"} daher wurde der [Web Analytics-Connector](../connect/ac-aa.md) im Rahmen dieser Version auf die Analytics 2.0-API aktualisiert. Als gehosteter Kunde übernimmt Adobe diese Migration für Sie - es ist keine Konfiguration auf Ihrer Seite erforderlich.
+Adobe Analytics 1.4-APIs [ das Ende des Lebenszyklus erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"} daher wurde der [Web Analytics-Connector](../connect/ac-aa.md) im Rahmen dieser Version auf die Analytics 2.0-API aktualisiert. Als gehosteter Kunde übernimmt Adobe diese Migration für Sie - es ist keine Konfiguration auf Ihrer Seite erforderlich.
 
 +++ Weitere Informationen zum Upgrade auf Analytics 2.0
 
@@ -142,8 +142,8 @@ _27. Januar 2026_
 
 ### Verbesserungen bezüglich der Sicherheit {#security-8-9-1}
 
-* Externe Snowflake-Konten unterstützen jetzt die OAuth2-Authentifizierung und bieten moderne und sichere Authentifizierungsmethoden für Federated Data Access-Verbindungen. (NEO-87013) [Mehr dazu](../config/external-accounts.md#snowflake-external-accounts)
-* Externe Databricks-Konten unterstützen jetzt die OAuth2-Authentifizierung über den Service-Prinzipal (nicht interaktiver Fluss der Client-Anmeldeinformationen) und bieten sichere Authentifizierungsmethoden für Federated Data Access-Verbindungen. Die interaktive OAuth2-Authentifizierung wird in einer zukünftigen Version verfügbar sein. (NEO-87422) [Mehr dazu](../config/external-accounts.md#databricks-external-accounts)
+* Externe Snowflake-Konten unterstützen jetzt die OAuth2-Authentifizierung und bieten moderne und sichere Authentifizierungsmethoden für Federated Data Access-Verbindungen. (NEO-87013) [Externes Snowflake-Konto](../config/external-accounts.md#snowflake-external-accounts)
+* Externe Databricks-Konten unterstützen jetzt die OAuth2-Authentifizierung über den Service-Prinzipal (nicht interaktiver Fluss der Client-Anmeldeinformationen) und bieten sichere Authentifizierungsmethoden für Federated Data Access-Verbindungen. Die interaktive OAuth2-Authentifizierung wird in einer zukünftigen Version verfügbar sein. (NEO-87422) [Externes Datenbricks-Konto](../config/external-accounts.md#databricks-external-accounts)
 * Fehlerkorrektur - Der Zugriff auf Workflow-Dateien erfolgt jetzt fehlerfrei, indem Vorgänge auf autorisierte Verzeichnisse beschränkt werden. Dadurch wird ein nicht autorisierter Zugriff und eine potenzielle Ausführung von Remote-Code verhindert. (NEO-88460)
 * Es wurden Steuerelemente zur FTP-URL-Zulassungsauflistung zu Workflow-JavaScript-Code-Aktivitäten hinzugefügt, wodurch ausgehende FTP-Verbindungen auf autorisierte Adressen beschränkt werden. (NEO-89083)
 * Es wurde ein Sicherheitsproblem behoben, das zu einer Diensteverweigerung führen konnte. (NEO-89984)
@@ -154,14 +154,14 @@ Der **neue SMS-**-Connector) ist jetzt für alle Kunden (GA) verfügbar. Weiterf
 
 Diese Version enthält eine Reihe von Funktionen, die in der Web-Benutzeroberfläche von Campaign verfügbar sind:
 
-* [Mehrsprachige Versandfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=de){target="_blank"}
-* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=de){target="_blank"}
-* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=de){target="_blank"}
-* [Inhaltsexperimente – A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=de){target="_blank"}
-* [Aktivität „Versand (fortlaufend)“](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=de){target="_blank"}
-* [Verwaltung der Kampagnenvalidierung](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=de){target="_blank"}
+* [Mehrsprachige Versandfunktionen (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [Profilanreicherung in Transaktionsnachrichten (GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager Live Copies und Sprachkopien](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [Inhaltsexperimente – A/B-Tests](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [Aktivität „Versand (fortlaufend)“](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [Verwaltung der Kampagnenvalidierung](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
-Weitere Informationen finden Sie in den Versionshinweisen zur [&#x200B; Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
+Weitere Informationen finden Sie in den Versionshinweisen zur [ Web-Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=de){target="_blank"}
 
 ### Sonstige Änderungen {#changes-8-9-1}
 

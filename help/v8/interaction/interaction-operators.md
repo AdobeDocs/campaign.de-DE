@@ -27,14 +27,14 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 96%
+source-wordcount: '274'
+ht-degree: 89%
 ---
 # Benutzerprofile {#operator-profiles}
 
-Zwei Typen von Benutzern können Campaign Interaction verwenden: **Angebotsverantwortliche** und **Versandverantwortliche**. Jeder dieser Benutzertypen verfügt über spezifische Berechtigungen und Einschränkungen. Weitere Informationen zu Campaign-Benutzern und -Berechtigungen finden Sie auf [dieser Seite](../start/gs-permissions.md).
+Zwei Typen von Benutzern können Campaign Interaction verwenden: **Angebotsverantwortliche** und **Versandverantwortliche**. Jeder dieser Benutzertypen verfügt über spezifische Berechtigungen und Einschränkungen. Weitere Informationen zu Campaign-Benutzern und -Berechtigungen finden Sie unter [Erste Schritte mit Berechtigungen in Campaign v8](../start/gs-permissions.md).
 
 * **[!UICONTROL Angebotsverantwortlicher]**: erstellt und verwaltet Angebote
 * **[!UICONTROL Versandverantwortlicher]**: validiert und verwendet Angebote
@@ -44,7 +44,7 @@ Zwei Typen von Benutzern können Campaign Interaction verwenden: **Angebotsveran
 1. Erstellen Sie einen Benutzer. [Weitere Informationen](../start/manage-permissions.md#add-users)
 1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Angebotsverantwortliche Benutzer]** aus.
 
-Die mit Angebotsverantwortlichen verknüpften Berechtigungen werden [hier](../start/manage-permissions.md#ootb-productprofiles) beschrieben.
+Die mit Angebotsverantwortlichen verknüpften Berechtigungen werden beschrieben [Standardproduktprofile und Benutzergruppen](../start/manage-permissions.md#ootb-productprofiles).
 
 ## Erstellen eines versandverantwortlichen Benutzers {#delivery-manager}
 

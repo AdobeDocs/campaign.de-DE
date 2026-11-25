@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 78%
+source-wordcount: '353'
+ht-degree: 73%
 ---
 # Erste Schritte mit dem Campaign-HTML-Editor{#about-campaign-html-editor}
 
@@ -74,7 +74,7 @@ Um eine einfache **Web-Anwendung** zu erstellen, müssen Sie folgende Schritte a
 
 >[!NOTE]
 >
->Ein vollständiges Implementierungsbeispiel im Kontext einer Web-Anwendung finden Sie in [diesem Abschnitt](creating-a-landing-page.md).
+>Ein vollständiges Implementierungsbeispiel im Kontext einer Web-Anwendung finden Sie unter [Erstellen einer Landingpage](creating-a-landing-page.md).
 
 Um einen **E-Mail-Versand** zu erstellen, müssen Sie folgende Schritte ausführen:
 

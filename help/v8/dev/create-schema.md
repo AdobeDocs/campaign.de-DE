@@ -34,10 +34,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 97%
 ---
 # Erstellen eines neuen Schemas {#create-new-schema}
 
@@ -140,4 +140,4 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
 
    ![](assets/configuration_structure.png)
 
-1. Aktualisieren Sie die Datenbankstruktur, um die Tabelle zu erstellen, mit der das Schema verknüpft werden soll. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](update-database-structure.md).
+1. Aktualisieren Sie die Datenbankstruktur, um die Tabelle zu erstellen, mit der das Schema verknüpft werden soll. Weitere Informationen hierzu finden Sie unter [Datenbankstruktur aktualisieren](update-database-structure.md).

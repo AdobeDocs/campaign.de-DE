@@ -49,9 +49,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3530'
+source-wordcount: '3532'
 ht-degree: 73%
 ---
 # Ursachen für das Fehlschlagen von Sendungen {#delivery-failures}
@@ -159,7 +159,7 @@ Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des MTA war und nicht g
 
 Eine Nachricht kann vor dem Ende ihres Gültigkeitszeitraums ablaufen, wenn der nächste erneute Versuch nach der Ablaufzeit fallen würde. Das Versandprotokoll zeigt dann den Fehler des letzten Versandversuchs an.
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=de#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## E-Mail-Fehlertypen {#email-error-types}
@@ -714,7 +714,7 @@ Bevor ein neuer Fehlertyp qualifiziert wird, wird der Fehlergrund immer standard
 
 Beispiel einer generierten Nachricht:
 
-```
+```text
 SR Generic DELIVRD 000|#MESSAGE#
 ```
 
@@ -750,7 +750,7 @@ Versandlogs sind der Schlüssel zu den Ursachen für fehlgeschlagene Sendungen. 
 
 Bei Empfängernachrichten wird eine &quot;Unerreichbar&quot;-Fehlermeldung mit folgenden Informationen angezeigt:
 
-```
+```text
 Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
 ```
 
@@ -758,13 +758,13 @@ Error while compiling script 'content htmlContent' line X: `[table]` is not defi
 
 **Lösung**: Überprüfen Sie den Workflow und den Versandinhalt, um genau zu bestimmen, welche Personalisierung versucht, die betreffende Tabelle aufzurufen. Entfernen Sie dann entweder den Aufruf dieser Tabelle im HTML oder korrigieren Sie die Zuordnung zum Versand.
 
-Weitere Informationen zur Personalisierung finden [&#x200B; in diesem Abschnitt &#x200B;](personalize.md).
+Weitere Informationen zur Personalisierung finden Sie unter [Erste Schritte mit der Personalisierung](personalize.md).
 
 ### Fehler bei mehreren Personalisierungswerten {#multiple-values-error}
 
 Wenn ein Versand fehlschlägt, kann der folgende Fehler in den Versandlogs angezeigt werden:
 
-```
+```text
 DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
 ```
 
@@ -776,7 +776,7 @@ DLV-XXXX The count of message prepared (123) is greater than the number of messa
 
 Einige Sendungen können mit dem Fehler „Unerreichbar“ fehlschlagen, der Folgendes angibt:
 
-```
+```text
 Inbound email bounce (rule 'Auto_replies' has matched this bounce).
 ```
 

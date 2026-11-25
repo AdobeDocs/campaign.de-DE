@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f89b58e9c7a87b6526dbbf491db67109418f2006
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 84%
+source-wordcount: '2042'
+ht-degree: 82%
 ---
 # Daten-Packages{#data-packages}
 
@@ -60,7 +60,7 @@ Sie können Daten-Packages verwenden, um benutzerdefinierte Plattformeinstellung
 
 In Campaign-Datenpaketen werden Entitäten der Adobe Campaign-Datenbank in XML-Dateien angezeigt. In einem Daten-Package wird jede Entität mit allen Daten dargestellt.
 
-Auf dieser Seite werden **benutzerdefinierte** Datenpakete beschrieben, die Sie erstellen und verwalten. Die Pakete, die die Campaign-Funktionen bereitstellen **sind integrierte Pakete** die von Adobe installiert und verwaltet werden. Weitere Informationen finden [&#x200B; unter „Integrierte Pakete](../architecture/built-in-packages.md).
+Auf dieser Seite werden **benutzerdefinierte** Datenpakete beschrieben, die Sie erstellen und verwalten. Die Pakete, die die Campaign-Funktionen bereitstellen **sind integrierte Pakete** die von Adobe installiert und verwaltet werden. Weitere Informationen finden [ unter „Integrierte Pakete](../architecture/built-in-packages.md).
 
 Das Prinzip der **Daten-Packages** besteht darin, eine Datenkonfiguration zu exportieren und in eine andere Adobe Campaign-Umgebung zu integrieren. In diesem [Abschnitt](#data-package-best-practices) erfahren Sie, wie Sie einen konsistenten Satz von Daten-Packages aufrechterhalten.
 
@@ -142,7 +142,7 @@ Gehen Sie wie folgt vor, um mehrere Objekte in ein Daten-Package zu exportieren:
 
    >[!NOTE]
    >
-   >Der Abfrage-Editor wird in [diesem Abschnitt](../../automation/workflow/query.md) beschrieben.
+   >Der Abfrage-Editor wird unter &quot;[ einer Abfrage“ ](../../automation/workflow/query.md#creating-a-query).
 
 1. Klicken Sie auf **[!UICONTROL Weiter]** und legen Sie die Sortierreihenfolge für die exportierten Daten fest.
 
@@ -159,7 +159,7 @@ Der Exportvorgang verfolgt die Relationen zwischen den verschiedenen exportierte
 
 >[!NOTE]
 >
->Mit Schemaelementen verknüpfte Integritätstypen werden auf [dieser Seite](database-links.md) definiert.
+>Integritätstypen, die mit Schemaelementen verknüpft sind, werden unter [Verknüpfungsverwaltung in Campaign-Schemata](database-links.md) definiert.
 
 #### Exportieren von Kampagnen {#export-a-campaign}
 
@@ -253,7 +253,7 @@ Anschließend können Sie Entitäten zur Package-Definition hinzufügen und dies
 
 ### Entitäten zu einer Package-Definition hinzufügen {#add-entities-to-a-package-definition}
 
-Klicken Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die Entitäten auszuwählen, die mit dem Package exportiert werden sollen. Best Practices für die Auswahl von Entitäten finden Sie in [diesem Abschnitt](#export-a-set-of-objects-in-a-package).
+Klicken Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die Entitäten auszuwählen, die mit dem Package exportiert werden sollen. Best Practices für die Auswahl von Entitäten finden Sie unter [Exportieren eines Satzes von Objekten in einem Paket](#export-a-set-of-objects-in-a-package).
 
 ![](assets/packagedefinition_addentities.png)
 
@@ -263,7 +263,7 @@ Entitäten können direkt von ihrem Speicherort in der -Instanz zu einer Paketde
 
 1. Wählen Sie **[!UICONTROL Einer Package-Definition hinzufügen]** und anschließend die Package-Definition, zu der Sie die Entität hinzufügen möchten.
 
-1. Die Entität wird der Paketdefinition hinzugefügt und mit dem Paket exportiert (siehe [diesen Abschnitt](#export-packages-from-a-package-definition)).
+1. Die Entität wird der Paketdefinition hinzugefügt und mit dem Paket exportiert (siehe [Exportieren von Paketen aus einer Paketdefinition](#export-packages-from-a-package-definition))
 
 ### Erzeugung von Package-Definitionen konfigurieren {#configure-package-definitions-generation}
 
@@ -306,7 +306,7 @@ Klicken Sie auf **[!UICONTROL Weiter]** und **[!UICONTROL Starten]**, um den Imp
 
 ### Integrierte Packages {#install-a-standard-package}
 
-Adobe installiert und verwaltet die integrierten Packages in Campaign v8. Weitere Informationen finden [&#x200B; unter „Integrierte Pakete](../architecture/built-in-packages.md).
+Adobe installiert und verwaltet die integrierten Packages in Campaign v8. Weitere Informationen finden [ unter „Integrierte Pakete](../architecture/built-in-packages.md).
 
 ## Best Practices für Daten-Packages {#data-package-best-practices}
 

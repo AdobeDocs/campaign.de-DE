@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Data quality
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 57%
@@ -44,7 +44,7 @@ Der [Inbox Rendering-Bericht](inbox-rendering.md) ermöglicht die Vorschau Ihrer
 
 ### Versanddurchsatz {#throughput-reports}
 
-Der **[!UICONTROL Versanddurchsatz]**-Bericht bietet einen Überblick über den Durchsatz der gesamten Plattform für einen bestimmten Zeitraum. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../reporting/global-reports.md#delivery-throughput).
+Der **[!UICONTROL Versanddurchsatz]**-Bericht bietet einen Überblick über den Durchsatz der gesamten Plattform für einen bestimmten Zeitraum. Weitere Informationen finden Sie unter [Versanddurchsatz](../reporting/global-reports.md#delivery-throughput).
 
 ### Broadcast-Statistiken {#broadcast-statistics}
 
@@ -96,7 +96,7 @@ Prüfen Sie regelmäßig, ob das [Bounce](delivery-failures.md#bounce-mail-quali
 
 ### Leistungsprüfungen beim Versand
 
-Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [&#x200B; Versand-Dashboard](delivery-dashboard.md) abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
+Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [ Versand-Dashboard](delivery-dashboard.md) abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
 
 ### Validierung des zeitlichen Verlaufs einer Welle
 

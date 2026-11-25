@@ -31,10 +31,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 95%
+source-wordcount: '1040'
+ht-degree: 94%
 ---
 # Anwendungsbeispiele: Übersichten erstellen{#use-cases-creating-overviews}
 
@@ -148,7 +148,7 @@ Wenn Sie in der Übersicht eine Liste konfigurieren, können Sie für jeden Eint
 
 1. Fügen Sie im Tab **[!UICONTROL Zusätzliches Detail]** den folgenden Code hinzu:
 
-   ```
+   ```html
    <div class="detailBox">
      <div class="actionBox">
        <span class="action"><img src="/xtk/img/fileEdit.png"/><a title="Open" class="linkAction" href="xtk://open/?schema=nms:webApp&form=nms:webApp&pk=
@@ -194,7 +194,7 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   Weiterführende Informationen zum Layout von Elementen erfahren Sie in [diesem Abschnitt](about-web-forms.md).
+   Informationen zum Element-Layout finden Sie unter [Erste Schritte mit Web-Formularen](about-web-forms.md).
 
 1. Wenden Sie **dottedFilter** an.
 

@@ -22,16 +22,16 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 95%
+source-wordcount: '947'
+ht-degree: 90%
 ---
 # Erfasste Daten veröffentlichen, tracken und verwenden{#publish-track-and-use-collected-data}
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
 
 
 
@@ -39,7 +39,7 @@ Nachdem das Formular erstellt, konfiguriert und veröffentlicht wurde, können S
 
 >[!NOTE]
 >
->Der Lebenszyklus einer Umfrage in Adobe Campaign sowie ihre Veröffentlichungs- und Versandmodi sind ähnlich jenen von Webformularen: Diese werden in [diesem Abschnitt](../web/about-web-forms.md) beschrieben.
+>Der Lebenszyklus einer Umfrage in Adobe Campaign sowie die Veröffentlichungs- und Bereitstellungsmodi ähneln denen von Web-Formularen: Sie werden in [Erste Schritte mit Web-Formularen](../web/about-web-forms.md) beschrieben.
 
 ## Umfrage-Dashboard {#survey-dashboard}
 
@@ -63,13 +63,13 @@ Doppelklicken Sie auf eine Zeile, um das Umfrageformular so anzuzeigen, wie es v
 
 Die Herkunft wird in der Umfrage-URL durch Hinzufügen folgender Buchstaben gekennzeichnet:
 
-```
+```text
 ?origin=xxx
 ```
 
 Während der Bearbeitung der Umfrage enthält die URL den Parameter **[!UICONTROL __uuid]**, der darauf hinweist, dass sich die Umfrage in einer Testphase befindet und noch nicht online ist. Wenn Sie über diese URL auf die Umfrage zugreifen, werden die erstellten Einträge in den Tracking-Berichten nicht berücksichtigt. Für die Herkunft wird der Wert **[!UICONTROL Adobe Campaign]** übernommen.
 
-Weiterführende Informationen zu URL-Parametern finden Sie auf [dieser Seite](../web/defining-web-forms-properties.md#form-url-parameters).
+Weitere Informationen zu URL-Parametern finden Sie unter [Formular-URL-Parameter](../web/defining-web-forms-properties.md#form-url-parameters).
 
 ### Berichte zu Umfragen {#reports-on-surveys}
 
@@ -103,7 +103,7 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
 
    Um Berichtsdaten zu exportieren, wählen Sie die Schaltfläche **[!UICONTROL Exportieren]** und danach das Exportformat aus.
 
-   Weiterführende Informationen zum Exportieren von Berichtdaten finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
+   Weiterführende Informationen zum Exportieren von Berichtdaten finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}.
 
 1. Antworten exportieren
 

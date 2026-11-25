@@ -17,10 +17,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 97%
+source-wordcount: '782'
+ht-degree: 95%
 ---
 # Steuern der Nachrichteninhalte{#control-message-content}
 
@@ -52,7 +52,7 @@ Weitere Informationen zur Bestimmung der Absenderadresse finden Sie auf dieser [
 
 Um das Nutzererlebnis zu verbessern und Empfängerinnen und Empfänger dazu zu bewegen, Ihre E-Mail zu öffnen, ermöglicht Adobe Campaign Ihnen, Ihre Nachrichten zu personalisieren.
 
-Weitere Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campaign finden Sie in [diesem Abschnitt](personalization-fields.md).
+Weitere Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campaign finden Sie unter [Hinzufügen von Personalisierungsfeldern](personalization-fields.md).
 
 ## Ausschluss-Link und -Formular {#opt-out}
 

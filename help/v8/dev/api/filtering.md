@@ -18,16 +18,16 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 94%
+ht-degree: 92%
 ---
 # Filter {#filtering}
 
 ## Abrufen von Filtermetadaten
 
-Für jede Ressource stehen Filter zur Verfügung. Um die mit einer Ressource verknüpften Filter zu ermitteln, müssen Sie eine GET-Anfrage für die Metadaten der Ressource durchführen. Die Anfrage gibt die URL zurück, unter der alle Filter für eine bestimmte Ressource definiert sind. Weiterführende Informationen zu Metadaten finden Sie in [diesem Abschnitt](metadata-mechanism.md).
+Für jede Ressource stehen Filter zur Verfügung. Um die mit einer Ressource verknüpften Filter zu ermitteln, müssen Sie eine GET-Anfrage für die Metadaten der Ressource durchführen. Die Anfrage gibt die URL zurück, unter der alle Filter für eine bestimmte Ressource definiert sind. Weitere Informationen zu Metadaten finden Sie unter [Metadatenmechanismus](metadata-mechanism.md).
 
 Um die Metadaten eines Filters und die jeweilige Verwendungsweise zu ermitteln, müssen Sie eine GET-Anfrage für die zuvor zurückgegebene URL durchführen.
 
@@ -37,7 +37,7 @@ Um die Metadaten eines Filters und die jeweilige Verwendungsweise zu ermitteln, 
 
 Die folgenden beispielhaften Payloads zeigen, wie die &quot;byText&quot;-Filtermetadaten für die &quot;Profil&quot;-Ressource abgerufen werden. Führen Sie zunächst eine GET-Anfrage zu den Ressourcenmetadaten „Profil“ aus.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -47,7 +47,7 @@ Die folgenden beispielhaften Payloads zeigen, wie die &quot;byText&quot;-Filterm
 
 Diese gibt die URL zurück, unter der die Filter beschrieben werden.
 
-```
+```json
 {
 "filters": {
         "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/<PKEY>/filters/"
@@ -57,7 +57,7 @@ Diese gibt die URL zurück, unter der die Filter beschrieben werden.
 
 Führen Sie eine GET-Anfrage für die URL aus. Sie erhalten eine Liste der Filter für die Ressource &quot;Profil&quot; mit den jedem Filter zugeordneten Metadaten.
 
-```
+```json
 {
 "birthday": {
         "PKey": "@FL-CbDFXbnHbXcVpeCGWL46VXJLn1LqxLMPagt2vz8sCxQ52lvB15KiUaxXkxJYQw-tZXYrgUWG6K8QcB4gxVY9RKoba5bRFY3294YFshDmorRr8",
@@ -83,7 +83,7 @@ Jeder Filter weist dieselbe Metadatenstruktur auf:
 
 Beispiel für die Metadatenstruktur:
 
-```
+```json
 "byText": {
         "PKey": "...",
         "category": "99_none",
@@ -111,7 +111,7 @@ Es ist möglich, mehrere Filter in einer einzigen Anfrage zu kombinieren:
 
 * Beispielhafte GET-Anfrage zum Abrufen der &quot;Dienst&quot;-Ressourcen mit dem Typ &quot;email&quot;.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=email \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -121,7 +121,7 @@ Es ist möglich, mehrere Filter in einer einzigen Anfrage zu kombinieren:
 
   Antwort auf die Anfrage.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -144,7 +144,7 @@ Es ist möglich, mehrere Filter in einer einzigen Anfrage zu kombinieren:
 * Beispiel einer GET-Anfrage zum Abrufen der „Profil“-Ressourcen, die „Mustermann“
 in den Feldern „E-Mail“ oder „Nachname“ enthalten (der Filter „byText“ sucht sowohl im Feld „E-Mail“ als auch im Feld „Nachname“).
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=Doe \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -154,7 +154,7 @@ in den Feldern „E-Mail“ oder „Nachname“ enthalten (der Filter „byText�
 
   Antwort auf die Anfrage.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -172,7 +172,7 @@ in den Feldern „E-Mail“ oder „Nachname“ enthalten (der Filter „byText�
 
 * Beispielhafte GET-Anfrage zum Abrufen der Service-Ressourcen mit dem Typ „email“ und der Bezeichnung „sport“.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/byText?channel=email&text=sport \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -182,7 +182,7 @@ in den Feldern „E-Mail“ oder „Nachname“ enthalten (der Filter „byText�
 
   Antwort auf die Anfrage.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -219,7 +219,7 @@ Weiterführende Informationen finden Sie in der Campaign Standard-Dokumentation
 
 Beispielhafte GET-Anfrage zum Abrufen der &quot;Profil&quot;-Ressourcen mit Transaktionsbeträgen von 100 $ oder mehr. Beachten Sie, dass der Filter &quot;byAmount&quot; zunächst in der Benutzeroberfläche von Adobe Campaign Standard definiert und mit der benutzerdefinierten Tabelle &quot;Transaction&quot; verknüpft wurde.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/byAmount?amount_parameter=100 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \

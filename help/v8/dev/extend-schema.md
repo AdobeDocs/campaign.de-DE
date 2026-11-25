@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '283'
+ht-degree: 87%
 ---
 # Schema erweitern{#extend-schemas}
 
@@ -54,7 +54,7 @@ Die wichtigsten Schritte zum Anpassen des Campaign-Datenmodells sind:
 >[!CAUTION]
 >Das integrierte Schema darf nicht direkt geändert werden. Wenn Sie ein integriertes Schema anpassen möchten, müssen Sie es erweitern.
 
-Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie auf [dieser Seite](datamodel.md). Siehe auch Empfehlungen zum Erstellen eines neuen Schemas auf [dieser Seite](create-schema.md).
+Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie unter [Erste Schritte mit dem Campaign-Datenmodell](datamodel.md). Siehe auch Empfehlungen zum Erstellen eines neuen Schemas in [Neues Schema in Campaign erstellen](create-schema.md).
 
 Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
@@ -79,7 +79,7 @@ Gehen Sie wie folgt vor, um ein Schema zu erweitern:
 
    ![](assets/extend-schema-sample.png)
 
-   ```
+   ```xml
    <srcSchema created="YYYY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
            img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YYYY-MM-DD"
            mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">

@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 95%
+source-wordcount: '654'
+ht-degree: 92%
 ---
 # Quellen von Personalisierungsdaten{#personalization-data}
 
@@ -53,7 +53,7 @@ Um die Datei auszuwählen, die als Datenquelle verwendet werden soll, klicken Si
 
 Personalisierungsdaten können über [Federated Data Access](../connect/fda.md) aus einer externen Tabelle extrahiert werden.  Wenn Sie Ihre Sendungen mithilfe von Daten aus der externen Datenbank personalisieren möchten, sammeln Sie die Daten zur Verwendung in einem Workflow, um sie in einer temporären Tabelle zur Verfügung zu stellen.
 
-Fügen Sie dazu eine **Abfrage**-Aktivität im Zielgruppenbestimmungs-Workflow hinzu und verwenden Sie den Link **Daten hinzufügen...**, um die externe Datenbank auszuwählen. Der detaillierte Prozess ist in [diesem Abschnitt](../../automation/workflow/query.md#adding-data) verfügbar.
+Fügen Sie dazu eine **Abfrage**-Aktivität im Zielgruppenbestimmungs-Workflow hinzu und verwenden Sie den Link **Daten hinzufügen...**, um die externe Datenbank auszuwählen. Der detaillierte Prozess ist unter [Daten hinzufügen](../../automation/workflow/query.md#adding-data) verfügbar.
 
 Verwenden Sie dann die Daten aus der temporären Tabelle, um Ihren Versand zu personalisieren. Wenn die Abfrageaktivität konfiguriert ist, greifen Sie über den Eintrag **Erweiterung des Zieldatensatzes** in den Personalisierungsoptionen auf die externen Daten zu.
 
@@ -87,4 +87,4 @@ Gehen Sie nach dem Abschluss der Analyse zu den **[!UICONTROL Eigenschaften]** d
 
 Wenn ein Versand im Kontext eines Workflows erstellt wird, können Sie die Daten aus der temporären Workflow-Tabelle verwenden. Die in der temporären Arbeitstabelle des Workflows gespeicherten Daten stehen für Personalisierungsaufgaben zur Verfügung. Daten können in Personalisierungsfeldern verwendet werden.
 
-Diese Daten werden im Menü **[!UICONTROL Erweiterung des Zieldatensatzes]** gruppiert. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../automation/workflow/use-workflow-data.md#target-data).
+Diese Daten werden im Menü **[!UICONTROL Erweiterung des Zieldatensatzes]** gruppiert. Weitere Informationen hierzu finden Sie unter [Nutzen von Zieldaten](../../automation/workflow/use-workflow-data.md#target-data).

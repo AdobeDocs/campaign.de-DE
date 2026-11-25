@@ -24,16 +24,16 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 94%
+source-wordcount: '639'
+ht-degree: 92%
 ---
 # Einstellungen für Transaktionsnachrichten {#mc-settings}
 
-Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwalten von Trigger-Nachrichten entwickelt. Weitere Informationen zu Transaktionsnachrichten finden Sie in [diesem Abschnitt](../send/transactional.md).
+Das Campaign-Modul „Transaktionsnachricht (Message Center)“ wurde zum Verwalten von Trigger-Nachrichten entwickelt. Erfahren Sie mehr über Transaktionsnachrichten in [Campaign-Transaktionsnachrichten](../send/transactional.md).
 
-[Diese Seite](../architecture/architecture.md#transac-msg-archi) hilft Ihnen, die Architektur der Transaktionsnachrichten zu verstehen.
+Grundlegendes zur Transaktionsnachrichten-Architektur in [Message Center-Architektur](../architecture/architecture.md#transac-msg-archi).
 
 
 >[!NOTE]
@@ -82,7 +82,7 @@ Nachfolgend finden Sie ein Beispiel für eine Ereigniskonfiguration zum Senden v
                 <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
-                    <url>http://www.adobe.com/de</url>
+                    <url>http://www.adobe.com</url>
                 </ctx>
               </rtEvent>
 

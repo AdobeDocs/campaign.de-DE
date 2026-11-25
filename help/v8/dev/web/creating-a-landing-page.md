@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 93%
+source-wordcount: '843'
+ht-degree: 91%
 ---
 # Erstellen einer Landingpage{#creating-a-landing-page}
 
@@ -73,7 +73,7 @@ Sie erhalten dann die folgende Sequenzierung:
 
 >[!NOTE]
 >
->Weiterführende Informationen zur Erstellung einer Webanwendung finden Sie in [diesem Abschnitt](creating-a-new-web-application.md).
+>Weitere Informationen zum Erstellen einer Web-Anwendung finden Sie unter [Erstellen einer neuen Web-Anwendung](creating-a-new-web-application.md).
 
 ## Schritt 1: Auswählen und Laden von Vorlagen {#step-1---selecting-and-loading-templates}
 

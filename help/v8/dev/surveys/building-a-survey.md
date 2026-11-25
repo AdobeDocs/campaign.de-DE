@@ -15,16 +15,16 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 98%
+source-wordcount: '839'
+ht-degree: 95%
 ---
 # Umfrage entwerfen{#building-a-survey}
 
 >[!AVAILABILITY]
 >
->Für Campaign-FFDA[Bereitstellungen sind keine Umfragen &#x200B;](../../architecture/enterprise-deployment.md).
+>Für Campaign-FFDA[Bereitstellungen sind keine Umfragen ](../../architecture/enterprise-deployment.md).
 
 
 
@@ -65,13 +65,13 @@ Wenn Sie einer Umfrage ein Feld hinzufügen, müssen Sie den Typ auswählen. Fol
 
    >[!NOTE]
    >
-   >Speichermodi und Feldimporte werden in [diesem Abschnitt](managing-answers.md#storing-collected-answers) beschrieben.
+   >Speichermodi und Feldimporte werden unter &quot;[ Antworten speichern“ ](managing-answers.md#storing-collected-answers).
 
 Die Art des hinzuzufügenden Felds (Dropdown-Liste, Textfeld, Kontrollkästchen usw.) hängt vom ausgewählten Speichermodus ab. Der Feldtyp kann im Feld **[!UICONTROL Typ]** auf der Registerkarte **[!UICONTROL Allgemein]** geändert werden. Achten Sie dabei aber darauf, dass der Feldtyp zum Datentyp passt.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-Die unterschiedlichen Typen verfügbarer Felder werden in [diesem Abschnitt](../web/about-web-forms.md) beschrieben.
+Die verschiedenen verfügbaren Feldtypen werden unter „Erste [ mit Web-Formularen“ ](../web/about-web-forms.md).
 
 ## Elemente einer Umfrage {#survey-specific-elements}
 

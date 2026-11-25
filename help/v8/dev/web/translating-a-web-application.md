@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 93%
+source-wordcount: '378'
+ht-degree: 91%
 ---
 # Übersetzen eines Web-Programms{#translating-a-web-application}
 
@@ -36,7 +36,7 @@ Wählen Sie mindestens eine weitere Sprache im Tab **[!UICONTROL Lokalisierung]*
 
 Mit dieser Option können Sie angeben, ob der Inhaltsbaustein übersetzt werden muss oder nicht.
 
-Zu übersetzende Strings werden auf dieselbe Weise erfasst wie die anderen Strings der Webanwendung, nämlich über den Tab der Anwendung **[!UICONTROL Übersetzungen]**. Weitere Informationen hierzu finden Sie auf [dieser Seite](translating-a-web-form.md).
+Zu übersetzende Strings werden auf dieselbe Weise erfasst wie die anderen Strings der Webanwendung, nämlich über den Tab der Anwendung **[!UICONTROL Übersetzungen]**. Weitere Informationen hierzu finden Sie unter [Web-Formular übersetzen](translating-a-web-form.md).
 
 So kennzeichnen Sie die zu übersetzenden Strings:
 

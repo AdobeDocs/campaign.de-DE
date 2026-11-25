@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 95%
+source-wordcount: '1373'
+ht-degree: 94%
 ---
 # Veröffentlichen eines Web-Formulars{#publishing-a-web-form}
 
@@ -161,7 +161,7 @@ Damit Benutzer auf das Formular zugreifen können, muss es sich in Produktion be
 
 Wenn Sie eine Einladung per E-Mail versenden, können Sie die Option **[!UICONTROL Adobe Campaign-Verschlüsselung]** zur Abstimmung der Daten verwenden. Gehen Sie dazu zum Versandassistenten und passen Sie den Link an das Formular an, indem Sie den folgenden Parameter hinzufügen:
 
-```
+```xml
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
 ```
 
@@ -191,7 +191,7 @@ Sie können die Antwortprotokolle zu den Fragen verwenden, um beispielsweise Eri
 
 Beim Exportieren und Importieren eines Packages mit einem Web-Formular von einer Instanz zu einer anderen Instanz (z. B. von einer Phase zur Produktion) kann der Status des Web-Formulars auf der neuen Instanz abhängig von verschiedenen Bedingungen variieren. Die unterschiedlichen Fälle sind unten aufgeführt.
 
-Weitere Informationen zu den verschiedenen Status eines Web-Formulars finden Sie in [diesem Abschnitt](#life-cycle-of-a-form).
+Erfahren Sie mehr über die verschiedenen Status eines Web-Formulars in [Lebenszyklus eines Formulars](#life-cycle-of-a-form).
 
 >[!NOTE]
 >

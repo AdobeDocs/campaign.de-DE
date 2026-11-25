@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '227'
 ht-degree: 78%
 ---
 # Metadatenmechanismus {#metadata-mechanism}
@@ -49,7 +49,7 @@ In der Antwort werden die Hauptmetadaten der Ressource zurückgegeben (alle ande
     Wenn &quot;type&quot; mit dem Wert &quot;link&quot; oder &quot;collection&quot; ausgefüllt wird, ist der resTarget-Wert der Name der Ressource, auf die der Link abzielt.
     Wenn „type“ mit dem Wert „enumeration“ ausgefüllt wird, wird ein Feld „values“ hinzugefügt und jeder Auflistungswert wird im Knoten **values** detailliert beschrieben.
 
-* Der Knoten **Filter** gibt die URL zum Abrufen der zugehörigen Filter zurück. Weiterführende Informationen zu Filtern finden Sie [diesem Abschnitt](sorting.md#filtering).
+* Der Knoten **Filter** gibt die URL zum Abrufen der zugehörigen Filter zurück. Weitere Informationen zu Filtern finden Sie unter [Filtern](sorting.md#filtering).
 
 <!-- créer une section au même niveau sur les liens -->
 <!--
@@ -64,7 +64,7 @@ si on prend l'exemple de l'org unit, on aura un bon exemple lien
 
 Führen Sie eine GET-Anfrage für die Ressource aus.
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -74,7 +74,7 @@ Führen Sie eine GET-Anfrage für die Ressource aus.
 
 Es wird die vollständige Beschreibung der Profil-Ressource zurückgegeben.
 
-```
+```json
 {
 ...
 "content": {

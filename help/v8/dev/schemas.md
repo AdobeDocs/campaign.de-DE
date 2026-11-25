@@ -38,10 +38,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 94%
+source-wordcount: '1313'
+ht-degree: 91%
 ---
 # Arbeiten mit Schemata{#gs-ac-schemas}
 
@@ -69,7 +69,7 @@ Adobe Campaign verwendet Datenschemata zum:
 * Definieren von Beziehungen zwischen den unterschiedlichen Datenobjekten in der Campaign-Anwendung
 * Definieren und Beschreiben der einzelnen Felder eines jeden Objekts
 
-Nähere Erläuterungen zu den in Campaign integrierten Tabellen und ihrer Interaktion finden Sie in [diesem Abschnitt](datamodel.md).
+Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie unter [Erste Schritte mit dem Campaign-Datenmodell](datamodel.md).
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Das Stammelement des Schemas ist **`<srcschema>`**. Es enthält die Unterelement
 
 Das erste **`<element>`**-Unterelement fällt mit dem Stammelement der Entität zusammen.
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">  
     <attribute name="lastName"/>
@@ -221,11 +221,11 @@ In diesem Beispiel erstellen wir nicht anhand der Attribute **@autopk** oder **@
 >
 >Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselsequenz (@pkSequence) beibehalten.
 
-Weiterführende Informationen zu Schlüsseln finden Sie in [diesem Abschnitt](database-mapping.md).
+Weitere Informationen zu Schlüsseln finden Sie unter [Campaign-Datenbankzuordnung](database-mapping.md).
 
 ## Attribute (Felder) {#attributes--fields-}
 
-Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt besteht. Klicken Sie in der Symbolleiste zur Schemabearbeitung auf **[!UICONTROL Einfügen]**, um leere Attributvorlagen an der Stelle in Ihrer XML abzulegen, an der sich Ihr Cursor befindet. Weiterführende Informationen finden Sie in [diesem Abschnitt](create-schema.md).
+Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt besteht. Klicken Sie in der Symbolleiste zur Schemabearbeitung auf **[!UICONTROL Einfügen]**, um leere Attributvorlagen an der Stelle in Ihrer XML abzulegen, an der sich Ihr Cursor befindet. Weitere Informationen finden Sie unter [Erstellen eines neuen Schemas in Campaign](create-schema.md).
 
 ![](assets/schemaextension_2.png)
 
@@ -313,7 +313,7 @@ Sobald Ihre Änderungen abgeschlossen und gespeichert sind, müssen alle Änderu
 
 ![](assets/schemaextension_3.png)
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](update-database-structure.md).
+Weitere Informationen hierzu finden Sie unter [Datenbankstruktur aktualisieren](update-database-structure.md).
 
 >[!NOTE]
 >

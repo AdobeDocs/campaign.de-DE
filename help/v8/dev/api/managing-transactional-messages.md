@@ -25,7 +25,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 80%
@@ -47,11 +47,11 @@ Sie möchten zum Beispiel, dass ein &quot;Warenkorbabbruch&quot; ausgelöst wird
 
 Das Transaktionsereignis wird über eine POST-Anfrage mit der folgenden URL-Struktur gesendet:
 
-```
+```http
 POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 ```
 
-* **&lt;ORGANISATION>**: Ihre persönliche Organisationskennung. Weitere Informationen finden Sie in [diesem Abschnitt](must-read.md).
+* **&lt;ORGANISATION>**: Ihre persönliche Organisationskennung. Siehe [Muss lesen](must-read.md).
 
 * **&lt;transactionalAPI>**: die Endpunkte der Transaktionsnachrichten-API.
 
@@ -67,7 +67,7 @@ Die Anfrage muss eine &quot;Inhaltstyp: application/json&quot;-Kopfzeile beinhal
 
 Sie müssen einen Zeichensatz hinzufügen, z. B. **utf-8**. Beachten Sie, dass dieser Wert von der verwendeten REST-Anwendung abhängt.
 
-```
+```bash
 -X POST \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -100,7 +100,7 @@ Wenn die Payload nur „Mobiltelefon“ enthält, wird der SMS-Kommunikationskan
 
 Das folgende Beispiel zeigt eine Payload, bei der eine SMS-Kommunikation ausgelöst wird:
 
-```
+```bash
 curl --location 'https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment' \
 --header 'Authorization: Bearer <ACCESS_TOKEN>' \
 --header 'Cache-Control: no-cache' \
@@ -135,7 +135,7 @@ Die POST-Antwort gibt den Status des Transaktionsereignisses zum Zeitpunkt der E
 
 POST-Anfrage zum Senden des Ereignisses.
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -161,7 +161,7 @@ POST-Anfrage zum Senden des Ereignisses.
 
 Antwort auf die POST-Anfrage.
 
-```
+```json
 {
   "PKey":"<PKEY>",
   "ctx":

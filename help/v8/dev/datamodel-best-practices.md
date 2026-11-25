@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 95%
+source-wordcount: '2788'
+ht-degree: 93%
 ---
 # Best Practices für Datenmodelle {#data-model-best-practices}
 
@@ -60,11 +60,11 @@ In diesem Dokument werden die wichtigsten Empfehlungen beim Entwerfen Ihres Adob
 
 Das Adobe Campaign-System ist äußerst flexibel und kann über die ursprüngliche Implementierung hinaus erweitert werden. Obwohl die Möglichkeiten unbegrenzt sind, ist es wichtig, die richtigen Entscheidungen zu treffen und eine solide Grundlage zu schaffen, um mit der Entwicklung Ihres Datenmodells zu beginnen.
 
-Genauere Informationen zu den in Campaign integrierten Tabellen und ihrer Beziehung zueinander finden Sie in [diesem Abschnitt](datamodel.md).
+Genauere Informationen zu den in Campaign integrierten Tabellen und ihrer Beziehung zueinander finden Sie unter [Erste Schritte mit dem Campaign-Datenmodell](datamodel.md).
 
-Lesen Sie [diesen Abschnitt](schemas.md), um mit Campaign-Schemata zu beginnen.
+Lesen Sie [Arbeiten mit Campaign-Schemata](schemas.md), um mit Campaign-Schemata zu beginnen.
 
-Erfahren Sie auf [dieser Seite](extend-schema.md), wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
+Erfahren Sie, wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank in [Campaign-Schemata erweitern](extend-schema.md).
 
 ## Architektur von Datenmodellen {#data-model-architecture}
 
@@ -136,7 +136,7 @@ In der folgenden Tabelle sind diese Kennungen und ihr Zweck beschrieben.
 
 Im Kontext einer [Enterprise (FFDA)-Bereitstellung](../architecture/enterprise-deployment.md) ist der Primärschlüssel von Adobe Campaign eine automatisch generierte UUID für alle integrierten Tabellen. Eine UUID kann auch für benutzerdefinierte Tabellen verwendet werden. [Weitere Informationen](../architecture/keys.md)
 
-Zwar ist die Anzahl der IDs unbegrenzt, doch sollten Sie auf die Größe Ihrer Datenbank achten, um optimale Performance sicherzustellen. Um Probleme zu vermeiden, sollten Sie die Einstellungen für die Bereinigung von Instanzen anpassen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#data-retention).
+Zwar ist die Anzahl der IDs unbegrenzt, doch sollten Sie auf die Größe Ihrer Datenbank achten, um optimale Performance sicherzustellen. Um Probleme zu vermeiden, sollten Sie die Einstellungen für die Bereinigung von Instanzen anpassen. Weitere Informationen hierzu finden Sie unter [Datenaufbewahrung](#data-retention).
 
 
 ## Benutzerdefinierte interne Schlüssel {#custom-internal-keys}

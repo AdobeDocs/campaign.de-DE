@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3196'
-ht-degree: 89%
+source-wordcount: '3216'
+ht-degree: 87%
 ---
 # Best Practices für den Versand {#delivery-best-practices}
 
@@ -60,7 +60,7 @@ Bevor Sie mit dem Erstellen von Sendungen beginnen, können Sie mehrere Maßnahm
 
 Mehrere Faktoren können die Server-Leistung direkt beeinflussen und die Campaign-Plattform verlangsamen:
 
-* Anzahl und Art der [Personalisierungselemente](../send/personalize.md): Durch Personalisierung in E-Mails werden Daten für jede Empfängerin bzw. jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen ist die Datenmenge, die zur Vorbereitung des Versands benötigt wird, höher. Dies kann Ihre Plattform verlangsamen. Weiterführende Informationen zu Schutzmechanismen für die Personalisierung finden Sie in [diesem Abschnitt](../send/personalize.md#perso-guardrails).
+* Anzahl und Art der [Personalisierungselemente](../send/personalize.md): Durch Personalisierung in E-Mails werden Daten für jede Empfängerin bzw. jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen ist die Datenmenge, die zur Vorbereitung des Versands benötigt wird, höher. Dies kann Ihre Plattform verlangsamen. Weitere Informationen zu Personalisierungsleitplanken finden Sie unter [Leitplanken und Empfehlungen](../send/personalize.md#perso-guardrails).
 
 * Auslastung des Servers: Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Performance verlangsamt werden. Der Marketing-Server muss alle eingehenden und ausgehenden Daten für alle Sendungen koordinieren, um sicherzustellen, dass die Daten korrekt sind und rechtzeitig gesendet werden.
 Um dies zu vermeiden, koordinieren Sie die zeitliche Durchführung von Sendungen mit anderen Team-Mitgliedern, sodass eine optimale Leistung gewährleistet ist.
@@ -143,7 +143,7 @@ Gehen Sie wie folgt vor, um Adressen in der Campaign-Benutzeroberfläche zu konf
 
 ### Einrichten einer Kontrollgruppe {#set-up-control-group}
 
-Sobald der Versand durchgeführt wurde, können Sie das Verhalten der ausgeschlossenen Empfänger mit den Empfängern vergleichen, die den Versand erhalten haben. Anschließend können Sie die Effizienz Ihrer Kampagnen messen. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
+Sobald der Versand durchgeführt wurde, können Sie das Verhalten der ausgeschlossenen Empfänger mit den Empfängern vergleichen, die den Versand erhalten haben. Anschließend können Sie die Effizienz Ihrer Kampagnen messen. Weitere Informationen zu Kontrollgruppen finden Sie unter [Hinzufügen einer Kontrollgruppe](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group).
 
 ### Verwenden von Typologien, um Filter und Kontrollregeln anzuwenden {#create-typologies}
 
@@ -153,27 +153,27 @@ In den Eigenschaften der Vorlage können Sie auf der Registerkarte **[!UICONTROL
 
 Um beispielsweise den ausgehenden Traffic besser zu steuern, können Sie festlegen, welche IP-Adressen verwendet werden können, indem Sie für jede Subdomain eine Affinität definieren und für jede Affinität eine Typologie erstellen. Die Affinitäten werden in der Konfigurationsdatei der Instanz bestimmt. Wenden Sie sich an Ihre bzw. Ihren Adobe Campaign-Admin.
 
-Weiterführende Informationen zu Typologien finden Sie in [diesem Abschnitt](../../automation/campaign-opt/campaign-typologies.md).
+Weitere Informationen zu Typologien finden Sie unter [ mit Kampagnentypologien](../../automation/campaign-opt/campaign-typologies.md).
 
 ## Optimieren von Inhalten {#optimize-content}
 
 ### Erstellen personalisierter Inhalte {#perso-content}
 
-Um Ihre Nachrichten zu personalisieren, können Sie die Empfängerdaten verwenden, die in der Datenbank gespeichert oder über Tracking, Landingpages, Abonnements usw. erfasst wurden. Die Grundlagen von Personalization werden in [diesem Abschnitt](../send/personalize.md) beschrieben.
+Um Ihre Nachrichten zu personalisieren, können Sie die Empfängerdaten verwenden, die in der Datenbank gespeichert oder über Tracking, Landingpages, Abonnements usw. erfasst wurden. Die Personalization-Grundlagen werden unter [Erste Schritte mit der Personalisierung](../send/personalize.md) beschrieben.
 
 +++ **Hier finden Sie einige Best Practices**
 
 * Überprüfen Sie Ihre Personalisierungseinstellungen – Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um Fehler zu vermeiden, die oft bei der Personalisierung auftreten. Ein Personalisierungs-Tag in Adobe Campaign präsentiert sich stets in folgender Form: `<%=table.field%>`. Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise wie folgt verwendet werden:
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
-  Weiterführende Informationen zu Gestaltungsbausteinen finden Sie [diesem Abschnitt](../send/personalization-blocks.md).
+  Weitere Informationen zu Gestaltungsbausteinen finden Sie unter [Verwenden von Gestaltungsbausteinen](../send/personalization-blocks.md).
 
-* Bereiten Sie Personalisierungsdaten vor – Sie können die Personalisierungsdaten in einem Workflow vorbereiten, um die Analyse der Versandvorbereitung zu verbessern. Dies sollte insbesondere verwendet werden, wenn die Personalisierungsdaten aus einer externen Tabelle über Federated Data Access (FDA) stammen. Diese Option wird in ([&#x200B; Abschnitt) &#x200B;](../send/personalization-data.md#optimize-personalization)
+* Bereiten Sie Personalisierungsdaten vor – Sie können die Personalisierungsdaten in einem Workflow vorbereiten, um die Analyse der Versandvorbereitung zu verbessern. Dies sollte insbesondere verwendet werden, wenn die Personalisierungsdaten aus einer externen Tabelle über Federated Data Access (FDA) stammen. Diese Option wird unter &quot;[ der Personalisierung“ ](../send/personalization-data.md#optimize-personalization)
 +++
 
 ### Erstellen optimierter Inhalte {#build-optimized-content}
@@ -215,7 +215,7 @@ Achten Sie besonders auf den [Betreff](../send/personalization-fields.md#persona
 
 ### Mirrorseite {#mirror-page-check}
 
-Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position befindet sich oben in der E-Mail. Weitere Informationen zur Mirrorseite finden Sie auf [dieser Seite](../send/mirror-page.md).
+Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position befindet sich oben in der E-Mail. Weitere Informationen zur Mirrorseite finden Sie unter [Hinzufügen eines Links zur Mirrorseite](../send/mirror-page.md)
 
 ### Abmelde-Link {#unsub-link-check}
 
@@ -275,7 +275,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../architecture/campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode.
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 -->
 
 ## Verwalten von Bildern {#manage-images}
@@ -320,7 +320,7 @@ Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorsc
 
 ## Definieren der richtigen Zielgruppe {#define-the-right-audience}
 
-Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Listen sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients sowie auf den gängigsten Mobilgeräten und stellen Sie sicher, dass Ihre E-Mail-Listen aktuell sind (und keine unbekannten oder veralteten Adressen enthalten). Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen. Weitere Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](../audiences/gs-audiences.md).
+Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Listen sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients sowie auf den gängigsten Mobilgeräten und stellen Sie sicher, dass Ihre E-Mail-Listen aktuell sind (und keine unbekannten oder veralteten Adressen enthalten). Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen. Weitere Informationen zu Zielgruppen finden Sie unter [Erste Schritte mit Profilen und Zielgruppen in Campaign](../audiences/gs-audiences.md).
 
 ### Ansprechen der richtigen Zielgruppe {#target-the-right-audience}
 

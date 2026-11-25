@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 93%
+source-wordcount: '402'
+ht-degree: 85%
 ---
 # Neue Web-Anwendung erstellen{#creating-a-new-web-application}
 
@@ -57,15 +57,15 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
 1. Web-Anwendungen
 
-   Mit Adobe Campaign können Sie Web-Anwendungen erstellen, die beispielsweise auf einer Web-Plattform oder in einem Extranet bereitgestellt werden. Auf diese Weise können Sie Daten bearbeiten und Informationen in Adobe Campaign aufzeichnen. In diesem Fall können Sie den Zugriff der Benutzenden auf authentifizierte Benutzende (über die Zugriffssteuerung) beschränken und das Vorabladen von Daten auf Basis verschiedener Kriterien einrichten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-web-applications.md).
+   Mit Adobe Campaign können Sie Web-Anwendungen erstellen, die beispielsweise auf einer Web-Plattform oder in einem Extranet bereitgestellt werden. Auf diese Weise können Sie Daten bearbeiten und Informationen in Adobe Campaign aufzeichnen. In diesem Fall können Sie den Zugriff der Benutzenden auf authentifizierte Benutzende (über die Zugriffssteuerung) beschränken und das Vorabladen von Daten auf Basis verschiedener Kriterien einrichten. Weitere Informationen hierzu finden Sie unter [ mit Web-Anwendungen](about-web-applications.md).
 
 1. Landingpages
 
-   Eine Landingpage ist eine HTML-Seite, deren Inhalt auf einer Website bereitsteht und über die Benutzende Informationen eingeben können, die im Datenbankprofil von Adobe Campaign gespeichert werden sollen. Der Inhalt einer solchen Seite wird normalerweise von einer spezialisierten Web-Agentur erstellt und danach in Adobe Campaign zur Veröffentlichung, Verwaltung und Nachverfolgung importiert. Weitere Informationen hierzu finden Sie auf [dieser Seite](creating-a-landing-page.md).
+   Eine Landingpage ist eine HTML-Seite, deren Inhalt auf einer Website bereitsteht und über die Benutzende Informationen eingeben können, die im Datenbankprofil von Adobe Campaign gespeichert werden sollen. Der Inhalt einer solchen Seite wird normalerweise von einer spezialisierten Web-Agentur erstellt und danach in Adobe Campaign zur Veröffentlichung, Verwaltung und Nachverfolgung importiert. Weitere Informationen hierzu finden Sie unter [Landingpage erstellen](creating-a-landing-page.md).
 
 1. Umfragen
 
-   Adobe Campaign ermöglicht es Ihnen über die Option **Survey Manager**, Online-Umfragen zusammenzustellen und zu verwalten sowie deren Ergebnisse zu verarbeiten. Die verfügbaren Funktionen sind dynamische Felderstellung, Punktzahl-Verwaltung, der Export von Antworten und spezielle Berichte. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (Dokumentation zu Campaign v8).
+   Adobe Campaign ermöglicht es Ihnen über die Option **Survey Manager**, Online-Umfragen zusammenzustellen und zu verwalten sowie deren Ergebnisse zu verarbeiten. Die verfügbaren Funktionen sind dynamische Felderstellung, Punktzahl-Verwaltung, der Export von Antworten und spezielle Berichte. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (Dokumentation zu Campaign v8).
 
    >[!CAUTION]
    >
@@ -73,10 +73,10 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
 1. Facebook-Anwendungen
 
-   Dank der Option **Social Marketing** können Sie mit Adobe Campaign personalisierte Inhalte in einer Facebook-Anwendung veröffentlichen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
+   Dank der Option **Social Marketing** können Sie mit Adobe Campaign personalisierte Inhalte in einer Facebook-Anwendung veröffentlichen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
 
    >[!CAUTION]
    >
    >**Social Marketing** ist ein optionales Modul von Adobe Campaign. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
-Der Seitenkonfigurationsmodus und verfügbare Konfigurationen können für mehrere Typen von Webanwendungen identisch sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-web-forms.md).
+Der Seitenkonfigurationsmodus und verfügbare Konfigurationen können für mehrere Typen von Webanwendungen identisch sein. Weitere Informationen hierzu finden Sie unter [ mit Web-Formularen](about-web-forms.md).

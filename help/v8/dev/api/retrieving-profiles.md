@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 92%
+source-wordcount: '239'
+ht-degree: 87%
 ---
 # Abrufen von Profilen mit APIs {#retrieving-profiles}
 
@@ -30,7 +30,7 @@ Profile lassen sich mit einer **GET**-Anfrage abrufen.
 
 Anschließend können Sie die Suche mithilfe von Filtern, Reihenfolge und Paginierung verfeinern. Weiterführende Informationen dazu finden Sie im Abschnitt [Zusätzliche Vorgänge](sorting.md).
 
-Darüber hinaus können Sie mit Campaign Standard-APIs nach Profilen suchen, die auf einem der folgenden Felder basieren: E-Mail, Vorname, Nachname oder ein benutzerdefiniertes Feld. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#searching-field).
+Darüber hinaus können Sie mit Campaign Standard-APIs nach Profilen suchen, die auf einem der folgenden Felder basieren: E-Mail, Vorname, Nachname oder ein benutzerdefiniertes Feld. Weitere Informationen hierzu finden Sie unter [Suchen nach Profilen basierend auf einem Feld](#searching-field).
 
 <br/>
 
@@ -38,7 +38,7 @@ Darüber hinaus können Sie mit Campaign Standard-APIs nach Profilen suchen, die
 
 * Beispielhafte GET-Anfrage zum Abrufen aller Profile.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -48,7 +48,7 @@ Darüber hinaus können Sie mit Campaign Standard-APIs nach Profilen suchen, die
 
   Antwort auf die Anfrage.
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -64,7 +64,7 @@ Darüber hinaus können Sie mit Campaign Standard-APIs nach Profilen suchen, die
 
 * Beispielhafte GET-Anfrage zum Abrufen der ersten 10 E-Mail-Werte.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_lineCount=10 \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -74,7 +74,7 @@ Darüber hinaus können Sie mit Campaign Standard-APIs nach Profilen suchen, die
 
   Antwort auf die Anfrage. Der Knoten &quot;Nächste&quot; gibt die URL zurück, mit der Sie auf die nächsten 10 E-Mail-Werte zugreifen können.
 
-  ```
+  ```json
   {
   "content": [
       "amy.dakota@mail.com",
@@ -107,7 +107,7 @@ Mit dem Parameter **[!UICONTROL filterType]** können Sie Profile anhand eines d
 
 * Beispielanfrage zum Filtern von Profilen anhand des Vornamens.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=John&filterType=firstName \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -117,7 +117,7 @@ Mit dem Parameter **[!UICONTROL filterType]** können Sie Profile anhand eines d
 
 * Beispielanfrage zum Filtern von Profilen anhand des Nachnamens.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=Miller&filterType=lastName \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -127,7 +127,7 @@ Mit dem Parameter **[!UICONTROL filterType]** können Sie Profile anhand eines d
 
 * Beispielanfrage zum Filtern von Profilen anhand der E-Mail.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=John%40gmail.com&filterType=email \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -137,7 +137,7 @@ Mit dem Parameter **[!UICONTROL filterType]** können Sie Profile anhand eines d
 
 * Beispielanfrage zum Filtern von Profilen anhand des benutzerdefinierten Felds &quot;Hobby&quot;.
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/byText?cusHobby=Dancing&filterType=Hobby \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
