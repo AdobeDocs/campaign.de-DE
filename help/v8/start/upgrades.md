@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 24%
+source-wordcount: '1796'
+ht-degree: 23%
 ---
 # Versionen, Upgrades und Sicherheit {#upgrades}
 
@@ -43,7 +43,7 @@ Benutzer von Managed Cloud Services:
 
 * Ihre Campaign-Server-Instanz wird von Adobe mit jeder neuen Version automatisch und ohne Aktion Ihrerseits aktualisiert.
 * Ihr Adobe-Support-Mitarbeiter setzt sich vor einem Upgrade, das sich auf Ihre Umgebung auswirkt, mit Ihnen in Verbindung.
-* **Die Client-Konsole ist die Komponente, für die Sie verantwortlich sind.** Sie muss auf dieselbe Version aktualisiert werden wie Ihr Campaign-Server. Auf [dieser Seite](../start/connect.md#upgrade-ac-console) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+* **Die Client-Konsole ist die Komponente, für die Sie verantwortlich sind.** Sie muss auf dieselbe Version aktualisiert werden wie Ihr Campaign-Server. Erfahren Sie, wie Sie Ihre Client-Konsole in aktualisieren [Aktualisieren Sie Ihre Client-Konsole](../start/connect.md#upgrade-ac-console).
 
 Außerdem sollten Sie als Kundin bzw. Kunde sicherstellen, dass Sie die neuesten unterstützten Versionen der in der [Kompatibilitätsmatrix](compatibility-matrix.md) aufgeführten Systeme verwenden.
 
@@ -86,13 +86,13 @@ Da das Server-Upgrade automatisch durchgeführt wird **kann an der** Client-Kons
 
 Um dies zu vermeiden, aktualisieren Sie Ihre Client-Konsole, sobald Sie über eine neue Version benachrichtigt werden. Erfahren Sie, wie Sie [Ihre Client-Konsole aktualisieren](../start/connect.md#upgrade-ac-console).
 
-Beachten Sie, dass Sie als Kunde bzw. Kundin auch sicherstellen müssen, dass Sie die neuesten unterstützten Versionen der in der (Kompatibilitätsmatrix[&#x200B; aufgelisteten Systeme &#x200B;](compatibility-matrix.md).
+Beachten Sie, dass Sie als Kunde bzw. Kundin auch sicherstellen müssen, dass Sie die neuesten unterstützten Versionen der in der (Kompatibilitätsmatrix[ aufgelisteten Systeme ](compatibility-matrix.md).
 
 ### Überprüfen Sie Ihre Campaign-Version {#version}
 
 Öffnen Sie über die Client-Konsole das Menü **Hilfe > Über…**, um Ihre Campaign-Version zu überprüfen.
 
-![](assets/ac-version.png)
+![Über das Dialogfeld der Client-Konsole mit den Versionen der Client-Konsole und des Anwendungs-Servers](assets/ac-version.png)
 
 Sie erhalten folgende Informationen:
 
@@ -109,7 +109,7 @@ Sie erhalten folgende Informationen:
 
 Neue Versionen und deren Änderungen werden in den [Versionshinweisen](release-notes.md) aufgeführt.
 
-Abonnieren Sie [Vorrangige Adobe-Produktaktualisierungen oder besuchen Sie &#x200B;](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"}Campaign[Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=de&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}.
+Abonnieren Sie [Vorrangige Adobe-Produktaktualisierungen oder besuchen Sie ](https://www.adobe.com/de/subscription/priority-product-update.html){target="_blank"}Campaign[Community](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}.
 
 Sicherheitsbenachrichtigungen und Anleitungen zur Vorbereitung Ihres Unternehmens auf Sicherheitsaktualisierungen finden Sie unter [Bleiben Sie informiert](#security-staying-informed).
 
@@ -141,7 +141,7 @@ Als v8-Kunde verwaltet Adobe das Server-Upgrade durchgängig:
 
 1. Wenn eine neue Version verfügbar ist oder Ihr Konto als Benutzer identifiziert wird, der zu einer neuen Version wechseln muss, werden Sie von Ihrem Adobe-Support-Mitarbeiter benachrichtigt.
 1. Adobe aktualisiert Ihre Serverinfrastruktur. Für diesen Schritt ist keine Aktion erforderlich.
-1. Die einzige erforderliche Aktion besteht einerseits darin, die Client-Konsole entsprechend zu aktualisieren, und andererseits darin, zu bestätigen, dass die Systeme in Ihrer [Kompatibilitätsmatrix](compatibility-matrix.md) weiterhin unterstützt werden. Siehe [Halten Sie Ihre Client-Konsole auf dem neuesten &#x200B;](#ac-upgrades).
+1. Die einzige erforderliche Aktion besteht einerseits darin, die Client-Konsole entsprechend zu aktualisieren, und andererseits darin, zu bestätigen, dass die Systeme in Ihrer [Kompatibilitätsmatrix](compatibility-matrix.md) weiterhin unterstützt werden. Siehe [Halten Sie Ihre Client-Konsole auf dem neuesten ](#ac-upgrades).
 
 Ein Team aus engagierten Kundenbetreuern, Produkt-Managern, Ingenieuren, TechOps-Spezialisten und Produktberatern steht Ihnen zur Seite, um diesen Prozess möglichst reibungslos zu gestalten.
 

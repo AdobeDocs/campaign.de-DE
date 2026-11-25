@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 88%
+source-wordcount: '1154'
+ht-degree: 86%
 ---
 # Verwalten von Datenschutzanfragen in Campaign {#privacy}
 
@@ -52,7 +52,7 @@ Mehr über das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** (Lös
 
 >[!NOTE]
 >
->Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](compatibility-matrix.md)
+>Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zum Überprüfen Ihrer Version finden Sie in [ Kompatibilitätsmatrix für Campaign v8](compatibility-matrix.md)
 
 ## Definieren eines Namespace {#namespaces}
 
@@ -77,7 +77,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Bei der [Auflistung der Identity](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"}Namespaces), die für Ihre Organisation verfügbar sind, erhalten Sie beispielsweise folgende Namespace-Details:
 
-   ```
+   ```json
    {
            "updateTime": 1632903236731,
            "code": "lumanamespace",
@@ -94,7 +94,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. Navigieren Sie in Adobe Campaign zu **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Namespaces]** und klicken Sie auf **[!UICONTROL Neu]**.
 
-   ![](assets/privacy-namespaces-new.png)
+   ![Explorer-Pfad Administration > Plattform > Namespaces mit hervorgehobener Schaltfläche „Neu“](assets/privacy-namespaces-new.png)
 
 1. Geben Sie einen **[!UICONTROL Titel]** ein.
 
@@ -104,7 +104,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
    * Der **[!UICONTROL interne Name]** muss mit dem Attribut &quot;code&quot; übereinstimmen.
    * Der **[!UICONTROL Abstimmschlüssel]** muss mit dem Attribut &quot;idType&quot; übereinstimmen.
 
-   ![](assets/privacy-namespaces-details.png)
+   ![Neues Namespace-Formular mit hervorgehobenen Feldern AEC-Namespace-ID, interner Name und Abstimmschlüssel](assets/privacy-namespaces-details.png)
 
    Das Feld **[!UICONTROL Abstimmschlüssel]** wird zur Identifizierung der betroffenen Person in der Adobe Campaign-Datenbank verwendet.
 

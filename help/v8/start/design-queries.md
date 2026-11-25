@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 20%
+source-wordcount: '1180'
+ht-degree: 16%
 ---
 # Campaign-Datenbank abfragen
 
@@ -52,7 +52,7 @@ Alle diese Schritte sind im [generischen Abfrage-Editor](query-editor.md) verfü
 
 Um die Campaign-Datenbank abzufragen, öffnen Sie **[Generischer Abfrage-Editor](query-editor.md)** und wählen Sie im Fenster **[!UICONTROL Dokumenttyp]** die Tabelle aus, die die abzufragenden Daten enthält.
 
-![](assets/query_editor_nveau_21.png)
+![Menü „Tools“ mit dem Editor für allgemeine Abfragen, der das Fenster „Dokumenttyp“ öffnet, mit dem Empfängerschema in der Liste.](assets/query_editor_nveau_21.png)
 
 Filtern Sie die Daten bei Bedarf mithilfe des Filterfelds oder der Schaltfläche **[!UICONTROL Filter]**.
 
@@ -62,19 +62,19 @@ Wählen Sie auf dem **[!UICONTROL Zu extrahierende Daten]** die Felder aus, die 
 
 Sie können beispielsweise **[!UICONTROL Alter]**, **[!UICONTROL Primärer Schlüssel]**, **[!UICONTROL E-Mail-Domain]** und **[!UICONTROL Stadt]**. Die Ausgabe wird entsprechend dieser Auswahl strukturiert. Um die Reihenfolge der Spalten anzupassen, verwenden Sie die blauen Pfeile auf der rechten Seite des Fensters.
 
-![](assets/query_editor_nveau_01.png)
+![Daten zum Extrahieren von Schritt mit Alter, Primärem Schlüssel, E-Mail-Domain und Ort wurden zur Liste der Ausgabespalten hinzugefügt.](assets/query_editor_nveau_01.png)
 
 Sie können einen Ausdruck ändern, indem Sie entweder eine Formel hinzufügen oder einen Prozess auf eine Aggregatfunktion anwenden. Um einen Ausdruck zu bearbeiten, klicken Sie auf das **[!UICONTROL Ausdruck]** und wählen Sie dann **[!UICONTROL Ausdruck bearbeiten]** aus.
 
-![](assets/query_editor_nveau_97.png)
+![Spaltenfeld „Ausdruck“ in den Ausgabespalten, wobei die Schaltfläche „Ausdruck bearbeiten“ hervorgehoben ist.](assets/query_editor_nveau_97.png)
 
-Sie können die in den Ausgabespalten angezeigten Daten gruppieren. Wählen Sie dazu **[!UICONTROL Ja]** in der Spalte **[!UICONTROL Gruppe]** des Fensters **[!UICONTROL Zu extrahierende Daten]** aus. Die Ergebnisse werden dann basierend auf der ausgewählten Gruppierungsachse aggregiert. Ein Beispiel für eine Abfrage mithilfe von Gruppierung finden Sie [diesem Abschnitt](../../automation/workflow/query-delivery-info.md).
+Sie können die in den Ausgabespalten angezeigten Daten gruppieren. Wählen Sie dazu **[!UICONTROL Ja]** in der Spalte **[!UICONTROL Gruppe]** des Fensters **[!UICONTROL Zu extrahierende Daten]** aus. Die Ergebnisse werden dann basierend auf der ausgewählten Gruppierungsachse aggregiert. Ein Beispiel für eine Abfrage mithilfe von Gruppierung finden Sie unter [Abfrage von Versandinformationen](../../automation/workflow/query-delivery-info.md).
 
-![](assets/query_editor_nveau_56.png)
+![Daten zum Extrahieren des Schritts mit hervorgehobener Spalte „Gruppe“, für jede Ausgabespalte auf „Nein“ setzen.](assets/query_editor_nveau_56.png)
 
 * Mit **[!UICONTROL Option Gruppierungen verwalten (GROUP BY + HAVING]** können Sie Ergebnisse gruppieren und Bedingungen auf diese Gruppen anwenden. Sie gilt für alle Felder in den Ausgabespalten. Beispielsweise können Sie damit Werte aus einer Ausgabespalte gruppieren und dann die Ergebnisse filtern, um nur bestimmte Informationen abzurufen, z. B. Empfänger zwischen 35 und 50 Jahren.
 
-  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../automation/workflow/query-grouping-management.md).
+  Weitere Informationen hierzu finden Sie unter [Abfrage mit Gruppierungsverwaltung](../../automation/workflow/query-grouping-management.md).
 
 Mit **[!UICONTROL Option „Doppelte Zeilen entfernen (DISTINCT)]** werden identische Zeilen aus der Ausgabe entfernt (dedupliziert). Wenn Sie beispielsweise **Nachname**, **Vorname** und **E-Mail** als Ausgabespalten auswählen, werden alle Datensätze mit denselben Werten in allen drei Feldern als Duplikate betrachtet. In den Ergebnissen wird nur eine Instanz beibehalten, sodass jeder Kontakt nur einmal angezeigt wird.
 
@@ -87,21 +87,21 @@ Mit **[!UICONTROL Fenster]** Sortieren“ können Sie Spalteninhalte sortieren. 
 
 Im folgenden Beispiel werden die Daten nach dem Alter der Empfänger, vom jüngsten bis zum ältesten, sortiert.
 
-![](assets/query_editor_nveau_57.png)
+![Sortierungsschritt-Auflistung Alter, Primärer Schlüssel, E-Mail-Domain und Ort, mit Sortierspalten und absteigender Sortierspalten festgelegt auf Nein.](assets/query_editor_nveau_57.png)
 
 ## &#x200B;4. Schritt – Daten filtern {#step-4---filter-data}
 
 Mit dem Abfrage-Editor können Sie Daten filtern, um Ihre Ergebnisse einzugrenzen. Die verfügbaren Filter hängen von der Tabelle ab, die Sie abfragen.
 
-![](assets/query_editor_nveau_09.png)
+![Datenfilterschritt mit Filterbedingungen, die in der Liste der Einschränkungsfilter und den Benutzerfiltern unten ausgewählt sind.](assets/query_editor_nveau_09.png)
 
 Nach Auswahl **[!UICONTROL Filterbedingungen]** wird der Abschnitt **[!UICONTROL Target-Elemente]** geöffnet. Hier können Sie die Regeln für das Filtern der zu erfassenden Daten definieren.
 
-* Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die zum Erstellen der Bedingung erforderlich sind. Sie können auch mehrere Bedingungen kombinieren, wie [auf dieser Seite) &#x200B;](filter-conditions.md).
+* Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die zum Erstellen der Bedingung erforderlich sind. Sie können auch mehrere Bedingungen kombinieren, wie [auf dieser Seite) ](filter-conditions.md).
 
 * Um einen vorhandenen Filter wiederzuverwenden, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie **[!UICONTROL Vordefinierter Filter]** und wählen Sie den gewünschten Filter aus.
 
-  ![](assets/query_editor_15.png)
+  ![Das Menü „Hinzufügen“ im Schritt „Zielelement“ mit geöffnetem vordefinierten Filter, in dem die E-Mail-Adresse auf der schwarzen Liste und andere Filter aufgeführt sind.](assets/query_editor_15.png)
 
 Im **[!UICONTROL Generischen Abfrage-Editor]** erstellte Filter können in anderen Abfrageanwendungen wiederverwendet werden. Umgekehrt gilt dies auch. Um einen Filter für die spätere Verwendung zu speichern, klicken Sie auf das Symbol **[!UICONTROL Speichern]**.
 
@@ -111,7 +111,7 @@ Im **[!UICONTROL Generischen Abfrage-Editor]** erstellte Filter können in ander
 
 In unten stehendem Beispiel sollen nur deutschsprachige Empfänger ausgewählt werden. Erstellen Sie also die Bedingung: Sprache **gleich** Deutsch.
 
-![](assets/query_editor_nveau_89.png)
+![Filterbedingungen ausgewählt, dann ein Zielelement mit der Bedingungssprache gleich EN.](assets/query_editor_nveau_89.png)
 
 >[!NOTE]
 >
@@ -119,11 +119,11 @@ In unten stehendem Beispiel sollen nur deutschsprachige Empfänger ausgewählt w
 
 Klicken Sie auf **[!UICONTROL Vorschau]**, um das Ergebnis der Filterbedingung anzuzeigen. In diesem Fall werden alle englischsprachigen Empfänger mit ihrem Namen, Vornamen und ihrer E-Mail-Adresse angezeigt.
 
-![](assets/query_editor_nveau_98.png)
+![Registerkarte Vorschau des Schritts Zielelement , in dem die Empfänger aufgelistet werden, die mit dem Filter übereinstimmen.](assets/query_editor_nveau_98.png)
 
 Für Benutzer, die diese Programmiersprache beherrschen, kann die **[!UICONTROL Entsprechende SQL-Abfrage]** angezeigt werden.
 
-![](assets/query_editor_nveau_99.png)
+![Link für generierte SQL-Abfrage öffnen, um die native SQL-Abfrage zu öffnen, die aus dem Filter für Sprache gleich EN generiert wurde.](assets/query_editor_nveau_99.png)
 
 ## &#x200B;5. Schritt – Daten formatieren {#step-5---format-data}
 
@@ -135,7 +135,7 @@ Nach dem Konfigurieren der Einschränkungsfilter wird das Fenster **[!UICONTROL 
 
 Nicht aktivierte Spalten werden im Datenvorschaufenster ausgeblendet.
 
-![](assets/query_editor_nveau_10.png)
+![Datenformatierungsschritt, in dem Alter, Primärer Schlüssel, E-Mail-Domain und Ort aufgelistet sind, wobei die Spalte „E-Mail-Domain“ nicht aktiviert ist.](assets/query_editor_nveau_10.png)
 
 In der Spalte **[!UICONTROL Schreibweise]** haben Sie die Möglichkeit, Groß- und Kleinschreibung zu verändern. Wählen Sie eine Zeile aus und klicken Sie in die Spalte **[!UICONTROL Schreibweise]**. Wählen Sie zwischen:
 
@@ -143,7 +143,7 @@ In der Spalte **[!UICONTROL Schreibweise]** haben Sie die Möglichkeit, Groß- u
 * **[!UICONTROL Alles in Großbuchstaben]**,
 * **[!UICONTROL Ersten Buchstaben großschreiben]**.
 
-![](assets/query_editor_nveau_42.png)
+![Dropdown-Liste Umwandlung mit Keine, Umschalten in Kleinbuchstaben, Umschalten in Großbuchstaben und Erster Buchstabe in Großbuchstaben.](assets/query_editor_nveau_42.png)
 
 ## &#x200B;6. Schritt – Vorschau der Daten anzeigen {#step-6---preview-data}
 
@@ -151,7 +151,7 @@ Das Fenster **[!UICONTROL Datenvorschau]** markiert die letzte Phase des Abfrage
 
 Im vorliegenden Beispiel wurden die Daten nach dem Alter der ausgewählten Empfänger in aufsteigender Reihenfolge geordnet.
 
-![](assets/query_editor_nveau_11.png)
+![Datenvorschau-Schritt: Vorschau der Daten starten füllt eine Tabelle mit Werten für Alter, Primärer Schlüssel und Stadt aus.](assets/query_editor_nveau_11.png)
 
 >[!NOTE]
 >

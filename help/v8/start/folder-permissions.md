@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '342'
+ht-degree: 92%
 ---
 # Verwalten von Ordnerberechtigungen{#manage-folder-permissions}
 
@@ -40,14 +40,14 @@ ht-degree: 100%
 
 Verwenden Sie Berechtigungen für Ordner, um den Zugriff auf Campaign-Daten zu organisieren und zu steuern.
 
-Die Ordnerverwaltung wird auf [dieser Seite](../audiences/folders-and-views.md) beschrieben.
+Die Ordnerverwaltung wird unter [Ordner und Ansichten](../audiences/folders-and-views.md) beschrieben.
 
 Gehen Sie wie folgt vor, um Berechtigungen für einen bestimmten Campaign-Ordner zu bearbeiten:
 
 1. Klicken Sie mit der rechten Maustaste auf den entsprechenden Ordner und wählen Sie **[!UICONTROL Eigenschaften...]**.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Sicherheit]**, um die Berechtigungen bezüglich des Ordners anzuzeigen.
 
-   ![](assets/folder-permissions.png)
+   ![Registerkarte „Sicherheit“ der Ordnereigenschaften mit Berechtigungen für Benutzer oder Gruppen und den Rechten zum Lesen, Schreiben und Löschen von Daten](assets/folder-permissions.png)
 
 * Um **eine Gruppe oder einen Benutzer zu autorisieren**, klicken Sie auf den Button **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe oder den Benutzer aus, denen Berechtigungen für diesen Ordner zugewiesen werden sollen.
 * Um **einer Gruppe oder einem Benutzer den Zugriff zu verbieten**, klicken Sie auf **[!UICONTROL Löschen]** und wählen Sie die Gruppe oder den Benutzer aus, um deren Autorisierung für diesen Ordner zu entfernen.

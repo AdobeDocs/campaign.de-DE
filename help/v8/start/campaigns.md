@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 73%
+source-wordcount: '933'
+ht-degree: 65%
 ---
 # Erste Schritte mit Kampagnen {#gs-ac-campaigns}
 
@@ -42,7 +42,7 @@ Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Import oder Extraktion von
 
 Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen entwerfen und koordinieren: E-Mail, Briefpost, SMS, Push-Benachrichtigung. Eine einzige Oberfläche bietet alle Funktionen, die zum Planen, Orchestrieren, Konfigurieren, Personalisieren, Automatisieren, Ausführen und Messen all Ihrer Kampagnen und Kommunikationen erforderlich sind.
 
-![](assets/campaign-tab.png)
+![Registerkarte Kampagnen der Startseite, auf der die Marketing-Kampagnen mit Status, Datum und der Schaltfläche Erstellen aufgelistet sind](assets/campaign-tab.png)
 
 ### Grundbegriffe{#ac-core-concepts}
 
@@ -64,9 +64,9 @@ Bevor Sie mit der Implementierung von Marketing-Kampagnen beginnen, müssen Sie 
 
 Adobe Campaign ermöglicht die Erstellung, Konfiguration, Ausführung und Analyse von Marketing-Kampagnen über ein einheitliches Kontrollzentrum.
 
-![](assets/calendar.png)
+![Kampagnenkalender, der Kampagnen und Sendungen in einer Zeitleiste mit einem Popup mit Details des Treueprogramms anzeigt](assets/calendar.png)
 
-In diesem Abschnitt erfahren Sie, wie Sie auf Marketing[Kampagnen zugreifen und diese implementieren &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target="_blank"}.
+In diesem Abschnitt erfahren Sie, wie Sie auf Marketing[Kampagnen zugreifen und diese implementieren ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target="_blank"}.
 
 ## Wichtige Schritte zum Beginn{#gs-ac-start}
 
@@ -76,7 +76,7 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    Definieren Sie Hierarchie und Zeitplan, stellen Sie Budget ein, fügen Sie Ressourcen hinzu, wählen Sie Benutzer aus.
 
-   Auf [&#x200B; Seite erfahren Sie, wie Sie einen Marketing-Plan erstellen und Kampagnen konfigurieren &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de){target="_blank"}.
+   Auf [ Seite erfahren Sie, wie Sie einen Marketing-Plan erstellen und Kampagnen konfigurieren ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de){target="_blank"}.
 
    Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Haupteinstellungen und -funktionen gespeichert sind. Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen können, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
 
@@ -88,7 +88,7 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    Sie können die Zielgruppe in einem Workflow erstellen oder eine bestehende Gruppe auswählen, z. B. eine Empfänger-Liste, Abonnenten eines Newsletters, Empfänger eines vorherigen Versands oder eine beliebige Filterbedingung.
 
-   ![](assets/campaign-wf.png)
+   ![Kampagnen-Workflow: Abfrage- und Leselisten-Feed, der einen Versand im Sommer, dann einen Warte- und einen Mobilversand anbietet](assets/campaign-wf.png)
 
    Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de){target="_blank"} erfahren Sie, wie Sie die Zielgruppe für Ihre Nachrichten definieren.
 
@@ -96,11 +96,11 @@ Die wichtigsten Schritte zur Erstellung einer Cross-Channel-Marketing-Kampagne s
 
    Wählen Sie einen oder mehrere Kanäle aus, definieren Sie den Nachrichteninhalt und starten Sie Sendungen.
 
-   ![](assets/campaign-dashboard.png)
+   ![Kampagnen-Dashboard mit Status, Zeitplan, Dokumenten, Aktionen und der Liste der Sendungen mit ihren Status](assets/campaign-dashboard.png)
 
-   Auf [dieser Seite](../../automation/campaigns/marketing-campaign-deliveries.md) erfahren Sie, wie Sie Sendungen für Marketing-Kampagnen erstellen und starten.
+   Erfahren Sie, wie Sie Sendungen für Marketing-Kampagnen in [Sendungen erstellen](../../automation/campaigns/marketing-campaign-deliveries.md#create-deliveries) und [einen Versand starten](../../automation/campaigns/marketing-campaign-deliveries.md#start-a-delivery) erstellen.
 
-   Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Webseite, Diagramm usw. Weitere Informationen zu zugehörigen Dokumenten finden Sie auf [dieser Seite](../../automation/campaigns/marketing-campaign-assets.md).
+   Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Webseite, Diagramm usw. Erfahren Sie mehr über zugehörige Dokumente in [Assets, Dokumente und Versandentwürfe von Marketing-Kampagnen](../../automation/campaigns/marketing-campaign-assets.md).
 
 1. **Einrichten des Validierungsprozesses**
 
@@ -115,9 +115,9 @@ Adobe Campaign bietet ein **dezentrales Marketing**-Add-on zur Implementierung v
 
 >[!NOTE]
 >
->Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](compatibility-matrix.md)
+>Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zum Überprüfen Ihrer Version finden Sie in [ Kompatibilitätsmatrix für Campaign v8](compatibility-matrix.md)
 
-Auf [&#x200B; Seite erfahren Sie, wie Sie die Funktionen von Campaign für dezentrales Marketing konfigurieren und &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de){target="_blank"}.
+Auf [ Seite erfahren Sie, wie Sie die Funktionen von Campaign für dezentrales Marketing konfigurieren und ](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de){target="_blank"}.
 
 ## Add-on &quot;Reaktionsverwaltung&quot;{#response-manager-add-on}
 
@@ -125,6 +125,6 @@ Adobe Campaign bietet ein Add-on zur **Reaktionsverwaltung** (Response Manager),
 
 >[!NOTE]
 >
->Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zur Überprüfung Ihrer Version finden Sie [diesem Abschnitt](compatibility-matrix.md)
+>Diese Funktion ist ab Campaign v8.3 verfügbar. Informationen zum Überprüfen Ihrer Version finden Sie in [ Kompatibilitätsmatrix für Campaign v8](compatibility-matrix.md)
 
-[&#128279;](../assets/do-not-localize/book.png) Erfahren Sie in der [Dokumentation zu Campaign Classic v7, wie Sie den Campaign Response Manager konfigurieren und &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=de){target="_blank"}.
+[](../assets/do-not-localize/book.png) Erfahren Sie in der [Dokumentation zu Campaign Classic v7, wie Sie den Campaign Response Manager konfigurieren und ](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=de){target="_blank"}.

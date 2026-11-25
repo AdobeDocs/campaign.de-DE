@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 62%
+source-wordcount: '1247'
+ht-degree: 59%
 ---
 # Erkunden der Benutzeroberfläche {#ui-client-console}
 
@@ -42,7 +42,7 @@ Sie können über die Client-Konsole oder die Web-Benutzeroberfläche auf Adobe 
 
 * **Client-Konsole**: Die Client-Konsole ist eine native Anwendung, die über Standard-Internet-Protokolle wie SOAP und HTTP mit dem Adobe Campaign-Anwendungs-Server kommuniziert. In der Campaign Client-Konsole sind alle Funktionen und Einstellungen verfügbar. Sie erfordert eine minimale Bandbreite, da sie auf einem lokalen Cache beruht. Die für einfache Bereitstellungen entwickelte Campaign-Client-Konsole kann über einen Internet-Browser bereitgestellt sowie automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie ausschließlich HTTP(S)-Traffic erzeugt. [Weitere Informationen](#ui-access)
 
-  Weitere Informationen dazu, wie Sie die Campaign Client-Konsole installieren und konfigurieren können, finden Sie in [diesem Abschnitt](../start/connect.md).
+  Erfahren Sie, wie Sie die Campaign-Client-Konsole in [Verbindung mit Campaign v8 herstellen und ](../start/connect.md).
 
 * **Web-Zugriff** - Mit den Web-Zugriffsfunktionen von Adobe Campaign können Sie über eine HTML-Benutzeroberfläche mit einem Webbrowser auf eine Untergruppe von Campaign-Funktionen zugreifen. Verwenden Sie diese Web-Benutzeroberfläche, um auf Berichte zuzugreifen, Nachrichten zu steuern und zu validieren, auf Monitoring-Dashboards zuzugreifen und vieles mehr.  Weitere Informationen zum Web-basierten Zugriff auf Campaign finden Sie [in diesem Abschnitt](../start/connect.md#web-access).
 
@@ -95,7 +95,7 @@ Sie können auch einen Webbrowser verwenden, um auf Campaign zuzugreifen. In die
 
 Sobald Sie mit der Campaign-Client-Konsole verbunden sind, durchsuchen Sie die Registerkarten im oberen Abschnitt, um auf die wichtigsten Funktionen von Campaign zuzugreifen:
 
-![](assets/overview-home.png)
+![Campaign-Startseite mit hervorgehobenen Registerkarten „Kampagnen“, „Profile und Zielgruppen“, „Überwachung“ und „Berichte“](assets/overview-home.png)
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Durchsuchen Sie den Campaign Explorer, um auf alle Funktionen und Einstellungen 
 
 In diesem Arbeitsbereich können Sie auf die Explorer-Baumstruktur zugreifen, um alle Funktionen und Optionen zu durchsuchen.
 
-* Im linken Bereich wird die Baumstruktur des Campaign-Explorers angezeigt. Dort können Sie basierend auf Ihren Berechtigungen alle Komponenten und Einstellungen Ihrer Instanz durchsuchen. Sie können Ordner hinzufügen und anpassen, wie auf [dieser Seite](../audiences/folders-and-views.md) beschrieben.
+* Im linken Bereich wird die Baumstruktur des Campaign-Explorers angezeigt. Dort können Sie basierend auf Ihren Berechtigungen alle Komponenten und Einstellungen Ihrer Instanz durchsuchen. Sie können Ordner hinzufügen und anpassen, wie in [Ordner und Ansichten](../audiences/folders-and-views.md) beschrieben.
 
 * Im oberen Bereich wird die Liste der Einträge des aktuellen Ordners angezeigt. Diese Listen können vollständig angepasst werden. [Weitere Informationen](../config/ui-settings.md)
 
@@ -175,7 +175,7 @@ Die unterstützten Sprachen hängen von der Benutzeroberfläche ab.
   >
   >Die Sprache wird während des Installationsprozesses ausgewählt und **kann später nicht mehr geändert**.
 
-* Informationen zu den von der Campaign-Web-Benutzeroberfläche unterstützten Sprachen [&#x200B; Sie in der Dokumentation zur Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
+* Informationen zu den von der Campaign-Web-Benutzeroberfläche unterstützten Sprachen [ Sie in der Dokumentation zur Campaign-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=de#language-pref){target="_blank"}.
 
 ## Formate
 

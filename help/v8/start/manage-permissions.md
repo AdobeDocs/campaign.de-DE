@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1850'
-ht-degree: 89%
+source-wordcount: '1933'
+ht-degree: 81%
 ---
 # Verwalten von Benutzerberechtigungen{#manage-permissions}
 
@@ -62,16 +62,16 @@ Gehen Sie wie folgt vor, um einen Benutzer hinzuzufügen:
 
 1. Wählen Sie auf der Startseite der [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} die Option **Benutzer hinzufügen** aus.
 
-   ![](assets/add-a-user.png)
+   ![Admin Console-Startseite mit hervorgehobenem Schnelllink „Benutzer hinzufügen“](assets/add-a-user.png)
 
 1. Geben Sie die E-Mail-Adresse des Benutzers ein.
 1. Verwenden Sie das Pluszeichen (+), um die Produktprofile oder Benutzergruppen auszuwählen, die dem Benutzer zugewiesen werden sollen.
 
-   ![](assets/add-a-product-profile.png)
+   ![Formular „Benutzer hinzufügen“ mit der Adobe Campaign-Produktprofilliste zur Auswahl für den Benutzer](assets/add-a-product-profile.png)
 
-   Die in Campaign integrierten Produktprofile werden in [diesem Abschnitt](#ootb-productprofiles) aufgelistet.
+   Die in Campaign integrierten Produktprofile werden unter [Standardproduktprofile und Benutzergruppen“ ](#ootb-productprofiles).
 
-   Erfahren Sie in [diesem Abschnitt](#user-groups), wie Sie Benutzergruppen erstellen können
+   Erfahren Sie, wie Sie in Benutzergruppen [Arbeiten mit Benutzergruppen](#user-groups)
 
 1. Klicken Sie auf **Speichern**. Der Benutzer wird hinzugefügt und in der Benutzerliste angezeigt. Wenn Sie Benutzenden eine Administratorrolle oder ein Produktprofil zuweisen, erhalten diese eine E-Mail-Benachrichtigung. Benutzende müssen dem Link folgen, um ihr Profil auszufüllen.
 
@@ -109,21 +109,21 @@ Gehen Sie wie folgt vor, um beispielsweise ein Produktprofil „Validierungsvera
 
 1. Stellen Sie eine Verbindung zu Campaign her, öffnen Sie den Explorer und navigieren Sie zu **[!UICONTROL Administration > Zugriffsverwaltung > Benutzergruppen]**.
 1. Klicken Sie auf **[!UICONTROL Neu]** und legen Sie den Namen der Benutzergruppe sowie deren internen Namen („Validierungsverantwortliche“) fest.
-   ![](assets/new-op-group.png)
-1. Definieren Sie die zugehörigen Berechtigungen durch Auswahl von spezifischen Berechtigungen. Die spezifischen Berechtigungen werden in [diesem Abschnitt](#use-named-rights) beschrieben
+   ![Benutzergruppenliste im Explorer mit einer neuen Benutzergruppe für Reviewer wird erstellt](assets/new-op-group.png)
+1. Definieren Sie die zugehörigen Berechtigungen durch Auswahl von spezifischen Berechtigungen. Die spezifischen Berechtigungen werden im Abschnitt [Spezifische Berechtigungen“ ](#use-named-rights)
 1. Speichern Sie die neue Benutzergruppe.
 
 #### Erstellen des Produktprofils in der Admin Console{#create-profile-in-admin-console}
 
 1. Stellen Sie eine Verbindung zur [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} her.
 1. Öffnen Sie vom Abschnitt **Produkt und Dienstleistungen** auf der Startseite aus das Campaign-Produkt.
-1. Klicken Sie auf **Neues Profil** und geben Sie den Namen des zu erstellenden Produktprofils mit der exakt korrekten Syntax wie [hier](#product-profiles) beschrieben ein. In unserem Beispiel geben wir Folgendes ein: Kampagne – `<your-instance-name>` – Validierungsverantwortliche
+1. Klicken Sie **Neues Profil** und geben Sie den Namen des zu erstellenden Produktprofils mit der exakt korrekten Syntax wie unter [Arbeiten mit Produktprofilen](#product-profiles) ein. In unserem Beispiel geben wir Folgendes ein: Kampagne – `<your-instance-name>` – Validierungsverantwortliche
 
-   ![](assets/new-product-profile-ui.png)
+   ![Erstellen Sie eine neue Produktprofilseite mit ausgefülltem Feld „Produktprofilname“](assets/new-product-profile-ui.png)
 
 1. Speichern Sie Ihre Änderungen.
 
-Sie können jetzt Benutzende zu diesem neuen Produktprofil hinzufügen, wie in [diesem Abschnitt](#add-users) beschrieben.
+Sie können jetzt Benutzende zu diesem neuen Produktprofil hinzufügen, wie in [Benutzende hinzufügen](#add-users) beschrieben.
 
 Es empfiehlt sich, Benutzergruppen Produktprofile zuzuweisen. Die Verwaltung von Berechtigungen pro Benutzer ist kein nachhaltiges Modell.
 
@@ -132,7 +132,7 @@ Es empfiehlt sich, Benutzergruppen Produktprofile zuzuweisen. Die Verwaltung von
 
 Adobe Campaign verfügt über integrierte **Produktprofile** die definiert werden, wenn Adobe Ihre Umgebung aktiviert.
 
-![](assets/ootb-product-profiles.png)
+![Registerkarte &quot;Admin Console-Produktprofile“ mit den integrierten Campaign-Produktprofilen (z. B. Administrator und Vorgang)](assets/ootb-product-profiles.png)
 
 Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. Standardbenutzergruppen und ihre [spezifische Berechtigungen](#use-named-rights) werden im Folgenden aufgeführt:
 
@@ -213,7 +213,7 @@ Diese Produktprofile stimmen mit den **Benutzergruppen** von Campaign überein. 
    >
    >**Angebotsverantwortliche Benutzer** können ein Angebot nur genehmigen, wenn kein Validierungsverantwortlicher angegeben ist oder wenn sie in der Angebotsvorlage als Validierungsverantwortliche deklariert wurden.
 
-   Die Berechtigungsmatrix des angebotsverantwortlichen Benutzers ist verfügbar auf [dieser Seite](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
+   Die Berechtigungsmatrix des angebotsverantwortlichen Benutzers ist verfügbar unter [Berechtigungsmatrix jedes Interaction-Benutzers](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
 
 ## Arbeiten mit Benutzergruppen{#user-groups}
 
