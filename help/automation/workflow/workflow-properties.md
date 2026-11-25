@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 94%
 ---
 # Workflow-Eigenschaften{#workflow-properties}
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 Der Tab **[!UICONTROL Ausführung]** im Fenster der Workflow-**[!UICONTROL Eigenschaften]** enthält drei Bereiche:
 
-![](assets/wf_execution_tab.png)
+![Registerkarte „Ausführung“ mit den Abschnitten Planung, Ausführung und Fehlermanagement der Workflow-Eigenschaften.](assets/wf_execution_tab.png)
 
 ### Planung {#scheduler}
 
@@ -65,7 +65,7 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
   Abfragen werden in diesem Fall in der Registerkarte **[!UICONTROL SQL-Logs]** angezeigt, die dem Workflow (außer bei Kampagnen-Workflows) und der Aktivität **[!UICONTROL Eigenschaften]** hinzugefügt wird. Die Registerkarte **[!UICONTROL Audit]** enthält auch SQL-Abfragen.
 
-  ![](assets/wf_tab_log_sql.png)
+  ![Workflow-Fenster mit hervorgehobener Registerkarte „SQL-Protokolle“ neben den Registerkarten „Diagramm“ und „Audit“.](assets/wf_tab_log_sql.png)
 
 * **[!UICONTROL In der Engine ausführen]**
 
@@ -102,7 +102,7 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
   Die betroffenen Benutzenden werden per E-Mail benachrichtigt, wenn ihr Profil eine E-Mail-Adresse enthält. Um Workflow-Verantwortliche zu definieren, gehen Sie in den Eigenschaften zum Feld **[!UICONTROL Verantwortliche]** (Registerkarte **[!UICONTROL Allgemein]**).
 
-  ![](assets/wf-properties_select-supervisors.png)
+  ![Registerkarte „Allgemein“ mit hervorgehobener Dropdown-Liste „Verantwortliche(r)“ und hervorgehobener Option „Workflow-Verantwortliche“](assets/wf-properties_select-supervisors.png)
 
   Die Standardvorlage **[!UICONTROL Benachrichtigung an einen Workflow-Verantwortlichen]** enthält einen Link für den Zugriff auf die Adobe Campaign-Client-Konsole über das Web, damit die empfangende Person das Problem bearbeiten kann, sobald sie angemeldet ist.
 

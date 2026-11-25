@@ -7,10 +7,10 @@ product_v2:
     internal-label: Campaign
   - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
     internal-label: Campaign v8
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 93%
+source-wordcount: '1592'
+ht-degree: 82%
 ---
 # Migrieren von Campaign-Benutzenden zum Adobe-Identitäts-Management-System (IMS) {#migrate-users-to-ims}
 
@@ -24,7 +24,7 @@ In diesem Artikel werden die Schritte beschrieben, die zum Migrieren einer techn
 
 Mit Campaign v8 sollten sich alle regulären Anwenderinnen und Anwender bereits mit ihrer Adobe ID über das Adobe-Identitäts-Management-System (IMS) mit der Adobe Campaign Client-Konsole verbinden. Bei einigen älteren Konfigurationen waren jedoch noch Verbindungen mit Benutzername/Kennwort verfügbar. **Dies ist ab Campaign v8.6 nicht mehr zulässig.**
 
-Darüber hinaus ruft die Adobe Campaign-Client-Anwendung zur Verbesserung der Sicherheit und des Authentifizierungsprozesses die Campaign-APIs jetzt direkt über das technische IMS-Konto-Token auf. Die Migration für technische Benutzende wird in einem speziellen Artikel beschrieben, der auf [dieser Seite](ims-migration.md) zu finden ist.
+Darüber hinaus ruft die Adobe Campaign-Client-Anwendung zur Verbesserung der Sicherheit und des Authentifizierungsprozesses die Campaign-APIs jetzt direkt über das technische IMS-Konto-Token auf. Die Migration für technische Benutzende wird in einem speziellen Artikel unter [Migration technischer Benutzender zur Adobe Developer-Konsole“ ](ims-migration.md).
 
 Diese Änderung gilt seit Campaign v8.5.2 und ist ab Campaign v8.6 **obligatorisch**.
 
@@ -54,7 +54,7 @@ Die wichtigsten Schritte für diese Migration sind unten aufgeführt:
 
 1. Adobe aktualisiert Ihre Umgebungen auf Campaign v8.5.2.
 1. Nach dem Upgrade können Sie weiterhin neue Benutzende mit beiden Methoden erstellen, als native Benutzerin bzw. nativen Benutzer oder mit IMS.
-1. Ihre internen Campaign-Admins müssen allen nativen Benutzenden in der Campaign-Client-Konsole eindeutige E-Mails hinzufügen und nach Abschluss dieses Vorgangs Ihrem Adobe Transition Manager bestätigen, dass dies geschehen ist. Dieser Schritt wird in [diesem Abschnitt](#ims-migration-id) beschrieben.
+1. Ihre internen Campaign-Admins müssen allen nativen Benutzenden in der Campaign-Client-Konsole eindeutige E-Mails hinzufügen und nach Abschluss dieses Vorgangs Ihrem Adobe Transition Manager bestätigen, dass dies geschehen ist. Dieser Schritt wird unter [Hinzufügen von E-Mails für aktuelle native Benutzer?](#ims-migration-id) beschrieben.
 1. Vereinbaren Sie mit Adobe einen Termin, an dem Adobe die automatisierte Migration für Ihre nicht-technischen Benutzenden und Produktprofile durchführen kann. Für diesen Schritt ist ein Zeitfenster von einer Stunde ohne Ausfallzeiten für Ihre Instanzen erforderlich.
 1. Ihre internen Campaign-Admins validieren diese Änderungen und geben sie frei. Nach dieser Migration dürfen Sie keinen weiteren Benutzenden mehr erstellen, die sich mit deren Login und Passwort authentifizieren.
 
@@ -72,7 +72,7 @@ Sie können die IMS-Migration in Ihrer Staging-Umgebung starten, sobald sie auf 
 
 ### Was passiert nach einem Build-Upgrade auf Campaign v8.5.2? {#ims-migration-after-upgrade}
 
-Nachdem Ihre Umgebungen auf Campaign v8.5.2 aktualisiert wurden, können Sie den Wechsel zum [Adobe Identity Management System (IMS) &#x200B;](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+Nachdem Ihre Umgebungen auf Campaign v8.5.2 aktualisiert wurden, können Sie den Wechsel zum [Adobe Identity Management System (IMS) ](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
 
 Eine neue native Benutzererstellung ist weiterhin zulässig, bis die IMS-Migration abgeschlossen ist.
 
@@ -108,36 +108,36 @@ Gehen Sie wie folgt vor, um eine Massenaktualisierung Ihrer nativen Benutzenden 
 
    Weitere Informationen über die Aktivität **Abfrage** finden Sie auf [dieser Seite](../../automation/workflow/query.md).
 
-   Weitere Informationen zur Aktivität **Datenextraktion (Datei)** finden Sie auf [dieser Seite](../../automation/workflow/extraction-file.md)
+   Weitere Informationen über die Aktivität **Datenextraktion (Datei)** finden Sie unter [Datenextraktion (Datei)](../../automation/workflow/extraction-file.md)
 
 1. Aktualisieren Sie die CSV-Datei mit einer neuen Spalte, die die E-Mail-Adressen Ihrer Benutzenden enthält.
 
 1. Erstellen Sie einen Workflow zum Importieren aktualisierter Daten mit der Aktivität **Laden (Datei)** und der Aktivität **Daten aktualisieren** im Workflow.
 
-   ![](assets/update-operators-wf.png){width="70%"}
+   ![Workflow „Benutzer aktualisieren“: Eine mit der Aktivität „Daten-Update“ verknüpfte Aktivität zum Laden (Datei) von Daten.](assets/update-operators-wf.png){width="70%"}
 
 1. Bearbeiten Sie die Aktivität **Laden (Datei)** und definieren Sie die Einstellungen zum Laden der aktualisierten CSV-Datei gemäß dem unten stehenden Beispiel.
 
-   ![](assets/data-loading-activity.png){width="70%"}
+   ![Aktivitätseinstellungen für das Laden (Datei): Beispieldatei, Vorschau mit Titel, Name und E-Mail-Spalten und Dateiname.](assets/data-loading-activity.png){width="70%"}
 
-   Weitere Informationen zur Aktivität **Laden (Datei)** finden Sie auf [dieser Seite](../../automation/workflow/data-loading-file.md)
+   Weitere Informationen über die Aktivität **Laden (Datei)** finden Sie unter [Laden (Datei)](../../automation/workflow/data-loading-file.md)
 
 1. Bearbeiten Sie die Aktivität **Daten aktualisieren** und definieren Sie die Einstellungen gemäß dem unten stehenden Beispiel. Beachten Sie, dass die **aktualisierte Dimension** in `Operators (xtk)` geändert wurde.
 
-   ![](assets/update-data-activity.png){width="70%"}
+   ![Aktualisieren der Datenaktivität mit Abstimmschlüsseln in der Dimension Operator, Aktualisieren der @email- und @name.](assets/update-data-activity.png){width="70%"}
 
    Weitere Informationen über die Aktivität **Daten aktualisieren** finden Sie auf [dieser Seite](../../automation/workflow/update-data.md).
 
 1. Führen Sie den Workflow aus und überprüfen Sie die Ergebnisse. Die E-Mail-Adresse wurde dem Benutzerprofil hinzugefügt.
 
-   ![](assets/updated-operator.png){width="70%"}
+   ![Benutzerprofil mit hervorgehobenem E-Mail-Feld in Kontaktpunkten, das die hinzugefügte E-Mail-Adresse anzeigt.](assets/updated-operator.png){width="70%"}
 
 +++
 
 
 ### Wie meldet man sich über IMS bei Campaign an? {#ims-migration-log}
 
-In [diesem Abschnitt](../../v8/start/connect.md) erfahren Sie, wie Sie eine Verbindung zu Campaign mit Ihrer Adobe ID herstellen.
+Erfahren Sie in [Verbindung zu Campaign v8 herstellen](../../v8/start/connect.md) wie Sie eine Verbindung zu Campaign mit Ihrer Adobe ID herstellen.
 
 ### Wird es während dieser Migration zu Ausfallzeiten kommen? {#ims-migration-downtime}
 
@@ -153,7 +153,7 @@ Adobe empfiehlt dringend, dass alle Benutzenden während des Migrationsfensters 
 
 Diese Migration umfasst zwei Aspekte: die Migration von Endbenutzenden und die Migration von technischen Benutzenden (wird in APIs in Ihrem benutzerspezifischen Code verwendet).
 
-Wenn alle Benutzenden (Campaign-Benutzende) IMS verwenden, müssen Sie diese Migration nicht durchführen. Sie müssen jedoch weiterhin technische Benutzende migrieren, die Sie möglicherweise in benutzerdefiniertem Code verwendet haben. Weitere Informationen finden Sie auf [dieser Seite](ims-migration.md).
+Wenn alle Benutzenden (Campaign-Benutzende) IMS verwenden, müssen Sie diese Migration nicht durchführen. Sie müssen jedoch weiterhin technische Benutzende migrieren, die Sie möglicherweise in benutzerdefiniertem Code verwendet haben. Weitere Informationen finden Sie unter [Migration technischer Benutzender zur Adobe Developer-Konsole](ims-migration.md).
 
 Sobald diese Migration abgeschlossen ist, müssen Sie sich an Ihren Adobe Transition Manager wenden, damit Adobe die Migration abschließt.
 
@@ -165,15 +165,15 @@ Erfahren Sie, wie Sie den Authentifizierungstyp Ihrer Benutzenden in Campaign an
 
 1. Klicken Sie mit der rechten Maustaste auf die Kopfzeile und wählen Sie das Menü **Liste konfigurieren**.
 
-   ![](assets/ims_2.png)
+   ![Benutzerliste mit dem Kontextmenü und hervorgehobener Option „Liste konfigurieren“.](assets/ims_2.png)
 
 1. Fügen Sie **Account deaktiviert** und **Authentifizierungstyp** als **Ausgabespalten** hinzu.
 
-   ![](assets/ims_1.png)
+   ![Listenkonfiguration mit deaktiviertem Konto und Authentifizierungstyp wurde zu den Ausgabespalten hinzugefügt.](assets/ims_1.png)
 
 Sie können jetzt die Liste Ihrer **Benutzenden** und deren **Authentifizierungstyp** sehen.
 
-![](assets/ims_3.png)
+![Benutzerliste mit hervorgehobener Spalte „Authentifizierungstyp“, in der für jeden Benutzer „Nativ“ oder „IMS“ angezeigt wird.](assets/ims_3.png)
 
 ## Nützliche Links {#ims-useful-links}
 

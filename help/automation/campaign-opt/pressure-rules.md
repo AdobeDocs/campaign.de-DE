@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '3285'
-ht-degree: 100%
+source-wordcount: '3752'
+ht-degree: 87%
 ---
 # Druckregeln{#pressure-rules}
 
@@ -67,17 +67,17 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
 1. Klicken Sie in der Liste der Kampagnentypologieregeln auf das Symbol **[!UICONTROL Neu]** oberhalb der Liste.
 
-   ![](assets/campaign_opt_create_a_rule_01.png)
+   ![Liste der Typologieregeln im Ordner Administration, wobei das Symbol Neu oberhalb der Liste hervorgehoben ist.](assets/campaign_opt_create_a_rule_01.png)
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Allgemein]** der neuen Regel den Regeltyp **Druck** aus und geben Sie einen Namen sowie eine Beschreibung ein.
 
-   ![](assets/campaign_opt_create_a_rule_02.png)
+   ![Neue Typologieregel, Registerkarte Allgemein, mit in der Liste Regeltyp ausgewähltem Druck.](assets/campaign_opt_create_a_rule_02.png)
 
 1. Sie können die Ausführungsreihenfolge nach Bedarf ändern. Wenn mehrere Typologieregeln in Form eines Sets von **[!UICONTROL Typologien]** angewendet werden, werden die Regeln mit der niedrigeren Reihenfolge zuerst angewendet. [Weitere Informationen](apply-rules.md#execution-order).
 1. Definieren Sie im Bereich **[!UICONTROL Berechnungsparameter]** eine Frequenz, wenn Sie die Zielgruppenbestimmung über die nächste tägliche Neuschlichtung hinaus speichern möchten. [Weitere Informationen](apply-rules.md#adjust-calculation-frequency).
 1. Gehen Sie in den Tab **[!UICONTROL Druck]** und wählen Sie den Zeitraum im Kalender aus, während dessen die Regel angewandt werden soll.
 
-   ![](assets/campaign_opt_create_a_rule_03.png)
+   ![Registerkarte „Druck“ mit dem Abschnitt „Gleitperiode“ und der Liste „Periodentyp“, die die Gruppierungsoptionen anzeigt.](assets/campaign_opt_create_a_rule_03.png)
 
    Die Regel wird auf Sendungen angewandt, deren Kontaktdatum im betroffenen Zeitraum liegt.
 
@@ -91,11 +91,11 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
    Die Schwelle ist standardmäßig konstant. Die von der Regel erlaubte maximale Nachrichtenanzahl muss festgelegt werden.
 
-   ![](assets/campaign_opt_create_a_rule_03b.png)
+   ![Registerkarte „Druck“ mit einem auf „Konstant“ und einer Menge von 4,](assets/campaign_opt_create_a_rule_03b.png) festgelegten Schwellenwert
 
    Um eine variable Schwelle anzugeben, wählen Sie den Wert **[!UICONTROL Empfängerabhängig]** im Feld **[!UICONTROL Schwellentyp]** und öffnen Sie den Ausdruckseditor über das rechts vom Feld gelegene Symbol.
 
-   ![](assets/campaign_opt_create_a_rule_04.png)
+   ![Liste „Schwellenwerttyp“, die „Konstante“ anzeigt und vom Empfänger abhängt.](assets/campaign_opt_create_a_rule_04.png)
 
    Weitere Informationen hierzu finden Sie unter [Maximale Nachrichtenanzahl](#maximum-number-of-messages).
 
@@ -110,7 +110,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
      Im folgenden Beispiel werden nur die im Ordner **NewContacts** gespeicherten Empfänger berücksichtigt und nur Sendungen, die mit **Newsletter** beginnen, sind betroffen.
 
-   ![](assets/campaign_opt_create_a_rule_05.png)
+   ![Der Abschnitt Zu zählende Nachrichten enthält eine Ordnerabfrage für NewRecipients und eine Versandabfrage für Kennzeichnungen, die mit Newsletter beginnen.](assets/campaign_opt_create_a_rule_05.png)
 
 1. In der Registerkarte **[!UICONTROL Typologien]** können die Kampagnentypologien eingesehen werden, die diese Typologieregel anwenden. Zudem kann die Regel an dieser Stelle mit einer oder mehreren existierenden Typologien verknüpft werden. [Weitere Informationen](campaign-typologies.md#apply-typologies).
 
@@ -122,7 +122,7 @@ In jeder Druckregel wird eine Schwelle definiert, also eine maximale Nachrichten
 
 Schwellenwerte können entweder konstant sein oder durch eine Formel mit Variablen berechnet werden. Das bedeutet, dass unterschiedliche Profile in einem bestimmten Zeitraum unterschiedliche Schwellen aufweisen können oder Schwellen sogar innerhalb desselben Profils variieren können.
 
-![](assets/campaign_opt_create_a_rule_threshold.png)
+![Bereich „Maximale Anzahl von Nachrichten“ auf der Registerkarte „Druck“, hervorgehoben, mit einem konstanten Schwellenwert von 1.](assets/campaign_opt_create_a_rule_threshold.png)
 
 >[!CAUTION]
 >
@@ -132,7 +132,7 @@ Schwellenwerte können entweder konstant sein oder durch eine Formel mit Variabl
 
 Sie können die Anzahl der genehmigten Nachrichten entsprechend dem Segment indexieren, zu dem die Empfängerin oder der Empfänger gehört. Dies bedeutet, dass eine Person, die zum Segment „Web“ gehört, mehr Nachrichten erhalten kann als andere Personen. Mit einer Formel vom Typ **[!UICONTROL Iif (@origin=&#39;Web&#39;, 5, 3)]** wäre etwa der Versand von 5 Nachrichten an diese Empfangenden zulässig, für die Empfangende aus anderen Segmenten dagegen nur 3. Die Konfiguration ist wie folgt:
 
-![](assets/campaign_opt_pressure_sample.png)
+![Schwellenwerttyp Hängt vom Empfänger mit der Formel Iif(Herkunft gleich &#39;Web&#39;, 5, 3) ab.](assets/campaign_opt_pressure_sample.png)
 
 Um den Schwellenwert festzulegen, können Sie eine Dimension verwenden, die mit der Zielgruppendimension verknüpft ist: So können Sie beispielsweise Nachrichten einbeziehen, die an die in der [Besuchertabelle](../../v8/audiences/target-mappings.md) gespeicherten Empfängerprofile gesendet werden. Oder Sie können verhindern, dass mehr als eine Nachricht pro Woche an ein und denselben Haushalt (der sich auf mehrere E-Mail-Adressen beziehen kann) gesendet wird, der durch eine mit den Empfängern verknüpfte Dimension identifiziert wird.
 
@@ -156,7 +156,7 @@ Im folgenden Beispiel wird die Gewichtung von Musik-Newslettern abhängig von de
 1. Erstellen Sie ein neues Feld, um die für die Neigung der Empfangenden ermittelten Werte festzuhalten. Dieses Feld, hier **@Music**, kann mit Antworten auf Online-Erhebungen und -Umfragen, erfassten Trackingdaten etc. angereichert werden.
 1. Erstellen Sie eine Typologieregel, um die Nachrichtengewichtung auf diesem Feld basierend zu berechnen.
 
-   ![](assets/campaign_opt_pressure_weight_sample.png)
+   ![Wählen Sie ein Ausdrucksdialogfeld aus der Formel Gewicht aus, wobei das Feld Musik in den verfügbaren Feldern ausgewählt ist.](assets/campaign_opt_pressure_weight_sample.png)
 
 1. Wenden Sie diese Regel auf Nachrichten wie Newsletter, Sonderangebote etc. an. Die Gewichtung dieser Sendungen, also ihre Priorität, hängt folglich von den Neigungswerten des einzelnen Empfängers ab.
 
@@ -191,19 +191,19 @@ Wenn ein Zeitraum größer als 0 ist (z. B. 1), kann der Berechnungsschwellenwe
 
 In diesem Beispiel wird eine Druckregel erstellt, die die Kundenansprache auf drei Nachrichten über einen Zeitraum von 15 Tagen hinweg begrenzt, mit einer Gruppierung nach Kalendermonat.
 
-![](assets/campaign_opt_pressure_period_sample_1a.png)
+![Registerkarte „Druck“ mit einem Zeitraum von 15 Tagen, Gruppierung nach Kalendermonat und einem konstanten Schwellenwert von 3 Nachrichten.](assets/campaign_opt_pressure_period_sample_1a.png)
 
 Nehmen wir an, es sind sechs Newsletter gleicher Gewichtung für die Daten 30.4., 3.5., 8.5., 12.5., 22.5. und 30.5. geplant.
 
-![](assets/campaign_opt_pressure_period_sample_0.png)
+![Zwei Kalender vom November 2016; der zweite zeigt den 3., 8., 12., 22. und 30. Liefertermin.](assets/campaign_opt_pressure_period_sample_0.png)
 
 Die für den 12. und 30.5. geplanten Sendungen werden nicht verschickt: Die Sendung vom 12.5. würde die erlaubte Schwelle von drei Nachrichten in 15 Tagen überschreiten und die Sendung vom 30. würde die Schwelle der pro Monat erlaubten Nachrichten überschreiten.
 
-![](assets/campaign_opt_pressure_period_sample_1.png)
+![Versandliste mit den Status „Ausstehend“, „Fehlgeschlagen“ und „In Bearbeitung“ sowie den Zählungen „Zielgruppe“ und „Zu versenden“.](assets/campaign_opt_pressure_period_sample_1.png)
 
 Alle Empfänger dieser Sendungen werden durch die Schlichtung während der Analysephase ausgeschlossen:
 
-![](assets/campaign_opt_pressure_period_sample_2.png)
+![Ausschlusslogs eines Versands, in dem Empfänger mit dem Grund nach Schlichtung ausgeschlossen werden.](assets/campaign_opt_pressure_period_sample_2.png)
 
 Gruppiert man für die gleiche Regel die Sendungen pro Quartal, werden die Empfänger des **5. Newsletters** ebenfalls ausgeschlossen und der Newsletter wird nicht versendet.
 
@@ -223,7 +223,7 @@ Adobe Campaign stellt so für jeden Empfänger sicher, dass die Anzahl der zu se
 
 Bei Überschreiten der Schwelle werden die in der Kampagnentypologie bestimmten Schlichtungsregeln angewandt und die Empfänger werden durch die Schlichtung von Kampagnen mit geringerer Gewichtung ausgeschlossen.
 
-![](assets/campaign_opt_pressure_exclusion.png)
+![Versandzusammenfassung mit 12 Zielgruppen- und 9 Versandlogs sowie Ausschlusslogs, die nach Schlichtung ausgeschlossen werden.](assets/campaign_opt_pressure_exclusion.png)
 
 >[!NOTE]
 >
@@ -244,21 +244,21 @@ Befolgen Sie die nachstehenden Schritte, um die Regel zu konfigurieren:
 
    Klicken Sie auf die Schaltfläche **[!UICONTROL Erweiterte Auswahl]**, um die Formel zu erstellen.
 
-   ![](assets/campaign_opt_pressure_sample_1_1.png)
+   ![Wählen Sie ein Dialogfeld für einen Ausdruck aus dem Feld Formel aus, wobei das Feld Status ausgewählt ist.](assets/campaign_opt_pressure_sample_1_1.png)
 
 1. Wählen Sie die Option **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/campaign_opt_pressure_sample_1_2.png)
+   ![Schritt vom Typ Formel mit der Option Formel mithilfe eines Ausdrucks bearbeiten ausgewählt.](assets/campaign_opt_pressure_sample_1_2.png)
 
 1. Wählen Sie in der Funktionsliste im Knoten **[!UICONTROL Sonstige]** mit einem Doppelklick die Funktion **Iif** aus.
 
    Wählen Sie anschließend den **Status** des Empfängers im Abschnitt **[!UICONTROL Verfügbare Felder]** aus.
 
-   ![](assets/campaign_opt_pressure_sample_1_3.png)
+   ![Bearbeiten Sie das Dialogfeld „Ausdruck“ mit der Iif-Funktion aus „Sonstige“ und das Feld „Status“ in der Formel.](assets/campaign_opt_pressure_sample_1_3.png)
 
    Geben Sie die folgende Formel ein: **Iif(@status=0,2,4)**
 
-   ![](assets/campaign_opt_pressure_sample_1_4.png)
+   ![Bearbeiten des Ausdrucksdialogfelds mit der abgeschlossenen Formel Iif(@status=0,2,4).](assets/campaign_opt_pressure_sample_1_4.png)
 
    Diese Formel ordnet einem Status gleich 0 den Wert 2 und jedem anderen Status den Wert 4 zu.
 
@@ -266,7 +266,7 @@ Befolgen Sie die nachstehenden Schritte, um die Regel zu konfigurieren:
 
 1. Geben Sie den Anwendungszeitraum der Regel an, hier 7 Tage.
 
-   ![](assets/campaign_opt_pressure_sample_1_5.png)
+   ![Registerkarte „Druck“ mit der Liste „Periodentyp“ und einer Formel, die vom Empfängerstatus abhängt.](assets/campaign_opt_pressure_sample_1_5.png)
 
 1. Speichern Sie die Regel, um ihre Erstellung zu bestätigen.
 
@@ -275,13 +275,13 @@ Verknüpfen Sie nun die eben erstellte Regel mit einer Typologie, um sie bei Sen
 1. Erstellen Sie eine Kampagnentypologie.
 1. Klicken Sie im Tab **[!UICONTROL Regeln]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die zuvor erstellte Regel aus.
 
-   ![](assets/campaign_opt_pressure_sample_1_6.png)
+   ![Registerkarte „Regeln“ einer neuen Typologie mit dem Dialogfeld „Regeln hinzufügen“, in dem die auszuwählenden Typologieregeln aufgelistet sind.](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. Speichern Sie die Typologie, um sie der Liste der bereits vorhandenen Typologien hinzuzufügen.
 
 Um diese Typologie in Ihren Sendungen verwenden zu können, wählen Sie sie wie nachfolgend beschrieben im Tab **[!UICONTROL Typologie]** der jeweiligen Versandeigenschaften aus:
 
-![](assets/campaign_opt_pressure_sample_1_7.png)
+![Versandeigenschaften, Registerkarte Typologie, auf der die Drucktypologie Clients/Interessenten in der Typologieliste ausgewählt ist.](assets/campaign_opt_pressure_sample_1_7.png)
 
 >[!NOTE]
 >
@@ -291,15 +291,15 @@ Bei der Versandanalyse werden Empfangende ausgeschlossen, wenn sie bereits eine 
 
 * das Ergebnis der Analyse ansehen:
 
-  ![](assets/campaign_opt_pressure_sample_1_8.png)
+  ![Fenster zur Versandanalyse mit Hervorhebung des abgeschlossenen Vorbereitungsprotokolls und der Regel zum Ausschließen von Adressen.](assets/campaign_opt_pressure_sample_1_8.png)
 
 * den Versand öffnen und auf den Tab **[!UICONTROL Sendungen]** sowie den Untertab **[!UICONTROL Ausschlüsse]** klicken:
 
-  ![](assets/campaign_opt_pressure_sample_1_9.png)
+  ![Registerkarte Versand, Unterregisterkarte Ausschlüsse mit Ausschlusslogs, die nach Schlichtung ausgeschlossen werden.](assets/campaign_opt_pressure_sample_1_9.png)
 
 * auf den Tab **[!UICONTROL Verfolgung]** und anschließend den Untertab **[!UICONTROL Ausschlussgründe]** klicken, um die Anzahl der Ausschlüsse und die angewandten Typologieregeln anzeigen zu lassen:
 
-  ![](assets/campaign_opt_pressure_sample_1_10.png)
+  ![Registerkarte „Audit“, Unterregisterkarte „Ausschlussgründe“, mit dem Volumen der Ausschlüsse pro Typologieregel.](assets/campaign_opt_pressure_sample_1_10.png)
 
 ### Berechnen der Versandgewichtung basierend auf dem Empfängerverhalten {#calculate-the-delivery-weight-based-on-behavior}
 
@@ -314,15 +314,15 @@ Befolgen Sie zur Konfiguration die nachstehenden Etappen:
 1. Erstellen Sie eine neue Typologieregel vom Typ **Druck**.
 1. Bearbeiten Sie die Registerkarte **[!UICONTROL Druck]**. Wir wollen eine empfängerabhängige Formel zur Schwellenwertberechnung erstellen, die auf jeder einzelnen Empfängerin bzw. jedem einzelnen Empfänger basiert: Klicken Sie auf das Symbol **[!UICONTROL Ausdruck bearbeiten]** rechts vom Feld **[!UICONTROL Gewichtungsformel]**.
 
-   ![](assets/campaign_opt_pressure_sample_2_1.png)
+   ![Registerkarte „Druck“ mit hervorgehobenem Symbol „Ausdruck bearbeiten“ neben dem Feld der Gewichtungsformel.](assets/campaign_opt_pressure_sample_2_1.png)
 
 1. Im oberen Abschnitt des Ausdruckeditors wird standardmäßig der Wert **5** angegeben. Dieser Gewichtung soll nun der empfängerabhängige Neigungswert hinzugefügt werden. Positionieren Sie dafür den Zeiger der Maus rechts von der Ziffer 5, geben Sie das Zeichen **+** ein und wählen Sie das Feld **Neigungen** aus.
 
-   ![](assets/campaign_opt_pressure_sample_2_2.png)
+   ![Bearbeiten Sie das Dialogfeld „Ausdruck“ mit der Gewichtungsformel 5+@Affinity und dem ausgewählten Affinitätsfeld.](assets/campaign_opt_pressure_sample_2_2.png)
 
 1. Fügen Sie dann einen höheren Wert für Empfängerinnen und Empfänger hinzu, die bereits einen Kauf getätigt haben. Für diese muss die Versandgewichtung um 5, für die anderen nur um 4 erhöht werden.
 
-   ![](assets/campaign_opt_pressure_sample_2_3.png)
+   ![Bearbeiten Sie das Dialogfeld „Ausdruck“ mit einer Gewichtungsformel, die ein Feld und eine Iif-Bedingung für Interesse hinzufügt.](assets/campaign_opt_pressure_sample_2_3.png)
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]** und speichern Sie die Regel.
 1. Fügen Sie die erstellte Regel einer Kampagnentypologie hinzu und verweisen Sie in einem Versand auf die jeweilige Typologie, um ihre Funktionsweise zu überprüfen.
@@ -338,7 +338,7 @@ Konfigurieren Sie zuerst die Druckregel.
 1. Erstellen Sie eine Druckregel. [Weitere Informationen](#create-a-pressure-rule).
 1. Wählen Sie im Tab **[!UICONTROL Allgemein]** die Option **[!UICONTROL Zu Beginn der Personalisierung Regel erneut anwenden]** aus.
 
-   ![](assets/campaign_opt_pressure_example_5.png)
+   ![Registerkarte „Allgemein“ einer Druckregel, wobei die Option Regel zu Beginn der Personalisierung erneut anwenden ausgewählt ist.](assets/campaign_opt_pressure_example_5.png)
 
    Diese Option überschreibt den im Feld **[!UICONTROL Frequenz]** definierten Wert und wendet die Regel während der Personalisierung automatisch an. [Weitere Informationen](apply-rules.md#adjust-calculation-frequency).
 
@@ -353,17 +353,17 @@ Erstellen und konfigurieren Sie jetzt einen Workflow für jeden Versand, auf den
 1. Fügen Sie zum Workflow die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und öffnen Sie ihn. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../workflow/delivery.md).
 1. Gehen Sie zum Tab **[!UICONTROL Validierungen]** der **[!UICONTROL Versandeigenschaften]** und deaktivieren Sie alle Validierungen.
 
-   ![](assets/campaign_opt_pressure_example_2.png)
+   ![Versandeigenschaften, Registerkarte Validierungen , wobei alle Validierungsoptionen und Versandbestätigungen gelöscht sind.](assets/campaign_opt_pressure_example_2.png)
 
 1. Wählen Sie in der Registerkarte **[!UICONTROL Typologie]** der **[!UICONTROL Versandeigenschaften]** die Kampagnentypologie aus, auf die die Regel angewendet werden soll. Definieren Sie eine Versandgewichtung.
 
-   ![](assets/campaign_opt_pressure_example_3.png)
+   ![Versandeigenschaften, Registerkarte „Typologie“, wobei das Feld „Typologie“ und die Versandgewichtung 10 hervorgehoben sind.](assets/campaign_opt_pressure_example_3.png)
 
 1. Wählen Sie im Versand die Option **[!UICONTROL Planung]** aus und danach **[!UICONTROL Versand planen (automatische Ausführung am geplanten Datum)]**. In unserem Beispiel müssen Sie die Option **[!UICONTROL Formel verwenden]** auswählen.
 1. Legen Sie das Extraktionsdatum mit 10 Minuten fest (aktuelles Datum + 10 Minuten).
 1. Legen Sie das Kontaktdatum mit dem nächsten Tag fest (aktueller Tag + 1 Tag).
 
-   ![](assets/campaign_opt_pressure_example_4.png)
+   ![Planungsdialog mit Extraktion festgelegt auf aktuelles Datum + 10 Minuten und Kontaktdatum auf aktuelles Datum + 1 Tag.](assets/campaign_opt_pressure_example_4.png)
 
    Damit die Ausschlüsse für die Druckregel erfolgreich implementiert werden können, legen Sie das Extraktionszeitpunkt vor dem Kontaktzeitpunkt sowie vor der erneuten Durchführung der nächtlichen Schlichtung fest. [Weitere Informationen](#exclusion-after-arbitration).
 

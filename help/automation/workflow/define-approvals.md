@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 98%
+source-wordcount: '915'
+ht-degree: 92%
 ---
 # Definieren von Validierungen {#defining-approvals}
 
@@ -43,11 +43,11 @@ Eine Nachricht wird an eine Benutzergruppe gesendet und der Workflow wartet auf 
 
 Eine Validierung kann mehrere Optionen zur Auswahl für die Benutzerin bzw. den Benutzer enthalten. Es ist jedoch möglich die Anzahl der Optionen auf eine einzuschränken, um eine Aufgabe zur Durchführung an eine Benutzerin bzw. einen Benutzer weiterzuleiten, wie beispielsweise das Durchführen einer Zielgruppenbestimmung. Die Benutzerin bzw. der Benutzer kann dann nach Durchführung der Aufgabe reagieren (der Prozess wird dann fortgesetzt). Das folgende Beispiel veranschaulicht diese Arten von Validierungen:
 
-![](assets/validation-1.png)
+![Workflow mit einer Versandvalidierungsgenehmigung, die zum Senden, Benachrichtigen, Ablehnen und Benachrichtigen von Änderungsanfragen führt](assets/validation-1.png)
 
 In Kampagnen ist der Validierungsablauf für alle Aktivitäten identisch.
 
-![](assets/validation-1-in-op.png)
+![Versandblock der Kampagne mit dem Menü Genehmigung , das die Optionen Inhalt genehmigen und Zielgruppe genehmigen anzeigt, wobei beide auf Genehmigung warten](assets/validation-1-in-op.png)
 
 Zur Validierung können Benutzer entweder den Webzugriff mithilfe des in der Benachrichtigung enthaltenen Links nutzen oder aber die Clientkonsole.
 
@@ -69,7 +69,7 @@ In Kampagnen sind die ausstehenden Validierungen im Dashboard ersichtlich.
 
 Bei technischen Workflows können Benutzer auf zu validierenden Aufgaben im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Ausstehende Validierungen]** zugreifen.
 
-![](assets/validation-node.png)
+![Explorer-Struktur mit Administration > Produktion > Automatisch erstellte Objekte > Genehmigungen ausstehend ausgewählt](assets/validation-node.png)
 
 ## Gruppen {#groups}
 
@@ -86,7 +86,7 @@ Ein Ablauf ist eine spezifische Transition, die für verschiedene Aktivitätstyp
 
 Auf der zweiten Registerkarte der Validierungseigenschaften der Aktivität können Sie eine oder mehrere Ablauffristen definieren. Tatsächlich können Sie mehrere Ablaufsarten definieren.
 
-![](assets/expiration.png)
+![Registerkarte „Ablauf der Genehmigung“ mit einem Fenster mit Details zur Gültigkeit und der Liste der Verzögerungsoptionen für den Ablauftyp](assets/expiration.png)
 
 Um eine neue Ablauffrist hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]**. Jeder der erstellten Ablauffristen wird eine Transition hinzugefügt. Sie haben folgende Möglichkeiten:
 

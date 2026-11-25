@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 100%
+source-wordcount: '773'
+ht-degree: 82%
 ---
 # Anwendungsfall: Überwachen Ihrer Workflows{#supervising-workflows}
 
@@ -49,7 +49,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 >
 >Zusätzlich zum Workflow können Sie mit der **Campaign Workflow-Heatmap** die aktuell aktiven Workflows im Detail analysieren. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](heatmap.md).
 >
->Weitere Informationen zur **Überwachung der Ausführung Ihrer Workflows** finden Sie in [diesem Abschnitt](monitor-workflow-execution.md).
+>Weitere Informationen zum „Überwachen **Ausführung von Workflows** finden Sie unter [Überwachen der Workflow-Ausführung](monitor-workflow-execution.md).
 
 ## &#x200B;1. Schritt: Erstellung des Monitoring-Workflows {#step-1--creating-the-monitoring-workflow}
 
@@ -59,7 +59,7 @@ Der **Monitoring-Workflow** wird im Stammverzeichnis des Ordners der technischen
 
 Das folgende Schema stellt die Beziehungen zwischen den einzelnen Aktivitäten dar.
 
-![](assets/uc_monitoring_workflow_overview.png)
+![Überwachungs-Workflow mit Start-, JavaScript-Code-, Test-, Versand- und Warteaktivitäten, die durch Transitionen verknüpft sind](assets/uc_monitoring_workflow_overview.png)
 
 Der vorliegende Workflow besteht aus folgenden Aktivitäten:
 
@@ -137,11 +137,11 @@ Mit der Aktivität „Testen“ kann festgelegen werdden, ob ein Versand versend
 
 Der Versand an die verantwortliche Person wird gestartet, **wenn wenigstens eine der drei Ereignisvariablen &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot;, &quot;vars.strWorkflowStop&quot; nicht null ist**.
 
-![](assets/uc_monitoring_workflow_test.png)
+![Testen Sie die Aktivität mit der Bedingung „True“, um zu überprüfen, ob die drei Workflow-Variablenlängen 0 und die Standardeinstellung „False“ sind](assets/uc_monitoring_workflow_test.png)
 
 Die Warteaktivität kann dahingehend konfiguriert werden, dass sie den Monitoring-Workflow in regelmäßigen Abständen neu startet. Im vorliegenden Beispiel **beträgt die Wartezeit eine Stunde**.
 
-![](assets/uc_monitoring_workflow_attente.png)
+![Warteaktivität mit dem Feld „Dauer“ auf 1 Stunde festgelegt](assets/uc_monitoring_workflow_attente.png)
 
 ## &#x200B;4. Schritt: Vorbereitung des Versands {#step-4--preparing-the-delivery}
 
@@ -152,7 +152,7 @@ In der Vorlage müssen folgende Informationen gespeichert sein:
 * **E-Mail-Adresse der verantwortlichen Person**,
 * **HTML-Inhalt** mit der Möglichkeit, einen personalisierten Text einzufügen.
 
-  ![](assets/uc_monitoring_workflow_variables_diffusion.png)
+  ![Registerkarte „Variablen“ der Versandvorlage mit den Textvariablen WF_STOP, WF_ERROR und WF_PAUSED](assets/uc_monitoring_workflow_variables_diffusion.png)
 
   Die drei deklarierten Variablen (WF_Stop, WF_Paused, WF_Error) entsprechen den drei Ereignisvariablen des Workflows.
 
@@ -162,7 +162,7 @@ In der Vorlage müssen folgende Informationen gespeichert sein:
 
   Die folgende Abbildung zeigt den Inhalt der Versandvorlage:
 
-  ![](assets/uc_monitoring_workflow_model_diffusion.png)
+  ![HTML-Inhalt der Versandvorlage mit Fehlern, angehaltenen und gestoppten Workflow-Überschriften und Variablen.WF_-Tags](assets/uc_monitoring_workflow_model_diffusion.png)
 
 Nach Erstellung und Validierung der Versandvorlage ist die **Versandaktivität** zu konfigurieren.
 
@@ -176,13 +176,13 @@ Nach Erstellung und Validierung der Versandvorlage ist die **Versandaktivität**
 * Aktivieren Sie schließlich im Bereich &quot;Auszuführende Aktion&quot; die Option **Vorbereiten und Starten**.
 * Deaktivieren Sie die Option **Fehler verarbeiten**.
 
-  ![](assets/uc_monitoring_workflow_optionmodel.png)
+  ![Versandaktivität mit Neu, basierend auf einer Vorlage erstellt, im Versand angegeben und Vorbereiten und starten ausgewählt](assets/uc_monitoring_workflow_optionmodel.png)
 
 * Fügen Sie im **Script**-Tab der **Versandaktivität** unter Verwendung der Personalisierungsschaltfläche drei Variablen vom Typ **String** hinzu.
 
-  ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
+  ![Registerkarte „Skript“ der Versandaktivität mit dem Personalisierungsmenü, das beim Versand geöffnet ist, und der Option „Sonstige“](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
-  ![](assets/uc_monitoring_workflow_linkvariables.png)
+  ![Fenster „Verfügbare Felder“ mit ausgewählten Variablen und hervorgehobenem Feld „Wert (Text)“](assets/uc_monitoring_workflow_linkvariables.png)
 
   Folgende drei Variablen wurden deklariert:
 

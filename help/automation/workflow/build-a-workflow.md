@@ -18,10 +18,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '1035'
+ht-degree: 83%
 ---
 # Erstellen eines Workflows {#build-a-workflow}
 
@@ -31,7 +31,7 @@ Der Ablauf der Workflow-Erstellung hängt von der Art des Workflows ab. Sie habe
 
 * Erstellen Sie [Zielgruppen-Workflows](#targeting-workflows) über den Knoten **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Aufträge]** > **[!UICONTROL Zielgruppen-Workflows]** des Explorers oder über die Registerkarte **[!UICONTROL Profile und Zielgruppen]** der Startseite und die Unterregisterkarte **[!UICONTROL Zielgruppen-Workflows]**.
 
-  ![](assets/create-targeting-wf.png)
+  ![Liste der Zielgruppen-Workflows auf der Registerkarte „Profile und Zielgruppen“ mit hervorgehobener Schaltfläche „Erstellen“](assets/create-targeting-wf.png)
 
 * Erstellen von [Kampagnen-Workflows](#campaign-workflows) über die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** einer Kampagne
 
@@ -39,7 +39,7 @@ Der Ablauf der Workflow-Erstellung hängt von der Art des Workflows ab. Sie habe
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Workflow-Liste, um einen neuen Workflow zu erstellen.
 
-![](assets/create_a_wf_icon.png)
+![Liste der Zielgruppen-Workflows mit hervorgehobener Schaltfläche „Neu“ oberhalb der Liste](assets/create_a_wf_icon.png)
 
 Benennen Sie den Workflow und klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -47,7 +47,7 @@ Benennen Sie den Workflow und klicken Sie auf **[!UICONTROL Speichern]**.
 
 Definieren Sie jetzt die verschiedenen Aktivitäten und verbinden Sie sie in einem Diagramm. In diesem Schritt der Konfiguration sehen wir den Diagrammtitel und den Workflow-Status (Bearbeitung läuft). Der untere Bereich des Fensters dient nur zur Bearbeitung des Diagramms. Er enthält eine Symbolleiste, eine Palette von Aktivitäten (links) und das Diagramm selbst (rechts).
 
-![](assets/new-workflow-2.png)
+![Workflow-Editor mit Titel, Status In Bearbeitung, Symbolleiste, Aktivitätspalette und leerem Diagrammbereich](assets/new-workflow-2.png)
 
 >[!NOTE]
 >
@@ -66,17 +66,17 @@ So erstellen Sie das Diagramm
 
    Ziehen Sie zunächst einen **Beginn** und anschließend einen **Versand** in das Diagramm.
 
-   ![](assets/new-workflow-3.png)
+   ![Diagramm mit einer Startaktivität und einer Versand -Aktivität, die darauf abgelegt wird](assets/new-workflow-3.png)
 
 1. Verbinden Sie die beiden Aktivitäten, indem Sie die Transition des **Beginns** über den **Versand** ziehen und ablegen.
 
-   ![](assets/new-workflow-4.png)
+   ![Startaktivität in Verbindung mit einer Übergabe an die Versandaktivität](assets/new-workflow-4.png)
 
    Zwei Aktivitäten werden automatisch miteinander verbunden, wenn Sie die zweite Aktivität direkt am Ende der ersten platzieren.
 
 1. Fügen Sie wie in unten stehender Abbildung weitere benötigte Aktivitäten hinzu und verbinden Sie sie.
 
-   ![](assets/new-workflow-5.png)
+   ![Workflow-Diagramm, das Start, Versand, Validierung, Versandkontrolle und Ende mit den Transitionen Ja und Nein verbindet](assets/new-workflow-5.png)
 
 >[!CAUTION]
 >
@@ -88,11 +88,11 @@ Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Element
 
   Über die Symbolleiste des Workflow-Editors besteht Zugriff auf Funktionen zur Formatierung und Ausführung der Workflows.
 
-  ![](assets/wf-toolbar.png)
+  ![Symbolleiste zur Diagrammbearbeitung, die oben in einem Workflow mit Abfragen, Vereinigung, Deduplizierung, Aufspaltung und Sendungen hervorgehoben ist](assets/wf-toolbar.png)
 
   Sie können den Editor anpassen, indem Sie z. B. die Palette und die Übersicht ein- oder ausblenden oder die Größe und Ausrichtung der grafischen Objekte verändern.
 
-  ![](assets/s_user_segmentation_toolbar.png)
+  ![Symbolleistengruppen: Anzeige und Layout, Verfolgung und Ausführung sowie die Schaltfläche „Eigenschaften“](assets/s_user_segmentation_toolbar.png)
 
   Die Symbole zur Anzeige des Fortschritts und der Protokolle werden in den folgenden Abschnitten beschrieben:
 
@@ -115,17 +115,17 @@ Doppelklicken Sie auf eine Aktivität, um sie zu konfigurieren oder klicken Sie 
 
 >[!NOTE]
 >
->Aktivitäten des Kampagnen-Workflows werden in [diesem Abschnitt](activities.md) erläutert.
+>Die Workflow-Aktivitäten von Campaign werden im Abschnitt [Über Workflow-Aktivitäten](activities.md) beschrieben.
 
 Die erste Registerkarte enthält die grundlegende Konfiguration. Die Registerkarte **[!UICONTROL Erweitert]** enthält zusätzliche Parameter, die insbesondere für die Bestimmung des Verhaltens bei auftretenden Fehlern, die Angabe der Ausführungsdauer einer Aktivität und die Eingabe eines Initialisierungsskripts verwendet werden.
 
 Um die Aktivitäten besser zu verstehen und die Lesbarkeit des Workflows zu verbessern, können Sie in die Aktivitäten Kommentare einfügen.
 
-![](assets/example1-comment.png)
+![Registerkarte „Erweitert“ der Abfrageaktivität mit einem Kommentar, der in das Feld „Kommentar“ eingegeben wurde](assets/example1-comment.png)
 
 Diese Kommentare werden automatisch angezeigt, wenn Benutzer über die Aktivität scrollen.
 
-![](assets/example2-comment.png)
+![Kommentartext, der in einer QuickInfo angezeigt wird, wenn sich der Zeiger über der Aufspaltungsaktivität im Diagramm befindet](assets/example2-comment.png)
 
 
 ## Workflow-Vorlagen {#workflow-templates}
@@ -138,7 +138,7 @@ Workflow-Vorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Workflo
 
 Neben den gängigen Workflow-Parametern können Sie in den Eigenschaften der Vorlage auch die Ausführungsdatei der auf Basis der Vorlage erstellten Workflows definieren.
 
-![](assets/wf-template-properties.png)
+![Registerkarte „Allgemein“ der Workflow-Eigenschaften, wobei die Ausführungsordnerauswahl im Ordner „Workflows“ geöffnet ist](assets/wf-template-properties.png)
 
 ## Duplizieren von Workflows {#duplicate-workflows}
 
@@ -149,7 +149,7 @@ Adobe empfiehlt, einen Workflow zu duplizieren, anstatt Aktivitäten zu kopieren
 1. Klicken Sie mit der rechten Maustaste auf einen Workflow.
 1. Klicken Sie auf **Duplizieren**.
 
-   ![](assets/duplicate-workflows.png)
+   ![Liste der Workflows mit dem Kontextmenü „Öffnen“ und hervorgehobener Option „Duplizieren“](assets/duplicate-workflows.png)
 
 1. Ändern Sie den Workflow-Titel im Workflow-Fenster.
 1. Klicken Sie auf **Speichern**.

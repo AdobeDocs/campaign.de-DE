@@ -29,10 +29,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 100%
+source-wordcount: '299'
+ht-degree: 93%
 ---
 # Verwalten von Zeitzonen{#managing-time-zones}
 
@@ -46,7 +46,7 @@ Sie können die Ausführung von Aufgaben mit der Planung planen (siehe [Planung]
 
 Für alle geplanten Aufgaben, d. h. für alle Aktivitäten mit Planungsoptionen, können Sie die anzuwendende Zeitzone auswählen. Die Zeitzone wird über die Registerkarte **[!UICONTROL Erweitert]** der betreffenden Aktivität ausgewählt:
 
-![](assets/wf-timezone-in-a-box.png)
+![Registerkarte Planung - Erweitert mit geöffneter Zeitzonen-Dropdown-Liste, in der die Zeitzonen „Standard“, „Server“, „Benutzer“ und „Datenbank“ aufgelistet sind.](assets/wf-timezone-in-a-box.png)
 
 Mögliche Werte:
 

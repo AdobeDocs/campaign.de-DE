@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 100%
+source-wordcount: '1304'
+ht-degree: 87%
 ---
 # Einrichten eines Workflows für den wiederkehrenden Import {#setting-up-a-recurring-import}
 
@@ -48,7 +48,7 @@ In diesem Beispiel wird gezeigt, wie ein Workflow für den wiederholten Import v
    * **[!UICONTROL Deduplizierung]**: Deduplizieren Sie die Daten aus der eingehenden Datei, bevor sie zur Datenbank hinzugefügt werden.
    * **[!UICONTROL Daten-Update]**: Aktualisieren Sie die Datenbank mit den importierten Profilen.
 
-   ![](assets/import_template_example0.png)
+   ![Importvorlagen-Workflow: Laden (Datei), Anreicherung, Aufspaltung, Deduplizierung, zwei Aktivitäten zum Aktualisieren von Daten und Ende.](assets/import_template_example0.png)
 
 1. Konfigurieren Sie die Aktivität **[!UICONTROL Laden (Datei)]**:
 
@@ -63,14 +63,14 @@ In diesem Beispiel wird gezeigt, wie ein Workflow für den wiederholten Import v
 
      Sie können alle beliebigen Optionen verwenden, müssen aber die Vorlage entsprechend ändern. Wenn Sie beispielsweise **[!UICONTROL In der Transition angegeben]** auswählen, können Sie die Aktivität **[!UICONTROL Dateiübertragung]** hinzufügen, bevor Sie die zu importierende Datei von einem FTP-/SFTP-Server abrufen. Mit einer S3- oder SFTP-Verbindung können Sie auch Segmentdaten mit der Adobe-Echtzeit-Kundendatenplattform in Adobe Campaign importieren. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de){target="_blank"}.
 
-     ![](assets/import_template_example1.png)
+     ![Aktivität „Laden (Datei)“ mit einer Beispieldateivorschau und Hochladen einer Datei vom ausgewählten lokalen Computer.](assets/import_template_example1.png)
 
 1. Konfigurieren Sie die Aktivität **[!UICONTROL Anreicherung]**. Diese Aktivität hat in unserem Fall den Zweck, die eingehenden Daten zu identifizieren.
 
    * Wählen Sie auf der Registerkarte **[!UICONTROL Anreicherung]** die Option **[!UICONTROL Daten hinzufügen]** und definieren Sie eine Verknüpfung zwischen den importierten Daten und der Empfänger-Zielgruppendimension. In unserem Beispiel wird diese Join-Bedingung mithilfe des benutzerdefinierten Feldes **Kennung im CRM** erstellt. Verwenden Sie das erforderliche Feld oder eine Kombination von Feldern, um eindeutige Datensätze zu identifizieren.
    * Lassen Sie im Tab **[!UICONTROL Abstimmung]** die Option **[!UICONTROL Dokument zur Zielgruppenbestimmung aufgrund der Arbeitsdaten identifizieren]** deaktiviert.
 
-   ![](assets/import_template_example2.png)
+   ![Anreicherungsaktivität mit dem Bildschirm für die Link-Definition: Relation, deren Ziel möglicherweise nicht vorhanden ist, Empfängerschema (nms).](assets/import_template_example2.png)
 
 1. Konfigurieren Sie die Aktivität **[!UICONTROL Aufspaltung]**, um abgestimmte Empfänger in einer Transition abzurufen und Empfänger, die nicht abgestimmt werden konnten, aber genügend Daten enthalten, in einer anderen Transition abzurufen.
 
@@ -84,13 +84,13 @@ In diesem Beispiel wird gezeigt, wie ein Workflow für den wiederholten Import v
 
    * Fügen Sie in der ersten Teilmenge auf der Registerkarte **[!UICONTROL Teilmengen]** eine Filterbedingung für die eingehende Population hinzu, damit nur Einträge ausgewählt werden, deren Empfängerprimärschlüssel nicht gleich 0 ist. Auf diese Weise werden in dieser Teilmenge Daten aus der Datei ausgewählt, die mit Empfängerinnen und Empfängern aus der Datenbank abgestimmt sind.
 
-     ![](assets/import_template_example3.png)
+     ![Teilmenge des Primärschlüssels nicht gleich 0 mit der Filterabfrage aufteilen: Primärschlüssel der Empfänger nicht gleich 0.](assets/import_template_example3.png)
 
    * Fügen Sie eine zweite Teilmenge hinzu, die nicht abgestimmte Einträge auswählt, die genügend Informationen für die Aufnahme in die Datenbank aufweisen. Beispiel: E-Mail-Adresse, Vor- und Nachname.
 
      Teilmengen werden in der Reihenfolge ihrer Erstellung verarbeitet. Bei der Verarbeitung dieser zweiten Teilmenge wurden deshalb alle in der Datenbank befindlichen Datensätze bereits in der ersten Teilmenge ausgewählt.
 
-     ![](assets/import_template_example3_2.png)
+     ![Teilmenge genügend Daten aufteilen, um Filter für E-Mail einzufügen, Vorname und Nachname sind nicht leer.](assets/import_template_example3_2.png)
 
    * Alle nicht in den ersten beiden Teilmengen ausgewählten Datensätze werden im **[!UICONTROL Komplement]** ausgewählt.
 
@@ -100,18 +100,18 @@ In diesem Beispiel wird gezeigt, wie ein Workflow für den wiederholten Import v
    * Wählen Sie im Bereich **[!UICONTROL Eintrags-Identifizierung]** die Option **[!UICONTROL Über Abstimmschlüssel]** aus und definieren Sie einen Schlüssel zwischen der Zielgruppendimension und der in der **[!UICONTROL Anreicherung]** erstellten Verknüpfung. In unserem Beispiel wird das benutzerdefinierte Feld **Kennung im CRM** verwendet.
    * Geben Sie im Abschnitt **[!UICONTROL Zu aktualisierende Felder]** die Felder der Empfängerdimension an, die mit dem Wert der entsprechenden Spalte in der Datei aktualisiert werden sollen. Wenn die Namen der Dateispalten mit den Namen der Dimensionsfelder der Empfänger übereinstimmen oder ihnen sehr ähnlich sind, können Sie die Felder mithilfe des Zauberstab-Symbols automatisch miteinander abstimmen.
 
-     ![](assets/import_template_example6.png)
+     ![Aktualisieren von Daten mit Aktualisierungsvorgang, @crmid von Abstimmschlüsseln für Empfänger und Dateispalten, die Feldern zugeordnet sind.](assets/import_template_example6.png)
 
 1. Konfigurieren Sie die Aktivität **[!UICONTROL Deduplizierung]**, die auf die Transition nicht abgestimmter Empfänger folgt:
 
    * Wählen Sie **[!UICONTROL Konfiguration bearbeiten]** aus und danach für die Zielgruppendimension das temporäre Schema, das von der Aktivität **[!UICONTROL Anreicherung]** des Workflows erstellt wurde.
 
-     ![](assets/import_template_example4.png)
+     ![Bildschirm der Zielgruppendimension der Deduplizierung mit ausgewähltem temporärem Schema und ausgewähltem Anreicherungsschema.](assets/import_template_example4.png)
 
    * In diesem Beispiel wird das E-Mail-Feld zum Ermitteln eindeutiger Profile verwendet. Sie können aber auch jedes andere Feld verwenden, das ausgefüllt und Teil einer eindeutigen Kombination ist.
    * Wählen Sie im Bildschirm **[!UICONTROL Deduplizierungsmethode]** die Option **[!UICONTROL Erweiterte Parameter]** und aktivieren Sie die Option **[!UICONTROL Automatischen Filter der Datensätze mit ID=0 deaktivieren]**, um zu gewährleisten, dass Datensätze mit einem Primärschlüssel gleich 0 (d. h. alle Datensätze dieser Transition) nicht ausgeschlossen werden.
 
-   ![](assets/import_template_example7.png)
+   ![Deduplizierungsaktivität für Deduplizierung im E-Mail-Feld mit der Methode „Für mich auswählen“ konfiguriert](assets/import_template_example7.png)
 
 1. Konfigurieren Sie die Aktivität **[!UICONTROL Daten-Update]**, die auf die zuvor konfigurierte Aktivität **[!UICONTROL Deduplizierung]** folgt.
 
@@ -119,11 +119,11 @@ In diesem Beispiel wird gezeigt, wie ein Workflow für den wiederholten Import v
    * Wählen Sie im Bereich **[!UICONTROL Eintrags-Identifizierung]** die Option **[!UICONTROL Über die Zielgruppendimension]** und dann die Dimension **[!UICONTROL Empfänger]** aus.
    * Geben Sie im Abschnitt **[!UICONTROL Zu aktualisierende Felder]** die Felder der Empfängerdimension an, die mit dem Wert der entsprechenden Spalte in der Datei aktualisiert werden sollen. Wenn die Namen der Dateispalten mit den Namen der Dimensionsfelder der Empfänger übereinstimmen oder ihnen sehr ähnlich sind, können Sie die Felder mithilfe des Zauberstab-Symbols automatisch miteinander abstimmen.
 
-     ![](assets/import_template_example8.png)
+     ![Aktualisieren von Daten 2 mit dem Vorgang „Einfügen“, der Zielgruppendimension „Empfänger“ und den Empfängerfeldern zugeordneten Dateispalten.](assets/import_template_example8.png)
 
 1. Fügen Sie nach der dritten Transition der Aktivität **[!UICONTROL Aufspaltung]** eine Aktivität des Typs **[!UICONTROL Extraktion (Datei)]** und eine Aktivität des Typs **[!UICONTROL Dateiübertragung]** hinzu, wenn Sie die noch nicht in die Datenbank aufgenommenen Daten verfolgen möchten. Konfigurieren Sie diese Aktivitäten, um die benötigte Spalte zu exportieren und die Datei auf einen FTP- oder SFTP-Server zu übertragen, wo Sie sie abrufen können.
 1. Fügen Sie eine **[!UICONTROL Ende]**-Aktivität an und speichern Sie die Workflow-Vorlage.
 
 Die Vorlage ist jetzt einsatzbereit und kann für jeden neuen Workflow verwendet werden. Dann muss nur noch die Datei spezifiziert werden, deren Daten in der Aktivität **[!UICONTROL Laden (Datei)]** importiert werden sollen.
 
-![](assets/import_template_example9.png)
+![Ausgeführter Import-Workflow mit der Anzahl von Datensätzen bei jeder Transition, einschließlich der Ergänzung der Transition zum Ende.](assets/import_template_example9.png)

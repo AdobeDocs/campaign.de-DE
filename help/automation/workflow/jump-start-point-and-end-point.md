@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 100%
+source-wordcount: '154'
+ht-degree: 77%
 ---
 # Sprung (Start und Ziel){#jump-start-point-and-end-point}
 
@@ -36,12 +36,12 @@ Sprünge sind Transitionen ohne Pfeile.
 
 Sie springen von einer Aktivität zur nächsten, wie im folgenden Beispiel gezeigt wird:
 
-![](assets/s_user_segmentation_jump_sample.png)
+![Workflow, bei dem Startpunktsprünge lange Übergänge zu zwei Endpunktsprüngen ersetzen, die eine Vereinigung und eine Deduplizierung liefern.](assets/s_user_segmentation_jump_sample.png)
 
 Für jeden Sprung (Start) muss ein Sprung (Ziel) im Diagramm positioniert werden.
 
 Sie können mehrere Sprünge zum Start- und Endpunkt in denselben Workflow einfügen. Diese werden durch eine Zahl identifiziert, die in den Parametern eingegeben werden muss:
 
-![](assets/s_user_segmentation_jump_in.png)
+![Aktivität „Sprung (Startpunkt)“, wobei das Feld „Beschriftung“ und das Feld „Sprungnummer“ auf 1.](assets/s_user_segmentation_jump_in.png) festgelegt sind
 
 Für eine bessere Lesbarkeit des Diagramms können Sie das den Sprüngen zugeordnete Symbol durch die entsprechende Ziffer ersetzen. Siehe [Ändern der Bilder für Aktivitäten](change-activity-images.md).

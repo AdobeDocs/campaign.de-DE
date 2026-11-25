@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 100%
+source-wordcount: '248'
+ht-degree: 81%
 ---
 # Laden (DBMS){#data-loading-rdbms}
 
@@ -43,15 +43,15 @@ Gehen Sie wie folgt vor:
 
 1. Wählen Sie aus der Dropdown-Liste die Datenquelle aus und geben Sie den Namen der Tabelle an, die die zu extrahierenden Daten enthält.
 
-   ![](assets/s_advuser_wf_sgbd_sample_1.png)
+   ![Aktivität Laden (RDBMS) mit einer ausgewählten freigegebenen externen Datenquelle und dem Tabellennamen nmsrecipient.](assets/s_advuser_wf_sgbd_sample_1.png)
 
    Der im zugehörigen Feld eingegebene Name der Tabelle dient als Vorlage zum Erfassen der Daten in der externen Datenbank. Der Name der vom Workflow verarbeiteten Tabelle kann berechnet oder von der eingehenden Transition der Datenladeaktivität übermittelt werden. Um die zu verwendende Tabelle auszuwählen, klicken Sie auf den Link **[!UICONTROL Erweitert…]** und wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** oder **[!UICONTROL Explizit]** aus.
 
-   ![](assets/s_advuser_wf_sgbd_sample_5.png)
+   ![Erweiterte Parameter für die Auswahl von Tabellennamen: identisch mit der Vorlage, in der Transition angegeben, explizit.](assets/s_advuser_wf_sgbd_sample_5.png)
 
 1. Klicken Sie auf den Link **[!UICONTROL Zu extrahierende Spalten auswählen...]**, um die abzurufenden Daten auszuwählen.
 
-   ![](assets/s_advuser_wf_sgbd_sample_2.png)
+   ![Im Fenster „Zusätzliche Spalten auswählen“ werden die verfügbaren Felder und die für die Extraktion ausgewählten Ausgabespalten aufgelistet.](assets/s_advuser_wf_sgbd_sample_2.png)
 
 1. Sie können einen Filter für diese Daten definieren. Klicken Sie dazu auf den Link **[!UICONTROL Abfrage bearbeiten…]**.
 

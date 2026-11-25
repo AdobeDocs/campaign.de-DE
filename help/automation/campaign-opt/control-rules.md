@@ -20,10 +20,10 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 100%
+source-wordcount: '486'
+ht-degree: 80%
 ---
 # Kontrollregeln{#control-rules}
 
@@ -52,11 +52,11 @@ Gehen Sie wie folgt vor:
 
 1. Erstellen Sie eine Typologieregel vom Typ **[!UICONTROL Kontrolle]**. Wählen Sie das Niveau **[!UICONTROL Warnung]** aus.
 
-   ![](assets/campaign_opt_create_control_01.png)
+   ![Dialogfeld zur Erstellung von Typologieregeln, Registerkarte „Allgemein“: Regeltyp kontrollieren, SMS-Kanal, Dropdown-Liste „Ebene“ mit hervorgehobener Warnung.](assets/campaign_opt_create_control_01.png)
 
 1. Geben Sie im Tab **[!UICONTROL Code]** wie folgt das Script zur Anwendung der gewünschten Schwelle ein:
 
-   ![](assets/campaign_opt_create_control_02.png)
+   ![Registerkarte „Typologieregel-Code“ mit dem Skript, das eine Warnung protokolliert, wenn die Versandzielgruppe 100 Kontakte überschreitet.](assets/campaign_opt_create_control_02.png)
 
    Das Skript erzeugt nun eine Warnung, sobald die Zielgruppe des Versands 100 Empfänger übersteigt:
 
@@ -66,18 +66,18 @@ Gehen Sie wie folgt vor:
 
 1. Verbinden Sie die Regel mit einer Kampagnentypologie und referenzieren Sie diese Typologie im betroffenen SMS-Versand.
 
-   ![](assets/campaign_opt_create_control_03.png)
+   ![Versandeigenschaften, Registerkarte Typologie: Dropdown-Liste „Typologie“ für Mobilgeräte (max. 100) unter den verfügbaren Typologien.](assets/campaign_opt_create_control_03.png)
 
 1. Die Regel wird bei der Versandanaluyse angewandt und erzeugt im gegebenen Fall eine Warnung.
 
-   ![](assets/campaign_opt_create_control_04.png)
+   ![Versandanalyseprotokoll, das eine Warnung anzeigt, dass von der Regel +100 Nachrichten ein Problem erkannt wurde. Versand bestätigen ist verfügbar.](assets/campaign_opt_create_control_04.png)
 
    Der Versand ist auch im Falle einer Warnung startbereit.
 
    Bei einer erhöhten Gravität kann der Versand jedoch nicht gestartet werden.
 
-   ![](assets/campaign_opt_create_control_05.png)
+   ![Registerkarte „Allgemein“ der Typologieregel mit geöffneter Dropdown-Liste „Ebene“ und Auswahl von „Fehler“ anstelle von „Warnung“.](assets/campaign_opt_create_control_05.png)
 
    In diesem Fall ist am Ende der Analyse die Schaltfläche **[!UICONTROL Versand bestätigen]** nicht verfügbar.
 
-   ![](assets/campaign_opt_create_control_06.png)
+   ![Versandanalyseprotokoll endet mit einem Fehler, wobei die Schaltfläche Versand bestätigen deaktiviert ist.](assets/campaign_opt_create_control_06.png)

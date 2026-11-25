@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 99%
+source-wordcount: '2799'
+ht-degree: 86%
 ---
 # Einrichten und Verwalten des Validierungsprozesses {#approval-marketing-campaigns}
 
@@ -51,25 +51,25 @@ Die Personen, die als Verantwortliche für die Validierung in Adobe Campaign ern
 Sie können die Validierung auf verschiedene Weise vornehmen:
 
 * Von der Benachrichtigungsmeldung aus. Durch den Link in der E-Mail erhält die Person über einen Webbrowser Zugriff auf Campaign. Nach dem Verbinden kann die validierungsverantwortliche Person den Inhalt validieren oder auch nicht.
-  ![](assets/approval-content-email.png)
+  ![Benachrichtigungs-E-Mail zur Inhaltsvalidierung mit dem Link Versandinhalt genehmigen oder ablehnen und Versanddetails.](assets/approval-content-email.png)
 
 * Vom Kampagnen-Dashboard aus.
-  ![](assets/approval-from-dashboard.png)
+  ![Kampagnen-Dashboard in der Client-Konsole, wobei das Menü Genehmigung geöffnet und die Option Zielgruppe validieren hervorgehoben ist.](assets/approval-from-dashboard.png)
 
 * Vom Versand-Dashboard aus.
-  ![](assets/approval-from-delivery-dashboard.png)
+  ![Versand-Dashboard mit geöffnetem Menü „Validierung“, in dem Inhalte übermittelt, Zielgruppe validiert und Budget validiert werden.](assets/approval-from-delivery-dashboard.png)
 
 Benutzende können über das Validierungsfenster auf die Kampagne und den Versand zugreifen. Sie können auch einen Kommentar eingeben.
 
-![](assets/approval-target-confirm.png)
+![Aktion im Versandfenster mit den Optionen Akzeptieren oder Ablehnen, einem Kommentarfeld und der Schaltfläche Zielgruppenvalidierung.](assets/approval-target-confirm.png)
 
 Wenn eine Validierung durchgeführt wird, werden die Informationen in den Kampagnen- und Versand-Dashboards sowie in den Protokollen angezeigt.
 
-![](assets/approvals-from-delivery.png)
+![Abschnitt „Validierungen des Versand-Dashboards“ mit den genehmigten Zielgruppen und dem zu validierenden Budget samt Stichtag.](assets/approvals-from-delivery.png)
 
 Diese Informationen sind auch in den Validierungsprotokollen des Versands und im Validierungsprotokoll der Kampagne verfügbar. Auf diese Protokolle kann über die Registerkarten **[!UICONTROL Bearbeiten > Audit > Validierungen]** zugegriffen werden.
 
-![](assets/approval-logs.png)
+![Registerkarte „Validierungen für die Versandprüfung“ mit dem Zeitplan für die Validierungstermine und einem Eintrag im Validierungsprotokoll für die Zielgruppenbestimmung.](assets/approval-logs.png)
 
 
 ## Aktivieren von Validierungen{#enable-approvals}
@@ -84,24 +84,24 @@ Diese Einstellungen können für jede mit dieser Vorlage erstellte Kampagne sowi
 
 Im nachfolgenden Beispiel wird der Inhalt des Briefpost-Versands nicht zur Validierung unterbreitet:
 
-![](assets/approval-not-enabled.png)
+![Registerkarte „Validierungen“ der Versandeigenschaften mit der Option Inhaltsvalidierung aktivieren geleert, während die Validierungen von Zielgruppen und Budgets aktiviert sind.](assets/approval-not-enabled.png)
 
 
 >[!CAUTION]
 >
 >Vergewissern Sie sich, dass die Validierungsverantwortlichen über die **erforderlichen Berechtigungen** zur Validierung verfügen und dass ihre Sicherheitszone korrekt definiert ist. [Weitere Informationen](#selecting-reviewers).
 
-Der Validierungsprozess für Sendungen wird in [diesem Abschnitt](#review-and-approve-deliveries) ausführlich beschrieben.
+Der Validierungsprozess für Sendungen wird im Abschnitt [Überprüfen und Validieren von Sendungen](#review-and-approve-deliveries) beschrieben.
 
 ## Auswahl von Validierungsverantwortlichen {#select-reviewers}
 
 Für jeden Validierungstyp werden die für die Validierung verantwortlichen Benutzer oder Benutzergruppen aus der Dropdown-Liste im Versand ausgewählt. Weitere Benutzer können mit dem Link **[!UICONTROL Bearbeiten...]** hinzugefügt werden. In diesem Fenster können Sie auch die Validierungs-Deadline bearbeiten. Standardmäßig haben Validierungsverantwortliche ab dem Unterbreitungsdatum drei Tage Zeit, um einen Prozess zu validieren. Um eine automatische Erinnerung hinzuzufügen, können Sie den Link **[!UICONTROL Erinnerung hinzufügen]** verwenden.
 
-![](assets/add-reviewers.png)
+![Registerkarte „Erweiterte Einstellungen - Genehmigungen“ und Fenster „Validierungsverantwortliche bearbeiten“ mit zusätzlichen Validierungsverantwortlichen, Verzögerung und Erinnerung hinzufügen.](assets/add-reviewers.png)
 
 Wenn keine Validierungsverantwortlichen angegeben werden, ist der/die Kampagnenverantwortliche für die Validierungen verantwortlich und erhält die Benachrichtigungen. Diese Person wird auf der Registerkarte **[!UICONTROL Bearbeiten > Eigenschaften]** der Kampagne angegeben:
 
-![](assets/campaign-owner.png)
+![Registerkarte „Kampagnenbearbeitung“ mit hervorgehobenem Feld „Zugewiesen an“, um den Kampagnenverantwortlichen festzulegen.](assets/campaign-owner.png)
 
 Alle anderen, die in Adobe Campaign über **[!UICONTROL Admin]**-Rechte verfügen, können ebenfalls Aufträge validieren, erhalten jedoch keine Benachrichtigungen.
 
@@ -112,7 +112,7 @@ Alle anderen, die in Adobe Campaign über **[!UICONTROL Admin]**-Rechte verfüge
 
 Wenn eine Liste von Validierungsverantwortlichen definiert ist, ist ein Auftrag validiert, sobald ihn eine validierungsverantwortliche Person validiert hat. Der Validierungs-Link ist dann nicht mehr in den Kampagnen- und Versand-Dashboards verfügbar. Wenn das Senden von Benachrichtigungen aktiviert ist und ein anderer Validierungsverantwortlicher auf den Validierungs-Link in der Benachrichtigung klickt, wird ihm mitgeteilt, dass ein anderer Validierungsverantwortlicher den Auftrag bereits validiert hat.
 
-![](assets/delivery-target-already-approved.png)
+![Benachrichtigungs-E-Mail, die bestätigt, dass die Zielgruppe des Versands bereits von einem anderen Benutzer genehmigt wurde.](assets/delivery-target-already-approved.png)
 
 
 ## Prüfen und Validieren von Sendungen {#review-and-approve-deliveries}
@@ -132,7 +132,7 @@ Sobald diese Validierungsphasen beendet sind, kann der Versand gestartet werden.
 
 Die Phasen, für die eine Validierung erforderlich ist, werden im Kampagnen-Dashboard (über die Client-Konsole oder die Web-Schnittstelle) angezeigt. Sie werden auch in der Versandverfolgungstabelle und im Versand-Dashboard angezeigt.
 
-![](assets/delivery-approval-actions.png)
+![Versandzusammenfassung mit dem Menü „Validierung“, in dem Inhalt übermitteln, Zielgruppe validieren und Budget validieren aufgeführt sind.](assets/delivery-approval-actions.png)
 
 Folgende Validierungsvorgänge stehen für Kampagnensendungen zur Verfügung:
 
@@ -140,7 +140,7 @@ Folgende Validierungsvorgänge stehen für Kampagnensendungen zur Verfügung:
 
   Wenn die Optionen **[!UICONTROL Zielgruppenvalidierung aktivieren]**, **[!UICONTROL Inhaltsvalidierung aktivieren]** oder **[!UICONTROL Budgetvalidierung aktivieren]** im Fenster der Validierungseinstellungen ausgewählt sind, werden die entsprechenden Links in den Kampagnen- und Versand-Dashboards angezeigt.
 
-  ![](assets/template-activate-6.png)
+  ![Registerkarte Erweiterte Einstellungsgenehmigungen mit Genehmigungsoptionen für Inhalt, Zielgruppe, Budget und Extraktion aktivieren und ihren Validierungsverantwortlichen.](assets/template-activate-6.png)
 
   >[!NOTE]
   >
@@ -156,7 +156,7 @@ Folgende Validierungsvorgänge stehen für Kampagnensendungen zur Verfügung:
 
   Die Option **[!UICONTROL Datei validieren]** ist im Kampagnen- und Versand-Dashboard verfügbar.
 
-  ![](assets/approve-file-preview.png)
+  ![Web-Bereitstellungsseite mit der Schaltfläche Datei genehmigen und dem Fenster Aktion beim Versand , um die Datei zu akzeptieren oder abzulehnen.](assets/approve-file-preview.png)
 
   Sie können vor der Validierung die Ausgabedatei in der Vorschau anzeigen. Die Vorschau der Extraktionsdatei zeigt nur eine Auswahl der Daten. Es wird nicht die gesamte Datei geladen.
 
@@ -164,7 +164,7 @@ Folgende Validierungsvorgänge stehen für Kampagnensendungen zur Verfügung:
 
   Die Option **[!UICONTROL Individuelle Validierung jedes zugeordneten Versands aktivieren]** wird für einen primären Versand verwendet, der mit sekundären Sendungen verknüpft ist. Standardmäßig ist diese Option nicht aktiviert, sodass eine Gesamtvalidierung des Hauptversands durchgeführt werden kann. Wenn diese Option aktiviert ist, muss jeder Versand einzeln validiert werden.
 
-  ![](assets/enable-ind-approval.png)
+  ![Registerkarte „Erweiterte Einstellungen - Validierungen“ mit der Option Individuelle Validierung jedes zugeordneten Versands aktivieren](assets/enable-ind-approval.png)
 
 
 >[!NOTE]
@@ -252,20 +252,20 @@ Beispielsweise nach Ausführung der Versandanalyse:
 
 1. Wählen Sie **[!UICONTROL Zielgruppenbestimmung validieren]**.
 
-![](assets/target-validation-from-console.png)
+![Kampagnen-Dashboard mit geöffneter Dropdown-Liste „Validierung“ und den Optionen Inhalt validieren und Zielgruppenbestimmung validieren.](assets/target-validation-from-console.png)
 
 1. Überprüfen Sie im Popup-Fenster die zu validierenden Informationen.
 1. Wählen Sie **[!UICONTROL Akzeptieren]** oder **[!UICONTROL Ablehnen]** und verfassen Sie gegebenenfalls einen Kommentar. Dieser Kommentar wird in den Validierungsprotokollen angezeigt.
 1. Bestätigen Sie Ihre Auswahl mit der Schaltfläche **[!UICONTROL Zielgruppenvalidierung]**.
 
-![](assets/confirm-validation-from-console.png)
+![Aktion im Versandfenster mit ausgewähltem „Akzeptieren“, einem eingegebenen Kommentar und der hervorgehobenen Schaltfläche „Zielgruppenvalidierung“.](assets/confirm-validation-from-console.png)
 
 
 Wenn ein Vorgang bereits von einem anderen Benutzer validiert wurde, ist der Validierungs-Link nicht mehr verfügbar.
 
 Wenn ein Prozess abgelehnt wurde, werden die Informationen im Versand-Dashboard wie folgt angezeigt:
 
-![](assets/target-approval-rejected.png)
+![Versand-Dashboard mit der Zielgruppenvalidierung wurde mit der Schaltfläche Zielgruppe validieren und dem Status Zielgruppenbestimmung abgelehnt.](assets/target-approval-rejected.png)
 
 
 ### Über eine Benachrichtigung validieren {#approval-via-notification-messages}
@@ -288,19 +288,19 @@ In der Benutzeroberfläche sind Validierungsprotokolle verfügbar:
 
 * Im Validierungsprotokoll der Kampagne, Unterregisterkarte **[!UICONTROL Validierungen]** der Registerkarte **[!UICONTROL Bearbeiten > Audit]**:
 
-  ![](assets/approval-tracking-from-campaign.png)
+  ![ Unterregisterkarte Kampagne bearbeiten > Audit > Validierungen , in der das Validierungsprotokoll mit Versand, Aktion, Typ und Genehmiger aufgeführt ist.](assets/approval-tracking-from-campaign.png)
 
 * Im Versandprotokoll der Kampagne, Unterregisterkarte **[!UICONTROL Sendungen]** der Registerkarte **[!UICONTROL Bearbeiten > Audit]**:
 
-  ![](assets/approval-tracking-from-campaign-deliveries.png)
+  ![ Unterregisterkarte Kampagne bearbeiten > Audit > Sendungen , auf der jeder Versand mit seinem Zielgruppenbestimmungs- und Inhaltsstatus aufgelistet ist.](assets/approval-tracking-from-campaign-deliveries.png)
 
 * Der Validierungsstatus jedes Versands kann durch Klicken auf die Option **[!UICONTROL Protokolle ausblenden/anzeigen]** auf der Registerkarte **[!UICONTROL Zusammenfassung]** angezeigt werden.
 
-  ![](assets/approval-tracking-delivery-dashboard.png)
+  ![Registerkarte „Versandzusammenfassung“ mit hervorgehobenem Link „Protokolle ausblenden/anzeigen“ und den unten aufgeführten Validierungsprotokollen.](assets/approval-tracking-delivery-dashboard.png)
 
 * Diese Informationen sind zudem über die Registerkarte **[!UICONTROL Audit > Validierungen]** jedes Versands zugänglich.
 
-  ![](assets/approval-tracking-delivery-tab.png)
+  ![Registerkarte Versandprüfung > Validierungen , auf der das Validierungsprotokoll mit Datum, Aktion, Typ, Genehmiger und Kommentar aufgeführt ist.](assets/approval-tracking-delivery-tab.png)
 
 >[!NOTE]
 >
@@ -312,7 +312,7 @@ Wenn bei der Erstellung eines Zielgruppen-Workflows die Validierung automatisch 
 
 Um den Validierungsmodus (manuell oder automatisch) auszuwählen, klicken Sie auf die Registerkarte **[!UICONTROL Bearbeiten > Eigenschaften]** der Kampagne oder der Kampagnenvorlage, dann auf **[!UICONTROL Erweiterte Kampagnenparameter...]** und schließlich auf die Registerkarte **[!UICONTROL Validierungen]**.
 par
-![](assets/approval-mode.png)
+![Registerkarte „Erweiterte Einstellungen - Genehmigungen“ mit geöffneter Dropdown-Liste „Genehmigungsmodus“, auf der die Optionen „Automatisch“ und „Manuell“ angezeigt werden.](assets/approval-mode.png)
 
 >[!NOTE]
 >
@@ -338,7 +338,7 @@ Benachrichtigungs-E-Mails werden automatisch versendet, wenn die Validierung des
 
 Öffnen Sie hierzu das Fenster der Validierungseinstellungen der Kampagne oder der betreffenden Kampagnenvorlage (Registerkarte **[!UICONTROL Bearbeiten > Eigenschaften]** > **[!UICONTROL Erweiterte Kampagnenparameter...]** > **[!UICONTROL Validierungen]**) und wählen Sie **[!UICONTROL Keine Benachrichtigungen senden]**.
 
-![](assets/enable-disable-notifications.png)
+![Registerkarte „Erweiterte Einstellungen - Genehmigungen“ mit der Option „Benachrichtigungsversand nicht aktivieren“.](assets/enable-disable-notifications.png)
 
 ### Inhalt der Benachrichtigungen {#notification-content}
 

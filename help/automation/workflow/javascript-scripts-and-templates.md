@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 98%
+source-wordcount: '1398'
+ht-degree: 88%
 ---
 # Scripts/JavaScript-Templates{#javascript-scripts-and-templates}
 
@@ -39,7 +39,7 @@ In einem Workflow-Diagramm sind Scripts allgegenwärtig:
 * Die &#39;Test&#39;-Aktivität wertet JavaScript-Ausdrücke aus, um die richtige Transition zu aktivieren.
 * Die meisten Textfelder sind JavaScript-Vorlagen: JavaScript-Ausdrücke können zwischen &lt;%= und %> eingefügt werden. Diese Felder enthalten eine Schaltfläche, über die eine Dropdown-Liste zum Eingeben von Ausdrücken geöffnet werden kann.
 
-  ![](assets/script-button.png)
+  ![Schaltfläche mit einem Dropdown-Pfeil rechts neben einem Textfeld, in dem die für Ausdrücke verfügbaren Eigenschaften aufgelistet sind.](assets/script-button.png)
 
 ## Script-Objekte {#objects-exposed}
 
@@ -63,7 +63,7 @@ Die verfügbaren Eigenschaften dieser Objekte sind über die Dropdown-Liste rech
 
 Für das vorliegende Beispiel und die folgenden wird wie unten dargestellt ein Workflow mit einer **JavaScript-Code**-Aktivität und einem **Ende** benötigt.
 
-![](assets/script-1.png)
+![Workflow mit einer JavaScript-Code-Aktivität, die durch eine OK-Transition mit einer Ende-Aktivität verbunden ist.](assets/script-1.png)
 
 Öffnen Sie die **JavaScript-Code**-Aktivität und fügen Sie das folgende Script ein:
 
@@ -104,7 +104,7 @@ Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert 
 
 >[!NOTE]
 >
->Weitere Anwendungsbeispiele für Workflows sind in [diesem Abschnitt](workflow-use-cases.md) verfügbar.
+>Weitere Anwendungsfälle für Workflows sind unter &quot;[-Anwendungsfälle“ ](workflow-use-cases.md).
 
 **Beispiel 1**
 
@@ -116,7 +116,7 @@ In diesem Beispiel wird eine Instanzvariable verwendet, um den auf eine Populati
 
    Beispiel: `instance.vars.segmentpercent = 10;`
 
-   ![](assets/js_ex1.png)
+   ![JavaScript-Code-Aktivität mit der Skriptinstanz .vars.segmentPercent = 10; in das Skriptfeld eingegeben.](assets/js_ex1.png)
 
 1. Fügen Sie eine Abfrageaktivität hinzu und wählen Sie entsprechend Ihren Anforderungen Empfänger für die Zielgruppe aus.
 
@@ -124,7 +124,7 @@ In diesem Beispiel wird eine Instanzvariable verwendet, um den auf eine Populati
 
    Dieser Prozentsatz wird dank der zuvor definierten Instanzvariablen dynamisch aktualisiert.
 
-   ![](assets/js_ex2.png)
+   ![Registerkarte Teilmengen der Aktivität aufteilen mit aktivierter Option „Ausgewählte Datensätze begrenzen“ und auf 50 % begrenzter Stichprobe.](assets/js_ex2.png)
 
 1. Definieren Sie im Abschnitt „Initialisierungs-Script“ auf dem Tab „Erweitert“ der Aufspaltungsaktivität eine JS-Bedingung. Die JS-Bedingung wählt den zufälligen Stichprobenprozentsatz der ersten Transition aus der Aufspaltungsaktivität aus und aktualisiert ihn auf einen Wert, der von der zuvor erstellten Instanzvariablen festgelegt wurde.
 
@@ -132,13 +132,13 @@ In diesem Beispiel wird eine Instanzvariable verwendet, um den auf eine Populati
    activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
    ```
 
-   ![](assets/js_ex3.png)
+   ![Registerkarte Erweitert für Aufspaltungsaktivität mit der Einstellung „Initialisierungsskript“ limiter.percent auf instance.vars.segmentPercent.](assets/js_ex3.png)
 
 1. Stellen Sie sicher, dass das Komplement in einer separaten Transition der Aufspaltungsaktivität generiert wird, und fügen Sie nach jeder der ausgehenden Transitionen Endaktivitäten hinzu.
 
 1. Speichern und starten Sie den Workflow. Das dynamische Sampling wird entsprechend der Instanzvariablen angewendet.
 
-   ![](assets/js_ex4.png)
+   ![Workflow mit JavaScript-Code, einer Abfrage und einer Aufspaltung mit Transitionen des ersten Satzes und der Ergänzung zu zwei Endaktivitäten.](assets/js_ex4.png)
 
 **Beispiel 2**
 
@@ -180,7 +180,7 @@ Beispiel:
 
 1. Erstellen Sie eine Instanzvariable, die über die **[!UICONTROL JavaScript-Code]**-Aktivität den internen Namen eines Versands definiert: **instance.vars.deliveryIN = &quot;DM42&quot;**
 
-   ![](assets/wkf_js_activity_1.png)
+   ![JavaScript-Code-Aktivität mit der Skriptinstanz .vars.deliveryIN = &#39;DM42&#39; im Skriptfeld.](assets/wkf_js_activity_1.png)
 
 1. Erstellen Sie eine Abfrage, deren Zielgruppenbestimmungs- und Filterdimensionen die Empfängerinnen und Empfänger sind. Geben Sie in den Bedingungen an, dass Sie alle Empfängerinnen und Empfänger suchen möchten, denen der durch die Variable spezifizierte Versand gesendet wurde.
 
@@ -190,7 +190,7 @@ Beispiel:
 
    Der Workflow gibt die Empfänger aus, die den Versand DM42 erhalten haben.
 
-   ![](assets/wkf_var_in_query.png)
+   ![Abfragefilter für Empfänger-Versandlogs, bei denen der interne Name des Versands dem Wert von „instance/vars/deliveryIN“ entspricht.](assets/wkf_var_in_query.png)
 
 ## Erweiterte Funktionen {#advanced-functions}
 

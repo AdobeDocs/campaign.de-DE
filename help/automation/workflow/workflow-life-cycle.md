@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 100%
+source-wordcount: '279'
+ht-degree: 89%
 ---
 # Lebenszyklus eines Workflows {#workflow-life-cycle}
 
@@ -42,7 +42,7 @@ Der Lebenszyklus eines Workflows gestaltet sich in drei Hauptetappen:
 
 Beispielsweise sind im unten stehenden Workflow die Aktivitäten **Beginn** und **Versand** umrandet und die Aktivität **Validierung** blinkt.
 
-![](assets/new-workflow-6.png)
+![Workflow mit den beschriebenen Start- und Versandaktivitäten, der ausgeführten Validierungsaktivität und der anschließenden Versandkontrolle und dem Ende](assets/new-workflow-6.png)
 
 Dies bedeutet, dass die ersten beiden Aktivitäten erfolgreich ausgeführt wurden und dass die Validierungsaktivität in Gang ist, d. h. sie wurde erstellt, ist aber noch nicht abgeschlossen.
 
@@ -50,4 +50,4 @@ Oberhalb der Transition nach der Aktivität **Versand** werden die Zeichen **574
 
 Der Workflow wartet also auf die Entscheidung eines Benutzers, der der Gruppe angehört, welche in der **Validierung**-Aktivität ausgewählt wurde. Gruppenmitglieder, deren E-Mail-Adresse oder Mobiltelefonnummer in ihrem Profil gespeichert sind, werden über die entsprechenden Kanäle benachrichtigt.
 
-Weitere Informationen zur Überwachung Ihrer Workflows finden Sie in [diesem Abschnitt](monitor-workflow-execution.md).
+Weitere Informationen zur Überwachung Ihrer Workflows finden Sie unter [Überwachen der Workflow-Ausführung](monitor-workflow-execution.md).

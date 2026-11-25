@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 99%
+source-wordcount: '1123'
+ht-degree: 90%
 ---
 # Anwenden von Typologieregeln{#applying-rules}
 
@@ -45,14 +45,14 @@ Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie im Tab **[!UICONTROL Regeln]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Regeln aus, die im Rahmen dieser Typologie angewendet werden sollen.
 
-   ![](assets/campaign_opt_pressure_sample_1_6.png)
+   ![Registerkarte Typologieregeln mit der Schaltfläche Hinzufügen und dem Dialogfeld Regeln hinzufügen , in dem die auszuwählenden Typologieregeln aufgelistet sind](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. Speichern Sie die Typologie, um sie der Liste der bereits vorhandenen Typologien hinzuzufügen.
 1. Öffnen Sie den Versand, auf den Sie die Regeln anwenden möchten.
 1. Navigieren Sie zu den Versandeigenschaften und öffnen Sie die Registerkarte **[!UICONTROL Typologie]**.
 1. Wählen Sie die Typologie in der Dropdown-Liste aus.
 
-   ![](assets/campaign_opt_pressure_sample_1_7.png)
+   ![Versandeigenschaften, Registerkarte „Typologie“ mit der Dropdown-Liste „Typologie“, in der der Druck auf Kunden/Interessenten aufgelistet ist](assets/campaign_opt_pressure_sample_1_7.png)
 
    >[!NOTE]
    >
@@ -68,7 +68,7 @@ Um die Anwendungskriterien einer Regel zu bestimmen, klicken Sie auf den Link **
 
 Verwenden Sie dann den [Abfrage-Editor](../../v8/start/query-editor.md), um Filterbedingungen zu definieren. Im folgenden Beispiel betrifft die Kapazitätsregel nur Sendungen, die den Begriff „Angebot“ im Titel enthalten, und solche, die vor dem 1. April 2013 erstellt wurden.
 
-![](assets/campaign_opt_create_capacity_criterion.png)
+![Registerkarte „Allgemein“ der Kapazitätsregel mit der Abfrage Anwendungsbedingungen auf der Bezeichnung enthält Angebot und Erstellungsdatum](assets/campaign_opt_create_capacity_criterion.png)
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Im Standard-Ausführungsmodus werden die Regeln in der folgenden Reihenfolge aus
 >
 >Wenn Sie das Modul &quot;Interaction&quot; nutzen, werden die Eignungsregeln gleichzeitig mit den Filterregeln (für Angebote in Versandentwürfen) oder während der Personalisierungsphase beim Aufruf des Angebotsmoduls angewendet.
 
-Sie können die Anwendungsreihenfolge von Regeln mit demselben Typ mithilfe des entsprechenden Felds auf der Registerkarte **[!UICONTROL Allgemein]** der Regel anpassen. Dies ist insbesondere interessant, wenn in der gleichen Verarbeitungsphase der Nachrichten mehrere Regeln zur Anwendung kommen.**&#x200B;**
+Sie können die Anwendungsreihenfolge von Regeln mit demselben Typ mithilfe des entsprechenden Felds auf der Registerkarte **[!UICONTROL Allgemein]** der Regel anpassen. Dies ist insbesondere interessant, wenn in der gleichen Verarbeitungsphase der Nachrichten mehrere Regeln zur Anwendung kommen.****
 
 Beispielsweise wird eine Druckregel mit einer Anwendungsreihenfolge von 20 vor einer Druckregel mit einem Wert von 30 ausgeführt.
 
@@ -119,7 +119,7 @@ Beispielsweise wird eine Druckregel mit einer Anwendungsreihenfolge von 20 vor e
 
 Für **[!UICONTROL Kontrollregeln]** können Sie festlegen, zu welchem Zeitpunkt des Versandslebenszyklus die Regel angewendet wird: vor oder nach der Zielgruppenbestimmung, zu Beginn der Personalisierung, am Ende der Analyse. Wählen Sie den gewünschten Wert in der Dropdown-Liste des Felds **[!UICONTROL Phase]** auf der Registerkarte **[!UICONTROL Allgemein]** der Typologieregel aus.
 
-![](assets/campaign_opt_define_control_phase.png)
+![Registerkarte „Allgemein“ der Kontrolltypologieregel mit der Dropdown-Liste „Phase“, in der die vier Anwendungsphasen aufgelistet sind](assets/campaign_opt_define_control_phase.png)
 
 Mögliche Werte:
 
@@ -147,7 +147,7 @@ Mögliche Werte:
 
 Optional können Sie mit dem Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** Sendungen mit dem Versand-Server (MTA) verknüpfen, der die betreffende Affinität verwaltet. Damit können Sie die Zustellung von E-Mails auf bestimmte Geräte oder IP-Adressen begrenzen.
 
-![](assets/campaign_opt_select_ip_affinity.png)
+![Registerkarte „Typologie“ mit dem Feld „Affinität“ unter Verwaltung der Affinitäten mit IP-Adressen](assets/campaign_opt_select_ip_affinity.png)
 
 >[!NOTE]
 >
@@ -161,9 +161,9 @@ Optional können Sie mit dem Feld **[!UICONTROL Verwaltung der IP-Adressen-Affin
 
 In der Registerkarte **[!UICONTROL Dezentrales Marketing]** können Sie die Neuzuordnung von Typologien und/oder Regeln definieren, die bei der Bestellung und/oder Reservierung einer freigegebenen Kampagne angewendet werden. Typologien/Regeln, die für eine Lokalstelle definiert wurden (und mit denen verknüpft sind, die für die Zentralstelle definiert wurden), ersetzen Regeln/Typologien, die mit der Zentralstelle verknüpft sind. Durch die Neuzuordnung können Sie die Regeln der Zentralstelle an die Lokalstellen anpassen, die die Kampagne bestellen.
 
-![](assets/simu_campaign_opti_distrib_mkg.png)
+![Registerkarte „Verteiltes Marketing“ mit der Organisationseinheit und den zugehörigen zentralen Typologiefeldern](assets/simu_campaign_opti_distrib_mkg.png)
 
 >[!NOTE]
 >
 >Im Zusammenhang mit den Typologien und Typologieregeln wird der Tab **[!UICONTROL Dezentrales Marketing]** angeboten, sofern Ihre Lizenz die Option Distributed Marketing beinhaltet. Überprüfen Sie Ihren Lizenzvertrag.\
->Weitere Informationen zum verteilten Marketing finden Sie in [diesem Abschnitt](../distributed-marketing/about-distributed-marketing.md).
+>Weitere Informationen zum verteilten Marketing finden Sie unter [Erste Schritte mit verteiltem Marketing](../distributed-marketing/about-distributed-marketing.md).

@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 100%
+source-wordcount: '495'
+ht-degree: 75%
 ---
 # Senden personalisierter Warnungen an Benutzer{#sending-personalized-alerts-to-operators}
 
@@ -37,7 +37,7 @@ Deshalb muss der folgende Workflow erstellt werden:
 1. Verwenden Sie die Aktivität **[!UICONTROL Test]**, um die Populationsgröße festzustellen.
 1. Verwenden Sie die Aktivität **[!UICONTROL Warnung]**, um je nach Ergebnis der **[!UICONTROL Test]**-Aktivität eine Warnung an einen Benutzer zu senden.
 
-![](assets/uc_operator_1.png)
+![Workflow mit einer Abfrage-, JavaScript-Code- und Testaktivität; die Verzweigung „True“ führt zu einer Warnungsaktivität, „False“ bis Ende 2.](assets/uc_operator_1.png)
 
 ## Die Population in der Instanzvariablen speichern {#saving-the-population-to-the-instance-variable}
 
@@ -60,21 +60,21 @@ Achten Sie darauf, dass der JavaScript-Code mit Ihren Workflow-Informationen üb
 * Das Tag **[!UICONTROL queryDef schema]** sollte mit dem Namen der in der Abfrageaktivität verwendeten Zielgruppendimension übereinstimmen.
 * Das Tag **[!UICONTROL node expr]** sollte mit dem Namen der Felder übereinstimmen, die Sie abrufen möchten.
 
-![](assets/uc_operator_3.png)
+![JavaScript-Code-Skript mit Hervorhebung des :query-Schemas „queryDef“ und der Zielknoten „firstName“ und „lastName“.](assets/uc_operator_3.png)
 
 Um diese Informationen abzurufen, gehen Sie wie folgt vor:
 
 1. Klicken Sie in der Aktivität **[!UICONTROL Abfrage]** mit der rechten Maustaste auf die ausgehende Transition und wählen Sie dann **[!UICONTROL Zielgruppe anzeigen...]**.
 
-   ![](assets/uc_operator_4.png)
+   ![Rechtsklick-Menü in der ausgehenden Transition der Abfrage -Aktivität mit ausgewählter Zielgruppe anzeigen.](assets/uc_operator_4.png)
 
 1. Klicken Sie mit der rechten Maustaste auf die Liste und wählen Sie dann **[!UICONTROL Liste konfigurieren]** aus.
 
-   ![](assets/uc_operator_5.png)
+   ![Einträge der Zielliste, die im Kontextmenü geöffnet und die Option Liste konfigurieren ausgewählt sind.](assets/uc_operator_5.png)
 
 1. Die Zielgruppendimension der Abfrage und die Feldnamen werden in der Liste angezeigt.
 
-   ![](assets/uc_operator_6.png)
+   ![Registerkarte „Listenspalten konfigurieren“ mit hervorgehobenem :query-Element und Feldern der Zielgruppendimension.](assets/uc_operator_6.png)
 
 ## Populationsgröße überprüfen {#testing-the-population-count}
 
@@ -84,7 +84,7 @@ Fügen Sie den unten stehenden Code in die **[!UICONTROL Test]**-Aktivität ein,
 var.recCount>0
 ```
 
-![](assets/uc_operator_7.png)
+![Testen Sie die Aktivität mit einer bedingten Verzweigung „True“ mithilfe der Bedingung vars.recCount>0 und der Standardverzweigung „False“.](assets/uc_operator_7.png)
 
 ## Warnung einrichten {#setting-up-the-alert}
 
@@ -108,4 +108,4 @@ for each (var item in items){
 >Mit dem Befehl **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** können Sie eines der Felder hinzufügen, die mit der Aktivität **[!UICONTROL JavaScript-Code]** in der Instanzvariablen gespeichert wurden.\
 >Sie können beliebig viele Felder hinzufügen, vorausgesetzt diese wurden in den JavaScript-Code eingefügt.
 
-![](assets/uc_operator_8.png)
+![Warnaktivität, die einem Benutzer zugewiesen ist, mit einer Meldung, die gespeicherte Elemente in einer Schleife durchläuft, um Vor- und Nachnamen aufzulisten.](assets/uc_operator_8.png)

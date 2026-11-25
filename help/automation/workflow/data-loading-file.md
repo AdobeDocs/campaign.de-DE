@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 100%
+source-wordcount: '1397'
+ht-degree: 87%
 ---
 # Laden (Datei){#data-loading-file}
 
@@ -47,11 +47,11 @@ Im oberen Bereich des Konfigurationsfensters für diese Aktivität können Sie d
 >
 >Unterstützt werden ausschließlich Dateiformate mit einfach strukturierten Daten (z. B. CSV, TXT etc.). Die Verwendung des XML-Formats wird nicht empfohlen. Mit der Client-Konsole können Sie Dateien mit einer Größe von bis zu 150 MB laden. In der Web-Benutzeroberfläche ist die Aktivität „Datei laden“ auf 50 MB beschränkt. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=de){target="_blank"}
 
-![](assets/s_advuser_wf_etl_file.png)
+![Aktivität „Laden (Datei)“ mit einer Beispieldatei, Vorschau der Spalten, Optionen für Dateinamen und Ablehnungsverwaltung.](assets/s_advuser_wf_etl_file.png)
 
 Es besteht die Möglichkeit, eine Vorab-Bearbeitung zu definieren, die während des Dateiimports ausgeführt werden soll. Hierbei kann es sich z. B. darum handeln, dass die Datei nicht auf dem Server, sondern im Zuge der Dateiverarbeitung entpackt wird (was Speicherplatz für die entpackte Datei spart). Wählen Sie die Option **[!UICONTROL Datei vorab bearbeiten]** und wählen Sie dann eine der drei Optionen: **[!UICONTROL Keine]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (gpg).
 
-![](assets/preprocessing-dataloading.png)
+![Laden (Datei) mit Vorab-Bearbeitung der ausgewählten Datei und der Befehlsliste: Keine, Dekomprimierung, Entschlüsseln.](assets/preprocessing-dataloading.png)
 
 >[!IMPORTANT]
 >
@@ -63,7 +63,7 @@ Beim Laden einer Datei wird das Spaltenformat automatisch erkannt und jedem Date
 
 Verwenden Sie in diesem Fall im Hauptfenster der Aktivität **[!UICONTROL Laden (Datei)]** den Link **[!UICONTROL Zur Formatänderung hier klicken…]**. Das Detailfenster des Formats wird geöffnet.
 
-![](assets/file_loading_columns_format.png)
+![Dateiformatfenster mit allgemeinen Dateieinstellungen und einer Spaltentabelle mit dem Datentyp „NULL zulassen“ und „Länge“.](assets/file_loading_columns_format.png)
 
 Sie haben nun die Möglichkeit, allgemeine Formatierungsoptionen der Datei sowie das Format der einzelnen Spalten anzupassen.
 
@@ -108,7 +108,7 @@ Verschiedene Optionen zum Umgang mit den Spaltenwerten stehen zur Auswahl:
 
 Im folgenden Beispiel können Sie täglich eine Datei auf dem Server erfassen, ihren Inhalt laden und die Daten in der Datenbank entsprechend den enthaltenen Informationen aktualisieren. Die zu erfassende Datei enthält Informationen über Kundinnen und Kunden, die möglicherweise Einkäufe getätigt haben (für mehr oder weniger als 3.000 Euro), eine Rückerstattung bei einem Kauf beantragt haben oder den Shop besucht haben, ohne etwas zu kaufen. Abhängig von diesen Informationen werden verschiedene Prozesse auf ihr Profil in der Datenbank angewendet.
 
-![](assets/s_advuser_load_file_sample_0.png)
+![Workflow mit Datei-Wächter, Laden (Datei) und Aufspaltung von Daten, was zu vier Aktivitäten vom Typ „Daten-Update“ führt.](assets/s_advuser_load_file_sample_0.png)
 
 1. Die Datei-Wächter-Aktivität dient dazu, in definierten Zeitabständen die in einem bestimmten Verzeichnis gespeicherten Dateien abzurufen.
 
@@ -116,13 +116,13 @@ Im folgenden Beispiel können Sie täglich eine Datei auf dem Server erfassen, i
 
    Weiterführende Informationen zum Thema **[!UICONTROL Datei-Wächter]** finden Sie im Abschnitt [Datei-Wächter](file-collector.md).
 
-   ![](assets/s_advuser_load_file_sample_1.png)
+   ![Registerkarte „Datei-Wächter-Verzeichnis“ mit einem Server-Verzeichnis und dem Filter für Kundentextdateien.](assets/s_advuser_load_file_sample_1.png)
 
    Im **[!UICONTROL Planung]**-Tab wird die Ausführungshäufigkeit des Datei-Wächters konfiguriert, d. h. in welchen Abständen das Vorhandensein derartiger Dateien überprüft wird.
 
    Hier soll der Datei-Wächter an allen Tagen, an denen die Geschäfte geöffnet haben, um 21 Uhr ausgelöst werden.
 
-   ![](assets/s_advuser_load_file_sample_2.png)
+   ![Registerkarte „Datei-Wächter-Zeitplan“ mit aktivierter Planausführung und dem täglichen 21:00 Uhr-Trigger sowie der Schaltfläche „Ändern“.](assets/s_advuser_load_file_sample_2.png)
 
    Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]** rechts unten im Editor, um die Planung entsprechend zu konfigurieren.
 
@@ -130,7 +130,7 @@ Im folgenden Beispiel können Sie täglich eine Datei auf dem Server erfassen, i
 
 1. Konfigurieren Sie anschließend die Aktivität „Laden (Datei)“, um anzugeben, wie die abgerufenen Dateien zu lesen sind. Wählen Sie hierzu eine Beispieldatei aus, die dieselbe Struktur aufweist, wie die zu ladenden Dateien.
 
-   ![](assets/s_advuser_load_file_sample_3.png)
+   ![Aktivität „Laden (Datei)“ mit einer Beispieldatei und einer Vorschau der Spalten „Ereignis“, „Nachname“, „Vorname“ und andere.](assets/s_advuser_load_file_sample_3.png)
 
    Im vorliegenden Beispiel besteht die Datei aus fünf Spalten:
 
@@ -143,15 +143,15 @@ Im folgenden Beispiel können Sie täglich eine Datei auf dem Server erfassen, i
 
    Die Funktionsweise dieser Aktivität wird im Abschnitt beschrieben.
 
-   ![](assets/s_advuser_load_file_sample_4.png)
+   ![Teilmenge für „Kein Kauf“ aufteilen, wobei der Link „Bearbeiten“ eine Abfrage öffnet, bei der das Feld „Ereignis“ als Ausdruck ausgewählt ist.](assets/s_advuser_load_file_sample_4.png)
 
    Erstellen Sie eine Teilmenge pro Wert in der **Ereignis**-Spalte.
 
-   ![](assets/s_advuser_load_file_sample_5.png)
+   ![Filterbedingung der Abfrage mit dem Ausdruck „Ereignis (Ereignis)“ gleich 0 für die Teilmenge.](assets/s_advuser_load_file_sample_5.png)
 
    Die **[!UICONTROL Aufspaltung]** stellt sich somit wie folgt dar:
 
-   ![](assets/s_advuser_load_file_sample_6.png)
+   ![Aufspaltungsaktivität mit Registerkarten für Teilmengen von weniger als 3.000 Käufen, Kein Kauf, Rückgabe und über 3.000 Käufen; Kein Kauf angezeigt.](assets/s_advuser_load_file_sample_6.png)
 
 1. Definieren Sie dann die auszuführenden Prozesse für jeden Populationstyp. In unserem Beispiel werden wir in der Datenbank die **[!UICONTROL Daten aktualisieren]**. Platzieren Sie dazu die Aktivität **[!UICONTROL Daten-Update]** am Ende jeder ausgehenden Transition der Aktivität „Aufspaltung“.
 

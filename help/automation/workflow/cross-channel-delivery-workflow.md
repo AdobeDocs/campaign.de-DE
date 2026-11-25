@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '884'
+ht-degree: 75%
 ---
 # Workflow für einen kanalübergreifenden Versand{#cross-channel-delivery-workflow}
 
@@ -47,18 +47,18 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
    * Den Empfängern, die die E-Mail geöffnet, aber nicht auf den Link zum Angebot geklickt haben, eine SMS zu senden.
    * Die Empfänger, die die E-Mail geöffnet und den Link angeklickt haben, zur Datenbank hinzuzufügen.
 
-![](assets/wkf_cross-channel_7.png)
+![Workflow aus einer Gold-Mitgliederabfrage und E-Mail über Warten und Aufspaltung, um E-Mail, SMS und Listen-Update zu erinnern](assets/wkf_cross-channel_7.png)
 
 ## Schritt 1: Aufbauen einer Zielgruppe {#step-1--build-the-audience}
 
 Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung der Empfänger.
 
-1. Kampagne erstellen. Weitere Informationen finden Sie auf [dieser Seite](../campaigns/marketing-campaign-create.md).
+1. Kampagne erstellen. Weitere Informationen finden Sie unter [Erstellen von Marketing-](../campaigns/marketing-campaign-create.md).
 1. Fügen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](query.md).
 1. Definieren Sie die Empfängerinnen und Empfänger, die Ihre Sendungen erhalten sollen. Wählen Sie beispielsweise „Gold“-Mitglieder als Zieldimension aus.
 1. Fügen Sie Ihrer Abfrage Filterbedingungen hinzu. Wählen Sie in diesem Beispiel Empfängerinnen und Empfänger aus, die über eine E-Mail-Adresse und eine Mobiltelefonnummer verfügen.
 
-   ![](assets/wkf_cross-channel_3.png)
+   ![Filterfenster für Mitglieder der Gold-Liste mit den Bedingungen E-Mail ist nicht leer und Mobile ist nicht leer](assets/wkf_cross-channel_3.png)
 
 1. Speichern Sie Ihre Änderungen.
 
@@ -67,21 +67,21 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 1. Erstellen Sie einen E-Mail-Versand.
 1. Gestalten Sie die Nachricht und fügen Sie einen Link einschließlich eines Angebots in den Inhalt ein.
 
-   ![](assets/wkf_cross-channel_1.png)
+   ![Fenster Angebotsverwaltung mit den Optionen Angebotsauswahl, Feld Platzierung und Nicht infrage kommende Empfänger ausschließen](assets/wkf_cross-channel_1.png)
 
-   Weiterführende Informationen zum Einfügen eines Angebots in den Nachrichtentext befinden sich auf [dieser Seite](../../v8/send/email.md).
+   Weiterführende Informationen zum Einfügen eines Angebots in den Nachrichtentext finden Sie unter [E-Mails mit Adobe Campaign senden](../../v8/send/email.md).
 
 1. Speichern Sie Ihre Änderungen.
 1. Klicken Sie mit der rechten Maustaste auf die Aktivität **[!UICONTROL E-Mail-Versand]**, um sie zu öffnen.
 1. Wählen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** aus, um die Population und die Trackinglogs abzurufen.
 
-   ![](assets/wkf_cross-channel_2.png)
+   ![Aktivität „E-Mail-Versand“ mit ausgewählter Option „Ausgehende Transition erzeugen“](assets/wkf_cross-channel_2.png)
 
    Mit diesen Informationen können Sie abhängig vom Verhalten des Empfängers beim Erhalt der ersten E-Mail eine weitere Nachricht senden.
 
 1. Fügen Sie eine **[!UICONTROL Warten]**-Aktivität hinzu, um dem Empfänger einige Tage Zeit zu geben, die E-Mail zu öffnen.
 
-   ![](assets/wkf_cross-channel_4.png)
+   ![Warteaktivität mit dem Feld Dauer auf 3D gesetzt](assets/wkf_cross-channel_4.png)
 
 ## Schritt 3: Segmentieren der resultierenden Zielgruppe {#step-3--segment-the-resulting-audience}
 
@@ -90,32 +90,32 @@ Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie 
 1. Fügen Sie zum Workflow die Aktivität **Aufspaltung** hinzu und öffnen Sie sie. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](split.md).
 1. Erstellen Sie aus der zuvor in der Abfrage berechneten Population drei Segmente.
 
-   ![](assets/wkf_cross-channel_6.png)
+   ![Registerkarte Aktivitätsuntergruppen aufteilen mit drei Untergruppen: E-Mail wurde nicht geöffnet, geöffnet, aber nicht auf den Link geklickt, geklickt](assets/wkf_cross-channel_6.png)
 
 1. Wählen Sie für die erste Teilmenge die Option **[!UICONTROL Filterbedingung für die Eingangspopulation hinzufügen]** aus und danach **[!UICONTROL Bearbeiten]**.
 
-   ![](assets/wkf_cross-channel_8.png)
+   ![Die Teilmenge Aufspaltung hat die E-Mail mit der Filterbedingung Hinzufügen für die eingehende Population und den Link Bearbeiten nicht geöffnet](assets/wkf_cross-channel_8.png)
 
 1. Wählen Sie **[!UICONTROL Versandempfänger]** als den Einschränkungsfilter und danach **[!UICONTROL Weiter]** aus.
 
-   ![](assets/wkf_cross-channel_9.png)
+   ![Fenster Zielgruppendimension und Filterdimension mit in der Liste der Einschränkungsfilter ausgewählten Empfängern eines Versands](assets/wkf_cross-channel_9.png)
 
 1. Wählen Sie in den Filterparametern in der Dropdown-Liste **[!UICONTROL Verhalten]** die Option **[!UICONTROL Empfänger, die weder geöffnet noch geklickt haben (E-Mail)]** aus. Wählen Sie danach die zu sendende E-Mail mit dem Angebot aus der Versandliste aus. Klicken Sie auf **[!UICONTROL Beenden]**.
 
-   ![](assets/wkf_cross-channel_10.png)
+   ![Fenster des Zielelements mit dem Verhalten auf Empfänger festgelegt, die nicht geöffnet oder geklickt haben (E-Mail) und einen Versand ausgewählt haben](assets/wkf_cross-channel_10.png)
 
 1. Gehen Sie für die zweite Teilmenge analog vor, wählen Sie aber aus der Dropdown-Liste **[!UICONTROL Verhalten]** die Option **[!UICONTROL Empfänger, die nicht geklickt haben (E-Mail)]** aus.
 
-   ![](assets/wkf_cross-channel_11.png)
+   ![Verhaltensliste mit ausgewählten Empfängern öffnen, die nicht geklickt haben (E-Mail)](assets/wkf_cross-channel_11.png)
 
 1. Wählen Sie für die dritte Teilmenge zuerst **[!UICONTROL Filterbedingung für die Eingangspopulation hinzufügen]** und **[!UICONTROL Bearbeiten]** aus und danach die Option **[!UICONTROL Spezifische Filterdimension verwenden]**.
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Filterdimension]** die Option **[!UICONTROL Trackinglogs der Empfänger]** aus und selektieren Sie in der **[!UICONTROL Liste der Einschränkungsfilter]** die Option **[!UICONTROL Filterbedingungen]** und wählen Sie **[!UICONTROL Weiter]** aus.
 
-   ![](assets/wkf_cross-channel_12.png)
+   ![Verwenden Sie eine bestimmte Filterdimension, die ausgewählt wurde, wobei die Filterdimension auf das Trackinglog des Empfängers eingestellt ist](assets/wkf_cross-channel_12.png)
 
 1. Wählen Sie die Filterbedingungen folgendermaßen aus:
 
-   ![](assets/wkf_cross-channel_13.png)
+   ![Filterbedingungen: Typ ist gleich E-Mail-Klick, Versandbezeichnung ist gleich E-Mail mit Winterangebot und Winterangebot](assets/wkf_cross-channel_13.png)
 
 1. Klicken Sie auf **[!UICONTROL Beenden]**, um Ihre Änderungen zu speichern.
 

@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 100%
+source-wordcount: '735'
+ht-degree: 91%
 ---
 # Verwenden von Aggregaten{#using-aggregates}
 
@@ -37,7 +37,7 @@ Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erst
 1. Zuordnung der Empfänger zum Ergebnis des Aggregats im selben Schema.
 1. Filterung der Empfänger mithilfe des Aggregats im bearbeiteten Schema.
 
-![](assets/datamanagement_usecase_1.png)
+![Workflow: Empfänger- und DateMax-Abfragen geben die Aktivität Schema bearbeiten und dann die Aktivität Aufspaltung und Ende ein.](assets/datamanagement_usecase_1.png)
 
 ## &#x200B;1. Schritt: Berechnung des Aggregats {#step-1--calculating-the-aggregate-result}
 
@@ -46,7 +46,7 @@ Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erst
 1. Wählen Sie in den aufeinanderfolgenden Fenstern die Optionen **[!UICONTROL Daten in Relation mit der Filterdimension]** und **[!UICONTROL Daten der Filterdimension]**.
 1. Definieren Sie im Fenster **[!UICONTROL Hinzuzufügende Daten]** eine neue Spalte zur Berechnung des maximalen Werts im Feld **Erstellungsdatum** der Empfängertabelle. Verwenden Sie hierzu den Ausdruckseditor oder geben Sie direkt **max(@created)** in der **[!UICONTROL Ausdruck]**-Spalte ein. Klicken Sie dann auf **[!UICONTROL Beenden]**.
 
-   ![](assets/datamanagement_usecase_2.png)
+   ![Daten zum Hinzufügen eines Fensters mit der Ausgabespalte Max(Erstellungsdatum) in der Spalte Ausdruck und der Schaltfläche Beenden.](assets/datamanagement_usecase_2.png)
 
 1. Klicken Sie auf **[!UICONTROL Zusätzliche Daten bearbeiten]** und dann auf **[!UICONTROL Erweiterte Parameter…]**. Aktivieren Sie die Option **[!UICONTROL Automatisches Hinzufügen der Primärschlüssel der Zielgruppendimension deaktivieren]**.
 
@@ -65,7 +65,7 @@ Verwenden Sie die Schema-Bearbeitung, um die auf Empfänger bezogene Abfrage mit
    * Aktivieren Sie die Option **[!UICONTROL Einfachen Join verwenden]**, um das Ergebnis des Aggregats zu jedem Empfänger der Hauptmenge zuzuordnen.
    * Geben Sie schließlich an, dass es sich bei der Relation um eine **[!UICONTROL 1:1-Relation]** handelt.
 
-   ![](assets/datamanagement_usecase_3.png)
+   ![Relationsdefinition mit temporärem Schema DateMax, einen einfachen Join verwenden und einfachen Link vom Typ 11 ausgewählt.](assets/datamanagement_usecase_3.png)
 
 Auf diese Weise wird das Ergebnis des Aggregats mit jedem einzelnen der Empfänger verknüpft.
 
@@ -86,7 +86,7 @@ Sobald die Relation hergestellt wurde, bilden das Aggregatergebnis und die Empfa
    * **[!UICONTROL Ausdruck]**: `toDate([target/@created])`.
    * **[!UICONTROL Wert`toDate([datemax/expr####])`]**, wobei expr#### dem in der Aggregatabfrage definierten Aggregat entspricht.
 
-   ![](assets/datamanagement_usecase_4.png)
+   ![Filter des Zielelements: ToDate/target@created gleich DateOnly(Max(Erstellungsdatum)).](assets/datamanagement_usecase_4.png)
 
 Das Ergebnis der Aufspaltung entspricht somit den am selben Tag wie die letzte bekannte Erstellung erstellten Empfängern.
 

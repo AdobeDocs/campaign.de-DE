@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '214'
+ht-degree: 87%
 ---
 # Und-Verknüpfung{#and-join}
 
@@ -34,7 +34,7 @@ Bei einer Verknüpfung wird die ausgehende Transition erst aktiviert, wenn alle 
 
 Beispielsweise können Sie eine Und-Verknüpfungsaktivität bei der Inhaltserstellung und Automatisierung des Versand verwenden, um sicherzustellen, dass ein Versand erst gestartet wird, wenn die Zielgruppe abgefragt und die Schritte zur Inhaltsaktualisierung abgeschlossen sind. Ein spezieller Anwendungsfall ist verfügbar unter
 
-![](assets/and-join-usage.png)
+![Workflow, bei dem eine Verzweigung eine Abfrage und Content-Management parallel in einen UND-Join vor dem Versand ausführt.](assets/and-join-usage.png)
 
 >[!NOTE]
 >
@@ -46,4 +46,4 @@ Die ausgehende Transition darf nur eine der Populationen der eingehenden Transit
 
 >[!CAUTION]
 >
->Bei Verwendung einer **UND-Verknüpfung** werden die Ereignisvariablen zusammengeführt. Wenn eine Variable aber mehrmals definiert wurde, entsteht ein Konflikt und es wird ein unbestimmter Wert ausgegeben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](javascript-scripts-and-templates.md#event-variables).
+>Bei Verwendung einer **UND-Verknüpfung** werden die Ereignisvariablen zusammengeführt. Wenn eine Variable aber mehrmals definiert wurde, entsteht ein Konflikt und es wird ein unbestimmter Wert ausgegeben. Weitere Informationen hierzu finden Sie unter [Ereignisvariablen](javascript-scripts-and-templates.md#event-variables).

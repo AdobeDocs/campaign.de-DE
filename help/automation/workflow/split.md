@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 83%
 ---
 # Aufspaltung{#split}
 
@@ -37,9 +37,9 @@ Diese Aktivität löst keine Vereinigung der eingehenden Populationen aus. Wenn 
 >
 >Aufspaltungsvorgänge können nicht für Tabellen mit unterschiedlichen Quellen durchgeführt werden. Zu diesem Zweck müssen Sie eine **Anreicherungsaktivität** vor der **Aufspaltungsaktivität** hinzufügen.
 
-* Weiterführende Informationen zur Aufspaltungsaktivität finden Sie in [diesem Abschnitt](targeting-workflows.md#create-subsets-using-the-split-activity).
-* Ein Beispiel für die Verwendung der Aufspaltungs-Aktivität zur Segmentierung der Zielgruppe in unterschiedliche Populationen mithilfe von Filterbedingungen finden Sie in [diesem Abschnitt](cross-channel-delivery-workflow.md).
-* Ein Beispiel für die Verwendung einer Instanzvariablen in einer Aufspaltungs-Aktivität finden Sie in [diesem Abschnitt](javascript-scripts-and-templates.md).
+* Ein Beispiel für die verwendete Aufspaltungsaktivität finden Sie unter [Erstellen von Teilmengen mithilfe der Aufspaltungsaktivität](targeting-workflows.md#create-subsets-using-the-split-activity).
+* Im Abschnitt „Workflow für den kanalübergreifenden Versand“ wird ein Beispiel beschrieben, das veranschaulicht, wie die Aufspaltungsaktivität verwendet wird[ um die Zielgruppe mithilfe von Filterbedingungen in verschiedene Populationen ](cross-channel-delivery-workflow.md).
+* Ein Beispiel für die Verwendung einer Instanzvariablen in einer Split-Aktivität finden Sie in [JavaScript-Skripten und -Vorlagen](javascript-scripts-and-templates.md).
 
 Konfigurieren Sie die Aktivität, indem Sie im Tab **[!UICONTROL Teilmengen]** jeweils einen Titel und die Auswahlkriterien der Teilmengen angeben. Geben Sie im Tab **[!UICONTROL Allgemein]** die Zielgruppendimension an.
 
@@ -62,11 +62,11 @@ Gehen Sie wie folgt vor:
 
    Mit einem Assistenten können Sie den Auswahlmodus für Einträge dieser Teilmenge auswählen. [Weitere Informationen](#limit-the-number-of-subset-records).
 
-   ![](assets/s_user_segmentation_partage4.png)
+   ![Registerkarte Untergruppen mit Untergruppe 1, Begrenzung der ausgewählten Datensätze und des Links Bearbeiten , der den Assistenten zur Einschränkung öffnet](assets/s_user_segmentation_partage4.png)
 
 1. **** Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** können Sie weitere Teilmengen definieren.
 
-   ![](assets/s_user_segmentation_partage_add.png)
+   ![Registerkarte „Untergruppen“ mit der Schaltfläche „Hinzufügen“ und den Registerkarten „Untergruppe 1“, „Untergruppe 2“ und „Untergruppe 3“ unten](assets/s_user_segmentation_partage_add.png)
 
    >[!NOTE]
    >
@@ -74,7 +74,7 @@ Gehen Sie wie folgt vor:
 
    Für jede Teilmenge weist die Aufspaltung standardmäßig eine ausgehende Transition auf.
 
-   ![](assets/s_user_segmentation_partage_add2.png)
+   ![Aufspaltungsaktivität mit einer ausgehenden Transition pro Teilmenge: Teilmenge 1, Teilmenge 2 und Teilmenge 3](assets/s_user_segmentation_partage_add2.png)
 
    Sie können jedoch auch alle Teilmengen in einer ausgehenden Transition zusammenzufassen. Kreuzen Sie hierzu im **[!UICONTROL Allgemein]**-Tab die Option **[!UICONTROL Alle Teilmengen in derselben Tabelle erzeugen]** an. In diesem Fall kann der Segment-Code verwendet werden, um die Zugehörigkeit zu einer bestimmten Teilmenge anzuzeigen.
 
@@ -93,15 +93,15 @@ Es besteht die Möglichkeit, die Anzahl an Datensätzen in Teilmengen zu begrenz
 
      Angenommen, das Feld **[!UICONTROL Alter]** wurde als Sortierungskriterium gewählt und die Anzahl der auszugebenden Datensätze auf 100 begrenzt. Wenn nun die 2000 jüngsten Empfänger in der Datenbank alle 18 Jahre alt sind, werden aus diesen 2000 Empfängern 100 zufällig ausgewählt.
 
-   ![](assets/s_user_segmentation_partage_wz1.png)
+   ![Typ des Limitassistenten-Schritts: Zufallsauswahl, erste Datensätze nach der Sortierung oder erste Datensätze nach der Sortierung (Kriterien, zufällig)](assets/s_user_segmentation_partage_wz1.png)
 
 1. Wenn Sie sich für die Definition von Sortierungskriterien entscheiden, können Sie im darauffolgenden Schritt die Spalten und die Reihenfolge der Sortierung bestimmen.
 
-   ![](assets/s_user_segmentation_partage_wz1.1.png)
+   ![Schritt des Sortierassistenten mit Zielgruppen- und Filterdimensionen und absteigender Sortierung nach Erstellungsdatum und Firma](assets/s_user_segmentation_partage_wz1.1.png)
 
 1. Wählen Sie dann die Begrenzungsmethode aus.
 
-   ![](assets/s_user_segmentation_partage_wz2.png)
+   ![Limits-Assistentenschritt mit ausgewählter Größe (in %) und einem Wert von 10,00 sowie den anderen Datenbegrenzungsoptionen](assets/s_user_segmentation_partage_wz2.png)
 
    Verschiedene Möglichkeiten bieten sich Ihnen:
 
@@ -125,15 +125,15 @@ Wenn Sie beispielsweise das Feld **[!UICONTROL Sprache]** als Gruppierungsfeld a
 
 1. Kreuzen Sie die Option **[!UICONTROL Durch Datengruppierung]** oder **[!UICONTROL Durch Datengruppierung (in %)]** an und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/s_user_segmentation_partage_wz3.png)
+   ![Limits-Assistent“ mit ausgewählter Option „Durch Datengruppierung“ und Aufforderung, auf „Weiter“ zu klicken, um zusätzliche Informationen einzugeben](assets/s_user_segmentation_partage_wz3.png)
 
 1. Geben Sie dann das oder die Gruppierungsfelder (z. B. **[!UICONTROL Sprache]**) an und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/s_user_segmentation_partage_wz4.png)
+   ![Schritt des Datengruppierungsassistenten, in dem das Feld Sprache als Gruppierungsausdruck aufgelistet wird](assets/s_user_segmentation_partage_wz4.png)
 
 1. Definieren Sie nun die Begrenzungswerte der Datengruppierung (je nach gewählter Option in Prozent oder mit einer festen Größe). Um für jeden Wert die gleiche Begrenzung festzulegen, beispielsweise wenn Sie die Anzahl der Datensätze für jede Sprache auf 10 festlegen möchten, wählen Sie die Option **[!UICONTROL Alle Datengruppierungen haben die gleiche Größe]**. Wählen Sie die Option **[!UICONTROL Begrenzungen nach Gruppierungswert]**, um eine unterschiedliche Begrenzung für jeden Wert festzulegen. Dies erlaubt die Angabe einer unterschiedlichen Begrenzung für jeden Wert (beispielsweise 20 für Englisch, 50 für Deutsch etc.).
 
-   ![](assets/s_user_segmentation_partage_wz5.png)
+   ![Datengruppierungsschritt mit „Alle Datengruppierungen sind gleich groß“ und haben einen Wert von 8](assets/s_user_segmentation_partage_wz5.png)
 
 1. Klicken Sie auf **[!UICONTROL Beenden]**, um die Begrenzungen zu bestätigen und zur Konfiguration der Aufspaltungsaktivität zurückzukehren.
 
@@ -141,9 +141,9 @@ Wenn Sie beispielsweise das Feld **[!UICONTROL Sprache]** als Gruppierungsfeld a
 
 Wenn Ihre Gruppierungsfelder zu viele Werte enthalten oder Sie vermeiden möchten, dass Werte für jede neue Aufspaltungsaktivität zurückgesetzt werden, können Sie mit Adobe Campaign eine Beschränkung für die Datenverteilung erstellen. Bei der Auswahl von [Datenbegrenzungswerten](#create-subsets) (Abschnitt) wählen Sie die Option **[!UICONTROL Durch Datenverteilung]** und anschließend eine Vorlage aus dem Dropdown-Menü aus. Die Erstellung einer Datenverteilungsvorlage wird nachfolgend erläutert.
 
-Ein Beispiel für die Aktivität **[!UICONTROL Lokale Validierung]** mit einer Verteilungsvorlage finden Sie auf [dieser Seite](local-approval-activity.md).
+Ein Beispiel für die Aktivität **[!UICONTROL Lokale Validierung]** mit einer Verteilungsvorlage finden Sie unter [Verwenden der Aktivität Lokale Validierung](local-approval-activity.md).
 
-![](assets/s_user_segmentation_partage_wz6.png)
+![Limits-Assistentenschritt mit ausgewählter Datenverteilung und angewendeter Vorlagenverteilung auf Empfänger](assets/s_user_segmentation_partage_wz6.png)
 
 >[!CAUTION]
 >
@@ -153,11 +153,11 @@ Mit der Datenverteilungsvorlage können Sie die Anzahl der Einträge mithilfe ei
 
 1. Gehen Sie in den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** und klicken Sie auf die Schaltfläche **[!UICONTROL Neu]**.
 
-   ![](assets/local_validation_data_distribution_1.png)
+   ![Explorer-Struktur mit dem Datenverteilungsknoten unter „Ressourcen- und Kampagnenverwaltung“ und der Schaltfläche „Neu“](assets/local_validation_data_distribution_1.png)
 
 1. Der **[!UICONTROL Allgemein]**-Tab dient der Angabe eines Titels sowie des Ausführungskontexts (Zielgruppendimension und Verteilungsfeld).
 
-   ![](assets/local_validation_data_distribution_2.png)
+   ![Registerkarte „Allgemein“ der Datenverteilung mit Zielgruppendimension, Verteilungsfeld, Verteilungstyp und Genehmigungsspeicher](assets/local_validation_data_distribution_2.png)
 
    Folgende Angaben sind erforderlich:
 
@@ -171,7 +171,7 @@ Mit der Datenverteilungsvorlage können Sie die Anzahl der Einträge mithilfe ei
 
 1. Wenn Sie die Aktivität [Lokale Validierung](local-approval.md) verwenden, geben Sie die **[!UICONTROL Erweiterten Einstellungen]** für die Verteilungsvorlage ein:
 
-   ![](assets/local_validation_data_distribution_3.png)
+   ![Erweiterte Parameter mit den Einstellungen Zielgruppe validieren, Versandbezeichnung, Gruppierungsfeld und Web-Schnittstelle](assets/local_validation_data_distribution_3.png)
 
    Folgende Angaben sind erforderlich:
 
@@ -181,21 +181,21 @@ Mit der Datenverteilungsvorlage können Sie die Anzahl der Einträge mithilfe ei
      >
      >Diese Option ist standardmäßig aktiviert.
 
-     ![](assets/local_validation_notification.png)
+     ![Genehmigungsbenachrichtigungsliste mit zu genehmigenden Empfängern, wobei jedes Kontrollkästchen rot hervorgehoben ist](assets/local_validation_notification.png)
 
    * **[!UICONTROL Versandtitel]**: Ermöglicht die Definition eines Ausdrucks zur Anzeige des Versandtitels in der Versandreaktionen-Benachrichtigung. Der Standardausdruck gibt Informationen über den Standard-Versandtitel (Compute-String). Sie können diesen Ausdruck ändern.
 
-     ![](assets/local_validation_notification_3.png)
+     ![Versandreaktionen-Benachrichtigung mit der Versandzeile, in der die Versandbeschriftung rot hervorgehoben ist](assets/local_validation_notification_3.png)
 
    * **[!UICONTROL Gruppierungsfeld]**: Erlaubt die Definition der für die Empfängeranzeige in den Validierungs- und Versandreaktionen-Benachrichtigungen verwendeten Gruppierung.
 
-     ![](assets/local_validation_notification_4.png)
+     ![Zulassungsliste, in der Empfänger unter den Überschriften „Männlich“ und „Weiblich“ aufgelistet sind, die rot hervorgehoben sind](assets/local_validation_notification_4.png)
 
    * **[!UICONTROL Webschnittstelle]**: Ermöglicht die Verknüpfung einer Web-Anwendung mit der Empfängerliste. In den Validierungs- und Versandreaktionen-Benachrichtigungen ist dann jede Person anklickbar und leitet auf die ausgewählte Web-Anwendung weiter. Im Feld **[!UICONTROL Parameter]** (z. B. **[!UICONTROL recipientId]**) kann der zusätzliche Parameter angegeben werden, der in der URL der Webanwendung verwendet werden soll.
 
 1. Im Tab **[!UICONTROL Aufschlüsselung]** wird die Liste der Verteilungswerte definiert.
 
-   ![](assets/local_validation_data_distribution_4.png)
+   ![Registerkarte Aufschlüsselung mit den Werten der Verteilungsfelder mit ihrem Prozentsatz, ihrer Bezeichnung und ihrer Gruppe oder ihrem Operator](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Wert des Verteilungsfeldes]**: Geben Sie die Werte der Verteilung an.
    * **[!UICONTROL Prozent/Feste Größe]**: Geben Sie die jedem Wert zugeordnete Speicherbegrenzung in Prozent oder als feste Größe an.
@@ -215,11 +215,11 @@ Mit der Datenverteilungsvorlage können Sie die Anzahl der Einträge mithilfe ei
 
 Klicken Sie auf die Registerkarte **[!UICONTROL Allgemein]**, um den Aktivitätstitel einzugeben. Wählen Sie die Ziel- und Filterdimensionen für diese Aufspaltung aus. Bei Bedarf können Sie diese Dimensionen für eine bestimmte Teilmenge ändern.
 
-![](assets/s_user_segmentation_partage_general.png)
+![Registerkarte „Allgemein“ der Aufspaltungsaktivität mit aktivierter Option „Zielgruppen- und Filterdimensionen“ und „Komplement erzeugen“](assets/s_user_segmentation_partage_general.png)
 
 Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie auch die verbleibende Population verwenden möchten. Das Komplement besteht aus der eingehenden Zielgruppe abzüglich der Vereinigung der Schnittmenge. Die Aktivität weist somit, wie unten abgebildet, eine zusätzliche ausgehende Transition auf:
 
-![](assets/s_user_segmentation_partage_compl.png)
+![Aufspaltungsaktivität mit ausgehenden Transitionen Teilmenge 1, Teilmenge 2, Teilmenge 3 und einer zusätzlichen komplementären Transition](assets/s_user_segmentation_partage_compl.png)
 
 Damit diese Option korrekt arbeiten kann, müssen die eingehenden Daten einen Primärschlüssel aufweisen.
 

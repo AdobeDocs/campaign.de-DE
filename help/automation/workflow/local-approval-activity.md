@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 100%
+source-wordcount: '1798'
+ht-degree: 80%
 ---
 # Verwenden der lokalen Validierungsaktivität{#using-the-local-approval-activity}
 
@@ -38,13 +38,13 @@ Im Rahmen eines Zielgruppen-Workflows ermöglicht die Aktivität **[!UICONTROL L
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
-![](assets/local_validation_workflow.png)
+![Zielgruppen-Workflow: zwei Abfragen, Schnittmenge, Aufspaltung, Genehmigungsbenachrichtigung, Versand, Warten, Feedback-Benachrichtigung, Ende](assets/local_validation_workflow.png)
 
 Der lokale Validierungsprozess gliedert sich in folgende Schritte:
 
 1. Die aus der Zielgruppenbestimmung resultierende Population wird mithilfe einer **[!UICONTROL Aufspaltung]** mit einer Datenverteilungsvorlage begrenzt.
 
-   ![](assets/local_validation_intro_1.png)
+   ![Datenverteilungsliste bei 10 Prozent pro Domain, wodurch die Aufspaltungsausgabe von 3.332 auf 333 Empfängerinnen und Empfänger im Workflow beschränkt wird](assets/local_validation_intro_1.png)
 
 1. Die Aktivität **[!UICONTROL Lokale Validierung]** sendet im Anschluss daran eine E-Mail-Benachrichtigung an alle lokalen Validierungsverantwortlichen. Die Aktivität bleibt im Wartezustand, bis alle Verantwortlichen die ihnen zugewiesenen Empfangenden validiert haben.
 
@@ -54,7 +54,7 @@ Der lokale Validierungsprozess gliedert sich in folgende Schritte:
    >
    >Die bis zum Ablauf der Validierungsfrist nicht validierten Empfänger werden in der Zielgruppenbestimmung nicht berücksichtigt.
 
-   ![](assets/local_validation_intro_6.png)
+   ![Workflow mit hervorgehobener Versandaktivität nach der Validierungsbenachrichtigung und vor der Warteaktivität](assets/local_validation_intro_6.png)
 
 1. Einige Tage später sendet die zweite **[!UICONTROL Lokale Validierung]** allen lokalen Verantwortlichen eine E-Mail-Benachrichtigung, die sie über die Empfängerreaktionen (Klicks, Öffnungen usw.) informiert.
 
@@ -66,18 +66,18 @@ Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unt
 
 1. Gehen Sie in den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** und klicken Sie auf die Schaltfläche **[!UICONTROL Neu]**.
 
-   ![](assets/local_validation_data_distribution_1.png)
+   ![Explorer-Baumstruktur unter Ressourcen > Kampagnen-Management > Datenverteilung mit hervorgehobener Schaltfläche „Neu“](assets/local_validation_data_distribution_1.png)
 
 1. Gehen Sie in den **[!UICONTROL Allgemein]**-Tab.
 
-   ![](assets/local_validation_data_distribution_2.png)
+   ![Registerkarte „Allgemein“ der Datenverteilung mit Titel, Zielgruppendimension, Verteilungsfeld und -typ sowie Speicherung der Genehmigung](assets/local_validation_data_distribution_2.png)
 
 1. Vergeben Sie einen **[!UICONTROL Titel]** und füllen Sie die Felder zum **[!UICONTROL Verteilungskontext]** aus. Im vorliegenden Beispiel wurden die **[!UICONTROL Empfänger]** als Targeting-Schema und das Feld **[!UICONTROL E-Mail-Domain]** als Verteilungsfeld gewählt. Die Empfängerliste wird somit nach Domain verteilt.
 1. Wählen Sie im Feld **[!UICONTROL Verteilungstyp]** die Art aus, in der die Zielgruppenbegrenzung im Tab **[!UICONTROL Verteilung]** ausgedrückt werden soll. Im vorliegenden Beispiel wurde **[!UICONTROL Prozent]** ausgewählt.
 1. Geben Sie im Feld **[!UICONTROL Validierungsspeicherung]** das dem verwendeten Zielgruppenbestimmungsschema entsprechende Speicherschema an. Im Folgenden wird das standardmäßige Speicherschema verwendet: **[!UICONTROL Lokale Validierung der Empfangenden]**.
 1. Klicken Sie dann auf den Link **[!UICONTROL Erweiterte Parameter...]**
 
-   ![](assets/local_validation_data_distribution_3.png)
+   ![Erweiterte Parameter: Validieren Sie die zielgerichteten Nachrichten, die Versandkennzeichnung, das Gruppierungsfeld und bearbeiten Sie zielgerichtete Nachrichten](assets/local_validation_data_distribution_3.png)
 
 1. Damit alle Empfänger in der Liste der zu validierenden Empfänger erscheinen, lassen Sie die Option **[!UICONTROL Nachrichten validieren]** angekreuzt.
 1. Behalten Sie im Feld **[!UICONTROL Versandtitel]** den Standardausdruck bei (Compute-String des Versands) bei. Auf diese Weise wird in der Feedback-Benachrichtigung der ursprüngliche Versandtitel verwendet.
@@ -85,7 +85,7 @@ Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unt
 1. Im Abschnitt **[!UICONTROL Nachrichten bearbeiten]** sind die Web-Anwendung **[!UICONTROL Empfänger bearbeiten]** und der Parameter **[!UICONTROL recipientId]** ausgewählt. Auf diese Weise werden die Empfangenden in den Validierungs- und Feedback-Benachrichtigungen anklickbar und leiten auf die entsprechende URL der Web-Anwendung weiter. Der zusätzliche Parameter der URL ist **[!UICONTROL recipientId]**.
 1. Klicken Sie anschließend auf die Registerkarte **[!UICONTROL Verteilung]**. Füllen Sie für jede Domain die folgenden Felder aus:
 
-   ![](assets/local_validation_data_distribution_4.png)
+   ![Registerkarte Aufschlüsselung mit Angabe der Domain, ihres Prozentsatzes, ihrer Beschriftung und der ihr zugewiesenen Gruppe oder Benutzer](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Wert]**: Geben Sie den Domainnamen ein.
    * **[!UICONTROL Prozentsatz/Feste Größe]**: Geben Sie für jede Domain die maximale Anzahl der Empfangenden ein, an die der Versand gesendet werden soll. Im vorliegenden Beispiel wird der Versand auf 10 % jeder Domain begrenzt.
@@ -100,7 +100,7 @@ Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unt
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
-![](assets/local_validation_workflow.png)
+![Zielgruppen-Workflow: zwei Abfragen, Schnittmenge, Aufspaltung, Genehmigungsbenachrichtigung, Versand, Warten, Feedback-Benachrichtigung, Ende](assets/local_validation_workflow.png)
 
 Folgende Aktivitäten wurden verwendet:
 
@@ -123,23 +123,23 @@ Wenn Sie die aus der Abfrage resultierende Population nicht einschränken möcht
 
 1. Öffnen Sie die Aufspaltung und kreuzen Sie im Bereich **[!UICONTROL Begrenzung der Anzahl von Datensätzen]** die Option **[!UICONTROL Anzahl von Datensätzen begrenzen]** an. Klicken Sie anschließend auf den Link **[!UICONTROL Bearbeiten...]**.
 
-   ![](assets/local_validation_split_1.png)
+   ![Registerkarte Teilmengen aufteilen mit der aktivierten Option Ausgewählte Datensätze begrenzen und dem Link „Bearbeiten“ unter „Begrenzung der Datensatzanzahl“](assets/local_validation_split_1.png)
 
 1. Aktivieren Sie die Option **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten]** und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/local_validation_split_1bis.png)
+   ![Art des Grenzschritts mit Nur die ersten, nach dem Sortieren ausgewählten Einträge beibehalten](assets/local_validation_split_1bis.png)
 
 1. Fügen Sie im Bereich **[!UICONTROL Sortierungsspalten]** das Feld hinzu, nach dem die Liste sortiert werden soll. Im vorliegenden Beispiel ist dies **[!UICONTROL E-Mail]**. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/local_validation_split_2.png)
+   ![Sortierschritt mit der E-Mail-Spalte, die in den Sortierspalten und der Schaltfläche Weiter hinzugefügt wurde](assets/local_validation_split_2.png)
 
 1. Wählen Sie die Option **[!UICONTROL Durch Datenverteilung]**, wählen Sie die zuvor erstellte Verteilungsvorlage aus (siehe [Schritt 1: Erstellung der Datenverteilungsvorlage](#step-1--creating-the-data-distribution-template-)) und klicken Sie auf **[!UICONTROL Beenden]**.
 
-   ![](assets/local_validation_split_3.png)
+   ![Beschränkt den Schritt mit der ausgewählten Datenverteilung und der ausgewählten Vorlage Verteilung auf Empfänger](assets/local_validation_split_3.png)
 
 In der Verteilungsvorlage wurde die Population auf 10 % je Gruppierungswert begrenzt. Dies spiegelt sich im Workflow wieder (340 Empfänger in der eingehenden Transition, 34 in der ausgehenden).
 
-![](assets/local_validation_intro_1.png)
+![Datenverteilungsliste bei 10 Prozent pro Domain, wodurch die Aufspaltungsausgabe von 3.332 auf 333 Empfängerinnen und Empfänger im Workflow beschränkt wird](assets/local_validation_intro_1.png)
 
 ### Validierungsbenachrichtigung {#approval-notification}
 
@@ -147,7 +147,7 @@ Die **[!UICONTROL Lokale Validierung]** erlaubt den Versand einer Benachrichtigu
 
 Weiterführende Informationen zur Konfiguration der **[!UICONTROL lokalen Validierung]** finden Sie im Abschnitt [Lokale Validierung](local-approval.md).
 
-![](assets/local_validation_workflow_2.png)
+![Lokale Validierungsaktivität auf die Zielvalidierungsbenachrichtigung gesetzt, angegeben in der Transition, mit einer 3D-Verzögerung und einer Erinnerung](assets/local_validation_workflow_2.png)
 
 Folgende Angaben sind erforderlich:
 
@@ -165,13 +165,13 @@ Durch die Aktivität **[!UICONTROL Lokale Validierung]** wird eine Benachrichtig
 
 Die Warteaktivität verzögert den Start der zweiten Validierungsaktivität, welche die Versandreaktionen-Benachrichtigungen versendet. Im Feld **[!UICONTROL Wartezeit]** wurde hier **[!UICONTROL 5T]**, also 5 Tage, angegeben. Auf diese Weise werden die Empfängerreaktionen der nächsten fünf Tage in der Versandreaktionen-Benachrichtigung berücksichtigt.
 
-![](assets/local_validation_workflow_3.png)
+![Warteaktivität mit dem Feld Dauer auf 5T gesetzt](assets/local_validation_workflow_3.png)
 
 ### Feedback-Benachrichtigung {#feedback-notification}
 
 Die zweite Aktivität vom Typ **[!UICONTROL Lokale Validierung]** sendet an jeden lokalen Verantwortlichen einen Feedback-Bericht.
 
-![](assets/local_validation_workflow_4.png)
+![Aktivität „Lokale Validierung“ auf Bericht zu Versand-Feedback mit dem in der Transition angegebenen Versand eingestellt](assets/local_validation_workflow_4.png)
 
 Folgende Angaben sind erforderlich:
 
@@ -181,7 +181,7 @@ Folgende Angaben sind erforderlich:
 
 Nach Ablauf der in der Warteaktivität definierten Wartezeit sendet die zweite **[!UICONTROL Lokale Validierung]** an jeden lokalen Verantwortlichen folgende Benachrichtigung:
 
-![](assets/local_validation_intro_3.png)
+![Web-Seite für die lokale Validierung mit einer Feedback-Versandliste der Empfänger nach Geschlecht und ihrem Status: gesendet, geöffnet, angeklickt](assets/local_validation_intro_3.png)
 
 ### Validierungs-Tracking durch den Administrator {#approval-tracking-by-the-administrator}
 
@@ -189,15 +189,15 @@ Bei jedem Start der lokalen Validierungsaktivität wird eine Validierungsaufgabe
 
 Klicken Sie im Zielgruppen-Workflow Ihrer Kampagne auf den Tab **[!UICONTROL Lokale Validierungsaufgaben]**.
 
-![](assets/local_validation_admin_1.png)
+![Registerkarte „Lokale Validierungsaufgaben“ des Kampagnen-Workflows, auf der die Aufgabe, die Validierungsfrist, der Workflow und die Kampagne aufgeführt sind](assets/local_validation_admin_1.png)
 
 Eine weitere Zugriffsmöglichkeit besteht über den Tab **[!UICONTROL Validierungsaufgaben]** in der Datenverteilungsvorlage.
 
-![](assets/local_validation_admin_2.png)
+![Registerkarte „Validierungsaufgaben“ der Datenverteilungsvorlage, auf der die lokale Validierungsaufgabe und ihre zielgerichteten Nachrichten aufgelistet sind](assets/local_validation_admin_2.png)
 
 Markieren Sie die zu überwachende Aufgabe und klicken Sie auf die Schaltfläche **[!UICONTROL Detail]**. Im **[!UICONTROL Allgemein]**-Tab der Aufgabe werden die wichtigsten Informationen zur Aufgabe angezeigt. Es besteht des Weiteren die Möglichkeit, die Validierungs-Deadline und das Erinnerungsdatum zu ändern.
 
-![](assets/local_validation_admin_3.png)
+![Registerkarte „Allgemein“ der lokalen Validierungsaufgabe mit Titel, Kennung, Verteilung, Workflow, Kampagne, Validierung und Erinnerungsdaten](assets/local_validation_admin_3.png)
 
 Folgende Informationen stehen zur Verfügung:
 
@@ -209,11 +209,11 @@ Folgende Informationen stehen zur Verfügung:
 
 Im Tab **[!UICONTROL Verteilung]** der Aufgabe werden die Validierungslogs und -status, die Anzahl potenziell zu sendender Nachrichten, das Validierungsdatum und die validierenden Benutzer angezeigt.
 
-![](assets/local_validation_admin_4.png)
+![Registerkarte „Aufgabenaufschlüsselung“ mit lokalen Validierungsprotokollen mit Status, Zielgruppennachrichten, Validierungsdatum und der genehmigenden Person](assets/local_validation_admin_4.png)
 
 Markieren Sie ein Validierungslog und klicken Sie auf die Schaltfläche **[!UICONTROL Details...]** für genauere Informationen. Die Registerkarte **[!UICONTROL Allgemein]** des Validierungslogs zeigt allgemeine Log-Informationen an. Darüber hinaus kann der Validierungsstatus geändert werden.
 
-![](assets/local_validation_admin_5.png)
+![Registerkarte „Allgemein“ des Validierungsprotokolls mit der Validierungsaufgabe, dem Status, der genehmigenden Person, dem Validierungsdatum und den zielgerichteten und genehmigten Nachrichten](assets/local_validation_admin_5.png)
 
 Folgende Informationen stehen zur Verfügung:
 
@@ -225,4 +225,4 @@ Folgende Informationen stehen zur Verfügung:
 
 In der Registerkarte **[!UICONTROL Zielgruppe]** des Validierungslogs wird die Liste der potenziellen Empfangenden und ihr Validierungsstatus angezeigt. Sie können diesen Status bei Bedarf ändern.
 
-![](assets/local_validation_admin_6.png)
+![Registerkarte „Genehmigungsprotokoll - Zielgruppe“ mit Zielgruppenempfängerinnen und -empfängern mit einem bearbeitbaren Kontrollkästchen für „Ja“ oder „Nein“ ](assets/local_validation_admin_6.png)

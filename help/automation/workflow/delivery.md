@@ -30,10 +30,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1252'
+ht-degree: 83%
 ---
 # Versand{#delivery}
 
@@ -41,7 +41,7 @@ Mit einer Aktivität des Typs **Versand** können Sie eine Versandaktion erstell
 
 Öffnen Sie die Aktivität und wählen Sie in den verschiedenen Bereichen die gewünschten Optionen aus.
 
-![](assets/edit_diffusion.png)
+![Fenster der Versandaktivität mit Versand, Empfängern, Inhalt und Aktion, um Abschnitte und ausgehende Transitionen auszuführen](assets/edit_diffusion.png)
 
 1. **Versand**
 
@@ -53,27 +53,27 @@ Mit einer Aktivität des Typs **Versand** können Sie eine Versandaktion erstell
 
      Im folgenden Beispiel wird der Versand erstmals erstellt. Die Population und der Inhalt werden später definiert. Als Nächstes werden die Informationen dieser drei Elemente mithilfe der eingehenden Transition erneut in eine neue Versandaktivität eingeben, sodass sie gesendet werden können.
 
-     ![](assets/specified_transition_option_exemple.png)
+     ![Workflow, bei dem eine Aktivität Versand erstellen eine zweite Versandaktivität mit dem in der Transition angegebenen Wert befüllt](assets/specified_transition_option_exemple.png)
 
    * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.****
 
      Standardmäßig enthält die Liste die im Ordner **Sendungen** gespeicherten Kommunikationen, die noch nicht abgeschlossen sind. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um auf andere Ordner zugreifen zu können.
 
-     ![](assets/diffusion_edit_1.png)
+     ![Versandabschnitt mit der Option Explizit und dem Symbol Link auswählen neben dem Feld Versand ](assets/diffusion_edit_1.png)
 
      Wählen Sie im Feld **[!UICONTROL Ordner]** den gewünschten Ordner aus oder klicken Sie auf **[!UICONTROL Unterordner anzeigen]**, um alle in den Unterordnern enthaltenen Sendungen anzuzeigen:
 
-     ![](assets/diffusion_edit_2.png)
+     ![Fenster zur Versandauswahl mit dem Feld Ordner auf Sendungen und dem Symbol Unterordner anzeigen](assets/diffusion_edit_2.png)
 
      Nach der Auswahl des gewünschten Versands können Sie diesen durch Klick auf das Symbol **[!UICONTROL Verknüpftes Element öffnen]** anzeigen.
 
    * Erstellen Sie ein Script zur Berechnung des Versands. Wählen Sie dazu die Option **[!UICONTROL Wird durch ein Script erstellt]** und geben Sie das Script ein. Sie können ein Eingabefenster öffnen, indem Sie auf **[!UICONTROL Bearbeiten...]** klicken. Im folgenden Beispiel wird die Versandkennung wiederhergestellt:
 
-     ![](assets/diffusion_edit_3.png)
+     ![Wird durch eine Skriptoption mit dem Fenster Skript bearbeiten berechnet, das den Ausdruck vars.deliveryId anzeigt](assets/diffusion_edit_3.png)
 
    * Erstellen Sie einen neuen Versand. Wählen Sie die gewünschte Versandvorlage aus.****
 
-     ![](assets/diffusion_edit_4.png)
+     ![Neu, basierend auf einer Vorlage erstellt mit einer ausgewählten Versandvorlage und dem Symbol Link bearbeiten](assets/diffusion_edit_4.png)
 
      Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um die Ordner zu durchsuchen und auf **[!UICONTROL Verknüpftes Element öffnen]**, um die ausgewählte Vorlage anzuzeigen.
 
@@ -81,19 +81,19 @@ Mit einer Aktivität des Typs **Versand** können Sie eine Versandaktion erstell
 
    Die Empfängerinnen und Empfänger können durch die eingehenden Ereignisse angegeben werden, beispielsweise nach einem Dateiimport oder in einer Versandaktion. Sie können auch in einer oder mehreren Dateien gespeichert werden.
 
-   ![](assets/diffusion_edit_5.png)
+   ![Abschnitt Empfänger mit den durch das/die eingehende(n) Ereignis(e) angegebenen Optionen, die in den Versand- und Datei(en) angegeben sind](assets/diffusion_edit_5.png)
 
 1. **Content**
 
    Der Versandinhalt kann entweder direkt im Versand oder über das eingehende Ereignis definiert werden.
 
-   ![](assets/diffusion_edit_6.png)
+   ![Inhaltsabschnitt mit „Wird durch das eingehende Ereignis angegeben“ und „Wird in den Versandoptionen angegeben“](assets/diffusion_edit_6.png)
 
 1. **Auszuführende Aktion**
 
    Der Versand kann gespeichert, vorbereitet oder gestartet werden. Weitere Optionen sind die Schätzung der Zielgruppe und das Auslösen eines Testversands.
 
-   ![](assets/diffusion_edit_7.png)
+   ![Aktion zur Durchführung der Optionen „Speichern“ zum Vorbereiten und Starten und zur Option „Ausgehende Transition erzeugen“](assets/diffusion_edit_7.png)
 
    Wählen Sie eine der möglichen Optionen aus:
 
@@ -121,13 +121,13 @@ Mit einer Aktivität des Typs **Versand** können Sie eine Versandaktion erstell
 
    Im Tab **Script** können die Versandparameter angepasst werden.
 
-   ![](assets/edit_diffusion_fil_script.png)
+   ![Registerkarte „Script“ der Versandaktivität mit einem Script zur Änderung des Versandobjekts, das die Versandbezeichnung festlegt](assets/edit_diffusion_fil_script.png)
 
 ## Beispiel: Versand-Workflow {#example--delivery-workflow}
 
 Erstellen Sie einen neuen Workflow und fügen Sie Aktivitäten aus der unten dargestellten Grafik hinzu:
 
-![](assets/new-workflow-5.png)
+![Workflow mit Start-, Versand- und Validierungsaktivitäten, dann Versandkontrolle mit Ja und Ende mit Nein](assets/new-workflow-5.png)
 
 Öffnen Sie die **Versand**-Aktivität und definieren Sie die Eigenschaften folgendermaßen:
 
@@ -135,7 +135,7 @@ Erstellen Sie einen neuen Workflow und fügen Sie Aktivitäten aus der unten dar
 * Aktivieren Sie im Bereich **[!UICONTROL Empfänger]** die Option **[!UICONTROL Im Versand angegeben]**.
 * Behalten Sie im Bereich **[!UICONTROL Auszuführende Aktion]** die Standardoption **[!UICONTROL Vorbereiten]** bei.
 
-![](assets/new-workflow-param-delivery.png)
+![Versandaktivität mit „Neu“, basierend auf einer Vorlage erstellt, in den Versandempfängern angegeben und ausgewählt „Vorbereiten“](assets/new-workflow-param-delivery.png)
 
 Klicken Sie nun auf **[!UICONTROL OK]**, um das Eigenschaftenfenster zu schließen. Sie haben nun eine Aktivität konfiguriert, mit der ein neuer Versand erstellt und vorbereitet wird, und zwar basierend auf einer Versandvorlage, in der die Zielgruppe angegeben wird.
 
@@ -150,7 +150,7 @@ Klicken Sie nun auf **[!UICONTROL OK]**, um das Eigenschaftenfenster zu schließ
 
    Es handelt sich hierbei um eine Nachricht mit einem JavaScript-Ausdruck: **[!UICONTROL vars.recCount]** bezeichnet die Anzahl an Empfängern, die in der vorangehenden Aktivität in die Zielgruppe des Versands aufgenommen wurden. Weitere Informationen zu JavaScript-Ausdrücken finden Sie unter [Scripts/JavaScript-Templates](javascript-scripts-and-templates.md).
 
-   ![](assets/new-workflow-param-validation.png)
+   ![Validierungsaktivität mit Gruppenzuweisungstyp und eine Meldung mit dem Befehl vars.recCount, die Zielgruppe zu genehmigen](assets/new-workflow-param-validation.png)
 
    Weiterführende Informationen zur Validierungsaufgabe finden Sie unter [Validierung](approval.md).
 

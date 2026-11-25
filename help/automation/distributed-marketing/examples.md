@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 100%
+source-wordcount: '1704'
+ht-degree: 80%
 ---
 # Beispiele für verteiltes Marketing{#distributed-marketing-samples}
 
@@ -38,7 +38,7 @@ Die Web-Schnittstelle vom Typ **Standardformular** erfordert die Verwendung eine
 
 Klicken Sie beim Erstellen der Kampagnenvorlage auf das Symbol **[!UICONTROL Zoom]** in der Option **[!UICONTROL Web-Schnittstelle]** des Links **[!UICONTROL Erweiterte Kampagnenparameter...]**, um auf Details der Web-Anwendung zuzugreifen.
 
-![](assets/mkg_dist_local_op_form1.png)
+![Erweiterte Einstellungen, Registerkarte „Verteiltes Marketing“: Feld in der Web-Benutzeroberfläche mit hervorgehobenem Symbol „Link bearbeiten“.](assets/mkg_dist_local_op_form1.png)
 
 >[!NOTE]
 >
@@ -46,21 +46,21 @@ Klicken Sie beim Erstellen der Kampagnenvorlage auf das Symbol **[!UICONTROL Zoo
 
 Wählen Sie im Tab **[!UICONTROL Bearbeiten]** die Aktivität **Kampagnenbestellung** aus und öffnen Sie sie, um auf ihren Inhalt zuzugreifen.
 
-![](assets/mkg_dist_web_app1.png)
+![Workflow der Web-Anwendung, bei dem die Seitenaktivität „Kampagnenbestellung“ geöffnet wurde, um den Inhalt anzuzeigen.](assets/mkg_dist_web_app1.png)
 
 Im vorliegenden Beispiel enthält die Aktivität **Kampagnenbestellung**:
 
 * Felder, die von der Lokalstelle bei der Bestellung angegeben werden;
 
-  ![](assets/mkg_dist_web_app2.png)
+  ![Felder der Kampagnenbestellseite (Kontaktdatum, bevorzugter Kanal, Alterssegment, Bild, Nachricht) und ihr Web-Formular.](assets/mkg_dist_web_app2.png)
 
 * Links, die der Lokalstelle die Auswertung der Kampagne ermöglichen (z. B. Zielgruppe, Budget, Inhalt etc.);
 
-  ![](assets/mkg_dist_web_app3.png)
+  ![Auswerten der Zielgruppenbestimmung, Auswerten des Budgets und Auswerten der Links für Inhalte auf der Seite und im Web-Formular.](assets/mkg_dist_web_app3.png)
 
 * Scripts, die die Berechnung und Anzeige der Ergebnisse der vorhergehenden Auswertungen ermöglichen.
 
-  ![](assets/mkg_dist_web_app4.png)
+  ![Seitenstruktur mit Hervorhebung von Zielgruppenbestimmungsergebnis, Budgetergebnis und Inhaltsergebniselementen.](assets/mkg_dist_web_app4.png)
 
 Im vorliegenden Beispiel werden die folgenden APIs verwendet:
 
@@ -113,15 +113,15 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
 1. Die zur Teilnahme an der Kampagne ausgewählten Lokalstellen erhalten per E-Mail eine Benachrichtigung.
 
-   ![](assets/mkg_dist_use_case_target_valid8.png)
+   ![E-Mail zur Zielgruppenvalidierung mit dem Link Zugriff auf Ihre Kontaktliste und Zielgruppenbestimmung validieren.](assets/mkg_dist_use_case_target_valid8.png)
 
 1. Über den in der Benachrichtigung enthaltenen Link **[!UICONTROL Kontaktliste aufrufen und Zielgruppenbestimmung validieren]** hat die Lokalstelle per Web-Schnittstelle Zugriff auf die Liste ihrer für die Kampagne ausgewählten Kontakte.
 
-   ![](assets/mkg_dist_use_case_target_valid9.png)
+   ![Web-Seite der Zielgruppenvalidierung mit den Kontrollkästchen der Zielgruppenkontakte und der Schaltfläche Zielgruppe validieren.](assets/mkg_dist_use_case_target_valid9.png)
 
 1. Die Lokalstelle entnimmt der Liste die Kontakte, die vor Kurzem bereits ein ähnliches Angebot erhalten haben.
 
-   ![](assets/mkg_dist_use_case_target_valid10.png)
+   ![Target-Validierungsseite mit drei nicht aktivierten Kontakten und einem Kommentar, der die Löschungen erklärt.](assets/mkg_dist_use_case_target_valid10.png)
 
 Nach den Validierungen kann die Kampagne automatisch beginnen.
 
@@ -131,7 +131,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 1. Zur Einrichtung einer partizipativen Kampagne (mit Zielgruppenvalidierung) müssen Sie zunächst eine **[!UICONTROL Datenverteilungs-Aktivität]** erstellen. Klicken Sie dafür im Ordner **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** des Campaign-Explorers auf das Symbol **[!UICONTROL Neu]**.
 
-   ![](assets/mkg_dist_use_case_target_valid3.png)
+   ![Registerkarte „Allgemein“ der Datenverteilung: Zielgruppendimension, Verteilungsfeld, Herkunft, Zuweisungstyp Lokalstelle.](assets/mkg_dist_use_case_target_valid3.png)
 
 1. Geben Sie im Tab **[!UICONTROL Allgemein]** folgende Parameter an:
 
@@ -147,7 +147,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
    * den **[!UICONTROL Titel]** der Lokalstelle;
    * die **[!UICONTROL Größe]** (fest oder in Prozent). Der **Standardwert 0** bewirkt eine Auswahl aller mit der jeweiligen Lokalstelle in Verbindung stehender Empfänger.
 
-   ![](assets/mkg_dist_use_case_target_valid4.png)
+   ![Registerkarte Datenverteilung Aufschlüsselung mit den Werten der Ost-, Nord-, Süd- und West-Verteilung und den Lokalstellen.](assets/mkg_dist_use_case_target_valid4.png)
 
 1. Speichern Sie die neue Datenverteilung.
 
@@ -156,7 +156,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 1. Erstellen Sie vom Ordner **[!UICONTROL Kampagnenverwaltung > Kampagnen]** des Campaign-Explorers aus eine neue **[!UICONTROL partizipative Kampagne (mit Zielgruppenvalidierung)]**.
 1. Erstellen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** einen Workflow für die Kampagne. Dieser muss eine Aktivität vom Typ **Aufspaltung** enthalten, deren **[!UICONTROL Begrenzung der Anzahl von Datensätzen]** durch die **[!UICONTROL Datenverteilung]** festgelegt wird.
 
-   ![](assets/mkg_dist_use_case_target_valid5.png)
+   ![Begrenzung der Anzahl der aufgeteilten Datensätze auf Durch Datenverteilung mithilfe der Lokalstellen-Verteilung auf festgelegt.](assets/mkg_dist_use_case_target_valid5.png)
 
 1. Fügen Sie eine Aktivität **[!UICONTROL Lokale Validierung]** hinzu, in der Sie folgende Parameter festlegen können:
 
@@ -164,7 +164,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
    * die Validierungserinnerung;
    * die erwartete Bearbeitung der Kampagne.
 
-   ![](assets/mkg_dist_use_case_target_valid7.png)
+   ![Lokale Validierungsaktivität: Zielgruppenvalidierungsbenachrichtigung, Validierungstyp, Vorlage und Beschreibung für Lokalstellen.](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Speichern Sie die Kampagne.
 
@@ -177,15 +177,15 @@ Fügen Sie nun über den Tab **[!UICONTROL Kampagnen]** ein **Kampagnenkit** hin
    * Im Modus **Manuell** nehmen die Lokalstellen an der Kampagne teil, wenn Sie die Einladung der Zentralstelle akzeptieren. Sie können bei Bedarf die vorausgewählten Kontakte löschen. Eine Validierung der Kampagnenteilnahme durch eine vorgesetzte Person ist zwingend erforderlich.
    * Im Modus **Automatisch** sind die Lokalstellen verpflichtet, an der Kampagne teilzunehmen, sofern sie sich nicht manuell abmelden. Sie können Kontakte löschen, ohne dass eine Genehmigung erforderlich ist.
 
-   ![](assets/mkg_dist_use_case_target_valid.png)
+   ![Dialogfeld Kampagnenkit-Erstellung , wobei die Referenzkampagne und das Feld Validierungsmodus auf Manuell gesetzt sind.](assets/mkg_dist_use_case_target_valid.png)
 
 1. Im Tab **[!UICONTROL Beschreibung]** können Sie eine Beschreibung der Kampagne hinzufügen und Dokumente anhängen, die den Lokalstellen übermittelt werden.
 
-   ![](assets/mkg_dist_use_case_target_valid1.png)
+   ![Registerkarte „Kampagnenkit-Beschreibung“ mit Paketbeschreibung und Liste der beigefügten Dokumente.](assets/mkg_dist_use_case_target_valid1.png)
 
 1. Validieren Sie das Kit und starten Sie den Workflow, um das Kit zu veröffentlichen und es für die Lokalstellen in der Kampagnenkit-Liste zur Verfügung zu stellen.
 
-   ![](assets/mkg_dist_use_case_target_valid2.png)
+   ![Paket-Dashboard mit der Schaltfläche Paket genehmigen , das den Status in Bearbeitung anzeigt.](assets/mkg_dist_use_case_target_valid2.png)
 
 ## Erstellen einer partizipativen Kampagne (Formular) {#creating-a-collaborative-campaign--by-form-}
 
@@ -221,7 +221,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
 1. Die zur Teilnahme an der Kampagne ausgewählten Lokalstellen werden per E-Mail über die Veröffentlichung der Kampagne benachrichtigt.
 
-   ![](assets/mkg_dist_use_case_form_7.png)
+   ![Registrierung für die Kampagnen-E-Mail mit dem Link Für die Kampagne registrieren für Lokalstellen.](assets/mkg_dist_use_case_form_7.png)
 
 1. Jede Lokalstelle füllt das personalisierte Formular aus und:
 
@@ -229,35 +229,35 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    * überprüft die Vorschau des Versandinhalts,
    * validiert ihre Teilnahme.
 
-     ![](assets/mkg_dist_use_case_form_8.png)
+     ![Web-Formular für Kampagnenbestellungen mit Auswertungs-Links, einer Bildvorschau und der Schaltfläche „Validieren“.](assets/mkg_dist_use_case_form_8.png)
 
 1. Der für die Validierung der Bestellungen verantwortliche Benutzer genehmigt die Teilnahme.
 
-   ![](assets/mkg_dist_use_case_form_9.png)
+   ![Seite zur Validierung von Kampagnenbestellungen mit Bestelldetails, Bestellkommentar und der Schaltfläche Validieren.](assets/mkg_dist_use_case_form_9.png)
 
 ### Zuständige Zentralstelle {#central-entity-side-1}
 
 1. Um eine partizipative Kampagne mit Formular zu erstellen, muss zunächst eine Referenzkampagne mithilfe der Vorlage **Partizipative Kampagne (Formular) (opCollaborativeByForm)** erstellt werden.
 
-   ![](assets/mkg_dist_use_case_form_1.png)
+   ![Dialogfeld „Neue Marketing-Kampagne“ mithilfe der Vorlage Partizipative Kampagne (Formular) .](assets/mkg_dist_use_case_form_1.png)
 
 1. Klicken Sie auf der Registerkarte **[!UICONTROL Bearbeiten]** der Kampagne auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**, um die Kampagne wie eine lokale Kampagne zu konfigurieren. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](#creating-a-local-campaign--by-form-).
 
-   ![](assets/mkg_dist_use_case_form_2.png)
+   ![Erweiterte Einstellungen, Registerkarte „Verteiltes Marketing“: Partizipatives Marketing, Formularebene konfigurierbar, Standardwerte.](assets/mkg_dist_use_case_form_2.png)
 
 1. Konfigurieren Sie den Kampagnen-Workflow und das Webformular. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](#creating-a-local-campaign--by-form-).
 1. Erstellen Sie das Kampagnenkit. Geben Sie hierbei die Ausführungsplanung sowie die betroffenen Lokalstellen an.
 
-   ![](assets/mkg_dist_use_case_form_3.png)
+   ![Dialogfeld Kampagnenkit mit Referenz-Kampagnen, Ausführungsplanung, Fristen und Liste der lokalen Entitäten.](assets/mkg_dist_use_case_form_3.png)
 
 1. Schließen Sie die Konfiguration des Kits mit der Auswahl des Validierungsmodus im Tab **[!UICONTROL Bearbeiten]** ab.
 
-   ![](assets/mkg_dist_use_case_form_4.png)
+   ![Dropdown-Liste „Genehmigungsmodus“ mit manuellen und automatischen Optionen.](assets/mkg_dist_use_case_form_4.png)
 
 1. Erfassen Sie bei Bedarf auf der Registerkarte **[!UICONTROL Beschreibung]** nähere Hinweise zu der geplanten Kampagne. Diese Beschreibung ist in der Benachrichtigung enthalten, die die Lokalstellen bei der Veröffentlichung des Kits erhalten. An dieser Stelle können dem Kampagnenkit zudem relevante Dokumente angehängt werden.
 
-   ![](assets/mkg_dist_use_case_form_5.png)
+   ![Registerkarte „Paketbeschreibung“ mit der Option Benachrichtigungs-E-Mail, Nachricht für die Lokalstelle und angehängte Dokumente.](assets/mkg_dist_use_case_form_5.png)
 
 1. Validieren Sie das Kit, um es in der Kampagnenkit-Liste zu veröffentlichen.
 
-   ![](assets/mkg_dist_use_case_form_6.png)
+   ![Schaltfläche Paket genehmigen öffnen Sie das Dialogfeld Aktion im Paket mit den Optionen Akzeptieren und Ablehnen.](assets/mkg_dist_use_case_form_6.png)

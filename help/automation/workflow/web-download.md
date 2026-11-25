@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '628'
+ht-degree: 86%
 ---
 # HTTP-Übertragung{#web-download}
 
@@ -47,23 +47,23 @@ Die Aktivität **Web-Download** startet den Download einer Datei über eine expl
 
    * Um direkt die URL der herunterzuladenden Datei einzugeben, wählen Sie die Option **[!UICONTROL Explizite URL]** aus und geben Sie die URL in das entsprechende Feld ein. Diese URL kann mit Variablendaten erstellt werden.
 
-     ![](assets/download_web_edit.png)
+     ![HTTP-Übertragung mit ausgewählter Option „Explizite URL“ und einem leeren URL-Feld.](assets/download_web_edit.png)
 
    * Bei Verwendung eines **[!UICONTROL externen Kontos]** wird das Konto aus der Dropdown-Liste ausgewählt und die zu ladende Datei angegeben.
 
      Externe Konten werden über den Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** im Adobe Campaign-Navigationsbaum konfiguriert. Die Kontoparameter können über das Symbol **[!UICONTROL Link bearbeiten]** bearbeitet werden.
 
-     ![](assets/download_web_edit_external.png)
+     ![Abschnitt „Webdatei“ mit ausgewähltem externen Konto, mit einem Konto und dem Dateinamen für den Download.](assets/download_web_edit_external.png)
 
    * **[!UICONTROL Adobe Campaign-Instanz]**: Die Übertragung erfolgt über eine Adobe Campaign-Instanz.
 
-     ![](assets/download_web_edit_instance.png)
+     ![Abschnitt „Webdatei“ mit ausgewählter Adobe Campaign-Instanz und einem Dateinamen, der eine Variable verwendet.](assets/download_web_edit_instance.png)
 
 1. **Verlaufserstellung**
 
    Der Link **[!UICONTROL Verlaufsparameter der Dateien...]** ermöglicht die Angabe des Speicherverzeichnisses für die übertragenen Dateien und der Bereinigungsparameter.
 
-   ![](assets/download_web_edit_hist.png)
+   ![Dialogfeld mit den Verlaufseinstellungen für das Speicherverzeichnis, die Anzahl der Dateien und die maximale Größe (in MB) der Bereinigungseinstellungen.](assets/download_web_edit_hist.png)
 
    Folgende Optionen stehen zur Verfügung:
 
@@ -85,7 +85,7 @@ Die Aktivität **Web-Download** startet den Download einer Datei über eine expl
    * **[!UICONTROL HTTP-Header zur Datei hinzufügen]**: In einigen Fällen ist es vorteilhaft, einer Datei zusätzliche HTTP-Header hinzuzufügen. In den meisten Fällen werden diese Header verwendet, um zusätzliche Informationen zur Fehlerbehebung zu liefern, oder für [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS) oder um bestimmte Caching-Anweisungen festzulegen.
    * **[!UICONTROL HTTP-Ausgabecode ignorieren]**: HTTP-Ausgabe-Codes, auch HTTP-Status-Codes genannt, geben das Ergebnis einer HTTP-Anfrage an.
 
-   ![](assets/download_web_edit_advanced.png)
+   ![Dialogfeld „Erweiterte Parameter“ mit folgenden Weiterleitungen, Hinzufügen der HTTP-Header zur Datei und Ignorieren des HTTP-Rückgabe-Codes.](assets/download_web_edit_advanced.png)
 
    Die Option **[!UICONTROL Fehler verarbeiten]** wird im Abschnitt [Verarbeitungsfehler](monitor-workflow-execution.md#processing-errors) erläutert.
 

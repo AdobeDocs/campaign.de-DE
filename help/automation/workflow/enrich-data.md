@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 100%
+source-wordcount: '1143'
+ht-degree: 70%
 ---
 # Anreichern von Daten{#enriching-data}
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 In diesem Anwendungsbeispiel werden mögliche Verwendungen der Aktivität **[!UICONTROL Anreicherung]** in einem Zielgruppen-Workflow beschrieben. Weitere Informationen zur Verwendung der Aktivität **[!UICONTROL Anreicherung]** finden Sie unter [Anreicherung](enrichment.md).
 
-In [diesem Abschnitt](email-enrichment-with-custom-date-fields.md) finden Sie außerdem ein Anwendungsbeispiel zur Anreicherung eines E-Mail-Versands mit benutzerdefinierten Datumsangaben.
+Ein Anwendungsfall zum Anreichern eines E-Mail-Versands mit benutzerdefinierten Datumsangaben ist auch unter [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern“ ](email-enrichment-with-custom-date-fields.md).
 
 Den in der Marketing-Datenbank enthaltenen Kontakten soll über eine Webapp ein Preisausschreiben angeboten werden. Die Ergebnisse des Wettbewerbs werden in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** gespeichert. Diese Tabelle steht in Relation mit der Tabelle der Kontakte (**[!UICONTROL Empfänger]**). Die Tabelle **[!UICONTROL Wettbewerbsergebnisse]** enthält folgende Spalten:
 
@@ -47,17 +47,17 @@ Den in der Marketing-Datenbank enthaltenen Kontakten soll über eine Webapp ein 
 * Versuchnummer (@trial),
 * Score (@score).
 
-![](assets/uc1_enrich_1.png)
+![Empfängertabelle, die 1-n mit der Wettbewerbsergebnistabelle verknüpft ist und die Felder Wettbewerbsname, Testnummer und Punktzahl enthält.](assets/uc1_enrich_1.png)
 
 Ein in der **[!UICONTROL Empfängertabelle]** enthaltener Kontakt kann mit mehreren Zeilen in der Tabelle der **[!UICONTROL Wettbewerbsergebnisse]** verknüpft sein. Die Beziehung zwischen diesen beiden Tabellen ist vom Typ 1:n. Im Folgenden finden Sie ein Beispiel für die Ergebnisprotokolle für eine empfangende Person:
 
-![](assets/uc1_enrich_2.png)
+![Registerkarte „Wettbewerbe“ eines Empfängers, auf der drei Wettbewerbsergebniszeilen mit dem Namen des Wettbewerbs, der Testnummer und der Punktzahl aufgelistet sind.](assets/uc1_enrich_2.png)
 
 In diesem Anwendungsbeispiel wird das Versenden personalisierter Sendungen an Personen bezweckt, die am letzten Wettbewerb teilgenommen haben, abhängig von den erzielten Punkten. Die Person mit der höchsten Punktzahl erhält den ersten Preis, die Person mit der zweithöchsten Punktzahl einen Trostpreis und alle anderen Personen werden aufgefordert, ihr Glück beim nächsten Wettbewerb erneut zu versuchen.
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
-![](assets/uc1_enrich_3.png)
+![Zielgruppen-Workflow: Zwei Abfragen führen zu einer Schnittmenge, dann zu einer Anreicherung und einer Aufspaltung, was zu drei Versandaktivitäten führt.](assets/uc1_enrich_3.png)
 
 Die Workflow-Erstellung gliedert sich in folgende Schritte:
 
@@ -70,11 +70,11 @@ Die Workflow-Erstellung gliedert sich in folgende Schritte:
 
 In der ersten Abfrage werden Kontakte abgerufen, die innerhalb der letzten sechs Monate in die Datenbank aufgenommen wurden.
 
-![](assets/uc1_enrich_4.png)
+![Aktivität „Letzte Abonnenten mit dem Filter Erstellungsdatum (@created)“ am oder nach MonthsAgo(-6).](assets/uc1_enrich_4.png)
 
 In der zweiten Abfrage werden die Kontakte abgerufen, die am letzten Wettbewerb teilgenommen haben.
 
-![](assets/uc1_enrich_5.png)
+![Die Filterung der Abfrageaktivität auf Wettbewerbsergebnisse ist vorhanden, z. B. der Wettbewerbsname entspricht dem schwächsten Link.](assets/uc1_enrich_5.png)
 
 Die **[!UICONTROL Schnittmenge]** ermittelt dann die Population, die beiden Bedingungen entspricht.
 
@@ -84,62 +84,62 @@ In diesem Beispiel erfahren Sie, wie Sie Sendungen entsprechend des Felds **[!UI
 
 1. Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]** im Bearbeitungsbildschirm der Anreicherung und aktivieren Sie die Option **[!UICONTROL Daten in Relation mit der Filterdimension]**. Klicken Sie dann auf **[!UICONTROL Weiter]**.
 
-   ![](assets/uc1_enrich_6.png)
+   ![Dialogfeld „Zusätzliche Daten“ mit aktivierter Option „Mit Filterdimension verknüpfte Daten“ und hervorgehobener Option „Weiter“.](assets/uc1_enrich_6.png)
 
 1. Aktivieren Sie im nächsten Bildschirm wiederum die Option **[!UICONTROL Daten in Relation mit der Filterdimension]**, markieren Sie die Tabelle **[!UICONTROL Wettbewerbsergebnisse]** und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/uc1_enrich_7.png)
+   ![Bildschirm zum Hinzufügen von Feldern auswählen mit dem Link Wettbewerbsergebnisse , der unter Mit der Filterdimension verknüpfte Daten ausgewählt wurde.](assets/uc1_enrich_7.png)
 
 1. Geben Sie eine Kennung und einen Titel an und wählen Sie im Feld **[!UICONTROL Abgerufene Daten]** die Option **[!UICONTROL Zeilenanzahl begrenzen]** aus. Geben Sie dann im Feld **[!UICONTROL Abzurufende Zeilen]** den Wert &#39;1&#39; an. Für jeden Empfänger fügt die Anreicherungsaktivität somit genau eine Zeile aus der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** in die Workflow-Arbeitstabelle ein. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/uc1_enrich_8.png)
+   ![Bildschirm „Allgemeine Parameter“ mit dem Datensatz Abgerufene Daten zur Begrenzung der Zeilenanzahl und Abzurufende Zeilen auf 1.](assets/uc1_enrich_8.png)
 
 1. Im vorliegenden Beispiel soll das beste Ergebnis der Empfänger aus dem letzten Wettbewerb abgerufen werden. Filtern Sie hierzu die Tabelle nach dem Feld **[!UICONTROL Wettbewerb]** und rufen Sie nur die Datensätze ab, die dem letzten Wettbewerb entsprechen. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/uc1_enrich_9.png)
+   ![Filterbildschirm mit der Bedingung Wettbewerbsname (@game) gleich dem schwächsten Link.](assets/uc1_enrich_9.png)
 
 1. Klicken Sie im Bildschirm **[!UICONTROL Sortierung]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie das Feld **[!UICONTROL Punktzahl]** aus und aktivieren Sie das Kontrollkästchen in der Spalte **[!UICONTROL Absteigend]**, um die Elemente der **[!UICONTROL Punktzahl]**-Felder in absteigender Reihenfolge zu sortieren. Bei jeder Empfängerin bzw. jedem Empfänger wird durch die Anreicherungsaktivität eine Zeile mit der höchsten Punktzahl für das letzte Spiel hinzugefügt. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/uc1_enrich_10.png)
+   ![Sortierbildschirm, bei dem das Feld Bewertung hinzugefügt wird, wobei Absteigend aktiviert ist, um die höchste Bewertung beizubehalten.](assets/uc1_enrich_10.png)
 
 1. Doppelklicken Sie im Bildschirm **[!UICONTROL Hinzuzufügende Daten]** auf das Feld **[!UICONTROL Score]**. Auf diese Weise fügt die Anreicherungsaktivität nur das Feld **[!UICONTROL Score]** hinzu. Klicken Sie auf **[!UICONTROL Beenden]**.
 
-   ![](assets/uc1_enrich_11.png)
+   ![Daten zum Hinzufügen eines Bildschirms, wobei nur das Feld Score (@score) in den Ausgabespalten und „Beenden“ hervorgehoben sind.](assets/uc1_enrich_11.png)
 
 Klicken Sie mit der rechten Maustaste auf die eingehende Transition der Anreicherungsaktivität und wählen Sie die Option **[!UICONTROL Zielgruppe anzeigen…]** aus. Die Arbeitstabelle enthält die folgenden Daten:
 
-![](assets/uc1_enrich_13.png)
+![Fenster Population anzeigen mit geöffneter Zielgruppe, in der der Primärschlüssel und die Zielgruppendimension ohne Score aufgelistet werden.](assets/uc1_enrich_13.png)
 
 Das Schema der Arbeitstabelle stellt sich wie folgt dar:
 
-![](assets/uc1_enrich_15.png)
+![Die Registerkarte „Schema“ der eingehenden Population zeigt nur die Schnittmenge mit dem Primären Schlüssel und der Zielgruppendimension an.](assets/uc1_enrich_15.png)
 
 Erneuern Sie diesen Vorgang für die ausgehende Transition der Anreicherungsaktivität. Wir können sehen, dass die mit den Empfängerbewertungen verknüpften Daten hinzugefügt wurden. Die höchste Punktzahl jeder empfangenden Person wurde wiederhergestellt.
 
-![](assets/uc1_enrich_12.png)
+![Populationsfenster nach Anreicherung anzeigen, in dem eine Bewertungsspalte mit dem höchsten Punktwert jedes Empfängers aufgelistet ist.](assets/uc1_enrich_12.png)
 
 Auch das Schema wurde entsprechend angereichert.
 
-![](assets/uc1_enrich_14.png)
+![Registerkarte „Schema“ der angereicherten Population mit Wettbewerbsergebnissen und hinzugefügtem Feld „Score“.](assets/uc1_enrich_14.png)
 
 ## &#x200B;3. Schritt: Aufspaltung und Versand {#step-3--split-and-delivery}
 
 Im Anschluss an die Anreicherung sorgt die **[!UICONTROL Aufspaltung]** für die Verteilung der Empfänger nach den erreichten Scores.
 
-![](assets/uc1_enrich_18.png)
+![Aufspaltungsaktivität mit drei ausgehenden Transitionen auf die Versandaktivitäten, Platz 1, Platz 2 und erneut versuchen.](assets/uc1_enrich_18.png)
 
 1. Eine erste Teilmenge (**Gewinner**) wurde definiert, um die Person mit der höchsten Punktzahl einzuschließen. Definieren Sie hierzu eine Begrenzung der Anzahl der Einträge, sortieren Sie die Punktzahlen in absteigender Reihenfolge und begrenzen Sie die Anzahl der Einträge auf 1.
 
-   ![](assets/uc1_enrich_16.png)
+   ![Gewinner der Aufspaltung auf einen Datensatz beschränkt, sortiert nach Score (Zusätzliche Daten/Wettbewerbsergebnisse) absteigend.](assets/uc1_enrich_16.png)
 
 1. Die zweite Teilmenge (**Zweiter Platz**) enthält die Person mit der zweithöchsten Punktzahl. Die Konfiguration erfolgt analog zur ersten Teilmenge.
 
-   ![](assets/uc1_enrich_17.png)
+   ![Untergruppe aufspalten Zweiter Platz wie Gewinner konfiguriert: sortiert nach Score absteigend, beschränkt auf 1,](assets/uc1_enrich_17.png)
 
 1. Die dritte Teilmenge (**Verlierer**) enthält die verbleibenden Empfänger. Kreuzen Sie im **[!UICONTROL Allgemein]**-Tab die Option **[!UICONTROL Komplement erzeugen]** an, um alle die Empfänger abzurufen, die weder den höchsten noch den zweithöchsten Score erzielt haben.
 
-   ![](assets/uc1_enrich_19.png)
+   ![Registerkarte „Allgemein aufteilen“ mit aktiviertem Kontrollkästchen „Komplement erzeugen“ und der Bezeichnung „Verlierer“.](assets/uc1_enrich_19.png)
 
 1. Schließen Sie an jede Teilmenge einen **[!UICONTROL Versand]** an. Verwenden Sie für jeden Versand eine andere Versandvorlage.
 
-   ![](assets/uc1_enrich_20.png)
+   ![Versandaktivität Erster Platz basierend auf der Vorlage Erster Platz Versand (DM41).](assets/uc1_enrich_20.png)

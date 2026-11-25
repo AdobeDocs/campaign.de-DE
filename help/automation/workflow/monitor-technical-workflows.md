@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 100%
+source-wordcount: '538'
+ht-degree: 92%
 ---
 # Überwachen technischer Workflows {#monitoring-technical-workflows}
 
@@ -37,7 +37,7 @@ Technische Workflows müssen überwacht werden und bei einer Störung müssen Ma
 
 Auf das Instanz-Monitoring-Dashboard können Sie über den Tab **[!UICONTROL Monitoring]** zugreifen.
 
-![](assets/monitoring_technical_workflows1.png)
+![Dashboard zur Instanzüberwachung mit der Prozessliste, Links zu fehlgeschlagenen Workflows und Sendungen und Systemindikatoren](assets/monitoring_technical_workflows1.png)
 
 Prüfen Sie unter „Systemindikator“ und „Core-Dateien“, ob Indikatoren rot hervorgehoben sind. Wenn dies der Fall ist, sollten Sie Folgendes tun:
 
@@ -75,7 +75,7 @@ Vergewissern Sie sich, dass der Tracking-Workflow plangemäß ausgeführt wird (
 
 In der Gruppe **[!UICONTROL Workflow-Verantwortliche]** sollten Benutzer enthalten sein, die von Fehlschlägen informiert werden müssen und umgehend Abhilfemaßnahmen setzen können.
 
-![](assets/monitoring_technical_workflows3.png)
+![Registerkarte „Allgemein“ der Workflow-Eigenschaften mit ausgewählten Workflow-Verantwortlichen im Feld „Verantwortliche(r)“](assets/monitoring_technical_workflows3.png)
 
 Wenn ein Problem auftritt, sollte eine Warnung erzeugt und an die entsprechende Benutzergruppe gesendet werden.
 
@@ -93,7 +93,7 @@ Alle benutzerdefinierten technischen Workflows sollten in einem Arbeitsblatt mit
 * Verantwortlicher für die Überwachung
 * Maßnahmen beim Auftreten eines Fehlers
 
-![](assets/monitoring_technical_workflows4.png)
+![Wartungsarbeitsblatt mit Angaben zu Häufigkeit, Start, Dauer, Ordner, Name, Kritikpunkt und Abhängigkeiten des Workflows](assets/monitoring_technical_workflows4.png)
 
 ## Planung und Automatisierung der Überwachung {#planning-and-automation-of-monitoring}
 

@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 100%
+source-wordcount: '152'
+ht-degree: 77%
 ---
 # Schema-Bearbeitung{#edit-schema}
 
@@ -38,10 +38,10 @@ Daten können mit der Aktivität **[!UICONTROL Schema bearbeiten]** im Workflow 
 
 Diese Aktivität verändert nicht die Daten der Arbeitstabelle, sondern nur ihr Schema, d. h. die logische Darstellung der Daten.
 
-![](assets/wf_manipulation_box.png)
+![Bearbeiten der Schemaaktivität mit Ausgabespalten und -ausdrücken, einschließlich einer Spalte für den Bestelldurchschnitt, berechnet mit Durchschn](assets/wf_manipulation_box.png)
 
 Im Tab **[!UICONTROL Relationen]** können Sie Beziehungen zu anderen Arbeitstabellen herstellen.
 
-![](assets/wf_manipulation_box_link_tab.png)
+![Registerkarte „Verknüpfungen“ von Schema bearbeiten mit dem Dialogfeld „Verknüpfungsdefinition“, das das Zielschema und die Join-Bedingungen anzeigt](assets/wf_manipulation_box_link_tab.png)
 
 Im unteren Bereich werden die Joinbedingungen definiert, d. h. die Kriterien festgelegt, die die Abstimmung zwischen den Tabellendaten ermöglichen.

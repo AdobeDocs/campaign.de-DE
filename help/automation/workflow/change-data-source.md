@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '403'
+ht-degree: 85%
 ---
 # Datenquelle ändern {#change-data-source}
 
@@ -61,22 +61,22 @@ So verwenden Sie die Aktivität **[!UICONTROL Datenquelle ändern]**:
 
 1. Fügen Sie die Aktivität **[!UICONTROL Datenquelle ändern]** hinzu.
 
-   ![](assets/change-data-source.png)
+   ![Workflow mit Start und Abfrage und die Aktivität „Daten-Source ändern“ in der Palette hervorgehoben](assets/change-data-source.png)
 
 1. Bearbeiten Sie die Aktivität **[!UICONTROL Datenquelle ändern]** und wählen Sie **[!UICONTROL Standarddatenquelle]** aus.
 
    Die Arbeitstabelle, die das Ergebnis Ihrer Abfrage enthält, wird dann in die standardmäßige lokale Campaign-Datenbank verschoben.
 
-   ![](assets/change-data-source_2.png)
+   ![Aktivität „Daten-Source ändern“ mit ausgewählter Option „Standardmäßige Datenquelle“](assets/change-data-source_2.png)
 
 1. Fügen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität hinzu, um Einzeloperationen an der Arbeitstabelle durchzuführen.
 
-   Weitere Informationen über die Aktivität **[!UICONTROL JavaScript-Code]** finden Sie auf [dieser Seite](sql-code-and-javascript-code.md#javascript-code).
+   Weitere Informationen zur Aktivität **[!UICONTROL JavaScript-Code]** finden Sie unter [JavaScript-Code und erweiterter JavaScript-Code](sql-code-and-javascript-code.md#javascript-code).
 
 1. Fügen Sie eine weitere Aktivität vom Typ **[!UICONTROL Datenquelle ändern]** hinzu, um zur Cloud-Datenbank zurückzukehren.
 
 1. Bearbeiten Sie diese Aktivität und wählen Sie **[!UICONTROL Aktives externes FDA-Konto]** sowie das entsprechende externe Konto **[!UICONTROL Externe Datenbank]**.
 
-   ![](assets/change-data-source_3.png)
+   ![Aktivität „Daten-Source ändern“ mit ausgewähltem aktiven externen FDA-Konto und hervorgehobener Snowflake in der Liste](assets/change-data-source_3.png)
 
 1. Sie können den Workflow jetzt starten.

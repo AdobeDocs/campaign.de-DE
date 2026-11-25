@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '401'
+ht-degree: 82%
 ---
 # Laden des Versandinhalts{#loading-delivery-content}
 
@@ -39,7 +39,7 @@ Gehen Sie dazu wie folgt vor:
 
    Hier ist ein Beispiel eines externen S3-Kontos:
 
-   ![](assets/delivery_loadcontent_filetransfertexamples3.png)
+   ![Formular zur Erstellung externer Konten vom Typ AWS S3, Server, AWS-Zugriffsschlüssel-ID und geheimer Zugriffsschlüssel ausgefüllt](assets/delivery_loadcontent_filetransfertexamples3.png)
 
 1. Erstellen Sie einen neuen Workflow, beispielsweise in **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Aufträge]** > **[!UICONTROL Zielgruppen-Workflow]**.
 1. Fügen Sie Ihrem Workflow die Aktivität **[!UICONTROL Dateiübertragung]** hinzu und konfigurieren Sie sie durch folgende Angaben:
@@ -47,7 +47,7 @@ Gehen Sie dazu wie folgt vor:
    * das zu verwendende externe Konto für die Verbindung mit dem S3- oder (S)FTP-Server.
    * den Pfad der Datei auf dem S3- oder (S)FTP-Server.
 
-   ![](assets/delivery_loadcontent_filetransfertexample.png)
+   ![Dateiübertragungsaktivität auf „Datei herunterladen“ eingestellt, wobei ein externes Konto und ein Serverordnerpfad zu einer HTML-Datei verwendet werden](assets/delivery_loadcontent_filetransfertexample.png)
 
 1. Fügen Sie eine Aktivität **[!UICONTROL Versand]** hinzu und verbinden Sie sie mit der ausgehenden Transition der Aktivität **[!UICONTROL Dateiübertragung]**. Konfigurieren Sie wie folgt:
 
@@ -56,7 +56,7 @@ Gehen Sie dazu wie folgt vor:
    * Inhalt: Selbst wenn der Inhalt in der vorherigen Aktivität importiert wurde, wählen Sie **[!UICONTROL Im Versand angegeben]** aus. Da der Inhalt direkt aus einer auf einem Remote-Server gespeicherten Datei importiert wird, besitzt er keine Kennung, wenn er vom Workflow verarbeitet wird, und kann nicht als vom Eingangsereignis stammend identifiziert werden.
    * Auszuführende Aktion: Wählen Sie **[!UICONTROL Speichern]**, um den Versand zu speichern und darauf über **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** zugreifen zu können, wenn der Workflow ausgeführt wird.
 
-   ![](assets/delivery_loadcontent_activityexample.png)
+   ![Versandaktivität mit einem neuen Versand aus einer Vorlage, in der Versandaktion angegebener Inhalt und Speicheraktion](assets/delivery_loadcontent_activityexample.png)
 
 1. Fügen Sie in der Aktivität **[!UICONTROL Versand]** im Tab **[!UICONTROL Script]** den folgenden Befehl hinzu, um den Inhalt der importierten Datei in den Versand zu laden:
 
@@ -64,7 +64,7 @@ Gehen Sie dazu wie folgt vor:
    delivery.content.html.source=loadFile(vars.filename)
    ```
 
-   ![](assets/delivery_loadcontent_script.png)
+   ![Registerkarte „Script“ der Versandaktivität mit dem Befehl delivery.content.html.source=loadFile(vars.filename)](assets/delivery_loadcontent_script.png)
 
 1. Speichern und starten Sie den Workflow. Unter **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** wird ein neuer Versand mit dem geladenen Inhalt erstellt.
 

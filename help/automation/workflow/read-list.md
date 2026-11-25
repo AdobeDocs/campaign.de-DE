@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 100%
+source-wordcount: '641'
+ht-degree: 79%
 ---
 # Liste lesen{#read-list}
 
@@ -38,15 +38,15 @@ Mit der Aktivität **[!UICONTROL Liste lesen]** können Sie Daten aus einer List
 
 Die zu verarbeitende Liste kann explizit angegeben, von einem Script berechnet oder dynamisch abgerufen werden. Dies hängt von den in der Aktivität **[!UICONTROL Liste lesen]** aktivierten Optionen oder angegebenen Parametern ab.
 
-![](assets/list_edit_select_option_01.png)
+![Aktivität „Liste lesen“ mit explizit angegebener Auswahl, ausgewählter Liste und dem Link „Abfrage bearbeiten“ unter Source-Filterung](assets/list_edit_select_option_01.png)
 
 Wenn die Liste nicht explizit bezeichnet wird, ist eine Beispielliste anzugeben, die als Strukturvorlage verwendet wird.
 
-![](assets/s_advuser_list_template_select.png)
+![Aktivität „Liste lesen“ mit einem durch ein Skript berechneten Namen, der ausgewählt und die Dropdown-Liste geöffnet ist](assets/s_advuser_list_template_select.png)
 
 Nach erfolgter Konfiguration der Liste können Sie über die Option **[!UICONTROL Abfrage bearbeiten...]** einen Filter hinzufügen, um die für den weiteren Workflow-Verlauf zu nutzende Population einzuschränken.
 
-![](assets/wf_readlist_1.png)
+![Aktivität „Liste lesen“ mit dem Filter „Abfrage bearbeiten“ für „Preis“ ist nicht leer und wird auf die ausgewählte Liste angewendet](assets/wf_readlist_1.png)
 
 >[!CAUTION]
 >
@@ -58,21 +58,21 @@ Listen können direkt in der Adobe Campaign-Startseite über die Schaltfläche *
 
 Im folgenden Beispiel soll eine Datei mit Adressen importiert werden, die grundsätzlich vom E-Mail-Versand auszuschließen sind (beispielsweise, weil die Empfänger nicht mehr existieren).
 
-![](assets/s_advuser_list_read_sample_1.png)
+![Workflow mit der Abfrage Liste lesen und Neue Kontaktdatei verbunden mit einem Ausschluss, dann einem Versand und einer Wartezeit von 3 Tagen](assets/s_advuser_list_read_sample_1.png)
 
 Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für eine Versandaktion ausgewählt werden. Die aus der Zielgruppe auszuschließenden E-Mail-Adressen werden in einer externen Liste gespeichert. In unserem Beispiel sind nur die Informationen zu E-Mail-Adressen für den Ausschluss erforderlich.
 
 1. Die zum Laden der im **Premiumkunden**-Ordner enthaltenen Empfänger erstellte Abfrage muss die E-Mail-Adressen der Empfänger ausgeben, um die Abstimmung mit der Ausschlussliste zu ermöglichen.
 
-   ![](assets/s_advuser_list_read_sample_0.png)
+   ![Abfrage-Aktivität „Neue Kontakte“ mit dem Feld „E-Mail“ unter „Ergänzende Informationen“ hinzugefügt](assets/s_advuser_list_read_sample_0.png)
 
 1. Im vorliegenden Beispiel ist die Liste im Ordner **Listen** gespeichert und der Titel wird berechnet.
 
-   ![](assets/s_advuser_list_read_sample_2.png)
+   ![Aktivität „Liste lesen“ mit dem Ordner „Listen“ und einer berechneten Beschriftung für die Datei „Blockierungsliste“](assets/s_advuser_list_read_sample_2.png)
 
 1. Um E-Mail-Adressen der externen Liste von der Hauptzielgruppe auszuschließen, müssen Sie die Ausschlussaktivität konfigurieren und angeben, dass der Ordner **Neue Kontakte** die beizubehaltenden Daten enthält. Die zusammengeführten Daten dieser Menge und jeder anderen eingehenden Menge der Ausschlussaktivität werden aus der Zielgruppe gelöscht.
 
-   ![](assets/s_advuser_list_read_sample_3.png)
+   ![Ausschlussaktivität mit der Primären Einstellung „Neue Kontaktdatei“ und der Ausschlussregeltabelle](assets/s_advuser_list_read_sample_3.png)
 
    Die Ausschlussregeln werden im mittleren Bereich des Fensters konfiguriert. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um den Ausschlusstyp zu definieren.
 
@@ -82,6 +82,6 @@ Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für 
 
    Im vorliegenden Beispiel handelt es sich um einen Ausschluss über einen Join: Die Daten der Liste werden über das E-Mail-Feld mit der Hauptmenge abgestimmt. Wählen Sie zur Konfiguration des Joins im Feld **[!UICONTROL Dimensionsänderung]** die Option **[!UICONTROL Join]** aus.
 
-   ![](assets/s_advuser_list_read_sample_4.png)
+   ![Ausnahmendefinition mit „Liste lesen“ als Ausschlussgruppe und der Option „Joins“ in der Dimensionsänderung](assets/s_advuser_list_read_sample_4.png)
 
 1. Wählen Sie dann das Feld aus, dass der E-Mail-Adresse in zwei Mengen entspricht (Quelle und Ziel). Die Spalten werden anschließend verknüpft und die Empfangenden, deren E-Mail-Adressen in der Liste der importierten Adressen angezeigt werden, werden von der Zielgruppe ausgeschlossen.

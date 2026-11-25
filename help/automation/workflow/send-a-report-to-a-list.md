@@ -24,16 +24,16 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 77%
 ---
 # Senden eines Berichts an eine Liste{#send-a-report-to-a-list}
 
 Im folgenden Anwendungsbeispiel soll jeden Monat der Standardbericht zu den **[!UICONTROL Trackingindikatioren]** erzeugt und als PDF an eine Empfängerliste gesendet werden.
 
-![](assets/use_case_report_intro.png)
+![Monatlicher Berichts-Workflow mit Planung, JavaScript-Code und Versand sowie die E-Mail mit „indicators.pdf“-Anlage.](assets/use_case_report_intro.png)
 
 Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor, um eine Liste der gewünschten Empfänger zu erstellen:
 1. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus.
 1. Wählen Sie **[!UICONTROL Neue Liste]** aus und erstellen Sie eine neue Empfängerliste, an die der Bericht gesendet werden soll.
 
-Weiterführende Informationen zum Erstellen von Listen finden Sie in [diesem Abschnitt](../../v8/audiences/create-audiences.md).
+Weitere Informationen zum Erstellen von Listen finden Sie unter [Erstellen von Profil-Audiences in Campaign](../../v8/audiences/create-audiences.md).
 
 ## &#x200B;2. Schritt: Erstellen der Versandvorlage {#step-2--create-the-delivery-template}
 
@@ -57,7 +57,7 @@ Gehen Sie wie folgt vor, um eine Versandvorlage zu erstellen:
 
 1. Gehen Sie im Adobe Campaign-Explorer zum Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** und duplizieren Sie die integrierte Vorlage **[!UICONTROL E-Mail-Versand]**.
 
-   Weiterführende Informationen zum Erstellen von Versandvorlagen finden Sie in [diesem Abschnitt](../../v8/send/create-templates.md).
+   Weiterführende Informationen zur Erstellung von Versandvorlagen finden Sie unter [Arbeiten mit Versandvorlagen](../../v8/send/create-templates.md).
 
 1. Konfigurieren Sie die Vorlage, indem Sie Titel, Zielgruppe (d. h. die zuvor erstellte Empfängerliste), Betreff und Inhalt angeben.
 
@@ -67,17 +67,17 @@ Gehen Sie wie folgt vor, um eine Versandvorlage zu erstellen:
 
    * Klicken Sie auf den Link **[!UICONTROL Anhänge]** und dann auf den Pfeil neben der Schaltfläche **[!UICONTROL Hinzufügen]**. Wählen Sie **[!UICONTROL Berechneter Anhang...]** aus
 
-     ![](assets/use_case_report_4.png)
+     ![Fenster „Angehängte Dateien bearbeiten“ mit dem Menü „Hinzufügen“ öffnen und ausgewähltem „Berechneter Anhang“.](assets/use_case_report_4.png)
 
    * Wählen Sie in der Dropdown-Liste **[!UICONTROL Typ]** die letzte Option aus: **[!UICONTROL Dateiname wird beim Versand jeder Nachricht berechnet (kann vom Empfängerprofil abhängen)]**.
 
-     ![](assets/use_case_report_5.png)
+     ![Anlagendefinition mit Dateityp, der beim Versand für jede Nachricht und jeden Bericht mit dem Titel „Bericht“ berechnet wird.](assets/use_case_report_5.png)
 
      Der im Feld **[!UICONTROL Titel]** angegebene Wert erscheint nicht im tatsächlichen Versand.
 
    * Geben Sie in der Textzone den Pfad und den Namen der Datei ein.
 
-     ![](assets/use_case_report_6.png)
+     ![Registerkarte „Allgemein“ der Anlagendefinition mit dem in die Textzone eingegebenen Dateipfad /tmp/indicators.pdf.](assets/use_case_report_6.png)
 
      >[!CAUTION]
      >
@@ -85,13 +85,13 @@ Gehen Sie wie folgt vor, um eine Versandvorlage zu erstellen:
 
    * Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus und markieren Sie **[!UICONTROL Script erstellen zur Berechnung des Dateinamens, der beim Empfänger angezeigt wird]**. Geben Sie in der Textzone den Namen des Anhangs im endgültigen Versand ein.
 
-     ![](assets/use_case_report_6b.png)
+     ![Registerkarte „Erweitert“ für die Anlagendefinition mit dem Script-Namen der überprüften Datei und der eingegebenen Datei „latest-report.pdf“.](assets/use_case_report_6b.png)
 
 ## Schritt 3: Erstellen des Workflows {#step-3--creating-the-workflow}
 
 Erstellen Sie für diesen Anwendungsfall den folgenden Workflow.
 
-![](assets/use_case_report_8.png)
+![Monatliche Berichtsindikatoren für Workflows: Planung, JavaScript-Code, dann Versand.](assets/use_case_report_8.png)
 
 Es werden drei Aktivitäten verwendet:
 
@@ -104,17 +104,17 @@ Um den Workflow zu erstellen, gehen Sie wie folgt vor:
 1. Navigieren Sie zum Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** des Campaign-Explorers und erstellen Sie einen neuen Ordner, in dem Sie Ihre Workflows speichern können.
 1. Erstellen Sie einen neuen Workflow.
 
-   ![](assets/use_case_report_7.png)
+   ![Dialogfeld „Neuer Workflow“ unter Administration > Produktion > Technische Workflows mit einem Beschriftungsfeld und der Schaltfläche „Speichern“.](assets/use_case_report_7.png)
 
 1. Ziehen Sie eine **[!UICONTROL Planung]** in das Diagramm und konfigurieren Sie sie dahingehend, dass der Workflow an jedem ersten Montag eines Monats ausgeführt wird.
 
-   ![](assets/use_case_report_9.png)
+   ![Planungsaktivität, die um 12:00:00 Uhr morgens am ersten Montag jedes Monats ausgelöst wird.](assets/use_case_report_9.png)
 
    Weiterführende Informationen zur Konfiguration der Planung finden Sie im Abschnitt [Planung](scheduler.md).
 
 1. Schließen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität an.
 
-   ![](assets/use_case_report_10.png)
+   ![JavaScript-Code-Aktivität mit dem Skript, das ReportName, Path, ExportFormat und den Aufruf „xtk.report.export“ definiert.](assets/use_case_report_10.png)
 
    Geben Sie folgenden Code ein:
 
@@ -137,14 +137,14 @@ Um den Workflow zu erstellen, gehen Sie wie folgt vor:
 
      >[!CAUTION]
      >
-     >Die Datei muss auf dem Server gespeichert werden. Sie müssen den gleichen Pfad und den gleichen Namen wie in der Registerkarte **[!UICONTROL Allgemein]** des Fensters „Bearbeiten“ für den berechneten Anhang eingeben, wie [hier](#step-2--create-the-delivery-template) beschrieben wird.
+     >Die Datei muss auf dem Server gespeichert werden. Sie müssen den gleichen Pfad und den gleichen Namen wie in der Registerkarte **[!UICONTROL Allgemein]** des Fensters „Bearbeiten“ für den berechneten Anhang eingeben, wie [Schritt 2: Erstellen der Versandvorlage](#step-2--create-the-delivery-template)) beschrieben.
 
    * **var exportFormat**: Format des Anhangs (&quot;PDF&quot;).
    * **var _ctx** (Kontext): Im vorliegenden Beispiel wird der Bericht **[!UICONTROL Trackingindikatoren]** im allgemeinen Kontext verwendet.
 
 1. Fügen Sie abschließend eine **[!UICONTROL Versandaktivität]** mit den folgenden Optionen hinzu:
 
-   ![](assets/use_case_report_11.png)
+   ![Versandaktivität: Neu aus Vorlage, Vorbereitung und Start, ausgehende Transition und Verarbeitungsfehler nicht aktiviert.](assets/use_case_report_11.png)
 
    * Im Bereich **[!UICONTROL Versand]**: Aktivieren Sie die Option **[!UICONTROL Neu, basierend auf einer Vorlage erstellt]** und wählen Sie die zuvor erstellte Vorlage aus.
    * In den Bereichen **[!UICONTROL Empfänger]** und **[!UICONTROL Inhalt]**: Aktivieren Sie **[!UICONTROL Werden bzw. Wird im Versand angegeben]**.

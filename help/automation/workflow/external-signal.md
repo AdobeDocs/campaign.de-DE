@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 100%
+source-wordcount: '197'
+ht-degree: 86%
 ---
 # Externes Signal{#external-signal}
 
@@ -38,7 +38,7 @@ Weiterführende Hinweise zu SOAP-Aufrufen und der PostEvent-Funktion finden Sie 
 
 Sie können diese Aktivität so konfigurieren, dass Ereignisse definiert werden, wenn kein Signal empfangen wird. Bearbeiten Sie hierzu die Aktivität und klicken Sie auf die Registerkarte **[!UICONTROL Gültigkeit]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Einfügen]**, um ein Ereignis zu erstellen und zu konfigurieren.
 
-![](assets/edit_signal.png)
+![Registerkarte Ablauf des externen Signals mit drei Gültigkeiten, wobei das Detailfenster für die Gültigkeit geöffnet ist](assets/edit_signal.png)
 
 Die Ablauf-Konfiguration wird im Abschnitt [Timeouts](define-approvals.md) beschrieben.
 
@@ -46,4 +46,4 @@ In der Spalte **Timeout** kann die Zeitspanne vor Ablauf in den Einheiten Ihrer 
 
 Jede Zeile stellt einen Ablauftypen dar und entspricht einer Transition.
 
-![](assets/external_sign_diag.png)
+![Aktivität des externen Signals mit ausgehenden Transitionen: Ablauf, Ablauf 2, Ablauf 3 und neu](assets/external_sign_diag.png)

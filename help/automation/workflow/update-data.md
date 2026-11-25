@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 99%
+source-wordcount: '1073'
+ht-degree: 86%
 ---
 # Daten-Update{#update-data}
 
@@ -43,7 +43,7 @@ Geben Sie im Feld **[!UICONTROL Aktionstyp]** an, auf welche Weise die Daten akt
 * **[!UICONTROL Sammlung aktualisieren und zusammenführen]**: Aktualisieren Sie Daten und wählen Sie einen primären Datensatz; verknüpfen Sie dann Elemente, die mit den Duplikaten in diesem primären Datensatz verknüpft sind. Anschließend können Duplikate gelöscht werden, ohne dass verwaiste angehängte Elemente erstellt werden.
 * **[!UICONTROL Löschen]**: löscht Daten.
 
-![](assets/s_advuser_update_data_1.png)
+![Aktivität „Daten aktualisieren“ mit geöffneter Liste „Vorgangstyp“, in der „Einfügen“ oder „Aktualisieren“ durch „Löschen“ angezeigt wird.](assets/s_advuser_update_data_1.png)
 
 Im Feld **[!UICONTROL Batch-Größe]** können Sie festlegen, wie viele Elemente der eingehenden Transition aktualisiert werden sollen. Wenn Sie beispielsweise 500 angeben, werden die ersten 500 verarbeiteten Einträge aktualisiert.
 
@@ -57,17 +57,17 @@ Geben Sie an, auf welche Weise die Datensätze der Datenbank identifiziert werde
 
 * Wenn die eingehenden Daten keiner existierenden Zielgruppendimension entsprechen, können Sie entweder eine oder mehrere Relationen angeben, die die Identifizierung der Daten ermöglichen, oder Abstimmschlüssel verwenden.
 
-![](assets/s_advuser_update_data_2.png)
+![Datenaktivität aktualisieren, Datensatzkennung: Empfängerschema als aktualisierte Dimension auswählen.](assets/s_advuser_update_data_2.png)
 
 ## Auswahl der zu aktualisierenden Felder {#selecting-the-fields-to-be-updated}
 
 Über die Schaltfläche **[!UICONTROL Felder gleichen Namens automatisch verknüpfen]** werden die zu aktualisierenden Felder automatisch von Adobe Campaign identifiziert.
 
-![](assets/s_advuser_update_data_3b.png)
+![Felder zur Aktualisierung der Tabelle, die durch die Schaltfläche mit dem Zauberstab ausgefüllt werden, der automatisch Felder mit demselben Namen verknüpft.](assets/s_advuser_update_data_3b.png)
 
 Es besteht auch die Möglichkeit, die Zuordnung manuell vorzunehmen, indem Sie die zu aktualisierenden Felder über die Schaltfläche **[!UICONTROL Hinzufügen]** auswählen.
 
-![](assets/s_advuser_update_data_3.png)
+![Schaltfläche Ausdruck bearbeiten in einer neuen Zeile Felder zum Aktualisieren von Feldern, wobei die Feldauswahl für das Empfängerdokument geöffnet wird.](assets/s_advuser_update_data_3.png)
 
 Wählen Sie alle zu aktualisierenden Felder aus und geben Sie bei Bedarf Bedingungen für die Aktualisierung an. Dies ist in der Spalte **[!UICONTROL Berücksichtigt wenn]** möglich. Die Bedingungen werden nacheinander, in Reihenfolge der Liste geprüft. Die Reihenfolge kann mithilfe der blauen Pfeile rechts der Tabelle angepasst werden.
 
@@ -75,7 +75,7 @@ Ein Zielfeld kann mehrmals verwendet werden.
 
 Wenn Sie die Option **[!UICONTROL Hinzufügen oder aktualisieren]** gewählt haben, können Sie für jedes Feld individuell entscheiden, welche der möglichen Aktionen ausgeführt werden soll. Wählen Sie dazu den gewünschten Wert in der Spalte **[!UICONTROL Vorgang]** aus.
 
-![](assets/s_advuser_update_data_5.png)
+![Spalte Vorgang der Tabelle Zu aktualisierende Felder mit den Optionen Alle, Einfügen und Aktualisieren.](assets/s_advuser_update_data_5.png)
 
 Die Felder **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** und **[!UICONTROL createdBy]** werden im Zuge der Daten-Update-Aktivität automatisch aktualisiert, es sei denn, in der Tabelle der zu aktualisierenden Felder wird explizit etwas anderes konfiguriert.
 
@@ -108,15 +108,15 @@ Das Aktualisieren und Zusammenführen von Sammlungen ermöglicht Ihnen das Aktua
 
 1. Wählen Sie die Option **[!UICONTROL Sammlungen aktualisieren und zusammenführen]**.
 
-   ![](assets/update_and_merge_collections1.png)
+   ![Aktivität „Daten aktualisieren“ mit dem in der Liste „Vorgangstyp“ ausgewählten Vorgangstyp „Sammlungen aktualisieren“ und „Zusammenführen“.](assets/update_and_merge_collections1.png)
 
 1. Wählen Sie die Reihenfolge der Priorität für die Links aus. Auf diese Weise können Sie den Haupteintrag identifizieren. Die verfügbaren Links variieren je nach eingehender Transition.
 
-   ![](assets/update_and_merge_collections2.png)
+   ![Abschnitt „Datensatzkennung“, in dem die Links nach Priorität geordnet aufgelistet sind, die zum Suchen des primären Datensatzes verwendet werden.](assets/update_and_merge_collections2.png)
 
 1. Geben Sie die in den Hauptdatensatz zu verschiebenden Sammlungen und die zu aktualisierenden Felder an.
 
-   Definieren Sie die Regeln, die im Bezug auf die Felder gelten sollen, wenn ein oder mehrere sekundäre Datensätze identifiziert wurden. Dazu können Sie den [Ausdrucksgenerator“ &#x200B;](../../v8/start/filter-conditions.md#list-of-functions). Geben Sie beispielsweise an, dass bei Werten aus verschiedenen möglichen Datensätzen jeweils der zuletzt aktualisierte Wert beibehalten werden soll.
+   Definieren Sie die Regeln, die im Bezug auf die Felder gelten sollen, wenn ein oder mehrere sekundäre Datensätze identifiziert wurden. Dazu können Sie den [Ausdrucksgenerator“ ](../../v8/start/filter-conditions.md#list-of-functions). Geben Sie beispielsweise an, dass bei Werten aus verschiedenen möglichen Datensätzen jeweils der zuletzt aktualisierte Wert beibehalten werden soll.
 
    Geben Sie die Bedingungen zur Berücksichtigung der Regel an.
 
@@ -126,7 +126,7 @@ Das Aktualisieren und Zusammenführen von Sammlungen ermöglicht Ihnen das Aktua
 
 1. Auf der Registerkarte **[!UICONTROL Duplikate]** der **[!UICONTROL Erweiterten Parameter]** besteht die Möglichkeit, die Reihenfolge anzugeben, in der die sekundären Datensätze verarbeitet werden sollen.
 
-   ![](assets/update_and_merge_collections3.png)
+   ![Felder und Sammlungen des Zieldatensatzes, die aktualisiert werden sollen, mit dem Source-Ausdruck und unter Berücksichtigung der Wenn-Spalten.](assets/update_and_merge_collections3.png)
 
 Die Daten für sekundäre Einträge sind mit dem Haupteintrag verknüpft, wenn die definierten Regeln zutreffen. Je nach ausgewähltem Aktualisierungstyp können die sekundären Einträge gelöscht werden.
 

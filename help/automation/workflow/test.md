@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 100%
+source-wordcount: '215'
+ht-degree: 85%
 ---
 # Test{#test}
 
@@ -30,11 +30,11 @@ Mit einer Aktivität des Typs **Test** wird die erste Transition aktiviert, die 
 
 Eine Bedingung ist ein JavaScript-Ausdruck, der als &#39;true&#39; oder &#39;false&#39; ausgewertet werden muss. Um den Ausdruck einzugeben, klicken Sie auf das Symbol rechts neben dem Namen der Bedingung und wählen Sie **[!UICONTROL Bearbeiten…]**.
 
-![](assets/edit_test.png)
+![Die Tabelle Bedingungen der Aktivität testen , wobei das Personalisierungsmenü auf der Option Bearbeiten geöffnet ist, und das Feld Standardverbindung verwenden ausgewählt wird](assets/edit_test.png)
 
 Weitere Informationen zu allen zusätzlichen JavaScript-Funktionen und SOAP-Methoden des über Workflow-JavaScript zugänglichen Applikationsservers finden Sie in der [JSAPI-Dokumentation](https://experienceleague.adobe.com/de/tools/campaign-api){target="_blank"}.
 
-Im Editor können auch direkt Variablen eingegeben werden. Weitere Informationen zum Arbeiten mit Variablen finden Sie in [diesem Abschnitt](javascript-scripts-and-templates.md#variables).
+Im Editor können auch direkt Variablen eingegeben werden. Weitere Informationen zum Arbeiten mit Variablen finden Sie unter [Variablen](javascript-scripts-and-templates.md#variables).
 
 Bedingungen können im Bearbeitungsfenster der Aktivitätseigenschaften hinzugefügt, gelöscht oder geordnet oder über die Transition geändert werden.
 

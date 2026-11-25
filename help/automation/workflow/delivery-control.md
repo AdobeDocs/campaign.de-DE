@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 100%
+source-wordcount: '196'
+ht-degree: 91%
 ---
 # Versand bearbeiten{#delivery-control}
 
@@ -32,7 +32,7 @@ Die Aktivität **Versand bearbeiten** ermöglicht es, einen Versand zu starten, 
 
 Hierbei kann es sich um einen durch die eingehende Transition bezeichneten, einen explizit angegebenen oder einen durch ein Script berechneten Versand handeln. Weitere Informationen hierzu finden Sie im Abschnitt [Versand](delivery.md).
 
-![](assets/edit_diffusion_act.png)
+![Aktivität der Versandsteuerung mit in der Transition angegebenem Versand, Aktion „Starten“ und „Ausgehende Transition erzeugen“](assets/edit_diffusion_act.png)
 
 Wenn Sie **[!UICONTROL Starten]** auswählen, führt die Aktivität alle zum Starten des Versands erforderlichen Schritte aus (Zielgruppenberechnung, Inhaltsvorbereitung, Versand). Wenn einige dieser Schritte bereits von einer vorherigen Workflow-Aktivität ausgeführt wurden, werden sie nicht erneut ausgeführt. Wenn zum Beispiel die Zielgruppenschätzung bereits von einer Aktivität vom Typ **[!UICONTROL Versand]** durchgeführt wurde (siehe [Versand](delivery.md)), startet die Aktivität **[!UICONTROL Mit Versand arbeiten]** die verbleibenden Schritte (Inhaltsvorbereitung und Versand).
 

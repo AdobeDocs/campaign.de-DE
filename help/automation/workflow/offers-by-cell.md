@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 100%
+source-wordcount: '182'
+ht-degree: 85%
 ---
 # Angebote pro Segment{#offers-by-cell}
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 Mithilfe der Aktivität **[!UICONTROL Angebote pro Segment]** lässt sich die eingehende Population (die beispielsweise aus einer Abfrage hervorgeht) in mehrere Zielgruppen aufspalten, um so je Segment spezifische Angebote zu unterbreiten.
 
-Diese Aktivität kann nur mit **Interaktion** verwendet werden. Weitere Informationen zur Angebotsverwaltung finden Sie in [diesem Abschnitt](../../v8/interaction/interaction.md).
+Diese Aktivität kann nur mit **Interaktion** verwendet werden. Erfahren Sie mehr über die Angebotsverwaltung in [Campaign Interaction - Angebotsverwaltung](../../v8/interaction/interaction.md).
 
 Gehen Sie dazu wie folgt vor:
 
@@ -47,6 +47,6 @@ Gehen Sie dazu wie folgt vor:
    * Konfigurieren Sie anhand der verfügbaren Filter und Begrenzungen die Population des Segments.
    * Wählen Sie als Nächstes das Angebot aus, das Sie der Teilmenge unterbreiten möchten. Es stehen die Angebote zur Verfügung, die für die im vorherigen Schritt ausgewählte Platzierung qualifiziert sind.
 
-     ![](assets/int_offer_per_cell1.png)
+     ![Fenster mit Untergruppen von Angeboten nach Zelle: Optionen zum Filtern und Eingrenzen von Datensätzen, Platzierungen und die Angebotsliste.](assets/int_offer_per_cell1.png)
 
 1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Siehe [Kanalübergreifender Versand](cross-channel-deliveries.md).

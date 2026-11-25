@@ -30,16 +30,16 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 100%
+source-wordcount: '138'
+ht-degree: 69%
 ---
 # Kampagnen-Workflows {#campaign-workflows}
 
 Sie können für jede Kampagne Workflows erstellen, die über die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgeführt werden. Diese Workflows sind kampagnenspezifisch.
 
-![](assets/wf-in-op-edit-delivery-tab.png)
+![Registerkarte Zielgruppenbestimmungen und Workflows einer Kampagne mit der Workflow-Liste und einem Diagramm mit Abfragen, Aufspaltung und Sendungen.](assets/wf-in-op-edit-delivery-tab.png)
 
 Dieser Tab enthält dieselben Aktivitäten für alle Workflows. [Mehr dazu](#implementation-steps-)
 
@@ -47,6 +47,6 @@ Zusätzlich zur Zielgruppenbestimmung von Kampagnen ermöglichen Kampagnen-Workf
 
 Alle Kampagnen-Workflows werden zentral im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Kampagnen-Workflows]** gespeichert.
 
-![](assets/campaigns_wf.png)
+![Explorer mit dem Knoten Administration > Produktion > Automatisch erstellte Objekte > Kampagnen-Workflows ausgewählt.](assets/campaigns_wf.png)
 
-Ausführliche Informationen zu Campaign-Workflows und Implementierungsbeispiele finden Sie in [diesem Abschnitt](../campaigns/marketing-campaign-target.md).
+Ausführliche Informationen zu Kampagnen-Workflows und Implementierungsbeispiele finden Sie unter [Zielgruppe einer Marketing-Kampagne](../campaigns/marketing-campaign-target.md).

@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 90%
 ---
 # E-Mail-Empfang{#inbound-emails}
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 Die Aktivität **E-Mail-Empfang** ermöglicht den Abruf und die Verarbeitung von E-Mails aus Mailboxen, die über POP3 abgefragt werden können.
 
-![](assets/email_rec_edit_1.png)
+![Dialog Aktivität „Eingehende E-Mails“ mit den Feldern POP3-Server, Externes Konto und Skript](assets/email_rec_edit_1.png)
 
 In der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie die POP3-Parameter sowie das bei Empfang jeder Nachricht auszuführende Skript angeben. In der zweiten Registerkarte können Sie der Aktivität einen Zeitplan zuweisen und in der dritten Registerkarte die Ablaufbedingungen der Aktivität definieren.
 
@@ -46,7 +46,7 @@ In der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie di
 
      Wenn die zuvor beschriebene Option nicht aktiviert wurde, sind folgende Parameter anzugeben:
 
-     ![](assets/email_rec_edit_1b.png)
+     ![POP3-Serverbereich mit den Feldern POP3-Server, POP3-Konto, Kennwort und Port](assets/email_rec_edit_1b.png)
 
      * **[!UICONTROL POP3-Server]**
 
@@ -91,6 +91,6 @@ In der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie di
 
    Im **[!UICONTROL Ablauf]**-Tab können Ablauffristen für die Aktivität definiert werden.
 
-   ![](assets/email_rec_edit_3.png)
+   ![Registerkarte „Gültigkeit eingehender E-Mails“ mit der Liste „Ablauftyp“ mit den Optionen für Verzögerung und Ablauf](assets/email_rec_edit_3.png)
 
    Die Konfiguration erfolgt analog zum Planungsassistenten. Siehe [Timeouts](define-approvals.md).

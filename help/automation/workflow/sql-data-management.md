@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 88%
+source-wordcount: '468'
+ht-degree: 84%
 ---
 # SQL-Daten-Management{#sql-data-management}
 
@@ -52,7 +52,7 @@ Bei Fehlern stehen zwei Lösungen zur Verfügung:
 * Lösung 1 — `XtkSecurity_FeatureFlag_SqlSensitive`
 * Lösung 2 — `XtkSecurity_SqlSensitive_Methods`
 
-Weitere Informationen [&#x200B; Best Practices finden &#x200B;](sql-code-and-javascript-code.md#important-notes) unter SQL-Code .
+Weitere Informationen [ Best Practices finden ](sql-code-and-javascript-code.md#important-notes) unter SQL-Code .
 
 ## SQL-Daten-Management-Aktivität konfigurieren {#configuring-the-sql-data-management-activity}
 
@@ -73,7 +73,7 @@ Weitere Informationen [&#x200B; Best Practices finden &#x200B;](sql-code-and-jav
 
    Andernfalls können Sie Ihr SQL-Script auch in den dafür vorgesehenen Bereich kopieren.
 
-   ![](assets/sql_datamanagement.png)
+   ![SQL-Daten-Management-Aktivität mit ausgehenden Schemaempfängern und einem SQL-Script unter Verwendung der eingehenden Transitionstabellennamen](assets/sql_datamanagement.png)
 
    Mithilfe der Aktivität können Sie die folgenden Variablen im Script verwenden:
 

@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 78%
 ---
 # Abfrage mit Gruppierungsverwaltung {#querying-using-grouping-management}
 
@@ -50,32 +50,32 @@ Gehen Sie wie folgt vor:
 
 1. Öffnen Sie das **[!UICONTROL generische Abfragetool]** und wählen Sie die Empfängertabelle (**nms:recipient**).
 
-   ![](assets/query_editor_02.png)
+   ![Bildschirm „Dokumenttyp“ des allgemeinen Abfrage-Editors mit ausgewählten Empfängern (nms).](assets/query_editor_02.png)
 
 1. Im Fenster **[!UICONTROL Zu extrahierende Daten]** wählen Sie die Felder **[!UICONTROL E-Mail-Domain]** und **[!UICONTROL Primärschlüssel]** aus. Führen Sie eine Zählung des Felds **[!UICONTROL Primärschlüssel]** durch.
 
 1. Kreuzen Sie die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** an.
 
-   ![](assets/query_editor_nveau_29.png)
+   ![Daten zum Extrahieren des Bildschirms mit den Spalten „E-Mail-Domain“ und „Anzahl (Primärschlüssel)“, Gruppierungen verwalten (GRUPPIEREN NACH + HAVING) aktiviert.](assets/query_editor_nveau_29.png)
 
 1. Ordnen Sie im Fenster **[!UICONTROL Sortierung]** die E-Mail-Domains in absteigender Reihenfolge. Kreuzen Sie hierfür in der Spalte **[!UICONTROL Absteigende Sortierung]** die Option **[!UICONTROL Ja]** an. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   ![](assets/query_editor_nveau_70.png)
+   ![Sortierbildschirm mit sortierter E-Mail-Domain, der die Sortierspalten und absteigende Sortierspalten anzeigt.](assets/query_editor_nveau_70.png)
 
 1. Wählen Sie dann im Fenster **[!UICONTROL Datenfilter]** die Option **[!UICONTROL Filterbedingungen]**. Wechseln Sie zum Fenster **[!UICONTROL Zielelemente]** und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Klicken Sie im Fenster **[!UICONTROL Gruppierung der Daten]** auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL E-Mail-Domain]** aus.
 
    Die Gruppierung (GROUP BY) erfolgt an dieser Stelle. Das Fenster wird nur angezeigt, wenn die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** angekreuzt wurde.
 
-   ![](assets/query_editor_blocklist_04.png)
+   ![Bildschirm für die Datengruppierung mit der E-Mail-Domain (@domain) als Gruppenspalte für die GROUP BY-Klausel.](assets/query_editor_blocklist_04.png)
 
 1. Geben Sie anschließend im Fenster **[!UICONTROL Gruppierbedingung]** eine Primärschlüsselanzahl von über 30 an. So werden nur die E-Mail-Domains ausgegeben, die mehr als 30-mal kontaktiert wurden.
 
    Dieses Fenster wird ebenfalls nur angezeigt, wenn die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** angekreuzt wurde. Hier erfolgt die Filterung des Ergebnisses der Gruppierung (HAVING).
 
-   ![](assets/query_editor_blocklist_05.png)
+   ![Bildschirm für Gruppierungsbedingungen mit count(primary key) größer als 30 für die HAVING-Klausel.](assets/query_editor_blocklist_05.png)
 
 1. Da in unserem Beispiel keine spezielle Formatierung erforderlich ist, können Sie im Fenster **[!UICONTROL Datenformatierung]** direkt auf **[!UICONTROL Weiter]** klicken.
 1. Klicken Sie anschließend auf **[!UICONTROL Datenvorschau starten]**. Das Ergebnis zeigt nur eine E-Mail-Domain, die mehr als 30-mal kontaktiert wurde.
 
-   ![](assets/query_editor_blocklist_06.png)
+   ![Datenvorschau-Bildschirm gibt zwei E-Mail-Domains zurück, nachdem die Vorschau gestartet wurde.](assets/query_editor_blocklist_06.png)

@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 100%
+source-wordcount: '291'
+ht-degree: 84%
 ---
 # Durchführen der Aggregat-Berechnung {#performing-aggregate-computing}
 
@@ -48,12 +48,12 @@ Gehen Sie wie folgt vor:
 
 1. Konfigurieren Sie im Fenster **[!UICONTROL Zu extrahierende Daten]** wie im vorangehenden Beispiel eine Primärschlüssel-Zählung. Fügen Sie das Feld **[!UICONTROL Geschlecht]** zu den Ausgabespalten hinzu. Kreuzen Sie die Option **[!UICONTROL Gruppieren]** der Spalte **[!UICONTROL Geschlecht]** an. Auf diese Weise werden die Empfänger nach Geschlecht angeordnet.
 
-   ![](assets/query_editor_nveau_27.png)
+   ![Daten, die mit den Spalten „Anzahl“ (Primärschlüssel) und „Geschlecht“ extrahiert werden sollen, und Gruppe, die für „Geschlecht“ auf „Ja“ gesetzt ist.](assets/query_editor_nveau_27.png)
 
 1. In diesem Beispiel ist keine **[!UICONTROL Sortierung]** erforderlich. Sie können somit direkt auf **[!UICONTROL Weiter]** klicken.
 1. Konfigurieren Sie einen Datenfilter. Hier soll die Auswahl auf Empfangende beschränkt werden, die in London wohnen.
 
-   ![](assets/query_editor_22.png)
+   ![Target-Elementfilter: Stadt (Standort/@city) gleich London, mit hervorgehobener Abfragezusammenfassung.](assets/query_editor_22.png)
 
    >[!NOTE]
    >
@@ -64,4 +64,4 @@ Gehen Sie wie folgt vor:
 
    Bei einer Sortierung nach Geschlecht sind drei verschiedene Werte möglich: **2** für weiblich, **1** für männlich und **0**, wenn das Geschlecht nicht angegeben wurde. In diesem Beispiel enthält die Liste 10 Frauen, 16 Männer und 2 Personen, deren Geschlecht nicht bekannt ist.
 
-   ![](assets/query_editor_agregat_04.png)
+   ![Datenvorschau mit den Zahlen 10, 16 und 2 für die Geschlechterwerte 2, 1 und 0.](assets/query_editor_agregat_04.png)

@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 100%
+source-wordcount: '1390'
+ht-degree: 83%
 ---
 # Deduplizierung{#deduplication}
 
@@ -66,7 +66,7 @@ In diesem Fall ist wie folgt vorzugehen:
 * Schließen Sie an die Abfragen zunächst eine **Vereinigung** an, um alle eingehenden Datenströme zusammenzufassen.
 * Erstellen Sie dann eine **Deduplizierung** im Anschluss an die **Vereinigung**.
 
-![](assets/dedup-best-practice.png)
+![Zwei Abfragen werden durch eine Vereinigung verbunden, gefolgt von einer Deduplizierungsaktivität und einer Listenaktualisierung](assets/dedup-best-practice.png)
 
 ## Konfiguration {#configuration}
 
@@ -74,7 +74,7 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
 
 1. Klicken Sie auf den Link **[!UICONTROL Konfiguration bearbeiten...]**, um die Deduplizierungsmethode zu definieren.
 
-   ![](assets/s_user_segmentation_dedup_param.png)
+   ![Aktivitätsfenster „Deduplizierung“ mit dem Link „Konfiguration bearbeiten“ in den Deduplizierungsparametern](assets/s_user_segmentation_dedup_param.png)
 
 1. Wählen Sie den Typ der Zielgruppe für diese Aktivität (Deduplizierung ist standardmäßig mit Empfängern verknüpft) und das zu verwendende Kriterium aus, d. h. das Feld, in dem Sie durch identische Werte Duplikate identifizieren können.
 
@@ -84,30 +84,30 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
    >
    >Die Option **[!UICONTROL Andere]** ermöglicht im nächsten Schritt die Auswahl der zu verwendenden Kriterien:
 
-   ![](assets/s_user_segmentation_dedup_param2.png)
+   ![Schritt der Zielgruppendimension mit E-Mail-, SMS-, Telefon-, Fax-, Postanschrift- und anderen Optionen](assets/s_user_segmentation_dedup_param2.png)
 
 1. Die Option **[!UICONTROL Andere]** ermöglicht im nächsten Schritt die Auswahl der zu verwendenden Kriterien im Fall von identischen Werten.
 
-   ![](assets/s_user_segmentation_dedup_param3.png)
+   ![Schritt Identifizierung von Duplikaten mit dem Fenster Ausdruck auswählen und dem ausgewählten Feld Geburtsdatum](assets/s_user_segmentation_dedup_param3.png)
 
 1. Wählen Sie aus der Dropdown-Liste die gewünschte Methode aus und geben Sie die Anzahl an beizubehaltenden Duplikate an.
 
-   ![](assets/s_user_segmentation_dedup_param4.png)
+   ![Deduplizierungsmethodenschritt mit beizubehaltenden Dubletten und Methodenliste mit vier Methoden](assets/s_user_segmentation_dedup_param4.png)
 
    Folgende Methoden stehen zur Verfügung:
 
    * **[!UICONTROL Automatische Auswahl]**: wählt nach dem Zufallsprinzip unter den Duplikaten den beizubehaltenden Datensatz aus.
    * **[!UICONTROL Gemäß einer Werteliste]**: ermöglicht die Bestimmung einer Reihenfolge nach Priorität von Werten für ein oder mehrere Felder. Wählen Sie zur Bestimmung dieser Werte ein Feld aus oder erstellen Sie einen Ausdruck, fügen Sie dann den oder die Werte der entsprechenden Tabelle hinzu. Verwenden Sie die Schaltfläche **[!UICONTROL Hinzufügen]** oberhalb der Werteliste, um ein neues Feld zu definieren.
 
-     ![](assets/s_user_segmentation_dedup_param5.png)
+     ![Nach einer Werteliste mit der Methode „Englisch“ und „Französisch“ in der Prioritätenliste und den Optionen „Andere Werte“](assets/s_user_segmentation_dedup_param5.png)
 
    * **[!UICONTROL Wert nicht leer]**: hiermit lassen sich vornehmlich jene Datensätze beibehalten, für die der Wert des ausgewählten Ausdrucks nicht leer ist.
 
-     ![](assets/s_user_segmentation_dedup_param6.png)
+     ![Methode „Nicht leerer Wert“, wobei das Feld „Ausdruck“ und das Feld „Kontonummer“ ausgewählt sind](assets/s_user_segmentation_dedup_param6.png)
 
    * **[!UICONTROL Von einem Ausdruck ausgehend]**: Beibehalten werden die Datensätze, für die der ausgewählte Ausdruck den kleinsten oder größen Wert aufweist.
 
-     ![](assets/s_user_segmentation_dedup_param7.png)
+     ![Verwenden einer Ausdrucksmethode mit Status als Ausdruck und Beibehalten der Datensätze mit dem größten ausgewählten Wert](assets/s_user_segmentation_dedup_param7.png)
 
    >[!NOTE]
    >
@@ -119,11 +119,11 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
 
    Im unteren Bereich des Fensters können Sie den Titel der ausgehenden Transition des Grafikobjekts anpassen und einen Segment-Code angeben, der dem Ergebnis zugeordnet wird. Dieser Code kann später als Kriterium für die Zielgruppenbestimmung verwendet werden.
 
-   ![](assets/s_user_segmentation_dedup_param8.png)
+   ![Aktivität „Deduplizierung“ mit aktivierter Ergebnisbeschriftung „Target“, Segment-Code „PRO“ und „Komplement erzeugen“](assets/s_user_segmentation_dedup_param8.png)
 
 1. Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie auch die verbleibende Population verwenden möchten. Das Komplement besteht aus allen Duplikaten. Die Aktivität weist somit eine zusätzliche ausgehende Transition auf, wie im Folgenden gezeigt:
 
-   ![](assets/s_user_segmentation_dedup_param9.png)
+   ![Drei Profilabfragen für die Deduplizierung, wobei die Ausgabe von Duplikat und Ziel an zwei Aktivitäten zur Listen-Aktualisierung gesendet wird](assets/s_user_segmentation_dedup_param9.png)
 
 ## Anwendungsbeispiel: Duplikate identifizieren, bevor ein Versand gestartet wird {#example--identify-the-duplicates-before-a-delivery}
 
@@ -133,7 +133,7 @@ Ziel des Workflows ist die Bestimmung einer Versandzielgruppe ohne Duplikate, da
 
 Die identifizierten Duplikate werden für eine eventuelle spätere Verwendung in einer spezifischen Liste gespeichert.
 
-![](assets/deduplication_example.png)
+![Workflow mit einer Vereinigung von drei Profilabfragen, Deduplizierung, einem Versand und einer Listenaktualisierung zur komplementären Transition](assets/deduplication_example.png)
 
 1. Positionnieren Sie die erforderlichen Aktivitäten wie oben abgebildet im Workflow-Diagramm.
 
@@ -157,23 +157,23 @@ Mit der Funktion **[!UICONTROL Zusammenführen]** können Sie einen Regelsatz f�
 
 Bei einer Reihe von Duplikat-Datensätzen können Sie beispielsweise entscheiden, jeweils die älteste Telefonnummer oder den neuesten Namen beizubehalten.
 
-Ein Anwendungsfall, der diese Funktion nutzt, ist in [diesem Abschnitt](deduplication-merge.md) verfügbar.
+Ein Anwendungsfall, der diese Funktion nutzt, ist unter [Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität](deduplication-merge.md) verfügbar.
 
 Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie im Auswahlschritt **[!UICONTROL Deduplizierungsmethode]** auf den Link **[!UICONTROL Erweiterte Parameter]**.
 
-   ![](assets/dedup1.png)
+   ![Deduplizierungsmethodenschritt mit hervorgehobenem Link „Erweiterte Parameter“](assets/dedup1.png)
 
 1. Wählen Sie die Option **[!UICONTROL Datensätze zusammenführen]** aus, um die Funktion zu aktivieren.
 
    Wenn Sie mehrere Datenfelder in jeder Zusammenführungsbedingung gruppieren möchten, aktivieren Sie die Option **[!UICONTROL Mehrere Kriterien für die Zusammenführung von Datensätzen verwenden]**.
 
-   ![](assets/dedup2.png)
+   ![Erweiterte Parameter mit den Optionen Datensätze zusammenführen und Mehrere Datensatzzusammenführungskriterien verwenden aktiviert](assets/dedup2.png)
 
 1. Nach Aktivierung der Funktion wird der Aktivität **[!UICONTROL Deduplizierung]** die Registerkarte **[!UICONTROL Zusammenführen]** hinzugefügt. Damit können Sie Gruppen von Feldern definieren, die zusammengeführt werden sollen, sowie die zugehörigen Regeln.
 
-   Weitere Informationen hierzu finden Sie im Anwendungsfall in [diesem Abschnitt](deduplication-merge.md).
+   Weitere Informationen hierzu finden Sie im entsprechenden Anwendungsfall unter [Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität](deduplication-merge.md).
 
 ## Eingabeparameter {#input-parameters}
 

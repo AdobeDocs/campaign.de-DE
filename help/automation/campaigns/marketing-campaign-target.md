@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 99%
+source-wordcount: '1953'
+ht-degree: 79%
 ---
 # Auswählen der Zielgruppe für Ihre Kampagnen {#marketing-campaign-deliveries}
 
@@ -39,7 +39,7 @@ In einer Marketing-Kampagne können Sie für jeden Versand Folgendes definieren:
 
 * Die Zielgruppe. Sie können Nachrichten an eine [Empfängerliste](#send-to-a-group) senden oder eine [Zielgruppe in einem Workflow](#build-the-main-target-in-a-workflow) erstellen.
 * Eine Kontrollgruppe. Sie können eine [Kontrollgruppe hinzufügen](#add-a-control-group), um das Empfängerverhalten nach dem Nachrichtenversand zu überwachen.
-* Testadressen: Weitere Informationen finden Sie in [diesem Abschnitt](../../v8/audiences/test-profiles.md).
+* Testadressen: Weitere Informationen finden Sie unter [Erstellen von Testprofilen in Campaign](../../v8/audiences/test-profiles.md).
 
 Einige dieser Informationen werden von der [Kampagnenvorlage](marketing-campaign-templates.md#campaign-templates) übernommen.
 
@@ -54,16 +54,16 @@ Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und die
 1. Bearbeiten Sie hierzu den betreffenden Versand und klicken Sie auf den Link **[!UICONTROL An]**, um die Zielpopulation zu ändern.
 1. Markieren Sie im Tab **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL Von der Datenbank ausgehend bestimmt]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um Empfänger auszuwählen.
 
-   ![](assets/select-main-target.png)
+   ![Wählen Sie das Dialogfeld „Ziel“, Registerkarte „Hauptzielgruppe“, mit der Option In der Datenbank definiert und dem Link hinzufügen für die Zielpopulation aus](assets/select-main-target.png)
 
 1. Wählen Sie **[!UICONTROL Empfängerliste]**.
 
-   ![](assets/target-a-list.png)
+   ![Dialogfeld „Zielelement auswählen“, Schritt Zieltyp, mit einer Liste der in der Liste der Einschränkungsfilter ausgewählten Empfänger](assets/target-a-list.png)
 
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**, um die Liste auszuwählen.
 
-   ![](assets/select-the-list.png)
+   ![Dialogfeld „Zielelement auswählen“, Schritt „Zielelement“, mit einer im Ordner „Listen“ ausgewählten Liste](assets/select-the-list.png)
 
    Sie können die Zielgruppe einschränken, indem Sie neue Filterkriterien hinzufügen.
 
@@ -81,7 +81,7 @@ Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow defin
 
 Die Zielgruppenbestimmung kann über eine Kombination von Filterbedingungen in einer grafischen Sequenz in einem Workflow erfolgen. Sie können Populationen und Unterpopulationen erstellen, die entsprechend Ihren Anforderungen angesprochen werden. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
 
-![](assets/targeting-and-wf-tab.png)
+![Kampagnen-Dashboard mit hervorgehobener Registerkarte „Zielgruppenbestimmungen und Workflows“ neben dem Dashboard und den Registerkarten „Bearbeiten“](assets/targeting-and-wf-tab.png)
 
 Die Zielpopulation wird über eine oder mehrere in einem Workflow platzierte Abfragen aus der Adobe Campaign-Datenbank extrahiert. Informationen zum Erstellen einer Abfrage finden Sie in [diesem Abschnitt](../workflow/query.md).
 
@@ -89,7 +89,7 @@ Sie können Abfragen starten und die resultierenden Populationen über Aktivitä
 
 Wählen Sie die gewünschten Aktivitäten aus den links vom Arbeitsbereich liegenden Menüs aus und reihen Sie diese aneinander, um die Zielgruppe zu erstellen.
 
-![](assets/campaign-wf.png)
+![Registerkarte Zielgruppenbestimmungen und Workflows mit einem Diagramm: Abfrage A und B, Vereinigung, Deduplizierung, Anreicherung, Aufspaltung, Sendungen](assets/campaign-wf.png)
 
 Verbinden Sie die für die Zielgruppenerstellung erforderlichen Zielgruppenbestimmungs- und Planungsabfragen im Diagramm miteinander. Sie können die Zielgruppenbestimmung bereits während der Erstellung ausführen, um die aus der Datenbank extrahierte Population zu überprüfen.
 
@@ -101,7 +101,7 @@ Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, 
 
 Über die Symbolleiste des Workflow-Editors besteht Zugriff auf Funktionen zur Formatierung und Ausführung des Zielgruppen-Workflows.
 
-![](assets/wf-diagram.png)
+![Symbolleiste „Workflow-Diagramm“ mit einem Pfeil, der auf die Schaltfläche „Horizontale Ausrichtung“ oberhalb des Zielgruppendiagramms zeigt](assets/wf-diagram.png)
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Sie können mehrere Zielgruppenbestimmungs-Workflows für eine einzige Kampagne 
 
 1. Positionieren Sie den Mauszeiger im linken oberen Abschnitt des Workflow-Editors, machen Sie einen Rechtsklick und wählen Sie **[!UICONTROL Hinzufügen]** aus. Sie können auch die Schaltfläche **[!UICONTROL Neu]** oberhalb dieses Bereichs nutzen.
 
-   ![](assets/add-a-wf.png)
+   ![Kontextmenü des Standard-Workflows auf der Registerkarte Zielgruppenbestimmungen und Workflows mit hervorgehobener Option „Hinzufügen“](assets/add-a-wf.png)
 
 1. Wählen Sie die Workflow-Vorlage **[!UICONTROL Neuer Workflow]** aus und benennen Sie den Workflow.
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Workflow-Erstellung zu bestätigen, und entwerfen Sie das Diagramm des Workflows.
@@ -130,7 +130,7 @@ Bei Aktionen im Zusammenhang mit der Ausführung des Zielgruppenbestimmungs-Work
 
   * Über das Symbol **[!UICONTROL Start]** können Sie den Zielgruppenbestimmungs-Workflow starten. Bei Klick auf das Symbol werden alle Aktivitäten des Zielgruppen-Workflows aktiviert, die über keine eingehende Verbindung verfügen (außer Sprünge zum Endpunkt).
 
-    ![](assets/start.png)
+    ![Workflow-Symbolleiste mit hervorgehobenem Symbol „Start“ und angezeigter QuickInfo „Start“](assets/start.png)
 
     Der Server berücksichtigt die Anfrage, wie durch seinen Status dargestellt: **[!UICONTROL Schnellstmöglicher Start]**.
 
@@ -142,17 +142,17 @@ Bei Aktionen im Zusammenhang mit der Ausführung des Zielgruppenbestimmungs-Work
 
     Bei Klick auf das Symbol **[!UICONTROL Aussetzen]** werden laufende Prozesse **[!UICONTROL nicht]** abgebrochen, es wird jedoch bis zum Neustart keine andere Aktivität gestartet.
 
-    ![](assets/pause.png)
+    ![Workflow-Symbolleiste mit hervorgehobenem Symbol „Pause“ und angezeigter QuickInfo „Pause“](assets/pause.png)
 
     Der Server berücksichtigt den Befehl, wie sein Status darstellt: **[!UICONTROL Soll ausgesetzt werden]**.
 
     Ein Zielgruppen-Workflow kann auch automatisch ausgesetzt werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, ab der der Zielgruppen-Workflow ausgesetzt werden soll, und wählen Sie **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
-    ![](assets/donotexecute.png)
+    ![Kontextmenü der Aktivität mit der hervorgehobenen Option „Aktivieren, aber nicht ausführen“](assets/donotexecute.png)
 
     Die Konfiguration wird von einem spezifischen Symbol in der Grafik repräsentiert.
 
-    ![](assets/pause_activity.png)
+    ![Workflow-Diagramm, bei dem die Aktivität Deduplizierung nach der Aktivierung ein Pausensymbol anzeigt, aber nicht ausgeführt wird](assets/pause_activity.png)
 
     >[!NOTE]
     >
@@ -162,17 +162,17 @@ Bei Aktionen im Zusammenhang mit der Ausführung des Zielgruppenbestimmungs-Work
 
   * Klicken Sie auf das Symbol **[!UICONTROL Anhalten]**, um die Ausführung zu stoppen.
 
-    ![](assets/stop.png)
+    ![Workflow-Symbolleiste mit hervorgehobenem Stopp-Symbol und angezeigter Stopp-QuickInfo](assets/stop.png)
 
     Der Server berücksichtigt den Befehl, wie sein Status darstellt: **[!UICONTROL Wartet auf Stopp]**.
 
   Ein Zielgruppen-Workflow kann auch automatisch angehalten werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, von der aus der Zielgruppen-Workflow gestoppt werden soll, und wählen Sie **[!UICONTROL Nicht aktivieren]**.
 
-  ![](assets/donotactivate.png)
+  ![Kontextmenü der Aktivität mit hervorgehobener Option „Nicht aktivieren“](assets/donotactivate.png)
 
   Die Konfiguration wird von einem spezifischen Symbol in der Grafik repräsentiert.
 
-  ![](assets/unactivation.png)
+  ![Workflow-Diagramm, bei dem die Aktivität Deduplizierung nach der Option Nicht aktivieren ein rotes Symbol für Verboten anzeigt](assets/unactivation.png)
 
 
   >[!NOTE]
@@ -185,7 +185,7 @@ Bei Aktionen im Zusammenhang mit der Ausführung des Zielgruppenbestimmungs-Work
 
   Sie können Ihren Workflow bedingungslos stoppen, indem Sie auf das Symbol **[!UICONTROL Aktionen]** und danach auf **[!UICONTROL Unbedingter Stopp]** klicken. Mit dieser Aktion wird Ihr Kampagnen-Workflow beendet.
 
-  ![](assets/stop_unconditional.png)
+  ![Menü „Workflow-Aktionen“ mit hervorgehobener Option „Unbedingter Stopp“](assets/stop_unconditional.png)
 
   >[!CAUTION]
   >
@@ -208,14 +208,14 @@ Sie können eine Kontrollgruppe auf Kampagnenebene erstellen: In letzterem Fall 
 1. Bearbeiten Sie die betreffende Kampagne; klicken Sie dazu auf den Tab **[!UICONTROL Bearbeiten]**.
 1. Klicken Sie auf **[!UICONTROL Erweiterte Kampagnenparameter...]**.
 
-   ![](assets/enable-control-group.png)
+   ![Erweiterte Einstellungen, Registerkarte Kontrollpopulation mit aktivierter und bearbeiteter Kontrollgruppenkonfiguration und Link bearbeiten](assets/enable-control-group.png)
 
 1. Wählen Sie die Option **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren.
 
-   ![](assets/edit-control-group.png)
+   ![Dialogfeld „Kontrollpopulation“, Art des Grenzschritts mit ausgewählter Zufallsauswahl und der Liste Kontrollgruppe für zusätzliche Population](assets/edit-control-group.png)
 
-Das vollständige Verfahren wird in [diesem Abschnitt](#extract-the-control-group-from-the-main-target) beschrieben. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](#add-a-population).
+Das vollständige Verfahren wird im Abschnitt [Extrahieren der Kontrollgruppe aus der Hauptzielgruppe](#extract-the-control-group-from-the-main-target) beschrieben. Weitere Informationen zu Kontrollgruppen finden Sie unter [Verwenden einer neuen Population als Kontrollgruppe](#add-a-population).
 
 ### Aktivieren der Kontrollgruppe für einen Versand {#activate-the-control-group-for-a-delivery}
 
@@ -230,11 +230,11 @@ Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt stand
 1. Bearbeiten Sie den betreffenden Versand und klicken Sie auf den Link **[!UICONTROL An]**.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Kontrollgruppe]** und wählen Sie dann **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
 
-   ![](assets/enable-control-group-for-a-delivery.png)
+   ![Das Dialogfeld „Ziel auswählen“ auf der Registerkarte „Kontrollgruppe“ mit der ausgewählten Option „Kontrollgruppenkonfiguration aktivieren und bearbeiten“ und dem Link „Bearbeiten“](assets/enable-control-group-for-a-delivery.png)
 
 1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren.
 
-Das vollständige Verfahren wird in [diesem Abschnitt](#extract-the-control-group-from-the-main-target) beschrieben.
+Das vollständige Verfahren wird im Abschnitt [Extrahieren der Kontrollgruppe aus der Hauptzielgruppe](#extract-the-control-group-from-the-main-target) beschrieben.
 
 ### Verwenden einer neuen Population als Kontrollgruppe {#add-a-population}
 
@@ -242,17 +242,17 @@ Sie können eine bestimmte Population für die Kontrollgruppe verwenden. Wählen
 
 Diese Population kann aus einer Empfängerliste stammen oder über eine spezifische Abfrage definiert werden.
 
-![](assets/new-population-as-control-group.png)
+![Dialogfeld „Kontrollpopulation“ mit hervorgehobenem Abschnitt „Zusätzliche Population“: Kontrollgruppenliste und dynamische Bedingung](assets/new-population-as-control-group.png)
 
 >[!NOTE]
 >
->Der Abfrage-Editor von Adobe Campaign wird in [diesem Abschnitt](../../v8/start/query-editor.md) beschrieben.
+>Der Abfrage-Editor von Adobe Campaign wird unter [Arbeiten mit dem Abfrage-Editor](../../v8/start/query-editor.md) beschrieben.
 
 ### Extrahieren der Kontrollgruppe aus der Hauptzielgruppe {#extract-the-control-group-from-the-main-target}
 
 Sie können auch Empfangende aus der Hauptzielgruppe des Versands extrahieren. In diesem Fall werden die Empfangenden aus der Zielgruppe der von dieser Konfiguration betroffenen Versandaktionen übernommen. Diese Extraktion kann zufällig oder durch Sortieren der Empfangenden erfolgen.
 
-![](assets/extract-control-group-from-target.png)
+![Das Dialogfeld Population kontrollieren mit Nur die ersten, nach dem Sortieren ausgewählten Einträge beibehalten im Abschnitt Zielgruppenextraktion](assets/extract-control-group-from-target.png)
 
 Um eine Kontrollgruppe zu extrahieren, aktivieren Sie diese auf Kampagnen- oder Versandniveau und wählen Sie eine der folgenden Optionen: **[!UICONTROL Zufallsauswahl aktivieren]** oder **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten]**.
 
@@ -261,7 +261,7 @@ Um eine Kontrollgruppe zu extrahieren, aktivieren Sie diese auf Kampagnen- oder 
 
 Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge festzulegen und die Empfängerbegrenzung zu bestimmen.
 
-![](assets/limit-control-group.png)
+![Schritt „Populationsbeschränkungen kontrollieren“ mit der Größe als Prozentwert von 5,00 sowie den Optionen „Feste Größe“ und „Nach Datengruppierung“](assets/limit-control-group.png)
 
 Diese Konfiguration entspricht der Aktivität **[!UICONTROL Aufspaltung]** im Workflow, mit der Sie die Zielgruppe in Teilmengen aufteilen können. Die Kontrollgruppe ist eine dieser Teilmengen.
 
@@ -270,6 +270,6 @@ Diese Konfiguration entspricht der Aktivität **[!UICONTROL Aufspaltung]** im Wo
 
 In diesem Video wird beschrieben, wie Sie einer Kampagne eine Kontrollgruppe hinzufügen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446927?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.

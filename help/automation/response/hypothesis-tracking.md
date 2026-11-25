@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '553'
+ht-degree: 86%
 ---
 # Hypothesenverfolgung{#hypothesis-tracking}
 
@@ -50,7 +50,7 @@ Das Ergebnis der Hypothesenberechnungen kann auf unterschiedlichen Ebenen der Ad
 
 Nach Berechnung der Hypothese werden mehrere Messindikatoren automatisch aktualisiert. Diese sind in der Registerkarte **[!UICONTROL Allgemein]** der Hypothese verfügbar.
 
-![](assets/response_hypothesis_delivery_example_010.png)
+![Registerkarte „Allgemein“ einer fertigen Hypothese mit hervorgehobenen Indikatoren zur Berechnung der Hypothese.](assets/response_hypothesis_delivery_example_010.png)
 
 Es handelt sich um folgende Indikatoren:
 
@@ -62,7 +62,7 @@ Es handelt sich um folgende Indikatoren:
 
 Klicken Sie auf den Link **[!UICONTROL Liste anzeigen]**, um eine Liste aller Indikatoren anzuzeigen:
 
-![](assets/response_hypothesis_indicators_002.png)
+![Schreibgeschütztes Fenster „Indikatoren“ über die Liste geöffnet, in dem die vollständige Liste der Indikatoren und ihrer Werte angezeigt wird.](assets/response_hypothesis_indicators_002.png)
 
 Folgende Informationen werden von den Indikatoren bereitgestellt:
 
@@ -88,7 +88,7 @@ Sie können die durch die Hypothesen generierten Empfängerreaktionen im Tab **[
 1. Gehen Sie nach Abschluss der Hypothesenberechnung in den Knoten **[!UICONTROL Kampagnenverwaltung > Messhypothesen]** des Adobe Campaign-Navigationsbaums.
 1. Wählen Sie die gewünschte Hypothese aus der Liste aus und klicken Sie auf den Tab **[!UICONTROL Reaktionen]**, um die Liste der Empfänger anzuzeigen, die im Anschluss an die Marketing-Kampagne möglicherweise einen Kauf tätigen.
 
-   ![](assets/response_hypothesis_reactions_001.png)
+   ![Registerkarte „Reaktionen“ einer Hypothese, in der die Befragten aufgelistet sind und angegeben ist, ob jede zur Kontrollgruppe gehört.](assets/response_hypothesis_reactions_001.png)
 
 ## Berichte {#reports}
 
@@ -96,8 +96,8 @@ Im **[!UICONTROL Hypothesenbericht]** können Sie die Ergebnisse der Hypothesen 
 
 * **Auf Kampagnenebene**: Klicken Sie auf den Link **[!UICONTROL Berichte]** der entsprechenden Kampagne und wählen Sie **[!UICONTROL Hypothesenbericht]** aus. Dieser Bericht enthält die Liste der Sendungen der Kampagne sowie die für jeden Versand berechneten Hypothesen.
 
-  ![](assets/response_hypothesis_campaign_report_001.png)
+  ![Hypothesenbericht auf Kampagnenebene, der die für jeden Versand berechneten Hypothesen mit ihren Indikatoren auflistet.](assets/response_hypothesis_campaign_report_001.png)
 
 * **Auf Versandebene**: Öffnen Sie zum Aufrufen eines Berichts den entsprechenden Versand, klicken Sie in der Registerkarte **[!UICONTROL Zusammenfassung]** auf **[!UICONTROL Berichte]** und wählen Sie **[!UICONTROL Hypothesenbericht]** aus. Wenn mehrere Hypothesen für denselben Versand berechnet wurden, enthält der Bericht alle Hypothesen.
 
-  ![](assets/response_hypothesis_delivery_report_001.png)
+  ![Hypothesenbericht auf Versandebene mit Details zur Hypothese, dem Status und berechneten Indikatoren.](assets/response_hypothesis_delivery_report_001.png)

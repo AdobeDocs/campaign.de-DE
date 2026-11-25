@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 69%
+source-wordcount: '474'
+ht-degree: 61%
 ---
 # SQL-Code und JavaScript-Code{#sql-code-and-javascript-code}
 
@@ -36,7 +36,7 @@ ht-degree: 69%
 
 Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Skript aus. Das Skript ist eine JST-Vorlage.
 
-![](assets/sql_code.png)
+![Dialogfeld „SQL-Code-Aktivität“ mit dem Feld „Bezeichnung“, dem SQL-Script-Editor und der Option „Fehler verarbeiten“](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
@@ -79,7 +79,7 @@ Um diese Begrenzung zu ignorieren, müssen Sie den Wert auf **0** setzen.
 
 ### JavaScript-Code {#js-code-desc}
 
-![](assets/javascript_code.png)
+![Dialogfeld für JavaScript-Code-Aktivität mit der Option Bezeichnung, Ausführung nach und Skript anhalten und Fehler verarbeiten ](assets/javascript_code.png)
 
 * **[!UICONTROL Script]**: Das auszuführende Script wird in den zentralen Bereich des Editors eingefügt.
 
@@ -87,7 +87,7 @@ Um diese Begrenzung zu ignorieren, müssen Sie den Wert auf **0** setzen.
 
 ### Erweiterter JavaScript-Code {#adv-js-code-desc}
 
-![](assets/advanced_javascript_code.png)
+![Aktivität „Erweiterter JavaScript-Code“ mit dem Skripteditor Erster Aufruf und Nächster Aufruf und der OK-Transition](assets/advanced_javascript_code.png)
 
 * **[!UICONTROL Erster Aufruf]**: Das beim ersten Aufruf auszuführende Script wird im oberen Bereich des Editors eingefügt.
 * **[!UICONTROL Nächste Aufrufe]**: Das bei allen weiteren Aufrufen auszuführende Script wird im unteren Bereich des Editors eingefügt.

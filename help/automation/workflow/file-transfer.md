@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 83%
 ---
 # Dateiübertragung{#file-transfer}
 
@@ -42,7 +42,7 @@ Bei Verwendung einer S3-, Azure Blob Storage- oder SFTP-Verbindung ist es außer
 
 Wählen Sie im Feld **[!UICONTROL Aktion]** die auszuführende Aktivität aus.
 
-![](assets/file_transfert_action.png)
+![Dropdown-Liste der Aktivität „Dateiübertragung“: Datei-Download, Datei-Upload, Test, um zu sehen, ob eine Datei vorhanden ist, Dateiauflistung](assets/file_transfert_action.png)
 
 Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
@@ -50,11 +50,11 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
    Wählen Sie zum Empfangen von auf einem Remote-Server gespeicherten Dateien im Feld **[!UICONTROL Aktion]** die Option **[!UICONTROL Datei-Download]** aus. Sie müssen die URL im entsprechenden Feld angeben.
 
-   ![](assets/file_transfert_edit.png)
+   ![Aktivität „Dateiübertragung“ mit der Einstellung „Aktion“ auf „Datei-Download“ und im Feld „URL“ im Abschnitt „Remote-Server“](assets/file_transfert_edit.png)
 
    Aktivieren Sie das Kontrollkästchen **[!UICONTROL Externes Konto verwenden]**, um ein Konto aus den Azure Blob Storage-, S3-, FTP- oder SFTP-Konten auszuwählen, die im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** des Navigationsbaums konfiguriert sind. Geben Sie danach an, welches Verzeichnis auf dem Server die Dateien enthält, die heruntergeladen werden sollen.
 
-   ![](assets/file_transfert_edit_external.png)
+   ![Abschnitt „Remote-Server“ mit aktiviertem Kontrollkästchen Externes Konto verwenden, ausgewähltem externen Konto und Server-Ordner](assets/file_transfert_edit_external.png)
 
 1. **Dateiübertragung**
 
@@ -62,11 +62,11 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
    Die Quelldatei kann aus der vorherigen Aktivität stammen. In diesem Fall muss die Option **[!UICONTROL Durch vorhergehende Aktivität erzeugte Datei verwenden]** ausgewählt sein.
 
-   ![](assets/file_transfert_edit_send.png)
+   ![Datei-Upload-Aktion mit Aktivieren der von der vorherigen Aktivität generierten Datei und der Remote-Server-URL](assets/file_transfert_edit_send.png)
 
    Dies kann sich auch auf eine oder mehrere andere Dateien beziehen. Um sie auszuwählen, deaktivieren Sie die Option und klicken Sie auf **[!UICONTROL Einfügen]**. Geben Sie den Zugriffspfad der zu sendenden Datei an. Um eine weitere Datei hinzuzufügen, klicken Sie erneut auf **[!UICONTROL Einfügen]**. Die Dateien haben nun alle ihre eigenen Registerkarten.
 
-   ![](assets/file_transfert_source.png)
+   ![Source-Abschnitt, in dem die Option „Previous-Activity“ deaktiviert ist, die Schaltfläche „Hinzufügen“ und eine Registerkarte, die den Pfad einer zu sendenden Datei anzeigt](assets/file_transfert_source.png)
 
    Verwenden Sie die Pfeile, um die Reihenfolge der Registerkarten zu ändern. Dies entspricht der Reihenfolge, in der die Dateien zum Server gesendet werden.
 
@@ -76,7 +76,7 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
    Um das Vorhandensein einer Datei zu prüfen, wählen Sie im Feld **[!UICONTROL Aktion]** die Option **[!UICONTROL Existenztest einer Datei]** aus. Die Konfiguration des Remote-Servers entspricht der Konfiguration für den Datei-Download. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
 
-   ![](assets/file_transfert_edit_test.png)
+   ![Aktivität „Dateiübertragung“ mit der Einstellung „Aktion“, um zu testen, ob eine Datei vorhanden ist, einem externen Konto und einem Serverordner](assets/file_transfert_edit_test.png)
 
 1. **Dateiauflistung**
 
@@ -91,7 +91,7 @@ Zwei weitere Optionen stehen generell für die Dateiübertragung zur Verfügung:
 
 Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Optionen:
 
-![](assets/file_transfert_advanced.png)
+![Dialogfeld „Erweiterte Parameter“: Quelldateien nach der Übertragung löschen, Sitzungsprotokolle anzeigen, passiven Modus deaktivieren](assets/file_transfert_advanced.png)
 
 * **[!UICONTROL Quelldateien nach der Übertragung löschen]**
 

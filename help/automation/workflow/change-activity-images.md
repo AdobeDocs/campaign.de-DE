@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 100%
+source-wordcount: '229'
+ht-degree: 76%
 ---
 # Ändern von Aktivitätsbildern{#change-activity-images}
 
@@ -41,7 +41,7 @@ Die in Workflow-Diagrammen verwendeten Bilder können angepasst werden. Sie müs
 
 * Gehen Sie zur Wahl eines anderen Hintergrundbilds in den betroffenen Workflow und klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]**.
 
-  ![](assets/s_user_segmentation_properties_tab.png)
+  ![Workflow-Eigenschaften, Registerkarte „Erweitert“: Feld „Hintergrundbild“ mit hervorgehobenem Symbol „Link auswählen“.](assets/s_user_segmentation_properties_tab.png)
 
   Das Symbol **[!UICONTROL Verknüpftes Element auswählen]** rechts vom Feld **[!UICONTROL Hintergrundbild]** ermöglicht die Auswahl eines neuen Bilds.
 
@@ -49,7 +49,7 @@ Die in Workflow-Diagrammen verwendeten Bilder können angepasst werden. Sie müs
   >
   >Die Breite des Hintergrundbilds muss ein Vielfaches von 4 Pixeln betragen.
 
-  ![](assets/s_user_segmentation_background_select.png)
+  ![Bildauswahl-Fenster mit Hintergrundbildern wie backgrounds/grid.png, mit OK zur Bestätigung.](assets/s_user_segmentation_background_select.png)
 
   Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um eine Vorschau des neuen Bilds anzuzeigen.
 
@@ -57,11 +57,11 @@ Die in Workflow-Diagrammen verwendeten Bilder können angepasst werden. Sie müs
 
   Das Symbol **[!UICONTROL Verknüpftes Element auswählen]** rechts vom Feld **[!UICONTROL Bild]** ermöglicht die Auswahl eines neuen Bilds.
 
-  ![](assets/s_user_segmentation_activity_image.png)
+  ![Registerkarte „Erweitert“ einer Aktivität mit hervorgehobenem Bildfeld, festgelegt auf activities/dedup.png.](assets/s_user_segmentation_activity_image.png)
 
   Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um eine Vorschau des neuen Bilds anzuzeigen.
 
-  ![](assets/s_user_segmentation_activity_image_select.png)
+  ![Vorschau des ausgewählten Bildes nms:activities/dedup.png, angezeigt mit dem Symbol Link bearbeiten.](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >

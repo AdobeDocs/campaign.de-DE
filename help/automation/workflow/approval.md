@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 100%
+source-wordcount: '631'
+ht-degree: 90%
 ---
 # Validierung{#approval}
 
@@ -47,7 +47,7 @@ Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung v
 
 * Zur Auswahl eines einzelnen Benutzers ist im Feld **[!UICONTROL Zuweisungstyp]** die Option **[!UICONTROL Benutzer]** zu wählen. Wählen Sie dann aus der Dropdown-Liste des Felds **[!UICONTROL Zuweisung]** den gewünschten Benutzer aus.
 
-  ![](assets/s_advuser_validation_box_assign.png)
+  ![Genehmigungsaktivität mit hervorgehobener Liste „Zuweisungstyp geöffnet“ und „Benutzer“](assets/s_advuser_validation_box_assign.png)
 
   >[!CAUTION]
   >
@@ -55,7 +55,7 @@ Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung v
 
 * Es besteht die Möglichkeit, eine Abfrage zu erstellen, um die für die Validierung verantwortlichen Benutzenden zu filtern. Wählen Sie hierzu im Feld **[!UICONTROL Zuweisungstyp]** die Option **[!UICONTROL Filter]** aus und klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter…]**, um die Filterkriterien zu definieren, wie im unten stehendem Beispiel dargestellt:
 
-  ![](assets/s_advuser_validation_box_filter.png)
+  ![Genehmigungsaktivität auf „Filter“ gesetzt, mit erweiterten Filterbedingungen, bei denen „Abteilung“ gleich einem Wert ist](assets/s_advuser_validation_box_filter.png)
 
 Im Fall einer einfachen Validierung, wird die der Wahl des Benutzers entsprechende Transition aktiviert und die Aufgabe abgeschlossen. Andere Benutzer können nun die Aufgabe nicht mehr validieren.
 
@@ -69,13 +69,13 @@ Eine Benutzerin bzw. ein Benutzer kann die ihr bzw. ihm zugewiesenen Aufgaben ü
 
 Auf **Validierungsaufgaben** kann im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Ausstehende Validierungen]** zugegriffen werden. Aus dieser Ansicht heraus gelangen die Benutzer direkt in die verschiedenen Validierungsformulare.
 
-![](assets/s_advuser_validation_from_console.png)
+![Liste ausstehender Genehmigungen mit dem Fenster „Aufgabengenehmigung“, in dem die Meldung „Auswahl Ja oder Nein“ und die Schaltfläche „Genehmigen“ angezeigt wird](assets/s_advuser_validation_from_console.png)
 
 ## Eigenschaften {#properties}
 
 In der an die prüfenden Personen gesendeten Nachricht können Personalisierungsvariablen verwendet werden. Diese können entweder in den Nachrichtentitel oder den Textkörper eingefügt werden.
 
-![](assets/edit_validation.png)
+![Validierungsaktivität mit einem Personalisierungsmenü, das zum Einfügen von Aktivitäts- und Ereignisvariablen in das Feld Titel verwendet wird](assets/edit_validation.png)
 
 Das Feld **[!UICONTROL Titel]** enthält den Titel der Nachricht und stellt den Betreff der gesendeten E-Mail-Nachricht dar. Sowohl beim Titel als auch beim Nachrichtentext handelt es sich um JavaScript-Vorlagen. Daher können sie Werte enthalten, die entsprechend dem Kontext des Workflows berechnet wurden.
 

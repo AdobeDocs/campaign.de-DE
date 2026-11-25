@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 94%
 ---
 # Versand (fortlaufend){#continuous-delivery}
 
@@ -34,11 +34,11 @@ ht-degree: 100%
 
 Eine Aktivität des Typs **Versand (fortlaufend)** ermöglicht das Hinzufügen neuer Empfänger bzw. Empfängerinnen zu einem bestehenden Versand. Bei diesem Versandtyp muss nicht jedes Mal ein neuer Versand erstellt werden. Dieser Modus ist häufig effizienter, besonders für Warnhinweise für geringes Volumen oder Benachrichtigungen, die bei Bedarf gesendet werden.
 
-![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#continuous-delivery-video).
+![Videowiedergabesymbol](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#continuous-delivery-video)
 
 Auf der Ebene der Versandvorlagen können Sie ein Script zur Berechnung der Beschriftung (und des Kampagnenordners) des zugehörigen Versands angeben. Wenn das Script einen Versand berechnet, der noch nicht vorhanden ist, wird er sofort erstellt.
 
-![](assets/edit_diffusion_fil.png)
+![Aktivität Versand (fortlaufend) mit einem Vorlagenfeld und den Optionen „Empfänger“ sowie dem Kontrollkästchen „Fehler verarbeiten“](assets/edit_diffusion_fil.png)
 
 Die Option **[!UICONTROL Fehler verarbeiten]** zeigt eine bestimmte Transition an, die aktiviert wird, wenn ein Fehler erzeugt wird. In diesem Fall wechselt der Workflow nicht in den Fehlermodus und wird anschließend ausgeführt.
 
@@ -79,6 +79,6 @@ Bei einem fortlaufenden Versand wird EIN Versand erstellt. Versandlogs (Broadlog
 
 In diesem Video wird gezeigt, wie Sie einen fortlaufenden Versand mit einer inkrementellen Abfrage konfigurieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/30084?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=de){target="_blank"}.
