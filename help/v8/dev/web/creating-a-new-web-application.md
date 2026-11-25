@@ -65,7 +65,7 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
 1. Umfragen
 
-   Adobe Campaign ermöglicht es Ihnen über die Option **Survey Manager**, Online-Umfragen zusammenzustellen und zu verwalten sowie deren Ergebnisse zu verarbeiten. Die verfügbaren Funktionen sind dynamische Felderstellung, Punktzahl-Verwaltung, der Export von Antworten und spezielle Berichte. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (Dokumentation zu Campaign v8).
+   Adobe Campaign ermöglicht es Ihnen über die Option **Survey Manager**, Online-Umfragen zusammenzustellen und zu verwalten sowie deren Ergebnisse zu verarbeiten. Die verfügbaren Funktionen sind dynamische Felderstellung, Punktzahl-Verwaltung, der Export von Antworten und spezielle Berichte. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (Dokumentation zu Campaign v8).
 
    >[!CAUTION]
    >
@@ -73,7 +73,7 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
 1. Facebook-Anwendungen
 
-   Dank der Option **Social Marketing** können Sie mit Adobe Campaign personalisierte Inhalte in einer Facebook-Anwendung veröffentlichen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
+   Dank der Option **Social Marketing** können Sie mit Adobe Campaign personalisierte Inhalte in einer Facebook-Anwendung veröffentlichen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}.
 
    >[!CAUTION]
    >
