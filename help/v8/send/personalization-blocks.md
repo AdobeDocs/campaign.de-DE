@@ -33,7 +33,7 @@ ht-degree: 80%
 
 Gestaltungsbausteine sind dynamische Inhalte, die ein spezifisches Rendering enthalten, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußnachricht oder einen Link zur Mirrorseite hinzufügen.
 
-Um auf personalisierte Inhaltsbausteine zuzugreifen, navigieren Sie zum Knoten **[!UICONTROL Ressourcen > Kampagnen-Management > Gestaltungsbausteine]** des Explorers. Integrierte Gestaltungsbausteine werden unter [Integrierte Gestaltungsbausteine“ ](#ootb-personalization-blocks).
+Um auf personalisierte Inhaltsbausteine zuzugreifen, navigieren Sie zum Knoten **[!UICONTROL Ressourcen > Kampagnen-Management > Gestaltungsbausteine]** des Explorers. Integrierte Gestaltungsbausteine werden unter [Integrierte Gestaltungsbausteine“ &#x200B;](#ootb-personalization-blocks).
 
 Sie können auch neue Bausteine definieren, um die Personalisierung Ihrer Sendungen zu optimieren. [Weitere Informationen](#create-custom-personalization-blocks).
 

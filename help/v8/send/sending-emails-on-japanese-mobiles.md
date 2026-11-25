@@ -118,4 +118,4 @@ Der Nachrichteninhalt wird für die Benutzer auf japanischen Mobiltelefonen korr
 
 >[!IMPORTANT]
 >
->Beachten Sie die Einschränkungen, denen die verschiedenen japanischen Formate (Deco-mail, Decoration Mail und Decore Mail) unterliegen. Weitere Informationen zu Einschränkungen finden Sie unter [ und Empfehlungen](#limitations-and-recommendations).
+>Beachten Sie die Einschränkungen, denen die verschiedenen japanischen Formate (Deco-mail, Decoration Mail und Decore Mail) unterliegen. Weitere Informationen zu Einschränkungen finden Sie unter [&#x200B; und Empfehlungen](#limitations-and-recommendations).

@@ -26,7 +26,7 @@ ht-degree: 77%
 ---
 # Konfigurieren und Durchführen des Versands {#configure-delivery}
 
-Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können für den Versand eine [Priorität](#delivery-priority) definieren, [Schübe](#sending-using-multiple-waves) einrichten und den Versand testen. Sobald diese Konfiguration abgeschlossen ist, können Sie den Versand wie in [Versand bestätigen) ](#confirm-delivery). Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten [Zeitplan](#schedule-delivery-sending) gesendet.
+Greifen Sie auf die Versandparameter zu, um weitere Einstellungen zu konfigurieren und festzulegen, wie Ihre Nachrichten gesendet werden. Sie können für den Versand eine [Priorität](#delivery-priority) definieren, [Schübe](#sending-using-multiple-waves) einrichten und den Versand testen. Sobald diese Konfiguration abgeschlossen ist, können Sie den Versand wie in [Versand bestätigen) &#x200B;](#confirm-delivery). Nachrichten werden dann entweder sofort oder basierend auf dem für den Versand festgelegten [Zeitplan](#schedule-delivery-sending) gesendet.
 
 ## Festlegen zusätzlicher Parameter {#delivery-additional-parameters}
 
@@ -91,13 +91,13 @@ Sie können entweder die Größe jeder Welle definieren oder sie zu einem Kalend
 
 ### Prüfung der Schub-Planung {#check-waves}
 
-Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) stellt sicher, dass der letzte Schub vor der Versand-Deadline eingeplant ist. Kampagnentypologien und ihre Regeln, die auf der Registerkarte **[!UICONTROL Typologie]** der Versandeigenschaften konfiguriert sind, werden unter „Typologieregeln [ Typologien“ ](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
+Eine spezifische Typologieregel (**[!UICONTROL Prüfung der Schub-Planung]**) stellt sicher, dass der letzte Schub vor der Versand-Deadline eingeplant ist. Kampagnentypologien und ihre Regeln, die auf der Registerkarte **[!UICONTROL Typologie]** der Versandeigenschaften konfiguriert sind, werden unter „Typologieregeln [&#x200B; Typologien“ &#x200B;](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
 >[!IMPORTANT]
 >
 >* Achten Sie darauf, dass die letzten Schübe nicht die Versandgültigkeit überschreiten, die in der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt ist. Anderenfalls werden einige Nachrichten möglicherweise nicht gesendet. Erfahren Sie mehr über den Gültigkeitszeitraum eines Versands in [Gültigkeitszeitraum](delivery-failures.md#valid-period).
 >
->* Planen Sie beim Konfigurieren der letzten Schübe zudem genügend Zeit für weitere Zustellversuche ein. Weitere Informationen zu weiteren Zustellversuchen finden Sie unter [Verwaltung ](delivery-failures.md#retries) Zustellversuche).
+>* Planen Sie beim Konfigurieren der letzten Schübe zudem genügend Zeit für weitere Zustellversuche ein. Weitere Informationen zu weiteren Zustellversuchen finden Sie unter [Verwaltung &#x200B;](delivery-failures.md#retries) Zustellversuche).
 >
 >* Die Schübe werden ab dem Kontaktdatum des Versands geplant. Wenn der Versand nach der geplanten Zeit einer oder mehrerer Schübe beginnt, werden diese überfälligen Schübe alle zusammen gesendet, anstatt mit Abständen angeordnet zu werden.
 

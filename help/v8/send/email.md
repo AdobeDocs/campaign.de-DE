@@ -124,7 +124,7 @@ In diesem [Anwendungsfall](https://experienceleague.adobe.com/docs/campaign/auto
 
 ## Testen und Validieren von E-Mails
 
-Campaign bietet mehrere Möglichkeiten, E-Mails zu testen und zu validieren, bevor Sie sie an Ihre Zielgruppen senden. Erfahren Sie, wie Sie Ihren E-Mail-Inhalt in [Vorschau anzeigen und testen und Ihre E-Mail ](../send/preview-and-proof.md).
+Campaign bietet mehrere Möglichkeiten, E-Mails zu testen und zu validieren, bevor Sie sie an Ihre Zielgruppen senden. Erfahren Sie, wie Sie Ihren E-Mail-Inhalt in [Vorschau anzeigen und testen und Ihre E-Mail &#x200B;](../send/preview-and-proof.md).
 
 Sie haben folgende Möglichkeiten:
 

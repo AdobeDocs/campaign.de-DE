@@ -110,7 +110,7 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Vo
 
   Sie können Bilder aus einer lokalen Datei oder aus einer Bildbibliothek in Adobe Campaign in Nachrichten einfügen. Klicken Sie dazu auf das Symbol **[!UICONTROL Bild]** und wählen Sie die entsprechende Option aus.
 
-  ![Menü der Bildschaltfläche in der HTML-Symbolleiste mit den Optionen Von einer lokalen Datei und Von der Bibliothek ](assets/s_ncs_user_wizard_email01_18.png)
+  ![Menü der Bildschaltfläche in der HTML-Symbolleiste mit den Optionen Von einer lokalen Datei und Von der Bibliothek &#x200B;](assets/s_ncs_user_wizard_email01_18.png)
 
   Zugriff auf die Bilder aus der Bibliothek besteht über den Ordner **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Ordnerbaums. Siehe auch [Bilder hinzufügen](#adding-images).
 
@@ -196,7 +196,7 @@ Diese Bilder können:
 
 Der Versandassistent bietet die Möglichkeit, lokale oder in der Bibliothek enthaltene Bilder in den Inhalt der Nachrichten einzuschließen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
 
-![Menü der Bildschaltfläche in der HTML-Symbolleiste mit ausgewählter Option Aus Bibliothek ](assets/s_ncs_user_image_from_library.png)
+![Menü der Bildschaltfläche in der HTML-Symbolleiste mit ausgewählter Option Aus Bibliothek &#x200B;](assets/s_ncs_user_image_from_library.png)
 
 >[!IMPORTANT]
 >
@@ -209,7 +209,7 @@ So verwalten Sie Bilder über den Versandassistenten:
 
 1. Wählen Sie die Option **[!UICONTROL Bilder hochladen]** auf dem Tab **[!UICONTROL Bilder]**.
 1. Dann können Sie festlegen, ob die Bilder in die E-Mail-Nachricht eingeschlossen werden sollen.
-   ![Registerkarte „Bilder“ mit ausgewählten Bildern hochladen und der Liste der erkannten Bilder mit dem Status Noch nicht online ](assets/s_ncs_user_email_del_img_upload.png)
+   ![Registerkarte „Bilder“ mit ausgewählten Bildern hochladen und der Liste der erkannten Bilder mit dem Status Noch nicht online &#x200B;](assets/s_ncs_user_email_del_img_upload.png)
 
 * Sie können Bilder manuell hochladen, ohne die Versandanalyse abwarten zu müssen. Klicken Sie dazu auf den Link **[!UICONTROL Bilder sofort online stellen...]**.
 * Sie können einen anderen Pfad für Zugriff auf die Bilder auf dem Tracking-Server angeben. Geben Sie dazu einen Pfad in das Feld **[!UICONTROL URL der Bilder]** ein. Dieser Wert setzt den in den Parametern des Installationsassistenten definierten Wert außer Kraft.
@@ -249,7 +249,7 @@ Bilder werden im Zuge der Nachrichtenanalyse auf den Server geladen, um von auß
 
 Sie können Arbeit im Voraus erledigen und Bilder hochladen, sodass sie von anderen Adobe Campaign-Benutzenden angezeigt werden können. Dies kann bei der Zusammenarbeit nützlich sein. Wählen Sie hierfür die Option **[!UICONTROL Bilder sofort online stellen…]** und klicken Sie auf den Link, um den Upload der Bilder auf den Server zu starten.
 
-![Registerkarte „Bilder“ mit lokalen Bildpfaden mit dem Status „Noch nicht online“ und dem Link Bilder sofort hochladen ](assets/s_ncs_user_images_in_delivery_wiz_3.png)
+![Registerkarte „Bilder“ mit lokalen Bildpfaden mit dem Status „Noch nicht online“ und dem Link Bilder sofort hochladen &#x200B;](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
 >[!NOTE]
 >

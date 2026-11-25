@@ -69,7 +69,7 @@ Gehen Sie wie folgt vor, um eine lokale Datei an einen Versand anzuhängen.
 
 Sie können die Datei auch per Drag-and-Drop direkt in das Versandfeld **[!UICONTROL Anhänge]** ziehen oder das Symbol für **[!UICONTROL Datei anfügen]** in der Symbolleiste des Versandassistenten verwenden.
 
-![Symbol Anhängen in der Symbolleiste des Versandassistenten, neben dem Abschnitt E-Mail-Parameter ](assets/s_ncs_user_wizard_add_file_ico.png)
+![Symbol Anhängen in der Symbolleiste des Versandassistenten, neben dem Abschnitt E-Mail-Parameter &#x200B;](assets/s_ncs_user_wizard_add_file_ico.png)
 
 Sobald Sie die Datei ausgewählt haben, wird sie auf den Server geladen, um zum Zeitpunkt des Versandstarts zur Verfügung zu stehen. Sie wird im Feld **[!UICONTROL Anhänge]** aufgeführt.
 

@@ -59,7 +59,7 @@ Ein Testversand dient der Validierung einer Nachricht, bevor sie an die Haupt-Zi
 
 Die Testversand-Zielgruppe kann in der Versandvorlage oder versandspezifisch definiert werden. Navigieren Sie in beiden Fällen über den Link **[!UICONTROL An]** zum Bildschirm der Zielgruppenbestimmung und wählen Sie die Registerkarte **[!UICONTROL Testversand-Zielgruppe]** aus.
 
-![Wählen Sie das Zielgruppen-Dialogfeld, die Registerkarte Testversand-Zielgruppe , mit der Dropdown-Liste Zielgruppenbestimmungsmodus und der Schaltfläche Hinzufügen ](assets/target-of-proofs.png)
+![Wählen Sie das Zielgruppen-Dialogfeld, die Registerkarte Testversand-Zielgruppe , mit der Dropdown-Liste Zielgruppenbestimmungsmodus und der Schaltfläche Hinzufügen &#x200B;](assets/target-of-proofs.png)
 
 Der Typ der Testversand-Zielgruppe wird aus der Dropdown-Liste **[!UICONTROL Zielgruppenbestimmungsmodus]** ausgewählt.
 

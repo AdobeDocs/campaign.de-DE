@@ -33,7 +33,7 @@ ht-degree: 80%
 ---
 # Ereignisverarbeitung {#event-processing}
 
-Im Zusammenhang mit dem Transaktionsnachrichtenversand wird von einem externen Informationssystem ein Ereignis generiert und über die Methoden **[!UICONTROL PushEvent]** und **[!UICONTROL PushEvents]** an Adobe Campaign gesendet. Diese Methoden werden unter &quot;[ der Ereignisbeschreibung“ ](event-description.md).
+Im Zusammenhang mit dem Transaktionsnachrichtenversand wird von einem externen Informationssystem ein Ereignis generiert und über die Methoden **[!UICONTROL PushEvent]** und **[!UICONTROL PushEvents]** an Adobe Campaign gesendet. Diese Methoden werden unter &quot;[&#x200B; der Ereignisbeschreibung“ &#x200B;](event-description.md).
 
 Dieses Ereignis enthält Daten, die mit dem Ereignis verknüpft sind, z. B.:
 

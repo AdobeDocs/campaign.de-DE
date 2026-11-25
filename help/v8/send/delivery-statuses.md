@@ -46,7 +46,7 @@ Nachdem ein Versand ausgeführt wurde, zeigt das Versand-Dashboard einen Status 
 
 ![Zusammenfassung des Versand-Dashboards mit hervorgehobenem Feld „Status“, in dem das Feld „Abgeschlossen“ und das Enddatum angezeigt werden](assets/delivery-status.png)
 
-Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren Behebung finden Sie unter [ zu fehlgeschlagenen Sendungen ](delivery-failures.md).
+Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren Behebung finden Sie unter [&#x200B; zu fehlgeschlagenen Sendungen &#x200B;](delivery-failures.md).
 
 **Verwandte Themen:**
 

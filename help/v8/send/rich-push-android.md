@@ -334,7 +334,7 @@ Sobald Sie den Inhalt Ihrer Nachricht definiert haben, können Sie Testabonnenti
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Art der Benachrichtigung]** die Option **[!UICONTROL Rahmenlos]** aus.
 
-   ![Benachrichtigungstypliste mit ausgewählter Blende null auf der Registerkarte Android-Inhalt ](assets/rich_push_bezel.png)
+   ![Benachrichtigungstypliste mit ausgewählter Blende null auf der Registerkarte Android-Inhalt &#x200B;](assets/rich_push_bezel.png)
 
 1. Um Ihre Nachricht zu erstellen, geben Sie Ihren Text in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Nachricht]** und **[!UICONTROL Erweiterte Nachricht]** ein.
 
