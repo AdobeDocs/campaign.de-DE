@@ -409,7 +409,7 @@ In diesen Beispielen erfahren Sie, wie Sie erweiterte Abfragen erstellen:
 
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"} erfahren Sie, wie Sie einfache Empfängerattribute für Ihr Targeting verwenden können.
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=de){target="_blank"} erfahren Sie, wie Sie nach Empfängern filtern können, die in den letzten 7 Tagen nicht kontaktiert wurden.
-* Auf [ Seite erfahren Sie, wie Sie eine Liste der Benutzer abrufen können, die nach aktiven Konten gefiltert werden ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"}.
+* Auf [&#x200B; Seite erfahren Sie, wie Sie eine Liste der Benutzer abrufen können, die nach aktiven Konten gefiltert werden &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"}.
 * Auf [dieser Seite](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=de){target="_blank"} erfahren Sie, wie Sie eine Zielgruppe für Geburtstags-E-Mails erstellen können.
 
 

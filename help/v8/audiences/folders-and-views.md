@@ -146,4 +146,4 @@ Der folgende Ordner enthält beispielsweise nur Kontakte mit einer E-Mail-Adress
 
 ## Beschränken des Zugriffs auf einen Ordner{#restrict-access-to-a-folder}
 
-Verwenden Sie Berechtigungen für Ordner, um den Zugriff auf Campaign-Daten zu organisieren und zu steuern. Weitere Informationen zu Berechtigungen für Ordner finden Sie unter [Berechtigungen für Campaign-Ordner erteilen und ](../start/folder-permissions.md)).
+Verwenden Sie Berechtigungen für Ordner, um den Zugriff auf Campaign-Daten zu organisieren und zu steuern. Weitere Informationen zu Berechtigungen für Ordner finden Sie unter [Berechtigungen für Campaign-Ordner erteilen und &#x200B;](../start/folder-permissions.md)).
