@@ -362,7 +362,7 @@ Hier ist ein Beispiel für einen Workflow, der die JavaScript-Code-Aktivitäten 
 
 Im Folgenden finden Sie ein Beispiel für eine Landingpage und eine JavaScript-Code-Aktivität, die zur Aktualisierung von Profilattributen in Adobe Experience Platform konfiguriert wurde:
 
-![Landingpage-Vorschau mit den Kontrollkästchen Opt-out von E-Mail, SMS und Push sowie einer Schaltfläche Senden ](assets/ac-lp-example.png){width="70%"}
+![Landingpage-Vorschau mit den Kontrollkästchen Opt-out von E-Mail, SMS und Push sowie einer Schaltfläche Senden &#x200B;](assets/ac-lp-example.png){width="70%"}
 
 ![Aktualisieren der Profilskriptaktivität mit Code, der die Profilabmeldewerte an Experience Platform sendet](assets/ac-lp-code.png){width="70%" zoomable="yes"}
 

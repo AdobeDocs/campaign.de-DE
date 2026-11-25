@@ -91,7 +91,7 @@ Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muste
 
    >[!CAUTION]
    >
-   >Einschränkungen in Bezug auf Datenfiltermodi werden unter [Filterdaten“ ](#filtering-data).
+   >Einschränkungen in Bezug auf Datenfiltermodi werden unter [Filterdaten“ &#x200B;](#filtering-data).
 
 1. Wählen Sie die Option **[!UICONTROL Automatischen Index verwenden...]** aus, um die inkrementelle Synchronisation der Objekte zwischen dem CRM-System und Adobe Campaign in Abhängigkeit vom letzten Änderungsdatum automatisch zu verwalten.
 
@@ -216,7 +216,7 @@ Darüber hinaus sind folgende Konvertierungen möglich:
 
 Im Rahmen von Datenimporten oder -exporten können Sie einen spezifischen Prozess auf Fehler und Zurückweisungen anwenden. Wählen Sie dazu die Optionen **[!UICONTROL Zurückweisungen in einer Datei speichern]** und **[!UICONTROL Fehler verarbeiten]** in der Registerkarte **[!UICONTROL Verhalten]** aus.
 
-![Registerkarte „Verhalten des CRM-Connectors“ mit der Option Zurückweisungen in einer Datei speichern und Fehler verarbeiten ](assets/crm-export-options.png)
+![Registerkarte „Verhalten des CRM-Connectors“ mit der Option Zurückweisungen in einer Datei speichern und Fehler verarbeiten &#x200B;](assets/crm-export-options.png)
 
 Mit diesen Optionen werden die entsprechenden ausgehenden Transitionen hinzugefügt.
 

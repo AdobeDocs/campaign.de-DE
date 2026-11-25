@@ -186,7 +186,7 @@ Zunächst müssen Sie das externe Microsoft Dynamics 365-Konto erstellen.
    1. Um das externe Microsoft Dynamics CRM-Konto für die Verbindung mit Adobe Campaign mit einem **Zertifikat** zu konfigurieren, geben Sie die folgenden Details an:
 
       * **Server**: URL Ihres Microsoft CRM-Servers Um Ihre Microsoft CRM-Server-URL zu finden, rufen Sie Ihr Microsoft Dynamics CRM-Konto auf, klicken Sie dann auf Dynamics 365 und wählen Sie Ihre Anwendung aus. Ihre Server-URL finden Sie dann in der Adressleiste Ihres Browsers, z. B. https://myserver.crm.dynamics.com/.
-      * **Privater Schlüssel**: Kopieren Sie den base64-kodierten privaten Schlüssel und fügen Sie ihn wie unter [Generieren einer Microsoft Dynamics-Zertifikatschlüsselkennung und Schlüssel-ID“ ](#config-certificate-key-id).
+      * **Privater Schlüssel**: Kopieren Sie den base64-kodierten privaten Schlüssel und fügen Sie ihn wie unter [Generieren einer Microsoft Dynamics-Zertifikatschlüsselkennung und Schlüssel-ID“ &#x200B;](#config-certificate-key-id).
       * **Schlüssel-ID**: Schlüssel, der auf der Registerkarte **Manifest** Ihrer Anwendung verfügbar ist, wie unter [Generieren einer Microsoft Dynamics-Zertifikatschlüsselkennung und Schlüssel-ID](#config-certificate-key-id) erläutert.
       * **Benutzerdefinierte Schlüsselkennung**: Kennung, die auf der Registerkarte **Manifest** Ihrer Anwendung verfügbar ist, wie unter [Generieren einer Microsoft Dynamics-Zertifikatschlüsselkennung und Schlüssel-ID](#config-certificate-key-id) erläutert.
       * **Client-ID**: Anwendungs-(Client-)ID, die Sie im Verwaltungsportal von Microsoft Azure finden, wie in [Abrufen der Dynamics 365-Client-ID](#get-client-id-microsoft) beschrieben.
