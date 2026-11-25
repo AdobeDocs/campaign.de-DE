@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 82%
+source-wordcount: '1215'
+ht-degree: 78%
 ---
 # Versandberichte {#delivery-reports}
 
@@ -38,7 +38,7 @@ Gehen Sie wie folgt vor, um auf Berichte zuzugreifen:
 1. Klicken Sie auf den Namen des Versands, auf dessen Berichte Sie zugreifen möchten.
 1. Klicken Sie im Tab **[!UICONTROL Zusammenfassung]** auf **[!UICONTROL Berichte]**, um die spezifischen Versandberichte aufzurufen.
 
-   ![](assets/detailed-report-2.png)
+   ![Registerkarte „Versandzusammenfassung“ mit hervorgehobenem Link „Berichte“, auf der die verfügbaren Versandberichte aufgeführt sind.](assets/detailed-report-2.png)
 
    Standardmäßig stehen folgende Berichte zur Verfügung:
 
@@ -64,7 +64,7 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 >
 >Die in Bezug auf Öffnungen berechneten Werte sind immer nur Schätzungen. Dies hängt insbesondere mit der durch E-Mails im Textformat bedingten Fehlerquote zusammen. Die Indikatoren **[!UICONTROL Unterschiedliche Öffnungen (Unique Opens) und Summe der Öffnungen in Bezug auf die erreichte Population]** berücksichtigen diese Fehlerquote. [Weitere Informationen](metrics-calculation.md#tracking-opens-).
 
-![](assets/tracking-report-synthesis.png)
+![Bericht zu Tracking-Indikatoren mit vier nummerierten Abschnitten, von Versandstatistiken bis zu generierten Clickstreams.](assets/tracking-report-synthesis.png)
 
 **[!UICONTROL 1. Versandstatistiken]**
 
@@ -101,7 +101,7 @@ Die Tabelle zeigt Sendungen, Öffnungen, Klicks und Brutto-Reaktionsraten aufges
 >
 >Die in diesem Bericht dargestellten Domain-Namen werden in der auf Cube-Niveau verwendeten Auflistung definiert. Um Standard-Domains zu ändern, hinzuzufügen oder zu entfernen, bearbeiten Sie die **[!UICONTROL Domains]**-Auflistung und passen Sie die Werte und Aliase an. Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die keinem Auflistungswert entsprechen.
 >
->Auf [dieser Seite](../config/enumerations.md) erfahren Sie, wie Sie auf Ihre Aufzählungen zugreifen und sie konfigurieren können.
+>Erfahren Sie, wie Sie in Auflistungen verwalten auf [ Auflistungen zugreifen ](../config/enumerations.md) sie konfigurieren können.
 
 
 **[!UICONTROL 4. Erzeugte Clickstreams]**
@@ -168,7 +168,7 @@ This chart shows the breakdown of cumulated clicks per day.
 
 Dieser Bericht zeigt die wichtigsten Informationen zu einem Versand.
 
-![](assets/user-report-summary.png)
+![Zusammenfassung des Versandberichts mit der ursprünglichen Zielpopulation, den Abschnitten Ausschlussgründe und Versandstatistiken ](assets/user-report-summary.png)
 
 **[!UICONTROL Zielpopulation]**
 

@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 64%
+source-wordcount: '463'
+ht-degree: 53%
 ---
 # Erste Schritte mit Reporting{#gs-ac-reports}
 
@@ -43,7 +43,7 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
 * **Dynamische Berichterstellung**
 
-  Die dynamische Berichterstellung ist über die Web-Benutzeroberfläche von Campaign verfügbar und bietet vollständig anpassbare Echtzeitberichte zur Messung der Wirkung Ihrer Marketing-Aktivitäten. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Ort und Alter ermöglicht, zusätzlich zur Analyse basierend auf Daten von E-Mail-Kampagnen wie Öffnungen und Klicks. Weitere Informationen finden Sie in der [Dokumentation zur Web-Benutzeroberfläche v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=de){target="_blank"}.
+  Die dynamische Berichterstellung ist über die Web-Benutzeroberfläche von Campaign verfügbar und bietet vollständig anpassbare Echtzeitberichte zur Messung der Wirkung Ihrer Marketing-Aktivitäten. Dadurch kann auf Profildaten zugegriffen werden, was die demografische Analyse nach Profildimensionen wie Geschlecht, Ort und Alter ermöglicht, zusätzlich zur Analyse basierend auf Daten von E-Mail-Kampagnen wie Öffnungen und Klicks. Weitere Informationen finden Sie in der [Dokumentation zur Web-Benutzeroberfläche v7](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}.
 
 * **Cubes**
 
@@ -51,11 +51,11 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
   Verwenden Sie Marketing-Analysefunktionen, um Daten zu analysieren und zu messen, Statistiken zu berechnen und die Berichterstellung und -berechnung zu vereinfachen und zu optimieren. Sie können Berichte erstellen, Zielgruppen-Populationen aufbauen und in Listen speichern, die in Adobe Campaign für Zielgruppenbestimmungs- oder Segmentierungsaufgaben verwendet werden können.
 
-  ![](assets/create-a-report.png)
+  ![Erstellen einer neuen Berichtseite mit verfügbaren Cube-Vorlagen und ausgewählter Empfängervorlage](assets/create-a-report.png)
 
   Je nach Komplexität der Abfragen, Berechnungen und Volumina können die in diesen Berichten analysierten Daten über eine Abfrage gesammelt und in einer Liste (Workflow vom Typ „Daten-Management„) oder in einem Cube (unter Verwendung der Option „Marketing-Analyse„) voraggregiert werden. Sie wird in Form einer Pivot-Tabelle oder einer Gruppenliste angezeigt.
 
-  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](gs-cubes.md).
+  Weitere Informationen hierzu finden Sie unter [ mit Adobe Campaign-Analyseberichten](gs-cubes.md).
 
 * **Native Berichte**
 
@@ -63,9 +63,9 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
   Verwenden Sie die Registerkarte **Berichte**, um auf diese Berichte zuzugreifen.
 
-  ![](assets/built-in-reports.png)
+  ![Registerkarte „Berichte“ mit der Liste globaler Berichte mit integrierten Berichten, z. B. Broadcast-Statistiken und Browser](assets/built-in-reports.png)
 
-  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](built-in-reports.md).
+  Weitere Informationen hierzu finden Sie unter [Integrierte Adobe Campaign-Berichte](built-in-reports.md).
 
 * **Deskriptive Datenanalyse**
 
@@ -73,12 +73,12 @@ Adobe Campaign bietet eine Reihe von Reporting-Tools, die auf dieser Seite aufge
 
   Verwenden Sie das Menü **[!UICONTROL Tools > Deskriptive Analyse...]**, um einen neuen Bericht zu erstellen.
 
-  ![](assets/desc-analysis-report.png)
+  ![Konfiguration des Assistenten für deskriptive Analyse mit Tabellenkonfiguration , wobei das Dialogfeld Variablendefinition in Hinzufügen geöffnet wird](assets/desc-analysis-report.png)
 
-  Die Berichte zur deskriptiven Analyse von Campaign werden in der Dokumentation zu [Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
+  Die Berichte zur deskriptiven Analyse von Campaign werden in der Dokumentation zu [Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=de){target="_blank"}.
 
 * **Benutzerdefinierte Berichte**
 
   Verwenden Sie Adobe Campaign, um Berichte zu den Daten in der Datenbank zu erstellen. Sobald diese erstellt wurden, machen Sie sie in den entsprechenden Kontexten zugänglich.
 
-  Die Schritte zum Erstellen eines Berichts werden in der [Dokumentation zu Campaign Classic v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=de){target="_blank"}. Die Erstellung personalisierter Berichte ist erfahrenen Benutzerinnen und Benutzern vorbehalten.
+  Die Schritte zum Erstellen eines Berichts werden in der [Dokumentation zu Campaign Classic v7 ](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=de){target="_blank"}. Die Erstellung personalisierter Berichte ist erfahrenen Benutzerinnen und Benutzern vorbehalten.

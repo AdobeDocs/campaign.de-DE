@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 91%
+source-wordcount: '716'
+ht-degree: 84%
 ---
 # Audit-Protokoll{#audit-trail}
 
@@ -105,7 +105,7 @@ So greifen auf das **[!UICONTROL Audit-Protokoll]** Ihrer Instanz zu:
 
 1. Wählen Sie unter dem Menü **[!UICONTROL Administration]** die Option **[!UICONTROL Audit]** und dann **[!UICONTROL Audit-Protokoll]** aus.
 
-   ![](assets/audit-trail-1.png)
+   ![Explorer-Baumstruktur mit Administration, Audit, ausgewähltem Audit-Protokoll und der Liste der geprüften Entitäten](assets/audit-trail-1.png)
 
 1. Das Fenster **[!UICONTROL Audit-Protokoll]** wird mit der Liste Ihrer Entitäten geöffnet. Adobe Campaign prüft die Aktionen zum Erstellen, Bearbeiten und Löschen für Ihre unterschiedlichen Entitäten.
 
@@ -119,7 +119,7 @@ So greifen auf das **[!UICONTROL Audit-Protokoll]** Ihrer Instanz zu:
    * **[!UICONTROL Aktion]**: Letzte Aktion, die für diese Entität ausgeführt wurde, entweder „Erstellt“, „Geändert“ oder „Gelöscht“.
    * **[!UICONTROL Änderungsdatum]**: Datum der letzten Aktion, die an dieser Entität durchgeführt wurde.
 
-   ![](assets/audit-trail-2.png)
+   ![Audit-Entitätsdetails mit Typ, Entität, Geändert von, Aktion und Änderungsdatum](assets/audit-trail-2.png)
 
 >[!NOTE]
 >
@@ -148,10 +148,10 @@ Gehen Sie dabei folgendermaßen vor:
    * Für Operator: **[!UICONTROL XtkAudit_Operator]**
    * Für jede Entität: **[!UICONTROL XtkAudit_Enable_All]**
 
-   ![](assets/audit-trail-3.png)
+   ![Optionsliste unter Administration, Plattform gefiltert nach XtkAudit_ mit ausgewählter Option XtkAudit_Delivery](assets/audit-trail-3.png)
 
 1. Ändern Sie den **[!UICONTROL Wert]** in „1“, wenn Sie die Entität aktivieren möchten, oder in „0“, wenn Sie sie deaktivieren möchten.
 
-   ![](assets/audit-trail-4.png)
+   ![XtkAudit_Delivery-Option mit dem Feld Wert (Ganzzahl) auf 1 gesetzt, um das Audit-Protokoll zu aktivieren](assets/audit-trail-4.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
