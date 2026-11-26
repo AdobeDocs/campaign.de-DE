@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 7d3481d1a8453d0663d67765c664c60ed988aee6
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1103'
 ht-degree: 61%
 ---
 # Erste Schritte mit Adobe Campaign{#gs-ac-v8}
@@ -85,9 +85,9 @@ Profile werden in einer funktionsstarken Cloud-Datenbank zentralisiert. Die Akqu
 
 In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) die Empfänger. Dank der Empfängerdaten, die in der Datenbank gespeichert sind, können Sie die Zielgruppe filtern, die einen bestimmten Versand erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzufügen. In der Datenbank gibt es noch andere Arten von Profilen. Sie sind für unterschiedliche Zwecke gedacht. So werden beispielsweise Testprofile erstellt, um Ihre Sendungen zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
 
-Die Grundlagen zur Verwaltung von Profilen werden unter [Arbeiten mit Audiences in Campaign“ &#x200B;](audiences.md).
+Die Grundlagen zur Verwaltung von Profilen werden unter [Arbeiten mit Audiences in Campaign“ ](audiences.md).
 
-Erfahren Sie in „Erste Schritte mit Profilen“, wie Sie [&#x200B; Campaign Profile hinzufügen](import.md).
+Erfahren Sie in „Erste Schritte mit Profilen“, wie Sie [ Campaign Profile hinzufügen](import.md).
 
 ## Zielgruppensegmentierung {#targeted-segmentation}
 
@@ -99,9 +99,9 @@ Weitere Informationen zur Segmentierung und Erstellung von Audiences finden Sie 
 
 ## Kanalübergreifende Orchestrierung einer Kampagne {#cross-channel-campaign-orchestration}
 
-Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen entwerfen und koordinieren: E-Mail, Briefpost, SMS, Push-Benachrichtigung. Eine einzige Oberfläche bietet alle Funktionen, die zum Planen, Orchestrieren, Konfigurieren, Personalisieren, Automatisieren, Ausführen und Messen all Ihrer Kampagnen und Kommunikationen erforderlich sind.
+Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen entwerfen und koordinieren: E-Mail, Briefpost, SMS, Push-Benachrichtigung, LINE und benutzerdefinierte Kanäle. Eine einzige Oberfläche bietet alle Funktionen, die zum Planen, Orchestrieren, Konfigurieren, Personalisieren, Automatisieren, Ausführen und Messen all Ihrer Kampagnen und Kommunikationen erforderlich sind.
 
-Erfahren Sie in „Erste Schritte mit Kampagnen“, wie Sie [&#x200B; Kampagne planen und &#x200B;](campaigns.md).
+Erfahren Sie in „Erste Schritte mit Kampagnen“, wie Sie [ Kampagne planen und ](campaigns.md).
 
 ## Workflows {#wf-gsv8}
 
