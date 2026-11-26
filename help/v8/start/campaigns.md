@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 7d3481d1a8453d0663d67765c664c60ed988aee6
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '937'
 ht-degree: 65%
 ---
 # Erste Schritte mit Kampagnen {#gs-ac-campaigns}
@@ -40,7 +40,7 @@ Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Import oder Extraktion von
 
 ## Kanalübergreifende Orchestrierung einer Kampagne{#cross-channel-orchestration}
 
-Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen entwerfen und koordinieren: E-Mail, Briefpost, SMS, Push-Benachrichtigung. Eine einzige Oberfläche bietet alle Funktionen, die zum Planen, Orchestrieren, Konfigurieren, Personalisieren, Automatisieren, Ausführen und Messen all Ihrer Kampagnen und Kommunikationen erforderlich sind.
+Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen entwerfen und koordinieren: E-Mail, Briefpost, SMS, Push-Benachrichtigung, LINE und benutzerdefinierte Kanäle. Eine einzige Oberfläche bietet alle Funktionen, die zum Planen, Orchestrieren, Konfigurieren, Personalisieren, Automatisieren, Ausführen und Messen all Ihrer Kampagnen und Kommunikationen erforderlich sind.
 
 ![Registerkarte Kampagnen der Startseite, auf der die Marketing-Kampagnen mit Status, Datum und der Schaltfläche Erstellen aufgelistet sind](assets/campaign-tab.png)
 
