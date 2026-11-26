@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: 765af3342eb29f27dafa12f72634f5d91361bed5
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 69%
+source-wordcount: '489'
+ht-degree: 66%
 ---
 # Verbinden von Campaign mit Ihren Lösungen{#gs-ac-connectors}
 
@@ -49,7 +49,7 @@ Campaign v8 kann eine Verbindung zu den folgenden Adobe-Lösungen herstellen. Ge
 
 * Adobe Analytics. [Weitere Informationen](../connect/ac-aa.md)
 * Adobe Experience Cloud-Trigger. [Weitere Informationen](../connect/ac-triggers.md)
-* Adobe Experience Manager: [Weitere Informationen](../connect/ac-aem.md)
+* Adobe Experience Manager, einschließlich Adobe Experience Manager as a Cloud Service-Assets und -Vorlagen in der Web-Benutzeroberfläche von Campaign. [Weitere Informationen](../connect/ac-aem.md)
 * Adobe Experience Platform. [Weitere Informationen](../connect/ac-aep.md)
 * Adobe Journey Optimizer. [Weitere Informationen](../connect/ac-ajo.md)
 * Adobe Target. [Weitere Informationen](../connect/ac-at.md)
@@ -91,6 +91,6 @@ Sie haben folgende Möglichkeiten:
 * Posten auf Ihrem X-Konto
 * Neue Kontakte sammeln
 
-Erfahren Sie, wie Sie die X-Integration in [Arbeiten mit Campaign und X (Twitter) einrichten und &#x200B;](../connect/ac-tw.md).
+Erfahren Sie, wie Sie die X-Integration in [Arbeiten mit Campaign und X (Twitter) einrichten und ](../connect/ac-tw.md).
 
 Erfahren Sie in [Nachrichten auf X (Twitter) mit Adobe Campaign](../send/twitter.md), wie Sie X-Posts erstellen und Direktnachrichten an Ihre Follower senden.
